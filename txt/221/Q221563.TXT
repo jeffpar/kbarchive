@@ -1,0 +1,70 @@
+DOCUMENT:Q221563  09-DEC-2000  [homegame]
+TITLE   :How to Remove Windows Entertainment Pack Software Titles
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Entertainment Pack, volume 2 
+ - Microsoft Windows Entertainment Pack, volume 3 
+ - Microsoft Windows Entertainment Pack, volume 4 
+ - Microsoft Best of Windows Entertainment Pack, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to remove any of the Microsoft Windows Entertainment
+Pack software titles from a Microsoft Windows 95/98 or Microsoft Windows NT
+4.0-based computer.
+
+MORE INFORMATION
+================
+
+To remove a Windows Entertainment Pack software title, follow these steps:
+
+1. Double-click the My Computer icon on the desktop.
+
+2. Double-click the hard disk on which the Windows Entertainment Pack software
+   title is installed.
+
+3. Right-click the Wep folder, click Delete, and then click Yes . Repeat this
+   step for the Bowep folder, if it exists.
+
+   NOTE: This removes the files for all Windows Entertainment Pack software
+   titles installed on your computer.
+
+4. Close all open windows on the desktop.
+
+5. Click Start, and then click Programs.
+
+6. Right-click the menu item for the Windows Entertainment Pack software title
+   you want to remove, click Delete, and then click Yes.
+
+Additional query words: 1.00 msgame bowep
+
+======================================================================
+Keywords          : kbsetup kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbWinEntPkSearch kbWinEntPk200 kbWinEntPk300 kbWinEntPk400 kbWinEntPkBest
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

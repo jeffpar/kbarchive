@@ -1,0 +1,108 @@
+DOCUMENT:Q168078  07-MAY-2001  [visualc]
+TITLE   :FIX: C2784 Instantiating STL Objects with a UDT Parameter
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbtool kbVC500bug kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to instantiate an STL component for a class, a C2784 error
+occurs, complaining that a relational operator (such as operator!= or
+operator>) is not defined. This in spite of including "using namespace
+std::rel_ops;", and defining operator< and operator== for the class.
+
+CAUSE
+=====
+
+The problem is caused by the nested namespace std::rel_ops. The compiler is
+unable to do a proper name lookup for the generic relational operators '!=',
+'<=', '>', '>=', which are defined in the namespace std::rel_ops and
+are referenced by several STL components.
+
+RESOLUTION
+==========
+
+The easiest workaround is to add a using declaration for the specific operator
+the compiler is complaining about. See the sections compiled conditionally upon
+WORKAROUND in the sample code below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This problem was corrected in Microsoft
+Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+The following sample demonstrates the problem.
+
+Sample Code
+-----------
+
+      /*
+      Compile options: /GX
+      */ 
+      #include <list>
+
+      using namespace std ;
+      using namespace std::rel_ops ;
+
+      #ifdef WORKAROUND   // define WORKAROUND to get around the error
+      using std::rel_ops::operator!=;
+      using std::rel_ops::operator>;
+      #endif
+
+      class X {
+
+          int N;
+      public:
+          X(int n) : N(n) {}
+          bool operator==(const X& b) const
+          { return N == b.N; }
+          bool operator<(const X& b) const
+          { return N < b.N; }
+      };
+
+      list <X> xList;
+
+      int main()
+      {
+           return 0;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbVC500bug kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

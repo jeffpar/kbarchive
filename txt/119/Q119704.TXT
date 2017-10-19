@@ -1,0 +1,57 @@
+DOCUMENT:Q119704  18-NOV-1999  [msdos]
+TITLE   :MS-DOS SYS Copies DRVSPACE.BIN Even If You Are Using DBLSPACE
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In MS-DOS 6.22, the SYS, FORMAT /S, and SETUP /F commands do not copy
+DBLSPACE.BIN to the target disk because MS-DOS 6.22 does not include
+DBLSPACE.BIN.
+
+MORE INFORMATION
+================
+
+If you are running DoubleSpace with MS-DOS 6.22, you should manually copy the
+DBLSPACE.BIN file to any boot disk created using SYS, FORMAT /S, or SETUP /F. To
+do this:
+
+1. Create the boot disk.
+
+2. Copy DBLSPACE.BIN from the directory that contains your MS-DOS files
+   (typically C:\DOS) to the boot disk. For example, type "copy
+   c:\dos\dblspace.bin a:" (without the quotation marks) at the MS-DOS command
+   prompt and then press ENTER.
+
+Additional query words: 6.22 dblspace sys format /s drvspace init system corrupt floppy disk
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

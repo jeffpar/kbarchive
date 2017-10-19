@@ -1,0 +1,63 @@
+DOCUMENT:Q203043  06-AUG-2002  [sms]
+TITLE   :Windows NT Diagnostics Does Not Locate a Client Computer
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbHelpDesk
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT Diagnostics in the Systems Management Server (SMS) Administrator
+console relies solely on name resolution to locate an SMS client. The following
+error message is displayed if a computer that is running the SMS Administrator
+console is not able to locate an SMS client through name resolution:
+
+   A Windows NT system named \\<Computer name> could not be found on the
+   network
+
+CAUSE
+=====
+
+Windows NT Diagnostics in the SMS Administrator console does not use the
+client's IP address from the SMS database. It uses only name resolution to
+locate the SMS client.
+
+WORKAROUND
+==========
+
+As a workaround, run the following command to invoke Windows NT Diagnostics
+using the client's IP address:
+
+   winmsd.exe \\<IP address>
+
+Additional query words: prodsms RC32 help desk
+
+======================================================================
+Keywords          : kbHelpDesk 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,74 @@
+DOCUMENT:Q181491  09-AUG-2001  [winnt]
+TITLE   :PRB: MFC Generic App Resources Cannot Interact with Desktop
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Foundation Class (MFC)-based applications, when launched from
+Microsoft Cluster Server and set to interact with the desktop, will fail with an
+Abnormal Program Termination error message being displayed.
+
+CAUSE
+=====
+
+The MFC library attempts to set a computer based training (CBT) hook when a
+window is created. This operation is not allowed on the interactive desktop when
+the program is not running in the current logon session of the interactive user.
+
+RESOLUTION
+==========
+
+If you are using an MFC application as a Microsoft Cluster Server resource, you
+can resolve the problem in one of the following ways:
+
+ - Do not set the MFC application to interact with the desktop.
+
+ - Start Cluster Server in debug mode by using the "clussvc -debug" command line
+   in the %WinDir%\Cluster directory.
+
+   NOTE: You must first stop the Cluster Server service first using the Control
+   Panel Services tool.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: MSCS
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

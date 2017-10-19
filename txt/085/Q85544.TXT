@@ -1,0 +1,174 @@
+DOCUMENT:Q85544  30-OCT-1999  [win95x]
+TITLE   :Bitstream Fontware Installation Kit: Information and Errors
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Bitstream Fontware Installation Kit is available through a fulfillment
+coupon included with the retail version of Microsoft PowerPoint for Windows,
+version 2.0. This starter kit installs fonts for Windows-based applications
+only; however, it can be merged with other starter kits to provide support for
+multiple applications.
+
+This article discusses problems and error messages you may encounter when using
+the Bitstream Fontware Installation Kit.
+
+MORE INFORMATION
+================
+
+Common Problems
+---------------
+
+1. When trying to make fonts for Windows- and non-Windows-based applications,
+   you may receive an error message stating that Windows fonts are not the same
+   as non-Windows fonts made for the same printer.
+
+   In some cases, fonts for Microsoft Windows and non-Windows applications cannot
+   be made simultaneously, even though the fonts are for the same laser printer.
+   This is because non-Windows-based applications require fonts in a different
+   form for that printer. Make the fonts for Microsoft Windows, then make the
+   fonts for non-Windows-based applications.
+
+2. When you make fonts with the Bitstream Fontware Installation Kit, not all the
+   phases can be completed.
+
+   The system may be out of memory. Check the Fontware error log for this "make
+   fonts" session to see if this is the case. If it is, there may be
+   memory-resident programs or device drivers loaded in the system that you can
+   remove temporarily. Make backup copies of the CONFIG.SYS and AUTOEXEC.BAT
+   files, edit the original files to increase the amount of free memory, then
+   reboot the computer under this new configuration.
+
+3. The Bitstream Fontware Installation Kit never asks for disk 2 of the
+   Bitstream Scalable Typeface Package.
+
+   Some files in the Bitstream Scalable Typeface Package may not be needed,
+   depending on the devices selected when Fontware was set up. If the kit
+   doesn't need disk 2 of the Bitstream Scalable Typeface Package, it won't ask
+   for it.
+
+4. The Bitstream Fontware Installation Kit cannot be used to install Bitstream
+   SoftFonts.
+
+   Although SoftFonts and Fontware are both made by Bitstream, they are separate
+   products. SoftFonts should be installed using the SoftFont Installer provided
+   with the Hewlett-Packard (HP) LaserJet printer driver.
+
+Error Messages
+--------------
+
+1. After you press F10 to make fonts, the following error may occur:
+
+   Time and Space Estimates. Not enough disk space available
+
+   Delete some font requests and check the estimates again. The Bitstream
+   Fontware Installation Kit (FIK) has checked the available disk space against
+   its space estimates and determined that there is not enough room on the disk.
+
+2. When you are making fonts, the following error may occur:
+
+   Some typeface information missing. Go to Add/Delete Bitstream Fontware
+   Typefaces
+
+   You selected a typeface that the Bitstream Fontware Installation Kit does not
+   find on the system, even though the name is listed in the Make Fonts Windows.
+   This may happen if both a PostScript PDL and a non-PostScript PDL printer are
+   installed and the typeface was added before setting up Fontware support for
+   the PostScript PDL printer. Choose Add/Delete Bitstream Fontware Typefaces,
+   and add the typeface again. Then make the fonts.
+
+   If you are attempting to make PostScript PDL fonts from the free Dutch and
+   Swiss typefaces, the same error message may occur. Times Roman and Helvetica
+   are resident on most PostScript PDL printers; the files needed for Dutch and
+   Swiss PostScript PDL fonts are not shipped with the starter kit. Either
+   purchase Bitstream Scalable Typeface Packages for Dutch and Swiss, or select
+   Times Roman and Helvetica in the Windows application.
+
+3. If you request point sizes for a Symbol typeface, the following message may
+   occur:
+
+   This typeface requires a different character set. Go to the Control Panel and
+   select a different character set
+
+   Go to the Fontware Control Panel and select one of the symbol character sets
+   available to make fonts for the device(s). Symbol typefaces require special
+   symbol character sets.
+
+4. When adding typefaces in Fontware the following message may occur:
+
+   Warning: Those typefaces that were copied may not be usable for making
+   PostScript PDL Printer fonts
+
+   This means that ESC was pressed before adding the second typeface disk that
+   contains information Fontware needs to make fonts for PostScript PDL
+   printers. Try adding the typeface again.
+
+5. When setting up Fontware and adding a typeface, the following message may
+   occur:
+
+   Unable to copy all typeface information. Errors occurred while copying
+   typefaces.
+
+   This message is generated when the Fontware kit is unable to read from the
+   disk it is trying to copy. If using a backup of a Fontware Installation Kit
+   disk or a Bitstream Scalable Typeface disk, exit the kit, make a new backup
+   copy, and try again. If the disk is an original typeface disk, obtain a
+   replacement disk.
+
+6. The following message may occur when you enter the Fontware directory name
+   while running the Fontware Setup program.
+
+   Unable to make this directory. Choose a different directory
+
+   You have entered a directory name that the kit cannot create on the hard disk.
+   Press ESC and enter a different directory name. This may indicate a general
+   problem with writing to the hard disk, or may be the name of a file that
+   already exists. (Note that Fontware will not accept any directory name that
+   MS-DOS does not accept as a directory name.)
+
+7. When exiting Fontware during setup, the following message may occur:
+
+   Warning: Aborting the setup process at this stage may leave your Fontware
+   directory in an unusable state, requiring a complete reinstallation of
+   Fontware. Do you want to abort setup?
+
+   This message occurs only after Fontware has begun copying files. The Fontware
+   Setup program is not completed at the time of exiting Fontware because some
+   files may be in an unusable state on the hard disk. Fontware for Microsoft
+   Windows may need to be reinstalled. If Fontware for non-Windows-based
+   applications is set up in the same Fontware directory, Fontware for those
+   applications may also need to be set up.
+
+Additional query words: 3.00 3.00a 3.0 3.0a 3.1 3.11 3.10 PowerPt
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

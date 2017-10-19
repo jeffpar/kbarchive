@@ -1,0 +1,70 @@
+DOCUMENT:Q97018  21-NOV-1999  [msdos]
+TITLE   :Err Msg: "Not Enough Memory" or System Hangs with Clipper
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade to MS-DOS 6.0 or later, a "not enough memory" error message
+may appear or your system may stop responding (hang) when you try to run an
+application generated with Computer Associates' Clipper program.
+
+WORKAROUND
+==========
+
+To correct this problem, add the NOEMS and NOVCPI switches to the EMM386.EXE
+command in your CONFIG.SYS file. For example:
+
+   device=c:\dos\emm386.exe noems novcpi
+
+The application generated with Clipper should now run on your system.
+
+MORE INFORMATION
+================
+
+You can also work around this problem by using the RAM switch instead of the
+NOEMS switch with EMM386.EXE or you can remove the DEVICE= statement for
+EMM386.EXE from your CONFIG.SYS file.
+
+EMM386.EXE is a Virtual Control Program Interface (VCPI) server. VCPI is a
+program interface that allows expanded memory services (EMS) emulators and DOS
+extenders to coexist within a 80386/80486 environment.
+
+NOTE: Clipper is an XBASE compiler.
+
+Clipper is manufactured by Computer Associates International, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 6.22 6.00 6.20 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

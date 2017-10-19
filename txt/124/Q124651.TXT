@@ -1,0 +1,76 @@
+DOCUMENT:Q124651  17-SEP-1999  [win3x]
+TITLE   :Err Msg: No Domain Server Was Available to Validate Your...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.11
+
+WINDOWS
+
+kbnetwork
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to log on to a Microsoft Windows NT or Microsoft LAN Manager domain
+through Windows for Workgroups, the following error message may appear:
+
+   No domain server was available to validate your password. You were logged on
+   without password validation.
+
+Even though you receive this error, you may still be able to gain access to
+Windows NT and LAN Manager resources.
+
+MORE INFORMATION
+================
+
+There are a variety of reasons for receiving the above error (such as
+incompatible protocols being used, improper configuration of the domain name
+under Windows for Workgroups, and so forth). Some of these causes do not result
+in the inability to connect to Windows NT and LAN Manager resources.
+
+
+If you have the appropriate permissions through your user ID and password
+combination and the server is online and accessible, you can continue to use
+Windows for Workgroups and connect to LAN Manager and Windows NT resources, even
+after receiving this error. That is, your access to Windows NT and LAN Manager
+servers is based on the access rights assigned to your user ID and password
+combination at the server being accessed, not by the success or failure of your
+initial logon.
+
+For additional information about logon validation and reasons for the above
+error, search for the following key words in the Microsoft Knowledge Base.
+
+   password and validation and server
+
+Additional query words: 3.11 lanman winnt authentication
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

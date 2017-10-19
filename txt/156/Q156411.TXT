@@ -1,0 +1,69 @@
+DOCUMENT:Q156411  08-AUG-2001  [winnt]
+TITLE   :ENDIF Does Not Work in NetWare Login Script with CSNW/GSNW
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In NetWare login scripts that have an ENDIF command, Client Services for NetWare
+(CSNW) or Gateway Services for NetWare (GSNW) will report the following error
+when executing the login script:
+
+   Script error: Could not interpret line
+   The original line was :
+   Endif.
+
+ENDIF will work when executed from a Novell NetWare client.
+
+Login script example:
+
+      IF MEMBER OF "SUPERVISORS" THEN
+          WRITE "blah....."
+      ENDIF
+
+RESOLUTION
+==========
+
+CSNW and GSNW will work properly with the END command instead of the ENDIF
+command.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

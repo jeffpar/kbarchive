@@ -1,0 +1,110 @@
+DOCUMENT:Q123411  17-DEC-2000  [msdos]
+TITLE   :BIOS and System Vendors That MSD.EXE Identifies
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Diagnostics (MSD) reports the "Computer Name" and "BIOS Manufacturer"
+below the Computer button and in the Computer Information section of the printed
+report. The name displayed in this section is generated from a string found in
+the system's ROM BIOS memory image. MSD uses a list of known computer
+manufacturer and BIOS vendor names and searches until one is found. If no known
+string is found, the string "Unknown" is used.
+
+MORE INFORMATION
+================
+
+The lists of names that MSD recognizes as vendors are shown below. The names
+must appear in the ROM BIOS memory image exactly as listed here for MSD to find
+them. Note that some strings include a trailing space character.
+
+Computer Manufacturers
+----------------------
+
+"AIR "            "ALR "            "AST "           "AT&T"
+"Acer"            "Altec"           "Altos"          "Amkly"
+"Ampro"           "Amstrad"         "Apricot"        "Aquiline"
+"Arche"           "Austin"          "Brother"        "Bull "
+"CSS "            "Cardinal"        "Cheetah"        "Chicony"
+"Club "           "Commodore"       "CompuAdd"       "Compudyne"
+"Comtrade"        "Cumulus"         "DEC "           "DFI"
+"DTK "            "Data General"    "Dell "          "Dolch"
+"Dolsh"           "Elonex"          "Elonex"         "Emerson"
+"Epson"           "Ergo"            "Everex"         "Gateway"
+"Goldstar"        "Grid"            "Hauppauge"      "Headstart"
+"Hewlett Packard" "Hewlett-Packard" "Hynudai"        "Koyro"
+"Laser"           "Leading Edge"    "Matsushita"     "Micro Express"
+"Mitac"           "Mitsuba"         "Mitsubishi"     "NCR "
+"NEC "            "Nokia"           "Normerel"       "Norsk"
+"Northgate"       "Ogivar"          "Orange"         "Osicom"
+"PC Brand"        "PC Craft"        "Packard Bell"   "Panasonic"
+"Parallan"        "Polywell"        "Psion"          "Reply"
+"SAI "            "SDI "            "Schmit"         "Sharp"
+"Siemens"         "Smith Corona"    "Sperry"         "Swan"
+"Tandem"          "Tandon"          "Tandy"          "Televideo"
+"Telex"           "Texas Inst"      "Toshiba"        "US Micro"
+"Unisys"          "Victor"          "Wang"           "Wyse"
+"Xerox"           "Zenith"*         "Zeos"
+
+*When the string "Zenith" is found, "Zenith Data Systems" is displayed in the MSD
+reports.
+
+ROM BIOS Vendors
+----------------
+
+"American Megatrends"   "AMI "                  "Artek"
+"Award"                 "Compaq"                "Datatech"
+"Data Tech"             "DTK"                   "ERSO"
+"IBM"                   "Intel"                 "Micronics"
+"Monolithic"            "Mylex"                 "Olivetti"
+"Phoenix"               "Seiko"                 "Ultima"
+"Western Digital"       "Zenith"                "(C)ZDS "
+
+In addition to searching for the above specific strings only, MSD also searches
+in specific locations only. These locations are places either found empirically
+in testing or supplied by ROM BIOS or system vendors.
+
+The following offsets within segment F000h are searched-for strings from the
+Computer Manufacturer or BIOS Vendor name list. These values represent the start
+of the search range. The pattern match goes beyond the end of these ranges by
+({length of pattern} - 1) bytes.
+
+0000 - 00FF,      1000 - 10FF,      12A0 - 12BF,      6000 - 60FF,
+8000 - 80FF,      8D00 - 8DFF,      A140 - A14F,      A440 - A45F,
+AF70 - AFAF,      B3F0 - B4EF,      C000 - C0FF,      D000 - D0FF,
+E000 - E0FF,      E300 - E37F
+
+
+Additional query words: 3rdparty 5.00 5.00a 6.00 6.20 6.21 6.22 hp
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,80 @@
+DOCUMENT:Q163143  08-AUG-2001  [winnt]
+TITLE   :STOP: 0x0000001E with Status C000009A
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run some programs, you may receive the following error message:
+
+   STOP: 0x0000001E : (0xC000009A, xxxxxxxx, xxxxxxxx, xxxxxxxx)
+   KMODE_EXCEPTION_NOT_HANDLED
+
+CAUSE
+=====
+
+This behavior can occur when you run a program that puts a high number of locks
+on a file. To hold locks, the file system allocates memory from the
+NonPagedPool. If the NonPagedPool is exhausted, critical allocations requested
+by other system components cannot be satisfied, generating the STOP error
+message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here as it becomes
+available.
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The size of the NonPagedPool is calculated in proportion to the amount of
+physical RAM in the computer. The number of possible locks is directly related
+to the size of the NonPagedPool. For example, on a computer with 32 MB of RAM,
+this behavior has been noted after more than 160,000 locks are set.
+
+To correct this problem, Windows NT now reports an error to the program that is
+issuing the locks.
+
+Additional query words: 3.51 4.00 0x1e
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

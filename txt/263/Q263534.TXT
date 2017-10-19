@@ -1,0 +1,80 @@
+DOCUMENT:Q263534  27-OCT-2000  [exchange]
+TITLE   :XGEN: Err. Mssg. When Using the Global Address List Modify Tool
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you connect to an Internet Information Service (IIS) server on which the
+Global Address List Modify for Web tool is installed in a virtual directory, you
+may receive the following error message:
+
+   Error: Permission Denied Restart your browser and enter the proper logon name
+   and password
+
+CAUSE
+=====
+
+This issue can occur because the Allow Anonymous Access option must be disabled
+for the virtual directory in which the Global Address List Modify for Web tool
+pages are installed.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Start Internet Services Manager.
+
+2. Locate the virtual directory in which the pages for the Global Address List
+   Modify for Web tool are installed.
+
+3. Click the Security tab, and then click to clear the Allow Anonymous Access
+   check box.
+
+NOTE: Also disable Windows NT Challenge/Response authentication (NTLM). The only
+authentication must be set to Basic (Clear Text) authentication.
+
+MORE INFORMATION
+================
+
+For additional information about how to set up the Global Address List Modify
+for Web tool, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q242223 XADM: How to Install and Use the Global Address List Modify for Web
+   Tool
+
+Additional query words: GAL MOD
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

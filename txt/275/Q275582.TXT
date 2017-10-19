@@ -1,0 +1,64 @@
+DOCUMENT:Q275582  07-JUN-2002  [automap]
+TITLE   :Pocket Streets 2001: Exported Pushpins Appear in Wrong Location
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2001 
+ - Microsoft Streets and Trips 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you export a Pushpin Map to Microsoft Pocket Streets 2001 from one of the
+products listed at the beginning of this article, the pushpins may appear in the
+wrong location on the exported map.
+
+CAUSE
+=====
+
+This behavior is caused by an incorrect longitude grid reference point for the
+Eastern United States.
+
+WORKAROUND
+==========
+
+To work around this issue, delete and re-create the incorrectly placed pushpins
+on the map from within Pocket Streets 2001.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This issue has been resolved in the
+MapPoint 2002 and Street & Trips 2002 applications.
+
+Additional query words: auto-map amap pstreets push pins incorrect east place hpc ppc wince
+
+======================================================================
+Keywords          : kbdisplay kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbMapptSearch kbMapPoint2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

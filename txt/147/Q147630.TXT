@@ -1,0 +1,76 @@
+DOCUMENT:Q147630  31-JUL-2001  [visualc]
+TITLE   :FIX: Remote Monitor Quits When TCP/IP Isn't Loaded
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbDebug kbide kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Starting up the Visual C++ Debug Monitor (Msvcmon.exe) with Network (TCP/IP)
+selected and pressing the Connect button causes the following error:
+
+   General network failure (Windows Sockets error 10047)
+
+The monitor then continues to attempt to connect to the host. On Windows 95, when
+you press the Disconnect button, the monitor quits.
+
+CAUSE
+=====
+
+This problem occurs because the TCP/IP protocol is not installed on the
+computer.
+
+RESOLUTION
+==========
+
+The problem can be avoided by ensuring that the TCP/IP protocol is installed on
+the computer. To do this, start the Network applet in the Control Panel, and add
+TCP/IP as a protocol.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+On Windows NT, the Windows Sockets error message occurs, but the monitor does
+not quit.
+
+Additional query words: kbVC400bug Windows 95
+
+======================================================================
+Keywords          : kbDebug kbide kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

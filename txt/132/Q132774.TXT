@@ -1,0 +1,61 @@
+DOCUMENT:Q132774  17-DEC-2000  [win95x]
+TITLE   :U.S. Atlas Version 4.0 Does Not Play Video Clips in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The video clips in U.S. Atlas version 4.0 do not play in Windows 95. The viewing
+area in U.S. Atlas is black and the video control buttons are unavailable.
+
+CAUSE
+=====
+
+U.S. Atlas version 4.0 is designed to run with Video For Windows version 1.0
+only.
+
+RESOLUTION
+==========
+
+Contact the manufacturer for an upgrade. U.S. Atlas version 5.0 operates
+properly in Windows 95.
+
+MORE INFORMATION
+================
+
+U.S. Atlas is manufactured by Software Toolworks, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: movies
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

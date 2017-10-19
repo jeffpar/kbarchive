@@ -1,0 +1,80 @@
+DOCUMENT:Q173972  08-NOV-2001  [homegame]
+TITLE   :Return of Arcade: Joystick is not Responding
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsound
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Return of Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start playing a Return of Arcade game, the joystick does not function
+properly. When you attempt to calibrate the joystick you receive the following
+error message.
+
+   The joystick is not responding. Either the joystick is unplugged or there is
+   no joystick driver installed. Please correct your settings and try again.
+
+Testing the joystick in the Joystick control panel shows it is working properly.
+
+Additionally, the Sound item under the Options menu in Return of the Arcade may
+be unavailable (shaded).
+
+CAUSE
+=====
+
+The sound card may be disabled or not functioning correctly. Return of Arcade
+requires that the sound card be enabled and working for the joystick to
+function.
+
+RESOLUTION
+==========
+
+To ensure the sound card is functioning properly, contact the manufacturer of
+the card or downloaded and install the latest sound card drivers from the
+manufacturer's web site.
+
+Additionally, if the joystick is a Microsoft SideWinder gaming device, you can
+install the latest drivers, to ensure that it is working correctly.
+
+The SideWinder drivers are available at:
+
+   http://www.microsoft.com/sidewinder
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Return of Arcade for
+Windows, version 1.0.
+
+Additional query words: 1.00 msgame
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsound 
+Technology        : kbGamesSearch kbArcadeRet kbZNotKeyword kbArcadeSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

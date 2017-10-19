@@ -1,0 +1,59 @@
+DOCUMENT:Q78079  04-MAY-2001  [vbwin]
+TITLE   :FIX: Printing with HPPCL5A.DRV to HP LaserJet III Cuts Line
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic for MS-DOS 1.0 
+ - Microsoft Visual Basic Standard Edition for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Choosing Print from the Visual Basic File menu to print source code truncates
+one line of code per page of output when printing to a Hewlett- Packard (HP)
+LaserJet series III printer using the HPPCL5A.DRV printer driver.
+
+CAUSE
+=====
+
+This is a problem with the Hewlett-Packard LaserJet series III printer driver
+version 3.42 for Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the HPPCL5A printer driver
+version 3.42. This problem was corrected by the HP III driver version 30.3.85
+included with Microsoft Word for Windows version 2.0.
+
+Additional query words: 2.00 HP laser jet truncate lose
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword3 kbVB100DOS
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,78 @@
+DOCUMENT:Q78289  17-DEC-2000  [msdos]
+TITLE   :LOADHIGH Command with Non MS-DOS Command Interpreter
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error messages may be displayed if you use the LOADHIGH command
+with a third-party command interpreter:
+
+   Unknown or Unrecognized Command Loadhigh
+
+   -or-
+
+   Unknown or Unrecognized Command LH
+
+The above errors occur if you invoke the LOADHIGH or LH command from the command
+prompt or from the AUTOEXEC.BAT file with a command interpreter other than
+COMMAND.COM.
+
+CAUSE
+=====
+
+The internal MS-DOS LOADHIGH (LH) command may not be recognized if you are using
+a command interpreter other than COMMAND.COM. For example, releases earlier than
+4.0 of the JP Software command interpreter 4DOS do not correctly recognize the
+LOADHIGH command. If this is the case, the SHELL statement in CONFIG.SYS might
+read as follows
+
+   shell=[drive]:\[dir]\[filename.ext] [drive]:\[dir]\ /p
+
+(where [drive] and [dir] are the drive and directory location of the command
+interpreter, and FILENAME.EXT is the name of the command interpreter).
+
+RESOLUTION
+==========
+
+If the SHELL statement refers to a filename other than COMMAND.COM, replace it
+with the MS-DOS 5.0 or later COMMAND.COM (and its correct drive and path). Save
+the file and reboot the computer. You can now use the LOADHIGH (LH) command from
+the MS-DOS command prompt or from the AUTOEXEC.BAT file.
+
+The JP Software product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 6.22 5.00 5.00a 6.00 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

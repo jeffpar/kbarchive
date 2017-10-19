@@ -1,0 +1,54 @@
+DOCUMENT:Q86183  17-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Importing WordPerfect Files
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to open an encrypted WordPerfect file in Microsoft Schedule+ for
+Windows, the following message is displayed:
+
+   The file you're trying to import is not in a valid import format
+
+RESOLUTION
+==========
+
+To work around this problem, export the file from WordPerfect Office with
+encryption turned off before you try to import the file again.
+
+WordPerfect Office is manufactured by WordPerfect Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 1.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

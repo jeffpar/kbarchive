@@ -1,0 +1,118 @@
+DOCUMENT:Q123662  02-NOV-1999  [fortran]
+TITLE   :BUG: Select Case Does Not Allow Character Expression String
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling a program that contains a SELECT CASE statement that uses a variable
+in a character substring of length 1, fails and gives the following error
+message:
+
+   F2868: SELECT CASE : character expression must be of length 1
+
+CAUSE
+=====
+
+The compiler incorrectly evaluates the length of a character substring, when the
+character substring is defined using a variable, not a constant.
+
+RESOLUTION
+==========
+
+Avoid a SELECT statement that uses a character substring defined with a
+variable. Instead, use a character substring defined with a constant. As an
+alternative, you can define a temporary character variable of length 1 and
+assign the substring to that variable, which can be later used with a SELECT
+statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+   C Compile options needed: none
+   C The following program reproduces the problem:
+
+         program go
+         character*5 a
+         integer*4 len
+         a = "Hello"
+         len = 1
+         select case( a(len:len) )  ! offending statement
+                case default
+         end select
+         end
+
+Sample Code to Solve Problem
+----------------------------
+
+   C Compile options needed: none
+   C The following code solves the problem:
+
+         program go
+         character*5 a
+         a = "Hello"
+         select case( a(1:1) )
+                case default
+         end select
+         end
+
+Sample Code to Solve Problem
+----------------------------
+
+   C Compile options needed: none
+   C The following code solves the problem:
+
+         program go
+         character a*5,tmp*1
+         integer*4 len
+         a = "Hello"
+         len = 1
+         tmp=a(len:len)
+         select case( tmp )
+                case default
+         end select
+         end
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

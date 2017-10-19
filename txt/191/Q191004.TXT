@@ -1,0 +1,46 @@
+DOCUMENT:Q191004  11-DEC-2001  [winnt]
+TITLE   :Crystal Reports 4.5: Allows Only One User Access
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Crystal Reports 4.5 is installed on a Terminal Server, only one user will be
+able to access the program at a time. This is because of licensing restrictions
+in Crystal Reports, which is currently sold as a single-user product only. To
+run this product for multiple users on Terminal Server, administrators need to
+install a separate, licensed copy of Crystal Reports for each user.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

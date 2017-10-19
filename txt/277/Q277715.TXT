@@ -1,0 +1,68 @@
+DOCUMENT:Q277715  25-JAN-2002  [winnt]
+TITLE   :BUG: ExitWindowsEx Function Fails to Shut Down the System
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:kbGrpDSUser
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a Windows NT 4.0 Service Pack 6 (SP6) or Windows NT 4.0 SP6a-based system,
+when any application calls the ExitWindowsEx function, the system sends the
+WM_QUERYENDSESSION message to all top-level windows. If any windows that receive
+the message return FALSE, the shutdown process is stopped, irrespective of how
+many windows return TRUE. Any subsequent calls to ExitWindowsEx fail to trigger
+a reboot or a shutdown operation.
+
+RESOLUTION
+==========
+
+Configure your applications to call the InitiateSystemShutdownEx function to
+reboot the system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q245148 Windows NT Appears to Hang When You Log Off After Installing Windows
+   NT 4.0 Service Pack 6
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSUser 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400search
+Version           : :4.0 SP6,4.0 SP6a
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

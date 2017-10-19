@@ -1,0 +1,55 @@
+DOCUMENT:Q242783  11-JAN-2001  [vbwin]
+TITLE   :DOC: MAXDWORD Has Incorrect Value in Visual Basic API Text Viewe
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr kbVBp600bug kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The API Text Viewer gives an incorrect value for the MAXDWORD constant.
+
+MORE INFORMATION
+================
+
+When copying the MAXDWORD constant from the API Text Viewer, you get:
+
+Const MAXDWORD = &HFFFF
+
+Instead, you should use this:
+
+Const MAXDWORD = &HFFFFFFFF
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

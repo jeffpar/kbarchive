@@ -1,0 +1,659 @@
+DOCUMENT:Q232511  12-JUL-2001  [crossnet]
+TITLE   :Client Dialup, Authentication, Browsing Using TCPIP, IPX/SPX
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Win95/98/NT Dialup, Authentication, Browsing Using TCPIP, IPX/SPX, or NetBEUI
+-----------------------------------------------------------------------------
+
+This article has been written to help clarify how Windows NT clients, such as
+Windows 95, Windows 98, and Windows NT Workstation/Windows NT Server are
+supposed to be configured in order to successfully dial into a Windows NT
+network. The functionality of the clients includes dial-up authentication,
+domain authentication, gaining access to resources, and browsing.
+
+This article can also be viewed as a Microsoft PowerPoint presentation and
+Webcast at the following location:
+
+   http://support.microsoft.com/servicedesks/webcasts/wc060399/wcblurb060399.asp
+
+This article is a text summary of the presentation and has been broken down into
+the following sections:
+
+ - Review of Networking Objectives
+
+ - Review of Dial-up Components
+
+ - Software and Hardware Checklist
+
+ - Configuration of Clients and Servers (General)
+
+ - Configuration of Clients and Servers (Protocol Specific)
+
+    - NetBIOS Name Resolution - TCP/IP
+
+ - Common Error Messages
+
+ - Articles and References
+
+Review of Networking Objectives
+-------------------------------
+
+The most common goal for dial-up networking is to be able to provide the
+following:
+
+ - RAS validation
+
+ - Windows NT domain logon (running scripts)
+
+ - Gain access to network resources
+
+ - Browse network resources
+
+It is possible that one or more of these steps work, while others do not. To
+successfully achieve all of the above, look at both the client configuration and
+the server configuration. But first, a review of the components involved in
+Dial-up Networking (DUN).
+
+Review of Dial-up Components
+----------------------------
+
+The following diagram displays the different DUN components and how they are
+generally attached to a network.
+
+            M                   M
+            O                   O               L
+  Dialup ---D--- Phone lines ---D--- Dialup ----A---- Internal network
+  Client    E                   E    Server     N       
+(95/98/NT)  M                   M  (RAS/RRAS)                 
+
+Software and Hardware Checklist
+-------------------------------
+
+The following should be verified to make sure you have hardware that is supported
+and the latest software updates, depending on the client that you are using to
+dial in with.
+
+ - Check the Hardware Compatibility List (HCL) for compatible Dial-up devices.
+   The HCL is available at:
+
+   http://www.microsoft.com/HWTEST/hcl/
+
+ - For RAS clients, please install the latest software.
+
+    - For Windows 95 RAS clients, install DUN 1.3. For more information about
+      installing Dial-up Networking 1.3 with Windows 95, please see the
+      following Microsoft Knowledge Base article:
+
+   Q191494 Dial-Up Networking 1.3 Upgrade Available
+
+    - For Windows 98 RAS clients, install DUN 1.3. For more information about
+      installing Dial-Up Networking 1.3 with Windows 98, please see the
+      following article in the Microsoft Knowledge Base:
+
+   Q191540 VPN Update for Windows 98 and Dial-Up Networking 1.3 Available
+
+    - For Windows NT RAS clients, install Windows NT 4.0 Service Pack 5 (SP5)
+      and then view the SP5 Readme.txt file. For more information about
+      obtaining SP5, please see the following Microsoft Knowledge Base article:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+ - For RAS Servers, please install the latest software.
+
+    - For RAS/RRAS servers, please install Windows NT 4.0 Service Pack 5, and
+      then view the SP5 Readme.txt file. For more information about obtaining
+      SP5, please see the following Microsoft Knowledge Base article:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+Configuration of Clients and Servers (General)
+----------------------------------------------
+
+It is important to make sure that each client that dials into a RAS/RRAS server
+is properly configured. It is also important that the RAS/RRAS servers are
+properly configured. The following general configurations are recommended for
+the DUN client, as well as the RAS/RRAS server. These recommendations are not
+protocol specific and would apply regardless of the protocol being used for DUN.
+The next few sections deal exclusively with the general configuration of these
+components.
+
+You may notice in looking at the configurations for each client that there is a
+great deal of overlap. This is intentional to show that the client operating
+systems are configured in much the same way as each other. The overlap could
+have been taken out, but has been left in so that a checklist could be taken
+straight from this article for each client during troubleshooting or
+installation.
+
+ - Configuration of Clients (General)
+
+    - Windows 95 Configuration (General)
+
+    - Windows 98 Configuration (General)
+
+    - Windows NT Configuration (General)
+
+ - Configuration of Servers (General)
+
+    - RAS Server Configuration (General)
+
+    - RRAS Server Configuration (General)
+
+Windows 95 Configuration (General):
+
+ - Hardware Profiles - Either create a no-network hardware profile or verify
+   that no network adapters have an IP address on the same network that you are
+   trying to connect to. If the client normally uses DHCP to get an IP address,
+   run "winipcfg" at an MS-DOS command prompt, and then click "release all" if
+   dialing into the same network as the DHCP server.
+
+ - Network Configuration - Verify that "Client for Microsoft Networks" is
+   installed and selected under "Primary Network Logon". Press Esc at the first
+   logon screen when starting the client to prevent network logon or a
+   Windows-validated session. This allows domain logon through DUN.
+
+ - Identification - The computer name must be unique and Workgroup name should
+   be the same as the domain to which you are trying to connect.
+
+ - Client for Microsoft Networks - Click "Log on to Windows NT domain", and then
+   type the correct domain name in the "Windows NT domain" box.
+
+ - Bindings - Make sure the protocol you are planning on dialing in with is
+   selected. If the protocol you want to dial in with is not listed, you need to
+   re-add that protocol, even if it already exists so that the bindings are
+   regenerated.
+
+Windows 98 Configuration (General):
+
+ - Hardware Profiles - Either create a no-network hardware profile or verify
+   that no network adapters have an IP address on the same network that you are
+   trying to connect to. If the client normally uses DHCP to get an IP address,
+   run "winipcfg" at an MS-DOS command prompt, and then click "release all" if
+   dialing into the same network as the DHCP server.
+
+ - Network Configuration - Verify that "Client for Microsoft Networks" is
+   installed and selected under "Primary Network Logon". Press Esc at the first
+   logon screen when starting the client to prevent network logon or a
+   Windows-validated session. This allows domain logon through DUN.
+
+ - Identification - The computer name must be unique and Workgroup name should
+   be the same as the domain to which you are trying to connect.
+
+ - Client for Microsoft Networks - Click "Log on to Windows NT domain", and then
+   type the correct domain name in the "Windows NT domain" box.
+
+ - Bindings - Make sure the protocol you are planning on dialing in with is
+   selected. If the protocol you want to dial in with is not listed, you need to
+   re-add that protocol, even if it already exists so that the bindings are
+   regenerated.
+
+Windows NT Configuration (General):
+
+ - Hardware Profiles - Either create a no-network hardware profile or verify
+   that no network adapters have an IP address on the same network that you are
+   trying to connect to. If the client normally uses DHCP to get an IP address,
+   run "ipconfig /release" from an MS-DOS command prompt. This is only necessary
+   if the IP address you have is on the same network as the DHCP server.
+
+ - Identification - The Windows NT client must be in its own workgroup
+   initially, unless its already a member of the domain and has a machine
+   account.
+
+ - Services - Make sure that the Remote Access Service is installed. To
+   configure this service:
+
+    - Click the Start button, point to Settings, click Control Panel, and then
+      double-click Network.
+
+    - Add the Remote Access Service, click Properties, and then click Configure.
+      For a dial-up client, select the "dial out only" option.
+
+    - Also in RAS Properties, click Network, and then select the dial out
+      protocols to be used.
+
+ - Protocols - Make sure the protocol you want to use is installed.
+
+ - Bindings - Make sure the protocol you are planning on dialing out with is
+   available "bound" under Remote Access Server Service.
+
+ - Dial-Up Networking
+
+    - Runs a wizard initially for telephone prefixes.
+
+    - On the Basic tab, type the name of the connection, and then type phone
+      number to dial.
+
+    - On the Server tab, select the protocol you want to use and leave all of
+      the other options at their default settings.
+
+Initial Setup Process
+
+ - After you verify the above, you are ready to start the process of setting up
+   a Windows NT client for logging on to a domain over a DUN connection.
+
+ - After you create the DUN connection with the protocol of your choice, select
+   the connection and dial it. You are then prompted for information, a name,
+   password, and a domain.
+
+ - After you are authenticated, go to your Network properties (click the Start
+   button, point to Settings, click Control Panel, and then double-click
+   Network), and on the Identification tab, click Change, and then join the
+   domain you just dialed. You only need to join the domain once.
+
+ - After you have successfully joined the domain, restart the Windows NT client.
+
+ - After the client has restarted, you see the standard logon screen. Press
+   Ctrl+Alt+Del as usual to log on. Make sure to select the "Log on using
+   Dial-up Networking" checkbox.
+
+ - The DUN connection box then appears so you can dial whichever DUN connection
+   you want with any protocol you wish. These DUN connections must have already
+   been created in order to be used for logon purposes. After you are connected,
+   you are logged on and authenticated as if you were connected on the network
+   LAN. More specific information about how to configure DUN connections with
+   Windows NT appear later in this article.
+
+RAS Server Configuration (General):
+
+Please verify the following services and devices are configured on the RAS
+server:
+
+ - Click the Start button, point to Settings, click Control Panel, and then
+   double-click Network.
+
+ - Click the Services tab, click RAS, and then click Properties. Make sure there
+   is at least one RAS-capable device installed.
+    - In the Network section of the RAS properties, make sure that for "Server
+      Settings," you have selected each protocol your Dial-Up clients will be
+      using to dial into this server.
+
+    - In the Configure section of the RAS properties, make sure that you have
+      selected "Receive calls only" or "Dial out and Receive calls" for a RAS
+      server.
+
+RRAS Server Configuration (General):
+
+ - Click the Start button, point to Settings, click Control Panel, and then
+   double-click Network.
+
+ - Click the Services tab, and then click Properties. Make sure there is at
+   least one RAS-capable device installed.
+    - In the Network section of the RRAS properties, make sure that for "Server
+      Settings", you have selected each protocol your Dial-Up clients will be
+      using to dial into this server.
+
+    - In the Configure section of the RRAS properties, make sure that you have
+      selected "Receive calls as a RAS server" or "Dial out and receive calls as
+      a demand dial router."
+
+Configuration of Clients and Servers (Protocol Specific)
+--------------------------------------------------------
+
+The following is a breakdown of each client and server configuration based on
+each of the protocols supported with the Microsoft Windows operating systems:
+NetBEUI, NWLink, and TCP/IP.
+
+IMPORTANT NOTE: This portion of the reference should only be consulted after the
+general configuration options above have been verified and are configured
+correctly. Attempting to come directly to this section could lead to confusion,
+as the general steps of the configuration are assumed at this point.
+
+The order of how each protocol will be presented is shown in the list below:
+
+ - Configuration of Clients
+
+    - Windows 95 Configuration (NetBEUI)
+
+    - Windows 98 Configuration (NetBEUI)
+
+    - Windows NT Configuration (NetBEUI)
+
+ - Configuration of Servers
+
+    - RAS Server Configuration (NetBEUI)
+
+    - RRAS Server Configuration (NetBEUI)
+
+ - Configuration of Clients
+
+    - Windows 95 Configuration (NWLink)
+
+    - Windows 98 Configuration (NWLink)
+
+    - Windows NT Configuration (NWLink)
+
+ - Configuration of Servers
+
+    - RAS Server Configuration (NWLink)
+
+    - RRAS Server Configuration (NWLink)
+
+ - Configuration of Clients
+
+    - Windows 95 Configuration (TCP/IP)
+
+    - Windows 98 Configuration (TCP/IP)
+
+    - Windows NT Configuration (TCP/IP)
+
+ - Configuration of Servers
+
+    - RAS Server Configuration (TCP/IP)
+
+    - RRAS Server Configuration (TCP/IP)
+
+Configuration of Clients (NetBEUI)
+----------------------------------
+
+Windows 95 Configuration (NetBEUI):
+
+ - In the properties of the connectoid, click Server Types Advanced options,
+   select Log on to Network Allowed network protocols, and then select NetBEUI.
+
+Windows 98 Configuration (NetBEUI):
+
+ - In the properties of the connectoid, click Server Types Advanced options,
+   select Log on to Network Allowed network protocols, and then select NetBEUI.
+
+Windows NT Configuration (NetBEUI):
+
+ - After Windows NT starts up, press Ctrl+Alt+Del as you normally would to log
+   on. Type your user name, password, and domain for authentication. Make sure
+   to select the checkbox "Log on using Dial-up Networking."
+
+ - Windows NT displays the Dial-up networking component and gives you the
+   opportunity to choose which Dial-up connection you want. Choose a dial-up
+   connection that is bound to NetBEUI.
+
+ - If the RAS server is able to authenticate your RAS session, your domain logon
+   proceeds as if you were connected through a local LAN connection.
+
+Configuration of Servers (NetBEUI)
+----------------------------------
+
+RAS Server Configuration (NetBEUI):
+
+ - Click the Start button, point to Settings, click Control Panel, and then
+   double-click Network.
+
+ - Click RAS, and then click Network Configuration. In the Server Settings
+   section, make sure you have NetBEUI selected. To configure NetBEUI, select
+   whether RAS clients will be able to gain access only this server or the
+   entire network.
+
+RRAS Server Configuration (NetBEUI):
+
+ - Click the Start button, point to Settings, click Control Panel, and then
+   double-click Network.
+
+ - Click RRAS, and then click Network Configuration. In the Server Settings
+   section, make sure you have NetBEUI selected. To configure NetBEUI, select
+   whether RAS clients will be able to access only this server or the entire
+   network.
+
+Configuration of Clients (NWLink)
+---------------------------------
+
+Windows 95 Configuration (NWLink):
+
+ - In the properties of the connectoid, click Server Types Advanced options,
+   select Log on to Network Allowed network protocols, and then select IPX/SPX
+   Compatible.
+
+Windows 98 Configuration (NWLink):
+
+ - In the properties of the connectoid, click Server Types Advanced options,
+   select Log on to Network Allowed network protocols, and then select IPX/SPX
+   Compatible.
+
+Windows NT Configuration (NWLink):
+
+ - After Windows NT starts up, press Ctrl+Alt+Del as usual to log on. Type your
+   user name, password, and domain for authentication. Make sure to select the
+   checkbox "Log on using Dial-up Networking."
+
+ - Windows NT displays the Dial-up networking component and gives you the
+   opportunity to select which Dial-up connection you want. Select a dial-up
+   connection that is bound to IPX/SPX.
+
+ - If the RAS server is able to authenticate your RAS session, your domain logon
+   will proceed as if you were connected through a local LAN connection.
+
+Configuration of Servers (NWLink)
+---------------------------------
+
+RAS Server Configuration (NWLink):
+
+ - The RAS server must have a unique internal network number. For more
+   information, please click on the article link below to view the following
+   Microsoft Knowledge Base article:
+
+   Q198518 RRAS Requires Non-Zero Internal Network Number for IPX
+
+ - The RAS server cannot be a PDC, however, other servers acting as a PDC are
+   not affected.
+
+ - During installation, enable type 20 packets for NetBIOS Broadcast
+   Propagation.
+
+ - For Windows NT clients, nothing else needs to be done.
+
+ - For Windows 95/98 clients, edit the registry, set NetBIOS routing to 7 for
+   small networks. For more information about editing the registry for Windows
+   95/98 clients, please click on the article link below to view the following
+   Microsoft Knowledge Base article:
+
+   Q173607 Client Not Authenticated by Domain Through RAS Member Server
+
+ - On congested networks, use NetBEUI or TCP/IP with NWLink instead of
+   performing the steps outlined in the Microsoft Knowledge Base article
+   Q173607, "Client Not Authenticated by Domain Through RAS Member Server".
+
+ - In the Control Panel Network tool, make sure you have IPX selected in the
+   Server Settings section of the Network Configuration tab of the RAS service.
+   To configure IPX, select whether RAS clients are able to gain access to only
+   this server or the entire network and leave other default settings as they
+   are.
+
+RRAS Server Configuration (NWLink):
+
+ - Must have a unique Internal Network number. For more information, please
+   click on the article link below to view the following Microsoft Knowledge
+   Base article:
+
+   Q198518 RRAS Requires Non-Zero Internal Network Number for IPX
+
+ - The RRAS server should not be a PDC, BDCs and standalone servers are not
+   affected.
+
+ - In the Control Panel Network tool, make sure you have IPX selected in the
+   Server Settings section of the Network Configuration tab of the RAS service.
+   To configure IPX, select whether RAS clients are able to gain access to only
+   this server or the entire network and leave the other default settings as
+   they are.
+
+ - Dial-In clients - Configure Interface
+
+    - NetBIOS packet handling
+
+       - Select the Accept Broadcasts checkbox.
+
+       - Under Deliver Broadcasts, choose Only When Interface is Up for small
+         networks.
+
+    - Use NetBEUI or TCP/IP with NWLink on congested networks.
+
+Configuration of Clients (TCP/IP)
+---------------------------------
+
+Windows 95 Configuration (TCP/IP):
+
+ - In the properties of the connectoid, click Server Types Advanced options,
+   select Log on to Network Allowed network protocols, select TCP/IP Settings,
+   and then leave the other default settings as they are.
+
+Windows 98 Configuration (TCP/IP):
+
+ - In the properties of the connectoid, click Server Types Advanced options,
+   select Log on to Network Allowed network protocols, click TCP/IP Settings,
+   and then leave the other default settings as they are.
+
+Windows NT Configuration (TCP/IP):
+
+ - After Windows NT starts up, press Ctrl+Alt+Del like normal to log on. Type
+   you user name, password, and domain for authentication and make sure to
+   select the Log on using Dial-up Networking checkbox.
+
+ - Windows NT displays the Dial-up networking component and gives you the
+   opportunity to choose which Dial-up connection you want. Choose a dial-up
+   connection that is bound to TCP/IP.
+
+ - For Dial-up TCP/IP Settings, leave the defaults.
+
+ - If the RAS server is able to authenticate your RAS session, your domain logon
+   proceeds as if you were connected through a local LAN connection.
+
+Configuration of Servers (TCP/IP)
+---------------------------------
+
+RAS Server Configuration (TCP/IP):
+
+ - Allow clients access to entire network.
+
+ - Configure either a RAS pool or use DHCP.
+
+ - If you use a RAS pool, make sure the RAS pool of addresses is on the same
+   network as your LAN card (the pool must be in a range of first-bound IP
+   address on any network adapter on the server.)
+
+ - Install a WINS server, point to a WINS server, or let DHCP assign a WINS
+   server to the clients, unless you are relying on clients to have lmhosts
+   files.
+
+RRAS Server Configuration (TCP/IP):
+
+ - Allow clients to gain access to the entire network.
+
+ - Configure either a RRAS pool or use DHCP.
+
+ - If a RRAS pool, make sure the RAS pool of addresses is on the same network as
+   your LAN card. Also, make sure to use the correct mask for the range of IP
+   addresses you are creating for your dialup clients (the pool must be in a
+   range of first-bound IP addresses on any network adapter on the server.)
+
+ - Install a WINS server, point to a WINS server, or let DHCP assign a WINS
+   server to the clients, unless you are relying on clients to have lmhosts
+   files.
+
+NetBIOS Name Resolution (TCP/IP)
+--------------------------------
+
+All Clients - Windows 95/98 and Windows NT:
+
+When you are using WINS on a network:
+
+ - Right-click Dial-Up Adapter, click Properties, and then click the WINS
+   configuration tab. Make sure that the "Use DHCP for WINS Resolution" checkbox
+   is selected.
+
+If not you are using WINS in your network, use an lmhosts file with the following
+entries (xxx.xxx.xxx.xxx represents the IP address of your PDC):
+
+   xxx.xxx.xxx.xxx  WINPDC   #PRE  #DOM:DOMAIN-TEST
+   xxx.xxx.xxx.xxx  "DOMAIN-TEST    \0x1B"  #PRE
+
+ - The first entry is the name of the PDC.
+
+ - The second entry is for domain browsing, and should be entered with a total
+   of 15 characters up to the "\" backslash.
+
+ - The Lmhosts file must point to first-bound IP addresses on the network
+   adapter of the PDC because NetBIOS only binds to the first IP of a network
+   adapter.
+
+Common Error Messages
+---------------------
+
+ - Error 629: You have been disconnected from the computer you dialed.
+   Double-click the connection to try again.
+
+ - Error 633: The port is in use or not configured for Remote Access Dial-Out.
+
+ - Error 720: No PPP control protocols configured.
+
+ - Error Box: "You have been disconnected from the computer you dialed.
+   Double-click the connection to try again."
+
+ - Error Box: "Dial-Up Networking could not negotiate a compatible set of
+   network protocols you specified in the Server Type settings. Check your
+   network configuration in the Control Panel then try the connection again."
+
+ - Error Box: "No domain server was available to validate your password. You may
+   not be able to gain access to some network resources."
+
+REFERENCES
+==========
+
+   Q236963 How to Create Hardware Profiles in Win95/98/NT 4.0
+
+   Q191494 Dial-Up Networking 1.3 Upgrade Available
+
+   Q189771 Windows 98 Dial-Up Networking Security Upgrade Release Notes
+
+   Q178729 How To Configure Windows 95 to Dial into a RAS/RRAS Server
+
+   Q141600 How to Manually Create Hardware Profiles for Laptop Computers
+
+   Q150800 Domain Browsing with TCP/IP and LMHOSTS Files
+
+   Q183368 Requirements to Browse Network with Dial-Up Networking
+
+   Q193836 NET USE Attempt Across Domains Fails Without Name Resolution
+
+   Q185786 Recommended Practices for WINS
+
+   Q198518 RRAS Requires Non-Zero Internal Network Number for IPX
+
+   Q163949 Workstation Using Lmhosts Fails to Logon if DC Unavailable
+
+   Q150053 Erratic Domain Logon from Windows 95 Dial-Up Networking
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400 kbAudDeveloper kbWin95search kbWin98search kbZNotKeyword3 kbWin98 kbRRASNTSearch kbRRASNT400
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

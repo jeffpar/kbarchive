@@ -1,0 +1,66 @@
+DOCUMENT:Q151215  19-DEC-1999  [exchange]
+TITLE   :XFOR: Exchange PCMTA Writes to SENT and RECV Logs
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange PCMTA writes to both the Send.log and Recv.log for any
+Microsoft Mail Postoffice (PO) it serves. These are the only text logs that the
+PCMTA writes to. All diagnostic logging is kept in the Windows NT Event Viewer
+on the computer where the PCMTA is running.
+
+The PCMTA logs the .MAI hex number for both incoming and outgoing mail.
+
+An example Recv.log:
+
+DATE RECEIVED   SIZE  FROM                   TO
+-------------   ----  ----                   --
+05/17/96 09:39  1239  NETWORK/REMOTEPO/ADMIN NETWORK/LOCALPO/ADMIN        *
+00000306
+
+In this Recv.log file, 00000306 is the hex number for the incoming MAI file that
+is being written to disk.
+
+An example Sent.log:
+
+DATE SENT       SIZE  SENDER                   TO
+---------       ---  ------                    --
+05/17/96 09:44  715  NETWORK/LOCALPO/Admin     NETWORK/REMOTEPO/Admin
+0000030C 00000403
+
+In this example, 0000030C is the hex number for the MAI file written to disk and
+00000403 is the hex number for the target MAI file on the remote PO.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

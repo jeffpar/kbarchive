@@ -1,0 +1,61 @@
+DOCUMENT:Q107818  23-NOV-1999  [msdos]
+TITLE   :MWAV Err Msg: MWAVABSI.DLL ERROR Subdirectory Tree Is Full
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Anti-Virus for Windows (MWAV.EXE), you may receive the
+following error message:
+
+   MWAVABSI.DLL Error
+   Subdirectory tree is full
+
+CAUSE
+=====
+
+This error occurs if the directory structure of the drive being scanned is
+corrupted.
+
+WORKAROUND
+==========
+
+If you are using MS-DOS 6.2, use ScanDisk to determine the problem and then
+correct it.
+
+If you are using MS-DOS 6.0, use a surface scan utility, such as Symantec's
+Norton Utilities Norton Disk Doctor (NDD.EXE) or Central Point Software's
+DiskFix to correct this problem, or upgrade to MS-DOS 6.2 and use ScanDisk.
+
+Additional query words: 6.00 6.20 MWAV
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

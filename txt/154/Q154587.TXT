@@ -1,0 +1,71 @@
+DOCUMENT:Q154587  04-APR-1999  [exchange]
+TITLE   :XCLN: Multiple Move Rules Duplicate Messages in a PST File
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the delivery location is set to a personal folder(PST)inbox and a single
+message matches the criteria for two or more different rules that move the mail
+to the same PST folder; the MOVETO action will create a duplicate of the message
+in the PST folder being moved to.
+
+WORKAROUND
+==========
+
+Set the delivery location to the server store inbox. Only one copy of a message
+will be moved regardless of how many rules point it to the same folder.
+
+MORE INFORMATION
+================
+
+Inconsistent results are achieved depending on the location of the MOVETO folder
+and the default delivery location of inbound mail. If the MOVETO action is for a
+server store folder, one copy of the message will be moved. If the MOVETO action
+is to a local PST store folder, two copies of the message will be moved. This
+only happens when initial delivery is set to a PST inbox. If the delivery
+location is set to the server store inbox, only one copy of a message will be
+moved regardless of how many rules point it to the same folder.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 4.0 of Microsoft
+Exchange. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: Inbox Assistant
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

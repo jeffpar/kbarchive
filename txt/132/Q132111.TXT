@@ -1,0 +1,64 @@
+DOCUMENT:Q132111  08-AUG-2001  [winnt]
+TITLE   :Digiboard Drops DTR After Disconnect
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a client disconnects from a RAS server, the DTR line on the Digiboard COM
+port may not return. Because the modem is not reset, no additional calls can
+come in on that port. If a client attempts to dial in, the modem picks up the
+line, but the RAS server does not respond. As a result, the client receive a 640
+error message. The RAS server does not log any errors in the event log, but the
+RAS Administrators tool show that the port has been disconnected and is not
+ready.
+
+These symptoms will appear only after the RAS server has been in operation for
+some time. Stress tests indicate that several hundred inbound calls are needed
+to produce the problem.
+
+CAUSE
+=====
+
+There is a problem in the Digiboard DIGIFEP5.SYS driver.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem Windows NT version 3.5.
+
+
+Additional query words: prodnt 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTAdvSerSearch kbWinNTS350search
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q161529  28-APR-2001  [homemm]
+TITLE   :Starts Here Err Msg: You Do Not Have Enough Disk Space...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Office 97 Starts Here ISBN 1-57231-303-X 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During Setup of Microsoft Office 97 Starts Here, you receive the following error
+message:
+
+   Microsoft Windows NT Workstation 4.0 Starts Here
+
+   You do not have enough disk space on this drive. Microsoft Windows NT
+   Workstation 4.0 Starts Here requires 12 MB.
+
+CAUSE
+=====
+
+You are attempting to install Microsoft Office 97 Starts Here on a hard disk
+that contains more than 2 gigabytes (GB) of free space.
+
+RESOLUTION
+==========
+
+Install Microsoft Office 97 Starts Here to a hard disk containing less than 2
+gigabytes (GB) of free space.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 1.0 of Microsoft Office
+97 Starts Here. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm err msg error message starts here
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

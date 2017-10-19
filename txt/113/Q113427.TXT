@@ -1,0 +1,89 @@
+DOCUMENT:Q113427  22-JUL-2001  [visualc]
+TITLE   :FIX: Incorrect Optimization of Left Shift Operator
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbCompilerkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Optimization of the left shift operator may generate incorrect code in loop
+operations when compiled with global optimizations on. In the code sample below,
+the "for" loop incorrectly evaluates the "count" variable. The resultant code
+causes the loop to execute only once with the following output:
+
+   0
+
+RESOLUTION
+==========
+
+Turn off global optimizations (/Og). In the code sample below, turning off
+global optimizations will correctly output:
+
+   0
+   40000000
+   80000000
+   C0000000
+
+Global optimizations can be disabled by excluding /Og from the command-line
+switches or by the use of a pragma:
+
+      #pragma optimize ("g", off)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft C/C++ 32-bit
+compiler, version 8.0, which is included with Visual C++ 32-bit Edition. This
+problem was corrected in C/C++ compiler version 9.0, included with Visual C++
+32-bit Edition, version 2.0
+
+Sample Code
+-----------
+
+   /*
+   * Compile options needed: /Og
+   */ 
+
+   #include <stdio.h>
+
+   void main( void )
+   {
+       unsigned count;
+        for ( count = 0 ; count < 4 ; count++ )
+            printf(" %X \n", count << 30);
+   }
+
+Additional query words: 1.00 8.00
+
+======================================================================
+Keywords          : kbCompiler kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

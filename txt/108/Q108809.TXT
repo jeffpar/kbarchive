@@ -1,0 +1,77 @@
+DOCUMENT:Q108809  20-NOV-1999  [pcmail]
+TITLE   :PC MMTA: External Instances Using Dynamic Drives Can't Overlap
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks Multitasking Message Transfer Agent, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When multiple instances of the External Mail program (EXTERNAL.EXE) are run on a
+single OS/2 workstation, the ranges of drive letters used for dynamic drives on
+each instance of External must not overlap within the EXTERNAL.INI configuration
+file.
+
+MORE INFORMATION
+================
+
+Dynamic drive names are specified with -F on the External or Dispatch command
+line, or by the DrivesDynamic entry in the EXTERNAL.INI file. This option is
+required only if dynamic drives are used (specified with DynAdmin or DrivesUNC
+or DrivesNovell).
+
+Examples
+--------
+
+The following instances are compatible:
+
+   external -fmn
+   external -fop
+   external -fqr
+   external -fst
+
+The following are not compatible:
+
+   external -fmn
+   external -fop
+   external -fno
+
+In the second example above, the last instance conflicts with the first two
+instances and must be modified to reflect distinct and mutually exclusive drive
+ranges in order for the participating postoffices to be initialized correctly by
+the External Mail program.
+
+For more information, see page 36 in the Microsoft Mail "Multitasking MTA
+Administrator's Guide."
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbMailMMTA320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

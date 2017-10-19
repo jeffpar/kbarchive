@@ -1,0 +1,55 @@
+DOCUMENT:Q118861  20-NOV-1999  [pcmail]
+TITLE   :X400: Supported Format for O/R Name Country Code
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:2.1,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, versions 2.1, 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The country code qualifier in the X.400 originator/recipient (O/R) name
+identifies the country where the mail recipient resides or receives mail
+messages.
+
+You can enter country codes in either of two formats:
+
+ - alpha format: this value must contain two alpha characters (for example: US).
+
+ - numeric format: this value must contain three numeric characters (for
+   example: 412).
+
+REFERENCES
+==========
+
+NIST Stable Implementation Agreements Part 7.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400300 kbMailGatex400320 kbMailGatex400210
+Version           : MS-DOS:2.1,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

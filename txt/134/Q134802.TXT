@@ -1,0 +1,73 @@
+DOCUMENT:Q134802  17-DEC-2000  [win95x]
+TITLE   :Beyond Planet Earth Generates General Protection Fault
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run Beyond Planet Earth in Windows 95, you may receive the
+following error message:
+
+   SBP Caused a General Protection Fault in SBPUSA.EXE
+
+CAUSE
+=====
+
+This problem can occur if Windows 95 is using the High Color (16 bit) or True
+Color (24 bit) color palette. Beyond Planet Earth cannot run if Windows 95 is
+using either of these color palettes.
+
+RESOLUTION
+==========
+
+To work around this problem, configure Windows 95 to use the 256 Color or 16
+Color palette. To do so, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the Display icon.
+
+3. Click the Settings tab.
+
+4. In the Color Palette box, click 16 Color or 256 Color.
+
+5. Click OK.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: gpf
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

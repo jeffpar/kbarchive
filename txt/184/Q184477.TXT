@@ -1,0 +1,72 @@
+DOCUMENT:Q184477  08-MAR-2002  [iis]
+TITLE   :Stop Some Services Before Installing Proxy Server 2.0
+PRODUCT :Internet Information Server
+PROD/VER::2.0,3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Proxy Server version 2.0 
+ - Microsoft Site Server version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Proxy Server 2.0 on a computer that already has Internet
+Information Server (IIS) 4.0 and Site Server 3.0 installed, you must manually
+stop certain services prior to installing Proxy 2.0.
+
+MORE INFORMATION
+================
+
+The following services must be stopped before you install or remove Proxy Server
+2.0 from a computer that already has IIS 4.0 and Site Server 3.0 installed:
+
+ - Site Server Authentication Service
+
+ - Site Server LDAP Service
+
+ - Site Server Message Builder Service
+
+ - Microsoft SMTP Service
+
+ - FTP Publishing Service
+
+ - World Wide Web Publishing Service
+
+ - IIS Administrator Service
+
+From the command prompt you can also type:
+
+   net stop "IIS Admin Service" /y
+
+This will stop the IIS Administrator Service and all related services.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSiteServSearch kbiisSearch kbAudDeveloper kbiis400 kbProxyServSearch kbProxyServ200 kbSiteServ300
+Version           : :2.0,3.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,202 @@
+DOCUMENT:Q284285  16-AUG-2002  [iis]
+TITLE   :HOW TO: Use Wfetch.exe to Troubleshoot HTTP Connections
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbfile kbHOWTOmaster kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - Availability
+    - Wfetch Features
+    - Usage
+    - Security Ramifications
+
+ - REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to use the WebFetch utility to
+troubleshoot HTTP connections.
+
+Availability
+------------
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadWfetch.exe
+   (http://download.microsoft.com/download/iis50/Utility/5.0/W9XNT4/EN-US/wfetch.exe)
+
+Release Date: Mar-22-2001
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+WebFetch Features
+-----------------
+
+When you are troubleshooting connectivity issues between Internet Information
+Server (IIS) or Internet Information Services (IIS) and Web clients, you may
+want to view data that is not displayed in the Web browser, such as the HTTP
+headers that are included in the Request and Response packets.
+
+WebFetch (Wfetch.exe) 1.2 is a free utility that is provided on an "as-is" basis.
+Microsoft does not support the utility, but you can use it to provide detailed
+information about the traffic between the client and server.
+
+WARNING: This utility provides advanced features that can permit a user to expose
+a server to potential security risks. For this reason, Microsoft recommends that
+the utility be used only in testing, and not in a production environment. See
+the Security Ramifications section for more information.
+
+The following features are available in the current version of WebFetch:
+
+ - Multiple HTTP verbs (GET, HEAD, PUT, DELETE, TRACE, POST, OPTIONS)
+
+ - Configurable host name
+
+ - Configurable TCP port
+
+ - HTTP 1.0 and HTTP 1.1 support
+
+ - Multiple authentication types (Anonymous, Basic, NTLM, Kerberos, Digest,
+   Negotiate)
+
+ - Client-certificate support
+
+ - Multiple connection types (HTTP, HTTPS, PCT 1.0, SSL 2.0, SSL 3.0, TLS 3.1)
+
+ - Proxy support
+
+ - Advanced requests that are entered manually or read from a file
+
+ - On-screen and file-based logging
+
+WebFetch does not log the TCP handshake data that is used to establish and close
+TCP sessions. For additional information, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q172983 Explanation of the Three-Way Handshake via TCP/IP
+
+To troubleshoot connectivity issues (including TCP session data), use a utility
+such as Network Monitor, which captures network packets.
+
+Usage
+-----
+
+After you extract the utility to a client with TCP/IP access to a Web server,
+start the Wfetch.exe application and follow these steps:
+
+1. In the Host box, type the name of a Web site (for example,
+   www.microsoft.com).
+
+2. In the Path box, select the path to the file, folder, or application on the
+   Web site that you used in step 1 (for example, /default.asp).
+
+3. Add any additional options based on the test that is being performed.
+
+4. Click Go.
+
+Security Ramifications
+----------------------
+
+ - WebFetch permits a user to store a password for later authenticated logon
+   attempts. By default, the Save check box is not selected. When the Save check
+   box is selected, the password that is typed in the Authentication section is
+   written in clear-text format to the system registry in the following key:
+
+   HKEY_CURRENT_USER\Software\Wfetch
+
+   By default, the following accounts have Allow permissions on the Wfetch
+   registry key:
+
+    - Administrators (local): Read, Full Control
+
+    - Restricted: Read
+
+    - System: Read, Full Control
+
+    - <CURRENT_USER>: Read, Full Control
+
+ - To test client certificate support, WebFetch can optionally install a test
+   root certificate. Because of this, it is important that this tool not be used
+   on production systems.
+
+ - When you are adding a test root certification authority, WebFetch
+   automatically adds the test root certification authority as a trusted root
+   certification authority, which can prevent the warning that typically is
+   displayed when SSL connections are made to sites that use certificates that
+   are issued by certification authorities that are not trusted.
+
+REFERENCES
+==========
+
+For additional information about the TCP/IP three-way handshake, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q172983 Explanation of the Three-Way Handshake via TCP/IP
+
+For additional information about troubleshooting with Network Monitor, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q148942 How to Capture Network Traffic with Network Monitor
+
+   Q252876 How to View HTTP Data Frames Using Network Monitor
+
+For additional information about Digital Certificates, Cryptography, and SSL,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q195724 Description of Digital Certificates
+
+For more information, visit the following Microsoft Web site:
+
+   Fundamental Cryptography and Certificates on the Internet
+   http://www.microsoft.com/Seminar/Includes/Seminar.asp?Url=/Seminar/1033/Crypto_certs/Portal.xml
+
+
+Additional query words: iis 5 wfetch
+
+======================================================================
+Keywords          : kbfile kbHOWTOmaster kbgraphxlinkcritical 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis510
+Version           : :3.0,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

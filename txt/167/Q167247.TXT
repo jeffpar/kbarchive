@@ -1,0 +1,63 @@
+DOCUMENT:Q167247  08-JAN-2000  [exchange]
+TITLE   :XFOR: Dirsync Fails to Import Addresses with Template Info
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The directory synchronization agent may incorrectly ignore some incoming
+addresses if the first line provided with template information contains more
+than 32 characters.
+
+An examination of the incoming Srvupds.glb file may show entries similar to this
+one:
+
+   A Doe, John                      SNADS:NETWORK/POSTOFFICE/JOHND
+   M Doe, John                      SNADS:NETWORK/POSTOFFICE/JOHND
+   - ATTRIBUTE 1:/ATTRIBUTE DATA
+   - ATTRIBUTE 2:/ATTRIBUTE DATA
+   - ATTRIBUTE 3:/ATTRIBUTE DATA
+
+This particular entry fails because the line for "ATTRIBUTE 1" is more than 32
+characters long.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+ - Modify the transaction to be shorter than 32 characters.
+
+Additional query words: SNADS
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

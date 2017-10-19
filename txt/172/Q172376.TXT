@@ -1,0 +1,80 @@
+DOCUMENT:Q172376  01-MAY-2001  [ssafe]
+TITLE   :PRB: Ddcerr.log Reports "DDCONV initializing" During Upgrade
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbSSafe500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+DDCONV produces a Ddcerr.log file that contains only "DDCONV Initializing" when
+upgrading a Visual SourceSafe 4.x installation.
+
+CAUSE
+=====
+
+DDCONV does not have to go through the usual conversion routines for a database
+that is in 4.x format, because the structure of the database files did not
+change from versions 4.x to 5.x. The only difference was the addition of a 128
+byte unique identifier in the Um.dat file. This identifier is not added during
+the DDCONV session.
+
+RESOLUTION
+==========
+
+No action is required. The database should function normally under Visual
+SourceSafe version 5.0.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The normal output in the Ddcerr.log file after a successful conversion of a
+non-version 4.x database is as follows:
+
+   DDCONV initializing
+   Creating subfolders
+   Moving files
+   Creating rights DB
+   Building project list
+   Creating names DB
+   Converting log files
+   Adding project rights
+   Converting users
+   DDCONV finished
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe500 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe500
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

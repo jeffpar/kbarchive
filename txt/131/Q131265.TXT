@@ -1,0 +1,105 @@
+DOCUMENT:Q131265  15-FEB-2000  [foxpro]
+TITLE   :Use Exclamation Mark (!) Notation for Precise Referencing
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Use the exclamation mark (!) notation to reference tables in databases (.DBC
+files). Use it to reference tables that have the same names but that exist in
+different databases, and use it to make code more readable. Its main purpose is
+to guarantee the opening of a specific table.
+
+MORE INFORMATION
+================
+
+Here is the syntax:
+
+      USE <cDatabase_name>!<cTable_name>
+
+NOTE: Do not put spaces on either side of the exclamation mark.
+
+Step-by-Step Example
+--------------------
+
+1. Create the following directory structure:
+
+   C:\MAIN
+   C:\MAIN\ONE
+   C:\MAIN\TWO
+
+   This can be done Visual FoxPro by issuing these commands:
+
+   CD C:\ 
+   MD MAIN
+   CD C:\MAIN
+   MD ONE
+   MD TWO
+
+2. Issue the following commands in the Command Window:
+
+      CD C:\MAIN\ONE
+      CREATE TABLE tb_mytbl (fld1 c(10))
+      CD C:\MAIN\TWO
+      CREATE TABLE tb_mytbl (fld1 c(10))
+      USE
+      CD C:\MAIN
+      CREATE DATABASE db_one
+      ADD TABLE C:\MAIN\ONE\tb_mytbl
+      CREATE DATABASE db_two
+      ADD TABLE C:\MAIN\ONE\tb_mytbl
+      SET DATABASE TO db_one
+
+   These commands set up a scenario where a database named db_one contains a
+   table named tb_mytbl, which is located in the C:\MAIN\ONE directory. Another
+   database named db_two contains a different table named tb_mytbl, which is
+   located in the C:\MAIN\TWO directory.
+
+   The issue is to open the tb_mytbl table in the db_two database. The current
+   database is db_one, so you can't use this command:
+
+         USE tb_mytbl
+
+   It would open the table in db_one located in C:\MAIN\ONE.
+
+3. Open the tb_mytbl table in the db_two database by using this command:
+
+      USE db_two!tb_mytbl
+
+The exclamation mark (!) notation works in the same manner for long table names,
+and it makes code more readable. The notation makes it clear exactly which
+database holds the table of interest. It is especially useful in SQL-SELECT
+statements.
+
+Additional query words: VFoxWin !-symbol bang symbol
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

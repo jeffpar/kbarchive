@@ -1,0 +1,76 @@
+DOCUMENT:Q138490  07-SEP-2001  [powerpt]
+TITLE   :PPT7: Shadow Missing from Text Printed on Black and White Printe
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Shadowed text may be printed without shadows when you print your presentation to
+a black and white printer.
+
+CAUSE
+=====
+
+This behavior occurs because in PowerPoint you can specify a black and white
+view for PowerPoint objects. By default, all objects are set to Automatic for
+text objects. By selecting the Automatic option, black text is printed without
+shadows.
+
+RESOLUTION
+==========
+
+To ensure that your shadowed text objects print with shadows, select the
+Grayscale option for the object's black and white view.
+
+MORE INFORMATION
+================
+
+To customize the black and white behavior for an object:
+
+1. On the View menu, click Black And White.
+
+2. Select the object you want to customize.
+
+3. Right-click the object, and then click Black And White on the menu that
+   appears.
+
+You now see the list of black and white options for this object.
+
+NOTE: Some printers cannot print text in any color other than black. If you use
+one of these printers, shadowed text prints as doubled black text.
+
+Additional query words: b&w powerpnt powerpt shading gray ppt w_ppt w_powerpt
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

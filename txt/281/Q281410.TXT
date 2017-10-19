@@ -1,0 +1,55 @@
+DOCUMENT:Q281410  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator 2: Aircraft Appear Smaller
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The aircraft in Microsoft Combat Flight Simulator 2: WWII Pacific Theater single
+player games appear smaller than the aircraft in Microsoft Combat Flight
+Simulator: WWII Europe Series.
+
+MORE INFORMATION
+================
+
+The aircraft appear smaller because of the increased level of realism and detail
+in Combat Flight Simulator 2.
+
+In Combat Flight Simulator single player games, the aircraft are magnified over
+two times the actual size to make dogfights easier.
+
+Aircraft are the correct size in multiplayer games.
+
+Additional query words: msgame cfs2 combatfs
+
+======================================================================
+Keywords          : kbenv kbui kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

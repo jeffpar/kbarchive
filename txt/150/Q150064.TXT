@@ -1,0 +1,66 @@
+DOCUMENT:Q150064  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Branch to a Specific Version of a Project
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual SourceSafe, you can branch a specific version of a project. This
+article shows by example how to do it.
+
+MORE INFORMATION
+================
+
+Branching a specific version of a project in Visual SourceSafe is slightly
+different from the way it was accomplished in previous versions of SourceSafe.
+
+Step-by-Step Example
+--------------------
+
+1. In the Visual SourceSafe Explorer, select the project you want to branch from
+   by right-clicking on it and then click Show History.
+
+2. In the Project History dialog box, select the recursive option if all
+   subprojects and their files are wanted. Click OK.
+
+3. Select the version, and click the Share button.
+
+4. Select the project in which you want to create the new branch, then select
+   the Branch After Share check box in the lower-left corner of the Share From
+   dialog. Click OK.
+
+5. In the Share dialog box, type the name you want to give to the new branch and
+   check the recursive checkbox if you want to branch subprojects. Click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

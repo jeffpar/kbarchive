@@ -1,0 +1,65 @@
+DOCUMENT:Q154083  19-AUG-1999  [msnetwork]
+TITLE   :E-mail Sent to Internet Address Arrives Multiple Times
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.3, 2.0, 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send an e-mail message from MSN, The Microsoft Network, to an Internet
+address, the recipient may receive the message multiple times.
+
+CAUSE
+=====
+
+This behavior occurs when the MSN e-mail server does not receive confirmation of
+receipt of the sent message within the allotted time of 90 seconds.
+
+MORE INFORMATION
+================
+
+When sending a message to an Internet address, the SMTP server verifies the
+connection, sends the body of the message, and then waits 90 seconds for
+verification that the message has been received.
+
+Occasionally, the necessary confirmation is not received within 90 seconds due to
+slow processing on the receiving server or unusually noisy telephone line
+conditions. If MSN does not receive the necessary confirmation within 90
+seconds, the message is repeatedly sent until confirmation is received. In these
+cases, the recipient receives the message multiple times.
+
+MSN members may see the same behavior when receiving mail from another domain and
+it is caused by the reverse of the above problem.
+
+Additional query words: 2.00 2.50 2.60
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

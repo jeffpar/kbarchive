@@ -1,0 +1,90 @@
+DOCUMENT:Q219025  20-APR-2000  [foxpro]
+TITLE   :BUG: ODBC Query of VFP View Returns SQL_NO_DATA_FOUND
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,6.0
+OPER/SYS:
+KEYWORDS:kbvfp600bug kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the ODBC Visual FoxPro (VFP) driver, a query to a Visual FoxPro view
+returns SQL_NO_DATA_FOUND from SQLExtendedFetch() and SQLFetch() as in the
+following code:
+
+      sr = SQLAllocHandle( SQL_HANDLE_STMT, hdbc, & hstmt );
+
+      sr = SQLPrepare( hstmt, ( unsigned char * ) "select * from listview", SQL_NTS );
+
+      // This call to SQLNumResultCols breaks the SQLExtendedFetch call.
+      sr = SQLNumResultCols( hstmt, & colcount );
+
+      sr = SQLExecute( hstmt );
+
+      sr = SQLBindCol( hstmt, 1,  SQL_C_SLONG, & wineid, 4, & StrLen_or_Ind1 );
+
+      sr = SQLBindCol( hstmt, 2, SQL_C_CHAR, winename, 51, & StrLen_or_Ind2 );
+
+      // This returns 100 == SQL_NO_DATA_FOUND - but there is data!!!
+      sr = SQLExtendedFetch( hstmt, SQL_FETCH_NEXT, 1, & RowCountPtr, & RowStatusArray );
+
+      SQLFreeStmt( hstmt, SQL_DROP );
+
+CAUSE
+=====
+
+Calling SQLNumResultCols(), SQLColAttributes(), and SQLDescribeCol() in between
+SQLPrepare() and SQLExecute() when querying a view, causes SQLExecute() to
+return an empty cursor on the view.
+
+RESOLUTION
+==========
+
+Use either of the following:
+
+ - Do not call SQLNumResultCols(), SQLColAttributes(), or SQLDescribeCol() until
+   after the call to SQLExecute().
+
+-or-
+
+ - Call SQLExecDirect() and execute SQLNumResultCols(), SQLColAttributes(),
+   SQLDescribeCol() following this call.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words: VFPODBC
+
+======================================================================
+Keywords          : kbvfp600bug kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP600
+Version           : WINDOWS:2.5,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

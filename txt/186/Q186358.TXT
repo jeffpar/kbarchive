@@ -1,0 +1,82 @@
+DOCUMENT:Q186358  09-AUG-2001  [winnt]
+TITLE   :How to Enable TAPI 2.1 in Windows NT 4.0 with Service Pack 4
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbFEA kbWinNT400sp4fea
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+ - Microsoft Windows NT Server version 4.0 SP4 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Service Pack 4 includes an updated version of Telephony
+application programming interface (TAPI) 2.1. The TAPI 2.1 files are
+automatically installed on your computer when you apply Windows NT 4.0 Service
+Pack 4.
+
+MORE INFORMATION
+================
+
+After you apply Windows NT 4.0 Service Pack 4, perform the following steps to
+enable Windows NT Telephony Server:
+
+1. Log on to the server as an administrator.
+
+2. Create or configure a user account with administrator privileges. This will
+   be the user account in which the telephony service process (TAPISRV) will
+   run.
+
+3. Enter the following command at a command prompt:
+
+   tcmsetup.exe /s domain\loginID password
+
+   where the domain, loginID, and password refer to the user account configured
+   above.
+
+   After executing this command, you should receive a message stating that the
+   server was set up correctly.
+
+4. Shut down and restart the server.
+
+After you apply Windows NT 4.0 Service Pack 4, perform the following steps to
+enable Windows NT Telephony Clients:
+
+1. Log on to the client computer as an administrator.
+
+2. Enter the following command at a command prompt:
+
+   tcmsetup /c RemoteServerName
+
+   where RemoteServerName is the telephony server's computer name.
+
+Additional query words: 4.00 sp4
+======================================================================
+Keywords          : kbFEA kbWinNT400sp4fea 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp4 kbWinNTS400sp4 kbWinNTS400search
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

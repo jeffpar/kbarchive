@@ -1,0 +1,83 @@
+DOCUMENT:Q152189  08-NOV-2001  [homekids]
+TITLE   :MSB Ocean: Overview of Magic School Bus Explores the Ocean
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusagekbfaq
+
+======================================================================
+1.00 1.01 | 1.00 1.10
+WINDOWS   | MACINTOSH
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Ocean for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a description of Magic School Bus Explores the Ocean.
+
+MORE INFORMATION
+================
+
+A trip to the beach can be oceans of fun, especially when you're traveling with
+the Friz, that daring teacher with the crazy clothes who can make anything
+happen. This time she's got a notion to jump in the ocean. So come explore the
+Coral Reef, the Open Ocean, and more, as you go on a treasure hunt that will
+challenge your head as well as your flippers.
+
+Travel through the seven ocean environments in a bus that's "morphed" into a
+submarine. While you're exploring the ocean environments, be sure not to miss
+the exciting games and activities in each zone. Whenever you start something
+new, the Friz or one of your classmates will be right there to help you.
+
+When you get to a new place, don't forget to go to the back of the bus and check
+out the reports. While you're reviewing the reports, keep in mind that your
+information hunt is also a treasure hunt.
+
+To win the Treasure Hunt Game, you've got to uncover the hidden treasure. To
+locate the treasure, you need to look for clues. The Friz will give you the
+first of three clues at the Sandy Beach. Each clue tells you what you need to do
+to find the next one.
+
+When you arrive at the place where the treasure is hidden, you'll find a treasure
+scanner you can use to uncover your prize. So use your mind, and the treasure
+you will find.
+
+When you've found the treasure, you've won.
+
+The Magic School Bus Explores the Ocean is designed for kids of all ages,
+especially those ages 6-10. The program is based on a series of books from
+Scholastic publishing, one of the leading publishers of kids books.
+
+NOTE: The Magic School Bus Explores the Ocean does not ship with a passport
+showing where the users has traveled.
+
+Additional query words: 1.00 frizz kbmm msbocean winmsbocean macmsbocean multimedia multi-media multi media msbsea overview
+
+======================================================================
+Keywords          : kbusage kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOcean kbScholasticOceanMac kbMSBSearch
+Version           : MACINTOSH:1.0; WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

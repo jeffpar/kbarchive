@@ -1,0 +1,63 @@
+DOCUMENT:Q186419  17-DEC-1999  [sms]
+TITLE   :SMS Error: Insufficient Privileges to Edit Pending Jobs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a user account to manage only Packages and Jobs, you therefore
+restrict the access in Systems Management Server Security Manager to VIEW access
+for Sites, and FULL access for Packages and Jobs. When the user attempts to
+modify a Pending Job, the following error message may appear:
+
+   You have insufficient privileges to edit or create these objects. To edit
+   this data, you need FULL access to the following security objects: SITES and
+   SITE GROUPS
+
+WORKAROUND
+==========
+
+Give the user FULL access to Sites, Site Groups, Packages and Jobs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: smsprod
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

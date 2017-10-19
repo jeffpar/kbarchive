@@ -1,0 +1,66 @@
+DOCUMENT:Q224165  07-SEP-2001  [homekids]
+TITLE   :MSB Animals: License and Certificate Printouts Are Not Centered
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the World of Animals for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a Driver's License or a Certificate in Magic School Bus Explores
+the World of Animals, the printout may not be centered or may be too wide.
+
+CAUSE
+=====
+
+This behavior can occur if you are using any of the following printers:
+
+ - Brother M-1924L
+ - Canon Bubble-Jet BJC-4550
+ - Canon Bubble-Jet BJC-610
+ - Epson Stylus ESC/P
+ - HP DeskJet 660C
+ - IBM 4019 Laser
+ - IBM Personal Printer II 2381
+ - Xerox Docuprint 4517PS
+
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 mskids schoolbus msb drivers licence
+
+======================================================================
+Keywords          : kb3rdparty kbprint kbimu 
+Technology        : kbHomeProdSearch kbKidsSearch kbScholasticAnimals kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,95 @@
+DOCUMENT:Q199072  06-DEC-2001  [crossnet]
+TITLE   :CIFS or Public SMB Information on Common Internet File System
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To better understand Microsoft networking, users of Microsoft products need
+detailed information on the Server Message Block protocol.
+
+MORE INFORMATION
+================
+
+Storage Networking Industry Association
+---------------------------------------
+
+The most current information is from the Storage Networking Industry Association
+(SNIA). For more information, please view the SNIA Web site:
+
+   http://www.snia.org/
+
+The relevant article link is:
+
+   http://www.snia.org/English/Collaterals/Work_Group_Docs/NAS/CIFS/CIFS-SPEC-0P9-REVIEW.pdf
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Microsoft
+---------
+
+HTTP CIFS: A Common Internet File System:
+
+Summary: This article assumes you are familiar with HTTP. Although "CIFS: A
+Common Internet File System", by Paul Leach and Dan Perry is based on the
+low-level file system implemented by Windows, CIFS is a platform-independent
+file sharing system. The Leach and Perry article contains the best explanation
+of oplocks or opportunistic locks or opportunistic locking.
+Category = Developer: Mind
+
+To view the Leach and Perry article, go to the following Microsoft Web site:
+
+   http://www.microsoft.com/Mind/1196/CIFS.htm
+
+MSDN - Platform SDK Explanation of Opportunistic Locks or Opportunistic Locking:
+
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/fsys_5yk3.asp
+
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/fsys_9s4z.asp
+
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/fsys_9cxf.asp
+
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/fsys_4303.asp
+
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/fsys_06ur.asp
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbWin98search kbWin98
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

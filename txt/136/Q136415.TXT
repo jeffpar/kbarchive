@@ -1,0 +1,60 @@
+DOCUMENT:Q136415  17-DEC-2000  [win95x]
+TITLE   :Err Msg: SUWIN Caused a General Protection Fault in Module...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows 95, you may receive the following error
+message:
+
+   SUWIN caused a General Protection Fault in module SUWIN.EXE at 0006:6EB8
+
+CAUSE
+=====
+
+This error can occur when you upgrade an installation of Windows 3.x with more
+than 1200 TrueType fonts installed. This error halts Setup and may require you
+to restart your computer.
+
+RESOLUTION
+==========
+
+You can still run Windows 3.x after you receive this error message. Remove some
+of the TrueType fonts in Windows 3.x so that the total number of installed
+TrueType fonts is 1200 or less, and then run Windows 95 Setup again.
+
+
+Additional query words: gpf w95set
+
+======================================================================
+Keywords          : kberrmsg kbsetup win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

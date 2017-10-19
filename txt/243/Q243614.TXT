@@ -1,0 +1,73 @@
+DOCUMENT:Q243614  21-OCT-1999  [msnetwork]
+TITLE   :Screen Appears out of Alignment After Installing MSN 5.0
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After the MSN 5.O CD-ROM installation, you may notice the following:
+
+ - the screen appears out of alignment
+
+ - some of the buttons or the lettering may appear black
+
+CAUSE
+=====
+
+This issue can occur when you are using an accelerated video driver, a video
+driver with more than 256 colors, or a high-resolution video driver.
+
+RESOLUTION
+==========
+
+To resolve this behavior, try the following items:
+
+ - Try switching to a driver supplied with your Windows 98 CD-ROM.
+
+ - Change the display settings on your computer to show 256 colors or more using
+   the following steps:
+
+   
+
+   1. Click Start, point to Settings, and then click Control Panel.
+
+   2. Double-click the Display icon.
+
+   3. On the Settings tab, in the Colors list-box, select 256 Color.
+
+   4. In the Screen Area section, set your screen resolution to 640 by 480 pixels
+   or higher.
+
+Additional query words: msnetwork 5.00 kbmsn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN500
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

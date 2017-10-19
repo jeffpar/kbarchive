@@ -1,0 +1,144 @@
+DOCUMENT:Q192274  23-FEB-2000  [exchange]
+TITLE   :XADM: IIS Crashes with ActiveX Component Using MAPI
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5,5.5 SP1
+OPER/SYS:
+KEYWORDS:exc55sp2fix exc55 exc55sp1
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you create an ActiveX in-process (DLL) component using MAPI, and use it on
+an Active Server Pages (ASP) with Collaboration Data Objects (CDO), the Internet
+Information Server (IIS) may terminate unexpectedly if two or more sessions are
+created by different user accounts.
+
+CAUSE
+=====
+
+The Emsmdb32.dll file fails to get global instance for the session when in-
+process components share the global instance with CDO. This causes the IIS to
+close.
+
+WORKAROUND
+==========
+
+To work around this problem, create the ActiveX component as out-of-process
+(EXE) or don't use CDO to access Exchange Server.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+
+
+MORE INFORMATION
+================
+
+The Drwtsn32.log file may show a failure similar to the following. (Note
+especially the function names listed on the stack back trace.)
+
+   Application exception occurred:
+   App: exe\inetinfo.dbg (pid=209)
+   When: 8/19/1998 @ 11:9:9.717
+   Exception number: c0000005 (access violation)
+
+   State Dump for Thread ID 0x7e
+
+   eax=00000000 ebx=00000000 ecx=00000000 edx=00000000 esi=01fdf7b4
+    edi=043effbc
+   eip=6f8d2b92 esp=043efe84 ebp=00000000 iopl=0      nv up ei pl zr na po
+      nc
+   cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+      efl=00000246
+
+   function: EcReceiveDatagrams
+        6f8d2b70 85c0             test    eax,eax
+        6f8d2b72 750f             jnz     EcReceiveDatagrams+0xb3
+                                           (6f8d2b83)
+        6f8d2b74 ff157c108c6f                         ds:6f8c107c=7000178e
+                                  call    dword ptr [_imp__GetLastError
+                                           (6f8c107c)]
+        6f8d2b7a 89442418         mov     [esp+0x18],eax
+                                           ss:05dae88b=????????
+        6f8d2b7e e92b010000       jmp     EcReceiveDatagrams+0x1de
+                                           (6f8d2cae)
+        6f8d2b83 b941000000       mov     ecx,0x41
+        6f8d2b88 33c0             xor     eax,eax
+        6f8d2b8a 8d7c2434         lea     edi,[esp+0x34]
+                                           ss:05dae88b=????????
+        6f8d2b8e 33d2             xor     edx,edx
+        6f8d2b90 f3ab             rep     stosd
+                                           es:043effbc=70004f4b
+   FAULT ->6f8d2b92 8b4364           mov     eax,[ebx+0x64]
+                                           ds:019bea06=????????
+        6f8d2b95 89542434         mov     [esp+0x34],edx
+                                           ss:05dae88b=????????
+        6f8d2b99 3bc5             cmp     eax,ebp
+        6f8d2b9b 7e46             jle     EcReceiveDatagrams+0x113
+                                           (6f8d2be3)
+        6f8d2b9d 33ff             xor     edi,edi
+        6f8d2b9f 8be8             mov     ebp,eax
+        6f8d2ba1 33c0             xor     eax,eax
+        6f8d2ba3 85d2             test    edx,edx
+        6f8d2ba5 7617             jbe     EcReceiveDatagrams+0xee
+                                           (6f8d2bbe)
+        6f8d2ba7 8b4b68           mov     ecx,[ebx+0x68]
+                                           ds:019bea06=????????
+        6f8d2baa 8b743910         mov     esi,[ecx+edi+0x10]
+                                           ds:05dae9c3=????????
+        6f8d2bae 8d4c2438         lea     ecx,[esp+0x38]
+                                           ss:05dae88b=????????
+
+*----> Stack Back Trace <----*
+
+   FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+   043effb8  70004f4b  01fdf7b4 00000000 00000000
+    EMSMDB32!EcReceiveDatagrams+0xc2
+   043effc4  00000000  01fdf7b4 c0000005 043effc4
+    KERNEL32!BaseThreadStart+0x51
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words: Exception Fault Ppcg Qfe
+
+======================================================================
+Keywords          : exc55sp2fix exc55 exc55sp1 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1
+Version           : winnt:5.5,5.5 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

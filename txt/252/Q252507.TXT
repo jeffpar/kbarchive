@@ -1,0 +1,61 @@
+DOCUMENT:Q252507  13-JUN-2001  [sna]
+TITLE   :SNA Server Service Pack 3 Appears to Update but Does Not
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an administrative account is not used to execute the update process, even if
+the other steps in the readme are followed, the update will appear to run
+normally, ending with a successful completion message. But the files may not be
+updated. This can be verified by using the SNAVER utility at a command prompt.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q173284 SNA Server Version Information and Windows NT Dependencies
+
+CAUSE
+=====
+
+Setup, which is called by update, requires administrative privileges to finish
+successfully.
+
+RESOLUTION
+==========
+
+Log on as a user with administrative privileges.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

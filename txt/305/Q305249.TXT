@@ -1,0 +1,67 @@
+DOCUMENT:Q305249  15-OCT-2001  [msnetwork]
+TITLE   :"Error 5. Access Is Denied" Error Message Connecting to MSN
+PRODUCT :The Microsoft Network
+PROD/VER::2.0,5.1
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to MSN, The Microsoft Network, you may receive the
+following error message during the authentication process:
+
+   Error 5. Access is denied.
+
+CAUSE
+=====
+
+This behavior occurs because of an incorrect user name or password.
+
+RESOLUTION
+==========
+
+To resolve this behavior, make sure that the user name and password are correct
+and that you include "MSN/" (without the quotation marks) in front of the user
+name.
+
+MORE INFORMATION
+================
+
+For additional information about MSN, click the article numbers below to view
+the articles in the Microsoft Knowledge Base:
+
+   Q238510 Using MSN Internet Services in Windows 2000
+
+   Q166090 MSN Support in Windows NT
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbMSNSearch kbMSN510 kbMSN200
+Version           : :2.0,5.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q264946  28-OCT-2000  [winnt]
+TITLE   :PRB: Bandwidth Leak of USB Device on Surprise Removal
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbDDK kbOSWin2000 kbOSWin98 kbDSupport kbUSB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Universal serial bus (USB) audio and video stream devices may not work if you
+surprise-remove the device while the application is using the device, and then
+plug the device back in.
+
+CAUSE
+=====
+
+The USB hub driver in Windows 2000 releases bandwidth only on
+IRP_MN_REMOVE_DEVICE IRP, not on IRP_MN_SURPRISE_REMOVAL.
+
+Therefore, when a USB device is surprise-removed and if the application has a
+handle to the device open, the system will not send an IRP_MN_REMOVE_DEVICE
+until the handle is closed. As a result, the bandwidth is not released. If you
+plug the device back in again, the device will not work because the system will
+not be able to release enough bandwidth.
+
+RESOLUTION
+==========
+
+To work around this problem, either exit the application that is using the
+device, or restart the system.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDDK kbOSWin2000 kbOSWin98 kbDSupport kbUSB 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin98search kbWinAdvServSearch kbWin98
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

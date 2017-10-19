@@ -1,0 +1,66 @@
+DOCUMENT:Q240699  06-DEC-2000  [schedplus]
+TITLE   :PC WSPlus: Error Message "Schedule Plus Caused a GPF in Dem...
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER::1.0,95,98
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 1.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Schedule+, it stops responding with the following error message:
+
+   Schedule + caused a GPF in demilyr.dll
+
+CAUSE
+=====
+
+A corrupted appointment or meeting is in the calendar.
+
+RESOLUTION
+==========
+
+To resolve this problem, reset the calendar contents:
+
+1. Export the schedule to a .sch file.
+
+2. Rename both local and server .cal files.
+
+3. Create new .cal files.
+
+4. Test.
+
+5. Import the .sch file.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch
+Version           : :1.0,95,98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

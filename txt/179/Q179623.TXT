@@ -1,0 +1,162 @@
+DOCUMENT:Q179623  27-MAR-1999  [exchange]
+TITLE   :XADM: Store Terminates Unexpectedly in CbBinlen
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange information store (STORE) may terminate unexpectedly in
+CbBinlen.
+
+CAUSE
+=====
+
+Although the information store has reached the end of its allocated memory, the
+store still tries to read beyond the address, which is actually not allocated.
+This causes the store to terminate.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 4.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 5.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+This fix has been posted to the following Internet location:
+
+   ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.0/Post-SP2-STORE/
+
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+The Drwtsn32.log file may show a failure similar to the following. (Note
+especially the function names listed on the stack back trace.)
+
+   Application exception occurred:
+   App: store.DBG (pid=241)
+   When: 11/12/1997 @ 15:11:24.543
+   Exception number: c0000005 (access violation)
+
+   State Dump for Thread Id 0xe4
+
+eax=0e2f2ff4 ebx=0000000c ecx=00000000 edx=001c5be0 esi=00000001
+edi=000003a4
+eip=0206697f esp=0d10f8c8 ebp=0d10f8d4 iopl=0         nv up ei pl nz na pe
+nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+efl=00000202
+
+function: CbBinlen
+        02066972 33db             xor     ebx,ebx
+        02066974 395d0c           cmp     [ebp+0xc],ebx
+ss:0d75e1f6=????????
+        02066977 7e1a             jle     CbBinlen+0x21 (02066993)
+        02066979 8b750c           mov     esi,[ebp+0xc]
+ss:0d75e1f6=????????
+        0206697c 8b4508           mov     eax,[ebp+0x8]
+ss:0d75e1f6=????????
+FAULT ->0206697f 8a0418           mov     al,[eax+ebx]     ds:0000000c=??
+        02066982 50               push    eax
+        02066983 57               push    edi
+        .....
+
+*----> Stack Back Trace <----*
+FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+0d10f8d4 0200e5e9 0e2f2ff4 00000009 000003a4 00000000 store!CbBinlen [omap]
+0d10f8ec 020d10ca 000004b0 0f3555b0 0d10f9bc 000003a4
+store!EcCodePageConvert
+
+[omap]
+0d10fa2c 0210a45b 0f36c664 00001e93 00000001 0f43ecec store!EcModifyRulesOp
+
+[omap]
+0d10fa80 020033e4 092c0041 0f36c664 0d10fac4 00000000 store!EcModifyTable
+
+[omap]
+0d10faf8 02003ddc 105c6c18 0e2e23cc 0d10fb1c 00000497 store!EcRpc [omap]
+0d10fb20 77e8eb7a 105c6c18 0e2e23cc 0ccd11e2 00000497 store!EcDoRpc [omap]
+0d10fb40 77e8ea3b 02003d9f 0d10fd18 00000004 ffffffff rpcrt4!<nosymbols>
+                                                                 (FPO:
+[4,2,1])
+0d10fe28 77e8e876 00000000 00000000 0d10ff10 0d10fe40 rpcrt4!<nosymbols>
+.....
+
+*----> Raw Stack Dump <----*
+0d10f8c8  fe 2f 2f 0e 7c 29 2e 0e - 00 00 00 00 ec f8 10 0d
+.//.|)..........
+0d10f8d8  e9 e5 00 02 f4 2f 2f 0e - 09 00 00 00 a4 03 00 00
+.....//.........
+0d10f8e8  00 00 00 00 2c fa 10 0d - ca 10 0d 02 b0 04 00 00
+....,...........
+0d10f8f8  b0 55 35 0f bc f9 10 0d - a4 03 00 00 f4 2f 2f 0e
+.U5..........//.
+0d10f908  09 00 00 00 00 00 00 00 - cc 23 2e 0e ec ec 43 0f
+.........#....C.
+0d10f918  0c 00 00 00 68 25 13 02 - 00 00 52 00 01 00 00 00
+....h%....R.....
+0d10f928  24 00 00 00 cc 23 2e 0e - 70 f9 10 0d cb 71 00 02
+$....#..p....q..
+0d10f938  20 00 00 00 67 2b 08 02 - 18 00 00 00 1c 29 2e 0e
+...g+.......)..
+0d10f948  7c 91 42 0f 00 00 00 00 - 00 00 00 00 60 fa 10 0d
+|.B.........`...
+0d10f958  70 ae 2b 0e ff ff ff ff - 78 f9 10 0d 00 00 00 00
+p.+.....x.......
+.....
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

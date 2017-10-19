@@ -1,0 +1,65 @@
+DOCUMENT:Q177405  09-AUG-2001  [winnt]
+TITLE   :Disabled Zones or Failed Reverse Queries Using DNS Root Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your network, which is using a Microsoft Windows NT Domain Name Service (DNS)
+server, may experience one or more of the following problems:
+
+ - DNS Manager on your DNS server may display some of the zone objects with a
+   red X, indicating that they are disabled.
+
+   -or-
+
+ - DNS clients on the network may be unable to resolve reverse name lookups
+   successfully.
+
+CAUSE
+=====
+
+Your DNS server has its reverse zone, in-addr.arpa, configured as a subdomain of
+the root zone (.).
+
+RESOLUTION
+==========
+
+To resolve these issues, reconfigure your DNS server so that the reverse zone,
+in-addr.arpa, is a separate zone and not a subdomain of the root zone. Then add
+your PTR records or delegations within the in-addr.arpa zone.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

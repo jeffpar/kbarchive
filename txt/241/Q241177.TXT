@@ -1,0 +1,72 @@
+DOCUMENT:Q241177  06-AUG-2002  [exchange]
+TITLE   :XCLN: An Error Occurred Publishing Your Internet Free/Busy Data
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to publish Internet free and busy information by using Outlook, you
+may receive the following error message:
+
+   An Error Occurred Publishing Your Internet Free/Busy Data. The URL Was
+   Bad/Not Found:
+   FILE://\\<computername>\<sharename>\/O=<organizationname>/OU=<sitename>/CN=RECIPIENT...
+
+CAUSE
+=====
+
+This problem may occur if a "File:" protocol that contains a variable is
+specified in the Publish at this URL box that is displayed when you click
+Options on the Tools menu, click Calendar Options, and then click Free Busy
+Options.
+
+The following is an example of a "File:" protocol that contains a variable:
+
+   file://\\<computername>\<sharename>\%name%.vfb
+
+Variables are not supported if you specify the publishing location by using a
+"File:" protocol.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+ - Do not use a variable when you use a "File:" protocol.
+
+ - Use other protocols, such as Hypertext Transfer Protocol (HTTP).
+
+Additional query words: f/b, free/busy, OMI OL2000
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook2000Search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

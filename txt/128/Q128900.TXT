@@ -1,0 +1,64 @@
+DOCUMENT:Q128900  17-DEC-2000  [win95x]
+TITLE   :PCMCIA Socket Not Detected on IBM ThinkPad 720C
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The detection routine in Windows 95 Setup does not detect the PCMCIA socket in
+your IBM ThinkPad 720 or 720C, the IBM ThinkPad 720 is the monochrome display
+model. PCMCIA socket is also not detected when you run the Add New Hardware
+Wizard from Control Panel. As a result, protected- mode socket services are not
+provided.
+
+CAUSE
+=====
+
+The IBM ThinkPad 720/720C PCMCIA socket uses the Stinger chip set. The Stinger
+chip set is not a supported PCMCIA socket chip set for Windows 95 protected-mode
+socket services.
+
+RESOLUTION
+==========
+
+To use the PCMCIA socket on your IBM ThinkPad 720/720C, install the real- mode
+socket drivers using the manufacturer's instructions.
+
+MORE INFORMATION
+================
+
+To use protected-mode network interface card (NIC) drivers with a PCMCIA NIC,
+the PCMCIA socket must be supported for protected-mode socket services.
+Therefore, you cannot use protected-mode NIC drivers when you are using a PCMCIA
+NIC in the IBM ThinkPad 720/720C.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

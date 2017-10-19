@@ -1,0 +1,66 @@
+DOCUMENT:Q96552  21-NOV-1999  [msdos]
+TITLE   :What Defragmenter Does & How It Works with 3rd-Party Utilities
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Defragmenter reorganizes data on MS-DOS drives so that it can be
+retrieved faster.
+
+MORE INFORMATION
+================
+
+MS-DOS organizes data on the hard disk into a series of clusters (allocation
+units) and then tracks which files are using which clusters through directory
+structures and the file allocation tables (FATs). Neither users nor applications
+need to know exactly where specific data is located on the hard disk. When an
+application needs a file, it simply asks MS-DOS to get it.
+
+Over time, pieces of files may be spread all over the hard disk. When this
+occurs, retrieving files requires more time. Defragmenter reorganizes the
+clusters for faster access. (For example, information is stored at the front of
+the disk, and parts of files are regrouped together). Defragmenter uses
+interrupt calls 25H and 26H to move the information stored in one cluster to
+another, directly updating the FATs and directory structures.
+
+Defragmenter operates at nearly the same level as MS-DOS. However, it still uses
+MS-DOS and is protected from direct interactions with the following:
+
+ - Third-party partitioning utilities that modify or translate disk geometry
+   (such as Disk Manager and SpeedStor)
+
+ - DoubleSpace and third-party drive compression utilities
+
+Additional query words: 6.00 3rd-party defrag
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

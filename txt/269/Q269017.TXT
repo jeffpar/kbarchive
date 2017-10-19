@@ -1,0 +1,70 @@
+DOCUMENT:Q269017  08-AUG-2001  [winnt]
+TITLE   :Add Printer Wizard in My Computer Is Not Available
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to add a printer by using the Add Printer Wizard in My
+Computer, the Add Printer icon may be unavailable, and you therefore cannot use
+it to add a printer.
+
+CAUSE
+=====
+
+This behavior can occur when the Spooler service is configured to log on with a
+specific account, not as the System account.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure the Spooler service to log on as the System
+account.
+
+MORE INFORMATION
+================
+
+1. In Control Panel, double-click Services.
+
+2. Select the Spooler service, and then click Startup.
+
+3. In the Log On As group, click System Account and select the Allow Service to
+   Interact with Desktop check box.
+
+4. Click OK, and then restart the computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

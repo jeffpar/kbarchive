@@ -1,0 +1,68 @@
+DOCUMENT:Q119599  17-DEC-2000  [win95x]
+TITLE   :Differences Between Using APM 1.0 and APM 1.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 95 is designed to function with advanced power management (APM) enabled
+computers. Some computers conform to the APM specification 1.0; others use APM
+1.1. Although Windows 95 works with both specifications, there are advantages to
+using APM 1.1.
+
+MORE INFORMATION
+================
+
+Windows 95's functionality improves with APM 1.1 because version 1.1 is designed
+to give the operating system more control over power management than APM 1.0
+permitted. For example:
+
+ - If a computer is using APM 1.1, the operating system can force the BIOS to
+   wait (essentially indefinitely) until it has prepared the running programs
+   and drivers for suspend mode.
+
+ - If a computer is using APM 1.1, the operating system can reject the request
+   for suspend mode.
+
+The operating system does not have this control in APM 1.0. These features help
+stabilize the suspend function in a Windows 95/APM 1.1 environment.
+
+Enhancements in APM 1.1 allow applications and system components to become more
+actively involved in the suspend/resume process. Windows 95 also queries the APM
+BIOS more thoroughly than previous versions of Windows by obtaining more
+accurate information regarding the power state and the remaining battery life.
+This is possible because APM 1.1 provides more accurate reporting of the
+remaining battery power and documents the specification more legibly than APM
+1.0, helping to make power management more reliable.
+
+Additional query words: 1.00 1.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

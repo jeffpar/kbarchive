@@ -1,0 +1,86 @@
+DOCUMENT:Q130600  11-FEB-2000  [foxpro]
+TITLE   :PRB: dBASE Functions Give "File <name> Does not exist" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing the following valid dBASE IV functions in Visual FoxPro causes the error
+"File <name> does not exist" instead of the error message "Function not
+implemented":
+
+      CALL()
+      CATALOG()
+      CERROR()
+      DGEN()
+      ISMARKED()
+      LKSYS()
+      RUN()
+
+NOTE: dBASE IV is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+CAUSE
+=====
+
+These functions are not valid Visual FoxPro functions.
+
+WORKAROUND
+==========
+
+There are no equivalent Visual FoxPro commands for CATALOG(), CERROR(),
+ISMARKED(), LKSYS(), and DGEN().
+
+Use the Visual FoxPro RUN command in place of the dBASE RUN() function and the
+Visual FoxPro CALL command in place of the dBASE CALL() function.
+
+STATUS
+======
+
+This behavior is by design.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Issue any of the functions listed above in the Command window. For example:
+
+      ? ISMARKED()
+
+If this was a supported function, FoxPro would give a different error.
+
+NOTE: ? CATALOG() will open the Catalog Manager in FoxPro version 2.6. Visual
+FoxPro does not support the Catalog Manager.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

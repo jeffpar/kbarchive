@@ -1,0 +1,75 @@
+DOCUMENT:Q138953  10-FEB-2002  [visualc]
+TITLE   :BUG: Static Identifiers Do Not Show Up in ClassView
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Globals folder in the ClassView of Developer's Studio is used to display and
+provide quick access to global identifiers in the current project. Identifiers
+declared as static that have file scope are missing from the ClassView Globals
+folder.
+
+NOTE: In Visual C++ .NET, the nonstatic identifiers do not appear either.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. Microsoft has confirmed this to be a bug in the
+Microsoft products listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Sample Code to Demonstrate Problem
+----------------------------------
+
+      // Main.cpp
+      #include <StdIo.h>
+      ...
+      static int nGlobalStaticInt;  // Will not show up in Globals Folder
+      int        nGlobalInt;        // Will show up in Globals Folder
+      ...
+      void main(void)
+      {
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,77 @@
+DOCUMENT:Q167254  14-NOV-2000  [word97]
+TITLE   :WD97: Invalid Page Fault Applying Font Animation to Footer Text
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you apply any font animation text effect to the word "Confidential" in the
+footer of a document based on the Contemporary Memo template, you receive one of
+the following error messages.
+
+Windows 95
+----------
+
+   This program has performed an illegal operation and will be shutdown.
+
+   If the problem persists, contact the program vendor.
+
+When you click Details, the following error message appears:
+
+   WINWORD caused an invalid page fault in module MSO97.DLL at 0137:307ecfe9.
+
+Windows NT 4.0
+--------------
+
+   An application error has occurred and an application error log is being
+   generated.
+
+   WINWORD.exe
+   Exception: access violation (0xc0000005), Address: 0x307c97c2
+
+RESOLUTION
+==========
+
+Do not apply font animation text effects to the word "Confidential."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 8.0 shimmer sparkle marching red ants black las vegas lights blinking background
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

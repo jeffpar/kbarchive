@@ -1,0 +1,64 @@
+DOCUMENT:Q198601  28-FEB-1999  [winnt]
+TITLE   :WLBS Convergence Event Log Appears As Comma-Delimited or Binary
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Load Balancing Service 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In larger clusters (16 or more computers), the list of hosts in convergence
+event log messages changes from a comma-delimited list of host IDs to a binary
+representation of cluster membership.
+
+MORE INFORMATION
+================
+
+The binary representation appears as in the following example:
+
+   WLBS : host 1 converged with host(s) 11111110111111111111100000000000 as part
+   of the cluster.
+
+In smaller clusters (fewer than 16 computers), the list of hosts appears in
+comma-delimited format, as in this example:
+
+   WLBS : host 1 converged as DEFAULT host with host(s)
+   1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 as part of the cluster.
+
+
+Please note that Windows NT Load Balancing Service (WLBS) Cluster Software does
+not report converged events that list more than 16 hosts.
+
+Additional query words: Convoy
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400 kbWinNTLBSSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

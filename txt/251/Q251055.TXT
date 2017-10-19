@@ -1,0 +1,69 @@
+DOCUMENT:Q251055  18-MAY-2001  [exchange]
+TITLE   :XADM: Error Message: Account Information Is Bad
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5, used with:
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you are installing Exchange Server 5.5 on a Windows 2000-based member
+server, you receive the following error message after you enter the service
+account information:
+
+   Account information is bad.
+
+CAUSE
+=====
+
+The Exchange Server service account does not have the required permissions.
+
+RESOLUTION
+==========
+
+To resolve this problem, add the Exchange Server service account to the local
+Power Users group or local Administrators group on a member server. On a domain
+controller, add the account to the built-in Administrators group.
+
+MORE INFORMATION
+================
+
+The minimum rights necessary for the Exchange Server service account on a member
+server are Power Users rights. However, if installation problems occur when you
+use the local Power Users group, add the Exchange Server service account to the
+local Administrators group. Also, if the local Power Users group is not
+available because of the type of installation that was performed, use the local
+Administrators group.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

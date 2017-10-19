@@ -1,0 +1,60 @@
+DOCUMENT:Q198310  14-NOV-2000  [word97]
+TITLE   :WD97: Title Bar Displays HTML Title Instead of File Name
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you create an HTML title for a Web page document and then you save, close,
+and re-open the document, the HTML title is displayed in the document title bar
+instead of the document file name.
+
+To create an HTML title in Word:
+
+1. On the File menu, click Properties.
+
+2. In the Title box, type the HTML title.
+
+3. Click OK.
+
+CAUSE
+=====
+
+By design, if there is a <TITLE> tag in your HTML document, Word makes the
+title of the document window the same as the HTML title.
+
+
+Additional query words: OFF98
+
+======================================================================
+Keywords          : word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

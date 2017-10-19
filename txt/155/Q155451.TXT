@@ -1,0 +1,122 @@
+DOCUMENT:Q155451  08-AUG-2001  [winnt]
+TITLE   :Microsoft Position on Support for Customers Deploying NDS
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinfo kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article is related to the text available on the
+following Microsoft Web site:
+
+   http://www.microsoft.com/ntserver/nts/deployment/planguide/NDS.asp
+
+NOTE: Because the Microsoft Web site is constantly updated, the site address may
+change without notice. If this occurs, link to the Microsoft home page at the
+following address:
+
+   http://www.microsoft.com/
+
+MORE INFORMATION
+================
+
+Microsoft Clarifies Position on Support for Customers Deploying NDS for NT
+--------------------------------------------------------------------------
+
+Recently, there have been a lot of questions regarding Microsoft's support for
+its Windows NT Server customers who deploy NDS for NT from Novell. Microsoft is
+committed to providing support for our customers. Any customer who uses NDS for
+NT can expect full support for Windows NT Server code from Microsoft. However,
+NDS for NT replaces an internal piece of the Windows NT Server operating system
+related to the directory and security portion of the system. Customers who need
+support for NDS on NT should contact Novell if their problems concern security
+and directory.
+
+Customers should be aware that deploying NDS for NT could lead to significant
+implications, including:
+
+ - Support and reliability: Novell is replacing an internal system DLL
+   (samsrv.dll), this DLL is critical in that it implements a key part of the
+   directory and security infrastructure in Windows NT Server. This DLL is part
+   of the Trusted Computing Base and it was specifically designed to not be
+   replaced except by Microsoft to pass C2/E3 and other security tests.
+   Microsoft has been enhancing the functionality of this module in virtually
+   all Service Packs. For example, Service Pack 3 for Windows NT 4.0 contains
+   changes that are not reflected in Novell's replacement of this DLL. The next
+   Service Pack also updates this file.
+
+   NOTE: Previously, Microsoft incorrectly stated that two DLLs were replaced in
+   Windows NT Server by NDS for NT. This was accurate in the beta from Novell,
+   but with the final release of NDS for NT only one DLL is replaced in Windows
+   NT Server.
+
+ - Upgrading to future releases of Windows NT Server: Because NDS for NT
+   replaces an internal part of the operating system, servers with NDS for NT
+   installed will not upgrade to Windows NT Server 5.0 correctly (e.g., if any
+   new local users have been created). The automatic upgrade to Windows 2000
+   uses internal database information to do the upgrade which is not available
+   once NDS for NT is installed.
+
+While Microsoft understands that Novell is trying to solve a very difficult
+problem -- easing directory management -- NDS for NT is not an interoperability
+solution because it doesn't maintain the state of both directory systems. NDS
+for NT forces customers to replace a critical internal piece of security code on
+every Windows NT Server operating as a domain controller. It is an NDS-only
+solution. Customers want interoperability that enables any new client to
+communicate with any existing server and any existing client to communicate with
+any new server without replacing any code on the existing systems.
+
+Was there another approach for directory management that could have been
+used?
+------------------------------------------------------------------------------
+
+If Novell wanted to deliver an interoperability solution that works with what
+customers already have deployed, Novell could have built a directory
+synchronization tool using the published Active Directory Service Interfaces
+(ADSI). ADSI, the industry standard for accessing directory services from any
+vendor, allows third party developers such as Novell to integrate their
+solutions into the Windows NT Directory Service. This, too, would have allowed
+Novell to synchronize the two directory services without replacing Windows NT
+Server code and then manage both directories from NDS.
+
+This solution would have been better for customers because it would allow both
+systems to coexist without forcing customers to replace what they already have.
+In fact, Microsoft's strategy with Windows 2000 and Active Directory is to
+deliver an NDS directory synchronization tool through native support for NDS
+protocols, a solution that will allow customers to manage their mixed
+environments from Active Directory. Customers can be assured that this solution
+will not require them to replace any code on their NetWare servers. And, it will
+allow them to continue to leverage their investment in NDS.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbinfo kbArtTypeINF 
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

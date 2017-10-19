@@ -1,0 +1,62 @@
+DOCUMENT:Q321164  12-JUN-2002  [exchange]
+TITLE   :XADM: You Can't Administer KMS & Event IDs 5258/5257 Are Logged
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you successfully install the Key Management Service (KMS) component, the
+KMS service starts without a problem. When you try to administer the KMS through
+the Exchange Administrator program by using the KMS administrator password, the
+following errors are logged in the Application log and access is denied:
+
+   Event ID: 5257
+   Source: MSexchangekms
+   Description: KMS has failed processing a request from KMS admin.
+
+   Event ID: 5258
+   Source: MSexchangekms
+   Description: KMS admin failed to get extended details.
+
+RESOLUTION
+==========
+
+To resolve this behavior, type the following password to access the KMS through
+the Exchange Administrator program:
+
+   password
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,68 @@
+DOCUMENT:Q139182  08-NOV-2001  [homekids]
+TITLE   :Multimedia: Second Mouse Cursor In Flyout Menu
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1995 edition; WINDOWS:1.0,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Windows Standard (extra large) appearance scheme and you move the
+mouse pointer over a "flyout" menu (a menu that becomes active when you move
+your mouse pointer over it), two mouse pointers may appear.
+
+CAUSE
+=====
+
+The cause of this problem is not known. It appears to only occur with certain
+hardware configurations.
+
+RESOLUTION
+==========
+
+To correct this problem, change to any other Windows appearance scheme:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Display.
+
+2. Click the Appearance tab.
+
+3. In the Scheme box, change the scheme from Windows Standard (extra large) to a
+   different scheme.
+
+4. Click OK.
+
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm fly-out fly out arrow double cursor
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSWin98 kbOSWin95 kbOSMAC kbOSWinSearch kbHomeProdSearch kbEncartaSearch kbZNotKeyword kbJuliaChild kbEncartaEnCyc1995Mac
+Version           : :1995 edition; WINDOWS:1.0,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

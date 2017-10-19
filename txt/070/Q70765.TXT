@@ -1,0 +1,68 @@
+DOCUMENT:Q70765  08-OCT-1999  [win95x]
+TITLE   :Changing Prompt for DOS Sessions Inside of Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to identify an MS-DOS session that has been started from inside
+of Windows. This requires the use of a batch file to change the prompt. The
+MS-DOS ANSI.SYS driver can be used to enhance the appearance of the prompt once
+initiated.
+
+MORE INFORMATION
+================
+
+Changing the prompt can be done through the use of a batch file that invokes a
+prompt command. The following batch file has been used successfully:
+
+      @echo off
+      prompt Windows Prompt $p$g
+      command
+
+This batch file causes a prompt that looks like "Windows Prompt C:\WINDOWS>"
+to be displayed. This prompt draws attention to the fact that the MS-DOS session
+has been invoked from inside of Windows, which can be beneficial in some
+instances.
+
+This batch file can replace the MS-DOS Prompt icon's Properties from the Main
+Group of Program Manager. Simply replace COMMAND.COM with:
+
+   batch_file_name.BAT
+
+The Prompt command can be enhanced through the use of ANSI.SYS to add color or
+blinking text to further draw attention. For more information about ANSI.SYS,
+please refer to your MS-DOS manual.
+
+Additional query words: 3.00 win30 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

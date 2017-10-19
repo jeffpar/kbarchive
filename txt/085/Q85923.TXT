@@ -1,0 +1,61 @@
+DOCUMENT:Q85923  08-DEC-1999  [win95x]
+TITLE   :Lotus Freelance Graphics and HP Printers Under Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Lotus technical support has confirmed that printing from Lotus Freelance
+Graphics for Windows to some Hewlett-Packard (HP) printers at 150 dots per inch
+(dpi) can result in corrupted output.
+
+Setting the dpi to 300 or 75 may correct this problem.
+
+MORE INFORMATION
+================
+
+According to Lotus, this problem has been most evident when printing to HP
+LaserJet printers. However, Lotus has no information on this problem with other
+HP printers.
+
+As a workaround, Lotus suggests setting the resolution to 300 or 75 dpi. Lotus
+has developed a patch disk for Freelance Graphics for Windows that should
+correct this problem.
+
+The Lotus product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: 3.10 WIN31 hppcl hppcl.drv 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

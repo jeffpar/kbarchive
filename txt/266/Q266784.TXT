@@ -1,0 +1,68 @@
+DOCUMENT:Q266784  02-AUG-2000  [exchange]
+TITLE   :XADM: Administrator Program Doesn't Start with Error 0xc0020002
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the Exchange Server Administrator program, it may not
+start and you may receive the following error message:
+
+   The system cannot find the file specified
+   Windows NT error 0xc0020002
+
+The Administrator program also may not be displayed when you click Start, point
+to Programs, and then click Microsoft Exchange.
+
+CAUSE
+=====
+
+This issue can occur if the Administrator program is not fully installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, start the Exchange Server Setup program from the original
+setup location, and then click Add/Remove Programs. Click to select the Exchange
+Administrator check box, and then finish Setup.
+
+If the Exchange Administrator check box is already selected, click to clear the
+Exchange Administrator check box, and then finish Setup. Start Setup again,
+click to select the Exchange Administrator check box, and then finish Setup
+again.
+
+After Setup is complete, reinstall the Exchange Server service pack if necessary.
+
+Additional query words: admin.exe
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

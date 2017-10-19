@@ -1,0 +1,76 @@
+DOCUMENT:Q147022  19-MAR-1999  [exchange]
+TITLE   :XCON: MTA Strips Message Body Using X400 Connector With ISO 6937
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) may fail to deliver the
+message contents when sending a message across an X400 connector configured to
+use ISO 6937 body parts.
+
+MORE INFORMATION
+================
+
+This problem was introduced in version 995.50 of the MTA. This problem is
+independent of the type of X400 MTA that receives the message that originates
+from Microsoft Exchange. Messages will be delivered successfully to the intended
+recipients but the message body will be missing.
+
+This problem will only occur when using MTA builds 995.50, 995.51, 995.52, and
+995.53 when an X400 connector is configured as follows:
+
+   General Tab
+   -----------
+   Remote Clients Support MAPI is not checked
+
+   Advanced Tab
+   ------------
+   ISO 6937 Body Part is checked
+   Allow MS Exchange Contents is not checked
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in the latest Microsoft Exchange
+Server version 4.0 U.S. Service Pack. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

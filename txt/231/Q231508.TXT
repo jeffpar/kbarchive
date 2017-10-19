@@ -1,0 +1,66 @@
+DOCUMENT:Q231508  01-NOV-2001  [automap]
+TITLE   :MapPoint 2000: Unable to Import Latitude and Longitude Data
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you import latitude and longitude data from a tab delimited text file into
+Microsoft MapPoint 2000, the imported data file may be empty.
+
+CAUSE
+=====
+
+This behavior can occur if you enter the latitude and longitude data in degrees,
+minutes, and seconds. MapPoint 2000 only recognizes latitude and longitude data
+entered in decimal degrees.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, enter latitude and longitude data in
+decimal degrees before you import the data into MapPoint 2000, as shown in the
+following table.
+
++-------------------------------------------------+
+| Decimal degrees | Degrees, minutes, and seconds | 
++-------------------------------------------------+
+| 47.6000         | 47° 36' 00"                   | 
++-------------------------------------------------+
+NOTE: Leading zeros on a latitude or longitude decimal number is not recognized
+as a valid format. If you continue to have problems importing, double check your
+numbers and remove any leading zeros.
+
+Additional query words: mp2000 co-ordinates wrong format
+
+======================================================================
+Keywords          : kbtool kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

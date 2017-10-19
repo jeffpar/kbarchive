@@ -1,0 +1,78 @@
+DOCUMENT:Q180137  14-MAR-2000  [sna]
+TITLE   :Code Conversion Table For PRC Has Duplicate Mappings
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the SnaNls API to convert data to/from Simplified Chinese, incorrect
+character conversion may occur.
+
+CAUSE
+=====
+
+The following mapping combinations are duplicated in the Snadbcs.tbl file for
+Simplified Chinese, which causes conversion problems for the following
+characters:
+
+   ANSI     EBCDIC
+   A1E4 <-> 4450
+   A3BF <-> 4345
+   A3BF <-> 435B
+   A3BF <-> 445C
+
+A new conversion table was created for SNA Server, and the duplicate mapping
+combinations listed above were removed. The following file was changed to
+correct this problem:
+
+   <snaroot>\system\snadbcs.tbl
+
+for Windows NT, Windows 95 and Windows 3.x clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+This problem was corrected in the latest SNA Server version 3.0 and 4.0 U.S.
+Service Packs. For information on obtaining these Service Packs, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

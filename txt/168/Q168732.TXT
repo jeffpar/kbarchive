@@ -1,0 +1,71 @@
+DOCUMENT:Q168732  14-NOV-2000  [word97]
+TITLE   :WD97: Clicking UNC Hyperlink to HTML File Starts Web Browser
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbother kbtool word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a universal naming convention (UNC) HTML hyperlink in a Word
+document, the linked file is opened in your Web Browser instead of in Word. For
+example, if you click the following UNC link in a Word document
+
+   \\MyMachine\MyShare\MyFile.html
+
+the MyFile.html file is opened in a Web browser.
+
+CAUSE
+=====
+
+The file containing the UNC hyperlink is in Word document format.
+
+WORKAROUND
+==========
+
+To use Word to browse an HTML hyperlink, the document containing the hyperlink
+must be saved in HTML format.
+
+To save a Word document in HTML format, use the following steps:
+
+1. Open the document containing the HTML hyperlinks.
+
+2. On the File menu, click Save As HTML.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbother kbtool word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

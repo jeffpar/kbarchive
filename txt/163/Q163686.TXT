@@ -1,0 +1,77 @@
+DOCUMENT:Q163686  07-NOV-1999  [exchange]
+TITLE   :XADM: What to Do If the Service Account Is Deleted
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Exchange Server services require a Windows NT domain account to start. This
+account is called the Exchange Server service account. This article explains
+what to do if the service account is deleted by mistake.
+
+MORE INFORMATION
+================
+
+The service account is given permissions for the Exchange Server directory
+during the setup process. The service account, by default, has permissions for
+all of the objects in the directory. Windows NT accounts in the directory are
+referred to by their Windows NT Security Identifier (SID) values, and not by
+their names.
+
+If the service account is deleted from the Windows NT Accounts database, none of
+the Exchange Server services can start. Even if you recreate this service
+account using the identical name and password, the SID value associated with
+this account is not the same as that of the previous account. Thus, when an
+Exchange Server service tries to start using this new account, the service
+cannot start because the SID value of this new account is different from that
+saved in the directory, and so the account does not have access to the directory
+objects.
+
+The only recommended solution to this problem is to restore the Windows NT
+Security Accounts Manager (SAM) database from a recent backup. This restores the
+deleted service account with its original SID value and all of the Exchange
+Server services can start.
+
+If a backup of the SAM database is not available, the only other alternative is
+to reinstall Exchange Server on all of the servers affected by the loss of the
+service account.
+
+You can save information from the Exchange Server information store (the Priv.edb
+and Pub.edb databases), but you need to recreate the directory, which results in
+the loss of all directory specific information (custom recipients, distribution
+lists, mailbox details, connectors, and so on).
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

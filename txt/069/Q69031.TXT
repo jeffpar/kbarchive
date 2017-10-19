@@ -1,0 +1,63 @@
+DOCUMENT:Q69031  08-DEC-1999  [win95x]
+TITLE   :Epson 9- and 24-Pin Drivers Print Landscape When in Portrait
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When printing with the Epson 9- and 24-pin printer drivers, if the printer
+output seems to be printing in the wrong orientation, check to see if the paper
+orientation corresponds to the paper height and paper width set from the Control
+Panel or Printer Setup.
+
+MORE INFORMATION
+================
+
+With the Epson 9- and 24-pin printer drivers, the page orientation will
+automatically switch from portrait to landscape whenever you set the paper
+height to a size less than the paper width or from landscape to portrait
+whenever you set the paper width to a size less than the paper height. This is
+indicated by the blackened radio buttons under the orientation section of the
+Epson (9- or 24-pin) printer driver dialog box.
+
+You can manually set the printer orientation to a setting that is opposite of
+what it was automatically set to by the Control Panel when the paper height and
+width is adjusted; however this will have no effect on the output. For example,
+if the Control Panel automatically set the orientation from portrait to
+landscape when you adjusted the paper height and width, and you manually changed
+the orientation back to portrait, the output will still print in landscape.
+
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,47 @@
+DOCUMENT:Q108919  30-JUL-2001  [lanman]
+TITLE   :SWAPPER.DAT Grows when NODE Service Runs
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+
+SYMPTOMS
+========
+
+During normal system operation, the OS/2 swap file (SWAPPER.DAT) on servers
+running MS TCP/IP extensions (NODE services) starts to grow.
+
+CAUSE
+=====
+
+NODE.EXE is not releasing some memory dynamically allocated for variables. The
+NODE.EXE footprint grows and when NODE.EXE is swapped to disk SWAPPER.DAT grows.
+
+RESOLUTION
+==========
+
+Fixed in LM22, CSD00.069.
+
+Additional query words: 2.20 2.2 node tcp ip msroute
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

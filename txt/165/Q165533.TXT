@@ -1,0 +1,184 @@
+DOCUMENT:Q165533  09-AUG-2001  [winnt]
+TITLE   :General Sysdiff Troubleshooting Tips
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article supplements the document "Automating Microsoft
+Windows NT Setup Deployment Guide," available on the World Wide Web at:
+
+   http://www.microsoft.com/ntworkstation/info/Deployment-guide.htm
+
+MORE INFORMATION
+================
+
+How to Troubleshoot Sysdiff Error Messages
+------------------------------------------
+
+Sysdiff uses the Windows error numbering system to report problems. To determine
+the meaning of a Sysdiff error message, that is, to translate the error number
+into a message, switch to an MS-DOS prompt and type the following
+
+   NET HELPMSG <number>
+
+where <number> is the number of the Sysdiff error message.
+
+For example, Sysdiff stops responding and the following error message appears:
+
+   ERROR MESSAGE: SYSTEM ERROR 5
+
+When you type
+
+   NET HELPMSG 5
+
+at an MS-DOS prompt, the meaning of "System Error 5" appears:
+
+   Access is denied.
+
+When you use this same method to decode the error message "SYSTEM ERROR 32," the
+following information appears:
+
+   The process cannot access the file because it is being used by another
+   process.
+
+In this way, you can decode the meaning of the error numbers.
+
+How to Troubleshoot "Installation Failed" Applying .inf.
+--------------------------------------------------------
+
+There are many causes for this error message. It is not the purpose of this
+article to try to catalog all of them. This article shows you how to determine
+exactly where the apply command is failing and explains some general reasons for
+such failures.
+
+The .inf file is created by the sysdiff /inf /m command and is automatically
+placed in the $OEM$ directory. This file contains changes that are to be made to
+the registry. It also tells you the version of Sysdiff that was used to create
+it, the system root directory and the total diff count.
+
+The .inf file is executed sequentially, from the bottom up. To determine where it
+has failed, it is necessary to open the file in a text editor (like Notepad)
+beside the Registry Editor. Each line of the file, following the [AddReg]
+section heading, represents a single change to the registry. These are
+abbreviated; HKCR stands for HKEY_CLASSES_ROOT, HKLM stands for
+HKEY_LOCAL_MACHINE, and so on.
+
+Instead of starting at the bottom and working your way up, it might be better to
+start at the middle and work your way out. Look at the line in the .inf file and
+check the registry to see if that line was written. If it was, move to the
+halfway mark between there and the end of the file until you find a line that
+was not written. From there, locate the last line that was written; this will
+show you the last thing Sysdiff successfully wrote to the registry.
+
+When sysdiff encounters an entry that it cannot write, it stops writing from that
+point forward and reports the error message "installation failed." Sysdiff will
+then prompt you to continue. Sysdiff will continue, but all entries from that
+point forward are not written. Changes that are made to .ini files are included
+in the [updateinis] section near the end of the .inf file. If you suspect the
+problem is in updating .ini files, comment out this section and see if Sysdiff
+will continue.
+
+Debugging .inf files can be a time-consuming process. It is not, however,
+necessary to do a full sysdiff /apply command to test it each time you comment
+something out. Because all the Cmdlines.txt is doing is reading the .inf file
+and writing each entry, you can configure it to do only that:
+
+1. Copy Cmdlines.txt and the .inf file from the $oem$ directory to the local
+   Windows NT installation.
+
+2. Copy Cmdlines.txt to a *.bat file (like GO.BAT).
+
+3. Open the *.bat file in a text editor (like Notepad), delete the [Commands]
+   heading and remove the quotation marks and save the changes.
+
+4. Carry out the go.bat.
+
+The above procedure is much faster than doing a full sysdiff /apply to debug an
+error in the .inf file.
+
+NOTE: Make certain that the \%windir%\system32 is in the environment path.
+
+NOTE: Make certain that you do this to a computer that has already failed in the
+installation. The main reason for verifying that this is done to a failed
+installation as opposed to a clean install is that if the application
+directories and .ini files do not exist, Sysdiff will always return an error
+when it tries to write to files that are not there.
+
+Behavior You Can Expect if the Problem Is a Bad .inf File
+---------------------------------------------------------
+
+ - When you double-click on an application, it starts, and then an hourglass
+   appears and then goes away.
+
+ - When you double-click on files in Windows Explorer,you get a message stating
+   that there is no application associated with this file (even though you know
+   that a .xls file belongs to Microsoft Excel, for example).
+
+ - Programs do not appear in the Start menu but do appear on the hard disk
+   drive. (This can also be due to forgetting the /m parameter on the sysdiff
+   /inf command line).
+
+Things that cause an inf to fail include:
+
+ - An attempt to write to a key that the current user no longer has access to or
+   that Sysdiff cannot, by its nature, write to. An example of this is a failure
+   to write to changes in the Boot.ini. Sysdiff cannot write to a read only
+   file.
+
+ - An attempt to write to a key that no longer exists.
+
+ - Corrupted DIFF file (see below).
+
+What to Do if You Suspect a Corrupted Diff File
+-----------------------------------------------
+
+One of the problems with creating the snapshot, diff, and .inf file over the
+network is network problems/bottlenecks. The diff file contains an image of all
+of the files that have been added since the image file was created. Creating
+this large a file over a network connection can leave you wide open for data
+corruption.
+
+A corrupted diff file may be the cause when you do everything Right, and you
+verify the integrity of the .inf file (using the GO.BAT procedure outlined
+above) but the apply still fails. Diff files are huge. If there are any network
+bottlenecks at all, it is easy for these files to become corrupted. To resolve
+this, try
+
+1. Create the snapshot, diff, and .inf files locally.
+
+2. Manually copy the $oem$ file to the I386 share, then run the unattended
+   installation.
+
+Additional query words: tshoot tshooting errors unattended
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

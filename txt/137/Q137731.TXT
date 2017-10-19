@@ -1,0 +1,74 @@
+DOCUMENT:Q137731  14-FEB-2002  [win95x]
+TITLE   :Some Mapped NetWare Drives Incorrect in Windows Explorer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the MAP command in a login script to map a network drive to a
+directory on a NetWare server, the drive you have mapped may appear in Windows
+Explorer and My Computer as the root of the volume instead of the current
+directory. For example, a drive mapped as
+
+   MAP SYS:<directory>\<subdirectory>
+
+may appear as:
+
+   \\<server>\SYS
+
+CAUSE
+=====
+
+Windows Explorer displays the root of the mapped drive rather than the current
+directory (as in earlier versions of Windows). This behavior is by design.
+
+
+RESOLUTION
+==========
+
+To see the current directory of mapped drives, use either of the following
+methods:
+
+ - Use Novell NetWare's MAP command at a command prompt.
+
+ - Use File Manager (Winfile.exe) from an earlier version of Windows.
+
+
+MORE INFORMATION
+================
+
+Note that the issues described in this article do not change the functionality
+of NetWare utilities, batch files based on the current directory, or the MAP
+command itself. These issues affect only the way that Windows Explorer, or other
+Windows 95 tools that use Windows Explorer, displays the drive mappings.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

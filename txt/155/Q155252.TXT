@@ -1,0 +1,133 @@
+DOCUMENT:Q155252  22-OCT-2000  [iis]
+TITLE   :Host Name to IP Address Redirection in an IIS URL
+PRODUCT :Internet Information Server
+PROD/VER:1.0 2.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A client browser accessing a Microsoft Internet Information Server (IIS), using
+a fully qualified domain name in the URL such as
+
+   HTTP://myserver.mycompany.com
+
+or a host/computer name such as
+
+   HTTP://myserver
+
+may result in a URL redirection of host name to IP address, for example
+
+   HTTP://ipaddress
+
+where ipaddress is your host server's IP address.
+
+WORKAROUND
+==========
+
+Below are several ways to work around this issue: two methods to minimize this
+issue in IIS 1.0, a way to resolve it in IIS 2.0, and a way to resolve the issue
+by changing the registry of IIS.
+
+Host name to IP address redirection may occur on an IIS version 1.0 or 2.0
+server. This issue can be resolved on an IIS version 2.0 server that is accessed
+by a browser client that also supports the use of Host Headers and can be
+minimized on an IIS 1.0 server or client browser that does not support the use
+of Host Headers.
+
+To minimize the IP address redirection on an IIS 1.0 server, use the complete
+path to the HTML file in the URL, for example:
+
+   HTTP://myserver.mycompany.com/samples/default.htm.
+
+-or-
+
+End the URL with a forward slash, for example:
+
+   HTTP://myserver.mycompany.com/samples/.
+
+However, the issue may still occur on IIS 1.0.
+
+To resolve the issue in IIS2.0, use Host Headers. Host Headers can help prevent
+the unexpected substitution of the the IP address for the host name in the URL.
+Browsers such as the Microsoft Internet Explorer version 3.0 also support the
+use of Host Headers.
+
+The web master can also make a change to the registry of the IIS 2.0 server to
+help prevent the IP address redirection on older browser clients. The new
+registry entry is ReturnURLUsingHostName; its use is described below.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Carry out "Net Stop w3svc".
+
+2. Start Registry Editor (Regedt32.exe).
+
+3. From the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+
+      \SYSTEM\CurrentControlSet\Services\W3svc\Parameters
+  
+
+   The parameter described below is located under this registry subkey.
+
+   The following describes a new value for the W3SVC service parameters tree,
+   which can only be set by adding an entry in the Registry Editor. This
+   parameter does not appear by default in the registry, so you must add an
+   entry if you want to change its default value. The W3SVC service must be
+   restarted for changes to take effect.
+
+      ReturnURLUsingHostName
+         Data Type = REG_DWORD
+         Value:
+
+   Enter a value of 1.
+
+   The default value is 0. This returns the IIS server's IP address to a client
+   browser when doing redirects if the Host Header field is not present.
+
+   A value of 1 returns a fully qualified domain name or the host/computer name
+   of the IIS server.
+
+   If a fully qualified domain name has been added in the Domain box of the DNS
+   dialog box, the server will return that name; otherwise, it will return the
+   server's computer name, which appears in the Host Name box by default.
+
+4. To fill in a fully qualified domain name, open the TCP/IP property sheet in
+   the Network tool of the Windows NT Control Panel. Click the DNS tab, and type
+   your domain name in the Domain box, for example mycompany.com.
+
+5. Carry out "Net Start w3svc".
+
+Additional query words: prodiis
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis200 kbiis100
+Version           : 1.0 2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

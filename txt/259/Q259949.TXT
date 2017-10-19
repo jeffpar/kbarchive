@@ -1,0 +1,59 @@
+DOCUMENT:Q259949  01-JUL-2000  [visualc]
+TITLE   :INFO: SetCaretPos Is Not Appropriate with CEdit or CRichEditCtrl
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbCaret kbCursor kbMFC kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot use the SetCaretPos function to set the caret position for CEdit or
+CRichEditCtrl controls. You should use the SetSel function instead.
+
+MORE INFORMATION
+================
+
+The caret is a shared resource. A window should not move the caret if it does
+not own the caret. You cannot use the SetCaretPos function to change the
+position of the caret because the control doesn't own the caret.
+
+To move the caret, use the SetSel function and specify the same position for both
+the start and end parameters. This moves the text insertion point, and
+repositions the caret.
+
+REFERENCES
+==========
+
+Online help for SetCaretPos()
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCaret kbCursor kbMFC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

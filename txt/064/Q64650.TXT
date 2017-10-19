@@ -1,0 +1,60 @@
+DOCUMENT:Q64650  12-NOV-1999  [win95x]
+TITLE   :Bitstream Screen Fonts and 8514/A with Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Bitstream Fontware does not properly install screen fonts for an 8514/A screen
+driver under Microsoft Windows version 3.0. The fonts print; however, they do
+not display correctly on the screen.
+
+CAUSE
+=====
+
+It appears that the aspect ratio for the screen driver included with Windows 3.0
+has been changed from version 2.x. However, Bitstream Fontware has not been
+updated to work with the new driver.
+
+MORE INFORMATION
+================
+
+Bitstream is aware of this problem. For further information, contact Bitstream
+Technical support.
+
+The product included her is manufactured by a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

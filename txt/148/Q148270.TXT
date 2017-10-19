@@ -1,0 +1,72 @@
+DOCUMENT:Q148270  21-MAR-1999  [exchange]
+TITLE   :XADM: Can't Return to Admin Choosing OK After Regeneration
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you choose to regenerate Microsoft Mail addresses for Exchange mailboxes
+after changing the network and/or postoffice names for Exchange, the following
+dialog box indicating success is displayed:
+
+   The e-mail regeneration process has been started. It may take some time.
+   Please monitor the event log for any errors and completion.
+
+                             OK
+
+You can still see the OK button of the previous dialog box in the background. If
+you click the background OK button instead of the foreground dialog box OK
+button, the top dialog box will be placed behind the Admin pane, giving the
+impression that control has been totally lost within the admin program.
+
+CAUSE
+=====
+
+The Connector administration displays all of its dialog boxes without a parent
+window handle.
+
+WORKAROUND
+==========
+
+To work around this problem and regain control of the admin console, simply
+press ALT+TAB to access the Microsoft Mail Connector window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: hung hang frozen
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

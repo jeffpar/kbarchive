@@ -1,0 +1,315 @@
+DOCUMENT:Q121038  08-NOV-2001  [homemm]
+TITLE   :MAC Art Gallery: README Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Art Gallery for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+The following information is the contents of the Art Gallery README
+file contained on the Art Gallery for the Macintosh CD:
+
+Microsoft Art Gallery Version 1.0 README File
+---------------------------------------------
+
+This README file contains information on the following topics:
+
+1.  SYSTEM REQUIREMENTS FOR RUNNING ART GALLERY
+     What you need to run Art Gallery
+2.  MEMORY USE
+     Art Gallery memory usage;
+     making it run on low-memory machines
+3.  PERFORMANCE
+     Tips on what to do if Art Gallery is running slowly
+4.  SCREEN SIZES AND COLOR CONFIGURATION
+     What makes Art Gallery look best
+5.  SOUND PROBLEMS
+     Common problems playing sounds, and how to fix them
+6.  PRINTING AND COPYING
+     How to print and copy Art Gallery screens
+7.  DEMONSTRATION MODE
+     How to make Art Gallery run a slide show
+
+-----------------------------------------------
+1.  SYSTEM REQUIREMENTS FOR RUNNING ART GALLERY
+-----------------------------------------------
+
+To install and run Art Gallery you need:
+
+-  a Macintosh computer with a Macintosh-compatible color monitor
+-  System 6.0.7 or later
+-  4 MB of memory
+-  at least 1 MB of available hard disk space
+-  a CD-ROM drive
+
+You can choose to run Art Gallery directly from the compact disc or
+install it on your hard disk. Installing the program makes it load a
+little faster, but uses space on the hard disk.  Since the sounds and
+pictures remain on the CD, you will still need to insert the compact
+disc to use Art Gallery.
+
+If you run the Installer, it will add any necessary files to your
+System Folder. It will also copy the Art Gallery program files to a new
+folder on your hard disk.
+
+System 6.07 and System 6.08 users who want to run Art Gallery directly
+from the CD need to have the file '32-Bit QuickDraw' in their System
+Folder.  If it is not already there,  you will need to do the
+following: drag the file called '32-Bit QuickDraw' from the System
+Files folder on the CD into your System Folder.  For System 7 users,
+this file is already incorporated into the system file itself so you
+won't need to copy anything to your System Folder. If it can't find
+this file when you run Art Gallery from the CD, it will prompt you to
+run the Installer.
+
+--------------
+2.  MEMORY USE
+--------------
+Art Gallery needs a reasonably large amount of your computer's system
+memory (RAM) to display pictures and play sounds. It should run on any
+Macintosh with 4 MB (4,096K) of memory.  Most users will not have
+problems, but if you have only 4MB of memory and your system software
+is large (you have a lot of files in your System Folder), you may need
+to adjust memory usage to make Art Gallery run properly. Here are more
+details on doing this:
+
+Art Gallery is pre-set to a preferred memory size of 2,200K and a
+minimum memory size of 1,800K. The program will take up to 2,200K
+memory if it is available, but use less if it is not.
+
+If there  is less than 1,800K available, the system may give you a
+message like
+
+The application "Microsoft Art Gallery" could
+not be opened (2,200K needed, 1,230 available)...
+
+You will be returned to the Finder. You can do two things to fix this:
+A) Free up more system memory for it, or B) set Art Gallery to use even
+less memory. Try to free up system memory first.  See below for further
+details on A) and B).
+
+NOTE:  To System 6.07 and System 6.08 users:
+
+If there is not 2,200K of memory available, you may see a message like
+
+There is not enough memory to open "Microsoft Musical
+Instruments" (2,200K needed, 1,960K available). Do you
+want to open it using the available memory?
+Click OK, and Art Gallery will run using the available memory.
+
+A) TRY TO FREE UP SYSTEM MEMORY
+Here are some suggestions:
+
+-   Run only one application at a time. If others are
+     running, close them and start Art Gallery again.
+
+-   Check the amount of memory being used by your system
+     software. System software and accessories can occupy
+     memory and slow performance. The "About this Macintosh..."
+     box shows how much memory your computer has and how much
+     is being used by the system. (To see this, return to the desktop,
+     select the Apple menu at top left of the menu bar, and choose
+     the first menu item, "About This Macintosh...". In System 6,
+     this box is called "About the Finder..."). If, for example, the
+     dialog box displays
+        Total Memory         4,096K
+        System Software      3,500K
+
+    this indicates that you have 4,096K of RAM, but the Macintosh
+    is using nearly all of it for its operating system. In this case,
+    a number of applications will have problems running. Any
+    applications that are currently running will be listed.
+
+    You may be able to reduce the amount of memory used by the
+    system. The process for doing this differs depending on
+    whether you are running System 7 or System 6; refer to your
+    Macintosh documentation if you are not familiar with how to
+    do this. (The upper-right corner of the "About..." box, described
+    above, tells you which version of the system you are running).
+
+Three ways to reduce System Memory:
+
+1. You may be able to reduce the Disk Cache setting.  If you are
+running under System 7, select Control Panel under the apple menu and
+launch the Memory control panel.  You can reduce the Cache Size to as
+low as 32K.  Reducing the Cache Size will reduce system memory.  If you
+are running under System 6.07 or System 6.08, select Control Panel
+under the apple menu and click on General in the left hand column.
+Reduce the RAM Cache setting to 32K or turn RAM Cache off.  This will
+reduce system memory.
+
+2. You may have system files that you do not need, such as printer
+drivers for printers you don't have. Taking these files out of your
+System Folder will save memory.  If you remove any files to free
+memory, make sure to store them somewhere else on your hard disk or on
+a backup disk in case you need them later.
+
+3. You may have many fonts or Desk Accessories (Apple menu items or
+DAs) installed that you are not using--removing these will also save
+memory. A number of desktop accessories such as animated screen savers,
+desk pictures, startup sounds and other INITs occupy memory and slow
+the system down. If you have any of these, experiment with moving them
+out of the System Folder. Always save anything you take out of the
+System Folder! Then restart the computer and check the "About This
+Macintosh..." box to see if system memory is reduced.
+
+    NOTE: Be sure to restart your Macintosh after you make any of
+          these changes to the System.
+
+B) ASK ART GALLERY TO USE LESS MEMORY
+If you still have problems, you can try to operate Art Gallery using
+less memory than the minimum 1800K specified, setting it as low as
+1560K. Art Gallery will never run with less than about 1560K of memory.
+Performance problems may result from doing this. For example,
+animations may not run and blow-ups of pictures may not display.
+
+To set Art Gallery to use less memory, you must install the program on
+your hard disk. After running the Installer from the CD-ROM disc,
+return to the desktop, select the Art Gallery icon in the Art Gallery
+folder, and choose Get Info from the File menu in the Finder.  The
+exact form of the information is different in Systems 6 and 7, but all
+versions have a box at the bottom right in which you can change the
+preferred amount of memory Art Gallery should use.
+
+--------------
+3. PERFORMANCE
+--------------
+If Art Gallery seems to be running slowly or gives you interrupted
+sounds, there are a number of things which may help. Here are the main
+things to check.
+
+If you are running on a Macintosh with low memory you may have
+problems--check the previous section, MEMORY USE.
+
+If your Macintosh is running in Virtual Memory mode, you may find that
+Art Gallery runs slowly. For best performance, turn off Virtual Memory.
+To do this in System 7, bring up the Memory control panel, choose the
+Virtual Memory Off option, and then restart the computer. Virtual
+Memory is not available in System 6.
+
+If you are using an old or slow CD-ROM drive, it may be not be able to
+supply information to the Macintosh at the speed required by the
+software. This problem cannot be fixed. If you suspect a problem with
+your CD drive, ensure that it is properly terminated. If you do not
+understand SCSI termination, read your Macintosh or CD-ROM drive
+documentation, or ask your Apple dealer. Drives must be internally
+terminated or have a SCSI terminator plugged in.
+
+----------------------------------------
+4.  COLOR CONFIGURATION AND SCREEN SIZES
+----------------------------------------
+Art Gallery is designed to run with your monitor set to 256 colors.
+When Art Gallery starts, it checks what color mode your monitor is set
+to. If it is not displaying in 256 colors, but your setup can be
+adjusted to do so, Art Gallery will offer to change it for you.  A
+dialog box will come up asking if you want to change to 256 colors,
+click 'switch now'.
+
+Art Gallery can run in other color modes but it is not designed to do
+so.  If you do run in other color modes (16-colors, 16-bit or 24-bit),
+the animations included with some of the paintings will not play and
+image quality may suffer.  Using more than 256 colors (16-bit or 24-bit
+mode) will not improve the images and will slightly slow down display.
+If you are using one of these modes, Art Gallery will prompt you to
+switch to 256 colors. Running Art Gallery in another mode will cause no
+damage, but will not provide the best performance.
+
+Art Gallery will run on a 13" monitor, as found on a Performa; it will
+also run on all larger monitors. However, Art Gallery is not designed
+to run on 12" monitors or PowerBook screens.  If you are using a
+PowerBook, you may be able to run Art Gallery using a second monitor.
+Check your PowerBook manual for hooking up a second monitor.
+
+------------------
+5.  SOUND PROBLEMS
+------------------
+If you do not hear any sound at all, first make sure that you have the
+sound level on your Macintosh set correctly. To set the sound level,
+use the Sound control panel, and experiment with the speaker volume
+setting until you get a comfortable sound level. If you set the sound
+level to maximum, you may get sound distortion just as you would on a
+stereo system.
+
+If your Macintosh is running in Virtual Memory mode, you may find that
+sounds are interrupted. When Virtual Memory is turned on, sounds are
+sometimes placed on the hard disk rather than into real RAM. For best
+performance, turn off Virtual Memory. To do this in System 7, bring up
+the Memory control panel, choose the Virtual Memory Off option, and
+then restart the computer. Virtual Memory is not available in System 6.
+
+Macintosh computers have built-in speakers. The speakers vary in
+quality and loudness depending on which Macintosh you have. The quality
+has improved in later models, so a Quadra will give you better sound
+quality than an early Mac II.
+
+You may hear a clicking noise when playing sounds on Art Gallery.  On
+some machines installing Sound Manager 3.0 will lessen this problem.
+For people running on Systems older than System 7.1, such as System
+6.07, System 6.08 or System 7.01, you must have QuickTime installed on
+your machine; Sound Manager 3.0 will only work if you have QuickTime
+installed.  For people running System 7.1 or later, simply install
+Sound Manager 3.0 as detailed below.
+
+To install Sound Manager 3.0, open the System Files folder on the Art
+Gallery CD.  Drag the two files, Sound and Sound Manager, into the
+System Folder on your hard disk.  Then restart your Macintosh.
+
+------------------------
+6.  PRINTING AND COPYING
+------------------------
+The large color pictures in Art Gallery, which are optimized for best
+screen reproduction rather than for print reproduction. You can,
+however, print screen images which will be of the same quality as a
+screen shot made with a screen-capture function.
+
+If you have a black-and-white printer, Art Gallery will not print very
+well. Art Gallery prints better grayscale images.  If you have a laser
+printer, choose the Color/grayscale option for better quality. You can
+also print in color if you have a color printer. Depending on the type
+of printer you have, printing a picture may take several minutes.
+Because the pictures can be quite large, you may have difficulty
+copying or printing in low-memory conditions.  In this case, close all
+other applications and then try again.
+
+The Print and Copy commands affect only the active window. So if you
+are looking at a blow-up of a picture and select Print or Copy, you
+will only print or copy that blow-up.
+
+----------------------
+7.  DEMONSTRATION MODE
+----------------------
+Art Gallery has a demonstration mode which plays a random "slide show"
+of the paintings in the collection.
+
+To activate demonstration mode, select Random from the Go menu or type
+command-R. To stop the slide show and use Art Gallery at any time, just
+click on the mouse.
+
+Additional query words: 1994multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbArtGalleryMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

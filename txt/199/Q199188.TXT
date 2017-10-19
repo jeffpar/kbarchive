@@ -1,0 +1,60 @@
+DOCUMENT:Q199188  05-MAY-1999  [exchange]
+TITLE   :XADM: Special Characters in Mailbox Display Name
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Exchange Administrator program, it is possible to add special characters
+to the display name of a mailbox from the General tab of the mailbox. It is not
+possible to add these special characters to the simple display name in the
+Advanced tab of the mailbox.
+
+MORE INFORMATION
+================
+
+The simple display name feature on the Advanced tab is specifically for
+interoperability with foreign systems that do not recognize the special
+characters set on the General tab within the mailbox properties. Although not
+all special characters can be typed in the Simple Display field of the Advanced
+tab, the following characters will be accepted:
+
+   (),.?/:'=+-
+
+A simple display name can coexist with the regular display name, however; the
+simple display name will be displayed for systems that cannot understand the
+special characters set in the General tab.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

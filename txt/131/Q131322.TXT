@@ -1,0 +1,112 @@
+DOCUMENT:Q131322  13-JUN-2002  [visualc]
+TITLE   :PRB: C2710: Cannot Delete a Pointer to a Const Object
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbCompiler kbCPPonly kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbV
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to delete a pointer to a constant causes the compiler to generate the
+following correct error message:
+
+   Error C2710 : cannot delete a pointer to a const object
+
+NOTE: Visual C++ .NET compiler does not demonstrate this issue in conformance to
+the changes made in the C++ ANSI Standards.
+
+CAUSE
+=====
+
+Deleting a pointer to a constant should not be allowed by definition (ARM
+section 5.3.4) because it modifies the object pointed to. However, if you
+deliberately or accidentally use the explicit conversion, the compiler doesn't
+generate the error. The consequences of a such attempt are unpredictable and
+compiler implementation dependent.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code #1 to Demonstrate Behavior
+--------------------------------------
+
+   /* No special compile options needed. */ 
+
+   const int * pi   = new int(1000);
+   const char * pch = new char(65);
+
+   void main(void)
+   {
+     delete  pi  ;// Error C2710:cannot delete a pointer to a const object
+     delete  pch ;// Error C2710:cannot delete a pointer to a const object
+   }
+
+Visual C++ version 5.0 and 6.0 generate the following error:
+
+   Error C2664: 'delete' : cannot convert parameter 1 from 'const char *' to
+   'void *'
+
+Sample Code #2 to Demonstrate Behavior
+--------------------------------------
+
+   /* No special compile options needed.
+      The type casting of the pointer to const argument of the delete
+      operator prevents the C2710 error but is not recommended. */ 
+
+   const int * pi   = new int(1000);
+   const char * pch = new char(65);
+
+   void main(void)
+   {
+      delete (int *) pi;   //no error C2710 generated
+      delete (char *) pch; //no error C2710 generated
+
+   }
+
+REFERENCES
+==========
+
+For more information, see The Annotated C++ Reference Manual (1994) section
+5.3.4.
+
+Additional query words: 8.00 8.0 8.0c 8.00c 9.00 9.0 9.1 9.10
+
+======================================================================
+Keywords          : kbcode kbCompiler kbCPPonly kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC500 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC152 kbVCNET kbVC500Search
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

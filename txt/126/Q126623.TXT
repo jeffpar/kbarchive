@@ -1,0 +1,65 @@
+DOCUMENT:Q126623  20-AUG-2001  [winnt]
+TITLE   :DHCP Manager Does Not Display Host Names
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2c,3.0,3.5
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+ - Microsoft LAN Manager, version 2.2c 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows NT Server version 3.5 Dynamic Host Configuration Protocol
+(DHCP) Manager does not display the host name of a DHCP reservation acquired by
+the following clients:
+
+ - Microsoft Network Client for MS-DOS
+
+ - Microsoft LAN Manager 2.2c for MS-DOS
+
+MORE INFORMATION
+================
+
+The DHCP manager displays the IP address and empty brackets for all leases
+obtained by Microsoft Network Client for MS-DOS and Microsoft LAN Manager 2.2c
+for MS-DOS clients. The DHCP request frame does not contain a host name options
+field and cannot be recorded by the DHCP manager.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Network Client for
+MS-DOS, version 3.0 and Microsoft LAN Manager 2.2c for MS-DOS. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 2.20c 3.00 3.50 prodnt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbZNotKeyword kbLanManSearch kbNetworkClientSearch kbLanMan220c kbNetworkClient300DOS
+Version           : :2.2c,3.0,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,405 @@
+DOCUMENT:Q103285  26-FEB-2002  [winnt]
+TITLE   :Contents of Windows NT SETUP.TXT, Part 2
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is part 2 of 2 articles that contain the complete text of the
+SETUP.TXT file. These articles contains the following:
+
+ - Part 1 contains:
+
+     1.0 Removing Previous Versions
+     2.0 General Hardware Notes
+     3.0 Specific Computer Systems
+     4.0 General Disk Drive Information
+     5.0 SCSI Devices
+
+ - Part 2 (this article) contains:
+
+     6.0 Error Messages
+     7.0 Video Display Drivers and Adapters (x86 Computers)
+     8.0 Removable Media
+     9.0 Supported Keyboard Layouts
+     10.0 Installing Windows NT over NextStep
+     11.0 Converting File Systems During
+          Installation
+
+Introduction
+------------
+
+Feedback from the thousands of Windows NT beta sites has shown that Windows NT
+Setup proceeds smoothly in the vast majority of cases. However, there are cases
+where you may experience difficulties with hardware incompatibilities or
+conflicts. SETUP.TXT contains information that you may need in order to install
+Windows NT or Windows NT Advanced Server (the article applies to both) on some
+hardware configurations.
+
+For more information on installation, see the chapters "Installing Windows NT"
+and "Troubleshooting" in the "Windows NT System Guide" or the "Windows NT
+Advanced Server System Guide."
+
+6.0 Error Messages:
+
+6.1 Couldn't Find NTLDR:
+
+This message is displayed if the file NTLDR is missing from the root of the C:
+drive. You can copy the file to C:\ from either the CD ROM or floppy disks.
+
+To copy NTLDR from the CD ROM, make the CD ROM your current drive and enter the
+command:
+
+   copy \i386\ntldr C:\
+
+To copy NTLDR from floppy disk, insert Disk 2 in your disk drive and make that
+drive the current drive. Then enter the command:
+
+   expand ntldr.$ c:\ntldr
+
+6.2 Error 0000001E:
+
+Generally, this error implies a problem in the file system. Run CHKDSK or another
+similar utility on the drive. Make sure your hardware is on the hardware
+compatibility list.
+
+6.3 Error 0x00000069 or 0x00000067:
+
+This initialization error indicates that Windows NT is unable to communicate with
+the hard drive controller. Try the following:
+
+ - Slow down the DMA transfer rate on the controller.
+
+ - Make sure both ends of the SCSI bus are terminated.
+
+ - Make sure there are no IRQ or memory address conflicts.
+
+ - Make sure you are not using a faulty or unsupported driver.
+
+ - Make sure NTDETECT.COM is in the root of the boot drive partition.
+
+ - Make sure there are no missing Windows NT system files.
+
+6.4 NMI Hardware Error:
+
+This error is caused by a hardware problem. In some cases, the computer's memory
+can be at fault, leading to an error that does not appear when running MS-DOS or
+Windows 3.x, but does appear when running Windows NT. Memory errors can occur
+when the access rate does not match the requirements of the system board or when
+the access rate varies between SIMM modules or chips on a module. Cache memory
+access rates that are too slow can also cause this problem. In general, the
+first steps toward troubleshooting are to make sure that contacts for all boards
+and memory modules are clean, that boards and memory modules are properly
+seated, and that the computer is free of dust.
+
+6.5 System Error F002:
+
+If you receive a System Error F002, this probably means that your hardware is
+faulty; for example, you may be experiencing a memory failure. If this occurs,
+run the manufacturer's diagnostics procedure and check to see if your memory is
+the proper speed for your CPU.
+
+7.0 Video Display Drivers and Adapters (x86 Computers):
+
+Windows NT has excellent video support, supporting over 45 video display
+adapters, including excellent high-end support. Here are some detailed notes on
+Windows NT's video support.
+
+The information in this section is applicable for x86 computers only. To select a
+video adapter other than VGA, you must run Custom Setup or run Windows NT Setup
+from the Main program group after you have completed installation.
+
+This release supports the VGA standard video cards plus some newer video cards.
+If the video card you use is not listed in this section, select VGA as the
+display device in Windows NT Setup. If you choose a display mode in Setup that
+your hardware does not support, you will need to reinstall Windows NT. You
+should be careful when installing some of the higher resolution modes to be sure
+that your monitor supports the resolution and vertical refresh rates.
+
+If the display mode selected by the user is not valid--because the video card was
+not present or because the card had insufficient video memory--an alternate
+driver will be selected by Setup automatically so that the computer is able to
+boot.
+
+If you encounter problems read your video manual again for proper settings. You
+may have overlooked something in the manual that pertains to Windows NT if you
+previously installed the card under Windows 3.1.
+
+In general, Windows NT video drivers do not use interrupts. Many VGA cards use
+jumpers to enable IRQ 2 interrupt for EGA compatibility. When possible, you
+should disable the IRQ 2 interrupt.
+
+During setup Windows NT may allow you to set the vertical refresh rate for your
+card. Read your monitor manual to see what settings you can use. If you are
+unsure, set up at the lower resolution, and then later try higher resolutions.
+If after changing these settings and rebooting, you find that your display is
+not operating correctly, reboot again and use the "last known good" feature to
+restore your previous video settings. Be aware of the fact that some monitors
+may be physically damaged by wrong video settings.
+
+Minimum video memory requirements for Windows NT:
+
+640x480x16 colors                512K
+640x480x256 colors               512K
+800x600x16 colors                512K
+800x600x256 colors               1M
+1024x768x16 colors               512K
+1024x768x256 colors              1M
+1280x1024x256 colors             See individual driver
+                                 requirements
+
+7.1 VGA:
+
+If you experience a problem with the standard VGA driver, try the alternative VGA
+driver that programs the VGA directly. The standard VGA driver uses the VGA
+display adapter's BIOS to initialize the card. To use the alternate driver,
+rename the standard driver VGA.SYS to VGA.SAV. Then copy VGA_ALT.SYS to VGA.SYS
+and reboot.
+
+7.2 8514/A and Compatible Cards:
+
+When installing Windows NT on a computer that has an 8514/A or compatible graphic
+card (for example, IBM's 8514/A or ATI's 8514Ultra), and the computer has an
+older version of BIOS, Custom Setup may display your video card as "Unknown."
+
+You can change the video driver from "Unknown" to the Standard VGA (640x480, 16
+colors) driver during Windows NT Setup. If you have an ATI 8514 Ultra graphic
+card, after Windows NT Setup is completed, you can run Windows NT Setup located
+in the Main group in Program Manager to select the appropriate ATI video driver.
+Express Setup will default the video driver to the Standard VGA (640x480, 16
+colors) when an unknown video card is detected.
+
+There is no other video driver for 8514/A or compatible graphic cards included in
+this release of Windows NT.
+
+7.3 Cirrus-based Cards:
+
+For boards based on the Cirrus Logic chip set, select Cirrus with the appropriate
+resolution during Setup.
+
+7.4 VESA VGA:
+
+The VESA VGA driver uses the newer standard for detecting if a card can handle
+the 800x600 Super VGA mode. VESA VGA is not supported, if you have a card that
+uses the old standard, or a card that required an MS-DOS-based TSR to implement
+Super VGA functionality. Standard VGA mode is supported instead.
+
+7.5 Diamond SpeedSTAR (and any ET4000 SVGA):
+
+For the Diamond SpeedSTAR cards, select ET4000 with the appropriate display mode
+during Setup.
+
+Some ET4000 adapters do not support the setting of refresh rates through
+software.
+
+If you have a card with only 512K bytes of video memory, the 800x600x256 and
+1024x768x256 color modes will not work correctly.
+
+7.6 ProDesigner II Display:
+
+For the Orchid Technologies ProDesigner II and ProDesigner IIs cards, select
+ET4000 with the appropriate display mode during Setup.
+
+7.7 S3 VGA:
+
+To run the S3 video driver, your graphics adapter must have at least 1 megabyte
+(MB) of video memory.
+
+The vertical refresh rate for most S3 based video is set by dip switches on the
+card, or by running an MS-DOS program that programs the adapter's ROM. For these
+systems, select the default setting in Windows NT Setup. The MS-DOS setup
+program for these cards, must be run under MS-DOS. If you have a DELL machine or
+Number Nine card, you may use the other settings when listed.
+
+If you experience difficulties using the S3-based video card on your
+Hewlett-Packard Vectra computer, call Hewlett-Packard technical support to
+upgrade your BIOS EEPROMS.
+
+7.8 Trident:
+
+For Trident cards, select Trident with the appropriate display mode during Setup.
+Trident 8900c based boards do not show 256 color MS-DOS-based applications in
+frozen windows well.
+
+7.9 Video Seven, Headland Technologies VRAM II, and VRAM
+II Ergo:
+
+For these devices, select Video Seven VRAM with the appropriate resolution during
+Setup.
+
+When using the VRAM II with BIOS version 8.05, you may see random characters or
+vertical lines when rebooting. Contact Headland Technologies for a ROM upgrade.
+
+The VRAM II Ergo display card also causes problems if its DIP switches are not
+set correctly. All the switches should be off (set to the right) except for
+switch #3. If this fails to correct your problem, please contact Headland
+Technologies technical support.
+
+VRAM I BIOS rev. 1.18 does not support any 256-color modes under Windows NT.
+
+The IRQ jumper settings should always be set OFF. Note that on BIOS rev. 8.57 and
+8.59, the settings are the reverse of that shown in the documentation.
+
+7.10 Western Digital/Paradise:
+
+For Western Digital cards, select WD with the appropriate display mode during
+Setup. We have performed testing on WD90C30 and WD90C31 chip sets.
+
+7.11 XGA:
+
+For these devices, select XGA or XGA2 with the appropriate resolution during
+Setup. The XGA cards require 1 MB of video memory, and only support 256 color
+modes. Make sure that your monitor supports the modes you select.
+
+Only install the XGA driver on portables with plasma displays if an external
+monitor is attached.
+
+7.12 ATI:
+
+The ATI drivers support the following boards:
+
+    GRAPHICS ULTRA
+    GRAPHICS VANTAGE 8514/ULTRA
+    GRAPHICS ULTRA PRO
+    GRAPHICS ULTRA+
+
+The GRAPHICS ULTRA, GRAPHICS VANTAGE, and 8514/ULTRA with 1 MB of graphics memory
+support resolutions of 640x480, 800x600, 1024x768 at 256 colors.
+
+The GRAPHICS ULTRA PRO and GRAPHICS ULTRA+ with 2 MB of graphics memory and the
+aperture enabled support the following resolutions:
+
+ - 640x480, 800x600, 1024x768, 1280x1024 at 8 bpp with 256 colors
+
+ - 640x480, 800x600, 1024x768 at 16 bpp with 65,536 colors
+
+ - 640x480, 800x600 at 24 bpp with 16,777,216 colors 640x480 at 32 bpp with
+   16,777,216 colors
+
+The GRAPHICS ULTRA PRO and GRAPHICS ULTRA+ with 1 MB of graphics memory and the
+aperture enabled support the following resolutions:
+
+ - 640x480
+
+ - 800x600
+
+ - 1024x768 at 8 bpp with 256 colors
+
+ - 640x480 at 16 bpp with 65,536 colors
+
+The GRAPHICS ULTRA PRO and GRAPHICS ULTRA+ in an ISA bus computer and the
+aperture disabled support the following resolutions:
+
+ - 640x480
+
+ - 800x600
+
+ - 1024x768
+
+ - 1280x1024 at 8 bpp with 256 colors
+
+ - 640x480
+
+ - 800x600
+
+ - 1024x768 at 16 bpp with 65,536 colors
+
+The supported resolutions and pixel depths are conditional on there being enough
+memory on the card. All cards require a minimum of 1 MB of graphics memory. The
+pixel depth is conditional on the DAC type on the display adapter. If you choose
+a resolution that is not supported or your card has not been installed for, the
+driver substitutes a supported resolution.
+
+The following configurations are not supported:
+
+The GRAPHICS ULTRA, GRAPHICS VANTAGE, and 8514/ULTRA at 1280x1024 and 16 colors.
+
+The GRAPHICS ULTRA PRO, and GRAPHICS ULTRA+ if you have an ISA bus and NO
+aperture (that is, more than 12 MB of RAM) at the following resolutions:
+
+   640x480, 800x600 at 24 bpp with 16,777,216 colors
+   640x480 at 32 bpp with 16,777,216 colors]
+
+8.0 Removable Media:
+
+Removable media drives (such as Bernoulli and Syquest) are supported for use with
+the FAT and NTFS file systems only.
+
+Optical drives that support media with sector sizes larger than 512 bytes must
+have the 512-byte sector size media mounted while installing Windows NT, even if
+Windows NT is not being installed onto the optical drive.
+
+If you install Windows NT or any portion of Windows NT onto removable media, be
+sure to shut down Windows NT before removing the media. (That is, choose
+Shutdown from the File menu of Program Manager.) Do not remove the media until
+after Windows NT has completed its shutdown process. Media must be installed to
+run Windows NT Setup.
+
+9.0 Supported Keyboard Layouts:
+
+During setup, the following keyboard layouts cannot be used:
+
+     Czech
+     Greek
+     Hungarian
+     Polish Programmer
+     Russian
+
+These keyboards are for use only with Unicode applications and require installing
+the Unicode font, Lucida Sans Unicode.
+
+10.0 Installing Windows NT over NextStep:
+
+NextStep makes nonconventional changes to partition tables that can distort
+measurement of the amount of space remaining on a drive. If more space is
+reported than is actually available, installation can fail due to lack of space
+on the drive.
+
+11.0 Converting File Systems During Installation:
+
+If your disk is too fragmented, there may not be enough room for Setup to create
+the system files. If this occurs, Setup will not be able to convert a volume at
+the conclusion of installation. Before trying to convert the volume again,
+either delete some files, or back up and reformat the drive.
+
+12.0 Reporting Problems:
+
+If you encounter a system problem, please report it to Microsoft using
+BUGREP.TXT. This file is located in the \SUPPORT\SUPTOOLS directory on the
+CD-ROM as well as floppy Disk #4 of the floppy install disk set. Additionally,
+SAMPBUG.TXT is an example of a completed bug report.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

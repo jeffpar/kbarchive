@@ -1,0 +1,75 @@
+DOCUMENT:Q145822  03-AUG-2001  [visualc]
+TITLE   :DOC: Creating Import Libraries for PowerPC Shared Libraries
+PRODUCT :Microsoft C Compiler
+PROD/VER:MACINTOSH:4.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbVC400 kbVC400bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, Macintosh Cross-Development Addon, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for creating an import library for Apple Code Fragment shared
+libraries in "Visual C++ Porting Applications to the Macintosh," Chapter 19
+(Macintosh Shared Libraries) under "Code Fragment Manager Shared Libraries"
+contain various documentation errors. This article gives the correct
+documentation.
+
+MORE INFORMATION
+================
+
+The steps to create an import library should read as follows:
+
+1. Use the MFILE COPY command to copy the code fragment library file from the
+   Macintosh to your computer.
+
+         MFILE COPY ":MACINTOSH HD:MYLIB" MYLIB
+
+2. Use the dumpbin utility to place all exported functions and variables into a
+   file called MY.EXPORTS.
+
+         DUMPBIN /EXPORTS MYLIB > MY.EXPORTS
+
+3. Edit MY.EXPORTS to get just the names of the exported symbols.
+
+4. Create a .DEF file (MYLIB.DEF) that contains the following lines:
+
+         LIBRARY  MYLIBNAME
+         EXPORTS
+
+   Here MYLIBNAME is the fragment name from the 'cfrg' resource in the Macintosh
+   shared library, and the list of export names in MY.EXPORTS is placed after
+   the EXPORTS keyword.
+
+5. Use the LIB utility to create MYLIBNAME.LIB.
+
+         LIB /MACHINE:MPPC /DEF:MYLIB.DEF
+
+Additional query words: mpw2lib dll def afxdll mac cfrg cfm vcmac
+
+======================================================================
+Keywords          : kbdocerr kbVC400 kbVC400bug 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400Mac
+Version           : MACINTOSH:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

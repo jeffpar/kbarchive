@@ -1,0 +1,72 @@
+DOCUMENT:Q146189  13-JUN-2001  [schedplus]
+TITLE   :Character Set for the Timex DataLink Watch
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:3.x,7.0,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the valid characters that can be downloaded to the US version
+of the Timex DataLink Watch:
+
+0-9
+A-Z
+<space>
+!
+"
+#
+$
+%
+&
+'
+(
+)
+*
++
+,
+-
+.
+/ 
+:
+<division-sign>
+=
+<reminder-bell>
+?
+_
+<check-mark>
+<Arrow Left>
+<Arrow Right>
+<Inverted Space>
+<Bullet>
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:3.x,7.0,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

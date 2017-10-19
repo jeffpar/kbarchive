@@ -1,0 +1,58 @@
+DOCUMENT:Q90020  11-SEP-1999  [winmisc]
+TITLE   :"Cannot Find SETUP.INF" During Windows Sound System Setup
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the following error message is displayed, a disk other than disk 1 of the
+Windows Sound System may be in the floppy drive:
+
+   Cannot find the file SETUP.INF
+
+If this is the case, replace the disk with disk 1.
+
+MORE INFORMATION
+================
+
+Windows Sound System Setup will ask to restart Windows in order to activate the
+sound driver. Before Setup allows you to exit Windows, it puts a Windows Sound
+System Setup icon in the Startup group. Once Windows is restarted, the Setup
+program looks for the SETUP.INF file from disk 1. If another disk is in the
+drive, it will display the above error message.
+
+To resolve the problem, insert disk 1 into the disk drive and choose the Retry
+button. Setup should then find the SETUP.INF file and continue with the Windows
+Sound Systems installation.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

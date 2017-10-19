@@ -1,0 +1,67 @@
+DOCUMENT:Q178541  08-NOV-2001  [homegame]
+TITLE   :Age of Empires: Connection Type Dialog Box Is Empty
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork aoe kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Multiplayer on the Microsoft Age of Empires startup screen, the
+Connection Type dialog box may be empty.
+
+CAUSE
+=====
+
+This behavior can occur if DirectPlay is not completely installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall DirectX. To do so, follow these steps:
+
+1. Insert the Age of Empires compact disc into the CD-ROM drive. Press and hold
+   down the SHIFT key when you insert the compact disc to prevent Age Of Empires
+   from starting automatically.
+
+2. Double-click My Computer.
+
+3. Right-click the Age of Empires (CD-ROM drive) icon, and then click Install
+   DirectX 5.0 (Win95 only).
+
+4. Click Reinstall DirectX.
+
+5. Follow the instructions on the screen. If you are prompted to restart the
+   computer, click OK.
+
+Additional query words: 1.00 rise of rome expansion pack aoe ageofempires multi-player multiple head-to-head players play direct x
+
+======================================================================
+Keywords          : kbenv kbnetwork aoe kbimu 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbZNotKeyword kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

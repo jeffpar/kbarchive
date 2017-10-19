@@ -1,0 +1,57 @@
+DOCUMENT:Q94557  30-JUL-2001  [win3x]
+TITLE   :Write Restores Subscripts to Incorrect Font Size
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When Microsoft Windows or Windows for Workgroups Write, the font point size may
+be set incorrectly when restoring from a subscript mode to the original state.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Select the incorrectly sized text.
+
+2. From the Character menu in Write, choose Font to manually reset the font to
+   its proper size.
+
+MORE INFORMATION
+================
+
+This problem applies to all font types (TrueType, system, and so on) set at font
+point sizes 4-127, with the exception of point sizes 6, 8, 10, 12, 14, 24, 26,
+36, 72, and 127.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Write. We are researching this
+problem and will post new information here as it becomes available.
+
+Additional query words: 3.00 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

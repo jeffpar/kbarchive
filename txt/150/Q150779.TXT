@@ -1,0 +1,82 @@
+DOCUMENT:Q150779  08-NOV-2001  [homegame]
+TITLE   :Arcade for Macintosh: Cannot Start Games, No Full-Screen Mode
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbui kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Arcade, you may experience any of the following
+symptoms:
+
+ - You are unable to start a new game.
+
+ - You are unable to play games in full-screen mode.
+
+ - The mouse does not function properly.
+
+ - When you play Missile Command in a window, missiles may fly out of the window
+   and across the desktop.
+
+CAUSE
+=====
+
+This behavior can occur if Control Strip, version 1.3.1 is running on your
+computer. Microsoft Arcade is not compatible with Control Strip, version 1.3.1.
+
+RESOLUTION
+==========
+
+To work around this issue, disable Control Strip before you run Arcade. To do
+this, follow these steps:
+
+1. On the Apple menu, click Control Panels, and then click Extensions Manager.
+
+2. In Extensions Manager, click the Control Strip box, and then press DELETE to
+   clear it.
+
+3. Close Extensions Manager, and then restart the computer.
+
+MORE INFORMATION
+================
+
+Control Strip is a control panel included with Apple System 7.5.3. In versions
+earlier than 7.5.3, Control Strip is available only for PowerBook computers.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: 1.0 m_arcade controlstrip odd bizarre erratic weird msgame kbfaq
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbui kbimu msgame kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcadeMac
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

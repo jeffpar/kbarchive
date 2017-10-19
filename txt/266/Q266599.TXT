@@ -1,0 +1,98 @@
+DOCUMENT:Q266599  26-MAY-2001  [homemm]
+TITLE   :Encarta Researcher: Cannot Copy Text from the Web
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Africana, Third Edition 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+ - Microsoft Encarta Interactive World Atlas 2001 
+ - Microsoft Encarta Reference Suite 2001 
+ - Microsoft Encarta Researcher 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to copy text from a Web page to the Microsoft Encarta
+Researcher, you may receive the following error message:
+
+   To copy information from the Web:
+   1. Select the text or picture you want.
+   2. Click Add to Researcher.
+   Encarta Researcher collects citation information for you.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+ - Microsoft Internet Explorer security settings may be set too high.
+
+ - The "Allow paste operations via script" security setting may be configured to
+   Disable or Prompt.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented:
+
+Restore the Default Security Settings in Internet Explorer
+----------------------------------------------------------
+
+To restore the default security settings in Internet Explorer:
+
+1. In Internet Explorer, click Internet Options on the Tools menu.
+
+2. On the Security tab, click Internet.
+
+3. Click Default Level, and then click OK.
+
+   NOTE: You may need to refresh the screen to be able to view the article after
+   you change the security settings in Internet Explorer.
+
+Enable the Allow Paste Operations Via Script Feature
+----------------------------------------------------
+
+To enable the "Allow paste operations via script" feature:
+
+1. In Internet Explorer, click Internet Options on the Tools menu.
+
+2. On the Security tab, click Internet, and then click Custom Level.
+
+3. Under "Allow paste operations via script", click Enable.
+
+4. Click OK, and then click Yes.
+
+5. Click OK.
+
+Additional query words: multi multi-media media mm ea ee2001 eiwa ers
+
+======================================================================
+Keywords          : kbenv kbnetwork kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaAfricana300 kbEncartaReference2001 kbEncartaWorldAtlas2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

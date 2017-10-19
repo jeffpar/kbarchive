@@ -1,0 +1,65 @@
+DOCUMENT:Q181700  02-APR-1999  [exchange]
+TITLE   :XCLN: EFD Error: Insufficient Memory To Run This Application
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to access a form created with the Microsoft Exchange Forms
+Designer, you may receive the following error message:
+
+   Insufficient memory to run this application.
+   Quit one or more Windows application and please try again.
+
+CAUSE
+=====
+
+This may occur if you have a version of Vb40016.dll other than the one that
+shipped with the Microsoft Exchange Client for Windows NT. This file can be
+located in either of the following directories:
+
+   <SystemRoot>\System
+   <SystemRoot>\ System32
+
+The <SystemRoot> system variable corresponds to the installation directory
+of Microsoft Windows NT.
+
+WORKAROUND
+==========
+
+Verify that you have the correct version of Vb40016.dll. For all versions of the
+Microsoft Exchange Client for Windows NT the correct version is 4.00.2422 and
+935,632 bytes. If a different version of this file exists, replace it with the
+one on the Microsoft Exchange Client for Windows NT compact disc.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q139345  28-JUL-2001  [win95x]
+TITLE   :Problems with Spanish Keyboard and Learn to Speak Spanish
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Spanish keyboard layout with Learn to Speak Spanish version
+5.0, the characters you type may not be displayed properly. Incorrect characters
+may be displayed, or extra characters may be added to the characters you type.
+
+CAUSE
+=====
+
+Learn to Speak Spanish version 5.0 is not completely compatible with Windows 95.
+
+RESOLUTION
+==========
+
+To resolve this problem, contact the program's manufacturer to inquire about
+obtaining a newer version of the program that corrects the problem described in
+this article.
+
+To work around this problem with Learn to Speak Spanish version 5.0, use a
+keyboard layout other than the Spanish keyboard layout.
+
+
+MORE INFORMATION
+================
+
+Learn to Speak Spanish is manufactured by HyperGlot Software, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,58 @@
+DOCUMENT:Q93570  11-NOV-1999  [pcmail]
+TITLE   :PC DirSync: CTRL+C Displayed But Not Used in SRVMAIN.EXE
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Mail for PC Networks, version 3.0, 3.0a or 3.2, when you run
+SRVMAIN.EXE and press CTRL+C while it is processing, SRVMAIN continues to
+process even though the CTRL+C keystrokes display on the screen. Data displayed
+by SRVMAIN scrolls up one line for each CTRL+C.
+
+CAUSE
+=====
+
+MS-DOS traps the CTRL+C keystroke sequence while SRVMAIN continues to call
+MS-DOS functions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0a, 3.2, and 3.5
+of Microsoft Mail for PC Networks. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 3.00 3.00a 3.20 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a kbMailPCN350
+Version           : WINDOWS:3.0,3.0a,3.2,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

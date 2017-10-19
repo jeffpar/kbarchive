@@ -1,0 +1,80 @@
+DOCUMENT:Q255931  25-JUN-2000  [winnt]
+TITLE   :TAMA Additions Appear as Modifcations in Export File
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Together Administration Management Agent (TAMA) tool, new
+records are added to the Export.ta file as modifications rather than as new
+records. This creates a problem with connected directories such as Microsoft
+Exchange, because a new user is not created if the record is submitted as a
+modification.
+
+CAUSE
+=====
+
+This problem can occur when the import process uses the Modification Parsing
+template instead of the Add template. If you view the Export.ta file in the
+working directory of the Management Agent (MA), new records are preceded with an
+M rather than an A. This behavior occurs when TAMA runs, and creates new users
+below the MA.
+
+RESOLUTION
+==========
+
+To resolve this problem, in the MA working directory, open the Export.ta file in
+a text editor and change the M at the beginning of each record to an A.
+
+The Export.ta file appears as:
+
+   M cn=Jane Doe
+   Telephone: 222-2222
+   e-mail: someone@microsoft.com
+
+The Export.ta file after modification:
+
+   A cn=Jane Doe
+   Telephone: 222-2222
+   e-mail: someone@microsoft.com
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

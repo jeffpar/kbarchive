@@ -1,0 +1,79 @@
+DOCUMENT:Q170911  23-OCT-1999  [exchange]
+TITLE   :XADM: Clean Mailbox Utility Deletes Msgs Not Archived
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbusage exc5
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Clean Mailbox utility in the Microsoft Exchange Server
+Administrator program, modified messages are deleted unexpectedly.
+
+CAUSE
+=====
+
+Every message has properties that track time properties of the message, such as
+the delivery time of a message and the time the message was last modified. The
+Clean Mailbox utility in the Microsoft Exchange Server Administrator program
+determines the message age on the basis of the MAPI property
+PR_MESSAGE_DELIVERY_TIME, that is, the date the message was received. However,
+Outlook auto-archive determines message age on the basis of the MAPI property
+PR_LAST_MODIFICATION_TIME, that is, the date the message was last modified.
+
+This difference may result in problems. For example, if you plan to auto- archive
+messages after they reach a certain age, and you then delete messages using the
+Clean Mailbox utility, some messages may be deleted that have not yet been
+auto-archived because the last modification date may be changed.
+
+For information about how might the last modification date be changed, please
+reference the following article in the Microsoft Knowledge Base:
+
+   Q161808 Message Modification Date Determines Archive Date
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc5 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

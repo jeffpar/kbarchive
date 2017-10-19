@@ -1,0 +1,77 @@
+DOCUMENT:Q235774  08-MAY-2002  [sms]
+TITLE   :SMS: Hierarchy Is Unsynchronized After Package Deletion
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200fix kbPackage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Packages that are deleted at a Parent Site Server may become orphaned at child
+sites if the child site does not process the replication instructions to delete
+the package.
+
+This could happen for any number of reasons such as the Central site
+administrator deleting a package while a child site was offline. The child sites
+will still show these packages in the console and it is not possible to delete
+them.
+
+If logging is enabled for Distribution Manager, it will show entries similar to
+the following:
+
+~SQL Msg #3606> Arithmetic overflow occurred.~ $<SMS_DISTRIBUTION_MANAGER>
+~SQL Msg #99901> This PkgID (40100002) does not exist in the parent table, SMSPackages.~  $$<SMS_DISTRIBUTION_MANAGER>
+
+This can also cause performance problems for the child site servers when they are
+trying to process and maintain these orphaned packages.
+
+WORKAROUND
+==========
+
+Do not delete packages from the parent site unless all child site servers are
+online.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsms orphan
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200fix kbPackage 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

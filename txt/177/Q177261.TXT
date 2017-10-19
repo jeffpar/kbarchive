@@ -1,0 +1,72 @@
+DOCUMENT:Q177261  07-MAY-2002  [homegame]
+TITLE   :FS98: Cannot Change Volume for Stall and VOR Markers
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is no command or control in Flight Simulator 98 to change the volume of
+the stall and VOR notification beeps. The volume setting in Microsoft Windows
+controls the volume of these markers.
+
+MORE INFORMATION
+================
+
+You can adjust the volume of these notifications by adjusting the volume in
+Windows. To do this, use the following steps.
+
+NOTE: Changing the Windows volume setting changes the volume for all sounds in
+Windows.
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. On the Audio tab, move the Volume slider in the Playback area to the volume
+   you want, and then click OK.
+
+You can also turn off these notification beeps by following these steps:
+
+1. When you are in the cockpit, click Preferences on the Options menu.
+
+2. On the Sound tab, click the Navigation check box to clear it. This turns off
+   the VOR sounds.
+
+3. Click the Cockpit check box to clear it. This turns off all cockpit sounds,
+   including the stall sound.
+
+4. Click OK to return to the cockpit.
+
+Additional query words: fs98 stall fltsim flt sim lever beeping
+
+======================================================================
+Keywords          : kbenv kbsound kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

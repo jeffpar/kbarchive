@@ -1,0 +1,68 @@
+DOCUMENT:Q279868  19-JAN-2001  [sms]
+TITLE   :Using Reserved Names as the Site Code in SMS 2.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Systems Management Server (SMS) 2.0, you can use the following
+names as your site code:
+
+   AUX
+   CON
+   NUL
+   PRN
+
+However, these names are reserved in Microsoft Windows NT; using them causes
+functionality problems in SMS 2.0. For example, you may not be able to set up
+SMS logon servers correctly because the site folder cannot be created properly.
+
+
+CAUSE
+=====
+
+Because AUX, CON, NUL, and PRN are reserved names in Windows NT, you cannot
+create folders with these names.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q120716 How to Remove Files with Reserved Names in Windows NT
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

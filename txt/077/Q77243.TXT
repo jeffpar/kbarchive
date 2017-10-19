@@ -1,0 +1,77 @@
+DOCUMENT:Q77243  04-MAY-2001  [vbwin]
+TITLE   :BUG: LinkTimeOut of -1 Waits Only 6553.5 Secs Before Time Out
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 2.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 2.0 
+ - Microsoft Visual Basic Standard Edition for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Contrary to the documentation and online Help for Microsoft Visual Basic,
+setting the LinkTimeOut property of a control to -1 will not cause the control
+to wait forever for a DDE operation to complete. Setting the LinkTimeOut
+property to -1 will cause the control to wait for 65535 intervals of 1/10
+second, for a total of approximately 1 hour and 49 minutes.
+
+WORKAROUND
+==========
+
+To work around this problem, you can trap the DDE time-out error using the On
+Error statement in Visual Basic. If the error was "Timeout while waiting for DDE
+response," you can retry the DDE operation until it succeeds. The following is a
+code example:
+
+      Sub DDE_Retry_Forever (Source as Control, commandx$)
+         On Local Error Goto Handler
+
+         Source.LinkExecute commandx$
+         Exit Sub
+
+         Handler:
+         If Err = 286 Then
+            Resume
+         Else
+            Error Err
+         End If
+      End Sub
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: buglist1.00 buglist2.00 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB200
+Version           : :1.0,2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

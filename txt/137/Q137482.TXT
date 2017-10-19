@@ -1,0 +1,91 @@
+DOCUMENT:Q137482  13-JUN-2001  [sna]
+TITLE   :LUA Program Receives Host Sign-On Screen Twice and then Hangs
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you start your LUA program, the SSCP Welcome message screen appears twice,
+and the LUA program seems to hang.
+
+CAUSE
+=====
+
+Under certain timing conditions, when an LUA session is closed (with an
+SLI_CLOSE statement) and immediately reopened (with an SLI_OPEN statement) over
+a fast link, SNA Server may incorrectly resend the host SSCP welcome message a
+second time to the LUA program. As a result the LUA program may hang.
+
+The following message flow causes this problem:
+
+   LUA Program    SNA Server      Host
+   -----------------------------------------------------
+                                 <- UNBIND
+                 UNBIND +RSP ->
+                 NOTIFY(SLU disabled) ->
+  SLI_CLOSE ->
+  SLI_OPEN ->
+                                 <- SSCP welcome message
+                 <- SLI_OPEN(SSCP welcome message)
+                                 <- NOTIFY +RSP
+                 NOTIFY(SLU enabled) ->
+                                 <- SSCP welcome message
+  SLI_RECEIVE ->
+                 <- SLI_RECEIVE (SSCP welcome message)
+                                 <- NOTIFY +RSP
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to SNA Server version 2.11 and install the
+updated file SNASERVR.EXE.
+
+To work around this problem, you can put a small delay in the application between
+the SLI_CLOSE completing and issuing the new SLI_OPEN command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.00 2.10 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

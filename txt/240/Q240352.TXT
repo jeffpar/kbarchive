@@ -1,0 +1,59 @@
+DOCUMENT:Q240352  04-SEP-1999  [homegame]
+TITLE   :NBA Inside Drive 2000: Screen Resolutions Supported by the Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the screen resolutions that are supported by Microsoft NBA
+Inside Drive 2000.
+
+MORE INFORMATION
+================
+
+NBA Inside Drive 2000 supports the following screen resolutions:
+
+ - 640 x 480 pixels
+ - 800 x 600 pixels
+ - 1024 x 768 pixels
+
+NOTE: In order to use a screen resolution higher than 640 x 480 pixels, the video
+adapter installed in your computer must support the higher resolution.
+
+If you configure the game to use a screen resolution higher than 640 x 480 pixels
+and your video adapter does not support the higher resolution, the game is
+displayed at a screen resolution of 640 x 480 pixels.
+
+Additional query words: 1.00 nba2000 nba2k basketball
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : kbGamesSearch kbNBAInsideDrive2000
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,49 @@
+DOCUMENT:Q186404  31-JUL-2001  [sms]
+TITLE   :SMS: Rservice Fails to Enumerate Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbPCM kbsmsUtil smssetup smspcm smsutil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Systems Management Server, you can use Rservice to remotely install
+Package Command Manager (PCM) as a service on Windows NT-based systems. Rservice
+uses the browse list to enumerate potential computers for service installation.
+Rservice does not enumerate a computer that is not in the browse list, and will
+not install PCM as a service on it.
+
+It is important to note, however, that using Rservice with the /M switch allows
+you to specify a computer rather than depending on the browse list.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup kbPCM kbsmsUtil smssetup smspcm smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

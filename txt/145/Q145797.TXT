@@ -1,0 +1,79 @@
+DOCUMENT:Q145797  20-FEB-2002  [iis]
+TITLE   :No User Account Authentication Appears in Internet Explorer
+PRODUCT :Internet Information Server
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you set up the Internet Information Server 1.0 FTP server and try to
+connect to the server using Internet Explorer, a Windows NT user account
+authentication dialog box does not appear. Instead, the following error message
+appears:
+
+   The attempt to load 'ftp://<ftpservername>' failed.
+
+CAUSE
+=====
+
+This problem occurs if you clear the Allow Anonymous Connection check box for
+the FTP server in Internet Information Server and disable the Internet Guest
+account.
+
+WORKAROUND
+==========
+
+To work around this problem, enter the user account information in the following
+format:
+
+   ftp://<user name>:<password>@<ftpservername>
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 1.0 and Microsoft Internet Explorer versions 1.5 and 2.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Then the Allow Anonymous Connection check box is cleared, Windows NT passwords
+are sent to the server without encryption. Therefore, users are required to
+enter valid Windows NT user names and passwords to log onto the FTP service.
+This check box is checked by default for security reasons.
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,75 @@
+DOCUMENT:Q145941  08-AUG-2001  [winnt]
+TITLE   :Cannot Boot to MS-DOS On a Windows NT Mirrored FAT Partition
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT allows you to dual boot between Windows NT and another operating
+system, such as Windows 95 or MS-DOS. However, if you establish a mirror on the
+system partition that contains the two operating system files, MS-DOS stops
+responding (hangs) after it displays "Starting MS-DOS..." and the following
+appears when you start Windows 95:
+
+   The following file is missing or corrupt: Command.com
+   Type the name of the command interpreter.
+
+CAUSE
+=====
+
+MS-DOS looks for the System ID Byte in the partition table to determine what
+type of FAT file system to use. The system ID byte has three valid values that
+MS-DOS can determine:
+
+Value     File System
+-----     -----------
+0x01      MS-DOS 12 Bit FAT
+0x04      MS-DOS 16 Bit FAT
+0x06      MS-DOS 16 Bit FAT (Greater than 32 MB in size)
+
+When you set up fault tolerance in Windows NT on a FAT system partition, the high
+order bit of the system ID byte changes to 0x86, which MS-DOS does not
+recognize.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Use Disk Administrator to break the mirror and shut down Windows NT.
+
+2. Reboot the computer and start MS-DOS or Windows 95.
+
+NOTE: You may install Windows NT to another partition and establish the mirror.
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

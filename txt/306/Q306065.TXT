@@ -1,0 +1,104 @@
+DOCUMENT:Q306065  02-NOV-2001  [winnt]
+TITLE   :Direct Cable Connection Between Win2000 and Win98 Not Working
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbOSWin98 KBW2KHOME kbOSWin2000x kbOSWin98SE kbAudEndUser kbWin98 kbWin98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to establish a connection from a Windows 2000-based computer
+to a Windows 98-based computer, or vice versa, by using the Direct Cable
+Connection feature.
+
+RESOLUTION
+==========
+
+To resolve this behavior, following these troubleshooting steps for the Direct
+Cable Connection feature:
+
+1. Make sure that both the Client for Microsoft Networks protocol and the File
+   and Print Sharing for Microsoft Networks protocol are installed on both
+   computers:
+
+    - For Windows 2000
+
+      a. Right-click My Network Places, and then click Properties.
+
+      b. Double-click Make New Connection, and then specify "Connect directly to
+         another computer" as the connection type.
+
+      c. Make sure that the user name that is checked is name of the user who
+         will establish the connection if the Windows 2000-based computer is to
+         be used as host. By default, the two relevant protocols will be
+         installed if they are not already installed.
+
+    - For Windows 98
+
+      a. Right-click Network Neighborhood, and then click Properties.
+
+      b. Make sure that Dial-Up Adapter is installed.
+
+      c. Make sure that the two relevant protocols appear in the list of
+         installed network components.
+
+2. Verify that the cable that you are using is compatible with direct cable
+   connections.
+
+3. Reverse the roles of Host and Guest on the two computers.
+
+4. Check for conflicts with the ports. In Device Manager, verify that the ports
+   are not already in use.
+
+5. If the parallel port direct cable connection becomes disconnected after a
+   short time, apply Windows 2000 Service Pack 2 or later.
+
+MORE INFORMATION
+================
+
+For additional information about cables that are compatible with Direct Cable
+Connection, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q142324 Cables That Are Compatible With Direct Cable Connection
+
+For additional information about parallel direct cable connections' becoming
+disconnected, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q261276 Parallel Direct Cable Connection Drops Shortly After Connecting
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbsetup kbOSWin98 KBW2KHOME kbOSWin2000x kbOSWin98SE kbAudEndUser kbWin98 kbWin98SE 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin98search kbWinAdvServSearch kbWin98
+Version           : :2000
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

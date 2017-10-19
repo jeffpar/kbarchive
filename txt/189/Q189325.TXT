@@ -1,0 +1,688 @@
+DOCUMENT:Q189325  18-APR-1999  [exchange]
+TITLE   :XADM: IMAP4 Client/Server Commands
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the Internet Message Access Protocol, Version 4 rev. 1
+(IMAP4rev1) features and commands.
+
+MORE INFORMATION
+================
+
+FEATURES:
+
+1. IMAP4rev1 client allows the user to access and manipulate electronic
+   messages on a server.
+2. IMAP4rev1 permits manipulation of remote message folders, called
+   mailboxes, in a way that is functionally equivalent to local mailboxes.
+3. IMAP4rev1 also provides the capability for an offline client to re-
+   synchronize with the server (see also [IMAP-DISC]).
+4. IMAP4rev1 includes operations for creating, deleting, and renaming
+   mailboxes.
+5. IMAP4rev1 checks for new messages, permanently removes messages, and
+   sets and clears flags [RFC-822].
+6. IMAP4rev1 does [MIME-IMB] parsing, searching, and selective fetching of
+   message attributes, texts, and portions thereof.
+7. Messages in IMAP4rev1 are accessed by the use of numbers. These numbers
+   are either message sequence numbers or unique identifiers.
+
+COMMANDS and RESPONSES:
+
+   An IMAP4rev1 connection consists of the establishment of a
+   client/server network connection, an initial greeting from the
+   server, and client/server interactions. These client/server
+   interactions consist of a client command, server data, and a server
+   completion result response.
+
+Non-Authenticated State
+   In a non-authenticated state, the client MUST supply authentication
+   credentials before most commands are permitted. This state is
+   entered when a connection starts, unless the connection has been pre-
+   authenticated.
+
+Authenticated State
+   In an authenticated state, the client is authenticated and MUST select a
+   mailbox to access before commands that affect messages are permitted.
+   This state is entered when a pre-authenticated connection starts, when
+   acceptable authentication credentials have been provided, or after an
+   error in selecting a mailbox.
+
+CLIENT COMMANDS - ANY STATE:
+
+CAPABILITY Command
+
+   Arguments:  none
+   Responses:  REQUIRED untagged response: CAPABILITY
+   Result:     OK - capability completed
+               BAD - command unknown or arguments invalid
+
+The CAPABILITY command requests a listing of capabilities that the server
+supports.
+
+              Example:
+              C: abcd CAPABILITY
+              S: * CAPABILITY IMAP4rev1 AUTH=KERBEROS_V4
+              S: abcd OK CAPABILITY completed
+
+NOOP Command
+
+   Arguments:  none
+   Responses:  no specific responses for this command (but see below)
+   Result:     OK - noop completed
+               BAD - command unknown or arguments invalid
+
+The NOOP command always succeeds. It does nothing.
+
+               Example:
+               C: a002 NOOP
+               S: a002 OK NOOP completed . . .
+               C: a047 NOOP S: * 22 EXPUNGE
+               S: * 23 EXISTS S: * 3 RECENT
+               S: * 14 FETCH (FLAGS (\Seen \Deleted))
+               S: a047 OK NOOP completed
+
+LOGOUT Command
+
+   Arguments:  none
+   Responses:  REQUIRED untagged response: BYE
+   Result:     OK - logout completed
+               BAD - command unknown or arguments invalid
+
+The LOGOUT command informs the server that the client is done with the
+connection.
+               Example:
+               C: A023 LOGOUT
+               S: * BYE IMAP4rev1 Server logging out
+               S: A023 OK LOGOUT completed (Server and client then close
+                  the connection)
+
+CLIENT COMMANDS - NON-AUTHENTICATED STATE:
+
+AUTHENTICATE Command
+
+   Arguments:  authentication mechanism name
+   Responses:  continuation data can be requested
+   Result:     OK - authenticate completed, now in authenticated state
+               NO - authenticate failure: unsupported authentication
+                    mechanism, credentials rejected
+               BAD - command unknown or arguments invalid,
+                    authentication exchange cancelled
+
+The AUTHENTICATE command indicates an authentication mechanism to the
+server.
+               Example:
+               S: * OK KerberosV4 IMAP4rev1 Server
+               C: A001 AUTHENTICATE KERBEROS_V4
+               S: + AmFYig== C:
+               S: + or//EoAADZI= C: DiAF5A4gA+oOIALuBkAAmw==
+               S: A001 OK Kerberos V4 authentication successful
+
+LOGIN Command
+
+   Arguments:  user name
+               password
+   Responses:  no specific responses for this command
+   Result:     OK - login completed, now in authenticated state
+               NO - login failure: user name or password rejected
+               BAD - command unknown or arguments invalid
+
+The LOGIN command identifies the client to the server and carries the plain
+text password authenticating this user.
+
+               Example:
+               C: a001 LOGIN <username & password>
+               S: a001 OK LOGIN completed
+
+CLIENT COMMANDS - AUTHENTICATED STATE:
+
+SELECT Command
+
+   Arguments:  mailbox name
+   Responses:  REQUIRED untagged responses: FLAGS, EXISTS, RECENT
+               OPTIONAL OK untagged responses: UNSEEN, PERMANENTFLAGS
+   Result:     OK - select completed, now in selected state
+               NO - select failure, now in authenticated state: no
+                    such mailbox, cannot access mailbox
+               BAD - command unknown or arguments invalid
+
+The SELECT command selects a mailbox so that messages in the mailbox can be
+accessed.
+
+               Example:
+               C: A142 SELECT INBOX
+               S: * 172 EXISTS
+               S: * 1 RECENT
+               S: * OK [UNSEEN 12] Message 12 is first unseen
+               S: * OK [UIDVALIDITY 3857529045] UIDs valid
+               S: * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)
+               S: * OK [PERMANENTFLAGS (\Deleted \Seen \*)] Limited
+               S: A142 OK [READ-WRITE] SELECT completed
+
+EXAMINE Command
+
+   Arguments:  mailbox name
+   Responses:  REQUIRED untagged responses: FLAGS, EXISTS, RECENT
+               OPTIONAL OK untagged responses: UNSEEN, PERMANENTFLAGS
+   Result:     OK - examine completed, now in selected state
+               NO - examine failure, now in authenticated state: no
+                    such mailbox, cannot access mailbox
+               BAD - command unknown or arguments invalid
+
+The EXAMINE command is identical to SELECT and returns the same output;
+however, the selected mailbox is identified as read-only. No changes to the
+permanent state of the mailbox, including per-user state, are permitted.
+
+               Example:
+               C: A932 EXAMINE <mailboxname>
+               S: * 17 EXISTS S: * 2 RECENT
+               S: * OK [UNSEEN 8] Message 8 is first unseen
+               S: * OK [UIDVALIDITY 3857529045] UIDs valid
+               S: * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)
+               S: * OK [PERMANENTFLAGS ()] No permanent flags permitted
+               S: A932 OK [READ-ONLY] EXAMINE completed
+
+CREATE Command
+
+   Arguments:  mailbox name
+   Responses:  no specific responses for this command
+   Result:     OK - create completed
+               NO - create failure: cannot create mailbox with that name
+               BAD - command unknown or arguments invalid
+
+The CREATE command creates a mailbox with the given name. An OK response is
+returned only if a new mailbox with that name has been created.
+
+               Example:
+               C: A003 CREATE <mailboxname>
+               S: A003 OK CREATE completed
+               C: A004 CREATE <mailboxname/mailboxname>
+               S: A004 OK CREATE completed
+
+DELETE Command
+
+   Arguments:  mailbox name
+   Responses:  no specific responses for this command
+   Result:     OK - delete completed
+               NO - delete failure: cannot delete mailbox with that name
+               BAD - command unknown or arguments invalid
+
+The DELETE command permanently removes the mailbox with the given name. A
+tagged OK response is returned only if the mailbox has been deleted.
+
+Examples:
+ C: A682 LIST "" *                      S: A687 OK DELETE Completed
+ S: * LIST () "/" <mailboxname>        C: A82 LIST "" *
+ S: * LIST (\Noselect) "/" <mailboxname>     S: * LIST () "." <mailboxname>
+ S: * LIST () "/" <mailboxname/<mailboxname> S: * LIST () "." <mailboxname>
+ S: A682 OK LIST completed                S: * LIST () "."
+                                             <mailboxname.mailboxname>
+ C: A683 DELETE <mailboxname>       S: A82 OK LIST completed
+ S: A683 OK DELETE completed              C: A83 DELETE <mailboxname>
+ C: A684 DELETE <mailboxname>       S: A83 OK DELETE completed
+ S: A684 NO Name <mailboxname>      C: A84 DELETE <mailboxname>
+ C: A685 DELETE <mailboxname.mailboxname> S: A84 OK DELETE Completed
+ S: A685 OK DELETE Completed           C: A85 LIST "" *
+ C: A686 LIST "" *                     S: * LIST () "."
+                                          <mailboxname.mailboxname>>
+ S: * LIST (\Noselect) "/" <mailboxname>     S: A85 OK LIST completed
+ S: A686 OK LIST completed                C: A86 LIST "" %
+ C: A687 DELETE <mailboxname>       S: * LIST (\Noselect) "." <mailboxname>
+                        S: A86 OK LIST completed
+
+RENAME Command
+
+   Arguments:  existing mailbox name
+               new mailbox name
+   Responses:  no specific responses for this command
+   Result:     OK - rename completed
+               NO - rename failure: cannot rename mailbox with that name,
+                    cannot rename to mailbox with that name
+               BAD - command unknown or arguments invalid
+
+The RENAME command changes the name of a mailbox. A tagged OK response is
+returned only if the mailbox has been renamed.
+
+Examples:
+C: A682 LIST "" *                   S: * LIST (\Noselect) "/" <mailboxname>
+S: * LIST () "/" <mailboxname>      S: * LIST () "/"
+                                       <mailboxname/<mailboxname>
+S: A685 OK LIST completed                    S: Z432 OK LIST completed
+S: * LIST (\Noselect) "/" <mailboxname>      C: Z432 LIST "" *
+S: * LIST () "/" <mailboxname/mailboxname>   S: * LIST () "." <mailboxname>
+S: A682 OK LIST completed           S: * LIST () "."
+                                       <mailboxname.mailboxname>
+C: A683 RENAME <mailboxname mailboxname>  S: Z432 OK LIST completed
+S: A683 OK RENAME completed         C: Z433 RENAME <mailboxname old-
+                                       mail>
+C: A684 RENAME <mailboxname mailboxname>  S: Z433 OK RENAME completed
+S: A684 OK RENAME Completed         C: Z434 LIST "" *
+C: A685 LIST "" *                   S: * LIST () "." <mailboxname>
+S: * LIST ()                        S: * LIST () "."
+                                       <mailboxname.mailboxname>
+S: * LIST () "/" <mailboxname>      S: * LIST () "." old-mail
+S: Z434 OK LIST completed
+
+SUBSCRIBE Command
+
+   Arguments:  mailbox
+   Responses:  no specific responses for this command
+   Result:     OK - subscribe completed
+               NO - subscribe failure: cannot subscribe to that name
+               BAD - command unknown or arguments invalid
+
+The SUBSCRIBE command adds the specified mailbox name to the server's set
+of "active" or "subscribed" mailboxes as returned by the LSUB command. This
+command returns a tagged OK response only if the subscription is
+successful.
+
+               Example:
+               C: A002 SUBSCRIBE #<newsgroup>
+               S: A002 OK SUBSCRIBE completed
+
+ UNSUBSCRIBE Command
+
+   Arguments:  mailbox name
+   Responses:  no specific responses for this command
+   Result:     OK - unsubscribe completed
+               NO - unsubscribe failure: cannot unsubscribe that name
+               BAD - command unknown or arguments invalid
+
+The UNSUBSCRIBE command removes the specified mailbox name from the
+server's set of "active" or "subscribed" mailboxes as returned by the LSUB
+command. This command returns a tagged OK response only if the
+unsubscription is successful.
+
+              Example:
+              C: A002 UNSUBSCRIBE #<newsgroup>
+              S: A002 OK UNSUBSCRIBE completed
+
+LIST Command
+
+   Arguments:  reference name
+               mailbox name with possible wildcards
+   Responses:  untagged responses: LIST
+   Result:     OK - list completed
+               NO - list failure: cannot list that reference or name
+               BAD - command unknown or arguments invalid
+
+The LIST command returns a subset of names from the complete set of all
+names available to the client.
+
+Examples:
+C: A101 LIST "" ""                     C: A103 LIST /usr/staff/<name> ""
+S: * LIST (\Noselect) "/" ""              C: * LIST (\Noselect) "/" / 
+S: A101 OK LIST Completed              S: A103 OK LIST Completed
+C: A102 LIST #<newsgroup> ""           C: A202 LIST ~/Mail/ %
+S: * LIST (\Noselect) "." #news.       S: * LIST (\Noselect)
+                                          "/"~/Mail/<mailboxname>
+S: A102 OK LIST Completed              S: * LIST () "/" ~/Mail/meetings
+                                             S: A202 OK LIST completed
+
+LSUB Command
+
+   Arguments:  reference name
+               mailbox name with possible wildcards
+   Responses:  untagged responses: LSUB
+   Result:     OK - lsub completed
+               NO - lsub failure: cannot list that reference or name
+               BAD - command unknown or arguments invalid
+
+The LSUB command returns a subset of names from the set of names that the
+user has declared as being "active" or "subscribed".
+
+               Example:
+               C: A002 LSUB "#newsgroup." "newsgroup.*"
+               S: * LSUB () "." #news.comp.mail.mime
+               S: * LSUB () "." #news.comp.mail.misc
+               S: A002 OK LSUB completed
+
+STATUS Command
+
+   Arguments:  mailbox name
+               status data item names
+   Responses:  untagged responses: STATUS
+   Result:     OK - status completed
+               NO - status failure: no status for that name
+               BAD - command unknown or arguments invalid
+
+The STATUS command requests the status of the indicated mailbox. It does
+not change the currently selected mailbox, nor does it affect the state of
+any messages in the queried mailbox (in particular, STATUS MUST NOT cause
+messages to lose the \Recent flag).
+
+               Example:
+               C: A042 STATUS <mailboxname> (UIDNEXT MESSAGES)
+               S: * STATUS <mailboxname> (MESSAGES 231 UIDNEXT 44292)
+               S: A042 OK STATUS completed
+
+APPEND Command
+
+   Arguments:  mailbox name
+               OPTIONAL flag parenthesized list
+               OPTIONAL date/time string
+               message literal
+   Responses:  no specific responses for this command
+   Result:     OK - append completed
+               NO - append error: cannot append to that mailbox, error
+                    in flags or date/time or message text
+               BAD - command unknown or arguments invalid
+
+The APPEND command appends the literal argument as a new message to the end
+of the specified destination mailbox. This argument SHOULD be in the format
+of an [RFC-822] message.
+
+               Example:
+               C: A003 APPEND saved-messages (\Seen) {310}
+               C: Date: Mon, 7 Feb 1994 21:52:25 -0800 (PST)
+               C: From: User Name <username@domainname.COM>
+               C: To: username@domainname.com
+               C: Message-Id: <B27397-0100000@domainname.COM>
+               C: MIME-Version: 1.0
+               C: Content-Type: TEXT/PLAIN; CHARSET=US-ASCII
+               C: Subject: afternoon meeting
+               C: C: Hello <user>, do you think we can meet at 3:30
+                  tomorrow?
+               S: A003 OK APPEND completed
+
+CLIENT COMMANDS - SELECTED STATE:
+
+CHECK Command
+
+   Arguments:  none
+   Responses:  no specific responses for this command
+   Result:     OK - check completed
+               BAD - command unknown or arguments invalid
+
+The CHECK command requests a checkpoint of the currently selected mailbox.
+A checkpoint refers to any implementation-dependent housekeeping associated
+with the mailbox (for example, resolving the server's in-memory state of
+the mailbox with the state on its disk) that is not normally executed as
+part of each command.
+
+               Example:
+               C: FXXZ CHECK
+               S: FXXZ OK CHECK Completed
+
+CLOSE Command
+
+   Arguments:  none
+   Responses:  no specific responses for this command
+   Result:     OK - close completed, now in authenticated state
+               NO - close failure: no mailbox selected
+               BAD - command unknown or arguments invalid
+
+The CLOSE command permanently removes from the currently selected mailbox
+all messages that have the \Deleted flag set, and returns to authenticated
+state from selected state.
+
+               Example:
+               C: A341 CLOSE
+               S: A341 OK CLOSE completed
+
+EXPUNGE Command
+
+   Arguments:  none
+   Responses:  untagged responses: EXPUNGE
+   Result:     OK - expunge completed
+               NO - expunge failure: cannot expunge (for example,
+                    Permission denied)
+               BAD - command unknown or arguments invalid
+
+The EXPUNGE command permanently removes from the currently selected mailbox
+all messages that have the \Deleted flag set.
+
+               Example:
+               C: A202 EXPUNGE
+               S: * 3 EXPUNGE
+               S: * 3 EXPUNGE
+               S: * 5 EXPUNGE
+               S: * 8 EXPUNGE
+               S: A202 OK EXPUNGE completed
+
+SEARCH Command
+
+   Arguments:  OPTIONAL [CHARSET] specification
+               searching criteria (one or more)
+   Responses:  REQUIRED untagged response: SEARCH
+   Result:     OK - search completed
+               NO - search error: cannot search that [CHARSET] or
+                    criteria
+               BAD - command unknown or arguments invalid
+
+The SEARCH command searches the mailbox for messages that match the given
+searching criteria. Searching criteria consist of one or more search keys:
+
+      <message set>  Messages with message sequence numbers
+                     corresponding to the specified message sequence
+                     number set.
+
+      ALL            All messages in the mailbox.
+
+      ANSWERED       Messages with the \Answered flag set.
+
+      BCC <string>   Messages that contain the specified string in the
+                     envelope structure's BCC field.
+
+      BEFORE <date>  Messages whose internal date is earlier than the
+                     specified date.
+
+      BODY <string>  Messages that contain the specified string in the
+                     body of the message.
+
+      CC <string>    Messages that contain the specified string in the
+                     envelope structure's CC field.
+
+      DELETED        Messages with the \Deleted flag set.
+
+      DRAFT          Messages with the \Draft flag set.
+
+      FLAGGED        Messages with the \Flagged flag set.
+
+      FROM <string>  Messages that contain the specified string in the
+                     envelope structure's FROM field.
+
+      HEADER <field-name> <string>
+                     Messages that have a header with the specified
+                     field-name (as defined in [RFC-822]) and that
+                     contain the specified string in the [RFC-822]
+                     field-body.
+
+      KEYWORD <flag> Messages with the specified keyword set.
+
+      LARGER <n>     Messages with an [RFC-822] size larger than the
+                     specified number of octets.
+
+      NEW            Messages that have the \Recent flag set but not the
+                     \Seen flag. This is functionally equivalent to
+                     "(RECENT UNSEEN)".
+
+      NOT <search-key>
+                     Messages that do not match the specified search key.
+
+      OLD            Messages that do not have the \Recent flag set.
+                     This is functionally equivalent to "NOT RECENT" (as
+                     opposed to "NOT NEW").
+
+      ON <date>      Messages whose internal date is within the
+                     specified date.
+
+      OR <search-key1> <search-key2>
+                     Messages that match either search key.
+
+      RECENT         Messages that have the \Recent flag set.
+
+      SEEN           Messages that have the \Seen flag set.
+
+      SENTBEFORE <date>
+                     Messages whose [RFC-822] Date: header is earlier
+                     than the specified date.
+
+      SENTON <date>  Messages whose [RFC-822] Date: header is within the
+                     specified date.
+
+      SENTSINCE <date>
+                     Messages whose [RFC-822] Date: header is within or
+                     later than the specified date.
+
+      SINCE <date>   Messages whose internal date is within or later
+                     than the specified date.
+
+      SMALLER <n>    Messages with an [RFC-822] size smaller than the
+                     specified number of octets.
+
+      SUBJECT <string>
+                     Messages that contain the specified string in the
+                     envelope structure's SUBJECT field.
+
+      TEXT <string>  Messages that contain the specified string in the
+                     header or body of the message.
+
+      TO <string>    Messages that contain the specified string in the
+                     envelope structure's TO field.
+
+      UID <message set>
+                     Messages with unique identifiers corresponding to
+                     the specified unique identifier set.
+
+      UNANSWERED     Messages that do not have the \Answered flag set.
+
+      UNDELETED      Messages that do not have the \Deleted flag set.
+
+      UNDRAFT        Messages that do not have the \Draft flag set.
+
+      UNFLAGGED      Messages that do not have the \Flagged flag set.
+
+      UNKEYWORD <flag>
+                     Messages that do not have the specified keyword set.
+
+      UNSEEN         Messages that do not have the \Seen flag set.
+
+            Example:
+            C: A282 SEARCH FLAGGED SINCE 1-Feb-1994 NOT FROM "<username>"
+            S: * SEARCH 2 84 882 S: A282 OK SEARCH completed
+
+FETCH Command
+
+   Arguments:  message set
+               message data item names
+   Responses:  untagged responses: FETCH
+   Result:     OK - fetch completed
+               NO - fetch error: cannot fetch that data
+               BAD - command unknown or arguments invalid
+
+The FETCH command retrieves data associated with a message in the mailbox.
+The currently defined data items that can be fetched are:
+
+      ALL            Macro equivalent to: (FLAGS INTERNALDATE
+                     RFC822.SIZE ENVELOPE)
+
+      BODY           Non-extensible form of BODYSTRUCTURE.
+
+      BODY[<section>]<<partial>>
+                     The text of a particular body section. The section
+                     specification is a set of zero or more part
+                     specifiers delimited by periods. A part specifier
+                     is either a part number or one of the following:
+                     HEADER, HEADER.FIELDS, HEADER.FIELDS.NOT, MIME, and
+                     TEXT. An empty section specification refers to the
+                     entire message, including the header.
+
+          Example:
+          C: A654 FETCH 2:4 (FLAGS BODY[HEADER.FIELDS (DATE FROM)])
+          S: * 2 FETCH ....
+          S: * 3 FETCH ....
+          S: * 4 FETCH ....
+          S: A654 OK FETCH completed
+
+STORE Command
+
+   Arguments:  message set
+               message data item name
+               value for message data item
+   Responses:  untagged responses: FETCH
+   Result:     OK - store completed
+               NO - store error: cannnot store that data
+               BAD - command unknown or arguments invalid
+
+The STORE command alters data associated with a message in the mailbox.
+
+          Example:
+          C: A003 STORE 2:4 +FLAGS (\Deleted)
+          S: * 2 FETCH FLAGS (\Deleted \Seen)
+          S: * 3 FETCH FLAGS (\Deleted)
+          S: * 4 FETCH FLAGS (\Deleted \Flagged \Seen)
+          S: A003 OK STORE completed
+
+COPY Command
+
+   Arguments:  message set
+               mailbox name
+   Responses:  no specific responses for this command
+   Result:     OK - copy completed
+               NO - copy error: cannot copy those messages or to that
+                    name
+               BAD - command unknown or arguments invalid
+
+The COPY command copies the specified message(s) to the end of the
+specified destination mailbox. The flags and internal date of the
+message(s) SHOULD be preserved in the copy.
+
+               Example:
+               C: A003 COPY 2:4 MEETING
+               S: A003 OK COPY completed
+
+UID Command
+
+   Arguments:  command name
+               command arguments
+   Responses:  untagged responses: FETCH, SEARCH
+   Result:     OK - UID command completed
+               NO - UID command error
+               BAD - command unknown or arguments invalid
+
+The UID command has two forms. In the first form, it takes as its arguments
+a COPY, FETCH, or STORE command with arguments appropriate for the
+associated command. In the second form, the UID command takes a SEARCH
+command with SEARCH command arguments.
+
+               Example:
+               C: A999 UID FETCH 4827313:4828442 FLAGS
+               S: * 23 FETCH (FLAGS (\Seen) UID 4827313)
+               S: * 24 FETCH (FLAGS (\Seen) UID 4827943)
+               S: * 25 FETCH (FLAGS (\Seen) UID 4828442)
+               S: A999 UID FETCH completed
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

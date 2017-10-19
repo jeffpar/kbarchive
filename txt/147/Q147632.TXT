@@ -1,0 +1,71 @@
+DOCUMENT:Q147632  07-FEB-2002  [visualc]
+TITLE   :BUG: Browsing Template Function Definition Goes to Wrong Place
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbGenInfo kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the shortcut key to jump to the definition of a template function places
+the cursor at the first use of the function (its instantiation).
+
+No function definition for a template function appears in the browse Definitions
+and References dialog box, only function references.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. Microsoft has confirmed this to be a bug in the
+Microsoft products listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Press F12 (F11 using Visual C++ 2.0 key mapping) to jump to the definition of
+the function. Instead of going to the definition of the function, you will be
+taken back to the point where the function was instantiated (that is, the first
+place the function was used).
+
+Press ALT+F12 (CTRL+F11 using Visual C++ 2.0 key mapping) or select Browse from
+the Tools menu. Type the name of your template function in the Browse window,
+select Definitions and References from the list, and click OK. You will see
+there is no entry in the Definitions and References box under Definitions.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGenInfo kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTools kbArtTypeINF 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

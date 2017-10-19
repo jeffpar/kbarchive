@@ -1,0 +1,63 @@
+DOCUMENT:Q224261  27-JUL-2001  [automap]
+TITLE   :Streets and Trips 2000: Label Disappears When You Find Address
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you find an address in Microsoft Expedia Streets and Trips 2000, the
+address label may disappear from the map when you click OK.
+
+CAUSE
+=====
+
+This behavior can occur if the Found Addresses pushpin set is hidden.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Click the View menu.
+
+2. Click Show Or Hide Pushpins.
+
+3. Click the Pushpins tab.
+
+4. Click to select the Found Addresses check box.
+
+5. Click OK.
+
+Additional query words: est2000 invisible show cannot see
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

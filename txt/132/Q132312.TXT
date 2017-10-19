@@ -1,0 +1,83 @@
+DOCUMENT:Q132312  15-FEB-2000  [foxpro]
+TITLE   :PRB: Can't Find Grid Property to Specify Record for Top Row
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You need a grid method or property to tell the grid which row of the
+RecordSource to display in the top row of the visible area of a grid. For
+example, you might have a 500-record table and a 15-row grid and at run time,
+you want to tell the grid to jump to record 430; in other words, you want the
+grid to display record 430 in the top row of the visible area of the grid, not
+just anywhere in the visible area. A property like the following would work
+well:
+
+ - GRID1.FirstRecord = 430
+
+-or-
+
+ - GRID1.DoScroll(1,430)
+
+A filter cannot be used because you want to access all the records in the
+RecordSource.
+
+CAUSE
+=====
+
+There is no grid property that allows you to specify a row to be displayed as
+the first row of the visible area of the grid.
+
+WORKAROUND
+==========
+
+You can use the RelativeRow property in conjunction with DoScroll method to move
+a selected record to the top of the visible area of the grid as in this code:
+
+      thisform.grid1.setfocus
+      goto <your recno>
+      thisform.refresh
+
+      thisform.lockscreen = .t.
+      do while thisform.grid1.relativerow > 1
+         thisform.grid1.doscroll(1)
+      enddo
+      thisform.lockscreen = .f.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

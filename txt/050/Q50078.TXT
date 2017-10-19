@@ -1,0 +1,43 @@
+DOCUMENT:Q50078  30-JUL-2001  [homegame]
+TITLE   :Flt Sim: Plane Accelerates While Taxiing
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Once you cut the throttle while taxiing the plane, the plane continues to
+accelerate until the airspeed indicator indicates 40 knots.
+
+To work around this problem, use the throttle sparingly during taxiing
+operations, and apply brakes as needed to reduce forward motion. Even though the
+plane does not slow down as soon as would be optimal, this condition does
+encourage some good pilot habits, such as sparing use of the throttle and brakes
+during taxiing.
+
+Microsoft has confirmed this to be a problem in Flight Simulator versions 4.00
+and 4.00a. This problem was corrected in Flight Simulator version 4.00b.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

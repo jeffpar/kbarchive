@@ -1,0 +1,182 @@
+DOCUMENT:Q156101  14-DEC-1999  [foxpro]
+TITLE   :PRB: Caption Dithered If DisabledForeColor Equals ForeColor
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+For certain Visual FoxPro controls, if the DisabledForeColor property is set the
+same as the ForeColor property when the control is disabled, the disabled
+control's foreground color appears dithered. This behavior applies to command
+buttons, labels, option buttons, and check boxes. This behavior also affects how
+their captions appear.
+
+WORKAROUND
+==========
+
+Set the DisabledForeColor property to be 1 (one) different from the ForeColor
+property. For example, place the following code in the Init method for a check
+box:
+
+      this.DisabledForeColor = this.ForeColor + 1
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This behavior occurs when the two properties are set the same. Because the
+control is disabled, its caption appears dithered to indicate the control is
+disabled. In certain cases, you may want the disabled control to appear nearly
+identical to the enabled control. If so, use the technique in the WORKAROUND
+section above.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+         * Start of code example
+         *
+         PUBLIC oform1
+         oform1=CREATEOBJECT("form1")
+         oform1.SHOW
+
+         DEFINE CLASS form1 AS FORM
+
+           HEIGHT = 184
+           WIDTH = 251
+           AUTOCENTER = .T.
+           CAPTION = "DisabledForeColor Test"
+           NAME = "Form1"
+
+           ADD OBJECT label1 AS LABEL WITH ;
+             CAPTION = "Label1", ;
+             LEFT = 24, ;
+             TOP = 12, ;
+             AUTOSIZE = .T., ;
+             NAME = "Label1"
+
+           ADD OBJECT optiongroup1 AS OPTIONGROUP WITH ;
+             BUTTONCOUNT = 2, ;
+             VALUE = 1, ;
+             LEFT = 24, ;
+             TOP = 48, ;
+             AUTOSIZE = .T., ;
+             NAME = "Optiongroup1", ;
+             option1.CAPTION = "Option1", ;
+             option1.VALUE = 1, ;
+             option1.LEFT = 5, ;
+             option1.TOP = 5, ;
+             option1.AUTOSIZE = .T., ;
+             option2.CAPTION = "Option2", ;
+             option2.VALUE = 0, ;
+             option2.LEFT = 5, ;
+             option2.TOP = 24, ;
+             option2.AUTOSIZE = .T.
+
+           ADD OBJECT check1 AS CHECKBOX WITH ;
+             TOP = 12, ;
+             LEFT = 132, ;
+             AUTOSIZE = .T., ;
+             CAPTION = "Check1", ;
+             NAME = "Check1"
+
+           ADD OBJECT check2 AS CHECKBOX WITH ;
+             TOP = 132, ;
+             LEFT = 24, ;
+             AUTOSIZE = .T., ;
+             CAPTION = "Disable all", ;
+             NAME = "Check2"
+
+           ADD OBJECT check3 AS CHECKBOX WITH ;
+             TOP = 132, ;
+             LEFT = 132, ;
+             AUTOSIZE = .T., ;
+             CAPTION = "Add the 1?", ;
+             NAME = "Check3"
+
+           ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+             TOP = 60, ;
+             LEFT = 120, ;
+             HEIGHT = 27, ;
+             WIDTH = 90, ;
+             CAPTION = "Command1", ;
+             NAME = "Command1"
+
+           PROCEDURE optiongroup1.option1.REFRESH
+             THIS.DISABLEDFORECOLOR=THIS.FORECOLOR + THISFORM.check3.VALUE
+           ENDPROC
+
+           PROCEDURE optiongroup1.option2.REFRESH
+             THIS.DISABLEDFORECOLOR=THIS.FORECOLOR + THISFORM.check3.VALUE
+           ENDPROC
+
+           PROCEDURE check1.REFRESH
+             THIS.DISABLEDFORECOLOR=THIS.FORECOLOR + THISFORM.check3.VALUE
+           ENDPROC
+
+           PROCEDURE check2.CLICK
+             THISFORM.label1.DISABLEDFORECOLOR = ;
+               THISFORM.label1.FORECOLOR + ;
+               THISFORM.check3.VALUE  &&  Added because Label has no refresh
+             THISFORM.REFRESH
+             THISFORM.SETALL('enabled',!THISFORM.check1.ENABLED)
+             THIS.ENABLED=.T.
+           ENDPROC
+
+           PROCEDURE command1.REFRESH
+             THIS.DISABLEDFORECOLOR=THIS.FORECOLOR + THISFORM.check3.VALUE
+           ENDPROC
+
+         ENDDEFINE
+         *
+         * End of code example
+
+2. Click the "Disable all" check box. The captions of the disabled controls
+   appear dithered.
+
+3. To demonstrate the workaround, clear the "Disable all" check box, click the
+   "Add the 1?" check box, and click the "Disable all" check box. The control
+   captions are not dithered but are still displayed with a 3-D effect.
+
+NOTE: Depending on whether the "Add the 1?" check box is checked, the
+DisabledForeColor property for each of the controls is set to either its
+ForeColor (the "Add the 1?" check box is cleared) or its ForeColor + 1 (the "Add
+the 1?" check box is cleared).
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

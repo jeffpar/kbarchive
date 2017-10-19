@@ -1,0 +1,74 @@
+DOCUMENT:Q125917  05-NOV-1999  [pcmail]
+TITLE   :PC DirSync: Err Msg: Error 156 Invalid Dirsync Password
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the T2 phase of directory synchronization (Dir-Sync), when SRVMAIN -r
+runs, the error
+
+   Error 156 Invalid Dirsync password from PCM:Network/Postoffice
+
+may be displayed even though the password for that postoffice is correct. If you
+change the Dir-Sync requester password for this postoffice to NULL using the
+ADMIN.EXE program, it does not correct the problem.
+
+In ADMIN.EXE, changing the requester password to NULL through Config, Dir-Sync,
+Server, Requester, Modify updates the SRVCONF.GLB on the Dir-Sync server. This
+is supposed to bypass the password check.
+
+CAUSE
+=====
+
+The error occurs because the password received from the requestor is compared
+incorrectly against another postoffice (PO) record in SRVCONF.GLB under two
+conditions.
+
+1. When the postoffice name in SRVCONF.GLB is similar to or a part of the one
+   from the requestor.
+
+2. When the order of registration in the SRVCONF.GLB is such that the record for
+   the PO with the shorter name is after the record for the postoffice that is
+   sending the T1 message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SRVMAIN.EXE version 3.2a,
+included with Microsoft Mail for PC Networks. This problem was corrected in
+SRVMAIN.EXE version 3.2.12.
+
+
+Additional query words: 3.20 fatal
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

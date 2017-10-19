@@ -1,0 +1,78 @@
+DOCUMENT:Q320020  12-APR-2002  [homegame]
+TITLE   :Dungeon Siege: Network Ports Required for Multiplayer Game
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dungeon Siege, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the ports required to play Microsoft Dungeon Siege as a
+multiplayer game through a firewall, a proxy server, a router, Network Address
+Translation (NAT), or Internet Connection Sharing (ICS).
+
+MORE INFORMATION
+================
+
+To verify that these ports are open or to open these ports, please contact your
+network administrator or Internet service provider (ISP).
+
+If you are the administrator of the network, please consult the documentation
+provided with your networking software to determine the steps to open these
+ports.
+
+Dungeon Siege requires that the following UDP and TCP ports be open to start
+multiplayer games:
+
+   Connection to ZoneMatch: 2300 UDP
+   News and AutoUpdate: 80 TCP
+
+When a multiplayer game is in session, Dungeon Siege uses the following
+DirectPlay ports:
+
++-----------------------------------------------------------------------------------------+
+| Connection              | Ports for Client Configuration | Ports for Host Configuration | 
++-----------------------------------------------------------------------------------------+
+| Initial UDP Connection  | 6073 Outbound for Joining      | 6073 Inbound for Hosting     | 
++-----------------------------------------------------------------------------------------+
+| Subsequent UDP Inbound  | 2302-2400                      | 2302-2400                    | 
++-----------------------------------------------------------------------------------------+
+| Subsequent UDP Outbound | 2302-2400                      | 2302-2400                    | 
++-----------------------------------------------------------------------------------------+
+
+For additional information about DirectPlay, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q240429 DirectX: Ports Required to Play on a Network
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

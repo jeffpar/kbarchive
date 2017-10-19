@@ -1,0 +1,156 @@
+DOCUMENT:Q197629  24-OCT-2001  [sna]
+TITLE   :SLI Application Fails With LUA_RESERVED_FIELD_NOT_ZERO
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 SP3,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP3, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When running an SLI application on SNA Server 3.0 Service Pack 3 or SNA Server
+4.0 Service Pack 1, the SLI application may fail unexpectedly with the following
+return code:
+
+primary_rc = LUA_PARAMETER_CHECK (0x0001) secondary_rc =
+LUA_RESERVED_FIELD_NOT_ZERO (0x00000006)
+
+This problem does not occur with earlier versions of SNA Server.
+
+CAUSE
+=====
+
+The SNA Server SLI DLL (Winsli32.dll) was incorrectly using the RUI
+lua_extension_list_offset while formatting a chain of messages to send over the
+RUI interface. This problem was inadvertently introduced while adding the new
+SLI feature described in the following Knowledge Base article:
+
+Article-ID: Q186054 Title: SLI_SEND/SLI_RECEIVE Can Send/Receive A Maximum Of 65
+KB Of Data
+
+RESOLUTION
+==========
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server 4.0
+--------------
+
++---------------------------------+
+| File name    | Date    | Time   | 
++---------------------------------+
+| Winsli32.dll | 6/16/98 | 8:33AM | 
++---------------------------------+
+
+NOTE: Due to file dependencies, the most recent fix that contains the above files
+may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft SNA Server 3.0
+Service Pack 3 and SNA Server 4.0 Service Pack 1. This problem was first
+corrected in SNA Server 3.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+The following excerpt from an SNA Server LUA API trace illustrates the problem:
+
+   SLI   -----------------------------------------------------------
+   SLI   SLI_SEND request
+   SLI   ---- Verb Parameter Block at address 001B519C ----
+   SLI   52004600 00000000 00000000 04000000     <R.F.............>
+   SLI   00000000 00000000 00000000 00000000     <................>
+   SLI   E0268600 00008407 BA9E1400 44060000
+<.&f...d.....D...>
+   SLI   00000000 00000090 A0000100 00000000     <................>
+   SLI   00000000 0000                           <......          >
+   SLI   ---- Data at address 00149EBA ----
+   RUI  ------------------------------------------------------------
+   RUI   RUI_WRITE request
+   RUI   ---- Verb Parameter Block at address 00862990 ----
+   RUI   52004400 00000000 00000000 04800000     <R.D.............>
+   RUI   02000000 53324631 46303839 00000000     <....S2F1F089....>
+   RUI   35000000 00000001 BA9E1400 B02E3064     <5.............0d>
+   RUI   00000000 00000290 80010000 00000000     <................>
+   RUI   00000000                                <....            >
+   RUI   ---- Data at address 00149EBA ----
+   RUI   ----------------------------------------------------------
+   RUI   RUI_WRITE response
+   RUI   OK - OK
+   RUI   ---- Verb Parameter Block at address 00862990 ----
+   RUI   52004400 00000000 00000000 04800000     <R.D.............>
+   RUI   02000000 53324631 46303839 00000000     <....S2F1F089....>
+   RUI   35000000 00000001 BA9E1400 B02E3064     <5.............0d>
+   RUI   2C000109 000C0290 80010041 00000000     <,..........A....>
+   RUI   00000000                                <....            >
+   RUI   ---- Data at address 00149EBA ----
+   RUI
+   RUI ------------------------------------------------------------
+
+NOTE: This RUI_WRITE lua_extension_list_offset contains data but should have been
+zero:
+
+   RUI   RUI_WRITE request
+   RUI   ---- Verb Parameter Block at address 008629E0 ----
+   RUI   52004400 00000000 00000000 04800000     <R.D.............>
+   RUI   02000000 53324631 46303839 18628600     <....S2F1F089.bf.>
+   RUI   35000000 00000001 BA9F1400 B02E3064     <5.............0d>
+   RUI   2C000109 000C0090 00010000 00000000     <,...............>
+   RUI   00000000                                <....            >
+   RUI   ---- Data at address 00149FBA ----
+   RUI   -----------------------------------------------------------------
+   RUI   RUI_WRITE response
+   RUI   PARAMETER_CHECK - RESERVED_FIELD_NOT_ZERO
+   RUI   ---- Verb Parameter Block at address 008629E0 ----
+   RUI   52004400 00010000 00000006 04800000     <R.D.............>
+   RUI   02000000 53324631 46303839 18628600     <....S2F1F089.bf.>
+   RUI   35000000 00000001 BA9F1400 B02E3064     <5.............0d>
+   RUI   2C000109 000C0090 00010000 00000000     <,...............>
+   RUI   00000000                                <....            >
+   RUI   ---- Data at address 00149FBA ----
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP3 kbSNAServ400SP1
+Version           : :3.0 SP3,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

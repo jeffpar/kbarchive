@@ -1,0 +1,82 @@
+DOCUMENT:Q190222  09-JAN-2000  [vbwin]
+TITLE   :BUG: UserConnection GPF When Inserting Multiple Queries
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnokeyword kbEEdition kbVBp600bug kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft ActiveX UserConnection causes a general protection fault (GPF)
+when you use Multiple Queries.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project. Form1 is created by default.
+
+2. From the Project menu, point to More ActiveX Designers and click Add
+   Microsoft UserConnection.
+
+3. Make sure that "Use ODBC Datasource" is selected.
+
+4. Select Nwind DSN from the list box. If no DSN is found, click NEW to create
+   one.
+
+5. Click OK to close the dialog box.
+
+6. Select Insert Multiple Queries from the toolbar.
+
+7. Add "Employee Sales by Country" from the Available column to the Add column.
+
+8. Click OK. An empty message box appears.
+
+9. Click OK. The following error is returned:
+
+   An Application error has occurred.
+
+   NOTE: This error does not occur in Visual Basic 5.0. It also does not occur if
+   you use SQL instead of Jet.
+
+Additional query words: kbVBp600bug kbUCDesigner kbRDO kbdse kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbnokeyword kbEEdition kbVBp600bug kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

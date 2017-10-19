@@ -1,0 +1,80 @@
+DOCUMENT:Q138560  11-FEB-2000  [foxpro]
+TITLE   :How to Disable Combo and List Boxes in Wizard-Generated Forms
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the Form Wizard builds a form, it creates the form so that when the form
+runs, the objects that hold data are disabled. Clicking the Edit button enables
+the objects and allows editing of the information. However, if controls other
+than check boxes, text boxes, or OLE-bound controls are added to the form, they
+are enabled, not disabled, when the form is run.
+
+This article shows you how to disable controls such as combo boxes and list boxes
+so that they are disabled when the form runs and enabled when the Edit button is
+clicked. The code that controls which objects are disabled or enabled is located
+in the Wizstyle.vcx form. The combo and list boxes were not included in that
+code, but you can modify the code to include the combo and list boxes.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. On the File menu, click Open, and change Files of Type to Visual Class
+   Library. In the \Vfp\Wizards\ directory, select Wizstyle.vcx. In the Open
+   box, choose TXTBTNS as the Class Name. The Class Designer will appear and
+   allow the editing of the wizard buttons.
+
+2. Double-click any button. In the Object box, select TXTBTNS. In the Procedures
+   box, select SETALLPROP. In this code, look for the following line (it is
+   split here for readability):
+
+      CASE ATC(m.oControlParent.Controls[m.i].BaseClass,
+         "CheckBox,TextBox,OleBoundControl") # 0
+             m.oControlParent.Controls[m.i].Enabled = THIS.EditMode
+
+3. Note that CheckBox, TextBox, and OleBoundControl are the only objects
+   referenced here. Add "ComboBox, ListBox, EditBox" to this line of code.
+
+4. Save the changes, and create or open a wizard-generated form. Add a combo box
+   based on a field from a table. When you run the form, note that the combo box
+   is disabled until you click the Edit button.
+
+By changing the code in the TXTBTNS class, this change will also effect the way
+the picture buttons in PICBTNS behave on the combo and list boxes.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

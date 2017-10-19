@@ -1,0 +1,64 @@
+DOCUMENT:Q261066  12-JUN-2001  [homegame]
+TITLE   :Motocross Madness 2: Results for Previous Race Are Not Recorded
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Motocross Madness 2, the results for the previous race
+that you completed may not be recorded.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - Motocross Madness 2 is installed on a Microsoft Windows 2000-based computer.
+
+ - The computer stops responding during the podium sequence for an event type
+   (such as an Enduro Race) on the Pro-Circuit.
+
+RESOLUTION
+==========
+
+To resolve this issue, repeat the race to complete the event type.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Motocross Madness 2,
+version 2.0.
+
+Additional query words: 2.00 msgame mcm2 motorcross pro circuit rerun hangs freeze lock
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

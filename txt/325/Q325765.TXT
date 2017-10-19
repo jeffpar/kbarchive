@@ -1,0 +1,343 @@
+DOCUMENT:Q325765  09-AUG-2002  [odbc]
+TITLE   :"String Data, Length Mismatch" Err Msg w/ ODBC Driver for SQL
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.5,2.6,2.7,2000.80.194,2000.80.380,2000.81.7713.0,3.7
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for SQL Server, version 3.7 
+ - Microsoft ODBC Driver for SQL Server 2000, versions 2000.80.194, 2000.80.380, 2000.81.7713.0 
+ - Microsoft Data Access Components versions 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an application inserts more than 400 kilobytes (KB) of data in SQL Server by
+using ODBC, you may receive the following error message:
+
+   DIAG [22026] [Microsoft][ODBC SQL Server Driver]String data, length mismatch
+   (0)
+
+You receive this error message if the application uses the ODBC application
+programming interface (API) directly (that is, the SQLBindParameter, the
+SQLParamData, the SQLExecute, and the SQLPutData APIs). Additionally, you
+receive this error message if you try to insert data through a Microsoft Access
+linked table to SQL Server, and if all of the following conditions are true:
+
+ - The application inserts more than 400 KB of data.
+
+ - The application calls SQLBindParameter with SQL_C_WCHAR and SQL_LONGVARCHAR.
+   If the application links with Access, Access calls SQLBindParameter with
+   SQL_C_WCHAR and SQL_LONGVARCHAR.
+
+ - The server data type is non-Unicode such as "text." Internally, this causes
+   the SQL Server driver to convert the data that you have passed from Unicode
+   to MultiByte.
+
+ - The application uses the SQL_LEN_DATA_AT_EXEC(409602) macro to indicate that
+   you are trying to send more than 400 kilobytes of data. If you are using
+   Access, Access uses this macro automatically.
+
+This problem occurs with the ODBC Driver for SQL Server that is included with
+Microsoft Data Access Components (MDAC) versions 2.5, 2.6, and 2.7.
+
+CAUSE
+=====
+
+Based on the ODBC specification, when a client calls SQL_LEN_DATA_AT_EXEC and
+passes a number as its parameter, such as SQL_LEN_DATA_AT_EXEC(409602), the
+number that is passed indicates how many bytes of data is sent when the client
+calls SQLPutData later. This problem occurs because the ODBC Driver for SQL
+Server incorrectly interprets this number as the number of characters that are
+passed instead of number of bytes that are passed.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Apply it only to
+computers that are experiencing this specific problem. This fix may receive
+additional testing. Therefore, if you are not severely affected by this problem,
+Microsoft recommends that you wait for the next Microsoft Data Access Components
+service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The typical support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
+   Date         Version            Size     File Name     Platform
+   ---------------------------------------------------------------
+   12-Jul-2002  2000.081.9001.011   24,576  Odbcbcp.dll   x86
+   12-Jul-2002  2000.081.9001.011  356,352  Sqlsrv32.dll  x86
+   12-Jul-2002  2000.081.9001.011   90,112  Sqlsrv32.rll  x86
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, bind the parameter as SQL_C_CHAR (instead of as
+SQL_C_WCHAR), and then pass non-Unicode data.
+
+If you are using an Access linked table to update your SQL Server table, you
+cannot use this workaround because Access always binds text parameters as
+SQL_C_WCHAR.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Create the following tables in SQL Server:
+
+   if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[repro]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+   drop table [dbo].[repro]
+   GO
+
+   CREATE TABLE [dbo].[repro] (
+   	[name] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL ,
+   	[id] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL 
+   ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+   GO
+
+   ALTER TABLE [dbo].[repro] WITH NOCHECK ADD 
+   	CONSTRAINT [PK_repro] PRIMARY KEY  CLUSTERED 
+   	(
+   		[id]
+   	)  ON [PRIMARY] 
+   GO
+
+   Insert Into Repro (name,id) Values ('abc','1234')
+
+2. Use the following code to reproduce the problem:
+
+   #include "stdafx.h"
+   #include <stdio.h>
+   #include <iostream.h>
+   #include <windows.h>
+   #include <sql.h>
+   #include <sqlext.h>
+   #include <sqltypes.h>
+
+   void HandleError(SQLHANDLE	hHandle, SQLSMALLINT hType, RETCODE RetCode)
+   {
+   	SQLSMALLINT	iRec = 0;
+   	SQLINTEGER	iError;
+   	TCHAR		szMessage[1000];
+   	TCHAR		szState[SQL_SQLSTATE_SIZE];
+
+   	if (RetCode == SQL_INVALID_HANDLE)
+   	{
+   		fprintf(stderr,"Invalid handle!\n");
+   		return;
+   	}
+
+   	while (SQLGetDiagRec(hType,
+   			     hHandle,
+   			     ++iRec,
+   			     (SQLCHAR *)szState,
+   			     &iError,
+   			     (SQLCHAR *)szMessage,
+   			     (SQLSMALLINT)(sizeof(szMessage) / 
+   			     sizeof(TCHAR)),
+   			     (SQLSMALLINT *)NULL) == SQL_SUCCESS)
+   	{
+   	fprintf(stderr,TEXT("[%5.5s] %s (%d)\n"),szState,szMessage,iError);
+   	}
+
+   }
+
+   class ODBC_Class
+   {
+   	//attributes
+   	public:
+   	SQLHANDLE	henv;
+   	SQLHANDLE	hdbc1;
+   	SQLHANDLE	hstmt;
+   	SQLRETURN	rc;
+
+   	//methods
+   	public:
+   	ODBC_Class();
+   	~ODBC_Class();
+   	SQLRETURN	SendLongData();
+   };
+
+   ODBC_Class::ODBC_Class()
+   {
+     rc = SQL_SUCCESS;	//init the return code variable
+
+     //Allocate an environment handle.
+     rc = SQLAllocHandle(SQL_HANDLE_ENV, SQL_NULL_HANDLE, &henv);	//Allocate the env handle.
+
+     //Set the ODBC application version to 3.x.
+     if (rc ==SQL_SUCCESS)
+   	rc = SQLSetEnvAttr(henv,SQL_ATTR_ODBC_VERSION, (SQLPOINTER)
+                               SQL_OV_ODBC3, SQL_IS_UINTEGER);
+
+     //Allocate a connection handle.
+     if (rc == SQL_SUCCESS)
+        rc = SQLAllocHandle(SQL_HANDLE_DBC,henv, &hdbc1);	
+   }
+
+   ODBC_Class::~ODBC_Class()
+   {
+   //Free the connection handle.
+   if (hdbc1 != NULL)
+   	SQLFreeHandle(SQL_HANDLE_DBC, hdbc1);
+
+   //Free the environment handle.
+   if (henv != NULL)
+   	SQLFreeHandle(SQL_HANDLE_ENV, henv);
+   }
+
+   int main(int argc, char* argv[])
+   {
+
+   	SQLRETURN	rc		= SQL_SUCCESS;
+   	CHAR		DBName[100]	= "YourDataBaseName";
+   	CHAR		User[100]	= "YourUID";
+   	CHAR		Password[100]	= "YourPassword";
+
+   	CHAR		SQLstmt[255];
+   	CHAR*		m_id		= ("1234");
+   	CHAR*		m_name;
+   	OLECHAR*	pSrc;
+   	SQLINTEGER	bufsize		= 204801;
+   	SQLINTEGER	ValSizeName = 5;
+   	SQLINTEGER	ValSizeID   = SQL_DATA_AT_EXEC;
+   	SQLINTEGER	paramMarker = 1;
+   	
+
+   	ODBC_Class Example; //Create an instance of the ODBC_Class to use.
+
+   	if (Example.hdbc1 != NULL)
+   	{
+   	//Connect to the database.
+   	  rc = SQLConnect(Example.hdbc1, (SQLCHAR*) DBName, SQL_NTS,
+                                 (SQLCHAR*)User, SQL_NTS, (SQLCHAR*) Password,
+                                 SQL_NTS);
+   	  if (rc == SQL_SUCCESS || rc == SQL_SUCCESS_WITH_INFO)
+   		cout << "Connected to " << DBName<< " \n\n" << endl;
+   		
+
+   	  //Allocate stmt handle.
+   	  rc = SQLAllocStmt(Example.hdbc1, &Example.hstmt);	
+   	  if ( rc == SQL_SUCCESS)
+   	  {
+   		UINT	info2 = 60;	//Set the timeout value in seconds.
+   			
+   		//Fill in the data "abcd...."
+   		m_name = new char[bufsize];
+   		for (int i = 0; i < bufsize; i++)
+   		m_name[i] = (i % 26) + 65;
+
+   		m_name[bufsize-1] = '#';
+   		OLECHAR* m_olechar = new OLECHAR[bufsize*2];
+
+   		int result = MultiByteToWideChar(CP_ACP, 0, m_name, -1,
+                                                     m_olechar, bufsize*2);
+
+   		//Bind the parameters.
+   			
+   		rc = SQLBindParameter(Example.hstmt,1,SQL_PARAM_INPUT,		
+   	                             SQL_C_WCHAR, SQL_LONGVARCHAR,
+                                        bufsize*2, 0, (SQLPOINTER)
+                                        paramMarker, 0, &ValSizeName); 
+
+   		if (rc != SQL_SUCCESS)
+   		{
+   		  HandleError(Example.hstmt,SQL_HANDLE_STMT, rc);
+   		}
+   	
+   		rc = SQLBindParameter(Example.hstmt,2,SQL_PARAM_INPUT,
+   		SQL_C_DEFAULT, SQL_CHAR, 4, 0, (SQLPOINTER) m_id, 4, NULL); 
+
+   		strcpy(SQLstmt,"UPDATE repro SET name=? WHERE id=?");
+
+   		ValSizeName = SQL_LEN_DATA_AT_EXEC(bufsize*2);
+   		rc = SQLExecDirect(Example.hstmt, (SQLCHAR*) SQLstmt, 
+                                      SQL_NTS);			
+   		paramMarker = -1;
+   		rc = SQLParamData(Example.hstmt, 
+                                      (SQLPOINTER*)&paramMarker);
+
+   		//Loop through and insert the data.
+   		int j = 2*bufsize/8188;
+   		int remains = bufsize*2;		
+   		pSrc = m_olechar;			
+   		for (int k=0; k<j; k++)
+   		{
+   		  remains -= 8188;
+   		  rc =SQLPutData(Example.hstmt,(SQLPOINTER)pSrc , 8188);
+   		  if (rc != SQL_SUCCESS)
+                      HandleError(Example.hstmt,SQL_HANDLE_STMT, rc);
+   		  pSrc += 4094; //Increment widechar pointer by 4094 = 8188 
+                                   //bytes
+   		  cout << rc << "\n";
+
+   		}
+   		rc =SQLPutData(Example.hstmt,(SQLPOINTER)pSrc , remains);
+
+   		rc = SQLParamData(Example.hstmt, (SQLPOINTER*)paramMarker); 
+   		if (rc != SQL_SUCCESS)
+   		  HandleError(Example.hstmt, SQL_HANDLE_STMT, rc);
+   		}
+   		rc = SQLDisconnect(Example.hdbc1);
+   	}
+   	return (rc);
+   }
+
+   NOTE: Change the connection string as appropriate for your environment.
+
+Additional query words: ODBC SQL driver
+
+======================================================================
+Keywords          :  
+Technology        : kbSQLServSearch kbAudDeveloper kbSQLServ2000Search kbODBCSearch kbMDACSearch kbMDAC250 kbMDAC260 kbODBCSQLServ200080194 kbODBCSQLServ370 kbMDAC270
+Version           : :2.5,2.6,2.7,2000.80.194,2000.80.380,2000.81.7713.0,3.7
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,63 @@
+DOCUMENT:Q242541  26-MAY-2001  [homemm]
+TITLE   :Encarta: How to Obtain the DVD-ROM Version of Your Program
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+ - Microsoft Encarta Reference Suite 2001 
+ - Microsoft Encarta Reference Suite 2000 
+ - Microsoft Encarta Encyclopedia 2000 
+ - Microsoft Encarta Reference Suite 99 
+ - Microsoft Encarta Encyclopedia Deluxe 99 
+ - Microsoft Encarta Reference Suite 99 
+ - Microsoft Encarta 98 DVD-ROM Reference Suite for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can obtain the DVD-ROM version of one of the
+programs listed at the beginning of this article if you currently own the CD-ROM
+version of that program.
+
+MORE INFORMATION
+================
+
+If you own the CD-ROM version of one of the programs listed at the beginning of
+this article, you can obtain the corresponding DVD-ROM version of that program
+by calling Microsoft Supplemental Parts at 1-800-360-7561 or by visiting the
+following Microsoft Web site:
+
+   http://parts.microsoft.com
+
+
+Additional query words: multi multi-media media mm dvd-rom dvd rom dvdrom cd cd-rom cdrom
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword4 kbEncartaEncycSearch kbEncartaEnCyc2000 kbEncartaEnCyc1999Del kbEncartaReference98 kbEncartaReference99 kbEncartaReference2000 kbEncartaReference2001
+Version           : :; WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

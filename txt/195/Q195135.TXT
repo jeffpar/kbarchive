@@ -1,0 +1,93 @@
+DOCUMENT:Q195135  14-NOV-2000  [word97]
+TITLE   :WD97: Error Message: "The subdocument ...is missing"
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to open a master document, the following error message appears:
+
+   The subdocument c:\<foldername>\<file name> is missing. Do you
+   want to expand the master document without this subdocument?
+
+If you click No, Word cancels the operation and does not open the master
+document. If you click Yes, Word opens the master document without the missing
+subdocument. You can then use the Insert Subdocument button on the Master
+Document toolbar to locate and reinsert the missing subdocument.
+
+CAUSE
+=====
+
+Word cannot find the subdocument if you move it to a different location relative
+to the master document, if the subdocument is located on a network drive that is
+no longer valid, or if you delete the subdocument file.
+
+MORE INFORMATION
+================
+
+If you want to move subdocuments to a new location relative to the master
+document, refer to the instructions in the "Rename a subdocument" topic in Word
+Help.
+
+When you move a master document, Word automatically searches for the subdocuments
+in a manner that is relative to the master document. This feature, which is by
+design, makes it easy for you to move an entire master document directory tree
+while preserving the subdocument references.
+
+When you open a master document, Word searches for the subdocuments relative to
+the master document. In other words, if the subdocuments are in a subdirectory
+of the master document directory, Word looks for the subdocuments in the same
+subdirectory of the new master document location. The following table
+illustrates this search pattern.
+
+                  If the former               Then Word automatically
+                  location is:                searches here:
+                  ---------------------------------------------------
+
+   Master         C:\WORD 97\MASTER          F:\CATALOG\1993
+   Subdocuments   C:\WORD 97\MASTER\SUBDOCS  F:\CATALOG\1993\SUBDOCS
+
+                                               -then-
+
+                                              C:\WORD 97\MASTER\SUBDOCS
+
+If Word cannot find the subdocuments in the relative location, it searches in the
+original subdocument location (in this case, C:\WORD 97\MASTER\SUBDOCS). If Word
+still cannot find the subdocument, the "The subdocument is missing..." error
+message appears.
+
+
+Additional query words: long docs books
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

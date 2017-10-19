@@ -1,0 +1,71 @@
+DOCUMENT:Q86080  12-NOV-1999  [win16sdk]
+TITLE   :Porting Windows Help Source Files from Version 3.0 to 3.1
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To successfully compile source files developed for version 3.0 of the Microsoft
+Windows Help Compiler with version 3.1 of the Help Compiler, make the following
+two changes to the Help Project (HPJ) file:
+
+ - In the [OPTIONS] section, replace the INDEX statement with the CONTENTS
+   statement. The CONTENTS statement provides the same functionality; it
+   specifies the context string of the highest-level topic. This topic is
+   usually a table of contents or an index of the help file. The Windows Help
+   application displays the contents topic whenever the user chooses the
+   Contents button. The syntax of the CONTENTS statement is as follows:
+
+         [OPTIONS]
+         CONTENTS=context-string
+
+ - If the Help file contains any browse sequences, add the browse buttons to the
+   button bar with the following statement in the [CONFIG] section:
+
+         [CONFIG]
+         BrowseButtons()
+
+   Version 3.1 of the Windows Help Compiler does not display the browse buttons
+   by default. For more information on browse buttons, see page 28 of the
+   "Programming Tools" manual included with the Microsoft Windows Software
+   Development Kit (SDK) version 3.1.
+
+Because version 3.1 of the Windows Help Compiler cannot produce backwardly
+compatible help files, the files it creates are incompatible with version 3.0 of
+Windows Help. However, Windows Help version 3.1 will run under Microsoft Windows
+3.0 and is redistributable. See the License Agreement for the Microsoft Windows
+SDK version 3.1 for information about reproducing and distributing WINHELP.EXE
+with your product.
+
+Additional query words: 3.00 3.10 HC31 HC31.EXE HCP HCP.EXE no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

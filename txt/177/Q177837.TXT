@@ -1,0 +1,77 @@
+DOCUMENT:Q177837  09-SEP-1999  [sms]
+TITLE   :SMSINST: SMS Installer Ignores REG_NONE Key Changes
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Systems Management Server Installer does not detect registry changes for the
+REG_NONE value type and does not create registry values for REG_NONE when an
+application is repackaged. REG_NONE is a registry value type created by the
+registry APIs.
+
+WORKAROUND
+==========
+
+Use either of the following methods to work around this problem.
+
+Method 1
+--------
+
+1. After the software is installed you can export the registry tree to a text
+   file.
+
+2. Create a batch file that calls REGINI to import the text file into the
+   registry.
+
+3. Create a Systems Management Server package to distribute the files to the
+   clients.
+
+Method 2
+--------
+
+Manually script and compile a separate Systems Management Server Installer
+package to update the registry with the changes that were not added to the
+script during the Repackage operation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 1.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms winnt win95 smsinst empty
+
+======================================================================
+Keywords          : smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

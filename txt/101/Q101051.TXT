@@ -1,0 +1,74 @@
+DOCUMENT:Q101051  23-OCT-1999  [foxmisc]
+TITLE   :PRB: Bottom of Report Truncated in FoxBase+/Mac
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A report with a Detail band that extends beyond one physical page truncates the
+Detail band at the end of the first physical page.
+
+CAUSE
+=====
+
+In FoxBASE+/Mac, the Detail band is limited to one physical page. Any
+information beyond the maximum page length will not appear in preview mode, or
+on a printout.
+
+RESOLUTION
+==========
+
+Page layout options differ based on the current printer driver being used. If
+the printer setup allows you to select Universal Fanfold paper and No Gap
+Between Pages, information past the end of the first physical page will be
+printed. If the printer driver does not allow the use of fanfold paper, the size
+of the detail band is limited by the size of the paper used.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new report and specify 8.5-by-11-inch paper.
+
+2. Drag the Detail band to approximately 15 inches.
+
+3. Enter text on the report at approximately 1 inch and 14 inches within the
+   Detail band.
+
+4. Preview the report. The text at 1 inch will appear, but the text at 14 inches
+   will not.
+
+Additional query words: 2.01 cut off
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

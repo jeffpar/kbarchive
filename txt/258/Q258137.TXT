@@ -1,0 +1,76 @@
+DOCUMENT:Q258137  04-AUG-2000  [iis]
+TITLE   :2nd Hex Character Overwrites 1st in Binary Value w/ MetaEdit 2.0
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use MetaEdit 2.0 to create or modify a binary value, the second
+hexadecimal character of the byte overwrites the first hexadecimal character of
+the byte.
+
+For example, in the "Edit Metabase Data" dialog box for a binary value, if you
+type "1A" (without the quotation marks) in the "Data" text box, and then click
+OK, the value of "AA" is actually saved (instead of "1A").
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install MetaEdit 2.1.
+
+For additional information about obtaining MetaEdit 2.1, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q232068 FILE: How to Download, Install, and Uninstall IIS MetaEdit 2.1
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in MetaEdit 2.0.
+
+MORE INFORMATION
+================
+
+MetaEdit 2.0:
+
+MetaEdit 2.0 is included with the Windows 2000 Server Resource Kit.
+
+Hexadecimal Character Pairs:
+
+In MetaEdit, each byte of binary data is represented by a pair of hexadecimal
+characters, such as 1A, 11, FF, and so on.
+
+Additional query words: iis 5 bug RK meta edit meta-edit hex duplicated akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

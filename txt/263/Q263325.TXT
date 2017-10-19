@@ -1,0 +1,68 @@
+DOCUMENT:Q263325  01-JUN-2001  [sms]
+TITLE   :SMS: MMC 1.2 Requires Internet Explorer 5 or Later
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbtool kbsms200 kbsms200preSP3 kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Management Console (MMC) hosts administrative tools you can use in
+the administration of networks, computers, services, and other system
+components. As of 9/5/2000, MMC version 1.2 is the most current version of this
+tool.
+
+For the MMC to function properly with System Management Server (SMS) version 2.0
+and to benefit from the functional changes made within the latest MMC, you must
+be running Microsoft Internet Explorer 5 or later.
+
+MORE INFORMATION
+================
+
+Note that MMC version 1.2 is not included with SMS 2.0 Service Pack 2 (SP2).
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Immc.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbsms200 kbsms200preSP3 kbgraphxlinkcritical 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,71 @@
+DOCUMENT:Q128346  17-DEC-2000  [win95x]
+TITLE   :Error Messages Creating an Emergency Boot Disk
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to create a Windows 95 emergency boot disk during Windows 95 Setup,
+you receive the following error message:
+
+   Disk Initialization Error
+   Could not properly initialize the floppy disk that you inserted.
+   Error: Disk sector was not found.
+
+CAUSE
+=====
+
+The Mitsumi CD-ROM detection module in Windows 95 interferes with some floppy
+disk drives and floppy disk drive controllers.
+
+WORKAROUND
+==========
+
+To work around this problem, follow these steps:
+
+1. Cold boot your computer (turn it off and on).
+
+2. Run the Setup program again.
+
+3. When you are prompted "Do you want Setup to look for all hardware?" click No,
+   then choose not to run the Mitsumi CD-ROM detection.
+
+4. After Setup is finished, use the Add New Hardware icon in Control Panel to
+   detect and install the Mitsumi CD-ROM drive.
+
+MORE INFORMATION
+================
+
+This problem has been reported to occur with the Promise 2300 EIDE controller.
+When the Mitsumi detection routine examines ports 170-177, the floppy disk drive
+fails until the computer is cold booted.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

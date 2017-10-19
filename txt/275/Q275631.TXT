@@ -1,0 +1,74 @@
+DOCUMENT:Q275631  23-OCT-2000  [exchange]
+TITLE   :XCON: MTA Does Not Send X.400 O/R Address Across X.400 Connector
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) only includes the full X.400
+O/R Reply-To address the first time that a message is sent across an
+unreplicated X.400 Connector with Microsoft Database Format (MDBEF) enabled.
+After a message has been sent across an X.400 Connector, only distinguished
+names are included in the messages. This behavior causes the recipients to
+receive non-delivery reports (NDRs) when they attempt to reply to the sender's
+message.
+
+CAUSE
+=====
+
+This problem only occurs when the X.400 Connector is configured to use address
+spaces without using the Connected Sites Configuration tab on unreplicated X.400
+Connectors with MDBEF enabled. When the Connected Sites tab is configured on
+both sides of the X.400 Connector, each bridgehead has the other site's
+distinguished name included in the Gateway Address Routing Table (GWART), and
+the messages are deliverable because the necessary routing information is
+available. This behavior occurs for both one-off X.400 addresses as well as
+X.400 custom recipients.
+
+RESOLUTION
+==========
+
+To resolve this problem, click to clear the "Allow MS Exchange contents" check
+box on the Advanced tab of the unreplicated X.400 Connector Property page.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

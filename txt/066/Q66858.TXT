@@ -1,0 +1,40 @@
+DOCUMENT:Q66858  30-JUL-2001  [homegame]
+TITLE   :IdleWild Drop Out Screen Saver and Radius Two-Page Display
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+When the Drop Out screen saver is selected in the Windows Entertainment Pack
+IdleWild game on a computer running Microsoft Windows in standard or 386
+enhanced mode with a Radius two-page display, the screen saver will terminate
+with an Unrecoverable Application Error (UAE) as soon as the screen saver is
+activated.
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

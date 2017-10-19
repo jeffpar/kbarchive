@@ -1,0 +1,84 @@
+DOCUMENT:Q249280  06-AUG-2002  [exchange]
+TITLE   :XADM: Error Joining an Existing Site Running on Windows 2000
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error message when you are running Exchange Server
+Setup to join a site that is running on Microsoft Windows 2000 Server:
+
+   No mapping between account names and security IDs was done.
+   Microsoft Windows NT
+   ID no: 0xc0020534
+
+You receive this error after entering the password for the Exchange Server
+service account.
+
+CAUSE
+=====
+
+Exchange Server 5.5 only recognizes account entries in the format of
+<Domain>\<Account>, not in the <Account>@<Domain.com>
+format.
+
+RESOLUTION
+==========
+
+To resolve this issue, you must change the Log On account for each of the
+Exchange Server services from the <Account>@<Domain.com> format to
+the <Domain>\<Account> format. To do so, on the Windows 2000
+computer that is running Exchange Server:
+
+1. Open Services from the Administrative Tools program group.
+
+2. Double-click on each of the Exchange Server services.
+
+3. Click the Log On tab.
+
+4. In the This account field, change the account to the
+   <Domain>\<Account> format.
+
+The domain in the <Domain>\<Account> format is the NetBIOS domain
+name.
+
+The account must be manually typed in in this format, because Windows 2000
+automatically enters the account name in the <Account>@<Domain.com>
+format.
+
+After you complete the preceding steps, you can complete the installation of
+Exchange Server 5.5, and join the site successfully.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

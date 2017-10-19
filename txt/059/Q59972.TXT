@@ -1,0 +1,64 @@
+DOCUMENT:Q59972  10-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Getting a Macintosh Resource from a Message
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+getMacResource retrieves the Macintosh resource with the given type, name, and
+ID and returns it in a handle. The syntax for getMacResource is as follows:
+
+      msmail(getMacResource, type, name, ID)=>handle
+
+Either the name or ID parameters may be empty, but not both. Here are some
+examples of legitimate parameters:
+
+      put msmail(getMacResource, "snd ","","Simple Beep") into hndl
+      put msmail(getMacResource, "PICT", 4007) into hndl
+
+getMacResource looks first in the resource fork of the current stack, then in
+HyperCard's resources, and finally in the System resources. The name and ID of a
+resource can be found with the ResEdit program from Apple. Note that if the ID
+is empty, a placeholder ("") must be used.
+
+When you are done using the handle, you should dispose of its contents with
+disposeHandle.
+
+The "type" parameter lets users specify the 4-character type of the resource to
+be added, such as "ICON", "CODE", or "snd ".
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

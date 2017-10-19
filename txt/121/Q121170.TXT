@@ -1,0 +1,80 @@
+DOCUMENT:Q121170  19-NOV-1999  [msdos]
+TITLE   :How to Access Environment Variables in an MS-DOS Batch File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The article explains how you can access environment variables within MS-DOS
+batch files.
+
+MORE INFORMATION
+================
+
+The following example shows how to test for the existence of an environment
+variable:
+
+   IF "%VARIABLE%" == "" GOTO MODULE
+
+This example checks for the existence of the environment variable "VARIABLE." If
+VARIABLE does not exist, the statement is true and control of the batch file
+jumps to the MODULE section. If the statement is not true, that is, the VARIABLE
+variable does exist, program control skips to the next line of the batch file
+and continues.
+
+NOTE: The quotation marks are necessary only when a variable is used in a logical
+IF statement.
+
+The following example illustrates the use of the PATH environment variable within
+a batch file:
+
+   IF "%PATH%" == "" GOTO NOPATH
+   :YESPATH
+   @ECHO The PATH environment variable was detected.
+   PATH=C:\DOS;%PATH%
+   GOTO END
+   :NOPATH
+   @ECHO The PATH environment variable was NOT detected.
+   PATH=C:\DOS;
+   GOTO END
+   :END
+
+This example tests for the existence of the PATH variable. If it exists, control
+passes to the YESPATH section; otherwise, control is passed to the NOPATH
+section.
+
+If a path is detected and control is passed to the YESPATH section, C:\DOS is
+added to the existing path by using the %PATH% variable.
+
+Additional query words: 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch
+Version           : MS-DOS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

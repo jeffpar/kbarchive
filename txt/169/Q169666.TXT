@@ -1,0 +1,79 @@
+DOCUMENT:Q169666  26-NOV-1999  [exchange]
+TITLE   :XADM: POP3 Users may not Receive an Attachment if Part of DL
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Custom recipients (CRs) that are members of Microsoft Exchange Distribution
+Lists (DLs) and use POP3 clients, may not receive attachments when messages are
+sent to the DL.
+
+CCMAIL users who are SMTP custom recipients may receive the attachment as a
+base64 file called Mime6.raw.
+
+CAUSE
+=====
+
+When the DL is created, the default property for the DL is to Allow Rich Text
+and this is inherited by all members of this DL.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The property to Allow Rich Text is set for Microsoft Exchange Recipients and DLs
+automatically. This property is not set for CR. However, if the CR is part of a
+DL, the CR inherits this property from the DL as it is expanded. With this Allow
+Rich Text property set, the IMS will send out message with Transport Neutral
+Encoding Format (TNEF) attachments and most POP3 clients cannot read this
+format.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

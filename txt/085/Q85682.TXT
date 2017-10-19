@@ -1,0 +1,59 @@
+DOCUMENT:Q85682  13-DEC-1999  [win95x]
+TITLE   :WRK Incorrectly Documents TTIfCollisions=
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 176 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+incorrectly documents the TTIfCollisions= entry of the [TRUETYPE] section of the
+WIN.INI file. The same error occurs in the WININI.WRI file.
+
+MORE INFORMATION
+================
+
+Both page 176 and WININI.WRI state the following about the TTIfCollisions= entry
+in the WIN.INI file:
+
+   If you set this value to 0, Windows will use the TrueType version.
+
+The correct statement should be:
+
+   If you set this value to 1, Windows will use the TrueType version.
+
+The TTIfCollisions= entry specifies whether to use TrueType fonts in place of
+other fonts if both types of fonts are installed on the system and have the same
+font name.
+
+Additional query words: 3.1 3.11 3.10 wrkit rkit
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

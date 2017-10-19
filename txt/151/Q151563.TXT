@@ -1,0 +1,59 @@
+DOCUMENT:Q151563  08-AUG-2001  [winnt]
+TITLE   :PRB: Err Msg. Unable to Create The Directory \C:
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During an unattended setup of Windows NT using a text file created with the
+Windows NT 4.0 Resource Kit utility Windows NT Setup Manager, the following
+error message may appear:
+
+   Unable to create the directory \C:
+
+CAUSE
+=====
+
+This problem occurs if you specify a drive letter in the installation path (for
+example, C:\Winnt).
+
+RESOLUTION
+==========
+
+To resolve this problem, do not include a drive letter in the installation path.
+Only include the folder name (for example, Winnt).
+
+Additional query words: 4.00 prodnt rkit Unattended Setup
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

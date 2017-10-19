@@ -1,0 +1,64 @@
+DOCUMENT:Q164702  09-AUG-2001  [winnt]
+TITLE   :WINDISK Stops Responding During Initialization
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a SCSI system (no IDE hard disk drive), connect an ATAPI powerdrive on either
+IDE controller. With no media in the drive, start Windows NT and run Disk
+Administrator. Disk Administrator will load. Click View and then click Volumes.
+Disk Administrator will stop responding and bring up Dr. Watson exception error.
+
+CAUSE
+=====
+
+A flaw in the removable media *DRAW* handling code of WINDISK shows up when the
+removable media is selected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

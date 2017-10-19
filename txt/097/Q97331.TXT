@@ -1,0 +1,81 @@
+DOCUMENT:Q97331  23-JUL-2001  [win16sdk]
+TITLE   :Launching One Application for Windows from Another
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbOSWin310 kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+APPEXEC is a technical note in the Microsoft Download Center that discusses
+launching Windows-based applications from other applications for Windows.
+APPEXEC is a Windows Help file.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   Appexec.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+An application for Microsoft Windows often needs to be launched from another
+Windows-based application. In addition to starting a second application,
+sometimes the primary application needs to know when the second application
+terminates.
+
+This technical article discusses the following points:
+
+ - Several ways to start applications
+
+ - An approach to finding applications not located on the current Windows search
+   path
+
+ - A method for detecting whether an application is still running
+
+ - Using the same Windows-based techniques for starting applications for MS-DOS
+
+APPEXEC, the sample application provided with this article, contains code that
+solves the problems involved in finding and starting one Windows-based
+application from another, as well as determining later whether that application
+is still running.
+
+Additional query words: APPEXEC kbfile
+
+======================================================================
+Keywords          : kbfile kbsample kbOSWin310 kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q174398  09-AUG-2001  [winnt]
+TITLE   :How to Force Time Synchronization Between Cluster Nodes
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MSCS Time Service resource coordinates the synchronization of the date and
+time on cluster nodes. The time between nodes is synchronized automatically when
+the cluster is formed and at specified intervals thereafter. If you change the
+time in the cluster, you may want to synchronize the time on cluster nodes
+quickly rather than waiting for the next synchronization interval to occur.
+
+MORE INFORMATION
+================
+
+To change the time and force time synchronization, perform the following steps:
+
+1. Change the time on the node that currently owns the Time Service resource.
+
+   NOTE: This will be the node that owns the Cluster Group.
+
+2. On the other node, run the NET TIME command and specify the computer name of
+   the node that owns the Time Service.
+
+   For example, if NODEA owns the time service, type the following at the Windows
+   NT command prompt and then press ENTER:
+
+   NET TIME /set /y \\NODEA
+
+NOTE: If you change the time on a node that does not own the Time Service, that
+node will eventually synchronize with the owner of the Time Service and may not
+reflect the time adjustment. For best results, follow the above procedure.
+
+Additional query words: MSCS
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : WinNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q175068  09-AUG-2001  [winnt]
+TITLE   :Zero Administration Kit Server Setup Does not Finish
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:; WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install a Zero Administration Kit (ZAK) Server, you receive the
+following prompt:
+
+   Enter the location of Windows NT 4.0
+
+After you specify the appropriate location, Setup may not finish, and you may not
+receive an error message.
+
+CAUSE
+=====
+
+This issue can occur when the location you specify is a shared network folder
+instead of the Windows NT 4.0 CD-ROM.
+
+RESOLUTION
+==========
+
+To resolve this issue, copy the Cdrom_w.40 file from the root folder of the
+Windows NT Workstation CD-ROM to the shared network folder that contains the
+Windows NT 4.0 installation files.
+
+For information about how to copy a file, click Start, click Help, click the
+Index tab, type "copying" (without quotation marks), double- click the "copying
+files" topic, and then double-click the "To copy a file or folder" topic.
+
+======================================================================
+Keywords          : kbsetup kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbZAWNTW400
+Version           : WINDOWS:; WINNT:4.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

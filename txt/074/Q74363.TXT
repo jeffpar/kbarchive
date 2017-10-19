@@ -1,0 +1,64 @@
+DOCUMENT:Q74363  06-NOV-1999  [win16sdk]
+TITLE   :PRB: Fatal Exit 0x00FF or 0xD000: MakeProcInstance Fails
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application running under the Microsoft Windows graphical environment
+receives FatalExit error 0x00FF or 0xD000, "MakeProcInstance only for Current
+Instance."
+
+CAUSE
+=====
+
+A function in a dynamic-link library (DLL) calls the MakeProcInstance() function
+using an application's instance handle. The FatalExit() occurs because the
+current value of the DS register does not match the instance handle passed to
+MakeProcInstance().
+
+RESOLUTION
+==========
+
+A DLL should not call MakeProcInstance() on behalf of the calling application.
+The MakeProcInstance() function is not designed to be used this way.
+
+MORE INFORMATION
+================
+
+When an application is executing, the value of the DS register is equal to the
+application's data segment, which is identified by the application's instance
+handle.
+
+Additional query words: 3.00 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

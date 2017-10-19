@@ -1,0 +1,70 @@
+DOCUMENT:Q198509  16-APR-1999  [exchange]
+TITLE   :XWEB: "Unable to get your inbox" Using OWA via Proxy Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5,5.5SP1; WINNT:1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Proxy Server versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When accessing an Outlook Web Access (OWA) server using Windows NT
+Challenge/Response (NTLM) authentication on the Exchange virtual directory in
+Microsoft Internet Information Server (IIS) through a Microsoft Proxy Server,
+you may get the following error:
+
+   OWA was unable to get your Inbox.
+
+CAUSE
+=====
+
+NTLM is not supported through Proxy Server because NTLM requires a persistent
+connection.
+
+WORKAROUND
+==========
+
+To work around this problem, turn NTLM authentication off on the Exchange
+Virtual Web in IIS, and set permissions to Basic Clear Text.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q175805 PRB: "Access Is Denied" Error When Expecting Logon Dialog
+
+   Q183730 HTML Administrator Doesn't Work Through Proxy with NTLM
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbAudDeveloper kbZNotKeyword6 kbExchangeSearch kbProxyServ100 kbZNotKeyword2 kbProxyServSearch kbOWASearch kbOWA550 kbOWA550SP1 kbProxyServ200 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0,5.5,5.5SP1; WINNT:1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

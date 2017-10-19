@@ -1,0 +1,222 @@
+DOCUMENT:Q281874  07-MAY-2002  [homemm]
+TITLE   :Encarta 2001: En2001.exe Unable to Locate Dll the Dynamic Link
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+ - Microsoft Encarta Interactive World Atlas 2001 
+ - Microsoft Encarta Reference Suite 2001 
+ - Microsoft Encarta World English Dictionary 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start one of the programs listed at the beginning of this
+article, you may receive any of the following error messages:
+
+   Enc2001.exe unable to locate dll the dynamic link library Mvcl53n.dll could
+   not be found in the specified path.
+
+   ENC2001.exe unable to locate dll the dynamic link library SHRL30.dll could
+   not be found in the specified path.
+
+   MSWORLD6.exe unable to locate dll the dynamic link library MAPOBJ81.dll could
+   not be found in the specified path.
+
+You may also see one of the following error messages:
+
+   A required .dll file <filename> was not found.
+   where <filename> is the name of the .dll file not found.
+
+   -or-
+
+   A required dll file is missing.
+
+CAUSE
+=====
+
+This occurs when files are not correctly registered.
+
+RESOLUTION
+==========
+
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Clean Boot Your Computer
+------------------------
+
+The following startup options are turned off (disabled) when you clean boot your
+computer:
+
+    - System.ini entries
+ - Win.ini entries
+ - Static virtual device drivers (VxD files)
+ - Startup items
+ - Environment variables for MS-DOS emulation
+
+To clean boot your computer, use the appropriate method for your version of
+Microsoft Windows.
+
+Microsoft Windows Millennium Edition (Me):
+
+A clean boot loads Windows Me without starting any other programs that may
+interfere with Encarta Setup.
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks), and then
+   click OK.
+
+3. On the General tab, click "Selective startup".
+
+4. Click to clear all of the check boxes under "Selective startup".
+
+5. On the Startup tab, click to select the StateMgr check box, and then click
+   OK.
+
+6. When you are prompted to restart your computer, click Yes.
+
+To restore the normal startup process for your computer:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks) and then click
+   OK.
+
+3. On the General tab, click Normal startup and then click OK.
+
+4. When you are prompted to restart your computer, click Yes.
+
+Microsoft Windows 98:
+
+A clean boot loads Windows 98 without starting any other programs that may
+interfere with Encarta Setup.
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks), and then
+   click OK.
+
+3. On the General tab, click Selective Startup.
+
+4. Click to clear the following check boxes:
+
+   Process Config.sys file
+   Process Autoexec.bat file
+   Process Winstart.bat file (if not unavailable or dimmed)
+   Load startup group items
+
+5. On the Win.ini tab, click the plus sign (+) next to [Windows].
+
+Click to clear the check boxes for the following lines:
+
+   Load=
+   Run=
+
+6. Click OK. Click Yes to restart your computer.
+
+To restore the normal startup process for your computer:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks), and then
+   click OK.
+
+3. On the General tab, click "Normal startup", and then click OK.
+
+4. When you are prompted to restart your computer, click Yes.
+
+Microsoft Windows 95:
+
+Windows 95 does not offer the same steps as Windows 98 or Windows Me for a clean
+boot. To make sure that no other programs are running in the background, use the
+"Close Program" feature:
+
+1. Press CTRL+ALT+DELETE.
+
+2. In the Close Program dialog box, click any program except Explorer or Systray
+   (which are components of Microsoft Windows), and then click End Task.
+
+   If you receive a message that states that the program is not responding, click
+   End Task again.
+
+3. Repeat steps 1 and 2 to quit all programs except Explorer and Systray.
+
+Copy Files to Encarta Product Folder
+------------------------------------
+
+
+1. Right-click Start, and then click Explore.
+
+2. In the left pane, double-click Program Files.
+
+3. Double-click Common Files.
+
+4. Double-click Microsoft Shared.
+
+5. Double-click Reference 2001.
+
+6. In the right pane, press and hold down CTRL as you click to select the
+   following files:
+
+   Mapobj81.dll
+   Mvbk53n.dll
+   Mvcl53n.dll
+   Mvjk53n.dll
+   Mvmc53n.dll
+   Mvmg53n.dll
+   Mvps53n.dll
+   Mvtl53n.dll
+   Mvut53n.dll
+   Sfc10.ocx
+   Shrl30.dll
+   Shrpnl10.dll
+
+7. When all of these files are selected, on the Edit menu, click Copy.
+
+8. In the left pane, double-click the Microsoft Encarta folder. If this is not
+   found, double-click the Microsoft Reference folder, then double click the
+   Microsoft Encarta folder.
+
+9. Double-click the folder named after your product.
+
+   NOTE: The folder name will vary slightly by product. Choose the folder name
+   that most closely matches your Encarta product.
+
+10. On the Edit menu, click Paste.
+
+11. Close Windows Explorer.
+
+Additional query words: multi multi-media media mm Enc2001 exe Mvcl53n dll
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaReference2001 kbEncartaWorldAtlas2001 kbEncartaWorldEngDict2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

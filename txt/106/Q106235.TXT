@@ -1,0 +1,59 @@
+DOCUMENT:Q106235  28-OCT-1999  [win3x]
+TITLE   :File Manager GP Fault on BW-NFS Network
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience a general protection (GP) fault in Microsoft Windows for
+Workgroups File Manager when you access files on a Beame & Whiteside Network
+File System (BW-NFS) network drive.
+
+CAUSE
+=====
+
+BW-NFS is capable of storing files with names longer than the MS-DOS limit of 8
+characters plus a 3 character extension. You may receive the GP fault if this
+long file name support feature is enabled on the BW-NFS server where BW-NFS is
+installed as a primary or secondary network for Windows for Workgroups 3.11.
+
+Note that the name of the file being manipulated does not have to exceed the
+MS-DOS file name limits to cause this error.
+
+WORKAROUND
+==========
+
+Disable the long file name support on the BW-NFS network server.
+
+Additional query words: LFN parse longname 3.11 filename
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

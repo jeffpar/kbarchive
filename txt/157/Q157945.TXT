@@ -1,0 +1,63 @@
+DOCUMENT:Q157945  11-DEC-1999  [foxpro]
+TITLE   :PRB: What to Do If Syntax Coloring Is Not Working
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing Visual FoxPro 5.0, color highlighting of key words and comment
+lines in FoxPro code may not be active.
+
+CAUSE
+=====
+
+This may be the result of installing version 5.0 in the same directory that
+Visual FoxPro 3.0 is in.
+
+RESOLUTION
+==========
+
+There are three places where you may need to change this: the Command window,
+Program windows, and Method Code windows. Use the following steps:
+
+1. Right-click or press the Shift+F10 keys in any of the above windows and
+   select Properties.
+
+2. In the Properties window, check the box labeled "Syntax coloring."
+
+3. In the property sheet for Program and Method windows, check a second box
+   called "Apply to .prg files" or "Apply to method code" if coloring of syntax
+   is desired in all program files and all Method Code windows.
+
+Additional query words: kbdsd VFoxWin
+
+======================================================================
+Keywords          : kbsetup kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

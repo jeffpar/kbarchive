@@ -1,0 +1,52 @@
+DOCUMENT:Q136179  15-APR-2000  [powerpt]
+TITLE   :PPT7: You Can Add Only One Textured Background Format at a Time
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft PowerPoint 97, you can add only one textured background format at a
+time to a slide. (To do this, click Background on the Format menu and then click
+Fill Effects under Background Fill.) If you select one new texture, and then
+immediately try to add another one, the new one replaces the first one.
+
+CAUSE
+=====
+
+Although it may be unexpected, this behavior is by design.
+
+Additional query words: 7.00 w_powerpnt powerpnt winppt
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

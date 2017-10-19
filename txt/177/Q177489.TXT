@@ -1,0 +1,62 @@
+DOCUMENT:Q177489  13-JUN-2001  [sna]
+TITLE   :SNA Web Clients Only Available on 3.0 Service Pack 2 CD
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After applying Service Pack 2 for SNA Server 3.0, there is a reference in the
+online SNA Server help file under the new feature Web Setup for Windows 95
+Clients:
+
+   For more information, see the Web Setup for Windows 95 Clients online guide
+   on the SNA Server Help contents.
+
+MORE INFORMATION
+================
+
+The information on the setup for the web clients, as well as the files for the
+web clients themselves, is only available on the Service Pack 2 compact disk.
+These files are not included in the Service Pack available for download on the
+Internet.
+
+For more information on obtaining Service Pack 2 on compact disk see the
+following article in the Microsoft Knowledge Base:
+
+   Q168654 How to Obtain SNA Version 3.0 U.S. Service Pack 2
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP2
+Version           : WINDOWS:3.0 SP2
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,296 @@
+DOCUMENT:Q110129  25-AUG-1999  [odbc]
+TITLE   :INF: Microsoft ODBC Desktop Database Drivers 1.0 README.TXT
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+
+WINDOWS
+
+kbref
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft ODBC Desktop Database Drivers 1.0 package contains drivers for
+dBASE files, Btrieve files, Microsoft FoxPro files, Microsoft Access, Microsoft
+Excel files, Paradox files, and text files. Documentation for each of the
+drivers is contained in a help file.
+
+Below is the README.TXT file for the Microsoft ODBC Desktop Database Drivers
+version 1.0.
+
+
+MORE INFORMATION
+================
+
+---------------------------------------------------------
+  Microsoft ODBC Desktop Database Drivers 1.0 README File
+                        August 1993
+  -------------------------------------------------------
+
+        (C) Copyright Microsoft Corporation, 1993
+
+This document provides complementary information and
+errata as a supplement to the standard Microsoft ODBC
+Desktop Database Drivers documentation.
+
+------------------------
+How to Use This Document
+------------------------
+
+To view README on screen in Windows Notepad, maximize the Notepad window.
+
+To print README, open it in Windows Write, Microsoft Word, or another word
+processor. Then select the entire document and format the text in 10-point
+Courier before printing.
+
+--------
+Contents
+--------
+
+Drivers List
+Driver-Specific Documentation
+Requirements for Using the Microsoft ODBC Btrieve Driver
+Microsoft ODBC Desktop Database Drivers and Microsoft Access & VB 3.0
+Microsoft ODBC Desktop Database Driver Files
+Additional Information & Errata
+
+------------
+Drivers List
+------------
+The Microsoft ODBC Desktop Database Drivers version 1.0 includes drivers
+for the following data sources:
+
+                                 Database Version
+Driver                           or File Version
+------                           ---------------
+dBase files                      III, IV
+Btrieve files                    5.1
+FoxPro files                     2.0, 2.5
+Microsoft Access                 1.0, 1.1
+Microsoft Excel files            3.0, 4.0
+Paradox files                    3.0, 3.5
+Text files                       n/a
+
+-----------------------------
+Driver-Specific Documentation
+-----------------------------
+Documentation on the characteristics of each separate driver is contained
+in a set of Windows help files. These help files provide information on how
+to install a driver, how to create data sources for a driver, the data
+types supported by a driver, the SQL syntax supported by a driver, etc.
+
+The help file for a specific driver is automatically installed when the
+corresponding driver is installed. Help files are installed into the
+\Windows\System directory. The following is a list of the drivers and the
+name of the corresponding help file after it has been installed.
+
+Driver                                        Help File
+------                                        ----------------
+dBase                                         drvdbase.hlp
+Btrieve                                       drvbtrv.hlp
+Microsoft FoxPro                              drvfox.hlp
+Microsoft Access                              drvaccss.hlp
+Microsoft Excel                               drvexcel.hlp
+Paradox                                       drvpardx.hlp
+Text                                          drvtext.hlp
+
+--------------------------------------------------------
+Requirements for Using the Microsoft ODBC Btrieve Driver
+--------------------------------------------------------
+
+Note that to use the Btrieve driver to read and write data to a Novell
+Btrieve file, you must have a copy of the stand-alone Btrieve for Windows
+WBTRCALL.DLL file. This file must be in your \Windows\System directory.
+
+You may already have a copy of this file on your hard drive. If you do,
+copy it to your \Windows\System directory.
+
+Important: If you already have a copy of WBTRCALL.DLL in your
+\Windows\System directory, contact your system administrator before copying
+over it. This file may be used by other programs on your computer.
+
+If you don't have a copy of this file, please call Novell Inc. at 800-453-
+1267 in the U.S. or by contacting your local distributor outside of the
+U.S.
+
+------------------------------------------------------
+Microsoft ODBC Desktop Database Drivers and
+Microsoft Access & VB 3.0
+------------------------------------------------------
+The Microsoft ODBC Desktop Database Drivers share some components with
+Microsoft Access 1.1 and Visual Basic 3.0. Installing the Microsoft ODBC
+Desktop Database Drivers will make sure that the most recent version of
+each shared component is retained, thus ensuring compability of the
+components among these products.
+
+Also, though it is possible to use the Microsoft ODBC Desktop Database
+Drivers with Microsoft Access 1.1 or Visual Basic 3.0, it is not
+recommended. Both Microsoft Access 1.1 and Visual Basic 3.0 are able to
+access Btrieve, dBase, Microsoft FoxPro and Paradox data via a built-in,
+native ISAM capability.
+
+The Microsoft ODBC Desktop Database Drivers can be used with Visual Basic
+3.0 to create applications that call the ODBC API directly and do not use
+Microsoft Access database engine.
+
+---------------------------------------------
+Microsoft ODBC Desktop Database Drivers Files
+---------------------------------------------
+
+NOTE: The files on the distribution disk are compressed
+and must be installed using the ODBC Installer.
+
+Filename      Destination        Description
+---------     -----------        -----------
+_mssetup.exe  N/A                Setup command executor.
+btrv110.dll   <Windows\System>   Btrieve ISAM DLL.
+commdlg.dll   <Windows\System>   Common dialog boxes. This is a
+                                 file shipped with Windows
+                                 version 3.1.
+ctl3d.dll     <Windows>          3D-look DLL.
+drvaccss.hlp  <Windows\System>   Microsoft Access driver help file.
+drvbtrv.hlp   <Windows\System>   Btrieve driver help file.
+drvdbase.hlp  <Windows\System>   dBase driver help file.
+drvexcel.hlp  <Windows\System>   Microsoft Excel driver help file.
+drvfox.hlp    <Windows\System>   Microsoft FoxPro driver help file.
+drvpardx.hlp  <Windows\System>   Paradox driver help file.
+drvtext.hlp   <Windows\System>   Text driver help file.
+msjetdsp.dll  <Windows\System>   ISAM DLL dispatcher DLL.
+odbc.dll      <Windows\System>   ODBC Driver Manager DLL.
+odbc.inf      N/A                Setup disks information file.
+odbcadm.exe   <Windows\System>   ODBC Administrator shell for Win3.0a.
+odbcinst.dll  <Windows\System>   ODBC Installer & Control Panel device DLL.
+odbcinst.hlp  <Windows\System>   ODBC Installer & Control Panel help file.
+odbcstp.exe   N/A                Microsoft ODBC Desktop Database Drivers
+                                 second-level Setup executable.
+pdx110.dll    <Windows\System>   Paradox version 3.5 ISAM DLL.
+readme.txt    N/A                Microsoft ODBC Desktop Database
+                                 Drivers readme file (this file.)
+                                 Contains issues you should be
+                                 aware of.
+red110.dll    <Windows\System>   Microsoft Access ISAM DLL.
+redistr.txt   N/A                List of files that must be redistributed
+                                 with any of the Microsoft ODBC Desktop
+                                 Database Drivers. This file is referenced
+                                 by your license agreement.
+setup.exe     N/A                Setup executable.
+setup.lst     N/A                Setup initialization file.
+simadmin.dll  <Windows\System>   Driver-specific setup DLL for all
+Microsoft
+                                 ODBC Desktop Database Drivers.
+simba.dll     <Windows\System>   Common query processor for all Microsoft
+                                 ODBC Desktop Database Drivers.
+txtisam.dll   <Windows\System>   Text ISAM DLL.
+ver.dll       <Windows\System>   Windows 3.1 version checking DLL.
+winhelp.exe   <Windows>          Windows version 3.1 Help
+                                 executable.
+winhelp.hlp   <Windows>          Windows version 3.1 Help
+                                 program Help file.
+xbs110.dll    <Windows\System>   Microsoft FoxPro and dBASE ISAM DLL.
+xlsisam.dll   <Windows\System>   Microsoft Excel ISAM DLL.
+
+NOTE: In the Destination column, the name in brackets indicates the most
+common name for this directory; however, the directory name on your
+computer may be different. For example, your Windows directory may be
+called WIN31 or just WIN.
+
+-------------------------------
+Additional Information & Errata
+-------------------------------
+
+Using Microsoft ODBC Desktop Database Drivers with Microsoft Access or VB
+3.0
+---------------------------------------------------
+If you use Microsoft Access or VB 3.0 to import, export or access an
+attached Btrieve, dBase, Microsoft FoxPro or Paradox file and attempt to
+access a similar file through Microsoft Access or VB at the same time using
+the corresponding Microsoft ODBC Desktop Database Driver, you may get the
+following error message: "ODBC- call failed." It is not recommended that
+you use the Microsoft ODBC Desktop Database Drivers with the Microsoft
+Access or VB 3.0 products.
+
+Updates to Paradox Files
+------------------------
+If an SQL searched UPDATE statement (UPDATE t1 SET c1=...) is used to
+update values in the rows of a Paradox file and the update fails because a
+duplicate key value was generated by the update, the driver will return
+SQL_SUCCESS_WITH_INFO. This is because the rows updated prior to
+encountering the duplicate value are updated successfully. However, the row
+at which the duplicate was encountered and all subsequent rows are NOT
+updated.
+
+SQL_LOCK_TABLES Statement Option
+--------------------------------
+The help files state that, if a CREATE INDEX statement is executed while
+the SQL_LOCK_TABLES statement option is set to XLOCK, the base table will
+be locked. This is incorrect; the CREATE INDEX statement does not cause
+tables to be locked.
+
+Also note that, because each table requires a file handle, locking a large
+number of tables can use up the file handles available to an application.
+By default, 16 file handles are available for application use.
+
+Packing dBase & Microsoft FoxPro Files
+--------------------------------------
+The drivers for dBase and Microsoft FoxPro do not provide the capability to
+pack data files. To remove deleted records you must use the dBase or
+Microsoft FoxPro products or other commercially available methods.
+
+Paradox Currency Data Type
+-----------------------
+The Paradox currency data type is not directly supported by the driver.
+However, Paradox currency data is stored exactly like Paradox number
+data. The driver returns currency data as number data. The values returned
+are accurate.
+
+Paradox Write-Protected Files
+-----------------------------
+The Paradox driver will not permit INSERT, UPDATE and DELETE to update
+Paradox write-protected files. However, DROP TABLE will delete files
+that have been set as write-protected.
+
+SQLStatistics and Paradox Primary Key Indexes
+---------------------------------------------
+The index name returned by SQLStatistics for Paradox primary key indexes
+is comprised of the name and the characters "#PX". For example, an
+index named I1 as in, CREATE UNIQUE INDEX I1 ON T1(C1), will be returned
+as "I1#PX".
+
+Btrieve Table Names Using Non-Alphanumeric Characters
+-----------------------------------------------------
+Creating a table with a delimited identifier will not work for some
+non-alphanumeric characters.
+
+Additional query words: 1.0 odbc desktop database drivers
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

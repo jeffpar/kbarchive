@@ -1,0 +1,66 @@
+DOCUMENT:Q156250  30-JUL-2001  [sms]
+TITLE   :SMS: Job Status Remains Active When Sent to Entire Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM kbsmsAdmin smsadmin smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you send a package to an entire site, the package is sent to all clients in
+the site, regardless of the supported platforms selected in the package
+properties. Because the package may not be able to run under all platforms, the
+Job Status remains Active, but the Job Status Details (which displays the SMSIDs
+for the clients that are not able to run the package) shows a status of None.
+
+CAUSE
+=====
+
+Job status is only updated when the client generates a Status MIF, and that MIF
+is put into the database. If a client does not run the job, a status MIF is not
+created.
+
+WORKAROUND
+==========
+
+Only send platform-sensitive packages to clients that can run them. You can send
+these packages by using machine groups, query results, or individual clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbPCM kbsmsAdmin smsadmin smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q88584  01-NOV-1999  [win95x]
+TITLE   :Blank Page Prints When Using Windows 3.1 PostScript Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using the Windows 3.1 PostScript printer driver version 3.5 or 3.53,
+and select both the Negative Image check box and the Conform To Adobe Document
+Structuring Conventions check box, you get a blank page when you print from any
+Windows-based application. If you clear either of these check boxes, you will be
+able to print normally.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Run Control Panel.
+
+2. Choose the Printer icon.
+
+3. Select the PostScript printer from the list of installed printers.
+
+4. Choose the Setup button.
+
+5. Choose the Options button.
+
+6. Choose the Advanced button.
+
+7. Clear either the Negative Image check box or the Conform To Adobe Document
+   Structuring Conventions check box.
+
+8. Choose the next three OK buttons to save your changes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows version 3.1. We are
+researching this problem and will post new information here as it becomes
+available.
+
+Additional query words: 3.10 3.11 pscrip.drv ps pscript
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q137125  13-AUG-1999  [foxpro]
+TITLE   :How to Use IncrementalSearch Property of List and Combo Boxes
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The IncrementalSearch property of list and combo boxes permit the user to
+perform an incremental search of values. An example of an incremental search
+would be to type the letter F followed by the letter O, and find the first
+occurrence of a string beginning with FO. A non-incremental search in this case
+would first locate the first string beginning with F, followed by the first
+string beginning with the letter O.
+
+The IncrementalSearch property enables or disables this capability within list
+and combo boxes. However, by itself, the IncremetalSearch property set to True
+may not always produce what you expect.
+
+MORE INFORMATION
+================
+
+To take advantage of the IncrementalSearch property, the _DBLCLICK variable must
+also be set. The initial value of .5 for _DBLCLICK may not provide adequate time
+to enter the characters in the object. Increasing the value of _DBLCLICK to 1.5
+allows more time to enter data.
+
+Therefore, in the Init event of a formset, form, list box, or combo box, add this
+line of code:
+
+      _DBLCLICK=1.5
+
+Then set the IncrementalSearch property of the list or combo box to true, and the
+incremental search behavior will work as expected.
+
+REFERENCES
+==========
+
+For more information about _DBLCLICK, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q95674 Keep List Box from Jumping to First Entry Beg w/ 2nd Char
+
+Additional query words: VFoxWin delay one time
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

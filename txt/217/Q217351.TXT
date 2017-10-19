@@ -1,0 +1,175 @@
+DOCUMENT:Q217351  11-JUN-2002  [winnt]
+TITLE   :PRB: DCOM Port Range Configuration Problems
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbOSWinNT400 kbOSWinNT400sp4 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+You may notice the following symptoms:
+
+ - World Wide Web Publishing fails to start, and the following event appears in
+   the Event log:
+
+   Event ID: 7023
+   Source: Service Control Manager
+   Description: The World Wide Web Publishing Service terminated with the
+   following error: The endpoint cannot be created.
+
+ - If you try to stop services such as W3SVC, MSFTPSVC, SMTPSVC, SS LDAP, or SS
+   Messaging, the attempt fails with the following error message:
+
+   Error 1721: Not enough resources are available to complete this operation
+
+ - Distributed Component Object Model (DCOM) clients that try to connect to the
+   DCOM server fail with the following error message:
+
+   RPC_S_SERVER_UNAVAILABLE (0x800706ba) - The RPC server is unavailable
+
+CAUSE
+=====
+
+This problem occurs because of improper configuration of the port range settings
+in the HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\Internet registry key or
+because the port restrictions for a protocol are configured through the DCOMCNFG
+protocol property page.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this problem, use one of the following methods:
+
+ - If you do not want to configure DCOM to use a range of ports, delete the
+   registry key, and then restart your computer.
+
+ - If you want to configure DCOM on your computer to use a range of ports, use
+   the HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\Internet registry key to
+   configure the range of ports, and follow the instructions in the following
+   white paper:
+
+   Using Distributed COM with Firewalls
+   http://www.microsoft.com/com/wpaper/dcomfw.asp
+
+   If you used the DCOMCNFG utility to configure port restrictions, you may be
+   encountering a known DCOMCNFG bug. For additional information, click the
+   article number below to view the article in the Microsoft Knowledge Base:
+
+   Q201911 BUG: DCOMCNFG Writes Ports Named Value in Incorrect Format
+
+   Rather than use the DCOMCNFG utility, use Regedt32.exe to configure the port
+   restrictions as described in the white paper.
+
+   The number of ports to be opened depends on the number of DCOM applications
+   and other services that are running on the computer. For example, each
+   instance of a DCOM application process uses one port; Microsoft Internet
+   Information Server (IIS) uses a minimum of five ports.
+
+   In addition, it is important to determine the range of ports to be opened. For
+   instance, Microsoft SQL Server uses port 1433 for incoming requests and ports
+   1024-5000 for outgoing calls. Considering these factors, it is recommended
+   that you open a minimum of 15 to 20 ports and use a port range that is above
+   5000. For example, configure DCOM to use port range 5000-5020.
+
+MORE INFORMATION
+================
+
+Configuring the computer to use a range of ports can break other applications on
+the system. On systems that are running Microsoft Windows NT 4.0 Service Pack 4
+and later, the best alternative is to configure the DCOM application to use the
+static endpoint by using the AppId key.
+
+To configure the DCOM application to use a static port by using TCP/IP as the
+DCOM protocol, follow these steps:
+
+On the Client Computer:
+
+1. From the Start menu, click Run, type "DCOMCNFG" (without the quotation
+   marks), and then click OK.
+
+2. On the Default Protocols tab, move Connection-oriented TCP/IP protocol to the
+   top of the list, and restart the computer.
+
+On the Server Computer:
+
+1. From the Start menu, click Run, type "DCOMCNFG" (without the quotation
+   marks), and then click OK.
+
+2. On Default Protocols tab, move Connection-oriented TCP/IP protocol to the top
+   of the list.
+
+3. Using tools such as OLEVIEW, find your application's AppId globally unique
+   identifier (GUID).
+
+4. Start the Registry Editor (Regedt32.exe).
+
+5. Locate the following key in the registry:
+
+   HKEY_CLASSES_ROOT\AppId\{AppId GUID}
+
+6. On the Edit menu, click Add Value, and then add the following registry
+   value:
+
+   Value Name: Endpoints
+   Data Type: REG_MULTI_SZ
+   Value: ncacn_ip_tcp,0,<port number>
+
+   where <port number> is the static port that you want to use.
+
+7. Quit the Registry Editor.
+
+8. Restart the computer.
+
+Note that your application may not pick up the static endpoint from the registry
+if the mapping for the .exe name to the AppId does not exist in the registry.
+
+REFERENCES
+==========
+
+For additional information regarding the mapping for the .exe name, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q216051 FIX: DCOMCNFG NT 4.0 SP4 Does Not Write .exe Name under HKCR\APPID
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWinNT400 kbOSWinNT400sp4 kbDSupport 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

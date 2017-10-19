@@ -1,0 +1,74 @@
+DOCUMENT:Q192765  08-MAY-2002  [winnt]
+TITLE   :STOP 0x0000000A on SMP Computers
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT Server may show a blue screen STOP error with the following
+message:
+
+   STOP 0x0000000A (0xBAD0B0E4, 0x00000002, 0x00000001, 0x800032EA)
+
+NOTE: The first parameter in parentheses is always the same. The fourth parameter
+address falls within the Hal.dll.
+
+CAUSE
+=====
+
+Windows NT is trying to free an object that has already been freed.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0. This problem was
+first corrected in Windows NT 4.0 Service Pack 4.
+
+
+Additional query words: kbDSupport 0xa 4.00
+
+======================================================================
+Keywords          : kbWinNT400sp4fix kbbuglist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

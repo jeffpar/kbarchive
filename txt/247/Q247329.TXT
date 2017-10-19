@@ -1,0 +1,105 @@
+DOCUMENT:Q247329  08-MAY-2002  [winnt]
+TITLE   :Process Generates Stop 0x50 Error Message in ExpCopyProcessInfo
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbWinNT400PreSP7Fixkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a very rare race condition, an exiting process can cause your computer to
+generate a Stop 0x50 error message (bugcheck) with the following stack trace:
+
+2: kd> !kb
+!kb cannot get version packet on a crash dumpcannot get version packet on a crash
+dumpChildEBP Ret
+f68f4bb8 801545da eb7363d8 ba1a4e08 00007000 ntkrnlmp!ExpCopyProcessInfo+0x11
+f68f4c38 8015b5d1 00161008 00007000 f68f4ec8
+ntkrnlmp!ExpGetProcessInformation+0x156
+f68f4eec 80140be9 00000005 00161008 00007000
+ntkrnlmp!NtQuerySystemInformation+0x725
+f68f4eec 0012fab0 00000005 00161008 00007000 ntkrnlmp!KiSystemService+0xc9
+f68f4bac b7d16fec eb7363d8 b7d16e58 801545da +0x12fab0
+
+2: kd> !trap f68f4b3c
+!trap f68f4b3c
+eax=bbd26fb0 ebx=b7d16e58 ecx=00006458 edx=0000000f esi=eb7363d8 edi=ba1a4e08
+eip=8015c6e5 esp=f68f4bb0 ebp=f68f4c38 iopl=0 nv up ei ng nz na pe nc
+vip=0 vif=0
+cs=0008 ss=0010 ds=0023 es=0023 fs=0030 gs=0000 efl=00010282
+ErrCode = 00000000
+8015c6e5 8b4014 mov eax,[eax+0x14]
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date         Time          Size            File name      Platform
+   ------------------------------------------------------------------
+   11/11/1999   1:08 pm       952,256         Ntkrnlmp.exe   x86
+   11/11/1999   1:07 pm       932,032         Ntoskrnl.exe   x86
+
+   11/11/1999   1:05 pm       1,404,032       Ntkrnlmp.exe   Alpha
+   11/11/1999   1:05 pm       1,375,808       Ntoskrnl.exe   Alpha
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0.
+
+Additional query words: patrolperf.exe ptntreg.exe compaq bmc
+
+======================================================================
+Keywords          : kbenv kberrmsg kbWinNT400PreSP7Fix kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbWinNTW400sp6 kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Hardware          : ALPHA x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

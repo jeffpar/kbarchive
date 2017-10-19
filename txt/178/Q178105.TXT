@@ -1,0 +1,63 @@
+DOCUMENT:Q178105  28-JAN-1999  [winnt]
+TITLE   :Using "Winnt.exe /e" Command May Interfere with ZAK Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Windows NT Setup (Winnt.exe) program with the /e switch to set
+up a Zero Administration Kit (ZAK) Appstation or Taskstation, file restrictions
+may not be properly applied to the computer.
+
+CAUSE
+=====
+
+This behavior can occur when the process called by the /e switch causes the
+Zakboot1.cmd file to be run before the first reboot during ZAK Setup. As a
+result, the Cacls.exe program may not run and may not apply the file
+restrictions to the computer.
+
+RESOLUTION
+==========
+
+To work around this issue, use a batch file to run your program during ZAK
+Setup. To do so, follow these steps:
+
+1. Create a batch file to run your external program.
+
+2. Configure the Zakboot1.cmd file to run your batch file before processing the
+   SHUTDOWN command. For example, place the following command on the line above
+   the SHUTDOWN command in the Zakboot1.cmd file:
+
+         cmd /c %SystemRoot%\\<your_batchfile.cmd>
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

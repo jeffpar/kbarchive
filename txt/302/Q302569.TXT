@@ -1,0 +1,55 @@
+DOCUMENT:Q302569  30-JUL-2001  [msnetwork]
+TITLE   :Printer Stops Printing If Document Is Too Long
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+The printer stops printing after several pages, and returns the following
+error:
+
+"Please make sure your printer is switched on, that it is properly connected to
+your MSN Companion and that no warning lights appear on the printer. If your
+printer is in the process of warming up, try printing again."
+
+CAUSE
+=====
+
+The paper is not properly positioned in the printer's feed tray.
+
+RESOLUTION
+==========
+
+To resolve this issue
+
+1. Remove the paper from the feed tray in the printer.
+
+2. Make sure that the paper is aligned properly.
+
+3. Try to print again.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

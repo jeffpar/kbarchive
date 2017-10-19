@@ -1,0 +1,60 @@
+DOCUMENT:Q126021  08-NOV-2001  [homegame]
+TITLE   :How to Access Help Screen in Haunted House
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+WINDOWS
+kbusage kbprb kbmm kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Haunted House for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When choosing the Clock Buttons in The Ultimate Haunted House Help screen, Gahan
+explains that you can access the Help screen, in any room of the haunted house,
+by pressing COMMAND+H on the keyboard. There is not a COMMAND key on an
+IBM-compatible keyboard.
+
+RESOLUTION
+==========
+
+Hold down the CTRL key and press H (the CTRL+H key combination) to view the Help
+screen from any room in the haunted house.
+
+The Clock Buttons sound file originated from the Macintosh version of Microsoft
+Gahan Wilson's The Ultimate Haunted House. Macintosh computers have a COMMAND
+key on their keyboards, which function like the CTRL key on a standard
+IBM-compatible computer keyboard.
+
+Additional query words: 1.00 run open invoke launch control
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword kbKidsSearch kbHauntedHouse
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

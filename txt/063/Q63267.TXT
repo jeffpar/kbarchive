@@ -1,0 +1,80 @@
+DOCUMENT:Q63267  31-OCT-1999  [utilities]
+TITLE   :FIX: PWB 1.0 menukey Switch Resets to ALT Shelling Out to MS-DOS
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0; OS/2:1.0
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, version 1.0 
+ - Microsoft Programmer's Workbench for OS/2, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the "menukey" switch in the MS-DOS version of the Programmer's Workbench
+(PWB) version 1.0 is set to anything other than ALT (which is the default), it
+will be redefined to the ALT key after shelling out to DOS. Thus, the menukey
+switch will lose its assignment any time you choose Compile, Run Program, Debug
+Program, or DOS Shell.
+
+RESOLUTION
+==========
+
+To work around this problem, you can use the Restart command to invoke a macro
+that redefines the menukey to the desired value each time you return from a DOS
+SHELL command, which will then keep ALT from activating the menu. For example,
+to cause F9 to always be reset as the only menukey, put the following line in
+the PWB tagged section of the TOOLS.INI file:
+
+   " restart:= arg "menukey:F9" assign " (without the quotation marks)
+
+Since the Restart command, if it exists in TOOLS.INI, is invoked automatically
+when returning from a SHELL command, this method guarantees that the key
+assignment will always remain consistent.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PWB version 1.0. This problem
+was corrected in PWB version 1.1.
+
+MORE INFORMATION
+================
+
+The menukey switch determines which keystroke activates the PWB main menu bar.
+The ALT key is normally used for this, but menukey can be redefined to any
+keystroke. For example, menukey is automatically defined to F9 if you choose
+Brief Editor emulation when installing the Programmer's WorkBench.
+
+Whenever you invoke any function (such as Build) that goes out to DOS for
+execution and then returns, the menukey switch is reset to ALT, so that both ALT
+AND the user-defined keystroke invoke the menu.
+
+Additional query words: 1.00 buglist1.00 fixlist1.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB100OS2
+Version           : MS-DOS:1.0; OS/2:1.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

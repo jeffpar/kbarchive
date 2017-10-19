@@ -1,0 +1,80 @@
+DOCUMENT:Q193338  11-JAN-2001  [vbwin]
+TITLE   :PRB: Setting RightToLeft to True Returns Out Of Memory Error
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to change the "RightToLeft" property of either a Horizontal or
+Vertical ScrollBar control to True generates an "Out Of Memory" error.
+
+CAUSE
+=====
+
+The RightToLeft property is a design feature in localized Arabic and Hebrew
+versions of Visual Basic 6.0 and should have no effect in other language
+versions. The above error can be ignored in non-Arabic and non-Hebrew language
+versions.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+   default.
+
+2. Place either a Horizontal or Vertical ScrollBar control on Form1.
+
+3. Click the control and press the F4 key to bring up the Property Window.
+
+4. Change the value of "RightToLeft" from False to True. This results in an "Out
+   Of Memory" error. Further attempts to set the property will result in the
+   same error.
+
+   NOTE: In Visual Basic 5.0, any attempt to set the RightToLeft property of
+   either the Horizontal or Vertical ScrollBar control will be ignored instead
+   of generating an error.
+
+Additional query words: kbdss kbDSupport kbVBp kbVBp600 kbIDE kbVBp500
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

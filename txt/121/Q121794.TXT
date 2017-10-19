@@ -1,0 +1,70 @@
+DOCUMENT:Q121794  21-NOV-1999  [msdos]
+TITLE   :Reinstalling MS-DOS 6.22 Step-Up with DriveSpace Installed
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To completely reinstall MS-DOS 6.22 from the Step-Up disks, you must first
+reinstall the version of MS-DOS that was on the system prior to MS-DOS 6.22.
+This process can become complicated if the drive containing the MS-DOS directory
+has been compressed using DriveSpace.
+
+The only supported method for reinstalling the MS-DOS 6.22 Step-Up on such
+systems is to uncompress the drive containing the MS-DOS directory before
+proceeding with the reinstallation of the prior MS-DOS version.
+
+MORE INFORMATION
+================
+
+To reinstall MS-DOS 6.22 Step-Up on a system whose MS-DOS directory is located
+on a DriveSpace-compressed drive, use the following steps:
+
+1. Uncompress the drive containing the MS-DOS directory.
+
+2. Run Setup with the /F parameter to create a single startup floppy disk that
+   contains system files from the version of MS-DOS that was on the system prior
+   to MS-DOS 6.22.
+
+3. Boot from the startup disk made in step 2.
+
+4. Reinstall the prior version of MS-DOS by running "setup" (without the
+   quotation marks) from Setup Disk 1.
+
+5. Run the MS-DOS 6.22 Step-Up.
+
+6. Recompress the drive containing the MS-DOS directory (if desired).
+
+
+Additional query words: msdos 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

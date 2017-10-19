@@ -1,0 +1,65 @@
+DOCUMENT:Q67503  06-NOV-1999  [win95x]
+TITLE   :Notepad: 1st Line of Printing Overlaps 2nd with HP Printers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Windows Notepad version 3.0, if you choose Page Setup from the File
+menu and set Top Margin to 0 (zero), the first two lines print on top of each
+other or overlap. This problem affects the following Hewlett- Packard (HP)
+printers:
+
+   HP LaserJet Series II
+   HP LaserJet Series IIP
+   HP LaserJet Series IID
+   HP LaserJet Series III
+
+This problem occurs because you are attempting to print outside the areas where
+the printer is capable of printing.
+
+MORE INFORMATION
+================
+
+Most HP LaserJet Series printers can print no closer than .25 inch from the page
+margins. To correct the problem, set Top Margin to .25 inch or greater.
+
+NOTE: Most PostScript printers exclude the first line and start printing with the
+second line.
+
+The HP products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3.0 3.00 3.00A laser jet lazer first second 1st 2nd
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q140320  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: List the Current Version of All Files in a Project
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SourceSafe for Macintosh, version 3.1 
+ - Microsoft SourceSafe for MS-DOS, version 3.1 
+ - Microsoft SourceSafe for UNIX, version 3.1 
+ - Microsoft SourceSafe for Windows, version 3.1 
+ - Microsoft SourceSafe for Windows NT, version 3.1 
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to view the latest version numbers of all the
+files in a particular project by using the graphical user interface (GUI).
+
+MORE INFORMATION
+================
+
+1. Select the project.
+
+2. Perform a history of the project.
+
+3. Select the most recent history item (of the project). This works only for
+   items directly in project, not in subprojects.
+
+4. Click View.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310 
+Technology        : kbHWMAC kbOSMAC kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe310 kbSSafe310DOS kbSSafe310Mac kbSSafe310UNIX kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe310NT
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

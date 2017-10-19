@@ -1,0 +1,56 @@
+DOCUMENT:Q198760  28-JUL-2000  [sms]
+TITLE   :SMS: RC Causes Win95 Client in Suspend Mode to Stop Responding
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Systems Management Server 2.0 Windows 95 client computer is being Remote
+Controlled and the client goes into Suspend Mode, Windows 95 will stop
+responding when returning from Suspend Mode.
+
+If the CTRL+ALT+DEL keys are pushed to get the task list, Wuser32 will be in the
+"not responding" state. If the End Task button is clicked on Wuser32, the system
+will be locked up and the client must be restarted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms rc32 hang hangs hung lock locked up reboot rebooted
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

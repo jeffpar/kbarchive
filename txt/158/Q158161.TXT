@@ -1,0 +1,61 @@
+DOCUMENT:Q158161  09-APR-1999  [exchange]
+TITLE   :XFOR: IMC NDR Resends Do Not Preserve Original Message Options
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Messages re-sent from Internet Mail Connector (IMC) non-delivery reports (NDRs)
+do not preserve the options, such as sensitivity and priority, associated with
+the original message. When a message goes through content conversion and is
+returned with an NDR, some attributes are lost.
+
+It is not possible to inspect the options exposed in the original message with
+the Send Options button on the General tab of the message's property page,
+because this button is disabled when resending.
+
+MORE INFORMATION
+================
+
+If sending TNEF, the message integrity should be better than non-TNEF.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

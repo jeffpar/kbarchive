@@ -1,0 +1,330 @@
+DOCUMENT:Q154116  26-JUL-2002  [visualc]
+TITLE   :HOWTO: Debug OLE Applications
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,2.2,4.0,4.1,4.2
+OPER/SYS:
+KEYWORDS:kbinterop kbCtrlCreate kbDebug kbGDI kbide kbMFC kbVC200 kbVC210 kbVC220 kbVC400 kbVC41
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Integrated Debugger, used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article provides a tutorial to assist you in learning how to use the Visual
+C++ integrated debugger to debug OLE applications.
+
+The Visual C++ integrated debugger supports simultaneous debugging of OLE client
+and server applications. You can easily step across and into OLE clients and
+servers and have the ability to step across OLE Remote Procedure Calls. A second
+instance of the debugger is automatically spawned the first time an OLE client
+calls into an OLE server.
+
+When building OLE servers, you may want to debug them in the context of being
+activated by an OLE container, thus debugging both the container and the server
+at the same time. This tutorial provides an example of how to debug an OLE
+server when the main debuggee is an OLE container. It shows how a second
+instance of the debugger is automatically spawned when an OLE client calls into
+an OLE server. The tutorial is designed to lead you step-by-step through the
+code that creates the OLE server object and establishes the connection between
+the OLE container and the OLE server. This is useful in tracking down problems
+that occur when the OLE server does not get created or initialized correctly.
+
+All regular debugging facilities are available as you debug your OLE application.
+
+MORE INFORMATION
+================
+
+Preparing to Debug
+------------------
+
+To prepare for OLE Client/Server debugging:
+
+1. Open the project for the OLE application and build a version with symbolic
+   debugging information.
+
+2. From the Tools menu, choose Options. Select the Debug tab. Ensure that the
+   OLE RPC Debugging check box and the Just-In-Time (JIT) Debugging boxes are
+   checked. (You must have Windows NT administrator privileges to enable OLE RPC
+   Debugging.)
+
+3. Choose OK. The information is now stored in the registry.
+
+4. Set breakpoints at the points in the source files for your OLE application
+   where you want to determine the state of the application.
+
+5. Start a debugging session.
+
+Viewing Derived-Most Types
+--------------------------
+
+The QuickWatch dialog box provides support for the automatic downcast of pointers
+in OLE and MFC debugging. The debugger automatically detects when a pointer is
+pointing to a subclass of the type it is required to point to. When the pointer
+is expanded, Visual C++ will add an extra member that looks like another base
+class and indicates the derived-most type. For example, if you are displaying a
+pointer to a CObject and the pointer really points to a CComboBox, the
+QuickWatch expression evaluator will recognize this and introduce a pseudo
+CComboBox member so you can access the CComboBox members.
+
+The rest of this tutorial takes you through a debug session, using MFC sample
+code.
+
+Creating the Object
+-------------------
+
+1. Build debug versions of the Microsoft Foundation Classes (MFC) samples in the
+   development environment. For Visual C++ 2.x, the projects to work with are in
+   the following directories on the CD-ROM:
+
+    - MSVC20\SAMPLES\MFC\CONTAIN\STEP2
+    - MSVC20\SAMPLES\MFC\SCRIBBLE\STEP7
+
+   For Visual C++ 4.x, the projects to work with are in the following directories
+   on the CD-ROM:
+
+    - MSDEV\SAMPLES\MFC\TUTORIAL\CONTAIN\STEP2
+    - MSDEV\SAMPLES\MFC\TUTORIAL\SCRIBBLE\STEP7
+
+   For Visual C++ 5.0 and later, use the online Help system to copy the samples
+   and use the default directories for copying. The sample names are same,
+   CONTAINER and SCRIBBLE.
+
+2. Run the SCRIBBLE.EXE file built in step 1 to update the registry to point to
+   this executable file.
+
+3. Load the CONTAIN\STEP2 project into the development environment.
+
+4. From the Tools menu, choose Options. Select the Debug tab, and make sure OLE
+   RPC Debugging is enabled as described in step 4 of the "Preparing to Debug"
+   section in this article.
+
+5. Open the CONTRVW.CPP file in CONTAIN\STEP2, and set a breakpoint on the line
+   that contains a call to CreateItem.
+
+6. Start a debugging session to run CONTAIN.EXE. In the CONTAIN main menu,
+   choose Insert New Object from the Edit menu.
+
+7. From the resulting Object Type list, choose Scrib Document, and then choose
+   the OK button. At this point, the debugger should stop at the breakpoint you
+   set in step 5. This is the call to the Insert Object dialog's CreateItem
+   function. The purpose of CreateItem is to create and initialize an object of
+   the type you selected from the dialog box. The CreateItem function is passed
+   a CCntrItem object and uses the object to handle this process.
+
+   NOTE: For a brief overview of what CCntrItem does, see its class definition in
+   CNTRITEM.H. Then look at the definition of COleClientItem (from which
+   CCntrItem is derived) in AFXOLE.H.
+
+8. Step into the call to CreateItem. You are in the MFC source file
+   OLEDLGS1.CPP. Step over instructions until you get to the call to
+   pNewItem->CreateItem.
+
+9. Step into the call to pNewItem->CreateNewItem. Then step over instructions
+   until you get to the call to OleCreate. While stepping through the code, read
+   the comments and note that storage is allocated for the object and its
+   rendering format is established.
+
+10. Step into the call to OleCreate. At this point, execution proceeds through
+   the RPC mechanism to the server code itself. Therefore, as the server code
+   begins to execute, a new instance of the debugger is created in which to
+   debug the server. A pseudo project for SCRIBBLE.EXE is loaded (as in JIT
+   debugging), and the instruction pointer is set at the call to
+   COleServerDoc::XPersistStorage::InitNew in OLESRV1.CPP. If you installed the
+   .DBG files (see the "NT System Symbols Setup" icon in your Visual C++
+   program group), your callstack will include fully decorated names.
+
+11. Step over instructions in Scribble's InitNew until you reach the call to
+   pThis->OnNewEmbedding. Then step into OnNewEmbedding.
+
+12. Step over lines until you reach the call to OnNewDocument. Then step into
+   the call to COleServerDoc::OnNewDocument. You are now inside
+   COleLinkingDoc::OnNewDocument. (COleServerDoc is derived from
+   COleLinkingDoc.) Note the code in this small function: It creates a new
+   document object and attaches it to the server (Scribble).
+
+13. Step out twice to get back into COleServerDoc::XPersistStorage::InitNew,
+   where you first came into Scribble.
+
+14. Step out one more time. This will cause the container to return from its
+   call to OleCreate, the function that first took you into Scribble. At this
+   time, the instance of the debugger that has Contain loaded gets the focus,
+   and you are back in OLECLI1.CPP immediately following the call to OleCreate.
+   The embedded Scribble object has now been created but it is not yet fully
+   initialized.
+
+15. Step into the next line, which is the call to FinishCreate. Step through the
+   FinishCreate code to see how OLE finalizes the connection between the
+   container and the server, and then step out of FinishCreate.
+
+A Scribble object has now been created and initialized in memory, but it is not
+yet editable in the container; Scribble hasn't been activated. In fact, Contain
+still has only an IUnknown interface to Scribble. You can see this by expanding
+the lpClientSite variable in the Locals Window.
+
+Activating the Object
+---------------------
+
+1. Step out two more times to get back to Contain's OnInsertObject
+
+       function in CONTRVW.CPP.
+
+2. In Contain's OnInsertObject function, step over five times to get to the call
+   to DoVerb. This function activates Scribble.
+
+3. Step into the call to DoVerb. Then step over a few lines until you come to
+   the call to Activate.
+
+4. Step into Activate. You are now in OLECLI3.CPP. Before going on, scan through
+   the code for Activate. Notice that a rectangle is first created for the
+   embedded Scribble item to live in. GetClientSite is then called to establish
+   an interface back to the container for the Scribble server. Then the server's
+   DoVerb function is called to pass both of these to the server.
+
+5. Step into the call to DoVerb. At this point, execution proceeds once again
+   through the RPC mechanism to the server code itself. As you would expect, the
+   instruction pointer is pointing to the first instruction in the server's
+   COleServerDoc:: XOleObject::DoVerb function.
+
+6. Step to the call to OnDoVerb. Then step into OnDoVerb. OnDoVerb consists of a
+   switch statement that executes the command (verb) passed to it. In this case,
+   the command is OLEIVERB_SHOW. Step over instructions until you get to OnShow.
+
+7. Step into OnShow. Then step three lines to ActivateInPlace, and step into
+   ActivateInPlace.
+
+   The ActivateInPlace function does many things and is worth examining in
+   detail. While it is beyond the scope of this tutorial to go into all the
+   details, it is worthwhile to step through the code and observe the comments.
+   At this point, step over each instruction until you get to the call to
+   OnFrameWindowActivate in OLESRV1.CPP. Among other things, you will see the
+   following tasks accomplished:
+
+    - Get the document type used in SetActiveObject calls.
+
+    - Get the in-place client-site interface.
+
+    - See if the container wants to go in-place right now.
+
+    - Get the parent window to create the COleIPFrameWnd.
+
+    - Create the inplace frame window.
+
+    - Send an activate notification to the container.
+
+    - Get the frame and doc window interfaces as well as other information.
+
+    - Set up the shared menu.
+
+    - Allow the server to install frame controls in the container.
+
+    - Update the zoom factor information before creating control bars.
+
+    - Resize the window to match the object.
+
+    - Set the active object.
+
+    - Add the frame and the document-level frame controls.
+
+    - Show any hidden modeless dialogs.
+
+    - Attempt toolbar negotiation.
+
+    - Install the menu and a hook that forwards messages from the menu to the
+      inplace frame window.
+
+    - Make sure the object is scrolled into view.
+
+    - Show the inplace frame window and set the focus.
+
+   As you can see, ActivateInPlace does a lot of work and is very RPC-intensive.
+
+8. Step into the first line of OnFrameWindowActivate. Observe that this
+
+       function sends the final notifications via the container to activate
+       the server.
+
+9. Continue the debugging session to finish executing OnFrameWindowActivate.
+   Under normal circumstances, Scribble would come up already activated in place
+   within Contain. However, in this case, you have already executed past the
+   code that set the focus to the activated server. Remember the call to
+   pFrameWnd->SetFocus in the ActivateInPlace function in OLESRV1.CPP? By
+   continuing to step through the code, you have reset the focus back to the
+   debugger. Therefore, you must now switch tasks manually to Contain.
+
+10. Switch tasks to Contain. You will see Scribble's menu and toolbar within
+   Contain, and you will be able to draw in the embedded item's rectangle.
+
+Finishing the Debug Session
+---------------------------
+
+When you finish with Scribble, close the document window. Contain's menu and
+toolbar reappear and the Scribble debugging session ends within the second
+instance of the debugger.
+
+Although Scribble has terminated, the second instance of the debugger is still
+running. To avoid complications, terminate the second instance of the debugger.
+You need to do this because whenever you call into a server to embed a new item
+or activate an existing one, the debugger will start another instance to debug
+this server, even if it is the same server that is already attached to another
+item in the document. Therefore, it is possible (but not desirable) to have
+multiple instances of the debugger debugging multiple instances of the same
+server all connected to the same container.
+
+Once the second instance of the debugger has been terminated, it is safe to embed
+another Scrib Document object in Contain. It is not necessary to terminate the
+container before doing so.
+
+Trying New Things in Future Debug Sessions
+------------------------------------------
+
+Try stepping into (rather than over) some of the function calls. The flow of
+control goes back and forth between the container and the server many times, and
+the debugger will track this flow accurately, bringing you into container code,
+then server code, and so forth. Functions of interest include:
+
+   CanInPlaceActivate
+   OnInPlaceActivate
+   GetWindow
+   OnUIActivate
+   GetWindowContext
+   SetActiveObject
+   SetMenu
+   ShowObject
+
+The server maintains several pointers (interfaces) into the container's code
+through which it calls the container's member functions. These pointers include
+m_lpClientSite, lpInPlaceSite, and pFrameWnd.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbCtrlCreate kbDebug kbGDI kbide kbMFC kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : :2.0,2.1,2.2,4.0,4.1,4.2
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,75 @@
+DOCUMENT:Q254303  20-MAY-2001  [exchange]
+TITLE   :XADM: New CDONTS Fixes Available
+PRODUCT :Microsoft Exchange
+PROD/VER::2.0,2.5,4.0 SP5,4.0 SP6,4.0 SP6a,5.5
+OPER/SYS:
+KEYWORDS:exc55kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - the operating system: Microsoft Windows NT, versions 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Commercial Internet System versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the article numbers for new Collaboration Data Objects for
+Microsoft Windows NT Server (CDONTS) bugs that have been fixed. For information
+about how to obtain the fixes listed in this article, click the article number
+next to the title of the article about that issue to view the article in the
+Microsoft Knowledge Base.
+
+NOTE: Exchange Server fixes for a particular component are cumulative and contain
+all of the previous fixes for that component. Fixes with a particular version
+number contain all of the fixes that have an earlier version number.
+
+MORE INFORMATION
+================
+
+CDONTS fixes include the following files:
+
++------------------------------+
+| File name  | Current version | 
++------------------------------+
+| Cdonts.dll | 5.5.1877.28     | 
++------------------------------+
+
+Fixes Released on February 29, 2000
+-----------------------------------
+
+The following files are modified:
+
+ - All files incremented to version 5.5.1877.28
+
+The following fixes are included:
+
+   Q181697 PRB: Problems Sending Many Messages Using Multiple Threads
+   Q214685 XFOR: CDONTS Not Thread-Safe, Crashes Under Stress
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbfixlist
+Technology        : kbAudDeveloper kbOSWinSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbMCISSearch kbMCIS200 kbMCIS250 kbOSWinNTSearch kbOSWinNT400SP6a kbOSWinNT400SP6 kbOSWinNT400SP5
+Version           : :2.0,2.5,4.0 SP5,4.0 SP6,4.0 SP6a,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

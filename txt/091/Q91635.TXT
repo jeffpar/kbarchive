@@ -1,0 +1,83 @@
+DOCUMENT:Q91635  01-NOV-1999  [win95x]
+TITLE   :ATM Version 2.02 Information
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the problems corrected in Adobe Type Manager (ATM)
+version 2.02.
+
+MORE INFORMATION
+================
+
+According to Adobe Systems, version 2.02 of ATM corrects the following
+problems:
+
+ - When you type, occasionally the cursor moves but does not display the
+   character on the screen. This problem may be referred to as "invisible
+   fonts."
+
+ - Random problems that cause your system to fail occur at address 0003:4E##
+   (where ## are any two characters).
+
+ - Computers using the 386SLC chip fail in 386 enhanced mode.
+
+ - When you print to a Lexmark 4029 in PPDS mode, the computer fails. (To
+   correct this problem, the you must upgrade the printer driver to version
+   3.03. This upgrade is available from Lexmark.)
+
+Version 2.02 of ATM includes the following functionality:
+
+ - ATM now dithers text in the same manner as the Windows GDI.
+
+ - ATM now has better support for third-party fonts, such as the More Fonts
+   package.
+
+ - ATM now correctly defers PCL bitmaps to PCL4 printers, such as
+   Hewlett-Packard LaserJet II.
+
+Version 2.02 of ATM does not correct the following problem:
+
+ - The generic text driver does not print when ATM is active. (In this case,
+   turn off ATM or use the Windows 3.0 generic text driver).
+
+For more information or to obtain the 2.02 ATM upgrade, contact Adobe Systems
+technical support.
+
+ATM is manufactured by Adobe Systems, a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3rdparty 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

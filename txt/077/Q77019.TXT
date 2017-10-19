@@ -1,0 +1,56 @@
+DOCUMENT:Q77019  04-DEC-1999  [homemm]
+TITLE   :Bookshelf 1991: OK Button Dimmed at Install Path in Setup
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1991 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The OK button in the dialog box where you are prompted for an installation path
+in the Setup program for Bookshelf for Windows can be unavailable (dimmed) for
+the following reasons:
+
+1. An invalid character has been included in the path string. The program checks
+   each character to see if it violates path string rules as you type. Such
+   violations include:
+   a. No backslashes to separate drives or directories. (A path of D:VIEWER or
+      C:\WINDOWSVIEWER makes the button unavailable.)
+
+   b. No colon to specify a drive.
+
+   c. A directory name in the path longer than the maximum number of characters
+      allowed in a normal DOS directory name.
+
+2. The path is more than 32 characters. 32 is the limit by design.
+
+Additional query words: Viewer 1.0 Usage wbk 1991
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991
+Version           : :1991 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

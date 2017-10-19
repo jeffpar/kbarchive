@@ -1,0 +1,97 @@
+DOCUMENT:Q103877  22-NOV-1999  [msdos]
+TITLE   :DBLSPACE.LOG May Point to Hidden Directory or File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+When you have duplicate directories on your DoubleSpace-compressed drive and your
+host drive, DoubleSpace displays an error message directing you to check the
+DBLSPACE.LOG file on the host drive when you try to uncompress the drive. If you
+cannot identify the duplicate filename, the file or directory may be hidden.
+
+CAUSE
+=====
+
+Some programs create hidden directories or files on your drive. For example,
+Microsoft Undelete Delete Sentry (UNDELETE /S) and Delete Tracker (UNDELETE /T),
+create a hidden SENTRY directory or a hidden PCTRACKR.DEL file to track deleted
+files. If you have hidden directories or files on both your
+DoubleSpace-compressed drive and its host drive, you cannot uncompress the
+DoubleSpace-compressed drive.
+
+RESOLUTION
+==========
+
+Use the TYPE command or MS-DOS Editor to view the DBLSPACE.LOG file that is
+located on your host drive. Once you have determined the duplicate filenames,
+use the DIR /A command to look for the files. You can use the ATTRIB command to
+remove the Hidden or System attribute from the file, and then you can rename or
+delete the file.
+
+If DBLSPACE.LOG lists duplicate directories, you can use the MOVE command to
+rename one of the duplicates. For example, type the following at the MS- DOS
+command prompt and then press ENTER:
+
+   " move h:\sentry h:\xsentry" (without the quotation marks)
+
+If the Undelete SENTRY directory or PCTRACKR.DEL file is causing the problem, you
+can remove that directory or file from the host drive using the steps outlined
+below.
+
+WARNING: If you delete the SENTRY directory or the PCTRACKR.DEL file, you cannot
+recover files that are being protected by Delete Sentry or Delete Tracker. Be
+sure you do not need to recover any files before you issue the DELTREE command.
+
+1. Start your computer without loading Undelete. To do this, press F8 when the
+   "Starting MS-DOS..." prompt is displayed. Respond Yes (press Y) for each
+   prompt EXCEPT the prompt to process the UNDELETE command.
+
+2. Delete the SENTRY directory or PCTRACKR.DEL file from your host drive. For
+   example, if your DoubleSpace-compressed drive is C and your host drive is H,
+   type "deltree h:\sentry /y" (without the quotation marks) or "deltree
+   h:\pctrackr.del /y" (without the quotation marks) at the MS-DOS command
+   prompt and then press ENTER.
+
+   NOTE: To determine which drive is your host drive, type "dblspace /list"
+   (without the quotation marks) at the MS-DOS command prompt and then press
+   ENTER.
+
+3. Run DoubleSpace and choose Uncompress from the Tools menu.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

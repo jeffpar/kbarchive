@@ -1,0 +1,88 @@
+DOCUMENT:Q274536  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Bind a Data Environment Connection to a UDL File
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.5 SP1,2.6,6.0
+OPER/SYS:
+KEYWORDS:kbMDAC kbVBp600 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Data Access Components versions 2.0, 2.1, 2.1 SP1, 2.1 SP2, 2.5, 2.5 SP1, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Data Links provide a simple interface to test an ActiveX Data Object
+(ADO) connection to a data source by using an OLEDB provider or an Open Database
+Connectivity (ODBC) driver. The connection information specified when setting up
+and testing an ADO connection using a data link is stored in a specified
+Universal Data Link (.udl) file. A .udl file can be specified as the source of
+connection attributes for an ADO Connection object by assigning the .udl file's
+path to the "File Name" parameter in its ConnectionString property.
+
+The Data Environment in Visual Basic 6.0 provides a graphical user interface
+(GUI) to set up ADO Connection and Command objects for use in a Visual Basic
+application. A Data Environment Connection object's properties are typically set
+by navigating through a tabbed Properties dialog box and specifying the desired
+connection attributes like the OLE DB provider to use, the Database to connect
+to, the database user id and password, and so forth. A .udl file can also be
+used to specify the connection attributes for a Data Environment connection
+object. However, the Data Environment Connection object's Properties dialog box
+does not provide an option to select a .udl file as the source of the connection
+attributes.
+
+MORE INFORMATION
+================
+
+To specify a .udl file as the source of connection attributes for a Data
+Environment connection object, you need to manually set the ConnectionSource
+property in its properties list box (accessed by selecting the Data environment
+connection object and pressing the F4 key).
+
+The ConnectionSource property needs to be set to an ADO connection string of the
+format File name=<path to the .udl file>. For instance, assuming that you
+have a .udl file in the C:\ folder with the name of PUBS.UDL that connects to
+the SQL Server PUBS sample database, you would assign the following string to
+the ConnectionSource property of the Data Environment connection object to
+specify PUBS.UDL as the source of connection attributes:
+
+   File Name=C:\PUBS.UDL
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q189680 HOWTO: Use Data Link Files with ADO 2.0
+
+   Q244659 MDAC 2.5 Sample How to Create a Data Link File with Windows 2000
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMDAC kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbMDACSearch kbMDAC200 kbMDAC210 kbMDAC210SP1 kbMDAC210SP2 kbMDAC250SP1 kbMDAC250 kbMDAC260
+Version           : :2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.5 SP1,2.6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

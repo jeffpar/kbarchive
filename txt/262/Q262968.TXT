@@ -1,0 +1,133 @@
+DOCUMENT:Q262968  10-MAR-2001  [exchange]
+TITLE   :XADM: Distribution List Is Not Displayed in Address Book View
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0,5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you generate an Address Book view by grouping any category other than
+customer attributes, you are unable to view the distribution lists (DLs).
+
+MORE INFORMATION
+================
+
+Use one of the following methods to view the DL in an Address Book view.
+
+Method One
+----------
+
+NOTE: In the following example, the Address Book view is grouped by company
+name.
+
+1. Start the Microsoft Exchange Server Administrator program in Raw mode, click
+   the DL, and then click Raw Properties on the File menu.
+
+2. In the "List of attribute type" box, click All.
+
+3. Click the attribute that you are want to group the Address Book view by in
+   the Object attributes box (in this case Company).
+
+4. Type the attribute in the Edit Value box (in this case, the name of the
+   company).
+
+5. Click the Set button.
+
+6. Click the Apply button, and then click OK.
+
+Follow this procedure for every DL object that you want to view in the Address
+Book view.
+
+Method Two
+----------
+
+If you have a large number of DLs, use the Directory Export feature in the
+Administrator program to export the file so that you can edit it, and then
+import the file back to the Administrator program:
+
+1. Start the Administrator program.
+
+2. On the Tools menu, click Directory Export.
+
+3. Click the name of your Exchange Server computer in the MS Exchange Server
+   box.
+
+4. Click All in the Home server box.
+
+5. Enter a location for the Dl.csv file.
+
+6. Enter your site's recipient container.
+
+7. Click to select the Include sub-containers option (if you have subfolders).
+
+8. Click to clear Mailbox, and then click to select Distribution list.
+
+9. Click the Export button.
+
+Next, edit the Dl.csv file by using Microsoft Excel:
+
+1. Start Excel, and then open the Dl.csv file.
+
+2. Click column G, and then click Columns on the Insert menu.
+
+3. In row one of the column that you created, type the attribute that you want
+   to group the Address Book view by (for example, "company" (without the
+   quotation marks)).
+
+4. In every row in the column, add the proper value for the attribute for each
+   DL that you want to include in the Address Book view.
+
+5. Add a row in column B, name it "Mode," and then add a Create value in every
+   row of the Mode column.
+
+6. Add a row, name it "Object-Class", and then add a value of 0 in every row.
+
+7. Save the Dl.csv file.
+
+Next, use the Administrator program to import the edited Dl.csv file:
+
+1. Start the Administrator program.
+
+2. On the Tools menu, click Directory Export.
+
+3. Click the name of your Exchange Server computer in the MS Exchange Server
+   box.
+
+4. Click the Container button, and then enter your site recipient container.
+
+5. Click the import file that you created in the preceding section.
+
+6. Click Import.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

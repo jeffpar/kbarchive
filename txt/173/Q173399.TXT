@@ -1,0 +1,135 @@
+DOCUMENT:Q173399  14-NOV-2000  [word97]
+TITLE   :WD97: Image Not Correctly Shown in Table of HTML Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta winword word97 kbwdinternetkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word, an image may not be correctly displayed in a table in an HTML
+document if any of the following conditions is true.
+
+Case 1: No Image Size Specified
+-------------------------------
+
+The HTML code to insert the image into the table does not specify its size.
+
+Case 2: Image Wider Than Preset Size of Table Column
+----------------------------------------------------
+
+The HTML code specifies the column size of the table, and you insert an image
+that is wider than the preset column size.
+
+Case 3: Document Is in Online Layout View
+-----------------------------------------
+
+In online layout view, Word may display extra space to the right of the image or
+truncate the image near the right column boundary of the table.
+
+CAUSE
+=====
+
+This problem only occurs when you insert images into a cell of a table.
+
+Case 1: No Image Size Specified
+-------------------------------
+
+When you do not specify the size of the image, Word does not know what size to
+make it; therefore, Word only shows a very small portion of the graphic.
+
+Case 2: Image Wider Than Preset Size of Table Column
+----------------------------------------------------
+
+When you specify the width of a column and then insert a picture that is wider
+than the preset size, the picture does not fit and is not displayed properly.
+
+Case 3: Document Is in Online Layout View
+-----------------------------------------
+
+The default view for HTML documents in Word 97 is online layout view. Online
+layout view automatically sizes the column widths of tables to fill the screen
+horizontally. However, online layout view does not resize images. This behavior
+is by design, in order to prevent images from appearing distorted.
+
+WORKAROUND
+==========
+
+To have the graphic displayed correctly, use the appropriate method for your
+situation.
+
+Case 1: No Image Size Specified
+-------------------------------
+
+Save your HTML document, close it, and then reopen the document. When you reopen
+the document, Word automatically resizes the table cells based on their
+content.
+
+NOTE: This method only works if the cell that contains the image has not been
+previously defined with a preset size.
+
+Case 2: Image Wider Than Preset Size of Table Column
+----------------------------------------------------
+
+If you know the width of the image, follow these steps:
+
+1. Click in the table cell containing the image.
+
+2. On the Table menu, click Cell Properties.
+
+3. Change the Width to a size greater than or equal to the image width, and then
+   click OK.
+
+Case 3: Document Is in Online Layout View
+-----------------------------------------
+
+To display the table with the defined column widths, change to page layout view.
+To do this, click Page Layout view on the View menu.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This problem was corrected in Microsoft
+Word 2000.
+
+REFERENCES
+==========
+
+For additional information about the HTML converter, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q157086 WD97: Limitations of Converting from Word Format to HTML
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbdta winword word97 kbwdinternet kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

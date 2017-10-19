@@ -1,0 +1,78 @@
+DOCUMENT:Q121422  20-NOV-1999  [msdos]
+TITLE   :How the UseMRCI1= Switch in DRVSPACE.INI Works in MS-DOS 6.22
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MS-DOS version 6.22 DRVSPACE.INI file supports all of the switches supported
+by the MS-DOS versions 6.0 and 6.2 DBLSPACE.INI file, plus the following
+additional switch:
+
+   UseMRCI1=
+
+MORE INFORMATION
+================
+
+This switch can be used as follows:
+
+ - UseMRCI1=0
+
+   If UseMRCI1=0, DRVSPACE.BIN does not look for DBLSPACE.BIN to load MRCI 1d
+   (DRVSPACE.MR1) for reading DoubleSpace drives.
+
+-or-
+
+ - UseMRCI1=1
+
+   If UseMRCI1=1, DRVSPACE.BIN tries to load the MRCI 1d.
+
+The default value is 1. However, when this setting is 1, the MRCI 1d still does
+not load unless the valid key file (DRVSPACE.MR1) is found.
+
+To change MRCI 1d support:
+
+ - Manually set UseMRCI1= to either 1 or 0 in the DRVSPACE.INI file.
+
+-or-
+
+ - From the Tools menu in the DriveSpace interface, choose Options, and select
+   the Read DoubleSpace Drives check box.
+
+-or-
+
+ - Delete the DRVSPACE.MR1 key file on the boot drive (or copy to the boot
+   drive).
+
+Additional query words: 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

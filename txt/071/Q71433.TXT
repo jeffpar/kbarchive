@@ -1,0 +1,71 @@
+DOCUMENT:Q71433  05-NOV-1999  [win95x]
+TITLE   :Grid Systems OEM Windows Installs WIN.BAT
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Grid Systems ships an original equipment manufacturer (OEM) version of Windows
+version 3.0 with its laptop and portable computers. This version of Windows
+installs a file called WIN.BAT into the MS-DOS subdirectory.
+
+WIN.BAT determines how much power is available to the system and, according to
+the amount available, starts Windows in real, standard, or enhanced mode. This
+makes it appear that Windows is randomly deciding which mode to go into.
+
+MORE INFORMATION
+================
+
+WIN.BAT prevents the system from going into a mode of Windows that it does not
+have sufficient power to support. For example, running Windows in enhanced mode
+when the system is low on power causes the system to stop responding (hang), and
+possibly lose data.
+
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these product's performance
+or reliability.
+
+For further information, or for support of this version of Windows, please
+contact:
+
+   Grid Systems Inc.
+   47211 Lakeview Boulevard
+   PO Box 5003
+   Fremont, CA 94538
+
+KBCategory: kbhw kb3rdparty
+KBSubcategory:
+
+Additional query words: 3rdparty WIN30 3.00 3.00a 3.0a batch
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

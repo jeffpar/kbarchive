@@ -1,0 +1,83 @@
+DOCUMENT:Q195057  10-AUG-2000  [homegame]
+TITLE   :PA: Display Settings Incorrect or Cannot Close Dialog Box
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pinball Arcade, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Pinball Arcade on a Microsoft Windows NT 4.0-based computer, you
+may experience any of the following symptoms:
+
+ - When you quit Pinball Arcade, your default screen resolution and color
+   palette may not be restored.
+
+ - When you start Pinball Arcade, and then click Options on the startup screen
+   before you start a game, you may be unable to close the Options dialog box.
+
+ - When you quit a game in Pinball Arcade, return to the startup screen, and
+   then click High Scores, you may be unable to close the High Scores dialog
+   box.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - A Matrox Millennium display adapter is installed in your computer.
+
+ - You are using an outdated video driver for the display adapter.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest Windows NT 4.0 video
+driver for the Matrox Millennium display adapter from the following Matrox Web
+site:
+
+   http://www.matrox.com
+
+MORE INFORMATION
+================
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame pin ball colors card
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kbimu msgame kbfaq
+Technology        : kbGamesSearch kbPinballArc kbArcadeSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

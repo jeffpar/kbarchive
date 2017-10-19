@@ -1,0 +1,94 @@
+DOCUMENT:Q164000  04-AUG-2001  [visualc]
+TITLE   :FIX: C1001 Compiler File MAIN.C Line 413
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2
+OPER/SYS:
+KEYWORDS:kbcode kbCompiler kbCPPonly kbLangCPP kbVC kbVC500fix kbHWx86
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Calling typeid with a temporary object causes the following error:
+
+   fatal error C1001: INTERNAL COMPILER ERROR (compiler file
+   'd:\backend\src\P2\main.c', line 413)
+
+   Please choose the Technical Support command on the Visual C++ Help menu, or
+   open the Technical Support help file for more information
+
+   Error executing cl.exe.
+
+RESOLUTION
+==========
+
+Instead of calling typeid with a temporary object, create a stack object and
+then call typeid, referencing the stack object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      /* Compile options needed: none
+      */ 
+
+      #include <typeinfo>
+
+      struct X {
+         X() {};
+         ~X() {};
+      };
+
+      // This main function will cause the error.
+      void main()
+      {
+          const type_info& t = typeid(X());
+      }
+
+      // For the workaround, replace main above with the following:
+      void main()
+      {
+          X y;
+          const type_info& t = typeid(y);
+      }
+
+Additional query words: kbVC420bug kbDSupport typeid RTTI
+
+======================================================================
+Keywords          : kbcode kbCompiler kbCPPonly kbLangCPP kbVC kbVC500fix kbHWx86 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

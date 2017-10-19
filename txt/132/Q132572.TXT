@@ -1,0 +1,58 @@
+DOCUMENT:Q132572  17-DEC-2000  [win95x]
+TITLE   :Media Player Error Message Seeking to End of Audio CD
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you advance to the end of an audio CD in Media Player, you may receive the
+following error message:
+
+   MMSYSTEM262 There is a problem with your media device. Make sure it is
+   working correctly or contact the device manufacturer.
+
+CAUSE
+=====
+
+The CD player is reporting an incorrect length for the audio CD. When Media
+Player tries to seek to the end of the CD, it is not using the actual end
+position, causing an error message.
+
+RESOLUTION
+==========
+
+You can safely ignore this error message.
+
+NOTE: You may receive this error message if you put a different CD in the CD-ROM
+drive. You must reinsert the original CD in the drive to correct the error.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

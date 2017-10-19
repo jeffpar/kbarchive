@@ -1,0 +1,139 @@
+DOCUMENT:Q62240  09-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Suggested Possible Uses for the HyperCard API
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail HyperCard Interface allows the power of Microsoft Mail to be
+used to meet your custom needs.
+
+Since the HyperCard Application Programming Interface (HAPI) makes all of the
+functions of Mail fully available for programming and use, there are many
+possibilities for streamlining and customizing the use of Mail. Below is a list
+of some possible utilities and stacks.
+
+MORE INFORMATION
+================
+
+Utility or Stack Description
+----------------------------
+
+Archive messages        Using the DisplayMessageCenter, a user could
+                        pick which messages should be archived. These
+                        could be stored in the stack, or saved to a
+                        file for importation into a database.
+
+Auto Replies            Similar to the Out of Office stack shipped with
+                        the functions. Waits for incoming messages,
+                        and auto-replies to the Sender with a preset
+                        message, such as "I am gone to xxx, will be
+                        back at y:yy."
+
+Anonymous Suggestion
+Program                 Logs into a "Suggestion" account and reads
+                        each message. Puts the body of each message
+                        into the body of a new message and sends the
+                        new message to the suggestion reviewer. The
+                        original sender is then anonymous to the
+                        reviewer.
+
+Garbage Collector       Deletes all read files that are older in days
+                        than the number in an "Aged" field.
+
+Space Saver             Downloads and deletes all read messages with
+                        enclosures.
+
+Order Automation        Using a custom form, the order taker can fill
+                        in the blanks while on the telephone. When the
+                        form is completed, the message is automatically
+                        sent to the "Order Taker." This stack creates
+                        the data document for Word with the address,
+                        prints a packing list, sends the accounts
+                        payable department a notice of the order, and
+                        the warehouse an itemized list of what items to
+                        pull from stock. At the end of the day, it
+                        totals and prints a report that summarizes the
+                        number of orders and gives an inventory update,
+                        bookings, the number of labels to print.
+
+Active Bulletin Board
+System News Center.     A user can send in a subscription
+                        to various topics. When an article is sent,
+                        the News Center forwards the message to the
+                        people interested in that topic.
+
+Mail Forwarding         When moving a user is moved from one account
+                        on one server to a different server, the user
+                        could forward all their mail with the touch
+                        of a button.
+
+Mail Retrieval          For large networks with multiple servers,
+                        a stack could be made in Mail 3.00 that
+                        logs into each server as network manager
+                        and forwards all mail to one account.
+
+Server Report           The stack reads the server usage report saved
+                        in Word format from the Network Administrator
+                        and sends a message to all those users that
+                        exceed limits in too much space used,
+                        old unread messages, or large enclosures,
+                        asking them to save and delete the messages.
+
+Tension Relief          Play-By-Mail games. You make a move and the
+                        stack sends the move to your opponent. When
+                        the opponent has some spare time, she or he
+                        can run the stack, which downloads the move,
+                        and waits for the opponent to respond. Chess,
+                        checkers, and tic-tac-toe are simple
+                        possibilities. For use at low-traffic times
+                        only.
+
+Training tools          A stack could monitor a student's progress
+                        through it and mail the instructor when the
+                        student is stuck on the same part for a long
+                        time. In addition, the stack could forward
+                        completed tests.
+
+Teacher's tools         Upon receipt of test results, it can grade
+                        multiple choice tests, compute the class
+                        average, and send the results (text and
+                        graphs) to the class participants.
+
+Because the HyperCard Application Programming Interface supports virtually all
+calls to the Mail server, the possible uses of the SDK for creating utilities
+and applications that employ Mail as a communications backbone are almost
+unlimited. The above suggestions are only a sample of the possibilities.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

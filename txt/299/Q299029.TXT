@@ -1,0 +1,66 @@
+DOCUMENT:Q299029  09-JAN-2002  [exchange]
+TITLE   :XCLN: "404 File Not Found" Error Trying to Gain Access to Logon
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbExchange550
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Client, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a logon page for Outlook Web Access (OWA), you
+may receive the following error message:
+
+   404 File Not Found
+
+This happens when you use the server name or the local host name in the URL.
+
+CAUSE
+=====
+
+This behavior can occur if the computer does not resolve the server name when a
+user tries to gain access to it by using a URL.
+
+RESOLUTION
+==========
+
+To resolve this behavior, acquire an IP address from your Internet service
+provider (ISP), assign the new IP address to the network interface card (NIC),
+and then make the applicable DNS entry.
+
+WORKAROUND
+==========
+
+To work around this behavior, instruct people to connect to the port on which
+the default Web site is set.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbExchange550 
+Technology        : kbExchangeSearch kbExchange550 kbExchangeClientSearch
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

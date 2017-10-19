@@ -1,0 +1,59 @@
+DOCUMENT:Q89720  17-DEC-2000  [msdos]
+TITLE   :Delay when Displaying Command Prompt
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When switching from one drive to another from the command prompt, there may be a
+slight delay before the command prompt is displayed. This behavior may be due to
+a PROMPT command in the AUTOEXEC.BAT file.
+
+CAUSE
+=====
+
+This delay may occur when using the PROMPT command as follows:
+
+   prompt $p$g
+
+The $p parameter specifies the current drive and path to be included in the
+system prompt. When you use this parameter, the system has to read the disk
+every time it switches directories to determine the active directory, which will
+in turn be displayed as the command prompt. The $g parameter displays the
+greater than sign (>).
+
+This delay described above is not a problem with the PROMPT command; the delay
+occurs while MS-DOS is checking the drive for the current directory.
+
+Additional query words: 6.22 5.00 6.00 5.00a slow dos prompt root
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

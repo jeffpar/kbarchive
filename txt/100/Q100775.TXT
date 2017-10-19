@@ -1,0 +1,122 @@
+DOCUMENT:Q100775  10-MAY-2001  [visualc]
+TITLE   :INFO: Stack Checking for Windows NT-based Applications
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbDSupport
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Stack checking in the Windows NT application differs from stack checking in the
+MS-DOS application.
+
+MORE INFORMATION
+================
+
+In an MS-DOS application, stack overflow is detected only by software. By
+default, the compiler inserts a call to the __chkstk() function in the prologue
+code for each function. The __chkstk() function compares the amount of stack
+space a function requires with the amount of stack space available. The function
+issues an overflow error if the current stack pointer and requested stack
+allocation exceeds the maximum stack size specified in the EXE header.
+
+In the Microsoft Windows NT operating system, stack overflow is detected by
+hardware and software working together, using the page protection mechanisms.
+Each new Windows NT process has a maximum reserved stack size and an initial
+committed stack allocation. Committed memory is physically allocated to the
+process and is backed by the page file; it is a relatively "expensive" resource.
+Reserved memory is address space that is not mapped to real memory; it is a
+relatively "cheap" resource.
+
+As the stack grows, it moves from the committed portion of stack memory into the
+reserved or uncommitted memory. When this happens, a page fault occurs and the
+operating system commits another page of memory to the stack. If a page fault
+occurs when the stack has already grown to its maximum specified size, the
+system reports a stack overflow exception.
+
+This automatic growth method uses a guard page, a reserved, uncommitted, memory
+page that is contiguous with the committed portion of memory. When the
+application touches the guard page, the operating system commits that page and
+the next uncommitted page becomes the new guard page. Automatic stack growth
+works only for the guard page and stack memory must grow in 4K, or one page,
+increments. If the application touches another reserved but uncommitted page of
+stack memory before it touches the guard page, a normal page fault exception
+occurs and unpredictable behavior can result.
+
+If a function included the following statements in its prologue code, this
+problem could occur:
+
+      PUSH   EBP
+      MOV    EBP,ESP
+      SUB    ESP,10000
+      PUSH   ESI
+
+In this code, the PUSH EBP and PUSH ESI do not occur in the same or in adjoining
+4K stack pages. If the stack must grow to accommodate the 10,000 byte local
+allocation, this program faults.
+
+To prevent the fault, the compiler calls the __chkstk() function each time the
+local allocation exceeds 4K. The Windows NT __chkstk() function does not
+explicitly check for stack overflow as the MS-DOS version does. It simply
+touches memory addresses every 4K from the current stack pointer location to the
+requested allocation. This triggers the guard pages in the proper sequence and
+commits additional memory to the stack as required.
+
+Therefore, when the compiler command line includes the /Ge option switch and the
+prologue code always calls the __chkstk() function, the application is not
+running as efficiently as it might because the operating system supports an
+automatic mechanism to perform stack overflow detection.
+
+The /Gs compiler option switch does not disable all __chkstk() calls. Instead, it
+disables __chkstk() calls for those functions that require less than 4K of local
+storage. The /Gs option is the default behavior of the compiler.
+
+The /Gs option accepts an optional parameter, the threshold value. If a
+function's local stack allocation exceeds the specified threshold, the compiler
+inserts a __chkstk() call into the function prologue. For a user-mode
+application to run correctly in Windows NT, the default threshold 4096 is
+required. To suppress all __chkstk() calls, specify an artificially high
+threshold value such as /Gs999999. The /Gs0 option has the same function as the
+/Ge option and instructs the compiler to call __chkstk() in every function. It
+might be advantageous to change the default value if the code executes in an
+environment where the stack is fully committed or if the stack growth mechanism
+is otherwise not available.
+
+For more information, refer to the /Gs compilation option and the check_stack
+preprocessor pragma in the Visual C++ Books Online.
+
+Additional query words: 8.00 9.00
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : winnt:1.0,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

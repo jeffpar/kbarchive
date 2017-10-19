@@ -1,0 +1,76 @@
+DOCUMENT:Q294330  05-AUG-2002  [exchange]
+TITLE   :XADM: "Exchange Computer Is Unavailable" Msg in Server Monitor
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Server Monitor component of the Exchange Server 5.5 Administrator
+program to monitor the status of an Exchange Server computer, the Comment column
+may display the server status as follows:
+
+   Microsoft Exchange Computer is Unavailable.
+
+If you double-click the Server Monitor object and then click the Actions tab, all
+monitored Exchange Server services display a status of Running.
+
+CAUSE
+=====
+
+This behavior may occur if the Microsoft Exchange System Attendant service is
+running under the security context of the System account.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Services.
+
+2. Locate the Microsoft Exchange System Attendant service, and then click
+   Startup.
+
+3. Click This Account, and then specify the correct Exchange Server service
+   account and password.
+
+4. Stop and then restart the System Attendant service.
+
+WARNING: If you stop the System Attendant service, this also stops all Exchange
+Server services that are running on the server. You may want to do this during a
+scheduled maintenance period or after business hours to avoid interruption of
+messaging service.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

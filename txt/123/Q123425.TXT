@@ -1,0 +1,60 @@
+DOCUMENT:Q123425  24-JUL-2001  [sms]
+TITLE   :Docerr: SMSVIEW Program Item Not Available
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbdocerr smsdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the "Running SMSVIEW Generator" section of the Microsoft Systems Management
+Server Help file (SMS.HLP), the first paragraph states:
+
+   The SMSVIEW program is automatically installed on primary site servers. You
+   can start SMSVIEW using the SMSVIEW program item from the Systems Management
+   Server program group. The SMSVIEW program runs on the Windows NT operating
+   system.
+
+The second sentence is incorrect because the SMSVIEW program item (icon) is not
+created or available in the Systems Management Server program group by default.
+If you want to use the SMSVIEW program, the location of the program is as
+follows:
+
+   SMS\SITE.SRV\<platform>.BIN
+
+where <platform> can be one of the following:
+
+   x86   (for Intel-based computers)
+   MIPS  (for MIPS-based computers)
+   Alpha (for Alpha-based computers)
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbnetwork kbdocerr smsdocerr 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

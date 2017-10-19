@@ -1,0 +1,67 @@
+DOCUMENT:Q148341  08-NOV-2001  [homemm]
+TITLE   :Do-it-Yourself Guide: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader's Digest Complete Do-It-Yourself Guide for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains a copy of the minimum system requirements for
+Microsoft Reader's Digest Complete Do-It-Yourself Guide, as listed on the
+product box.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Complete Do-It-Yourself Guide are:
+
+ - A Multimedia PC or compatible with a 486/33 or higher microprocessor
+
+ - Microsoft Windows 95 operating system, or Windows NT Workstation operating
+   system 3.51 or later (will not run on Windows 3.1 or earlier)
+
+ - Double-speed CD-ROM drive
+
+ - 8 MB of memory (RAM) for Windows 95 or 16 MB for Windows NT Workstation
+
+ - 10 MB available hard disk space
+
+ - Super VGA display with 256 colors or better
+
+ - Windows-compatible sound board required for audio
+
+ - Speakers or headphones required for audio
+
+ - Microsoft Mouse or compatible pointing device
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm requires
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbDoItYourself
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

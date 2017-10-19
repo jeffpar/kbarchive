@@ -1,0 +1,62 @@
+DOCUMENT:Q32497  17-DEC-2000  [msdos]
+TITLE   :How to Delete the Contents of a Directory in One Step
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:2.x,3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 2.11, 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.0a, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you try to delete the entire contents of a directory, MS-DOS prompts you to
+verify the operation. While this helps protect you against inadvertently erasing
+a large number of files, it also forces you to go through two steps to perform a
+single operation. The experienced MS-DOS user can place the following command in
+a batch file in order to make available the option of deleting the contents of
+directory in one step:
+
+   echo y | del %1\*.*
+
+If the above line is placed in a batch file called, for example, DELALL.BAT, you
+can then tell MS-DOS to delete all the files in the current working directory by
+invoking the batch file as follows:
+
+   " delall . " (without the quotation marks)
+
+NOTE: This example may want to include more error checking, since invoking this
+batch file and forgetting to provide the %1 argument would delete all of the
+files in the root directory.
+
+If you are using MS-DOS 6 or later, you can simply use the DELTREE program. For
+more information on DELTREE, type "help deltree" (without the quotation marks)
+at the MS-DOS 6.x command prompt and then press ENTER.
+
+Additional query words: 6.22 2.x 3.x 4.00 5.00 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS500a kbMSDOS211
+Version           : MS-DOS:2.x,3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

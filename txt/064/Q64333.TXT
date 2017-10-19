@@ -1,0 +1,43 @@
+DOCUMENT:Q64333  30-JUL-2001  [homegame]
+TITLE   :Marker Beacon Does Not Emit Tones Related to Marker
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+It has been reported that the middle marker beacon in ILS landing approach in
+Flight Simulator versions 4.00, 4.00a and 4.00b does not emit tones related to
+the marker in the form of dots (short tones) and dashes (long tones).
+
+Normally, the beacons transmit radio beams, straight up, so that the outer,
+middle, and inner marker-light receivers on the plane can pick them up when the
+plane is directly over the beacons. This gives information about the distance to
+runway.
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,87 @@
+DOCUMENT:Q168433  07-MAY-2001  [visualc]
+TITLE   :FIX: Error Using _ttoi64 with Non-Unicode Applications
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbVC500bug kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+_ttoi64 is incorrectly defined in TCHAR.H in Visual C/C++ 5.0.
+
+RESOLUTION
+==========
+
+Undefine _ttoi64 and redefine it correctly. For the complete solution, see the
+MORE INFORMATION section of this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+MORE INFORMATION
+================
+
+_ttoi64 is a define that substitutes _atoi64 (if _UNICODE is not defined) or
+_wtoi64 if _UNICODE is defined. On line 481 of TCHAR.H is the following:
+
+      #define _ttoi64     atoi64
+
+this should be:
+
+      #define _ttoi64     _atoi64
+
+You may add the following code to your source file to correct the problem:
+
+      // _ttoi64 is incorrectly defined in TCHAR.H, so you need to undefine
+      // it and redefine it correctly to avoid a compile error when
+      // building a non-Unicode version of your application.
+
+         #ifdef _UNICODE
+           #ifdef  _ttoi64
+             #undef  _ttoi64
+             #define _ttoi64 _wtoi64
+           #endif
+         #else
+           #ifdef  _ttoi64
+             #undef  _ttoi64
+             #define _ttoi64 _atoi64
+           #endif
+         #endif
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC500bug kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

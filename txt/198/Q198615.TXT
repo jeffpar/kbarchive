@@ -1,0 +1,64 @@
+DOCUMENT:Q198615  21-MAY-1999  [homegame]
+TITLE   :MCM: Program Quits and You Are Returned to the Windows Desktop
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Motocross Madness, the program may quit
+without warning and you may be returned to the Windows desktop.
+
+CAUSE
+=====
+
+This behavior can occur if the Microsoft SideWinder Game Controller software
+CD-ROM is in your CD-ROM drive.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the SideWinder Game Controller software CD-ROM
+from the CD-ROM drive, insert the Motocross Madness CD-ROM into the CD-ROM
+drive, and then start Motocross Madness.
+
+MORE INFORMATION
+================
+
+This issue does not occur with the SideWinder Game Controller software CD-ROM
+that is included in the product box with the Microsoft SideWinder FreeStyle Pro
+game pad, as this disc also contains the Motocross Madness program files.
+
+
+Additional query words: 1.00 msgame mcm motorcross motorcycle stop close
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

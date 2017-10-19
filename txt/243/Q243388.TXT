@@ -1,0 +1,90 @@
+DOCUMENT:Q243388  08-DEC-2000  [sna]
+TITLE   :Shared Folders Connections Fail Using Same User ID
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 (all SP), 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Shared Folders connections fail when two or more AS/400 definitions use the same
+User ID, but different passwords. When attempting to connect to a folder
+definition on one of the AS/400s, customers may receive the following error
+message:
+
+   X:\ is not accessible.
+   While accessing the hard disk, a disk operation failed even after retries.
+
+CAUSE
+=====
+
+The Shared Folders gateway service stores only one instance of the User ID and
+password. Because of this, one password is used for all AS/400 definitions with
+the same User ID. This results in security violations, which can be seen in a
+Shared Folders Gateway API trace.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+WORKAROUND
+==========
+
+This problem only affects two or more AS/400 definitions using the same User ID,
+but different passwords. Customers can avoid this problem by using a unique User
+ID for each AS/400 definition, or by using the same User ID and same password
+for each AS/400 definition.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+4.0.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+The Shared Folders gateway service should be stopped before applying this fix,
+and then restarted after the fix has been successfully applied.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,65 @@
+DOCUMENT:Q166095  16-DEC-2000  [win16sdk]
+TITLE   :BUG: Win95 Arc() Does Not Draw an Ellipse on HP LJ 4
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1,95
+OPER/SYS:
+KEYWORDS:kbgraphic kbOSWin95 kbSDKWin16kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The documentation for and expected behavior of the Arc() API is to draw an
+entire ellipse if the start and end points are the same. However, when you do
+this in Windows 95 with the Hewlett Packard LaserJet 4 printer driver, the
+result is no output at all.
+
+RESOLUTION
+==========
+
+To workaround this, you can:
+
+Specify "Use Raster Graphics" in the "Graphics" page of the printer's properties
+dialog box.
+
+-or-
+
+Have the application detect the ellipse case and call Ellipse() instead of Arc().
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words: Arc Ellipse circle
+
+======================================================================
+Keywords          : kbgraphic kbOSWin95 kbSDKWin16 kbbuglist
+Technology        : kbAudDeveloper kbWin3xSearch kbWin95search kbSDKSearch kbZNotKeyword3 kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1,95
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

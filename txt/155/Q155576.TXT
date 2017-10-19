@@ -1,0 +1,66 @@
+DOCUMENT:Q155576  08-AUG-2001  [winnt]
+TITLE   :WinCim 2.01 Sounds Do Not Play After Rebooting
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install WinCIM 2.01, sound events are associated and work properly
+until the system is rebooted. The sounds no longer play after rebooting,
+although the events are registered in the Sounds tool and can be played
+manually.
+
+CAUSE
+=====
+
+WinCIM 2.01 expects to store its sound event information in the Win.ini file,
+which is correct for Windows 3.1x. Windows NT migrates this information to the
+registry at each reboot, making this information unavailable to WinCIM.
+
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: prodnt winnt
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

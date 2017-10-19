@@ -1,0 +1,56 @@
+DOCUMENT:Q158023  08-NOV-2001  [homegame]
+TITLE   :GEX: Gex.lnk Shortcut Error Message
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kberrmsg kbreadme kbfaq kbfasttip
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft GEX, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message:
+
+   The drive or network connection that the shortcut 'Gex.lnk' refers to is
+   unavailable. Make sure that the disk is properly inserted or the network
+   resource is available, and then try again.
+
+RESOLUTION
+==========
+
+If you receive this message, insert the GEX compact disc in your CD-ROM drive
+and then try running GEX again.
+
+Additional query words: gex 1.00 cd link shortcut short-cut short cut
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbGEX
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

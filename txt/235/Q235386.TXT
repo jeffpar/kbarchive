@@ -1,0 +1,84 @@
+DOCUMENT:Q235386  16-APR-2002  [vbwin]
+TITLE   :HOWTO: Trigger a Beep in VBCE Applications
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+ - Microsoft eMbedded Visual C++ version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Beep statement is not available in eVB/VBCE applications. However, the Beep
+functionality can be implemented using the MessageBeep API call.
+
+MORE INFORMATION
+================
+
+VBCE 6.0 includes the capability to declare and use certain system application
+programming interfaces (APIs). The file WINCEAPI.TXT is provided with the VBCE
+Toolkit and includes sample declare statements, constants, and other useful
+information.
+
+The following code demonstrates this sample:
+
+1. Create a new Windows CE project in either Visual Basic or eMbedded Visual
+   Basic. Form1 is created by default.
+
+2. Place a Command Button on Form1.
+
+3. Paste the following code into the code module of Form1:
+
+   Option Explicit
+      Declare Function MessageBeep Lib "Coredll" (ByVal wType As Long) As Long
+      Const MB_ICONHAND = 16
+      Const MB_ICONQUESTION = 32
+      Const MB_ICONEXCLAMATION = 48
+      Const MB_ICONASTERISK = 64
+      Const MB_ICONINFORMATION = 64   'MB_ICONASTERISK
+      Const MB_ICONSTOP = 16 	        'MB_ICONHAND
+
+      Private Sub Command1_Click()
+         Dim ret
+         ret = MessageBeep(MB_ICONEXCLAMATION)
+         If ret = 0 Then Msgbox "Error occurred"
+      End Sub
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q184650 INFO: What Language Features does VB have that VBCE and eVB Do Not
+
+Additional query words: wince vbce vbce6 eVB
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbVCeMb
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

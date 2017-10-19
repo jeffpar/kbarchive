@@ -1,0 +1,198 @@
+DOCUMENT:Q242294  11-JUN-2002  [winnt]
+TITLE   :Security Descriptor Allows Privilege Elevation on Remote PCs
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbSecurity KbSECTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A malicious user may be able to cause a different program to run in place of
+Rasman. Significantly, this program would run in the System context and allow
+the program to take almost any action on the computer.
+
+CAUSE
+=====
+
+This behavior occurs because the security descriptor that secures the Rasman.exe
+file contains inappropriate Access Control Entries (ACEs) in its Discretionary
+Access Control List (DACL). The incorrect ACE could allow an unprivileged user
+to change Rasman's operating parameters (including the location of the Rasman
+executable file) using Service Control Manager.
+
+RESOLUTION
+==========
+
+Microsoft has released a tool to reset the permissions to the appropriate
+value.
+
+Windows NT 4.0
+--------------
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+determined to be at risk of attack. Please evaluate your system's physical
+accessibility, network, and Internet connectivity, and other factors to
+determine the degree of risk to your system. If your system is sufficiently at
+risk, Microsoft recommends that you apply this fix. Otherwise, wait for the next
+Windows NT 4.0 service pack service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+This hotfix has been posted to the following Internet location as Fixrasi.exe
+(x86) and Fixrasa.exe (Alpha):
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/Hotfixes-PostSP6/Security/Rasman-fix/
+
+NOTE: If you run this file on a computer that cannot connect to the IPC$ share on
+the remote computer or if the credentials of the logged on user do not have
+administrative privileges on the remote computer, you may receive an error
+message stating that RasMan was not fixed.
+
+
+
+Terminal Server Edition
+-----------------------
+
+To resolve this problem, either obtain the hotfix referenced in this section or
+the Windows NT Server 4.0, Terminal Server Edition, Security Rollup Package
+(SRP). For additional information about the SRP, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+   Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+   Package
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems that are determined to be at risk of attack. Please evaluate your
+computer's physical accessibility, network and Internet connectivity, and other
+factors to determine the degree of risk to your computer. Please see the
+associated Microsoft Security Bulletin
+(http://www.microsoft.com/technet/security/bulletin/MS99-041.asp) to help make
+this determination. This fix may receive additional testing at a later time, to
+further ensure product quality. If your computer is sufficiently at risk,
+Microsoft recommends that you apply this fix now.
+
+To resolve this problem immediately, download the fix as instructed below or
+contact Microsoft Product Support Services to obtain the fix. For a complete
+list of Microsoft Product Support Services phone numbers and information on
+support costs, please go to the following address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+This hotfix has been posted to the following Internet location as Fixrasi.exe
+(x86) and Fixrasa.exe (Alpha):
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/Hotfixes-PostSP6/Security/Rasman-fix/
+
+NOTE: The files in the above folder run on Windows NT Server 4.0, Terminal Server
+Edition, too.
+
+NOTE: If you run this file on a computer that cannot connect to the IPC$ share on
+the remote computer or if the credentials of the logged on user do not have
+administrative privileges on the remote computer, you may receive an error
+message stating that RasMan was not fixed.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+You can use the Rasman tool to manage dial-up connections. The vulnerability has
+nothing to do with Rasman itself; the vulnerability occurs because there is an
+opportunity for a malicious user to cause other code to run in place of Rasman.
+
+You can use Service Control Manager (SCM) to create or modify system services.
+Security descriptors control access to operating system objects. Services
+(including Rasman) are among the objects to which security descriptors apply. A
+security descriptor includes a DACL. A DACL is a list of ACEs. Each ACE
+specifies the particular rights that one user or group has with respect to the
+object. The DACL therefore comprises the entire list of rights that all users
+and groups have with respect to the object.
+
+Like other services, Rasman's DACL should only allow administrators to manage
+Rasman. However, there is an erroneous ACE in the DACL for Rasman, which allows
+any user to manage Rasman using Service Control Manager. A malicious user could
+exploit this situation.
+
+A malicious user could request a change in the location and name of the program
+for the service. By doing so, a malicious user could substitute any arbitrary
+program for the legitimate service, which could be run in a System context. This
+vulnerability can be exploited remotely and this issue does not occur
+accidentally.
+
+The privileges that a user could gain depend on the specific computer that is
+compromised. If a workstation is compromised, the malicious user gains complete
+control of the workstation, but cannot directly use this vulnerability to extend
+control to other computers. However, if a critical computer (for example, a
+domain controller) is attacked, the malicious user could gain control of the
+entire network.
+
+There is no vulnerability in Remote Access Service (RAS) functionality. This
+problem results because of inappropriate permissions on a registry key; it is
+coincidental that the registry key is associated with the RAS service. RAS
+itself, including its security features, is not affected by this vulnerability.
+
+For related information on this problem, please visit the following Microsoft Web
+site:
+
+   http://www.microsoft.com/technet/security/bulletin/MS99-041.asp
+
+For additional security-related information about Microsoft products, please
+visit the following Microsoft Web site:
+
+   http://www.microsoft.com/security/
+
+Additional query words: security_patch
+
+======================================================================
+Keywords          : kbSecurity KbSECTools 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

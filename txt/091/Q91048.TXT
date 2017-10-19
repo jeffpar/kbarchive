@@ -1,0 +1,56 @@
+DOCUMENT:Q91048  01-NOV-1999  [win95x]
+TITLE   :Transmission Retry Field Displays 100 Instead of 1000
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set the Transmission Retry field in the Connect dialog box to 996, 997,
+998, or 999 and choose the OK button, the setting is rounded to 1000. Because
+the Transmission Retry field is limited to three digits, the number 100 is
+displayed. (To set the Transmission Retry field, choose the Printer icon from
+the Control Panel window, select your printer, and choose the Connect button.)
+
+To view the last zero in the number 1000, you must highlight the entire
+Transmission Retry field with the mouse. The actual value (that is, 1000) is set
+for the printer driver in the [windows] section of the WIN.INI file.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

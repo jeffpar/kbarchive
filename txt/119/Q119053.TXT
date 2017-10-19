@@ -1,0 +1,66 @@
+DOCUMENT:Q119053  12-DEC-1999  [pcmail]
+TITLE   :MCI: Invalid Address Causes Delivery Failure to All Users
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::2.1b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MCI, version 2.1b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a message is sent from Microsoft Mail to one or more invalid MCI Mail users
+addressed in the TO: line, the message does not reach any of its intended
+recipients, even ones with valid addresses. Instead, it bounces back from MCI
+with this error message:
+
+   Mail Failure...At least one problem with the envelope.
+
+CAUSE
+=====
+
+The cause of this problem is not yet known. The expected results in such an
+instance are that valid MCI Mail recipients receive the mail message, and the
+sender is notified of the invalid addresses.
+
+WORKAROUND
+==========
+
+No workaround is available at this time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Mail Gateway to
+MCI, version 2.1b. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 2.10b
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMCI210b
+Version           : :2.1b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

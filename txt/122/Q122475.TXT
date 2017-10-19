@@ -1,0 +1,48 @@
+DOCUMENT:Q122475  08-NOV-2001  [homemm]
+TITLE   :Asimov: Manual Installation Instructions
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asimov for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+If you encounter problems using Setup to install Microsoft Asimov, you can
+use the PSS.BAT file on the CD-ROM to perform a manual installation of the
+program. Follow the directions documented in the MSETUP.TXT file located on
+the <X>:\ASIMOV\MSSTP\MANUAL directory of your Asimov CD-ROM disk, where
+<X> is your CD-ROM drive.
+
+CAUTION: Do not use these steps if your are using Microsoft Windows 95
+or Microsoft Windows NT. The manual installation uses a batch file that
+copies Windows 3.x system files onto your hard drive. Allowing the system
+files to be overwritten in Windows 95 or Windows NT may cause improper
+system performance.
+
+Additional query words: 1 1.0 1.00 multi media multimedia multi-media set up set-up setup install installs err msg error problem prog ver 1994 94
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbAsimovSearch
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

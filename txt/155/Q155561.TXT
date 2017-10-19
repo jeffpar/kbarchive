@@ -1,0 +1,79 @@
+DOCUMENT:Q155561  08-AUG-2001  [winnt]
+TITLE   :WebSurfer Replaces Url.dll File
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install WebSurfer, you receive the following error message:
+
+   The procedure entry point ReinitializeCriticalSection could not be located in
+   the dynamic link library KERNEL32.dll.
+
+
+CAUSE
+=====
+
+The Windows NT 4.0 or Microsoft Internet Explorer 3.0 version of the Url.dll
+file has been replaced with a Windows 95 version.
+
+When you install WebSurfer, a dialog box appears warning you that the version of
+the Url.dll file that WebSurfer is attempting to replace is a newer version. If
+you choose to ignore that warning, the Windows NT 4.0 Url.dll file is replaced
+with a Windows 95 version.
+
+RESOLUTION
+==========
+
+If you are not using Internet Explorer 3.0, replace the Url.dll file with the
+version on the Windows NT 4.0 CD-ROM.
+
+If you are using Internet Explorer 3.0, reinstall Internet Explorer to replace
+the Url.dll file.
+
+MORE INFORMATION
+================
+
+WebSurfer has been tested and appears to work as expected with both the Windows
+NT 4.0 and the Internet Explorer 3.0 versions of the Url.dll file. WebSurfer
+users should make sure they are using the most current version of WebSurfer by
+contacting NetManage.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+
+Additional query words: prodnt winnt
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q132400  18-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: The Database May Have Been Corrupted...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In versions 3.2 and 3.2a of Microsoft Mail for Windows, when you attempt to
+create a backup of a mail message file (MMF) by choosing Backup from the Mail
+menu, the following error may occur:
+
+   The database may have been corrupted. Quit Mail.
+
+CAUSE
+=====
+
+This error condition will result if the available disk space on the disk is 0
+bytes. If at least 1k of space is available on the disk, you will receive the
+following error message:
+
+   There is not enough available disk space. Remove some files and try the
+   operation again.
+
+RESOLUTION
+==========
+
+Free up enough available space on the drive to accommodate the backup of the MMF
+file and attempt to backup the file again.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q105109.MMF File Size Increases by Twice the Size of Message
+
+
+Additional query words: 3.00 3.20 3.20a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,74 @@
+DOCUMENT:Q146874  05-FEB-2000  [foxpro]
+TITLE   :PRB: Sizebox Property Has Different Value in FoxPro for Mac
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a form is transported from Visual FoxPro for Windows to Visual FoxPro for
+Macintosh, the value of the SizeBox property, which is false (.F.) in Visual
+FoxPro for Windows, becomes true (.T.).
+
+CAUSE
+=====
+
+The property is not explicitly set. The default value for the SizeBox property
+on the Windows platform is false (.F.). On the Macintosh, this default value is
+true (.T.). When a property is not changed interactively, it takes the default
+value for the current platform. However, most properties have the same default
+value in Windows and on the Macintosh platform.
+
+RESOLUTION
+==========
+
+If you explicitly set the properties of a form, the values you select do not
+change when you transport the form across platforms.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Other properties of a form that have a different default value across platforms
+include properties that conform to a different standard. For example:
+
+Property     Default value in Windows 95   Default value on the Macintosh</H3>
+BackColor    Default Windows color scheme  222,222,222
+FontName     Arial                         Geneva
+SizeBox      .F.                            .T.
+
+Additional query words: VFoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

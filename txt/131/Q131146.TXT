@@ -1,0 +1,64 @@
+DOCUMENT:Q131146  15-FEB-2000  [foxpro]
+TITLE   :PRB: CLEAR ALL in Cleanup Code of FoxPro 2.6 Form Causes Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If in Visual FoxPro, you execute a FoxPro version 2.6 screen that has a CLEAR
+ALL command in the Cleanup code, the following error message appears:
+
+   Cannot clear the object in use.
+
+CAUSE
+=====
+
+As stated in the Visual FoxPro Help file topic for the CLEAR command:
+
+CLEAR ALL within an event or method for an active control or object generates a
+Visual FoxPro error message. An object type memory variable cannot be released
+from memory when its associated control or object is active.
+
+STATUS
+======
+
+This behavior is by design.
+
+In FoxPro version 2.6, CLEAR ALL releases everything from memory except system
+memory variables.
+
+In Visual FoxPro version 3.0, CLEAR ALL releases everything from memory except
+system memory variables and objects currently in use.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

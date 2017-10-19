@@ -1,0 +1,77 @@
+DOCUMENT:Q278635  12-NOV-2001  [msnetwork]
+TITLE   :MSN Companion Keyboards
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Each MSN Companion manufacturer will design its own keyboard. However, all MSN
+Companion keyboards have some common elements.
+
+MORE INFORMATION
+================
+
+ - Each keyboard includes the standard typewriter keys (58) for text entry and
+   editing.
+
+ - It does not include many of the special PC keys (e.g., function keys, numeric
+   keypad).
+
+ - Each keyboard includes a set of prominent and easily accessible special
+   activity keys:
+
+    - start       Takes the user to the Start Page.
+
+    - mail        Takes the user to e-mail inbox
+
+    - favorites Takes the user to a page that lets them choose, rename, and
+      delete a favorite.
+
+    - search    Takes the user to the MSN start page.
+
+    - people    Takes the user to an access point for addresses, messaging, and
+      other community-related functions.
+
+    - print        Prints the current page.
+
+    - back        Navigate back thru the list of pages the user has viewed.
+
+ - The keyboard also includes a set of four arrow keys (up, down, left, right)
+   for scrolling around pages.
+
+ - The keyboard also includes an on-board pointing device, e.g., a thumb or a
+   navigation pad, for pointing at specific link / field.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

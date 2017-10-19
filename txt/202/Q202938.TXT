@@ -1,0 +1,54 @@
+DOCUMENT:Q202938  19-MAR-1999  [sms]
+TITLE   :SMS: Unable to Perform Carriage Return in SQL Command Text Box
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to type multiline commands in the SQL Command text box of the SQL
+Command Properties dialog box and you press the ENTER key, it does not move the
+cursor to the next line.
+
+To open the SQL Command Properties dialog box in the Administrator console, go to
+the Site Database menu, click Site Hierarchy, click Site Code, click Database
+Maintenance, click SQL Commands, right-click New, click SQL Command, click the
+General tab, and click SQL Command Window.
+
+WORKAROUND
+==========
+
+Press CTRL+ENTER to move to the next line.
+
+Additional query words: prodsms SQL command
+
+======================================================================
+Keywords          : kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

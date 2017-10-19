@@ -1,0 +1,96 @@
+DOCUMENT:Q195629  16-JUN-1999  [foxpro]
+TITLE   :FIX: Cannot Add Items to Catalogs Not in VFP 98 Directory
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbvfp600fix kbVS600 kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbMiscTools1098fi
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message may occur when you add a new item to a catalog when
+the catalog is not created in the VFP98\Gallery directory:
+
+   File C:\...vfpgrly.vcx not found.
+
+RESOLUTION
+==========
+
+The October 1998 Component Gallery update, Vfp6gal.exe, includes a new version
+of the Component Gallery that addresses this problem. You can download the
+update from the following Web address:
+
+http://msdn.microsoft.com/vfoxpro/downloads/updates.asp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the October Visual FoxPro
+6.0 Component Gallery and FoxPro Foundation Classes (FFC) updates.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+This error is intermittent on some computers; however, once it does occur, it is
+likely to continue to occur until you exit Visual FoxPro.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Launch Component Gallery.
+
+2. Create a new catalog in a different directory other than the ..\Gallery
+   directory. For example, in the C:\Temp directory.
+
+3. While Component Gallery is still running, go to Command window and issue the
+   following command: SET DEFAULT TO HOME()+"Gallery\Graphics"
+
+4. Select the newly create catalog in Component Gallery, then right-click the
+   right panel of the Component Gallery. In the shortcut menu, point to New
+   Item. When the Open dialog box appears, navigate to the graphics directory
+   and select a .bmp file.
+
+   RESULTS: The following error occurs:
+
+   File C:\Temp\vfpgrly.vcx not found
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbvfp600fix kbVS600 kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbMiscTools1098fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

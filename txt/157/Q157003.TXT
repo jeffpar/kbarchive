@@ -1,0 +1,75 @@
+DOCUMENT:Q157003  05-NOV-1999  [pcmail]
+TITLE   :PC Adm: Microsoft Mail Administrator Program and VDM
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Running the Microsoft Mail Administrator program under an MS-DOS virtual machine
+(VDM) is supported; however, just as with any application being run under a VDM,
+it is susceptible to causing corruption to the postoffice under certain
+situations.
+
+MORE INFORMATION
+================
+
+Any networked MS-DOS application that relies on the sophisticated file I/O
+caching of a VDM could potentially experience file corruption because of one of
+the following:
+
+ - Closing the VDM without properly closing down the MS-DOS application running
+   in its window.
+
+ - Ungracefully shutting the power down to a computer that has a running MS-DOS
+   application under a VDM.
+
+ - Faulty networking hardware or network card device drivers that do not
+   properly handle I/O requests from the network and return improper values to
+   the MS-DOS application.
+
+When you run the Microsoft Mail Administrator program under a VDM in Microsoft
+Windows, Windows for Workgroups, Windows 95, or Windows NT, the following rules
+should be followed to prevent any corruption to the Microsoft Mail 3.x
+postoffice database files:
+
+ - Always shut down the Administrator program by first pressing the ESCAPE (ESC)
+   key, and then pressing Y, and then closing the VDM window.
+
+ - If you are experiencing problems performing normal Administrator functions
+   under a VDM, try performing the same task in a VDM on another workstation or
+   from a native MS-DOS workstation.
+
+ - If the problems persist, contact Microsoft Technical Support.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN350
+Version           : WINDOWS:3.2,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

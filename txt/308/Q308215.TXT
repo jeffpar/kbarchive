@@ -1,0 +1,108 @@
+DOCUMENT:Q308215  17-OCT-2001  [foxpro]
+TITLE   :PRB: VFP ODBC Driver Causes Various Errors in Microsoft Products
+PRODUCT :Microsoft FoxPro
+PROD/VER::1.0,2.0,3.0,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for Visual FoxPro, versions 1.0, 2.0, 3.0, 4.0, 5.0 
+ - Microsoft ODBC Driver for Visual FoxPro (Build 6.00.8281.00), versions 1.0, 5.0, 6.0 
+ - Microsoft ODBC Driver for Visual FoxPro (Build 6.01.8629.01), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Visual FoxPro ODBC driver to retrieve data, the following errors
+may occur in various Microsoft products:
+
+ - If using Visual FoxPro to retrieve data from a FoxPro table using the Remote
+   View Designer, the following error occurs:
+
+   Connectivity Error: [Microsoft] [ODBC Visual FoxPro Driver] Invalid cursor
+   state.
+
+ - If using Microsoft Access to link or import to the FoxPro table, the
+   following error occurs:
+
+   ODBC--Call Failed.
+
+ - If accessing the FoxPro table using Microsoft Word or Microsoft Excel, the
+   following error occurs:
+
+   General ODBC Error.
+
+Followed by:
+
+   Couldn't read this file.
+
+This error assumes that Word and Excel are using the Microsoft Query interface to
+retrieve the data.
+
+CAUSE
+=====
+
+These errors occur because the System attribute is set at the computer's TEMP
+folder. This error seems to occur only on Microsoft Windows NT 4.0, Microsoft
+Windows 2000, and Microsoft Windows XP operating systems.
+
+RESOLUTION
+==========
+
+From an MS-DOS prompt, issue the ATTRIB -S C:\WINNT\TEMP command to remove the
+System attribute from the TEMP folder. This assumes that the C:\WINNT\TEMP
+folder is the default for the TEMP and TMP environment variables. To determine
+this, right-click the My Computer icon on the desktop, click Properties, click
+Advanced, and then click Environment Variables. Look at the TEMP and TMP
+variables in the System Variables list box to determine which folder the
+variables are pointing to and then issue the ATTRIB command on this folder.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Using the MS-DOS ATTRIB command, set the System attribute for the TEMP
+   folder. For example, the syntax for a folder called "temp" on drive C would
+   be as follows:
+
+   ATTRIB +S c:\temp
+
+2. Create a data source name (DSN) in the ODBC Administrator using the Visual
+   FoxPro ODBC driver and point it to a Visual FoxPro table or a database
+   container.
+
+3. Use the visual interface of any of the Microsoft products listed above to
+   access the DSN that is pointing to the FoxPro table or database container.
+
+4. After choosing the DSN, the error appears, and the data will not be
+   retrieved.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP100 kbODBCVFP200 kbODBCVFP300 kbODBCVFP400 kbODBCVFP500 kbODBCVFP600828100 kbODBCVFP601862901
+Version           : :1.0,2.0,3.0,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

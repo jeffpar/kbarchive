@@ -1,0 +1,89 @@
+DOCUMENT:Q128893  12-FEB-2000  [foxpro]
+TITLE   :PRB: Editing Embedded OLE Object in Place Does Not Save Change
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changes made to an OLE object in an OLE Container control on a form do not
+appear after the form has been closed and re-run.
+
+CAUSE
+=====
+
+Because the form is an object, it is being run rather than defined and each
+'run' calls the original object definition. Changes made to an OLE object remain
+for the duration of the current session, but the changes are not made to the
+object definition itself. Because no form event saved the modified contents of
+the OLE object, the changes disappear when the form is re-run.
+
+RESOLUTION
+==========
+
+Use a linked object in the container, or use a bound control. With either
+solution the data within the object is data external to the definition of the
+control.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Add an OLE Container Control in which you create a new Microsoft Word 6
+   object. (An embedded object from any other OLE server will demonstrate this
+   equally well.)
+
+3. Insert some text into it. Then click on the form outside the OLE control.
+
+4. Save and run the form.
+
+5. Double-click the OLE Control to activate it in-place.
+
+6. Make some changes.
+
+7. Click the form outside of the OLE control to return to FoxPro.
+
+8. Close the form.
+
+9. Run the form again.
+
+Additional query words: VFoxWin OLE object control
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

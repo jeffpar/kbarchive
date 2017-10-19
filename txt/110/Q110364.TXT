@@ -1,0 +1,75 @@
+DOCUMENT:Q110364  05-FEB-2000  [foxpro]
+TITLE   :PRB: "End of File Encountered" with APPEND GENERAL
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the APPEND GENERAL command, an "End Of File Encountered"
+error message occurs if no source file is specified and no records are in the
+database.
+
+RESOLUTION
+==========
+
+If a program is interactively allowing a user to enter information in a source
+file, do one of the following to avoid this error:
+
+ - Validate the information before issuing the APPEND GENERAL command.
+
+-or-
+
+ - Trap for "End Of File Encountered" in an ON ERROR routine.
+
+-or-
+
+ - Make sure there is at least one record in the database.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a database that contains a general field.
+
+2. Issue the following command in the Command window:
+
+         APPEND GENERAL <general field>
+
+The error message "End Of File Encountered" is displayed.
+
+Additional query words: VFoxWin FoxMac FoxWin 2.50 eof errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

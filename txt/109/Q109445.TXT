@@ -1,0 +1,62 @@
+DOCUMENT:Q109445  10-NOV-1999  [pcmail]
+TITLE   :CONN: Schedule+ for Windows Cannot Save File Attachments
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Schedule+ for Windows users can receive Schedule+ meeting request
+messages from Schedule+ for AppleTalk Networks users by means of version 3.2 of
+the Microsoft Mail Connection for PC and AppleTalk Networks.
+
+If a Schedule+ for Windows user receives a meeting request that contains a file
+enclosure from a Schedule+ for AppleTalk Networks user, the Schedule+ for
+Windows user cannot access the enclosure by means of the Windows Mail client.
+
+RESOLUTION
+==========
+
+A Schedule+ for AppleTalk Networks user should not include file enclosures in a
+meeting request message if a Schedule+ for Windows user is invited to the
+meeting.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of the Microsoft
+Mail Connection for PC and AppleTalk Networks. We are researching this problem
+and will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

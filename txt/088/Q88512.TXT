@@ -1,0 +1,38 @@
+DOCUMENT:Q88512  30-JUL-2001  [homegame]
+TITLE   :Stance in Advanced Shot Setup Doesn't Affect Ball's Flight
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Changing the stance in Advanced Shot Setup doesn't affect a ball's flight when
+it's hit. In real golf, you adjust your stance to change your swing plane and
+club face. Because you have explicit control over these in Golf, there is no
+need to change stance. We allow stance to be changed to allow people to mimic
+their own styles and because it looks more accurate to have the stance set along
+with the swing plane/club face.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

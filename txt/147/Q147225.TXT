@@ -1,0 +1,54 @@
+DOCUMENT:Q147225  08-AUG-2001  [winnt]
+TITLE   :SMC 8216 EtherCard Elite 16 Ultra May Cause Error Message
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install an SMC 8216 EtherCard Elite Ultra during the initial installation
+of Windows NT 4.0, you may receive an error message on a blue screen. After
+Windows NT is installed, you can successfully install this network adapter from
+the Network option in Control Panel.
+
+RESOLUTION
+==========
+
+To prevent this error from occurring during Windows NT Setup, install the SMC
+8416 EtherEZ network adapter. This driver works with the SMC 8216 EtherCard
+Elite 16 Ultra. After Setup is complete, change the driver from the Network
+option in Control Panel.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

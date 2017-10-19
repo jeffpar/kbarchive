@@ -1,0 +1,74 @@
+DOCUMENT:Q234827  02-MAY-2001  [ssafe]
+TITLE   :MOD2000:Unnecessary Error When You Cancel Adding Project to VSS
+PRODUCT :Microsoft SourceSafe
+PROD/VER::; WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbdta modSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 2000 Developer 
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you click the Cancel button when adding a project to source code control in
+the Visual Basic Editor, you receive the following error message:
+
+   You are not logged onto Visual SourceSafe and cannot perform any source code
+   control operations.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create and save a new workbook in Microsoft Excel.
+
+2. Press ALT+F11 to open the Visual Basic Editor.
+
+3. Use the Add-in Manager to load the VBA Source Code Control Add-in if it is
+   not already loaded.
+
+4. On the Add-ins menu, point to VBA Source Code Control, and then click "Add
+   Project to SourceSafe".
+
+5. Click Cancel. Note that you receive the error message mentioned in the
+   "Symptoms" section.
+
+Additional query words: pra
+
+======================================================================
+Keywords          : kbdta modSSafe 
+Technology        : kbSSafeSearch kbOfficeSearch kbAudDeveloper kbOffice2000Search kbOffice2000 kbSSafe600 kbOffice2000DevSearch
+Version           : :; WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,48 @@
+DOCUMENT:Q123081  10-DEC-1999  [homemm]
+TITLE   :Movie Lists Not Copied from Cinemania 1994
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition,1996 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows versions 1995 edition, 1996 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Movie lists created in Cinemania 1994 are not available in Cinemania 1995 or
+Cinemania 1996 unless you manually copy the appropriate *.LST file to the
+Cinemania 1995 or Cinemania 1996 directory.
+
+By default, Cinemania 1995 is installed in C:\CIN95, and Cinemania 1996 is
+installed in C:\Program Files\Microsoft Multimedia\Cinemania. As neither program
+upgrades over Cinemania 1994, the .LST files are not converted.
+
+
+Additional query words: 1994 1995 1996 multi media multimedia multi- cin cine mania movie lists film
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1995 kbCinemania1996
+Version           : :1995 edition,1996 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

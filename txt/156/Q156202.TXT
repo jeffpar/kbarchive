@@ -1,0 +1,196 @@
+DOCUMENT:Q156202  08-AUG-2001  [winnt]
+TITLE   :Problems Changing Mouse in Windows NT with IntelliPoint 2.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:2.0 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Microsoft IntelliPoint software version 2.0 in Microsoft
+Windows NT Server or Workstation version 3.51 or 4.0 and you change your mouse,
+you may receive error messages or you may be unable to log on to your computer.
+
+For example, with Windows NT version 3.51, you may experience one of the
+following symptoms:
+
+ - Changing from a PS/2 mouse to a serial mouse may cause you to be unable to
+   log on to your Windows NT computer and you may receive Service Control
+   Manager error messages.
+
+ - Changing from a serial mouse to a PS/2 mouse may cause several event log
+   errors similar to the following errors:
+
+   Event id: 24
+   Source: msi8042
+   Type: error
+
+   Description: The description for Event ID (24) in Source ( msi8042 ) could not
+   be found. It contains the following insertion string(s): , msi8042,
+   \Device\KeyboardPort1.Translated.
+
+Or, with Windows NT version 4.0, you may experience one of the following
+symptoms:
+
+ - Changing from a PS/2 mouse to a serial mouse may cause the following Stop
+   message:
+
+   STOP 0x00000035
+   No_More_irp_stack_locations
+
+ - Changing from a serial mouse to a PS/2 mouse may cause several event log
+   errors similar to the following errors:
+
+   Event id: 24
+   Source: msi8042
+   Type: error
+
+   Description: The description for Event ID (24) in Source ( msi8042 ) could not
+   be found. It contains the following insertion string(s): , msi8042,
+   \Device\KeyboardPort1.Translated.
+
+CAUSE
+=====
+
+The registry entries for the mouse and keyboard drivers are not correctly
+updated when you change your mouse with the IntelliPoint 2.0 software installed
+in Windows NT version 3.51 or 4.0.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow the steps in the appropriate section:
+
+Windows NT version 3.51
+-----------------------
+
+If you changed from a PS/2 mouse to a serial mouse, follow these steps:
+
+1. Start Windows NT using the last known good configuration. To do so, restart
+   your computer and press the SPACEBAR when you see the "Press spacebar NOW to
+   invoke Hardware Profile/Last Known Good menu" message. The last known good
+   configuration works only if you have not successfully logged on since the
+   problem began.
+
+2. Double-click IntelliPoint Uninstall in the Microsoft Input Devices group.
+
+3. Click Finish, click Close, and then click Restart Windows.
+
+4. Double-click Windows NT Setup in the Main group.
+
+   NOTE: Windows NT Setup displays a PS/2 mouse driver even though you are
+   currently using a serial mouse.
+
+5. Click Options and click Change Mouse Or Keyboard.
+
+6. Click Microsoft Serial Mouse in the Mouse box, and then click Close.
+
+7. Click Current, click Options, click Exit, and then click OK.
+
+8. Restart your computer and reinstall the IntelliPoint 2.0 software.
+
+If you changed from a serial mouse to a PS/2 mouse, follow these steps:
+
+1. Double-click IntelliPoint Uninstall in the Microsoft Input Devices group.
+
+2. Click Finish, click Close, and then click Return To Windows.
+
+3. Double-click Control Panel in the Main group.
+
+4. Double-click Devices, click Sermouse, and then click Startup.
+
+5. Click Disabled, click OK, and then click Yes.
+
+6. Click Close, and then restart your computer.
+
+7. Reinstall the IntelliPoint 2.0 software.
+
+Windows NT version 4.0
+----------------------
+
+If you changed from a PS/2 mouse to a serial mouse, follow these steps:
+
+1. Start Windows NT using the last known good configuration. To do so, restart
+   your computer and press the SPACEBAR when you see the "Press spacebar NOW to
+   invoke Hardware Profile/Last Known Good menu" message. The last known good
+   configuration works only if you have not successfully logged on since the
+   problem began.
+
+2. Click the Start button, point to Settings, and then click Control Panel.
+
+3. Double-click Add/Remove Programs, click Microsoft IntelliPoint 2.0, and then
+   click Add/Remove.
+
+4. Click Finish, click Close, and then click Restart Windows.
+
+5. Click the Start button, point to Settings, and then click Control Panel.
+
+6. Double-click Mouse and then click General.
+
+   NOTE: The driver name displayed is Microsoft PS/2 Port Mouse even though you
+   are currently using a serial mouse.
+
+7. Click Change and then click Show All Devices.
+
+8. Click Microsoft Serial Mouse and then click OK.
+
+9. Click Yes, click Close, and then restart your computer.
+
+10. Reinstall the Microsoft IntelliPoint 2.0 software.
+
+If you changed from a serial mouse to a PS/2 mouse, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs, click Microsoft IntelliPoint 2.0, and then
+   click Add/Remove.
+
+3. Click Finish, click Close, and then click Return To Windows.
+
+4. Click the Start button, point to Settings, and then click Control Panel.
+
+5. Double-click Devices, click Serial Mouse Driver, and then click Startup.
+
+6. Click Disabled, click OK, and then click Close.
+
+7. Restart the computer and then reinstall the IntelliPoint 2.0 software.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft IntelliPoint
+software version 2.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: blue screen hung stop responding pointer serial bus
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : 2.0 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

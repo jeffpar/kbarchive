@@ -1,0 +1,87 @@
+DOCUMENT:Q68536  05-OCT-1999  [win95x]
+TITLE   :Helvetica and Times Roman Font Substitutions in Windows 3.00
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.0 recognizes six different font family names. These
+font family names are:
+
+ - Dontcare
+
+ - Decorative
+
+ - Modern
+
+ - Roman
+
+ - Script
+
+ - Swiss
+
+When you select a font in Windows, Windows attempts to use a screen font of the
+same family for display and printing. The printer font name and the screen font
+name may be different, although the printed output does appear the same as the
+font on the screen.
+
+MORE INFORMATION
+================
+
+This is because both fonts belong to the same font family. The following is a
+list of fonts that belong to the same font family:
+
+Font Family     Bitstream    Canon    Adobe        HP
+-----------     ---------    -----    -----        --
+
+Swiss (Helv)    Swiss        Swiss    Helvetica    Universe
+Roman (Tms Rmn) Dutch        Dutch    Times Roman  CG Times
+
+An example where this might cause some confusion is if you type the font name
+Helvetica in a Windows applications printing to a Hewlett-Packard (HP) LaserJet
+III and the printed output resembles Helvetica even though Helvetica is not a
+font supported on this printer. This behavior occurs because the driver
+interprets the request for Helvetica and selects Universe on the printer.
+
+There are similar fonts with different names because these font names are
+copyrighted. Windows uses the Helv font name for Swiss family screen fonts and
+the Tms Rmn font name for Roman family screen fonts.
+
+REFERENCES
+==========
+
+"Microsoft Windows Software Development Kit," Reference -- Volume 1, pages 2-29,
+2-30, and 2-36 to 2-39.
+
+Additional query words: 3.00 3.00a windrvr
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

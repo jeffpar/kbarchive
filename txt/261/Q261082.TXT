@@ -1,0 +1,62 @@
+DOCUMENT:Q261082  12-JUN-2001  [homegame]
+TITLE   :MCM2: "Ready" Unavailable on Multiplayer Game Settings Screen
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbui igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to join a multiplayer game in Microsoft MotoCross Madness 2,
+the Ready button next to your name on the game settings screen may be
+unavailable.
+
+CAUSE
+=====
+
+This behavior can occur if the host starts a game based on a custom track that
+is not installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, make sure that the track that the host is using is
+installed on your computer before you join the game.
+
+MORE INFORMATION
+================
+
+To use a custom track in a multiplayer game, all participants in the game must
+install the custom track on their computers.
+
+Additional query words: 2.00 msgame play internet gaming zone igz msngz user homemade add-in
+
+======================================================================
+Keywords          : kbui igz kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q105164  21-MAY-2001  [schedplus]
+TITLE   :Proper Rights for the CAL Subdirectory
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a,7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a, 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you work online, Schedule+ cannot create or update the .CAL file if you
+have Read-Only access. If you have Read-Only access, Schedule+ returns the
+following error message:
+
+   Your schedule file is locked
+
+CAUSE
+=====
+
+Every Schedule+ user needs to have the following rights in the CAL subdirectory
+Read, Write, Create, Erase, Modify, and FileScan. Without these rights, you are
+unable to use Schedule+ online.
+
+Without FileScan rights, the online .CAL file may not be properly updated if
+changes are made in the offline mode. However, you can use Schedule+ off line
+without any rights for the CAL subdirectory.
+
+For more information, please refer to the Microsoft Knowledge Base article
+Q103901 "PC Adm: Minimum NetWare Trustee Assignments for Mail Database."
+
+Additional query words: schedule plus 1.00 1.00a schedplus sched online offline
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3 kbPublisher100a kbMPTMathopolis
+Version           : WINDOWS:1.0,1.0a,7.0; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

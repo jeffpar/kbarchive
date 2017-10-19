@@ -1,0 +1,105 @@
+DOCUMENT:Q149238  09-JUL-2002  [exchange]
+TITLE   :XADM: Information Store Fails To Start With 1011 Error
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Information Store service fails to start and Event 2048
+or 1087 is reported in the application log, along with one or more of the
+following error messages:
+
+   Unable to start the Microsoft Exchange Information Store. Error 0x3f3.
+
+   -or-
+
+   The Information Store was restored from an off-line backup. Run ISINTEG
+   -PATCH before restarting the Information Store.
+
+   -or-
+
+   Windows could not start the Microsoft Exchange Information Store on Local
+   Computer. For more information, review the System Event Log. If this is a
+   non-Microsoft service, contact the service vendor, and refer to
+   service-specific error code 1011.
+
+   -or-
+
+   The Microsoft Exchange Information Store service could not be started. A
+   service specific error occurred: 1011.
+
+CAUSE
+=====
+
+This error occurs because the Globally Unique Identifiers (GUIDs) used by the
+restored information store are old, and matching GUIDs may already exist. The
+GUIDs for this restored information store need to be replaced to ensure that
+they are unique.
+
+RESOLUTION
+==========
+
+This is by design. You need to patch the information store to replace the GUIDs
+used by the restored information store by running Isinteg - patch. Isinteg in
+patch mode will run against the entire Information Store (both the Pub.edb and
+Priv.edb files). It will generate new GUIDs and also patch replication
+information to prevent incorrect backfilling.
+
+To run Isinteg -patch:
+
+1. Ensure that the Directory and System Attendant Services are running. If
+   either of these services are not running, Isinteg will fail with a
+   DS_COMMUNICATIONS_ERROR message.
+
+2. Change to the Exchsrvr\Bin directory, and type Isinteg -patch. The GUIDs will
+   be replaced, and Isinteg will report that the Information Store has been
+   updated successfully.
+
+3. Restart the Information Store service.
+
+MORE INFORMATION
+================
+
+The Windows NT Backup utility will automatically patch the Information Store
+when it is restored from an online backup only. If the Information Store is
+restored from an offline Windows NT Backup, you must run Isinteg.exe.
+
+Isinteg.exe run in patch mode performs no integrity checks of the database. To
+check database integrity, please see pages 617 and 618 of the Microsoft Exchange
+Administrator's Guide. Running Isinteg.exe with no parameters will print a help
+screen describing command line switches and syntax.
+
+
+Additional query words: exfaq -1011
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

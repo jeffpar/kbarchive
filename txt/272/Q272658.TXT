@@ -1,0 +1,63 @@
+DOCUMENT:Q272658  12-NOV-2001  [msnetwork]
+TITLE   :MSN Companion Member Name and Password Confirmation
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you first connect to MSN, The Microsoft Network, using the MSN Companion,
+the MSN Web Companion asks for a member name and password.
+
+MORE INFORMATION
+================
+
+You sign up for MSN Internet Access when you purchase the MSN Web Companion
+unit. At that time you will choose a member name.
+
+A confirmation letter with this member name and an initial password is given to
+you. You must enter that name and password on the member name and password
+confirmation screen.
+
+If the system is unable to confirm the name and password, a Call Member Support
+option appears.
+
+Call call Customer Service at (888) 765-2411
+
+REFERENCES
+==========
+
+   Q272409 MSN Companion Password and Member ID Requirements
+
+Additional query words: kbimu MSN companion member name password
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,51 @@
+DOCUMENT:Q169864  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Creates New Temp Folder
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 95 creates a folder called Temp in the Windows folder if one does not
+already exist. If you delete the Temp folder, Windows 95 re-creates the folder
+the next time you start Windows 95.
+
+MORE INFORMATION
+================
+
+If you have a TEMP environment variable set in your Autoexec.bat file, Windows
+95 preserves the setting for MS-DOS-based programs to use. However, Windows 95
+creates and maintains a Temp folder for its own use and the use of Windows-based
+programs.
+
+Additional query words: tmp
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

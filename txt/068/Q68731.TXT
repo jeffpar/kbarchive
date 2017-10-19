@@ -1,0 +1,59 @@
+DOCUMENT:Q68731  06-NOV-1999  [win95x]
+TITLE   :ALR 386 Computers with Memory Cache Require EMMExclude
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Microsoft Windows, Advanced Logic Research (ALR) recommends using
+the "EMMEXCLUDE=" parameter in the [386Enh] section of the SYSTEM.INI file when
+the memory cache and/or the shadow RAM feature is enabled.
+
+For example:
+
+      [386Enh]
+      EMMEXCLUDE=E000-FFFF
+
+MORE INFORMATION
+================
+
+Most newer ALR 386 computers feature a 32K or 64K static memory cache or 128/64
+dual memory cache. The cache is always set to the E000-FFFF memory range.
+Windows should not use this range if this feature is enabled.
+
+The products included here, ALR computers, are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these product's performance or reliability.
+
+Additional query words: 3.00a 3.10 3.11 umb uma
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

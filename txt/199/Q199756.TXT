@@ -1,0 +1,73 @@
+DOCUMENT:Q199756  23-SEP-1999  [exchange]
+TITLE   :XADM: Tips for Modifying an Exchange Server Registry Key on MSCS
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article offers some tips for modifying an Exchange Server registry key on a
+Microsoft Cluster Server (MSCS).
+
+MORE INFORMATION
+================
+
+The Exchange Server services must be running before you change a registry key
+for that service. For example, if you want to change the format of the display
+name when you run directory synchronization with Lotus cc:Mail, the Exchange
+Connector for Lotus cc:Mail must be running before you modify the registry on an
+MSCS.
+
+If you manually update these registry keys while the service is off-line, the
+changes may not be replicated or may be lost. To prevent this from happening,
+make any manual changes while the service is online. The ONLY registry that
+should be modified is the registry of the active node.
+
+MSCS provides registry checkpointing. Registry checkpointing for resources occurs
+under the following conditions:
+
+ - When you specify a new registry key for the resource, the specified key is
+   checkpointed.
+
+ - When the resource goes online, the registry keys are updated with the
+   previously checkpointed information.
+
+ - When the resource is brought offline, all the checkpoints associated with
+   this resource are saved.
+
+ - When the resource is online and changes are made to the registry key which is
+   registered with the cluster server for replication, MSCS ensures that the
+   updates are written to a checkpoint maintained on the quorum device.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

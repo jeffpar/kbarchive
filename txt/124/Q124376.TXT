@@ -1,0 +1,123 @@
+DOCUMENT:Q124376  08-AUG-2001  [winnt]
+TITLE   :Spry RAS Connection to Windows NT RAS Server Fails
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Spry Air TCP protocol and Spry Air Dialer version 3.0 to
+connect to a Windows NT version 3.5 Remote Access Service (RAS) server, the
+connection fails.
+
+CAUSE
+=====
+
+Windows NT RAS uses password authentication protocol (PAP) or challenge-
+handshake authentication protocol (CHAP) for password authentication of
+third-party RAS client software. Since Spry remote access software does not use
+PAP or CHAP, it cannot be authenticated by a Windows NT RAS server.
+
+RESOLUTION
+==========
+
+As a registered user of Spry's Internet In A Box product, you can obtain an
+update which will fix the problem noted above. The update is version 1.0a and
+includes Air Dialer version 03.0a.01.08. The WINSOCK.DLL file is dated 12/6/94
+with a file size of 123,328 bytes.
+
+NOTE: You can check to see if you have the correct version of Air Dialer by
+looking at the serial number. If you do, the serial number should look like:
+IBX10-RT6<xxxxxxx> (where <xxxxxxx> is the unique serial number of
+your product).
+
+MORE INFORMATION
+================
+
+The following information was taken from a technical note provided by Spry:
+
+The maintenance release for Internet In A Box is now available to all registered
+owners of the product. You may download it from our ftp server by following the
+directions below. If you wish, you may also obtain the release on diskette for
+an $8.95 shipping and handling fee by calling the SPRY, Inc. technical support
+department at 1-206-447-0958.
+
+REQUIREMENTS: A working installation of version 1.0
+
+PROCEDURE:
+
+1. Start Internet In A Box's Network File Manager application. If you are
+   unfamiliar with this application, you may wish to review pages 101-144 of The
+   Whole Internet Users Guide included with your package.
+
+2. In the "Host" field, type "support.spry.com" (without the quotation marks)
+   *This should also be in the drop-down selections.
+
+3. In the "User Name" field, type "anonymous" (without the quotation marks).
+
+4. In the "Password" field, type your e-mail address.
+
+5. Leave the "Account" field empty.
+
+6. In the "Host Type" field, use the drop-down selections to choose Unix.
+
+7. When all this information is complete click the "OK" button.
+
+8. This will start the dialer and connect you to support.spry.com.
+
+9. If you have ever connected to support.spry.com before, you will enter the ftp
+   directories at the place you last exited from. This can be determined by the
+   small blue arrow pointing "up" in the upper left corner of the directory
+   listing. Please see the table 6-1 on page 109 of The Whole Internet Users
+   Guide for further explanation of this symbol.
+
+10. Once connected to support.spry.com, you will see the directory listing and
+   the item IBOXPATCH. Double click on IBOXPATCH.
+
+11. This will take you to another directory. Double click on the file name
+   READIBOX.TXT. This will open the file so you may read it. You may prefer to
+   print this file for future reference, or click and drag this to your local
+   drive to save.
+
+12. The patch itself is called ALL_IBOX.EXE. Click and drag this to your local
+   drive. Do the same for either IBOX.TXT (documentation in text format) or
+   IBOX.DOC (documentation in Word for Windows 6.0 format).
+
+13. Follow the directions in the file READIBOX.TXT to install the upgraded
+   files.
+
+The Spry products discussed here are manufactured by Spry Incorporated, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: point-to-point ppp slip prodnt 3a 3.0a
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

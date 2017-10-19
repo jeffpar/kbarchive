@@ -1,0 +1,73 @@
+DOCUMENT:Q162558  31-JUL-2001  [sms]
+TITLE   :SMS: Job Status MIF Processing Slow on Large JobDetails Table
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,6.0,6.5
+OPER/SYS:
+KEYWORDS:kbnetwork kbDatabase kbDataLoader smsdatabase smsdataloaderkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After many Job Status MIFs have been processed and loaded in the Systems
+Management Server database, the time taken by the Dataloader to process job
+status MIFs may increase significantly. In some cases, the increase in
+processing time between a JobDetails table with 100 records and a JobDetails
+table with 230,000 records may be as much as a factor of 50.
+
+CAUSE
+=====
+
+The JobDetails table has an index on the MachineID column. However, in Job
+Status MIF processing, this index is not used by the majority of queries made by
+the Dataloader.
+
+
+WORKAROUND
+==========
+
+To work around this problem, obtain the hotfix mentioned below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+
+A supported fix is now available, but is not fully regression-tested and should
+be applied only to systems experiencing this specific problem. Unless you are
+severely impacted by this specific problem, Microsoft recommends that you wait
+for the next Service Pack that contains this fix. Contact Microsoft Technical
+Support for more information.
+
+
+Additional query words: prodsms JMF performance stress
+
+======================================================================
+Keywords          : kbnetwork kbDatabase kbDataLoader smsdatabase smsdataloader kbfixlist
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2,6.0,6.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

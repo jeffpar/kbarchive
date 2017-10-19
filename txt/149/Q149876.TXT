@@ -1,0 +1,59 @@
+DOCUMENT:Q149876  07-SEP-2001  [win95x]
+TITLE   :Print Preview Command in WordPad Truncates Words
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbprint win95 kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Print Preview command or button to preview a document in
+WordPad, some of the words at the end of each line may be truncated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed above. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem occurs only when you preview a document and does not affect
+printing the document. The higher the screen resolution you are using, the more
+characters are truncated.
+
+Note that this problem also affects faxed output in Windows 95. The faxed
+Document appears exactly as the previewed document.
+
+======================================================================
+Keywords          : kbprint win95 kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

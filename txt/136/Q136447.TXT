@@ -1,0 +1,64 @@
+DOCUMENT:Q136447  05-FEB-2002  [winnt]
+TITLE   :Performance Problems in Windows NT 3.51 With Intergraph PC-NFS
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Intergraph PC-NFS version 1.01.05 under Windows NT 3.51, you may
+encounter performance problems. In addition, if you use the MS-DOS Editor
+(EDIT.COM) concurrently with Intergraph PC-NFS, the editor stops responding
+(hangs).
+
+RESOLUTION
+==========
+
+To correct these problems, obtain version 2.01.06 of Intergraph PC-NFS for
+Windows NT 3.51. For additional information:
+
+ - please see the following article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q134695
+   TITLE : BW-Connect NFS 3.5 for Windows NT Hangs Windows NT 3.51 VDMs
+
+ - Contact Intergraph Technical Support at (800) 633-7248.
+
+
+The third-party product discussed here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: prodnt vdm crash Integraph
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,67 @@
+DOCUMENT:Q160493  10-AUG-2001  [winnt]
+TITLE   :Nwlnkrip Data Structures Corrupt when Using Demand Dial NIC
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In stress redial conditions, using a demand-dial network interface card on a
+Windows NT server may result in a line ready message being ignored.
+
+CAUSE
+=====
+
+High intensity redial stress causes corruption of client node hash table lists.
+When a line ready message is received on a demand-dial network interface card
+that has not been reset from the previous client, it is ignored. However,
+subsequent line not ready messages are processed, resulting in a RemoveListEntry
+operation on the node that has already been removed from the list.
+
+WORKAROUND
+==========
+
+This problem does not occur if you configure the RAS server IPX configuration to
+not assign the same network number to all IPX clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem has been corrected in the latest U.S. Service Pack for Windows NT
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

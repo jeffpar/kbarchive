@@ -1,0 +1,69 @@
+DOCUMENT:Q181386  09-AUG-2001  [winnt]
+TITLE   :Error Message Deleting File Using Setupapi.dll and INF Script
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to delete a file that is currently in use using the Setupapi.dll file
+and an INF script, you may receive the following error message even though the
+DELFLG_IN_USE or DELFLG_IN_USE1 flag was specified in the Delete File section of
+the INF script:
+
+   An error occurred deleting file <name>. The process cannot access the
+   file because it is being used by another process. (error #32).
+
+CAUSE
+=====
+
+This problem is caused by versions of the Setupapi.dll file earlier than version
+4.0.1381.10 because these versions do not properly handle the deletion of files
+that are currently in use.
+
+RESOLUTION
+==========
+
+To resolve this issue, replace the Setupapi.dll in the Winnt\System32 folder
+with Setupapi.dll version 4.0.1381.10 or later. Note that installing Microsoft
+Internet Explorer 4.0 or later installs the correct version of the Setupapi.dll
+file.
+
+For information about obtaining and installing Internet Explorer, please visit
+the following Microsoft Web site:
+
+   http://www.microsoft.com/ie/
+
+Additional query words: delfiles
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

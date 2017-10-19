@@ -1,0 +1,147 @@
+DOCUMENT:Q114552  13-JUN-2001  [accother]
+TITLE   :ADT2: Using Scroll Bar Control to Move Through Records
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:2.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+Included in the Microsoft Access Developer's Toolkit (ADT) are three custom OLE
+controls, similar to those available in Microsoft Visual Basic. Among them is
+the Scroll Bar control, which you can use to move through records in a form. You
+must have the ADT installed to use this control.
+
+
+MORE INFORMATION
+================
+
+This article assumes that you have the ADT installed, and that you are familiar
+with Access Basic and with creating Microsoft Access applications using the
+programming tools provided with Microsoft Access. For more information about
+Access Basic, please refer to the "Building Applications" manual.
+
+The following example demonstrates how to use the Scroll Bar control:
+
+1. Open the sample database NWIND.MDB.
+
+2. Open the Customers form in Design view. From the Edit menu, choose Insert
+   Object. In the dialog box, select the Insert Control option button. A list of
+   controls will be displayed. If the Scroll Bar control is not listed, choose
+   Add Control, and then select the file MSASB20.OCX from your ADT directory.
+   Select Scroll Bar Control, and then choose OK.
+
+3. Note the scroll bar in the top left corner of the form. Using the right
+   mouse, click the scroll bar, choose Scroll Bar Control Object, and then
+   Properties. Change the orientation from horizontal to vertical, and then
+   choose OK. Size the scroll bar.
+
+4. Using the right mouse button, click the scroll bar, and then choose
+   Properties. Change the Name property to "Scrollbar1" (without the quotation
+   marks).
+
+5. From the View menu, choose Code, and add the following code to the
+   Declarations section of the module:
+
+         Option Explicit
+         Dim rec_count As Integer
+         Dim rs As Recordset
+
+6. In the Object combo box, select Form. In the Procedure combo box, select
+   Load. Add the following code to the Form Load procedure:
+
+         Sub Form_Load ()
+            ' Find out how many records are in the form.
+             Set rs = Me.recordsetclone
+             rec_count = rs.recordcount
+
+             ' Initialize the scroll bar properties:
+             Me!scrollbar1.object.Max = rec_count
+             Me!scrollbar1.object.Min = 0
+             Me!scrollbar1.object.SmallChange = 1
+             Me!scrollbar1.object.LargeChange = 5
+         End Sub
+
+7. Using the right mouse button, click the scroll bar, and then choose Build
+   Event. Add the following code to the scroll bar's Change event:
+
+         Sub scrollbar1_Change ()
+            Dim x As Integer
+
+            ' Moves to the first record in the form's dynaset, then moves
+            ' .. forward x records, x being the value of the scroll bar.
+            rs.MoveFirst
+            x = Me!scrollbar1.object.value
+            rs.Move x
+
+            ' Check to see if at the beginning or end of the
+            ' .. recordset, and if so, take appropriate action.
+            If rs.eof Then
+               rs.MoveLast
+            End If
+
+            If rs.bof Then
+               rs.MoveFirst
+            End If
+
+            ' Coordinate the form bookmark and the dynaset's bookmark.
+            Me.bookmark = rs.bookmark
+
+         End Sub
+
+8. Add the following code to the form's Current event:
+
+         Sub Form_Current ()
+            ' Reinitialize the rec_count variable in case records are added.
+            rec_count = rs.recordcount
+            Me!scrollbar1.object.Max = rec_count
+         End Sub
+
+When you use the scroll bar, the appropriate record will be displayed. However,
+if you move through the form using other methods, the scroll bar will not
+reflect your movements.
+
+REFERENCES
+==========
+
+Microsoft Access "Building Applications," version 2.0, Chapter 11, "Working With
+Sets of Records"
+
+For more information about the Scroll Bar control, search for "scroll bar
+control," and then "Scroll Bar Control" using the Scroll Bar Control Help system
+in the Microsoft ADT program group.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+Version           : 2.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,53 @@
+DOCUMENT:Q78037  09-OCT-1999  [win3x]
+TITLE   :Setup Does Not Show a Sound Driver Option
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+The Windows with Multimedia Extensions Setup program only displays a
+Sound option when initially setting up Windows with Multimedia
+Extensions on a machine. After the initial installation, if Setup is
+run again from the command (MS-DOS) prompt, no sound option is
+displayed.
+
+Any driver additions and deletions can be handled by selecting the Drivers
+icon in the Control Panel and making the appropriate changes.
+
+
+KBCategory: kbmm kbsound
+
+KBSubcategory: win30
+
+This information applies to Windows with Multimedia Extensions version
+1.0. This information does not apply to later versions of Windows.
+
+Additional query words: 1.00 1.0 MMWIN
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

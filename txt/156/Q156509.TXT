@@ -1,0 +1,59 @@
+DOCUMENT:Q156509  14-DEC-1999  [foxpro]
+TITLE   :HOWTO: Display All Visual FoxPro Current System Settings
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual FoxPro, there is a quick way to look at the Visual FoxPro
+configuration settings all at once.
+
+MORE INFORMATION
+================
+
+The following steps show you how to do this:
+
+1. In Visual FoxPro, be sure to have the Command window open.
+
+2. From the Visual FoxPro system menu, click Options on the Tools menu to bring
+   up the Options dialog box.
+
+3. While in the Options dialog box, hold down the shift key, then click the OK
+   button
+
+All the Visual FoxPro configuration settings appear in the Command window.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

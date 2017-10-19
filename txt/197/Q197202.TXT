@@ -1,0 +1,76 @@
+DOCUMENT:Q197202  14-NOV-2000  [word97]
+TITLE   :WD97: Paragraph Numbering Causes Slow Scrolling
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Large documents that contain a contiguous range of paragraphs that are formatted
+with any type of paragraph numbering, scroll slowly in Word. Line numbering also
+affects the speed of scrolling through the document; however, the impact is not
+as great as with paragraph numbering.
+
+CAUSE
+=====
+
+Because Word automatically updates numbers in a list, Word begins its count at
+the first number in the list and continues to the number that appears at the top
+or bottom of the screen, depending on the direction you are scrolling. The rate
+of speed at which the scrolling becomes slower varies with each system; however,
+contiguous ranges of approximately 100 numbered paragraphs generally mark the
+point at which the speed begins to gradually slow down.
+
+This problem occurs with paragraphs formatted by clicking Bullets And Numbering
+on the Format menu as well as the Numbering button on the Toolbar, regardless of
+the numbering type (that is, multi-level, Arabic numbers, Roman numerals, or
+alphabetic formats).
+
+WORKAROUND
+==========
+
+If the numbering is not contiguous or is interrupted, scrolling speed returns
+until approximately 100 numbered paragraphs appear, at which time the scrolling
+speed begins to gradually slow down. To interrupt numbering, click Stop
+Numbering on the shortcut menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: format number scroll scrolling slow
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

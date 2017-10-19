@@ -1,0 +1,78 @@
+DOCUMENT:Q139008  22-OCT-1999  [mastering]
+TITLE   :Problems Printing from Mastering Visual FoxPro
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual FoxPro 3.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When printing from Microsoft Mastering Visual FoxPro, you may experience general
+protection faults (GP faults).
+
+RESOLUTION
+==========
+
+This problem can be caused by several different factors. The following details
+possible solutions to try:
+
+ - When a document is being printed, avoid clicking the mouse on the screen or
+   attempting to access other applications. When a document is being printed,
+   you will not be able to access other applications that are running. Also, the
+   Cancel button that is displayed is not functional and should not be clicked.
+
+ - The system may be low on memory or free resources. Attempt to free up some
+   memory or resources by closing other applications that are running. Also, see
+   the section "Running in Low Memory or Running Slowly" in the Readme.txt
+   included with the product.
+
+If the problem still persists, there are two other alternatives available:
+
+ - There is a print utility that is available for Mastering Visual FoxPro. (On
+   CompuServe, in the Visual FoxPro forum [go VFOX], in the Mastering VFP
+   library section.) This utility is a separate program that uses the CD-ROM to
+   print any of the documents in the product. For individuals who have been
+   having problems printing directly from the product, this utility has worked
+   for them. The print utility is Mvfp_pri.exe.
+
+ - All of the documents inside the product are available as RTF files. As a last
+   resort, you can use Word for Windows (or any other word processor that reads
+   RTF files) to open these files and print the desired documents.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Mastering Visual FoxPro version
+1.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 gpf 1995 multi media multimedia multi- mmtitles mastering foxpro
+
+======================================================================
+Keywords          : kbmm 
+Technology        : kbMSPressSearch
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

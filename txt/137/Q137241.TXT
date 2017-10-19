@@ -1,0 +1,44 @@
+DOCUMENT:Q137241  08-AUG-2001  [winnt]
+TITLE   :CPU Type Information Different in Windows NT Diagnostics
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+The CPU Type information in Windows NT Diagnostics (WINMSD.EXE) Hardware
+is different between Windows NT 3.5 and 3.51:
+
+   Processor      CPU Type (Windows NT 3.5)     CPU Type (Windows NT 3.51)
+   ---------      -------------------------     --------------------------
+
+   Intel 486          Intel 486                     Intel x86
+   Intel Pentium      Intel Pentium                 Intel x86
+
+Additional query words: prodnt winmsd
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

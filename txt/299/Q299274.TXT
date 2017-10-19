@@ -1,0 +1,64 @@
+DOCUMENT:Q299274  17-JUL-2001  [utilities]
+TITLE   :INFO: CoFreeUnusedLibrariesEx Platform Requirements
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbCOMt kbGrpDSVCDB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM, used with:
+    - Microsoft Windows 95 
+    - Microsoft Windows 98 
+    - Microsoft Windows NT Server version 4.0 
+    - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The CoFreeUnusedLibrariesEx function is not available in Microsoft Windows 95/98
+or Microsoft Windows NT/2000 systems. This function will be available in
+Microsoft Windows XP and later systems.
+
+NOTE: This article will be updated when this feature is included in future
+service pack releases for Windows 9x/NT/2000 systems.
+
+
+MORE INFORMATION
+================
+
+COM supplies functions to reclaim memory held by DLLs containing components.
+CoFreeUnusedLibrariesEx unloads any DLLs that are no longer in use and whose
+specified unload delay has expired.
+
+CoFreeUnusedLibrariesEx is available in Windows XP and later systems. On earlier
+Windows systems, use the CoFreeUnusedLibraries function, which has a ten-minute
+delay for multithreaded apartments (MTAs) and neutral apartments (NAs), and no
+delay for single-threaded apartments (STAs).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbGrpDSVCDB kbDSupport 
+Technology        : kbAudDeveloper kbCOM kbCOMPlusSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

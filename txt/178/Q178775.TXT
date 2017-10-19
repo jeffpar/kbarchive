@@ -1,0 +1,55 @@
+DOCUMENT:Q178775  17-DEC-1999  [schedplus]
+TITLE   :Changing Default Setting For Published Free/Busy Information
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0,7.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, versions 7.0, 7.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When attempting to view the free/busy information of other Microsoft Schedule+
+7.x users, you may not be able to view more than 3 months of free/busy
+information.
+
+MORE INFORMATION
+================
+
+Schedule+ displays three months of free/busy information by default. To change
+the number of months displayed, do the following:
+
+1. On the Schedule+ Tools menu, click Set Access Permissions.
+
+2. On the Global tab, change the number (n) in "Publish (n) months worth of my
+   free/busy information" to a different value.
+
+Additional query words: scheduling, viewing, folder, site, Inf
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbSchedule750
+Version           : WINDOWS:7.0,7.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

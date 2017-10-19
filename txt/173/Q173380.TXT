@@ -1,0 +1,56 @@
+DOCUMENT:Q173380  27-JUL-2001  [exchange]
+TITLE   :XWEB: Pressing Enter when Focus is on Header Field will Send Msg
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you access a Microsoft Exchange Server using the Outlook Web Access
+component and press the Enter key when the To:, CC:, BCC:, or Subject: line has
+the focus, the message will be sent.
+
+NOTE: This behavior is exhibited only in the Windows NT and Windows 95 clients
+and does not occur on the Windows 3.x Client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Outlook Web
+Access, version 5.5. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: XCLN
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

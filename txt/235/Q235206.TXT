@@ -1,0 +1,54 @@
+DOCUMENT:Q235206  28-OCT-2000  [sms]
+TITLE   :SMS: BackOffice Resource Kit 4.5 Lists Incorrect File Locations
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbClient kbServer kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft BackOffice 4.5 Resource Kit Books Online incorrectly documents the
+location of the Hardware Inventory Agent log (Hinv.log) file and the Client
+Component Installation Manager log (Ccim.log) file. The Microsoft BackOffice 4.5
+Resource Kit Books Online incorrectly list these files as residing on the site
+server in the \Sms\Logs folder.
+
+WORKAROUND
+==========
+
+To work around this issue, note that the Hinv.log and Ccim.log files actually
+reside on client computers in the Windows\Ms\Sms\Logs folder.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbdocerr kbClient kbServer kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

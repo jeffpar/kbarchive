@@ -1,0 +1,67 @@
+DOCUMENT:Q161067  21-FEB-2002  [iis]
+TITLE   :IIS FTP RNTO Overwrites Existing Files
+PRODUCT :Internet Information Server
+PROD/VER::1.0,2.0,3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 1.0, 2.0, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the FTP Service included with Internet Information Server (IIS) versions 1.0
+and 2.0, if you have write permissions you can overwrite an existing file with
+the FTP RNTO command.
+
+NOTE: This issue will also occur on the Microsoft FTP Server Service in Windows
+NT version 3.1 through version 3.51.
+
+
+WORKAROUND
+==========
+
+Create an automated process to copy existing FTP upload files to a separate
+directory that is not available to the FTP client. This would eliminate the
+overwriting of existing files through the FTP clients' use of the FTP RNTO
+command.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server.
+
+
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbiis300 kbiis200 kbiis100
+Version           : :1.0,2.0,3.0,4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

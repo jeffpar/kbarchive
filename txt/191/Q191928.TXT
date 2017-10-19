@@ -1,0 +1,83 @@
+DOCUMENT:Q191928  05-MAR-2002  [sna]
+TITLE   :How to Obtain Additional Licenses for 3270 and 5250 Applets
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+As stated in the Microsoft License Agreement that ships with SNA Server, the
+3270 and 5250 terminal emulation applets and the ODBC/DRDA driver provided with
+SNA Server are licensed for use only by one user per licensed SNA Server.
+Licenses for additional users must be acquired separately from NetManage or
+StarQuest, as described below.
+
+MORE INFORMATION
+================
+
+The 3270 and 5250 emulation applets are provided with SNA Server so that
+customers can perform basic connectivity testing. However, the SNA Server
+license agreement only allows an applet to be used on a single desktop. A single
+desktop may use either applet for demonstration, testing, or production use.
+
+
+REFERENCES
+==========
+
+For more information about obtaining additional licenses to deploy the 3270
+terminal emulation applet in production environments, call NetManage Sales at
+(408) 973-7171 or visit their Web site at:
+
+   http://www.netmanage.com/products/3270/index.asp
+
+For more information about obtaining additional licenses to deploy the Star5250
+terminal emulation applet and StarSQL Pro (ODBC/DRDA) driver in production
+environments, call StarQuest Sales at (800) 763-0050 (in the U.S. or Canada), or
+(510) 704-2000 (outside the U.S.). Alternatively, you can contact StarQuest by
+e-mail at sales@starquest.com or visit its Web site at:
+
+   Star5250 - http://www.starquest.com/products/index5250.html
+
+   StarSQL Pro - http://www.starquest.com/products/indexsql.html
+
+For more licensing information about the StarQuest ODBC driver, see the following
+Microsoft Knowledge Base article:
+
+   Q163518 License Restrictions for ODBC/DRDA Driver
+
+The products Star5250 and StarSQL Pro discussed in this article are manufactured
+by StarQuest, a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding these products[ASCII 146] performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400
+Version           : :2.11,3.0,4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

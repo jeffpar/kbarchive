@@ -1,0 +1,64 @@
+DOCUMENT:Q130343  10-FEB-2000  [foxpro]
+TITLE   :Reserved Color Schemes in Visual FoxPro Now Include 15
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Error number 1728, "Color Scheme is Reserved." is now generated if any attempt
+to use color scheme 15 is made.
+
+CAUSE
+=====
+
+Visual FoxPro now reserves Color Scheme 15. Prior versions of FoxPro for Windows
+and FoxPro for MS-DOS only reserved Color Schemes 13 and 14.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Any current programs that make use of color scheme 15 must be modified to use
+another color scheme. There are 24 color schemes in Microsoft FoxPro products.
+Schemes 13-15 are reserved in Visual FoxPro and schemes 13-16 are reserved in
+FoxPro for Macintosh.
+
+See the Help menu or the Language Reference Guide for further information on
+Color Schemes.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

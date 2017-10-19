@@ -1,0 +1,67 @@
+DOCUMENT:Q111023  21-DEC-2001  [win95x]
+TITLE   :Windows 3.1 Help Files on Current Issues
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.1,3.11
+OPER/SYS:
+KEYWORDS:kbfile win31 kbgraphxlinkcritical
+
+======================================================================
+3.10 3.11
+
+WINDOWS
+
+kbfile
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft PSS Knowledge Base group regularly extracts the most current
+articles from the Windows database and creates Windows Help files that are then
+posted to the appropriate CIS forum and the Microsoft Download Center on CIS.
+These files are also updated as new information becomes available.
+
+The files listed below are available to download from the Microsoft Download
+Center. For information about downloading these files, please see the
+"Instructions for Downloading" section at the end of this article.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Download Wp695.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: 3.10 3.11 CIS winhelp kb helpfile
+
+======================================================================
+Keywords          : kbfile win31 kbgraphxlinkcritical 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : :3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

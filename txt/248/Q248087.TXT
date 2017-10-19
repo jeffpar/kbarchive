@@ -1,0 +1,95 @@
+DOCUMENT:Q248087  11-JUN-2002  [msdn]
+TITLE   :PRB: Visual Studio Error "Attempting to use invalid help file"
+PRODUCT :Microsoft Developer Network
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbHTMLHelp kbMSDN kbVS600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Developer Network (MSDN) 
+ - Microsoft Visual Studio 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When accessing Help in any Visual Studio 6.0 product, the following message
+appears:
+
+   Attempting to use an invalid help file.
+
+When starting the MSDN Library from the Start menu, the following message
+appears:
+
+   Cannot open the file 'MSDN*.COL'
+
+Where '*' correlates to the version of the MSDN Library. For example, the file
+would be MSDNVS6A.col for the MSDN Library that shipped with Visual Studio 6.0.
+
+CAUSE
+=====
+
+The file HHCOLREG.dat is either missing, corrupted, or contains outdated
+information. HHCOLREG.dat is located in the %WINDIR%\Help folder. By default
+this is C:\Windows\Help on Windows 95/98 and C:\WINNT\Help on Windows NT. On
+Windows 2000 there may also be an HHCOLREG.dat file in each user's profile
+directory.
+
+
+RESOLUTION
+==========
+
+First, verify that you can view hidden files:
+
+1. Open Windows Explorer.
+
+2. From the View menu, choose Folder Options. For Windows 2000 and Internet
+   Explorer 5.0, Folder Options is listed on the Tools menu.
+
+3. Select the View tab in the Folder Options dialog box.
+
+4. Select the Show hidden files and folders option.
+
+Next, rename the file HHCOLREG.dat to HHCOLREG.old and reinstall the MSDN
+Library. If this does not resolve the issue, a manual uninstall of the MSDN
+library will be necessary. For more information on how to manually uninstall the
+MSDN Library, see the following article in the Microsoft Knowledge Base:
+
+   Q240350 HOWTO: Manually Uninstall the MSDN Library
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q216109 HOWTO: Troubleshoot MSDN Library Run-Time/Install/Uninstall Problems
+
+   Q240350 HOWTO: Manually Uninstall the MSDN Library
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp kbMSDN kbVS600 kbDSupport 
+Technology        : kbVSsearch kbAudDeveloper kbMSDNSearch kbZNotKeyword2 kbVS600 kbVS600Search
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

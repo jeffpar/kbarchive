@@ -1,0 +1,66 @@
+DOCUMENT:Q187650  30-APR-1999  [iis]
+TITLE   :Error: "Server Returned Invalid or Unrecognized Response"
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Microsoft Internet Explorer, you may receive the following error
+message:
+
+   Internet Explorer cannot open internet site <Web_site_name or
+   IP_Address>. Server returned invalid or unrecognized response.
+
+CAUSE
+=====
+
+Web publishing has been disabled in Proxy Server.
+
+WORKAROUND
+==========
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+   Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Click Web Proxy, then click Properties on the Action menu.
+
+3. On the Publishing tab, click to select the Enable Web Publishing check box.
+
+4. Click OK, and then quit the MMC.
+
+
+Additional query words: browser client turn turned off IE MSIE MS OWA 
+Outlook Web Access XCLN
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbAudDeveloper kbiis400 kbProxyServSearch kbProxyServ200
+Version           : WINNT:2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

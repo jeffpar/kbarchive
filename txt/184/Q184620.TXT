@@ -1,0 +1,93 @@
+DOCUMENT:Q184620  24-JUL-2001  [iis]
+TITLE   :An Instance of the Service is Already Running
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbFEA kbWinNT400sp4fea
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ 
+
+MORE INFORMATION
+================
+
+If a client attempts to connect to a COM server after the COM server starts, but
+before the COM server registers its factory, the COM will attempt to start the
+service. For a service like the World Wide Web Publishing Service (W3SVC) in
+Internet Information Service version 4.0, the second attempt to connect to the
+COM server will fail; however, the CoCreateInstance should succeed.
+
+SYMPTOMS
+========
+
+After you install the Windows NT Option Pack, you may receive the following
+error messages in the event log:
+
+   System Error, Source=DCOM, Event ID=10005
+
+   The event details contains the description:
+
+   DCOM got error "An instance of the service is already running. "
+   attempting to start the service IISADMIN with arguments "" in order
+   to run the server:
+   {A9E69610-B80D-11D0-B9B9-00A0C922E750}
+
+   -OR-
+
+   Application Error, Source=Ci, Category=CI Service, Event ID=4147
+
+   The event details contains the description:
+
+   The IISADMIN service is not available, so virtual roots cannot be indexed.
+
+CAUSE
+=====
+
+These error messages are generated because another application, such as
+Microsoft Transaction Server, has already started the DCOM (the Distributed
+Component Object Model) Service. These messages do not indicate an actual
+problem and are benign.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT version
+4.0. For more information, please see the following article in the Microsoft
+Knowledge Base.
+
+   Q152734 : How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+Additional query words: mts system log event viewer
+
+======================================================================
+Keywords          : kbFEA kbWinNT400sp4fea 
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

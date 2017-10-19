@@ -1,0 +1,75 @@
+DOCUMENT:Q196244  04-MAY-2001  [visualc]
+TITLE   :FIX: Developer Studio Settings for User Platforms Not Saved
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbOAK kbRegistry kbVC500 kbOSWinCE200bug kbDevStudio kbfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++ 
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you modify the tools paths for a Windows CE platform in Developer Studio by
+selecting Tools--Options--Directories from the menu, the information is not
+saved when you exit Developer Studio.
+
+CAUSE
+=====
+
+Some Windows CE Toolkit registry values are incorrectly reset when Developer
+Studio is started.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Close Developer Studio.
+
+2. Create the following two empty registry keys:
+
+      [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\5.0\Build System\ 
+         Components\CE Configurations\H/PC Ver. 1.00\Win32 (WCE x86em)]
+
+      [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\5.0\Build System\ 
+         Components\CE Configurations\H/PC Ver. 1.01\Win32 (WCE x86em)]
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the Microsoft Windows CE
+Toolkit for Visual C++ 6.0 and the Microsoft Windows CE Platform Builder,
+version 2.11.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOAK kbRegistry kbVC500 kbOSWinCE200bug kbDevStudio kbfix 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCEETKSearch kbWinCESearch kbWinCEETKVC500
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbfix kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

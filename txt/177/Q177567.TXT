@@ -1,0 +1,112 @@
+DOCUMENT:Q177567  31-JAN-2001  [win95x]
+TITLE   :Inbox Starts Microsoft Exchange Instead of Windows Messaging
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbtool osr2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you click Keep to keep Windows Messaging installed when you are removing
+Microsoft Outlook 97, Microsoft Exchange may be started when you double-click
+the Inbox icon on the desktop.
+
+CAUSE
+=====
+
+Microsoft Office 97 installs both Outlook 97 and Microsoft Exchange. Microsoft
+Exchange replaces Windows Messaging and uses the Inbox icon. Outlook 97 has its
+own icon on the Start menu.
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall Windows Messaging. To do so, follow these
+steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double- click
+   Add/Remove Programs.
+
+2. Click the Windows Setup tab, click the Windows Messaging check box to clear
+   it, and then click OK.
+
+3. When you are prompted to restart Windows, do so.
+
+4. Click Start, point to Settings, click Control Panel, and then double- click
+   Add/Remove Programs.
+
+5. Click the Windows Setup tab, click the Windows Messaging check box to select
+   it, and then click OK.
+
+6. When you are prompted to restart Windows, do so.
+
+MORE INFORMATION
+================
+
+To prevent this problem from occurring, use the following steps to remove
+Outlook 97 and Microsoft Exchange, and then reinstall Windows Messaging:
+
+1. Click Start, point to Settings, click Control Panel, and then double- click
+   Add/Remove Programs.
+
+2. In the list of installed programs, click either "Microsoft Office 97,
+   Professional Edition" or "Microsoft Outlook 97," whichever is available, and
+   then click Add/Remove.
+
+3. Click Add/Remove, and then click the Microsoft Outlook check box to clear it.
+
+4. Click Continue, click Yes to remove components, and then click Remove All.
+
+5. If you are prompted, restart Windows.
+
+6. Click Start, point to Settings, click Control Panel, and then double- click
+   Add/Remove Programs.
+
+7. Click the Windows Setup tab, click the Windows Messaging check box to clear
+   it, and then click OK.
+
+8. When you are prompted to restart Windows, do so.
+
+9. Click Start, point to Settings, click Control Panel, and then double- click
+   Add/Remove Programs.
+
+10. Click the Windows Setup tab, click the Windows Messaging check box to select
+   it, and then click OK.
+
+11. When you are prompted to restart Windows, do so.
+
+When you run Windows Messaging, there may be folders remaining (such as the
+Journal and Tasks folders) from the Outlook 97 installation. You can delete
+these folders if you want.
+
+
+Additional query words: 95 osr2
+
+======================================================================
+Keywords          : kbtool osr2 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

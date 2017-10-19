@@ -1,0 +1,149 @@
+DOCUMENT:Q250522  09-FEB-2000  [winnt]
+TITLE   :Adding Users to the Directory Administrators List
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Adding users to the Directory Administrators List enables you to identify
+modifications made in the logs by specific administrators user names. Without
+adding users to the list, any user who logs on as administrator (provided they
+know the correct password) can make modifications. With this scenario there is
+no way of identifying exactly who made the changes. This article describes how
+to add users to the Directory Administrators List object.
+
+MORE INFORMATION
+================
+
+When you add users to the Directory Administrator list or other list objects,
+you should only add the user's alias, not the user object itself. The reason for
+this is that if you add the alias itself, it resides only under the the list
+object and nowhere else in the directory. If someone were to delete the list
+object, then this child object would also be removed.
+
+Viewing the List of Users Added to the Directory Administrators List
+--------------------------------------------------------------------
+
+1. Start Compass, and then log on with an administrator account.
+
+2. Navigate in the Known Universe tree to the DSA object, which is your server
+   name.
+
+3. Locate the Directory Administrators list object. If you open the list object
+   you will see the built-in administrator's user alias.
+
+Adding an Alias for a User to the Directory Administrators List
+---------------------------------------------------------------
+
+1. Click on the Known Universe.
+
+2. Navigate down the tree until you get to the user or users you want to make
+   administrators.
+
+3. Right-click the user, and then click Copy.
+
+4. Right-click the Directory Administrators List object, and then click Paste.
+
+5. Click "Create alias to this entry", and then click OK. You should see the
+   user's name and user icon with an arrow next to it indicating it is an
+   alias.
+
+   NOTE: At this point, the user can log on and will have administrator access to
+   the object but will not be able to view the Application node. By default this
+   is the Application OU but it could be configured differently during setup.
+   However, they will be able to use the search utility and find users contained
+   within the Application OU and modify their properties.
+
+Setting Security for the Directory Administrators List Members
+--------------------------------------------------------------
+
+Allowing Members of the Directory Administrators List Read Access:
+
+Without setting the read access to the application node, the members of the
+Directory Administrators List will not be able to view the directory tree.
+However, by default the Directory Administrator List members will be able to
+search and find objects in the directory. The directory tree will be displayed
+while viewing the object found. Note that some objects will be modifiable, and
+others will not.
+
+1. Select Application Node (the Applications OU).
+
+2. On the Actions menu, click Access Control.
+
+3. On the entry's Read Permissions tab, click New under Permissions Granted To.
+
+4. On the entry's Read Permissions tab, click Specific under Permissions Granted
+   To.
+
+5. Click the Select button to view the Known Universe.
+
+6. Navigate down the tree to the Directory Administrators List object,
+   right-click the object, and then click Copy.
+
+7. Click OK to close the Select windows.
+
+8. Right-click the Specific box (it should be empty at this point), and then
+   click Paste.
+
+9. Click OK to save the contents.
+
+Allowing Members of the Directory Administrators List Members to Modify the Application Node:
+
+The same basic steps can be used for other objects that have explicit Access
+Controls set:
+
+1. Select Application Node (the Applications OU).
+
+2. On the Actions menu, click Access Control.
+
+3. On the entry's Modify Permissions tab, click New under Permissions Granted
+   To.
+
+4. On the entry's Read Permissions tab, click Specific under Permissions Granted
+   To.
+
+5. Click Select to view the Known Universe.
+
+6. Navigate down the tree to the Directory Administrators List object,
+   right-click the object, and then click Copy.
+
+7. Click OK to close the Select windows.
+
+8. Right-click the Specific box (it should be empty at this point), and then
+   click Paste.
+
+9. Click OK to save the contents.
+
+Additional query words: via zoomit mms
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

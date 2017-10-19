@@ -1,0 +1,68 @@
+DOCUMENT:Q184956  05-JUN-1999  [iis]
+TITLE   :Problems Deleting Files under Internet Information Server
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to delete a file previously accessed through an Internet browser
+and located under the Internet Information Server (IIS) directory structure (for
+example, \\WWWServerName\wwwroot), the following error message may appear:
+
+   <Error Deleting File> Cannot (filename): There has been a sharing
+   violation. The source of destination file may be in use. You cannot
+   delete filename.
+
+CAUSE
+=====
+
+This is due to a hard-coded file lock timeout value for IIS.
+
+WORKAROUND
+==========
+
+You can delete the file 60 seconds after closing the Internet browser. This may
+cause some loss of performance depending on server load, and so on.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,72 @@
+DOCUMENT:Q194958  13-MAY-1999  [exchange]
+TITLE   :XCLN: Unable to Open Macintosh PowerPoint 98 Attachments
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:8.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Outlook client for the Macintosh to open a PowerPoint
+attachment created using Microsoft Office 98 for the Macintosh, the file will
+not open and you receive the following error message:
+
+   The document <filename> could not be opened, because the application
+   program that created it could not be found. Could not find a
+   translation extension with appropriate translators.
+
+Also, the icon of the attachment is a generic file icon rather than the normal
+PowerPoint presentation icon.
+
+CAUSE
+=====
+
+Microsoft Office 98 for the Macintosh introduced a new file type for PowerPoint
+98 that was not previously mapped by the Outlook Macintosh clients.
+
+RESOLUTION
+==========
+
+To resolve this problem, apply the latest U.S. service pack for Microsoft
+Exchange Server version 5.5. For information on obtaining Exchange Server 5.5
+Service Pack 1, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q191014 XGEN: How to Obtain Exchange Server 5.5 Service Pack 1
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Outlook for Macintosh,
+Exchange Server Edition, version 8.0.
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbOutlookMacSearch kbOutlook800Mac
+Version           : WinNT:8.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

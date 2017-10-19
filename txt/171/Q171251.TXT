@@ -1,0 +1,77 @@
+DOCUMENT:Q171251  13-JUN-2001  [sna]
+TITLE   :Eicon Drivers not Copied when Updating to SNA 3.0 SP1
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP1
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Eicon SDLC or X.25 link services will not start after upgrading an SNA
+Server 3.0 configuration to SNA Server 3.0 Service Pack 1. This problem will not
+occur when running SETUP.EXE from SNA Server 3.0 Refresh CD that incorporates
+Service Pack 1.
+
+CAUSE
+=====
+
+This is due to a bad statement in the UPDATE.INI file from SNA Server 3.0
+Service Pack 1. Running UPDATE.EXE resulted in the current
+EC<SDLC/X25>.DLL being renamed to EC<SDLC/X25>.DL$, and the updated
+EC<SDLC/X25>.DLL being copied only in
+<SnaRoot>\system\hwsetup\ec<sdlc/x25> while it should also be copied
+in the <SnaRoot>\system directory.
+
+RESOLUTION
+==========
+
+Once the upgrade process is complete, the user needs to manually copy the
+EC<SDLC/X25>.DLL file from the
+<SNA>\system\hwsetup\ec<sdlc/x25> directory to
+<SnaRoot>\system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0 Service
+Pack 1. This problem was corrected in the latest SNA Server for Windows NT 3.0
+U.S. Service Pack. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

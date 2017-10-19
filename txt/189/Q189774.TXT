@@ -1,0 +1,75 @@
+DOCUMENT:Q189774  11-DEC-1999  [foxpro]
+TITLE   :BUG: Repeated Outputs to _SCREEN Distorts _SCREEN.Picture
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Repeated output to _SCREEN might distort the _SCREEN.Picture image.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code in the Command window:
+
+         _SCREEN.Picture=HOME()+'Fox.bmp'
+
+2. Type the following in the Command window:
+
+   " DISPLAY STATUS" (without the quotation marks)
+
+3. Press Enter, and then press Escape (Esc).
+
+4. Repeat steps 2 and 3 five times.
+
+5. Type the following in the Command window:
+
+   " Clear" (without the quotation marks)
+
+RESULT: The background image in the upper left-hand portion of the Visual FoxPro
+desktop is distorted.
+
+Additional query words: kbVFp600bug kbVFp500bug kbVFp500abug kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

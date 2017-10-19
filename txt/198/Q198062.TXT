@@ -1,0 +1,88 @@
+DOCUMENT:Q198062  11-JAN-2001  [vbwin]
+TITLE   :BUG: Mouse Cursor Disappears After Typing in VB IDE
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbide kbMouse kbVBp kbVBp600bug kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The mouse cursor disappears while either typing in the code window of a Visual
+Basic ActiveX Control project or changing any property value in the property
+window of a ActiveX Control project. This occurs if you are using the
+IntelliMouse with IntelliPoint driver 2.0 or above.
+
+CAUSE
+=====
+
+This problem occurs when the "Vanish When Typing" setting in the IntelliPoint
+Mouse Properties dialog is turned on.
+
+RESOLUTION
+==========
+
+Open the Mouse applet from the Control Panel and select the Visibility tab.
+Under Vanish, deselect the "Vanish When Typing" checkbox.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install the IntelliPoint Software that comes with IntelliMouse.
+
+2. From the Control Panel, open the Mouse applet.
+
+3. In the IntelliPoint Mouse Properties dialog, select the Visibility tab and
+   under Vanish, check the "Vanish When Typing" checkbox.
+
+4. Create a new ActiveX Control project in Visual Basic. UserControl1 is created
+   by default.
+
+5. Click on the design window of UserControl1 to open the code window.
+
+6. Start typing some code in the window. The mouse cursor will disappear as
+   expected, but it will not reappear when you move the mouse.
+
+   The mouse will return when you click on certain Visual Basic design
+   environment windows, click the Taskbar, or switch to another running
+   application.
+
+======================================================================
+Keywords          : kbide kbMouse kbVBp kbVBp600bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

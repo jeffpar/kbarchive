@@ -1,0 +1,79 @@
+DOCUMENT:Q150126  02-NOV-1999  [fortran]
+TITLE   :BUG: FOR4280 Warning Given for Unused Result Variables
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler erroneously gives the following warning message for unused function
+result variables: warning FOR4280: unused local variable <name>
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Function result variables are not local variables. Therefore, the compiler
+should not generate the FOR4280 warning message for unused function result
+variables.
+
+When compiling the sample code provided, the compiler issues two warning
+messages: warning FOR4280: unused local variable R
+
+   -and-
+
+   warning FOR4290: function FUNC has not been pointer assigned nor allocated
+
+The first compiler message is the incorrect FOR4280 warning message. However, the
+second message is correct as FUNC expects to return a pointer to an integer but
+R has no storage space allocated to it.
+
+Sample Code to Illustrate Problem
+---------------------------------
+
+   ! Compile options needed: /c
+
+         module mod
+         contains
+             function func() result(r)
+             integer, pointer :: r
+             end function func
+         end module mod
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

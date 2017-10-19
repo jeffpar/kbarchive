@@ -1,0 +1,240 @@
+DOCUMENT:Q316258  06-AUG-2002  [sms]
+TITLE   :Problems Connecting to SMS Provider Without Impersonation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP3
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbsmsProvider kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a program that does not set the WBEM security level to
+Impersonate (wbemImpersonationLevelImpersonate (3)) during a connection to the
+Systems Management Server (SMS) provider, the SMS provider may obtain the
+incorrect user groups to which that user belongs. The user may then have more or
+less access rights in a running SMS Administration console (or program that uses
+the SMS SDK) than is defined in the SMS Security rights.
+
+CAUSE
+=====
+
+The SMS Provider is incorrectly dealing with provider connections which are not
+setting the DCOM security level to Impersonate.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Only apply it to systems
+that are experiencing this specific problem. This fix may receive additional
+testing. Therefore, if you are not severely affected by this problem, Microsoft
+recommends that you wait for the next Systems Management Server service pack
+that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The hotfix originally provided for the problem that is described in this
+Microsoft Knowledge Base article is no longer available. The hotfix for the
+following Microsoft Knowledge Base article now supercedes it. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q324204 SMS: Collections That Are Based on Complex Queries Do Not Update
+
+If you want to resolve the problem that is described in this article, you must
+install the hotfix for Microsoft Knowledge Base article Q324204.
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, always set the WBEM authentication level to
+Impersonate in any program or script that connects to the SMS provider.
+
+If you are using the WMI Scripting API, verify that the registry on the computer
+that is running the script has a default impersonation level set in the
+registry:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the Default Impersonation Level value under the following key in the
+   registry:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\Scripting
+
+3. Verify that the REG_DWORD value is set to 0x3.
+
+4. Quit Registry Editor.
+
+If the SMS Service account has security rights in the SMS Administrator console
+by way of account or group membership, either remove or restrict the rights as
+it is the group membership for this account which may be incorrectly checked for
+access.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+
+For additional information about the SMS 2.0 SP4 HRP, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+
+MORE INFORMATION
+================
+
+How to Install the Hotfix
+-------------------------
+
+Apply this fix on all of the sites in the SMS hierarchy, including the SMS
+provider if it is located on a separate database server. To install the fix, use
+one of the following methods.
+
+How to Use the Hotfix Installer:
+
+NOTE: You can use this method only on Intel-based computers.
+
+1. Copy the hotfix folder structure to a local folder on your site server or to
+   a share on your network. The I386 and Alpha subfolders are required; you must
+   also download them from the Microsoft FTP site. It is important to keep the
+   folder structure intact. The Q316258.exe file is a Microsoft Windows
+   Installer file that updates specific files on your site server.
+
+2. Log on to your site server by using an account with administrator rights.
+
+3. On the site server, quit the SMS Administrator console.
+
+4. Run the Q316258.exe file and follow the instructions in the wizard. The SMS
+   services are stopped and restarted as part of the installation process.
+
+How to Manually Install the Hotfix:
+
+1. Copy the update program file (Q316258.exe) and platform folders to a new
+   folder. The folder structure must be such that the program file is located
+   one folder "above" the platform folders.
+
+2. Quit the SMS Administrator console and stop all SMS services in Control
+   Panel. If the SMS_SITE_BACKUP service is running, stop it also.
+
+3. If the SMS provider is located on a separate SQL server, also perform the
+   steps that are associated with SMS provider de-registration, file replacement
+   and re-registration on that server.
+
+4. On the server on which the SMS provider is running, stop the Winmgmt service.
+
+5. On the server on which the SMS provider is running, unregister the SMS
+   Provider that is located in the SMS\BIN\<platform> folder by using the
+   "regsvr32 /u smsprov.dll" (without the quotation marks) command.
+
+6. On the server on which the SMS provider is running, replace the Smsprov.dll
+   file in the SMS\BIN\<platform> folder with the version that is located
+   in the hotfix <platform> folder.
+
+7. Replace the Basesvr.dll file in the SMS\BIN\<platform> folder with the
+   version that is located in the hotfix <platform> folder.
+
+8. Replace the Compmgr.exe file in the SMS\BIN\<platform> folder with the
+   version that is located in the hotfix <platform> folder.
+
+9. Replace the Cmprov.dll file in the SMS\BIN\<platform> folder with the
+   version that is located in the hotfix <platform> folder.
+
+10. On the server on which the SMS provider is running, register the SMS
+   Provider DLL in the SMS\BIN\<platform> folder by using the
+   "regsvr32.exe smsprov.dll" (without the quotation marks) command.
+
+11. On the server on which the SMS provider is running, start the Winmgmt
+   service.
+
+12. Restart the SMS site services.
+
+Sample VbScript of how to set the WBEM authentication level when you connect to
+the SMS Provider:
+
+   '++++++ Example script to output Sitecode and Sitename for each site +++++
+   Option Explicit
+   Dim oLocator
+   Dim oServices
+   Dim sServer, sSiteCode
+   'Setting the constant to 3 (Allows objects to use the credentials of the
+   caller)
+   Const wbemImpersonationLevelImpersonate = 3
+   ' Create locator, needed to connect to WMI namespaces
+   Set oLocator = CreateObject("WbemScripting.SWbemLocator")
+   sServer = InputBox ("SMS Site Server Name")
+   sSiteCode = InputBox ("SMS Code Code")
+   Set oServices = oLocator.ConnectServer(sServer, "root\sms\site_" &
+   sSiteCode)
+   ' Set security impersonation level
+   oServices.Security_.ImpersonationLevel = wbemImpersonationLevelImpersonate
+   For Each Site in Sites
+   MsgBox "Sitecode =" & Site.SiteCode & ", Site Name ="
+   &Site.SiteName
+   Next
+   Set oLocator=Nothing
+   Set oServices=Nothing
+   Set Sites=Nothing
+   Set Site=Nothing
+
+Before you install the hotfix, when a client tries to connect to the SMS provider
+without impersonation, you may receive the following entry in the SMS provider
+log (Smsprov.log):
+
+   -- Updating NT Group membership
+   !!!Client connected without impersonation - group membership may be
+   incomplete!!
+
+With the hotfix installed, the SMS provider will log the following in its log
+file. The SMS provider will not allow a connection without impersonation set.
+
+   Client connected without impersonation activated, cannot retrieve group
+   membership. Set the impersonation level to impersonate in the client
+   application.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbsmsProvider kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200SP3
+Version           : :2.0 SP3
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

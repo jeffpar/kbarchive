@@ -1,0 +1,56 @@
+DOCUMENT:Q194419  22-JUN-2001  [exchange]
+TITLE   :XWEB: Group by Categories Cannot Be Viewed Using OWA
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you attempt to view the Inbox or other folders that have been grouped by
+categories in the Outlook Client, Outlook Web Access does not retain the folder
+view categories. Views can be customized with the Outlook client by clicking the
+View menu, clicking Current View, and then clicking Customize Current View or
+Define Views.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550 kbOWA550SP1
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

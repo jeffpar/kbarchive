@@ -1,0 +1,57 @@
+DOCUMENT:Q94780  11-DEC-1999  [vbwin]
+TITLE   :ISAMCVT Problems Converting BTRIEVE Files
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:MS-DOS:1.0; :7.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic for MS-DOS 1.0 
+ - Microsoft BASIC Professional Development System (PDS) for MS-DOS, version 7.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ISAMCVT may have problems converting BTRIEVE data files to the Basic ISAM
+format. Some specific instances are:
+
+ - Converting files with multiple string fields greater than 255 characters
+   loses the data after the first 256-byte column.
+
+ - Using ISAMCVT to convert a BTRIEVE file requires the use of a SPECFILE which
+   is simply a description of the columns and their length. An incorrect
+   SPECFILE can lead to memory corruption and cause errors.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: VBmsdos buglist1.00 buglist7.10 1.00 7.10
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbBASICSearch kbZNotKeyword3 kbBASICPDS710DOS kbVB100DOS
+Version           : MS-DOS:1.0; :7.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,76 @@
+DOCUMENT:Q237896  01-OCT-1999  [sna]
+TITLE   :Enhanced GET_LU_STATUS Incorrectly Indicates SyncPoint Support
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNA Server version 4.0 Service Pack 3 (SP3) includes an enhanced APPC
+GET_LU_STATUS function where it is possible to determine whether a Local APPC LU
+is configured with SyncPoint support. However, this new GET_LU_STATUS function
+may incorrectly return syncpoint = AP_YES, causing TP_STARTED (with
+syncpoint_rqd = AP_YES) to fail with the following error message:
+
+   primary_rc = X'0001' (AP_PARAMETER_CHECK)
+   secondary_rc = X'00000003' (AP_BAD_LU_ALIAS)
+
+For more information on this function, see the following Knowledge Base article:
+
+   Q235406 SNA Server Support for External Attach Managers
+
+CAUSE
+=====
+
+GET_LU_STATUS returns syncpoint = AP_YES if the SyncPoint Support check box is
+enabled for a Local APPC LU, even if the client computer name field is not
+filled in properly, or contains a computer name that is not the same as the
+computer where the TP_STARTED is issued. SNA Server Manager or the MMC (and the
+SNACFG command line tool) should require the configuration of the client
+computer name field when the SyncPoint Support check box is checked for a Local
+APPC LU.
+
+WORKAROUND
+==========
+
+If a Local APPC LU is to be used with SyncPoint-enabled applications. Both the
+SyncPoint Support check box and the client computer name field must be
+configured.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 4.0 Service Pack 3.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP3
+Version           : WINDOWS:4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q131518  17-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Can Not Print from Note Section of Archived Files
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open and print from an archived Microsoft Schedule+ for Windows file,
+the Notes section may not print, even though there are notes in this section. No
+error messages are generated.
+
+NOTE: You will be able to print correctly from active Schedule+ files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 1.0 of Microsoft
+Schedule+ for Windows. This problem was corrected in SCHDPLUS.EXE version
+1.0.4003. If you do not have version 1.0.4003 (or later), the following
+self-extracting file is available for download from the Microsoft Software
+Library:
+
+~ Schdplus.exe
+(http://support.microsoft.com/download/support/mslfiles/Schdplus.exe)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+
+Additional query words: schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

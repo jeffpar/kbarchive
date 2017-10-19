@@ -1,0 +1,43 @@
+DOCUMENT:Q76413  04-FEB-2002  [lanman]
+TITLE   :Screen Repainting Problem with Microsoft Mouse Driver
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+   When LAN Manager version 2.0c is installed on MS-DOS version 5.0, netpopups
+   halt screen repainting until the screen is cleared using CLS. Only then does
+   the screen return to normal.
+
+RESOLUTION
+==========
+
+   Replacing MOUSE.COM with the Microsoft Mouse version 7.04 or 8.0 resolves the
+   netpopup problem. [Note: Microsoft Mouse version 7.0 resolves this problem;
+   however, it is known to produce unrecoverable application errors (UAEs) with
+   Windows.]
+
+Additional query words: 2.00c 5.00 8.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

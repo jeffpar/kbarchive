@@ -1,0 +1,183 @@
+DOCUMENT:Q162300  29-JAN-2000  [ssafe]
+TITLE   :HOWTO: Converting VFP3 Source Control Projects to VFP5
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbinterop kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how you can convert a Visual FoxPro 3.0 project that is
+under Source Code Control (SCC) to a Visual FoxPro 5.0 project while maintaining
+it under Source Code Control.
+
+MORE INFORMATION
+================
+
+Use the following steps to convert a Visual FoxPro 3.0 project that is under
+Source Code Control:
+
+1. Back up the Source Code Control provider database and any files for the
+   Visual FoxPro 3.0 project that you are converting.
+
+2. Run the SCC provider and logon.
+
+3. Select the project to be converted--for example, a project named "SCCTST"
+   under the Root Project ($). Then click Check Out on the Visual SourceSafe
+   menu.
+
+4. In the Check Out dialog box, make sure that the "TO" text box contains the
+   Path and the name of the working directory, for example "C:\Wdscctst."
+
+5. Click Recursive and then OK.
+
+6. Once the Check Out process is completed, run Visual FoxPro 5.0.
+
+7. Click Options on the Visual FoxPro 5.0 Tools menu, and in the Projects tab
+   ensure that the SCC Provider you want to use is selected as the "Active
+   Source Control Provider."
+
+8. MODIFY the Visual FoxPro 3.0 project(SCCTST)that was checked out in Step 6 to
+   the working directory (C:\Wdscctst).
+
+9. When the "Visual FoxPro Converter" dialog box comes up, select any of the
+   choices you want to. It is recommended that you use the default choices. Then
+   click OK.
+
+10. When the "Project has been moved" message comes up, click Yes. After the
+   Project and its components are converted, Close and Save it.
+
+11. Switch to the SCC provider. Select the Project (SCCTST) and click Check In
+   on the Visual SourceSafe menu.
+
+12. In the Check In dialog box, click Recursive and then OK.
+
+13. Check out the files again from the SCC provider, using steps 3, 4, and 5
+   above.
+
+14. After the Check Out process is completed, switch to Visual FoxPro 5.0.
+
+15. Modify the project SCCTST that was checked out to the working directory
+   Wdscctst.
+
+16. Click Add Project to Source Control on the Project menu. When prompted,
+   logon to the SCC provider.
+
+17. In the Add to Visual SourceSafe Project dialog box, enter the name of the
+   project "SCCTST" in the "Project:" text box. Ensure that this name is
+   exactly the same as the one displayed for the project in the Project Tree
+   Structure under the "$/".
+
+18. In the Project Tree Structure under "$/", select the project that is the
+   parent of the project being converted. For example, if project "SCCTST" is a
+   Sub-Project of the "Root Project" ($\SCCTST), then select the Root Project
+   ($), and if SCCTST is a sub-project of "PSCCTST," which in turn is a
+   sub-project of "$" ($\PSCCTST\SCCTST), then select "PSCCTST."
+
+19. Click OK. When the "Project Metafile created by Visual FoxPro" message is
+   displayed click OK again.
+
+20. When the Add Files to Source Control dialog box comes up, click Select All
+   and OK.
+
+21. The "File is already controlled. Delete the local copy and get the latest
+   version" dialog box appears several times. Click YES each time.
+
+22. When the "Do you want to update the project list" dialog box is displayed,
+   click Yes.
+
+23. When the "File checked in from Visual FoxPro" message appears, click OK.
+
+   NOTE: The Form (.scx), Label (.lpx), Menu (,mnx), Report (.frx), and Class
+   Library(.vcx) files are in binary format and most SCC providers are not
+   capable of maintaining the History/Version information for such files.
+
+   To allow the SCC provider to keep track of the changes to the binary files,
+   Visual FoxPro 5.0 allows you to create files that are a Text representation
+   of these binary files. The name of the text file is the same as the binary
+   file except that the last letter of the extension is an "A" instead of an
+   "X." For example *.SCA, *.LBA, *.MNA, *.FRA, and *.VCA for *.SCX, *.LBX,
+   *.MNX, *.FRX, and *.VCX files, respectively.
+
+   The text files are not added to the Project Manager so are not listed within
+   the Project manager. These files are checked in and out automatically by
+   Visual FoxPro 5.0 whenever their respective binary files are checked in and
+   out.
+
+24. To create text files for the binary files run Scctext.prg, installed to the
+   Visual FoxPro 5.0 directory by default, against each of the files as
+   follows:
+
+          DO SCCTEXT.PRG WITH "WDSCCTST\Forms\FormName.SCX"
+          DO SCCTEXT.PRG WITH "WDSCCTST\Labels\LabelName.LBX"
+          DO SCCTEXT.PRG WITH "WDSCCTST\Menus\MenuName.MNX"
+          DO SCCTEXT.PRG WITH "WDSCCTST\Reports\ReportName.FRX"
+          DO SCCTEXT.PRG WITH "WDSCCTST\Classes\ClassName.VCX"
+
+   NOTE: The Text files are created in the same directory as each of the
+   respective Binary files. For example FormName.SCA goes to the
+   "WDSCCTST\Forms\" directory, ClassName.VCX to "WDSCCTST\Classes\" directory,
+   and so on.
+
+25. Once all the .sca, .lba, .mna, .fra, and .vca files are created, click
+   Source Control, and then Check In from the Visual FoxPro 5.0 Project menu.
+
+26. When the Check In dialog box appears, click Select All and then OK.
+
+27. After the Check In process started with the previous step has completed,
+   note that the text files ("*.??A") are not added to Source Control at this
+   time. These files have to be added individually from the SCC provider.
+
+28. Switch to the SCC provider and Check In each of the "*.??A" files into the
+   specific folders of the SCC project (SCCTST). For example, *.sca files go to
+   the Forms folder under "$\Scctst\," the *.fra files go to the Reports
+   folder, and so on. Once this is finished, the text files are checked out or
+   checked in automatically whenever their respective binary files are checked
+   out/in from within Visual FoxPro 5.0 using the SCC Integration
+   functionality.
+
+   Now you should be able to use the Project under Visual FoxPro 5.0 while
+   retaining its Source Code Control functionality. Whenever you open the
+   project (C:\Wdscctst\Scctst), Visual FoxPro 5.0 automatically knows that it
+   is under Source Control and provides the required functionality.
+
+NOTE: Once the Project has been added to Source Control under Visual FoxPro 5.0,
+it is advised that the SCC operations should be performed from within Visual
+FoxPro using the SCC Integration functionality.
+
+NOTE: The above steps were tested with Microsoft Visual SourceSafe and are
+specific to it. For Source Code Control providers other than Microsoft Visual
+SourceSafe, you may need to modify the above steps or may have to do additional
+steps.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbusage 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

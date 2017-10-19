@@ -1,0 +1,54 @@
+DOCUMENT:Q289897  21-JUN-2001  [exchange]
+TITLE   :XADM: Mailbox Manager System Cleanup Folder Is Absent on Client
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.5,5.5 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP3, used with:
+    - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mailbox Manager System Cleanup folder may be reported as absent on client.
+
+MORE INFORMATION
+================
+
+Typically, the System Cleanup folder is created on the client when Mailbox
+Manager is configured to use the System Cleanup folder to temporarily hold
+deleted items until you permanently remove the deleted items. If no items are in
+the System Cleanup folder the next time the System Cleanup process runs, the
+System Cleanup folder is removed from the client.
+
+This behavior is by design.
+
+Additional query words: xadm
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : :4.0,5.5,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q216576  17-APR-1999  [winnt]
+TITLE   :Err Msg: Setup Was Unable to Write to the Floppy Disk in...
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Setup using "winnt32.exe /b", you may receive the following error
+message:
+
+   Setup was unable to write to the floppy disk in drive A:, the floppy disk may
+   be damaged. Try a different floppy disk. Click OK. Setup will prompt you for
+   a different floppy disk.
+
+If you then insert another floppy disk, you may receive the same error message,
+and Setup may be unable to write to any disk you provide.
+
+CAUSE
+=====
+
+This issue can occur because when the /b Setup switch is used, Winnt32.exe
+copies all setup files to the hard disk so Setup can run without using the boot
+disks. The setup files need to be changed to reference the hard disk as the
+source path, not the floppy drive.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, use the 3 boot disks that come with Small Business Server
+to install the product.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: smallbiz bof
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

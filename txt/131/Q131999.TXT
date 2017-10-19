@@ -1,0 +1,69 @@
+DOCUMENT:Q131999  30-OCT-1999  [pcmail]
+TITLE   :PC Adm: Restoring a Deleted Mail Account
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It may be necessary to restore a user mail account that was accidentally
+deleted.
+
+If the user was using Microsoft Mail for Windows, you can restore the old mail
+message file (MMF) from backup and import it to the new account.
+
+If the user was using Microsoft Mail for PC Networks, MS-DOS workstation, you can
+use the steps below to access the old mail account:
+
+1. Restore from backup a copy of the postoffice prior to the deletion. Restore
+   it to a location other than the existing postoffice location.
+
+2. Using MOVEUSER, login to the current postoffice and the restored copy of the
+   postoffice.
+
+3. Drag and drop the user from the restored copy of the postoffice to the
+   current postoffice.
+
+4. The user will then have access to old mail, and any private and shared
+   folders that the user created. The user will not be readded to groups that he
+   or she was a part of before deletion. Consequently, group folders created by
+   the user will no longer be available.
+
+MORE INFORMATION
+================
+
+This process simplifies the restore by not requiring archiving/unarchiving of
+folders. However, the user will now have a new hexid, and all PAB entries
+referencing this user will be invalid.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

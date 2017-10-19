@@ -1,0 +1,89 @@
+DOCUMENT:Q158155  10-AUG-2001  [winnt]
+TITLE   :SAS Window: Winlogon.exe Error
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows NT and you log on, the following error message may
+appear:
+
+   Error: SAS Window: Winlogon.exe
+   There is no disk in the drive. Please insert a disk into drive A:
+
+CAUSE
+=====
+
+Systems that have bootable CD-ROMs and Award BIOS with a date code prior to
+September 25, 1996 may experience this problem. The Award BIOSes with release
+dates prior to September 25, 1996 enable bootable CD-ROM support by using floppy
+and hard disk emulation. Windows NT 4.0 does not support emulation mode CD-ROM
+booting.
+
+RESOLUTION
+==========
+
+Disable the bootable CD-ROM functionality of the system BIOS or of the SCSI
+controller BIOS.
+
+To disable the bootable CD-ROM support of the Award BIOS:
+
+1. Restart the system.
+
+2. Press the DEL key to enter the BIOS Setup menu.
+
+3. Move the cursor to BIOS Feature Setup and press the Enter key.
+
+4. Click BOOT Sequence.
+
+5. Change the boot sequence so that the CD-ROM appears after the hard disk
+   drive.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt award cd-rom apaptec sas
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

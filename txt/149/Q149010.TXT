@@ -1,0 +1,72 @@
+DOCUMENT:Q149010  16-DEC-1999  [homemm]
+TITLE   :Pregnancy Err Msg: "No Articles Were Found Containing..."
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Find By Word feature, you may receive the following error
+message:
+
+   No articles were found containing "<your word>".
+
+   Make sure you have spelled the word correctly. Or try turning on or off the
+   "Search article text instead of article titles".
+
+   If you want to find a different word, click Start Over.
+
+As you type the word, the error message repeats as you delete or insert each
+character.
+
+CAUSE
+=====
+
+The Keyboard Repeat Delay option is set to Long.
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. Click on Start, point to Settings, and then click Control Panel.
+
+2. Double-click the Keyboard icon.
+
+3. On the Speed tab, set the Repeat Delay option to Short.
+
+   NOTE: By default, the Speed tab is in the foreground.
+
+4. Click Apply and then OK.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

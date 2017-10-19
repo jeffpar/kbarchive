@@ -1,0 +1,72 @@
+DOCUMENT:Q191164  22-JUN-2001  [exchange]
+TITLE   :XCLN: Outlook Fails to Connect, Causes AE at Emsui32.dll
+PRODUCT :Microsoft Exchange
+PROD/VER::8.0,8.01,8.02,8.03
+OPER/SYS:
+KEYWORDS:exc55sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Outlook may cause an access violation if it fails to make a remote procedure
+call (RPC) connection and the password has changed during the RPC connection
+failure.
+
+CAUSE
+=====
+
+The function that handles RPC connection errors passes a NULL pointer to other
+functions that do not have a NULL check.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Outlook versions listed
+above.
+
+Additional query words: watson 97
+
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbOutlookSearch kbOutlook97 kbOutlook97Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : :8.0,8.01,8.02,8.03
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

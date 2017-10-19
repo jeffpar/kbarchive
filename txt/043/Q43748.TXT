@@ -1,0 +1,48 @@
+DOCUMENT:Q43748  18-DEC-2000  [win95x]
+TITLE   :Changing Printers During Print Job Affects Output
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:2.x,3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+When you use the spooler during a print job, do not use the Control
+Panel (or any other method) to change the connections of the currently
+active printer.
+
+For example, if a job is currently printing to a LaserJet on LPT2, do
+not try to connect an Epson to that port (and change the LaserJet to
+something else), and do not try to change the LaserJet to a different
+port until the print job is done. Doing so may result in the loss of
+the rest of the print job or in severely garbled output.
+
+This information also applies to Windows/386.
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a
+Version           : WINDOWS:2.x,3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

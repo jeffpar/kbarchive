@@ -1,0 +1,76 @@
+DOCUMENT:Q76845  17-DEC-2000  [msdos]
+TITLE   :System Hangs with Kraft Mouse and Driver 3.01
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have a Kraft Systems mouse and mouse driver version 3.0 or earlier, and your
+system stops responding (hangs) or locks up when you use MS-DOS version 5.0
+Shell Task Swapper.
+
+CAUSE
+=====
+
+Kraft Systems has confirmed that the Kraft mouse and Kraft mouse driver version
+3.0 or earlier may cause this behavior in MS-DOS Shell Task Swapper.
+
+NOTE: Kraft Systems has confirmed that Kraft mouse and mouse driver version 3.01
+work properly with MS-DOS Shell Task Swapper.
+
+WORKAROUND
+==========
+
+If you have a Kraft mouse and Kraft mouse driver version 3.0 installed and your
+machine hangs with Task Swapper, you can work around the problem by doing one of
+the following:
+
+ - Contact Kraft Systems about upgrading to the 3.01 version of the mouse
+   driver.
+
+ - Disable the mouse by remarking out the DEVICE=C:\KRAFT\MOUSE.SYS line in the
+   CONFIG.SYS file and use Task Swapper by keyboard input.
+
+ - Do not use Task Swapper.
+
+MORE INFORMATION
+================
+
+For more information, contact Kraft Systems.
+
+The Kraft Systems products included here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.00 5.00 dosshell switcher
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

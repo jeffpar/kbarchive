@@ -1,0 +1,194 @@
+DOCUMENT:Q143090  08-NOV-2001  [frontpg]
+TITLE   :FP: Overview of WebBot Components
+PRODUCT :Word Front Page
+PROD/VER::; MACINTOSH:1.0; WINDOWS:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 1.0, 1.1 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q193955.
+
+SUMMARY
+=======
+
+This article describes what a WebBot component is and lists the components that
+are available. A WebBot component is a dynamic object on a Web page that is
+evaluated when the page is saved or, in some cases, when the page is opened in a
+Web browser.
+
+The following WebBot components are available in FrontPage:
+
+   WebBot Confirmation Field component
+   WebBot Discussion component
+   WebBot HTML Markup component
+   WebBot Include component
+   WebBot Registration component
+   WebBot Save Results component
+   WebBot Scheduled Image component
+   WebBot Scheduled Include component
+   WebBot Search component
+   WebBot Substitution component
+   WebBot Table of Contents component
+   WebBot Timestamp component
+
+MORE INFORMATION
+================
+
+WebBot Confirmation Field Component
+-----------------------------------
+
+The WebBot Confirmation Field component is a run-time component that is replaced
+with the contents of a form field. It can be used to echo information, such as a
+user's name or e-mail address, back to the user as confirmation of the values
+they entered in a form. Another use for the WebBot Confirmation Field component
+is to verify the name and mailing address of a user who has submitted a form.
+
+WebBot Discussion Component
+---------------------------
+
+A WebBot Discussion component allows you to set up a discussion Web page. It
+collects information from a form, formats it into an HTML page, and then adds
+the page to a table of contents and to a text index. The WebBot Discussion
+Component gathers information from the form and stores it in one of a selection
+of formats, such as HTML or ASCII text. It is accessed from the Form Properties
+dialog box.
+
+WebBot HTML Markup Component
+----------------------------
+
+The WebBot HTML Markup component allows you to enter HTML tags that are not
+directly supported or available in FrontPage Editor. For example, FrontPage
+Editor versions 1.1 and 1.0 do not include support for table elements or the
+marquee element. To enter either of these elements in FrontPage Editor, you must
+use the WebBot HTML Markup component.
+
+NOTE: Because FrontPage Editor 1.1 and 1.0 do not support these elements, these
+elements will be preserved during export only; they will not be imported.
+FrontPage does not verify that your markup is valid HTML.
+
+WebBot Include Component
+------------------------
+
+The WebBot Include component is designed to replace itself with the contents of
+another file. The most common use for the WebBot Include component is to place
+the same text or graphic on every page in a multi-page Web. Examples of items
+that you might want to appear on each page in your Web include: copyright
+information, headers and footers, and product logos. The WebBot Include
+component requires the URL of the file that contains the text and images to be
+included on a page. Any modifications to the source document are automatically
+sent to each page for which it is included.
+
+WebBot Registration Component
+-----------------------------
+
+The WebBot Registration component allows you to automatically register users for
+access to a service. It adds the user to the services's authentication database;
+it can then gather information from the form and store it in one of a selection
+of formats, such as HTML or ASCII text. The WebBot Registration component is
+accessed from the Form Properties dialog box.
+
+WebBot Save Results Component
+-----------------------------
+
+The WebBot Save Results component gathers information from a form and stores it
+in one of a selection of formats (HTML, ASCII text). When you submit the form,
+the WebBot Save Results component appends the form information to a specified
+file in a specified format. It is accessed from the Form Properties dialog box.
+
+WebBot Scheduled Image Component
+--------------------------------
+
+The WebBot Scheduled Image component is used when you plan to replace one image
+with another within a specific time period. On the expiration date, the original
+image is no longer displayed and another image takes its place or the place
+where the image existed is left blank.
+
+When you insert a WebBot Scheduled Image component, you need to enter the name of
+the image and any alternate image to be included on the page. The image must be
+from the current Web.
+
+A WebBot Scheduled Image component runs when a change is made to your Web. To
+ensure proper timing of the WebBot Scheduled Image component, make some changes
+to your Web daily.
+
+WebBot Scheduled Include Component
+----------------------------------
+
+The WebBot Scheduled Include Page component is used to insert the contents of a
+file during a specified period of time. When the time period expires, the
+contents of the file are no longer displayed. You can specify an optional page
+to be included after a given date.
+
+A WebBot Scheduled Include Page component is run when a change is made to your
+Web. To ensure proper timing of the WebBot Scheduled Include Page component,
+make some changes to your Web daily.
+
+WebBot Search Component
+-----------------------
+
+Use the WebBot Search component to create a search form. The FrontPage Server
+Extensions maintain a list of words found in each page in a Web. If the Web
+includes a discussion group, FrontPage also maintains a dynamic list of words
+found in each entry of the discussion group. At run-time, the form created by
+the WebBot Search component returns a list of pages containing the words the
+user entered in the form. The words can include Boolean constructs, such as and,
+not, or, and parentheses.
+
+WebBot Substitution Component
+-----------------------------
+
+
+The WebBot Substitution component allows you to type an abbreviation that will be
+substituted by its expanded form. For example, you can set a variable, such as
+HTML, to represent "HyperText Markup Language" (without the quotation marks).
+Then, instead of writing out "HyperText Markup Language," you could type HTML,
+and HTML will expand to "HyperText Markup Language" at run-time. You define the
+variable as a parameter in the Web Settings dialog box (on the Tools menu, click
+Web Settings) in FrontPage Explorer.
+
+WebBot Table of Contents Component
+----------------------------------
+
+The WebBot Table of Contents component generates an outline of your Web. Each
+time the Web content changes, the outline is updated. It does not create a table
+of contents based on bookmarks. It uses the title element of the subpages to
+generate the table of contents.
+
+WebBot Timestamp Component
+--------------------------
+
+The WebBot Timestamp component inserts a date and time stamp that corresponds to
+the last time the page was edited or automatically updated.
+
+Additional query words: front page Vermeer substitution substituting replacing confirmation confirming reply echo annotate annotation comment
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : :; MACINTOSH:1.0; WINDOWS:1.0,1.1
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

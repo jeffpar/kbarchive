@@ -1,0 +1,69 @@
+DOCUMENT:Q130911  04-FEB-2002  [winnt]
+TITLE   :16-bit Applications Hang Using Sony CDU 3x CD-ROM
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade to Windows NT version 3.5 Service Pack 2, the following
+problems occur with the Sony CDU 3X CD-ROM drive:
+
+ - During Windows NT startup, the CD-ROM drive takes a long period of time to
+   initialize.
+
+ - When you run a 16-bit application, the CD-ROM drive light is active and the
+   application stops responding (hangs).
+
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+ - Place a CD-ROM disc in the drive before you start Windows NT.
+
+   -or-
+
+ - Replace the SLCD32.SYS file in your %SystemRoot%\SYSTEM32\DRIVERS
+   subdirectory with the older file of the same name located in the I386
+   directory of the Windows NT Server or Workstation 3.5 CD-ROM disc.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt sp2
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

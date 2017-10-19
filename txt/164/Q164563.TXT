@@ -1,0 +1,57 @@
+DOCUMENT:Q164563  20-FEB-2002  [sms]
+TITLE   :SMS: BIOS Manufacturer Field Is Limited to 25 Characters
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbDatabase kbInventory smsinv smsdatabasekbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+For clients that show a PC BIOS group under their personal computer properties,
+the BIOS Manufacturer field is limited to 25 characters. However, many BIOS
+Manufacturer strings are longer than this, so the reported value may be
+truncated.
+
+
+STATUS
+------
+
+Microsoft has confirmed this to be a problem in Systems Management Server version
+1.2. This problem was corrected in the latest Microsoft Systems Management
+Server version 1.2 U.S. Service Pack. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsms cmos phoenix
+
+======================================================================
+Keywords          : kbnetwork kbDatabase kbInventory smsinv smsdatabase kbfixlist
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

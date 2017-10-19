@@ -1,0 +1,81 @@
+DOCUMENT:Q253677  24-FEB-2002  [vbwin]
+TITLE   :BUG: VBCE Application Terminates When Replacing ImageList Image
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Replace method of the ImageList control, a Windows CE Toolkit for
+Visual Basic (VBCE) application may unexpectedly terminate. No errors are raised
+when the termination occurs. This problem only occurs when the application is
+run on the remote device.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This behavior only occurs in the Windows CE Platform.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Windows CE Project in Visual Basic. Form1 is created by default.
+
+2. From the Project menu, choose Components, and then add the Microsoft CE
+   ImageList Control 6.0 to the project.
+
+3. Add an ImageList control to Form1.
+
+4. Add the following code behind Form1:
+
+   Private Sub Form_Click()
+       Dim i as Integer
+       ImageList1.Add "\windows\pyramid.bmp"
+       For i = 1 To 100
+           ImageList1.Replace 0, "\windows\tiles.bmp"
+       Next i
+   End Sub
+
+5. Press the F5 key to run the program.
+
+6. Click on Form1. Notice that Form1 disappears.
+
+Additional query words: wince vbce vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

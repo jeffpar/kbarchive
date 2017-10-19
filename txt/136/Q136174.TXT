@@ -1,0 +1,379 @@
+DOCUMENT:Q136174  31-JUL-2001  [powerpt]
+TITLE   :PPT7: CABfile Contents, Disks 1-6
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbsetup kbdta kbdiskdir kbdir
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the list of the files contained in each of the CABfiles on
+PowerPoint for Windows 95 Disks 1 through 6.
+
+NOTE: Disk 1 and Disk 12 are standard 1.44 MB formatted disks; Disks 2 through 11
+use the DMF format (1.68 MB).
+
+Disk 12 is the PowerPoint Viewer and Translator Disk.
+
+MORE INFORMATION
+================
+
+
+Disk 1 contains the following files:
+-----------------------------------
+
+Volume in drive A (RETAIL VERSION)
+
+08/01/95  06:51p                87,916 Extract.exe
+08/01/95  06:51p                15,503 Network.txt
+08/01/95  05:25p                12,419 Ppreadme.txt
+07/31/95  06:12p             1,193,627 PPT1.CAB
+07/31/95  06:42p                51,386 PPT95.INF
+07/31/95  06:41p                 1,352 PPT95.PDF
+08/01/95  06:51p                72,992 Setup.exe
+08/01/95  11:57a                   149 Setup.ini
+08/01/95  08:47p                 1,639 Setup.lst
+08/01/95  06:51p                    84 Setup.tdf
+              10 File(s)      1,437,067 bytes
+
+Volume in drive A (UPGRADE VERSION)
+
+08/01/95  06:51p                87,916 Extract.exe
+08/01/95  06:51p                15,503 Network.txt
+08/01/95  05:25p                12,419 Ppreadme.txt
+07/31/95  06:59p             1,192,925 PPT1.CAB
+07/31/95  06:42p                51,386 PPT95.INF
+07/31/95  06:41p                 1,352 PPT95.PDF
+08/01/95  06:51p                72,992 Setup.exe
+08/01/95  11:57a                   149 Setup.ini
+08/01/95  08:47p                 1,639 Setup.lst
+08/01/95  06:51p                    84 Setup.tdf
+              10 File(s)      1,436,365 bytes
+
+Cabinet File Contents for Each Disk
+===================================
+
+Cabinet PPT1.CAB (RETAIL VERSION)
+---------------------------------
+
+08-01-1995  3:40:10p ----       133,104 setup.stf
+08-01-1995  4:51:32p ----        72,992 Acme.exe
+08-01-1995  9:57:40a ----        70,656 ppt95inv.dll
+08-01-1995 12:00:00p ----        47,856 ADMIN.INF
+08-01-1995 12:44:30p ----       724,480 off95_bb.dll
+08-01-1995  9:57:52a ----        26,112 Ffast_bb.dll
+08-01-1995  3:26:10p ----        22,049 Acmsetup.hlp
+08-01-1995  9:57:52a ----        41,700 Offsetup.ttf
+08-01-1995  4:51:28p ----       330,752 Acmsetup.exe
+08-01-1995  9:57:52a ----             0 Office\ffastlog.txt
+08-01-1995  4:51:30p ----       249,344 Mssetup.dll
+08-01-1995  6:47:40p ----         1,556 pptacme.lst
+08-01-1995  9:57:56a ----       253,952 Msvcrt20.dll
+08-01-1995 10:06:34a ----        23,552 OS\System\Docobj.dll
+08-01-1995  9:57:56a ----        93,184 OS\System\Mso5enu.dll
+08-01-1995 10:06:36a ----       939,520 OS\System\Mso95.dll
+08-01-1995 10:06:36a ----        10,240 OS\System\Mso95fx.dll
+08-01-1995 10:06:36a ----        11,264 OS\System\Msothunk.dll
+08-01-1995  9:57:56a ----        53,760 OS\System\Openenu.dll
+08-01-1995  9:57:58a ----        54,784 OS\System\Commtb32.dll
+08-01-1995  9:57:54a ----        27,648 OS\System\Mstool32.dll
+08-01-1995  9:58:00a ----       107,008 OS\System\Ttemb32.dll
+08-01-1995  9:57:52a ----        86,528 Office\Findfast.exe
+08-01-1995  9:57:52a ----        19,456 OS\System\Findfast.cpl
+                24 Files      3,401,497 bytes
+
+Cabinet PPT1.CAB (UPGRADE VERSION)
+----------------------------------
+
+08-01-1995  4:27:36p ----       133,177 setup.stf
+08-01-1995  4:51:32p ----        72,992 Acme.exe
+08-01-1995  9:57:40a ----        70,656 ppt95inv.dll
+08-01-1995 12:00:00p ----        47,856 ADMIN.INF
+08-01-1995 12:44:30p ----       724,480 off95_bb.dll
+08-01-1995  9:57:52a ----        26,112 Ffast_bb.dll
+08-01-1995  3:26:10p ----        22,049 Acmsetup.hlp
+08-01-1995  9:57:52a ----        41,700 Offsetup.ttf
+08-01-1995  4:51:28p ----       330,752 Acmsetup.exe
+08-01-1995  9:57:52a ----             0 Office\ffastlog.txt
+08-01-1995  4:51:30p ----       249,344 Mssetup.dll
+08-01-1995  6:47:40p ----         1,556 pptacme.lst
+08-01-1995  9:57:56a ----       253,952 Msvcrt20.dll
+08-01-1995 10:06:34a ----        23,552 OS\System\Docobj.dll
+08-01-1995  9:57:56a ----        93,184 OS\System\Mso5enu.dll
+08-01-1995 10:06:36a ----       939,520 OS\System\Mso95.dll
+08-01-1995 10:06:36a ----        10,240 OS\System\Mso95fx.dll
+08-01-1995 10:06:36a ----        11,264 OS\System\Msothunk.dll
+08-01-1995  9:57:56a ----        53,760 OS\System\Openenu.dll
+08-01-1995  9:57:58a ----        54,784 OS\System\Commtb32.dll
+08-01-1995  9:57:54a ----        27,648 OS\System\Mstool32.dll
+08-01-1995  9:58:00a ----       107,008 OS\System\Ttemb32.dll
+08-01-1995  9:57:52a ----        86,528 Office\Findfast.exe
+08-01-1995  9:57:52a ----        19,456 OS\System\Findfast.cpl
+                24 Files      3,401,570 bytes
+
+Cabinet PPT2.CAB
+----------------
+
+08-01-1995  3:26:10p ----         1,340 Ppt95.pdf
+08-01-1995  9:57:58a ----       398,416 OS\System\Vbrun300.dll
+08-01-1995  4:51:38p ----         6,352 OS\System\Visxutil.dll
+08-01-1995  9:58:10a ----        62,080 Office\Qoffice.hlp
+08-01-1995  4:51:38p ----        28,672 OS\System\Hlp95en.dll
+08-01-1995  4:51:38p ----        14,336 OS\System\Visx.exe
+08-01-1995  9:58:16a ----        41,408 OS\Fonts\Hatten.ttf
+08-01-1995  9:58:20a ----        32,885 Office\Pss.hlp
+08-01-1995  9:58:20a ----           783 Office\Pss.cnt
+08-01-1995  9:58:20a ----         8,517 Office\Psso.hlp
+08-01-1995  9:58:20a ----           152 Office\Psso.cnt
+08-01-1995  9:58:20a ----        32,994 Office\Eula.hlp
+08-01-1995  9:58:20a ----           258 Office\Eula.cnt
+08-01-1995  9:58:20a ----        28,211 Office\Eulao.hlp
+08-01-1995  9:58:20a ----           265 Office\Eulao.cnt
+08-01-1995  9:58:22a ----        18,432 OS\MSAPPS\MSinfo\imgwalk.dll
+08-01-1995  9:58:22a ----        15,408 OS\MSAPPS\MSinfo\msinf16h.exe
+08-01-1995  9:58:24a ----       321,024 OS\MSAPPS\MSinfo\Msinfo32.exe
+08-01-1995  9:58:24a ----        26,275 OS\MSAPPS\MSinfo\Msinfo32.hlp
+08-01-1995  9:58:24a ----         2,441 OS\MSAPPS\MSinfo\Msinfo32.cnt
+08-01-1995  3:25:38p ----        35,840 Template\Designs\Contemp.pot
+08-01-1995  3:25:42p ----        88,576 Template\Designs\Profess.pot
+08-01-1995  3:25:44p ----        30,208 Template\Designs\Soaring.pot
+08-01-1995  3:25:34p ----        22,528 Template\Blank.pot
+08-01-1995  3:25:34p ----        51,200 Template\Designs\Azure.pot
+08-01-1995  3:25:42p ----        35,328 Template\Designs\Multbars.pot
+08-01-1995  3:25:34p ----        44,032 Template\Designs\Bevel.pot
+08-01-1995  3:25:34p ----        31,232 Template\Designs\Bluediag.pot
+08-01-1995  3:25:44p ----        26,112 Template\Designs\Sidebar.pot
+08-01-1995  3:25:44p ----        28,672 Template\Designs\Sidefade.pot
+08-01-1995  3:25:48p ----        96,768 Template\Designs\Theater.pot
+08-01-1995  3:25:38p ----        30,720 Template\Designs\Dbllines.pot
+08-01-1995  3:25:50p ----        51,200 Template\Designs\Twinkles.pot
+08-01-1995  3:25:48p ----        85,504 Template\Designs\tatami.pot
+08-01-1995  3:25:34p ----        76,288 Template\Designs\blueweav.pot
+08-01-1995  3:25:34p ----        95,232 Template\Designs\bedrock.pot
+08-01-1995  3:25:36p ----        88,064 Template\Designs\brnmrbl.pot
+08-01-1995  9:58:28a ----     1,505,984 OS\MSAPPS\Msgraph5\Graph5.exe
+08-01-1995 10:06:38a ----       123,184 OS\MSAPPS\Msgraph5\Grintl.dll
+                39 Files      3,586,921 bytes
+
+Cabinet PPT3.CAB
+----------------
+
+OS\MSAPPS\Msgraph5\Grintl.dll : Starts in cabinet PPT2.CAB on disk
+ 'Microsoft PowerPoint Setup: Disk 2'
+08-01-1995  9:58:28a ----         9,904 OS\System\Scp.dll
+08-01-1995  9:58:28a ----       102,032 OS\System\Sdm.dll
+08-01-1995  9:58:28a ----        57,344 OS\MSAPPS\Msgraph5\Gren50.olb
+08-01-1995 10:06:38a ----       501,176 OS\MSAPPS\Msgraph5\Msgraph.hlp
+08-01-1995 10:06:36a ----         4,987 OS\MSAPPS\Msgraph5\Graph5.reg
+08-01-1995  9:58:28a ----             0 OS\MSAPPS\Msgraph5\Msgraph.gid
+08-01-1995  9:58:28a ----             0 OS\MSAPPS\Msgraph5\Msgraph.fts
+08-01-1995  9:58:32a ----       560,640 OS\MSAPPS\Equation\Eqnedt32.exe
+08-01-1995  9:58:34a ----       145,820 OS\MSAPPS\Equation\Eqnedt32.hlp
+08-01-1995  9:58:32a ----         2,921 OS\MSAPPS\Equation\Eqnedt32.cnt
+08-01-1995 10:06:40a ----         2,699 OS\MSAPPS\Equation\Eqnedt32.reg
+08-01-1995  9:58:48a ----             0 OS\MSAPPS\Equation\Eqnedt32.gid
+08-01-1995  9:58:48a ----             0 OS\MSAPPS\Equation\Eqnedt32.fts
+08-01-1995  9:58:18a ----         7,656 OS\Fonts\Mtextra.ttf
+08-01-1995  9:58:12a ----        62,016 OS\Fonts\Arialn.ttf
+08-01-1995  9:58:12a ----        59,776 OS\Fonts\Antqua.ttf
+08-01-1995  9:58:12a ----        62,332 OS\Fonts\Antquabi.ttf
+08-01-1995  9:58:12a ----        62,828 OS\Fonts\Antquab.ttf
+08-01-1995  9:58:12a ----        57,960 OS\Fonts\Antquai.ttf
+08-01-1995  9:58:14a ----        64,544 OS\Fonts\Bookos.ttf
+08-01-1995  9:58:14a ----        69,244 OS\Fonts\Bookosbi.ttf
+08-01-1995  9:58:14a ----        68,216 OS\Fonts\Bookosb.ttf
+08-01-1995  9:58:14a ----        65,564 OS\Fonts\Bookosi.ttf
+08-01-1995  9:58:16a ----        61,280 OS\Fonts\gothic.ttf
+08-01-1995  9:58:18a ----        66,420 OS\Fonts\Schlbk.ttf
+08-01-1995  9:58:18a ----        69,056 OS\Fonts\Schlbkbi.ttf
+08-01-1995  9:58:18a ----        69,632 OS\Fonts\Schlbkb.ttf
+08-01-1995  9:58:18a ----        68,792 OS\Fonts\Schlbki.ttf
+08-01-1995  9:58:18a ----        76,920 OS\Fonts\Mtsorts.ttf
+08-01-1995  9:58:12a ----        69,496 OS\Fonts\Alger.ttf
+08-01-1995  9:58:14a ----        47,700 OS\Fonts\Ariblk.ttf
+08-01-1995  9:58:14a ----        33,956 OS\Fonts\Bragga.ttf
+08-01-1995  9:58:14a ----        35,360 OS\Fonts\Britanic.ttf
+08-01-1995  9:58:14a ----        45,728 OS\Fonts\Brushsci.ttf
+08-01-1995  9:58:14a ----        49,288 OS\Fonts\Colonna.ttf
+                35 Files      2,661,287 bytes
+
+Cabinet PPT4.CAB
+----------------
+
+OS\Fonts\Brushsci.ttf : Starts in cabinet PPT3.CAB on disk
+ 'Microsoft PowerPoint Setup: Disk 3'
+OS\Fonts\Colonna.ttf : Starts in cabinet PPT3.CAB on disk
+ 'Microsoft PowerPointSetup: Disk 3'
+08-01-1995  9:58:14a ----        54,468 OS\Fonts\Desdemon.ttf
+08-01-1995  9:58:16a ----        78,096 OS\Fonts\Ftltlt.ttf
+08-01-1995  9:58:16a ----        81,580 OS\Fonts\Gara.ttf
+08-01-1995  9:58:16a ----        85,436 OS\Fonts\Garabd.ttf
+08-01-1995  9:58:16a ----        85,608 OS\Fonts\Garait.ttf
+08-01-1995  9:58:16a ----        56,936 OS\Fonts\Impact.ttf
+08-01-1995  9:58:16a ----        28,872 OS\Fonts\Kino.ttf
+08-01-1995  9:58:18a ----        46,044 OS\Fonts\Maturasc.ttf
+08-01-1995  9:58:18a ----        40,528 OS\Fonts\Playbill.ttf
+08-01-1995  9:58:18a ----        39,188 OS\Fonts\Latinwd.ttf
+08-01-1995  9:58:14a ----        39,960 OS\Fonts\Arlrdbd.ttf
+08-01-1995  9:58:50a ----       109,568 OS\MSAPPS\Textconv\Lotus32.cnv
+08-01-1995  9:58:50a ----       189,952 OS\MSAPPS\Textconv\Macwrd32.cnv
+08-01-1995 10:06:40a ----         2,234 OS\MSAPPS\Textconv\Rtf_mw5.txt
+08-01-1995  9:58:50a ----       214,016 OS\MSAPPS\Textconv\Doswrd32.cnv
+08-01-1995 10:06:40a ----         3,386 OS\MSAPPS\Textconv\Rtf_pcw.txt
+08-01-1995  9:58:52a ----       166,400 OS\MSAPPS\Textconv\Rftdca32.cnv
+08-01-1995 10:06:40a ----         1,911 OS\MSAPPS\Textconv\Rtf_dca.txt
+08-01-1995  9:58:52a ----       183,808 OS\MSAPPS\Textconv\Wnwrd232.cnv
+08-01-1995  9:58:52a ----       143,360 OS\MSAPPS\Textconv\Mswrd632.cnv
+08-01-1995  9:58:54a ----       395,264 OS\MSAPPS\Textconv\Wpft532.cnv
+08-01-1995  9:58:52a ----       102,912 OS\MSAPPS\Textconv\Wpequ532.dll
+08-01-1995 10:06:40a ----         5,528 OS\MSAPPS\Textconv\Rtf_wp5.txt
+08-01-1995  9:58:56a ----        77,824 OS\MSAPPS\Textconv\Write32.cnv
+08-01-1995 10:06:42a ----       189,440 OS\MSAPPS\Textconv\Txtlyt32.cnv
+08-01-1995  9:58:54a ----       222,720 OS\MSAPPS\Textconv\Wpft632.cnv
+08-01-1995  9:58:18a ----        80,008 OS\Fonts\Linedraw.ttf
+08-01-1995  9:58:56a ----           586 OS\Mstxtcnv.ini
+08-01-1995  4:51:44p ----       280,576 OS\MSAPPS\Grphflt\Dxfimp32.flt
+08-01-1995  4:51:44p ----        26,624 OS\MSAPPS\Grphflt\Gifimp32.flt
+08-01-1995  4:51:44p ----        35,840 OS\MSAPPS\Grphflt\Msgif32.dll
+08-01-1995  4:51:50p ----         1,087 OS\MSAPPS\Grphflt\Ms.gif
+08-01-1995  4:51:42p ----        54,784 OS\MSAPPS\Grphflt\Cgmimp32.flt
+08-01-1995  4:51:50p ----         1,586 OS\MSAPPS\Grphflt\Ms.cgm
+08-01-1995  4:51:42p ----       138,240 OS\MSAPPS\Grphflt\Cdrimp32.flt
+                35 Files      3,264,370 bytes
+
+Cabinet PPT5.CAB
+----------------
+
+OS\MSAPPS\Grphflt\Cdrimp32.flt : Starts in cabinet PPT4.CAB on disk
+ 'Microsoft PowerPoint Setup: Disk 4'
+08-01-1995  4:51:48p ----        68,608 OS\MSAPPS\Grphflt\Wpgexp32.flt
+08-01-1995  4:51:48p ----       146,944 OS\MSAPPS\Grphflt\Wpgimp32.flt
+08-01-1995  4:51:50p ----         1,372 OS\MSAPPS\Grphflt\Ms.wpg
+08-01-1995  4:51:44p ----        30,208 OS\MSAPPS\Grphflt\Epsimp32.flt
+08-01-1995  4:51:50p ----        12,274 OS\MSAPPS\Grphflt\Ms.eps
+08-01-1995  4:51:44p ----       243,712 OS\MSAPPS\Grphflt\Hpglim32.flt
+08-01-1995  4:51:46p ----        45,568 OS\MSAPPS\Grphflt\Pcdimp32.flt
+08-01-1995  4:51:46p ----        25,600 OS\MSAPPS\Grphflt\Mspcd32.dll
+08-01-1995  4:51:46p ----       116,736 OS\System\Pcdlib32.dll
+08-01-1995  4:51:46p ----        48,128 OS\MSAPPS\Grphflt\Pictim32.flt
+08-01-1995  4:51:50p ----         3,064 OS\MSAPPS\Grphflt\Ms.pct
+08-01-1995  4:51:44p ----       265,728 OS\MSAPPS\Grphflt\Drwimp32.flt
+08-01-1995  4:51:50p ----         3,615 OS\MSAPPS\Grphflt\Ms.drw
+08-01-1995  4:51:46p ----        26,624 OS\MSAPPS\Grphflt\Pcximp32.flt
+08-01-1995  4:51:46p ----        32,256 OS\MSAPPS\Grphflt\Mspcx32.dll
+08-01-1995  4:51:50p ----         1,461 OS\MSAPPS\Grphflt\Ms.pcx
+08-01-1995  4:51:46p ----        29,696 OS\MSAPPS\Grphflt\Tiffim32.flt
+08-01-1995  4:51:46p ----        69,120 OS\MSAPPS\Grphflt\Mstiff32.dll
+08-01-1995  4:51:50p ----         2,054 OS\MSAPPS\Grphflt\Ms.tif
+08-01-1995  4:51:46p ----        26,624 OS\MSAPPS\Grphflt\Tgaimp32.flt
+08-01-1995  4:51:46p ----        32,768 OS\MSAPPS\Grphflt\Mstga32.dll
+08-01-1995  4:51:44p ----        38,912 OS\MSAPPS\Grphflt\Msbmp32.dll
+08-01-1995  4:51:42p ----        26,624 OS\MSAPPS\Grphflt\Bmpimp32.flt
+08-01-1995  4:51:46p ----        13,312 OS\MSAPPS\Grphflt\Wmfimp32.flt
+08-01-1995  4:51:44p ----        26,624 OS\MSAPPS\Grphflt\Jpegim32.flt
+08-01-1995  4:51:46p ----       104,448 OS\MSAPPS\Grphflt\Msjpeg32.dll
+08-01-1995  3:26:16p ----        45,056 Template\Present\Badnews.pot
+08-01-1995  3:26:18p ----        65,024 Template\Present\General.pot
+08-01-1995  3:26:18p ----        49,152 Template\Present\Progress.pot
+08-01-1995  3:26:20p ----        64,512 Template\Present\Selling.pot
+08-01-1995  3:26:20p ----        41,984 Template\Present\Strategy.pot
+08-01-1995  3:26:22p ----        44,544 Template\Present\Training.pot
+08-01-1995  3:26:16p ----        53,248 Template\Present\Badnewsx.pot
+08-01-1995  3:26:18p ----        72,704 Template\Present\Generalx.pot
+08-01-1995  3:26:20p ----        60,928 Template\Present\Progresx.pot
+08-01-1995  3:26:20p ----        73,728 Template\Present\Sellingx.pot
+08-01-1995  3:26:20p ----        45,568 Template\Present\Strategx.pot
+08-01-1995  3:26:22p ----        55,296 Template\Present\Traininx.pot
+08-01-1995  3:26:16p ----        47,616 Template\Present\busnpln.pot
+08-01-1995  3:26:18p ----        52,736 Template\Present\comeetng.pot
+08-01-1995  3:26:18p ----        44,032 Template\Present\creative.pot
+08-01-1995  3:26:18p ----        55,808 Template\Present\finrept.pot
+08-01-1995  3:26:18p ----        58,368 Template\Present\mktgpln.pot
+08-01-1995  3:26:18p ----        43,008 Template\Present\orient.pot
+08-01-1995  3:26:22p ----        28,160 Template\Present\topten.pot
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Msaccess.mcc
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Msexcel.mcc
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Msoff95.mcc
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Msoffice.mcc
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Msork.mcc
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Msppt.mcc
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Mssched.mcc
+08-01-1995  9:58:58a ----         6,144 Office\MSN\Msword.mcc
+08-01-1995  9:59:00a ----       106,496 OS\System\Mapivi32.dll
+08-01-1995  9:59:00a ----        13,824 OS\System\Mapivitk.dll
+08-01-1995  9:59:02a ----        14,848 Office\Fastboot.exe
+08-01-1995  9:57:54a ----       108,032 OS\System\Mfcuia32.dll
+08-01-1995  9:57:54a ----       133,904 OS\System\Mfcans32.dll
+08-01-1995  9:57:54a ----        27,136 OS\System\Ctl3d32.dll
+08-01-1995  9:59:04a ----       104,960 OS\MSAPPS\Proof\Mssp32.dll
+08-01-1995  9:59:10a ----       176,839 OS\MSAPPS\Proof\Mssp_am.lex
+08-01-1995  9:59:10a ----       176,298 OS\MSAPPS\Proof\Mssp_br.lex
+08-01-1995  9:59:16a ----       275,968 Powerpnt\Xlators\Hg30dos.pdi
+08-01-1995  9:59:16a ----       219,136 Powerpnt\Xlators\Hg23dos.pdi
+08-01-1995  9:59:16a ----       207,872 Powerpnt\Xlators\Fl40dos.pdi
+08-01-1995  9:59:14a ----       296,448 Powerpnt\Xlators\Fl21win.pdi
+08-01-1995  9:59:20a ----       418,816 OS\MSAPPS\Wordart\Wrdart32.exe
+08-01-1995  9:59:20a ----        46,452 OS\MSAPPS\Wordart\Wrdart32.hlp
+                68 Files      4,819,733 bytes
+
+Cabinet PPT6.CAB
+----------------
+
+OS\MSAPPS\Wordart\Wrdart32.hlp : Starts in cabinet PPT5.CAB on disk
+ 'Microsoft PowerPoint Setup: Disk 5'
+08-01-1995  9:59:20a ----         2,948 OS\MSAPPS\Wordart\Wrdart32.reg
+08-01-1995  9:59:18a ----        72,704 OS\System\Pubole32.dll
+08-01-1995  9:59:20a ----         1,354 OS\MSAPPS\Wordart\Wrdart32.cnt
+08-01-1995  9:59:20a ----        12,929 OS\MSAPPS\Wordart\Qwrdrt32.hlp
+08-01-1995  9:59:22a ----             0 OS\MSAPPS\Wordart\Wrdart32.gid
+08-01-1995  9:59:22a ----             0 OS\MSAPPS\Wordart\Wrdart32.fts
+08-01-1995  9:59:22a ----             0 OS\MSAPPS\Wordart\Qwrdrt32.fts
+08-01-1995  3:25:54p ----       269,824 Powerpnt\Graflink.exe
+08-01-1995  3:25:54p ----        55,141 Powerpnt\Pptgeni.hlp
+08-01-1995  3:25:54p ----       820,224 Powerpnt\Geniwiz.ppa
+08-01-1995  3:25:52p ----        85,504 Powerpnt\Geniwiz.dll
+08-01-1995  9:59:22a ----             0 Powerpnt\Pptgeni.gid
+08-01-1995 10:16:40a ----        15,184 Powerpnt\Pptview.exe
+08-01-1995 10:16:40a ----     1,657,600 Powerpnt\Pptview.dll
+08-01-1995  1:02:14p ----        22,016 OS\System\Pubdlg.dll
+08-01-1995 10:06:44a ----       453,120 OS\MSAPPS\Artgalry\Artgalry.exe
+08-01-1995 10:06:44a ----        26,533 OS\MSAPPS\Artgalry\Artgalry.hlp
+08-01-1995 10:06:44a ----        12,288 OS\System\Picstore.dll
+08-01-1995 10:24:52a ----             0 OS\MSAPPS\Artgalry\Artgalry.gid
+08-01-1995 10:06:42a ----         1,364 OS\MSAPPS\Artgalry\Artgalry.cnt
+08-01-1995 10:06:44a ----        11,767 OS\MSAPPS\Artgalry\Qartglry.hlp
+08-01-1995 10:00:10a ----       816,720 OS\System\Vba32.dll
+                22 Files      4,337,220 bytes
+
+Additional query words: 7.00 ppt95 cab extract diskettes directory macppt winppt Powerpnt
+
+======================================================================
+Keywords          : kbsetup kbdta kbdiskdir kbdir 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

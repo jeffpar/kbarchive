@@ -1,0 +1,67 @@
+DOCUMENT:Q82318  10-MAY-2001  [win3x]
+TITLE   :Stack Overflow Can Cause Windows to Hang
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Stack overflows can cause Microsoft Windows to stop responding (hang). If
+Windows hangs intermittently, try adding the following line to the CONFIG.SYS
+file:
+
+      STACKS=9,256
+
+MORE INFORMATION
+================
+
+The addition of the STACKS command line causes MS-DOS to reserve space for
+hardware interrupt handling (rather than an application's stack). In general,
+the default setting gives you more free memory; however, there are situations
+when the hardware interrupt routines require more space. On IBM machines,
+STACKS=0,0 is the default; on all other machines, STACKS=9,128 is the default.
+
+One such situation is when you are running SMARTDrive (SMARTDRV.EXE) version 4.0
+with certain network cards. Windows Setup should modify the CONFIG.SYS file
+accordingly when Windows is installed if it detects a known problem
+configuration.
+
+If Windows is hanging or crashing, particularly if SMARTDRV.EXE 4.0 is running,
+or a network is installed, try adding the STACKS command to the CONFIG.SYS file
+and see if that corrects the problem.
+
+For more information, please query on the following words in the Microsoft
+Knowledge Base: STACKS and OVERVIEW
+
+Additional query words: 3.0 3.00 3.0a 3.00a 3.1 3.10 3.11
+
+======================================================================
+Keywords          : kbProd2Web 
+Technology        : kbWinMEsearch kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWinME
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

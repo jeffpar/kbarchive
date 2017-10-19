@@ -1,0 +1,83 @@
+DOCUMENT:Q187500  02-MAY-1999  [iis]
+TITLE   :Unable to Log On to an Upgraded IIS 3.0/SSL Server
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade from Internet Information Server (IIS) version 3.0 to IIS 4.0,
+you may be unable to log on to your Secure Sockets Layer (SSL) enabled sites.
+
+CAUSE
+=====
+
+The upgrade procedure does not check for keys stored by Setkey.exe. Therefore,
+these keys are not available in IIS 4.0 after the upgrade.
+
+NOTE: Setkey.exe and Keygen.exe are designed to work with Internet Information
+Server 3.0 only.
+
+WORKAROUND
+==========
+
+To work around this problem, perform one of the following:
+
+ - Before you upgrade, start the Keyring.exe in IIS 3.0 at least one time and
+   commit changes. The SSL key will be stored to the place recognized by the
+   upgrade process.
+
+   -or-
+
+ - After you upgrade, reinstall the SSL key using Keyring.exe in IIS 4.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+After you install an SSL key with Setkey.exe and start the Keyring.exe, you may
+receive a pop-up message stating that keys were found. Keep in mind that
+Keyring.exe recognizes them but did not install them. Setkey.exe installs the
+SSL key to a different location in the registry than Keyring.exe. IIS 3.0 Secure
+connections will work fine with keys installed by Setkey.exe and Keyring.exe.
+
+
+Additional query words: security
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

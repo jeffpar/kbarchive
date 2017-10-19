@@ -1,0 +1,165 @@
+DOCUMENT:Q194861  11-FEB-2002  [visualc]
+TITLE   :FIX: "AtlReportError: no overloaded function takes X parameters"
+PRODUCT :Microsoft C Compiler
+PROD/VER::3.0,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbVC600bug kbATL300bug kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL) 3.0, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Porting an ATL 2.x project to ATL 3.0 might give you the following compilation
+error:
+
+   error C2661: 'AtlReportError' : no overloaded function takes 2 parameters.
+
+CAUSE
+=====
+
+AtlReportError() does not have any default parameters in ATL 3.0.
+AtlReportError() in ATL 2.1 did have default parameters.
+
+RESOLUTION
+==========
+
+Specify all the parameters required by AtlReportError() or complete the
+following steps:
+
+1. Use the CComCoClass static member Error() which accepts default arguments.
+   For example, replace:
+
+         return AtlReportError(
+            CLSID_PolyCtl, _T("Must have between 3&100 sides"));
+
+   with:
+
+         // If your class is derived from CComCoClass<CMyClass,
+         // &CLSID_MyClass>:
+         return Error(_T("Must must have between 3 & 100 sides"));
+
+         // If not derived from CComCoClass<>:
+         return CComCoClass<CMyClass, &CLSID_MyClass>::Error(
+            _T("Must must have between 3 & 100 sides"));
+
+2. Modify \vc98\atl\include\atlcom.h so that all the function prototypes for
+   AtlReportError() accept default arguments. Essentially use the same
+   prototypes used in ATL 2.1. The following code lists the various prototypes
+   of AtlReportError and their default argument equivalents in the same order as
+   AtlCom.h:
+
+    - Replace:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid, UINT nID,
+            const IID& iid, HRESULT hRes, HINSTANCE hInst)
+
+      with:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid, UINT nID,
+         const IID& iid = GUID_NULL, HRESULT hRes = 0,
+         HINSTANCE hInst = _Module.GetResourceInstance())
+
+    - Replace:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid, UINT nID,
+            DWORD dwHelpID, LPCOLESTR lpszHelpFile, const IID& iid, HRESULT
+               hRes,
+            HINSTANCE hInst)
+
+      with:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid, UINT nID,
+            DWORD dwHelpID, LPCOLESTR lpszHelpFile, const IID& iid =
+               GUID_NULL,
+            HRESULT hRes = 0, HINSTANCE hInst = _Module.GetResourceInstance())
+
+    - Replace:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCSTR lpszDesc, DWORD dwHelpID, LPCSTR lpszHelpFile, const IID&
+               iid,
+            HRESULT hRes)
+
+      with:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCSTR lpszDesc, DWORD dwHelpID, LPCSTR lpszHelpFile,
+            const IID& iid = GUID_NULL, HRESULT hRes = 0)
+
+    - Replace:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCSTR lpszDesc, const IID& iid, HRESULT hRes)
+
+      with:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCSTR lpszDesc, const IID& iid = GUID_NULL, HRESULT hRes = 0)
+
+    - Replace:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCOLESTR lpszDesc, const IID& iid, HRESULT hRes)
+
+      with:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCOLESTR lpszDesc, const IID& iid = GUID_NULL, HRESULT hRes = 0)
+
+    - Replace:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCOLESTR lpszDesc, DWORD dwHelpID,LPCOLESTR lpszHelpFile,
+            const IID& iid, HRESULT hRes)
+
+      with:
+
+         inline HRESULT WINAPI AtlReportError(const CLSID& clsid,
+            LPCOLESTR lpszDesc, DWORD dwHelpID, LPCOLESTR lpszHelpFile,
+            const IID& iid = GUID_NULL, HRESULT hRes = 0)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jaganathan
+Thangavelu, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVC600bug kbATL300bug kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

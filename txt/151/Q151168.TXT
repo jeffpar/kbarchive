@@ -1,0 +1,111 @@
+DOCUMENT:Q151168  30-JUL-2001  [visualc]
+TITLE   :FIX: Abstract Class Instantiated as a Temporary Object
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbLangCPP kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Standard C++ Library, included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In certain cases, Visual C++ allows abstract classes to be instantiated as
+temporary objects. The sample code below demonstrates this.
+
+CAUSE
+=====
+
+An abstract class should not be allowed to be instantiated as an object. An
+abstract class is any class with at least one pure virtual function. This is
+part of the definition of the C++ language.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Microsoft Visual C++,
+32-bit Edition, version 4.1.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      /* Compile options needed: /c /GX
+      */ 
+
+   class Exception    //abstract class
+   {
+
+      /* Compile options needed: /c /GX
+      */ 
+
+      class Exception    //abstract class
+      {
+          int m_nCause;
+          char * m_pszMsg;
+      public:
+          Exception();
+          Exception( int, const char * = 0);
+          Exception( const Exception &);
+          ~Exception();
+          inline virtual int Cause() = 0;           //pure virtual function
+          inline virtual const char * Msg() = 0;    //pure virtual function
+      };
+
+      int Exception::Cause()
+      {
+          return m_nCause;
+      }
+
+      const char * Exception::Msg()
+      {
+          return m_pszMsg;
+      }
+
+      void main()
+      {
+          try
+          {
+              int r = Exception(55,"no error").Cause();    //should be an
+      ERROR
+              throw Exception(-1,"error");                 //should be an
+      ERROR
+          }
+          catch (Exception&e)
+          {
+          }
+      }
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbLangCPP kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,84 @@
+DOCUMENT:Q263242  12-NOV-2001  [homemm]
+TITLE   :Encarta 2000 Error Message: Windows Cannot Find Program.exe
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+ - Microsoft Encarta World English Dictionary, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to register one of the programs listed at the beginning of this
+article, you may receive the following error message:
+
+   Windows cannot find Program.exe.
+
+CAUSE
+=====
+
+This behavior can occur if the default Web browser on your computer is not
+properly configured.
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall your Web browser.
+
+For information about how to obtain and install the latest version of Microsoft
+Internet Explorer, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/windows/ie/
+
+For information about how to obtain and install the latest version of Netscape
+Communicator, visit the following Netscape Web site:
+
+   http://www.netscape.com/computing/download/index.html
+
+MORE INFORMATION
+================
+
+You can register the program online by using your Product Identification Number
+(PID). To do this, visit the following Web site
+
+   http://encarta.msn.com/products/deluxe/activate.asp?PID=<PID>
+
+where <PID> is your Product Identification Number.
+
+To identify your PID:
+
+1. Start one of the programs listed at the beginning of this article.
+
+2. On the Help menu, click About This Product or About Encarta InterActive World
+   Atlas.
+
+Additional query words: 1.00 multi multi-media media mm ewa2k ewed registration
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2000 kbEncartaWorldEngDict
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

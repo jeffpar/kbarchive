@@ -1,0 +1,60 @@
+DOCUMENT:Q85848  01-NOV-1999  [win95x]
+TITLE   :Windows 3.1 VGA Driver and GRID 1550SX Laptops
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+GRID Systems has confirmed that the Windows 3.1 VGA video driver may not work on
+some GRID 1550sx laptop computers when running in 386 enhanced mode. The
+computer may hang when exiting an MS-DOS-based application running in a full
+screen in Windows 3.1.
+
+WORKAROUND
+==========
+
+To work around this problem, use the VGA (version 3.0) driver included with
+Windows 3.1.
+
+MORE INFORMATION
+================
+
+The cause of the problem is related to a proprietary BIOS chip GRID places in
+the 1550SX that works in tandem with a CIRRUS BIOS. There are at least two
+different releases of the GRID BIOS.
+
+For additional information, contact GRID Systems technical support.
+
+
+Additional query words: 3.10 3.1 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

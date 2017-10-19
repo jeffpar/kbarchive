@@ -1,0 +1,38 @@
+DOCUMENT:Q51239  30-JUL-2001  [homegame]
+TITLE   :Flt Sim: Nose Pitches Up When Executing a Turn with Joystick
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+In Flight Simulator version 4.00 or 4.00a, if you set the elevator trim control
+and then execute a level turn with the joystick, the nose of the Cessna or
+Learjet will pitch up.
+
+Microsoft has confirmed this to be a problem in Flight Simulator versions 4.00
+and 4.00a. This problem was corrected in Flight Simulator version 4.00b.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

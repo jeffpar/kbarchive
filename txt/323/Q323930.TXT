@@ -1,0 +1,88 @@
+DOCUMENT:Q323930  13-JUN-2002  [homegame]
+TITLE   :Flight Simulator 2002: How to Import Aircraft from FS 2000
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2002 
+ - Microsoft Flight Simulator 2002 Professional Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to import aircraft (such as the Concorde) and aircraft
+gauges from Microsoft Flight Simulator 2000 into Flight Simulator 2002.
+
+MORE INFORMATION
+================
+
+To import an aircraft and aircraft gauges from Flight Simulator 2000 into Flight
+Simulator 2002, follow these steps.
+
+NOTE: Flight Simulator 2000 and Flight Simulator 2002 contain gauge files that
+have the same file names. Do not overwrite the existing Flight Simulator 2002
+gauge files with earlier versions of the gauge files.
+
+1. Start Windows Explorer.
+
+2. Locate and then open the Aircraft folder of the Flight Simulator 2000
+   installation. By default, the Aircraft folder is in the following location:
+
+   C:\Program Files\Microsoft Games\FS2000\Aircraft
+
+3. Drag the aircraft files that you want to import to the Aircraft folder of the
+   Flight Simulator 2002 installation. By default, the Aircraft folder is in the
+   following location:
+
+   C:\Program Files\Microsoft Games\FS2002\Aircraft
+
+4. Locate and then open the Gauges folder of the Flight Simulator 2000
+   installation. By default, the Gauges folder is in the following location:
+
+   C:\Program Files\Microsoft Games\FS2000\Gauges
+
+5. Drag the gauge files that you want to import to the Gauges folder of the
+   Flight Simulator 2002 installation. (For example, for the Concorde, drag the
+   Concorde.GAU file.) By default, the Gauges folder is in the following
+   location:
+
+   C:\Program Files\Microsoft Games\FS2002\Gauges
+
+   NOTE: When you drag the gauge files, click No if you are prompted to confirm
+   replacing the file.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q317828 Flight Simulator 2002: How to Import an Aircraft from Combat Flight
+   Simulator 2
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

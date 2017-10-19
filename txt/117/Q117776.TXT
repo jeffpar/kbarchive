@@ -1,0 +1,72 @@
+DOCUMENT:Q117776  09-DEC-1999  [homemm]
+TITLE   :Mac Cinemania 94: Foreign and Special Characters Display as Bo
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for the Macintosh 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Foreign language or special characters in the text of a review or cast list may
+display as boxes or as some other incorrect character.
+
+CAUSE
+=====
+
+This problem occurs because of a conflict between the appropriate Lucida font
+(installed with Cinemania) and another font previously installed on the system.
+
+RESOLUTION
+==========
+
+To correct this problem, do the following:
+
+1. Delete the V Lucida Sans font suitcase.
+
+2. Using Finder, reinstall the V Lucida Sans font suitcase from the Cinemania
+   CD.
+
+3. Use Finder to reinstall any add-on font packages.
+
+The special and foreign characters should now display correctly.
+
+MORE INFORMATION
+================
+
+The Apple system fonts are assigned certain ID numbers. When add-on fonts are
+installed, they must use ID numbers in a different range than that reserved for
+the system fonts. Sometimes a conflict can occur when a program other than the
+Finder (for example, an application's installer program) designates the add-on
+fonts' ID numbers. Allowing Finder to reset these ID numbers corrects the
+problem.
+
+Additional query words: mac 1994 multi media multimedia multi-media movies films reviews display screen names letters
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994Mac
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q265464  08-AUG-2001  [winnt]
+TITLE   :Cannot Gain Access to Server, System Event Log Shows Event ID 25
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Windows NT Server 4.0 Service Pack 5 (SP5), you may be unable
+to gain access to the server, and the system Event Log may record the following
+event:
+
+   Event ID: 2504
+   Source: Server
+   Description: The server could not bind to the transport \device\name
+
+CAUSE
+=====
+
+This behavior can occur if NetBIOS over TCP/IP (NetBT) does not successfully
+bind to network interface cards (NICs).
+
+WORKAROUND
+==========
+
+To work around this behavior, reinstall Service Pack 5.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp5 kbWinNTS400search
+Version           : :4.0 SP5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

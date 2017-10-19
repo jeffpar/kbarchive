@@ -1,0 +1,52 @@
+DOCUMENT:Q113442  08-AUG-2001  [winnt]
+TITLE   :Obtain Lantastic 6.0 NETBEUI.EXE from Artisoft
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.1,3.10,3.11
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.10 
+ - Microsoft Windows NT Workstation version 3.10 
+ - Microsoft Windows NT Advanced Server, version 3.10 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+Artisoft Lantastic 6.0 supports connectivity to Windows for Workgroups and
+Windows NT machines, but if you request to be a client to one of these
+machines, Lantastic 6.0 prompts you to obtain NETBEUI.EXE from Microsoft
+and copy it to the Lantastic directory. Microsoft currently does not have
+a NETBEUI.EXE file for distribution to Lantastic customers.
+
+For additional information on obtaining a copy of NETBEUI.EXE, contact
+Artisoft Lantastic Technical Support at (520)670-7000.
+
+The products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: wfw wfwg prodnt
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch kbWinNTAdvSerSearch kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : :3.1,3.10,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

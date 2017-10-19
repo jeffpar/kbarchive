@@ -1,0 +1,55 @@
+DOCUMENT:Q73666  06-NOV-1999  [win16sdk]
+TITLE   :WINMEM32 Not Version Dependent
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WINMEM32 is a dynamic-link library (DLL) designed to run in Microsoft Windows
+enhanced mode to provide support for 32-bit flat memory model code under
+Windows. While WINMEM32 is not bound to a particular version of Windows, it does
+require enhanced mode.
+
+New versions of WINMEM32 that might become available in the future should not
+affect the ability to use old versions of WINMEM32 on a given system. Note,
+however, that only one version of WINMEM32 can be loaded at a time.
+
+Newer versions of WINMEM32 will be backward compatible with older versions.
+Because you should upgrade to the new version, if possible, it is very important
+that WINMEM32 applications do not tightly version bind to WINMEM32. An
+application should always use the greater-than- or-equal-to operator (>=),
+never the equal-to operator (==), to compare the result of the WINMEM32
+GetWinMem32Version function to the required version.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

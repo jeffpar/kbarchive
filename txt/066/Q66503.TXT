@@ -1,0 +1,66 @@
+DOCUMENT:Q66503  06-DEC-1999  [win95x]
+TITLE   :Cannot ALT+ESC or CTRL+ESC to Switch Out of Learning Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run the Learning Microsoft Windows program included in the Microsoft
+Productivity Pack for Windows, you cannot use the CTRL+ESC or ALT+ESC keystrokes
+to switch out of the tutorial. If you attempt to use these keystrokes, you do
+not switch out of the program. Instead, you receive a tutorial message such as
+the following:
+
+   To choose a section of the tutorial, press the number in the upper-left hand
+   corner of the section you want, or click the section. To exit the tutorial,
+   press X.
+
+   -or-
+
+   Press space bar to go on, or hold down the Ctrl key and F1 to see the
+   tutorial controls.
+
+The message varies depending on where you are at in the Learning Microsoft
+Windows tutorial.
+
+MORE INFORMATION
+================
+
+Switching out of Learning Windows is not possible because Learning Windows
+utilizes Windows emulators that provide realistic demonstrations and practice
+environments. Because of this architecture, context switching out of Learning
+Windows is not possible. This limitation is also stated in the Learning Windows
+courseware.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30 WPP1.00 context switching exit
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

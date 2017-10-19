@@ -1,0 +1,85 @@
+DOCUMENT:Q103804  18-NOV-1999  [pcmail]
+TITLE   :3COM: Access Component Is Installed by Gateway Disk
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to 3Com 3+Mail, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 1.0 of the Microsoft Mail Gateway to 3Com 3+Mail requires an access
+component similar to that of all Microsoft Mail gateways, but it does not
+require you to install any software from the Gateway Access for 3Com 3+Mail
+disk.
+
+CAUSE
+=====
+
+All the necessary access components for the gateway postoffice are installed
+when you install the gateway executable files. The required components are
+installed by the Install program (INSTALL.EXE) on the Gateway to 3Com 3+Mail
+disk.
+
+MORE INFORMATION
+================
+
+Usually, installing the access components of a gateway requires an additional
+installation process that is performed after you install the gateway component.
+On a downstream postoffice, only the access component is installed.
+
+On the 3Com 3+Mail gateway, the Gateway Access for 3Com 3+Mail disk is used only
+for a downstream postoffice (not the gateway postoffice, but another postoffice
+that has direct access to the gateway postoffice).
+
+WARNING: NEVER install the disk with the gateway access component onto the 3Com
+gateway postoffice. This corrupts the database and causes you to receive
+messages referring to circular routes being detected.
+
+If you accidentally install the gateway access component, perform these steps:
+
+1. Use the Import utility (IMPORT.EXE) to extract the 3Com names to a text file
+   using the -X command-line parameter.
+
+2. Uninstall the access component using the following command from the access
+   disk:
+
+   install -r
+
+3. Uninstall the gateway component using the following command from the gateway
+   disk:
+
+   install -r
+
+For more information on using the IMPORT utility, see the documentation for
+IMPORT.EXE.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGate3COM3Plus100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

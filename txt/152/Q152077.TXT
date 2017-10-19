@@ -1,0 +1,91 @@
+DOCUMENT:Q152077  27-JUL-2001  [sms]
+TITLE   :SMS: Network Drive No Longer Exists
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup kbConfig smssetup smsconfig
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SMSLS script may fail with client computers, receiving the following error:
+
+   Network drive no longer exists: error reading drive ?
+   Abort/Retry/Fail
+
+This problem occurs most frequently when you perform heavy file I/O with network
+servers.
+
+CAUSE
+=====
+
+This network error is most likely to occur on token ring environments. In a
+network sniff on a token ring network, you may notice Receiver Congestion
+Errors. Receiver Congestion Errors indicate that the reporting ring station (RS)
+could not receive a frame addressed to it.
+
+This error is not an error with Systems Management Server, but can manifest when
+the Systems Management Server logon script runs.
+
+Some possible causes are:
+
+ - A lack of buffer space within the network interface card (NIC) on the
+   destination RS.
+
+ - The server NIC is incorrectly configured or using an outdated driver.
+
+ - Other client redirector issues.
+
+WORKAROUND
+==========
+
+The following are suggestions for troubleshooting this problem:
+
+ - Ensure that both servers and clients have the latest NIC drivers.
+
+ - Limit the maximum frame size on the token ring to 4 KB (4,096 bytes).
+
+ - For client computers running Windows for Workgroups, ensure that you have the
+   updated redirector files from the Clients\WFW directory of the Windows NT
+   compact disc. Also, set the Lmscript.pif file on Windows for Workgroups
+   clients to background exclusive mode. For more information, see the following
+   article in the Microsoft Knowledge Base:
+
+   Q126159 LMSCRIPT.PIF and the SMSLS Logon Script
+
+ - For client computers running Windows 95, set the Dosprmpt.pif MISC Idle
+   Sensitivity to "Low".
+
+ - If possible, run a hardware level network sniff that is able to detect runt
+   packets, or other badly behaved packets.
+
+Additional query words: prodsms wfw win95 ls tr
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbConfig smssetup smsconfig 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

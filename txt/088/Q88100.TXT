@@ -1,0 +1,60 @@
+DOCUMENT:Q88100  23-OCT-1999  [win3x]
+TITLE   :MRU Limits for File Manager, Print Manager in WFWG
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows for Workgroups maintains lists of the most recently used (MRU) network
+drives and network printer connections. This feature allows up to 12 network
+drive connections and 12 network printer connections to be maintained.
+
+MORE INFORMATION
+================
+
+The network drive connection information is stored in the [MRU_Files] section of
+the WIN.INI file. The network printer information is stored in the
+[MRU_Printers] section of the WIN.INI file.
+
+The network drive connections list is accessed by opening the Disk menu in File
+Manager. Choose the down arrow on the Path box to see the list of maintained
+network drive connections.
+
+The network printer connections list can be accessed by opening the Printer menu
+in Print Manager. Choose the down arrow on the Path box to see the list of
+maintained network printer connections.
+
+There are no entries in the [MRU_Files] and [MRU_Printers] sections by default.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

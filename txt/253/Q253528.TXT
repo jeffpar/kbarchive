@@ -1,0 +1,76 @@
+DOCUMENT:Q253528  30-APR-2000  [winnt]
+TITLE   :Using the $Search() Function in a Management Agent of MMS
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbtool MMS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Prior to Microsoft Metadirectory Services 2.1 when the metascript $Search()
+function performed a search and found zero or multiple matches, it would return
+a null value. This mechanism was unsatisfactory in situations where you needed
+to determine the uniqueness of an entry based on a search criterion.
+
+CAUSE
+=====
+
+The $search() function would return a NULL value if more than one entry was
+located by the search. A new argument, returnArbitraryResponse, was added to
+signal the fact that more than one entry was located. This now provides a means
+to determine the uniqueness of entries matching a particular search criterion.
+
+RESOLUTION
+==========
+
+To resolve this issue, this $search() functionality was modified in MMS 2.1.
+Upgrade to Microsoft Metadirectory Services 2.1 to receive this modification.
+
+MORE INFORMATION
+================
+
+The $search() function has been modified. The new syntax to this function is:
+
+$search(whatToSearch, scope, base, returnArbitraryResponse)
+
+Where returnArbitraryResponse is optional and has a default value of NULL for
+backward compatibility. If returnArbitraryResponse is set to "arbitrary", the
+$search() function returns an arbitrary set of search results when multiple
+responses are found; it will no longer return a NULL. Management Agent
+developers can then use this argument to signal that more than one match was
+found, and that the entry being searched for is not unique.
+
+No changes are required for existing templates if you do not require this
+functionality.
+
+Additional query words: Importt, Management Agents, Agent Functions, MMS
+
+======================================================================
+Keywords          : kbtool MMS 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

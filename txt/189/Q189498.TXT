@@ -1,0 +1,192 @@
+DOCUMENT:Q189498  06-AUG-2002  [vbwin]
+TITLE   :INFO: Using DDE in VB to Communicate with Other Windows Programs
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use Dynamic Data Exchange (DDE) from a Visual
+Basic program. Although Visual Basic offers more powerful, robust and reliable
+intercommunication between programs by using OLE, it still supports the older
+DDE technology. You can use DDE to link to and share data between programs.
+
+Using OLE to communicate with other programs is better than using DDE with Visual
+Basic. OLE offers you better performance than DDE does. If a program supports
+OLE automation, it exposes an "Object Model" you can use to manipulate the
+program (through code) to complete actions for you. DDE is more useful in
+communicating with older programs that might not support OLE but do support DDE,
+and many 16-bit programs fall into this category.
+
+Microsoft recommends that you use OLE rather than DDE to communicate with another
+program when you are developing your Visual Basic program. However, because
+there are times when you may need or want to use DDE, this article describes how
+to use DDE from a Visual Basic program.
+
+MORE INFORMATION
+================
+
+Visual Basic can exchange data, such as information, commands or keystrokes,
+with any program that supports DDE. A DDE link requires the following three
+things:
+
+ - Program name
+
+ - Topic
+
+ - Item
+
+The program name is the executable (.exe) file name of the source program minus
+the .exe file extension. The topic describes the type of data that is being
+exchanged. The topic is specific to the DDE source program. However, "System" is
+the one universal topic that you can use to query what topics are available in a
+particular program. The item parameter is the actual data that is being
+transferred. In Visual Basic, a topic could be a form with a textbox as an item.
+In Microsoft Excel, a topic could be a spreadsheet with a cell as an item. The
+program name and topic cannot be modified once the DDE link has been established
+because any modifications break the connection. The item parameter can be
+modified to any valid item during the DDE conversation without breaking the DDE
+link.
+
+Specific to Visual Basic, the LinkTopic property supplies a combination of the
+program name and topic parameters. The LinkTopic property is available for
+Label, PictureBox, or TextBox controls which can share data through a DDE
+connection. The program name and topic parameters are combined by using the pipe
+character (|) as the separator. For example, to create a DDE link with Microsoft
+Word as the source program and by using the System topic. the LinkTopic property
+of a textbox would be:
+
+   Text1.LinkTopic="WinWord|System"
+
+When Visual Basic is the source program for the DDE link, the LinkTopic of the
+form which contains the control to be shared is set to a known name. This known
+name is used in the LinkTopic of the Visual Basic destination program as the
+topic information. For example, to access data from a form with a LinkTopic that
+is set to "DDELink", a Visual Basic destination program would have a matching
+control with a LinkTopic set to "program name|DDELink".
+
+The LinkItem property corresponds to the item parameter in a DDE connection, and
+this property is set to a corresponding item in the source program, for example,
+the "Total" cell in an Excel spreadsheet. The LinkItem property is set for the
+control that is used as in a destination program. When a Visual Basic form is
+the source in a DDE connection, the name of the control on the form can be the
+item argument in the program|topic|item string that is used by the destination
+program. When Visual Basic is used as both the source and destination program,
+the LinkItem property of the destination program would be set to the name of the
+control in the Visual Basic source program. For example, with Visual Basic used
+as both the source and destination program and a text box that is named
+"txtSource" as the item in the source program, a corresponding "txtData" text
+box in the destination program would have its LinkItem property set to
+txtSource:
+
+   txtData.LinkItem = "txtSource"
+
+Before a connection can be established, the mechanism to update the information
+needs to be set. In a DDE connection, there are three types of links:
+
+ - Automatic
+
+ - Manual
+
+ - Notify
+
+An automatic link updates the destination information whenever the source is
+modified. A manual link requires that the data be requested by the destination
+program, and notify informs the destination program that the source data has
+been changed but doesn't actually update the information in the destination
+program. The one exception to an automatic update is the Picturebox control.
+Visual Basic does not automatically notify a DDE destination program when the
+Picture property setting of a PictureBox on a source Form changes. Because the
+amount of data in a graphic can be very large and because it seldom makes sense
+to update a destination program as each pixel in the picture changes, Visual
+Basic requires that you use the LinkSend method to explicitly notify DDE
+destination programs when the contents of a PictureBox change.
+
+Once a DDE link has been established, there are several methods and events in
+Visual Basic that can be used to control how data is sent between the source and
+the destination program.
+
+Methods
+-------
+
+LinkRequest: Asks the source program to update the contents of a destination
+item.
+LinkExecute: Sends a command string to the source program.
+LinkPoke: Transfers the contents of the item control to the source program.
+Typically, information in a DDE conversation flows from the source to the
+destination. However, LinkPoke provides a destination object with the ability to
+supply data to the source.
+LinkSend: Transfers the contents of a PictureBox control to the destination
+program in a DDE conversation.
+
+Events
+------
+
+LinkOpen: Occurs when a DDE link is being initiated.
+LinkClose: Occurs when a DDE link terminates. Either program in a DDE
+conversation may terminate a link at any time.
+LinkError: Occurs when there is an error during a DDE conversation. This event is
+recognized only as the result of a DDE-related error that occurs when no Visual
+Basic code is being executed. The error number is passed as an argument.
+LinkExecute: Occurs when a command string is sent by a destination program in a
+DDE conversation. The destination program expects the source program to perform
+the operation described by the string.
+LinkNotify: Occurs when the source has changed the data that is defined by the
+DDE link if the LinkMode property of the destination control is set to Notify.
+
+REFERENCES
+==========
+
+For additional information about how to create DDE connections from Visual Basic
+to other applications like Visual Basic, Word or Excel, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q74861 Example of Client-Server DDE Between Visual Basic Applications
+
+   Q74862 DDE Example Between Visual Basic and Word for Windows
+
+   Q75089 DDE from Visual Basic for Windows to Excel for Windows
+
+MSDN contains documentation about DDE methods, properties, and events that are
+supported in Visual Basic 6.0. In MSDN, set the "Active Subset" to "Visual Basic
+Documentation," click the Index tab, and then type "DDE" (without the quotation
+marks). The topics that are available are applicable to Visual Basic 6.0.
+
+In Visual Basic 5.0, click Books Online on the Help menu. When Books Online
+appears, click Index on the View menu. When the Index search browser appears,
+type "DDE" (without the quotation marks).
+
+Additional query words: not grayed out greyed applications
+
+======================================================================
+Keywords          : kbenv kbtool kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

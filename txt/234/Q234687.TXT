@@ -1,0 +1,86 @@
+DOCUMENT:Q234687  11-JUN-2002  [sna]
+TITLE   :How To Disable SNA NT Client Smart Multihoming
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp3fea kbFEA kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+SNA Clients are configured by default to use smart multihoming. When an SNA
+Server is multihomed, a list of all the TCP/IP addresses for the SNA Servers are
+passed back to the SNA Client. The SNA Client chooses the TCP/IP address which
+is closest to its own TCP/IP subnet or TCP/IP address. Occasionally, the best
+TCP/IP address is not reachable because of network design. This causes a delay
+in the client connecting to the SNA Server. The time delay depends upon the
+TCP/IP retry timers configured on the client, but should be 45 to 55 seconds
+assuming the retry-timer settings have not been modified from their defaults.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q182332 SNA Clients Experience Delay Connecting to Multihomed Server
+
+Smart multihoming is enabled by default on all clients starting with SNA 3.0
+Service Pack 2 clients.
+
+To disable smart multihoming, the client needs to have the registry value
+ReadjustMultihomedAddresses (a REG_SZ) set to NO.
+
+NOTE: This applies to SNA Windows NT Clients ONLY. Other SNA clients have no such
+registry value.
+
+The above registry value is located in the following registry key:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Snabase\Parameters\SnaTcp
+
+If smart multihoming is disabled, then the client tries all addresses in the
+order in which the server has passed them to the client in the Service Table.
+
+This feature is available in the latest service pack for SNA Server version 4.0.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+This feature was first included in SNA Server version 4.0 Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp3fea kbFEA kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

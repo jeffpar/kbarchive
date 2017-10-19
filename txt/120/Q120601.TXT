@@ -1,0 +1,89 @@
+DOCUMENT:Q120601  15-APR-2000  [powerpt]
+TITLE   :PPT: PowerPoint OLE Objects Ignore Default Template.
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:4.0,4.0a,4.0c,7.0
+OPER/SYS:
+KEYWORDS:kbole kbtemplate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use an OLE destination application's Insert Object command to create a
+new PowerPoint Slide or Presentation object, PowerPoint ignores its Blank
+Presentation.pot file (Default.ppt in PowerPoint 4.x) and opens using its
+internal default settings.
+
+WORKAROUND
+==========
+
+PowerPoint 7.0
+--------------
+
+1. In the destination program, click Object on the Insert menu.
+
+2. In the list of available object types, click Microsoft PowerPoint
+   Presentation or Microsoft PowerPoint Slide.
+
+3. When your new slide appears, click Apply Design Template on the Format menu.
+
+4. Switch to the Templates folder and click Blank Presentation.pot.
+
+5. Click Apply.
+
+The PowerPoint object you are creating now follows Blank Presentation.pot.
+
+PowerPoint 4.0, 4.0a, and 4.0c
+------------------------------
+
+1. In the destination program, click Object on the Insert menu.
+
+2. In the list of available object types, click MS PowerPoint 4.0 Presentation
+   or MS PowerPoint 4.0 Slide.
+
+3. When your new slide appears, click Presentation Template on the Format menu.
+
+4. Switch to the Powerpnt folder and click Default.ppt.
+
+5. Click Apply.
+
+The PowerPoint object you are creating now follows Default.ppt.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words: 4.00a 4.00c power point powerpt winword ppt95 winppt word95
+
+======================================================================
+Keywords          : kbole kbtemplate 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400 kbPowerPt400c kbPowerPt400a
+Version           : WINDOWS:4.0,4.0a,4.0c,7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

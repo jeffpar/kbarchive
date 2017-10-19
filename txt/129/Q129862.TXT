@@ -1,0 +1,54 @@
+DOCUMENT:Q129862  10-FEB-2000  [foxpro]
+TITLE   :Project Manager Stores & Activates Files from Other Apps
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Files created in applications other than Visual FoxPro can be stored and
+activated in the Visual FoxPro Project Manager. Use the Other Tab in the Project
+manager to store file types that are not native to Visual FoxPro.
+
+If you add a file that was created by an application that is registered in the
+Windows registration database or maintained in the registry under the
+HKEY_CLASSES_ROOT key in Windows NT, double-clicking or highlighting the file
+and then choosing the Modify button invokes the document's associated
+application, with the selected file open.
+
+For example, you can store a Microsoft Word document in a Visual FoxPro project,
+and double-click the file in Visual FoxPro to launch Microsoft Word with the
+desired document open.
+
+
+Additional query words: OLE VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

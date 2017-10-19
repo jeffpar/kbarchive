@@ -1,0 +1,62 @@
+DOCUMENT:Q136954  17-DEC-2000  [win95x]
+TITLE   :Disk Formatting Is Slow After Failing on Write-Protected Disk
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to format a floppy disk in Windows Explorer or My Computer, you may
+receive the following error message:
+
+   Windows cannot format this disk because it is write protected. If you are
+   sure you want to continue, remove or move the write-protect tab, reinsert the
+   disk, and then click Retry.
+
+If you move the write-protect tab, reinsert the disk, and then click the Retry
+button, Windows 95 formats the disk, but may take longer than normal to do so.
+It may take up to three times longer than normal to format the disk.
+
+
+RESOLUTION
+==========
+
+To avoid this problem, make sure that the disk is not write protected before you
+try to format it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

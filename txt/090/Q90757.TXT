@@ -1,0 +1,53 @@
+DOCUMENT:Q90757  08-NOV-1999  [pcmail]
+TITLE   :PC WFW: Admin Not Included in Directory Synchronization
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you use version 3.0 of Extensions for Windows for Workgroups to upgrade a
+Windows version 3.1 for Workgroups postoffice to a version 3.0 Microsoft Mail
+for PC Networks postoffice, the users with administrative privileges are not
+included in directory synchronization. However, the users with user privileges
+are included in directory synchronization.
+
+RESOLUTION
+==========
+
+To include users with administrative privileges in directory synchronization,
+the administrator must use the Mail Administrator program (ADMIN.EXE) to modify
+those users with administrative privileges to include them in directory
+synchronization.
+
+Additional query words: 3.00 dir-sync dirsync dirsynch
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3 kbMailScheduleX300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

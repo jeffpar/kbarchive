@@ -1,0 +1,65 @@
+DOCUMENT:Q125306  27-JUL-2001  [odbc]
+TITLE   :BUG: Cannot Insert BLOB Data Sized Between 64K and 128K
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# Addon_Bugs: 10577 (2.00.1912)
+
+SYMPTOMS
+========
+
+When SQLSetParam is used to insert image/text data where the total size (such
+as, the cbcoldef argument for SQLSetParam) is between 64K and 128K, you may
+receive the following SQLState 01004 message from the SQL Server driver:
+
+   Data Truncated.
+
+NOTE: This message is received on SQLExecDirect, SQLExecute, or SQLPutData,
+depending on whether data-at-execution parameter was used or not.
+
+WORKAROUND
+==========
+
+Use the ODBC version 2.0 function SQLBindParameter instead of SQLSetParam. This
+problem only occurs when SQLSetParam is used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the SQL Server driver version
+2.00.1912. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 2.00.1912 Windows NT kbbug2.00.1912 kbprg
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

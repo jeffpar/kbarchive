@@ -1,0 +1,69 @@
+DOCUMENT:Q120560  21-NOV-1999  [msdos]
+TITLE   :Step-Up Runs MAKESYS but Fails SETUP w/Insufficient Memory Err
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the MS-DOS 6.22 MAKESYS command is run, an area of memory exists in which
+Step-Up runs MAKESYS and then subsequently fails when SETUP is called. Errors
+indicating that there is insufficient memory to run the MAKESYS-invoked SETUP
+portion can occur even though the MAKESYS portion ran without generating any
+errors.
+
+CAUSE
+=====
+
+Before starting, MAKESYS ensures that its own memory requirement (a minimum of
+171 kilobytes [K] available memory) is met. MAKESYS does NOT ensure that there
+is enough available memory to run the SETUP portion. SETUP fails unless at least
+386K of memory is available.
+
+
+RESOLUTION
+==========
+
+Because the SETUP portion has a higher available-memory requirement than
+MAKESYS, be sure to run a memory check before you run MAKESYS. Run the MEM
+command to check available memory. Make sure that at least 386K of available
+memory exists before you try to run MAKESYS.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MS-DOS version 6.22. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 6.22 step up free memory
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

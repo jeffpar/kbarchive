@@ -1,0 +1,69 @@
+DOCUMENT:Q135950  15-JUL-1999  [win95x]
+TITLE   :Not All MS Plus! Files Installed in Specified Custom Folder
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you choose to install Microsoft Plus! for Windows 95 in a custom folder,
+only a portion of the Microsoft Plus! files are placed in that folder. Many of
+the files are placed in the Program Files\Plus! folder.
+
+CAUSE
+=====
+
+You can specify a custom folder for the Microsoft Plus! files early in the Setup
+process. If you do not specify a custom folder, the Microsoft Plus! files are
+installed in the Program Files\Plus! folder.
+
+You can also specify a custom folder for each of the following components by
+clicking the Change Folder button for each component:
+
+ - System Agent
+
+ - Internet Tools
+
+ - Desktop Themes
+
+ - 3D Pinball
+
+If you change the folder for a component, only that component is affected. Even
+if you change the folder for all four components, several files are installed in
+the Program Files\Plus! folder.
+
+RESOLUTION
+==========
+
+Run Microsoft Plus! Setup again and choose the Remove All option. Then, run
+Setup again and specify a custom folder the first time you are offered the
+opportunity to do so.
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

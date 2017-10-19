@@ -1,0 +1,68 @@
+DOCUMENT:Q145740  28-JUL-2001  [win95x]
+TITLE   :How to Start Dial-Up Networking Connection Using Command Line
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to start a Dial-Up Networking connection using a
+command line in Windows 95.
+
+MORE INFORMATION
+================
+
+To start a Dial-Up Networking connection using a command line, use the following
+syntax
+
+   rundll rnaui.dll,RnaDial <connectoid>
+
+where <connectoid> is the name of the connection you want to start.
+
+For example, to start a connection named "My Connection," use the following
+command line:
+
+   rundll rnaui.dll,RnaDial My Connection
+
+You can use this command line in an MS-DOS session, or by clicking the Start
+button, clicking Run, and then typing the line in the Open box.
+
+Notes
+-----
+
+ - The RnaDial and <connectoid> components of the command line are case
+   sensitive, and the location of spaces and commas is critical.
+
+ - Although you can start a Dial-Up Networking connection using a command line,
+   you cannot start the Dial-Up Networking Server using a command line.
+
+======================================================================
+Keywords          : dun win95 kbDialUp 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

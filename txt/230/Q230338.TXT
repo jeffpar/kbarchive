@@ -1,0 +1,86 @@
+DOCUMENT:Q230338  11-DEC-2001  [winnt]
+TITLE   :Inbox and Internet Explorer Icons Disabled with Appsec.exe
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enable the Application Security tool (Appsec.exe) in Windows NT Server
+4.0, Terminal Server Edition, the desktop icons for the Windows Messaging client
+(Inbox) and Microsoft Internet Explorer do not function. If you double-click
+either icon, the following error message is displayed:
+
+   Is not a valid Windows NT application.
+
+No program name is referenced.
+
+CAUSE
+=====
+
+The Inbox icon does not function because no entries are included in the
+Application Security tool authorized program list to allow the Windows Messaging
+client to run.
+
+The Internet Explorer desktop icon does not function because the MS-DOS naming
+convention (or 8.3 naming convention) path for Internet Explorer is not in the
+Application Security tool authorized program list.
+
+The default authorized program list for the Application Security tool includes
+the path for Internet Explorer in long file name format. The registry contains
+pointers to Internet Explorer (in multiple Shell\Open\Command keys) in both long
+file name and MS-DOS 8.3 (short file name) format. The Application Security tool
+performs a character-for-character comparison of the location in which the file
+runs. If there are any discrepancies, the program does not run.
+
+RESOLUTION
+==========
+
+To resolve this problem, add the following entries to the Application Security
+tool authorized program list.
+
+For the Windows Messaging client:
+
+ - c:\Program Files\Windows NT\Windows Messaging\exchng32.exe
+
+ - c:\WTSRV\System32\mapisp32.exe
+
+For Internet Explorer:
+
+ - c:\PROGRA~1\Plus!\MICROS~1\iexplore.exe
+
+NOTE: A default installation of Terminal Server on drive C requires these
+entries.
+
+Additional query words: IE IE4 Exchange Client APPSEC
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

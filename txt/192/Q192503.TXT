@@ -1,0 +1,77 @@
+DOCUMENT:Q192503  07-JAN-2000  [mspress]
+TITLE   :Running Office 97, Page xxxvi: Incorrect Setup Path for E-Book
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Running Microsoft Office 97, Updated Edition ISBN 1-57231-889-9 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Page xxxvi states that you can install the electronic books (e-books) by typing
+d:\ebooks\setup at the Run option in the Start menu. However, if you perform
+this operation, you will see the following message:
+
+   Cannot find the file 'd:\ebooks\setup' or one of its components.
+
+CAUSE
+=====
+
+The path is printed incorrectly in the book.
+
+RESOLUTION
+==========
+
+There are two electronic books available on the CD-ROM. One contains the book
+"Running Microsoft Office 97 Updated Edition," and the other contains the book
+"Running Microsoft Word 97."
+
+To install "Running Microsoft Office 97 Updated Edition," click Start, clcik Run,
+and type the following command:
+
+   " d:\ebook\runoff97\setup" (without the quotation marks)
+
+To install "Running Microsoft Word 97," click Start, click Run, and type the
+following command:
+
+   " d:\ebook\runwrd97\setup" (without the quotation marks)
+
+In both cases, change d: to the drive letter of your CD-ROM drive if necessary.
+
+STATUS
+======
+
+Microsoft Press has confirmed this to be an issue in "Running Microsoft Office
+97 Updated Edition."
+
+
+Additional query words: ms_press 1-57231-889-9
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

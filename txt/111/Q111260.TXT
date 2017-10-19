@@ -1,0 +1,55 @@
+DOCUMENT:Q111260  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 5.0: Error Creating Logbook
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may receive the following error message if you try to create a logbook in
+Microsoft Flight Simulator 5.0:
+
+   File cannot be created because: Two line acknowledge second line
+
+MORE INFORMATION
+================
+
+This error message occurs when no filename is entered in the Filename box in the
+Create Logbook dialog box.
+
+To correct the problem, type a valid MS-DOS filename in the Filename box.
+
+Additional query words: 5.00 flightsim fltsim dos FS5
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

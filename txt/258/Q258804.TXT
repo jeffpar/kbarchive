@@ -1,0 +1,70 @@
+DOCUMENT:Q258804  11-APR-2000  [automap]
+TITLE   :Streets 98: Error Message on a Blue Screen When You Run Program
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Expedia Streets 98, you may receive an error message on a
+blue screen.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - You run Expedia Steets 98 on a Microsoft Windows NT-based computer.
+
+ - An outdated video driver is installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact the manufacturer of your video adapter to inquire
+about how to obtain and install the latest version of the video driver for your
+video adapter.
+
+For information about how to contact the manufacturer of your video adapter,
+click the appropriate article number in the following list to view the article
+in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+Additional query words: streets98 automap amap auto-map crash fatal exception ipf gpf
+
+======================================================================
+Keywords          : kbdisplay kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

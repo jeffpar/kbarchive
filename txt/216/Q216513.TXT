@@ -1,0 +1,58 @@
+DOCUMENT:Q216513  22-JUN-2001  [exchange]
+TITLE   :XCLN: Message Body is Blank Using Encryption & Digital Sig.
+PRODUCT :Microsoft Exchange
+PROD/VER::8.0,8.01,8.02,8.03
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+This problem only occurs when using digital signatures and the Encrypt All
+functions in Outlook 97.
+
+A message is created and saved prior to sending it to the recipient. After the
+message is sent, the text in the body of the message is deleted. There is no
+text in the body of the message when the recipient opens the message, and it is
+empty in the originator's Sent Items folder as well.
+
+This problem can occur in Outlook 97 when using the Save or Save As commands
+prior to sending the message.
+
+WORKAROUND
+==========
+
+This problem is resolved in Outlook 98 (8.5.5104.6).
+
+Additional query words: 8.0 8.01 8.02 8.03
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97 kbOutlook97Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : :8.0,8.01,8.02,8.03
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

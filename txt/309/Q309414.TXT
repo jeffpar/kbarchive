@@ -1,0 +1,100 @@
+DOCUMENT:Q309414  21-OCT-2001  [sna]
+TITLE   :SNACFG Fails to Create Host Security Domain If HS Groups Exist
+PRODUCT :Microsoft SNA Server
+PROD/VER::4.0 SP3,4.0 SP4
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna400sp3 kbhis2000 kbhis2000bug kbsna400sp4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0 SP3, 4.0 SP4 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNACFG.exe, the SNA Command Line Configuration Utility, will return the
+following error when it attempts to create a host security domain (HSD) if the
+Windows NT/Windows 2000 domain local groups that it attempts to create already
+exist:
+
+   Processing command to add HSDOMAIN <HS Domain Name>
+
+   Unable to process request. Possible network error
+
+   Command failed
+
+
+WORKAROUND
+==========
+
+If you manually delete the domain local groups that SNACFG.exe is attempting to
+create, this will allow the HSD to be successfully added.
+
+On Host Integration Server 2000, you also have the option of using the Host
+Security Domain Configuration Wizard available within SNA Manager to create the
+HSD. If the domain local groups already exist, the Wizard will return the
+following message:
+
+   The NT Local Group <HSD Name> already exists. Do you want to add a new
+   Host Security Domain for it?
+
+The Wizard will create the HSD if you click the Yes button in this message dialog
+box.
+
+The HSD Configuration Wizard in SNA Server 4.0 does not provide an option to
+allow the creation of the HSD if the domain local groups already exist.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server 4.0 Service
+Pack (SP) 3 and SP4, and Host Integration Server 2000.
+
+
+MORE INFORMATION
+================
+
+When a host security domain is created, a Windows NT/Windows 2000 local domain
+group must be created with the same name. A second group is also created which
+appends "_proxy" to the HSD name for its group name. For example, when you
+create an HSD called HSDTEST, the following Windows NT/2000 local domain groups
+will be created:
+
+ - HSDTEST
+
+ - HSDTEST_Proxy
+
+The ability to create host security domains by using SNACFG.exe was added to SNA
+Server 4.0 in SP3. The following Microsoft Knowledge Base article explains the
+functionality that was added:
+
+   Q236847 SNACFG Should Allow Configuration of Host Security Domains
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbsna400sp3 kbhis2000 kbhis2000bug kbsna400sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400SP3 kbSNAServ400SP4
+Version           : :4.0 SP3,4.0 SP4
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q178377  23-OCT-2000  [msnetwork]
+TITLE   :How to Use MSN to Automatically Configure Outlook Express
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbmsnkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+ - Microsoft Outlook Express version 4.0 for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can use MSN, The Microsoft Network, to
+automatically configure Microsoft Outlook Express to work with MSN.
+
+MORE INFORMATION
+================
+
+To automatically configure Outlook Express using MSN, follow these steps:
+
+1. Sign in to MSN.
+
+2. Connect to the following MSN Web site:
+
+   http://setup.msn.com/membersonly/config/default.asp
+
+
+3. Click the Click Here To Continue link.
+
+NOTE: If you are running Outlook Express at this time, you must quit and then
+restart Outlook Express for the changes to take effect.
+
+For additional information about how to configure Outlook Express for MSN, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q173952 How to Configure Outlook Express for The Microsoft Network
+
+
+Additional query words: 2.50 msnet msnetwork microsoft-net m.s.n. outex
+
+======================================================================
+Keywords          : kbenv kbmsn kbfaq
+Technology        : kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress95Search kbOutlookExpress400Win95 kbMSN250
+Version           : WINDOWS:2.5,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

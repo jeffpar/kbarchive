@@ -1,0 +1,83 @@
+DOCUMENT:Q161965  08-NOV-2001  [frontpg]
+TITLE   :FP: Java Applet Doesn't Function if Class File Is Moved
+PRODUCT :Word Front Page
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view a page that contains a Java applet in a web browser you receive
+the following error message:
+
+   Load: Class <applet name> not found.
+
+where <applet name> is the name of the Java applet that cannot be found.
+
+CAUSE
+=====
+
+The location of the Java applet was changed in the FrontPage Explorer after you
+inserted it in the FrontPage Editor.
+
+When you save the page in FrontPage Editor, the location of the Java applet is
+saved relative to the location of the page. When you move the Java applet to a
+different directory, this reference is no longer valid. When you browse the
+page, the Java applet does not load.
+
+RESOLUTION
+==========
+
+If you need to move a Java applet after it has been inserted on a page, you must
+also change the reference to the applet. To change the reference, use these
+steps:
+
+1. Open the page in FrontPage Editor.
+
+2. Right-click the Java applet, and then click Properties.
+
+3. In the Applet Base URL box, type the correct path to the Java applet. Note
+   that the path should be relative to the saved location of the page on which
+   you inserted the Java applet.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft FrontPage
+98 for Windows.
+
+
+Additional query words: front page class object
+
+======================================================================
+Keywords          : kb3rdparty kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : MACINTOSH:1.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

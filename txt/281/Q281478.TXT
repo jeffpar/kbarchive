@@ -1,0 +1,77 @@
+DOCUMENT:Q281478  12-NOV-2001  [msnetwork]
+TITLE   :How to play games on MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Customer wants to use MSN Companion to play games such as Minesweeper or
+Solitaire.
+
+CAUSE
+=====
+
+The MSN Companion does not have the basic Windows games stored locally on the
+device.
+
+RESOLUTION
+==========
+
+ - Instruct customers who wish to play games with MSN Companion to do one or
+   more of the following.
+
+ - To look for online games at MSN's game site, Zone.com (http://zone.com).
+
+1. From the Start page, look in the explore the web section, and then click the
+   more... link at the bottom of the page.
+
+2. In the Entertainment section, click the Free Games link.
+   Zone.com lets you play dozens of online games, by yourself, or with people all
+   around the world.
+
+ - To search for a online gaming site
+
+ - In the search the web box, type online games, and then click go.
+
+ - To search for a particular game
+
+ - In the search the web box, type the name of a game (for example Solitaire,
+   and then click go).
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

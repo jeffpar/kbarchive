@@ -1,0 +1,68 @@
+DOCUMENT:Q165745  30-JUL-2001  [visualc]
+TITLE   :DOC: CMiniFrameWnd::Create Is Missing MFS_BLOCKSYSMENU
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbui kbdocfix kbdocerr kbMFC KbUIDesign kbVC500bug kbVC600fix kbGrpDSMFCATL
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+CMiniFrameWnd::Create member function lets you create the Windows mini- frame
+window and attach it to the CMiniFrameWnd object. Create initializes the
+window's class name and window name and registers default values for its style
+and parent.
+
+The CMiniFrameWnd::Create function has the following prototype:
+
+MFS_MOVEFRAME     Allows the mini-frame window to be moved by clicking
+                  on any edge of the window, not just the caption.
+
+MFS_4THICKFRAME   Disables resizing of the mini-frame window.
+
+MFS_SYNCACTIVE    Synchronizes the activation of the mini-frame window
+                  to the activation of its parent window.
+
+MFS_THICKFRAME    Allows the mini-frame window to be sized as small as
+                  the contents of the client area allow.
+
+MFS_BLOCKSYSMENU  Blocks any hit testing on system menu.
+
+The Visual C++ 6.0 online documentation for CMiniFrameWnd::Create() does list the MFS_BLOCKSYSMENU style.
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Jing Lou, Microsoft Corporation
+
+
+Additional query words: MFC MFS_
+
+======================================================================
+Keywords          : kbui kbdocfix kbdocerr kbMFC KbUIDesign kbVC500bug kbVC600fix kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

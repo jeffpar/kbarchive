@@ -1,0 +1,65 @@
+DOCUMENT:Q202036  04-MAR-2002  [exchange]
+TITLE   :XWEB: Macintosh Binary Attachments May Not Be Opened in OWA
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Outlook Web Access (OWA), files sent from Macintosh users in a
+binary format may not be able to be opened on an Outlook Web Access client.
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. From a Macintosh Exchange client, attach a Macintosh binary text file.
+
+2. Send the message to another user who is using OWA.
+
+3. When this user attempts to open the attached file, he or she will notice the
+   attachment has lost the original icon that associates it with the source
+   application, and the OWA client will not be able to open the file, even if it
+   is saved.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: OWA XWEB Mac attachments
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1 kbExchangeActiveServComp500
+Version           : :5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

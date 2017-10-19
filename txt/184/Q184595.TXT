@@ -1,0 +1,65 @@
+DOCUMENT:Q184595  18-DEC-2000  [winnt]
+TITLE   :Err Msg: Error Submitting Fax to the Print Server...
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:95; winnt:4.0,4.0a
+OPER/SYS:
+KEYWORDS:kberrmsg sbs smallbiz
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to print to Microsoft Fax from within a program on a computer
+running Windows 95, you may receive either of the following error messages
+
+   Error submitting fax to the print server: aborted from print manager
+
+   <program> couldn't print your object...
+
+where <program> is the program from which you attempt to print.
+
+CAUSE
+=====
+
+This problem can occur if you are using Small Business Server (SBS) Microsoft
+Fax Client.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Small Business Server versions
+4.0 and 4.0a.
+
+
+Additional query words: acc97 file print database report table form fwserver
+
+======================================================================
+Keywords          : kberrmsg sbs smallbiz 
+Technology        : kbAudDeveloper kbWin95search kbSBServSearch kbZNotKeyword3 kbSBServ400 kbSBServ400a
+Version           : WINDOWS:95; winnt:4.0,4.0a
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

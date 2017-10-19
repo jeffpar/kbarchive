@@ -1,0 +1,232 @@
+DOCUMENT:Q201050  12-JUN-2002  [visualc]
+TITLE   :PRB: Custom AppWizard Based On COM Project Uses Same GUIDs
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbVC kbVC500bug kbVC600bug kbAppWizard kbCustomWizard kbDSupport kbBug kbGrpDS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A custom AppWizard based on an existing Component Object Model (COM) or
+automation project does not create new GUIDs for components of new projects.
+Therefore, projects based on this custom AppWizard generate objects with the
+same CLSID (class ID) and IID. Type libraries for these objects will have the
+same CLSID.
+
+Once the new object is registered, programs expecting to load the original object
+will load the new one instead.
+
+CAUSE
+=====
+
+The new custom AppWizard templates contain the GUIDs copied from the base
+project. The custom AppWizard generates new projects with a copy of those
+original GUIDs, unlike the standard AppWizards which substitute macros in the
+templates with new GUIDs.
+
+RESOLUTION
+==========
+
+Modify the custom AppWizard project to automatically create new GUIDs using the
+following steps:
+
+1. Edit the template files, replacing GUIDs with appropriate macro names.
+
+2. Set the macros to new GUIDs in the InitCustomAppWiz() function.
+
+See the MORE INFORMATION section for specific instructions on implementing these
+steps.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+A custom AppWizard based on an existing project creates template files - such as
+Rott.cpp, Root.h, Root.odl and Root.reg - which replace the base class names
+with macros. The new templates preserve existing class definitions and
+implementation codes, including the GUIDs of COM objects.
+
+A custom AppWizard based on standard steps uses macros to generate new GUIDs and
+then formats the GUIDs when it creates a new project. The standard AppWizard
+dialog pages add the macro values to the macro dictionary. However, these macro
+values are not available for use in custom AppWizards which do not use the
+standard steps. An "unknown macro" error results when the custom AppWizard
+generates new project files.
+
+The following shows how to work around this problem. After applying the
+instructions, your custom AppWizard project should generate new projects with
+unique GUIDs.
+
+Edit the template files
+-----------------------
+
+In the template files, replace GUID occurrences with macros. Each unique GUID
+needs a macro, and each unique representation of that GUID needs a macro, too.
+For consistency with the standard macros, use the following macro names:
+
++-----------------------------------------------------------------+
+| $$APP_CLSID_REG$$     | A 1st GUID in normal format             | 
++-----------------------------------------------------------------+
+| $$APP_CLSID$$         | The 1st GUID formatted as a C structure | 
++-----------------------------------------------------------------+
+| $$DISPIID_CLSID_ODL$$ | A 2nd GUID in normal format             | 
++-----------------------------------------------------------------+
+| $$DISPIID_CLSID$$     | The 2nd GUID formatted as a C structure | 
++-----------------------------------------------------------------+
+| $$LIB_CLSID_ODL$$     | A 3rd GUID in normal format             | 
++-----------------------------------------------------------------+
+
+In the Template Files folder of the custom AppWizard, make the following changes
+to the files:
+
+ - Root.cpp: Use $$APP_CLSID$$ for the static const CLSID variable and
+   $$APP_CLSID_REG$$ in comments.
+
+ - Root.odl: Use $$LIB_CLSID_ODL$$ for the uuid() attribute on the library. Use
+   $$DISPIID_CLSID_ODL$$ for the uuid() attribute on the dispinterface. Finally,
+   use $$APP_CLSID_REG$$ for the uuid() attribute on the coclass.
+
+ - Root.reg: Use $$APP_CLSID_REG$$ for all of the CLSID keys.
+
+ - DOC.H: Use $$DISPIID_CLSID$$ for the static const IID variable and
+   $$DISPIID_CLSID_ODL$$ in comments.
+
+NOTE: You will have to use new macro names if you are implementing multiple COM
+interfaces, classes, etc.. For example, you will need to create macros for any
+new coclasses your project defines in Root.odl.
+
+TIP
+---
+
+Several standard header files contain a defined name including a GUID. This GUID
+is not related to any automation capability, but it provides a unique name
+designed to prevent recursive header file inclusions. The name begins with AFX_
+and ends with __INCLUDED_. The template files Root.h, Doc.h, View.h, and perhaps
+others, contain this construct. It appears at the beginning and end of generated
+header files in code similar to the following:
+
+      #if !defined(AFX_ME_H__DCE12ACA_4F12_11D2_AC7F_0060081982D5__INCLUDED_)
+      #define AFX_ME_H__DCE12ACA_4F12_11D2_AC7F_0060081982D5__INCLUDED_
+      ...
+      #endif // AFX_ME_H__DCE12ACA_4F12_11D2_AC7F_0060081982D5__INCLUDED_
+
+Replace the name in the three places it occurs in each header file with:
+
+      $$FILE_NAME_SYMBOL$$_INCLUDED_
+
+The AppWizard framework will replace $$FILE_NAME_SYMBOL$$ with a new unique name
+when the custom AppWizard generates files.
+
+Add new macros to the dictionary
+--------------------------------
+
+This section illustrates one way to create new GUIDs in the correct format. It
+uses the RPC functions UuidCreate() and UuidToString(). These functions require
+the library Rpcrt4.lib. You will need to use the following steps to add
+Rpcrt4.lib to the custom AppWizard project:
+
+1. From the Project menu, click Settings.
+
+2. From the list Settings for, select "All Configurations".
+
+3. Click the Link tab. From the Category list, select "General".
+
+4. In the Object/library modules box, type "rpcrt4.lib" (without the quotation
+   marks). Click OK.
+
+Now, copy and paste the following code into the custom AppWizard just before the
+first function in the <ProjectName>Aw.cpp file:
+
+      #include <rpcdce.h>;
+      static GUID        Guid;
+
+      static const char *NewGuid()
+      {
+         static char szGuid[38];
+         unsigned char *pszGuid;
+         UuidCreate( &Guid );
+         if (RPC_S_OK != UuidToString( &Guid, &pszGuid ))
+                return NULL;
+         lstrcpyn(szGuid, (char *)pszGuid, sizeof(szGuid) );
+         RpcStringFree( &pszGuid );
+         return szGuid;
+      }
+      static const char *GuidCStruct()
+      {
+         static char szStruct[ 83 ];
+         static const char *pszFmtStruct = "{ 0x%x, 0x%x, 0x%x, { 0x%x, 0x%x,"
+                                  " 0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x } }";
+
+         sprintf( szStruct, pszFmtStruct, Guid.Data1, Guid.Data2,
+          Guid.Data3, Guid.Data4[0], Guid.Data4[1], Guid.Data4[2],
+          Guid.Data4[3], Guid.Data4[4], Guid.Data4[5], Guid.Data4[6],
+          Guid.Data4[7] );
+         return szStruct;
+      }
+
+At the end of the InitCustomAppWiz() function, add the following code:
+
+      m_Dictionary["APP_CLSID_REG"] = NewGuid();
+      m_Dictionary["APP_CLSID"] = GuidCStruct();
+      m_Dictionary["DISPIID_CLSID_ODL"] = NewGuid();
+      m_Dictionary["DISPIID_CLSID"] = GuidCStruct();
+      m_Dictionary["LIB_CLSID_ODL"] = NewGuid();
+
+Build the custom AppWizard project. New projects based on this custom AppWizard
+contain unique GUIDs unique.
+
+REFERENCES
+==========
+
+For more information on the InitCustomAppWiz function, see the following
+documentation in the MSDN library:
+
+Visual C++ Documentation, Using Visual C++, Visual C++ Programmer's Guide,
+Beginning Your Program, Details, AppWizard Programming Reference, CCustomAppWiz,
+CCustomAppWiz::InitCustomAppWiz
+
+For more information on the RPC functions, see the following documentation in the
+MSDN library:
+
+Platform SDK, Networking and Distributed Services, Remote Procedure Call (RPC),
+Reference, Function Reference; RPC Functions; UuidCreate() and UuidToString()
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbVC kbVC500bug kbVC600bug kbAppWizard kbCustomWizard kbDSupport kbBug kbGrpDSTools kbNoUpdate kbISS 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,60 @@
+DOCUMENT:Q195243  07-MAY-1999  [iis]
+TITLE   :ASP May Misinterpret Extra or Missing Delimiters as HTML
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ASP may misinterpret extra or missing delimiters as HTML. ASP does not interpret
+HTML.
+
+MORE INFORMATION
+================
+
+You should check for extra or missing delimiters if you receive unusual output.
+A missing delimiter may be misinterpreted as HTML. For example, the following
+script would be interpreted as HTML:
+
+      <TABLE WIDTH=100%>
+
+Note that the familiar ASP delimiter is contained within this statement
+('%>').
+
+An extra delimiter may also be misinterpreted by ASP. For example:
+
+      <%SCRIPT LANGUAGE = "VBScript"%> %>
+
+ASP interprets the above line as "SCRIPT LANGUAGE = "VBSCRIPT"%>" because that
+is what is between the delimiters.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbiis300
+Version           : WINNT:3.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

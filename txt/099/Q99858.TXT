@@ -1,0 +1,61 @@
+DOCUMENT:Q99858  10-OCT-1999  [win95x]
+TITLE   :Font Changes When Changing Printer Driver in WordPerfect 5.2
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+WordPerfect Technical Support has confirmed that if you switch from the Windows
+Printing System (WPS) print driver to another Hewlett- Packard (HP) Windows
+printer driver within WordPerfect for Windows version 5.2, the TrueType fonts in
+your current document may change.
+
+MORE INFORMATION
+================
+
+This situation can occur when you change any Windows printer driver. WordPerfect
+for Windows, as well as other Windows-based applications, maintains a table of
+available fonts. When you change to another printer driver, the fonts may be
+inappropriately mapped to a similar font, either a TrueType font or a
+printer-resident font. This process is entirely handled by the specific
+application.
+
+For more information, call WordPerfect Laser Printing Technical Support.
+
+WordPerfect for Windows is manufactured by WordPerfect Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 3.10 word perfect true type
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q137111  17-DEC-2000  [win95x]
+TITLE   :Microsoft Backup Seems to Display Incorrect Information
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Restore tab in Backup, click a drive or folder containing a
+backup set file, and then double-click the backup set file, the contents of the
+backup set file seem to be displayed inaccurately. In particular, the size
+displayed initially is 0, and the modified date displayed is not the date that
+the backup was made.
+
+CAUSE
+=====
+
+When you double-click a backup set file on the Restore tab, or click a backup
+set file and then click Next Step, the contents of that backup set file are
+displayed. The folder that is displayed initially in the pane on the right side
+of the screen is the root folder of the drive from which the backup was made.
+The information displayed to the right of this folder is information about the
+folder itself, not about the backup. A size of 0 bytes is reported because
+Windows 95 always reports folders as 0 bytes in size.
+
+RESOLUTION
+==========
+
+To see information about the actual files contained in the backup, double- click
+the folders displayed in the pane on the right side of the screen until the
+files in the folders are displayed.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

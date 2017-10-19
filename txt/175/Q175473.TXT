@@ -1,0 +1,64 @@
+DOCUMENT:Q175473  18-DEC-1999  [homemm]
+TITLE   :Bookshelf 98: Remove All Deletes Internet Directory 96 Updates
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Windows 
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf 98. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge base as it becomes available.
+
+MORE INFORMATION
+================
+
+You can download the Bs96ingn.lst file from the following Microsoft Web site:
+
+   http://bookshelf.msn.com/na/inetdir/updates.asp
+
+Bookshelf 98 does not require the Internet Directory updates provided by the
+Bs96ingn.lst file. To maintain updated Web links, Bookshelf 98 uses a redirector
+on the Bookshelf Web site.
+
+SUMMARY
+=======
+
+If you remove Microsoft Bookshelf 98 using the Remove All option, the Setup
+program deletes the Bs96ingn.lst file from the Bookshelf 96 folder. This file
+contains the updates to the Internet Directory 96 included with Microsoft
+Bookshelf 1996-97.
+
+Additional query words: multi multi-media media mm updates
+
+======================================================================
+Keywords          : kbsetup kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1996 kbBookShelf1997 kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

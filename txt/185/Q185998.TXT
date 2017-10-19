@@ -1,0 +1,66 @@
+DOCUMENT:Q185998  02-SEP-1999  [sms]
+TITLE   :SMS: What Is SMS and What Capabilities Does It Provide?
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Systems Management Server is a Microsoft BackOffice product that
+provides a comprehensive solution for centralized management of computers in an
+enterprise network. It is a key component of the Microsoft solution for
+enterprise distributed systems management. Extending the capabilities built into
+Windows NT, Systems Management Server provides network administrators with a
+flexible method to centrally manage software and hardware on their corporate
+networks. Systems Management Server is an integrated system that provides these
+services:
+
+ - Hardware and software inventory
+
+ - Software distribution and installation
+
+ - Managing shared network applications
+
+ - Remote control and troubleshooting
+
+ - Network protocol analysis
+
+Systems Management Server allows an administrator at a central location to
+perform these key management functions for client computers. This removes the
+need to physically touch a computer for inventory census, software
+installations, or problem diagnosis. Systems Management Server works within
+existing network environments to provide a complete resource management
+solution.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

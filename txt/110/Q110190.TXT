@@ -1,0 +1,65 @@
+DOCUMENT:Q110190  31-OCT-1999  [win3x]
+TITLE   :MoreFonts Not Supported with Windows for Workgroups
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use MoreFonts with Windows for Workgroups, the mouse cursor may disappear
+but not lose its functionality. However, the opposite may also occur: the mouse
+cursor may remain visible but not function. The keyboard may also lose partial
+or full functionality.
+
+MORE INFORMATION
+================
+
+According to MicroLogic Technical Support, MoreFonts is not supported under any
+version of Windows for Workgroups. This applies to both stand-alone and network
+versions of MoreFonts.
+
+RESOLUTION
+==========
+
+MicroLogic recommends using its MoreType font conversion utility to convert the
+MoreFonts fonts to TrueType fonts. Once the conversion is completed, MoreFonts
+can be completely removed from the system. Contact MicroLogic Technical Support
+for information about the MoreType utility.
+
+
+MoreFonts is manufactured by MicroLogic, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+
+Additional query words: 3.10 more fonts true type
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

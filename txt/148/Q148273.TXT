@@ -1,0 +1,61 @@
+DOCUMENT:Q148273  08-NOV-2001  [homemm]
+TITLE   :Do It Yourself Guide: No sound with Windows NT
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader's Digest Complete Do-It-Yourself Guide for Windows, version 1.0 
+ - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Readers Digest Complete Do It Yourself Guide, on Windows NT you do
+not hear any audio.
+
+This occurs if the Windows NT Audio Compression Manager is not installed.
+
+RESOLUTION
+==========
+
+Install the Audio Compression Manager.
+
+To install the Audio Compression Manager, do the following:
+
+1. Double-click Control Panel.
+
+2. Click Drivers.
+
+3. Click Add, and then install the Microsoft Audio Compression Manager from the
+   list provided.
+
+4. Click OK.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWinSearch kbHomeProdSearch kbZNotKeyword kbOSWinNTSearch kbDoItYourself
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

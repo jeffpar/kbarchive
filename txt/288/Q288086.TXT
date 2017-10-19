@@ -1,0 +1,209 @@
+DOCUMENT:Q288086  09-JAN-2002  [mspress]
+TITLE   :MCSE Training Kit Microsoft Exchange 2000 Server Implementation
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS MCSE Training Kit, Microsoft Exchange 2000 Server Implementation and Administration ISBN 0-7356-1028-2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book MCSE Training Kit Microsoft Exchange 2000
+Server Implementation and Administration, ISBN 0-7356-1028-2.
+
+The following topics are covered:
+
+ - Page 101: Incorrect Arrow Directions In Figure 3.13
+
+ - Page 116: Incorrect Statement About Moving Servers Between Admin Groups
+
+ - Page 119: Incorrect Statement About Moving Servers Between Admin Groups
+
+ - Page 362: Incorrect SSL Port Number In Table 11.1
+
+ - Page 427: "Read As" Should Be "Receive As"
+
+ - Page 519: STMP Should Be SMTP
+
+ - Page 538: Group D Should Be Group A
+
+ - Page 840: "Internet Messenger" Should Be "Instant Messaging"
+
+ - Page 988: Incorrect Number Of Storage Groups and Stores
+
+ - Page 995: Incorrect Memory Requirement For Outlook 2000
+
+MORE INFORMATION
+================
+
+Page 101: Incorrect Arrow Directions In Figure 3.13
+---------------------------------------------------
+
+On page 101, in Figure 3.13, the arrows into and out of the external system's MTA
+(lower right) are reversed. The "MTS Out" should go towards the "MTA", and the
+"MTS In" should come from the "MTA".
+
+
+Page 116: Incorrect Statement About Moving Servers Between Admin Groups
+-----------------------------------------------------------------------
+
+On page 116, in the first paragraph, remove the last sentence:
+
+"After installation, you can move servers between groups, which might be
+advisable if management or physical conditions in your network have changed."
+
+It is not possible to move servers between Admin Groups in Exchange 2000 Server.
+
+
+Page 119: Incorrect Statement About Moving Servers Between Admin Groups
+-----------------------------------------------------------------------
+
+On page 119, please remove the last statement in the paragraph under "Native
+Mode":
+
+"It is also possible to move servers between administrative groups should the
+underlying infrastructure require this kind of change."
+
+It is not possible to move servers between Admin Groups in Exchange 2000 Server.
+
+
+Page 362: Incorrect SSL Port Number In Table 11.1
+-------------------------------------------------
+
+On page 362, in Table 11.1,
+
+Change:
+"433"
+
+To
+"443"
+
+
+Page 427: "Read As" Should Be "Receive As"
+------------------------------------------
+
+On page 427, in last line of the second paragraph, change:
+
+"Read As permissions"
+
+To:
+
+"Receive As permissions"
+
+
+Page 519:  STMP Should Be SMTP
+------------------------------
+
+On page 519, in the first line of the first paragraph, change:
+
+"Modern Extended STMP..."
+
+To:
+
+"Modern Extended SMTP..."
+
+
+Page 538: Group D Should Be Group A
+-----------------------------------
+
+On page 538, in the bottom Note section, change:
+
+"If the connection had been marked unavailable before routing group D began
+routing the message,"
+
+To:
+
+"If the connection had been marked unavailable before routing group A began
+routing the message,"
+
+
+Page 840: "Internet Messenger" Should Be "Instant Messaging"
+------------------------------------------------------------
+
+On page 840, in the last heading,
+
+Change:
+"Components of the Internet Messenger Service"
+
+To:
+"Components of the Instant Messaging Service"
+
+
+Page 988: Incorrect Number Of Storage Groups and Stores
+-------------------------------------------------------
+
+On page 988, the answer for question 7 contains an incorrect number of storage
+groups and stores.
+
+Change:
+"You can manage up to 16 individual storage groups on a single Exchange 2000
+server, and each storage group is capable of holding up to six individual
+stores. This gives you the capability to create a maximum of 96 physical
+stores..."
+
+To:
+"You can manage up to 4 individual storage groups on a single Exchange 2000
+server, and each storage group is capable of holding up to 5 individual stores.
+This gives you the capability to create a maximum of 20 physical stores..."
+
+Note: Although the Extensible Storage Engine (ESE) code allows 16 storage groups,
+Exchange 2000 Server only allows a maximum of 4 storage groups containing a
+maximum of 5 databases for each storage group. This limit is enforced inside the
+Exchange System Manger snap-in, so administrators cannot create more storage
+groups than the system allows.
+
+For more information, please refer to the following Microsoft Knowledge Base
+article:
+
+Q251123: Maximum Number of Storage Groups in Exchange 2000 for Database Capacity
+Planning
+
+
+Page 995: Incorrect Memory Requirement For Outlook 2000
+-------------------------------------------------------
+
+On page 995, in the first question, change:
+
+"16 MB of RAM"
+
+To:
+
+"8 MB of RAM"
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1028-2 TKBOOK WIN2000 UNKROTH
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

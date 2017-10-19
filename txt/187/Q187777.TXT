@@ -1,0 +1,76 @@
+DOCUMENT:Q187777  26-SEP-2001  [frontpg]
+TITLE   :FP: Illegal Comments Removed from HTML Markup Bot
+PRODUCT :Word Front Page
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you insert an HTML Markup in a page, illegal HTML comment code may
+gradually be deleted one or two characters at a time from the front of the
+Markup each time you save or reopen the page.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use one of the following methods:
+
+ - If you are using Microsoft FrontPage 97, upgrade to FrontPage 98.
+
+   -or-
+
+ - Use an alternate HTML code (or codes) that accomplishes the same thing.
+
+   Note: Legal HTML comments begin with the following characters:
+
+     <!--
+
+   and end with the following characters:
+
+     -->
+
+   Example: <!-- This is a legal HTML Comment -->
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was corrected in Microsoft
+FrontPage 98 for Windows.
+
+
+Additional query words: eaten deleted removed altered
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : :1.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

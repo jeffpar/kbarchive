@@ -1,0 +1,62 @@
+DOCUMENT:Q111574  28-OCT-1999  [win3x]
+TITLE   :Server Problems After Extended Use w/EtherExpress & EXP16ODI
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After running Microsoft Windows for Workgroups (WFWG) version 3.11 for several
+hours, you can connect to other workstations and other network features still
+work, but no one can connect to your workstation.
+
+CAUSE
+=====
+
+If you are using the Intel EtherExpress 16 network interface card (NIC) with the
+EXP16ODI.COM MAC driver, the server portion of Windows for Workgroups 3.11 may
+stop functioning. You can use other network features; however, your workstation
+is unable to act as a server until it is rebooted.
+
+It appears that NWNBLINK.386 resets the NIC and the ODI MAC driver does not
+replace the multicast list for the network after the NIC is reset.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows for Workgroups
+version 3.11. We are researching this problem and will post new information here
+as it becomes available.
+
+Additional query words: 3.11 hangs locks
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

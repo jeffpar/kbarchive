@@ -1,0 +1,68 @@
+DOCUMENT:Q275026  13-JUN-2001  [exchange]
+TITLE   :XADM: Notifications Not Sent by Mailbox Manager in Audit Mode
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the Mailbox Manager utility that is shipped with Exchange
+Server 5.5 Service Pack 3 (SP3). You can use this utility to monitor mailboxes
+on various Exchange Server computers in the site based on set policies. However,
+Mailbox Manager does not send any user notifications when it is operating in
+Audit mode.
+
+MORE INFORMATION
+================
+
+Mailbox Manager operates in two modes, Audit mode and Cleanup Mailboxes mode. To
+choose the mode that Mailbox Manager operates in, click the General tab, and
+then click either the Cleanup Mailboxes option or the Audit option.
+
+You can configure Mailbox Manager to send a summary report or a detailed report
+to an administrator mailbox when Mailbox Manager is operating in either of these
+modes. In addition, you can configure Mailbox Manager to send notifications to
+users. To do so, click the Notification tab in the Configuration window for
+Mailbox Manager, and then click to select the Notify Users check box.
+Alternatively, if you click to clear this check box, notifications are not sent
+to users.
+
+User notifications can only be sent when Mailbox Manager is operating in Cleanup
+Mailboxes mode; user notifications are not sent when Mailbox Manager is in Audit
+mode. However, because the Notification tab is always available, it may seem
+that you can configure Mailbox Manager to send user notifications in either
+mode.
+
+
+Additional query words: MAILBOX-MANAGER AUDIT-MODE
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : :5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

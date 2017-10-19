@@ -1,0 +1,104 @@
+DOCUMENT:Q167966  10-FEB-2002  [visualc]
+TITLE   :FIX: C2248: Statics in Friends, No Access to Protected Members
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbtool kbVC500bug kbVC600bug kbNoUpdatekbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a static object created in a friend function, it is denied
+access to protected members of a class and compiler error C2248 appears as
+follows:
+
+   'member' : cannot access protected member declared in class 'class'
+
+RESOLUTION
+==========
+
+Create the static object using the new operator.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The following sample demonstrates the problem and the workaround.
+
+Sample Code
+-----------
+
+      #include <iostream>
+
+      //#define WORKAROUND //Uncomment this line for workaround
+
+      class A
+      {
+      protected:
+      A() { std::cout << "A()" << std::endl ;}
+      ~A() { std::cout << "~A()" << std::endl ;};
+
+      friend A* GetA();
+      };
+
+      A* GetA()
+      {
+      #ifndef WORKAROUND
+
+        static A a ;
+        return &a ;
+
+      #else
+
+        static A *pA = new A;
+        return pA;
+
+      #endif
+      }
+
+      void main()
+      {
+       A *pA = GetA() ;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbtool kbVC500bug kbVC600bug kbNoUpdate kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

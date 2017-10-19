@@ -1,0 +1,59 @@
+DOCUMENT:Q100860  01-NOV-1999  [win95x]
+TITLE   :OmniBook DoubleSpace Sets Drive E as Host Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:MS-DOS:5.0; WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Hewlett-Packard (HP) OmniBook 300 contains DBLSPACE.EXE, which is taken from
+MS-DOS 6.0. The OmniBook implementation of DoubleSpace sets the uncompressed
+drive letter to drive E. Hewlett-Packard set drive E as the default; this
+default does not adhere to the MS-DOS 6.0 standard for setting DoubleSpace
+drives.
+
+MORE INFORMATION
+================
+
+Hewlett-Packard chose this default to coordinate with internal OmniBook
+configurations, such as the use of Stacker on the Flash RAM. Note that the
+Stacker functions provided with the OmniBook 300 on Flash RAM always use drive F
+as the default for the uncompressed drive.
+
+For additional information on MS-DOS DoubleSpace, query on the following words in
+the Microsoft Knowledge Base:
+
+   ms-dos and dblspace
+
+Additional query words: 5 6 5.00 6.00 3.10 clarification
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0; WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

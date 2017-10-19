@@ -1,0 +1,77 @@
+DOCUMENT:Q159266  17-DEC-2000  [win95x]
+TITLE   :Error Message at Boot with Ositech Trumpcard Ethernet Adapter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using an Ositech Trumpcard PC card (Ethernet + modem) while not
+connected to a network, you may receive an error message similar to the
+following message during Windows 95 startup:
+
+   Your network adapter Ositech Trumpcard Ethernet Adapter is not working
+   properly. You may need to set it up again. For more information see the
+   Network Troubleshooter in Windows Help.
+
+An exclamation point in a yellow circle may appear on the card in Device Manager.
+
+CAUSE
+=====
+
+The Ositech Trumpcard shuts down power to the Ethernet portion of the card to
+save battery power if no cable is connected to the network.
+
+RESOLUTION
+==========
+
+You can ignore the error message. If you want to disable the error message,
+follow these steps:
+
+1. In Control Panel, double-click Network.
+
+2. Click the Ositech Trumpcard adapter, and then click Properties.
+
+3. Click the Advanced tab.
+
+4. In the Connector Type box, click the media (cable type) that you are using.
+
+5. Click OK or Close until you return to Control Panel. When you are prompted to
+   restart the computer, do so.
+
+
+MORE INFORMATION
+================
+
+The modem portion of the card continues to function when the error message is
+received.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

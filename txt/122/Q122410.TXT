@@ -1,0 +1,53 @@
+DOCUMENT:Q122410  23-JUL-2001  [visualc]
+TITLE   :DOC: pow(0,0) Function Not Documented
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix
+
+======================================================================
+2.00
+WINDOWS NT
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The return value of the pow() function, which computes the value of x raised to
+the y power, is not documented in the case of pow(0,0). In this case, the pow()
+function returns 1.
+
+MORE INFORMATION
+================
+
+The behavior of pow(0,0) conforms to the proposed NCEG (Numerical C Extensions
+Group) standard. See NCEG draft 92-014, F.4.3 for more information. The
+documents were corrected in Microsoft Visual C++, version 4.0.
+
+Additional query words: 2.00 4.00
+
+======================================================================
+Keywords          : kbdocfix 
+Technology        : kbVCsearch kbAudDeveloper kbVC200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

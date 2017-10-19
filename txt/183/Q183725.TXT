@@ -1,0 +1,53 @@
+DOCUMENT:Q183725  08-MAY-1999  [iis]
+TITLE   :Query Form Doesn't Provide Link to NNTP Articles
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The sample NNTP Query form shipped with Index Server 2.0 returns a table of
+articles found matching the query; however, no link is returned that allows you
+to open the document.
+
+WORKAROUND
+==========
+
+If you want to return a link that the client can use to view the news articles,
+you must modify the Nntpqry.asp file. The following is an example of how you can
+modify the code to return a valid link to the news article:
+
+      <a href="news://news.server.com/<% = Server.HTMLEncode(RS("newsmsgid"))%>">
+
+This returns a link to the article on the server-specified news server.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : WINNT:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

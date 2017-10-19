@@ -1,0 +1,79 @@
+DOCUMENT:Q155638  08-NOV-2001  [homegame]
+TITLE   :Monster Truck Madness: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbmm kbrefkbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the minimum system requirements for Microsoft Monster
+Truck Madness.
+
+MORE INFORMATION
+================
+
+The following are the minimum system requirements to run Monster Truck Madness:
+
+ - Pentium processor
+
+ - Windows 95 or later operating system
+
+ - 8 MB Memory (12 MB recommended)
+
+ - 20 MB available hard disk space for compact install (100 MB for typical
+   install)
+
+ - 256 Color 640 x 480 display
+
+ - 2X CD-ROM (not required for trial version)
+
+ - Audio board plus speakers or headphones (required to hear audio)
+
+ - Hayes-compatible modem --14.4Kbps for head-to-head play, (9600 kbps or higher
+   recommended for connection to the Monster Truck Web Stop site)
+
+Recommended:
+
+ - A joystick or compatible device (optional, race car controller also
+   supported)
+
+ - Microsoft mouse or compatible pointing device
+
+ - For best play, 12 MB (or more) RAM
+
+Additional query words: Monster Truck Madness Min Sys Requirements kbimu homegame msgame
+
+======================================================================
+Keywords          : kbmm kbref kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

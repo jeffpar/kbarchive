@@ -1,0 +1,111 @@
+DOCUMENT:Q173194  16-JUL-1999  [exchange]
+TITLE   :XCLN: Cannot Open Third-Party Applications Attached in Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange Macintosh clients are unable to open attachments that require
+a third-party application to open them. The attachment is delivered with a
+generic icon and when the user tries to open it, the user gets the following
+error message:
+
+   File format cannot be read
+
+CAUSE
+=====
+
+The file type needs to be defined on the Macintosh workstation whether the
+workstation belongs to the sender or to the recipient.
+
+RESOLUTION
+==========
+
+To resolve this problem, you need to modify the appropriate file associations in
+the Exchange Preferences file.
+
+NOTE: To do any of the following, you need a third-party Macintosh application
+called ResEdit.
+
+Before attempting the following change, you must know the appropriate file
+extension, creator, and type. To get this information, start ResEdit, and on the
+File Menu, click Get File/Folder Info, and select one of the files in question.
+
+1. Make a backup copy of the Exchange Preferences file. In the System folder,
+   click the Preferences folder, and click the Exchange Preferences file icon.
+   From the File menu, click Duplicate. This is just a precautionary measure in
+   case using ResEdit causes a problem with your Preferences file.
+
+2. If it's not already running, start ResEdit.
+
+3. Open the Exchange Preferences file.
+
+4. Open the STR # section.
+
+5. Double-click Mac File Types.
+
+6. For every file type, there should be a string entry. To modify a file
+   association, simply select the file association you want to edit. To enter a
+   new string, on the Resource menu, click Insert New Field. Use the format:
+
+   .ext=:creator:type
+
+7. After the appropriate information has been entered, save the file.
+
+8. When the Exchange Macintosh client is started, the edited or new file
+   association is available.
+
+WORKAROUND
+==========
+
+To successfully open an attachment that has a generic icon:
+
+1. Save the attached file to the hard disk drive.
+
+2. Start the application.
+
+3. Open the file.
+
+MORE INFORMATION
+================
+
+The creator and type need to be four characters long. Because the type is
+usually only three characters, a space needs to be added at the end. For
+example:
+
+   Value Name: DAD2:drw2 (this can be case sensitive)
+   Data Type: REG_SZ String: .cvs
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac kbExchange400Mac
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

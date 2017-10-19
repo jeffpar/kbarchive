@@ -1,0 +1,72 @@
+DOCUMENT:Q99296  20-SEP-1999  [winmisc]
+TITLE   :Error: Training Could Not Be Carried Out for "Bravo"
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may encounter the following error message when training words such as
+"Bravo" with Voice Pilot:
+
+   
+
+   Training could not be carried out for "Bravo", most likely due to
+   background noise.  Retrain this word?
+                       <YES>     <NO>
+
+Changing the word spelling or capitalization allows you to train this word.
+
+MORE INFORMATION
+================
+
+The word Bravo is part of the File Manager vocabulary and can be used to select
+drive B on your system when available. If you try to train this word when using
+Voice Pilot you will get the above error message and you won't be able to train
+it. This will happen even if there is no background noise or if you add the word
+as a command to a different vocabulary. As long as the word stays exactly the
+same, training cannot be completed.
+
+Workaround
+----------
+
+Delete the word and replace it with a noncapitalized "bravo" or with a different
+spelling, such as "Brravo".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows Sound System versions
+1.0 and 1.0a. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q82810  09-OCT-1999  [win95x]
+TITLE   :Where Windows Searches for REG.DAT
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows searches for the REG.DAT file ONLY in the Windows program
+directory (by default, this is WINDOWS). If the file is not found, it will be
+created whenever an application, the shell (for example, Program Manager), or
+the Registration Editor (REGEDIT.EXE) creates a new OLE registration entry.
+
+Any other occurrences of the REG.DAT file on the hard disk will be ignored (for
+example, in the root directory, on the path, in the SYSTEM directory, and so
+on).
+
+MORE INFORMATION
+================
+
+Since the shell mirrors the OLE server information registered in REG.DAT in the
+WIN.INI file's [embedding] section, the system may be able to correct itself
+should the REG.DAT file be accidentally deleted, which should allow you to
+continue editing your OLE objects.
+
+Note: Recreating the REG.DAT file from the WIN.INI file entry is done to maintain
+compatibility with pre-version 1.0 OLE clients (Microsoft Excel for Windows
+version 3.0, Microsoft PowerPoint for Windows version 2.0, Lotus Notes version
+2.0).
+
+If the REG.DAT file is deleted, any data registered for opening and printing
+files in the File Manager or Program Manager could be lost.
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

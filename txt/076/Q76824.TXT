@@ -1,0 +1,52 @@
+DOCUMENT:Q76824  11-OCT-1999  [win95x]
+TITLE   :Dial Not Available in Windows Terminal
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Dial option may be unavailable in the Phone menu of Windows Terminal if you
+have Carrier Detect selected in the Communications dialog box under the Settings
+menu.
+
+Carrier Detect uses the modem signal to detect a carrier signal. When Carrier
+Detect is selected, Terminal uses the carrier detect signal to determine whether
+the modem is online. When Carrier Detect is off, Terminal looks at the modem
+response string to determine if it is connected.
+
+If your modem still isn't connecting after correctly setting the other options,
+clear the Carrier Detect check box to use Terminal's method and try connecting
+again.
+
+Additional query words: grey gray greyed 3.0 3.00 3.1 3.10 3.00a 3.11 wincomm dimmed dim
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,56 @@
+DOCUMENT:Q112352  08-FEB-2000  [foxpro]
+TITLE   :How to Emulate Function Keys in FoxPro for Macintosh
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A number of FoxPro functions use a function key as a hot, or shortcut, key;
+however, many Macintosh systems use keyboards that do not have function keys. To
+emulate function keys on these systems, you can use a
+CONTROL+COMMAND+<number> key combination.
+
+MORE INFORMATION
+================
+
+The hot key to bring the Command window forward is COMMAND+F2. FoxPro for
+Macintosh treats the CTRL and COMMAND keys the same, allowing users that don't
+have function keys to mimic the COMMAND+<function key> combination. To do
+this, hold both the CTRL and COMMAND keys down while pressing the number of the
+function key to activate. For example, the Command window hot key combination
+would be CTRL+COMMAND+2 instead of COMMAND+F2. To cycle through active windows,
+the key combination would be CTRL+COMMAND+1 instead of COMMAND+F1.
+
+Additional query words: VFoxMac FoxMac fkey ctrl hotkey access key accelerator
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q114144  09-FEB-2000  [foxpro]
+TITLE   :BUG: "Alias Not Found" Occurs with Table Used in dBASE Query
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.6; WINDOWS:2.6,3.0,5.0,5.0a
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbvfp kbvfp500aBUG kbvfp500bug kbvfp260bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a 
+ - Microsoft FoxPro for Windows, version 2.6 
+ - Microsoft FoxPro for MS-DOS, version 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An "Alias Not Found" error message occurs when you are opening tables in FoxPro
+that were used for queries in dBASE.
+
+CAUSE
+=====
+
+This problem may occur because the dBASE query indexed the table on a field from
+another database, placing the key in a temporary index file. When the table is
+converted, FoxPro duplicates the foreign key, but places the foreign key in the
+permanent structural index for the current database. When you attempt to open
+the database outside the query, an "Alias Not Found" error will occur.
+
+RESOLUTION
+==========
+
+You must delete the offending index tag before you can access the file without
+error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: convert kbvfp300 kbvfp500 kbvfp500a
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbvfp kbvfp500aBUG kbvfp500bug kbvfp260bug 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260DOS kbFoxPro260 kbVFP300 kbVFP500 kbVFP500a
+Version           : MS-DOS:2.6; WINDOWS:2.6,3.0,5.0,5.0a
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

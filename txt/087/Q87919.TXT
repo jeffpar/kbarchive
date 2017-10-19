@@ -1,0 +1,54 @@
+DOCUMENT:Q87919  14-DEC-1999  [win95x]
+TITLE   :MicroSpeed Serial Card Is Incompatible with Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MicroSpeed has confirmed that its MicroSpeed serial card for use with the
+MicroSpeed Mouse is not compatible with Microsoft Windows version 3.1. If you
+attempt to use the MicroSpeed mouse with the MicroSpeed serial card, Windows
+will not display a mouse pointer, regardless of the mouse driver used.
+
+WORKAROUND
+==========
+
+The only workaround is to remove the card, connect the mouse to a serial port
+built into the computer, and install the Microsoft Mouse driver version 8.2.
+
+The MicroSpeed product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 3.11 3rdparty micro speed bus
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

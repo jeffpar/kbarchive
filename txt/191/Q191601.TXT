@@ -1,0 +1,74 @@
+DOCUMENT:Q191601  08-MAY-2002  [winnt]
+TITLE   :Defragmentation Application Hangs
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While running a defragmentation application on a volume that is formatted as
+FAT, the application can cease to respond (hang), along with other applications,
+and possibly the computer itself. No record of the hang will be logged. No entry
+will appear in the event logs, and a Dr. Watson error will not occur.
+
+CAUSE
+=====
+
+Running a defragmentation application while you actively open and close files
+forces Windows NT to enter a timing window. This timing window makes unsafe
+synchronization possible on the file being defragmented, and the system hangs as
+it waits for the error condition to be resolved. All defragmentation
+applications that use FSCTL_MOVE_FILE on FAT call are susceptible. This error is
+rare in occurrence.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0. This problem was
+first corrected in Windows NT 4.0 Service Pack 4.
+
+Additional query words: kbDSupport 4.00
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

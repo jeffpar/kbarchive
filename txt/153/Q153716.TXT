@@ -1,0 +1,68 @@
+DOCUMENT:Q153716  08-AUG-2001  [winnt]
+TITLE   :Permissions Required to Perform RAS Administration
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to perform full administration of a Windows NT Remote Access Service
+(RAS) server, you must be an Administrator or a member of both the Server
+Operators and Account Operators groups.
+
+MORE INFORMATION
+================
+
+To fully administer a RAS server in a domain, you must use a user account that
+is a member of the Domain Administrators group, or you must use a user account
+that is a member of both the Server Operators and Account Operators groups.
+
+A user in the Server Operators group is able to start and stop the RAS Server
+service, disconnect RAS clients, and send messages to connected RAS clients. A
+user who is only a member of the Server Operators group cannot grant or revoke
+RAS dial-in permission to a user account.
+
+A user in the Account Operators group is able to grant and revoke RAS dial-in
+permission to a user account. A user who is only a member of the Account
+Operators group cannot start and stop the RAS Server service, disconnect RAS
+clients, or send messages to connected RAS clients.
+
+A user who is a member of both the Server Operators group and Account Operators
+group has the same administrative abilities regarding a RAS server as a user who
+is a member of the Domain Administrators group.
+
+To perform any administration of a RAS server on a Windows NT Workstation or
+Windows NT stand-alone server using a local machine account, the account must be
+a member of the local Administrators group.
+
+Additional query words: prodnt security dun dial-up
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

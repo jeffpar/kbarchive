@@ -1,0 +1,74 @@
+DOCUMENT:Q262796  22-OCT-2000  [exchange]
+TITLE   :XADM: Unable to Log On When Running Replication Configurator
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Microsoft Exchange Replication Configurator (Exscfg.exe)
+version 5.5.2650, you may receive the following error message:
+
+   Unable to logon to local machine using NT account information
+
+You may receive this error message on a Microsoft Windows NT 4.0 domain
+controller with Service Pack 6a and on Windows 2000. You may receive this error
+message when you attempt to log on to the publishing server from the Session
+Site List dialog box in the Exchange Replication Configurator.
+
+CAUSE
+=====
+
+This behavior occurs because Exscfg.exe is unable to connect to the local SAM
+database when Exchange Replication Configurator is installed on a domain
+controller.
+
+RESOLUTION
+==========
+
+To resolve this behavior, the replication service account needs to be in the
+local administrators group for Exscfg.exe to properly validate the service
+accounts credentials.
+
+To do this, run Exscfg.exe on a Windows NT 4.0 stand-alone server or on a Windows
+2000 server without Active Directory.
+
+MORE INFORMATION
+================
+
+No information regarding this error is logged in the server's Application Log.
+Exscfg.exe, if configured for logging, does not record any information on this
+error.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

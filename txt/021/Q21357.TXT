@@ -1,0 +1,49 @@
+DOCUMENT:Q21357  30-JUL-2001  [homegame]
+TITLE   :Using NAV Radio and OBI for VOR Navigation
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+To use the NAV radio and OBI for VOR navigation, find out the frequency of the
+VOR transmitter for the airport you are interested in. The steps necessary to
+perform VOR navigation are as follows:
+
+1. Tune your NAV radio (either 1 or 2) to the VOR frequency. You can get these
+   frequencies from the maps provided with Flight Simulator.
+
+2. Adjust the appropriate OBI (use OBI1 with NAV1 and OBI2 with NAV2) until the
+   vertical cross hair centers on the OBI gauge. The vertical cross hair can
+   center under three conditions: when the OBI is OFF, set to TO, or set to
+   FROM. Choose the TO option.
+
+3. Turn the airplane so the magnetic compass has the same degree reading as the
+   top of the OBI indicator.
+
+Now, fly the airplane, keeping the needle in the OBI indicator centered. You are
+now flying toward the VOR beacon.
+
+Additional query words: crossbar
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

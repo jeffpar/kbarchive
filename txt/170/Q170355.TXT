@@ -1,0 +1,79 @@
+DOCUMENT:Q170355  21-FEB-1999  [winnt]
+TITLE   :New Tools Included with Zero Administration Kit
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes several new tools included with the Zero Administration
+Kit (ZAK) for Windows NT.
+
+MORE INFORMATION
+================
+
+Floplock
+--------
+
+This tool is used to prevent use of the floppy disk drive (even after rebooting)
+using DACL (Discretionary Access Control Lists).
+
+If this service is configured to start up automatically at startup, only
+administrators and power users can access the floppy disk drive in Windows NT
+Workstation, and only administrators can access the floppy disk drive in Windows
+NT Server.
+
+Runapp
+------
+
+This tool is used to restart the TaskStation application if it is terminated
+unexpectedly.
+
+Con2Prt
+-------
+
+This tool provides scriptable functionality to the Add Printer Wizard so that
+printers can be added or removed from the command line using a script.
+
+FixPrf
+------
+
+Windows Messaging does not automatically use the currently logged on user name
+when it is started. The FixPrf tool forces the Windows Messaging client to load
+with the user name of the user logging in.
+
+Further information about these tools is available in the Zero Administration Kit
+Administrators Guide.
+
+
+Additional query words: 1.00 fixprf.exe
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

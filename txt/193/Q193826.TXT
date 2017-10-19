@@ -1,0 +1,70 @@
+DOCUMENT:Q193826  09-AUG-2001  [winnt]
+TITLE   :How to Hide the Security Tab
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to hide the Security tab of a file or folder when
+Windows NT is formatted for NTFS. This may be useful if you do not want other
+users to change the permissions on a particular file or folder.
+
+MORE INFORMATION
+================
+
+The Rshx32.dll file controls the Security tab. To hide the security tab, change
+the permissions of this system file. By default, everyone has read permissions
+to this file, and the local administrator has full control rights.
+
+To change the permissions on the file:
+
+1. Log on to the computer running Windows NT Server or Workstation as a local
+   user who has Administrator rights.
+
+2. Open Windows NT Explorer and go to Winnt\System32.
+
+3. Search for the Rshx32.dll file.
+
+4. Go to the Properties of this file.
+
+5. Click the Security tab and then click Permission.
+
+6. Remove the Read permission of everyone and then add the appropriate rights to
+   the appropriate users or user groups.
+
+7. Restart the computer.
+
+Now, only the users who have been assigned the rights can see the Security tab.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

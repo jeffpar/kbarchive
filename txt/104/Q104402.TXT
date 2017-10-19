@@ -1,0 +1,76 @@
+DOCUMENT:Q104402  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Err Msg: Not Enough Disk Space Available...
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a,3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Setup program (SETUP.EXE) to install version 1.0 or 1.0a of
+Microsoft Schedule+ for Windows, the following error message may appear:
+
+   There is not enough disk space available to install Schedule+
+
+The error message indicates that there is not enough disk space on the drive
+where Schedule+ is being installed. However, this message will also appear when
+there is not enough disk space available on the disk drive or partition where
+Microsoft Windows is installed.
+
+NOTE: This error message may also appear when you try to load versions 3.0, 3.0b,
+and 3.2 of Microsoft Mail for PC Networks.
+
+CAUSE
+=====
+
+When the Setup program determines available disk space, it looks at the target
+drive for information. When the Setup program attempts to write to the Windows
+directory (on a different drive), there may not be enough disk space to write
+the SCHDPLUS.INI into the Windows directory and the necessary .DLL files into
+the WINDOWS\SYSTEM subdirectory.
+
+RESOLUTION
+==========
+
+Move or delete files to free up the drive and ensure there is enough disk space
+available on the drive.
+
+MORE INFORMATION
+================
+
+Disk Space Requirements: (Clean Setup)
+
+   Microsoft Schedule+: approximately 1.6 MB
+   The disk drive Windows resides on: approximately 1.2 MB
+
+Additional query words: schedule plus 1.00 1.00a partition
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbZNotKeyword3 kbSchedule100 kbSchedule100a kbMailPCN320 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:1.0,1.0a,3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

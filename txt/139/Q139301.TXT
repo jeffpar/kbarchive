@@ -1,0 +1,71 @@
+DOCUMENT:Q139301  07-MAY-2001  [visualc]
+TITLE   :FIX: C2664 Error w/Property Sheet Component Added to CDocument
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2
+OPER/SYS:
+KEYWORDS:kbMFC KbUIDesign kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbCompGallery kbGrpDSMFCAT
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert a modeless property sheet from the Property Sheet component in
+the Component Gallery into a CDocument-derived class or other non-CWnd derived
+class, the compiler generates this error:
+
+   C2664:'Create' : cannot convert parameter 5 from 'class CDocDerivedClass
+   *const' to 'class CWnd *' (new behavior; please see help).
+
+CAUSE
+=====
+
+The modeless property sheet component placed in an application includes a
+CMiniFrameWnd-derived class that actually contains the modeless property sheet.
+When using the component, the application calls Create() on the
+CMiniFrameWnd-derived class. This Create() requires a CWnd* to its parent window
+as its fifth argument. The code generated for your application passes 'this' to
+the Create() call. CDocument is not derived from CWnd; therefore, passing the
+'this' pointer from the CDocument into the CMiniFrame::Create() function causes
+the compiler error.
+
+RESOLUTION
+==========
+
+Place the property sheet component into a class that is derived from CWnd.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. The problem was corrected in Visual C++ version 5.0.
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbCompGallery kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420
+Version           : :4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

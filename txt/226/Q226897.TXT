@@ -1,0 +1,68 @@
+DOCUMENT:Q226897  15-NOV-2000  [sms]
+TITLE   :SMS: Duplicate COMM & SPEC Caused by Failed Child Attachment
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbinterop kbConfig kbDatabase kbServer kbsms120 kbsms120bug kbDataLoader kbInventory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft SQL Server administration tools to directly view the
+contents of the Systems Management Server (SMS) database, there may be duplicate
+values in the COMM and SPEC tables. You may also notice tables that start with
+underscores, such as the following:
+
+   _User_Information_COMM
+
+CAUSE
+=====
+
+When a child site sends its inventory to a parent site on the initial attachment
+or after running PREINST /SYNCPARENT, the *.UPD directory may not be processed
+at the parent site. This behavior leaves many of the NextCommonKey and
+NextSpecificKey values in the GroupMap table set incorrectly. Normal Management
+Information Format (MIF) processing that occurs afterwards results in the
+creation of duplicate datakeys in the COMM and SPEC tables.
+
+When the *.UPD directory is not processed completely, there may be tables in the
+SMS database that begin with an underscore, as in the example in the "Symptoms"
+section.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbConfig kbDatabase kbServer kbsms120 kbsms120bug kbDataLoader kbInventory 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,165 @@
+DOCUMENT:Q264795  08-MAY-2002  [winnt]
+TITLE   :BUG: _MBCS String Functions of MSVCRT.DLL (version 6.1.8637.0)
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000
+OPER/SYS:
+KEYWORDS:kbCRT kbOSWin2000 kbVC600bug kbWin2000SP2Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Multibyte character set (MBCS) string functions, such as _ismbcspace, that are
+provided by the Msvcrt.dll file (version 6.1.8637.0) released with both
+Microsoft Windows 2000 and Microsoft Windows ME have a slower performance than
+earlier versions of the Msvcrt.dll file released with Microsoft Windows NT 4.0,
+Windows 9x, or Visual C++ 6.0. The slower performance affects any application
+that directly or indirectly uses the MBCS string functions of the Msvcrt.dll
+file.
+
+The Mfc42.dll file is built with a _MBCS processor directive by default, and the
+Microsoft Foundation Class Library (MFC) CString functions use the Msvcrt.dll
+file MBCS functions by default. Applications that use MFC CString functions have
+a slower performance when they run on Windows 2000 and Windows ME than when they
+run on Windows 9x and Windows NT 4.0.
+
+The degree of performance degradation depends on how intensive the application
+uses the run-time MBCS string functions or MFC CString functions.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The following are three possible work arounds to resolve the problem:
+
+1. Rebuild the application to statically link to the run-time library. The
+   static library does not have the performance delay with MBCS string functions
+   on Windows 2000 and Windows ME.
+
+2. Modify the application to be Unicode compatible on Windows 2000. For example,
+   use _ttoi(argv[1]) in the sample code located in the "More Information"
+   section of this article instead of atoi(argv[1]). Rebuild the application
+   with the _UNICODE manifest instead of _MBCS. If the application uses the MFC,
+   the Unicode version of the MFC library is used by default. Refer to the MSDN
+   library for more information about Unicode programming.
+
+3. If your application only uses single-byte character set (SBCS), rebuild the
+   application without the _MBCS manifest. If the application uses the MFC
+   CString functions, you will still encounter this MBCS problem because MFC is
+   built with _MBCS by default. The following are two possible work arounds for
+   this case:
+
+    - Add \MFC\SRC\Strex.cpp to your project, and then compile it without _MBCS.
+      The Strex.cpp file implements the CString functions. This may not work if
+      your application uses the MFC library indirectly when other DLL's that are
+      used by your application use MFC CString functions.
+
+    - Rebuild the MFC library with MBCS=0. Add the MFC42.LIB file to the "Ignore
+      Libraries" project setting, and then link your custom MFC library with
+      your application. Refer to technician note TN033 for "Rebuilding the MFC
+      DLL" procedures.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was first corrected in Windows 2000
+Service Pack 2.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+ - Create a Win32 Console Application project with the following code:
+
+   #include <windows.h>
+   #include <tchar.h>
+   #include <process.h>
+   #include <stdio.h>
+
+   unsigned int __stdcall threadfunc(void *)
+   {
+       for (int v = 0; v <= 10000000; ++v)
+   	_istspace(' ');
+   	return 0;
+   }
+
+   int main(int argc, char **argv)
+   {
+       if (argc != 2)
+   	{
+   		printf("Usage: <appname.exe> <# of threads>\n");
+   		exit(1);
+   	}
+
+       int nthreads = atoi(argv[1]);
+       //int nthreads = _ttoi(argv[1]);  //UNICODE version
+
+       HANDLE *handles = new HANDLE[nthreads];
+   	unsigned int *threadID = new unsigned int[nthreads];
+
+       for (int i = 0; i < nthreads; ++i) {
+   	handles[i] = (HANDLE) _beginthreadex(NULL, 0, &threadfunc, NULL, 0, &threadID[i]);
+       }
+
+       WaitForMultipleObjects(nthreads, handles, TRUE, INFINITE);
+
+   	delete [] handles;
+   	delete [] threadID;
+
+       return 0;
+   }
+
+ - Build the application using the Multithreaded DLL run-time library Msvcrt.dll
+   file. The project is built with the _MBCS processor directive by default and
+   _istspace() is mapped to _ismbcspace(). This application runs slower on
+   Windows 2000 and Windows ME than on Windows NT 4.0 and Windows 9x.
+
+REFERENCES
+==========
+
+"Strings: Overview," "Multibyte Character Sets (MBCS): Overview," and "Unicode
+Programming: Overview" in MSDN under Visual C++ Documentation / Visual C++
+Programmer's Guide /Adding Program Functionality /Overviews.
+
+TN033: DLL Version of MFC
+
+Additional query words: MBCS _ismbcspace cstring msvcrt.dll mfc string performance
+
+======================================================================
+Keywords          : kbCRT kbOSWin2000 kbVC600bug kbWin2000SP2Fix 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : :2000
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

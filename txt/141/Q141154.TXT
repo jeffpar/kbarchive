@@ -1,0 +1,146 @@
+DOCUMENT:Q141154  11-JUN-2002  [visualc]
+TITLE   :INFO: Using Single/Multiple Instances of an OLE Object in MFC
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbole kbActiveX kbCOMt kbLocalSvr kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+This article explains how class factories are registered in an OLE local server
+created using MFC. This topic is discussed with respect to whether a single
+instance of an application can service multiple clients or whether a separate
+instance will be launched for each request made by a client.
+
+The class factory specifically attached to the document template behaves
+differently based on whether it's a default SDI (single document interface) or
+an MDI (multiple document interface) application. Other generic class factories
+behave according to how they are registered with OLE.
+
+MORE INFORMATION
+================
+
+MFC provides an interface implementation for the class factory (IClassFactory)
+in a class called COleObjectFactory, which serves as a generic type of factory.
+In addition, MFC also provides a specific class factory called
+COleTemplateServer, derived from COleObjectFactory, to create documents using
+the framework's document/view architecture.
+
+In the case of a local server, the class factories have to be registered with OLE
+so that other applications can connect to them. In MFC, all the class factories
+of a server are typically registered in CWinApp::InitInstance by calling the
+static function COleObjectFactory::RegisterAll(). This function calls
+COleObjectFactory::Register() for each of the class factories, which in turn
+calls CoRegisterClassObject in the case of a local server. In the case of an
+inproc server, there is no need to register the class factories with OLE because
+COM loads the DLL (that is, the server) and invokes a well- known entry-point,
+called DllGetClassObject, to retrieve an IClassFactory interface.
+
+When a client requests that a server create an instance of an object, the
+decision to use a running instance of the server, if one is available, or to
+launch another instance of the server is made by OLE depending on how the class
+factory for the object is registered. The determining factor is the fourth
+parameter to CoRegisterClassObject, which specifies how many objects can be
+created using this class factory. If REGCLS_SINGLEUSE is specified, OLE will
+launch another instance of the application each time a client requests an
+instance of an object class. If REGCLS_MULTIPLEUSE is specified, one instance of
+the application can service any number of objects.
+
+MDI applications use the same main frame window (that is, the same instance of
+the application) and create a new MDI child window for each request made by a
+client to create an object instance. When a client calls CoCreateInstance to
+create a document window object exposed by COleTemplateServer, a new MDI child
+window is created using the same MDI frame window. MFC implements this concept
+by passing in FALSE as the m_bMultiInstance parameter to the ConnectTemplate
+function of COleTemplateServer. This registers the class factory as single
+instance by passing REGCLS_MULTIPLEUSE to CoRegisterClassObject.
+
+SDI applications, on the other hand, can manage only one document window at a
+time. Hence, SDI applications are by default single use only; that is, a
+separate instance (or a document window) is created for each call to
+CoCreateInstance made by a client. This is implemented in an MFC application by
+passing in TRUE as the m_bMultiInstance parameter to
+COleTemplateServer::ConnectTemplate, which registers the class factory as
+multiple instance by passing REGCLS_SINGLEUSE to CoRegisterClassObject.
+
+Generic class factories that are used to create any C++ object are registered as
+single- or multiple-use based on how the constructor for COleObjectFactory is
+invoked. The constructor takes a bMultiInstance parameter that specifies whether
+the class factory is registered as REGCLS_SINGLEUSE (bMultiInstance == TRUE) or
+REGCLS_MULTIPLEUSE (bMultiInstance == FALSE).
+
+When ClassWizard is used to add OLE-creatable classes to an MFC application, it
+adds the DECLARE_OLECREATE and IMPLEMENT_OLECREATE macros. DECLARE_OLECREATE
+declares a static object of type COleObjectFactory, and IMPLEMENT_OLECREATE
+creates this object by invoking the constructor of COleObjectFactory with the
+bMultiInstance parameter set to FALSE. In other words, ClassWizard registers the
+generic class factory as REGCLS_MULTIPLEUSE. Hence by default, a single instance
+of an OLE-creatable class generated by ClassWizard can serve multiple requests
+to create an instance of this object class.
+
+This behavior can be altered by replacing IMPLEMENT_OLECREATE with a custom
+macro, say MY_IMPLEMENT_OLECREATE, which invokes the COleObjectFactory
+constructor with the bMultiInstance parameter set to TRUE, which will then
+register a REGCLS_SINGLEUSE class factory. For example:
+
+   #define MY_IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2,
+           b1, b2, b3, b4, b5, b6, b7, b8) \ 
+           COleObjectFactory class_name::factory(class_name::guid, \ 
+           RUNTIME_CLASS(class_name), TRUE, _T(external_name)); \ 
+           const GUID CDECL class_name::guid = \ 
+           { l, w1, w2, { b1, b2, b3, b4, b5, b6, b7, b8 } }; \ 
+
+   MY_IMPLEMENT_OLECREATE(CMyClass, "Test", 0xc9c99ae0, 0xad41, 0x101b,
+                          0x83, 0xea, 0x0, 0x0, 0x83, 0x78, 0xac, 0x8b)
+
+The CLSID used in this macro call should be replaced with the actual CLSID
+assigned for this particular object, which can be found in the original
+IMPLEMENT_OLECREATE macro.
+
+REFERENCES
+==========
+
+Inside OLE 2.0, Second Edition.
+
+Visual C++ Books Online and the MFC source code for the functions mentioned in
+the article.
+
+Additional query words: kbinf 1.00 1.50 2.00 2.10 2.51 2.52 3.00 3.10 3.20 4.00
+
+======================================================================
+Keywords          : kbole kbActiveX kbCOMt kbLocalSvr kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbArchitecture 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

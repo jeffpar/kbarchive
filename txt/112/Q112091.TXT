@@ -1,0 +1,88 @@
+DOCUMENT:Q112091  10-OCT-1999  [win3x]
+TITLE   :AWFAX: Manually Configuring for a Class 2 Modem
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ - The automatic detection for a Class 2 modem fails in Microsoft At Work PC
+   Fax.
+
+   -or-
+
+ - Typing "at+fclass=?" (without the quotation marks) in Terminal to determine
+   the class of the modem returns "OK" or "OK READY" instead of a 0, 1, or 2
+   value.
+
+WORKAROUND
+==========
+
+To work around this problem, use the following steps:
+
+1. From the Microsoft Mail File menu, choose Exit And Sign Out.
+
+2. Open Control Panel, choose the Fax icon, and add the appropriate modem and
+   setup information. If you receive the error message
+
+   Not a fax modem
+
+   choose "Add anyway."
+
+3. Close Control Panel.
+
+4. Modify (or add) the ModemFaxClasses and Class entries in the [COMx] section
+   of the EFAXPUMP.INI file to match the following:
+
+         ModemFaxClasses=4
+         Class=4
+
+   NOTE: The number "4" signifies a class 2 modem.
+
+5. Remove the following entry, if it exists, from the [COMx] section of the
+   EFAXPUMP.INI file:
+
+         ModemIdCmd=ATxxx
+
+6. Save your changes and then restart Microsoft Mail.
+
+If this workaround is unsuccessful, delete the EFAXPUMP.INI file and then repeat
+the above procedure.
+
+NOTE: After you make the above changes, you can modify the modem's settings in
+Control Panel without affecting the manual changes (baud rate and dialing
+prefixes for example). However, if a modem is added or deleted on the same
+communications (COM) port, the ModemFaxClasses and Class settings are
+overwritten.
+
+Additional query words: 3.11 efax pc fax
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

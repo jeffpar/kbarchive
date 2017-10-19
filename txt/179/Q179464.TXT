@@ -1,0 +1,89 @@
+DOCUMENT:Q179464  05-APR-2000  [sna]
+TITLE   :CedarBank: Session Object Error 'ASP 0168 : 80004005'
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You attempt to run CedarBank sample from a Web page. After you type a name into
+the edit box and click the "Checking Acct. Balance" button, you receive the
+following error message:
+
+   Error:
+   Session object error 'ASP 0168 : 80004005'
+   Disallowed object use
+   /cedarbank/selectpage.asp, line 4
+   An intrinsic object cannot be stored within the Session object.
+
+CAUSE
+=====
+
+Two statements in ~\sna\comti\tutorials\cedarbank\website\Selectpage.asp
+
+      Set Session("CustName") = Request("CustName")
+
+-and-
+
+      Set Session("CustPIN")  = Request("CustPIN"),
+
+are incorrect.
+
+WORKAROUND
+==========
+
+Delete the word "Set" from the two problematic statements, or replace the two
+lines with these two statements
+
+        Session("CustName") = Request("CustName")
+
+-and-
+
+        Session("CustPIN")  = Request("CustPIN"),
+
+respectively.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 4.0. A supported fix
+is now available for SNA Server 4.0, but has not been fully regression-tested
+and should be applied only to systems experiencing this specific problem. Unless
+you are severely impacted by this specific problem, Microsoft recommends that
+you wait for the next Service Pack that contains this fix. Contact Microsoft
+Product Support Services for more information.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch kbCOMTI100
+Version           : WINDOWS:1.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

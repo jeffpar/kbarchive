@@ -1,0 +1,61 @@
+DOCUMENT:Q128888  17-DEC-2000  [win95x]
+TITLE   :Network Adapter at I/O 320 Not Detected on Acer Computers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows 95, if the network adapter detection routine
+determines that the PC is an Acer, the detection of network adapters at I/O
+address 320h is bypassed.
+
+CAUSE
+=====
+
+Setup does not check the range 320-32f on any computer with an Acer BIOS due to
+restrictions for network adapter detection in the DETLOG.TXT file.
+
+
+WORKAROUND
+==========
+
+To work around this problem, change the network adapter to use a different I/O
+address, or manually configure the network components in Windows 95 using a
+custom Setup or maintenance-mode Setup.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

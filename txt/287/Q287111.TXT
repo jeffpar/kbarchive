@@ -1,0 +1,68 @@
+DOCUMENT:Q287111  07-FEB-2001  [foxpro]
+TITLE   :PRB: SET COMPATIBLE ON Causes Error with Gendbc.prg
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbvfp600 kbXBase KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If SET COMPATIBLE is set to ON and you run Gendbc.prg against a database
+container, you may receive the following error message:
+
+   Unrecoverable Error:
+   Operator/Operand type mismatch.
+   At Line: 438
+
+RESOLUTION
+==========
+
+Before you run Gendbc.prg, make sure that SET COMPATIBLE is set to OFF.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Command window, issue the following command:
+
+   SET COMPATIBLE ON
+
+2. Run Gendbc.prg against the Testdata database by using the following code:
+
+   OPEN DATABASE home(2)+"data\testdata"  
+   DO SYS(2004)+'tools\gendbc\gendbc' WITH 'testdata.prg' 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbvfp600 kbXBase KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

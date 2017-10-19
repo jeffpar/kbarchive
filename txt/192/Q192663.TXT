@@ -1,0 +1,73 @@
+DOCUMENT:Q192663  10-SEP-1999  [sms]
+TITLE   :SMSINST: ODBC Data Source May Fail to Be Installed
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Systems Management Server Installer executable file does not correctly install
+an ODBC Data Source when using the Configure ODBC Data Source script item in the
+Systems Management Server Installer script editor. No warnings or errors are
+displayed or logged.
+
+CAUSE
+=====
+
+This problem can occur if invalid or blank entries are included in the Data
+Source Attributes section of the Configure ODBC Data Source script item. During
+runtime, Systems Management Server Installer recognizes invalid information
+included in this section, and does not configure the Data Source. However, the
+Systems Management Server Installer also fails to display or log an error that
+it encountered the problem.
+
+WORKAROUND
+==========
+
+To work around this problem, verify that the Data Source Attributes section of
+the Configure ODBC Data Source script item does not contain any invalid
+entries.
+
+For example, note that you should not include "Driver=" or "User=" entries,
+because these are considered invalid (because the script item adds these for you
+automatically).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 1.0.
+
+Additional query words: prodsms open database connectivity
+
+======================================================================
+Keywords          : smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

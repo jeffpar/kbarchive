@@ -1,0 +1,68 @@
+DOCUMENT:Q165797  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Control Disables Windows NT Screen Saver
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,3.5,3.51
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After the remote control of a client computer running Windows NT 3.5x, the
+screen saver wait time is disabled. This means that the screen saver will not
+start automatically until either the client is restarted, or the workaround
+below is followed.
+
+Client computers running Windows NT 4.0 are unaffected.
+
+WORKAROUND
+==========
+
+To work around this problem, do the following:
+
+1. Stop the Systems Management Server Remote Control Agent service running on
+   the client.
+
+2. In the Desktop Control Panel, enter the screen saver setup and simply click
+   OK.
+
+3. Start the Systems Management Server Remote Control Agent service running on
+   the client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms RC helpdesk winnt
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2,3.5,3.51
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

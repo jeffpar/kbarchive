@@ -1,0 +1,544 @@
+DOCUMENT:Q141128  15-AUG-2001  [win95x]
+TITLE   :Windows 95 Self-Help and Online Support Options
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbfile win95kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article outlines self-help support options available for Windows 95 users.
+
+MORE INFORMATION
+================
+
+Many of the self-help support options mentioned in the this article make
+reference to the Microsoft Knowledge Base and the Microsoft Download Center.
+Below is a brief description of each.
+
+Microsoft Knowledge Base:
+
+The Microsoft Knowledge Base is the same database that Microsoft Support
+Engineers use to provide you with answers over the phone. The database contains
+more than 50,000 detailed articles with technical information about Microsoft
+products, bug and fix lists, documentation errors, and answers to the most
+commonly asked technical support questions.
+
+Microsoft Download Center:
+
+The Microsoft Download Center contains hundreds of free software add-ons, bug
+fixes, peripheral drivers, software updates, and programming aids. Included are
+two Windows 95 Help files called the Windows 95 Support Assistant, which
+contains information and troubleshooting advice on pre-setup, setup, and
+networking, and the Hardware Compatibility List, which lists all the PC systems
+and peripherals compatible with Windows 95.
+
+Built-in Support
+----------------
+
+There are a variety of new and enhanced support tools built into Windows 95.
+These tools are designed to answer many of your questions on how to use Windows
+95.
+
+Windows 95 Tour:
+
+When you start Windows 95 you see the Welcome Screen, which contains a Windows
+Tour button. Choosing this button launches a 10-minute interactive tour that
+will save you time and quickly get you up and running with Windows 95's new
+features.
+
+Windows Help System:
+
+You can find the answers to many of your questions about using Windows 95's new
+features right on the Start button. The Windows 95 online Help system is vastly
+improved over earlier versions and is much more task oriented. The new Windows
+95 online Help system has jumps that take you directly to features being
+described and the Help window remains on the screen to provide you a continual
+source of reference. The Windows 95 Help system contains Wizards that direct you
+through such operations as installing printers and establishing Dial-Up
+Networking connections. The new Help file also contains troubleshooting guides
+and tips and tricks on how to use Windows 95.
+
+Question Mark Buttons:
+
+Many dialog boxes in Windows 95 contain a question mark button that you can use
+to get information about any item in the dialog box. When you click this button,
+the cursor changes to a context help pointer. You can then point to any item in
+the dialog box that you want information about and click it. When you do,
+Windows 95 displays a detailed description of the item.
+
+Read Me Files:
+
+When you install Windows 95, Setup copies several Read Me files to the Windows 95
+folder. These Read Me files contain complementary or late- breaking information
+that supplements the Microsoft Windows 95 documentation.
+
+Windows 95 Resource Kit:
+
+An online version of the Microsoft Windows 95 Resource Kit and some of the tools
+included with the Resource Kit are included on the Windows 95 CD-ROM (in the
+Admin\Reskit\Helpfile folder) and in the CD-ROM Extras for Microsoft Windows 95
+Upgrade. The CD-ROM Extras for Microsoft Windows 95 Upgrade includes many files
+that are included in the CD-ROM version of Windows 95, but not in the floppy
+disk version. If you have the floppy disk version of Windows 95, please see the
+following Microsoft Knowledge Base article for information about obtaining the
+CD-ROM Extras for Windows 95 Upgrade:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+Internet:
+
+You can access the Microsoft Download Center and other technical and support
+information from the Microsoft Windows 95 home page located at the following
+World Wide Web (WWW) address:
+
+   http://www.microsoft.com/windows
+
+Support Assistant is a no-cost tool developed by Microsoft's Product Support
+Services (PSS) organization and the User Education group. Support Assistant runs
+with Windows 3.1, Windows for Workgroups, and Windows 95, and contains the
+following content:
+
+ - Solutions to the most frequently asked support questions.
+
+ - Sections of the Windows 95 Resource Kit describing the use of Windows 95 with
+   NetWare and other third-party networks.
+
+ - Over 100 Knowledge Base (KB) articles written by PSS Engineers describing
+   procedures, productivity tips and tricks, and specific product issues
+   associated with Setup and networking with Windows 95.
+
+ - Walk-through troubleshooters dealing with Setup, networking, and hardware
+   issues.
+
+ - A glossary of Windows 95 commonly used terms.
+
+ - A reference guide to products and services available to customers to help
+   them understand and take advantage of Windows 95's special features.
+
+Windows 95 System Check is a tool that can be used to ensure that your existing
+hardware meets the minimum requirements to run Windows 95. This tool checks for
+processor type, hard disk space, RAM, and certain programs that are known to
+cause problems during installation.
+
+The Windows 95 Software Compatibility List (SCL) lists programs that are
+compatible with Windows 95.
+
+The Windows 95 Hardware Compatibility List (HCL) contains a list of computer
+systems and peripherals that are compatible with Windows 95. The HCL lists
+products that meet the "Designed for Windows 95" logo requirements, which
+include Plug and Play support and support for 32-bit Windows 95 drivers. The HCL
+also lists products that are compatible with Windows 95--products that have been
+tested and work with Windows 95, but do not meet the logo requirements. Finally,
+the HCL makes clear which device drivers are located on the Windows 95 disks,
+CD-ROM, or online services. To view the HCL, visit the following Microsoft Web
+site:
+
+   http://www.microsoft.com/hwtest/hcl/
+
+The Microsoft Knowledge Base is available at the following WWW address:
+
+   http://support.microsoft.com/support
+
+The Microsoft FTP site is a repository for the Microsoft Download Center,
+Microsoft Knowledge Base, Windows 95 Resource Kit tools, and other Microsoft
+product information. The Microsoft FTP site is located at ftp.microsoft.com.
+
+WinNews is Microsoft's biweekly electronic newsletter that provides up-to- date
+information about Windows 95 via Internet e-mail. To subscribe to WinNews, send
+e-mail to Microsoft's list server at the following address:
+
+   enews35@microsoft.nwnet.com
+
+Include in the body of your message the text "Subscribe WinNews." (If you do not
+have access to the Internet, WinNews is available on the Microsoft Network,
+CompuServe, America Online, Prodigy and GEnie at the locations mentioned in the
+"Online Services" section below.)
+
+Online Services
+---------------
+
+If you have a modem and subscribe to a commercial online service, Windows 95
+support is readily available via the Microsoft forums.
+
+The Microsoft Network (MSN):
+
+Microsoft's new subscription online service is an excellent place to obtain
+Windows 95 support. You can access the Microsoft Knowledge Base and the
+Microsoft Download Center, as well as a list of the most frequently asked
+questions about Windows 95.
+
+Microsoft Online Institute:
+
+The Microsoft Online Institute (MOLI) is an online interactive learning and
+information center on MSN that uses a campus paradigm to provide online access
+to learning materials, instructor expertise, product information, developer
+articles, user forums, and other resources for Microsoft product and technology
+information. Users will also find training and support materials on Windows 95
+that includes classes, certification information, books, videos, computer-based
+training titles, white papers, and more. From MSN Central, click the Edit menu,
+click Other Location, and then type the Go word "moli" in the Go To Service
+box.
+
+Peer Services
+-------------
+
+User Groups:
+
+If you are interested in conversing with other Windows 95 users, you should
+consider joining a local user group. User group benefits include:
+
+ - Monthly meetings, featuring new product demonstrations.
+
+ - User group newsletters.
+
+ - Discounts on computer products.
+
+ - Access to the Internet and other user group members via a bulletin board.
+
+ - Member-to-member technical support, including help lines.
+
+For information about joining or forming a user group in your area, call the
+Association of Personal Computer User Groups (APCUG) at (914) 876- 6678. If you
+want to start a special interest group, contact the Microsoft Mindshare User
+Group Program at (800) 228-6738, extension 1, and request a free copy of Making
+Connections, an online guide to getting a user group off the ground or visit the
+Mindshare Forum on CompuServe (Go Mindshare) or e-mail us at
+Mindshar@Microsoft.com.
+
+Books and Publications
+----------------------
+
+There are variety of books and publications that can help you learn more about
+Windows 95.
+
+Introducing Windows 95 - a 95-page book that contains common tasks, visual
+overviews, a catalog of Windows 95 features, and an illustrated glossary of
+basic term, including mouse basics.
+
+Microsoft Windows 95 Resource Kit - published by Microsoft Press and designed for
+the computing and support professional, but equally suited for the intermediate
+user. The Windows 95 Resource Kit includes more than 1300 pages of essential
+technical information on installing and supporting Windows 95. In addition to
+the detailed technical information, it includes a deployment guide, several
+utilities, and software tools.
+
+Microsoft Press Step-by-Step Series - This series makes it possible for users to
+learn computer skills outside the traditional instructor-led classroom. Each
+book comes with a disk that contains every example in the text. By using the
+practice files and following the instructions in the book, you can learn by
+doing and can start by applying what you have learned right away. Each lesson
+takes only from 20 to 45 minutes to complete. For order information, call (800)
+MS-PRESS (677-7377).
+
+Microsoft Press Windows 95 Series:
+
+ - Microsoft Windows 95 Self-Based Study - $29.95 (U.S.) #1-55615-683-9
+
+ - Microsoft Visual Basic for Windows 95 Self-Based Study - $29.95 (U.S.)
+   #1-55615- 694-4
+
+ - Upgrading to Windows 95 Self-Based Study - $29.95 (U.S.) #1-55615-816-5
+
+You can obtain Microsoft Press books from either your local bookstore, or
+Microsoft Press [(800) 677-7377]. For information about other Microsoft Press
+books on Windows 95, contact Microsoft Press.
+
+Other Hard Copy Documentation:
+
+The Cobb Group publishes a Windows 95 newsletter that contain tips and
+information from various sources. For subscription information and availability
+contact the Cobb Group at (502) 491-1900.
+
+Many book publishers have books about Windows 95. You can find these books in
+your local bookstore. Here is a brief list of titles from Ziff-Davis Press. We
+suggest that you visit your local bookstore or call Microsoft Press if you want
+more information on Windows 95.
+
+ - How to Use Windows 95, Ziff-Davis Press
+
+ - PC Learning Labs Teaches Windows 95, Ziff-Davis Press
+
+ - Be Productive in Windows 95, Ziff-Davis Press
+
+ - The Windows 95 Manager's Handbook, Ziff-Davis Press
+
+ - Que's First Look at Windows 95, Que
+
+ - Unveiling Windows 95, Que
+
+ - Understanding Windows 95, New Riders Publishing
+
+Microsoft Windows 95 Migration Planning Kit
+-------------------------------------------
+
+The Microsoft Windows 95 Migration Planning Kit, which is available in hard copy
+and CD-ROM, is designed for the corporate networking professional considering
+rolling out Windows 95 in the enterprise. This kit includes information on
+Windows 95's benefits, a deployment guide, a demonstration kit, networking
+insights, a business analysis tool called Windows 95 System Check (see the
+"Internet" section in this article), the Windows 95 Resource Kit, and more. For
+information about obtaining the Microsoft Windows 95 Migration Planning Kit,
+call (800) 426-9400.
+
+Windows 95 Video Tapes, CBTs, and Audio Cassettes
+-------------------------------------------------
+
+There are many computer-based training (CBT) programs and video tapes about
+Windows 95. With computer-based training programs, you learn about Windows 95
+right on your computer while video tapes provide a classroom- like environment.
+
+Windows 95 TrainCast
+--------------------
+
+If you are a business or network professional, Value-Added Reseller, or even an
+interested user, you can learn more about rolling out Windows 95 in the
+enterprise environment by obtaining video tapes of Microsoft TV's Windows 95
+TrainCast series. The TrainCast series will help you plan and implement the
+deployment of Windows 95 by highlighting major features, illustrating usability
+features and different methods of installation, and demonstrating networking
+tools. For additional information about the Windows 95 TrainCast video tapes
+contact Microsoft TV at (800) 597-3200 or send Internet e-mail to
+mstv@microsoft.com.
+
+Microsoft Windows 95 TrainCast titles include:
+
+ - Windows 95 for the IS and Network Professional
+
+ - Reducing Support Costs with Windows 95
+
+ - Setup, Installation, and User Interface Support Issues
+
+ - Networking with Windows 95, Including Printing
+
+ - Windows 95 and NetWare
+
+ - Remote Connectivity with Windows 95
+
+ - Windows 95 Systems Administration and Tools
+
+ - Windows 95 Support, Beta Issues, and Migration
+
+Third-Party Support Materials
+-----------------------------
+
+You can obtain Windows 95 training in the form of videos and multimedia
+computer-based training from the following independent vendors. Microsoft is
+providing this information in the interest of providing a complete picture of
+available support options for Windows 95. It is not Microsoft's intention to
+single out any particular vendor providing support. If you are interested in any
+of these third-party products, please contact the vendor directly.
+
+Norton Utilities for Windows 95:
+
+The new System Doctor will examine the hard disk, repair disk-related problems,
+and identify and recommend the removal of duplicate files to create more disk
+space. After installation Norton Utilities will also monitor your system. For
+more information call Symantec at (800) 441-7234 or (541) 334-6054.
+
+Touchstone: Win '95 Advisor:
+
+Win '95 Advisor advises you on issues prior to installation that could effect
+your migration and makes recommendations. The software rates various components
+of your system and recommends upgrades if necessary. The software also generates
+a pre-installation checklist and scans for incompatibilities and inefficient use
+of disk space. For more information call Touchstone at (800) 531-0459 or (714)
+969-7746.
+
+User/Corporate Training:
+
+Class Act Multimedia, www.Itsnet.com/classact/win95/win95ns.html
+Format = CBT
+(800) 235-3276
+(801) 221-9400
+
+CRT Multimedia
+Format = CBT
+44-181-749-7074
+(Fax) 0181-740-0020
+
+CBT Systems, available on the Microsoft Online Institute (see the "Internet"
+section of this article)
+Format = CBT
+(800) 205-7531
+(425) 222-7811
+
+Good Times Entertainment
+Format = VT
+(416) 756-9927
+(Fax) (416) 756-3905
+
+Graphix Zone
+Format = CBT
+(714) 833-3838
+(800) 828-3838
+
+Individual Software
+Format = CBT and floppy disk
+800-822-3522
+(510) 734-6767
+
+Winstruct Software Training
+Format = VT
+(800) 242-4842
+
+J3 Learning
+Format = VT, CBT
+(800) 532-7672
+(612) 930-0330
+
+Micro Video Learning Systems
+Format = VT
+(800) 231-4021
+(212) 777-9595
+
+National Education Training
+Format = CBT
+(800) 526-0452
+(708) 369-3000
+
+Personal Training Systems
+Format = CBT, AC
+(800) 832-2499
+(415) 462-2100
+www.ptst.com
+
+ViaGrafix
+Format = VT
+(800) 842-4723
+(918) 825-6700
+
+VT = video tape
+CBT = computer-based training (CD-ROM or floppy disk)
+AC = audio cassette
+
+CD-ROM Based Support
+--------------------
+
+If your computer is equipped with a CD-ROM drive, you can subscribe to one of
+Microsoft's monthly technical information CD-ROMs.
+
+Microsoft TechNet:
+
+Microsoft TechNet is the front-line resource for fast, complete answers to
+technical questions on Windows 95 and other Microsoft products. On each
+Microsoft TechNet CD-ROM you will find the Microsoft Knowledge Base, Microsoft
+Software Library, the Windows 95 Resource Kit, white papers, networking
+information, and other valuable and strategic information. An annual
+subscription to Microsoft TechNet costs $295 for a single-user license and $695
+for a single-server unlimited-users license. To order Microsoft TechNet call
+(800) 344-2121.
+
+Microsoft Developer Network:
+
+The Microsoft Developer Network is the official source of toolkits, operating
+systems, and development-related technical, strategic, and resource information
+from Microsoft. Level 1 of the Developer Network includes the Developer Library,
+the Developer Network News, and a dedicated CompuServe forum. Level 2 of the
+Developer Network incorporates all of the benefits of Level 1 plus the
+Development Platform, a set of CD- ROMs containing all the Microsoft operating
+systems and related Software Development Kits (SDKs) and Device Driver
+Development Kits (DDKs). An annual subscription to Microsoft Developer Network
+Level 1 costs $195 while Level 2 costs $495. To order Microsoft Developer
+Network call (800) 759-5474.
+
+Special Services for the Hard of Hearing
+----------------------------------------
+
+For the hard of hearing, Microsoft offers technical support for all Microsoft
+products via text telephone (TTY). Microsoft's TTY support is available Monday
+through Friday from 6:00 A.M. to 6:00 P.M. Pacific time, excluding holidays. To
+access Microsoft's TTY support, call (425) 635-4948.
+
+Training/Consulting/Certification
+---------------------------------
+
+Microsoft Certified Technical Education Center (Microsoft CTECs):
+
+Microsoft CTECs are independent education centers that offer Microsoft Official
+Curriculum courses using Microsoft Certified Trainers. You can receive training
+on using and supporting Windows 95 through regularly scheduled classes at a
+Microsoft CTEC. You can also contract with Microsoft CTECs to provide customized
+training at your site. For more information on Microsoft CTECs call (800)
+765-7768.
+
+Microsoft Authorized Academic Training Program (AATP):
+
+Microsoft AATP authorizes accredited academic institutions of higher education to
+offer training and Microsoft Certified Professional testing to students enrolled
+at that institution using Microsoft-developed course materials and
+Microsoft-certified trainers. For more information on Microsoft AATP, call (800)
+235-8081.
+
+Microsoft Gold Certified Support Partners for Support Services:
+
+You can receive expert advice and support on implementing Microsoft products in
+multiple-vendor environments from Microsoft Gold Certified Support Partners for
+Support Services personnel, a select group of strategic support providers who
+have partnered with Microsoft. Services include on-site support, integration and
+implementation services, hardware support, development resources, and more. For
+more information on Microsoft Microsoft Gold Certified Support Partners for
+Support Services call (800) 963-3500.
+
+Microsoft Solution Providers:
+
+You can receive fee-based technical training and support, objective advice, and a
+wide range of value-added services from Microsoft Solution Providers, a select
+group of independent developers, consultants, and system analysts who have
+partnered with Microsoft. Microsoft Solution Providers will help you implement
+strategies that take advantage of today's powerful new technologies. For more
+information on Microsoft Solution Providers, call (800) 765-7768.
+
+Microsoft Solution Provider Authorized Training Centers (ATCs):
+
+The Microsoft Solution Provider ATC Program authorizes Microsoft Solution
+Providers to offer training to individual users of Microsoft products to perform
+their jobs. Solution Provider ATCs use internally-developed courses and trainers
+that have passed the applicable Microsoft Certified Professional exams. For more
+information on Microsoft Solution Provider ATCs, call (800) SOL-PROV.
+
+Microsoft Certified Professional (MCP) program:
+
+The Microsoft Certified Professional program qualifies technical professionals
+skilled in implementing and supporting solutions with Microsoft products, as
+demonstrated by their performance on Microsoft certification exams. It helps
+individuals assess and promote their skills, and provides a benchmark for
+organizations to use when hiring technical staff, determining training needs, or
+outsourcing technical services. For more information on the program or to
+request a Microsoft Education and Certification RoadMap, call (800) 636-7544.
+
+NOTE: All support options, access times, and prices mentioned in the guide are
+subject to change without notice. Specified support options are available in the
+United States and will differ across country boundaries.
+
+Additional query words: w95usefaq
+
+======================================================================
+Keywords          : kbfile win95 kbfaq
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

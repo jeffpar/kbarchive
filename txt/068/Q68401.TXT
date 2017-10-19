@@ -1,0 +1,63 @@
+DOCUMENT:Q68401  12-NOV-1999  [pcmail]
+TITLE   :PC Setup: Server Update Copies Over DEFAULT.SCR
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1e, 3.0, 3.0b, 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Update program on Server Installation Disk 1 replaces the DEFAULT.SCR script
+file during the update process. If you make any modifications to this file
+before you complete the update process, the changes will be lost.
+
+NOTE: If you rename your script files to DEFAULT.SCR to get around using the -t
+External command-line parameter, you need to be aware that when you update an
+existing postoffice and select Update Modem and Script Files under Server
+Programs, the DEFAULT.SCR file is overwritten.
+
+The only workaround is to make a backup of the customized files before the update
+program is run.
+
+MORE INFORMATION
+================
+
+The DEFAULT.SCR script file is automatically loaded by the External Mail program
+when a modem is used. This file controls modem operations and it can be
+customized. For more information about script files, see Appendix N of the
+Microsoft Mail "Administrator's Guide."
+
+The Update program replaces all existing script files, executable files, and any
+other file that interacts with the database. These files are updated to ensure
+that all programs are in sync with the database.
+
+Additional query words: 2.10e 3.00 3.00b 3.20 3.20a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN300b kbMailPCN210e
+Version           : WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

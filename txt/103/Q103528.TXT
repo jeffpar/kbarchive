@@ -1,0 +1,82 @@
+DOCUMENT:Q103528  25-NOV-1999  [msdos]
+TITLE   :Removing SWITCHES=/F/N from the DBLSPACE.INI File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SUMMARY
+=======
+
+You can add SWITCHES=/N, SWITCHES=/F, and SWITCHES=/F/N to the DBLSPACE.INI file
+with the following commands:
+
+   dblspace /switches=f
+   dblspace /switches=n
+   dblspace /switches=fn
+
+However, since there is no DoubleSpace command to remove these entries, you must
+do so using a text editor.
+
+MORE INFORMATION
+================
+
+To remove the SWITCHES entries from the DBLSPACE.INI file:
+
+1. Remove the Read-Only, System, and Hidden file attributes on the DBLSPACE.INI
+   file. For example, if drive H is your host drive, type the following at the
+   MS-DOS command prompt and press ENTER:
+
+   " attrib h:\dblspace.ini -r -s -h" (without the quotation marks)
+
+   NOTE: To determine which drive is your host drive, type "dblspace /list"
+   (without the quotation marks) at the MS-DOS command prompt.
+
+2. Using MS-DOS Editor, edit the DBLSPACE.INI file and remove the SWITCHES=
+   entries.
+
+3. Save the DBLSPACE.INI file and quit MS-DOS Editor.
+
+4. Use the ATTRIB command to reset the file attributes on DBLSPACE.INI. For
+   example, if your host drive is drive H, type the following command and press
+   ENTER:
+
+   " attrib h:\dblspace.ini +r +s +h" (without the quotation marks)
+
+For more information on the SWITCHES entry, type "help switches" (without the
+quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

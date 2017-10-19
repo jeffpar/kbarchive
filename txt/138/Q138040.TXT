@@ -1,0 +1,64 @@
+DOCUMENT:Q138040  08-NOV-2001  [homegame]
+TITLE   :Full Text Search Help Files Not Removed During Uninstall
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+WINDOWS
+kbsetup kbusage kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fury 3 for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the uninstall process to remove Fury 3, the Fury 3 full-text search
+help files, Fury3.fts and Fury3.gid, are not removed from the hard drive.
+
+This occurs when you answer No to the following question during the uninstall
+process:
+
+   Do you want to remove all your saved games?
+
+RESOLUTION
+==========
+
+Manually delete the Fury3.fts and Fury3.gid files from the hard drive.
+
+NOTE: The Fury3.fts is only created if you choose Find while using Help.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Fury 3 version 1.0 for Windows.
+
+Additional query words: 1.00 kbhowto fury3 fury-3
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbFury3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

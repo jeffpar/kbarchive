@@ -1,0 +1,63 @@
+DOCUMENT:Q112289  07-NOV-1999  [pcmail]
+TITLE   :PC DOS: Notice 20 Error When Printing May Be Due to SHARE.EXE
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 2.1x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Notice 20 error may occur while printing from version 2.1x of Microsoft Mail
+for PC Networks, MS-DOS workstation.
+
+CAUSE
+=====
+
+This is often caused by running MS-DOS SHARE.EXE with Novell NetWare.
+
+RESOLUTION
+==========
+
+Load SHARE.EXE after loading IPX.COM and NETx.COM. Some network administrators
+choose to load these files from a batch file that is called either by the user
+or from a batch file within the AUTOEXEC.BAT file. If this is true, be sure
+SHARE.EXE is loaded after the network batch file.
+
+MORE INFORMATION
+================
+
+The need for MS-DOS SHARE.EXE to be loaded after IPX.COM and NETx.COM has been
+fixed with version 3.0 of Microsoft Mail for PC Networks, MS-DOS workstation.
+Prior to Microsoft Mail version 3.0, the MS-DOS SHARE utility must be loaded
+after the network drivers.
+
+Additional query words: 2.10 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN21xSearch
+Version           : WINDOWS:2.1x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

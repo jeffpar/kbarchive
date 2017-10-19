@@ -1,0 +1,52 @@
+DOCUMENT:Q135997  15-DEC-1999  [homemm]
+TITLE   :Scenes 2.0: Wallpaper and Windows NT 3.5
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The wallpaper feature of Scenes 2.0 does not work when Scenes 2.0 is run under
+Windows NT 3.5 with the US Service Pack 2 installed. Clicking the Wallpaper
+check box on the Scenes main screen does not change the wallpaper. Also,
+choosing a different wallpaper picture in the Choose Wallpaper dialog box does
+not change the wallpaper.
+
+RESOLUTION
+==========
+
+The only known resolution is to upgrade the affected system to Windows NT 3.51.
+The problem does not occur on systems running Windows NT 3.1 or 3.5, Windows NT
+3.5 with US Service Pack 1, or Windows NT 3.51.
+
+Additional query words: 3.50 bitmap bmp msscenes screen saver screensaver winnt
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

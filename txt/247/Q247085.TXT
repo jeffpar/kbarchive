@@ -1,0 +1,77 @@
+DOCUMENT:Q247085  06-AUG-2002  [exchange]
+TITLE   :XWEB: Error: Failed to Connect to the Microsoft Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you log on to a Microsoft Exchange Server computer by using Microsoft Outlook
+Web Access (OWA), the following error message may be displayed:
+
+   Failed to connect to the Microsoft Exchange Server, (<servername>)
+
+CAUSE
+=====
+
+The Mapisvc.inf file, in the Winnt\System32 folder, is modified or missing.
+
+RESOLUTION
+==========
+
+Replace the Mapisvc.inf file with an unmodified copy of the original, or add the
+following section to the existing file:
+
+   
+
+   [MSEMS]
+   PR_DISPLAY_NAME=Microsoft Exchange Server
+   Sections=MSEMS_MSMail_Section
+   PR_SERVICE_DLL_NAME=emsui.dll
+   PR_SERVICE_ENTRY_NAME=EMSCfg
+   PR_RESOURCE_FLAGS=SERVICE_SINGLE_COPY
+   WIZARD_ENTRY_NAME=EMSWizardEntry
+   Providers=ems_dsa, ems_mdb_public, ems_mdb_private
+   PR_SERVICE_SUPPORT_FILES=emsui.dll, emsabp.dll, emsmdb.dll
+
+MORE INFORMATION
+================
+
+The Mapisvc.inf file is created when Exchange Server is installed. To fix the
+problem, replace the Mapisvc.inf file with a copy of the file from another
+Exchange Server computer.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

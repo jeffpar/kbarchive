@@ -1,0 +1,65 @@
+DOCUMENT:Q134531  17-DEC-2000  [win95x]
+TITLE   :Cannot Create Startup Disk During Setup w/Promise Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are creating a Startup Disk during Windows 95 Setup, you may receive
+the following error message:
+
+   Disk Initialization Error
+   Could not properly initialize the floppy disk that you inserted.
+   Error: Disk sector was not found.
+   Click OK to continue.
+
+CAUSE
+=====
+
+This problem can occur if the floppy disk drive in your computer is connected to
+a Promise IDE controller. The hardware detection portion of Setup does not
+properly recognize floppy disk drives on a Promise IDE controller.
+
+RESOLUTION
+==========
+
+Do not create a Startup Disk during Setup. Instead, create a Startup Disk after
+Setup is finished by following these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the Add/Remove Programs icon.
+
+3. Click the Startup Disk tab.
+
+4. Click the Create Disk button.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

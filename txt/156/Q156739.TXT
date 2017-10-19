@@ -1,0 +1,195 @@
+DOCUMENT:Q156739  14-DEC-1999  [foxpro]
+TITLE   :BUG: Show Event Calls Refresh Despite NODEFAULT in Subclass
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an instance of a form subclass has its Show() method called, if its
+Refresh() method calls the parentclass Refresh(), a NODEFAULT in the subclass
+Refresh() will be ignored and the Refresh() method for each control on the form
+will be called twice.
+
+WORKAROUND
+==========
+
+Conditionally issue a NODEFAULT in the parent class Refresh() method.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Normally, this behavior will not create much of a problem because it will result
+in the Refresh() for each control getting called twice by the Show() only if the
+conditions in SYMPTOMS section are met. In the rare case that this actually
+causes a problem, the steps described below in Demonstration of Workaround can
+be utilized.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run the following code from a program (.PRG) file:
+
+      * Start of code example
+      *
+      CLEAR
+      oForm = CREATE("FormChild")
+      ACTIVATE SCREEN
+      ?'Following lines from Show()'
+      oForm.SHOW()
+      ACTIVATE SCREEN
+      ? ''
+      ?'Following lines from Refresh()'
+      oForm.REFRESH()
+      ACTIVATE SCREEN
+      ? ''
+      ?'Following lines from Show()'
+      oForm.SHOW()
+
+      DEFINE CLASS FormChild AS FormParent
+
+         AUTOCENTER = .T.
+
+         ADD OBJECT text1 AS TEXTBOX
+
+         PROCEDURE text1.REFRESH
+            ACTIVATE SCREEN
+            ?'In Textbox Refresh'
+         ENDPROC
+
+         PROCEDURE REFRESH()
+            ACTIVATE SCREEN
+            ?'In FormChild Refresh'
+            DODEFAULT()
+            NODEFAULT
+         ENDPROC
+      ENDDEFINE
+
+      DEFINE CLASS FormParent AS FORM
+         PROCEDURE REFRESH()
+            ACTIVATE SCREEN
+            ?'In FormParent Refresh'
+         ENDPROC
+      ENDDEFINE
+      *
+      * End of code example
+
+2. In spite of the NODEFAULT in the Refresh() of the FormChild class, when the
+   Show() method is called, the Refresh() of Text1 will get called twice: once
+   by the FormChild Refresh() and once by the FormParent Refresh(). This does
+   not occur if the Refresh() is called directly, only if the Refresh() is
+   called implicitly through the Show() method.
+
+Demonstration of Workaround
+---------------------------
+
+Rationale - Set a flag in the Show() that causes the parent class Refresh() to
+conditionally execute a NODEFAULT and not carry out its default behavior of
+calling the refresh of all controls on the form.
+
+1. Run the following code from a program (.PRG) file. This is a modification of
+   the code above. Add a property of lIsShow to the FormParent class, set it to
+   .T. (true) in the Show(), conditionally issue a NODEFAULT in the ParentClass
+   Refresh(), and flip lIsShow back to .F.(false). Note that this workaround
+   requires changes to the parent class only, so all subclasses will be [ASCII
+   147]fixed[ASCII 148] by implementing the workaround in the parent class.
+
+      * Start of code example
+      *
+      CLEAR
+      oForm = CREATE("FormChild")
+      ACTIVATE SCREEN
+      ?'Following lines from Show()'
+      oForm.SHOW()
+      ACTIVATE SCREEN
+      ? ''
+      ?'Following lines from Refresh()'
+      oForm.REFRESH()
+      ACTIVATE SCREEN
+      ? ''
+      ?'Following lines from Show()'
+      oForm.SHOW()
+
+      DEFINE CLASS FormChild AS FormParent
+
+         AUTOCENTER = .T.
+
+         ADD OBJECT text1 AS TEXTBOX
+
+         PROCEDURE text1.REFRESH
+            ACTIVATE SCREEN
+            ?'In Textbox Refresh'
+         ENDPROC
+
+         PROCEDURE REFRESH()
+            ACTIVATE SCREEN
+            ?'In FormChild Refresh'
+            DODEFAULT()
+            NODEFAULT
+         ENDPROC
+      ENDDEFINE
+
+      DEFINE CLASS FormParent AS FORM
+
+         lIsShow = .F.                  && This is the flag
+
+         PROCEDURE SHOW()               && This is added
+            LPARAMETERS nStyle
+            THISFORM.lIsShow = .T.      && Set the flag, so you can use it the
+                                        && next time the Refresh gets called.
+         ENDPROC
+
+         PROCEDURE REFRESH()
+            IF THIS.lIsShow             && Here you read the flag and
+               NODEFAULT                && conditionally issue NODEFAULT
+               THIS.lIsShow = .F.       && Flip the flag back to .F.
+            ENDIF
+            ACTIVATE SCREEN
+            ?'In FormParent Refresh'
+         ENDPROC
+
+      ENDDEFINE
+      *
+      * End of code example
+
+2. Note that the Textbox Refresh() is called only once when the Show() method is
+   invoked.
+
+Additional query words: kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,57 @@
+DOCUMENT:Q77874  17-DEC-2000  [msdos]
+TITLE   :TOPS Network Versions 2.x Not Compatible with MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sitka has confirmed that TOPS network versions 2.x does not work properly with
+MS-DOS 5.0.
+
+Sitka recommends an upgrade to TOPS network versions 3.x or later for proper
+operation with MS-DOS 5.0.
+
+MORE INFORMATION
+================
+
+Sitka technical support states that TOPS versions 2.x were designed to be
+compatible with MS-DOS 3.1, and will not be updated to be compatible with MS-DOS
+5.0. With TOPS versions 2.x, booting to an MS-DOS prompt may be successful, but
+MS-DOS 5.0 commands such as COPY will not work properly.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 5.00 3rdparty IMAGE Flash Card
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

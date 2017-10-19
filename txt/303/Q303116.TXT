@@ -1,0 +1,63 @@
+DOCUMENT:Q303116  29-JAN-2002  [homegame]
+TITLE   :Links 2001: "No 3D Acceleration" Message When Starting Links
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Links 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Links 2001, a black Links 2001 window
+appears, you receive the following message
+
+   No 3D Acceleration
+
+and then Links 2001 stops responding (hangs).
+
+RESOLUTION
+==========
+
+An update is available to resolve this issue. Browse to the following Microsoft
+Web site to download the Links 2001 Update v1.21 (11.3MB):
+
+   http://www.microsoft.com/games/home/games.asp?g=127#support
+
+MORE INFORMATION
+================
+
+For additional information about the "No 3D Acceleration" message, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q279768 Links 2001: No 3D Acceleration Message Is Displayed on the Screen
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbLinkGolfSearch kbGamesSearch kbGolfSearch kbLinks2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

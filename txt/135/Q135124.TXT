@@ -1,0 +1,98 @@
+DOCUMENT:Q135124  31-JUL-2001  [sms]
+TITLE   :System Keys Not Passed Through to Client Using Remote Control
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot kbsmsAdmin smsadmin smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use hot keys during remote control of a client from Systems Management
+Server Administrator, the hot keys do not work on the client.
+
+
+CAUSE
+=====
+
+Systems Management Server Administrator is not passing the hot keys along to the
+remote control client.
+
+RESOLUTION
+==========
+
+Upgrade to Systems Management Server version 1.1.
+
+NOTE: The Quick Windows Viewer window has a new check box in the window caption
+bar that makes selecting this option easier.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.0. This problem has been corrected in Systems Management Server
+version 1.1.
+
+MORE INFORMATION
+================
+
+Passing Regular Keystrokes to a Client
+--------------------------------------
+
+When the Quick Windows Viewer window is active, your keystrokes are passed to the
+client computer running Windows versions 3.1 or 3.11. The client processes these
+keystrokes as if you are typing them on the client's keyboard.
+
+Passing System Keystrokes to a Client
+-------------------------------------
+
+To allow system keystrokes to be passed through to the remote control client,
+choose the System Key Pass Through option in the control parameters. By default,
+the following keystrokes are not passed:
+
+ - CTRL+ALT+DELETE
+
+ - CTRL+ESC
+
+ - ALT+TAB
+
+ - Special hot key sequences you define using the Quick Windows Viewer control
+   menu window.
+
+On clients running MS-DOS, the ALT key is not passed if Keyboard Stuffing is set
+to Interrupt Driven.
+
+For more information on Remote Control, see the section titled Remote
+Troubleshooting Utilities in the Systems Management Server Administrators Guide,
+chapter 15.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbtshoot kbsmsAdmin smsadmin smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

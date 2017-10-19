@@ -1,0 +1,47 @@
+DOCUMENT:Q66829  30-JUL-2001  [homegame]
+TITLE   :ASD: Cannot Change NAV1 from OBS to BRG
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Page 71 of the "Microsoft Flight Simulator Aircraft & Scenery Designer
+User's Guide" shows a 747 panel with BRG indicators for both the NAV1 and NAV2
+displays. This picture is incorrect. There is no way to change the NAV1 radio
+panel from OBS to BRG.
+
+MORE INFORMATION
+================
+
+The BRG indicator on the NAV2 display shows the bearing that you should fly to
+head directly toward the VOR tracked by the NAV2 radio. This changes
+automatically as you fly away from the VOR at an angle.
+
+The OBS indicator on the NAV1 display indicates which VOR radial you are
+tracking. You can select a different value by pressing V to activate the gauge
+then the PLUS SIGN (+) or MINUS SIGN (-) key to change the value.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

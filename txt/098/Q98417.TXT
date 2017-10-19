@@ -1,0 +1,48 @@
+DOCUMENT:Q98417  30-JUL-2001  [lanman]
+TITLE   :Heuristics Don't Disable MS-DOS Workstation Write-Behind
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+There is no effective way to disable MS-DOS workstation write-behind using
+heuristics.
+
+ - Heuristic 0 sets the write-through bit on write SMBs telling the server not
+   to return until the data is written, but does not disable the redir
+   write-behind.
+
+ - Heuristic 1 applies only to write&X when X is submitted by the user
+   application (as in CLOSE).
+
+ - Heuristic 4 does not, as documented, apply to writes: only to READs.
+
+ - Heuristic 10 applies only to FLUSH--COMMIT: not writes.
+
+New heuristic (16) in LAN Manager 2.1a allows you to disable write-behind, but
+only on files opened in compatible mode, not in deny-none mode.
+
+Additional query words: 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

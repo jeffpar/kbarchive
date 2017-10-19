@@ -1,0 +1,74 @@
+DOCUMENT:Q181256  14-NOV-2000  [word97]
+TITLE   :WD97: Application Error Saving File w/Graphic to WordPerfect 5.x
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows, used with:
+    - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you save a document that contains a graphic in WordPerfect 5.x format, the
+following error message may appear:
+
+   An application error has occurred and an application error log is being
+   generated.
+
+   Wpgexp32.flt.
+
+NOTE: This problem occurs in Windows NT 4.0; however it does not occur in Windows
+95.
+
+WORKAROUND
+==========
+
+Save your document in the WordPerfect 5.x format on a Windows 95 computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The WordPerfect Graphics export filter (Wpgexp32.flt) is used by the WordPerfect
+5.x export converter when you save Word documents to the WordPerfect 5.x format.
+The filter converts images embedded in a document to the WordPerfect Graphics
+1.0 format.
+
+Additional query words:
+
+======================================================================
+Keywords          : word97 kbbuglist
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

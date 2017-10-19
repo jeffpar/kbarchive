@@ -1,0 +1,65 @@
+DOCUMENT:Q119874  17-DEC-2000  [win95x]
+TITLE   :Lost Colors with Cirrus Logic Based VLB Video Adapter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows 95 startup logo is distorted, and the interface appears in black and
+white during startup and while running Windows 95.
+
+CAUSE
+=====
+
+This problem occurs with a VLB video adapter using the Cirrus Logic 5426, 5428,
+or 5434 video chip on a Pentium-based computer that has both VLB sockets and PCI
+sockets on the motherboard.
+
+RESOLUTION
+==========
+
+To correct this problem, replace the VLB video adapter with a PCI video adapter
+using the Cirrus Logic 5426, 5428, or 5434 video chip or a video adapter using a
+different video chip, such as the S3 or one manufactured by Tseng Labs.
+
+MORE INFORMATION
+================
+
+The same VLB adapters function correctly in computers with only VLB sockets.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3rdparty
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

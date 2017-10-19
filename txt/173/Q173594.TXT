@@ -1,0 +1,156 @@
+DOCUMENT:Q173594  11-JUN-2002  [sms]
+TITLE   :SMS: Remote Control Agent Stops Responding on Startup & Shutdown
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbenv kbtshoot _IK964 kbsms200 kbsms200bug kbsms120 kbsms120bug smsremtshoot kbRemotePr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+After starting the Systems Management Server Remote Control Agent service
+(Wuser32.exe) on a computer running Windows NT, other applications may not
+launch as expected. It may take several minutes for an application to be
+presented on the desktop. Eventually the client application will launch and the
+system will respond normally.
+
+When shutting down the system or stopping the service, the Remote Control Agent
+fails to stop correctly. The following error can occur:
+
+   Service Control Manager: "Could not stop the SMS Remote Control Agent
+   service. Error 2186: The service is not responding to the control function."
+
+CAUSE
+=====
+
+When the Remote Control Agent (Wuser32.exe) starts, it attempts to get the
+security identifiers (SIDs) of all the Windows NT groups or accounts specified
+in the PermittedViewers registry value. For those groups that are not defined in
+the domain, the Remote Control Agent can take a long time to determine that
+these groups do not exist.
+
+WORKAROUND
+==========
+
+To correct the problem, configure the Systems Management Server site settings so
+that only valid Administrators groups are defined. To do this, perform the steps
+below corresponding to the version of Systems Management Server that you are
+using.
+
+Systems Management Server 2.0
+-----------------------------
+
+1. In the Systems Management Server Administrator console, navigate to Client
+   Agents, under Site Settings.
+
+2. Double-click the Remote Tools Client Agent to open its properties.
+
+3. Click the Security tab.
+
+4. Edit the permitted viewers list of user groups and remove any that are not
+   valid for the existing domain environment for this site.
+
+These settings will automatically propagate to Systems Management Server 2.0
+clients within the client configuration cycle (23 hours).
+
+Systems Management Server 1.2
+-----------------------------
+
+1. From the Site Properties window, click the Clients button.
+
+2. Choose the Proposed Properties.
+
+3. Click the Options button next to Remote Troubleshooting.
+
+4. From the Remote Troubleshooting Options window, locate the list of user
+   groups permitted to view Windows NT clients, and remove any that are not
+   valid for the existing domain environment for this site.
+
+The changes will not be propagated automatically to Systems Management Server 1.2
+clients. For the existing clients to be updated, each client must execute
+Upgrade.bat from the SMS_SHR share of a Systems Management Server logon server.
+Alternatively, you can use the steps in the following article in the Microsoft
+Knowledge Base to force a site wide client update:
+
+   Q166771 SMS: How to Force Site-Wide Client Updates
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2 and 2.0.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+For testing purposes, it may be necessary to immediately affect the changes on a
+client. To accomplish this, modify the PermittedViewers registry value to
+contain only the word "Administrators" in English or in your local language. By
+default, this registry REG_MULTI_SZ value contains the "Administrators" user
+group in several languages.
+
+For Systems Management Server 2.0, the PermittedViewers value is located in the
+following registry location:
+
+   HKEY_LOCAL_MACHINE on Local Machine\SOFTWARE\MICROSOFT\SMS\Client\Client Components\Remote Control
+
+For Systems Management Server 1.2, the PermittedViewers value is located in the
+following registry location:
+
+   HKEY_LOCAL_MACHINE on Local Machine\SOFTWARE\MICROSOFT\SMS\Client Services\Remote Control\Parameters
+
+After making this modification to the registry, restart the Remote Control Agent
+service. It should not slow down the system. All other applications starting
+after the Remote Control Agent service should start up as normal.
+
+To make this registry change on all clients at once, you must use the Systems
+Management Server Administrator program to make a change to the site properties.
+You can do this by clicking the Options button (located in the Clients window in
+the Site Properties). From the Remote Troubleshooting Options window, remove and
+unneeded user groups from the list shown.
+
+For additional information about updating the PermittedViewers registry key on
+existing Systems Management Server clients, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q155680 SMS: Windows NT Remote Control Registry Parameters Not Updated
+
+Additional query words: prodsms sid permitted viewers hang hangs hung
+
+======================================================================
+Keywords          : kbenv kbtshoot _IK964 kbsms200 kbsms200bug kbsms120 kbsms120bug smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

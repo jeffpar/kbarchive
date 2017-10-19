@@ -1,0 +1,68 @@
+DOCUMENT:Q111720  08-AUG-2001  [winnt]
+TITLE   :Event Log: Error 1501
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0; :3.1,3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Advanced Server, versions 3.1, 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Event Viewer, the following error appears:
+
+   The Eventlog service on the local machine is not started.
+
+Then, after you start the Eventlog service from the Services section of Control
+Panel the following error message appears:
+
+   Could not start the Eventlog service on \\<machine name>.
+   Error 1501: No event log file could be opened, so the event logging service
+   did not start.
+
+CAUSE
+=====
+
+This error only occurs when the Windows NT system drive is formatted for NTFS.
+When the Eventlog Service starts, it opens three log files in the
+%SYSTEMROOT%\SYSTEM32\CONFIG directory. If the system does not have the correct
+permissions, it cannot open and write the log files.
+
+RESOLUTION
+==========
+
+For these files to be opened successfully, Read and Write permission in this
+directory must be granted to the Administrators group, the System account, or
+the Everyone group. Any one of these three enables the system to function
+normally.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTAdvSerSearch kbWinNTAdvServ400 kbWinNTAdvServ351 kbWinNTAdvServ350 kbWinNTAdvServ310 kbWinNT310Search
+Version           : winnt:3.5,3.51,4.0; :3.1,3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

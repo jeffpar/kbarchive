@@ -1,0 +1,89 @@
+DOCUMENT:Q161923  14-NOV-2000  [word97]
+TITLE   :WD97: Troubleshooting Variables and Data Types
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbdtacode word8 kbwordvba word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article offers suggestions for using variables and data types in Microsoft
+Visual Basic for Applications in the applications listed at the beginning of
+this article.
+
+
+MORE INFORMATION
+================
+
+When declaring variables, the default data type is Variant. Programmers should
+ideally specify specific data types and not use the Variant data types. Variant
+data types consume more memory, do not offer the same performance as specific
+data types, and can promote errors in programming logic.
+
+Make sure variables are properly declared. Consider the following example:
+
+      Dim oVar1, oVar2 As Object
+
+This syntax may appear to be declaring two Object variables, but in this case
+oVar1 is being implicitly declared as a Variant (the default data type) and
+oVar2 is being explicitly declared as an Object. The following code will produce
+two Object variables:
+
+      Dim oVar1 As Object
+      Dim oVar2 As Object
+
+-or-
+
+      Dim oVar1 As Object, oVar2 As Object
+
+For more information about dimensioning variables, from the Visual Basic Editor,
+click the Office Assistant, type "Declaring Variables" (without the quotation
+marks), click Search, and then click to view "Declaring Variables."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If the Assistant is not able to answer your query, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q176476 OFF: Office Assistant Not Answering Visual Basic Questions
+
+REFERENCES
+==========
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+
+Additional query words: wordcon vb vba vbe
+
+======================================================================
+Keywords          : kbdta kbdtacode word8 kbwordvba word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

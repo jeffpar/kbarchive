@@ -1,0 +1,218 @@
+DOCUMENT:Q237429  24-JUL-1999  [foxpro]
+TITLE   :PRB: Very Wide Editboxes Do Not Display Data
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbContainer kbCtrl kbOOP kbvfp600 kbGrpDSFox
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Data is not showing in editbox controls that are very wide and one line of text
+tall.
+
+CAUSE
+=====
+
+When the Width property of an editbox control exceeds approximately 32,750
+pixels, the data starts to shift to the right from the left edge of the editbox.
+At some point, it shifts far enough to the right so that it is no longer visible
+in the editbox. This happens when the editbox is tall enough to display only one
+line of text. When the height is increased enough, the data then appears. The
+different FontNames, FontStyles and especially FontSizes can also make a
+difference as to where this problem starts.
+
+RESOLUTION
+==========
+
+Do not make the editbox wider than about 32,750 pixels unless the height is such
+that more than one line will display.
+
+MORE INFORMATION
+================
+
+You can run the following code to create a form that illustrates the problem.
+The form has spinner controls to change the Width and Height properties of an
+editbox. The Value property of the editbox is initially set to "Hello There" in
+the code.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the following code into a new program file and save it.
+
+   PUBLIC oform1
+
+   oform1=NEWOBJECT("form1")
+   oform1.Show
+   RETURN
+
+   	**************************************************
+   DEFINE CLASS form1 AS form
+
+   	Top = 0
+   	Left = 0
+   	Height = 293
+   	Width = 417
+   	DoCreate = .T.
+   	Caption = "Form1"
+   	Name = "Form1"
+
+   	ADD OBJECT command1 AS commandbutton WITH ;
+   		Top = 72, ;
+   		Left = 25, ;
+   		Height = 37, ;
+   		Width = 312, ;
+   		Caption = "What's In The Editbox?", ;
+   		Name = "Command1"
+
+   	ADD OBJECT command2 AS commandbutton WITH ;
+   		Top = 132, ;
+   		Left = 24, ;
+   		Height = 25, ;
+   		Width = 313, ;
+   		Caption = "Change the Editbox's Width to 32500 or back to 35000", ;
+   		Name = "Command2"
+
+   	ADD OBJECT edit1 AS editbox WITH ;
+   		FontSize = 9, ;
+   		Height = 23, ;
+   		Left = 12, ;
+   		Top = 12, ;
+   		Width = 35000, ;
+   		Value = "Hello There", ;
+   		Name = "Edit1"
+
+   	ADD OBJECT spinner1 AS spinner WITH ;
+   		Height = 25, ;
+   		InputMask = "999,999", ;
+   		KeyboardHighValue = 100000, ;
+   		KeyboardLowValue = 32500, ;
+   		Left = 72, ;
+   		SpinnerHighValue = 100000.00, ;
+   		SpinnerLowValue = 32500.00, ;
+   		Top = 225, ;
+   		Width = 85, ;
+   		Value = 35000, ;
+   		Name = "Spinner1"
+
+   	ADD OBJECT label1 AS label WITH ;
+   		Caption = "Edit Width", ;
+   		Height = 18, ;
+   		Left = 10, ;
+   		Top = 232, ;
+   		Width = 58, ;
+   		Name = "Label1"
+
+   	ADD OBJECT label2 AS label WITH ;
+   		Caption = "Edit Height", ;
+   		Height = 17, ;
+   		Left = 4, ;
+   		Top = 271, ;
+   		Width = 64, ;
+   		Name = "Label2"
+
+   	ADD OBJECT spinner2 AS spinner WITH ;
+   		Height = 25, ;
+   		InputMask = "999,999", ;
+   		KeyboardHighValue = 500, ;
+   		KeyboardLowValue = 20, ;
+   		Left = 72, ;
+   		SpinnerHighValue = 500.00, ;
+   		SpinnerLowValue =  20.00, ;
+   		Top = 263, ;
+   		Width = 85, ;
+   		Value = 23, ;
+   		Name = "Spinner2"
+
+   	ADD OBJECT command3 AS commandbutton WITH ;
+   		Top = 168, ;
+   		Left = 168, ;
+   		Height = 25, ;
+   		Width = 169, ;
+   		Caption = "Reset Editbox's Height to 23", ;
+   		Name = "Command3"
+
+   	PROCEDURE command1.Click
+   		=Messagebox("The Value property of the editbox is: " ;
+   		   + ThisForm.Edit1.Value)
+   	ENDPROC
+
+   	PROCEDURE command2.Click
+   		IF ThisForm.Edit1.Width = 35000
+   			ThisForm.Edit1.Width = 32500
+   		ELSE
+   			ThisForm.Edit1.Width = 35000
+   		ENDIF
+   		Thisform.Spinner1.Value = Thisform.Edit1.Width
+   		ThisForm.Edit1.Refresh
+   	ENDPROC
+
+   	PROCEDURE spinner1.InteractiveChange
+   		Thisform.Edit1.Width=This.Value
+   		Thisform.Refresh
+   	ENDPROC
+
+   	PROCEDURE spinner2.InteractiveChange
+   		Thisform.Edit1.Height=This.Value
+   		Thisform.Refresh
+   	ENDPROC
+
+   	PROCEDURE command3.Click
+   		Thisform.Edit1.Height = 23
+   		Thisform.Spinner2.Value = Thisform.Edit1.Height
+   		Thisform.Refresh
+   	ENDPROC
+
+   ENDDEFINE
+   *
+   *-- EndDefine: form1
+   **************************************************
+
+2. Run the program.
+
+3. Click the What's in the Editbox? button. This opens a Message Box that
+   reports Hello There.
+
+4. Click the Change the Editbox's Width to 32500 or back to 35000 button. Watch
+   Hello There appear and disappear when repeatedly clicking the button. The
+   Edit Width spinner below shows to what Width the editbox is currently set.
+
+5. When the Edit Width spinner is set to 32,500, spin it up to 32,758 and beyond
+   and watch the Hello There text move to the right in the editbox.
+
+6. When Hello There is about half way in the visible portion of the editbox,
+   spin the Edit Height up to 38 and watch the Hello There text move back to the
+   left side of the edit box.
+
+Additional query words: kbDSE
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbOOP kbvfp600 kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

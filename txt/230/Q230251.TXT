@@ -1,0 +1,98 @@
+DOCUMENT:Q230251  11-JUN-2002  [exchange]
+TITLE   :XFOR: Exchange Notes Connector Installation Failure, LMEISTAT
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you install the Microsoft Exchange Connector for Lotus Notes, the
+installation may fail, and the following error message may be displayed:
+
+   Could not open file E:\Program
+   Files\Exchange\Connect\Exchconn\Setup\LMEISTAT.TXT to check return code of
+   LME utility. Setup cannot continue.
+
+The actual path may vary.
+
+CAUSE
+=====
+
+Exchange Server is installed to a path with a space character in it. By default,
+Exchange Server is installed to the Exchsrvr folder located on a certain drive.
+You can configure the Setup program to install Exchange Server to a different
+path. However, if the path name includes a space character (" "), for example,
+C:\Exchange Server, the Exchange Connector for Lotus Notes cannot be installed
+properly.
+
+WORKAROUND
+==========
+
+To work around this problem you need to edit the registry:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Stop all Exchange Server services.
+
+2. Create a new folder to install the Exchange Connector for Lotus Notes, for
+   example, E:\Exchsrvr.
+
+3. Go to the following registry key:
+
+   HKEY_LOCALMACHINE\Software\Microsoft\Exchange\Setup
+
+   If a sub tree Exchconn exists, delete it.
+
+4. Go to the following registry key:
+
+   \HKEY_LOCALMACHINE\Software\Microsoft\Exchange\Setup\Services
+
+   This key points to your existing Exchange Server path. Write down the current
+   value. Change this value to the folder that you created in step 2.
+
+5. Run the Exchange Connector for Lotus Notes again.
+
+6. Revert the registry key in step 4 to the original value.
+
+7. Restart all of the Exchange Server services.
+
+Additional query words: GroupWise
+
+======================================================================
+Keywords          : exc55 
+Component         : NotesMC
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

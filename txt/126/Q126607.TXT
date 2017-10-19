@@ -1,0 +1,62 @@
+DOCUMENT:Q126607  11-MAR-2000  [odbc]
+TITLE   :PRB: Cannot Load MFCCLSWZ.DLL with ODBC SDK Version 2.1
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Open Database Connectivity (ODBC) version 2.1 Software Development Kit
+(SDK) from the January Microsoft Developer's Network (MSDN) Level 2 CD is
+installed on a system that already has Microsoft Visual C++ version 2.1
+installed and you attempt to run Visual C++ components, it fails with the
+following message:
+
+   MFCCLSWZ.DLL This required file cannot be loaded. Please reinstall the
+   Microsoft Visual C++ development environment.
+
+CAUSE
+=====
+
+The ODBC 2.1 SDK Setup from the January MSDN Level 2 CD replaces the Visual C++
+version of the files MSVCRT20.DLL and CTL3D32.DLL with older versions. The
+problem does not occur with any other versions of the ODBC 2.1 SDK.
+
+RESOLUTION
+==========
+
+Either reinstall Visual C++ 2.1, or copy the files MSVCRT20.DLL and CTL3D32.DLLl
+from the Visual C++ CD to the ODBCSDK\REDIST32 and WINNT\SYSTEM32 directories.
+
+Additional query words: Windows NT setup install
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC210
+Version           : WINDOWS:2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

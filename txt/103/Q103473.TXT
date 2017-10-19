@@ -1,0 +1,80 @@
+DOCUMENT:Q103473  08-AUG-2001  [winnt]
+TITLE   :SFM: MacFile Menu Not Displayed if NTAS Drive Letter Changes
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the drive letter of the logical drive where Windows NT Advanced Server is
+installed changes, the MacFile menu in File Manager and Server Manager may not
+appear.
+
+CAUSE
+=====
+
+Windows NT Advanced Server Services for Macintosh records fully qualified
+filenames (including paths) to the registry to enable File Manager and Server
+Manager to provide MacFile menus. If you change the drive letter of the drive
+where Windows NT Advanced Server is installed, Windows File Manager and Server
+Manager will not find the Services for Macintosh AddOns and will not display the
+MacFile menus.
+
+RESOLUTION
+==========
+
+To correct this problem, use the Registry Editor (REGEDT32.EXE) and change the
+following keys to the correct path and filename:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use Registry Editor can be
+solved. Use this tool at your own risk.
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\File Manager\AddOns
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Network\SMAddOns
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. This problem was corrected in the latest U.S.
+Service Pack for Windows NT and Windows NT Advanced Server version 3.1. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: sfm prodnt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

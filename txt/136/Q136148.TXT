@@ -1,0 +1,108 @@
+DOCUMENT:Q136148  08-AUG-2001  [winnt]
+TITLE   :MONITOR.EXE & DATALOG.EXE Alerts Have Invalid System Log Data
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The system log displays an alert with the source DATALOG, but misses data for,
+or displays random characters for, the Value and Trigger fields.
+
+This problem occurs, when you run MONITOR.EXE along with DATALOG.EXE (Data
+Logging Service) to report an alert in the system log based on the LogicalDisk
+and %FreeSpace parameters, if hard disk space runs low. The Value field should
+display the amount of current free disk space that triggers the alert, and the
+Trigger field should display the percentage value of low, free disk space that
+you specify to cause the alert.
+
+NOTE: MONITOR.EXE is a command line utility ships with the Windows NT 3.5
+Resource Kit. MONITOR.EXE controls the Data Logging Service that performs the
+same function as the Alert and Logging facility in Performance Monitor. You can
+schedule the DATALOG.EXE file to start automatically using MONITOR.EXE and the
+AT.EXE command, but Performance Monitor must be started manually.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To work around this problem, use Performance Monitor instead of MONITOR.EXE and
+DATALOG.EXE.
+
+For example:
+
+Assume you have a C drive with 150 MB total space. To be alerted every five
+minutes if there is less than 50% disk space free on your C drive:
+
+1. Run Performance Monitor.
+
+2. From the View menu, choose Alert.
+
+3. From the Edit menu, choose Add To Alert.
+
+4. In the Object field, select LogicalDisk.
+
+5. In the Counter field, select % Free Space.
+
+6. Under Alert If:
+
+   a. Select Under.
+
+   b. In the box, type the number 50. The number 50 is the percentage value
+      under which the alert is to be triggered.
+
+7. In the Instance list box, select "0 ==> C:" to select drive C.
+
+8. Under Run Program on Alert:
+
+   a. Type the name of an alert program you want to run to alert you, if the
+      percentage of low disk space is reached.
+
+   b. Select the Every Time option.
+
+9. Choose Add and then Done.
+
+Your alert program runs and the Performance Monitor Alert log displays alert
+messages if the low disk space trigger point is reached. The value that triggers
+the alert appears in the Performance Monitor alert message to the left of the
+percentage value you set as the trigger point.
+
+
+Additional query words: prodnt reskit freespace
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

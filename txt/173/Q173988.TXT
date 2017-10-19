@@ -1,0 +1,76 @@
+DOCUMENT:Q173988  14-NOV-2000  [word97]
+TITLE   :WD97: Pressing F10 in Document in Binder Doesn't Access Menu Bar
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbui word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you press F10 while working on a document within a Microsoft Office Binder,
+Word does not make the menu bar active.
+
+WORKAROUND
+==========
+
+To work around this problem, press ALT + the underlined character in the menu
+name. For Example, if you press ALT+F, the File menu appears on the screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+For more information about shortcut keys, click the Office Assistant, type
+"shortcut key" (without the quotation marks), click Search, and then click the
+"shortcut key" topic.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+For additional information about Office Binders, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q149657 Office: Description of Binder Wizards and How to Use Them
+
+   Q152577 How to Attach a Word Section in a Binder to its Template
+
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbui word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

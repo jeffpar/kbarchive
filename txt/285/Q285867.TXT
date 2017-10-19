@@ -1,0 +1,73 @@
+DOCUMENT:Q285867  19-JAN-2001  [homegame]
+TITLE   :Casino Err Msg: Microsoft Casino Requires 32 MB of RAM
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Casino, used with:
+    - Microsoft Windows 98 
+    - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Casino, you may receive the following
+error message:
+
+   Microsoft Casino requires 32 MB of RAM. Your computer does not appear to have
+   sufficient memory.
+
+When you click OK, you continue to the next installation screen.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - Your computer is running Microsoft Windows 98 or Microsoft Windows 98 Second
+   Edition (SE).
+
+ - You have less than 32 megabytes (MB) of random access memory (RAM) installed
+   in your computer.
+
+NOTE: The minimum system requirements printed on the Microsoft Casino game box
+are incorrect. Microsoft Casino requires 32 MB of RAM to run correctly on
+Windows 98 or Windows 98 SE-based computers.
+
+MORE INFORMATION
+================
+
+If you click OK, you can complete the installation.
+
+NOTE: You may experience poor performance in the game or the game may quit
+unexpectedly because of the lack of sufficient RAM.
+
+Additional query words: msgame mscasino
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeMMsearch kbGamesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

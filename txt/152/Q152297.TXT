@@ -1,0 +1,75 @@
+DOCUMENT:Q152297  15-DEC-1999  [foxpro]
+TITLE   :PRB: Calling APRINTERS Function Causes Feature Not Available
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a program calls the APRINTERS() function to place the names of printers
+currently installed into a memory variable array, Visual FoxPro generates the
+error number 1001 "Feature not Available."
+
+CAUSE
+=====
+
+This function is supported on the Windows platform only. The APRINTERS()
+function makes a call to the operating system to return the information about
+mounted printers. The Macintosh operating system does not provide this
+information. Thus, the APRINTERS function is not available in Visual FoxPro for
+Macintosh.
+
+STATUS
+======
+
+This behavior is by design.
+
+WORKAROUND
+==========
+
+If you are writing a cross-platform application, you can build a conditional
+structure that only includes calls to the APRINTERS function if you are running
+on the Windows platform.
+
+For example:
+
+      DO CASE
+       CASE _WINDOWS
+        <include your commands here>
+
+       CASE _MAC
+         <get information about the current printer>
+
+      ENDCASE
+
+Additional query words: VFoxmac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q237529  25-JUN-2000  [homemm]
+TITLE   :Encarta Dictionary: Image Jagged or Blocky When Pasted to Paint
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu
+
+======================================================================
+This article discusses a Beta release of a Microsoft product. The 
+information in this article is provided as-is and is subject to change
+without notice.
+
+No formal product support is available from Microsoft for this Beta 
+product. For information about obtaining support for a Beta release, 
+please see the documentation included with the Beta product files, or 
+check the Web location from which you downloaded the release.
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta World English Dictionary 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you copy an image from Microsoft Encarta World English Dictionary 2000 and
+then paste the image into Microsoft Paint, the image may appear jagged or blocky
+and its colors may be rendered incorrectly.
+
+CAUSE
+=====
+
+This behavior occurs when you run Encarta World English Dictionary 2000 on a
+Microsoft Windows 2000-based computer.
+
+RESOLUTION
+==========
+
+To work around this issue, paste the copied image into a graphics program other
+than Paint.
+
+Additional query words: multi multi-media media mm ewed corrupt blocks win2k
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,77 @@
+DOCUMENT:Q274996  25-JUN-2001  [exchange]
+TITLE   :Cannot Delete Exchsrvr Folder w. a "SHARING VIOLATION" Err Msg
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to delete the Exchsrvr folder, you may be unable to do so, and
+you may receive a "SHARING VIOLATION" error message.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Click Start, point to Settings, and then click Control Panel. Double-click
+   Services.
+
+2. Stop and disable the Internet Information Services (IIS) service.
+
+3. Stop and disable the Content Index service.
+
+After you perform these steps, you can delete the Webdata folder and the Exchsrvr
+folder.
+
+MORE INFORMATION
+================
+
+After you use the Exchange Server CD-ROM to remove the Exchange Server services,
+and after you remove all of the registry keys that are associated with Exchange
+Server in accordance with the following Microsoft Knowledge Base article
+
+   Q259158 XADM: How to Manually Remove Exchange Server 5.5 Completely
+
+if you attempt to delete the Exchsrvr folder, you cannot delete the folder and
+you receive the following error message:
+
+   SHARING VIOLATION
+
+No new event ID messages are logged in the System event log or Application event
+log. You can delete all of the subfolders in the Exchsrvr folder except the
+Webdata folder. If you attempt to delete the Webdata folder, you receive a
+"SHARING VIOLATION" error message.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

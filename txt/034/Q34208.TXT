@@ -1,0 +1,55 @@
+DOCUMENT:Q34208  04-NOV-1999  [utilities]
+TITLE   :LINK /OV[ERLAYINTERRUPT] Option, Valid Interrupt Numbers
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:3.x,4.x,5.x
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 3.x, 4.x, 5.x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft LINK /OV[ERLAYINTERRUPT] option specifies the interrupt number
+used to pass control to an overlay in an application. By default, an application
+uses Interrupt 3Fh (63 decimal) for this purpose. Normally, an application uses
+the default interrupt unless one overlaid program spawns another overlaid
+program.
+
+The /OV option supports interrupts 0h through FFh (0 through 255 decimal).
+However, take care to avoid using any interrupts that conflict with MS-DOS. Such
+a conflict can be very difficult to debug. Interrupts 3Ch through 43h (60
+through 67 decimal) are available as user-defined overlay interrupts without
+conflicting with MS-DOS. Consult an MS-DOS programmer's reference for additional
+information on the available interrupts.
+
+In Microsoft LINK versions 5.3 and later, the minimum unique abbreviation for
+/OVERLAYINTERRUPT changed from /O to /OV.
+
+Additional query words: kbinf
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK3xDOSSearch kbLINK4xDOSSearch kbLINK5xDOSSearch
+Version           : MS-DOS:3.x,4.x,5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

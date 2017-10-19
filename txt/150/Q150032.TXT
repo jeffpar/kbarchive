@@ -1,0 +1,75 @@
+DOCUMENT:Q150032  30-JUL-2001  [sms]
+TITLE   :Shared Application Still Running Error After Logoff
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbPGC smspgc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+If you are using a 16-bit Windows client and running a shared application such as
+Microsoft Word or Excel, and you close the application and immediately log off
+without exiting Windows, you may after a short time receive the following error
+message from Program Group Control:
+
+   You have just logged off with shared applications running. Log back on and
+   close your shared applications.
+
+The message is incorrect because there are no shared applications running.
+
+CAUSE
+=====
+
+Every 60 seconds, Program Group Control checks on the status of the shared
+applications. It goes down its Task List incrementing a variable for each
+running application and checking to see if that application is still running. If
+the application is not running, Program Group Control removes it from its Task
+List but does not decrement the variable. Therefore, the count it keeps of
+running applications is incorrect for the first check after an application has
+been closed. The count is corrected on the second check, 60 seconds later.
+
+WORKAROUND
+==========
+
+Wait at least one minute after closing the last open shared application before
+logging off, if you do not intend to exit Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server version
+1.2.
+
+
+Additional query words: prodsms sharedapp network error message
+
+======================================================================
+Keywords          : kbnetwork kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

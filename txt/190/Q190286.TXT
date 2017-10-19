@@ -1,0 +1,73 @@
+DOCUMENT:Q190286  31-JUL-2001  [sms]
+TITLE   :SMS: "Couldn't Connect to SQL Server" Error Reusing Login IDs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase kbsmsAdmin smsadmin smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to start the Systems Management Server Administrator program you
+may receive the following error message:
+
+   Couldn't connect to SQL Server. The server may be down or configured
+   incorrectly.
+
+This problem is independent of the version of SQL Server being used, and it can
+occur with all types of SQL Server security: standard, integrated, or mixed.
+
+CAUSE
+=====
+
+This error can occur when using a SQL Server login ID that had previously been
+deleted. The newly re-created login ID is being used to access the SMS database.
+
+WORKAROUND
+==========
+
+To work around this problem, use the Systems Management Server Security Manager
+to remove permissions to this account and then add them back in.
+
+MORE INFORMATION
+================
+
+When deleting the original SQL Server login ID from the SQL Server, you can
+avoid this problem of reusing it later by also running the following SQL query
+to delete the ID from the SMS database, where <SQL_Login> is the SQL
+Server login ID that you want to remove:
+
+      use SMS
+      delete from SecurityObjAccessList where username = '<SQL_login>'
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbsmsAdmin smsadmin smsdatabase 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,76 @@
+DOCUMENT:Q161268  17-DEC-1999  [homemm]
+TITLE   :Encarta 97 Err Msg: Enc97 Failed to Load Encres97.dll
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error message when you attempt to download an Encarta
+Encyclopedia Yearbook Update:
+
+   Enc97 failed to load Encres97.dll.
+
+When you click OK, you receive the following message:
+
+   No new update files were found. Do you want Encarta Encyclopedia to search
+   your hard drive for updates?
+
+When you click OK, you receive the following message:
+
+   You are out of disk space or do not have permission to write to the drive.
+   Unable to complete integration.
+
+CAUSE
+=====
+
+You do not have enough free space available on your hard disk.
+
+RESOLUTION
+==========
+
+Make sure you have at least 20 megabytes (MB) of available hard disk space
+before you attempt to download the Encarta Encyclopedia Updates again.
+
+For more information about making room on your hard drive, see your Windows
+printed documentation or online Help.
+
+MORE INFORMATION
+================
+
+This behavior is by design. The system requirements for Encarta Encyclopedia
+state that 4 MB of free hard disk space is required to download an update and an
+additional 1 MB of disk space is needed for the actual update.
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1997 kbEncartaEnCyc1997Del
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

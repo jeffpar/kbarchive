@@ -1,0 +1,60 @@
+DOCUMENT:Q98203  05-NOV-1999  [pcmail]
+TITLE   :PC WFW: 3.0b Server Version Disk 4 [5.25, 1.2 MB]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory listing of the version 3.0b Microsoft Mail Server
+Version Disk 4, 5.25-inch format.
+
+ Volume in drive A is MSMAIL30A
+ Volume Serial Number is 136A-07D8
+ Directory of A:\ 
+
+DIRSYNC      <DIR>     09-09-92  12:00a
+        1 file(s)          0 bytes
+
+Directory of A:\DIRSYNC
+
+.            <DIR>     09-09-92  12:00a
+..           <DIR>     09-09-92  12:00a
+DISPATCH EXE     51836 09-09-92  12:00a
+IMPORT   EXE    158174 09-09-92  12:00a
+NSDA     EXE      7154 09-09-92  12:00a
+REQMAIN  EXE    116653 09-09-92  12:00a
+SRVMAIN  EXE    160741 09-09-92  12:00a
+        7 file(s)     494558 bytes
+
+Additional query words: 3.00 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3
+Version           : :3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

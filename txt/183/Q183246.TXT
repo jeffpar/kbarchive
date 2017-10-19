@@ -1,0 +1,75 @@
+DOCUMENT:Q183246  16-NOV-2001  [vbwin]
+TITLE   :INFO: Printing Features Not Available in VBCE
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+ - Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Although Windows CE does support printing, this functionality was not
+incorporated into the Windows CE Toolkit for Visual Basic 6.0 (VBCE) or eMbedded
+Visual Basic 3.0.
+
+MORE INFORMATION
+================
+
+The Printers collection, Printer object, and PrintForm method are not available
+in VBCE or eVB.
+
+There are several alternative methods that you can use:
+
+ - · Print via an ActiveX component made in either the Windows CE Toolkit for
+   Visual C++ (VCCE) or with eMbedded Visual C++. This control must be made by
+   the developer or purchased from a third-party vendor.
+
+ - Create a file to be printed, synchronize the file to the desktop computer,
+   and print the file from the desktop.
+
+ - Send text to the printer via the serial/IR port. If necessary, include
+   appropriate printer commands (escape codes).
+
+ - Create a text file. Open and print the text file in Pocket Word.
+
+NOTE: The VBCE Common Dialog Box control released with the Microsoft Windows CE
+ActiveX Control Pack does not support functions related to printing.
+
+REFERENCES
+==========
+
+Windows CE Toolkit Help for Visual Basic 6.0
+
+Online Help for eMbedded Visual Basic
+
+Additional query words: VBCE wce evb vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

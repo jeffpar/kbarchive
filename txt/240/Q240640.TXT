@@ -1,0 +1,76 @@
+DOCUMENT:Q240640  27-OCT-2000  [homemm]
+TITLE   :World Atlas: Cannot Paste Over Six Lines of Text in Pushpin Note
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbdocerr kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+ - Microsoft Encarta Interactive World Atlas 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to paste text into a pushpin note field in Microsoft Encarta
+World Atlas 2000, you may receive a system beep and the pushpin note field may
+remain empty.
+
+CAUSE
+=====
+
+This behavior can occur if you attempt to paste more than six lines of text
+(approximately 30 words) into a pushpin note field.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, limit the amount of text you paste into a
+pushpin note field to six lines of text or less.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta World Atlas
+2000.
+
+MORE INFORMATION
+================
+
+The "To copy text from another document" online Help topic in Encarta World
+Atlas 2000 states:
+
+   If you try to paste more than six lines (approximately 30 words), you?ll see
+   a message that tells you the text won?t fit.
+
+However, you do not receive this message when you attempt to paste more than six
+lines of text into a pushpin note field.
+
+Additional query words: multi multi-media media mm ewa2k pushpins notes
+
+======================================================================
+Keywords          : kbui kbdocerr kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2001 kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

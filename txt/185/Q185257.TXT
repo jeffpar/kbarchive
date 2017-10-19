@@ -1,0 +1,57 @@
+DOCUMENT:Q185257  09-AUG-2001  [crossnet]
+TITLE   :How to Disable the Delete Confirmation Dialog Box
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbui win95 win98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you delete a file in Windows, you may receive a message prompting you to
+confirm deleting the file. This article describes how to disable the Delete
+Confirmation dialog box.
+
+MORE INFORMATION
+================
+
+To disable the Delete Confirmation dialog box, use the following steps:
+
+1. Right-click Recycle Bin, and then click Properties.
+
+2. Click the Display Delete Confirmation Dialog Box check box to clear it, and
+   then click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbui win95 win98 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

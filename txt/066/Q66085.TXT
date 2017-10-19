@@ -1,0 +1,79 @@
+DOCUMENT:Q66085  13-DEC-1999  [win95x]
+TITLE   :Dictful Error in Freedom of Press with Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print a PostScript file created in Microsoft Windows version 3.0
+or 3.0a with Freedom of Press, the following error message is displayed:
+
+   %[Error dictful, offending command: .....]%
+
+CAUSE
+=====
+
+This error can occur if the PostScript file was created by a PostScript printer
+driver assigned to the FILE: port in the printer configuration window.
+
+WORKAROUND
+==========
+
+Use the following steps to create an encapsulated PostScript file (EPS) for use
+with Freedom of Press:
+
+1. From the Main group of Program Manager, choose Control Panel.
+
+2. From Control Panel, choose Printers.
+
+3. Choose the PostScript printer driver.
+
+4. Select Configure, then Setup, then Options.
+
+5. Choose Encapsulated Postscript File in the Print To: box and enter a filename
+   beneath it.
+
+6. Print from your Windows application. This creates a file with the name
+   provided in step 5.
+
+7. Print this file using Freedom of Press.
+
+MORE INFORMATION
+================
+
+Freedom of the Press is manufactured by a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

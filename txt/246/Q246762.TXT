@@ -1,0 +1,93 @@
+DOCUMENT:Q246762  16-DEC-1999  [exchange]
+TITLE   :XCON: Error Starting the MTA After Upgrading to Exchange 5.5
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade from Exchange Server 4.0 to Exchange Server 5.5, you may
+receive the following error message:
+
+   The procedure entry point EcFloraToLpstr could not be located in the dynamic
+   link library address.dll
+
+   Could not start the Microsoft Exchange Message Transfer Agent service on
+   \\<servername>
+   Error 2186: The service is not responding to the control function.
+
+This error message may be accompanied by the following errors in the System Event
+Log:
+
+   Event ID: 7000
+   Source: Service Control Manager
+   Type: Error
+   Category: None
+   The Microsoft Exchange Message Transfer Agent service failed to start due to
+   the following error:
+   The service did not respond to the start or control request in a timely
+   fashion.
+
+   Event ID: 7009
+   Source: Service Control Manager
+   Type: Error
+   Category: None
+   Timeout (120000 milliseconds) waiting for service to connect.
+
+CAUSE
+=====
+
+The Address.dll file located in the Exchsrvr\Bin folder was not replaced during
+the upgrade.
+
+RESOLUTION
+==========
+
+To resolve this problem,
+
+1. Rename the Address.dll file and copy the original Address.dll file from the
+   Server\Setup\I386\Bin folder on the Exchange Server 5.5 CD to the
+   Exchsrvr\Bin folder on the server.
+
+2. Start the MTA service.
+
+MORE INFORMATION
+================
+
+You can also find the Address.dll file in the following folders:
+
+   Exchsrvr\Connect\Msexcimc\Bin
+   Exchsrvr\Connect\Msmcon\Bin
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

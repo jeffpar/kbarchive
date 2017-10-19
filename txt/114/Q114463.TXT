@@ -1,0 +1,75 @@
+DOCUMENT:Q114463  11-JUN-2002  [winnt]
+TITLE   :Hiding the Last Logged On Username in the Logon Dialog
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+It is possible to hide the user name of the last logged on user in the logon
+dialog box in Windows NT.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Start Regedt32.exe and locate the following registry key:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+
+Add a REG_SZ value named DontDisplayLastUserName. Set the data value to 1 to
+enable the new feature. A data value of 0 disables the feature.
+
+The Last Username Display can also be hidden without editing the Registry
+directly if you have the Windows NT Resource Kit.
+
+1. Click Start\ProgramsResource Kit 4.0
+
+2. Click Configuration\C2 Configuration
+
+3. Double click the line that reads "Last Username Display"
+
+4. Place a check in Hide the last username to login.
+
+5. Click Secure then OK.
+
+Additional query words: prodnt login display
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

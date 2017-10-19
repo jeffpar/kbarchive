@@ -1,0 +1,79 @@
+DOCUMENT:Q179514  10-AUG-2001  [winnt]
+TITLE   :Display May Not Fill Entire Screen on IBM ThinkPad Computer
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a Windows NT-based computer, the display may not fill the entire screen. A
+thick black border may appear around the edges of the screen and the viewable
+area may be limited to a small area in the center of the screen.
+
+CAUSE
+=====
+
+This behavior can occur if the display settings are set incorrectly.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the display settings using the following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display, and then click the Settings tab.
+
+3. Move the Desktop Area slider to the setting you want.
+
+4. Click Test to test the resolution, and then click OK.
+
+5. After the test finishes, click Yes if the test bitmap was displayed properly.
+   Otherwise, click No and repeat steps 3-4 to select a different screen
+   resolution.
+
+6. Click OK.
+
+MORE INFORMATION
+================
+
+For more information, contact IBM.
+
+
+Full-screen MS-DOS-based programs are displayed at a resolution of 640 X 480,
+causing them to be displayed in the middle of the screen.
+
+Additional query words: blank gap lines bars
+
+======================================================================
+Keywords          : kbdisplay kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

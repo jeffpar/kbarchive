@@ -1,0 +1,937 @@
+DOCUMENT:Q110733  22-FEB-2002  [pcmail]
+TITLE   :PC Win: Summary List of Mail for Windows 3.2 Bugs
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+The following is a list of bugs confirmed in version 3.2 of Microsoft Mail
+for Windows. This is not a comprehensive list; this list is current as of
+January 1, 1994.
+
+For more information on the bug listed, query in the Microsoft Knowledge
+Base on the article ID.
+
+BUG LISTING FOR VERSION 3.2
+---------------------------
+
+ - Scroll Bar on Compose Note Jumps Up and Down
+
+ - No Split Menu Item When Message Finder Is Open
+
+ - Selected Order of Messages Open Out of Order
+
+ - Meeting Request Subject Incorrect in Shared Folder
+
+ - Stack Fault When Spell Checking a Long Section of Text
+
+ - Err Msg: This Name or Comment Is Too Long
+
+ - Shared Folder Status Bar Has No Message Count
+
+ - No Paperclip Icon on Message with OLE Object
+
+ - Modified Status Lost in Move to Shared Folder
+
+ - Setup Does Not Add SHARE.EXE to AUTOEXEC.BAT
+
+ - Packaged Object Icon Changes After Reading
+
+ - Two OLE Objects on One Line Print on Two Lines
+
+ - Embedded Paintbrush Object Does Not Print Color
+
+ - Excel 4.0 Chart May Appear Smaller Than Normal
+
+ - Multiple Update Prompts With OLE Objects
+
+ - Missing Information in Paste Special Dialog Box
+
+ - Space Requirements Incorrect on Custom Setup
+
+ - Unexpected Exit Permanently Locks Shared Folder
+
+ - OLE Object Redraws Slowly in Message
+
+ - OLE Apps Have Unexpected Window Stacking Order
+
+ - Highlighting OLE Objects Within Message
+
+ - Attach Dialog Box May Update Improperly
+
+ - Problems Attaching MSMAIL.EXE in Foreign Windows
+
+ - Drag/Drop Makes Folder Hierarchy Display Incorrect
+
+ - From Field Changes Friendly Name to Login Name
+
+ - Message Finder Icon Does Not Update
+
+ - Update Message when Closing Unfinished OLE Object
+
+ - Cannot Minimize Message Finder Using Keyboard
+
+ - Creating Subfolders Illegally Under Shared Folders
+
+ - Text in Comment Field Not Selected
+
+ - Header Displayed in Message Body
+
+ - Cannot Forward or Reply on Return Receipts
+
+ - Err Msg: The Folder Conversion Program...
+
+ - Change Default Printer in Windows Not Change in Mail
+
+ - Custom Dictionary Not Loaded When it Should Be
+
+ - Setup Does Not Change Language for Speller
+
+ - Fault in 8514.DRV After Typing in a Text Box
+
+ - Wordwrap Does Not Work Correctly When Using Tabs
+
+ - Backup MMF Allows Composing But Not Sending
+
+ - Appears to Hang When Printing from Shared Folder
+
+ - Select All Does Not Highlight Any Messages
+
+ - Attachment Icon Redraws When Using BACKSPACE Key
+
+ - No Beep When Requested for New Mail
+
+ - Wrong Button Discussed in "Find a Name" Help Topic
+
+ - WINMAIL.DAT File Appears in 2.1 Clients
+
+ - Cannot Reply If Attachment Is Deleted
+
+ - Err Msg: A TPL File Has Been Incorrectly Modified...
+
+ - Duplicate PAB Entries--Part 1
+
+ - Err Msg: File Error
+
+ - Print Quality Always Set to High
+
+ - New Mail Dialog Appears But No Mail Is Retrieved
+
+ - Err Msg: There Was an Unknown Disk Error
+
+ - Saving Composed Message When Net Connection Goes Down
+
+ - Folder Names Limited to 127 Characters
+
+ - Address Book Does Not Limit Extended Characters
+
+ - Missing Cc: Line in Sent Mail Folder
+
+ - Maximum Size Message Gets Truncated When Sent
+
+ - Mail Will Not Start Minimized from Word Macro
+
+ - File Manager Send Mail Option Hangs Computer
+
+ - Messages Not Imported from Backup MMF If Already Exist
+
+ - GP Fault Occurs When Copying or Pasting Text
+
+ - MAPIHELP=path Not Updated When Mail Is Installed
+
+ - Return Receipt Won't Print Color on IBM Color Printer
+
+ - GP Fault Copying Many Messages to Shared Folder
+
+ - Header Fields May Be Misaligned When Redrawn
+
+ - No Sound with View New Messages Notification
+
+ - Can't Jump to End of Address List by Typing "zz"
+
+ - TrueType Fonts Do Not Work Properly with Mail
+
+ - Messages with Same Time Stamp Are Sorted Incorrectly
+
+ - Mail Stops Downloading Messages When .MBG Is Detected
+
+ - Check for New Mail Time Is Twice the User Setting
+
+ - Missing _MSSETUP.EXE Causes Setup to Abort
+
+ - Folder Rebuild Does Not Display Status Information
+
+ - Global Address List Name Search Returns All Names
+
+ - StripGatewayHeaders Limited to 75 Recipients
+
+ - Err Msg: There is Not Enough Memory or System...
+
+Scroll Bar on Compose Note Jumps Up and Down:
+
+Q80653
+
+In versions 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the scroll
+bars on a compose note may jump around when three or more lines are entered
+very quickly.
+
+No Split Menu Item When Message Finder Is Open:
+
+Q81419
+
+When the Message Finder viewer is open in versions 3.0, 3.0b, or 3.2 of
+Microsoft Mail for Windows, the View menu does not contain the Split
+command (although it is available in the view's system menu).
+
+NOTE: All other views contain a Split command on the View menu.
+
+Selected Order of Messages Open Out of Order:
+
+Q81552
+
+In versions 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, messages in
+the Message Center Viewer (MCV), sometimes cannot be opened in the order in
+which they are displayed.
+
+Messages that are visible and highlighted in the MCV are opened in their
+appropriate order, but selected messages that you have scrolled past in the
+MCV are not. This same sort of behavior exists if you selectively highlight
+random messages (hold the CTRL key and click with the mouse button) and
+scroll past the initial MCV view.
+
+Meeting Request Subject Incorrect in Shared Folder:
+
+Q82268
+
+If versions 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows receives a
+Schedule+ for Windows meeting request and the message is then moved to a
+shared folder, the subject line is changed to something like,
+
+   >>>>!3/20/92 17:00-17...
+
+instead of the correct subject line as displayed in a private folder.
+
+The right subject line appears when you read the message; only the
+summary in the shared folder displays the incorrect subject.
+
+Stack Fault When Spell Checking a Long Section of Text:
+
+Q82915
+
+Versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows sometimes display
+this error message when spell checking a very long string of characters
+containing no blank spaces:
+
+   Stack Fault in MSSPELL.DLL
+
+Err Msg: This Name or Comment Is Too Long:
+
+Q82921
+
+When creating or modifying a shared folder in version 3.0, 3.0b, or 3.2 of
+Microsoft Mail for Windows, you may receive this error message if the name
+or comment exceeds the maximum length:
+
+   This name or comment is too long. Type a shorter name or comment.
+
+Shared Folder Status Bar Has No Message Count:
+
+Q82922
+
+The status bar in version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows
+does not display the message count of an open shared folder.
+
+No Paperclip Icon on Message with OLE Object:
+
+Q84884
+
+If you move a message with an object linking and embedding (OLE) object to
+a shared folder in version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows,
+the icon next to the message does not display a paperclip. If you move the
+message back to a private folder, the paperclip icon reappears.
+
+This occurs only with OLE objects, not with regular file attachments.
+
+Modified Status Lost in Move to Shared Folder:
+
+Q85167
+
+Moving a modified message to a shared folder in version 3.0, 3.0b, or 3.2
+of Microsoft Mail for Windows, causes the modified status to become lost.
+Modified messages are identified by an asterisk (*) to the left of the
+From line, for example, *From: John Doe.
+
+Setup Does Not Add SHARE.EXE to AUTOEXEC.BAT:
+
+Q85199
+
+If you boot a machine from the floppy drive before running the Setup
+program for version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the
+AUTOEXEC.BAT file on the boot disk does not get modified.
+
+For instance, the Setup program prompts you to add the line SHARE.EXE to
+the AUTOEXEC.BAT file if you want SHARE loaded automatically. However, when
+you add the line, it is not written to the AUTOEXEC.BAT on the boot disk or
+the hard drive.
+
+Packaged Object Icon Changes After Reading:
+
+Q85672
+
+With version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the icon for
+an object embedded within a message may change after the object is read.
+
+Two OLE Objects on One Line Print on Two Lines:
+
+Q85695
+
+Multiple object linking and embedding (OLE) objects placed on the same
+line in version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows are
+printed on separate lines.
+
+Embedded Paintbrush Object Does Not Print Color:
+
+Q85967
+
+Color is lost when you print a version 3.0, 3.0b, or 3.2 Microsoft Mail
+for Windows message containing an embedded Windows version 3.1 Paintbrush
+picture.
+
+Excel 4.0 Chart May Appear Smaller Than Normal:
+
+Q85968
+
+A Microsoft Excel version 4.0 for Windows chart embedded in a version 3.0,
+3.0b, or 3.2 Microsoft Mail for Windows message sometimes appears smaller
+than normal.
+
+Multiple Update Prompts With OLE Objects:
+
+Q85969
+
+When you print a message in version 3.0, 3.0b, or 3.2 of Microsoft Mail for
+Windows that contains an object linking and embedding (OLE) object, a
+dialog box prompts you to update information even if the OLE object is
+currently updated.
+
+Missing Information in Paste Special Dialog Box:
+
+Q85970
+
+Version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows does not display
+file information correctly in the Pasted Special Option dialog box when
+an object linking and embedding (OLE) object is placed in a message.
+
+Space Requirements Incorrect on Custom Setup:
+
+Q86003
+
+When you run the Custom Setup for version 3.0, 3.0b, or 3.2 of Microsoft
+Mail for Windows, the required disk space reported might be incorrect
+depending on whether the files already exist on the disk.
+
+Unexpected Exit Permanently Locks Shared Folder:
+
+Q86082
+
+If a shared folder is open and version 3.0, 3.0b, or 3.2 of Microsoft
+Mail for Windows exits unexpectedly, the shared folder will not be
+unlocked and therefore cannot be deleted.
+
+OLE Object Redraws Slowly in Message:
+
+Q86090
+
+When you compose a message in version 3.0, 3.0b, or 3.2 of Microsoft Mail
+for Windows that contains an object linking and embedding (OLE) object
+with text above and below it, the screen redraws of the OLE object may be
+very slow.
+
+OLE Apps Have Unexpected Window Stacking Order:
+
+Q86091
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, using the
+ALT+TAB function to toggle between applications and close the object
+linking and embedding (OLE) Server application, sometimes causes an
+unexpected window stacking order.
+
+Highlighting OLE Objects Within Message:
+
+Q86092
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, if you compose
+a message containing an object linking and embedding (OLE) object followed
+by a large block of text, you may have trouble highlighting the text and
+the OLE object.
+
+Attach Dialog Box May Update Improperly:
+
+Q86093
+
+If you attempt to attach from a floppy disk after removing it, version 3.0,
+3.0b, or 3.2 of Microsoft Mail for Windows sometimes displays this
+incorrect error message:
+
+   Cannot find this file.
+   Please verify that the correct path and filename are given.
+
+The expected error should be
+
+   Cannot read drive "x"
+   Please verify the drive door is closed and that the disk is formatted.
+
+where x is the floppy disk drive.
+
+Problems Attaching MSMAIL.EXE in Foreign Windows:
+
+Q86184
+
+If you use version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows with
+the French or German edition of Microsoft Windows version 3.1, attaching
+the MSMAIL.EXE file to a message causes the system to become unstable,
+and you have to restart the Windows 3.1 operating environment. This
+problem occurs only with foreign editions of Windows version 3.1.
+
+Drag/Drop Makes Folder Hierarchy Display Incorrect:
+
+Q86315
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the folder
+hierarchy display can become incorrect after you drag-and-drop folders
+from the top level to a lower level two or more times in succession.
+Scrolling the list up or down corrects the display.
+
+From Field Changes Friendly Name to Login Name:
+
+Q86316
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows moving a message
+to a shared folder changes the friendly name (for example, Karen White) in
+the From field to the login name (for example, karenwh).
+
+Message Finder Icon Does Not Update:
+
+Q86317
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the Message
+Finder icon may continue to display an envelope when its message has
+actually been opened or deleted.
+
+Update Message when Closing Unfinished OLE Object:
+
+Q86319
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, if you exit
+while composing a note containing an unfinished object linking and
+embedding (OLE) object (where Mail is the client document and the OLE
+server is open and no update has been done) you see the standard OLE
+"Do you want to update..." message even when the note being composed is
+not the current active window.
+
+Cannot Minimize Message Finder Using Keyboard:
+
+Q86321
+
+When running version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows under
+Microsoft Windows version 3.1, the Minimize option is unavailable in the
+Control menu of a new Message Finder, if you access it using the
+combination ALT+SPACEBAR, RIGHT ARROW key.
+
+This problem occurs only when you use a new Message Finder. Once you have
+minimized and restored Message Finder, the Minimize option is available.
+
+Creating Subfolders Illegally Under Shared Folders:
+
+Q86324
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, you can create
+a subfolder under a shared folder for which you have no privileges.
+
+Text in Comment Field Not Selected:
+
+Q86325
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, if you select
+Folder Properties from the File menu, the text in the Comment field is
+not selected when it has the focus. To select the text in the Comment
+field you must press TAB. (Developers should note this when developing
+scripts to be executed against Mail for Windows.)
+
+Header Displayed in Message Body:
+
+Q86329
+
+When a message is sent to a shared folder from a Microsoft Mail for PC
+Networks, MS-DOS workstation, then opened in version 3.0, 3.0b, or 3.2 of
+Microsoft Mail for Windows, the header information is displayed in the
+message text.
+
+Cannot Forward or Reply on Return Receipts:
+
+Q86330
+
+Normally, in version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the
+Forward, Reply, and Reply All options are not available when a return
+receipt message is selected. These options are available, however, if the
+return receipt message is located in a shared folder, but once you select
+one you are notified that it cannot be executed.
+
+Err Msg: The Folder Conversion Program...:
+
+Q86389
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the following
+error message is displayed when the folder conversion program (CONVERT.EXE)
+does not have sufficient memory to run:
+
+   The folder conversion program cannot access your message file.
+   Make sure that you can sign into Microsoft Mail and try again.
+
+Change Default Printer in Windows Not Change in Mail:
+
+Q88371
+
+Changing the default printer driver for version 3.1 of Microsoft Windows
+does not change the printer driver for version 3.0, 3.0b, or 3.2 of
+Microsoft Mail for Windows. To update Mail, choose Print from the File
+menu, select the Setup button, then choose the OK button.
+
+Custom Dictionary Not Loaded When it Should Be:
+
+Q91730
+
+If you press the F7 key to spell check a message in version 3.0, 3.0b, or
+3.2 of Microsoft Mail for Windows and try to add a misspelled word to your
+custom dictionary, Microsoft Mail tells you that no custom dictionary has
+been opened.
+
+Setup Does Not Change Language for Speller:
+
+Q93074
+
+If you install version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows,
+with the spell checking facility for one language, then install Mail with
+the spell checking facility for another language, spell checking will not
+work. If you try to check spelling in a message, Mail for Windows reports
+an error in loading the spell checker.
+
+Fault in 8514.DRV After Typing in a Text Box:
+
+Q93238
+
+When composing a message in version 3.0, 3.0b, or 3.2 of Microsoft Mail for
+Windows, if you enter information in the TO: field, choose to resolve the
+name, double-click the resolved name and then enter 30 characters in the
+name field, you may get an error message indicating that there has been a
+fault in 8514.DRV.
+
+Wordwrap Does Not Work Correctly When Using Tabs:
+
+Q93241
+
+When composing a message using tabs in version 3.0, 3.0b, or 3.2 of
+Microsoft Mail for Windows, the wordwrap function may not work correctly.
+
+Backup MMF Allows Composing But Not Sending:
+
+Q93242
+
+When using a backup of your Mail Message File (MMF) in version 3.0, 3.0b,
+or 3.2 of Microsoft Mail for Windows, you sometimes can compose a message
+but cannot transmit it to the postoffice. The sent message just sits in
+your outbox.
+
+Appears to Hang When Printing from Shared Folder:
+
+Q93566
+
+Version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, may appear to hang
+(stop responding) when you print a large message from within a shared
+folder.
+
+Select All Does Not Highlight Any Messages:
+
+Q93567
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, choosing Select
+All from the Edit menu sometimes fails in folders containing a large number
+of messages.
+
+Attachment Icon Redraws When Using BACKSPACE Key:
+
+Q93572
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the icon for an
+attachment appears to disappear and be redrawn each time you press the
+BACKSPACE key on the line containing the attachment or on the line below
+it.
+
+No Beep When Requested for New Mail:
+
+Q93573
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the computer
+does not beep when a new message arrives. Even if you have set the option
+to alert you when new mail arrives, the envelope flashes, as it should, but
+the beep does not sound.
+
+Wrong Button Discussed in "Find a Name" Help Topic:
+
+Q93574
+
+Help topics in version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows,
+mistakenly identify the Find button as the Search button.
+
+WINMAIL.DAT File Appears in 2.1 Clients:
+
+Q94180
+
+If you send one or more enclosures with a message using version 3.0, 3.0b,
+or 3.2 of Microsoft Mail for Windows to a version 2.1 of Microsoft Mail for
+PC Networks workstation, an extra attachment with the name WINMAIL.DAT
+appears. The system may hang while trying to save this file even though it
+should not be saved; it is used by Mail for Windows only as a resource
+file.
+
+Cannot Reply If Attachment Is Deleted:
+
+Q95963
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, when you reply
+to a message that originally contained an attachment that is now deleted,
+this error occurs:
+
+   Stop: A New Message Could Not Be Created.
+
+Err Msg: A TPL File Has Been Incorrectly Modified...:
+
+Q96500
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, you may
+receive the following error message when selecting details on a user
+from the postoffice address list:
+
+   A TPL file has been incorrectly modified. Contact your Administrator.
+
+
+Err Msg: File Error:
+
+Q101614
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, selecting
+Demos from the Help menu generates a "File Error" error message.
+
+Print Quality Always Set to High:
+
+Q102086
+
+When you print from version 3.0, 3.0b, or 3.2 of Microsoft Mail for
+Windows, print Quality always defaults to high, even when the printer
+driver is set for draft.
+
+New Mail Dialog Appears But No Mail Is Retrieved:
+
+Q102654
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, choosing
+New Messages from the View menu causes the "Checking for new messages"
+dialog to appear briefly and then disappear, but no new mail is retrieved
+and no error message is displayed.
+
+Err Msg: There Was an Unknown Disk Error:
+
+Q102665
+
+When you save a message to a file, version 3.0, 3.0b, or 3.2 of Microsoft
+Mail for Windows does not determine if there is enough disk space before it
+starts writing the file. If the file already exists, Mail overwrites it. If
+there is not enough disk space, Mail truncates the file and displays this
+alert:
+
+   There was an unknown disk error. Some data was written disk.
+
+NOTE: This message should say "written to disk."
+
+Saving Composed Message When Net Connection Goes Down:
+
+Q103238
+
+If the network goes down while you are composing a message in version
+3.0, 3.0b, 3.1, or 3.2 of Microsoft Mail for Windows and you try to
+exit Mail or save the message in the Inbox, the following message is
+displayed:
+
+   There is not enough memory or system resources to save changes.
+
+Folder Names Limited to 127 Characters:
+
+Q103448
+
+When you create a new folder in version 3.0, 3.0b, or 3.2 of Microsoft
+Mail for Windows, the following error may occur:
+
+   This name or comment is too long. Type a shorter name or comment.
+
+Address Book Does Not Limit Extended Characters:
+
+Q103449
+
+Versions 3.0, 3.0b, 3.1, and 3.2 of Microsoft Mail for Windows do not
+check the validity of characters typed in fields in the Address Book
+and its related dialog boxes. Therefore, invalid characters can be
+typed in fields.
+
+For example, you can type letters in the Fax Number box. Data checking
+occurs only for fields that require data to be entered and for
+carriage return-linefeeds (for the Personal Address Book).
+
+You can also type invalid characters in the New User dialog box, and
+the Address Book will accept these characters.
+
+Missing Cc: Line in Sent Mail Folder:
+
+Q103451
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, if the
+first recipient listed in the To: field of a message is also the first
+recipient listed in the Cc: field, Mail drops the first recipient's name
+from the Cc: field when the message is saved in the Sent Mail folder.
+
+Maximum Size Message Gets Truncated When Sent:
+
+Q103455
+
+In versions 3.0, 3.0b, 3.1, and 3.2 of Microsoft Mail for Windows, and
+version 3.1 of Microsoft Mail for Windows for Workgroups, when you try
+to read a message that is the maximum size possible, the following
+warning appears and the last two characters of the message are
+truncated:
+
+   The message is too large to fit into memory all at once.
+   Some of it will not be displayed.
+
+A related problem occurs if the message contains an attachment as the
+last character. When the message is saved or sent, and then read again
+by the sender, Mail experiences a general protection (GP) fault.
+
+Mail Will Not Start Minimized from Word Macro:
+
+Q103456
+
+You cannot use a Microsoft Word for Windows macro to start version 3.0,
+3.0b, or 3.2 of Microsoft Mail for Windows minimized with the Shell
+command. For example, when you use the following query, Mail launches,
+but it is not minimized.
+
+      shell "c:\msmail\msmail.exe", 0
+
+File Manager Send Mail Option Hangs Computer:
+
+Q103457
+
+With versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, the
+computer may appear to stop responding (hang) when you choose Send Mail
+from the Windows File Manager Mail menu. This problem occurs only if you
+use ALT+TAB to select Program Manager and then select (double-click) File
+Manager a second time.
+
+Messages Not Imported from Backup MMF If Already Exist:
+
+Q103697
+
+When you try to import a backed-up Mail Message File (MMF) into
+version 3.0b, 3.1, or 3.2 of Microsoft Mail for Windows, Mail asks you
+how to handle duplicate messages. If you choose Save All Messages,
+Mail copies messages from the imported MMF file except for those that
+are duplicates with the same modification date.
+
+This may be confusing because some messages from the MMF file will be
+copied into the destination folder, while others may not.
+
+GP Fault Occurs When Copying or Pasting Text:
+
+Q103792
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, a general
+protection (GP) fault occurs when you copy or paste a text block larger
+than 32K.
+
+MAPIHELP=path Not Updated When Mail Is Installed:
+
+Q103814
+
+The MAPIHelp=<path> setting in the MSMAIL.INI file does not get
+updated when you install version 3.2 of Microsoft Mail for Windows
+over an existing older version and the setup directory differs from
+the existing mail directory.
+
+Return Receipt Won't Print Color on IBM Color Printer:
+
+Q103912
+
+With versions 3.0, 3.0b, 3.1, and 3.2 of Microsoft Mail for Windows,
+the Return Receipt option does not print in color on an IBM Color
+Printer.
+
+GP Fault Copying Many Messages to Shared Folder:
+
+Q103944
+
+When you copy a large number of messages (about 800, possibly less)
+to a shared folder, versions 3.0, 3.0b, and 3.2 of Microsoft Mail for
+Windows cause a general protection (GP) fault in the MSSFS.DLL file.
+
+Header Fields May Be Misaligned When Redrawn:
+
+Q103958
+
+Versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows may display
+misaligned edit boxes--the To: box is where the Cc: box should be, the
+Cc: box is where the Subject: box should be, the Subject: box is one
+line below its usual position, and there is nothing where the To: box
+should be.
+
+No Sound with View New Messages Notification:
+
+Q103986
+
+With versions 3.0, 3.0b and 3.2 of Microsoft Mail for Windows, if you
+choose New Messages from the View menu and find new mail, the envelope
+flashes but the new-mail chime does not sound.
+
+Can't Jump to End of Address List by Typing "zz":
+
+Q104031
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, trying to
+jump to the last name in the Address List by typing the character "z"
+twice ("zz"), returns the following error:
+
+   Address: An error occurred while trying to access the name service.
+   (0000024E)
+
+This problem occurs only in the postoffice address list, not in the
+global address list, personal address book, or gateway lists.
+
+TrueType Fonts Do Not Work Properly with Mail:
+
+Q104084
+
+Versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows allow you
+to specify both a normal (proportional) font and a fixed (nonproportional)
+font in the MSMAIL.INI file. If you select a TrueType font as the
+FixedFont and then choose Change Font from the View menu within a mail
+message, no visible change occurs on the screen--the TrueType font chosen
+as FixedFont does not appear.
+
+Messages with Same Time Stamp Are Sorted Incorrectly:
+
+Q104108
+
+In versions 3.0, 3.0b, 3.1, and 3.2 of Microsoft Mail for Windows,
+messages received with the same time stamp do not get sorted correctly:
+they appear in a folder in the order they were placed in it and are not
+sorted automatically by their From field.
+
+Mail Stops Downloading Messages When .MBG Is Detected:
+
+Q104277
+
+When you use versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows
+to download messages from the .MBG file, you are disconnected if Mail
+encounters a corrupt message, and Mail does not download any more valid
+messages.
+
+Check for New Mail Time Is Twice the User Setting:
+
+Q104913
+
+In version 3.0, 3.0b or 3.2 of Microsoft Mail for Windows and version 3.0
+of Microsoft Mail for PC Networks, OS/2 workstation, Mail actually
+checks for new messages at twice the rate displayed in the Mail Options
+dialog box. For example, if the Check For New Mail Every X Minutes
+option is set to 5, Mail checks for new messages every 10 minutes.
+
+NOTE: The Mail Options dialog box also controls how often Mail checks
+the outbox for messages to submit to the postoffice.
+
+Missing _MSSETUP.EXE Causes Setup to Abort:
+
+Q105107
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, when you
+run the Setup program (SETUP.EXE), the Windows client Setup screen
+flashes momentarily and then returns to File Manager or Program
+Manager without completing the setup process.
+
+Folder Rebuild Does Not Display Status Information:
+
+Q107354
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, the Windows
+client will rebuild a corrupt folder without displaying any type of status
+message. This may cause you to assume the client is hung when it is
+actually performing a rebuild operation.
+
+Global Address List Name Search Returns All Names:
+
+Q108026
+
+In versions 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, when
+performing a name search on the Global Address List (GAL), if the selection
+criterion is the surname and first initial of the given name, and these
+letters are the same(for example, Smith, Steve) then all names that match
+the surname will be returned.
+
+StripGatewayHeaders Limited to 75 Recipients:
+
+Q108830
+
+Version 3.2 of Microsoft Mail for Windows includes in the [Microsoft Mail]
+section of MSMAIL.INI the StripGatewayHeaders switch to remove extra
+headers from foreign systems being displayed in the body of the message.
+This switch does not work for messages with 76 recipients or more.
+
+Err Msg: There is Not Enough Memory or System...:
+
+Q110137
+
+When using version 3.2 of Microsoft Mail for Windows and exporting a folder
+to a disk location which does not have adequate drive space available, no
+error message is displayed. Also during the Export or Import of the folder,
+no error is generated. When a user attempts to open a message within the
+suspect folder, the following error message may be displayed:
+
+   There is not enough memory or system resources to complete this action.
+   Try closing some Windows and performing the action again.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

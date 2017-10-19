@@ -1,0 +1,98 @@
+DOCUMENT:Q151713  08-AUG-2001  [crossnet]
+TITLE   :Description of Twisted-Pair Category Types
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:MS-DOS:3.0; WINDOWS:3.11,95; winnt:3.5,3.51; :2.2c,3.11,3.11a,3.11b
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - Microsoft LAN Manager, version 2.2c 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+ - Microsoft Windows 95 
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes twisted-pair cabling and its role in the Electronic
+Industries Association/Telecommunications Industries Association (EIA/TIA)568
+Commercial Building Wiring Standard specification.
+
+MORE INFORMATION
+================
+
+Twisted-pair consists of copper core wires surrounded by an insulator. Two wires
+are twisted together to form a pair, and the pair forms the circuit that can
+transmit data. A cable is a bundle of one or more twisted pairs surrounded by
+another insulator and twisted together. Unshielded twisted-pair (UTP) is common
+in a telephone network. Shielded twisted-pair (STP) provides protection against
+external crosstalk by using braided metal shielding. The twisting prevents
+interference problems, but must be maintained all the way to the connection
+points.
+
+Categories of Twisted-Pair
+--------------------------
+
+The EIA/TIA 568 specification standardizes the installation of wiring. It applies
+to all UTP wiring schemes that work with Ethernet 10Base-T, token-ring, Private
+Branch Exchange (PBX), Integrated Services Digital Network (ISDN), and Twisted
+Pair-Physical Media Dependent (TP-PMD) networks. EIA/TIA 568 defines the
+following cable categories:
+
+Category 1: Unshielded twisted-pair (UTP) cable that is suited for voice but not
+data. Most telephone cable installed before 1983 is Category 1 cable. Not widely
+used anymore.
+
+Category 2: UTP cable certified for data transmissions up to 4 Mbits/second.
+Similar to IBM Cabling System Type 3 and is commonly installed as modern
+telephone cable. This cable has four twisted pairs.
+
+Category 3: UTP that supports 10-Mbits/sec transmission rates and is required for
+token-ring (4 Mbits/sec) and 10-Mbits/sec Ethernet 10Base-T. The cable must have
+four pairs and three twists per foot.
+
+Category 4: UTP certified for 16 Mbits/sec transmission rates and is the lowest
+grade acceptable for 16 Mbits/sec token-ring. The cable has four pairs.
+
+Category 5: Defines 100-ohm, four-wire twisted-pair UTP copper cable that can
+transmit data at 100 Mbits/sec to support technologies such as Fast Ethernet and
+Asynchronous Transfer Mode (ATM), if installed according to specifications. The
+cable is low-capacitance and exhibits low crosstalk. However, all components
+must be Category 5 compliant; therefore, older modular connectors and jacks are
+not suitable for Category 5 installations.
+
+REFERENCES
+==========
+
+Sheldon, Tom. "LAN Times Encyclopedia of Networking." Berkeley: Osborne
+McGraw-Hill, 1994.
+
+Additional query words: cat1 cat2 cat3 cat4 cat5
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbZNotKeyword kbTCPIPSearch kbLanManSearch kbWFWSearch kbZNotKeyword3 kbNetworkClientSearch kbWFW311 kbLanMan220c kbNetworkClient300DOS kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : MS-DOS:3.0; WINDOWS:3.11,95; winnt:3.5,3.51; :2.2c,3.11,3.11a,3.11b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

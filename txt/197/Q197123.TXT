@@ -1,0 +1,103 @@
+DOCUMENT:Q197123  18-MAR-2001  [vbwin]
+TITLE   :PRB: Out-Of-Date Dependency Information for MSCal.ocx
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbActiveX kbAppSetup kbCtrl kbVBp600 kbOSWin95 kbOSWin98 kbGrpDSVB kbOSWinME
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you package a Microsoft Visual Basic application with the Package and
+Deployment Wizard (PDW), the following message appears:
+
+   The wizard found dependency information for the listed files, but the
+   information is out of date. To proceed with the out-of-date information,
+   click OK.
+
+This article applies to Visual Basic applications that reference the Microsoft
+Calendar Control (MSCal.ocx).
+
+CAUSE
+=====
+
+The version number for MSCal.ocx is 8.0.0.5007, but the version listed in
+MSCal.dep is 8.0.32.29.
+
+RESOLUTION
+==========
+
+The issue may be resolved by changing the version number in MSCal.dep from
+8.0.32.29 to 8.0.0.5007.
+
+Step-by-Step Procedure
+----------------------
+
+1. Locate the MSCal.dep file. Under Windows NT or Windows 2000, this file is in
+   the \Winnt\System32 directory. Under Windows 95, Windows 98, or Windows Me,
+   this file is in the \Windows\System directory.
+
+2. Open MSCal.dep in a text editor such as Notepad.
+
+3. Scroll down until you see the following:
+
+      [MSCAL.OCX]
+      Dest=$(WinSysPath)
+      Register=$(DLLSelfRegisterEx)
+      Version=8.0.32.29
+      Uses1=
+
+4. Change the line that says "Version=8.0.32.29" to "Version=8.0.0.5007."
+
+In addition to updating the "Version=" setting in MSCal.dep, if the "Register="
+setting is "$(DllSelfRegisterEx)", you must change it to "$(DllSelfRegister)".
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q208699 PRB: Error "$(DllSelfRegisterEx) Could Not Be Registered"
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+You can find MSCal.ocx
+(http://support.microsoft.com/download/support/mslfiles/MSCal.ocx) and MSCal.dep
+in the \Os\System directory on the first disk of Microsoft Visual Studio 6.0.
+
+
+Additional query words: MSCal.ocx
+
+======================================================================
+Keywords          : kbwizard kbActiveX kbAppSetup kbCtrl kbVBp600 kbOSWin95 kbOSWin98 kbGrpDSVB kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,75 @@
+DOCUMENT:Q119645  20-NOV-1999  [pcmail]
+TITLE   :PC Win: SMTP Address Generates a Non-Delivery Report
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Windows client receives a message from the SMTP gateway that contains a
+comma in the comment field of the address in the To: or Cc: field, the address
+is delimited by the comma and a Non-Delivery report is generated. No mail is
+misdirected or lost.
+
+CAUSE
+=====
+
+The Windows client incorrectly uses the comma to delimit the address on the To:
+or Cc: field. For example
+
+   To:<Administrator (comment,comment)>
+
+becomes two addresses resulting in
+
+   To: Admin; Comment)>;
+
+The portion of the address following the comma is treated as a bad address and a
+Non-Delivery report is generated.
+
+RESOLUTION
+==========
+
+The sender should edit the address in the To: or Cc: field and exclude commas in
+addresses.
+
+The address appears correctly in the MS-DOS client until the Mail for Windows
+client accesses the message. To read the message, use the MS-DOS client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of Microsoft Mail
+for PC Networks. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

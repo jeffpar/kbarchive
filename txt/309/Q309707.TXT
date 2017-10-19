@@ -1,0 +1,72 @@
+DOCUMENT:Q309707  10-OCT-2001  [homegame]
+TITLE   :Bicycle Games: Known Game-Play Issues
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bicycle Board Games Version 1.5 
+ - Microsoft Bicycle Card Games Version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article summarizes known game-play issues in the programs listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The following are the known game-play issues in the Microsoft Bicycle Games
+programs listed at the beginning of this article:
+
+ - The character image that represents you is not a computer opponent;
+   therefore, the character does not speak.
+
+ - It is against the rules to speak during the Bridge game. Therefore, the
+   opponents do not talk during this game.
+
+ - When you run Microsoft Windows XP, non-administrator users cannot save games
+   or profiles. If you are an administrator, you can grant a user the required
+   rights by following these steps:
+
+   1. Click Start, click Control Panel, and then click "Users and Passwords".
+
+   2. Select the user to whom you want to grant additional rights, and then
+      click Properties.
+
+   3. Change the user to a Standard User, and then click Apply.
+
+ - These games do not support the Windows XP Fast User Switching feature.
+
+ - On a Microsoft Windows 95 or Microsoft Windows 98-based computer, the scroll
+   wheel on a mouse device cannot be used to scroll the text in Help.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbBicycleCard100 kbBicycleSearch kbBicycleBoard150
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

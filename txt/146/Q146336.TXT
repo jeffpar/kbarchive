@@ -1,0 +1,55 @@
+DOCUMENT:Q146336  08-AUG-2001  [winnt]
+TITLE   :Joystick in Windows NT 4.0 Does Not Work Properly
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.00. 
+ - Microsoft Windows NT Server version 4.00. 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+While you are playing games in Windows NT 4.0, the joystick may randomly lose
+control. It may appear that all buttons on the joystick are being pressed at
+once, causing you to lose control in games.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem has been corrected in the latest U.S. Service Pack for Windows NT
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodnt Game playing Joystick port
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

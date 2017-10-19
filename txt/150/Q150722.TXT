@@ -1,0 +1,58 @@
+DOCUMENT:Q150722  14-OCT-1999  [msnetwork]
+TITLE   :Changing Country During Signup May Download Incorrect Info.
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.0,1.2,1.3,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.0, 1.2, 1.3, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running signup for MSN, The Microsoft Network, if you click
+Settings on the Calling screen and change your country, the information
+downloaded to your computer and the suggested access numbers may not be correct
+for the country you selected.
+
+CAUSE
+=====
+
+Signup uses the country that is specified in Dialing properties before you begin
+signup to determine which information to download and which access numbers to
+suggest.
+
+RESOLUTION
+==========
+
+Do not change the country using Settings on the Calling screen during signup.
+Make sure that your country is correctly set in Dialing properties before you
+run signup.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN120
+Version           : WINDOWS:1.0,1.2,1.3,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

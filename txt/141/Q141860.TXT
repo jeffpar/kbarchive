@@ -1,0 +1,82 @@
+DOCUMENT:Q141860  16-APR-2000  [powerpt]
+TITLE   :PPT: Can't Open Files Created in Foreign Language Version
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:4.0,7.0; :4.0,7.0
+OPER/SYS:
+KEYWORDS:kbinterop kbdta kbconversion
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft Japanese PowerPoint for Japanese Windows 95, version 7.0 
+ - Microsoft Japanese PowerPoint for Japanese Windows, version 4.0 
+ - Microsoft Chinese PowerPoint for Chinese Windows 95, version 7.0 
+ - Microsoft Chinese PowerPoint for Chinese Windows, version 4.0 
+ - Microsoft Korean PowerPoint for Korean Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a presentation created in a Chinese, Japanese, or
+Korean (Far East) version of PowerPoint, you may receive one of the following
+messages:
+
+   Sorry, the file cannot be opened with this version of PowerPoint.
+
+   -or-
+
+   Sorry, this type of file cannot be opened by PowerPoint.
+
+This error occurs when you are using a non-Far East version of PowerPoint 4.0 or
+7.0 to open a presentation created and saved in Far East PowerPoint format.
+
+CAUSE
+=====
+
+The Far East languages use a different character set than non-Far East
+languages. Because Far East languages have many, many characters, Far East
+PowerPoint files must be stored in a double-byte format. The non-Far East
+versions of PowerPoint save their files in a single-byte format.
+
+The non-Far East versions of PowerPoint 7.0 can open the double-byte format, but
+the non-Far East versions of PowerPoint 4.0 cannot.
+
+RESOLUTION
+==========
+
+To open a Far East PowerPoint version 4.0 presentation in non-Far East versions
+of PowerPoint listed at the beginning of this article, you must first save the
+Far East presentation as a non-Far East PowerPoint version 4.0 file.
+
+Non-Far East PowerPoint version 7.0 can open a file saved in Far East PowerPoint
+version 4.0 or 7.0 format; however, you cannot read most of the content.
+
+Additional query words: 4.00 7.00 convert translate corrupt kbconversion oriental kanji eastern far east Asian
+
+======================================================================
+Keywords          : kbinterop kbdta kbconversion 
+Technology        : kbHLangKorean kbHLangJapanese kbHLangChinesePan kbHLangChineseSimp kbHLangChineseTrad kbPowerPtSearch kbPTProdChange kbPowerPt700 kbZNotKeyword2 kbZNotKeyword3 kbPowerPt700Search kbPowerPt400
+Version           : WINDOWS:4.0,7.0; :4.0,7.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

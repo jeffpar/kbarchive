@@ -1,0 +1,138 @@
+DOCUMENT:Q239760  06-AUG-2002  [exchange]
+TITLE   :XADM: How to Recover Organizational Forms
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to recover Organizational Forms. If a backup of a
+public information store database that contains a replica of the Organizational
+Forms Library exists, you can recover forms from this library without restoring
+the database into the production Exchange Server site. It may be useful to do
+this procedure in scenarios where a different forms library has been configured
+after the backup was performed and where restoring the old library may lead to a
+risk of destroying existing forms.
+
+MORE INFORMATION
+================
+
+To recover forms from a public database:
+
+1. Restore the public database to a stand-alone Exchange Server recovery server.
+
+For additional information about how to restore Exchange Server databases to a
+different server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q163713 XADM: Recovering a Single Mailbox from the Online Backup
+
+NOTE: Because you are only interested in the public database for this particular
+recovery, you do not have to restore the private mailbox database.
+
+2. After you start the information store, start the Exchange Administrator
+   program, and then locate the Public Information Store object for the recovery
+   server.
+
+3. Open the properties of the Public Information Store object in the "Public
+   Information Store Properties" dialog box, and then click the Instances tab.
+
+4. Locate the Organizational Forms folder in the Public folders pane, click Add,
+   and then click OK.
+
+5. Click the Public Folder Resources object that is located under the Public
+   Information Store object. In the right pane, verify that the Organizational
+   Forms folder is listed. If the Total K value for the folder is zero (0), a
+   replica of the library is not in this database. You must locate and restore a
+   public database from a server that does have a replica of the library.
+
+6. Open the properties of the <Server Name> object. In the Properties
+   dialog box, click Advanced, and then click Consistency Adjuster.
+
+7. Click to select the "Synchronize with the directory, and reset the home
+   server value for public folders homed in unknown sites" checkbox.
+
+8. To run the Consistency Adjuster, click "All Inconsistencies", and then click
+   OK.
+
+   NOTE: You must run the Consistency Adjuster to generate a directory object
+   that corresponds to the forms library. Without this directory object, you
+   cannot access the properties and permissions for the folder from Exchange
+   Administrator program.
+
+9. Expand the Folders tree, expand System Folders, and then expand EFORMS
+   REGISTRY to display the Forms Library object.
+
+10. Create a mailbox on the server, and then configure a Microsoft Outlook
+   profile for the mailbox.
+
+11. Open the properties of the forms library, and then click Client Permissions.
+   Add the previously created mailbox as an owner of the forms library folder.
+
+   NOTE: If the properties of the forms library are inaccessible because of a
+   "Directory object not found" error, examine the Application event log to see
+   why the Consistency Adjuster did not respond. The most common reason that
+   the Consistency Adjuster does not respond is that the forms library was
+   previously stored in a Recipients container that no longer exists. Create
+   the container and run the Consistency Adjuster again to correct this issue.
+
+12. Start Microsoft Outlook, and then use the profile that you created in step
+   10.
+
+   NOTE: If the forms library is not set for the default language, you may have
+   to install a copy of Outlook to set the appropriate language.
+
+13. Add a Personal Folders (.pst) file to the Outlook profile. Create a folder
+   in the Personal Folders tree and name it "Save Forms".
+
+14. Right-click the Save Forms folder, and then open the folder's properties.
+
+15. On the Forms page, click Manage.
+
+16. If the Organizational Forms Library is not selected for the left pane of the
+   Forms Manager dialog box, click Set. In the Set Library To dialog box,
+   select Organization Forms in the drop-down list, and then click OK.
+
+17. In the Forms Manager dialog box, click Copy to copy each form to the Save
+   Forms folder, click Close, and then click OK.
+
+After you copy the forms to the .pst file, you may open the .pst file in a
+profile that is configured for a forms library owner in the production system.
+You can then use the Manage forms interface on the folder properties to copy the
+forms to the permanent Organizational Forms Library.
+
+You may also want to use Outlook to periodically create a backup to a .pst file
+of all your Organizational Forms.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

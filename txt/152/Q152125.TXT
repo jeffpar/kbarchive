@@ -1,0 +1,42 @@
+DOCUMENT:Q152125  11-AUG-1999  [msnetwork]
+TITLE   :Underscore Treated as Wildcard in Address Book Find Feature
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+The Find feature of the e-mail address book on MSN, The Microsoft Network,
+treats the underscore character as a wildcard character. As a result, the
+Find feature cannot locate member IDs that begin with an underscore.
+
+
+Additional query words: msn 1.20 1.30
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN120
+Version           : WINDOWS:1.2,1.3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

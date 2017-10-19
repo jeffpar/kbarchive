@@ -1,0 +1,68 @@
+DOCUMENT:Q269357  23-AUG-2001  [odbc]
+TITLE   :INFO: INSERT/DELETE/UPDATE behavior in SQL Server ODBC apps
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:kbMDAC kbODBC kbSQLServ kbGrpDSVCDB kbGrpDSMDAC kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for SQL Server, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With the Microsoft ODBC Driver for SQL Server, the SQLExecDirect and SQLExecute
+functions return SQL_NO_DATA_FOUND when no rows are affected by an UPDATE,
+DELETE, or INSERT statement.
+
+MORE INFORMATION
+================
+
+The following are examples of where an UPDATE, DELETE, or INSERT would not
+affect any rows:
+
+   UPDATE pubs..publishers SET pub_id='1232' WHERE 1=2
+
+   INSERT INTO temptable (SELECT * FROM pubs..publishers WHERE 1=2)
+
+In such cases, the return code for SQLExecDirect or SQLExecute would be
+SQL_NO_DATA_FOUND (instead of SQL_SUCCESS). This is in accordance with the ODBC
+specification.
+
+This change was made in the Microsoft ODBC Driver for SQL Server version
+3.50.0305 and later.
+
+If this change affects your application, you can either add functionality in your
+code to process the SQL_NO_DATA_FOUND return code, or you can use the SET
+NOCOUNT ON statement so that the return code will be SQL_SUCCESS. The use of SET
+NOCOUNT ON tells the server not to return the number of rows that are affected
+by the UPDATE, DELETE, or INSERT statement; therefore, the ODBC driver just
+returns SQL_SUCCESS.
+
+Additional query words: SQLSRV32 MSDASQL DRIVER
+
+======================================================================
+Keywords          : kbMDAC kbODBC kbSQLServ kbGrpDSVCDB kbGrpDSMDAC kbDSupport 
+Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbODBCSQLServ350
+Version           : :3.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

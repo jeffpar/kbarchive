@@ -1,0 +1,71 @@
+DOCUMENT:Q197854  14-NOV-2000  [word97]
+TITLE   :WD97: Numeric Switch for Thousand Separator and Dollar Sign
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbfield word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Use the following numeric format switch to format a numeric result with commas
+as thousands separators and the currency symbol (such as $) adjacent to the
+first number:
+
+   {\# $,0.0}
+
+MORE INFORMATION
+================
+
+Examples
+--------
+
+   This field                 Yields this result
+   ---------------------------------------------
+
+   {=3190321 \# $,0.0}        $3,190,321.0
+
+   {=43217 \# $,0.0}          $43,217.0
+
+For more information about numeric picture switches in Word 97, click the Office
+Assistant, type "numeric picture switch" (without the quotation marks), click
+Search, and then click to view the "Apply formatting to information inserted by
+fields" topic.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

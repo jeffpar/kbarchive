@@ -1,0 +1,78 @@
+DOCUMENT:Q175178  07-SEP-2001  [homemm]
+TITLE   :Bookshelf: Images Are Printed Incorrectly on Dot-Matrix Printers
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+ - Microsoft Bookshelf 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print an image from Microsoft Bookshelf to a dot-matrix printer, the
+image may be printed at between 50 and 75 percent of its original size.
+
+This problem does not occur with inkjet or laser printers.
+
+RESOLUTION
+==========
+
+To work around this problem, copy and then paste the image into a graphics
+program such as Paint, and then print the image from this program.
+
+For more information about copying and pasting, please see Bookshelf online Help.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem has been reported with the following printers:
+
+ - Brother M-1809
+ - Brother M-1924L
+ - Citizen 200GX
+ - Epson LQ-860
+ - Epson LQ-1170 ESC/P 2
+ - IBM Proprinter XL
+ - Okidata ML 393C
+ - Panasonic KX-P1180
+ - Panasonic KX-P1624
+ - Panasonic KX-P2180
+ - Star NX-2420 Rainbow
+
+
+Additional query words: multi multi-media media mm kbimu
+
+======================================================================
+Keywords          : kb3rdparty kbprint kbimu kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998 kbBookShelf1999
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q193599  09-AUG-2001  [winnt]
+TITLE   :Windows NT Load Balancing Service Cluster Fails to Converge
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Load Balancing Service 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you start the cluster hosts, the hosts start converging but never report
+that convergence has completed.
+
+CAUSE
+=====
+
+Either a different number of port rules or incompatible port rules on different
+cluster hosts were entered. This will inhibit convergence.
+
+-or-
+
+Two or more Windows NT Load Balancing Service (WLBS) hosts have the same priority
+number.
+
+RESOLUTION
+==========
+
+To work around this problem, run the WLBS Setup dialog box on each cluster host
+and verify that all hosts have identical port rules and that no two hosts have
+the same priority number.
+
+Additional query words: Convoy WLBS
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTLBSSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

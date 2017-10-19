@@ -1,0 +1,53 @@
+DOCUMENT:Q159519  09-NOV-2001  [homemm]
+TITLE   :World Atlas 97: Unable to Annotate Pushpin with Long Note
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 World Atlas for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In World Atlas, you cannot attach a long note to a Pushpin. The only available
+options for annotating Pushpins are Name Only and Balloon For Short Note.
+
+MORE INFORMATION
+================
+
+The Encarta World Atlas Help file incorrectly states that you can "Annotate your
+Pushpin with a short or long note."
+
+Although you can annotate Pushpins that you create in Microsoft Automap Streets
+Plus or Microsoft Automap Trip Planner with long notes, this behavior is not
+available in Pushpins created in Encarta World Atlas.
+
+Additional query words: multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

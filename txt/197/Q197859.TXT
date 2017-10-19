@@ -1,0 +1,62 @@
+DOCUMENT:Q197859  15-MAR-1999  [winnt]
+TITLE   :Server Roles in a Small Business Server Domain
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0a
+OPER/SYS:
+KEYWORDS:kbnetwork sbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+A backup domain controller (BDC) or standalone server can be added to the Small
+Business Server (SBS) domain. Because there can only be one computer running SBS
+on the network, any other servers added must run Windows NT Server.
+
+MORE INFORMATION
+================
+
+The applications from the SBS server cannot be installed on the Windows NT
+Server computer.
+
+If the SBS server goes down for any reason, the BDC will only be able to validate
+users logging on to the domain. Because the SBS applications cannot be installed
+on the BDC or standalone server, they will not be accessible should the primary
+domain controller (PDC) ever not be available.
+
+REFERENCES
+==========
+
+For more information, see the Start Here Guide that accompanies the installation
+software, Appendix B, Page 137.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbnetwork sbs 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : winnt:4.0,4.0a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

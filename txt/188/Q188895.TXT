@@ -1,0 +1,65 @@
+DOCUMENT:Q188895  03-SEP-1999  [iis]
+TITLE   :How to Turn Off IUSR_machinename Token Caching
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To make security debugging easier, you may want to disable caching of the
+anonymous user account in Internet Information Server version 4.0.
+
+MORE INFORMATION
+================
+
+You can do this by setting the PasswordCacheTTL property to zero (0). By
+default, Internet Information Server will cache the anonymous user account for
+10 minutes. To change the PasswordCacheTTL value to zero (0), type the following
+at the command line:
+
+   adsutil set w3svc/1/PasswordCacheTTL "0"
+
+The following sample code can be called from Visual Basic, ASP, and Windows
+Script Host with minimal changes in each environment:
+
+      Dim oServer
+      Set oServer = GetObject("IIS://LocalHost/W3SVC")
+      oServer.PasswordCacheTTL = 0
+      oServer.SetInfo
+      Set oServer = Nothing
+
+Please note: This procedure affects all Web server instances and decreases server
+performance; it is intended for debugging purposes only.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

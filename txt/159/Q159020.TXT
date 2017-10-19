@@ -1,0 +1,65 @@
+DOCUMENT:Q159020  31-JAN-2001  [win95x]
+TITLE   :Reinstalling OSR2 Removes Language Indicator on Taskbar
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have two or more languages installed for the keyboard, the language icon
+may no longer appear on the taskbar after you reinstall Windows 95.
+
+RESOLUTION
+==========
+
+To reactivate the language icon, follow these steps:
+
+1. In Control Panel, double click Keyboard.
+
+2. Click the Enable Indicator On Taskbar check box to select it.
+
+3. Click OK.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Even though the language indicator does not appear on the taskbar, you can still
+switch languages by pressing ALT+SHIFT.
+
+Additional query words: 95 system tray
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

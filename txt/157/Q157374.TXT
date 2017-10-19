@@ -1,0 +1,67 @@
+DOCUMENT:Q157374  08-NOV-2001  [homegame]
+TITLE   :Soccer: System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Soccer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the system requirements to play Microsoft Soccer:
+
+ - A 486/66 MHz computer or higher processor (Pentium 75 or higher recommended)
+
+ - Microsoft Windows 95/98
+
+ - A 2X CD-ROM drive or faster
+
+ - 8 MB of memory (RAM) (12+ MB recommended)
+
+ - 256-color Super VGA display with 1 MB VRAM; 2 MB recommended
+
+ - 20 MB of available hard disk space (60 MB recommended)
+
+ - A sound board plus speakers or headphones to hear audio
+
+ - A Microsoft Mouse or compatible pointing device; joystick or game pad
+   recommended
+
+ - For modem play: a Hayes-compatible modem; 9600 baud minimum; 14,400 or higher
+   recommended
+
+ - For network play: a Windows-compatible network card
+
+NOTE: Soccer requires Microsoft Windows 95/98. To purchase a Windows upgrade, see
+your local retailer.
+
+Additional query words: 1.00 football soccer needed computer settings machinie
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbSoccer
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

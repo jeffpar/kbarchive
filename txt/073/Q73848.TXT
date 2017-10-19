@@ -1,0 +1,67 @@
+DOCUMENT:Q73848  08-JAN-2000  [win95x]
+TITLE   :Time/Date Stamp Workaround for Notepad
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The time/date stamp in Windows Notepad does not display the time on the
+document.
+
+WORKAROUND
+==========
+
+To get the time and date to appear on the document:
+
+1. From the File menu, choose Page Setup.
+
+2. In the header or footer section, whichever you would like to use, enter the
+   following:
+
+   " &d, &t " (without the quotation marks)
+
+This prints the system date followed by a comma, a space, and then the system
+time. (This information does not appear on the screen.)
+
+This is a temporary workaround that functions only as long as Notepad is active
+(minimized, in a window, or in full-screen mode). Once Notepad is closed, the
+header defaults back to "&f" and the footer defaults back to "Page &p".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows versions 3.0 and 3.0a.
+This problem does not occur in later versions of Windows.
+
+Additional query words: *time&date date stamp win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

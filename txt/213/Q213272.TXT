@@ -1,0 +1,59 @@
+DOCUMENT:Q213272  25-NOV-1999  [sms]
+TITLE   :SMS: Class Rights in User Manager Are Not Added to Groups
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbMMC kbSecurity kbsms200 kbsms200bug kbsmsAdmin kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure security rights for a user class using the Systems Management
+Server 2.0 console tree, the account is not added to the Systems Management
+Server Administrators group in the User Manager for Domains tool.
+
+WORKAROUND
+==========
+
+To work around this issue, add a user to the Administrators group using the
+Security wizard. To automate this procedure, use the Systems Management Server
+User Wizard to assign class rights to users. The User Wizard adds the user to
+the Systems Management Server Administrators group.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms smsfaqtop
+
+======================================================================
+Keywords          : kbMMC kbSecurity kbsms200 kbsms200bug kbsmsAdmin kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

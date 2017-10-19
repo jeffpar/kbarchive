@@ -1,0 +1,50 @@
+DOCUMENT:Q243384  22-OCT-1999  [sna]
+TITLE   :SNA LU3 Printing Does Not Support 3270 Some Data Stream Orders
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11 (all versions), 3.0 (all SP), 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNA LU3 printing does not support the following 3270 data stream orders:
+
+    - Start Field Extended (SFE, X'29')
+
+ - Set Attribute (SA, X'28")
+
+ - Modify Field (MF, X'2C')
+
+The Start Field (SF, X'1D') order is converted to a blank (X'40').
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q110529  05-FEB-2000  [foxpro]
+TITLE   :PRB: FoxPro for Mac Doesn't Unload Library Before Reloading It
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Unlike in FoxPro for MS-DOS or FoxPro for Windows, a library (.MLB) can be
+loaded multiple times in FoxPro for Macintosh. For example, if you issue the
+following commands in the Command window
+
+      SET LIBRARY TO foxtools
+      SET LIBRARY TO foxtools ADDITIVE
+      ? SET("LIBRARY")
+
+"FOXTOOLS.MLB, FOXTOOLS.MLB" will be returned.
+
+The DISPLAY STATUS command will now show two instances of FoxTools loaded and
+will not unload the first instance before loading the second.
+
+In FoxPro for MS-DOS or FoxPro for Windows, the first instance of the library
+would be unloaded and the second instance would be loaded.
+
+RESOLUTION
+==========
+
+Before reloading the library, use the RELEASE LIBRARY command to unload the
+library first. For example, issue the following command before reloading the
+FoxTools library:
+
+      RELEASE LIBRARY foxtools
+
+Additional query words: vFoxMac FoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

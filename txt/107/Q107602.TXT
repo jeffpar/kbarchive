@@ -1,0 +1,87 @@
+DOCUMENT:Q107602  21-NOV-1999  [msdos]
+TITLE   :MS-DOS 6.2 Stacker Conversion Err Msg: Out of Memory
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you start the Stacker conversion process and DoubleSpace reboots your
+computer, you may receive the following error message:
+
+   AN ERROR OCCURRED while attempting to convert Stacker volume c:\stacvol.dsk
+   to DoubleSpace format. There is not enough conventional memory.
+
+CAUSE
+=====
+
+This problem occurs when DoubleSpace reboots your computer and there is
+insufficient memory to convert your Stacker volume file (SVF) to a DoubleSpace
+compressed volume file (CVF) due to the size of your SVF.
+
+RESOLUTION
+==========
+
+You can work around this problem by using the following procedure:
+
+NOTE: Reboot your computer and try to run the Stacker conversion routine after
+each step.
+
+1. Place DBLSPACE.SYS in a parallel directory on the host drive. For example, if
+   C:\DOS contains your MS-DOS files, and your host drive is D, type "xcopy
+   c:\dos\dblspace.sys d:\dos\" (without the quotation marks) at the MS-DOS
+   command prompt and then press ENTER.
+
+2. Edit the CONFIG.SYS file and ensure the DEVICE commands for HIMEM.SYS and, if
+   present, EMM386.EXE are placed before the first DEVICE=C:\DOS\DBLSPACE.SYS
+   line.
+
+3. Edit the CONFIG.SYS and AUTOEXEC.BAT files and remark out unneeded device
+   drivers and terminate-and-stay-resident (TSR) programs using the REM command.
+
+4. Defragment the host drive for the Stacker-compressed drive. To do this:
+
+   a. Copy ATTRIB.EXE to the host drive.
+
+   b. Copy DEFRAG.EXE to the host drive.
+
+   c. Unmount the Stacker-compressed drive.
+
+   d. Clear the file attributes on the SVF. For example, type "attrib -r -s -h
+      stacvol.*" (without the quotation marks) at the MS-DOS command prompt and
+      then press ENTER.
+
+   e. Run DEFRAG /H <host drive> to fully defragment the Stacker host
+      drive.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch
+Version           : MS-DOS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

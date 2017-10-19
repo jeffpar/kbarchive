@@ -1,0 +1,91 @@
+DOCUMENT:Q139440  07-DEC-2001  [homemm]
+TITLE   :Poor Full-Motion Video with Some S3 Video Drivers
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 500 Nations, version 1.0 
+ - Microsoft Ancient Lands for Windows, version 1.0 
+ - Microsoft Bookshelf 1996-97 for Windows 
+ - Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+ - Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+ - Microsoft Complete Baseball Guide for Windows, 1995 edition 
+ - Microsoft Complete NBA Basketball for Windows, 1994-1995, 1995-1996 editions 
+ - Microsoft Dangerous Creatures for Windows, version 1.0 
+ - Microsoft Dinosaurs for Windows, version 1.0 
+ - Microsoft Dogs for Windows, version 1.0 
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft The Ultimate Frank Lloyd Wright for Windows, version 1.0 
+ - Microsoft Wine Guide for Windows, versions 1.0, 1.0a 
+ - Microsoft World of Flight for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience poor Audio Video Interleave (.avi), full-motion video
+performance with the S3flat.drv video driver. Pictures and images may be
+difficult to distinguish and the overall video image quality may be poor.
+
+This issue can occur if you are using the driver version 3.10.061 (dated
+11/17/93) and the Windows display resolution set to 1024 X 768 in 64K- color
+mode.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, use a lower display resolution and a lower color depth
+setting.
+
+For example, if you use a 640x480 resolution setting and 256 colors, the videos
+are shown correctly. This problem does not occur on computers that are using the
+Microsoft Windows 95/98 S3 video drivers.
+
+For information about changing video display settings in Windows, see your
+Windows printed documentation or online Help.
+
+MORE INFORMATION
+================
+
+The S3flat.drv video driver can be used on video cards manufactured with the S3
+video 801, 805 or 928 chipset.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: clips blurry layered movies videos multi media multimedia multi-media mmtitles kbmm degradation dithered blotchy smeared kbimu
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbKidsSearch kbBookshelfSearch kbBaseballSearch kbEncartaEncycSearch kbCineManiaSearch kbAncientLands kbCompleteBaseballSearch kbCompleteBasketballSearch kb500Nations100 kbBookShelf1996 kbBookShelf1997 kbCompleteBaseball1995 kbDangerousCreatures kbDinosaurs100 kbDogs100 kbJuliaChild kbUltimateFLW kbWine100 kbWine100a kbWorldofFlight kbCompleteNBABasketball1994 kbEncarta1995 kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbEncartaEnCyc1994 kbOceans
+Version           : WINDOWS:1.0,1.0a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

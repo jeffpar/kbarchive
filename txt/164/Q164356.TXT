@@ -1,0 +1,65 @@
+DOCUMENT:Q164356  24-MAY-2001  [homemm]
+TITLE   :Mac Encarta 97: Computer Does Not Wake Up From Sleep Mode
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If try to use the Sleep feature on a computer running Mac OS when Encarta is the
+active application, you may not be able to wake the computer back up without
+restarting it.
+
+
+WORKAROUND
+==========
+
+To work around this problems, switch to the finder before you try to use to
+Sleep mode.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Encarta 97 Encyclopedia. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Not all computers that run the Mac OS support Sleep mode. If you do not have the
+option, Sleep, under the Special menu, your computer probably does not support
+the Sleep mode.
+
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm snooze black screen off macmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1997Mac
+Version           : :1997 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

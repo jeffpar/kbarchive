@@ -1,0 +1,62 @@
+DOCUMENT:Q157883  01-MAY-2001  [ssafe]
+TITLE   :How Can I Get VSS and Visual InterDev Integration Working?
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:1.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbinterop kbSSafe500 kbSSafe600 kbVisID100 kbVisID600 _IKkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual InterDev, versions 1.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Q. How can I get VSS and Visual InterDev integration working?
+
+A. Visual InterDev uses FrontPage Server Extensions to integrate with Visual
+SourceSafe through OLE Automation. It is important to note that the Visual
+InterDev client does not need a Visual SourceSafe client for integration to
+work. However, the web server does need to have the Visual SourceSafe and
+FrontPage Server Extensions installed for the integration to work. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q171116 HOWTO: Enable VSS Integration with FrontPage and Visual InterDev
+
+   Q166259 INFO: Visual InterDev/Visual SourceSafe Integration Discussion
+
+   Q165831 PRB: Anonymous User in NT Admin Group Breaks Source Control
+
+MORE INFORMATION
+================
+
+ 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbSSafe500 kbSSafe600 kbVisID100 kbVisID600 _IK kbfaq
+Technology        : kbVisIDsearch kbSSafeSearch kbAudDeveloper kbVisID100 kbVisID600 kbSSafe600 kbSSafe500
+Version           : WINDOWS:1.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q113204  11-DEC-1999  [homemm]
+TITLE   :Scenes 1.0: Unrecognized Error. Please Reinstall Scenes
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the screen saver is scheduled to start, one of the following errors is
+displayed on the screen:
+
+   Unrecognized Error. Please reinstall Scenes.
+
+   -or-
+
+   Unrecognized Error. Please exit and start Scenes again.
+
+CAUSE
+=====
+
+This error occurs if Scenes is not installed and the Desktop section of Control
+Panel is set up to run Scenes as the screen saver. If you try to uninstall
+Scenes by deleting the Scenes directory, it does not delete the necessary files
+to keep Scenes from appearing in the Desktop dialog box.
+
+
+RESOLUTION
+==========
+
+The following steps correct this problem:
+
+1. In Control Panel, choose the Desktop icon.
+
+2. In the screen saver section, select None or a valid screen saver setting,
+   then choose OK.
+
+3. Quit Windows.
+
+4. Change to the Windows directory.
+
+5. Delete the file SSMSSCNS.SCR. This step removes the Scenes option from the
+   Desktop screen saver choices.
+
+MORE INFORMATION
+================
+
+For more information uninstalling Microsoft Scenes, query on the following words
+in the Microsoft Knowledge Base:
+
+   "uninstall and scenes" (without the quotation marks)
+
+Additional query words: errmsg msscenes remove screen saver screensaver
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

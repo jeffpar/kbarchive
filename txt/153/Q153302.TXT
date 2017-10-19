@@ -1,0 +1,57 @@
+DOCUMENT:Q153302  31-JUL-2001  [sms]
+TITLE   :Error Reading Site Control File from Parent Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbSCMan smssiteconfigman
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+If a secondary site installation is initiated at the same time the site is set to
+report up to a parent site, the secondary site will appear to be under
+construction at both the child and parent sites. However, when the secondary
+site installation completes and reports status to the child site, the parent
+site never receives the updated status for the secondary site installation at
+the child site. Instead, the SMS Administrator will report an error reading the
+site control file if you attempt to look at the secondary site properties from
+the parent site's SMS Administrator.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbSCMan smssiteconfigman 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

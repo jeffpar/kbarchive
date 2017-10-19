@@ -1,0 +1,81 @@
+DOCUMENT:Q224083  10-AUG-2001  [winnt]
+TITLE   :Err Msg: Event ID 7022: The Messenger Service Hung on Starting
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer, you may receive the following error message:
+
+   Service Control Manager indicates that at least one service or driver failed
+   to start - check the Event Viewer for details.
+
+When this occurs, the following entry may be logged in the System log in Event
+Viewer:
+
+   Event ID 7022
+   The Messenger service hung on starting.
+
+CAUSE
+=====
+
+This behavior can occur if a file that is associated with the NetBIOS interface
+is missing or has become corrupted.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Networking.
+
+2. Click the Services tab.
+
+3. Uninstall the NetBIOS interface.
+
+4. Reboot your computer.
+
+5. Click Start, point to Settings, click Control Panel, and then double-click
+   Networking.
+
+6. Install the NetBIOS interface.
+
+7. Restart your computer.
+
+8. Reapply your current service pack (if any).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

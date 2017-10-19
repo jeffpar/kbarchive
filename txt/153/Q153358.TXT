@@ -1,0 +1,67 @@
+DOCUMENT:Q153358  16-DEC-1999  [homemm]
+TITLE   :Wine Guide: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Wine Guide for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article lists the minimum system requirements to run Microsoft
+Wine Guide for Windows, versions 1.0 and 1.0a.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Wine Guide are:
+
+ - A Multimedia PC or compatible with a 386SX or higher processor.
+
+ - MS-DOS operating system version 5.0 or later.
+
+ - Microsoft Windows operating system version 3.1 or later, OR Windows 95.
+
+ - CD-ROM drive.
+
+ - 4 MB of RAM.
+
+ - 2 MB of available hard disk space.
+
+ - Super VGA, 256-color monitor.
+
+ - Windows-compatible sound card.
+
+ - Speakers or headphones.
+
+ - Microsoft Mouse or compatible pointing device.
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm requires cd cdrom compact disc wine
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbWine100 kbWine100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

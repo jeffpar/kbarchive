@@ -1,0 +1,81 @@
+DOCUMENT:Q85981  30-OCT-1999  [win95x]
+TITLE   :Sound Device Error Using After Dark Version 2.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using After Dark version 2.0 by Berkeley Systems Inc. with Microsoft
+Windows operating system version 3.1, or Windows 3.0 with Multimedia Extensions,
+the following error may occur:
+
+   The sound device cannot be used, because the driver cannot be used with
+   Multimedia Extensions installed.
+   Select another device.
+
+To correct the error, configure the Sound Blaster card as a Multimedia Windows
+sound device.
+
+MORE INFORMATION
+================
+
+The above error occurs when the "Sound Blaster Card" is selected as the output
+device in the After Dark setup, even if a Sound Blaster card is installed on the
+machine. In order to use a Sound Blaster card with After Dark 2.0 and Windows,
+set up the Sound Blaster card as a "Multimedia Windows Sound Device."
+
+To set up the Sound Blaster card as a Multimedia Windows sounds device, do the
+following:
+
+1. Start After Dark.
+
+2. Choose the Setup button.
+
+3. Choose the Sound button.
+
+4. Click on the DOWN ARROW beside the Output Device option.
+
+   The following options are available:
+
+   Multimedia Windows Sound Device
+   PC Internal Speaker
+   Sound Blaster Card
+
+5. Select the option for "Multimedia Windows Sound Device."
+
+The products included here, Sound Blaster and After Dark, are manufactured by
+vendors independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+Additional query words: 3.10 soundblaster pro screen saver screensaver after dark 3rdParty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310
+Version           : WINDOWS:3.0,3.0a,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

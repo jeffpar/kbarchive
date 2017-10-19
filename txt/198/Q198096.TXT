@@ -1,0 +1,87 @@
+DOCUMENT:Q198096  14-NOV-2000  [word97]
+TITLE   :WD97: Grammatical Errors Not Found in Headers, Footers, Comments
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbproof word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Grammatical errors in the header, footer, or comment area of a Word document are
+not detected.
+
+CAUSE
+=====
+
+Word does not check grammar in a header, footer, or comment.
+
+
+WORKAROUND
+==========
+
+To work around this problem, follow these steps:
+
+1. Select the text you want to check.
+
+2. On the Edit menu, click Cut.
+
+3. Close the header, footer, or comment.
+
+4. In the main body of the document, create a new paragraph.
+
+5. On the Edit menu, click Paste.
+
+6. Word now flags the errors for correction.
+
+7. After you have accepted or rejected any suggested corrections, select the
+   text.
+
+8. On the Edit menu, click Cut.
+
+9. Position the insertion point in the header, footer, or comment at the
+   location where you want to place the corrected text.
+
+10. On the Edit menu, click Paste.
+
+For more information about correcting spelling and grammar, click the Office
+Assistant, type "Correct spelling and grammar" (without the quotation marks),
+click Search, and then click to view "Correct spelling and grammar".
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words:
+
+======================================================================
+Keywords          : kbproof word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

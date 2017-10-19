@@ -1,0 +1,65 @@
+DOCUMENT:Q173610  13-OCT-1999  [msnetwork]
+TITLE   :Fonts Appear Too Large in MSN Program Viewer
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5
+OPER/SYS:
+KEYWORDS:kbenv kbui kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are connected to MSN, The Microsoft Network, on a computer using an S3
+Trio64V+ PCI video card, the fonts in Program Viewer may appear too large and
+some content may not be displayed properly.
+
+RESOLUTION
+==========
+
+To work around this issue, scale the fonts down to a reduced size. To do so, use
+the following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Font Size box, click Custom.
+
+5. Drag the Sample ruler to the left until the value in the "Scale fonts to be
+   <n>% of normal size" box is 70%.
+
+6. Click OK until you return to Windows.
+
+7. When you are prompted to restart the computer, click Yes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbui kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

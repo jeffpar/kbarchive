@@ -1,0 +1,68 @@
+DOCUMENT:Q163507  09-AUG-2001  [winnt]
+TITLE   :Trap 0x00000024 Occurs During the Autochk Sequence at Boot
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot boot with the removable media in a drive.
+
+CAUSE
+=====
+
+This problem occurs because an I/O Request Packet (IRP) is stuck in the
+Driver\Disk, causing disk corruption. The Class2.sys file relies on the I/O
+system to complete its synchronous requests. These requests may never finish if
+Asynchronous Procedure Calls (APCs) are blocked. This will only occur when
+removable media is present during the boot process.
+
+RESOLUTION
+==========
+
+Install the new Class2.sys driver, which no longer relies on the I/O system to
+complete its synchronous requests.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This has
+been corrected in the latest U.S. Service Pack for Windows NT version 4.0. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt removable media
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

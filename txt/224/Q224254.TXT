@@ -1,0 +1,71 @@
+DOCUMENT:Q224254  27-JUL-2001  [automap]
+TITLE   :S&T 2000: "Construction Out of Date" Message Remains on Screen
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the following message
+
+   Road construction information is out of date. Click this line to update.
+
+on the Directions tab in Microsoft Expedia Streets and Trips 2000, the message
+may remain on the screen after the download is complete.
+
+CAUSE
+=====
+
+This behavior can occur if you have not loaded a route when you download the
+construction information file.
+
+RESOLUTION
+==========
+
+To resolve this issue, do one of the following:
+
+ - Plan and calculate a new route.
+
+ - Open a saved route.
+
+ - Quit and then restart the program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Expedia Streets and
+Trips 2000.
+
+Additional query words: multi multi-media media mm auto-map amap
+
+======================================================================
+Keywords          : kbui kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

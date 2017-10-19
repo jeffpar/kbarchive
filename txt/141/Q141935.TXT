@@ -1,0 +1,53 @@
+DOCUMENT:Q141935  17-DEC-1999  [homemm]
+TITLE   :Scenes: Rainbow Pattern On Tycho's Supernova Picture
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes for Windows, Outer Space, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Outer Space Scenes Collection, the Tycho's Supernova (19ps105.jpg)
+picture has a vertical rainbow pattern running down the right side. The pattern
+is also visible on the thumbnail in the Choose Wallpaper window.
+
+MORE INFORMATION
+================
+
+The vertical rainbow pattern is supposed to be there. The pattern is part of the
+original source picture obtained from Photo Researchers, Inc.
+
+The same picture was used in both the Scenes 1.0 Outer Space Collection as well
+as the Scenes 2.0 Outer Space Collection. The Scenes 2.0 Outer Space Collection
+was bundled with Microsoft Office 4.2 and never available as a retail product.
+
+Additional query words: 1.00 2.00 colors colour colours garbage msscenes screen saver screensaver star
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes100 kbScenes200
+Version           : :1.0,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

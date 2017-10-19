@@ -1,0 +1,61 @@
+DOCUMENT:Q163970  09-AUG-2001  [winnt]
+TITLE   :DNS Sample File Place.dns Contains an Error
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install DNS, a SAMPLES subdirectory is created under the
+\%systemroot%\system32\DNS directory.
+
+This subdirectory contains a sample Zone file called Place.dns. This file has an
+error in one of the values included in the example Start Of Authority (SOA)
+resource record.
+
+MORE INFORMATION
+================
+
+The Place.dns file contains the following SOA example:
+
+@   IN  SOA     nameserver.place.dom.  postmaster.nameserver.place.dom. (
+                               1            ; serial number
+                               36000        ; refresh   [1h]
+                               600          ; retry     [10m]
+                               86400        ; expire    [1d]
+                               3600 )       ; min TTL   [1h]
+
+The value shown for Refresh is 36000. The comment shows this as [1h], or one
+hour. However, the value should actually read 3600, which is the correct amount
+of seconds in one hour (this is also the default setting for this value).
+
+Additional query words: prodnt wisconsin docerr domain name system
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,61 @@
+DOCUMENT:Q303233  02-JUL-2001  [msnetwork]
+TITLE   :"Unread" And "Unfinished" Statuses Do Not Appear in Bulk Mail an
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You start Inspect (an accessibility program), start MSN Explorer, and then sign
+in to MSN Explorer. If the list of e-mail folders is set to appears, you click
+the Hide Folders button. You press TAB repeatedly until the Bulk Mail link at
+the bottom of the screen is selected. The name of this link is exposed to
+Inspect as "Go to the Bulk Mail folder" instead of "Bulk Mail #unread: select to
+go to the Bulk Mail folder". You press the TAB key again to select the Drafts
+link. The name exposed to Inspect is "Go to the Drafts folder" instead of
+"Drafts #unfinished: Select to go to the drafts folder."
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+To see the number of unread messages in the Bulk Mail folder, or the number of
+unfinished messages in the Drafts folder, visit the relevant links by pressing
+the Enter. This will allow you to view the contents of each folder.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

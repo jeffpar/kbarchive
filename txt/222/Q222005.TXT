@@ -1,0 +1,81 @@
+DOCUMENT:Q222005  12-FEB-2002  [visualc]
+TITLE   :BUG: LNK2001 When Building Applications for MIPS Palm-size PC Th
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbMFC kbHWMIPS kbVC600bug kbGrpDSVCCompiler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++ 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Building a MIPS-based Palm-size PC application that uses floating-point
+comparisons may generate errors similar to the following:
+
+   project.obj : error LNK2001: unresolved external symbol __ltd
+   project.obj : error LNK2001: unresolved external symbol __gtd
+   project.obj : error LNK2001: unresolved external symbol __eqd
+
+CAUSE
+=====
+
+The new version of the MIPS compiler for the Palm-size PC incorrectly makes
+calls to floating-point comparison functions in later versions of the Windows CE
+C run time.
+
+RESOLUTION
+==========
+
+Use the /QMOC switch to call the earlier versions of the Windows CE
+floating-point comparison functions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code fragment generates the errors listed in the SYMPTOMS section:
+
+       double  a, b;
+
+       if ( a < b ) return -1;
+       if ( a > b ) return 1;
+       if ( a==b ) return 0;
+
+Additional query words: kbWinCE201
+
+======================================================================
+Keywords          : kbCompiler kbMFC kbHWMIPS kbVC600bug kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCETK600VC
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

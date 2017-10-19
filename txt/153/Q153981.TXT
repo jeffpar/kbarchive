@@ -1,0 +1,72 @@
+DOCUMENT:Q153981  09-AUG-2001  [win95x]
+TITLE   :Error Message: Windows Cannot Find Autorun.exe
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are viewing drives in My Computer, one or more of the drives may have
+an incorrect icon associated with it. When you double-click the icon to view the
+contents of the drive, the following error message may be displayed:
+
+   Program Not Found
+   Windows cannot find Autorun.exe.
+   This program is needed for opening files of type 'File'.
+
+You are then prompted for the location of the Autorun.exe file.
+
+CAUSE
+=====
+
+An Autorun.inf file exists in the root folder of the drive.
+
+RESOLUTION
+==========
+
+Delete or rename the Autorun.inf file in the root folder of the affected drive.
+
+MORE INFORMATION
+================
+
+The Autorun.inf file is used with CD-ROMs to automatically run specified
+programs. When a non-CD-ROM drive contains an Autorun.inf file, AutoPlay is
+started when you double-click the drive's icon. AutoPlay attempts to load
+Autorun.exe (which is not present) to read the Autorun.inf file.
+
+If the Autorun.exe file is also present in the root folder, the actions specified
+in the Autorun.inf file are carried out if possible.
+
+Additional query words: autoplay.exe
+
+======================================================================
+Keywords          : kberrmsg kbtool win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : Win2000:95; winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

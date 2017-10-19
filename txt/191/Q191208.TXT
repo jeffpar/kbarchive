@@ -1,0 +1,58 @@
+DOCUMENT:Q191208  10-AUG-2001  [winnt]
+TITLE   :DOCERR: Manage Documents Security Permission & Printer Actions
+PRODUCT :Microsoft Windows NT
+PROD/VER:Windows:4.0,4.0a;WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.0 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT Server 4.0 Concepts and Planning documentation details how
+assigning the Manage Documents security permission to a user for an individual
+printer allows that user to manage all print jobs aimed at that printer,
+regardless of who actually owns or created the particular print job.
+
+This is incorrect. Manage Documents only allows the user who submitted the print
+job to change of the status of that print job. Users who only have the Manage
+Documents security permission will receive an "Access Denied" error message if
+they attempt to change the status of a print job that they do not own.
+
+A user must have the Full Control permission on the printer to allow management
+of all print jobs aimed at that printer, regardless of owner/creator.
+
+Additional query words: pause resume restart cancel smallbiz
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbBackOfficeSearch kbSBServSearch kbBackOfficeServ400 kbSBServ400 kbSBServ400a
+Version           : Windows:4.0,4.0a;WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

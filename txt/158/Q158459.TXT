@@ -1,0 +1,68 @@
+DOCUMENT:Q158459  10-AUG-2001  [winnt]
+TITLE   :One Drive's Directory List Is Replaced by That of Another
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The directory listing of a particular drive is replaced by the directory listing
+of a floppy disk drive.
+
+WORKAROUND
+==========
+
+To work around this problem, wait for the windows to refresh or use the
+drop-down box to select the desired drive.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Place a disk with files on it in drive A.
+
+2. On the View menu, click Options, then choose Single Windows mode.
+
+3. Open drive C and place it at the top of the screen. Consider this instance 1.
+
+4. Below instance 1, open a second instance of My Computer. Consider this
+   instance 2.
+
+5. Double-click the drive A icon (instance 2).
+
+6. Before instance 2 finishes its refresh, touch the windows of instance 1
+   (either on the title bar or somewhere inside; the important thing is making
+   instance 1 active).
+
+The contents of drive A are now applied to the active window, which was drive C.
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

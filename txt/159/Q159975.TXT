@@ -1,0 +1,144 @@
+DOCUMENT:Q159975  11-JAN-2001  [vbwin]
+TITLE   :BUG: FileCopy Does Not Reset Err if Floppy is Write-Protected
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:4.00 | 4.00
+OPER/SYS:
+KEYWORDS:kbnokeywordkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Err object is not reset after you try to copy a file to a write- protected
+floppy disk and the FileCopy command fails with a "Permission Denied" error.
+This makes it impossible to copy the file again, even after you remove the
+write-protection on the floppy disk.
+
+WORKAROUND
+==========
+
+The Kill command is not affected in this way and can be carried out before the
+FileCopy command. This enables the Kill command to detect the "Permission
+Denied" error first and allows you to remove the write- protection on the floppy
+disk before you carry out the FileCopy command. Do the following:
+
+      Private Sub Command1_Click()
+      Dim source As String
+      Dim target As String
+
+         On Error GoTo err_handler
+
+         source = "c:\test.txt"
+
+         Open source For Output As #1
+         Write #1, "This is a test."
+         Close #1
+
+         target = "a:\test.txt"
+
+         If Dir(target) <> "" Then Kill target
+         FileCopy source, target
+
+      Exit Sub
+      err_handler:
+
+         If Err.Number = 70 Then
+             MsgBox "Permission denied. Please remove write-protection."
+             Resume
+         ElseIf Err.Number = 71 Then
+             MsgBox "Disk not ready. Please insert a disk."
+             Resume
+         End If
+
+      End Sub
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this issue and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Place a CommandButton, Command1, on Form1.
+
+3. Place the following code in the Command1_Click event:
+
+      Private Sub Command1_Click()
+      Dim source As String
+      Dim target As String
+
+         On Error GoTo err_handler
+
+         source = "c:\test.txt"
+
+         Open source For Output As #1
+         Write #1, "This is a test."
+         Close #1
+
+         target = "a:\test.txt"
+
+         FileCopy source, target
+
+      Exit Sub
+      err_handler:
+
+         If Err.Number = 70 Then
+             MsgBox "Permission denied. Please remove write-protection."
+             Resume
+         ElseIf Err.Number = 71 Then
+             MsgBox "Disk not ready. Please insert a disk."
+             Resume
+         End If
+
+      End Sub
+
+4. Run the project by pressing the F5 key.
+
+5. Insert a formatted disk in the floppy, and then click Command1. Text.txt is
+   copied to the floppy disk.
+
+6. Write-protect the disk and click Command1. An error message appears to remove
+   the write-protection.
+
+7. Remove write-protection and click Command1. Note that the same error message
+   appears.
+
+Additional query words: 4.00 vb4win vb416
+
+======================================================================
+Keywords          : kbnokeyword kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB400Search kbVB400
+Version           : 4.00 | 4.00
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q277659  07-MAY-2002  [homegame]
+TITLE   :CFS2: Configuration File Is Incorrectly Named in Readme.rtf File
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Readme.rtf file for Microsoft Combat Flight Simulator 2, the game
+configuration file is incorrectly named Combatfs.cfg in the following sections:
+
+ - How can I change the Shift Z coordinate displays
+ - How can I disable the opening movie
+ - Multiplayer
+
+The correct name of the game configuration file for Combat Flight Simulator 2 is
+Cfs2.cfg.
+
+MORE INFORMATION
+================
+
+To edit the Cfs2.cfg file, follow these steps:
+
+1. Quit Combat Flight Simulator 2 if it is running.
+
+2. Click Start, point to Find or to Search, and then click "Files or Folders" or
+   "For Files or Folders".
+
+3. In the Named box, type "cfs2.cfg" (without the quotation marks).
+
+4. In the "Look in" box, click My Computer.
+
+5. Click Find Now or Search Now.
+
+6. Double-click the Cfs2.cfg file.
+
+7. In the "Choose the program you want to use" box, click Notepad.
+
+8. Click to clear the "Always use this program to open this file" check box, and
+   then click OK.
+
+9. When you are finished making the necessary changes to the file, click Exit on
+   the File menu.
+
+10. When you are prompted to save the changes, click Yes.
+
+11. Restart Combat Flight Simulator 2.
+
+Additional query words: 1.00 msgame combatfs cfs2 filename wrong incorrect
+
+======================================================================
+Keywords          : kbdocerr kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

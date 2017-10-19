@@ -1,0 +1,72 @@
+DOCUMENT:Q107724  27-NOV-1999  [homekids]
+TITLE   :Writer: System Error 15 with Insufficient Disk Space
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you quit, then restart Creative Writer after you receive a message telling
+you that you have insufficient disk space, you may receive the following error
+message:
+
+   System Error #15 at 003CCA68 'CODE 0001 040C' + 00A0
+
+Your computer may stop responding (hangs), and you need to restart.
+
+
+WORKAROUND
+==========
+
+To eliminate this problem, restart your Macintosh and then remove excess files
+to floppy disk and/or delete them from your hard drive. When you have freed up
+some disk space, you should be able to run Creative Writer successfully.
+
+For more information about how to accomplish this task on your Macintosh, see
+your Macintosh printed documentation or online help.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Creative Writer versions 1.0,
+1.1 and 1.1a. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+If you don't have enough disk space, you cannot save documents or perform many
+operations in Creative Writer.
+
+The message indicating that you are out of disk space also includes instructions
+to free up space and restart your Macintosh. If you follow these instructions,
+the System Error does not occur.
+
+Additional query words: 1.00 1.10 kids hard drive lock crash mac mskids mczee wm_artist diskette lock-up bomb 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac
+Version           : MACINTOSH:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,56 @@
+DOCUMENT:Q81075  08-DEC-1999  [win95x]
+TITLE   :HP IIIsi Auto Select Option Not Saved when Windows Restarts
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When using the Hewlett-Packard (HP) LaserJet IIIsi driver version 3.77, the
+Paper Source option defaults to Upper Tray each time Microsoft Windows 3.0 is
+closed and reopened. (Version 3.77 of the IIIsi driver is available only through
+Hewlett-Packard.)
+
+NOTE: This information does not apply to later versions of Windows.
+
+To correct this problem, you need to upgrade to driver version 30.3.86.
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+   "HP" (without the quotation marks) and "IIIsi" (without the quotation marks)
+   and "windows" (without the quotation marks)
+
+
+Additional query words: W_WINWORD 30.3.86 III si start restart boot reboot appnote 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

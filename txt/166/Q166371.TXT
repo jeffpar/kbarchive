@@ -1,0 +1,66 @@
+DOCUMENT:Q166371  09-AUG-2001  [winnt]
+TITLE   :WindowsNT 4.0 Not Filtering Ports Destined for Remote Segments
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Transmission Control Protocol/Internet Protocol (TCP/IP) advanced
+security does not allow for the creation of a firewall.
+
+MORE INFORMATION
+================
+
+Although Windows NT 4.0 offers TCP/IP port filtering, port filtering only
+filters ports destined for the local computer that is entering the card that has
+restricted ports. If Internet Protocol (IP) Forwarding is enabled, the TCP/IP
+packets are forwarded as needed, and then filtered (if enabled) at the receiving
+end.
+
+For example:
+
+Assume you have 3 computers, A, B, and C, running FTP Server and computer B is
+multihomed, connecting the other 2 machines.
+
+If computer B is configured to permit only ports TCP 139, and UDP 137 & 138
+(NetBIOS), then it would seem that none of the clients could FTP to each other.
+However, in this example, A and C can FTP to each other, but neither computer
+can FTP to B. Windows NT by itself is not designed to be used as a firewall,
+however, additional software (from Microsoft and other vendors) can be used to
+add this functionality.
+
+
+Additional query words: howto prodnt router route forward pass thru through proxy
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

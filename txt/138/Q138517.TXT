@@ -1,0 +1,241 @@
+DOCUMENT:Q138517  11-JAN-2001  [vbwin]
+TITLE   :Properties of Object Passed ByVal Can Be Modified
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you pass an object by value to a procedure, you can modify its properties
+in the procedure. Using ByVal with an object parameter affects how the object
+can be redefined in the procedure. If an object variable is passed to a
+procedure by using the ByVal keyword and the object parameter is set to a
+different object, the object variable still references the original object.
+Conversely, if an object variable is passed to a procedure by reference and the
+object parameter is set to a different object, the object variable references
+this different object. This article provides examples that highlight the
+functionality of the ByVal keyword.
+
+MORE INFORMATION
+================
+
+Consider the following sample code where Class1 has one public text property
+called Description:
+
+      Private Sub PassByVal(ByVal C As Class1)
+         C.Description = "Modified Value"
+      End Sub
+
+      Private Sub Form_Load()
+         Dim MyClass As Class1
+         Set MyClass = New Class1
+         MyClass.Description = "Original Value"
+         PassByVal MyClass
+         MsgBox MyClass.Description
+      End Sub
+
+In this case, the message box displays "Modified Value" even though the object is
+passed by value. You might expect that the ByVal would prevent the procedure
+from modifying the property. However, when used with objects, ByVal affects the
+procedure's ability to redefine the object.
+
+If an object variable is passed to a procedure by using the ByVal keyword and the
+object parameter is set to a different object, the object variable still
+references the original object. Consider the following example code with the
+same definition of Class1:
+
+      Private Sub PassByValSet(ByVal C As Class1)
+         Dim A As Class1
+         Set A = New Class1
+         A.Description = "New Value"
+         Set C = A
+      End Sub
+
+      Private Sub Form_Load()
+         Dim MyClass As Class1
+         Set MyClass = New Class1
+         MyClass.Description = "Original Value"
+         PassByValSet MyClass
+         MsgBox MyClass.Description
+      End Sub
+
+In this case, the message box displays "Original Value" because the ByVal
+prevents the procedure from redefining the object with "Set C = A." This is how
+ByVal works with objects.
+
+Conversely, if an object variable is passed to a procedure by reference and the
+object parameter is set to a different object, the object variable references
+this different object. The following example, using the same Class1, illustrates
+this:
+
+      Private Sub PassByRefSet(C As Class1)
+         Dim A As Class1
+         Set A = New Class1
+         A.Description = "New Value"
+         Set C = A
+      End Sub
+
+      Private Sub Form_Load()
+         Dim MyClass As Class1
+         Set MyClass = New Class1
+         MyClass.Description = "Original Value"
+         PassByRefSet MyClass
+         MsgBox MyClass.Description
+      End Sub
+
+In this example, the message box displays "New Value" because the object is
+passed by reference and the procedure is allowed to redefine it with "Set C =
+A."
+
+If you need to modify an object parameter's properties within a procedure without
+modifying the object passed, you need to create a copy of the object in the
+procedure. The following example of this method includes all the points
+previously discussed.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new project. Form1 is created by default.
+
+2. Add a command button to Form1.
+
+3. Add the following code to the General declarations section of Form1:
+
+      ' This procedure modifies the description of the object
+      ' passed in as expected
+      Private Sub PassByRef(C As Class1)
+         C.Description = "Modified Value"
+      End Sub
+
+      ' You might expect that this procedure would not modify the
+      ' Description property of the object that was passed in.
+      ' However, it does modify it.
+      Private Sub PassByVal(ByVal C As Class1)
+         C.Description = "Modified Value"
+      End Sub
+
+      ' This procedure redefines the original object to the new
+      ' object with a new value for the description field.
+      Private Sub PassByRefAndSet(C As Class1)
+         Dim A As Class1
+         Set A = New Class1
+         A.Description = "New Value"
+         Set C = A
+      End Sub
+
+      ' This procedure does not redefine the original object.
+      ' However, within the scope of the procedure it is redefined.
+      Private Sub PassByValAndSet(ByVal C As Class1)
+         Dim A As Class1
+         Set A = New Class1
+         A.Description = "New Value"
+         Set C = A
+      End Sub
+
+      ' This procedure shows how to redefine the object within the
+      ' procedure to a copy of itself. Changes made in the locally
+      ' redefined parameter will not be reflected back to the
+      ' original object.
+      Private Sub PassByValAndCopy(ByVal C As Class1)
+         Set C = C.Copy
+         C.Description = "Modified Value"
+      End Sub
+
+      Private Sub Command1_Click()
+         Me.AutoRedraw = True
+
+         Print "Passing object by reference to modify property ";
+         Dim MyClass1 As Class1
+         Set MyClass1 = New Class1
+         MyClass1.Description = "Original Value"
+         PassByRef MyClass1
+         Print "results in: "; MyClass1.Description
+         Set MyClass1 = Nothing
+
+         Print "Passing object by value to modify property ";
+         Dim MyClass2 As Class1
+         Set MyClass2 = New Class1
+         MyClass2.Description = "Original Value"
+         PassByVal MyClass2
+         Print "results in: "; MyClass2.Description
+         Set MyClass2 = Nothing
+
+         Print "Passing object by reference to set object ";
+         Dim MyClass3 As Class1
+         Set MyClass3 = New Class1
+         MyClass3.Description = "Original Value"
+         PassByRefAndSet MyClass3
+         Print "results in: "; MyClass3.Description
+         Set MyClass3 = Nothing
+
+         Print "Passing object by value to set object ";
+         Dim MyClass4 As Class1
+         Set MyClass4 = New Class1
+         MyClass4.Description = "Original Value"
+         PassByValAndSet MyClass4
+         Print "results in: "; MyClass4.Description
+         Set MyClass4 = Nothing
+
+         Print "Passing object by value to set copy of object ";
+         Dim MyClass5 As Class1
+         Set MyClass5 = New Class1
+         MyClass5.Description = "Original Value"
+         PassByValAndCopy MyClass5
+         Print "results in: "; MyClass5.Description
+         Set MyClass5 = Nothing
+      End Sub
+
+4. Add a Class Module (Class1) to the project.
+
+5. Put the following code in the Class1 module:
+
+      Public Description As String
+
+      ' Create a member by member copy of Class1
+      Public Function Copy() As Class1
+         Dim Ret As Class1
+         Set Ret = New Class1
+         Ret.Description = Me.Description
+         Set Copy = Ret
+      End Function
+
+6. Save the project.
+
+7. Run the project, and click the button. The results of the five tests should
+   be printed on the form.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

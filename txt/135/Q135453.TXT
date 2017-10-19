@@ -1,0 +1,56 @@
+DOCUMENT:Q135453  01-FEB-2002  [crossnet]
+TITLE   :Winsock Application Hangs Using TCP/IP-32
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11,3.11a,3.11b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If a Winsock application creates a window (hidden or not) to process connection
+messages from a non-blocking socket, the application may stop responding (hang)
+on the second connection attempt.
+
+CAUSE
+=====
+
+If a Winsock application creates a window to processes Winsock messages for the
+connection, and the application deletes the window before the socket is closed,
+the application may appear to hang if it attempts to establish a new connection.
+Because the socket was not closed before the window was deleted, additional
+Winsock messages may be generated. Because the window that these Winsock
+messages are destined for no longer exists, the messages are undeliverable.
+These undelivered messages cause the application to hang.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

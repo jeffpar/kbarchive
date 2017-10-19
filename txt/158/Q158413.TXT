@@ -1,0 +1,57 @@
+DOCUMENT:Q158413  16-APR-2000  [powerpt]
+TITLE   :AutoCorrect Does Not Automatically Scroll Correction List
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbui kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you type in the Replace Box in the PowerPoint AutoCorrect dialog box,
+PowerPoint does not automatically scroll to the appropriate part of the "Replace
+Text as You Type" list. In Microsoft Word for Windows 95, version 7.0, on the
+other hand, this list does scroll as you type in the Replace box.
+
+
+WORKAROUND
+==========
+
+To view the list of available corrections in the AutoCorrect dialog box you must
+manually scroll down the list.
+
+STATUS
+======
+
+
+Additional query words: 7.00 w_Powerpt ppt powerpnt ppt7 autocorrect replace
+
+======================================================================
+Keywords          : kbui kbusage 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

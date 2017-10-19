@@ -1,0 +1,52 @@
+DOCUMENT:Q117907  24-MAY-2001  [homemm]
+TITLE   :Encarta: Text in MindMaze Looks Cut Off
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The text in Encarta's MindMaze game may appear to be cut off. This occurs if the
+Lucida font, which Encarta requires, is not installed on your system.
+
+For example, if you run MindMaze from the Encarta CD without first installing
+Encarta on your system, MindMaze will not be able to use the Lucida font, and
+text will display incorrectly.
+
+RESOLUTION
+==========
+
+To avoid this problem, use the Installer to install Encarta and its components
+on your system before you run MindMaze. The text should then display correctly.
+
+Additional query words: 1994 multi media multimedia multi-media encarta mac
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

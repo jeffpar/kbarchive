@@ -1,0 +1,101 @@
+DOCUMENT:Q257989  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Pin and Unpin Files in VSS from OLE Automation in VC++
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAutomation kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The OLE Automation for Visual SourceSafe does not directly expose the pinning
+functionality. You can use the functions in the "More Information" section of
+this article to pin and unpin a file from a Visual C++ program.
+
+NOTE: This sample code assumes that you reference the Visual SourceSafe OLE
+Automation by using this code:
+
+   #import "path to ssapi.dll" no_namespace
+
+MORE INFORMATION
+================
+
+This function pins a file:
+
+   int PinFile(IVSSItemPtr objItem, int version)
+   {
+      // Pinning code
+      IVSSItemPtr    objOldItem;
+      IVSSItemPtr    objProject;
+      CComVariant    varVer;
+
+      varVer = version;
+
+      objOldItem = objItem->GetVersion(varVer);
+      objProject = objItem->GetParent();
+
+      objProject->Share(objOldItem, "", 0);
+
+      return 1;
+   }
+
+This function unpins a file:
+
+   int UnpinFile(IVSSItemPtr objItem)
+   {
+      // Unpinning code
+      IVSSItemPtr    objOldItem;
+      IVSSItemPtr    objProject;
+      CComVariant    varVer = 0;
+
+      objOldItem = objItem->GetVersion(varVer);
+      objProject = objItem->GetParent();
+
+      objProject->Share(objOldItem, "", 0);
+
+      return 1;
+   }
+
+REFERENCES
+==========
+
+For more information, see the Visual SourceSafe 6.0 Automation topic on the
+following MSDN Web site at:
+
+   http://msdn.microsoft.com/library/techart/vssauto.htm
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q257990 HOWTO: Obtain a List of All Pinned Files from OLE Automation
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

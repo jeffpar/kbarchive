@@ -1,0 +1,58 @@
+DOCUMENT:Q180352  28-MAR-1999  [exchange]
+TITLE   :XWEB: No "Send Again" Option on NDR Using ASC or OWA
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are using the Outlook Web Access (OWA) client to access a Microsoft
+Exchange Server mailbox and you receive a non-delivery report (NDR), there is no
+option to send again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 5.0 and 5.5. Microsoft is researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+At this time, the "Send Again" option is only available in the Exchange and
+Outlook clients.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

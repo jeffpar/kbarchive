@@ -1,0 +1,68 @@
+DOCUMENT:Q172464  30-JUL-2001  [sms]
+TITLE   :SMS: PowerPoint Loses Cursor When PCMWIN16 Is Loaded
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbinterop kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Package Command Manager (Pcmwin16.exe) is running and a new or existing
+PowerPoint presentation is being edited, the mouse cursor may disappear from the
+PowerPoint window but still show when moved to the taskbar, desktop, or another
+window. Although the mouse is invisible, it may still work (and reappear when
+you select something in the PowerPoint window). However, in most cases, you must
+shut down PowerPoint to get the mouse to reappear.
+
+
+CAUSE
+=====
+
+The Package Command Manager Polling interval interferes with the ShowCursor
+routines within PowerPoint.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in Systems Management Server
+versions 1.0, 1.1, and 1.2. This issue was corrected in the latest Microsoft
+Systems Management Server 1.2 U.S. Service Pack. For information on obtaining
+the service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+
+
+Additional query words: prodsms PPT PP task bar object embedded
+
+======================================================================
+Keywords          : kbinterop kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : :1.0,1.1,1.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

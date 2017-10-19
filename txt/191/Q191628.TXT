@@ -1,0 +1,65 @@
+DOCUMENT:Q191628  10-AUG-1999  [homegame]
+TITLE   :Urban Assault: Cannot Change Display Resolution in Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Urban Assault, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the display resolution on the Options screen in Microsoft Urban
+Assault and then start a new game, the game may not use the display resolution
+you selected.
+
+CAUSE
+=====
+
+This behavior can occur if Urban Assault attempts to switch to a display
+resolution that is not supported by your video driver.
+
+RESOLUTION
+==========
+
+To work around this issue, select a different display resolution.
+
+To resolve this issue, contact the manufacturer of your display adapter to
+inquire about obtaining an updated video driver.
+
+MORE INFORMATION
+================
+
+When Urban Assault attempts to switch to a display resolution that is not
+supported by your video driver, it switches back to the previously selected
+display resolution.
+
+Additional query words: msgame ua
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame 
+Technology        : kbGamesSearch kbUrbanAssault
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

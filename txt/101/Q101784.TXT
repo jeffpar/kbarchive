@@ -1,0 +1,71 @@
+DOCUMENT:Q101784  08-AUG-2001  [winnt]
+TITLE   :After Creating Backup Domain Controller Cannot Logon as Admin.
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You make a server a backup domain controller. After setup is complete, you
+attempt to logon to the administrative account using the correct password. The
+password validation fails. However, logging on with no password to the
+administrative account is successful.
+
+CAUSE
+=====
+
+A backup domain controller replicates its database from the current domain
+controller. The initial replication occurs after the Netlogon service is started
+during the first boot after installation has completed. Before replication
+occurs (and user account databases are in sync), the backup domain controller
+has the default database (which includes the Administrator account with no
+password). Since the initial replication can take an extended period of time
+(several minutes for a large domain), there is a period after the initial boot
+during which you can log on to the backup domain controller using the accounts
+in the default database, but not those accounts in the domain.
+
+RESOLUTION
+==========
+
+Wait for database replication to finish before attempting to log on from a
+registered account.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Advanced Server
+version 3.1. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

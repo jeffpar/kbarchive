@@ -1,0 +1,63 @@
+DOCUMENT:Q67012  13-DEC-1999  [win95x]
+TITLE   :Windows Err Msg: Warning! Overwriting an Old Copy...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message is displayed when you start your system:
+
+   Warning!! Overwriting an old copy of the EGA Device Driver
+
+CAUSE
+=====
+
+This error occurs if the MOUSE.SYS 7.04 device driver is loaded in the
+CONFIG.SYS file before the EGA.SYS 2.10.18 driver.
+
+RESOLUTION
+==========
+
+Microsoft recommends that the MOUSE.SYS driver be loaded after the EGA.SYS
+driver in the CONFIG.SYS. Both of these drivers are included with Microsoft
+Windows version 3.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with Windows 3.0 and the Microsoft
+Mouse driver, version 7.04. Microsoft is researching this problem and will post
+new information here as it becomes available.
+
+Additional query words: 3.00 3.00a 3.0 3.0a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

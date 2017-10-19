@@ -1,0 +1,88 @@
+DOCUMENT:Q309698  09-OCT-2001  [homegame]
+TITLE   :Bicycle Games: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bicycle Board Games Version 1.5 
+ - Microsoft Bicycle Card Games Version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a summary of the minimum system requirements to play
+Microsoft Bicycle Games programs listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+To play the games listed at the beginning of this article, you need the
+following system resources:
+
+ - A multimedia computer with the following specifications, based on your
+   computer's operating system.
+
+   
+   +--------------------------------------------------------+
+   | Operating System | Processor (in MHz) | Memory (in MB) | 
+   +--------------------------------------------------------+
+   | Windows 95 OSR2  | 133                | 16             | 
+   +--------------------------------------------------------+
+   | Windows 98       | 133                | 24             | 
+   +--------------------------------------------------------+
+   | Windows Me       | 150                | 32             | 
+   +--------------------------------------------------------+
+   | Windows 2000     | 133                | 64             | 
+   +--------------------------------------------------------+
+   | Windows XP       | 233                | 64             | 
+   +--------------------------------------------------------+
+
+ - 100 megabytes (MB) of available hard-disk space for a minimum installation
+   (requires use of the Bicycle Board Games compact disc in your computer's
+   CD-ROM or DVD-ROM drive to play the game); 411 MB of hard-disk space required
+   for a full installation.
+
+ - 50 MB of available hard-disk space for swap file.
+
+ - DirectX 8.0a application programming interface (included).
+
+ - A Super VGA monitor capable of a resolution of 800 x 600 dots per inch (dpi).
+
+ - A 2-MB graphics card, with 16-bit color capability; a 4-MB-or-higher graphics
+   card recommended.
+
+ - A 2x CD-ROM drive; a 4x-or-higher CD-ROM drive recommended.
+
+ - A sound card for sound and music output.
+
+ - A mouse or other pointing device.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbBicycleCard100 kbBicycleSearch kbBicycleBoard150
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

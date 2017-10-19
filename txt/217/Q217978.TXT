@@ -1,0 +1,67 @@
+DOCUMENT:Q217978  23-APR-1999  [winnt]
+TITLE   :Outgoing and Incoming Values Do Not Refresh as Frequently
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Manage Electronic Mail console provides a summary of e-mail flow and
+management in a BackOffice Small Business Server-based network. When Microsoft
+Exchange Server is installed on the Small Business Server computer, the Outgoing
+E-mail displays the number of outbound messages awaiting delivery in the
+Internet Mail Service Outbound Queue and the Incoming E-mail displays the number
+of inbound messages awaiting delivery in the Internet Mail Service Inbound
+Queue.
+
+Messages from the Internet are received by the Internet Mail Service. The
+Internet Mail Service processes the messages by delivering mail to the
+appropriate Exchange recipient mailbox. Because the Internet Mail Service
+processes these messages quickly, this value generally reads "0" unless your
+organization receives large quantities of Internet mail.
+
+Messages awaiting delivery to the Internet will appear more often because the
+Internet Mail Service connects on a scheduled basis and this queue reflects
+messages waiting to be delivered externally.
+
+MORE INFORMATION
+================
+
+These values are automatically updated every 15 minutes. To update the values
+manually, press F5, or right-click the page and then click Refresh.
+
+This behavior is modified from previous versions of Small Business Server where
+the page refreshes as frequently as every five seconds.
+
+Additional query words: smallbiz bof 4.50
+
+======================================================================
+Keywords          : kbtool kbui 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

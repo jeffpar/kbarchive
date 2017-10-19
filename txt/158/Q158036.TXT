@@ -1,0 +1,54 @@
+DOCUMENT:Q158036  08-NOV-2001  [homekids]
+TITLE   :MSN Kids: Where Is MSN Kids?
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MSN Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft MSN Kids, the web site devoted to Kids, has been discontinued and
+replaced by a new site. The new site is accessible by MSN members only, and it
+is called MSN Interactive Teen.
+
+MORE INFORMATION
+================
+
+To access the MSN Interactive Teen site, MSN users may connect to MSN Channel 6,
+and select Interactive Teen.
+
+
+For more information about obtaining an MSN account, double- click The Microsoft
+Network icon on your Windows desktop, and follow the instructions.
+
+Additional query words: kids mskids
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : _IKkbbogus kbMSNSearch kbKidsSearch kbMSNKids
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q162515  13-JUN-2001  [sna]
+TITLE   :"-B" Is Printed at End of TN3270 Print Job
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A hyphen and the letter B (-B) are printed at the end of a TN3270 print job.
+
+CAUSE
+=====
+
+The TN3270 Server is sending down a WCC byte to the emulator (with the unlock
+keyboard byte enabled). This would be appropriate for a display session in order
+to give the emulator direction to send more data back to the host. However,
+because this is a printer session, the emulator instead interprets this byte as
+data and prints it.
+
+RESOLUTION
+==========
+
+Apply the fix referenced below. A fix was made to the TN3270 Server to not send
+this byte sequence over printer sessions at the end of the print job.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.11 and
+2.11 Service Pack 1.
+
+
+A supported fix is now available for SNA Server 2.11 SP1, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

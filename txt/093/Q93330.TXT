@@ -1,0 +1,69 @@
+DOCUMENT:Q93330  23-OCT-1999  [foxmisc]
+TITLE   :PRB: Problems with Using a Graphic Image in an .FRX File
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the user pastes an image from the Clipboard into a report form,
+FoxBASE+/Mac writes the image into the FOXUSER file or into the current resource
+file for the open .FRX file. If the .FRX file is transferred to another computer
+and run, a gray box appears where the image belongs.
+
+RESOLUTION
+==========
+
+To correct this problem, distribute the resource file with the .FRX file.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy an image to the Clipboard.
+
+2. Open a new report form.
+
+3. Paste the image into the .FRX file.
+
+4. Save the .FRX file.
+
+5. Copy the file to a floppy disk.
+
+6. Open the file in FoxBASE+/Mac on another computer.
+
+7. Request a page preview.
+
+Additional query words: 2.01
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

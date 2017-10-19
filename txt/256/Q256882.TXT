@@ -1,0 +1,53 @@
+DOCUMENT:Q256882  12-JUN-2001  [homegame]
+TITLE   :AoE II: Cannnot Change Population Limit When in Custom Scenario
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbui aoe kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot increase the population limit when you play a custom scenario in
+Microsoft Age of Empires II: The Age of Kings. The population limit is set to
+75, and there is no option to change this limit to a higher number.
+
+MORE INFORMATION
+================
+
+Due to the functionality and the resource information that is used to create a
+custom scenario, no option is available to change the population limit, either
+when you create the custom scenario, or when you play a custom scenario.
+
+This behavior is by design.
+
+Additional query words: 2.0 aoe2 aok msgame ceiling
+
+======================================================================
+Keywords          : kbui aoe kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOE2Kings
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

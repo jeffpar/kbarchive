@@ -1,0 +1,65 @@
+DOCUMENT:Q237471  16-JUL-1999  [iis]
+TITLE   :ISAPI Filters Marked as Unknown Called before Priority Filters
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ISAPI Filters that do not register with either High, Medium, or Low priority are
+marked as Unknown in the Microsoft Management Console (MMC). Filters marked as
+Unknown are called before all filters with any of the three priorities that have
+registered for the same notification.
+
+MORE INFORMATION
+================
+
+The priority of the installed filters is a read-only metabase property. To find
+the priority of the installed filters, you can either use the MMC or one of the
+available metabase utilities. The three metabase priority properties are
+NotifyOrderLow, NotifyOrderMedium and NotifyOrderHigh, and are available in the
+following locations:
+
+   /LM/W3SVC/Filters/Filter
+   /LM/W3SVC/n/Filters/Filter
+
+Where Filter is the name of the installed filter and n is the Web Server
+instance.
+
+If two or more filters have the same priority and have registered for the same
+notification, the FilterLoadOrder determines which is called first. Note that
+Global Filters installed under the Master WWW Properties are called before a
+filter with the same priority installed under one of the Web Server instances.
+
+Additional query words: mmc
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

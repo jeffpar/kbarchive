@@ -1,0 +1,55 @@
+DOCUMENT:Q77878  17-DEC-2000  [msdos]
+TITLE   :IBM PC 3270 Emulation Ver. 1.22 Incompatible with MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IBM has confirmed that the IBM PC 3270 emulation program version 1.22 is
+incompatible with both MS-DOS 5.0 and IBM PC-DOS 5.0.
+
+Running the IBM PC 3270 emulator with MS-DOS 5.0 may cause intermittent lock-ups,
+or lowercase letters may automatically change to uppercase letters.
+
+MORE INFORMATION
+================
+
+IBM technical support recommends replacing the IBM PC 3270 emulation with a new
+release called the Entry Level Emulation Program version 2.0. The Entry Level
+Emulation Program is available from IBM and is compatible with both MS-DOS 5.0
+and IBM PC-DOS 5.0.
+
+
+
+Additional query words: 5.00 3rdparty hang terminal
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

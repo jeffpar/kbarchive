@@ -1,0 +1,80 @@
+DOCUMENT:Q131960  17-DEC-2000  [win95x]
+TITLE   :Aztech Sound Galaxy Basic 16 Sound Card Detected Incorrectly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows 95, the Aztech Sound Galaxy Basic 16 sound card in your
+computer may be incorrectly detected as one or more of the following sound
+cards:
+
+ - MS Windows Sound System Compatible
+
+ - Creative Labs Sound Blaster Pro
+
+ - Media Vision Pro Audio Spectrum 16/Studio with SCSI
+
+The sound card works correctly in Windows 95, except that a microphone connected
+to the sound card may not function if you manually add in the Sound Galaxy Sound
+Card from Control Panel Add New Hardware.
+
+RESOLUTION
+==========
+
+For full functionality in Windows 95, use the Windows 3.1 drivers included with
+the sound card.
+
+If the sound card was incorrectly detected, use the following steps to remove the
+incorrect drivers:
+
+1. Use the right mouse button to click My Computer, then click Properties on the
+   menu that appears.
+
+2. Click the Device Manager tab.
+
+3. Double-click the Sound, Video, And Game Controllers branch.
+
+4. Click the incorrectly detected sound card, then click Remove.
+
+5. If more than one incorrect sound card was detected, repeat step 4 for the
+   additional sound cards.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: w95hw
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

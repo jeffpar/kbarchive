@@ -1,0 +1,76 @@
+DOCUMENT:Q132989  30-JUL-2001  [visualc]
+TITLE   :HOWTO: Use Relative Paths in 32-bit Visual C++ .MAK Files
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:2.0,2.1,4.0;
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC200 kbVC210 kbVC400 kbhowto kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to edit the .MAK file produced by the development
+environment to change the absolute paths of dependents to be relative paths. The
+Visual C++ interface doesn[ASCII 146]t change these paths back to absolute paths
+and still loads the makefile as an internal makefile.
+
+Beginning with version 5.0, Visual C++ uses relative paths automatically when
+exporting a .mak file.
+
+MORE INFORMATION
+================
+
+The Visual C++ development environment creates a .MAK file when a project is
+created. The paths to files within the makefile often contain hard-coded paths.
+Some developers have indicated that they desire the makefile to contain relative
+paths instead.
+
+Under normal circumstances, you cannot edit a makefile produced by Visual C++ and
+still load the makefile as an internal makefile, thus allowing you to continue
+to use the graphical development environment to maintain your project. However,
+making the paths to dependents in your makefile relative is one exception.
+
+Visual C++ has full support for relative paths, but defaults to using absolute
+paths for files not in or below the project root. Currently there is no way to
+override this behavior from the Visual C++ Development Environment. However,
+once you edit the makefile to change the absolute paths for your existing files
+to relative paths, Visual C++ maintains the use of relative paths for those
+changes.
+
+NOTE: If you choose to use Visual C++ to edit the makefile text, be careful when
+loading it into the editor. The Visual C++ editor often truncates extremely long
+lines. Other editors remove necessary blanks at the end of the lines. NOTEPAD is
+a safe editor to use on .MAK files. Also be sure to save the original .MAK file
+before making your changes, so you have a backup in case you encounter a
+problem.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVC kbVC200 kbVC210 kbVC400 kbhowto kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC200 kbVC210
+Version           : WINNT:2.0,2.1,4.0;
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

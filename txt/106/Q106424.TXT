@@ -1,0 +1,66 @@
+DOCUMENT:Q106424  26-NOV-1999  [msdos]
+TITLE   :Turtle Beach Sound Card: No Sound After Running MemMaker
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Turtle Beach sound card may not function correctly after you run MemMaker.
+
+CAUSE
+=====
+
+MemMaker does not detect the memory range used by the Turtle Beach sound card
+ROM.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Edit your CONFIG.SYS file and add X= parameters to exclude the memory ranges
+   used by your sound card. For example:
+
+   device=c:\dos\emm386.exe noems highscan x=d000-d1ff x=d600-d7ff
+
+   NOTE: To determine what the memory address your card uses, consult your
+   hardware documentation or contact Turtle Beach.
+
+2. Run MemMaker, choosing Custom Setup.
+
+3. Choose Yes in response to the prompt "Keep current EMM386 memory exclusions
+   and inclusions?"
+
+
+Additional query words: 6.22 6.20
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

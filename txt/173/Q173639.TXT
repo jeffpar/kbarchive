@@ -1,0 +1,68 @@
+DOCUMENT:Q173639  10-AUG-2001  [winnt]
+TITLE   :Support for Localized or International Versions of Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes support options available to users of localized (foreign
+language) or international versions of Windows NT.
+
+MORE INFORMATION
+================
+
+The following support options are available to users of localized or
+international versions of Windows NT:
+
+ - Contact the international subsidiary responsible for the localized version.
+   For information about locating an international subsidiary, see the Microsoft
+   World Wide Offices Web site at the following location:
+
+   http://www.microsoft.com/worldwide/default.htm
+
+   Or, see the following article in the Microsoft Knowledge Base:
+
+   ARTICLE ID: Q49868
+   TITLE : Microsoft International Subsidiary Technical Support
+
+
+ - Contact the vendor that supplied the localized version of Windows NT.
+
+
+Additional query words: boundary boundaries non-english
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWinNTS350search kbWinAdvServSearch
+Version           : :2000,3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

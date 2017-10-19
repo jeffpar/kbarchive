@@ -1,0 +1,74 @@
+DOCUMENT:Q181919  02-APR-1999  [exchange]
+TITLE   :XADM: Offline Address Book Not Updated After Changing Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you move the offline Address Book from an Exchange Server 4.0 computer to
+another Exchange Server computer, using the Administrator program of a computer
+running Exchange Server 5.0 or 5.5, the offline Address Book (OAB) will no
+longer be updated.
+
+CAUSE
+=====
+
+Exchange 4.0 does not set any values to the raw object "Off-Line-AB-
+Containers". If this object does not contain any value, Exchange 4.0 takes the
+global address list (GAL) to create the OAB. In Exchange 5.0 and 5.5, it's
+possible to specify more than one address container, so the Exchange 5.0 and 5.5
+Administrator program always fills the raw object "Off-Line-AB- Containers" with
+nonviewable characters.
+
+WORKAROUND
+==========
+
+Two possible workarounds are:
+
+ - Do not use the global address list to create the OAB.
+
+   -or-
+
+ - Use the Exchange 4.0 Administrator program to change the OAB settings.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 4.0, 5.0, and 5.5. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

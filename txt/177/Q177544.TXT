@@ -1,0 +1,68 @@
+DOCUMENT:Q177544  18-MAR-1999  [exchange]
+TITLE   :XFOR: Fixed Length File Sent from OV/VM Using SENDFILE Corrupted
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - LinkAge Message Exchange, version 3.2 
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A fixed-format CMS file, which is uploaded to the host (not by the Linkage
+Connector) and then sent to a Microsoft Exchange user as an attachment using
+SENDMAIL via the Linkage OV/VM connector, is corrupted and unreadable by the
+Exchange user.
+
+CAUSE
+=====
+
+The length in bytes of the file was incorrectly being placed in the file being
+sent to the Exchange user. This was causing the OV/VM to Exchange transformation
+to render the file attachment unreadable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Linkage Message Exchange,
+version 3.2.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Additional query words: PROFS Office Vision IBM HOST SENDFILE CMS
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

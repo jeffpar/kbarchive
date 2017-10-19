@@ -1,0 +1,74 @@
+DOCUMENT:Q137881  08-NOV-2001  [homemm]
+TITLE   :Print and Copy Not Available from within Help
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Gardening for Windows, version 1.0 
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+ - Microsoft Reader's Digest Complete Do-It-Yourself Guide for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to copy or print information from online Help.
+
+CAUSE
+=====
+
+The Help screens are in the form of DIBs (Device Independent Bitmaps). A .dib
+file format is designed to ensure that bitmap graphics created using one program
+can be loaded and displayed in another program exactly the way the image
+appeared in the originating program. Because of the DIB format, you are unable
+to copy or print Help text directly from the program.
+
+WORKAROUND
+==========
+
+To work around this problem, you can capture the information by pasting an image
+of the Help screen into Microsoft Paint (in Windows 95) or Paintbrush (in
+Windows 3.x). In Paint (or Paintbrush in Windows 3.x), the file becomes a bitmap
+(.bmp) and it can be cropped, sized, printed, or imported into other programs.
+Follow these steps to cut and paste the screen to Paint (or Paintbrush):
+
+1. To copy the active window containing the desired text, press ALT+PRINT SCREEN
+   on the keyboard.
+
+2. Open Microsoft Paint (or Paintbrush), normally located in the Accessories
+   group.
+
+3. On the Edit menu, click Paste.
+
+The picture can be saved and printed as a bitmap image (.bmp).
+
+NOTE: For information about the Copy and Paste commands, see your Windows printed
+documentation or online Help.
+
+Additional query words: HelpWindows multi media multimedia multi- media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbCompleteGardening kbJuliaChild kbDoItYourself
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

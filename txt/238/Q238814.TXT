@@ -1,0 +1,86 @@
+DOCUMENT:Q238814  25-JUN-2000  [homemm]
+TITLE   :Bookshelf/Dictionary: How to Use Command-Line Switches
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 99 
+ - Microsoft Bookshelf 2000 
+ - Microsoft Encarta World English Dictionary, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The table below describes the command-line switches you may use to start the
+programs listed at the beginning of this article.
+
++----------------------------------------------------------------+
+| Switch | Functionality                                         | 
++----------------------------------------------------------------+
+| /i     | Index lookup                                          | 
++----------------------------------------------------------------+
+| /f     | Full text search                                      | 
++----------------------------------------------------------------+
+| /k     | QuickQuote                                            | 
++----------------------------------------------------------------+
+| /d     | QuickDefine                                           | 
++----------------------------------------------------------------+
+| /h     | Starts the program minimized                          | 
++----------------------------------------------------------------+
+| /r     | Jump to a random topic                                | 
++----------------------------------------------------------------+
+| /c     | Jump to a context string                              | 
++----------------------------------------------------------------+
+| /o     | Daily                                                 | 
++----------------------------------------------------------------+
+| /m     | Specifies content location for a network installation | 
++----------------------------------------------------------------+
+
+NOTE: If a switch does not perform as expected, include the /h switch in the
+command line.
+
+MORE INFORMATION
+================
+
+To use these command-line switches:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the path to the executable file of the program,
+   followed by the switch or switches you want to use, and the word or words you
+   want to search for.
+
+   NOTE: If you want to search for two or more words, you must enclose the words
+   within quotation marks.
+
+3. Click OK.
+
+Additional query words: multi multi-media media mm bs99 bs2k ewed
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbBookshelfSearch kbBookShelf2000 kbBookShelf1999 kbEncartaWorldEngDict
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

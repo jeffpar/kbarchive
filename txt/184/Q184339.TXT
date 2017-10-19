@@ -1,0 +1,88 @@
+DOCUMENT:Q184339  21-OCT-2000  [msnetwork]
+TITLE   :How to Configure Outlook Express to Automatically Check MSN Mail
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,4.0
+OPER/SYS:
+KEYWORDS:kbui kbmsnkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+ - Microsoft Outlook Express version 4.0 for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure Microsoft Outlook Express to
+automatically check for new e-mail messages on MSN, The Microsoft Network.
+
+MORE INFORMATION
+================
+
+To configure Outlook Express to automatically check for new e-mail messages on
+MSN, follow these steps:
+
+1. Start Outlook Express.
+
+2. On the Tools menu, click Options.
+
+3. On the General tab, click the Check for new messages every <n>
+   minute(s) check box to select it, where <n> is a number between 1 and
+   480.
+
+4. In the Check for new mail every <n> minute(s) box, click the value you
+   want for <n>. This value determines how often (in minutes) Outlook
+   Express checks for new messages.
+
+5. Click OK.
+
+6. Click Start, and then double-click the MSN icon to start MSN.
+
+7. On the MSN Sign-In screen, click the Dial Automatically check box to select
+   it, and then click Connect.
+
+NOTE: This procedure enables programs to connect to MSN when you are not present.
+If you do not want programs to connect to MSN when you are not present, click
+the Dial Automatically check box to clear it, and then click To work around this
+issue, use either of the following methods:
+
+ - Wait several seconds until you attempt to reconnect to MSN.
+
+ - Attempt to sign in to MSN using an incorrect Member ID or password. When you
+   receive the Cannot connect to the Microsoft Network... error message, click
+   OK, type your correct MSN Member ID and password in the MSN Sign In screen,
+   and then click Connect.
+
+For additional information about how to configure Outlook Express for The
+Microsoft Network, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q173952 How to Configure Outlook Express for The Microsoft Network
+
+
+Additional query words: 4.0 msnet msnetwork microsoft-net m.s.n. outexw95
+
+======================================================================
+Keywords          : kbui kbmsn kbfaq
+Technology        : kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress95Search kbOutlookExpress400Win95 kbMSN250
+Version           : WINDOWS:2.5,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

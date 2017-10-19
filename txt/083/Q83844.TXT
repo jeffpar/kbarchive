@@ -1,0 +1,66 @@
+DOCUMENT:Q83844  14-NOV-1999  [win95x]
+TITLE   :Incorrect Syntax for MONOUMB2.386 in Windows 3.1 README.WRI
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the README.WRI file included with Windows 3.1, section 4.1 gives an erroneous
+syntax for installing the MONOUMB2.386 device driver.
+
+MORE INFORMATION
+================
+
+The syntax reported for expanding the device driver is given as:
+
+      EXPAND A:\MONOUMB2.38_ C:\WINDOWS\SYSTEM
+
+Using this syntax causes the placement of the expanded file into the
+WINDOWS\SYSTEM subdirectory with an incorrect file name. The correct syntax is:
+
+      EXPAND A:\MONOUMB2.38_ C:\WINDOWS\SYSTEM\MONOUMB2.386
+
+If the file has already been expanded with the incorrect syntax, all that is
+necessary is to rename the file to the correct file extension. From the
+WINDOWS\SYSTEM subdirectory, type the following command:
+
+   REN MONOUMB2.38_ MONOUMB2.386
+
+This will prevent the following error message from appearing when you attempt to
+run Windows in 386 enhanced mode:
+
+   Unable to load a device driver that may be necessary to run Windows in 386
+   Enhanced Mode: MONOUMB2.386
+
+Additional query words: 3.10 documentation error
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

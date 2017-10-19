@@ -1,0 +1,58 @@
+DOCUMENT:Q259116  30-JUL-2000  [winnt]
+TITLE   :SFU Telnet Server Connections Limited to License Server Limits
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows Services for UNIX (SFU) 2.0, Telnet server connections are limited to
+the number of connections defined in License Manager.
+
+MORE INFORMATION
+================
+
+When you are defining the number of sessions allowed by Telnet server, you
+cannot set a number larger than the number of licenses defined in Microsoft
+Windows 2000/Microsoft Windows NT License Manager. To define a Telnet server
+session limit, start Services for UNIX Administrator, and then double-click
+Telnet Server, Server Settings, and "Maximum number of simultaneous
+connections".
+
+The maximum number of sessions allowed is equal to the License value set in
+License Manager. If the License Manager value is higher than 63, the default
+value for the "Maximum number of simultaneous connections" setting is 63.
+
+
+Additional query words: SFU solar coaster solarcoaster
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q86097  07-NOV-1999  [pcmail]
+TITLE   :PC Win: MSMAIL.INI Entries in [Mac File Types]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists and explains all the entries in the Microsoft Mail for
+Windows private profile, MSMAIL.INI, that are contained in the [Mac File Types]
+section.
+
+[Mac FileTypes]
+
+Entries in this section map Macintosh file type and creator tags to MS-DOS file
+extensions. Mail uses them to determine what application to launch on a file
+attachment that has been sent from a Macintosh mail client. There are two
+alternative forms for the entries:
+
+   creator:type=.extension
+
+   or
+
+   :type=.extension
+
+Both the creator and type are sequences of four characters (possibly including
+blanks). For example
+
+   :TEXT=.DOC
+
+will launch the application associated with the extension .DOC (for example, Word
+for Windows) on any Macintosh file of type TEXT.
+
+Additional query words: 3.00 3.00b 3.20 Mac File Types
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

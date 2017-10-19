@@ -1,0 +1,57 @@
+DOCUMENT:Q139472  17-DEC-2000  [win95x]
+TITLE   :ESS488 Sound Card Cannot Be Configured for IRQ 10
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to manually configure an ESS488 sound card in Device Manager, you
+may not be able to configure the card to use IRQ 10, even though you have
+configured the card itself to use IRQ 10.
+
+CAUSE
+=====
+
+Many ESS488 sound cards have been modified so that you can use IRQ 7, but not
+IRQ 10. The documentation included with the sound card may not reflect that this
+modification has been made.
+
+RESOLUTION
+==========
+
+To work around this behavior, configure the card to use IRQ 7 instead of IRQ 10.
+If IRQ 7 is not available, configure the card to use IRQ 3 or 5, or reconfigure
+other devices in your computer so that IRQ 7 is available. The card can also be
+configured for IRQ 2, but this is not recommended because IRQ 2 is used by the
+Peripheral Interrupt Controller (PIC).
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

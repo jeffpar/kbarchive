@@ -1,0 +1,64 @@
+DOCUMENT:Q265359  08-AUG-2001  [winnt]
+TITLE   :Error Message "Unknown Registry Failure: Service NDIS WAN"
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP3
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you finish configuring the Remote Access Service (RAS) on a Microsoft
+Windows NT Server 4.0-based computer that is running Service Pack 3 (SP3), you
+may receive the following error message:
+
+   Unknown registry failure: service NDIS WAN
+
+WORKAROUND
+==========
+
+To work around this behavior, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Right-click Modems, click the modem listed, and then click Remove. Do this
+   for all the modems on the list.
+
+3. Restart the computer.
+
+4. Reinstall the modems and the RAS.
+
+5. Reapply SP3.
+
+6. Restart the computer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp3 kbWinNTS400search
+Version           : :4.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

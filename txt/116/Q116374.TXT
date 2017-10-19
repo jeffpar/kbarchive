@@ -1,0 +1,75 @@
+DOCUMENT:Q116374  26-JUL-2001  [visualc]
+TITLE   :FIX: >251 Character Lines in Workbench Cause Random Behavior
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbide kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Workbench for Windows, version 1.0, used with:
+    - Microsoft Visual C++, versions 1.0, 1.5, 1.51 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Visual Workbench does not allow a user to type more than 251
+characters on a single line. Depending on the version, the Visual Workbench will
+either truncate the line past the 251 character limit or ask if the offending
+line(s) should be wrapped onto the next line. This behavior can cause problems
+in resource files (.RC files) or other project files in which the addition of a
+carriage return is undesirable.
+
+In Visual C++ for Windows versions 1.0, 1.5 and 1.51, it is possible to load a
+file with more than 251 characters on a single line. In this case unexpected
+results can occur, including the following:
+
+ - A search-and-replace on the >251-character line may result in a general
+   protection fault.
+
+-or-
+
+ - Editing the >251-character line may change the color of the background or
+   text in the edit window.
+
+RESOLUTION
+==========
+
+To work around the problem, you must shorten line length to 251 characters or
+less.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was fixed in Microsoft Visual C++, 32-bit Edition,
+version 4.0.
+
+Additional query words: 1.00 1.50 1.51 2.00 2.10
+
+======================================================================
+Keywords          : kbide kbVC kbbuglist kbfixlist
+Technology        : kbVSsearch kbAudDeveloper
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

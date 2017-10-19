@@ -1,0 +1,76 @@
+DOCUMENT:Q252712  22-JUN-2001  [exchange]
+TITLE   :XCLN: "The Page Cannot Be Displayed" Adding an Attachment in OWA
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you add an attachment to a new e-mail message by using Outlook Web Access
+(OWA), the following error message may be displayed:
+
+   The page cannot be displayed
+
+The following event is logged in the application event log on the Microsoft
+Internet Information Service (IIS) OWA server:
+
+   Event ID: 2016
+   Source: MSExchangeWeb
+   Description: "End of the data reached while looking for token"
+
+This problem may also occur when you try to open an e-mail attachment by using
+Microsoft Internet Explorer 5.
+
+CAUSE
+=====
+
+This problem may occur because the OWA virtual directory is configured with
+Microsoft Windows NT Challenge\Response (NTLM) authentication only.
+
+WORKAROUND
+==========
+
+To work around this problem, configure the OWA virtual directory to use
+Anonymous authentication in addition to NTLM authentication.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Outlook Web Access
+version 5.5.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

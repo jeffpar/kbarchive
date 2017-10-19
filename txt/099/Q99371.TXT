@@ -1,0 +1,65 @@
+DOCUMENT:Q99371  08-AUG-2001  [winnt]
+TITLE   :Err Msg: The Name Already Exists on the Network
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message is displayed during the user authentication phase of
+the remote login process:
+
+   Error 642: The name already exists on the network.
+
+CAUSE
+=====
+
+This error message is usually generated when both the Remote Access Service
+(RAS) client and server are already connected via a local area network (LAN).
+When you try to log on to the network via RAS, the network discovers that your
+computer name is already registered on the LAN.
+
+RESOLUTION
+==========
+
+There are two ways to work around this error message. The first and recommended
+way is to disconnect your LAN cabling before using RAS. The second is to
+reconfigure the RAS server security access to "This computer only." (You can
+change the security access from the Network option in Control Panel.) Although
+the second method enables you to connect via RAS, it is not recommended because
+you will create multiple paths to the RAS server. This does not ensure network
+session stability.
+
+Additional query words: prodnt err msg errmsg
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

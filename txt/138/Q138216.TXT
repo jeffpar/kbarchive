@@ -1,0 +1,68 @@
+DOCUMENT:Q138216  08-NOV-2001  [homemm]
+TITLE   :World of Flight: Peeled Sections Overlap
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft World of Flight for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you peel back skin on an aircraft in some portions in World of Flight, some
+of the peel-away sections overlap.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft World of Flight for
+Windows, version 1.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base at it becomes available.
+
+RESOLUTION
+==========
+
+Turn on the Sound Effects/Animations setting.
+
+To turn Sound Effects/Animations on, do the following:
+
+1. Click the Options button.
+
+2. On the Options menu, click Audio/Video.
+
+3. In the area below the Sound Effects/Animations option, click On.
+
+MORE INFORMATION
+================
+
+When you place your mouse pointer over the area you peeled from the aircraft,
+the piece of skin returns.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm peelaway peel peeled peeling
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbWorldofFlight
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

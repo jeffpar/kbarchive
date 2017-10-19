@@ -1,0 +1,68 @@
+DOCUMENT:Q162790  21-FEB-2002  [winnt]
+TITLE   :Auto Arrange Activates Itself in Copied User Profiles
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When copying a profile from a reference account to Default User, the Auto
+Arrange attribute activates for all users using that copied profile.
+
+For example:
+
+Create a reference account that contains all the desktop properties wanted for
+new users. Ensure that Auto Arrange is not selected and some icons are placed in
+the center of the screen. Log off and then log on as administrator. In Control
+Panel, double-click the System icon. Click the User Profiles tab and select the
+profile for the reference account. Click Copy To and select
+%SystemRoot%\Profiles\Default User.
+
+Create a new user account and log on as that user. You will find that the new
+user has all the desktop properties needed; however, any icons that had been
+placed in certain locations in the original profile are now all arranged on the
+left side of the screen. The Auto Arrange property has automatically been
+applied whether it was manually selected or not.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: placement location justified aligned
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

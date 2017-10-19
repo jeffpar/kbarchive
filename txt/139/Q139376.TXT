@@ -1,0 +1,54 @@
+DOCUMENT:Q139376  12-JUN-2001  [sna]
+TITLE   :SNA Server Does Not Support Printer LU Pools
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbsetup sna4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SNA Server does not support Printer LU Pools because it would be impossible
+to predict where a user's host print output would be sent. If users each
+print to their own printer LU, the SNA Server administrator will need to
+define an SNA Server user record for each user and assign them the specific
+display and printer LU.
+
+Note that the printer LU where a user's host print job is routed depends on
+the user configuration at the host end, not in SNA Server.
+
+NOTE: SNA Server 3.0 implements the use of an Associated Printer LU. This
+feature allows an Administrator to associate a specific 3270 printer LU
+with a 3270 Printer LU. The [ASCII 147]Pool contains Associated Printers[ASCII 148] option in
+the General tab of the 3270 Pool Properties is intended for users whose
+host ap
+lications have direct relationships between display LUs and printer LUs. If
+this option is selected, all display LUs will be treated as though they
+have an associated printer.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbsetup sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

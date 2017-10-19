@@ -1,0 +1,55 @@
+DOCUMENT:Q139031  03-AUG-2001  [visualc]
+TITLE   :DOC: Title Tips for Project Workspace Window Not Documented
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbdocerr kbide kbVC kbVC400 kbVC410 kbVC420 kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.0, 4.1, 4.2 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.0, 4.1, 4.2 
+ - Microsoft Visual C++, 32-bit Learning Edition, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Right-clicking the Project Workspace window displays a menu showing Title Tips
+as an option that can be toggled on or off. However, Title Tips are not
+documented or explained anywhere.
+
+MORE INFORMATION
+================
+
+Title Tips cause the selected text to be completely displayed even if another
+window is overlapping that portion of the Project Workspace window. For example,
+the file list displays several files, but the last few letters of each file name
+are not shown because the Project window is too small. If Title Tips are enabled
+and a file name is selected, the entire file name is displayed by extending the
+name past the edge of the Project Workspace window.
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbdocerr kbide kbVC kbVC400 kbVC410 kbVC420 kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q233976  12-JUL-2001  [win95x]
+TITLE   :Cannot Retrieve UserName Property in Windows Script Host
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbProgramming kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to retrieve the UserName property using the WScript.Network
+object in a Windows 95/98 logon script, you receive a null value. In some cases
+you may also receive an error code of 800704DD.
+
+CAUSE
+=====
+
+This issue occurs because a Windows 95/98 logon script is run before the logon
+process is complete.
+
+RESOLUTION
+==========
+
+To work around this issue, use a While loop to continue to retrieve the value as
+long as it remains null.
+
+The following VBScript code is a sample of how to implement the workaround.
+
+   On Error Resume Next
+   Dim strUserName
+   Set WSHNetwork = CreateObject("WScript.Network")
+   While strUserName = ""
+       strUserName = WSHNetwork.UserName
+   WEnd
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbProgramming kbtool 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

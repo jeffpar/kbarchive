@@ -1,0 +1,74 @@
+DOCUMENT:Q99118  06-MAY-2001  [pcmail]
+TITLE   :PC Forms: E-Form Causes GP Fault
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,2.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+ - Microsoft Visual Basic Standard Edition for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to access a custom form created using version 1.0 of Microsoft
+Electronic Forms Designer, a Windows general protection fault (GP fault) may
+occur.
+
+CAUSE
+=====
+
+This problem occurs when you choose the Run command from within Visual Basic
+before the executable file (EXE) is built.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Visual Basic version 2.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If you create a custom form within Visual Basic and issue the Run command from
+the Toolbar (or if you choose Start from the Run menu), the executable file
+created using the Make .EXE command may be corrupted. If you run the project at
+design time, perform the following steps before you create an executable file:
+
+1. From the File menu, choose Save Project to save the project.
+
+2. From the File menu, choose Exit to close Visual Basic.
+
+3. Re-launch Visual Basic and open the E-form project.
+
+4. From the File menu, choose Make EXE to build the project.
+
+Additional query words: 1.00 2.00 gpf
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,2.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

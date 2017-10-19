@@ -1,0 +1,58 @@
+DOCUMENT:Q110837  07-MAY-2002  [homegame]
+TITLE   :Altimeter Does Not Display Meters
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Units Of Measure is set to Metric(Alt Meters) the altimeter does NOT
+display altitude in meters. (The Units Of Measure option is available by
+clicking Preferences from the Options menu, and clicking Country.)
+
+MORE INFORMATION
+================
+
+When Units Of Measure is set to Metric(Alt Meters), all menus and dialog boxes
+in Flight Simulator 5.0 will show altitude information in meters. For example,
+altitudes for cloud layers will be shown in meters in the Clouds dialog box when
+you click Weather from the World menu.
+
+However, the altimeter always shows altitude in feet. In actual aviation
+situations, altitude is always measured in feet regardless of the unit of
+measurement commonly used in a country.
+
+Additional query words: 5.00 flightsim fltsim dos FS5 kilometers
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,64 @@
+DOCUMENT:Q198706  04-MAR-2002  [sms]
+TITLE   :SMS: Software Metering Components on the Client
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbRegistry kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Software Metering (SWM) client agent must be configured correctly in order
+to perform, set up a SWM server, and configure the Tool itself. The client
+machine itself holds no configurable aspect of SWM. All the client agent
+configuration is done through the MMC Systems Management Server Administrator
+Snap-In. The client machine does hold the SWM agent, Licclint.exe (32-bit)
+Liccli95.exe (16-bit).
+
+However, there are several SWM components installed on the client. The first is
+the agent (or .exe) itself. The second is the adding of the SWM directory
+structure. You can observe this by the LICMTR directory located as a
+sub-directory of %windir%\ms\sms\clicomp. This is where the SWM agent's .exe
+file will be stored along with the client's SWM data files.
+
+Finally, two registry keys are added on the client:
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Sites\<site
+   code>\LICENSE_METERING - which indicates where the SWM license servers for
+   the site reside (the client has randomly picked these),
+
+   -and-
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Client Components\LICENSE
+   METERING - which is the component information for the client.
+
+Additional query words: prodsms swmeter
+
+======================================================================
+Keywords          : kbRegistry kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

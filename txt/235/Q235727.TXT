@@ -1,0 +1,64 @@
+DOCUMENT:Q235727  11-JUL-1999  [sms]
+TITLE   :SMSINST: Repackage Does Not Detect Deleted Reg Keys and Values
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer versions 2.0, 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Systems Management Server Installer fails to detect deleted registry keys during
+the repackaging process. This problem may be found when trying to repackage the
+unintstallation of an application. Use the Script Editor to manually delete the
+desired registry keys by modifying the Systems Management Server Installer
+script with the Edit Registry action.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+This functionality is included in versions of Systems Management Server
+Installer 2.0.91.00 and higher.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

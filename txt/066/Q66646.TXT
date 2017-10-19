@@ -1,0 +1,62 @@
+DOCUMENT:Q66646  31-OCT-1999  [utilities]
+TITLE   :PRB: U4007 Error Can Be Caused By Missing Quotation Marks
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:NT:1.4; OS/2:1.11,1.12,1.13,1.21
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NMAKE Utility for OS/2, versions 1.11, 1.12, 1.13, 1.21 
+ - Microsoft NMAKE Utility for Windows NT, version 1.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to use a makefile that uses the long filenames available in OS/2 or
+Windows NT fails and NMAKE generates the following message:
+
+   U4007: file name too long: truncating to 8.3
+
+RESOLUTION
+==========
+
+Place quotation marks around the long filenames.
+
+STATUS
+======
+
+NMAKE 1.5 (included in Visual C++ 2.0) will handle long filenames.
+
+MORE INFORMATION
+================
+
+For more information about this behavior, please refer to the README.DOC file
+provided with Microsoft C version 6.0 for OS/2, or to the NMAKE.WRI file
+provided with Visual C++ 32-bit Edition version 1.0.
+
+Additional query words: 1.40
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE111OS2 kbNMAKE112OS2 kbNMAKE113OS2 kbNMAKE121OS2 kbNMAKE140NT
+Version           : NT:1.4; OS/2:1.11,1.12,1.13,1.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

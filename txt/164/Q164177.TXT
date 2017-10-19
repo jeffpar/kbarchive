@@ -1,0 +1,77 @@
+DOCUMENT:Q164177  19-DEC-1999  [exchange]
+TITLE   :XFOR: Error 2410 When Starting the MSMI
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Microsoft Mail Connector Interchange (MSMI), you may receive
+the following event:
+
+   Event ID: 2410
+   Type: Error
+   Source: MSExchangeMSMI
+   Category: Session Error
+   Description:
+
+   MS Mail Connector Interchange has failed to establish a session
+   with the Directory services. The return code is 0x105.
+
+CAUSE
+=====
+
+The MSMI cannot establish a session with the Exchange directory service. The
+MSMI still starts and appears to run, but it will not deliver any mail. This
+occurs if the System Account is selected instead of the Exchange service
+account.
+
+RESOLUTION
+==========
+
+To resolve this problem, check the startup parameters for the MSMI. Make sure
+"This Account" is selected in the Log On As box and the Exchange service account
+is selected.
+
+To verify this:
+
+1. Open Control Panel.
+
+2. Double-click the Services icon.
+
+3. Double-click the Microsoft Mail Connector Interchange service.
+
+4. Verify that the Exchange service account is listed as the startup account.
+
+Additional query words: queued queue
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

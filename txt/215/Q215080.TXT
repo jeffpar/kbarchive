@@ -1,0 +1,87 @@
+DOCUMENT:Q215080  16-NOV-2000  [sms]
+TITLE   :SMS: Setup Packages Requiring Mapped Drives May Not Work
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a package is distributed that requires the running of multiple programs
+(for example, Microsoft Setup Toolkit) and the use of mapped drives, the setup
+process may not be completed as expected because the drive mapping is removed
+after the first program has completed running. Under this scenario, the initial
+setup executable file appears to start other subsequent setup programs, but the
+process is ultimately unsuccessful.
+
+CAUSE
+=====
+
+This issue occurs because Advertised Programs Manager (APM) disconnects the
+installation drive after the initial package command has completed running. If
+the initial setup command starts another program to complete the installation of
+the package, the second program no longer has access to the network location
+through a drive letter.
+
+APM indicates that the running of the package was successful, therefore it
+terminates and no error is recorded in the logs.
+
+WORKAROUND
+==========
+
+To work around this issue, use a wrapper program such as SMS Installer. A
+wrapper can be used to script the running of the software or to copy the
+software locally before proceeding with installation. Note that not all wrapper
+programs are suitable for all situations.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 2.0.
+
+MORE INFORMATION
+================
+
+The 32-bit clients may exhibit this behavior only if the package requires a
+drive letter. Thirty-two-bit advertisements have the option of installing from
+Universal Naming Convention (UNC) connections, which do not require a drive
+letter.
+
+For 16-bit clients, APM16 always creates a drive mapping.
+
+SMS Installer can be found on the SMS 2.0 compact disc in the Smssetup\Sms_inst
+folder. For more information about using SMS Installer, refer to online Help,
+installed with SMS Installer.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

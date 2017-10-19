@@ -1,0 +1,94 @@
+DOCUMENT:Q185562  06-AUG-2002  [homegame]
+TITLE   :Golf 98/99 Err Msg: Requires Windows 95 with DirectX...
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtlc kbimu msgame golf98kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 1998 Edition, version 1.0 
+ - Microsoft Golf 1999 Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Golf 1998 Edition, you may receive the following error
+message:
+
+   Microsoft Golf 1998 requires Windows 95 with DirectX 5.0 or higher.
+
+When you start Microsoft Golf 1999 Edition, you may receive the following error
+message:
+
+   Microsoft Golf 1999 requires Windows 95 with DirectX 6.0 or higher.
+
+CAUSE
+=====
+
+This behavior can occur if the Findstuff32.dll file is missing or damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, delete the Findstuff32.dll file and then reinstall Golf.
+To do this, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the following line (including the quotation marks), and
+   then click OK
+
+   <drive>:\Program Files\Microsoft Games
+
+   where <drive> is the drive letter of the hard disk on which Golf is
+   installed.
+
+3. Double-click the Golf '98 or the Microsoft Golf 1999 Edition folder.
+
+4. Click the Findstuff32.dll file (if present), and then press the DELETE key.
+   If you are prompted to confirm the file deletion, click Yes.
+
+5. Close the Golf '98 or the Microsoft Golf 1999 Edition window.
+
+6. Insert the Golf CD-ROM into the CD-ROM drive. Press and hold down the SHIFT
+   key when you insert the Golf CD-ROM to prevent Golf from starting
+   automatically.
+
+7. Click Start, and then click Run.
+
+8. In the Open box, type the following line, and then click OK
+
+   <drive>:\setup.exe
+
+   where <drive> is the drive letter of the CD-ROM drive.
+
+9. Click Reinstall, and then follow the instructions on the screen to reinstall
+   Golf. If you are prompted to restart the computer, do so.
+
+Additional query words: 1.00 msgame golf98 golf99
+
+======================================================================
+Keywords          : kberrmsg kbtlc kbimu msgame golf98 kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolf98 kbGolf99 kbGolfSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

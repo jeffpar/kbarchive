@@ -1,0 +1,66 @@
+DOCUMENT:Q142611  08-AUG-2001  [winnt]
+TITLE   :WOW: GP Fault in Ddeml.dll Using Visual Basic Application
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:kbProgramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+16-bit Windows Visual Basic applications using dynamic data exchange (DDE) for
+inter-process communications may return a general protection fault (GPF) under
+Windows NT 3.51.
+
+This problem only occurs using Windows NT 3.51; the application does not fail
+using Windows NT 3.1 or 3.5
+
+CAUSE
+=====
+
+Windows NT 3.51 added error detection code to Ddeml.dll to validate DDE data
+structures. Applications that previously were successful may now fail with a GPF
+when passing invalid DDEDATA to DdeFreeDataHandle.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbProgramming 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

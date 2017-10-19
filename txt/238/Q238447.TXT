@@ -1,0 +1,68 @@
+DOCUMENT:Q238447  18-SEP-1999  [exchange]
+TITLE   :XADM: Event 6206 after Lotus Notes Directory Synchronization
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you perform a directory synchronization (dirsync) with Lotus Notes, there
+may be 6206 events in the event log similar to the following:
+
+   Source: MSExchangeNOTES
+   Event ID: 6206
+   Type: Warning
+
+   MS Exchange Reports: Unable to process custom recipient
+   f7afa2e9-b053f1db-852567be-4a3f83 because target address NOTES:Ralph
+   Jones/LotusOrg@LotusOrg has already been assigned to Address Book entry
+   /o=Ibiza/ou=Shuffletown/cn=Notes Recipients/cn=RalphJ.
+
+CAUSE
+=====
+
+This event occurs because an Exchange Server custom recipient has been created
+for this Lotus Notes user prior to the dirsync process. When the
+Notes-to-Exchange Server dirsync is started, Exchange Server cannot create a
+custom recipient because a custom recipient already exists in Exchange Server
+for that user.
+
+MORE INFORMATION
+================
+
+This problem only occurs after you perform a Notes-to-Exchange Server dirsync,
+and occurs after both an immediate full reload and an immediate update.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,87 @@
+DOCUMENT:Q245135  10-AUG-2001  [winnt]
+TITLE   :Error Occurs While Windows NT Server 4.0 Setup Copies Files.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Microsoft Windows NT Server 4.0 on your computer, you
+may receive the following error message during the text-based portion of the
+setup process:
+
+   Setup cannot set required Windows NT configuration information. This
+   indicates an internal setup error. Please contact your group or system
+   administrator.
+
+NOTE: This may occur after the Setup program has copied about 98 percent of the
+files to your hard disk.
+
+CAUSE
+=====
+
+This behavior can occur because of either a hardware defect or a virus.
+
+RESOLUTION
+==========
+
+To resolve this behavior, run some hardware diagnostic programs:
+
+1. Run the Chkdsk utility using the appropriate method:
+
+    - If Windows NT Server 4.0 is the only operating system installed on the
+      computer, run the Chkdsk utility from an MS-DOS startup disk.
+
+    - If the computer also has one or more different operating systems
+      installed, type the following command at a command prompt, and then press
+      ENTER:
+
+   chkdsk /f /r
+
+   NOTE: The /f option fixes any errors that the Chkdsk utility finds; the /r
+   option conducts a surface scan of the hard disk.
+
+2. Use a third-party hardware diagnostic program to check for any malfunctions
+   with the hard disk.
+
+3. Use a virus-scanning program to scan the hard disk for possible viruses.
+
+4. If applicable and possible, restore Windows NT Server 4.0 from a backup
+   copy.
+
+   NOTE: If this behavior persists after you run the diagnostic programs and
+   allow the programs to repair what they can, you may need to replace the hard
+   disk.
+
+Additional query words: chkdsk hardware
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

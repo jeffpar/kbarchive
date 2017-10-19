@@ -1,0 +1,68 @@
+DOCUMENT:Q296083  07-NOV-2001  [sna]
+TITLE   :SNA Server DLC Connection Fails Through Cisco DLSw and VLAN
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0,4.0
+OPER/SYS:
+KEYWORDS:kbDSupport sna4 tslic_tslic
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 4.0 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Data Link Control (DLC) connection is activated in SNA Server or Host
+Integration Server (HIS) 2000 and the connection is through a Cisco Systems
+router that is implementing Data Link Switching (DLSw) (DLC protocol tunneled in
+IP) in a virtual LAN (VLAN) Ethernet environment, the connection attempt may
+fail. The application event log may post an event 230, "remote station not
+responding." If the VLAN software is shut down so only DLSw is operational, the
+connection attempt will be successful. If several Host Integration Server 2000
+or SNA Server servers are on one segment, another symptom is that some but not
+all of the servers will connect, but not the same servers each time.
+
+CAUSE
+=====
+
+SNA Server or Host Integration Server 2000 is sending polls to the destination
+address specified in the connection configuration, but no response is returned
+from the destination.
+
+RESOLUTION
+==========
+
+Update the Cisco routers that are implementing the VLAN and switching "fabric"
+to IOS release 12.1.6.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport sna4 tslic_tslic 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ400
+Version           : :3.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

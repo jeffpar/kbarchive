@@ -1,0 +1,105 @@
+DOCUMENT:Q193783  21-AUG-1999  [foxpro]
+TITLE   :HOWTO: Use the _ShortCutMenu Foundation Class
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a shortcut menu using the _ShortCutMenu
+Foundation Class in the _menu.vcx class library.
+
+MORE INFORMATION
+================
+
+The _ShortCutMenu Foundation Class allows you to bold, disable, and place a
+check mark next to the menu prompt.
+
+The following example shows how to use the _ShortCutMenu Foundation Class:
+
+1. Create a form named Myshortmenu.
+
+2. Add the _ShortCutMenu class, located in the _menu.vcx, to the form. The
+   _menu.vcx file resides in the Home()\FFC folder.
+
+3. Create two custom properties for the form, lcheck, and lbold. Next, create a
+   custom method, called Myproc, for the form.
+
+4. In the RightClick event of the form, place the following code:
+
+         PRIVATE oTHISForm
+         oTHISFORM = Thisform
+         Thisform._shortcutmenu1.ClearMenu
+
+         WITH Thisform._shortcutmenu1
+            .AddMenuBar("AAA",[wait window "AAA"])
+            .AddMenuSeparator()
+            .AddMenuBar("Check/UnCheck CCC",[oTHISFORM.myproc(prompt())])
+            .AddMenuBar("BBB",[wait window "BBB"])
+            .AddMenuBar("CCC",[wait window "CCC"],,,oTHISFORM.lcheck)
+            .AddMenuBar("DDD",[wait window "DDD"],,,,.T.)
+           .AddMenuBar("EEE",[oTHISFORM.myproc(prompt())],,,,,oTHISFORM.lbold)
+         ENDWITH
+
+         Thisform._shortcutmenu1.ShowMenu()
+
+5. In the custom Myproc method, place the following code:
+
+         PARAMETER cPrompt
+
+         DO CASE
+            CASE cPrompt = "Check/UnCheck CCC"
+               IF Thisform.lcheck
+                  Thisform.lcheck = .F.
+                  WAIT WINDOW "PPP is now unchecked" NOWAIT
+               ELSE
+                  Thisform.lcheck = .T.
+                  WAIT WINDOW "PPP is now checked"  NOWAIT
+               ENDIF
+            CASE cPrompt = "EEE"
+               IF Thisform.lbold
+                  Thisform.lbold = .F.
+               ELSE
+                  Thisform.lbold = .T.
+               ENDIF
+         ENDCASE
+
+6. Save and run the form.
+
+Right-click the form and select "Check/UnCheck CCC" to either place or remove a
+check mark next to the "CCC" menu prompt. A WAIT WINDOW command appears each
+time you toggle the check mark. Select the "EEE" prompt to toggle the bold face
+on or off.
+
+Additional query words: kbVFp600 kbFFC
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

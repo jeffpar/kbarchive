@@ -1,0 +1,70 @@
+DOCUMENT:Q148756  25-JUL-2002  [homegame]
+TITLE   :Return of Arcade: Game Does Not Install/Start on Windows 2000/NT
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbusagekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Return of Arcade for Windows, version 1.0 
+ - Microsoft Return of Arcade, Anniversary Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you try to install Return of Arcade on a computer that is running Windows
+3.x, Windows NT, Windows 2000, you may receive either of the following error
+messages:
+
+   This Setup program is not intended to be used with your version of Windows.
+
+   -or-
+
+   Microsoft Return of Arcade Anniversary Edition is not supported by your
+   current operating system. Please refer to the system requirements on the
+   product box or in the Readme file on the CD for operating systems that
+   support the game.
+
+MORE INFORMATION
+================
+
+Return of Arcade package information states that the program requires the
+Microsoft Windows 95 or later operating system.
+
+
+REFERENCES
+==========
+
+For additional information about the minimum system requirements for Return of
+Arcade, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q148735 Return of Arcade: Minimum System Requirements
+
+Additional query words: 1.00 errors win3.x roa setup nt
+
+======================================================================
+Keywords          : kbenv kberrmsg kbusage kbfaq
+Technology        : kbGamesSearch kbArcadeRet kbZNotKeyword kbArcadeSearch kbZNotKeyword3
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

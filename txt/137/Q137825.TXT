@@ -1,0 +1,60 @@
+DOCUMENT:Q137825  17-DEC-2000  [win95x]
+TITLE   :How to Be Prompted for Optional Parameters for MS-DOS Program
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to cause a dialog box to appear and prompt you for
+optional parameters when you run an MS-DOS-based program in Windows 95.
+
+MORE INFORMATION
+================
+
+To cause a dialog box to prompt you for optional parameters when you run an
+MS-DOS-based program, follow these steps:
+
+1. Use the right mouse button to click the program's shortcut, and then click
+   Properties on the menu that appears.
+
+2. On the Program tab, add a space and a question mark to the end of the command
+   in the Cmd Line box.
+
+   For example, to cause a dialog box to prompt you for optional parameters when
+   you run an MS-DOS prompt, you would modify the Cmd Line box entry to read:
+
+   c:\windows\command.com ?
+
+3. Click OK.
+
+Additional query words: switches
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

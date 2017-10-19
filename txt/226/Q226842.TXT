@@ -1,0 +1,66 @@
+DOCUMENT:Q226842  22-OCT-2000  [sms]
+TITLE   :SMS: Importing New License MIF File Overwrites License Info
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms kbsms200 kbsms200bug kbsmsMeter kbsms200preSP3 kbsms200preSP2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you want to increase the number of available licenses for a particular
+product that is being metered by software metering, one option is to import a
+license Management Information Format (MIF) file, which contains the additional
+license information. When you do this, the number of licenses is not increased
+in an additive fashion but, rather, is overwritten by the new value contained in
+the MIF file.
+
+CAUSE
+=====
+
+When an MIF file is imported for a program that already exists, and the MIF file
+contains identical parameters as a program that is already being metered, the
+existing parameters are overwritten.
+
+WORKAROUND
+==========
+
+To work around this issue, make sure that any import MIF files reflect the total
+available licenses rather than the number of licenses to be added.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms kbsms200 kbsms200bug kbsmsMeter kbsms200preSP3 kbsms200preSP2 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

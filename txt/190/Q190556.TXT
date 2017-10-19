@@ -1,0 +1,72 @@
+DOCUMENT:Q190556  23-APR-1999  [exchange]
+TITLE   :XADM: Corrupted MIME Encoding Causes Information Store to Crash
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc55sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An incoming Internet Mail message causes the information store to crash.
+
+CAUSE
+=====
+
+Messages sent over the Internet are encoded at the sending end and decoded at
+the receiving end. If Base64 encoding is used and for some reason is corrupted
+or improperly encoded, the decoding logic in the information store causes an
+access violation, resulting in an information store crash.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 5.0 and 5.5.
+
+
+
+
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

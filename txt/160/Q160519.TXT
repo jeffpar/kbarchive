@@ -1,0 +1,67 @@
+DOCUMENT:Q160519  09-AUG-2001  [winnt]
+TITLE   :DNS Queries for Root Name Servers Every Hour
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You observe the Domain Name Service (DNS) querying for the root name servers at
+one hour intervals.
+
+CAUSE
+=====
+
+A thread meant to check the time-to-live (TTL) values of the cache file records
+every hour also inadvertently queries for the root name servers every hour.
+
+RESOLUTION
+==========
+
+Apply Windows NT 4.0 Service Pack 2 or greater to fix this.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+A supported fix is now available, but has not been fully regression tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

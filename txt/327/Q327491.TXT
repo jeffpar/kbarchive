@@ -1,0 +1,84 @@
+DOCUMENT:Q327491  07-AUG-2002  [sna]
+TITLE   :INFO: SNA Server 4.0 Clients Not Supported on Windows XP
+PRODUCT :Microsoft SNA Server
+PROD/VER::4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+OPER/SYS:
+KEYWORDS:sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server 4.0 clients are not supported on Windows XP.
+
+MORE INFORMATION
+================
+
+The following are the supported platforms for the SNA Server 4.0 Service Pack 4
+clients:
+
+SNA Server Client for Microsoft Windows 95 and Windows 98:
+
+ - Windows 95
+
+ - Windows 98
+
+ - Windows Millennium Edition (Windows Me)
+
+ - Windows NT 4.0 Workstation
+
+ - Windows 2000 Professional
+
+ - Windows Server Operating Systems (see the SNA Server 4.0 Service Pack 4
+   Readme.txt for specific information)
+
+SNA Server Client for Windows NT:
+
+ - Windows NT 4.0 Workstation
+
+ - Windows 2000 Professional
+
+ - Windows Server Operating Systems (see the SNA Server 4.0 Service Pack 4
+   Readme.txt for specific information)
+
+SNA Server 4.0 was originally released in November 1997. The latest service pack
+for SNA Server 4.0 is Service Pack 4, which was released in November 2000.
+Microsoft Host Integration Server 2000 was released in August 2000 as the next
+release of SNA Server.
+
+Since the release of Windows XP, in October 2001, a decision was made to
+concentrate on Host Integration Server 2000 and its compatibility with Windows
+XP Professional. Based on this decision, compatibility testing for the SNA
+Server 4.0 clients on Windows XP has not occurred. There are no plans to do this
+testing in the future.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

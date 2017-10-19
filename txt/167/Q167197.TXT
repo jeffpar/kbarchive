@@ -1,0 +1,66 @@
+DOCUMENT:Q167197  01-MAY-1999  [exchange]
+TITLE   :XFOR: Using Imcext.dll May Incorrectly Format Message Headers
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the IMC Sample Extension DLL (Imcext.dll) included in the Microsoft
+Exchange Server 4.0 Technical Resource Kit to reroute messages by way of the
+Internet Mail Connector (IMC), messages to some domains may fail, generating
+errors in the SMTP protocol log. Depending on the mailer, the result error codes
+may be:
+
+   invalid address in SMTP envelope, '<' missing
+
+   -or-
+
+   501 strangeness between : and <
+
+CAUSE
+=====
+
+RFC 821 states that all envelope information should be enclosed in angle
+brackets. When you use the Imcext.dll in conjunction with the IMC, these
+brackets are stripped from the RCPT TO field. This is not a problem with the
+majority of SMTP mailers, but some later implementations do not allow this.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the IMC Sample Extension DLL
+included in the Microsoft Exchange Server 4.0 Technical Resource Kit. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

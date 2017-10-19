@@ -1,0 +1,79 @@
+DOCUMENT:Q141981  03-MAR-2001  [pcmail]
+TITLE   :SMTP: How to Identify if ADPROC.EXE Has Replaced SMTPGET.EXE
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+ - Microsoft Mail Gateway to AT T, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install the Gateway Address Pre-Processor version 2.0 for AT&T
+Mail, the setup program will replace the SMTPGET.EXE in your mail executable
+directory.
+
+The following information shows how you can check to see if the SMTPGET.EXE was
+replaced during setup.
+
+MORE INFORMATION
+================
+
+To determine if the SMTPGET.EXE has been replaced, run the following command in
+the mail executable directory:
+
+   SMTPGET -ver
+
+If the above command returns the following results, the SMTPGET.EXE has been
+replaced with the SMTPGET.EXE from AT&T Pre-Processor 2.0 for AT&T
+Mail.
+
+   Module: ADPROC.EXE
+   Version: 2.00 RELEASE
+   SMTP Address Processor for the Microsoft Mail SMTP Gateway and
+   the Microsoft Mail to AT&T Gateway.
+   Copyright AT&T, All Rights Reserved.
+   10-0-0 No output file specified in command line.
+
+If the above command returns the following results, the SMTPGET.EXE is the file
+provided with the Microsoft Mail to SMTP Gateway 3.x.
+
+   FFAPI: Gateway Get Proc: 094(0)
+   Revision: 3.00.1072 Release (Mail: 3.0.1100 Coll: 3.0.1100)
+   Microsoft (R) Mail for PC Networks.
+   Copyright (C) 1991 Microsoft Corp. All Rights Reserved.
+   10 - No output file specified in command line.
+
+AT&T supports Microsoft Mail Gateway Address Pre-Processor 2.0 for AT&T
+Mail. Their support center number is 1-800-624-5672.
+
+
+Additional query words: 3.x at&t smtp
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateATT100 kbMailGateSMTP300
+Version           : MS-DOS:3.0; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

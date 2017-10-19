@@ -1,0 +1,57 @@
+DOCUMENT:Q123490  17-DEC-2000  [win3x]
+TITLE   :DocErr in WFWG 3.11 SETUP.TXT Mentions TIGA Drivers
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SETUP.TXT file included with Windows for Workgroups 3.11 incorrectly states
+that Windows for Workgroups ships with TIGA drivers.
+
+MORE INFORMATION
+================
+
+The "Displays That May Require Driver Updates with Windows for Workgroups"
+section of the SETUP.TXT file states the following:
+
+   NOTE: Some DGIS-based adapters are TIGA-compatible and run well when used
+   with the appropriate TIGACD.EXE MS-DOS driver and with the TIGA driver
+   provided with Windows for Workgroups.
+
+The drivers for TIGA-based graphic cards no longer ship with Windows for
+Workgroups 3.11. (Texas Instruments manufactured these cards and no longer
+provides support for them.) However, it may be possible to use the TIGA drivers
+that shipped with Windows 3.1 or the SVGA drivers provided with Windows for
+Workgroups.
+
+Additional query words: 3.11 ti super vga graphics
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

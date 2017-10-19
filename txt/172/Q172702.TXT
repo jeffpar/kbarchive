@@ -1,0 +1,68 @@
+DOCUMENT:Q172702  16-JUL-2002  [accother]
+TITLE   :ODE97: Using Newer Version of Comctl32.ocx with ODE Applications
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+SUMMARY
+=======
+
+A new version of COMCTL32.OCX (version 5.00.3828) is now available from the
+Microsoft Download Center for download for users of Microsoft Office 97
+Developer Edition Tools and Microsoft Visual Basic 4.0. This new version fixes a
+couple of problems that exist with the 5.00.371 and 5.00.3422 versions of the
+file.
+
+For instructions about how to obtain the COMCTL32.OCX update, please see the
+following article in the Microsoft Knowledge Base::
+
+   Q167121 Updated Comctl32.ocx Version 5.00.3828 Available
+
+MORE INFORMATION
+================
+
+For more information about the changes in the new version of COMCTL32.OCX,
+please see the following articles in the Microsoft Knowledge Base:
+
+   Q167122 FIX: FindItem Method of ListView Incorrectly Returns an Error
+
+   Q167123 FIX: COMCTL32.OCX is Binary Incompatible with Previous Version
+
+The newer version of COMCTL32.OCX can be used in custom applications that you
+create using Microsoft Office 97 Developer Edition Tools.
+
+Additional query words: ODE
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Version           : :
+Hardware          : x86
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

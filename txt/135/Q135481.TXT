@@ -1,0 +1,630 @@
+DOCUMENT:Q135481  17-DEC-2000  [win95x]
+TITLE   :Windows 95 CD-ROM Config.txt File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the information in the Config.txt file from the
+Windows 95 CD-ROM. Setup copies this file to the Windows folder.
+
+MORE INFORMATION
+================
+
+  ----------------------------------------------------------------------
+           Microsoft Windows 95 README for MS-DOS Config.sys Commands
+                                 August 1995
+  ----------------------------------------------------------------------
+
+                 (c) Copyright Microsoft Corporation, 1995
+
+This document provides complementary or late-breaking information to
+supplement the Microsoft Windows 95 documentation.
+
+------------------------
+How to Use This Document
+------------------------
+
+To view Config.txt on screen in Notepad, maximize the Notepad window.
+
+To print Config.txt, open it in Notepad or another word processor,
+then use the Print command on the File menu.
+
+In syntax lines, lowercase text signifies replaceable parameters and
+uppercase text must be typed as it appears.
+
+NOTE: The Msdosdrv.txt file contains more Help for MS-DOS commands. Also
+you can type the name of the command at the command prompt, followed by
+a slash and question mark (/?). For example:
+   CHKDSK /?
+
+--------
+CONTENTS
+
+ACCDATE
+BREAK
+BUFFERS/BUFFERSHIGH
+COUNTRY
+DEVICE
+DEVICEHIGH
+DOS
+DRIVPARM
+FCBS/FCBSHIGH
+FILES/FILESHIGH
+INSTALL/INSTALLHIGH
+LASTDRIVE/LASTDRIVEHIGH
+NUMLOCK
+REM
+SET
+SHELL
+STACKS/STACKSHIGH
+SWITCHES
+---------
+
+ACCDATE
+=======
+
+For each hard disk, specifies whether to record the date that files are
+last accessed. Last access dates are turned off for all drives when
+your computer is started in safe mode, and are not maintained for floppy
+disks by default.
+
+Syntax
+
+    ACCDATE=drive1+|- [drive2+|-]...
+
+Parameters
+
+drive1, drive 2...
+    Specifies the drive letter.
+
++|-
+    Specify a plus sign (+) to indicate that the last access date should be
+    maintained for files on the drive. Specify a minus sign (-) to indicate
+    that the last access date should not be maintained for files.
+
+BREAK
+=====
+
+Sets or clears extended CTRL+C checking. You can use this command at the
+command prompt or in your CONFIG.SYS file.
+
+You can press CTRL+C to stop a program or an activity (file sorting, for
+example). Typically, MS-DOS checks for CTRL+C only while it reads from the
+keyboard or writes to the screen or a printer. If you set BREAK to ON, you
+extend CTRL+C checking to other functions, such as disk read and write
+operations.
+
+Syntax
+
+    BREAK [ON|OFF]
+
+To display the current BREAK setting at the command prompt, use the
+following syntax:
+
+    BREAK
+
+In your CONFIG.SYS file, use the following syntax:
+
+    BREAK=ON|OFF
+
+Parameter
+
+ON|OFF
+    Turns extended CTRL+C checking on or off.
+
+BUFFERS/BUFFERSHIGH
+===================
+
+Allocates memory for a specified number of disk buffers when your system
+starts. Use the BUFFERSHIGH command to load the buffers in the upper
+memory area. You can use these commands only in your Config.sys file.
+
+Syntax
+
+    BUFFERS=n[,m]
+    BUFFERSHIGH=n[,m]
+
+Parameters
+
+n
+    Specifies the number of disk buffers. The value of n must be in the
+    range 1 through 99.  The default is 30.
+
+m
+    Specifies the number of buffers in the secondary buffer cache. The
+    value of m must be in the range 0 through 8.  The default is 0 (no
+    secondary cache buffers).
+
+If you specify an invalid value for n or m, BUFFERs uses the default
+settings.
+
+COUNTRY
+========
+
+Enables MS-DOS to use country-specific conventions for displaying times,
+dates, and currency; for determining the order by which characters are
+sorted; and for determining which characters can be used in filenames. You
+can use this command only in your Config.sys file.
+
+The COUNTRY command configures MS-DOS to recognize the character set and
+punctuation conventions observed when using one of the supported languages.
+
+Syntax
+
+    COUNTRY=xxx[,[yyy][,[drive:][path]filename]]
+
+Parameters
+
+xxx
+    Specifies the country code.
+
+yyy
+    Specifies the character set for the country.
+
+[drive:][path]filename
+    Specifies the location and name of the file containing country
+    information.
+
+DEVICE
+======
+
+Loads into memory the device driver you specify. You can use this command
+only in your Config.sys file.
+
+Syntax
+
+    DEVICE=[drive:][path]filename [dd-parameters]
+
+Parameters
+
+[drive:][path]filename
+    Specifies the location and name of the device driver you want to load.
+
+[dd-parameters]
+    Specifies any command-line information required by the device driver.
+
+DEVICEHIGH
+==========
+
+Loads a device driver you specify into the upper memory area. Loading a
+device driver into the upper memory area frees more bytes of conventional
+memory for other programs. If upper memory is not available, the DEVICEHIGH
+command functions just like the DEVICE command.
+
+You can use this command only in your Config.sys file.
+
+Syntax
+
+    DEVICEHIGH [drive:][path]filename [dd-parameters]
+
+To specify the region(s) of memory into which to load the device driver,
+use the following syntax:
+
+    DEVICEHIGH [[/L:region1[,minsize1][;region2[,minsize2] [/S]]=
+    [drive:][path]filename [dd-parameters]
+
+Parameters
+
+[drive:][path]filename
+    Specifies the location and name of the device driver you want to load
+    into the upper memory area.
+
+dd-parameters
+    Specifies any command-line information required by the device driver.
+
+Switches
+
+/L:region1[,minsize1][;region2[,minsize2]...
+    Specifies one or more regions of memory into which to load the device
+    driver. By default, MS-DOS loads the driver into the largest free
+    upper memory block (UMB) and makes all other UMBs available for the
+    driver's use. You can use the /L switch to load the device driver into
+    a specific region of memory or to specify which region(s) the driver
+    can use.
+
+    To load the driver into the largest block in a specific region of upper
+    memory, specify the region number after the /L switch. For example, to
+    load the driver into the largest free block in region 4, you would type
+    /L:4. (To list the free areas of memory, type MEM /F at the command
+    prompt.)
+
+    When loaded with the /L switch, a device driver can use only the
+    specified memory region. Some device drivers use more than one area of
+    memory; for those drivers, you can specify more than one region. (To
+    find out how a particular device driver uses memory, issue the MEM /M
+    command and specify the device-driver name as an argument.) To specify
+    two or more regions, separate the block numbers with a semicolon (;).
+    For example, to use blocks 2 and 3, you would type /L:2;3.
+
+    Typically, MS-DOS loads a driver into a UMB in the specified region
+    only if that region contains a UMB larger than the driver's load size
+    (usually equal to the size of the executable program file). If the
+    driver requires more memory while running than it does when loaded, you
+    can use the minsize parameter to ensure that the driver will not be
+    loaded into a UMB that is too small for it. If you specify a value for
+    minsize, MS-DOS loads the driver into that region only if it contains a
+    UMB that is larger than both the driver's load size and the minsize
+    value.
+
+/S
+    Shrinks the UMB to its minimum size while the driver is loading. Using
+    this switch makes the most efficient use of memory. This switch is
+    generally used only by the MemMaker program, which can analyze a device
+    driver's memory use to determine whether the /S switch can safely be
+    used when loading that driver. This switch can be used only in
+    conjunction with the /L switch and affects only UMBs for which a
+    minimum size was specified.
+
+DOS
+====
+
+Specifies that MS-DOS should maintain a link to the upper memory area, load
+part of itself into the high memory area (HMA), or both. You can use this
+command only in your Config.sys file.
+
+Syntax
+
+    DOS=HIGH|LOW[,UMB|,NOUMB][,AUTO|,NOAUTO]
+
+    DOS=[HIGH,|LOW,]UMB|NOUMB[,AUTO|,NOAUTO]
+
+    DOS=[HIGH,|LOW,][UMB,|NOUMB,]AUTO|NOAUTO
+
+Parameters
+
+UMB|NOUMB
+    Specifies whether MS-DOS should manage upper memory blocks (UMBs)
+    created by a UMB provider such as Emm386.exe. The UMB parameter
+    specifies that MS-DOS should manage UMBs, if they exist. The NOUMB
+    parameter specifies that MS-DOS should not manage UMBs. The default
+    setting is NOUMB.
+
+HIGH|LOW
+    Specifies whether MS-DOS should attempt to load a part of itself into
+    the HMA (HIGH) or keep all of MS-DOS in conventional memory (LOW). The
+    default setting is LOW.
+
+AUTO|NOAUTO
+    Specifies whether MS-DOS should automatically load Himem.sys,
+    Ifshlp.sys, Dblbuff.sys, and Setver.exe device drivers if they are not
+    explicitly loaded in your Config.sys file. The default setting, AUTO,
+    automatically loads these device drivers. The AUTO setting also
+    automatically uses the BUFFERSHIGH, FILESHIGH, FCBSHIGH, LASTDRIVEHIGH,
+    and STACKSHIGH commands, whether the -HIGH form of the command was
+    used or not. If you specify the NOAUTO parameter, you must explicitly
+    load these device drivers and explicitly use the -HIGH form of the
+    above commands in order to take advantage of them.
+
+DRIVPARM
+========
+
+Defines parameters for devices such as disk and tape drives when you start
+MS-DOS. You can use this command only in your Config.sys file.
+
+The DRIVPARM command modifies the parameters of an existing physical drive.
+It does not create a new logical drive. The settings specified in the
+DRIVPARM command override the driver definitions for any previous block
+device.
+
+Syntax
+
+    DRIVPARM=/D:number [/C] [/F:factor] [/H:heads] [/I] [/N] [/S:sectors]
+    [/T:tracks]
+
+Switches
+
+/D:number
+    Specifies the physical drive number. Values for number must be in the
+    range 0 through 255 (for example, drive number 0 = drive A, 1 = drive
+    B, 2 = drive C, and so on).
+
+/C
+    Specifies that the drive can detect whether the drive door is closed.
+
+/F:factor
+    Specifies the drive type. The following table shows the valid values
+    for factor and a brief description of each. The default value is 2.
+
+    0        160K/180K or 320K/360K
+
+    1        1.2 megabyte (MB)
+
+    2        720K (3.5-inch disk)
+
+    5        Hard disk
+
+    6        Tape
+
+    7        1.44 MB (3.5-inch disk)
+
+    8        Read/write optical disk
+
+    9        2.88 MB (3.5-inch disk)
+
+/H:heads
+    Specifies the maximum number of heads. Values for heads must be in the
+    range 1 through 99. The default value depends on the value you specify
+    for /F:factor.
+
+/I
+    Specifies an electronically compatible 3.5-inch floppy disk drive.
+    (Electronically compatible drives are installed on your computer and
+    use your existing floppy disk drive controller.) Use the /I switch if
+    your computer's ROM BIOS does not support 3.5-inch floppy disk drives.
+
+/N
+    Specifies a nonremovable block device.
+
+/S:sectors
+    Specifies the number of sectors per track that the block device
+    supports. Values for sectors must be in the range 1 through 99. The
+    default value depends on the value you specify for /F:factor.
+
+/T:tracks
+    Specifies the number of tracks per side that the block device supports.
+    The default value depends on the value you specify for /F:factor.
+
+FCBS, FCBSHIGH
+==============
+
+Specifies the number of file control blocks (FCBs) that MS-DOS can have
+open at the same time. Use the FCBSHIGH command to load the FCBs in the
+upper memory area. You can use these commands only in your Config.sys file.
+A file control block is a data structure that stores information about a
+file.
+
+Syntax
+
+    FCBS=x
+    FCBSHIGH=x
+
+Parameter
+
+x
+    Specifies the number of file control blocks that MS-DOS can have open
+at
+    one time. Valid values for x are in the range 1 through 255. The
+default
+    value is 4.
+
+FILES/FILESHIGH
+===============
+
+Specifies the number of files that MS-DOS can access at one time. Use the
+FILESHIGH command to load the command in the upper memory area. You can
+use these commands only in your Config.sys file.
+
+Syntax
+
+    FILES=x
+    FILESHIGH=x
+
+Parameter
+
+x
+    Specifies the number of files that MS-DOS can access at one time. Valid
+    values for x are in the range 8 through 255. The default value is 8.
+
+INSTALL/INSTALLHIGH
+====================
+
+Loads a memory-resident program into memory when you start MS-DOS. Use the
+INSTALLHIGH command to load the memory-resident program into the upper
+memory area. You can use these commands only in your Config.sys file.
+
+Memory-resident programs stay in memory as long as your computer is on.
+They
+can be used even when other programs are active. You can use the INSTALL
+or INSTALLHIGH command to load MS-DOS memory-resident programs--for
+example,
+Fastopen, Keyb, Nlsfunc, and Share.
+
+Syntax
+
+    INSTALL=[drive:][path]filename [command-parameters]
+    INSTALLHIGH=[drive:][path]filename [command-parameters]
+
+Parameters
+
+[drive:][path]filename
+    Specifies the location and name of the memory-resident program you want
+    to run.
+
+command-parameters
+    Specifies parameters for the program you specify for filename.
+
+LASTDRIVE/LASTDRIVEHIGH
+=======================
+
+Specifies the maximum number of drives you can access. Use the
+LASTDRIVEHIGH command to load the LASTDRIVE data structures in the upper
+memory area. You can use these commands only in your Config.sys file.
+
+The value you specify represents the last valid drive that MS-DOS is to
+recognize.
+
+Syntax
+
+    LASTDRIVE=x
+    LASTDRIVEHIGH=x
+
+Parameter
+
+x
+    Specifies a drive letter in the range A through Z.
+
+NUMLOCK
+========
+
+Specifies whether the NUM LOCK key is set to ON or OFF when your computer
+starts. You can use this command only in your Config.sys file.
+
+Syntax
+
+    NUMLOCK=[ON|OFF]
+
+Parameters
+
+ON|OFF
+    If set to ON, turns on the NUM LOCK key when MS-DOS displays the
+startup
+    menu. If set to OFF, turns NUM LOCK off.
+
+REM
+===
+
+Enables you to include comments in a batch file or in your Config.sys file.
+The REM command is also useful for disabling commands. You can use a
+semicolon (;) instead of the REM command in your Config.sys file, but not
+in batch files.
+
+Syntax
+
+    REM [string]
+
+Parameters
+
+string
+    Specifies any string of characters -- the command you want to disable
+    or the comment you want to include.
+
+SET
+===
+
+Displays, sets, or removes MS-DOS environment variables.
+
+You use environment variables to control the behavior of some batch files
+and programs and to control the way MS-DOS appears and works. The SET
+command is often used in the Autoexec.bat or Config.sys files to set
+environment variables each time you start MS-DOS.
+
+Syntax
+
+    SET variable=[string]
+
+To display the current environment settings at the command prompt, use the
+following syntax:
+
+    SET
+
+Parameters
+
+variable
+    Specifies the variable you want to set or modify.
+
+string
+    Specifies the string you want to associate with the specified variable.
+
+SHELL
+=====
+
+Specifies the name and location of the command interpreter you want MS-DOS
+to use. You can use this command only in your Config.sys file.
+
+If you want to use your own command interpreter (instead of Command.com),
+you can specify its name by adding a SHELL command to your Config.sys file.
+
+Syntax
+
+    SHELL=[[drive:]path]filename [parameters]
+
+Parameters
+
+[[drive:]path]filename
+    Specifies the location and name of the command interpreter you want
+    MS-DOS to use.
+
+parameters
+    Specifies any command-line parameters or switches that can be used with
+    the specified command interpreter.
+
+STACKS/STACKSHIGH
+=================
+
+Supports the dynamic use of data stacks to handle hardware interrupts. Use
+the STACKSHIGH command to load the stacks in the upper memory area. You
+can use these commands only in your Config.sys file.
+
+Syntax
+
+    STACKS=n,s
+    STACKSHIGH=n,s
+
+Parameters
+
+n
+    Specifies the number of stacks. Valid values for n are 0 and numbers in
+    the range 8 through 64.
+
+s
+    Specifies the size (in bytes) of each stack. Valid values for s are 0
+    and numbers in the range 32 through 512.
+
+SWITCHES
+=========
+
+Specifies special options in MS-DOS. Use this command only in your
+Config.sys file.
+
+Syntax
+
+    SWITCHES= /F /K /N /E[:n]
+
+Switches
+
+/F
+    Skips the two-second delay after displaying the "Starting MS-DOS"
+    message during startup.
+
+/K
+    Forces an enhanced keyboard to behave like a conventional keyboard.
+
+/N
+    Prevents you from using the F5 or F8 key to bypass startup commands.
+    (SWITCHES /N does not prevent you from pressing CTRL+F5 or CTRL+F8 to
+    bypass Drvspace.bin or Dblspace.bin; to prevent this, use the D**SPACE
+/SWITCHES
+    command to add the SWITCHES /N setting to your D**space.ini file.)
+
+/E[:n]
+    Used without the :n parameter, indicates that Io.sys should suppress
+    the automatic relocation of EBIOS. (Automatic relocation of EBIOS
+    increases the conventional memory available to MS-DOS-based programs.)
+    Supressing automatic relocation results in less conventional memory
+    available to MS-DOS-based programs. Use the /E switch with the n
+    parameter to relocate N bytes of EBIOS to low memory, where n is
+    the number of bytes to be relocated. The minimum value for n is 48 and
+    the maximum value is 1024. The number specified is always rounded up to
+    the next multiple of 16.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

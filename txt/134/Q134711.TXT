@@ -1,0 +1,65 @@
+DOCUMENT:Q134711  28-JUL-2001  [win95x]
+TITLE   :X-Tree Gold for Windows 4.0 Produces GP Fault
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are scrolling down through a file using the DOWN ARROW key in X-Tree
+Gold for Windows 4.0, you may receive a general protection (GP) fault error
+message.
+
+CAUSE
+=====
+
+The GP fault is caused by an uninitialized variable in X-Tree Gold for Windows
+4.0. This uninitialized variable has no apparent effect in earlier versions of
+Windows.
+
+RESOLUTION
+==========
+
+To work around this problem, use the mouse to scroll down through files instead
+of using the DOWN ARROW key. For additional information about resolving this
+problem, please contact Symantec.
+
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or other- wise, regarding
+this product's performance or reliability.
+
+Additional query words: gpf
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

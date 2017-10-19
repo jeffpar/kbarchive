@@ -1,0 +1,67 @@
+DOCUMENT:Q226882  27-OCT-2000  [sms]
+TITLE   :SMS: APMSPY.EXE Requires Program Number to Display Offers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms kbsms200 kbsms200bug kbAdvertisement kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to successfully use the display offers command ("O") in the
+Advertised Program Manager Spy utility, Apmspy.Exe. When you use the display
+offers command, the program stops responding.
+
+CAUSE
+=====
+
+The command to display offers requires that a program number be supplied.
+
+WORKAROUND
+==========
+
+Supply a program number when you use the "O" command to display offers.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Apmspy.exe is installed with the Systems Management Resource Kit, which can be
+found in the \Support folder on the Systems Management Server CD-ROM.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms kbsms200 kbsms200bug kbAdvertisement kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

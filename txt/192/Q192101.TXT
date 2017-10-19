@@ -1,0 +1,63 @@
+DOCUMENT:Q192101  21-JUL-2001  [visualc]
+TITLE   :DOC: Incorrect Documentation for PCMCIA Ethernet Debugging
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbOAK kbDocs kbVC500 kbOSWinCE210
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The release notes for the product listed above state:
+
+   You must create the following registry key on your development workstation to
+   allow the debugging component, Cemon, to work with PCMCIA Ethernet debugging:
+
+This statement should read:
+
+   You must create the following registry key on your target platform to allow
+   the debugging component, Cemon, to work with PCMCIA Ethernet debugging:
+
+MORE INFORMATION
+================
+
+CEMON is a module that the IDE debugger transfers to the target platform and
+then executes. The HKEY_CURRENT_USER\Software\Microsoft\Cemon registry key must
+reside on the target platform, which CEMON will read in order to determine the
+host to communicate with.
+
+REFERENCES
+==========
+
+Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for
+Visual C++ 5.0 - Release Notes
+
+======================================================================
+Keywords          : kbOAK kbDocs kbVC500 kbOSWinCE210 
+Technology        : kbAudDeveloper kbWinCESearch kbWinCEEnh210ETKVC500
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

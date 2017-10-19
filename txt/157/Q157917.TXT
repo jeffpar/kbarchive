@@ -1,0 +1,72 @@
+DOCUMENT:Q157917  30-JUL-2001  [sms]
+TITLE   :SMS: PCM Windows 95 Setup Error: Corrupt CAB File
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:95; winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you distribute a Windows 95 upgrade package, the following dialog box
+appears when setup is 15 percent through the copy list:
+
+   Setup has detected a corrupt setup (CAB) file.
+   Setup cannot continue.
+   Click OK to continue.
+
+After the message, an error reading disk 2 is reported.
+
+WORKAROUND
+==========
+
+If you must use a custom INF, make a backup copy of the Systems Management
+Server Win95.inf, and save your INF file as Win95.inf. Make sure the
+installation works completely without Systems Management Server before
+disturbing the Windows 95 install package.
+
+Systems Management Server expects to find the Win95.inf file in the <Systems
+Management Server root>\Logon.srv\Mstest directory. If the INF file is not in
+this location, setup will not be able to find and use it.
+
+MORE INFORMATION
+================
+
+The Systems Management Server 1.1 FAQ and the Systems Management Server 1.2
+documentation discuss in greater detail when to use Win95.inf, Win95min.inf or
+Msbatch.inf. Depending on whether you created the package source by running
+NETSETUP or by simply copying the CAB files, you must use the Win95.inf file as
+a parameter to the setup process. A NETSETUP install does not allow you to
+provide INF files with alternative names, and will produce the error described
+above if a custom INF file name is supplied. The default Windows 95
+configuration file is Msbatch.inf.
+
+Additional query words: prodsms win95 w95 command manager cabinet
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : WINDOWS:95; winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

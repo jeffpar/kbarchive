@@ -1,0 +1,92 @@
+DOCUMENT:Q145995  07-FEB-2002  [visualc]
+TITLE   :BUG: Changes to Remote Project Files Not Detected
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbusage kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Developer Studio does not detect changes to project files located on remote
+computers when those project files are modified by an external source on a
+remote computer. This occurs when Developer Studio is running on Windows 95,
+Windows 98, or Windows Millennium Edition (Me). It may also occur on Windows NT
+or Windows 2000 when the remote files are on network servers that are not
+running Windows.
+
+
+CAUSE
+=====
+
+The problem occurs on networked systems that do not support the file change
+notification functions defined in the Win32 API.
+
+RESOLUTION
+==========
+
+To work around problem 1, you need to reload the file manually.
+
+To work around problem 2, you need to do a Rebuild All of the project, rather
+than a Build.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+There are two ways this problem manifests:
+
+1. If a remote file is open in Developer Studio and is modified by an external
+   source, Developer Studio should notify the user that the file has been
+   changed outside of the source editor and prompts the user to reload the file.
+   However, there is no notification.
+
+2. If a remote file is modified by an external source on a remote computer and a
+   build is launched, Developer Studio does not detect it. It will not recompile
+   the file or do whatever build step is necessary to rebuild files that are
+   dependent on the remote file.
+
+Additional query words: modify update dependency
+
+======================================================================
+Keywords          : kbusage kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

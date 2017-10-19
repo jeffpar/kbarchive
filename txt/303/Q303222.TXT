@@ -1,0 +1,64 @@
+DOCUMENT:Q303222  02-JUL-2001  [msnetwork]
+TITLE   :No Horizontal Scroll Bar At The Bottom Of The MSN Explorer Windo
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You start MSN Explorer and then sign in. You click the E-mail button in the top
+toolbar, and then resize the window so that the links to Free Newsletters and
+Special Links are no longer visible in the upper-right corner of the window. You
+press TAB repeatedly until you have selected the Free Newsletters link. Even
+though the information on the E-mail screen is too wide to fit in the window, a
+horizontal scroll bar does not appear at the bottom of the window.
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+If you want to return to the left-most section of the E-mail window, press TAB
+two more times. This will select the Show Folders button and allow you to view
+the left section of the e-mail window. This issue will be resolved in a future
+release of MSN Explorer.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

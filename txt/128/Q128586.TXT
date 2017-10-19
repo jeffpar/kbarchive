@@ -1,0 +1,62 @@
+DOCUMENT:Q128586  19-NOV-1999  [pcmail]
+TITLE   :SNADS: Lotus-Softswitch SNADGET.EXE Version 3.04.6
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SNADS, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Lotus-SoftSwitch has implemented SNADGET.EXE version 3.04.6 into the latest
+patch version of the SNADS gateway. This patch permits the use of the gateway
+mailer disable switch (-MD) in the gateway setup. This switch must be enabled
+when the External Mail program is servicing the gateway postoffice. There are
+two methods to enable this at the gateway:
+
+ - Run Setup on the gateway. When you are asked "Is EXTERNAL running with the
+   local postoffice (Y/N)?," answer Yes.
+
+   The DISMAIL=Y entry is then added by Setup to the PARM.DAT file on the
+   gateway. The PARM.DAT file contains the Gateway configuration information and
+   is opened each time the gateway is started.
+
+ - Edit the PARM.DAT and add the DISMAIL=Y entry. If the DISMAIL=N entry already
+   exists, change N to Y. Restart the gateway for the changes to take effect.
+
+If the SNADS gateway postoffice is not using the External Mail program to deliver
+mail between other postoffices, do not use the gateway mailer disable, or mail
+will not be delivered from SNADS.
+
+Contact Lotus-Softswitch to confirm that your patch level supports the mailer
+disable switch.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSNADS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

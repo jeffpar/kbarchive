@@ -1,0 +1,99 @@
+DOCUMENT:Q113417  11-FEB-2002  [visualc]
+TITLE   :INFO: C4097: Typedef-Name X Used as Synonym for Class-Name Z
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0,2.1,2.2,4.0,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0, 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a typedef class name is used as a base class, the following warning will
+appear if compiled with /Ze (enable Microsoft extensions), which is on by
+default:
+
+   warning C4097:Non-standard extension: typedef-name 'identifier1' used as
+   synonym for class-name 'identifier2'
+
+If compiled with /Za (disable Microsoft extensions) using Visual C++ for Windows
+or Visual C++ 32-bit Edition 1.0, the following error appears:
+
+   error C2505: 'identifier' : is not a legal base class
+
+This error message is correct in accordance with the C++ language specification.
+In C++ grammar, the "base-list" is specified as being a list of
+"base-specifiers". A base-specifier reduces to a "complete-class-name", which
+does not include "typedef-names". Consequently, the compiler is perfectly
+correct in generating this warning/error for the sample below.
+
+This error is not generated using Visual C++ 32-bit Edition 2.X. Using Visual C++
+32-bit Edition, versions 2.x and above, the compiler generates the following
+warning with both the /Ze and /Za switches:
+
+   C4097: typedef-name 'identifier1' used as synonym for class-name
+   'identifier2'
+
+MORE INFORMATION
+================
+
+For more information on C++ grammar, see the "Grammar Summary" in the "Annotated
+C++ Reference Manual" (ARM) by Bjarne Stroustrup and Margaret Ellis (Appendix A)
+or Appendix C of the C++ "Language Reference" that comes with Microsoft C/C++
+7.0 and Microsoft Visual C++ for Windows, versions 1.0 and 1.5. The same Grammar
+Summary is in Appendix A of the "C++ Language Reference" manual for Visual C++
+32-bit Edition, versions 1.1 and above, and in the online documentation under
+the "Grammar Summary" heading of the "C++ Langauge Reference" included with
+Visual C++ 32-bit Edition, version 4.0.
+
+Sample Code
+-----------
+
+   /* Compile options needed: /Ze /c /W4
+   */ 
+
+    class C
+    {
+      int _w;
+    };
+
+    typedef C D;
+
+    class F : public D     // warning C4097
+    { };
+
+    class E : private virtual D // warning C4097
+    { };
+
+    class G : protected D // warning C4097
+    { };
+
+Additional query words: 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC220 kbVC420 kbVC500 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :1.0,2.0,2.1,2.2,4.0,4.2,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

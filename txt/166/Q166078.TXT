@@ -1,0 +1,57 @@
+DOCUMENT:Q166078  10-JAN-2000  [odbc]
+TITLE   :PRB: SQLSetDescField Appears to Call Itself
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbinterop kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When SQLSetDescField is called, the ODBC 3.0 trace log may show two calls made
+to SQLSetDescField. The second call to SQLSetDescField may be embedded within
+the first, giving the appearance that SQLSetDescField called itself.
+
+CAUSE
+=====
+
+SQLSetDescField uses a helper function that has an extra copy of the trace
+function found in SQLSetDescField. This causes SQLSetDescField to show up twice
+in the trace log, giving the appearance that SQLSetDescField called itself.
+
+WORKAROUND
+==========
+
+Ignore the second call to SQLSetDescField in the trace log.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbprogramming 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

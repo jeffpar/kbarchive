@@ -1,0 +1,56 @@
+DOCUMENT:Q87057  08-NOV-1999  [pcmail]
+TITLE   :MCI: How Mail Gets from Downstream Postoffice to Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MCI, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Mail being sent from MCI to a downstream postoffice is first picked up by the
+MCI gateway. The gateway looks at the TO: address of the mail message: if the
+mail is going to a downstream postoffice, the gateway puts the mail in that
+postoffice's queue, along with any other local mail going to the downstream
+postoffice.
+
+The External program picks up mail items from the queue and transmits them to the
+downstream postoffice.
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+   "pcmail" (without the quotation marks) and "mci" (without the quotation
+   marks) and "indirect" (without the quotation marks) and "downstream" (without
+   the quotation marks) and "external" (without the quotation marks)
+
+
+Additional query words: 3.00 pcmail indirect 2.1a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMCI300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

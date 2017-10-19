@@ -1,0 +1,84 @@
+DOCUMENT:Q323125  18-JUL-2002  [foxpro]
+TITLE   :PRB: Visual FoxPro 7.0 Help Documentation Appears to Be Missing
+PRODUCT :Microsoft FoxPro
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro products 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to gain access to the Visual FoxPro 7.0 Help documentation in the
+Microsoft Developer Network (MSDN) Library for January 2002 and April 2002, the
+documentation appears to be missing.
+
+CAUSE
+=====
+
+Although all of the documentation is supplied in the MSDN Library, the filter
+that you can use to gain access to the Visual FoxPro 7.0 documentation is
+missing.
+
+RESOLUTION
+==========
+
+To create the filter that you can use to gain access to the Visual FoxPro 7.0
+documentation, follow these steps:
+
+1. Start the MSDN Library.
+
+2. Click Help.
+
+3. Click Edit Filters.
+
+4. Clear the contents of the Filter Definition text box.
+
+5. Expand "List of Available Attributes and their Values" (if this is not
+   already expanded).
+
+6. Expand DocSet(DocSet) (if this is not already expanded).
+
+7. Do one of the following:
+
+    - Click Visual FoxPro (Visual FoxPro). This puts the text ("DocSet"="Visual
+      FoxPro") in the Filter Definition text box.
+
+      -or-
+
+    - Type the following in the Filter Definition text box:
+
+   "DocSet"="Visual FoxPro"
+
+8. On the File menu, click Save As, type "FoxPro 7" (without the quotation
+   marks) in the text box, and then click OK.
+
+Additional query words: MSDN January April
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbAudDeveloper kbMSDNSearch kbFoxproSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

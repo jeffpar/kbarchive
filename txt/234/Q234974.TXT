@@ -1,0 +1,125 @@
+DOCUMENT:Q234974  22-APR-2001  [vbwin]
+TITLE   :PRB: Error C0042116: The Web Server Is Not Responding
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDeployment kbVBp600 kbWebClasses kbGrpDSASP kbDSupport kbiis400 kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Package and Deployment Wizard (PDW) to deploy an Internet
+Information Server (IIS) application to a Web server, you receive the following
+error message:
+
+   Unexpected error number C0042116 has occurred: The Web server either is not
+   responding or returned an unrecognized response.
+
+CAUSE
+=====
+
+This error message could occur because of the following reasons:
+
+ - You do not have a virtual directory called SCRIPTS that points to the
+   physical directory C:\Inetpub\scripts.
+
+   -or-
+
+ - You have not given Execute permissions to the SCRIPTS virtual directory.
+
+   -or-
+
+ - The virtual server that you are deploying to is not running on port 80.
+
+RESOLUTION
+==========
+
+Verify that the SCRIPTS virtual directory exists and that you have enabled
+Execute permissions for this directory on the virtual server to which you are
+deploying.
+
+Use the following steps to create the SCRIPTS virtual directory:
+
+1. Open the Internet Service Manager (ISM) snap-in in the Microsoft Management
+   Console (MMC).
+
+2. Right-click the virtual server that you are deploying to and select New then
+   Virtual Directory.
+
+3. When asked for an Alias, type SCRIPTS and click Next.
+
+4. When asked for physical directory, browse to the physical location of the
+   scripts directory, which is under your Inetpub directory, and click Next.
+
+5. Make sure to allow Execute access permissions and then click Next.
+
+6. Click Finish.
+
+Use the following steps to enable Execute permissions:
+
+1. Open the Internet Service Manager (ISM) snap-in in the Microsoft Management
+   Console (MMC).
+
+2. Right-click the SCRIPTS virtual directory that is under the virtual server
+   that you are deploying to and select Properties.
+
+3. Select the Virtual Directory tab.
+
+4. Under Access Permissions, enable the Execute permissions option.
+
+5. Click Apply and then click OK.
+
+You will not be able to deploy your WebClass application to a virtual server that
+is not running on port 80.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For additional information about the Package and Deployment Wizard, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q242767 INFO: Deploying WebClasses with the Package and Deployment Wizard
+   (PDW)
+
+   Q194296 HOWTO: Debug PDW Internet Deployment Issues
+
+   Q199017 HOWTO: Deploy Visual Basic IIS Applications with PDW
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDeployment kbVBp600 kbWebClasses kbGrpDSASP kbDSupport kbiis400 kbiis500 
+Technology        : kbVBSearch kbiisSearch kbAudDeveloper kbZNotKeyword6 kbiis500 kbiis400 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

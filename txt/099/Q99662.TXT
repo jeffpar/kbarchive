@@ -1,0 +1,54 @@
+DOCUMENT:Q99662  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Access Privileges Are Unavailable When Offline
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ability to set access privileges is unavailable (grayed) when you use
+version 1.0 of Microsoft Schedule+ for Windows offline.
+
+(To determine if Schedule+ is offline, select the File Menu. If Work Online is an
+option, then Schedule+ is currently working offline.)
+
+CAUSE
+=====
+
+This is by design. The ability to set access privileges requires a connection to
+the CAL subdirectory of the Mail postoffice (usually in MAILDATA).
+
+Schedule+ requires a connection to the mail server when setting privileges (and
+group scheduling) and will not be available without a valid connection.
+
+Additional query words: schedule plus 1.00 1.00a sched+ scheduler dimmed ghosted light grey
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

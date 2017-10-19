@@ -1,0 +1,54 @@
+DOCUMENT:Q180404  28-MAR-1999  [exchange]
+TITLE   :XADM: Silent Mode Setup Does Not Support Upgrade Mode
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run the Exchange Server Setup program in silent mode (Setup /Q) to
+upgrade the Exchange Administrator program, the Setup program prompts for a CD
+key, even though the CD key has been entered into the Setup.ini file.
+
+CAUSE
+=====
+
+The Exchange Server Setup program does not support upgrades when run in the
+silent or unattended mode (Setup /Q).
+
+MORE INFORMATION
+================
+
+This is by product design.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

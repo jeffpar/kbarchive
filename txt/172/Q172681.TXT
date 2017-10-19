@@ -1,0 +1,78 @@
+DOCUMENT:Q172681  07-SEP-2001  [sna]
+TITLE   :Print Server Does Not End Job on "Flush Print Buffer"
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print from an AS/400, a print job may appear to stop responding and not
+produce any output. SNA Server DLC message traces indicate that at the end of
+the print job the AS/400 is sending:
+
+   000A 12A0 0102 0400 0002 ("Flush Print Buffer")
+
+Print Server expects to get
+
+   0011 12A0 0101 0A08 0001 0000 0000 0000 00 ("End Print Job")
+
+to end the print job.
+
+
+CAUSE
+=====
+
+SNA Print Server ignores the "Flush Print Buffer" command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+With the fix applied, Print Server accepts both "Flush Print Buffer" and "End
+Print Job" as print ended signals.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

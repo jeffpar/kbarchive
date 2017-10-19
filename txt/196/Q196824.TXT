@@ -1,0 +1,53 @@
+DOCUMENT:Q196824  18-MAY-2001  [sms]
+TITLE   :SMS: SQL Server 7.0 Not Recommended or Supported with SMS 1.2
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,4.5,7.0
+OPER/SYS:
+KEYWORDS:kbsetup kbDatabase kbsms120
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Product Support Services does not recommend or support the use of
+Microsoft SQL Server 7.0 (either in native mode or in SQL Server 6.5
+compatibility mode) as the database engine for Systems Management Server 1.2.
+
+MORE INFORMATION
+================
+
+Architectural changes in SQL Server 7.0 introduce incompatibilities between SQL
+Server 7.0 and Systems Management Server 1.2. Microsoft has confirmed this to be
+a limitation of Systems Management Server version 1.2, and is currently
+investigating possible resolutions for a future service pack.
+
+
+Additional query words: prodsms smsdb sp
+
+======================================================================
+Keywords          : kbsetup kbDatabase kbsms120 
+Technology        : kbSQLServSearch kbSMSSearch kbAudDeveloper kbBackOfficeSearch kbSQLServ700 kbContentX kbWorks450
+Version           : winnt:1.2,4.5,7.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

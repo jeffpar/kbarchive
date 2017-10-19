@@ -1,0 +1,57 @@
+DOCUMENT:Q128237  06-NOV-1999  [win16sdk]
+TITLE   :PRB: Polyline Fails with NULL Clipping Region
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Polyline API will return a failure code if called on a DC that has a NULL
+clipping region selected. One situation in which this can occur is when Polyline
+is used to draw into a DC for a window that is completely obscured by another
+window.
+
+RESOLUTION
+==========
+
+Check to see if the clipping region is NULL before calling Polyline and testing
+its return value.
+
+STATUS
+======
+
+This behavior is by design on Windows 3.1.
+
+This behavior does not occur on Windows NT or on Windows 95.
+
+Additional query words: 3.10 no32bit Polygon fails hidden
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

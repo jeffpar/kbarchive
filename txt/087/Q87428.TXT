@@ -1,0 +1,62 @@
+DOCUMENT:Q87428  07-NOV-1999  [pcmail]
+TITLE   :PROFS: How Import/Export Feature Works for PROFS Addresses
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Import/Export function in the Admin program allows the gateway LAN
+administrator to synchronize address lists with the VM host manually.
+
+When you select the Import function (from the Admin program's Gateway menu,
+choose PROFS, then select Import), you can choose to import VM addresses from
+some or all of the VM nodes to which you can connect. The resulting request is
+sent through the gateway, and the Host Access component programs create a file
+of VM user addresses. This file is subsequently downloaded to the MS Mail
+postoffice, and automatically inserted into the database.
+
+When you select Export, the administrator chooses the PROFS gateways to which to
+send the list of local MS Mail users and groups. This list is sent to the
+gateway(s) as a typical MS Mail message with attachments. The Host Access
+component programs forward these items to the VM ID specified to receive such
+lists (DIRECTORY_ID in the PWAINIT EXEC file).
+
+REFERENCES
+==========
+
+"Microsoft Mail Gateway to IBM PROFS and OfficeVision LAN Administrator's
+Guide"
+
+
+Additional query words: 3.00 pcmail profslan import export
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

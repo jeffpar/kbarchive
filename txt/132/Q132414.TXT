@@ -1,0 +1,52 @@
+DOCUMENT:Q132414  18-DEC-2000  [win95x]
+TITLE   :Bitmaps Stretched by Microsoft Plus! May Appear Distorted
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you choose to have Microsoft Plus! for Windows 95 stretch background bitmaps
+(or wallpaper) to fit the screen, some bitmaps may appear distorted.
+
+MORE INFORMATION
+================
+
+This behavior depends on the bitmap you are using. If the bitmap's aspect ratio
+(the ratio of height to width) is not the same as that of the monitor, the
+bitmap may appear distorted as a result of the stretching process. There is no
+way to work around this behavior. If the bitmap appears distorted, you may want
+to use another bitmap or choose not to use the "Stretch desktop wallpaper to fit
+the screen" option.
+
+Additional query words: frosting
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,56 @@
+DOCUMENT:Q244953  18-JUL-2001  [ssafe]
+TITLE   :HOWTO: Implement SourceSafe Integration with FrontPage 2000
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbFrontPage kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbFPServX kbSsafe600FAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft FrontPage 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains where to locate information about how to implement
+SourceSafe integration with FrontPage 2000.
+
+MORE INFORMATION
+================
+
+The information provided in the FrontPage 2000 user guide with respect to
+integrating FrontPage 2000 and Visual SourceSafe inadvertently applies to the
+previous version (FrontPage 98) and not FrontPage 2000.
+
+For help setting up this integration, see the Advanced Administrative Tasks topic
+in the FrontPage 2000 Resource Kit on the following Microsoft Web site at:
+
+   http://officeupdate.microsoft.com/frontpage/wpp/serk/adadv_6.htm
+
+Additional query words: server extensions
+
+======================================================================
+Keywords          : kbFrontPage kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbFPServX kbSsafe600FAQ 
+Technology        : kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbFrontPage2000Search kbZNotKeyword5 kbSSafe600 kbSSafe500
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

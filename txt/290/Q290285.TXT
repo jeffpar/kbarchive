@@ -1,0 +1,64 @@
+DOCUMENT:Q290285  06-MAR-2001  [mspress]
+TITLE   :Windows ME At A Glance Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows Me At a Glance ISBN 0-7356-0970-5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Windows Me At a Glance, ISBN
+0-7356-0970-5.
+
+The following topics are covered:
+
+ - Page 10: Incorrect Table Entry For Narrator
+
+MORE INFORMATION
+================
+
+Page 10: Incorrect Table Entry For Narrator
+-------------------------------------------
+
+On page 10 there is a list of "Frequently Used Windows Me Programs". The seventh
+item is Narrator. Narrator is not a program in Windows Me, it is available only
+in Windows 2000. This entry should be deleted.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: EUBook WinME Joyce Moon 0-7356-0970-5
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

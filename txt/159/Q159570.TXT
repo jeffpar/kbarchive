@@ -1,0 +1,41 @@
+DOCUMENT:Q159570  05-JAN-2000  [odbc]
+TITLE   :INF: Access ODBC Driver Is Double-Byte Enabled
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.5,3.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.5 
+ - Microsoft ODBC Driver for Access, version 3.4 
+-------------------------------------------------------------------------------
+
+The Microsoft Access ODBC Driver, starting with version 3.40, is enabled to
+support double-byte character strings (DBCS). However, the Access ODBC
+Driver version 3.40 does not yet support Unicode.
+
+Additional query words: 3.40 2.50
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbAccessSearch kbODBCSearch kbODBCAccess340 kbODBC250
+Version           : WINDOWS:2.5,3.4
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

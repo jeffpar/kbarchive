@@ -1,0 +1,96 @@
+DOCUMENT:Q131345  15-FEB-2000  [foxpro]
+TITLE   :Using the DISPLAY OBJECTS Command
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The DISPLAY OBJECTS command's behavior is similar to that of the DISPLAY MEMORY
+command. However, DISPLAY OBJECTS reports information about objects instead of
+memory variables.
+
+MORE INFORMATION
+================
+
+DISPLAY OBJECTS displays the following information about all existing objects:
+
+ - Properties and their values
+
+ - Methods
+
+ - Member objects and the class or subclass on which they are based
+
+ - Class or subclass on which objects are based
+
+ - Class hierarchy for the objects
+
+You can also use the DISPLAY OBJECTS [LIKE][NOCONSOLE][TO PRINT][TO FILE] clauses
+as you can with all the DISPLAY commands.
+
+Example
+-------
+
+The following code creates the object oCustom based on the custom class and
+directs the output of the DISPLAY OBJECT command to the file TEST.TXT.
+
+      oCustom=Createobject("CUSTOM")
+      DISPLAY OBJECT LIKE oCustom TO FILE TEST.TXT
+
+Output from Example Code
+------------------------
+
+Object: OCUSTOM                      Pub       O    CUSTOM
+
+Class Tree:
+        CUSTOM
+
+Properties:
+        BASECLASS                                   C    "Custom"
+        CLASS                                       C    "Custom"
+        CLASSLIBRARY                                C    ""
+        COMMENT                                     C    ""
+        HEIGHT                                      N    17
+        LEFT                                        N    0
+        NAME                                        C    "Custom1"
+        PARENTCLASS                                 C    ""
+        PICTURE                                     C    ""
+        TOP                                         N    0
+        WIDTH                                       N    100
+
+Methods and Events:
+        ADDOBJECT                                  DESTROY
+        ERROR                                      INIT
+        REMOVEOBJECT                               SAVEASCLASS
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

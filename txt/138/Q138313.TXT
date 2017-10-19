@@ -1,0 +1,53 @@
+DOCUMENT:Q138313  08-NOV-2001  [homemm]
+TITLE   :World of Flight: Symbols for Videos, Peelaways, Animations
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft World of Flight for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of symbols used for videos, animations, peelaway
+screens, and interactivities.
+
+ - A blue piece of film symbolizes a Video clip.
+
+ - A orange piece of film symbolizes an Animation.
+
+ - A wrench or a pair of scissors symbolizes a Peelaway screen. The wrench
+   indicates a metal skin and scissors indicates fabric skin.
+
+ - An orange chess piece (knight) symbolizes Interactivities.
+
+ - A red plane symbolizes a topic.
+
+Additional query words: kbhowto multi media multimedia multi-media mmtitles kbmm icons
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbWorldofFlight
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

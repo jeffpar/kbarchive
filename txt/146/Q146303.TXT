@@ -1,0 +1,74 @@
+DOCUMENT:Q146303  08-AUG-2001  [winnt]
+TITLE   :How to Manipulate Unloaded Registry Hives Using RegFind
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT 4.0 Resource Kit RegFind utility lets you search and replace data
+values in the registry. This article complements the information provided in the
+resource kit and explains how to use this tool to manipulate unloaded registry
+hives.
+
+MORE INFORMATION
+================
+
+The syntax of the RegFind utility is:
+
+   REGFIND [-h hivefile hiveroot | -w Win95 Directory | -m \\machinename]
+      [-i n] [-o outputWidth]
+      [-p RegistryKeyPath] [-z | -t DataType] [-b | -B] [-y] [-n]
+      [searchString [-r ReplacementString]]
+
+The -h option lets you specify:
+
+ - the registry hive file
+
+ - the keyroot name which references that hive in both the output and the
+   command-line arguments
+
+The -p option lets you specify the registry key path where the search starts.
+
+Sample:
+
+   regfind -h "c:\winnt\Profiles\UserX\ntuser.dat" KEYR -p KEYR\Software
+   WINNT
+
+In this sample, RegFind displays all keys containing the WINNT string in the data
+value. The search will start under the Software subkey in the UserX's registry
+hive The KEYR argument specifies the registry key name for the root key of this
+hive.
+
+Additional query words: prodnt rkit
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

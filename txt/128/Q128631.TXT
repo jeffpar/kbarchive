@@ -1,0 +1,60 @@
+DOCUMENT:Q128631  17-DEC-2000  [win95x]
+TITLE   :No Sharing Options in Clipboard Viewer in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbnetwork kbole win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to share Clipboard Viewer pages in Windows 95, the relevant buttons
+(for example, the Share, Stop Sharing, Connect, and Disconnect buttons) are
+missing and there is no Connect command on the File menu.
+
+CAUSE
+=====
+
+The Clipboard Viewer tool that is included with Windows 95 does not have sharing
+functionality.
+
+MORE INFORMATION
+================
+
+If you install Windows 95 over Windows for Workgroups version 3.x and during
+Setup choose to not install the Windows 95 Clipboard Viewer, Windows 95 retains
+the Windows for Workgroups ClipBook Viewer, which has sharing functionality.
+
+For ClipBook Viewer to have the Share option, NETDDE must be running. Place a
+shortcut to Netdde.exe (from the Windows folder) in the Startup folder to cause
+NETDDE to run automatically at every startup.
+
+Additional query words: clip board clip book
+
+======================================================================
+Keywords          : kbnetwork kbole win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

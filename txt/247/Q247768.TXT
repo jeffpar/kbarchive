@@ -1,0 +1,66 @@
+DOCUMENT:Q247768  08-AUG-2001  [winnt]
+TITLE   :No Load Balancing When Connecting to Cluster Virtual IP Address
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.0,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Load Balancing Service 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you obtain access to a cluster virtual Internet Protocol (IP) address from
+a cluster node of the same cluster, the connection is always made to the local
+computer.
+
+CAUSE
+=====
+
+This behavior occurs because the cluster IP address is interpreted as a local
+address, so the Transport Control Protocol/Internet Protocol (TCP/IP) stack
+loops the connection back to the local host. Because of this, the packets are
+never sent to the network, and Windows Load Balancing Service (WLBS) fault
+tolerance and load balancing are not effective.
+
+RESOLUTION
+==========
+
+To obtain access to other hosts on the cluster, the dedicated IP address of the
+respective node must be used. To achieve load balancing with the client running
+on a WLBS cluster, the server program must reside on a different cluster.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTLBS100 kbWinNTLBSSearch
+Version           : winnt:1.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

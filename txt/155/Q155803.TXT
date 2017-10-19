@@ -1,0 +1,82 @@
+DOCUMENT:Q155803  14-DEC-1999  [foxpro]
+TITLE   :DOC: Cross-Tab Query Help Example is Incorrect
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbdocfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The example in the Visual FoxPro Help file, versions 3.0 and 3.0b, under
+"Creating Cross-Tab Queries" is incorrect. If you cut and paste this code into a
+program and then run it, the following error message appears:
+
+   Command contains unrecognized phrase/keyword
+
+This is caused by a missing comma (,) just after the right bracket (]) on the
+first line.
+
+Once you make this correction and run the program, a second error message
+appears:
+
+   Variable "MYCURSOR" is not found
+
+You can correct this problem by declaring MyCursor as a PUBLIC variable.
+
+This documentation error has been fixed in Visual FoxPro 5.0 for Windows.
+
+MORE INFORMATION
+================
+
+Following is the example code as it should appear:
+
+      PUBLIC MyCursor
+      SELECT Orders.to_city, YEAR[orders.order_date], ;
+         SUM(Orders.order_amt) ;
+         FROM TestData!Orders ;
+         GROUP BY Orders.to_city, 2 ;
+         ORDER BY Orders.to_city, 2 ;
+         INTO CURSOR MyCursor
+      DO (_GENXTAB) WITH MyCursor
+      BROWSE NOMODIFY
+
+When running version 3.0b of Visual FoxPro, the following error message might
+also appear:
+
+   File does not exist
+
+To correct this, place the following command as the first line in your Config.fpw
+file:
+
+      _GENXTAB = C:\VFP\VFPXTAB.PRG
+
+Additional query words: kbstream docerr vfoxwin 5.00
+
+======================================================================
+Keywords          : kbdocfix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q90386  30-OCT-1999  [win3x]
+TITLE   :After WFWG Setup, Microsoft C7 Compiler Doesn't Work
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you install Microsoft Windows for Workgroups, you may need to reinstall
+the Microsoft C7 compiler.
+
+The C7 compiler replaces some of Microsoft Windows files with different versions.
+The Windows for Workgroups Setup program, in turn, updates these files, which
+may cause the application to fail.
+
+MORE INFORMATION
+================
+
+Possible Workaround
+-------------------
+
+Before you attempt a total reinstall, follow these steps (this procedure may
+allow you to use C7 without reinstalling the program):
+
+1. Add the following lines to the [386enh] section of your SYSTEM.INI file:
+
+         DEVICE=<drive:>\C700\BIN\VPFD.386
+         DEVICE=<drive:>\C700\BIN\CVW1.386
+         DEVICE=<drive:>\C700\BIN\VMB.386
+
+   where <drive:> specifies the drive where you have C7 installed.
+
+2. Verify that the [386enh] section of your SYSTEM.INI file contains the
+   following line:
+
+         DEVICE=*VMCPD
+
+   If not, add this line as well.
+
+3. Save your changes, then reboot your system.
+
+If this procedure doesn't allow you to use C7, then you need to reinstall the
+application.
+
+Additional query words: 3.10 DLL
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

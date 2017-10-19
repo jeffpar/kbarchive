@@ -1,0 +1,88 @@
+DOCUMENT:Q182294  01-NOV-2000  [exchange]
+TITLE   :XADM: Synchronization Fails Attempting to Modify Deleted Message
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to synchronize one or more folders by clicking Synchronize on
+the Tools menu, and then selecting All Folders or This Folder, the folders may
+not be synchronized. In addition, the following error messages may appear in the
+Synchronization log located in the Deleted Items folder:
+
+   Error synchronizing message <subject>
+   [80070005-508-0-322]
+   You do not have sufficient permission to perform this operation on
+   this object. See the folder contact or your system administrator.
+   Microsoft Exchange Server Information Store
+
+   Error synchronizing folder
+   [80070005-508-0-322]
+   You do not have sufficient permission to perform this operation on
+   this object. See the folder contact or your system administrator.
+   Microsoft Exchange Server Information Store
+
+Note: <subject> is the subject name of a message in one of the folders you
+are attempting to synchronize.
+
+CAUSE
+=====
+
+This problem can occur when you delete a message on the Microsoft Exchange
+Server computer (using an e-mail client) when the server has been configured to
+use Deleted Item Retention. If the same message is modified while offline (in
+the offline storage file), and then an attempt to synchronize the folder that
+contains the message is made, the synchronization will fail. When Microsoft
+Exchange Server attempts to update the message, it mistakenly believes the
+message has not been deleted (because it is being held for Deleted Item
+Retention), and attempts to modify the message. Since the message is deleted
+(with respect to its presence in the folder) modifications against it fail and
+the above error messages appear in the Synchronization log.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words: xcln
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q274221  18-JAN-2001  [homemm]
+TITLE   :Encarta: Cannot Zoom in to an Urban Area on a Map
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Comprehensive Map style in Microsoft Encarta Interactive World
+Atlas 2001, you may not be able to zoom in to an urban area on a map.
+
+CAUSE
+=====
+
+This behavior can occur if the Hill Shading feature is turned off.
+
+RESOLUTION
+==========
+
+To resolve this issue, turn on the Hill Shading feature:
+
+1. In the left pane, click Map Customizer.
+
+2. Scroll to the bottom of the list, and click to select the Hill Shading check
+   box.
+
+3. Click Map Customizer to close the menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Interactive
+World Atlas 2001.
+
+Additional query words: multi multi-media media mm eiwa
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

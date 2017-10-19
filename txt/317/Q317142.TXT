@@ -1,0 +1,72 @@
+DOCUMENT:Q317142  06-AUG-2002  [winnt]
+TITLE   :How to Change a Service  Account Password with a Batch File
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:ocsso
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to change a computer's service account password by
+using a batch file.
+
+In some cases, you may want to change a service account remotely or for numerous
+computers. You can use the sc.exe command to create a batch file for this
+purpose. Sc.exe is a command-line utility that allows you to communicate with
+the Windows NT Service Controller and services. This utility is available on the
+Microsoft Windows NT Server 4.0 Resource Kit CD-ROM.
+
+MORE INFORMATION
+================
+
+Change the Password on a Service Account
+----------------------------------------
+
+The following is an example of how you can use the sc.exe command-line utility in
+a batch file to change a service account password
+
+   net view | find "\" >server.txt
+
+   for /F %%i in (server.txt) do sc %%i config service_name password= new_password
+
+where service_name is the name of the service account and <new_password> is
+the new password that you want to assign to the service account.
+
+For information about how to obtain the Windows NT Server 4.0 Resource Kit (and
+the Windows NT Workstation 4.0 Resource Guide), browse to the following
+Microsoft Web site:
+
+   http://www.microsoft.com/technet/treeview/default.asp?url=/technet/itsolutions/reskits/rktmain.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : ocsso 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

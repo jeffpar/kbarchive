@@ -1,0 +1,56 @@
+DOCUMENT:Q171009  29-JUN-1999  [exchange]
+TITLE   :XCLN: How to Delete a Duplicate Custom Form
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to delete a custom form if there are multiple forms
+with the same name in a public folder.
+
+If a custom form is created with the same name as an existing form, the duplicate
+will appear in the public folder. Also, the user will have a duplicate entry
+when creating a new form. Each entry will call a separate form.
+
+MORE INFORMATION
+================
+
+To resolve this, on the Tools menu, click Options. Click Exchange Server, and
+click Manage Forms. Click Set, and point to the public folder. Delete the bottom
+instance of the duplicate; it is the older one.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

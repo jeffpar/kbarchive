@@ -1,0 +1,63 @@
+DOCUMENT:Q231539  14-SEP-2001  [automap]
+TITLE   :MapPoint: You Are Prompted to Install Internet Explorer
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft MapPoint, you may be prompted to install Microsoft
+Internet Explorer 5 after you accept the terms of the End User License Agreement
+(EULA).
+
+CAUSE
+=====
+
+This behavior can occur if Internet Explorer 3.01 or earlier is installed on
+your computer.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If Internet Explorer 3.02 or later is installed on your computer, only the HTML
+Help component of Internet Explorer 5 (which is needed to use MapPoint online
+Help) is installed by MapPoint Setup.
+
+Additional query words: mp2000 mp2001 installs ie5
+
+======================================================================
+Keywords          : kbsetup kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000 kbMapPoint2001
+Version           : WINDOWS:; :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q257220  06-JUN-2001  [iis]
+TITLE   :XCON: Newsfeeds Unavailable in Internet Information Services 5.0
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:2000; winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbOSWin2000 exc55kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Newsfeeds are not supported in the Microsoft Windows 2000 version of Network
+News Transfer Protocol (NNTP). Newsfeeds cannot be configured in Internet
+Information Services (IIS) 5.0.
+
+Although the Default NNTP Virtual Server properties contain "Allow feed postings"
+and "Allow servers to pull news articles from this server" options, these
+options and complete newsfeed capability are not available.
+
+You can use Exchange Server or other newsfeed software for newsfeed support.
+
+MORE INFORMATION
+================
+
+The flow of items from one USENET site to another is called a newsfeed. A
+newsfeed replicates items in newsgroups between host computers. One or more
+servers, or hosts, running NNTP make up a USENET site.
+
+Each USENET site that receives a newsfeed can be configured to accept and
+generate an NNTP connection and newsfeed. The host computer that receives your
+newsfeed is configured as the outbound host. The host computers that provide
+your newsfeed are configured as the inbound hosts. A host computer can be
+configured as both the inbound and outbound host.
+
+Additional query words: newsgroup
+
+======================================================================
+Keywords          : kbOSWin2000 exc55 kbfaq
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbiisSearch kbiis500
+Version           : WINDOWS:2000; winnt:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

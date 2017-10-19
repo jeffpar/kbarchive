@@ -1,0 +1,75 @@
+DOCUMENT:Q200775  10-AUG-2001  [winnt]
+TITLE   :Routing Problems After Installing Checkpoint Firewall 1
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows NT system does not forward packets, even though the Enable IP
+Forwarding check box is selected in TCP/IP Properties.
+
+CAUSE
+=====
+
+This problem may occur because Checkpoint Software's Firewall 1 software has
+been installed and no routing security policy has been configured by the user
+after installation.
+
+RESOLUTION
+==========
+
+To resolve this problem, configure a security policy or disable the control of
+IP forwarding by Firewall 1.
+
+MORE INFORMATION
+================
+
+If no security policy has been configured, Firewall 1 assumes the most
+restrictive policy, which is no forwarding of IP packets.
+
+For more information, contact Checkpoint Software Technologies Ltd. at the
+following Web site:
+
+   http://www.checkpoint.com/
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

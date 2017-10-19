@@ -1,0 +1,112 @@
+DOCUMENT:Q274179  12-JUN-2001  [sna]
+TITLE   :TN3270/TN5250 Port Values Limited to Four Digits in SNA Manager
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+TN3270 and TN5250 can be configured to use specific Transfer Control
+Protocol/Internet Protocol (TCP/IP) ports. However, the Edit Control where the
+specific port value is specified in SNA Manager allows a maximum of only four
+digits to be entered, even though the maximum TCP/IP port value is 65535.
+
+CAUSE
+=====
+
+The Edit Control incorrectly limits the port value to four digits.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+WORKAROUND
+==========
+
+The SNA Server command-line configuration utility (Snacfg.exe) can be used to
+enter TCP/IP ports values for TN3270 and TN5250 that contain five digits. The
+following is an example of how to set a port value of 12345 by using SNACFG for
+both TN3270 and TN5250:
+
+TN3270
+
+SNACFG tn3server <servername> /portnumber:12345
+
+TN5250
+
+SNACFG tn5server <servername> /portnumber:12345
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, and
+Host Integration Server 2000.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+Both TN3270 and TN5250 use TCP/IP port 23, by default. If both services will be
+used on the same SNA Server system, then one of them must be configured to use a
+different port. In addition, some customers may want to use nonstandard ports
+for TN3270 and TN5250 for security reasons.
+
+The following explains how to specify the use of specific ports for TN3270 and
+TN5250 when using SNA Manager:
+
+1. Open SNA Manager (Snaexp.exe).
+
+2. Right-click TN3270 (or TN5250) in the left pane of the SNA Manager window.
+
+3. Click Properties.
+
+4. Click the Use option in the Port section of the TN3270 Properties (or TN5250
+   Properties) dialog box.
+
+5. Type in a specific port value.
+
+Only four digits can be entered when you are specifying the port value in this
+manner. If SNACFG is used to specify the port as described previously, SNA
+Manager will correctly show the five-digit value in the port Edit Control.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

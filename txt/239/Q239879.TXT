@@ -1,0 +1,95 @@
+DOCUMENT:Q239879  31-JUL-2001  [winnt]
+TITLE   :CoCreateInstance Fails When Constructor String Is Blank
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbCOMPlus kbOSWin2000 kbDSupport kbCOMPlusAdmin kbSysAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Create a component that implements IObjectConstruct::Construct. Configure the
+component as a COM+ application and enable the object construction property, but
+do not provide a constructor string.
+
+Attempting to instantiate the COM+ object results in the following error:
+
+   Error 8004e025 Automation Error
+   COM+ Activation function failed because an initialization function failed.
+
+WORKAROUND
+==========
+
+The workaround for this problem is to enter a dummy string or just spaces in the
+Constructor String field.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior:
+----------------------------
+
+ - Create a component that derives from IObjectConstruct and implements
+   IObjectConstruct::Construct but does not use a constructor string.
+
+ - Configure this component in a COM+ Server Application such that object
+   construction is enabled in Component Services but the constructor string is
+   left blank.
+
+To do this:
+
+1. On the Start menu, select Programs, and then select Administrative Tools to
+   launch Component Services.
+
+2. Create a new COM+ Server Application under My Computer\COM+ Applications.
+
+3. Install your component in this Application.
+
+4. Right-click on this configured component and select Properties. Click the
+   Activation tab.
+
+5. Select the Enable Object Construction button and leave the Constructor String
+   blank.
+
+6. Try to create this component through a client application.
+
+An error message is displayed saying:
+
+   Error 8004e025 Automation Error
+   COM+ Activation function failed because an initialization function failed.
+
+If you just enter a dummy string or spaces for the constructor string, an
+instance of the object can be created.
+
+Additional query words: objectconstruct, complus, win2k, win2000
+
+======================================================================
+Keywords          : kbCOMPlus kbOSWin2000 kbDSupport kbCOMPlusAdmin kbSysAdmin 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

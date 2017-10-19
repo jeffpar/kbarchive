@@ -1,0 +1,105 @@
+DOCUMENT:Q246017  08-MAY-2002  [sna]
+TITLE   :SNA Print Session Remains Pending When Stopped and Restarted
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you stop and restart an APPC printer session, the printer session may
+remain in a Pending status.
+
+CAUSE
+=====
+
+The SNA Server Print server does not issue a TP_ENDED when the session is
+stopped. Therefore, the AS/400 writer is still active.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+SP3.
+
+
+MORE INFORMATION
+================
+
+A TP_ENDED is issued when the print session is closed, as in the following
+trace:
+
+   APPC
+   ---------------------------------------------------------------------------
+   APPC TP_ENDED request
+   APPC
+   APPC Type:Sync VerbID:00068000
+   APPC
+   APPC ---- Verb Parameter Block at address 0EF4B8E0 ----
+   APPC 13000000 00000000 00000000 00000000 [..............]
+   APPC 409B2400 01000000 [@.$.....]
+   APPC
+   ---------------------------------------------------------------------------
+   APPC RECEIVE_AND_WAIT response, result = DEALLOC_ABEND
+   APPC
+   APPC Type:Sync VerbID:000F4000
+   APPC
+   APPC ---- Verb Parameter Block at address 0EF4B854 ----
+   APPC 0B000000 00050000 00000000 00000000 [................]
+   APPC 409B2400 70A22400 00040001 00000010 [@.$.ps$.........]
+   APPC 00000000 C4BD2300 00000000 00000000 [....D.#.........]
+   APPC
+   ---------------------------------------------------------------------------
+   APPC TP_ENDED response, result = OK
+   APPC
+   APPC Type:Sync VerbID:00068000
+   APPC
+   APPC ---- Verb Parameter Block at address 0EF4B8E0 ----
+   APPC 13000000 00000000 00000000 00000000 [...............]
+   APPC 409B2400 01000000 [@.$..... ]
+   APPC
+   ---------------------------------------------------------------------------
+   APPC TP_STARTED request
+   APPC
+   APPC Type:Sync VerbID:00078000
+   APPC
+   APPC ---- Verb Parameter Block at address 0EF4BABC ----
+   APPC 14000000 00000000 00000000 43535455 [............CSTU]
+   APPC 524C4134 00000000 409B2400 D7D9E3D7 [RLA4....@.$.PRTP]
+   APPC E3C8D9E4 40404040 40404040 40404040 [THRU@@@@@@@@@@@@]
+   APPC 40404040 40404040 40404040 40404040 [@@@@@@@@@@@@@@@@]
+   APPC 40404040 40404040 40404040 40404040 [@@@@@@@@@@@@@@@@[
+   APPC 40404040 40404040 40404040 [@@@@@@@@@@@@ ]
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP3
+Version           : WINDOWS:4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

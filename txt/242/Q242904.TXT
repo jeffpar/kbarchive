@@ -1,0 +1,372 @@
+DOCUMENT:Q242904  08-MAR-2002  [homegame]
+TITLE   :Age of Empires II: How to Troubleshoot Multiplayer Game Problems
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbtshoot aoe igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to troubleshoot issues with multiplayer games in Age
+of Empires II: The Age of Kings.
+
+This article contains the following troubleshooting methods:
+
+ - Install the Age of Empires II: The Age of Kings 2.0a Update
+
+ - Make Sure that the Same Version Is Installed on All Computers in the Game
+
+ - TCP/IP Connections
+
+    - Make sure that you provide the correct IP address to guest players
+
+    - Use the correct type of connection for your TCP/IP game
+
+    - Disconnect from the LAN before you start a dialup Internet game
+
+ - Zone Connections
+
+    - Make sure that your browser is supported by the MSN Gaming Zone
+
+    - How to restore a disconnected Zone game
+
+ - Modem or Direct Cable Connections
+
+    - Make sure that the phone line for the host computer is not busy
+
+    - Install DirectPlay 6.1a or later
+
+    - Install the Latest Version of Microsoft DirectX
+
+    - Configure both computers to use the same connection speed
+
+ - Improving Multiplayer Performance
+
+    - Reduce your Internet latency
+
+    - Reduce the number of players in the game
+
+    - Quit all unnecessary programs before you start the game
+
+    - Use the fastest computer to host the game
+
+    - Do not use computer players in an Internet game
+
+    - Recommendations for eight player games
+
+MORE INFORMATION
+================
+
+To troubleshoot issues with multiplayer games in Age of Empires II, use the
+following methods.
+
+Install the Age of Empires II: The Age of Kings 2.0a Update
+-----------------------------------------------------------
+
+Install the latest update for Age of Empires II: Age of Kings. The latest update,
+Microsoft Age of Empires II: The Age of Kings 2.0a Update, includes multiplayer
+performance enhancements.
+
+To download the Age of Kings 2.0a Update, visit the following Microsoft Web
+site:
+
+   http://www.microsoft.com/games/age2/downloads.htm
+
+Make Sure that the Same Version Is Installed on All Computers in the Game
+-------------------------------------------------------------------------
+
+To play a multiplayer game in Age of Empires II, the same version of Age of
+Empires II and the same Age of Empires II patches must be installed on each
+computer in the game.
+
+TCP/IP Connections
+------------------
+
+Make sure that you provide the correct IP address to guest players:
+
+When you click IP Address on the Multiplayer Game screen in Age of Empires II,
+the game may report the wrong IP address if more than one network adapter is
+installed in your computer.
+
+If your guest players are unable to use this IP address to connect to your game,
+use the IP Configuration tool included with Microsoft Windows to determine the
+IP address for the adapter that you want to use for the game.
+
+To do this:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "winipcfg" (without the quotation marks), and then
+   click OK.
+
+3. In the unlabeled box, click the network adapter that you want to use to host
+   the game.
+
+   NOTE: If you want to use a dial-up Internet connection, click PPP Adapter.
+
+4. In the IP Address box, note the IP address for the adapter, and then click
+   OK.
+
+5. Provide the IP address that you noted in step 4 to your guest players.
+
+Use the correct type of connection for your TCP/IP game:
+
+If you click Local (LAN) TCP/IP Connection in the Connection Type box to start a
+multiplayer game on the Internet, the program may stop responding (hang).
+
+To resolve this issue, restart the computer, start Age of Empires II, click
+Multiplayer, and then click the appropriate type of connection for your TCP/IP
+game.
+
+The following table lists the appropriate type of connection for each type of
+TCP/IP multiplayer game:
+
++----------------------------------------------------------------------+
+| Game type                | Connection type                           | 
++----------------------------------------------------------------------+
+| Internet game            | Internet TCP/IP Connection For DirectPlay | 
++----------------------------------------------------------------------+
+| Local network (LAN) game | Local (LAN) TCP/IP Connection             | 
++----------------------------------------------------------------------+
+NOTE: To connect to an Internet game, Age of Empires II uses your default
+Internet connection.
+
+Disconnect from the LAN before you start a dialup Internet game:
+
+You may experience problems when you attempt to use a dial-up Internet connection
+to play a multiplayer game on a computer in which a network interface card (NIC)
+is also installed.
+
+To prevent this issue from occurring, unplug the network cable from your NIC
+before you connect to the Internet.
+
+Zone.com Connections
+--------------------
+
+Make sure that your browser is supported by Zone.com:
+
+If you cannot play multiplayer games on Zone.com, you may be using a Web browser
+that the Zone does not support. The Zone currently supports the following Web
+browsers:
+
+ - Microsoft Internet Explorer 3.02 or higher.
+
+ - Netscape Navigator 4.0 or higher.
+
+How to restore a disconnected Zone game:
+
+To restore a disconnected multiplayer Zone game, all of the players must quit the
+game, the host must start a new game on the Zone, and then the guest players
+must join the new game.
+
+NOTE: You cannot use Internet TCP/IP Connection For DirectPlay to join a restored
+Zone game.
+
+Modem or Direct Cable Connections
+---------------------------------
+
+Make sure that the phone line for the host computer is not busy:
+
+Age of Empires II does not notify you if the phone line for the host computer is
+busy.
+
+If you cannot connect to the host computer in a Modem Connection for DirectPlay
+game in Age of Empires II, use your telephone to dial the phone number for the
+host computer to make sure that the line is not busy.
+
+Install the Latest Version of Microsoft DirectX
+-----------------------------------------------
+
+Download and install the latest version of DirectX from the following Microsoft
+Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to obtain and install the latest version of
+DirectX, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Install the Latest Version of Microsoft DirectX:
+
+The latest version of DirectPlay is included in the latest version of Microsoft
+DirectX.
+
+To install the latest version of DirectPlay, download and install the latest
+version of DirectX from the following Microsoft Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to obtain and install the latest version of
+DirectX, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Configure both computers to use the same connection speed:
+
+You cannot play a Serial Connection for DirectPlay game or Modem Connection for
+DirectPlay game in Age of Empires II if the connection speed for the guest
+computer does not match the connection speed for the host computer.
+
+To resolve this issue, configure both computers to use the same modem connection
+speed or serial connection speed.
+
+To configure both computers to use the same modem or serial connection speed, use
+the appropriate method for your type of connection.
+
+Modem connection:
+
+1. On the Age of Empires II startup screen, click Multiplayer.
+
+2. Under Connection Type, click Modem Connection For DirectPlay.
+
+3. If you are the host player, click Create.
+
+   If you are the guest player, click Show Games.
+
+4. In the Modem box, click the modem you want to use, and then click Configure.
+
+5. On the General tab, in the "Maximum speed" box, click the fastest modem speed
+   supported by both modems, click to clear the "Only connect at this speed"
+   check box, and then click OK.
+
+6. If you are the host player, click Answer.
+
+   If you are the guest player, type the phone number for the game host computer
+   in the "Phone number" box, and then click Connect.
+
+7. If you are the guest player, click the game in the list of games, and then
+   click Join.
+
+Serial connection:
+
+1. On the Age of Empires II startup screen, click Multiplayer.
+
+2. Under Connection Type, click Serial Connection For DirectPlay.
+
+3. If you are the host player, click Create.
+
+   If you are the guest player, click Show Games.
+
+4. In the Port box, click the COM port to which the serial cable is attached.
+
+5. In the Baud Rate box, click the maximum speed at which both computers can
+   communicate.
+
+6. Make sure that the values in the Stop Bits, Parity, and Flow boxes are the
+   same on both computers.
+
+7. Click OK.
+
+8. If you are the guest player, click the game in the list of games, and then
+   click Join.
+
+Multiplayer Game Performance
+----------------------------
+
+To improve multiplayer game performance in Age of Empires II, use the following
+methods:
+
+Reduce your Internet latency:
+
+A multiplayer game runs only as fast as the slowest computer or connection in the
+game. To display scores and game performance information for all players in the
+game, click S in the lower-right corner of the game screen.
+
+If the frame rate for any computer in the game is slower than 15 frames per
+second, Age of Empires II displays a turtle next to the name of the player with
+the slowest computer. The player can then either attempt to increase their frame
+rate or drop out of the game.
+
+If you have a slow connection with any other player in an Internet game, Age of
+Empires II displays a yellow or red symbol beside that player's name. A yellow
+symbol indicates network latency between 300 milliseconds and 1 second. A red
+symbol indicates network latency greater than 1 second.
+
+To reduce network latency, quit the game, sign off from the Zone, restart your
+Internet connection, and then restart the game.
+
+If you continue to experience high Internet latency, proceed to the next method.
+
+For additional information about how to reduce Internet latency in multiplayer
+games, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q232392 Gaming Zone: High Latency in Game Lobbies or When Playing Games
+
+Reduce the number of players in the game:
+
+As the number of players in a game increases, the speed of the game decreases.
+Multiplayer game performance is slower in an 8-player game than in a 2-player
+game.
+
+Quit all unnecessary programs before you start the game:
+
+Unnecessary programs that are running on your computer can decrease multiplayer
+game performance in Age of Empires II.
+
+To improve multiplayer game performance, quit all unnecessary programs before you
+start a multiplayer game.
+
+NOTE: When you play a multiplayer game on the Zone, you do not need to leave your
+Web browser running after you start the game. To quit your Web browser after you
+start a game on the Zone, press ALT+TAB to switch from the game to your Web
+browser, quit the Web browser, and then click your game on the taskbar to
+restore it.
+
+Use the fastest computer to host the game:
+
+Because the host computer acts as a network server as well as a game client, the
+player with the fastest computer should host the game, even if no computer
+players are included in the game.
+
+Do not use computer players in an Internet game:
+
+When you use a dial-up Internet connection to play a multiplayer game, do not add
+any computer players to the game, especially if you play with three or more
+human players. Computer players decrease multiplayer performance more severely
+than human players.
+
+Recommendations for multiplayer games with eight players:
+
+For best performance when you play a multiplayer game with eight players:
+
+ - Make sure that each computer in the game meets or exceeds the minimum system
+   requirements to play Age of Empires II.
+
+ - Make sure that the computer with the fastest processor and largest amount of
+   RAM is the host computer for the game.
+
+Additional query words: 2.00 aoe2 aok msgame multi player serial direct connection
+
+======================================================================
+Keywords          : kbtshoot aoe igz kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOE2Kings
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,67 @@
+DOCUMENT:Q195481  14-NOV-2000  [word97]
+TITLE   :WD97: Excel Object Range Name Changes Format After Paste Link
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta winword word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you paste link a Microsoft Excel object into a Word document, the range
+name changes to a cell reference (CxRx) format.
+
+CAUSE
+=====
+
+This problem occurs when you select the range in Excel and use the Copy Picture
+command (hold SHIFT and then on the Edit menu, click Copy Picture).
+
+WORKAROUND
+==========
+
+To work around this problem, use the Copy command instead of the Copy Picture
+command in Excel.
+
+NOTE: The disadvantage to using this method is that an embedded chart is not
+copied as part of the link. An embedded chart is available only when you use the
+Copy Picture command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed
+above.
+
+Additional query words: row column format
+
+======================================================================
+Keywords          : kbdta winword word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

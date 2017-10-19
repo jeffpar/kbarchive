@@ -1,0 +1,59 @@
+DOCUMENT:Q200620  10-APR-1999  [sms]
+TITLE   :SMSINST: Office 4.3 Uninstall Leaves Files and Folders Behind
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbsmsInst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove Microsoft Office 4.3, some files or folders may be left on the
+computer.
+
+CAUSE
+=====
+
+All of the Office 4.3 programs can create files after you install the software.
+These files will not be in the Install.log file and therefore will not be
+removed when you uninstall the software. Also, any directory containing such
+files will not be removed.
+
+An example of this would be the Normal.dot and the Winword.opt files that
+Microsoft Word creates the first time that it is run. Another example is a
+document that was saved in any of the Office directories.
+
+This behavior is by design to prevent data files from being deleted when you
+remove the software.
+
+Additional query words: smsinst msoffice prodsms
+
+======================================================================
+Keywords          : kbsmsInst 
+Technology        : kbSMSSearch kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

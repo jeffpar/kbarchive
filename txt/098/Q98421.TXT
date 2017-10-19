@@ -1,0 +1,47 @@
+DOCUMENT:Q98421  30-JUL-2001  [lanman]
+TITLE   :Renaming a Bid for a Boot Drive
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+This article explains the significance of renaming a new bid for a boot drive to
+spare001.sys or bootbid.bid.
+
+MORE INFORMATION
+================
+
+When you are booting your system, your machine designates the first disk it
+finds as boot disk. If you have two SCSI controllers, laddr boots from the one
+it finds first by default. If you want to boot from the other one, rename it
+boot.bid so that ddr will find it first from then on.
+
+SPARE001.SYS was set up because any bid that is not registered in IOCFG01.SYS is
+not tried as the laddr drivers are loaded. If you rename any new bid that comes
+out to SPARE001.SYS, it will be tried as well. The other option is to include a
+"device = " line in CONFIG.SYS.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

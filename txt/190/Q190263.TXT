@@ -1,0 +1,80 @@
+DOCUMENT:Q190263  11-DEC-1999  [foxpro]
+TITLE   :PRB: Hyperlink Object Cannot NavigateTo Name With DBCS
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 6.0, using the Hyperlink control NavigateTo method to navigate
+to a Web page, picture file (.bmp, .gif or .jpg) or Active Document that
+contains Double-Byte Character Set (DBCS) characters in the filename does not do
+anything.
+
+RESOLUTION
+==========
+
+Use the Hyperlink button found in the _hyperlink.vcx Foundation Class library.
+This foundation class supports filenames with DBCS characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual FoxPro, open the Customer table in the \Samples\Vfp98\Data
+   directory.
+
+2. Browse the Customer table and save the Customer table as HTML, and provide a
+   name with DBCS characters.
+
+3. Create a form and place a command button and hyperlink control on the form.
+
+4. In the Click event of the command button, place the following code:
+
+         Thisform.Hyperlink1.NavigateTo(<HTML filename with DBCS character>)
+
+5. Save and run the form.
+
+NOTE: Click the command button, nothing happens and no error occurs.
+
+Additional query words: kbActiveDocs kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

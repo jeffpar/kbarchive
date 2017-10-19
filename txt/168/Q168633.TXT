@@ -1,0 +1,73 @@
+DOCUMENT:Q168633  18-OCT-1999  [exchange]
+TITLE   :XGEN: When Do You Need a Client Access License (CAL)?
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Any user who wants to access information on a computer running Microsoft
+Exchange Server requires a Client Access License (CAL) for Exchange. However,
+not all users of Microsoft Exchange clients require a Windows NT Server Client
+Access License (CAL).
+
+MORE INFORMATION
+================
+
+How to determine if you need a Windows NT Server CAL.
+
+If your client uses Windows NT Server for any of these basic networking features,
+a Windows NT Server CAL is required:
+
+   File Sharing
+   Printer Sharing
+   Remote Access Services
+   Mac Services
+
+If your Exchange Client user is not using any of the above networking features of
+Windows NT Server, a Windows NT Server CAL is not required. If you use Windows
+NT Server strictly as an application server (that is, just to run Exchange) does
+not require a Windows NT Server CAL.
+
+For additional information on Windows NT Server Client Access Licenses, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q151307 Client Access License (CAL)
+
+
+Additional query words: permission
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange500Mac kbExchange400Mac kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

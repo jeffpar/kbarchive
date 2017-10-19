@@ -1,0 +1,54 @@
+DOCUMENT:Q160111  09-MAY-2002  [homegame]
+TITLE   :Cannot Read Hellbender CD from SideWinder 3D Pro Bundle
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SideWinder 3D Pro 
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Hellbender compact disc that was bundled with the Sidewinder 3D Pro, may be
+unreadable on some CD-ROM drives. If you have a defective compact disc, Explorer
+will display approximately 174 MB used on the compact disc, rather than 371 MB.
+
+
+To resolve this problem, please contact Microsoft Customer Sales and Service
+at(800) 426-9400 for a new compact disc.
+
+If you are able to view all the contents on the compact disc, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q160031 Err Msg: Cannot Find The SETUP.EXE File Or One Of Its Components
+
+Additional query words: 1.00 setup game games error install real read ts bad cd problem file too much large
+
+======================================================================
+Keywords          :  
+Technology        : kbMSHardwareSearch kbGamesSearch kbZNotKeyword kbHellBender kbSidewinderSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

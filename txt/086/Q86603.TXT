@@ -1,0 +1,60 @@
+DOCUMENT:Q86603  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Cannot Switch to Task List
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Microsoft Schedule+ for Windows Task list has more than 255 late,
+uncompleted tasks and you try to open the Task list or edit a recurring task in
+the Edit Recurring Tasks dialog box, the following error message will be
+displayed:
+
+   There is not enough memory available to perform this action. Please close
+   some windows and try again.
+
+RESOLUTION
+==========
+
+To free memory, delete the excess tasks from the Edit Recurring Tasks dialog
+box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 1.0 and 1.0a of
+Microsoft Schedule+ for Windows. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 1.00a schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

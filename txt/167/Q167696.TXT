@@ -1,0 +1,92 @@
+DOCUMENT:Q167696  17-JUL-2001  [visualc]
+TITLE   :FIX: Debug Static MFC Library Links to UrlMon.dll/Wininet.dll
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbInternet kbMFC kbVC500bug kbVC600fix kbNoUpdate
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application that statically links to the debug version of MFC also links to
+urlmon.dll and wininet.dll. The MFC static library brings in references to these
+DLLs even though the application does not use functionality in these DLLs.
+Executing this application on a machine that does not have these DLLs results in
+a message indicating that these DLLs cannot be found.
+
+CAUSE
+=====
+
+The debug static version of MFC has references to symbols in these DLLs even
+when the application is not using any functionality in these DLLs.
+
+RESOLUTION
+==========
+
+Install these DLLs on the system from the ActiveX SDK. The release version does
+not link to these DLLs, so it is not necessary to redistribute these when
+releasing the product. These DLLs are needed only when debugging the
+application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an AppWizard Application so that it statically links to MFC.
+
+2. Build the debug version.
+
+3. Execute this on a machine that does not have urlmon.dll and wininet.dll.
+
+REFERENCES
+==========
+
+Please refer to ActiveX SDK documentation for more information on installing
+these DLLs.
+
+For information on the ActiveX SDK, visit the Microsoft web site:
+
+   http://www.microsoft.com/workshop/default.asp
+
+Additional query words: wininet urlmon
+
+======================================================================
+Keywords          : kbActiveX kbInternet kbMFC kbVC500bug kbVC600fix kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

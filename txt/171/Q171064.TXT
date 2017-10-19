@@ -1,0 +1,96 @@
+DOCUMENT:Q171064  04-MAY-2001  [visualc]
+TITLE   :FIX: C2512 Instantiating Template in Member Initializer
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0sp1,5.0sp3
+OPER/SYS:
+KEYWORDS:kbVC600fix kbVS97sp3bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0sp1 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0sp1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0sp3 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0sp3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a member initializer instantiates a template class that takes a const
+parameter in its constructor, you may receive the following error:
+
+   error C2512: no appropriate default constructor available
+
+RESOLUTION
+==========
+
+Declare a global object of the template class specialization that is used in the
+member initializer. When optimizations are used, this unreferenced global should
+be optimized away.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+MORE INFORMATION
+================
+
+This is a regression from Visual C++ 5.0.
+
+Sample Code
+-----------
+
+       // Compile options needed: none
+
+       struct _Tree {
+         _Tree(const int& _Parg) {}
+       };
+
+       template<class _Pr>
+       struct set {
+         _Tree _Tr;
+         set(const _Pr& _Pred = _Pr()) : _Tr(_Pred) {}
+       };
+
+       struct Boo
+       {
+         Boo();
+         set<int>& _xSet;
+       };
+
+       //set<int> x;  // uncomment for workaround
+
+       Boo::Boo()
+        : _xSet(*new set<int>)  //C2512 here
+       {}
+
+Additional query words: visual studio service pack
+
+======================================================================
+Keywords          : kbVC600fix kbVS97sp3bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0sp1,5.0sp3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q198584  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: Pressing ALT+TAB Does Not Switch Tasks
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to switch to the Windows desktop or another program by pressing
+ALT+TAB, Microsoft Combat Flight Simulator may not be minimized and the Windows
+desktop or the other program may not be displayed.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - You are running Combat Flight Simulator in Full Screen mode.
+ - You are running Combat Flight Simulator on a Microsoft Windows NT 4.0-based
+   computer.
+
+RESOLUTION
+==========
+
+To work around this issue, use one of the following methods:
+
+ - Run Combat Flight Simulator in a window instead of Full Screen mode.
+ - Start another program while Combat Flight Simulator is running. When you
+   start another program, ALT+TAB functionality is restored.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Combat Flight
+Simulator, WWII Europe Series, version 1.0.
+
+MORE INFORMATION
+================
+
+This issue does not occur on Microsoft Windows 95/98-based computers.
+
+Additional query words: 1.00 msgame combatfs cfs winnt
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,72 @@
+DOCUMENT:Q177155  14-APR-1999  [foxpro]
+TITLE   :PRB: "Save Changes?" Dialog Box Appears When No Changes Made
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the ESC key to close a form that has a spinner or a combo box in a
+PageFrame, the Discard Changes dialog box appears although changes have not been
+made to the form. If you use any other way to close the form, the "Do you want
+to save changes?" dialog box appears.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Some objects that you have on a form cause the "Do you want to save changes?"
+dialog box to appear even though changes have not been made to the form. NOTE:
+This behavior may occur with other controls.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form in the Form Designer.
+
+2. Add a PageFrame to the form.
+
+3. Edit the PageFrame and add either a spinner or a combo box to the PageFrame.
+
+4. Close and save the form.
+
+5. Open the form again and without making any changes try to close the form by
+   pressing the ESC key or selecting Close from the File menu.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

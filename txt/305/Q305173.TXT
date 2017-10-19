@@ -1,0 +1,70 @@
+DOCUMENT:Q305173  03-AUG-2001  [msnetwork]
+TITLE   :PC Freezes When Prompted To Restart During MSN Broadband DSL New
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+ - Microsoft Windows 98 Second Edition 
+ - MSN DSL, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During MSN Broadband Installation your computer stops responding.
+
+This occurs when your are prompted to restart your computer after installation of
+the Arescom drivers. When you open Task Manager (CTRL+ALT+DEL), the Systray
+status is "not responding". After clicking End Task on Systray, a blue screen
+"VxD error" is displayed. Your computer will not respond when you press
+CTRL+ALT+DEL; you must turn the power off and restart your computer manually.
+
+When you do restart the computer, Setup is unable to detect the modem.
+
+CAUSE
+=====
+
+This is a known issue and the product team is investigating it.
+
+RESOLUTION
+==========
+
+No permanent resolution exists at this time. This issue will be fixed in future
+release.
+
+Note: You can change your connection type from "USB" to "Ethernet" if this option
+is available.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; · Arescom 800 Series CPE Using USB Connection; · MSN DSL
+
+======================================================================
+Keywords          :  
+Technology        : kbWin98SEsearch kbMSNSearch kbWin98SE kbMSN610 kbMSNDSL200
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

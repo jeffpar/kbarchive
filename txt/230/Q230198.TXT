@@ -1,0 +1,71 @@
+DOCUMENT:Q230198  17-NOV-2000  [winnt]
+TITLE   :SP4 or SP5 Re-Enables Daylight Savings Time Option
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT 4.0 Service Pack 4 (SP4) or Windows NT 4.0 Service
+Pack 5 (SP5) on your computer, the computer automatically adjusts for daylight
+savings time even if the option was previously turned off.
+
+CAUSE
+=====
+
+This behavior occurs because applying SP4 or SP5 re-enables the "automatically
+adjust clock for daylight savings changes" option.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Date/Time, click the Time Zone tab, and then clear the
+   "Automatically adjust clock for daylight savings changes" check box.
+
+NOTE: You must do this after each application of a service pack.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: sp4 sp5 NTS NTW setup
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400xsearch kbWinNTS400
+Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

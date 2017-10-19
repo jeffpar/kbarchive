@@ -1,0 +1,58 @@
+DOCUMENT:Q147260  07-SEP-2001  [exchange]
+TITLE   :XCLN: Printing with Print Icon Does Not Use Default Printer
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a message or note from the Microsoft Exchange client by using the
+Print icon on the toolbar, the output may not go to the default printer.
+
+CAUSE
+=====
+
+The print output will go to the last printer selected (or currently selected) in
+the Print option on the File menu.
+
+WORKAROUND
+==========
+
+When you change the printer selection with the Print option, the selection is
+maintained until it is either changed or the client is restarted. The printer
+selection is reset back to the default printer (selected in the operating
+systems printers Control Panel) when you restart the client.
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

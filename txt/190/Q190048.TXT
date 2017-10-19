@@ -1,0 +1,73 @@
+DOCUMENT:Q190048  11-JAN-2001  [vbwin]
+TITLE   :BUG: DHTML Project's MsgBox Statement Appears Behind Browser
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0;
+OPER/SYS:
+KEYWORDS:kbInternet kbPageDesigner kbVBp600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a DHTML application in the integrated development environment (IDE)
+and a MsgBox statement in code is carried out, the MsgBox shows up behind the
+browser.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Page Designer: Modal Prompts Appear Behind Browser in Run Mode
+--------------------------------------------------------------
+
+If you add a message box to your DHTML page, the message box appears behind
+Internet Explorer when activated in run mode. In addition, you cannot move
+Internet Explorer out of the way in order to view the message, because the
+message is modal. When you hear the beep that indicates a message is on the
+screen, select the Visual Basic application from your taskbar to view and clear
+the message.
+
+REFERENCES
+==========
+
+Please see the following Microsoft Knowledge Base article for more information
+on the DHTML Page Designer:
+
+   Q190249 INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbPageDesigner kbVBp600bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0;
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

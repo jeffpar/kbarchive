@@ -1,0 +1,88 @@
+DOCUMENT:Q96718  09-DEC-1999  [pcmail]
+TITLE   :PC Win: Description and Use of Inbox Shadowing
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail for Windows has a feature named Inbox Shadowing. This feature is
+enabled in Mail for Windows when you choose Options from the Mail menu, choose
+the Server button, select the Copy Inbox on Postoffice for Dialin Access option
+and choose OK. The Copy Inbox option instructs Mail for Windows to synchronize
+its inbox with each other client's inbox.
+
+When you complete the procedure above, Mail displays the following message on the
+screen:
+
+   Please Wait - Synchronizing Inbox
+
+During this process, Mail might display the following message:
+
+   Mail cannot copy some messages to the postoffice. Close all messages and
+   check disk space.
+
+This message appears if an inbox message is open when you turn on Inbox
+Shadowing. To correct this situation, close all messages and repeat the steps to
+turn on Inbox Shadowing.
+
+Use Inbox Shadowing if you use more than one Mail client or if you access mail
+remotely and also use Mail for Windows.
+
+When Inbox Shadowing is active, Mail displays the following message each time you
+log into Mail for Windows:
+
+   Please Wait - Synchronizing Inbox
+
+Mail marks each inbox message once as synchronized. When you delete a message
+from the Mail for Windows inbox, it will be deleted from the inbox for each
+other client. However, if you delete a message from the inbox of another client,
+it remains in the Mail for Windows inbox because the other clients cannot access
+the .MMF file. To synchronize the Mail for Windows inbox, deselect and reselect
+the Copy Inbox on Postoffice for Dialin Access option. When you exit from Mail
+for Windows, it resynchronizes the inbox.
+
+MORE INFORMATION
+================
+
+When you send a mail message, Microsoft Mail adds a header to the recipient's
+.MBG file that includes a pointer to the corresponding .MAI file. The .MBG file
+is the inbox for MS-DOS and Macintosh clients. Inbox Shadowing is necessary
+because Mail for Windows moves all messages in an individual's .MBG file into
+his .MMF file. If Inbox Shadowing is not active, when Mail for Windows moves a
+message into the .MMF file, it flags the headers in the .MBG file as if the
+message was deleted and it deletes the corresponding .MAI files. In this case,
+the inbox for the MS-DOS and Macintosh clients are empty.
+
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

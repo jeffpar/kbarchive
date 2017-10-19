@@ -1,0 +1,105 @@
+DOCUMENT:Q184562  11-APR-2000  [mspress]
+TITLE   :Internet Information Server ResKit Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Internet Information Server Resource Kit ISBN 1-57231-638-1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Microsoft Internet Information Server
+Resource Kit," ISBN 1-57231-638-1.
+
+Contents
+--------
+
+ - Pages 204 & 206: Missing Code Samples
+
+ - HTTPMon Does Not Generate CSV Files
+
+ - Susrv.exe Missing from Companion CD-ROM
+
+MORE INFORMATION
+================
+
+Pages 204 & 206: Missing Code Samples
+-------------------------------------
+
+Page 204, second code sample: Change:
+
+     My name is:
+
+To:
+
+     My name is: <%= Session("MyName") %>
+
+Page 206, box, end of first paragraph:
+Insert:
+
+Response.Redirect "http://w10.microsoft.com/Webapp/firstpage.asp")
+
+
+HTTPMon Does Not Generate CSV Files
+-----------------------------------
+
+No data CSV files are generated in the OUTPUTDIRECTORY when the Microsoft HttpMon
+service is started.
+
+To work around this problem, obtain the updated version of Httpmon.exe. The new
+version of Httpmon.exe 2.0 is build 011298.
+
+For further information on this error and the location of the updated HttpMon,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q181372 HttpMon.exe Does Not Write to CSV File
+
+
+
+Susrv.exe Missing from Companion CD-ROM
+---------------------------------------
+
+\IIS Resource Kit\Utility\ISP SignUp Server\WebDoc\signup2.htm states that the
+user should, as part of the Setup process, run Susrv.exe. Susrv.exe is not
+included on the IIS RK CD-ROM, and is no longer available for distribution.
+
+The documentation error will be corrected in future reprints and editions of the
+Microsoft Internet Information Server Resource Kit.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of the book, it may already
+contain the above corrections.
+
+Additional query words: ms_press iis 4.0 reskit
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

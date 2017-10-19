@@ -1,0 +1,78 @@
+DOCUMENT:Q132244  12-JUN-2001  [odbc]
+TITLE   :PRB: Visual Basic DisableAsync Fails w/ MASJT200.DLL
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have both the Visual Basic (VB) compatibility layer and the Microsoft
+ODBC Desktop Database Drivers installed, a VB application (EXE) always runs in
+asynchronous query execution mode, no matter if DisableAsync is set to one or
+zero in the application's initialization file(<app> .INI).
+
+WORKAROUND
+==========
+
+Install the Microsoft Access Service Pack, which upgrades the Jet Engine
+(MSAJT200.DLL) to version 2.50.1606.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q122927 WX1124: Microsoft Access Version 2.0 Service Pack
+
+
+A VB application will always run in synchronous query execution mode with this
+service pack installed.
+
+MORE INFORMATION
+================
+
+A VB application, which accesses ODBC data sources via Data Access Objects, can
+be forced into synchronous query execution mode by specifying the following in
+its .INI file:
+
+      [ODBC]
+      DisableAsync=1
+
+By default, DisableAsync is set to zero.
+
+When the VB compatibility layer is installed, the Jet Engine is upgraded from
+version 1.0 to version 2.0. If the Microsoft ODBC Desktop Database Drivers are
+then installed, the Jet Engine (MSAJT200.DLL) will be upgraded to version
+2.50.1117, which forces a VB application into asynchronous query execution mode
+forever.
+
+Additional query words: 2.00.2317 Windows NT 3.1 3.5
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

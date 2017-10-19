@@ -1,0 +1,258 @@
+DOCUMENT:Q140316  07-DEC-2001  [ssafe]
+TITLE   :INFO: All Variable Settings for Visual SourceSafe .INI File
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe has many .ini file variables that allow you to customize the
+Visual SourceSafe installation. This article lists all available .ini file
+settings.
+
+MORE INFORMATION
+================
+
+General Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+ComputerName             name or %env-var%         Blank (OS Name)
+Editor                   PathName                  Blank
+Keep_Checkedout          Yes|No                    No
+Mark_Merges              Yes|No                    No
+Recursive                Yes|No                    No
+Reuse_Comment            Yes|No                    No
+Temp_Path                RelativePath              temp
+Update_No_Change         Update|Uncheckout|Ask     Uncheckout
+
+View Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+CP_OnSelection           Yes|No                    Yes
+Long_Filenames           Yes|No                    Yes
+Lowercase_Files          Yes|No                    No
+Refresh_Display          Yes|No                    Yes
+Refresh_Interval         #Seconds                  300
+Results_Window           Yes|No                    No
+Status_Bar               Yes|No                    Yes
+Toolbar                  Yes|No                    Yes
+
+Toolbar Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Toolbar_Size             16|VW4                     No
+ToolTips                 Yes|No                     Yes
+
+Font Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Font_Attributes
+Font_Face
+Font_Size
+Font_Weight
+
+Local File Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Append_EOL               Yes|No                    No
+Compare                  Full|Checksum|Time        Checksum
+Delete_Local             Yes|No                    No
+Expand_Keywords_Locally  Yes|No                    Yes
+Replace_Writable         Replace|Ask|Skip|Merge    Ask
+SetTime                  Current|Mod|Update        Current
+Smart_Mode               Yes|No                    No
+Use_Readonly             Yes|No                    Yes
+
+Command Dialogs Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Skip_Fcheckout           Yes|No                    No
+Skip_Fdiff               Yes|No                    No
+Skip_Fget                Yes|No                    No
+Skip_Fhistory            Yes|No                    No
+Skip_Funcheckout         Yes|No                    No
+Skip_Pcheckout           Yes|No                    Yes
+Skip_Pdiff               Yes|No                    Yes
+Skip_Pget                Yes|No                    Yes
+Skip_Phistory            Yes|No                    Yes
+Skip_Puncheckout         Yes|No                    Yes
+
+Warning Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Warn_Destroy             Yes|No                    Yes
+Warn_Exit                Yes|No                    Yes
+Warn_Multiple_Checkout   Yes|No                    Yes
+Warn_Purge               Yes|No                    Yes
+Warn_Remove              Yes|No                    Yes
+Warn_Rollback            Yes|No                    Yes
+Warn_Uncheckout          Yes|No                    Yes
+
+File Type Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Binary_Masks             Extension List            Blank
+File_Types               List of extensions        Blank
+Relevant_Masks           Extension list            *.*
+
+Command Line Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Checkout_Comment         Character String          Blank
+Comment_Editor           Path and filename         Blank
+Comment_Editor_Prompt    Yes|No                    Yes
+Force_Dir                Yes|No                    No
+Force_Prj                Yes|No                    No
+Output                   @filename|none            None
+
+General Admin Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Database_Name            Character String          Blank
+Journal_File             Path and filename         Blank
+Keyword_Masks            Extension list            Blank
+Multiple_Checkouts       Yes|No                    No
+Use_Network_Name         Yes|No                    Yes
+
+Shadow (Admin) Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Shadow                   Path                      Blank
+Shadow_EOL               r|rn|n                    rn
+Shadow_Readonly          Yes|No                    Yes
+Shadow_SetTime           Current|Mod|Update        Current
+
+Macintosh Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Use_CKID                 Yes|No                    Yes
+
+Merge Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Backup_Ext               Extension                 .org
+Merge_Ext                Extension                 .mrg
+
+Power User Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Comment_Template         Filename                  Blank
+Diff_Context             Nbr of lines              0 (Unix/SS)
+                                                   Infinite (Visual)
+EOL                      r|rn|n                    RN
+Extension Association    By Extension              None
+Filetype                 Binary|Text|Auto-Detect   Auto-Detect
+Indicate_Expandable      Yes|No                    Yes
+Menu_Help                Yes|No                    Yes
+Save_Settings            Yes|No                    No
+                                                   (until user clicks)
+Store_Deltas             Yes|No                    Yes
+Visual_Diff_ChangeClr    R,G,B or Color Name
+Visual_Diff_DeleteClr    R,G,B or Color Name
+Visual_Diff_InsertClr    R,G,B or Color Name
+
+Project Property Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Dir                      PerProject                None
+
+Settings Made Automatically by Visual SourceSafe:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Columns                  Nbr of chars: #,#,#
+Columns (UI)             Nbr of pixels: #, #, #
+Columns_History          Nbr of chars #, #, #, #
+Columns_History (UI)     Nbr of pixels #, #, #, #
+Custom_Toolbar           List of one-letter        Yes
+                               values
+Dft_Report_Type          0|1|2 (Printer,File,      0
+                               Preview)
+Diff_Format              SS|Unix|Visual            Visual
+Diff_Ignore              c-es-w-                   c-es-w-
+Diff_Width               Number                    79
+Help_Pos                 x1,y1,x2,y2
+Hist_Rect                x1,y1,x2,y2
+History_Include_Files    Yes|No                    Yes
+Maximized                Yes|No                    No
+Preview_Rect             x1, y1, x2, y2
+PrjWidth                 Nbr of chars: #
+PrjWidth (UI)            Nbr of pixels: #
+Project                  ProjectPath
+Sort_Order               Name|Type|User|Date|Path  Name
+Visual_Diff_Rect         x1,y1,x2,y2
+Window                   x1,y1,x2,y2
+
+Srcsafe.ini Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Data_Path                Path                      DATA
+Lock_Timeout             Nbr of Seconds            10
+Shadow_DOSName           Yes|No                    No
+Shadow_Extension         Extension (eg ??V)        Blank
+Users_Txt                Path and filename         users.txt
+
+SourceSafe for MS-DOS Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+50_Line                  Yes|No
+Color                    Color scheme
+Height                   # of Lines                66
+Port                     LPT1                      LPT1
+Type                     Text|Postscript           Text
+Width                    #Characters               80
+
+UNIX Settings:
+
+Variable                 Value Type                Default Value
+------------------------------------------------------------------
+Data_Secure              SUIDRoot|Open             SUIDRoot
+Lock_Mode                Native|Lockfile           Native
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

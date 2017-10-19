@@ -1,0 +1,78 @@
+DOCUMENT:Q138863  13-JUN-2001  [sna]
+TITLE   :SNA Server Setup Always Adds COMNETMN to Registry in Error
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you install SNA Server 2.11, SNA Server Setup incorrectly adds a second
+COMNETMN entry to the registry even though the existing entry is the only entry
+necessary for SNA Server link services to send link alerts to Netview, provided
+a Netview connection is configured in SNA Server Admin.
+
+The second COMNETMN entry is added to the Windows NT registry under the subtree
+HKEY_LOCAL_MACHINE under the following subkey:
+
+     SYSTEM/CurrentControlSet/Services/LanmanServer/Parameters/NullSessionPipes
+
+CAUSE
+=====
+
+SNA Server Setup fails to check if the COMNETMN pipe name is already specified
+in the registry.
+
+RESOLUTION
+==========
+
+Obtain the update to SNA Server Setup mentioned below.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+KBCategory: kbnetwork kbbug2.11
+KBSubcategory: ntnetserv
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

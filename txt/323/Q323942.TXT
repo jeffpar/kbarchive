@@ -1,0 +1,84 @@
+DOCUMENT:Q323942  26-JUN-2002  [homegame]
+TITLE   :Asheron's Call: Err Msg: You Do Not Have the Current Version...
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to play Asheron's Call in the Microsoft Gaming Zone, you may
+receive an error message similar to the following:
+
+   You do not have the current version of Asheron's Call installed.
+
+CAUSE
+=====
+
+This problem may occur if you try to connect to the Asheron's Call game lobby
+while Microsoft is updating the site. The game files may not yet be available.
+
+RESOLUTION
+==========
+
+To resolve this problem, sign out, and then try to sign in later. To do this,
+follow these steps:
+
+1. In the Microsoft Gaming Zone, click Sign Out.
+
+2. Later, click Sign In.
+
+3. When you are prompted, enter your Microsoft .NET Passport credentials, and
+   then click OK.
+
+4. In the list of games, click Asheron's Call.
+
+   If this does not resolve the problem, repeat these steps until the game files
+   are available.
+
+MORE INFORMATION
+================
+
+For information about the status of the Asheron's Call server, visit the
+following Microsoft Web site:
+
+   State of the Network for Asheron's Call
+   http://zone.msn.com/asheronscall/news/ashenewsnetwork.asp
+
+For more information about the Microsoft Gaming Zone, visit the following
+Microsoft Web site:
+
+   Microsoft Gaming Zone
+   http://www.zone.com
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbAsheronSearch kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

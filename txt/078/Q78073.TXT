@@ -1,0 +1,88 @@
+DOCUMENT:Q78073  02-NOV-2001  [vbwin]
+TITLE   :PRB: Clipboard.SetData Gives Invalid Format Message with Icon
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 2.0, 3.0 
+ - Microsoft Visual Basic Standard Edition for Windows, versions 1.0, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Visual Basic LoadPicture function to load an icon file (.ICO)
+into a picture control, and then attempt to copy that picture control's picture
+to the Clipboard by using the SetData method, the following error message is
+displayed regardless of the format specified in SetData method:
+
+   Invalid Clipboard Format
+
+This error also occurs if you attempt to load an icon file directly onto the
+Clipboard by using this code:
+
+      ClipBoard.SetData LoadPicture("c:\vb\icons\arrows\arw01rt.ico")
+
+CAUSE
+=====
+
+The Microsoft Windows Clipboard in Windows has no CF_ICON format, so the
+Clipboard cannot be assigned Icons.
+
+STATUS
+======
+
+This behavior is by design in Microsoft Windows Clipboard.
+
+WORKAROUND
+==========
+
+To work around the problem, set the picture control's Autoredraw property to
+True (-1) and use the Picture control's Image property in the SetData method
+rather than the Picture control's picture property.
+
+'*** This code will fail with the error "Invalid Clipboard Format" ***
+
+   Picture1.Picture = LoadPicture("c:\vb\icons\arrows\arw01rt.ico")
+   Clipboard.SetData Picture1.Picture, 2
+
+'*** This code will avoid the error ***
+
+   Picture1.Autoredraw = -1
+   Picture1.Picture = LoadPicture("c:\vb\icons\arrows\arw01rt.ico")
+   Clipboard.SetData Picture1.Image, 2
+
+'*** This code will also work ***
+
+   Picture1.Picture = LoadPicture("c:\vb\icons\arrows\arw01rt.ico")
+   Picture1.Picture = Picture1.Image
+   Clipboard.SetData Picture1.Picture, 2
+
+Additional query words: 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300 kbVB200
+Version           : :1.0,2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

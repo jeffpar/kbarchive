@@ -1,0 +1,63 @@
+DOCUMENT:Q186502  11-DEC-2001  [winnt]
+TITLE   :Using Blinking Cursors with Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Blinking cursors cause unnecessary bandwidth use because every blink requires
+data packets to be transmitted. Applications that do not use a blinking cursor
+or that allow the blinking cursor to be disabled are preferred.
+
+A blinking cursor on the remote client session will cause continuous
+client/server traffic. This may not be a problem in many environments, but if
+connections are made over, for instance, a dial-on-demand router, excessive line
+charges can be incurred.
+
+MORE INFORMATION
+================
+
+Microsoft recommends slowing or eliminating blinking cursors on Terminal Server
+Clients to reduce network bandwidth usage.
+
+To adjust the cursor blink rate, perform the following steps:
+
+1. Click the Start button, point to Settings, click Control Panel, and then
+   double-click Keyboard.
+
+2. Move the slider to the left to decrease the Cursor Blink Rate. Moving the
+   slider to Slow will stop cursor blinking.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

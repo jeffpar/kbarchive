@@ -1,0 +1,70 @@
+DOCUMENT:Q22734  18-DEC-2000  [win95x]
+TITLE   :Sending Binary Files to a Printer After Print to File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:1.x,2.x,3.0,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 1.1, 2.03, 2.1, 2.11, 3.0, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a dot-matrix printer that is not connected to your personal computer,
+and you first print Microsoft Windows files to an output file on a disk and then
+you use the standard Print command on the computer connected to the printer to
+print the files, your files do not print properly.
+
+CAUSE
+=====
+
+Because Windows places a dot-matrix printer in graphics mode when it prints, the
+print output file you create is a binary file with graphics information.
+
+RESOLUTION
+==========
+
+Instead of using the standard Print command, you should use the COPY command
+with the /B option to send the binary print file to the printer.
+
+For example, if your printer was connected to LPT1 and you are trying to send a
+binary print file named PR.PRN to the printer, type the following:
+
+   " copy pr.prn lpt1: /b" (without the quotation marks)
+
+Use this same method to print any document when you use the Print to File option
+at the application level.
+
+REFERENCES
+==========
+
+See your MS-DOS manual for more information on the COPY command.
+
+
+Additional query words: dos dot matrix 3.11 3.10 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin110 kbWin203 kbWin210 kbWin211 kbWin300 kbWin310 kbWin311
+Version           : WINDOWS:1.x,2.x,3.0,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

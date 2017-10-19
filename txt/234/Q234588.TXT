@@ -1,0 +1,79 @@
+DOCUMENT:Q234588  12-FEB-2000  [exchange]
+TITLE   :XFOR: GW Mailbox Gateway Alias Does Not Transfer to Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you configure the Microsoft Exchange Connector for Novell GroupWise and
+successfully complete directory synchronization between Exchange Server and
+GroupWise, some GroupWise custom recipients fail to inherit their original
+gateway alias as their SMTP proxy address.
+
+The expected behavior is for Exchange Server to use the GroupWise user's gateway
+alias as the SMTP proxy address if one is defined specifically for that user.
+Exchange Server should only generate an SMTP proxy address for a GroupWise
+mailbox if there is no gateway alias defined for that mailbox.
+
+CAUSE
+=====
+
+The Gateway Alias Type field in the Microsoft Exchange Connector for Novell
+GroupWise is incorrect.
+
+RESOLUTION
+==========
+
+1. In the Exchange Server Administrator program, click the Options tab of the
+   Microsoft Exchange Connector for Novell GroupWise container. Change the
+   Gateway Alias Type field to SMTP.
+
+2. In the GroupWise NetWare Administrator program, in the API Gateway container,
+   change the Gateway Alias Type to SMTP.
+
+3. Restart the GroupWise API gateway and the GroupWise ADA. Restart the
+   Microsoft Exchange Connector for GroupWise and the Microsoft Exchange Router
+   for GroupWise services.
+
+4. After the next directory synchronization, the Exchange Server SMTP proxy
+   address should be equal to the gateway alias for that GroupWise mailbox.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

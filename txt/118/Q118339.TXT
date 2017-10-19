@@ -1,0 +1,82 @@
+DOCUMENT:Q118339  02-NOV-1999  [fortran]
+TITLE   :PRB: DX1020 on a Call to OUTGTEXT under MS-DOS
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A program running under MS-DOS (not an MS-DOS prompt in Windows) calls OUTGTEXT,
+and the following error message is generated:
+
+   DOSXMSF : fatal error DX1020: unhandled exception: Page fault
+
+CAUSE
+=====
+
+This error occurs if you have not successfully registered a font.
+
+RESOLUTION
+==========
+
+Check the return status of REGISTERFONTS and SETFONT. If they return -1, then do
+not call OUTGTEXT.
+
+MORE INFORMATION
+================
+
+To generate the problem, compile and run the sample code below from MS-DOS (not
+from an MS-DOS prompt in Windows).
+
+OUTGTEXT still fails if the two lines are uncommented and the directory used in
+REGISTERFONTS contains no .FON files or does not exist. The program runs
+correctly if the two lines are uncommented and the directory used in
+REGISTERFONTS does contain .FON files.
+
+Sample Code
+-----------
+
+   c compile options needed: none
+
+         INCLUDE 'FGRAPH.FI'
+         INCLUDE 'FLIB.FI'
+         INCLUDE 'FLIB.FD'
+         INCLUDE 'FGRAPH.FD'
+         write(*,*) setvideomode($MAXRESMODE)
+   c      write(*,*) registerfonts("c:\f32\lib\*.fon")
+   c      write(*,*) setfont("n1")
+         CALL outgtext("abcde")
+         read *
+         END
+
+Additional query words: 1.00 nofpsnt 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

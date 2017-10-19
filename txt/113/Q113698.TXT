@@ -1,0 +1,65 @@
+DOCUMENT:Q113698  09-FEB-2000  [foxpro]
+TITLE   :PRB: Command Window Moves Behind Main FoxPro Window
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When MACDESKTOP = ON, clicking the main FoxPro window moves it in front of the
+Command window.
+
+CAUSE
+=====
+
+This behavior occurs because the Command window is not a part of the main FoxPro
+window as it is in both FoxPro for Windows and FoxPro for MS-DOS. Issuing the
+SET MACDESKTOP OFF command after FoxPro has started does not affect this
+relationship because the "desktop" state of the Command window is determined
+prior to the execution of any user code.
+
+RESOLUTION
+==========
+
+If you want the Command window to behave as it does in FoxPro for Windows and
+FoxPro for MS-DOS, add the following line to the CONFIG.FPM file:
+
+      MACDESKTOP = OFF
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxMac FoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

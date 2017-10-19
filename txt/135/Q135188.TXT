@@ -1,0 +1,59 @@
+DOCUMENT:Q135188  17-DEC-2000  [win95x]
+TITLE   :Page Fault When Setup Detects Future Domain SCSI Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive a page fault error message when Setup is detecting the Future
+Domain SCSI controller in your computer. You may receive this error message even
+if you do not have a Future Domain SCSI controller installed in your computer.
+
+CAUSE
+=====
+
+386Max software is installed. This software makes the Adaptec ROM region
+read-only. When Setup tries to write to the region, the error occurs. Note that
+this error occurs only when you are running Setup from MS-DOS. The problem does
+not occur if you run Setup from Windows or Windows for Workgroups in 386
+enhanced mode.
+
+RESOLUTION
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Quit Setup, unload the 386Max software, and then run Setup again.
+
+ - Quit Setup, and then run Setup from Windows or Windows for Workgroups version
+   3.x in 386 enhanced mode instead of from MS-DOS.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

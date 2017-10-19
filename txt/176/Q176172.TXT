@@ -1,0 +1,63 @@
+DOCUMENT:Q176172  23-DEC-1999  [exchange]
+TITLE   :XADM: Public Folder Does Not Appear in Instances Tab
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbusage exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to create a replica of a public folder, the folder may not be
+listed in the Instances tab of the Public Information Store Properties dialog
+box.
+
+MORE INFORMATION
+================
+
+You may experience this behavior if:
+
+ - You are connected to a server that is in a different site than the home
+   server of the public folder.
+
+   -and-
+
+ - You have the Limit Administrative Access to Home Site check box selected on
+   the General tab of the public folder Properties dialog box.
+
+The Limit Administrative Access to Home Site check box was added in Microsoft
+Exchange Server version 5.5 to control who can create replicas of a public
+folder. If it is selected, only users who have administrative permissions in the
+home site of the public folder and who are connected to the home site can create
+replicas.
+
+Additional query words: replicate
+
+======================================================================
+Keywords          : kbusage exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

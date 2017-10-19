@@ -1,0 +1,60 @@
+DOCUMENT:Q97717  07-MAY-2002  [homegame]
+TITLE   :FltSim: Unable to Fly Using Mouse As Yoke
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbbuglist kbfixlist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for the Macintosh, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mouse As Yoke command will not allow your mouse to control your ailerons and
+elevators when running Flight Simulator 4.0 on a PowerBook Duo 210 or 230, or on
+any Macintosh computer released after February 1993. These Macintosh computers
+include the following:
+
+ - PowerBook Duo 210 and 230
+ - LCIII
+ - Centris 610 and 650
+ - Quadra 800
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Flight Simulator version 4.0.
+
+This problem was corrected in Flight Simulator version 4.0a.
+
+Additional query words: 4.00 lc iii centris centrus sentrus power book Duo 210 230 Dock Quadra 800 PowerBook
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbGamesSearch kbFlightSimSearch kbFlightSim400Mac kbSimSearch
+Version           : MACINTOSH:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

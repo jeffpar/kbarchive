@@ -1,0 +1,57 @@
+DOCUMENT:Q135920  06-FEB-2002  [winnt]
+TITLE   :Canon BubbleJet Printers Unavailable for Macintosh Clients
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:kbnetwork kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Under Windows NT 3.51, when a Canon BubbleJet driver is installed and shared as
+an Services for Macintosh (SFM) printer, the first incoming print job from a
+Macintosh client does not print and then the printer is no longer published on
+the AppleTalk network as a Macintosh printer.
+
+As a result, Canon BubbleJet printers cannot be used with Macintosh clients from
+Windows NT Server.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: prodnt sfm
+
+======================================================================
+Keywords          : kbnetwork kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

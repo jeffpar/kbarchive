@@ -1,0 +1,61 @@
+DOCUMENT:Q119282  17-DEC-2000  [win95x]
+TITLE   :COM Ports Remain in Device Manager After Modem Is Removed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove an internal modem that is assigned to a communications port not
+on your computer, the port still appears in the Device Manager.
+
+WORKAROUND
+==========
+
+To manually remove this port from the Device Manager, do the following:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the System icon.
+
+3. Click the Device Manager tab, then double-click Ports.
+
+4. Click the communications port (COMx) you want to remove.
+
+MORE INFORMATION
+================
+
+After installing an internal modem and assigning it to a COM port that does not
+physically exist on your computer, the port appears in the Device Manager. After
+removing this adapter, the port is not deleted from the Device Manager.
+
+Additional query words: COM3 COM4
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

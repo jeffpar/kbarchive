@@ -1,0 +1,68 @@
+DOCUMENT:Q147148  21-MAR-1999  [exchange]
+TITLE   :XCLN: Missing Inbox, Outbox, and Sent Items Folder in Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange MS-DOS client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new Personal Folder (that is, a new .PST file), there is no
+Inbox, Outbox, or Sent Items folder.
+
+CAUSE
+=====
+
+This is by design.
+
+WORKAROUND
+==========
+
+You can create a new Personal Folder by choosing Services from the Tools menu
+and choosing to add a Personal Folder.
+
+MORE INFORMATION
+================
+
+A new Personal Folder will not have Inbox, Outbox, and Sent Items folders unless
+this new Personal Folder is designated to be located where your incoming mail is
+delivered.
+
+You can set Delivery of New Mail Location either in the Client from Tools,
+Services or from the Control Panel, Mail and Fax option. By default, you receive
+mail in your server-based mailbox, named Mailbox - Your Name.
+
+Additional query words: client missing folders
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400DOS kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

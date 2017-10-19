@@ -1,0 +1,84 @@
+DOCUMENT:Q149002  19-FEB-2002  [vbwin]
+TITLE   :BUG: Visual Basic Project Window Not Displaying Project Files
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbSSafe400bug kbVBp400bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the VBX files are not properly installed, Visual Basic normally displays a
+"File didn't load, do you want to continue" dialog when a Visual Basic project,
+which uses licensed VBX files, is opened.
+
+However, when opening a Visual Basic project via the "Open New SourceSafe
+Project" add-in menu item, if the VBX cannot find its license, the VBX fails to
+load. Visual Basic stops loading the project at that point. There are no error
+messages displayed, however, the Project window is empty.
+
+CAUSE
+=====
+
+Visual SourceSafe uses the Visual Basic Add-in model Application.LoadProject
+command when loading the Visual Basic project. Visual Basic goes into "silent"
+mode, and does not inform the user or the add-in control about any errors it
+encounters while loading the project. If errors are encountered, Visual Basic
+just stops the loading process at the point the problem is encountered.
+
+This problem can occur if the VBX software is not installed properly on the
+machine where the problem is appearing. Therefore, the VBX refuses to load
+because it cannot find a license file in the Windows system directory when
+trying to load.
+
+WORKAROUND
+==========
+
+You can work around this problem by properly installing the third-party VBX
+files. Verify all the license files are properly installed in the directory
+where your Windows system files are stored. The loading problems should cease.
+
+If properly installing the VBX files does not fix the problem, then make the
+project files available on your local machine by starting up the SourceSafe
+Explorer and executing a Get of the project files to a location on your machine.
+Then start Visual Basic, and open the project via the File Open Project command.
+If Visual Basic has any problems loading files, then the "File didn't load, do
+you want to continue" dialog displays and you will know what file is causing the
+problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a issue in Visual Basic version 4.0 for
+Windows.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbSSafe400bug kbVBp400bug 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

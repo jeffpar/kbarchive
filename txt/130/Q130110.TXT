@@ -1,0 +1,63 @@
+DOCUMENT:Q130110  17-DEC-2000  [win95x]
+TITLE   :DriveSpace May Not Mount Removable Media Automatically
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to access the DriveSpace volume on a compressed PCMCIA hard
+disk, compressed floppy disk, or other compressed removable media. Windows
+Explorer (or My Computer) may display only the host drive on a recently inserted
+media device.
+
+CAUSE
+=====
+
+DriveSpace does not automatically mount compressed removable media devices
+unless a compression driver is loaded in memory. If there are no compressed
+drives in your computer, the DriveSpace driver is not loaded until you run
+DriveSpace.
+
+RESOLUTION
+==========
+
+To mount the compressed volume on a removable media device, follow these steps:
+
+1. Start DriveSpace.
+
+2. Click the drive that contains the compressed volume.
+
+3. On the Advanced menu, click Mount.
+
+
+Additional query words: doublespace dblspace cvf automount
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

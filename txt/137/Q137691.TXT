@@ -1,0 +1,49 @@
+DOCUMENT:Q137691  13-DEC-1999  [homemm]
+TITLE   :Bookshelf 1995: Cannot Alt+Tab from Quickshelf Keys
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1995 edition 
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Bookshelf with the QuickShelf Keys dialog box open, the Alt+Tab key
+combination used for task switching to other open applications is
+non-functional.
+
+MORE INFORMATION
+================
+
+This behavior is by design and not a problem with Bookshelf.
+
+Additional query words: kbhowto 1995 multi media multimedia multi-media mmtitles kbmm quick shelf
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995 kbBookShelf1996 kbBookShelf1997
+Version           : :1995 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

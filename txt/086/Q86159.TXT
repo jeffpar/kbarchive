@@ -1,0 +1,48 @@
+DOCUMENT:Q86159  18-NOV-1999  [pcmail]
+TITLE   :PROFS: How to De-Install the Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The only way to de-install the VM side of the gateway is to erase all the files
+from the Gateway VM ID's disks.
+
+Normally, the Microsoft Mail Host Access component would be on the 191 A disk and
+the 193 F disk. If installed, the Distribution Manager (DM) files would normally
+reside on the 194 E disk. Under CMS, these files could be deleted using the
+ERASE command, or the disks could be reformatted.
+
+
+Additional query words: 3.20 pcmail profsvm de-install deinstall uninstall
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

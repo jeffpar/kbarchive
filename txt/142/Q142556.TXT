@@ -1,0 +1,72 @@
+DOCUMENT:Q142556  01-MAY-1999  [iis]
+TITLE   :Testing a Default Installation of Microsoft IIS WWW
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides information on testing a default installation of the
+Microsoft Internet Information Server W3 Service.
+
+MORE INFORMATION
+================
+
+The default installation of the Microsoft Internet Information Server (IIS)
+contains sample files that can be used to test the functionality of your IIS WWW
+publication service.
+
+To test your server on the local LAN:
+
+ - Ensure your computer has an active connection to your local LAN and that your
+   name resolution is working properly.
+
+ - Make sure the WWW service is started by opening Microsoft Internet Service
+   Manager and verifying State is "Running".
+
+ - Start the Microsoft Internet Explorer.
+
+ - Click on File, Open or use the File Open icon on the toolbar.
+
+ - Type in the Uniform Resource Location (URL) for the home directory of your
+   new server. The URL will be "http://" followed by the NetBIOS name of your
+   server. For example if your server is called, "myserver" you would type:
+
+   http://myserver
+
+ - You should see a sample HTML page. If not you may be publishing from a
+   previous installation directory. In that case use the full path to access the
+   sample page such as:
+
+   http://myserver/samples
+
+Additional query words: prodiis1
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

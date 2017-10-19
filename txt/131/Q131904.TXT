@@ -1,0 +1,73 @@
+DOCUMENT:Q131904  25-JUL-2001  [sms]
+TITLE   :INVDOS Does Not Report TCP/IP-32 3.11a Client IP Address
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:3.11; winnt:1.0; :3.11a
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+INVDOS does not report the IP address of a Windows for Workgroups 3.11 client
+computer using TCP/IP-32 3.11a and dynamic host configuration protocol (DHCP).
+
+CAUSE
+=====
+
+This problem occurs when there is no Default Gateway defined for Microsoft
+TCP/IP.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Run Network Setup and choose Drivers.
+
+2. Select Microsoft TCP/IP-32 3.11a and choose Setup.
+
+3. Enter an IP address for the Default Gateway.
+
+4. Choose OK and quit Network Setup.
+
+5. Restart the computer and Windows for Workgroups.
+
+The next time this client computer is inventoried, the IP address is reported.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.0. This problem was corrected in Systems Management Server version
+1.1.
+
+Additional query words: prodsms sms inventory automatic configuration enabled
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS100
+Version           : WINDOWS:3.11; winnt:1.0; :3.11a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

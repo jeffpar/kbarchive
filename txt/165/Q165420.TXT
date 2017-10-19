@@ -1,0 +1,108 @@
+DOCUMENT:Q165420  13-MAY-2001  [visualc]
+TITLE   :FIX: SQL Breakpoint Not Hit After Executing SP in Another DB
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbcode kbProgramming kbDebug kbEEdition kbSQLServ kbVC kbVC500bug kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SQL Debugger may fail to stop at breakpoints that are set after a call to a
+stored procedure from a database (other than the current one) is executed.
+
+CAUSE
+=====
+
+The call to the stored procedure in the secondary database changes the context
+of SQL Server to that database.
+
+The SQL Debugger cannot find breakpoints that were set in the context of the
+previous database and fails to break on them.
+
+RESOLUTION
+==========
+
+Work around this by placing a call to a stored procedure that resides in the
+same database as the stored procedure you were initially debugging.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+REFERENCES
+==========
+
+Sample Code
+-----------
+
+      /* Sample SP which shows the problem */ 
+      Create Procedure sp_MySP
+      As
+      SELECT * FROM employee
+
+      /* Breakpoints set after this call will not be hit */ 
+      EXEC OtherDB.dbo.sp_SomeSP
+
+      SELECT * FROM Authors
+
+      RETURN (0)
+
+      -----------
+      /* Sample SP with a workaround */ 
+      /* Add one line of code */ 
+
+      Create Procedure sp_MySP
+      As
+      SELECT * FROM EMPLOYEE
+
+      EXEC OtherDB.dbo.sp_SomeSP
+
+      /* This causes the database context to be changed back to original */ 
+      /* Breakpoints will now be hit */ 
+      EXEC sp_MySP2
+
+      SELECT * FROM Authors
+
+      RETURN (0)
+
+      /* Stored procedure called from above */ 
+
+      Create Procedure sp_MySP2
+      As
+      RETURN (0)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbProgramming kbDebug kbEEdition kbSQLServ kbVC kbVC500bug kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

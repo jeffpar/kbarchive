@@ -1,0 +1,204 @@
+DOCUMENT:Q190966  05-MAR-2002  [visualc]
+TITLE   :BUG: IntelliSense Limitations with Templates
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This article focuses on the limitations of IntelliSense when working with
+templates.
+
+ - IntelliSense does not recognize template member functions defined outside of
+   the template class.
+
+   When a template member function is defined outside of the template class, it
+   does not appear in an instantiated template object's Member list, and does
+   not provide Parameter and Type Info. It also does not appear in the ClassView
+   pane. With Visual C++ 6.0, the only way to have IntelliSense work correctly
+   with template member functions is to define all member functions inside of
+   the template class declaration.
+
+
+ - Coding inside of nonclass template functions does not fully utilize
+   IntelliSense.
+
+   IntelliSense does not parse the bodies of template functions that are not
+   member functions of a class. As a result, most IntelliSense features do not
+   work inside of a template function definition.
+
+
+ - Template class specializations are not properly interpreted by IntelliSense.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Consider the following code sample. Comments that are examples are marked with
+\\EXAMPLE. The code directly below needs to be uncommented in order to reproduce
+the problem. The comments following the code explain the problem:
+
+Sample Code
+-----------
+
+      //Test.cpp
+      #include <stdio.h>
+
+      // A Template Class
+      // 
+      template <class T, int i>
+      class TempClass
+      {
+      public:
+          TempClass(void){}
+          ~TempClass(void){}
+          int MemberSet(T a, int b);
+          int GetSize()
+          {
+      return arraysize;
+          }
+      private:
+          T Tarray[i];
+          int arraysize;
+      };
+
+      // A Simple Class
+      // 
+      class TestClass
+      {
+      public:
+         TestClass(void){}
+         ~TestClass(void){}
+         int m;
+         int n;
+      };
+
+      // Template Member Function Defined outside of the template class
+      // 
+      template <class T, int i>
+      int TempClass<T, i>::MemberSet(T a, int b)
+      {
+         if( ( b >= 0 ) && (b < i) )
+         {
+           Tarray[b++] = a;
+           return sizeof( a );
+         }
+         else
+           return -1;
+      };
+
+      // Template Class
+      // 
+      template <class T>
+      class Print
+      {
+      public:
+         // Declare an instance of TestClass
+         TestClass te;
+
+         // EXAMPLE
+         //te.
+         // #2 No members displayed
+         // all types but char
+
+         void f(int, double)
+         {
+            printf("Print<T>\n");
+         }
+      };
+
+      // Specialization of Print<class T>
+      // 
+      template <>
+      class Print<char>
+      {
+      public:
+         // just for chars
+         void f(char*)
+         {
+            printf("Print<char>\n");
+         }
+      };
+
+      void main()
+      {
+      TempClass<char,10> t;
+
+      // EXAMPLE
+      //t.
+      // #1 MemberSet is absent from the member list
+      // MemberSet does not appear in the ClassView pane
+      // Define MemberSet in the TempClass declaration
+      // to correct this problem
+
+      Print<char> pc;
+
+      // EXAMPLE
+      //pc.f(
+      // #3
+      // pc.f  Tool tip shows all types but char
+      // pc.f( Parameter list is int, double
+      }
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q153284 Limitations of IntelliSense in Visual C++ 6.0
+
+"Template Topics"; Visual C++ Documentation, Using Visual C++, Visual C++
+Programmers Guide, Adding Program Functionality, Details, Template Topics.
+
+"About Automatic Statement Completion;" Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, Overview: Text Editor, About Automatic
+Statement Completion.
+
+"Automatically Completing Statements;" Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, How do I ... Topics: Text Editor,
+Automatically completing Statements.
+
+Additional query words: kbvc600bug
+
+======================================================================
+Keywords          : kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

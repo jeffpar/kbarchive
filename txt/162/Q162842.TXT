@@ -1,0 +1,66 @@
+DOCUMENT:Q162842  09-AUG-2001  [winnt]
+TITLE   :DNS with "WINS Reverse Lookup" Fails with Multiple IP Addresses
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use NSLOOKUP to perform reverse lookup using a Windows NT 4.0 Domain
+Name Service (DNS) server that has a network adapter with multiple IP addresses
+(and has a zone that has "Use WINS Resolution" enabled) you receive the
+following error:
+
+   [dns server] can't find IP address: Non-existent domain
+
+CAUSE
+=====
+
+By design NetBIOS over TCP/IP (NetBT) supports only one IP address per network
+interface card (NIC) adapter. It is possible to configure TCP/IP to have
+multiple IP addresses on a single NIC, but NetBT will only support the first
+address configured. For more information, please see the following Microsoft
+Knowledge Base article:
+
+   ARTICLE-ID: Q131641
+   TITLE : NetBT Supports One IP Address per NIC
+
+MORE INFORMATION
+================
+
+For information about reverse lookup, please see the following article in the
+Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q154553
+   TITLE : Windows NT 4.0 DNS WINS Reverse Lookups Do Not Use WINS
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

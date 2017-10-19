@@ -1,0 +1,69 @@
+DOCUMENT:Q137373  18-DEC-1999  [sms]
+TITLE   :Using UINFO.XNF in MIF Entry Results in Corrupted File Error
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you run MIF Entry (MIFWIN.EXE) on the client computer and use a completely
+revised form (UINFO.XNF) modified on the Systems Management Server compared with
+the original UINFO.XNF, the following error message appears:
+
+   The form template file is corrupted.
+
+WORKAROUND
+==========
+
+To work around this problem, rename or delete the UINFO.SEV file located in the
+\MS\SMS\NOIDMIFS directory on the client computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The UINFO.XNF file is the default form used when you run MIFWIN on the client
+computer. Once you enter the prompted information and save the form, UINFO.SEV
+and UINFO.MIF are created and saved in the \MS\SMS\NOIDMIFS directory on the
+client computer. Once the Systems Management Server sends a package containing a
+new UINFO.XNF file to the client computers and you run MIFWIN, MIFWIN checks the
+entry contents of the new UINFO.XNF and UINFO.SEV.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

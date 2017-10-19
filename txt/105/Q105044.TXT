@@ -1,0 +1,81 @@
+DOCUMENT:Q105044  23-OCT-1999  [foxmisc]
+TITLE   :ERR: "File Does Not Exist" After Source Code Is Removed
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the
+
+   File does not exist
+
+error message when using FoxRun or MFoxRun to run (DO) a program that has had its
+source code removed using FoxPackage. Looking at the program file after it has
+been modified by FoxPackage reveals that the program file has a file size of 0K
+(zero kilobytes).
+
+CAUSE
+=====
+
+This behavior is caused by a problem with FoxPackage version 2.05.
+
+RESOLUTION
+==========
+
+Upgrade to FoxPackage version 2.07 to correctly remove the source code from
+programs and run them with FoxRun.
+
+FoxPackage 2.07 is available through Application Note FM0796. For more
+information on obtaining this Application Note, query on the word "FMO796"
+(without the quotation marks) here in the Microsoft Knowledge Base.
+
+MORE INFORMATION
+================
+
+FoxPackage can prepare programs for distribution in two ways. One way is to
+create a single stand-alone application. The other way is to remove the source
+code from the program files. This article addresses the latter method--removing
+source code from program files.
+
+As explained in Chapter 7 of the FoxBASE+/Mac "User's Guide," FoxBASE+ program
+files can have the source code removed from them so that the only part of the
+file remaining is the compiled resource portion. This resource portion of the
+file can be distributed with FoxRun along with supporting databases and indexes.
+
+REFERENCES
+==========
+
+"User's Guide," version 2.01, pages 7-8, 7-13 through 7-16
+
+Additional query words: 2.01 errmsg err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

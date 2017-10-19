@@ -1,0 +1,230 @@
+DOCUMENT:Q165883  04-MAY-2001  [ssafe]
+TITLE   :Errors with Large Recursive Branch and Share Operations
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,4.0a,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While executing a recursive Share and Branch operation on a SourceSafe project
+that contains a large number of files and 4 or more nested subprojects, the
+operation fails with a General Protection Fault, Out of Memory message or other
+memory related problems.
+
+MORE INFORMATION
+================
+
+Sharing and Branching is an expensive operation in SourceSafe. Because the
+operation itself involves intensive memory usage and file I/O, any problems at
+the operating system or network level could cause it to fail. Once completed,
+the Branch causes the SourceSafe database to grow in size as a second copy of
+each branched file is created. For these reasons, large Sharing and Branching
+should be used sparingly.
+
+
+The dobranch.exe utility provides an alternative method of Sharing and Branching
+that avoids the potential memory problems mentioned in the SUMMARY section.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Dbrnch.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Below is the content of the readme.txt files that are included with the utility.
+
+---------------------------------------------------------------------
+| INFORMATION PROVIDED IN THIS DOCUMENT AND ANY SOFTWARE THAT MAY    |
+| ACCOMPANY THIS DOCUMENT (collectively referred to as a Microsoft   |
+| Software Library [MSL] file) IS PROVIDED "AS IS" WITHOUT WARRANTY  |
+| OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT        |
+| LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR        |
+| FITNESS FOR A PARTICULAR PURPOSE. The user assumes the entire risk |
+| as to the accuracy and the use of this MSL file. This MSL file     |
+| may be copied and distributed subject to the following conditions: |
+| 1) All text must be copied without modification and all pages must |
+| be included; 2) If software is included, all files must be copied  |
+| without modification; 3) All components of this MSL file must be   |
+| distributed together; and 4) This MSL file may not be distributed  |
+| for profit.                                                        |
+|                                                                    |
+| Copyright 1997 Microsoft Corporation. All Rights Reserved.         |
+| Microsoft is a registered trademark of Microsoft Corporation.      |
+ --------------------------------------------------------------------
+
+This download consists of the following three files:
+
+1. This file (readme.txt)
+
+2. dobranch.exe
+
+3. dobranch.cpp
+
+This utility can be used as an alternative method of performing a recursive share
+and branch of a SourceSafe project.
+
+Dobranch.exe
+------------
+
+The file dobranch.exe is the utility itself, and should be saved in the WIN32
+directory under the SourceSafe installation.
+
+Its usage is:
+
+   dobranch <target project> <source project> [new project name]
+
+The operation is analogous to a right mouse drag and drop in the SourceSafe
+explorer. If your project tree looks like this:
+
+   $/ 
+      Applications
+              Develop
+                      source
+                      include
+                      lib
+      Bugfix
+      Other Stuff
+
+and you right-click the $/Applications/Develop project, drag it over the $/Bugfix
+project, choose Share and branch from the popup menu, then check the "Recursive"
+checkbox, the equivalent command for this utility would be:
+
+   dobranch $/Bugfix $Applications/Develop
+
+NOTE: You should provide the full path to the target and source projects.
+
+Just like the drag and drop operation, this would create a new subproject:
+
+   $/Bugfix/Develop
+
+that would have the three nested subprojects.
+
+To share and branch to a sibling subproject of Develop, use the following
+command:
+
+   dobranch $/Applications $/Applications/Develop NewDev.
+
+The project tree would then be:
+
+   $/ 
+      Applications
+              Develop
+                      source
+                      include
+                      lib
+              NewDev
+                      source
+                      include
+                      lib
+      Bugfix
+      Other Stuff
+
+If your project names contain spaces, wrap the project name in quotes. For
+example:
+
+   dobranch "$/Other Stuff" $/Applications/Develop "More Stuff"
+
+to create the following project tree:
+
+   $/ 
+      Applications
+              Develop
+                      source
+                      include
+                      lib
+      Bugfix
+      Other Stuff
+              More Stuff
+                      source
+                      include
+                      lib
+
+The utility creates two text files in the Win32 subdirectory, dirfile.out and
+errfile.log. The first is the output from a recursive ss dir command of the
+source project, the second is a log file of errors encountered by the various
+Visual SourceSafe operations.
+
+If the program is executed successfully, these files are deleted (you'll never
+know they were there).
+
+If the utility fails, you can check errfile.log for clues about what caused the
+failure, and dirfile.out can be deleted manually (however, this is not
+necessary).
+
+Dobranch.cpp
+------------
+
+The file dobranch.cpp is the source code for dobranch.exe and can be examined to
+understand how the program works, and for those interested, can be modified to
+provide more functionality (for example, providing an extra parameter to specify
+a project version, or specifying the path to any SourceSafe database). It was
+compiled with Microsoft Visual C++ version 4.0 Most users, however, will not
+need to look at this file.
+
+Additional Notes
+----------------
+
+1. Branching a specific version.
+
+   There is no switch for this in dobranch.exe, but it can easily be accomplished
+   by PINning the project before executing dobranch.exe. For example, if the
+   $/Applications/Develop project has a label 'beta1', type the following
+   command-line command before executing dobranch.exe
+
+   SS Pin $/Applications/Develop/*.* -Vbeta1
+
+2. Limitations of the utility.
+
+   Internal links within the source project are not be retained in the target
+   project. For example, if a file in $/Apllications/Develop/lib is shared or
+   branched to a file in $/Apllications/Develop/include, and you execute:
+
+   dobranch $/Applications $/Applications/Develop NewDev
+
+   the file in $/Applications/NewDev/lib will not have links to the file in
+   $/Applications/NewDev/include.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,4.0a,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

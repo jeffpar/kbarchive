@@ -1,0 +1,91 @@
+DOCUMENT:Q228455  07-MAY-2001  [visualc]
+TITLE   :PRB: Missing /c Compiler Option Causes LNK1561 Linker Error
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbLinker kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling a multiple source file project that creates a pre-compiled header
+file inside the Visual C++ Integrated Development Environment (IDE), the
+following error can occur:
+
+   Compiling...
+   StdAfx.cpp
+   LINK : fatal error LNK1561: entry point must be defined
+   Error executing cl.exe.
+
+NOTE: The linker error is generated during the compiler phase of the build.
+
+CAUSE
+=====
+
+The /c compiler option is missing from the build settings.
+
+RESOLUTION
+==========
+
+Add /c to the compiler options. To do this, you must edit the compiler options
+in the Project Options box in the C/C++ tab under Project Settings.
+
+NOTE: This box is only editable if the whole project is selected in the tree
+control on the Project Settings.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+By default, the Visual C/C++ compiler attempts to compile and link in a single
+step. The /c (Compile without Linking) option is used to tell the compiler to
+compile only. Since Visual C++ compiles and links in separate steps, then /c is
+required for all Visual C++ builds.
+
+To reproduce the error, create a default MFC project and remove the /c option
+from the Project Settings by editing the compiler options in the Project Options
+box in the C/C++ tab under Project Settings.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Kelly Marie Ward, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbLinker kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

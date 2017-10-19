@@ -1,0 +1,88 @@
+DOCUMENT:Q235251  07-DEC-2000  [mspress]
+TITLE   :Programming Microsoft Visual InterDev 6.0 Comments and Correctio
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Programming Microsoft Visual InterDev 6.0 ISBN 1-57231-814-7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Programming Microsoft Visual InterDev 6.0,
+ISBN 1-57231-814-7.
+
+The following topics are covered:
+
+ - Data on Companion CD-ROM Incompatible with SQL Server 7.0
+
+ - Page 62: Remove Reference to Appendix B
+
+ - Page 243: Remove Reference to Appendix E
+
+MORE INFORMATION
+================
+
+Data on Companion CD-ROM Incompatible with SQL Server 7.0
+---------------------------------------------------------
+
+If you are running SQL Server 7.0, it is incompatible with the backup device on
+the CD (created for SQL Server 6.5). Note that you can use the generic bulk
+insert from text files method with both SQL Server 6.5 and SQL Server 7.0.
+
+
+Page 62: Remove Reference to Appendix B
+---------------------------------------
+
+On page 62, in paragraph 4, remove the last sentence:
+
+"Appendix B lists all the winInet.dll error messages."
+
+There is no Appendix B
+
+
+Page 243: Remove Reference to Appendix E
+----------------------------------------
+
+On page 62, in paragraph 1, remove the following statement:
+
+"The Response object has several properties and methods that are fully detailed
+in Appendix E."
+
+There is no Appendix E.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: devbook interdev 60
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

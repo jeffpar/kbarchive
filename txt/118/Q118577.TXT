@@ -1,0 +1,62 @@
+DOCUMENT:Q118577  17-DEC-2000  [win95x]
+TITLE   :Lotus Tutorials Change System Colors in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Windows 95, when you start a tutorial in a Lotus Development product, the
+color of the taskbar changes to blue. The colors for other objects (such as
+dialog boxes) also change.
+
+CAUSE
+=====
+
+Tutorials that accompany some Lotus Development programs change the system
+colors in Windows when you start them.
+
+This behavior has been observed in the Quick Start tutorial of Lotus Freelance
+for Windows.
+
+
+MORE INFORMATION
+================
+
+This behavior also occurs in Microsoft Windows 3.x and Windows for Workgroups
+3.x; however, the changes are not as obvious because previous versions of
+Windows do not update all user interface elements when the colors are changed.
+Windows 95 consistently updates these user interface elements, making these
+changes more apparent.
+
+Additional query words: 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

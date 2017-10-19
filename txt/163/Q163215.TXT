@@ -1,0 +1,59 @@
+DOCUMENT:Q163215  09-AUG-2001  [winnt]
+TITLE   :System Policies May Not Work with Third-Party GINA DLLs
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Third-party vendors are offering solutions for alternative logon methods, such
+as using chipcards or additional network validation. If you use such a
+third-party GINA, you may find that System Policies no longer work correctly.
+
+A popular example for such a GINA is included with Novell's IntranetWare NT
+Client Services version 4.0.
+
+MORE INFORMATION
+================
+
+A third party GINA is responsible for telling Winlogon about available system
+policies. You should contact the vendor about an update for the GINA package.
+
+
+The third party products discussed here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt Graphical Identification Authentication chip card cards
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

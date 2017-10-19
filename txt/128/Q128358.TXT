@@ -1,0 +1,67 @@
+DOCUMENT:Q128358  12-NOV-1999  [pcmail]
+TITLE   :PC DB: Err Msg: Program Is Incompatible with the Postoffice
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Administration program (ADMIN.EXE) for Microsoft Mail for PC
+Networks, the following error may appear:
+
+   This program is incompatible with the postoffice.
+
+ADMIN.EXE will then fail to run, and the mail clients will not be able to access
+the postoffice.
+
+CAUSE
+=====
+
+This error will occur if the MASTER.GLB is a 0 byte file or corrupt. If
+ADMIN.EXE cannot find the version number stored in the MASTER.GLB on start up,
+the above error will be returned.
+
+RESOLUTION
+==========
+
+To repair, restore the MASTER.GLB from backup or create a new installation of
+the postoffice using the same NETWORK/POSTOFFICE name as the original, and copy
+the newly created MASTER.GLB. Ensure that the same disk set is used that
+originally created this PO.
+
+If a recent backup is not available, or you have to reinstall, you will have to
+reinstall any gateways added since the date of the restored MASTER.GLB. You will
+also have to enable the GAL and configure the Dir-Sync server.
+
+
+Additional query words: 3.20 3.20a dirsync
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

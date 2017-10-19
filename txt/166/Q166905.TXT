@@ -1,0 +1,87 @@
+DOCUMENT:Q166905  19-DEC-1999  [exchange]
+TITLE   :XFOR: How to Change Target Address
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article tells you how to change a user's target address or to view the
+user's current target address or e-mail proxies.
+
+Each user in the address book is either treated as a Local (mailbox) user or a
+Custom Recipient located at another mail system. All users have e- mail proxies
+for all the other connected systems.
+
+When a user is defined as a Custom Recipient, the user's primary e-mail address
+or Target Address determines the routing path and on which system the user is
+located. There are also e-mail proxies of all the other systems. This allows
+e-mail from SNADS to be easily routed through the Exchange Server backbone to
+either cc:Mail or SMTP, or vice-versa.
+
+MORE INFORMATION
+================
+
+To change a user's target address or to view the user's current target address
+or e-mail proxies:
+
+1. In the Microsoft Exchange Server Administrator program, expand the left panel
+   tree until you see the Recipients Container.
+
+2. Select the Recipients Container by highlighting it. You should see a list of
+   all users in the right pane of the Administrator.
+
+3. To view a user, double-click that user.
+
+4. At the bottom of the General property page there is a field called E- mail.
+   If you click E-mail, the options to "Modify existing e-mail address" and
+   "Create new e-mail address" appear.
+
+   If the user is an SNADS user the address will be "SNADS:DGN(DEN)". If the user
+   is a cc:Mail user it will be "CCMAIL:Username at Postoffice"
+
+5. Change this to the new address.
+
+If you would like to view a user's other proxies, select the e-mail Addresses
+property page. This will show all the user's e-mail proxies.
+
+To change the proxy, double click on the address you want to change, or if you
+would like to create multiple proxies for one address type click on the side
+button New. When you add more than one proxy of a single type one will be the
+primary, and all others will be secondary proxies. Primary Proxies are shown in
+bold type, Secondary proxies are shown in normal font. If more than one proxy
+exists the Primary will always be used on outbound mail, Secondary will be used
+only for inbound address mapping.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

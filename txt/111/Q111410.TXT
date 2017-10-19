@@ -1,0 +1,62 @@
+DOCUMENT:Q111410  11-DEC-1999  [homemm]
+TITLE   :Scenes 1.0: Screen Changes Color with Scenes Installed
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft Scenes, an application screen may change to a
+different color when you try to print from that application. To return the
+screen color to its normal color, you must exit and restart the application.
+This problem is known to occur with Aldus PageMaker version 4.0.
+
+CAUSE
+=====
+
+This problem is usually caused by an incompatible video driver.
+
+WORKAROUND
+==========
+
+To correct this problem:
+
+ - Install the VGA driver that comes with Windows.
+
+   -or-
+
+ - Contact the video card manufacturer for a more recent version of the video
+   driver.
+
+
+Additional query words: 1.00 msscenes screen saver screensaver
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

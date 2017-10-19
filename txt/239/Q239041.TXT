@@ -1,0 +1,67 @@
+DOCUMENT:Q239041  04-FEB-2000  [iis]
+TITLE   :IIS: The FTP PORT Command May be Issued Before Client has Logon
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbDSupport kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the FTP Server that ships with Internet Information Services 5.0, you
+may notice some supposedly inconsistent behavior. For example, if you were to
+create a control connection to a restricted FTP server (one in which the you do
+not have a valid logon), then issue a PORT command, this command would result in
+the server returning the following message:
+
+   200 PORT Command Successful.
+
+You are never prompted for credentials during this phase of the FTP connection
+process even though the FTP site has been restricted (meaning anonymous access
+is disabled). This may be looked at as a possible security problem, but it is
+actually normal behavior for FTP.
+
+CAUSE
+=====
+
+FTP requires that you are identified before a connection is officially
+established. In other words, a connection has not officially been made yet. You
+cannot transfer files unless you first logon the server.
+
+STATUS
+======
+
+This is a known issue with Internet Information Services 5.0 (and most FTP
+servers as well).
+
+Additional query words: iis ftp port
+
+======================================================================
+Keywords          : kbDSupport kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

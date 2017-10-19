@@ -1,0 +1,70 @@
+DOCUMENT:Q118330  12-JUN-2001  [odbc]
+TITLE   :INF: Driver Manager and Cursor Library Compatibility
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.05,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, versions 1.05, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The VersionInfo resource for the Driver Manager and Cursor Library contains,
+among other properties, a property called CursorLevel. This article explains the
+purpose of CursorLevel.
+
+MORE INFORMATION
+================
+
+The VersionInfo resource for ODBC.DLL (ODBC Driver Manager) and ODBCCURS.DLL
+(ODBC Cursor Library) can be viewed using File Manager by selecting the File
+Menu and choosing Properties.
+
+The property called CursorLevel is a mechanism to guarantee that the right
+versions of the Driver Manager and Cursor Library are used together. The
+CursorLevel is not related to any of the ODBC API Levels.
+
+If the CursorLevel of the ODBC Driver Manager is "d" and a Cursor Library with a
+CursorLevel of "g" is used, the ODBC Driver Manager will not load the Cursor
+Library. The message from the cursor library is:
+
+   SQLState 01000: Cursor library not used. Version mismatch with Driver Manager
+
+The following are the CurorLevels for different versions of the ODBC Driver
+Manager and Cursor Library that have been shipped:
+
+   CursorLevel          DLLs shipping with Product
+   -----------          --------------------------
+        D               Microsoft Visual C++ 1.5
+        E               ODBC SDK 2.0 Beta
+        G               ODBC 1.05 Release
+        G               ODBC SDK 2.0 Release
+
+Additional query words: compatibility
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:1.05,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

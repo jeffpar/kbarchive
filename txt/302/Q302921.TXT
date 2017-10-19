@@ -1,0 +1,75 @@
+DOCUMENT:Q302921  26-JUN-2001  [msnetwork]
+TITLE   :Microsoft Office Bar Blocks "Help And Settings" And "Sign Out" W
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Microsoft Office toolbar is set to "Auto Fit into the Title Bar area".
+Because of this setting, when you maximize the MSN Explorer window, the Help And
+Settings and Sign Out buttons will be hidden.
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+Restore the size of the MSN Explorer window.
+
+To restore the size of the MSN Explorer window
+
+ - In the upper-right corner of the MSN Explorer window, click the Restore
+   button.
+
+You can also resolve this issue by changing the options on your Office toolbar.
+
+To change the options on your Office toolbar
+
+1. Right-click the left button in the Microsoft Office toolbar.
+
+2. In the window that appears, click Customize.
+
+3. Do one of the following:
+    - Clear the box next to Auto Fit into Title Bar area.
+
+    - Clear the box next to Always on Top.
+
+With these Office toolbar settings, the Help and Settings and Sign Out buttons
+will appear in MSN Explorer.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNExplorer
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

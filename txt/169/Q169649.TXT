@@ -1,0 +1,70 @@
+DOCUMENT:Q169649  18-APR-1999  [exchange]
+TITLE   :XWEB: Access Is Denied Using the Web Client
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to log on to your Exchange mailbox via Active Server Pages, you may
+receive the following error message:
+
+   Error: Access is Denied.
+
+CAUSE
+=====
+
+You have a proxy server in your environment and your browser's proxy settings
+are set to use the proxy server for all requests. This causes the IIS server to
+request for authorization at the Exchange Login page and it fails.
+
+RESOLUTION
+==========
+
+Enable the "Do not use proxy server for local (Intranet) addresses" option in
+Internet Explorer:
+
+1. View the Internet Explorer Properties. This can be reached in the following
+   ways:
+
+    - Go to Control Panel and double-click on Internet
+
+    - Right-click the Internet Explorer icon on the desktop.
+
+    - In Internet Explorer, on the View menu, click Options.
+
+2. Click the Connection tab; if there is a Settings button , click it.
+
+3. Select the "Do not use proxy server for local (intranet) addresses" check
+   box.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

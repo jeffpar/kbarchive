@@ -1,0 +1,69 @@
+DOCUMENT:Q143308  08-FEB-2000  [foxpro]
+TITLE   :BUG: Textwidth Method Does Not Return Foxel Units
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TextWidth method of Visual FoxPro for Windows is defined as returning the
+length of a text string expressed in a count of units, the units being expressed
+in either pixels or foxels depending on the current scalemode of the form.
+However, the values are actually returned in pixels, only, regardless of the
+scalemode property.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Illustrate this Problem
+--------------------------------
+
+In the Visual FoxPro Command window, type the following sequence of commands and
+observe the information that is displayed in the upper-left portion of the
+desktop:
+
+  x = CreateObject("form")
+  ? x.ScaleMode             && returns 3 (pixels, the default)
+  ? x.TextWidth("testing")  && shows 42 (pixels, if standard font)
+  x.Scalemode = 0           && Foxels
+  ? x.TextWidth("testing")  && shows 42 - the pixels measurement
+
+Additional query words: txtwidth kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbgraphic kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

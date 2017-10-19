@@ -1,0 +1,70 @@
+DOCUMENT:Q118951  08-AUG-2001  [winnt]
+TITLE   :Maintain Drive Letters for SFMCONV Clone Upgrade
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.10
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10
+
+WINDOWS
+
+kbinterop
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+When you use the SFMCONV.EXE utility for a clone conversion to migrate
+Services For Macintosh (SFM) volumes from LAN Manager to a new Windows NT
+Advanced Server, make sure the volumes to be converted reside on NTFS
+drives and that the same structure that was on the LAN Manager server is on
+the new Windows NT Advanced Server.
+
+Use Disk Administrator on the Windows NT Advanced Server to assign drive
+letters to the Windows NT partitions to suit the LAN Manager system before
+you proceed with the upgrade.
+
+Example
+-------
+
+You are doing a clone upgrade from LAN Manager to Windows NT Advanced
+Server on a MIPS-based computer. You have MAC volumes on drive C and drive
+D on the LAN Manager system, but your MIPS-based computer doesn't have a
+large enough partition for drive C. A larger partition on drive C won't
+help because the boot partition needs to be a FAT file system for MIPS and
+the boot partition for Windows NT MAC volumes needs to be NTFS.
+
+Because SFMCONV.EXE requires the same structure on both systems for a clone
+upgrade, this could appear to be a problem. To work around this
+restriction, rename the small first partition to something like drive J on
+the MIPS-based computer, then create the second and third partitions and
+name them drive C and drive D.
+
+The workaround in this example also applies to x86-based and Alpha-based
+computers.
+
+Additional query words: prodnt 3.10 Services for Macintosh
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.10
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

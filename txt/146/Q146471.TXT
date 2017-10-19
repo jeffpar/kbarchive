@@ -1,0 +1,55 @@
+DOCUMENT:Q146471  17-MAR-1999  [exchange]
+TITLE   :XCLN: Cannot Save Parameters of Electronic Forms
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange MS-DOS client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you resize a Microsoft Exchange Electronic Form that is contained in a
+message, there is no way to keep the changed size of the form. Any changes that
+you make to a form's size will not be retained for future use.
+
+
+MORE INFORMATION
+================
+
+This is by design. MAPI forms have no interface that allow us to specify a
+location to open the form at or a way to save the parameters that a form's size
+was changed to. There is no way of even telling if the form has been resized.
+When forms are loaded, they will always default back to their initial size.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400DOS kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q89585  19-OCT-2000  [pcmail]
+TITLE   :PC OS2: Running CONVERT.EXE Under OS/2 1.3
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0, on platform(s):
+    - the operating system: OS/2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+CONVERT.EXE, which is included with version 3.0 of Microsoft Mail for
+Presentation Manager, converts version 2.1 folders to the version 3.0 Mail
+message file (MMF) format.
+
+If you run CONVERT.EXE from an OS/2 prompt or by selecting it from a file list in
+the File Manager while Mail is running, the program causes a protection
+violation and terminates.
+
+CAUSE
+=====
+
+This problem is caused by a design limitation of the Windows Libraries for OS/2
+(WLO) dynamic-link libraries (DLLs). The shared DLL technology identifies tasks
+using the stack segment register. Under Microsoft Windows, this stack value is
+unique across all applications. With WLO applications, this is not guaranteed
+because the stack value is relative to each application. CONVERT.EXE has the
+same stack segment value as the Mail Spooler (MAILSPL.EXE), and this causes the
+protection violation.
+
+RESOLUTION
+==========
+
+Shut down Mail before you run the conversion utility.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

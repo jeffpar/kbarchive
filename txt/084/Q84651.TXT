@@ -1,0 +1,159 @@
+DOCUMENT:Q84651  26-OCT-1999  [win95x]
+TITLE   :TrueType Font Pack File List with Expanded Filenames & Sizes
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a listing of files included with the Microsoft Windows
+TrueType Font Pack for Microsoft Windows operating system version 3.1. This list
+includes the compressed filename, expanded filename, disk location, compressed
+file size, and uncompressed file size.
+
+ Filename         Filename         Disk Number             File Size
+(Expanded)      (Compressed)  1.44 MB  1.2 MB   720K     (Compd) (Expnd)
+----------      ------------  -------  ------   ----     ------- -------
+
+ANTQUA.FOT      N/A           N/A      N/A      N/A      N/A     1320
+ANTQUA.TTF      ANTQUA.TT_    1        1        4        50549   59472
+ANTQUAB.FOT     N/A           N/A      N/A      N/A      N/A     1322
+ANTQUAB.TTF     ANTQUAB.TT_   1        1        3        50133   61960
+ANTQUABI.FOT    N/A           N/A      N/A      N/A      N/A     1336
+ANTQUABI.TTF    ANTQUABI.TT_  1        1        3        48228   61076
+ANTQUAI.FOT     N/A           N/A      N/A      N/A      N/A     1326
+ANTQUAI.TTF     ANTQUAI.TT_   2        2        3        47587   57020
+ARIALN.FOT      N/A           N/A      N/A      N/A      N/A     1320
+ARIALN.TTF      ARIALN.TT_    2        2        3        46783   59708
+ARIALNB.FOT     N/A           N/A      N/A      N/A      N/A     1322
+ARIALNB.TTF     ARIALNB.TT_   2        2        3        46403   59008
+ARIALNBI.FOT    N/A           N/A      N/A      N/A      N/A     1336
+ARIALNBI.TTF    ARIALNBI.TT_  1        1        3        48246   61476
+ARIALNI.FOT     N/A           N/A      N/A      N/A      N/A     1326
+ARIALNI.TTF     ARIALNI.TT_   2        2        3        47187   60592
+BOOKOS.FOT      N/A           N/A      N/A      N/A      N/A     1330
+BOOKOS.TTF      BOOKOS.TT_    1        1        4        53401   64240
+BOOKOSB.FOT     N/A           N/A      N/A      N/A      N/A     1332
+BOOKOSB.TTF     BOOKOSB.TT_   1        1        4        50477   61648
+BOOKOSBI.FOT    N/A           N/A      N/A      N/A      N/A     1346
+BOOKOSBI.TTF    BOOKOSBI.TT_  1        1        4        55651   67872
+BOOKOSI.FOT     N/A           N/A      N/A      N/A      N/A     1336
+BOOKOSI.TTF     BOOKOSI.TT_   1        1        4        52756   64504
+FONTNAME.DLL    FONTNAME.DL_  1        1        1        2623    5632
+FONTS001.INF    FONTS001.IN_  1        1        1        1424    5488
+FONTS001.MST    FONTS001.MS_  1        1        1        5931    14777
+GOTHIC.FOT      N/A           N/A      N/A      N/A      N/A     1324
+GOTHIC.TTF      GOTHIC.TT_    2        2        2        43125   54200
+GOTHICB.FOT     N/A           N/A      N/A      N/A      N/A     1326
+GOTHICB.TTF     GOTHICB.TT_   2        2        2        38151   47912
+GOTHICBI.FOT    N/A           N/A      N/A      N/A      N/A     1340
+GOTHICBI.TTF    GOTHICBI.TT_  2        2        2        40236   50244
+GOTHICI.FOT     N/A           N/A      N/A      N/A      N/A     1330
+GOTHICI.TTF     GOTHICI.TT_   2        2        2        43869   54964
+LBLACK.FOT      N/A           N/A      N/A      N/A      N/A     1340
+LBLACK.TTF      LBLACK.TT_    2        2        3        45267   54072
+LBRITE.FOT      N/A           N/A      N/A      N/A      N/A     1330
+LBRITE.TTF      LBRITE.TT_    2        2        3        47815   59828
+LBRITED.FOT     N/A           N/A      N/A      N/A      N/A     1332
+LBRITED.TTF     LBRITED.TT_   2        2        3        44182   56056
+LBRITEDI.FOT    N/A           N/A      N/A      N/A      N/A     1346
+LBRITEDI.TTF    LBRITEDI.TT_  1        1        3        48197   60288
+LBRITEI.FOT     N/A           N/A      N/A      N/A      N/A     1328
+LBRITEI.TTF     LBRITEI.TT_   2        2        3        47724   59872
+LCALLIG.FOT     N/A           N/A      N/A      N/A      N/A     1338
+LCALLIG.TTF     LCALLIG.TT_   2        2        2        38332   45440
+LFAX.FOT        N/A           N/A      N/A      N/A      N/A     1324
+LFAX.TTF        LFAX.TT_      2        2        2        40375   50600
+LFAXD.FOT       N/A           N/A      N/A      N/A      N/A     1326
+LFAXD.TTF       LFAXD.TT_     2        2        2        41139   50980
+LFAXDI.FOT      N/A           N/A      N/A      N/A      N/A     1340
+LFAXDI.TTF      LFAXDI.TT_    2        2        3        47565   59556
+LFAXI.FOT       N/A           N/A      N/A      N/A      N/A     1322
+LFAXI.TTF       LFAXI.TT_     2        2        3        45042   56124
+LHANDW.FOT      N/A           N/A      N/A      N/A      N/A     1338
+LHANDW.TTF      LHANDW.TT_    2        2        2        42495   50776
+LMATH1.FOT      N/A           N/A      N/A      N/A      N/A     1346
+LMATH1.TTF      LMATH1.TT_    2        2        2        33104   45700
+LMATH2.FOT      N/A           N/A      N/A      N/A      N/A     1352
+LMATH2.TTF      LMATH2.TT_    2        2        2        23236   36704
+LMATH3.FOT      N/A           N/A      N/A      N/A      N/A     1346
+LMATH3.TTF      LMATH3.TT_    2        2        2        41420   54576
+LSANS.FOT       N/A           N/A      N/A      N/A      N/A     1326
+LSANS.TTF       LSANS.TT_     2        2        2        42563   53144
+LSANSD.FOT      N/A           N/A      N/A      N/A      N/A     1340
+LSANSD.TTF      LSANSD.TT_    2        2        2        38557   48508
+LSANSDI.FOT     N/A           N/A      N/A      N/A      N/A     1342
+LSANSDI.TTF     LSANSDI.TT_   2        2        3        43571   54136
+LSANSI.FOT      N/A           N/A      N/A      N/A      N/A     1324
+LSANSI.TTF      LSANSI.TT_    2        2        2        42877   53604
+LTYPE.FOT       N/A           N/A      N/A      N/A      N/A     1348
+LTYPE.TTF       LTYPE.TT_     2        2        2        37377   45040
+LTYPEB.FOT      N/A           N/A      N/A      N/A      N/A     1342
+LTYPEB.TTF      LTYPEB.TT_    2        2        2        34472   41912
+LTYPEBO.FOT     N/A           N/A      N/A      N/A      N/A     1358
+LTYPEBO.TTF     LTYPEBO.TT_   2        2        2        35079   43264
+LTYPEO.FOT      N/A           N/A      N/A      N/A      N/A     1348
+LTYPEO.TTF      LTYPEO.TT_    2        2        2        39412   53192
+MSCOMSTF.DLL    MSCOMSTF.DL_  1        1        1        41222   74416
+MSCPYDIS.INC    MSCPYDIS.IN_  1        1        1        2012    7410
+MSCUISTF.DLL    MSCUISTF.DL_  1        1        1        11384   21632
+MSDETECT.INC    MSDETECT.IN_  1        1        1        4726    22097
+MSDETSTF.DLL    MSDETSTF.DL_  1        1        1        14947   24544
+MSINSSTF.DLL    MSINSSTF.DL_  1        1        1        42075   67248
+MSREGDB.INC     MSREGDB.IN_   1        1        1        1361    4437
+MSSHARED.INC    MSSHARED.IN_  1        1        1        1151    3603
+MSSHLSTF.DLL    MSSHLSTF.DL_  1        1        1        12050   19008
+MSTTFONT.INC    MSTTFONT.IN_  1        1        1        718     1779
+MSUILSTF.DLL    MSUILSTF.DL_  1        1        1        3970    6144
+MTCORSVA.FOT    N/A           N/A      N/A      N/A      N/A     1328
+MTCORSVA.TTF    MTCORSVA.TT_  1        1        4        51097   60852
+MTSORTS.FOT     N/A           N/A      N/A      N/A      N/A     1324
+MTSORTS.TTF     MTSORTS.TT_   1        1        4        63689   79968
+SCHLBK.FOT      N/A           N/A      N/A      N/A      N/A     1332
+SCHLBK.TTF      SCHLBK.TT_    1        1        4        53820   66116
+SCHLBKB.FOT     N/A           N/A      N/A      N/A      N/A     1334
+SCHLBKB.TTF     SCHLBKB.TT_   1        1        4        55654   68620
+SCHLBKBI.FOT    N/A           N/A      N/A      N/A      N/A     1348
+SCHLBKBI.TTF    SCHLBKBI.TT_  1        1        4        53548   67660
+SCHLBKI.FOT     N/A           N/A      N/A      N/A      N/A     1338
+SCHLBKI.TTF     SCHLBKI.TT_   1        1        4        53585   67708
+SETUP.EXE       SETUP.EXE     1        1        1        24624   24624
+SETUP.INI       SETUP.INI     1        1        1        149     149
+SETUP.LST       SETUP.LST     1        1        1        669     669
+SETUPAPI.INC    SETUPAPI.IN_  1        1        1        13459   55620
+VER.DLL         VER.DL_       1        1        1        9797    18414
+_MSSETUP.EXE    _MSSETUP.EX_  1        1        1        7543    9813
+_MSSETUP._Q_    N/A           N/A      N/A      N/A      N/A     532
+_MSTEST.EXE     _MSTEST.EX_   1        1        1        55370   89504
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

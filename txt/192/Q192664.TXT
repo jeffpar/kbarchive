@@ -1,0 +1,63 @@
+DOCUMENT:Q192664  30-JUL-2001  [sms]
+TITLE   :SMS: How to Disable the PCM Welcome Screen
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some administrators want the Package Command Manager (PCM) Welcome screen to not
+be displayed to their client computers immediately upon installation. This
+article documents the steps involved in how to accomplish this:
+
+MORE INFORMATION
+================
+
+To prevent the PCM Welcome screen from being displayed to the client computers,
+perform the following steps:
+
+1. Create a blank Sms.ini file.
+
+2. Add a [Local] section.
+
+3. Add the line "ShowPCMIntroDialog=False" (without the quotation marks) to the
+   Local section.
+
+4. Use a logon script or another method to distribute the Sms.ini template file
+   you created to the clients.
+
+The Welcome screen will still be displayed the first time Package Command Manager
+is called, but it will not be displayed immediately after installation.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

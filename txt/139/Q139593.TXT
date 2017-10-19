@@ -1,0 +1,144 @@
+DOCUMENT:Q139593  06-MAY-2001  [visualc]
+TITLE   :BUG: DDX Problem with Combo Box in Win32s
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0,2.1,2.2,4.0,4.1
+OPER/SYS:
+KEYWORDS:kbprogramming kbui kbnokeyword kbDlg kbMFC kbVC kbOSWin32s kbGrpDSMFCATLkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DDX function DDX_CBString does not work correctly under Win32s for combo
+boxes that use the drop list style. If you try to use DDX to retrieve the string
+associated with the static control of a drop list style combo box under Win32s,
+an empty string is returned.
+
+CAUSE
+=====
+
+This problem is the result of an improperly sign extended return value from the
+Windows SDK GetWindowTextLength function. The MFC function DDX_CBString uses
+GetWindowTextLength to try to determine how many characters to copy from the
+edit control of a combo box with a drop down style or the static control of a
+combo box with a drop list style. The GetWindowTextLength function fails to
+retrieve a valid text length for a combo box with a drop list style under
+Win32s. When GetWindowTextLength is called for a combo box with a drop list
+style under Win32s, a value of 0xFFFF is returned. Because this return value
+isn't properly sign extended to 0xFFFFFFFF, the DDX_CBString function doesn't
+work correctly.
+
+RESOLUTION
+==========
+
+It is possible to work around this problem by providing your own implementation
+of the DDX_CBString function for the class that has the DDX_CBString call in its
+DoDataExchange function. If you provide your own DDX_CBString member function,
+it will override the standard MFC DDX_CBString function. To provide your own
+version of DDX_CBString follow these steps:
+
+1. Add the following function to your class header file:
+
+      void DDX_CBString(CDataExchange *pDX, int
+                        nIDC, CString& value);
+
+2. Add the implementation for this function to your classes implementation file.
+   See the "Sample Code" section in this article for an example of a revised
+   implementation of DDX_CBString for a class called CMyTryDlg.
+
+3. In your implementation file, use #include to include the Afxpriv.h file.
+
+4. Inside the implementation for this function, copy all the MFC code for the
+   standard MFC DDX_CBString function. The standard MFC DDX_CBString function
+   can be found in the MFC source file Dlgdata.cpp.
+
+5. Change this line:
+
+         if (nLen != -1)
+
+   to this line:
+
+         if (nLen!= -1 && nLen!=0xFFFF)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Visual C++ versions 4.2 and later do not support building Win32s applications.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+The following is a sample of an override of the DDX_CBString function for the
+class called CMyTryDlg:
+
+      void AFXAPI CMyTryDlg::DDX_CBString(CDataExchange* pDX, int nIDC,
+                                          CString& value)
+      {
+           HWND hWndCtrl = pDX->PrepareCtrl(nIDC);
+           if (pDX->m_bSaveAndValidate)
+           {
+                // Get current edit item text (or drop list static)
+                int nLen = ::GetWindowTextLength(hWndCtrl);
+                if (nLen != -1 && nLen != 0xFFFF)
+                {
+                     // Get known length
+                     ::GetWindowText(hWndCtrl, value.GetBufferSetLength(nLen),
+                                     nLen+1);
+               }
+               else
+               {
+                    // GetWindowTextLength does not work for drop lists assume
+                    // max of 255 characters
+                    ::GetWindowText(hWndCtrl, value.GetBuffer(255), 255+1);
+               }
+               value.ReleaseBuffer();
+          }
+          else
+          {
+               // Set current selection based on model string
+               if (::SendMessage(hWndCtrl, CB_SELECTSTRING, (WPARAM)-1,
+                    (LPARAM)(LPCTSTR)value) == CB_ERR)
+               {
+                    // Set the edit text (will be ignored if DROPDOWNLIST)
+                    AfxSetWindowText(hWndCtrl, value);
+               }
+          }
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbui kbnokeyword kbDlg kbMFC kbVC kbOSWin32s kbGrpDSMFCATL kbbuglist
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0,4.1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

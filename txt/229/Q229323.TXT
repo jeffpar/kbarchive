@@ -1,0 +1,75 @@
+DOCUMENT:Q229323  11-DEC-2001  [winnt]
+TITLE   :Err Msg: The Client Could Not Connect to Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to Windows NT Server 4.0, Terminal Server Edition, you
+may receive the following error message:
+
+   The client could not connect to Terminal Server. The server may be too busy.
+   Please try connecting later.
+
+CAUSE
+=====
+
+This issue can occur if the RDP-TCP connection type is disabled.
+
+RESOLUTION
+==========
+
+To resolve this issue, enable the RDP-TCP connection type on the server. To do
+this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Administrative Tools, and then double-click Terminal Server
+   Configuration.
+
+3. Right-click on "RDP-Tcp connection", then go to All Tasks and click Enable
+   Connection.
+
+4. Close the Terminal Server Configuration, and then close Control Panel.
+
+MORE INFORMATION
+================
+
+RDP is the protocol Windows NT Server 4.0, Terminal Server Edition uses to
+connect to client computers.
+A Citrix Metaframe ICA client may connect to Windows NT Server 4.0, Terminal
+Server Edition even with RDP-TCP disabled.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

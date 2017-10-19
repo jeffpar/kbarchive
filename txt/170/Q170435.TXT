@@ -1,0 +1,55 @@
+DOCUMENT:Q170435  29-OCT-1999  [pcmail]
+TITLE   :MDG: Using the ADMINSCH Account to Log in to the Admin Program
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the Post Office Administrator account is deleted, or the password has been
+lost, changed, or forgotten, the ADMINSCH account can be used to log on to the
+Admin program to recover or re-create the ADMIN account.
+
+MORE INFORMATION
+================
+
+The ADMINSCH account is created whenever Schedule+ is installed, and may have
+administrator rights on the postoffice. The ADMINSCH account is created with the
+default password, usually PASSWORD. The password is quite often never changed.
+
+A customer can try to log on to the Admin program with the ADMINSCH account and
+recover the password for the ADMIN account, or re-create a missing ADMIN
+account.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,877 @@
+DOCUMENT:Q153655  30-MAR-1999  [exchange]
+TITLE   :XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 2
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Following is the README.TXT file that accompanies the Microsoft Exchange Server
+version 4.0 U.S. Service Pack 2:
+
+MORE INFORMATION
+================
+
+------------------------------------------------------------------------
+                   Microsoft Exchange Server Version 4.0
+                              Service Pack 2
+------------------------------------------------------------------------
+
+Contents
+
+1.0  Installing Microsoft Exchange Server 4.0 Service Pack 2
+   1.1   Introduction
+   1.2   Installation Instructions for the Microsoft Exchange Client
+         Service Pack 2
+   1.3   Installation Instructions for the Microsoft Exchange Server
+         Service Pack 2
+   1.4   New Functionality in This Release
+   1.5   Macintosh Client
+   1.6   PowerPC Client
+   1.7   PowerPC Server
+   1.8   Internet Mail Connector and Macintosh File Attachments
+   1.9   Internet Mail Connector Supports Dial-up Connections
+   1.10  Double-byte Character Set (DBCS) Support
+   1.11  Installing Symbol Files
+   1.12  Adding and Removing Components from the Microsoft Exchange
+         Enterprise Edition
+   1.13  Adding and Removing Components from the Microsoft Exchange
+         Standard Edition
+   1.14  Installing ISO TP4/CLNP on Windows NT 3.51
+   1.15  Installing ISO TP4/CLNP on Windows NT 4.0
+   1.16  List of Bugs Fixed in Microsoft Exchange Server Service Packs
+
+1.0  Installing Microsoft Exchange Server 4.0 Service Pack 2
+
+1.1  Introduction
+
+This release of Microsoft(R) Exchange Server 4.0 Service Pack 2 is easy to
+apply from within Microsoft Windows NT(R) and changes only those files that
+were originally set up on the Microsoft Exchange Server system. Service
+Pack releases are cumulative. They contain all previous fixes and any new
+fixes made to the system.
+
+1.2  Installation Instructions for the Microsoft Exchange Client Service
+     Pack 2
+
+To install the Service Pack for Microsoft Exchange Client from a compressed
+files:
+
+1.  Create a CLIENT sub-directory.
+2.  Download the compressed setup file appropriate for the clients for
+    your hardware platform directory. Select the appropriate files as
+    indicated by the following list:
+
+   DOS client                SP2_40DI.EXE
+   Eforms Designer Setup     SP2_40EF.EXE
+   ACME Setup                SP2_40CS.EXE
+   STF Editor                SP2_40ST.EXE
+   Client Support Symbols:
+      Win95                  SP2S409I.EXE
+      Winnt (Alpha)          SP2S40NA.EXE
+      Winnt (Intel)          SP2S40NI.EXE
+      Winnt (MIPS)           SP2S40NM.EXE
+      Winnt (PPC)            SP2S40NP.EXE
+   Windows 16-bit client     SP2_40WI.EXE
+   Windows 95 client         SP2_409I.EXE
+   Winnt (Alpha)             SP2_40NA.EXE
+   Winnt (Intel)             SP2_40NI.EXE
+   Winnt (MIPS)              SP2_40NM.EXE
+   Winnt (PPC)               SP2_40NP.EXE
+SMS and TPL client files     SP2_40SM.EXE
+
+3. At a command prompt, go to the CLIENT directory and type the filename
+   (downloaded in Step 2) followed by a -d to ensure that the correct
+   directories are created (Example: SP2_40NA -d).
+4. To update a client go to the CLIENT and platform directory, and type
+   SETUP. Follow the instructions displayed on the screen.
+
+1.3  Installation Instructions for the Microsoft Exchange Server Service
+     Pack 2
+
+To install the Service Pack for Microsoft Exchange Server from compressed
+files:
+
+1.  Create two sub-directories, SETUP and SUPPORT.
+2.  Download the compressed setup file appropriate for your hardware
+    platform into the SETUP directory. Select the appropriate file as
+    indicated by the following list:
+
+      Alpha AXP(TM):   SP2_400A.EXE
+      Intel(R):        SP2_400I.EXE
+      MIPS(R):         SP2_400M.EXE
+      PowerPC(TM):     SP2_400P.EXE
+
+3.  Download the compressed support file appropriate for your hardware
+    platform into the SUPPORT directory. Select the appropriate file as
+    indicated by the following list:
+
+      Alpha AXP(TM):   SP2S400A.EXE
+      Intel(R):        SP2S400I.EXE
+      MIPS(R):         SP2S400M.EXE
+      PowerPC(TM):     SP2S400P.EXE
+
+4.  At the Windows NT command prompt, go to the SETUP directory and type
+    the filename (downloaded in Step 2) followed by a -d to ensure that
+    the correct directories are created (Example: SP2_400A -d).
+5.  At the Windows NT command prompt, go to the SUPPORT directory and
+    type the filename (downloaded in Step 3) followed by a -d to ensure
+    that the correct directories are created (Example: SP2S400A -d).
+6.  Go to the SETUP directory, and type UPDATE. Follow the instructions
+    displayed on the screen.
+
+1.4 New Functionality in This Release
+
+This release of Microsoft Exchange Server includes new client support and a
+number of new features. These are described below.
+
+1.5 Macintosh Client
+
+Microsoft Exchange Client for the Apple Macintosh adds to the client
+platforms available in Microsoft Exchange Server 4.0.  The Microsoft
+Exchange Client for the Apple Macintosh supports advanced features such as
+grouping and filtering in views, discussion databases, auto-signature,
+rules, sending/sharing of documents, digital signatures, offline folders,
+and access to the Internet through the Internet Mail Connector
+
+1.6 PowerPC Client
+
+Microsoft Exchange Client for Windows NT is also available for the PowerPC
+platform.
+
+1.7 PowerPC Server
+
+Microsoft Exchange Server also adds the server software for the PowerPC
+platform. With this addition, Microsoft Exchange Server completes its
+support for high-end hardware platforms, offering the same advanced
+functionality such as security integrated into the network operating
+system, use of server operating system monitoring, and backup tools on
+Intel and RISC platforms.
+
+1.8 Internet Mail Connector and Macintosh File Attachments
+
+With the release of Microsoft Exchange Server, all file attachments from an
+Apple Macintosh will be mapped to MIME-standard bodyparts so that MIME
+complaint clients and gateways can decode these attachments. Additionally,
+the Internet Mail Connector maps any incoming bodyparts to windows or
+Macintosh file types.
+
+1.9 Internet Mail Connector Supports Dial-up Connections
+
+This release enables support of dial-up connections by the Internet Mail
+Connector to send/receive messages to Internet service providers over a
+telephone connection.
+
+1.9.1  Administrator Permissions Required to Run the Internet Mail
+       Connector
+
+To administer the Internet Mail Connector, the account under which you are
+running the Microsoft Exchange Server Administrator program must have
+administrative rights on the computer where the Internet Mail Connector
+service is running. This account must be listed as a member of the
+Administrators group in the User Manager for that computer. If the account
+does not have administrative rights, an error message will be displayed
+when you attempt to open the Internet Mail Connector properties, and some
+fields will be disabled.
+
+1.9.2  Internet Mail Connector Word Wrap and Text Quoting Registry
+       Parameters
+
+Two new registry values have been added under the Internet Mail Connector's
+Parameters key to provide control over the Internet Mail Connector 's word-
+wrap and text quoting behavior. The first, UseRTFText, is a DWORD value
+that specifies if reply and forward text will be quoted in outgoing non-
+TNEF. If it is enabled (non-zero), Internet style quoting is applied to
+reply and forward text by inserting a ">" character before each line. If
+UseRTFText is disabled (set to zero or not present), no Internet style
+quoting is applied. UseRTFText is enabled by default.
+
+The second new registry value is EnableMIMEWrap. This is a DWORD value that
+controls word-wrap in outgoing non-TNEF MIME messages. If it is enabled,
+lines in MIME messages are wrapped at a fixed column. If EnableMIMEWrap is
+disabled (and UseRTFText is also disabled), lines are wrapped using quoted
+printable encoding. MIME enabled readers will unwrap the lines, restoring
+the original text flow, but users with non-MIME readers will see a "="
+character appended to each wrapped line of text. EnableMIMEWrap is enabled
+by default.
+
+Note that UseRTFText also affects word-wrap. If enabled, text lines in all
+non-TNEF messages are wrapped at a fixed column, regardless of the setting
+of EnableMIMEWrap. The word-wrap setting for non-MIME messages on the
+Internet Mail Connector properties in Microsoft Exchange Server
+Administrator program is ignored.
+
+1.9.3  Using Internet-style Quoting with List Servers
+
+When the UseRTFText registry parameter is enabled, Internet style quoting
+will be applied to forward and reply text in messages. This quoting will
+also be applied to text that is cut and pasted from a message into a
+compose note. When sending a message with a command to a list server, it is
+important to make sure the text is not quoted; otherwise, the list server
+will not be able to interpret the command. You can type the command
+manually. Alternatively, you can use the Paste Special command to paste the
+plain text. Do not paste the formatted text.
+
+1.9.4  Site Address Required to Start the Internet Mail Connector
+
+The Internet Mail Connector determines the domain to use in the originator
+address for reports from the site address for its address type. If you set
+the address type on the Internet Mail property page of the Internet Mail
+Connector properties to a type for which there is no site address, the
+Internet Mail Connector will not start.
+
+If you want to set an address type without specifying the site address, you
+can modify the registry by adding the value SiteDomain to
+SYSTEM\CurrentControlSet\Services\MSExchangeIMC\Parameters. SiteDomain is a
+REG_SZ value that should be set to the domain you would like to be used in
+the originator address for reports generated by the Internet Mail
+Connector.
+
+1.9.5  Sending Imported Messages Using the Internet Mail Connector
+
+Messages that have been imported into Microsoft Exchange with the migration
+tools cannot be embedded in messages and sent through the Internet Mail
+Connector. The Internet Mail Connector will not be able to process the
+embedded message and will generate a non-delivery report (NDR). The problem
+will also occur if you try to embed an unsent message into another message
+and send it out the Internet Mail Connector.
+
+To work around this problem, cut and paste the contents of the migrated
+message or forward it instead of embedding it in another message.
+
+1.9.6 The Microsoft Exchange Server Routing Table
+
+The Internet Mail Connector reads the Microsoft Exchange Server routing
+table every 15 minutes to determine its routing responsibilities. The 15-
+minute interval is configurable through the Windows NT Registry. It is
+recommended that you use this default setting (0xF), but if you need to
+modify it, use the following registry key:
+
+   SYSTEM\CurrentControlSet\Services\MSExchangeIMC
+         \Parameters\RouteCalculationInterval
+
+Note Setting this registry value to 0x0 means the Internet Mail Connector
+would check the routing table only at startup.
+
+The Internet Mail Connector checks the Last Modified field for the routing
+table to determine whether changes have been made. If the Last Modified
+time on the routing table is newer than the timestamp on the Route.txt
+file, the Internet Mail Connector will update its routing information and
+create the Route.txt file in the Exchsrvr\Imcdata\Log directory.
+
+Using the Route.txt File
+
+The Route.txt file contains the current routes that the Internet Mail
+Connector will use to determine delivery destinations for connected sites.
+This file is not used by the Internet Mail Connector for routing; it's a
+text representation of the routes that the Internet Mail Connector is
+responsible for.
+
+If changes are made to the routing table, at the next checking interval,
+the Internet Mail Connector will copy the existing Route.txt file to
+Route.old and update the Route.txt file with the latest changes. The
+Internet Mail Connector always reads the routing table at startup.
+
+Troubleshooting a Routing Problem
+
+If the Internet Mail Connector does not route properly, check the following
+configuration items:
+
+Check the entries in the Control Panel, Network, TCP/IP, and DNS
+configuration. The host name and domain name need to be reachable by other
+computers (that is, registered within the DNS or specified in the local
+HOSTS file).
+
+Check the Internet Mail Connector Connected Sites property page to ensure
+that all entries are correct.
+
+Check the routing table using the Site Addressing object, Routing property
+page in the Microsoft Exchange Server Administration program.
+
+Additionally check the following files:
+
+Route.txt: The current routes the Internet Mail Connector services.
+Route.old: The previous routing information the Internet Mail Connector
+           used before it created the new Route.txt file.
+
+Equal Cost Routes and Non-Delivered Mail
+
+If your configuration consists of multiple routes with the same cost for a
+destination, the Internet Mail Connector will balance loads between the
+different routes. If a route has problems, any queued mail for that
+destination will not be rerouted through a different route. If the problems
+continue longer than the maximum allowed delivery time-outs, a non-delivery
+report will be generated in these cases.
+
+Least Cost Routes
+
+If your configuration contains multiple routes to the same destination with
+different costs, the Internet Mail Connector will use only the least cost
+route defined. If that link is unavailable due to a communication problem,
+the Internet Mail Connector will not use any of the higher cost routes.
+Proper configuration of your DNS with MX records can override this behavior
+and allow all incoming mail to use a secondary route.
+
+Routing Table Can't Be Read
+
+If the Internet Mail Connector has started and the routing table cannot be
+read at the specified checking interval, the Internet Mail Connector will
+continue to use its existing routing information. No event is logged in
+this case.
+
+Correction to the Administrator's Guide
+
+In the "Using Routing Addresses for Address Space Entries" section in
+Chapter 11, The Routing Address tab no longer needs to be used when
+connecting two replicated Microsoft Exchange sites. It can be used to send
+mail to different organizations that are not replicated.
+
+1.9.7  Maximum Number of Inbound and Outbound Connections
+
+Setting the maximum number of inbound and outbound connections to 0 on the
+Connections property page does not stop the Internet Mail Connector from
+accepting inbound or attempting outbound connections. To stop both inbound
+and outbound connections, set the Transfer Mode to None. To stop inbound
+connections, choose Outbound only. To stop outbound connections, choose
+Inbound Only.
+
+1.9.8  Removing an Installed Internet Mail Connector
+
+Before removing the Internet Mail Connector, be sure there are no messages
+left in the queues awaiting delivery. Follow these steps:
+
+1. On the Connections property page, set the transfer mode to None
+   (Flush Queues).
+2. Set the retry interval for the connector message queues to a short
+   interval, such as .25 (15 minutes).
+3. Set the message time-outs for normal, urgent, and non-urgent mail to
+   one hour.
+4. Restart the Internet Mail Connector.
+
+The Internet Mail Connector will not accept new messages and will continue
+to process the messages already in its queues. Non-Delivery Reports (NDRs)
+will be generated for any messages that cannot be delivered in one hour
+(host unreachable, for example). Check the status of the queues on the
+Queues property page. When the queues are empty, shut down the Internet
+Mail Connector and begin removing the installation.
+
+1.9.9  Loopback Detection
+
+The Internet Mail Connector will allow configurations where SMTP
+connections are made to itself. There are cases where this behavior is
+desired, such as when one Microsoft Exchange user addresses another using
+an SMTP proxy. However, this can also allow loopbacks and inefficient
+configurations. You can configure the Internet Mail Connector so that it
+won't initiate SMTP connections if the destination host's IP address
+matches its own. Instead, it will create a non-delivery report (NDR) for
+the message. To enable the Internet Mail Connector's connection loopback
+detection, create the following DWORD registry value and set it equal to 1:
+
+   SYSTEM\CurrentControlSet\Services\MSExchangeIMC
+         \Parameters\DisableLoopbackConnection
+
+1.9.10  Delivery Restrictions for Custom Recipients
+
+Delivery of inbound messages to custom recipients cannot be controlled
+using the Delivery Restrictions property page.
+
+1.9.11  Internet Mail Connector Performance Monitor Counters
+
+The Microsoft Exchange Server Performance Monitor Counters for the Internet
+Mail Connector described in Chapter 17 of the Administrator's Guide have
+changed.
+
+Name                        Description
+
+Counters for MTS-IN
+Queued MTS-IN               The number of messages awaiting final
+                            delivery in MS Exchange Server
+Bytes Queued MTS-IN         The size, in bytes, of the messages that
+                            have been converted from Internet Mail and
+                            are awaiting final delivery within MS
+                            Exchange Server
+Messages Entering MTS-IN    The number of messages entering the MTS-IN
+                            folder after conversion from Internet Mail
+                            format
+
+Counters for MTS-OUT
+Queued MTS-OUT              The number of messages waiting to be
+                            converted to Internet Mail format
+Bytes Queued MTS-OUT        The size, in bytes, of the messages waiting
+                            to be converted to Internet Mail format
+Messages Entering MTS-OUT   Messages that have entered the Internet Mail
+                            Connector's MTS-OUT folder for conversion to
+                            Internet Mail format
+Messages Leaving MTS-OUT    The number of messages entering the Outbound
+                            Queue
+
+Associations
+Connections Inbound         The number of current SMTP connections to
+                            the Internet Mail Connector established by
+                            other SMTP hosts
+Connections Outbound        The number of current SMTP connections the
+                            Internet Mail Connector has established to
+                            other SMTP hosts
+Connections Total Outbound  The total number of successful SMTP
+                            connections that the Internet Mail connector
+                            has established since it was started
+Connections Total Inbound   The total number of SMTP connections the
+                            Internet Mail Connector has accepted from
+                            other hosts since it was started
+Connections Total Rejected  The total number of SMTP connections that
+                            the Internet Mail Connector has rejected
+                            from other hosts since it was started
+Connections Total Failed    The total number of SMTP connections the
+                            Internet Mail Connector has attempted to
+                            other hosts that failed since it was started
+
+Internet Queues
+Queued Outbound             The number of messages from MS Exchange
+                            Server that are queued to be delivered to
+                            the Internet
+Queued Inbound              The number of messages received from the
+                            Internet destined for  MS Exchange Server
+
+Counters for NDRs
+NDRs Total Inbound          The total number of Non-delivery reports
+                            generated for outbound mail
+NDRs Total Outbound         The total number of Non-delivery reports
+                            generated for inbound mail
+
+Counters for Messages/Bytes Transferred
+Inbound Bytes Total         The total size in Bytes transferred into MS
+                            Exchange Server
+Outbound Bytes Total        The total size in Bytes transferred from MS
+                            Exchange Server
+Inbound Messages Total      The total number of Internet messages
+                            delivered into MS Exchange Server
+Outbound Messages Total     The total number of outbound messages
+                            delivered to their destinations
+
+1.9.12  Internet Mail Connector Queues
+
+The "Selecting a Queue" section in Chapter 17 of the Administrator's Guide
+has changed.
+
+Option                                   Description
+Inbound messages awaiting conversion    Incoming messages waiting to be
+                                        converted by the connector and
+                                        then delivered to the
+                                        information store.
+Inbound messages awaiting delivery      Messages in the MTS-IN folder
+                                        in the information store.
+Outbound messages awaiting conversion   Outgoing messages received from
+                                        the MTA and waiting to be
+                                        converted by the Internet Mail
+                                        Connector. The next destination
+                                        is the Out queue.
+Outbound messages awaiting delivery     Messages queued for delivery in
+                                        the Internet Mail Connector's
+                                        scheduler, which roughly
+                                        corresponds to the message files
+                                        in the IMCDATA\OUT directory.
+                                        Since some messages require
+                                        delivery to multiple hosts,
+                                        there will be more entries in
+                                        the queue than there are files
+                                        in the directory.
+
+1.9.13  Using a Wildcard MX DNS Record
+
+If you are using a wildcard MX DNS record, the Internet Mail Connector will
+append the default domain from your TCP/IP configuration to each host name
+before trying to resolve it in DNS. To prevent this, create a REG_DWORD
+registry value named DisableResolverSearchList under the
+SYSTEM\CurrentControlSet\Services\MSExchangeIMC\Parameters key and set its
+value to 1. This will stop the Internet Mail Connector from appending a
+domain to host names before trying to resolve them.
+
+1.9.14 Using the Internet Mail Connector as a Site Connector
+
+In Chapter 8 (Planning Your Connectors) of the Microsoft Exchange Server
+Concepts and Planning Guide, the "Connecting Microsoft Exchange Server
+Sites over the Internet" section has changed. The following information
+supplements the section and describes steps that can be eliminated.
+
+Step 1: Multiple Internet Mail Connectors in one site is no longer
+required.
+
+Step 8: The address space routing address is no longer required. Sites that
+can be connected (reached) only through site B (that is, site A has no
+direct connection to them) do not need to be added to the Connected Sites
+property page on the Internet Mail Connector on site A. The Internet Mail
+Connector reads the routing information from the Microsoft Exchange Server
+routing table and determines that these sites are routable through site B.
+
+Step 9: You no longer have to add routing addresses for address spaces that
+are serviced on other sites that an Internet Mail Connector will connect
+to. When sites are replicated, the Internet Mail Connector will access this
+information directly.
+
+In addition to the steps in the Concepts and Planning Guide, use the
+following steps to connect Site A and Site B:
+
+1. Use the Connected Sites property page on site A to add a new
+    connected site for site B.
+2. Using the Routing Address tab from the Connected Sites property page,
+   add the routing address for the Internet Mail Connector computer on
+   site B.
+3. Add site A to the Connected Sites property page for the Internet Mail
+   Connector on site B and use the routing address for site A.
+
+Step 10: It is no longer necessary to define custom recipients in the site
+where the Internet Mail Connector servicing the external Internet mail
+resides.
+
+1.9.15  Connecting Sites with the Internet Mail Connector
+
+For best performance when connecting sites, configure the Internet Mail
+Connector to use MIME encoding. When sending TNEF, the Internet Mail
+Connector handles attachments differently when performing MIME encoding
+than it does with uuencode. Attachments are transmitted in the TNEF data,
+instead of being broken out separately, as they are in uuencoded messages.
+Due to the internal design of the Internet Mail Connector, this results in
+much better performance in processing TNEF messages. Therefore, to maximize
+site replication performance, it is recommended that you use MIME encoding
+with TNEF when connecting sites using the Internet Mail Connector.
+
+1.9.16  Do Not Use an Ending Period to Specify an FQDN
+
+When specifying message delivery by domain, a fully qualified domain name
+(FQDN) ending with a period (.) is not supported. A non-delivery report
+(NDR) specifying "host unreachable" will be generated.
+
+1.9.17  Specifying the Maximum Message Size
+
+The description of the No limit option on the Internet Mail Connector
+General property page in the "Specifying the Maximum Message Size" in
+Chapter 11 of the Microsoft Exchange Server Administrator's Guide should
+read as follows: Send an inbound or outbound message of any size.
+
+1.9.18  Forwarding Outbound Mail to a Host Using Dial-up
+
+The Internet Mail Connector has a default setting that creates up to 10
+outbound connections to any particular host and sends up to 8 messages in
+any single connection. For performance reasons, you should consider
+changing the settings to 1 for outbound connections and to 100 for maximum
+messages.
+
+To change these settings:
+
+1. In the Administrator window, choose Connections.
+2. Double-click the Internet Mail Connector.
+3. Select the Connections tab.
+4. Under Transfer Mode, choose Advanced.
+5. Change the defaults to the following:
+
+   Max no. of Connections to a single host:  1
+   Max no. of Messages sent in a connection: 100
+
+Note Check with your Internet service provider to make sure the receiving
+host can accept 100 messages in a single connection.
+
+1.10 Double-byte Character Set (DBCS) Support
+
+With the release of Microsoft Exchange Server, all versions accept and can
+administer all other versions. This includes full support of Far East and
+Eastern European character sets.
+
+1.11  Installing Symbol Files
+
+To install Symbol Files from the compact disc:
+
+1. Download the Exchange 4.0 Service Pack 2 appropriate symbol files.
+2. Copy the appropriate file to the CLIENT sub-directory and type the
+   filename followed by a -d to ensure that the correct directories are
+   created (Example: SP2S409I.EXE).
+3. Change to the directory created in the previous step and Run
+   Setup.bat.
+
+1.12  Adding and Removing Components from the Microsoft Exchange Server
+      Enterprise Edition
+
+To add or remove components from the Microsoft Exchange Enterprise Edition:
+
+1. Insert the Microsoft Exchange Server 4.0 compact disc into the CD-ROM
+   drive.
+2. At the Windows NT command prompt, change to the CD-ROM drive
+3. Change to the <LANGUAGE> directory (depending on whether you are
+   updating an English, French, or German Microsoft Exchange Server).
+3. Switch to the SETUP directory, and then switch to the i386, MIPS or
+   ALPHA directory (depending upon whether you have an Intel(R),
+   MIPS(R), Alpha AXP(TM).
+4. Run Setup.
+5. Choose Add/Remove.
+6. Select or deselect components from Change Option, then choose OK.
+   Choose Continue and then Yes to Add/Remove components.
+7. Rerun the section called Installation Instructions for the Microsoft
+   Exchange Server Service Pack 2.
+8. Rerun the section called Installing Symbol Files.
+
+1.13  Adding and Removing Components from the Microsoft  Exchange Server
+      Standard Edition
+
+To add or remove a component from the Microsoft Exchange Standard Edition:
+
+1. Insert the appropriate Microsoft Exchange Connector, X400, SMTP, or
+   MS Mail disc into the A drive.
+2. Run Setup.
+3. Choose Typical and then Continue.
+4. Rerun the section called Installation Instructions for the Microsoft
+   Exchange Server Service Pack 2.
+5. Rerun the section called Installing Symbol Files.
+
+1.14   Installing ISO TP4/CLNP on Windows NT 3.51
+
+The Service Pack contains an updated ISO TP4/CLNP Protocol. If you have
+already installed ISO TP4/CLNP and are upgrading, remove and reinstall the
+ISO TP4/CLNP components.
+
+To remove ISO TP4/CLNP:
+
+1. In Control Panel, double-click the Network icon.
+2. From Installed Network Software, select ISO TP4/CLNP Protocol, choose
+   Remove, and then choose Yes.
+3. Restart your computer.
+
+The ISO TP4/CLNP files are located in the TP4Setup. Download the compressed
+support file SP2_40TP.EXE and type the filename followed by the -d command
+to ensure that the correct directories are created (Example: SP2_40TP.EXE -
+d). The downloaded file contains the files for all platforms.
+
+To install the new version of ISO TP4/CLNP:
+
+1. In Control Panel, double-click the Network icon.
+2. Choose Add Software.
+3. From the Network Software list, select ISO TP4/CLNP Stack and then
+   choose Continue.
+4. Type the path to the subdirectory on the subdirectory that contains
+   your processor type, and then choose Continue.
+5. In the Network Settings dialog box, choose OK. (ISO TP4/CLNP Protocol
+   should appear in the Installed Network Software list.)
+6. Choose Close.
+7. Select the proper Local Address and NSAP address for your
+   configuration, and choose OK.
+8. Restart the server.
+
+1.15 Installing ISO TP4/CLNP on Windows NT 4.0
+
+The Windows NT 4.0 compact disc contains a new ISO TP4/CLNP Protocol.
+
+If you have already installed ISO TP4/CLNP and are upgrading from Windows
+NT 3.51, remove and reinstall the ISO TP4/CLNP components from the Windows
+NT 4.0 compact disc. The version of ISO TP4/CLNP that shipped with Windows
+NT 3.51 does not work on Windows NT 4.0, and the Windows NT 4.0 upgrade
+process does not upgrade the ISO TP4/CLNP components automatically.
+
+To remove ISO TP4/CLNP:
+
+1. In Control Panel, double-click the Network icon.
+2. Select the Protocols tab.
+3. From the Network Protocols, select ISO TP4/CLNP Stack, and then
+   choose Remove.
+4. Restart your computer.
+
+The ISO TP4/CLNP files are on the compact disc in drvlib\protocol\tp4setup.
+The directory path contains subdirectories for the processor type on your
+server.
+
+To install the new version of ISO TP4/CLNP:
+
+1. In Control Panel, double-click the Network icon.
+2. Select the Protocols tab, and then choose Add.
+3. Select Have Disk and type the path to the subdirectory on the compact
+   disc that contains your processor type.
+4. In the Select OEM option dialog box, choose OK. (ISO TP4/CLNP
+   Protocol should appear in the Network Protocols list.)
+5. Choose Close.
+6. Select the proper Local Address and NSAP address for your
+   configuration, and choose OK.
+7. Restart the server.
+
+1.16  List of Bugs Fixed in Microsoft Exchange Server Service Packs
+
+Note: Use the Qxxxxxx number that precedes the title of the bug fix to
+query the Microsoft Knowledge Base for an article about that bug.
+
+1.16.1 Service Pack 1
+   Q126497: Limiting the Number of Recipients of a Message
+   Q135459: Event Error 251: Fatal Internal MTA Error Occurred
+   Q136786: IMC Sends NDR and OOF Messages to Bulk Mailing Lists
+   Q136807: MTA Error: Too Many ECBs Processed in One Thread
+   Q137699: Cannot Send X.400 Delivery Reports Through French ADMD
+   Q139643: Error Writing Log Information to SA
+   Q139858: Initial Directory Replication Too Long
+   Q140338: Directory Crashes with Dr. Watson in DETAILS.C
+   Q140448: Errors Processing Incoming Replication Messages
+   Q140974: MTA NDR's Mail with FTBP Attachments from HP Openmail
+   Q140975: Event ID 4037. An Exception has Occurred...
+   Q140976: Unable to Start the Association Due to Resource Shortage
+   Q141135: MSExchangeMSMI NDR Error EventID 2568
+   Q141970: AT MTA Will Over Utilize CPU When Processing Message Subject
+            Containing 0xD
+   Q142257: MTA ERROR: MTA Database XFER-IN Thread
+   Q142258: MTA Exception Error on Service Shutdown
+   Q142260: IMC Sends Messages in Rich Text Erroneously
+   Q142261: IMC Restest Utility Debug Option
+   Q142262: Display of Public Folder Summary causes Access Violation
+   Q142266: Cannot Create PC Mail <NET/PO> Style SMTP Proxies via DirSync
+   Q142916: MTA Stops Making Associations and Generatea a 2171 Error
+   Q143186: MTA PerfMon Instances limited to 53 Instances
+   Q143197: IMC Generating Pending Delivery Notification on Queued Read
+            Receipts
+   Q143236: Unable to Change Password via Client
+   Q146473: Attachment with Name of Charset=ISO-2022-JP
+   Q146509: MTA May Stop with Site Connector Removed
+   Q146537: DSA Queues Too Many Initial Synchronizes at Startup
+   Q146567: IMC Leaves Messages with Addresses > 255 Characters in MTS-OUT
+   Q146598: Messages are Stuck in MTS-OUT
+   Q147459: IMC Does Not Use the Resent-From Field
+   Q147521: MTA Crashes with a Large Recipient List
+   Q147821: Installing Server into Large Existing Site is Slow
+   Q149579: MTA Error: Database Object Not in Use
+
+1.16.2 Service Pack 2
+   Q140932: IMC: Resent-from Headers Using Oldest Information
+   Q140933: SMTP Proxy Address Generated Incorrectly
+   Q140934: IMC: NDR is Held Until Timeout Period has Expired
+   Q140935: IMC: Ending 821 Session Prematurely
+   Q140936: System Attendant Crash During GWART Calculation
+   Q140937: MTA: Misuse of Activity-discard & -interrupt Reason-code
+   Q140938: MTA: Incorrect Encoding of Per-recipient-indicator for German
+            Conformance
+   Q140939: French Screenshots in German EXCHDOC.HLP
+   Q140940: IMC: 821 Routing on Email Addresses Causes Delivery Failure
+   Q140941: Identifying Exportable Client Versions
+   Q140942: IMC: FWD Rule on IMC Admin Mailbox Causes Message Loop
+   Q140943: Can't Open Attachments Sent From AppleTalk Mail
+   Q140944: Dirsync Server Not Processing Addresses with no Address Type
+   Q140945: MTA: Crash with Error 251
+
+Note: The Readme.txt file is incorrect. The next Q Number should really be
+      Q140946.
+
+   Q145789: Microsoft Mail Interchange Hang During DirSync
+   Q140947: Store: Number of Active Client Logons Perfmon Counter Doesn't
+            Work
+   Q140948: Messages Sent to Public Folder With Reply Rule Through IMC
+            Disables Rule
+   Q140949: WFW Exchange Client Can't Fax ASCII Messages Due to Bad Phone
+            Number
+   Q140951: DXA Generates Multiple SMTP Proxies For PC Mail Addresses
+            During Dirsync
+   Q140952: Exchange Toolbar Buttons Missing After Upgrading from 16 bit to
+            32 bit Client
+   Q140953: Fax Gateway NDRs Messages Addressed Using Fax Template
+   Q140954: Win16 "SETUP /q" Fails to Create a Default Profile
+   Q140955: Win16 Can't Open Attachments Contained in "MIME\no RTF"
+            Originated Msgs
+   Q140956: MTA: Incorrectly Aborts Connection After Legitimate RTSE
+            Activity
+   Q140957: MTA: Event ID 9405 Occurs
+   Q140958: MTA: Incorrect user of Default Dialogue-mode
+   Q140959: MTA: Incorrect Buffering of X.121 Address for X.25
+   Q140960: French ADMD doesn't accept Read Receipts from French Exchange
+   Q140961: Duplicate Entries in PC Mail GAL
+   Q140962: MSMI: Access Violation when RTF Contains Codepage Change
+   Q143377: Cannot Open Custom Recipient in Administrator
+   Q145585: Migrated MS Mail 3.x X400 PAB Entries NDR w/ Bad Address
+
+Note: The Readme.txt file is incorrect. The next line should be deleted.
+
+   Q145789: Microsoft Mail Interchange Hang During DirSync
+   Q145794: 1993 Private Extension Support on Per-Message Envelope
+   Q146183: Optimizer Deletes EDB*.LOG Files When Given Invalid Path
+   Q146455: Generated SMTP Addresses for Duplicate Mailboxes
+   Q146676: DXA Appends 001 to Display Names in the GAL
+   Q146681: DXA Improperly Appending 001 to Friendly Names in the GAL
+   Q147245: Dial Up Networking Not Find Mail for PC Networks PO
+   Q150927: MTA Continuously Dialing RAS Connection
+   Q152344: Winsock Application Starts When Exchange Client Starts
+   Q152862: IMC: Specify Host Dialog in Admin Doesn't Keep Changes
+   Q152863: IMC: Generates Empty Body on S/MIME Messages
+   Q152864: IMC: Doesn't Handle Multiple Comments in 822 Addresses
+            Correctly
+   Q152865: Remote Mail View, "Last Update" Time is not Saved
+   Q152866: No Command to Import MMF on MIPS or Alpha
+   Q152867: Backfilling Public Folders is Taking a Long Time
+   Q152868: Max. Event Log Level for Incoming Replication Crashes Store
+   Q152869: Store May Crash When Opening Server Replication Status Page
+   Q152870: Store: Event ID 2024
+   Q152871: Backfill of Public Folders not Always Deleting Folders when it
+            Should
+   Q152872: S+: Err Msg: "Your message could not be sent, the schedule is
+            being used by someone else"
+   Q152873: Command Line Migration Fails if Control File does not Contain
+            FldOwner Entry
+   Q152874: MTA NDR's All Messages Sent in Year 2000
+   Q152875: Err Msg: "Failure to Send to Embedded DL with Delivery
+            Restrictions"
+   Q152876: MTA Hung After Deletion of X.400 Connectors
+   Q152877: MTA: Event IDs 1004, 1008, 1198, and 1277 Occurs
+   Q152878: Perfwiz Setting Maximum # of Concurrent Read Threads Set to
+            1717986810 for DS
+   Q152879: S+: Can't Write to Appointments in 1.0 CAL Files
+   Q152880: Cannot Re-install on a BDC Using a Service Account in the
+            Domain
+   Q152881: Sending Encrypted Mail to DL with Hidden Recipients Fails
+   Q152882: IMC: Leaving Unnecessary Files in Work Directory
+   Q152883: Selecting 'OK' on IMC Properties Dialog Causes Termination in
+            German Admin
+   Q152884: "Can't View Store Instance Page if there are More than 15,000
+            Public Folders"
+   Q152885: Problems Copying Public Folder Favorite to the Public Folder
+            Store
+   Q152886: Message Tracking Time Stamp is Wrong
+   Q152887: Poor Admin Performance when you have Thousands of Public
+            Folders
+   Q152888: Unable to Upgrade MMF with Extended Characters via Profile
+            Wizard
+   Q152889: Body of Encrypted Message not Sent when Storage Limit is Hit
+   Q152890: KCC Taking over 6 Hours to Complete
+   Q152891: IMC: User Notifications of Queued Mail Always Contains Every P1
+   Q152892: Store Reports Network Errors Talking to System Attendant
+   Q152893: Performance Problem with Schedule+ Free/Busy Folder
+   Q152894: Store Crashes when Passing more than 32k of Data to the Event
+            Viewer
+   Q152895: Unable to Migrate PABs from Appletalk Mail Users
+   Q152896: MTA: Taking a Long Time to Startup When There are a Lot of
+            Messages in the Queue
+   Q152897: MTA: Event IDs 8511 and 8640 Occurs
+   Q152898: MTA: Access Violation in RPC DMOD
+   Q152899: MTA: Crash in RPC Security Processing
+   Q152900: MTA: Event ID 248 Occurs
+   Q152901: MTA: Event ID 1209 Occurs
+   Q152902: Schedule+ Hangs Due to Possible Network Problems
+
+Additional query words: servpack SP2 bug fix qfe compact disc
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

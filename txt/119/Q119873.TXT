@@ -1,0 +1,89 @@
+DOCUMENT:Q119873  16-MAY-2002  [visualc]
+TITLE   :FIX: Incorrect Use of #pragma Pack Causes C1001 Errors
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0,4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC100bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling code that uses #pragma pack() to pop an ID that has not been
+pushed after successfully popping an ID that was pushed, the compilers listed
+above will generate:
+
+   fatal error C1001: INTERNAL COMPILER ERROR
+
+In addition, this error will be followed by a message similar to
+
+   (compiler file 'msc1.cpp', line 902)
+   Please choose the Technical Support command on the Visual C++ Help menu, or
+   open the Technical Support help file for more information
+
+NOTE: In Microsoft Visual Studio .NET, you receive a C4160 warning instead of the
+error message, so you can compile and run the program.
+
+RESOLUTION
+==========
+
+Pop only IDs that have been previously pushed onto the compiler's internal
+stack.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the bug:
+
+Sample Code
+-----------
+
+   /* packfail.c
+
+   Compile options needed: none
+   */ 
+
+   #pragma pack(push, a)
+   #pragma pack(push, b, 4)
+   #pragma pack(pop, b)
+   #pragma pack(pop, value)
+
+Additional query words: kbVC400bug 8.00 9.00 buglist1.00 buglist2.00 buglist8.00 buglist9.00 10.00 10.10 10.20
+
+======================================================================
+Keywords          : kbCompiler kbVC100bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,2.0,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

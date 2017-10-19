@@ -1,0 +1,59 @@
+DOCUMENT:Q103906  26-OCT-2000  [pcmail]
+TITLE   :PC DOS: Err Msg: Notice 80: Failure to Create Folder
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1, 3.0, 3.2, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a folder in version 2.1, 3.0, or 3.2 of Microsoft Mail for PC
+Networks, MS-DOS workstation, you may receive the following error:
+
+   Notice 80: Failure to create folder.
+
+CAUSE
+=====
+
+This error occurs if the SERIALNO.IDX file is not available or accessible.
+
+RESOLUTION
+==========
+
+To resolve this problem, either unlock the file using the appropriate network
+utility or restore the file from a backup copy. The most recent backup copy
+should be safe for restoration with the consideration that folders cannot be
+created without this file being available.
+
+
+Additional query words: 2.10 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:2.1,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

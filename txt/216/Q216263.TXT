@@ -1,0 +1,76 @@
+DOCUMENT:Q216263  10-AUG-2001  [winnt]
+TITLE   :Windows NT 4.0 Evaluation Edition Prompts for Clock Setting
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows NT 4.0 Evaluation Edition (Workstation, Server,
+or Server Enterprise Edition), you may receive the following prompt during the
+final stage of Setup:
+
+   Windows NT Setup
+
+   The date and time indicated by your computer's clock appear to Setup to be
+   inaccurate, which may affect proper operation of this evaluation version of
+   Windows NT.
+
+After you click OK, you can modify the date and time settings.
+
+CAUSE
+=====
+
+This behavior can occur if you install an older version of Windows NT 4.0
+Evaluation Edition after December 31, 1998.
+
+RESOLUTION
+==========
+
+Click OK when you are prompted to verify the clock settings, and then click OK
+to accept the current clock settings. After you do so, Windows NT 4.0 Evaluation
+Edition will function normally for the full 120-day evaluation period.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in earlier Windows NT 4.0
+Evaluation Edition products.
+
+This behavior does not occur with the current Windows NT 4.0 Evaluation Edition
+products.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,88 @@
+DOCUMENT:Q96645  19-OCT-2000  [pcmail]
+TITLE   :PC DOS: 3.0 MS-DOS Workstation Update Disk 1 [3.5, 720K]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the directory listings of the version 3.0 Microsoft Mail for
+PC Networks, MS-DOS workstation, 3.5-inch Update Disk 1.
+
+ Volume in drive B is MSMAIL30
+ Volume Serial Number is 2541-07D7
+
+Directory of B:\ 
+
+DRIVER       <DIR>     06-12-92  12:00a
+MAIL         <DIR>     06-12-92  12:00a
+MONITOR      <DIR>     06-12-92  12:00a
+INSTALL  EXE     20509 06-12-92  12:00a
+        4 file(s)      20509 bytes
+
+Directory of B:\DRIVER
+
+.            <DIR>     06-12-92  12:00a
+..           <DIR>     06-12-92  12:00a
+SNAPSHOT BIN     53882 06-12-92  12:00a
+        3 file(s)      53882 bytes
+
+Directory of B:\MAIL
+
+.            <DIR>     06-12-92  12:00a
+..           <DIR>     06-12-92  12:00a
+ENGMAI   GLB     18304 06-12-92  12:00a
+MAIL     EXE    253284 06-12-92  12:00a
+        4 file(s)     271588 bytes
+
+Directory of B:\MONITOR
+
+.            <DIR>     06-12-92  12:00a
+..           <DIR>     06-12-92  12:00a
+ENGMON   GLB      4096 06-12-92  12:00a
+FLAGDOWN COM         7 06-12-92  12:00a
+HOTKEY   EXE      8465 06-12-92  12:00a
+MICRO    EXE     12492 06-12-92  12:00a
+MONITOR  EXE     65756 06-12-92  12:00a
+OPERATOR EXE     50060 06-12-92  12:00a
+POPUP    COM         7 06-12-92  12:00a
+REMOVEIT COM         7 06-12-92  12:00a
+REMOVEOP COM         7 06-12-92  12:00a
+       11 file(s)     140897 bytes
+
+Total files listed:
+       22 file(s)     486876 bytes
+                      231424 bytes free
+
+Additional query words: 3.00 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

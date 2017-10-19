@@ -1,0 +1,67 @@
+DOCUMENT:Q107815  31-OCT-1999  [win3x]
+TITLE   :NET START FULL Invokes Intel SatisFAXtion Fax Popup
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the SatisFAXtion Fax Popup utility (FAXPOP) is loaded in your AUTOEXEC.BAT
+file, the NET START FULL command invokes that utility. Pressing the ESC key to
+cancel it returns you to the MS-DOS command prompt. The NET START FULL command
+then proceeds to run.
+
+CAUSE
+=====
+
+The SatisFAXtion Fax Popup utility is a terminate-and-stay-resident program that
+allows you to send faxes from any MS-DOS-based application (such as MS- DOS
+Editor or MS-DOS Shell). When NET START FULL is run, FAXPOP traps it and
+executes its own fax-sending utility.
+
+WORKAROUND
+==========
+
+At this time, the only way to work around this problem is to remove FAXPOP from
+your AUTOEXEC.BAT file.
+
+NOTE: Changing IRQs or I/O addresses does not correct this problem.
+
+MORE INFORMATION
+================
+
+Intel SatisFAXtion is manufactured by Intel, a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 3.11 3rdparty popup cas board
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

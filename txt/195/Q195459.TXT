@@ -1,0 +1,75 @@
+DOCUMENT:Q195459  30-NOV-1999  [homekids]
+TITLE   :Tutor Err Msg: Insufficient Available Space to Install Program
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft My Personal Tutor: Sam's Hide and Seek Adventure, version 1.0 
+ - Microsoft My Personal Tutor: Sky's Space Station Voyage, version 1.0 
+ - Microsoft My Personal Tutor: Turru's Daring Sea Quest, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install a 1st & 2nd grade My Personal Tutor program, you
+may receive an error message stating that you do not have sufficient available
+space on your hard disk to install the program.
+
+NOTE: You may receive this message even if sufficient space is available on your
+hard disk.
+
+CAUSE
+=====
+
+This behavior can occur if you previously installed a My Personal Tutor program
+on a hard disk that does not have sufficient available space to install an
+additional My Personal Tutor program.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, install all My Personal Tutor 1st &
+2nd grade programs on the same hard disk.
+
+NOTE: This hard disk must have sufficient available space for all of the My
+Personal Tutor programs you want to install.
+
+
+MORE INFORMATION
+================
+
+For more information about the amount of hard disk space required to install the
+My Personal Tutor 1st & 2nd grade programs, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q192834 My Personal Tutor 1st & 2nd Grade: Minimum System Requirements
+
+Additional query words: mskids mpt drive free requires memory
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup mskids kbimu 
+Technology        : kbHomeProdSearch kbKidsSearch kbMPTSam kbMPTSky kbMPTTurru
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

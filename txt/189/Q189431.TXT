@@ -1,0 +1,162 @@
+DOCUMENT:Q189431  21-JUL-2001  [visualc]
+TITLE   :DOC: Setting ActiveProject and ActiveConfiguration Properties
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual C++ documentation shows an incorrect syntax for setting the
+ActiveConfiguration and ActiveProject properties. For example, the following
+macro written in Visual Basic Scripting Edition:
+
+      ActiveProject = "MyProjectName"
+
+causes the following run-time error:
+
+   Unable to write read-only property.
+
+This error gives the impression that the property is read-only which is not the
+case. Use the following syntax instead:
+
+      Set ActiveProject = Projects("MyProjectName")
+
+MORE INFORMATION
+================
+
+The ActiveProject property
+--------------------------
+
+The ActiveProject Property topic in the Visual C++ documentation (see REFERENCES
+section) incorrectly shows the syntax for setting the ActiveProject property. It
+states:
+
+      object.ActiveProject [=string]
+
+where object is an expression that evaluates to an Application object and string
+is the name of the project minus any file extension. When you access the
+ActiveProject property of the Application object, you can omit object because
+the name of the Application object is implied when you access its properties and
+methods.
+
+If you use the following VBScript macro:
+
+      ActiveProject = "MyProjectName"
+
+the following error occurs:
+
+   Unable to write read-only property.
+
+This error gives the impression that the property is read-only which is not the
+case. Use the following syntax for setting the ActiveProject property instead:
+
+      Set ActiveProject = Projects(string)
+
+where string is the name of a project contained in the current workspace minus
+any file extension. It is case sensitive.
+
+The following is an alternative syntax:
+
+      Set ActiveProject = Projects.Item(n)
+
+where n is an integer from 1 to the total number of projects in the current
+workspace.
+
+Another alternative is:
+
+      Set ActiveProject = prj
+
+where prj is a variable already set to a project object.
+
+The ActiveConfiguration property
+--------------------------------
+
+The ActiveConfiguration Property topic in the Visual C++ documentation (see
+REFERENCES section) incorrectly shows the syntax for setting the
+ActiveConfiguration property. It states:
+
+      object.ActiveConfiguration [=string]
+
+where object is an expression that evaluates to an Application object and string
+is the name of a valid configuration in the active project. When you access the
+ActiveConfiguration property of the Application object, you can omit object
+because the name of the Application object is implied when you access its
+properties and methods.
+
+If you use the following VBScript macro:
+
+      ActiveConfiguration = "MyConfiguration"
+
+the following error occurs:
+
+   Unable to write read-only property.
+
+This error gives the impression that the property is read-only which is not the
+case. Use the following syntax for setting the ActiveConfiguration property:
+
+      Set ActiveConfiguration = ActiveProject.Configurations(n)
+
+where n is an integer from 1 to the total number of configurations in the active
+project.
+
+An alternative syntax is:
+
+      Set ActiveConfiguration = ActiveProject.Configurations.Item(n)
+
+where n is an integer from 1 to the total number of configurations in the active
+project.
+
+Another alternative is:
+
+      Set ActiveConfiguration = config
+
+where config is a variable already set to a configuration object.
+
+REFERENCES
+==========
+
+Visual C++ Books Online: Developer Studio Environment User's Guide; Automating
+Tasks in Developer Studio; Developer Studio Objects; Reference: Developer Studio
+Objects; Properties; ActiveProject Property
+
+   URL mk:@ivt:istudio/F3/D10/S1BACE.htm
+
+Visual C++ Books Online: Developer Studio Environment User's Guide; Automating
+Tasks in Developer Studio; Developer Studio Objects; Reference: Developer Studio
+Objects; Properties; ActiveConfiguration Property
+
+   URL mk:@ivt:dsug/F22/D24/S11300.htm
+
+Additional query words: kbAutomation kbIDE kbVC500
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : WINNT:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

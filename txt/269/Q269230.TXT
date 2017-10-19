@@ -1,0 +1,125 @@
+DOCUMENT:Q269230  14-NOV-2000  [word97]
+TITLE   :WD97: Hard to Control Mouse When You Select Text
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the mouse to select text, you may not be able to control the
+selection when the mouse pointer reaches the bottom of the screen. As a result,
+unwanted text may be selected.
+
+
+CAUSE
+=====
+
+This functionality is by design in Microsoft Word and depends upon your
+processor speed and video refresh rate. Currently, there is no customization
+available to control the speed of text selection when you use the mouse.
+
+WORKAROUND
+==========
+
+To work around this issue, use one or more of the following methods appropriate
+for your situation.
+
+Method 1: Use the Mouse and the SHIFT Key
+-----------------------------------------
+
+Click at the beginning of the text that you want to select, use the vertical
+scroll bar to scroll to the end of the text that you want, and then hold down
+SHIFT and click.
+
+For more information about how to select a large block of text, click "Contents
+and Index" on the Help menu, click the Index tab in Microsoft Word Help, type
+the following text
+
+   selecting text and graphics
+
+and then double-click the selected text to go to the "Select text and graphics by
+using the mouse" topic. If you are unable to find the information you need, ask
+the Office Assistant.
+
+Method 2: Use the Mouse and the F8 Key
+--------------------------------------
+
+Click at the beginning of the text that you want to select, press F8 to activate
+the Extend Selection mode (EXT appears on the status bar), use the vertical
+scroll bar to scroll to the end of the text that you want, and then click at the
+end of the text that you want to select.
+
+You also can adjust the selection. If too much text is selected, click at the end
+of the text that you want to include within the selection. Word automatically
+adjusts the selection. If too little text is selected, click at the end of the
+additional text. Word automatically adjusts the selection.
+
+To turn off the Extend Selection mode, but to keep the text selected, press ESC.
+
+For more information about how to select by using shortcut keys, click "Contents
+and Index" on the Help menu, click the Index tab in Microsoft Word Help, type
+the following text
+
+   selecting text and graphics
+
+and then double-click the selected text to go to the "Select text and graphics by
+using shortcut keys" topic. If you are unable to find the information you need,
+ask the Office Assistant.
+
+Method 3: Use the Keyboard
+--------------------------
+
+Position the insertion point at the beginning of the text that you want to
+select. Hold down the SHIFT key, and use the directional arrow keys to select
+the text that you want.
+
+Method 4: Use a Microsoft IntelliMouse Wheel Mouse
+--------------------------------------------------
+
+NOTE: This is not a complete solution to the problem and may require the use of
+two hands when you select text.
+
+Move the mouse pointer into the left margin, next to the text that you want to
+select. The mouse pointer should be an arrow pointing northeast. Hold the left
+mouse button, and rotate the mouse wheel until the text that you want is
+selected.
+
+For additional information about obtaining help with troubleshooting Microsoft
+IntelliMouse problems, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q196012 Pointing Devices Troubleshooter Available
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

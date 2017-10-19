@@ -1,0 +1,66 @@
+DOCUMENT:Q130752  12-NOV-1999  [pcmail]
+TITLE   :PC DB: Use of the ALIAS.TPL
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ALIAS.TPL is a text file that describes how an alias entry will look in the
+Personal Address Book (PAB) for the custom Postoffice/Network address template
+window.
+
+MORE INFORMATION
+================
+
+When you add a new address to your PAB, for a user on another Mail for PC
+Networks address, you will have the following four entries to complete:
+
+ - Alias:
+
+ - Mailbox:
+
+ - Postoffice:
+
+ - Network:
+
+The alias field in the dialog is controlled by the ALIAS.TPL file. The shipped
+ALIAS.TPL file is read only and should be in the following format:
+
+   Alias:~9~30~ULNP~~
+
+For more information on the format of a template file, refer to version 3.2 of
+Microsoft Mail for PC Networks "Administrators Guide," pages 145-147.
+
+
+Additional query words: 3..20 3.20a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

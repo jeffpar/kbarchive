@@ -1,0 +1,145 @@
+DOCUMENT:Q131300  15-FEB-2000  [foxpro]
+TITLE   :PRB: Clicking a Disabled Item in a List Box Selects It
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One or several items in a list box are disabled. If a disabled element is
+clicked and then enabled, it becomes the selected item in the list.
+
+CAUSE
+=====
+
+The value property of the combo box determines which item is displayed. This
+property is modified when you scroll through a list and the LISTINDEX property
+varies. Clicking any item in a list, even if it is disabled, changes the
+LISTINDEX property. If the element is then enabled, the LISTINDEX property is
+still set to this item, and the list box value is set to the value of the
+element.
+
+WORKAROUND
+==========
+
+An alternative is to compare the elements referred by the LISTINDEX and the
+VALUE properties. If the VALUE property of the combo box is different from the
+value of the element referred by LISTINDEX, reset the listindex property to the
+value property. You can then enable the list element.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following example program illustrates a workaround to the behavior
+described. It displays a form with a combo box and a command button. The command
+button enables all of the items in the list. When the button is clicked, the
+program checks if the value of the combo box corresponds to the listindex. If it
+does not, the listindex is reset.
+
+To run this sample program, copy and paste the code into a program file (.PRG
+file), and run it. When the list is displayed, click the third element, which is
+disabled. Then click the command button. The element displayed in the text part
+of the combo box does not change.
+
+Example Workaround Code
+-----------------------
+
+   oForm1=CREATE('myform')
+   oForm1.SHOW
+
+   *:*************************************************************************
+   *:
+   *: Class: myform  BaseClass: FORM
+   *:
+   *:*************************************************************************
+   DEFINE CLASS myform AS FORM
+         Dimension astep(4,1)
+         WindowType=1
+         ADD OBJECT combo1 AS COMBOBOX WITH HEIGHT = 37,LEFT = 48,;
+           STYLE = 2,TOP = 24
+         ADD OBJECT cmdenable AS COMMANDBUTTON WITH TOP = 72,LEFT = 48,;
+           HEIGHT = 37,WIDTH = 157,CAPTION = "Enable Steps 2-4"
+         PROCEDURE cmdenable.CLICK
+            DO CASE
+            * The case statement takes into account the fact that the
+            * value can be a character. It then goes through the list
+            * and finds the index that corresponds to the current value
+            * and resets the listindex.
+            CASE TYPE('THISFORM.COMBO1.VALUE')="C"
+               IF THISFORM.combo1.VALUE <> ;
+                  THISFORM.combo1.LIST(THISFORM.combo1.LISTINDEX)
+                  i = 1
+                  lexit=.F.
+                  DO WHILE i <= THISFORM.combo1.LISTCOUNT AND lexit=.F.
+                     IF THISFORM.combo1.LIST(i)=THISFORM.combo1.VALUE
+                        nNewIndex=i
+                        lexit=.T.
+                     ENDIF
+                     i=i+1
+                  ENDDO
+                   THISFORM.combo1.LISTINDEX=nNewIndex
+                  ENDIF
+
+            CASE TYPE('Thisform.combo1.value')="N"
+                IF THISFORM.combo1.VALUE<> THISFORM.combo1.LISTINDEX
+                  THISFORM.combo1.LISTINDEX=THISFORM.combo1.VALUE
+               ENDIF
+            ENDCASE
+
+            FOR m.i = 2 TO 4
+               THisform.aStep[m.i, 1] = STRTRAN(Thisform.aStep[m.i, 1], '\')
+            ENDFOR
+
+            THISFORM.combo1.REQUERY
+
+         ENDPROC
+
+         PROCEDURE INIT
+            This.aStep[1,1] = 'Step 1'
+            This.aStep[2,1] = '\Step 2'
+            This.aStep[3,1] = '\Step 3'
+            This.aStep[4,1] = '\Step 4'
+            THIS.combo1.ROWSOURCETYPE = 5
+            THIS.combo1.ROWSOURCE = 'Thisform.aStep'
+            THIS.combo1.VALUE = 1
+         ENDPROC
+      ENDDEFINE
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

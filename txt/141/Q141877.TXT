@@ -1,0 +1,45 @@
+DOCUMENT:Q141877  08-FEB-2000  [foxpro]
+TITLE   :What Is Visual FoxPro 3.0a?
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0a
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro version 3.0a is a Double Byte Character Set (DBCS) enabled release
+for the Far East only. Visual FoxPro 3.0a is not available in the United States
+market. Visual FoxPro version 3.0b is a worldwide release that supports DBCS and
+is also the version that synchonizes Visual FoxPro with the final releases of
+Win32s and Open DataBase Connectivity (ODBC).
+
+Additional query words: 3.00a VFoxWin
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : WINDOWS:3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

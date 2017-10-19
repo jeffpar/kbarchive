@@ -1,0 +1,70 @@
+DOCUMENT:Q258688  11-MAY-2000  [iis]
+TITLE   :WebDAV Doesn't Work with Site Server P&M Forms or Cookie Auth.
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Site Server version 3.0 
+ - Microsoft Site Server version 3.0, Commerce Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use WWW Distributed Authoring and Versioning (WebDAV) with Microsoft
+Site Server Personalization and Membership (P&M), and your Web site requires
+Membership Authentication, neither the Forms Authentication method nor the
+Cookie Authentication method can be used. WebDAV does not support these
+authentication methods.
+
+MORE INFORMATION
+================
+
+The following Membership Authentication types are used with both the Forms
+Authentication and Cookie Authentication methods:
+
+ - Anonymous
+
+ - Basic
+
+ - Distributed Password Authentication (DPA)
+
+Workaround:
+
+If you use WebDAV for the entire Web site, and either the Forms Authentication
+method or the Cookie Authentication method is used, create a second Web site
+that is configured to use the same content directories, but with a valid and
+supported authentication method.
+
+NOTE: The second site is accessible by the Web developers and other
+administrators only.
+
+Additional query words: iis 5,webdav,authentication,membership,site server
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbSiteServSearch kbiisSearch kbAudDeveloper kbiis500 kbSiteServ300 kbSiteServ300Search
+Version           : winnt:3.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

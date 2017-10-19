@@ -1,0 +1,84 @@
+DOCUMENT:Q146875  09-MAR-2000  [foxpro]
+TITLE   :PRB: Setup Wizard Fails on Files with no Name
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Setup Wizard in Visual FoxPro, the Setup Wizard may display the
+following error message:
+
+   An invalid output handle error occurred in LcbCompressFile().
+
+After you click OK, the Setup Wizard terminates.
+
+CAUSE
+=====
+
+This error message occurs when a file included in the distribution tree has no
+name. A file with just an extension and no name (for example, .txt) is
+considered to be a valid file under all the supported operating systems.
+However, the Setup Wizard is not designed to handle files of this type.
+
+NOTE: This has also been reported to occur when a file in the distribution tree
+has a long file name.
+
+WORKAROUND
+==========
+
+Make certain that all the files in the distribution tree have a name.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a file named .txt
+
+2. Run the Setup Wizard, and specify the distribution tree to be the directory
+   that contains the .txt file.
+
+3. Continue through the rest of the steps in the Setup Wizard, and click Finish.
+   The error message will occur. After you click the OK button, the Setup Wizard
+   terminates.
+
+Additional query words: VFoxWin LCB
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

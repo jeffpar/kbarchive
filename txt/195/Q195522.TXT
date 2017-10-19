@@ -1,0 +1,130 @@
+DOCUMENT:Q195522  23-SEP-1999  [sna]
+TITLE   :Host Password May Be Revealed By Manipulating SSCP-LU Session
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Single sign-on can be manipulated to disclose the password on an SSCP-LU
+session.
+
+CAUSE
+=====
+
+The 3270 single sign-on feature relies on keyword substitution in the data
+stream and is not completely secure. This optional feature should not be
+deployed in environments requiring the maximum achievable security because there
+is no way to guarantee that the host screen to which the keyword is directed
+will not echo back the clear text password to the user as though it were
+ordinary data.
+
+The result is that an individual could potentially display the password by
+walking up to an unattended terminal, pressing the PA1 key to get an SSCP
+session, then type MS$SAMEP. The host will respond with an error message similar
+to the following:
+
+   <password> is not a defined command.
+
+However, if you press the PA1 key to get into SSCP-LU mode, then type MS$SAMEP on
+the SSCP session, SNA Server will replace the keyword, no matter how many
+messages have gone before on the session. Normally, SNA Server is counting the
+number of RUs since a Bind, and refuses to substitute the keyword with an actual
+password if more than a particular number RUs have gone by. For most hosts, this
+covers the logon sequence. The usual user experience is this:
+
+ - Log on with 3270 single sign-on.
+
+ - Get connected to an application (CICS,TSO...) and then type "MS$SAMEP"
+   (without the quotation marks) at an MS-DOS command line, SNA Server does not
+   substitute in your password.
+
+You then get a host error similar to the following:
+
+   Unknown command, MS$SAMEP.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server versions 4.0 and 4.0
+Service Pack 1. This problem was corrected in the latest SNA Server version 4.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The update for this issue insures that SNA Server does not perform password
+keyword substitution for longer than 30 seconds (default) from the start of each
+LU session. This is ample time for an automated script to log on to most host
+applications. However, this should not be regarded as a complete solution to the
+security problem.
+
+This update also entails a change from prior releases of the product in behavior
+of logon scripts containing MS$SAMEU and MS$SAMEP keywords. In the past, the
+user could log off the host application but stay connected to the SSCP session
+(or host session manager), then initiate a new host logon using such a script.
+Now, the user will have to drop the LU session from the terminal emulator (or
+other client application) and open a new client- server session to notify the
+node to resume replacing keywords.
+
+With the update, by default, the timer will be set to 30 seconds, but you can
+reconfigure it in the registry using the new registry entry
+3270SSOReplaceTimer.
+
+1. If registry entry:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaServer
+      \Parameters\3270SSOPostReplaceCount
+
+   is defined, node counts this number of RUs (on PLU-SLU session only)
+
+2. Else if registry entry:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaServer
+      \Parameters\3270SSOReplaceTimer
+
+   is defined, node uses its value (number of seconds)
+
+3. Else, if neither is defined, node uses timer algorithm with default value of
+   30.
+
+As per the above algorithm, if both are defined, the count will be used rather
+than the timer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+Version           : WINDOWS:4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

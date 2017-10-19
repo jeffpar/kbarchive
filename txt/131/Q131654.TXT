@@ -1,0 +1,55 @@
+DOCUMENT:Q131654  21-OCT-2000  [homemm]
+TITLE   :500 NATIONS: Make Wallpaper Replaces Previous Wallpaper
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:win31kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 500 Nations, version 1.0, on platform(s):
+    - the operating system: Microsoft Windows NT, on platform(s):
+       - the operating system: Microsoft Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you choose the Make Wallpaper option in 500 Nations, your current 500
+Nations wallpaper is replaced. If you want to save your current wallpaper, you
+must rename it before choosing Make Wallpaper.
+
+MORE INFORMATION
+================
+
+Choosing Make Wallpaper creates a file called NATIONS.BMP. The file is located
+in your WINDOWS subdirectory or folder. The same name is assigned every time you
+choose the Make Wallpaper option.
+
+If you want to keep your current 500 Nations wallpaper, rename the NATIONS.BMP
+file before selecting another picture from the Gallery.
+
+Additional query words: kbhowto 1.00 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          : win31 kbfaq
+Technology        : kbHomeProdSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

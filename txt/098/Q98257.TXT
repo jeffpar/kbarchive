@@ -1,0 +1,74 @@
+DOCUMENT:Q98257  20-NOV-1999  [pcmail]
+TITLE   :PC WFW: 1.0a Microsoft Schedule+ Disk 2 [3.5, 720K]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory of the version 1.0a Microsoft Schedule+ for
+Windows Disk 2 - Program Setup, 3.5-inch format.
+
+ Volume in drive B is DISK1
+ Volume Serial Number is 241E-3310
+ Directory of B:\ 
+ 
+MSCOMSTF DL_     37804 10-06-92  12:00a
+MSCPYDIS DL_      6912 10-06-92  12:00a
+MSCUISTF DL_     18068 10-06-92  12:00a
+MSDETSTF DL_     13582 10-06-92  12:00a
+MSINSSTF DL_     37007 10-06-92  12:00a
+MSREMIND EX_     17344 10-06-92  12:00a
+MSREMIND WA_      8698 10-06-92  12:00a
+MSSCHED  DL_    122837 10-06-92  12:00a
+MSSHLSTF DL_      8302 10-06-92  12:00a
+MSUILSTF DL_      3621 10-06-92  12:00a
+README   TX_      1466 10-06-92  12:00a
+SCHDPLUS EX_    263840 10-06-92  12:00a
+SETUP    EXE     24656 10-06-92  12:00a
+SETUP    INI       149 10-06-92  12:00a
+SETUP    IN_      1137 10-06-92  12:00a
+SETUP    LST       614 10-06-92  12:00a
+SETUP    MS_      8614 10-06-92  12:00a
+SETUP1   IN_      4296 10-06-92  12:00a
+SETUP2   IN_      6804 10-06-92  12:00a
+VER      DL_      5653 10-06-92  12:00a
+WAVES    DL_      7109 10-06-92  12:00a
+WIZARD   DL_      7233 10-06-92  12:00a
+_MSTEST  EX_     49647 10-06-92  12:00a
+_RESTART EX_      6622 10-06-92  12:00a
+ 
+       24 file(s)     662015 bytes
+
+
+Additional query words: 3.00 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3 kbMailScheduleX300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

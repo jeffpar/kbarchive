@@ -1,0 +1,227 @@
+DOCUMENT:Q248098  06-JUN-2001  [vbwin]
+TITLE   :PRB: ErrMsg: Method Call on MTS Object from VB App Fails
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.0,4.0,6.0
+OPER/SYS:
+KEYWORDS:kbMTS kbMTS200 kbVBp600 kbOSWinNT400sp3 kbGrpDSVBDBkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows NT 4.0 
+ - Microsoft Transaction Server 2.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to invoke a method on a Transactional Microsoft Transaction
+Server (MTS) object from a Visual Basic client application, the following error
+message is displayed:
+
+   Runtime error -2147164145(800e400f): Method [methodname] of object
+   [objectname] failed.
+
+CAUSE
+=====
+
+MTS components use the services of the Microsoft Distributed Transaction
+Coordinator (MS DTC) to incorporate transactional functionality. Invoking
+methods of an MTS component that call transactional methods of the Objectcontext
+object, such as SetComplete() and SetAbort(), may cause the error message. This
+error message occurs if methods of the MTS component are called, and the MS DTC
+service has not been started on the Windows NT-based computer that is hosting
+the component and running Transaction Server.
+
+RESOLUTION
+==========
+
+Start the MS DTC service on the Windows NT-based computer that is running
+Transaction Server in one of two ways:
+
+Method 1:
+
+1. On the Start menu, point to Settings, and then click Control Panel.
+
+2. Double-click Services to open the Services dialog box.
+
+3. Select MSDTC in the list of Services.
+
+4. Click Start to initiate the service.
+
+Method 2:
+
+If the Windows NT-based computer also runs Microsoft SQL Server, use the SQL
+Server Service manager to start MS DTC.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+MTS uses the services of MS DTC to support and incorporate the transactional
+functionalities of components that are registered in it. Therefore, the MS DTC
+service must be active for transactional methods of MTS components to be
+executed successfully. The error message in the "Symptoms" section is not a bug
+in any of the Microsoft products listed in the Applies to section of this
+article.
+
+Steps to Reproduce Behavior
+---------------------------
+
+NOTE: The following example is included for illustration purposes only. It uses
+the SQL 7.0 Pubs database, and assumes that the Windows NT Option Pack is
+installed on the computer that is running Visual Basic. The error message
+documented in this article can be reproduced by invoking the method of any
+transactional MTS component with the MS DTC service stopped on the MTS Server
+computer.
+
+Creating the Sample Visual Basic COM Component:
+
+1. Create a new ActiveX DLL project in Visual Basic.
+
+2. Rename the Class module from Class1 to clsAuthor, and set its
+   MTSTransactionMode property to 2-RequiresTransactions.
+
+3. Save the project as MTSPubs.vbp, and save the class module as clsAuthor.cls.
+
+4. On the Project menu, click References, and then set a reference to Microsoft
+   ActiveX Data Objects 2.X Library.
+
+5. Make the following declarations in the General Declarations section of the
+   'clsAuthor' Class module:
+
+   Dim cn As ADODB.Connection
+   Dim rs As ADODB.Recordset
+
+6. Initialize and open the ADO Connection object in the Class_Initialize() event
+   as shown in the following code. Replace the connection string with one that
+   points to your SQL Server.
+
+   Private Sub Class_Initialize()
+     Set cn = New ADODB.Connection
+     cn.ConnectionString = "Provider=SQLOLEDB;Data Source=RAVINDK1;Initial Catalog=pubs;Trusted_Connection=yes"
+     cn.Open
+   End Sub
+
+7. Add a method called GetAuthors that constructs and returns a disconnected
+   recordset from the Pubs database that contains records from the Authors table
+   as follows:
+
+   Public Function GetAuthors() As Object
+     Set rs = New ADODB.Recordset
+     Set rs.ActiveConnection = cn
+     rs.LockType = adLockBatchOptimistic
+     rs.CursorLocation = adUseClient
+     rs.CursorType = adOpenStatic
+     rs.Open "Select au_fname, au_lname from Authors"
+     Set rs.ActiveConnection = Nothing
+     Set GetAuthors = rs
+     GetObjectContext.SetComplete
+   End Function
+
+8. Save the project, on the File menu, choose Make MTSPubs.dll to compile the
+   DLL, and then close Visual Basic.
+
+Installing the Component in MTS:
+
+1. Start MTS Explorer, and create a package.
+
+2. Add the component you just created in Visual Basic by right-clicking on the
+   Components folder of the package. Under New, click Component, click Install
+   New Components, and then select the DLL.
+
+3. After the component has been registered in MTS Explorer, check its properties
+   to ensure that its Transaction attribute has been set to Requires
+   Transactions.
+
+Setting Up the Visual Basic Client to Reproduce the Problem:
+
+1. Create a standard EXE project in Visual Basic to implement the client
+   application that will invoke the MTS component and call its GetAuthors method
+   to retrieve the disconnected recordset. On the Project menu, click
+   References, and then set a reference to the Microsoft ActiveX Data Object 2.X
+   Library.
+
+2. Place a Listbox control on the default Form1, place a Command button beneath
+   the list box, and set its Caption property to Get Authors.
+
+3. Make the following declarations in the General declarations section of the
+   form module:
+
+   Dim mauthor As Object
+   Dim aurset As ADODB.Recordset
+
+4. Place the following code in the Form_Load() event to create an instance of
+   the MTSPubs.clsAuthor MTS object:
+
+   Private Sub Form_Load()
+    Set mauthor = CreateObject("MTSPubs.clsAuthor")
+   End Sub
+
+5. Place the following code in the Click event of the Command button. This code
+   calls the GetAuthors method of the MTS object and returns the disconnected
+   recordset that contains the records from the Authors table in the SQL 7.0
+   Pubs database.
+
+   Private Sub Command1_Click()
+     Set aurset = mauthor.GetAuthors
+     List1.Clear
+     Do While Not aurset.EOF
+       List1.AddItem aurset.Fields("au_fname")
+       aurset.MoveNext
+     Loop
+     aurset.Close
+   End Sub
+
+6. Save the project as MTSClnt, and save the form as frmTest. Make sure that the
+   MS DTC Service is not running on the Windows NT-based computer. You can shut
+   it down by using the SQL Server Service Manager if the SQL server to which
+   you are connecting is installed on the MTS computer. You can also stop the
+   Msdtc.exe process from the Windows NT task manager.
+
+7. Run your client project, MTSClnt, and note that an instance of your MTS
+   object is created in the Form_Load() event. Then the form, frmTest, is
+   displayed.
+
+8. Click on the Command button labeled Get Authors, and note that you receive
+   the following error message:
+
+   Runtime error -2147164145(8004e00f): Method 'GetAuthors' of object
+   '_clsAuthor' failed.
+
+9. Click End to stop the execution of the project, and then return to the design
+   environment.
+
+10. Start the MS DTC service on the MTS computer, rerun the project, and note
+   that when you click on the Get Authors Command button, the list of authors
+   (first name, and last name) is displayed in the list box on the form.
+
+Additional query words: VB 6.0 VB6
+
+======================================================================
+Keywords          : kbMTS kbMTS200 kbVBp600 kbOSWinNT400sp3 kbGrpDSVBDB kbfaq
+Technology        : kbVBSearch kbMTSsearch kbAudDeveloper kbOSWinSearch kbOSWinNT400 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMTS200 kbOSWinNTSearch
+Version           : :2.0,4.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

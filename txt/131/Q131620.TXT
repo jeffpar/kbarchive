@@ -1,0 +1,58 @@
+DOCUMENT:Q131620  21-MAY-2001  [schedplus]
+TITLE   :Filename Extension Remains .SC2 When Exporting
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you export a Schedule+ file and choose the Save File As Type option from
+the browser, the filename extension remains .SC2, rather than changing to the
+file type chosen, such as *.SCH, *.TXT, or *.*.
+
+CAUSE
+=====
+
+This is by product design.
+
+When you export a Schedule+ file, the default export name is the user ID with the
+extension .SC2; for example, USERID.SC2.
+
+RESOLUTION
+==========
+
+If you choose the Save File As Type option with the default filename in the
+filename box, you must modify the extension manually.
+
+
+Additional query words: schedule plus 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

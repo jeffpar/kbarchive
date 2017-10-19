@@ -1,0 +1,63 @@
+DOCUMENT:Q135009  06-FEB-2002  [winnt]
+TITLE   :DCS EM320W Terminal Emulator Slows Down Programs and Printing
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Your programs and print jobs slow down significantly when Diversified Computer
+Systems (DCS) EM320W terminal emulator (a 16-bit Windows program) is running in
+the background.
+
+
+CAUSE
+=====
+
+Your DCS EM320W terminal emulator program prevents your other programs from
+getting CPU time.
+
+
+WORKAROUND
+==========
+
+To work around this problem, quit EM320W when you are using other programs.
+
+For additional information, call Diversified Computer Systems technical support
+at (303) 447-9251.
+
+
+
+Additional query words: prodnt process em320w performance
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

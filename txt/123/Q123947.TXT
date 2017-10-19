@@ -1,0 +1,77 @@
+DOCUMENT:Q123947  23-OCT-1999  [foxmisc]
+TITLE   :PRB: Unable to Change Field Type in MODIFY STRUCTURE
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+WARNING: The information in this article has not been confirmed or tested
+by Microsoft. Some or all of the information in this article has been taken
+from unconfirmed customer reports. ANY USE BY YOU OF THE INFORMATION
+PROVIDED IN THIS ARTICLE IS AT YOUR OWN RISK. Microsoft provides this
+information "as is" without warranty of any kind, either expressed or
+implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+SYMPTOMS
+========
+
+The field type cannot be changed in the MODIFY STRUCTURE dialog for a database
+what was opened exclusively.
+
+CAUSE
+=====
+
+Adobe Type Reunion Manager is installed.
+
+NOTE: Adobe Type Reunion Manager is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+WORKAROUND
+==========
+
+Here are two workarounds:
+
+ - Turn off all extensions and then modify the structure.
+
+-or-
+
+ - Hold down the shift key while clicking the Field Type popup in the MODIFY
+   STRUCTURE dialog to change the Field Type.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: FoxMac 2.50b
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

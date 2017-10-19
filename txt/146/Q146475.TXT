@@ -1,0 +1,51 @@
+DOCUMENT:Q146475  17-DEC-1999  [schedplus]
+TITLE   :Vertical Line Appears in a Project Name
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select a Project Name on the To Do tab, a line appears over the word
+Project. The other projects that are not selected do not have this line through
+the word Project.
+
+WORKAROUND
+==========
+
+Change the size of the grid's columns; for example, move the column separator
+between the check column and the description to the right away from the word
+Project. Now when the Project line is selected, the line will not appear over
+the word Project.
+
+Additional query words: 7.0 to do gridline schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

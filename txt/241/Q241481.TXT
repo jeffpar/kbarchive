@@ -1,0 +1,99 @@
+DOCUMENT:Q241481  11-JAN-2001  [vbwin]
+TITLE   :BUG: Internal Protection Fault When Using Format Function
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbVBp kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Format function to format a numeric character sequence, and
+include a format sequence that includes a numeric value to be used in the Null
+section of the format, you may get this error:
+
+   The instruction at "0x65396ac3" referenced memory at "0x00000028". The memory
+   could not be "read"
+
+NOTE: The exact memory locations may vary from system to system.
+
+RESOLUTION
+==========
+
+To work around this problem, you need to escape all of the characters in the
+fourth section of the numeric format. For example, instead of:
+
+   format$(Null,"#,##0.00;;;0.00")
+
+you should do:
+
+   format$(Null,"#,##0.00;;;\0\.\0\0")
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project. Form1 is created by default.
+
+2. Add a Command Button to the form. It is Command1.
+
+3. Add the following code to the form:
+
+   Private Sub Command1_Click()
+        Msgbox format$(Null,"#,##0.00;;;0.00")
+   End Sub
+
+4. Run the Code. When you press Command1, you should get an error that says:
+
+   The instruction at "0x65396ac3" referenced memory at "0x00000028". The memory
+   could not be "read".
+
+   NOTE: The exact memory locations may vary from system to system.
+
+REFERENCES
+==========
+
+Numeric formats are covered in the Visual Basic Documentation under the section:
+"Different Formats for Different Numeric Values (Format Function)"
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVBp kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,95 @@
+DOCUMENT:Q124730  17-DEC-2000  [win95x]
+TITLE   :Tape Backup Units Supported in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article lists the tape backup units supported by the Windows 95 Backup
+program.
+
+MORE INFORMATION
+================
+
+The Windows 95 Backup program supports the following tape backup units:
+
+ - QIC 40, QIC 80, and QIC 3010 tape drives made by the following companies, and
+   connected to the primary floppy disk controller:
+
+      Colorado Memory Systems (CMS)
+      Conner
+      IOmega
+      Wangtek (only in "hardware phantom mode" or "Drive B sharing mode")
+
+ - CMS QIC 40, QIC 80, and QIC 3010 tape drives connected to a parallel port.
+
+The following items are not compatible with Backup:
+
+ - Drives connected to a secondary floppy disk controller or to an accelerator
+   card.
+
+ - Archive drives.
+
+ - Irwin AccuTrak tapes.
+
+ - Irwin drives.
+
+ - Mountain drives.
+
+ - QIC Wide tapes (Backup supports QIC Wide drives using QIC 80 tapes).
+
+ - QIC 3020 drives.
+
+ - SCSI tape drives.
+
+ - Summit drives.
+
+ - Tape drive controllers of any type.
+
+ - Travan drives.
+
+Note that some floppy-controller-driven tape backup units require firmware
+revisions to work properly with the Windows 95 Backup program.
+
+
+REFERENCES
+==========
+
+For additional information about tape backup units supported by Backup, view the
+"Tape drives that are compatible with Backup" online Help topic in Backup
+(BACKUP.EXE) Help.
+
+
+Additional query words: scuzzy 3rdparty quarter inch cartridge hardware compatibility list hcl w95hwfaq
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

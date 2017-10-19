@@ -1,0 +1,54 @@
+DOCUMENT:Q189040  19-SEP-1999  [sna]
+TITLE   :How to Print to File for Readable File Format
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+When you send a print job to a file using print service, the file will
+contain Graphical Device Interface (GDI) control characters and will be
+illegible unless a Printer Definition Table (PDT) is specified. If a PDT is
+used, the data still contains some control codes but can be displayed with
+any text editor, such as WordPad.
+
+It is also possible to use the Windows NT Generic/Text Only print driver to
+print legible data to a file without using a PDT. The Generic/Text Only
+print driver will not generate any printer commands in the file.
+
+When a PDT is used, Windows GDI is not used. The PDT defines the
+information used to generate the print output.
+
+For additional information about printing with SNA Server, please refer to
+the Microsoft SNA Print Service white paper. A copy of this white paper may
+be obtained from Microsoft's SNA web site.
+
+Additional query words: snaprint
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

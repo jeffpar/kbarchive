@@ -1,0 +1,64 @@
+DOCUMENT:Q124387  13-JUN-2001  [winmisc]
+TITLE   :DOCERR: How to Use the MIXERLINECONTROLS dwControlType Flag
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+The Microsoft Windows Sound System version 2.0 Driver Development Kit
+Release Notes incorrectly describe how the dwControlType member of the
+MIXERLINECONTROLS structure should be set before the
+mixerGetLineControls function is called. Instead of the
+MIXER_GETLINECONTROLSF_ONEBYID flag, it should reference the
+MIXER_GETLINECONTROLSF_ONEBYTYPE flag.
+
+The error occurs in 2 places in the Release Notes, page 127 and page 181.
+In each place, the paragraph for the dwControlType member begins with:
+
+   "Specifies the control type of the control desired. The mixerGetlineControls
+   function uses this member with the MIXER_GETLINECONTROLSF_ONEBYID flag to
+   retrieve the first control of the specified type on the line specified by the
+   dwLineID member of the MIXERLINECONTROLS structure..."
+
+The paragraph should begin with:
+
+   "Specifies the control type of the control desired. The mixerGetlineControls
+   function uses this member with the MIXER_GETLINECONTROLSF_ONEBYTYPE flag to
+   retrieve the first control of the specified type on the line specified by the
+   dwLineID member of the MIXERLINECONTROLS structure..."
+
+NOTE: In Windows NT version 3.5, the Mixer Manager API (Application
+Programming Interface) has been incorporated into the Win32 SDK, and the
+Mixer Manager SPI (Service Provider Interface) has been incorporated into
+the Win32 DDK. The documents for these tools give correct descriptions for
+the items discussed in this article.
+
+Additional query words: 2.00 WSS DDK Mixer Manager MIXERLINECONTROLS
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

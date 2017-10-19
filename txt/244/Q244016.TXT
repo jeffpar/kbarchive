@@ -1,0 +1,67 @@
+DOCUMENT:Q244016  18-JUL-2001  [ssafe]
+TITLE   :HOWTO: Back Up a Visual SourceSafe Database
+PRODUCT :Microsoft SourceSafe
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbSSafe600 kbFAQ kbDSupport kbGrpDSSSafe kbSsafe600FAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to back up a Visual SourceSafe database.
+
+MORE INFORMATION
+================
+
+1. Make sure that no one is using the database and that Analyze will not begin
+   to run while you are backing up the database.
+
+2. Copy the following folders:
+
+   
+
+   \DATA
+   \Temp
+   \USERS
+
+3. Copy the User.txt and Srcsafe.ini files.
+
+When you follow this procedure, you can do a full restore of the database by
+replacing the existing Users, Temp and Data folders as well as the Users.txt and
+Srcsafe.ini files with the copied versions.
+
+You can also use this procedure to move the database to another location by
+placing the copied files into a new folder. To open the database, on the File
+menu in the Visual SourceSafe Explorer, click Open SourceSafe Database to browse
+to the new location.
+
+Additional query words: move
+
+======================================================================
+Keywords          : kbSSafe600 kbFAQ kbDSupport kbGrpDSSSafe kbSsafe600FAQ 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

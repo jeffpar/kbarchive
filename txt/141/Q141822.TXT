@@ -1,0 +1,73 @@
+DOCUMENT:Q141822  07-FEB-2002  [homekids]
+TITLE   :3D Movie Maker: Default Text Color Not Available in Color List
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a Story Box or Credits Box in 3D Movie Maker, the default color
+for the text is bright yellow. Bright yellow, however, is not available in the
+Letter Color list in the Words tools.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in 3D Movie Maker, version 1.0. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+STEPS TO REPRODUCE PROBLEM
+--------------------------
+
+1. Create a new movie.
+
+2. Click the Words tab to display the Words tools.
+
+3. Click Word Box tool, which is labeled "ABC."
+
+4. Click the Story Box.
+
+5. Click anywhere on the scene.
+
+6. Type some text into the Story Box.
+
+7. Click the Letter Color tool and choose a color.
+
+8. Highlight the text to change its color.
+
+9. Click the Letter Color tool again. Note that the default color for the text
+   is not available in the list.
+
+Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional colors change unavailable can't 3dmm coloring colours colour colouring 3dmovie moviemaker homekids homekid
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,87 @@
+DOCUMENT:Q297420  10-MAY-2001  [msnetwork]
+TITLE   :Forgot Password Feature in MSN Explorer
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You want to sign in to MSN Explorer, but you do not remember your password.
+
+CAUSE
+=====
+
+You have forgotten your password.
+
+RESOLUTION
+==========
+
+To reset your password
+
+1. Start MSN Explorer.
+
+2. Click the Forgot Your Password link in the upper-right corner of the Welcome
+   screen.
+   A pop-up window will appear stating We need to connect to the Internet to
+   complete the requested task. Do you want to connect now?
+
+3. Click the Yes button.
+   MSN Explorer will now dial and connect. Once connected, a dialog box appears.
+
+4. Type your e-mail name, Country/Region, State, and Zip Code, and then click
+   Continue.
+   MSN Explorer will now validate the information to make sure that it matches
+   the information for the account. If so, you will be taken to the next dialog
+   box.
+
+5. Type the answer to the secret question.
+
+6. Type the new password.
+   Note: The passwords entered in these fields must match. Passwords also must be
+   between 8 and 16 characters, and contain only letters and numbers.
+
+7. Click Continue.
+   A dialog box will now appear informing you that the password has been changed
+   successfully.
+
+8. Click OK.
+   You should now be able to sign in with the new password.
+   Note: If for any reason this procedure does not work for you, you can reset
+   your password by contacting Customer Service 1-800-386-5550.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q90956  23-OCT-1999  [foxmisc]
+TITLE   :Specifying a Memo Field Text Editor for FoxBASE+
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MS-DOS:2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for MS-DOS, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The WP variable in the CONFIG.FX file specifies the text editor for memo fields
+in FoxBASE+. This variable may specify a third-party editor to create and edit
+memo fields.
+
+For example, to edit memo fields with Microsoft Word, place the following line in
+the CONFIG.FX file:
+
+      WP=C:\WORD\WORD.EXE
+
+To load a work processor with FoxBASE+, enough conventional memory to load both
+FoxBASE+ and the word processor is required. (FoxBASE+ uses 512K and requires a
+minimum of 360K free memory.) FoxBASE+ cannot remove itself from memory to free
+space for the word processor. When the user attempts to load the word processor
+and not enough memory is free, an
+
+   Insufficient Memory
+
+error occurs.
+
+To make additional memory available, modify the AUTOEXEC.BAT and CONFIG.SYS files
+to remove unnecessary drivers and terminate-and-stay-resident programs from
+memory.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxBASE210DOS kbFoxBASESearch
+Version           : MS-DOS:2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,89 @@
+DOCUMENT:Q110616  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator: Diamond Video Card Settings
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Diamond Computer Systems technical support has confirmed that the following
+devices operate with Flight Simulator 5.0 in these configurations:
+
+Card Name                 Flight Simulator SVGA Setting
+---------                 -----------------------------
+
+Diamond Viper
+
+     1 MB                 VGA (Cannot support SVGA in Flight Simulator
+                          5.0.)
+     2 MB                 VESA 1.2 (Requires VPRMODE version 2.04 or
+                                    later. Available from Diamond)
+
+Diamond Stealth
+
+     VRAM                S3 86C911
+     24                  S3 86C911
+     PRO                 S3 86C911
+     32 (PCI)            TSENG 4000
+     64 (PCI)            S3 86C911
+
+VGA mode
+
+Diamond Speed Star
+
+     VGA                 TSENG 4000
+     PLUS                TSENG 4000
+     24                  TSENG 4000
+     24X                 Paradise SVGA
+     PRO                 Cirrus Logic 542X
+     VGA Hicolor         TSENG 4000
+
+Diamond Turbo
+
+     VGA                 TSENG 4000
+
+MORE INFORMATION
+================
+
+For more information, contact Diamond Computer Systems:
+
+ - Technical support: (408) 325-7100
+ - BBS support 2400 only: (408) 325-7080
+ - BBS support 9600 only: (408) 325-7175
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: kbhowto 5.00 flightsim fltsim dos fs5
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

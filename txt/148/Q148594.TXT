@@ -1,0 +1,107 @@
+DOCUMENT:Q148594  18-DEC-2000  [win95x]
+TITLE   :"NameNumericTail=0" Value Causes Problems for Some Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+If you add the "NameNumericTail=0" value to the registry (as documented on page
+688 of the Microsoft Windows 95 Resource Kit) and then run Windows 95 Setup,
+Microsoft Plus! Setup, or the Add/Remove Programs tool in Control Panel,
+programs in the Program Files folder may no longer work correctly.
+
+For example, if you run The Microsoft Network or Microsoft Exchange, you may
+receive a "Program not found" error message with an option to locate the
+program.
+
+CAUSE
+=====
+
+When you add the "NameNumericTail=0" value to the registry, Windows 95 Setup,
+Microsoft Plus! Setup, or the Add/Remove Programs tool may change the short name
+for the Program Files folder. For example, if you run the Add/Remove Programs
+tool after you add the "NameNumericTail=0" value to the registry, the short name
+for the Program Files folder may be changed from Progra~1 to Programf.
+
+If the short name for the Program Files folder is different from the name that
+the program you are trying to run expects, the program may not be able to locate
+the folders and files it needs.
+
+RESOLUTION
+==========
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+To correct this problem, follow these steps:
+
+1. Delete the value "NameNumericTail=0" from the following registry key:
+
+      Hkey_Local_Machine\System\CurrentControlSet\Control\FileSystem
+
+2. Using Windows Explorer or My Computer, rename the Program Files folder to
+   Programs.fld.
+
+3. Rename the Programs.fld folder to Program Files.
+
+Note that renaming the folder forces a new short name for the folder to be
+generated.
+
+MORE INFORMATION
+================
+
+Various tools and components installed in the Program Files folder may use short
+file names internally or during installation. If the short name for the Program
+Files folder is different from the short name expected by a tool or component,
+the problems described in this article may occur. This problem can affect any
+program installed in the Program Files folder.
+
+The "NameNumericTail=0" value is not supported in Windows 95. Although this
+registry value works as expected, it can cause problems for Windows 95
+components.
+
+Additional query words: ms-dos 8.3 alias osr2 osr1 netmeeting internet explorer
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

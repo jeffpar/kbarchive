@@ -1,0 +1,83 @@
+DOCUMENT:Q189776  11-DEC-1999  [foxpro]
+TITLE   :BUG: Beautify "Data type mismatch" w/ SET UDFPARM TO REFERENCE
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Beautify in Visual FoxPro's Editor or in a code window, you might
+get the following error message:
+
+   Data type mismatch.
+
+CAUSE
+=====
+
+The command SET UDFPARMS TO REFERENCE was run.
+
+RESOLUTION
+==========
+
+Before using Beautify, run the following command:
+
+   SET UDFPARMS TO VALUE
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type the following in the Command Window:
+
+   " SET UDFPARMS TO REFERENCE" (without the quotation marks)
+
+2. Edit a program file, right-click in the edit window, and select Beautify from
+   the shortcut menu.
+
+3. Click Run in the Beautify Options dialog box.
+
+RESULT: A "Data Type mismatch" error message appears, and the code is not
+"Beautified."
+
+Additional query words: kbVFp500abug kbTools kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

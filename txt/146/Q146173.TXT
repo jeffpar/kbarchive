@@ -1,0 +1,60 @@
+DOCUMENT:Q146173  22-OCT-2000  [exchange]
+TITLE   :XCLN: Task Created in Appointment Book has no Created By Stamp
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:7.0,7.5; winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+ - Microsoft Schedule+, versions 7.0, 7.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you create a task in another user's Appointment Book with Access Control
+List (ACL) Owner and Delegate Owner privileges, the 'Created by' stamp will not
+be left on the task. However, the 'Created by' stamp will be there if the ACL's
+are Create, Modify, and Delegate.
+
+
+MORE INFORMATION
+================
+
+The only differences between the two sets of ACLs are that the owner' ACLs allow
+the selected user to modify all parts of your schedule, including private items,
+and that Owners and Delegate Owners can change user access permissions for your
+schedule. This is for informational purposes only.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 4.0 and 5.0 of
+Microsoft Exchange Server. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbSchedule750
+Version           : WINDOWS:7.0,7.5; winnt:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

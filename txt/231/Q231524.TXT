@@ -1,0 +1,67 @@
+DOCUMENT:Q231524  14-SEP-2001  [automap]
+TITLE   :MapPoint 2000: Unexpected E-mail Program Starts When Sending Map
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Send To on the File menu to send a map from Microsoft MapPoint
+2000, an unexpected e-mail program may start.
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft Internet Explorer is not configured to use
+your preferred e-mail program.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure Internet Explorer to use your preferred e-mail
+program. To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Internet or Internet Options.
+
+3. Click the Programs tab.
+
+4. In the Mail box, click the e-mail program you want to use.
+
+5. Click OK.
+
+6. Close Control Panel, and then restart the computer.
+
+Additional query words: mp2000 electronic email wrong outlook express
+
+======================================================================
+Keywords          : kbenv kbinterop kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

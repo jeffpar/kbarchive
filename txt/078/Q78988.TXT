@@ -1,0 +1,79 @@
+DOCUMENT:Q78988  02-JAN-2001  [win95x]
+TITLE   :Using a Sharp JX Printer with Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When printing TrueType fonts from Microsoft Windows version 3.1 to a Sharp JX
+printer, you may receive the following error message:
+
+   Data Loss Error
+
+There currently is a Windows 3.1 printer driver for the Sharp JX-9500PS printer
+ver.1.10 available from Sharp.
+
+WORKAROUND
+==========
+
+To work around this problem, configure the printer driver to print TrueType
+fonts as graphics:
+
+1. Run Control Panel and choose the Printers icon.
+
+2. Select the HP LaserJet II series printer driver being used.
+
+3. Choose the Setup button.
+
+4. Choose the Options button.
+
+5. Select the Print TrueType As Graphics check box.
+
+6. Choose the OK button twice to save the changes.
+
+MORE INFORMATION
+================
+
+Sharp Technical Support recommends using the HP LaserJet II as a primary
+emulation mode and the Apple LaserWriter as a secondary emulation as a
+workaround if the above driver is not available.
+
+Sharp JX printers are manufactured by a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+
+Additional query words: 3.0 3.0a post script ps jx 9500 postscript non-postscript 9500H win95
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbWin95search kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

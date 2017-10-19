@@ -1,0 +1,66 @@
+DOCUMENT:Q170902  07-SEP-2001  [sms]
+TITLE   :SMS: Printed SMS Query Results Do Not Match Screen Results
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbprint kbsmsAdmin smsadmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Systems Management Server Administrator program to print a hard
+copy of query results, the printed output contains empty lines for some entries.
+
+CAUSE
+=====
+
+The last object in the defined Query Result Format is using an attribute that
+contains an empty or null value.
+
+WORKAROUND
+==========
+
+To work around this problem, move the Query Result Format object up in the
+Format list so that it is no longer the last object queried.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbprint kbsmsAdmin smsadmin 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

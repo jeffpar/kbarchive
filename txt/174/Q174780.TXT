@@ -1,0 +1,51 @@
+DOCUMENT:Q174780  12-JUN-2002  [iis]
+TITLE   :Filtering Adobe Acrobat Files for Use with Index Server
+PRODUCT :Internet Information Server
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, Index Server version will not filter Adobe Acrobat (.pdf) files.
+Index Server does not ship with an Adobe Acrobat filter.
+
+MORE INFORMATION
+================
+
+Adobe now has a filter for Acrobat (.pdf) files. To find the filter, visit the
+following Adobe Web site:
+
+   http://www.adobe.com/support/downloads/detail.jsp?ftpID=1276
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : :2.0,3.0
+Hardware          : ALPHA x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

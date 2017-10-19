@@ -1,0 +1,67 @@
+DOCUMENT:Q164958  04-AUG-2001  [visualc]
+TITLE   :FIX: Error Occurs When Running PTK Setup
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:4.2
+OPER/SYS:
+KEYWORDS:kbsetup kbEEdition kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Visual C++ 4.2 Enterprise Edition includes a copy of the SQL Server
+Developer Edition CD. When you run the setup for SQL Programmer's ToolKit (PTK)
+off of the CD, the following message appears:
+
+   Please insert the Media labeled: PTK Diskette #1 into <your CD drive>
+
+The error only occurs when you run the setup on Windows NT 4.0.
+
+CAUSE
+=====
+
+This is a problem with the setup program.
+
+RESOLUTION
+==========
+
+To work around this problem, copy the PTK directory off of the CD to your hard
+drive and then run the setup from there.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem does not exist with the SQL Server
+Developer Edition included with the Visual C++ 5.0 Enterprise Edition.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbEEdition kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : WINDOWS:4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

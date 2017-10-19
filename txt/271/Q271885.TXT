@@ -1,0 +1,80 @@
+DOCUMENT:Q271885  23-OCT-2000  [sms]
+TITLE   :SMS: Scripted Site Server Install Allows Lower Case Site Code
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a Setup script to install Systems Management Server (SMS), you are
+able to specify the site code in lowercase within the script file. This
+information is then inserted into the site control file.
+
+Another symptom of this issue is a large quantity of status message "ID=4613"
+warnings for the SMS Component Summarizer component.
+
+CAUSE
+=====
+
+Not all of the SMS components are case-insensitive.
+
+WORKAROUND
+==========
+
+Make sure to use only uppercase when specifying a site code in a scripted site
+server installation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+The Site Component Manager (SMS_COMPONENT_STATUS_SUMMARIZER) expects all
+incoming status messages to be in uppercase. When it receives an incoming status
+message with the site code in lowercase, all incoming status messages from that
+site are deemed invalid, and are placed into the retry queue. Each time it
+places a message into the retry queue, it creates another invalid status
+message, which restarts the cycle. This causes the disk to start filling up very
+quickly, and causes the processor to continue churning indefinitely. This could
+impact your newly installed site within minutes or hours depending on how much
+available disk space is available.
+
+This problem does not occur in a non-scripted installation of a site server
+because the wizard does not accept a lowercase site code.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

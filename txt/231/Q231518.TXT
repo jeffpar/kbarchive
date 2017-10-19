@@ -1,0 +1,70 @@
+DOCUMENT:Q231518  06-AUG-2002  [automap]
+TITLE   :MP2000: Empty Quotation Marks in Error Message When Linking Data
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to link data from an open Microsoft Excel workbook to Microsoft
+MapPoint 2000, you may receive an error message similar to the following:
+
+   File: <filename>
+
+   There was a problem opening this file: <filename>. The Microsoft Jet
+   database engine cannot open the file ''. It is already opened exclusively by
+   another user, or you need permission to view this data.
+
+Note that the file name does not appear between the single quotation marks in the
+error message.
+
+CAUSE
+=====
+
+This behavior can occur if you are running MapPoint 2000 on a Microsoft Windows
+NT 4.0-based computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, close the Excel workbook that contains the data you want
+to link to MapPoint 2000 before you attempt to link the data.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft MapPoint 2000.
+
+Additional query words: mp2000 quotes blank nt4 winnt
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

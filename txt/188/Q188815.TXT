@@ -1,0 +1,93 @@
+DOCUMENT:Q188815  30-APR-2002  [exchange]
+TITLE   :Notes Connector Error Msg: Unable to Find Path to Server
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to configure the Exchange 5.5 Notes Connector for Lotus Notes,
+using the Exchange Connectivity Administrator, you may receive one of the
+following error message:
+
+   LME-NOTES-NTSMEX(00a0) 2 41300:<Notes Package ID>: Client Access
+   <CLIENT>. Extended Reason String: Unable to find path to server
+
+   -or-
+
+   Failed to get a list of users from the lotus notes name and address book for
+   server <servername> notes returned error code 0x0803 unable to find
+   path to server.
+
+   -or-
+
+   Failed to get the list of users from the notes name and address book for
+   server name <servername> notes returned error code 0x0807
+
+These error messages occur even though the Lotus Notes client can connect to the
+Lotus Notes server.
+
+CAUSE
+=====
+
+These errors may be generated if duplicates of the Nnotes.dll file exist within
+the system path. The Exchange Notes Connector for Lotus Notes requires this
+file. By default, there should be only one instance of this .dll file on the
+Exchange Server computer's hard disk.
+
+This single instance of Nnotes.dll should be left in the default location, where
+the Notes client places it during Setup (in the \NOTES directory). If a copy of
+this .dll file resides in the \WINNT\SYSTEM32 directory, you may see the above
+errors.
+
+WORKAROUND
+==========
+
+Perform the following steps to work around this behavior:
+
+1. Use Windows Explorer to search for all the files named Nnotes.dll.
+
+2. Remove all instances of the Nnotes.dll file except the one that exists in the
+   \NOTES directory.
+
+3. Add <drive>:\NOTES to the system's PATH environment variable, where
+   <drive> is the drive letter such as C or D.
+
+4. Restart the Exchange Server computer for the change to take effect.
+
+After the server has been restarted, the Exchange Notes Connector for Lotus Notes
+should start and operate without the "Unable to find path to server" error.
+
+Additional query words: nnotes dll
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

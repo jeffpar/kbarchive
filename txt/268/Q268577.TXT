@@ -1,0 +1,66 @@
+DOCUMENT:Q268577  22-JUN-2001  [exchange]
+TITLE   :XADM: Directory Service Does Not Start with Event ID 1002
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you take a computer that is running Exchange Server 4.0 offline to replace
+the Ethernet card with an Fiber Distributed Data Interface (FDDI) card, and the
+WINS server stops responding, when you restart WINS and the Exchange Server
+computer, the directory service in Exchange Server may not start. The following
+event ID message may be logged in Microsoft Windows NT Event Viewer:
+
+   Event ID: 1002
+   Source: MSExchangeDS
+   Category: Internal Processing
+   Type: Error
+   Description: The Microsoft Exchange server database (EDB) could not be
+   initialized and returned error -550 unrecoverable error, the directory cannot
+   continue.
+
+RESOLUTION
+==========
+
+To resolve this behavior:
+
+1. Stop all Exchange Server services.
+
+2. Restore the directory service database from a tape backup.
+
+3. Restart all Exchange Server services.
+
+Additional query words: exch2kp2w
+
+======================================================================
+Keywords          : kberrmsg 
+Component         : Directory
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

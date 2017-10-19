@@ -1,0 +1,119 @@
+DOCUMENT:Q277016  11-JUN-2002  [winnt]
+TITLE   :Cannot Install Windows Services for UNIX 2.0 on Windows NT TS
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 2.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you attempt to install Windows Services for UNIX (SFU) 2.0 on Windows NT
+4.0 Terminal Server from a Terminal Server client session, the installation is
+not completed and you receive the following error message:
+
+   Error 26051: Installation of Common Administration ui elements failed
+
+If you attempt to install SFU locally from the Terminal Server console, when you
+run the Services for UNIX Administration tool from a Terminal Server client
+session, you receive the following error message:
+
+   An error has occurred in the script on this page.
+   Line: 61
+   Char: 5
+   Error: Server Execution Failed
+   Code: 0
+   URL: file://c:\sfu\admin\about.htm (This path changes depending on the
+   component you are trying to administer
+
+   Do you want to continue running scripts on this page?
+
+CAUSE
+=====
+
+This behavior occurs because the Web-Based Enterprise Management (WBEM) Class ID
+is not being configured as global.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To work around this issue, follow these steps:
+
+1. Start Notepad and type the following text in a new Notepad file:
+
+   "REGEDIT4
+
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Terminal
+   Server\Compatibility\CLSID\{8BC3F05E-D86B-11D0-A075-00C04FB68820}]
+   "fSystemGlobalClass"=dword:00000001" (without the quotation marks)
+
+2. Save the file as Sfu-ts.reg, and then quit Notepad.
+
+3. Copy the new file to the computer that is running Windows NT Terminal Server.
+
+4. Right-click the Sfu-ts.reg file, and then click Merge.
+
+After you apply this registry update, you can install SFU successfully from a
+Terminal Server client session. This update also enables remote administration
+through a Terminal Server client session.
+
+NOTE: Because of a related Windows Management Installation (WMI) issue that
+causes Mofcomp to attempt to write to the CD-ROM drive, you may also have to
+copy the SFU CD-ROM to a hard disk.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+WBEM is a unifying architecture that enables you to access data from a variety
+of underlying technologies, including Win32, WMI, Desktop Management Interface
+(DMI), and Simple Network Management Protocol (SNMP). WBEM is based on the
+Common Information Model (CIM) schema, which is an industry standard driven by
+the Desktop Management Task Force (DMTF).
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : :2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

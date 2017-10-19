@@ -1,0 +1,64 @@
+DOCUMENT:Q128570  05-NOV-1999  [pcmail]
+TITLE   :SMTP: Err Msg: 552 Error in Local Delivery
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the SMTPGATE.EXE program, the following error occurs:
+
+   ERROR SMTPPUT: 201- X - X - Failure submitting message to mail database
+
+   [tx] 552 Error in local delivery
+
+CAUSE
+=====
+
+The FILES= setting in your CONFIG.SYS file is set too low. The SMTPGATE.EXE
+program requires a large number of file handles; therefore, if the FILES=
+statement is set too low, the program cannot run properly.
+
+RESOLUTION
+==========
+
+Edit your CONFIG.SYS file and increase the FILES= statement; initially set
+FILES= to 40, and then increase the number as needed.
+
+MORE INFORMATION
+================
+
+In MS-DOS, the default value for the FILES= statement is 8. The highest possible
+value is 255.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

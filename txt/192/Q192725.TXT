@@ -1,0 +1,63 @@
+DOCUMENT:Q192725  22-OCT-2000  [exchange]
+TITLE   :XCLN: Forwarding Message, Scroll Bars Disappear on New Message
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you forward a message in Outlook Web Access (OWA) that contains a large
+amount of text, the vertical scroll bars may disappear in the new message. This
+behavior occurs only when using Internet Explorer 3.0 for the Macintosh or
+Internet Explorer 4.x for Windows 3.x. These symptoms do not occur with Internet
+Explorer for 32-bit platforms.
+
+WORKAROUND
+==========
+
+The only way to get to the text is to scroll with the arrow keys or to use the
+mouse to highlight and drag to the bottom on the message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

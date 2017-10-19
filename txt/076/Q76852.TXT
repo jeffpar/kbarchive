@@ -1,0 +1,43 @@
+DOCUMENT:Q76852  13-JUN-2001  [homemm]
+TITLE   :Cities Excluded from Encyclopedia Map of United States
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1991 edition 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+The pop-up map of the United States under the List of Maps in
+the Concise Columbia Encyclopedia has no city labels. There are
+red dots to indicate city locations, but no city labels.
+
+These city dots are only present in Bookshelf 1991 for Windows.
+
+Additional query words: USA cities wbk 1991 city dots
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin98 kbOSWinSearch kbHomeMMsearch kbBookshelfSearch kbBookShelf1991
+Version           : :1991 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

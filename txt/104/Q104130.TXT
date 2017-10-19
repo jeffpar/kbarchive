@@ -1,0 +1,59 @@
+DOCUMENT:Q104130  11-NOV-1999  [pcmail]
+TITLE   :PC Win: Import/Export Does Not Work with Extended Characters
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.0b of Microsoft Mail for Windows does not correctly import or export a
+folder with an extended character (such as the letter O with an umlaut) in the
+filename. The folder appears to be saved correctly, but the filename is not
+converted properly.
+
+CAUSE
+=====
+
+The function responsible for converting extended characters does not convert
+from CP850 (the MS-DOS code page for multi-lingual keyboard sets) to ANSI. As a
+result, the extended characters are lost.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.0b of Microsoft Mail
+for Windows. This problem was corrected in version 3.2 of Microsoft Mail for
+Windows.
+
+
+Additional query words: 3.00b foreign country ascii non-English
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300b
+Version           : WINDOWS:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

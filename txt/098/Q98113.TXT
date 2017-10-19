@@ -1,0 +1,56 @@
+DOCUMENT:Q98113  12-JUN-1999  [homegame]
+TITLE   :Playing as Guest in Tri-Peaks Does Not Register High Score
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Entertainment Pack, volume 3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you play as "Guest" in the Tri-Peaks program, it doesn't register your high
+score in the high score table. "Guest" is the default player name, which is
+meant to be used as a temporary player and will not register scores in the high
+score table.
+
+MORE INFORMATION
+================
+
+Workaround
+----------
+
+Use a name other than "Guest" if you want your high scores to register in the
+high score table.
+
+Additional query words: 1.00 TriPeaks name Tri Peaks Hi Score
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbWinEntPkSearch kbWinEntPk300
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

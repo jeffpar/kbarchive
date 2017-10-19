@@ -1,0 +1,146 @@
+DOCUMENT:Q305307  07-AUG-2001  [msnetwork]
+TITLE   :De-associating Child Accounts In MSN Explorer 6.1
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You attempt to add a new user in MSN Explorer, and you receive an error message
+stating that you have reached the published account size limit--nine accounts.
+You may or may not have nine accounts set up on your computer; any child
+accounts you may have set up and later deleted with MSN Explorer 6.0 are still
+associated with the primary MSN Internet Access account on our server records.
+
+CAUSE
+=====
+
+This is a known issue and the product team are working to resolve it.
+
+RESOLUTION
+==========
+
+Remove the child account from the computer that has your primary account set as
+the Account Manager.
+
+Note: This procedure only works with MSN Explorer 6.1. Deleting child accounts
+from MSN Explorer 6.0 does not de-associate them from the primary account. After
+you have de-associated one or more of the existing child-accounts in MSN
+Explorer 6.1, you will be able to add new users.
+
+To upgrade from MSN Explorer 6.0 to MSN Explorer 6.1
+
+Do one of the following:
+
+ - Go to http://explorer.msn.com and then click the Install It's FREE button.
+
+ - Sign in to MSN Explorer, click More Choices, click About MSN Explorer, click
+   More Info, and then click the Update Now link.
+
+Next, make sure that the primary MSN account is set as the account manager in MSN
+Explorer 6.1.
+
+To set the primary MSN account as the account manager in MSN Explorer 6.1
+
+ - On the Welcome screen, click the Add New User link to see if MSN Explorer
+   asks for the password of your MSN Internet Access account.
+
+If no account is set as the account manager, but the user tile for the account is
+present, you can set your account to be the account manager by temporarily
+changing the your connection settings.
+
+To set your account to be the account manager by temporarily changing the your
+connection settings
+
+1. On the Welcome screen, click Connection Settings.
+
+2. Click Change how to connect to the Internet, and then click Continue.
+
+3. Click MSN dial-up Internet Access, and then click Continue.
+
+4. Check that your dialing options are set correctly, and then click Continue.
+
+5. Follow the instructions for configuring an MSN dial-up connection.
+
+6. When asked which account you would like to upgrade, choose your MSN Internet
+   Access account.
+   After this process is complete, if you would like to go back to using another
+   method to connect to the Internet, follow the steps above to change the
+   connection settings, choosing Existing Internet Service Provider instead of
+   MSN dial-up Internet Access.
+
+If no account manager is set on your MSN Explorer, simply add the user tile for
+the account manager account. MSN Explorer 6.1 will detect a paid MSN Internet
+Access account, and will set this account as the account manager.
+
+If another account is already set as the account manager, do one of the
+following:
+
+ - Remove the tile for the other account
+
+ - Contact Technical Support to clear the account manager settings
+
+Next, you must de-associate child accounts.
+
+To de-associate child accounts
+
+1. Add a user tile for any child accounts that you want to de-associate.
+   Note: If you are not sure of all the associated child accounts you may have
+   had, please contact Technical Support.
+
+2. Sign in to MSN Explorer 6.1 with the user tile of the account manager
+   account.
+
+3. Click Help and Settings, click Accounts, and then click Remove Users.
+
+4. Click the Remove link beside any child account that you want to
+   de-associate.
+   You receive a prompt stating "Are you sure you want to remove this account?"
+
+5. Click OK.
+   A prompt appears stating that the account has been deleted.
+
+6. Click OK.
+   You will now be returned to the Remove Users window.
+
+7. Repeat steps 3-6 above to delete and de-associate any other child accounts
+   you may have.
+   Once the sub-accounts have been deleted and de-associated, you will be able to
+   add new users.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

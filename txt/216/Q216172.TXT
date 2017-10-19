@@ -1,0 +1,81 @@
+DOCUMENT:Q216172  18-DEC-1999  [exchange]
+TITLE   :XIMS: NNTP Event ID 11106 with MODE STREAM
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to set up an NNTP pull feed from Netscape to Microsoft Exchange
+Server, you get the following error messages: On Netscape:
+
+   [99/01/11 17:04.52] innxmit:Unknown reply to "mode stream" -- 501 usage: mode
+   reader
+
+On Exchange Server:
+
+   Event ID 11106
+   MSExchangeNNTP
+   Warning
+   - An NNTP client connected from (IP Address) issued too many invalid commands.
+   Dropping the connection.
+
+CAUSE
+=====
+
+Exchange Server 5.5 does not support the Mode Stream command but does support
+the Mode Reader command.
+
+WORKAROUND
+==========
+
+At this time, Exchange Server does not support the Mode Stream command. You can
+set up an NNTP push feed from Exchange Server to Netscape, which eliminates this
+problem.
+
+MORE INFORMATION
+================
+
+Information from Netscape
+-------------------------
+What are streaming feeds? 
+
+Streaming feeds are a new method of feeding articles between two
+news servers over NNTP. Streaming feeds are designed to feed articles more efficiently than standard methods. While streaming feeds are not an official part of the protocol yet, they are widely supported and enable significant performance enhancements.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

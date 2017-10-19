@@ -1,0 +1,63 @@
+DOCUMENT:Q110118  05-FEB-2000  [foxpro]
+TITLE   :How to Tell if a Window Is Defined as Mac Desktop Style
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows created in FoxPro for Macintosh can be defined as residing on the
+Macintosh desktop, which is a state that does not exist in Windows or MS-DOS.
+
+The WPARENT() command in FoxPro for Macintosh has been updated to return
+"MACDESKTOP" if the window being checked is a Macintosh desktop style window.
+
+MORE INFORMATION
+================
+
+For example, if the window titled "Updates" were a Macintosh desktop window, its
+status could be checked by issuing the following command:
+
+        WPARENT("Updates")
+
+The text string "MACDESKTOP" would be returned.
+
+REFERENCES
+==========
+
+For additional information about this subject, refer to the "Installation and
+Macintosh Features Guide," the "Language Reference," and the help topics for
+WPARENT(), DEFINE WINDOW, ACTIVATE WINDOW, and SET MACDESKTOP.
+
+Additional query words: VFoxMac FoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,58 @@
+DOCUMENT:Q258246  30-APR-2000  [exchange]
+TITLE   :XFOR: Calendar Connector Not Removed w. Connectivity Components
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you remove any of the following Exchange Server connectors and the Microsoft
+Exchange Calendar Connector is installed, the Exchange Calendar Connector is not
+removed from the Exchange Server computer.
+
+ - Microsoft Exchange Connector for Lotus Notes
+
+ - Microsoft Exchange Connector for Novell GroupWise
+
+ - Microsoft Exchange Connector for IBM OfficeVision/VM (PROFS)
+
+MORE INFORMATION
+================
+
+The Exchange Calendar Connector has an uninstall executable file that is
+separate from the other Exchange Server connectors. To successfully remove the
+Exchange Calendar Connector, use Add/Remove Programs in Microsoft Windows NT or
+Microsoft Windows 2000 Control Panel to remove the Exchange Calendar Connector.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

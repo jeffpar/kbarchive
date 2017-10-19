@@ -1,0 +1,64 @@
+DOCUMENT:Q172015  07-MAY-2002  [homegame]
+TITLE   :FS95: Color and Markings (Aircraft Texture) Missing on Aircraft
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbusage kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+ - Microsoft Expansion Pack for Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The colors and markings (Aircraft Texture) on the default Aircraft in Flight
+Simulator for Windows 95 (FS95) can be turned off or on, as desired.
+
+To turn the markings off or on, do the following:
+
+1. From the Options menu, click Preferences.
+
+2. Click the Display And Sound tab.
+
+3. Click Display Options...
+
+4. From the Aircraft tab, you can turn the Aircraft Texture on or off as
+   desired.
+
+MORE INFORMATION
+================
+
+3rd Party aircraft may require additional files to activate aircraft markings.
+These Aircraft may need to be run through the FS95 Aircraft Converter. The
+converter is available on the World Wide Web at
+
+   http://www.microsoft.con/games/fsim.
+
+Additional query words: 1.00 6.00 flightsim fltsim flt sim fs6 fs95
+
+======================================================================
+Keywords          : kb3rdparty kbusage kbhowto 
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbFlightSimSearch kbZNotKeyword kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,78 @@
+DOCUMENT:Q274902  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator 2: Graphics Options Are Turned Off When
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press ALT+TAB to switch to the Microsoft Windows desktop or to another
+program and then press ALT+TAB again to switch back to Microsoft Combat Flight
+Simulator 2, you may unexpectedly disable certain graphics options in the game.
+
+For example, dithering may be turned off.
+
+CAUSE
+=====
+
+This behavior can occur if the Windows color palette is set to True Color (32
+bit).
+
+RESOLUTION
+==========
+
+To resolve this issue, reduce the Windows color palette setting:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Colors or Color Palette box, click High Color (16 bit) or True Color
+   (24 bit), and then click OK.
+
+NOTE: If neither of these settings is available, your video adapter does not
+support lower color palette settings.
+
+5. If you are prompted to restart the computer, do so.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Microsoft Combat Flight
+Simulator 2: WWII Pacific Theater, version 1.0.
+
+Additional query words: 1.00 msgame combatfs cfs2 settings disabled hardware acceleration graphic
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

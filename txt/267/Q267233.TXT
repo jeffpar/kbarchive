@@ -1,0 +1,73 @@
+DOCUMENT:Q267233  18-MAY-2001  [exchange]
+TITLE   :XADM: "The Client Operation Failed" Err Msg Using Move Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5, on platform(s):
+    - the operating system: Microsoft Windows NT 4.0 
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to move mailboxes from one server to another by using the Move
+Mailbox feature in the Exchange Administrator program, you may receive the
+following error message:
+
+   The Client Operation Failed
+
+   Microsoft Exchange Information Store
+   ID No. 80004005-0501-0000050a
+
+CAUSE
+=====
+
+This behavior may be caused by third-party anti-virus software services that are
+running against the information store.
+
+WORKAROUND
+==========
+
+To work around this problem, quit all anti-virus services, and then run the Move
+Mailbox feature.
+
+MORE INFORMATION
+================
+
+For additional information about the Move Mailbox feature and anti-virus
+Application Programming Interface (API) enabled anti-virus software, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q264731 XADM: MAPI-Based Tasks Do Not Work with Virus API Anti-Virus Software
+   Running on the Exchange Server Computer
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : winnt:4.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

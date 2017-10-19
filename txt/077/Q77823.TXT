@@ -1,0 +1,64 @@
+DOCUMENT:Q77823  04-NOV-1999  [utilities]
+TITLE   :FIX: L2049 Error From LINK 5.1x with /HIGH Option
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:5.1,5.11,5.13,5.15
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 5.1, 5.11, 5.13, 5.15 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to link an application fails and Microsoft LINK generates the
+following message:
+
+   LINK : error L2049: no segments defined
+
+CAUSE
+=====
+
+The linker command line contains the /HIGH option switch. The error occurs
+because the linker checks for an empty .EXE file incorrectly.
+
+RESOLUTION
+==========
+
+LINK produces the .EXE file correctly. You can ignore the error message when the
+command line includes the /HIGH option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in LINK versions 5.1, 5.11, 5.13,
+and 5.15 for MS-DOS. This problem was corrected in LINK version 5.2 for MS-DOS.
+LINK version 5.2 generates an L4076 warning message in place of the L2049 error
+message.
+
+Additional query words: 5.10 5.11 5.13 5.15
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK510DOS kbLINK511DOS kbLINK513DOS kbLINK515DOS
+Version           : MS-DOS:5.1,5.11,5.13,5.15
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

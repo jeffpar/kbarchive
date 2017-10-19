@@ -1,0 +1,62 @@
+DOCUMENT:Q94467  12-NOV-1999  [pcmail]
+TITLE   :MHS: Updating the MHS Gateway To Version 3.0
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MHS, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 22 of the "Administrator's Guide for the Microsoft Mail Gateway to MHS"
+manual for version 3.0, the process to update the gateway to version 3.0 does
+not mention changing the Gateway version in the MHS Directory Manager to Level
+70.
+
+This step is required if you run the Gateway on an MHS version 1.2 or version 1.5
+host. The Gateway Version section relates to the Simple Message Format (SMF) in
+MHS. An MHS version 1.1 or version 1.2 host uses SMF 64; an MHS version 1.5 host
+uses SMF 70.
+
+The Simple Message Format is the specification to which MHS messages are written.
+The main difference between SMF 64 and SMF 70 relates to the number of valid
+recipients for each message. In SMF 64, each message can have only one
+recipient; Microsoft Mail makes a separate copy of the message for each
+recipient. In SMF 70, each message can have 64 recipients; the number of
+recipients in Microsoft Mail is unlimited.
+
+To run the gateway as an SMF 64 gateway, the gateway command line must include
+the -G64 option switch.
+
+Because MHS 1.1 does not specify the gateway version, you must specify the -G64
+option switch to run the gateway in SMF 64 mode.
+
+Additional query words: 1.10 1.20 1.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

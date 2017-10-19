@@ -1,0 +1,57 @@
+DOCUMENT:Q120212  10-JUN-1999  [homegame]
+TITLE   :Stars May Look Gray or Black Against Earth's Atmosphere
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some stars may appear as gray dots against the dawn or dusk sky of Earth.
+
+CAUSE
+=====
+
+Stars in Space Simulator are of varying magnitude, very dim and distant stars
+are painted against the black background of deep space as dark gray dots. When
+these dim stars are painted across the bluish atmosphere of earth at dawn and
+dusk, they will still appear as dark gray spots when you are viewing the stars
+from a surface location.
+
+RESOLUTION
+==========
+
+Reducing the value for the Star Limiting Magnitude in the Options, Preferences,
+Scenery menu filters out some of the dimmer stars.
+
+Additional query words: 1.00 spacesim ssim dos ss1
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

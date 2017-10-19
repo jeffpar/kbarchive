@@ -1,0 +1,87 @@
+DOCUMENT:Q103847  28-OCT-1999  [pcmail]
+TITLE   :PC MAPI: DocErr: Send Attachment Sample Code Correction
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+The sample code on page 87 of the version 3.0 Microsoft Mail for PC
+Networks "Technical Reference" manual contains errors that will cause the
+code to not work. The following is the corrected sample code:
+ 
+
+   void f1()
+   {
+    long err;
+
+    MapiFileDesc file = { 0, 0, -1L, "c:\\tmp\tmp.wk3", "budget17.wk3",
+    NULL };
+    MapiMessage note = { 0, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0,
+    NULL, 1, &file };
+
+    err = MAPISendMail(0L, 0L, &note, MAPI_DIALOG, 0L);
+    if (err != SUCCESS_SUCCESS)
+        printf("Unable to send the message\n");
+   }
+
+   void f2()
+   {
+    long err;
+
+    MapiFileDesc file = { 0, 0, -1L, "c:\\tmp\tmp.wk3", "budget17.wk3",
+    NULL };
+    MapiMessage note = { 0, NULL,"Attached is the budget proposal.\r\nSee
+    you Monday.\r\n",NULL, NULL, NULL, 0, NULL, 2, NULL, 1, &file };
+
+    MapiRecipDesc recip[2];
+
+    recip[0].ulReserved = 0;
+    recip[0].ulRecipClass = MAPI_TO;
+    recip[0].lpszName = "Sally Jones";
+    recip[0].lpszAddress = NULL;
+    recip[0].ulEIDSize = 0;
+    recip[0].lpEntryID = NULL;
+
+    recip[1].ulReserved = 0;
+    recip[1].ulRecipClass = MAPI_CC;
+    recip[1].lpszName = "Marketing";
+    recip[1].lpszAddress = NULL;
+    recip[1].ulEIDSize = 0;
+    recip[1].lpEntryID = NULL;
+
+    note.lpRecips = recip;
+
+    err = MAPISendMail(0L, 0L, &note, 0L, 0L);
+    if (err != SUCCESS_SUCCESS)
+       printf("Unable to send the message\n");
+   }
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

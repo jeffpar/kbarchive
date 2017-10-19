@@ -1,0 +1,67 @@
+DOCUMENT:Q274655  07-MAY-2002  [homegame]
+TITLE   :CFS2: Aircraft Fly Past Target and Continue with Mission
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a custom mission in Microsoft Combat Flight Simulator 2 that was
+built using Mission Builder, aircraft may not "search and destroy" a waypoint
+correctly.
+
+The aircraft fly past the waypoint, do not attack the target, and then continue
+with the mission.
+
+CAUSE
+=====
+
+This behavior can occur if the aircraft in the mission are armed with any
+ordinance other than bombs.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, use Mission Builder to arm the aircraft in
+the mission with bombs.
+
+MORE INFORMATION
+================
+
+When your mission is to attack a waypoint, the Artificial Intelligence (AI) in
+Combat Flight Simulator 2 searches for targets within a 6 kilometer radius, and
+then attacks the target at the waypoint by using the ordnance that you specify
+in Mission Builder.
+
+Additional query words: 1.00 msgame combatfs cfs2 payload
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

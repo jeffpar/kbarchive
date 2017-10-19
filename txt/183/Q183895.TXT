@@ -1,0 +1,106 @@
+DOCUMENT:Q183895  23-MAR-2000  [foxpro]
+TITLE   :FIX: Problems with @GETS and CLEAR GETS If No READ
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An @...GET text box control does not remain visible.
+
+CAUSE
+=====
+
+This is known to happen in Visual FoxPro 5.x when the @...GET is cleared with
+the CLEAR GETS command before it has been activated with a READ command.
+
+RESOLUTION
+==========
+
+One possible resolution is to issue a READ TIMEOUT .001 after the @...GET prior
+to the CLEAR GETS command. Please see the sample program in the Steps to
+Reproduce Behavior section below for an example.
+
+A better solution would be to use Object-Oriented Programming (OOP) style
+programming with a Text box control. Implementing this workaround would depend
+on the situation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Prior to Visual FoxPro, @...GET controls activated by a READ were the primary
+method that a programmer used in a user interface for users to enter information
+into a table (in addition to a BROWSE window) or a memory variable. The @...GET
+controls included text boxes, edit boxes, combo boxes, list boxes, and other
+controls. The @...GET controls need to be activated by a READ command before
+they can be used to enter data.
+
+The CLEAR GETS command releases all pending @...GET controls.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The program code below can be used to reproduce the problem.
+
+1. Enter the following program code into a new program file and save it with the
+   name GetProb.prg:
+
+         CLEAR
+         x="This is a test"
+         y="Test 2"
+         @ 5,5 GET x
+         *    READ TIMEOUT .001     && Uncomment this for a workaround.
+         CLEAR GETS
+         @ 7,10 GET y
+         READ
+
+2. Run the program with the following command in the Command window:
+
+         DO GetProb.prg
+
+3. When you notice that only one of the @...GETs stays visible on the Visual
+   FoxPro desktop, press TAB or ENTER to clear the READ and return to the
+   Command window.
+
+4. Uncomment the READ TIMEOUT .001 command and rerun the program. Note that the
+   first @...GET displaying "This is a test" remains visible.
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

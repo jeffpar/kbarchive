@@ -1,0 +1,83 @@
+DOCUMENT:Q155921  08-AUG-2001  [winnt]
+TITLE   :User Profile Editor Does Not Show Unlocked Program Groups
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:kbtool kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Korean Windows NT 3.51, the User Profile Editor does not list any program
+groups in the Unlocked Program Groups dialog box. Therefore, the administrator
+cannot lock any program groups.
+
+WORKAROUND
+==========
+
+In the For Unlocked Groups, Allow User To: dialog box, select the option to be
+applied to unlocked personal program groups. The option you choose determines
+the kind of modifications the user can make.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Korean Windows NT version 3.51.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The table below shows the changes that are allowed by each option.
+
+   Option for unlocked groups             Allowed changes
+   -----------------------------------------------------------------------
+   Make Any Change                Create, delete, and change program items
+                                  and program groups.
+
+   Create/Delete/Change           Create, delete, and change program items.
+   Program Items                  Users cannot create, delete, or change
+                                  program groups.
+
+   Change All Program             Change program items. Users cannot create
+   Item Properties                or delete program items, nor can they
+                                  create, delete, or change program groups.
+
+   Change Program Item            Change all properties of a program item
+   Properties Except              except the entry in the command line of
+   Command Line                   the Program Item Properties dialog box.
+                                  Users cannot create or delete program
+                                  items, nor can they create, delete, or
+                                  change program groups.
+
+Additional query words: prodnt tools
+
+======================================================================
+Keywords          : kbtool kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

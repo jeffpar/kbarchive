@@ -1,0 +1,103 @@
+DOCUMENT:Q173499  14-NOV-2000  [word97]
+TITLE   :WD97: Picture Loses Picture Placeholder Text When Made Hyperlink
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbgraphic word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you insert a picture into an HTML document and make the picture a hyperlink,
+the picture placeholder text is lost when you save the document.
+
+WORKAROUND
+==========
+
+To work around this problem, manually add the picture placeholder text to the
+HTML source of the document. To do this, follow these steps:
+
+1. On the View menu, click HTML Source.
+
+2. In the HTML Source, look for the reference to the picture that is a
+   hyperlink.
+
+   For example, if you inserted the picture Commbkgd.gif and linked it to
+   MyDoc.html, look for:
+
+   <A HREF="MyDoc.html"><IMG SRC="COMMBKGD.GIF" BORDER=0 WIDTH=219
+   HEIGHT=163></A>
+
+3. Add the Picture PlaceHolder text to the reference you found; for example:
+
+   <A HREF="MyDoc.html"><IMG SRC="COMMBKGD.GIF" BORDER=0 WIDTH=219
+   HEIGHT=163 ALT="My Image's Alternate Text"></A>
+
+   In this example, you could substitute "My Image's Alternate Text" for whatever
+   text you want.
+
+4. On the View menu, click Exit HTML Source.
+
+5. Save the changes you just made to the HTML Source.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+MORE INFORMATION
+================
+
+Picture placeholder text provides an alternate text-only hyperlink for Internet
+browsers incapable of displaying pictures. The picture placeholder text appears
+instead of the picture.
+
+To add picture placeholder text, follow these steps:
+
+1. Click to select the picture you want to add picture placeholder text to.
+
+2. On the Format menu, click Picture.
+
+3. On the Settings tab, enter the alternate text in the Picture Placeholder box,
+   and then click OK.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q164342 WD97: Picture Hyperlinks Lost When Saved as HTML
+
+   Q157637 WD97: Placeholder Replaces Image After Adding Hyperlink
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbgraphic word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,59 @@
+DOCUMENT:Q90212  02-OCT-1999  [win3x]
+TITLE   :PROTOCOL.INI File Open Failure with Stacker
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Stacker Electronics Stacker version 2.0 after Windows for
+Workgroups or Workgroup Connections, you receive the following error message
+when you restart (reboot) your computer:
+
+   PRO0003E: PROTOCOL.INI file open failure. Unable to open PROTOCOL.INI.
+
+CAUSE
+=====
+
+Stacker correctly copies PROTMAN.DOS, WORKGRP.SYS, and other system files to the
+unstacked drive. The problem occurs because the PROTOCOL.INI file needs to be
+copied to the original directory on the unstacked drive.
+
+WORKAROUND
+==========
+
+You need to manually copy the PROTOCOL.INI file to the original directory. After
+you do this, the PROTOCOL.INI file will be found when the system starts.
+
+Additional query words: 3.10 wfwg wc 3rdparty err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

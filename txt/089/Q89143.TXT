@@ -1,0 +1,78 @@
+DOCUMENT:Q89143  04-MAY-2001  [masm]
+TITLE   :Minimum System Requirements for MASM 6.0
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Macro Assembler version 6.0 requires the following system
+configuration:
+
+ - MS-DOS or PC-DOS operating system version 3.0 or later, or OS/2 operating
+   system version 1.1 or later.
+
+ - An 8 MHz PC using 80286 processor or better strongly recommended.
+
+ - At least 640K memory (1 MB recommended) for MS-DOS operating systems and 3 MB
+   memory (4 MB recommended) for OS/2 operating systems.
+
+ - A 5.25 inch double sided disk drive or a 3.5 inch double sided disk drive and
+   a hard disk, with a least 4.7 MB of free disk space for the default
+   installation, or 6.2 MB of free disk space for the full installation.
+
+ - A Microsoft Mouse (or compatible) is recommended.
+
+MORE INFORMATION
+================
+
+The default Macro Assembler installation consists of the following:
+
+ - MS-DOS hosted and bound executables (2172K)
+
+ - Include files (44K)
+
+ - Sample programs (371K)
+
+ - Online help files (1943K)
+
+The full Macro Assembler installation consists of everything listed above for the
+default installation plus the following:
+
+ - OS/2 hosted executables
+
+ - OS/2 libraries
+
+ - OS/2 include files
+
+Additional query words: RAM needed setup install 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : :6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

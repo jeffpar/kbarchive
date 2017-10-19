@@ -1,0 +1,84 @@
+DOCUMENT:Q150138  02-NOV-1999  [fortran]
+TITLE   :BUG: FOR3199 Error in Host Association of Internal Variable
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a host program unit variable name in an internal procedure's
+statement function expression, the compiler erroneously issues the following
+error:
+
+   error FOR3199: invalid redeclaration of host symbol <name>
+
+RESOLUTION
+==========
+
+Explicitly declare your internal procedure statement function variables.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In the following sample code, the variable x is declared after the statement
+function that uses it. Reversing the declarations corrects the problem. That is,
+explicitly declaring your internal procedure variables before using them in a
+statement function works around the problem.
+
+Sample Code to Illustrate Problem and Workaround
+------------------------------------------------
+
+   ! Compile options needed: none
+
+         program test
+             integer x
+         contains
+             subroutine a()
+             real b, c
+   ! comment the following line for workaround
+             b(x) = real(x)
+             integer x
+   ! uncomment the following line for workaround
+   !          b(x) = real(x)
+             c = b(x)
+             end subroutine
+         end
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

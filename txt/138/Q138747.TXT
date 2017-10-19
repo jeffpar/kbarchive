@@ -1,0 +1,57 @@
+DOCUMENT:Q138747  13-JUN-1999  [win95x]
+TITLE   :Error Message When Trying to Play Pinball2.mid File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to play the Pinball2.mid file in the Program Files\Plus!\ Pinball
+folder, you receive the following error message:
+
+   MMSYSTEM296, the file cannot be played on the specified MCI device. The file
+   may be corrupt or not in the correct format.
+
+CAUSE
+=====
+
+The Pinball2.mid file is not a valid midi-format file. This file is not used
+when you play the 3D Pinball game.
+
+RESOLUTION
+==========
+
+3D Pinball includes two midi files, Pinball.mid and Pinball2.mid. The
+Pinball.mid file is a valid midi file, and is used by the 3D Pinball game. You
+can delete the Pinball2.mid file if you want.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

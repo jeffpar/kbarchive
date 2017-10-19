@@ -1,0 +1,92 @@
+DOCUMENT:Q226832  11-JUN-2002  [sms]
+TITLE   :SMS: Software Licensing Offline Uploads Cease w/Synchronization
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the date and time settings on a Microsoft Systems Management Server (SMS)
+2.0 client computer that runs the software metering client agent is accidentally
+set forward, the client no longer forwards software metering information to the
+software metering server when it (the client) is in offline mode. If the date
+and time settings are reset correctly, the client does not send data until the
+current date and time catch up to the incorrect date and time that had been set.
+
+CAUSE
+=====
+
+This behavior occurs because when software metering is configured in offline
+mode, clients maintain a local log of software usage and then upload this
+information to the software metering server on a schedule. The next scheduled
+upload is based on the date and time settings of the client. When you reset the
+client date and time settings from a future date and time to the current date
+and time, the next scheduled upload time is not reset, and the client's
+next-upload time remains at the erroneous setting (in the future).
+
+WORKAROUND
+==========
+
+To work around this issue, follow these steps:
+
+1. Refer to the following Microsoft Knowledge Base article, and then remove SMS
+   2.0 client components from the computer that displays this behavior:
+
+   Q199078 How to Remove a Systems Management Server 2.0 Client
+
+2. Correct the time on the client.
+
+3. Reinstall the SMS client components.
+
+The only way to work around this issue is to uninstall and then reinstall the SMS
+2.0 client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 2.0.
+
+MORE INFORMATION
+================
+
+You can use the Client Cleaner tool (20CliCln.bat) to remove all SMS 2.0 client
+components. SMSMan.exe may leave some files and registry entries on clients
+after being run. You must have Administrator rights on the client computer when
+you use the Client Cleaner tool. Otherwise, some SMS 2.0 files and registry
+settings will not be removed. 20CliCln.bat can be found in the Systems
+Management Server Resource Kit and in the supportability files that come with
+SMS 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,59 @@
+DOCUMENT:Q69888  10-JUN-1999  [win16sdk]
+TITLE   :INFO: Fatal Exit Code 0x0506 Definition
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbSDKPlatform kbSysSettings
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Fatal Exit code 0x0506 is not documented in Appendix C of the "Microsoft Windows
+Software Development Kit Reference Volume 2" version 3.0.
+
+This Fatal Exit will occur if the GetProfileString() or GetPrivateProfileString()
+function is called with the lpDefault parameter set to NULL. lpDefault specifies
+a string to return in the lpReturnedString buffer if no match for lpKeyName is
+found.
+
+To correct this Fatal Exit, always provide a valid string pointer for the
+lpDefault parameter.
+
+GetProfileString() and GetPrivateProfileString() are documented in the Windows
+SDK "Reference, Volume 1" for version 3.0 and in the "Programmer's Reference,
+Volume 2: Functions" for version 3.1.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbSysSettings 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

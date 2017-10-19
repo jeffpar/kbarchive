@@ -1,0 +1,65 @@
+DOCUMENT:Q175481  16-NOV-2001  [exchange]
+TITLE   :XADM: Store Does Not Grow When Moving Users to Another Server
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+ - Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When users are moved from one server in a site to another server in the same
+site, multiple copies of the same message are not moved to the destination
+server.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange Server 5.5 and Microsoft Exchange 2000 Server store mail by a
+method that is known as single instance storage. If a message is sent to one
+recipient and is copied to 20 other recipients, Exchange Server 5.5 and Exchange
+2000 maintain only one copy of the message in its database. It then has
+pointers, which point to the original recipient as well as to the 20 other
+recipients. If the original recipient and the 20 other recipients are moved to
+another server in the site with the Move Mailbox utility located on Tools menu
+of the Exchange Administrator program, only one copy of the message is
+maintained on the new server.
+
+During a move of users, Exchange Server 5.5 and Exchange 2000 checks every
+incoming message against its own internally assigned IDs. These internal IDs are
+not viewable with a client. If Exchange Server 5.5 or Exchange 2000 determines
+that the incoming message is a duplicate, it merely sets up a pointer for that
+existing message pointing to the newly moved user.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

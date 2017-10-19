@@ -1,0 +1,72 @@
+DOCUMENT:Q310400  12-OCT-2001  [mspress]
+TITLE   :Microsoft Outlook Version 2002 Step by Step Comments and Correct
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Outlook Version 2002 Step by Step ISBN 0-7356-1298-6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Outlook Version 2002 Step by
+Step, ISBN 0-7356-1298-6.
+
+The following topics are covered:
+
+ - Page xiii: Two Files Missing From Step 5
+
+MORE INFORMATION
+================
+
+Page xiii: Two Files Missing From Step 5
+----------------------------------------
+
+Step 5 on page xiii is missing two filenames. Change:
+
+"NextShow, OrderStatus, NewSupplier, ReNextShow, Schedule, Kick-off, Status, and
+TeamMeet."
+
+To:
+
+"NextShow, OrderStatus, NewSupplier, ReNextShow, Schedule, Kick-off, Status,
+TeamMeet, TaskLayout, and TaskPayments."
+
+To follow the instructions on page 173, these files must be in the Inbox, so
+should be installed in Step 5.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1298-6 EUBOOK EUSBS OFFXP OUTLOOK CRUPI
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

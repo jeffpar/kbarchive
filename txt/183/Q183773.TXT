@@ -1,0 +1,72 @@
+DOCUMENT:Q183773  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Can Not Find the File Explorer.exe...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Windows 95, you may experience the following symptoms:
+
+ - When you double-click the Speaker icon on the taskbar, the Volume Control
+   tool may not open.
+
+ - When you click Advanced on the Start Menu tab in the Taskbar Properties
+   dialog box, you may receive the following error message:
+
+   Can not find the file 'Explorer.exe' or one of its components. Make sure the
+   path and filename are correct and that all required libraries are available."
+
+CAUSE
+=====
+
+This behavior can occur if the Windows folder in the PATH environment variable
+is overwritten. This can occur if you log in to a NetWare server and your
+NetWare login script uses the Map (MAP) command instead of the Map Insert (MAP
+INS) command to map search drives.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact your network administrator to modify the system
+login script or the user login script to use the Map Insert command to map the
+NetWare search drives.
+
+MORE INFORMATION
+================
+
+For more information about the NetWare Map command and search drives, consult
+your NetWare product documentation.
+
+Additional query words: nothing happens respond novell
+
+======================================================================
+Keywords          : kberrmsg kbnetwork win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,58 @@
+DOCUMENT:Q153819  30-JUL-2001  [sms]
+TITLE   :SMS PCM: "General File Transfer Error" Distributing Netscape
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you distribute Netscape for installation at a workstation using a "Run
+Command on a Workstation" package, the following error message appears:
+
+   General File Transfer Error
+
+CAUSE
+=====
+
+The Setup process loses connection to the distribution server during file
+transfer.
+
+RESOLUTION
+==========
+
+To correct this problem, use the "-SMS" (without quotation marks) parameter with
+Setup.exe on the command line of a Systems Management Server package. This
+forces an active connection between the client to the distribution server and
+allows Setup.exe to run on remote computers.
+
+Additional query words: prodsms pgc internet web
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

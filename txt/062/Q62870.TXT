@@ -1,0 +1,57 @@
+DOCUMENT:Q62870  14-DEC-1999  [win95x]
+TITLE   :Cannot Start DayBook as Icon with SHIFT+Double-Click
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to start DayBook as an icon by pressing SHIFT while double-clicking
+the DayBook icon with the mouse does not place DayBook into icon form on the
+following machines:
+
+   Wyse 386 16 MHz model WY 3216-01
+   NCR 3786 Model 1102
+
+DayBook runs through the animation session and then hides itself behind the
+Microsoft Windows version 3.0 Program Manager.
+
+NOTE: This behavior does not occur on most machines.
+
+WORKAROUND
+==========
+
+A possible workaround is to turn off the animation portion of DayBook. From the
+Daybook Map Screen, choose File and Turn Off Animation.
+
+Additional query words: 3.00 3.00a 1.00 day book win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

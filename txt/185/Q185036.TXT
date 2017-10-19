@@ -1,0 +1,116 @@
+DOCUMENT:Q185036  14-NOV-2000  [word97]
+TITLE   :WD97: Single-Spaced Paragraphs Convert to Double-Spaced in HTML
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbweb kbconversion word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you convert a single-spaced Microsoft Word document to Hypertext Markup
+Language (HTML) format, and view it in a Web browser, there are double-spaced
+lines between the paragraphs.
+
+CAUSE
+=====
+
+This behavior is by design of Microsoft Word. When converting a paragraph to
+HTML, Word places a <p> tag at the beginning of the line and a </p>
+tag at the end of the line. Web browsers display these tags as double-spaced
+lines between the paragraphs.
+
+WORKAROUND
+==========
+
+To prevent double spacing between paragraphs, use the appropriate method for
+your situation.
+
+Method 1: Use Prior to Converting an Existing Document to HTML Format
+---------------------------------------------------------------------
+
+Prior to saving your document in HTML format, change the paragraph marks to line
+breaks. To do this, follow these steps:
+
+1. Open your Word document.
+
+2. On the Edit menu, click Replace. If there is a More button in the Find And
+   Replace dialog box, click it.
+
+3. Click to place the insertion point in the Find What box. Click Special and
+   then click Paragraph Mark. "^p" appears in the Find What box.
+
+4. Click to place the insertion point in the Replace With box, click Special and
+   then click Manual Line Break. "^l" appears in the Replace With box.
+
+5. Click Replace All. Click OK. Click Close.
+
+Method 2: Use After Converting the Document to HTML Format
+----------------------------------------------------------
+
+If you have already converted the document to HTML format, view the HTML codes
+and replace paragraph tags with line break tags. To do this, follow these
+steps:
+
+1. In Word, open the HTML document.
+
+2. On the View menu, click HTML Source.
+
+3. On the Edit menu, click Replace.
+
+4. In the Find What box, type </P>. In the Replace With box, type
+   <br>, and then click Replace All. Click OK.
+
+5. In the Find What box, type <P>. Delete the entry in the Replace With
+   box, and then click Replace All. Click OK.
+
+6. Click Close.
+
+7. On the File menu, click Save.
+
+8. On the View menu, click Exit HTML Source.
+
+Method 3: To create single space between paragraphs in a HTML document
+----------------------------------------------------------------------
+
+To create an HTML document with single-spaced lines between the paragraphs, press
+SHIFT+ENTER at the end of each paragraph. This is the keystroke for a manual
+line break. You can do this with a regular Word document or with an HTML Word
+document.
+
+MORE INFORMATION
+================
+
+HTML code also uses a <br> to represent a line break. If a <br> is
+used instead of a <p>, the document will appear single-spaced.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta kbweb kbconversion word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

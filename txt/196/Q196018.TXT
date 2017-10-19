@@ -1,0 +1,69 @@
+DOCUMENT:Q196018  10-AUG-2001  [winnt]
+TITLE   :System Preparation Tool Directory Not Deleted Upon Cloning
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Microsoft System Preparation tool, Sysprep, the duplicated
+systems still have the Sysprep tools (Sysprep.exe and Setupcl.exe) on the local
+drive. Documentation states that these files will be removed from the directory
+in which Sysprep resides upon completion of the cloning process.
+
+CAUSE
+=====
+
+This problem will happen when the folder in which the Sysprep files were located
+was named something other than Sysprep or was not located on the same volume in
+which the %WINDIR% resides (for example, Winnt, Winnt40, and so on).
+
+RESOLUTION
+==========
+
+Move Sysprep and its associated files to the volume that contains the %WINDIR%
+and ensure that the folder in which Sysprep resides is named Sysprep. However,
+by design, the Setupcl.exe file is placed in the %SystemRoot%\System32 folder
+and will remain after the cloning process has completed.
+
+MORE INFORMATION
+================
+
+For additional information about System Preparation tools and other deployment
+information, please see:
+
+   http://www.microsoft.com/ntworkstation/
+
+Additional query words: sysprep directory remove deploy ghost
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

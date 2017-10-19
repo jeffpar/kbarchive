@@ -1,0 +1,76 @@
+DOCUMENT:Q116376  06-OCT-1999  [win3x]
+TITLE   :Delrina WinFax Pro 3.0 for Networks and WFWG 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+The following problems can occur when you use Delrina WinFax Pro 3.0 for
+Networks with Windows for Workgroups 3.11 configured for network use:
+
+ - Conflicts occur between the Microsoft At Work PC Fax drivers and the WinFax
+   for Windows terminate-and-stay-resident (TSR) programs.
+
+ - You receive device conflict error messages.
+
+ - You receive the
+
+   Netbios not present
+
+   error message when loading the WinFax Pro 3.0 drivers.
+
+ - You receive the
+
+   Image contains invalid data
+
+   error message.
+
+Delrina Technology offers an application note (document number 2018) that
+suggests ways to correct these problems. This application note also
+recommends document number 9003 for additional information.
+
+For more information, contact Delrina Technical Support.
+
+WinFax Pro is manufactured by Delrina Technology, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+For information about how to contact Delrina Technology, query in the
+Microsoft Knowledge Base for one of the following articles:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

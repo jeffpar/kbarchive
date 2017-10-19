@@ -1,0 +1,72 @@
+DOCUMENT:Q130828  08-AUG-2001  [win95x]
+TITLE   :Program Manager Window Moves Upward on Screen
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95 4.00
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Each time you start Program Manager in Windows 95, the Program Manager window
+opens noticeably higher on the screen and eventually moves itself off the
+screen.
+
+CAUSE
+=====
+
+This problem occurs when the taskbar is positioned at the top of the screen and
+you have enabled the Always On Top option and disabled the Auto Hide option for
+the taskbar.
+
+RESOLUTION
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Move the taskbar to another position on the screen and move the Program
+   Manager window lower on the screen before you quit close it.
+
+ - Disable the taskbar's Always On Top option, or enable its Auto Hide option.
+   To access these options, click the taskbar with the right mouse button, then
+   click Properties on the menu that appears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 4.0
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 95 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

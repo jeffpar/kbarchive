@@ -1,0 +1,73 @@
+DOCUMENT:Q165390  02-FEB-2001  [win95x]
+TITLE   :Document Margins Not Maintained in WordPad
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a document in WordPad, you may notice that the margin settings for
+the document have changed, but all other document characteristics are the same.
+
+CAUSE
+=====
+
+This behavior occurs because WordPad does not read the margin settings from the
+document.
+
+RESOLUTION
+==========
+
+To work around this issue, change the margin settings for the document after you
+open the document.
+
+NOTE: The new margin settings become the default margin settings.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+WordPad stores its default margin settings in the registry. When you open a
+document, the margins are set to the values indicated in the registry rather
+than being read from the document. If you change the margin settings in WordPad,
+the new margin settings are not written to the document but to the registry
+instead. The new margin settings then become the WordPad defaults and are used
+with all subsequently opened documents.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool win95 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

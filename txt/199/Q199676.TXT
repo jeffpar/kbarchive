@@ -1,0 +1,139 @@
+DOCUMENT:Q199676  25-MAY-2000  [pcmail]
+TITLE   :PC Adm: Invalid Characters in Mailbox Name for Microsoft Mail
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to modify or delete mailbox names.
+
+CAUSE
+=====
+
+This issue can occur because the Administrator program allows you to enter
+invalid characters in the Mailbox Name field. However, you cannot modify or
+delete mailboxes with names that contain invalid characters.
+
+RESOLUTION
+==========
+
+To resolve this issue, restore the heart files (or core files) from a backup
+that was made before the users were created. The heart files are the following:
+
+ - Master.glb
+
+ - Access.glb
+
+ - Access2.glb
+
+ - Access3.glb
+
+ - Admin.nme
+
+ - Adminshd.nme
+
+ - Adminshd.grp
+
+ - Admin.grp
+
+
+MORE INFORMATION
+================
+
+The following characters are invalid for use in mailbox names:
+
+   ASCII 1-47; 58-64; 91-96; 123-127; 145-148
+
+The following are some common invalid characters:
+
+ - ~ (tilde)
+
+ - ! (exclamation point)
+
+ - @ (at sign)
+
+ - # (number sign)
+
+ - $ (dollar sign)
+
+ - % (percent)
+
+ - ^ (caret)
+
+ - & (ampersand)
+
+ - * (asterisk)
+
+ - () (parentheses)
+
+ - _ (underscore)
+
+ - + (plus)
+
+ - - (en dash)
+
+ - = (equal sign)
+
+ - ` (accent grave)
+
+ - {} (braces)
+
+ - [] (brackets)
+
+ - | (vertical bar)
+
+ - \ (backslash)
+
+ - : (colon)
+
+ - "" (quotation marks)
+
+ - ; (semicolon)
+
+ - '' (single straight quotation marks)
+
+ - <> (angle brackets)
+
+ - ? (question mark)
+
+ - , (comma)
+
+ - . (period)
+
+ - / (slash mark)
+
+A space in a mailbox name is also invalid.
+
+Additional query words: Error 56 when modifying or deleting mailbox
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN350
+Version           : WINDOWS:3.0,3.2,3.2a,3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

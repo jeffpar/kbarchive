@@ -1,0 +1,71 @@
+DOCUMENT:Q152423  30-JUL-2001  [sms]
+TITLE   :Pcmsvc32.exe Does Not Check \MSTEST Directory for Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage kbPCM smsgeneral smspcm kbArtTypeINFkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When sending out a package that requires using an executable file from the
+\Mstest directory on the logon server, Pcmsvc32.exe will fail to find the
+executable file and thus the job will fail on the client. Because the job is
+being run in background mode no error message will show on the client.
+
+For example, if an MSTEST script is sent out in a package Pcmsvc32.exe will not
+check the \Mstest directory on the logon server for Mtrun.exe.
+
+CAUSE
+=====
+
+Pcmsvc32.exe does not look in the \Mstest directory for any executables or
+associated DLLs. Pcmsvc32.exe will only look in the package source for any
+required executable files and DLLs.
+
+WORKAROUND
+==========
+
+Send the required executable files in the package.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. This problem was corrected in the latest Microsoft
+Systems Management Server version 1.2 U.S. Service Pack. For information on
+obtaining the service pack, query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbusage kbPCM smsgeneral smspcm kbArtTypeINF kbfixlist
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

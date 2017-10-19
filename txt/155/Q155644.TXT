@@ -1,0 +1,69 @@
+DOCUMENT:Q155644  10-AUG-2001  [winnt]
+TITLE   :Available Resources for Windows NT 4.0 Deployment
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbsetupkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server 
+ - Microsoft Windows NT Workstation 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article lists some available information and resources designed to aid in
+the deployment of Microsoft Windows NT.
+
+MORE INFORMATION
+================
+
+The Windows NT Deployment Guide, the Automating Windows NT Setup Deployment
+Guide, and other resources designed to aid in the deployment of Microsoft
+Windows NT are available for free download from the following Microsoft Web
+site:
+
+   http://www.microsoft.com/ntworkstation/deployment/deployment/default.asp
+
+In addition, the product documentation for Windows NT Server, Windows NT
+Workstation, and the Windows NT 4.0 Resource Kit provide much of the information
+required concerning deployment of Microsoft Windows NT 4.0.
+
+The following resources offer fee-based support for the deployment of Microsoft
+products:
+
+ - Microsoft Consulting Line (800) 936-5200
+
+ - Microsoft Consulting Services (MCS) (800) 426-9400
+   http://www.microsoft.com/msconsult/
+
+ - Microsoft Gold Certified Support Partners for Support Services
+   http://www.microsoft.com/support/partner/
+
+Additional query words: deploy unattend guide sysdiff udf rollout
+
+======================================================================
+Keywords          : kbsetup kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

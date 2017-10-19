@@ -1,0 +1,128 @@
+DOCUMENT:Q148512  01-MAY-2001  [ssafe]
+TITLE   :INFO:Description of the Properties/About Command Line Commands
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes two commands (Properties and About) that are new in
+Visual SourceSafe 4.0. These commands are available only from the command line.
+They provide useful information and can be used as debugging tools.
+
+MORE INFORMATION
+================
+
+About Command
+-------------
+
+The About command displays information about the version of SourceSafe that you
+are currently using. It lists the same information as the About Box in the
+Graphical Interface product. Output from the About command looks like this:
+
+   G:\vss40svr\win32>ss about
+   Microsoft (R) SourceSafe Version 4.00
+   Copyright (C) Microsoft Corp. 1994-1995. All rights reserved.
+   Version 4.00 (Build 0822)
+
+The About command uses the switches -H, -I-, -O, -Y, and -?. For more information
+about these switches, click "List of Commands and Options" in Appendix A of
+Books Online.
+
+Properties Command
+------------------
+
+The Properties command displays attributes about a file or a project. It lists
+the name of a file, the path to a project, the size, the latest version and
+date, and comments. This command gives additional information for files: the
+file type, its size in bytes and lines, and the status of the "Store only latest
+version" setting.
+
+Use the following syntax to call the Properties command:
+
+   SS PROPERTIES <SSafe Item> [-B] [-F-] [-H] [-O] [-R] [-L] [-N] [-I-]
+   [-Y]
+
+Switches are defined as follows:
+
+ - The -H, -O, -I-, -N and -Y options are documented in the "List of Commands
+   and Options" in Appendix A of the Visual SourceSafe Books Online.
+
+ - With the -R option, the properties of all the files in the project tree are
+   displayed. -R is ignored if a file name or file mask is specified on the
+   command line.
+
+ - The -B switch is the same as the FileType switch. "-B" changes the file to
+   binary type, whereas "-B-" changes the file to text type.
+
+ - The -L option changes the "store latest version" setting. When you check a
+   file in, you have the option of either storing the latest version of the file
+   or recording the difference (delta) information. Call the "-L" option to
+   store the latest version on check in or "-L-" to store delta information on
+   check in.
+
+ - With the -F- option, only the properties of a project are displayed, and none
+   of the attributes of a file are displayed. Using the (-B) or (-L) switches
+   will not have any effect because the -B, -B-, -L, and -L- options only
+   operate when files are displayed.
+
+When the Properties command is passed the -B or -L switches, the property is
+first changed, and then the report is displayed with the modified information.
+
+The output from the Properties command for a file looks like this:
+
+   G:\vss40svr\win32>ss properties skel.c
+
+   File: $/cclass/SKEL.C
+   Type: Text
+   Size: 948 bytes 18 lines
+   Store only latest version: No
+   Latest:
+   Version: 1
+   Date: 8/03/95 3:56p
+   Comment: Test project
+
+The output from the command line for a project looks like this:
+
+   G:\vss40svr\win32>ss properties $/cclass
+
+   Project: $/CCLASS
+   Contains:
+   103 Files
+   0 Subproject(s)
+   Latest:
+   Version: 104
+   Date: 8/03/95 3:57p
+   Comment: Test project
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

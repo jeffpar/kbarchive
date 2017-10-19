@@ -1,0 +1,69 @@
+DOCUMENT:Q166588  09-MAY-1999  [exchange]
+TITLE   :XCON: MTA Work Queue Backlog When Restrictions Used with DL
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+
+
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A backlog in the Microsoft Exchange Server Message Transfer Agent (MTA) may
+occur during delivery of specific types of messages. To observe this backlog,
+use the Windows NT Performance Monitor to view the MSExchangeMTA counter for
+Work Queue Length. This counter may exceed 3,000 and remain there for a long
+period of time. This backlog is most likely to occur when there are delivery
+restrictions and distribution lists associated with the message.
+
+CAUSE
+=====
+
+Large distribution lists and the existence of delivery restrictions can cause
+the MTA to enter into CPU and I/O intensive computations.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+
+Additional query words: ITG
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

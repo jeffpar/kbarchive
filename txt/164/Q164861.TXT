@@ -1,0 +1,67 @@
+DOCUMENT:Q164861  22-DEC-1999  [exchange]
+TITLE   :XFOR: Cannot Configure French AT Server as Directory Requester
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to install the Directory Exchange Requester on a French AppleTalk
+Server with French MacMail, the configuration screen will not allow input into
+any field except the Send directory hour field. Also, other areas are displayed
+incorrectly, as shown by the following:
+
+   Exchange password: ?
+   Network Manager: Administrateur du (r[ASCII 232]seau is truncated)Password: ?
+
+The Fault, Include, and Export World List fields are all unavailable.
+
+CAUSE
+=====
+
+This problem is caused by the use of extended characters in the French server.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange 4.0
+U.S. Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base:
+
+   " SERVPACK " (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

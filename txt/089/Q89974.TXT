@@ -1,0 +1,54 @@
+DOCUMENT:Q89974  11-SEP-1999  [winmisc]
+TITLE   :Setup Detects Incorrect Space Available on WFWG Server
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a 
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you run Windows Sound System Setup from a client machine to install Windows
+Sound System on a Windows for Workgroups server, Setup detects 0 bytes available
+on the server.
+
+MORE INFORMATION
+================
+
+Windows Sound System Setup does not support remote installation on a Windows for
+Workgroups server. However, Setup does run and install the software to the
+server as long there is enough space available.
+
+Microsoft does not recommended installing Windows Sound System in this manner. If
+you do, make sure you have at least 10 MB of free space on the server before
+running Setup.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWinSoundSysSearch kbWFW310 kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

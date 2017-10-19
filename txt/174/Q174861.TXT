@@ -1,0 +1,52 @@
+DOCUMENT:Q174861  22-JUN-2001  [exchange]
+TITLE   :XWEB: HTTP Protocol Still Functions After Disabling in Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is still possible to gain access to a mailbox via Outlook Web Access after
+you disable the HTTP protocol in the Exchange Administrator program. In order to
+completely disable this protocol, you must restart the World Wide Web Services
+in Control Panel/Services.
+
+If the HTTP protocol is disabled on the server, a client mailbox may still be
+accessed by entering the logon address http://servername/exchange/Logon.asp into
+the browser. After the service has been stopped and restarted, the mailbox will
+no longer be accessible.
+
+CAUSE
+=====
+
+This is a design implementation of Microsoft Internet Information Server.
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : 5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

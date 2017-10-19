@@ -1,0 +1,45 @@
+DOCUMENT:Q49723  30-JUL-2001  [homegame]
+TITLE   :Spot Plane Doesn't Recognize Aircraft Carrier
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+In Flight Simulator Versions 3.00 and 4.00, the spot plane doesn't recognize the
+aircraft carrier.
+
+If an airplane has landed on the deck of the aircraft carrier, the spot plane
+does recognize the aircraft carrier if the spot plane is set to an altitude of
+less than the aircraft altitude. The spot plane is looking at the bottom of the
+airplane, from a position within the unseen aircraft carrier.
+
+To set the spot plane altitude, press 2 for VIEWS menu, D for "SET UP SPOT
+PLANE...", and 2 for "ALTITUDE:". At the prompt, enter a value that is greater
+than the altitude of the aircraft (the altitude of the airplane is listed on the
+altimeter). The spot plane can now see the airplane on the deck of the aircraft
+carrier.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

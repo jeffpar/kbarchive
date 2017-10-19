@@ -1,0 +1,68 @@
+DOCUMENT:Q130711  14-NOV-2000  [foxpro]
+TITLE   :PRB: Microsoft Excel 5.0 Can't Open Visual FoxPro 3.0 Table
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,3.0; :5.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft Excel for Windows, version 5.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to open a Visual FoxPro version 3.0 table in Microsoft Excel version
+5.0 or 7.0 results in this error:
+
+   Cannot read this binary file.
+
+CAUSE
+=====
+
+Microsoft Excel version 5.0 cannot read a Visual FoxPro version 3.0 table
+directly. You must export the version 3.0 table as a FoxPro version 2.X table
+before Microsoft Excel version 5.0 can read it.
+
+RESOLUTION
+==========
+
+Before attempting to open the table file in Microsoft Excel, export it into
+FoxPro for Windows, version 2.x format by entering the following commands in the
+Command Window (assuming myfile.dbf is the table you want to open):
+
+      USE myfile.dbf
+      COPY TO myfile2.dbf TYPE FOX2
+
+As an alternative, you can also use the FILE EXPORT command to export the file in
+FoxPro for Windows, version 2.x format. Once the file is exported, Microsoft
+Excel can open it.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbMDAC250 
+Technology        : kbVFPsearch kbExcelSearch kbAudDeveloper kbExcel500 kbMDACSearch kbMDAC250 kbVFP300
+Version           : WINDOWS:2.5,3.0; :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,108 @@
+DOCUMENT:Q58559  14-NOV-2001  [visualc]
+TITLE   :PRB: Executable Code Between Declarations Causes C2143 or C214
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,2.0,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC100 kbVC150 kbVC151 kbVC152fix kbVC210 kbVC400 kbVC500 kbVC600
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C for MS-DOS 
+ - Microsoft C for OS/2 
+ - Microsoft C/C++ for MS-DOS 
+ - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51 
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft C, compiler errors C2143 and C2144 are defined as follows:
+
+   C2143: syntax error : missing 'token1' before 'token2'
+
+   C2144: syntax error : missing 'token' before type 'type'
+
+CAUSE
+=====
+
+You may receive this error message if your program places executable code before
+a data declaration, an acceptable practice in Kernighan-and-Ritchie C. This
+practice has been outlawed in later versions of the ANSI drafts.
+
+This error message will normally occur if a required closing curly brace (}),
+right parenthesis [)], or semicolon (;) is missing.
+
+RESOLUTION
+==========
+
+Placing all data declarations before all executable code corrects the
+programming error.
+
+   void main( )
+   {
+      int i;
+      printf( "Hello world!\n" );
+      {
+         int j;
+      }
+   }
+
+NOTE: In the C++ language, it is legal to declare data within a block of
+executable code.
+
+MORE INFORMATION
+================
+
+The following code demonstrates this error message:
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+
+   #include <stdio.h>
+
+   void main(void)
+   {
+      int i;
+      printf("Hello World\n");
+      int j;
+   }
+
+Compiling this code with a version of Microsoft C prior to C/C++ 7.0 will return
+the following error message:
+
+   C2144: syntax error : missing ';' before type 'int'
+
+C/C++ version 7.0 and Visual C/C++ issue the following error:
+
+   C2143: syntax error : missing ';' before 'type'
+
+Additional query words: 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC150 kbVC151 kbVC152fix kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbVC500 kbVC600 kbVC151 kbVC200 kbVC32bitSearch kbVC16bitSearch kbVC500Search
+Version           : :1.0,1.5,1.51,2.0,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

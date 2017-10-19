@@ -1,0 +1,55 @@
+DOCUMENT:Q64269  17-OCT-1999  [win95x]
+TITLE   :Windows Accessories Do Not Save Page Settings
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you choose Page Setup from the File menu in Notepad, Cardfile, Calendar, or
+Paintbrush, the settings are not saved when the file is saved.
+
+CAUSE
+=====
+
+All accessory applications use a flat-file format and the formatting information
+is not saved with the file; therefore, it is not shown with its last settings
+when the file is opened.
+
+MORE INFORMATION
+================
+
+Note that this information applies to the version of Notepad included with
+Microsoft Windows 95 also.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3.10 3.1 win95 win95x
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

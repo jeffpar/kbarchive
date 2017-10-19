@@ -1,0 +1,57 @@
+DOCUMENT:Q302649  30-JUL-2001  [msnetwork]
+TITLE   :Account Master User Age Settings
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+After changing the age setting on the account to 13 years or younger, you cannot
+sign into MSN Companion.
+
+CAUSE
+=====
+
+By changing to age to the age of a minor (under the age of 13), MSN Companion
+recognizes the user as a Kid Passport account, and the MSN Companion does not
+utilize Kids Passport.
+
+RESOLUTION
+==========
+
+To resolve this issue
+
+ - Access your MSN account through a PC and correct the setting there. If you do
+   not have access to a pc, please contact Customer Service.
+
+Note: The MSN Companion product team is working to incorporate Kids Passport on
+MSN Companion.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

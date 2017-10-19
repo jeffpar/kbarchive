@@ -1,0 +1,73 @@
+DOCUMENT:Q188048  31-JUL-2001  [sms]
+TITLE   :SMS: Smsboot.exe Description and Syntax
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsmsUtil smsutil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Smsboot.exe, included in the Microsoft BackOffice Resource Kit: Part One, 1996,
+restarts a remote computer that runs Windows NT Server or Windows NT
+Workstation.
+
+Smsboot.exe runs on the following hardware platforms: Alpha, MIPS, x86.
+
+MORE INFORMATION
+================
+
+The following is a sample command line. The description of each option or switch
+is included below.
+
+      smsboot  -n:remote_computer  [-d:delay]  [-f]  [-m:"message"]  [-r]
+
+Where:
+
+ - "-n:remote_computer" specifies the NetBIOS machine name of a remote computer
+   to restart. Note that SMSBOOT cannot restart the local computer.
+
+ - "-d:delay" specifies the number of seconds before shutdown of the remote
+   computer. The default is 30.
+
+ - "-f" specifies that SMSBOOT will not wait for applications with pending
+   changes. The default is to wait for each application with a pending change.
+
+ - "-m:"message"" specifies a message to be displayed on the remote computer
+   console. The default is "Remote shutdown initiated."
+
+ - "-r" specifies that SMSBOOT will not prompt the remote computer console to
+   restart after shutdown. The default is to prompt before restarting.
+
+ - "/?" provides a usage statement.
+
+Additional query words: prodsms reboot rebooting rebooted
+
+======================================================================
+Keywords          : kbsmsUtil smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

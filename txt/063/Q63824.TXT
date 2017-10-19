@@ -1,0 +1,59 @@
+DOCUMENT:Q63824  25-OCT-1999  [win95x]
+TITLE   :386 Enhanced-Mode Windows on 2 MB 386 Computers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To successfully run 386 enhanced-mode Microsoft Windows on a 386 computer with
+only 2 MB of random access memory (RAM), you must have approximately 5 to 6 MB
+of free disk space. Without ample disk space, you experience problems printing
+and running MS-DOS applications. Print jobs either terminate prematurely or are
+garbled. MS-DOS applications report insufficient memory.
+
+MORE INFORMATION
+================
+
+The disk space is necessary for writing temporary files. In enhanced mode,
+Windows is dependent upon virtual memory to swap in and out code to and from the
+hard drive. If little disk space is free, then demand paging is disabled. Once
+this occurs, it is impossible to start additional MS-DOS applications without
+first closing others.
+
+As an alternative for freeing disk space, and as a system performance boost, it
+is possible to supplement the system's internal RAM with additional physical
+memory. Consult your hardware vendor for assistance in determining the system's
+needs.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

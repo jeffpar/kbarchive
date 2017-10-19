@@ -1,0 +1,70 @@
+DOCUMENT:Q142722  28-JUL-2001  [win95x]
+TITLE   :NDS Mapped Drives Inaccessible After Using Dial-Up Connection
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun 3rdpartynet win95 kb3rdPartyNetClient kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing the Microsoft Service for NetWare Directory Services (MSNDS) in
+Windows 95, if you use a Dial-Up Networking connectoid to connect remotely, you
+may lose access to drives mapped in your logon script. The mapped drives still
+appear in My Computer and Windows Explorer, but if you try to access one of the
+drives you receive the following error message:
+
+   <drive>:\ is not accessible. Access is denied.
+
+You can access the NetWare server without error using Network Neighborhood.
+Additionally, if you run the Novell NetWare WHOAMI command, you appear to be
+logged on.
+
+RESOLUTION
+==========
+
+Use the following steps to correct this problem:
+
+1. Click the Start button, point to Programs, point to Accessories, and then
+   click Dial-Up Networking.
+
+2. Use the right mouse button to click the connectoid you want to use, and then
+   click Properties on the menu that appears.
+
+3. Click Server Type, click the Log On To Network check box to clear it, and
+   then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. This
+problem is resolved in Microsoft Windows 98.
+
+
+======================================================================
+Keywords          : dun 3rdpartynet win95 kb3rdPartyNetClient kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q116380  03-AUG-2000  [foxpro]
+TITLE   :BUG: Semicolon in a Table Name Displays as Underscore
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A semicolon (;) in a table/.DBF name displays as an underscore (_) in the
+Browse, Edit, and View windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Table names with a semicolon appear normally in other components of FoxPro, such
+as the File Open dialog box.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In the Command window, type the following:
+
+         CREATE TABLE a;b (charfld C(10))
+         BROWSE
+
+2. Note that the name in the title bar of the Browse window is "A_b." Close the
+   Browse window.
+
+3. Type "EDIT" (without the quotation marks) in the Command window. Note that
+   the name in the title bar of the Edit window is "A_b." Close the Edit window.
+
+4. Type SET in the Command window to open the View window. Note that the table
+   name under Work Area is "A_b."
+
+Additional query words: vFoxmac FoxMac 3.00 buglist2.50b buglist2.50c semi-colon under-score underline under-line akz
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

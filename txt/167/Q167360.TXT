@@ -1,0 +1,53 @@
+DOCUMENT:Q167360  17-DEC-1999  [sms]
+TITLE   :SMS: Network Monitor - Print Advanced Should Use Radio Buttons
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbenv smsui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Advanced Printing options dialog box of Network Monitor, the Print Same
+As View and Expand All Levels options are mutually exclusive; these options
+should use radio buttons instead of check boxes. To locate these options in
+Network Monitor, click Print of the File menu, and then click Advanced.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: bh bloodhound prodsms netmon
+
+======================================================================
+Keywords          : kbenv smsui 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

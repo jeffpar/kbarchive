@@ -1,0 +1,61 @@
+DOCUMENT:Q200439  18-JUN-1999  [sms]
+TITLE   :SMSINST: Install Status MIF Files Are Not Created on Windows 95
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsms120 kbsms120bug kbsmsInst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Systems Management Server Installer script is compiled with WIN16/WIN32
+as its destination platform and then executed on a computer running Microsoft
+Windows 95, an Install Status MIF file may not be generated. This does not occur
+on computers running Windows NT, nor does it happen with Installer scripts
+compiled as True WIN32.
+
+WORKAROUND
+==========
+
+To work around this problem, compile your Installer executable selecting the
+True WIN32 destination platform. This can be done from the Global tab within the
+Advanced Configuration properties.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 1.0.
+
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsms120 kbsms120bug kbsmsInst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

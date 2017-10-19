@@ -1,0 +1,51 @@
+DOCUMENT:Q94673  08-DEC-1999  [win95x]
+TITLE   :HPPCL5E: Line Art Halftone Processing Not Available at 600DPI
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When setting the options in the Options dialog box of the Hewlett-Packard
+LaserJet 4/4m driver, HPPCL5E, the option to create line art halftones is not
+available when the resolution is set to 600DPI.
+
+Line art halftone processing is designed as a compromise to optimize some black
+and white bitmaps when printing at 300DPI. The setting is not needed at 600DPI.
+
+If the line art halftone processing was set under 300DPI and then the driver is
+switched to 600DPI, the halftone creation will be automatically changed to
+Photographic halftone processing.
+
+Additional query words: half tone toning halftoning win31 3.10 3.11 hp
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

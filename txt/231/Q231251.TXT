@@ -1,0 +1,66 @@
+DOCUMENT:Q231251  27-OCT-2000  [sms]
+TITLE   :SMS: IBM Networks Coordinated Logon Client Hangs Installation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The IBM Networks Coordinated Logon Client for Windows NT client software may
+cause the Systems Management Server (SMS) client installation process to stop
+responding (hang). When this occurs, the last log entry in the Wn_manual or
+Wn_logon.log file is "Waiting for 1 minute for CliSvc to start CCIM." The client
+installation process does not proceed, and the client computer may also hang.
+
+RESOLUTION
+==========
+
+To resolve this issue, please contact IBM Technical Support to obtain version
+4.2.4 or later of the IBM Networks Coordinated Logon Client for Windows NT
+client software.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q235043 SMS: Smsls Hangs Client with Unsupported Network Redirector
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kb3rdparty kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

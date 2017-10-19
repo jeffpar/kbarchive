@@ -1,0 +1,57 @@
+DOCUMENT:Q130793  31-JUL-2001  [sms]
+TITLE   :Remote Control Causes The SMS Administrator to GP Fault
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:95; winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Remotely controlling a Windows 95 client may cause the Systems Management Server
+Administrator to cause a General Protection (GP) Fault. The problem usually
+occurs after you switch back and forth between the various Helpdesk features.
+
+Also, after you exiting a remote session with a Windows 95 client you may
+experience problems establishing a new remote session.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem was corrected in the latest US Service Pack for
+Systems Management Server. For information on obtaining this update, query on
+the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: helpdesk diagnostics crash hang dr watson drwatson access violation sms.exe sms.dbg prodsms sms gpf
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS110
+Version           : WINDOWS:95; winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q240789  18-MAY-2001  [exchange]
+TITLE   :XADM: Directory Service Does Not Start with Error -1911
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows NT 4.0 
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Exchange Server directory service may not start, and the following events
+may be logged:
+
+   Source: MSExchangeDS
+   Event ID: 1166
+   Description: "Error -1911 has occurred. Internal ID 2030148"
+
+   Source: MSExchangeDS
+   Event ID: 1002
+   Description: "The MS Exchange database EDB could not be initialized and
+   returned error -1911"
+
+CAUSE
+=====
+
+This issue can occur if one or more dynamic-link library (DLL) files that are
+associated with the operating system are damaged, missing, or modified.
+
+RESOLUTION
+==========
+
+To resolve this issue, reapply the current service pack for the operating system
+and any fixes that were previously installed.
+
+Additional query words: 0x1EFA44, ERD, 0xFFFFF889, JET_errEntryPointNotFound, 4294965385
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbWinNTsearch kbWinNTSsearch kbExchangeSearch kbExchange550 kbExchange400 kbZNotKeyword2 kbGraph500
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

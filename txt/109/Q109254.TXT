@@ -1,0 +1,52 @@
+DOCUMENT:Q109254  10-NOV-1999  [pcmail]
+TITLE   :CONN: Guest Access to the MACGATE Volume Not Recommended
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the network connection to the Microsoft Mail for PC Networks postoffice
+volume is broken, the Microsoft Mail Connection gateway tries to reestablish the
+connection during the next gateway cycle. If the file server and the Mail for PC
+Networks postoffice volume are available, you are prompted to type in your
+password. After you do so, the Postoffice volume reappears on the Desktop and
+the gateway continues to deliver mail.
+
+Configuring Guest access to the Mail for PC Networks postoffice volume allows the
+gateway to remount the volume automatically without prompting for a password,
+but compromises the security of the postoffice. Macintosh users can mount the
+postoffice and view confidential information such as the Mail administrator's
+name and password stored in the MACGATE.INI file.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

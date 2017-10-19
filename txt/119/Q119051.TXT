@@ -1,0 +1,58 @@
+DOCUMENT:Q119051  18-NOV-1999  [pcmail]
+TITLE   :FAX: Macintosh ASCII Attachments Fax Incorrectly
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Files created and saved in ASCII on an Apple Macintosh, and sent through the
+Microsoft Mail Gateway to FAX, may wrap text lines back over themselves rather
+than to another line.
+
+ASCII documents created on an MS-DOS or Windows-based PC fax correctly.
+
+CAUSE
+=====
+
+The Macintosh saves documents in ASCII format with only a carriage return; the
+PC uses a carriage return plus a linefeed character.
+
+RESOLUTION
+==========
+
+Run the Macintosh ASCII document through a file format filter (such as MacSink)
+that adds a linefeed character to the end of each line.
+
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300 kbMailGateFax300a
+Version           : MS-DOS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

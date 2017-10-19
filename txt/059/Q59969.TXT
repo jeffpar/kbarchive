@@ -1,0 +1,57 @@
+DOCUMENT:Q59969  10-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Releasing Memory Used by Message Reference
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When getMessage is called, a block of memory is allocated and the message is
+read from the server. When you have finished reading fields from the message,
+you must call disposeMessage to release this memory. This does NOT delete the
+message from the mail server.
+
+Additionally, when a message is created, memory is allocated for it, and released
+automatically when the message is sent. If the message is not sent, then
+disposeMessage should be called to release that memory.
+
+      msmail (disposeMessage, messageRef)
+
+For related functions, query on the following words:
+
+   " disposeMessageList and disposeHandle " (without the quotation marks)
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

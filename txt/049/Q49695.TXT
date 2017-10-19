@@ -1,0 +1,55 @@
+DOCUMENT:Q49695  30-JUL-2001  [homegame]
+TITLE   :Options Saved When a Flight Mode Is Created
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The following items are saved in a created flight mode in Flight Simulator
+versions 3.00 and 4.00:
+
+   Mode title
+   Aircraft position and altitude
+   Pitch, bank, and heading
+   Size for first and second 3-D windows
+   View menu status information
+   Sim menu status information
+   Time of day and season
+   Partial panel selections
+   Winds and clouds
+   Stick and mouse sensitivities
+   Realism and reliability
+   NAV COM and ADF radio settings
+   CFPD information, tower position
+
+A listing of the options to be saved can be obtained by pressing 1, then F, and
+then 8 after starting Flight Simulator.
+
+Note: The season selection is retained if the saved mode is activated during the
+current Flight Simulator session, but if the computer is rebooted the season
+returns to the default "Winter" setting the next time the mode is loaded.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

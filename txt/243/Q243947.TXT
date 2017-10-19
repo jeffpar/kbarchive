@@ -1,0 +1,60 @@
+DOCUMENT:Q243947  04-FEB-2000  [iis]
+TITLE   :FTP Service Not Installed by Default in IIS 5.0
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Information Services (IIS) version 5.0 does not install the
+FTP service by default. This is by design.
+
+MORE INFORMATION
+================
+
+To install the FTP service, use the following steps:
+
+1. In Control Panel, click Add/Remove Programs.
+
+2. Select Add/Remove Windows Components.
+
+3. Select Internet Information Services.
+
+4. Click to check the File Transfer Protocol check box.
+
+5. Click OK.
+
+6. Click Finish.
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

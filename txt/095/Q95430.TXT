@@ -1,0 +1,64 @@
+DOCUMENT:Q95430  23-DEC-2000  [vbwin]
+TITLE   :BUG: GPF/UAE If Multi-Select Controls w/ No Common Properties
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A general protection (GP) fault or unrecoverable application error (UAE) may
+occur when you select multiple custom controls that have no properties in
+common.
+
+For example, if you add the VBSQL.VBX custom control from the Microsoft SQL
+Server Programmer's Toolkit for Visual Basic and then select it and the Timer
+control while holding down the CTRL key, you will encounter a GP fault or UAE.
+
+CAUSE
+=====
+
+The problem occurs because there are no properties in common between the Timer
+control that comes with Visual Basic and the VBSQL.VBX control. This usually
+isn't a problem because most custom controls contain at least the Tag property.
+There are only a few exceptions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in both the Standard and Professional
+Editions of Microsoft Visual Basic versions 2.0 and 3.0 for Windows. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: buglist2.00 buglist3.00 2.00 3.00 GPF multiselect
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

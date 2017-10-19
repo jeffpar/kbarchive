@@ -1,0 +1,57 @@
+DOCUMENT:Q135233  10-NOV-1999  [pcmail]
+TITLE   :CONN: Connection Downstream Component Can Be Created Manually
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A Microsoft Mail for PC Networks downstream Connection Gateway postoffice can be
+created without the need to use the Connection Setup disk. You can create an
+external postoffice definition by running ADMIN.EXE and selecting
+External_Admin, Create. Then declare the proxynet/proxypo as being indirect via
+the gateway servers network_name/postoffice_name.
+
+MORE INFORMATION
+================
+
+Even though Mail for PC Networks users will be able to get details and see the
+server name associated with the gateway address, the users will lose the ability
+to one-off address to AppleTalk Mail users if the administrator chooses to
+create the downstream definition without the Setup disk.
+
+Microsoft recommends that you use the version 3.2 Mail Connection Setup disk
+whenever possible.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

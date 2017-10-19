@@ -1,0 +1,98 @@
+DOCUMENT:Q214756  27-JUL-2001  [winnt]
+TITLE   :"Path Not Found" When Connecting to a Novell NetWare Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork 3rdpartynet kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a Novell NetWare server with a computer running
+Microsoft Windows NT 4.0 using Gateway (and Client) Services for NetWare (GSNW),
+you may receive the following error message:
+
+   Error 53 - The network path is not found
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Verify that the GSNW software is properly installed. Click Start, point to
+   Settings, click Control Panel, and then double-click Network.
+
+2. Click the Services tab, click Gateway Service for NetWare, click Remove, and
+   then click Yes.
+
+3. Click the Protocols tab, click NWLink IPX/SPX Compatible Transport, click
+   Remove, click Yes, click Close, and then restart the computer when you are
+   prompted.
+
+4. After the computer restarts and you log on, click Start, point to Settings,
+   click Control Panel, and then double-click Network.
+
+5. Click the Protocols tab, click Add, and then double-click NWLink IPX/SPX
+   Compatible Transport. When you are prompted, type the full path to the
+   installation files folder (for example, D:\I386), and then click Continue.
+
+6. When you are prompted to restart the computer, click Do Not Restart Windows.
+
+7. Reapply the latest Windows NT 4.0 service pack. For information about
+   obtaining and installing the latest service pack for Windows NT 4.0, see the
+   following article in the Microsoft Knowledge Base:
+
+   Q152734How to Obtain the Latest Windows NT 4.0 Service Pack
+
+8. Restart the computer when the service pack installation is complete.
+
+9. Verify that you have properly configured a preferred NetWare server when you
+   log on. Click Start, point to Settings, click Control Panel, and then
+   double-click GSNW.
+
+10. In the list of available NetWare servers, click the appropriate server name,
+   and then click OK.
+
+11. Verify that the NWLINK IPX/SPX protocol is configured correctly. For
+   information on how to do this, please refer to the following article in the
+   Microsoft Knowledge Base:
+
+   Q166963Cannot Communicate with Computer Running NWLink IPX/SPX
+
+   NOTE: You can obtain the correct values for your network installation by
+   typing "config" (without the quotation marks) at a NetWare server console
+   command line.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 3rdpartynet kb3rdPartyNetClient 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

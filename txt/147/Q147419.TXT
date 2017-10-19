@@ -1,0 +1,64 @@
+DOCUMENT:Q147419  08-NOV-2001  [homemm]
+TITLE   :Macintosh Frank Lloyd Wright: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft The Ultimate Frank Lloyd Wright for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains a copy of the minimum system requirements
+information printed on the Microsoft The Ultimate Frank Lloyd Wright for the
+Macintosh program package.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run The Ultimate Frank Lloyd Wright for the
+Macintosh are:
+
+ - Any Apple Macintosh computer supporting a 256-color, 640x480 resolution
+   (13-inch), or higher resolution monitor.
+
+ - System 7 or later.
+
+ - Minimum 8 MB RAM memory.
+
+ - Minimum 2 MB available hard-disk space.
+
+ - Double-speed CD-ROM: The CD-ROM drive should be able to transfer data from
+   the CD-ROM drive at 300 KB per second while using less than 40 percent of the
+   CPU bandwidth and has an average seek time of less than 400 milliseconds.
+
+ - Speakers or headphones recommended.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbGamesSearch kbZNotKeyword kbUltimateFLWMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

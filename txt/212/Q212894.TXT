@@ -1,0 +1,63 @@
+DOCUMENT:Q212894  23-APR-2000  [sms]
+TITLE   :SMS: Windows Clients Cannot Connect to Software Metering Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbenv kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Software Metering on a Microsoft Windows 95/98 Systems
+Management Server (SMS) 2.0 client, the client only connects to one Software
+Metering server even if there are multiple Software Metering servers in the
+site. If the original Software Metering server the client connected to is
+unavailable, the client may repeatedly try to connect to the original Software
+Metering server.
+
+CAUSE
+=====
+
+A Client Configuration Installation Manager (CCIM) cycle (every 23 hours by
+default) has not occurred.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Wait for a CCIM cycle to occur.
+
+ - Restart the client.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

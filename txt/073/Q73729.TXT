@@ -1,0 +1,66 @@
+DOCUMENT:Q73729  19-NOV-1999  [msdos]
+TITLE   :Using an Expanded Memory Board with EMM386.EXE
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0; WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+ - Microsoft Windows 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to use an expanded memory board on a 386 machine and still use
+EMM386.EXE to load devices into the upper memory area (UMA). However, you must
+configure the memory on the board as extended memory.
+
+MORE INFORMATION
+================
+
+To use an expanded memory board in conjunction with EMM386, do the following:
+
+1. Configure the EMM board as extended.
+
+2. Enter the expanded memory board device driver first in the CONFIG.SYS file.
+
+3. After entering the HIMEM line, use the EMM386 statement. Exclude the address
+   range of the memory board's page frame.
+
+An example of this technique is:
+
+   CONFIG.SYS
+   DEVICE=C:\EMMBORD.SYS
+   DEVICE=C:\DOS\HIMEM.SYS
+   DEVICE=C:\DOS\EMM386.EXE RAM 1024 X=C000-C7FF
+
+This information applies to EMM386.SYS in MS-DOS version 4.xx, and Windows 3.0.
+Some expanded memory boards may be incompatible with the EMM386 command.
+
+Additional query words: 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0; WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

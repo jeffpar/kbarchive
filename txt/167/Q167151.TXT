@@ -1,0 +1,112 @@
+DOCUMENT:Q167151  09-AUG-2001  [winnt]
+TITLE   :Error Message: Setup Cannot Find Oemsetup.inf or Oemsetnt.inf
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to add a driver in Windows NT, you may receive the following
+error message:
+
+   Setup cannot find Oemsetup.inf or Oemsetnt.inf. Please type a new path to the
+   Oemsetup.inf file.
+
+This message may appear even though the Oemsetup.inf or Oemsetnt.inf file exists
+in the location specified during the installation of the driver.
+
+CAUSE
+=====
+
+The [PlatformsSupported] section of the .inf file may not list a bus type (EISA,
+ISA, and so on) that exists on your computer.
+
+RESOLUTION
+==========
+
+Make sure that the .inf file contains the correct information for your
+computer's bus type in the [PlatformsSupported] section.
+
+You must also make sure that you are installing the proper driver for your
+computer's bus type. You cannot install a driver that was specifically written
+for a bus type other than the type available on your computer.
+
+MORE INFORMATION
+================
+
+Either an Oemsetup.inf or an Oemsetnt.inf file is required to provide
+installation instructions for adding a driver. The Oemsetup.inf or Oemsetnt.inf
+file contains a [PlatformsSupported] section similar to the following sample
+section:
+
+   [PlatformsSupported]
+   EISA
+   "Jazz-Internal Bus"
+   ISA
+   PCI
+
+3c619c Network Adapter Driver
+-----------------------------
+
+The driver for the 3c619c network card (3Com TokenLink III ISA) in the
+Drvlib\Netcard\X86 folder on the Windows NT 4.0 CD-ROM may generate this error
+message. This driver is an ISA driver, but ISA is not listed in the
+[PlatformsSupported] section of the .inf file.
+
+To correct this problem, use the following steps:
+
+1. Copy the files from the Drvlib\Netcard\X86\3C619C folder on the Windows NT
+   4.0 CD-ROM to a folder on the hard disk.
+
+2. Remove the Read-Only attribute from the Oemsetup.inf file by using the right
+   mouse button to click the file, clicking Properties, and then clicking the
+   Read-Only check box to clear it.
+
+3. Edit the Oemsetup.inf file and add ISA to the [PlatformsSupported] section so
+   that the section looks like:
+
+      [PlatformsSupported]
+       EISA
+       "Jazz-Internal Bus"
+       ISA
+
+4. Save and close the Oemsetup.inf file, and then add the network adapter driver
+   as you normally would. When you are prompted for the driver files, point to
+   the files on the hard disk (that you copied in step 1).
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: drvlib.nic
+
+======================================================================
+Keywords          : kberrmsg kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,106 @@
+DOCUMENT:Q240866  03-MAY-2001  [visualc]
+TITLE   :BUG: C2989 and C2988 on Class Template Partial Specializations
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbtemplate kbCompiler kbCPPonly kbVC500 kbVC500bug kbVC600 kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may get the following error message if you try to use class template partial
+specializations:
+
+   error C2989: 'A<T,2>' : template class has already been defined as a
+   non-template class error C2988: unrecognizable template
+   declaration/definition
+
+Please refer to the sample in the More Information section for details.
+
+CAUSE
+=====
+
+The compiler does not support class template partial specializations as
+specified in the C++ Standard (14.5.4.1) quoted here:
+
+   1- A primary class template declaration is one in which the class template
+   name is an identifier. A template declaration in which the class template
+   name is a template-id, is a partial specialization of the class template
+   named in the template-id. A partial specialization of a class template
+   provides an alternative definition of the template that is used instead of
+   the primary definition when the arguments in a specialization match those
+   given in the partial specialization (temp.class.spec.match). The primary
+   template shall be declared before any specializations of that template. If a
+   template is partially specialized then that partial specialization shall be
+   declared before the first use of that partial specialization that would cause
+   an implicit instantiation to take place, in every translation unit in which
+   such a use occurs; no diagnostic is required.
+
+Please refer to the C++ Standard section 14.5.4 for more information on this.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code sample demonstrates the error.
+
+   //test.cpp
+   // compiler option needed: none
+
+   //  primary template
+   template<class T, int I> struct A {
+   	void f();
+   };
+
+   template<class T, int I> void A<T,I>::f() { }
+
+   //  class template partial specialization
+   template<class T> struct A<T,2> {
+   	void f();
+   	void g();
+   	void h();
+   };
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate kbCompiler kbCPPonly kbVC500 kbVC500bug kbVC600 kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

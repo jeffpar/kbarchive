@@ -1,0 +1,56 @@
+DOCUMENT:Q271618  26-MAY-2001  [homemm]
+TITLE   :Cannot Open Research Organizer Files in Encarta Researcher
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Africana, Third Edition 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+ - Microsoft Encarta Interactive World Atlas 2001 
+ - Microsoft Encarta Reference Suite 2001 
+ - Microsoft Encarta Researcher 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot open a research file that you created using Microsoft Encarta
+Research Organizer in Microsoft Encarta Researcher (the updated version of
+Encarta Research Organizer that is included with the products listed at the
+beginning of this article).
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm unable ero
+
+======================================================================
+Keywords          : kbtool kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaAfricana300 kbEncartaReference2001 kbEncartaWorldAtlas2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

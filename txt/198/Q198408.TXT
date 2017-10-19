@@ -1,0 +1,448 @@
+DOCUMENT:Q198408  10-AUG-2001  [winnt]
+TITLE   :Microsoft DNS Server Registry Parameters, Part 1 of 3
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+This article consists of 3 parts and describes settings for the Microsoft Domain
+Name Service (DNS) SERVER. You can modify most settings using the DNSADMIN tool,
+although some settings can only be altered using Registry Editor.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q198409 Microsoft DNS Server Registry Parameters, Part 2 of 3
+
+   Q198410 Microsoft DNS Server Registry Parameters, Part 3 of 3
+
+MORE INFORMATION
+================
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+To change these parameters, use the following procedure:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+     \SYSTEM\CurrentControlSet\Services
+
+3. From the Edit menu, click Add Value and add a value to the key described in
+   the appropriate entry below. Type in the value, and use the "Data Type" check
+   box to set the value type.
+
+4. Click OK.
+
+5. Quit Registry Editor.
+
+6. Restart the DNS Server for the above changes to take affect.
+
+All of the DNS parameters are registry values located under subkeys of:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS\parameters 
+
+Server Parameters
+-----------------
+
+Several registry parameters determine behavior of the entire server. Each of
+these is a registry value under
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DNS\Parameters
+
+NOTE: These registry keys are read only at startup. Some may be reset and, in
+some cases, the server behavior dynamically changed, through the DNS
+Administrator. But if manually reset the DNS server MUST be restarted to pick up
+the new value.
+
+BootMethod
+----------
+
+   Value:      BootMethod
+   Added:    SP4 (April 98)
+   Type:     DWORD
+   Defaul    NoKey
+   Functio   Determine boot method.
+
+This key determines the source of the DNS boot information server configuration,
+and list and configuration of authoritative zones. This key makes the
+EnableBootMethod key (see below) obsolete.
+
+NOTE: If the EnableRegistryBoot key is read, the DNS server will read its value
+to determine the proper value of the BootMethod key; no administrator
+intervention is required. The EnableRegistryBoot key is kept around for backward
+compatibility.
+
+There are three possible sources of boot information and three possible
+BootMethod values:
+
+   #define BOOT_METHOD_UNINITIALIZED   (0)
+   #define BOOT_METHOD_FILE            (1)
+   #define BOOT_METHOD_REGISTRY        (2)
+
+ - When starting from a file, the DNS server attempts to locate a traditional
+   BIND-style boot file. The file must be in the System32\Dns folder and be
+   named <boot>. Note that, when starting from a boot file, the DNS server
+   will still read server registry parameters that have no boot file analog.
+   However, some server registry parameters may be configured in standard boot
+   files:
+
+    - Forwarders
+
+    - Slave
+
+    - NoRecursion
+
+   For these, any existing registry entry will be deleted, whether or not they
+   are specified in the boot file.
+
+   NOTE: New versions of BIND have a new boot file style to attempt to provide a
+   similar level of detailed control available in the Windows NT DNS server.
+   This new style is NOT supported. Users should simply configure the DNS server
+   through the DNS Manager and use registry or directory boot.
+
+ - For a registry boot, all the server and zone configuration information is
+   read from the registry. It is located in:
+
+      \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS.
+
+Starting with Windows NT 4.0 SP4, the DNS server is able to write back a boot
+file. Thus, administrator updates that alter boot file information cause a new
+boot file to be written back. Furthermore, when starting from the boot file, the
+server will still check existing registry zone information for values (for
+example, notify lists, secure secondaries) that can not be specified in a boot
+file.
+
+EnableRegistryBoot
+------------------
+
+   Value:      EnableRegistryBoot
+   Added     Windows NT 4.0
+   Type:     DWORD (Boolean)
+   Defaul    NoKey
+   Function: Determine boot method.
+
+Use of this key is only for pre-Service Pack 4 versions of Dns.exe; see above key
+"BootMethod" for explanation.
+
+If the key does not exist or is 0, the server attempts to find a "boot" file in
+the DNS directory and use it to determine server configuration and authoritative
+zones. If the boot file is NOT found, the server will start up with no
+authoritative zones as a caching-only server (a message is logged to this
+effect).
+
+If the key is nonzero, DNS starts using only registry information, and the boot
+file, if any, is ignored.
+
+
+RpcProtocol
+-----------
+
+   Value:      RpcProtocol
+   Added:    Windows NT 4.0
+   Type:     DWORD
+   Default:  0xffffffff (Use all protocols)
+   Function: Determine which protocols administrative RPC runs over
+
+If the key is nonzero, the key value is matched bit-wise against available RPC
+protocols:
+
+   TCP/IP      -- 0x1
+   NamedPipes  -- 0x2
+   LPC         -- 0x4
+
+For those protocols contained in the key, the DNS server sets up RPC endpoints to
+allow connections over those protocols from the admin tool.
+
+Disabling RPC:
+
+If a computer is on the Internet, it is often desirable to disable RPC. If this
+is being done for the entire computer, the DependOnService DNS server key (this
+is under DNS key, not under DNS\Parameters) should be edited to remove the last
+two entries, RpcSS and NtLmSsp. This eliminates the dependency of the DNS server
+on RPC and the standard Windows NT network security information, allowing it to
+boot without those services.
+
+
+Starting with Windows NT 4.0 SP4, the code is more responsive to a desire to turn
+RPC off. Setting the RpcProtocol key to zero will suffice.
+
+EventLogLevel
+-------------
+
+   Value:      EventLogLevel
+   Added:    SP4 (April 98)
+   Type:     DWORD
+   Default:  NoKey (Log all events)
+   Function: Determines level of logging to event log.
+
+The DNS server can generate quite a few events of both a serious and a routine
+nature. This key allows the administrator to limit the logging to the level
+preferred.
+
+The value of the key is the value of the LEAST serious event the DNS server will
+log, with the event types taken directly from the Win32 SDK:
+
+   #define EVENTLOG_ERROR_TYPE             0x0001
+   #define EVENTLOG_WARNING_TYPE           0x0002
+   #define EVENTLOG_INFORMATION_TYPE       0x0004
+
+Examples: By default, a nonexistent EventLogLevel key has the value 4, and all
+events are logged. To log only warning and error events, set the registry key to
+2. To log only errors, set the registry key to 1. To disable event logging
+completely, set the registry key to 0.
+
+LogLevel
+--------
+
+   Value:      LogLevel
+   Added:    SP4 (April 98)
+   Type:     DWORD (Bitfield)
+   Default:  NoKey (Zero -- No logging)
+   Function: Determines level of logging to file (Dns.log).
+
+The DNS server can generate a more detailed log than is practical to include in
+the Windows NT event log. This includes everything from simply including events
+excluded from the event log, to a summary of every packet in and out of the
+server.
+
+The registry key is a DWORD bit field indicating the various portions of logging
+to enable:
+
+   #define DNS_LOG_LEVEL_ALL_PACKETS      0x0000ffff
+   #define DNS_LOG_LEVEL_NON_QUERY        0x000000fe
+   #define DNS_LOG_LEVEL_QUERY            0x00000001
+   #define DNS_LOG_LEVEL_NOTIFY           0x00000010
+   #define DNS_LOG_LEVEL_UPDATE           0x00000020
+   #define DNS_LOG_LEVEL_QUESTIONS        0x00000100
+   #define DNS_LOG_LEVEL_ANSWERS          0x00000200
+   #define DNS_LOG_LEVEL_SEND             0x00001000
+   #define DNS_LOG_LEVEL_RECV             0x00002000
+   #define DNS_LOG_LEVEL_UDP              0x00004000
+   #define DNS_LOG_LEVEL_TCP              0x00008000
+   #define DNS_LOG_LEVEL_DS_WRITE         0x00010000
+   #define DNS_LOG_LEVEL_DS_UPDATE        0x00020000
+   #define DNS_LOG_LEVEL_FULL_PACKETS     0x01000000
+   #define DNS_LOG_LEVEL_WRITE_THROUGH    0x80000000
+
+NoRecursion
+-----------
+
+   Value:      NoRecursion
+   Added:    Windows NT 4.0
+   Type:     DWORD (Boolean)
+   Default:  NoKey  (Do recursion)
+   Function: Determine whether or not server does recursive lookups.
+
+DNS server can answer queries for names outside of their authoritative zones in
+two ways:
+
+ - Referral: Respond to query with the list (NS and A records) of "closest"
+   servers to the queried name that it knows.
+
+ - Recursion: Send query on to the "closest" DNS server to the queried name that
+   it knows, and continue process (if necessary) until it gets a response back
+   for the original query. Then send the response back to the client. A bit in
+   the header of the DNS packet indicates the method preferred by the client.
+
+If the NoRecusion key does not exist or is zero, the DNS server uses whichever
+method is requested in the packet.
+
+If the NoRecursion key is nonzero, the DNS server always uses referral regardless
+of the client request. NoRecursion would generally be used when clients are
+being limited to resolving names on a given server (for example, names on an
+intranet), or when the server is incapable of resolving external names and the
+clients are expected to fall over to another DNS server for resolution of
+external (Internet) names.
+
+Forwarders
+----------
+
+   Value:      Forwarders
+   Added:    Windows NT 4.0
+   Type:     BINARY
+   Default:  NoKey (No forwarders)
+   Function: Determines forwarders server list.
+
+DNS servers may be configured to send all their recursive queries to a selected
+list of servers. Queries to these forwarders are done recursively (as a normal
+client query), rather than iteratively. The forwarder contacts the remote server
+or servers until it gets the response and responds to the DNS server with the
+complete query response, suitable for sending back to the client. During this
+process, the DNS server using forwarders essentially behaves as a DNS client to
+the forwarding server.
+
+This behavior is often desirable when access to remote DNS servers (on the
+Internet) requires use of a slow or more expensive link. Using forwarders can
+cut down on expensive traffic in two ways.
+
+ - Cutting traffic across slow links.
+
+   Example: Your DNS has a slow expensive dial-up connection to an ISP. When the
+   DNS receives a query for a remote name, it can directly contact remote
+   servers on the Internet until it can determine the authoritative server for
+   the name, contact it, and get a response. This may involve several queries
+   across the slow link. It is better to specify (if allowed) the ISP's DNS
+   server on the Internet as a forwarder. The query is forwarded to this server
+   and it does all the remote queries and responds only when it has the complete
+   answer. This is a single round trip across the slow link.
+
+ - Sharing remote results.
+
+   Example: Your organization has several DNS servers on a LAN. Rather than have
+   each server try and send queries through a firewall and out to the Internet,
+   all the DNS servers are configured to forward queries to one DNS server
+   (perhaps sitting on the firewall), which makes the necessary queries to the
+   remote servers. In the process, this forwarding server will build up a rich
+   cache from the responses it receives. And, when a local DNS server forwards a
+   query to it, there is a reasonable chance that it already has the answer (or
+   a head start on getting to the answer) from a previous query it answered for
+   another DNS server. Thus, the total amount of remote traffic is reduced.
+
+The forwarders list is a list of IP addresses of servers to forward to. One
+server should be preferred (to preferentially build up its cache), but more than
+one should generally be given. Retries are indicated by repeating entries.
+
+The Forwarders key is a list of IP addresses for the DNS server to forward to.
+The list is not dotted IP strings, but a counted array of raw addresses in net
+byte order. It should be configured through the Server Properties, Forwarders
+dialog box in the Administrator tool. Editing the registry key is discouraged.
+If the Forwarders key exists, the DNS server forwards to servers in the list. If
+the Forwarders key does not exist, the DNS server uses the normal iterative
+query process to answer recursive queries for remote names.
+
+IsSlave
+-------
+
+   Value:      IsSlave
+   Added:    Windows NT 4.0
+   Type:     DWORD (Boolean)
+   Default:  NoKey (Not a slave)
+   Function: Determine if slave server.
+
+When a DNS server is using Slave (and Forwarders -- see Forwarders key
+description), it can stop and fail the query when it does not get a response
+from any of the forwarders servers /Vs Forwarders: configuration where the DNS
+server can attempt to resolve the query itself using normal iterative queries.
+The key is NOT read if Forwarders are not configured. If the IsSlave key does
+not exist or is zero, the DNS falls back to normal recursive query resolution
+when forwarders fail to respond.
+
+If the IsSlave key is nonzero, the server fails (answers the original query with
+SERVER_FAILURE) when the forwarders do not respond.
+
+Do NOT change this key. Use the Forwarders dialog box in the DNS Administrator
+tool to set forwarding properties. If this key is deleted while forwarders are
+configured, the server may fail to start or fail to resolve remote names
+properly.
+
+ForwardingTimeout
+-----------------
+
+   Value:      ForwardingTimeout
+   Added:    Windows NT 4.0
+   Type:     DWORD
+   Default:  NoKey
+   Function: Set forwarding timeout.
+
+When using forwarders, queries are sent to each forwarder in the list, which is
+given a timeout within which to respond before the next forwarder is tried. The
+ForwardingTimeout key is read ONLY when forwarders are configured. Its value
+determines the forwarding timeout in seconds.
+
+Do NOT adjust this key. Use the Forwarders dialog box in the DNS Administrator
+tool to set forwarding properties. If this key is deleted while forwarders are
+configured, the server may fail to start or fail to resolve remote names
+properly.
+
+ForwardDelegations
+------------------
+
+   Value:      ForwardDelegations
+   Added:    SP4 (April 1998)
+   Type:     DWORD (Boolean)
+   Default:  NoKey (Do NOT forward delegations.)
+   Function: Determine whether queries to delegated sub-zones are
+   forwarded.
+
+Queries to delegations are sent directly, not forwarded.
+
+Example:
+
+A server hosts samples.microsoft.com and it is set up to forward across a
+firewall to ns.isp.com. Another server has a delegation for
+finance.samples.microsoft.com to ns.finance.samples.microsoft.com, a computer
+inside the firewall. If the second server receives a query for
+golf-schedule.finance.samples.microsoft.com, the desired behavior is NOT to send
+the query out to the forwarder. Rather it should send it directly to
+ns.finance.samples.microsoft.com.
+
+
+The ForwardDelegations value allows you to revert to previous forward everything
+behavior. This would only be desired when the delegation itself was at a remote
+site that was reachable through the forwarder.
+
+MaxCacheTtl
+-----------
+
+   Value:      MaxCacheTtl
+   Added:    SP4 (April 1998)
+   Type:     DWORD
+   Default:  NoKey (Cache for up to one day)
+   Function: Set maximum caching TTL.
+
+Records from recursive queries are cached by the DNS server. The length of time
+they remain in the cache is determined by the TimeToLive (TTL) field in the
+record. This field is a DWORD giving the caching time in seconds; therefore, the
+TTL can be quite long. Limiting the caching time can help limit the memory used
+by the cache and make sure that stale data does not accumulate in the cache.
+
+
+Additional query words: flags
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

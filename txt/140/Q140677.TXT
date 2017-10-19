@@ -1,0 +1,68 @@
+DOCUMENT:Q140677  03-AUG-2001  [visualc]
+TITLE   :FIX: Go Back Button in InfoView Viewer Window Is Disabled
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC410fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the infoview viewer window, when an item is selected from the See Also
+drop-down list, the Go Back button on the toolbar of the window may be disabled
+after the new topic comes up.
+
+RESOLUTION
+==========
+
+To go back to the previous topic, you need to search for the topic again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+MORE INFORMATION
+================
+
+To reproduce this behavior, select the Project Workspace window, and press the
+F1 key to bring up help for the Project Workspace Window. In the viewer window,
+click the See Also button, and select a different topic in the drop- down list.
+Once help on that topic comes up, the Go Back button cannot be used to go back
+to the previous topic.
+
+You may also see this behavior in the regular help viewer window, but it does not
+happen very often.
+
+Additional query words: kbVC400bug 4.00 4.10 infoviewer alwaysupdate dskbsweep
+
+======================================================================
+Keywords          : kbide kbVC kbVC410fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,94 @@
+DOCUMENT:Q126273  12-FEB-2000  [foxpro]
+TITLE   :PRB: Columns Missing in .DBF File Created in Microsoft Excel
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.6a,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, version 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you save a spreadsheet as type "DBF3" in Microsoft Excel, some of the
+columns are missing when you open the file in FoxPro.
+
+CAUSE
+=====
+
+The field name for one or more columns contains invalid characters. FoxPro is
+unable to read the Excel column that contains an invalid field name, or any
+column following the invalid name.
+
+WORKAROUND
+==========
+
+Change the column heading to a valid FoxPro field name. A valid field name can
+contain up to 10 letters, digits, or underscores, and it must begin with a
+letter or an underscore.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new spreadsheet in Microsoft Excel version 4.0 (or higer) for
+   Macintosh.
+
+2. In the first row of the spreadsheet, place the following information:
+
+   Column A - CNO
+   Column B - Company
+   Column C - State
+   Column D - <CredLimit
+   Column E - Phone
+
+3. Fill cells A2 through E4 with any data. Highlight the entire range A1 through
+   E4, and name the range "database." The steps to do this will depend on the
+   Excel version. In Excel version 5.0, for example, name the range by choosing
+   Name from the Insert menu, selecting Define, and typing "database" in the
+   Define Name dialog box below the Names in Workbook: prompt. The shortcut key
+   to invoke the Define Name dialog is Command + L.
+
+4. Choose Save As from the File menu, and save the file as TEST.DBF with a DBF3
+   file format. The actual steps will depend on the Excel version.
+
+5. Close Excel. Launch FoxPro, and issue these commands:
+
+      USE <folder name>test.dbf
+      BROWSE
+
+Additional query words: VFoxMac FoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.6a,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

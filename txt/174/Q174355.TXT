@@ -1,0 +1,53 @@
+DOCUMENT:Q174355  14-MAY-1999  [exchange]
+TITLE   :XADM: Msf32.dll Error During Migration From MS Mail to Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are attempting to migrate MS Mail users to Microsoft Exchange Server
+using the Exchange Migration Wizard and you click Next to go to the third page,
+the following pop-up error occurs:
+
+   Unable to use MSFS32.dll. Verify that this DLL exists in the path and
+   that its version matches the version of MLMIG32.dll.
+
+WORKAROUND
+==========
+
+To work around this problem, copy Msfs32.dll from the Exchange Server compact
+disc in the Setup\<platform> directory and paste it into the working
+directory of <drive letter>\exchsrvr\bin.
+
+
+Additional query words: migration, XFOR, MS Mail, MSFS32.DLL, MLMIG32.DLL
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

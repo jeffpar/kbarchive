@@ -1,0 +1,63 @@
+DOCUMENT:Q239119  17-DEC-2000  [win95x]
+TITLE   :BUG: FDISK Reports Incorrect Disk Capacity for PCMCIA ATA Drives
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbOSWin95bug kbOSWin98bug kbDSupport kbGrpDSWin9xDDK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+FDISK, when run from an MS-DOS box after Windows has been started, reports the
+wrong disk size for PCCARD-based ATA drives that contain a storage capacity
+greater than 1023 cylinders. This issue generally applies to disk drives that do
+not appear in real mode prior to protected-mode Windows (this problem occurs,
+for example, with drives where the controller has no BIOS extension, so MS-DOS
+has no way of knowing that they exist).
+
+CAUSE
+=====
+
+A bug in the IDE device driver, Esdi_506.pdr, results in FDISK using INT 13
+function 8 to obtain disk geometry information. This function truncates the
+cylinder count to a 10-bit value.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin95bug kbOSWin98bug kbDSupport kbGrpDSWin9xDDK 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

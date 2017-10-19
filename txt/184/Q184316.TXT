@@ -1,0 +1,60 @@
+DOCUMENT:Q184316  06-MAY-1999  [iis]
+TITLE   :Unable to Return Custom HTML Properties in Result Set
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:1.0,1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to return the value of custom HTML properties on the .htx results
+page, no error message appears, but no data is displayed for the property value.
+
+CAUSE
+=====
+
+In order for custom HTML property values to be displayed, these properties must
+be added to the properties cache. This cannot be done with Index Server 1.x.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to the Windows NT Option Pack. This contains
+Index Server 2.0, which allows custom HTML properties to be cached.
+
+MORE INFORMATION
+================
+
+Index Server allows you to create custom properties for META tags within HTML
+documents. You can then query on the contents of these tags but not display the
+contents.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ110
+Version           : WINNT:1.0,1.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

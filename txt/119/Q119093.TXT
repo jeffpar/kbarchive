@@ -1,0 +1,60 @@
+DOCUMENT:Q119093  17-DEC-2000  [win95x]
+TITLE   :Criteria for Determining When the Task Bar Is Hidden
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the criteria Windows 95 uses to determine whether or not
+the task bar is hidden when a window becomes full screen.
+
+MORE INFORMATION
+================
+
+The criteria are as follows:
+
+ - The window is not a tool window.
+
+ - The window is either not maximized, or it is maximized but doesn't have a
+   caption.
+
+ - The window is being sized such that it covers the entire work area.
+
+ - The window is being sized such that one or more sides extend outside the work
+   area.
+
+If all four conditions are met, a state bit is set on that window. Then, whenever
+a window with that state bit (or a window that is owned by a window with that
+state bit) is activated, the task bar is hidden to allow the full-screen window
+to be displayed.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

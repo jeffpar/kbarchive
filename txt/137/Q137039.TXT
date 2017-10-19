@@ -1,0 +1,125 @@
+DOCUMENT:Q137039  02-NOV-2001  [vbwin]
+TITLE   :New Features in Microsoft Jet Version 3.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbref
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Jet 3.0 database engine used by Microsoft Visual Basic version 4.0
+has many functional improvements over previous versions. This article briefly
+describes some of these improvements and summarizes their effect in contrast
+with previous versions.
+
+MORE INFORMATION
+================
+
+Improvements in Microsoft Jet 3.0 database engine:
+
+ - New index structure. This results in substantial reduction in storage size
+   and significant reduction in time to create indices that are highly
+   duplicated.
+
+ - No more read locks on index pages. This will remove many locking conflict
+   issues and remove the need for users to call FreeLocks in Visual Basic.
+
+ - New mechanism for page reuse. In Microsoft Jet 2.x, if a user deleted a lot
+   of data, the last user out would pay a substantial time penalty while the
+   recycled page identifiers were being processed into available page
+   identifiers. In Microsoft Jet 3.0, this process is significantly faster.
+
+ - New compacting method. Compacting the database now results in the indices
+   being stored in a clustered-index format. While the clustered index isn't
+   maintained until the next compact, performance is still improved. This
+   differs from Microsoft Jet 2.x where rows of data were stored the way they
+   were entered. The new clustered-key compact method is based on the primary
+   key of the table. New data entered will be in time order.
+
+ - New mechanism for page allocation. In Microsoft Jet 2.X each page could
+   contain data from a different table, thus causing more disk activity. In
+   Microsoft Jet 3.0, each table typically maintains clusters of grouped
+   together pages (eight pages), thus eliminating the scenario of every other
+   page having data from different tables. This scenario also greatly enhances
+   Microsoft Jet's read-ahead capabilities because data pages are more
+   contiguous.
+
+ - Faster delete operations. In Microsoft Jet 2.x, pages were doubly linked,
+   thus causing a delete operation to visit every page when all rows were being
+   deleted. This operation can now be done by simply visiting the Space Map
+   object for that table and removing the bits that reference that table and
+   returning them to the recycle area.
+
+ - Multithreading. By default, Microsoft Jet uses three threads to perform read
+   ahead, write behind, and cache maintenance.
+
+ - Implicit transactions. Users are no longer forced to explicitly use
+   BEGINTRANS and COMMITTRANS to gain performance improvements. For example,
+   when walking through a recordset to do operations, Microsoft Jet groups a
+   series of commands into an internal transaction. Then as appropriate (that
+   is, in a specified time period or when the cache fills up) it starts
+   asynchronously flushing the transaction to disk. Still, if a user wants to
+   force a particular behavior in their application, then they should explicitly
+   use transactions. For users that don't explicitly use transactions and have
+   the database opened shared, they should encounter little if any behavioral
+   differences from Microsoft Jet 2.x. If a user opens the database exclusively,
+   then they could see some behavior differences relating to some types of error
+   trapping if they are not using explicit transactions.
+
+ - New sort engine. Many of the sort algorithms that are in FoxPro are now used
+   in Microsoft Jet.
+
+ - Long Values (such as memos or binary data types) are stored in separate
+   tables in Microsoft Jet 3.0. In Microsoft Jet 2.x, all long value columns
+   were stored in one hidden table, which resulted in a lot of contention issues
+   for users using Microsoft Jet in shared mode. Placing these values in
+   separate tables resolved manu contention issues. Also each Long Value table
+   is now indexed, whereas in Microsoft Jet 2.x, Long Value data was forward
+   linked only, thus making random positioning time-consuming.
+
+ - Dynamic buffering. Microsoft Jet 2.x supported a maximum cache size of 4 MB.
+   Microsoft Jet 3.0's cache is dynamically allocated at start up and has no
+   limit. Currently, the cache will be half the available memory upon start up.
+   This allows effective memory usage on computers that have large amounts of
+   RAM without changing registry settings. The buffer has also been redesigned
+   to use common buffering code. In Microsoft Jet 2.x, separate buffering code
+   could result in pages being needlessly flushed from the cache, thus causing
+   Jet to re-read the page. Microsoft Jet 2.x also used a FIFO (first in, first
+   out) buffer replacement policy, which also caused frequently-referenced pages
+   to be flushed from cache. Microsoft Jet 3.0 implements an LRU (least recently
+   used) replacement policy to help eliminate this problem.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbref 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

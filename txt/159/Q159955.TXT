@@ -1,0 +1,59 @@
+DOCUMENT:Q159955  17-DEC-1999  [homemm]
+TITLE   :Encarta 97: Differences Between Standard and Deluxe Editions
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article summarizes the differences between the Deluxe and Standard
+versions of the 1997 edition of Encarta Encyclopedia.
+
+MORE INFORMATION
+================
+
+Encarta 97 Encyclopedia comes in two versions, Standard and Deluxe. The Deluxe
+Edition is so filled with content that it requires two disks. It contains twice
+as many images, sounds, and videos as the Standard edition. The Deluxe edition
+also comes with a full-size User's Manual.
+
+The Deluxe Edition also includes 20 Collages. The Media Gallery contains
+360-degree views with Surround Video, a new multimedia feature for exploring
+topics. The Atlas in the Deluxe edition includes a Sights and Sounds option.
+
+Owners of the Deluxe edition receive their Yearbook Updates and Web links for
+free. The Deluxe edition also includes a Browsing For Fun feature and an
+additional Interactivity: Ellis Island.
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1997 kbEncartaEnCyc1997Del
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

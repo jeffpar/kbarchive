@@ -1,0 +1,74 @@
+DOCUMENT:Q263716  04-AUG-2000  [iis]
+TITLE   :Internet Services Manager (HTML) Not Available in Windows 2000
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The browser-based Internet Services Manager (HTML) in Microsoft Internet
+Information Services (IIS) 5.0, which is included in Microsoft Windows 2000
+Server, is not available in Microsoft Windows 2000 Professional.
+
+CAUSE
+=====
+
+The browser-based Internet Services Manager (HTML) is implemented through the
+use of a virtual Web site, which is not supported in Windows 2000 Professional.
+
+RESOLUTION
+==========
+
+Use the MMC-based Internet Services Manager. For additional information, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q263121 The Internet Services Manager MMC Is Not Added to the Windows Start
+   Menu
+
+NOTE: The MMC-based Internet Services Manager can be used to remotely administer
+IIS over an intranet. However, if you must remotely administer IIS over the
+Internet or through a proxy server, which requires the use of the browser-based
+Internet Services Manager (HTML), you need to run IIS 5.0 on Windows 2000
+Server.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q262632 PWS Does Not Run on Windows 2000 Professional
+
+Additional query words: iis 5 webadmin htmla akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

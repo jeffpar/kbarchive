@@ -1,0 +1,53 @@
+DOCUMENT:Q108110  22-DEC-1999  [powerpt]
+TITLE   :Corrupted 8-Bit .AVI File After Step Frame Capture
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Video for Windows, version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using VidCap and doing step capture and compression simultaneously, you may
+experience problems with the resulting file if the codec was selected first and
+then a palette was captured.
+
+RESOLUTION
+==========
+
+Capture the palette first and then specify the codec for compression or capture
+in true color and use VidEdit to create a palette out of the video sequence.
+
+This problem only occurs when a new palette is created after selecting Microsoft
+VIDEO 1 or SPIGOT compression. When the capture is complete, load the file in
+VidEdit, for example, and the video clip is unusable.
+
+Additional query words: 1.1 Creative labs vid cap edit 8-BIT 8BIT
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo110
+Version           : WINDOWS:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

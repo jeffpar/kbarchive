@@ -1,0 +1,65 @@
+DOCUMENT:Q215114  05-MAY-1999  [sms]
+TITLE   :SMS: Clients of SMS 1.2 Site Are Orphaned After Upgrade to SMS 2
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you upgrade a Systems Management Server 1.2 site server to Systems Management
+Server 2.0, the existing 1.2 clients are unable to report inventory and are
+unavailable for remote tools or software distribution until they (the 1.2
+clients) are upgraded to Systems Management Server 2.0 clients. The processes
+that install a client are not enabled on the upgraded site.
+
+Microsoft has confirmed this to be a problem in Systems Management Server version
+2.0.
+
+WORKAROUND
+==========
+
+The Systems Management Server 2.0 site server must be configured to install
+clients through the Systems Management Server Administrator console. This
+includes enabling discovery methods, client installation methods, and client
+agents to be installed. After clients are installed as Systems Management Server
+2.0 clients, they are no longer orphaned.
+
+MORE INFORMATION
+================
+
+A future version of Systems Management Server will include a Site Configuration
+Wizard utility that allows you to create site templates. This will facilitate
+the configuring of multiple upgraded sites in a large hierarchy.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q112390  04-MAY-2001  [fortran]
+TITLE   :FIX: BK1506 : Cannot Open File : Permission Denied
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application cannot be rebuilt when its browser file is open. Attempting to do
+so generates the following error message:
+
+   BSCMAKE: error BK1506 : cannot open file 'xxxxx.bsc': Permission denied
+   BSCMAKE returned code: 4
+
+RESOLUTION
+==========
+
+Close the .BSC file and then rebuild the application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+for Windows NT, version 1.0. This problem was fixed in Microsoft FORTRAN
+PowerStation, version 4.0.
+
+MORE INFORMATION
+================
+
+To reproduce this error, do the following:
+
+1. Open a source file by choosing Open from the File menu.
+
+2. Build the executable (make sure you produce browser output) by choosing Build
+   from the Project menu.
+
+3. Open the Browser database.
+
+4. Rebuild All.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kberrmsg kbLangFortran 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

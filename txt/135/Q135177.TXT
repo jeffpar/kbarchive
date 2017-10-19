@@ -1,0 +1,71 @@
+DOCUMENT:Q135177  17-DEC-2000  [win95x]
+TITLE   :Text-Screen Enhancement Programs May Not Work
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some text-screen enhancement drivers and terminate-and-stay-resident programs
+(TSRs) may run erratically or not at all in Windows 95. Results may include
+garbled text output or incorrect screen colors.
+
+Examples of such programs include shareware or third-party Ansi.sys replacements,
+and the High Screen (Affiche.com) TSR from PC-Soft.
+
+CAUSE
+=====
+
+Some older text-screen enhancement drivers and TSRs may not be completely
+compatible with the improved text display performance in Windows 95.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. Use any text editor (such as Notepad) to edit the Config.sys file.
+
+2. Add the following line to the Config.sys file:
+
+   switches=/C
+
+   If there is already a "switches=" line, add "/C" (without the quotation marks)
+   to the end of the line.
+
+3. Save and then close the Config.sys file.
+
+4. Restart your computer.
+
+The /C switch disables the Windows 95 text display optimization, allowing older
+drivers and TSRs to work correctly.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

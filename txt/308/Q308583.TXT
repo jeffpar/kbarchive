@@ -1,0 +1,96 @@
+DOCUMENT:Q308583  20-JUN-2002  [sna]
+TITLE   :HIS End-User Client Install Fails w/Internet Explorer 6
+PRODUCT :Microsoft SNA Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000, used with:
+    - the operating system: Microsoft Windows NT 4.0 
+    - the operating system: Microsoft Windows Millennium Edition 
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When installing the Host Integration Server (HIS) 2000 End-User Client on a
+Windows NT 4.0, Windows Millennium Edition (Me), Windows 98, you may receive the
+following dialog box error
+
+   Setup cannot continue, as Internet Explorer 5.0 is not installed.
+
+followed by:
+
+   Installation ended prematurely because of an error.
+
+The following event is posted in the application log of the Event Viewer:
+
+   Event 1000 - Source: MsiInstaller
+
+   Product Microsoft Host Integration Server 2000 End-User Client -- Setup cannot
+   continue, as Internet Explorer 5.0 is not installed.
+
+This problem is not seen on Windows 2000 systems.
+
+CAUSE
+=====
+
+During installation, the End-User Client checks the Internet Explorer registry
+key for version information. In this case, it only checks for version 5.0; any
+other version information causes setup to fail.
+
+
+WORKAROUND
+==========
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the Version value under the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer
+
+3. On the Edit menu, click String, replace the first numeric value with the
+   value 5, and then click OK.
+
+   For example, if the version says 6.0.2600.0000, change it to 5.0.2600.0000.
+
+4. Quit Registry Editor.
+
+NOTE: After installing the End-User Client, this registry value should be changed
+back to its original value.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Host Integration Server 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

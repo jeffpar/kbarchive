@@ -1,0 +1,50 @@
+DOCUMENT:Q66352  30-JUL-2001  [homegame]
+TITLE   :Description of Minesweeper in Windows Entertainment Pack
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Windows Entertainment Pack Volume 1 game Minesweeper presents you with a
+grid-like mine field, with your objective being to locate all of the mines as
+quickly as possible. To accomplish this task, you step on uncovered squares by
+clicking the active mouse button, either revealing a number, a blank space, or a
+mine.
+
+The number represents the amount of mines located in the eight squares
+surrounding the number. A blank space will clear a specific area, revealing
+either numbers or more blank spaces. A mine means that you are dead and the game
+is over.
+
+If you think you know where a mine is located, you can click the opposite mouse
+button to mark that cell with a flag. The counter in the upper left-hand corner
+keeps track of how many mines are still available. Minesweeper gives you three
+options of play: Beginner, which is an 8 x 8 grid with 10 mines; Intermediate,
+which is a 16 x 16 grid with 40 mines; and Expert, which is a 16 x 30 grid with
+99 mines. Also available is a custom option that allows grids anywhere from 8 x
+8 to 24 x 30, with mines ranging from 10-667.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q247229  08-JUL-2000  [sms]
+TITLE   :SMS: Failure to Write to Log File Affects Executive Performance
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbtool kbConfig kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When logging is enabled for a Microsoft Systems Management Server component that
+is implemented as a thread of the SMS Executive service, the service must be
+able to obtain write access to the log file. If the SMS Executive service cannot
+open the output file to write the logging information, its performance is
+severely affected.
+
+CAUSE
+=====
+
+The component enters a loop and continuously attempts to open the file. This
+behavior dramatically slows the SMS Executive service: It takes five seconds for
+the loop to time out for every entry that a given component attempts to log.
+
+WORKAROUND
+==========
+
+Ensure that the Systems Management Server service account has full access to the
+directory where the Systems Management Server log files are created. By default,
+this is the \Sms\Logs directory.
+
+Additional query words: prodsms smsexec frozen locked hung slow logs
+
+======================================================================
+Keywords          : kbtool kbConfig kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

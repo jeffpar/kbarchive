@@ -1,0 +1,89 @@
+DOCUMENT:Q192613  19-DEC-1999  [homemm]
+TITLE   :Bookshelf 98: How to Change Scroll Bar and Article Font Sizes
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To make the text in Bookshelf articles more legible, you can select larger
+scroll bars and font sizes to use when you read articles in Bookshelf 98.
+
+MORE INFORMATION
+================
+
+To change the size of the scroll bars and fonts in Bookshelf 98 articles, follow
+these steps:
+
+1. Start Bookshelf 98.
+
+2. On the Tools menu, click Options.
+
+3. Click the Text Size option you want, and then click OK. The following Text
+   Size options are available:
+
+    - Normal
+    - Larger
+    - Largest
+
+   NOTE: You cannot change the size of the article text and the scroll bars
+   independently.
+
+The following table lists the sizes of the article title, article text, and
+scroll bars for each Text Size option in Bookshelf 98.
+
+   Setting   Article Title    Article Text          Scroll Bars
+   ------------------------------------------------------------
+
+   Normal    Arial 16 point   Arial 10 point        12 pixels
+   Larger    Arial 24 point   Arial 13 point        25 pixels
+   Largest   Arial 24 point   Arial 13 point Bold   25 pixels
+
+NOTE: The font sizes used for the following screen elements do not change:
+
+ - Menus (Arial 9 point)
+
+ - Tree control (Arial 9 point)
+
+ - Buttons/Tabs (Arial 10 point Bold)
+
+Bookshelf 98 automatically uses the Largest Text Size option if either of the
+following conditions are true:
+
+ - The scrollbar size is set to 25 or higher in the Display tool in Control
+   Panel.
+
+ - High Contrast is enabled in the Accessibility tool in Control Panel.
+
+Additional query words: multi multi-media media mm disabled bigger
+
+======================================================================
+Keywords          : kbui kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

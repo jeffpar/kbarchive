@@ -1,0 +1,96 @@
+DOCUMENT:Q184058  29-APR-1999  [iis]
+TITLE   :Unable to Change Password Using IIS 4.0 Change Password Feature
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to change your password through the Internet Information Server
+(IIS) change password feature, you may receive the following error in Internet
+Explorer:
+
+   The server returned and invalid or unrecognized response.
+
+CAUSE
+=====
+
+The Web site is configured to support password changing, but the IISADMPWD
+virtual directory does not exist on that Web site. When Internet Information
+Server is installed, the IISADMPWD virtual directory is only added to the
+default Web site.
+
+RESOLUTION
+==========
+
+To resolve this issue, add a virtual directory named IISADMPWD to the Web site
+by performing the following steps:
+
+1. In the Internet Service Manager, click the Web site.
+
+2. From the Action menu, point to New and then click Virtual Directory.
+
+3. Type "IISADMPWD" (without the quotation marks) in the alias name box of the
+   New Virtual Directory Wizard, and then click Next.
+
+4. Type the path to the Winnt\System32\Inetsrv\Iisadmpwd folder, and then click
+   Next.
+
+5. Click to disable the Allow Script Access.
+
+6. Click to enable Allow Execute Access (Includes Script Access), and then click
+   Finish.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 4.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Internet Information Server 4.0 includes the capability that allows a Windows NT
+user to change their password, receive notification when their password is to
+expire, and allow them to change the password. IIS installs this functionality
+in the IISADMPWD virtual directory of the default Web site. This feature is
+implemented as a set of .HTR files located in the
+%system%\System32\Inetsrv\Iisadmpwd directory and the ISAPI extension file
+Ism.dll.
+
+For additional information about configuring Internet Information Server to
+support password changing, view the section Notifying Clients of Password Status
+section of the Windows NT 4.0 Option Pack Documentation.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

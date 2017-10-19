@@ -1,0 +1,71 @@
+DOCUMENT:Q165847  13-JUN-2001  [sna]
+TITLE   :Server/Domain Name Truncated in "Open Subdomain" Dialog Box
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When using the Open Subdomain feature in SNA Manager for selecting either an SNA
+Server subdomain or Windows NT domain, you can type up to 15 characters, however
+only 14 characters are accepted.
+
+CAUSE
+=====
+
+A problem was found in the way SNA Manager handled this request.
+
+RESOLUTION
+==========
+
+SNA Manager now accepts 17 characters, and validates that it is less than 16
+characters if no leading "\" (backslash) is present.
+
+A fix to SNA Server 3.0 is available for this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

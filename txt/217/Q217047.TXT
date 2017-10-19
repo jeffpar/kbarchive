@@ -1,0 +1,85 @@
+DOCUMENT:Q217047  06-JUN-1999  [vbwin]
+TITLE   :PRB: CD Key Invalid for Visual Basic 6.0 Deluxe Learning Edition
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbVBp600 kbLEdition kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Setup program of the Microsoft Visual Basic 6.0 Deluxe Learning Edition from
+Microsoft Press requires a 10-digit CD key. However, the CD key sticker on the
+back of your jewel case may contain an 11-digit CD key.
+
+NOTE: This applies to the Microsoft Visual Basic 6.0 Deluxe Learning Edition
+only.
+
+CAUSE
+=====
+
+Initially, the wrong type of CD key stickers were used with this product.
+
+RESOLUTION
+==========
+
+It is possible to use the 11-digit CD key that was included with the Visual
+Basic 6.0 Deluxe Learning Edition CD-ROM. To do this, you must remove the last
+digit from the first group of four numbers. In other words, if the CD key
+reads:
+
+   1234-5678907
+
+Remove the "4" and enter the CD key as follows:
+
+   123-5678907
+
+This allows the product to install correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Visual Basic 6.0
+Deluxe Learning Edition.
+
+REFERENCES
+==========
+
+For additional information about the Visual Basic 6.0 Deluxe Learning Edition,
+please see the following article(s) in the Microsoft Knowledge Base:
+
+   Q192469 Can't Find Visual Basic 6 Step by Step Files
+
+
+
+Additional query words: ISBN 1-57231-873-2 bad
+
+======================================================================
+Keywords          : kbsetup kbVBp600 kbLEdition kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

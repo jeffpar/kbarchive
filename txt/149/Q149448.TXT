@@ -1,0 +1,76 @@
+DOCUMENT:Q149448  25-MAR-2002  [win95x]
+TITLE   :Incorrect Node Address In IPX Header Causes Broadcast Storm
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the IPX/SPX-compatible network protocol (Nwlink.vxd) on Windows
+95-based computers on a network with IPX routing, network traffic may
+intermittently increase dramatically, severely degrading network performance.
+This condition is known as a broadcast storm.
+
+CAUSE
+=====
+
+When you start a Windows 95-based computer that uses the IPX/SPX- compatible
+network protocol, frames may be sent out with incorrect IPX header information
+under certain circumstances. Specifically, the node (MAC) address is incorrect.
+Novell NetWare servers and IPX routers try to respond to these frames by sending
+to the incorrect address. Because there is no response, the servers and routers
+continue to retry, eventually generating a broadcast storm.
+
+This problem is especially noticeable if the IPX frame type is set to Auto. In
+this case, the initial RIP and SAP packets that are sent out to detect which
+frame type is in use on the network cause numerous responses to be sent to the
+incorrect MAC address. The effect is less dramatic if the IPX frame type is set
+to a specific type.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

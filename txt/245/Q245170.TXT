@@ -1,0 +1,81 @@
+DOCUMENT:Q245170  25-JUN-2000  [sms]
+TITLE   :SMS: Cannot Run Advertisement with Missing or Damaged Offer File
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an offer (.ofr) file is listed in a client's instruction (.ins) file, but is
+missing from the Client Access Point (CAP) or is damaged, the client computer
+generates an error 10000 status message when the offer data providers (ODPs)
+enumerate the available offers. When this happens, no other valid advertisements
+run until the problem is resolved.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+WORKAROUND
+==========
+
+To workaround this problem, remove the reference to the damaged or missing .ofr
+file from the SMS client's .ins file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+The hotfix for this article is dependent upon other developed fixes and must be
+installed as a complete package for compatibility.
+
+For additional information about the contents of this consolidated fix, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q253151 SMS: Systems Management Server 2.0 Dependency Package
+
+Additional query words: prodsms ofr 10000
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,1041 @@
+DOCUMENT:Q150726  11-JAN-2001  [vbwin]
+TITLE   :INFO: Files Installed with All Editions of Visual Basic 4.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the lists of the files installed with all editions of
+Visual Basic 4.0. The article is divided into three sections:
+
+ALWAYS INSTALLED: files installed with every edition of Visual Basic.
+
+OPTIONALLY INSTALLED: files installed when you click the install option in the
+Setup program.
+
+REMAINS ON SETUP DISK: files that remain on the Installation disks.
+
+In each section, the installed files are listed in alphabetical order and are
+grouped by the specific edition of Visual Basic to which they apply. The default
+directory into which the file is installed is shown.
+
+Some of the files are stored in the installation disks as compressed files. Use
+the Extract.exe tool to decompress these files. A list of compressed files is in
+the Packing.lst file included with each edition.
+
+For information about using the Extract tool, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q129605 : How to Extract Original Compressed Windows Files
+
+
+Files that are installed in a 16-bit platform are marked with an asterisk (*). In
+general, files with the numeral "16" in the file name are 16-bit files and files
+with "32" in the file name are 32-bit.
+
+ALWAYS INSTALLED
+----------------
+
+The following files are always installed with every edition of Visual Basic:
+
+A. All Editions:
+
+   ctl3d32.dll      \windows\system
+   extract.exe      \windows
+   readme.cnt*      \vb
+   readme.ftg*      \vb
+   readme.fts*      \vb
+   readme.gid*      \vb
+   readme.hlp*      \vb
+   vb4dll.txt*      \vb
+
+B. Professional and Enterprise Editions Only:
+
+   ver.dll*          \windows\system
+   vshare.386*       \windows\system
+   ctl3dv2.dll*      \windows\system
+
+OPTIONALLY INSTALLED
+--------------------
+
+The following files are installed when you select the install option:
+
+A. Microsoft Visual Basic:
+
+The following files are installed when you select the Microsoft Visual Basic
+option:
+
+1. All Editions:
+
+      auto32ld.vbp      \vb
+      begin.frm         \vb\setupkit\setup1
+      begin.frx         \vb\setupkit\setup1
+      biblio.ldb*       \vb
+      biblio.mdb*       \vb
+      bright.dib*       \vb
+      comdlg32.oca      \windows\system
+      comdlg32.ocx      \windows\system
+      common.bas        \vb\setupkit\setup1
+      compress.exe*     \vb\setupkit
+      copy.frm          \vb\setupkit\setup1
+      copy.frx          \vb\setupkit\setup1
+      dao2532.tlb       \windows\msapps\dao
+      dao3032.dll       \windows\msapps\dao
+      datamgr.cnt*      \vb
+      datamgr.ftg*      \vb
+      datamgr.fts*      \vb
+      datamgr.gid*      \vb
+      datamgr.hlp*      \vb
+      datman32.exe      \vb
+      dbgrid32.oca      \windows\system
+      dbgrid32.ocx      \windows\system
+      dblist32.oca      \windows\system
+      dblist32.ocx      \windows\system
+      dskspace.frm      \vb\setupkit\setup1
+      dskspace.frx      \vb\setupkit\setup1
+      frmbegin.frx      \vb\setupkit\setup1
+      grdkrn32.dll      \windows\system
+      grid32.oca        \windows\system
+      grid32.ocx        \windows\system
+      imgwalk.dll       \windows\msapps\msinfo
+      logging.bas       \vb\setupkit\setup1
+      message.frm       \vb\setupkit\setup1
+      message.frx       \vb\setupkit\setup1
+      msinf16h.exe      \windows\msapps\msinfo
+      msinfo32.cnt      \windows\msapps\msinfo
+      msinfo32.exe      \windows\msapps\msinfo
+      msinfo32.ftg      \windows\msapps\msinfo
+      msinfo32.fts      \windows\msapps\msinfo
+      msinfo32.gid      \windows\msapps\msinfo
+      msinfo32.hlp      \windows\msapps\msinfo
+      msjint32.dll      \windows\msapps\dao
+      msjt3032.dll      \windows\msapps\dao
+      msjter32.dll      \windows\msapps\dao
+      msoutl32.oca      \windows\system
+      msoutl32.ocx      \windows\system
+      msrd2x32.dll      \windows\msapps\dao
+      mswng300.dll      \windows\msapps\dao
+      odbcji32.dll      \windows\msapps\dao
+      odbcjt32.dll      \windows\msapps\dao
+      odbctl32.dll      \windows\msapps\dao
+      pastel.dib*       \vb
+      path.frm          \vb\setupkit\setup1
+      path.frx          \vb\setupkit\setup1
+      pss.ftg*          \vb
+      pss.fts*          \vb
+      pss.gid*          \vb
+      pss.hlp*          \vb
+      rainbow.dib*      \vb
+      scp32.dll         \windows\system
+      serverdt.frm      \vb\setupkit\setup1
+      serverdt.frx      \vb\setupkit\setup1
+      setup1.bas        \vb\setupkit\setup1
+      setup1.frm        \vb\setupkit\setup1
+      setup1.frx        \vb\setupkit\setup1
+      setup1.ico        \vb\setupkit\setup1
+      setup1.vbp        \vb\setupkit\setup1
+      setup132.exe      \vb\setupkit\setup1
+      setup132.res      \vb\setupkit\setup1
+      setupres.bas      \vb\setupkit\setup1
+      setupwiz.cnt*     \vb\setupkit
+      setupwiz.ftg*     \vb\setupkit
+      setupwiz.fts*     \vb\setupkit
+      setupwiz.gid*     \vb\setupkit
+      setupwiz.hlp*     \vb\setupkit
+      st4unst.exe       \vb\setupkit\kitfil32
+      stkit432.dll      \windows\system
+      sw32tmpl.ini      \vb\setupkit\kitfil32
+      vaen232.dll       \windows\system
+      vb.cnt*           \vb
+      vb.ftg*           \vb
+      vb.fts*           \vb
+      vb.gid*           \vb
+      vb.hlp*           \vb
+      vb32.exe          \vb
+      vb32.olb          \vb
+      vb40032.dll       \windows\system
+      vba232.dll        \windows\system
+      vbajet32.dll      \windows\system
+      vbar2232.dll      \windows\msapps\dao
+      vbdb32.dll        \windows\system
+      vbext32.olb       \vb
+      vbide32.dll       \vb
+      vbskco32.dll      \vb\setupkit\kitfil32
+      vb4stp16.stf*     \vb
+      vbtrans.exe*      \vb
+      ven2232.olb       \windows\system
+      welcome.frm       \vb\setupkit\setup1
+      welcome.frx       \vb\setupkit\setup1
+
+2. Standard and Professional Editions only:
+
+      setup.exe         \vb\setupkit\kitfil32
+      setupwiz.exe      \vb\setupkit\kitfil32
+
+3. Professional and Enterprise Editions only:
+
+      anibtn16.oca*     \windows\system
+      anibtn16.ocx*     \windows\system
+      anibtn32.oca      \windows\system
+      anibtn32.ocx      \windows\system
+      auto16ld.vbp*     \vb
+      comctl32.oca      \windows\system
+      comctl32.ocx      \windows\system
+      comdlg16.oca*     \windows\system
+      comdlg16.ocx*     \windows\system
+      dao2516.dll*      \windows\system
+      datamgr.exe*      \vb
+      dbgrid16.oca*     \windows\system
+      dbgrid16.ocx*     \windows\system
+      dblist16.oca*     \windows\system
+      dblist16.ocx*     \windows\system
+      gauge16.oca*      \windows\system
+      gauge16.ocx*      \windows\system
+      gauge32.oca       \windows\system
+      gauge32.ocx       \windows\system
+      grdkrn16.dll*     \windows\system
+      grid16.oca*       \windows\system
+      grid16.ocx*       \windows\system
+      msajt200.dll*     \windows\msapps\dao
+      msinfo.exe*       \windows\msapps\msinfo
+      msjeterr.dll      \windows\msapps\dao
+      msjetint.dll      \windows\msapps\dao
+      msmask16.oca*     \windows\system
+      msmask16.ocx*     \windows\system
+      msmask32.oca      \windows\system
+      msmask32.ocx      \windows\system
+      msoutl16.oca*     \windows\system
+      msoutl16.ocx*     \windows\system
+      scp.dll*          \windows\system
+      setup.exe         \vb\setupkit\kitfil32
+      setup1.exe        \vb\setupkit\setup1
+      setup1.res        \vb\setupkit\setup1
+      setupwiz.exe      \vb\setupkit\kitfil32
+      stkit416.dll*     \windows\system
+      sw16tmpl.ini      \vb\setupkit\kitfiles
+      tabctl16.oca*     \windows\system
+      tabctl16.ocx*     \windows\system
+      tabctl32.oca      \windows\system
+      tabctl32.ocx      \windows\system
+      threed16.oca*     \windows\system
+      threed16.ocx*     \windows\system
+      threed32.oca      \windows\system
+      threed32.ocx      \windows\system
+      vaen2.dll*        \windows\system
+      vaen21.olb*       \windows\system
+      vb.exe*           \vb
+      vb.olb*           \vb
+      vb40016.dll*      \windows\system
+      vba2.dll*         \windows\system
+      vbajet.dll*       \windows\system
+      vbdb16.dll*       \windows\system
+      vbext.olb*        \vb
+      vbextend.h*       \vb\include
+      vbide.dll*        \vb
+      vbocxgui.h*       \vb\include
+      vbocxint.h*       \vb\include
+      vbskco16.dll      \vb\setupkit\kitfiles
+
+4. Enterprise Edition only:
+
+      entprise.cnt*     \vb
+      entprise.ftg*     \vb
+      entprise.fts*     \vb
+      entprise.gid*     \vb
+      entprise.hlp*     \vb
+      frmbegin.frx      \vb\setupkit\setup1
+      msrdc32.oca       \windows\system
+      msrdc32.ocx       \windows\system
+      msrdo32.dll       \windows\system
+      msxl2016.dll*     \windows\system
+      msxl3032.dll      \windows\system
+      rpc16c1.dll*      \vb\odbc
+      rpc16c3.dll*      \vb\odbc
+      rpc16c4.dll*      \vb\odbc
+      rpc16c5.dll*      \vb\odbc
+      rpc16c6.dll*      \vb\odbc
+      rpcreg.dat*       \vb\odbc
+      rpcrt.dll*        \vb\odbc
+      security.dll*     \vb\odbc
+      setup.exe         \vb\setupkit\kitfil32
+      setupwiz.exe      \vb\setupkit\kitfil32
+
+B. Enterprise Edition:
+
+The following files are installed when you click the Enterprise Features option
+in the Enterprise Edition Setup program:
+
+   autmgr32.exe      \windows\system
+   autprx.dll*       \windows\system
+   autprx16.dll*     \windows\system
+   autprx32.dll      \windows\system
+   racmgr16.exe*     \vb\clisvr
+   racmgr32.exe      \vb\clisvr
+   racreg16.exe*     \windows\system
+   racreg32.dll      \windows\system
+   regsvr16.exe*     \vb\clisvr
+   regsvr32.exe      \vb\clisvr
+   rpc16c1.dll*      \windows\system
+   rpc16c3.dll*      \windows\system
+   rpc16c4.dll*      \windows\system
+   rpc16c5.dll*      \windows\system
+   rpc16c6.dll*      \windows\system
+   rpc16dg3.dll*     \windows\system
+   rpc16dg6.dll*     \windows\system
+   rpcreg.dat*       \windows\system
+   rpcrt1.dll*       \windows\system
+   security.dll*     \windows\system
+   smpls_cc.ldb      \vb\clisvr
+   smpls_cc.mdb      \vb\clisvr
+
+C. ODBC and Driver:
+
+The following files are installed when you click the ODBC and Drivers option in
+the Setup program:
+
+1. Professional and Enterprise Editions:
+
+      12500852.cp_*     \vb\odbc
+      12500852.cpx*     \windows\system
+      12510866.cp_*     \vb\odbc
+      12510866.cpx*     \windows\system
+      12520437.cp_*     \vb\odbc
+      12520437.cpx*     \windows\system
+      12520850.cp_*     \vb\odbc
+      12520850.cpx*     \windows\system
+      12520860.cp_*     \vb\odbc
+      12520860.cpx*     \windows\system
+      12520861.cp_*     \vb\odbc
+      12520861.cpx*     \windows\system
+      12520863.cp_*     \vb\odbc
+      12520863.cpx*     \windows\system
+      12520865.cp_*     \vb\odbc
+      12520865.cpx*     \windows\system
+      ctl3dv2.dl_*      \vb\odbc
+      dbnmp3.dll*       \windows\system
+      dbnmpntw.dll      \windows\system
+      drvssrvr.hlp*     \windows\system
+      ds16gt.dll        \windows\system
+      ds32gt.dll        \windows\system
+      instcat.sq_*      \vb\odbc
+      instcat.sql*      \windows\system
+      mscpxl32.dll      \windows\system
+      mscpxlt.dll*      \windows\system
+      odbc.dll*         \windows\system
+      odbc.in_*         \vb\odbc
+      odbc16gt.dll      \windows\system
+      odbc32.dll        \windows\system
+      odbc32gt.dll      \windows\system
+      odbcad32.exe      \windows\system
+      odbcadm.exe*      \windows\system
+      odbccp32.cpl      \windows\system
+      odbccp32.dll      \windows\system
+      odbccr32.dll      \windows\system
+      odbccurs.dl_*     \vb\odbc
+      odbccurs.dll*     \windows\system
+      odbcinst.dl_*     \vb\odbc
+      odbcinst.dll*     \windows\system
+      odbcinst.hlp*     \windows\system
+      odbcint.dll*      \windows\system
+      odbcstp.ex_*      \vb\odbc
+      odbcstp.exe       \vb\odbc
+      orstub32.dll      \windows\system
+      setup.exe*        \vb\odbc
+      setup.lst*        \vb\odbc
+      sqlsrv32.dll      \windows\system
+      sqlsrvr.dll*      \windows\system
+      vsorac32.dll      \windows\system
+
+2. Professional Edition only:
+
+      olepro32.dll      \windows\system
+
+3. Enterprise Edition only:
+
+      mssetup.exe*     \vb\odbc
+
+D. Installable ISAMs:
+
+The following files are installed if you click the Installable ISAMs option in
+the Setup program:
+
+1. All Editions:
+
+      mfc40.dll         \windows\system
+      mfcans32.dll      \windows\system
+      mslt3032.dll      \windows\system
+      mspx3032.dll      \windows\system
+      mstx3032.dll      \windows\system
+      msvcrt20.dll      \windows\system
+      msvcrt40.dll      \windows\system
+      msxb3032.dll      \windows\system
+      msxl3032.dll      \windows\system
+      olepro32.dll      \windows\system
+
+2. Professional and Enterprise Editions only:
+
+      btrv200.dll*      \windows\system
+      compobj.dll*      \windows\system
+      mstx2016.dll*     \windows\system
+      msxl2016.dll*     \windows\system
+      oc25.dll*         \windows\system
+      ole2.dll*         \windows\system
+      ole2.reg*         \windows\system
+      ole2conv.dll*     \windows\system
+      ole2disp.dll*     \windows\system
+      ole2nls.dll*      \windows\system
+      ole2prox.dll*     \windows\system
+      pdx200.dll        \windows\system
+      stdole.tlb*       \windows\system
+      storage.dll*      \windows\system
+      typelib.dll*      \windows\system
+      xbs200.dll*       \windows\system
+
+E. Icon Library:
+
+Appendix B-Icon Library in the Programmer's Guide contains a pictorial list of
+all the icons installed on your local hard drive when you select the Icon
+library option.
+
+F. Samples:
+
+The following files are installed if you click the Samples option:
+
+1. All Editions:
+
+      about.frm*        \vb\samples\menus
+      alarm.frm*        \vb\samples\envir
+      alarm.frx*        \vb\samples\envir
+      alarm.vbp*        \vb\samples\envir
+      array.frm*        \vb\samples\controls
+      atm.bas*          \vb\samples\resource
+      atm.rc*           \vb\samples\resource
+      atm.res*          \vb\samples\resource
+      atm.vbp*          \vb\samples\resource
+      atm32.res*        \vb\samples\resource
+      bfly1.bmp*        \vb\samples\firstapp
+      bfly2.bmp*        \vb\samples\firstapp
+      biblio.bas*       \vb\samples\datactrl
+      biblio.frm*       \vb\samples\datactrl
+      biblio.ftg*       \vb\samples\datactrl
+      biblio.fts*       \vb\samples\datactrl
+      biblio.gid*       \vb\samples\datactrl
+      biblio.hlp*       \vb\samples\datactrl
+      biblio.vbp*       \vb\samples\datactrl
+      blanker.frm*      \vb\samples\graphics
+      blanker.frx*      \vb\samples\graphics
+      blanker.vbp*      \vb\samples\graphics
+      butterf.frm*      \vb\samples\firstapp
+      butterf.frx*      \vb\samples\firstapp
+      butterf.vbp*      \vb\samples\firstapp
+      button.frm*       \vb\samples\controls
+      button.frx*       \vb\samples\controls
+      calc.frm*         \vb\samples\calc
+      calc.frx*         \vb\samples\calc
+      calc.ico*         \vb\samples\calc
+      calc.vbp*         \vb\samples\calc
+      calldlls.frm*     \vb\samples\calldlls
+      calldlls.frx*     \vb\samples\calldlls
+      calldlls.vbp*     \vb\samples\calldlls
+      check.frm*        \vb\samples\controls
+      click.frm*        \vb\samples\mouse
+      contchld.frm*     \vb\samples\olecont
+      contmdi.frm*      \vb\samples\olecont
+      controls.vbp*     \vb\samples\controls
+      dde.bas*          \vb\samples\dde
+      dde.vbp*          \vb\samples\dde
+      declares.bas*     \vb\samples\calldlls
+      drag.frm*         \vb\samples\mouse
+      drag.frx*         \vb\samples\mouse
+      edit.frm*         \vb\samples\menus
+      execute.frm*      \vb\samples\dde
+      fileproc.bas*     \vb\samples\fileio
+      filopen.bas*      \vb\samples\mdi
+      find.frm*         \vb\samples\mdi
+      frmabout.frm*     \vb\samples\datactrl
+      frmabout.frm*     \vb\samples\listcmbo
+      frmabout.frx*     \vb\samples\listcmbo
+      frmamoun.frm*     \vb\samples\resource
+      frminput.frm*     \vb\samples\resource
+      frmmenus.frm*     \vb\samples\calldlls
+      frmpub.frm*       \vb\samples\listcmbo
+      frmpub.frx*       \vb\samples\listcmbo
+      listbox.frm*      \vb\samples\controls
+      listcmbo.vbp      \vb\samples\listcmbo
+      loan.frm*         \vb\samples\grid
+      loan.frx*         \vb\samples\grid
+      loan.vbp*         \vb\samples\grid
+      main.frm*         \vb\samples\controls
+      main.frm*         \vb\samples\dde
+      mdi.frm*          \vb\samples\mdi
+      mdi.frx*          \vb\samples\mdi
+      mdinote.bas*      \vb\samples\mdi
+      mdinote.vbp*      \vb\samples\mdi
+      mouse.vbp*        \vb\samples\mouse
+      multi.frm*        \vb\samples\controls
+      notepad.frm*      \vb\samples\mdi
+      number.frm*       \vb\samples\controls
+      olecont.bas*      \vb\samples\olecont
+      olecont.vbp*      \vb\samples\olecont
+      openbank.frm*     \vb\samples\resource
+      openbank.frx*     \vb\samples\resource
+      picview.frm*      \vb\samples\firstapp
+      picview.vbp*      \vb\samples\firstapp
+      recedit.bas*      \vb\samples\fileio
+      recedit.frm*      \vb\samples\fileio
+      recedit.vbp*      \vb\samples\fileio
+      samples.ftg*      \vb\samples\ 
+      samples.fts*      \vb\samples\ 
+      samples.gid*      \vb\samples\ 
+      samples.hlp*      \vb\samples\ 
+      scribble.frm*     \vb\samples\mouse
+      scrmain.frm*      \vb\samples\mouse
+      scroll.frm*       \vb\samples\controls
+      seek.frm*         \vb\samples\filectls
+      textedit.bas*     \vb\samples\menus
+      textedit.vbp*     \vb\samples\menus
+      winseek.vbp*      \vb\samples\filectls
+      wordwrap.frm*     \vb\samples\controls
+
+2. Professional and Enterprise Editions only:
+
+      about.frm*        \vb\samples\align
+      about.frm*        \vb\samples\spy
+      aboutbox.frm*     \vb\samples\mci
+      aboutbox.frm*     \vb\samples\visdata
+      aboutbox.frx*     \vb\samples\mci
+      aboutbox.frx*     \vb\samples\visdata
+      addfield.frm*     \vb\samples\visdata
+      addfield.frx*     \vb\samples\visdata
+      addindex.frm*     \vb\samples\visdata
+      addindex.frx*     \vb\samples\visdata
+      addudp.frm*       \vb\samples\visdata
+      addudp.frx*       \vb\samples\visdata
+      align.cls*        \vb\samples\align
+      align.vbp*        \vb\samples\align
+      alignall.cls*     \vb\samples\align
+      attach.frm*       \vb\samples\visdata
+      attach.frx*       \vb\samples\visdata
+      cansend.frm*      \vb\samples\vbterm
+      cd.frm*           \vb\samples\mci
+      cd.frx*           \vb\samples\mci
+      cpystru.frm*      \vb\samples\visdata
+      cpystru.frx*      \vb\samples\visdata
+      dataform.frm*     \vb\samples\visdata
+      dataform.frx*     \vb\samples\visdata
+      datagrid.frm*     \vb\samples\visdata
+      datagrid.frx*     \vb\samples\visdata
+      datatype.frm*     \vb\samples\visdata
+      datatype.frx*     \vb\samples\visdata
+      dcprop.frm*       \vb\samples\visdata
+      dcprop.frx*       \vb\samples\visdata
+      dfd.frm*          \vb\samples\datawiz
+      dfd.frm*          \vb\samples\visdata
+      dfd.frx*          \vb\samples\datawiz
+      dfd.frx*          \vb\samples\visdata
+      dfd.vbp*          \vb\samples\datawiz
+      dfd16.exe*        \vb\samples\datawiz
+      dfd32.dll         \vb\samples\datawiz
+      dfdclass.cls*     \vb\samples\datawiz
+      dialer.vbp*       \vb\samples\vbterm
+      dlgtest.frm*      \vb\samples\oleserv
+      dlgtest.vbp*      \vb\samples\oleserv
+      ds.vbp*           \vb\samples\oleserv
+      ds_main.bas*      \vb\samples\oleserv
+      ds_thing.cls*     \vb\samples\oleserv
+      dynasnap.frm*     \vb\samples\visdata
+      dynasnap.frx*     \vb\samples\visdata
+      errors.frm*       \vb\samples\visdata
+      errors.frx*       \vb\samples\visdata
+      eventspy.cls*     \vb\samples\spy
+      expname.frm*      \vb\samples\visdata
+      expname.frx*      \vb\samples\visdata
+      find.frm*         \vb\samples\visdata
+      find.frx*         \vb\samples\visdata
+      firsttab.bmp*     \vb\samples\outline
+      geofacts.bas*     \vb\samples\oleauto
+      geofacts.frm*     \vb\samples\oleauto
+      geofacts.vbp*     \vb\samples\oleauto
+      global.bas*       \vb\samples\mci
+      gravity.bas*      \vb\samples\oleserv
+      gravity.cls*      \vb\samples\oleserv
+      gravity.vbp*      \vb\samples\oleserv
+      gravtest.bas*     \vb\samples\oleserv
+      gravtest.frm*     \vb\samples\oleserv
+      gravtest.vbp*     \vb\samples\oleserv
+      grpsusrs.frm*     \vb\samples\visdata
+      grpsusrs.frx*     \vb\samples\visdata
+      imptbls.frm*      \vb\samples\visdata
+      imptbls.frx*      \vb\samples\visdata
+      infoform.frm*     \vb\samples\picclip
+      infoform.frx*     \vb\samples\picclip
+      initial.bas*      \vb\samples\oleserv
+      join.frm*         \vb\samples\visdata
+      join.frx*         \vb\samples\visdata
+      lasttab.bmp*      \vb\samples\outline
+      listcbo.frm*      \vb\samples\visdata
+      listcbo.frx*      \vb\samples\visdata
+      logindlg.bas*     \vb\samples\oleserv
+      logindlg.cls*     \vb\samples\oleserv
+      logindlg.frm*     \vb\samples\oleserv
+      logindlg.vbp*     \vb\samples\oleserv
+      logindlg.xls*     \vb\samples\oleserv
+      loginfrm.frm*     \vb\samples\visdata
+      loginfrm.frx*     \vb\samples\visdata
+      maillst.frm*      \vb\samples\mapi
+      maillst.frx*      \vb\samples\mapi
+      mailoptf.frm*     \vb\samples\mapi
+      mailsup.bas*      \vb\samples\mapi
+      main.bas*         \vb\samples\align
+      main.bas*         \vb\samples\spy
+      mcitest.bas*      \vb\samples\mci
+      mcitest.frm*      \vb\samples\mci
+      mcitest.frx*      \vb\samples\mci
+      mcitest.mid*      \vb\samples\mci
+      mcitest.vbp*      \vb\samples\mci
+      mcitest.wav*      \vb\samples\mci
+      midtab.bmp*       \vb\samples\outline
+      moddfd.bas*       \vb\samples\datawiz
+      msgview.frm*      \vb\samples\mapi
+      msgview.frx*      \vb\samples\mapi
+      muopt.frm*        \vb\samples\visdata
+      muopt.frx*        \vb\samples\visdata
+      newattch.frm*     \vb\samples\visdata
+      newattch.frx*     \vb\samples\visdata
+      newmsg.frm*       \vb\samples\mapi
+      newpw.frm*        \vb\samples\visdata
+      newpw.frx*        \vb\samples\visdata
+      newug.frm*        \vb\samples\visdata
+      newug.frx*        \vb\samples\visdata
+      opendb.frm*       \vb\samples\visdata
+      opendb.frx*       \vb\samples\visdata
+      opendlg.frm*      \vb\samples\mci
+      phone.frm*        \vb\samples\outline
+      phone.frx*        \vb\samples\outline
+      phone.ldb*        \vb\samples\outline
+      phone.mdb*        \vb\samples\outline
+      phone.vbp*        \vb\samples\outline
+      prop.ico*         \vb\samples\visdata
+      propsht.frm*      \vb\samples\visdata
+      propsht.frx*      \vb\samples\visdata
+      qry.ico*          \vb\samples\visdata
+      query.frm*        \vb\samples\visdata
+      query.frx*        \vb\samples\visdata
+      recs.ico*         \vb\samples\visdata
+      redtop.frm*       \vb\samples\picclip
+      redtop.frx*       \vb\samples\picclip
+      redtop.vbp*       \vb\samples\picclip
+      relation.frm*     \vb\samples\visdata
+      relation.frx*     \vb\samples\visdata
+      replace.frm*      \vb\samples\visdata
+      replace.frx*      \vb\samples\visdata
+      seek.frm*         \vb\samples\visdata
+      seek.frx*         \vb\samples\visdata
+      sizeall.cls*      \vb\samples\align
+      spy.cls*          \vb\samples\spy
+      spy.vbp*          \vb\samples\spy
+      spyshow.frm*      \vb\samples\spy
+      sql.frm*          \vb\samples\visdata
+      sql.frx*          \vb\samples\visdata
+      sql.ico*          \vb\samples\visdata
+      tableobj.frm*     \vb\samples\visdata
+      tableobj.frx*     \vb\samples\visdata
+      tables.frm*       \vb\samples\visdata
+      tables.frx*       \vb\samples\visdata
+      tables.ico*       \vb\samples\visdata
+      tblstru.frm*      \vb\samples\visdata
+      tblstru.frx*      \vb\samples\visdata
+      termset.frm*      \vb\samples\vbterm
+      termset.frx*      \vb\samples\vbterm
+      thingtst.frm*     \vb\samples\oleserv
+      thingtst.vbp*     \vb\samples\oleserv
+      ui.frm*           \vb\samples\oleserv
+      vbimex.bas*       \vb\samples\visdata
+      vbimex.frm*       \vb\samples\visdata
+      vbimex.frx*       \vb\samples\visdata
+      vbmail.frm*       \vb\samples\mapi
+      vbmail.frx*       \vb\samples\mapi
+      vbmail.vbp*       \vb\samples\mapi
+      vbterm.frm*       \vb\samples\vbterm
+      vbterm.frx*       \vb\samples\vbterm
+      vbterm.glo*       \vb\samples\vbterm
+      vbterm.vbp*       \vb\samples\vbterm
+      vdaddin.bas*      \vb\samples\visdata
+      vdaddin.cls*      \vb\samples\visdata
+      vdaddin.vbp*      \vb\samples\visdata
+      vdclass.cls*      \vb\samples\visdata
+      vdmdi.frm*        \vb\samples\visdata
+      vdmdi.frx*        \vb\samples\visdata
+      visdata.bas*      \vb\samples\visdata
+      visdata.ftg*      \vb\samples\visdata
+      visdata.fts*      \vb\samples\visdata
+      visdata.gid*      \vb\samples\visdata
+      visdata.hlp*      \vb\samples\visdata
+      visdata.ico*      \vb\samples\visdata
+      visdata.vbp*      \vb\samples\visdata
+      wave.frm*         \vb\samples\mci
+      world.xls*        \vb\samples\oleauto
+      zoom.frm*         \vb\samples\visdata
+      zoom.frx*         \vb\samples\visdata
+
+3. Enterprise Edition only:
+
+      book_cli.bas      \vb\samples\remauto\booksale
+      book_cli.frm      \vb\samples\remauto\booksale
+      book_cli.frx      \vb\samples\remauto\booksale
+      book_cli.vbp      \vb\samples\remauto\booksale
+      book_svr.bas      \vb\samples\remauto\booksale
+      book_svr.exe      \vb\samples\remauto\compat\ 
+      book_svr.frm      \vb\samples\remauto\booksale
+      book_svr.frx      \vb\samples\remauto\booksale
+      book_svr.tlb      \vb\samples\remauto\compat\ 
+      book_svr.vbp      \vb\samples\remauto\booksale
+      book_svr.vbr      \vb\samples\remauto\compat\ 
+      booksale.ldb      \vb\samples\remauto\booksale
+      booksale.mdb      \vb\samples\remauto\booksale
+      booksale.txt      \vb\samples\remauto\booksale
+      callback.txt      \vb\samples\ra\callback
+      clbk_cli.bas      \vb\samples\ra\callback
+      clbk_cli.cls      \vb\samples\ra\callback
+      clbk_cli.frm      \vb\samples\ra\callback
+      clbk_cli.vbp      \vb\samples\ra\callback
+      clbk_svr.bas      \vb\samples\ra\callback
+      clbk_svr.cls      \vb\samples\ra\callback
+      clbk_svr.exe      \vb\samples\remauto\compat\ 
+      clbk_svr.frm      \vb\samples\ra\callback
+      clbk_svr.tlb      \vb\samples\remauto\compat\ 
+      clbk_svr.vbp      \vb\samples\ra\callback
+      clbk_svr.vbr      \vb\samples\remauto\compat\ 
+      clireg16.exe*     \vb\clisvr
+      clireg32.exe      \vb\clisvr
+      cmpmgr16.exe*     \vb\clisvr
+      cmpmgr32.exe      \vb\clisvr
+      db_rdo.txt        \vb\samples\db_rdo
+      frmchart.frm      \vb\samples\remauto\booksale
+      frmchart.frx      \vb\samples\remauto\booksale
+      frmcogs.frm       \vb\samples\remauto\booksale
+      frmcogs.frx       \vb\samples\remauto\booksale
+      getdate.cls       \vb\samples\ra\intrface
+      gettime.cls       \vb\samples\ra\intrface
+      global.bas        \vb\samples\remauto\db_odbc
+      helo_cli.frm      \vb\samples\remauto\hello
+      helo_cli.vbp      \vb\samples\remauto\hello
+      helo_svr.bas      \vb\samples\remauto\hello
+      helo_svr.cls      \vb\samples\remauto\hello
+      helo_svr.exe      \vb\samples\remauto\compat\ 
+      helo_svr.frm      \vb\samples\remauto\hello
+      helo_svr.tlb      \vb\samples\remauto\compat\ 
+      helo_svr.vbp      \vb\samples\remauto\hello
+      helo_svr.vbr      \vb\samples\remauto\compat\ 
+      in32_svr.dll      \vb\samples\remauto\compat\ 
+      in32_svr.tlb      \vb\samples\remauto\compat\ 
+      in32_svr.vbr      \vb\samples\remauto\compat\ 
+      intr_cli.frm      \vb\samples\ra\intrface
+      intr_cli.vbp      \vb\samples\ra\intrface
+      intr_svr.bas      \vb\samples\ra\intrface
+      intr_svr.cls      \vb\samples\ra\intrface
+      intr_svr.vbp      \vb\samples\ra\intrface
+      intrface.txt      \vb\samples\ra\intrface
+      jet1_cli.frm      \vb\samples\remauto\db_jet
+      jet1_cli.vbp      \vb\samples\remauto\db_jet
+      jet1_svr.bas      \vb\samples\remauto\db_jet
+      jet1_svr.cls      \vb\samples\remauto\db_jet
+      jet1_svr.exe      \vb\samples\remauto\compat\ 
+      jet1_svr.frm      \vb\samples\remauto\db_jet
+      jet1_svr.tlb      \vb\samples\remauto\compat\ 
+      jet1_svr.vbp      \vb\samples\remauto\db_jet
+      jet1_svr.vbr      \vb\samples\remauto\compat\ 
+      model.cls         \vb\samples\remauto\booksale
+      odb1_cli.frm      \vb\samples\remauto\db_odbc
+      odb1_svr.bas      \vb\samples\remauto\db_odbc
+      odb1_svr.cls      \vb\samples\remauto\db_odbc
+      odb1_svr.frm      \vb\samples\remauto\db_odbc
+      odbc_cli.vbp      \vb\samples\remauto\db_odbc
+      odbc_svr.exe      \vb\samples\remauto\compat\ 
+      odbc_svr.tlb      \vb\samples\remauto\compat\ 
+      odbc_svr.vbp      \vb\samples\remauto\db_odbc
+      odbc_svr.vbr      \vb\samples\remauto\compat\ 
+      odbc16.txt        \vb\samples\remauto\db_odbc
+      odbc32.txt        \vb\samples\remauto\db_odbc
+      odkob16.dll       \windows\system
+      odkob32.dll       \windows\system
+      pass_cli.frm      \vb\samples\ra\passthru
+      pass_cli.vbp      \vb\samples\ra\passthru
+      pass_svr.bas      \vb\samples\ra\passthru
+      pass_svr.cls      \vb\samples\ra\passthru
+      pass_svr.exe      \vb\samples\remauto\compat\ 
+      pass_svr.frm      \vb\samples\ra\passthru
+      pass_svr.tlb      \vb\samples\remauto\compat\ 
+      pass_svr.vbp      \vb\samples\ra\passthru
+      pass_svr.vbr      \vb\samples\remauto\compat\ 
+      passthru.txt      \vb\samples\ra\passthru
+      pmgr_cli.frm      \vb\samples\ra\poolmngr
+      pmgr_cli.vbp      \vb\samples\ra\poolmngr
+      pmgr_svr.bas      \vb\samples\ra\poolmngr
+      pmgr_svr.cls      \vb\samples\ra\poolmngr
+      pmgr_svr.exe      \vb\samples\remauto\compat\ 
+      pmgr_svr.frm      \vb\samples\ra\poolmngr
+      pmgr_svr.tlb      \vb\samples\remauto\compat\ 
+      pmgr_svr.vbp      \vb\samples\ra\poolmngr
+      pmgr_svr.vbr      \vb\samples\remauto\compat\ 
+      poolmngr.txt      \vb\samples\ra\poolmngr
+      rdo_cli.frm       \vb\samples\db_rdo
+      rdo_cli.vbp       \vb\samples\db_rdo
+      rdo_svr.bas       \vb\samples\db_rdo
+      rdo_svr.cls       \vb\samples\db_rdo
+      rdo_svr.dll       \vb\samples\remauto\compat\ 
+      rdo_svr.frm       \vb\samples\db_rdo
+      rdo_svr.tlb       \vb\samples\remauto\compat\ 
+      rdo_svr.vbp       \vb\samples\db_rdo
+      rdo_svr.vbr       \vb\samples\remauto\compat\ 
+      sales.cls         \vb\samples\remauto\booksale
+      taxes.cls         \vb\samples\remauto\booksale
+
+G. Visual Basic Tutorial:
+
+The following files are installed if you click the Visual Basic Tutorial option
+in the Setup program for all editions:
+
+   vbcbt.ftg*        \vb
+   vbcbt.fts*        \vb
+   vbcbt.gid*        \vb
+   vbcbt.hlp*        \vb
+
+H. Visual Basic Books Online:
+
+The following files are installed if you click the Visual Basic Books Online
+option in the Setup program for the Professional and Enterprise Editions, CD-ROM
+version:
+
+   infoview.exe      \vb\VBOnline
+   infoview.hlp*     \vb\VBOnline
+   infovw16.exe*     \vb\VBOnline
+   msinapi.dll*      \vb\VBOnline
+   vbonline.aux*     \vb\VBOnline
+   vbonline.ico*     \vb\VBOnline
+   vbonline.idx*     \vb\VBOnline
+   vbonline.kwd*     \vb\VBOnline
+
+I. Help Compiler:
+
+The following files are installed if you click the Help Compiler option in the
+Setup program for the Professional and Enterprise Editions only:
+
+   bullet.bmp*        \vb\hc
+   emdash.bmp*        \vb\hc
+   hc.err*            \vb\hc
+   hc.exe*            \vb\hc
+   iwedit.shg*        \vb\hc
+   mrbc.exe*          \vb\hc
+   shed.exe*          \vb\hc
+   shed.ftg*          \vb\hc
+   shed.fts*          \vb\hc
+   shed.gid*          \vb\hc
+   shed.hlp*          \vb\hc
+   track.doc*         \vb\hc
+   winhelp.txt*       \vb\hc
+
+J. Custom Controls:
+
+The following files are installed if you click the Custom Controls option in the
+Setup program for the Professional and Enterprise Editions only:
+
+   ctrlref.cnt*       \vb
+   ctrlref.ftg*       \vb
+   ctrlref.fts*       \vb
+   ctrlref.gid*       \vb
+   ctrlref.hlp*       \vb
+   graph16.oca*       \windows\system
+   graph16.ocx*       \windows\system
+   graph32.oca        \windows\system
+   graph32.ocx        \windows\system
+   gsw16.exe*         \windows\system
+   gsw32.exe          \windows\system
+   gswdll16.dll*      \windows\system
+   gswdll32.dll       \windows\system
+   keysta16.oca*      \windows\system
+   keysta16.ocx*      \windows\system
+   keysta32.oca       \windows\system
+   keysta32.ocx       \windows\system
+   mci16.oca*         \windows\system
+   mci16.ocx*         \windows\system
+   mci32.oca          \windows\system
+   mci32.ocx          \windows\system
+   mscomm16.oca*      \windows\system
+   mscomm16.ocx*      \windows\system
+   mscomm32.oca       \windows\system
+   mscomm32.ocx       \windows\system
+   msmapi16.oca*      \windows\system
+   msmapi16.ocx*      \windows\system
+   msmapi32.oca       \windows\system
+   msmapi32.ocx       \windows\system
+   picclp16.oca*      \windows\system
+   picclp16.ocx*      \windows\system
+   picclp32.oca       \windows\system
+   picclp32.ocx       \windows\system
+   richtx32.oca       \windows\system
+   richtx32.ocx       \windows\system
+   spin16.oca*        \windows\system
+   spin16.ocx*        \windows\system
+   spin32.oca         \windows\system
+   spin32.ocx         \windows\system
+
+K. Windows API Reference:
+
+The following files are installed if you click the Windows API Reference option
+in the Setup program for the Professional and Enterprise Editions only:
+
+   apilod.txt*        \vb\winapi
+   apilod16.exe*      \vb\winapi
+   apilod32.exe       \vb\winapi
+   win31api.txt*      \vb\winapi
+   win31wh.ftg*       \vb\winapi
+   win31wh.fts*       \vb\winapi
+   win31wh.gid*       \vb\winapi
+   win31wh.hlp*       \vb\winapi
+   win32api.txt       \vb\winapi
+   winmmsys.txt*      \vb\winapi
+
+L. Crystal Reports for Visual Basic:
+
+The following files are installed if you click the Crystal Reports for Visual
+Basic option in the Setup program for the Professional and Enterprise Editions
+only:
+
+   a_to_b.ldb*        \vb\report
+   a_to_b.mdb*        \vb\report
+   c2supprt.dll       \vb\report
+   co1m30en.dll       \windows\system
+   co2m30en.dll       \vb\report
+   crocxsam.vbp*      \vb\report
+   crpe.dll           \windows\system
+   crpe32.dll         \windows\system
+   crsupprt.dll*      \vb\report
+   crw.cnt*           \vb\report
+   crw.exe*           \vb\report
+   crw.ftg*           \vb\report
+   crw.fts*           \vb\report
+   crw.gid*           \vb\report
+   crw.hlp*           \vb\report
+   crw.net*           \vb\report
+   crw32.exe          \vb\report
+   crxlat32.dll       \windows\system
+   crxlate.dll        \windows\system
+   crystal.ldb*       \vb\report
+   crystal.mdb*       \vb\report
+   crystl16.oca       \windows\system
+   crystl16.ocx       \windows\system
+   crystl32.oca       \windows\system
+   crystl32.ocx       \windows\system
+   empdata.ldb*       \vb\report
+   empdata.mdb*       \vb\report
+   form1.frm*         \vb\report
+   form2.frm*         \vb\report
+   form3.frm*         \vb\report
+   labels.txt*        \vb\report
+   lead50n.dll        \vb\report
+   ocxmdb.rpt*        \vb\report
+   p2bbnd.dll         \windows\system
+   p2bdao.dll         \windows\system
+   p2ctdao.dll        \windows\system
+   p2irdao.dll        \windows\system
+   p2sodbc.dll        \windows\system
+   p3conv.dll         \vb\report
+   p3dib.dll*         \vb\report
+   p3file.dll*        \vb\report
+   p3info.dll*        \vb\report
+   pdbbnd.dll         \windows\system
+   pdbdao.dll         \windows\system
+   pdctdao.dll        \windows\system
+   pdirdao.dll        \windows\system
+   pdsodbc.dll        \windows\system
+   prologob.bmp*      \vb\report
+   prologoc.bmp*      \vb\report
+   u2ddisk.dll        \windows\system
+   u2dmapi.dll        \windows\system
+   u2fcr.dll          \windows\system
+   u2fdif.dll         \windows\system
+   u2frec.dll         \windows\system
+   u2frtf.dll         \windows\system
+   u2fsepv.dll        \windows\system
+   u2ftext.dll        \windows\system
+   u2fwks.dll         \windows\system
+   u2fxls.dll         \windows\system
+   uxddisk.dll        \windows\system
+   uxdmapi.dll        \windows\system
+   uxfcr.dll          \windows\system
+   uxfdif.dll         \windows\system
+   uxfrec.dll         \windows\system
+   uxfrtf.dll         \windows\system
+   uxfsepv.dll        \windows\system
+   uxftext.dll        \windows\system
+   uxfwks.dll         \windows\system
+   uxfxls.dll         \windows\system
+
+Files Remaining on Setup Disk
+-----------------------------
+
+The following files remain on the Setup Disk:
+
+A. All Editions:
+
+      acmsetup.hlp       Not Installed
+      complinc.dll       Not Installed
+      mssetup.dll        Not Installed
+      packing.lst        Not Installed
+      setup.exe          Not Installed
+      setup.ini          Not Installed
+      setup.lst          Not Installed
+      setup.tdf          Not Installed
+      vb4setup.inf       Not Installed
+      vb4setup.ttf       Not Installed
+      vb4stp32.dll       Not Installed
+      vb4stp32.stf       Not Installed
+
+B. Professional and Enterprise Editions only:
+
+      _mssetup.exe       Not Installed
+      odbckey.inf        Not Installed
+      odbcstf.dll        Not Installed
+      regocx16.exe       Not Installed
+      regocx32.exe       Not Installed
+      setup16.exe        Not Installed
+      setup16.lst        Not Installed
+      vb4stp16.dll       Not Installed
+      vbent.reg          Not Installed
+
+Additional query words: kbDSupport kbVBp400 kbdss
+
+======================================================================
+Keywords          : kbsetup kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

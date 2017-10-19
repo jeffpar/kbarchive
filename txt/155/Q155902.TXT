@@ -1,0 +1,78 @@
+DOCUMENT:Q155902  01-JUN-2001  [word97]
+TITLE   :WD97: Wrong Feed Method Selected Using HP LaserJet 4 Driver
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:95,97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The wrong feed method options are selected by default on the Printing Options
+tab in the Envelope Options dialog box. (To locate this dialog box, click
+Envelopes and Labels on the Tools menu.)
+
+This problem does not occur if you run Word 97 on Microsoft Windows NT 4.0.
+
+CAUSE
+=====
+
+You are using the Hewlett-Packard LaserJet 4 printer driver version 3.78 which
+ships with Windows 95.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+WORKAROUND
+==========
+
+To work around this problem, do the following.
+
+1. On the Tools menu, click Envelopes and Labels.
+
+2. Click the Envelopes tab.
+
+3. Click the Options button.
+
+4. Click the Printing Option tab.
+
+5. In the Printing Options dialog box, select the left portrait icon (5th icon
+   from the left), select the Face Up option, and clear the Clockwise Rotation
+   option.
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbWordSearch kbOSWinSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:95,97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

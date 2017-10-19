@@ -1,0 +1,66 @@
+DOCUMENT:Q198888  10-AUG-2001  [winnt]
+TITLE   :Telnet and Browsing to Systems Outside the WLBS Cluster Fail
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Load Balancing Service 1.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you telnet to or browse a system outside the Windows NT Load Balancing
+Service (WLBS) cluster from a WLBS cluster host, you do not receive a response,
+but you can ping the outside system.
+
+CAUSE
+=====
+
+The TCP/IP configuration is incorrect on the WLBS cluster host
+
+RESOLUTION
+==========
+
+If you are using a single network interface card (NIC), the dedicated IP address
+must be entered before the cluster IP address or addresses in the TCP/IP
+configuration within the Windows NT Network dialog box. Otherwise, the cluster
+IP address may be selected as the source address, and the outside system will
+respond to the cluster IP address instead of to the dedicated IP address. In
+this case, responses will be directed only to the default host.
+
+NOTE: You will not observe this problem on the default host.
+
+Check the TCP/IP configuration to make sure that the dedicated IP address is
+first in the list.
+
+You can also use multiple NICs to avoid this problem.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTLBS100 kbWinNTLBSSearch
+Version           : winnt:1.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,58 @@
+DOCUMENT:Q198484  02-MAY-1999  [exchange]
+TITLE   :XCLN: Outlook for the Macintosh Cannot Use Outlook Contacts
+PRODUCT :Microsoft Exchange
+PROD/VER:MACINTOSH:8.0,8.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, versions 8.0, 8.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Outlook for the Macintosh, address information is stored in a
+Personal Address Book, or .pab file. The client cannot select e-mail addresses
+from an Outlook Contacts folder.
+
+Outlook for the Macintosh is not comparable feature for feature to the Windows
+32-bit versions of Outlook. Outlook for the Macintosh does not recognize the
+custom items contained in a personal Outlook Contacts folder, nor can it display
+them correctly. Outlook for the Macintosh does not have the capability of using
+Outlook Address Books.
+
+Use Personal Address Books to manage e-mail addresses from Outlook for the
+Macintosh.
+
+MORE INFORMATION
+================
+
+It is also possible to use Outlook Web Access (OWA)(Exchange Server 5.5 Service
+Pack 1 or later) to allow a Macintosh to see personal Outlook Contacts folders.
+Using OWA allows the Macintosh user to see and address e- mail to items in a
+personal Outlook Contacts folder.
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbOutlookMacSearch kbOutlook800Mac kbOutlook810Mac
+Version           : MACINTOSH:8.0,8.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q184415  14-NOV-2000  [word97]
+TITLE   :WD97: HTML Converter Cannot Save in Different Code Pages
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbconversion word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Word, the HTML converter can only save using the US/Western
+European code page.
+
+MORE INFORMATION
+================
+
+In Microsoft Excel, you can save an HTML file any of the following code pages;
+however, this capability does not currently exist in Microsoft Word:
+
+ - US/Western European
+ - MS-DOS United States
+ - MS-DOS Multilingual (Latin I)
+ - Japanese (EUC)
+ - Japanese (JIS)
+ - Multilingual (UTF-8)/KSC 5700
+
+Further, the Word HTML converter does not currently support the character sets
+ISO 8895-2 (Polish) or KOI8-R (Russian).
+
+KOI8-r is widely used on Russian Internet sites. Though the proposed character
+set KOI8-R is not currently an international standard, there is a very large
+user community supporting it for UNIX and global network programs in the former
+Soviet Union.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta kbconversion word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

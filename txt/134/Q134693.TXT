@@ -1,0 +1,71 @@
+DOCUMENT:Q134693  27-JUL-2001  [sms]
+TITLE   :Unable to Delete More than 250 Computers from Ad Hoc Query List
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbsmsAdmin smsadmin smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you try to delete more than 250 computers from an Ad Hoc query result list,
+the SQL server returns the following error message:
+
+   Too many ANDs and ORs in expression (limit 250 per expression level).
+   Try splitting query or limiting ANDs and ORs.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+ - Select less than 250 computers from the Ad Hoc query result list for
+   deletion.
+
+-or-
+
+ - If you are using Systems Management Server 1.0, use the DBCLEAN.EXE command
+   for database maintenance.
+
+-or-
+
+ - If you are using Systems Management Server 1.1 use the Delete Special option
+   in Systems Management Server Administrator.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms sms inactive inventory architecture
+
+======================================================================
+Keywords          : kbnetwork kbsmsAdmin smsadmin smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

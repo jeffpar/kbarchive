@@ -1,0 +1,86 @@
+DOCUMENT:Q194927  09-JAN-2000  [vbwin]
+TITLE   :INFO: VB6 Enables Single Project Testing of Controls/Documents
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbDebug kbVBp kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To create and test an ActiveX Control in Visual Basic 5.0, it was necessary to
+create two projects: one for the control and one to test it. Similarly, in order
+to test a UserDocument in Visual Basic 5.0, you had to run the document in the
+IDE, then start the Web browser and point the browser to the location of the
+temporary VBD file. This is no longer true in Visual Basic 6.0. Testing a
+UserControl or UserDocument inside the Visual Basic 6.0 IDE has become much
+simpler.
+
+MORE INFORMATION
+================
+
+Steps to debug a UserControl within a single project:
+
+1. Create a new ActiveX Control project. UserControl1 is created by default.
+
+2. Start the project. When the dialog containing the Debugging tab is displayed,
+   click OK. Your Web browser will start and the control will be activated
+   inside the browser.
+
+Steps to debug a UserDocument:
+
+1. Create an ActiveX Document DLL project. UserDocument1 is created by default.
+
+2. Add a CommandButton to the document.
+
+3. Add the following code to the General Declarations section of UserDocument1:
+
+         Option Explicit
+
+         Private Sub Command1_Click()
+            MsgBox "See, this really does work!!"
+         End Sub
+
+4. Start the project. When the dialog containing the Debugging tab is displayed,
+   click OK. Your Web browser will start and the UserDocument will be activated
+   inside the browser. Click the CommandButton and the message box will appear.
+
+REFERENCES
+==========
+
+For more information, search Visual Basic help for UserControls or
+UserDocuments.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Richard T.
+Edwards, Microsoft Corporation
+
+Additional query words: kbDSupport kbDSD
+
+======================================================================
+Keywords          : kbActiveX kbDebug kbVBp kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

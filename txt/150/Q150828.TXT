@@ -1,0 +1,70 @@
+DOCUMENT:Q150828  19-DEC-1999  [exchange]
+TITLE   :XFOR: Dirsync Role/Number of Servers can Change DXA Addresses
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Directory Synchronization agent (DXA) can have different
+email addresses depending on how many instances of the service exist in a single
+site and the role it plays in directory synchronization. This is allowable by
+the Microsoft Mail directory synchronization protocol.
+
+MORE INFORMATION
+================
+
+When you install the first MSMail Connector component in a site, the DXA is
+assigned the MSMail alias $SYSTEM. For example:
+
+   First server:  <organization>/<site>/$SYSTEM
+
+When you add additional MSMail Connectors to the site, $SYSTEM is replaced by
+SYSTEMx, where x starts with 1 and is incremented by 1 with each additional
+MSMail connector installed. For example:
+
+   Second Server: <organization>/<site>/SYSTEM1
+   Third Server:  <organization>/<site>/SYSTEM2
+
+However, if Microsoft Exchange Server is a directory synchronization requestor,
+the SYSTEMx address will be used, even if this is the first Microsoft Exchange
+Server in the site. This is because we don't know if there will be another
+Microsoft Exchange Server in the site that will act as a directory
+synchronization server, in which case the address must be $SYSTEM.
+
+If a Microsoft Exchange Server that acts as a directory synchronization server is
+later changed to be a directory synchronization requestor, the DXA address will
+be modified to SYSTEM1. If a SYSTEM1 address already exists in the same site,
+SYSTEM2 will be used and so forth.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

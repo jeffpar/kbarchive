@@ -1,0 +1,60 @@
+DOCUMENT:Q85684  26-NOV-1999  [msdos]
+TITLE   :Compressed QBASIC.EXE Gives "Out of Memory" Error with Editor
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you rename or copy the compressed QBASIC.EX_ file to QBASIC.EXE without using
+the MS-DOS 5.0 EXPAND utility, any attempt to start MS-DOS 5.0 Editor will give
+an "Out of memory" message.
+
+MORE INFORMATION
+================
+
+Editor uses of the QBasic interpretive editor. When QBASIC.EXE is compressed or
+is corrupt, Editor will give an "Out of memory" error when loading.
+
+RESOLUTION
+==========
+
+To correct this problem, expand QBASIC.EX_ to QBASIC.EXE by typing the following
+from the MS-DOS directory
+
+   " expand [drive:]qbasic.ex_ c:\dos\qbasic.exe" (without the quotation marks)
+
+where [drive:] is the floppy drive location of the compressed file.
+
+
+Additional query words: 5.00 5.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,101 @@
+DOCUMENT:Q195740  20-MAY-2002  [iis]
+TITLE   :PUT Command with HTTP Causes File Deletion 401.1 Error
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a PUT command with HTTP to copy a file from a browser to an IIS 4.0
+computer, if the file is copied to a drive other than a system drive, the file
+is deleted and a 401.1 Access Denied error is returned. The file deletion may
+take up to 45 seconds to occur, due to queue management in IIS.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem. If you are not severely affected by this
+specific problem, Microsoft recommends that you wait for the next Windows NT
+service pack.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+Date      Time       Size       File Name        Platform
+---------------------------------------------------------
+10/31/98  12:37a     27,696     Admwprox.dll      x86
+10/31/98  12:39a    330,976     Asp.dll           x86
+10/31/98  12:37a     43,456     Coadmin.dll       x86
+10/31/98  12:39a     11,168     Ftpctrs2.dll      x86
+10/31/98  12:39a     81,376     Ftpsvc2.dll       x86
+10/31/98  12:37a     10,224     Isfecnv.dll       x86
+10/31/98  12:37a      1,920     Iislog.dll        x86
+10/31/98  12:37a     16,848     Infoadmn.dll      x86
+10/31/98  12:37a    184,192     Infocomm.dll      x86
+10/31/98  12:37a      9,584     Infoctrs.dll      x86
+10/31/98  12:37a     47,936     Isatq.dll         x86
+10/31/98  12:37a     29,520     Iscomlog.dll      x86
+10/31/98  12:37a     13,856     Lonsint.dll       x86
+10/31/98  12:37a      8,336     Lonsiw95.dll      x86
+10/31/98  12:37a     71,232     Metadata.dll      x86
+10/31/98  12:37a      7,488     Rpcref.dll        x86
+10/31/98  12:38a     18,032     Svcext.dll        x86
+10/31/98  12:38a     14,752     W3ctrs.dll        x86
+10/31/98  12:38a     26,864     W3svc.dll         x86
+10/31/98  12:38a     60,192     Wam.dll           x86
+
+WORKAROUND
+==========
+
+Do not use a PUT command with HTTP when copying files to a non-system drive.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0.
+
+
+Additional query words: IIS hotfix hot fix qfe quick engineering patch
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

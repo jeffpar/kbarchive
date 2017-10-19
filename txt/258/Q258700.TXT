@@ -1,0 +1,64 @@
+DOCUMENT:Q258700  30-JUL-2000  [winnt]
+TITLE   :Error Message Attempting to Mount SFU 2.0 NFS Shared File System
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to use the mount command from a UNIX client to mount a shared
+folder, the UNIX client may receive the following error message:
+
+   Permission Denied
+
+MORE INFORMATION
+================
+
+When you use the mount command, it is important to note that it is case
+sensitive. If you use the wrong case, Windows Services for UNIX (SFU) version
+2.0 returns "NFS3ERR_ACCES" for an invalid mount name request. When the UNIX
+client receives this return, it generates the "Permission Denied" error
+message.
+
+For example, assume that the computer that is running SFU 2.0 is named SFUSERVER
+and has a shared folder named Public. Using the following command does not work
+because the folder name is "Public," not "public":
+
+   mount -F nfs SFUSERVER:/public /mnt
+
+The proper command to mount the share is
+
+   mount -F nfs SFUSERVER:/Public /mnt
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

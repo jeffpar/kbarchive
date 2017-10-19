@@ -1,0 +1,100 @@
+DOCUMENT:Q324322  02-JUL-2002  [iis]
+TITLE   :XSL ISAPI Contains Non-Secure Code that Results in Access to IIS
+PRODUCT :Internet Information Server
+PROD/VER::2.5,2.6,3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft XML, versions 2.5, 2.6, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When certain error conditions are met, IIS files may be exposed to clients who
+browse the Web site if you are using the XSL ISAPI filter.
+
+RESOLUTION
+==========
+
+To resolve this problem, you must download and install a new filter.
+
+1. Determine which version of the XSL ISAPI filter you are currently using, and
+   then download the new filter from one of the following locations:
+
+Note that it is extremely important to note which version is being used in IIS.
+If you are not sure, review the documentation that is located on the download
+page of the filter. The extensible nature of the filter makes it possible to
+apply the wrong update to your version type.
+
+    - If you are running any version from Reference Architecture for Commerce
+      Version 2, download the new filter from the following Microsoft Developer
+      Network (MSDN) Web site:
+
+NOTE: The Reference Architecture for Commerce is an update to a previous release
+named "B2C Reference Architecture". Users of both Reference Architectures must
+download the update from this Web site.
+
+   Reference Architecture for Commerce Version 2
+   http://msdn.microsoft.com/code/default.asp?url=/code/sample.asp?url=/msdn-files/026/002/422/msdncompositedoc.xml
+
+    - If you are running any other version, download the new filter from the
+      following MSDN Web site:
+
+   XSL ISAPI Filter 2.2: Server-side XSL Formatting for Multiple Device Types
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnxslgen/html/xslisapifilter.asp
+
+2. Click Start, click Programs, click Windows NT 4.0 Option Pack, click Internet
+   Information Server, and then click Internet Services Manager.
+
+3. When the ISM opens, right-click the server name, and then click Properties to
+   open the Master Properties dialog box.
+
+4. In the Master Properties dialog box, make sure that WWW is listed in the
+   drop-down list, and then click Edit.
+
+5. On the ISAPI Filters tab, make sure that the XSL ISAPI filter is listed. The
+   filter is installed and updated by the installer.
+
+6. Stop and restart the service to activate the changes.
+
+NOTE: Although no known compatibility issues exist between earlier versions,
+Microsoft recommends that you install and fully test the new XSL ISAPI version
+in a non-production environment before you use it in a production environment.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in IIS versions 4.0 and 5.0 and
+MSXML versions 2.5, 2.6, 3.0.
+
+Additional query words: iis, XSLISAPI
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbAudDeveloper kbMSXMLSearch kbiis500 kbiis400 kbMSXML250 kbMSXML260 kbMSXML300
+Version           : :2.5,2.6,3.0,4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

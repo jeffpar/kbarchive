@@ -1,0 +1,74 @@
+DOCUMENT:Q166784  14-NOV-2000  [word97]
+TITLE   :WD97: Error Message: "Can't Exit Design Mode..." After Adding Co
+PRODUCT :Word 97 for Windows
+PROD/VER::97
+OPER/SYS:
+KEYWORDS:kberrmsg kbprogramming kbtool word8 kbwordvba word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a custom control from the Control Toolbox toolbar to your
+Normal.dot, you may receive the following error message when you create a new
+document and attempt to access the control:
+
+   Can't exit design mode because Control '<Control Type>' can not be
+   created.
+
+CAUSE
+=====
+
+The Visual Basic for Applications code for the control must be compiled before
+you save the Normal.dot template.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+ - Open your Normal.dot, access the control, and then save and close the
+   Normal.dot template.
+
+-or-
+
+ - If you have Visual Basic for Applications code that runs when you access the
+   control, run the procedure prior to saving and closing the Normal.dot
+   template.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words: wordcon 97 8.0 vb vbe vba can t
+
+======================================================================
+Keywords          : kberrmsg kbprogramming kbtool word8 kbwordvba word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

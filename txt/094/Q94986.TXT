@@ -1,0 +1,74 @@
+DOCUMENT:Q94986  13-JUN-1999  [homegame]
+TITLE   :Golf Err Msg: Bad or Missing RealSound Driver
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbsetup kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Golf issues the error statement "Bad or missing RealSound driver
+[vrsd.386]" in the Current Sound Driver portion of the System Info dialog box
+if:
+
+1. VRSD.386 was not installed properly in the SYSTEM subdirectory of the WINDOWS
+   directory.
+
+2. The line DEVICE=VRSD.386 is not under the [386Enh] section of the SYSTEM.INI
+   file.
+
+3. The VRSD.386 file is corrupt.
+
+Solution
+--------
+
+1. If the VRSD.386 file is corrupt or does not exist in the SYSTEM subdirectory
+   of Windows, you must expand it from the Setup Disk 1. Also, make sure it is
+   not in the WINDOWS directory or the MSGOLF directory. If you find it in
+   either place, you need to delete it.
+
+2. Exit Windows and switch to the SYSTEM subdirectory of the WINDOWS directory.
+
+3. Insert Golf Disk 1 in your floppy disk drive.
+
+4. Type the following
+
+   expand <drive>:\vrsd.38_ vrsd.386.
+
+   where <drive> is the name of your floppy disk drive.
+
+5. Restart Windows and run Golf.
+
+Additional query words: no sound 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,71 @@
+DOCUMENT:Q100117  08-NOV-2001  [homemm]
+TITLE   :Expert Developer CD Disk Information
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expert Developer CD, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Expert Developer CD is provided to participating developers, and
+contains only strategic Microsoft products and a disk imaging utility.
+
+MORE INFORMATION
+================
+
+These products are included on the Microsoft Expert Developer CD:
+
+ - C Compiler
+
+ - C 7.00 Patch
+
+ - FORTRAN
+
+ - QuickC for MS-DOS
+
+ - QuickC for Windows
+
+ - Macro Assembler
+
+ - Visual Basic for MS-DOS
+
+ - Visual Basic for Windows
+
+ - Test for Windows
+
+ - FoxPro for MS-DOS
+
+ - FoxPro for Windows
+
+ - Access
+
+Additional query words: 1.00 multi media multi-media multimedia
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper _IKkbbogus kbExpertDevCD
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

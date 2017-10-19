@@ -1,0 +1,96 @@
+DOCUMENT:Q162330  09-AUG-2001  [winnt]
+TITLE   :Err Msg: Windows NT Could Not Start...
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows NT, the following error message may be displayed:
+
+   Windows NT could not start because of a computer hardware configuration
+   problem.
+
+   Could not read from the selected boot disk. Check boot path and disk
+   hardware.
+
+   Please check the Windows NT(TM) documentation about hardware disk
+   configuration and your hardware reference manuals for additional information.
+
+CAUSE
+=====
+
+This behavior can occur if any part of the arcpath statement in the Boot.ini
+file uses all uppercase charcters. For example:
+
+   MULTI(0)DISK(0)RDISK(0)PARTITION(1)\NT40="Windows NT Workstation
+   Version 4.00"
+
+RESOLUTION
+==========
+
+Change the arcpath statement to use lowercase letters. For example:
+
+   multi(0)disk(0)rdisk(0)partition(1)\NT40="Windows NT Workstation
+   Version 4.00"
+
+If the computer uses the FAT file system, boot from a bootable MS-DOS floppy disk
+and perform the following steps:
+
+1. Type the following line:
+
+   attrib -s -h -r c:\boot.ini
+
+2. Use any text editor to edit the Boot.ini file. Make the appropriate changes
+   to the arcpath statement.
+
+3. Save and then close the Boot.ini file.
+
+4. Type the following line:
+
+   attrib +s +h +r c:\boot.ini
+
+If the type of file system is NTFS, you can use the Emergency Repair procedure to
+fix this, choosing only the options to Inspect startup environment and Inspect
+Boot Sector (unchecking the other two options).
+
+To start the Emergency Repair procedure, insert your Windows NT setup floppy disk
+#1 into your floppy drive and reboot your machine. Follow the instructions on
+the screen, and press "R" for Repair when prompted.
+
+Note that you do not need to have recently updated your Emergency Repair
+information when choosing only the options to Inspect startup environment and
+Inspect Boot Sector.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q111814  07-MAY-2001  [visualc]
+TITLE   :HOWTO: Get the Current Document in an MDI Application
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,4.0
+OPER/SYS:
+KEYWORDS:kbDocView kbMFC kbVC kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To get a pointer to the currently active document from an MDI application, use
+the CMDIFrameWnd::MDIGetActive() function. MDIGetActive() returns a pointer to
+the active CMDIChildWnd. This CMDIChildWnd * enables you to get a valid pointer
+to the currently active document via GetActiveDocument().
+
+See the online help and "Class Libraries Reference" for more information about
+these functions.
+
+MORE INFORMATION
+================
+
+The sample below shows how to get a valid pointer to the currently active
+document anywhere within an MDI application.
+
+Sample Code
+-----------
+
+      /* Compile options needed:
+      */ 
+      void Some_Function()
+      {
+        CMyDoc   *pActiveDoc;      // CMyDoc derived from CDocument
+        CMyFrame *pActiveFrame;    // CMyFrame derived from CMDIChildWnd
+        pActiveFrame =(CMyFrame*)
+                  ((CMainFrame*)(AfxGetApp()-<m_pMainWnd))-<MDIGetActive();
+       // MFC 2.5 and later versions contain AfxGetMainWnd(), which
+       // can be used to gain access to the main window instead of
+       // "AfxGetApp()->m_pMainWnd
+        pActiveDoc = (CMyDoc*)pActiveFrame->GetActiveDocument();
+      }
+
+Additional query words: MFC CDocument kbSweptVC600
+
+======================================================================
+Keywords          : kbDocView kbMFC kbVC kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

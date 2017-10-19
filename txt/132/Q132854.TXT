@@ -1,0 +1,77 @@
+DOCUMENT:Q132854  09-NOV-1999  [macmail]
+TITLE   :Mac Srv: Group Propagation Problem with Nested Groups
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1d
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.1d 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a group within a group on Microsoft Mail for AppleTalk Networks,
+the nested group may not be properly deleted from a downstream server, when the
+original group is deleted and a new group is created on the originating server.
+
+CAUSE
+=====
+
+When the nested group is deleted from the originating server (the one that first
+created both groups) and a new group is immediately added, the information
+propagated to the downstream servers does not contain the updated group
+information.
+
+RESOLUTION
+==========
+
+To refresh the group information on the downstream servers, go to the
+originating server, sign in as Network Administrator and follow these steps:
+
+1. From the Mail menu, choose Server Users/Groups.
+
+2. Select the group button.
+
+3. Select Modify Group, then select the group name.
+
+4. Click the Address button, and add a user to the group. Click the Close
+   button.
+
+5. Click Modify, and wait for the change to appear on the downstream server.
+
+6. Redo steps 4 and 5, only remove the user you just added.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.1d of Microsoft Mail
+for AppleTalk Networks. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310d
+Version           : WINDOWS:3.1d
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

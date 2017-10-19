@@ -1,0 +1,76 @@
+DOCUMENT:Q166773  01-MAY-1999  [iis]
+TITLE   :Using the Personalization Service with IIS 4.0
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Site Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To use Personalization Server on Microsoft Windows NT Option Pack and use
+anonymous authentication, you must disable automatic password synchronization.
+
+MORE INFORMATION
+================
+
+Use the following steps to change the settings for the default web site:
+
+1. From the Start, Programs menu, select the Windows NT 4.0 Option Pack.
+
+2. Select the Microsoft Internet Information Server (IIS).
+
+3. Click Internet Service Manager. NOTE: Do not click Internet Service Manager
+   (HTML).
+
+4. If you see the Tip of the Day page, click Close.
+
+5. Click the plus (+) symbol to expand the Internet Information Server folder.
+
+6. Click the + symbol next to your server name.
+
+7. Right-click Default Web Site, and click Properties.
+
+8. Click the Directory Security tab.
+
+9. Click the Edit button for Anonymous Access and Authentication Control.
+
+10. With the Allow Anonymous Access box selected, click the Edit button.
+
+11. Clear the Enable Automatic Password Synchronization check box.
+
+12. Enter the password of the Windows NT User account that will be used for
+   anonymous log-ins.
+
+Additional query words: mcis checked enabled iisfaqtop
+
+======================================================================
+Keywords          :  
+Technology        : kbSiteServSearch kbiisSearch kbAudDeveloper kbiis400 kbSiteServ200
+Version           : WINNT:2.0,4.0
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

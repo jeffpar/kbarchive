@@ -1,0 +1,70 @@
+DOCUMENT:Q223035  30-MAY-2002  [homegame]
+TITLE   :Zone.com: How to Access Your Account Information
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbui igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to access your Zone.com account information.
+
+MORE INFORMATION
+================
+
+To access your Zone.com account information, follow these steps:
+
+1. Click the following link to connect to Zone.com:
+
+   http://zone.msn.com
+
+2. Click Support.
+
+3. Click My Zone.
+
+Alternatively, you can go directly to the "My Zone" page at the following Web
+address:
+
+   https://zone.msn.com/services/MyZone.asp
+
+This page lists the following information:
+
+ - MSN Nickname in use
+ - Email address on file with the Zone
+ - MSN Newsletter subscriptions
+ - Zone Profiles and Ratings
+ - Banning Status
+ - Game Subscriptions and Expiration dates
+ - Billing Services and Help
+
+Additional query words: msgame signon login logon connection user information
+
+======================================================================
+Keywords          : kbui igz kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,90 @@
+DOCUMENT:Q202240  18-SEP-1999  [exchange]
+TITLE   :XFOR: Messages Queued at Lotus cc:Mail Post Office, Event ID 54
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Messages from Lotus cc:Mail to Exchange Server may remain queued at the cc:Mail
+post office. The following event ID may be generated at the Exchange Server
+computer:
+
+   Event ID: 54
+   Source: MSExchangeCCMC
+   Type: Error
+   Category: General
+   Conversion of message failed and the message was moved to the Bad directory.
+
+CAUSE
+=====
+
+The cc:Mail Export.exe program is not finishing exporting a message with a PC
+Paintbrush (PCX) attachment.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. On the Exchange Server computer, check the Exchsrvr\Ccmcdata\Bad folder. Open
+   several of the files located there with Notepad and confirm that they are all
+   from the same user (or are copies of the same message).
+
+2. Locate the message in the cc:Mail post office queue that corresponds to the
+   files from the Exchsrvr\Ccmcdata\Bad folder.
+
+3. After you locate the problem message in the queue, forward it to another
+   cc:Mail mailbox, and delete it from the cc:Mail post office queue.
+
+4. Restart the Microsoft Exchange Connector for Lotus cc:Mail. The queued
+   messages should now be sent from cc:Mail to Exchange Server.
+
+MORE INFORMATION
+================
+
+The behavior described in the "Symptoms" section have been known to occur with
+the following versions of cc:Mail:
+
+   cc:Mail DB6 - Export.exe version 5.15
+   cc:Mail DB8 - Export.exe version 6.0 and version 8.0
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: ccmc, messages stuck
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,57 @@
+DOCUMENT:Q164179  07-SEP-2001  [homekids]
+TITLE   :Writer: Black Splotches when Printing to Canon BJC 600/620
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a, 1.1b, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a Canon BJC600 or BJC620 to print from Creative Writer, your graphics
+may print out as black silhouettes, or they may print out partially in color and
+partially in grayscale.
+
+MORE INFORMATION
+================
+
+With some Canon Bubble Jet printers, the emulation printer drivers (e.g. Epson
+LQ 2550) will allow you to workaround this type of problem.
+
+
+For more information on Canon BJC printer driver updates, contact Canon at (800)
+423-2366.
+
+Microsoft has confirmed this to be a problem in Creative Writer. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: kids kbmm mskids writer cw2 cw2.0 dark printout print-out pictures clipart clip art work bubblejet grey greyscale bubble-jet
+
+======================================================================
+Keywords          : kb3rdparty kbprint 
+Technology        : kbHomeProdSearch kbCreativeWriter100 kbCreativeWriter200 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110b
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

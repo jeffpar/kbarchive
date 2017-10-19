@@ -1,0 +1,111 @@
+DOCUMENT:Q121294  12-FEB-2002  [win95x]
+TITLE   :Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows 95 reboots after Setup is complete, you receive the following error
+message:
+
+   Missing operating system
+
+CAUSE
+=====
+
+This error message occurs when your DISCTEC removable hard disk drive is set as
+the boot drive.
+
+DISCTEC removable hard disk drives set the CMOS to drive type 2. The DISCTEC
+removable drive device driver (DISCTEC.SYS) then uses an INT 13 function 9 call
+to reset the BIOS with the proper hard disk drive type. The hard disk drive type
+is stored in the partition sector.
+
+Windows 95, as well as some earlier versions of MS-DOS, rewrites the partition
+sector when installed. This causes the code the DISCTEC device driver inserted
+to be removed. Therefore, the BIOS can no longer identify the proper hard disk
+drive type.
+
+WORKAROUND
+==========
+
+ - If you have already installed Windows 95 and are receiving the above error
+   message, perform the following steps:
+
+   1. Boot your computer with a bootable floppy disk.
+
+   2. Insert the DISCTEC installation disk in the floppy disk drive and change
+      to this drive (A: or B:).
+
+   3. Use DISCTEC's hard disk drive partitioning software to rewrite the
+      partition table as follows:
+
+   HDPRT /w /0
+
+      NOTE: The last character above is a zero.
+
+      You are returned to a drive prompt without any messages being displayed.
+      This step works correctly as long as the formatting of the hard disk has
+      not changed.
+
+   4. Reboot your computer from the hard disk.
+
+ - If you have not installed Windows 95 yet, perform the following steps:
+
+   1. Manually set the CMOS to the proper hard disk drive type.
+
+   2. Remove the DISCTEC.SYS device driver from the CONFIG.SYS file and reboot
+      your computer.
+
+   3. Install Windows 95.
+
+   4. Reinstall the DISCTEC software.
+
+If you continue to receive the above error message or experience other problems
+with your DISCTEC removable drive, contact DISCTEC technical support at (407)
+671-5500.
+
+MORE INFORMATION
+================
+
+After booting from a floppy disk and attempting to access your hard disk drive,
+you may encounter "Sector not found" error messages. To correct these errors,
+make sure that the DISCTEC device driver (DISCTEC.SYS) is loading in the
+CONFIG.SYS file on the floppy disk.
+
+The DISCTEC removable hard disk drive is manufactured by Disk Technologies Corp.,
+a vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: 3rdparty disktec disktech disctech
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

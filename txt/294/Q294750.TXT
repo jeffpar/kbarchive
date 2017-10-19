@@ -1,0 +1,69 @@
+DOCUMENT:Q294750  17-OCT-2001  [sms]
+TITLE   :SMS: Mandatory Assignments Section Is Unavailable
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbConfig kbMMC kbsms200 kbAdvertisement kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Schedule tab in the Advertisement properties, the Mandatory
+Assignments section may be unavailable. Typically, you can use the New
+Assignment option (yellow star icon) to add a new mandatory schedule to the
+existing advertisement; however, this option is unavailable.
+
+CAUSE
+=====
+
+This issue can occur if you have already configured 15 mandatory assignments for
+the advertisement. The number of mandatory assignments for each advertisement
+cannot exceed 15.
+
+WORKAROUND
+==========
+
+To work around this issue, delete the older mandatory assignments until no more
+than 14 mandatory assignments are listed. You can also create an additional
+advertisement that includes additional mandatory assignments.
+
+MORE INFORMATION
+================
+
+If the number of mandatory assignments that are listed in the advertisement
+equals fifteen, you cannot schedule additional assignments; therefore, the
+option to add additional mandatory assignments is unavailable. This behavior is
+by design
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbConfig kbMMC kbsms200 kbAdvertisement kbsmsAdmin 
+Component         : SystemManagement
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

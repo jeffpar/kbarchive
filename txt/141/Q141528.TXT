@@ -1,0 +1,71 @@
+DOCUMENT:Q141528  24-MAR-2000  [foxpro]
+TITLE   :FIX: Data Designer Validation Text Causes Invalid Page Fault
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Validation Text properties button in the Database Designer has a limitation.
+When the text box is filled with the maximum of 253 characters, Visual FoxPro
+will shut down. If the operating system is Windows for Workgroups, it will shut
+down immediately, and if the operating system is Windows 95, you'll first
+receive an Invalid Page Fault error message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open a database (.dbc file) by using the MODIFY DATABASE command.
+
+2. Click any table to select it. Then right-click, and choose Modify.
+
+3. In the text box next to Validation text, enclose in as many characters in
+   quotation marks as it will allow (253 characters).
+
+4. Click OK. In Windows 95, an Invalid Page Fault will occur. In Windows for
+   Workgroups, Visual FoxPro quits and sends you directly to the operating
+   system without an error.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

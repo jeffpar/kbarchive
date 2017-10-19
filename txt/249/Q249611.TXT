@@ -1,0 +1,73 @@
+DOCUMENT:Q249611  03-MAY-2001  [visualc]
+TITLE   :FIX: The HENV Isn't Accessible When You Use MFC ODBC Classes
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.1,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbMFC kbODBC kbVC600fix kbGrpDSVCDB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When a program dynamically links to Microsoft Foundation Classes (MFC), the MFC
+Open Database Connectivity (ODBC) classes use an ODBC environment handle (HENV)
+that is declared local to the MFC DLL. Therefore, these programs do not have
+access to the MFC HENV.
+
+CAUSE
+=====
+
+This behavior occurs because the MFC ODBC classes are not designed to make the
+HENV available to the programmer.
+
+STATUS
+======
+
+This problem has been fixed with Microsoft Visual C++ 6.0.
+
+Use the global MFC function AfxGetHENV to obtain the HENV.
+
+REFERENCES
+==========
+
+For more information about the full syntax of the AfxGetHENV function, please
+refer to the following Microsoft Web site:
+
+   MSDN Online
+
+Additional query words: Q167910 henv 167910 CRecordset CDatabase couldn't cannot can't get
+
+======================================================================
+Keywords          : kbMFC kbODBC kbVC600fix kbGrpDSVCDB kbDSupport 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.1,4.2,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

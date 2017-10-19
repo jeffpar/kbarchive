@@ -1,0 +1,62 @@
+DOCUMENT:Q235501  10-SEP-1999  [exchange]
+TITLE   :XFOR: Zero-Length Attachments Cause Errors in API Gateway
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When Novell GroupWise clients send a zero-length attachment in a message by
+means of the Microsoft Exchange Connector for Novell GroupWise, the message
+never arrives in Exchange Server. The API gateway reports the following error
+message while processing the outbound message:
+
+   Error processing message attachments.
+
+In addition, a non-delivery-report (NDR) is not be generated back to the
+GroupWise user, so the message appears to have mysteriously disappeared.
+
+CAUSE
+=====
+
+The API gateway does not support zero-length attachments in a message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange connector for
+Novell GroupWise due to its dependency on the API gateway.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

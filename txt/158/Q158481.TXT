@@ -1,0 +1,73 @@
+DOCUMENT:Q158481  14-NOV-2000  [word97]
+TITLE   :WD97: Objects Stacked After Converting to Word 6.x/95 or RTF
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfile kbinterop kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Word 97 document in Word 6.x or 7.x, if that document contains
+floating objects and was saved in either Microsoft Word 6.x/95 format or Rich
+Text Format (RTF), the objects are stacked one on top of the other on the first
+page.
+
+NOTE: This problem does not occur when you save a Word 97 document that contains
+inline objects into Microsoft Word 6.x/95 or RTF formats.
+
+CAUSE
+=====
+
+During conversion, the objects become detached from their original anchors.
+
+WORKAROUND
+==========
+
+To work around this problem, save the document in Word 97 native format, and
+install the Word 97 converter on the computer where you have Word 6.x or 7.x
+installed. When you open the document, the objects will be positioned
+correctly.
+
+For additional information about how to obtain the Word 97-2000 Import Converter,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q162214 How to Obtain the Word 97-2000 Import Converter
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+
+Additional query words: 8.0 word8 word97 over hiding hidden behind on top of each other jumbled mixed up out order wrong incorrect disorderly float convert
+
+======================================================================
+Keywords          : kbfile kbinterop kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

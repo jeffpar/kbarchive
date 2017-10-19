@@ -1,0 +1,79 @@
+DOCUMENT:Q154735  17-DEC-2000  [win95x]
+TITLE   :TrueType Fonts Printed to File as Text with HP 4 or 4M Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document to a file, data may be sent as text instead of
+graphical format.
+
+CAUSE
+=====
+
+This problem is known to occur with Hewlett-Packard (HP) LaserJet 4 and 4M
+printer drivers when both of the following conditions exist:
+
+ - The Print TrueType As Graphics option is enabled on the Fonts tab in the
+   printer's properties.
+
+ - The Use Raster Graphics option is enabled on the Graphics tab in the
+   printer's properties.
+
+RESOLUTION
+==========
+
+To work around this problem, use vector graphics instead of raster graphics. To
+do so, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Use the right mouse button to click the printer you want to modify, and then
+   click Properties on the menu that appears.
+
+3. Click the Graphics tab.
+
+4. Click Use Vector Graphics, and then click OK.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Note that this problem occurs only when you redirect print output to a file. The
+problem does not occur when you print to the printer.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

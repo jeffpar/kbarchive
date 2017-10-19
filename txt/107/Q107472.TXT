@@ -1,0 +1,59 @@
+DOCUMENT:Q107472  23-OCT-1999  [win3x]
+TITLE   :Fax Monitor Is Idle on CAS Modems While Receiving Faxes
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With CAS fax modems, the fax monitor feature of Microsoft At Work PC Fax stays
+in an idle state while receiving faxes.
+
+MORE INFORMATION
+================
+
+CAS-compatible fax modems have their own processors and memory and are designed
+to work independently in the background. Commands to CAS fax modems are issued
+to CASMGR.EXE or CASMODEM.EXE, depending on the modem and revision of the CAS
+modems. This program then issues the appropriate commands to the CAS modem.
+
+When a CAS modem receives a fax, it does so in the background, independently of
+At Work PC Fax. CASMGR does not notify At Work PC Fax that a fax is arriving.
+After the fax arrives, CASMGR places the fax in a queue. At Work PC Fax checks
+the queue periodically for new faxes. Because this occurs in the background, At
+Work PC Fax cannot monitor the progress of an incoming fax.
+
+At Work PC Fax does monitor sent message rendering status. During a fax send, fax
+monitor reports the progress of the fax-rendering process.
+
+Additional query words: 3.11 CAS MONITOR facsimile class
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

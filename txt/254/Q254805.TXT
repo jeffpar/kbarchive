@@ -1,0 +1,167 @@
+DOCUMENT:Q254805  28-JUL-2000  [exchange]
+TITLE   :XADM: Exchange Server 5.5 Post-SP3 Administrator Program Fixes
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the article numbers for Exchange Server version 5.5
+Administrator program bugs that were fixed after Exchange Server 5.5 Service
+Pack 3 (SP3) was released. For information about how to obtain the fixes listed
+in this article, click the article number next to the title of the article about
+that issue to view the article in the Microsoft Knowledge Base.
+
+NOTE: Exchange Server fixes for a particular component are cumulative and contain
+all of the previous fixes for that component. Fixes with a particular version
+number contain all of the fixes that have an earlier version number.
+
+MORE INFORMATION
+================
+
+Administrator program fixes include the following files:
+
++--------------------------------+
+| File name    | Current version | 
++--------------------------------+
+| Admin.exe    | 5.5.2652.70     | 
++--------------------------------+
+| Dapi.dll     | 5.5.2652.49     | 
++--------------------------------+
+| Imcadmin.dll | 5.5.2651.32     | 
++--------------------------------+
+| Inproxy.dll  | 5.5.2652.32     | 
++--------------------------------+
+| Mad.exe      | 5.5.2652.31     | 
++--------------------------------+
+| Mdbsz.dll    | 5.5.2651.67     | 
++--------------------------------+
+| Movesrvr.dll | 5.5.2651.9      | 
++--------------------------------+
+| Pcproxy.dll  | 5.5.2651.74     | 
++--------------------------------+
+| X400prox.dll | 5.5.2651.74     | 
++--------------------------------+
+
+NOTES:
+
+ - When you apply these fixes, the installation program automatically copies the
+   updated Movesrvr.dll file to the Exchsrvr\Bin\Movesrvr folder, if this folder
+   exists on your hard disk. If the Move Server Wizard is installed in a
+   different folder, to apply the fix, manually copy the updated Movesrvr.dll
+   file to the appropriate folder after you run the installation program.
+
+ - The fix documented in Q243822, "XCON: Internet Mail Service Message Size
+   Restriction Is Not Correctly Displayed," requires an updated Msexcimc.exe
+   file in addition to the updated Imcadmin.dll file. This updated Msexcimc.exe
+   file is contained in new versions of the Internet Mail Service, not the
+   Administrator program. Therefore, to fully resolve the problem documented in
+   Q243822, you must obtain a new version of the Internet Mail Service in
+   addition to obtaining a new version of the Administrator program.
+
+ - The fix documented in Q249111, "XFOR: Exchange Connector for Lotus cc:Mail
+   Not Supporting Korean Language," requires an updated Ccmc.exe file in
+   addition to the updated Admin.exe file. This updated Ccmc.exe file is
+   contained in new versions of the Exchange Connector for Lotus cc:Mail, not
+   the Administrator program. Therefore, to fully resolve the problem documented
+   in Q249111, you must obtain a new version of the Exchange Connector for Lotus
+   cc:Mail in addition to obtaining a new version of the Administrator program.
+
+ - Microsoft recommends that the user apply this Exchange Server Administrator
+   fix to at least one Exchange Server computer in each site before you apply it
+   to workstations. This ensures that the updated proxy generators are available
+   in the site.
+
+Fixes Released on July 12, 2000
+-------------------------------
+
+The following files are modified:
+
+ - Admin.exe incremented to version 5.5.2652.70
+ - Dapi.dll incremented to version 5.5.2652.49
+ - Inproxy.dll incremented to version 5.5.2652.32
+ - Mad.exe added and incremented to version 5.5.2652.31
+
+The following fixes are included:
+
+   Q258704 XIMS: SMTP Proxy Adds a Trailing Period (.) for the Template
+   Containing "%g.%m.%s"
+   Q258705 XADM: Site Addressing Is Generating Incorrect SMTP Address for
+   "%g.%s.%m"
+   Q262271 XADM: Admin.exe Program Causes Access Violation When Attempting to
+   Duplicate User
+   Q262695 XADM: Move Mailbox Does Not Continue After Encountering a Corrupted
+   Mailbox
+   Q262773 XADM: Permissions Tab on Address Book View Object Should Not Display
+   Inherited Permissions
+   Q263173 XADM: Only 100 Accounts Can Be Extracted from Active Directory Domain
+
+Fixes Released on February 28, 2000
+-----------------------------------
+
+NOTE: The Mad.exe file is not included with these fixes. This file is added
+later.
+
+The following files are modified:
+
+ - Admin.exe incremented to version 5.5.2651.81
+ - Dapi.dll incremented to version 5.5.2651.58
+ - Imcadmin.dll incremented to version 5.5.2651.32
+ - Mdbsz.dll incremented to version 5.5.2651.67
+ - Movesrvr.dll incremented to version 5.5.2651.9
+ - All other files incremented to version 5.5.2651.74
+
+The following fixes are included:
+
+   Q237459 XCLN: Move Server Wizard Does not Properly Reset Free/Busy
+   Information on Mailboxes
+   Q243822 XCON: Internet Mail Service Message Size Restriction Is Not Correctly
+   Displayed
+   Q246741 XADM: Administrator Export Doesn't Extract Windows NT Accounts in
+   Multiple NT Domains
+   Q248453 XADM: The Exchange Server Administrator Program Is Not Updating the
+   Distribution List Membership List When Removing All Distribution Lists
+   Q248828 XADM: Exchange Dirsync Requestor Updates Not Sent After You Upgrade to
+   SP3
+   Q249111 XFOR: Exchange Connector for Lotus cc:Mail Not Supporting Korean
+   Language
+   Q249250 XADM: Proxy Addresses May Be Modified After Applying Windows NT Server
+   Version 4.0 Service Pack 4
+   Q249641 XADM: Exchange Server Administrator Cannot Display More Than 65535
+   Public Folders
+   Q249870 XADM: Unable to Access Client Permissions on Internet Newsgroup After
+   Upgrading to SP3
+   Q252773 XADM: Deleting All Custom Forms Deletes Contact Distribution List
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbfixlist
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,52 @@
+DOCUMENT:Q103787  29-NOV-2001  [visualc]
+TITLE   :INFO: Compiler Looks for LINK.EXE in CL.EXE Directory First
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,2.1,2.2,4.0,4.1,5.0,6.0,7.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC100 kbVC150 kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC500 kbVC600
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C for MS-DOS 
+ - Microsoft C for OS/2 
+ - Microsoft C/C++ for MS-DOS, version 7.0 
+ - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0, 4.1, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the Microsoft compilers listed above, and the linker is called by the
+compiler (no /c option specified), the first directory in which the compiler
+searches for LINK.EXE after looking in the current directory is the directory
+that CL.EXE was found in. If LINK.EXE is not found in the same directory as
+CL.EXE, then the directories specified by the PATH environment variable are
+searched.
+
+Additional query words: 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC150 kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbVC220 kbZNotKeyword3 kbVC410 kbCVC700DOS kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC500Search
+Version           : :1.0,1.5,2.0,2.1,2.2,4.0,4.1,5.0,6.0,7.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

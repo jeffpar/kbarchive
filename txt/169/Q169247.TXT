@@ -1,0 +1,63 @@
+DOCUMENT:Q169247  16-APR-2000  [powerpt]
+TITLE   :PPT7: Action Items/Speaker Notes Not Saved After Slide Show
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you right-click a PowerPoint presentation in Windows Explorer, and click Show
+on the menu that appears, PowerPoint starts and runs the presentation as a slide
+show. While you are running the slide show, you can add an Action Items slide
+and Speaker Notes. When the slide show finishes, however, the presentation
+closes and you are not asked to save any changes. When you reopen the
+presentation, the Action Items slide and/or Speaker Notes you just added are
+missing.
+
+CAUSE
+=====
+
+The presentation file has a read-only attribute. When you use the Show command
+on the shortcut menu in Windows Explorer, PowerPoint does not display a
+read-only warning.
+
+RESOLUTION
+==========
+
+To resolve this problem and modify a presentation during a slide show, open the
+presentation in PowerPoint, and then run the slide show.
+
+Additional query words: 7.00 ppt95 ppt7 ppt7.0 slideshow deleted warning error
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

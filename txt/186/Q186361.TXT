@@ -1,0 +1,64 @@
+DOCUMENT:Q186361  01-MAY-2001  [ssafe]
+TITLE   :INFO: ERR "...Some links may not be restored"
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS: 6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When restoring a .ssa file to a different database, from which it was archived,
+the following message may occur:
+
+   Destination database is not the same as the original. Some links may not be
+   restored.
+
+To invoke the wizard in the SourceSafe Admin program, from the Restore Projects
+menu, choose Archive.
+
+MORE INFORMATION
+================
+
+This message refers to the share and branch links to other projects and/or files
+that may have existed before creation of the .ssa file. This message is warning
+the user that the database you are restoring the .ssa file to may not have the
+project/file names that the links were committed to in the database where the
+.ssa file was created.
+
+This message is repeated a second time in the Restore Wizard after step three of
+three is completed in the wizard.
+
+NOTE: This message may appear even if the project/file(s) are not shared or
+branched.
+
+Additional query words: ssdb
+
+======================================================================
+Keywords          :  
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS: 6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

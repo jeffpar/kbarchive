@@ -1,0 +1,85 @@
+DOCUMENT:Q130505  21-OCT-2000  [foxpro]
+TITLE   :INFO: Programming in Reports w/ Band Expressions on Entry/Exit
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbvfp kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro version 2.x, programmatic manipulation within a report is accomplished
+by placing a user-defined function (UDF) within an expression of a field object.
+The proper execution of the code, in many cases, depends on where the field
+object resides on the report because report expressions are evaluated from left
+to right and top to bottom.
+
+Visual FoxPro includes "band expressions" that are called On Entry and On Exit.
+These expressions can be found for each report band. The expressions are
+evaluated once per band on each page of the report. Band Expressions eliminate
+the need for careful placement of field objects to control when the code is
+executed. By double-clicking a report band, you can access the the On Entry and
+On Exit expressions. This article shows by example how to use band expressions.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+The following example demonstrates what happens when you place code in the On
+Entry expression:
+
+1. Issue the command SET DEFAULT TO SYS(2004)+"\SAMPLES\DATA"
+
+2. Use the Customer table.
+
+3. In the Command window, issue this command:
+
+      CREATE REPORT BANDTEST.
+
+4. Populate the report by doing a Quick Report.
+
+5. Double-click the Detail band and enter BandTest() in the On Entry field. In
+   the Expression Builder, do not attempt to verify this expression.
+
+6. Create a new program containing the following code, and name it BANDTEST.PRG:
+
+      Wait Window "Record Number: " + Alltrim(Str(RecNo()))
+
+7. Preview the report by right-clicking the report and choosing Preview.
+
+Notice that the code is excuted before entering the Detail band and before any
+data from the Detail band is displayed. If this code was placed in the On Exit
+expression, it would have executed on leaving the Detail band.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode kbvfp kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

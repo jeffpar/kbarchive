@@ -1,0 +1,56 @@
+DOCUMENT:Q93630  02-FEB-2000  [foxpro]
+TITLE   :PRB: Paste Link Command Not Available for Microsoft Graph
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to use the Paste Link command to link to a graph created in Microsoft
+Graph fails.
+
+CAUSE
+=====
+
+The Paste Link command links data contained in a separate file. To edit a data
+file, the Paste Link command calls the server application associated with the
+file. Microsoft Graph does not store data in a file; it graphs data received
+from a client application.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin FoxWin 2.50 OLE Insert Object
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

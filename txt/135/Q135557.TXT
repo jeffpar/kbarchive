@@ -1,0 +1,51 @@
+DOCUMENT:Q135557  18-DEC-2000  [win95x]
+TITLE   :Desktop Themes Icons Are Different
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The minimized icon for Desktop Themes, as well as the icon on the Desktop Themes
+title bar, is different from the full-size icon.
+
+MORE INFORMATION
+================
+
+The smaller (16 x 16) icon does not include the same detail as the full- size
+(32 x 32) icon for Desktop Themes. The full-size icon includes a sound horn
+element that is not included in the smaller icon.
+
+The sound horn is a graphic element only, and does not indicate the availability
+of sound in Desktop Themes.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

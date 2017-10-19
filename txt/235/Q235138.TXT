@@ -1,0 +1,89 @@
+DOCUMENT:Q235138  02-JUL-2000  [sms]
+TITLE   :SMS: Unable to Delete Site System from Administrator UI
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to delete a Site System with the Systems Management Server
+(SMS) Administrator UI under
+
+Systems Management Server
+   Site Database (site code - site name)
+      Site Hierarchy
+         site code - site name
+            Site Settings 
+               Site Systems 
+
+the server disappears, and then reappears when upon refresh.
+
+This problem occurs for systems which once served as a Client Access Point (CAP)
+site system role.
+
+SMS 2.0 (without a service pack) will raise status message errors every hour if
+the server can not be uninstalled successfully.
+
+CAUSE
+=====
+
+The Site System carries the Component Server role and the Administrator UI is
+designed to not remove any site systems which are still serving an active site
+system role.
+
+After all Administrator-definable roles are removed from the Site System
+properties of the system to be removed, Site Component Manager (an SMS core
+service) is instructed to "de-install" and remove the x:\SMS directory
+structure, SMS Executive service, and registry entries from the server in
+question. After the deinstallation of the server is complete, the Site Component
+Server disappears, or 7 days after a retry attempt has failed, at which point
+the Site Component Manager assumes the server is permanently offline, the role
+of Component Server is removed.
+
+The Component Server role is not definable by the Administrator and cannot be
+modified manually.
+
+WORKAROUND
+==========
+
+Wait for Site Component Manager to remove Component Server role after successful
+deinstallation of the Client Access Point or wait for the 7-day retry interval
+to pass, and then delete the server within the SMS Administrator UI.
+
+If the server in question is no longer available and SMS is in use without a
+service pack, upgrade to the latest Service Pack.
+
+
+Additional query words: prodsms sitecomp component delete
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,82 @@
+DOCUMENT:Q194626  22-OCT-2000  [sna]
+TITLE   :Shared Folders Unable to Copy Files With Compression Enabled
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Shared Folders is unable to copy files to an AS/400 folder with compression
+enabled. In addition, files greater than 6 KB are unable to be copied to the
+AS/400.
+
+CAUSE
+=====
+
+The compression header is not getting inserted into the compressed Request Unit
+(RU) properly if the first element in the RU to be compressed contains no data.
+
+If the Length-checked Compression Indicator (LCCI) bit is set in the Request
+Header (RH), the first 3 bytes in the RU makes up the compression header. The
+bytes should look like the following:
+
+ - Byte 1 = 0x11 if using RLE compression or 0x21 if using LZ compression
+
+ - Bytes 2 & 3 = length of the uncompressed RU
+
+In the case where there is no data, these bytes are all zeros (000000).
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0 and 4.0
+Service Pack 1 for Windows NT. This problem was corrected in the latest SNA
+Server version 4.0 U.S. Service Pack. For information on obtaining this Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces): S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Compression can be enabled in the following places within SNA Manager for an
+AS/400 connection:
+
+ - In the mode properties under the Mode Compression tab
+
+ - In the connection properties, under the System Identification tab
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfixlist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+Version           : WINDOWS:4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

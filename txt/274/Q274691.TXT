@@ -1,0 +1,57 @@
+DOCUMENT:Q274691  25-JUL-2001  [homegame]
+TITLE   :MGS: Inventory Continues to Scroll After You Release Arrow Keys
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metal Gear Solid 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Metal Gear Solid, when you use the arrow keys on a Microsoft
+IntelliType Pro keyboard to scroll through your Inventory in first-person mode,
+the inventory may continue to scroll for a few seconds after you release the
+arrow keys.
+
+CAUSE
+=====
+
+This issue can occur if the IntelliType Pro keyboard is connected to a USB port
+on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, connect the IntelliType Pro keyboard to a PS/2 keyboard
+port on your computer.
+
+Additional query words: msgame metalgearsolid mgs stick down arrow
+
+======================================================================
+Keywords          : kbenv kbhw kbimu kbHardware 
+Technology        : kbGamesSearch kbMetalGearSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

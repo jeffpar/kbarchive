@@ -1,0 +1,79 @@
+DOCUMENT:Q68835  27-NOV-2001  [visualc]
+TITLE   :PRB: Compiler Prints Filename But Does Not Compile the Program
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,2.0,2.1,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC100 kbVC150 kbVC151 kbVC152fix kbVC210 kbVC400 kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C for MS-DOS 
+ - Microsoft C/C++ for MS-DOS 
+ - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51 
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Using the Microsoft C/C++ compiler, if your program prints out your filename
+after you type in the following:
+
+   cl filename.c
+
+and then returns to the command prompt without creating an executable file, there
+may be duplicate compiler filenames. Within the Programmer's WorkBench (PWB) or
+Visual Workbench (VWB), it will indicate that there are no warnings or errors
+after rebuilding, but the compiler will not create an executable file.
+
+CAUSE
+=====
+
+The C compiler is a three-pass compiler, and invokes the files C1.EXE, C2.EXE,
+and C3.EXE for C versions 5.1, 6.0, 6.0a, and 6.0ax. To determine what files are
+being invoked for C/C++ 7.0 and Visual C++ 1.0, add the /d compiler switch to
+the command line; for Visual C++ 2.xx and above, add the /Bd switch. Different
+files will be used depending on whether it is a C or C++ source file.
+
+If there are any other files with these names on the path before the compiler,
+then the compiler may incorrectly execute the wrong file.
+
+RESOLUTION
+==========
+
+There is a compiler switch, /d or /Bd, that will enable you to print out which
+files are being invoked during each pass of the compiler. Use this to determine
+if the wrong files are being called by the compiler.
+
+   cl /d filename.c
+
+   -or-
+
+   cl /Bd filename.c
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC150 kbVC151 kbVC152fix kbVC210 kbVC400 kbVC500 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbVC500 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC500Search
+Version           : :1.0,1.5,1.51,2.0,2.1,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

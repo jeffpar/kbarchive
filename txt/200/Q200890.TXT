@@ -1,0 +1,79 @@
+DOCUMENT:Q200890  10-AUG-2001  [winnt]
+TITLE   :SNMP Security Extended by Service Pack 4
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Service Pack 4 added new security settings to SNMP. The security
+settings can be found by opening Control Panel, and double-clicking Network.
+Click the Services tab, select SNMP, click Properties, and then click Security.
+
+MORE INFORMATION
+================
+
+Service Pack 4 has added extended community security to the SNMP service. Now,
+both the community name is checked for authentication and the host can define a
+level of access. These levels of access are closely aligned with the MIB access
+variable. The community security levels are as follows:
+
+ - NONE - Cannot read or write any variables.
+
+ - NOTIFY - An unsolicited message issent to an SNMP management system.
+
+ - READ-ONLY - Cannot set any values.
+
+ - READ-WRITE - Can read or write any variables that the MIB definition allows.
+
+ - READ-CREATE - Allows the creation of a new row.
+
+The interaction of the MIB access variable and the community security level can
+be seen in the following example:
+
+If your community access level is set to READ-ONLY and the MIB access variable is
+set at READ-WRITE, the following operations would be valid: get-request,
+get-next-request, get-response, and trap. Note that the set-request is blocked
+by the more restrictive community access level. So, the combination of these two
+security parameters determines the level of functionality the user has with
+SNMP.
+
+REFERENCES
+==========
+
+For additional information on this topic, see RFC 1157, "A Simple Network
+Management Protocol (SNMP)."
+
+Additional query words: snmp security sp4
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

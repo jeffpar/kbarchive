@@ -1,0 +1,73 @@
+DOCUMENT:Q126615  27-JUL-2001  [odbc]
+TITLE   :BUG: MSDN CD#4: MSJETINT.DLL Missed in ODBC16.INF
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.10
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.10 
+-------------------------------------------------------------------------------
+
+BUG# ODBCSDK3: 333 (2.10)
+
+SYMPTOMS
+========
+
+If you only install the 16-bit Btrieve/Access/Paradox/Fox/Text/Excel Driver from
+the January 1995 Microsoft Developer's Network (MSDN) CD#4 (\ODBC\X86), and you
+try to add data source on that driver immediately after it is installed, an
+error message will appear:
+
+   The setup routines for the [*** Driver Name ***] ODBC driver could not be
+   loaded. You may be low on memory and need to quit a few applications.
+
+CAUSE
+=====
+
+In ODBC16.INF, a line that appears only in the dBase Driver Section,
+
+   "Internat" = 1, msjetint.dll,,,, 1994-12-07,  ,, OLDER,  ,,,,,......
+
+should appear in all the desktop database driver sections.
+
+WORKAROUND
+==========
+
+Manually copy the file MSJETINT.DLL into %SystemRoot%\system\msjetint.dll:
+
+   expand \\CD#4\ODBC\X86\msjetint.dl_ %SystemRoot%\system\msjetint.dll
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC SDK version 2.1. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 2.10.0000 ODBC SDK INSTALL 16-bit Desktop ACCESS BTRIEVE EXCEL FOX PARADOX TEXT Windows NT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch
+Version           : WINDOWS:2.10
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

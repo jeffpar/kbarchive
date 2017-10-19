@@ -1,0 +1,59 @@
+DOCUMENT:Q169638  07-AUG-1999  [exchange]
+TITLE   :XADM: Exchange Uses Information Store for Intersite Replication
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbtshoot exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to remove the Private Information Store from an Exchange Server
+version 5.0 or 5.5 computer that is acting as the site's replication bridgehead
+server, the following error message may be appear:
+
+   STOP
+   This Private Information Store is being used. Remove the Directory
+   Replication Connector first.
+
+CAUSE
+=====
+
+In Microsoft Exchange Server 5.0 and 5.5, the information store is used to
+deliver and receive inter-site replication messages. The Directory service uses
+MAPI calls to communicate with the store for this purpose. In Exchange Server
+4.0, the above error message does not appear because the Directory service
+communicates directly with the message transfer agent (MTA) for inter-site
+replication communications.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtshoot exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

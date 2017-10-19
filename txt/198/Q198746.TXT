@@ -1,0 +1,65 @@
+DOCUMENT:Q198746  31-JUL-2001  [sms]
+TITLE   :SMS: Courier Sender Must Run Local to Site Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbSender kbSMSSender
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Create Outgoing Parcel function in Courier Sender is only available when
+running it locally from the Systems Management Server 2.0 site server. A Courier
+Sender icon is present on remote computers running the Systems Management Server
+2.0 Administrator Console and will run, but it gives the following message when
+the Create Outgoing Parcel item is selected:
+
+   The SMS registry indicates no outbox for the sender to scan. Be sure that you
+   are running this application on an SMS Site Server and that at least one site
+   is defined to use the Courier Sender.
+
+WORKAROUND
+==========
+
+To use the Create Outgoing Parcel in Courier Sender, you must be running it
+local to the Systems Management Server 2.0 site server. A possible workaround to
+this is to Remote Control the Systems Management Server 2.0 site server from the
+remote Administrator Console and run the Courier Sender in this way.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms smssvr admin
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbSender kbSMSSender 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

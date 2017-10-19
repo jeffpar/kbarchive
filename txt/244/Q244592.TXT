@@ -1,0 +1,53 @@
+DOCUMENT:Q244592  29-JUN-2001  [win95x]
+TITLE   :Unavailable Language Error Message After Reinstall of Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:osr1 osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2.0, 2.1, 2.5 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you reinstall Windows 95 over a previous installation with Lotus Smart Suite
+96 installed, you may receive the following error message during the last time
+Windows restarts in Setup:
+
+   Unavailable langauge
+   Selected language is not available.
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall Lotus Smart Suite 96.
+
+Additional query words:
+
+======================================================================
+Keywords          : osr1 osr2 win95 
+Technology        : kbWin3xSearch kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

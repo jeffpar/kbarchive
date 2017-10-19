@@ -1,0 +1,139 @@
+DOCUMENT:Q155164  29-NOV-2001  [visualc]
+TITLE   :FIX: C2678 on Overloaded Functions When Using a Namespace
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2
+OPER/SYS:
+KEYWORDS:kbProgramming kbCompiler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The wrong version of an overloaded function is called causing the following
+compiler two errors:
+
+   
+
+   error C2678: binary '!=' : no operator defined which takes a left-hand
+   operand of type 'const struct Test' (or there is no acceptable
+   conversion) (new behavior; please see help)
+
+-and-
+
+   
+
+   error C2664: 'Tester' : cannot convert parameter 1 from 'const struct
+   Test' to 'const float &' (new behavior; please see help)
+
+The sample in the "Sample Code" demonstrates this problem. These errors occur
+when:
+
+1. The function has a global definition.
+
+2. The function (with the same name and different argument types compared to the
+   global function) is defined in a named namespace.
+
+3. The named Namespace function is included in the global namespace by the
+   "using" declarative.
+
+RESOLUTION
+==========
+
+1. Put the function in a named namespace (within the global namespace) and then
+   use the "using" declaration. See workaround #1 below.
+
+2. Specify the "using" declaration at the global level. See workaround #2 below.
+
+Also see the "More Information" section for the sample code and the workarounds.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem of incorrect overloaded
+function call causing the C2678 and the C2664 compiler errors.
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+         struct Test
+         {
+         } ;
+   // Uncomment the following 2 lines for workaround #1
+   //      namespace Space2
+   //      {
+             int Tester(const Test& rx, const Test& ry)
+             {
+                return 0 ;
+             }
+
+             int operator!=(const Test& rx, const Test& ry)
+             {
+                return 0 ;
+             }
+   // Uncomment the following line for workaround #1
+   //      }
+
+         namespace Space1
+         {
+            int operator!=(const float& rx, const Test& rt)
+            {
+                return 1 ;
+            }
+
+            int Tester(const float& rx, const int& ri)
+            {
+                return 1 ;
+            }
+         }
+
+   // Uncomment the following line for workaround #2
+   //      using namespace Space1 ;
+         void main()
+         {
+            const Test a ;
+            const Test b ;
+            using namespace Space1 ;
+            if (a != b) ;  // This line causes the C2678
+            Tester(a, b);  // This line causes the C2664
+         }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbCompiler 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+Version           : :4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

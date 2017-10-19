@@ -1,0 +1,83 @@
+DOCUMENT:Q213186  08-AUG-2002  [sms]
+TITLE   :SMS: Cannot Change Site Server Domain Name or Computer Name
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbsetup kbConfig kbServer kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A Microsoft Systems Management Server (SMS) site no longer functions after you
+change either the name of the domain or the name of the computer on which the
+site was installed.
+
+After you change the existing domain name to a new domain name, or change the
+site server's computer name to a new computer name, the SMS services do not
+start as expected.
+
+MORE INFORMATION
+================
+
+Microsoft does not support the practice of changing the computer name after a
+site server has been installed. However, you may change the domain to which the
+server is installed.
+
+For additional information about how to move SMS Site Server to a new domain,
+please see the "Moving SMS Servers Between Domains" White Paper. To do so, visit
+the following Microsoft Web site:
+
+   http://www.microsoft.com/smserver/techinfo/administration/20/maintaining/dommov.asp
+
+To work around this issue, use one of the following options:
+
+ - Before you change site server domain names or computer names, uninstall the
+   site from all clients, and then uninstall the site servers. After the site
+   has been removed, make any domain name or computer name changes, and then
+   reinstall SMS on the site server on which you have changed the domain or
+   computer name.
+
+   NOTE: This option requires the re-creation of packages, advertisements, custom
+   reports, and any other object that you created within the site that is not a
+   default component of a freshly installed site.
+
+   -or-
+
+ - Promote one of the site servers to the role of primary domain controller
+   (PDC) for the domain. On another computer, install Microsoft Windows NT
+   Server 4.0 and create the new domain on it. Leave all SMS site servers in the
+   original domain. Establish a trust between the SMS site domain and the new
+   domain. Ensure that the SMS service account has rights in the new domain.
+
+
+Additional query words: prodsms move domain site
+
+======================================================================
+Keywords          : kbinterop kbsetup kbConfig kbServer kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

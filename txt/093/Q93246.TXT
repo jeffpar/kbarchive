@@ -1,0 +1,77 @@
+DOCUMENT:Q93246  07-DEC-1999  [win95x]
+TITLE   :Australian Star Dot-Matrix Models
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The following lists the Australian Star dot-matrix-printer models on the left,
+with the corresponding United States model listed on the right:
+
+Australian Model                         U.S. Model
+----------------                         ----------
+
+NX-1000                                  NX-1000
+LC-10 II                                 NX-1000 II
+LC-10 Colour                             NX-1000 Rainbow
+LC-20                                    NX-1001
+FR-10                                    XR-1000
+FR-15                                    XR-1500
+LC-200 Colour                            NX-1020 Rainbow
+ZA-200                                   XR-1020
+ZA-250                                   XR-1520
+NX24-10                                  NX-2400
+NX24-15                                  NX-2415
+LC24-10                                  NX-2400
+LC24-15                                  NX-2415
+LC24-20                                  NX-2430
+LC24-200                                 NX-2420
+LC24-200 Colour                          NX-2420 Rainbow
+XB24-10                                  XB-2410
+XB24-15                                  XB-2415
+XB24-200                                 XB-2420
+XB24-250                                 XB-2425
+
+MORE INFORMATION
+================
+
+This information has been obtained from Star Micronics Pty. Ltd., Australia.
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+
+Additional query words: 3.00 3.00a 3.10 3.11 dot matrix micronix
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,52 @@
+DOCUMENT:Q102676  26-JUN-2001  [utilities]
+TITLE   :Documentation Lists CodeView Error Messages Alphabetically
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::3.14,4.0,4.01
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS, versions 3.14, 4.0, 4.01 
+ - Microsoft CodeView for Windows, versions 3.14, 4.0, 4.01 
+-------------------------------------------------------------------------------
+
+In the following documentation, CodeView error messages are listed in
+alphabetical order rather than in numerical order:
+ 
+
+ - CodeView version 3.14 messages in the Microsoft FORTRAN "Environment and
+   Tools" manual for version 5.1
+
+ - CodeView versions 4.0 and 4.01 messages in the Microsoft C/C++ "Comprehensive
+   Index and Errors Reference" manual for version 7.0
+
+CodeView usually displays error messages in a pop-up window when you
+step through code. The manuals list the error messages in alphabetical
+order to ease the process of cross referencing an error message on the
+screen with its complete description in the manual.
+
+Additional query words: kbinf 4.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView314DOS kbCodeView400DOS kbCodeView401DOS kbCodeView314 kbCodeView400 kbCodeView401
+Version           : :3.14,4.0,4.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

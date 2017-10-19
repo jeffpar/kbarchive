@@ -1,0 +1,77 @@
+DOCUMENT:Q150145  02-NOV-1999  [fortran]
+TITLE   :PRB: FOR3852 Error in Consecutive Arithmetic Operations
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting an arithmetic calculation involving a binary and unary operator
+consecutively fails with the following compiler syntax error:
+
+   error FOR3852: syntax error detected between * and -
+
+RESOLUTION
+==========
+
+If you use consecutive binary and unary operators in your arithmetic
+calculations, enclose the unary operation in parentheses.
+
+-or-
+
+Specify the unary operation before the binary operation.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Behavior
+----------------------------------
+
+   ! Compile options needed: none
+
+         j = 3
+         k = 2
+   ! The following line causes the FOR3852 error
+         i = j * -k    ! comment this line for workaround #1
+   !      i = j * (-k) ! uncomment this line for workaround #1
+         print *, i
+         i = -k * j    ! use alternate arithmetic form - workaround #2
+         print *, i
+         end
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

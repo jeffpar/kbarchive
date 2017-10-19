@@ -1,0 +1,51 @@
+DOCUMENT:Q258565  30-MAR-2000  [homegame]
+TITLE   :Baseball 2001: How to Resume Playing After Game Stops Responding
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to reset Microsoft Baseball 2001 if the game stops
+responding (hangs) during game play.
+
+MORE INFORMATION
+================
+
+If Baseball 2001 stops responding (hangs) during game play, press CTRL+F3 to
+reset the game.
+
+NOTE: Although game play is resumed, a new batter is brought to the plate.
+
+Additional query words: 1.00 msgame bb2001 bball restore hangs freeze lock
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

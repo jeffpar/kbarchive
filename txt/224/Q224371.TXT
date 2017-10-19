@@ -1,0 +1,74 @@
+DOCUMENT:Q224371  31-MAY-2002  [iis]
+TITLE   :IIS Error: The RPC Server is Unavailable
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Internet Services Manager and you refresh the MMC interface,
+the following error message may occur:
+
+   The RPC Server is Unavailable
+
+CAUSE
+=====
+
+This error is usually caused by the IISADMIN service being stopped.
+
+WORKAROUND
+==========
+
+To work around this problem, make sure that this IISADMIN service is running. To
+do this, perform the following steps:
+
+1. Open a command prompt (Cmd.exe).
+
+2. At the prompt, type "net start iisadmin" (without the quotation marks)
+
+3. Press Enter.
+
+Note: The IISADMIN service should restart once you click OK on the message box.
+This means that you may receive the message "The IISADMIN service has already
+been started" when performing the steps above.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+version 5.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

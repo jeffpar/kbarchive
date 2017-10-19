@@ -1,0 +1,63 @@
+DOCUMENT:Q140813  27-JUL-2001  [sms]
+TITLE   :Windows Fails w/ Black Screen After Upgrade from SMS 1.0 to 1.1
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you quit Windows a black screen appears without any text. If you press
+CTRL+ALT+DEL a blue screen appears with the dialog box:
+
+   'WARNING!' The system is either busy or unstable.
+
+You are forced to reboot the client by pressing CTRL+ALT+DEL to continue.
+
+This symptom occurs on a Windows or Windows for Workgroups client with ODI
+support for NetWare after you log on to a NetWare domain Systems Management
+Server logon server that belongs to a site that is upgraded to Systems
+Management Server 1.1. The Systems Management Server therefore has upgraded
+logon-server components. When you log on from the client, phase one of the
+client upgrade begins by copying client components to the client. When the
+copying is complete and you quit from Windows as recommended by the script
+dialog box, the above symptom occurs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

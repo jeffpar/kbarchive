@@ -1,0 +1,62 @@
+DOCUMENT:Q155654  08-NOV-2001  [homegame]
+TITLE   :Monster Trucks: Cannot Switch to Full Screen When Running Word
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbreadme kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There is a problem when you attempt to start a race when Microsoft Word for
+Windows is also running. As soon as Monster Truck Madness attempts to switch to
+full screen view, Word is activated and Monster Truck Madness pauses.
+
+RESOLUTION
+==========
+
+You can either:
+
+ - Quit Microsoft Word, and then run your race again.
+
+   -or-
+
+ - Clear the Automatic Full Screen check box in the Monster Truck Madness
+   Graphics Options dialog box.
+
+This information is from the Monster Truck Madness Readme.txt file.
+
+Additional query words: 1.00 Monster Truck Madness full-screen whole entire view msword
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q173781  21-SEP-1999  [msnetwork]
+TITLE   :How to Configure Friends Online on The Microsoft Network
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure the Friends Online feature in MSN, The
+Microsoft Network.
+
+MORE INFORMATION
+================
+
+With the Friends Online feature in MSN, you can create a list of friends and
+then receive notification when your friends are online and send private messages
+to them. To configure the Friends Online feature, use the following steps:
+
+1. Go to the Friends Online Web site at http://friendsonline.msn.com.
+
+2. Click Add People To Your List.
+
+   NOTE: If you have already added one or more MSN members to your list of
+   friends, click Add Friends.
+
+3. Under Search for a friend to add, type the appropriate information about your
+   friend in the Last Name, First; E-mail Name; City, State/Province; and
+   Country boxes, and then click Search.
+
+   NOTE: An entry in either the Last Name or E-mail Name box is required.
+
+4. Under Search Results, click the check box to the left of the correct name to
+   select it.
+
+5. Click Add This Person.
+
+6. If you want to add more friends to your Friends Online list, click Add More
+   Friends, and then repeat steps 3-5. If you are finished adding friends, click
+   Done.
+
+
+Additional query words: FOL 2.50 2.60
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

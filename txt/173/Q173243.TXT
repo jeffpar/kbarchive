@@ -1,0 +1,100 @@
+DOCUMENT:Q173243  17-DEC-1999  [mspress]
+TITLE   :How to Install the Windows 95 Resource Kit Utilities
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows 95 Resource Kit ISBN 1-55615-678-2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the procedure for installing the utilities from the
+Microsoft Windows 95 Resource Kit.
+
+This information can also be found in the Readme.txt text file available in the
+root directory of the Microsoft Windows 95 Resource Kit CD-ROM or Disk 1. The
+Readme.txt is also available in article Q134401 in the Microsoft Knowledge
+Base.
+
+
+MORE INFORMATION
+================
+
+Depending on the copy of the Microsoft Windows 95 Resource Kit that you have,
+you may have the utilities on one CD-ROM or three disks.
+
+If You Have One CD-ROM
+----------------------
+
+1. Insert the Windows 95 Resource Kit CD-ROM into your CD-ROM drive.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Click Add/Remove Programs.
+
+4. Click the Windows Setup tab.
+
+5. Click Have Disk.
+
+6. In the Install From Disk window, enter the drive letter of your CD-ROM drive
+   in the "Copy manufacturer's files from:" input box, and then click OK.
+
+7. In the Components list, click to select the components that you would like to
+   add.
+
+8. Click Install.
+
+If You Have Three Disks
+-----------------------
+
+1. Insert the Windows 95 Resource Kit Disk 1 into your disk drive.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Click Add/Remove Programs.
+
+4. Click the Windows Setup tab.
+
+5. Click Have Disk.
+
+6. Type "A:" (without the quotation marks) in the "Copy manufacturer's files
+   from:" input box, and then click OK. If your 3.5-inch floppy drive is not
+   disk drive A, substitute the correct drive letter.
+
+7. In the Components list, click to select the components that you would like to
+   add.
+
+8. Click Install.
+
+9. When prompted, insert the appropriate disk into the disk drive.
+
+Additional query words: mspress ms_press press bookbug win95 reskit win95rk 1-55615-678-2
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

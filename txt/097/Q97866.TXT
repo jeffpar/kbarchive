@@ -1,0 +1,73 @@
+DOCUMENT:Q97866  21-NOV-1999  [msdos]
+TITLE   :MS Backup for Windows Backup to PATH Does Not Overwrite Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Backup for Windows and choose to back up to the MS-DOS
+PATH, Backup does not give you the option to overwrite the files on the
+destination disk if that disk is almost or completely full. This commonly occurs
+when you attempt to reuse disks from a previous backup set. When you use the
+MS-DOS-based version of Microsoft Backup under the same conditions, you have the
+option to overwrite the files on the destination disk.
+
+WORKAROUND
+==========
+
+To work around this problem, use Backup for MS-DOS or format your backup disks
+prior to performing the backup.
+
+MORE INFORMATION
+================
+
+Backup for Windows displays the following error message when there is
+insufficient space on the backup disk:
+
+   Insufficient space on the current volume to create a component file. Insert
+   another volume into drive A.
+
+By contrast, Backup for MS-DOS displays following message, which shows you the
+files that are on the disk and allows you to add to or overwrite them, or
+replace the disk:
+
+   Alert
+
+   You have inserted a disk which contains existing directories and files.
+
+   Do you want to Overwrite this disk, Add to it, or Retry using another disk?
+
+   <Partial file list>
+
+Additional query words: 6.00 mwbackup msbackup 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

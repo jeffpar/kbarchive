@@ -1,0 +1,61 @@
+DOCUMENT:Q190256  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Show Table Borders for All Cells in DHTML Page Designer
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbDHTML kbInternet kbPageDesigner kbVBp kbVBp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, borders are not displayed for cells that do not have content. To
+show table borders for all cells in DHTML Page Designer, set the Rules property
+for the Table object equal to "all."
+
+MORE INFORMATION
+================
+
+At run-time, borders are not displayed for empty cells. At design-time, borders
+are displayed for all cells. To display borders for all cells, you can change
+the value of the Rules property of the table to "all." Click on the table and
+modify the Rules property value to "all."
+
+REFERENCES
+==========
+
+Please see the following Microsoft Knowledge Base article for more information
+on the DHTML Page Designer:
+
+   Q190249 INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDHTML kbInternet kbPageDesigner kbVBp kbVBp600 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

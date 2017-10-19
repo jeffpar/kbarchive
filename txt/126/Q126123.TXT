@@ -1,0 +1,85 @@
+DOCUMENT:Q126123  07-JAN-2000  [mspress]
+TITLE   :MS WIN 32 PROG REF, Vol 2: Corrections and Comments
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Win32 Programmer's Reference, volume 2 ISBN 1-55615-516-6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Microsoft Win32 Programmer's Reference,"
+volume 2.
+
+The following topic is covered:
+
+ - Page 815: Reference to Remote Procedure Call Programmer's Guide is Unclear
+
+MORE INFORMATION
+================
+
+In addition to a description of the book's problems, this document might also
+include sections labeled "Correction" and "Comments." Please note that the
+"Correction" section is worded for correcting the book and does not necessarily
+address the problem introduced by the book error. The "Comments" section
+contains specific information for working around problems.
+
+Page 815: Reference to Remote Procedure Call Programmer's Guide is Unclear
+--------------------------------------------------------------------------
+
+Page 815 of the "Win32 Programmer's Reference," volume 2, mentions the "Microsoft
+Win32 Remote Procedure Call Programmer's Guide and Reference."
+
+Microsoft Press does not distribute the Remote Procedure Call (RPC) Programmer's
+Guide. This guide is included in electronic form with the Microsoft WIN32
+Software Developer's Kit (WIN32 SDK) CD-ROM.
+
+Correction:
+
+After the RPC Programmer's Guide is named, the following words should be appended
+to the sentence:
+
+   ...available in electronic form as part of the Microsoft WIN32 Software
+   Developer's Kit (WIN32 SDK).
+
+Comments:
+
+The "Microsoft Win32 Remote Procedure Call Programmer's Guide and Reference" is
+only available in electronic form. As of December 8, 1994, the only way you can
+obtain this guide is by purchasing WIN32 SDK on CD- ROM.
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: mspress ms_press press bookbug nt
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

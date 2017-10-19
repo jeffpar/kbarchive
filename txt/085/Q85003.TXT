@@ -1,0 +1,60 @@
+DOCUMENT:Q85003  02-NOV-1999  [win95x]
+TITLE   :Character Map Does Not Show Italic or Bold Fonts
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Character Map application in the Microsoft Windows operating
+system version 3.1, bold and italic fonts are not available.
+
+CAUSE
+=====
+
+The Character Map application allows you to select characters from a particular
+font and copy them into the Clipboard. This is especially useful when using
+characters whose ANSI values are greater than 127 and do not appear on the
+keyboard. The fonts that are available are the Windows screen fonts. These
+include TrueType fonts, raster screen fonts, and vector screen fonts. However,
+the italic and bold forms of these fonts are not available, only the regular
+form.
+
+WORKAROUND
+==========
+
+The only workaround to the limitation of the Character Map is to paste the font
+into your document and use the features of that particular application to change
+the font style.
+
+Additional query words: 3.10 3.11 mapper copy paste
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

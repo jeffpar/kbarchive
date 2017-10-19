@@ -1,0 +1,62 @@
+DOCUMENT:Q310663  27-FEB-2002  [odbc]
+TITLE   :PRB: SQLBrowseConnect Can't Browse SQL 7.0 Servers from Win9x
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.6,2.6 SP1,2.7,2000.80.194
+OPER/SYS:
+KEYWORDS:kbGrpDSVCDB kbGrpDSMDAC kbGrpDSODBC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Data Access Components versions 2.6, 2.6 SP1, 2.7, used with:
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows 98 Second Edition 
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft ODBC Driver for SQL Server 2000, version 2000.80.194 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With Microsoft Data Access Components (MDAC) version 2.6 and later installed on
+the platforms listed above, the SQLBrowseConnect ODBC call enumerates Microsoft
+SQL Server 2000 instances but cannot enumerate Microsoft SQL Server 7.0 servers.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+To reproduce this behavior, call SQLBrowseConnect with a Connection String In
+parameter of "Driver={SQL Server}". After the call completes, the Connection
+String Out parameter does not contain any SQL Server 7.0 names in the server
+list.
+
+Additional query words: list servers SQL
+
+======================================================================
+Keywords          : kbGrpDSVCDB kbGrpDSMDAC kbGrpDSODBC 
+Technology        : kbAudDeveloper kbMDACSearch
+Version           : :2.6,2.6 SP1,2.7,2000.80.194
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,64 @@
+DOCUMENT:Q181349  09-AUG-2001  [winnt]
+TITLE   :Applications and Icons Not Displayed in Start Menu
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the hidden attribute has been set on a file or shortcut in a user profile, it
+will not appear in the Start menu. However, the file or shortcut can be seen by
+using Explorer when configured to view hidden files.
+
+RESOLUTION
+==========
+
+Use Explorer to remove the Hidden attribute. Right click the file, select
+Properties, clear the Hidden attribute and click OK.
+
+MORE INFORMATION
+================
+
+If shortcuts and icons defined in the default user, "all users" or locally
+logged on user's profile are hidden and if Windows Explorer (Explorer.exe) is
+configured to view hidden files, all files will be displayed. However, Windows
+shortcuts that have hidden attributes will not be visible when viewed from the
+Windows Start menu
+
+This is often confusing because the user may open Explorer and browse a directory
+storing a user profile where the file is visible, while the same icons are not
+visible in the Start Menu. To make the shortcuts appear in the Start menu,
+remove the hidden attribute for all shortcuts. This action will make icons
+visible when viewed in the Start menu.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

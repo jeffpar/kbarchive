@@ -1,0 +1,287 @@
+DOCUMENT:Q300972  15-AUG-2002  [iis]
+TITLE   :Unchecked Buffer in ISAPI Extension Can Cause Server Compromise
+PRODUCT :Internet Information Server
+PROD/VER::2.0,2000,2000 SP1,2000 SP2,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix KbSECVulnerability KbSECHack kbWin200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Indexing Service, used with:
+    - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Advanced Server 
+    - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Professional 
+    - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Server 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+NOTE: The Indexing service in Microsoft Windows XP Beta is also affected by the vulnerability. Microsoft is working directly with the small number of customers who are using the Beta in production environments to provide remediation for them. For more information, see the FAQ portion of the following Microsoft Web site:
+
+   http://www.microsoft.com/technet/security/bulletin/MS01-033.asp
+
+SYMPTOMS
+========
+
+As part of its installation process, IIS installs several ISAPI extensions.
+These are dynamic-link libraries (DLLs) that provide extended functionality.
+Among these is Idq.dll, which is a component of Index Server (known in Windows
+2000 as Indexing Service) that provides support for administrative scripts
+(these are Internet Data Administration, or .ida, files) and Internet Data Query
+(.idq) files.
+
+A security vulnerability results because Idq.dll contains an unchecked buffer in
+a section of code that handles input URLs. An attacker who can establish a Web
+session with a server on which Idq.dll is installed can conduct a buffer overrun
+attack and execute code on the Web server. Idq.dll runs in the System context,
+so exploiting the vulnerability gives the attacker complete control of the
+server and allows him to take any desired action on it.
+
+The buffer overrun occurs before any indexing functionality is requested. As a
+result, even though Idq.dll is a component of Index Server/Indexing Service, the
+service does not need to be running for an attacker to exploit the
+vulnerability. As long as the script mapping for .idq or .ida files is present,
+and the attacker is able to establish a Web session, he can exploit the
+vulnerability.
+
+Clearly, this is a serious vulnerability, and Microsoft urges all customers to
+take action immediately. Customers who cannot install the patch can protect
+their systems by removing the script mappings for .idq and .ida files by using
+the Internet Services Manager in IIS. However, it is possible for these mappings
+to be automatically reinstated if additional system components are added or
+removed. Because of this, Microsoft recommends that all customers using IIS
+install the patch, even if the script mappings have been removed. For more
+information, see the FAQ portion of the following Microsoft Web site:
+
+   http://www.microsoft.com/technet/security/bulletin/MS01-033.asp
+
+Mitigating Factors
+------------------
+
+ - The vulnerability can only be exploited if a Web session can be established
+   with an affected server. Customers who have installed Index Server or Index
+   Services but not IIS are not at risk. This is the default case for Windows
+   2000 Professional.
+
+ - The vulnerability cannot be exploited if the script mappings for .ida and
+   .idq files are not present. The procedure for removing the mappings is
+   discussed in the IIS 4.0 and IIS 5.0 Security checklists; they can be
+   automatically removed with either the High Security Template or the Windows
+   2000 Internet Server Security Tool. Customers should be aware, however, that
+   subsequently adding or removing system components can cause the mapping to be
+   reinstated, as discussed in the FAQ.
+
+   For more information, see the following Microsoft Web sites:
+
+    - IIS 4.0
+
+   http://www.microsoft.com/technet/security/tools/iischk.asp
+
+    - IIS 5.0
+
+   http://www.microsoft.com/technet/security/iis5chk.asp
+
+    - Windows 2000 Internet Server Security Tool
+
+   http://www.microsoft.com/technet/security/tools.asp
+
+ - An attacker's ability to extend control from a compromised Web server to
+   other computers depends heavily on the specific configuration of the network.
+   Best practices recommend that the network architecture account for the
+   inherent high risk that computers in an uncontrolled environment, like the
+   Internet, face by minimizing overall exposure though measures such as
+   demilitarized zones (DMZs), operating with minimal services and isolating
+   contact with internal networks. Steps like this can limit overall exposure
+   and impede an attacker's ability to broaden the scope of a possible
+   compromise.
+
+RESOLUTION
+==========
+
+Windows 2000
+------------
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The resolution for this problem is also available in Windows 2000 Security Rollup
+Package 1 (SRP1). For additional information about SRP1, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q311401 Windows 2000 Security Rollup Package 1 (SRP1), January 2002
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Q300972_w2K_sp3_x86_en.exe now
+   (http://www.microsoft.com/windows2000/downloads/critical/q300972/default.asp)
+
+Release Date: Monday, June 18, 2001
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+NOTE: Customers who apply this patch on Windows 2000-based computers that are
+running Windows Management Instrumentation (WMI) may also need to apply an
+additional hotfix. Although it is unrelated to this particular patch, a known
+issue can cause the WMI process (Winmgmt.exe) to stop responding (hang) and
+consume 100 percent of CPU resources and memory if a program queries for the
+Win32_QuickFixEngineering objects. For example, this can occur when Microsoft
+Systems Management Server (SMS) queries WMI to determine which hotfixes have
+been applied. For additional information about how to resolve this problem,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q279225 WMI Win32_QuickFixEngineering Queries Cause Winmgmt Process to Hang
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date         Time   Version        Size     File name
+   -----------------------------------------------------
+   24-May-2001  16:29  5.0.2195.3645  121,104  Idq.dll
+
+NOTE: Due to file dependencies, this hotfix requires Microsoft Windows 2000
+Service Pack 1 or later.
+
+
+Windows NT 4.0 Server
+---------------------
+
+To resolve this problem, obtain the individual package referenced below or obtain
+the Windows NT 4.0 Security Rollup Package. For additional information on the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Q300972i.exe now
+   (http://www.microsoft.com/ntserver/nts/downloads/critical/q300972/default.asp)
+
+NOTE: Contact Product Support Services (PSS) for the Alpha version of this
+patch.
+
+Release Date: Monday, June 18, 2001
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date         Version     Size     File name
+   -------------------------------------------
+   03-Jul-2001  5.0.1782.4  193,296  Idq.dll
+
+NOTE: Due to file dependencies, this hotfix requires Microsoft Windows NT 4.0
+Service Pack 6a.
+
+The original patched English version of this fix had the following file
+attributes:
+
+   Date         Version     Size     File name
+   -------------------------------------------
+   25-May-2001  5.00.1782.4  193,296  Idq.dll
+
+NOTE: The Idq.dll file has been re-released to correct a file version issue.
+Specifically, the Idq.dll version number in the original patch (dated May 25,
+2001) was not incremented from that of the previous build (dated January 25,
+2001). Instead, the version number for both was 5.0.1781.3. A new version of the
+patch was released on August 2, 2001, containing an Idq.dll file dated July 03,
+2001, that was properly versioned with version number 5.0.1782.4. No other
+changes were made in the new version of the patch.
+
+If you installed the original version of this patch (Idq.dll version 5.0.1781.3,
+dated May 25, 2001), you do not need to apply the new version (Idq.dll version
+5.0.1782.4, dated July 03, 2001) because your system is already protected.
+However, if the version of the Idq.dll file on your computer is 5.0.1781.3,
+dated January 25, 2000, you should upgrade to the new version of the patch.
+
+
+
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+Index Server 2.0 is part of the Windows NT 4.0 Option Pack which is not supported
+on Windows NT Server 4.0, Terminal Server Edition. Patches for Index Server 2.0
+have been provided as part of the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP) only for customers who have installed the
+Option Pack to protect their computers during the migration to a supported
+operating system. For additional information about the SRP, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+   Package
+
+STATUS
+======
+
+Microsoft has confirmed that this problem may cause a degree of security
+vulnerability in Windows 2000 and Windows NT Server 4.0. This problem was first
+corrected in Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+For additional information about how to obtain a hotfix for Windows 2000
+Datacenter Server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q265173 The Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information about how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+Additional query words: security_patch Code Red 2 II Virus worm kbWin2000srp1 kbtsesrp
+
+======================================================================
+Keywords          : kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix KbSECVulnerability KbSECHack kbWin2000sp3fix 
+Technology        : kbWinNTsearch kbWinNTSsearch kbiisSearch kbIdxServSearch kbAudDeveloper kbIdxServ100
+Version           : :2.0,2000,2000 SP1,2000 SP2,4.0,5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

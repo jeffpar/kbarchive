@@ -1,0 +1,62 @@
+DOCUMENT:Q137973  20-MAY-2002  [win95x]
+TITLE   :Documentation Error in "Introducing MS Windows 95"
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:kbdocerr dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following known documentation error is described in this article:
+
+Page 56: Using Dial-Up Networking
+
+MORE INFORMATION
+================
+
+For phone numbers and support options on all Microsoft products, please see the
+information available on the Microsoft Web site at:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+
+Page 56: Using Dial-Up Networking
+---------------------------------
+
+The second sentence of the second paragraph states: "You must also set up Dial-Up
+Networking on both computers, and the computer you want to dial into must be set
+up as a server."
+
+Dial-Up Networking server is available from Microsoft Plus!.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,351 @@
+DOCUMENT:Q280762  12-JUN-2001  [sna]
+TITLE   :INFO: Contents of the SNA Server 4.0 Service Pack 4 Readme.txt F
+PRODUCT :Microsoft SNA Server
+PROD/VER::4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is a copy of the Microsoft SNA Server 4.0 Service Pack 4 ReadMe.txt
+file. For additional information about how to obtain SNA Server 4.0 Service Pack
+4, click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q215838 How to Obtain the Latest SNA Server 4.0 Service Pack
+
+MORE INFORMATION
+================
+
+Microsoft SNA Server 4.0 Service Pack 4 (SP4)
+Electronic Release Notes
+
+Revision History
+================
+
+November 28, 2000 - Posted released version of SNA 4.0 SP4
+
+- Copyright Microsoft Corporation, 1997, 1998, 1999, 2000
+
+These materials are provided "as-is," for informational purposes only.
+
+Neither Microsoft nor its suppliers makes any warranty, express or 
+implied with respect to the content of these materials or the accuracy 
+of any information contained herein, including, without limitation, 
+the implied warranties of merchantability or fitness for a particular 
+purpose. Because some states/jurisdictions do not allow exclusions of 
+implied warranties, the above limitation may not apply to you.
+
+Neither Microsoft nor its suppliers shall have any liability for any
+damages whatsoever including consequential incidental, direct, indirect,
+special, and loss profits. Because some states/jurisdictions do not 
+allow exclusions of implied warranties, the above limitation may not 
+apply to you. In any event, Microsoft's and its suppliers' entire 
+liability in any manner arising out of these materials, whether by tort, 
+contract, or otherwise shall not exceed the suggested retail price of 
+these materials.
+
+=====================================================================
+
+Ordering the SNA Server 4.0 Service Pack 4 CD
+----------------------------------------------
+
+Microsoft SNA Server 4.0 U.S. Service Pack 4 (SP4) is available in CD 
+media format by ordering the following part number from Microsoft by
+calling (800) 936-3500:
+
+  211-00425    SNA Svr 4.0 English Patch CD SP4
+
+Downloading SNA Server 4.0 Service Pack 4
+------------------------------------------
+
+Self-extracting executable files that contain updated 4.0 SP4 SNA Server 
+and client files can be downloaded electronically from the following
+Microsoft Web site:
+
+   www.microsoft.com/sna/download/sna4sp4.asp
+
+The following files comprise the updated SNA Server and client files for
+SNA Server 4.0 SP4:
+
+   40Sp4is.exe   - 4.0 SP4 Server Update (Intel) (see NOTE 1, 2, 4)
+   40Sp4ic.exe   - 4.0 SP4 Microsoft Windows NT Client Update (Intel) (see NOTE 2, 4)
+   40Sp49x.exe   - 4.0 SP4 Microsoft Windows 9x Client Update (see NOTE 2)
+   40Sp4clr.exe  - 4.0 SP4 Microsoft Windows 3.x, MS-DOS, Web Client Refresh (see NOTE 3)
+   40Sp4ihs.exe  - 4.0 SP4 Host Security Refresh (Intel) (see NOTE 4)
+   40Sp4mq.exe   - 4.0 SP4 MSMQ-MQSeries Bridge
+
+All of these files are self-extracting Win32 executables.
+
+For information about changes and new features that are implemented in 4.0 SP4, 
+see the Kbhelp.chm and Readme.txt release notes files, which are included in 
+the 40Sp4is.exe file. The Kbhelp.chm file includes links to Microsoft Knowledge
+Base articles that describe the symptoms and causes for problems that are fixed
+in the service pack, as well as fixes that are implemented in SNA Server 4.0 SP1,
+4.0 SP2, and 4.0 SP3.
+
+NOTE 1: The SNA Server 4.0 SP4 includes updates to the SNA Server, Print
+Service, COM Transaction Integrator, SNA OLE/DB Interface, TN3270 Service,
+TN5250 Service, AFTP, and Shared Folders Gateway.
+
+NOTE 2: Once the 4.0 SP4 update is applied, there is no way to uninstall 
+(or "roll back") the service pack without reinstalling the previous 
+SNA Server 4.0 release. The SNA SDK files are included in these self-extracting 
+images and will be automatically upgraded as a part of running the Update 
+program.
+
+NOTE 3: The SNA Server Windows 3.x, and MS-DOS clients are still 
+unchanged from SNA 4.0 SP1. There is no update installer for these 
+clients. The Web-installable clients have been updated in SNA 4.0 SP4.
+
+NOTE 4: SNA Server 4.0 SP4 does not include any updates for Alpha
+systems. All updates are for Intel-based systems.
+
+Instructions for Decompressing the Server or Client Update Files
+----------------------------------------------------------------
+
+The SNA Server and client update files automatically extract and run 
+the Update program. When extracted, these files require the following 
+free disk space:
+
+  Server Update (Intel) - 40Sp4is.exe:  165 MB
+  Windows NT Client Update (Intel) - 40Sp4ic.exe: 103 MB
+  Microsoft Windows 95 Client Update         - 40Sp49x.exe: 43 MB
+
+Microsoft recommends that these files are extracted to a persistent,
+shared network location and made available to server and client computers
+across the network. Users can then connect to this shared folder and
+install the service pack by running the Update program from this network
+location. To do this, perform the following steps:
+
+1. Extract the desired service pack files to one or more folders on a
+   network server:
+
+   These files can be extracted to a separate folder by using the /x or
+   /X option. For example:
+
+      40SP4IS /x
+
+2. Share the desired service pack files to network users.
+
+   The full folder structure of the extracted files must be available to
+   the user who runs the Update program. For example, "40SP4IS /X" will 
+   extract into the following folder structure:
+
+      \ 
+      \I386\... (SNA Server 4.0 SP4 files)
+      \Reg2udl  (utility used by Setup)
+
+   Similarly, the SNA Windows NT Intel client update (40Sp4ic.exe) extracts 
+   into the following folder structure:
+
+     \ 
+     \Clients\Winnt\I386  (SNA Server 4.0 SP4 Windows NT client files)
+     \Reg2udl             (utility used by the Setup program)
+
+3. Users must run the Update program to install the service pack.
+
+   To apply the service pack, the Update program should be run from the
+   appropriate shared program:
+
+      SNA Server (Intel):  \I386
+      SNA Windows NT client (Intel):  \Clients\Winnt\I386
+      SNA Windows 9x client: \Clients\Win9x
+
+**********************************************************************
+WARNING: The Update.exe program should always be used to install the 
+service pack, which automatically spawns the Setup program in "quiet" 
+mode and requires limited user interaction. The Setup program should 
+not be run directly, because the user will be required to select the 
+existing installation path, user credentials, and components to install. 
+If these options are chosen incorrectly, this can damage the 
+installation of the service pack on the destination computer.
+**********************************************************************
+
+If the self-extracting files are run without the /X option, the Update
+program will be run automatically. When running Update automatically, 
+all files are automatically extracted to the folder where the TMP, 
+TEMP, or WINROOT environment variable is pointing (trying in that order). 
+So, if the SET command shows that TMP=C:\TMP, and C: does not have 
+sufficient storage to extract the files, change TMP to point to a 
+drive that has sufficient space. For example:
+
+   SET TMP=D:\Temp
+
+NOTE: Once Update has completed, the SNA Server source installation 
+folder will point to the folder where Update was run. If SNA Setup
+is run from SNA Server program group, Setup will attempt to locate this
+folder when adding or removing SNA Server components.
+
+For more information about the service pack installation process and 
+possible errors that might occur, see the "More Information" section 
+in this Readme.
+
+Installing the New OLE/DB Provider and ODBC Driver for DB2
+----------------------------------------------------------
+
+SNA Server 4.0 SP2 includes a new OLE DB Provider for DB2 and ODBC 
+Driver for DB2 from Microsoft, while previous versions of SNA Server
+include a version that is licensed from StarQuest. SNA 4.0 SP4 includes an 
+update to the SNA 4.0 SP2 and SP3 versions. When you upgrade from SNA 4.0 or
+SNA 4.0 SP1 systems to SNA 4.0 SP4, the server or client computer 
+must first be upgraded to SNA 4.0 SP4 by running the Update program 
+from a persistent location (that is, a location where the full extracted 
+files exist). Once installed, the new drivers may be installed by 
+running the SNA Setup program from the local SNA Server Program 
+group and by choosing these new components after selecting Add/Remove 
+Components from Control Panel.
+
+Installing the New MSMQ-MQSeries Bridge
+---------------------------------------
+
+SNA Server 4.0 SP2 includes the new MSMQ-MQSeries Bridge. The
+SNA 4.0 SP4 includes an updated version of the Bridge (40Sp4mq.exe).
+This feature is only supported on an Microsoft SNA Server 4.0 SP2, SP3, or
+SP4 system. For more information about this feature, refer to the 
+License.txt and Readme files that are included in 40Sp4mq.exe.
+
+Upgrading Host Security to 4.0 SP4
+----------------------------------
+
+The Host Security updates for SNA 4.0 SP4 (40Sp4ihs.exe)
+must first be extracted to a folder. To upgrade SNA Server 4.0, 
+4.0 SP1, 4.0 SP2, or 4.0 SP3 Host Security to 4.0 SP4, the Setup program must be 
+run and the current installation folder and Windows NT user context 
+must be entered. No Update program is provided to upgrade the Host
+Security components to 4.0 SP4.
+
+Upgrading SNA Windows 3.x and MS-DOS Clients to 4.0 SP4
+-------------------------------------------------------
+
+The 40Sp4clr.exe file contains the SNA Server Windows 3.x, a Web-
+installable version of the SNA Microsoft Windows 95, Microsoft
+Windows 98, and Windows 3x clients, and MS-DOS and OS/2 client files.
+The 40Sp4clr.exe file is a Win32 self-extracting executable. The
+administrator must first run this file and choose a folder directory 
+in which to place the extracted files. Windows 3.x clients may then
+connect across the network and run the Setup program to install the
+client files. The Setup program can be used to upgrade a previous
+version of the SNA client software.
+
+NOTE: The SNA Windows 3.x and MS-DOS clients are unchanged since
+SNA 4.0 SP1, though the Web-installable client CAB files have been 
+updated in SNA 4.0 SP4.
+
+Installing the Updated 4.0 SP4 SDK
+----------------------------------
+
+The SNA Server 4.0 SP4 Server, Windows NT, Windows 95, and Windows 98
+client include the SDK files. Also, the Update program that is automatically
+spawned when these self-extracting files are run (40Sp4is.exe, 40Sp4ic.exe,
+40Sp49x.exe) will update the SDK files if the SDK option was initially chosen
+during SNA Server 4.0 installation.
+
+Installing the Service Pack Files
+---------------------------------
+
+Both the SNA Server and SNA client files have been updated in 4.0 SP4.
+Updates may be applied in any order--to the server and/or to the clients.
+Microsoft recommends that all systems that are running SNA Server 4.0
+(that is, SNA Servers and client computers) be updated to 4.0 SP4. It may not be
+necessary to update the client computers to SP4 unless you are experiencing
+a client problem that has been fixed in SP4.
+
+WARNING: This service pack update is intended to be applied on systems
+that are currently running SNA Server 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 server
+or client software. These updates cannot be applied over systems that are 
+running SNA Server 3.x or 2.x releases.
+
+** TO BE APPLIED TO SNA SERVER 4.0 SYSTEMS ONLY!! **
+
+More Information
+----------------
+
+As noted above, if /X option is not used, the file is self-extracted to the 
+folder where the TMP environment variable is pointing. For example, 
+if TMP=C:\Temp, then the C: drive (where this folder exists) must 
+have sufficient disk space to accommodate the extracted image. If there 
+is insufficient disk space to accommodate the image size, the following 
+error message is displayed:
+
+  Extraction Failed
+  Access is denied
+      <OK>
+
+If this error message occurs, a temporary read-only file may be left in
+the TMP folder tree (for example, in C:\Temp\Ext5232\I386\Setup.tdf), which 
+may cause the service pack file to continue to fail with the message, 
+"Access is denied." To correct this problem, delete the file indicated in
+"To Directory:" within the progress dialog box when the "Access is denied"
+error is displayed. This file may have the "read only" attribute set, so
+the ATTRIB command may be needed to remove this attribute in order to 
+delete this file. For example:
+
+   ATTRIB -r <file>
+
+When the Update program is run, it displays the following warning:
+
+  WARNING
+  You are about to update your current installation of SNA Server with 
+  SNA Server 4.0 with Service Pack 4. You will not be able to deinstall 
+  this Service Pack and get back to your original setup. Click Yes if 
+  you wish to proceed.  
+     <Yes>  <No>
+
+Choose Yes to continue (the default is No).
+
+If the following error occurs, then SNA 4.0 SP4 has already been installed:
+
+  Setup Error 689
+  Setup cannot update an installation interactively in Quiet mode.
+
+  Setup Error 723
+  Setup was unable to read configuration information from the first section 
+  of the setup file:     C:\SNA40\setup\server\snafile.stf
+
+If these errors occur and you want to re-apply SNA Server 4.0 SP4, perform
+the following steps:
+
+1. Delete <snaroot>\Setup\Server\Snafile.stf. 
+
+2. Modify the following registry value:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SNA Server\CurrentVersion\ 
+         SNAVersion: REG_SZ: 4.0 Service Pack 4
+
+3. Change "4.0 Service Pack 4" to "4.0 Service Pack 3" (without the quotation
+   marks).
+
+4. Run the Update program again.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP4
+Version           : :4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

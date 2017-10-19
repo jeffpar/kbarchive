@@ -1,0 +1,72 @@
+DOCUMENT:Q155612  10-AUG-2001  [winnt]
+TITLE   :Windows NT Detects Only 16 MB RAM on ERGO Notebook
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT 4.0 detects only 16 MB of RAM on the ERGO notebook computer. Windows
+NT 3.51 correctly detects all 32 MB of RAM.
+
+CAUSE
+=====
+
+This is a BIOS problem with the ERGO notebook.
+
+RESOLUTION
+==========
+
+Upgrade the computer's BIOS.
+
+MORE INFORMATION
+================
+
+The following Ergo systems are on the Windows NT 3.51 Hardware Compatibility
+List (HCL):
+
+ - Ergo PowerBrick 100
+
+ - Ergo PowerBrick 33
+
+ - Ergo PowerBrick 66
+
+Currently, none of the Ergo computers are listed on the Windows NT 4.0 Hardware
+Compatibility List (HCL). The HCL is constantly being updated and is subject to
+change. For the latest version of the Windows NT 4.0 HCL, see the Microsoft
+Hardware Quality Labs section of the Microsoft Web at:
+
+   http://www.microsoft.com/hwtest
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

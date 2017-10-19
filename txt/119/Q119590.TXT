@@ -1,0 +1,151 @@
+DOCUMENT:Q119590  28-JAN-2002  [pcmail]
+TITLE   :PC DirSync: Conflicting Run Window Times in Dir-Sync Schedule
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With versions 3.0 and 3.2 of Microsoft Mail for PC Networks, directory
+synchronization (Dir-Sync) provides a "run window" that allows the Dir-Sync
+process to begin, even though the start time has already passed. For example, it
+is possible for the run window entries to be both 4 hours and 8 hours.
+
+CAUSE
+=====
+
+The scheduling information for Dir-Sync is contained in the PROCESS.GLB file.
+This file contains the time and date of the next scheduled activity for each
+day. If this PROCESS.GLB file was originally created for version 3.0 of
+Microsoft Mail for PC Networks and modified with version 3.0 of the Mail
+Administrator program (ADMIN.EXE), the run window will be 4 hours. If the
+PROCESS.GLB file was later modified with version 3.2 of the ADMIN.EXE program
+(after the postoffice was upgraded), the modified entries will have a run window
+of 8 hours.
+
+RESOLUTION
+==========
+
+One method to resolve this problem is to create a brand new PROCESS.GLB file by
+installing a version 3.2 postoffice in a temporary location on a local hard disk
+drive. First, make a backup copy of the existing PROCESS.GLB file on the
+production postoffice and then copy this newly created PROCESS.GLB file to the
+working postoffice. Run version 3.2 of the ADMIN.EXE program and re-create the
+entries. This will set the run window to 8 hours for all of the entries.
+
+Another method to resolve this problem is to create a brand new PROCESS.GLB file
+as described above and then use the DSSCHED.EXE utility included with
+Application Note WA0725, "Directory Synchronization (Dir-Sync)" (text dated
+8/94) to import a text file containing the schedule times. The following is a
+sample text file:
+
+   T1 Mon 22:00
+   T1 Tue 22:00 T1
+   Wed 22:00 T1 Thu
+   22:00 T1 Fri
+   22:00 T1 Sat
+   22:00 T1 Sun
+   22:00 T2 Mon
+   01:00 T2 Tue
+   01:00 T2 Wed
+   01:00 T2 Thu
+   01:00 T2 Fri
+   01:00 T2 Sat
+   01:00 T2 Sun
+   01:00 T3 Mon
+   03:00 T3 Tue
+   03:00 T3 Wed
+   03:00 T3 Thu
+   03:00 T3 Fri
+   03:00 T3 Sat
+   03:00 T3 Sun
+   03:00
+
+Notes
+-----
+
+ - The T1, T2, and T3 times are described in Application Note WA0725.
+
+ - DSSCHED.EXE will ignore the T2 times on a newly created PROCESS.GLB file
+   because, by default, the postoffice installed to the temporary location is a
+   requestor postoffice. To include T2, run the ADMIN.EXE program against this
+   postoffice and make it a Dir-Sync server. A Dir-Sync server PROCESS.GLB file
+   (including the T2 times) should not be used on a requestor postoffice.
+
+ - If all the requestor postoffices use the same Dir-Sync times and if there are
+   no time-zone issues, the administrator can create one requestor PROCESS.GLB
+   file and copy it to each requestor postoffice.
+
+REFERENCES
+==========
+
+The "Directory Synchronization (Dir-Sync)" document, pages 15, 21, and 22.
+
+You can obtain this document from the following sources:
+
+ - Microsoft's World Wide Web Site on the Internet
+
+ - The Internet (Microsoft anonymous ftp server)
+
+ - The Microsoft Network (MSN)
+
+ - Microsoft Product Support Services
+
+The following self-extracting file is available for download from the Microsoft
+Download Center:
+
+   Wa0725.exe
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Wa0725.exe now
+   (http://download.microsoft.com/download/pcmail/Utility/23/WIN/EN-US/Wa0725.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+This document has also been posted to the following Internet location:
+ftp://ftp.microsoft.com/bussys/mail/pcmail public/WA0725/
+
+For more information about how to obtain this document, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q96060 PC DirSync: Directory Synchronization (Dir-Sync)
+
+Additional query words: 3.00 3.20 dirsync requester
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : :3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

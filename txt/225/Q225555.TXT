@@ -1,0 +1,68 @@
+DOCUMENT:Q225555  10-AUG-2001  [winnt]
+TITLE   :User Manager "Save Settings on Exit" Not Working
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Save Settings on Exit option of User Manager (Usrmgr.exe) does not work
+unless you quit User Manager manually.
+
+CAUSE
+=====
+
+This is a known issue in Windows NT Server.
+
+RESOLUTION
+==========
+
+To quit User Manager and save the settings:
+
+1. Click User.
+
+2. Click exit.
+
+3. Or, press Alt+F4 while the User Manager window is active.
+
+STATUS
+======
+
+This is not a problem in Microsoft Windows 2000. Active Directory Users and
+Computers saves settingspon any type of exit.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

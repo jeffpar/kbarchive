@@ -1,0 +1,60 @@
+DOCUMENT:Q248320  07-MAY-2002  [homegame]
+TITLE   :FS2000 Pro Err Msg: Fsedit Caused an Invalid Page Fault in...
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbui fsim kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the FS2000 Aircraft Editor in Microsoft Flight Simulator
+2000 Professional Edition, you may receive the following error message:
+
+   Fsedit caused an invalid page fault in module Mfc42.dll.
+
+CAUSE
+=====
+
+This behavior can occur if you click Save Copy As to save a component in the
+Panel branch of an aircraft file.
+
+RESOLUTION
+==========
+
+To work around this issue, click Save instead of Save Copy As to save changes
+you make to individual panel components.
+
+NOTE: You can use the Save Copy As command to save a new copy of an aircraft file
+or to save a new copy of the entire Panel branch.
+
+Additional query words: fltsim flightsim fs2k edit gauges ipf gpf
+
+======================================================================
+Keywords          : kberrmsg kbtool kbui fsim kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

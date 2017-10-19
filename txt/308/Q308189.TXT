@@ -1,0 +1,58 @@
+DOCUMENT:Q308189  04-JAN-2002  [iis]
+TITLE   :BackupWithPassword and RestoreWithPassword method documentation
+PRODUCT :Internet Information Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to search for the BackupWithPassword and RestoreWithPassword
+metabase options in the IIS 5.1 online documentation, you may receive an HTTP
+404 error message.
+
+MORE INFORMATION
+================
+
+The Aore2ep0.htm and Aore0tpg.htm files are missing.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Doccorrection.exe
+   (http://download.microsoft.com/download/iis50/Document/1.0/WIN98MeXP/EN-US/Doccorrection.exe)
+
+After you download the Aore2ep0.htm and Aore0tpg.htm files, save the files in the
+%systemroot%/help/iisHelp/iis/ folder.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbiisSearch kbiis510
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

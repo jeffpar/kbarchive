@@ -1,0 +1,76 @@
+DOCUMENT:Q64513  07-DEC-1999  [win95x]
+TITLE   :Unrecoverable Application Error Printing to HP Series II
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the message "Unrecoverable Application Error" (UAE) when printing
+from such programs as Microsoft Word for Windows and Microsoft Excel for Windows
+in enhanced mode if you have selected landscape and the Hewlett-Packard (HP)
+ProCollection cartridge on an HP LaserJet Series II.
+
+This also occurs if you have an HP LaserJet (or compatible) other than the Series
+II that was set up as an HP LaserJet Series II during the installation of
+Windows or from the Control Panel.
+
+CAUSE
+=====
+
+This problem is caused by a problem in the HP LaserJet driver.
+
+WORKAROUND
+==========
+
+To work around this behavior, you can obtain and install the HPPCL.DRV file
+included in the Microsoft Windows 3.0 Supplemental Driver Library (SDL), or
+install a different driver, as follows:
+
+1. Run Windows in real mode.
+
+2. Using Control Panel, set the printer to portrait.
+
+3. Cancel the selection of the HP ProCollection cartridge.
+
+4. Select a printer other than the Series II (for example, select HP LaserJet
+   Plus).
+
+STATUS
+======
+
+Microsoft has corrected this problem in the HP LaserJet driver HPPCL.DRV
+included with the Microsoft Windows 3.0 Supplemental Driver Library (SDL).
+
+
+Additional query words: 3.00 3.00a 3.0 3.0a pro collection winword powerpoint power point word win
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

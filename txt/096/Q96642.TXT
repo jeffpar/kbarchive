@@ -1,0 +1,66 @@
+DOCUMENT:Q96642  20-NOV-1999  [pcmail]
+TITLE   :PC DB: 3.0 Server Disk 4 [3.5, 5.25]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the directory listings of the version 3.0 Microsoft Mail for
+PC Networks Server Disk 4. Both the 3.5-inch and 5.25-inch disks contain the
+same files.
+
+ Volume in drive A is MSMAIL30
+ Volume Serial Number is 215A-18E6
+
+Directory of A:\ 
+
+DIRSYNC      <DIR>     07-07-92  12:00a
+        1 file(s)          0 bytes
+
+Directory of A:\DIRSYNC
+
+.            <DIR>     07-07-92  12:00a
+..           <DIR>     07-07-92  12:00a
+DISPATCH EXE     51836 07-07-92  12:00a
+IMPORT   EXE    158040 07-07-92  12:00a
+NSDA     EXE      7154 07-07-92  12:00a
+REQMAIN  EXE    116633 07-07-92  12:00a
+SRVMAIN  EXE    160737 07-07-92  12:00a
+        7 file(s)     494400 bytes
+
+Total files listed:
+        8 file(s)     494400 bytes
+
+
+Additional query words: 3.00 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

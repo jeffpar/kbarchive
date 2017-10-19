@@ -1,0 +1,182 @@
+DOCUMENT:Q251379  23-OCT-2000  [homemm]
+TITLE   :Encarta 2000 Err Msg: Encarta Encyclopedia Requires at Least 256
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kberrmsg kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Encarta Encyclopedia 2000, you may receive the
+following error message:
+
+   Encarta Encyclopedia requires at least 256 colors to run. To correct this
+   problem, quit Encarta, set the color depth to at least 256 colors and
+   relaunch. See the Encarta 2001 Read Me for more assistance.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - The Microsoft Windows color palette setting is set to 16 colors.
+
+ - The video driver for the video adapter installed in your computer is
+   outdated.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Set the Windows Color Palette to 256 Colors or Higher
+-----------------------------------------------------
+
+To increase the Windows color palette setting to 256 colors or higher:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Colors box, click 256 Colors.
+
+5. Click OK, and then click OK.
+
+6. Close Control Panel.
+
+Update Your Video Driver
+------------------------
+
+If the 256 colors setting is unavailable in the Windows color palette box, or the
+Windows color palette box is reset to 16 colors after you restart your computer,
+the video driver for your video adapter is outdated.
+
+In this case, contact the manufacturer of your video adapter to find out if an
+updated video driver that supports a 256-color palette is available for your
+video adapter. For a list of manufacturers, see the "More Information" section
+of this article.
+
+Verify That the Correct Monitor Driver Is Installed
+---------------------------------------------------
+
+An incorrect monitor driver may be installed on your computer. To verify that the
+correct monitor driver is installed:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Follow the appropriate steps for your version of Windows:
+
+Microsoft Windows 98::
+
+   a. On the Settings tab, click Advanced.
+
+   b. Click the Monitor tab.
+
+   c. Click to select the "Automatically detect Plug and Play monitors" check
+      box.
+
+   d. Note the manufacturer and model of your current monitor.
+
+   e. Click Change, and then click Next.
+
+   f. Click "Display a list of all the drivers in a specific location, so you
+      can select the driver you want", and then click Next.
+
+   g. Click "Show all hardware".
+
+   h. Click "Display a list of all the drivers in a specific location, so you
+      can select the driver you want", and then click Next.
+
+Microsoft Windows 95::
+
+   a. On the Settings tab, click Change Display Type.
+
+   b. Under Monitor Type, note the manufacturer and model of your current video
+      driver.
+
+   c. Click Change, and then click Show All Devices.
+
+Microsoft Windows 95 OEM Service Release 2 (OSR2)::
+
+   a. On the Settings tab, click Advanced Properties.
+
+   b. On the Monitor tab, note the manufacturer and model of your current video
+      driver.
+
+   c. Click Change, and then click Show All Devices.
+
+4. In the Manufacturers box, click the manufacturer of your monitor.
+
+5. In the Models box, click the model of your monitor.
+
+6. Click OK, click Next, click Next again, and then click Finish.
+
+   NOTE: If you are prompted to confirm that you want to change the monitor,
+   click Yes.
+
+MORE INFORMATION
+================
+
+To determine the manufacturer and model of your video adapter:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click Device Manager.
+
+4. Double-click "Display adapters".
+
+   NOTE: In the branch under "Display adapters", the manufacturer and model of
+   your video adapter should be displayed.
+
+5. Close Control Panel.
+
+For information about how to contact the manufacturer of your video adapter,
+click the appropriate article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Additional query words: multi multi-media media mm ee2k display card
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kberrmsg kbtool kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

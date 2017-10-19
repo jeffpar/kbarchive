@@ -1,0 +1,53 @@
+DOCUMENT:Q108020  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator: Boeing 747 CDU Graphic Incorrect
+PRODUCT :Microsoft Home Games
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator, Scenery Design, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The picture of the control display unit (CDU) of the Boeing 747-400 on page 73
+of "Microsoft Flight Simulator Aircraft & Scenery Designer" is not correct.
+
+MORE INFORMATION
+================
+
+The text accompanying the graphic states that the CDU simply "displays the
+current frequencies of the NAV1 and NAV2 radios and the ADF. It also displays
+the OBS radial for the NAV1 and the bearing for NAV2." The CDU does not display
+other information as the picture indicates.
+
+Additional query words: 4.00 flightsim fltsim dos ASD instrument panel display fs4 asd4 docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSimScenDesign kbSimSearch
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

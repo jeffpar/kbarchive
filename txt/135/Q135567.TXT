@@ -1,0 +1,61 @@
+DOCUMENT:Q135567  17-DEC-2000  [win95x]
+TITLE   :Novell Allow Tool Does Not Work on Windows 95 NCP Server
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Novell NetWare Allow.exe tool cannot change the inherited rights mask of a
+file or folder on a Windows 95-based computer that is using the Microsoft File
+and Print Sharing for NetWare Networks network component.
+
+CAUSE
+=====
+
+The Microsoft File and Print Sharing for NetWare Networks network component does
+not support inherited rights masks for files or folders.
+
+RESOLUTION
+==========
+
+You must set the file access rights in Windows 95. Use the right mouse button to
+click the folder you want to change, and then click Sharing on the menu that
+appears.
+
+MORE INFORMATION
+================
+
+Novell NetWare servers support file sharing from the directory and the file
+level. The Microsoft File and Print Sharing for NetWare Networks network
+component supports file sharing on a folder-level basis only, not on a file-
+level basis.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

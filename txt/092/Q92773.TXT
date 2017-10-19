@@ -1,0 +1,93 @@
+DOCUMENT:Q92773  27-OCT-1999  [win3x]
+TITLE   :WFWG: Problems when Windows Express Version 3.0 Run as Shell
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+The following article contains information on the use of Windows for
+Workgroups with third-party products or configurations that have not
+been tested and are not supported by Microsoft.
+
+If the steps or procedures described in this article do not function
+properly, contact the manufacturer of the third-party product for more
+information or use a supported configuration.
+
+SYMPTOMS
+========
+
+If you use hDC Windows Express 3.0 as the Windows shell with Microsoft Windows
+for Workgroups, the following errors may occur:
+
+ - The LOAD= and RUN= lines in the WIN.INI file may not run correctly.
+
+ - Closing Windows Express may not end the current Windows session.
+
+CAUSE
+=====
+
+Because of the differences between the shell logic used in Windows Express and
+Windows for Workgroups, Windows Express loads itself as a normal application
+without establishing a Windows shell. Because no shell has been established, the
+only way to end the Windows session is to restart (reboot) the computer.
+
+WORKAROUND
+==========
+
+To work around this problem, use Program Manager as the Windows shell and do one
+of the following to run Windows Express:
+
+ - Use Windows Program Manager to Add an icon for Windows Express to the StartUp
+   group.
+
+   -or-
+
+ - Add EXPRESS to the RUN= line in your WIN.INI file.
+
+MORE INFORMATION
+================
+
+When you use Windows Express version 3.0 as the Windows shell, it expects to be
+started before all other Windows applications. However, when you use this
+application with Windows for Workgroups, Windows Express cannot be started first
+because Windows for Workgroups starts two hidden applications (NETDDE.EXE and
+CLIPSRV.EXE) prior to loading Windows Express.
+
+This feature is by design.
+
+For additional information about Windows Express, contact hDC Computer
+Corporation.
+
+hDC Windows Express 3.0 is manufactured by hDC Computer Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 3.10 3.1 3rdparty 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

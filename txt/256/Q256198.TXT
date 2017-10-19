@@ -1,0 +1,66 @@
+DOCUMENT:Q256198  02-JUL-2001  [sms]
+TITLE   :SMS: Hardware Inventory Uses SMSCliToknAcct& on Mapped Drives
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbWBEM kbsms200 kbsms200bug kbInventory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Systems Management Server (SMS) 2.0 client takes hardware inventory on a
+system that has network drives mapped at the time inventory is taken, the
+SMSCliToknAcct& account can be used. Because the SMSCliToknAcct& account
+is not a domain account, but is a local account, its use on the network can lock
+out the same account on the systems on which the network drives are mapped.
+
+CAUSE
+=====
+
+This behavior occurs when the Windows Management service queries the
+Win32_DiskDrive and Win32_DiskPartion WBEM classes to enumerate local drives.
+
+WORKAROUND
+==========
+
+You can configure SMS Hardware Inventory not to query these particular WBEM
+classes. For more information about accomplishing this task, please refer to the
+"Systems Management Server 2.0 Administrator's Guide."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbWBEM kbsms200 kbsms200bug kbInventory 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

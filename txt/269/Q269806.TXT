@@ -1,0 +1,67 @@
+DOCUMENT:Q269806  14-FEB-2002  [homekids]
+TITLE   :MSB in Concert/Lands on Mars: How to View the About Dialog Box
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's The Magic School Bus in Concert 
+ - Scholastic's The Magic School Bus Lands on Mars 
+ - Scholastic's Magic School Bus Series: Volcanoes, version 1.0 
+ - Scholastic's The Magic School Bus Discovers Flight, version 1.0 
+ - Scholastic's The Magic School Bus Whales and Dolphins, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to view the About dialog box in Microsoft
+Scholastic's The Magic School Bus in Concert or Microsoft Scholastic's The Magic
+School Bus Lands on Mars.
+
+MORE INFORMATION
+================
+
+To view the About dialog box, press ALT+SHIFT+A.
+
+The About dialog box contains the following information:
+
+ - The About tab contains the Product ID (PID) number and the Version number for
+   the program.
+
+   NOTE: If you request help from Microsoft Product Support Services, you must
+   provide the PID number and the version number for the program.
+
+ - The Credits tab contains a list of the credits for the licensed photographs
+   and video clips that are included in the program.
+
+ - The EULA tab contains the complete text of the End User License Agreement
+   (EULA) for the program.
+
+Additional query words: kids msbconcert msbmars sysinfo
+
+======================================================================
+Keywords          : kbui mskids kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticVolcanoes kbScholasticMars kbMSBSearch
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

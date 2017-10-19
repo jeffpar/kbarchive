@@ -1,0 +1,56 @@
+DOCUMENT:Q132816  17-DEC-2000  [win95x]
+TITLE   :Suspend Command Cannot Be Used on an SBS Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a Server-Based Setup (SBS) computer that has Advanced Power Management
+Support turned on, when you click the Suspend command on the Start menu, the
+computer stops responding.
+
+NOTE: A Server-Based Setup computer is a computer that is running Windows 95 from
+files that exist on a network server.
+
+CAUSE
+=====
+
+When you click Suspend, it unloads the Windows 95 network drivers. Without the
+network loaded, an SBS computer cannot run.
+
+RESOLUTION
+==========
+
+You cannot suspend a Server-Based Setup computer. To remove the Suspend command
+from the Start menu, turn off Advanced Power Management Support in the System
+Devices dialog box.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,44 @@
+DOCUMENT:Q90235  07-OCT-1999  [win3x]
+TITLE   :Pop-up Message Halts Printing and Causes Bad Print Jobs
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+If you use the Windows for Workgroups or Workgroup Connections pop-up
+terminate and stay resident (TSR) program (started with the NET START POPUP
+command) while an MS-DOS-based application is printing to a redirected port
+(a print server), the print job may be halted. When you clear the pop-up
+dialog box, the print job resumes, often becoming garbled as the printer
+misinterprets the rest of the print job.
+
+Additional query words: 1.00 3.10 popup wc line lines box boxes junk garbage incomplete poor output corrupt character characters hang crash stop inconsistent freeze
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

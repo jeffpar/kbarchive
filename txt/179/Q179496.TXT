@@ -1,0 +1,69 @@
+DOCUMENT:Q179496  11-JAN-2001  [vbwin]
+TITLE   :FIX: Class Builder Reports Property Procedures as Variants
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A class module containing property procedures that return data types other than
+variants are shown in the Class Builder Utility as returning Variant data types.
+
+CAUSE
+=====
+
+This behavior occurs in the following situations:
+
+ - The class module contains a method that returns a Variant data type.
+
+-or-
+
+ - A property procedure of a data type other than Variant is declared after a
+   method that returns a Variant data type.
+
+RESOLUTION
+==========
+
+Move all property procedures and functions that return a Variant data type to
+the end of the class module.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+Additional query words: kbVBp500bug kbVBp600fix kbVBp kbdss kbDSupport kbAddIn
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

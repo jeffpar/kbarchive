@@ -1,0 +1,59 @@
+DOCUMENT:Q196747  11-DEC-2001  [winnt]
+TITLE   :Org Chart Fails to Open When Called from Office Application
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:97; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows NT 4.0 
+ - Microsoft Office 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open an Organization Chart from within Microsoft PowerPoint,
+Microsoft Word, or Microsoft Excel, you may receive the following error message
+and you will be unable to continue with the application:
+
+   Unable to load MS Organizational Chart.
+   Press F1 for Help.
+
+The Terminal Server client session may become unresponsive at this point.
+
+RESOLUTION
+==========
+
+To resolve this issue, see the following article in the Microsoft Knowledge
+Base:
+
+   Q215358 GetWindowsDirectory May Return Incorrect Data
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbOSWinSearch kbOSWinNT400 kbOffice97Search kbOffice97 kbOSWinNTSearch
+Version           : WINDOWS:97; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,690 @@
+DOCUMENT:Q169790  09-AUG-2001  [winnt]
+TITLE   :How to Troubleshoot Basic TCP/IP Problems
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft BackOffice Small Business Server 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 98 
+ - Microsoft Windows Millennium Edition 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to troubleshoot some common network communication
+problems you may experience when you use TCP/IP as your network protocol. These
+problems usually fall into one of the following two categories:
+
+ - You are unable to connect to a specific IP address.
+
+ - You are unable to connect to a specific host or NetBIOS name.
+
+If you are unable to connect to a specific IP address, the problem is related to
+basic connectivity. If you are able to connect to a specific IP address, but you
+are not able to connect using the host or NetBIOS name for that IP address, the
+problem is related to name resolution.
+
+NOTE: All of the troubleshooting steps below will work on the NT and 2000
+platforms, but may not work on the Win9x (except Win ME) platforms. However, the
+basic diagnostic and troubleshooting methods are the same for all of these
+Windows operating systems.
+
+MORE INFORMATION
+================
+
+To determine whether the problem is related to basic connectivity or name
+resolution, use the following procedure to determine whether you can connect to
+a specific IP address.
+
+Connect to an IP Address
+------------------------
+
+Try to connect to another computer on your network using its IP address and the
+TCP/IP program or utility of your choice. Web browsers, ftp, and Telnet are some
+programs and utilities commonly used to connect to other computers with TCP/IP.
+
+NOTE: If you do not know the IP address for your Windows NT or 2000 computer that
+you are attempting to connect to, run the IPCONFIG /ALL command at a command
+prompt on the other computer.
+
+If you cannot connect to the other computer using its IP address, there is a
+basic connectivity problem. Use the information in the "Unable to Connect to a
+Specific IP Address" section below to resolve your issue. If you can connect to
+the other computer using its IP address, but you are not able to connect using
+the host or NetBIOS name of the other computuer, there is probably a name
+resolution problem. Use the information in the "Unable to Connect to a Specific
+Host or NetBIOS Name" section below to resolve your issue.
+
+UNABLE TO CONNECT TO A SPECIFIC IP ADDRESS
+
+Follow the procedures in each of the following sections in order. After you
+finish each procedure, check to see if you can connect to the other computer
+using its IP address.
+
+Check Your TCP/IP Configuration
+-------------------------------
+
+When you use TCP/IP as your network protocol, an incorrect TCP/IP setting (such
+as an incorrect IP address or an incorrect subnet mask) can cause communication
+problems. To determine whether Windows NT or 2000 has recorded an error due to
+an incorrect TCP/IP setting, examine the Event Viewer system log and look for
+any entry with TCP/IP or DHCP as the source. To read an Event Viewer entry,
+double-click the entry.
+
+NOTE: If Event Viewer records a DHCP error, you should report the error to your
+network administrator.
+
+If you receive TCP/IP errors in the Event Viewer system log, resolve each error
+received as indicated by the error message. For example, if you receive an error
+stating that the IP address parameter is incorrect, you should verify that your
+IP address is valid.
+
+If there are no errors in the Event Viewer system log, follow these steps to make
+sure that the correct TCP/IP configuration information is being used:
+
+1. Use the IPCONFIG command to determine your computer's basic TCP/IP settings.
+   To do so, type "ipconfig" (without the quotation marks) at a command prompt.
+
+2. Verify that the IP address and subnet mask displayed by the IPCONFIG command
+   are the correct values for your computer. If you are not sure what the
+   correct values are, contact your network administrator.
+
+Ping the Loopback Address
+-------------------------
+
+Use the PING command to verify that TCP/IP is working properly. To do so, ping
+the loopback address (127.0.0.1) by typing the following command at a command
+prompt:
+
+   ping 127.0.0.1
+
+You should receive a response similar to the following:
+
+   Pinging 127.0.0.1 with 32 bytes of data:
+
+   Reply from 127.0.0.1: bytes=32 time=<10ms TTL=128
+   Reply from 127.0.0.1: bytes=32 time=<10ms TTL=128
+   Reply from 127.0.0.1: bytes=32 time=<10ms TTL=128
+   Reply from 127.0.0.1: bytes=32 time=<10ms TTL=128
+
+If you receive an error message at this point, TCP/IP is not properly installed.
+To remove and reinstall TCP/IP, follow these steps:
+
+NOTE: You must be logged on as a user with Administrator rights to complete these
+steps.
+
+1. In Control Panel, double-click Network, and then click the Protocols tab.
+
+2. Click TCP/IP Protocol to select it, click Remove, and then click Yes.
+
+3. Click Close, and then click Yes to restart the computer.
+
+4. Log on as a user with Administrator rights.
+
+5. In Control Panel, double-click Network, and then click the Protocols tab.
+
+6. Click Add, click TCP/IP Protocol to select it, and then click OK.
+
+7. If you want to use DHCP, click Yes when prompted. If you do not want to use
+   DHCP, click No.
+
+8. When prompted, type the path for the Windows NT source files, click Continue,
+   and then click Close.
+
+9. If you are not using DHCP, you are prompted for your TCP/IP configuration
+   information. Provide the appropriate values, and then click OK. If you are
+   not sure what the appropriate values are, contact your network administrator.
+
+10. Click No when you are prompted to restart your computer. If you have
+   installed a Windows NT Service Pack, you need to reinstall the Service Pack
+   before you restart your computer.
+
+11. Restart your computer.
+
+If you receive an error message while removing and reinstalling TCP/IP, you may
+need to manually remove TCP/IP from the Windows NT registry. For information
+about manually removing TCP/IP from the Windows NT registry, see the following
+article in the Microsoft Knowledge Base:
+
+   Q151237 Error Message When Installing TCP/IP or Adding TCP/IP Service
+
+Ping Your Computer's IP Address
+-------------------------------
+
+If you can ping the loopback address successfully, attempt to ping your own IP
+address by typing "ping <IP address>" (without the quotation marks) at a
+command prompt, where <IP address> is your computer's IP address.
+
+NOTE: If you do not know your computer's IP address, you can obtain that
+information by typing "ipconfig" (without the quotation marks) at a command
+prompt.
+
+You should receive a response similar to the following:
+
+   Pinging <###.###.###.###> with 32 bytes of data:
+
+   Reply from <###.###.###.###>: bytes=32 time=77ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=80ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=78ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=79ms TTL=28
+
+Where <###.###.###.###> is your computer's IP address.
+
+If you receive an error message at this point, there may be a communication
+problem between Windows NT and your network adapter. To correct this problem,
+remove and reinstall your network adapter driver. To do so, follow these steps:
+
+NOTE: You must be logged on as a user with Administrator rights to complete these
+steps.
+
+1. In Control Panel, double-click Network, and then click the Adapters tab.
+
+2. Click your network adapter driver to select it, click Remove, and then click
+   Yes.
+
+3. Click Close, and then click Yes to restart your computer.
+
+4. Log on as a user with Administrator rights.
+
+5. In Control Panel, double-click Network, and then click the Adapters tab.
+
+6. Click Add, click your network adapter driver to select it, and then click OK.
+
+7. Use the dialog box(es) provided to configure your network adapter, and then
+   click OK.
+
+8. When prompted, type the path for the Windows NT source files, click Continue,
+   and then click Close.
+
+9. When you are prompted for your TCP/IP configuration information, provide the
+   appropriate values, and then click OK. If you are not sure what the
+   appropriate values are, contact your network administrator.
+
+10. Click No when you are prompted to restart your computer. If you have
+   installed a Windows NT Service Pack, you need to reinstall the Service Pack
+   before you restart your computer.
+
+11. Restart your computer.
+
+If you are unable to ping your computer's IP address after removing and
+reinstalling your network adapter driver, contact the manufacturer of your
+network adapter to verify that you are using the appropriate Windows NT driver
+for your network adapter.
+
+Clear the Address Resolution Protocol (ARP) Cache
+-------------------------------------------------
+
+The address resolution protocol (ARP) cache is a list of recently resolved IP
+address to Media Access Control (MAC) address mappings. The MAC address is the
+unique physical address embedded in each network adapter.
+
+If an entry in the ARP cache is incorrect, IP datagrams may be sent to the wrong
+computer. To display all mappings currently in the ARP cache, use the ARP
+command by typing "arp -a" (without the quotation marks) at a command prompt.
+You should receive either a "No ARP Entries Found" message (if the ARP cache is
+empty) or a response similar to the following:
+
+   Interface: 10.1.1.3 on Interface 2
+   Internet Address      Physical Address      Type
+   10.1.1.7              08-00-02-06-ed-20     dynamic
+   10.1.1.254            08-00-02-0a-a3-10     dynamic
+
+To remove any incorrect entries in the ARP cache, clear all entries using the
+following command:
+
+   arp -d <IP address>
+
+Where <IP address> is an Internet address stored in the ARP cache. Use this
+command for each entry in the ARP cache until all entries have been deleted.
+
+For more information on the syntax, options, and usage of the ARP command, type
+"arp -?" (without the quotation marks) at a command prompt.
+
+Verify the Default Gateway
+--------------------------
+
+Use the IPCONFIG command to determine the IP address that your computer uses to
+access your default gateway. To do so, type "ipconfig" (without quotation marks)
+at a command prompt. Verify that the IP address displayed for your default
+gateway is correct. If you do not know the correct IP address for your default
+gateway, contact your network administrator.
+
+When you have verified that you have the correct IP address for your default
+gateway, use the PING command to verify that you can ping your default gateway's
+IP address. You should receive a response similar to the following:
+
+   Pinging <###.###.###.###> with 32 bytes of data:
+   Reply from <###.###.###.###>: bytes=32 time=77ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=80ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=78ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=79ms TTL=28
+
+Where <###.###.###.###> is the IP address of your default gateway.
+
+If your default gateway is not connected to the network or not functioning
+properly, you may receive a response similar to the following:
+
+   Pinging <###.###.###.###> with 32 bytes of data:
+   Request timed out.
+   Request timed out.
+   Request timed out.
+   Request timed out.
+
+If you cannot successfully ping your default gateway's IP address, contact your
+network administrator to verify that your default gateway is connected to the
+network and functioning properly.
+
+Ping the IP Address of the Other Computer
+-----------------------------------------
+
+Try to ping the IP address of the other computer. To do so, type "ping <IP
+address>" (without the quotation marks) where <IP address> is the IP
+address of the other computer. You should receive a response similar to the
+following:
+
+   Pinging <###.###.###.###> with 32 bytes of data:
+   Reply from <###.###.###.###>: bytes=32 time=77ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=80ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=78ms TTL=28
+   Reply from <###.###.###.###>: bytes=32 time=79ms TTL=28
+
+Where <###.###.###.###> is the IP address of the other computer.
+
+If there is an improperly configured router between your computer and the other
+computer, or if there is a problem with the other computer, you may receive a
+response similar to the following:
+
+   Pinging <###.###.###.###> with 32 bytes of data:
+   Request timed out.
+   Request timed out.
+   Request timed out.
+   Request timed out.
+
+If your computer is on a different subnet than the other computer, try to ping
+the other computer from a computer that is on the same subnet as the other
+computer. If you cannot ping the other computer from a computer on the same
+subnet, ensure that the other computer is connected to the network and that you
+have the correct IP address for the other computer. If you can ping the other
+computer from a computer on the same subnet, contact your network administrator
+to resolve any routing problems that may exist on your network.
+
+Verify Persistent Route Table Entries
+-------------------------------------
+
+Any computer using TCP/IP as a network protocol has a route table. The route a
+network packet takes from one computer using TCP/IP to another computer using
+TCP/IP is determined by the route table of the computer that sent the network
+packet.
+
+Your computer's route table is automatically rebuilt each time you restart your
+computer. You or your network administrator can add persistent (static) entries
+to your computer's route table. Persistent entries are automatically reinserted
+in your route table each time your computer's route table is rebuilt.
+
+To view your computer's route table, use the ROUTE command. To do so, type "route
+print" (without the quotation marks) at a command prompt. You should receive a
+response similar to the following:
+
+   Active Routes:
+
+   Network Address   Netmask           Gateway Address  Interface   Metric
+
+   0.0.0.0           0.0.0.0           10.1.1.254       10.1.1.3       1
+   10.1.0.0          255.255.0.0       10.1.1.3         10.1.1.3       1
+   10.1.1.3          255.255.255.255   127.0.0.1        127.0.0.1      1
+   10.255.255.255    255.255.255.255   10.1.1.3         10.1.1.3       1
+   127.0.0.1         255.0.0.0         127.0.0.1        127.0.0.1      1
+   224.0.0.0         224.0.0.0         10.1.1.3         10.1.1.3       1
+   255.255.255.255   255.255.255.255   10.1.1.3         10.1.1.3       1
+
+Verify with your network administrator that all persistent entries in your
+computer's route table are valid.
+
+For more information on routing, route tables, and the ROUTE command, see the
+following article in the Microsoft Knowledge Base:
+
+   Q140859 TCP/IP Routing Basics for Windows NT
+
+Use the TRACERT Command
+-----------------------
+
+The TRACERT command reports each router or gateway crossed by a TCP/IP packet on
+its way to another host. To use the TRACERT command to trace the route between
+your computer and the other computer, type "tracert <IP address>" (without
+the quotation marks) at a command prompt, where <IP address> is the IP
+address of the other computer. You should receive a response similar to the
+following:
+
+   Tracing route to <IP address> over a maximum of 30 hops:
+
+     1   <10 ms   <10 ms   <10 ms  <###.###.###.###>
+     2    50 ms    50 ms    51 ms  <###.###.###.###>
+     3   250 ms    80 ms    50 ms  <###.###.###.###>
+
+   Trace complete.
+
+Where each <###.###.###.###> is the IP address of a different router.
+
+If there is a problem with one of the routers that the network packet tries to
+cross, you may receive a response similar to the following:
+
+   Tracing route to <IP address> over a maximum of 30 hops:
+
+     1   <10 ms   <10 ms   <10 ms  <###.###.###.###>
+     2     *        *        *     Request timed out.
+     3     *        *        *     Request timed out.
+     4     *        *        *     Request timed out.
+
+If there is a configuration error on one of the routers between your computer and
+the other computer, you may receive a response similar to the following:
+
+   Tracing route to <IP address> over a maximum of 30 hops:
+
+     1   <10 ms   <10 ms   <10 ms  <###.###.###.###>
+     2    50 ms    50 ms    51 ms  <###.###.###.###>
+     3  <###.###.###.###>  reports: Destination net unreachable.
+
+You may also receive a response similar to the one above when there is a proxy or
+a firewall between your computer and the other computer.
+
+If you are not able to obtain a successful response using the TRACERT command to
+trace the route between your computer and the other computer, contact your
+network administrator to determine if there is a routing problem between your
+computer and the other computer.
+
+For more information on the TRACERT command, see the following article in the
+Microsoft Knowledge Base:
+
+   Q162326 Using TRACERT to Troubleshoot TCP/IP Problems in Windows NT
+
+Verify Server Services on the Other Computer
+--------------------------------------------
+
+Verify that the appropriate server services are running on the other computer.
+For example, if you are attempting to use the Telnet tool to connect to the
+other computer, make sure that the other computer is configured as a Telnet
+server.
+
+To verify that the appropriate server service is running on the other computer,
+attempt to connect to the other computer from another computer that is on the
+same subnet as the other computer. If you cannot connect to the other computer
+from a computer on the same subnet, contact the network administrator to verify
+that the server service is configured and functioning properly on the other
+computer. If you can connect to the other computer from a computer on the same
+subnet, contact your network administrator to resolve any routing problems that
+may exist on your network.
+
+Check IP Security on the Server
+-------------------------------
+
+Port settings for services on the other computer may be different than the port
+settings you are using to connect. The following chart lists some standard port
+settings for various protocols:
+
+Port:   Protocol:
+-----   ---------
+80      HTTP
+21      FTP
+23      Telnet
+70      Gopher
+
+Use the Telnet tool to verify that the other computer is configured to permit
+connections on the same port you are using to connect. To do so, type the
+following line at a command prompt:
+
+   telnet <IP address> <port>
+
+Where <IP address> is the IP address of the other computer and <port>
+is the port you are attempting to make a connection on. For example, if you are
+attempting to make an ftp connection to the other computer on port 21, type
+"telnet <IP address> 21" (without the quotation marks).
+
+If you do not receive an error message, the other computer is configured to
+permit connections on that port. You should be able to make a connection using
+the appropriate service on that port.
+
+If you receive an error message, the other computer may not be configured to
+permit connections on that port. Contact the network administrator to obtain a
+valid port number for the service on the other computer.
+
+Unable to Connect to a Specific Host or NETBios Name
+----------------------------------------------------
+
+If you are able to connect to the other computer using its IP address, but you
+are not able to connect to the other computer using its host or NetBIOS name,
+there may be a name resolution problem. There are many methods that can be used
+to accomplish name resolution on a network including the following:
+
+ - HOSTS files
+
+ - Domain Name Service (DNS)
+
+ - LMHOSTS files
+
+ - Windows Internet Name Service (WINS)
+
+If you are uncertain which methods are used to accomplish name resolution on your
+network, contact your network administrator. Follow the procedures in each of
+the following sections in order. After you finish each procedure, check to see
+if you can connect to the other computer using its host name or NetBIOS name.
+
+Check the HOSTS File
+--------------------
+
+The HOSTS file is a text file that you can edit with any text editor (such as
+Notepad). If your network uses HOSTS files for host name resolution and you
+cannot connect to the other computer using its host name, there may be an
+invalid entry in your HOSTS file. Search your HOSTS file for the host name of
+the other computer, verify that there is only one entry per host name, and then
+verify that the entry for the host name of the other computer is valid.
+
+For more information on the HOSTS file, see the sample HOSTS file in the
+%SystemRoot%\System32\Drivers\Etc folder.
+
+Check Your Domain Name Service (DNS) Configuration
+--------------------------------------------------
+
+A Domain Name Service (DNS) server provides host name resolution. If your network
+uses DNS for host name resolution and you cannot connect to the other computer
+using its host name, there may be a problem with your computer's DNS
+configuration or with the DNS server on your network.
+
+To determine if there is a problem with your computer's DNS configuration, follow
+these steps:
+
+1. Type "ipconfig /all" (without the quotation marks) at a command prompt to
+   display the IP address of your DNS server. If the IP address for your DNS
+   server is not displayed, contact your network administrator to obtain the IP
+   address for your DNS server.
+
+2. Verify that you can communicate with your DNS server by pinging your DNS
+   server's IP address. You should see a reply similar to the following:
+
+      Pinging <###.###.###.###> with 32 bytes of data:
+
+      Reply from <###.###.###.###>: bytes=32 time=77ms TTL=28
+      Reply from <###.###.###.###>: bytes=32 time=80ms TTL=28
+      Reply from <###.###.###.###>: bytes=32 time=78ms TTL=28
+      Reply from <###.###.###.###>: bytes=32 time=79ms TTL=28
+
+   Where <###.###.###.###> is the IP address of the DNS server.
+
+If you cannot ping the IP address of your DNS server successfully, contact your
+network administrator to verify that you have the correct IP address for your
+DNS server and that your DNS server is connected to the network and functioning
+properly.
+
+If you can ping the IP address of your DNS server, but cannot resolve the host
+name of the other computer, your DNS server may not be resolving host names
+properly. If more than one DNS server is available on your network, configure
+your computer to use a different DNS server. If another DNS server resolves the
+host name of the other computer properly or if there is no other DNS server to
+use, contact your network administrator to correct the problem with the original
+DNS server.
+
+When you have verified the correct IP address for your DNS server, update your
+computer's TCP/IP settings. If you are using a dial-up connection to connect to
+your network, you need to change only the TCP/IP settings in your Dial-Up
+Networking phone book entry with the correct IP address for your DNS server.
+
+To change or add a valid IP address for your DNS server in your computer's TCP/IP
+settings, follow these steps:
+
+1. In Control Panel, double-click Network, and then click the Protocols tab.
+
+2. Click TCP/IP Protocol to select it, click Properties, and then click the DNS
+   tab.
+
+3. If you are adding a DNS server, click Add. If you are editing an existing
+   server, click the IP address for the appropriate DNS server, and then click
+   Edit.
+
+4. Type the correct IP address for the DNS server, and then click OK.
+
+5. Click OK, and then click OK again. You may need to restart your computer
+   after this step.
+
+To change or add a valid IP address for your DNS server for a Dial-Up Networking
+phonebook entry, follow these steps:
+
+1. In Dial-Up Networking, click the appropriate entry in the Phonebook Entry To
+   Dial box.
+
+2. Click More, and then click Edit Entry And Modem Properties.
+
+3. Click the Server tab, and then click the TCP/IP Settings button.
+
+4. Click Specify Name Server Addresses, and then type the correct IP address in
+   the Primary DNS box.
+
+Check the LMHOSTS File
+----------------------
+
+The LMHOSTS file is a text file that you can edit with any text editor (such as
+Notepad). If your network uses LMHOSTS files for NetBIOS name resolution and you
+cannot connect to the other computer using its NetBIOS name, there may be an
+invalid entry in your LMHOSTS file. Search your LMHOSTS file for the NetBIOS
+name of the other computer, verify that there is only one entry per NetBIOS
+name, and then verify that the entry for the NetBIOS name of the other computer
+is correct.
+
+If there are any #INCLUDE entries or any #BEGIN_ALTERNATE to #END_ALTERNATE
+blocks of lines in your LMHOSTS file, temporarily disable all such lines or
+blocks of lines by placing the pound (#) character and one space at the
+beginning of each line to be disabled.
+
+If disabling these lines or blocks of lines resolves the problem, re- enable the
+lines or blocks of lines one at a time until the problem reoccurs. When you have
+determined that a specific line or block of lines causes a problem, check the
+LMHOSTS files that the lines point to.
+
+For more information on the LMHOSTS file, see the Lmhosts.sam sample file located
+in the %SystemRoot%\System32\Drivers\Etc folder.
+
+Check Your Windows Internet Name Service (WINS) Configuration
+-------------------------------------------------------------
+
+A Windows Internet Name Service (WINS) server provides NetBIOS name resolution.
+If your network uses WINS for NetBIOS name resolution and you cannot connect to
+the other computer using its NetBIOS name, there may be a problem with your
+computer's WINS configuration or with the WINS server on your network.
+
+To determine if there is a problem with your computer's WINS configuration,
+follow these steps:
+
+1. Type "ipconfig /all" (without the quotation marks) at a command prompt to
+   display the IP address of your WINS server. If the IP address for your WINS
+   server is not displayed, contact your network administrator to obtain the IP
+   address for your WINS server.
+
+2. Verify that you can communicate with your WINS server by pinging your WINS
+   server's IP address. You should see a reply similar to the following:
+
+      Pinging <###.###.###.###> with 32 bytes of data:
+
+      Reply from <###.###.###.###>: bytes=32 time=77ms TTL=28
+      Reply from <###.###.###.###>: bytes=32 time=80ms TTL=28
+      Reply from <###.###.###.###>: bytes=32 time=78ms TTL=28
+      Reply from <###.###.###.###>: bytes=32 time=79ms TTL=28
+
+   Where <###.###.###.###> is the IP address of the WINS server.
+
+If you cannot ping the IP address of your WINS server, contact your network
+administrator to verify that you have the correct IP address for your WINS
+server and that your WINS server is connected to the network and functioning
+properly.
+
+If you can ping the IP address of your WINS server, but cannot resolve the
+NetBIOS name of the other computer, your WINS server may not be resolving
+NetBIOS names properly. If more than one WINS server is available on your
+network, configure your computer to use a different WINS server. If another WINS
+server resolves the NetBIOS name of the other computer properly or if there is
+no other WINS server to use, contact your network administrator to correct the
+problem with the original WINS server.
+
+When you have verified the correct IP address for your WINS server, update your
+computer's TCP/IP settings. If you are using a dial-up connection to connect to
+your network, you need to change only the TCP/IP settings in your Dial-Up
+Networking phone book entry with the correct IP address for your WINS server.
+
+To change or add a valid IP address for your WINS server in your computer's
+TCP/IP settings, follow these steps:
+
+1. In Control Panel, double-click Network, and then click the Protocols tab.
+
+2. Click TCP/IP Protocol to select it, click Properties, and then click the WINS
+   Address tab.
+
+3. Type the correct WINS server IP address in the Primary WINS Server box, and
+   then click OK.
+
+4. Click Close, and then click Yes to restart your computer.
+
+To change or add a valid IP address for your WINS server for a Dial-Up Networking
+phonebook entry, follow these steps:
+
+1. In Dial-Up Networking, click the appropriate entry in the Phonebook Entry To
+   Dial box.
+
+2. Click More, and then click Edit Entry And Modem Properties.
+
+3. Click the Server tab, and then click the TCP/IP Settings button.
+
+4. Click Specify Name Server Addresses, and then type the correct IP address in
+   the Primary WINS box.
+
+Additional query words: router brouter bridge fqdn fully qualified ntfaqipr
+
+======================================================================
+Keywords          : kbnetwork kbhowto 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbAudDeveloper kbSBServSearch kbWinAdvServSearch
+Version           : :2000,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

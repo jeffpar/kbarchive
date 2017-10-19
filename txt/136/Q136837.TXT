@@ -1,0 +1,92 @@
+DOCUMENT:Q136837  18-DEC-2000  [win95x]
+TITLE   :System Agent Err Msg: Cannot Find the File Cmpagent.exe
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you schedule a Compression Agent task in System Agent, you may receive the
+following error message when you click Run or OK:
+
+   Cannot find the file Cmpagent.exe. Make sure the path and filename are
+   correct.
+
+CAUSE
+=====
+
+This problem can occur if your compressed drive has not been upgraded from
+DriveSpace 2 to DriveSpace 3. Compression Agent works only with DriveSpace 3.
+
+RESOLUTION
+==========
+
+Either upgrade the compressed drive to DriveSpace 3, or remove the Compression
+Agent task in System Agent.
+
+To upgrade a compressed drive to DriveSpace 3, follow these steps:
+
+1. Click the Start button, point to Programs, point to Accessories, point to
+   System Tools, and then click DriveSpace.
+
+2. On the Drive menu, click Upgrade.
+
+3. Follow the instructions on the screen.
+
+To remove a Compression Agent task from System Agent, follow these steps:
+
+1. Double-click the System Agent icon on the taskbar.
+
+2. In System Agent, click the Compression Agent task you want to remove.
+
+3. On the Program menu, click Remove.
+
+4. When you are prompted to confirm the removal, click Yes.
+
+5. Close System Agent.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! for Windows 95.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Compression Agent is not compatible with versions of DriveSpace prior to
+DriveSpace 3.
+
+Additional query words: sage
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,70 @@
+DOCUMENT:Q116111  02-OCT-1999  [win3x]
+TITLE   :Parallel and Printing Problems After Upgrading to WFWG 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some hardware may have problems with the Virtual Parallel Device (VPD) used by
+Windows for Workgroups 3.11. Symptoms include garbled printing, hanging print
+queues, and the inability to use fax drivers or parallel sound devices.
+
+Microsoft has received reports of printing problems on Gateway 2000 computers and
+reports of problems on parallel devices with software that requires direct
+access to the parallel ports, such as Logitech Soundman and Hewlett-Packard (HP)
+LaserJet Fax.
+
+WORKAROUND
+==========
+
+Method 1:
+
+If you do not use your LPT: port for local printing, you can disable
+device-contention checking by removing the following line from your Windows
+SYSTEM.INI file:
+
+        DEVICE=*VPD
+
+Disabling VPD does not affect the ability of Windows for Workgroups to print over
+the network. However, if you are printing locally from an MS-DOS-based
+application at the same time as Windows is trying to access the parallel port,
+no warning appears and printouts may have garbled characters, or you may
+experience network communication problems.
+
+Method 2:
+
+In Control Panel, choose the 386 Enhanced Mode icon. To turn off VPD trapping for
+that port, choose the Never Warn option for the port in question.
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,66 @@
+DOCUMENT:Q88836  12-SEP-1999  [schedplus]
+TITLE   :PC WSPlus: Invalid Password Prevents Changing to Online
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set up Microsoft Schedule+ for Windows to start up off line, and you type
+an incorrect password on the first attempt, but then type the correct password,
+Schedule+ starts up normally. However, when you later attempt to switch to
+online operation, the following two dialog boxes appear:
+
+   The Mailbox name or password is incorrect
+
+   -and-
+
+   Cannot Access your Server
+
+CAUSE
+=====
+
+Schedule+ uses the first name and password you typed to try to sign into the
+postoffice.
+
+RESOLUTION
+==========
+
+To change to online operation, you must first quit from Schedule+, then start it
+again with the correct password.
+
+Additional query words: 1.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

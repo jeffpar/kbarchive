@@ -1,0 +1,55 @@
+DOCUMENT:Q146168  22-SEP-1999  [schedplus]
+TITLE   :Cannot Restore From Archive When Exchange Server is Shut Down
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows NT, version 7.0 
+ - Microsoft Schedule+ for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a user tries to restore an archive file while the Microsoft Exchange Server
+is shut down, the user will receive the following error message:
+
+   Your schedule may have been only partially synchronized. Try again later. A
+   problem occurred while connecting to the network. See your administrator.
+
+
+MORE INFORMATION
+================
+
+This behavior is by design because restoring from an archive while the Microsoft
+Exchange Server was shut down could result in duplicate items. If the user would
+like to access the archive file, they can open it by clicking File, Open,
+Archive or Project Schedule, and choosing the archive file.
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbZNotKeyword3 kbSchedule700NT kbSchedule700Win95
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

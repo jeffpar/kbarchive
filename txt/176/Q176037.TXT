@@ -1,0 +1,67 @@
+DOCUMENT:Q176037  22-JUN-2001  [exchange]
+TITLE   :XWEB: Blank To: Line When Deleting Recurring Appointment
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In the Microsoft Outlook Web Access (OWA) client, a recurring meeting request is
+created and saved, but not sent. The meeting request is later opened and the
+user enters one or more names on the To: line and sends the meeting request. If
+the user now opens the meeting request and selects the Delete Series button, the
+following message is displayed:
+
+   The attendees have not been notified that this meeting has been
+   canceled. Press 'OK' to notify the attendees or 'Cancel' to
+   delete the meeting without notification.
+
+If the user selects OK, then the resulting cancellation message will have a blank
+To: line, rather than containing the attendees.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

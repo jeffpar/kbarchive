@@ -1,0 +1,69 @@
+DOCUMENT:Q318335  07-MAY-2002  [homegame]
+TITLE   :FS2002: Err Msg: Cannot Detect Windows Media Player
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2002 Professional Edition 
+ - Microsoft Flight Simulator 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Flight Simulator, you may receive an error message similar
+to the following:
+
+   Flight Simulator cannot detect Windows Media Player on your system.
+
+CAUSE
+=====
+
+This issue can occur because Microsoft Windows Media Player version 7.1 is not
+installed when you install Flight Simulator on your computer.
+
+RESOLUTION
+==========
+
+To solve this problem, install Media Player from the Flight Simulator 2002
+CD-ROM. To do this, follow these steps:
+
+1. Insert Flight Simulator 2002 CD 1 into the CD-ROM drive or DVD-ROM drive.
+
+   Setup may start automatically. If Setup starts, click Close to quit Setup.
+
+2. Double-click the My Computer icon on your Windows desktop, right-click
+   FS_DISK_1, and then click Install Windows Media Player.
+
+   Setup starts the installation process automatically.
+
+3. When the installation process is complete, restart your computer.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

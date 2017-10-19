@@ -1,0 +1,92 @@
+DOCUMENT:Q133278  17-JUL-2001  [homekids]
+TITLE   :MSB Human: Freezes on Opening Animation on Macintosh
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.00
+MACINTOSH
+kbenv kbprb kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Human Body for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Magic School Bus Explores the Human Body for the Macintosh, the
+opening animation sequence may stop and you must restart your computer.
+
+This behavior occurs when 32-bit Memory Addressing has been disabled.
+
+It may also occur if Virtual Memory is turned off on a computer with a small
+amount of physical RAM installed.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the following steps:
+
+Turn on 32-Bit addressing:
+--------------------------
+
+1. From the Apple menu, choose Control Panels.
+
+2. Open the Memory Control Panel.
+
+3. Turn 32-Bit Addressing on.
+
+4. Restart your computer.
+
+If you are still experiencing problems, perform the following steps:
+
+Turn on Virtual Memory:
+-----------------------
+
+1. From the Apple menu, choose Control Panels.
+
+2. Open the Memory Control Panel.
+
+3. Turn Virtual Memory on.
+
+4. Restart your computer.
+
+After following these steps, you should be able to run Magic School Bus Explores
+the Human Body successfully.
+
+
+MORE INFORMATION
+================
+
+The Magic School Bus Human Body for Macintosh ReadMe file contains additional
+information on how to improve the application's performance.
+
+
+Additional query words: msbhb msbss frizz mac freeze hang sound animation music cut off restart system 7.1 7.5 magicbus schoolbus magic_bus frizzle liz crash stop slow frozen lock up lockup crashes hangs bombs bombed macmsbhuman msbhuman
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbKidsSearch kbScholasticHumanMac kbMSBSearch
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

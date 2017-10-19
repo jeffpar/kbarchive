@@ -1,0 +1,52 @@
+DOCUMENT:Q162163  31-JAN-2001  [win95x]
+TITLE   :Error Message During Resume on IBM Aptiva Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press the hardware Suspend button on an IBM Aptiva computer with a
+Mwave driver, you may receive the following error message on a blue screen when
+you resume the computer:
+
+   0028:C002CFC8 in VXD VDMAD(01) + 00000514
+
+
+RESOLUTION
+==========
+
+To avoid this problem, use the Suspend command on the Start menu to suspend the
+computer instead of using the hardware Suspend button.
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

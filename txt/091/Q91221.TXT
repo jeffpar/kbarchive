@@ -1,0 +1,51 @@
+DOCUMENT:Q91221  18-NOV-1999  [accother]
+TITLE   :NET.EXE Does Not Always Load Full Redirector by Default
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Workgroup Connections Setup, if you select "Do not run Workgroup
+Connections," the AUTOSTART= statement is left blank in SYSTEM.INI. If you
+execute a NET command requiring a loaded network redirector, NET.EXE should load
+the full redirector by default, regardless of the NET command. Depending on what
+command you execute, NET.EXE may not load the full redirector.
+
+
+NET LOGON and NET START RDR both require network redirectors. If no redirector is
+loaded or specified by the AUTOSTART= statement, NET.EXE should load the full
+redirector. However, if you execute NET LOGON, NET.EXE loads the full
+redirector; if you execute NET START RDR, it loads the basic redirector.
+
+Additional query words: 1.0 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWFWSearch kbWFW310
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

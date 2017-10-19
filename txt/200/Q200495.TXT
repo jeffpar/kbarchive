@@ -1,0 +1,82 @@
+DOCUMENT:Q200495  04-MAY-2001  [visualc]
+TITLE   :FIX: Cannot Create bad_typeid Object with /MD
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbVC500bug kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Standard C++ Library, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to create an object of type bad_typeid in an application built with
+the DLL version of the C run-time library (/MD ), you get the following link
+errors:
+
+   error LNK2001: unresolved external symbol "__declspec(dllimport) public:
+   virtual __thiscall std::bad_typeid::~bad_typeid(void)"
+   (__imp_??1bad_typeid@std@@UAE@XZ)
+
+   error LNK2001: unresolved external symbol "__declspec(dllimport) public:
+   __thiscall std::bad_typeid::bad_typeid(char const *)"
+   (__imp_??0bad_typeid@std@@QAE@PBD@Z)
+
+RESOLUTION
+==========
+
+Link with any of the the static versions of the C run-time library (/MT or /ML).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This problem was corrected in Microsoft
+Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+The following sample program demonstrates the problem:
+
+       //Sample.cpp
+       //Compile options :  /MD
+       #include <typeinfo>
+       using namespace std;
+       int main ()
+       {
+           bad_typeid bid;
+           return 0;
+       }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC500bug kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

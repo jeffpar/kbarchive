@@ -1,0 +1,126 @@
+DOCUMENT:Q135030  04-FEB-2002  [pcmail]
+TITLE   :X400: How to Create a LoopBack Message
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to create a LoopBack message for troubleshooting the
+X.400 Mail Gateway.
+
+MORE INFORMATION
+================
+
+1. Type the following:
+
+   " x400adm admin -ppassword -d<drive letter to gateway po>" (without the
+   quotation marks)
+
+2. Select the Local MTA option, and get the following information:
+
+    - Name:
+
+    - Country Code:
+
+    - Admd Name
+
+   :     - Prmd Name:
+
+   Click OK (ALT+O) to accept the changes, and go back to previous screen.
+
+3. Select the Address Conversion option.
+
+   The administrator must specify one address conversion string for each network
+   name. One network address conversion string covers all postoffices with the
+   same network name, even if they are not on the same local area network.
+
+    - In the Network field, type the name of the Microsoft Mail network.
+
+    - Set the Org Name to %net by tabbing to the field, then press ALT+N.
+
+    - Set the Org Unit 1 to %post by tabbing to the field, then press ALT+P.
+
+    - Set the Surname to %mbx by tabbing to the field, then press ALT+M.
+
+    - Select Add (ALT+A).
+
+    - Select OK (ALT+O) to return to the previous screen.
+
+4. Select the Routing option. The routing table will look similar to the
+   following:
+
+   NOTE: The syntax is very important. The dots ".." must exist.
+
+     c = country code <item b from Step 1>
+     ..a = Admd Name <item c from Step 1>
+     ....p = Prmd Name <item d from Step 1>
+     ......o = Org Name <item g from Step 2> <Local MTA Name: Item 1>
+
+5. After you complete the above steps, run the MS-DOS Mail client. Login as the
+   Admin to the postoffice, and select Address, X400, Field. This will display
+   the Field template.
+
+   In the Field template, enter the following:
+
+      - Country Code:                  <item b from Step 1>
+      - Administration Domain name:    <item c from Step 1>
+      - Private Domain Name:           <item d from Step 1>
+      - Surname:                       <your mailbox name>
+      - Organization name:             <Network name of the postoffice>
+      - Organization Unit Names (OU):  <postoffice name>
+
+   Press <Enter>
+   At the Alias field, type in "LoopBack Account <Account Name>" (without
+   the quotation marks)
+
+6. The address is put into your Personal Address List (PAL). Press the ESC key
+   until the Compose option appears.
+
+7. Compose a message using the account above, and run the X400Gate program with
+   the following command line options:
+
+   X400gate -lvd -d< drive letter to PO >
+
+   If the message is delivered, the X400Gateway should be configured correctly.
+   If there are error messages in the MAILDATA\LOG\X400xxxx.LOG file, follow the
+   troubleshooting steps to resolve the appropriate error message.
+
+   NOTE: The xxxxx in the LOG file represents the date you run the gateway file.
+   For example, if you run X400GATE.EXE on July 27, the filename would be
+   X4000727.LOG.
+
+More information about the X400 gateway can be found in the Microsoft Mail
+Gateway to X.400 "Administrator Guide."
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400300 kbMailGatex400320
+Version           : :3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

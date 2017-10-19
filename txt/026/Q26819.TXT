@@ -1,0 +1,54 @@
+DOCUMENT:Q26819  06-MAY-2001  [masm]
+TITLE   :FIX: "Value Out of Range" Error
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.0,5.1,5.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MASM gives a "value out of range" error on the following example:
+
+      false  equ  0
+      true   equ  not false
+      db     true              ;MASM choke on this line
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 5.0, 5.1, and
+5.1a. This problem was corrected in version 6.0.
+
+Additional reference works: 5.00 5.10 5.10a
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM500 kbMASM510a
+Version           : :5.0,5.1,5.1a
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

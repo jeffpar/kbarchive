@@ -1,0 +1,57 @@
+DOCUMENT:Q130977  31-JUL-2001  [sms]
+TITLE   :Windows 95 Explorer GP Faults during Remote Control
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:95; winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Repeated attempts to Remote Control a Windows 95 client may cause the Windows 95
+Explorer to cause a General Protection (GP) fault. The same problem may also
+occur with the Internet Explorer. The following error may also appear:
+
+   Application Error: WUSER2 caused a general protection fault in module
+   IDIS_LM.DLL at xxxx:xxxx
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem was corrected in the latest US Service Pack for
+Systems Management Server. For information on obtaining this update, query on
+the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: helpdesk crash hang diagnostics usertsr wuser win95 prodsms sms gpf
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS110
+Version           : WINDOWS:95; winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

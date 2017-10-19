@@ -1,0 +1,60 @@
+DOCUMENT:Q210525  10-FEB-1999  [homegame]
+TITLE   :Err Msg: Make Sure Golf 1999 Edition CD 1 Is in Your CD Drive...
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 1999 Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you eject the Microsoft Golf 1999 Edition Disc 2 CD-ROM while you are playing
+the Donald Ross Memorial, Eagle Heights, or Medalist Golf Club course, you may
+receive the following error message:
+
+   Please make sure Microsoft Golf 1999 Edition CD 1 is in your CD Drive
+   (selecting Cancel will exit the current game).
+
+RESOLUTION
+==========
+
+To resolve this issue, insert the Golf 1999 Disc 2 CD-ROM into the CD-ROM drive,
+and then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Golf 1999 Edition,
+version 1.0.
+
+Additional query words: 1.00 msgame golf99 wrong
+
+======================================================================
+Keywords          : kberrmsg kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolf99 kbGolfSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

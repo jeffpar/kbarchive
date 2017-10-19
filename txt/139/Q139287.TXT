@@ -1,0 +1,93 @@
+DOCUMENT:Q139287  17-DEC-2000  [win95x]
+TITLE   :Canon Printer Cannot Print Mixed Orientations to FILE: Port
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using a Canon printer and you print a multiple-orientation document
+to the FILE: port, some of the fonts in the document may not be printed when you
+print the output file.
+
+CAUSE
+=====
+
+This behavior is caused by a problem in the firmware of some Canon printers. The
+following printers are known to exhibit this behavior:
+
+ - Canon LBP-4
+
+ - Canon LBP-4U
+
+ - Canon LBP-4 Lite
+
+ - Canon LBP-4 Plus
+
+ - Canon LBP-8 III
+
+ - Canon LBP-8 III Plus
+
+ - Canon LBP-8 IIIR
+
+ - Canon LBP-8 IIIT
+
+ - Canon LBP-8 IV
+
+
+RESOLUTION
+==========
+
+To work around this behavior, use either of the following methods:
+
+ - Enable the Print TrueType As Graphics option. To do so, follow these steps:
+
+   1. Click the Start button, point to Settings, and then click Printers.
+
+   2. Use the right mouse button to click the printer you are using, and then
+      click Properties on the menu that appears.
+
+   3. On the Fonts tab, click the Use TrueType As Graphics option, and then
+      click OK.
+
+ - Do not use multiple orientations in one document. Print each section of a
+   multiple-orientation document as a separate document.
+
+MORE INFORMATION
+================
+
+This behavior occurs only with documents printed to the FILE: port that contain
+multiple orientations and more than one TrueType font.
+
+For additional information about these printers, please contact Canon Technical
+Support.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

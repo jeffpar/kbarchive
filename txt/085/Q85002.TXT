@@ -1,0 +1,71 @@
+DOCUMENT:Q85002  01-OCT-1999  [win95x]
+TITLE   :Media Player Can't Open CDAudio After Opening CD-ROM File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This information applies to the Media Player and to Windows version 3.1.
+
+If you play a disk and you have configured the Media Player for CDAudio by
+choosing CDAudio from the Device menu, you may receive the following error
+message
+
+   System Error - Cannot read from drive <x>
+
+where <x> is the drive letter of the CD-ROM. After selecting Cancel,
+another error is displayed:
+
+   Cannot open file or device
+
+WORKAROUND
+==========
+
+There are two possible workarounds for this problem:
+
+ - Open a different device from the Media Player Device menu (WaveAudio, MIDI
+   Sequencer, or Animation). Open a file, and then choose CDAudio from the
+   Device menu again.
+
+ - Exit the Media Player and restart it. CDAudio will now function correctly.
+
+This problem occurs when you attempt to open a file after changing CD-ROM disks.
+The CD-ROM is still using the previous default directory, which is now invalid
+because you have changed disks. When Windows tries to open the CDAudio driver
+(MCICDA.DRV), it looks first in the current drive/directory, which is now
+invalid. Because Windows does not allow the Ignore option to be placed in the
+dialog box on a critical error, you cannot choose to ignore the current drive
+error and continue looking along the rest of the path for the driver.
+
+Additional query words: 3.00 3.00a 3.10 3.11 CD err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

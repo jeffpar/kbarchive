@@ -1,0 +1,68 @@
+DOCUMENT:Q189926  11-DEC-1999  [foxpro]
+TITLE   :BUG: Large Toolbar Icons Cause Problems in Customize Dialog Box
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you display large buttons in the Visual FoxPro system toolbars, it causes
+visual display problems in the toolbar Customize dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. From the View menu, click Toolbars.
+
+2. Select the Large buttons check box.
+
+3. Click Customize.
+
+4. Select Debugger from the list of toolbars.
+
+NOTE: Some of the items in the Debugger toolbar interfere with other controls in
+the dialog box.
+
+Additional query words: kbVFp500bug kbVFp500abug kbVFp600bug kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

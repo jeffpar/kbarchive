@@ -1,0 +1,69 @@
+DOCUMENT:Q277936  30-JUL-2001  [msnetwork]
+TITLE   :Transferring Outlook Express Contact List or AOL Address Book to
+PRODUCT :The Microsoft Network
+PROD/VER::1.x,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Explorer, version 1.x 
+ - The Microsoft Network version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The transfer of an Outlook Express Contact List or AOL Address Book to MSN
+Explorer Address Book may need to be manually initiated by the user.
+
+MSN Explorer Version 1.0
+
+MORE INFORMATION
+================
+
+Under normal circumstances, after installing MSN Explorer, the first time a user
+with either an Outlook Express Contact List or an AOL Address Book accesses MSN
+Explorer Mail they are given the opportunity to transfer the content of these
+lists into an MSN Explorer Address Book. The content will remain in Outlook
+Express Contact List or AOL Address Book, but be copied to the new address
+book.
+
+If the system fails to offer this transfer or if the user chooses to decline this
+transfer by clicking Cancel, it can be initiated later.
+
+To transfer your Outlook Express Contact List or AOL Address Book to your MSN
+Explorer Address Book
+
+1. At the top of the MSN Explorer browser click Help and Settings.
+
+2. In the left column under the Member Center, click E-mail, and then click
+   Import Address Book.
+
+3. On the new page click Import Address Book and follow the instructions.
+
+Additional query words: kbimu; Outlook Express Contact List; AOL Address Book;
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600
+Version           : :1.x,6.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

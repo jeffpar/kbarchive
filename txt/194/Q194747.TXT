@@ -1,0 +1,163 @@
+DOCUMENT:Q194747  21-DEC-2001  [word97]
+TITLE   :WD97: Mail Merge Tutorial and Help File Available
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfile kbdta word97 kbmerge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Word 97 for Windows Mail Merge Help file is a resource both for beginners
+and for advanced users. Download this resource to have instant access to
+information about mail merge--after you install the Help file, you do not need
+to be connected to the Internet to use it. For more information about what this
+Help file contains, please see the "More Information" section of this article.
+
+NOTE: To run the Word 97 Mail Merge Help file, you must have Microsoft Internet
+Explorer 4.0 or later installed. To install Internet Explorer, please see the
+following Microsoft Web page:
+
+   http://www.microsoft.com/windows/ie/
+
+The following file is available for download from the Microsoft Download Center:
+
+   Merge.exe
+   (http://download.microsoft.com/download/word97win/utility4/1/WIN98/EN-US/Merge.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+The Word 97 for Windows Mail Merge Help file is divided into the following
+topics:
+
+Overview: "Ease into the Merging Lane"
+--------------------------------------
+
+A tutorial on the basics of performing a mail merge in Word. The tutorial also
+contains sample files that provide detailed instructions and sample content for
+accomplishing the tasks presented in the tutorial.
+
+Step-by-Step Instructions
+-------------------------
+
+Step-by-step instructions on how to start your mail merge, how to add a data
+source, how to create your main document, and how to perform the actual merge.
+Using these steps, you can create a mail merge to any of the following:
+
+ - Form Letters
+
+ - Mailing Labels
+
+ - Envelopes
+
+ - Catalogs
+
+More About Data Sources
+-----------------------
+
+This section contains answers to some of the questions that you need to consider
+before you set up your data source. In addition, it provides step- by-step
+methods on how to use the following data sources for your mail merge:
+
+ - Microsoft Access
+
+ - ACT! for Windows
+
+ - Comma-delimited text
+
+ - dBase
+
+ - Microsoft Excel
+
+ - Microsoft FoxPro
+
+ - Microsoft Query
+
+ - Microsoft Outlook Contacts
+
+ - Paradox
+
+ - Tab-delimited text
+
+ - WordPerfect data
+
+Beyond the Basics
+-----------------
+
+Detailed information for advanced features that can be used during a Word mail
+merge. Some of the topics covered include:
+
+ - How to add a postal bar code and how to read it to ensure that it is correct.
+
+ - How to prompt for more information during your mail merge.
+
+ - How to customize your mail merge when certain criteria are met.
+
+ - Descriptions of the buttons on the mail merge toolbar and mail merge shortcut
+   keys.
+
+ - How to get the results that you want by:
+
+    - Adding graphics to labels
+
+    - Merging by category
+
+    - Formatting your merged results
+
+    - Merging selected records
+
+    - Merging with specified conditions
+
+    - Using mail merge to electronic fax or electronic mail (e-mail)
+
+Troubleshooting Specific Errors
+-------------------------------
+
+A compilation of Microsoft Knowledge Base articles divided by function for easier
+and faster access to the answers to your mail merge problems.
+
+Where to Find More Help
+-----------------------
+
+Additional resources for finding the answers to your mail merge questions.
+
+Additional query words: mailmerge printmerge
+
+======================================================================
+Keywords          : kbfile kbdta word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

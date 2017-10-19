@@ -1,0 +1,53 @@
+DOCUMENT:Q107353  13-JUN-2001  [winmisc]
+TITLE   :Real-Time Pass Through Not Possible with the WSS Card
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:1.00 1.00a 2.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Real-time pass through or real-time playback is not possible with the Windows
+Sound System card and microphone.
+
+MORE INFORMATION
+================
+
+It is not possible to plug the microphone into the Windows Sound System card,
+talk into the microphone, and receive amplification and output to the speakers
+at the same time. This is not a feature of Windows Sound System, and there is no
+supported way of doing this.
+
+Products such as "PC Karaoke" will not work with the Windows Sound System card.
+
+
+Additional query words: 1.00 1.00a 2.00 play back together repeat pass-through passthrough real time
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+Version           : 1.00 1.00a 2.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

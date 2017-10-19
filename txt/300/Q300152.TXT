@@ -1,0 +1,59 @@
+DOCUMENT:Q300152  04-JUN-2001  [msdn]
+TITLE   :Troubleshooting Passport Using the Microsoft Windows NT Event Mo
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You should review the Windows NT event log for information, warnings, and errors
+that may have occurred during the operation of Passport features.
+
+MORE INFORMATION
+================
+
+To view the Windows NT event log on your Web server, click Start, point to
+Programs, point to Administrative Tools, and then click Event Viewer. View the
+Application events on the server.
+
+For additional information, compare any Passport-specific events with the event
+reference on the following Passport Software Development Kit (SDK) Web site:
+
+   Passport Manager Windows NT Events
+   http://www.passport.com/sdkdocuments/sdk14/reference/operations/ntevents.htm
+
+This information will assist you in locating the specific section of the SDK
+document that is relevant to your issue.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

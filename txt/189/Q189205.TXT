@@ -1,0 +1,70 @@
+DOCUMENT:Q189205  08-JAN-2000  [mspress]
+TITLE   :Running MS BackOffice Small Business Server Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Running Microsoft BackOffice Small Business Server ISBN 1-57231-688-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Running Microsoft BackOffice Small
+Business Server," ISBN 1-57231-688-8.
+
+Contents:
+
+ - Book Covers FrontPage 97, not FrontPage 98
+
+MORE INFORMATION
+================
+
+Book Covers FrontPage 97, Not FrontPage 98
+------------------------------------------
+
+Chapter 20, "Creating a Web site with FrontPage", covers Microsoft FrontPage 97.
+The same is true of the other references to Microsoft FrontPage in the book.
+However, Microsoft BackOffice Small Business Server version 4.0a includes
+Microsoft FrontPage 98.
+
+"Running Microsoft BackOffice Small Business Server" was originally written using
+version 4.0, which included FrontPage 97. While the authors tried to include as
+many features of 4.0a as possible in the book, time constraints prevented them
+from rewriting the section on Microsoft FrontPage for FrontPage 98. This problem
+will be corrected in future editions of the book.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of the book, it may already
+contain the above corrections.
+
+Additional query words: ms_press
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

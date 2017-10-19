@@ -1,0 +1,58 @@
+DOCUMENT:Q108742  11-NOV-1999  [utilities]
+TITLE   :Documentation Errors in RAS Manuals
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::1.0,1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Remote Access Service, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 47 of the Microsoft LAN Manager Remote Access Service (RAS)
+"Administrator's Guide" for RAS 1.1 and page 43 of the same manual for RAS 1.0
+have the following documentation errors in the section titled "Line Status."
+
+ - Each occurrance of "Line Status," one in the title and one in the first
+   sentence, should actually be "Line Condition" because there is no "Line
+   Status" field in the Remote Access Server Service "Port Status" dialog box.
+
+ - In the section titled "Line Status," the second bold item, "Not Yet
+   Authenticated," is a non-existent Line Condition. This item should be
+   replaced with "Connected, Authenticating User."
+
+ - Each occurrance of "Modem Errors," one in the title and one in the first
+   sentence, should actually be "Modem Condition" because there is no "Modem
+   Errors" field in the Remote Access Server Service "Port Status" dialog box.
+
+ - In the section titled "Modem Errors," the first bold item, "None," is a
+   non-existent Modem Condition. This item should be replaced with "No errors."
+
+Additional query words: 1.00 1.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbRASSearch kbRAS100 kbRAS110
+Version           : :1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

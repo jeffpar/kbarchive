@@ -1,0 +1,54 @@
+DOCUMENT:Q183729  02-MAY-1999  [iis]
+TITLE   :Valid User Needed for Remote Administration Using HTMLA
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To administer a remote computer running Internet Information Server (IIS) 4.0
+using Internet Service Manager (HTML), you must log on with a valid
+administrator (or operator) account for that remote computer. If you want to
+access Internet Service Manager (HTML) on a remote computer with a different
+account, an account other than the one you used to log on to the local computer,
+you must enable Basic Authentication and disable Windows NT Challenge/Response
+authentication on the Directory Security property sheet for the Administration
+Web site or the IISAdmin virtual directory. You will then be prompted for proper
+user account credentials.
+
+MORE INFORMATION
+================
+
+With previous releases, you could create a session to \\ServerName\IPC$ using a
+different user account to get access. This will not work for IIS 4.0.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

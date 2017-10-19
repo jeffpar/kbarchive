@@ -1,0 +1,302 @@
+DOCUMENT:Q186237  06-AUG-2002  [word97]
+TITLE   :WD97: How to Move AutoCorrect Entries Between Computers
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft Word 2000 version of this article, see Q207748.
+
+For a Microsoft Word 7.0 version of this article, see Q153149.
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article describes how to copy Word 97 AutoCorrect entries from one computer
+to another.
+
+MORE INFORMATION
+================
+
+Use one of the following methods to share AutoCorrect entries between
+computers.
+
+Method 1: Use the Autocorrect Utility (Preferred Method)
+--------------------------------------------------------
+
+NOTE: This procedure replaces an AutoCorrect entry on the destination computer
+that has the same name as an AutoCorrect entry on the source computer. All other
+AutoCorrect entries are added to the AutoCorrect List on the destination
+computer.
+
+NOTE: The AutoCorrect Utility is part of the Macros8 template located in the
+Macros folder. If you do not have the Macros folder installed, you need to rerun
+Setup and install the Macro templates.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   
+
+   Q162490 WD97: How to Access Sample Macros for Word 97
+
+Back Up Your AutoCorrect Entries on the Source Computer
+-------------------------------------------------------
+
+To back up your AutoCorrect entries from the source computer, follow these
+steps:
+
+1. On the Tools menu, click Templates and Add-Ins.
+
+2. Under "Global templates and add-ins," click Add.
+
+3. In the Add Template dialog box, change the Look in box to the Microsoft
+   Office folder.
+
+4. Double-click the Office folder.
+
+5. Double-click the Macros folder.
+
+6. Select the Macros8 template and then click OK.
+
+   NOTE: The Macros8 template will be added to the Global templates and add-ins
+   box.
+
+7. On the Macros toolbar, click Sample Macros and then click AutoCorrect
+   Utility.
+
+   If the Macros toolbar does not appear, do one of the following:
+    - On the View menu, point to Toolbars and then click Macros.
+
+      -or-
+
+    - On the Tools menu, point to Macro and then click Macros. In the Macros
+      dialog box, select AutoCorrectUtil (Start_AutoCorrect) and then click Run.
+
+8. In the AutoCorrect Utility dialog box, click Backup.
+
+   NOTE: The AutoCorrect Utility dialog box prompts you with the following:
+
+   This program will allow you to backup and restore your AutoCorrect entries.
+   Choose Backup to create a Word document from your AutoCorrect list. Choose
+   Restore to restore an AutoCorrect list from a Backup document.
+
+   When you click Backup, Word adds and formats your AutoCorrect entries to a new
+   Word document and then prompts you to save the document. Word suggests saving
+   your AutoCorrect document as "AutoCorrect Backup Document."
+
+9. Click Cancel to close the AutoCorrect Utility dialog box.
+
+Restore Your AutoCorrect Entries to the Destination Computer
+------------------------------------------------------------
+
+To restore your AutoCorrect entries to the destination computer, follow these
+steps:
+
+1. On the Tools menu, click Templates and Add-Ins.
+
+2. Under "Global templates and add-ins," click Add.
+
+3. In the Add Template dialog box, change the Look in box to the Microsoft
+   Office folder.
+
+4. Double-click the Office folder.
+
+5. Double-click the Macros folder.
+
+6. Select the Macros8 template and then click OK.
+
+   NOTE: The Macros8 template will be added to the Global templates and add-ins
+   box.
+
+7. On the Macros toolbar, click Sample Macros and then click AutoCorrect
+   Utility.
+
+   If the Macros toolbar does not appear, do one of the following:
+    - On the View menu, point to Toolbars and then click Macros.
+
+      -or-
+
+    - On the Tools menu, point to Macro and then click Macros. In the Macros
+      dialog box, select AutoCorrectUtil (Start_AutoCorrect) and then click Run.
+
+8. In the AutoCorrect Utility dialog box, click Restore.
+
+   NOTE: The AutoCorrect Utility dialog box prompts you with the following:
+
+   This program will allow you to backup and restore your AutoCorrect entries.
+   Choose Backup to create a Word document from your AutoCorrect list. Choose
+   Restore to restore an AutoCorrect list from a Backup document.
+
+   When you click Restore, Word prompt you with the following:
+
+   This will replace your current AutoCorrect entries with entries from your
+   backup document that contain the same name. Do you wish to continue?
+
+   Click Yes. In the Open dialog box, point to your AutoCorrect Backup document
+   and then click Open.
+
+   After Word has completed adding your AutoCorrect entries, click OK when Word
+   prompts you with Restore Complete.
+
+   NOTE: If your AutoCorrect Backup contains entries with several paragraphs, you
+   may receive an error message similar to the following:
+
+   There was an error. The document may be in the incorrect format. 5488 Unable
+   to add because AutoCorrect entry is too long. <text of the autocorrect
+   entry appears here>
+
+   For additional information, click the article number below to view the article
+   in the Microsoft Knowledge Base:
+
+   Q275322 WD: Errors Restoring AutoCorrect Entries
+
+9. Click Cancel to close the AutoCorrect Utility dialog box.
+
+The AutoCorrect entries from the other computer will now be available.
+
+Method 2: Manually Copy the Autocorrect List
+--------------------------------------------
+
+NOTE: This procedure replaces the existing AutoCorrect List on the destination
+computer with the AutoCorrect List from the source computer. In other words, the
+existing AutoCorrect List on the Destination computer will be lost.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+AutoCorrect entries are stored in three locations: the registry, the Normal.dot
+template file, and an AutoCorrect list (<username>.acl) file.
+
+Copying the AutoCorrect List on the Source Computer
+---------------------------------------------------
+
+On the computer that has the AutoCorrect list that you want to copy, use the
+following steps:
+
+1. To export the registry key, do the following:
+   a. Quit all programs.
+
+   b. Click the Windows Start button, and then click Run.
+
+   c. In the Open box, type "regedit" (without the quotation marks), and then
+      click OK.
+
+   d. Select the following registry key:
+
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Common\AutoCorrect
+
+      NOTE: The status bar displays the following:
+
+   My Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\8.0
+   \Common\AutoCorrect
+
+   e. On the Registry menu, click Export Registry File, type a file name, and
+      then click Save.
+
+   f. Close the registry.
+
+2. Copy the following files to a floppy disk:
+    - The exported registry file that you created in step 1-e.
+
+    - Normal.dot (the default location for this file is C:\Program
+      Files\Microsoft Office\Templates folder).
+
+    - <username>.acl (located in the Windows directory).
+
+To replace the AutoCorrect list on the destination computer:
+
+1. Rename the original Normal.dot file (the default location for this file is
+   C:\Program Files\Microsoft Office\Templates folder), and then copy the
+   Normal.dot template from the floppy disk to the C:\Program Files\Microsoft
+   Office\Templates folder.
+
+2. Rename the <username>.acl file (located in the Windows folder), and
+   then copy the <username>.acl from the floppy disk to the Windows
+   folder. Then rename the <username>.acl file you just copied to the
+   Windows folder to the correct <username>.acl.
+
+   NOTE: The <username> should be the same as the login name for the
+   computer.
+
+   NOTE: When you replace the <username>.acl file on your system with the
+   <username>.acl file that contains the AutoCorrect entries you want to
+   share, all of the AutoCorrect entries you had on this system will be lost and
+   will be replaced with the new AutoCorrect entries you are sharing.
+
+3. On the Registry menu, click Import Registry File, select the exported
+   registry file on the floppy disk, and then click Open.
+
+   You should receive a message similar to the following:
+
+   Information in A:\<filename>.reg has been successfully entered into the
+   registry.
+
+   Click OK to close the message.
+
+4. Go to the following registry key:
+
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Common\AutoCorrect
+
+5. In the AutoCorrect key, select Path (on the right side of the Registry
+   Editor).
+
+6. On the Edit menu, click Modify.
+
+7. In the Edit String dialog box, change the Value data box to the
+   <username>.acl that you typed in step 2, and then click OK.
+
+   NOTE: Make sure you specify the path to the <username>.acl file in the
+   Value data box. For example: "C:\Windows\<username>.acl" (without the
+   quotation marks).
+
+8. On the Registry menu, click Exit to quit the Registry Editor.
+
+When you start Word, the AutoCorrect List from the other computer will now be
+available.
+
+For more information about where Word settings are stored in the Windows
+registry, please see the following article in the Microsoft Knowledge Base:
+
+   
+
+   Q157464 WD97: Where Settings Are Stored in the Registry
+
+Additional query words: auto correct
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

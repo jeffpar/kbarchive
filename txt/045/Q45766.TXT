@@ -1,0 +1,59 @@
+DOCUMENT:Q45766  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Sending Bcc (Blind Carbon Copy) Messages
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Bcc option in Microsoft Mail enables users to send a blind carbon copy of a
+mail message to other users. This means Bcc recipients receive an exact copy of
+the mail message, but the To and Cc recipients of the mail message cannot tell
+who the Bcc recipients are. The Bcc option can be used to send a mail message
+when it isn't important that recipients know who else receives a copy of the
+mail message.
+
+To use the Bcc option, do the following:
+
+1. In the Address Mail window, select Bcc under the Add As label.
+
+2. Select the names of users to receive a blind carbon copy of the mail message.
+
+Users who are selected as Bcc have a "Bcc" prefix in front of their names in the
+Message Recipients list box. Please note that when the message is read, there is
+no Bcc line identifying users who received a blind carbon copy of the message.
+
+Please note that all users who receive a mail message, whether they are on the To
+line, the Cc line, or are Bcc recipients, receive the same mail message.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

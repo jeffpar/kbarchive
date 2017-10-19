@@ -1,0 +1,78 @@
+DOCUMENT:Q110311  23-NOV-1999  [msdos]
+TITLE   :Reserving 0.0 MB on a RAM Drive with DoubleSpace
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+Neither the graphical interface of the full-screen DoubleSpace maintenance
+program, nor the DBLSPACE.EXE command-line switches allows you to reserve zero
+(0) bytes of free space on the host drive during the compression of a RAM drive.
+
+WORKAROUND
+==========
+
+To reserve zero bytes of free space on the host drive when you are compressing a
+RAM drive, use the following procedure:
+
+1. Create a new drive or compress an existing drive on the RAM drive using
+   either the full-screen DoubleSpace maintenance program or the MS-DOS command
+   line. For example, at an MS-DOS command prompt, you might type:
+
+   " dblspace /create <d>: /size=1.37 " (without the quotation marks)
+
+   where drive <d> is a 2-megabyte (MB) RAM drive. (This uses 1.37 MB of
+   drive D to create a compressed RAM drive and leaves approximately 0.62 MB
+   free on the drive D.
+
+2. Resize the compressed drive to its maximum size and the host drive to zero
+   with a command similar to the following:
+
+      dblspace /size /reserve=0 <h>:
+
+   where <h> is the drive letter of the compressed RAM drive. To determine
+   the drive letter for the compressed drive, type "dblspace /list" (without the
+   quotation marks) at the MS-DOS command prompt.
+
+MORE INFORMATION
+================
+
+Reserving 0.0 MB on the host drive of the RAM drive ensures that no RAM is
+leftover as unused space on the host drive. The above procedure does not apply
+to the compression of a hard disk drive.
+
+Additional query words: 6.00 6.20 dblspace doublespace manager
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q250984  12-NOV-2001  [homekids]
+TITLE   :MSB Bugs: Error Message When You Click "Run Demo"
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS|MACINTOS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores Bugs, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you click Run Demo on the Scholastic's Magic School Bus series: Explores Bugs
+splash screen, you may receive the following error message:
+
+   Cannot find vids:iv50 decompressor.
+
+CAUSE
+=====
+
+This behavior can occur if you run Magic School Bus series: Explores Bugs on a
+Microsoft Windows 95-based computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest Indeo video codecs from
+the following Intel Web site:
+
+   http://developer.intel.com/ial/indeo/video/details.htm
+
+For additional information about how to reinstall or troubleshoot video
+compression, please click the article numbers below to view the articles in the
+Microsoft Knowledge Base:
+
+   Q177198 How to Reinstall Windows 95 Audio and Video Compression
+
+   Q138261 Error Message: Video Not Available, Cannot Find Decompressor
+
+MORE INFORMATION
+================
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: 1.00 mskids msb schoolbus demonstration movie video
+
+======================================================================
+Keywords          : kbenv kberrmsg mskids kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticBugs kbMSBSearch
+Version           : WINDOWS|MACINTOS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

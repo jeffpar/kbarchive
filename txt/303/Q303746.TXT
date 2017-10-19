@@ -1,0 +1,75 @@
+DOCUMENT:Q303746  13-SEP-2001  [msdn]
+TITLE   :Event Error: Target Folder Permissions Deny Access to XML Files
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4,1.99,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4, 1.99, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to write Passport Network Map XML files, such as Partner.xml,
+to the server hard disk, you may see the following error message in the Event
+Log:
+
+   Access Denied: Could not write to disk.
+
+CAUSE
+=====
+
+The permissions for the target folder are set incorrectly.
+
+RESOLUTION
+==========
+
+To resolve this problem, set the permissions on the following folders to allow
+the Everyone group full control:
+
+On Windows NT 4.0 or 2000:
+
+   Winnt\System32\MicrosoftPassport
+
+On Windows XP:
+
+   Windows\System32\MicrosoftPassport
+
+MORE INFORMATION
+================
+
+When the XML files are fetched from the Nexus, they are not written to the disk
+if Windows 2000 does not allow the Everyone group access to the System32 folder
+and the person who is logged on is not an administrator.
+
+If XML files are placed in the System32 folder as a workaround because the server
+cannot communicate with the Nexus, Passport fails to load the XML files.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassport199 kbPassport200 kbPassportSearch
+Version           : :1.3,1.4,1.99,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

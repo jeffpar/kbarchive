@@ -1,0 +1,54 @@
+DOCUMENT:Q259952  12-NOV-2001  [homegame]
+TITLE   :StarLancer: 3D Accelerator Card Is Not Detected by the Game
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a 3D accelerator card is installed in your computer in addition to a primary
+display adapter, the 3D accelerator card is not detected by Microsoft
+StarLancer.
+
+StarLancer only detects the primary video adapter that is installad in the
+computer.
+
+MORE INFORMATION
+================
+
+Because the 3D accelerator card that is installed in your computer is not
+detected by StarLancer, you can only configure 3D Render Mode to use your
+primary video adapter or the Software Renderer when you play the game.
+
+Additional query words: 1.00 msgame star lancer
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

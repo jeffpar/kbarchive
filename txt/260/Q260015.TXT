@@ -1,0 +1,61 @@
+DOCUMENT:Q260015  27-APR-2000  [pcmail]
+TITLE   :PC DirSync: Dispatch Does Not Work on Windows 2000
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Dispatch program runs until it tries to initiate NSDA to start the directory
+synchronization (dirsync) process. Then the Dispatch program stops, and
+generates an OS/2 subsystem error message.
+
+RESOLUTION
+==========
+
+To resolve this problem, run a forcedos command that precedes the normal command
+line, for example:
+
+   forcedos dispatch -dmo
+
+MORE INFORMATION
+================
+
+You are attempting to start a bound MS-DOS-based OS/2 application. This
+application uses an unsupported OS/2 application programming interface (API),
+and therefore cannot be started by the OS/2 subsystem. After the application
+stops, you can try to restart it by using the forcedos command, because the
+MS-DOS-based subsystem supports the application.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN3xSearch
+Version           : WINDOWS:3.x
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,65 @@
+DOCUMENT:Q116491  15-FEB-2002  [visualc]
+TITLE   :PRB: ClassWizard Links Only Types with DDX Support
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.5,1.51,1.52,2.0,2.1,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbwizard kbMFC kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbClassWizard kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The ClassWizard, used with:
+    - Microsoft Visual C++, versions 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+By default, ClassWizard allows linking the edit controls of combo boxes only to
+member variables that are of type CString.
+
+MORE INFORMATION
+================
+
+By design, ClassWizard allows links only to types for which dynamic data
+exchange (DDX) routines have been provided. Microsoft Foundation Classes (MFC)
+provides a DDX_FieldCBString() function to manage data transfer between the edit
+control of a combo box and a CString member variable, but not between combo
+boxes and other types (for example, there is no DDX_FieldCBInt). This is not a
+problem with ClassWizard; it is simply a matter of providing support for those
+DDX routines that are available.
+
+If a particular routine that you would find useful does not already exist, you
+can create a custom routine. "MFC Technical Note #26" provides instructions on
+how to create custom DDX/DDV routines. Once a custom routine is provided,
+ClassWizard recognizes the type and allows the mapping to be made. This
+additional functionality may be useful when linking the edit controls of combo
+boxes to non-CString fields, such as those found in a database.
+
+Additional query words: kbinf
+
+======================================================================
+Keywords          : kbwizard kbMFC kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbClassWizard kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : :1.5,1.51,1.52,2.0,2.1,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

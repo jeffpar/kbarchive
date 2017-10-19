@@ -1,0 +1,56 @@
+DOCUMENT:Q122749  08-NOV-2001  [homegame]
+TITLE   :Arcade for Macintosh: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the minimum system requirements to run Microsoft Arcade
+for the Macintosh, version 1.0.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Microsoft Arcade for the Macintosh are:
+
+ - A Macintosh II-family or faster computer, or a PowerBook(TM) 160 or faster
+   computer.
+ - A 68020 or faster processor.
+ - Apple (R) System 7 operating system or higher.
+ - 3 megabytes (MB) of random access memory (RAM).
+ - 3 MB of available hard-disk space.
+ - A 16 color or 256 color video adapter and monitor.
+
+Additional query words: 1.00 m_arcade sysreq kbfaq
+
+======================================================================
+Keywords          : kbsetup kbimu msgame kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcadeMac
+Version           : MACINTOSH:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

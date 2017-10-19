@@ -1,0 +1,63 @@
+DOCUMENT:Q72241  26-OCT-1999  [win95x]
+TITLE   :HP IIID PostScript Driver Available from HP
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Hewlett-Packard (HP) LaserJet IIID PostScript Cartridge printer driver for
+Microsoft Windows version 3.00 is available from HP's fulfillment center.
+
+MORE INFORMATION
+================
+
+The HP LaserJet III PostScript Cartridge driver ".WPD" file for Windows 3.0 is
+available in the Microsoft Windows 3.0 SDL but does not support the HP IIID with
+the PostScript option.
+
+The HP LaserJet IIID PostScript Cartridge printer driver does not provide the
+duplexing feature (printing on both sides).
+
+The filename is HP_3D522.WPD version 52.2.
+
+For information on installing unlisted printer drivers, please refer to the
+"Installing a Printer" section on page 158 of the "Microsoft Windows User's
+Guide."
+
+For information about installing the PostScript cartridge, query on the following
+words:
+
+   iiid and postscript
+
+Additional query words: 3.00 win30 3rdparty 3.00A
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

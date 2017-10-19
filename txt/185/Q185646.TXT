@@ -1,0 +1,97 @@
+DOCUMENT:Q185646  09-JAN-2000  [vbwin]
+TITLE   :BUG: UserConnection Designer and Parameterized Query in Access
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The UserConnection Designer lists parameterized queries in Microsoft Access as
+stored procedures; if you define the query object based on a stored procedure
+and select one, on the Parameters tab, every single column is displayed in the
+query as a parameter along with the actual parameter(s). Clicking any parameter
+results in the following error:
+
+   "Not a valid name for a parameter."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Control Panel, double-click the 32bit ODBC icon. In the ODBC Data Source
+   Administrator dialog box, create a data source name, MyAccessTest, using
+   Microsoft Access Driver and pointing to the Microsoft Access sample database
+   Nwind.mdb.
+
+2. Start a new project in Visual Basic and choose Standard EXE. Form1 is created
+   by default.
+
+3. On the Project menu, click Components, click the Designers tab, and then
+   select Microsoft UserConnection.
+
+4. On the Project menu, click Add ActiveX Designer, and then click Microsoft
+   UserConnection. This action brings up the UserConnection1 Properties dialog
+   box.
+
+5. On the Connection tab, click Use ODBC Datasource, and select the new DSN,
+   MyAccessTest.
+
+6. Click OK to save this information, and return to the Designers window.
+
+7. Insert a new query by right-clicking UserConnection1 and choosing Insert
+   Query or by clicking the Insert Query toolbar icon. Query1 is created by
+   default.
+
+8. From the Source of Query, choose Based on Stored Procedure. Click the
+   drop-down combo box; you see the following three queries:
+
+      Employee Sales by Country
+      Invoices Filter
+      Sales by Year
+
+9. Select any of them, and click the Parameters tab. All of columns in the query
+   are listed in the Parameters list box. Clicking any one of them results in
+   the following error:
+
+   Not a valid name for a parameter
+
+Additional query words: kbDSupport kbdse kbODBC kbVBp500 kbVBp600 kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

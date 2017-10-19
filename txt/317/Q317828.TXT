@@ -1,0 +1,68 @@
+DOCUMENT:Q317828  07-MAY-2002  [homegame]
+TITLE   :FS2002: How to Import Aircraft from Combat Flight Simulator
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2002 Professional Edition 
+ - Microsoft Flight Simulator 2002 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to import an aircraft from Combat Flight Simulator 2
+to Flight Simulator 2002.
+
+MORE INFORMATION
+================
+
+To import an aircraft and aircraft gauges from Combat Flight Simulator 2 to
+Flight Simulator 2002, follow these steps.
+
+NOTE: CFS2 contains gauges for planes in Flight Simulator 2000 and may overwrite
+gauges for planes in Flight Simulator 2002.
+
+1. Start Windows Explorer.
+
+2. Browse to C:\Program Files\Microsoft Games\CSF2\Aircraft.
+
+3. Click and drag the appropriate aircraft files into C:\Program Files\Microsoft
+   Games\FS2002\Aircraft. When you receive the confirmation message, click Yes.
+
+4. Browse to C:\Program Files\Microsoft Games\CFS2\Gauges.
+
+5. Click and drag the appropriate gauge files to C:\Program Files\Microsoft
+   Games\FS2002\Gauges. When you receive the confirmation message, click Yes.
+
+6. Quit Windows Explorer, and then start Flight Simulator.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbFlightSimSearch kbCombatFlightSim2 kbCombatFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

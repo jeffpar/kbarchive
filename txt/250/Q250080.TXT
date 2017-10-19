@@ -1,0 +1,82 @@
+DOCUMENT:Q250080  09-FEB-2000  [foxpro]
+TITLE   :BUG:Mouse Pointer Changes to Default Pointer on Text Box Border
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbContainer kbCtrl kbvfp500aBUG kbvfp600bug kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The mouse pointer changes to the default pointer when hovering over a text box
+border regardless of the mouse pointer setting on the form and text box.
+
+RESOLUTION
+==========
+
+Placing NODEFAULT in the MouseMove event of the text box keeps the mouse pointer
+from changing.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the following code into a program file (.prg) and run it:
+
+   PUBLIC oForm
+   oForm=CREATEOBJECT("Form")
+   WITH oForm
+     .ADDOBJECT("Text1","textbox")
+     .text1.VISIBLE = .T.
+     .SETALL('MousePointer',11)
+     .MOUSEPOINTER = 11
+     .SHOW
+   ENDWITH
+   RETURN
+
+2. Slowly hover the mouse pointer over the border of the text box. Notice that
+   the mouse pointer changes from an hourglass to the default arrow pointer.
+
+REFERENCES
+==========
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp500aBUG kbvfp600bug kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

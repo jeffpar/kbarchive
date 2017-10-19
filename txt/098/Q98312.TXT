@@ -1,0 +1,72 @@
+DOCUMENT:Q98312  19-NOV-1999  [msdos]
+TITLE   :How to Install MS-DOS 6 Upgrade to a Drive Other Than C
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you run MS-DOS 6.0 Setup without any parameters, your only choice for the
+destination of the MS-DOS 6.0 files is drive C. To use another drive, use the
+procedure in this article.
+
+MORE INFORMATION
+================
+
+NOTE: You must have at least 3-4 megabytes of free space on drive C to use this
+procedure.
+
+1. Run Setup with the /Q switch by typing the following at the MS-DOS command
+   prompt and then pressing ENTER:
+
+   " setup /q" (without the quotation marks)
+
+2. Press ENTER at the Welcome to Setup screen.
+
+3. The next screen gives you the option to change your computer type, MS-DOS
+   path, and display type. Use the arrow keys to select MS-DOS Path, then press
+   ENTER.
+
+4. Type the drive and path to which you want to install MS-DOS.
+
+5. To transfer the new system files (IO.SYS, MS-DOS.SYS, COMMAND.COM, and
+   DBLSPACE.BIN) to the proper places on your boot drive, type the following and
+   then press ENTER:
+
+   " setup /" (without the quotation marks)
+
+You have now upgraded your operating system to MS-DOS 6.0. The boot drive (C)
+contains the new system files, and the path you specified in step 4 contains all
+the MS-DOS programs and drivers (92 files total).
+
+Additional query words: 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

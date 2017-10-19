@@ -1,0 +1,49 @@
+DOCUMENT:Q11636  09-JUN-1999  [win16sdk]
+TITLE   :INFO: Windows Resource Numbering Starts at 1
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbResource kbSDKPlatform
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Numbered resources in Windows must start at one, not zero. Beginning with the
+MS-DOS version 4.0 executable format, executable segments are numbered from one,
+and resources are implemented as independent segments. Therefore, resources are
+numbered from one.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbResource kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

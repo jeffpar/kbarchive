@@ -1,0 +1,50 @@
+DOCUMENT:Q139198  22-OCT-1999  [mastering]
+TITLE   :How to Run the Tour Outside of Mastering Visual FoxPro Program
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual FoxPro 3.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are having trouble running the Tour inside the Mastering Microsoft Visual
+FoxPro program, you can still view the Tour by running the Tour's Video for
+Windows file directly from the compact disc.
+
+MORE INFORMATION
+================
+
+The Tour Video for Windows file is located in the \Mvfp\Tour directory of the
+compact disc. To view this file, start Media Player (or any other Video for
+Windows view), and open the Tour.avi file in the \Mvfp\Tour directory.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm 
+Technology        : kbMSPressSearch
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

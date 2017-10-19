@@ -1,0 +1,95 @@
+DOCUMENT:Q64078  23-JUL-2001  [win16sdk]
+TITLE   :RightJus.exe Right Justifies Numbers in List Box
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbCtrl kbListBox kbSDKPlatform kbGrpDSUser kbUser kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In versions of Windows earlier than 3.0, it is possible to align columns of
+information in a list box with spaces, because all characters in the system font
+are the same width. In Windows 3.0, the system font is proportionally spaced
+with letters of differing widths, which prevents this technique from being
+usable.
+
+Tabs can be used to align columns in a list box. The LBS_USETABSTOPS style must
+be specified when the list box is created. Then, set a tab to correspond with
+the position of each character of each numeric column. The tabs are specified in
+dialog units, which are one-fourth of a character width. For example, a
+three-digit field that should align 12 characters from the left edge of the
+dialog box can be implemented by setting tabs at positions 40, 44, and 48. This
+is illustrated below:
+
+    +------------+
+    |text     xxx|
+    |longer    xx|
+              ^^^
+              ||+- position 48
+              |+-- position 44
+              +--- position 40
+
+After determining the text to insert in the list box, convert the spaces to the
+appropriate number of tabs as the following code fragment demonstrates:
+
+      sprintf(szNumBuffer, "%3d", Number);
+      for (i = 0; i < 3; i++)
+
+        if (szNumBuffer[i] == ' ')
+           szNumBuffer[i] = '\t';
+
+This code uses the three tabs set above.
+
+There is a file in the Microsoft Download Center named RIGHTJUS that illustrates
+this convention.
+
+NOTE: This sample is applicable only to Windows 3.1, NOT to Win32.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   RightJus.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbCtrl kbListBox kbSDKPlatform kbGrpDSUser kbUser kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : :3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

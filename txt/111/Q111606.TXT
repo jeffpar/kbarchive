@@ -1,0 +1,66 @@
+DOCUMENT:Q111606  06-NOV-1999  [win16sdk]
+TITLE   :BUG: ROP2 Code Applied Incorrectly in Pie() Function
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When calling the Windows SDK function Pie() using a ROP2 code other than the
+default R2_COPYPEN, and using a pen with a width greater than 1 (one), you may
+notice that the pie border is not drawn correctly.
+
+CAUSE
+=====
+
+The pen position is applied incorrectly and overlaps part of the interior.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows version 3.1. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+For a demonstration of this bug, run the sample program SHOWGDI that comes with
+the Windows 3.1 SDK or with Microsoft Visual C++. Set the pen width to greater
+than 1 and make sure that the pen color and brush color are different. For
+example, set the pen width to 5 and the pen color to RGB(0,255,0). Set the brush
+color to RGB(255,0,255). Set the ROP2 code to R2_XORPEN and then draw a pie. You
+will see three color ranges. The pen position is applied incorrectly and
+overlaps part of the interior.
+
+Additional query words: buglist3.10 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,80 @@
+DOCUMENT:Q140576  24-MAR-2000  [foxpro]
+TITLE   :FIX: Backslash Alone in Menu Causes "Illegal Operation" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using a backslash alone as a menu prompt will cause the following error when the
+menu is previewed or run.
+
+   This program has performed and illegal operation and will be shut down.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft Visual
+FoxPro version 3.0b for Windows.
+
+MORE INFORMATION
+================
+
+If other characters are inserted before or after the backslash, no error occurs.
+If the backslash is the first character, the menu choice is disbled (grayed
+out). The error occurs only if the backslash is the only character.
+
+Steps to Reproduce Problem
+--------------------------
+
+The following example duplicates the error. Please exercise caution if you decide
+to run this because it causes Visual FoxPro to halt. Before running this
+example, you should close any open files or tables within Visual FoxPro and
+close any other open applications. This code is provided as an illustration
+only.
+
+1. Create a new menu named Pad1.
+
+2. Create a menu options under Pad1 named Test and \.
+
+3. Save the menu.
+
+4. Preview the menu, and on the Pad1 menu, click Test. The error occurs.
+
+5. Generate and run the menu. On the Pad1 menu, click Test again. The error
+   occurs.
+
+Additional query words: VFoxWin fixlist3.0b buglist3.00
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

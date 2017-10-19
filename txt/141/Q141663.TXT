@@ -1,0 +1,66 @@
+DOCUMENT:Q141663  30-OCT-1999  [pcmail]
+TITLE   :SMTP: Err Msg: Sockets 0116: TCP Access Failure by Sockets
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the SMTPGATE.EXE with the Microsoft TCP/IP 16-bit version, you
+may get the following error message:
+
+   Error: Sockets 0116:
+   TCP Access Failure by Sockets
+
+CAUSE
+=====
+
+If SOCKETS.EXE is loaded before all TCP/IP network drivers and TSRs, the above
+error message will be displayed.
+
+WORKAROUND
+==========
+
+During installation of TCP/IP, the SOCKETS.EXE is not added to the AUTOEXEC.BAT.
+The following entries must be in the AUTOEXEC.BAT:
+
+   LOAD TCPIP
+   SOCKETS
+
+NOTE: The above entries must be in the order shown above. Sockets must be after
+all other TCP drivers.
+
+All network TSRs and drivers must be loaded and network login must be completed
+before you start SMTPGATE.EXE.
+
+Additional query words: 3.00 sockets0116:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

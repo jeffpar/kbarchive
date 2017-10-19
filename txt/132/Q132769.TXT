@@ -1,0 +1,80 @@
+DOCUMENT:Q132769  17-DEC-2000  [win95x]
+TITLE   :Cannot Play Wave Files on HP Vectra with Sound Blaster
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to play 8-bit wave (.wav) files on a Hewlett-Packard (HP)
+Vectra computer with a Sound Blaster sound card installed. When this problem
+occurs, you can play 16-bit wave files and MIDI file correctly.
+
+CAUSE
+=====
+
+This problem can be caused by a resource conflict between the sound card and the
+ECP port. On the HP Vectra computer, the ECP port is configured in the
+computer's CMOS settings. If the ECP port is configured in the computer's CMOS
+settings to use DMA channel 1, and the Sound Blaster sound card is also
+configured to use DMA channel 1, a resource conflict exists. However, Windows 95
+cannot detect that the ECP port is using DMA channel 1, and does not report that
+a conflict exists.
+
+RESOLUTION
+==========
+
+To resolve the conflict, change the DMA channel for the sound card. To do so,
+follow these steps:
+
+1. Click the Start button, point to Settings, then click Control Panel.
+
+2. Double-click the System icon.
+
+3. On the Device Manager tab, double-click Sound, Video, And Game Controllers.
+
+4. Double-click the Sound Blaster sound card.
+
+5. On the Resources tab, click the Use Automatic Settings check box to clear it.
+
+6. Click Direct Memory Access in the Resource Type column, then click Change
+   Setting.
+
+7. Click OK until you are prompted to restart your computer, then click Yes.
+
+MORE INFORMATION
+================
+
+This problem occurs only on computers (such as the HP Vectra) that have an ECP
+port that is configured in the computer's CMOS settings.
+
+Additional query words: soundblaster hpvectra
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

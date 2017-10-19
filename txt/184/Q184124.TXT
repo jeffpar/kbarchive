@@ -1,0 +1,77 @@
+DOCUMENT:Q184124  09-AUG-2001  [winnt]
+TITLE   :Service Still Runs Although WinNT Prompts to Turn Off Computer
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Disk activity remains constant even though Windows NT Server or Workstation
+displays the following message:
+
+   It is now safe to turn off your computer.
+
+CAUSE
+=====
+
+This behavior can be caused by a service not properly notifying the Windows NT
+Service Control Manager (SCM) that it is still running. It is the service's
+responsibility to let the SCM know that it is still active. If the SCM is aware
+that a service is still pending shut down, it, by default, will wait 20 seconds
+before killing the service. If the service has incorrectly notified the SCM, the
+SCM may assume that the service has shut down.
+
+This behavior has been seen with virus-scanning software
+
+RESOLUTION
+==========
+
+As a workaround, verify that a scheduled scan is not due to run before you start
+the Shut Down procedure.
+
+MORE INFORMATION
+================
+
+For other services experiencing the problem, the amount of time that Windows NT
+waits for services to shut down can be increased using the
+WaitToKillServiceTimeout value name in the registry.
+
+For additional information on increasing the wait time, please see the following
+article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q146092
+   TITLE : How to Increase Shutdown Time For Services To Close Properly
+
+Additional query words: HD light flash flashes blink blinking blinks disk drive restart
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

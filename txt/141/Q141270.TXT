@@ -1,0 +1,59 @@
+DOCUMENT:Q141270  21-MAY-2001  [schedplus]
+TITLE   :Day Starts/Ends At Settings Rounded to 30 Minutes
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The working day (the hours between Day Starts At and Day Ends At) is limited to
+half-hour values, even though you can set the time to minute precision.
+
+CAUSE
+=====
+
+This is by product design.
+
+MORE INFORMATION
+================
+
+Even though users are able to set field values at minute increments, the Day
+Starts At and Day Ends At time will always round down to the closest half hour
+when minutes have been entered.
+
+For example, if you set the Day Starts At time between 9:01 A.M. and 9:29 A.M.,
+it the start time will reset to 9:00 A.M. If you set the Day Starts At time
+between 9:31 AM and 9:59 AM, it will reset the start time to 9:30 A.M. The same
+applies to the Day Ends At setting.
+
+Additional query words: 7.00 tools options set day
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

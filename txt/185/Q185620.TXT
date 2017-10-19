@@ -1,0 +1,59 @@
+DOCUMENT:Q185620  06-JAN-2001  [exchange]
+TITLE   :XCLN: Exchange Setup Appears To Hang Indefinitely With SQL
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03, on platform(s):
+    - the operating system: Microsoft Windows NT 
+ - Microsoft Outlook 98, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Setup program for Microsoft Exchange Client or Microsoft
+Outlook Client, the system may appear to hang indefinitely with no error message
+displayed. The Setup program appears to have almost completed.
+
+CAUSE
+=====
+
+SQL services are running and not allowing Mapi DLLs to be updated correctly.
+
+WORKAROUND
+==========
+
+Stop all SQL services in Control Panel Services before you begin installation of
+the client.
+
+Additional query words: 8.5
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

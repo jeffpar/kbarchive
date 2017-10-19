@@ -1,0 +1,57 @@
+DOCUMENT:Q67422  30-JUL-2001  [homegame]
+TITLE   :Flt Sim: Using Two Joysticks with CH Products GameCard III
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The GameCard III (automatic MCA) built by CH Products provides two joystick
+connectors. The top connector is A; the bottom connector is B. To use two
+joysticks with Flight Simulator, the two jumpers behind connector A must be
+removed.
+
+MORE INFORMATION
+================
+
+Each joystick (via connector) has an X and Y axis available to it. With both
+jumpers present, joystick A uses the Y axis of joystick B for throttle control.
+At this point, connector A is referred to as a "one and a half joystick," and
+the joysticks will interfere with each other and not operate correctly. Removing
+both of the jumpers behind connector A disables the throttle control on joystick
+A and allows normal use of both joysticks.
+
+An alternative way to use two joysticks without removing the jumpers is to use a
+Y-cable on connector A.
+
+For more information about the GameCard III, contact CH Products Customer Service
+at the following address and phone number:
+
+   CH Products
+   970 Park Center Drive
+   Vista, CA  92083
+   (619) 598-2518
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

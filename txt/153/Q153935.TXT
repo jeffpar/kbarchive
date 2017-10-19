@@ -1,0 +1,71 @@
+DOCUMENT:Q153935  09-AUG-2001  [winnt]
+TITLE   :Install May Fail for Programs Using REGEDIT4 on Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+NOTE: The information in this article applies to the 
+Traditional Chinese version(s) of Windows NT 3.51.
+
+
+SYMPTOMS
+========
+
+Windows NT Workstation 3.51 Traditional Chinese cannot recognize REGEDIT4
+registration file format. When you install a program that uses REGEDIT4 format,
+the message appears:
+
+   This is not a registration file, please provide the path to the file
+   [.REG] and try again
+
+CAUSE
+=====
+
+The version of Regedit.exe included with Window NT Workstation 3.51 Traditional
+Chinese does not work with REGEDIT4 format.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Traditional Chinese Windows NT
+Workstation/Server version 3.51.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+
+Additional query words: prodnt KBTRADCH
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

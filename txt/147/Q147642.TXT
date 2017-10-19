@@ -1,0 +1,64 @@
+DOCUMENT:Q147642  08-AUG-2001  [winnt]
+TITLE   :NetWare Files Overwritten When Updating To Windows NT 3.51 SP4
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run UPDATE.EXE in Windows NT 3.51 Service Pack 4 on the SYS volume of a
+NetWare server, some files in the \PUBLIC and \LOGIN directories are
+overwritten.
+
+
+WORKAROUND
+==========
+
+To work around this problem, do not connect to the root of the SYS volume. For
+example, do not connect to \\NetWare\SYS. Instead, connect to \\NetWare\SYS\I386
+(assuming that the Windows NT 3.51 Service Pack 4 files reside in I386).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 Service
+Pack 4. This problem was corrected in the latest Windows NT 3.51 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt gsnw csnw nwcs
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

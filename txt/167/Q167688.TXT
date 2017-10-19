@@ -1,0 +1,68 @@
+DOCUMENT:Q167688  09-AUG-2001  [winnt]
+TITLE   :"STOP 0x7B" on DEC Alpha Personal Workstation During Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51,4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the installation of Windows NT on a DEC Personal Workstation (A series),
+you may receive the following error message:
+
+   STOP 0x0000007B Inaccessible_Boot_Device
+
+CAUSE
+=====
+
+This error message can occur if an integrated drive electronics (IDE) device
+driver is not installed. The device driver required for IDE support on the DEC
+Personal Workstation is not included with Windows NT.
+
+RESOLUTION
+==========
+
+To resolve this issue, install the IDE device driver from the CMD CSA-64xx
+driver disk included with the accessories kit included with the DEC Personal
+Workstation, or contact Digital Technical Support for further information.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 500a 433a inaccessible boot device
+
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

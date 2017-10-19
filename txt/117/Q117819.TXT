@@ -1,0 +1,69 @@
+DOCUMENT:Q117819  09-DEC-1999  [homemm]
+TITLE   :Mac Cinemania 94: No Sound or Intermittent Sound When Running
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for the Macintosh 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Cinemania Demo requires at least 2.5 megabytes of free memory to run
+correctly. If you have less than 2.5 megabytes of memory available, the Demo may
+run without playing any sounds, or sound may cut out intermittently.
+
+WORKAROUND
+==========
+
+To work around this problem, do one or more of the following:
+
+ - In the Monitors control panel, set your color bit depth to 256 colors instead
+   of thousands or millions of colors. It takes more memory to run in thousands
+   or millions of colors.
+
+ - Don't start the Demo from inside Cinemania. Instead, exit from the
+   application and start the Demo from the Cinemania 1994 Demo alias located in
+   the Cinemania 1994 folder on your hard drive.
+
+ - Reconfigure your memory to make more available. You can do this by changing
+   your control panel memory settings, disabling INITs, and closing any other
+   applications that may also be running. You can check the About This Macintosh
+   dialog box under the Apple menu to make sure you have made enough memory
+   available.
+
+MORE INFORMATION
+================
+
+The Demo runs using the Macromedia Player. Because of the requirements of the
+Macromedia Player in certain configurations (especially under millions of
+colors), the Demo will occasionally need more memory to run.
+
+Additional query words: 1994 multi media multimedia multi-media demonstration movies films soundtrack audio clip run play mac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994Mac
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

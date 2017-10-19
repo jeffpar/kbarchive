@@ -1,0 +1,64 @@
+DOCUMENT:Q164562  31-JUL-2001  [sms]
+TITLE   :SMS: Changing SMS Database Account Name or Password
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbDatabase kbsmsAdmin smsadmin smshowto smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Problems may arise when you attempt to change the password to the SQL Server
+account accessing the Systems Management Server database within Systems
+Management Server Setup.
+
+MORE INFORMATION
+================
+
+Assuming that you are using a specific account within SQL Server, it is
+necessary to do the following:
+
+1. Create a new account in SQL Server and be sure to give it database owner
+   (DBO) privilege over the database.
+
+2. Change the account within Systems Management Server Setup to the new account.
+
+3. Change the password on the original account in SQL Server Enterprise Manager.
+
+4. Change Systems Management Server back to the original account with the new
+   password.
+
+Changing the account password in this manner will correct problems with Systems
+Management Server accessing its SQL Server database due to account and/or
+password mismatches.
+
+Additional query words: login logon id prodsms
+
+======================================================================
+Keywords          : kbnetwork kbDatabase kbsmsAdmin smsadmin smshowto smsdatabase 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q127779  27-JUL-2001  [visualc]
+TITLE   :FIX: Can't Set BreakPoint w/ Country Set to Non-English Locale
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbDebug kbidekbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Integrated Debugger, included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the "Number Format" setting under Windows NT is set to a setting that uses
+anything other than a period (.) as the decimal separator, it is not possible to
+set or clear breakpoints in the integrated debugger by pressing the F9 key or by
+clicking the breakpoint toolbar button.
+
+However, setting or clearing breakpoints in the breakpoint dialog works
+correctly.
+
+This problem most often occurs when the Country setting is set to a non-English
+locale in the International applet in the control panel. Changing the Country
+setting changes the Number Format setting.
+
+Many non-English countries, such as Germany and Denmark, use commas as decimal
+separators instead of periods.
+
+CAUSE
+=====
+
+The breakpoint syntax includes a period (.). Therefore, when the Country setting
+is set to some locales, invalid breakpoints are created when the period is
+replaced by another symbol such as the comma.
+
+RESOLUTION
+==========
+
+You can work around this problem by setting the "Number Format" setting to use
+the period (.) as the decimal separator. Note that changing the Country setting
+will change the "Number Format," so you'll need to make this change each time
+you change locales.
+
+You can also work around this problem by using the breakpoint dialog to set and
+clear breakpoints.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+32-bit Edition, version 2.2.
+
+Additional query words: 2.00 2.10
+
+======================================================================
+Keywords          : kbDebug kbide kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q79748  13-DEC-1999  [win95x]
+TITLE   :Windows 3.0 Accessories Create Files If No Extension Is Given
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a file in a Microsoft Windows 3.0 accessory program,
+the program looks for a file with the accessory's default extension. If the file
+cannot be found, the accessory asks you to insert a disk in drive A. If you
+choose the Cancel button, Windows asks if you want to create the file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows version 3.0. This
+problem does not occur in later versions of Windows.
+
+MORE INFORMATION
+================
+
+When you attempt to open a file in a Microsoft Windows 3.1 accessory program,
+the program first looks for a file with the accessory's default extension. Then
+it looks for the file with no extension. If none is found, it returns an error
+similar to the following:
+
+   
+
+   <filename.ext> Cannot find this file. Please verify that correct
+   filename and path are given.
+
+       OK
+
+If you choose OK, Windows returns to the File Open dialog box, thus allowing you
+to correct the filename.
+
+Additional query words: 3.00 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,51 @@
+DOCUMENT:Q78242  06-NOV-1999  [win16sdk]
+TITLE   :Help Does Not Support Side-by-Side Paragraphs
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows Help Compiler version 3.1 no longer supports the "side-by- side"
+paragraph format provided by Microsoft Word for MS-DOS and Microsoft Word for
+the Macintosh. This format was used in files compiled by version 3.0 of the
+Windows Help Compiler to create multiple columns of information.
+
+To create multiple columns in a file compiled with version 3.1 of the Help
+Compiler, use the Table feature provided by Microsoft Word for Windows.
+
+Help files that are authored using side-by-side paragraphs and compiled using
+version 3.0 of the Help Compiler will continue to be supported using version 3.1
+of Windows Help (the help file viewer).
+
+Additional query words: 3.00 no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,61 @@
+DOCUMENT:Q129912  08-AUG-2001  [winnt]
+TITLE   :IBM Thinkpad 720C Large Capacity Hard Disk Support
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.10 3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Windows NT on an IBM Thinkpad 720C computer with a
+large capacity hard disk (larger than 170 megabytes), the following error
+message appears:
+
+   Setup did not find any hard disk in your computer.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+The products discussed here are manufactured by IBM Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+the products' performance or reliability.
+
+Additional query words: prodnt 3.10 drive bios hcl
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.10 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

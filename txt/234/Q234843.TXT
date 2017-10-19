@@ -1,0 +1,170 @@
+DOCUMENT:Q234843  06-AUG-2002  [sna]
+TITLE   :RUI Application Receives Duplicate MSG10 Screen
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4,4.0,4.0SP1,4.0SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna40
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 3.0SP4, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+If an RUI application is configured to open several instances of pooled LUA
+sessions, SNA Server may receive a duplicate USSMSG10 (that is, VTAM Signon or
+"banner") or USSMSG7 (VTAM error) screen on the SSCP-LU session under certain
+timing conditions. This duplicate screen is then passed to the RUI application
+during normal session cleanup. Receiving the additional SSCP-LU message may
+cause problems for the application because it was not expecting to receive this
+information twice. The actual symptoms experienced are application-specific
+because it depends on how the application is designed.
+
+NOTE: This problem is not limited to RUI applications and may occur with any
+application that uses LUA or 3270 LU Pools.
+
+CAUSE
+=====
+
+While rapidly deactivating and activating a dependent session, the SNA Server
+may receive the host's USSMSG10 or USSMSG7 screen (intended for the previous
+user) after SNA Server has sent a NOTIFY(SLU Enabled) message to activate the
+session for the new user, along with another USSMSG10 screen for the new session
+activation. Because SNA Server actually receives two SSCP-LU messages from the
+host, the 3270 or LUA application receives both messages.
+
+At this time, there has only been one reported instance of this problem because
+under normal circumstances, a host does not send a USSMSG10 or USSMSG7 screen
+after receiving a NOTIFY(SLU Disabled) during session cleanup.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, click the following article number to view the
+article in the Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft SNA Server versions
+3.0, 3.0 SP1, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2. This problem was first
+corrected in SNA Server version 4.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+SNA Server returns an LU to its pool for subsequent session requests after it
+receives a NOTIFY(SLU Disabled) +RSP from the host in response to the NOTIFY(SLU
+Disabled) that it sent to inform the host that the session has been terminated
+by the application.
+
+To prevent the duplicate MSG10 signon screen problem from occurring, a new
+feature has been added to SNA Server to allow for a configurable delay before
+returning an LU to its pool for use after a NOTIFY(SLU Disabled) +RSP has been
+received.
+
+In addition to applying the updated binaries, the following registry entry has to
+be added to configure the amount of delay desired.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SnaServr\Parameters
+
+3. On the Edit menu, click Add Value, and then add the following registry value:
+
+   Value Name: SSCPDelay
+   Data Type: REG_DWORD
+   Value: <Delay in Seconds>
+
+4. Quit Registry Editor.
+
+The value entered is the time interval in seconds before an LU is released for
+reuse in the pool. This is a global parameter that affects all 3270 and LUA
+pools. If a five-second delay is specified, an LU will not be released for use
+until five seconds after SNA Server receives the NOTIFY(SLU Disabled) +RSP for
+this LU.
+
+The following scenario was observed in the one reported instance of this problem
+when using a multi-threaded RUI application:
+
+1. An application thread issues an RUI_TERM to terminate a host session. The
+   following shows the message flow between SNA Server and the host.
+
+          SNA Server                        Host
+
+          TRMSLF                ->
+                                <-          TRMSLF +RSP
+                                <-          UNBIND(Normal)
+          UNBIND +RSP           ->
+          NOTIFY(SLU Disabled)  ->
+                                <-          NOTIFY +RSP
+
+2. The RUI_TERM for this thread finishes.
+
+3. Another thread issues an RUI_INIT against the same LU Pool at approximately
+   the same time the first thread is issuing the RUI_TERM.
+
+          NOTIFY(SLU Enabled)   ->
+                                <-          MSG10 Screen
+                                <-          NOTIFY +RSP
+          +RSP                  ->
+                                <-          MSG10 Screen
+          +RSP                  ->
+
+For additional information about a similar problem using RUI applications
+receiving duplicate signon screens, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q107384 RUI Interface Enhancement to Avoid Duplicate Signon Screens
+
+NOTE: The INITDELAY parameter described in this article doesn't solve the problem
+when using LUA pools because another application or thread in the same
+application may still get in and observe this problem
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4,4.0,4.0SP1,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

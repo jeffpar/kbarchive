@@ -1,0 +1,89 @@
+DOCUMENT:Q142826  11-JAN-2001  [vbwin]
+TITLE   :BUG: DBGrid Does Not Paint Correctly When Aligned
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:4.00 | 4.00
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a form with a bottom-aligned data control and a bottom-aligned DBGrid
+control is resized vertically, the DBGrid control paints over a portion of the
+data control. This same behavior occurs when a bottom-aligned picture box
+replaces the data control.
+
+
+RESOLUTION
+==========
+
+Add the following line of code in the form's Resize event (which is called when
+the form is drawn initially and every time the form is resized):
+
+      <name of DBGrid control>.Refresh
+
+This causes the DBGrid control to repaint itself and not to obscure the data
+control (or picture box).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a issue in the Microsoft products listed at
+the beginning of this article. We are researching the situation and will post
+more information here in the Microsoft Knowledge Base when it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Visual Basic, or, if it is already running, click New Project on the
+   File Menu.
+
+2. Double-click on the data control button in the Toolbox to add a data control,
+   named Data1, to the project. Change the data control's Align property to '2 -
+   Align Bottom'.
+
+3. Double-click in the Toolbox, this time on the DBGrid control. Change the
+   DBGrid control's Align property to '2 - Align Bottom'.
+
+4. On the Run menu, click Start (ALT, R, S) or press F5 to run the application.
+
+5. Drag the bottom border of the form to resize the form, and notice how the
+   DBGrid control paints over the top of the data control. Adding
+   DBGrid1.Refresh alleviates the problem.
+
+Additional query words: 4.00 vb4win vb4all buglist4.00
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00 | 4.00
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,78 @@
+DOCUMENT:Q89873  11-SEP-1999  [winmisc]
+TITLE   :WSS Compatibility with Sound Boards and MS-DOS Applications
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows Sound System driver has limited compatibility with other sound
+boards.
+
+MORE INFORMATION
+================
+
+The Windows Sound System board is Adlib-compatible, which means that it only
+supports the FM synthesis used in games and other MS-DOS programs. It is also
+compatible with the SoundBlaster (Adlib-compatible model only).
+
+Using the Windows Sound System with MS-DOS Based Games
+------------------------------------------------------
+
+If an Adlib-compatible game does not recognize the Windows Sound System driver as
+Adlib-compatible at an MS-DOS command prompt, then try the game in MS-DOS after
+restarting the computer, but before running Windows. The Yamaha OPL3 synthesis
+chip has a incompatible mode that may have been set; restarting the computer
+clears this mode.
+
+If the game still doesn't recognize the Windows Sound System driver, then the
+game either does not support Adlib sound cards or has an incorrect interaction
+with the OPL3 synthesis chip. To resolve this problem, contact the game
+manufacturer.
+
+There is no software volume control for MS-DOS programs using Adlib
+compatibility; you may have to turn down your stereo or headphones when running
+a game. Windows cannot adjust the volume because the game takes over control of
+the Yamaha OPL3 chip, which prevents the Windows driver from adjusting the
+volume control.
+
+MIDI Control in Enhanced Mode
+-----------------------------
+
+If you run Windows 3.1 in enhanced mode, MIDI playback may not work after you
+play an Adlib-compatible game from the MS-DOS command prompt while the command
+prompt is still running. To prevent a conflict when the Yamaha OPL3 synthesis
+chip is used, the command prompt (virtual machine) prevents other virtual
+machines from accessing the I/O ports. The I/O ports are locked until you exit
+the command prompt that is using the Windows Sound System.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

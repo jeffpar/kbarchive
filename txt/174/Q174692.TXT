@@ -1,0 +1,76 @@
+DOCUMENT:Q174692  27-JUN-1999  [exchange]
+TITLE   :OLE Objects Don't Display Correctly on Macintosh Clients
+PRODUCT :Microsoft Exchange
+PROD/VER:MACINTOSH:8.0; WINDOWS:4.0,5.0; winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to view an embedded OLE object in the Macintosh client that
+originated from a Windows client, you do not see the object or you see an object
+with question marks.
+
+WORKAROUND
+==========
+
+Attempt to send the graphic as an attachment to the message. When the message is
+opened on the Macintosh client, you may be able to open the image.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange client for
+the Macintosh versions 4.0 and 5.0 and for the Microsoft Outlook client for the
+Macintosh version 8.0.
+
+MORE INFORMATION
+================
+
+This is a current limitation of OLE between Windows and the Macintosh. Bitmap
+images are native to Windows environments and not to the Macintosh.
+
+The following information is taken from the Exchange Server 5.0 Macintosh Release
+Notes, section 1.10:
+
+   When sending messages containing embedded OLE objects between Windows and
+   Macintosh platforms, the embedded object may not display correctly when you
+   open the file.
+
+Additional query words: cut copy
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchange550 kbExchangeClientSearch kbZNotKeyword2 kbOutlookMacSearch kbExchange500Mac kbExchange400Mac kbOutlook800Mac
+Version           : MACINTOSH:8.0; WINDOWS:4.0,5.0; winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

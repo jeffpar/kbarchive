@@ -1,0 +1,68 @@
+DOCUMENT:Q138952  24-MAR-2000  [foxpro]
+TITLE   :FIX: Calling AMEMBERS() w/ Invalid Parameter Creates an Array
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Passing an invalid argument to the AMEMBERS() function causes an error "Variable
+<<VariableName>> is Not Found," returns no value, and creates a
+single-element array with a Logical value of False.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Run the following code in the Command window:
+
+      Release All
+      ? AMEMBERS( laMbrs, oTest )
+      Discard the "Variable 'oTest' is Not Found" error dialog that comes up
+      Disp Memo Like *
+
+Notice that a single-element array is created even though the object name (oTest)
+is invalid.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

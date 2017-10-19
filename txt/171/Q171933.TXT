@@ -1,0 +1,69 @@
+DOCUMENT:Q171933  01-APR-2000  [sna]
+TITLE   :SNA Server 3.0 Appears to Ignore APPC Mode Priority Setting
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run APPC applications which use APPC modes, the applications still seem
+to be handled with the same priority regardless of whether the High Priority
+check box is selected.
+
+CAUSE
+=====
+
+The SNA Server 3.0 Manager program saves the APPC mode parameter incorrectly,
+which causes the High Priority parameter to be ignored by SNA Server.
+
+
+RESOLUTION
+==========
+
+There is no workaround for this problem. A hotfix to SNA Server 3.0 (post SP1)
+is available to correct this problem. The updated module is Snacfg.dll.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 3.0 and 3.0 Service
+Pack 1 (SP1). This problem was corrected in the latest SNA Server version 3.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

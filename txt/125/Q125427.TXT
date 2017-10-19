@@ -1,0 +1,64 @@
+DOCUMENT:Q125427  29-NOV-1999  [homekids]
+TITLE   :Writer: Rebus Pictures Don't Print on ImageWriter
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for the Macintosh, version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your Creative Writer document contains pictures created with the Rebus tool,
+the pictures may not print on an ImageWriter printer. All the text prints,
+leaving gaps where the pictures should appear.
+
+WORKAROUND
+==========
+
+If you are using Macintosh Operating System 7.5, you can install QuickDraw GX,
+and the QuickDraw GX ImageWriter driver, which prints the Rebus objects
+correctly on the ImageWriter.
+
+MORE INFORMATION
+================
+
+This problem occurs if you are using Creative Writer version 1.1 on CD-ROM. This
+problem does not occur with Creative Writer 1.0, which is available on disk.
+
+Microsoft has confirmed this to be a problem in Creative Writer version 1.1 for
+the Macintosh. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+If you select the Transformer tool, the Rebus tool is the Apple, located between
+the Secret Agent and Text Wrap Tools.
+
+
+Additional query words: mac kids image writer gone missing quick mczee draw mskids iw picture graphic graphics adder
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac
+Version           : MACINTOSH:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

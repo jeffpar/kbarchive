@@ -1,0 +1,62 @@
+DOCUMENT:Q275665  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator: Cannot Use Numeric Keypad to Control Aircraft
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Flight Simulator 98 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to control your aircraft by using the numeric keypad in one of
+the programs listed at the beginning of this article, the view from the aircraft
+may change when you press a key.
+
+NOTE: In addition, pressing the numeric keypad no longer displays a Map view in
+Microsoft Combat Flight Simulator 2.
+
+CAUSE
+=====
+
+This behavior can occur if the state of the NUM LOCK key is off.
+
+RESOLUTION
+==========
+
+To resolve this issue, press the NUM LOCK key to toggle the state of the key and
+activate the numeric keypad.
+
+Additional query words: msgame flightsim fsim combatfs cfs numbers key pad
+
+======================================================================
+Keywords          : kbui kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbFlightSimSearch kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

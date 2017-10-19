@@ -1,0 +1,55 @@
+DOCUMENT:Q113014  09-DEC-1999  [homemm]
+TITLE   :Bookshelf: QuickShelf/QuicKeys Misses Some Keystrokes
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1993 edition,1994 edition
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows versions 1993 edition, 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+QuickShelf in Bookshelf 1994 or QuicKeys in Bookshelf 1993 may miss some
+keystrokes. For example, when you use a QuicKey combination to look up a item,
+you may need to type the key combination twice before Bookshelf gets activated.
+It may also take more than one attempt to restore QuickShelf or QuicKeys with a
+quick key combination if you have minimized it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Bookshelf 1993 and 1994
+editions. This problem was corrected in the 16-bit version of Bookshelf, 1995
+edition.
+
+NOTE: Microsoft Bookshelf 95 for Windows 95 (32-bit) does not use QuicKey
+combinations; this problem does not apply.
+
+Additional query words: 1994 multi media multimedia multi-media bshelf qshelf quick shelf 1993 quickkey quickey quickkeys
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1993 kbBookShelf1994
+Version           : :1993 edition,1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

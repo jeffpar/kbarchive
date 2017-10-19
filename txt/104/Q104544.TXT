@@ -1,0 +1,67 @@
+DOCUMENT:Q104544  21-NOV-1999  [msdos]
+TITLE   :Cannot Uncompress Some Floppy Disks Without Removing Data
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+If you compress a floppy disk and immediately try to uncompress the disk, you may
+receive the following error message:
+
+   DoubleSpace cannot uncompress drive <letter> because there is not
+   enough space on drive <host letter> to hold all of the uncompressed
+   files.
+
+   To uncompress drive <letter>, you must remove at least <xxx,xxx>
+   bytes of files from either drive.
+
+CAUSE
+=====
+
+This occurs because DoubleSpace is very conservative in estimating the space
+required to hold the uncompressed files. The estimate is based in part on a
+worst-case scenario in which the data on the floppy disk is stored at a 16:1
+compression ratio and DoubleSpace must convert the drive from a 16-bit file
+allocation table (FAT) to a 12-bit FAT.
+
+RESOLUTION
+==========
+
+To work around this problem, remove <xxx,xxx> bytes of data from either
+the compressed drive or the host drive.
+
+Additional query words: 6.20 diskette
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

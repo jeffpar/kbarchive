@@ -1,0 +1,84 @@
+DOCUMENT:Q226810  22-OCT-2000  [sms]
+TITLE   :Can't Type Backward Slash in Remote Control w/German Keyboard
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the German keyboard character set, you are unable to enter a
+backward slash character (\) during a remote control session.
+
+CAUSE
+=====
+
+You have not enabled the System Key Pass-through option for your remote control
+session, or you are unaware of the key sequence required to produce the backward
+slash character when using the German language keyboard set.
+
+
+WORKAROUND
+==========
+
+To work around this problem, follow these steps:
+
+1. Establish a remote control session with the client computer.
+
+2. Click the "System Key Pass-through" button, which is the fourth button from
+   the left on the right side of the remote control window.
+
+3. On the remote client, click Start, and then click Run.
+
+4. With the cursor in the Open box, type the following keys in sequence, holding
+   them down until the last key is pressed:
+
+           CTRL  +  ALT  +   hyphen
+
+MORE INFORMATION
+================
+
+When working with keyboards set to languages other than U.S. English, the keys
+may not map to the characters printed on them. To find the key combination
+required to produce a character, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. Type "Char map.Exe" (without the quotation marks) in the Open box to start
+   the Character Map.
+
+3. Click the character you are trying to enter, and note the key sequence
+   required to produce that character; the key sequence is displayed in the
+   lower right pane of the Character Map window.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,363 @@
+DOCUMENT:Q175625  03-DEC-1999  [foxpro]
+TITLE   :FILE: TopClose.exe Closes Child Forms of Top-Level Forms
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbfile kbsample kbOOP kbvfp500 kbGrpDSFox
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One of the sample project files for this article provides an example of a way to
+close a Top-Level form and have the user prompted to close each child form.
+Another sample project file shows a way to try to do this that does not work.
+Still another sample project file shows a way to accomplish the task that almost
+works or will work in limited circumstances. The following files are available
+for download from the Microsoft Download Center:
+
+   Topclose.exe
+   (http://download.microsoft.com/download/vfox60/sample8/1/W9X/EN-US/Topclose.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro 5.0, forms can be set to show as Top-Level forms. Other child
+forms can be opened in the Top-Level form. This article will discuss a way to
+close the Top-Level form and have the user prompted for saving changes to any
+child forms contained in the Top-Level form. The solution presented will work
+the best in Visual FoxPro 5.0a and only partially in Visual FoxPro 5.0 or later
+due to changes in how the QueryUnload method is called.
+
+Note that the solution presented here is not necessarily the only way to handle
+this situation. More sophisticated schemes can be developed. In fact, this
+article does not consider the case of Windows being exited with the application
+running.
+
+Also note that the scenario presented here is fairly complex. Microsoft Product
+Support Engineers will not know all the issues presented in this article without
+spending some time working with the sample files. Please remember this if asking
+questions on the enclosed files.
+
+Additional Information
+----------------------
+
+The following files are included in this article and are used in the discussion
+that follows:
+
+The TopClose.exe should extract into three folders, TopClose\Almost, TopClose\Bad
+and TopClose\Good.
+
+Contents of TopClose\Almost:
+
+ - Almost.app
+
+ - Almost.pjx
+
+ - Almost.pjt - These are the application file and the project files from which
+   it was made.
+
+ - Almost.scx
+
+ - Almost.sct - The form files for the main Top-Level form.
+
+ - Almost.mnx
+
+ - Almost.mnt - The menu that is placed in the Top-Level form, Almost.scx.
+
+ - Almost.prg - The main program in the project.
+
+ - AlmostBlue.scx
+
+ - AlmostBlue.sct
+
+ - AlmostGreen.scx
+
+ - AlmostGreen.sct
+
+ - AlmostRed.scx
+
+ - AlmostRed.sct - The form files for the child forms of the Top-Level form.
+
+Contents of TopClose\Bad:
+
+ - Bad.app
+
+ - Bad.pjx
+
+ - Bad.pjt - These are the application file and the project files from which it
+   was made.
+
+ - Bad1.scx
+
+ - Bad1.sct - The form files for the main Top-Level form.
+
+ - Bad1.mnx
+
+ - Bad1.mnt - The menu that is placed in the Top-Level form, Bad1.scx.
+
+ - Bad1.prg - The main program in the project.
+
+ - BadBlue.scx
+
+ - BadBlue.sct
+
+ - BadGreen.scx
+
+ - BadGreen.sct
+
+ - BadRed.scx
+
+ - BadRed.sct - The form files for the child forms of the Top-Level form.
+
+Contents of the TopClose\Good:
+
+ - Good.app
+
+ - Good.pjx
+
+ - Good.pjt - These are the application file and the project files from which it
+   was made.
+
+ - Good1.scx
+
+ - Good1.sct - The form files for the main Top-Level form.
+
+ - Good1.mnx
+
+ - Good1.mnt - The menu that is placed in the Top-Level form, Good1.scx.
+
+ - Good1.prg - The main program in the project.
+
+ - GoodBlue.scx
+
+ - GoodBlue.sct
+
+ - GoodGreen.scx
+
+ - GoodGreen.sct
+
+ - GoodRed.scx
+
+ - GoodRed.sct - The form files for the child forms of the Top-Level form.
+
+To use the sample files, follow these instructions:
+
+1. Set the Visual FoxPro working folder to either TopClose\Bad TopClose\Almost
+   or TopClose\Good. Use the File Locations tab of the Tools menu, Options
+   dialog box or use the SET DEFAULT TO command in the Command window. For
+   example, if the TopClose folder is on the C:\ drive:
+
+   SET DEFAULT TO c:\TopClose\Bad
+
+2. If the default folder is set to TopClose\Bad, DO Bad.app. If the default
+   folder is set to TopClose\Good, DO Good.app or Almost.app if the default is
+   TopClose\Almost.
+
+3. The forms in each application can be run as many times as desired. For
+   instance, two or three copies of the GoodRed form can be run. When a form is
+   run more than once, it will come up in the same place so be sure to move a
+   form after running it once if it is going to be run again. Otherwise, it
+   won't be obvious that it is there more than once.
+
+4. If the process of running the Almost application, rebuilding it and running
+   it again is repeated a few times, this may cause Visual FoxPro to
+   unexpectedly quit. This is currently under investigation. The application
+   termination seems to always happen during the building of the application and
+   should not effect the running application. Another problem that may occur is
+   that a "phantom" copy of the Top-Level form may also be noticed on the
+   Windows Taskbar for each time the application is run in the development
+   environment. Although this appears as a problem in the Visual FoxPro
+   development environment, no problems have been observed if the project is
+   built into an executable file and it is run as a stand-alone executable and
+   the Top-Level form is the main form in the executable's interface. If the
+   Top-Level form is only one part of an executable, the method of closing the
+   child forms illustrated in Good.app should be used. The executable also has
+   problems if run under the development environment. That is why this version
+   of the application is named "almost." It almost works.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q175682 PRB: VFP Crashes When Working With Top-Level and Child Forms
+
+Discussion Of Sample Files' Behavior
+------------------------------------
+
+Normally the QueryUnload method can be used in a form to determine if a form is
+ready to be closed. The Online Help for Visual FoxPro states that it "...occurs
+when CLEAR WINDOWS, RELEASE WINDOWS, or QUIT is executed in code, when the user
+double-clicks the Control-menu box, or when the user chooses Close from the
+Control-menu on a form." If the form is contained in a Top-Level form and the
+Top-Level form is closed as described above, the QueryUnload method of any child
+forms does not behave as expected.
+
+In Visual FoxPro 5.0 or later, the QueryUnload method of child forms is executed
+before the QueryUnload of the Top-Level parent form. This is reversed in Visual
+FoxPro 5.0a. Here the QueryUnload of the Top-Level parent form is executed
+before the child forms' QueryUnload. Therefore the main difference between how
+the two versions behave is that Visual FoxPro 5.0a will ask if the Top-Level
+form is ready to be closed while Visual FoxPro 5.0 will not. This is because the
+code that asks this question is in the QueryUnload method of the Top-Level form
+that is not executed in Visual FoxPro 5.0 or later.
+
+In either case, if the child forms are not closed or NODEFAULT is not encountered
+in the QueryUnload of the Top-Level form, the user is essentially stuck in an
+endless loop getting asked if it is OK to close each child form. This will only
+stop if there is only one child form left. Run the Bad.app to see this
+illustrated. There are instructions on the main Top-Level form for what to do to
+illustrate the problem.
+
+What seems to be the best way to handle this situation is to put code in the
+QueryUnload methods of both the Top-Level form and the child forms. If the
+QueryUnload method in the Almost.scx form is reviewed, it would appear that this
+should be all that is necessary to close the child forms. Unfortunately, due to
+what appears to be a bug in Visual FoxPro, this technique cannot be used in all
+circumstances. Only if the Top-Level form is the main and only interface for a
+distributed executable file does this technique seem not to cause problems.
+
+Whether using the technique in the Good.app or the Almost.app(not really
+recommended), additional code can be placed in the QueryUnload methods of the
+child forms in case they are closed by their control boxes. Below is the
+QueryUnload method code from the Top-Level form and one of the child forms in
+the Good.app example. Also review the code in the actual form's methods and the
+other files in the project:
+
+   *** QueryUnload of Good Top-Level form
+
+      LOCAL lAllClosed, lFormOpen
+      lAllClosed=.T.
+      lFormOpen=.F.
+      LOCAL xx
+      xx=_Screen.FormCount
+
+      * The CloseBox or Close command in the application menu was chosen
+      IF This.ReleaseType=1
+         IF MESSAGEBOX(;
+            "Are you ready to close this top-level form?",36,;
+            "QueryUnload of "+THIS.Caption) = 7
+            NODEFAULT
+            lAllClosed=.F.
+            RETURN lAllClosed
+         ENDIF
+      ENDIF
+
+      * The Quit menu option was chosen
+      IF This.ReleaseType=0 AND xx>1
+
+         IF MESSAGEBOX(;
+            "Are you ready to close this top-level form?",36,;
+            "QueryUnload of "+THIS.Caption) = 7
+            NODEFAULT
+            lAllClosed=.F.
+            RETURN lAllClosed
+         ENDIF
+      ENDIF
+
+      * Attempt to close all active forms via each form's QueryUnload event
+         DO WHILE TYPE('_SCREEN.ACTIVEFORM') = "O" AND ;
+                     _SCREEN.ACTIVEFORM.NAME <> "_"
+               IF NOT _SCREEN.ACTIVEFORM.QUERYUNLOAD()
+                     lAllClosed = .F.
+                     NODEFAULT
+                     EXIT
+               ENDIF
+            ENDDO
+      RETURN lAllClosed
+      *** End of QueryUnload of Good Top-Level form **********************
+
+      *** QueryUnload of a Child form - either the GoodRed or GoodGreen.scx
+
+      LOCAL x,xx,ans,cTopLevelCaption
+      * Getting the caption of the Top-Level form to use in dialog boxes
+      xx = _SCREEN.FormCount
+      FOR x = 1 TO xx
+         IF _SCREEN.FORMS[x].NAME = "_"
+            cTopLevelCaption = _SCREEN.FORMS[x].Caption
+            EXIT
+         ENDIF
+      ENDFOR
+      ******
+
+      * Optionally save changes before closing the form
+      ans = MESSAGEBOX(;
+
+            "Do you want to save changes to the "+CHR(13)+;
+            THIS.Caption+"?",35,cTopLevelCaption)
+      DO CASE
+         CASE ans = 6   && Yes
+            WAIT WINDOW "Changes saved" TIMEOUT 1
+         CASE ans = 7   && No
+            WAIT WINDOW "Changes NOT saved" TIMEOUT 1
+         CASE ans = 2   && Cancel
+            * Abort closing this form
+            NODEFAULT
+            * Return to calling program
+            RETURN .F.
+      ENDCASE
+      THIS.RELEASE && if QueryUnload called as a method
+
+Run the Good.app in Visual FoxPro 5.0a to see the code above in action. In the
+Good.app example, Visual FoxPro 5.0 and 5.0a behave the same way if the Quit
+menu option is chosen. Quit calls the QueryUnload method of the Top-Level form
+and if that returns true(.T.) then the Top-Level form is released and CLEAR
+EVENTS is issued. Note that the Destroy method of the Top-Level form issues a
+CLEAR EVENTS.
+
+There is a difference between Visual FoxPro 5.0 and 5.0a if the CloseBox is used
+to close the Top-Level form when the child forms are open. In Visual FoxPro 5.0,
+the GoodRed and GoodGreen forms are closed since they don't have anything in
+their QueryUnload methods to prevent that. The GoodBlue form has code in its
+QueryUnload method that can be used to keep the form from closing. But if two
+instances of the GoodBlue form are running, answering "No" when prompted to
+close will put Visual FoxPro into the same endless loop illustrated in Bad.app.
+This happens with both the Almost.app and Good.app in Visual FoxPro 5.0 or
+later. This does not happen in Visual FoxPro 5.0a with either application.
+
+REFERENCES
+==========
+
+Visual FoxPro Help; search on ShowWindow property and QueryUnload method.
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by John W. Spilker, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbfile kbsample kbOOP kbvfp500 kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

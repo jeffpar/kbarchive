@@ -1,0 +1,71 @@
+DOCUMENT:Q131596  08-NOV-2001  [homemm]
+TITLE   :MAC ANCIENT LANDS: Movies Look Hazy and Washed Out
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Ancient Lands for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view a movie, colors appear to fade out, and then the movie looks hazy.
+
+CAUSE
+=====
+
+Your computer monitor is probably set for 256 colors. The movies appear sharper
+if you set your monitor for greater than 256 colors.
+
+RESOLUTION
+==========
+
+To change you monitor's color settings, do the following:
+
+1. From the Apple menu, choose Control Panels.
+
+2. Click Monitors.
+
+3. Select a setting greater than 256 colors.
+
+4. Close the Control Panel.
+
+MORE INFORMATION
+================
+
+Section 4 of the Ancient Lands ReadMe file states:
+
+Ancient Lands will run on any 256-color, 640x480 (13-inch) or higher resolution
+Macintosh compatible monitor, although the movies look and perform best in
+"Thousands of colors."
+
+For more information about monitor settings, see the Ancient Lands ReadMe file.
+
+Additional query words: mac multi media multimedia multi-media mmtitles kbmm funny color video clip movie blurred blurry faded fading washed washed-out
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbAncientLandsMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

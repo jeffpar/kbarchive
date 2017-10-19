@@ -1,0 +1,77 @@
+DOCUMENT:Q196542  14-NOV-2000  [word97]
+TITLE   :WD97: Edit Find/Replace Doesn't Find Text Formatted as All Caps
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You cannot find or replace All Caps text. This problem occurs when you created
+the uppercase text by one of the following methods:
+
+ - You typed the uppercase text with the CAPS LOCK key on.
+
+   -or-
+
+ - You used the Change Case command on the Format menu to change the text to
+   uppercase.
+
+   -or-
+
+ - You used SHIFT+F3 to change the case of your text.
+
+CAUSE
+=====
+
+By design in Microsoft Word, when you search for uppercase text by selecting the
+All Caps effect in the Find Font dialog box, only text you formatted with the
+All Caps option is found. (To locate the All Caps option, click Font on the
+Format menu, click the Font tab, and see All Caps under Effects.)
+
+By design, All Caps formatting affects only lowercase characters. It does not
+affect uppercase letters, numbers, punctuation, or other non-alphabetic
+characters. All Caps formatting does not change the ASCII value of the
+characters. By contrast, when you use the Change Case command, SHIFT+F3, or CAPS
+LOCK, you are changing the case as well as the ASCII value of the characters.
+Lowercase characters have different ASCII values than uppercase characters.
+
+WORKAROUND
+==========
+
+Type the uppercase text you are searching for in the Find What box of the Find
+or Replace dialog box, and click to select the Match Case check box. Do not
+select All Caps.
+
+Additional query words: uppercase upper case capital letters capitals
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

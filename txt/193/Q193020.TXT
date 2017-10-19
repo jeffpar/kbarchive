@@ -1,0 +1,73 @@
+DOCUMENT:Q193020  11-JAN-2001  [vbwin]
+TITLE   :INFO: PDW [Do Not Redistribute] Section of VB6DEP.INI
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A new section named [Do Not Redistribute] has been added to the VB6Dep.ini file
+that is used by the Package and Deployment Wizard (PDW) to build a Visual Basic
+6.0 application distribution set.
+
+MORE INFORMATION
+================
+
+The following kinds of files are listed under the new section:
+
+ - Files that are not needed at run-time and have no dependencies of their own.
+
+   -and-
+
+ - Files that cannot be redistributed by the PDW due to Microsoft redistribution
+   policy. For example, the Microsoft Internet Controls (Shdocvw.dll) cannot be
+   distributed using the PDW.
+
+When the PDW creates a distribution set for a Visual Basic 6.0 application, it
+checks VB6Dep.ini for any dependency of the files that are included in the set.
+It will specifically exclude the files listed under the [Do Not Redistribute]
+section when building the set.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q191692 : PRB: SHDOCVW.DLL Not Included in PDW Setup Package
+
+   Q192136 : PRB: PDW Does Not Include MSAddndr.DLL for Add-in Projects
+
+Additional query words: kbdss kbDSupport kbVBp kbVBp600 kbWizard kbAppSetup
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

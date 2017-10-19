@@ -1,0 +1,48 @@
+DOCUMENT:Q116347  09-DEC-1999  [homemm]
+TITLE   :Mac Bookshelf: One Message When Toggling QuickShelf On and Off
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for the Macintosh 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Control Panel and disable QuickShelf, a message appears stating that
+you need to restart your Macintosh to make the change take effect. However, if
+you go back and enable QuickShelf again before restarting, you will not receive
+the message a second time. This message only appears the first time you toggle
+QuickShelf on or off during a particular work session.
+
+If you ultimately do change the QuickShelf setting from what it was originally,
+you must restart your system for the change to take effect.
+
+Additional query words: mac 1994 multi media multimedia multi-media bs book shelf quick turn
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1994Mac
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

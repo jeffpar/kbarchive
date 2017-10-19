@@ -1,0 +1,66 @@
+DOCUMENT:Q231859  09-NOV-2001  [homegame]
+TITLE   :Midtown Madness: Game Is Not Recognized on Zone.com
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Midtown Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start a multiplayer game of Microsoft Midtown Madness on
+Zone.com, the Zone may not recognize that Midtown Madness is installed on your
+computer.
+
+CAUSE
+=====
+
+This behavior can occur if the current version of Microsoft DirectX is not
+installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the Microsoft DirectPlay 6.1a
+Upgrade from the following Microsoft Web site:
+
+   http://www.microsoft.com/games/midtown/patch.htm
+
+MORE INFORMATION
+================
+
+Midtown Madness is a copy-protected product. Copy-protected products require the
+updated version of DirectPlay included with DirectX 6.1a to be compatible with
+multiplayer gameplay on Zone.com.
+
+Additional query words: 1.00 msgame msngz direct-x mid-town midmad
+
+======================================================================
+Keywords          : kbenv kbimu msgame kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMidtownMadSearch kbMidtownMadness
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

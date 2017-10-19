@@ -1,0 +1,73 @@
+DOCUMENT:Q318323  28-FEB-2002  [iis]
+TITLE   :PRB: Empty Cache Statistics Using Index Server Admin Page
+PRODUCT :Internet Information Server
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Index Server Web Admin page, which is located at
+http://localhost/iisadmin/isadmin, all of the cache statistics return with a
+value of 0.
+
+For example:
+
+   Administration - Index Statistics 
+
+      Cache Statistics 
+      # Active queries: 0  % Hits: 0 
+      # Cached queries: 0  % Misses: 0 
+      # Pending queries: 0  Total queries: 0 
+      # Rejected queries: 0  Queries / minute: 0 
+
+      Index Statistics 
+      Total documents: 1,615  # Documents filtered: 181 
+      Total size (MB): 2  # Documents pending: 0 
+      # Persistent Indexes: 5  # Documents changed: 59 
+      # Wordlists: 0  # Directories to be scanned: 0 
+      # Unique keys: 21,746  # Queries executed: 1 
+
+      All filtering is complete. Index is up to date.
+
+MORE INFORMATION
+================
+
+These cache statistics only apply to Internet Data Query (IDQ) queries. To
+obtain a combined query count for all query mechanisms, use the following Index
+Server Performance Monitor counter:
+
+   Total # of queries
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : :2.0,3.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,65 @@
+DOCUMENT:Q95871  02-NOV-1999  [win95x]
+TITLE   :Display Dims on Leading Edge Laptops with Phoenix BIOS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The built-in Backlight screen feature on Leading Edge Laptop computers with
+Phoenix BIOS causes the display to dim when Windows is running. The screen
+cannot be restored without running MS-DOS Prompt or exiting Windows and pressing
+any key.
+
+MORE INFORMATION
+================
+
+Some Leading Edge Laptop computers have a Backlight screen feature built into
+the Phoenix BIOS. The screen feature acts like a screen saver and is designed to
+clear the screen after a specific amount of idle time.
+
+Under Windows, the screen saver does not clear the screen; instead, the contrast
+dims. Windows can still be faintly seen. The only way to restore the screen is
+to exit Windows or run MS-DOS Prompt and press any key. This happens in all
+modes of Windows.
+
+The only way to disable the screen saver is through CMOS Setup. On the Leading
+Edge machine the feature is called Backlight Duration. The duration can be set
+from 1 to 30 minutes or to Forever. The Forever setting disables the Backlight
+screen saver feature.
+
+The Leading Edge product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 3.11 gray grey dimmed light screensaver back 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

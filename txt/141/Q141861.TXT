@@ -1,0 +1,65 @@
+DOCUMENT:Q141861  16-APR-2000  [powerpt]
+TITLE   :Asian Characters Are Lost in Translation
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:4.0,7.0; :4.0,7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft Japanese PowerPoint for Japanese Windows, version 4.0 
+ - Microsoft Japanese PowerPoint for Japanese Windows 95, version 7.0 
+ - Microsoft Chinese PowerPoint for Chinese Windows, version 4.0 
+ - Microsoft Chinese PowerPoint for Chinese Windows 95, version 7.0 
+ - Microsoft Korean PowerPoint for Korean Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you open a presentation created in a Japanese, Chinese, or Korean version
+of PowerPoint (hereinafter referred to as Asian PowerPoint), all the Asian
+characters are changed to special characters or symbols. Also, you may receive
+the following error message in PowerPoint 7.0 when opening an Asian PowerPoint
+presentation:
+
+   This presentation may contain non-displayable text and formats from the Far
+   East.
+
+
+CAUSE
+=====
+
+The Asian versions of PowerPoint use a double-byte font set that cannot be used
+in the non-Asian versions of PowerPoint. When a non-Asian version of PowerPoint
+opens an Asian file, these fonts are translated into symbols, because there is
+no matching font set.
+
+Additional query words: lost gone missing symbol junk garbage jumbled oriental kanji eastern far east kbconvert ppt97 8.0
+
+======================================================================
+Keywords          :  
+Technology        : kbHLangKorean kbHLangJapanese kbHLangChinesePan kbHLangChineseSimp kbHLangChineseTrad kbPowerPtSearch kbPTProdChange kbPowerPt700 kbZNotKeyword2 kbZNotKeyword3 kbPowerPt700Search kbPowerPt400
+Version           : WINDOWS:4.0,7.0; :4.0,7.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

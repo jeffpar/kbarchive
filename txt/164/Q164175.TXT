@@ -1,0 +1,65 @@
+DOCUMENT:Q164175  22-OCT-2000  [exchange]
+TITLE   :XADM: Message Tracking Doesn't Track IMC-bound Mail
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use Message Tracking to track messages sent out over the
+Internet Mail Connector (IMC) in Exchange Server 4.0 or the Internet Mail
+Service in Exchange Server 5.0 and later, no tracking information can be found.
+
+CAUSE
+=====
+
+This problem can occur if you use the Standard Edition of Exchange Server.
+
+RESOLUTION
+==========
+
+To enable Message Tracking for outbound IMC or Internet Mail Service messages if
+you use the Standard Edition of Exchange Server, you must install the Microsoft
+Exchange Connector (Site Connector) component. When you do this, the message
+transfer agent (MTA) object is exposed in the specific Server's container, and
+you can enable Message Tracking on the MTA's general property page in the
+Exchange Server Administrator program. This allows you to track inbound and
+outbound messages over the IMC and Internet Mail Service.
+
+NOTE: You do not need to actually create a site connector after you install the
+Connector Pack. When you install the connector, you enable message tracking on
+the IMC or Internet Mail Service.
+
+
+Additional query words: tracked
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

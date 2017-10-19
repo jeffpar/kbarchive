@@ -1,0 +1,66 @@
+DOCUMENT:Q169998  09-JAN-2000  [exchange]
+TITLE   :XCON: ISOCOR MTA Does Not Accept BP15 Attachments
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When sending a message from a Microsoft Exchange Server system to an ISOCOR
+message transfer agent (MTA), the ISOCOR system's client, when opening the
+message, may encounter the following error:
+
+   Error decoding folder INTRAY; invalid length
+
+After closing the error message, the contents of the message will appear.
+However, the attachment will be missing.
+
+CAUSE
+=====
+
+The problem occurs because the ISOCOR system does not support the use of Body
+Part 15 (BP15)-type attachments.
+
+RESOLUTION
+==========
+
+To solve this problem, go into the Exchange Server Administrator program and
+open the properties page for the X.400 connection to the ISOCOR system. Go to
+the Advanced tab and in the X.400 Link Options section, click to clear the
+"Allow BP15" checkbox. Restart the MTA service and send the message again. This
+behavior is by product design.
+
+Additional query words: Isocor BP15 intray
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

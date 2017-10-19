@@ -1,0 +1,61 @@
+DOCUMENT:Q149474  03-NOV-1999  [fortran]
+TITLE   :BUG: F2333 Error Not Generated in Illegal Redefinition
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An illegal redefinition of a named constant, explicitly defined with a type and
+the PARAMETER attribute, doesn't cause the F2333 compiler error message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem
+---------------------------------
+
+   C Compile options needed: none
+         PROGRAM TEST
+           INTEGER, PARAMETER :: A = 5
+           DIMENSION :: A(1:10)  ! No F2333 compiler error generated
+         END PROGRAM
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

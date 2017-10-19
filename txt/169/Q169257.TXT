@@ -1,0 +1,68 @@
+DOCUMENT:Q169257  01-MAY-2001  [ssafe]
+TITLE   :INFO: Actions That Perform an Implicit GET
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Certain SourceSafe operations by default implicitly GET a local copy of a file.
+This is partially documented in the Online Help for the -G command line option
+
+MORE INFORMATION
+================
+
+The following commands perform a GET when they are executed from the command
+line or the Visual SourceSafe Explorer:
+
+   Pin
+   Recover
+   Rollback
+   Share
+   Undocheckout
+   Unpin
+
+This is by design. SourceSafe assumes that changes made to files in a project
+should be echoed to the project's working folder (directory). The GET does not
+happen under two conditions:
+
+1. If there is no working folder set for the project in the Visual SourceSafe
+   Explorer.
+
+2. When you use the -G- switch on the command line.
+
+For some of these operations, the Visual SourceSafe Explorer provides a way to
+override the default behavior. For more information, please refer to the User's
+guide and Online Help for the individual commands.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q168679  14-OCT-1999  [msnetwork]
+TITLE   :MSN Viewer Does Not Maximize 1600 x 1200 Video Resolution
+PRODUCT :The Microsoft Network
+PROD/VER:2.0
+OPER/SYS:
+KEYWORDS:kbdisplay
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MSN Program Viewer cannot be maximized in 1600 x 1200 video resolution in MSN,
+The Microsoft Network, version 2.0.
+
+RESOLUTION
+==========
+
+To work around this problem, set the video resolution to a lower setting by
+following these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. Move the Desktop Area slider to a lower setting, and then click OK.
+
+5. When you are prompted to restart your computer, click Yes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MSN, The Microsoft Network,
+version 2.0. Microsoft is researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: msn
+
+======================================================================
+Keywords          : kbdisplay 
+Technology        : kbMSNSearch kbMSN200
+Version           : 2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

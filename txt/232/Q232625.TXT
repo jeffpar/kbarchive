@@ -1,0 +1,242 @@
+DOCUMENT:Q232625  24-JUL-2001  [vbwin]
+TITLE   :HOWTO: Use a String Resource in a DLL with a Specific Locale ID
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDLL kbIntl kbResourceEd kbString kbVBp kbVBp500 kbVBp600 kbLocalization kbGrpDSVB kbD
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use Visual Basic to create a dynamic-link
+library (DLL) with an embedded localized string table in the resource file. It
+also demonstrates how to call a string resource in a DLL with a specific locale
+ID from a Visual Basic application.
+
+MORE INFORMATION
+================
+
+Occasionally, problems occur using a multi-language resource file. To work
+around these problems, a localized string table can be created and attached to a
+DLL as a resource. This DLL can be loaded and strings displayed based on the
+current locale set in the Regional Settings. This technique requires that a
+separate resource DLL be created for each locale where the application is
+distributed.
+
+To build the following sample, you must create two DLLs with embedded resource
+files. You also need to create a Standard EXE project that displays the strings
+stored as resources in the DLLs. The DLL file names contain the locale
+identifier associated with the regional setting selected by the user.
+
+Step-by-Step Example
+--------------------
+
+ - To create the DLLs with an embedded resource string table, follow the steps
+   below. The first time through the steps, a DLL containing a Canadian English
+   string table is created. The second time through, a US English string table
+   is created and embedded in a second DLL:
+
+   1. Start a new Visual Basic ActiveX DLL project. Class1 is created by
+      default.
+
+   2. On the Add_Ins menu, select Add-In Manager. In the Add-In Manager dialog
+      box, double-click the Visual Basic 6.0 Resource Editor. Confirm that the
+      LoadBehavior column on the right-hand side of the window specifies Loaded,
+      and then click OK.
+
+   3. On the Tools menu, click the Resource Editor menu item.
+
+   4. In the Visual Basic Resource Editor, click on the 'abc' icon to bring up
+      the Edit String Tables dialog box.
+
+   5. Double-click the language that is displayed, click the drop-down arrow,
+      and then select English (Canadian) from the combobox.
+
+   6. Double-click the text field below the language, and type in: "Canadian
+      English" (without the quotation marks).
+
+   7. Make certain that the id number associated with this string is 101.
+
+   8. Dismiss the Edit String Table dialog box by clicking on the X in the
+      upper-right-hand corner.
+
+   9. Click on the Save icon in the Visual Basic Resource Editor dialog box, and
+      then save the file as res1009 in a folder named resourcedll. This
+      automatically adds the RES file to the DLL project that you have created.
+
+   10. On the Project menu, select Project1 Properties. Change the Project Name
+      field from Project1 to resdll1009. Save the resdll1009 project in the
+      resourcedll folder.
+
+   11. Compile the resdll1009 project, saving the DLL to the resourcedll folder,
+      and making certain that the Filename is resdll1009. The name of the DLL
+      is important because it is loaded in the code using this file name.
+
+ - Create a second DLL by repeating steps 1 - 12 with the following
+   modifications:
+
+    - In step 5, set the language to English (US).
+    - In step 6, type in the text: "US English" (without the quotation marks).
+    - In step 9, save the RES file in the same folder but use the name res409.
+    - In step 10, name the project resdll409 instead of resdll1009.
+    - In step 11, save the resdll409 project to the resourcedll folder.
+    - In step 12, compile the resdll409 project, saving the DLL to the
+      resourcedll folder, and making certain the file name is resdll409.
+
+ - Perform the following steps to create the Standard EXE project:
+
+   1. Start a new Visual Basic Standard EXE project. Form1 is created by
+      default.
+
+   2. Add a label (Label1) to Form1.
+
+   3. Add the following code to the General Declarations section of Form1:
+
+   Option Explicit
+
+   Private Declare Function GetThreadLocale Lib "kernel32" () As Long
+   Private Declare Function LoadLibrary Lib "kernel32" Alias "LoadLibraryA" _
+      (ByVal lpLibFileName As String) As Long
+   Private Declare Function LoadString Lib "user32" Alias "LoadStringA" _
+      (ByVal hInstance As Long, ByVal wID As Long, ByVal lpBuffer As String, _
+       ByVal nBufferMax As Long) As Long
+   Private Declare Function GetLocaleInfo Lib "kernel32" Alias "GetLocaleInfoA" _
+      (ByVal Locale As Long, ByVal LCType As Long, ByVal lpLCData As String, _
+       ByVal cchData As Long) As Long
+
+   Private Const LOCALE_IDEFAULTANSICODEPAGE = &H1004&
+   Private Const LOCALE_SENGCOUNTRY = &H1002
+   Private Const LOCALE_SNATIVECTRYNAME = &H8
+   Private Const LOCALE_SCOUNTRY = &H6
+
+   Function GetCharSet(sCdpg As String) As Integer
+      Select Case sCdpg
+         Case "932" ' Japanese
+            GetCharSet = 128
+         Case "936" ' Simplified Chinese
+            GetCharSet = 134
+         Case "949" ' Korean
+            GetCharSet = 129
+         Case "950" ' Traditional Chinese
+            GetCharSet = 136
+         Case "1250" ' Eastern Europe
+            GetCharSet = 238
+         Case "1251" ' Russian
+            GetCharSet = 204
+         Case "1252" ' Western European Languages
+            GetCharSet = 0
+         Case "1253" ' Greek
+            GetCharSet = 161
+         Case "1254" ' Turkish
+            GetCharSet = 162
+         Case "1255" ' Hebrew
+            GetCharSet = 177
+         Case "1256" ' Arabic
+            GetCharSet = 178
+         Case "1257" ' Baltic
+            GetCharSet = 186
+         Case Else
+            GetCharSet = 0
+      End Select
+   End Function
+   Function StripNullTerminator(sCP As String)
+      Dim posNull As Long
+      posNull = InStr(sCP, Chr$(0))
+      StripNullTerminator = Left$(sCP, posNull - 1)
+   End Function
+   Private Sub Form_Load()
+      Dim hInst As Long, lResult As Long, x As Long
+      Dim LCID As Long, sLcid As String
+      Dim resString As String * 255
+      Dim sCodePage As String
+
+      sCodePage = String$(16, " ")
+      Label1.AutoSize = True
+      Label1.Caption = ""
+
+      LCID = GetThreadLocale() 'Get Current locale
+      sLcid = Hex$(Trim$(CStr(LCID))) 'Convert to Hex
+      ' Display decimal value of the LCID (Hex in Parentheses)
+      Form1.Caption = "LCID " & LCID & " (" & sLcid & ")"
+      x = GetLocaleInfo(LCID, LOCALE_IDEFAULTANSICODEPAGE, _
+          sCodePage, Len(sCodePage))  'Get code page
+      sCodePage = StripNullTerminator(sCodePage)
+      ' Load dll with string table resource.
+      ' Might need to change path for the resdll.
+      hInst = LoadLibrary("resdll" & sLcid & ".dll")
+
+      ' Get string with ID 101.
+      lResult = LoadString(hInst, 101, resString, 255)
+      With Label1.Font
+         .Name = "Lucida Sans Unicode"
+         .Size = 14
+         .Charset = GetCharSet(sCodePage)  'Convert code page to charset
+      End With
+      ' Display the localized string.
+      Label1.Caption = resString
+   End Sub
+
+   4. You might need to modify the path to the Resource DLL in the preceding
+      code. Run the application and the localized string should appear.
+
+   5. Compile this Standard EXE project.
+
+ - Set the Regional Settings to English (Canada), which requires a reboot on
+   some operating systems. Run the compiled application. This should display the
+   Canadian English string in the label.
+
+ - Close down the application and change the regional settings to English (US).
+   Run the program again and the US English string should be displayed.
+
+This sample works as a compiled EXE. It does not detect a change to the Locale ID
+if it is modified while the application is running or if run in the IDE. To
+update to the current Locale ID, create an ActiveX EXE that can be created in a
+new, separate thread, and retrieve the Locale ID (LCID).
+
+Make certain that your system has the appropriate code page and fonts. If you are
+going between code pages, you need to use the Resource Editor Add-In that comes
+with Visual Basic 6.0 on the localized platform or you need to create the RC
+file from scratch by using appropriate language settings and compile with the
+RC.exe resource compiler.
+
+REFERENCES
+==========
+
+For additional information about using resource files for localization, click
+the article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q165188 INFO: Resource Language Decided by ResourceLocale Key on Windows 95
+
+   Q217751 HOWTO: Get the Current User Locale ID in a VB EXE Without Restarting
+
+Additional query words: International multilanguage localization
+
+======================================================================
+Keywords          : kbDLL kbIntl kbResourceEd kbString kbVBp kbVBp500 kbVBp600 kbLocalization kbGrpDSVB kbDSupport kbIntlDev kbCodeSnippet 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

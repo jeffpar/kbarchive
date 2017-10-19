@@ -1,0 +1,69 @@
+DOCUMENT:Q119431  17-DEC-2000  [msdos]
+TITLE   :SHARE Internal Error: RSC: SFT Not Found in SFT List
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:3.20,3.21,4.x,5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 3.2, 3.21, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs while SHARE.EXE is loaded:
+
+   RSC: SFT NOT FOUND IN SFT LIST
+   SHARE INTERNAL ERROR
+
+CAUSE
+=====
+
+This error is caused by programs that attempt to gain access to the System File
+Tables (SFT), bypassing SHARE in the process. This problem occurs most often
+with small peer-to-peer network operating systems.
+
+SHARE.EXE requires continuous communication between the sharing information
+tables that it maintains and the tables that the MS-DOS kernel maintains. SHARE
+adds tables that link SFTs to paths and locks records for all open files. When
+it searches the SFT and finds an entry for which it has no entry in its own
+tables, the above error is generated and the system may stop responding (hang)
+because SHARE is in an infinite loop.
+
+RESOLUTION
+==========
+
+If you do not use Windows, you must choose between SHARE and the other program
+that wants to have access to the SFT. No workaround is available.
+
+For information about this error in Windows for Workgroups, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q115884 Err Msg in WFWG 3.11 w/LANtastic 5.x: RFC:SFT Not in SFT List.
+
+Additional query words: 6.20 lock sharing nos lan tastic rsc:sft lantastic Artisoft machine workstation node wfwg wfw win31
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:3.20,3.21,4.x,5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,70 @@
+DOCUMENT:Q131980  10-NOV-1999  [pcmail]
+TITLE   :PC Win: Truncated Addresses in To: Line When Printing Message
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a message in versions 3.2 and 3.2a of Microsoft Mail for Windows
+with over 350 addresses in the To: line or enough addresses to span a printed
+page, and one or more addresses in the Cc: line with information in the Subject:
+field, and text typed in the body of the message, the following may occur:
+
+ - The addresses that would span the printed page are missing on the printed
+   page.
+
+ - The addresses on the Cc: line are missing.
+
+ - The text that was typed in the Subject: line is missing.
+
+CAUSE
+=====
+
+The To: address line will not except carriage return control characters. It will
+see them as an invalid address.
+
+RESOLUTION
+==========
+
+You can create a Personal Group of individual addresses and print that group for
+record keeping.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.2 and 3.2a of
+Microsoft Mail for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

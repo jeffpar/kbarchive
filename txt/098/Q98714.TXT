@@ -1,0 +1,77 @@
+DOCUMENT:Q98714  09-NOV-1999  [macmail]
+TITLE   :Mac ARA: Apple Modem and Shiva Dial-In May Produce Give Ups
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the built-in Apple 2400 modem and Shiva Dial-In to access version
+3.0 or 3.1 of Microsoft Mail for AppleTalk Networks, the following error message
+may appear:
+
+   Looking for Microsoft Mail Server: Give Up
+
+CAUSE
+=====
+
+Shiva Dial-In version 3.6.6 does not ship with an Apple-brand initialization
+string for the modem. Users should add or change one of the existing strings.
+
+RESOLUTION
+==========
+
+To change the name of an existing string, do the following:
+
+1. Launch the Shiva Modems utility and open the Mac Portable string.
+
+2. Change the name if you want. Next, change the dial string by placing the
+   insertion point just past the "Z" in "ATZ", pressing the DELETE key, then
+   typing an ampersand (&) and an "F". (IMPORTANT: Do not simply highlight
+   the string and replace it; place the insertion point in the string and
+   backspace out any unwanted information.) The string should be the following:
+
+   AT&FS37=6&C1&D3&K4&Q0
+
+MORE INFORMATION
+================
+
+Shiva is locking out all possible settings on the 2400 modem with a "vanilla"
+v.22bis connection, no v.42bis or MNP. This string should be successful with
+almost any Hayes-compatible 2400 v.42bis/MNP data/fax modem.
+
+For additional information, call Shiva Microsystems Corporation at (617)
+252-6400.
+
+
+Additional query words: 3.00 3.10 err msg errmsg alert
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,63 @@
+DOCUMENT:Q102644  05-NOV-1999  [win16sdk]
+TITLE   :WEP and Link Error L2023 Export Imported
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+LINK error L2023 is caused by an incorrect library link order. The linker
+resolves external references in order of appearance of the libraries, choosing
+the first occurrence of a label. This error occurs when a dynamic- link library
+(DLL) exports the routine Windows exit procedure (WEP) that will be brought in
+from the C Run-time library static .OBJs, but the linker finds another DLL's WEP
+in its .LIB file because it appears BEFORE the C Run-time library.
+
+It would be best if DLL import libraries didn't include the WEP. This is possible
+by using the PRIVATE keyword in you .DEF file when exporting your WEP. Or, edit
+the .LIB via the LIB.EXE utility to remove the WEP reference.
+
+MORE INFORMATION
+================
+
+If the MFC libraries are used, they should be included before any other
+libraries. As for the other libraries, the Windows libraries should be included
+first (that is, LIBW, COMMDLG, SHELL, and so forth), the C Run- time second
+(that is, xLIBCyW.LIB for applications or xDLLCyW.LIB for DLLs), and any
+additional third-party libraries last (that is, your own or other's .LIBs). For
+example, when linking a small model DLL that uses another DLL's routines via an
+import library, the library order would be "LIBW.LIB SDLLCEW.LIB OTHERDLL.LIB".
+The order should be changed only if a DLL routine was to replace one of the
+routines in the Windows libraries or CRT.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

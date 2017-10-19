@@ -1,0 +1,65 @@
+DOCUMENT:Q124529  11-DEC-2001  [ssafe]
+TITLE   :HOWTO: Access SourceSafe Code From a Central Directory
+PRODUCT :Microsoft SourceSafe
+PROD/VER:3.04
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SUMMARY
+-------
+
+The Shadow setting allows you to set up a central directory location where
+users can compile access code without entering SourceSafe.
+
+NOTE: Any modifications made to the files in this directory will not be
+reflected in the SourceSafe database.
+
+To set a shadow directory for the project $/test, in the SRCSAFE.INI or
+SS.INI:
+
+           [$/test]
+           Shadow = f:\test
+
+If the project header [$/test] already exists, do not create a new one,
+just add the Shadow setting underneath the other settings. For example:
+
+           [$/test]
+           Dir = c:\test
+           Shadow = f:\test
+
+When files are updated to the $/test project, modifications will be
+reflected in f:\test as well.
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q131023 How to Set Up a Shadow Directory
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Version           : 3.04
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

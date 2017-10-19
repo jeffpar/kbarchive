@@ -1,0 +1,65 @@
+DOCUMENT:Q169145  09-AUG-2001  [winnt]
+TITLE   :Event ID: 5511 - Mismatched SIDs
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Domain synchronization may fail with the following error:
+
+   Source: NETLOGON
+   Event ID: 5511
+   The servers <DOMAINCONTROLLER1> and <DOMAINCONTROLLER2> both claim
+   to be an NT Domain Controller for the <DOMAIN> domain. One of the
+   servers should be removed from the domain because the servers have different
+   security identifiers (SID).
+
+CAUSE
+=====
+
+The easiest way for this error to occur is to install a domain controller while
+either it or the other domain controller is disconnected from the network or
+off-line. This will create a domain with the same name but it will have a
+different security identifier (SID). As far as Windows NT domains, machine
+accounts, and trusts are concerned, you have created a new domain.
+
+RESOLUTION
+==========
+
+The problem domain controller must be re-installed when it can connect to the
+primary domain controller.
+
+
+Additional query words: trust installed account sync logon replication synchronization
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

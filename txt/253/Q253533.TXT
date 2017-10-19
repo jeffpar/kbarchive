@@ -1,0 +1,58 @@
+DOCUMENT:Q253533  03-MAR-2000  [winnt]
+TITLE   :Using the Person Entry Count to Determine the Number of Users
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you view the properties of the DSA (Server) object in the directory or the
+Known Universe, there is a value called Person Entry Count. This is not the
+current count of users in the directory. It is the number of users in the
+directory since the count was last performed. Running a Management Agent or
+Replication Agreement does not update this value.
+
+MORE INFORMATION
+================
+
+The Person Entry Count value is updated in the following two ways:
+
+ - When Microsoft Metadirectory Services (MMS) is started or restarted, it
+   performs an initial Person Entry Count and updates this value. It also
+   records the entry in the Zoomserv\Data\Logs\Genlog file.
+
+ - After the initial count is made, it is recounted periodically (approximately
+   every 12 hours) by a low-priority thread.
+
+Additional query words: VIA users in the directory
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

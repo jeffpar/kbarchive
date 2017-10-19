@@ -1,0 +1,68 @@
+DOCUMENT:Q245015  06-AUG-2002  [winnt]
+TITLE   :How to Use Xcacls.exe to Print Folder and File Permissions.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to print all folder and file permissions from one
+folder using the Xcacls.exe utility that is included in Microsoft Windows NT
+Resource Kit.
+
+MORE INFORMATION
+================
+
+You can use the Xcacls.exe utility to print the permissions for files and
+folders contained in a folder, but you cannot print the permissions for folders
+and files contained in the subfolders.
+
+To use the Xcacls.exe utility, follow these steps:
+
+1. From the folder in which you installed the Windows NT Resource Kit, copy the
+   Xcacls.exe file to the root folder in which you would like to print
+   permissions
+
+2. At the command prompt, type the following line, and then press ENTER
+
+   XCACLS *.* > C:\<filename>.txt
+
+where <filename> is the file name that you want to use for the folder and
+file permissions.
+NOTE: The default installation location for the Windows NT Resource Kit is
+C:\NTreskit. On the Windows NT Resource Kit CD-ROM, the Xcacls.exe file is
+located in D:\platform\Netadmin, where D is the letter of your CD-ROM drive and
+platform is your computer platform, such as i386 or Alpha.
+
+Additional query words: ntfs access acl
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

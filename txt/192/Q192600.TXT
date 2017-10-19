@@ -1,0 +1,79 @@
+DOCUMENT:Q192600  13-AUG-1999  [homemm]
+TITLE   :Home Essentials 98 Continually Prompts for Encarta 98 CD-ROM
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to gain access to Encarta 98 Encyclopedia content on a
+Microsoft Home Essentials 98 CD-ROM, you may receive one of the following
+messages:
+
+   Insert Compact Disc
+   Insert Encarta 98 Encyclopedia Disc 1
+
+   Insert Compact Disc
+   Insert Encarta 98 Encyclopedia Disc 2
+
+When you insert the Home Essentials 98 Disc 1 or Disc 2 CD-ROM into the CD-ROM
+drive, you receive the same message.
+
+CAUSE
+=====
+
+This behavior can occur because the content for Encarta 98 Encyclopedia is
+located on the Home Essentials 98 Disc 3 and Disc 4 CD-ROMs.
+
+RESOLUTION
+==========
+
+To resolve this issue, insert the Home Essentials 98 Disc 3 CD-ROM when you are
+prompted to insert the Encarta 98 Encyclopedia Disc 1 CD-ROM, and insert the
+Home Essentials 98 Disc 4 CD-ROM when you are prompted to insert the Encarta 98
+Encyclopedia Disc 2 CD-ROM.
+
+MORE INFORMATION
+================
+
+The Microsoft Home Essentials 98 Disc 3 CD-ROM is also labeled Microsoft Encarta
+98 (CD 1), and the Microsoft Home Essentials 98 Disc 4 CD-ROM is also labeled
+Microsoft Encarta 98 (CD 2).
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q160159 Win/Mac Encarta: What's the Second Disc For?
+
+Additional query words: he98 multi multi-media media mm disk
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

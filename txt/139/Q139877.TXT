@@ -1,0 +1,96 @@
+DOCUMENT:Q139877  28-JUL-2001  [win95x]
+TITLE   :"Missing Shared DLLs" When Starting WordPerfect 6.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.1,3.11
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg win31 win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows 95 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade an earlier version of Windows to Windows 95, you may receive
+one of the following error messages when you try to start WordPerfect version
+6.0 for Windows:
+
+ - Missing shared DLLs
+
+ - Cannot find SHWIN20.DLL
+
+
+CAUSE
+=====
+
+This error can occur if the WordPerfect shortcut is pointing to the wrong
+executable file.
+
+RESOLUTION
+==========
+
+To correct this problem, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Taskbar.
+
+2. On the Start Menu Programs tab, click Advanced.
+
+3. In the Contents Of Start Menu pane, double-click the Programs folder, and
+   then locate the WordPerfect shortcut.
+
+4. Use the right mouse button to click the WordPerfect shortcut, and then click
+   Properties on the menu that appears.
+
+5. On the Shortcut tab, change the Target line. Change the file name that reads
+
+   WPWIN60.EXE
+
+   to read:
+
+   WPWIN.EXE
+
+6. Click OK.
+
+7. Close Windows Explorer.
+
+8. Click OK.
+
+MORE INFORMATION
+================
+
+Changing a shortcut's Target line does not affect any other shortcuts for that
+program. If there are additional shortcuts for the program, you must modify them
+as well.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg win31 win95 appscomp kbAppCompatibility 
+Technology        : kbAudDeveloper kbWin3xSearch kbWin95search kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : :3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

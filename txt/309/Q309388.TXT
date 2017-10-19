@@ -1,0 +1,81 @@
+DOCUMENT:Q309388  19-OCT-2001  [sna]
+TITLE   :Single Sign-On Option Available with OLE DB Over TCP/IP
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport kbhis2000 kbhis2000bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have an OLE DB Provider for DB2 Universal Data Link (UDL) configured to
+use a Transmission Control Protocol/Internet Protocol (TCP/IP) connection, this
+allows the Single Sign-On (SSO) option to be selected, even though this feature
+is not supported for use with the OLE DB Provider when using direct TCP/IP
+connections.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+
+MORE INFORMATION
+================
+
+When you initially configure when a new UDL to use a TCP/IP connection, SSO is
+disabled. When the UDL is subsequently opened to check or change its settings,
+SSO will be displayed as an available option.
+
+SSO requires that you configure UDL for an Advanced Program-to-Program
+Communications (APPC) connection in order to take advantage of SSO provided by
+the Host Security Integration components. This is included with Host Integration
+Server (HIS) 2000, as well as earlier versions of Microsoft SNA Server.
+
+For additional information about an overview of the host security integration
+features, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q175063 Host Security Integration Setup and Architectural Overview
+
+The ODBC Driver for DB2 that is included with HIS 2000 displays the following
+message when you select the "Use Single Sign-On" option while you are creating
+or modifying an ODBC Data Source Name (DSN):
+
+   Microsoft ODBC Driver for DB2 Configuration
+
+   Single Sign-On cannot be used with a TCP/IP connection. Please select an APPC
+   connection on the Connection tab or specify a username on the Security tab.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbhis2000 kbhis2000bug 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

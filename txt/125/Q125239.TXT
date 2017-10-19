@@ -1,0 +1,65 @@
+DOCUMENT:Q125239  08-NOV-2001  [homemm]
+TITLE   :Ancient Lands/Dinosaurs: AVI Video Doesn't Play When Clicked
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Ancient Lands for Windows, version 1.0 
+ - Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you click an icon to start an Audio Video Interleave (.AVI) video, the
+insertion point changes to an hourglass and then changes back to a cursor.
+
+The .AVI file does not play, nor is there an error message displayed.
+
+CAUSE
+=====
+
+The problem will occur if the entry "avi=AVIVideo" (without the quotation
+marks), which is found in the [MCI Extensions] section of the WIN.INI file, is
+missing or is spelled incorrectly.
+
+RESOLUTION
+==========
+
+To correct this problem, verify that the line is entered correctly in the [MCI
+Extensions] section of the WIN.INI file, as follows:
+
+      avi=AVIVideo
+
+If this line is not in your WIN.INI file, add it.
+
+For more information about how to accomplish this task in Windows, see your
+Windows printed documentation or online help.
+
+Additional query words: multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbAncientLands kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

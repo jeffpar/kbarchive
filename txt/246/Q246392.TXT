@@ -1,0 +1,69 @@
+DOCUMENT:Q246392  12-JAN-2000  [winnt]
+TITLE   :How to Uninstall Microsoft Metadirectory Services
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to uninstall Microsoft Metadirectory Services 2.1 on
+a computer running Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+Before you uninstall Metadirectory Services, make sure that you are not going to
+jeopardize any data in the Metadirectory. To successfully remove Metadirectory
+Services from a computer running Windows NT 4.0 Server, follow these steps:
+
+1. Stop the Zoomit Service.
+
+2. Click Start, click Run, type "cmd" (without the quotation marks) in the Open
+   box, and then click OK.
+
+3. At the command prompt, navigate to the Zoomserv\Bin folder on your computer.
+
+4. Type "setupsvc -remove" (without the quotation marks).
+
+5. After this command completes successfully, delete the Zoomserv folder or use
+   the Add/Remove Programs tool to uninstall Metadirectory Services and all of
+   its components.
+
+Before you try to uninstall the Metadirectory Services, make sure that the server
+has stopped and that no Management Agents (MAs) are running. The primary MA
+executable is the Importt.exe program. This program gains direct access to the
+database and does not need Via running in order to have the database open. Use
+Task Manager to verify that there are no VIAServer or IMPORTT processes running.
+
+Additional query words: Zoomit via
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,105 @@
+DOCUMENT:Q68829  05-NOV-1999  [win95x]
+TITLE   :Appoint Mouse Pen and Windows Version 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Appoint Mouse Pen operates properly under Windows version 3.0 if you choose
+"Microsoft or IBM PS/2" mouse as the pointing device from the Windows Setup
+program. You can use the Microsoft MOUSE.SYS or MOUSE.COM file as a mouse driver
+for MS-DOS applications.
+
+Appoint provides an MS-DOS applications driver for its Mouse Pen, although it
+doesn't currently have a Windows driver. Appoint claims that its mouse can be
+used in MS-DOS applications while a Microsoft Mouse is being used for Windows
+applications.
+
+MORE INFORMATION
+================
+
+If you use the Mouse Pen's driver in a graphical MS-DOS application from
+Windows, you may be unable to access part of the application (for example, the
+lower half of the screen). This may occur when you return to an application
+after using the ALT+TAB key sequence to exit the application. This does not
+occur with a Microsoft Mouse driver such as MOUSE.COM or MOUSE.SYS version
+7.04.
+
+The following table was compiled when testing the compatibility of the Microsoft
+Mouse and Mouse Pen software and hardware:
+
+   USING MICROSOFT DRIVER AS THE DEVICE DRIVER
+   ----------------------------------------------
+
+   COM     Microsoft  Mouse  Windows    MS-DOS
+   Port    Mouse      Pen    Mouse      Mouse
+   ----    ---------  -----  ---------  ---------
+
+   COM1    COM1       COM2   Microsoft  Microsoft
+   COM1    COM2       COM1   Microsoft  Mouse Pen
+   COM2    COM1       COM2   Microsoft  None
+   COM2    COM2       COM1   Microsoft  Microsoft
+
+   USING MOUSE PEN DRIVER AS THE DEVICE DRIVER
+   ----------------------------------------------
+
+   COM     Microsoft  Mouse  Windows    MS-DOS
+   Port    Mouse      Pen    Mouse      Mouse
+   ----    ---------  -----  ---------  ---------
+
+   COM1    COM1       COM2   Microsoft  Microsoft
+   COM1    COM2       COM1   Microsoft  Mouse Pen
+   COM2    COM1       COM2   Mouse Pen  Mouse Pen
+   COM2    COM2       COM1   Microsoft  Microsoft
+
+The COM port is the port used for a mouse in MS-DOS applications outside of
+Windows. The following lines set the Microsoft Mouse to COM1 and the Mouse Pen
+mouse to COM2:
+
+      DEVICE=C:\MOUSE\MOUSE.SYS /C1
+      DEVICE=C:\MOUSE PEN\MOUSE.SYS /2
+
+For example, if you set the MS-DOS mouse to the COM1 port, the Microsoft MS-DOS
+Mouse driver to COM2, and the Mouse Pen MS-DOS mouse driver to COM1, you can use
+the Microsoft Mouse in Windows and the Mouse Pen in MS-DOS applications. Similar
+results are obtained using a bus mouse and the Mouse Pen.
+
+Verify the bus mouse and Mouse Pen interrupts (IRQ3 for a Mouse Pen using COM2;
+IRQ4 for a Mouse Pen using COM1) are different. Windows looks for the bus mouse
+first, regardless of the mouse configuration.
+
+The product included here is manufactured by IMCS (Appoint); we make no warranty,
+implied or otherwise, regarding this product's performance or reliability.
+
+Additional query words: 3rdparty 3.0 3.0a 3.00a KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

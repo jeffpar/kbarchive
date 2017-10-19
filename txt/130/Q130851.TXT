@@ -1,0 +1,71 @@
+DOCUMENT:Q130851  28-JUL-2001  [win95x]
+TITLE   :Slow Time-Out Trying to Connect to Nonexistent Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun 3rdpartynet win95 kb3rdPartyNetClient kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using an application that uses Remote Registry Services (such as
+System Monitor) and you try to connect to a computer that does not exist on the
+network, it may take several minutes before you receive a response indicating
+that the remote computer cannot be located or connected to.
+
+CAUSE
+=====
+
+This situation can occur because Domain Name Service (DNS) resolution is using
+User Datagram Protocol (UDP) to send name-resolution packets to the DNS server,
+which is unreachable. When this occurs, the resolver times out repeatedly,
+taking approximately one minute per attempt.
+
+RESOLUTION
+==========
+
+To work around this situation, remove the TCP/IP protocol from the network
+adapter or the dial-up adapter.
+
+MORE INFORMATION
+================
+
+This situation can occur if you have the following configuration:
+
+ - A physical LAN connection.
+
+ - Dial-Up Networking is installed.
+
+ - The TCP/IP protocol is installed and is bound to both the network adapter and
+   the Dial-Up Networking adapter.
+
+ - The system is configured for Remote Registry Services.
+
+
+======================================================================
+Keywords          : dun 3rdpartynet win95 kb3rdPartyNetClient kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,78 @@
+DOCUMENT:Q149342  06-MAY-2001  [visualc]
+TITLE   :PRB: CListCtrl Inserting Items Slow If in Icon Modes
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.1,2.2,4.0,4.1
+OPER/SYS:
+KEYWORDS:kbcode kbIcon kbListView kbMFC KbUIDesign kbVC210 kbVC220 kbVC400 kbVC410 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Inserting a large number of items into a CListCtrl simultaneously may take a
+long time if the control is in the LVS_ICON or LVS_SMALLICON modes.
+
+RESOLUTION
+==========
+
+Before starting to insert the items, disable painting of the control and
+re-enable the painting when the insertions are done. For more information see
+the "Sample Code" section of this article.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+A CListCtrl can display its contents in one of four styles: LVS_ICON,
+LVS_SMALLICON, LVS_LIST, or LVS_REPORT. The problem does not show up if the
+control is in the LVS_LIST or the LVS_REPORT modes.
+
+Sample Code
+-----------
+
+   //.....
+
+       m_List.SetRedraw(FALSE); // turn drawing off regardless of list mode
+
+   //....
+   //Insert the items
+   //....
+
+       m_List.SetRedraw(TRUE); // turn drawing back on and update the window
+       m_List.Invalidate();
+       m_List.UpdateWindow();
+
+Additional query words: 2.10 2.20 3.10 3.20 4.00 4.10 CListCtrl adding inserting
+
+======================================================================
+Keywords          : kbcode kbIcon kbListView kbMFC KbUIDesign kbVC210 kbVC220 kbVC400 kbVC410 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.1,2.2,4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

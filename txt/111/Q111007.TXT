@@ -1,0 +1,72 @@
+DOCUMENT:Q111007  19-JUN-1999  [win16sdk]
+TITLE   :BUG: MoveTo/LineTo Causes Divide by 0 Error
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using MoveTo() or LineTo() with a delta X or delta Y greater than 16K to draw
+within a complex clipping region, causes the system to display the following
+error message in a system modal dialog box appears:
+
+   Application Error integer divide by 0
+
+CAUSE
+=====
+
+If the change in x or the change in y in the MoveTo/LineTo calls is greater than
+16K, and if the line is being drawn to a complex clipping region, a divide
+overflow error occurs in GDI.exe. This problem does not occur for smaller
+changes in x or y, and it also does not occur if the line is being drawn to a
+noncomplex clipping region.
+
+RESOLUTION
+==========
+
+This bug can be worked around by avoiding complex clipping regions, or if
+complex regions are critical, by ensuring that the changes in x and y in
+MoveTo/LineTo calls are always less than 16K.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows version 3.1.
+
+Additional query words: buglist3.10 3.10
+
+======================================================================
+Keywords          : kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,57 @@
+DOCUMENT:Q183779  22-JUN-2001  [exchange]
+TITLE   :XCLN: Cannot Clear Combo Boxes in Policy Editor
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:98
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 98 Deployment Kit 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Outlook Deployment Kit (ODK), you cannot clear combo boxes after making a
+selection in Customize User Settings (under Stage 5, User Settings
+Customization) of the Policy Editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Outlook 98 Deployment
+Kit.
+
+MORE INFORMATION
+================
+
+The Outlook Deployment Kit is used to create custom install packages of Outlook
+and related components for distribution to your users.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlookDeployKitSearch kbOutlook98DeployKit
+Version           : WINDOWS:98
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,145 @@
+DOCUMENT:Q166425  09-AUG-2001  [winnt]
+TITLE   :Pan Chinese WinNT 4.0 Installation Question & Answer
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation, Pan Chinese Edition, version 4 
+-------------------------------------------------------------------------------
+
+1. Q. What is Pan Chinese Windows NT Workstation version 4.0?
+
+   A. In the Hong Kong environment, the mixed use of Simplified and Traditional
+   Characters is demanding. Because of this, Microsoft introduced the Microsoft
+   Pan Chinese Windows NT operating system. This operating system combines
+   Traditional and Simplified Chinese Windows NT Workstation features and the
+   core elements are based on the Simplified Chinese version of Windows NT
+   Workstation 4.0. Most of the interface is in English. You can create
+   documents with Traditional and Simplified Chinese Characters by using GBK and
+   Unicode code pages. Traditional Chinese BIG5 Characters are also supported by
+   switching locales.
+
+2. Q. What does locale mean?
+
+   A. Locales are simply user preference information that is related to the
+   user's language and sub-language, represented as a list of values. For
+   example, Chinese (PRC), Chinese (Taiwan), and Chinese (Hong Kong) locale. At
+   a very high level, Windows Natural Language Support (WinNLS) incorporates
+   several disparate definitions of a locale into one coherent model. Like
+   Windows NT, WinNLS has been designed to be general enough at a low level to
+   support multiple distinct high-level functions.
+
+3. Q. Which code page supports which locale?
+
+   A. Chinese (PRC, Hong Kong, and Singapore) locales are supported using GBK and
+   Unicode code pages. The Chinese (Taiwan) locale is supported using BIG5 and
+   Unicode code pages.
+
+4. Q. What are the system requirements for Pan Chinese Windows NT?
+
+   A. System requirements for Intel and compatible systems:*
+
+   - 486/25 MHz processor (or Pentium) - 16 MB of RAM (24 MB recommended) -
+   CD-ROM drive or access to a CD-ROM drive over a computer network - 210 MB of
+   available hard disk space - VGA or higher resolution display adapter -
+   Microsoft Mouse or compatible pointing device
+
+   System requirements for RISC-based systems:*
+
+   - Workstation with Alpha AXP, MIPS R4x00 (or PowerPC processor) - 24 MB of
+   memory - CD-ROM drive or access to a CD-ROM drive over a computer network -
+   210 MB of available hard disk space - VGA or higher resolution display
+   adapter - Microsoft Mouse or compatible pointing device
+
+   Optional for both Intel and RISC systems:
+
+   - Network adapter card - Audio board
+
+   To obtain the latest copy of the Hardware Compatibility List (HCL), please see
+   the following Microsoft World Wide Web (WWW) site:
+
+   http://www.microsoft.com/hwtest/hcl/
+
+5. Q. How do I know if my computer is capable of running Pan Chinese Windows
+   NT?
+
+   A. The minimum system requirements for Pan Chinese Windows NT are a 486/25 MHz
+   processor, 12 MB of RAM and at least 210 MB of available hard disk space. The
+   recommended system requirements for Pan Chinese Windows NT are a Pentium
+   processor, 16 MB or more of RAM, and at least 210 MB of available hard disk
+   space.
+
+   For more information and to review the Windows NT Hardware Compatibility List,
+   please refer to http://www.microsoft.com/hwdev.
+
+6. Q. Can I automatically upgrade from MS-DOS 6.x, Windows 3.x, Windows 95, or
+   Windows NT to Pan Chinese Windows NT?
+
+   A. No. Pan Chinese Windows NT will be available in full version only. Due to
+   the differences in registry architectures, there is no automated upgrade to
+   Pan Chinese Windows NT. Those systems that are manually migrated from MS-DOS
+   6.x, Windows 3.x, Windows 95, or Windows NT to Pan Chinese Windows NT will
+   need to have their applications reinstalled.
+
+7. Q. Can Windows 95 and Pan Chinese Windows NT co-exist on the same computer?
+
+   A. Yes. You cannot upgrade your Windows 95 installation to Pan Chinese Windows
+   NT, but you can install Pan Chinese Windows NT to a different folder.
+
+8. Q. Does Pan Chinese Windows NT Workstation 4.0 run Windows 95 compatible
+   applications?
+
+   A. Although the vast majority of the applications written for Windows 95 will
+   run on Windows NT Workstation 4.0, the feature differences between Windows NT
+   Workstation 4.0 and Windows 95 do not yet allow 100 percent compatibility of
+   applications between the platforms.
+
+9. Q. What is the difference between English/Chinese Windows NT Workstation 4.0
+   and Pan Chinese Windows NT Workstation 4.0?
+
+   A. Pan Chinese Windows NT provides an English user interface like the U.S.
+   version of Windows NT 4.0 and allows typing of Traditional and Simplified
+   Chinese Characters in a document using Unicode or GBK applications. In
+   addition, BIG5 applications are also support for entering Traditional Chinese
+   Characters.
+
+10. Q. What is new in PAN Chinese Windows NT?
+
+   A. It includes the following full features of Simplified Chinese Windows NT
+   4.0:
+
+   - Chinese GBK code page support (including GB and BIG5 glyphs) - IMEs (PRC
+   New Intelligent and Taiwan Chajie) - Chinese GBK fonts (SongTi, HeiTi) -
+   Chinese Code Converter between GB/GBK/BIG5/Unicode, Traditional and
+   Simplified Chinese characters (text file only)
+
+11. Q. What input methods are included in Pan Chinese Windows NT Workstation
+   version 4.0?
+
+   A. Taiwan Chajie, Cantonese, Zheng Ma and PRC New Intelligent (MS PingYing -
+   Simplified Chinese Characters only).
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbHLangChinesePan kbWinNT400search
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

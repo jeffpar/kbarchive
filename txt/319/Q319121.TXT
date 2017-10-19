@@ -1,0 +1,79 @@
+DOCUMENT:Q319121  01-MAR-2002  [msnetwork]
+TITLE   :Cannot Remove MSN Explorer User Tile(s) In Windows XP--Deleted T
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+ - The Microsoft Network Version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You sign in to MSN Explorer and attempt to remove user tile(s). After removing
+the user tile(s), you sign out of MSN Explorer and the user tile(s) still
+appears on the MSN Explorer Welcome screen.
+
+CAUSE
+=====
+
+You set up .NET Passport to automatically sign in to your Passport when you
+start Windows XP. You must disable the automatic .NET Passport logon feature in
+Windows XP to resolve this issue.
+
+RESOLUTION
+==========
+
+To disable the automatic .NET Passport logon feature in Windows XP
+
+1. Click Start, and then click Control Panel.
+
+2. Double-click User Accounts icon.
+   Note: If more than one Windows XP user is listed, click the icon for the
+   Windows XP user who created the MSN Explorer user tile you want to remove.
+
+3. Click the Manage my Network Passwords link.
+
+4. Select the .NET Passport profile in the list displayed, then click the Remove
+   button.
+   A box appears stating "The selected logon information will be deleted".
+
+5. Click OK.
+
+6. Quit Stored User Name and Passwords, User Accounts, and Control Panel.
+   You should now be able to remove your user tile by signing in to MSN Explorer,
+   clicking Help and Settings, clicking Accounts, then clicking Remove User.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSN700
+Version           : :6.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

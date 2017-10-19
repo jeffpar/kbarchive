@@ -1,0 +1,61 @@
+DOCUMENT:Q175214  11-JAN-2001  [vbwin]
+TITLE   :DIRWALK.EXE: Directory Walking Control Sample
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+DirWalk is an OCX that can be used as either a control placed on a form or as a
+stand-alone ActiveX server using the CreateObject method. The control is used to
+walk a directory tree and executes the ItemFound event every time a file
+matching the specified criteria is found. The control continues to walk the tree
+until either the entire drive is searched or the fCancel parameter on the
+ItemFound event is set to True.
+
+MORE INFORMATION
+================
+
+The project for this control can be downloaded from the Visual Basic Owner's sit
+at: http://premium.microsoft.com/download/vbasic/DirWalk.exe. Only registered
+users of Visual Basic can access this site.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Arsenio
+Locsin, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

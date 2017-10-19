@@ -1,0 +1,73 @@
+DOCUMENT:Q95689  11-OCT-1999  [win95x]
+TITLE   :Unable to Run TrueType Font Pack 2 Font Assistant (FAST.EXE)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Microsoft Font Assistant version 1.0 or 1.01 (included with
+the TrueType Font Pack 2), you may receive the following error message
+
+   Font Assistant Program Startup Failed, Aborting
+
+and the program will quit.
+
+CAUSE
+=====
+
+This error message occurs if the FAST.INI file contains a syntax error or
+incorrect information.
+
+The FAST.INI file contains the font database used by the Font Assistant to manage
+TrueType fonts. If this file contains a syntax error or is corrupt, the above
+error message will be displayed and the Font Assistant will not run.
+
+RESOLUTION
+==========
+
+To correct this problem, rename the FAST.INI file from the MS-DOS prompt as
+follows:
+
+   REN C:\Windows\FAST.INI FAST.INO
+
+When you restart the Font Assistant, the program will scan the WIN.INI file for
+installed TrueType fonts and will recreate the FAST.INI file. You will have to
+recreate custom font groups.
+
+For more information on valid FAST.INI entries, query on the following words in
+the Microsoft Knowledge Base:
+
+   fast.ini and font and assistant and groups and fonts and pref
+
+Additional query words: 3.10 3.11 true type tt ttf
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

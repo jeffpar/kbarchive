@@ -1,0 +1,71 @@
+DOCUMENT:Q199034  20-MAR-1999  [sms]
+TITLE   :Remote Control Cannot Connect If 3Com Connectivity Utility Run
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms120 kbsms120bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Remote Control cannot connect to a client if the 3Com network interface card
+(NIC) utility is run and an error occurs.
+
+If you have connection problems with remote control and decide to use the 3Com
+utility to run tests on the network card, the client computer will become
+unreachable to a request for future remote control sessions.
+
+This behavior can be quite confusing. You were able to remote control the client
+before the utility was run, but not after. The client has most of its network
+functionality back after the utility has been shut down; remote control is not
+available.
+
+CAUSE
+=====
+
+The 3Com utility holds the remote control port open and does not let it go until
+the compputer is restarted.
+
+WORKAROUND
+==========
+
+Restart the client computer to regain remote control functionality.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.2 and 2.0. This problem will not be corrected.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

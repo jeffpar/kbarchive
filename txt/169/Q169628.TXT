@@ -1,0 +1,58 @@
+DOCUMENT:Q169628  19-DEC-1999  [exchange]
+TITLE   :XCON: MTA May Hang After Running from the Command Line
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Microsoft Exchange Server message transfer agent (MTA) may hang and/or
+generate database errors after it runs from the command line.
+
+MORE INFORMATION
+================
+
+The MTA is normally started as a service known as MSExchange MTA. However, it is
+possible to start the MTA from the Exchsrvr\bin directory, if you run Emsmta.exe
+from the command line. The MTA will function normally, but you will need to use
+the CTRL-C keystroke combination at the command line to stop the MTA. After you
+stop the MTA using the CTRL-C keystroke combination, the server needs to be
+rebooted if it is expected to go back into a production role. Running Emsmta.exe
+from the command line should only be attempted when MTA debugging is needed.
+This should never be considered normal operation. This behavior is by product
+design.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

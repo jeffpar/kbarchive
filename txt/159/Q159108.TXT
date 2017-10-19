@@ -1,0 +1,62 @@
+DOCUMENT:Q159108  08-AUG-2001  [winnt]
+TITLE   :SMP Full Duplex Adapter Configuration May Cause a Blue Screen
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbnetwork kbusage kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT system with two network adapters installed may cause a blue screen
+when one card is set to SMP Full Duplex and the second card is set to half
+duplex.
+
+CAUSE
+=====
+
+When the system is stressed by multiple clients, the NDIS layer will go into a
+continuous reset mode, which causes all connections in that segment to drop off
+and result in the blue screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT version
+4.0. This problem was corrected in the latest Microsoft Windows NT 4.0 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt 0xA
+
+======================================================================
+Keywords          : kbhw kbnetwork kbusage kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

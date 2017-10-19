@@ -1,0 +1,81 @@
+DOCUMENT:Q166305  07-MAY-2001  [ssafe]
+TITLE   :HOWTO: Reconnecting a Visual C++ Project to Source Control
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbinterop kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbVC kbVC400 kbVC410 kbVC420 kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+ - Microsoft Visual C++, versions 4.0, 4.0a, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+From time to time, the connection between a Visual C++ project and its
+associated SourceSafe project is lost or damaged. In this case, you may find it
+necessary to reconnect the existing Visual C++ project to the SourceSafe
+project.
+
+MORE INFORMATION
+================
+
+The reconnect the existing Visual C++ project to the SourceSafe project:
+
+1. Open the Visual C++ project on the local hard drive in Developer Studio.
+
+2. Add the Visual C++ project to source control.
+
+   In Visual C++ 4.x:
+
+   Tools.Source Control.Add to Source Control
+
+   In Visual C++ 5.0:
+
+   Project.Set Active Project and select the project Project.Source Control.Add
+   to Source Control
+
+3. You are prompted to locate the project in SourceSafe. Highlight the
+   SourceSafe project that corresponds to the project on your local drive and
+   delete the project name from the Project field in the "Add to SourceSafe
+   Project" dialog box. Click OK.
+
+4. A dialog box appears asking you whether to reconnect to the existing project.
+   Click Yes.
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q180945 HOWTO: Disconnect a Project from Source Control
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbVC kbVC400 kbVC410 kbVC420 kbVC500 
+Technology        : kbVCsearch kbVC400 kbSSafeSearch kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC32bitSearch kbVC400a kbVC420b kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbVC500Search
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

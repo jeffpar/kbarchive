@@ -1,0 +1,78 @@
+DOCUMENT:Q137280  26-MAY-2001  [homemm]
+TITLE   :Macintosh Encarta 1995: Image File Could Not Be Loaded
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Picture frames in Encarta appear as gray boxes without pictures and contain the
+following message:
+
+   The image requested could not be loaded.
+
+If you click the gray box, the following error message appears:
+
+   The image file cannot be displayed. File is missing or there is not enough
+   memory available.
+
+Text and other media such as maps, animations, sounds, video, interactivities,
+charts and tables function normally.
+
+CAUSE
+=====
+
+The problem may occur if the FIF Component has been disabled, deleted, or moved
+out of the Macintosh Extensions folder.
+
+The FIF Component is a tool used for decompressing the graphic images used by
+Encarta. If the FIF component is not in the Extensions folder when you start the
+computer, the graphics files used by Encarta 1995 are not decompressed and
+displayed properly.
+
+RESOLUTION
+==========
+
+To resolve this problem, locate the FIF Component on your computer, move it to
+the Extensions folder and restart the machine. At the Finder level, you can use
+Find from the File menu to help locate the FIF Component.
+
+If the file has been deleted or is missing, copy the file from the Encarta
+CD-ROM. The file is located in the System Files folder, which is in the
+Installer Files folder. The FIF Component can be copied from the Encarta CD- ROM
+directly into the Extensions folder on the Macintosh.
+
+For more information about how to accomplish this task, see your Macintosh
+printed documentation or online help.
+
+Additional query words: mac Encarta '95 95 multi media multimedia multi- mmtitles kbmm missing short cleared 1995
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,77 @@
+DOCUMENT:Q189382  17-JUL-2001  [visualc]
+TITLE   :PRB: CWnd::m_nMsgDragList Not Exported by the MFC DLL
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbDLL kbMFC kbVC500 kbGrpDSMFCATL kbArchitecture
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the protected CWnd member m_nMsgDragList in an application or DLL
+that is linked to the MFC shared DLL, a LNK2001 unresolved external error
+occurs.
+
+This error does not occur when you link to the static MFC library.
+
+CAUSE
+=====
+
+CWnd::m_nMsgDragList is not exported from the MFC DLL.
+
+RESOLUTION
+==========
+
+To workaround this problem, call RegisterWindowMessage with the
+DRAGLISTMSGSTRING message and use the value returned instead of
+CWnd::m_nMsgDragList. For example:
+
+      UINT nMsgDragList = ::RegisterWindowMessage(DRAGLISTMSGSTRING);
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+CWnd::m_nMsgDragList is an undocumented member of the CWnd class and is subject
+to change. The most common use of CWnd::m_nMsgDragList occurs when you override
+OnChildNotify in a CWnd derived class.
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Isaac L. Varon, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbDLL kbMFC kbVC500 kbGrpDSMFCATL kbArchitecture 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

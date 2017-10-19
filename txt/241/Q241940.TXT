@@ -1,0 +1,85 @@
+DOCUMENT:Q241940  03-MAY-2001  [visualc]
+TITLE   :BUG: C2954 Error When Using Class Template as Template-Parameter
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbLangCPP kbVC kbVC500 kbVC500bug kbVC600 kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message may appear if you try to use a class template as a
+template-parameter:
+
+   error C2954: template definitions cannot nest
+   error C2951: template declarations are only permitted at global or namespace
+   scope
+   error C2226: syntax error : unexpected type 'C'
+   error C2143: syntax error : missing '>' before '{'
+   error C2059: syntax error : '<end Parse>'
+
+CAUSE
+=====
+
+The compiler does not support template template-parameters as specified in the
+C++ Standard.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the error:
+
+   //test.cpp
+   // compiler option needed: none
+
+   template<class T> class myarray { /* ... */ };
+   template<class K, class V, template<class T> class C = myarray>
+   class Map {
+   	C<K> key;
+   	C<V> value;
+   	};
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbLangCPP kbVC kbVC500 kbVC500bug kbVC600 kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

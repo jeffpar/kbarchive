@@ -1,0 +1,94 @@
+DOCUMENT:Q307742  11-JUL-2002  [exchange]
+TITLE   :Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The call to the HrCreateDirEntryID function in the Exchange SDK March 2001 or
+earlier no longer works correctly after you upgrade to Microsoft Outlook 2002.
+This call works if you are using Microsoft Outlook 2000.
+
+CAUSE
+=====
+
+This behavior occurs because of a problem in the Exchange SDK. In HrSearchGAL,
+in Edkutils\Edkutils.c, the following call is incorrect:
+
+       hr = MAPICALL(lpAdrBook)->OpenEntry(
+   		        lpAdrBook, 
+   		        cbGALEntryID, 
+   		        lpGALEntryID, 
+   		        &IID_IMAPIContainer, 
+   		        MAPI_BEST_ACCESS | MAPI_DEFERRED_ERRORS, 
+   		        &ulGALObjectType, 
+   		        (LPUNKNOWN *) &lpGAL);
+
+The problem is that the IID that is requested is IID_IMAPIContainer, but the code
+treats the returned interface pointer as a pointer to an IABContainer interface.
+(IABContainer is derived from IMAPIContainer.) In Outlook 2000, the interface
+that is returned from the OpenEntry call is an IABContainer interface, which
+works. In Outlook 2002, the interface that is returned is actually an
+IMAPIContainer interface, not an IABContainer interface. Therefore, when the
+code later tries to call IABContainer::ResolveNames, the vtable entry is not
+present, and the application stops unexpectedly (crashes).
+
+RESOLUTION
+==========
+
+Change the IID_IMAPIContainer to IID_IABContainer in the following call:
+
+       hr = MAPICALL(lpAdrBook)->OpenEntry(
+   		        lpAdrBook, 
+   		        cbGALEntryID, 
+   		        lpGALEntryID, 
+   		        &IID_IMAPIContainer, 
+   		        MAPI_BEST_ACCESS | MAPI_DEFERRED_ERRORS, 
+   		        &ulGALObjectType, 
+   		        (LPUNKNOWN *) &lpGAL);
+
+The Exchange SDK includes full source code, so it is possible to fix the call.
+After you fix the call, you must perform a full rebuild of the Exchange SDK
+library.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: OFFXP
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbAudDeveloper kbExchangeSearch kbSDKSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

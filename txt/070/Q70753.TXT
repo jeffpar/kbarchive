@@ -1,0 +1,64 @@
+DOCUMENT:Q70753  17-DEC-2000  [msdos]
+TITLE   :DELOLDOS Command and OLD_DOS Directory Creation Limit
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft MS-DOS Upgrade for versions 5.0 and later, DELOLDOS command
+deletes all OLD_DOS.x directories residing in the root directory of the boot
+drive. Upon deletion of the these directories, DELOLDOS.EXE itself is also
+deleted from the directory it resides in.
+
+The MS-DOS Upgrade installation process can create a total of 99 old DOS
+directories named OLD_DOS.<x>:
+
+   OLD_DOS.1 ... OLD_DOS.99
+
+The <x> value is based upon the integer extensions of any previous OLD_DOS
+directories residing in the root directory of the boot drive, so that <x>
+is the next integer available in order starting at 1. When the installation
+process attempts to create the 100th OLD_DOS directory, it instead replaces the
+last OLD_DOS directory made, creating a directory with the same name.
+
+MORE INFORMATION
+================
+
+If the current DOS directory in use is deleted prior to installation or not
+detected when installing, an OLD_DOS.x directory is still created when
+installing; however, it contains only the README.NOW file. Also, any non- DOS
+files put into the DOS directory aren't saved in the OLD_DOS.x during
+installation. Those files are put into the new installed DOS directory instead.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

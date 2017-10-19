@@ -1,0 +1,70 @@
+DOCUMENT:Q137173  07-JAN-2000  [mspress]
+TITLE   :UPGRADING TO MS WIN 95 SBS: Corrections and Comments
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Upgrading to Microsoft Windows 95 Step by Step ISBN 1-55615-816-5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Upgrading to Microsoft Windows 95 Step by
+Step."
+
+The following topic is covered:
+
+ - Page 7: Error opening History.wri: "Unable to read from..."
+
+MORE INFORMATION
+================
+
+In addition to a description of the book's problems, this document might also
+include sections labeled "Correction" and "Comments." Please note that the
+"Correction" section is worded for correcting the book and does not necessarily
+address the problem introduced by the book error. The "Comments" section
+contains specific information for working around problems.
+
+Page 7:  Error opening History.wri: "Unable to read from..."
+------------------------------------------------------------
+
+This error is not caused by an error in the book or the practice files. This
+error is caused by an improper association for Write files when you are using
+Windows 95.
+
+Comments:
+
+For additional information about this problem and how to work around it, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q137140 Unable to Read from <Path>, It Is Open by Someone Else
+
+Additional query words: mspress ms_press press bookbug
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

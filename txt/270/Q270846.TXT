@@ -1,0 +1,67 @@
+DOCUMENT:Q270846  04-DEC-2001  [homemm]
+TITLE   :Microsoft Reader: Minimum System Requirements for Windows
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the minimum system requirements that are needed to run
+Microsoft Reader on a Microsoft Windows-based computer.
+
+MORE INFORMATION
+================
+
+To run Microsoft Reader on a Windows-based computer, you need:
+
+ - Pentium 75 MHz or higher microprocessor
+
+ - 16 megabytes (MB) of RAM
+
+ - Approximately 19 MB of available hard disk space (Microsoft Reader is 3.6 MB,
+   but additional hard disk space is required for installation)
+
+ - Operating System-Microsoft Windows 98 platforms, Microsoft Windows NT4 SP6,
+   Microsoft Windows 2000 platforms, Microsoft Windows XP, and Microsoft Windows
+   Me
+
+ - Microsoft Internet Explorer 4.0 Service Pack 1 or later
+
+ - VGA or higher resolution monitor and video card capable of displaying 16 bit
+   color Microsoft mouse or compatible pointing device
+
+In addition, an Internet connection is required to gain access to the Bookstore
+feature of the program and to download additional books for Microsoft Reader.
+
+Additional query words: msreader ebook requires sysreqs
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbReaderSearch kbReader200
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

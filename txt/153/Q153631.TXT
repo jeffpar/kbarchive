@@ -1,0 +1,68 @@
+DOCUMENT:Q153631  05-JAN-2000  [frontpg]
+TITLE   :FP: "Error Code 1722" When You Install IIS Extensions
+PRODUCT :Word Front Page
+PROD/VER::; WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to uninstall FrontPage server extensions for the Microsoft
+Internet Information Server, you may receive the following error message:
+
+   Unable to read version number for Microsoft Internet Information Server:
+   Error code 1722
+
+CAUSE
+=====
+
+The World Wide Web services were not running on the Microsoft Internet
+Information Server when you initiated the uninstall procedure.
+
+RESOLUTION
+==========
+
+Make sure the Microsoft Internet Information Server is running before you
+attempt to uninstall FrontPage server extensions.
+
+To start Microsoft Internet Information Server, use the following steps:
+
+1. Open the Microsoft Internet Server icon group.
+
+2. Double-click Internet Service Manager.
+
+3. Select World Wide Web, and click Start Service on the Properties menu.
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : :; WINDOWS:1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

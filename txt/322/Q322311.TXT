@@ -1,0 +1,103 @@
+DOCUMENT:Q322311  26-JUL-2002  [exchange]
+TITLE   :XADM: Users Cannot Move Messages with Attachments to Outlook
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When users try to move messages that contain attachments from a Microsoft
+Exchange Server mailbox to their Microsoft Outlook Personal Storage (PST) file,
+or when they try to move messages that contain attachments from a PST file to an
+Exchange Server mailbox, they may receive an error message similar to the
+following:
+
+   Can't move the items. The item could not be moved. It was either already
+   moved, or deleted, or access was denied.
+
+CAUSE
+=====
+
+This issue may occur if the following conditions are true:
+
+ - Symantec Norton AntiVirus 2.1x for Microsoft Exchange (NAVMSE) is installed
+   on the Exchange Server.
+
+   -and-
+
+ - Norton AntiVirus attachment scanning is configured to intercept message
+   attachments.
+
+RESOLUTION
+==========
+
+To resolve this issue, reconfigure Norton AntiVirus for Microsoft Exchange so
+that attachment scanning does not intercept message attachments during a move
+operation. For information about how to do this, please visit the following
+Symantec Web site:
+
+   http://service4.symantec.com/SUPPORT/ent-security.nsf/d75a3b1e1929789b852567ac006431d3/7b072b7d3cf6f00988256a220027aac5?OpenDocument
+
+MORE INFORMATION
+================
+
+For additional information about the different Auto-Protect modes available in
+Norton AntiVirus for Microsoft Exchange 2.1, please visit the following Symantec
+Web site:
+
+   http://service2.symantec.com/SUPPORT/ent-security.nsf/d75a3b1e1929789b852567ac006431d3/af21e652b2b2516b88256a220027a934?OpenDocument
+
+For additional information about how to use background scanning with Norton
+AntiVirus for Microsoft Exchange 2.1, please visit the following Symantec Web
+site:
+
+   http://service2.symantec.com/SUPPORT/ent-security.nsf/d75a3b1e1929789b852567ac006431d3/4e586e82dc9a14ff88256a2200272915?OpenDocument
+
+Microsoft provides third-party contact information to help you find technical
+support. This contact information may change without notice. Microsoft does not
+guarantee the accuracy of this third-party contact information.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q269439 XADM: Synchronization of .ost Files Does Not Work When the Antivirus
+   API Is Enabled
+
+
+The third-party products that are discussed in this article are manufactured by
+companies that are independent of Microsoft. Microsoft makes no warranty,
+implied or otherwise, regarding the performance or reliability of these
+products.
+
+Additional query words: vapi
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchangeClientSearch kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

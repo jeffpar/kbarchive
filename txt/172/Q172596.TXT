@@ -1,0 +1,65 @@
+DOCUMENT:Q172596  07-JAN-2000  [mspress]
+TITLE   :Clip.exe Not Compatible wth Notepad
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Server 4.0 Resource Kit ISBN 1-57231-344-7 
+ - MSPRESS Microsoft Windows NT Workstation 4.0 Resource Kit ISBN 1-57231-343-9 
+ - MSPRESS Microsoft Windows NT Server 4.0 Resource Kit, Supplement One ISBN 1-57231-559-8 
+ - MSPRESS Microsoft Windows NT Server 4.0 Resource Kit, Supplement Two ISBN 1-57231-626-8 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you save text to the Clipboard using Clip.exe, and then attempt to paste the
+text into Notepad, the text will not appear.
+
+CAUSE
+=====
+
+This behavior is due to a known error in Notepad. You cannot use Clip.exe to
+paste text into Notepad. This is noted in the Rktools.hlp file that was released
+with the Microsoft Windows NT Server 4.0 Resource Kit, Supplement Two.
+
+This error is not known to occur in any other simple text editors. If you
+experience this error with another text editor, please send e-mail to
+RKINPUT@MICROSOFT.COM.
+
+STATUS
+======
+
+Microsoft Press has confirmed this to be a problem in the products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available
+
+
+Additional query words: mspress press ms_press ntreskit ntrk 1-57231-344-7 1-57231-343-9 1-57231-559-8 1-57231-626-8
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword3
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

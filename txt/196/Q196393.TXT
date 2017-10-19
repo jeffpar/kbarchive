@@ -1,0 +1,65 @@
+DOCUMENT:Q196393  07-MAY-1999  [exchange]
+TITLE   :XADM: Move Server Wizard Error "Server Contains Public Folders"
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Exchange Server 5.5 Move Server Wizard, the following error may
+occur:
+
+   WARNING: The server '<server name>' contains public folders. These
+   public folders and their contents will be removed from this server as
+   part of the move process.
+
+   To ensure these folders remain available in the '<site name>' site
+   after
+   this server moves, verify that they are homed on a different server in
+   the '<site name>' site before continuing.
+
+CAUSE
+=====
+
+If there are any Public Folders homed on the server being moved this error will
+occur.
+
+WORKAROUND
+==========
+
+To work around this problem, verify that there is a replica of each Public
+Folder on another server in the site and that the data has been replicated. Or
+verify that the data has been backed up to a PST or News Group server. See
+Public Folder in the Help file in the Move Server Wizard for more information on
+saving Public Folder information.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

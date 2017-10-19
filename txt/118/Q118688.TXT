@@ -1,0 +1,78 @@
+DOCUMENT:Q118688  17-DEC-2000  [win95x]
+TITLE   :Problems Using COM3 or COM4 on a Gateway Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You do not have access to the COM3 or COM4 port on your Gateway computer.
+
+CAUSE
+=====
+
+Some Gateway computers do not release the interrupt when they are finished using
+COM1 or COM2, thus preventing Windows 95 from using COM3 or COM4.
+
+
+WORKAROUND
+==========
+
+1. Consult your hardware manual or Gateway Technical Support for assistance
+   setting the extended COM port to use an interrupt other than 3 or 4.
+
+   NOTE: Most Gateway computers support IRQ 2, 5, and 7.
+
+2. In Windows 95, use Device Manager to change the settings for the COM port as
+   follows:
+
+   a. Click the Start button, point to Settings, then click Control Panel.
+
+   b. Double-click the System icon.
+
+   c. Click the Device Manager tab.
+
+   d. Click the PLUS SIGN (+) to expand the Ports listing, then double- click
+      the appropriate communications port.
+
+   e. Click the Resources tab, then double-click the Interrupt Request option.
+
+   f. Choose an IRQ other than 3 or 4.
+
+MORE INFORMATION
+================
+
+Gateway computers are manufactured by a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding these products' performance or
+reliability.
+
+Additional query words: gateway 2000 onboard accessing 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,70 @@
+DOCUMENT:Q113537  18-NOV-1999  [accother]
+TITLE   :Workgroup Add-On Displays Network Connections as Disconnected
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:MS-DOS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the NET USE command to view your current network connections,
+Microsoft Workgroup Add-On for MS-DOS displays the status of a network
+connection as "Disconnected." However, switching to the drive letter assigned to
+that connection shows that a connection does exist. For example:
+
+   Status          Local name      Remote name
+   ---------------------------------------------
+   Disconnected    D:              \\TEST1\TEST1
+
+   The command completed successfully.
+
+In this example, switching to drive D allows you to perform a directory search
+and other functions, proving that a connection with \\TEST1\TEST1 does exist
+despite the displayed status.
+
+CAUSE
+=====
+
+Ghosted connections are enabled by default when you use the NET START FULL
+command and load the full redirector. This means instead of automatically
+restoring your previous network connections, Microsoft Workgroup Add-On for
+MS-DOS assigns a drive letter to that connection but does not establish the
+network connection until you actually try to use it. This helps reduce network
+traffic and logon time.
+
+Loading the basic redirector does not enable ghosted connections--actual
+connections are made when you log on. The basic redirector is loaded by default.
+To change the redirector, type "setup" (without the quotation marks) in the
+Microsoft Workgroup Add-On for MS-DOS subdirectory (C:\NET by default), choose
+Change Setup Options and then enable the basic or full redirector.
+
+Additional query words: 3.11 wfwg dos wgao not connected
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : MS-DOS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

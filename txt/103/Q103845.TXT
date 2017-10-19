@@ -1,0 +1,55 @@
+DOCUMENT:Q103845  16-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Completed Tasks Are Deleted in Schedule+ Calendar
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In versions 1.0 and 1.0a of Microsoft Schedule+ for Windows, once you have
+completed a task it is deleted from your calendar file and added to the Notes
+portion of the calendar for the day it was completed.
+
+CAUSE
+=====
+
+This is by design.
+
+RESOLUTION
+==========
+
+If you do not want completed tasks to be deleted from your calendar file, you
+can create a new project and move all completed tasks to this project, setting
+the due date of the task to None.
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

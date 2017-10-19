@@ -1,0 +1,137 @@
+DOCUMENT:Q295753  21-MAY-2002  [exchange]
+TITLE   :XFOR: Dirsync Between Exchange Server 5.5 & cc:Mail
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the directory synchronization (dirsync) process between
+Microsoft Exchange Server 5.5 and Lotus cc:Mail.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange Server uses directory synchronization to share address
+information with other messaging systems. You may have to periodically
+synchronize the Exchange Server and Lotus Notes directories to make sure that
+messages are delivered successfully in each environment.
+
+Any changes or updates to addresses in either system are synchronized at
+predetermined times that are set on the Microsoft Exchange Connector for Lotus
+Notes. After directory synchronization occurs, the address lists from both
+systems are adjusted to reflect any changes that occurred since the time of the
+last directory synchronization cycle.
+
+The dirsync process between Exchange Server 5.5 and Lotus cc:Mail proceeds as
+follows:
+
+1. The directory, mailing lists, and bulletin boards from the connecting cc:Mail
+   post office are exported in the form of the following files:
+
+   Directory = Export\Ccmdir.exp
+   Mailing Lists = Export\Ccmlist.exp
+   Bulletin Boards = Export\Ccmbb.exp
+
+2. Exchange Server parses the Ccmdir.exp file, and then calculates the number of
+   Exchange Server and cc:Mail entries that are retrieved from the directory.
+
+NOTE: Exchange Server receives all directory data, not only new items, from
+cc:Mail during the dirsync process.
+
+3. Exchange Server parses the Ccmlist.exp file, and then calculates the number
+   of cc:Mail mailing lists.
+
+4. Exchange Server parses the Ccmbb.exp file, and then calculates the number of
+   cc:Mail bulletin boards.
+
+5. Exchange Server searches through its directory, and then prepares a cc:Mail
+   Import file.
+
+6. Exchange Server compares the Import file that it created with the information
+   that is extracted from the cc:Mail post office, and then determines the
+   changes that are required.
+
+   NOTE: The data that is marked for deletion is written to the Import\Ccmdel.imp
+   file. Data that is marked for addition is written to the Import\Ccmdir.imp
+   file.
+
+7. Exchange Server imports the Ccmdel.imp to the cc:Mail post office, and then
+   deletes the Exchange Server entries that are marked for deletion.
+
+   NOTE: If there are no restrictions listed on the Import Container tab in the
+   "Connector for Lotus cc:Mail Properties" dialog box, only new deletions are
+   imported. However, some restrictions may indicate that dirsync may import
+   more data than new deletions only.
+
+8. Exchange Server imports the Ccmdir.imp file to the cc:Mail post office, and
+   then adds new Exchange Server entries to cc:Mail.
+
+   NOTE: If there are no restrictions listed on the Import Container tab of the
+   "Connector for Lotus cc:Mail Properties" dialog box, only new data is
+   imported. However, some restrictions may indicate that dirsync may import
+   more data than new entries only.
+
+9. Dirsync then updates the Exchange Server directory by making the correct
+   additions and deletions.
+
+10. Dirsync updates the cc:Mail mailing lists and bulletin boards in the
+   Exchange Server directory.
+
+REFERENCES
+==========
+
+For additional information about directory synchronization between Exchange
+Server and Lotus Notes, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q247524 XFOR: How to Determine Which Files to Modify for Directory
+   Synchronization with Lotus Notes
+
+   Q245223 XFOR: Filter Rules for Lotus Notes and Exchange Server Directory
+   Synchronization
+
+   Q183058 XFOR: Modifying the Display Name and Alias for cc:Mail Dirsync
+
+For more information about how to set up, deploy, and manage Exchange Server,
+visit the following Microsoft Web site:
+
+   http://www.microsoft.com/exchange/en/55/help/default.asp
+   (http://www.microsoft.com/exchange/en/55/help/default.asp)
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

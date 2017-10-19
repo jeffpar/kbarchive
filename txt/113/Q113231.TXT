@@ -1,0 +1,119 @@
+DOCUMENT:Q113231  16-OCT-1999  [win95x]
+TITLE   :Windows 3.1 Disk 3 Directory Listing (3.5 Inch 1.44 MB)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the directory listing for Disk 3 of the Microsoft Windows
+version 3.1 3.5-inch 1.44-megabyte disk set.
+
+MORE INFORMATION
+================
+
+Disk 3
+------
+
+   Volume in drive B is WIN31DISK3
+   Volume Serial Number is 080A-1213
+   Directory of B:\
+
+256COLOR BM_      4312 03-10-92   3:10a
+APPS     HL_     11491 03-10-92   3:10a
+ARGYLE   BM_       245 03-10-92   3:10a
+CALC     EX_     27999 03-10-92   3:10a
+CALC     HL_     12989 03-10-92   3:10a
+CALENDAR EX_     37995 03-10-92   3:10a
+CALENDAR HL_     13794 03-10-92   3:10a
+CANYON   MI_     17632 03-10-92   3:10a
+CARDFILE EX_     48673 03-10-92   3:10a
+CHARMAP  EX_     12015 03-10-92   3:10a
+CHIMES   WA_     10591 03-10-92   3:10a
+CHORD    WA_     11235 03-10-92   3:10a
+CLOCK    EX_     10140 03-10-92   3:10a
+DISK3                8 03-10-92   3:10a
+EGYPT    BM_       225 03-10-92   3:10a
+EXPAND   EXE     15285 03-10-92   3:10a
+FLOCK    BM_       468 03-10-92   3:10a
+GLOSSARY HL_     37606 03-10-92   3:10a
+HERCULES DR_     27462 03-10-92   3:10a
+MORICONS DL_     40447 03-10-92   3:10a
+MPLAYER  EX_     21454 03-10-92   3:10a
+MPLAYER  HL_      7872 03-10-92   3:10a
+MSADLIB  DR_     10495 03-10-92   3:10a
+NETWORKS WR_     26489 03-10-92   3:10a
+NOTEPAD  EX_     20018 03-10-92   3:10a
+PACKAGER EX_     40667 03-10-92   3:10a
+PACKAGER HL_     16647 03-10-92   3:10a
+PBRUSH   DL_      4904 03-10-92   3:10a
+PBRUSH   EX_    102781 03-10-92   3:10a
+PBRUSH   HL_     31527 03-10-92   3:10a
+PIFEDIT  HL_     27098 03-10-92   3:10a
+PRINTERS WR_     15312 03-10-92   3:10a
+PRINTMAN HL_     32765 03-10-92   3:10a
+README   WR_     32717 03-10-92   3:10a
+RECORDER DL_      7779 03-10-92   3:10a
+RECORDER EX_     24091 03-10-92   3:10a
+SCRNSAVE SC_      2626 03-10-92   3:10a
+SETUP    INI        92 03-10-92   3:10a
+SNDBLST  DR_     10122 03-10-92   3:10a
+SNDBLST2 DR_     10445 03-10-92   3:10a
+SOL      EX_     62451 03-10-92   3:10a
+SOL      HL_      8208 03-10-92   3:10a
+SOUNDREC EX_     31764 03-10-92   3:10a
+SOUNDREC HL_     10058 03-10-92   3:10a
+SSFLYWIN SC_      9705 03-10-92   3:10a
+SSMARQUE SC_      9635 03-10-92   3:10a
+SSMYST   SC_     11282 03-10-92   3:10a
+SYSINI   WR_     16616 03-10-92   3:10a
+TADA     WA_     23658 03-10-92   3:10a
+TERMINAL HL_     25674 03-10-92   3:10a
+THATCH   BM_       210 03-10-92   3:10a
+TIMER    DR_      3166 03-10-92   3:10a
+VADLIBD  38_      1952 03-10-92   3:10a
+VSBD     38_      2463 03-10-92   3:10a
+VTDAPI   38_      1824 03-10-92   3:10a
+WINFILE  EX_     89663 03-10-92   3:10a
+WINHELP  HL_     20313 03-10-92   3:10a
+WININI   WR_      9556 03-10-92   3:10a
+WINMINE  EX_     13634 03-10-92   3:10a
+WINTUTOR DA_     51813 03-10-92   3:10a
+WINTUTOR EX_     66632 03-10-92   3:10a
+WRITE    EX_    154980 03-10-92   3:10a
+WRITE    HL_     29556 03-10-92   3:10a
+
+       63 file(s)    1441326 bytes
+                        1024 bytes free
+
+Additional query words: 3.10 dirwin disk win31
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

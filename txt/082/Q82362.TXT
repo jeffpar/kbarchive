@@ -1,0 +1,72 @@
+DOCUMENT:Q82362  08-DEC-1999  [win95x]
+TITLE   :Large TrueType Fonts Print with Fine Lines on LaserJet II
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Printing TrueType fonts larger than 80 points on some Hewlett-Packard (HP)
+LaserJet Series II printers sometimes adds or subtracts fine, pixel-wide lines.
+
+CAUSE
+=====
+
+This is a known firmware problem with HP LaserJet Series II printers and is not
+a problem with the TrueType rasterizer.
+
+
+WORKAROUND
+==========
+
+To work around this problem, print TrueType fonts as graphics, as follows:
+
+1. Run Control Panel.
+
+2. Choose the Printers icon.
+
+3. From the list of printers, select the HP LaserJet Series II printer.
+
+4. Choose the Setup button.
+
+5. Choose the Options button.
+
+6. Select the Print TrueType As Graphics check box.
+
+The HP products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q185438  12-JUN-2001  [sna]
+TITLE   :How To Determine Session Status Using SLI API.
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the LUA/SLI interface to communicate with an IBM host application, it
+is necessary to make a call to SLI in order to determine if the session is still
+active. If SLI_BID is called, SLI_BID will block the calling thread until either
+the host sends a message to the SLI application, or the session is lost.
+
+If the host never sends data to the application, the SLI application can call
+SLI_RECEIVE and set the nowait flag in order to determine if the session is
+still active. SLI_RECEIVE with nowait will return immediately and will not block
+the calling thread.
+
+MORE INFORMATION
+================
+
+If the session has failed, SLI_RECEIVE(nowait) will return the following return
+codes:
+
+   primary_rc   = LUA_STATE_CHECK (0x0002)
+   secondary_rc = LUA_NO_SLI_SESSION  (0x00000034)
+
+If the session is still active, SLI_RECEIVE(nowait) will return the following
+return codes:
+
+   primary_rc   = LUA_UNSUCCESSFUL (0x0014)
+   secondary_rc = LUA_NO_DATA (0x00000011)
+
+REFERENCES
+==========
+
+Refer to the SNA Server LUA Programmer's Reference for more information about
+the SLI_RECEIVE and SLI_BID functions.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

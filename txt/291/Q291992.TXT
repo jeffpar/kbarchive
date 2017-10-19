@@ -1,0 +1,71 @@
+DOCUMENT:Q291992  18-JUN-2001  [iis]
+TITLE   :100% CPU Occurs When Refreshing Deleted Vdir in MetaEdit 2.0/2.1
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use MetaEdit 2.0 or MetaEdit 2.1 to view the properties of a virtual
+directory that has been deleted in the Microsoft Management Console (MMC), the
+following error message occurs twice:
+
+   An unknown error was encountered in a calling function, the error message
+   passed was:
+
+   "The following error occurred:"
+
+After the error messages are cleared, MetaEdit consumes 100% of CPU processing
+and does not respond to user input; however, you can close it from the Task
+Manager.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the IIS MetaEdit 2.2 Utility. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q232068 How to Download, Install, and Uninstall the IIS MetaEdit 2.2 Utility
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MetaEdit version 2.0 and 2.1 for
+IIS.
+
+
+Additional query words: iis 4 5 bug RK meta edit meta-edit
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

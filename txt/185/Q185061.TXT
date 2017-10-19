@@ -1,0 +1,62 @@
+DOCUMENT:Q185061  22-DEC-1999  [exchange]
+TITLE   :XFOR: Err Msg: Internet Mail Service Already Installed
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Exchange Server Internet Mail Service Wizard after performing a
+Remove All and a re-install of Exchange Server and recovering the database files
+Priv.edb or Dir.edb, you may receive the following error:
+
+   Service Already Installed
+
+WORKAROUND
+==========
+
+To work around this problem, delete the Internet Mail Service from
+Organization\Site\Configuration Container\Connections Container\Internet Mail
+Service, and then run the Internet Mail Service Wizard.
+
+MORE INFORMATION
+================
+
+If the Internet Mail Service was previously installed and configured, the
+directory or information store database may have information for that connector,
+and may have restored the information to the Exchange Server computer.
+
+The Internet Mail Service connector will be present in the Connections Container.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

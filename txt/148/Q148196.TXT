@@ -1,0 +1,72 @@
+DOCUMENT:Q148196  13-JUN-2001  [sna]
+TITLE   :IBM LANStreamer PCI Token Ring Adapter Identified as Ethernet
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install and configure an SNA Server 802.2 DLC link service using an
+IBM LANStreamer PCI Token Ring adapter, the 802.2 connection appears as Ethernet
+in the SNA Server Admin program. However, the LANStreamer adapter functions
+properly in the token ring network.
+
+CAUSE
+=====
+
+This problem occurs if the MediaType registry entry for the IBM LANStreamer PCI
+Token Ring adapter is set to 1 (Ethernet) during the installation of the SNA
+Server 802.2 DLC link service. This value is used by SNA Server Setup and is
+passed to the SNA Admin program.
+
+RESOLUTION
+==========
+
+To work around this problem, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q140149 SNA 802.2 Connection Icon Indicates Incorrect Network Type
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodsna 2.00 2.10 2.11 3.50 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

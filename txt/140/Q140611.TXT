@@ -1,0 +1,79 @@
+DOCUMENT:Q140611  03-AUG-2001  [visualc]
+TITLE   :PRB: InstallSHIELD Error: Setup requires a different version
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing InstallSHIELD SDK Edition from Microsoft Visual C++ version
+4.0, you may see the following error message when you try to run the Template
+application:
+
+   Setup requires a different version of Windows. Check to
+   make sure that you are running Setup on the Windows platform
+   for which it is intended.
+
+   Error 102.
+
+CAUSE
+=====
+
+The message occurs when a the _inst32i.ex_ does not exist in the directory where
+Setup.exe is located.
+
+RESOLUTION
+==========
+
+To correct the problem in both the Template application and in projects created
+with InstallSHIELD SDK Edition, copy the _inst32i.ex_ from the \Ishield\Disk1
+directory on the Visual C++ compact disc into the following two locations on the
+hard drive:
+
+   \Program Files\Stirling\InstallShield\Program
+
+   -and-
+
+   \Program Files\Stirling\InstallShield\Template\One\Disk1
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+This problem occurs only when InstallSHIELD is installed from Microsoft Visual
+C++ version 4.0. It does not occur when InstallSHIELD is installed from the
+Microsoft Win32 Software Development Kit.
+
+Additional query words: 4.00 Windows 95
+
+======================================================================
+Keywords          : kbsetup kbprb 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

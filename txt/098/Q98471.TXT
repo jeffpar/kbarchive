@@ -1,0 +1,54 @@
+DOCUMENT:Q98471  13-JUN-1999  [homegame]
+TITLE   :No Continue Button from Practice Range in Golf
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you hit the ball in the hole on either the Driving Range or the Chipping
+and Putting Range, the Post Shot Selection window will not have a Continue
+button. The only available buttons are Rehit and Drop.
+
+MORE INFORMATION
+================
+
+The lack of a Continue button is by design. To continue practicing, you need to
+click Drop and place the ball in a new position. At that point you can take
+another swing, start a new course, or exit the game (choose the appropriate
+command from the Game Menu).
+
+Additional query words: continue not there missing 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

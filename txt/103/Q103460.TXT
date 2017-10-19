@@ -1,0 +1,50 @@
+DOCUMENT:Q103460  12-NOV-1999  [pcmail]
+TITLE   :PC Ext: Running EXTERNAL.EXE Clears the Keyboard Buffer
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running the External Mail program (EXTERNAL.EXE) clears the keyboard buffer so
+that the F3 key does not recall the previous command line.
+
+RESOLUTION
+==========
+
+Although the F3 key does not work, you can use the Microsoft MS-DOS DOSKEY
+program (DOSKEY.COM) to recall the command. When the DOSKEY program is loaded
+into memory, you can press the UP ARROW key to recall previous MS-DOS commands.
+
+
+Additional query words: 3.00 3.00a 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a
+Version           : WINDOWS:3.0,3.0a,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

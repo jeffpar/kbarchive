@@ -1,0 +1,75 @@
+DOCUMENT:Q122788  13-NOV-2001  [visualc]
+TITLE   :FIX: Access Violation on MSVC.EXE When Scanning Dependencies
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbide kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Updating project dependencies or adding a resource file generates a message box
+containing this error:
+
+   MSVC.EXE
+   Exception: access violation (0xc0000005), Address <number>
+
+CAUSE
+=====
+
+The size of the resource file is a multiple of 4096 bytes.
+
+RESOLUTION
+==========
+
+Change the size of the resource file. Use the following steps to open the
+resource file as a text file and add a few spaces:
+
+1. From the File menu, choose Open.
+
+2. Change the Open As: option to Text.
+
+3. Select the resource file.
+
+4. Add some spaces.
+
+5. Save the file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+Additional query words: 2.00 9.00 Update visual workbench
+
+======================================================================
+Keywords          : kbide kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbVC200 kbVC32bitSearch
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

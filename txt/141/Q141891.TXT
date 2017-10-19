@@ -1,0 +1,83 @@
+DOCUMENT:Q141891  07-SEP-2001  [powerpt]
+TITLE   :PPT7: Printing Error: This Is Not a Valid Page Range
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbprint kbui kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have more than one presentation open at a time, and if you try to print
+these presentations by clicking the Print button, you may receive the following
+error message:
+
+   This is not a valid page range.
+
+Only one of the presentations is printed.
+
+CAUSE
+=====
+
+This error occurs if the starting slide number on one of your presentations is
+set to something other than 1.
+
+To change the starting slide number on a presentation:
+
+1. On the File menu, click Slide Setup.
+
+2. Change the number in the Number Slides From box.
+
+3. Click OK.
+
+RESOLUTION
+==========
+
+If you print a slide by clicking Print on the File menu, you can print each
+presentation correctly. However, you have to print each presentation
+separately.
+
+You can also print multiple presentations by doing the following:
+
+1. In My Computer or Windows Explorer, hold down the SHIFT key and click more
+   than one presentation.
+
+2. Using the right mouse button, click one of the presentations in the
+   selection.
+
+3. On the pop-up menu, click Print.
+
+STATUS
+======
+
+This problem has been corrected in Microsoft PowerPoint 97 for Windows.
+
+Additional query words: 7.00 invalid page range w_powerpt ppt7 ppt95
+
+======================================================================
+Keywords          : kbprint kbui kbPrinting 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

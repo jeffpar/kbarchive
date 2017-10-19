@@ -1,0 +1,68 @@
+DOCUMENT:Q271653  04-JUN-2001  [exchange]
+TITLE   :XADM: No Public Information Store After Move Server Wizard  Runs
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a public information store on an Exchange
+Server computer that does not have a public information store object.
+
+MORE INFORMATION
+================
+
+In some cases, if you use the Microsoft Exchange Server Move Server Wizard to
+move a server to a different site, a public information store object may not
+exist on the server. If an Exchange Server computer already exists in the site
+where you want to move the server, you cannot create a public information store
+object on the Exchange Server computer. When you create a new site by using the
+Move Server Wizard, if this site is the first Exchange Server computer in a
+site, the Move Server Wizard automatically creates a new public information
+store on the Exchange Server computer. This behavior is by design.
+
+To create a public information store on an Exchange Server computer that does not
+have a public information store object:
+
+1. Start the Microsoft Exchange Server Administrator program.
+
+2. Click the server that you want to create a public information store on.
+
+3. On the File menu, click New, click Other, click Information Store, and then
+   click Public Information Store.
+
+4. Quit the Administrator program, and then re-open it to view the new public
+   information store.
+
+Additional query words: pilgrim msw
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

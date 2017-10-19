@@ -1,0 +1,69 @@
+DOCUMENT:Q120757  08-AUG-2001  [winnt]
+TITLE   :WINS Manager: Config. and Replication Partners Menus Disabled
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+When using WINS Manager to administer a remote WINS server, you may notice
+that all menu options are enabled except for the Configuration and
+Replication Partners options of the Server menu.
+
+Most WINS Manager commands are performed using IP-to-IP (non-NetBIOS)
+connections. However, the Configuration and Replication Partners options
+run over RPC which requires NetBIOS sessions (over TCP/IP) to be
+established. If the NetBIOS connection fails, these two menu items will
+appear disabled. Similarly, attempting to use Registry Editor to remotely
+access the computer's Registry will fail because it also relies on an RPC
+connection to be established. Once a NetBIOS connection is made, these
+options are enabled.
+
+To fix this problem:
+
+1. Verify that you are a member of the Administrators or Domain Administrators
+   groups and that you are logged in with a proper password.
+
+2. Verify that you are able to get a "Name to IP" resolution of the name of the
+   WINS server you are focused on:
+
+   a. From the Options menu choose Preferences. Try setting the address display
+      as "Computer Name (IP Address)" and/or "IP Address (Computer Name)" and
+      set the focus again on the remote WINS server by selecting it from the
+      list of WINS servers.
+
+   b. Use the IPCONFIG /ALL command to find the IP addresses of the primary and
+      secondary WINS servers you are consulting. Then enter the IP address and
+      name of the remote WINS server as a static mapping into the database of
+      the primary and secondary WINS servers you are consulting.
+
+NOTE: Verify that all WINS servers are configured with static (not dynamic)
+IP Addresses; they should not be DHCP clients.
+
+Additional query words: grayed-out grey unavailable
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

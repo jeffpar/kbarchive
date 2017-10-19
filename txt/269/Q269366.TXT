@@ -1,0 +1,66 @@
+DOCUMENT:Q269366  21-AUG-2001  [automap]
+TITLE   :Pocket Streets 2001: Minimum System Requirements
+PRODUCT :Microsoft Automap
+PROD/VER::2.5
+OPER/SYS:
+KEYWORDS:kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pocket Automap Streets for Windows CE, version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements that are needed to run
+Microsoft Pocket Streets 2001.
+
+MORE INFORMATION
+================
+
+To run Pocket Streets 2001, you need:
+
+ - A handheld PC, palm-sized PC, or Pocket PC with at least 1 megabyte (MB) of
+   RAM for storage, and 1 MB of RAM for the operating system.
+
+ - Microsoft Windows CE version 2.0 or higher operating system.
+
+Every combination of devices and processors is supported, except a device based
+on the Intel Strongarm processor.
+
+REFERENCES
+==========
+
+For additional information about Pocket Streets 2001 and Intel Strongarm
+processors, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q269332 Error Message: Microsoft Pocket Streets 2001 Does Not Support the
+   Connected Device Type
+
+Additional query words: auto-map amap wince h/pc p/pc requires sysreqs
+
+======================================================================
+Keywords          : kbref kbimu 
+Technology        : kbOSWinCE kbAutomapSearch kbPocketSearch kbPocketAutomapSearch kbWinCESearch kbPocketAutomap250
+Version           : :2.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

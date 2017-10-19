@@ -1,0 +1,57 @@
+DOCUMENT:Q145798  07-JAN-2000  [iis]
+TITLE   :STOP Msg: Unable to Save C:\TEMP\FILENAME with Internet Explorer
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are running Internet Explorer version 1.5, you may get the following
+STOP message:
+
+   Unable to save C:\TEMP\<filename>. Disk may be full.
+   The attempt to load ftp:<filename> failed.
+
+CAUSE
+=====
+
+This may not be due to a full disk problem, as stated in the error. The problem
+can be due to the client browser not providing a \temp directory.
+
+WORKAROUND
+==========
+
+Create a temp directory off the root of the boot drive. For example: "C:\TEMP".
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbnetwork kbsetup 
+Technology        : kbiisSearch kbiis100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

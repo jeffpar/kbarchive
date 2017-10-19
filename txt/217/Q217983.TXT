@@ -1,0 +1,77 @@
+DOCUMENT:Q217983  22-MAY-1999  [winnt]
+TITLE   :Web Administration Is Not Removed by BackOffice Setup Program
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbsetup kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run BackOffice Setup to uninstall BackOffice Server, you may experience
+the following symptoms:
+
+ - Web Administration is not removed.
+
+ - The BOAdmin and NTadmin folders are not removed.
+
+ - The following reference to a virtual folder remains in the registry:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BackOffice Web Administrator
+
+CAUSE
+=====
+
+This problem can occur because BackOffice Setup does not entirely remove all
+components.
+
+RESOLUTION
+==========
+
+To successfully uninstall individual components, use the Add/Remove Programs
+tool in Control Panel:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Add/Remove Programs.
+
+2. Click the program you want to remove, and then click Add/Remove.
+
+3. Follow the instructions on the screen to uninstall the appropriate program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbsetup kbtool kbui 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

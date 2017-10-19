@@ -1,0 +1,54 @@
+DOCUMENT:Q103498  08-AUG-2001  [winnt]
+TITLE   :Telebit T2500 Modem Fails to Dial Out
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Telebit T2500 often fails to dial out on a port that is configured for
+Dial-out and Receive Calls when used with Windows NT Remote Access Service
+(RAS).
+
+CAUSE
+=====
+
+This problem is due to the modem dropping the data set ready (DSR or modem
+ready) signal when it is being reset for dial out by the RAS server. Other
+modems do not exhibit this behavior, like the Hayes Ultra 9600.
+
+The Telebit product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

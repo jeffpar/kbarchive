@@ -1,0 +1,74 @@
+DOCUMENT:Q97935  12-NOV-1999  [pcmail]
+TITLE   :PC WFW: 3.0 Windows Client Disk 2 [5.25, 1.2 MB]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory listing of the version 3.0 Microsoft Mail for
+Windows 5.25-inch Disk 2.
+
+ Volume in drive A is PROGRAMS
+ Volume Serial Number is 2011-3907
+ Directory of A:\ 
+ 
+AB       DL_     52234 10-07-92  12:00a
+CONVERT  EX_     13818 10-07-92  12:00a
+DEMILAYR DL_     28779 10-07-92  12:00a
+DEMIWLO  DL_      3316 10-07-92  12:00a
+FAXVIEW  EX_     49089 10-07-92  12:00a
+FAXVIEW  HL_     26157 10-07-92  12:00a
+FRAMEWRK DL_    123196 10-07-92  12:00a
+GDI      DL_     61896 10-07-92  12:00a
+IMPEXP   DL_     31457 10-07-92  12:00a
+KERNEL   DL_     31954 10-07-92  12:00a
+KEYBOARD DL_      2950 10-07-92  12:00a
+MAILMGR  DL_     23753 10-07-92  12:00a
+MAILSPL  EX_     25721 10-07-92  12:00a
+MAPI     DL_     29598 10-07-92  12:00a
+MSMAIL3  FO_      2637 10-07-92  12:00a
+MSSFS    DL_    147380 10-07-92  12:00a
+PABNSP   DL_     23244 10-07-92  12:00a
+SCHEDMSG DL_     36633 10-07-92  12:00a
+SENDFILE DL_      3503 10-07-92  12:00a
+SMI      XL_      2139 10-07-92  12:00a
+SMIAUTO  DO_      1924 10-07-92  12:00a
+SMIINST  DO_      3686 10-07-92  12:00a
+STORE    DL_    129389 10-07-92  12:00a
+TRNSCHED DL_      7994 10-07-92  12:00a
+ 
+       24 file(s)     862447 bytes
+
+
+Additional query words: 3.00 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

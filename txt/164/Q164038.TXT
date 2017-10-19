@@ -1,0 +1,69 @@
+DOCUMENT:Q164038  07-DEC-2000  [crossnet]
+TITLE   :Using Netmeeting with Microsoft Proxy Server
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:winnt:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbenv kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Proxy Server versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For information on using NetMeeting with Microsoft Proxy Server or other
+firewalls, please refer to Chapter 4 of the NetMeeting Resource Kit. The
+Resource Kit is available at the following URL:
+
+   http://www.microsoft.com/windows/NetMeeting/Corp/ResKit/default.ASP
+
+The following excerpt from the NetMeeting Resource Kit applies to Microsoft Proxy
+Server versions 1.0 and 2.0:
+
+   FIREWALL LIMITATIONS
+
+   Some firewalls cannot support an arbitrary number of virtual internal IP
+   addresses, or cannot do so dynamically. With these firewalls, you can
+   establish outbound NetMeeting connections from computers inside the firewall
+   to computers outside the firewall, and you can use the audio and video
+   features of NetMeeting. Other people, though, cannot establish inbound
+   connections from outside the firewall to computers inside the firewall.
+   Typically, this restriction is due to limitations in the network
+   implementation of the firewall.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q194797 Audio and Video Unavailable in NetMeeting through a Proxy Server
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbinterop 
+Technology        : kbAudDeveloper kbProxyServ100 kbProxyServSearch kbProxyServ200
+Version           : winnt:1.0,2.0
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

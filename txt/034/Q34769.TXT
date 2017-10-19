@@ -1,0 +1,60 @@
+DOCUMENT:Q34769  30-OCT-1999  [utilities]
+TITLE   :PRB: LINK Error "Do Not Change Diskette in Drive C"
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:3.x,5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.5,5.6
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 3.x, 5.01.20, 5.01.21, 5.03, 5.05, 5.1, 5.13, 5.15, 5.3, 5.31.009, 5.5, 5.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to link an application fails and Microsoft LINK generates the
+following message:
+
+   Temporary file .\xxxxxxxx has been created
+   Do not change diskette in drive C:
+
+CAUSE
+=====
+
+Not enough memory is available to link the application. The message appears when
+the linker generates a file on disk and the disk does not have enough room to
+hold the file. This situation occurs when the TMP environment variable does not
+exist, when it specifies a nonexistent or full directory, and when the disk that
+contains the directory is almost full.
+
+If you are compiling an application with Microsoft FORTRAN and linking with LINK
+version 3.55, reset the TMP environment variable to point to the root directory
+of a hard disk. This procedure may clear the error. If the TMP environment
+variable is set to a ramdrive or a network drive, setting it to point to a
+subdirectory on a hard disk may help.
+
+Additional query words: 3.x 5.01.20 5.01.21 5.03 5.05 5.10 5.13 5.15 5.30 5.31.009 5.50 5.60
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK3xDOSSearch kbLINK50120DOS kbLINK50121DOS kbLINK503DOS kbLINK510DOS kbLINK513DOS kbLINK515DOS kbLINK530DOS kbLINK53109DOS kbLINK550DOS kbLINK560DOS kbLINK505DOS
+Version           : MS-DOS:3.x,5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.5,5.6
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

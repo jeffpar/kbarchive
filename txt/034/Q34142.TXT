@@ -1,0 +1,64 @@
+DOCUMENT:Q34142  30-OCT-1999  [utilities]
+TITLE   :PRB: Link Error L1073: "File-segment Limit Exceeded"
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:3.x,5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.50,5.60
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 3.x, 5.01.20, 5.01.21, 5.03, 5.05, 5.1, 5.13, 5.15, 5.3, 5.31.009, 5.50, 5.60 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to link an application with Microsoft LINK fails and the linker
+displays the following message on the screen:
+
+   L1073: File-segment Limit Exceeded
+
+CAUSE
+=====
+
+The application contains more than the 255 segment limit imposed by the
+Microsoft Windows and OS/2 protected mode operating systems for each application
+and dynamic-link library (DLL).
+
+RESOLUTION
+==========
+
+Reduce the number of segments in the application. With Microsoft language
+compilers, modify the compiler command line to specify the /PACKCODE option, the
+/PACKDATA option, or both to place more information into each segment.
+
+MORE INFORMATION
+================
+
+The linker creates a file segment for each group definition, non-packed logical
+segment, and set of packed segments.
+
+Additional query words: 3.64 3.65 3.69 4.06 4.07 4.10 5.10 5.20 5.30 5.31.009 5.50 5.60
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK3xDOSSearch kbLINK50120DOS kbLINK50121DOS kbLINK503DOS kbLINK510DOS kbLINK513DOS kbLINK515DOS kbLINK530DOS kbLINK53109DOS kbLINK505DOS
+Version           : MS-DOS:3.x,5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.50,5.60
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

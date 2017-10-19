@@ -1,0 +1,71 @@
+DOCUMENT:Q274572  25-JUL-2001  [homegame]
+TITLE   :Crimson Skies Quits to End Menu with ATI Rage 128 Installed
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbsound kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you fly an Instant Action mission in Microsoft Crimson Skies, you may
+unexpectedly exit the mission after a few seconds of flight.
+
+CAUSE
+=====
+
+This behavior can occur if an ATI Rage 128 video adapter is installed in your
+computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, reduce the sound quality in the game:
+
+1. On the Main Menu screen in Crimson Skies, click Preferences.
+
+2. Click Audio.
+
+3. In the Sound Quality box, click Low.
+
+4. Click Accept Changes.
+
+5. Click Return To Main Menu.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msgame crimsonskies
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbsound kbimu kbHardware 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q121449  27-JUL-2001  [odbc]
+TITLE   :BUG: SQL Server: Certain Outer Joins Can Cause SQL_ERROR
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# Addon_Bugs: 10175 (2.00.1912)
+
+SYMPTOMS
+========
+
+A left outer join between two tables with two columns from each table
+participating in the outer join will generate a syntax error. This happens when
+the outer join escape clause is used.
+
+SQLExecDirect
+-------------
+
+   SELECT * FROM {oj testoj1 LEFT OUTER JOIN testoj2 ON
+                     testoj1.col1= testoj2.col1
+                        AND
+                        testoj1.col2 = testoj2.col2}
+
+This generates the syntax error:
+
+   SQLSTATE = 37000 NativeError = 102
+   ErrorMsg =[Microsoft][ODBC SQL Server Driver][SQL Server] Incorrect syntax
+   near '*='."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC SQL Server Driver
+version 2.00.1912. This problem does not occur in any 1.x version drivers. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 2.00.1912 Windows NT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

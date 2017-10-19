@@ -1,0 +1,68 @@
+DOCUMENT:Q78681  21-NOV-1999  [msdos]
+TITLE   :VTI Turbo 55 80286 Requires BIOS Version 3.22 or Later
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an Award BIOS revision earlier than 3.22 is installed on a VTI Turbo 55
+computer, the following problems may appear after upgrading to MS-DOS 5.0 or
+later:
+
+ - Difficulty reading and writing to the hard drive
+
+ - Machine not bootable with IDE drive
+
+ - Random POST (power on self test) error codes at boot-up (that is, 1701, 1702)
+
+The VTI Turbo 55 computer requires Award BIOS revision 3.22 or later to correctly
+run MS-DOS version 5.0.
+
+MORE INFORMATION
+================
+
+The VTI Turbo 55 is an 80286 based computer that originally shipped with Award
+Modular BIOS revision 3.03. This version of the BIOS does not support IDE
+drives, and may produce the above problems with MS-DOS 5.0 or later. This
+particular machine was manufactured by Samsung for the Philips Corporation, and
+also was issued under the model designation SAMSUNG S550.
+
+Philips and Award concur on the necessity of the BIOS upgrade for full
+functionality.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 6.22 MSDOS 5.00 SAMSUNG-S550 VENDEX 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch
+Version           : MS-DOS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

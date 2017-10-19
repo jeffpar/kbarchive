@@ -1,0 +1,68 @@
+DOCUMENT:Q156698  08-AUG-2001  [winnt]
+TITLE   :Disabling Access to Network Resources Using System Policies
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The default user icon in System Policy Editor lets you hide network resources in
+Network Neighborhood or even completely hide the Network Neighborhood itself
+(Default User\Shell\Restrictions\Hide Network Neighborhood).
+
+However, users can still browse network resources from Windows Explorer and My
+Computer using the Map Network Drive icon in addition to the NET VIEW and NET
+USE commands issued from the command prompt.
+
+WORKAROUND
+==========
+
+In My Computer, select the "Hide drives in My Computer" check box under Default
+User\Shell\Restrictions\Hide Drives. Although the Map Network Drive button
+continues to show a list of servers, logical network drives are not visible in
+Windows Explorer, My Computer, or at the MS-DOS prompt.
+
+Attempts to establish new logical drive connections from the command prompt
+appear to work. A NET USE to a network resource completes with the message
+"Command completed successfully." Attempts to access the resource, however, fail
+with an error message: "The device is not ready."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,46 @@
+DOCUMENT:Q73741  17-DEC-2000  [msdos]
+TITLE   :Task Swapper Problems on Tandy 1000 Computers
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Use of MS-DOS Shell Task Swapper on the Tandy 1000 computer may cause the system
+to hang. A machine may lock up completely or return an "Invalid COMMAND.COM...
+system halted" message. Use of MS-DOS Shell with Task Swapper disabled prevents
+the machine from hanging.
+
+
+
+Additional query words: 5.00 5.00a 6.00
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

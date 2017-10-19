@@ -1,0 +1,66 @@
+DOCUMENT:Q240960  04-SEP-1999  [homegame]
+TITLE   :Pandora's Box: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pandora's Box, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the minimum system requirements to play Pandora's Box.
+
+MORE INFORMATION
+================
+
+To play Pandora's Box, you need:
+
+ - A multimedia personal computer with a Pentium 100 or faster processor
+
+ - Microsoft Windows 95 or later, or Windows NT 4.0 Workstation with Service
+   Pack 3 or later
+
+ - 16 megabytes (MB) of RAM (32 MB recommended) on Windows 95/98, or 32 MB of
+   RAM on Windows NT (64 MB recommended)
+
+ - 100 MB of available hard disk space, plus an additional 50 MB of available
+   hard disk space for the Windows swap file
+
+ - A quad-speed or faster CD-ROM drive
+
+ - A super VGA video adapter with 1 MB or more of VRAM
+
+ - A keyboard and a Microsoft mouse or compatible pointing device
+
+ - A sound card and speakers or headphones recommended for sound playback
+
+Additional query words: 1.00 panbox puzzles msgame sysreq
+
+======================================================================
+Keywords          : kbenv kbsetup kbimu msgame kbfaq
+Technology        : kbGamesSearch kbPandoraSearch kbPandorasBox
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

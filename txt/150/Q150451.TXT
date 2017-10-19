@@ -1,0 +1,86 @@
+DOCUMENT:Q150451  09-AUG-2001  [win95x]
+TITLE   :Network Drive Buttons Missing from Windows Explorer Toolbar
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95 4.00
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click one of the following items in the All Folders pane in the Windows
+Explorer window, the Map Network Drive and Disconnect Net Drive buttons
+disappear from the toolbar:
+
+ - Control Panel
+
+ - Dial-Up Networking
+
+ - My Briefcase
+
+ - Printers
+
+ - Recycle Bin
+
+ - Recycled
+
+CAUSE
+=====
+
+The toolbar in Windows Explorer is context sensitive. The buttons that appear on
+the toolbar depend on the object that is selected.
+
+RESOLUTION
+==========
+
+To map or disconnect a network drive, use either of the following methods:
+
+ - Click a different item in the All Folders pane to restore the Map Network
+   Drive and Disconnect Net Drive buttons.
+
+ - Click Map Network Drive or Disconnect Network Drive on the Tools menu instead
+   of clicking the Map Network Drive or Disconnect Net Drive button on the
+   toolbar.
+
+MORE INFORMATION
+================
+
+The behavior described above does not occur in My Computer. When one of the
+objects listed above is selected in My Computer, the Map Network Drive and
+Disconnect Net Drive buttons are still displayed on the toolbar.
+
+To cause the toolbar to be displayed in Windows Explorer or My Computer, click
+Toolbar on the View menu.
+
+Additional query words: 4.0
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 95 4.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

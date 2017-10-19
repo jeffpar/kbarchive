@@ -1,0 +1,75 @@
+DOCUMENT:Q198861  19-FEB-1999  [exchange]
+TITLE   :XFOR:JPN cc:Mail DB8 PO w/Problem Characters Can Crash the NTVDM
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+During the migration of certain Lotus cc:Mail DB8 PostOffices (POs) that contain
+users with "5B", "5C", or "BE" characters (not including the quotation marks),
+the Lotus cc:Mail export program may cause an error message to appear in the
+Windows NT Virtual Dos Machine (NTVDM). The Migration Wizard patiently waits for
+further user input. After you click OK to remove the error message dialog box,
+migration continues on as normal. Note that for such POs, the error may occur
+during the export of one or many users, or not at all. Note that this applies
+only to PC98 (Japanese) processors running the Japanese version of the cc:Mail
+Migration Wizard.
+
+After migration, there is no indication of lost data for that particular user.
+
+CAUSE
+=====
+
+This problem is due to the Japanese cc:Mail Migration Wizard not handling the
+problematic characters correctly.
+
+RESOLUTION
+==========
+
+This problem only happens in rare circumstances.
+
+WORKAROUND
+==========
+
+None.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server 5.5.
+
+Additional query words: PC98, Japanese, cc:Mail migration wizard, NTVDM
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,52 @@
+DOCUMENT:Q98185  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator: Altimeter Jumps from 128,000 Feet to 0 Feet
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:4.0,4.0a,4.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, versions 4.0, 4.0a, 4.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Flight Simulator 4.0, if the altimeter increases past 128,000 feet, it will
+jump back to zero. This is a result of binary overflow in the display. When
+descending back through 128,000 feet, the altimeter will again be accurate. The
+aircraft performance is not affected.
+
+MORE INFORMATION
+================
+
+This limitation does not occur in Flight Simulator 5.0.
+
+Additional query words: 4.00 4.00a 4.00b alt. 128000' 128,000' skip error ft ft. foot 128000 fs4
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim400DOS kbSimSearch
+Version           : MS-DOS:4.0,4.0a,4.0b
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

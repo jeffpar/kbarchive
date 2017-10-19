@@ -1,0 +1,63 @@
+DOCUMENT:Q181625  10-AUG-2001  [winnt]
+TITLE   :Event ID 29 While Using Compaq Netelligent Token Ring Adapter
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Computers using a Compaq Netelligent Token Ring 16/4 network interface card
+(NIC) may lose network connectivity and the following error message may appear
+in the event log:
+
+   Event ID: 29
+   Source: CPQTRPCI
+   Description: The description for Event ID 29 in source (cpqtrpci) could
+   not be found. It contains the following insertion strings:
+   \device\cpqtrpci1,cpqtrpci1
+
+CAUSE
+=====
+
+The Compaq driver, Cpqtrpci.sys, does not automatically reinsert the card on the
+ring. The card will drop off the ring after a token ring beacon event.
+
+RESOLUTION
+==========
+
+To work around this problem, shut down and restart your computer. For more
+information, please contact Compaq.
+
+Additional query words: netellegent
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

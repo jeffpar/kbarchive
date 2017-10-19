@@ -1,0 +1,56 @@
+DOCUMENT:Q98961  09-NOV-1999  [macmail]
+TITLE   :Mac Fax: Compatible Modems
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following modems are compatible with version 3.0 of the Microsoft Mail for
+AppleTalk Network Gateway to Fax.
+
+   AppleFax Modem from Apple Computer
+
+   OrchidFax Modem from Orchid Technologies
+
+   FlexFax Modem from Circuit Research
+
+The FlexFax modem is the only modem available for retail sale. The AppleFax and
+the OrchidFax modems may be available from a reseller organization such as Sun
+Electronics or Pre-Owned Electronics.
+
+Circuit Research, which is based in Nashua, New Hampshire, can be contacted by
+calling (603) 880-4000.
+
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

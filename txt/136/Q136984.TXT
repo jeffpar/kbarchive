@@ -1,0 +1,74 @@
+DOCUMENT:Q136984  08-NOV-2001  [homemm]
+TITLE   :Julia Child: Windows 95 Installation Instructions Not Included
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0; WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Julia Child Home Cooking with Master Chefs version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Julia Child does not include Windows 95 Setup instructions.
+
+RESOLUTION
+==========
+
+This article provides instructions on how to install Microsoft Julia Child on
+computers running Microsoft Windows 95.
+
+NOTE: The following instructions assume your CD-ROM drive is drive D.
+
+To setup Julia Child in Windows 95, do the following:
+
+1. Insert the Julia Child compact disc into your CD-ROM drive.
+
+2. Click the Start button, and then click Run.
+
+3. In the Open dialog box, type the following and click OK.
+
+   "d:\setup" (without the quotation marks)
+
+4. Follow the on-screen installation instructions.
+
+MORE INFORMATION
+================
+
+Windows 95 applications use an Autorun.inf file to automatically install
+multimedia applications. Julia Child does not contain an Autorun.inf file.
+
+The compact disc case insert states Microsoft Julia Child Home Cooking with
+Master Chefs will install to Microsoft Windows operating system versions 3.1 or
+later, including Windows 95. However, the installation program does not
+automatically detect and install Julia Child on systems running Microsoft
+Windows 95.
+
+Additional query words: kbhowto Julia Child Home Cooking with Master Chefs multi media multimedia multi-media mmtitles kbmm 1.00
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch _IKkbbogus kbJuliaChild
+Version           : :1.0; WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

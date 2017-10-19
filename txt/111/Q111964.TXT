@@ -1,0 +1,48 @@
+DOCUMENT:Q111964  18-SEP-1999  [win3x]
+TITLE   :WinPopup Sends Global Message to Entire Workgroup in WFWG 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.11
+
+WINDOWS
+
+kbnetwork kbtool
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+If you use Windows for Workgroups version 3.11 WinPopUp to send a global
+message using an asterisk (*), the message is broadcast to your machine's
+current workgroup, not the whole network.
+
+NOTE: There is no way to limit a user's ability to send global messages.
+
+Additional query words: 3.11 win pop up popup winpop-up
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q122870  14-OCT-1999  [win3x]
+TITLE   :Infinite Disk Does Not Support 32-Bit File Access
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Chili Pepper Software Infinite Disk versions 2.1 and earlier are incompatible
+with Windows for Workgroups 32-bit file access. Activating 32- bit file access
+in Windows for Workgroups while running Infinite Disk may corrupt program and/or
+data files on the hard disk drive.
+
+MORE INFORMATION
+================
+
+Infinite Disk is a utility program designed to optimize disk space by monitoring
+access of files and compressing those files that have not been accessed for a
+given amount of time. The files are compressed and automatically "recalled"
+(uncompressed) by Infinite Disk terminate-stay- resident programs (TSRs).
+Infinite Disk allows you to indicate which files should be monitored for
+compression and what amount of time should pass before a file is compressed.
+
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q92463 "Using Infinite Disk with Windows 3.1"
+
+Infinite Disk is manufactured by Chili Pepper Software, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3rdparty 3.11 incompatible compression vcache
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

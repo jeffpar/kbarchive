@@ -1,0 +1,89 @@
+DOCUMENT:Q249037  12-MAR-2000  [exchange]
+TITLE   :XADM: Event 4096 While InterOrg Synchronization Tool Is Running
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbtool exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error messages may appear in the application log while the
+InterOrg Synchronization tool is running:
+
+   Event Type: Warning
+   Event Source: _Exchange Inter-Org Synch
+   Event Category: None
+   Event ID: 4096
+   Date: 11/24/1999
+   Time: 11:51:55 AM
+   User: N/A
+   Computer: Computer_Name
+   Description:
+   InterOrg: CConfigData::Initialize DAPIStart Alias/Display Name Generation
+   disabled. 80001010
+
+   Event Type: Error
+   Event Source: _Exchange Inter-Org Synch
+   Event Category: None
+   Event ID: 4096
+   Date: 1/17/2000
+   Time: 5:39:01 PM
+   User: N/A
+   Computer: Computer_Name
+   Description:
+   InterOrg: **DAPIRead**
+   Error: c0000081 (null) (null) (null)
+
+Even if these error messages are displayed, the InterOrg Synchronization tool may
+successfully synchronize the organizations.
+
+CAUSE
+=====
+
+This behavior occurs because registry entries or files required by Directory
+Application Program Interface (DAPI) are missing or invalid. This behavior can
+occur when the Exchange Server Administrator program is installed incompletely.
+
+RESOLUTION
+==========
+
+To resolve this issue, verify that you have the correct files and registry
+settings on your computer, using the steps outlined in the following Microsoft
+Knowledge Base article:
+
+   Q169551 INFO: Items Required to Use DAPI
+
+If there are missing or incorrect items, remove and reinstall the Exchange Server
+Administrator program.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

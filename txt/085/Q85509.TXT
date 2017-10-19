@@ -1,0 +1,91 @@
+DOCUMENT:Q85509  06-MAY-2001  [masm]
+TITLE   :FIX: ORG Calculated from Label May Fail in 6.0a/6.0b
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Macro Assembler (MASM) versions 6.0a and 6.0b, if the expression
+for an ORG directive is calculated from a label, the ORG directive will not give
+the correct results. The origin set by the ORG directive will be off by the
+value of the current location counter ($) prior to the ORG directive.
+
+RESOLUTION
+==========
+
+The sample code below demonstrates a macro that can be used to correct the
+behavior of ORG. This macro should be used only if the expression being supplied
+to ORG was calculated using a label. If the expression being supplied to ORG was
+not calculated using any labels, the ORG directive should work correctly.
+
+This macro works correctly only under MASM versions 6.0a and 6.0b.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 6.0a, and 6.0b.
+This problem was corrected in MASM for MS-DOS version 6.1.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   ORGFIX MACRO arg1             ; This macro can be used
+      ORG (arg1- ($- @CurSeg))   ; whenever the origin you are
+   ENDM                          ; trying to set contains a LABEL
+                                 ; or $ as part of the expression.
+   .MODEL small
+   .STACK 4096
+
+   .CODE
+   start LABEL BYTE
+      .startup
+      .exit 0
+   finish LABEL BYTE
+
+   ORG ((finish- start)+ 10h)    ; This will incorrectly set
+   tst1 LABEL BYTE               ; the origin.
+
+   ORGFIX ((finish- start)+ 10h) ; This will correctly set
+   tst2 LABEL BYTE               ; the origin.
+
+      DB 'hello'
+   END
+
+Additional query words: 6.00a 6.00b buglist6.00a buglist6.00b fixlist6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600a kbMASM600b
+Version           : MS-DOS:6.0a,6.0b
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q182966  04-MAR-2002  [exchange]
+TITLE   :XADM: Exchange 5.0 SP2 Upgrade Fails with No Mapping Error
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to upgrade to Service Pack 2 on Exchange 5.0, the upgrade fails
+with the following error message:
+
+   No mapping between account names and security IDs was done.
+
+   Microsoft Windows NT
+   ID no: 0xc0020534
+
+WORKAROUND
+==========
+
+To work around this problem, make sure that the service account is listed on all
+Exchange services instead of the system account. To check this, go to Control
+Panel / Services. Double-click each service and look at the Log On As box. "This
+Account" should be selected, and the Exchange service account should be entered
+in this field.
+
+The upgrade to Service Pack 2 should now complete successfully.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

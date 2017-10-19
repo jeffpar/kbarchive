@@ -1,0 +1,175 @@
+DOCUMENT:Q89149  08-NOV-2001  [homemm]
+TITLE   :ErrMsg: Audio Failed: MIDI File Does Not Exist or Is Invalid
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbmm kbsound kbprbkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 
+ - Microsoft Bookshelf '95 for Windows 95 
+ - Microsoft Bookshelf 1996-97 for Windows 
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play a MIDI music clip in one of the programs listed at the
+top of this article, you may experience one or more of the following symptoms:
+
+ - You receive one of the following error messages:
+
+   Audio Failed: MIDI file does not exist or is invalid
+
+   No MIDI device available
+
+ - The cursor flashes for a moment and the program does not play the MIDI music
+   clip.
+
+CAUSE
+=====
+
+This behavior can occur if the [MCI] MIDI Sequencer driver is missing, disabled,
+or damaged.
+
+MORE INFORMATION
+================
+
+To install the [MCI] MIDI Sequencer driver, use the appropriate method for your
+version of Microsoft Windows:
+
+Installing MIDI Sequencer in Windows 98
+---------------------------------------
+
+To install the MIDI Sequencer device in Microsoft Windows 98, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add New Hardware, and then click Next.
+
+3. When you are prompted to search for plug and play devices, click Next.
+
+4. When you are prompted to search for new hardware devices, click No, and then
+   click Next.
+
+5. Under Hardware Types, click Sound, Video And Game Controllers, and then click
+   Next.
+
+6. Under Manufacturers, click Microsoft MCI.
+
+7. Under Models, click MIDI Sequencer Device (Media Control), and then click
+   Next.
+
+8. Click Finish.
+
+9. Follow the directions on the screen to finish installing the MIDI Sequencer
+   device.
+
+Enabling MIDI Sequencer in Windows 98
+-------------------------------------
+
+To enable the MIDI Sequencer Device in Windows 98, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. On the Devices tab, double-click Media Control Devices.
+
+4. Click MIDI Sequencer Device, and then click Properties.
+
+5. Click Use This Media Control Device, and then click OK.
+
+6. Click OK.
+
+Installing MIDI Sequencer in Windows 95
+---------------------------------------
+
+To install the MIDI Sequencer device in Microsoft Windows 95, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add New Hardware, and then click Next.
+
+3. When you are prompted to search for new devices, click No, and then click
+   Next.
+
+4. Under Hardware Types, click Sound, Video And Game Controllers, and then click
+   Next.
+
+5. Under Manufacturers, click Microsoft MCI.
+
+6. Under Models, click MIDI Sequencer Device (Media Control), and then click
+   Next.
+
+7. Click Finish.
+
+8. Follow the directions on the screen to finish installing the MIDI Sequencer
+   device.
+
+Enabling MIDI Sequencer in Windows 95
+-------------------------------------
+
+To enable the MIDI Sequencer Device in Windows 95, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. On the Advanced tab, double-click Media Control Devices.
+
+4. Click MIDI Sequencer Device, and then click Properties.
+
+5. Click Use This Media Control Device, and then click OK.
+
+6. Click OK.
+
+Installing MIDI Sequencer in Windows 3.x
+----------------------------------------
+
+To install [MCI] MIDI Sequencer in Microsoft Windows 3.x or Microsoft Windows for
+Workgroups 3.x, follow these steps:
+
+1. In Program Manager, double-click the Main group, and then double-click
+   Control Panel.
+
+2. Double-click Drivers.
+
+3. Click Add.
+
+4. Click [MCI] MIDI Sequencer, and then click OK.
+
+5. Follow the instructions on the screen to finish installing [MCI] MIDI
+   Sequencer.
+
+Additional query words: err msg viewer kbmm mmtitles usage dev/drv win95 anthem
+
+======================================================================
+Keywords          : kberrmsg kbmm kbsound kbprb kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbBookshelfSearch kbEncartaEncycSearch kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

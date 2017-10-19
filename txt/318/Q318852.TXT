@@ -1,0 +1,81 @@
+DOCUMENT:Q318852  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Err Msg: The Character May Be Out of Date...
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to enter Microsoft Asheron's Call, you receive an error message
+similar to the following:
+
+   The character may be out of date or no longer usable.
+
+CAUSE
+=====
+
+This error message normally occurs because of a server error.
+
+RESOLUTION
+==========
+
+To continue playing Asheron's Call, abandon that character and create or use
+another one.
+
+Although there is no way to get the character back, if you submit a bug report on
+this issue, you can help the Asheron's Call team to prevent this problem from
+happening in the future. To submit a bug report, please see the following Web
+site: http://bugs.zone.com Please include the following character information:
+
+ - Name
+
+ - World
+
+ - Level
+
+ - Type
+
+ - Area in the world
+
+ - Last actions taken with the character
+
+MORE INFORMATION
+================
+
+For additional information about lost characters or items, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q260003 Asheron's Call: Unable to Restore Characters or Lost Items
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbAsheronSearch kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

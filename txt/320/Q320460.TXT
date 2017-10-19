@@ -1,0 +1,87 @@
+DOCUMENT:Q320460  30-MAY-2002  [homegame]
+TITLE   :Zone: "Cannot Launch Game" Err Msg When You Try to Play a Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to play any game on the Zone (for example, Internet Backgammon),
+you may receive the following error message:
+
+   Error: Cannot launch game. A Web page error is preventing the game from
+   opening. Try refreshing the page, or try again later.
+
+CAUSE
+=====
+
+This behavior may occur if an antivirus program or firewall program, such as
+Norton Antivirus or Norton Internet Security, is installed and running on your
+computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit all antivirus and firewall programs before you try
+to play games on the Zone. For more information about your antivirus or firewall
+program, use the program's Help feature, see the program's manual, or contact
+the manufacturer.
+
+NOTE: When you quit these programs, the antivirus or firewall protection that
+these programs provide becomes unavailable. To restore the protection, restart
+these programs when you finish playing games on the Zone.
+
+MORE INFORMATION
+================
+
+For information about how to contact Norton or other software manufacturers,
+click the appropriate article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

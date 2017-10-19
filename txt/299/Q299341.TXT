@@ -1,0 +1,82 @@
+DOCUMENT:Q299341  29-AUG-2001  [foxpro]
+TITLE   :FIX: Rounding Error Saving Calculated Value into Integer
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbvfp kbvfp300bBUG kbvfp300BUG kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500bug k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a calculated value is written into an integer field in a table, the value may
+be rounded improperly and stored incorrectly. For example, if X = 2.05 * 100,
+when X is added to an integer field, the actual value stored to the table is
+204.
+
+STATUS
+======
+
+This problem was corrected in Microsoft Visual FoxPro version 7.0 for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the following code to a new program:
+
+   CLEAR
+   LOCAL lnCalcedVal
+   lnCalcedVal = 2.05 * 100
+
+   CREATE CURSOR TstCurs (iFLD1 i)
+   INSERT INTO TstCurs VALUES(lnCalcedVal)
+   ? "2.05 * 100"
+   ? "----------------"
+   ? "Calculated Value:",lnCalcedVal
+   ? "Value inserted into table:",TstCurs.iFLD1
+
+   USE IN TstCurs
+
+2. Save and run the code (the program name does not matter).
+
+When the code runs, 2.05 * 100 is stored to a local variable, lnCalcedVal. This
+variable is then inserted into an integer field in a cursor. The output on the
+screen shows the value of lnCalcedVal and the contents of the cursor's integer
+field. Note that the two values are different.
+(c) Microsoft Corporation 2001, All Rights Reserved. Contributions by Trevor
+Hancock, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbvfp kbvfp300bBUG kbvfp300BUG kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500bug kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbvfp700fix kbvfp700 kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

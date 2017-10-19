@@ -1,0 +1,63 @@
+DOCUMENT:Q238038  25-JUN-2000  [homemm]
+TITLE   :Reference 2000: Error Message Contains Wrong System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt install Encarta Reference Suite 2000, you may receive an error
+message similar to the following:
+
+   Microsoft Encarta Encyclopedia 2000 requires at least 8 MB of memory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Reference
+Suite 2000.
+
+MORE INFORMATION
+================
+
+The minimum amount of memory required to run Encarta Reference Suite 2000 is as
+follows:
+
+ - 24 megabytes (MB) of RAM for a Microsoft Windows 95 or Microsoft Windows
+   98-based computer.
+
+ - 32 MB of RAM for a Microsoft Windows NT 4.0-based computer.
+
+Additional query words: multi multi-media media mm sysreqs requires ers2k
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

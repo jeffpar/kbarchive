@@ -1,0 +1,59 @@
+DOCUMENT:Q168772  20-FEB-2002  [sms]
+TITLE   :SMSINST: Uninstall Does Not Restore Autoexec.bat or Config.sys
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.0,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Uninstall.exe does not remove lines added by the Systems Management Server
+Installer program in the Autoexec.bat and Config.sys files.
+
+CAUSE
+=====
+
+The Autoexec.bat and Config.sys files are shared by all applications. The
+Systems Management Server Installer does not modify these files during
+uninstallation because doing so may adversely impact other applications
+installed after the original modification.
+
+
+WORKAROUND
+----------
+
+To work around this problem, use the Rollback feature, which will replace the
+original versions of the Autoexec.bat and Config.sys files.
+
+Additional query words: prodsms SMS
+
+======================================================================
+Keywords          : kbnetwork smsinst 
+Technology        : kbSMSSearch kbSMS120 kbSMSI100
+Version           : :1.0,1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

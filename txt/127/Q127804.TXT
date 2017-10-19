@@ -1,0 +1,76 @@
+DOCUMENT:Q127804  06-OCT-1999  [win3x]
+TITLE   :Network Driver Error 7200 Changing a WFW Network Password
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to change your Windows for Workgroups network logon password, you
+receive the following error message:
+
+   Windows for Workgroups network driver error 7200 occurred.
+
+Also, if the "Log On to Windows NT or LAN Manager Domain" check box is not
+selected in the network Startup Settings dialog box, any password is accepted in
+the Windows for Workgroups Logon dialog box when you start Windows for
+Workgroups.
+
+CAUSE
+=====
+
+The Disable Password Caching option was enabled in your WFWSYS.CFG file after a
+password was cached.
+
+RESOLUTION
+==========
+
+The System Administrator should run the ADMINCFG.EXE tool and open your
+WFWSYS.CFG file, choose Passwords, and then clear the Disable Password Caching
+check box. (NOTE: The ADMINCFG.EXE file is located on Disk 8 in 1.44-MB disk
+sets and on Disk 10 in 1.2-MB disk sets.)
+
+MORE INFORMATION
+================
+
+Typing "net help 7200" (without the quotation marks) at an MS-DOS prompt results
+in the following message:
+
+   Error 7200: Passwords will not be saved in the password list file.
+
+Adding the following line to the [NETWORK] section of the System.ini file will
+disable password caching and prevent your PWL file from being accessed:
+
+   PasswordCaching=no
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q69303  14-NOV-1999  [win95x]
+TITLE   :Using the Western Digital Ethernet Plus Card and Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are using a Western Digital Ethernet Plus network card, the card must be
+version 3.06 or higher to run Microsoft Windows 3.0 in 386 enhanced mode.
+
+MORE INFORMATION
+================
+
+To find out which driver version you are using, type the following at the MS-DOS
+prompt and then press ENTER:
+
+   IPX I
+
+The following problems may occur if you are using a version of the Western
+Digital Ethernet Plus network card earlier than 3.06:
+
+ - Machine stops responding (hangs) when going into enhanced mode.
+
+ - Machine drops back to MS-DOS when entering enhanced mode.
+
+For more information on the latest version of the Ethernet Plus network card,
+contact Western Digital technical support.
+
+Additional query words: 3.0 3.0a 3.00 3.00a 3rdparty KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q129052  08-AUG-2001  [winnt]
+TITLE   :Missing IntelliType Keyboard Tabs in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER::1.0,3.1,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.1, 3.5 
+ - Microsoft Windows NT Workstation versions 3.1, 3.5 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install IntelliType software, the Pointer Control and Pointer Activity
+tabs may be missing from IntelliType Manager. Also, the Sounds, Key Locks, and
+Enable/Disable Caps Lock Key options are unavailable.
+
+CAUSE
+=====
+
+This behavior occurs when the Microsoft IntelliType software is installed
+without a Microsoft Natural Keyboard attached to the computer. IntelliType is
+designed to work with a 8042 keyboard controller chip exclusively.
+
+
+RESOLUTION
+==========
+
+To correct this problem, ensure that your computer has an 8042 keyboard
+controller chip.
+
+Additional query words: prodnt 3.10 keybd
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :1.0,3.1,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

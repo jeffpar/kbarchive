@@ -1,0 +1,64 @@
+DOCUMENT:Q153962  31-MAR-1999  [exchange]
+TITLE   :XADM: Err Msg: The Interface is Unknown
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new Exchange user mailbox, the following error may appear
+after selecting OK or Apply:
+
+   The interface is Unknown
+   Microsoft Windows NT ID no:0x00206b5
+   OK
+
+After you click OK, the user account is not created and the User properties
+dialog box remains on the screen.
+
+RESOLUTION
+==========
+
+Verify the Net Logon service is started in the Services in Control Panel,and
+that the service is configured to start up automatically.
+
+MORE INFORMATION
+================
+
+NETLOGON is a resource used by the Net Logon service for processing domain logon
+requests. Net Logon provides authentication of account logons, and keeps the
+domain's security database synchronized between the primary domain controller
+and the other Windows NT Server domain controllers of the domain.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

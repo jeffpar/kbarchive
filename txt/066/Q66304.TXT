@@ -1,0 +1,79 @@
+DOCUMENT:Q66304  13-DEC-1999  [win95x]
+TITLE   :Daybook: Toolbook Setup Disks (5.25 Inch, 360K)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the directory lists of the Windows version 3.0 (5/1/90)
+5.25-inch 360 K Runtime Toolbook disks.
+
+MORE INFORMATION
+================
+
+Setup Disk 1
+------------
+
+Volume in drive A is DAYBOOK1
+
+TBKBASE  DLL   165423   4-03-90   1:00p
+TBKCOMP  DLL    57318   4-03-90   1:00p
+TBKEDIT  DLL     8282   4-03-90   1:00p
+TBKFILE  DLL     8171   4-03-90   1:00p
+TBKSETUP INF     2707   4-03-90   1:00p
+TBKSETUP EXE    94208   4-03-90   1:00p
+TBKWIN   DLL    16871   4-03-90   1:00p
+        7 File(s)      7168 bytes free
+
+Setup Disk 2
+------------
+
+Volume in drive A is DAYBOOK2
+
+DAYBOOK  DLL    24448   4-03-90   1:00p
+DBHELP   TBK    46665   4-03-90   1:00p
+TBKUTIL  DLL    24912   4-03-90   1:00p
+TBOOK    EXE   213614   4-03-90   1:00p
+        4 File(s)     51200 bytes free
+
+Setup Disk 3
+------------
+
+Volume in drive A is DAYBOOK3
+
+DAYBOOK  TBK   155603   4-03-90   1:00p
+TOURBOOK TBK   184543   4-03-90   1:00p
+        2 File(s)     21504 bytes free
+
+Additional query words: 3.00 win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,97 @@
+DOCUMENT:Q130834  15-FEB-2000  [foxpro]
+TITLE   :Objects Parameters Are Passed by Reference
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, parameters are passed by value to user-defined functions and by
+reference to procedures called with a DO command. This article explains how an
+Object-type variable is passed as a parameter.
+
+MORE INFORMATION
+================
+
+Object variables are always passed by reference to user-defined functions and
+procedures. Creating an object creates a reference to an object of a class. When
+a procedure or a method receives an object as a parameter, any change made to
+the parameter affects the object. Only one instance of the object actually
+exists; the parameter points to the same object as the instance variable.
+
+To pass an Object reference from a form, you can use this syntax:
+
+      Thisform.mymethod(this)
+
+   -or-
+
+      Thisform.mymethod
+
+In the following example code, a form is created, and the ChangeCaption method of
+the form is called. Controls are passed as parameters. This example could have
+been programmed differently by making the ChangeCaption a method of any control.
+It is included to illustrate how object type variables are passed as
+parameters.
+
+Sample code
+-----------
+
+   PUBLIC oForm
+   oForm=CREATEOBJECT('Myform')
+   oForm.show
+   =MESSAGEBOX('Note the Caption of the CommandButton')
+   oForm.ChangeCaption(oform.mycmd)
+   =MESSAGEBOX('Note the Caption of the CommandButton')
+
+   DEFINE CLASS myform as FORM
+
+     ADD OBJECT mycmd as COMMANDBUTTON with Caption = "Before"
+     ADD OBJECT cmdquit1 as cmdquit
+
+     PROCEDURE ChangeCaption
+     PARAMETER objref
+     objref.Caption="After"
+     ENDPROC
+
+   ENDDEFINE
+
+   DEFINE CLASS cmdquit as COMMANDBUTTON
+     Caption= "Quit"
+     Top=25
+     Left=25
+     PROCEDURE Click
+       RELEASE Thisform
+     ENDPROC
+   ENDDEFINE
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

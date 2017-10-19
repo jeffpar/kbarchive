@@ -1,0 +1,67 @@
+DOCUMENT:Q273917  22-OCT-2000  [homegame]
+TITLE   :Crimson Skies: Slow Performance When You Play Game for Long Time
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Crimson Skies, you may experience slow performance in
+the game.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+ - You play Crimson Skies for a long period of time.
+
+ - You played Crimson Skies several times since the previous time that you
+   restarted the computer.
+
+RESOLUTION
+==========
+
+To work around this problem, quit Crimson Skies, and then restart the computer.
+
+To improve game performance, quit all of the unnecessary programs that are
+running on your computer before you start Crimson Skies.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Crimson Skies.
+
+Additional query words: 1.00 msgame crimskies cs cskies
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

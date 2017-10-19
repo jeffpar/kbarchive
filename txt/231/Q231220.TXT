@@ -1,0 +1,73 @@
+DOCUMENT:Q231220  21-MAR-2001  [sms]
+TITLE   :SMS: Unable to Create a Secondary Site of a Child Primary Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbDatabase kbMMC kbServer kbsms200 kbsms200bug kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running a Microsoft Systems Management Server (SMS) 2.0 Administrator
+console that is connected to a central site server, and you attempt to create a
+secondary site attached to a primary child site, the secondary site menu item is
+unavailable (dimmed).
+
+CAUSE
+=====
+
+This behavior occurs because of a limitation of current server architecture.
+
+WORKAROUND
+==========
+
+To work around this issue, follow these steps:
+
+1. Right-click the Systems Management Server icon, point to All Tasks, and then
+   click "Connect to Site Database".
+
+2. Click Next, and then click "Connect to the site database for this site
+   server".
+
+3. Enter the child primary site server name, click Next, and then click Finish.
+
+4. Create the secondary site while you are connected directly to the site
+   database of the child primary site.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbDatabase kbMMC kbServer kbsms200 kbsms200bug kbsmsAdmin 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

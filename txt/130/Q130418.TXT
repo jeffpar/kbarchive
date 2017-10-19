@@ -1,0 +1,56 @@
+DOCUMENT:Q130418  08-AUG-2001  [winnt]
+TITLE   :Write Caching on Boot Floppy Drive Causes WINNT.EXE to Fail
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run WINNT.EXE and SMARTDrive (SMARTDRV.EXE) is loaded to cache reads and
+writes to drive A, and you follow the Setup prompts, the first floppy disk is
+removed before MS-DOS has finished writing to the floppy disk. This results in
+various problems and the wrong files being written to the setup disks.
+
+CAUSE
+=====
+
+The cached data is not flushed to the floppy disk before you are prompted to
+change floppy disks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. This
+problem was corrected in Windows NT version 3.51.
+
+Additional query words: prodnt 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

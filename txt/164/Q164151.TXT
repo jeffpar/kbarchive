@@ -1,0 +1,133 @@
+DOCUMENT:Q164151  28-JUL-2001  [visualc]
+TITLE   :HOWTO: Comparing Binary Images of Same Project Builds
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbGenInfo kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes you may need to compare the build images (EXE, DLL, etc.) of the same
+project that were built at different times. Since the images contain time and
+date stamps, a plain file compare reports the differences between the images.
+You can use the DUMPBIN utility to generate the correct file compare.
+
+MORE INFORMATION
+================
+
+The time and date stamps can be removed from the built image without removing
+relevant information (code and data) using the /RAWDATA switch available in the
+DUMPBIN utility. Any file compare utility can then be used on the DUMPBIN output
+as follows:
+
+   DUMPBIN  /RAWDATA  MyApp.EXE > first.txt
+
+If Myapp.exe is built again at a different time, then use DUMPBIN as follows:
+
+   DUMPBIN  /RAWDATA  MyApp.EXE > second.txt
+
+You can now compare first.txt and second.txt using a file compare utility like:
+
+       FC /B first.txt second.txt
+
+Run DUMPBIN in the resident directory of the image. The above procedure applies
+to the Release build only because the Debug build records the time and date
+stamp on the images (irrespective of /Zi or /Z7) and DUMPBIN does not remove
+this information. If the predefined macros __DATE__ and __TIME__ are used in the
+source, the time and date stamp recorded in the images will not be removed by
+DUMPBIN for the Release build. Under these circumstances, you may use the
+/DISASM switch. However, the /DISASM switch removes the time and date stamp, as
+well as the initialized data. This means that you will not get a true image
+compare.
+
+NOTE: There is no guarantee that Visual C++ will generate the same binary image
+when building the same source files on successive builds. However, you are
+guaranteed that the EXE (or DLL) will behave in precisely the same manner under
+execution, all other things being equal. Compile and link options and link order
+play a role in whether two binary images will compare equally.
+
+If you follow the procedures outlined above and the two images compare equally,
+then the images are the same. If the two images do not compare equally, then
+there is still uncertainty as to whether the images are the same or not.
+
+The resource section of the executable contains date/time stamps. In the resource
+section of the executable, there is a header for each type of resource (for
+example, string table, dialog, icon). Each of these headers contains a date/time
+stamp.
+
+Use the Microsoft Portable Executable and Common Object File Format Specification
+from the MSDN Library to alter the date/time stamps so that they won't be a
+factor in the comparison or ignore the resources section in the comparison.
+
+To identify the section containing the differences, run the WinDiff utility
+shipped with Visual C++:
+
+   WINDIFF first.txt second.txt
+
+The section containing the differences will start with a line similar to the
+following (although the number may be different):
+
+   RAW DATA #5
+
+Then, compare this with the output from the following:
+
+   dumpbin /headers MyApp.exe
+
+You should find a header that starts with the following:
+
+   SECTION HEADER #5
+      .rsrc name
+
+Because the section number matches the section with the differences in the raw
+data (in this example, the section number is 5), then the differences occur in
+the section named ".rsrc". This is the name of the resource section.
+
+The Export Directory Table has a date/time stamp as well. This is typically
+located in the .rdata section (Visual C++ 4.2 and later) or the .edata section
+(earlier than Visual C++ 4.2). This table exists only if you export symbols from
+the PE image.
+
+The Import Directory Table also has a date/time stamp. This is typically located
+in the .idata section. One of these tables exists for each DLL to which the
+image refers. This date/time stamp is zero unless the image is bound. Once the
+image is bound, the date/time stamp is set to the date/time stamp of the DLL
+from where the symbols are imported.
+
+Once again, please refer to the Microsoft Portable Executable and Common Object
+File Format Specification in the MSDN Library for information on how to locate
+the date/time information in an image.
+
+Additional query words: DUMPBIN RAWDATA size
+
+======================================================================
+Keywords          : kbGenInfo kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbArtTypeINF 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

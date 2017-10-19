@@ -1,0 +1,75 @@
+DOCUMENT:Q138917  11-FEB-2000  [foxpro]
+TITLE   :How to Use the Query Designer to Send Output to a Text File
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By using the Query Designer in Visual FoxPro, you can direct the output of the
+query to an ASCII text file. This article will outline the steps necessary to
+accomplish this.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. Set up a query in the Query Designer.
+
+2. On the Query menu, click Query Destination, and then click the Screen button.
+   Click To Text File, and specify the output file name.
+
+3. Clear the Pause Between Screens check box, and click OK.
+
+4, Save and run the query. The output should be sent to the file specified in
+step 2. Note that the output is also echoed to the screen. The following code
+example can be used to suppress the output to the screen:
+
+      DEFINE WINDOW win1 FROM 1,1 TO 5,5
+      ACTIVATE WINDOW win1
+      HIDE WINDOW win1
+      DO QUERY1.QPR  &&replace QUERY1.QPR with your query name
+      RELEASE WINDOW win1
+
+When this code is run, the output of the query will be sent to the file specified
+in step 2, and no output will be displayed on the screen.
+
+REFERENCES
+==========
+
+For more information on creating queries using the Query Designer, please see
+Chapter 6 in the "Visual FoxPro User's Guide."
+
+Additional query words: VFoxWin ASCII TEXT RQBE
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

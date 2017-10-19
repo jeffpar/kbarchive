@@ -1,0 +1,71 @@
+DOCUMENT:Q235853  22-JUN-2001  [exchange]
+TITLE   :XWEB: MAPI Message Property PR_PRIORITY Is Not Created with CDO
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you send a message using Outlook Web Access (OWA), the MAPI field property
+PR_PRIORITY is not created. The message transfer agent (MTA) uses this field to
+elevate message priority. Without this field, the message is processed with
+normal priority through the MTA.
+
+MORE INFORMATION
+================
+
+In Outlook 97 and Outlook 98, the PR_PRIORTY field is created when the user sets
+the PR_IMPORTANCE by means of the user interface (UI). The PR_PRIORTY field is
+not created in OWA because Collaboration Data Objects (CDO) do not support the
+creation of the PR_PRIORITY field as a result of setting the PR_IMPORTANCE. The
+following table shows the different states for the PR_IMPORTANCE and PR_PRIORITY
+fields.
+
++--------------------------------------------------------+
+| Client     | Outlook/OWA   | Outlook     | OWA         | 
++--------------------------------------------------------+
+| MAPI field | PR_IMPORTANCE | PR_PRIORITY | PR_PRIORITY | 
++--------------------------------------------------------+
+| LOW        | 0             | -1          | N/A         | 
++--------------------------------------------------------+
+| NORMAL     | 1             | 0           | N/A         | 
++--------------------------------------------------------+
+| HIGH       | 2             | 1           | N/A         | 
++--------------------------------------------------------+
+
+Clients listed as Outlook in the above table include all versions of Outlook 97
+and Outlook 98.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q87666  27-OCT-1999  [foxmisc]
+TITLE   :PRB: Changing Default Drive in FoxBASE+ Fox Central
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MS-DOS:2.17
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for MS-DOS, version 2.17 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When FoxBASE+ is running on a network, changing the default drive on a network
+using the Select command in FoxCentral causes an "Error 31 Subscript Out of
+Bounds" error message.
+
+CAUSE
+=====
+
+Older versions of FoxCentral store the directory listing in an array, which is
+limited to 128 elements in FoxBASE+. If the network drive has more than 128
+directories, FoxCentral exceeds the array limit.
+
+RESOLUTION
+==========
+
+This latest version of the FoxCentral application does not store the directory
+listing in an array. The latest version of the CENTRAL.FOX file is dated March
+20, 1992. To avoid this situation with an older copy of FoxCentral, use the SET
+DEFAULT TO command to change the default drive from the FoxBASE+ command line.
+For more information on the syntax to change the default directory, see the
+FoxBASE+ "Commands & Functions" and/or "User's Guide" manual.
+
+Additional query words: 2.00 2.10 Novell Fox Base plus
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxBASE217DOS kbFoxBASESearch
+Version           : MS-DOS:2.17
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q250276  25-OCT-2000  [winnt]
+TITLE   :HOWTO: Do Right-to-Left and Left-to-Right Mirroring in Win2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:_IK kbOSWin2000 kbGrpDSIntl kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Win32 Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On a Windows 2000-based computer, you can dynamically change the application
+user interface from left-to-right to right-to-left.
+
+MORE INFORMATION
+================
+
+This can be accomplished by using the following code:
+
+     // Use ANSI versions of GetWindowLong() and SetWindowLong() because 
+               // Unicode is not needed for these calls.
+               lExStyles = GetWindowLongA(hWnd, GWL_EXSTYLE) ;
+
+               // Check whether new layout is opposite the current layout.
+               if(!!(pLState->IsRTLLayout) != !!(lExStyles & WS_EX_LAYOUTRTL)) 
+               {
+                  // The following lines update the application layout to 
+                   // be right-to-left or left-to-right, as appropriate.
+                   lExStyles ^= WS_EX_LAYOUTRTL ; // Toggle layout.
+
+                   SetWindowLongA(hWnd, GWL_EXSTYLE, lExStyles) ;
+                   // This is to update layout in the client area.
+                   InvalidateRect(hWnd, NULL, TRUE) ;
+               }
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbOSWin2000 kbGrpDSIntl kbDSupport 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin32SDKSearch kbAudDeveloper kbSDKSearch kbWinAdvServSearch kbWin32sSearch
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,54 @@
+DOCUMENT:Q266049  23-OCT-2000  [exchange]
+TITLE   :XADM: The "Planning and Deploying Outlook Web Access" WP
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A white paper is available that discusses how to plan and deploy Microsoft
+Outlook Web Access for organizations that are running Microsoft Exchange Server
+version 5.0 or version 5.5.
+
+MORE INFORMATION
+================
+
+The "Microsoft Exchange Server Planning and Deploying Outlook Web Access" white
+paper provides the steps you need to plan for and deploy Outlook Web Access. To
+view the white paper, see the following Microsoft Web site:
+
+   http://support.microsoft.com/support/exchange/content/whitepapers/owaguide.doc
+   (http://support.microsoft.com/support/exchange/content/whitepapers/owaguide.doc)
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

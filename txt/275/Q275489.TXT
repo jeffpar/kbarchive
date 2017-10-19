@@ -1,0 +1,67 @@
+DOCUMENT:Q275489  20-JAN-2001  [sms]
+TITLE   :SMS: SMS 2.0 SP2 Administrator Console Hangs on WIN 2K Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbtool kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On some Dell computers that are running Microsoft Windows 2000 Server, and
+Microsoft Systems Management Server (SMS) Service Pack 2, the SMS Administrator
+Console may stop responding (hang) when you are trying to expand the Site
+Hierarchy.
+
+CAUSE
+=====
+
+The Dell Version Assistant modifies the default Distributed Component Object
+Model (DCOM) user-access permissions to include the currently logged-on user.
+This may cause the SMS Administrator Console to stop responding (hang).
+
+WORKAROUND
+==========
+
+To work around this behavior, remove the logged-on user account from Default
+Access Permissions in the DCOM Configuration utility. To do so, follow these
+steps:
+
+1. Click Start, click Run, type "dcomcnfg.exe" (without the quotation marks),
+   and then click OK.
+
+2. Click Default Security, and then click Default Access Permissions.
+
+3. Click Edit Default. This tab should be blank. If it is not blank, remove the
+   user name that was added by the Dell Version Assistant.
+
+Additional query words: prodsms dcomcnfg dcomcnfg.exe hang sms sp2
+
+======================================================================
+Keywords          : kb3rdparty kbtool kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,87 @@
+DOCUMENT:Q167371  14-NOV-2000  [word97]
+TITLE   :WD97: Changing Orientation After Changing Columns Causes Error
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage kbdta kblayout
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You may receive the following error message:
+
+   Settings you chose for the left and right margins, column spacing, or
+   paragraph indents are too large for the page width in some sections.
+
+When one of the following occurs:
+
+   When you change the page orientation from landscape to portrait.
+
+   -or-
+
+   When you change the paper size of your document. For example, when you change
+   the paper size from Letter 8 1/2 x 11.0 to Executive 7 1/4 x 10 1/2.
+
+CAUSE
+=====
+
+When you use the Columns button on the Standard toolbar, the "Equal column
+width" option is not set. This option forces Word to maintain the same width
+columns based on the size and orientation of the page. When this option is not
+set, Word may not recalculate the page layout information correctly when you
+change the orientation or page size.
+
+NOTE: This problem does not occur when you use the Columns command on the Format
+menu. When you use the Columns command on the Format menu, the "Equal column
+width" option is set by default, thus the page layout information is correctly
+changed when you change the orientation or page size.
+
+WORKAROUND
+==========
+
+To work around this problem, set the columns to an equal width by the following
+steps:
+
+1. On the Format menu, click Columns.
+
+2. Click the box for Equal Column Width and then click OK.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbdta kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

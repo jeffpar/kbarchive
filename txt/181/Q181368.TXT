@@ -1,0 +1,109 @@
+DOCUMENT:Q181368  11-JAN-2001  [vbwin]
+TITLE   :BUG: UserControl Not Printing Labels Correctly
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When printing a form containing a UserControl, the labels in the UserControl do
+not print properly. A common symptom is that only the first word of the label
+prints.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+ - Set the AutoResize property of each Label control to True.
+
+-or-
+
+ - Replace the Label control with a different control, such as a TextBox
+   control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX Control project. UserControl1 is created by default.
+
+2. Place a Label control on the UserControl.
+
+3. Set the Caption of Label1 to: This is a test (Make sure the width is large
+   enough to display the caption.)
+
+4. Close the UserControl1 window.
+
+5. Add a Standard EXE project by clicking Add Project from the File menu.
+
+6. Place the UserControl1 on the default Form1 (via the Toolbox).
+
+7. Click Print from the File menu. Range is "Module" and Print What is "Form
+   Image." Note that only the first word of the label prints.
+
+8. Reopen the UserControl1 window and set the AutoResize property of the Label
+   to True.
+
+9. Close the UserControl1 window and repeat step 7. Note that the contents of
+   the label prints properly.
+
+   NOTE: The same problem occurs when using the PrintForm method to print the
+   form.
+
+REFERENCES
+==========
+
+For related information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q174652 BUG: PrintForm Method Does Not Print Entire Form
+
+   Q171471 FIX: VB-Created Controls Fail to Print w/UserControl_Paint
+
+Additional query words: ocx
+
+======================================================================
+Keywords          : kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

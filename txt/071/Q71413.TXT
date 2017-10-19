@@ -1,0 +1,55 @@
+DOCUMENT:Q71413  10-JUN-1999  [win16sdk]
+TITLE   :DOC: SetClipboardData Function Documentation Incomplete
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbClipboard kbSDKPlatform
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for the SetClipboardData function on pages 4-369 through 4-371
+of the "Microsoft Windows Software Development Kit Reference Volume 1" for
+version 3.0, and on pages 826-828 of the "Microsoft Windows Software Development
+Kit Version 3.1 Programmer's Reference, Volume 2: Functions" is incomplete. The
+following information should be added to the "Return Value" section on page
+4-370 of the "Microsoft Windows Software Development Kit Reference Volume 1" for
+version 3.0, and on page 826 of the "Microsoft Windows Software Development Kit
+Version 3.1 Programmer's Reference, Volume 2: Functions" manual:
+
+If NULL is specified as the hMem parameter to SetClipboardData (which signifies
+delayed clipboard rendering), SetClipboardData will return NULL.
+
+Additional query words: 3.00 3.10 docerr
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbClipboard kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

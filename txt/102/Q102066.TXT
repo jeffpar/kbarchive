@@ -1,0 +1,57 @@
+DOCUMENT:Q102066  30-JUL-2001  [lanman]
+TITLE   :Using CHKSTOR for Disk Quota Reporting in LAN Manager
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+In LAN Manager, you can use the CHKSTOR utility to gather
+information on disk quotas.
+
+Before running CHKSTOR for quota information, you must first specify a
+directory (in the user account "Home directory" field). If you
+indicate it with a uniform naming convention name, it can be a
+directory that exists on another server. You can then specify a disk
+space amount (in kilobytes) in the user account "User storage limit"
+field.
+
+To determine when "Home directory" exceeds the "User storage
+limit," run the CHKSTOR utility.
+
+CHKSTOR compares the "User storage limit" to the actual number of
+bytes currently stored in the "Home directory" and all of its
+subdirectories. If this number exceeds "User storage limit,"
+CHKSTOR reports (to the screen unless redirected to a filename) the
+username, disk space allowed, disk space used, and home directory
+path. CHKSTOR also sends an alert message (unless you suppress this
+feature) to the names on the ALERTNAMES line of LANMAN.INI each
+time it finds the disk-space-use limit being exceeded.
+
+REFERENCES
+==========
+
+LAN Manager Administrator's Reference, version 2.2, pp. 59-60 (CHEKSTOR).
+
+On-line help text (in the NIF) for "Home directory" and "User storage limit."
+
+Additional query words: 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

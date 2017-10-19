@@ -1,0 +1,97 @@
+DOCUMENT:Q92609  06-MAY-2001  [masm]
+TITLE   :PRB: SEGMENT AT Does Not Initialize Data at Absolute Address
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.0,5.1,5.1a,6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the SEGMENT directive is used with the AT combine type to place code or
+initialized data at an absolute address, the generated executable file does not
+initialize the segment at the specified absolute address. MASM versions 5.0,
+5.1, and 5.1a do not generate any error or warning messages. MASM versions 6.0,
+6.0a, and 6.0b generate the following warning message:
+
+   A4014: instructions and initialized data not supported in AT
+
+   segments
+
+CAUSE
+=====
+
+This warning is expected and caused by the design of the Microsoft Linker.
+
+The Microsoft Linker (LINK), distributed with Microsoft programming languages, is
+designed to generate relocatable programs to run with MS-DOS, Microsoft Windows,
+or OS/2. LINK does not generate code or data at absolute addresses. MASM
+versions 6.0, 6.0a, and 6.0b generate a warning message because LINK does not
+support SEGMENT AT in this manner.
+
+RESOLUTION
+==========
+
+Link and locate tools that generate absolute addresses are available from
+third-party vendors.
+
+MORE INFORMATION
+================
+
+The SEGMENT AT directive is used to access a specified memory address, for
+example, a code routine or data in the ROM BIOS. While SEGMENT AT allows an
+application to create a template for memory at a fixed address, it does not
+support initializing code or data at that address.
+
+The code fragment below demonstrates the problem.
+
+Sample Code
+-----------
+
+
+   ; Assembler options needed: none
+
+   interrupt_table SEGMENT AT 0
+   ORG 8*4
+   irq0 DD 12345678h
+   irq1 DD 9ABCDEF0h
+   interrupt_table ENDS
+
+   _text SEGMENT WORD PUBLIC 'CODE'
+   ASSUME cs:_text
+   start:
+       mov ax, 4C00h
+       int 21h
+   _text ENDS
+
+   END start
+
+Additional query words: 5.00 5.10 5.10a 6.00 6.00a 6.00b romable code embedded systems
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM500 kbMASM600a kbMASM510a kbMASM600b
+Version           : :5.0,5.1,5.1a,6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

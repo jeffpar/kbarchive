@@ -1,0 +1,60 @@
+DOCUMENT:Q151220  18-DEC-1999  [schedplus]
+TITLE   :XCLN: Users with Delegates do not Appear in Meeting Requests
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Microsoft Schedule + 7.0 on a MS Mail 3.x Post Office, user's with
+a delegate will not appear in the To: line of the Meeting Request received by
+all other invitees.
+
+MORE INFORMATION
+================
+
+The user will receive a meeting request, however, the user and their delegate
+will appear in the To: line and no other invitees will be displayed. It appears
+to them as if they were the only users invited to the meeting.
+
+As an example, let's say you have six users; A,B,C,D,E, and F. User F is a
+delegate for User E. User A sends a meeting request to Users B, C,D, and E.
+Users B, C, and D will receive a Meeting Request that displays Users B, C, and D
+on the To: line. User E will receive the Meeting Request with Users E and F on
+the To: line.
+
+This behavior is by design.
+
+
+Additional query words: delegate 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

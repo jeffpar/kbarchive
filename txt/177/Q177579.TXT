@@ -1,0 +1,68 @@
+DOCUMENT:Q177579  13-JUN-2001  [sna]
+TITLE   :SNA Client Loses One TCP/IP Address on a Multihomed Server
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP2,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a client connects to a multihomed server with an IP address that is not the
+first one, it loses the server's first IP address. For example, a server has two
+addresses, 128.207.141.82 and 157.54.165.222. If the client connects to that
+server using the second address, the first address is lost and the second
+address is duplicated. In effect, the client now has two identical addresses in
+its service table.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 SP2 and
+4.0.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+A supported fix for SNA Server version 4.0 is now available, but has not been
+fully regression tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP2
+Version           : WINDOWS:3.0 SP2,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

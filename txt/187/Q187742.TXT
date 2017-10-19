@@ -1,0 +1,103 @@
+DOCUMENT:Q187742  09-AUG-2001  [winnt]
+TITLE   :Methods of Setting DHCP Options
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of this article is to explain the differences between the four
+methods of setting Dynamic Host Configuration Protocol(DHCP) options. The four
+methods that can be used to set DHCP options are; Default, Global, Scope, and
+Client.
+
+MORE INFORMATION
+================
+
+The following is a brief description of the four methods that can be used to set
+DHCP options:
+
+Default
+-------
+
+Setting a default DHCP option modifies the default value for one of the DHCP
+options. When a default value is set, the default value becomes the default that
+was set during administration rather than the DHCP default that was set during
+installation of DHCP. This method may be accessed through DHCP Manager, click
+"DHCP Options," then click "Defaults".
+
+Global
+------
+
+When you set a global DHCP option, the option takes affect for all DHCP scopes
+defined on the selected DHCP server. Global DHCP options appear in DHCP Manager
+with a globe icon proceeding them. This method may be accessed through DHCP
+Manager, from the DHCP Options menu, click Global.
+
+Scope
+-----
+
+Setting a scope DHCP option will set the option only for the Selected scope on
+the Options Scope menu. DHCP options configured for a scope are displayed with a
+series of computer icons proceeding them in DHCP Manager. This method may be
+accessed through DHCP Manager, from the DHCP Options menu, click Scope.
+
+Client
+------
+
+This method can be used to configure one or more of the DHCP options for a
+specific DHCP client. DHCP options can be set for a client only if the DHCP
+client has a reserved IP address(a Reservation). The only way to see if a DHCP
+option is set for a DHCP client is to view the properties of an active client
+lease through DHCP Manager. To do this, perform the following steps:
+
+1. On the Scope menu, click Active Leases.
+
+2. Select the individual client, click Properties, and then click Options.
+
+   NOTE: If the Options button is not available, no reservation for the client
+   exists.
+
+NOTE: If a DHCP option is set by more than one method, precedence is in the
+following order:
+
+1. Client Overrides...
+
+2. Scope Overrides...
+
+3. Global Overrides...
+
+4. Default.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

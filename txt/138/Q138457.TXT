@@ -1,0 +1,61 @@
+DOCUMENT:Q138457  11-FEB-2000  [foxpro]
+TITLE   :DOC: PUTFILE() Help Topic Says DialogCaption Is at the Top
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.6a; WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbdocfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Macintosh, version 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Help topic for PUTFILE() describes the parameters that the function can
+accept. The Help topic describes the first parameter, cDialogCaption, with the
+following text:
+
+   Specifies the caption displayed at the top of the Save As dialog box.
+
+If Visual FoxPro is running under an operating system such as Windows 95 or
+Windows NT that uses Comdlg32.dll, the description (physical location) of the
+Dialog Caption is incorrect.
+
+This documentation error has been fixed in Visual FoxPro 5.0 for Windows.
+
+MORE INFORMATION
+================
+
+When PUTFILE() calls Comdlg32.dll, the physical location of the string affected
+by the first parameter in PUTFILE() is not at the top of the dialog box produced
+by Comdlg32.dll as it is in Windows version 3.x and as it is described in the
+Help file. Instead, it is in the lower-left corner of the dialog box produced by
+Comdlg32.dll and by default contains a "File name:" string.
+
+Additional query words: docerr FoxMac VFoxWin 5.00 putfile win95 win vfp comdlg32 dll
+
+======================================================================
+Keywords          : kbdocfix 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300
+Version           : MACINTOSH:2.6a; WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

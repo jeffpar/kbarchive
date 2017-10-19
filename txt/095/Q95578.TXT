@@ -1,0 +1,76 @@
+DOCUMENT:Q95578  12-JUN-1999  [win16sdk]
+TITLE   :PRB: Double-Click Does Not Close Win 3.1 Maximized MDI Child
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbMDI kbSDKPlatform kbGrpDSUser kbWndw
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Double-clicking the System menu (sometimes called the Control menu) box of a
+maximized MDI (multiple document interface) child window does not close the
+child window in Microsoft Windows version 3.1.
+
+NOTE: Windows version 3.0 does not implement closing a maximized MDI child window
+by double-clicking its System menu box. For a solution to this problem, query on
+the following words in the Microsoft Knowledge Base:
+
+   MDI and double-click and maximized
+
+CAUSE
+=====
+
+In Windows version 3.1, you can close a maximized child window by double-
+clicking its System menu box, but the design of this feature assumes that the
+MDI client window is the first child of the MDI frame window. If the MDI frame
+window has a status bar, button bar, or any other window as its first child,
+double-clicking will not close the maximized child window.
+
+RESOLUTION
+==========
+
+Create the MDI client window as the first child of the MDI frame. Create other
+child windows of the MDI frame window, such as a status bar or button bar, after
+creating the MDI client window; then don't change the Z-order to make it the
+first child.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 3.10 maximize
+
+======================================================================
+Keywords          : kb16bitonly kbMDI kbSDKPlatform kbGrpDSUser kbWndw 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

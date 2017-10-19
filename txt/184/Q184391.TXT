@@ -1,0 +1,70 @@
+DOCUMENT:Q184391  24-FEB-2000  [exchange]
+TITLE   :XADM: Event 1029 Occurs When Migrating cc:Mail Users
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to migrate a user from cc:Mail using the Exchange 5.5 Migration
+Wizard, the migration may fail and the event log will contain an event 1029 with
+the following text:
+
+   Invalid Token '6' found in the exported file. Token should have been
+   'Message:'. Account '<lastname>, <firstname>' did not migrate
+   successfully.
+
+CAUSE
+=====
+
+Export.exe (a cc:Mail executable) is used to extract user information from the
+cc:Mail mailbox. The Exchange Migration Wizard uses the output files produced by
+Export.exe to perform the migration. The Exchange Migration Wizard assumes all
+information blocks in the exported file will be separated by a carriage-return
+line-feed <CR><LF>. This assumption is incorrect.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server 5.0 and 5.5. 
+This problem was first corrected in Exchange Server 5.5 Service Pack 2.  To
+resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

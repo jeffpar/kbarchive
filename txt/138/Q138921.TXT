@@ -1,0 +1,110 @@
+DOCUMENT:Q138921  11-FEB-2000  [foxpro]
+TITLE   :PRB: Form's Visible Property Does Not Respect Modal WindowType
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using <formobject>.visible to display a form having WindowType=1
+(modal), the modal attributes are not applied to the form; you can click to move
+off the form, and program execution continues.
+
+CAUSE
+=====
+
+Setting the Visible property of the form does not apply modal attributes to the
+form.
+
+WORKAROUND
+==========
+
+Instead of using the Visible property of the form to display it, use the Show
+method. The Show method properly applies modal attributes to the form.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Code Sample to Reproduce Problem
+--------------------------------
+
+     * The following example uses DEFINE CLASS and CREATEOBJECT()
+      * to create two custom classes named FormChild and FormGrandChild from
+      * the Visual FoxPro Form base class. ACLASS() is used to create an
+      * array named gaNewarray containing the class names, which is
+      * then displayed.
+
+      CLEAR
+      PUBLIC frmMyForm
+      frmMyForm = CREATEOBJECT("FormGrandChild")
+      frmMyForm.visible=.t.
+      * frmMyForm.show     && uncomment this for proper behavior
+      WAIT WINDOW 'After calling the form' TIMEOUT 2
+
+      DEFINE CLASS FormChild AS FORM
+      ENDDEFINE
+
+      DEFINE CLASS FormGrandChild AS FormChild
+             Caption='Hi'
+             Left   = 10
+             Top    = 10
+             Height = 54
+             Width  = 99
+             WindowType = 1     && modal
+             PROCEDURE Init
+                      THIS.AddObject("Cmd1", "MyCmdBtn")
+                      this.cmd1.left = (thisform.width - this.width) /2
+                      this.cmd1.top = (thisform.height - this.height) /2
+                      this.cmd1.visible = .t.
+             ENDPROC
+      ENDDEFINE
+
+      DEFINE CLASS MyCmdBtn AS CommandButton
+             Caption='Bye' && Caption on the Command button
+             Left   = 10   && Command button column
+             Top    = 10   && Command button row
+             Height = 18   && Command button height
+             Width  = 60   && Command button height
+             PROCEDURE Click
+                      THISFORM.Release
+                      CLEAR EVENTS
+             ENDPROC
+      ENDDEFINE
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

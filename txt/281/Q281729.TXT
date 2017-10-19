@@ -1,0 +1,121 @@
+DOCUMENT:Q281729  13-JUN-2001  [sna]
+TITLE   :"CoCreateInstance Failed" Error in SNA Server/HIS 2000 Manager
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using SNA Server and Host Integration Server 2000 Manager, you may
+receive the following error message when you attempt to expand the Microsoft SNA
+Manager tree:
+
+   CoCreateInstance failed
+
+(There may also be other scenarios in which this error occurs.)
+
+After you click OK, the Manager closes. If Dr. Watson was configured as the
+default debugger, a Drwtsn32.log file is created.
+
+The following is an example of a Dr. Watson file that was created in a scenario
+in which Host Integration Server 2000 was installed on a Windows 2000 Server.
+The Drwtsn32.log file indicates that an application exception occurred in
+MMC.exe in function CSnaOleObj::DoVerb:
+
+Application exception occurred:
+        App: mmc.exe (pid=<pid_number>)
+        When: 10/25/2000 @ 11:13:48.022
+        Exception number: c0000005 (access violation)
+.
+[data omitted]
+.
+State Dump for Thread Id 0xab8
+
+eax=00000000 ebx=00311518 ecx=00be2500 edx=00000000 esi=00000000 edi=00000112
+eip=6780d68f esp=0006f7e4 ebp=0006f814 iopl=0         nv up ei pl nz na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+
+function: CSnaOleObj::DoVerb
+        6780d680 8b542408         mov     edx,[esp+0x8]          ss:0088cdbb=????????
+        6780d684 8b8190000000     mov     eax,[ecx+0x90]         ds:00be2590=00000000
+        6780d68a 52               push    edx
+        6780d68b 8b542408         mov     edx,[esp+0x8]          ss:0088cdbb=????????
+FAULT ->6780d68f 8b08             mov     ecx,[eax]              ds:00000000=????????
+        6780d691 52               push    edx
+        6780d692 50               push    eax
+        6780d693 ff5158           call    dword ptr [ecx+0x58]   ds:013ffad6=????????
+        6780d696 c20800           ret     0x8
+        6780d699 90               nop
+        6780d69a 90               nop
+        6780d69b 90               nop
+        6780d69c 90               nop
+        6780d69d 90               nop
+        6780d69e 90               nop
+        6780d69f 90               nop
+
+CAUSE
+=====
+
+The SNA Server/Host Integration Server 2000 Web Client was installed on a
+computer that already had SNA Server or Host Integration Server 2000 installed
+on it.
+
+When you use a Web browser to install the Web Client, you are warned that you
+cannot install over an existing client/server installation. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q280740 Issues Surrounding the SNA Server/HIS 2000 Web Client
+
+However, if you were viewing the Web Client files from My Computer or Windows
+Explorer and inadvertently ran the 3270full.htm or 5250full.htm file, the Web
+Client installation would have proceeded without warning.
+
+RESOLUTION
+==========
+
+Use the following procedure to resolve this problem:
+
+1. Close the Manager and stop the SNABase service.
+
+2. Use the Add/Remove utility in Control Panel to remove the Web client.
+
+3. Rerun the SNA Server/Host Integration Server 2000 Setup and select the
+   reinstall option.
+
+4. Restart the computer.
+
+5. Go back into SNA Server/Host Integration Server 2000 Manager and test.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

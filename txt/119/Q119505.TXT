@@ -1,0 +1,66 @@
+DOCUMENT:Q119505  08-AUG-2001  [winnt]
+TITLE   :Using Docking Stations With Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10
+
+WINDOWS
+
+kbhw
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Although the Windows NT Hardware Compatibility List (HCL) does not specify any
+compatible docking stations for laptop or notebook computers, these devices
+should work correctly with Windows NT.
+
+MORE INFORMATION
+================
+
+Because a docking station is really just an extension of the system bus, any
+system that is listed on the Windows NT HCL should function properly under
+Windows NT with the docking station attached.
+
+Please note, however, that adapters installed in a docking station should be
+selected from among those listed in the HCL as compatible, just as with any
+other system.
+
+Additionally, if Windows NT is configured with optional adapters installed in a
+docking station, then is later used away from the docking station, error
+messages may be displayed at startup when Windows NT is unable to locate those
+devices. Aside from these messages, normal operation should be unaffected.
+
+
+Additional query words: prodnt 3.10 portable
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

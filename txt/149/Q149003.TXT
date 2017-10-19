@@ -1,0 +1,64 @@
+DOCUMENT:Q149003  08-APR-1999  [homemm]
+TITLE   :Bookshelf 96-97 ErrMsg: "Unable to Process File..."
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+96-97
+WINDOWS
+kbinterop kbusage kbenv kbmm kbprb kberrmsg kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you download an Internet Update file and double-click the <file
+name>.z96 file. Bookshelf runs without updating the Internet Directory.
+
+The <file name>.z96 Update file is not deleted from your system.
+
+If you are using Windows 3.x, you receive the following error message:
+
+   Bookshelf 96
+   Unable to process file while Bookshelf is running.
+
+CAUSE
+=====
+
+This occurs if Bookshelf was running when you double-clicked the Update file.
+
+RESOLUTION
+==========
+
+Close Bookshelf, and then double-click the Update file.
+
+Additional query words: 96-97 multi media multimedia multi-media mmtitles kbmm kbimu
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1996 kbBookShelf1997
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q121684  11-FEB-2000  [foxpro]
+TITLE   :PRB: Boxes in MS-DOS Reports Print Incorrectly on Macintosh
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,2.6a,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a FoxPro for MS-DOS report containing box objects is printed under FoxPro
+for Macintosh without being transported, the borders of the box objects are
+displayed as characters instead of lines.
+
+NOTE: This behavior does not occur when untransported FoxPro for MS-DOS reports
+are printed under FoxPro for Windows.
+
+RESOLUTION
+==========
+
+To print the box objects correctly, use one of the following methods:
+
+ - Before printing the report, set the printer font to FoxFont as follows:
+
+         SET PRINT FONT "FOXFONT",12
+
+   -or-
+
+ - Transport the FoxPro for MS-DOS reports before printing them under FoxPro for
+   Macintosh.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: VFoxMac FoxMac cross- platform line rectangle xplat transporter converted translated transferred
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,2.6a,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

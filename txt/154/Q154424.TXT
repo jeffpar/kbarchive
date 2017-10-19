@@ -1,0 +1,74 @@
+DOCUMENT:Q154424  05-JAN-2000  [frontpg]
+TITLE   :FP: Image Not Loaded to Personal Web Server
+PRODUCT :Word Front Page
+PROD/VER::; WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a Web on the Personal Web Server and if you use a tilde (~) as the
+first character of the Web name, you may experience either of the following
+problems:
+
+ - You are unable to retrieve images when you edit the Web.
+
+   -or-
+
+ - You are unable to open pages when you browse the Web.
+
+CAUSE
+=====
+
+The Personal Web Server is based on the architecture used by the National Center
+for Supercomputing Applications (NCSA) Web server. On that server, Web names
+that begin with a tilde are reserved for "per user" Webs.
+
+WORKAROUND
+==========
+
+To work around this problem, add the following line to the srm.cnf file. By
+default, this file is located in the C:\FrontPage Webs\Server\conf folder.
+
+   UserDir DISABLED
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft FrontPage
+98 for Windows.
+
+Additional query words: Front Page 1.1 97 PWS
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : :; WINDOWS:1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,72 @@
+DOCUMENT:Q130178  07-DEC-2001  [ssafe]
+TITLE   :FIXPRNT Fixes Database Errors Reported by ANALYZE.EXE
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbfile kbSample kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can run Fixprnt.exe to repair various database errors reported by
+Analyze.exe such as:
+
+   - Error in Parent Chain.
+   - Parent not found.
+
+FIXPRNT will remove references to projects that no longer exist.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Fixprnt.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+After downloading Fixprnt.exe, run it in an empty directory to get Fixprnt.exe.
+Once you have Fixprnt.exe, use it as follows:
+
+   FIXPRNT <path to data directory>
+
+NOTE: FIXPRNT modifies data files, so Microsoft strongly recommends that you back
+up your data before running FIXPRNT.
+
+MORE INFORMATION
+================
+
+ 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbSample kbtool 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

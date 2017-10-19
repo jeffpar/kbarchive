@@ -1,0 +1,76 @@
+DOCUMENT:Q37657  09-JUL-2000  [win16sdk]
+TITLE   :RCData.exe Uses User-Defined Resources in Windows Apps
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbOSWin2000 kbResource kbGrpDSUser kbOSWin310 kbOSWin300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+RCData.exe is a sample that demonstrates how to use a user-defined resource in a
+Windows-based application.
+
+The resource is declared in the resource (RC) file as follows:
+
+      TEST RCDATA
+      BEGIN
+          <data goes here>
+      END
+
+An application accesses this resource with the following statements:
+
+      hFound = FindResource(hInstance, "TEST", RT_RCDATA);
+      hRes = LoadResource(hInstance, hFound);
+      lpBuff = LockResource(hRes);
+      // use lpBuff to access the resource contents
+      bResult = UnlockResource(hRes);
+      bResult = FreeResource(hRes);
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   RCData.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbOSWin2000 kbResource kbGrpDSUser kbOSWin310 kbOSWin300 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

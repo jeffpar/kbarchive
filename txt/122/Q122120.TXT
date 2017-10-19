@@ -1,0 +1,69 @@
+DOCUMENT:Q122120  25-NOV-1999  [msdos]
+TITLE   :DriveSpace Err Msg After Installing over PC-DOS 6.1 or 6.3
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run the DriveSpace utility from MS-DOS 6.22 after upgrading from
+PC-DOS version 6.1 or 6.3, the following error message is displayed:
+
+   Your computer is running an incompatible version of the DRVSPACE.BIN file.
+   You must update DRVSPACE.BIN on the root directory of your drive.
+
+CAUSE
+=====
+
+This error occurs because the compression driver that IBM ships with versions
+6.1 and 6.3 of PC-DOS is incompatible with DriveSpace.
+
+MS-DOS 6.22 Setup runs correctly because the compression is not on the boot
+drive. Setup completes with no data loss; however, if you then try to run
+DriveSpace to convert the compressed drive, the above error message occurs.
+
+RESOLUTION
+==========
+
+You must copy the original PC-DOS DoubleSpace files back to the host drive, back
+up the data, reformat the host drive to remove compression, and then restore the
+data.
+
+MORE INFORMATION
+================
+
+The README.TXT from MS-DOS version 6.22, section 1.17 recommends that PC-DOS
+users remove disk compression before upgrading.
+
+
+Additional query words: 6.22 err msg 3rdparty drive space double
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

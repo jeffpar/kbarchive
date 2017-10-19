@@ -1,0 +1,124 @@
+DOCUMENT:Q255843  05-AUG-2002  [exchange]
+TITLE   :XCLN: Unable to Log on Exchange Server from Windows 2000 Client
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.0 SP1,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Exchange, versions 4.0, 5.0, 5.0 SP1, 5.5 
+ - Microsoft Outlook 2002, used with:
+    - the operating system: Microsoft Windows 2000 
+    - the operating system: Microsoft Windows XP 
+ - Microsoft Outlook 2000, used with:
+    - the operating system: Microsoft Windows 2000 
+    - the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use Outlook to log on to an Exchange Server computer, you may
+receive one of the following error messages:
+
+   The name could not be resolved. The Microsoft Exchange address book was
+   unable to logon to the Microsoft Exchange Server computer.
+
+   -or-
+
+   Outlook could not logon.
+
+   -or-
+
+   Your logon information is incorrect.
+
+There is no loss of connectivity from the computer that is running Windows 2000
+or Windows XP. Remote procedure call (RPC) connectivity works, you can open a
+shared list on the Exchange Server computer, you can log on to the Microsoft
+Windows NT Server 4.0 domain, and you can ping by name and by Internet Protocol
+(IP).
+
+RESOLUTION
+==========
+
+To resolve this problem, remove and re-add Transmission Control
+Protocol/Internet Protocol (TCP/IP) in the Local Area Connection properties:
+
+1. Double-click the My Computer icon, double-click Control Panel, and then
+   double-click "Network and Dial-Up Connections".
+
+2. Click Local Area Connection, click Properties on the File menu, and then
+   click to clear the Internet Protocol (TCP/IP) check box.
+
+3. Install another protocol (NWlink or NetBEUI) to maintain a placeholder for
+   each connection.
+
+4. Restart your computer, double-click the My Computer icon, double-click
+   Control Panel, and then double-click "Network and Dial-Up Connections".
+
+5. Click Local Area Connection, click Properties on the File menu, and then
+   click to select the Internet Protocol (TCP/IP) check box to add TCP/IP.
+
+For additional information about this process, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q285034 How to Remove and Reinstall TCP/IP for Windows 2000
+
+The article contains the following procedure to remove TCP/IP from your Windows
+2000-based computer:
+
+1. Click to clear the TCP/IP check box from all dial-up connections and all LAN
+   connections in the Network and Dial-up Connections tool.
+
+2. Install another protocol (NWlink or NetBEUI) to maintain a placeholder for
+   each connection.
+
+3. Restart your computer.
+
+4. Reinstall TCP/IP, and then restart your computer.
+
+If the computer is a domain controller, the procedure is different. For
+additional information about how to remove and reinstall TCP/IP on a Windows
+2000 domain controller, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q299451 HOW TO: Remove and Reinstall TCP/IP on a Windows 2000 Domain
+   Controller
+
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q268575 OL2000: (CW) Error Message: The Microsoft Exchange Address Book was
+   Unable to Log on to the Microsoft Exchange Server Computer
+
+Additional query words: cannot logon login connect tcpip check name
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbExchangeClientSearch kbOutlook2002 kbZNotKeyword2 kbOutlook2002Search kbZNotKeyword3
+Version           : :4.0,5.0,5.0 SP1,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

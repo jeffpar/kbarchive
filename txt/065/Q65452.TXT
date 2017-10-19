@@ -1,0 +1,58 @@
+DOCUMENT:Q65452  07-NOV-1999  [win95x]
+TITLE   :Windows 3.0 Err Msg : Cannot Open Group File (in Real Mode)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may get the message "Cannot open group file" when you run Microsoft Windows
+version 3.0 in real mode. In addition, a group may be missing when Program
+Manager appears.
+
+This message does not occur when you try to run Windows in standard or 386
+enhanced mode.
+
+CAUSE
+=====
+
+This can be caused by low system resources in real mode.
+
+WORKAROUND
+==========
+
+You can avoid this problem by using fewer Program Groups in the Program Manager
+and by not opening a number of applications automatically on entry into Windows.
+Remove entries in the RUN= and LOAD= lines of the WIN.INI file.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

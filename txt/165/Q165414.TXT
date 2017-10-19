@@ -1,0 +1,68 @@
+DOCUMENT:Q165414  31-JAN-2001  [win95x]
+TITLE   :Error Message: Internal MAPI Error
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running the Inbox Setup Wizard and you click the Back button to
+change a setting, you may receive the following error message:
+
+   Internal MAPI error
+   The properties of Microsoft Fax
+   could not be saved into the profile.
+   Contact your administrator.
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+ - Cancel the Inbox Setup Wizard and start the Inbox Setup Wizard again.
+
+ - Use the Add/Remove Programs tool in Control Panel to remove Windows
+   Messaging, restart Windows 95 when you are prompted, and then reinstall
+   Microsoft Fax. This adds Windows Messaging by default. When you click the
+   Apply button, the Inbox Setup Wizard will start.
+
+NOTE: You can add additional Windows Messaging components you may need by
+clicking Details for Windows Messaging.
+
+MORE INFORMATION
+================
+
+When you click the Back button the Next button may disappear, preventing you
+from completing the Inbox Setup.
+
+Additional query words: 95 exchange
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,251 @@
+DOCUMENT:Q191790  11-JAN-2001  [vbwin]
+TITLE   :INFO: VB 6.0 Readme Part 15: Application Performance Explorer
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbreadme kbMTS kbVBp kbVBp600 kbVS600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information below includes the documentation and workarounds for Visual
+Basic 6.0. This information can also be found in the README.htm file that ships
+with Visual Basic 6.0 on the Visual Basic 6.0 CD-ROM. Please see the REFERENCES
+section of this article for a list of the Microsoft Knowledge Base articles
+relating to the Visual Basic 6.0 readme.
+
+Following is a list of all parts of the readme file:
+
+Part 1.  Important Issues - Please Read First!
+Part 2.  Data Access Issues and DataBinding Tips
+Part 3.  Control Issues
+Part 4.  Language Issues
+Part 5.  Samples Issues
+Part 6.  Wizard Issues
+Part 7.  Error Message Issues
+Part 8.  WebClass Designer Issues
+Part 9.  DHTML Page Designer Issues
+Part 10. Extensibility issues
+Part 11. Miscellaneous Issues
+Part 12. Microsoft Transaction Server (MTS) Issues
+Part 13. Dictionary Object
+Part 14. Visual Component Manager
+Part 15. Application Performance Manager
+
+MORE INFORMATION
+================
+
+Known Problems in Application Performance Explorer:
+
+Configuring Remote Automation Security When Using Remote APE Components
+-----------------------------------------------------------------------
+
+In order to use Remote Automation (RA) to communicate with remote APE components,
+you may have to configure RA security using the Remote Automation Connection
+Manager (Racmgr32.exe).
+
+To configure RA security:
+
+1. Start Racmgr32.exe and click the Client Access tab.
+
+2. Select either "Allow All Remote Creates" or "Allow Remote Creates by Key".
+
+3. If "Allow Remote Creates by Key" is selected, make sure the "Allow Remote
+   Activation" check box is checked for each APE component.
+
+RA supports the following levels of authentication:
+
+   Name           Value  Description
+---------------------------------------------------------------------
+   Default        0      Use Network default.
+   None           1      No authentication.
+   Connect        2      Connection to the server is authenticated.
+   Call           3      Authenticates only at the beginning of each
+                         remote procedure call, when the server
+                         receives the request. Does not apply to
+                         connection-based protocol sequences (those
+                         that start with the prefix "ncacn").
+   Packet         4      Verifies that all data received is from the
+                         expected client.
+   Packet         5      Verifies that none of the data transferred
+   Integrity             between client and server has been
+                         modified.
+   Packet Privacy 6      Verifies all other levels and encrypts the
+                         argument values of each remote procedure
+                         call.
+
+APE profiles are initially installed with an authentication level of 1 ("None")
+because Windows 95 supports only that level of authentication. However, if
+additional security is desired, the level of authentication of a profile can be
+changed by modifying the profile collection file (the Aemanagr.ini file) by
+using a text editor such as Notepad.
+
+Each profile in the profile collection file begins with the name of the profile
+within square brackets, such as [Peak performance, synchronous (CPU, Pool)]. The
+attributes of the profile follow, using the format <name>=<value>
+(such as "Task Duration=1"). To change the authentication level, change the
+value of the "Authentication" attribute of the selected profile and save the
+file.
+
+Compatibility Issues Between the Application Performance Explorer (APE) that
+Ships with Visual Studio 6.0 and the Version that Shipped with Visual
+
+Basic 5.0
+---------
+
+There are known compatibility issues between the Application Performance Explorer
+(APE) that ships with Visual Studio 6.0 and the APE that shipped with Visual
+Basic 5.0.
+
+To avoid the compatibility issues, do one of the following:
+
+ - Before installing Visual Studio 6.0 and APE on the computer that has the
+   version of APE shipped with VB 5, first uninstall APE from Visual Basic, and
+   then install Visual Studio and APE.
+
+ - If you have installed Visual Studio 6.0 and APE on the same computer that has
+   the VB5 APE, uninstall the VB APE and then reinstall the Visual Studio APE.
+
+Adjusting Default Settings To Use APE and MTS
+---------------------------------------------
+
+After installing the APETEST database onto your SQL Server, you must adjust some
+of the default settings in order to use APE and MTS.
+
+NOTE: If you haven't already installed the APETEST database on your SQL Server,
+you should do that first. To learn how to install the APETEST database, search
+for the topic "APE Database Setup Wizard" in MSDN Library Visual Studio 6.0.
+
+To configure the APETEST database installation to work with MTS:
+
+1. Start Microsoft SQL Enterprise Manager.
+
+2. In the Databases folder, right-click the APETEST database and click Edit.
+
+3. Click the Options tab.
+
+4. Select the Truncated Log on Checkpoint check box and click OK.
+
+5. In the Databases folder, right-click the tempdb database and click Edit.
+
+6. Click Expand.
+
+7. In the Data Device box, select <new>.
+
+8. In the New Database Device dialog box, in the Name box, type tempdbData.
+
+9. In the Size (MB) box, type 10.
+
+10. Click Create Now, and finally click OK.
+
+11. Click Expand Now.
+
+12. Click Expand.
+
+13. In the Log Device box, select <new>.
+
+14. In the New Database Device dialog box, in the Name box, type tempdbLog.
+
+15. In the Size (MB) box, type 10.
+
+16. Click Create Now, and finally click OK.
+
+To configure the allowable number of user connections:
+
+1. Start Microsoft SQL Enterprise Manager.
+
+2. Right-click the server and click Configure.
+
+3. For example, if your server is named CORONA, in the Server Manager child
+   window, right-click CORONA and then click Configure.
+
+4. Click the Configuration tab.
+
+In the Configuration box, increase the number of user connections by at least
+15.
+
+NOTE: If you are running APETEST on an established production database server,
+you may not have access permission to adjust the current number of user
+connections. In this case, you should ask your database administrator to
+increase the number of current user connections by at least 15 connections to
+support APE testing.
+
+Application Performance Explorer Server-Side Setup May Generate Error
+---------------------------------------------------------------------
+
+While installing the APE server-side components, you may see an error referring
+to an incorrect version of OLEAUT32.dll. You may dismiss this error and continue
+with the installation.
+
+However, this error message may indicate that the Microsoft Transaction Server
+Package was not installed correctly. To confirm that it was installed correctly,
+run the Transaction Server Explorer and look for all installed MTS packages on
+your computer. Visual Studio APE Package should be listed.
+
+To install the package, AEMTSSVC.pkg, run the MTS Transaction Server Explorer
+from the Start menu and install the package to the local computer using the MTS
+Explorer.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q170164 : INFO: VB 6.0 Readme Part 1: Important Issues - Read First!
+
+   Q170163 : INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues
+
+   Q170162 : INFO: VB 6.0 Readme Part 3: Control Issues
+
+   Q170161 : INFO: VB 6.0 Readme Part 4: Language Issues
+
+   Q170160 : INFO: VB 6.0 Readme - Part 5: Samples Issues
+
+   Q190046 : INFO: VB 6.0 Readme Part 6: Wizard Issues
+
+   Q170158 : INFO: VB 6.0 Readme Part 7: Error Message Issues
+
+   Q189539 : INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+
+   Q190249 : INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+   Q170154 : INFO: VB 6.0 Readme Part 10: Extensibility Issues
+
+   Q170157 : INFO: VB 6.0 Readme Part 11: Miscellaneous Issues
+
+   Q170156 : INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues
+
+   Q191792 : INFO: VB 6.0 Readme Part 13: Dictionary Object
+
+   Q191791 : INFO: VB 6.0 Readme Part 14: Visual Component Manager
+
+======================================================================
+Keywords          : kbreadme kbMTS kbVBp kbVBp600 kbVS600 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

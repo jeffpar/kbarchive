@@ -1,0 +1,52 @@
+DOCUMENT:Q87183  07-NOV-1999  [pcmail]
+TITLE   :PROFS: Using ASCII/EBCDIC Programs to Solve Problems
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Two text-file translation programs, ASCII.EXE and EBCDIC.EXE, are supplied with
+the gateway component. You can use them to troubleshoot problems with files that
+are corrupted and therefore copied in the ERR directory.
+
+Detailed information on how to use the programs are included in the "Microsoft
+Mail Gateway to IBM PROFS and OfficeVision LAN Administrator's Guide." Briefly,
+the most common use in problem solving is to translate files written in EBCDIC
+format that have been copied into the ERR directory, to determine why the
+gateway program rejected them. Once in ASCII format, the files can be loaded
+into a text editor on a PC and inspected for invalid tokens or formatting
+problems.
+
+
+Additional query words: 3.00 pcmail profslan ASCII EBCDIC text file translation
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,61 @@
+DOCUMENT:Q266492  26-MAY-2001  [homemm]
+TITLE   :Encarta 2001: Cannot Copy Images in Articles to Researcher
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Africana, Third Edition 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Interactive World Atlas 2001 
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you copy an article from one of the programs listed at the beginning of
+this article to Microsoft Encarta Researcher, you may not be able to copy images
+that are included in the article.
+
+RESOLUTION
+==========
+
+To work around this issue, double-click the image that you want to copy to
+Encarta Researcher, and then copy the image to Encarta Researcher.
+
+NOTE: If you want to edit the image, do so before you copy it into Encarta
+Researcher.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Resercher.
+
+Additional query words: multi multi-media media mm eiwa ers graphic
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaAfricana300 kbEncartaReference2001 kbEncartaWorldAtlas2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

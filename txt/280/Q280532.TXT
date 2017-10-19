@@ -1,0 +1,81 @@
+DOCUMENT:Q280532  19-MAR-2002  [sms]
+TITLE   :SMS: Client Service Does Not Start on Windows 2000 Professional
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Systems Management Server (SMS) Client service may not start on a Windows
+2000-based client if the default domain policy has been modified to grant the
+"Logon as a service" user right to a domain user account.
+
+CAUSE
+=====
+
+The addition of the "Logon as a service" user right in the default domain policy
+takes precedence over any instances of the same user right that are set locally,
+including the SMSCliSvcAcct& account under which the SMS Client service
+runs.
+
+There are times when a domain account should have certain rights on either a
+Windows 2000 Professional-based client or a Windows 2000-based member server.
+Granting this right in the default domain policy may seem the most logical way
+to grant this right so that this account has this right for the entire domain.
+However, this logic may cause problems with other accounts that are created
+locally on Windows 2000 Professional and Windows 2000-based members servers
+because the default domain policy overrides the rights that are granted locally.
+Therefore, the SMSClisvcacct account, which is local and unique on every Windows
+2000-based computer that is not a participating domain controller, cannot
+start.
+
+Manually trying to start the service generates a "logon failure" error message
+even though the account and password are correct and the "Logon as a service"
+user right is present for the SMSCliSvcAcct& account in the local policy on
+the workstation or member server.
+
+WORKAROUND
+==========
+
+To work around this behavior, grant the rights locally on the computers on which
+the domain account requires the special privileges.
+
+STATUS
+======
+
+This behavior is by design. The Domain Group Policy overrides the Local Policy
+settings; the SMSClisvcacct account cannot be added at this level.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

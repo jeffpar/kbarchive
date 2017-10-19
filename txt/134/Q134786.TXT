@@ -1,0 +1,79 @@
+DOCUMENT:Q134786  22-NOV-1999  [powerpt]
+TITLE   :PPT7: Color of Embossed Text Varies with Text Box Fill Style
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If you use the emboss effect on text, the effect varies depending on the type of
+fill used to format the text object.
+
+MORE INFORMATION
+================
+
+Following is a list of the effects you can expect when using the emboss
+feature.
+
+   Text Object Fill      Emboss Effect
+   ----------------      -------------
+
+   Shaded two-color      Text picks up the first of the selected
+                         shading colors.
+
+   Shaded one-color      Text picks up the selected shading color.
+
+   Shaded preset         Text picks up the last solid color selected,
+                         or the fill color from the slide color scheme.
+                         (Depends on how the text box was previously
+                         formatted.)
+
+   Textured fill         Text picks up the background color from the
+                         slide color scheme.
+
+   Patterned fill        Text picks up the background color from the
+                         Pattern Fill dialog box.
+
+   Other Color fill      Text picks up the new fill color.
+
+   No Fill               Text picks up the background color from the
+                         slide color scheme.
+
+   Background fill       Text picks up the color from the slide
+                         background, based on the background formatting.
+                         (see above)
+
+Additional query words: 7.00 ppt95 ppt7 ppt
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

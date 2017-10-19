@@ -1,0 +1,68 @@
+DOCUMENT:Q250834  01-MAY-2001  [ssafe]
+TITLE   :INFO: Create File List of Project at a Particular Time or Label
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAutomation _IK kbSSafe500 kbSSafe600 kbSSExplorer _IK kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Obtaining a list of files that were in a project at a specific time is not
+directly supported by the Visual SourceSafe Explorer. The best way to obtain
+this information is to use the Visual SourceSafe command line; OLE Automation
+could also be used.
+
+MORE INFORMATION
+================
+
+For example, if you have a project called "$/Project1" and you want to list the
+files in it on 5/17/1999, then issue the following command from a DOS window:
+
+C:\>ss dir $/Project1 -vd5-17-99
+
+To get the same project at a label called "TestLabel", issue the following
+command from DOS window:
+
+C:\>ss dir $/Project1 -vlTestLabel
+
+REFERENCES
+==========
+
+Visual SourceSafe 6.0 Automation
+
+Additional information can be found in the Visual SourceSafe product
+documentation by searching for this title:
+
+ - Directory (Command Line)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation _IK kbSSafe500 kbSSafe600 kbSSExplorer _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

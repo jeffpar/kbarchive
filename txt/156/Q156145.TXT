@@ -1,0 +1,59 @@
+DOCUMENT:Q156145  08-NOV-2001  [homegame]
+TITLE   :Full Court Press: Setup Notes
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information that will help you install Microsoft Full
+Court Press.
+
+MORE INFORMATION
+================
+
+If you are using a 2x CD-ROM drive, you should do a Typical or Custom
+installation for better performance.
+
+If you are using 16-bit CD-ROM drivers for your CD-ROM, Autorun may not work
+properly. To manually run Setup:
+
+1. Make sure your Full Court Press compact disc is inserted in your CD-ROM drive
+   and run Explorer.
+
+2. Double-click your CD-ROM drive (usually drive D.)
+
+3. Double-click the Setup icon to start installation.
+
+Additional query words: 1.00 improve improving perform increase speed access run faster cd rom install
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbNBAFullCourtPress
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

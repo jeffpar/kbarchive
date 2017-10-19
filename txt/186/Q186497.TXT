@@ -1,0 +1,69 @@
+DOCUMENT:Q186497  11-DEC-2001  [winnt]
+TITLE   :Do Not Install Active Desktop on Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you perform a standard installation of Microsoft Internet Explorer 4.01
+with Active Desktop, restart the Terminal Server computer, and log on, the
+computer stops responding (hangs) or displays a blue screen. Little more than
+the Start Menu and Task Manager can be available.
+
+If you remove the Active Desktop component, the problem is resolved for users
+logging on at the console but Terminal Server clients may receive the following
+error message:
+
+   Cannot access this file. Path is too long.
+
+If you click OK, the client session ends.
+
+RESOLUTION
+==========
+
+To work around this problem, remove Internet Explorer and reinstall it without
+the Active Desktop component. Follow these steps to remove Internet Explorer:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+   NOTE: It may take a long time for Control Panel to open after you click it.
+
+2. Double-click Add/Remove Programs.
+
+3. Select Microsoft Internet Explorer 4.0, and then click Add/Remove.
+
+4. Remove Internet Explorer.
+
+Additional query words: update slow very minutes hang terminate
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

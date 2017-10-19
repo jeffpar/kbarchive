@@ -1,0 +1,54 @@
+DOCUMENT:Q99238  26-MAY-2001  [homemm]
+TITLE   :Encarta: Atlas Map Prints Incorrectly to a HP DeskJet 550C
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1993 editions,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 92 Multimedia Encyclopedia 
+ - Microsoft Multimedia Viewer, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Atlas maps in Encarta might print incorrectly to a Hewlett-Packard (HP) DeskJet
+550C printer, if you are using version 3.0 or 3.1 of the HP 550C printer driver
+and you have VGA selected for your video driver.
+
+This problem has not been reproduced in Windows 95.
+
+MORE INFORMATION
+================
+
+If you copy and paste the image into another application and print from there,
+the output will be correct. Changing the video driver choice may also correct
+the problem. The problem apparently occurs only with the Windows VGA.DRV and
+version 3.0 or 3.1 of this printer driver.
+
+Additional query words: multimedia multi media multi-media problem bad poor output hewlett packard desk jet DESKJETC.DRV usage DJ
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbMMViewer200 kbEncarta1992
+Version           : :1993 editions,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

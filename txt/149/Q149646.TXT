@@ -1,0 +1,57 @@
+DOCUMENT:Q149646  08-NOV-2001  [pcmail]
+TITLE   :No DTMF Tones on Presario While Using Speaker Phone
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Phone, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Microsoft Phone software on a Compaq Presario computer,
+you cannot send DTMF tones while using Speaker Phone.
+
+CAUSE
+=====
+
+DTMF tones are disabled while using Speaker Phone because of problems with the
+Presario's preinstalled modem. Sending a DTMF tone while using Speaker Phone
+would turn off Speaker Phone, hanging up the call.
+
+MORE INFORMATION
+================
+
+DTMF, or touch-tone, is a method used by the telephone system to communicate the
+keys pressed when you dial. Pressing a key generates two simultaneous tones, one
+for the row and one for the column. These are decoded by the exchange to
+determine which key was pressed.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : win95 
+Technology        : _IKkbbogus kbMSHardwareSearch kbPhone
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

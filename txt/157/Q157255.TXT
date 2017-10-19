@@ -1,0 +1,69 @@
+DOCUMENT:Q157255  11-DEC-1999  [foxpro]
+TITLE   :DOCERR: About _Coverage Wrong in Documentation and Help
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual FoxPro 5.0 Language Reference, Help, and online Language Reference
+provide incorrect information about the "_COVERAGE" system variable.
+
+MORE INFORMATION
+================
+
+The topic "_COVERAGE" in the Visual FoxPro Help file and in the Language
+Reference in the Online Documentation provide the following information:
+
+   Contains the name of the Visual FoxPro application that creates the Debugger
+   coverage and profiler output.
+
+   By default, _COVERAGE contains Coverage.app, installed in your Visual FoxPro
+   directory. You can specify a different name for the coverage output
+   application.
+
+However, issuing either of the following commands in the Command window results
+in an empty string.
+
+      ? _COVERAGE
+      ? SET("COVERAGE")
+
+A file called Coverage.app does not exist in any of the directories installed by
+Visual FoxPro.
+
+A default coverage application, Coverage.app, does not exist. The _COVERAGE
+system variable is not assigned any application by default, but one can be
+assigned to it. This variable allows you to create your own coverage application
+and make it callable from Visual FoxPro.
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,48 @@
+DOCUMENT:Q99867  08-NOV-2001  [homemm]
+TITLE   :Random Keeps Running Even When Focus Is Changed
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Musical Instruments for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Random option in Musical Instruments runs a "slide show" of randomly
+selected instruments and plays their sounds. The slide show continues to run
+until you click anywhere on an instrument screen.
+
+This option continues to run even if you switch away from Musical Instruments and
+then switch back. For instance, if you choose Random and then switch to the
+Finder, the random slides will still be running when you switch back to Musical
+Instruments.
+
+Additional query words: mac multimedia multi media multi-media macmm change active usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbMusicalInstMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

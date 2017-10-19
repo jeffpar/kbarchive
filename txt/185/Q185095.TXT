@@ -1,0 +1,53 @@
+DOCUMENT:Q185095  19-NOV-1999  [powerpt]
+TITLE   :PPT: Embedding Fonts Not Supported in Macintosh PowerPoint
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:4.0,98
+OPER/SYS:
+KEYWORDS:kbdocerr kbdta kbFont
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Macintosh, version 4.0 
+ - Microsoft PowerPoint 98 Macintosh Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Embedding Fonts help topic in Microsoft PowerPoint 4.0 for the Macintosh
+indicates that you can embed fonts in a PowerPoint Presentation by selecting the
+With Fonts check box in the Save As dialog box. The Embed Fonts check box is not
+present in the Save As dialog box in PowerPoint 4.0 because this functionality
+is not supported in PowerPoint for the Macintosh.
+
+MORE INFORMATION
+================
+
+PowerPoint 98 Macintosh Edition also does not support font embedding.
+
+Additional query words: powerpoint ppt mac_ppt macppt powerpnt 4.0 ppt4 powerpnt4 mac embedding embedded check box true type
+
+======================================================================
+Keywords          : kbdocerr kbdta kbFont 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt98Search kbPowerPt98 kbPowerptMacSearch kbPowerPt400Mac
+Version           : MACINTOSH:4.0,98
+Hardware          : MAC
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

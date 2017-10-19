@@ -1,0 +1,67 @@
+DOCUMENT:Q151733  22-OCT-1999  [mastering]
+TITLE   :Mastering Access Programming: Minimum System Requirements
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:kbmm kbsetup kbnokeyword
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Access Programming ISBN 1-55615-912-9, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements for Mastering Microsoft
+Access Programming.
+
+MORE INFORMATION
+================
+
+Mastering Microsoft Access Programming will run on the following minimal system;
+however, performance will improve with more RAM or a faster CD-ROM drive.
+
+ - Personal computer with a 486DX or higher processor running Windows 95, or
+   Microsoft Windows NT Workstation 3.51 or later
+
+ - 8MB of memory (16MB or more recommended)
+
+ - 10MB of available hard-disk space (15MB to work with lab files on the hard
+   disk)
+
+ - MPC2-compatible CD-ROM drive
+
+ - Super VGA or higher-resolution video adapter capable of displaying 256 colors
+   or greater
+
+ - Microsoft Mouse or compatible pointing device
+
+ - MPC2-compatible audio board for audio and video instruction
+
+ - Microsoft Access 95 required to work the lab exercises
+
+Additional query words: 1.00 1.00a multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm kbsetup kbnokeyword 
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

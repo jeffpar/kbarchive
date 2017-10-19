@@ -1,0 +1,61 @@
+DOCUMENT:Q214551  12-APR-2001  [homegame]
+TITLE   :Close Combat III: The Russian Front: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup cc msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat III: The Russian Front 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the minimum system requirements needed to run
+Close Combat III: The Russian Front.
+
+MORE INFORMATION
+================
+
+To play Close Combat III: The Russian Front, you need:
+
+ - Microsoft Windows 95 or Windows 98 operating system.
+ - A personal computer with a Pentium 133 or faster processor.
+ - 32 megabytes (MB) of RAM.
+ - At least 60 MB of available hard disk space and a swap file of at least 10 MB
+   (20 MB or more is recommended).
+ - A 4X CD-ROM drive or faster.
+ - A video adapter that supports 800 x 600 resolution or higher and 16-bit
+   color.
+ - A sound adapter (recommended, but not required).
+ - A Microsoft Mouse or compatible pointing device.
+ - Headphones or speakers (recommended).
+ - A 28.8 or faster modem for head-to-head play.
+
+Additional query words: kbimu homegame msgame CCIII msr sysreq
+
+======================================================================
+Keywords          : kbenv kbsetup cc msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat3
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

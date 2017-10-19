@@ -1,0 +1,78 @@
+DOCUMENT:Q149856  02-NOV-1999  [fortran]
+TITLE   :BUG: Embedding a String Using the /V Compiler Option Fails
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to embed a character string that contains one or more spaces into an
+object code (.obj) file by using the /V compiler option causes all the
+characters following the first space in the character string to be ignored. As a
+result, the characters are not embedded into the object file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a source file (Myfile.for) that contains the following sample code:
+
+   ! Compile options needed: /V
+
+         print *, 'Embedded Message'
+         end
+
+2. Compile the source file using the /V compiler option along with the string
+   ("Embedded String"). At the MS-DOS command-line prompt, type:
+
+   " fl32 /V"Embedded String" myfile.for " (without the quotation marks)
+
+3. Check the object file for the string. Create an object code dump file by
+   using the Dumpbin.exe utility. At the MS-DOS command-line prompt, type:
+
+   " dumpbin /all myfile.obj > myfile.txt " (without the quotation marks)
+
+4. Search the dump file (Myfile.txt) for the string ("Embedded String"). Note
+   that searching the dump file yields only the "Embedded" part of the string in
+   the RAW DATA #2 section.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

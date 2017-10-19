@@ -1,0 +1,68 @@
+DOCUMENT:Q76774  31-OCT-1999  [winmisc]
+TITLE   :README.TXT: Using Windows 2.x Drivers with Windows 3.0
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Windows with Multimedia Extensions
+version 1.0 README.TXT file. The Setup program copies this file to the Windows
+with Multimedia Extensions directory.
+
+This information does not apply to later versions of Windows.
+
+USING WINDOWS 2.X DRIVERS WITH WINDOWS 3.0
+==========================================
+
+Windows 2.x display, mouse, sound, system, and communications drivers
+run only in Windows 3.0 real mode. To run Windows 3.0 in standard and
+enhanced 386 modes (that also support the Multimedia extensions), you
+must update these drivers to run Windows 3.0.
+
+To start Windows in real mode, type the following at the MS-DOS prompt
+and press ENTER:
+
+   win /r
+
+If you use Windows 2.x printer drivers with Windows 3.0, you might see
+a warning when you print. As with Windows 2.x applications, 2.x
+printer drivers work reliably only if you run Windows 3.0 in real
+mode.
+
+NOTE: It is recommended that you install only the drivers provided
+with Windows 3.0. If you want to use a special device driver that was
+not provided with Windows, contact the manufacturer for an updated
+driver that works with Windows 3.0.
+
+Additional query words: MMWIN kbmm 1.0 readme
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

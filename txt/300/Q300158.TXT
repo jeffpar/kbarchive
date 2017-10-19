@@ -1,0 +1,75 @@
+DOCUMENT:Q300158  30-JUL-2001  [mspress]
+TITLE   :MCSE Readiness Review Exam 70-224 Microsoft Exchange 2000 Server
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book MCSE Readiness Review Exam 70-224 Microsoft
+Exchange 2000 Server Administration, ISBN 0-7356-1243-9.
+
+The following topics are covered:
+
+ - Page 63: Incorrect Statement About Moving Servers Between Admin Groups
+
+ - Page 121: Incorrect Answer For Question 70-224.03.05.002
+
+MORE INFORMATION
+================
+
+Page 63: Incorrect Statement About Moving Servers Between Admin Groups
+----------------------------------------------------------------------
+
+On page 63, in the second to last paragraph, please remove the following
+statement:
+
+"... or you can install it into one Administrative group and then use the
+services mode of the Active Directory Sites and Services MMC snap-in to move
+servers between Administrative groups. You can't do this in the Exchange System
+MMC snap-in."
+
+Please note that it is not possible to move servers between Admin Groups in
+Exchange 2000 Server.
+
+
+Page 121: Incorrect Answer For Question 70-224.03.05.002
+--------------------------------------------------------
+
+On page 121, in question 70-224.03.05.002, the correct answer should be A, not
+C.
+
+Exchange System MMC is used for forcing an address list update, not Active
+Directory Sites and Services MMC.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ITBOOK 0-7356-1243-9 ENGLISH VITTORI
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

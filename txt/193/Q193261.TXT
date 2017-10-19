@@ -1,0 +1,94 @@
+DOCUMENT:Q193261  11-JAN-2001  [vbwin]
+TITLE   :BUG: Error 458 Using For Each with Variant Array of UDTs
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a For Each to loop over a Variant containing an array of User
+Defined Types (UDTs), the following error may occur:
+
+   Run-time error '458': Variable uses an Automation type not supported in
+   Visual Basic.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX EXE project in Visual Basic. Class1 is created by
+   default.
+
+2. Paste the following code into Class1:
+
+         Type MyType
+            x As Integer
+            y(5) As Integer
+         End Type
+
+3. Add a standard module to the project by selecting "Add Module" from the
+   "Project" menu.
+
+4. Paste the following code into Module1:
+
+         Sub main()
+            Dim x(5) As MyType
+            Dim y as Variant
+            y = x
+            For Each g In y
+            Next g
+         End Sub
+
+5. Open the Immediate Window by selecting it from the View menu.
+
+6. Type "main" (without quotes) into the Immediate Window and press the ENTER
+   key to run the main subroutine. Note that the above error occurs on the For
+   Each line.
+
+   NOTE: If you change the line "For Each g In y" to "For Each g In x" so that
+   the "For Each" statement will loop through the array X, the correct error
+   description "For Each may not be used on an array of user-defined types or
+   fixed-length strings" will occur instead.
+
+Additional query words: kbdss kbDSupport kbVBp kbVBp600bug kbCompiler
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

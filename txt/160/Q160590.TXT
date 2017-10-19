@@ -1,0 +1,72 @@
+DOCUMENT:Q160590  17-OCT-1999  [exchange]
+TITLE   :XFOR: PCMTA: The Status Could Not Be Logged
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the MSMail Connector message transfer agent (PCMTA) tries to log its
+current status to the Event Viewer, it might report the following stop error
+message:
+
+   STOP The status could not be logged. Use the Services icon in Control Panel
+   to ensure the service is running.
+
+Checking the Services shows the PCMTA services are running, mail is being
+transferred, and the expected Microsoft Exchange services are working properly.
+
+RESOLUTION
+==========
+
+Add the Microsoft Exchange Service Account to the local computer's
+Administrators group or the Domain Administrators group as follows:
+
+1. Add the Microsoft Exchange Service Account to the Administrators group using
+   the Windows NT User Manager program.
+
+2. In Control Panel Services, stop and restart the PCMTA service(s) that logging
+   is being attempted on.
+
+NOTE: This may also require a synchronization of the servers in the domain if
+this is a member server and a reboot of the computer running Microsoft Exchange
+Server to activate the new access controls for this user account.
+
+MORE INFORMATION
+================
+
+The Log Status button is located within the Configuration/Connections/MS Mail
+Connector Properties under the Connector MTAs tab in the Microsoft Exchange
+Server Administrator program.
+
+Additional query words: MSMI logging
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,264 @@
+DOCUMENT:Q220155  11-DEC-2001  [winnt]
+TITLE   :Troubleshooting NTVDM and WOW Startup Errors
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This is a step-by-step troubleshooting guide for examining Windows NT Virtual
+DOS Machine (NTVDM) or Windows on Windows startup issues.
+
+MORE INFORMATION
+================
+
+To begin troubleshooting, determine whether you are dealing with problems in the
+NTVDM or problems in both the NTVDM and the Windows on Windows subsystem.
+
+NOTE: Sysedit.exe is a 16-bit program available within Windows NT for
+troubleshooting these issues.
+
+Problem Diagnosis
+-----------------
+
+To diagnose your problem:
+
+1. Start System Configuration Editor (Sysedit.exe).
+
+   If this program starts correctly, then there is not an issue with either the
+   NTVDM or the Windows on Windows subsystem. The problem then is with your
+   program not Windows NT. If the program is an older version and requires EMS
+   memory, you must configure it. For more information, please see the following
+   Microsoft Knowledge Base articles:
+
+   Q99279 MS-DOS-Based Application and Command Prompts
+
+   Q196875 Error When EMS Memory Is Configured for MS-DOS App in .pif File
+
+   If the program requires more convential memory than is available, please see
+   the following Microsoft Knowledge Base article:
+
+   Q99363 Increasing Memory for MS-DOS-Based Applications
+
+   However, if System Configuration Editor does not start correctly, then you do
+   not know where the problem lies. Because the problem could be with either
+   Windows on Windows or NTVDM, go to step 2. If troubleshooting determines that
+   the problem is with the Windows on Windows subsystem, then all of the steps
+   listed below in the Troubleshooting section below apply.
+
+2. Run the MS-DOS shell (running the "Command.com " (without the quotation
+   marks) command from the MS-DOS command prompt).
+
+   If this program starts, then run the "Edit.com" (without the quotation marks)
+   command, then you know that NTVDM works. If the shell does not start, then
+   all of the troubleshooting steps below apply (except steps 3 and 4).
+
+3. Check and delete the default NTVDM. Run the "Sysedit.exe " (without the
+   quotation marks) command at a command prompt.
+
+   NOTE: If for any reason your computer does not pass the previously mentioned
+   test, then repeat the entire procedure above after you complete the next
+   three steps.
+
+   a. Start Task Manager, click the Processes tab, and then click the Image name
+      column.
+
+   b. Look for the Image name ntvdm, and then stop the process if you find it in
+      the list. If you do not find it in the list, skip the next step.
+
+   c. Repeat the procedure outlined in steps 2 and 3 above.
+
+Troubleshooting 
+---------------
+
+Please repeat the following steps in the order they appear to troubleshoot issues
+with either the NTVDM or Windows on Windows subsystems.
+
+Please note that steps three and four apply only to the situation where the
+Windows on Windows subsystem does not start.
+
+1. Check the Autoexec.nt and Config.nt files for anything unusual or anything
+   that can be commented out.
+
+2. Rename Autoexec.bat.
+
+3. Check for changes in Win.ini or System.ini, or replace by expanding the
+   original files off of the installation media.
+
+4. Rename all other *.ini files, if possible.
+
+5. In the Config.nt file, allow the following values only:
+
+   dos=high, umb
+   device=%SystemRoot%\System32\Himem.sys
+   files=60
+   shell=%SystemRoot%\System32\Command.com /e:4096
+
+   NOTE: The default entries off of the installation disk will allow SYSEDIT to
+   run, but other entries as outlined above may be needed for other programs to
+   run. Also, files has a valid range of 5 to 254.
+
+6. Verify the environment variables by doing either of the following:
+
+    - Click Start, click Settings, click Control Panel, double-click System, and
+      then click the Environment tab.
+
+   -or-
+
+    - Run the "set" (without the quotation marks) command at the command prompt
+      and check all environmental variables for nulls, blanks, double equal sign
+      (==) marks, or other unknown entries.
+
+7. Ensure that the path is the same as the default path off of the CD; that is,
+   that there are no entries prepended to the path. If a nonstandard entry is
+   there, remove it. Add only the entries needed for your one program and the
+   defaults.
+
+8. Check path length for lengths after expansion that are near 200 characters.
+   Path is a combination of path in Autoexec.nt and on the Environment tab in
+   the System tool of Control Panel. If the path is over 100 characters, change
+   it for testing.
+
+9. If this does not work, you have missing or corrupted files. (More likely, the
+   files will be corrupted rather than missing; try to replace these first.)
+
+   Under the System32 folder look for:
+
+    - Ntio.sys
+
+    - Ntdos.sys
+
+    - Ntvdm.exe
+
+    - Ntvdm.dll (3.1 only)
+
+    - Redir.exe
+
+    - Wowexec.exe
+
+    - Vdmredir.dll
+
+    - Krnl386.exe
+
+    - Krnl286.exe (Windows NT 3.1 only)
+
+    - Gdi.exe
+
+    - User.exe
+
+    - Wow32.dll (not in Windows 3.1)
+
+    - Commdlg.dll
+
+    - Version.dll
+
+    - Shell32.dll
+
+    - Gdi32.dll
+
+    - User32.dll
+
+    - Advapi32.dll
+
+    - Compobj.dll
+
+    - Ddeml.dll
+
+    - Ole2.dll
+
+    - Ole2disp.dll
+
+    - Storage.dll
+
+    - Rpcrt4.dll
+
+    - Winsta.dll
+
+   Under the System folder look for:
+
+    - Avicap.dll
+
+    - Avifile.dll
+
+    - Commdlg.dll
+
+    - Keyboard.drv
+
+    - Lzexpand.dll
+
+    - Mciavi.drv
+
+    - Mciseq.drv
+
+    - Mciwave.drv
+
+    - Mmsystem.dll
+
+    - Mmtask.tsk
+
+    - Mouse.drv
+
+    - Msvideo.dll
+
+    - Olecli.dll
+
+    - Olesvr.dll
+
+    - Setup.inf
+
+    - Shell.dll
+
+    - Sound.drv
+
+    - System.drv
+
+    - Tapi.dll
+
+    - Timer.drv
+
+    - Ver.dll
+
+    - Vga.drv
+
+    - Wfwnet.drv
+
+    - Winspool.drv
+
+   If this does not to resolve your problem call PSS support for further
+   troubleshooting steps.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

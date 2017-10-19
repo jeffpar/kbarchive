@@ -1,0 +1,51 @@
+DOCUMENT:Q66845  30-JUL-2001  [homegame]
+TITLE   :ASD: Install Error Opening FOREIGN.FS4
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+When installing Aircraft & Scenery Designer (ASD), the following error
+message may appear:
+
+   Error opening C:\FLTSIM4\FOREIGN.FS4, File not found
+
+The ASD Install program is attempting to open the FOREIGN.FS4 file, but cannot do
+so. Verify that Flight Simulator 4.00, including the file FOREIGN.FS4, is
+installed in the directory specified with the Install command.
+
+MORE INFORMATION
+================
+
+The Install program must have the Flight Simulator directory explicitly
+specified, and the Install program must be run from the current drive.
+
+For more information on installing ASD, query in this Knowledge Base on the
+following words:
+
+   ASD and proper and install
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

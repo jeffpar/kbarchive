@@ -1,0 +1,79 @@
+DOCUMENT:Q197975  22-JUN-2001  [exchange]
+TITLE   :XADM: Error When Removing SBS Version of Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0,4.0a
+OPER/SYS:
+KEYWORDS:sbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There may be times when it is necessary to remove Exchange Server from the
+Microsoft BackOffice Small Business Server (SBS). When you remove Exchange
+Server, you may encounter the following error during the removal phase of
+setup:
+
+   The file _ie4ad.css on Disc 1 is needed.
+
+CAUSE
+=====
+
+Even though you have Disc 1 inserted, this error will still appear. This error
+is caused because you are using the BackOffice SBS 4.0 CD to remove version 4.0a
+of SBS.
+
+WORKAROUND
+==========
+
+To work around this problem, perform one of the following:
+
+ - Insert the SBS 4.0a CD in the drive when prompted.
+
+   -or-
+
+ - Browse the hard disk drive for the following files when prompted:
+
+      File           Location
+      ---------------------------------------------------------
+      _ie4ad.css     x:\Smallbusiness\Html
+      Cliie.inf      x:\Smallbusiness\Template
+      Useview.asp    x:\Inetpub\Wwwroot\Intranet\Sbsclienthelp
+
+
+For more information on how to remove Exchange Server from the Small Business
+Server, please see the following article in the Microsoft Knowledge Base:
+
+   Q194810 SBS:Exchange:How to Remove/Reinstall Exchange in SBS
+
+
+Additional query words: sbs smallbiz
+
+======================================================================
+Keywords          : sbs 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : WinNT:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

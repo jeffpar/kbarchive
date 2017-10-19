@@ -1,0 +1,67 @@
+DOCUMENT:Q62748  20-OCT-2000  [powerpt]
+TITLE   :PPT: Copying Slides Between Presentations
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::2.0,2.0e,3.0,4.0,7.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, versions 2.0, 2.0e, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+You can copy slides from one presentation to another by using the Cut, Copy and
+Paste commands.
+
+MORE INFORMATION
+================
+
+To copy slides between presentations, follow these steps:
+
+1. Open your new presentation and the presentation containing the slides that
+   you want to copy. From the Window menu, click the presentation that has the
+   slides you want to copy.
+
+2. In Slide Sorter view, select the slides you want to copy, and then click Copy
+   or Cut on the Edit menu.
+
+3. From the Window menu, click the presentation that you want to copy slides to,
+   and then click Slide Sorter on the View menu.
+
+4. On the Edit menu, click Paste.
+
+The slides are copied to your new presentation. The copied slides assume the
+format of the presentation they're copied to. If the formats are different, you
+may have to move objects on the copied slides to fit their new format.
+
+Additional query words: 2.00 3.00 4.00 ppt20 ppt30 ppt40 ppt95
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400 kbPowerPt200 kbPowerPt300 kbPowerPt200e
+Version           : :2.0,2.0e,3.0,4.0,7.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

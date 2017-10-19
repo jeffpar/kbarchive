@@ -1,0 +1,78 @@
+DOCUMENT:Q200759  27-JUL-2001  [sms]
+TITLE   :SMS: IBM Thinkpad Video Driver Causes GPF in Sms.exe
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbRemote kbsms120 kbsms120bug kbHelpDesk kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to establish a Remote Control session with an IBM Thinkpad 770
+client running Windows 95 OEM Service Release 2 (OSR2), a general protection
+fault (GPF) in module Sms.exe may be generated.
+
+Other symptoms may include a similar access violation (AV), or the Quick Viewer
+window may not properly refresh the display. This problem occurs if you are
+using the IBM Thinkpad PCI Cyber 9397 driver or the Trident Cyber 9397 Linear
+Accelerated PCI driver above 256 colors.
+
+WORKAROUND
+==========
+
+To use the IBM Thinkpad PCI Cyber 9397 driver at 256 colors, replace the
+Idisp16.dll file with the Idisp16.dll file that has the following file
+attributes:
+
++-------------------------------------------------+
+| Date     | Time   | File name   | Size          | 
++-------------------------------------------------+
+| 02/09/98 | 08:05a | Idisp16.dll | 144,896 bytes | 
++-------------------------------------------------+
+
+To obtain this file, contact Microsoft Product Support Services.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+
+Additional query words: prodsms gp fault
+
+======================================================================
+Keywords          : kbRemote kbsms120 kbsms120bug kbHelpDesk kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

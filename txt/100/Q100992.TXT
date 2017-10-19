@@ -1,0 +1,69 @@
+DOCUMENT:Q100992  03-DEC-1999  [msdos]
+TITLE   :Incorrect Message Displayed When Retrieving Catalog Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you retrieve a catalog file in Microsoft Backup for MS-DOS, you are
+prompted to insert the last disk of the backup set. If the catalog file is very
+large, it may reside on multiple disks and the following message may be
+displayed:
+
+   Disk #b is currently in drive x. The catalog <catalog filename> starts
+   on disk #a. Insert disk #a of the backup set to start catalog retrieval.
+
+NOTE: "a" is the starting catalog disk and "b" is the next catalog disk.
+
+Once you insert the starting catalog disk in the disk drive, Microsoft Backup
+indicates that it is retrieving the catalog. After reading the disk, it displays
+the following message:
+
+   Disk #a is now in drive x. Insert the next disk to continue the retrieve.
+
+After you insert the next disk, Microsoft Backup incorrectly indicates that it is
+retrieving the catalog from the previous disk, even though the next disk is
+actually in the disk drive. However, Microsoft Backup does successfully retrieve
+the complete catalog file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Backup for MS-DOS,
+which ships with MS-DOS 6.0, 6.2, and 6.22. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: 6.00 6.20 msbackup restore diskette
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

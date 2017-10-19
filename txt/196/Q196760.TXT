@@ -1,0 +1,78 @@
+DOCUMENT:Q196760  14-NOV-2000  [word97]
+TITLE   :WD97: Sub Doc's Heading Numbering Doesn't Appear in Master Doc
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In a master document, Microsoft Word does not display subdocument heading
+numbering.
+
+Word displays the heading numbering if you open the subdocument as a separate
+document, but when the subdocument is part of a master document, Word does not
+display subdocument-level heading numbering.
+
+CAUSE
+=====
+
+Word attaches the heading numbering format to the heading style. In a master
+document, the style definition of the master document overrides that of the
+subdocument, so if you do not apply heading numbering in the master document, it
+does not apply to any of the subdocuments either.
+
+The same is true for all styles that exist in both the subdocument and master
+document: The style in the master document has priority over the same-name style
+in the subdocument. For example, if the Normal style in your subdocument
+contains Arial font formatting and the Normal style in your master document
+contains Times New Roman, Word formats the subdocument for Times New Roman when
+it is part of a master document.
+
+WORKAROUND
+==========
+
+To work around this problem, apply heading numbering for subdocuments from
+within the master document.
+
+STATUS
+======
+
+This functionality is by design. Allowing the master document to control the
+styles makes the resulting combination of documents (master document and
+subdocuments) more consistent in style. Applying direct formatting in the master
+documents or subdocuments will override this functionality.
+
+
+Additional query words: numbers missing deleted deletes
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

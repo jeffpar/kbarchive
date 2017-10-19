@@ -1,0 +1,71 @@
+DOCUMENT:Q165077  14-NOV-2000  [word97]
+TITLE   :WD97: Clipart Loses Objects in Word Picture Editor
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbgraphic kbusage winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A clip art picture may lose all or part of an object when you edit it in the
+Word Picture Editor.
+
+CAUSE
+=====
+
+Some text boxes in the Windows Metafile (WMF) graphic file are computed by the
+picture editor to be too narrow resulting in text wrapping incorrectly in the
+text box.
+
+WORKAROUND
+==========
+
+To work around this problem, edit and ungroup the picture. Then select and
+resize the object that contains the missing components.
+
+For more information about editing clip art, click the Office Assistant, type
+"How do I edit a picture?" (without the quotation marks), click Search, and then
+click to view "Ungroup and modify clip art."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: OFF97 metafile
+
+======================================================================
+Keywords          : kbgraphic kbusage winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

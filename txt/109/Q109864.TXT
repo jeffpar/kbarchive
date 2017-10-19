@@ -1,0 +1,96 @@
+DOCUMENT:Q109864  30-APR-1999  [homekids]
+TITLE   :Writer 1: Text Missing, Jumbled, or Overlapping
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.00
+WINDOWS
+kbdisplay kbprb kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may find that the text in Creative Writer looks jumbled or garbled, or as if
+letters and/or words are overlapping each other. In some cases, the text you
+type may not appear on the screen. This problem occurs if a fax driver, such as
+WinFax, has been set as the default printer driver in Windows.
+
+This problem has been resolved with Microsoft Creative Writer version 1.1 for
+Windows, which is available on CD-ROM only. The CD-ROM version of Creative
+Writer is not an upgrade to version 1.0; it is a separate product, and must be
+purchased separately.
+
+
+RESOLUTION
+==========
+
+To eliminate this problem, specify a non-fax printer driver as your default
+printer driver in Windows. To do this, follow these steps:
+
+Windows 95
+----------
+
+1. Exit Creative Writer.
+
+2. Click Start, point at Settings, and then click Printers.
+
+3. Click the right mouse button with the pointer over the appropriate printer.
+   Make sure the Set As Default box is checked.
+
+4. Close the Printers Window, and restart Creative Writer.
+
+Windows 3.x
+-----------
+
+1. Exit from Creative Writer.
+
+2. In the Windows Control Panel, choose Printers.
+
+3. Select a printer driver other than your fax driver, and choose Set As Default
+   Printer.
+
+4. Close the Printers dialog box, and restart Creative Writer.
+
+Your text should now display correctly.
+
+MORE INFORMATION
+================
+
+The problem occurs with the WinFax driver because this driver does not provide
+GetCharWidths(). Printer drivers, by definition, must supply this function. If
+GetCharWidths() fails, Creative Writer defaults to 3/4 (three-fourths) of the
+average character width for all characters. This causes the appearance of
+letters overlapping each other.
+
+Additional query words: 1.00 screen display print text modem fax/modem faxmodem font fonts win fax blank empty mskids mczee portrait wide tall doesn't appear won't set to output
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbCreativeWriter100
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

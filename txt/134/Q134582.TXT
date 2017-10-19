@@ -1,0 +1,69 @@
+DOCUMENT:Q134582  17-DEC-2000  [win95x]
+TITLE   :Video Greeting Err Msg: Video for Windows Not Installed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run Intel Video Greeting, you may receive the following error
+message:
+
+   Video For Windows Not Installed
+
+Video Greeting will not run, even though Video for Windows is installed.
+
+CAUSE
+=====
+
+Video Greeting requires the Video for Windows drivers to be installed as if they
+were installed in Windows 3.1.
+
+RESOLUTION
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Contact Intel to inquire about obtaining an updated version of Video
+   Greeting.
+
+ - Add the following line to the [drivers] section of the System.ini file, and
+   then restart your computer:
+
+      vidc.msvc=msvidc.drv
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

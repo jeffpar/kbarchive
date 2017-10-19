@@ -1,0 +1,66 @@
+DOCUMENT:Q190996  26-NOV-1999  [exchange]
+TITLE   :XADM: Operation Terminated With Error -1911 Using ESEUTIL /d
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It may be necessary to defragment an Exchange Server 5.5 database on a Windows
+NT Server that does not have Exchange Server installed.
+
+When you attempt to defragment an Exchange Server database using ESEUTIL /d you
+may receive the following error:
+
+   Operation terminated with error -1911 (JET_errEntryPointNotFound, An
+   entry point in a DLL we require could not be found) after 0.0 seconds.
+
+CAUSE
+=====
+
+This occurs because you must have at least Windows NT 4.0 Service Pack 2
+installed on the non-Exchange Server computer to be able to use ESEUTIL /d.
+
+RESOLUTION
+==========
+
+It is recommended that Windows NT 4.0 Service Pack 3 or later be installed on
+the non-Exchange Server computer when using ESEUTIL with the defragmentation
+option.
+
+Service Packs for Windows NT can be found on the Microsoft FTP server at:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

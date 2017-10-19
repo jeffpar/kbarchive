@@ -1,0 +1,62 @@
+DOCUMENT:Q160831  10-AUG-2001  [frontpg]
+TITLE   :FP: Frames Wizard Doesn't Confirm Completion
+PRODUCT :Word Front Page
+PROD/VER:windows:1.1,97
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage for Windows 1.1 
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the FrontPage Frames wizard is finished, it returns to FrontPage Editor
+without indicating that the steps in the wizard have been completed
+successfully.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft FrontPage
+98 for Windows.
+
+MORE INFORMATION
+================
+
+If you use a template, the wizard will create the frameset page and all
+corresponding pages for the frame document. If you make a custom grid without
+specifying the location of the component pages, the frameset page is created
+with broken links to the component pages. Creating pages in the location
+referred to by the frame set will correct the broken links.
+
+Additional query words: 97 frames
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : windows:1.1,97
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

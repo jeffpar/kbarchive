@@ -1,0 +1,67 @@
+DOCUMENT:Q85059  12-NOV-1999  [pcmail]
+TITLE   :FFAPI: The Limitations of FFAPI
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Here is a brief summary of the limitations of the File Format Application
+Programming Interface (FFAPI):
+
+1. There is no way to get addressing information. The address of a user or a
+   group must be known before building the FFAPI file.
+
+2. The FFAPI programs are single DOS processes. They must be run from a DOS
+   workstation, and nothing else can be running on that machine. They are not
+   Windows compatible.
+
+3. FFAPI does not limit message size. FFAPI could put a huge file into a user's
+   mailbag, but the mail program itself would be unable to read it because of
+   memory problems.
+
+4. FFAPI processes only the first fifty items found in the queue. Once these
+   have been distributed, FFAPI processes the next fifty items. This applies to
+   both incoming and outgoing mail.
+
+REFERENCES
+==========
+
+"Microsoft Mail for PC Networks Software Development Kit Application File Format
+API"
+
+"Microsoft Mail for PC Networks Software Development Kit Gateway File Format
+API"
+
+
+Additional query words: 3.00 pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

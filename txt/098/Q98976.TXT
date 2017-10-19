@@ -1,0 +1,56 @@
+DOCUMENT:Q98976  09-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Out of the Office Stack Sends Only One Message
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In versions 3.0 and 3.1 of Microsoft Mail for AppleTalk Network, the Out of the
+Office (OOF) message Hypercard stack sends only one OOF message per user from
+whom mail is received.
+
+MORE INFORMATION
+================
+
+The OOF stack keeps a table of users it has returned OOF messages to. Additional
+messages received from those users are not responded to.
+
+The table containing this information is cleared each time the OOF stack is
+restarted.
+
+In addition, the OOF stack does not send a message to another OOF stack running
+because this would create an endless loop of messages.
+
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard300 kbSDKMailHypercard310
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

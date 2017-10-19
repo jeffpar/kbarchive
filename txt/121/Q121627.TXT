@@ -1,0 +1,66 @@
+DOCUMENT:Q121627  17-DEC-2000  [win95x]
+TITLE   :Using NCR C810 PCI SCSI Adapter on Systems with Phoenix BIOS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+System performance, especially hard disk performance, decreases dramatically
+after you install Windows 95.
+
+CAUSE
+=====
+
+The NCR C810 PCI SCSI adapter functions correctly only if it is configured to
+use IRQ 15. The BIOS setup utility on systems using Phoenix System BIOS version
+5.12 or 5.33 allows the PCI SCSI adapter to be configured to use any IRQ in the
+7-15 range. If the NCR C810 PCI SCSI adapter is not configured correctly,
+Windows 95 is forced to use slower real-mode device drivers.
+
+RESOLUTION
+==========
+
+Consult the system manual and change the NCR C810 PCI SCSI adapter IRQ setting
+to IRQ 15 in the system BIOS setup utility. This enables Windows 95 to use the
+faster protected-mode device drivers.
+
+
+MORE INFORMATION
+================
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3rdparty protected scuzzy
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

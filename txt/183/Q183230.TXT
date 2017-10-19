@@ -1,0 +1,71 @@
+DOCUMENT:Q183230  09-AUG-2001  [winnt]
+TITLE   :Stop:0x00000082 with InocuLAN 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you access files on a Directory File System (Dfs) sharepoint, the system
+will crash with the following error:
+
+   Stop: 0x00000082 (0x00000000,0x00000000,0x00000000,0x00000000)
+   DFS_File_System
+
+CAUSE
+=====
+
+File sharing problems can occur when the InocuLAN driver scans a file at the
+same time as other applications are trying to access it. This is a problem with
+the driver INO_FLTR.SYS in InocuLAN 4.0.
+
+RESOLUTION
+==========
+
+Apply InocuLAN 4.0 Service Pack 2 when it becomes available or contact Cheyenne
+Technical Support.
+
+STATUS
+======
+
+At the time of publishing, this fix is in hotfix form. Contact Cheyenne Support
+for more information.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+InocuLAN is manufactured by Cheyenne, a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

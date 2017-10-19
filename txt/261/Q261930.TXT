@@ -1,0 +1,66 @@
+DOCUMENT:Q261930  27-MAY-2000  [sms]
+TITLE   :SMS: Error 679 or 3304 After You Install/Change Service Account
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install or change service account information, the following error
+messages may be displayed.
+
+The following status message ID 679 may be displayed in Discovery Data Manager:
+
+   This component failed to retrieve the list of SMS sites from the site
+   database.
+
+The following status message ID 3304 may be displayed in Hierarchy Manager:
+
+   SMS Hierarchy Manager cannot save site information to the SMS site database
+   for site "PSS".
+
+CAUSE
+=====
+
+This behavior occurs because a local account (non-domain account) is specified
+for the SMS service account.
+
+WORKAROUND
+==========
+
+To work around this problem, run SMS Setup and change the service account to a
+domain administrator account.
+
+
+Additional query words: prodsms ServiceAccountName ddm hman
+
+======================================================================
+Keywords          : kberrmsg kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

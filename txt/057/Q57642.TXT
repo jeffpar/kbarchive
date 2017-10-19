@@ -1,0 +1,64 @@
+DOCUMENT:Q57642  26-OCT-1999  [win95x]
+TITLE   :SYSTEM.INI Entries Required for Everex Step 386/25
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To run Microsoft Windows version 3.0 386 enhanced mode properly on the Everex
+Step 386/25 machine, you need to add the following entries to the [386Enh]
+section of the SYSTEM.INI file:
+
+      8042ReadCmd=A2,1,F
+      8042ReadCmd=A3,1,F
+      8042WriteCmd=B3,8,F
+
+MORE INFORMATION
+================
+
+These entries are needed so that the LED front panel display works properly.
+These computers have a blinking lights display which usually displays
+information about which cylinder on the hard disk is being accessed. The display
+is driven by a set of non-standard commands to the 8042 keyboard controller.
+Normally the Enhanced mode VKD (Virtual Keyboard Device) just ignores
+non-standard commands such as the ones that drive this display. The result is
+that when you start Enhanced mode the display suddenly stops working and ceases
+to indicate hard disk cylinder access. These SYSTEM.INI entires cause the
+display to start working again.
+
+The Everex product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

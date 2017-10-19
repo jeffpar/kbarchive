@@ -1,0 +1,56 @@
+DOCUMENT:Q114793  10-FEB-2000  [foxpro]
+TITLE   :Color Sets Not Supported on FoxPro for Macintosh
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FoxPro for Macintosh does not support the use of color set commands. Any command
+that creates or loads color sets will be ignored.
+
+The SET COLOR SCHEME and SET COLOR TO commands are fully supported and should be
+used instead of SET COLOR SET.
+
+MORE INFORMATION
+================
+
+Color sets are incorrectly referred to as being supported in the following
+sections of the FoxPro for Macintosh version 2.5b documentation:
+
+ - "Language Reference," pages 281, 711, and 713
+
+ - "Installation and Macintosh Features Guide," page 28
+
+Additional query words: vFoxMac FoxMac colorset colour colourset docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

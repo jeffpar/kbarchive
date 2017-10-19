@@ -1,0 +1,86 @@
+DOCUMENT:Q240899  08-AUG-2001  [winnt]
+TITLE   :Error Message: You Must Select at Least One Network Protocol
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to create or edit a phonebook entry in Dial-Up Networking, you
+may receive the following error message:
+
+   You must select at least one network protocol.
+
+CAUSE
+=====
+
+This issue can occur if you click to clear the check boxes under "Network
+protocols" on the Server tab, and then click OK.
+
+NOTE: You continue to experience this issue even if you click to select a
+protocol check box.
+
+RESOLUTION
+==========
+
+To work around this issue, click Cancel to close and not save any changes you
+made to the phonebook entry, or change the server type, save the changes, and
+then edit the phonebook entry again to use the server type you want.
+
+For example, to change the phonebook entry you use to connect to the Internet
+using the server type you want and the TCP/IP protocol, follow these steps:
+
+1. Click Start, point to Programs, point to Accessories, and then click Dial-Up
+   Networking.
+
+2. In the "Phonebook entry to dial" box, click the phonebook entry you use to
+   connect to the Internet.
+
+3. Click More, and then click "Edit entry and modem properties."
+
+4. On the Server tab, click PPP: Windows NT, Windows 95 Plus, Internet in the
+   "Dial-up server type" box.
+
+5. Click to select the TCP/IP check box, and then click OK.
+
+6. Close the Dial-Up Networking dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

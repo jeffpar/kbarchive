@@ -1,0 +1,85 @@
+DOCUMENT:Q311405  01-NOV-2001  [winnt]
+TITLE   :You May Be Unable to Install Drivers in the Tape Devices Tool
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure you understand how to restore it if a problem occurs.
+
+SYMPTOMS
+========
+
+When you click Add on the Driver tab in the Tape Devices tool in Control Panel,
+nothing may happen.
+
+CAUSE
+=====
+
+This issue can occur if registry values that are used to display the Install
+Driver dialog box are missing from the registry.
+
+RESOLUTION
+==========
+
+WARNING: Modifying the registry incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems that result from incorrectly modifying the registry can be solved.
+Modify the registry at your own risk.
+
+Note that you should back up the registry before you modify it. If you are
+running Windows NT or Windows 2000, you should also update your Emergency Repair
+Disk (ERD).
+
+To resolve this issue, use a .reg file to re-create the appropriate entries:
+
+1. Create a file with the following contents:
+
+   REGEDIT4
+
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{6D807884-7D21-11CF-801C-08002BE10318}]
+   @="Tape drives"
+   "Class"="TapeDrive"
+   "Icon"="1610"
+   "Installer32"="SysSetup.Dll,TapeClassInstaller"
+   "LegacyInfOption"="TAPE"
+
+2. Save the file with a .reg file name extension.
+
+3. Double-click the .reg file to merge its contents into the registry on your
+   computer.
+
+You do not need to reboot your computer after you merge the .reg file into the
+registry.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

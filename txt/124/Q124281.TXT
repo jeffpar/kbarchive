@@ -1,0 +1,65 @@
+DOCUMENT:Q124281  13-OCT-1999  [msnetwork]
+TITLE   :BBS Message Title Bar and Subject Line Differ When Using Tab
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.0,1.05,1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.0, 1.05, 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you compose a message on a Bulletin Board Service (BBS) and type a subject
+in the Subject area, the subject you typed also appears in the message's title
+bar.
+
+If you use a tab character in the message subject, the tab character appears as
+spaces in the Subject area and as a pipe character (|) in the message's title
+bar. For example, the subject
+
+   "<tab character>This is the subject"
+
+appears in the Subject area as
+
+   "     This is the subject"
+
+and in the title bar as:
+
+   "|This is the subject"
+
+MORE INFORMATION
+================
+
+For more information about composing messages, view the Composing And Posting A
+Message topic in The Microsoft Network Help file. To find this topic,
+double-click How To, double-click Use Bulletin Boards, and then double-click
+Posting And Replying To Messages.
+
+Additional query words: msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN105 kbMSN120
+Version           : WINDOWS:1.0,1.05,1.2,1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

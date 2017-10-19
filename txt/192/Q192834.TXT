@@ -1,0 +1,79 @@
+DOCUMENT:Q192834  04-NOV-1999  [homekids]
+TITLE   :My Personal Tutor 1st & 2nd Grade: Minimum System Requirements
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbref mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft My Personal Tutor: Sam's Hide and Seek Adventure, version 1.0 
+ - Microsoft My Personal Tutor: Sky's Space Station Voyage, version 1.0 
+ - Microsoft My Personal Tutor: Turru's Daring Sea Quest, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements needed to run the following
+Microsoft My Personal Tutor programs:
+
+ - Sky's Space Station Voyage
+
+ - Turru's Daring Sea Quest
+
+ - Sam's Hide and Seek Adventure
+
+MORE INFORMATION
+================
+
+To run the Microsoft programs listed in the Applies To section of this article,
+you need:
+
+ - A Multimedia PC with a Pentium or faster microprocessor.
+
+ - Microsoft Windows 95 or later, or Microsoft Windows NT, version 4.0 or later.
+
+ - 16 megabytes (MB) of random access memory (RAM).
+
+ - 17 MB of available hard-disk space for the first My Personal Tutor 1st &
+   2nd Grade program, and an additional 10 MB of available hard-disk space for
+   each additional program.
+
+ - An additional 10 to 15 MB of available hard-disk space to use as a swap file
+   when you run the program.
+
+ - A quad-speed (4X) or faster CD-ROM drive.
+
+ - A PCI display adapter and Super VGA monitor capable of supporting 256 colors
+   at 640 X 480 resolution.
+
+ - A Microsoft mouse or compatible pointing device.
+
+ - A 16-bit Windows-compatible sound card with speakers or headphones.
+
+Additional query words: kbimu kids mskids homekids setup set up requires needs MPT reqs sysreq
+
+======================================================================
+Keywords          : kbsetup kbref mskids kbimu 
+Technology        : kbHomeProdSearch kbKidsSearch kbMPTSam kbMPTSky kbMPTTurru
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

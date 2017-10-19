@@ -1,0 +1,63 @@
+DOCUMENT:Q292735  14-MAR-2001  [mspress]
+TITLE   :Microsoft Office 97 Small Business Edition Starts Here Online Re
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Office 97 Small Business Edition Starts Here 1-57231-607-1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+At the end of the "Microsoft Office 97 Small Business Edition Starts Here" setup
+program, if you choose to use a modem for online registration, your modem will
+not successfully connect.
+
+CAUSE
+=====
+
+The phone number used by the online registration program is 703-950-1288. This
+number is not currently in service.
+
+WORKAROUND
+==========
+
+Use the business reply card provided in the package to register your software
+with Microsoft Press.
+
+STATUS
+======
+
+Microsoft Press has confirmed this to be a problem in "Microsoft Office 97 Small
+Business Edition Starts Here."
+
+
+Additional query words: EUBook Off97 1-57231-607-1
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,50 @@
+DOCUMENT:Q85332  25-OCT-1999  [win95x]
+TITLE   :PS/2 Mouse Not Working in Enhanced Mode on Mitac Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+If a Logitech or Microsoft PS/2 style mouse is plugged into a PS/2 port on
+an American Mitac computer, the mouse may not work in Windows 386 enhanced
+mode. If the mouse does function in Windows, the system may appear to hang
+when exiting Windows until one of the mouse buttons is pressed.
+
+According to American Mitac, a BIOS upgrade should solve this problem.
+
+This information applies to the Mitac 3026e. For more information,
+please contact Mitac at (408) 435-1958.
+
+The Logitech and American Mitac products included here are manufactured by
+vendors independent of Microsoft; we make no warranty, implied or
+otherwise, regarding these products' performance or reliability.
+
+Additional query words: 3.10 3.1 3.11 Laser386sx
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

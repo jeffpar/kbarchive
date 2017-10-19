@@ -1,0 +1,80 @@
+DOCUMENT:Q268487  08-AUG-2001  [winnt]
+TITLE   :Default Desktop Is Not Displayed For First-time User
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user logs on to a computer for the first time, the user's desktop may not
+be the default desktop. For example, icons may not be displayed and programs may
+be missing.
+
+CAUSE
+=====
+
+This behavior can occur because the default user profile was modified or
+overwritten by an unknown event. The computer system has transferred policy
+settings to the user's profile, even though a policy may not be in place. The
+existing user profiles, however, are unaffected by these policy settings.
+
+RESOLUTION
+==========
+
+To resolve this behavior, restore the default user profile by means of your
+backup system or from a copy of the same version of Microsoft Windows.
+
+For additional information about profiles and policies, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q161334 Guide To Windows NT 4.0 Profiles and Policies (Part 1 of 6)
+
+   Q185587 Guide To Windows NT 4.0 Profiles and Policies (Part 2 of 6)
+
+   Q185588 Guide To Windows NT 4.0 Profiles and Policies (Part 3 of 6)
+
+   Q185589 Guide To Windows NT 4.0 Profiles and Policies (Part 4 of 6)
+
+   Q185590 Guide To Windows NT 4.0 Profiles and Policies (Part 5 of 6)
+
+   Q185591 Guide To Windows NT 4.0 Profiles and Policies (Part 6 of 6)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400 kbNTTermServSearch kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

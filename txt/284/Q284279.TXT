@@ -1,0 +1,57 @@
+DOCUMENT:Q284279  13-JUN-2001  [msdn]
+TITLE   :INFO: Finding the Index for MSDN Subscriptions
+PRODUCT :Microsoft Developer Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Developer Network Subscriptions 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MSDN Subscriptions no longer contain an installable index to find specific
+products within the subscription CD-ROMs. The index CD now contains an index in
+the form of a Microsoft Access database for reference.
+
+MORE INFORMATION
+================
+
+The best resource for this information is through the MSDN Subscription Online
+CD Index:
+
+   http://www.msdn.microsoft.com/subscriptions/index/default.asp
+   (http://www.msdn.microsoft.com/subscriptions/index/default.asp)
+
+The alternative is to view the index from the Development Platform CD1 under the
+Index folder on versions of the MSDN Universal or Professional Subscription
+prior to January 2001 and within the Index CD for January 2001 and later.
+
+Additional query words: vs6, vssetup, msdnlib
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbMSDNSearch kbMSDNSubsc
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

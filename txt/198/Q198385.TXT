@@ -1,0 +1,90 @@
+DOCUMENT:Q198385  12-AUG-1999  [foxpro]
+TITLE   :PRB: Error Running Setup Wizard under Apple OS 8.5
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbwizard kbAppSetup kbHWMAC kbvfp300b
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Setup Wizard (including the updated Setup Wizard available on
+the Microsoft Web site, for information on this version, please refer to the
+article in the REFERENCES section) in Visual FoxPro 3.0b for the Macintosh,
+running on Apple OS 8.5 to compress files totaling more than one megabyte, the
+following error occurs during compression:
+
+   The Setup Wizard was unable to make a copy of your source files. Setup
+   terminated.
+
+RESOLUTION
+==========
+
+If possible, run the Setup Wizard on a Macintosh running an operating system
+prior to OS 8.5.
+
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Visual FoxPro 3.0b for the Macintosh on a computer running OS 8.5.
+
+2. Create a project that contains a program file with a WAIT WINDOW command.
+   Compile this into an executable.
+
+3. Move the executable to a separate directory and start the Setup Wizard.
+
+4. Walk through each step. Make sure you choose the run-time libraries and
+   graphical help in step 3. This causes the Setup Wizard to compress more than
+   one megabyte of files. If the files total less than one megabyte, the error
+   may not occur.
+
+5. In step 6 of the Setup Wizard, click Finish.
+
+The error listed in the SYMPTOMS section occurs at some point during the
+compression process.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q177395 FILE:Vfpmsuwz.hqx: New Setup Wizard/Visual FoxPro Using OS 8
+
+   Q163470 PATCH: Foxtools.hqx Upgrade to Prevent Setup Wizard Errors
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbHWMAC kbvfp300b 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

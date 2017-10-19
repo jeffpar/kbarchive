@@ -1,0 +1,64 @@
+DOCUMENT:Q152471  19-DEC-1999  [exchange]
+TITLE   :XFOR: Difference Between SMTP:* and SMTP: Address Space
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to configure the Address Space in an Internet Mail Connector
+(IMC), or Internet Mail Service in Exchange Server 5.0 or higher, with a
+specific domain the IMC will accept messages for, an asterisk (*), or blank
+space (entered with a single space bar entry). This article discusses the
+differences between the asterik and blank space entries.
+
+When you use the Microsoft Exchange Internet Mail Connector (IMC) and you have
+two routes (address spaces), one with SMTP: and one with SMTP:*, mail will move
+on the SMTP:* route even if the cost for this route is higher than the SMTP:
+route.
+
+Routing returns four values in order of "best fit" as follows:
+
+ - Exact match
+
+ - Wildcard match
+
+ - Partial substring match
+
+ - No match
+
+SMTP:* is considered a wildcard match and SMTP: is considered a partial substring
+match.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

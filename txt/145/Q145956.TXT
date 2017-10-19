@@ -1,0 +1,59 @@
+DOCUMENT:Q145956  14-MAR-1999  [exchange]
+TITLE   :XCLN: Phonebook Entries w/ Extended Chars Not Sorted Correctly
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the 16-bit Microsoft Exchange client running on Microsoft Windows for
+Workgroups version 3.x, phone book entries used with Remote Mail may not be
+sorted correctly if they contain extended characters.
+
+WORKAROUND
+==========
+
+You can work around this problem by selecting International in the Windows for
+Workgroups Control Panel and changing the language setting from English
+(American) to English (International).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the 16-bit Exchange client
+running on Microsoft Windows for Workgroups. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: win16
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : 4.0 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

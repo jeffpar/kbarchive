@@ -1,0 +1,65 @@
+DOCUMENT:Q139994  30-JUL-2001  [visualc]
+TITLE   :PRB: Specifying Table Name with Column Name in MFC DAO
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1
+OPER/SYS:
+KEYWORDS:kbprogramming kbDAOsearch kbDatabase kbMFC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you add a table name qualifier to a column name in the DoFieldExchange of
+your CDaoRecordset-derived class where one is not required to resolve ambiguity,
+an exception will be thrown when the recordset is opened. The exception
+indicates that:
+
+   GetRows failed. The requested column is not a member of this recordset.
+
+CAUSE
+=====
+
+Specifying table name qualifiers for columns that are not ambiguous (where the
+column name is sufficient to uniquely identify the column) causes the assignment
+of retrieved data to bound columns that occurs in the GetRows function to fail.
+
+RESOLUTION
+==========
+
+Remove unnecessary table name qualifiers to avoid this behavior.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbDAOsearch kbDatabase kbMFC kbVC 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410
+Version           : :4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

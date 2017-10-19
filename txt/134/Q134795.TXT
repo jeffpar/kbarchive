@@ -1,0 +1,61 @@
+DOCUMENT:Q134795  25-AUG-1999  [automap]
+TITLE   :Streets 4.0: "No Place Near" Message When Clicking Map Edge
+PRODUCT :Microsoft Automap
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you click a street that is very close to the edge of a map window the
+following message appears on the Status Line, located at the lower left corner
+of the screen:
+
+   No place near
+
+RESOLUTION
+==========
+
+Scroll the map window to move the desired street away from the edge of the
+window, then click the street. The makes the street name display properly.
+
+MORE INFORMATION
+================
+
+When you click a street, a blue box appears that contains the street name; the
+Status Line contains the location address.
+
+Microsoft has confirmed this to be a problem in Microsoft Automap Streets version
+4.0 for Windows. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: kbhowto auto auto-map automap reference box place near no
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+Version           : 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

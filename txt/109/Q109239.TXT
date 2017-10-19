@@ -1,0 +1,91 @@
+DOCUMENT:Q109239  05-FEB-2000  [foxpro]
+TITLE   :PRB: FoxPro Does Not Respond to Apple Events During READ
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+AppleScript generates a dialog box containing one of the following error
+messages:
+
+ - 
+
+   Application "Microsoft FoxPro" Doesn't Understand the <AppleEvent>
+   Message.
+
+   -or-
+
+ - 
+
+   AppleEvent timed out.
+
+CAUSE
+=====
+
+FoxPro does not respond to Apple events while a READ or a READ EVENTS command is
+in effect.
+
+MORE INFORMATION
+================
+
+NOTE: This problem occurs with most FoxPro .EXE and .APP files because they
+usually contain a Foundation READ (GET-less READ). This causes the "AppleEvent
+timed out" error message.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Script Editor, and enter the following code:
+
+         tell application "Microsoft FoxPro" to quit
+
+2. Save the script as an application. From the File menu, choose Save. In the
+   dialog box that appears, select Application from the Format popup.
+
+3. Quit the Script Editor, and start Microsoft FoxPro.
+
+4. In the Command window, type the following code:
+
+         @1,1 GET test DEFAULT SPACE(10)
+         READ CYCLE
+
+5. Click on the Macintosh desktop or choose the Finder application from the
+   application menu on the far right of the menu bar.
+
+6. With FoxPro now in the background, find the script you saved in step 2, and
+   double-click the script to launch it. The script will tell FoxPro to quit,
+   but the above error will be returned because a READ command is in effect.
+
+Additional query words: vFoxmac FoxMac 3.00 appleevent
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

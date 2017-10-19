@@ -1,0 +1,91 @@
+DOCUMENT:Q154388  17-DEC-1999  [homemm]
+TITLE   :Encarta 1996: How to Reinstall Without Losing Yearbook Updates
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove and reinstall Microsoft Encarta 1996 Encyclopedia, you are
+unable to access your Yearbook Builder update files.
+
+CAUSE
+=====
+
+Removing and reinstalling Encarta 1996 Encyclopedia overwrites the Yearbook
+Builder information file (Ybstate.dat) on your hard drive.
+
+RESOLUTION
+==========
+
+To preserve your Encarta Yearbook Builder updates when you remove and reinstall
+Encarta, use the following steps:
+
+1. Click Start, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "ybstate.dat" (without the quotation marks), and then
+   click Find Now.
+
+3. In the list of found files, click the Ybstate.date file, on the File menu,
+   click Rename.
+
+4. Type "ybstate.sav" (without the quotation marks), and then press ENTER.
+
+5. Run Encarta 1996 Encyclopedia Setup, and then select the Remove All Setup
+   option.
+
+6. When Setup is finished removing the program, run Encarta Setup again to
+   reinstall the program.
+
+7. Locate the new Ybstate.dat file. For information about how to find a file,
+   see step 2 above.
+
+8. Rename the file "Ybstate.new" (without quotation marks). See steps 3 and 4
+   for information about how to rename a file.
+
+9. Locate the Ybstate.sav file you renamed in steps 3 and 4, and rename the file
+   "Ybstate.dat" (without quotation marks).
+
+Your Yearbook Builder update files are now preserved in your current installation
+of Encarta.
+
+MORE INFORMATION
+================
+
+Encarta 1996 Encyclopedia is installed as a 16-bit application under Windows 3.1
+and as a 32-bit application under Windows 95 and Windows 98. The 16-bit version
+of Encarta is not compatible with Windows 95/98. If you installed Encarta 1996
+Encyclopedia before you installed Windows 95/98, you need to remove Encarta and
+then run the Encarta Setup program again for Encarta to function properly.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

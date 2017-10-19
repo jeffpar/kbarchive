@@ -1,0 +1,98 @@
+DOCUMENT:Q247643  31-JUL-2001  [iis]
+TITLE   :HTTP/1.1 Error 501 - Not Implemented
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp501 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use an unknown method from an Internet client, the following
+error message occurs:
+
+   HTTP/1.1 501 Not Implemented
+
+CAUSE
+=====
+
+This behavior is by design. Internet Information Services (IIS) only supports
+the methods defined in "RFC 2616 - Hypertext Transfer Protocol -- HTTP/1.1" and
+"RFC 2518 - HTTP Extensions for Distributed Authoring -- WEBDAV." The methods
+are listed in the following table:
+
+   
+   +---------------------------------------+
+   | Method    | Protocol | RFC  | Section | 
+   +---------------------------------------+
+   | CONNECT   | HTTP     | 2616 | 9.9     | 
+   +---------------------------------------+
+   | COPY      | WEBDAV   | 2518 | 8.8     | 
+   +---------------------------------------+
+   | DELETE    | HTTP     | 2616 | 9.7     | 
+   +---------------------------------------+
+   | GET       | HTTP     | 2616 | 9.3     | 
+   +---------------------------------------+
+   | HEAD      | HTTP     | 2616 | 9.4     | 
+   +---------------------------------------+
+   | LOCK      | WEBDAV   | 2518 | 8.10    | 
+   +---------------------------------------+
+   | MKCOL     | WEBDAV   | 2518 | 8.1     | 
+   +---------------------------------------+
+   | MOVE      | WEBDAV   | 2518 | 8.9     | 
+   +---------------------------------------+
+   | OPTIONS   | HTTP     | 2616 | 9.2     | 
+   +---------------------------------------+
+   | POST      | HTTP     | 2616 | 9.5     | 
+   +---------------------------------------+
+   | PROPFIND  | WEBDAV   | 2518 | 8.1     | 
+   +---------------------------------------+
+   | PROPPATCH | WEBDAV   | 2518 | 8.2     | 
+   +---------------------------------------+
+   | PUT       | HTTP     | 2616 | 9.6     | 
+   +---------------------------------------+
+   | TRACE     | HTTP     | 2616 | 9.8     | 
+   +---------------------------------------+
+   | UNLOCK    | WEBDAV   | 2518 | 8.11    | 
+   +---------------------------------------+
+
+MORE INFORMATION
+================
+
+For more information on these topics, please see the information at the
+following:
+
+ - RFC 2616 - Hypertext Transfer Protocol -- HTTP/1.1
+ - RFC 2518 - HTTP Extensions for Distributed Authoring -- WEBDAV
+
+Additional query words: prod2web
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp501 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

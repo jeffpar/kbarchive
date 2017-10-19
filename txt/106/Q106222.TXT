@@ -1,0 +1,52 @@
+DOCUMENT:Q106222  30-JUL-2001  [lanman]
+TITLE   :CSD00.059 Allows Remoteboot to Work with MS-DOS 6.0, 6.2
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+
+Hotfix CSD00.059 allows LAN Manager Remoteboot to work with MS-DOS 6.0 and 6.2.
+
+
+MORE INFORMATION
+================
+
+MS-DOS 6 requires slightly more memory than MS-DOS 5. LAN Manager Remoteboot
+failed with MS-DOS 6.0 and 6.2 because some rpl boot block components (mainly
+RPLDISK.SYS) placed executing code in unprotected memory, where it was
+overwritten by the MS-DOS 6 boot process. (Other components were also affected.)
+RPLDISK.SYS is now in another location in memory.
+
+Install these fixed/new files immediately after installing LAN Manager and before
+executing the rplsetup/rplinst step. If you add them to an existing rpl server,
+re-run rplinst to set the permissions up correctly.
+
+No changes are needed to LANMAN\RPL\RPL.MAP. OS/2 rpl is not affected, and no
+files specific to it need to change. MS-DOS 6.2 support is also included.
+
+
+Additional query words: 2.20 2.2 2.10a 2.1a 2.10 2.1
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

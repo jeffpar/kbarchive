@@ -1,0 +1,51 @@
+DOCUMENT:Q127822  08-AUG-2001  [winnt]
+TITLE   :EISA Configuration Utility for Compaq Prosignia
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+Internal modems used with Windows NT require that serial port 1 or serial
+port 2 be disabled. Compaq Prosignia EISA configuration utilities prior to
+version 2.22 revision E fail to disable the specified port. The port is
+reported as available in Control Panel (Ports) even though the EISA
+configuration utility reports it disabled.
+
+A new version of the EISA configuration utility (version 2.22 revision E)
+is available on the Compaq FTP server (FTP.COMPAQ.COM
+\pub\softpaq\diagnostic-setup) and the Compaq bulletin board system (BBS)
+at (713) 378-1418. The updated EISA configuration utility is in the
+compressed file SP1016.ZIP. After you uncompress the file, run SP1016.EXE
+and then follow the directions in README3H.1ST.
+
+Additional query words: prodnt 3.10 com comm config com1 com2
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

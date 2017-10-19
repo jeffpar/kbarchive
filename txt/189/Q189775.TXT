@@ -1,0 +1,68 @@
+DOCUMENT:Q189775  11-DEC-1999  [foxpro]
+TITLE   :BUG: Watch/Locals Windows Truncate Char. Variables at CHR(0)
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you look at the value of a character-type variable that contains an embedded
+CHR(0) (that is, a NULL value) in the Visual FoxPro Debugger Watch or Debugger
+Locals window, the variable is truncated at the point where the CHR(0) occurs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type the following in the Command Window:
+
+         gcX = "xxx"+CHR(0)+"yyy"
+         DEBUG
+
+2. Look at gcX in the Debugger Locals window, or type gcX in the Debugger Watch
+   window and look at its value there.
+
+RESULT: gcX's displayed value is "xxx" and LEN(gcX) = 7.
+
+Additional query words: kbVFp500abug kbTools kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

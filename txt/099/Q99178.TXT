@@ -1,0 +1,47 @@
+DOCUMENT:Q99178  26-MAY-2001  [homemm]
+TITLE   :Bookshelf: Cannot Cancel Deletion of Bookmark
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1992 editions,1993 edition,1993 editions,1994 editions,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 
+ - Microsoft Encarta 92 Multimedia Encyclopedia 
+ - Microsoft Cinemania, versions 1992 editions, 1994 editions 
+ - Microsoft Multimedia Viewer, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you choose Cancel after deleting a bookmark in Bookshelf, the bookmark is
+still deleted. You cannot undo this action.
+
+This behavior is consistent with Windows Help.
+
+Additional query words: msn_bookshelf multimedia multi media multi- lost gone kbmm usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbBookshelfSearch kbCineManiaSearch kbCinemania1994 kbCinemania1992 kbMMViewer200 kbEncarta1992
+Version           : :1992 editions,1993 edition,1993 editions,1994 editions,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

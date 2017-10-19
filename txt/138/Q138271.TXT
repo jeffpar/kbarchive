@@ -1,0 +1,77 @@
+DOCUMENT:Q138271  17-DEC-2000  [crossnet]
+TITLE   :Windows 95 NetBIOS Scope ID Configuration
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can only modify the TCP/IP NetBIOS Scope ID through Control Panel if WINS
+Resolution is enabled.
+
+MORE INFORMATION
+================
+
+If you are using Windows 95 as a client in a Windows NT-based network, you may
+need to define a NetBIOS Scope ID.
+
+If WINS is enabled for NetBIOS name resolution, you can modify the Scope ID in
+the Network section of Control Panel. Click on TCP/IP, then click on Properties,
+and then click on the WINS Configuration tab and edit the Scope ID value.
+
+If you do not have WINS enabled, this can only be changed manually, by editing
+the registry as follows:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows 95 to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Run Registry Editor (REGEDIT.EXE).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+      System\CurrentControlSet\Services\VXD\MSTCP
+
+3. Add the new ScopeID by clicking on Edit, then on New, then select "String
+   Value = ScopeID" and press ENTER. Double-click on the value. A window appears
+   for Edit String. Enter your Scope ID under Value data.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95. We are researching
+this problem and will post new information in the Microsoft Knowledge Base as it
+becomes available.
+
+Additional query words: prodwin95 95 win95
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

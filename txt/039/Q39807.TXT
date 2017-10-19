@@ -1,0 +1,53 @@
+DOCUMENT:Q39807  30-JUL-2001  [homegame]
+TITLE   :Error Code: 0006 in Flight Simulator Version 3.00 and 4.00
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If the following message appears, check to make sure your program disk is not
+write protected:
+
+   Error Code 0006: Error occurred while closing file;
+
+                    filename AUTOEXEC.FS3 for Version 3.00
+                    filename AUTOEXEC.FS4 for Version 4.00
+                    filename A.G3D for Version 4.00
+
+If the message still appears, delete the file AUTOEXEC.FS3 for Version 3.00, or
+AUTOEXEC.FS4 for Version 4.00. This file saves the selections you made the last
+time you chose "Go through startup menus" from menu option 1. Reentering the
+Startup menu option responses will re-create the contents of the AUTOEXEC.FS3 or
+AUTOEXEC.FS4 file. The file A.G3D may be corrupt and need to be deleted and
+copied again from the distribution diskette.
+
+MORE INFORMATION
+================
+
+If you get Error 0006 with Microsoft Flight Simulator 5.0 query on the following
+keywords "FS5 and ERROR 0006".
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

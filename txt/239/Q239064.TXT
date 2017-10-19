@@ -1,0 +1,68 @@
+DOCUMENT:Q239064  19-SEP-1999  [exchange]
+TITLE   :XADM: Cannot Communicate with Exchange Mailbox Manager Service
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you configure the Microsoft Exchange Mailbox Manager to perform cleanup on
+a remote server in the site, and click Clean Now, you may see the following
+error message:
+
+   Unable to communicate with the Microsoft Exchange Server Mailbox Manager
+   service. Cannot determine success of cleanup request.
+
+CAUSE
+=====
+
+The Clean Now command cannot start the Microsoft Exchange Mailbox Manager
+service on a remote computer unless the computer is in the same Windows NT
+domain.
+
+WORKAROUND
+==========
+
+Start the Microsoft Exchange Mailbox Manager on the remote computer before
+issuing the Clean Now command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

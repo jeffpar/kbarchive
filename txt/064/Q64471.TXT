@@ -1,0 +1,148 @@
+DOCUMENT:Q64471  02-OCT-1999  [win95x]
+TITLE   :Troubleshooting Logitech Serial Mouse Problems in Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You may experience problems when using the Logitech Serial Mouse with Microsoft
+Windows version 3.0.
+
+CAUSE
+=====
+
+Logitech terminate-and-stay-resident (TSR) programs conflict with the operation
+and installation of Windows.
+
+WORKAROUND
+==========
+
+You should remark out the LOGIMENU and CLICK TSR programs if they are listing in
+your AUTOEXEC.BAT file. In addition, if you find the GOMOUSE.BAT file, replace
+it with a MOUSE.COM file dated 10/02/89 because the GOMOUSE.BAT file may also
+contain LOGIMENU and CLICK.
+
+If your mouse continues to exhibit problems, refer to the following
+troubleshooting sections to resolve the problem(s).
+
+Mouse Pointer Doesn't Move or Doesn't Appear
+--------------------------------------------
+
+In addition to problems caused by TSRs, you may notice that the Mouse pointer
+intermittently shows up in Windows 3.0 but does not move, or that the mouse
+pointer may not display at all.
+
+1. Verify the Windows Logitech Serial Mouse Driver is installed by selecting the
+   Setup icon from the Main group of Program Manager. Verify that the mouse
+   driver file is the corect size and date: the Windows 3.0 file should be dated
+   5/1/90 and the 3.00a file should be dated 10/31/90; either version should be
+   3584 bytes in size. Files of different sizes or dates may still be
+   compressed, or may be corrupted, or may have been provided with an OEM
+   version of Windows. Also verify that a Microsoft VGA or EGA driver is loaded
+   rather than a Super VGA driver.
+
+2. If you have one of the following combinations, use TYPE=2 at the end of the
+   WIN.INI file:
+
+   BUS card and Logitech serial-type mouse (including serial Trackman)
+
+   PS/2-type port and Logitech serial-type mouse (including serial Trackman)
+
+   Copy the following example to the end of the WIN.INI file:
+
+         [MOUSE]
+         TYPE=2
+
+   NOTE: According to Logitech, TYPE=3 is no longer supported by the Windows 3.00
+   Logitech Serial Mouse driver.
+
+3. Boot with a minimal CONFIG.SYS and AUTOEXEC.BAT.
+
+   The CONFIG.SYS file should contain FILES=30, BUFFERS=30, DEVICE=HIMEM.SYS, and
+   required disk-partitioning drivers.
+
+   The AUTOEXEC.BAT file should contain PROMPT $P$G and a PATH command to DOS,
+   WINDOWS, and the root directory.
+
+   Reboot the machine with this configuration. When the machine reboots, the BIOS
+   and DOS versions may be displayed along with the amount of memory. Write
+   these down and verify that the DOS version is the correct version for the
+   machine, and verify that the BIOS is at least 1988 or later.
+
+4. Check that no other device is using the same interrupt. If the mouse is on
+   COM1, then no other device should be set for Interrupt 4. If the mouse is on
+   COM2, then no other device should be set for Interrupt 3.
+
+5. Check the serial card containing COM ports for the Logitech Mouse. Look at
+   the card for a square chip. It may read WINBOND with a number underneath it
+   resembling W86C452P. If that chip exists, it should be replaced with a
+   different serial-card model. (If replacing the card is not an option, proceed
+   to Step 6).
+
+6. If all else fails, re-install the Windows mouse driver for the following:
+
+   Mouse Systems (or VisiOn) connected to COM1
+
+   -OR-
+
+   Mouse Systems (or VisiOn) connected to COM2
+
+Problems After Starting MS-DOS Applications
+-------------------------------------------
+
+Another problem you may have with the Logitech Mouse may occur when starting any
+MS-DOS application under Windows (including the MS-DOS prompt). In this case,
+quitting or switching back to Windows may cause erratic mouse movement. If the
+mouse pointer moves slowly, jumps from point to point on the screen, or moves at
+different speeds when running non-Windows applications, you may have a problem
+with the MS-DOS mouse-driver file. You can avoid this problem as follows:
+
+1. Install version 4.10 of the Logitech Mouse Driver for MS-DOS systems that is
+   usually located on the second disk of the Logitech MouseWare Utilities Disk
+   for version 4.01.
+
+   Do not confuse the version of the MouseWare Utilities Disk for 4.01 with the
+   Logitech Mouse DOS Driver for version 4.10.
+
+2. If Step 6 above was used to resolve Symptom #1, then you may have to create a
+   batch file that contains the following two lines:
+
+         <appname>.EXE {the name of the DOS application being run}
+         MOUSE PC
+
+Follow the steps on Page 448 of the "Microsoft Windows User's Guide" that explain
+"Creating PIFs for Batch Files."
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty tshoot
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

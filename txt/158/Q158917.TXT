@@ -1,0 +1,97 @@
+DOCUMENT:Q158917  09-AUG-2001  [winnt]
+TITLE   :Err Msg: MAPI Spooler Has Shut Down Unexpectedly
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0 95
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send a message using Windows Messaging, you may receive the
+following error message:
+
+   Microsoft Windows Messaging Subsystem
+   The MAPI Spooler has shut down unexpectedly. Close all mail-enabled
+   applications before attempting to log on again.
+
+CAUSE
+=====
+
+This error can occur if the personal message store (.pst) file is damaged and
+has a message stuck in the Outbox.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following steps:
+
+1. Create a new Windows Messaging profile and a new .pst file. To do so, follow
+   these steps:
+
+   a. Use the right mouse button to click Inbox on the desktop, and then click
+      Properties on the menu that appears.
+
+   b. Click Show Profiles, and then click Add.
+
+   c. Click the appropriate information services to add them to the profile.
+
+   d. Type a name in the Profile Name box, and then click Next.
+
+   e. Follow the instructions in any wizards that run to configure the
+      information services.
+
+   f. When you are prompted for the Personal Folders file, make sure to specify
+      a new file name. For example, instead of Mailbox.pst, you could use
+      Mailbox2.pst.
+
+   g. Click Finish, and then click the new profile in the "When starting Windows
+      Messaging, use this profile" box.
+
+   h. Click Close.
+
+2. Copy the messages from your original .pst file to the new .pst file. To do
+   so, follow these steps:
+
+   a. Start Windows Messaging, click Tools, and then click Services.
+
+   b. Click Add, click Personal Folders, and then click OK.
+
+   c. Locate the original .pst file, and then click Open.
+
+   d. Click OK, and then click OK.
+
+   e. Copy all of the messages from the original set of Personal Folders to the
+      new Personal Folders, except for the Outbox.
+
+Additional query words: prodnt exchange msmail client Outlook OL97
+
+======================================================================
+Keywords          : kbenv kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 4.0 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

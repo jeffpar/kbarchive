@@ -1,0 +1,69 @@
+DOCUMENT:Q163327  21-FEB-2002  [winnt]
+TITLE   :How to Use the Rregchg.exe Tool
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Rregchg.exe tool included with the Windows NT 4.0 Resource Kit
+to remotely create or change a registry data value. This tool can modify only
+the HKEY_LOCAL_MACHINE portion of the registry.
+
+MORE INFORMATION
+================
+
+
+The RREGCHG command uses the following syntax:
+
+   RREGCHG \\<computer> KeyName ValueName Type Value
+
+For example, to change the data value for the ClassesBuild value in the following
+registry key:
+
+   Key:     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\JavaVM
+   Value:   ClassesBuild = 1100
+   Type:    REG_SZ
+
+You would type
+
+   RREGCHG \\<computer> SOFTWARE\Microsoft\JavaVM ClassesBuild REG_SZ 1200
+
+where <computer> is the computer name of the remote computer. The data
+value for the ClassesBuild value changes to 1200.
+
+
+Additional query words: 4.00 hive
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

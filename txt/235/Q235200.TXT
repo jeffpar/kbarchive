@@ -1,0 +1,76 @@
+DOCUMENT:Q235200  21-MAR-2001  [sms]
+TITLE   :SMS: Err Msg Using W95to98.inf to Upgrade to Windows 98 SE
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbsetup kbClient kbConfig kbsms200 kbsms200bug kbAdvertisement kbPackage kbSo
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you advertise a package to upgrade a client from Microsoft Windows 95 to
+Microsoft Windows 98 Second Edition (SE) by using the W95to98.inf file, you may
+receive the following error message during the upgrade process:
+
+   The file 'Driver21.cab' on 11 cannot be
+   found.
+
+   Setup could not find a file on the specified
+   path. If the path appears below, make sure it
+   is correct. Click OK to try copying again.
+
+You can click any of the available buttons (OK, Skip File, Browse, or Cancel),
+but the upgrade is not completed successfully.
+
+CAUSE
+=====
+
+This behavior occurs because the Driver21.cab file is not included in Windows 98
+SE.
+
+WORKAROUND
+==========
+
+Copy the Driver21.cab file from the original version of Windows 98 to the
+Microsoft Systems Management Server (SMS) package source directory. The upgrade
+can now be completed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbsetup kbClient kbConfig kbsms200 kbsms200bug kbAdvertisement kbPackage kbSoftwareDist kbUpgrade 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

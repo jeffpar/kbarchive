@@ -1,0 +1,77 @@
+DOCUMENT:Q157447  08-AUG-2001  [winnt]
+TITLE   :Cannot Display Korean Windows NT 3.5 Programs Under Windows 3.51
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Fixedsys font is used, some characters do not display properly under
+Korean Windows NT 3.51 for programs developed under Korean Windows NT 3.5.
+
+CAUSE
+=====
+
+This problem may be caused by the Fixedsys font change in Korean Windows NT
+3.51.
+
+WORKAROUND
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To work around the problem:
+
+1. Remove the Fixedsys font. Open Control Panel, and then double-click the Fonts
+   icon. From the Install Fonts list box, select Fixedsys, and then click
+   Remove.
+
+2. Add Fixedsys to System mapping. Go to the following Registry key:
+
+   HKEY_LOACAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\FontSubstitutes
+
+   Click Edit, and then click Add Value. Type Fixedsys in the Value Name entry,
+   select REG_SZ for Data Type, and then click OK. Type System for the String
+   entry, and click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 3.51 Korean version.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt KBKOREA
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

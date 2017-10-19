@@ -1,0 +1,71 @@
+DOCUMENT:Q125746  08-AUG-2001  [winnt]
+TITLE   :Stop 7B When Installing Windows NT 3.5 On AST Bravo LC 486/33
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Windows NT version 3.5 on an AST Bravo LC 486/33,
+the following STOP message appears after Setup completes the mass storage device
+detection and reboots the computer (after the third Setup disk):
+
+   STOP: 0x0000007B
+   INACCESSIBLE_BOOT_DEVICE
+
+CAUSE
+=====
+
+This problem can occur when:
+
+ - The AST Bravo LC 486/33 computer has a BIOS revision earlier than 2.01.
+
+   -or-
+
+ - The AST Bravo computer uses an IBM blue lightning processor.
+
+RESOLUTION
+==========
+
+If your AST Bravo does not use an IBM blue lightning processor, you can correct
+this problem by contacting AST End-User Customer Support at (800) 727-1278 and
+obtaining the latest BIOS revision for the AST computer (part number
+237874-006).
+
+AST Bravo computers with IBM blue lightning processors are not supported.
+
+Bravo LC 486/33 is manufactured by AST, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: prodnt trap 0x7b 0x07b blue screen disk 9
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

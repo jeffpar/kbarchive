@@ -1,0 +1,66 @@
+DOCUMENT:Q158276  30-OCT-1999  [pcmail]
+TITLE   :INF: PC MMTA: NT MMTA Will Not Start As a Service
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a customer runs the Microsoft Mail Multitasking MTA for Windows NT (NT MMTA)
+as a service with the following INI file, and does not check the "Single
+Postoffice Instance" option, the customer will see the "Server.glb file not
+found on home postoffice. To use dynamic drives, Dynadmin.exe must first be
+run." error in the monitor screen of a Microsoft Mail 3.5 External service in
+the Microsoft Mail Service Manager or the session log that the service creates.
+
+   [external]
+   LogReceive
+   LogSent
+   LogSession
+
+   [external-instance]
+   DriveHomePo=m
+   DrivesDirectPo=m
+   CommType=Async
+   AsyncCommPort=Com2
+   CommScript=Ultra96
+
+WORKAROUND
+==========
+
+To work around this problem, check the "Single Postoffice Instance" option on
+the instance edit page in Microsoft Mail Service Manager.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

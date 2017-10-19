@@ -1,0 +1,61 @@
+DOCUMENT:Q201676  16-JAN-1999  [iis]
+TITLE   :Remote MMC Does Not Display All IP Addresses
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the MMC from a remote computer, the new Web site wizard does not
+enumerate all of the IP addresses of the destination server (it returns "Any
+Unassigned" and the IP of the destination computer only). If you run the wizard
+locally, all IP addresses are shown.
+
+CAUSE
+=====
+
+This is by design. You cannot query the IP addresses of a remote computer using
+the MMC interface. This information is simply not provided by the operating
+system. A remote registry query enumerates the static IP addresses, but not the
+dynamic IP addresses. There are also firewall concerns involved that prevent
+this from functioning properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

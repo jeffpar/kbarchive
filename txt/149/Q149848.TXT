@@ -1,0 +1,74 @@
+DOCUMENT:Q149848  15-DEC-1999  [foxpro]
+TITLE   :How to Use the SQLMORERESULTS() Function
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the correct use of the SQLMORERESULTS() function to
+clarify the description in the Visual FoxPro for Windows documentation.
+
+MORE INFORMATION
+================
+
+When you read about the SQLMORERESULTS() function in the Language Reference, you
+might expect that the function is used to return records sequentially from a
+single query. This is not the case.
+
+The purpose of SQLMORERESULTS() is to return results of multiple queries either
+synchronously or asynchronously, batch mode or non-batch mode. These strategies
+are for processing multiple result sets from multiple queries. Here are the uses
+of these strategies:
+
+ - Synchronous Batch Mode - if you want multiple queries to execute sequentially
+   and then return all results at the same time.
+
+ - Synchronous Non-Batch Mode - if you want multiple queries to execute
+   sequentially, and you do not want the user to wait until all result sets are
+   in to begin processing.
+
+ - Asynchronous Batch Mode - if you want multiple queries to execute
+   simultaneously and return the result sets at the same time.
+
+ - Asynchronous Non-Batch Mode - if you want multiple queries to execute
+   simultaneously and do not want the user to wait for all result sets to
+   return.
+
+Each of these strategies has its advantages and disadvantages. The developer
+needs to choose the strategy to implement.
+
+For further information on these strategies, please see Chapter 3 of the Visual
+FoxPro Professional Features Guide.
+
+Additional query words: 3.00 3.00b VFoxWin FetchSize MaxRecords CURSORSETPROP() SQLEXEC()
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

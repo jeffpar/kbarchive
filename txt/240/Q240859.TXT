@@ -1,0 +1,78 @@
+DOCUMENT:Q240859  19-NOV-1999  [exchange]
+TITLE   :XADM: Admin.exe Stops Responding when Connected over Internet
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to an Exchange Server computer over the Internet, the Exchange
+Server Administrator program (Admin.exe) stops responding (hangs). In Task
+Manager, the Administrator program is listed as "Not responding."
+
+MORE INFORMATION
+================
+
+Troubleshooting Steps:
+----------------------
+
+1. Ping the Exchange Server computer by name to verify successful name
+   resolution. If necessary create a HOSTS file for troubleshooting purposes.
+
+2. Statically map the ports for the information store, directory service, and
+   system attendant on the Exchange Server computer.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q155831 XADM: Setting TCP/IP Ports for Exchange and Outlook Client
+   Connections Through a Firewall
+
+3. Configure any firewall or router involved to allow TCP connections to be made
+   to the ports mapped for the information store, directory, and system
+   attendant, as well as to port 135. Exchange Server uses a well-known static
+   port (port 135) to listen for Administrator connections to the remote
+   procedure call (RPC) Endpoint Mapper Service. However, after the
+   Administrator program connects to this socket, Exchange Server then
+   re-assigns the program three random ports to use when communicating with the
+   information store, directory, and the system attendant. This makes it
+   impossible to allow these through the firewall without forcing them to be
+   statically assigned.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q148732 XADM: Setting TCP/IP Port Numbers for Internet Firewalls
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q139818  13-JUN-2001  [sna]
+TITLE   :Event 24 Is Logged w/ Severity Levels Information and Warning
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An SNA Server Node logs Event 24 and sets the severity level in the system log
+to Information. The following is an excerpt from the system log:
+
+   Event ID: 24
+   Type: Information
+
+An SNA Server Message Trace, however, logs it as a Warning.
+
+CAUSE
+=====
+
+Although Event 24 is an Informational severity, it is stored in NTEVTS.MC as a
+Warning.
+
+RESOLUTION
+==========
+
+Microsoft has updated SNA Server to correct this problem. Event 24 is now logged
+with the Information severity level in the trace file and in the system log.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.00 2.10 2.11 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

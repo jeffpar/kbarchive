@@ -1,0 +1,76 @@
+DOCUMENT:Q173282  30-JUL-2001  [sms]
+TITLE   :SMS: 'Stack Fault' Error Occurs with PCM Service
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0; winnt:1.2
+OPER/SYS:
+KEYWORDS:kberrmsg kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Package Command Manager (PCM) service to install an application
+on a Windows NT Server version 4.0 system, an error may occur and you may
+receive the following message:
+
+   Application Error caused a stack fault in module UNKNOWN at address
+   00c7:4394f Will Close.
+
+CAUSE
+=====
+
+The error occurs because of a problem with the Windows on Windows (WOW)
+subsystem of Windows NT Server version 4.0. For additional information about
+this problem, please see the following article in the Microsoft Knowledge Base:
+
+   Q156735 WOW Applications Stack Fault When Launched by a Service
+
+WORKAROUND
+==========
+
+If you receive this error when you run an SMS Installer executable on the
+Windows NT Server system, you can avoid this problem by recompiling the SMS
+Installer application with the "Destination Platforms" setting configured for
+"True Win32".
+
+1. From the Installation Expert view, select Advanced Configuration, and then
+   double-click the Global option.
+
+   Or from the Script Editor view, click Edit, and then Installation Properties.
+
+2. Select the Global tab (if it isn't selected), and change the "Destination
+   Platforms" setting at the bottom of the window to "Windows 95 and NT (True
+   Win32)".
+
+3. Recompile the SMS Installer executable.
+
+Additional query words: smsinst pcm package gpf
+
+======================================================================
+Keywords          : kberrmsg kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS120 kbSMSI100
+Version           : WINDOWS:1.0; winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

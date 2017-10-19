@@ -1,0 +1,50 @@
+DOCUMENT:Q313839  03-AUG-2002  [sms]
+TITLE   :SMS: Previously Applied "Quick Fix Engineering" (QFE) Fixes May
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Previously applied "Quick Fix Engineering" (QFE) fixes may be overwritten.
+Several fixes (QFEs) have been issued for SP3 that are not contained in SP4. If
+you have installed any of these SP3 fixes and apply SMS 2.0 SP4, your
+installation will revert back to its original functionality and you must apply
+an update to your installation of SP4. These updates are now available from PSS.
+For a list of SP3 fixes not included in SP4, but available for SP4, see the
+following article on the Produce Support Service site:
+
+   QQ323206 SMS: List of Bugs Fixed in Systems Management Server 2.0 SP4 HRP
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

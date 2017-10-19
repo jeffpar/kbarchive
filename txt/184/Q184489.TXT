@@ -1,0 +1,81 @@
+DOCUMENT:Q184489  31-JUL-2001  [sms]
+TITLE   :SMS: Despooler May Delete Package Dir Contents If Files in Use
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDespooler smsdespoolerkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Despooler is unable to refresh package files that are currently in use by
+clients, the entire contents of the package directory may be deleted. However, a
+retry instruction should be created for Despooler, and the package directory
+will eventually be repopulated.
+
+CAUSE
+=====
+
+The process Despooler uses to update package files involves deleting the files
+first and then copying over the refreshed package files from a temporary
+directory. Despooler does not check to see if it can refresh the package files
+before performing the deletion request. Despooler succeeds in the deletion
+request but is unable to refresh files that are in use. As a result, the entire
+contents of the package directory are deleted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 1.2. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+WORKAROUND
+==========
+
+To work around this problem, contact Microsoft Technical Support to obtain the
+following fix, or wait for the next Systems Management Server service pack. The
+hotfix should have the following timestamp:
+
+   4/2/98   1:37pm      252,848 Smsinst.dll (Intel)
+   4/2/98   1:37pm      480,016 Smsinst.dll (Alpha)
+
+You can also use the Use Forced Disconnect functionality of Despooler as a
+workaround. However, this functionality does not support Macintosh clients.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDespooler smsdespooler kbbuglist
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

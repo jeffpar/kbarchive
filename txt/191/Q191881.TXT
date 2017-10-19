@@ -1,0 +1,71 @@
+DOCUMENT:Q191881  24-AUG-1999  [foxpro]
+TITLE   :PRB: DIRECTORY() Fails to See System or Hidden Folder
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the DIRECTORY() function to check if a specified directory is found
+on disk and the attribute of the directory is set to system and/or hidden, the
+DIRECTORY() function returns .F. even though the directory exists.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This behavior also happens with the GETDIR() function and CD command. The
+GETDIR() function will not display a directory that has hidden and/or system
+attributes. Issuing CD to a directory that has hidden and/or system attributes
+generates the following error:
+
+   Invalid path or filename.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Command window, issue the following command:
+
+         ?DIRECTORY("c:\windows\fonts") && Using your Windows directory path.
+
+RESULT: The DIRECTORY function reported .F.
+
+2. Go into the Windows Explorer and look for the Fonts directory in the Windows
+   directory. The attribute of the directory is set to system.
+
+Additional query words: kbVFp600 kbVFp500 kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q196401  12-DEC-1999  [exchange]
+TITLE   :XADM: Mbclean Does Not Run Against Outlook Folders
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Exchange Mailbox Cleanup Agent (Mbclean.exe) version 1.91 does not run
+against the Outlook Calendar, Contacts, Notes, Journal, and Tasks items.
+
+Please see the Mailbox CleanUp Agent Help file available on the BORK Second
+Edition CD for more information on using this utility.
+
+MORE INFORMATION
+================
+
+This is by Product Design in version 1.91 of Mbclean.exe, which is on the BORK
+Second Edition CD.
+
+The Microsoft Exchange Mailbox Cleanup Agent is a utility provided with the
+Microsoft BackOffice Resource Kit, Second Edition, that deletes or moves
+messages older than x days from user mailboxes.
+
+You can use the Archive utility in Microsoft Outlook (Open Outlook, and on the
+File menu, click Archive) on those folders to archive this information.
+
+Additional query words: Deleting Resource Kit Utility 1.91 MBCLEAN archive outlook folders MCA
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

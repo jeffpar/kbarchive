@@ -1,0 +1,85 @@
+DOCUMENT:Q113939  10-MAR-2000  [win16sdk]
+TITLE   :PRB: Setup Toolkit DoMsgBox Shows Wrong Buttons or Icons
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Only the MB_OK, MB_ICONHAND, and MB_TASKMODAL styles are recognized in the
+wType% parameter. Any additional styles are ignored and the message box will
+only show the OK button.
+
+CAUSE
+=====
+
+Only the MB_OK, MB_ICONHAND, and MB_TASKMODIAL constants are defined in
+SETUPAPI.INC. Although DoMsgBox() can use all the constants described in the
+Microsoft Windows 3.1 SDK under the MessageBox() function, these constants are
+not defined in SETUPAPI.INC and hence are ignored in the call to DoMsgBox().
+
+RESOLUTION
+==========
+
+Modify SETUPAPI.INC to include definitions of the missing style constants or
+pass the numerical value in the wType% parameter rather than the SDK constant.
+
+Below is a list of all of the possible styles you can specify in the wType%
+parameter of the DoMsgBox() function. Cut and paste the needed constants into
+your SETUPAPI.INC file.
+
+CONST MB_OK                = 0
+CONST MB_OKCANCEL          = 1
+CONST MB_ABORTRETRYIGNORE  = 2
+CONST MB_YESNOCANCEL       = 3
+CONST MB_YESNO             = 4
+CONST MB_RETRYCANCEL       = 5
+
+CONST MB_ICONHAND          = 16
+CONST MB_ICONQUESTION      = 32
+CONST MB_ICONEXCLAMATION   = 48
+CONST MB_ICONASTERISK      = 64
+
+CONST MB_ICONINFORMATION   = 64
+CONST MB_ICONSTOP          = 16
+
+CONST MB_DEFBUTTON1        = 0
+CONST MB_DEFBUTTON2        = 256
+CONST MB_DEFBUTTON3        = 512
+
+CONST MB_APPLMODAL         = 0
+CONST MB_SYSTEMMODAL       = 4096
+CONST MB_TASKMODAL         = 8192
+
+Additional query words: MSSetup tool kit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,75 @@
+DOCUMENT:Q79764  02-NOV-2001  [vbwin]
+TITLE   :Use SetHandleCount to Open More than 15 Files at Once in VB
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 2.0, 3.0 
+ - Microsoft Visual Basic Standard Edition for Windows, versions 1.0, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual Basic for Windows programs normally may not have more than 15
+files open at once. Visual Basic for Windows displays the error message "Too
+many files" (error code 67) when you attempt to open more than the maximum
+number of files at once. You can increase the maximum number of open files by
+calling the Windows API function SetHandleCount.
+
+MORE INFORMATION
+================
+
+The Windows API function SetHandleCount requests Windows to change the maximum
+number of files a program can open. SetHandleCount returns the actual number of
+handles that the program can use, which may be less than the number requested.
+
+The FILES= statement in the CONFIG.SYS file does not limit the number of files
+available to a Microsoft Windows program.
+
+Do not attempt to increase the number of files with MS-DOS interrupt 21 hex with
+function 67 hex. This interrupt does not record information needed by Windows.
+
+Example
+-------
+
+The following code example demonstrates how to use SetHandleCount:
+
+'*** In the global module: ***
+
+   Declare Function SetHandleCount% Lib "kernel" (ByVal n%)
+
+'*** In the form: ***
+
+   Sub Form_Load ()
+      n% = SetHandleCount(60)  ' Request 60 file handles.
+      MsgBox "Maximum number of open files: " + Format$(n%)
+   End Sub
+
+Additional query words: 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300 kbVB200
+Version           : :1.0,2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

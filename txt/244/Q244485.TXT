@@ -1,0 +1,64 @@
+DOCUMENT:Q244485  27-OCT-2000  [pcmail]
+TITLE   :PC WIN: Outlook 98 Uses MS Mail Postoffice Setting for HOP COUNT
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:4.0,98
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Outlook 98 build 8.5.5104.6 reads the Master.glb file of the Microsoft Mail
+postoffice and sets the HOP COUNT parameter in messages sent from the client.
+This HOP COUNT parameter can cause problems in large networks where messages
+travel through several postoffices to reach their destination.
+
+CAUSE
+=====
+
+If HOP COUNT is set to 3, for example, and must pass through four or more
+servers before being delivered, the message generates a non-delivery report
+(NDR) before ever reaching the destination.
+
+WORKAROUND
+==========
+
+To work around this behavior, set the HOP COUNT on the Microsoft Mail postoffice
+to a number large enough to allow delivery in your organization. By default,
+this number is 10.
+
+This only affects Outlook users. The Windows Microsoft Mail client 3.5 or the
+MS-DOS client do not use this HOP COUNT parameter set on the postoffice.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3 kbExchange400Win95
+Version           : WINDOWS:4.0,98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

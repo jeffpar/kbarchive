@@ -1,0 +1,49 @@
+DOCUMENT:Q153299  27-JUL-2001  [sms]
+TITLE   :SMS Directory Structure Is Duplicated
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If SMS is installed within a subdirectory structure (for example, \Ntapps\Sms),
+SMS will create this structure on each logon server.
+
+MORE INFORMATION
+================
+
+SMS takes the structure that it is installed in and re-creates it on each logon
+server. Consequently SMS may not necessarily be installed in a structure
+beginning with \SMS.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,57 @@
+DOCUMENT:Q321428  09-MAY-2002  [sna]
+TITLE   :How to Change the Server Role with Host Integration Server 2000
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool Kbhostintegserv2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to change the server role when you are using Host
+Integration Server 2000.
+
+MORE INFORMATION
+================
+
+To change the role of a Host Integration Server-based computer, use the SNA
+Resource Location Wizard (Hisvrcfg.exe). You can also use the SNA Resource
+Location Wizard to configure the subdomain name, Active Directory support and
+network protocols. Note that any changes you make to the Resource Location
+Wizard do not take effect until you restart the SnaBase service.
+
+For additional information about how to change the SNA server role, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q245536 How to Change an SNA Server's Configuration Role with SVCONFIG
+
+Additional query words: his
+
+======================================================================
+Keywords          : kbnetwork kbtool Kbhostintegserv2000 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

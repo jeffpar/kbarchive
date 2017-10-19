@@ -1,0 +1,70 @@
+DOCUMENT:Q117881  28-JUL-2001  [win95x]
+TITLE   :Windows 95 Err Msg: This Application's Attempt to Get Access...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95, the following error message is displayed
+
+   Windows
+
+   This application's attempt to get access to COM<x> has failed because
+   the port is in use by a virtual device.
+
+   Press a key to continue.
+
+where <x> specifies a particular communications port.
+
+CAUSE
+=====
+
+If you install the pen driver that ships with Fractal Design Painter version
+1.2, you receive the above error message.
+
+RESOLUTION
+==========
+
+According to Fractal Design Corporation, upgrading to Fractal Design Painter
+version 2.0 and choosing to use the existing pen drivers during Setup corrects
+this error.
+
+MORE INFORMATION
+================
+
+Fractal Design Painter is manufactured by Fractal Design Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: err msg mouse driver tablet com1 com2 com3 com4 penwin penwindows pen windows 3rdparty
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

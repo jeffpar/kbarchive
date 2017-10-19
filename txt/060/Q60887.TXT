@@ -1,0 +1,80 @@
+DOCUMENT:Q60887  14-NOV-2000  [word97]
+TITLE   :WD97: Can Only Select Contiguous Text or Text and Graphics
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbgraphic kbother word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In Microsoft Word, you can select only contiguous text and graphics. That is, to
+select a block of text or a combination of text and graphics, the selected items
+must be directly above or below one another.
+
+MORE INFORMATION
+================
+
+By design, you can only copy contiguous items in Microsoft Word for Windows.
+However, Microsoft Word provides a feature that allows you to copy
+non-contiguous information. This feature is called the Spike. To use the Spike,
+follow these steps:
+
+ - To cut a selection to the Spike, press CTRL+F3.
+
+   NOTE: This actually creates the AutoText entry called Spike.
+
+ - To paste the Spike contents into a document clearing the Spike AutoText
+   entry, press CTRL+SHIFT+F3.
+
+ - To paste the Spike contents into a document without clearing the Spike
+   AutoText entry, type the word SPIKE and then press F3.
+
+REFERENCES
+==========
+
+For more information about selecting text, click the Office Assistant, type "how
+do I select text," click Search, and then click to view "select text and
+graphics."
+
+For more information about the Spike, click the Office Assistant, type "spike,"
+click Search, and then click to view "Use the Spike to move text and graphics
+from nonadjacent locations."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: mulitselect multiple selection discontiguous discontinuous adjacent noncontiguous
+
+======================================================================
+Keywords          : kbgraphic kbother word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

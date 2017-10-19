@@ -1,0 +1,191 @@
+DOCUMENT:Q218602  04-FEB-2000  [iis]
+TITLE   :Troubleshooting Objects in an ASP Page Using WSH
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to troubleshoot an Active Server Pages (ASP) application where
+object creation is failing, it is often useful to obtain a list of all the
+object creation statements and their provider DLL or OCX.
+
+MORE INFORMATION
+================
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+RISK. Microsoft provides this code "as is" without warranty of any kind, either
+express or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+Note: The following code requires that you have Windows Script Host (WSH)
+installed.
+
+The WSH script listed below will step through any page specified and list all
+occurrences of "CreateObject" and "GetObject" statements. In addition, the
+provider DLL or OCX will be listed for each "CreateObject" statement
+encountered. This assists in troubleshooting COM components.
+
+To use this page, use the following steps:
+
+1. Copy the WSH Code listed below and save it as a text file named
+   "ListObjects.vbs" in the same directory as an ASP or ASA file that you want
+   to troubleshoot.
+
+2. Open a command prompt and change to the directory where you saved the WSH
+   file.
+
+3. The syntax to call this script is as follows:
+
+   CSCRIPT.EXE ListObjects.vbs FileName.ext
+
+   where FileName.ext is the name of the page that you want to check. For
+   example:
+
+   CSCRIPT.EXE ListObjects.vbs Global.asa
+
+   This command lists all of the "CreateObject" or "GetObject" statements in your
+   Global.asa file.
+
+--------
+
+   ''''''''''''''''''''''''''''''''''''
+   '
+   ' LISTOBJECTS.VBS
+   '
+   ' Author:     Microsoft
+   ' Purpose:    Lists all "CreateObject" and "GetObject" statements
+   '
+   ''''''''''''''''''''''''''''''''''''
+
+   Option Explicit
+   On Error Resume Next
+
+   Dim objFSO
+   Dim objFile
+   Dim objArg
+   Dim wshShell
+   Dim intLineCount
+   Dim strLine
+   Dim strTemp1,strTemp2
+   Dim strCLSID
+   Dim strInprocServer32
+   Dim strThreadingModel
+   Dim X,Y
+
+   Const ERROR_SUCCESS = 0
+
+   Set objArg = WScript.Arguments
+   Set wshShell = WScript.CreateObject("WScript.Shell")
+
+   If objArg.Count < 1 Then
+           ShowHelp
+           WScript.Quit
+   End If
+
+   Set objFSO = CreateObject("Scripting.FileSystemObject")
+     If Err.Number <> ERROR_SUCCESS Then ShowError: WScript.Quit
+   Set objFile = objFSO.OpenTextFile(objArg.Item(0), 1)
+     If Err.Number <> ERROR_SUCCESS Then ShowError: WScript.Quit
+
+   WScript.Echo vbCrLf & String(40,45) & vbCrLf
+   WScript.Echo "FILE: " & objArg.Item(0)
+
+   Do While Not objFile.AtEndOfStream
+     strLine = LCase(Trim(objFile.ReadLine))
+     If Err.Number <> ERROR_SUCCESS Then
+       ShowError
+       WScript.Quit
+     End If
+     intLineCount = intLineCount + 1
+
+     Do While InStr(strLine,"createobject") Or InStr(strLine,"getobject")
+       X = InStr(strLine,"createobject")
+       Y = InStr(strLine,"getobject")
+       If (X > 0 And X < Y) Or (X > 0 And Y = 0) Then
+         strTemp1 = Mid(strLine,X)
+         If InStr(strTemp1,")") = 0 Then
+           Exit Do
+         Else
+           strTemp1 = Left(strTemp1,InStr(strTemp1,")"))
+           strLine = Mid(strLine,X + Len(strTemp1))
+           strTemp2 = Mid(strTemp1,InStr(strTemp1,Chr(34))+1)
+           strTemp2 = Left(strTemp2,InStr(strTemp2,Chr(34))-1)
+           strCLSID = wshShell.RegRead("HKCR\" & strTemp2 & "\CLSID\")
+             If Err.Number <> ERROR_SUCCESS Then ShowError: WScript.Quit
+           strInprocServer32 = wshShell.RegRead("HKCR\CLSID\" & strCLSID & "\InprocServer32\")
+             If Err.Number <> ERROR_SUCCESS Then ShowError: WScript.Quit
+           strThreadingModel = wshShell.RegRead("HKCR\CLSID\" & strCLSID & "\InprocServer32\ThreadingModel")
+             If Err.Number <> ERROR_SUCCESS Then ShowError: WScript.Quit
+           WScript.Echo vbCrLf & "Line " & intLineCount & ": Object: " & strTemp1
+           WScript.Echo Chr(9) & "Class ID:  " & Chr(9) & LCase(strCLSID)
+           WScript.Echo Chr(9) & "Server:    " & Chr(9) & LCase(strInprocServer32)
+           WScript.Echo Chr(9) & "Threading: " & Chr(9) & LCase(strThreadingModel)
+         End If
+       Else
+         If InStr(strTemp1,")") = 0 Then
+           Exit Do
+         Else
+           strTemp1 = Mid(strLine,Y)
+           strTemp1 = Left(strTemp1,InStr(strTemp1,")"))
+           strLine = Mid(strLine,Y + Len(strTemp1))
+           WScript.Echo vbCrLf & "Line " & intLineCount & ": Object: " & strTemp1
+         End If
+       End If
+
+     Loop
+   Loop
+
+   objFile.Close
+
+   Sub ShowHelp
+     WScript.Echo "USAGE:"
+     WScript.Echo "CSCRIPT.EXE ListObjects.vbs <FILENAME.EXT>"
+   End Sub
+
+   Sub ShowError
+     WScript.Echo "ERROR: " & Err.Number
+     WScript.Echo Err.Description
+   End Sub
+
+Further Reading
+---------------
+
+For more information on Windows Script Host, please see the information at the
+following URL:
+
+   http://msdn.microsoft.com/scripting/
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

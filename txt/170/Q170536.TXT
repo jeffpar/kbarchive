@@ -1,0 +1,294 @@
+DOCUMENT:Q170536  23-AUG-2001  [vbwin]
+TITLE   :HOWTO: Use API to Customize DAO Registry to Close ODBC Connectn
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVBDB kbDSupport kbMDACNoSweep kbATM
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In DAO, using the Close method on a database opened with ODBC drivers does not
+close the database; a cached connection remains idle before timing out. The
+default duration of this timeout is 600 seconds (10 minutes). If your
+application cannot accept the default behavior, you could control this time-out
+period by customizing the ConnectionTimeout value in Windows registry setting.
+
+MORE INFORMATION
+================
+
+You can control the duration of ConnectionTimeout by creating a
+ConnectionTimeout registry entry for Jet. In Windows NT 3.51, the type is called
+"REG_DWORD"; in Windows 95, Windows 98, Windows Me (with DAO JET 3.6), Windows
+2000, and Windows NT 4.0, the type is called "DWORD." "REG_DWORD" and "DWORD"
+are different terms referring to the same thing, a 32-bit number.
+
+Although Visual Basic includes the SaveSetting and GetSetting functions to save
+and retrieve information from the registry, entries of types other than "REG_SZ"
+("String" for Windows 95, Windows 98, Windows 2000, and Windows NT4.0) are not
+recognized. This article demonstrates how to use the registry API to set the DAO
+ConnectionTimeout setting to 1, which closes the connection after the Close
+method with only a one-second delay.
+
+Sample Program
+--------------
+
+The following example has three CommandButton controls:
+
+ - Command1 creates a testing Registry entry
+   "Software\MyApp\Jet\3.5\Engines\ODBC" under HKEY_LOCAL_MACHINE root key, and
+   sets the ConnectionTimeOut value to 1.
+
+ - Command2 establishes the connection by opening the Pubs database.
+
+ - Command3 closes the database.
+
+You can check the detailed connection information by executing SP_WHO stored
+procedure on the SQL Server, then open/close database with/without the registry
+entry created.
+
+1. Start a new project in Visual Basic and choose "Standard EXE." Form1 is
+   created by default.
+
+2. Reference the Microsoft DAO 3.5 Object Library under Project, References menu
+   items.
+
+3. Add three CommandButtons, Command1, Command2, and Command3 to Form1.
+
+4. Paste the following code into the General Declarations section of Form1:
+
+       Option Explicit
+       Dim ws As Workspace
+       Dim db As Database
+       Dim TimeOutValue As Integer
+
+       Private Sub CreateNewKey(sNewKeyName As String, lPredefinedKey As Long)
+          Dim hNewKey As Long         'handle to the new key
+          Dim lRetVal As Long         'result of the RegCreateKeyEx function
+
+            lRetVal = RegCreateKeyEx(lPredefinedKey, sNewKeyName, 0&, _
+                  vbNullString, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, _
+                  0&, hNewKey, lRetVal)
+            RegCloseKey (hNewKey)
+       End Sub
+
+       Private Sub SetKeyValue(sKeyName As String, sValueName As String, _
+            vValueSetting As Variant)
+       Dim lRetVal As Long         'result of the SetValueExLong function
+            Dim hKey As Long            'handle of open key
+
+            lRetVal = RegOpenKeyEx(HKEY_LOCAL_MACHINE, sKeyName, 0, _
+                               KEY_ALL_ACCESS, hKey)
+            lRetVal = RegSetValueExLong(hKey, sValueName, 0&, _
+                               REG_DWORD, vValueSetting, 4)
+            RegCloseKey (hKey)
+       End Sub
+
+       Private Function QueryValue(sKeyName As String, sValueName As String) _
+                                   As Integer
+            Dim lRetVal As Long        'result of the API functions
+            Dim hKey As Long           'handle of opened key
+            Dim vValue As Variant      'setting of queried value
+
+            lRetVal = RegOpenKeyEx(HKEY_LOCAL_MACHINE, sKeyName, 0, _
+                                   KEY_ALL_ACCESS, hKey)
+            lRetVal = QueryValueEx(hKey, sValueName, vValue)
+            If lRetVal = ERROR_NONE Then
+                QueryValue = True
+                TimeOutValue = vValue
+            Else
+                QueryValue = False
+            End If
+            RegCloseKey (hKey)
+       End Function
+
+       Private Sub Command1_Click()
+            If QueryValue("Software\MyApp\Jet\3.5\Engines\ODBC", _
+                   "ConnectionTimeout") Then
+               If TimeOutValue <> 1 Then
+                SetKeyValue "Software\MyApp\Jet\3.5\Engines\ODBC", _
+                   "ConnectionTimeout", 1
+               End If
+             MsgBox "Test registry key already set"
+            Else
+                CreateNewKey "Software\MyApp\Jet\3.5\Engines\ODBC", _
+                             HKEY_LOCAL_MACHINE
+               SetKeyValue "Software\MyApp\Jet\3.5\Engines\ODBC", _
+                           "ConnectionTimeout", 1
+               MsgBox "Test registry key created successfully"
+            End If
+       End Sub
+
+       Private Sub Command2_Click()
+            Dim strConnect As String
+
+            DBEngine.IniPath = "HKEY_LOCAL_MACHINE\Software\MyApp\Jet\3.5"
+            Set ws = DBEngine.Workspaces(0)
+            strConnect = "ODBC;SERVER=MyServer;" & _
+                  "DRIVER={SQL  SERVER};DATABASE=pubs;UID=sa;PWD=;"
+            Set db = ws.OpenDatabase("", False, False, strConnect)
+            MsgBox "Connection established"
+       End Sub
+
+       Private Sub Command3_Click()
+            If db Is Nothing Then
+               MsgBox "Already Disconnected"
+               Exit Sub
+            End If
+
+            db.Close
+            ws.Close
+
+            Dim Start As Long
+            Start = Timer
+            Do
+              DBEngine.Idle dbFreeLocks
+            DoEvents
+            Loop While Timer <= Start + 1
+            MsgBox "Disconnected"
+       End Sub
+
+       Private Sub Form_Load()
+            Command1.Caption = "Create/Set test registry entry"
+            Command2.Caption = "Open database"
+            Command3.Caption = "Close database"
+       End Sub
+
+5. From the Project menu, select Add Module, then click Module. Copy and paste
+   the following code into the General Declarations section of Module1:
+
+       Option Explicit
+
+       Global Const REG_DWORD As Long = 4
+       Global Const HKEY_LOCAL_MACHINE = &H80000002
+       Global Const ERROR_NONE = 0
+       Global Const KEY_ALL_ACCESS = &H3F
+       Global Const REG_OPTION_NON_VOLATILE = 0
+       Global TimeOut As Integer
+
+       Declare Function RegCloseKey Lib "advapi32.dll" _
+                          (ByVal hKey As Long) As Long
+       Declare Function RegCreateKeyEx Lib "advapi32.dll" Alias _
+         "RegCreateKeyExA" (ByVal hKey As Long, ByVal lpSubKey As String, _
+         ByVal Reserved As Long, ByVal lpClass As String, ByVal dwOptions _
+         As Long, ByVal samDesired As Long, ByVal lpSecurityAttributes _
+         As Long, phkResult As Long, lpdwDisposition As Long) As Long
+       Declare Function RegOpenKeyEx Lib "advapi32.dll" Alias _
+         "RegOpenKeyExA" (ByVal hKey As Long, ByVal lpSubKey As String, _
+         ByVal ulOptions As Long, ByVal samDesired As Long, phkResult As _
+         Long) As Long
+       Declare Function RegQueryValueExLong Lib "advapi32.dll" Alias _
+         "RegQueryValueExA" (ByVal hKey As Long, ByVal lpValueName As _
+         String, ByVal lpReserved As Long, lpType As Long, lpData As _
+         Long, lpcbData As Long) As Long
+       Declare Function RegQueryValueExNULL Lib "advapi32.dll" Alias _
+         "RegQueryValueExA" (ByVal hKey As Long, ByVal lpValueName As _
+         String, ByVal lpReserved As Long, lpType As Long, ByVal lpData _
+         As Long, lpcbData As Long) As Long
+
+       Declare Function RegSetValueExLong Lib "advapi32.dll" Alias _
+         "RegSetValueExA" (ByVal hKey As Long, ByVal lpValueName As String, _
+         ByVal Reserved As Long, ByVal dwType As Long, lpValue As Long, _
+         ByVal cbData As Long) As Long
+
+       Function QueryValueEx(ByVal lhKey As Long, ByVal szValueName As _
+                String, vValue As Variant) As Long
+         Dim cch As Long
+         Dim lrc As Long
+         Dim lType As Long
+         Dim lValue As Long
+         Dim sValue As String
+
+         On Error GoTo QueryValueExError
+
+         lrc = RegQueryValueExNULL(lhKey, szValueName, 0&, lType, 0&, cch)
+         If lrc <> ERROR_NONE Then Error 5
+
+         lrc = RegQueryValueExLong(lhKey, szValueName, 0&, lType, _
+               lValue, cch)
+         If lrc = ERROR_NONE Then vValue = lValue
+
+       QueryValueExExit:
+         QueryValueEx = lrc
+         Exit Function
+       QueryValueExError:
+         Resume QueryValueExExit
+       End Function
+
+6. Make sure to change your SERVER, UID, and PWD parameters in the connection
+   string under Command2_Click.
+
+7. Start the program or press the F5 key.
+
+8. You can observe the connection information by executing the SP_WHO stored
+   procedure at SQL Server. Compare the result before and after opening a
+   database and before and after closing the database.
+
+NOTE: Modify the Jet Engine version in the code, from 3.5 to a higher number, in
+order to work with the required version of the Jet Engine.
+
+Starting with Microsoft Data Access Components (MDAC) version 2.6, MDAC no longer
+contains the following Jet components:
+
+ - Microsoft Jet
+ - Microsoft Jet OLE DB Provider
+ - ODBC Desktop Database Drivers
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q239114 ACC2000: Updated Version of Microsoft Jet 4.0 Available in Download
+   Center
+
+The "MDAC 2.5 Stack and Windows File Protection" white paper contains a full list
+of the components that are shipped with MDAC 2.5, along with a discussion of
+Windows File Protection. Refer to this white paper for more information about
+the Jet dynamic-link libraries (DLLs) that are included in MDAC 2.5, which are
+no longer a part of MDAC 2.6.
+
+For more information about MDAC 2.5 and Windows File Protection, see the
+following Microsoft Web site:
+
+   http://www.microsoft.com/data/mdacwfp.htm
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q145679 HOWTO: Use the Registry API to Save and Retrieve Setting
+
+   Q110227 PRB: ODBC Database Remains Open After a Close Method Used
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVBDB kbDSupport kbMDACNoSweep kbATM 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

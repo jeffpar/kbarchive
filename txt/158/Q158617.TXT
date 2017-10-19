@@ -1,0 +1,61 @@
+DOCUMENT:Q158617  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Link Text Boxes in Different Subdocuments
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are working in a master document and you attempt to link text boxes in
+subdocuments, the insertion point is displayed as a pitcher icon or you get the
+following error message:
+
+   Word cannot link text boxes if they are in different subdocuments.
+
+CAUSE
+=====
+
+Microsoft Word allows you to link text boxes in the same document or
+subdocument. Text boxes can be added to any subdocument in a master document;
+however, a text box in one subdocument cannot be linked to a text box in a
+different subdocument.
+
+WORKAROUND
+==========
+
+To work around this problem and exit text box linking mode (represented by a
+pitcher icon), press the ESC key.
+
+
+Additional query words: 8.0 word8 word97 pouring cup sub document sub-document textbox
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

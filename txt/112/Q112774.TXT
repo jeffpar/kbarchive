@@ -1,0 +1,67 @@
+DOCUMENT:Q112774  09-AUG-1999  [foxpro]
+TITLE   :ERR: VSERVER File Server Encountered Critical Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.5 2.5a 2.5b 3.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtshoot kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are performing an operation using FoxPro for Windows, the error message
+"VSERVER File Server Encountered Critical Error" appears.
+
+CAUSE
+=====
+
+There is no single, identifiable cause for this error message. The common causes
+are:
+
+ - A third-party shell or program that loads from the SYSTEM.INI file
+
+ - A terminate-and-stay-resident (TSR) program
+
+ - An IRQ conflict
+
+ - An I/O base address conflict
+
+ - A third-party video driver
+
+MORE INFORMATION
+================
+
+VSERVER.386 is the network server VxD (virtual device driver) that implements
+the Windows for Workgroups server.
+
+
+
+Additional query words: err msg errmsg wfw wfwg
+
+======================================================================
+Keywords          : kberrmsg kbtshoot kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : 2.5 2.5a 2.5b 3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

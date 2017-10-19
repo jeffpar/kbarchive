@@ -1,0 +1,83 @@
+DOCUMENT:Q104364  10-NOV-1999  [pcmail]
+TITLE   :PC Forms: Message Displayed in Compose Form
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you read a message created using a version 1.0 Microsoft Electronic Forms
+Designer custom form, the message may be displayed in the Compose form, rather
+than the Read form.
+
+CAUSE
+=====
+
+This problem occurs because of a limitation in simple Messaging Application
+Programming Interface (MAPI). The MAPISaveMail() function ignores the MAPI_SENT
+flag, starting this chain of events:
+
+1. The message is opened and the header has MAPI_SENT set (gMessage.Flags =
+   MAPI_SENT).
+
+2. The message is deleted from the message list (underneath).
+
+3. When Mail tries to save the open message to its original Message ID, it fails
+   because the ID has been deleted.
+
+4. The form attempts to save again, using the same header and an empty message
+   ID (to save a "new" message).
+
+5. The MAPISaveMail() function ignores the MAPI_SENT bit and saves the message
+   as a new/unsent message.
+
+6. When the message is reopened, the form processes an Open command on a
+   new/unsent message, and concludes that the message should display the Compose
+   form.
+
+RESOLUTION
+==========
+
+To avoid this problem, close all open instances of E-forms before you delete
+mail from Microsoft Mail for Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in simple MAPI from versions 3.0
+and 3.2 of Microsoft Mail for PC Networks. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 1.00 wrong incorrect PC MAPI
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,62 @@
+DOCUMENT:Q214520  10-AUG-2001  [winnt]
+TITLE   :MEPP Encrypted Password Syncs to Sun Sparc Fail with Error 8199
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0; :
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Services for UNIX Add-On Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Password synchronization requests sent to a Sun Sparcstation using the encrypted
+MEPP propagation method may fail with the following event log error 8199:
+
+   error in receiving from socket
+
+Data in event log is 00 00 00 00.
+
+CAUSE
+=====
+
+This problem only occurs if the Ssod.config file on the Sparcstation has the
+shadow file option enabled and the last line of /etc/shadow contains only a
+colon (:).
+
+RESOLUTION
+==========
+
+To work around this problem, remove the last line in the Shadow file on the Sun
+Sparcstation and the errors will stop.
+
+
+Additional query words: SFU Services for Unix
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTServicesUnix
+Version           : winnt:4.0; :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

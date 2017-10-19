@@ -1,0 +1,57 @@
+DOCUMENT:Q158312  25-JUL-2001  [sms]
+TITLE   :SMS: Hardware Inventory Stops Responding with Madge Token Ring
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbnetwork kbInventory smsinv kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During the Hardware Inventory phase of a Systems Management Server client
+computer running Windows 3.x, the client may stop responding and need to be
+restarted. Further analysis shows that the client is stopping at the
+NovellNetcardInfo stage.
+
+This problem may occur on computers running MS-DOS and Windows 3.x with the
+NetWare redirector and a Madge Token Ring network adapter card.
+
+CAUSE
+=====
+
+This problem is due to the revision of the Madge Token Ring driver that is being
+used. As of October 28, 1996, the latest driver is version 4.3. This version of
+the driver can be obtained from Madge (www.madge.com).
+
+By replacing the Madge driver with the latest version, the inventory process will
+complete and the network adapter card will be inventoried correctly.
+
+Additional query words: prodsms NW Novell freeze hang hung locked lock up lock-up
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbnetwork kbInventory smsinv kbHardware 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

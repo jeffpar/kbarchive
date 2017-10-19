@@ -1,0 +1,60 @@
+DOCUMENT:Q199429  09-FEB-2000  [exchange]
+TITLE   :XFOR: Err Msg: MSEXIMC.DBG, Generated an Application Error
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Microsoft Exchange Server Internet Mail Connector (IMC), you
+may receive the following Dr. Watson error message:
+
+   The application, MSEXIMC.DBG, generated an application error. The error
+   occurred on MM/DD/YYY @ hh:mm:ss.sss. The exception generated was c0000005 at
+   address <xxxxxxxx>.
+
+The IMC does not start.
+
+CAUSE
+=====
+
+The administrator mailbox for the IMC may be corrupted.
+
+RESOLUTION
+==========
+
+Use another mailbox as the administrator mailbox, or delete and re-create the
+administrator mailbox.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

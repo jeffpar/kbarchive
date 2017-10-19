@@ -1,0 +1,73 @@
+DOCUMENT:Q159929  09-AUG-2001  [winnt]
+TITLE   :User Manager Fails at Startup If Windows 95 Is in the Path
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT Workstation computers running User Manager for Domains from the
+Clients\Srvtools\Winnt directory of the Windows NT Server 4.0 CD may receive the
+following error at startup:
+
+   The dynamic link library MSNET32.dll could not be found in the specified
+   path.
+
+The error is followed by the search path used to locate the apparently missing
+DLL.
+
+CAUSE
+=====
+
+Msnet32.dll is not a Windows NT 4.0 file. The error occurs when the directory
+for Windows 95 or the Windows NT Server Tools for Windows 95 (NEXUS) are in the
+environment path.
+
+RESOLUTION
+==========
+
+1. Type "SET" (without the quotation marks) from the Windows NT command prompt
+   to see if Windows 95 or the Windows NT Server tools are in the search path.
+
+2. Check the Environment tab in the Control Panel System and remove conflicting
+   paths if any are present.
+
+3. If there are no conflicting paths, remove the offending path from the
+   Autoexec.bat and Autoexec.nt files. You can disable parsing of the
+   Autoexec.bat file by setting the ParseAutoexec.bat (Reg_sz) entry to 0
+   under:
+
+   HKEY_CURRENT_USER\Software\Microsoft\Windows\NTCurrentVersion\Winlogon
+
+Additional query words: prodnt user manager server tools
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

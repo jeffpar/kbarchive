@@ -1,0 +1,65 @@
+DOCUMENT:Q165221  12-JUN-2001  [sna]
+TITLE   :3270 Applet Displays a Message if Preferred LU Not Available
+PRODUCT :Microsoft SNA Server
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server for Windows NT, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the last used LU or LU Pool is no longer available, the 3270 applet
+displays a message stating that the preferred LU is not available, and that
+another LU will be used.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the hotfix mentioned below.
+
+The problem has been corrected by eliminating the message when the last used LU
+or LU Pool is no longer available. The SNA Server clients for Windows 95,
+Windows NT and Windows 3.x have been updated to correct this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300NT
+Version           : winnt:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

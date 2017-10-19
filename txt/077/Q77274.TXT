@@ -1,0 +1,63 @@
+DOCUMENT:Q77274  08-DEC-1999  [win95x]
+TITLE   :No Page Break Unavailable in Printer Setup with IBM Proprinter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the No Page Break option for the IBM Proprinter is unavailable (dimmed), then
+the "feed=" line in the [PROPRINTERdrv] section of the WIN.INI file is greater
+than zero.
+
+WORKAROUND
+==========
+
+1. Change this line so it reads (this can be any number greater than zero):
+
+   feed=0
+
+2. Save the WIN.INI file.
+
+3. To make your changes take effect, exit and restart Windows.
+
+4. Open the Control Panel and select the Printers icon. Choose Configure and
+   then Setup. Look at the Page Break option. This time it will be available
+   (not dimmed).
+
+NOTE: This problem also occurs with the Epson 9-pin printer drivers, and should
+be corrected in the same fashion.
+
+
+Additional query words: 3.00 greyed out grayed 3.0a 3.00a 3.0 II XL III epson EX FX JX LX MX RX
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

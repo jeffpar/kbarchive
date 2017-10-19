@@ -1,0 +1,78 @@
+DOCUMENT:Q252787  24-JUL-2001  [foxpro]
+TITLE   :DOC: DOCERR: Parameters Passed to Form Set's Load not Setup1
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbDocs kbvfp600 kbGrpDSFox kbDSupport kbDOCError
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Visual FoxPro Command window, enter the command:
+
+   HELP DO FORM
+
+or go to page 529 in Microsoft Visual FoxPro 6.0 Language Reference.
+
+Locate the section labeled "WITH cParameterList."
+
+The documentation currently states:
+
+   "If a form set is run, the parameters are passed to the form set's Init
+   method if the form set's WindowType property is set to ModeLess (0) or Modal
+   (1). The parameters are passed to the Setup1 method if the form set's
+   WindowType property is set to Read (2) or ReadModal (3)."
+
+The documentation should state:
+
+   If a form set is run, the parameters are passed to the form set's Init method
+   if the form set's WindowType property is set to ModeLess (0) or Modal (1).
+   The parameters are passed to the Load method if the form set's WindowType
+   property is set to Read (2) or ReadModal (3).
+
+In the second sentence, note that the parameters are passed to the LOAD method
+not the Setup1 method.
+
+MORE INFORMATION
+================
+
+The WindowType property settings of Read (2) or ReadModal (3) are included for
+backward compatibility and available only for forms converted from previous
+versions of FoxPro.
+
+REFERENCES
+==========
+
+Visual FoxPro Help, search on: DO FORM
+
+Microsoft Visual FoxPro 6.0 Language Reference, pp 529
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbDocs kbvfp600 kbGrpDSFox kbDSupport kbDOCError 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

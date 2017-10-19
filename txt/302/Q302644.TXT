@@ -1,0 +1,46 @@
+DOCUMENT:Q302644  30-JUL-2001  [msnetwork]
+TITLE   :Settings My Account Change My Information
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+The "my billing information" page and the "change my billing information" page
+do not display the top banner or the buttons at the bottom of the screen.
+
+CAUSE
+=====
+
+This is a known issue that the product team is working to resolve.
+
+RESOLUTION
+==========
+
+Access "my billing information" page and the "change my billing information"
+page though the settings link.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

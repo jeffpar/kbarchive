@@ -1,0 +1,79 @@
+DOCUMENT:Q198640  19-MAR-1999  [sms]
+TITLE   :SMS: NDS Container Script Is Not Modified
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbNDS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The NDS container script is not modified.
+
+CAUSE
+=====
+
+If the NDS container script has not been updated with the Systems Management
+Server login script commands and the Site Settings-Client Installation
+Methods-Logon Settings tab has been enabled from within the Systems Management
+Server Administrator Console, this problem is most likely a rights issue.
+
+WORKAROUND
+==========
+
+Make sure that the NDS account listed in the Site Settings-Connection
+Accounts-Site system has proper rights to update the container and to modify the
+login script.
+
+Even if the account is made ADMIN equivalent, the account might be restricted if
+it is also made a trustee of the container, but not given proper rights. If the
+account is ADMIN equivalent it should be given the Supervisor OBJECT right and
+the Supervisor PROPERTY right. To add appropriate NDS Rights, do the following:
+
+1. Go into Nwadmin.
+
+2. Highlight the container that will contain System Management Server systems,
+   right-click on it and select TRUSTEES OF THIS OBJECT.
+
+3. If the account shows as a trustee of the container (which would have been
+   done manually), highlight the account.
+
+4. In the OBJECT pane, click on the box to the left of SUPERVISOR.
+
+5. If ALL PROPERTIES is selected in the PROPERTY pane, click on the box to the
+   left of SUPERVISOR.
+
+6. If you want to restrict the account to only certain properties, choose LOGIN
+   SCRIPT in the SELECTED PROPERTIES section and enable Write as the minimum
+   right required (refer to Novell Dynatext).
+
+Additional query words: prodsms netware nwroles
+
+======================================================================
+Keywords          : kbsms200 kbNDS 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

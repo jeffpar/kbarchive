@@ -1,0 +1,73 @@
+DOCUMENT:Q125453  24-JUL-2001  [sms]
+TITLE   :Windows NT Account Requirements for SMS Site to Site Com.
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbConfig smshowto smsconfig
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A destination site account is required when you create a Systems Management
+Server site address. This article explains what destination site account rights
+are required.
+
+MORE INFORMATION
+================
+
+When one SMS site needs to communicate with another, it does so by writing files
+to the destination site's SMS_SITE share DESPOOL.BOX\RECEIVE sub- directory. The
+account used to write to this share must have at least CHANGE rights to this
+share and directory. For NetWare and other network operating systems (NOSs),
+CHANGE rights equates to CREATE/DELETE and READ/WRITE.
+
+Cross site addressing can be setup with connection accounts that do not have
+administrator rights on the destination system. This helps eliminate security
+concerns when using administrative accounts or configuring trust relationships.
+
+To accomplish this, at each site, create an address that contains the full
+domain\username for the account created at the destination site. (This does not
+require a trust relationship.) This allows the LAN_SENDER to do the equivalent
+of a NET USE \\<server>\SMS_SITE /USER:domain\username command when
+connecting to another site.
+
+For example, given the following two sites:
+
+Site:         BPC              VMT
+Server:       \\CNSSMS         \\VEMONT
+Domain:       PSS-BP           VERMDOMAIN
+User account: PSS-BP\SMSSITE   VERMDOMAIN\SMSCONN
+
+At the BPC site, create the address for the VMT site that contains the
+VERMDOMAIN\SMSCONN account. At the VMT site, create an address for the BPC site
+with the PSS-BP\SMSSITE account.
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbnetwork kbConfig smshowto smsconfig 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

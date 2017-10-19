@@ -1,0 +1,82 @@
+DOCUMENT:Q172930  09-AUG-2001  [winnt]
+TITLE   :Removing Bypass Traverse Checking Causes Copy to Drop Streams
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Files contained in Macintosh volumes contain streams (special data content) that
+include data fork information. Files that do not contain stream information
+appear to Macintosh clients as text-only files. The reported problem occurs
+after copying a file from one directory to another. The copy operation could be
+performed from the computer running Windows NT Server or by a Macintosh client;
+it made no difference. After the copy operation, the target file stream was lost
+and the file appeared to Macintosh clients as a text-only file.
+
+This copy problem occurs on PDC or BDC servers, but not on a member server. It
+also occurs when the Domain User Rights for "Bypass Traverse Checking" (the
+default is Everyone) has been modified so no users are granted this right for
+the Domain.
+
+CAUSE
+=====
+
+NTFS was making a check that precluded the copying of the streams in the case
+where "Bypass Traverse Checking" was removed from user rights.
+
+RESOLUTION
+==========
+
+To work around this problem, restore the Domain User Right: Bypass Traverse
+Checking to Everyone.
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+Additional query words: Mac Services SFM macfile Mac client
+======================================================================
+Keywords          : kbenv kbnetwork kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,77 @@
+DOCUMENT:Q167102  09-AUG-2001  [winnt]
+TITLE   :Cannot Open Devices or Modem Tool in Control Panel
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click the Devices icon in Control Panel, you may receive the
+following error message:
+
+   Configuration Manager: This routine is not implemented in this version of the
+   operating system.
+
+Also, when you double-click the Modem icon in Control Panel, Modems Properties
+may not open.
+
+CAUSE
+=====
+
+This error can occur if the following Windows NT files have been replaced by
+Microsoft Windows 95 versions of the same files:
+
+   %systemroot%\system32\Cfgmgr32.dll
+   %systemroot%\system32\Setupapi.dll
+
+These files may have been replaced by the installation of a program. If you
+receive the error message listed above, check these files to make sure they are
+the Windows NT versions.
+
+RESOLUTION
+==========
+
+Delete the existing files, and replace them with files from the Windows NT
+CD-ROM.
+
+NOTE: Both files on the Windows NT CD-ROM are compressed and must be expanded.
+You can expand the files by typing the following commands at a command prompt
+(assuming that the CD-ROM drive is drive D, you are using the Intel platform,
+and the Windows NT installation folder is C:\Winnt):
+
+   expand d:\i386\cfgmgr32.dl_ c:\winnt\system32\cfgmgr32.dll
+   expand d:\i386\setupapi.dl_ c:\winnt\system32\setupapi.dll
+
+
+Additional query words: office
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q127985  30-JUL-2001  [homemm]
+TITLE   :Platinum 16 Sound Card Causes GP Fault with a Pentium Processo
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When you play wave audio from any Microsoft multimedia application on a Pentium
+computer with the Multi-Wave Innovation Platinum 16 sound card installed, you
+may receive the following message
+
+   <MMTITLE> has caused a General Protection Fault in MSACM.DRV
+
+where <MMTITLE> is the name of the application.
+
+RESOLUTION
+==========
+
+The Multi-Wave Innovation Platinum 16 sound card requires an updated
+Pentium-specific device driver when installed on a Pentium computer.
+
+The device driver shipped with the Platinum 16 sound card is:
+
+   P16.SYS  2/1/94   11,228  Version 1.22
+
+The updated device driver is:
+
+   P16.SYS  3/29/94  11,229  Version 1.21p
+
+NOTE: Do not be confused by the version number of the necessary device driver.
+The correct version is 1.21p.
+
+The file is available on the Multi-Wave Innovations BBS. The filename is
+PLATPEN.ZIP.
+
+
+For additional information, contact Multi-Wave Innovations at:
+
+ - Technical Support: (408) 379-2848
+
+ - Bulletin Board Services (BBS): (408) 379-2927
+
+The third-party product discussed here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 1995multi media multimedia multi-media mmtitles kbmm openv gp fault gfp
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

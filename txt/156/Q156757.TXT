@@ -1,0 +1,66 @@
+DOCUMENT:Q156757  24-FEB-2000  [iis]
+TITLE   :How to Dynamically Populate a Select Control with IDC
+PRODUCT :Internet Information Server
+PROD/VER:1.0 2.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Internet Database Connector (IDC) with Internet Information
+Server (IIS) to populate a HTML Select form control.
+
+MORE INFORMATION
+================
+
+The following HTML sample can be used in an HTX file and will illustrate how to
+return database information to dynamically populate a HTML form Select control.
+
+The following form section pasted into a HTX file will dynamically populate the
+select control ("JobType") with the return values from the "Title" field.
+
+   <FORM>
+
+   Job Type: <SELECT NAME="JobType">
+   <%begindetail%>
+      <option><%Title%></option>
+   <%enddetail%>
+   </select>
+
+   </FORM>
+
+For more information look in Chapter 8 of the Online Documentation for IIS that
+details the Internet Database Connector and covers publishing dynamic data on
+the Web. Additionally, you can view the JobForum IDC database example
+application found on the following Web site:
+
+   http://msdn.microsoft.com/library/techart/msdn_jobforum.htm
+======================================================================
+Keywords          : kbenv 
+Technology        : kbiisSearch kbiis200 kbiis100
+Version           : 1.0 2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

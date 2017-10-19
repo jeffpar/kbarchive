@@ -1,0 +1,52 @@
+DOCUMENT:Q85897  05-NOV-1999  [win16sdk]
+TITLE   :WDEB386-Compatible Timing Card Available
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows 80386 Debugger (WDEB386.EXE) is documented in Chapter 5 of
+the "Microsoft Windows Software Development Kit: Programming Tools" manual. The
+documentation for the gs and gh commands, on page 148, indicates that each of
+these commands requires a timing card.
+
+One timing card compatible with WDEB386 is the STAT! System Timing Analysis Tool,
+manufactured by Alpha Logic Technologies, Inc. For more information regarding
+this product, contact Alpha Logic Technologies at (206) 644-3094.
+
+The product included here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

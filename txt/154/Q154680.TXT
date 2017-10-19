@@ -1,0 +1,73 @@
+DOCUMENT:Q154680  04-OCT-2001  [frontpg]
+TITLE   :FP: Elements Jump to Bottom of Page Inserting Image, Text
+PRODUCT :Word Front Page
+PROD/VER::; WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194259.
+
+SYMPTOMS
+========
+
+When you insert an image or type text in a new typeface in FrontPage Editor, the
+image or text jumps to a position much lower on the page than it should.
+
+CAUSE
+=====
+
+One or more of the Times New Roman font files may be corrupt (these files are
+located in the \Windows\Fonts folder).
+
+WORKAROUND
+==========
+
+To work around this problem, replace the Times New Roman font files in the
+\Windows\Fonts folder that are not corrupt.
+
+MORE INFORMATION
+================
+
+These font files contain equations that describe the various aspects of the font
+such as baseline, ascender, descender, and so on. When some aspect of the file
+is corrupt, FrontPage Editor may not interpret the size of the font correctly
+(for example, it may appear that the font is much taller than it actually is);
+therefore, any text of a different typeface or a bottom-aligned image may be
+placed below this font because FrontPage Editor interprets the corrupt font as
+being the tallest element on the current line.
+
+Times New Roman is selected by Windows browsers to render the default Normal
+style font of HTML documents.
+
+Additional query words: type style
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : :; WINDOWS:1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

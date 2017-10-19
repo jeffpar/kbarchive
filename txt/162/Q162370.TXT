@@ -1,0 +1,75 @@
+DOCUMENT:Q162370  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 95 Err Msg: Invalid Page Fault in Winsmsg.dll
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+6.0
+WINDOWS
+kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run Flight Simulator for Windows 95, version 6.0, you may
+receive the following error message:
+
+   Invalid Page Fault in Winsmsg.dll.
+
+The program will stop and return you to the Windows 95 Desktop.
+
+RESOLUTION
+==========
+
+To prevent this error message, reduce the scroll rate for the aircraft
+communications as follows:
+
+1. On the Aircraft menu, click Communications.
+
+2. Move the Communications Rate slider bar to the Low position.
+
+3. Click OK.
+
+MORE INFORMATION
+================
+
+The above error message is rare. The Winsmsg.dll controls the window that the
+communication message scrolls in. Reducing the scroll rate will usually resolve
+this problem.
+
+Terminate-and-stay-resident (TSR) programs have also been known to cause this
+problem. If reducing the scroll rate does not resolve this issue, check for any
+TSR's that may be running in the background, including any Virus detection
+programs.
+
+Additional query words: 1.00 6.00 winsmsg.dll flightsim fs6 fs95 err msg
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

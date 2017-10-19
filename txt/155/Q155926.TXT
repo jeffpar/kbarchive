@@ -1,0 +1,63 @@
+DOCUMENT:Q155926  09-AUG-2001  [winnt]
+TITLE   :Media Player Does Not Recognize Multiple CD-ROM Drives
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbmm kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have more than one CD-ROM drive installed, you cannot select the drive
+you want to use in Media Player to play an audio CD.
+
+CAUSE
+=====
+
+Media Player does not recognize multiple CD-ROM drives.
+
+RESOLUTION
+==========
+
+To work around this behavior, use CD Player to play audio CDs. If the AutoRun
+feature is enabled in Windows NT, CD Player starts automatically when you insert
+an audio CD. If the AutoRun feature is disabled, you can start CD Player by
+clicking the Start button, pointing to Programs, pointing to Accessories,
+pointing to Multimedia, and then clicking CD Player.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   ARTICLE-ID: Q155763
+   TITLE : CD Player Seems to Hang with Multiple-CD Changer
+
+Additional query words: prodnt compact disc disk cdrom
+
+======================================================================
+Keywords          : kbmm kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,54 @@
+DOCUMENT:Q161398  19-MAY-1999  [homegame]
+TITLE   :How to Add Microsoft Golf 2.0 Courses to Golf 3.0
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To use Microsoft Golf 2.0 courses in Golf 3.0, do the following:
+
+1. Click Start, point to Programs, and click Windows Explorer.
+
+2. Open the folder where the Golf 2.0 courses are located.
+
+3. Copy or Move the *.crh file(s) from the Golf 2.0 folder to the Golf 3.0
+   folder.
+
+   NOTE: For instructions on how to copy or move a file, see your Windows online
+   Help.
+
+4. Close Windows Explorer and restart Golf 3.0.
+
+Additional query words: 3.00 course access addition add convert to use
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

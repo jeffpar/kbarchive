@@ -1,0 +1,280 @@
+DOCUMENT:Q175403  09-NOV-2001  [homegame]
+TITLE   :CC: A Bridge Too Far: Contents of Readme.doc for Macintosh
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbusage kbtlc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat: A Bridge Too Far, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Microsoft Close Combat: A Bridge
+Too Far, version 2.0 Readme.doc for the Macintosh. This file is copied to the A
+Bridge Too Far folder when you install the program. It can also be found in the
+root folder on the A Bridge Too Far compact disc.
+
+README.DOC
+
+Microsoft Close Combat: A Bridge Too Far Readme File
+Macintosh Version, October 1997
+Copyright Microsoft Corporation, 1997
+
+This document contains important information for installing and using
+Microsoft Close Combat: A Bridge Too Far.
+
+CONTENTS
+
+A. Installation Notes
+B. Hardware and System Compatibility: Performance Issues
+C. Head-to-Head Play
+D. Tips, Information, and Corrections
+
+A. Installation Notes
+
+To run A Bridge Too Far on a Macintosh computer, you need:
+
+Power Macintosh personal computer.
+
+16 megabytes (MB) of RAM.
+
+At least 40 MB of available hard disk space.
+
+4X CD-ROM drive or higher.
+
+Video card that supports 800 x 600 resolution or higher at "Thousands
+   of colors."
+
+System 7.5 or later.
+
+Headphones or speakers (recommended).
+
+28.8 modem for head-to-head play.
+
+B. Hardware and System Compatibility: Performance Issues
+
+It is recommended that you turn Virtual Memory ON when running A Bridge
+Too Far. With Virtual Memory turned on, A Bridge Too Far's RAM requirements
+drop by roughly 1.5 megabytes.
+
+To change A Bridge Too Far's memory settings, click on it in the Finder and
+press Command+I or choose Get Info from the Finder's File menu.  Enter the
+desired value into the Preferred Size box.
+
+Here's a chart of screen resolution settings and memory requirements for A
+Bridge Too Far.
+
+Resolution     Preferred Size      Preferred Size
+               (with VM on)        (with VM off)
+800x600         15000k              16500k
+832x624         15500k              17000k
+1024x768        16500k              18000k
+1280x1024       20000k              21500k
+
+Users of slower machines may experience a delay in gameplay when A Bridge
+Too Far is loading game data. Please do not restart your computer if this
+occurs.
+
+To improve game performance:
+
+Press the Spacebar to display the menubar.
+
+Select Preferences.
+
+Set the Game Speed to Fast.
+
+Check Remove Trees.
+
+Check Remove KIA Soldiers.
+
+Removing trees and KIA soldiers is not persistent across game sessions.
+Each time you begin A Bridge Too Far, you will need to reselect Remove
+Trees and Remove KIA Soldiers in the Close Combat Options dialog box to
+improve game performance.
+
+Note for 16Mb PowerMac Users:
+
+If you have a PowerMac with 16Mb of RAM, you must turn Virtual Memory ON
+before playing A Bridge Too Far. Your Virtual Memory must be set to at
+least 24Mb and your monitor set to a resolution of 832x624 pixels or
+smaller. The maximum required Virtual Memory may vary depending on the
+version of MacOS you are running, and what extensions you are loading. If
+A Bridge To Far fails to load with your current VM setting, increase this
+setting.
+
+C. Head-to-Head Play
+
+If you use international characters (high ASCII) during chat in
+head-to-head play between a Macintosh computer and a PC, the character
+display will be garbled.
+
+D. Tips, Information, and Corrections
+
+Tips
+
+If you'd like to hear frequently updated tips and strategies for Close
+   Combat: A Bridge Too Far, call our automated Hints Line at (900)
+   786-HINT, 24 hours/day. Calls are $0.95/minute. You must be 18 years
+   or older or have parental permission.
+
+For more information on A Bridge Too Far, visit our web site at
+   http://www.microsoft.com/games/closecombat.
+
+If you would like to play against opponents over the Internet, check
+   out Zone.com at http://www.zone.com.
+
+Information
+
+Regardless of which speed (Slow, Medium, or Fast) you have selected in
+   the Game Speed box in the Close Combat Options dialog box, during
+   head-to-head play game speed is always Medium.
+
+When you see a value for percentage done, it refers to percentage of
+   time complete. For instance, if a battle is five days long and you have
+   completed one day, you are 20 percent done.
+
+The numeric keypad does not work during chat. You will need to use the
+   number keys at the top of your keyboard.
+
+The progress of XXX Corps is shown on the maps of the Briefing and
+   Supply screens by a wide green or yellow line. Green indicates XXX
+   Corps has been or is currently at that operation, while yellow shows
+   the operation where they are about to arrive.
+
+When defining deployment zones using Battlemaker, you must allow one
+   square for each additional force added to your original units or you
+   may have deployment errors where not all of your units can be deployed
+   at the start of the battle.
+
+When playing a Grand Campaign or the Nijmegen Sector Campaign, the
+   operations for Nijmegen River Crossing and The Island begin with the
+   arrival of XXX Corps. The initial day number you see is an estimate of
+   when they arrive and may change according to gameplay results. For the
+   Nijmegen River Crossing, it will begin two hours after XXX Corps has
+   arrived at the Nijmegen Bridge operation unless XXX Corps arrives after
+   1200 hours. In this case, the Nijmegen River Crossing will start at
+   1000 hours the next day.
+
+When playing a Grand Campaign or the Arnhem Sector Campaign, the Arnhem
+   Relief Attempt operation will only start if the allies in the Arnhem
+   Bridge operation make it to the Arnhem bridge.
+
+Sometimes during gameplay, soldiers under a Defend order may shoot at
+   enemies you cannot see on the game screen. You learn about enemy
+   soldiers through observation. Initially, you may only see a red dot on
+   your map monitor representing enemy troops. You won't be able to see
+   the actual enemy soldiers, but you will be able to see muzzle flashes
+   if they fire at you. Through continued observation, enemy soldiers will
+   be listed on your soldier monitor, but they will show only grayed-out
+   information or question marks. When you have had the enemy in your
+   sights for some time, you will be able to get detailed information on
+   their physical and mental state in the soldier monitor just as you can
+   for your own men.
+
+When you use the Requisition screen to add new troops, you are not
+   guaranteed their exact experience and morale levels. The bars you see
+   on the Requisition screen represent your request. Once you return to a
+   battle, you will receive troops close to the levels you requested but
+   they may differ slightly because of the actual quality and rank of the
+   soldiers received.
+
+You can customize three types of Battlemaker files. The first is a
+   points-only file where both players can requisition equipment based on
+   the points allocated to them in the file. The second type of file has
+   troops that are already allocated and there are no additional
+   requisition points. In this type of Battlemaker file, players go
+   immediately into battle. The third type of Battlemaker file is a
+   combination of the first two types and has both allocated troops and
+   requisition points. During the requisition phase in this type of battle,
+   a player cannot alter established troop allocations. Players can get
+   new troops only through available requisition points.
+
+When you issue any kind of move order to a unit, that unit will attempt
+   to deploy behind protective terrain in the direction of the move. For
+   example, if you give a move order to the north, the soldiers in that
+   unit will look for cover to use against enemy soldiers to the north of
+   them. With this method, you can use short move orders to reposition
+   teams in buildings.
+
+When you issue a fire order to a target out of the line of sight (red
+   fire line), the order may not be disobeyed if the unit can move closer
+   to the target and get in line of sight there. If still out of the line
+   of sight, the order will be canceled, but this may result in
+   unanticipated movement by your troops. It is generally best to only
+   give direct fire orders to those targets you can see.
+
+Corrections
+
+On page 13 of the manual, the information about the Hide order is
+incorrect. Units given a Hide order will not fire back if fired on and
+will only fire if an enemy unit comes within 30 meters of their location.
+Once they start firing, they may continue to fire at other targets until
+order is restored and they revert back to hidden status.
+
+On page 15 of the manual, a prone soldier can only throw a grenade up to
+1/2 its normal range.
+
+On page 15 of the manual, prisoners will follow the team that captured
+them around the map. If prisoners move near a lower value team belonging
+to the side of the capturing team, they will start following that team.
+Should no enemy team be near the prisoners because the capturing team has
+been eliminated, prisoners will free themselves and run for the friendly
+edge of the map.
+
+On page 17 of the manual, if both sides agree to a ceasefire but one side
+controls no victory locations on that map, the side with no victory
+locations will be forced to flee the map. Also, if you choose to flee,
+soldiers near enemy teams or belonging to static units such as 88 FlaK guns
+will be lost. The confirmation dialog box will tell you how many soldiers
+you lose if you choose to flee. If the number is unacceptable, click Cancel
+and try to move friendly teams away from enemy teams and then try to flee
+again.
+
+On page 22 of the manual, the Stunned action does not occur. G.I. is also
+used for British and Polish infantrymen.
+
+On page 28 of the manual, the Supply screen is only available for Grand
+Campaign games. For all other campaigns and operations, supply is handled
+automatically.
+
+On page 57 of the manual, the information about DirectPlay TCP is no longer
+appropriate, as the feature has been removed from A Bridge Too Far. Also,
+there are the following changes in terminology:
+
+Close Combat TCP is now TCP/IP for Internet or LAN Play.
+
+DirectPlay Modem is now Modem Connection For DirectPlay.
+
+DirectPlay Serial is now Serial Connection For DirectPlay.
+
+Thank you for choosing Microsoft Close Combat: A Bridge Too Far.
+
+Additional query words: 2.00 close combat abtf
+
+======================================================================
+Keywords          : kbsetup kbusage kbtlc 
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat2
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

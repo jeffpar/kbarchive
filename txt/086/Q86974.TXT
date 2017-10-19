@@ -1,0 +1,58 @@
+DOCUMENT:Q86974  08-NOV-1999  [pcmail]
+TITLE   :X400: What X.400 Gateway Settings Affect X.25 Card Operation
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The data within three fields can affect the operation of the X.25 transport that
+carries the X.400 messages:
+
+   X.121
+   Call User Data
+   User Facilities
+
+Messages can sometimes be blocked, without notification appearing within the
+X400GATE.LOG file, as a result of the programming of the fields. These fields
+can be found in the administration program of the gateway postoffice for the
+home message transfer agent (MTA).
+
+These fields may contain information that rejects a call at the OSI lower level
+before the X.400 gateway ever has a chance to receive it.
+
+For example, this can include a bad X.121 (DTE) address or even incorrect reverse
+charges information in the User Facilities selection.
+
+
+Additional query words: pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

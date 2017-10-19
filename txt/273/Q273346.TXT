@@ -1,0 +1,71 @@
+DOCUMENT:Q273346  12-NOV-2001  [msnetwork]
+TITLE   :How to add, change, and delete contact records in MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Step by step instructions on how to add, change, and delete contact records in
+MSN Companion address book.
+
+MORE INFORMATION
+================
+
+To add a contact
+
+1. Click mail on the toolbar, click open address book, and then click add a new
+   person.
+
+2. Type the name and e-mail address in the corresponding input boxes, select
+   whether or not to add the contact to instant messaging*, and then click add.
+
+To change contact information
+
+1. Click mail on the toolbar, click open address book, and then click change for
+   the contact you want to change.
+
+2. Type the changed name or e-mail address in the corresponding input boxes,
+   select whether or not to add the contact to instant messaging*, and then
+   click save.
+
+To delete a contact click mail on the toolbar, click open address book, and then
+click delete for the contact you want to delete.
+
+* If you select set this person up for instant messaging and click save, you are
+given a choice of whether or not to send and invitation to instant messaging and
+an opportunity to preview the invitation. Click send invitation to invite your
+contact to join MSN Messenger Service.
+
+Additional query words: kbimu MSN Companion contacts address book
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

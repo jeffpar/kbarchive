@@ -1,0 +1,75 @@
+DOCUMENT:Q94247  13-JUN-2001  [winmisc]
+TITLE   :WSS Err Msg: Cannot Find the SNDSYS Driver
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are using Windows Sound System and a SNDSYS.DRV entry is not present in
+the [DRIVERS] section of the SYSTEM.INI file, the following error may occur:
+
+   Cannot find the SNDSYS Driver
+
+Correctly setting up the [DRIVERS] section in the SYSTEM.INI file may correct
+this problem.
+
+MORE INFORMATION
+================
+
+This problem can be caused if the [Drivers] section in the SYSTEM.INI file is
+not set up correctly.
+
+This section should be configured in the following manner:
+
+   [DRIVERS]
+   MIDIMAPPER=MIDIMAP.DRV
+   TIMER=TIMER.DRV
+   WAVE=SNDSYS.DRV
+   AUX=SNDSYS.DRV
+   MIDI=SNDSYS.DRV
+   WAVEMAPPER=MSACM.DRV
+
+If WAVE=SNDSYS.DRV is not present, Volume Control, Recording Control, Voice
+Pilot, Quick Recorder, and Sound Finder will not load. Also, if AUX=SNDSYS.DRV
+is not present, Volume Control, Recording Control, Voice Pilot, and Sound Finder
+will also not load.
+
+NOTE: This message can also occur if in the "drivers=" line is missing from the
+[boot] section of the SYSTEM.INI, This line usually reads as follows:
+
+   drivers=mmsystem.dll
+
+If this line is missing, use a text editor (such as Notepad) to edit your
+SYSTEM.INI file, and re-enter the line.
+
+Additional query words: 1.00 1.00a 2.00 setup
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

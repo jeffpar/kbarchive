@@ -1,0 +1,81 @@
+DOCUMENT:Q194952  18-JUN-2002  [exchange]
+TITLE   :XADM: Statically Mapped Port Limitations for Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article details the limitations involved when statically mapping ports for
+the Exchange Server services. In particular, it is recommended that ports which
+fall into the ephemeral range not be assigned statically on the Exchange Server
+computer.
+
+MORE INFORMATION
+================
+
+Ephemeral means: short-lived, or not permanent. This name is given to the port
+range from 1024 to 5000.
+
+The system will assign ephemeral port numbers to processes as processes request
+them. If some process is using the statically assigned port when the Exchange
+Server service starts, the Exchange Server service will not be able to use that
+port later. The information store and the directory service will still register
+all of its other endpoints, and start successfully.
+
+If static entries are needed for the customer's configuration, the following
+guidelines are recommended:
+
+ - Select ports just above 5000
+
+   -or-
+
+ - Select a port number in the 4900 - 5000 range. Programs almost never use the
+   ports at this high end of the ephemeral range because ports are typically
+   taken from the low end of the range first.
+
+   -or-
+
+ - Select ports just below 1024.
+
+   NOTE: The issue is with the use of "well-known ports." To make sure the port
+   selected below port 1024 is not in conflict with another process, see Request
+   for Comment (RFC) 1060.
+
+Mapping to ports from the low end of the ephemeral range is possible, but
+programs that use ephemeral ports choose them at random, typically starting at
+the low end of the range, and may conflict with the ports that you have manually
+assigned Exchange to use.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

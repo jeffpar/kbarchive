@@ -1,0 +1,74 @@
+DOCUMENT:Q192767  11-DEC-1999  [foxpro]
+TITLE   :FIX: HalfHeight Form Close Even when Closable Property is False
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 3.x and 5.x, when the Closable property of a HalfHeight form is
+set to .F., double-clicking the control box of the form closes the form.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program containing the following code:
+
+         PUBLIC oForm
+         oForm = CREATEOBJECT('Form')
+         oForm.HalfHeightCaption = .T.
+         oForm.Closable = .F.
+         oForm.Show()
+
+2. Save the program and run the program.
+
+3. When the form appears, double-click the form's control box that is located in
+   the upper right corner, close to the Fox icon.
+
+The form closes despite the setting of the Closable property.
+
+NOTE: You may need to double-click the control box several times in order to
+duplicate this behavior.
+
+Additional query words: kbVFp600fix kbCtrl kbContainer
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

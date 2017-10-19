@@ -1,0 +1,70 @@
+DOCUMENT:Q294217  08-MAY-2002  [iis]
+TITLE   :Cannot Retrieve Custom HTTP Variables That Contain an Underscore
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+IIS cannot retrieve custom HTTP header variables that contain an underscore
+following "HTTP_" (for example, "HTTP_SM_TESTVARIABLE"). The value returned for
+the header variable is NULL.
+
+CAUSE
+=====
+
+Any underscore ( _ ) that follows "HTTP_" is incorrectly converted to a dash
+when IIS attempts to retrieve the custom header value for the variable, and
+therefore, the variable is not found.
+
+WORKAROUND
+==========
+
+Do not use an underscore in the custom HTTP header variable name.
+
+-OR-
+
+Retrieve and parse the HTTP_ALL header variable for the custom HTTP header
+variable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : :3.0,4.0,5.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

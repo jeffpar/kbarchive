@@ -1,0 +1,83 @@
+DOCUMENT:Q152016  04-AUG-2001  [visualc]
+TITLE   :FIX: Errors C2065/C2064 When Function L is Called with Macro
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.1,4.2
+OPER/SYS:
+KEYWORDS:kbProgramming kbCompiler kbLangCPP kbVC kbVC410bug kbVC420bug kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling a program that calls the function "L" using a macro will cause the
+following errors:
+
+   error C2065: 'x' : undeclared identifier
+
+   error C2064: term does not evaluate to a function
+
+where "x" is the last letter of the macro identifier.
+
+CAUSE
+=====
+
+In this case, the preprocessor incorrectly generates the letter "x" as the
+resulting output.
+
+RESOLUTION
+==========
+
+Use any other letter after "L" in the macro body.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      /* Compile options needed:
+      */ 
+          #define thing L
+
+          void  L() {}
+
+          void main (void) {
+             thing();
+          };
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbCompiler kbLangCPP kbVC kbVC410bug kbVC420bug kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC410 kbVC420
+Version           : :4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

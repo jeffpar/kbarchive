@@ -1,0 +1,63 @@
+DOCUMENT:Q246423  24-OCT-2000  [winnt]
+TITLE   :How to Identify Your Interix CD-ROM and Subsystem Version
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to identify your CD-ROM and subsystem version in
+Interix.
+
+MORE INFORMATION
+================
+
+You can use either of the following methods to identify an Interix subsystem
+release:
+
+ - If you have the Interix 2.2 CD-ROM, put it in the CD-ROM drive and view the
+   CD-ROM from Microsoft Windows NT Explorer or My Computer to see the CD-ROM
+   label.
+
+ - In Windows NT Explorer, locate the Interix subsystem (Psxss.exe) in the
+   %WinDir%\System32 folder. To view the version information, on the File menu,
+   click Properties, and then click the Version tab.
+
+If the CD-ROM label lists Interix 2.2.3 or later, you already have a system that
+works with Microsoft Windows NT 4.0 Service Pack 4 (SP4). If the Psxss.exe file
+version is 2.2.203 or later, Windows NT 4.0 SP4 does not cause Interix to stop
+working. If the version is 2.2.202 or earlier, you must install Interix 2.2
+Service Pack 1 or a patch to correct the issue.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

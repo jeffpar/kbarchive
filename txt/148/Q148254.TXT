@@ -1,0 +1,67 @@
+DOCUMENT:Q148254  08-NOV-2001  [homemm]
+TITLE   :Art Gallery: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Art Gallery for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains a copy of the minimum system requirements for
+Microsoft Art Gallery for Windows, as listed on the product box.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Art Gallery are:
+
+ - A Multimedia PC or compatible with a 386SX or higher microprocessor
+
+ - MS-DOS operating system 3.1 or later
+
+ - Microsoft Windows operating system version 3.1 or later
+
+ - CD-ROM drive
+
+ - 4 MB of RAM
+
+ - 1 MB available hard disk space
+
+ - VGA+ 256 color display
+
+ - Audio Board
+
+ - Speakers or headphones
+
+ - Microsoft Mouse or compatible pointing device
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm requires
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbArtGallery
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,77 @@
+DOCUMENT:Q67702  12-DEC-1999  [win95x]
+TITLE   :Windows 3.0 PIF Settings for Quicken Version 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the recommended Windows 3.0 PIF file settings for Intuit's
+Quicken version 3.0. Be sure to include your actual path and directory name for
+the program name and initial directory:
+
+   Field                   Setting
+   -----                   -------
+
+   Program filename:       C:\DOSAPPS\QUICKEN3\Q.EXE
+   Window title:           Quicken 3.0
+   Optional parameters:    none
+   Start-up directory:     C:\DOSAPPS\QUICKEN3
+   K required:             128
+   K desired:              640
+   Display usage:          Full screen (optional)
+   Execution               (optional)
+   Close Window On Exit:   Checked (see below)
+
+The Advanced section is optional and may be left with the default Windows
+settings.
+
+MORE INFORMATION
+================
+
+This application can run successfully in a window or full screen. You should
+avoid loading any TSR (terminate-and-stay-resident) programs such as "Billmind"
+before starting Windows. TSR programs are known to cause problems when loaded
+before Windows. See page 442 of the "Microsoft Windows User's Guide" for
+information on running TSRs under Windows.
+
+If an MS-DOS application is started and closed from a PIF file without the Close
+Window On Exit option checked, an inactive application window will remain open.
+To close an inactive application window, press ALT+SPACEBAR and choose Close
+from the window control pull-down menu (-).
+
+Quicken is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise regarding this product's performance or
+reliability.
+
+Additional query words: 3.00 3.00a 3rdparty win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

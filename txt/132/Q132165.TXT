@@ -1,0 +1,81 @@
+DOCUMENT:Q132165  29-JUL-2001  [visualc]
+TITLE   :FIX: Non-const Conversion Operators Allowed on const Object
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,2.20
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1, 2.20 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual C++ illegally allows use of non-const member functions with const
+objects. Because of this, const data could be modified.
+
+Visual C++ correctly generates errors in most situations where non-const member
+functions are used on const objects, but fails to generate errors in the case of
+non-const conversion operators.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+The sample code should generate this error message:
+
+   error C2664: 'x_t::x_t(const struct x_t&)' : cannot convert parameter 1
+   from 'struct x_t*const ' to 'const struct x_t&'
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+   /* Compile options needed: none
+   */ 
+   struct x_t {
+     int i;
+     operator int() {return i;}
+   };
+
+   void func(const x_t& x)
+   {
+       int j = (int)x;     //C2664 should be generated on this line
+   }
+
+Additional query words: 1.00 2.00 2.10 2.20 7.00 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,2.20
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

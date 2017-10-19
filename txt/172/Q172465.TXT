@@ -1,0 +1,52 @@
+DOCUMENT:Q172465  08-APR-1999  [homemm]
+TITLE   :Bookshelf 98: "Licensed To" Field in About Box Is Empty
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Bookshelf 98, if you click About on the Help menu, the field under
+the text "This product is licensed to:" may be empty.
+
+MORE INFORMATION
+================
+
+Bookshelf 98 does not prompt you to enter your user name or company name during
+installation. Instead, this information is obtained from a key in the Registry.
+If this Registry key is empty or does not exist, the field under the text "This
+product is licensed to:" is left empty.
+
+
+Additional query words: multi media multimedia multi-media mm custserv register owner user kbimu
+
+======================================================================
+Keywords          : kbui kbimu kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

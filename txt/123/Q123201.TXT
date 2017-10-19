@@ -1,0 +1,75 @@
+DOCUMENT:Q123201  17-DEC-2000  [win95x]
+TITLE   :Bookshelf Atlas Map Printed on LaserJet III/IIISi Is Dithered
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a selected map from the Microsoft Bookshelf '94 Atlas to a
+Hewlett-Packard (HP) LaserJet III or IIISi, the printed map appears to contain
+dots or dithering. These dots do not occur when you print from Windows version
+3.1.
+
+CAUSE
+=====
+
+The Windows 95 Universal Printer Driver dithering option is set to a value other
+than None.
+
+RESOLUTION
+==========
+
+To print a non-dithered map, set the Windows 95 dithering option for the HP
+LaserJet III or IIISi to None. To change the dithering option, perform the
+following steps:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Use the right (secondary) mouse button to select the HP LaserJet III or IIISi
+   printer.
+
+3. Click Properties, then click the Graphics tab.
+
+4. Under Dithering, click None.
+
+5. Click OK.
+
+MORE INFORMATION
+================
+
+This behavior is caused by changes in the Windows 95 printing system. With the
+Windows 3.x HP printer driver, GDI.EXE is given a non-dithered bitmap to
+stretch; with the Windows 95 Universal Printer Driver, GDI.EXE is given a
+dithered bitmap to stretch, which results in the dithering pattern.
+
+Additional query words: spots dots dotted 3rdparty laser jet
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

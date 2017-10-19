@@ -1,0 +1,75 @@
+DOCUMENT:Q269240  18-APR-2002  [exchange]
+TITLE   :XCCC: Using Outlook 2000 to Change Conference Resource
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange 2000 Conferencing Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the different behavior that occurs if you use Microsoft
+Outlook 2000 to change resources and providers in an online conference that is
+currently running.
+
+MORE INFORMATION
+================
+
+Data Conference Service
+-----------------------
+
+ - If you use Outlook 2000 to change a Data Conference Service resource, if the
+   new or updated conference resource does not contain a Data Conference
+   Technology Provider (CTP) but the previous resource did, current participants
+   are disconnected from the data portion of the conference.
+
+ - If you add a Data CTP to the new resource, participants must rejoin to
+   participate in the data conference.
+
+Video Conference Service
+------------------------
+
+ - If you use Outlook 2000 to change a Video Conference Service resource, if the
+   new or updated conference resource does not contain a Video CTP but the
+   previous resource did, new clients cannot participate in the audio/video
+   conference.
+
+ - If you add a Video CTP to the new resource, participants must rejoin to
+   participate in the audio/video conference.
+
+If you change or modify the conference size, the changes take effect immediately.
+For example, if you reduce a conference size from ten participants to five on a
+specific conference resource, if there are seven participants who have already
+joined the conference, the additional two participants are not disconnected.
+However, new participants cannot join the conference.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange2000Search kbExchange2000ConfServ
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,59 @@
+DOCUMENT:Q140152  30-JUL-2001  [sms]
+TITLE   :Client Setup Fails to Find Windows If WINDIR is Incorrect
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run SMSLS.BAT or RUNSMS.BAT, Systems Management Server Client Setup is
+unable to find the Windows directory if the WINDIR environment variable is set
+to "\WINDOWS" instead of "C:\WINDOWS".
+
+CAUSE
+=====
+
+SMS uses multiple techniques to find the Windows directory. The first is to look
+at the WINDIR environment variable. If that does not work, it is supposed to
+follow the path looking for WIN.COM. However, if WINDIR does not point to the
+Windows directory, the second approach is not used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.0, 1.1 and 1.2. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: pcmwin pcmwin32 prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

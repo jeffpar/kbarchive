@@ -1,0 +1,79 @@
+DOCUMENT:Q169674  07-MAY-1999  [exchange]
+TITLE   :XADM: Read Receipt May Not Be Delivered If Message Read Offline
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you are working offline and read a message that requests a Read Receipt, the
+Read Receipt notification message should be sent the next time you connect to
+the computer running Microsoft Exchange Server. However, if you have exceeded
+your mailbox quota, the Read Receipt notification will not be delivered. In
+addition, a message similar to the following will be in the Deleted Items
+folder:
+
+   13:21:53 Synchronizing Mailbox 'John Doe'
+   13:21:53 Sending off-line mail
+   13:21:53 Error sending message
+   13:21:53[8004010F-501-0-0]
+   13:21:53The client operation failed.
+   13:21:53Microsoft Exchange Server Information Store
+   13:22:00 Synchronizing Folder 'Inbox'
+   13:22:011 item(s) updated in online folder
+   12:22:011 item(s) changed read-state in online folder
+   13:22:01 Synchronizing Views
+   13:22:01 Done
+
+CAUSE
+=====
+
+When the Read Receipt message is submitted to Microsoft Exchange Information
+Store (IS), the message is marked as a normal message, rather than a system
+generated message. Since the Read Receipt message appears to be a regular
+message, quota checks are performed against it. Because the quota check fails,
+the message is not sent.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

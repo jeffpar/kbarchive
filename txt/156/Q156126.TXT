@@ -1,0 +1,535 @@
+DOCUMENT:Q156126  19-FEB-2002  [win95x]
+TITLE   :Troubleshooting Windows 95 Using Safe Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2
+OPER/SYS:
+KEYWORDS:kbenv kbtshoot win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IMPORTANT: This article contains information about editing the registry. Before
+you edit the registry, you should first make a backup copy of the registry files
+(System.dat and User.dat). Both are hidden files in the Windows folder.
+
+Starting Windows 95 in Safe mode can help you resolve issues that occur when you
+start Windows 95 normally. These issues include (but are not limited to):
+
+ - Setup hangs during the first reboot
+
+ - Error messages
+
+ - Hanging
+
+ - Loss of functionality
+
+MORE INFORMATION
+================
+
+Starting Windows 95 in Safe mode bypasses the current real-mode configuration
+and loads a minimal protected-mode configuration, disabling Windows 95 device
+drivers and using the standard VGA display adapter.
+
+If the issue does not occur in Safe mode, you may be experiencing a conflict with
+hardware settings, real-mode configuration issues, incompatibilities with legacy
+Windows programs or drivers, or registry damage.
+
+For a description of the events that occur when you boot Windows 95 in Safe mode,
+see the following article in the Microsoft Knowledge Base:
+
+   Q122051 How Windows 95 Performs a Safe Mode Start
+
+PREPARING TO TROUBLESHOOT IN SAFE MODE
+--------------------------------------
+
+The procedures in the following sections describe steps to troubleshoot
+configurations in which Safe mode resolves an issue with Windows 95. Many of
+these troubleshooting steps require changes to system configuration files. These
+changes are not intended to be permanent; they should be used as techniques for
+isolating the conflict that resulted in an issue with the normal configuration.
+
+The examples in this article assume that Windows 95 has been installed in the
+Windows folder on drive C. Adjust the syntax as required by your configuration.
+
+Before you begin making changes, you should create an Emergency Boot Disk (EBD)
+if you do not already have one. You can use the EBD to restart the computer and
+edit the configuration files if any changes you make cause the computer to
+hang.
+
+To create an Emergency Boot Disk, follow these steps:
+
+1. In Control Panel, double-click Add/Remove Programs.
+
+2. Click the Startup Disk tab, and then click Create Disk.
+
+Once you have an EBD, shut down Windows 95, insert the EBD in drive A, and
+restart the computer. Make sure the computer can boot using the EBD. Restart the
+computer normally.
+
+Troubleshooting the Windows 95 configuration files may require that the files be
+edited. You can use the MS-DOS text editor or System Configuration Editor to
+edit these files.
+
+To use the MS-DOS text editor, type "edit.com" (without the quotation marks) at a
+command prompt, and then choose the Open command on the File menu to open the
+file you want.
+
+To use System Configuration Editor, click the Start button, click Run, type
+"sysedit" (without the quotation marks) in the Open box, and then click OK.
+Click the file you want to edit on the Window menu.
+
+TROUBLESHOOTING
+---------------
+
+The Safe-mode troubleshooting steps are broken into the following sections:
+
+ - Issues with the real-mode configuration
+
+ - Windows 95 command-line switches
+
+ - Windows configuration files and programs started automatically at startup
+
+ - Protected-mode device drivers
+
+ - Changing the video driver to the standard VGA display driver
+
+ - Registry damage
+
+ - If the problem persists
+
+ISSUES WITH THE REAL-MODE CONFIGURATION
+---------------------------------------
+
+Windows 95 bypasses the Config.sys and Autoexec.bat files in Safe mode. A
+real-mode device driver or terminate-and-stay-resident program (TSR) loading in
+one of these files may conflict with Windows 95, leading to the issues you are
+experiencing during a normal boot. The following steps can help you determine if
+this is the case.
+
+Test the Real-Mode Configuration:
+
+1. Restart the computer. When you see the "Starting Windows 95" message, press
+   the F8 key, and then choose Command Prompt Only from the Startup menu.
+
+   NOTE: If the Windows 95 graphical user interface (GUI) loads, edit the
+   Autoexec.bat file and remove or disable the "win" line.
+
+2. Start Windows 95 with a minimal set of Windows drivers by typing the
+   following line:
+
+   "win /d:m" (without the quotation marks)
+
+   NOTE: If networking components are required to start Windows 95, type the
+   following line instead of the line above:
+
+   "win /d:n" (without the quotation marks)
+
+If the issue does not occur when you start Windows 95 in this manner, you have
+determined that the real-mode and protected-mode configuration conflict.
+
+If the issue persists, the contents of the Config.sys or Autoexec.bat file may be
+at fault. You have determined that a conflict exists with the real-mode
+configuration, and you should perform a clean boot of the real- mode
+configuration.
+
+Clean Real-Mode Boot:
+
+Windows 95 does not require a Config.sys or Autoexec.bat file. These files are
+necessary only for backward compatibility. If you do not need these files,
+rename them and restart your computer. For example, rename the Autoexec.bat file
+to Autoexec.bak, and rename the Config.sys file to Config.bak.
+
+If the Config.sys and Autoexec.bat files are required, perform a clean boot of
+the real-mode configuration with the required drivers. To do so, follow these
+steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+   the F8 key, and then choose Step-By-Step Confirmation from the Startup menu.
+
+2. Load the following items when prompted:
+
+    - Dblspace driver (if the hard disk is compressed).
+
+    - Do not process the Config.sys file.
+
+    - Himem.sys.
+
+    - Ifshlp.sys.
+
+    - Dblbuff.sys (only if prompted).
+
+    - Do not process the Autoexec.bat file.
+
+    - Load the Windows 95 graphical user interface (GUI), choosing to load all
+      Windows drivers.
+
+If the clean boot of your real-mode configuration eliminates the issue, isolate
+the conflict with a TSR or real-mode device driver using the step- by-step
+confirmation function.
+
+WINDOWS 95 COMMAND-LINE SWITCHES
+--------------------------------
+
+Starting Windows 95 with command line switches is an effective method for
+isolating issues with your configuration. The switches should be used for
+troubleshooting only; use the information to modify your existing configuration
+and eliminate the conflict.
+
+1. Follow the instructions for a clean real-mode boot in the "Clean Real- Mode
+   Boot" section above, but do not load the Windows GUI.
+
+2. Start Windows 95 using the troubleshooting command-line switches by typing
+   the following line:
+
+   "win /d:fsvx" (without the quotation marks)
+
+Description of Command-Line Switches
+------------------------------------
+
+/D - Used for troubleshooting when Windows 95 does not start correctly.
+
+F - Disables 32-bit disk access. This is equivalent to disabling the hard disk
+controller(s) in Device Manager.
+
+S - Specifies that Windows 95 should not use ROM address space between F000:0000
+and 1 MB for a break point.
+
+V - Specifies that the ROM routine will handle interrupts from the hard disk
+controller. This is equivalent to the System.ini file setting of
+"VirtualHDIRQ=FALSE."
+
+X - Excludes all of the adapter area from the range of memory that Windows 95
+scans to find unused space. This is equivalent to the System.ini file setting of
+"EMMExclude=A000-FFFF." If this switch resolves the issue, you may have a
+conflict in the upper memory area (UMA) that requires an Exclude statement.
+
+NOTE: Each of the System.ini file entries referenced above belongs in the
+[386Enh] section of the System.ini file.
+
+WINDOWS CONFIGURATION FILES AND PROGRAMS STARTED AUTOMATICALLY
+--------------------------------------------------------------
+
+Windows 95 includes several methods for loading programs automatically. Starting
+in Safe mode prevents any programs from being started automatically.
+
+Windows 95 includes a Win.ini and System.ini file for backward compatibility with
+legacy programs and device drivers. Upgrading a previous installation of Windows
+3.x to Windows 95, as well as adding software, can lead to conflicts within the
+Windows configuration files.
+
+Determine If Issue Is Related to Program Starting at Startup:
+
+Load Windows 95 by booting to a command prompt and starting Windows 95 by typing
+"win" (without the quotation marks), holding down the SHIFT key for the duration
+of the boot. This prevents any programs from loading automatically at startup.
+
+If the issue is resolved by preventing programs from loading at startup,
+investigate the following possible sources:
+
+The Winstart.bat File:
+
+The Winstart.bat file is used to load TSRs that are required for Windows- based
+programs and are not needed in MS-DOS sessions.
+
+For more information concerning the Winstart.bat file, see the following article
+in the Microsoft Knowledge Base:
+
+   Q134402 Some TSRs Moved from Autoexec.bat to Winstart.bat During Setup
+
+The Win.ini File:
+
+The "load=" and "run=" lines in the [Windows] section of the file can start
+programs automatically. See the following section for more information.
+
+The Startup Group:
+
+If the issue is resolved by bypassing the Startup group, remove each of the
+programs from the Startup group individually to isolate the problem program.
+
+The Run Key in the Registry:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+You can prevent programs from loading by removing the program's string from the
+following registry key:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+Programs may also being loading from the following registry key:
+
+   HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+
+Test Windows Configuration Files:
+
+To test the Windows configuration files, follow these steps:
+
+1. Boot to a command prompt.
+
+2. Rename the Win.ini file by typing the following line:
+
+   "ren c:\windows\win.ini *.bak" (without the quotation marks)
+
+   Start Windows 95 by typing "win" (without the quotation marks). If this
+   procedure corrects the problem, ensure that the "load=" and "run=" lines in
+   the [Windows] section of the Win.ini file are either blank or preceded with a
+   semicolon (;) to prevent the items from loading.
+
+3. Rename the System.ini file by typing the following line:
+
+   "ren c:\windows\system.ini *.bak" (without the quotation marks)
+
+4. Windows 95 requires a System.ini file to load the graphical user interface
+   (GUI). Replace the original file by typing the following line:
+
+   "copy c:\windows\system.cb c:\windows\system.ini" (without the quotation
+   marks)
+
+   NOTE: Starting Windows 95 with the System.cb file does not load a driver for
+   the mouse. Edit the new System.ini file, adding the following lines:
+
+      [386Enh]
+      mouse=*vmouse, msmouse.vxd
+
+      [boot]
+      drivers=mmsystem.dll
+      mouse.drv=mouse.drv
+
+   Start Windows 95 by typing "win" (without the quotation marks) at the command
+   prompt. If replacing the original System.ini file with the System.cb file
+   corrects the issue, the problem most likely resides with either the [boot] or
+   [386Enh] sections of the original System.ini. Restore the original file to
+   troubleshoot it.
+
+   To isolate the cause of the problem, place a semicolon (;) at the beginning of
+   a line to prevent the item from loading.
+
+For more information about the System.ini file and its default entries, see the
+following article in the Microsoft Knowledge Base:
+
+   Q140441 Creating a New System.ini File Without Third-Party Drivers
+
+PROTECTED-MODE DEVICE DRIVERS
+-----------------------------
+
+Safe mode disables all protected-mode device drivers for Windows 95. Testing for
+incompatible components and resource conflicts can be conducted by disabling the
+protected-mode device drivers in Device Manager.
+
+Removing Protected-Mode Device Drivers to Isolate Conflicts:
+
+1. In Control Panel, double-click System.
+
+2. Click the Device Manager tab, and click the View Devices By Type option.
+
+3. Disable each of the protected-mode device drivers. For example:
+
+   a. Double-click the Floppy Disk Controllers branch to expand it.
+
+   b. Click Standard Floppy Disk Controller, and then click Properties.
+
+   c. On the General tab, click the Original Configuration (Current) check box
+      to clear it, and then click OK.
+
+      NOTE: If you have enabled hardware profiles, there is a check box for each
+      of the configurations. Clear the check box for the hardware profile you
+      are troubleshooting.
+
+      If there is no Original Configuration (Current) check box, click the
+      Disable in This Hardware Profile check box to select it.
+
+      NOTE: In Windows 95 OSR2, the user interface has changed. Click the Disable
+      In This Hardware Profile check box to select it to disable a protected
+      mode driver.
+
+   d. Repeat steps A-C for each device in Device Manager.
+
+4. Click Close, and then restart the computer.
+
+If the issue is resolved by disabling the protected-mode drivers in Device
+Manager, you may have a hardware conflict or a driver may be incompatible with
+your hardware. For more information about troubleshooting resource conflicts in
+Windows 95, see the following article in the Microsoft Knowledge Base:
+
+   Q133240 Troubleshooting Device Conflicts with Device Manager
+
+If you determine that a Windows 95 protected-mode device driver is incompatible
+with your hardware, contact the hardware vendor to determine the availability of
+new drivers.
+
+CHANGING THE VIDEO DRIVER TO STANDARD VGA DISPLAY DRIVER
+--------------------------------------------------------
+
+NOTE: If you followed the directions in the previous section ("Removing
+Protected-Mode Drivers to Isolate Conflicts"), you changed the display driver to
+VGA, and you can skip to the next section. Disabling the display adapter sets
+your video to the VGA driver.
+
+Safe mode starts Windows 95 with the VGA display driver. To determine if the
+issue you are experiencing is related to your video driver, change to the VGA
+driver for testing purposes.
+
+NOTE: To ensure a safe return to your previous configuration:
+
+ - Back up the System.ini file.
+
+ - Note the current desktop area (resolution) and color palette.
+
+ - Record the name of your current video adapter.
+
+To change to the VGA display driver, follow these steps:
+
+1. Start Windows 95 in Safe mode.
+
+2. In Control Panel, double-click Display.
+
+3. On the Settings tab, click Change Display Type.
+
+4. In the Adapter Type area, click Change.
+
+5. Click the Show All Devices option.
+
+6. In the Manufacturers box, click (Standard Display Types). In the Models box,
+   click Standard Display Adapter (VGA), and then click OK.
+
+7. Click OK or Close until you return to Control Panel. When you are prompted to
+   restart your computer, do so.
+
+If you determine that your video driver is incompatible with Windows 95, contact
+the hardware vendor to determine the availability of new drivers.
+
+REGISTRY DAMAGE
+---------------
+
+When you start Windows 95 in Safe mode the registry is read minimally. Damage to
+the registry may not be evident when running in Safe mode; it may be necessary
+to replace the existing registry (System.dat) with a backup to determine if the
+issue is caused by a damaged registry. To troubleshoot a damaged registry,
+follow these steps:
+
+1. Boot to a command prompt.
+
+2. Type the following line to remove the file attributes from the backup of the
+   registry:
+
+   "c:\windows\command\attrib -h -s -r c:\system.1st" (without the quotation
+   marks)
+
+3. Remove the file attributes from the current registry by typing:
+
+   "c:\windows\command\attrib -h -s -r c:\windows\system.dat" (without the
+   quotation marks)
+
+4. Rename the registry by typing:
+
+   "ren c:\windows\system.dat *.dax" (without the quotation marks)
+
+5. Copy the backup file to the current registry by typing:
+
+   "copy c:\system.1st c:\windows\system.dat" (without the quotation marks)
+
+6. Restart your computer.
+
+   NOTE: The System.1st file is a backup of the registry created during the final
+   stage of Windows 95 Setup. Therefore, the "Running Windows 95 for the first
+   time" banner is displayed and Windows 95 finalizes settings as if it were
+   being installed.
+
+If replacing the System.dat file with the System.1st file resolves the issue, the
+problem may be related to registry damage. Programs and device drivers added
+after Windows 95 was installed may require reinstallation to update the new
+registry.
+
+If the issue is not resolved, restore the original registry. To do so, follow
+these steps:
+
+1. Restart the computer to a command prompt.
+
+2. Type the following lines:
+
+   "c:\windows\command\attrib -s -h -r c:\windows\system.dat
+
+   copy c:\windows\system.dax c:\windows\system.dat" (without the quotation
+   marks)
+
+3. Restart the computer.
+
+The Windows 95 CD-ROM includes tools for backing up your system files as well as
+the registry. For more information about these tools, see the following articles
+in the Microsoft Knowledge Base:
+
+   Q139437 Windows 95 Emergency Recovery Utility
+
+   Q135120 Configuration Backup Tool for Backing Up the Registry
+
+IF THE PROBLEM PERSISTS
+-----------------------
+
+If the troubleshooting steps outlined in this article do not resolve the issue,
+the issue may be related to one or more of the following items:
+
+ - Faulty hardware
+
+ - The computer requires a special machine switch for HIMEM.SYS
+
+ - CMOS settings may need to be changed (such as disabling shadow RAM)
+
+ - The system ROM BIOS may require an upgrade to be compatible with Windows 95
+
+ - A virus
+
+ - An unsuccessful upgrade of a previous Windows installation
+
+To determine if Windows 95 is compatible with your current system configuration
+it may be necessary to install Windows 95 to a clean directory.
+
+If you have enough free disk space, install Windows 95 to an empty folder (such
+as a Win95 folder). For information about how to do so, see the following
+article in the Microsoft Knowledge Base:
+
+   Q142096 How to Reinstall Windows 95 to a New Folder
+
+If this resolves the issue, your previous installation may have included
+components incompatible with Windows 95.
+
+
+Consult your computer's documentation or manufacturer for information about
+modifying the CMOS settings and the availability of BIOS upgrades.
+
+Additional query words: tshoot w95use
+
+======================================================================
+Keywords          : kbenv kbtshoot win95 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2
+Version           : :2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

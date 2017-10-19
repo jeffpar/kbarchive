@@ -1,0 +1,63 @@
+DOCUMENT:Q78949  06-DEC-1999  [win95x]
+TITLE   :Toshiba HARDRAM Battery Back-Up RAM and Permanent Swap File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Toshiba HARDRAM battery back-up RAM causes the following system error when a
+permanent swap file has been set up on the RAM drive
+
+   Unable To Read From Drive:x
+
+where x is the assignment for the HARDRAM drive.
+
+The following line must be added to the [386Enh] section of the SYSTEM.INI file:
+
+   VirtualHDIrq=off
+
+MORE INFORMATION
+================
+
+The Toshiba HARDRAM is a battery-backed-up, RAM-based RAM drive. The battery
+backup allows information stored in the HARDRAM chips to be retained when the
+computer is rebooted or turned off.
+
+The VirtualHDIrq=<Boolean> switch allows Windows in 386 enhanced mode to
+terminate interrupts from the hard disk controller, bypassing the ROM routine
+that handles these interrupts. Some hard drives might require that this setting
+be disabled for interrupts to be processed correctly. If this setting is
+disabled, the ROM routine handles the interrupts.
+
+Additional query words: 3.0 3.00 3.0a 3.00a swapfile 3.1 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

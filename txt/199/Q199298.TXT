@@ -1,0 +1,59 @@
+DOCUMENT:Q199298  22-JUN-2001  [exchange]
+TITLE   :XCLN: Appointments Marked Private Can Be Viewed by Delegate
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If a delegate copies a calendar locally that is owned by another user, the
+delegate can view details of the calendar owner's private appointments and
+meetings.
+
+MORE INFORMATION
+================
+
+The Outlook client is designed to filter appointments that are marked private,
+so that only the intended creator or recipient can view a private appointment in
+the calendar. This filtering process prevents delegates from viewing the
+contents of private items that are intended for the original creator or
+recipient only. After a delegate copies the calendar, the Outlook client ignores
+this sensitivity property, and the private items in the calendar are displayed
+for the delegate.
+
+
+Additional query words: OL97, OL98
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

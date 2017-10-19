@@ -1,0 +1,72 @@
+DOCUMENT:Q151044  04-OCT-2001  [frontpg]
+TITLE   :FP: Error HTTP 404 if Page URL Contains a Space
+PRODUCT :Word Front Page
+PROD/VER:windows:1.0,1.1,97
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194255.
+
+SYMPTOMS
+========
+
+When you attempt to view a Uniform Resource Locator (URL) that contains spaces,
+you may receive one of the following error messages:
+
+   HTTP/1.0 404 Object Not Found.
+
+   -or-
+
+   HTAccess: Error accessing "url": HTTP: file/directory does not exist.
+
+
+CAUSE
+=====
+
+Some browsers do not support spaces in the URL.
+
+MORE INFORMATION
+================
+
+FrontPage Editor displays the following warning message when you attempt to save
+a page with an invalid URL
+
+   "<file name>.htm" is not a valid Page URL for the current Web. Do
+   you want to save the page with this URL?"
+
+where <file name> is the name of your file. If you receive this message
+when saving a file, you should choose a file name that does not contain spaces
+so that any browser can display your page.
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : windows:1.0,1.1,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

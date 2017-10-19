@@ -1,0 +1,59 @@
+DOCUMENT:Q91699  07-NOV-1999  [pcmail]
+TITLE   :PC Win OS2: Virus Message on Dual-Boot Systems
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may see the following incorrect error message when you start the Windows
+client of Microsoft Mail for PC Networks, after you install both it and the
+Presentation Manager client for OS/2 on a system that boots both MS- DOS and
+OS/2:
+
+   Mail will not run because someone has tampered with the program files. Check
+   your machine for viruses and run setup to reinstall Mail.
+
+CAUSE
+=====
+
+The Setup program for both clients stamps MSMAIL.EXE and changes the size of the
+file. This causes the program to think that it has been infected with a virus.
+
+RESOLUTION
+==========
+
+Install the Windows and Presentation Manager clients in two separate
+directories.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

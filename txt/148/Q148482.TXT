@@ -1,0 +1,65 @@
+DOCUMENT:Q148482  13-JUN-2001  [homemm]
+TITLE   :Bookshelf 96-97: Missing Text with High Contrast Color Scheme
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Windows 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select the Windows "High Contrast Black" display color scheme, Print
+dialog box text may not be visible.
+
+CAUSE
+=====
+
+Bookshelf does not use standard Windows colors when it displays the Print
+dialog.
+
+WORKAROUND
+==========
+
+Select a different color scheme.
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the '96-'97 edition of Microsoft
+Bookshelf for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 96-97 multi media multimedia multi-media mmtitles kbmm missing blank nothing displayed black white
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeMMsearch kbBookshelfSearch kbBookShelf1996 kbBookShelf1997
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

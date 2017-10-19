@@ -1,0 +1,178 @@
+DOCUMENT:Q184296  02-APR-2000  [sna]
+TITLE   :List of Bugs Fixed in SNA Server 3.0 Service Pack 3
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is a current listing of the article numbers for bugs that were
+fixed in SNA Server 3.0 Service Pack 3. Use the Qxxxxxx number that precedes the
+title of the bug fix to query the Microsoft Knowledge Base to find an article
+about that bug.
+
+NOTE: If an article appears in the Readme.txt file for the Service Pack, but does
+not appear in the following list, it is because the article was mistakenly added
+to the Readme.txt file
+
+MORE INFORMATION
+================
+
+   Q167666 SNA TN3270 Access Violation, Event ID 5
+   Q175109 3270 Users Fail to Get Sessions to SNA 3.0 After 2.11 Upgrade
+   Q175271 SNA 3.0 SP2 Hang or Access Violation in SNA Server or SnaBase
+   Q175272 Windows 3.x CPIC or APPC Fails; Host Sends Sense Code 10086040
+   Q175273 SNA Server Leaks Memory If Detailed Logging Is Enabled
+   Q175336 3270 User Connects to Host Session of Previous User
+   Q175341 Multipage LU3 Print Jobs Don't Form Feed Correctly
+   Q175384 TN3270 Client Hangs with Keyboard Locked on Some Host Screens
+   Q175397 Shared Folders Gateway Should Check If Path Uses Long Filenames
+   Q175773 SNACFG Does Not Add an LUA Pool to a TN3270 Server
+   Q175778 Invalid Page Fault in Wappc32.dll Using WinAPPCSetBlockingHook
+   Q175942 Support Windows NT Services Using SNA Windows 95 Client
+   Q176019 SNA Windows 95 Client Support for Multiple Users on Windows NT
+   Q176020 SNA Server Starts Slowly When Configured with 15000 3270 LUs
+   Q176160 APPC/CPI-C Apps Fail After SNA Server Gets UNBIND Type X'0A'
+   Q176188 SNA Link Access Violation in ibmx25!os,wtime
+   Q176280 TN3270 Name Resolution Requires Fully Qualified Domain Names
+   Q176574 Correlation Error Causes Unexpected Loss of TN3270(E) Sessions
+   Q176767 SNA Print Service Prints 80 Columns per Line Instead of 132
+   Q176768 SNA Server PU/LU Reactivation Fails After VTAM Z NET CANCEL
+   Q176849 SNA Server Logs Events 684 and 685 When Using SDLC Connection
+   Q176953 Host Print Transform Dialog Accepts and Sends Lowercase to AS400
+   Q177488 SNA Client Takes Longer to Connect Than Normal
+   Q177564 TN3270 Server Access Violation in SRSGetSpecificResource
+   Q177579 SNA Client Loses One TCP/IP Address on a Multihomed Server
+   Q177580 LU1 Print Jobs Formatted Incorrectly when Using Bypass GDI, PDT
+   Q177639 MngAgent Event 5137: Internal Error - Allocation Failed
+   Q177640 16 or More Link Services of Same Type Show Incorrect Name
+   Q177898 Dragging LUs Between Pools of the Same Type Does Not Work
+   Q177899 Dependent LU6.2 Bind Rejected with Sense Code 0835
+   Q178071 Disable SNA Admin/Manager Support for Windows NT Clients
+   Q178074 RUI,TERM Fails to Return When lua,resv56[2] Is Set in RUI,INIT
+   Q178089 Thorn,Icelandic,Capital cannot be Mapped to a Macro in a PDF
+   Q178126 SNA NT Clients Should not Fall Back to Named Pipes
+   Q178248 Access Violation in SNAPRINT.EXE When Link Outage Occurs
+   Q178252 Control Unit Image Number Not Available to ESCON Link Service
+   Q178253 SNA Server Access Violation in function s1pcsgm.
+   Q178254 SNA Server Access Violation in Function S1practs
+   Q178255 SNA Server May Fail to Log Event 624 and Create Snadump.log
+   Q178256 LUA Program Hangs After Receiving Exception Request (EXR)
+   Q178492 SNA 3.0 TN3270 or TN5250 Server Traps When Configuration Saved
+   Q178493 SNA Server Status Shows "Off Line" Even Though It's Active
+   Q179018 OPEN SSCP RSP ERROR Returns Err1: 000F and Err2: 0003
+   Q179860 APPC Session Viewer Incorrectly Reads Some Registry Entries
+   Q180052 SNA Server Access Violation in Function s1pucosp
+   Q180053 SNA Server Access Violation in Function S1pimcrc
+   Q180137 Code Conversion Table For PRC Has Duplicate Mappings
+   Q180148 French Support for Host Security
+   Q180149 LU3 Print Jobs May Fail to Print After Initial Job Completes
+   Q180150 LU3 Print Job Fails If Data Includes X'27' Control Codes
+   Q180230 Windows NT or Win95 Client Sponsor Connection Returns Err. Msg.
+   Q180392 Uninstall Button Is Not Displayed On Windows NT 3.51
+   Q180415 Sense Code in FMH-7 Message Is Not Returned to APPC Application
+   Q180416 APPC or CPI-C TPs May Fail When Using Dependent LU 6.2 Sessions
+   Q180467 SNA Client Does Not Retry Other Sponsors After Error Response
+   Q180469 Print Server Access Violation When Starting First Session
+   Q180470 Scale Font Option Not Working for SNA Server Print Server
+   Q180489 APPC Partnership Changes May Cause SNA Manager to Disappear
+   Q180537 TPs Can't Be Invoked On Windows 95/NT Clients if One TP Ends
+   Q180538 SNA Server SDLC Connection Fails to Reactivate After Host IPL
+   Q180574 Client Fails if WNAP Started Using /User: and /Pwd: Options
+   Q180619 SNA Server Stops After Logging Event 684 and 685.
+   Q180620 APPC or CPIC Performance Is Degraded When Using Host Security
+   Q180620 APPC or CPIC Performance Is Degraded When Using Host Security
+   Q180621 Symbol Files for 5250 Applet Not Available with SNA Server 3.0
+   Q180664 SNACFG Fails To Create Print Session When a PDT Is Specified
+   Q180665 SNA Server Code Conversion Between 037 And 932 does not work
+   Q180693 IPX Clients Fail to Obtain A Sponsor Connection
+   Q180701 CPIC Application CMINIT May Stop on SNA Windows NT Client
+   Q180703 SLI,BID May Return LUA,CANCELLED LUA,TERMINATED
+   Q180704 SLI,CLOSE May Hang if CICS Doesn't Respond to SHUTC
+   Q180705 APPC DISPLAY Call May Return AP,COMM,SUBSYSTEM,ABENDED.
+   Q180706 Incoming X.25 Host Connection Indicates Primary Link Role
+   Q180708 SLI,OPEN May Fail With LUA,STATE,CHECK LUA,NO,SLI,SESSION
+   Q180728 SNA Manager Traps When Assigning Multiple LUs to a Workstation
+   Q180729 Handle Leak in SNAUDB.EXE
+   Q180788 Changing User Rights Isn't Recognized Until Snabase is Restarted
+   Q180790 Print Server Traps or Cannot Load Ppdxxxx.dll on NT3.51-J SP5
+   Q180791 An ATTACH May Fail When Using Set,CPIC,Side,Information
+   Q180792 Print Server Logs Event 4103 as a Stop Event
+   Q180862 Single Form Feed Sent by Host on LU3 Print Session Is Ignored
+   Q180863 Print Server May Experience Occasional Performance Degradation
+   Q180864 Print Sessions Stop with Host Print Service
+   Q180865 Print Server Adds Space After Form Feed
+   Q180866 Persistent Verification Support for APPC Sessions
+   Q180867 SNA Server Fails to Map Host User ID/Password
+   Q180868 SFGW May Trap When Creating New Devices in SQL Manager
+   Q180869 Unable to Start Print Sessions Until Print Service Restarted
+   Q180874 Control Unit Image Number Should be a 1 Digit Field
+   Q180929 TN3270 Client Ignoring Keyboard Lock
+   Q180930 Access Violation in SNA Manager When Editing DLS Properties
+   Q180931 MicroGate SDLC Adapter is Not Being Allowed Time to Reset DSR
+   Q180935 Distributed Link Service Reactivation Fails with Event 77,x0AFF
+   Q180937 Reset Button Problems in Print Session Properties
+   Q180938 Unable to Activate Multiple DLS Connections Using the Same SAP
+   Q180939 Unable to Start Print Session After Changing Session Name
+   Q180940 Unable to Use Host Print Transform After Applying SP2
+   Q180941 APPC Printing Misinterprets ASCII Data
+   Q180949 Windows 95 Client Retrieves Wrong Password from the Cache
+   Q180950 3270 Single Sign-on Keywords MS$SAMEU & MS$SAMEP Not Documented
+   Q180951 Pool Name Not Displayed in the 3270 LU "Assigned To" Field
+   Q180953 Err Msg: "Missing Component" When Applying Service Pack
+   Q180954 Allocation of Print Server Threads May Cause Delays
+   Q181025 Print Server Doesn't Support Vertical Channel Select SCS Code
+   Q181026 New SNA Print Server Tracing Option
+   Q181027 Closing Subdomain Causes Dr. Watson in CSnaItem:Terminate
+   Q181028 Print Server Resets LPI During Print Job
+   Q181030 SNAPRINT Ignores SCS Codes, Print Job Ignores SCS Formatting
+   Q181031 Callback Verbs Documented Incorrectly in the LUA SNA SDK
+   Q181099 Some SNACFG Options Fail using a German version of Windows NT
+   Q181100 Print Server Incorrectly Handles DBCS Codes in SCS Datastream
+   Q181121 Enhanced Event Logging for SNA Server Event 9,12
+   Q181132 Configuring Host Print Transform May Cause an Extra Form Feed
+   Q181133 Win95 Host Account Manager on WinNT Fails to Copy UDSUPPNT.DLL
+   Q181134 The Service Pack Uninstall Does Not Check for Active Processes
+   Q181135 CNOS Failure if Accessing A Control Block that is not Present
+   Q182332 SNA Clients Experience Delay Connecting to Multihomed Server
+   Q182375 API or Message Tracing May Cause SNA Server Process to Hang
+   Q182544 Host Security, Memory Leaks, Database Corruption, Event Logging
+   Q182714 StartDoc and OpenPrinter Fail to Return Correct Error Codes
+   Q183238 SNARAS Logs Events 101, 102, and 201 When Dialing Out
+   Q183239 Application Exception in Rasman.exe in Function SnaRasUnbind()
+   Q183240 Master and Backup Host Account Databases Not in Sync
+   Q183241 Host Account Cache Database Shows High CPU Utilization
+
+Additional query words: servpack
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP3
+Version           : WINDOWS:3.0,3.0 SP3
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

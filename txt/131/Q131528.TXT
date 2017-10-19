@@ -1,0 +1,69 @@
+DOCUMENT:Q131528  15-FEB-2000  [foxpro]
+TITLE   :PRB: Dynamic Grid Properties Don't Appear in Property Sheet
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+None of the dynamic properties for a Grid, such as DynamicAlignment,
+DynamicBackColor, DynamicCurrentControl, DynamicFontBold, DynamicFontItalic,
+DynamicFontName, and DynamicForeColor, are displayed in the Property sheet.
+
+CAUSE
+=====
+
+The dynamic properties apply to the Grid columns, not to the grids. They are
+available only for Grid columns, not for the grid itself.
+
+WORKAROUND
+==========
+
+If you set the Grid ColumnCount to at least 1, the Dynamic Properties are
+available for the column(s). If you do not set the Grid ColumnCount to at least
+1, the Dynamic properties for the Grid columns can only be specified in a
+program. To see a code sample, please see the code example in the "Grid Control"
+topic in the Visual FoxPro Help menu.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+For more information about controlling grids, refer to the Grid Control topic in
+Visual FoxPro's online Help.
+
+Additional query words: VFoxWin Layout DynamicFontOutline DynamicFontShadow DynamicFontSize DynamicFontStrikethru DynamicFontUnderline
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

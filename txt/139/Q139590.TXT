@@ -1,0 +1,62 @@
+DOCUMENT:Q139590  18-DEC-1999  [sms]
+TITLE   :SMS Despooler May GP Fault with No Distribute Phase
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork sms
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a Run Command On Workstation job that has no distribute phase
+selected, a General Protection Fault (GPF) or Access Violation occurs with the
+SMS Executive Service.
+
+CAUSE
+=====
+
+This occurs when a command line is sent to a workstation but there is no actual
+package needed to perform the command. There must be at least one file in the
+package source, but this source does not need to be placed on a distribution
+server.
+
+When the despooler thread of the SMS Executive attempts to manipulate the list of
+distribution servers, it finds an empty list and would end abnormally.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork sms 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

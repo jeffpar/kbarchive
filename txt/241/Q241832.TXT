@@ -1,0 +1,63 @@
+DOCUMENT:Q241832  31-JUL-2001  [iis]
+TITLE   :Err Msg: 401.4 Unauthorized: Authorization Denied by Filter
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp4014 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Digest Authentication in Internet Information Services version 5.0,
+and a user navigates to your Web site, the following error message may be
+received by the user when they attempt to log in:
+
+   401.4 Unauthorized: Authorization denied by filter.
+
+CAUSE
+=====
+
+This error typically occurs because the user's password is either not stored in
+reversible encryption, or the password has not been reset (in order for the
+hashing to take place).
+
+MORE INFORMATION
+================
+
+For additional information about Digest Authentication, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q222028 Setting Up Digest Authentication for Use with Internet Information
+   Services 5.0
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp4014 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

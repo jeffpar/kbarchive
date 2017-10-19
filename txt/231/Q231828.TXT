@@ -1,0 +1,96 @@
+DOCUMENT:Q231828  12-JUN-2001  [homegame]
+TITLE   :Midtown 1.0/2.0: Description of the Troubleshooting Shortcuts
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbsound kbtool kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Midtown Madness, version 1.0 
+ - Microsoft Midtown Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the troubleshooting shortcuts that are installed with
+Microsoft Midtown Madness and Microsoft Midtown Madness 2.
+
+MORE INFORMATION
+================
+
+When you install Midtown Madness or Midtown Madness 2, Setup creates several
+troubleshooting shortcuts in the Midtown Madness folder.
+
+By default, Midtown Madness is installed in the following folder:
+
+   C:\Program Files\Microsoft Games\Midtown Madness
+
+By default, Midtown Madness 2 is installed in the following folder:
+
+   C:\Program Files\Microsoft Games\Midtown Madness 2
+
+You can use these troubleshooting shortcuts to troubleshoot problems you may
+encounter when you play the game.
+
+Midtown Safe Mode or Midtown2 Safe Mode
+---------------------------------------
+
+This shortcut disables the introductory movie, forces the video adapter to be
+redetected by the game, and uses the software renderer in the game.
+
+Use this shortcut if you think there is a conflict between Midtown Madness and
+the video adapter installed in the computer.
+
+No Movie
+--------
+
+This shortcut disables the introductory movie.
+
+Use this shortcut if you do not want to watch the introductory movie, or if you
+encounter problems when the introductory movie is being played.
+
+No Sound
+--------
+
+This shortcut disables the introductory movie and disables sound in the game.
+
+Use this shortcut if you think there is a conflict between Midtown Madness and
+the audio adapter installed in the computer.
+
+Redetect Video
+--------------
+
+This shortcut forces Midtown Madness to redetect the video adapter installed in
+the computer each time you start the game.
+
+Use this shortcut if you have recently installed a new video adapter or video
+driver and you think the adapter or driver was not properly detected by the
+game.
+
+Additional query words: 1.00 mid-town midmad midmad2 midtown2 tshooters troubleshooters links icons card
+
+======================================================================
+Keywords          : kbdisplay kbenv kbsound kbtool kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbMidtownMadSearch kbMidtownMadness kbMidtownMadness2
+Version           : :1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

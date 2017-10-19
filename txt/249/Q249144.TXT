@@ -1,0 +1,230 @@
+DOCUMENT:Q249144  05-APR-2002  [vbwin]
+TITLE   :HOWTO: Identify the CE Device Connected to the Desktop Machine
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.0,2.11,2.12,3.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAPI kbSDKWin32 kbToolkit kbVBp500 kbVBp600 kbOSWinCEsearch kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - the operating system: Microsoft Windows CE, versions 2.0, 2.11, 2.12, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to call the RAPI functions in Visual Basic to
+retrieve the identification information from the registry on the remote Windows
+CE device connected to the desktop. The application will run on the desktop and
+requires that the desktop machine communicate with the Windows CE device using
+either Windows CE Services version 2.x or ActiveSync version 3.x.
+
+MORE INFORMATION
+================
+
+1. Start a new Standard EXE in Visual Basic. Form1 is created by default.
+
+2. Add a CommandButton (Command1) to Form1.
+
+3. Paste the following into the code module of Form1:
+
+   Option Explicit
+
+   Private Sub Form_Load()
+       Command1.Caption = "Get connected device name"
+   End Sub
+
+   Private Sub Command1_Click()
+       Dim lret As Long
+       Dim lcon As Long
+       
+       ' Initialize RAPI
+       lcon = ConnectRapi
+       If lcon <> ERROR_SUCCESS Then
+          MsgBox "Failure to initialize RAPI"
+       Else
+          MsgBox "RAPI was initialized successfully"
+       End If
+       
+       ' Retrieve the registry information on the remote device
+       lret = ReadCEREgistry
+       
+       ' Uninitialize RAPI
+       lcon = DisconnectRapi
+       If lcon <> ERROR_SUCCESS Then
+          MsgBox "Failure to uninitialize RAPI"
+       Else
+          MsgBox "RAPI was uninitialized successfully"
+       End If
+          
+   End Sub
+
+4. From the Project menu, choose Add Module. Module1 will be added to the
+   project.
+
+5. Paste the following code into Module1:
+
+   Public Const HKEY_CLASSES_ROOT = &H80000000
+   Public Const HKEY_CURRENT_USER = &H80000001
+   Public Const HKEY_LOCAL_MACHINE = &H80000002
+   Public Const ERROR_SUCCESS = 0
+   Public Const REG_DWORD = 4        '32-bit number.
+   Public Const REG_SZ = 1
+
+   Type RAPIINIT
+       cbsize As Long
+       heRapiInit As Long
+       hrRapiInit As Long
+   End Type
+
+   Declare Function CeRapiUninit Lib "rapi.dll" () As Long
+
+   Declare Function CeRapiInitEx Lib "rapi.dll" ( _
+       pRapiInit As RAPIINIT) As Long
+       
+   Declare Function CeRegOpenKeyEx Lib "rapi.dll" ( _
+       ByVal hkey As Long, _
+       ByVal lpSubKey As Long, _
+       ByVal ulOptions As Long, _
+       ByVal samDesired As Long, _
+       phkResult As Long) As Long
+       
+   Declare Function CeRegQueryValueEx Lib "rapi.dll" ( _
+       ByVal hkey As Long, _
+       ByVal lpValueName As Long, _
+       ByVal lpReserved As Long, _
+       lpType As Long, _
+       ByVal lpdata As Long, _
+       lpcbData As Long) As Long
+       
+   Declare Function CeRegQueryValueExLong Lib "rapi.dll" _
+       Alias "CeRegQueryValueEx" ( _
+       ByVal hkey As Long, _
+       ByVal lpValueName As Long, _
+       ByVal lpReserved As Long, _
+       lpType As Long, _
+       lpdata As Long, _
+       lpcbData As Long) As Long
+       
+   Declare Function CeRegQueryValueExString Lib "rapi.dll" _
+       Alias "CeRegQueryValueEx" ( _
+       ByVal hkey As Long, _
+       ByVal lpValueName As Long, _
+       ByVal lpReserved As Long, _
+       lpType As Long, _
+       ByVal lpdata As Long, _
+       lpcbData As Long) As Long
+
+   Declare Function CeRegCloseKey Lib "rapi.dll" ( _
+       ByVal hkey As Long) As Long
+
+   ' Initialize RAPI
+   Function ConnectRapi() As Long
+       Dim lcon As Long
+       Dim lRapiInit As RAPIINIT
+       
+       With lRapiInit
+           .cbsize = Len(lRapiInit)
+           .heRapiInit = 0
+           .hrRapiInit = 0
+       End With
+       
+       lcon = CeRapiInitEx(lRapiInit)
+       ConnectRapi = lcon
+   End Function
+
+   ' Uninitialize RAPI
+   Function DisconnectRapi() As Long
+       Dim lcon As Long
+       lcon = CeRapiUninit
+       DisconnectRapi = lcon
+   End Function
+
+   ' Read the registry on the CE device
+   Function ReadCEREgistry() As Long
+       Dim lret As Long
+       Dim phkResult As Long
+       Dim lpType As Long
+       Dim lpdata As String
+       Dim lpvalue As Long
+       Dim lpcbData As Long
+       Dim data As String
+       Dim key As String
+       Dim lpdwdisposition As Long
+       Dim value As String
+       
+       key = "Ident"
+       lret = CeRegOpenKeyEx(HKEY_LOCAL_MACHINE, StrPtr(key), _
+                             0, 0, phkResult)
+       
+       If lret <> ERROR_SUCCESS Then
+           MsgBox "Failure to open key.  Error: " & lret
+       Else
+           value = "Name"
+           lret = CeRegQueryValueEx(phkResult, StrPtr(value), _
+                                    0, lpType, 0, lpcbData)
+           Select Case lpType
+               ' -- For strings
+               Case REG_SZ:
+                   ' Allocate string space
+                   lpdata = String(lpcbData, 0)
+                   
+                   ' Query the string value
+                   lret = CeRegQueryValueExString(phkResult, StrPtr(value), _
+                             CLng(0), lpType, StrPtr(lpdata), lpcbData)
+                             
+                   If lret = ERROR_SUCCESS Then
+                       MsgBox "The name of the currently connected " & _
+                               "device is " & Left(lpdata, lpcbData - 1)
+                   Else
+                       MsgBox "Your device does not have a name"
+                       lpdata = ""
+                   End If
+                   
+               '-- For DWORDS
+               Case REG_DWORD:
+                   lret = CeRegQueryValueExLong(phkResult, StrPtr(value), _
+                           CLng(0), lpType, lpvalue, lpcbData)
+                   If lret = ERROR_SUCCESS Then MsgBox lpvalue
+                   
+               ' -- All other data types not supported
+               Case Else
+                   lret = -1
+           End Select
+       End If
+       
+       ReadCEREgistry = lret
+   End Function
+
+6. Press F5 to run the application.
+
+7. Click Command1 and you should get 3 messages showing the status of RAPI
+   initialization, the device's name, and the status of RAPI uninitialization.
+
+Additional query words: RAPI wce vbce vbce6 eVB
+
+======================================================================
+Keywords          : kbAPI kbSDKWin32 kbToolkit kbVBp500 kbVBp600 kbOSWinCEsearch kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbOSWinCE200 kbOSWinCE211 kbOSWinCE212 kbOSWinCE300 kbZnotKeyword7 kbOSWinCESearch
+Version           : :2.0,2.11,2.12,3.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

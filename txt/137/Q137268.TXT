@@ -1,0 +1,72 @@
+DOCUMENT:Q137268  13-JUN-2001  [sna]
+TITLE   :List of Systems SNA Server Can Connect To
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server is designed to connect to IBM mainframes and AS/400s, however, SNA
+Server can connect to the following end systems, too:
+
+NOTE: This list does not include cluster controllers or other intermediary
+devices.
+
+ - IBM mainframes (all types: S/360, S/370, S/390, ES/9000, etc.)
+
+ - IBM plug-compatible mainframes running IBM host software:
+    - Amdahl
+
+    - Fujitsu
+
+    - Hitachi
+
+    - Other systems
+
+ - Tandem hosts running SNA
+
+ - IBM AS/400s
+
+ - Fujitsu hosts running FNA (with SNA Server 2.11-J)
+
+ - Hitachi hosts running HNA (with SNA Server 2.11-J)
+
+ - IBM OS/2 Comm Manager or Extended Services (through APPC)
+
+ - Unix-based SNA gateway products (through APPC)
+
+ - RS/6000 (running IBM SNA Services)
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbsetup 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

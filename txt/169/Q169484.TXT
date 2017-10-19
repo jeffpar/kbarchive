@@ -1,0 +1,75 @@
+DOCUMENT:Q169484  17-JUL-2001  [visualc]
+TITLE   :FIX: CString::MakeUpper and MakeLower Don't Work with Some Char
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbVC500bug kbVC500SP1fix kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual Studio 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MakeUpper() and MakeLower() in Visual C++ 5.0 do not convert the extended
+characters, such as A (with circle accent), A or O (with umlauts). 
+
+CAUSE
+=====
+
+MakeUpper() and MakeLower() were working correctly with the extended characters
+in Visual C++ 4.0, but not in Visual C++ 5.0. In Visual C++ 4.0,
+CString::MakeUpper() and MakeLower() functions are wrappers for the SDK
+functions CharUpper() and CharLower(). They work correctly for the extended
+characters, such as [ASCII 197],[ASCII 196],[ASCII 214]. In Visual C++ 5.0, the
+MakeUpper() and MakeLower() functions use the C Runtime _tcslwr and _tcsupr to
+convert the characters, instead of CharUpper and CharLower. As a result, the
+extended characters are not being converted anymore.
+
+RESOLUTION
+==========
+
+This problem can be avoided by using the SDK APIs CharUpper() and CharLower()
+instead of the CString functions.
+
+STATUS
+======
+
+This problem has been corrected in Visual Studio 97 Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC500bug kbVC500SP1fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

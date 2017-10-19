@@ -1,0 +1,131 @@
+DOCUMENT:Q178401  11-JAN-2001  [vbwin]
+TITLE   :PRB: Message Box Appears Behind Form Set as Top-Most Window
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Visual Basic form can be displayed as the top z-ordered (or top-most) window
+by using the SetWindowPos API function. Under Windows 95 or Windows 98, if the
+top-most window then displays a message box, the message box may display behind
+the top-most window. The user cannot continue or exit the program because the
+user cannot close the message box.
+
+RESOLUTION
+==========
+
+Do not display a message box from a form set as the top-most window. If you must
+use a message box from the form, unload the form first before displaying the
+message box.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+   default.
+
+2. Add the two CommandButtons to Form1 form. Set the following Form1 form
+   properties:
+
+   Form1 Form Property            Setting
+   ---------------------------------------
+   BorderStyle                    0-None
+   StartUpPosition                2-CenterScreen
+
+3. Copy the following code to the Code window of Form1 form:
+
+         Option Explicit
+
+         Private Declare Function SetWindowPos Lib "user32" _
+            (ByVal hwnd As Long, _
+            ByVal hWndInsertAfter As Long, _
+            ByVal x As Long, _
+            ByVal y As Long, _
+            ByVal cx As Long, _
+            ByVal cy As Long, _
+            ByVal wFlags As Long) As Long
+         Const HWND_TOPMOST = -1
+         Const SWP_NOMOVE = &H2
+         Const SWP_NOSIZE = &H1
+
+         Private Sub Form_Load()
+             Dim lngWindowPosition As Long
+             Command1.Caption = "Show Message Box"
+             Command2.Caption = "End Program"
+             LngWindowPosition = SetWindowPos(Form1.hwnd, _
+                                              HWND_TOPMOST, _
+                                              0, _
+                                              0, _
+                                              0, _
+                                              0, _
+                                              SWP_NOMOVE Or SWP_NOSIZE)
+         End Sub
+
+         Private Sub Command1_Click()
+             MsgBox "From Message Box", vbSystemModal
+         End Sub
+
+         Private Sub Command2_Click()
+             End
+         End Sub
+
+4. Save the Project and compile the project into an executable file. This
+   problem only occurs from an EXE file.
+
+5. Run the executable file.
+
+6. Click Show Message Box to display the message box.
+
+7. Click on the desktop or another application to de-activate Project1.
+
+8. Click on the form of Project1 to activate Project1.
+
+9. Click OK to dismiss the message box.
+
+NOTE: You may need to repeat steps 6-9 several times to reproduce the problem
+where the Message Box is displayed behind the top-most window and cannot be
+dismissed.
+
+Additional query words: topmost top most modal
+
+======================================================================
+Keywords          : kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

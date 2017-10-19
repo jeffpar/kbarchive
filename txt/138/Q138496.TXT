@@ -1,0 +1,61 @@
+DOCUMENT:Q138496  11-FEB-2000  [foxpro]
+TITLE   :How to Call the Class Code of a Control in a Container
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you override the event code of a control in a container class, you can call
+the control's events by using the Class property of the container, the scope
+resolution operator, and the Name property of the contained control:
+
+      ContainerClass::ControlName.EventName()
+
+MORE INFORMATION
+================
+
+For example, if you choose to add text buttons to a form using the Form Wizard,
+a container class based on Txtbtn in Wizstyle.vcx is added to the form. To add
+additional code to the Next button while preserving the original functionality
+of the button, include the following line in the cmdNext Click event code
+window:
+
+      txtbtn::cmdNext.Click()
+
+For more information about adding code wizard-generated command buttons, please
+see the following article in theMicrosoft Knowledge Base:
+
+   Q134790 How to Add Code to Wizard-Generated Command Buttons
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

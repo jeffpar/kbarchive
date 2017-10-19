@@ -1,0 +1,71 @@
+DOCUMENT:Q140047  08-AUG-2001  [winnt]
+TITLE   :Eicon Diva ISDN PC-Card Setup Disables Mass-Storage Devices
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the driver for Eicon Diva ISDN PC-Card devices on your
+computer, PC-Card adapters connecting mass-storage devices (such as SCSI
+adapters or IDE hard disks) stop working. Another symptom of this problem is
+that mass-storage devices you are trying to install may not work if you already
+have the Eicon product installed.
+
+CAUSE
+=====
+
+The setup program for the Eicon Diva ISDN adapter changes the startup value for
+the PCMCIA driver to "System." To work for mass-storage devices, this driver
+must be set to "Boot."
+
+This problem exists in the Eicon driver that ships with the Windows NT 4.0
+compact disc. Eicon is aware of this.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform the following steps:
+
+1. Click the Start button, point to Settings, click Control Panel, and then
+   double-click Devices.
+
+2. In the Device list, click Pcmcia, click Startup, and then click Boot.
+
+3. Click OK, and then click Close.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kb3rdparty kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

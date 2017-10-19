@@ -1,0 +1,82 @@
+DOCUMENT:Q222621  22-DEC-1999  [exchange]
+TITLE   :XADM: Buffer Is Not Cleared in Exchange LDAP Service
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5,5.5 SP1,5.5 SP2
+OPER/SYS:
+KEYWORDS:exc55 exc55sp1 exc55sp2 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use Telnet to connect to Transmission Control Protocol (TCP) port 3389,
+you may experience either of the following symptoms:
+
+ - If you send an invalid Lightweight Directory Access Protocol (LDAP) command,
+   the Exchange Server computer may store all the data you send in a buffer
+   until you end the connection, rather than clearing the buffer after the
+   invalid command is sent. This could eventually cause the server to run out of
+   memory.
+
+ - If you send an LDAP bind request with a Distinguished Name that is longer
+   than 1 KB, the directory service may stop unexpectedly.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Directory
+
++--------------------------+
+| File name   | Version    | 
++--------------------------+
+| Dsamain.exe | 5.5.2575.0 | 
++--------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 3.
+
+Additional query words: denial of service memory leak
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2
+Version           : winnt:5.5,5.5 SP1,5.5 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

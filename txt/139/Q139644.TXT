@@ -1,0 +1,68 @@
+DOCUMENT:Q139644  11-MAR-1999  [exchange]
+TITLE   :XCLN: Err Msg: Items cannot be transferred or deleted...
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Internet Mail from a Microsoft Exchange, version 4.0, Windows 95
+client the following error message appears:
+
+   The marked items cannot be transferred or deleted because your mailbox has
+   been modified. Click OK to update mail headers to reflect changes to your
+   mailbox.
+
+CAUSE
+=====
+
+This error indicates that the messages in your mailbox on your Internet server
+(the POP3 host) have changed in status since the last time you updated mail
+headers.
+
+RESOLUTION
+==========
+
+Click OK to update the mail headers seen in Internet Mail to reflect changes
+seen in your mailbox on your Internet server.
+
+MORE INFORMATION
+================
+
+Each time you update the mail headers, Internet Mail saves that information.
+
+The status of your mail can change on your Internet server after the update if
+you have logged onto your Internet mailbox from another computer and transferred
+or deleted messages. Thus, the next time you try to delete or transfer in the
+first session, the header information stored on your Windows 95 PC does not
+match the information on your Internet server.
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

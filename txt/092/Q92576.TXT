@@ -1,0 +1,63 @@
+DOCUMENT:Q92576  27-JUN-2001  [homemm]
+TITLE   :Quickeys Err Msg: Cannot Find Requested Book
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Quickeys, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Quickeys is running and you use the combination for a book you may get the
+error message:
+
+   Cannot find requested book
+
+This may indicate a corrupt VIEWER.INI file.
+
+MORE INFORMATION
+================
+
+To correct the problem:
+
+1. Close the Quickeys.
+
+2. Delete the file VIEWER.INI located in the C:\WINDOWS directory.
+
+3. Restart any VIEWER application so Windows can rebuild the VIEWER.INI.
+
+4. Exit the VIEWER application
+
+5. Restart Quickeys.
+
+6. Reset the key combinations in Quickeys.
+
+Additional query words: 2.00 quick keys fail
+
+======================================================================
+Keywords          :  
+Technology        : kbBookshelfSearch kbQuickeys200 kbQuickeysSearch
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

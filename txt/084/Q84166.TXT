@@ -1,0 +1,64 @@
+DOCUMENT:Q84166  01-NOV-1999  [win95x]
+TITLE   :Incorrectly Detected Coprocessor May Cause Improper Display
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a computer's BIOS incorrectly detects a math coprocessor when one is not
+present, improper information may be displayed in areas such as the title bar of
+the Microsoft Windows Calculator program and in other Windows-based programs.
+
+Phoenix technical support has confirmed that some system manufacturers might have
+incorrectly shipped BIOS that supports the Intel 80486DX only, not the BIOS that
+also supports the Intel 80486SX chip. This situation causes the erroneous
+reporting of a math coprocessor on the 80486SX when there is none, and may
+produce these errors.
+
+MORE INFORMATION
+================
+
+The incorrect detection of a math coprocessor can cause problems in Windows. The
+value "-1" may be displayed for the cursor position. Strings such as "sin:" or
+"sqrt:" may be displayed randomly in title bars and other places. The value
+"-1#.QNAN" might be displayed if the Clear button is chosen in Calculator.
+
+To resolve this problem, contact your computer manufacturer, not Phoenix for the
+correct BIOS for your computer system.
+
+The Intel and Phoenix products included here are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: calc 3.00 3.00a 3.01 3.10 3.11 coprocessor 387 487 287 Phoenix ep486sx 0.96
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

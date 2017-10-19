@@ -1,0 +1,70 @@
+DOCUMENT:Q245570  07-MAY-2000  [sms]
+TITLE   :SMSINST: Repackaged REG_MULTI_SZ Values May Be Truncated
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you perform a repackage process with Systems Management Server Installer,
+REG_MULTI_SZ registry values may be truncated or corrupted when you run the
+script on another computer.
+
+CAUSE
+=====
+
+This behavior occurs because Systems Management Server Installer does not
+intercept REG_MULTI_SZ registry values that contain the percent character (%)
+properly. Systems Management Server Installer treats a string that is inside
+single percent characters as a variable rather than a static text string. To
+instruct Systems Management Server Installer to use a static text string, use
+double percent characters.
+
+WORKAROUND
+==========
+
+To work around this problem manually, edit the resulting script and look for
+"Edit Registry" script items. If found, look for registry values of the type
+"Multiple strings" and make sure that the value data uses double percent
+characters where you want to use a percent character as a static character.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

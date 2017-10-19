@@ -1,0 +1,61 @@
+DOCUMENT:Q257324  14-SEP-2001  [automap]
+TITLE   :MapPoint 2001: Leading Zeros Are Truncated When You Import Numer
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2002 
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you import numeric data into Microsoft MapPoint 2001, the leading zeros in
+the data may be truncated.
+
+CAUSE
+=====
+
+This behavior can occur if you import the data in *.csv or *.txt format.
+
+RESOLUTION
+==========
+
+To work around this issue, use Microsoft Access or Microsoft Excel to open the
+data file, and then format the numeric data that you want to import into
+MapPoint 2001 as text.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft MapPoint 2001.
+
+Additional query words: mp2001 map point leftmost zeroes beginning
+
+======================================================================
+Keywords          : kbdisplay kbimu kbfaq
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2001 kbMapPoint2002
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

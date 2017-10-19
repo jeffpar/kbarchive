@@ -1,0 +1,84 @@
+DOCUMENT:Q192537  21-JUL-2001  [visualc]
+TITLE   :PRB: Threads Consume Virtual Memory Quicker on Windows CE 2.1
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbOAK kbVC500 kbOSWinCE210
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0 
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0 
+ - Microsoft Windows CE Toolkit for Visual C++ 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Applications or libraries that create multiple threads and worked under Windows
+CE 2.0 may encounter out-of-memory conditions when run under Windows CE version
+2.1.
+
+CAUSE
+=====
+
+Windows CE 2.1 now uses the stack reserve field in the program executable
+header. The Visual C++ linker default reserve is 1 MB.
+
+RESOLUTION
+==========
+
+Use the /STACK switch in the linker settings, or the module definition file
+STACKSIZE directive, to specify a lower default stack reserve.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Previous versions of Windows CE did not use the stack reserve field in the
+program executable header. Even though the linker default reserve was 1 MB, the
+operating system ignored this field, and used a predefined lower value. In
+Windows CE 2.1, this field is now used and may result in virtual memory being
+consumed quicker than anticipated. To circumvent this behavior, just add the
+/STACK switch to the linker settings with a more reasonable reserve value, such
+as
+
+      /STACK:65536
+
+or use the STACKSIZE directive in a module definition file:
+
+      STACKSIZE 65536
+
+The stack commit parameter for these switches is not currently used by the
+Windows CE operating system.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOAK kbVC500 kbOSWinCE210 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCEETKSearch kbWinCESearch kbWinCEEnh210ETKVC500 kbWinCEETKVC500
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

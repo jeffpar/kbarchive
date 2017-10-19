@@ -1,0 +1,57 @@
+DOCUMENT:Q101184  07-MAY-2001  [visualc]
+TITLE   :INFO: Retrieving the CMDIChildWnd Parent Window
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,4.0
+OPER/SYS:
+KEYWORDS:kbDocView kbMDI kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When creating a CMDIChildWnd, the parent of the multiple document interface
+(MDI) window is a "MDICLIENT" control. The handle to the parent frame window can
+be retrieved in the following way:
+
+      hwnd =::GetParent(lpcreatestruct.hwndParent);
+
+Alternatively, use the following
+
+      CMDIFrameWnd* pFrame = (CMDIFrameWnd*)GetParentFrame();
+
+to acquire a pointer to the parent MDI frame window object.
+
+NOTE: GetParentFrame is declared to return a pointer to a CFrameWnd object, and
+therefore it is necessary to typecast the result to a CMDIFrameWnd object.
+
+Additional query words: kbinf 1.00 1.5 1.51 1.52 2.00 2.10 2.5 2.51 2.52 3.00 3.10 4.00
+
+======================================================================
+Keywords          : kbDocView kbMDI kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

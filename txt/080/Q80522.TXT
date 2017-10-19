@@ -1,0 +1,53 @@
+DOCUMENT:Q80522  30-JUL-2001  [homegame]
+TITLE   :FltSim: Surface Winds Do Not Affect Take Off
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+When taking off in Microsoft Flight Simulator for the Macintosh version 4.0,
+winds do not affect ground takeoff. Acceleration on the ground will be the same
+as without any winds, but once the plane has cleared the ground, winds will
+affect the aircraft.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Flight Simulator and choose Airports from the World Menu. Select
+   Central and Northern Illinois from the Area list, and Select Chicago-Merrill
+   C. Meigs Field-Runway 18 as the airport and click OK.
+
+2. Choose Winds from the World menu and set Surface Winds to a Depth of 2000
+   feet, speed to 100 knots, and Direction at 180 degrees.
+
+3. Take off from Meigs Field. Notice that acceleration is normal even though
+   there is a 100 knot headwind. Also notice that as soon as the aircraft leaves
+   the ground, it starts flying backwards.
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,77 @@
+DOCUMENT:Q93163  05-OCT-1999  [win95x]
+TITLE   :File Manager Title Bar: "Too Many Files. Unable to Read..."
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have too many files in a directory and Windows runs out of memory, File
+Manager displays a dialog box with a partial listing of files and the following
+title:
+
+   Too Many Files. Unable to read entire directory.
+
+This problem can occur with Windows 3.0, 3.0a, 3.1, 3.11 and Windows for
+Workgroups 3.1 and 3.11.
+
+CAUSE
+=====
+
+This message is displayed when the total amount of memory needed to display the
+directory exceeds 64K.
+
+WORKAROUND
+==========
+
+To workaround this problem, close other applications to free up more memory, or
+reduce the number of files you keep in one directory.
+
+MORE INFORMATION
+================
+
+When File Manager reads in a directory structure, it stores the information in
+Windows Global Memory Pool. If Windows cannot allocate the memory File Manager
+needs to read and display the directory structure, the
+
+   Too Many Files
+
+error message is displayed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a limitation of File Manager.
+
+Additional query words: 3.00 3.00a 3.10 3.11 Novell limit file
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

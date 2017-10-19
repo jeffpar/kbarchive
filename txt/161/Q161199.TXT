@@ -1,0 +1,92 @@
+DOCUMENT:Q161199  10-FEB-2000  [foxpro]
+TITLE   :FIX: FOR EACH...ENDFOR Does Not Work with Object Variable
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The FOR EACH...ENDFOR command does not work with an object variable in the group
+setting. When the group setting is an object variable, the following error
+message appears:
+
+   <variable name> cannot be enumerated
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+The example provided below assumes that the computer has Visual FoxPro 5.0 and
+Microsoft Excel for Windows 95 version 7.0a installed. The FOR EACH...ENDFOR
+command is not available in earlier versions of FoxPro.
+
+The code opens Excel, adds two workbooks, and lists their names on the Visual
+FoxPro desktop.
+
+Steps to Reproduce Problem
+--------------------------
+
+Place the following code in a program and run it:
+
+   PUBLIC otest
+      otest=CREATE("excel.application")
+      otest.Visible=1
+      otest.workbooks.ADD
+      otest.workbooks.ADD
+
+      FOR EACH wb IN otest.WorkBooks  && this works fine
+         ?  wb.Name
+      ENDFOR
+
+      myvar = otest.WorkBooks   && create an object variable
+      FOR EACH wb IN myvar      && this fails with error message
+         ? wb.Name
+      ENDFOR
+      otest.Quit
+
+The first FOR EACH...ENDFOR loop places the names for the two workbooks on the
+Visual FoxPro desktop. The second loop, using the object variable, causes an
+error message.
+
+NOTE: In the above example, if you choose to Ignore the first error message, a
+"Nesting Error" occurs and the second wb.Name is displayed on the screen.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

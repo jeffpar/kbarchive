@@ -1,0 +1,54 @@
+DOCUMENT:Q192675  19-DEC-1999  [exchange]
+TITLE   :XWEB: Min. Size Requirements for Multipage Control on HTML Form
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:; winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 Service Packs 1, 2 
+ - Microsoft Outlook HTML Form Converter 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+When using the Microsoft Outlook HTML Form Converter to convert an Outlook Form
+containing a multipage control, the height of the control needs to be greater
+than 31 pixels, and the width needs to be greater than 122 pixels to insure a
+successful conversion.
+
+MORE INFORMATION
+================
+
+These values are hardcoded in the Multipage.asp that ships with the HTML Form
+Converter component.
+
+
+Additional query words: fcsetup.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbAudDeveloper kbZNotKeyword8 kbExchangeSearch kbZNotKeyword2 kbOutlookHTMLConv kbExchange550SP1
+Version           : WINDOWS:; winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

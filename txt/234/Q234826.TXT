@@ -1,0 +1,81 @@
+DOCUMENT:Q234826  17-NOV-2000  [ssafe]
+TITLE   :MOD2000: Source Code Control Check Out Status Tab Is Blank
+PRODUCT :Microsoft SourceSafe
+PROD/VER::2000
+OPER/SYS:
+KEYWORDS:kbdta modSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 2000 Developer 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you check out an object from Source Code Control and view the Check Out
+Status tab in the VBAProject Project Properties dialog box, the window is blank.
+
+RESOLUTION
+==========
+
+You can use the SCC Status window to see if an item is or is not checked out. If
+the SCC Status window is not visible, on the Add-ins menu, point to VBA Source
+Code Control, and then click Refresh File Status.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new workbook in Microsoft Excel and open the Visual Basic Editor
+   (press ALT+F11).
+
+2. Save the project.
+
+3. On the Add-ins menu, point to VBA Source Code Control, and then click Add
+   Project to SourceSafe.
+
+4. On the Add-ins menu, point to VBA Source Code Control, and then click Check
+   Out.
+
+5. On the Add-ins menu, point to VBA Source Code Control, and then click
+   SourceSafe Properties.
+
+6. Click the Check Out Status tab in the VBAProject Project Properties dialog
+   box. Note that the Check Out Status tab is blank.
+
+Additional query words: pra
+
+======================================================================
+Keywords          : kbdta modSSafe 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice2000Search kbOffice2000 kbOffice2000DevSearch
+Version           : :2000
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

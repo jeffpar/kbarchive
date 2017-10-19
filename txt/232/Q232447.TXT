@@ -1,0 +1,60 @@
+DOCUMENT:Q232447  20-OCT-2001  [win95x]
+TITLE   :BUG: SetPrinter() with Level 5 Fails to Change Port
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbprint kbGDI kbPrinting kbSpooler kbOSWin95 kbOSWin98 kbGrpDSGDI
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SetPrinter() API can be used to change/query a printer's settings. The
+settings that are available vary depending on the level of the call. It is
+possible to change/query the port name for a printer using levels 2 and 5.
+However, on Win9x, when trying to change the port on a printer using
+SetPrinter() with level 5 , the port is not changed even though no errors are
+detected.
+
+RESOLUTION
+==========
+
+To work around this problem, call SetPrinter() with level 2 and a properly
+populated PRINTER_INFO_2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbGDI kbPrinting kbSpooler kbOSWin95 kbOSWin98 kbGrpDSGDI 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

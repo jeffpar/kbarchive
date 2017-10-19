@@ -1,0 +1,66 @@
+DOCUMENT:Q274884  07-MAY-2002  [homegame]
+TITLE   :CFS2: Cannot Host a Multiplayer Game on Zone.com
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to host a multiplayer game of Microsoft Combat Flight Simulator
+2 on Zone.com, you may be unable to start the game.
+
+CAUSE
+=====
+
+This behavior can occur if you start Combat Flight Simulator 2 before you sign
+on to the Zone.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Quit Combat Flight Simulator 2.
+
+2. Sign off from the Zone.
+
+3. Sign on to the Zone.
+
+4. Enter the Combat Flight Simulator 2 game room, and then host or join a
+   multiplayer game.
+
+When the host starts the multiplayer game, the Zone automatically starts Combat
+Flight Simulator 2.
+
+Additional query words: 1.00 msgame combatfs cfs2 msngz igz
+
+======================================================================
+Keywords          : kbenv kbnetwork kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

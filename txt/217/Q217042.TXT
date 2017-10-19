@@ -1,0 +1,66 @@
+DOCUMENT:Q217042  06-AUG-2002  [sms]
+TITLE   :Dump Discovery Data Tool Views Discovery Data from the Client
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbDiscovery kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Dump Discovery Data tool (Discdump.exe) is available in the Microsoft
+Systems Management Server 2.0 BackOffice Resource Kit.
+
+You can use this tool at a command prompt on a client to view network discovery
+data from the local .ddr file in a readable format. The data is displayed in
+tree view. You must install and run this tool on the client.
+
+MORE INFORMATION
+================
+
+The Dump Discovery Data tool runs in Microsoft Windows NT, Microsoft Windows 98,
+and Microsoft Windows 95.
+
+To install the Dump Discovery Data tool, copy the required files to the
+<Windows>\Ms\Sms\Core\Bin folder on the client. The required files are:
+
+   Clibase.dll (default)
+   Clilog.dll (default)
+   Discdump.exe
+   Discv_nd.dll (NetWare clients only)
+   Smsdiscv.dll (default)
+
+To run the tool, type "discdump" (without the quotation marks) at a command
+prompt on the client. There are no command-line switches or options for this
+tool.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDiscovery kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

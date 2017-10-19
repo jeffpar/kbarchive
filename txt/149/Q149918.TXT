@@ -1,0 +1,74 @@
+DOCUMENT:Q149918  27-JUL-2001  [odbc]
+TITLE   :BUG: SQLState S1011 on SQL_AUTOCOMMIT_OFF with Active Results
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity 
+-------------------------------------------------------------------------------
+
+Bug#: 1686 (2.00)
+
+SYMPTOMS
+========
+
+If an application does the following in the Microsoft Access 2.0 or 3.0 version
+ODBC drivers:
+
+      SQLExecDirect(hstmt, "select * from any_table", SQL_NTS);
+      SQLFetch(hstmt);
+      SQLSetConnectOption(hstmt, SQL_AUTOCOMMIT, SQL_AUTOCOMMIT_OFF);
+
+The error generated is:
+
+   szSqlState = "S1011", *pfNativeError = 59, *pcbErrorMsg = 76
+   szErrorMsg="[Microsoft][ODBC Microsoft Access 7.0 Driver]Operation invalid at
+   this time."
+
+CAUSE
+=====
+
+The Access ODBC driver generates an S1011 error if an attempt is made to turn
+off the ODBC autocommit connection option while a result set is active.
+
+WORKAROUND
+==========
+
+Either set the autocommit option before opening the result set, or close the
+result set before issuing the SQLSetConnectOption command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the ODBC Access 2.00.2317
+driver. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2317 3.40.2505 ms access
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

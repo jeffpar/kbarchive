@@ -1,0 +1,50 @@
+DOCUMENT:Q311903  30-JUL-2002  [msdn]
+TITLE   :Cannot Release Transport After You Send Async and Sync Notes
+PRODUCT :Microsoft Developer Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft.NET Alerts 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you send both the ASYNC and the SYNC notifications with the same object,
+the Transport object is not released. HTTP_Terminate is not called when
+releasing the Transport object and the connection point.
+
+RESOLUTION
+==========
+
+Make sure that you release Transport object and the connection point before you
+send the ASYNC and SYNC notifications.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbNETAlerts
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

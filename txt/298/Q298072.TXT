@@ -1,0 +1,69 @@
+DOCUMENT:Q298072  10-MAY-2001  [msnetwork]
+TITLE   :URL In Address Bar Incorrect After Clicking Refresh In MSN Explo
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have started MSN Explorer and you are viewing a Web page. You then type
+another Web address (URL) into the address bar, but you do not press ENTER or
+click Go. Instead, you click the Refresh button. The page you are currently
+viewing will refresh, but the address bar will still display the URL that you
+typed--the address displayed will not match the page displayed.
+
+CAUSE
+=====
+
+This is a known issue in MSN Explorer and the product team working to correct
+it.
+
+RESOLUTION
+==========
+
+To view the URL of the page that you are currently viewing
+
+1. Click the Back button (which looks like an arrow pointing to the left).
+   This displays the previous page
+
+2. Click the Forward button (which looks like an arrow pointing to the right) to
+   return to the page.
+   The correct URL now appears in the address box for the currently displayed Web
+   page.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

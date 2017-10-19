@@ -1,0 +1,77 @@
+DOCUMENT:Q181806  09-AUG-2001  [winnt]
+TITLE   :Services Configured with an Account and Password May Not Start
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you configure a service to start with a specific account and password within
+a domain, certain conditions may prevent the service from starting.
+
+CAUSE
+=====
+
+The service may not start for any of the following reasons:
+
+ - A domain controller for that domain is not available.
+
+ - You used the wrong service account or password for the service.
+
+ - The password for the service account has changed or expired.
+
+ - The service account is disabled or does not have rights to log on as a
+   service.
+
+ - The problem may be network related if the computer that runs the service is
+   not a domain controller.
+
+RESOLUTION
+==========
+
+To resolve this issue, make sure you use the correct account and password for
+the service and check network connectivity with the domain and domain
+controllers.
+
+If the computer uses the Windows Internet Name Service (WINS) for name
+resolution, make sure the appropriate WINS servers are available. Also, make
+sure all applicable network routes exist to allow connectivity with a domain
+controller. If the computer uses dynamic Routing Information Protocol (RIP)
+routing, on some networks the service may try to start without having received
+the dynamic routing table. To help avoid this issue, use a default gateway or a
+persistent route to at least one domain controller on the domain.
+
+Additional query words: startup
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

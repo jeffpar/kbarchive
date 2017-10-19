@@ -1,0 +1,90 @@
+DOCUMENT:Q177010  08-NOV-2001  [homegame]
+TITLE   :Age of Empires: Black Screen When You Start the Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv aoe kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Age of Empires, the screen may turn black and the
+computer may seem to stop responding (hang). After a long pause, the game starts
+and you see the Age of Empires startup screen.
+
+RESOLUTION
+==========
+
+To resolve this issue, reduce the graphics hardware acceleration setting. To do
+this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Performance tab, click Graphics.
+
+4. Move the Hardware Acceleration slider until it is one notch to the right of
+   None (the Basic acceleration setting).
+
+5. Click OK, and then click OK again.
+
+6. When you are prompted to restart your computer, click Yes.
+
+If the issue continues to occur, quit any other programs that are running. To do
+this, follow these steps:
+
+1. Restart the computer.
+
+2. If you are using Microsoft Windows 95, press the F8 key when you see the
+   "Starting Windows 95" message.
+
+   If you are using Microsoft Windows 98, when your computer finishes the Power
+   On Self Test (POST), press and hold down CTRL until you see the Startup menu.
+
+3. On the Startup menu, select Command Prompt Only, and then press ENTER.
+
+4. At the command prompt, type "win" (without the quotation marks), and then
+   press ENTER. To prevent any programs from starting automatically, press and
+   hold down SHIFT until Windows finishes starting.
+
+5. Quit all unnecessary programs that are running. To do this, press
+   CTRL+ALT+DELETE, click any program in the Close Program dialog box except
+   Explorer or Systray, and then click End Task. Repeat this step to quit all
+   running programs except Explorer and Systray.
+
+6. Disable any anti-virus or disk tool programs installed on the computer. For
+   information about how to disable these programs, see the printed
+   documentation or online Help file for the program.
+
+
+Additional query words: 1.00 aoe ror display corrupt blackscreen launch menus intro msgame kbfaq
+
+======================================================================
+Keywords          : kbdisplay kbenv aoe kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbZNotKeyword kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

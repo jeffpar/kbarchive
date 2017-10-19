@@ -1,0 +1,63 @@
+DOCUMENT:Q139772  18-DEC-2000  [win95x]
+TITLE   :Compression Agent Does Not Set Exceptions for Hidden Files
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to set exceptions for specific files using the Browse button in
+Compression Agent, hidden files are not displayed.
+
+CAUSE
+=====
+
+Hidden files do not appear in the Browse dialog box, even if you have chosen to
+view all files in My Computer.
+
+RESOLUTION
+==========
+
+To set exceptions for specific hidden files without removing the files' Hidden
+attribute, enter the full path for each hidden file in the Add Exceptions dialog
+box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! version 1.0 for
+Windows 95. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

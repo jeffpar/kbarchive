@@ -1,0 +1,70 @@
+DOCUMENT:Q172219  07-SEP-2001  [winnt]
+TITLE   :Canon LBP-8 III+ Prints Symbol Font for Entire Document
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document formatted with both the Symbol printer font and any
+other fixed width printer font, such as Courier, to a Canon LBP-8 III Plus
+printer, the printer does not reset correctly after the Symbol font is printed.
+For example, if the following is typed, line three will be printed in the Symbol
+font:
+
+   1. Text typed in Courier font
+   2. Text typed in Symbol font
+   3. Text typed in Courier font
+
+This symptom occurs when you use any of the Canon LBP-8 III printer drivers.
+
+RESOLUTION
+==========
+
+Format the text with a true type font. For example, use the Courier New True
+Type font.
+
+-or-
+
+Use the Canon LBP-8 II printer driver.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.51 and
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt LBP 8 LBP8 III+ ttf fixed fixedfont
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q245143  14-SEP-2001  [automap]
+TITLE   :MapPoint: Dialog Box Without Text Appears on the Screen
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to quit Microsoft MapPoint, a dialog box containing no text may
+appear on the screen.
+
+CAUSE
+=====
+
+This behavior can occur if you attempt to quit MapPoint without saving a map you
+created in the Data Mapping wizard.
+
+RESOLUTION
+==========
+
+To work around this issue, click Yes to save the map.
+
+If you do not want to save the map, click No to quit MapPoint without saving the
+map.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: mp2000 mp2001 unsaved exit close
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000 kbMapPoint2001
+Version           : WINDOWS:; :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

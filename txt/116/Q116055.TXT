@@ -1,0 +1,49 @@
+DOCUMENT:Q116055  09-DEC-1999  [homemm]
+TITLE   :Baseball: Help Stays Open After Baseball Closes
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition,1995-1996 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball for Windows, version 1994 edition 
+ - Microsoft Complete Baseball Guide for Windows, 1995 edition 
+ - Microsoft Complete NBA Basketball for Windows 1995-1996 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you launch the application's Help tool and then quit the application, the
+Help tool will remain open after the application has closed. You must close the
+Help application separately.
+
+Microsoft has confirmed this to be a problem in products listed at the top of
+this article. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1994 multi media multimedia multi-media
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBasketballSearch kbCompleteNBABasketball kbCompleteBaseball1994 kbCompleteBaseball1995 kbCompleteNBABasketball1995
+Version           : :1994 edition,1995-1996 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

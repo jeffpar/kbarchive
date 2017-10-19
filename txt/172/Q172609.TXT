@@ -1,0 +1,126 @@
+DOCUMENT:Q172609  17-JUL-2001  [visualc]
+TITLE   :FIX: /GX May Cause C1001 When Using Base Class' Operator Delete
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbcode kberrmsg kbCompiler kbCPPonly kbVC kbVC500bug kbVS97sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to use a base class' operator delete, and using the /GX switch
+to enable Visual C++ Exception Handling, the following error may be generated:
+
+   
+
+   fatal error C1001: INTERNAL COMPILER ERROR
+       (compiler file 'msc1.cpp', line 1188)
+
+CAUSE
+=====
+
+This error will be generated if the base class has a virtual function, the
+derived class uses the base class operator delete via a using declaration or an
+access declaration, and the derived class has a function prototyped to return a
+pointer to a base class, but actually returns a pointer to the derived class. An
+example can be found in the sample code below.
+
+RESOLUTION
+==========
+
+Do not use the /GX switch when attempting to use the base class operator
+delete.
+
+   -or-
+
+Implement an operator delete in the derived class that calls the base class
+operator delete.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The following two samples cause an internal compiler error when built with the
+compiler's /GX switch. The second sample shows how this can occur when using
+MFC.
+
+Sample 1
+--------
+
+      // compile options: /GX /c
+      class A
+      {
+      public:
+          virtual MyFunction();
+          void operator delete(void* p);
+      };
+      class B : public A
+      {
+      public:
+          A::operator delete;
+          // using A::operator delete;
+          A* func();
+      };
+      A* B::func()
+      {
+          return new B;
+      }
+
+Sample 2
+--------
+
+      // compile options: /GX /c
+      #include "afxcoll.h"
+      class C : public CObArray
+      {
+      public:
+           CObArray::operator delete;
+           // using CObArray::operator delete;
+           DECLARE_SERIAL( C );
+      };
+      IMPLEMENT_SERIAL ( C, CObArray, 1 )
+
+Additional query words: ICE
+
+======================================================================
+Keywords          : kbcode kberrmsg kbCompiler kbCPPonly kbVC kbVC500bug kbVS97sp3fix 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

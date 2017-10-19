@@ -1,0 +1,74 @@
+DOCUMENT:Q150794  08-AUG-2001  [crossnet]
+TITLE   :MaintainServerList Value Location in Windows 95 Resource Kit
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:Win2000:95; winnt:3.5,3.51
+OPER/SYS:
+KEYWORDS:kbnetwork win95 win98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 1,198 and 1,199 of the Microsoft Windows 95 Resource Kit shows the value
+MaintainServerList located under the [Vserver] key. This value is not located
+under the [Vserver] key.
+
+MORE INFORMATION
+================
+
+On a computer running Windows 95, MaintainServerList is located under the
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\VNETSUP subkey.
+
+There are three section for MaintainServerList:
+
+To change whether or not the list is maintained, "MaintainServerList" in the
+first section below has to be the same value as the "@=" in the second section
+below. "@=" is "default" when you view it in Regedit.exe.
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\VNETSUP]
+"MaintainServerList"="1"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\VNETSUP\Ndi\ 
+   params\MaintainServerList]
+"default"="2"
+"ParamDesc"="Browse Master"
+"type"="enum"
+@="1"
+<BR/><BR/>
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\VNETSUP\Ndi\ 
+   params\MaintainServerList\enum]
+"2"="Automatic"
+"1"="Enabled"
+"0"="Disabled"
+
+Additional query words: master browse
+
+======================================================================
+Keywords          : kbnetwork win95 win98 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbWin95search kbZNotKeyword3
+Version           : Win2000:95; winnt:3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

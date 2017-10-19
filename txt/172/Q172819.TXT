@@ -1,0 +1,107 @@
+DOCUMENT:Q172819  14-NOV-2000  [word97]
+TITLE   :WD97: Main Document Not Connected to Data Source in Word 6.x/7.x
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Word 6.x or 7.x, if you use the Word 97 import converter to open a mail merge
+main document created in Word 97, the data document is no longer attached to the
+main document.
+
+NOTE: The text, formatting, and field codes of the main document remain intact,
+but the main document is no longer a mail merge main document and the data file
+is no longer attached. No error messages are displayed.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Reattach the Data File in Word 6.x or 7.x
+---------------------------------------------------
+
+If you have the Word 97 import converter, follow these steps:
+
+1. Open the main document in Word 6.x or 7.x using the Word 97 import converter.
+
+2. On the Tools menu, click Mail Merge.
+
+3. Under Main Document, click Create, and then click Form Letters.
+
+4. Click Active Window.
+
+5. Under Data Source, click Get Data, and then click Open Data Source.
+
+6. Navigate to and select the Word 97 data document.
+
+7. Click Open.
+
+8. In the Mail Merge Helper dialog box click Close.
+
+Method 2: Save the Documents in Word 6.0/95 Format
+--------------------------------------------------
+
+If you do not have the Word 97 import converter, save both the mail merge main
+document and the data document in Word 6.0/95 format. To do this, follow these
+steps:
+
+1. Open the mail merge main document in Word 97.
+
+2. On the File menu click Save As.
+
+3. In the Save As Type list, click Word 6.0/95, and type a new file name.
+
+4. Repeat steps 1 through 3 for the data document.
+
+5. In Word 6.x or 7.x, open the main mail merge document you saved in step 3.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+REFERENCES
+==========
+
+For more information about how to obtain the Word 97-2000 Import Converter,
+please see the following article in the Microsoft Knowledge Base:
+
+   
+
+   Q162214 WD: How to Obtain the Word 97-2000 Import Converter
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,78 @@
+DOCUMENT:Q323561  24-MAY-2002  [msnetwork]
+TITLE   :MSN Explorer returning error at sign-in after installing Microgr
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network Version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You install Micrografx Publisher Professional 10 after first having installed
+and set up MSN Explorer on your computer. When you attempt to sign in to MSN
+Explorer, you receive the error message "Another user already is setup for these
+accounts on this system." and your modem does not attempt to dial.
+
+CAUSE
+=====
+
+When Micrografx Publisher Professional 10 was installed, a conflict in MSN
+Explorer modem settings occurred.
+
+RESOLUTION
+==========
+
+1. Close all open applications, including MSN Explorer.
+
+2. Click Start, and then click Control Panel.
+
+3. Double-click Add or Remove Programs.
+
+4. Click Micrografx Publisher Professional 10, and then click Change/Remove.
+
+5. When asked if you are sure you want to completely remove this program, click
+   Yes.
+
+After completely removing this program, do the following:
+
+1. Launch MSN Explorer, and then sign in.
+
+2. MSN Explorer may return the error message, "We did not detect any dial tone.
+   Please check and make sure your modem is configured correctly and try again."
+
+3. Click OK to close the error message.
+
+4. Pick up your phone receiver to make sure you hear a dial tone.
+
+5. Sign in to MSN Explorer again.
+
+Additional query words: Micrografx Publisher Professional 10 MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN700
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

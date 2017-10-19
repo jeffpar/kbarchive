@@ -1,0 +1,62 @@
+DOCUMENT:Q151975  04-MAY-2001  [ssafe]
+TITLE   :INFO: List of SourceSafe Error Messages Documented on the Web
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Use the "List of SourceSafe and Visual SourceSafe Error Messages Documented in
+the Microsoft Knowledge Base" on the following Web page to find the SourceSafe
+and Visual SourceSafe error messages that are documented in the Microsoft
+Knowledge Base:
+
+   http://support.microsoft.com/support/ssafe/content/q151975/default.asp
+
+You can use the Find in your Browser to locate error messages quickly on this
+page.
+
+
+You can obtain this Web page from Microsoft's World Wide Web Site on the Internet
+at the following location:
+
+NOTE: Because the Microsoft Web site is constantly updated, the site address may
+change without notice. If this occurs, go to the Microsoft home page at the
+following address:
+
+   http://www.msdn.microsoft.com/
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

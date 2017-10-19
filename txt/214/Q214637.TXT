@@ -1,0 +1,71 @@
+DOCUMENT:Q214637  30-APR-1999  [exchange]
+TITLE   :XFOR: Multiple MSExchangeCalCon Profiles Found
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You may notice that over time there may be many MSExchangeCalCon MAPI profiles
+created.
+
+CAUSE
+=====
+
+An abnormal shutdown of the Calendar Connector service, for example killing the
+Calcon.exe process, will result in the generation of a new MAPI profile for the
+Calendar Connector the next time it starts up.
+
+RESOLUTION
+==========
+
+The leftover MAPI profiles are harmless and can be safely deleted.
+
+WORKAROUND
+==========
+
+The MAPI profiles can also be found at the following registry location:
+
+   \HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows
+   Messaging Subsystem\Profiles
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words: MAPI;Calendar Connector;CALCON
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

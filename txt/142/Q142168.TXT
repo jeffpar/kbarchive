@@ -1,0 +1,91 @@
+DOCUMENT:Q142168  08-FEB-2000  [foxpro]
+TITLE   :PRB: Connectivity Error: Illegal reference in query
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you update data in a remote view, the following error may occur:
+
+   Connectivity Error [<<driver specific information>>] Illegal
+   reference in query
+
+CAUSE
+=====
+
+In the Update Criteria tab of the view designer, the "SQL WHERE clause includes"
+option is set to "Key and Modified Fields," and one of the modified fields is a
+memo field. A memo field cannot be used in a SQL WHERE clause.
+
+RESOLUTION
+==========
+
+Change the "SQL WHERE clause includes" option in the Update Criteria tab of the
+view designer to "Key Fields Only" or "Key and Timestamp."
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a remote view based on a table that contains a memo field.
+
+2. In the Fields tab, click the Add All button.
+
+3. In the Update Criteria tab, specify a key field, click the Update All button,
+   select the Send SQL Updates check box, and set the SQL WHERE clause includes
+   option to "Key and Modified Fields."
+
+4. Save the view as View_Test.
+
+5. Type the following commands in the Command window:
+
+      USE View_Test
+      BROWSE
+
+6. Make some changes to the memo field data.
+
+7. Type the following command in the Command window:
+
+      USE
+
+The Illegal reference in query error occurs at this point.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

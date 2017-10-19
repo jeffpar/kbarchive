@@ -1,0 +1,57 @@
+DOCUMENT:Q76459  17-DEC-2000  [msdos]
+TITLE   :Disabling Volume Label Request in Format
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MS-DOS 5.0 or later FORMAT utility prompts for a volume label after you
+format a floppy disk. This label prompt can be disabled.
+
+MORE INFORMATION
+================
+
+To eliminate the volume label message (and the necessity to press the ENTER
+key), add the following switch to the FORMAT command line:
+
+   format [drive]: /v:<ALT+Keypad 255>
+
+Note: Entering a space instead of <ALT+Keypad 255> will not work.
+
+Adding the above switch will disable the volume label prompt and allow the disk
+to be formatted. It will create a disk with a volume label of a non-printing
+ASCII blank character. Including this statement in a batch file or creating a
+Doskey macro will help automate disk formatting.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

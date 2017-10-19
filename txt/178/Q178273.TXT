@@ -1,0 +1,51 @@
+DOCUMENT:Q178273  15-JAN-2002  [winnt]
+TITLE   :Error in Cluster Server Administration Guide
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 10 of the Microsoft Cluster Server (MSCS) Administrator's Guide, table
+1.1 (Resources supported by MSCS) infers that it is possible for MSCS to
+failover a DHCP server resource. This is, in fact, incorrect.
+
+MORE INFORMATION
+================
+
+MSCS does not ship with a resource DLL to allow the failover of a DHCP server
+resource. This is an error in the documentation for MSCS.
+
+Additional query words: DHCP MSCS
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : :4.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

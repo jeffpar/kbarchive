@@ -1,0 +1,72 @@
+DOCUMENT:Q201999  31-JUL-2001  [sms]
+TITLE   :SMS: ANSI SQL-92 Keywords Used as SMS Database Column Names
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0,6.0,6.5
+OPER/SYS:
+KEYWORDS:kbDatabase smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Systems Management Server, some ANSI SQL-92 keywords are also column names in
+the SMS database. This was first discovered when using SQL Server version 6.0 as
+the database for Systems Management Server 1.2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2 and 2.0.
+
+MORE INFORMATION
+================
+
+The following are some of the ANSI keywords that are also column names in the
+SMS database:
+
+   ACTION
+   EXPIREDATE
+   SIZE
+   DATE
+   TIME
+   TIMESTAMP
+   VALUE
+
+The Chkup65.exe utility still reports reserved words for column names; among them
+are DOMAIN, ACTION, TIME, and SIZE. However, none of these are on the Microsoft
+SQL Server 7.0 current list of reserved words, and there is no corresponding
+upgrade-checking program for SQL Server 7.0 that reports any others. Upgrade and
+installation has not reported any keyword conflicts with Systems Management
+Server 2.0 running on SQL Server 7.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0,6.0,6.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,58 @@
+DOCUMENT:Q158088  24-MAY-2001  [homemm]
+TITLE   :Mac Encarta 97: Cannot Install Fonts Through Custom Install
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable install the fonts needed by Encarta 97 using the Custom Install
+option.
+
+RESOLUTION
+==========
+
+To install the required Encarta 97 fonts using the Custom Install option, do the
+following:
+
+1. On the compact disc, double-click the "Install Encarta 97 Encylopedia" icon.
+   This runs Setup.
+
+2. From the drop down menu in the "Install Encarta 97 Encyclopedia" window,
+   select "Custom Install".
+
+3. Select "Encarta 97 for Power Macintosh" or "Encarta 97 for 68K Macintosh".
+
+4. Click Install, and then follow the on-screen instructions.
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm font MS Reference HM Phonetic Arial Times New Roman Symbol macmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1997Mac
+Version           : :1997 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

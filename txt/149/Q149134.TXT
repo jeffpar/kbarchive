@@ -1,0 +1,79 @@
+DOCUMENT:Q149134  02-NOV-1999  [fortran]
+TITLE   :BUG: EN and ES Edit Descriptors Cause Incorrect Output
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Writing formatted REAL output using the EN or ES edit descriptor causes the
+output to be formattted incorrectly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem
+---------------------------------
+
+   C Compile options needed: none
+
+         real*8 :: a = 0.0001
+
+         WRITE (*,'(1X,A,EN15.4)')    'EN descriptor:  ', a
+         WRITE (*,'(1X,A,ES15.4)')    'ES descriptor:  ', a
+         WRITE (*,'(1X,A,E15.4)')     'E descriptor:   ', a
+
+         END
+
+Program Output
+--------------
+
+   EN descriptor: 100.000E-05
+   ES descriptor: 10.000E-04
+   E descriptor: .1000E-03
+
+Correct Ouput
+-------------
+
+   EN descriptor: 10.000E-05
+   ES descriptor: 1.0000E-04
+   E descriptor: .1000E-03
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

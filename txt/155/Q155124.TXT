@@ -1,0 +1,75 @@
+DOCUMENT:Q155124  12-DEC-1999  [exchange]
+TITLE   :XADM: Error: Initializing Extension Data Attributes
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While displaying the properties for the Mailbox Cleanup Agent in the Microsoft
+Exchange Administrator program, you may receive the following error message:
+
+   Error: Initializing Data Extensions
+
+Also, when changing any of the settings for Mailbox Cleanup Agent, you may
+receive a Dr. Watson error similar to the following:
+
+   An application error has occurred and an application error log is being
+   generated.
+   Admin.exe
+   Exception: Access Violation (0xc0000005), Address: 0x00ab4932
+
+CAUSE
+=====
+
+The behavior mentioned above will be seen when the Display Name of your Exchange
+Site contains one or more non-alphanumeric characters, such as a space or a
+parenthesis.
+
+WORKAROUND
+==========
+
+Remove all non-alphanumeric characters from the display name of the Exchange
+Site.
+
+STATUS
+======
+
+This has been fixed in Mailbox Cleanup Agent Version 1.4 that shipped in the
+BackOffice Resource Kit, Part One. This utility and other Exchange tools in the
+BackOffice Resource Kit, Part One, can be downloaded from the Exchange 4.0
+Resource Kit page on http://www.microsoft.com/exchange.
+
+
+Additional query words: 4.00 resource kit mailbox MCA
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,62 @@
+DOCUMENT:Q133186  28-JUL-2001  [win95x]
+TITLE   :Removing MS Plus! Does Not Restore Existing Internet Access
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you use the Uninstall feature to remove Microsoft Plus!, the CompuServe
+Web Browser and Internet dial-up to a PPP do not function. There is no defined
+error message for this problem.
+
+CAUSE
+=====
+
+The CompuServe Web Browser Setup program replaces the Windows 95 WINSOCK. When
+you remove Microsoft Plus!, the WINSOCK is removed. The CompuServe Web Browser
+stops working because its WINSOCK has been removed from the system.
+
+RESOLUTION
+==========
+
+After you remove Microsoft Plus!, reinstall the CompuServe Web Browser software.
+
+MORE INFORMATION
+================
+
+This issue affects any software package that replaces the WINSOCK for Windows 95
+and Microsoft Plus!.
+
+Additional query words: CIS
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

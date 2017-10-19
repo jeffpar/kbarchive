@@ -1,0 +1,87 @@
+DOCUMENT:Q157528  07-SEP-2001  [word97]
+TITLE   :WD97: "Outline Effect" Text Garbled or in All Caps When Printed
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprint word97 kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print a document, text formatted with the Outline font effect may be
+garbled or may appear in all capital letters.
+
+NOTE: To format text with the Outline font effect, click Font on the Format menu,
+click the Font tab, and click to select the Outline check box under Effects.
+
+CAUSE
+=====
+
+This problem may occur when you print to one of the following printers:
+
+ - Hewlett-Packard DeskJet 660C or Hewlett-Packard 1600 printers, using the
+   legacy printer drivers.
+
+ - Hewlett-Packard LaserJet 4 or 5 series PostScript printers
+
+ - Hewlett-Packard Color LaserJet 5/5m PostScript printers
+
+ - Hewlett-Packard Color LaserJet 5/5m non-PostScript (HPPCL) printers
+
+   NOTE: Text formatted as Outline is printed as solid text.
+
+ - Tektronix Phaser 550c
+
+ - Lexmark Optra PS
+
+
+WORKAROUND
+==========
+
+To work around this problem, use a non-PostScript printer driver.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+The third-party product discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: outlined
+
+======================================================================
+Keywords          : kbprint word97 kbPrinting 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

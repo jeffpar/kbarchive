@@ -1,0 +1,62 @@
+DOCUMENT:Q154262  01-OCT-2001  [frontpg]
+TITLE   :FP: Errors Attempting to Start FrontPage Personal Web Server
+PRODUCT :Word Front Page
+PROD/VER::; WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q205650.
+
+For a Microsoft FrontPage 98 version of this article, see Q194249.
+
+SYMPTOMS
+========
+
+When you attempt to start the FrontPage Personal Web Server, you may receive the
+following error message:
+
+   VHTTPD32 caused an invalid page fault in module VHTTPD32.EXE.
+
+CAUSE
+=====
+
+This error message will be displayed if the system clock on your computer is set
+to year 2037 or later.
+
+RESOLUTION
+==========
+
+Set the system clock to the proper date.
+
+Additional query words: FP1.1 FP97 PWS
+
+======================================================================
+Keywords          : kberrmsg kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : :; WINDOWS:1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

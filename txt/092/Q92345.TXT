@@ -1,0 +1,136 @@
+DOCUMENT:Q92345  09-AUG-1999  [foxpro]
+TITLE   :Using File Locking and Record Locking in FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.00 2.50 2.50a | 2.50 2.50a 3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a command requires a file lock and the corresponding file is not already
+locked, FoxPro attempts to lock the file. Similarly, when a command requires a
+record lock and the corresponding record is not already locked, FoxPro attempts
+to lock the record. If the lock attempt is successful, FoxPro executes the
+command and releases the lock.
+
+For a list of commands that automatically lock a file or individual records, see
+the table below.
+
+Use manual locking commands in the following situations:
+
+ - When you are editing a database with the CHANGE or EDIT command and a format
+   file.
+
+ - When you are editing a database using a memory variable and a command such as
+   SCATTER. Note that the GATHER command locks each record as it updates the
+   database; however, not locking the record during the editing process can
+   introduce data-integrity problems.
+
+MORE INFORMATION
+================
+
+The following commands automatically lock a file or individual records, as
+indicated:
+
+   Command             Type of Locking
+   -----------------------------------------------------------------------
+
+   APPEND              Locks current record
+
+   APPEND BLANK        Locks database header (briefly)
+
+   APPEND FROM         Locks entire database
+
+
+   APPEND FROM ARRAY   Locks database header
+
+   APPEND MEMO         Locks current record
+
+   BROWSE              Locks current record and all records from fields in
+                       related databases (specified by an alias) once the
+                       user begins editing a field
+
+   CHANGE (without a   Locks current record and all records from fields in
+   format file)        related databases (specified by an alias) once the
+                       user begins editing a field
+
+   DELETE              Locks current record
+
+   DELETE NEXT 1       Locks current record
+
+   DELETE RECORD <n>   Locks record <n>
+
+   DELETE <scope       Locks entire database
+   beyond one>
+
+   EDIT (without a     Locks current record and all records from fields in
+   format file)        related databases (specified by an alias) once the
+                       user begins editing a field
+
+   GATHER              Locks current record
+
+   INSERT-SQL          Locks database header
+
+   MODIFY MEMO         Locks current record when editing begins
+
+   READ                Locks current record (and all records from aliased
+                       fields)
+
+   RECALL              Locks current record
+
+   RECALL NEXT 1       Locks current record
+
+   RECALL RECORD <n>   Locks record <n>
+
+   RECALL <scope       Locks entire database
+   beyond one>
+
+   REPLACE             Locks current record (and all records from aliased
+                       fields)
+
+   REPLACE NEXT 1      Locks current record (and all records from aliased
+                       fields)
+
+   REPLACE RECORD <n>  Locks record <n> (and all records from aliased
+                       fields)
+
+   REPLACE <scope      Locks entire database (and all files from aliased
+   beyond one>         fields)
+
+   SHOW GETS           Locks current record (and all records from aliased
+                       fields)
+
+   UPDATE              Locks entire database
+
+Additional query words: VFoxWin FoxDos FoxWin 2.x multi-user kbvfp300 kbvfp500 6 6 multiuser network networking automatic
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300 kbVFP500 kbVFP600
+Version           : 2.00 2.50 2.50a | 2.50 2.50a 3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,91 @@
+DOCUMENT:Q161582  14-NOV-2000  [word97]
+TITLE   :WD97: AutoCorrect Text Deleted, Partially Visible in Form Field
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 kbdta kbproof word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you type AutoCorrect text in a form field in a protected form, you receive
+one of the following symptoms:
+
+ - The AutoCorrect text is deleted.
+
+   -or-
+
+ - Only the first four characters of the AutoCorrect text are visible.
+
+CAUSE
+=====
+
+The form field is set to unlimited maximum length.
+
+WORKAROUND
+==========
+
+To work around this problem, change the maximum length of the form field to a
+fixed length.
+
+1. On the Tools menu, click Unprotect Document.
+
+2. Right-click the form field and then click Properties on the shortcut menu.
+
+3. In the Text Form Field Options dialog box, set the Maximum Length to a value
+   other than Unlimited.
+
+NOTE: Ensure that the value you set is large enough to contain the text to be
+entered. If the value is too small, then the text typed may be incomplete or
+truncated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article.
+
+
+REFERENCES
+==========
+
+For more information about using AutoCorrect, click Contents And Index on the
+Help menu, click the Index tab in Word Help, type the following text
+
+   AutoCorrect
+
+and then double-click the selected text to go to the topic you want. If you are
+unable to find the information you need, ask the Office Assistant.
+
+Additional query words: 8.0 auto correct automatic automatically disappear missing replace space
+
+======================================================================
+Keywords          : kbualink97 kbdta kbproof word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

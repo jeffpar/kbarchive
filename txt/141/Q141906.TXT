@@ -1,0 +1,70 @@
+DOCUMENT:Q141906  12-JUN-2001  [sna]
+TITLE   :Domain/Server Command Line Parameter Added to SNAADMIN
+PRODUCT :Microsoft SNA Server
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server for Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SNA Server Administration utility has been enhanced to allow you to specify
+the domain or server you wish to administer using a command line parameter.
+
+MORE INFORMATION
+================
+
+A new command line parameter has been added to SNAADMIN.EXE to specify the
+subdomain or server to administer. The /NET: parameter has the following
+syntax:
+
+   SNAADMIN /NET:<name>
+
+where <name> is the name of a domain or server you wish to administer.
+
+Admin uses this domain or server name to connect with instead of the local
+domain. In previous versions, it was necessary to start SNA Server Admin at the
+local domain and then specify a "remote" domain using the Select Domain option
+from the File menu. No validation is done on the given name.
+
+If admin fails to connect, then the appropriate error message box is eventually
+shown. If the string "/NET:" is incorrectly typed, then the message
+"Configuration file not found" is displayed. This same message is also displayed
+for any other syntax error on the command line.
+
+The /NET:<name> parameter cannot coexist with the /OFFLINE argument or the
+filename parameter. In either of these cases, the /NET:<name> parameter is
+ignored, and Admin is started in offline mode. The /NET: parameter can coexist
+with /READONLY and /NO3D.
+
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

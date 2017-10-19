@@ -1,0 +1,63 @@
+DOCUMENT:Q179978  28-MAR-1999  [exchange]
+TITLE   :XCLN: Spelling Check in Macintosh Client Slows Message Delivery
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Exchange Macintosh client version 5.0 to reply to or forward a
+message, delivery will be slow if the spelling check option is enabled.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Macintosh
+client version 5.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The symptoms occur when you do the following:
+
+Activate the spelling check option and include the following options:
+
+ - Always suggest replacements for misspelled words
+
+ - Always check spelling before sending
+
+ - When checking, always ignore the original text in a reply or forward
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

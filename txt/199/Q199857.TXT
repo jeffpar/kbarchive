@@ -1,0 +1,81 @@
+DOCUMENT:Q199857  09-MAY-1999  [homegame]
+TITLE   :Return of Arcade: Game Quits and You Are Returned to Desktop
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Return of Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click any of the games included in Microsoft Return of Arcade, the game
+does not start and you are returned to the Windows desktop.
+
+NOTE: The following games are included in Return of Arcade:
+
+ - Dig Dug
+ - Galaxian
+ - Pac Man
+ - Pole Position
+
+CAUSE
+=====
+
+This behavior can occur if you are running Cybermedia's Guard Dog or Compaq's
+Watch Dog software on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit Guard Dog or Watch Dog before you start any of the
+games included in Return of Arcade. To do this, follow these steps:
+
+1. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+2. In the list of running programs, click Guard Dog or Watch Dog, and then click
+   End Task.
+
+3. When you are prompted to confirm that you want to quit Guard Dog or Watch
+   Dog, click Yes.
+
+NOTE: Both Guard Dog and Watch Dog are started again the next time you start
+Windows.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: 1.00 msgame roa close exit
+
+======================================================================
+Keywords          : kb3rdparty kbimu msgame 
+Technology        : kbGamesSearch kbArcadeRet kbArcadeSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

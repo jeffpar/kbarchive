@@ -1,0 +1,41 @@
+DOCUMENT:Q172019  07-MAY-1999  [iis]
+TITLE   :Index Server Cannot Filter Office 97 Documents
+PRODUCT :Internet Information Server
+PROD/VER:WinNT:1.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Index Server 1.0 cannot filter or index Microsoft Office 97 documents. Index
+Server 2.0 has this functionality. Index Server 2.0 ships with Microsoft
+Internet Information Server 4.0.
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ110
+Version           : WinNT:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

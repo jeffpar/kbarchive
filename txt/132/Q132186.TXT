@@ -1,0 +1,78 @@
+DOCUMENT:Q132186  17-DEC-2000  [win95x]
+TITLE   :Cannot Install/Upgrade Windows 95 from GUI on IBM Aptiva 710
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to reinstall or upgrade the copy of Windows 95 on an IBM Aptiva 710
+computer, you may receive the following error message while Setup is analyzing
+the computer:
+
+   Setup: Error SU0507
+
+   The following problem occurred while Setup was analyzing your computer:
+   SDMErr(8037001b): Detection function returned a DMS error.
+   DMSError: This computer cannot be upgraded from Windows. Please shutdown
+   Windows and upgrade in MS-DOS mode.
+
+   Setup cannot continue and will now close.
+
+If you restart the computer in MS-DOS mode and try to install Windows 95, you may
+receive a general protection (GP) fault error message during the detection
+portion of Setup. If you ignore this error message, Setup continues and finishes
+correctly.
+
+CAUSE
+=====
+
+When you run Setup from within Windows 95, the computer's BIOS prevents Setup
+from reliably detecting all the installed hardware in the computer.
+
+RESOLUTION
+==========
+
+Restart your computer in MS-DOS mode and then run Setup. If you receive a GP
+fault error message, ignore the error message and continue.
+
+For information about a possible BIOS upgrade to eliminate this problem, please
+contact IBM.
+
+MORE INFORMATION
+================
+
+This issue has also been reported on Compaq Presario CDS 520 486SX2/66
+computers.
+
+Additional query words: gpf pnp w95set
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

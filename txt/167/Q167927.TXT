@@ -1,0 +1,89 @@
+DOCUMENT:Q167927  13-JUN-2002  [visualc]
+TITLE   :PRB: Building ATL Service Project Does Not Register the Service
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,3.0
+OPER/SYS:
+KEYWORDS:kbATL200 kbATL210 kbLocalSvr kbRegistry kbServer kbService kbVC600 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL), versions 2.0, 2.1, 3.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build an ATL service, using the AppWizard, the COM objects are
+registered, but the service does not appear in the Control Panel's list of
+services.
+
+CAUSE
+=====
+
+The Wizard creates a custom build rule for self-registration. The rule uses the
+/RegServer switch instead of the /Service switch.
+
+RESOLUTION
+==========
+
+The Wizard adds the following custom build command:
+
+      "$(TargetPath)" /RegServer
+
+Change the build command to:
+
+      "$(TargetPath)" /Service
+
+To change the command, bring up the Project Settings dialog box, click the Custom
+Build tab, and edit the command in "Build command(s):". NOTE: If using Visual
+Studio.NET, the Wizard adds the following "Post-Build Events" command line under
+the "Buils Events" property page:
+
+   "$(TargetPath)" /RegServer
+
+Change the build command to:
+
+   "$(TargetPath)" /Service
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Because debugging local servers is easier than debugging services, most people
+prefer the default to be /RegServer. Once you have completed testing the EXE as
+a local server, you can either change the custom build step or run the EXE with
+/Service.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Chuck Bell,
+Microsoft Corporation.
+
+Additional query words: kbatl200 kbatl210 kbatl300 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbATL200 kbATL210 kbLocalSvr kbRegistry kbServer kbService kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL200 kbATL300 kbATL210 kbVCNET
+Version           : :2.0,2.1,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

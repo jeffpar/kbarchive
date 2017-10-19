@@ -1,0 +1,87 @@
+DOCUMENT:Q238255  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Install VSS to a Novell NetWare Server
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbsetup _IK kbSSafe500 kbSSafe600 kbVS kbVS600 kbOSNovell _IK kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Novell NetWare servers can be configured to handle 8.3 file names or greater
+than 8.3 file names. If the Novell NetWare server can only handle 8.3 file
+names, the regular Visual Studio installation process will not be able to
+install to the Novell NetWare server.
+
+MORE INFORMATION
+================
+
+To install to a Novell NetWare server that can only handle 8.3 file names use
+the following steps.
+
+To install from the Visual Studio CDs:
+
+ - Insert Disk 2.
+ - Change to the VSS_SS\ folder.
+ - Run the following command: "setup.exe /F " (without the quotation marks)
+ - Choose the Server Applications option.
+ - When prompted for the installation location, be sure to change it to the
+   Novell NetWare Server.
+
+To install from the Visual SourceSafe standalone CDs:
+
+ - Insert the Visual SourceSafe CD.
+ - Run the following command: "setup.exe /F " (without the quotation marks)
+
+For more information about the Visual SourceSafe setup process, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q139358 INFO: Readme.wri: Section 1, Software Installation Information
+
+   Q130141 HOWTO: Install SourceSafe on a Windows Client Workstation
+
+REFERENCES
+==========
+
+For more information about enabling long file names on a Novell Netware server,
+please contact Novell at one of the following contact points:
+
+   Support Telephone Number: (800) 858-4000 Domestic
+   Support Telephone Number: (801) 379-5900 International
+   Support Telephone Number: (800) 638-9273 Netware
+   Support Telephone Number: (408) 729-6700 Hardware Division
+   Presale technical information: (800) 733-9673
+   World Wide Web: http://support.novell.com/
+   BBS: (801) 221-5197
+   BBS: (801) 429-7787 (9600 Baud)
+
+Additional query words: netware intranetware internetware VSS LFN setup
+
+======================================================================
+Keywords          : kbsetup _IK kbSSafe500 kbSSafe600 kbVS kbVS600 kbOSNovell _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

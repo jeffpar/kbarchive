@@ -1,0 +1,69 @@
+DOCUMENT:Q81343  10-NOV-1999  [macmail]
+TITLE   :Mac Fax: Err Msg: Unable to Connect to Modem
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.0a, 3.0b, 3.1, 3.1a, 3.1c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Mail for AppleTalk Networks and the Microsoft Mail
+Gateway to Fax, the following error message may be displayed:
+
+   Unable to connect to modem. Sending and Receiving turned off. Error -2005.
+
+CAUSE
+=====
+
+This is a standard time-out error that is returned when the fax/modem does not
+respond to commands from the FaxINIT. This message can be caused by one of the
+following problems:
+
+ - The fax modem is not turned on or is not connected correctly.
+
+ - An incorrect FaxINIT is being used for the fax/modem.
+
+ - There is a serial port contention. Some other software is attempting to use
+   the same serial port as the fax gateway. The fax gateway is configured to
+   only use the modem port.
+
+ - Running on an AppleShare file server sometimes causes this problem if there
+   is heavy server activity. Intense network activity can cause enough of a
+   delay in the FaxINIT-fax/modem communications to cause an error.
+
+ - There may be various INIT conflicts. Try changing the load order of the INITs
+   or removing unnecessary INITs.
+
+ - Running fax gateway on a Mac IIfx without the IIfx Serial Switch. This is a
+   Control Panel device from Apple, which must be set to Compatible.
+
+Additional query words: 3.00 3.00a 3.00b 3.10 3.10a 3.10c faxgate
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN300a kbMailATN300b kbMailATN310 kbMailATN310a kbMailATN310c
+Version           : WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

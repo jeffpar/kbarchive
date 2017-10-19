@@ -1,0 +1,64 @@
+DOCUMENT:Q132585  17-DEC-2000  [win95x]
+TITLE   :Wallpaper You Select on Network May Not Appear After Reboot
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select a desktop wallpaper from a network drive, the wallpaper you
+select may not be loaded when you restart your computer. Instead, your desktop
+has a solid color.
+
+CAUSE
+=====
+
+If you select a wallpaper while you are working on a secure network resource,
+the wallpaper bitmap is not accessible until you enter a password. However, the
+wallpaper is loaded before you log in. Depending on the system configuration,
+the system may not attempt to reload the wallpaper you selected after the you
+have entered a password.
+
+RESOLUTION
+==========
+
+To work around this behavior, do one of the following:
+
+1. Copy the wallpaper bitmap file to your local hard drive and specify the local
+   copy in the Display tool in Control Panel. This ensures that the wallpaper is
+   accessible when you start your computer.
+
+2. In the Password Properties dialog box, make sure the second option, that
+   users can customize their desktop settings, is checked so that the next time
+   you log on, your settings are restored.
+
+Additional query words: bitmap
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

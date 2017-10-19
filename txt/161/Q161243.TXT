@@ -1,0 +1,58 @@
+DOCUMENT:Q161243  08-NOV-2001  [homekids]
+TITLE   :MSB Rainforest: Report Closed Caption Window Remains Open
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbtlckbfaq
+
+======================================================================
+1.00
+WINDOWS
+kbdisplay
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Rainforest for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have closed captioning enabled and start one of the report videos for The
+Magic School Bus Explores the Rainforest (MSB Rainforest), the closed captioning
+dialog remains on the screen after the animation/video is dismissed.
+
+MORE INFORMATION
+================
+
+The closed captioning dialog box is located at the bottom of the screen,
+fluctuates in size, and its duration is based on an internal timer. After the
+report animation/video is dismissed by clicking outside the video window, the
+animation/video will stop, but the closed captioning dialog will remain until
+the timer expires. After the timer expires, the closed captioning dialog returns
+to black.
+
+Additional query words: msb msbhb msbss frizz kbmm multimedia multi-media msbdino msbdinos msbearth msbrain rain forest rainforest
+
+======================================================================
+Keywords          : kbtlc kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticRainForest kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

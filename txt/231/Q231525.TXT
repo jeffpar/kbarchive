@@ -1,0 +1,74 @@
+DOCUMENT:Q231525  06-AUG-2002  [automap]
+TITLE   :MapPoint 2000 Err Msg: There Was a Problem Opening this File...
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to link data in a Microsoft Excel workbook to Microsoft
+MapPoint 2000, you may receive the following error message:
+
+   There was a problem opening this file: <filename>. Could not decrypt
+   the file.
+
+CAUSE
+=====
+
+This behavior can occur if you are required to enter a password to open the
+Excel workbook.
+
+NOTE: This behavior does not occur if you are required to enter a password to
+modify the workbook.
+
+RESOLUTION
+==========
+
+To resolve this issue, delete the password required to open any Excel workbook
+from which you want to link data. To do this:
+
+1. Open an Excel workbook from which you want to link data.
+
+2. On the File menu, click Save As.
+
+3. On the Tools menu, click General Options.
+
+4. Delete the characters in the Password To Open box.
+
+5. Click OK, and then click Save. If you are prompted to replace the existing
+   file, click Yes.
+
+6. Repeat steps 1-5 for each Excel workbook from which you want to link data.
+
+Additional query words: mp2000 protected secure security
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

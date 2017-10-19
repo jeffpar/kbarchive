@@ -1,0 +1,55 @@
+DOCUMENT:Q145971  15-MAR-1999  [exchange]
+TITLE   :XCLN: Upgrading From SFS Mail to Exchange Causes E-Forms
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After upgrading to Microsoft Exchange, Electronic Forms Designer 1.0 based forms
+may no longer work correctly if run from previous versions of Microsoft Mail.
+
+CAUSE
+=====
+
+This is by design. The files needed to launch the old e-forms have been changed
+and migrated to the new format for Microsoft Exchange. These e-forms will work
+correctly if used from within the Microsoft Exchange client.
+
+When you start previous mail programs (MS Mail versions 3.x), to send a message
+or retrieve a note, some functions, such as those needed by the e-forms
+designer, will no longer work correctly. This is because the old MAPI.DLL has
+been replaced by a newer version and, depending on the client, MAILSPL.EXE has
+been renamed and is no longer used.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : 4.0 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

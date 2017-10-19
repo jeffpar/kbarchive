@@ -1,0 +1,98 @@
+DOCUMENT:Q112389  06-NOV-1999  [win16sdk]
+TITLE   :The Unexpected QuickWin Error
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Applications for Microsoft Windows developed with the Windows SDK may display an
+error message box with the error:
+
+   "Unexpected QuickWin Error"
+
+MORE INFORMATION
+================
+
+There are several possible causes for this error:
+
+ - A QuickWin application caused an unexpected application error (UAE) or
+   general protect (GP) fault.
+
+- or -
+
+ - A Microsoft Windows-based application that is not a QuickWin application
+   called a QuickWin function. If execution of a non-QuickWin application for
+   Windows results in this error, one of the QuickWin functions was linked and
+   executed in the application.
+
+- or -
+
+ - Possible mismatch of memory model libraries (for example, building a large
+   model application but using SLIBCEW, the small model library for Windows.)
+
+- or -
+
+ - Possible stray function pointers that accidentally call one of the QuickWin
+   stubs.
+
+- or -
+
+ - You may have attempted to use an invalid file handle with one of the I/O
+   functions.
+
+The run-time libraries for Windows (SLIBCEW, MLIBCEW, CLIBCEW, and LLIBCEW)
+contain stubs to the QuickWin functions. Therefore, the linker will not give an
+error when linking with a QuickWin function from a non-QuickWin application for
+Windows. However, when the function executes, an error message box with the
+error "Unexpected QuickWin Error" will be displayed.
+
+The following functions are in the QuickWin library:
+
+   _fwopen                    _wgopen
+   _inchar                    _wgsetactive
+   _wabout                    _wmenuclick
+   _wclose                    _wopen
+   _wgclose                   _wsetexit
+   _wgetexit                  _wsetfocus
+   _wgetfocus                 _wsetscreenbuf
+   _wgetscreenbuf             _wsetsize
+   _wgetsize                  _wyield
+   _wggetactive
+
+For further information regarding QuickWin applications and the QuickWin
+routines, refer to the Language Help file of Visual C++ or the Microsoft Visual
+C++ "Run-Time Library Reference" manual.
+
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

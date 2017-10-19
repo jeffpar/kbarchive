@@ -1,0 +1,128 @@
+DOCUMENT:Q124067  08-AUG-2001  [winnt]
+TITLE   :STOP Message 0x0000000A in AFD.SYS when Opening Sockets
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application, running under Windows NT 3.5, closes a listening socket. While
+the close operation is being processed, a new socket is opened with the same
+handle value as the listening socket. The application then performs an Accept()
+on the new socket, before doing a Listen() on it. This causes the system to
+display the STOP message.
+
+The stack trace for the resulting trap may look as follows:
+
+KDx86> kb
+FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+fe8c8d18  80137989  8040fed8 00000000 00000018 NT!KiTrap0E+0x256
+fe8c8d8c  fc61660a  fc6186a4 804054a0 fed82008
+NT!@ExfInterlockedInsertTailList@12+0xd
+fe8c8d9c  fc61052c  fed57ce8 fee15108 fee15108
+AFD!AfdAddFreeConnection+0x40
+
+fe8c8db4  fc610358  fed57ce8 fe8c8ea0 fee15108
+AFD!AfdReplenishListenBacklog+0x38
+fe8c8dd4  fc617597  fee15108 fee151e4 fee15108 AFD!AfdAccept+0x38
+fe8c8de8  fc617322  fee15108 fee151e4 fee15108
+AFD!AfdDispatchDeviceControl+0x251
+fe8c8dfc  80107aea  fedb6da0 fee15108 fee15108 AFD!AfdDispatch+0x7e
+fe8c8e10  8014a33f  fe8c8ea0 fed69eb0 0094fcb4 NT!@IofCallDriver@8+0x38
+fe8c8e2c  80148bbc  fedb6da0 fee15108 fed29380
+NT!IopSynchronousServiceTail+0x6f
+fe8c8ea0  8015d9be  000000f4 000000dc 00000000 NT!IopXxxControlFile+0x6f6
+fe8c8ed4  801385c3  000000f4 000000dc 00000000
+NT!NtDeviceIoControlFile+0x28
+
+fe8c8ed4  77f713a3  000000f4 000000dc 00000000 NT!KiSystemService+0x83
+0094fcd4  00000000  00000000 00000000 00000000 0x77f713a3
+Module Load: \\ntstress\symbols\x86\807\Symbols\SYS\AFD.DBG (symbols
+converted & loaded)
+
+BugCheckCode . . . . .0x0000000a
+BugCheckParameter1 . .0x00000000
+BugCheckParameter2 . .0x000000ff
+BugCheckParameter3 . .0x00000001
+BugCheckParameter4 . .0x80137989
+
+KDx86> !trap fe8c8d18
+Debugger extension library [kdextx86.dll] loaded
+eax=00000000 ebx=00000000 ecx=fed57d08 edx=fed82010 esi=fed57ce8
+edi=fed57ce8
+
+eip=80137989 esp=fe8c8d8c ebp=804054b0 iopl=0    nv up di ng nz ac pe nc
+
+vip=0    vif=0
+cs=0008  ss=0010  ds=0023  es=0023  fs=0030  gs=0000
+efl=00010092
+
+ErrCode = 00000002
+0x80137989  8910             mov         dword ptr [eax],edx
+
+KDx86> u 80137989-10
+NT!@ExfInterlockedInsertHeadList@12+0x15:
+0x80137979  c20400           retn         0004
+NT!@ExfInterlockedInsertTailList@12+0x0:
+0x8013797c  9c               pushfd
+0x8013797d  fa               cli
+0x8013797e  8b4104           mov          eax,dword ptr [ecx+04]
+0x80137981  890a             mov          dword ptr [edx],ecx
+0x80137983  894204           mov          dword ptr [edx+04],eax
+0x80137986  895104           mov          dword ptr [ecx+04],edx
+0x80137989  8910             mov          dword ptr [eax],edx
+KDx86> u
+NT!@ExfInterlockedInsertTailList@12+0xf:
+0x8013798b  9d               popfd
+0x8013798c  33c1             xor          eax,ecx
+0x8013798e  7402             je
+@ExfInterlockedInsertTailList@12+00000016 (80137992)
+0x80137990  33c1             xor          eax,ecx
+0x80137992  c20400           retn         0004
+0x80137995  2e8bc0           mov          eax,eax
+NT!@ExfInterlockedRemoveHeadList@8+0x0:
+0x80137998  9c               pushfd
+0x80137999  fa               cli
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Workstation and
+Windows NT Server version 3.5. This problem has been corrected in the latest
+U.S. Service Pack for Windows NT version 3.5. For information on obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

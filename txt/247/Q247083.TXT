@@ -1,0 +1,61 @@
+DOCUMENT:Q247083  12-DEC-2001  [exchange]
+TITLE   :XCLN: Location of Microsoft Importers for Lotus cc:Mail & Notes
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5,5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55 exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Importers for Lotus cc:Mail Archives and Notes Mail move messages
+from existing cc:Mail archive files and Notes mail databases to Microsoft
+Exchange server, allowing users to preserve business-critical information. These
+importers help automate the migration process from cc:Mail and Notes to Exchange
+server, making it less time and resource intensive for IT and users. As part of
+the migration process the importers also resolve the addresses of authors as
+they convert messages, allowing users to "reply" and "reply-all" directly from
+Exchange.
+
+For more detailed information on the Microsoft Importers for Lotus cc:Mail
+archive and Notes mail utility, please read the Mailconv.rtf and Readme.rtf
+files included with MMail.exe.
+
+MORE INFORMATION
+================
+
+The Microsoft Importers for Lotus cc:Mail Archives and Notes Mail are available
+at the following location:
+
+   http://www.microsoft.com/exchange/downloads/2000/NotesImporter.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP3
+Version           : :5.5,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

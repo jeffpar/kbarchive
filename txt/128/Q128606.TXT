@@ -1,0 +1,63 @@
+DOCUMENT:Q128606  08-AUG-2001  [winnt]
+TITLE   :Network Connectivity Problems with NetFlex-L ENET/PCI NIC
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an Integrated NetFlex-L ENET/PCI (PCNTN3.SYS) network interface
+card (NIC) in Windows NT version 3.5 on Compaq computers, the following network
+connectivity problems may occur:
+
+   - Client computers may disconnect.
+   - Your computer may not respond to client computer requests.
+
+CAUSE
+=====
+
+This problem occurs when interrupts are disabled in the deferred processing,
+interrupt processing, and reset routines.
+
+
+RESOLUTION
+==========
+
+To correct this problem, obtain and install the PCNTN3.SYS driver (version 2.27)
+included in the Compaq Support Software Diskette (SSD), version 1.14 (SP1081).
+
+The Compaq products discussed here are manufactured by Compaq Computer Corp., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding the products' performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

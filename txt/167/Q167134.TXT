@@ -1,0 +1,62 @@
+DOCUMENT:Q167134  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Open Visual SourceSafe to a Specific Project
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe contains the ability to open the Visual SourceSafe Explorer to
+a specific project.
+
+MORE INFORMATION
+================
+
+To open Visual SourceSafe at a specific project you use -P switch. For example:
+
+   C:\app\ss50\win32\SSEXP.EXE -p$/Juniper/Specs
+
+NOTE: If a project name contains spaces you need to put quotation marks around
+the entire path to the project:
+
+   C:\app\ss50\win32\SSEXP.EXE -p"$/Juniper/Specs Revision"
+
+This can also be combined with the -S switch to open a specific database to a
+specific project. For example:
+
+   C:\app\ss50\win32\SSEXP.EXE -s\\fs1\scc\sslib -p$/Juniper/Specs
+
+You can also create a Shortcut in Windows 95 or Windows NT to automatically bring
+up a specific project when you double-click it.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe500 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe500
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

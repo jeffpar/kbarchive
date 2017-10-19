@@ -1,0 +1,65 @@
+DOCUMENT:Q166531  01-MAY-1999  [exchange]
+TITLE   :XCLN: Mac Attachments Are Unrecognizable After Crossing IMC
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A Macintosh attachment in a message comes across as an unrecognizable document
+after crossing the Internet Mail Connector (IMC). The message is sent from a
+computer running Microsoft Exchange Macintosh client 4.0 Service Pack 3 (SP3) to
+a computer running Microsoft Exchange Macintosh client 5.0. Both IMCs are
+configured to send attachments in Binhex, always sending rich text.
+
+CAUSE
+=====
+
+Macintosh attachments sent from Microsoft Exchange Server 4.0 SP3 to Microsoft
+Exchange Server 5.0 in Binhex+TNEF are not received properly (wrong icon,
+unrecognizable file type, and so on). This is because of the incompatible
+Macintosh file handlings for UUENCODE/TNEF between 4.0 SP1 and 5.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem was corrected in the latest Microsoft Exchange Server
+5.0 U.S. Service Pack. For information on obtaining the service pack, query on
+the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

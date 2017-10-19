@@ -1,0 +1,93 @@
+DOCUMENT:Q148229  08-FEB-2000  [foxpro]
+TITLE   :How to Get the Full Path from a List Box
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ListBox control can display directories and file names from physical drives
+if the RowSourceType property is set to Files. The value property of the list
+box returns only the currently selected file or directory but not the full path.
+This article shows by example how to return the full path from a list box.
+
+MORE INFORMATION
+================
+
+The following sample code creates a form that contains a list box and a label
+that display the entire path to the selected file.
+
+Sample Code
+-----------
+
+   **** Start of ListPath Program
+
+   frmListPath = CREATEOBJECT("ListPath")
+   frmListPath.Show
+   READ EVENTS
+
+   DEFINE CLASS ListPath AS Form
+        AutoCenter=.T.
+        Width = 600
+        DoCreate = .T.
+        Caption = "ListPath"
+        Name = "Form1"
+
+        ADD OBJECT List1 AS ListBox WITH ;
+                RowSourceType = 7, ;
+                Height = 193, ;
+                Left = 24, ;
+                Top = 24, ;
+                Width = 169, ;
+                Name = "List1"
+
+        ADD OBJECT Label1 AS Label WITH ;
+                AutoSize = .T., ;
+                Caption = "", ;
+                Height = 18, ;
+                Left = 216, ;
+                Top = 24, ;
+                Width = 0, ;
+                Name = "Label1"
+
+        PROCEDURE List1.InteractiveChange
+                ThisForm.Label1.Caption = This.List(2)+This.Value
+        ENDPROC
+
+        PROCEDURE list1.click
+               ThisForm.Label1.Caption = This.List(2)+This.Value
+        ENDPROC
+   ENDDEFINE
+   ******End of Program
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

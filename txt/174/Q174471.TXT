@@ -1,0 +1,63 @@
+DOCUMENT:Q174471  22-FEB-2002  [sms]
+TITLE   :SMS: Cannot Run Virus Scanner on Some SMS Client Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Systems Management Server Client files copied to the Windows and
+Windows\System32 directories of an NTFS partition on client computers running
+Windows NT are installed only with Execute permissions. Therefore, some virus
+scanning programs are unable to check these Systems Management Server files.
+
+
+WORKAROUND
+==========
+
+To work around this problem, run the virus scan program in the Administrator or
+Local System context.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem was corrected in the latest Microsoft Systems
+Management Server 1.2 U.S. Service Pack. For information on obtaining the
+service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

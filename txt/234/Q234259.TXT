@@ -1,0 +1,123 @@
+DOCUMENT:Q234259  08-MAY-2002  [win95x]
+TITLE   :Revision to AMD K6-2/350 Central Processing Unit Update
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have installed the AMD-K6-2 Update (Amdk6upd.exe) on a computer running
+Microsoft Windows 95 OEM Service Release 2, 2.1, and you are using Microsoft
+Backup to back up data to certain models of floppy disk drives, you may receive
+the following error messages:
+
+   Warning: Tape needs to be erased before operation can proceed.
+
+   Microsoft Backup unable to read from the disk or network drive. Quit and
+   restart Backup, and then try again.
+
+   Warning: This operation has been canceled by the system.
+
+CAUSE
+=====
+
+The version of Vfbackup.vxd (4.00.1112) installed by the original AMD-K6-2
+Update does not incorporate the changes to Vfbackup.vxd to alleviate the problem
+described above.
+
+RESOLUTION
+==========
+
+The AMD-K6-2 Update has been revised to incorporate a newer version of
+Vfbackup.vxd.
+
+The English version of the revised update installs a Vfbackup.vxd file with the
+following file attributes:
+
+   Date      Time    Version      Size          File name
+   ---------------------------------------------------------
+   05/25/99  11:14am 4.00.1114    18,197 bytes  Vfbackup.vxd
+
+The English version of the original update installs a Vfbackup.vxd file with the
+following file attributes:
+
+   Date      Time    Version      Size         File name
+   --------------------------------------------------------
+   01/15/97  11:12am  4.00.1112   18,197 bytes Vfbackup.vxd
+
+File information is placed in the registry by both the original and current
+update in the registry keys noted below. A QfeCheck tool that has the ability to
+detect and list this information is also installed.
+
+Note that the revised update removes and replaces the registry information placed
+there by the original update. The '(default)' values shown below are the visible
+update titles shown by the QfeCheck tool.
+
+Revised Update:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Updates\990602N1
+
+   (default): "AMD-K6-2 Update"
+
+Original update (the current update deletes this information):
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Updates\980911N1
+
+   (default): "AMD K6 Update"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95 OEM Service Release
+2, 2.1, and 2.5 with the AMD-K6-2 Update installed.
+
+MORE INFORMATION
+================
+
+For additional information about the availability of the AMD-K6-2 Update, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q192841 Difficulties Using AMD K6-2 or Athlon Central Processing Unit
+
+For additional information about the Backup error messages described in this
+article, please see the following article in the Microsoft Knowledge Base:
+
+   Q159153 Error Messages While Backing Up to Some Floppy Disk Drives
+
+For additional information about the QfeCheck tool, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q161020 Implementing Windows 95 Updates
+
+Additional query words: amd K6 350
+
+======================================================================
+Keywords          : kbtool osr2 win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

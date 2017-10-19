@@ -1,0 +1,66 @@
+DOCUMENT:Q117370  08-AUG-2001  [winnt]
+TITLE   :NCC Err Msg: IPX Initialize Failure
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 4.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run the NetWare utility RCONSOLE from Windows NT using the
+NCC (NetWare Compatible Client for Windows NT) software, the following error
+message may appear:
+
+   IPX Initialize Failure
+
+WORKAROUND
+==========
+
+Check for the following entries in the AUTOEXEC.NT file:
+
+   lh %SystemRoot%\system32\nw16
+   lh %SystemRoot%\system32\vwipxspx
+
+If the entries are present, check to see if the following associated files
+actually exist:
+
+   %SystemRoot%\system32\nw16.exe
+   %SystemRoot%\system32\vwipxspx.exe
+   %SystemRoot%\system32\vwipxspx.dll
+
+If these associated files do not exist, remove the NCC software and reinstall it
+to correctly copy these files to their appropriate locations.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

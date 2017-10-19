@@ -1,0 +1,276 @@
+DOCUMENT:Q122544  24-MAR-2000  [crossnet]
+TITLE   :UPDATE.TXT: TCP/IP-32 3.11b for Windows for Workgroups
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11; WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The following text duplicates the Microsoft TCP/IP-32 for Windows for Workgroups
+version 3.11b UPDATE.TXT file. For information on how to obtain this TCP/IP-32
+Update, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   " TCPUPDATE " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+Microsoft TCP/IP-32 version 3.11b
+
+---------------------------------
+
+   1.0 Introduction
+   2.0 Installation Instructions for TCP/IP-32 version 3.11b
+   2.1 List of Bugs Fixed in TCP/IP-32 3.11b
+   2.2 Descriptions of Bugs Fixed in TCP/IP-32 3.11b
+   3.0 More Information
+
+1.0  Introduction
+-----------------
+
+The Microsoft TCP/IP-32 version 3.11b is the latest update to the TCP/IP-32 stack
+for Windows for Workgroups 3.11. It has been updated since version 3.11a and
+includes a number of fixes, primarily to provide compatibility with several
+third-party WinSock applications, and to correct problems with using DNS to
+resolve NetBIOS names. This also has updated code related to Windows 95. This
+update is a complete refresh of TCP/IP-32 and contains all components of the
+product.
+
+This product is compatible with and supported exclusively on Windows for
+Workgroups version 3.11. If you are running a different TCP/IP product on your
+computer, you must remove it before installing Microsoft TCP/IP-32. If you
+experience difficulties with another vendor's product, remove the existing
+TCP/IP stack, exit Network Setup completely, reboot your system, and then
+proceed to add the Microsoft TCP/IP-32 drivers by following the instructions
+given in the documentation.
+
+NOTE: When you upgrade to TCP/IP-32 3.11b, you should also update your Windows
+for Workgroups operating system with the files found on the Windows NT version
+3.51 CD-ROM. This update is necessary to logon to a Windows NT domain over
+routers when using TCP/IP-32 3.11b. These files are also available on various
+electronic services in the self-extracting file, WFWFILES.EXE. For additional
+information, please see the following article in the Microsoft Knowledge Base:
+
+   Q133255 README.TXT: Windows for Workgroups Update Files
+
+2.0  Installation Instructions for TCP/IP-32 3.11b
+--------------------------------------------------
+
+There are two ways you can install the TCP/IP-32 version 3.11b upgrade on your
+computer. You can completely reinstall your TCP/IP-32 network protocol stack
+with TCP/IP-32 3.11b, which will overwrite your previous TCP/IP settings with
+default settings. Alternatively, advanced users can manually copy just the
+updated binary files to the proper directories. This will retain your TCP/IP-32
+settings, but will not update the TCP/IP-32 version number.
+
+Complete Reinstall:
+
+1. From the Network group, choose the Network Setup icon.
+
+2. Choose the Drivers button (Under Network Drivers, you will see your Network
+   Interface Card (NIC) and the network protocols used on that NIC).
+
+3. Select TCP/IP-32 3.11.
+
+4. Choose the Setup button, review and write down all of your TCP/IP-32
+   configuration information.
+
+5. Choose the Cancel button to return to the Network Drivers dialog box.
+
+6. If TCP/IP-32 3.11 is your only network protocol, then temporarily add the
+   NetBEUI network protocol by following these steps:
+
+   a. Choose the Add Protocol button.
+
+   b. Select Microsoft NetBEUI.
+
+   c. Choose the OK button (Microsoft NetBEUI will appear under Network
+      Drivers).
+
+7. Select TCP/IP-32 3.11.
+
+8. Choose the Remove button and then the Yes button to confirm.
+
+9. Choose the Add Protocol button.
+
+10. Select Unlisted or Updated Protocol and Choose the OK button.
+
+11. In the Install Driver dialog box, enter the path to the updated TCP/IP-32
+   3.11b files (You should then see Microsoft TCP/IP-32 3.11b in the Unlisted
+   or Updated Protocol dialog).
+
+12. Choose the OK button (You should then see Microsoft TCP/IP-32 3.11b in the
+   Network Drivers dialog box).
+
+13. Choose the Setup button and configure TCP/IP-32 3.11b based on the
+   information you wrote down in step 4.
+
+14. If you added Microsoft NetBEUI as a network protocol in step 6 and do not
+   want to keep it, select Microsoft NetBEUI, choose the Remove button and then
+   the Yes button to confirm.
+
+15. Choose the Close button to exit the Network Divers dialog box.
+
+16. Choose the OK button to exit the Network Setup dialog box (Setup will modify
+   system files).
+
+17. Choose the OK button (Network Setup prompts you to reboot).
+
+18. Choose the Restart Computer button (The TCP/IP-32 3.11b upgrade is now
+   complete).
+
+Manual Installation for Advanced Users:
+
+1. Copy the following files to the C:\<win_root> directory:
+
+   NOTE: By default, the Windows root directory referred to above is C:\WINDOWS.
+   If you installed Windows into a directory other than C:\WINDOWS, copy these
+   files to that directory.
+
+   05/26/95  10:57a                60,551 ARP.EXE
+   05/26/95  10:57a                81,968 FTP.EXE
+   05/26/95  10:57a                42,195 IPCONFIG.EXE
+   05/26/95  10:57a                33,227 NBTSTAT.EXE
+   05/26/95  10:57a                69,465 NETSTAT.EXE
+   05/26/95  10:57a                58,307 PING.EXE
+   05/26/95  10:57a                57,703 ROUTE.EXE
+   05/26/95  10:57a                63,904 TCP32UI.DLL
+   05/26/95  10:57a                57,216 TELNET.EXE
+   05/26/95  10:57a                55,277 TRACERT.EXE
+   05/26/95  10:57a                41,440 WINSOCK.DLL
+
+2. Copy the following files into the C:\<win_root>\SYSTEM directory:
+
+   05/26/95  10:57a                20,689 VDHCP.386
+   05/26/95  10:57a                60,729 VIP.386
+   05/26/95  10:57a                89,545 VNBT.386
+   05/26/95  10:57a                46,802 VTCP.386
+   05/26/95  10:57a                 5,323 VTDI.386
+   05/26/95  10:57a                15,850 VUDP.386
+   05/26/95  10:57a                 6,960 WSASRV.EXE
+   05/26/95  10:57a                10,612 WSOCK.386
+   05/26/95  10:57a                19,719 WSTCP.386
+
+2.1  List of Bugs Fixed TCP/IP-32 3.11b
+---------------------------------------
+
+NOTE: Use the Qxxxxxx number that precedes the title of the bug fix to query the
+Microsoft Knowledge Base to find an article about that bug.
+
+   Q121317 TCP/IP-32 version 3.11 Does Not Include Terminal Font
+   Q120051 DNS Reverse Name Resolution Requests Are Incorrect
+   Q120052 NBT Query Can Hang Computer or Drop Back To MS-DOS
+   Q122293 LMHOSTS Lookup Can Cause Intermittent System Pauses
+   Q119575 TCP/IP-32 Winsock Stops FD_READ Notification
+   Q125486 Ioctlsocket Function Returns Incorrect Data
+   Q125437 Winsock calls return WSAEINPROGRESS
+   Q121619 ARP Cache Commands May Not Work Correctly
+   Q125963 IPCONFIG Shows Leftover DHCP Parameters On Non-DHCP Clients
+   Q128725 Domain Name Ignored by Windows for Workgroups with TCP/IP-32
+
+2.2  Description of Bugs Fixed in TCP/IP-32 3.11b
+-------------------------------------------------
+
+TCP/IP-32 version 3.11 Does Not Include Terminal Font:
+
+   Beta versions of Microsoft TCP/IP-32 included a font named "Terminal" in the
+   Telnet application. This font is not included in the released version of the
+   TCP/IP-32 Telnet application.
+
+DNS Reverse Name Resolution Requests Are Incorrect:
+
+   TCP/IP-32 does not return the correct IP name when it queries the Domain Name
+   Service (DNS) because it sends an improperly formatted query to the DNS.
+
+NBT Query Can Hang Computer or Drop Back To MS-DOS:
+
+   Your computer running Windows for Workgroups version 3.11 with TCP/IP-32
+   network protocol stops responding (hangs) or drops back to MS-DOS when the
+   32-bit NetBIOS over TCP/IP (NBT) makes a query to the Domain Name Service
+   (DNS).
+
+LMHOSTS Lookup Can Cause Intermittent System Pauses:
+
+   Your computer running Windows for Workgroups version 3.11 with TCP/IP-32
+   intermittently stops responding (hangs) for about 20 seconds at a time. This
+   occurs if TCP/IP-32 is installed as a non-default network protocol and the
+   Enable LMHOSTS Lookup option in Network Setup is checked.
+
+TCP/IP-32 Winsock Stops FD_READ Notification:
+
+   FD_READ notification in a Winsock application may stop while the application
+   is running. This may cause data to be left in the input buffer, or, it may
+   cause the application to hang. This occurs when the application disables and
+   then re-enables FD_READ notification during a period of time while the
+   Windows message queue is full.
+
+Winsock: Accept() Sockets Are Unexpectedly Aborted:
+
+   Occasionally, when you execute a PUT command from an FTP client, your session
+   to the FTP server is aborted.
+
+
+Winsock calls return WSAEINPROGRESS
+
+   Windows Sockets applications running on Microsoft TCP/IP-32 may receive error
+   10036 (WSAEINPROGRESS). This problem occurs when applications process a large
+   number of Windows Sockets calls.
+
+ARP Cache Commands May Not Work Correctly
+
+   ARP -S commands may not function correctly under Microsoft TCP/IP-32 when the
+   arp cache is empty.
+
+IPCONFIG Shows Leftover DHCP Parameters On Non-DHCP Clients
+
+   If TCP/IP-32 client is configured to use DHCP and then is re-configured to
+   not use DHCP, when the command "IPCONFIG /ALL" is executed, it will show old
+   (DHCP supplied) values for certain parameters.
+
+Domain Name Ignored by Windows for Workgroups with TCP/IP-32
+
+   When a Dynamic Host Configuration Protocol(DHCP) client running TCP/IP-32
+   version 3.11 requests an IP address from a DHCP server, the IP address is
+   received but the domain name is not recognized by the Windows for Workgroups
+   client computer.
+
+3.0 More Information
+--------------------
+
+For known problems and various support options, please read README.TXT that
+accompanies Microsoft's TCP/IP-32 3.11b update.
+
+Additional query words: prodtcp32 3.11b wfw wfwg readme.txt TCPUPDATE
+
+======================================================================
+Keywords          :  kbfixlist
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311
+Version           : :3.11; WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

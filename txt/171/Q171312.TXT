@@ -1,0 +1,60 @@
+DOCUMENT:Q171312  18-DEC-1999  [mspress]
+TITLE   :CD-Key Missing from NT Evaluation Editions
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Technical Support Training ISBN 1-57231-373-0 
+ - MSPRESS Microsoft Windows NT Network Administration Training ISBN 1-57231-439-7 
+-------------------------------------------------------------------------------
+
+SYMPTOM
+=======
+
+During installation of the Microsoft Windows NT 4.0 Server or Workstation
+operating system, the setup program asks you for a CD-key and explains that this
+key may be found on the back of your CD-ROM jewel case. There is no CD-key on
+the back of the disc sleeves included in these kits.
+
+MORE INFORMATION
+================
+
+The "Microsoft Windows NT Technical Support Training" text gives detailed,
+step-by-step directions for installing Microsoft Windows NT 4.0 Server on pages
+17-82. The "Microsoft Windows NT Network Administration Training" text gives
+similar directions on pages xxiii - xxxiv.
+
+The proper CD-key to use is listed on page 44 of the "Microsoft Windows NT
+Technical Support Training" text and page xxviii of the "Microsoft Windows NT
+Network Administration Training" text.
+
+Microsoft Press recommends that you carefully read through the pages given above
+before attempting to install Microsoft Windows NT Server.
+
+Additional query words: mspress ms_press press bookbug prodnt eval evaluation kb3rdparty kbinterop
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

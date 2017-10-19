@@ -1,0 +1,83 @@
+DOCUMENT:Q148627  02-NOV-1999  [utilities]
+TITLE   :BUG: NMAKE Fails If File Names Contain Special Characters
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Program Maintenance Utility (NMAKE), used with:
+    - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to create a project file by using the NMAKE utility with a source
+file name containing certain special characters such as $, !, or #, one of the
+following errors occurs depending upon the character used:
+
+Source filename: hi$there.f90
+
+   NMAKE : fatal error U1073: don't know how to make '".\hihere.f90"'
+
+Source filename: hi!there.f90
+
+   NMAKE : fatal error U1017: unknown directive '!there.obj"'
+
+Source filename: hi#there.f90
+
+   NMAKE : fatal error U1038: internal error : lexer
+
+CAUSE
+=====
+
+NMAKE treats certain special characters as command-line arguments or macros, or
+it is unable to process them at all.
+
+RESOLUTION
+==========
+
+Avoid using special characters in source file names or use Developer Studio to
+create and manage your projects.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q140356 BUG: NMAKE Fails If Paths & File Names Have Special Characters
+
+Additional query words: 4.00 1.50
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

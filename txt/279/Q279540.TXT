@@ -1,0 +1,72 @@
+DOCUMENT:Q279540  12-NOV-2001  [msnetwork]
+TITLE   :MSN Companion Compaq IA-2 err msg "Missing operating system"
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compaq IA-2 devices only.
+
+ - When the system is booted on the COMPAQ logo comes up and remains there.
+
+ - In the upper left hand corner it reads
+
+   Missing operating system
+
+ - This is happens every time.
+
+CAUSE
+=====
+
+There is a problem with the hardware.
+
+RESOLUTION
+==========
+
+If you receive support requests from customers who wish to return MSN Companion
+Internet devices, instruct them to contact Compaq. Do not refer these customers
+back to Radio Shack.
+
+REFERENCES
+==========
+
+See also:
+
+Q279449 - MSN Companion Compaq IA-2 device has black screen
+
+QXXXXXX - MSN Companion Compaq IA-2 err msg "no boot device present, system
+halting"
+
+Additional query words: kbimu, Compaq IA-2
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

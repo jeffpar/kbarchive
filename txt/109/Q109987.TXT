@@ -1,0 +1,77 @@
+DOCUMENT:Q109987  07-DEC-2000  [pcmail]
+TITLE   :PROFS: Err Msg: IN_FORM ID Gets Out of Sequence Error
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 3.4 of the Microsoft Mail Gateway to IBM PROFS and OfficeVision Host
+Access, if two Free/Busy distributions from the same postoffice are in the
+Calendar Service Machine (MS-CSM) reader, the second distribution is usually
+rejected back to the LAN. The following error message is displayed:
+
+   OUT of Sequence Error
+
+CAUSE
+=====
+
+If Free/Busy updates are scheduled on the LAN in 15 minute intervals and there
+is heavy traffic, then two distributions may be queued for the host on any given
+upload. This may also happen if the gateway is halted for ANY reason. When the
+MS-CSM machine sends the distributions to the MS-CAL machine, MS-CAL cannot
+return confirmation of the first distribution before processing the second. The
+following error message is displayed:
+
+   OUT of Sequence Error
+
+and all LAN data is refreshed.
+
+RESOLUTION
+==========
+
+The resolutions are as follows:
+
+1. Schedule LAN distributions at intervals of 30 minutes or more.
+
+2. Direct the customer to a Microsoft Mail for PC Networks Gateway Support
+   Professional.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail Gateway to IBM
+PROFS and OfficeVision Host Access version 3.4.
+
+Additional query words: 3.40 ErrMsg
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS340
+Version           : :3.4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

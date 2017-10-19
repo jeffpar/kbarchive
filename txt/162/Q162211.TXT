@@ -1,0 +1,72 @@
+DOCUMENT:Q162211  25-MAR-2002  [win95x]
+TITLE   :"Fatal Exception 0E" May Occur During Critical Suspend
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbhw osr1 win95 kbHardwarekbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a computer equipped with advanced power management (APM), a "Fatal Exception
+0E" error may occur in VPOWERD if a critical suspend occurs while the computer
+is already in the process of suspending normally.
+
+CAUSE
+=====
+
+The Windows 95 power-management driver does not properly handle a new critical
+suspend request while it is processing a normal suspend request.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+This issue may occur if you manually suspend the computer when the computer's
+battery is critically low. Under such conditions, the low- battery condition
+could cause a critical suspend request to be issued by the computer's BIOS. If a
+critical suspend request is issued while Windows 95 is already processing the
+normal suspend request, the problem can occur.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbhw osr1 win95 kbHardware kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

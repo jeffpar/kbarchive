@@ -1,0 +1,82 @@
+DOCUMENT:Q170856  05-MAY-1999  [iis]
+TITLE   :IIS Log File May Be Truncated When Logging to Text File
+PRODUCT :Internet Information Server
+PROD/VER:WinNT:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you set Internet Information Server (IIS) to log to a text file, and you
+select Automatically Open New File Daily, Weekly, or Monthly, the current log
+file may still become truncated. As a result, further logging will be directed
+to the Inetsvn.log file.
+
+WORKAROUND
+==========
+
+Use one of the following methods:
+
+Method 1
+--------
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Edit Registry for each service.
+
+2. Set Parameters/LogFileTruncateSize to 0xffffffff.
+
+Method 2
+--------
+
+1. Force the registry to write correct value into Parameters/LogFileTruncateSize
+   through InetMgr.
+
+2. Change the logging properties by selecting When File Size Reaches option.
+   Edit a new size, and click Apply.
+
+3. Go back to original Open New File Daily option. The behavior will now be
+   correct.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 3.0.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis300
+Version           : WinNT:3.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

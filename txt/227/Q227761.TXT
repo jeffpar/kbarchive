@@ -1,0 +1,73 @@
+DOCUMENT:Q227761  10-AUG-2001  [winnt]
+TITLE   :Unable to Install Service Pack 4 from Distributed File System
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP4
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4 
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Setup restarts your computer during an installation of Windows NT Service
+Pack 4 (SP4) from a Distributed file system (DFS) share, you may receive one or
+more of the following error messages:
+
+    - Cannot find the file 'regsvr32.exe' (or one of its components). Make sure the
+   path and filename are correct and that all required libraries are available.
+
+    - Cannot find the file 'pstores..exe' (or one of its components). Make sure the
+   path and filename are correct and that all required libraries are available
+
+CAUSE
+=====
+
+This problem can occur beause after the first logon after installing SP4,
+Windows NT tries to run information stored in the registry's Runonce key.
+Several files referred to in this key have not been copied to the destination
+computer during SP4 installation, and this generates the error messages listed
+earlier in this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+When you install SP4 from a DFS share, several hundred files do not get copied
+to the destination computer.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search
+Version           : winnt:4.0 SP4
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

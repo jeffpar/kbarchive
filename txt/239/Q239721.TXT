@@ -1,0 +1,88 @@
+DOCUMENT:Q239721  28-AUG-1999  [homegame]
+TITLE   :NFL Fever 2000: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbref kbimu msgame kbFAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the minimum system requirements needed to play
+Microsoft NFL Fever 2000.
+
+MORE INFORMATION
+================
+
+To play NFL Fever 2000, you need:
+
+ - Multimedia PC with a Pentium 200 MHz or faster processor (Pentium 300 MHz or
+   faster processor recommended)
+
+ - Microsoft Windows 95 or Microsoft Windows 98 operating system
+
+ - 32 megabytes (MB) of RAM (64 MB recommended)
+
+ - 50 MB hard disk space (additional space required for DirectX 6.1 installation
+   and Windows swap file)
+
+ - Quad-speed or faster CD-ROM drive (8X or faster recommended)
+
+ - Microsoft Mouse or compatible pointing device
+
+ - Microsoft Windows 95 or Microsoft Windows 98-compatible sound card
+
+ - Speakers or headphones required for audio
+
+ - Super VGA, 16-bit color monitor
+
+ - DirectX 6.1 API (included on CD-ROM)
+
+ - 2 MB VRAM card (for software rasterizer only) or 4 MB VRAM card (for hardware
+   acceleration)
+
+ - Microsoft Direct 3D-compliant 3D graphics accelerator card and 8 MB VRAM
+   recommended
+
+ - Microsoft SideWinder game pad or other 8-button game pad recommended
+
+ - 28,800 or higher baud modem for online registration recommended
+
+ - Supports AGP Technology
+
+NOTE: You can install the NFL Fever 2000 on a Microsoft Windows NT 4.0-based
+computer, but this is not supported or recommended.
+
+NFL Fever 2000 requires DirectX 6.1 for accelerated 3D graphics support, and
+DirectX 6.1 is not supported on Microsoft Windows NT 4.0 or earlier.
+
+Additional query words: 1.00 msgame nflfever nfl2k sysreqs requires
+
+======================================================================
+Keywords          : kbref kbimu msgame kbFAQ 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

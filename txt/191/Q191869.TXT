@@ -1,0 +1,77 @@
+DOCUMENT:Q191869  09-AUG-1999  [foxpro]
+TITLE   :BUG: RELEASE MENUS _MSYSMENU Releases System Menu
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing a RELEASE MENUS _MSYSMENU command with only the Visual FoxPro system
+menu active causes the Sysmenu menu to disappear.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Help file indicates that the RELEASE MENUS should release user defined menus
+and not the System menu.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Command window, issue the following command:
+
+         RELEASE MENUS _MSYSMENU
+
+2. After pressing the ENTER key, notice that the System menu disappears. In
+   Visual FoxPro 5.x and 6.0, a small rectangular box appears in the upper
+   left-hand corner of the Visual FoxPro desktop. If you invoke the Task Bar by
+   pressing the ALT+TAB keys, you see that two Visual FoxPro icons appear.
+   Clicking the bottom of the box produces a "Menu manager internal consistency
+   error" dialog box. After clicking OK, Visual FoxPro causes an access
+   violation error.
+
+   In Visual FoxPro 3.x, the system menu disappears without any small box and any
+   errors.
+
+3. Quit Visual FoxPro and restart to restore the System menu.
+
+Additional query words: kbVFp600bug kbXBase kbVFp500abug kbVFp300bbug
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

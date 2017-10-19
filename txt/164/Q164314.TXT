@@ -1,0 +1,73 @@
+DOCUMENT:Q164314  22-FEB-2002  [winnt]
+TITLE   :WinNT Err Msg: STOP 0x0000001E in Win32k.sys When Moving Mouse
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A multiprocessor computer booting Windows NT may experience a STOP 0x0000001E
+error in Win32k.sys.
+
+CAUSE
+=====
+
+This problem occurs because Win32k.sys may improperly handle mouse movements,
+which causes an access violation.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+
+Additional query words: multi-processor multiple processor ntmp
+
+======================================================================
+Keywords          : kbenv kberrmsg kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

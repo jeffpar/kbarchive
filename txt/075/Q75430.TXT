@@ -1,0 +1,86 @@
+DOCUMENT:Q75430  04-JUL-1999  [win16sdk]
+TITLE   :PRB: Available Memory Decreases When Print Job Terminated
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly _IK kbSDKWin16
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a print job is terminated, the amount of available memory reported in the
+Program Manager's About box declines. This indicates that allocated memory
+objects remain on the global heap.
+
+CAUSE
+=====
+
+One possible cause is an application that calls the print job abort procedure
+directly through its instance thunk. If, after this call, the print job is
+aborted and the application exits its printing loop without calling the ABORTDOC
+printer escape, the print job will not be properly aborted and allocated memory
+will be left on the heap.
+
+RESOLUTION
+==========
+
+The abort procedure returns FALSE if the print job has been aborted. If the
+abort procedure returns FALSE, the application should call the ABORTDOC printer
+escape in Windows 3.0 or AbortDoc() in Windows 3.1. The following code fragment
+demonstrates this procedure:
+
+      // Call the Abort procedure
+      if (!(*lpfnAbortProc)(hDC, 0))
+          Escape(hDC, ABORTDOC, NULL, NULL, NULL);
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+An application registers its printing abort procedure with Windows by calling
+the SETABORTPROC escape in Windows 3.0 or SetAbortProc() in Windows 3.1. Windows
+automatically calls the abort procedure during the NEWFRAME or NEXTBAND escape.
+If the print job is aborted during the NEWFRAME or EXTBAND escape, Windows
+automatically calls the ABORTDOC escape/AbortDoc().
+
+If the print job is aborted when the application has called the abort procedure
+directly, the application must call the ABORTDOC escape/ AbortDoc().
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly _IK kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

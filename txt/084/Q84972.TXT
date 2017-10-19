@@ -1,0 +1,71 @@
+DOCUMENT:Q84972  04-OCT-1999  [win95x]
+TITLE   :Windows Sound Events Not Occurring at Standard Points
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows version 3.1 allows you to assign waveform audio sounds to certain events
+through the Control Panel. These events are:
+
+   Default Beep
+   Exclamation
+   Windows Start
+   Windows Exit
+   Critical Stop
+   Question
+   Asterisk
+
+However, it is not possible to reliably assign these sounds to always occur at
+given points in a program. For example, it is not possible to always have the
+Exclamation sound occur when an error occurs.
+
+MORE INFORMATION
+================
+
+System sounds are dependent upon the application in which they are occurring. To
+produce a sound, an application needs to notify Windows that a sound is to
+occur, and then tell Windows which system sound to play. The application will
+specify one of the seven default system sounds, or any sound event that it has
+added to this list.
+
+This means that you cannot add sound events to the default list and have an
+application play that sound, unless the application has been specifically
+written to call that sound event.
+
+Additionally, applications have not standardized on when these sound events
+should occur. Therefore, one application may play the Default Beep sound when an
+error occurs while another application might play the Critical Stop sound.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

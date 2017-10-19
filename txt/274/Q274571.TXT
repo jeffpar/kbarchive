@@ -1,0 +1,252 @@
+DOCUMENT:Q274571  07-MAY-2002  [homegame]
+TITLE   :Games: Font Related Issues in Microsoft Games
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Links LS 1998 Edition 
+ - Links LS 1999 Edition 
+ - Microsoft Age of Empires, version 1.0 
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+ - Microsoft Allegiance, version 1.0 
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Baseball 2000 
+ - Microsoft Baseball 2001 
+ - Microsoft Close Combat for Windows 1.0 
+ - Microsoft Close Combat: A Bridge Too Far, version 2.0 
+ - Microsoft Close Combat III: The Russian Front 
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Flight Simulator 98 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 2002 
+ - Microsoft Flight Simulator 2002 Professional Edition 
+ - Microsoft Golf 1999 Edition 
+ - Microsoft Golf 2001 Edition 
+ - Microsoft Midtown Madness, version 1.0 
+ - Microsoft Monster Truck Madness 2, version 2.0 
+ - Microsoft Motocross Madness, version 1.0 
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+ - Microsoft NFL Fever 2000, version 1.0 
+ - Microsoft Pandora's Box, version 1.0 
+ - Microsoft StarLancer, version 1.0 
+ - Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use one of the programs listed at the beginning of this article, you
+may experience any of the following symptoms:
+
+ - Fonts may not be displayed in the program.
+
+ - Fonts may be displayed as symbols in the program.
+
+ - Fonts may be distorted in the program.
+
+CAUSE
+=====
+
+These behaviors can occur if any of the following conditions is true:
+
+ - Too many fonts are installed on the computer.
+
+ - One or more fonts are damaged.
+
+ - A font that is included with Microsoft Windows has been replaced by an
+   incompatible version of the font.
+
+ - The video driver that is installed on the computer is not working correctly.
+
+ - The program is using the Monotype Sorts font instead of the default font for
+   the program.
+
+RESOLUTION
+==========
+
+To resolve these issues, use the following methods, in the order in which they
+are presented.
+
+After you perform each method, test to see if the issue is resolved. If the issue
+continues to occur, proceed to the next method.
+
+Reduce the Number of Fonts in the Fonts Folder to 700 or Fewer
+--------------------------------------------------------------
+
+To reduce the number of fonts in the Fonts folder:
+
+1. Quit any programs that are running on your computer.
+
+2. Create a new folder on the Microsoft Windows desktop.
+
+   To create a new folder, right-click a blank area on the Windows desktop, click
+   New, click Folder, type the name that you want, and then press ENTER.
+
+3. Double-click the new folder to open it.
+
+4. Click Start, click Run, type "fonts" (without the quotation marks) in the
+   Open box, and then click OK.
+
+5. Right-click a blank area of the taskbar, and then click Tile Windows
+   Horizontally.
+
+   NOTE: The Fonts folder window and the window for the folder that you created
+   in step 2 should equally divide your screen.
+
+6. Right-click and drag any font that is 3 kilobytes (KB) or less in size from
+   the Fonts folder to the folder that you created in step 2 of this procedure,
+   and then click "Move here".
+
+To select multiple fonts, use one of the following methods:
+
+    - To select consecutive font files, click the first item, press and hold
+      down SHIFT, and then click the last item.
+
+    - To select font files that are not consecutive, press and hold down CTRL,
+      and then click each item.
+
+7. Test to see if the issue is resolved. If the issue continues to occur, repeat
+   step 6, except drag the following fonts from the Fonts folder to the folder
+   that you created in step 2:
+
+    - Monotype Sorts
+    - Monotype Sorts 2
+
+8. Test to see if the issue is resolved. If the issue still occurs, continue to
+   the next step.
+
+9. Note the number of fonts that is displayed in the lower-left corner of the
+   Fonts folder window.
+
+   If the Fonts folder contains more than 700 fonts, repeat step 6 to drag
+   additional fonts from the Fonts folder until you reduce the number of fonts
+   in the Fonts folder to 700 or fewer.
+
+NOTE: Before you drag additional fonts from the Fonts folder, attempt to
+determine which fonts your Microsoft multimedia program uses so that you do not
+move those fonts. To do this:
+
+   a. Insert the installation CD-ROM for the program into the CD-ROM drive while
+      holding down the SHIFT key to prevent the program from starting
+      automatically.
+
+   b. Click Start, point to Find, and then click "Files or Folders".
+
+   c. In the Named box, type "*.ttf" (without the quotation marks).
+
+   d. In the "Look in" box, click your CD-ROM drive, and then click Find Now.
+
+10. Test to see if the issue is resolved. If the issue still occurs, repeat step
+   6, except drag the fonts that the Microsoft multimedia program uses, and
+   then uninstall and reinstall the program.
+
+Reduce Graphics Hardware Acceleration in Windows
+------------------------------------------------
+
+To reduce graphics hardware acceleration in Windows:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Performance tab, click Graphics.
+
+4. Move the Hardware Acceleration slider until it is one notch to the right of
+   None (the Basic acceleration setting).
+
+5. Click OK, and then click Close.
+
+6. When you are prompted to restart the computer, click Yes.
+
+If this resolves the issue, contact the manufacturer of your video adapter to
+inquire about how to obtain and install the latest video driver for your video
+adapter.
+
+For information about how to contact your hardware manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+To identify the manufacturer and model of your video adapter:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. In Microsoft Windows 95 or Microsoft Windows 98, click the Device Manager
+   tab.
+
+   In Microsoft Windows 2000, click the Hardware tab, and then click Device
+   Manager.
+
+4. Click the plus sign (+) next to "Display adapters" to expand the branch.
+
+5. Under the "Display adapters" branch, note the manufacturer and model of your
+   video adapter, and then click OK.
+
+6. Close all open windows.
+
+MORE INFORMATION
+================
+
+How To Determine Which Fonts Are Used by a Microsoft Multimedia Program
+-----------------------------------------------------------------------
+
+To attempt to determine which fonts are used by a Microsoft multimedia program:
+
+1. Insert the installation CD-ROM for the program into the CD-ROM drive while
+   holding down the SHIFT key to prevent the program from starting
+   automatically.
+
+2. Click Start, point to Find, and then click "Files or Folders".
+
+3. In the Named box, type "*.ttf" (without the quotation marks).
+
+4. In the "Look in" box, click the letter that represents your CD-ROM drive, and
+   then click Find Now.
+
+If you do not find any fonts, any of the following items may be true:
+
+    - The program does not install any special fonts. The program uses Windows
+      fonts.
+
+    - The fonts for that program are contained in a compressed file.
+
+    - The fonts are located on a different CD-ROM for the program.
+
+Additional query words: msgame aoe fltsim mcm
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbLinkGolfSearch kbAOE kbGamesSearch kbFlightSimSearch kbZNotKeyword kbGolf2001 kbGolf99 kbGolfSearch kbNFLFever2000 kbNFLSearch kbMSNSearch kbAllegianceSearch kbPandoraSearch kbMotocrossSearch kbStarlancerSearch kbAsheronSearch kbCloseCombatSearch kbBaseballSearch kbMidtownMadSearch kbMonsterTMSearch kbAOESearch kbMidtownMadness kbAllegiance kbAsheron100 kbStarlancer kbMonsterTM2 kbAOEExpRome kbAOE2Kings kbBaseBall2001 kbCloseCombat2 kbCloseCombat3 kbCloseCombat kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbMotocrossM kbPandorasBox kbLinksLS1998 kbLinksLS1999 kbNBAInsideDrive2000 kbBaseBall2000 kbTrainSim kbFlightSim2002 kbFlightSim2002Pro
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

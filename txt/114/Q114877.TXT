@@ -1,0 +1,85 @@
+DOCUMENT:Q114877  25-JUN-2002  [accother]
+TITLE   :ADT2: ADT Upgrade Rebate Coupon Lists Incorrect Requirements
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+The coupon labeled "$100 U.S./$135 CDN Upgrade rebate by mail!" located on the
+front of the Microsoft Access Developer's Toolkit version 2.0 box incorrectly
+states that in order to collect the $100 U.S/$135 CDN rebate, you must provide
+proof of ownership of both the Microsoft Access Distribution Kit version 1.1 and
+Microsoft Visual Basic version 3.0. This information is incorrect.
+
+RESOLUTION
+==========
+
+To collect the rebate, you need only provide proof of ownership of either the
+Microsoft Access Distribution Kit version 1.1 OR Microsoft Visual Basic version
+3.0.
+
+MORE INFORMATION
+================
+
+The proof of purchase criteria on the reverse of the coupon incorrectly reads:
+
+   1) Proof of ownership of previous version (one of the following):
+
+      A) The title page of your manual for Microsoft Access
+         Distribution Kit version 1.1 and Microsoft Visual Basic
+         programming system version 3.0.
+
+      B) A photocopy of your dated sales receipt for Microsoft Access
+         Distribution Kit version 1.1 and Microsoft Visual Basic
+         programming system version 3.0.
+
+The criteria should read:
+
+   1) Proof of ownership of previous version (one of the following):
+
+      A) The title page of your manual for Microsoft Access
+         Distribution Kit version 1.1 or Microsoft Visual Basic
+         programming system version 3.0.
+
+      B) A photocopy of your dated sales receipt for Microsoft Access
+         Distribution Kit version 1.1 or Microsoft Visual Basic
+         programming system version 3.0.
+
+Note that you need to provide proof of ownership of only one of the products to
+collect the rebate.
+
+Additional query words: ticket sticker
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+Version           : WINDOWS:2.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,72 @@
+DOCUMENT:Q198474  12-MAY-1999  [exchange]
+TITLE   :XWEB:Jscript Errors Refreshing Appointment in Outlook Web Access
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5,5.5SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Internet Explorer version 3.x for Windows 95 or Windows NT, and you
+attempt to refresh an appointment or meeting request in Outlook Web Access (OWA)
+by pressing the F5 key, you see the following error messages:
+
+   Microsoft JScript runtime error
+
+   In frame: command_fr
+
+   [Line: 27] Object doesn't support this property or method
+
+   Microsoft JScript runtime error
+
+   In frame: form_fr
+
+   [Line: 115] Object doesn't support this property or method
+
+This behavior does not occur with Internet Explorer version 4.x.
+
+WORKAROUND
+==========
+
+To work around this problem, close and reopen the appointment or meeting
+request.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0,5.5,5.5SP1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

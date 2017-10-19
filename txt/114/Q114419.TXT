@@ -1,0 +1,73 @@
+DOCUMENT:Q114419  08-AUG-2001  [winnt]
+TITLE   :Cannot Find DC with Multiple Installations on Single Computer
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+ - Microsoft Windows NT Workstation version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you have installed multiple configurations of Windows NT on a single
+computer using the same machine name for each installation, when you start
+Windows NT, it cannot find the domain controller.
+
+CAUSE
+=====
+
+When you run multiple installations of Windows NT on a single computer using the
+same machine name for each installation, one of these instances can modify the
+secure channel account password. This keeps the other instances from
+re-establishing communications with the domain controller.
+
+WORKAROUND
+==========
+
+WARNING: Using the Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of the Registry Editor
+can be solved. Use this tool at your own risk.
+
+To prevent this, set this registry key:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetLogon\Parameters
+
+to this value:
+
+   DisablePasswordChange = [REG_DWORD] 0x01
+
+- or -
+
+use different machine names for each installation.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : winnt:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

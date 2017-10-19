@@ -1,0 +1,117 @@
+DOCUMENT:Q317645  30-MAY-2002  [homegame]
+TITLE   :MTM2: Game Controller Not Detected with Game
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SideWinder Force Feedback 2 
+ - Microsoft SideWinder 3D Pro 
+ - Microsoft SideWinder Force Feedback Pro 
+ - Microsoft SideWinder Force Feedback Wheel 
+ - Microsoft SideWinder Force Feedback Wheel USB 
+ - Microsoft SideWinder FreeStyle Pro 
+ - Microsoft SideWinder game pad Pro 
+ - Microsoft SideWinder game pad 
+ - Microsoft SideWinder Joystick 1.0 (USB) 
+ - Microsoft SideWinder Plug and Play game pad USB 
+ - Microsoft SideWinder Precision 2 
+ - Microsoft SideWinder Precision Pro 
+ - Microsoft SideWinder Precision Racing Wheel 
+ - Microsoft SideWinder Strategic Commander 
+ - Microsoft SideWinder Dual Strike 
+ - Microsoft Monster Truck Madness 2, version 2.0 
+ - the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an early version of a game on Windows XP, your Microsoft Sidewinder
+device may not appear to be selectable in the game.
+
+
+CAUSE
+=====
+
+This issue can occur when any of the following conditions are true on a Windows
+XP-based computer:
+
+ - You have two SideWinder devices, one connected to the game port and the other
+   connected to the universal serial bus (USB) port.
+
+ - You have multiple gaming devices installed on the computer.
+
+ - The device is not selected as the preferred device.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method.
+
+Devices on Game Port and USB Port
+---------------------------------
+
+For additional information about the conflict between devices on a game port and
+devices on a USB port , click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q260175 SideWinder: USB Game Controller No Longer Functions When You Connect
+   Another Game Controller to the Game Port
+
+Select Device as Preferred
+--------------------------
+
+Follow these steps to select the device that you want to use as the preferred
+device:
+
+1. Quit the game.
+
+2. Click Start, and then click Control Panel.
+
+3. Do one of the following:
+
+    - If you are prompted to pick a category, click "Printers and Other
+      Hardware", and then click Game Controllers.
+
+-or-
+
+    - If you have the classic view in your Control Panel, double-click Game
+      Controller.
+
+4. Click Advanced.
+
+5. In the "Preferred device" box, point to the arrow, and then click the
+   controller that you want to use.
+
+6. Click OK twice.
+
+7. Start the game, and then select the controller.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbOSWinSearch kbMonsterTMSearch kbOSWinXP kbSidewinderSearch kbMonsterTM2 kbOSWinXPSearch kbSideWinderDualStrike kbSideWinderFF2 kbSideWinderFFPro kbSideWinderFFWheel kbSideWinderFFWheelUSB kbSideWinderFreestylePro kbSideWinderGamePad kbSideWinderGamePadPro kbSideWinderStrategic kbSideWinderPrecisionPro kbSideWinderPrecisionRacing kbSideWinderPNP kbMSHardwareSearch kbGamesSearch
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

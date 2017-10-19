@@ -1,0 +1,77 @@
+DOCUMENT:Q162724  03-JUN-1999  [homegame]
+TITLE   :Golf 3.0: "Illegal Player" Listed as a Player Name
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.0
+WINDOWS
+kbusage kbsetup kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You see "Illegal Player" listed as a player name in Microsoft Golf, version 3.0.
+
+CAUSE
+=====
+
+This occurs if a player has become corrupt, or when a player from a previous
+version of Golf does not get removed properly after an installation of Golf 3.0
+to the same folder.
+
+RESOLUTION
+==========
+
+If "Illegal Player" appears as an available player, simply delete and recreate
+the player.
+
+To delete the player in Golf 3.0, do the following:
+
+1. Start Microsoft Golf, version 3.0.
+
+2. Click New Game.
+
+3. Click on Illegal Player in the available or selected player list to select
+   it.
+
+4. Click Edit.
+
+5. Click Delete.
+
+6. Click Yes when asked if you want to permanently remove the player.
+
+To recreate a new player, click New Game, click Create, and select the available
+options.
+
+Additional query words: 3.00 golf install delete setup players
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

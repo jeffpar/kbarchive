@@ -1,0 +1,72 @@
+DOCUMENT:Q112157  10-NOV-1999  [pcmail]
+TITLE   :PC Setup: Err Msg: Network Name Entered Is a Reserved Name
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Mail 3.2 setup program used to install a new postoffice displays the
+following message if you use the network name of MSMAIL:
+
+   Network name entered is a reserved name.
+
+The installation program of version 3.0 of Mail for PC Networks exhibits the same
+behavior.
+
+CAUSE
+=====
+
+MSMAIL is the reserved name for the Mail Connection Gateway.
+
+RESOLUTION
+==========
+
+Choose a different name for network name. If you do not have the Mail Connection
+Gateway installed, the Mail Administrator program (ADMIN.EXE) will allow you to
+change your network name to MSMAIL. To change the name, run the Mail
+Administrator program and choose Config, Password.
+
+MORE INFORMATION
+================
+
+For more information about changing the network name, please refer to the
+following sources:
+
+   Version     Source                                      Page(s)
+   ---------------------------------------------------------------------
+   3.0         Microsoft Mail "Administrator's Guide"       135
+   3.2         Microsoft Mail "Administrator's Guide"      76-77
+
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

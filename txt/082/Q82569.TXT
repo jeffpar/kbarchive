@@ -1,0 +1,67 @@
+DOCUMENT:Q82569  07-NOV-1999  [win95x]
+TITLE   :Extended Characters in Filenames Under Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under Microsoft Windows operating system version 3.1, a number of applications
+have problems with extended characters in filenames that "worked" under Windows
+3.0.
+
+The root of this problem involves the mapping of the extended ANSI set between
+128-159 under Windows 3.1, which was NOT mapped under Windows 3.0.
+
+MORE INFORMATION
+================
+
+The difference in mapping between 3.1 and 3.0 involves the characters in the
+extended ANSI set between 128-159. Windows version 3.1 maps the extended
+characters between 128-159, whereas Windows 3.0 does not. When a file is opened,
+Windows assumes that the filename is an ANSI character string for the base ANSI
+character set and a special conversion is made to address the extended character
+set. Some applications also do the conversion themselves. If the conversion is
+done twice, the file cannot be opened.
+
+
+This extra character support is important for international interaction, as these
+characters are fundamental characters in most European alphabets.
+
+This problem has always occurred for the characters 160 and above. It is more
+noticeable with Windows 3.1 due to the extensive use of the characters 128
+through 159. However, removing this support from Windows 3.1 would only lessen
+the occurrence of this problem, not solve it.
+
+
+Additional query words: 3.10 3.11 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

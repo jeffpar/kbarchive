@@ -1,0 +1,52 @@
+DOCUMENT:Q134970  25-JUL-2001  [sms]
+TITLE   :Login Scripts are Not Modified on NetWare Servers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup kbInventory smsinv sms
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+When you add a NetWare domain and NetWare servers to a Systems Management
+Server site, the login scripts are not modified when "Automatically
+Configure Logon Scripts" is selected if the system login script does not
+exist.
+
+For NetWare domains, the system login scripts for all the domains' NetWare
+file servers are modified to run Client Setup and Inventory Agent. If the
+NetWare system login script does not exist, Systems Management Server fails
+to complete this task.
+
+Systems Management Server looks for the NET$LOG.DAT file in the \PUBLIC
+subdirectory of the SYS volume, and modifies this file to include Systems
+Management Server Setup and Inventory Agent. If this file is not present,
+Systems Management Server cannot complete the requested login script
+modifications.
+
+Additional query words: prodsms sms clients site properties
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbInventory smsinv sms 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

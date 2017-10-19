@@ -1,0 +1,74 @@
+DOCUMENT:Q83402  11-OCT-1999  [win95x]
+TITLE   :Removing Wingdings Font Disables Flying Windows Screen
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you remove the Wingdings TrueType font that ships with Microsoft Windows
+version 3.1 from the list of installed fonts in Control Panel, the Flying
+Windows screen saver no longer displays the Windows flag. Instead, the flags are
+replaced with small colored dots.
+
+CAUSE
+=====
+
+The flag logo is actually character number 255 in the Wingdings font set; that
+character must be installed so that the screen saver utility can recognize and
+use it.
+
+MORE INFORMATION
+================
+
+You can change the character that displays in the logo by modifying the file
+SSFLYWIN.SCR as follows:
+
+1. Make a backup copy of the SSFLYWIN.SCR file.
+
+2. Open the SSFLYWIN.SCR file in Microsoft Write and choose No Conversion.
+
+3. Search for the word "display." Right before the word display is the y umlaut
+   character (the letter "y" with two dots over it).
+
+4. Change that character to another character.
+
+   NOTE: You can use Character Map to find a character number. In the character
+   set that Windows uses, character number 255 is the y umlaut character for
+   regular text fonts (such as Times New Roman). By substituting a different
+   character, you can make a different Wingdings symbol appear.
+
+5. Save the file as SSFLYWIN.SCR, and test it in the Desktop dialog box of
+   Control Panel.
+
+Additional query words: 3.1 screensaver true type
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

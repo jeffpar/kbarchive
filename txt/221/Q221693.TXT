@@ -1,0 +1,79 @@
+DOCUMENT:Q221693  20-MAY-1999  [foxpro]
+TITLE   :FIX:C0000005 Fatal Error With This.Caption=This.Text In GotFocus
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbContainer kbCtrl kbOOP kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kbVS6
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After adding a custom property named Text to a form and then using the code
+This.Caption = This.Text from a form method, you might receive the error:
+
+   Fatal error: Exception code=C0000005
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Add a new form property and name it "Text."
+
+3. In either the form's Activate or GotFocus event, paste the following code:
+
+   ThisForm.Text = "Test Form"
+   ThisForm.Caption = ThisForm.Text
+
+4. Save and run the form.
+
+5. Close the form and run the form again if necessary to create the error.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbContainer kbCtrl kbOOP kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,190 @@
+DOCUMENT:Q298499  12-JUN-2001  [msnetwork]
+TITLE   :Uninstalling America Online (AOL)
+PRODUCT :The Microsoft Network
+PROD/VER::1.3,2.0,2.5,2.5 (OEM Release),2.51,2.52,2.6,5.0,5.1,5.2,5.3,5.4,6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.3, 2.0, 2.5, 2.5 (OEM Release), 2.51, 2.52, 2.6, 5.0, 5.1, 5.2, 5.3, 5.4, 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to uninstall America Online software.
+
+MORE INFORMATION
+================
+
+Uninstalling AOL 3.0 (for Windows 95)
+-------------------------------------
+
+You can use the Add/Remove Programs feature in Windows 95 to remove the American
+Online (AOL) software (and registry entries) from your computer.
+
+To uninstall AOL 3.0 for Windows 95
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click the Install/Uninstall tab.
+
+4. Select America Online.
+
+5. Click the Add/Remove button.
+   Note: You can leave the Fast Mode button checked if you have only one version
+   of the AOL software installed. If you are not sure, uncheck this box.
+
+6. Click OK.
+   An America Online for Windows Uninstaller prompt appears, along with the
+   directory containing the AOL software.
+
+7. Click OK.
+   You will be prompted to restart your computer after uninstalling the AOL 3.0
+   software.
+
+8. Click Restart Now.
+
+Uninstalling AOL 6.0 (for Windows 98 and Windows NT)
+----------------------------------------------------
+
+To uninstall AOL 6.0 for Windows 98 and Windows NT
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Select America Online.
+
+4. Click the Add/Remove button, and then click Change/Remove or Remove.
+   Note: To remove more than one copy of AOL at one time, you can select multiple
+   copies of AOL in this window. To save your downloaded files and your Personal
+   Filing Cabinet files to your Desktop, select Downloaded files and Personal
+   Filing Cabinet files.
+
+5. Select the copy of America Online you want to remove, and then click Next.
+   Note: If you have removed all copies of America Online from your computer,
+   then skip to step 7.
+
+6. Select the copy of America Online you wish associate your AOL sounds and AOL
+   icons to, and then click Next.
+   Note: You may click Skip if you do not want to re-associate your AOL sounds
+   and AOL icons and want to delete the AOL shortcuts from your computer.
+
+7. Click Finish to complete the uninstall process.
+
+8. If prompted to restart the computer, click OK.
+   When you uninstall the AOL software, there will be two folders that are
+   automatically saved to your Windows Desktop by default. These folders are as
+   follows:
+
+    - AOL Saved Files
+
+    - AOL Saved PFC
+
+   These folders include any personal files you have created that are part of the
+   software. The AOL Saved Files folder contains downloaded files. The AOL Saved
+   PFC folder contains a folder entitled Organize. This folder contains your
+   Screen Names along with Personal Filing Cabinets and Favorite Places. For
+   versions of AOL previous to AOL 6.0, your e-mail Address Book will be
+   included in the Organize folder. Uninstalling will not remove your AOL
+   Address Book, AOL Buddy List, AOL Stock Portfolio, or any e-mail that you
+   have not yet read. These settings are saved on America Online servers. The
+   AOL logging feature (to log chat and Instant Message notes) will be saved in
+   your My Documents folder as a default setting, so you will not lose this
+   information unless you have changed the directory to save your log files to
+   an AOL folder.
+
+To remove AOL 6.0 registry keys
+
+1. Click Start, point to Run, and then type C:\windows\regedit.exe.
+
+2. Under HKEY_LOCAL_MACHINE/software delete anything that includes the word
+   "AOL" or "America Online".
+
+Disabling and uninstalling AOL Instant Messenger
+------------------------------------------------
+
+To avoid receiving AOL Instant Messenger (AIM) "Registration" or "Sign On"
+prompts, you must uninstall AIM.
+
+To disable AIM for Windows 95/98 and Windows NT
+
+1. On the AIM sign in screen, click the Setup button.
+
+2. Click the Miscellaneous tab.
+
+3. Clear the Start Netscape AIM when Windows starts box.
+   AOL Instant Messenger will no longer start automatically.
+
+To completely uninstall AIM for Windows 95/98 and Windows NT
+
+1. Start Windows Explorer.
+
+2. Delete AIM from the Personal Bookmark folder.
+
+3. Delete launch.aim from every user profile.
+
+4. In "...Communicator\Program\Aim", delete the AIM folder, the subfolder
+   Sounds, and all folder contents.
+
+5. Click Start, click Run, and then type Regedit.
+
+6. Click Edit, click Find, and then type AIM.
+
+7. Delete all AIM files.
+
+8. Click Edit, click Find, and then type AOL.
+
+9. Delete all AOL files, and then restart your computer.
+
+To completely uninstall AIM for Macintosh
+
+1. In your Macintosh's System folder, remove the PromoLauncher alias from your
+   Startup Items folder.
+   This will eliminate the Sign Up for Netscape AOL Instant Messenger boxes at
+   startup.
+
+2. Delete the AIM Menu extension from your Extensions folder.
+   This will eliminate the AIM menu from the upper-right hand corner of your menu
+   bar. You may also wish to remove the IdleTime extension that the AIM
+   installer places in your Extensions folder. Because you may have other
+   applications that depend upon this extension, such as UserLand Software's
+   Frontier scripting system, we recommend using caution when removing it.
+
+3. In your Netscape Navigator (or Netscape Communicator) folder, remove the
+   "Netscape AOL Instant Messenger" folder.
+   This will eliminate the actual AIM application and associated data files from
+   your Macintosh.
+   Note: The downloadable installers for Netscape Navigator do not contain AIM.
+   If you are a system administrator, you can avoid installing AIM by using
+   Netscape Mission Control Desktop to remove the files before install.
+
+Additional query words: kbimu; AOL; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610 kbMSN520 kbMSN530 kbMSN510 kbMSN500 kbMSN200 kbMSN100 kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN250 kbMSN250OEM
+Version           : :1.3,2.0,2.5,2.5 (OEM Release),2.51,2.52,2.6,5.0,5.1,5.2,5.3,5.4,6.0,6.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

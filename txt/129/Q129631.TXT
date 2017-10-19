@@ -1,0 +1,174 @@
+DOCUMENT:Q129631  12-AUG-1999  [foxpro]
+TITLE   :Understanding Code Pages in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses Code Pages in Visual FoxPro and covers the following
+topics:
+
+ - Description of a Code Page.
+
+ - How Visual FoxPro Uses Code Pages.
+
+ - Using Code Pages in the Development Environment.
+
+ - Checking for Code Page Marks in .DBF Files.
+
+ - Entering Code Page Characters Not Represented by Keys on the Keyboard.
+
+ - Using Code Pages from Earlier Versions of FoxPro.
+
+ - Code Pages Supported by Visual FoxPro.
+
+MORE INFORMATION
+================
+
+Description of a Code Page
+--------------------------
+
+A code page is a set of characters specific to a language or hardware platform.
+In Visual FoxPro, a code page is a table of characters and corresponding numbers
+in memory that Visual FoxPro uses to display data properly.
+
+Some characters available in one code page are not available in another, and
+accented characters are not represented by the same values across platforms and
+code pages.
+
+How Visual FoxPro Uses Code Pages
+---------------------------------
+
+When you create a file with a table file structure, Visual FoxPro automatically
+gives it a code page mark, indicating which code page the file uses. For
+example, if you enter the letter C in a .DBF file, the letter is stored on your
+hard disk as the number 67. When you open the file, Visual FoxPro determines its
+code page, inspects the code page to find the character corresponding to the
+number 67, and then displays the character (C) on your monitor.
+
+Using Code Pages in the Development Environment
+-----------------------------------------------
+
+Visual FoxPro supports many code pages and each code page contains characters
+unique to certain locales. If you want to create an application for a specific
+locale, you must create the application's components using the code page
+designed for that locale and environment. For example, to create an application
+for use in Russia, you should use code page 1251, 866, or 10007 for users in the
+Windows, MS-DOS, or Macintosh environments, respectively.
+
+TIP: To create successive files with the same code page, first specify the code
+page by setting the CODEPAGE parameter in the CONFIG.FPW file. Then restart
+Visual FoxPro before creating the files.
+
+Checking for Code Page Marks in .DBF Files
+------------------------------------------
+
+You can determine whether a .DBF file has a code page mark by using the CPDBF()
+function after opening the file or by having Visual FoxPro check when you open
+the file. To check for code page marks automatically:
+
+1. From the Tools menu, choose Options.
+
+2. Select the Data tab.
+
+3. Set the Prompt for Code Page check box, if it is not already set.
+
+To save this setting for future sessions of Visual FoxPro, choose Set as
+Default.
+
+Entering Code Page Characters Not Represented by Keys on the Keyboard
+---------------------------------------------------------------------
+
+If you need to enter characters not represented by keys on your keyboard, you
+must enter these characters using the ALT key in conjunction with keys on the
+numeric keypad. However, remember that the same key combination in different
+environments often displays different results. For example, if you enter
+ALT+0182 with code page 1252 in Visual FoxPro, you see a paragraph symbol. In
+contrast, if you enter ALT+0182 with code page 437 in FoxPro for MS-DOS, you see
+a graphic character with a double vertical line meeting a single horizontal
+line.
+
+Using Code Pages from Earlier Versions of FoxPro
+------------------------------------------------
+
+If you use a file from an earlier version of FoxPro, the file might not have a
+code page mark. If the mark is missing when you open the file, Visual FoxPro
+prompts you for a code page and then marks the file with it. However, if the
+code page is incorrect, some characters in the file might not display properly.
+If this happens, remove the code page mark, and then add the appropriate mark.
+
+TIP: Instead of setting the Prompt for Code Page check box, you can use the SET
+CPDIALOG command to check for code pages.
+
+Code Pages Supported by Visual FoxPro
+-------------------------------------
+
+Although Visual FoxPro supports many code pages, only a few are used often. With
+Visual FoxPro, for example, English-speaking users typically use code page 1252.
+However, with Visual FoxPro for MS-DOS, English-speaking users typically use
+code page 437. The following table shows the code pages supported in Visual
+FoxPro for each platform, and the corresponding code page identifier.
+
+Code page      Platform                    Code page identifier
+---------------------------------------------------------------
+437            U.S. MS-DOS                 x01
+620        (1) Mazovia (Polish) MS-DOS     x69
+737        (1) Greek MS-DOS (437G)         x6A
+850            International MS-DOS        x02
+852            Eastern European MS-DOS     x64
+861            Icelandic MS-DOS            x67
+865            Nordic MS-DOS               x66
+866            Russian MS-DOS              x65
+895        (1) Kamenicky (Czech) MS-DOS    x68
+857            Turkish MS-DOS              x6B
+1250           Eastern European Windows    xC8
+1251           Russian Windows             xC9
+1252           Windows ANSI                x03
+1253           Greek Windows               xCB
+1254           Turkish Windows             xCA
+10000          Standard Macintosh          x04
+10006          Greek Macintosh             x98
+10007      (1) Russian Macintosh           x96
+10029          Macintosh EE                x97
+
+NOTE: (1) This code page is not detected when you include CODEPAGE=AUTO in your
+configuration file.
+
+REFERENCES
+==========
+
+For more information about code pages, please see the "Understanding Code Pages"
+topic in the Visual FoxPro Help menu.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

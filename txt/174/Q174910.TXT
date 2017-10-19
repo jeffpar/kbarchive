@@ -1,0 +1,94 @@
+DOCUMENT:Q174910  05-MAY-1999  [homemm]
+TITLE   :Bookshelf 98: How to Get 360 Views Zoom Support Within Program
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbmm kbusagekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+QuickTime provides a feature which enables you to zoom in and out when viewing a
+360 degree view. The zoom feature is available from within Bookshelf 98 for
+Macintosh but not in Bookshelf 98 for Windows.
+
+The following article tells you how to add this functionality in Windows.
+
+MORE INFORMATION
+================
+
+To add the zoom feature on the Windows platform, use these instructions:
+
+1. Click Start, point to Programs, point to QuickTime for Windows (32-bit), then
+   click Movie Player 32-bit.
+
+2. Click the File menu, then click Open.
+
+3. Navigate to the D:\books\mm folder (where D is the drive letter of your CD
+   ROM drive).
+
+4. Click one of the files listed here (for example, 78bd6.mov), then click Open.
+
+The QuickTime Movie Player will open the 360 degree movie, and you will be able
+to zoom in or out by following the steps below:
+
+Zoom In
+-------
+
+1. Place mouse cursor inside the 360 degree movie window.
+
+2. Windows: Hold down the SHIFT key on the keyboard.
+
+   Macintosh: Hold down the mouse button and press the Option key on the
+   keyboard.
+
+Zoom Out
+--------
+
+1. Place mouse cursor inside the 360 degree movie window.
+
+2. Windows: Hold down the Control (CTRL) key on the keyboard.
+
+   Macintosh: Hold down the mouse button and press the Control key on the
+   keyboard.
+
+NOTE: For a program to take advantage of this feature, the development team must
+make certain programming calls to the QuickTime technology files. The Bookshelf
+98 for Windows team did not include these calls in the final product.
+QuickTime is manufactured by Apple Computer Corporation, a vendor independent of
+Microsoft.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: multi-media mm media
+
+======================================================================
+Keywords          : kbinterop kbmm kbusage kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

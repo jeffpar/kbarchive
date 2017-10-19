@@ -1,0 +1,54 @@
+DOCUMENT:Q123409  18-NOV-1999  [msdos]
+TITLE   :MSCDEX Does Not Set "Name" of EMS Allocation
+PRODUCT :Microsoft Disk Operating System
+PROD/VER::2.1,2.2,2.21,2.22,2.23
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CD-ROM Extensions (MSCDEX) for MS-DOS, versions 2.1, 2.2, 2.21, 2.22, 2.23 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When it is loaded with the /E parameter, Microsoft CD-ROM Extensions for MS- DOS
+(MSCDEX) does not set the EMS handle name field associated with the handle it
+allocates for its CD-ROM buffers.
+
+The MEM /D command reports the Expanded Memory Specification handle usage and
+also shows the name of the handle's owner. When MSCDEX is loaded with Expanded
+Memory support (the /E parameter), the EMS handle that it allocates does not
+have an owner name associated with it.
+
+MORE INFORMATION
+================
+
+MSCDEX is a LIM 3.0 compliant EMS user. The EMS API to set the handle name is a
+LIM 4.0 EMS feature; therefore, MSCDEX is not designed to use it.
+
+Additional query words: 2.10 2.20 2.21 2.22 2.23
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbAudDeveloper kbMSCDEXSearch kbMSCDEX210DOS kbMSCDEX220DOS kbMSCDEX221DOS kbMSCDEX222DOS kbMSCDEX223DOS
+Version           : :2.1,2.2,2.21,2.22,2.23
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

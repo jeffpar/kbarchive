@@ -1,0 +1,98 @@
+DOCUMENT:Q152931  21-JUL-1999  [exchange]
+TITLE   :XADM: ISINTEG Reports Errors on IMC Folders
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run the ISINTEG utility in FIX mode, you might see errors for the
+Microsoft Exchange Internet Mail Connector (IMC), or any other connector based
+on the Microsoft Exchange Development Kit (EDK), similar to the following:
+
+   Error: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": IPM subtree missing.
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": IPM Subtree not in count database
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": Sentmail not in count database
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": Wastebasket not in count database
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": Finder not in count database
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": Views not in count database
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": Common Views not in count database
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": Schedule not in count database
+
+   Warning: Mailbox 3 (Fid=0001-000000000160) "Mailbox -
+   /O=org/OU=dept1/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+   (TI486)": Shortcuts not in count database
+
+CAUSE
+=====
+
+The ISINTEG utility will not automatically recreate or restore folders used by
+the IMC or any other connector based on the EDK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in Service Pack 3 of Microsoft Exchange
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

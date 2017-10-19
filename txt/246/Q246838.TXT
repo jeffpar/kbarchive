@@ -1,0 +1,159 @@
+DOCUMENT:Q246838  06-AUG-2002  [winnt]
+TITLE   :Dr. Watson Error Message When You Start the Spooler Service
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you try to start the Spooler service, you may receive the following Dr.
+Watson error message:
+
+   An application error has occurred and an application error log is being
+   generated.
+   Spoolss.exe
+   Exception: access violation (0xC0000005), Address:
+
+Also, you may receive the following error message:
+
+   Application exception occurred:
+   App: spoolss.dbg (pid= )
+   Exception number: c0000005 (access violation)
+
+CAUSE
+=====
+
+This behavior can occur if a print monitor utility or printer spool file or
+files are damaged. This can occur when you use a third-party print monitor
+utility or Microsoft Windows NT print monitors.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this issue, perform the following steps, testing to determine if the
+issue is resolved after each step, and if it is, do not perform the remaining
+steps:
+
+1. Configure the print server for online use:
+
+   a. Click Start, point to Settings, click Control Panel, and then double-click
+      Services.
+
+   b. Click Spooler, and then click Startup.
+
+   c. Configure the Spooler service to log on using the System account and to
+      interact with the desktop, and then click OK.
+
+2. Eliminate any extra .shd and .spl files:
+
+   a. Remove or rename the .shd and .spl files from the various spool folders
+      located in the %SystemRoot%\System32\Spool\Printers folder. Note that you
+      lose pending print jobs, but the configuration information should be
+      intact.
+
+   b. Remove or rename any unused or old .tmp files in the Temp folder.
+
+3. Delete the printer through the registry, and then reinstall it:
+
+   NOTE: Normally, you can delete a printer by using the Delete Printer command.
+   However, the printer is not actually deleted until the next time the Spooler
+   service starts. Because in this case the Spooler service does not start, you
+   cannot use the Delete Printer command. Deleting the following keys from the
+   registry requires you to reinstall the printer drivers and recreate the
+   printers, because the printer is deleted from the print share.
+
+   a. Use Registry Editor to delete the appropriate registry keys:
+
+      Local Printer
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
+   \Environments\Windows NT x86\Drivers\Version-2\<printer name>
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
+   \Printers\<printer name>
+
+      where <printer name> is the name of the local printer.
+
+      Network Printer
+
+   HKEY_CURRENT_USER\Printers\Connections\<server name>
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+   \Print\Providers\LanMan Print Services\Servers\<server name>
+   \Printers\<printer name>
+
+      where <server name> is the name of the server the printer is on and
+      <printer name> is the name of the network printer.
+
+   b. Restart the computer, and then reinstall the printer.
+
+4. Delete the print monitor from the registry:
+
+   a. Use Registry Editor to locate and delete the print monitors from the
+      following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Monitors
+
+      NOTE: Each print monitor is listed in a subkey of this registry location.
+
+   b. Restart the computer.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q102116 How to Manually Delete Print Shares or Printers
+
+   Q135406 Steps to Manually Remove and Reinstall a Printer Driver
+
+NOTE: If your computer spool folder is not in the default location, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q123747 Moving the Windows NT Default Paging and Spool File
+
+Additional query words: nt 4.0 exception spooler application printing
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

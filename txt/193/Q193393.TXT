@@ -1,0 +1,61 @@
+DOCUMENT:Q193393  28-JUL-2001  [win95x]
+TITLE   :Modem Sharing Stops Working on LANtastic 7.0 Network
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbnetwork 3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you reinstall Windows 95 on a computer participating on a LANtastic 7.0
+network with modem sharing enabled, modem sharing may no longer work. Also,
+Device Manager may display an exclamation point in a yellow circle next to all
+virtual COM ports.
+
+RESOLUTION
+==========
+
+To resolve this behavior, remove and then reinstall the LANtastic 7.0 network
+client. For information about how to do so, refer to the documentation included
+with LANtastic 7.0 or contact Artisoft Technical Support.
+
+NOTE: Do not use the Add/Remove Programs tool in Control Panel to uninstall
+LANTastic 7.0. Doing so results in the loss of all customized settings (for
+example, user databases).
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          : kbnetwork 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

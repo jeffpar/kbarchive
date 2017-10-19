@@ -1,0 +1,72 @@
+DOCUMENT:Q260690  02-AUG-2000  [exchange]
+TITLE   :XFOR: Event ID 5016 from the GroupWise Calendar Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to view the Free/Busy information of a Novell GroupWise user,
+you may receive the following event in the application log:
+
+   Event ID: 5016
+   Source: MSExchangeGWiseCal
+   Description:
+   Could not receive a returning probe message. Please make sure both Microsoft
+   Exchange Router for Novell GroupWise service and GroupWise API Gateway are
+   running. Probe message checking, Continue.
+
+CAUSE
+=====
+
+This behavior can occur because of an error in the configuration of the
+Microsoft Exchange Calendar Connector. The Calendar Connector is configured to
+point to a GroupWise domain (a format of domain.gateway).
+
+GroupWise supports having multiple domains within a GroupWise environment. In
+many cases, the connector for mail flow resides in a domain separate from the
+domain for GroupWise users. The Calendar Connector must point to the domain
+where the users reside.
+
+RESOLUTION
+==========
+
+To work around this behavior, modify the Calendar Connector to point to the
+domain where the GroupWise users reside.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

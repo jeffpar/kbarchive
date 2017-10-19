@@ -1,0 +1,70 @@
+DOCUMENT:Q194397  30-APR-1999  [iis]
+TITLE   :Err Msg: Application Object Error 'ASP 0197 : 80004005'.
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use an application variable to create an application-level
+object of MSWC.BrowserType, the following error is returned:
+
+   Application object error 'ASP 0197 : 80004005'
+   Disallowed object use
+   /<path>/<filename>.asp, line <line #>
+   Cannot add object with apartment model behavior to the application
+   intrinsic object
+
+CAUSE
+=====
+
+This error occurs because the MSWC.BrowserType object is set for apartment
+threading, which is not allowed for application-level objects.
+
+This behavior is by design.
+
+In actual practice, it is a bad idea to create an application-level variable for
+the MSWC.BrowserType object because this object is shared by all sessions, and
+each session may be using a separate browser.
+
+WORKAROUND
+==========
+
+To work around this problem, create all global MSWC.BrowserType objects with a
+session scope as follows:
+
+      <%Set Session("BT")= Server.CreateObject("MSWC.BrowserType")%>
+
+
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

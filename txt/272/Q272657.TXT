@@ -1,0 +1,67 @@
+DOCUMENT:Q272657  22-OCT-2000  [homegame]
+TITLE   :Golf 2001: Error Message When You Add New Player to Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 2001 Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you assign an animation to a new player in Microsoft Golf 2001 Edition, you
+may receive an error message when you add that player to a game.
+
+CAUSE
+=====
+
+This behavior occurs if the animation that you assigned to the new player is not
+included in Golf 2001 Edition.
+
+RESOLUTION
+==========
+
+To resolve this issue, assign an animation that is included in Golf 2001 Edition
+to the new player, and then add the player to the game.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Golf 2001 Edition.
+
+MORE INFORMATION
+================
+
+If an animation that is not included in Golf 2001 Edition is assigned to a
+player (.pin) file that you copy into the Microsoft Golf folder, you receive an
+error message when you attempt to add that player to a game.
+
+Additional query words: msgame msgolf golf2001 motion appearance animated
+
+======================================================================
+Keywords          : kberrmsg kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

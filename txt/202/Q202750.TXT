@@ -1,0 +1,72 @@
+DOCUMENT:Q202750  25-JUL-2001  [homegame]
+TITLE   :CART: Steering Wheel Pedals Do Not Function
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbhw kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CART Precision Racing, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a steering wheel and pedals to play Microsoft CART Precision
+Racing, the pedals may not function.
+
+CAUSE
+=====
+
+This behavior can occur if any of the Customize Controller Button Assignments
+are configured to use the Acceleration or Brake actions.
+
+NOTE: One or both of the pedals may not function.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, do not configure the Customize Controller
+Button Assignments to use the Acceleration or Brake actions.
+
+MORE INFORMATION
+================
+
+To configure button assignments for your steering wheel and pedals:
+
+1. On the main screen, click Options, and then Controls.
+
+2. Under Primary Driving Control, click Race Car Controller.
+
+3. Click Customize Controller.
+
+4. Click Defaults, and then click Yes.
+
+5. Click OK, and then click OK again.
+
+Additional query words: C.A.R.T. indy simulator msgame 1.00
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbhw kbimu kbHardware 
+Technology        : kbHomeMMsearch kbGamesSearch kbCARTRacingSearch kbCARTRacing
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

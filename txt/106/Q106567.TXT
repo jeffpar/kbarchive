@@ -1,0 +1,82 @@
+DOCUMENT:Q106567  02-NOV-1999  [fortran]
+TITLE   :BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+RUNQQ generates the following error message when it invokes any executable that
+requires the MS-DOS extended utility shipped with Microsoft language products:
+
+   DOSXMSF : fatal error DX1420: cannot load program : invalid or corrupted .EXE
+   file
+
+For example, RUNQQ cannot execute the MS-DOS extended utilities such as NMAKE,
+FL32, and LINK32, that are shipped with Microsoft FORTRAN PowerStation for
+MS-DOS, version 1.0 and 1.0a.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation for MS-DOS,
+version 1.0 and 1.0a.
+
+This is not a problem with FORTRAN PowerStation 32.
+
+MORE INFORMATION
+================
+
+The following sample program generates DX1420 when RUNQQ executes the MS-DOS
+extended utility FL32.EXE. RUNQQ does not cause any problems when it spawns
+16-bit programs and utilities.
+
+Sample Code
+-----------
+
+   C No compiler options required
+          include 'flib.fi'
+          include 'flib.fd'
+          i = runqq('fl32',' ')
+          print '(A,I3)',' Return Code:', i
+          end
+
+The following output is produced when the above program is executed:
+
+   DOSXMSF : fatal error DX1420: cannot load program : invalid or corrupted .EXE
+   file
+   Additional info: "C:\F32\BIN\fl32.exe"
+   Return Code: 11
+
+Additional query words: nofpsnt 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

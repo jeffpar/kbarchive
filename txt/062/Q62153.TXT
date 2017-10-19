@@ -1,0 +1,47 @@
+DOCUMENT:Q62153  30-JUL-2001  [homegame]
+TITLE   :Schweizer 2-32 Sailplane Performance Specifications
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The following is a summary of the performance specifications for the Schweizer
+2-32 Sailplane in Flight Simulator version 4.00:
+
+   Feature                Specification
+   -------                -------------
+
+   Length                 26.75 feet
+   Wing span              57 feet
+   Height                 9 feet
+   Wing area              180 square feet
+   Aspect ratio           18.05
+   Gross weight           1340 pounds
+   Empty weight           831 pounds
+   Maximum L/D            34 at 45 knots
+   Minimum sink (solo)    2 feet per second at 40 knots
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

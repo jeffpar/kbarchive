@@ -1,0 +1,66 @@
+DOCUMENT:Q126887  30-OCT-1999  [pcmail]
+TITLE   :PC MAPI: Accessing Attachments Using the Function MAPIReadMail
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Simple Messaging Application Program Interface (MAPI) function MAPIReadMail,
+which is included with Microsoft Mail for PC Networks, has the ability to access
+attachment files associated with a given message found in Microsoft Mail for
+Windows Inbox.
+
+MORE INFORMATION
+================
+
+When called, the MAPIReadMail function will automatically save the attachment to
+a temporary file. The temporary file is a direct copy and is not encrypted.
+However, the attachment file will not be written to disk if the
+MAPI_SUPPRESS_ATTACH or MAPI_ENVELOPE_ONLY flag is used in the call to
+MAPIReadMail.
+
+The temporary attachment file is copied to the TEMP directory as defined by the
+operating system (per the SET TEMP= command). The file will use the original
+attachment file name, date, and time.
+
+If multiple MAPIReadMail calls are made to the same message containing an
+attachment, or the same file name already exists in the TEMP directory, the
+temporary file name will be altered. This is done so that the original file is
+not overwritten. The file naming scheme is to add a number to the end of the
+original file name. For example, an attachment called MYFILE.TXT, already
+residing in the TEMP directory, will be created as MYFILE1.TXT. Subsequent calls
+to MAPIReadMail will produce MYFILE2.TXT, MYFILE3.TXT, and so on. The caller of
+MAPIReadMail is responsible for deleting these files.
+
+Additional query words: 3.00 3.20 attachments
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

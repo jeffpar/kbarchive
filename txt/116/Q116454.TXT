@@ -1,0 +1,78 @@
+DOCUMENT:Q116454  17-DEC-2000  [win95x]
+TITLE   :HP 1200c and 300 XL Require "Print TrueType As Graphics"
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print from Windows 95 using the PCL printer driver to a Hewlett-
+Packard (HP) DeskJet 1200c or PaintJet 300 XL printer, white text prints on a
+colored background; however, colored or black text does not print on a colored
+or white background.
+
+CAUSE
+=====
+
+This problem occurs only in certain applications. For example, Microsoft Word
+6.0 for Windows and Lotus Ami Pro have exhibited this behavior. Road Atlas 4.0
+exhibits this same behavior when printing maps.
+
+
+WORKAROUND
+==========
+
+To work around this problem, use TrueType fonts and set your printer driver to
+print TrueType fonts as graphics.
+
+To print TrueType fonts as graphics:
+
+1. Click the Start button on the taskbar.
+
+2. On the Settings menu, click Printers.
+
+3. Use the right (secondary) mouse button to click the HP DeskJet 1200c or
+   PaintJet 300 XL printer icon, then click Properties.
+
+4. Click the Fonts tab, then click the Print TrueType As Graphics check box.
+
+5. Click OK to return to the Printers folder.
+
+MORE INFORMATION
+================
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3rdparty setup install true-type ttf tt True Type desk jet paint jet
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

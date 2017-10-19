@@ -1,0 +1,67 @@
+DOCUMENT:Q173960  08-MAY-1999  [iis]
+TITLE   :Create Renewal Request Option Grayed Out in Key Manager
+PRODUCT :Internet Information Server
+PROD/VER:WinNT:1.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Create Renewal Request option is always grayed out in Key Manager. This
+option is found when you highlight the certificate, and then click Key.
+
+CAUSE
+=====
+
+The Create Renewal Request option is found grayed out in three different
+scenarios:
+
+ - If the certificate is valid and not yet expired.
+
+ - If the certificate will expire within ten days. The status message will also
+   indicate, "It will Expire soon."
+
+ - If the certificate has already expired. The status message will also
+   indicate, "This key has expired."
+
+This condition will be found in all certificates that are created in Internet
+Information Server (IIS) 1.0, even if the certificate is moved to an IIS version
+2.0 or higher system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 1.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+======================================================================
+Keywords          : kbui 
+Technology        : kbiisSearch kbiis100
+Version           : WinNT:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

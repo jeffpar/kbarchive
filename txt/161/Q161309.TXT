@@ -1,0 +1,260 @@
+DOCUMENT:Q161309  13-MAY-2002  [word97]
+TITLE   :WD97: Macro to Increment Invoice Number to New Form Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbdtacode word8 kbwordvba word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+With Microsoft Visual Basic for Applications, you can produce a series of
+document forms that contain a number that increments with each new document that
+is created. This can be helpful if you are designing an invoice template form
+and you want to automatically increment the invoice number. The following sample
+macro increments the value stored in a Microsoft Windows registry entry each
+time a new document is created based on a custom template.
+
+MORE INFORMATION
+================
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+   http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The following sample Visual Basic for Applications macro must be named AutoNew
+and stored in a protected form template (protect the template for Forms). If the
+macro is named AutoNew, the macro runs whenever a new document is created based
+on the template. The protected form template must contain a form field to
+contain the invoice number. In the example, the form field bookmark name is
+"InvoiceNumber." If you want to use a different bookmark name for this form
+field, you must change the bookmark name in the macro example as well.
+
+      Sub AutoNew()
+         ' If the active document does not contain
+         ' a form field, exit this routine.
+         If ActiveDocument.FormFields.Count = 0 Then Exit Sub
+         ' Create variables.
+         Dim sAppName As String
+         Dim sSection As String
+         Dim sKey As String
+         Dim sFieldName As String
+         Dim lRegValue As Long
+         Dim lFormValue As Long
+         Dim iDefault As Integer
+         sAppName = "Word 97"
+         sSection = "Invoices"
+         sKey = "Current Invoice Number"
+         ' The default starting number.
+         iDefault = 1
+         ' If the specified form field doesn't exist,
+         ' an error will occur.
+         On Error GoTo errhandler
+         ' Replace the following example Form Field bookmark name,
+         ' "InvoiceNumber", with the name of your form field.
+         Set fField = ActiveDocument.FormFields("InvoiceNumber")
+         ' Get stored registry value, if any.
+         lRegValue = GetSetting(sAppName, sSection, sKey, iDefault)
+         ' If the result is zero, set to default value.
+         If lRegValue = 0 Then lRegValue = iDefault
+         ' Set form field result to stored value.
+         fField.Result = CStr(lRegValue)
+         ' Increment and update invoice number.
+         SaveSetting sAppName, sSection, sKey, lRegValue + 1
+      errhandler:
+         If Err <> 0 Then
+            MsgBox Err.Description
+         End If
+      End Sub
+
+NOTE: If you want to use a number larger than 32,767, change the data type to
+Long for the iDefault parameter.
+
+Change the line that reads "Dim iDefault As Integer" to "Dim iDefault As Long".
+
+Reset the Invoice Number
+------------------------
+
+To reset the invoice number, you can use the following sample Visual Basic for
+Applications macro. The macro detects whether a new starting invoice number has
+been entered into the form field set to contain the invoice number. To reset the
+invoice number, type a new value into the form field that contains the invoice
+number.
+
+The following macro can be assigned to the invoice number form field as an
+on-exit macro or to a toolbar button or menu.
+
+      Sub ResetInvoiceNumber()
+         ' If the active document does not contain
+         ' a form field exit this routine.
+         If ActiveDocument.FormFields.Count = 0 Then Exit Sub
+         ' Create variables.
+         Dim sAppName As String
+         Dim sSection As String
+         Dim sKey As String
+         Dim lRegValue As Long
+         Dim lFormValue As Long
+         Dim iDefault As Integer
+         sAppName = "Word 97"
+         sSection = "Invoices"
+         sKey = "Current Invoice Number"
+         iDefault = 1
+         ' If the specified form field doesn't exist,
+         ' an error will occur.
+         On Error GoTo errhandler
+         ' Replace the following Form Field bookmark name,
+         ' "InvoiceNumber", with the name of your form field.
+         Set fField = ActiveDocument.FormFields("InvoiceNumber")
+         ' Get stored registry value, if any.
+         lRegValue = GetSetting(sAppName, sSection, sKey, iDefault)
+         ' If the result is zero, set to default value.
+         If lRegValue = 0 Then lRegValue = iDefault
+         ' Get value from formfield. The value cannot be null.
+         If fField.Result <> "" Then
+             ' If not Null or empty.
+             lFormValue = fField.Result
+         Else
+             ' If null or empty, set to default value.
+             fField.Result = iDefault
+             lFormValue = iDefault
+         End If
+         ' See if a new new starting invoice number was entered.
+         If lFormValue <> lRegValue Then
+            ' If so, make the registery value equal the form value
+            ' and store the new value.
+            SaveSetting sAppName, sSection, sKey, lFormValue + 1
+         End If
+      errhandler:
+         If Err <> 0 Then
+            MsgBox Err.Description
+         End If
+      End Sub
+
+For more information about adding a command to a menu, click Contents And Index
+on the Help menu, click the Index tab in Word Help, type the following text
+
+   " menus" (without the quotation marks)
+
+and then double-click the selected text to go to the "Add a command or other item
+to a menu" topic. If you are unable to find the information you need, ask the
+Office Assistant.
+
+Include Leading Zeros
+---------------------
+
+If you want the invoice number to include leading zeros (for example: 00001), you
+can use the code below. Modify the following line in the code block below for
+the number of zeros that you want to use:
+
+   sLeadZeroNum = Format(lRegValue, "000000")
+
+         Sub AutoNew()
+            ' If the active document does not contain
+            ' a form field, exit this routine.
+            If ActiveDocument.FormFields.Count = 0 Then Exit Sub
+            ' Create variables.
+            Dim sAppName As String
+            Dim sSection As String
+            Dim sKey As String
+            Dim sFieldName As String
+            Dim sLeadZeroNum As String
+            Dim lRegValue As Long
+            Dim lFormValue As Long
+            Dim iDefault As Integer
+
+            sAppName = "Word 97"
+            sSection = "Invoices"
+            sKey = "Current Invoice Number"
+            ' The default starting number.
+            iDefault = 1
+            ' If the specified form field doesn't exist,
+            ' an error will occur.
+            On Error GoTo errhandler
+            ' Replace the following example Form Field bookmark name,
+            ' "InvoiceNumber", with the name of your form field.
+            Set fField = ActiveDocument.FormFields("InvoiceNumber")
+            ' Get stored registry value, if any.
+            lRegValue = GetSetting(sAppName, sSection, sKey, iDefault)
+            ' If the result is zero, set to default value.
+            If lRegValue = 0 Then lRegValue = iDefault
+            ' Formats the Form Field with 5 leading Zeros.
+            sLeadZeroNum = Format(lRegValue, "000000") '<-add your zeros here.
+            ' Set form field result to stored value.
+            fField.Result = sLeadZeroNum
+            ' Increment and update invoice number.
+            SaveSetting sAppName, sSection, sKey, lRegValue + 1
+
+   errhandler:
+            If Err <> 0 Then
+               MsgBox Err.Description
+            End If
+         End Sub
+
+For additional information about how to do this in earlier versions of Word,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q119990 Using WordBasic to Add Sequential Number to Form Document
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+
+
+REFERENCES
+==========
+
+For additional information about getting help with Visual Basic for
+Applications, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: wordcon vb vba vbe
+
+======================================================================
+Keywords          : kbdta kbdtacode word8 kbwordvba word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

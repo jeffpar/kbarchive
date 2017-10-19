@@ -1,0 +1,70 @@
+DOCUMENT:Q185025  11-APR-1999  [exchange]
+TITLE   :XFOR: Dr. Watson on Startup Due to Excess DNS Search Entries
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Upon startup of Exchange, the Internet Mail Service crashes with a Dr. Watson
+log error message:
+
+   Application exception occurred:
+           App: MSEXCIMC.dbg (pid=167)
+           When: 4/24/1998 @ 13:28:38.298
+           Exception number: c0000005 (access violation)
+
+CAUSE
+=====
+
+This is caused by the introduction through RegEdit, or other third-party
+utility, of additional Domain Name Service (DNS) entries into the TCP/IP
+configuration under DNS Suffix Search Order. There is a limit of six (6) entries
+supported under Windows NT 4.0.
+
+The Internet Mail Service attempts to parse these entries, and when attempting to
+store the length of the seventh entry, triggers an access violation.
+
+WORKAROUND
+==========
+
+To work around this problem, do not exceed the supported number of entries.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 5.0 and 5.5.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : 5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

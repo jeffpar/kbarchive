@@ -1,0 +1,76 @@
+DOCUMENT:Q201280  02-APR-1999  [exchange]
+TITLE   :XFOR: EXCALCON May Fail to Connect to the CALCON Server
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Lotus Notes users may notice that all the Free/Busy (F/B) queries for Exchange
+Server users are failing. This might indicate that the remote procedural call
+(RPC) communication between the two systems is broken.
+
+CAUSE
+=====
+
+The Exchange Calendar Connector(EXCALCON) task on the Notes server communicates
+by means of RPC to the Calendar Connector (CALCON) on an Exchange Server
+computer. Although the Exchange Calendar Connector task is supposed to be able
+to re-establish RPC connectivity to the Calendar Connector, there is a small
+chance that it will fail during the attempt. This will result in all F/B queries
+from Notes for Exchange Server users to fail.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Ensure that the Calendar Connector is back up and running, and that any
+   network connectivity issues have been resolved.
+
+2. On the Notes server, shut down the Exchange Server Add-on task.
+
+3. Once the task has successfully shut down, restart the Exchange Calendar
+   Connector Add-on task. For instructions on loading and shutting down the
+   Exchange Calendar Connector Add-on task, refer to the documentation in the
+   Exchsrvr\Connect\Calcon\Doc directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server 5.5.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

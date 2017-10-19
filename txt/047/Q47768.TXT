@@ -1,0 +1,49 @@
+DOCUMENT:Q47768  04-NOV-1999  [utilities]
+TITLE   :Unrecognized Switches /Z1, /NOI with Old Version of Linker
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:2.x,3.01,3.02,3.04,3.05,3.51,3.55
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 2.x, 3.01, 3.02, 3.04, 3.05, 3.51, 3.55 
+-------------------------------------------------------------------------------
+
+The switches /Z1 or /NOI may appear in the following message when
+linking with Version 3.55 or earlier of the linker:
+
+   Unrecognized Switch <switch>
+
+Such old versions of the linker can be found in the MS-DOS directories of
+most distributed versions of MS-DOS.
+
+If the MS-DOS directory is listed in the PATH environment variable before
+the directory containing the correct version of the linker, the old
+linker will be executed. Delete or rename this linker, or place the
+DOS directory behind the proper linker's directory in the PATH.
+
+Additional query words: kbinf LinkIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK2xDOSSearch
+Version           : MS-DOS:2.x,3.01,3.02,3.04,3.05,3.51,3.55
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

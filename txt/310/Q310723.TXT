@@ -1,0 +1,166 @@
+DOCUMENT:Q310723  06-AUG-2002  [iis]
+TITLE   :Configuring FTP Folder and Permissions for Domain Authentication
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbAudITPro kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - MORE INFORMATION
+ - Disable Anonymous FTP Access in IIS 5.0
+ - Modify the DefaultLogonDomain in the IIS Metabase
+
+ - REFERENCES
+
+SUMMARY
+=======
+
+This article describes how to configure the IIS FTP server for FTP
+authentication and how to automatically use the domain user database rather than
+your local user accounts database, so that your users can access FTP folders by
+using their familiar login without having to explicitly specify their domain
+information.
+
+MORE INFORMATION
+----------------
+
+NOTE: These procedures are designed to assist Web server administrators that host
+FTP sites that require users to use their domain user name and password to
+access their FTP folders. If you follow the procedures outlined in this article,
+you will affect public access to FTP sites. Therefore, you should not use these
+procedures if you are hosting public FTP sites.
+
+Important Warning: FTP passwords are sent over networks in "clear text" and are
+therefore easily stolen, especially on the Internet. For this reason, many
+administrators set up FTP sites for anonymous read-only access, and use file
+sharing if local network write access is needed or use the FrontPage Server
+Extensions for Internet publishing.
+
+Disable Anonymous FTP Access in IIS 5.0
+---------------------------------------
+
+When you disable Anonymous FTP access, users must always enter a valid user name
+and password when they access your FTP site. (This configuration is more secure
+when you allow users to upload files to your server.)
+
+1. Open the Internet Services Manager. To do this, follow the steps for your
+   version of IIS:
+
+    - For IIS 4.0:
+
+      a. On the Start menu, point to Programs, and then click Windows NT 4.0
+         Option Pack.
+
+      b. Click Microsoft Internet Information Server, and then click Internet
+         Service Manager.
+
+    - For IIS 5.0:
+
+      a. On the Start menu, point to Programs, and then click Administrative
+         Tools.
+
+      b. Click Internet Services Manager.
+
+2. In the console tree, right-click the FTP site that you want to configure, and
+   then click Properties.
+
+3. On the Security Accounts tab, click to uncheck the Allow Anonymous
+   Connections check box.
+
+4. Click Yes if you are prompted to continue.
+
+5. Click OK.
+
+Modify the DefaultLogonDomain in the IIS Metabase
+-------------------------------------------------
+
+When you specify the DefaultLogonDomain domain in your IIS settings, users are
+not required to enter their domain name with their user name (for example,
+<MYDOMAIN\MyUserName>) when logging in to your FTP site. If your FTP
+server is a member server, and the user accounts are in the local security
+database, this task is not necessary.
+
+1. Click Start, and then click Run.
+
+2. In the Open: text box, type "cmd " (without the quotation marks).
+
+3. At the command prompt, type the following for your version of IIS:
+
+    - For IIS 4.0, type:
+
+   "cd /d %windir%\system32\inetsrv\adminsamples
+   cscript adsutil.vbs set msftpsvc/DefaultLogonDomain <domain_name>"
+   (without the quotation marks)
+
+    - For IIS 5.0, type:
+
+   "cd /d %systemdrive%\inetpub\adminscripts
+   cscript adsutil.vbs set msftpsvc/DefaultLogonDomain <domain_name>"
+   (without the quotation marks)
+
+   For < domain_name>, type the name of your domain.
+
+4. Type "exit" (without the quotation marks) to close the command prompt dialog
+   box.
+
+REFERENCES
+==========
+
+For more information on setting up FTP authentication, see the "Setting up FTP
+Domain Authentication in IIS 4.0" article at:
+
+   http://www.microsoft.com/TechNet/prodtechnol/iis/deploy/confeat/ftpauth.asp
+
+For more information on setting up FTP folders, see the "Setting Up User FTP
+Folders in IIS 4.0" article at the following URL:
+
+   http://www.microsoft.com/technet/prodtechnol/iis/deploy/confeat/ftpfold.asp
+
+For additional information on using, configuring, and troubleshooting the FTP
+service in IIS, click the article numbers below to view the articles in the
+Microsoft Knowledge Base:
+
+   Q184319 FTP Service's DefaultLogonDomain Not Available in MMC
+
+   Q200475 Err Msg: 530 User 'Username' Cannot Log In. Login Failed.
+
+   Q168908 How to Authenticate a User Against All Trusted Domains
+
+   Q175638 FTP Login Using Domain and Trusted Domain Accounts
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

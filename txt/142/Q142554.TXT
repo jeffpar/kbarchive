@@ -1,0 +1,100 @@
+DOCUMENT:Q142554  11-FEB-2000  [foxpro]
+TITLE   :How to Use the Box Method to Create a Shadow Effect
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use a form's Box method to create a shadow
+effect behind a form object.
+
+MORE INFORMATION
+================
+
+IMPORTANT NOTE: This article can be successfully applied only to objects that
+are direct members of either a form or the main Visual FoxPro window (_screen).
+Objects that are contained within, for example, the page of a PageFrame cannot
+have the same visual affect applied by using this method.
+
+The purpose of the Box method is to draw a rectangle on a form or the main Visual
+FoxPro window (_Screen). For more information about Box method, search for "Box
+method" in the Visual FoxPro Help file.
+
+Step-by-Step Example
+--------------------
+
+This example creates a form that contains a command button. The Box method is
+used to create a shadow behind the command button.
+
+1. Create a new form, and set its DrawWidth property to 5. Ensure that the
+   DrawMode property is 13 - Copy Pen (default) and the DrawStyle property is 0
+   - Solid (default).
+
+2. On the Form menu, click New Property and create a new property called
+   zobjname. Modify the zobjname property to contain "", indicating a null
+   string.
+
+3. On the Form menu, click New Method, and create a new method called makebox.
+   Modify the makebox method to contain the following code:
+
+      zObject = "thisform."+(this.zobjname)
+
+      * Adding 5 to the values below will cause the position to be
+      * shifted down and to the right by 5 pixels. Recall that the
+      * DrawWidth property has been set to 5. If one of these values
+      * is changed, then the other should be as well.
+      xleft = &zObject..left + 5
+      ytop = &zObject..top + 5
+      xright = &zObject..left + 5 + &zObject..width
+      ybottom = &zObject..top + 5 + &zObject..height
+      thisform.box(xleft,ytop,xright,ybottom)
+
+4. Place a command button on the form and size it to be as large as you want. In
+   the command button's Click event, add this code:
+
+      ThisForm.Release
+
+5. In the command button's Init event, add this code:
+
+      ThisForm.zobjname = This.Name
+      ThisForm.MakeBox
+
+   NOTE: If additional objects are added to the form, the makebox method can be
+   called to act on them by adding the above two lines of code to the object's
+   Init event, as demonstrated in Step 5.
+
+6. Save the form as linetest, and close the Form Designer. Use the DO FORM
+   command to run the form. Note the shadow effect behind the command button.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

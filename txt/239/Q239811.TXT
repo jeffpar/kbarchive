@@ -1,0 +1,74 @@
+DOCUMENT:Q239811  28-AUG-1999  [homegame]
+TITLE   :NBA/NFL 2000: 3D Rendering Is Unavailable
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu msgame kbFAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft NBA Inside Drive 2000 or Microsoft NFL Fever 2000, 3D
+hardware rendering may be unavailable.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A Diamond Viper V330 video adapter is installed in your computer.
+
+ - The latest video driver for the Diamond Viper V330 video adapter is not
+   installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest video driver for your
+video adapter from the following Diamond Multimedia Web site:
+
+   http://www.diamondmm.com
+
+MORE INFORMATION
+================
+
+If the issue continues to occur, download and install the latest Riva 128
+reference driver from the following nVidia Web site:
+
+   http://www.nvidia.com
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame nflfever nfl2k nba2000 nba2k football basketball display
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu msgame kbFAQ 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3 kbNBAInsideDrive2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

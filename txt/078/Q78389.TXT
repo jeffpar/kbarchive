@@ -1,0 +1,66 @@
+DOCUMENT:Q78389  24-DEC-1999  [miscsdk]
+TITLE   :PRB: Cannot Print Object from an Embedded Window in Viewer
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Microsoft Multimedia Viewer, when attempting to print a 256-color image
+from an embedded window, only the text around the embedded window prints.
+
+CAUSE
+=====
+
+Multimedia Viewer version 1.0 does not support printing the content of an
+embedded window. The code to support displaying a 256-color image in an embedded
+window is provided by a dynamic-link library (DLL), which is independent of
+Viewer.
+
+RESOLUTION
+==========
+
+One method to work around this lack of support is to copy the undithered image
+to the Windows Clipboard using the CopyBmp macro. Then use a bitmap editor to
+print the image. (For more information about the CopyBmp macro, see page 7-8 of
+the "Microsoft Multimedia Development Kit Multimedia Viewer Developer's
+Guide.")
+
+It is also possible to create a DLL to print the embedded window image. The DLL
+could be triggered as a hot spot (similar to the CopyBmp macro). For more
+information, see the sample DLLs provided with the Microsoft Multimedia
+Development Kit (MDK) in the VIEWER directory. Writing a DLL that interfaces
+with Viewer is discussed in chapters 14 and 15 of the "Multimedia Viewer
+Developer's Guide."
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

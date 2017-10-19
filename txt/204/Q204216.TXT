@@ -1,0 +1,72 @@
+DOCUMENT:Q204216  21-OCT-2000  [schedplus]
+TITLE   :XCLN: Schedule+ 1.0a Does Not Refresh Free and Busy Time
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0, on platform(s):
+    - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Schedule+ version 1.0a may not refresh the free and busy availability
+symbols after data is displayed as unavailable (a dimmed check mark is displayed
+next to the user's name). This commonly occurs near the end of the year. This
+behavior occurs when you change the Year field in the planner to either a year
+earlier or later, before the date that you want has been displayed.
+
+When a planner is open, if you select an attendee (typically from another
+postoffice) for a date that contains no free and busy data for that user, a
+dimmed check mark is displayed next to the user's name, which signifies that no
+schedule data is available. If you then select a date that does contain free and
+busy information for the user, the dimmed check mark is not updated to reflect
+the available free and busy data, although the free and busy data itself may
+even be displayed in the planner view.
+
+WORKAROUND
+==========
+
+To work around this problem, select the date before you select the attendees
+list, or remove the attendee and then re-add the attendee to the attendee list
+after you chose the date. To prevent future occurrences of this problem, send 12
+months of free and busy data in advance. This problem does not affect Schedule+
+version 7.0 and later.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

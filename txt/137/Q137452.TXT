@@ -1,0 +1,67 @@
+DOCUMENT:Q137452  17-DEC-2000  [win95x]
+TITLE   :Options Not Available When Connecting with Remote Mail
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Remote Mail feature of Microsoft Exchange, the following
+options may be unavailable when you click either the Connect And Update Headers
+or the Connect And Transfer command on the Tools menu:
+
+ - Send Mail
+
+ - Receive Marked Items
+
+CAUSE
+=====
+
+Incoming mail delivery or outgoing mail delivery, or both, have been disabled in
+the properties for the Microsoft Mail service in the current Microsoft Exchange
+profile.
+
+RESOLUTION
+==========
+
+To enable incoming and outgoing mail delivery, follow these steps:
+
+1. In Microsoft Exchange, click Services on the Tools menu.
+
+2. Click Microsoft Mail, click Properties, and then click the Delivery tab.
+
+3. Click the Enable Incoming Mail Delivery and the Enable Outgoing Mail Delivery
+   check boxes to select them.
+
+4. Click OK.
+
+Additional query words: ras grayed greyed
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q103519  22-NOV-1999  [msdos]
+TITLE   :CVF Internal Errors: System Fails to Clean/Interactive Boot
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+SYMPTOMS
+========
+
+If your DBLSPACE.INI file contains a command to mount a compressed volume file
+(CVF) that contains internal errors, DBLSPACE.BIN displays the following
+message:
+
+   DoubleSpace found a problem on compressed drive <drive>.
+
+   To continue the startup process, press ENTER. Then, correct the problem by
+   typing SCANDISK <drive>: at the command prompt.
+
+If you press either the Clean Boot (F5) or Interactive Boot (F8) keys, your
+response is taken as a response to the above prompt. (The system does not
+perform a clean start or an interactive start.)
+
+RESOLUTION
+==========
+
+To work around this problem, press F5 twice to clean boot the system or F8 twice
+to boot the system interactively.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

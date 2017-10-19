@@ -1,0 +1,79 @@
+DOCUMENT:Q174810  29-MAR-2002  [msnetwork]
+TITLE   :Outlook Express Requires MSN 2.5 or later
+PRODUCT :The Microsoft Network
+PROD/VER::2.5,2.51,2.52,2.6,5.0,5.1,5.2
+OPER/SYS:
+KEYWORDS:kbinterop kbsetupkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6, 5.0, 5.1, 5.2 
+ - MSN Internet Access for Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Outlook Express does not work with MSN, The Microsoft Network, version
+2.0 or earlier. To use Outlook Express with MSN, you need to install MSN 2.5 or
+later.
+
+MORE INFORMATION
+================
+
+Microsoft Outlook Express does not work with MSN 2.0 or earlier. To use Outlook
+Express with MSN, you need to install MSN, version 2.5 or later.
+
+Outlook Express will work with MSN 2.5, 2.6 and 5.x. It will also work with MSN
+Explorer, though this requires special configuration settings. The default for
+MSN Explorer does not include Outlook Explorer settings.
+
+To switch your default mail program to Microsoft Outlook or Windows
+Messaging/Exchange, follow these steps:
+
+1. Using the right mouse button, click the Internet Explorer icon, and then
+   click Properties.
+
+2. Click the Programs tab.
+
+3. In the Messaging area, click the down arrow next to the Mail box.
+
+4. Click either Microsoft Outlook or Windows Messaging.
+
+5. Click OK.
+
+For information about installing the latest version of MSN, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q174200 How to Install The Microsoft Network Version 2.5
+
+   Q159037 MSN Installation and Setup Questions & Answers
+
+   Q159870 Questions and Answers About Setting Up the New MSN
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          : kbinterop kbsetup kbfaq
+Technology        : kbMSNSearch kbMSN520 kbMSN510 kbMSN500 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : :2.5,2.51,2.52,2.6,5.0,5.1,5.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

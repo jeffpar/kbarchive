@@ -1,0 +1,180 @@
+DOCUMENT:Q316452  14-MAR-2002  [mspress]
+TITLE   :MCSE Readiness Review Exam 70-270: Microsoft Windows XP Professi
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS MCSE Readiness Review Exam 70-270: Microsoft Windows XP Professional ISBN 0-7356-1460-1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book MCSE Readiness Review Exam 70-270:
+Microsoft Windows XP Professional, ISBN 0-7356-1460-1.
+
+The following topics are covered:
+
+ - Page 10: "32" Should Be "64"
+
+ - Pages 16 & 17: Windows 2000 Should Be Windows XP
+
+ - Pages 18 & 19: Windows 2000 Should Be Windows XP
+
+ - Pages 84 & 110: Incorrect References To Drivers.EXE
+
+ - Page 92: Correction To Question 70-270.03.01.003
+
+ - Page 94: Correction To Answer C's Explanation For Question 70-270.03.01.003
+
+ - Page 101: Correction To Answer C's Explanation For Question 70-270.03.02.002
+
+ - Page 180: Correction To Question 70-270.05.03.001
+
+ - Page 209: Incorrect Answers To Question 70-270.06.02.001
+
+MORE INFORMATION
+================
+
+Page 10: "32 MB" Should Be "64 MB"
+----------------------------------
+
+On page 10, in line 2, change:
+"32 MB of RAM"
+
+To:
+"64 MB of RAM"
+
+
+Pages 16 & 17: Windows 2000 Should Be Windows XP
+------------------------------------------------
+
+In line 3 on page 15, and in line 7 on page 16, change:
+"Windows 2000 Professional"
+
+To:
+"Windows XP Professional"
+
+
+Pages 18 & 19: Windows 2000 Should Be Windows XP
+------------------------------------------------
+
+On pages 18 and 19, in question 70-270.01.02.033, in paragraphs A, B, C, and D,
+
+Change:
+"Windows 2000 Professional"
+
+To:
+"Windows XP Professional"
+
+
+Pages 84 & 110: Incorrect References To Drivers.EXE
+---------------------------------------------------
+
+On page 84, in the last paragraph, and on page 110, in the second paragraph from
+the bottom, remove references to the tool "DRIVERS.EXE".
+
+Drivers.exe is part of Windows 2000 Resource Kits and is not available in Windows
+XP Professional.
+
+
+Page 92: Correction To Question 70-270.03.01.003
+------------------------------------------------
+
+On page 92, in question 70-270.03.01.003,
+
+Change:
+"C. Use the ERD to create a new BOOT.INI file"
+
+To:
+"C. Use ntbackup.exe to restore the BOOT.INI file from the full backup file"
+
+
+Page 94: Correction To Answer C's Explanation For Question 70-270.03.01.003
+---------------------------------------------------------------------------
+
+On page 94, in question 70-270.03.01.003, change the explanation for answer C to
+be:
+
+"C. Correct. You can use ntbackup.exe to restore the BOOT.INI file that you
+backed up during the full backup."
+
+
+Page 101: Correction To Answer C's Explanation For Question 70-270.03.02.002
+----------------------------------------------------------------------------
+
+On page 101, in question 70-270.03.02.002, change the explanation for answer C to
+be:
+
+"C. Incorrect: The ERD does not exist in Windows XP Professional."
+
+
+Page 180: Correction To Question 70-270.05.03.001
+-------------------------------------------------
+
+On page 180, in question 70-270.05.03.001, the correct answer should be D, not C.
+Change the answers and explanations to be:
+
+"Correct Answers: D
+
+A. Incorrect: See explanation for D
+
+B. Incorrect: See explanation for D
+
+C. Incorrect: See explanation for D
+
+D. Correct: The Windows 2000 version of the Administration Tools Pack is not
+compatible with Windows XP Professional."
+
+
+Page 209: Incorrect Answers To Question 70-270.06.02.001
+--------------------------------------------------------
+
+On page 209, in Question 70-270.06.02.001, the correct answers should be A, B,
+and D, not A, B, and E. Change the correct answers and explanations for D and E
+to be:
+
+"Correct Answers: A, B, and D
+D. Correct: Like PPTP, L2TP encapsulates Point-to-Point Protocol (PPP) frames,
+which then encapsulate IP or IPX protocols, allowing users to remotely run
+programs that are dependent on specific network protocols.
+
+E. Incorrect: The Windows XP implementation of L2TP is designed to run natively
+over IP networks. This implementation of L2TP does not support native tunneling
+over X.25, Frame Relay, or ATM networks."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1460-1 TKBOOK RRBOOK WIN2K DILLARD NORTHRUP
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,55 @@
+DOCUMENT:Q174823  13-OCT-1999  [msnetwork]
+TITLE   :Cannot Resize Fonts on Web Sites Using MSN or Internet Explorer
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the font size in MSN, The Microsoft Network, or Microsoft
+Internet Explorer, some fonts on a Web page may not change.
+
+CAUSE
+=====
+
+This behavior can occur if the text is contained in a graphic image on the Web
+page.
+
+MORE INFORMATION
+================
+
+The font size option in Internet Explorer changes the size of text-based fonts.
+Text that is part of a graphic is not resized.
+
+
+Additional query words: msiew95
+
+======================================================================
+Keywords          : kbdisplay kbenv kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

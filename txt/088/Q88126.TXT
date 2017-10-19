@@ -1,0 +1,71 @@
+DOCUMENT:Q88126  06-NOV-1999  [win16sdk]
+TITLE   :BUG: HC Error 2050 from #include in Help Project File (.HPJ)
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are building a Help file with the Microsoft Windows Help Compiler, the
+process stops with the following error message:
+
+   Error 2050: line <number> of <filename>.HPJ : Invalid #include
+   syntax
+
+CAUSE
+=====
+
+The Help project (.HPJ) file contains a #include statement where the filename is
+delimited by quotation marks ("") rather than angle brackets (<>).
+
+RESOLUTION
+==========
+
+To work around this problem, modify the .HPJ file to delimit the filename in the
+#include statement with angle brackets. For example, replace the following
+statement
+
+      #include "map.h"
+
+with the following:
+
+      #include <map.h>
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the Windows Help Compiler
+version 3.1. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: buglist3.10 3.10 HC31 HC31.EXE HCP HCP.EXE
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

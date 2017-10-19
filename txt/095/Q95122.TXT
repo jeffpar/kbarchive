@@ -1,0 +1,173 @@
+DOCUMENT:Q95122  13-JUN-1999  [homegame]
+TITLE   :Manual Installation of Golf for Windows
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbsetup
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The files on the Microsoft Golf disks are compressed using the standard Windows
+compression method. They can be extracted by typing the following at the MS-DOS
+command prompt and pressing ENTER (For information about how to get to the
+MS-DOS command prompt under Windows 95, see your printed Windows documentation
+or online Help.)
+
+   expand <drive1:>filename.ex_ <drive2:>\msgolf\filename.ext
+
+where "drive" is your floppy disk drive, "filename.ex_" is the compressed file,
+"drive2" is your hard disk drive, and the "filename.ext" is the expanded file.
+For example, type the following command to expand the Torrey Pines course from
+drive A into the MSGOLF directory on drive C:
+
+   expand a:torrey_p.cr_ c:\msgolf\torrey_p.crs
+
+Note that with the 720K disks, the TORREY_P.CRS file is actually split between
+Disks 2 and 3. In this case, it is necessary to combine the files first. This
+can be done typing the following command:
+
+   copy torrey_p.c1_ /b + torrey_p.c2_ /b torrey_p.cr_
+
+The /b switch specifies a binary copy operation. Once this has been done, the
+file can be expanded normally. The underscore on the filename's extension
+indicates that the file is compressed.
+
+If you are installing Golf into a shared Windows configuration, or when there are
+other problems during installation, this may be the only way to install the
+program.
+
+MORE INFORMATION
+================
+
+When you run the SETUP.EXE program on Disk 1 of Microsoft Golf, the necessary
+files are distributed as follows (under default conditions).
+
+The following files are installed in the C:\MSGOLF directory:
+
+   C:\MSGOLF\README.TXT
+   C:\MSGOLF\TORREY_P.CRS
+   C:\MSGOLF\GSDZ.DLL
+   C:\MSGOLF\RSWAV.DLL
+   C:\MSGOLF\GOLFFC14.RAD
+   C:\MSGOLF\GOLFFP14.RAD
+   C:\MSGOLF\GOLFMC14.RAD
+   C:\MSGOLF\GOLFMP14.RAD
+   C:\MSGOLF\GOLFFC18.RAD
+   C:\MSGOLF\GOLFMC18.RAD
+   C:\MSGOLF\MSGOLF.EXE
+   C:\MSGOLF\GOLFFP18.RAD
+   C:\MSGOLF\GOLFMP18.RAD
+   C:\MSGOLF\GOLFFD14.RAD
+   C:\MSGOLF\GOLFMD14.RAD
+   C:\MSGOLF\GPALETTE.DLL
+   C:\MSGOLF\GOLFFC24.RAD
+   C:\MSGOLF\GOLFFD18.RAD
+   C:\MSGOLF\RADANI.DLL
+   C:\MSGOLF\GOLFMC24.RAD
+   C:\MSGOLF\GOLFMD18.RAD
+   C:\MSGOLF\GOLFFP24.RAD
+   C:\MSGOLF\GOLFMP24.RAD
+   C:\MSGOLF\GOLFFC28.RAD
+   C:\MSGOLF\GOLFMC28.RAD
+   C:\MSGOLF\GOLFFP28.RAD
+   C:\MSGOLF\GOLFMP28.RAD
+   C:\MSGOLF\GOLFFD24.RAD
+   C:\MSGOLF\GOLFMD24.RAD
+   C:\MSGOLF\MSGOLF.HLP
+   C:\MSGOLF\GOLFFD28.RAD
+   C:\MSGOLF\GOLFMD28.RAD
+   C:\MSGOLF\PRACTICE.SPC
+   C:\MSGOLF\GLFMOD2.EXE
+
+The following files are installed in the C:\MSGOLF\SOUNDS directory:
+
+   C:\MSGOLF\SOUNDS\CHIP.WAV
+   C:\MSGOLF\SOUNDS\PUTT.WAV
+   C:\MSGOLF\SOUNDS\PINHIT.WAV
+   C:\MSGOLF\SOUNDS\SHORTSWG.WAV
+   C:\MSGOLF\SOUNDS\SPLASH.WAV
+   C:\MSGOLF\SOUNDS\QUACK2.WAV
+   C:\MSGOLF\SOUNDS\PRACTICE.WAV
+   C:\MSGOLF\SOUNDS\TREE.WAV
+   C:\MSGOLF\SOUNDS\B04.WAV
+   C:\MSGOLF\SOUNDS\B11.WAV
+   C:\MSGOLF\SOUNDS\B03.WAV
+   C:\MSGOLF\SOUNDS\B05.WAV
+   C:\MSGOLF\SOUNDS\B10.WAV
+   C:\MSGOLF\SOUNDS\RATTLE.WAV
+   C:\MSGOLF\SOUNDS\SWING.WAV
+   C:\MSGOLF\SOUNDS\B09.WAV
+   C:\MSGOLF\SOUNDS\B07.WAV
+   C:\MSGOLF\SOUNDS\B08.WAV
+   C:\MSGOLF\SOUNDS\B02.WAV
+   C:\MSGOLF\SOUNDS\B06.WAV
+   C:\MSGOLF\SOUNDS\B01.WAV
+   C:\MSGOLF\SOUNDS\SITDOWN.WAV
+   C:\MSGOLF\SOUNDS\GETTHERE.WAV
+   C:\MSGOLF\SOUNDS\NICEBIRD.WAV
+   C:\MSGOLF\SOUNDS\GREATPT.WAV
+   C:\MSGOLF\SOUNDS\THATPLAY.WAV
+   C:\MSGOLF\SOUNDS\CRUSHED.WAV
+   C:\MSGOLF\SOUNDS\NICEPT.WAV
+   C:\MSGOLF\SOUNDS\NICEPAR.WAV
+   C:\MSGOLF\SOUNDS\BECLUB.WAV
+   C:\MSGOLF\SOUNDS\THATSWET.WAV
+   C:\MSGOLF\SOUNDS\YES.WAV
+   C:\MSGOLF\SOUNDS\NICEEAGL.WAV
+   C:\MSGOLF\SOUNDS\QUACK1.WAV
+   C:\MSGOLF\SOUNDS\GOTAHOLD.WAV
+   C:\MSGOLF\SOUNDS\HITTREE.WAV
+   C:\MSGOLF\SOUNDS\NICESHOT.WAV
+
+In the C:\WINDOWS directory, a Program Manager Group file is added when the icon
+is created. This file is not located on any of the Golf disks:
+
+   C:\WINDOWS\MICROSOF.GRP
+
+The following files are installed in the C:\WINDOWS\SYSTEM directory:
+
+   C:\WINDOWS\SYSTEM\VRSD.386
+
+In the SYSTEM.INI file, the following line is added to the [386Enh] section:
+
+     DEVICE=VRSD.386
+
+This totals 73 files and 2 directories created on the destination disk.
+
+Remember that Golf was designed to be installed using the Setup program, not by
+manual installation. The procedure outlined above is to be used as a last
+resort.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

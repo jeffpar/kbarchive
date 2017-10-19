@@ -1,0 +1,57 @@
+DOCUMENT:Q222819  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Clock Does Not Reflect Client Time Zone Setting
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:2000; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The clock displayed on the taskbar on a Terminal Server-based computer always
+reports the time relative to the time zone setting on the Terminal Server-based
+computer. This time is displayed in all client sessions, regardless of the time
+zone settings on the client computers.
+
+MORE INFORMATION
+================
+
+If a user has the appropriate user rights, he or she can change the time zone
+setting in the client session. This change affects all Terminal Server sessions,
+including the console.
+
+Note that the registry entry for the time zone is stored under
+HKEY_LOCAL_MACHINE. Thus, the entry is per computer, and not per user.
+
+
+Additional query words: systray system tray
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbwin2000ServSearch kbwin2000Search kbNTTermServ400 kbNTTermServSearch
+Version           : WINDOWS:2000; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,99 @@
+DOCUMENT:Q168123  26-JUN-2001  [visualc]
+TITLE   :FIX: CWindow::GetTopLevelWindow() Returns NULL
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.1,3.0
+OPER/SYS:
+KEYWORDS:kbATL210bug kbATLWC kbInprocSvr kbServer kbVC500bug kbVC600fix kbATL300fix kbGrpDSMFCAT
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL), versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A call to CWindow::GetTopLevelWindow() always returns NULL.
+
+CAUSE
+=====
+
+This is due to a bug in the function.
+
+RESOLUTION
+==========
+
+Change the function in AtlWin.cpp from:
+
+      HWND CWindow::GetTopLevelWindow() const
+      {
+         ...
+         while(hWndTmp != NULL)
+         {
+            hWndTmp = (::GetWindowLong(hWndParent, GWL_STYLE) & WS_CHILD) ?
+               ::GetParent(hWndParent) :
+               ::GetWindow(hWndParent, GW_OWNER);
+
+            hWndParent = hWndTmp;
+         }
+
+         return hWndParent;
+      }
+
+to the following:
+
+      HWND CWindow::GetTopLevelWindow() const
+      {
+         ...
+         while(hWndTmp != NULL)
+         {
+            // Modification
+            hWndParent = hWndTmp;
+
+            hWndTmp = (::GetWindowLong(hWndParent, GWL_STYLE) & WS_CHILD) ?
+               ::GetParent(hWndParent) :
+               ::GetWindow(hWndParent, GW_OWNER);
+
+         }
+
+         return hWndParent;
+      }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Sridhar
+Madhugiri, Microsoft Corporation
+
+
+Additional query words: GetTopLevelWindow NULL kbatl210bug kbctrl kbvc600fix kbserver kbinternet
+
+======================================================================
+Keywords          : kbATL210bug kbATLWC kbInprocSvr kbServer kbVC500bug kbVC600fix kbATL300fix kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbATLsearch kbATL300 kbATL210
+Version           : :2.1,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

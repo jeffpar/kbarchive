@@ -1,0 +1,73 @@
+DOCUMENT:Q126144  28-JUL-2001  [win95x]
+TITLE   :Cannot Print to PostScript Printer on Novell Network
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to a network printer on a Novell NetWare network, your print job
+does not appear.
+
+CAUSE
+=====
+
+This problem can occur if you enable the banner page and print to a PostScript
+printer. By default, Novell NetWare print servers do not support banners on
+PostScript printers.
+
+NOTE: The Novell NetWare print server, not Windows 95, generates the banner page.
+Windows 95 does not control whether or not the banner page is printed.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods:
+
+ - Disable the banner page.
+
+ - Print to a non-PostScript printer.
+
+ - Contact Novell or your network administrator about enabling PostScript
+   banners on the PostScript print server.
+
+MORE INFORMATION
+================
+
+If you have difficulties printing to a PostScript printer over a network, it may
+be because banner pages are incorrectly configured on the NetWare server. Unless
+banner pages are correctly configured on the NetWare server, they will cause
+errors and nothing will print. To solve this problem, you can either disable
+banner pages by removing the check mark from the Banner Pages box in Capture
+printer properties, or contact your network administrator to correctly configure
+banner pages on the NetWare server for a PostScript printer.
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

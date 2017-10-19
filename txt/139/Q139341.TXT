@@ -1,0 +1,90 @@
+DOCUMENT:Q139341  08-AUG-2001  [winnt]
+TITLE   :FTP Server Interaction with Guest Account
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FTP server in Windows NT 3.51 Server (non-domain controller) can be
+configured to validate users using the domain account data base or the local
+account data base. However, the guest account settings in both data bases must
+be correctly configured.
+
+MORE INFORMATION
+================
+
+By default, an FTP client is validated against the local accounts data base. To
+enable a Windows NT Server domain member (non-DC) to validate ftp clients
+against the domain accounts data base, you must add the DefaultLogonDomain
+parameter (value type REG_SZ) to the following registry key location:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FTPSVC\Parameters
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To do this, run the Registry Editor (REGEDT32.EXE). From the HKEY_LOCAL_MACHINE
+subtree, go to the key:
+
+   \System\CurrentControlSet\Services\FTPSVC\Parameters
+
+Choose ADD VALUE from the Edit menu. Enter in DefaultLogonDomain as the value
+name with a data type of REG_SZ. The String needs to be the domain name to
+validate users against. If you are using the MyDomainName domain to validate
+users, the entry would look like the following:
+
+   DefaultLogonDomain:REG_SZ:MyDomainName
+
+If you use the guest account for anonymous connections and/or you wish to allow
+access to user names not in the domain data base, you must pay special attention
+to whether the guest account is enabled or disabled on both the domain account
+data base AND the local account data base.
+
+Below is a table describing the behavior of the ftp server when guest accounts
+are enabled or disabled on the local machine and domain:
+
+   Guest Account Setting   FTP Server Behavior
+   ---------------------   --------------------------------------------
+   Local      Domain       Anonymous Users   Random User (not in domain
+   Guest      Guest        Allowed Access?   database) Allowed Access?
+   --------   --------     ---------------   --------------------------
+   ENABLED    DISABLED     Yes                Yes
+
+   DISABLED   ENABLED      Yes                No
+
+   ENABLED    ENABLED      Yes                Yes
+
+   DISABLED   DISABLED     No                 No
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

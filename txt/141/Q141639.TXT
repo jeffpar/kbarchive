@@ -1,0 +1,80 @@
+DOCUMENT:Q141639  10-FEB-2000  [foxpro]
+TITLE   :BUG: Subclass Member Object Properties Cannot Be Changed
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to change the FontItalic property of a label that is based on a
+subclass is unsuccessful.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Issue the following commands in the Command window and follow the instructions as
+noted.
+
+      CREATE CLASS redform OF newclass AS form
+      * select the backcolor property and change the color to Red.
+
+      SET CLASSLIB TO newclass
+      CREATE CLASS redform2 OF newclass AS redform  && Add a label and save.
+
+      CREATE FORM test
+      * Add redform2 and create the FormSet by selecting the View Classes icon
+      * on the toolbar, choose ADD, and select newclass. Save the form.
+
+      MODIFY CLASS redform OF newclass  && Add a label and save.
+
+      MODIFY FORM test
+      * change the FontItalic property to .T. and save the form.
+
+      MODIFY FORM test
+      * note the FontItalic property for the Parent Class
+      * label is back to the default of .F.
+
+NOTE: This same behavior occurs with other font attributes when the class is
+created visually.
+
+Additional query words: VFoxWin kbbuglist5.00 buglist3.00 buglist3.00b
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

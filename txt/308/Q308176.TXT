@@ -1,0 +1,55 @@
+DOCUMENT:Q308176  22-OCT-2001  [iis]
+TITLE   :BUG: SSI #EXEC CMD Directive Does Not Work in IIS 5.1
+PRODUCT :Internet Information Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services, version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Internet Information Services (IIS) version 5.1, the server-side include
+(SSI) #EXEC CMD directive does not function properly.
+
+STATUS
+======
+
+This problem is corrected in IIS 6.0.
+
+REFERENCES
+==========
+
+For more information on using SSI directives, see the IIS 5.1 documentation.
+
+
+Additional query words: SSINC CMD directive iis
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbiisSearch kbiis510
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

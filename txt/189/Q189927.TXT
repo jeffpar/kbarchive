@@ -1,0 +1,99 @@
+DOCUMENT:Q189927  11-DEC-1999  [foxpro]
+TITLE   :PRB: MsGraph 8.0 Causes Fatal Exception Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you define an MsGraph 8.0 object with the Top, Left, Width, Height, Autosize,
+and Stretch properties in the class in Visual FoxPro 5.x, an exception error
+might occur when the class is instantiated.
+
+RESOLUTION
+==========
+
+Do not include the Top, Left, Width, and Height properties in conjunction with
+Autosize and Stretch properties in the class.
+
+Use the following sample code to work around for this problem:
+
+      PUBLIC x
+      x=CREATEOBJECT('MyForm')
+      x.ole1.AutoSize=.F.
+      x.ole1.Stretch=0
+      x.ole1.DoVerb()
+      x.Show
+
+      DEFINE CLASS MyForm AS Form
+      WindowType=1
+      ADD OBJECT ole1 AS OleControl WITH ;
+         OleClass='MSGraph.chart.8',;
+         Top=10, Left=10, Width=100, Height=100
+      ENDDEFINE
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a .prg (program) file.
+
+2. Copy the following code into the program file:
+
+         PUBLIC x
+         x=CREATEOBJECT('MyForm')
+         x.Show
+
+         DEFINE CLASS MyForm AS Form
+         WindowType=1
+         ADD OBJECT ole1 AS OleControl WITH   ;
+            OleClass='MSGraph.chart.8',;
+            Top=10, Left=10, Width=100, Height=100,;
+            AutoSize=.f.,Stretch=0
+         ENDDEFINE
+
+3. Save the program and run it.
+
+RESULT: An exception error occurs, and Visual FoxPro shuts down.
+
+Additional query words: kbOOP kbinterop kbVFp500a kbVFp500 kbVFp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

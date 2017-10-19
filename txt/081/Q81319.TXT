@@ -1,0 +1,103 @@
+DOCUMENT:Q81319  08-DEC-1999  [win95x]
+TITLE   :Cannot Print from Windows 3.0, 3.0a Accessory Applications
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Windows accessory applications (Write, Notepad, Paintbrush, and so
+on) cannot print.
+
+CAUSE
+=====
+
+A compressed or otherwise invalid Windows printer driver corresponding to the
+default printer is in the Windows directory.
+
+NOTE: Applications not located in the Windows directory do not demonstrate this
+problem.
+
+For example, if the current default printer is a Hewlett-Packard (HP) LaserJet
+II, and HPPCL.DRV is in the Windows directory in compressed format, none of the
+accessory applications can print. In addition, you can't choose the Setup button
+from the Printer Setup dialog box (on the File menu in each accessory
+application).
+
+RESOLUTION
+==========
+
+Delete the compressed driver file from the Windows directory and make sure an
+uncompressed version is in the Windows SYSTEM directory.
+
+MORE INFORMATION
+================
+
+When this situation occurs, the Windows accessory applications exhibit the
+following symptoms:
+
+Notepad, Cardfile, Calendar
+---------------------------
+
+ - The Print command on the File menu is unavailable (dimmed).
+
+ - Choosing Printer Setup from the File menu and then choosing the Setup button
+   yields the following error message:
+
+   Cannot find printer or printer driver
+
+Write
+-----
+
+ - The Print command on the File menu is unavailable (dimmed).
+
+ - Upon opening Write, the following error message immediately appears:
+
+   Cannot print; check to ensure that your printer is installed correctly and
+   your disk has sufficient available space.
+
+ - Choosing Printer Setup from the File menu and then choosing the Setup button
+   yields the following error message:
+
+   Cannot use printer; use Setup to install a new printer-driver file.
+
+Paintbrush
+----------
+
+ - The Print command in the File menu is unavailable (dimmed).
+
+ - When you choose Printer Setup from the File menu, the default printer is
+   omitted from the list of printers.
+
+
+Additional query words: greyed dimmed grey dim disabled inactive 3.0 3.0a accessories gray grayed
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

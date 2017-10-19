@@ -1,0 +1,74 @@
+DOCUMENT:Q173816  09-AUG-2001  [winnt]
+TITLE   :Desktop Pattern Corruption When Increasing Color Palette
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbdisplay
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you increase the color palette to more than 256 colors, the desktop pattern
+may turn black and may not be updated when icons are moved.
+
+CAUSE
+=====
+
+The bitmap is not updated properly when the mode changes.
+
+RESOLUTION
+==========
+
+Perform one of the following to work around this problem:
+
+ - Perform the following steps to reapply the background pattern:
+
+   1. Click the Start button, point to Settings, click Control Panel, and then
+      double-click Display.
+
+   2. Click the Background tab, click the appropriate Pattern and Wallpaper,
+      click Apply, and then click OK.
+
+   -or-
+
+ - Shut down and restart your computer.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0 with
+Service Pack 3. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 4.00 sp3 video corruption Compaq Deskpro 6000 matrox refresh redraw
+
+======================================================================
+Keywords          : kbdisplay 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

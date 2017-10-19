@@ -1,0 +1,76 @@
+DOCUMENT:Q182775  26-MAY-2001  [automap]
+TITLE   :Encarta Virtual Globe 1998: Minimum System Requirements
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 1998 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements needed to run Microsoft
+Encarta Virtual Globe, 1998 edition.
+
+MORE INFORMATION
+================
+
+To run Microsoft Encarta Virtual Globe, 1998 edition, you need:
+
+ - A multimedia PC with a 486DX/50 MHz or higher processor.
+
+ - Microsoft Windows 95 or Microsoft Windows NT workstation, version 4.0 or
+   later.
+
+ - 8 MB of memory (RAM) for Windows 95 (16 MB recommended); 16 MB for Windows NT
+   workstation (24 MB recommended).
+
+ - 29 MB of available hard disk space (you may need additional hard disk space
+   during installation - 50 MB of available hard disk recommended).
+
+ - A double-speed or faster CD-ROM drive.
+
+ - A Super VGA, 256 color monitor that supports 640 x 480 or higher resolution.
+
+ - A Microsoft Mouse, Microsoft IntelliMouse, or compatible pointing device.
+
+ - Microsoft Internet Explorer 3.02 (included on the Encarta Virtual Globe
+   CD-ROM) or later (after you install Internet Explorer, you can use another
+   browser as your default browser; Internet Explorer 3.02 is compatible with
+   Netscape Navigator version 2.0 or later).
+
+To use Microsoft Encarta Web Links, you need:
+
+ - A 9600-baud or faster modem.
+
+ - An Internet service provider (ISP) and access to the Internet.
+
+Additional query words: 1998 mmtitles world atlas maps
+
+======================================================================
+Keywords          : kbref kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe98
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

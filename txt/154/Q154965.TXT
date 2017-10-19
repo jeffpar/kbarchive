@@ -1,0 +1,70 @@
+DOCUMENT:Q154965  03-APR-1999  [exchange]
+TITLE   :XCLN:  System 11 Bomb When Printing
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to print from the Microsoft Exchange Macintosh client, the system
+crashes with System 11 bomb.
+
+CAUSE
+=====
+
+A printer driver was not selected in the Chooser.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. On the Apple menu, click the Chooser.
+
+2. In the Chooser, select a printer driver (for example, Laser Writer)
+
+Note: If you select the printer driver, but no printer, the print monitor will
+give you the error message that no printer is selected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange Macintosh
+client version 4.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange400Mac
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

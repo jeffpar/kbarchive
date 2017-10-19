@@ -1,0 +1,71 @@
+DOCUMENT:Q65691  30-JUL-2001  [lanman]
+TITLE   :Cannot Load NETLOGON.PRO from within Windows 3.00
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+NETLOGON.PRO does not load correctly when you log in from within the Windows
+version 3.00 Control Panel if you use version 3.00 of LANMAN.DRV, which is
+shipped with Windows version 3.00.
+
+CAUSE
+=====
+
+The MS-DOS LAN Manager installer does not recognize the existence of the Windows
+LANMAN.DRV file.
+
+RESOLUTION
+==========
+
+Manually delete or rename LANMAN.DRV.
+
+MORE INFORMATION
+================
+
+When you try to log in, version 3.00 of LANMAN.DRV tries to run
+$(LANROOT)\PROFILES\???.PRO (which does all of the USES when a user logs in) and
+either:
+
+1. fails to execute the profile
+
+--or--
+
+2. fails to execute the profile, flips to a full-screen window, and puts up an
+   "Invalid Drive Specification" error
+
+This problem does not occur if you use a NET LOGON command before starting
+Windows, or if you use version 3.01 of LANMAN.DRV (that is, if you rename or
+delete the version of this file that is shipped with Windows version 3.00).
+Version 3.01 of LANMAN.DRV is shipped with MS-DOS LAN Manager version 2.00.
+
+Please note that this problem is different from the LOGON SCRIPT problem that
+occurs when loading a profile from Windows. For more information on this
+problem, query in this Knowledge Base on the following words:
+
+   profile and spawn and logon and dlanman
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

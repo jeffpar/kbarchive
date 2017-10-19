@@ -1,0 +1,64 @@
+DOCUMENT:Q192458  10-AUG-2001  [winnt]
+TITLE   :Laptop PCMCIA Controller Not Recognized Under Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, on platform(s):
+    - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a 3Com Megahertz 10-100 LAN + 56k Modem PC Card in a Dell Inspiron
+3000 portable computer, the Plug and Play PCMCIA controller is not recognized by
+Windows NT 4.0 Service Pack 3. The operating system will have an error with the
+following entry in the event log:
+
+   The 3Com Megahertz 10/100 LAN + 56K Modem PC Card (Ethernet) service
+   failed to start due to the following error: A device attached to the
+   system is not functioning.
+
+RESOLUTION
+==========
+
+A third-party driver is now available from SystemSoft. Please contact them to
+get the driver.
+
+
+MORE INFORMATION
+================
+
+CardWizard is manufactured by SystemSoft, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: PCCARD COMBO PCMCIA
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

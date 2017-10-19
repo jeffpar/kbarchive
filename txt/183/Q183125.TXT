@@ -1,0 +1,115 @@
+DOCUMENT:Q183125  16-MAY-2002  [winnt]
+TITLE   :Shell Doc Property Dialog Custom Date Incorrect after Year 2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbYear2000 kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the document Properties viewer to define a custom property to
+include a date type in a file, the year may not be saved correctly. For example,
+if you select a Microsoft Project data file (*.mpp) in a folder window, chose
+Properties on the Explorer window File menu, click the Custom tab click Date in
+the Type field, enter a value of 01/01/01, and then click Add, the date appears
+as 01/01/1901 rather than 01/01/2001.
+
+
+RESOLUTION
+==========
+
+Windows NT 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+The English version of this post-SP3 hotfix has been posted to the following
+Internet locations.
+
+   http://www.microsoft.com/ntserver/nts/downloads/archive/NT4y2kpostSP3/default.asp
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/y2k2-fix/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+MORE INFORMATION
+================
+
+For more information on what is fixed in Y2K2-fix, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q175093 User Manager Does Not Recognize February 2000 As a Leap Year
+
+   Q180122 After Changing the Time, Windows NT May Skip a Day
+
+   Q183123 Find Files Displays Garbled Date if Year is 2000 or Greater
+
+   Q184132 Err Msg: Value Entered Does Not Match with the Specified Type
+
+   Q186669 FPNW Logout.exe Incorrectly Reports Year After Jan. 1, 2000
+
+   Q191768 Date of Print Job May Be Displayed Incorrectly in Print Queue
+
+   Q193056 Problems in Date/Time after Choosing February 29 in a Leap Year
+
+   Q193434 Migration Changes NetWare Accounts Expiration Date
+
+   Q194726 FPNW Client Does Not Get Correct Time or Date After Y2K
+
+   Q207799 IBM PS/1 will not Boot on or After January 1, 2000
+
+   Q216916 NTBACKUP Writes Incorrect Year to Log File
+
+For information on the Y2K2-fix for Windows NT 4.0, Terminal Server Edition,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q196548 Y2K Update for Windows NT 4.0, Terminal Server Edition
+
+Additional query words: y2k year 2000 word excel powerpoint project access 98 4.00
+
+======================================================================
+Keywords          : kbYear2000 kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

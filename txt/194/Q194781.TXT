@@ -1,0 +1,85 @@
+DOCUMENT:Q194781  13-AUG-1999  [foxpro]
+TITLE   :PRB: Version Information in Project Causes Invalid .Exe File
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbProjManager kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the German version of Visual FoxPro 6.0, an executable built from a project
+that contains version information or has the Auto Increment check box selected
+fails to run under the German version of Windows NT 4.0. The following error
+message appears:
+
+   <path>/P.EXE ist keine zulassige Anwendung fur Windows.
+
+A rough translation in English follows:
+
+   <path>/P.exe is not a permissible application for Windows.
+
+RESOLUTION
+==========
+
+Remove version information in the Project Manager and make sure that the Auto
+Increment check box is not selected.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project called Ztest.
+
+2. Add a main program to the project that contains a WAIT WINDOW command then
+   save the program.
+
+3. In the Project Manager, click Build... (ERSTELLEN...) and choose Build
+   Executable (EXE ERSTELLEN).
+
+4. Next, select the VERSION button.
+
+5. Place a number in either the Major, Minor, or Revision text boxes or select
+   the Auto Increment check box.
+
+6. Click OK twice and then build the executable file.
+
+7. Start Explorer and attempt to start the executable.
+
+RESULTS: The following error appears:
+
+   <path>/P.EXE ist keine zulassige Anwendung fur Windows.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProjManager kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

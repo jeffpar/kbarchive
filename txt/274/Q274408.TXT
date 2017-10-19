@@ -1,0 +1,74 @@
+DOCUMENT:Q274408  15-JUN-2001  [msnetwork]
+TITLE   :MSN Explorer Pages Are Blank Or Difficult To Read
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:kbenable kbEnableSight
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On launch of MSN Explorer the homepage and e-mail are blank.
+
+CAUSE
+=====
+
+In the Windows Accessibility Options, the High Contrast color setting defaults
+to a black background with black text for the homepage and white background with
+white text for the e-mail window.
+
+RESOLUTION
+==========
+
+Adjust the default colors for text to a neutral or gray color. To do so:
+
+1. Click Start, select Settings, and then click Control Panel
+
+2. Click Accessibility Options, and under the Display tab clear the Use High
+   Contrast checkbox.
+
+3. Click Apply and then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in High Contrast Accessibility
+Settings.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu MSN Explorer
+
+======================================================================
+Keywords          : kbenable kbEnableSight 
+Technology        : kbOSWin98 kbOSWin95 kbOSWin98SE kbOSWinSearch kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

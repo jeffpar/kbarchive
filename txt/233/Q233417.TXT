@@ -1,0 +1,90 @@
+DOCUMENT:Q233417  09-DEC-2000  [mspress]
+TITLE   :Microsoft PowerPoint 2000 Step by Step Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft PowerPoint 2000 Step by Step ISBN 1-57231-972-0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft PowerPoint 2000 Step by Step,
+ISBN 1-57231-972-0.
+
+The following topics are covered:
+
+ - CD-ROM: Readme.txt Instructions For Decker Presentations May Not Work
+
+ - Pages 64-65: Add First Step and Renumber Steps Accordingly
+
+MORE INFORMATION
+================
+
+CD-ROM: Readme.txt Instructions For Decker Presentations May Not Work
+---------------------------------------------------------------------
+
+The steps presented in the Readme.txt for viewing the Decker Presentation Center
+Video workshops from the companion CD-ROM may not work for all systems (notably
+Windows 95, and possibly some NT 4.0 systems and Windows 2000 system).
+
+On some systems, typing D:\Presentation Center in the Start-Run menu will return
+the following error:
+
+   cannot find the file 'd:\presentation' or one of its components
+
+The instructions in the Readme.txt should be modified as follows:
+3. Type "D:\Presentation Center" (where D is your CD-ROM drive letter) and press
+the Enter key. The statement must be enclosed in quotation marks.
+4. This will open a Windows Explorer window.
+
+Note: The instructions presented in the book, pages xviii-xix, which are slightly
+different, will work on all systems.
+
+
+Pages 64-65: Add First Step and Renumber Steps Accordingly
+----------------------------------------------------------
+
+Add a new first step to the procedure "Collapse and Expand the Outline."
+
+Add:
+1. If necessary, on the View menu, point to Toolbars, and then click Outlining to
+display the Outlining Toolbar.
+
+Then renumber the rest of the current steps 1-7 to be steps 2-8.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 1-57231-972-0 EUSBS PPT2000
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

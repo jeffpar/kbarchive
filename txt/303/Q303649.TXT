@@ -1,0 +1,76 @@
+DOCUMENT:Q303649  09-MAY-2002  [sms]
+TITLE   :SMS: User and User Group Discovery Runs w/Site Component Manager
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbtool kbsms200 kbsms200bug kbsmsSearch kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you restart the Systems Management Server (SMS) Site Component Manager,
+User (Usrvariable characters.ddr) and User Group (Ugvariable characters.ddr)
+discovery data records build up in the SMS\Inboxes\DDM.box file on the site
+server.
+
+CAUSE
+=====
+
+This problem can occur for the following two reasons:
+
+ - Site Component Manager starts any component that is not currently started.
+
+ - User Discovery (NTUSRDIS) and User Group Discovery (NTUG_DIS) run through a
+   discovery interval when started, regardless of schedule.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+To avoid this problem, disable user group and user discovery unless they are
+needed.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+Additional query words: prodsms ddr
+
+======================================================================
+Keywords          : kbtool kbsms200 kbsms200bug kbsmsSearch kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

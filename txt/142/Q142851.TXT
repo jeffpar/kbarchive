@@ -1,0 +1,55 @@
+DOCUMENT:Q142851  01-SEP-1999  [iis]
+TITLE   :Internet Explorer FTP Cannot 'PUT' (Upload) Files
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:3.0,3.01,4.0,4.01; winnt:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+ - Microsoft Internet Explorer versions 3.0, 3.01, 4.0, 4.01 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot find a PUT command in Internet Explorer. You can successfully
+download files using the FTP option from Internet Explorer, but you cannot
+upload files to a remote FTP server.
+
+CAUSE
+=====
+
+Internet Explorer, like many other Web browsers, does not currently have FTP PUT
+capability.
+
+RESOLUTION
+==========
+
+Use a standard FTP program to write files to a remote FTP server.
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbIEsearch kbiis100 kbZNotKeyword2 kbIENT400Search kbZNotKeyword3 kbIE300WinNT400 kbIE301WinNT400 kbIE400WinNT400 kbIE401WinNT400
+Version           : WINDOWS:3.0,3.01,4.0,4.01; winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

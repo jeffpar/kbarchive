@@ -1,0 +1,87 @@
+DOCUMENT:Q97397  06-DEC-1999  [win16sdk]
+TITLE   :FONTUTIL.RTF - Technical Article
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbSDKWin16
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Handling fonts in Microsoft Windows-based applications can involve a lot of
+grunt work. For example, essential tasks such as creating fonts, retrieving
+point sizes, and calculating text metrics can take up a lot of the developer's
+time and effort. This article describes some useful font-handling functions that
+take care of most of this tedious work, thus making it easier to create and
+manipulate fonts in Windows.
+
+The FONTUTIL sample application demonstrates most of the font-handling functions
+discussed in this technical article. FONTUTIL contains useful font-handling
+routines that make it easier for an application to create and manipulate fonts
+in Microsoft Windows by taking care of most of the tedious work.
+
+The font utilities are primarily for applications that need the relatively
+simplistic font model presented in the ChooseFont common dialog box.
+ChooseFont() deals with fonts using four primary variables: typeface name,
+typeface style, point size, and effects. ChooseFont also allows for color
+selection, but the font-handling functions do not currently support this
+feature.
+
+The font-handling functions allow an application to create and interrogate fonts
+in a manner that is consistent with the ChooseFont model. For example, you can
+create a font by using the ReallyCreateFont() function and specifying the
+typeface name, typeface style, and point size; you can retrieve the typeface
+style of a font by using the GetTextStyle() function; and so on.
+
+The font utility functions support Microsoft Windows versions 3.0 and 3.1, and
+Windows NT version 3.1. You can include the functions either in an application
+or in a Dynamic-Link Library (DLL).
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Fontutil.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words: softlib
+
+======================================================================
+Keywords          : kbfile kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

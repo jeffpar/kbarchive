@@ -1,0 +1,91 @@
+DOCUMENT:Q195626  31-JUL-1999  [foxpro]
+TITLE   :FIX: Save As HTML Not Working Correctly with Double Data Types
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbvfp600 kbvfp600bug kbFFC kbVS600sp3fix kbGrpDSFox kbMiscTools1098fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the GenHTML engine to save the contents of a Visual FoxPro table to
+a .html file, any fields of the type double are not represented correctly in the
+resulting .html file.
+
+RESOLUTION
+==========
+
+The October 1998 Visual FoxPro 6.0 Gallery and FoxPro Foundation Classes (FFC)
+update includes a new version of the GenHTML.prg file, which addresses this
+problem. You can download the update from the following Web address:
+
+http://msdn.microsoft.com/vfoxpro/downloads/updates.asp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This bug was corrected in the October
+1998 Visual FoxPro 6.0 Gallery and FFC updates.
+
+-and-
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code:
+
+   *!*  Create Sample Data
+   CREATE TABLE testdata (data b(5))
+   APPEND BLANK
+   REPLACE DATA WITH 99999
+   BROWSE NOWAIT
+   *!*  Generate HTML and display in browser
+   DO (_GENHTML) WITH 'Double Field',alias(),2
+
+Note that the .html file displayed in the browser does not show any decimal
+places for the data contained in the table.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbvfp600bug kbFFC kbVS600sp3fix kbGrpDSFox kbMiscTools1098fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

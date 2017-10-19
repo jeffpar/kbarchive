@@ -1,0 +1,73 @@
+DOCUMENT:Q160946  13-JUN-2001  [win95x]
+TITLE   :Setup Hangs During First Reboot with Compaq NetFlex Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Windows 95 OEM Service Release 2 (OSR2) Setup on a computer with a
+Compaq NetFlex controller (network adapter), the computer may stop responding
+(hang) on the first reboot. When you restart the computer, Setup does not
+continue and the computer may hang again.
+
+CAUSE
+=====
+
+The Compaq NetFlex driver supplies only a 4K buffer when paging in real mode,
+such as during the first reboot during Setup or when it is running in MS-DOS
+Compatibility mode.
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+ - Contact your hardware vendor to obtain the Windows 95 OEM Service Release
+   version 2.1 update.
+
+ - Remove the NetFlex card from your computer and run Setup again. Do not choose
+   Safe Recovery when you are prompted. When OSR2 is installed, put the card
+   back in your computer and use the Add New Hardware tool in Control Panel to
+   detect it.
+
+   NOTE: If your hard disk is using MS-DOS Compatibility mode, your computer may
+   hang when you run the Add New Hardware tool.
+
+   For information about troubleshooting MS-DOS Compatibility mode, see the
+   following article in the Microsoft Knowledge Base:
+
+   Q130179 Troubleshooting MS-DOS Compatibility Mode on Hard Disks
+
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

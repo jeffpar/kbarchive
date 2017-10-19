@@ -1,0 +1,68 @@
+DOCUMENT:Q147363  08-AUG-2001  [winnt]
+TITLE   :AlphaServer Hangs on Install of Windows NT Version 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+During the installation of Windows NT 4.0 on a Digital Equipment Corporation DEC
+AlphaServer, the setup process may stop responding (hang) and may not respond to
+user input.
+
+CAUSE
+=====
+
+Setup may hang when it attempts to update the NVRAM variables on computers that
+have 120 N/S EPROM parts. This problem affects Sable, Gamma, Lynx, and Rawhide.
+
+See KB Article:
+
+   ARTICLE-ID: Q164594
+   TITLED : NT 4.0 hangs on DEC AlphaServer 2000, 2100, and 2100A Systems
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem has been corrected in the latest U.S. Service Pack for Windows NT
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt alpha dec crash hang freeze
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

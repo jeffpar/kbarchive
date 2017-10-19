@@ -1,0 +1,117 @@
+DOCUMENT:Q308922  05-JUL-2002  [automap]
+TITLE   :Streets and Trips: Browser Hangs During Streets & Trips Install
+PRODUCT :Microsoft Automap
+PROD/VER::1.0,5.5
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Streets & Trips 2002, version 1.0, used with:
+    - Microsoft Internet Explorer version 5.5 for Windows 98 Second Edition 
+    - Microsoft Internet Explorer version 5.5 for Windows Millennium Edition 
+ - Microsoft Streets and Trips 2001, used with:
+    - Microsoft Internet Explorer version 5.5 for Windows 98 Second Edition 
+    - Microsoft Internet Explorer version 5.5 for Windows Millennium Edition 
+ - Microsoft MapPoint 2002, used with:
+    - Microsoft Internet Explorer version 5.5 for Windows 98 Second Edition 
+    - Microsoft Internet Explorer version 5.5 for Windows Millennium Edition 
+ - Microsoft MapPoint 2001, used with:
+    - Microsoft Internet Explorer version 5.5 for Windows 98 Second Edition 
+    - Microsoft Internet Explorer version 5.5 for Windows Millennium Edition 
+ - Microsoft MapPoint 2000, used with:
+    - Microsoft Internet Explorer version 5.5 for Windows 98 Second Edition 
+    - Microsoft Internet Explorer version 5.5 for Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Streets and Trips, Microsoft Internet
+Explorer Setup stops responding.
+
+CAUSE
+=====
+
+This behavior can occur if there are too many empty INF files on your hard disk.
+
+RESOLUTION
+==========
+
+NOTE: Because there are several versions of Microsoft Windows, the following
+steps may be different on your computer. If they are, see your product
+documentation to complete these steps.
+
+To resolve this issue, run the Disk Cleanup utility, delete all of the empty
+OEM*.inf files, and then reinstall Internet Explorer and Streets and Trips. To
+do this, follow these steps:
+
+1. Click Start, point to Programs, point to Accessories, point to System Tools,
+   and then click Disk Cleanup.
+
+2. In the Select Drive dialog box, click C.
+
+3. Click to select the following check boxes:
+
+    - Temporary files
+
+    - Downloaded Program Files
+
+    - Temporary Internet Files
+
+4. When the Cleanup process is complete, restart your computer.
+
+5. Click Start, point to Search, and then click "For Files or Folders".
+
+6. In the Named box, type "OEM*.inf" (without the quotation marks), and then
+   click Search Now.
+
+7. When the search process is complete, note the size of each file (located to
+   the right of the file name).
+
+8. Press and hold down the SHIFT key, select each file that has a size of 0
+   bytes, and then press DELETE.
+
+   When the confirmation message appears, click Yes.
+
+9. Click Start, and then click Run.
+
+10. In the Run box, type "msconfig" (without the quotation marks), and then
+   click OK.
+
+11. On the General tab, click "Selective startup", and then click to clear each
+   check box.
+
+12. When prompted, restart your computer.
+
+13. Reinstall Internet Explorer.
+
+14. When the installation process is complete, restart your computer.
+
+15. Install Streets and Trips.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2002
+Version           : :1.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

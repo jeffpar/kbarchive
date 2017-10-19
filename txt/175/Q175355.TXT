@@ -1,0 +1,58 @@
+DOCUMENT:Q175355  11-MAR-1999  [exchange]
+TITLE   :XFOR: T-shoot Exchange Server with Lotus Messaging Web Site
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For information on Lotus Messaging Products including Lotus Notes, Lotus
+cc:Mail, and X.400 connector on all platforms, see the following Web site:
+
+   http://orionweb.lotus.com/basic.html
+
+MORE INFORMATION
+================
+
+You can use the above site to:
+
+ - Find useful information about interoperability with Microsoft products such
+   as Exchange Server.
+
+ - Greatly enhance any troubleshooting process that includes one of the Lotus
+   products.
+
+ - Use the Knowledge Base-like Web search engine that allows you to find
+   articles about a specific error message or symptom.
+
+Additional query words: lotus cc:mail exchange notes x.400
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

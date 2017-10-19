@@ -1,0 +1,88 @@
+DOCUMENT:Q103155  13-JUN-2001  [winmisc]
+TITLE   :Adding Musical Disc and Track Titles to Music Box
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Disc titles and track titles for individual audio compact discs (CDs) can be
+added to the Music Box program that comes with Windows Sound System.
+
+MORE INFORMATION
+================
+
+The CD titles and track titles added to Music Box are saved in the MUSICBOX.INI
+file and searched each time a new CD is placed into the CD-ROM drive.
+
+Valid MUSICBOX.INI Entries Are:
+
+   [General]
+   WindowXPosn = <X Position>
+   WindowXPosn = <X Position>
+
+   Shuffle= <1 shuffle is on, 0 shuffle is off>
+   Repeat= <1 repeat is on, 0 repeat is off>
+
+   [<disc ID #>]
+   DiskTItle= <Title>
+   Track1= <Track Title>
+   .
+   .
+   TrackN= <Track Title>
+   Playlist= <track #>...<track #>...<track #>
+
+Example:
+
+   [General]
+   WindowXPosn=103
+   WindowYPosn=39
+   Shuffle=0
+   Repeat=0
+
+   [25118464]
+   DiscTitle=Genesis - We Can't Dance
+   Track1=No Son of Mine
+   Track2=Jesus He Knows Me
+   Track3=Driving the Last Spike
+   Track4=I Can't Dance
+   Track5=This Is Elevator Music for Adults
+   Track6=Dreaming While You Sleep
+   Track7=Tell Me Why I Bought This CD
+   Track8=Living Forever
+   Track9=Hold on My Heart
+   Track10=Way of the World
+   Track11=Since I Lost You
+   Track12=Fading Lights
+   PlayList=1 2 3 4 5 6 7 8 9 10 11 12
+
+Additional query words: 1.0 2.0 Automatic CD CD's List's List CD- ROM musical songs disk disks
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

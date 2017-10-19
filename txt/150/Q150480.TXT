@@ -1,0 +1,78 @@
+DOCUMENT:Q150480  18-DEC-1999  [homemm]
+TITLE   :Mac Music Central: Sounds Play Poorly on 5200, 5215 Computers
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Music Central for the Macintosh, 1996, 1997 editions 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Music Central introduction screen appears, the startup sound plays
+poorly. Also, when you play song clips, the sound may play poorly and the slide
+bar may not move.
+
+This occurs on Macintosh 5200 and 5215 computers. This problem can occur on lower
+performance Macintosh computers such as the SE/30.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Music Central 1996 and 1997. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+There is no resolution that will keep the problem from occurring. However, you
+can turn off the startup sequence sound. To turn off the sound, do the
+following:
+
+1. Open Music Central.
+
+2. Click the Start button (in the lower-right corner).
+
+3. On the Features menu, click Settings.
+
+4. Clear the check mark from Play Title Screen Sequence selection, and then
+   click OK.
+
+The startup sound will not play the next time you start Music Central.
+
+MORE INFORMATION
+================
+
+Quality of the audio playback may be slightly increased by optimizing the
+performance of Music Central. The information necessary to do this can be found
+in the "Read Me" file located on the Music Central 96 compact disc.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm 1997 96 97
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbMusicCentralMacSearch kbMusicCentralMac1996
+Version           : MACINTOSH:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

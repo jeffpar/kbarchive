@@ -1,0 +1,65 @@
+DOCUMENT:Q268742  08-AUG-2001  [winnt]
+TITLE   :PPTP Filtering Disables IP Forwarding
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT 4.0-based server may not route IP packets after you enable IP
+forwarding and reboot the computer. The clients on the server's local segments
+are correctly configured to use the IP address that is assigned to the server's
+local interface as their default gateway, but cannot ping from one segment to
+another other.
+
+CAUSE
+=====
+
+This behavior can occur if Point-to-Point Tunneling Protocol (PPTP) filtering is
+enabled on at least one of the network adapters on the Windows NT-based server.
+
+RESOLUTION
+==========
+
+Disable PPTP filtering. To do so, view the TCP/IP properties, click Advanced,
+and then click to clear the Enable PPTP Filtering check box.
+
+MORE INFORMATION
+================
+
+PPTP filtering disables the network adapter for all communications except for
+PPTP.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

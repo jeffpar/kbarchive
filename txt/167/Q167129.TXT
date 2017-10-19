@@ -1,0 +1,73 @@
+DOCUMENT:Q167129  09-AUG-2001  [winnt]
+TITLE   :STOP 0x7A or System Lockup in NTBACKUP with MINIQIC
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After selecting Hardware Setup in NTBACKUP, and pressing the OK button when the
+MINIQIC device is shown, the SCSI bus may stop responding. The system will send
+a SCSI RESET numerous times before it gives up. If the boot device happens to be
+on the same SCSI bus, the system will blue screen with the following error
+message:
+
+   STOP 0x0000007A KERNEL_DATA_INPAGE_ERROR
+
+This problem seems to occur with every MINIQIC device. This only happens when a
+MINIQIC device is attached to a SCSI host adapter controlled by Aic78xx.sys.
+
+
+CAUSE
+=====
+
+A bit was not getting reset during a PCI Master Abort condition, causing all
+SCSIPORT requests to not make it to the SCSI bus.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

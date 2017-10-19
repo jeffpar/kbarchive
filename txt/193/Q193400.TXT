@@ -1,0 +1,109 @@
+DOCUMENT:Q193400  11-JAN-2001  [vbwin]
+TITLE   :BUG: Show Event in a UserControl Array Member Does Not Execute
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A control array of UserControls is created in a Standard EXE project. When the
+Visible property of a member of the UserControl array is set to True, the Show
+Event does not execute.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE project in Visual Basic. Form1 is created default.
+
+2. Add an ActiveX Control project to the project group by completing the
+   following steps:
+
+   a. Select the File/Add project menu option to display the Add Project dialog
+      box.
+
+   b. In the New tab, select ActiveX Control.
+
+   c. Click Open to close the Add Project dialog box. UserControl1 is created by
+      default.
+
+3. Copy the following code in the Code window of UserControl1, and then close
+   all windows associated with UserControl1
+
+         Option Explicit
+
+         Private Sub UserControl_Hide()
+            Debug.Print "HIDE"
+         End Sub
+
+         Private Sub UserControl_Initialize()
+            Debug.Print "INIT"
+         End Sub
+
+         Private Sub UserControl_Show()
+            Debug.Print "SHOW"
+         End Sub
+
+4. Add an instance of UserControl1 to Form1. Set the Index property of
+   UserControl1 to 0.
+
+5. Add a CommandButton to Form1.
+
+6. Copy the following code to the Code window of Form1:
+
+         Option Explicit
+
+         Private Sub Command1_Click()
+            Load UserControl11(1)
+            UserControl11(1).Visible = True
+            UserControl11(1).Visible = False
+         End Sub
+
+7. Press the F8 key to step through each line of code until Form1 appears. After
+   Form1 appears, click the Command1 CommandButton and press the F8 key to step
+   through each event. Note that the Show event does not execute in response to
+   clicking the CommandButton. The expected behavior is for the Show event to
+   execute after the Initialize event.
+
+Additional query words: kbDSupport kbDSD kbVBp kbCtrl kbVBp600bug kbActiveX
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

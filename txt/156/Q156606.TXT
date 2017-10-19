@@ -1,0 +1,121 @@
+DOCUMENT:Q156606  09-AUG-2001  [winnt]
+TITLE   :Windows NT Setup Fails to Install OEM Network Driver
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During Windows NT 4.0 Setup network adapter installation, if you choose Select
+From List, then Have Disk, and you are using a third-party OEM network card
+device driver disk for installation, the following error will occur when you try
+to copy the OEM files from the installation disk:
+
+   An error has occurred:
+   Unable to open the file:D:\i386\OEM_FILE_NAME
+
+-or- If you performed a winnt /B installation
+
+   Unable to open the file:$win_nt$.~ls\i386\OEM_FILE_NAME
+
+   A Non-critical error has occurred. you may retry the operation, Ignore it, or
+   exit the entire setup operation.
+
+CAUSE
+=====
+
+The OEM installation oemsetup.inf file was incorrectly written to list
+themselves as an NT shipped component, Windows NT 4.0 Setup process
+inadvertently overwrites the user input local variable $(SRCDIR) called for by
+the Oemsetup.inf file with the default Windows NT source path.
+
+WORKAROUND
+==========
+
+To work around this problem ask the OEM vendor for an updated oemsetup.inf file
+or perform either of the following:
+
+ - Complete the installation by choosing to install the Microsoft Loopback
+   adapter, then add OEM Network adapter after NT is installed.
+
+-or-
+
+ - Replace $(SRCDIR) with A:\ in the Oemsetup.inf file located on the OEM
+   installation disk, as in the following example. See the lines marked "<---
+   here" for the necessary changes. These changes allow the network card
+   installation to work during setup.
+
+   [Install-Option]
+       set STF_VITAL = ""
+
+       ifstr(i) $(AddCopy) == "YES"
+
+      AddSectionFilesToCopyList Files-$(Option) A:\ <----- here
+    $(!STF_WINDOWSSYSPATH)\drivers
+    endif
+
+       ifstr(i) $(DoCopy) == "YES"
+
+          set !STF_NCPA_FLUSH_COPYLIST = TRUE
+          CopyFilesInCopyList
+
+       endif
+
+       Exit
+
+   [Install-Update]
+      set STF_VITAL        = ""
+      set STF_OVERWRITE    = "VERIFYSOURCEOLDER"
+      ;set STF_VERSION     = "YES"
+
+      AddSectionFilesToCopyList Files-$(Option) A:\ <--- here
+   $(!STF_WINDOWSSYSPATH)\drivers
+   AddSectionFilesToCopyList Files-Inf A:\ $(!STF_WINDOWSSYSPATH) <- here
+      set !STF_NCPA_FLUSH_COPYLIST = TRUE
+      CopyFilesInCopyList
+
+      exit
+
+   [Install-Dll]
+      set STF_VITAL        = ""
+   AddSectionFilesToCopyList Files-Dll A:\ $(!STF_WINDOWSSYSPATH) <- here
+      CopyFilesInCopyList
+      exit
+
+Every network card Oemsetup.inf file will be different; however, it should
+contain similar logic to prompt the user for the input source, then pass that
+source to $(SRCDIR) local variable. Hardcoding the entry $(SRCDIR) to be A:\
+ensures the path is useable and not overwritten.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

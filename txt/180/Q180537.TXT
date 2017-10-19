@@ -1,0 +1,99 @@
+DOCUMENT:Q180537  12-JUN-2001  [sna]
+TITLE   :TPs Can't Be Invoked On Windows 95/NT Clients if One TP Ends
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If multiple instances of the same invokable APPC/CPI-C TP are running on a SNA
+Server Client for Windows 95 or Windows NT, the active TPs cannot be invoked if
+one instance of the TP ends for any reason.
+
+SNA Server will log the following event in the Windows NT Application Event Log
+when attempting to invoke one of the remaining active TPs on the Windows 95 or
+Windows NT client:
+
+   Event ID: 60
+   Source: SNA Server
+   Description: Failed to invoke APPC TP <TP Name>, sense data = 084C0000
+
+The 084C0000 refers to AP_TRANS_PGM_NOT_AVAIL_NO_RETRY.
+
+CAUSE
+=====
+
+When an invokable APPC TP is started on a client, SnaBase sends an update
+message to the client's sponsor SNA Server. The SNA Server adds the TP to its
+local service table; this entry is used for routing incoming DLOAD messages to
+the client. When the TP ends, the client SnaBase sends another update message to
+the sponsor server asking the SNA Server to remove the TP from its service
+table. These messages, both add and remove, are sent for each instance of the TP
+running on the client. The SNA Server only keeps one instance of the TP in its
+service table no matter how many instances are running on the client. When one
+instance of the TPs ends, the SNA Server marks the TP listed in the service
+table as inactive, which means none of the other TPs on the client can be
+invoked by the partner TP.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.0, 2.1,
+2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, and 4.0.
+
+This problem was corrected in the latest SNA Server versions 3.0 and 4.0 U.S.
+Service Packs. For information on obtaining these Service Packs, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+
+MORE INFORMATION
+================
+
+With the fix applied, the SNA Server Clients for Windows 95 and Windows NT are
+updated so that the update message to remove a TP from the service table on the
+SNA Server is only sent after the last instance of the TP ends.
+
+NOTE: There are other possible causes for this event, which are not related to
+this particular issue. For additional information, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q166623 SNA Server Rejects FMH-5 Attach Intended for TP on NT Client
+
+   Q170071 Invokable TP Timeout May Occur with Non-queued Operation
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

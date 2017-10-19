@@ -1,0 +1,66 @@
+DOCUMENT:Q142420  30-JUL-2001  [visualc]
+TITLE   :DOC: Setdflag.c Sample for _CrtSetDbgFlag Missing Tilde (~)
+PRODUCT :Microsoft C Compiler
+PROD/VER:WinNT:4.0,4.1,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbCRT kbVC400 kbVC410 kbVC420 kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Setdflag.c sample program in the Help under _CrtSetDbgFlag(), contains the
+following section of code which is missing a tilde (~) character:
+
+   /*
+   * Set the debug-heap flag to no longer keep freed blocks in the
+   * heap's linked list and turn on Debug type allocations (CLIENT)
+   */ 
+    tmpDbgFlag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
+    tmpDbgFlag |= _CRTDBG_ALLOC_MEM_DF;
+    tmpDbgFlag &= _CRTDBG_DELAY_FREE_MEM_DF;  // This line is wrong
+    _CrtSetDbgFlag(tmpDbgFlag);
+
+The third line of code should be:
+
+    tmpDbgFlag &= ~_CRTDBG_DELAY_FREE_MEM_DF;
+
+MORE INFORMATION
+================
+
+To disable a flag with the _CrtSetDbgFlag() function, you should AND the
+variable with the bitwise NOT of the bitmask.
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbdocerr kbCRT kbVC400 kbVC410 kbVC420 kbVC500 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : WinNT:4.0,4.1,4.2,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

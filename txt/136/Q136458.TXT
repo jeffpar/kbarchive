@@ -1,0 +1,64 @@
+DOCUMENT:Q136458  23-MAR-2000  [winnt]
+TITLE   :NetBIOS Datagrams Sent to Group Names Are Not Broadcast
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+NetBIOS applications that send datagrams to group names may fail to work
+correctly with the TCPIP-32 version 3.11b release.
+
+CAUSE
+=====
+
+When a NetBIOS application sends a datagram to a group name over the TCP/IP
+protocol stack, it is normally sent to a broadcast address. In version 3.11b of
+the TCPIP-32 stack, datagrams sent to group names are sent to a specific host
+address rather than a broadcast address.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32 for Windows for A
+supported fix is now available, but is not fully regression-tested and should be
+applied only to systems experiencing this specific problem. Unless you are
+severely impacted by this specific problem, Microsoft recommends that you wait
+for the service pack release containing this fix. Contact Microsoft Product
+Support Services for more information. Microsoft does not recommend implementing
+this fix at this time. Contact Microsoft Product Support Services for more
+information on the availability of this fix.
+
+
+Additional query words: prodtcp32 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

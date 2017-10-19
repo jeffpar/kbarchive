@@ -1,0 +1,62 @@
+DOCUMENT:Q253789  24-OCT-2000  [winnt]
+TITLE   :PRB: Screen Saver Activated While Playing Back MPEG Movie File
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you watch a Moving Picture Expert Group (MPEG) movie on a Windows
+2000-based computer, the Screen Saver may activate and you may no longer be able
+to see or hear the movie.
+
+CAUSE
+=====
+
+Windows 2000 does not prevent the Screen Saver from activating while you watch
+an MPEG movie.
+
+RESOLUTION
+==========
+
+The following are ways to easily workaround this problem:
+
+ - Disable the Screen Saver before you start an MPEG movie.
+
+ - Set the Screen Saver's activation time to a time that is longer than the
+   length of the movie.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

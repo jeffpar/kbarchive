@@ -1,0 +1,73 @@
+DOCUMENT:Q322711  04-JUN-2002  [winnt]
+TITLE   :Problems Switching Between Client for NFS and Gateway for NFS
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you switch between the Client for NFS service and the Gateway for NFS service
+in the same installation maintenance session, the newly installed service may
+not function as expected.
+
+CAUSE
+=====
+
+This problem may occur if all of the registry items are not updated correctly
+after you remove one of the services. Some registry values that have been
+modified may remain. These modified registry values may not apply to the new
+service, which may prevent the new service from functioning as expected.
+
+WORKAROUND
+==========
+
+If you switch between these services, separate the removal process and
+installation process of each service. Use Add/Remove Programs to remove the
+service that is being replaced, close Add/Remove Programs, and then start
+Add/Remove Programs again to add the new service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Windows Services for UNIX includes Client for NFS and Gateway for NFS. You can
+install only one of these services on a single computer. If you install Gateway
+for NFS, this service acts as the NFS client for the computer.
+
+Additional query words: solar coaster solarcoaster interix
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinServiceUNIXSearch kbWinServiceUNIX300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

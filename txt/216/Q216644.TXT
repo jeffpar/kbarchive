@@ -1,0 +1,71 @@
+DOCUMENT:Q216644  24-MAR-1999  [homegame]
+TITLE   :Golf 99: How to Install Specific Golf Courses to Your Hard Disk
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 1999 Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install specific golf courses in Microsoft Golf
+1999 Edition to your hard disk.
+
+MORE INFORMATION
+================
+
+If you install golf courses to your hard disk, you may improve the overall
+performance of Golf 99. To install a golf course to your hard disk, follow these
+steps:
+
+1. Insert the Golf 1999 Disc 1 CD-ROM into the CD-ROM drive. If the Golf 99
+   Setup program starts, skip to step 4. If the Setup program does not start,
+   continue to the next step.
+
+2. Click Start, and then click Run.
+
+3. In the Open box, type the following line, and then click OK
+
+   <drive>:\setup.exe
+
+   where <drive> is the drive letter of the CD-ROM drive that contains the
+   Golf 1999 Disc 1 CD-ROM.
+
+4. Click Add/Remove.
+
+5. In the list of courses, click to select the check box for each golf course
+   you want to install, and then click Continue.
+
+6. Follow the instructions on the screen to finish installing the golf courses
+   you selected.
+
+Additional query words: 1.00 msgame golf99
+
+======================================================================
+Keywords          : kbsetup kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolf99 kbGolfSearch
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

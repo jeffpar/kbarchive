@@ -1,0 +1,77 @@
+DOCUMENT:Q178144  19-DEC-1999  [homemm]
+TITLE   :Encarta: Pasting Text into Empty Word Document Resets Paper Size
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 99 
+ - Microsoft Encarta Reference Suite 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you copy text from Encarta Encyclopedia and then paste the text into an
+empty document in Microsoft Word, the default paper size in Word is reset to
+letter.
+
+RESOLUTION
+==========
+
+To work around this issue, use the following steps:
+
+1. Select the text or article you want to copy from Encarta Encyclopedia.
+
+2. On the Options menu, point to Copy, and then click the appropriate command.
+
+3. Start Microsoft Word to create a new document.
+
+4. Press ENTER to place a paragraph mark at the beginning of the document.
+
+5. Paste the selected text from Encarta Encyclopedia into Word. To do this,
+   click Paste on the Edit menu.
+
+6. Remove the paragraph mark from the beginning of the Word document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The default paper size is reset only in the document into which the text from
+Encarta is pasted. The default paper size is not reset for any other Word
+documents.
+
+Additional query words: multi multi-media media mm
+
+======================================================================
+Keywords          : kbinterop kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaEnCyc1998 kbEncartaReference99
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

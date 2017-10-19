@@ -1,0 +1,55 @@
+DOCUMENT:Q281615  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator 2: Frame Rate Drops with Tool Tips
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbhw kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use tool tips in Combat Flight Simulator 2, you may experience slow
+performance or a drop in the frame rate in the game.
+
+CAUSE
+=====
+
+This behavior can occur if a 3dfx Voodoo 5 video adapter is installed in your
+computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Combat Flight
+Simulator 2.
+
+Additional query words: msgame combatfs cfs2
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbhw kbimu kbHardware 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

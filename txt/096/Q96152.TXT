@@ -1,0 +1,64 @@
+DOCUMENT:Q96152  26-NOV-1999  [msdos]
+TITLE   :Setup Adds MS-DOS Directory to Every PATH Statement
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS Setup adds the MS-DOS directory to every PATH statement in your
+AUTOEXEC.BAT file. For example, if Setup finds the following lines in your
+AUTOEXEC.BAT file
+
+   path c:\dos;c:\windows
+   path %path%;c:\c700\bin
+
+it adds "c:\dos" to the second line even though the MS-DOS directory is already
+present in the first line. The lines appear as follows:
+
+   path c:\dos;c:\windows
+   path c:\dos;%path%;c:\c700;c:\bin
+
+MORE INFORMATION
+================
+
+If your MS-DOS directory is in the path twice, some applications may not behave
+as expected. For example, Windows Setup finds MS-DOS-based applications twice
+when it searches your hard disk based on the path.
+
+Microsoft has confirmed this to be a problem in MS-DOS versions 6.0, 6.2, and
+6.21. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 6.22 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

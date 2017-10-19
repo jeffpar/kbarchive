@@ -1,0 +1,55 @@
+DOCUMENT:Q158846  13-JUN-2001  [win95x]
+TITLE   :Black Screen Using ViewSonic 15G Monitor with S3 765
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using a ViewSonic 15G monitor with an S3 765 display adapter and you
+change the display resolution to 640 x 480 x 32 with a refresh rate of 90, the
+display will be black.
+
+CAUSE
+=====
+
+The refresh rate is set too high for this monitor and display adapter
+combination.
+
+RESOLUTION
+==========
+
+To resolve the problem, choose a lower refresh rate.
+
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

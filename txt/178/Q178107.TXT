@@ -1,0 +1,63 @@
+DOCUMENT:Q178107  19-DEC-1999  [homemm]
+TITLE   :Encarta 98 Err Msg: The Topic Does Not Exist...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbmm kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to integrate one or more Encarta 98 Encyclopedia for Windows
+Yearbook updates, you receive the following message if Encarta is unable to find
+the update files:
+
+   No new update files were found. Do you want Encarta Encyclopedia to search
+   your hard drive for updates?
+
+If you click Help, you receive the following error message:
+
+   The topic does not exist. Contact your application vendor for an updated Help
+   file. (129)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta 98
+Encyclopedia for Windows. Microsoft is researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+
+Additional query words: 98 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kberrmsg kbmm kbtool 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,79 @@
+DOCUMENT:Q141725  06-MAY-2001  [visualc]
+TITLE   :INFO: Stopping MFC/MDI from Creating New MDI Child Window On Sta
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbcode kbDocView kbMDI kbMFC KbUIDesign kbVC400 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By design, an AppWizard-generated MDI application will display a new MDI child
+window on startup. To turn off this feature, an application needs to use
+CCommandLineInfo::FileNothing as the shell command when calling the
+ProcessShellCommand() function.
+
+MORE INFORMATION
+================
+
+The enum value CCommandLineInfo::FileNothing is missing from the online
+documentation of CCommandLineInfo::m_nShellCommand. However, its definition can
+be found in the header file \Msdev\Mfc\Include\Afxwin.h.
+
+The ProcessShellCommand() function is called by InitInstance() of any
+CWinApp-derived class, so you can use the following sample code to disable the
+creation of a new MDI child window at startup:
+
+Sample Code
+-----------
+
+   BOOL CMyWinApp::InitInstance()
+       {
+       ...
+
+       // Parse command line for standard shell commands, DDE, file open
+       CCommandLineInfo cmdInfo;
+       ParseCommandLine(cmdInfo);
+
+       // Don't display a new MDI child window during startup
+       if (cmdInfo.m_nShellCommand == CCommandLineInfo::FileNew)
+         cmdInfo.m_nShellCommand = CCommandLineInfo::FileNothing;
+
+       // Dispatch commands specified on the command line
+       if (!ProcessShellCommand(cmdInfo))
+           return FALSE;
+
+       ...
+       }
+
+Additional query words: kbinf 4.00
+
+======================================================================
+Keywords          : kbcode kbDocView kbMDI kbMFC KbUIDesign kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

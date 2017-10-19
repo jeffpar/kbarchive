@@ -1,0 +1,68 @@
+DOCUMENT:Q194629  27-JUL-2001  [winnt]
+TITLE   :How to Restore the New Phonebook Entry Wizard in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool dun kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create a new phonebook entry in Dial-Up Networking, you are guided by
+the New Phonebook Entry Wizard. However, if you click to select the "I know all
+about phonebook entries and would rather edit the properties directly" check
+box, you do not see the New Phonebook Entry Wizard again when you create a new
+phonebook entry. Instead, you must enter the phonebook entry information
+manually.
+
+This article describes how to restore the New Phonebook Entry Wizard so you can
+use it when you create new phonebook entries.
+
+MORE INFORMATION
+================
+
+To restore the New Phonebook Entry Wizard:
+
+1. Double-click the My Computer icon on the desktop.
+
+2. Double-click the Dial-Up Networking icon.
+
+3. Click More, and then click User Preferences.
+
+4. Click the Appearance Tab.
+
+5. Click to select the "Use wizard to create phonebook entries" check box, and
+   then click OK.
+
+
+Additional query words: phone book
+
+======================================================================
+Keywords          : kbenv kbtool dun kbDialUp 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

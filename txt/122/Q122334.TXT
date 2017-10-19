@@ -1,0 +1,68 @@
+DOCUMENT:Q122334  23-JUL-2001  [visualc]
+TITLE   :FIX: Dependencies Not Generated for Files w/Lines Ending in LF
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 2.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 2.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual Workbench does not generate dependencies for files that contain lines
+ending with a line-feed (LF) character only. Dependencies are generated
+correctly for files with lines that end in both a carriage-return (CR) and
+line-feed (LF) character.
+
+RESOLUTION
+==========
+
+Open the file in Visual Workbench. Then save it without making any changes. The
+saved file will contain both CR and LF characters at the end of each line. After
+that, dependencies will be correctly generated for that file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+Files with lines ending in the LF character typically come from the UNIX
+environment. MS-DOS text files have lines ending in both a CR and LF character.
+
+Additional query words: 2.00 carriage return returns include
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbVC200 kbVC32bitSearch
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

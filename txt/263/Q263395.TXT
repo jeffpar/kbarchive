@@ -1,0 +1,74 @@
+DOCUMENT:Q263395  20-OCT-2000  [sms]
+TITLE   :SMS: LSM Prevents Senior Site Logic from Being Transferred
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Logon Server Manager does not reset senior site information when processing
+multiple domains.
+
+CAUSE
+=====
+
+This behavior occurs because the in-memory cache object is recycled for each
+domain by its primary domain controller (PDC), and it is not able to configure
+the senior site on the backup domain controllers (BDCs).
+
+The Logon Server Manager designates a senior site to update BDCs in cases where
+more than one site shares a logon point. The general logic for senior site
+election gives preference to site version, then to site code ASCII values on the
+sites. The Senior.lst file can be placed on the PDC of a domain to designate a
+specific senior site that can override that logic. However, when sites span
+multiple domains, the Senior.lst file cannot transmit the senior site
+information to the BDCs. The file is not able to configure a senior site for
+other domains.
+
+WORKAROUND
+==========
+
+If the Logon Service Manager is servicing more than one domain, the Senior.lst
+file must be added to all the domains. This can be done by adding the file to
+the PDC on each of the domains.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: prodsms senior.lst site
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : winnt:2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

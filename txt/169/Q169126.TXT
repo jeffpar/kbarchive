@@ -1,0 +1,80 @@
+DOCUMENT:Q169126  10-AUG-2001  [winnt]
+TITLE   :Madge Smart 16/4 PCI Ringnode BM2 Token Ring Network
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT 4.0 detects the Madge Smart 16/4 PCI Ringnode Bus Master 2 (BM2)
+Token Ring adapter as the Madge Smart 16/4 PCI Ringnode Bus Master (BM) adapter.
+
+RESOLUTION
+==========
+
+To resolve this problem, install the Madge Smart 16/4 PCI Ringnode BM2 Token
+Ring adapter driver that is included with Windows NT 4.0 Service Pack 3. To do
+this:
+
+NOTE: Windows NT 4.0 does not ship a driver for the Madge Smart 16/4 PCI Ringnode
+Bus Master 2 (BM2) Token Ring adapter. If you use the Madge Smart 16/4 PCI
+Ringnode Bus Master (BM) Token Ring adapter driver, the Madge Smart 16/4 PCI
+Ringnode Bus Master (BM2) Token Ring adapter will not function in DMA mode.
+
+1. Click the Start button, point to Settings, click Control Panel, and then
+   double-click the Network icon.
+
+2. Click the Adapters tab, click Madge Smart 16/4 PCI Ringnode Bus Master (BM)
+   Adapter, click Remove, and then click Yes.
+
+3. Shut down and restart Windows NT.
+
+4. Click the Start button, point to Settings, click Control Panel, and then
+   double-click the Network icon.
+
+5. Click the Adapters tab, click Add, click Madge Smart 16/4 PCI Ringnode Bus
+   Master 2 (BM2) Adapter, then click OK.
+
+   NOTE: If the Madge Smart 16/4 PCI Ringnode Bus Master 2 (BM2) does not appear,
+   verify that you have Service Pack 3 installed.
+
+The Configuration dialog box permits the following transfer method selections:
+
+ - PIO sets the Madge Smart 16/4 PCI Ringnode Bus Master 2 (BM2) or the Madge
+   Smart 16/4 PCI Ringnode Bus Master (BM) to PIO mode.
+
+ - The MMIO choice sets the Bus Master 2 to DMA mode and the PCI Ringnode to
+   MMIO mode.
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbhowto
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

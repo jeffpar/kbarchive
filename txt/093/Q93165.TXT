@@ -1,0 +1,70 @@
+DOCUMENT:Q93165  13-OCT-1999  [win3x]
+TITLE   :Intel EtherExpress Card Conflicts with Scanning Hardware
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You install Windows for Workgroups, and your graphics scanning device doesn't
+work.
+
+CAUSE
+=====
+
+The base I/O port address for many graphics scanning devices is 300. Because
+this is also the default I/O port address for the Intel EtherExpress card that
+is included with the Windows for Workgroups Starter Kit, many graphics scanning
+devices don't work with Windows for Workgroups until you change the port address
+on one of the cards.
+
+WORKAROUND
+==========
+
+To work around this problem, change the base I/O port address on either the
+graphics scanning device or the EtherExpress card.
+
+To change the port for the EtherExpress card:
+
+1. Run Control Panel and choose the Network icon.
+
+2. Choose the Adapters button.
+
+3. Select the EtherExpress card from the Network Adapters In Use list.
+
+4. Choose the Setup button.
+
+5. Change the Base I/O Port address to an address that does not conflict with
+   your graphics scanning device (or any other hardware devices) in your system.
+
+Additional query words: 3.1 3.10 3.11 card nic hardware software package text scan scanner
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

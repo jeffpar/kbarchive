@@ -1,0 +1,64 @@
+DOCUMENT:Q131877  17-DEC-2000  [win95x]
+TITLE   :How to Create Default PIF for MS-DOS-Based Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a default program information file (PIF)
+for MS-DOS-based programs.
+
+MORE INFORMATION
+================
+
+A default PIF file for MS-DOS-based programs is used for those MS-DOS-based
+programs that are not shipped with their own PIF files, and are started by
+clicking Run on the Start menu. To create a default PIF file for MS-DOS- based
+programs, follow these steps:
+
+1. Open the Windows folder.
+
+2. On the File menu, point to New, then click Shortcut.
+
+3. In the Command Line box, type "command.com" (without the quotation marks) ,
+   then click Next.
+
+4. In the "Select a name for the shortcut" box, type "_DEFAULT" (without the
+   quotation marks) , then click Finish.
+
+5. Use the right mouse button to click the new _DEFAULT.PIF file, then click
+   Properties on the menu that appears.
+
+6. Set the properties you want for the _DEFAULT.PIF file, then click OK.
+
+7. Restart Windows 95.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

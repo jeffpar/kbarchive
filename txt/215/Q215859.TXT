@@ -1,0 +1,175 @@
+DOCUMENT:Q215859  06-AUG-2002  [winnt]
+TITLE   :Event ID 12288, 5705 on PDC Because Hard Disk Is Full
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT primary domain controller (PDC) may generate the following error
+messages in Event Viewer:
+
+   Event ID: 12288
+   Source: SAM
+   SAM failed to write changes to the database. This is most likely due to a
+   memory or disk-space shortage. The SAM database will be restored to an
+   earlier state. Recent changes will be lost. Check the disk-space available,
+   maximum size setting, and maximum registry size setting.
+
+   Event ID: 5705
+   Source: Netlogon
+   The change to the cache maintained by the Netlogon service for database
+   changes is corrupted. The Netlogon service is resetting the change log.
+
+   Event ID: 26
+   Source: Application Popup
+   System Process - Out of Virtual Memory: Your system is running low on virtual
+   memory. Please close some applications. You can then start the System option
+   in the Control Panel and choose the Virtual Memory button to create an
+   additional paging file or to increase the size of your current paging file.
+
+The Netlogon.chg file becomes corrupt if the operating system cannot properly
+write to the Security Accounts Manager (SAM).
+
+NOTE: Any changes you make to the SAM are lost.
+
+Domain controllers may stop authentication of existing user accounts, and user
+accounts created while the problem exists on the PDC may not be functional
+because of SAM corruption and Netlogon problems.
+
+CAUSE
+=====
+
+This behavior occurs because the hard disk containing the %SystemRoot% folder is
+severely short of drive space. The physical RAM is depleted and the lack of free
+hard disk space does not allow Windows NT memory management to page less-used
+work out to the hard disk.
+
+Additionally, the Pagefile.sys file is either not large enough or is severely
+fragmented. This causes the "out of virtual memory" error message on the server
+console. This may also cause users to experience problems when they attempt to
+change their password or gain access to the network. In addition, the following
+error message may be displayed:
+
+   Registry size limit is set too low for the necessary registry growth.
+
+RESOLUTION
+==========
+
+To resolve this issue, free up disk space for the operating system to function
+properly.
+
+Free up disk space on the affected drive on which the Pagefile.sys file is
+located. To free disk space on the boot partition, you can choose to move the
+Pagefile.sys file to another drive.
+
+You can gain additional space by moving files to other drives or deleting
+unnecessary files from the Temp folders. Purging the Temporary Internet Files
+folder of its contents can also free a considerable amount of space.
+
+After you have sufficient disk space on the PDC:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   System.
+
+2. Click the Performance tab, locate the Virtual Memory section, and view the
+   Total paging file size for all disk volumes value. This value should be equal
+   to the total amount of physical RAM plus an additional 11 MB (approximately
+   11 MB for a standard PDC and approximately 50-100 MB extra for Microsoft
+   Exchange Server or other Microsoft BackOffice products).
+
+3. Click Change to view the settings.
+
+4. In the top section of the Virtual Memory dialog box, click the drive letter
+   that contains numbers in the Paging File Size (MB) area.
+
+5. In the "Paging File Size for Selected Drive" area, the Initial Size (MB) and
+   Maximum Size (MB) values for the drive letter you selected are displayed. Set
+   these values to 0.
+
+6. Click on the remaining drive letters in the top section of the dialog box to
+   find a drive that has enough space for the page file.
+
+7. Re-create the page file, and set the Initial Size (MB) and Maximum Size (MB)
+   values to the levels recommended in step 2 (RAM plus 11 MB for a standard
+   PDC, RAM plus 50-100 MB for various BackOffice products). Click Set to lock
+   in this setting.
+
+8. Check the registry size at the bottom of the Virtual Memory dialog box. The
+   Current Registry Size value is displayed.
+
+9. Set the Maximum Registry Size (MB) value to approximately 15-20 MB larger
+   than the value listed for the current registry size.
+
+10. Click OK, to save the settings.
+
+11. Restart the computer.
+
+NOTE: It may be necessary to delete the Netlogon.chg file on the PDC and allow it
+to be re-created by the computer at restart.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q173882 Netlogon Synchronization Errors
+
+MORE INFORMATION
+================
+
+If you do not solve the capacity requirements on the hard disk and merely delete
+the Netlogon.chg file and allow the operating system to re-create the file, the
+Netlogon.chg file becomes corrupt again. The registry size limit needs to be
+increased so that the Netlogon.chg file can be properly used by the operating
+system.
+
+In some cases, if you run User Manager for Domains while trying to open
+Policies/User Rights, the following error message may be displayed:
+
+   The system cannot find the file specified.
+
+This error message indicates that the operating system is attempting to work with
+the SAM database and the Netlogon.chg files, both of which may be corrupted and
+inaccessible based on the behavior described in this article.
+
+In some instances, when you run User Manager for Domains while trying to create
+new users on the affected PDC, the following error message is displayed:
+
+   The following error occurred creating the user <username>. Insufficient
+   system resources exist to complete the requested service.
+
+After you click OK to acknowledge this error message, another Event ID 12288 is
+generated in the event log.
+
+
+Additional query words: Virtual Memory Pagefile.sys 5705 Netlogon.chg
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

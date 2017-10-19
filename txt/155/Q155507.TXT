@@ -1,0 +1,63 @@
+DOCUMENT:Q155507  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Reboot Fails on Clients Running Windows NT 4.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Remote Reboot option under Help Desk does not work with clients running
+Windows NT 4.0 when nobody is logged on to the system.
+
+When you first try to use Remote Reboot, only the "Begin Logon...Press Ctrl + Alt
++ Delete to log on" screen might disappear on the client. If you try to use
+Remote Reboot again, the client is shut down but not restarted. Remote Reboot
+works under Windows NT 4.0 if at least one person is logged on to the client
+computer.
+
+WORKAROUND
+==========
+
+To work around this problem, use Remote Control to log the client on, before
+using Remote Reboot. Then close the Remote Control session, and use Remote
+Reboot.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms boot shutdown
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

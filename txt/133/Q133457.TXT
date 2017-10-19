@@ -1,0 +1,78 @@
+DOCUMENT:Q133457  11-DEC-1999  [homemm]
+TITLE   :Bookshelf '95: How CD Edition Differs from the Intro Edition
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1995 edition 
+ - Microsoft Bookshelf for Windows, 1995 Intro Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Bookshelf for Windows, 1995 Intro edition is a special version of
+Bookshelf available on MSN, The Microsoft Network. The standalone version of
+Bookshelf 1995 Intro Edition on Compact Disc has additional features which
+require the high-bandwidth of a multimedia computer and CD-ROM drive.
+
+MORE INFORMATION
+================
+
+The standalone and Intro versions of Microsoft Bookshelf for Windows go beyond
+printed reference books, such as the thesaurus in your word processor, and other
+online reference products. Both products provide access to:
+
+ - Seven best-selling reference books
+
+ - Nearly 3,000 images
+
+ - More than 80,000 pronunciations
+
+ - 180 National Anthems
+
+The standalone edition of Microsoft Bookshelf provides these extra features:
+
+ - QuickShelf toolbar: One-click access to eight best selling reference books
+   from within any program. Use the QuickShelf Toolbar from within your word
+   processor, electronic mail, presentation package, or database.
+
+ - United States ZIP Codes
+
+ - 45 Video Clips
+
+ - 50 Animation
+
+ - Five Hours of Sound
+
+ - Year In Review
+
+ - Automatic Footnotes
+
+Additional query words: kbhowto 1995 multi media multimedia multi-media mmtitles kbmm internet MSN microsoft network net work online on-line
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995 kbBookShelf1995Intro
+Version           : :1995 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

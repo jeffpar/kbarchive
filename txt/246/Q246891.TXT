@@ -1,0 +1,138 @@
+DOCUMENT:Q246891  07-MAY-2001  [visualc]
+TITLE   :BUG: Build Errors on Non-Void Return Types for Friend Function
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbtemplate kbCompiler kbLangCPP kbLinker kbVC kbVC600 kbVC600bug kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building an application that has a friend template function in a
+nontemplated class, you may see one of the following error messages:
+
+   error C2440: '=' : cannot convert from 'void' to 'type'
+   Expressions of type void cannot be converted to other types.
+
+   or
+
+   error LNK2001: unresolved external symbol "void __cdecl Test(int)"
+   (?Test@@YAXH@Z)
+
+Please refer to the sample in the "More Information" section for details.
+
+CAUSE
+=====
+
+The compiler and linker are expecting a void return type.
+
+RESOLUTION
+==========
+
+Use one of the following two workarounds:
+
+ - Include the friend template function implementation either in header file or
+   in main source file.
+
+ - Change the return type of the friend function template to void. If return
+   type is important, pass it as reference.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+There are two scenarios in which this error occurs.
+
+ - Case 1: When the return type of the friend function template is assigned to a
+   variable, the compiler produces a C2440 error.
+
+ - Case 2: If the return type of the friend function template is not used, then
+   a LNK2001 error is produced by the linker.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following example demonstrates the error:
+
+Create three files and compile with: cl main.cpp file.cpp
+
+ - File.h
+
+   class A
+   {
+     public :
+          template<class T> friend int Test(T);
+   }; 
+
+   template int Test(int); // Instantiate the template friend function explicitly.
+
+ - File.cpp
+
+   #include "file.h"
+
+   // Friend function implementation.
+   template<class T> int  Test(T temp)
+   {
+   	return 0;
+   }
+
+ - Main.cpp
+
+   #include "file.h"
+
+   //#define CASE1 
+   //Uncomment the above line to reproduce Case 1. 
+   //#define CASE2
+   //Uncomment the above line to reproduce Case 2.
+
+   void main()
+   {
+
+      int x =1;
+
+   #ifdef CASE1
+      int n = Test('c'); // Gives a C2440 compile error.
+   #endif
+
+   #ifdef CASE2
+      Test(x); // Gives LNK2001 linker error.
+   #endif
+
+   } 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate kbCompiler kbLangCPP kbLinker kbVC kbVC600 kbVC600bug kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

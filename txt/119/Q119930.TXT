@@ -1,0 +1,68 @@
+DOCUMENT:Q119930  10-JUN-1999  [homegame]
+TITLE   :Space: Situation Description Is Editable When Opening
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When opening a situation, if the Description box is selected, changes can be
+made to the description information.
+
+MORE INFORMATION
+================
+
+The information in the Description box in the Open Situation dialog box is not
+locked. Changes can be made to the information and all changes will be saved
+once the OK button is chosen.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. From the Options menu, choose Open Situation.
+
+2. Select one of the situations.
+
+3. Select the Description box and modify the text.
+
+4. Click OK.
+
+5. From the Options menu, click Open Situation.
+
+6. Select the situation that was previously selected in step 2.
+
+Result: The text that was modified in step 3 has been saved to the situation's
+Description field.
+
+Additional query words: 1.00 spacesim ssim dos ss1
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

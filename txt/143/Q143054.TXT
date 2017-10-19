@@ -1,0 +1,94 @@
+DOCUMENT:Q143054  17-DEC-2000  [win95x]
+TITLE   :Err Msg: RUNDLL32.EXE Has Caused an Error in COMMCTRL.DLL
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive one of the following error messages and Windows 95 may stop
+responding (hang) or run with limited functionality:
+
+ - 
+
+   RUNDLL32.EXE has caused an error in COMMCTRL.DLL
+
+ - 
+
+   The COMCTL32.DLL file cannot start.
+
+CAUSE
+=====
+
+These errors can occur if the Commctrl.dll file is missing or damaged.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+   the F8 key, and then choose Command Prompt Only from the Startup menu.
+
+2. Type the following commands, pressing ENTER after each line:
+
+   cd \windows\system
+   ren commctrl.dll commctrl.old
+
+3. Use the Extract tool to extract the Kommctrl.dll file from the Precopy1.cab
+   file on disk 1 of your Windows 95 disks or in the Win95 folder on the Windows
+   95 CD-ROM to the Windows\System folder.
+
+   NOTE: The Precopy1.cab file also contains a Commctrl.dll file. This file is
+   used only by Setup. If you extract this file instead of the Kommctrl.dll
+   file, Windows 95 will not run.
+
+   For information about using the Extract tool, please see the following article
+   in the Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+4. Type the following lines, pressing ENTER after each line:
+
+   cd \windows\system
+   ren kommctrl.dll commctrl.dll
+
+5. Type the following line, and then press ENTER:
+
+   copy commctrl.dll c:\windows\sysbckup
+
+   When you are prompted to overwrite the existing file, press Y.
+
+6. Restart your computer.
+
+Additional query words: corrupt
+
+======================================================================
+Keywords          : kberrmsg kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

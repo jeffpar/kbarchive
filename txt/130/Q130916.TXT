@@ -1,0 +1,51 @@
+DOCUMENT:Q130916  08-AUG-2001  [winnt]
+TITLE   :Dr. Watson Error Appears When Using Arcada Backup Exec 5.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+When you use Arcada Backup Exec version 5.0 in Windows NT version 3.5 and
+it encounters a corrupt NTFS directory, the Backup Exec program terminates
+without completing the entire backup. When a corrupt NTFS directory is
+encountered using Backup Exec version 5.0 in Windows NT version 3.51, a Dr.
+Watson error message appears.
+
+To correct this problem, upgrade to Arcada Backup Exec version 6.0. The new
+Backup Exec version skips the corrupt directory and proceeds with the next
+directory. For additional information, contact Arcada Software at
+(800) 327-2232.
+
+Backup Exec is manufactured by Arcada Software, Inc., a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding the
+product's performance or reliability.
+
+Additional query words: prodnt ntbackup
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,138 @@
+DOCUMENT:Q310113  15-AUG-2002  [winnt]
+TITLE   :Ldap Query Following a Simple Bind May Not Work
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,2000 SP1,2000 SP2
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbWin2000PreSP3Fix kbWin2000sp3fix kbDirServices
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Professional 
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Server 
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Ldap connections that are bound by using a simple bind may be closed by the
+server on the first request after the bind. However, when Secure Password
+Authentication is used, the problem does not occur.
+
+3  LDAPCLIENT GCSERVER   TCP Control Bits: ....S., len:    8, seq: 
+255290695-255290703, ack:         0, win:16384, src: 3032  dst: 3268 
+4  GCSERVER   LDAPCLIENT TCP Control Bits: .A..S., len:    8, 
+seq:3725082160-3725082168, ack: 255290696, win:17520, src: 3268  dst: 3032 
+5  LDAPCLIENT GCSERVER   TCP Control Bits: .A...., len:    0, seq: 
+255290696-255290696, ack:3725082161, win:17520, src: 3032  dst: 3268 
+6  LDAPCLIENT GCSERVER   LDAP ProtocolOp: BindRequest (0)
+7  GCSERVER   LDAPCLIENT LDAP ProtocolOp: BindResponse (1)
+8  LDAPCLIENT GCSERVER   LDAP ProtocolOp: SearchRequest (3)
+9  GCSERVER   LDAPCLIENT TCP Control Bits: .A...F, len:    0, 
+seq:3725082184-3725082184, ack: 255291438, win:16778, src: 3268  dst: 3032 
+10 LDAPCLIENT GCSERVER   TCP Control Bits: .A...., len:    0, seq: 
+255291438-255291438, ack:3725082185, win:17497, src: 3032  dst: 3268 
+11 GCSERVER   LDAPCLIENT TCP Control Bits: ...R.., len:    0, 
+seq:3725082185-3725082185, ack: 255291438, win:    0, src: 3268  dst: 3032 
+12 GCSERVER   LDAPCLIENT TCP Control Bits: ...R.., len:    0, 
+seq:3725082185-3725082185, ack:3725082185, win:    0, src: 3268  dst: 3032 
+
+CAUSE
+=====
+
+This problem can be caused by a timing issue.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        Time    Version          Size     File name
+   ------------------------------------------------------------
+   10/22/2001  14:10   5.0.2195.4472    123,664  Adsldp.dll
+   10/22/2001  14:10   5.0.2195.4308    130,832  Adsldpc.dll
+   10/22/2001  14:10   5.0.2195.4016     62,736  Adsmsext.dll
+   10/22/2001  14:10   5.0.2195.4384    364,816  Advapi32.dll
+   10/22/2001  14:10   5.0.2195.4141    133,904  Dnsapi.dll
+   10/22/2001  14:10   5.0.2195.4379     91,408  Dnsrslvr.dll
+   10/22/2001  14:12   5.0.2195.4533    521,488  Instlsa5.dll
+   10/08/2001  19:22   5.0.2195.4437    145,680  Kdcsvc.dll
+   10/04/2001  21:00   5.0.2195.4471    199,440  Kerberos.dll
+   09/04/2001  09:32   5.0.2195.4276     71,024  Ksecdd.sys
+   10/22/2001  11:30   5.0.2195.4533    503,568  Lsasrv.dll
+   10/22/2001  11:31   5.0.2195.4533     33,552  Lsass.exe
+   09/27/2001  15:59   5.0.2195.4285    114,448  Msv1_0.dll
+   10/08/2001  19:22   5.0.2195.4153    312,080  Netapi32.dll
+   10/08/2001  19:22   5.0.2195.4357    370,448  Netlogon.dll
+   10/22/2001  14:10   5.0.2195.4532    912,656  Ntdsa.dll
+   10/08/2001  19:22   5.0.2195.4433    387,856  Samsrv.dll
+   10/22/2001  14:10   5.0.2195.4536    128,784  Scecli.dll
+   10/08/2001  19:22   5.0.2195.4476    299,792  Scesrv.dll
+   10/08/2001  19:22   5.0.2195.4025     50,960  W32time.dll
+   08/01/2001  21:44   5.0.2195.4025     56,592  W32tm.exe
+   10/08/2001  19:22   5.0.2195.4433    125,712  Wldap32.dll
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+For additional information about how to obtain a hotfix for Windows 2000
+Datacenter Server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q265173 Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information about how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+For additional information about how to install Windows 2000 and Windows 2000
+hotfixes at the same time, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+
+Additional query words: kbDirServices lsass
+
+======================================================================
+Keywords          : kbenv kbtool kbWin2000PreSP3Fix kbWin2000sp3fix kbDirServices 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch kbWin2000AdvServSP2 kbWin2000AdvServSP1 kbWin2000ProSP2 kbWin2000ProSP1 kbwin2000ServSP1 kbwin2000ServSP2
+Version           : :2000,2000 SP1,2000 SP2
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

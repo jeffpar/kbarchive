@@ -1,0 +1,76 @@
+DOCUMENT:Q171167  22-DEC-1999  [schedplus]
+TITLE   :XCLN: Schedule+ 7.x Cannot Directly Import Version 1.0 CAL Files
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0,7.5; :7.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, versions 7.0, 7.5 
+ - Microsoft Schedule+ for the Apple Macintosh, version 7.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to import a Microsoft Schedule+ 1.0 calendar (.cal) file to
+Microsoft Schedule+ 7.x using the File Import feature, you may receive the
+following error message:
+
+   The file you selected is either not valid or has an older version number.
+
+MORE INFORMATION
+================
+
+To import a Schedule+ 1.0 .cal file to Schedule+ 7.x, use the appropriate method
+for your situation.
+
+Importing a Single .cal File
+----------------------------
+
+To import a single .cal file, open the .cal file in Schedule+ 7.x, export it as a
+Schedule+ Interchange file, and then import this file. For additional
+information about how to do this, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q147490 How to Import a 1.0 Cal File Into 7.0
+
+Importing Multiple .cal Files
+-----------------------------
+
+To batch import multiple .cal files, use the Microsoft Exchange Migration Wizard,
+which is installed with Microsoft Exchange Server Administration Setup. This
+program can convert the schedule files of multiple users to a Microsoft Exchange
+server. For additional information about the Migration Wizard, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q153121 XADM: Migrating from WGPO to Exchange
+
+   Q150123 Migrated Schedule+ 1.0 Users Are Prompted for Password
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbSchedule750
+Version           : WINDOWS:7.0,7.5; :7.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

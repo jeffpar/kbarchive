@@ -1,0 +1,62 @@
+DOCUMENT:Q171870  27-AUG-1999  [odbc]
+TITLE   :FIX: SQL_CUR_USE_IF_NEEDED Does Not Work with 2.0 Drivers
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+BUG #: 4538 (odbc30)
+
+SYMPTOMS
+========
+
+If SQLSetConnectOption(SQL_ODBC_CURSORS, SQL_CUR_USE_IF_NEEDED) is set and you
+are using an ODBC 3.0 Driver Manager with a 2.X driver, the ODBC Cursor Library
+is not loaded. This causes applications that rely on the Cursor Library
+implementation of ExtendedFetch to fail.
+
+WORKAROUND
+==========
+
+To work around this problem, use SQLSetConnectOption(SQL_ODBC_CURSORS,
+SQL_CUR_USE_ODBC) to load the ODBC Cursor Library.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Open Database
+Connectivity version 3.0. This problem has been corrected in U.S. Service Pack 1
+for Microsoft Open Database Connectivity, version 3.0. For more information,
+contact your primary support provider.
+
+Additional query words: SQLExtendedFetch Static
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

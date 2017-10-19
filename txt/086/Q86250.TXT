@@ -1,0 +1,54 @@
+DOCUMENT:Q86250  01-NOV-1999  [win95x]
+TITLE   :Calendar's Alarm May Not Interrupt Screen Saver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a Windows version 3.1 screen saver is active and Calendar's alarm goes off,
+Calendar's popup dialog box does display unless the screen saver is interrupted
+by the keyboard or mouse.
+
+MORE INFORMATION
+================
+
+If Calendar is the active window when the alarm goes off, a dialog box displays
+to remind you of an appointment. If Calendar is an inactive window, the Calendar
+title bar and borders flash. If Calendar is an icon, the icon flashes.
+
+Using an active screen saver at the alarm time will prevent any of these effects
+from being seen until a mouse or keyboard action interrupts the screen saver.
+
+
+Additional query words: 3.10 3.11 screensaver AfterDark winpopup
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

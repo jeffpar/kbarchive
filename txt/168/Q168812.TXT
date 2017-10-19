@@ -1,0 +1,71 @@
+DOCUMENT:Q168812  22-FEB-2002  [winnt]
+TITLE   :Dr Watson Exception Violation C0000005 Occurs After Install SP3
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT 4.0 Service Pack 3 you may get a Dr. Watson error
+in Spools.exe and Services.exe. The error message occurs after you log on to the
+computer. It can also cause the system to stop responding before logging on.
+This, and several other error messages, can be attributed to Starfish Internet
+monitoring agent that installs a file called Nmsocknt.dll.
+
+CAUSE
+=====
+
+Nmsocknt.dll makes calls to User32.dll, Kernel32.dll, and Wsock32.dll that
+effectively stops all networking services.
+
+RESOLUTION
+==========
+
+Rename the Nmsocknt.dll found in the %SystemRoot% directory to Nmsocknt.xxx. You
+must perform this at a command prompt because Windows NT Explorer will display
+an access violation. Then shutdown and restart your Windows NT computer to
+resume normal operation.
+
+MORE INFORMATION
+================
+
+The third-party product discussed here is manufactured by Starfish Software, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Please contact http://starweb.starfishsoftware.com/products/iu97/iu97 for further
+updates.
+
+
+Additional query words: Windows NT SP3 Starfish Dr.Watson C0000005 nmsocknt.dll
+
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

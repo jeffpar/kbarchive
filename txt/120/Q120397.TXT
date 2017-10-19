@@ -1,0 +1,101 @@
+DOCUMENT:Q120397  05-NOV-1999  [fortran]
+TITLE   :Use atof or atoi Functions to Convert from Char Strings
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a,4.0
+OPER/SYS:
+KEYWORDS:kbcode kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, version 1.0a 
+ - Microsoft Fortran Powerstation 32 for Windows NT, versions 1.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft FORTRAN PowerStation does not permit list-directed I/O for internal
+files. As a result, you may find it difficult to convert character strings to
+numeric values unless you know the exact format of the string. However, the atoi
+and atof functions included in the LIBC.LIB library can accomplish the
+translation.
+
+MORE INFORMATION
+================
+
+To use the atof and atoi functions, you must create interfaces to the functions,
+and declare the types of the functions.
+
+The LIBC.LIB library containing the atof and atoi functions, is linked by default
+when building FORTRAN programs in PowerStation, so no special options are
+required.
+
+The atof function expects the character string to be in the following form:
+
+   [whitespace] [sign] [digits] [.digits] [ {d | D | e | E }[sign]digits]
+
+Use some caution and error checking when employing these functions. If the atof
+or atoi function cannot convert the string format, it returns zero (0.0 or 0) as
+the error condition. You should consult the C run-time library reference for
+complete information on these functions.
+
+FORTRAN does not null terminate strings, so the functions may incorrectly
+translate a string that contains digits up to the end. To be safe, insert a null
+character in the last position of the string. For example, the following command
+null terminates the string "a":
+
+         CHARACTER*10 a
+         a(10:10) = char(0)
+
+Sample Code
+-----------
+
+Compiler options needed: none
+
+   C Interface to the atof function which is in the LIBC library
+
+         INTERFACE to REAL*8 FUNCTION atof[C](a)
+         CHARACTER*(*) a[reference]
+         END
+   C Interface to the atoi function which is in the LIBC library
+
+         INTERFACE to INTEGER FUNCTION atoi[C](a)
+         CHARACTER*(*) a[reference]
+         END
+         REAL*8  x
+         REAL*8  atof !prevents error F2236: ATOF : length redefined
+         INTEGER i
+         INTEGER atoi !prevents error F2201: ATOI : type redefined
+         CHARACTER*30 a
+         PRINT *, "Type a numeric value"
+         READ '(A)', a
+         a(30:30) = char(0)
+         x = atof(a)
+         i = atoi(a)
+         PRINT *, '"',a,'"', x, i
+         END
+
+Additional query words: kbinf 1.00 1.00a 4.00 VAX porting port
+
+======================================================================
+Keywords          : kbcode kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower32400NT kbFORTRANPower100aDOS
+Version           : :1.0,1.0a,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

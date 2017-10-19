@@ -1,0 +1,57 @@
+DOCUMENT:Q185987  26-AUG-1999  [automap]
+TITLE   :Virtual Globe 98: World Flights: Flight Does Not Stop
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe, 1998 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Take A World Flight in Microsoft Encarta Virtual Globe 98, and
+then click one of the seven regions to start a new flight, if you click Stop
+(the red rectangle), forward motion stops, but sideways motion continues.
+
+RESOLUTION
+==========
+
+To work around this issue, click the viewing screen to stop the sideways motion
+after you first click Stop in a new world flight. You must repeat this process
+each time you start a new world flight.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Virtual Globe,
+1998 Edition.
+
+Additional query words: 98 world atlas multi-media mmtitles grand canyon western northern eastern southern north middle east south southwest america europe asia japan
+
+======================================================================
+Keywords          : kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe98
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

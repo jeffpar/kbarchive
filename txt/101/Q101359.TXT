@@ -1,0 +1,79 @@
+DOCUMENT:Q101359  30-OCT-1999  [win95x]
+TITLE   :Disk Format Fails in Enhanced Mode with GSI Drive Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to format a disk either from a virtual machine in 386 enhanced mode
+or by using File Manager, Microsoft Windows may stop responding (hang) with some
+drive controllers manufactured by Great Software Ideas (GSI).
+
+In 386 enhanced mode, the File Manager or MS-DOS FORMAT process appears to begin
+normally, but then the computer hangs and requires a warm boot. The same process
+works correctly in standard mode.
+
+CAUSE
+=====
+
+This problem occurs on the GSI Drive Controller Model 11 with BIOS versions 1.14
+and earlier and on the Model 21 with BIOS versions 2.0 and earlier. GSI has
+confirmed the incompatibility of these BIOS versions with Windows 3.0 and 3.1 in
+386 enhanced mode and has BIOS upgrades available.
+
+RESOLUTION
+==========
+
+To correct this problem, order the appropriate update version for the GSI Flash
+BIOS.
+
+   Model  BIOS version
+   -------------------
+
+   11     1.15 or later
+   21     2.01 or later
+
+You can work around this problem by doing either of the following:
+
+ - Format the disk using File Manager or MS-DOS in standard mode.
+
+   -or-
+
+ - Quit Windows and format the disk using MS-DOS.
+
+The products included here are manufactured by Great Software Ideas, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3.10 3.1 3.11 hung freeze frozen locked up DOS Box vm
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,77 @@
+DOCUMENT:Q298934  06-AUG-2002  [automap]
+TITLE   :Automap: "Find" Operations Are Unavailable
+PRODUCT :Microsoft Automap
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2002 
+ - Microsoft Streets & Trips 2002, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use either of the products listed in the "Applies to" section of this
+article, operations related to the Find and Find Places commands may be
+unavailable (dimmed).
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft Internet Explorer is not properly updated,
+which can occur if the user chooses not to install all of the Internet Explorer
+components.
+
+RESOLUTION
+==========
+
+To resolve this issue, install the needed components from the Internet Explorer
+CD-ROM. To do this, follow these steps:
+
+1. Insert Streets and Trips CD 1. Hold down the SHIFT key to prevent the compact
+   disc from automatically running.
+
+2. Click Start, and then click Run.
+
+3. In the Open line, type the following
+
+   <CD-ROM>:\MSMap\Redist\Common\50comupd.exe
+
+where <CD-ROM> is the drive letter of your CD-ROM (or DVD-ROM) device.
+
+4. Click OK.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbExpediaSearch kbMapptSearch kbExpediaStreets2002 kbMapPoint2002
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

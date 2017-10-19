@@ -1,0 +1,74 @@
+DOCUMENT:Q118543  08-NOV-2001  [homemm]
+TITLE   :Dangerous Creatures: Hot Spots No Longer Hot When You Return
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dangerous Creatures for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are in a guided tour, you may find that some hot spots are no longer
+hot when you return to them.
+
+NOTE: A hot spot is colored text (jump text) that when clicked with your mouse
+moves you to a related topic. A hot spot can also be a specific part of the
+program that when the mouse cursor is laying over the top of an element
+(typically resembling a small hand) the program plays a sound, opens a menu, or
+moves to another part of the program.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Dangerous Creatures version 1.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. From the Main screen, choose Guides.
+
+2. From the Guides screen, choose Male & Female Roles.
+
+3. Proceed through the guided tour until you reach the Lion screen.
+
+4. Choose the Back button. This returns you to the Lioness pop-up (titled "The
+   Huntress").
+
+5. Click the Lion screen, partially visible behind the Lioness pop-up.
+
+Dangerous Creatures returns to the Lion screen, but the text "Make mine meat" is
+no longer a hot spot. If you pass the mouse pointer over the former hot spot, it
+does not turn into a hand icon. If you click on it, nothing happens. This
+problem also occurs in other guided tours.
+
+Additional query words: 1994 multi media multimedia multi-media shed jumps hypertext colored text
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbZNotKeyword kbDangerousCreatures
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

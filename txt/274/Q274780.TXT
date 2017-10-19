@@ -1,0 +1,58 @@
+DOCUMENT:Q274780  31-JUL-2001  [homemm]
+TITLE   :Err Msg: Microsoft Reader Is Unable to Locate the Library...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.5
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader, version 1.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Reader, you may receive the following error message:
+
+   Microsoft Reader is unable to locate the Library Folder containing your
+   books. If you have moved this folder recently, specify the new location below
+   and select OK. Otherwise, select 'Create New' to automatically create a new
+   Library Folder.
+
+CAUSE
+=====
+
+This behavior can occur if the My Library folder has been moved or deleted.
+
+RESOLUTION
+==========
+
+To resolve this issue, click Create New to create a new My Library folder, or
+click Browse to find the location of your My Library folder, and then click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbReaderSearch kbReader150
+Version           : :1.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

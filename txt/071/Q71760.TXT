@@ -1,0 +1,75 @@
+DOCUMENT:Q71760  06-NOV-1999  [win16sdk]
+TITLE   :Drive and Directory Manipulation in Windows
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To get or set the current drive or directory in an application developed for the
+Microsoft Windows environment, use functions provided by the Microsoft C
+Run-time library. The functions listed below are compatible with Windows and are
+documented in the "Microsoft Run-time Library Reference" of Microsoft C version
+6.0, Microsoft C/C++ version 7.0, Microsoft Visual C++ version 1.0, and in the
+associated QuickHelp on-line help file. Some of the functions listed below are
+not available in Microsoft C version 5.1.
+
+NOTE: Any time an application gets or sets the current drive, it should get or
+set the current directory.
+
+Function       Use
+--------       ---
+
+chdir          Changes current working directory.
+
+_chdrive       Changes current drive.
+
+_dos_getdrive  Gets the current default drive, using MS-DOS
+               Interrupt 21h Function 19h.
+
+_dos_setdrive  Sets the default disk drive, using MS-DOS
+               Interrupt 21h Function 0Eh.
+
+getcwd         Gets current working directory.
+
+_getdcwd       Gets current working directory for the specified drive.
+
+_getdrive      Gets the current disk drive.
+
+mkdir          Makes a new directory.
+
+rmdir          Removes a directory.
+
+_searchenv     Searches for a given file on specified paths.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

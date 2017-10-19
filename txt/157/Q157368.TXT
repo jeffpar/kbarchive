@@ -1,0 +1,70 @@
+DOCUMENT:Q157368  08-NOV-2001  [homemm]
+TITLE   :Expedia: Some Program Features May Behave Unexpectedly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia, Internet edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some Microsoft Expedia features, such as printing, mouse control, and keyboard
+functions, may behave differently than they would in other programs. This occurs
+because these features are controlled by your web browser
+
+MORE INFORMATION
+================
+
+Many features in Microsoft Expedia do not function as you would expect in some
+Windows programs. These features include printing, the program's response to
+mouse input, and the use of keyboard shortcuts.
+
+The web browser you are using, which provides the application "environment" for
+Microsoft Expedia, controls these features.
+
+Some features controlled by your Web browser include:
+
+ - Printing. For example, printouts may not look exactly like the Web page. This
+   varies tremendously, depending on your choice of browser.
+
+ - Reaction to mouse. For example, check boxes are checked even if the mouse is
+   moved away from them before the button is released.
+
+   NOTE: In Microsoft Windows, this is not standard behavior, but may be normal
+   for some browsers.
+
+ - Keyboard shortcuts. For example, if you press the F1 keyboard key in Windows,
+   Help usually starts. Your browser may interpret F1 differently.
+
+The Web browser also controls many other features. To help avoid problems, you
+should use the most current version of your preferred browser.
+
+Additional query words: 1.00 travel agent on-line multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbExpediaSearch kbZNotKeyword kbExpediaInternet
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

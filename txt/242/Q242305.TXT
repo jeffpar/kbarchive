@@ -1,0 +1,71 @@
+DOCUMENT:Q242305  13-JUN-2001  [crossnet]
+TITLE   :XADM: Exstrace.dll prompt during setup on Windows 2000 Server
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:2000; winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+This article discusses a Beta release of a Microsoft product. The 
+information in this article is provided as-is and is subject to change
+without notice.
+
+No formal product support is available from Microsoft for this Beta 
+product. For information about obtaining support for a Beta release, 
+please see the documentation included with the Beta product files, or 
+check the Web location from which you downloaded the release.
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the Microsoft Windows 2000 security is set to High and you try to install
+Microsoft Exchange Server version 5.5 on that system, you may get a notification
+from the System File Protection (SFP) that a file replacement was attempted on
+the protected system file Exstrace.dll.
+
+You may also find the following event in the system event viewer:
+
+   Event ID: 64000
+   Source: SFC
+   Description: File replacement was attempted on the protected system file
+   exstrace.dll. This file was restored to the correct Microsoft version to
+   maintain system stability.
+
+STATUS
+======
+
+The version of Exstrace.dll that ships with Windows 2000 is backwards compatible
+with Exchange Server 5.5, so this message is harmless. Windows 2000 System File
+Protection replaces the file back to the Windows 2000 version.
+
+Additional query words: emstrace.dll
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbOSWin2000 kbOSWinSearch kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:2000; winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

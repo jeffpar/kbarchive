@@ -1,0 +1,65 @@
+DOCUMENT:Q134780  25-NOV-1999  [powerpt]
+TITLE   :PPT7: Action Item Slides Not Written from Embedded Presentation
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbole
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can embed one presentation within another in Microsoft PowerPoint. If you
+use Meeting Minder to record Action Items or Meeting Minutes while in an
+embedded presentation, that information is not written to the Action Items or
+Meeting Minutes slides that are generated at the end of the main presentation.
+
+CAUSE
+=====
+
+When you show an embedded presentation object, you are playing it. In
+PowerPoint, you cannot change an embedded OLE object at the same time you play
+it. Therefore, you cannot add or change slides to an embedded presentation while
+it is being shown.
+
+WORKAROUND
+==========
+
+Use Meeting Minder when you are in the main portion of a presentation; do not
+use it when you are in an embedded presentation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: 7.00 ppt95 power point slideshow winppt macppt
+
+======================================================================
+Keywords          : kbole 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,63 @@
+DOCUMENT:Q148694  20-FEB-2002  [winnt]
+TITLE   :IIS and SQL: Intermittent NamedPipe Connections Problem
+PRODUCT :Microsoft Windows NT
+PROD/VER::1.0,3.51
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft Internet Information Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a user selects an option on an Internet Information Server (IIS) web page
+that requests a connection to a SQL Server, a STATUS_PIPE_NOT_AVAILABLE
+C00000ACL error occurs between the IIS and the SQL Server. An occasional
+instance of this error is normal, but numerous frequency of this error can
+result in problems seen on the Internet browser application.
+
+
+RESOLUTION
+==========
+
+To correct this problem, do one or all of the following:
+
+ - Upgrade to SQL Server 6.0 Service Pack 2.
+
+ - Remove the TCP/IP protocol and use the IPX/SPX Compatible Transport protocol
+   only.
+
+ - Upgrade to Windows NT Server 3.51 Service Pack 4.
+
+ - Upgrade from a 486/66 dual processor 486/66 to a Pentium quad-processor, for
+   example.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbiisSearch kbiis100
+Version           : :1.0,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

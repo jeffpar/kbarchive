@@ -1,0 +1,55 @@
+DOCUMENT:Q79869  10-OCT-1999  [win95x]
+TITLE   :Pressing ALT+TAB to Switch Between Applications
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Microsoft Windows 3.1, if you press ALT+TAB to switch between Windows-based
+applications, Windows displays a box that and identifies the last application
+that you accessed.
+
+If you hold the ALT key down, pressing TAB cycles through all of the applications
+that are currently running. When you let go of the ALT key, the identified
+application becomes the active application.
+
+In a virtual machine, the ALT+TAB key sequence still steps through the running
+applications, but rather than displaying a box with an application name and
+icon, it displays a blank MS-DOS screen with the application title listed at the
+top-center of the screen.
+
+NOTE: If you press ALT+TAB and then press ESC before releasing the ALT key, you
+remove the dialog box that displays the selected application.
+
+Additional query words: 3.1 3.10 vm cool switch fast switching option 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,71 @@
+DOCUMENT:Q196914  14-NOV-2000  [word97]
+TITLE   :WD97: Some Fonts Not Listed in Find/Replace Font Dialog
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you search for a font in a document using the Find or Replace command, the
+font is not listed in the Font list box of the Find Font dialog box.
+
+CAUSE
+=====
+
+This problem may occur if the font is embedded in the Word document. In the Find
+Font dialog box, Word lists only those fonts that are installed in the operating
+system--fonts embedded in a Word document are not available as formatting
+options in the Find and Replace commands.
+
+Text formatted with an embedded font is listed in the font list on the Formatting
+toolbar. This information is preserved to facilitate round-trip transfer between
+different computers and platforms.
+
+RESOLUTION
+==========
+
+To search for a font that is embedded in a document but not installed in the
+operating system, type the font name into the Font list box in the Find Font
+dialog box. To do this, follow these steps:
+
+1. On the Edit menu, click Find.
+
+2. Click the More button, click the Format button, and then click Font.
+
+3. Click the Font tab.
+
+4. Type the font name in the Font box, and then click OK.
+
+Additional query words: fonts
+
+======================================================================
+Keywords          : kbualink97 winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,60 @@
+DOCUMENT:Q179591  25-OCT-2001  [homemm]
+TITLE   :Cinemania: Monthly Update Files Are No Longer Available
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbpolicy kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+ - Microsoft Cinemania for Macintosh, 1994, 1995, 1996, 1997 editions 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The last of the twelve monthly update files available for Cinemania 97 is the
+August, 1997 update.
+
+The last of the twelve monthly update files available for Cinemania 96 is the
+August, 1996 update.
+
+As of December 31st, 1998, the Cinemania update files and the Cinemania Web site
+are no longer available.
+
+
+MORE INFORMATION
+================
+
+For reviews of current movies, please visit MSN Sidewalk at the following Web
+site:
+
+   http://sidewalk.msn.com
+
+
+Additional query words: multi multi-media media mm downloads updates
+
+======================================================================
+Keywords          : kbpolicy kbtool kbimu 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

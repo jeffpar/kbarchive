@@ -1,0 +1,58 @@
+DOCUMENT:Q188648  16-JUN-1999  [exchange]
+TITLE   :XADM: Enabling Security on a 5.5 Exchange Server or Site
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The steps to enable Advanced Security on a site are different in Exchange Server
+version 5.5 than in version 5.0. This article explains how to enable Advanced
+Security on a site when you are running Exchange Server version 5.5.
+
+MORE INFORMATION
+================
+
+To set up Advanced Security in Exchange Server 5.0, setup needs to be run and
+Key Management Server pointed to the existing server or site running Key
+Management Server. In Exchange Server 5.5, the security objects are already
+installed and Key Management Server simply needs to be pointed to the existing
+server.
+
+To enable security in an Exchange Server 5.5 site, get properties on the Site
+Encryption Configuration object in the Configuration container of the site.
+Select "Choose Site.." next to the Primary KMS Server location field. Select the
+site that is running the main Key Management Server database.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

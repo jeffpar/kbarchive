@@ -1,0 +1,71 @@
+DOCUMENT:Q309114  04-OCT-2001  [sna]
+TITLE   :OLE DB Provider for DB2 Using SSO Fails With SQL State Error
+PRODUCT :Microsoft SNA Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+ - Microsoft OLE DB Provider for DB2, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following scenario assumes that Host Security is configured with a working
+Host Account Cache (HAC):
+
+If a Universal Data Link (.udl) file was configured to an AS/400 through Advanced
+Program-to-Program Communications (APPC) with Single Sign-On (SSO) selected,
+Test Connection will succeed. However, any application that uses this .udl file,
+including the sample applications Drda_vb.exe and Rowsetviewer.exe, will fail
+and report following error:
+
+   Invalid User ID or password. SQLSTATE:08S01, SQLCODE:-568
+
+CAUSE
+=====
+
+The user ID and password on the .udl file are always being used even if the
+Single Sign-on checkbox was selected.
+
+WORKAROUND
+==========
+
+Set both the UserId and Password fields to "MS$SAME" (without the quotation
+marks) prior to selecting Single Sign-on .
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Host Integration Server 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbAudDeveloper kbOLEDBSearch kbHostIntegServ2000 kbOLEDBProvDB500 kbOLEDBProvSearch
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,51 @@
+DOCUMENT:Q161560  30-DEC-1999  [iis]
+TITLE   :Microsoft Excel 4.0 Documents Are Not Properly Filtered
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.1; :
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 1.1 
+ - Indexing Service 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Index Server will not filter Microsoft Excel version 4.0 documents.
+The Excel 4.0 documents must first be converted to Excel 5.0 or later documents
+before being filtered by Microsoft Index Server.
+
+CAUSE
+=====
+
+Excel 4.0 document filtering is not supported.
+
+Additional query words: iis index
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ110
+Version           : winnt:1.1; :
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

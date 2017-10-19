@@ -1,0 +1,131 @@
+DOCUMENT:Q101403  17-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Running SCHDIST.EXE as Idle Process in Dispatch
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Versions 1.0 and 1.0a of Microsoft Schedule+ for Windows use the Schedule
+Distribution (Schdist) program (SCHDIST.EXE) to distribute a user's free and
+busy times to other postoffices. You can run the Schdist program as an idle
+process in the Dispatch program (DISPATCH.EXE).
+
+The Dispatch program carries out directory synchronization (Dir-Sync) requests on
+the network. The Dispatch program polls the postoffices to determine when a
+Dir-Sync event is scheduled to take place. When Dispatch is running, the
+External Mail program (EXTERNAL.EXE) must also be running.
+
+Schdist takes advantage of Dispatch polling the postoffices, and runs as an idle
+process. Schdist runs while External is not active.
+
+MORE INFORMATION
+================
+
+The following examples show commands and batch files for using SCHDIST.EXE and
+EXTERNAL.EXE as idle processes in DISPATCH.EXE for two different scenarios:
+
+1. If you want Dispatch to contain the IdleProcessMinPeriod (-TL) and
+   IdleProcessMaxPeriod (-TU) parameters, use the following command line
+
+         DISPATCH -Dmp -I"file.bat" -TL30 -TU60 -Lc:\logs\mail.log
+
+   where -Dxx specifies the direct drives, -I specifies the idle program, and -L
+   specifies the log file path and filename. To have Schdist running as an idle
+   process, include SCHDIST.EXE in a batch file. For example:
+
+   DISPATCH -Dmp -I"file.bat" -TL30 -TU60 -Lc:\logs\mail.log
+
+   The FILE.BAT batch file would look like the following:
+
+         <path>SCHDIST.EXE -Dxx -I1 -Lc:\logs\schdist.txt
+         <path>EXTERNAL.EXE -Dxx -A -Lc:\logs\external.txt %1
+
+   NOTE: Refer to Q101752 "PC Ext: Dispatch Cannot Spawn Batch File
+   Without COMMAND.COM" for information if you are having problems running this
+   batch file against Microsoft Mail for PC Networks postoffices with MS-DOS
+   5.0.
+
+   NOTE: In this setup, the -TU time in the Dispatch command line is passed to
+   the External command line. This parameter essentially becomes the -BR (break
+   relative) time that exits out of External and passes control back to
+   Dispatch.
+
+2. If you want the batch file to control the time for exiting out of the idle
+   process, use the following command line:
+
+         DISPATCH -Dxx -I"<batchfile>.bat" -L<path\filename>
+
+   For example:
+
+   DISPATCH -Dmn -I"file.bat" -Lc:\logs\mail.log
+
+   The FILE.BAT batch file would look like the following:
+
+         <path>SCHDIST.EXE -Dxx -I1 -Lc:\logs\schdist.txt
+         <path>EXTERNAL.EXE -Dxx -A -Lc:\logs\external.txt -BRdd:hh:
+
+   Notes
+
+   In this setup, the -BR (break relative) time determines when External exits
+   and passes control back to Dispatch.
+
+   You must remove the -A parameter in the External command line if you are using
+   a modem. You should only use <path> placeholder if the SCHDIST.EXE and
+   EXTERNAL.EXE files are not in the current directory. It is best if you copy
+   the following files to a directory on the dedicated machine that will run
+   this process (MS-DOS only):
+
+      DISPATCH.EXE     NSDA.EXE           REQMAIN.EXE
+      SRVMAIN.EXE      REBUILD.EXE        IMPORT.EXE
+      EXTERNAL.EXE     ASYNC.OVL          EXTERNAL.HLP
+      EXTERNAL.ERR     X25EICON.OVL       X25ATLAN.OVL
+      SCHDIST.EXE
+
+REFERENCES
+==========
+
+For more information on SCHDIST.EXE, see pages 12-15 of the Microsoft Schedule+
+for Windows "Administrator's Guide."
+
+For more information on DISPATCH.EXE, see pages 14-16 of the Microsoft Schedule+
+for Windows "Administrator's Guide," and pages 287-307 of the Microsoft Mail
+version 3.2 "Administrator's Guide" or pages 257-265 of the Microsoft Mail
+version 3.0 or 3.0b "Administrator's Guide."
+
+For more information on EXTERNAL.EXE, see pages 13-17 of the Microsoft Schedule+
+for Windows "Administrator's Guide," and pages 227-285 of the Microsoft Mail
+version 3.2 "Administrator's Guide" or pages 199-245 of the Microsoft Mail
+version 3.0 or 3.0b "Administrator's Guide."
+
+Additional query words: schedule plus 1.00 sched scheduler
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

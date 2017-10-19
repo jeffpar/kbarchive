@@ -1,0 +1,70 @@
+DOCUMENT:Q168950  14-NOV-2000  [word97]
+TITLE   :WD97: Bookmark at End of Document Lost After Save
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you save a Word document, the bookmark at the end of the document may be
+lost. This problem occurs when either of the following conditions exist:
+
+ - The document you save contains header or footer text, but the body of the
+   document is blank except for the bookmark.
+
+   -or-
+
+ - You open and save the document in another version of Word, and the document
+   contains text in the header or footer and a bookmark after the body text at
+   the end of the document.
+
+NOTE: This problem does not occur if you have never typed text in the header or
+footer of the document. If you type text in the header or footer and then delete
+the text, the problem still occurs.
+
+WORKAROUND
+==========
+
+To work around this problem, add the bookmark back to the end of the document
+after you add text to the body of the document or after you have saved the
+document in a different version of Word.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbusage word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,59 @@
+DOCUMENT:Q74586  17-DEC-2000  [msdos]
+TITLE   :Cosmos Revelation Database G.2 May Cause Intermittent Hanging
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Cosmos Revelation Database version G.2, your computer may stop
+responding (hang) with Microsoft MS-DOS version 5.0.
+
+RESOLUTION
+==========
+
+Cosmos recommends that customers experiencing these problems upgrade to Advanced
+Revelation Database version 2.1 to solve this problem.
+
+To upgrade to Advanced Revelation Database 2.1, contact Revelation customer
+service. The cost for upgrading from Cosmos Revelation Database version G.2 to
+Advanced Revelation Database version 2.1 is $495 plus $25 shipping and handling.
+
+MORE INFORMATION
+================
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 5.00 2.10 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q153721  29-MAR-1999  [exchange]
+TITLE   :XCLN: TCPIP Clarification for Win16 Client in SP2 Readme.wri
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Readme.wri file for the Microsoft Exchange client for Windows 3.x
+released in Service Pack 2, it states:
+
+   1.13.4 Using TCP/IP
+   If you are having problems with TCP/IP stacks, you can try tuning parameters
+   related to sockets, window size, and buffer size as follows:
+
+   Protocol TCPIP
+   tcp_window 8192
+
+   Link Support
+   Buffers 8 1500
+   MemPool 8192
+
+There is no additional information on where to make these configuration changes.
+
+MORE INFORMATION
+================
+
+The above information applies if you are running Microsoft Windows 3.x and
+Novell's LanWorkPlace TCPIP for DOS. The above settings would be made in the
+Net.cfg file normally located in the C:\nwclient directory or the installation
+directory of the Novell TCPIP protocol.
+
+For additional information about the TCPIP settings in the Net.cfg file, consult
+your Novell LanWorkPlace for DOS Documentation.
+
+Additional query words: LanWorkplace
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

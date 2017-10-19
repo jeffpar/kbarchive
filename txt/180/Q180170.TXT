@@ -1,0 +1,71 @@
+DOCUMENT:Q180170  11-DEC-1999  [foxpro]
+TITLE   :DOC: TopIndex Property Incorrectly Documented
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbdocerr kbHWMAC kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Help file and the Visual FoxPro Language Reference incorrectly states that
+the TopIndex property is read/write at run-time.
+
+MORE INFORMATION
+================
+
+The TopIndex Property topic of the Help file states:
+
+   Specifies the item that appears in the top-most position in a list. Not
+   available at design time; read-write at run-time.
+
+This is incorrect. The property is read only at run-time. If you attempt to
+change the property, error 1743 appears with this message:
+
+   Property TopIndex is read only.
+
+REFERENCES
+==========
+
+Visual FoxPro 3.x for Windows Help; search on: "TopIndex" (without the quotation
+marks)
+Visual FoxPro 3.0b for Macintosh Help; search on: "TopIndex" (without the
+quotation marks)
+Visual FoxPro 5.x for Windows Help; search on: "TopIndex" (without the quotation
+marks)
+Visual FoxPro 3.x for Windows, "Language Reference", page 820.
+Visual FoxPro 5.x for Windows, "Language Reference", page 422.
+Visual FoxPro 3.0b for Macintosh, "Language Reference", page 876.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbHWMAC kbvfp 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

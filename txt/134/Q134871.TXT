@@ -1,0 +1,62 @@
+DOCUMENT:Q134871  15-APR-2000  [powerpt]
+TITLE   :PPT7: Embedded Object Resizes if Slide Formatted as Title Master
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbole
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you embed an object through one of the OLE object placeholders in an
+AutoLayout and then add a Title master to your presentation, the embedded object
+resizes if its slide is formatted as a Title slide.
+
+CAUSE
+=====
+
+In this situation, when you change the AutoLayout, PowerPoint mistakes the OLE
+object placeholder for the sub-title placeholder. The OLE object takes on the
+size and positioning of the sub-title placeholder.
+
+NOTE: OLE objects that are not created from AutoLayout placeholders are not
+affected.
+
+RESOLUTION
+==========
+
+If the object resizes and moves, you can drag it back to its original position
+and resize it by dragging the resize handles.
+
+Additional query words: 7.00 shrink downsize
+
+======================================================================
+Keywords          : kbole 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

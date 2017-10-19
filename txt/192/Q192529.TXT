@@ -1,0 +1,54 @@
+DOCUMENT:Q192529  27-OCT-2000  [msnetwork]
+TITLE   :MSN Mail Account in Outlook Express Restored to Default Settings
+PRODUCT :The Microsoft Network
+PROD/VER::2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0,5.01,5.1,5.2,5.3,5.5
+OPER/SYS:
+KEYWORDS:kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.52, 2.6, 5.0, 5.1, 5.2, 5.3 
+ - Microsoft Outlook Express versions 4.0, 4.01, 4.01 Service Pack 1, 4.01 Service Pack 2, 5, 5.01, 5.5 for Windows 95 
+ - Microsoft Outlook Express versions 5, 5.01, 5.5 for Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Microsoft Outlook Express after you reinstall or upgrade your
+version of MSN, The Microsoft Network, the default settings for the MSN Mail
+e-mail account are restored.
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+The MSN Setup program includes an automatic e-mail configuration program that
+restores the default settings for the MSN Mail e-mail account.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n. outexw95 2.52 2.60 kbimu
+
+======================================================================
+Keywords          : kbenv kbmsn 
+Technology        : kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress98Search kbOutlookExpress95Search kbOutlookExpress550Win98SE kbOutlookExpress501Win98SE kbOutlookExpress500Win98SE kbOutlookExpress401Win95 kbOutlookExpress401Win95SP1 kbOutlookExpress401Win95Sp2 kbOutlookExpress501Win95 kbOutlookExpress550Win95 kbOutlookExpress500Win95 kbOutlookExpress400Win95 kbMSN520 kbMSN530 kbMSN510 kbMSN500 kbMSN252 kbMSN260
+Version           : :2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0,5.01,5.1,5.2,5.3,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

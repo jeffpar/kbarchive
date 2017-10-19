@@ -1,0 +1,67 @@
+DOCUMENT:Q271255  31-JUL-2001  [homemm]
+TITLE   :Microsoft Reader: Cannot Buy E-Book Content On the Internet
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.5
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader, version 1.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Netscape Navigator, you may be unable to purchase premium e-Book
+content on the Internet for Microsoft Reader.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true.
+
+ - A version of Netscape Navigator other than version 4.05 is installed on the
+   computer.
+
+ - You installed Netscape Navigator 4.05 after you installed Microsoft Reader on
+   your computer.
+
+NOTE: The only version of Netscape Navigator that supports the purchase of
+premium e-Book content on the Internet is Netscape Navigator 4.05.
+
+RESOLUTION
+==========
+
+To resolve this issue install Netscape Navigator 4.05, and then uninstall and
+reinstall Microsoft Reader.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: reader msreader ebook communicator
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbimu 
+Technology        : kbReaderSearch kbReader150
+Version           : :1.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

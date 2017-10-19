@@ -1,0 +1,168 @@
+DOCUMENT:Q260347  08-MAY-2002  [iis]
+TITLE   :MS00-060: IIS 4: Fix for Cross-Site Scripting Issues
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+On November 2, 2000, Microsoft released an updated patch to correct a new variant of this vulnerability. Please see the Resolution section below for information on how to obtain the latest patch.
+
+For additional information about resolving this problem on IIS 5, click the article number below 
+to view the article in the Microsoft Knowledge Base:
+
+   Q275657 IIS 5: Fix for Cross-Site Scripting Issues
+
+SYMPTOMS
+========
+
+Microsoft has identified a vulnerability that could enable a malicious user to
+cause code to run on the computer of another user in the guise of a third-party
+web site. Such code could take any action on the user's computer that the
+third-party web site was permitted to take. In addition, the code could be made
+persistent, so that if the user returned to the web site again in the future,
+the code would begin running again.
+
+The vulnerability could only be exploited if the user clicked on a hypertext
+link, either in an HTML mail or on a malicious user's web site - the code could
+not be "injected" into an existing session.
+
+CAUSE
+=====
+
+Certain Web services provided by Internet Information Server 4.0 do not properly
+validate all inputs before they use them, and are therefore vulnerable to
+Cross-Site Scripting (CSS).
+
+RESOLUTION
+==========
+
+Windows NT 4.0
+--------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+To resolve this problem, obtain the Windows NT 4.0 Security Rollup Package. For
+additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Crsscri.exe now
+   (http://www.microsoft.com/downloads/release.asp?ReleaseID=25534)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+   Date       Time    Version      Size    File name     Platform
+   --------------------------------------------------------------
+   10/03/2000  09:03p  4.2.752.1  214,544  adsiis.dll    x86
+   10/03/2000  09:03p  4.2.752.1  330,080  asp.dll       x86
+   10/03/2000  08:13p              11,396  httpext.h     x86
+   10/03/2000  09:02p  4.2.752.1   55,904  httpodbc.dll  x86
+   10/03/2000  09:03p  4.2.752.1   98,912  iischema.dll  x86
+   10/03/2000  08:13p              28,851  iiscnfg.h     x86
+   10/03/2000  09:01p  4.2.752.1  185,792  infocomm.dll  x86
+   10/03/2000  09:05p  4.2.752.1   54,560  ism.dll       x86
+   10/03/2000  09:02p  4.2.752.1   38,256  ssinc.dll     x86
+   10/03/2000  09:02p  4.2.752.1   25,360  sspifilt.dll  x86
+   10/03/2000  09:02p  4.2.752.1  229,008  w3svc.dll     x86
+
+
+
+Microsoft Windows NT Server version 4.0, Terminal Server Edition
+----------------------------------------------------------------
+
+To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP). For additional information about the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+   Package
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server 4.0.
+
+MORE INFORMATION
+================
+
+For more information on this security vulnerability, please see the following
+Microsoft web site:
+
+   http://www.microsoft.com/technet/security/bulletin/MS00-060.asp
+
+CSS is a recently discovered security vulnerability that potentially enables a
+malicious user to "inject" code into a user's session with a Web site. Unlike
+most security vulnerabilities, CSS does not apply to any single vendor's
+products, but instead, it can affect any software that runs on a Web server and
+does not follow defensive programming practices. In early 2000, Microsoft and
+CERT worked together to inform the software industry of the issue and lead an
+industry-wide response to it.
+
+Microsoft published extensive information about CSS, including information for
+developers on how to check their code for potential vulnerabilities. Microsoft
+has identified several places in IIS where proper checking was not performed;
+some of these were found by our internal security teams, and others were
+identified by customers.
+
+For more specific information about CSS, see the FAQ on the following Web site:
+
+   http://www.microsoft.com/technet/security/crsstFAQ.asp
+
+Additional query words: Patch Available for "IIS Cross-Site Scripting" Vulnerabilities security_patch
+
+======================================================================
+Keywords          : kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

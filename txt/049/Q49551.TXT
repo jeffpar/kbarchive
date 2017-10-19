@@ -1,0 +1,62 @@
+DOCUMENT:Q49551  30-JUL-2001  [homegame]
+TITLE   :Multi-Player Information README.DOC Version 4.00
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The following information concerning the use of Flight Simulator Version 4.00 in
+multi-player mode is taken from the README.DOC file:
+
+Multi-Player Information:
+-------------------------
+
+If you are not using a Hayes-compatible modem, select Option 1 (ON-LINE), then
+deselect Option 1 prior to selecting Option 3 (Messages/Talk to Modem). Turning
+Option 1 on and off has the effect of initializing the COM port buffer, and
+should be done before you "Talk to Modem" without prior selection of "DIAL" or
+"Wait for Ring" options.
+
+If you are using a joystick, you may have problems running Multi-Player at a high
+baud rate (19,200 baud or higher), particularly in sending and receiving
+aircraft. If you are using a joystick, it is best to set your baud rate no
+higher than 9,600.
+
+In Multi-Player, a baud rate of 57,600 is supported, but is not recommended. Its
+advantage is faster aircraft send/receive and messages, but it has no effect
+upon the smoothness of the other player's flight and can degrade system
+performance.
+
+When sending messages, limit the length of the message to what is displayed in
+the message box.
+
+When using the Sailplane in Multi-Player, the ADF tracking feature is not
+available due to the reduced Sailplane instrumentation.
+
+Multi-Player supports two players, not "two or more" as noted on Page 132 of the
+"Microsoft Flight Simulator" manual.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

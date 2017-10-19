@@ -1,0 +1,68 @@
+DOCUMENT:Q146345  18-FEB-2002  [exchange]
+TITLE   :XADM: Adding Too Many Proxy Addresses To a Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You will receive the following error when you add too many proxy names to a
+mailbox:
+
+   The maximum number of administrative connections to the server has been
+   exceeded. Try again later or connect to a different server.
+
+   Microsoft Exchange Directory
+   ID no:DS_E_ADMIN_LIMIT_EXCEEDED
+
+MORE INFORMATION
+================
+
+The above error message will be displayed when adding additional proxy e- mail
+addresses to a mailbox if the total number of proxy addresses is more than 200.
+In most cases the error will be displayed when selecting OK from the E-Mail
+Addresses tab after adding the proxy addresses.
+
+The error message is not displayed when entering the addresses with the New
+button. The error is only displayed after committing the new addresses.
+
+This error will be displayed regardless of the type of address you are adding.
+
+WORKAROUND
+==========
+
+You will need to remove redundant or unneeded proxy addresses in order to add a
+new one.
+
+
+Additional query words: IMC internet mail connector macmail pcmail microsoft
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

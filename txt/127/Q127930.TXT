@@ -1,0 +1,59 @@
+DOCUMENT:Q127930  17-DEC-2000  [win95x]
+TITLE   :Paint Shop Pro Screen Capture Does Not Work Correctly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the Capture Area or Capture Client Area feature from the
+Capture menu in Paint Shop Pro version 2.0, the feature does not function
+correctly and the mouse pointer does not become a crosshair as it should. The
+Full Screen and Window capture features do work correctly.
+
+STATUS
+======
+
+This behavior is a limitation of Paint Shop Pro version 2.0 running in Windows
+95. Upgrades are available from:
+
+JASC, Inc.
+10901 Red Circle Drive, Suite 340
+Minnetonka, MN 55343 USA
+
+
+MORE INFORMATION
+================
+
+Paint Shop Pro is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

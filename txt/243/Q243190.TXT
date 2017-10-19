@@ -1,0 +1,74 @@
+DOCUMENT:Q243190  04-FEB-2000  [exchange]
+TITLE   :XFOR: Notes Dirsync Error Message: Event IDs 94086 and 94096
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange Server does not receive directory synchronization (dirsync)
+updates from the Lotus Notes server. The following error messages are logged in
+the Exchange Server connectivity log:
+
+   1998/09/14 12:02:20- LME-NOTES-DXANOTES(0180) 1 64096:Error {Not available}
+   detected when determining Name of Address Book >> lndxapi(2359)
+   1998/09/14 12:02:20- LME-NOTES-DXANOTES(0180) 1 64086:Error {Not available}
+   detected when attempting to delete user >> lndxapi(2310)
+   1998/09/14 12:02:20- LME-NOTES-DXANOTES(0180) 2 64073:Error {Not done}:While
+   processing Transaction 1
+
+CAUSE
+=====
+
+The error messages in the "Symptoms" section of this article are caused by the
+incorrect configuration of the Exchconn.ini file that is located in the
+Exchsrvr\Connect\Exchconn folder.
+
+RESOLUTION
+==========
+
+In the Exchsrvr\Connect\Exchconn folder, open the Exchconn.ini file and make
+sure that the following entries match:
+
+   [DXANOTES]
+   SourceBooks = names.nsf
+
+   [LME-NOTES-DXANOTES]
+   SourceBooks = names.nsf
+
+If the SourceBooks files that are specified in these entries do not match, change
+them so that they match and reflect the correct file name for the source address
+book.
+
+Additional query words: domino, nsf
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

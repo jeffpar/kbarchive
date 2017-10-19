@@ -1,0 +1,125 @@
+DOCUMENT:Q172377  01-APR-2000  [sna]
+TITLE   :SNA Server Exception Error Stopping/Starting Manage Client
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you shut down and then quickly start SNA Manager, an application exception
+error may occur in Manage Client. A Dr. Watson log may be generated and contain
+text similar to the following:
+
+   
+
+   State Dump for Thread Id 0x8d
+
+   eax=017dfd98 ebx=00000000 ecx=00000000 edx=fffffffd esi=00000000
+   edi=044311ac
+   eip=6098bce4 esp=017dfd80 ebp=017dfe8c iopl=0         nv up ei pl nz na po
+   nc
+   cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+   efl=00000206
+
+   function: CNotifyQTarget::PutTailItem
+        6098bcd0 81eca0000000     sub     esp,0xa0
+        6098bcd6 8d442408         lea     eax,[esp+0x8]
+   ss:026ee787=????????
+        6098bcda 53               push    ebx
+        6098bcdb 56               push    esi
+        6098bcdc 8bd9             mov     ebx,ecx
+        6098bcde 89442408         mov     [esp+0x8],eax
+   ss:026ee787=????????
+        6098bce2 57               push    edi
+        6098bce3 55               push    ebp
+   FAULT ->6098bce4 8b4b28           mov     ecx,[ebx+0x28]
+   ds:00f0ea06=????????
+        6098bce7 6aff             push    0xff
+        6098bce9 8b2db0109860     mov     ebp,[609810b0]
+   ds:609810b0=77f04f76
+        6098bcef c744241800000000 mov   dword ptr [esp+0x18],0x0
+   ss:026ee787=????????
+        6098bcf7 51               push    ecx
+        6098bcf8 ffd5             call    ebp
+        6098bcfa 85c0             test    eax,eax
+        6098bcfc 7407             jz      CNotifyQTarget::PutTailItem+0x35
+   (6098bd05)
+        6098bcfe 33c0             xor     eax,eax
+        6098bd00 e960010000       jmp    CNotifyQTarget::PutTailItem+0x195
+   (6098be65)
+        6098bd05 8b4320           mov     eax,[ebx+0x20]
+   ds:00f0ea06=????????
+        6098bd08 8b885c010000     mov     ecx,[eax+0x15c]
+   ds:017dfef4=00000000
+
+   *----> Stack Back Trace <----*
+
+   FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+   017dfe2c 6098bc40 017dfe3c 017e03a0 00000000 00000001
+   mngbase!CNotifyQTarget::PutTailItem  (FPO: [EBP 0x017dfe8c] [1,40,4])
+   017dfe48 609897a3 00000000 00000001 00000072 fffffffd
+   mngbase!CNotifyQTarget::AddNotify  (FPO: [4,4,1])
+   017dfe8c 6098b220 017dfe9c 00000003 003113e0 00000002 mngbase!ManageGetRoot
+   (FPO: Non-FPO [1,9,3])
+   017dfea8 01009b05 60203cdb 602042a7 0012fe8c 77f611f2
+   mngbase!CNotifyQueue::Dispatch  (FPO: [0,4,1])
+   017dffb8 77f04f2c 0012fe8c 60203cdb 602042a7 0012fe8c
+   mngcli!TermMngAgentProxy (FPO: Non-FPO [1,64,3])
+   017dffec 00000000 010093b0 0012fe8c 00000000 4d43474c kernel32!lstrcmpiW
+   00000000 00000000 00000000 00000000 00000000 00000000 mngcli!<nosymbols>
+
+CAUSE
+=====
+
+Manage Client attempts to place a Queue Attached message on a queue which does
+not exist.
+
+RESOLUTION
+==========
+
+Manage Client now tests for existence of a successful queue creation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 3.0 and 3.0 Service
+Pack 1 (SP1). This problem was corrected in the latest SNA Server version 3.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

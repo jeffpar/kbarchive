@@ -1,0 +1,362 @@
+DOCUMENT:Q138310  03-JUN-1999  [win95x]
+TITLE   :Microsoft Plus! Drvspace.txt File Contents
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is a copy of the information in the Microsoft Plus!
+for Windows 95 Drvspace.txt file.
+
+MORE INFORMATION
+================
+
+--------
+CONTENTS
+--------
+
+USING COPY-PROTECTED SOFTWARE WITH DRIVESPACE 3
+FREEING CONVENTIONAL MEMORY FOR RUNNING MS-DOS PROGRAMS
+USING DISK TOOLS WITH SIDEKICK FOR WINDOWS
+COMPRESSION AGENT AND THE WINDOWS SWAP FILE
+AUTOMOUNTING COMPRESSED FLOPPY DISKS
+FREQUENTLY-ASKED QUESTIONS
+
+COMPRESSING AND UPGRADING DRIVES
+================================
+
+Using Copy-Protected Software With DriveSpace 3
+-----------------------------------------------
+
+If you use copy-protected software, contact the manufacturer
+before you compress or upgrade your drive using DriveSpace 3.
+Some copy-protected software depends on the absolute physical
+location of a "key" file, and will not work properly with
+DriveSpace 3.
+
+You might be able to work around this problem by uninstalling
+the copy-protected software and then reinstalling it after
+compressing or upgrading your drive.
+
+If a Drive Becomes Inaccessible After You Compress Another Drive
+----------------------------------------------------------------
+
+If, after compressing a drive, your CD-ROM drive or another hard
+disk drive becomes inaccessible or "disappears", the drive letter
+may have been changed when DriveSpace reserved drive letters for
+other purposes.
+
+To restore the original drive letter:
+
+1. Use the right mouse button to click the My Computer icon on
+   the desktop, and then click Properties.
+
+2. Click the Device Manager tab.
+
+3. Click the + sign to the left of the Disk Drives item, click
+   the drive you want to restore, and then click Properties.
+
+4. Set the drive letter back to the original drive letter for
+   that drive.
+
+If the original drive letter is not available, it is probably
+in use by the host drive. (You can change the host drive to
+use a different letter. To do this, run DriveSpace, select
+the host drive, and choose Change Drive Letter from the
+Advanced menu.)
+
+FREEING CONVENTIONAL MEMORY FOR RUNNING MS-DOS PROGRAMS
+=======================================================
+
+Some MS-DOS-based programs (for example, networks or games) may
+not be able to run if DriveSpace 3 compression is installed, even
+if you have not yet upgraded your drives to DriveSpace 3 format.
+Typically, this problem occurs only when Windows is not running,
+and with programs that require a lot of conventional memory.
+
+To get your program to run, you need to reconfigure your
+system so that more conventional memory is available.
+
+The general steps involved are:
+
+1. Make sure your CONFIG.SYS file contains commands like the
+   following:
+
+        DEVICE=C:\WINDOWS\HIMEM.SYS
+        DEVICE=C:\WINDOWS\EMM386.EXE NOEMS
+        DOS=HIGH,UMB
+        DEVICEHIGH=C:\WINDOWS\COMMAND\DRVSPACE.SYS /MOVE
+
+   These commands make it possible for DriveSpace to use
+   upper memory, which can free more conventional memory for
+   your program.
+
+   NOTE: If the DEVICEHIGH command for DRVSPACE.SYS contains
+         the /L:0 switch, delete the /L:0 from that command.
+
+   If your CONFIG.SYS file does not contain these commands,
+   add them. (To check whether DriveSpace is using upper
+   memory, type MEM /C at the MS-DOS prompt.)
+
+2. Restart your system, and then try running your program again.
+
+3. If your program still does not run, disable any unnecessary
+   drivers and memory-resident programs in your AUTOEXEC.BAT
+   and CONFIG.SYS files.
+
+   Try loading device drivers by using the DEVICEHIGH command
+   instead of the Device command. For example:
+
+        DEVICEHIGH=C:\WINDOWS\IFSHLP.SYS
+
+   Try loading memory-resident programs by using the LOADHIGH
+   command. For example:
+
+        LOADHIGH DOSKEY
+
+   Restart your computer, and then try running your program again.
+
+4. If your program still does not run, you need to create
+   a startup floppy disk that you can use to start your computer
+   without DriveSpace. You can then run your program from your
+   uncompressed (host) drive. For more information, see the
+   following section.
+
+Creating a Startup Disk for Running MS-DOS Programs
+---------------------------------------------------
+
+If your MS-DOS program does not run because there is not enough free
+conventional memory, and you have carried out the procedure in the
+previous section, you may need to create a special startup floppy
+disk. You can then use that disk to start your computer without
+DriveSpace, and then run your program from your uncompressed drive.
+
+To create your startup disk, you will need the Startup Disk wizard,
+Nocomp.Exe, which is located in the System subfolder of the folder
+that contains your Microsoft Plus! files.
+
+1. Make sure there is enough free space on your host drive (or
+   another uncompressed drive) to install your program.
+
+   To create more free space on your host drive, use the Adjust
+   Free Space command in DriveSpace. (For other ways to free space,
+   look up "Disk space, freeing" in the Help index.)
+
+2. Run the Startup Disk wizard to create your startup floppy disk.
+
+   NOTE: You will need a formatted or unformatted floppy disk that
+         fits in drive A.
+
+3. After the Startup Disk wizard finishes creating your startup
+   floppy disk, insert the disk in drive A, and then restart
+   your computer.
+
+   Your computer will start without loading DriveSpace. This will
+   free memory for your program to use.
+
+   NOTE:  Your compressed drives will be temporarily unavailable.
+          They will become available again when you restart your
+          computer normally.
+
+4. Install your program on your host drive or on another
+   uncompressed drive.
+
+USING DISK TOOLS WITH SIDEKICK FOR WINDOWS
+==========================================
+
+If Sidekick for Windows version 2.0 is running, you may be unable to
+run certain disk tools, such as DriveSpace or Disk Defragmenter.
+
+To work around this problem, first exit Sidekick, and then try
+running the disk tool again.
+
+For an update to Sidekick that fixes this problem, contact the
+manufacturer.
+
+COMPRESSION AGENT AND THE WINDOWS SWAP FILE
+===========================================
+
+When Compression Agent recompresses the files on your compressed
+drive, it automatically skips the Win386.swp file. (This file,
+known as the Windows swap file, provides virtual memory for
+Windows and applications to use.) There is no need to specifically
+exclude the Win386.swp file from compression by using Compression
+Agent's Exceptions dialog box.
+
+AUTOMOUNTING COMPRESSED FLOPPY DISKS
+====================================
+
+DriveSpace 3 automatically mounts compressed floppy disks and
+other removable media when Windows 95 is running.
+
+However, when Windows is not running (for example, if you restart
+your computer in MS-DOS mode), automounting is disabled. To
+mount a compressed floppy disk yourself, you can use ScanDisk.
+For example, to mount the compressed floppy disk in drive A,
+type the following at the command prompt:
+
+    C:\> SCANDISK /MOUNT A:
+
+FREQUENTLY-ASKED QUESTIONS
+==========================
+
+This section answers some common questions about how Windows
+and DriveSpace report space usage on DriveSpace 3 drives.
+
+Why do my files seem to take up more space on a DriveSpace 3 drive?
+-------------------------------------------------------------------
+
+The space on each drive is divided into units called clusters.
+Each file or folder is stored in one or more clusters. When
+Windows stores a file on your drive, it allocates just enough
+clusters to hold the entire file. Because all the clusters on
+a particular drive are the same size, a portion of the last
+cluster for each file will probably be unused. For example,
+on a drive that uses 8K clusters, each file uses at least
+one 8K cluster, even if that file is only 1K in size.
+
+Windows keeps track of used space on a per-cluster basis:
+when Windows reports how much space is used by a file, it
+includes the unused space at the end of the file's last
+cluster. For example, Windows would report that a 1K file
+uses 8K of space.
+
+Larger drives have larger cluster sizes. In order to support
+very large (2GB) drives, DriveSpace 3 uses 32K clusters.
+This means that even a very small file still uses 32K of
+space. As a result, when you view the properties for your
+drive, the amount of used space might appear to be higher
+than before you compressed the drive with DriveSpace 3.
+
+Does this mean that more space is wasted on DriveSpace 3 drives?
+----------------------------------------------------------------
+
+No. On the contrary, DriveSpace 3 stores files much more
+efficiently than on an uncompressed drive. In addition
+to saving space by compressing the data in each file,
+DriveSpace 3 also saves space by allocating smaller amounts
+of physical disk space for each file. Although Windows
+still keeps track of files in units of clusters (which is
+why your files may appear to take up more space), DriveSpace
+actually uses 512-byte units when allocating physical space
+for each file. This means that no more than 512 bytes of
+actual disk space is wasted when allocating a file on a
+DriveSpace 3 drive.
+
+What is "reduced overhead"?
+---------------------------
+
+When you view the properties for a compressed drive and
+click on the Compression tab, you'll typically see that some
+disk space was saved due to "reduced overhead." This
+is due to the fact that DriveSpace actually stores files in
+512-byte increments, rather than in larger clusters, as
+would happen on an uncompressed drive. Reduced overhead
+reflects the amount of space saved by using this more
+efficient allocation, relative to the amount of space that
+would have been required to store the same files on the
+same drive if it was uncompressed. Reduced overhead does
+NOT include the savings from the actual compression of your
+data.
+
+What do the numbers on the Compression tab mean?
+------------------------------------------------
+
+The Compression tab of the property sheet for a drive
+shows how your files are being compressed and how much
+space each type of compression is saving.
+
+For each type of compression, the compression ratio is
+computed by dividing the amount of data stored in that type
+of compression by the amount of physical disk space actually
+used to store the data. For example, if you have 100MB of
+data stored in UltraPack format, and its compression ratio
+is 2.5 to 1, then DriveSpace 3 is storing that data using
+only 40MB of physical space on your hard disk. As a result,
+the Gain column indicates that you've saved 60MB of space by
+using UltraPack compression.
+
+The overall compression ratio for a drive is an average of
+all the compression types, plus the savings from Reduced
+Overhead. It represents the ratio between the amount of
+space that would have been required to store the same files on
+the same drive if it were not compressed, and the amount of
+physical disk space that DriveSpace is actually using to store
+those files.
+
+Why isn't the compression ratio for UltraPack higher?
+-----------------------------------------------------
+
+UltraPack compression generally achieves the highest
+possible compression. However, because DriveSpace can read
+and write data stored in HiPack format more quickly than
+data stored in UltraPack, it uses HiPack format unless
+using UltraPack can save a significant amount of disk
+space. Because only the data that is most difficult to
+compress will be stored in UltraPack format, the ratio
+shown for UltraPack may actually be lower than that for HiPack.
+
+Why are some files not compressed at all?
+-----------------------------------------
+
+On many drives, a significant amount of data will be listed
+as being uncompressed. There are several reasons that
+particular files may not be compressed:
+
+ * Files that are smaller than 512 bytes are never
+   compressed. (DriveSpace 3 compresses a file only
+   if it can save at least 512 bytes of disk space by
+   doing so.)
+
+ * Space used on your drive to store folders is never
+   compressed.
+
+ * The Windows swap file is never compressed. (This file
+   provides virtual memory by using space on your hard
+   disk.)
+
+ * Certain files may not be compressed if you have
+   configured Compression Agent to prevent it from
+   compressing those files.
+
+ * Files that are already compressed, such as JPEG or ZIP
+   files, typically can't be compressed any further by
+   DriveSpace, so they are listed as uncompressed.
+
+ * Some files that do not compress well, such as program
+   files (.EXE and .DLL files), may have portions that do
+   not compress at all. These portions are listed as
+   uncompressed.
+
+Additional query words: lock locked
+
+======================================================================
+Keywords          : win95 
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

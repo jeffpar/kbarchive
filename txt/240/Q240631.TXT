@@ -1,0 +1,67 @@
+DOCUMENT:Q240631  25-JUN-2000  [homemm]
+TITLE   :World Atlas Err Msg: You Must Have NT SUR 4.0 GOLD to Install...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Encarta World Atlas 2000, you may receive the
+following error message:
+
+   You must have NT SUR 4.0 GOLD to install. Please click OK to cancel
+   installation.
+
+When you click OK, Encarta World Atlas 2000 Setup continues to run.
+
+CAUSE
+=====
+
+This behavior can occur if you install Encarta World Atlas 2000 on a Microsoft
+Windows 2000-based computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta World Atlas
+2000.
+
+MORE INFORMATION
+================
+
+When you complete Encarta World Atlas 2000 Setup, you are able to run the
+program without any further problems.
+
+Additional query words: multi multi-media media mm ewa2k win2k
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

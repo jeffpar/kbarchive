@@ -1,0 +1,75 @@
+DOCUMENT:Q139059  17-DEC-2000  [win95x]
+TITLE   :No Personal Folders Password By Default in MS Exchange
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Microsoft Mail information service in Microsoft Exchange,
+you are prompted to enter a password when you start Microsoft Exchange. However,
+this password does not prevent others from accessing your personal information
+store.
+
+CAUSE
+=====
+
+After you install the Microsoft Mail information service, you are prompted to
+enter a password the next time you start Microsoft Exchange. This password is
+the password for the post office; it is not a password for your personal
+information store.
+
+RESOLUTION
+==========
+
+To prevent others from accessing your personal information store, configure
+Microsoft Exchange to use a password for your personal folders. To do so, follow
+these steps:
+
+1. In Microsoft Exchange, click Services on the Tools menu.
+
+2. Click Personal Folders, and then click Properties.
+
+3. Click Change Password.
+
+4. Type the password for your personal folders in the New Password and Verify
+   Password boxes, and then click OK.
+
+MORE INFORMATION
+================
+
+If you do not configure Microsoft Exchange to use a password for your personal
+information store, others can access your personal information store by logging
+on to Microsoft Exchange on your computer, or by using Microsoft Exchange to
+access your personal information store from another computer on the network (if
+your personal information store is located in a shared folder).
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

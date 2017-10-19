@@ -1,0 +1,72 @@
+DOCUMENT:Q107054  12-DEC-1999  [homemm]
+TITLE   :CD Sampler: Err Msg: Unable to Find Movie Named...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::Fall 1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Home CD Sampler Fall 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When attempting to run the Microsoft Home CD Sampler in a low memory situation,
+the following error message may occur:
+
+   Unable to find movie named A:\MSHOME.MMM.
+
+Choosing OK will usually allow the CD Sampler to terminate normally and return to
+the Program Manager.
+
+MORE INFORMATION
+================
+
+The system requirements for the Microsoft CD Sampler are:
+
+ - A personal computer with a 386sx or higher microprocessor
+
+ - 2 MB of available hard disk space
+
+ - 4MB RAM
+
+ - MS-DOS 3.1 or later
+
+ - Microsoft Windows 3.1 or later
+
+ - Microsoft Mouse or compatible pointing device
+
+ - 256-color VGA
+
+ - MPC compatible CD-ROM
+
+ - Audio board
+
+NOTE: Headphones or speakers are recommended.
+
+Additional query words: kbhowto Fall 1993 CD Sampler multi media multimedia multi-media err msg cannot can not open
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword5 kbCDSamplerF1993
+Version           : :Fall 1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

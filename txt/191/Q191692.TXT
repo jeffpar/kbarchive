@@ -1,0 +1,68 @@
+DOCUMENT:Q191692  20-APR-2001  [vbwin]
+TITLE   :PRB: Shdocvw.dll Is Not Included in PDW Setup Package
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbAppSetup kbIE kbVBp kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Package and Deployment Wizard (PDW) to create a setup package
+for a Visual Basic project that contains the Microsoft Internet Controls, PDW
+does not include the Shdocvw.dll file in your setup package.
+
+CAUSE
+=====
+
+Shdocvw.dll is a core component of Microsoft Internet Explorer. Under current
+redistribution policy, you are not allowed to redistribute Internet Explorer in
+your application. Therefore, Shdocvw.dll is not included in your setup package.
+
+
+RESOLUTION
+==========
+
+To enable the functionality of the Microsoft Internet Controls, users of your
+application are required to have Internet Explorer installed on their computers.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q155969 HOWTO: Distribute the WebBrowser Control
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbIE kbVBp kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,58 @@
+DOCUMENT:Q149315  19-DEC-1999  [exchange]
+TITLE   :XFOR: Exchange MS Mail Connector Adds SNADS GatewayName
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When sending mail to a SNADS recipient via the Microsoft Exchange MS Mail
+Connector, there is no need to include the GatewayName portion of the address
+(GatewayName\DGN\USER).
+
+If the GatewayName is included, the MS Mail Connector will reject the message as
+bad because the address will be incorrect and appear as
+"GatewayName\GatewayName\DGN\USER".
+
+MORE INFORMATION
+================
+
+You must install the SNADS access component on the Connector PO to allow
+outgoing SNADS mail from Microsoft Exchange. Once this is done, and the SNADS
+address space has been properly set on the Connector, the Interchange service
+will automatically insert the GatewayName portion of the address.
+
+The same applies for replies to incoming SNADS mail because the reply address
+will not contain the GatewayName portion of it.
+
+Additional query words: NDR proxy
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

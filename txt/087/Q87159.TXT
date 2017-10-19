@@ -1,0 +1,53 @@
+DOCUMENT:Q87159  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Folder Tracking
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.1 of Microsoft Mail for the Macintosh allows for local folder storage
+as well as server folder storage. The local folder information and contents are
+stored in a single data file using the user name as the title. This file is
+stored in the MS Mail Local Folder, which is kept within the Preferences
+folder.
+
+The local cache file, which is also kept in the Preferences folder, keeps track
+of the last open folder. The default open folder for offline use is the last
+open folder, if it is local. Then it will be the Outbox, if it exists, and if
+there is no Outbox, the default open folder will be the first alphabetical local
+folder. If the last open folder is the Outbox, and Mail is started online, then
+the open folder will be the Mailbox; Mail never defaults to the Outbox while
+offline.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

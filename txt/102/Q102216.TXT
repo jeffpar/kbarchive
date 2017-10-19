@@ -1,0 +1,74 @@
+DOCUMENT:Q102216  06-OCT-1999  [win3x]
+TITLE   :Err Msg: "Error 50: This Request Is Not Supported by the..."
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Standard Microsystems Corporation (SMC) 3008 network card, the
+following error message may be displayed when you start Workgroups Connection on
+an 8088/8086 (XT) computer:
+
+   Error 50: This request is not supported by the network.
+
+CAUSE
+=====
+
+This error may occur if the 8088/8086 computer is incorrectly identified during
+Setup as an IBM PC/AT-compatible machine. This prevents proper operation of the
+SMC 3008 network card.
+
+RESOLUTION
+==========
+
+To eliminate the above error message, use a text editor (such as MS-DOS Editor)
+to add the following line to the [MS$SMC3K] section of the PROTOCOL.INI file in
+the DOS directory:
+
+       [MS$SMC3K]
+
+       XT_TYPE = 1
+
+If the initial sign-on message indicates the incorrect machine type, you can set
+an optional parameter (XT_TYPE) to override the automatic determination of
+computer type. The setting XT_TYPE = 1 informs Protocol Manager that the
+computer is an 8088/8086 computer. The setting XT_TYPE = 0 informs Protocol
+Manager that the computer is an IBM PC/AT-compatible computer.
+
+The SMC 3000 Series network interface cards (NICs) are manufactured by Standard
+Microsystems Corporation, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding these products' performance or
+reliability.
+
+Additional query words: 3.10 3.1 real mode 8bit
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

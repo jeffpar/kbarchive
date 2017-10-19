@@ -1,0 +1,263 @@
+DOCUMENT:Q160766  20-FEB-2002  [frontpg]
+TITLE   :FP97: VSS Source Control Project Box Does Not Appear in FrontPag
+PRODUCT :Word Front Page
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbinterop kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use Visual SourceSafe 5.0 and FrontPage Explorer together,
+you may receive unexpected results. Specifically, FrontPage Explorer will not
+display a Source Control Project box in the Web Settings dialog box.
+
+There are six forms of this problem:
+
+Case 1: You are using Microsoft Personal Web server for your Web Server.
+
+Case 2: You see the following errors in the error log:
+
+   Microsoft FrontPage Server Extensions:
+      (OS Error #-2147166146 Message:)
+   Microsoft FrontPage Server Extensions:
+   Error #90017 Message: Source Control System failure: File
+   "srcsafe.ini" not found
+
+The specific file name in this error message will vary.
+
+Case 3: You see the following error in the error log:
+
+   Microsoft FrontPage Server Extensions:
+   Error #90017 Message: Source Control System failure: User
+   <your_user_account> not found
+
+Case 4: You see the following errors in the error log:
+
+   Microsoft FrontPage Server Extensions:
+     (OS Error #-2147467259 Message: Unspecified error)
+
+   Microsoft FrontPage Server Extensions:
+   Error #90017 Message: Source Control System failure: Could not find
+   VSS resource DLL
+
+Although the error messages may vary, they will always begin with "Source Control
+System Failure" or "Visual SourceSafe Failure."
+
+Case 5: No error message (FrontPage 97 or Visual SourceSafe 5.0 beta)
+
+Case 6: You see the following errors in the error log:
+
+   Microsoft FrontPage Server Extensions:
+      (OS Error #-2147166135 Message: )
+
+   Microsoft FrontPage Server Extensions:
+      Error #90017 Message: Source Control System failure:
+      Invalid handle.
+
+NOTE: All errors logged by FrontPage regarding SourceSafe integration are logged
+at the server end of the transaction. On a Windows NT system, the errors are
+logged in the "Windows NT Event Viewer Application" log. On a computer running
+Windows 95, the errors are logged in the Frontpg.log file located in the root of
+the drive to which Windows is installed. The errors are not logged to the client
+machine.
+
+CAUSE/WORKAROUND
+----------------
+
+Case 1: Microsoft Personal Web Server:
+
+Cause:
+
+If you are using Microsoft Personal Web server for you Web Server, you cannot use
+FrontPage and Visual SourceSafe together. Currently, this configuration is
+unsupported.
+
+Case 2: "Source Control System failure: File 'srcsafe.ini' not found":
+
+Cause:
+
+You did not enable SourceSafe Integration when you installed SourceSafe.
+
+The FrontPage user account or the Internet Guest account (on IIS only) does not
+have an account within the SourceSafe Administrator.
+
+If your Visual SourceSafe and your SourceSafe data are stored on an NTFS drive,
+you may have not granted appropriate NTFS file system rights to the FrontPage
+user account, to the Internet Guest account (for IIS), or to the user account
+under which the web server operates.
+
+The SourceSafe integration DLLs are either unregistered or are different
+versions.
+
+NOTE: The server's error log will not report errors in this case.
+
+The SourceSafe database is located on a different computer than the one running
+IIS, and the Internet Guest account (typically IUSR_<machine name>) does
+not have access permissions to the SourceSafe database.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q131022 INFO: Required Network Rights for the SourceSafe Directories
+
+
+
+Workaround
+
+To resolve this problem, use the following steps:
+
+1. Start the SourceSafe installation program.
+
+2. Select add/remove components, and make sure the "Enable SourceSafe
+   Integration" check box is selected. (If it is not selected, click the check
+   box to select it).
+
+3. Complete the installation.
+
+SourceSafe Integration should now be enabled.
+
+Case 3: Source Control System failure: User <your_user_account> not found:
+
+Start the Visual SourceSafe Administrator and make sure that your user account
+has read/write permissions and, for an IIS server only, the
+IUSR_<machine_name> (the Internet Guest) account has read permission
+within Visual SourceSafe Administrator. Make sure the passwords for these
+accounts are left blank.
+
+Case 4: "Source Control System Failure", "Visual SourceSafe Failure" Errors:
+
+In order to properly integrate FrontPage and Visual SourceSafe, assign CHANGE
+permissions to all SourceSafe logon accounts for all files under the Visual
+Source Safe installation directory (including the SourceSafe data directory if
+it is in a different location).
+
+Although tighter file restrictions may be possible, full SourceSafe functionality
+may be jeopardized by tighter restriction. The installation and check
+installation processes of FrontPage will only set permissions on Ssapi.dll and
+the SourceSafe resource DLL (Ssus.dll on US English). The installation process
+will not set permissions in other sections of the SourceSafe directory
+hierarchy. These permissions must be set manually.
+
+NOTE: It is assumed that the Administrators and System accounts will be granted
+full control to the entire VSS directory hierarchy.
+
+Grant at least read permissions to all SourceSafe logon accounts for the
+following additional files:
+
+   srcsafe.ini
+   um.dat
+   users.txt
+
+Grant at least read/write permissions to all SourceSafe logon accounts for the
+following additional files or directories:
+
+   vss\users\<logon account directory>\ 
+   vss\data\ 
+   vss\temp\ 
+   rights.dat
+   status.dat
+
+If restricting permissions to this level restricts SourceSafe functionality,
+assign change permissions to all SourceSafe logon accounts for all files under
+the Visual Source Safe installation directory.
+
+For more information about required levels of NTFS permissions for Visual
+SourceSafe, see the Microsoft Visual Source Safe technical support Web site at:
+
+   http://www.microsoft.com/ssafesupport/
+
+NOTE: Because the Microsoft Web site is constantly updated, the site address may
+change without notice. If this occurs, link to the Microsoft home page at the
+following address:
+
+   http://www.microsoft.com/
+
+FrontPage will log errors to the error log if the Internet Guest Account (of IIS)
+does not have read permission to the following files
+
+   srcsafe.ini
+   um.dat
+   users.txt
+   vss\users\<Internet Guest Account directory>\ 
+
+and has read/write permissions to
+
+   vss\data\loggedin\ 
+
+These errors will not affect the functionality of the integration. You can ignore
+them or grant the rights to the Internet Guest account to stop the errors.
+
+Case 5: You Are Using FrontPage 97 or Visual SourceSafe 5.0 Beta:
+
+Resolution
+
+To resolve this problem, use the following troubleshooting techniques:
+
+ - Uninstall the beta versions and upgrade to the released versions.
+
+ - Verify the following about the Fp20vss.dll and Fp20wel.dll files:
+
+    - There is only one of each of these files on your system.
+    - The Fp20wel.dll file is in %windir%\system and Fp20vss.dll is in the bin
+      directory (the bin directory is located in the directory in which you
+      installed of FrontPage).
+    - Fp20vss.dll and Fp20wel.dll have the same version number. (If the files do
+      not have the same version number, uninstall FrontPage, rename any
+      remaining Fp20*.dll files, and then reinstall the released version of
+      FrontPage.)
+    - To see the version number of a .dll file in Windows, select the file and
+      press ALT+ENTER. The version number will be displayed on the Version tab
+      of the "<File name> Properties" dialog box.
+
+ - Your Ssapi.dll should be version 05.00.2218 or later. If you have an earlier
+   version of this file, contact SourceSafe support for information about how to
+   obtain the updated file:
+
+   http://www.microsoft.com/SSafeSupport/
+
+Case 6: Source Control System failure: Invalid Handle Error:
+
+Cause:
+
+The SourceSafe database is located on a different computer than the one running
+IIS, and the Internet Guest account (typically IUSR_<machine name>) does
+not have access permissions to the SourceSafe database.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q131022 Required Network Rights for the SourceSafe Directories
+
+Additional query words: vss
+
+======================================================================
+Keywords          : kbinterop kbdta 
+Technology        : kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbFrontPage97Search kbZNotKeyword3 kbSSafe500
+Version           : :5.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

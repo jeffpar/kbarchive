@@ -1,0 +1,69 @@
+DOCUMENT:Q157659  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Control Doesn't Connect to 16-Bit SMS Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbtshoot kbusage smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+Remote Control utilities and Remote Diagnostics will fail to connect to 16- bit
+SMS clients if the machine name contains extended characters. Extended
+characters are those beyond the first 127 in the ASCII character set.
+
+NOTE: This problem does not occur on Windows NT clients.
+
+CAUSE
+=====
+
+When a client has extended characters in its name, it registers the name on the
+network as an OEM string. The Windows NT NetBIOS interface expects an ANSI
+string, and Sightnt.dll uses ANSI strings for remote control.
+
+WORKAROUND
+==========
+
+Change the machine name. NetBIOS names can contain characters between ASCII 33
+and 126 inclusive except for the MS-DOS reserved characters such as the backward
+and forward slashes, braces ({}), the greater than and less than signs, and so
+forth.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms helpdesk RC win16 win95 msdos
+
+======================================================================
+Keywords          : kbtshoot kbusage smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

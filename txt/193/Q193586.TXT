@@ -1,0 +1,84 @@
+DOCUMENT:Q193586  01-MAY-2001  [ssafe]
+TITLE   :PRB: Error "Rights.Dat is already open" When Running Ddupd.exe
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:_IK kbddconv kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs when running the Ddupd.exe utility to upgrade the
+database to the 6.0 format:
+
+   Rights.Dat is already open.
+
+CAUSE
+=====
+
+This happens because the SourceSafe Admin or one or more users are logged in and
+are using the database.
+
+RESOLUTION
+==========
+
+Before running the Ddupd.exe make sure that all the users are logged out of
+SourceSafe and that the SourceSafe Admin is closed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Log into SourceSafe as a valid user, or open the SourceSafe Admin.
+
+2. From the Win32 directory of the SourceSafe install and execute the following
+   command:
+
+         DDUPD <path to the data directory> [-undo] [-redo]
+
+   The following message displays:
+
+   File <path to data directory>\rights.dat is already open.
+
+REFERENCES
+==========
+
+Visual SourceSafe 6.0 Help; search on: "DDUPD"
+
+Additional query words: kbSSafe600 kbddconv kbCommandLine
+
+======================================================================
+Keywords          : _IK kbddconv kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

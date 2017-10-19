@@ -1,0 +1,77 @@
+DOCUMENT:Q95726  03-FEB-2000  [foxpro]
+TITLE   :PRB: SHOW WINDOW <Window Name> REFRESH with Browse Window
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error "Window <window name> has not been defined" occurs when the SHOW
+WINDOW <window name> REFRESH command is used to REFRESH a Browse window.
+
+CAUSE
+=====
+
+The window is being referenced by the incorrect name.
+
+RESOLUTION
+==========
+
+There are two ways to refresh a Browse window with the SHOW WINDOW <window
+name> REFRESH command. The first way is to use the TITLE name defined by the
+BROWSE command:
+
+      USE customer
+      BROWSE TITLE "My Browse"
+      SHOW WINDOW "My Browse" REFRESH  && Causes refresh
+
+If the Browse window was not defined with a TITLE, you can use the name of the
+database being browsed as the window name:
+
+      USE customer
+      BROWSE
+      SHOW WINDOW customer REFRESH  && Causes refresh
+
+It does not matter how the BROWSE command was issued (whether in the BROWSE,
+BROWSE WINDOW, or BROWSE IN WINDOW commands) or if the window's title is the one
+that appears on the screen.
+
+      USE CUSTOMER
+      DEFINE WINDOW browwind FROM 1,1 TO 23,79 TITLE "Window Title"
+      ACTIVATE WINDOW browwind
+      BROWSE IN WINDOW browwind TITLE "Browse Title"
+      SHOW WINDOW "Browse Title" REFRESH   && Causes refresh
+
+Additional query words: VFoxWin FoxDos FoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,372 @@
+DOCUMENT:Q135314  02-FEB-2002  [win95x]
+TITLE   :Windows 95 Driver Library
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbfile win95 kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+The Windows 95 Driver Library driver information in this article was revised May
+17, 1996. Obtain the most recent version of the Windows 95 Hardware
+Compatibility List, Hcl95.exe, from the following site:
+
+   http://www.microsoft.com/hwtest/
+
+Obtain the most recent versions of the Windows
+95 Driver Library drivers from the Microsoft Download Center.
+
+SUMMARY
+=======
+
+Microsoft has made the Windows 95 Driver Library (W95DL) available. The W95DL
+contains drivers for many printers, display adapters, sound cards, and network
+adapters not provided with Windows 95. If you have a modem, the drivers are
+available for free on the Microsoft Download Center. Please note that standard
+connect-time fees and long-distance telephone charges, if any, apply during
+downloading.
+
+NOTE: The drivers included in this library are intended for use with Windows 95.
+These drivers are not recommended for use with earlier versions of Windows.
+
+MORE INFORMATION
+================
+
+Windows 95 Hardware Compatibility List
+--------------------------------------
+
+The Windows 95 Hardware Compatibility List contains a list of computer systems
+and peripherals (of which the W95DL is a subset) that are compatible with
+Windows 95.
+
+To obtain the Hardware Compatibility List as a Help file, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q131900 Windows 95 Hardware Compatibility List
+
+To obtain the Windows 95 Support Assistant, which contains the Hardware
+Compatibility List, as well as other useful Help files, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q134363 Windows 95 Support Assistant Available
+
+Availability
+------------
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   Download Aha154x.exe now
+
+   Download D17_ms.exe now
+
+   Download D20_ms.exe now
+
+   Download D32_ms.exe now
+
+   Download D40_ms.exe now
+
+   Download D176_ms.exe now
+
+   Download D1712_ms.exe now
+
+   Download D5100_ms.exe now
+
+   Download Digispch.exe now
+
+   Download Elnk3.exe now
+
+   Download Evx16.exe now
+
+   Download Ewrk3.exe now
+
+   Download Hpfend.exe now
+
+   Download I82593.exe now
+
+   Download Ibmfew.exe now
+
+   Download Irmadca.exe now
+
+   Download Mdmtelin.exe now
+
+   Download Ncc16.exe now
+
+   Download Olitoken.exe now
+
+   Download Olitokol.exe now
+
+   Download Pci.exe now
+
+   Download Pro4a.exe now
+
+   Download Pwrchut.exe now
+
+   Download Racalni.exe now
+
+   Download Sktokw95.exe now
+
+   Download Slan.exe now
+
+   Download Tripplte.exe now
+
+   Download Ubnei.exe now
+
+   Download Unimodv.exe now
+
+   Download Vodafax.exe now
+
+   Download Wdlrock.exe now
+
+   Download Wdlsmpl1.exe now
+
+   Download 8514.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Instructions for Downloading
+----------------------------
+
+1. Locate the device you want in the listing included at the end of the
+   W95dl.txt file. Note the name of the file listed next to the device.
+
+2. If you are downloading to a floppy disk, you need a formatted, blank disk. If
+   you are downloading to your hard disk, create a new folder in which you can
+   place the file.
+
+   CAUTION: Do not download files directly into your Windows folder. Doing so
+   could overwrite files essential to the proper operation of your system.
+
+3. Follow the downloading procedure used by your service to retrieve the file
+   you identified in step 1. This file contains all the files you need to
+   support your device.
+
+If you have problems extracting downloaded files, try downloading them again.
+
+How to Install New Drivers
+--------------------------
+
+To install a new driver (never before installed), follow these steps:
+
+1. Download a file using the instructions in the "Availability" section of this
+   article.
+
+2. Use Windows Explorer or My Computer to double-click the file you downloaded.
+   Double-clicking the file extracts the files it contains.
+
+3. Click the Start button, point to Settings, and then click Control Panel.
+
+4. Double-click the Add New Hardware icon, and then click Next.
+
+5. Click the No option button, and then click Next.
+
+6. Click the type of hardware for the driver you are installing, and then click
+   Next.
+
+7. Click the Have Disk button. Type the location of the files you extracted in
+   step 2, click OK, and then follow the instructions on the screen.
+
+How to Upgrade Existing Drivers
+-------------------------------
+
+To upgrade an existing driver with a Windows 95 driver, follow these steps:
+
+1. Download a file using the instructions in the "Availability" section of this
+   article.
+
+2. Use Windows Explorer or My Computer to double-click the file you downloaded.
+   Double-clicking the file extracts the files it contains.
+
+3. Use the right mouse button to click My Computer, and then click Properties on
+   the menu that appears.
+
+4. On the Device Manager tab, double-click the branch containing the device you
+   want to update, and then double-click the device.
+
+5. On the Driver tab, click the Change Driver button.
+
+6. Click the Have Disk button. Type the location of the files you extracted in
+   step 2, click OK, and then follow the instructions on the screen.
+
+NOTE: To upgrade your network adapter driver, you must use the Network tool in
+Control Panel.
+
+Files to Download
+-----------------
+
+Windows 95 Driver Library Contents
+----------------------------------
+
+AUDIO                               Driver Name       Version    File Date
+--------------------------------------------------------------------------
+AST Research
+  Advantage 2400 data/9600 fax       vodafax.exe       1.0        05/26/95
+Everex
+  3D Sound Express Plus              everex3d.exe      1.10       11/07/95
+Microsoft
+  Protable Sound Digispeech          digispch.exe      1          08/29/95
+
+DISPLAY                             Driver Name    Version       File Date
+--------------------------------------------------------------------------
+California Graphics Italia Srl
+  Terminator 64                      cgterm64.exe    2.4.2        11/25/95
+  Terminator 68                      cgterm68.exe    2.4.2        11/25/95
+Chips & Technologies, Inc.
+  F65548 PCI                         chipsn.exe      4.0          10/16/95
+  F65548 VL                          chipsn.exe      4.0          10/16/95
+Diamond Multimedia Systems, Inc.
+  SpeedStar 64                       dmsicss.exe     4.1          08/18/95
+  SpeedStar 64 (ISA)                 dmsicss.exe     4.1          08/18/95
+  SpeedStar Pro SE                   dmsicss.exe     4.1          08/18/95
+  SpeedStar Pro SE (ISA)             dmsicss.exe     4.1          08/18/95
+
+MODEM                               Driver Name      Version     File Date
+--------------------------------------------------------------------------
+Boca Research
+  Sound Expression 14.4 SRS          wdlboca1.exe     N/A         01/17/96
+  Sound Expression V.34 SRS          wdlboca1.exe     N/A         01/17/96
+Microsoft
+  UnImodem/Telephony                 unimodv.exe      1           11/15/95
+Rockwell
+  RCV144ACF                          wdlrock.exe      1.00        09/13/95
+Simple Technology
+  28.8 Communicator                  wdlsmpl1.exe     N/A         10/13/95
+
+NETWORK                                  Driver Name    Version  File Date
+--------------------------------------------------------------------------
+3Com
+  3C509B-C Etherlink III (REV 01)        elnk3.exe      1.03.00  01/09/96
+  3C509B-C Etherlink III (REV A)         elnk3.exe      1.03.00  01/09/96
+  3C509B-C Etherlink III (REV YY)        elnk3.exe      1.03.00  01/09/96
+  3C509B-TPO Etherlink III (REV 3A)      elnk3.exe      1.03.00  01/09/96
+  3C509B-TPO Etherlink III (REV B)       elnk3.exe      1.03.00  01/09/96
+DCA
+  IRMAtrac Convertible                   irmadca.exe    N/A      06/13/95
+  IRMAtrac Convertible MCA               irmadca.exe    N/A      06/13/95
+  IRMAtrac HardTop ISA 4/16              irmadca.exe    N/A      06/13/95
+DEC
+  DE203 EtherWORKS 3 /BNC                ewrk3.exe      N/A      05/25/95
+  DE204 EtherWORKS 3 /TP                 ewrk3.exe      N/A      05/25/95
+  DE205 EtherWORKS 3 /COMBO              ewrk3.exe      N/A      05/25/95
+Everex
+  SpeedLink /PC16 (EV2027)               evx16.exe      N/A      06/13/95
+Hewlett-Packard
+  HPJ2573A 10/100VG Selectable           hpfend.exe     N/A      06/13/95
+  HPJ2577A 10/100VG Selectable           hpfend.exe     N/A      06/13/95
+IBM
+  IBM 10/100 PCI Ethernet Adapter        ibmfew.exe     1.25     12/06/95
+  IBM 10/100 PCI Ethernet Adapter        ibmfew.exe     1.55     12/06/95
+Intel
+  PCI LAN (NDIS 3.x)
+  TokenExpress 32 EISA 16/4              olitoken.exe   N/A      06/13/95
+NCR
+  StarCard                               slan.exe       N/A      06/13/95
+  StarLAN 16/4 ISA Token Ring NAU        slan.exe       N/A      06/13/95
+  StarLAN 16/4 MCA Token Ring NAU        slan.exe       N/A      06/13/95
+  StarLAN 4 ISA Token Ring NAU           slan.exe       N/A      06/13/95
+  WaveLan AT                             slan.exe       N/A      06/13/95
+  WaveLan MC                             slan.exe       N/A      06/13/95
+Number Nine Visual Technology
+  3C509 Etherlink III                    elnk3.exe      1.03.00  01/09/96
+Olicom
+  32-bit Token Ring Server               olitokol.exe   N/A      06/13/95
+Proteon
+  P1340 ISA Token Ring                   pro4a.exe      N/A      06/13/95
+  P1342 ISA Token Ring                   pro4a.exe      N/A      06/13/95
+  P1346 ISA Token Ring                   pro4a.exe      N/A      06/13/95
+  P1347 ISA Token Ring                   pro4a.exe      N/A      06/13/95
+  P1840 MCA Token Ring                   pro4a.exe      N/A      06/13/95
+Racal
+  ES3210 EISA Ethernet                   racalni.exe    N/A      06/13/95
+  NI5210/16                              racalni.exe    N/A      06/13/95
+  NI5210/8                               racalni.exe    N/A      06/13/95
+  NI6510                                 racalni.exe    N/A      06/13/95
+SysKonnect
+  SK-NET TR 4/16+                        sktokw95.exe   1.02     05/25/95
+Tulip
+  NCC-16                                 ncc16.exe      N/A      06/13/95
+Ungermann Bass
+  2030 NIUpc                             ubnei.exe      N/A      06/13/95
+  3030/NIUps                             ubnei.exe      N/A      06/13/95
+  3035 NIUps/EOTP                        ubnei.exe      N/A      06/13/95
+  3270 NIUpc                             ubnei.exe      N/A      06/13/95
+  4035 NIUpc/EOTP                        ubnei.exe      N/A      06/13/95
+  NIC/ps                                 ubnei.exe      N/A      06/13/95
+  NUIps                                  ubnei.exe      N/A      06/13/95
+  pcNIU                                  ubnei.exe      N/A      06/13/95
+  pcNIU/ex 128K                          ubnei.exe      N/A      06/13/95
+  pcNIU/ex 512K                          ubnei.exe      N/A      06/13/95
+ZDS
+  Z-Note                                 i82593.exe     N/A      6/13/95
+
+PRINTER                                  Driver Name    Version  File Date
+--------------------------------------------------------------------------
+DEC
+  DEClaser 5100/Net                      d5100_ms.exe   N/A      06/14/95
+  PrintServer 17/12mb/Net                d1712_ms.exe   N/A      06/14/95
+  PrintServer 17/600/Net                 d176_ms.exe    N/A      06/14/95
+  PrintServer 17/Net                     d17_ms.exe     N/A      06/14/95
+  PrintServer 32/Net                     d32_ms.exe     N/A      06/14/95
+  PrintServer 40 Plus/Net                d40_ms.exe     N/A      06/14/95
+  Turbo PrintServer 20/Net               d20_ms.exe     N/A      06/14/95
+
+STORAGE
+-------
+CD-ROM DRIVE                       Driver Name       Version     File Date
+--------------------------------------------------------------------------
+Microsoft
+  SAME IDE Channel N CD-ROM and
+    Hard drives                    iosupd.exe        4.0.953    03/19/96
+
+MISCELLANEOUS
+-------------
+
+JOYSTICK                           Driver Name      Version      File Date
+--------------------------------------------------------------------------
+Microsoft
+  SideWinder 3D Pro                Sw3dpro.exe      1.0          02/21/96
+
+UPS DEVICE                         Driver Name      Version      File Date
+--------------------------------------------------------------------------
+American Power Conversion
+  Back UPS Pro 280                 pwrchut.exe      1.0          06/13/95
+  Back UPS Pro 420                 pwrchut.exe      1.0          06/13/95
+  Back UPS Pro 650                 pwrchut.exe      1.0          06/13/95
+Tripp Lite
+  Smart Series w/Plug and          tripplte.exe     1            01/10/96
+    Play Adapter
+
+Additional query words: getwdl hcl wdllist w95usefaq
+
+======================================================================
+Keywords          : kbfile win95 kbgraphxlinkcritical 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

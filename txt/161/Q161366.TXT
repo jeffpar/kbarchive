@@ -1,0 +1,79 @@
+DOCUMENT:Q161366  01-OCT-1999  [win3x]
+TITLE   :Err Msg: The Password You Specified Is Incorrect...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:msnets
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to a Windows for Workgroups 3.11-based computer that is
+configured to log on to a Windows NT domain, you may receive the following error
+message:
+
+   Windows for Workgroups
+   The password you specified is incorrect or your account is inactive. See your
+   network administrator for the password or to activate your account.
+
+CAUSE
+=====
+
+This behavior can occur if your Windows NT domain account is configured so that
+you are allowed to log on to the domain only from specific workstations, and you
+do not have permission to log on to the domain from the current workstation.
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+ - Log on to the domain from a authorized workstation.
+
+ - Contact your network administrator to change your account permissions for the
+   current workstation.
+
+MORE INFORMATION
+================
+
+If you try to log on to a Windows NT domain from a Windows 95-based computer on
+which you do not have permission to log on from, you receive the following error
+message:
+
+   Microsoft Networking
+   You are not allowed to log on from this workstation.
+
+This is controlled by user manager - user properties - Logon To setting.
+
+If the setting is set to USER MAY LOGON FROM THESE WORKSTATIONS: The user will be
+restricted to one of the machines listed.
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          : msnets 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

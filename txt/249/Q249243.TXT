@@ -1,0 +1,129 @@
+DOCUMENT:Q249243  11-NOV-2000  [exchange]
+TITLE   :XWEB: Appointments Created in OWA Appear Shifted One Hour Ahead
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5,5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp2 kbExchange550preSP4fix kbExchange550sp4Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+ - Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use Outlook Web Access (OWA) to create appointments that fall in the
+seven days before the last Sunday in October of any given year, the start and
+end times may appear to be shifted one hour ahead if you view them by using
+Microsoft Outlook. For some time zones this may also happen for dates in the
+seven days before the last Sunday in September. In some cases the appointments
+are also displayed incorrectly in OWA even though they were created there.
+
+CAUSE
+=====
+
+In 1996, the European Union (EU) standardized a EU-wide daylight saving period
+that starts on the last Sunday in March and ends on the last Sunday in October.
+Before the standardization, some EU countries implemented a daylight saving time
+that ended on the last Sunday in September. The Collaboration Data Objects (CDO)
+libraries didn't implement this change properly.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 4.
+
+MORE INFORMATION
+================
+
+To manually install this hotfix you need the Microsoft Register Server program,
+Regsvr32.exe. The Regsvr32.exe file is usually installed in your
+Windows\System32 folder. If you cannot locate the Regsvr32.exe file on your
+computer, you can obtain it from the Microsoft Download Center. For additional
+information about where to obtain the Regsvr32.exe file, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q161983 ACC: Regsv32a.exe Available in Download Center
+
+After you obtain the Regsvr32.exe file, you must perform the following steps to
+install this hotfix:
+
+NOTE: The paths used in the steps, such as C:\Winnt\System32 or C:\Exchsrvr\Bin,
+may be different on your system, depending on your installation of Microsoft
+Windows NT Server or Microsoft Exchange Server.
+
+1. Copy the Regsvr32.exe file to your Windows\System32 folder.
+
+2. Stop all of the services that are related to Internet Information Server
+   (IIS).
+
+3. Stop all of the Exchange Server services.
+
+4. Unregister the current Cdo.dll file; at a command prompt, type "regsvr32 /u
+   c:\winnt\system32\cdo.dll" (without the quotation marks). A dialog box is
+   displayed that indicates the success of this operation.
+
+5. Unregister the current Cdohtml.dll file; at a command prompt, type "regsvr32
+   /u c:\exchsrvr\bin\cdohtml.dll" (without the quotation marks). A dialog box
+   is displayed that indicates the success of this operation.
+
+6. Copy build 2651.70 of the Cdo.dll file to the C:\Winnt\System32 folder.
+
+7. Copy build 2651.70 of the Cdohtml.dll file to the C:\Exchsrvr\Bin folder.
+
+8. Register the new Cdo.dll file; at a command prompt, type "regsvr32
+   c:\winnt\system32\cdo.dll" (without the quotation marks).
+
+9. Register the new Cdohtml.dll file; at a command prompt, type "regsvr32
+   c:\exchsrvr\bin\cdohtml.dll" (without the quotation marks).
+
+10. Restart all of the IIS-related services.
+
+11. Restart all of the Exchange Server services.
+
+12. For each client that requires OWA to the mailbox calendar, connect to the
+   client mailbox by using OWA, and in the left pane, click Calendar, and then
+   click Options to ensure that the appropriate time zone is configured. Click
+   OK to save configuration changes.
+
+Additional query words: dayligt savings time timezone exch55
+
+======================================================================
+Keywords          : exc55sp2 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbOutlookSearch kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbExchange550SP3
+Version           : :5.5,5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

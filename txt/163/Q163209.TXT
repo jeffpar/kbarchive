@@ -1,0 +1,82 @@
+DOCUMENT:Q163209  13-JUN-2001  [sna]
+TITLE   :SNA Server Fails to Send STSN Error from SLI Application
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If an SLI application registers an SLI_STSN_ROUTINE to handle the Set and Test
+Sequence Numbers (STSN) command from the host PLU, the SLI application may
+accept or reject the host sequence number.
+
+If the SLI application rejects this command, it sets the lua_primary_rc to
+LUA_NEGATIVE_RSP and overwrites the STSN RU with the appropriate sense code
+error. However, SNA Server only sends a TERMSELF to the host, and fails to send
+the error indicated by the SLI application.
+
+CAUSE
+=====
+
+The SNA Server SLI interface issues an RUI_TERM immediately after the RUI_WRITE
+that contained the sense data indicated by the SLI application. The SNA Server
+incorrectly drops the RUI_WRITE sense data, and only sends the TERMSELF
+resulting from the RUI_TERM.
+
+RESOLUTION
+==========
+
+An update to SNA Server 2.11 Service Pack 1 is available to correct this
+problem. The updated module is Snaservr.exe.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11 and 2.11 Service Pack 1 (SP1); this problem is fixed in SNA Server 3.0.
+
+
+A supported fix is now for 2.11 SP1, but has not been fully regression- tested
+and should be applied only to systems experiencing this specific problem. Unless
+you are severely impacted by this specific problem, Microsoft recommends that
+you wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q258551  02-OCT-2001  [ssafe]
+TITLE   :BUG: Incorrect Error Message When You Install VSS 5.0 Y2K
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbsetup kbSSafe500bug kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade Visual SourceSafe 5.0 to apply the year 2000 (Y2K) update, the
+following error message can occur:
+
+   This update can only be applied to Visual SourceSafe 5.0 Service Pack 3
+   installations. Please update your Visual SourceSafe 5.0 installation with
+   Service Pack 3 and run this update again. Exiting setup.
+
+CAUSE
+=====
+
+This error occurs because of one of the following reasons:
+
+ - You attempt to run the Vssy2k.exe file with an Visual SourceSafe 5.0
+   directory that has the year 2000 (Y2K) update already installed.
+
+   -or-
+
+ - You attempt to run the Vssy2k.exe file with a network client that was
+   installed from a Visual SourceSafe server that has the year 2000 (Y2K) update
+   already installed.
+
+This behavior is by design.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+If you install Visual SourceSafe 5.0 Service Pack 3 first, and then apply the
+hotfix, the error message displays incorrectly because you already have the
+version that the Vssy2k.exe file is trying to install, and it does not need to
+update the files.
+
+REFERENCES
+==========
+
+For more information about the Visual SourceSafe 5.0 Year 2000 Update, click the
+link below:
+
+   http://msdn.microsoft.com/downloads/default.asp?url=/downloads/sample.asp?url=/MSDN-FILES/027/000/243/msdncompositedoc.xml
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbSSafe500bug kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe500
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

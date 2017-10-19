@@ -1,0 +1,127 @@
+DOCUMENT:Q232165  11-JUN-2002  [iis]
+TITLE   :Enabling Certificate Revocation Checking in IIS 4.0
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+Microsoft Internet Information Server (IIS) 4.0 in combination with Microsoft
+Certificate Server 1.0 make an excellent platform for distributing client
+authentication certificates. An important part of certificates is the ability to
+revoke a certificate (for instance, when a person leaves the company).
+
+By default, certificate revocation checking is disabled in IIS 4.0 due to the
+time involved in performing the check, especially if the CRL (Certificate
+Revocation List) happens to be on another server across the Internet.
+
+MORE INFORMATION
+================
+
+To perform CRL checking in IIS 4.0 (SP4 and earlier), do the following:
+
+1. Install IIS 4.0 and Certificate Server.
+
+2. Install the root certificate authority of Certificate Server into Internet
+   Explorer 4.0 (by going to the Certsrv Web page on the local computer, or by
+   importing the certificate).
+
+3. Run %windir%\system32\inetsrv\iisca.exe to mirror root certificates from
+   Internet Explorer 4.0 to IIS.
+
+4. Run net stop iisadmin /y.
+
+5. Go to the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Inetinfo\Parameters
+
+   Create the DWORD registry value CheckCertRevocation and set the value to 1.
+
+   WARNING: If you use Registry Editor incorrectly, you may cause serious
+   problems that may require you to reinstall your operating system. Microsoft
+   cannot guarantee that you can solve problems that result from using Registry
+   Editor incorrectly. Use Registry Editor at your own risk.
+
+6. Restart the required services (net start w3svc).
+
+7. Build an initial Certificate Revocation List (see below).
+
+Perform the following steps for each secure Web site:
+
+1. Configure the Web/virtual directory/directory for Secure connections.
+
+2. Configure the Web/virtual directory/directory to accept client certificates.
+
+3. Get client certificates from Certificate Server (from http://server/certsrv
+   (where server is the name of the computer hosting the Certificate Server).
+
+4. Select Certificate Enrollment Tools and choose Request a Client
+   Authentication Certificate.
+
+To test the configuration, do the following:
+
+1. Test the client certificate (from step 3 above) by browsing to the content
+   that requires certificates. This should succeed.
+
+2. Revoke this client certificate by choosing Certificate Administration Log
+   Utility from http://server/certsv (where server is the name of the server
+   running certificate server), click the sequence number of the certificate you
+   want to revoke, and then click the Revoke button on the next screen.
+
+3. Build the Certificate Revocation List (see below).
+
+4. Test the client certificate again by browsing to the content that requires
+   client certificates. This request should fail.
+
+5. From now on, whenever IIS attempts to read a client certificate, it will
+   check the CRL first.
+
+To build a Certificate Revocation List, do one of the following:
+
+ - Click Start, point to Programs, point to Windows NT Option Pack, click
+   Certificate Server, and then choose Generate New Certificate Revocation
+   List.
+
+   -or-
+
+ - Type certutil -CRL from a command prompt.
+
+IMPORTANT: This is an unsupported configuration in Internet Information Server
+4.0 and Certificate Services 1.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

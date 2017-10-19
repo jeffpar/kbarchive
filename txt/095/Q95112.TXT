@@ -1,0 +1,62 @@
+DOCUMENT:Q95112  06-OCT-1999  [win3x]
+TITLE   :NIC at I/O Port of 0360h May Prevent Local Printing
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the Network Interface Card (NIC) used with Windows for Workgroups (WFWG) is
+set to use an I/O Port address of 0360h, Windows may be unable to print locally.
+Also, this setting may cause lost network connections after a print job is sent
+to the local parallel port or the server may lock up when a job is printed from
+another workstation.
+
+CAUSE
+=====
+
+Parallel port LPT1 normally uses an I/O Port address of 0378h. Some network
+cards (especially NE2000 compatibles) use 20 address segments; this places the
+top of their address space at I/O Port address 0379h. So if a network card is
+set to an I/O Port address of 0360h, there may be a hardware conflict with the
+printer's I/O Port address.
+
+WORKAROUND
+==========
+
+To work around this problem, set the network card to an I/O Port address of
+0340h or lower. For more information on changing this setting on a network card,
+consult the user's manual for the card.
+
+Additional query words: 3.10 3.11 dropped lost
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

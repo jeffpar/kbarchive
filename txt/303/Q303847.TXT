@@ -1,0 +1,79 @@
+DOCUMENT:Q303847  06-AUG-2002  [sms]
+TITLE   :User Group Discovery  Collection Is Not Populated to Child Sites
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbConfig kbMMC kbServer kbsms200 kbCollections kbDiscovery kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new collection that is based on User and/or User Group
+Discovery account information on a site that is the parent of one or more child
+sites, the collection may not be populated correctly on the child sites. You may
+observe that the collection is created at a child primary site, but the
+collection may not have any members.
+
+Also, you may receive the following status messages for a secondary site in the
+Collection Evaluator component:
+
+   Status Message ID 2519
+   SMS Collection Evaluator failed to enumerate members of collection
+   <CollID> at site <SecondarySiteCode>.
+
+   Status Message ID 2512
+   SMS Collection Evaluator failed to replicate collection <CollID> to
+   child sites.
+
+CAUSE
+=====
+
+This behavior can occur when child sites do not have the User and/or User Group
+Discovery methods enabled.
+
+WORKAROUND
+==========
+
+To work around this behavior, enable the User and/or User Group Discovery
+methods at the child primary site (or sites).
+
+MORE INFORMATION
+================
+
+If either the User or User Group Discovery methods have been previously enabled
+on the child site, the collections can be evaluated, but they may contain
+inaccurate membership information.
+
+Status messages are not displayed at a child primary site to indicate a warning
+or error condition.
+
+Additional query words: prodsms collection child
+
+======================================================================
+Keywords          : kbConfig kbMMC kbServer kbsms200 kbCollections kbDiscovery kbsmsAdmin 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,161 @@
+DOCUMENT:Q93521  21-SEP-1999  [win95x]
+TITLE   :Parity Errors in Windows 3.x
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+3.00 3.00a 3.10 3.11
+
+WINDOWS
+
+kbhw kbdisplay kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Parity error messages are caused by the generation of nonmaskable interrupts
+(NMIs). A clean, uncorrupt installation of Windows cannot generate an NMI,
+therefore it is not possible for a clean, uncorrupt installation of Windows to
+cause a parity error.
+
+MORE INFORMATION
+================
+
+Parity is a very basic check of information integrity. Each byte (8 bits) of RAM
+storage actually takes nine bits of information. Eight bits are used for the
+data and the last bit (the "parity bit") is used to store the parity of the
+data.
+
+The processor is in charge of checking the accuracy of the parity bit, and the
+processor generates an NMI if it determines that the parity bit is set
+incorrectly. In Windows 386 enhanced mode, this is captured by a Virtual Device
+Driver (VDD), *parity, which displays an error message. In Windows Standard
+Mode, NMIs are ignored and passed to the default parity handler. This either
+does nothing or generates a TTY (full screen) error message. In both cases, the
+machine is in an unstable state and is halted.
+
+Parity errors can seem to be resolved if you remove a memory-resident item, such
+as a device driver or terminate-and-stay-resident (TSR) program. This only
+changes the memory location of load code. If you change the location or remove
+an item, then the code no longer resides on the faulty memory and you may no
+longer receive a parity error. If data resides the suspect memory, you might not
+see a parity error at all. Unfortunately, since data and code in Windows changes
+memory locations constantly, the parity error might appear (or reappear) later.
+
+In Windows, memory is commonly allocated with a flag to initialize the memory to
+zero. This makes the parity even (zero ones set in the data byte). If there is a
+faulty memory chip where the value of a bit is always set to zero, then
+everything functions normally as nothing is written to that memory (because the
+parity bit is correct). If the faulty memory address falls in a code segment
+(that is, the memory is going to store actual, executable code) it is likely
+that the bit will be used and a parity error will be generated.
+
+A parity error can be caused by different circumstances but it is almost always a
+hardware problem.
+
+Common Causes of Parity Errors
+------------------------------
+
+One cause of parity errors is faulty memory. The most foolproof way to resolve
+this problem is to swap out each piece of memory until the problem disappears.
+Make sure you are using good, quality memory and the memory is properly seated
+in the computer. Memory checking programs are not adequate because they don't
+test the memory the way that Windows uses it. Most, if not all, memory checkers
+use read/write cycles when scanning memory. Since Windows is executing code from
+the memory, it uses execute cycles. Execute cycles are physically different from
+read/write cycles and are more vulnerable to parity errors. It is possible for
+memory checking programs to find parity errors if the memory is extremely
+faulty.
+
+Sometimes parity errors are caused by mismatched memory speeds. The CPU might be
+accessing the memory faster than the memory is capable of handling requests. A
+possible workaround is to increase the number of wait states in the CMOS setup.
+This option is not available on all machines and doesn't always work. In short,
+increasing the number of wait states directs the CPU to wait for a predetermined
+amount of time between memory reads. This slows the machine down because it now
+takes longer to access memory. Generally, this option can be set to Zero, One,
+or Two wait states. The higher the number, the longer it waits between memory
+cycles. In addition, try to keep the same speed of RAM installed in your
+computer. If you have to mix speeds, make sure that you have the same speed RAM
+installed in each Bank. Banks are usually sets of four memory chips on the
+motherboard.
+
+Supporting hardware, like video cards, can often cause parity errors. Because the
+devices occupy memory in the UMB, read/write data to these devices can also
+cause parity errors. The best way test this is to replace the device with one
+that is working correctly. Also faulty power supplies can cause parity errors.
+
+Another known cause for parity errors is the PARITY BOOT B Virus.
+
+What is Parity?
+---------------
+
+There are two versions of Parity: Odd and Even. The Parity BIT is set on or off
+depending on the count of ON bits, or 1's, in the data, usually a byte.
+
+Examples
+--------
+
+11011010 (Parity would be set to 1 to make the number of ones even.)
+
+11110111 (Parity would be set to 0 to make the number of ones odd.)
+
+Memory for the PC is designed such that there is an extra chip, or extra BIT, set
+aside for parity. This chip will hold the parity for a byte of memory. This is
+why there is often 9 chips on a memory SIMM, or the chips themselves are labeled
+256x9's or 1Megx9's, and so on.
+
+A parity error will be generated when a piece of code is executed in a faulty
+memory address. During the fetch or pre-fetch cycle of the CPU, the point where
+the CPU receives an instruction from memory to execute, the hardware checks the
+fetched code for parity. If that fetch fails, an exception error is generated.
+This is done to safe-guard the CPU from executing an instruction that is not
+viable.
+
+During a regular memory fetch, that is, data reads, parity is not checked. This
+is why a memory checker will normally be unable to find parity errors. The only
+program that will check memory for parity problems correctly is a program that
+executes code in the RAM addresses in question. Windows 3.0 and 3.1 are such
+programs. In Windows 3.0, the mechanism for checking parity errors did not
+function correctly and instead generated UAE's. These UAE's were a result of the
+parity errors not being caught and the code continuing to run in the faulty
+memory.
+
+NOTE: You cannot check memory for parity problems by creating a RAMDRIVE, copying
+a program to it, and executing the program. The program is still stored as data
+in the RAMDRIVE. When run, the program is copied into conventional memory before
+it is executed. For information on how to use a RAMDRIVE to troubleshoot memory,
+please see the following article(s) in the Microsoft Knowledge Base:
+
+   Q142546 How to Use a RAM Drive to Troubleshoot Memory
+
+Additional query words: 3.00 3.00a 3.10 3.11.exe execute paroty parety parityerror
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

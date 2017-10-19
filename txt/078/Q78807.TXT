@@ -1,0 +1,88 @@
+DOCUMENT:Q78807  04-DEC-1999  [win16sdk]
+TITLE   :DDEMeta.exe - DDEML with Metafiles
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kb16bitonly kbDDE kbGrpDSUser
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DDEMeta.exe is a sample file that contains the source code to an application
+that demonstrates how to read a Windows metafile and pass the information using
+dynamic data exchange (DDE).
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+DDEMeta.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+DDEMETA is a server application that uses the Dynamic Data Exchange Management
+Library (DDEML).
+
+To use DDEMETA, perform the following five steps:
+
+1. Start DDEMETA.
+
+2. Choose DDE Init from the Sample menu to register DDEMETA with the DDEML.
+
+3. Start a DDE client application to initiate a conversation with DDEMETA. In
+   the client, use the application name "DDEMETA" and the topic "Test".
+
+4. After the conversation is established, the client application can request any
+   "item" of type CF_METAFILEPICT from the server.
+
+5. When DDEMETA receives the request, it will read the TEST.WMF file from the
+   disk and pass it to the client application.
+
+To test DDEMETA, request a CF_TEXT item. Note that the "item" reference is never
+checked; therefore, any item name works.
+
+Note: This program will not read "placeable" metafiles. For more information on
+"placeable" metafiles, query on the following words in the Microsoft Knowledge
+Base:
+
+   placeable
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbDDE kbGrpDSUser 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

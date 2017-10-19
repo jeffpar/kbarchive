@@ -1,0 +1,58 @@
+DOCUMENT:Q182986  05-APR-1999  [exchange]
+TITLE   :XCON: Use Expedited Data Option Relevant Only for TP4 Stacks
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In earlier versions of Microsoft Exchange Server, the Stack tab in the
+properties for an X.400 Connector contains a Use Expedited Data check box,
+regardless of the type of transport stack you are using. However, selecting the
+Use Expedited Data check box can increase communication speed only if you are
+using a Transport Class 4 (TP4) transport stack.
+
+Therefore, in Exchange Server 5.5, the check box is not available if you are
+using a Transport Control Protocol/Internet Protocol (TCP/IP) or Transport Class
+0 (TP0)/X.25 transport stack.
+
+MORE INFORMATION
+================
+
+The Use Expedited Data check box is used to increase communication speed on
+networks that recognize data packets identified for accelerated transfer. Some
+networks require the use of expedited data.
+
+Additional query words: message transfer agent mta transport stack
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

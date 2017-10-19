@@ -1,0 +1,70 @@
+DOCUMENT:Q239582  25-JUN-2000  [homemm]
+TITLE   :Reference Suite 2000: Setup Does Not Remove All Suite 99 Files
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you choose to remove Microsoft Encarta Reference Suite 99 during the
+installation of Microsoft Encarta Reference Suite 2000, Setup does not remove
+all Encarta Reference Suite 99 files from your hard disk.
+
+RESOLUTION
+==========
+
+To work around this issue:
+
+1. Start Microsoft Windows Explorer.
+
+2. Click the PLUS SIGN (+) next to the hard disk on which Microsoft Windows is
+   installed.
+
+3. Click the PLUS SIGN (+) next to Program Files.
+
+4. Right-click Microsoft Reference, click Delete, and then click Yes.
+
+5. Quit Windows Explorer.
+
+6. On the desktop, right-click the Recycle Bin icon, click Empty Recycle Bin,
+   and then click Yes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Reference
+Suite 2000.
+
+Additional query words: multi multi-media media mm ers2k remains uninstalls folders
+
+======================================================================
+Keywords          : kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,60 @@
+DOCUMENT:Q197151  14-NOV-2000  [word97]
+TITLE   :WD97: Can't Print More Than One Page of Embedded Objects
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbole kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Microsoft Word displays or prints an embedded object on a single page (even if
+the embedded object could span multiple pages).
+
+CAUSE
+=====
+
+In Word, embedded objects are limited to one page.
+
+This behavior is by design. Microsoft Word is unable to divide the display
+representation of embedded objects larger than one page.
+
+MORE INFORMATION
+================
+
+Objects of the Word document class display or print one page of an embedded
+object. When double-clicked, the entire object appears in the object window.
+Objects of the Microsoft Excel worksheet class display all of the information in
+the object but truncate the text when printed.
+
+Additional query words: truncated cut off cropped crop chop chopped missing
+
+======================================================================
+Keywords          : kbole kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,53 @@
+DOCUMENT:Q101070  24-JUL-1999  [accother]
+TITLE   :ADK: How to Make Custom Application Name Appear in Task List
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access Distribution Kit, version 1.1 
+-------------------------------------------------------------------------------
+
+In order for the title of your custom Microsoft Access application to
+appear in the Microsoft Windows Task List, you need to provide a Title
+Bar setting in the application's .INI file. The setting should be
+included in the [Run-Time Options] section of the .INI file and should
+have the following format:
+
+   [Run-Time Options]
+   TitleBar=<MyApplicationName>
+
+Substitute the name of your custom application for <MyApplicationName>
+in the example above.
+
+Restart your custom application after making this change to the .INI
+file. The application's name will appear in the Task List.
+
+Additional query words: nxml
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbAccessSearch kbAccessDistKit110
+Version           : WINDOWS:1.1
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

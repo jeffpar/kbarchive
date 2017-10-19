@@ -1,0 +1,64 @@
+DOCUMENT:Q198449  10-AUG-2001  [winnt]
+TITLE   :Protocol Field Explanation from KERNROUT PRINT Output
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Routing and Remote Access provides the KERNROUT command-line utility to manage
+and/or view routing in Windows NT. When using this command to display the
+Routing Table by specifying the PRINT parameter, such as in KERNROUT PRINT, one
+of the columns in the information displayed is Protocol. This information shows
+the Protocol used by the computerto learn a route. However, the output shows
+just a number instead of the protocol name.
+
+The following table shows the protocol numbers and the protocols these numbers
+represent.
+
++----------------------------------------------------------+
+| Number | Name    | Explanation                           | 
++----------------------------------------------------------+
+| 1      | Other   | Protocol not in this list             | 
++----------------------------------------------------------+
+| 2      | Local   | Learned from computer's configuration | 
++----------------------------------------------------------+
+| 3      | NETMGMT | Network Management                    | 
++----------------------------------------------------------+
+| 4      | ICMP    | Internet Control Message Protocol     | 
++----------------------------------------------------------+
+| 9999   | BOOTP   | Boot Protocol                         | 
++----------------------------------------------------------+
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

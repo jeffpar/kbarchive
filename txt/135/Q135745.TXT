@@ -1,0 +1,81 @@
+DOCUMENT:Q135745  07-SEP-2001  [powerpt]
+TITLE   :PPT7: Objects Displayed in Grayscale in Black & White View
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:kbprint kbusage kbdta kbPrintingkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the black and white view to control how objects will be printed to
+a black and white printer, some objects are displayed and printed in grayscale.
+
+CAUSE
+=====
+
+In black and white view, some objects are printed in grayscale by default.
+
+WORKAROUND
+==========
+
+If you want to print everything in either black or white, customize the black
+and white view. To print your presentation (or certain objects) without shades
+of gray, perform the following steps:
+
+1. On the View menu, click Black And White.
+
+2. If any objects appear in grayscale on your slide, select them.
+
+   TIP: You can select all objects on the slide by pressing CTRL+A, or you can
+   press SHIFT and click multiple objects to select them.
+
+3. Use the right mouse button to click any object, point to Black And White on
+   the menu that appears, and click Black With White Fill.
+
+4. Repeat steps 1-3 for all objects or slides.
+
+STATUS
+======
+
+Microsoft has made an Add-in available to address this issue. For additional
+information, please see the following article in the Microsoft Knowledge Base:
+
+   Q85342 WT1249: Pure Black and White Printing Add-in
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft
+PowerPoint for Windows 95, version 7.0a.
+
+Additional query words: 7 7.00 power point powerpnt winppt macppt
+
+======================================================================
+Keywords          : kbprint kbusage kbdta kbPrinting kbbuglist
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0; Win95:7.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

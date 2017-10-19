@@ -1,0 +1,81 @@
+DOCUMENT:Q140190  23-JAN-2000  [pcmail]
+TITLE   :PC Win: CONVERT.EXE Not Converting Folders with Mac Attachment
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CONVERT.EXE utility dated 06/09/95, included with Microsoft Mail for PC
+Networks, does not reliably convert Macintosh user-created private postoffice
+folders containing large Macintosh attachments.
+
+CAUSE
+=====
+
+The Microsoft Mail for PC Networks, Macintosh workstation, under certain
+circumstances, will create erroneous Federal Information Processing Systems
+(FIPS) message attachment header fields in private folders. The fields will
+appear to be valid. However, they will not actually point to any valid
+attachment, and the data contained within the FIPS attachment field will be
+random. The attempt to read by CONVERT.EXE results in random data from within
+the folder being read as an attachment, or it attempts to read past the end of
+the folder itself.
+
+The size of the message folder may have some effect on the problem, where
+messages with smaller attachments appear to convert correctly. The CONVERT.EXE
+utility is a shell that calls MSSFS.DLL from the Windows client to do the actual
+conversion. The following error will occur during a failed conversion:
+
+   The folder conversion process was halted by an error while copying.
+   No folders or messages were converted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with CONVERT.EXE dated 06/09/95 and
+version 3.5 of MSSFS.DLL. This problem was corrected in version 3.5.4092 or
+later of MSSFS.DLL.
+
+To obtain this updated file, please contact your Microsoft Technical Account
+Manager (TAM) or Product Support Services (PSS).
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q121717 Err Msg: The Folder Conversion Process Was Halted...
+
+Additional query words: 3.50 hotfix post35fix 6/9/95
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320a kbMailPCN350
+Version           : WINDOWS:3.2a,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,58 @@
+DOCUMENT:Q118294  07-APR-2000  [foxpro]
+TITLE   :How To Create a List of Duplicate Records
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b, 2.6 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how to generate a list of duplicate records in a database so
+that you can visually determine what records need to be deleted.
+
+MORE INFORMATION
+================
+
+The following code generates a full list of the duplicate records in
+INVOICES.DBF and places the list in a cursor named XXX:
+
+      USE <FoxPro_directory>\tutorial\invoices
+      SELECT * FROM invoices WHERE cno IN ;
+         (SELECT cno FROM invoices GROUP BY cno HAVING COUNT(cno) > 1) ;
+         ORDER BY cno ;
+         INTO CURSOR xxx
+
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin identical exact same having clause
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro250cMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : MACINTOSH:2.5b,2.5c; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

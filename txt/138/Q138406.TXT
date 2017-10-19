@@ -1,0 +1,61 @@
+DOCUMENT:Q138406  08-AUG-2001  [winnt]
+TITLE   :Cannot Access Multiple Panasonic CD-5xx Series CD-ROM Drives
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure multiple Panasonic CD-5xx series CD-ROM drives using the
+Windows NT 3.51 MKECR5XX.SYS CD-ROM driver, you can only access one Panasonic
+CD-ROM drive.
+
+NOTE: The driver allows you to access up to four CD-ROM drives under Windows NT
+3.5.
+
+WORKAROUND
+==========
+
+To work around this problem, copy the MKECR5XX.SYS driver file from the \I386
+directory on the Windows NT 3.5 compact disc to the Windows NT 3.51
+%SystemRoot%\SYSTEM32\DRIVERS directory. Shut down and restart Windows NT 3.51
+and access the CD-ROM drives.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt video adapter
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

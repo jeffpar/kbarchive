@@ -1,0 +1,73 @@
+DOCUMENT:Q116249  17-DEC-2000  [win95x]
+TITLE   :Object Packager Font Is Unreadable in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade Windows 3.1, or Windows for Workgroups 3.1 or 3.11, to Windows
+95, the fonts in Object Packager may be unreadable.
+
+CAUSE
+=====
+
+Object Packager is not available in the floppy disk version of Windows 95. If
+you install the floppy disk version of Windows 95, Object Packager is retained
+after a successful upgrade. However, when you run this tool, the font for the
+following headings may be unreadable:
+
+ - Appearance
+
+ - Content
+
+ - Description
+
+ - Insert Icon
+
+ - Picture
+
+ - View
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the Windows 95 version of Object Packager.
+
+NOTE: Object Packager is included in the CD-ROM version of Windows 95, but not in
+the floppy disk version. If you are using the floppy disk version of Windows 95
+and you want to use Object Packager, please see the following article in the
+Microsoft Knowledge Base for information about the availability of Object
+Packager:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,81 @@
+DOCUMENT:Q228526  21-APR-1999  [homegame]
+TITLE   :Baseball 2000: Field Radar Is Not Displayed Correctly
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Baseball 2000, the field radar may not be displayed on
+the screen or may not be displayed correctly.
+
+CAUSE
+=====
+
+This behavior can occur if a video adapter based on the 3Dfx Voodoo or Voodoo2
+chipset is installed in your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest video driver for your
+video adapter from the following 3Dfx Web site:
+
+   http://www.3Dfx.com
+
+MORE INFORMATION
+================
+
+If a video adapter based on the Voodoo2 chipset is installed in your computer,
+you can also resolve this issue by disabling Gouraud Shading. To do this, follow
+these steps:
+
+1. Start Baseball 2000.
+
+2. On the Home Plate screen, click Options.
+
+3. Click the Graphics tab.
+
+4. Click to set the Gouraud Shading option to Off, and then click OK.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame bball2000 bball2k display card
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

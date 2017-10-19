@@ -1,0 +1,72 @@
+DOCUMENT:Q261891  16-NOV-2000  [exchange]
+TITLE   :XADM: Public Folder Size Displayed Incorr. If Larger Than 4.3 GB
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Public Folders that contain more than 4.3 gigabytes (GB) of content may report a
+value of zero in the Exchange Server Administrator program under Public Folder
+Resources.
+
+CAUSE
+=====
+
+This problem can occur because the data is calculated in the information store
+as a MAPI property called PR_MESSAGE_SIZE. This variable is defined as an
+unsigned long variable, which only holds 4.3 GB of content.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Microsoft Exchange 2000 Server. In Exchange
+2000, the PR_MESSAGE_SIZE variable has been changed to PR_MESSAGE_SIZE_EXTENDED,
+which is an 8-byte integer that holds as much as 16 terabytes of content.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The PR_MESSAGE_SIZE variable cannot be changed because the change can
+potentially destabilize the information store.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

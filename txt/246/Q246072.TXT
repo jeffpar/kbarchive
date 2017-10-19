@@ -1,0 +1,118 @@
+DOCUMENT:Q246072  18-FEB-2000  [iis]
+TITLE   :Certificate Authorities: Using Digital Certificates
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Recognized and trusted organizations, called Certificate Authorities (CA), issue
+certificates to individuals and corporations. These certificates contain not
+only details about the holder and their public key, but also the public key of
+the CA. Because reputable CAs apply rigorous checks to verify that applicants
+are actually who they claim to be, you can deem the information in the
+certificates they issue to be accurate. They also make available (through their
+Web site) their own public key certificate. This is their root certificate. Many
+browsers come with the popular CA root certificates already installed.
+
+MORE INFORMATION
+================
+
+Before the CA issues a user with their own personal certificate, it digitally
+signs the certificate using the CA's private key. This means that if you can
+decrypt this signature using the CA's public key, you know that it is a real
+valid certificate from that CA.
+
+Verifying Certificates
+
+One party can provide the other with their certificate, and at the same time send
+them an extract of it, which is encrypted with that party's private key. This
+extract is called the message digest. The recipient can then check that they are
+who they claim to be by decrypting the message digest using the public key in
+the certificate, and then verifying that the results agree with the certificate
+contents. If they do, the sender must know the private key that matches this
+certificate, and they must be the legitimate holder of the certificate. All of
+this happens automatically.
+
+If the real holder of the certificate has allowed someone else to discover their
+private key, then security is compromised. It is very important to keep your own
+private keys safe.
+
+Using Digital Certificates
+
+One way of easily adding security to your DNA applications is to use certificates
+in your communication with clients. This can be done in one of following ways:
+
+ - You can use digital certificates to authenticate visitors and to allow them
+   to authenticate your server, so that both sides are convinced that they
+   actually are connected to who they think they are.
+
+-or-
+
+ - You can also use digital certificates to encrypt the communication by using
+   the other party's public keys that they contain. However, asymmetric (public
+   key) encryption is slow. The best practice is to use a combination of
+   encryption methods to make it all work much more quickly.
+
+Server certificates and client certificates are fundamentally the same. IIS can
+use the certificates that are stored in the browser, which is one reason why you
+must install Internet Explorer 4.0 on your server when you install the Windows
+NT 4.0 Option Pack.
+
+Authentication and Windows NT Account Mapping
+
+You can configure IIS to accept certificates for a virtual site or directory, and
+even force IIS to require them. This is done on the Internet Server Manager
+(ISM) Directory Security tab by selecting Edit in the Secure Communications
+dialog box, and then choosing Key Manager. When IIS connects with a client that
+requires access to this directory, it sends the client its own (server)
+certificate together with a request for the client's certificate. The client
+checks the server's certificate against its copy of the appropriate CA root
+certificate, and then sends confirmation of success back to the server together
+with a copy of its client certificate. The server can then verify the client's
+certificate against its copy of the appropriate CA root certificate, and then
+when the result is verified, the server starts normal communication with the
+client.
+
+IIS can use the contents of the client's certificate to map that user to an
+existing Windows NT user account on the server. This can be done as a basic
+one-to-one mapping, where a separate account is required for each client. In the
+Secure Communication dialog box, click Edit, and then select the Enable Client
+Certificate Mapping option.
+
+You can also set up a many-to-one mapping on the Advanced tab of this dialog box.
+In this case, certain parts of the certificate are matched (rather like
+wildcards) to a single user account.
+
+Additional query words: certificate authority authentication
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

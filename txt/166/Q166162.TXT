@@ -1,0 +1,135 @@
+DOCUMENT:Q166162  13-MAY-1999  [exchange]
+TITLE   :XFOR: MACGATE Access Violation During Generation of Admin Msg
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbtshoot kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When processing a bad message, the Macintosh Gateway causes an access violation
+in Macgate.exe.
+
+CAUSE
+=====
+
+An improper argument is being passed to a heap deallocation routine.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange versions 4.0
+and 5.0.
+
+This problem has been corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 4.0. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+This problem was corrected in the latest Microsoft Exchange Server 5.0 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The Drwtsn32.log may look similar to:
+
+   State Dump for Thread Id 0x177
+
+   Application exception occurred:
+      App: macgate.DBG (pid=177)
+      When: 3/27/1997 @ 10:58:16.609
+      Exception number: c0000005 (access violation)
+
+   eax=ffffffff ebx=00000000 ecx=77f3be08 edx=00140548 esi=00140000
+   edi=00d2f690
+   eip=77f64d9a esp=00d2f63c ebp=00d2f654 iopl=0         nv up ei pl zr na
+   po nc
+   cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+   efl=00000246
+
+   function: RtlFreeHeap
+        77f64d75 85db             test    ebx,ebx
+        77f64d77 0f85a1000000     jne     RtlFreeHeap+0x1ec (77f64e1e)
+        77f64d7d ffb6b8040000     push    dword ptr [esi+0x4b8]
+   ds:001404b8=00140548
+        77f64d83 e8e8270000       call    RtlLeaveCriticalSection
+   (77f67570)
+        77f64d88 e991000000       jmp     RtlFreeHeap+0x1ec (77f64e1e)
+        77f64d8d 83ef18           sub     edi,0x18
+        77f64d90 85db             test    ebx,ebx
+        77f64d92 897df8           mov     [ebp-0x8],edi
+   ss:01c3e05a=????????
+        77f64d95 8b0f             mov     ecx,[edi]
+   ds:00d2f690=77f3be08
+        77f64d97 8b4704           mov     eax,[edi+0x4]
+   ds:01c3e096=????????
+   FAULT ->77f64d9a 8908             mov     [eax],ecx
+   ds:ffffffff=????????
+        77f64d9c 894104           mov     [ecx+0x4],eax
+   ds:78e4a80e=????????
+        77f64d9f 750b             jnz     RtlFreeHeap+0x17a (77f64dac)
+        77f64da1 ffb6b8040000     push    dword ptr [esi+0x4b8]
+   ds:001404b8=00140548
+        77f64da7 e8c4270000       call    RtlLeaveCriticalSection
+   (77f67570)
+        77f64dac 6800800000       push    0x8000
+        77f64db1 8d45fc           lea     eax,[ebp-0x4]
+   ss:01c3e05a=????????
+        77f64db4 50               push    eax
+        77f64db5 8d4df8           lea     ecx,[ebp-0x8]
+   ss:01c3e05a=????????
+        77f64db8 c745fc00000000   mov    dword ptr [ebp-0x4],0x0
+   ss:01c3e05a=????????
+        77f64dbf 51               push    ecx
+        77f64dc0 6aff             push    0xff
+
+   *----> Stack Back Trace <----*
+
+   FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+   00d2f654 77f02a81 00140000 00000000 00d2f6b0 77f13130 ntdll!RtlFreeHeap
+   00d2f698 00406715 00d2f6b0 77e77ea7 00000001 00143900 kernel32!LocalFree
+   00d2f710 00403181 80020bc2 80020bbe 00d2f748 00000000
+   macgate!GenerateAdminMsg
+   00d2f988 00403c70 00d2f9f0 00000000 00000001 0000ea60 macgate!LogBadFile
+   00d2fe70 00402852 00d2ffec 00000000 00000000 00000000
+   macgate!ProcessMactoPCMessages
+
+
+======================================================================
+Keywords          : kbtshoot kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : 4.0 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,84 @@
+DOCUMENT:Q182567  17-DEC-2000  [win95x]
+TITLE   :Fatal Exception in Msgsrv32.exe When You Quit Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you quit Windows 95, you may receive a fatal exception error message that
+references the Msgsrv32.exe file.
+
+CAUSE
+=====
+
+This behavior can occur if you have the Autodesk AutoCad Release 14 program
+installed on your computer, and the Graphics Display Interface (GDI) handle
+table has become damaged.
+
+RESOLUTION
+==========
+
+To work around this issue, remove the Microsoft Find Fast shortcut from the
+StartUp folder. To do so, use the following steps:
+
+1. Right-click the desktop, click New, and then click Folder.
+
+2. Type "Disabled StartUp shortcuts" (without the quotation marks), and then
+   press ENTER.
+
+3. Click Start, point to Find, and then click Files Or Folders.
+
+4. In the Named box, type "startup" (without the quotation marks), and then
+   click the Advanced tab.
+
+5. In the Of Type box, click Folder, and then click Find Now.
+
+6. Double-click the StartUp folder (after you verify it is in the Windows\Start
+   Menu\Programs folder), right click the Microsoft Find Fast shortcut, and then
+   click Cut.
+
+7. Quit the Find Files Or Folders tool, right-click the Disabled StartUp
+   Shortcuts folder, and then click Paste.
+
+8. Restart your computer.
+
+MORE INFORMATION
+================
+
+This behavior can occur if you use a large number of fonts in a document.
+
+For more information about this issue, contact Autodesk.
+
+Additional query words: corrupt corrupted
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

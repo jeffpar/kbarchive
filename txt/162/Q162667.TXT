@@ -1,0 +1,65 @@
+DOCUMENT:Q162667  17-DEC-2000  [win95x]
+TITLE   :System Files on Floppy Disk May Have Incorrect Date and Time
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Format command in either Windows Explorer or My Computer to
+create a bootable floppy disk, the date and time stamp of all system files on
+the floppy disk reflects the date the disk was formatted.
+
+RESOLUTION
+==========
+
+To work around this behavior, format the disk by typing
+
+   " format a: /s " (without the quotation marks)
+
+from a command prompt. If the disk is already formatted and you want to transfer
+the system files (make the disk bootable), type:
+
+   " sys a: " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+When the system files are created using Windows Explorer or My Computer, some
+anti-virus programs may generate a checksum warning when these files are
+encountered.
+
+If you use a floppy disk with the incorrect date and time stamps to make the hard
+disk bootable, the incorrect date and time stamps are reflected on the system
+files copied to the hard disk.
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

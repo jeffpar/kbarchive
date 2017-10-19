@@ -1,0 +1,62 @@
+DOCUMENT:Q142561  07-MAY-1999  [iis]
+TITLE   :IIS ErrMsg: Specified Driver Could Not Be Loaded
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error appears when you query an ODBC data source from Internet
+Information Server (IIS):
+
+   [State=IM003][Error=0][Microsoft][ODBC Driver Manager] Specified driver
+   could not be loaded
+
+CAUSE
+=====
+
+This error occurs because the ODBC driver (SQLSRV32.DLL in this case) specified
+by your DSN is not in the path which is listed in the ODBC.INI file.
+
+RESOLUTION
+==========
+
+Check the ODBC driver path specified by your DSN in the ODBC.INI file and
+correct it. Below is an excerpt from an ODBC.INI file:
+
+      [ODBC 32 bit Data Sources]
+      YourDSNname=SQL Server (32 bit)
+
+      [YourDSNname]
+      Driver32=D:\WINDOWS\SYSTEM\sqlsrv32.dll
+
+Additional query words: prodiis1
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

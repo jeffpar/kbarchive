@@ -1,0 +1,73 @@
+DOCUMENT:Q268263  13-JUN-2001  [iis]
+TITLE   :SGC Does Not Work When You Use Keys Longer than 1024 Bits
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbWin2000SP2Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+By using a keyset with 2048-bit keys and a SGC certificate, Windows 2000 Server
+does not allow clients to connect. A "Cannot Find Server" error message is
+returned to Internet Explorer when trying to connect. This is independent of
+whether low security (56-bit == rsabase) or the high security (128bit == rsaenh)
+is used.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Version          File name     Platform
+   ---------------------------------------
+   5.0.2195.2103    Rsabase.dll   x86
+   5.0.2195.2103    Rsaenh.dll    x86
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+version 5.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWin2000SP2Fix 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

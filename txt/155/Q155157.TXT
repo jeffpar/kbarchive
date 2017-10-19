@@ -1,0 +1,72 @@
+DOCUMENT:Q155157  13-FEB-2002  [winnt]
+TITLE   :Error Changing Password at Logon with Dial-Up Networking
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you are prompted to change your password while you are logging on using a
+Dial-Up Networking (DUN) connection, you receive the following error message
+after typing your new password:
+
+   The system could not log you on. Make sure your user name and domain are
+   correct, then type your password again. Letters in passwords must be typed
+   using the correct case. Make sure that Caps Lock is not accidentally on.
+
+If you click OK, you can log on using the new password.
+
+RESOLUTION
+==========
+
+Ignore the error message. After you click OK, log on with your user name and new
+password. Because you are still connected using a DUN connection, it is
+unnecessary to click the Logon Using Dial-Up Networking check box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT version
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This situation most often occurs when the "User must change password at next
+logon" option is enabled in your user account properties on the domain
+controller.
+
+Additional query words: remote access service dialup pdc bdc
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

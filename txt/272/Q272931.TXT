@@ -1,0 +1,85 @@
+DOCUMENT:Q272931  01-MAY-2001  [ssafe]
+TITLE   :PRB: Get on a project label returns the wrong version of a file
+PRODUCT :Microsoft SourceSafe
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbSSafe600 kbSSExplorer _IK kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Doing a "get" on a project label returns the wrong version of a file.
+
+CAUSE
+=====
+
+This behavior occurs when a file level label interferes with the project level
+label.
+
+RESOLUTION
+==========
+
+To resolve this problem, do one of the following:
+
+ - Manually get files at correct versions from history dialog.
+
+ - Find the incorrect version that is being returned and remove its file level
+   label from the history window.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a Visual SourceSafe database.
+
+2. Create a Project called LabelTest.
+
+3. Add a Text File called LabelTestFile.txt.
+
+4. Check out the file, make any change to it, and then check it back in.
+
+5. Label the root project "$/" INTEGRATION.
+
+6. Check out the file, make any change to it, and then check it back in.
+
+7. Label the file INTEGRATION.
+
+8. Check out the file, make any change to it, and then check it back in.
+
+9. Label the the project "$/Labeltest" INTEGRATION.
+
+From this point, no matter where you do a get on the INTEGRATION label, you
+always get the version that was labeled at the file level.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe600 kbSSExplorer _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

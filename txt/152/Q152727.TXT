@@ -1,0 +1,59 @@
+DOCUMENT:Q152727  28-MAR-1999  [exchange]
+TITLE   :XADM: Importing Blank Value Won't Modify Mailbox Value
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you import a comma delimited file into Microsoft Exchange Server by using
+the Microsoft Exchange Administrator program, and a blank value is included, the
+existing value on the General tab of the Mailbox properties page will not be
+replaced.
+
+MORE INFORMATION
+================
+
+If there is a value on the General tab, the comma comma value (,,) import will
+not change the value to blank. The same will occur if a comma space comma is
+used (, ,). To replace a value on the General tab of the Mailbox properties
+page, the imported file must contain a comma double-quote space double-quote
+comma value (," ",).
+
+For additional information on removing fields, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q152854 XADM: Using Bulk Import to Remove Data
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

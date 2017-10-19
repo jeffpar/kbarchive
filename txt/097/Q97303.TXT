@@ -1,0 +1,73 @@
+DOCUMENT:Q97303  25-DEC-1999  [win16sdk]
+TITLE   :ToolBar.exe Demonstrates Creating a Toolbar
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kb16bitonly kbCtrl kbToolbar kbGrpDSUser kbOSWin310
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ToolBar.exe builds a toolbar similar to the Microsoft Windows for Workgroups
+toolbar, which was implemented through the COMMCTRL dynamic-link library (DLL).
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   ToolBar.exe
+   (http://download.microsoft.com/download/platformsdk/sample75/3.1/W31/EN-US/ToolBar.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+A toolbar consists of a row of small, graphical buttons usually placed across the
+top of a window. It gives the user a fast and convenient alternative to using
+the window's menu to perform operations. The menu provides a more easily
+understood way to activate a function and includes a keyboard interface to the
+function. A toolbar, on the other hand, gives the experienced user a shortcut to
+operations, and thus improves the usability of an application.
+
+TOOLBAR is a companion sample application for the "Creating a Toolbar" technical
+article on the Microsoft Developer Network CD.
+
+TOOLBAR was built and tested under Microsoft Windows version 3.1. The sample also
+builds and runs under Microsoft C/C++ version 7.0 and Visual C++ version 1.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbCtrl kbToolbar kbGrpDSUser kbOSWin310 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

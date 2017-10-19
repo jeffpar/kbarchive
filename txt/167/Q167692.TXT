@@ -1,0 +1,93 @@
+DOCUMENT:Q167692  17-JUL-2001  [visualc]
+TITLE   :FIX: Assertion Line 257 in File Dlgprop.cpp
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbDlg kbMFC KbUIDesign kbVC500bug kbVS97sp1fix kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you display a property sheet using MFC (with DIALOG-type templates for the
+property pages) on a Windows 95 machine with ComCtl32 version 4.00 and
+MFC42X.dll version 4.21.7022, assertions occur on line 257 of DlgProp.cpp. An
+assertion is generated for each page that is present on the property sheet.
+
+CAUSE
+=====
+
+This behavior is due to a bug in the code that checks whether the template is
+DIALOGEX type.
+
+RESOLUTION
+==========
+
+The assertion can be safely ignored.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an Appwizard-generated application.
+
+2. Add code to display a Property Sheet with pages on it.
+
+3. Make sure the dialog templates for the pages are the DIALOG type.
+
+4. Compile the program and run it on a computer that has the versions of the
+   DLLs mentioned above in the SUMMARY section.
+
+5. Invoke the code to display the property sheet.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Sridhar S.
+Madhugiri, Microsoft Corporation
+
+
+Additional query words: assert property page sheet
+
+======================================================================
+Keywords          : kbDlg kbMFC KbUIDesign kbVC500bug kbVS97sp1fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

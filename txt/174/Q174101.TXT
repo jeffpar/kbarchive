@@ -1,0 +1,291 @@
+DOCUMENT:Q174101  20-DEC-2000  [exchange]
+TITLE   :XFOR: OV/VM Connector Installation Instruction(LinkAge)
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0 SP3,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0 SP3, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the requirements and steps needed to install the
+Microsoft OV/VM Connector, (formerly the LinkAge Exchange-OV/VM Connector).
+
+This is a summary of information in the LinkAge Message Exchange manual,
+Exchange-OfficeVision/VM Connector Configuration Guide, Version 3, Release 2,
+located on the LinkAge software CD.
+
+MORE INFORMATION
+================
+
+Windows NT Server Hardware Requirements for the OV/VM Connector
+---------------------------------------------------------------
+
+LinkAge recommends that the connector be installed on an Exchange Connector
+server separate from the Exchange Server user mailbox computer. If Exchange
+Server and the LinkAge connectors are on the same computer running Windows NT
+Server, a minimum of 64 MB of RAM is required with an additional 16 MB for each
+additional type of LinkAge connector (Lotus Notes, SNADS, and cc:Mail). The hard
+disk drive must be sized according to customer-specific Exchange Server
+requirements, with an additional 1 GB for the LinkAge server components,
+software, and data files.
+
+Windows NT Server Software Requirements for the OV/VM Connector
+---------------------------------------------------------------
+
+ - The version of Windows NT Server must be 3.51 Service Pack 4, 4.0 Service
+   Pack 2, or later.
+
+ - The version of Exchange Server must be 4.0 Service Pack 3, 5.0, or later.
+
+ - The version of SNA Server must be 2.11 Service Pack 2, 3.0, or later.
+
+ - The version of SQL Server must be 6.5 with SP2 or later, if you are using
+   Linkage Directory Exchange (LDE).
+
+LinkAge Administration Program Requirements
+-------------------------------------------
+
+The LinkAge Administration program can run on Windows 95, Windows NT Workstation,
+and Windows NT Server. The Windows NT Server or Workstation account under which
+the LinkAge Administrator runs must have rights to stop and start services on
+the server running the Linkage Message Exchange (LME) Gateway (that is, it must
+be a member of the Admin group on the local machine).
+
+Full access to the Linkage share created during the Setup process.
+
+A minimum of Admin privileges to the Exchange Server Organization, Site, and
+Configuration containers.
+
+OV/VM Software Requirements
+---------------------------
+
+ - IBM PROFS Version 2, Release 2, Modification Level 3, or IBM OfficeVision/VM
+   Release 2, Modification Level 0.
+
+ - RSCS Version 2.3.0 or 3.1.0 at PUT level 9202 or later.
+
+ - ACF/VTAM Version 3 for VM/SP or higher.
+
+ - SDLC, Ethernet, or Token Ring link to a properly configured SNA front- end
+   processor running a version of ACF/VTAM that is compatible with ACF/VTAM
+   version 3. You also have the option of connecting the Token Ring to an
+   appropriately configured 3174.
+
+Installation of the OV/VM Connector
+-----------------------------------
+
+There are two phases to installing the OV/VM Connector software. Phase One runs
+Setup from a CD-ROM or floppy disk to copy files to the Exchange Server computer
+where the connector will be installed. Phase Two runs the Setup program from the
+LinkAge Software V3.2 program group (the Setup.exe program copied to the server
+is different than the Setup.exe program on the CD) and configures the software
+on the server.
+
+Phase One:
+
+   Run Setup in the Products directory, then apply the patch. The default is to
+   install the LME component in a directory called Linkage at the root of the
+   drive and not in the Exchsrvr directory.
+
+   The Phase One Setup program creates a Linkage directory with 4 subdirectories
+   and 62 files. The subdirectories are a Log directory no files, the MSGS
+   directory with 4 files, an ODBC directory with 26 files, and the Setup
+   directory with 12 files.
+
+   NOTE: There is a patch folder included with your installation CD or floppy
+   disk. You must apply the patch files after completing the first phase of
+   Setup. To apply the patches after installing the LinkAge software, refer to
+   the instructions located in the file provided with the patch disk or folder
+   called Patches.txt. Linkage has provided a Patch.bat program that will do
+   this function.
+
+Phase Two:
+
+ - Installation of the PROFS Connector
+
+   1. Double-click the Setup icon in the LinkAge Software folder.
+
+   2. Read the message on the Welcome screen, and click Next. The Select
+      Installation Option window appears.
+
+   3. Click the Configure Connector option, and then click Next. The Select
+      Connector to Configure window appears.
+
+   4. Click the Exchange-OV/VM Connector option, then click Next. The Configure
+      LinkAge Connector window appears.
+
+   5. Update the names of the Server, Organization, and Site containers of the
+      Microsoft Exchange Server computer to which the Linkage Exchange- OV/VM
+      Connector will connect. (Note that you can have downstream Exchange Server
+      computers that will connect to OV/VM through this Exchange Server
+      computer. Only the server to which the LinkAge Connector is directly
+      connected needs to be identified to the Connector.)
+
+   6. Click Next. The Setup program validates the information you entered and
+      ensures that Microsoft Exchange Server is running. Then the Connector Node
+      ID window appears.
+
+   7. Enter the Connector's Node ID, used to generate OV/VM proxy addresses for
+      Exchange Server users. Consult the host administrator to learn the node ID
+      assigned to Exchange Server. (If you are using only the Conversation
+      Monitor System (CMS), then you can use the Network Job Entry (NJE) link ID
+      as the OV/VM node ID.) You are also asked whether you want the Setup
+      process to automatically generate OV/VM proxy addresses for Exchange
+      Server users. If you want proxy addresses to be created automatically
+      according to the default proxy address format, answer 'Yes' to this
+      prompt. If you want to assign proxy addresses annually, specify 'No.' See
+      "Updating the Exchange and OV/VM Directories Manually" on page 175 of the
+      manual for additional details.
+
+   8. Click Next. The Setup program copies a number of files to the Exchange
+      Server computer, updates the LinkAge configuration file (Linkage.ini), and
+      installs the following on the Exchange Server computer you specified in
+      Step 5:
+
+      Addressing Template
+
+   An extension that allows an individual OV/VM user to be added to the
+   recipient list of an Exchange Server message.
+
+      Proxy Address Generator
+
+   An extension that allows the generation of OV/VM proxy addresses for Exchange
+   Server users.
+
+      OV/VM Connector Property Page
+
+   A property page that allow you to configure the Exchange-OV/VM Connector.
+
+      Queue Viewer
+
+   An extension that provides a view of Exchange Server queues used by the
+   LinkAge Connector.
+
+Configuring Connector-Specific Settings in Exchange Server
+----------------------------------------------------------
+
+Use the Exchange Server Administrator program to configure settings on the
+Exchange-OV/VM Connector property page using the instructions below:
+
+1. In the Exchange Server Administrator program, click the Organization
+   container, click Site, and click Connections.
+
+2. Double-click the LinkAge Exchange-OV/VM Connector object The LinkAge
+   Exchange-OV/VM Connector Properties page appears.
+
+3. Click the Options tab and the Options property page appears. Update the
+   fields on the page, referring to the on-line help for field descriptions. You
+   can also click on the Message Tracking tab at this time to set message
+   tracking options. Click OK when you have completed the page.
+
+4. Select the Configuration container in the left pane of the window, then
+   double-click on the Site Addressing Options object in the right pane. Select
+   the Routing tab and verify that the entry for the OV/VM Connector appears in
+   the list. If the entry does not appear, click the Recalculate Routing button
+   to refresh the contents of the list. The entry for the connector must appear
+   on the list for mail to be sent from Exchange Server to OV/VM.
+
+Editing the Connector's OV/VM Directory File
+--------------------------------------------
+
+The LinkAge Connector uses node information for each OV/VM, CMS, and Exchange
+Server system to which the Connector is connected. This node information is
+defined in a file called Ovdfile.dat in the Linkage\Tables directory. It
+contains the VM node ID, OV/VM mailman ID (also known as the Distribution
+Manager ID), and location code of the OV/VM, CMS, and Exchange Server systems.
+The format of the file is as follows where each of the tokens is separated by
+one or more blanks. The following sample file is shipped with the LinkAge
+Connector:
+
+   OVCMNODE MAILMAN LOC (example of an entry for an OV/VM system)
+
+   CMSNODE CMS CMS (example of an entry for an CMS system)
+   EXCHNODE LOCAL LME (example of an entry for an exchange system)
+
+Create a new entry for each OV/VM, Exchange Server, and CMS system to which the
+Connector sends and from which the Connector receives mail, following the
+guidelines below:
+
+ - Identifying OV/VM Systems in the Directory File
+
+   The values for the node ID and the location code must match those specified in
+   columns 1-8 and 17-19, respectively, for the REMLOC definition for other
+   PROFS or OV/VM systems on your network. (Refer to Table 2-12 on page 26 of
+   the manual for further information.). The value used for the mailman ID (also
+   known as the Distribution Manager ID) should match the one used on the OV/VM
+   system.
+
+ - Identifying CMS Systems in the Directory File
+
+   For those VM systems that do not use PROFS or OV/VM, the value for the node ID
+   should be the VM node ID of the CMS system. Use the keyword, CMS, for both
+   the mailman ID and for the location code of each CMS node.
+
+ - Identifying Exchange Server Systems in the Directory File
+
+   The node ID and the location code of this line should identify your Exchange
+   Server node ID and location ID respectively. Consult the Host Administrator
+   for the node ID assigned to Exchange Server. Use the keyword, LOCAL, for the
+   mailman ID. In addition, all downstream Exchange Server sites (if they have
+   different node IDs in their PROFS proxy site addressing rule) should also be
+   registered in the Directory file. The LinkAge Exchange-OV/VM Connector is now
+   configured.
+
+Starting the Connector
+----------------------
+
+The Exchange-OV/VM Connector is registered as a Windows NT Server service during
+installation. To start the Connector, you simply start the service.
+
+1. On the Windows desktop, click Start, point to Settings, and then click
+   Control Panel.
+
+2. Double-click the Services icon. The Services window will open.
+
+3. Highlight the LinkAge Exchange-OV/VM Connector service and click Start.
+
+4. Click Close to close the Services window.
+
+You can also configure the Connector service to start automatically whenever the
+server is booted.
+
+1. On the Windows desktop, click Start, Settings, Control Panel.
+
+2. Double-click the Services icon. The Services window will open.
+
+3. Highlight the LinkAge Exchange-OV/VM Connector service and click Startup. Set
+   Startup Type to Automatic and click OK.
+
+4. Click Close to close the Services window.
+
+Additional query words: PROFS, LinkAge, IBM
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange400SP3
+Version           : :4.0 SP3,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

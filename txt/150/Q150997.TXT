@@ -1,0 +1,56 @@
+DOCUMENT:Q150997  13-OCT-1999  [msnetwork]
+TITLE   :Opening Multiple Online Viewer Titles May Cause Hang
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to open more than one online viewer (MediaView) title
+simultaneously, your computer may stop responding (hang).
+
+RESOLUTION
+==========
+
+To free your computer, press CTRL+ALT+DELETE, and then click End Task.
+
+To prevent the problem, open only one online viewer title at a time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in The Microsoft Network versions
+1.2 and 1.3. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN120
+Version           : WINDOWS:1.2,1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

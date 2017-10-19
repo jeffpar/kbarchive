@@ -1,0 +1,90 @@
+DOCUMENT:Q186513  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Commands: DISCONN
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DISCONN disconnects a session.
+
+Syntax
+------
+
+disconn [sessionname] [/server:servername] [/v] [/?]disconn [sessionID]
+[/server:servername] [/v] [/?]
+
+Parameters
+----------
+
+sessionname
+Identifies the session. The name was created by the system administrator when the
+session was configured.
+
+sessionID
+Specifies the ID of a session.
+
+/server:servername
+Specifies the Terminal Server. Otherwise, the current Terminal Server is used.
+
+/v (verbose)
+Displays information about the actions being performed.
+
+/? (help)
+Displays the syntax for the command and information about the command's options.
+
+DISCONN -- Additional Notes
+---------------------------
+
+If no ID or name for the session is specified, disconn uses the current session
+ID. If you specify the name of the session, it must identify an active session.
+
+Any processes associated with the session ID continue to run in the background.
+DISCONN is not the same as logoff, which terminates all processes associated
+with the session ID. Sessions running at the system console cannot be
+disconnected.
+
+DISCONN -- Examples
+-------------------
+
+To disconnect the current session, type:
+disconn
+
+To disconnect from a specific session, for example session 10, type:
+disconn 10
+
+To disconnect from the session TERM04, type:
+disconn TERM04
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

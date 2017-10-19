@@ -1,0 +1,66 @@
+DOCUMENT:Q140678  17-DEC-2000  [win95x]
+TITLE   :How Windows 95 Manages the Size of the Disk Cache
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how Windows 95 manages the size of the disk cache, and
+how you can change it.
+
+MORE INFORMATION
+================
+
+In Windows 95, the disk cache changes size dynamically in response to the
+current needs of the system. Windows 95 manages the size of the disk cache by
+computing the following values once each second:
+
+ - How fast the computer is running.
+
+ - How fast the computer would be running if the disk cache were larger.
+
+ - How fast the computer would be running if the disk cache were smaller.
+
+Windows 95 adjusts the size of the disk cache as needed to maintain the fastest
+computer speed. Windows 95 can adjust the size of the disk cache up to the
+maximum size established at system startup, or down to the minimum size
+established at system startup.
+
+For information about changing the maximum and minimum cache sizes in Windows 95,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q108079 32-Bit File Access Maximum Cache Size
+
+Additional query words: maxfilecache minfilecache
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

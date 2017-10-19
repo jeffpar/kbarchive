@@ -1,0 +1,80 @@
+DOCUMENT:Q182955  22-JUN-2001  [exchange]
+TITLE   :XWEB: Some MHTML and HTML Messages Are Not Displayed Correctly
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Messages may not display correctly when you use Microsoft Outlook Web Access
+(OWA) to open the following types of messages:
+
+ - Multipurpose Internet Mail Extensions Hypertext Markup Language (MHTML)
+   messages in which pictures or other objects have been inserted. The objects
+   are displayed as attachments instead of being displayed in the message.
+
+ - Hypertext Markup Language (HTML) messages that contain relative links. These
+   messages are not displayed correctly even if the BASE element is properly
+   defined in the HTML header.
+
+CAUSE
+=====
+
+These problems occur for the following reasons:
+
+ - MHTML messages that contain pictures or other inserted objects are not
+   displayed properly because the message is not correctly converted to Rich
+   Text Format (RTF).
+
+ - HTML messages that contain relative links are not displayed correctly because
+   the HTML header is not maintained when the message is opened in OWA. The HTML
+   header contains the BASE element, which is necessary for a relative link to
+   function properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information about obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

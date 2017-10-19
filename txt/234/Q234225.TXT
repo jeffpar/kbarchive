@@ -1,0 +1,76 @@
+DOCUMENT:Q234225  23-JUN-1999  [foxpro]
+TITLE   :HOWTO: Instantiate Multiple Copies of HTML Help in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbDocs kbvfp600 kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to create multiple instances of HTML Help using the interfaces
+exposed in the Foxhhelp COM object.
+
+MORE INFORMATION
+================
+
+The code below demonstrates how to instantiate multiple copies of HTML Help
+using Foxhhelp's FoxHelpDoActivateHelp method:
+
+   *-- Change the filename to suit your installation
+   lsHelpFile = "C:\Program Files\Microsoft "+ ;
+   "Visual Studio\MSDN98\98VS\1033\dsmsdn.chm"
+   oHelp1 = createobject("foxhhelp.foxhtmlhelp")
+   oHelp2 = createobject("foxhhelp.foxhtmlhelp")
+   oHelp1.foxhelpdoactivatehelp(lsHelpFile)
+   oHelp2.foxhelpdoactivatehelp(lsHelpFile)
+
+Other useful Foxhhelp methods include:
+
+ - FoxHelpDoMSDNCollection(String filename) - Instantiates an instance of HTML
+   using the collection in the supplied filename.
+
+ - FoxHelpDoActivateHelp(String filename) - Instantiates an instance of HTML
+   using the Help file in the supplied filename.
+
+ - FoxHelpDoContextHelp(String filename, Long dwData) - Instantiates an instance
+   of HTML using the Help file in the supplied filename and context ID.
+
+ - FoxHelpDoKeywordSearch(String filename, String keyword) - Instantiates an
+   instance of HTML using the Help file in the supplied filename and performs a
+   keyword search using the supplied keyword.
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Mike A. Stewart, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDocs kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

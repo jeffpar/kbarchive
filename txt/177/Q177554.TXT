@@ -1,0 +1,75 @@
+DOCUMENT:Q177554  11-DEC-1999  [foxpro]
+TITLE   :BUG: MousePointer Cannot Be Set to 99-Custom for Form Objects
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500 kbvfp500a
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MousePointer property cannot be set to "99-Custom" for any of the form
+objects under Traditional Chinese (TC) versions of Visual FoxPro 5.0x. However,
+if the form is being designed under the US version of Visual FoxPro 5.0x and the
+MousePointer property is set to "99-Custom", the form can be successfully
+executed under the Traditional Chinese version of Visual FoxPro.
+
+RESOLUTION
+==========
+
+Create the form with the United States (US) version of Visual FoxPro 5.0a and
+then move the form to the Traditional Chinese version of Visual FoxPro 5.0a to
+add or modify localized components such as captions and labels.
+
+NOTE: If you edit the MousePointer property, then the "99-Custom" setting is no
+longer available under the Traditional Chinese version of Visual FoxPro.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install the Traditional Chinese version of Visual FoxPro 5.0a on a computer
+   running Windows 95 or Windows NT.
+
+2. Create a form and view its MousePointer property.
+
+   NOTE: There is no selection for "99-Custom" in the property list.
+
+Additional query words: mousepointer
+
+======================================================================
+Keywords          : kbvfp kbvfp500 kbvfp500a 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

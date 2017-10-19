@@ -1,0 +1,109 @@
+DOCUMENT:Q200483  06-AUG-2002  [sms]
+TITLE   :SMS: Description of Remote Control Client Installation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbClient kbConfig _IK964 kbsms200 kbHelpDesk kbsmsUtil kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To be able to remotely control a computer, that computer must have the Systems
+Management Server (SMS) Remote Control agent installed. For the Remote Control
+agent to be installed, it must be enabled for the site from the SMS
+Administrator console. Then, the SMS Client software must be installed on the
+target computer.
+
+To install the Client software, you can use the Smsls.bat logon script, you can
+perform a manual installation by using Smsman.exe, or for Microsoft Windows
+NT-based computers you can use Windows NT Remote Client Install.
+
+MORE INFORMATION
+================
+
+If you have enabled Remote Control for the site and installed the SMS client
+components, you can install Remote Control on the client workstation. In some
+environments installation may take as long as 10 minutes. Because the actual
+installation of Remote Control is silent, use either Taskman.exe (Microsoft
+Windows 95/Microsoft Windows 98) or Task Manager (Windows NT) to note when the
+Remctrl.exe package runs. Remote Control is the last of the components to be
+installed on the client. After Remctrl.exe appears, it runs for 30-60 seconds
+and then disappears from the Process list. Remote Control is then installed on
+the client workstation, completing the client component installation.
+
+To confirm that the client has received and installed the Remote Control
+components, check for the existence of the Install.log file in the
+<Drive>:\<Windows_folder>\MS\SMS\Clicomp\RemCtrl folder. The
+existence of the Install.log file indicates that the client component
+installation was successful. You can also use this file to determine whether the
+Remote Control components were successfully installed.
+
+The Remctrl.log file in the <Drive>:\<Windows_folder>\MS\SMS\Logs
+folder is a more detailed log file that contains an "Install Complete" message.
+The existence of the Install.log file and the completion message at the bottom
+of the Remctrl.log file indicates a successful Remote Control installation.
+
+You should restart the workstation to correctly start the appropriate Remote
+Control Client agent. Windows 95, Windows 98, and Windows NT have low-level
+operating system-specific drivers that must be loaded for full Remote Control
+functionality to be present. Just starting the correct program on the client is
+not sufficient to start all of the Remote Control functions after the background
+installation of the components has taken place.
+
+In Windows 95 and Windows 98, a "DEVICE=" line is added in the [386 Enh] section
+of the System.ini file to load the Vuser.386 helper driver. This driver is not
+loaded until you restart the client computer. Without this driver, full-screen
+MS-DOS sessions and some keyboard stuffing does not operate correctly during a
+Remote Control session.
+
+In Windows NT, the KBStuff and RCHelp services must be loaded. Without these
+services, keyboard stuffing of ALT+key sequences does not work (for example,
+CTRL+ALT+DELETE, ALT+TAB, and so on).
+
+Although the installation of the Remote Control component is silent, full
+functionality on the client does not exist until you reboot the workstation.
+When you reboot the workstation, the Remote Control agent is started and begins
+"listening" through a specific protocol for a Remote Control request. This agent
+is the core of all the Remote Control functions.
+
+The SMS Remote Control agent on clients that are running Windows 95/Windows 98 is
+called Wuser32.exe. You can start it automatically after the Remote Control is
+installed by rebooting the computer, or you can start it manually by running
+Wuser32.exe in the <Windows_folder>\MS\SMS\CliComp\RemCtrl folder.
+
+The SMS Remote Control agent on Windows NT-based computers is also called
+Wuser32.exe. You can start or stop it by using the Services tool in Control
+Panel, or by using "net start" and "net stop" commands. When you use "net start"
+and "net stop" commands, you can specify either the full name (SMS Remote
+Control Agent) or Wuser32.exe.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig _IK964 kbsms200 kbHelpDesk kbsmsUtil kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : winnt:2.0,2.0 SP1,2.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

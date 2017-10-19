@@ -1,0 +1,51 @@
+DOCUMENT:Q83110  30-JUL-2001  [win3x]
+TITLE   :Audio CD Stops or Skips When Common Dialog Boxes Are Activated
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If the Microsoft Windows operating system version 3.1 common dialog boxes
+(COMMDLG.DLL) are used while playing audio CDs, the sound may phase in and out
+or skip.
+
+These problems have been traced to the ASWCDSNY.SYS driver. Replacing it with the
+TSLCDR.SYS driver corrects these problems.
+
+MORE INFORMATION
+================
+
+For example, if you choose Open from the File menu (which displays a common
+dialog box) while playing an audio CD, the CD will either stop playing or skip a
+track.
+
+Other random problems may occur while using the ASWCDSNY.SYS driver. Other
+drivers may display similar problems.
+
+KBCategory: kbmm kbdisplay kbsound kbenv
+KBSubcategory: win31 windrvr
+
+Additional query words: 3.10 3.1 CD-ROM cd rom COMMDLG
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q174051  09-AUG-2001  [winnt]
+TITLE   :DHCP Server Fails to Lease Addresses for New Scope
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It may be necessary to remove an existing scope from a Dynamic Host
+Configuration Protocol (DHCP) server and replace it with a new scope. For
+example, you may obtain a registered class of IP addresses for your network or
+you may be changing the class of IP addresses to accommodate more hosts or
+networks. This article discusses the recommended method of performing this task.
+
+MORE INFORMATION
+================
+
+When you need to change your DHCP scope range, it may be necessary to leave the
+server's original IP address bound to the network interface card (NIC) for
+connectivity reasons until all clients have obtained an IP address from the new
+scope. However, if you just create the new scope, you may notice that the DHCP
+server does not assign leases from the newly created scope(s) after binding
+additional IP address(es) to the NIC.
+
+This can happen because DHCP only binds to one IP address for each NIC and this
+IP address is the primary address found in TCP/IP properties. The additional
+addresses are found in the Advanced Properties of TCP/IP dialog box.
+
+To make this transition, you will need to do one of the following:
+
+ - Change the primary IP address on the NIC to an IP address that is a part of
+   the same network as the new scope.
+
+   NOTE: This is the only option if you have Windows NT Server version 3.51 or
+   Windows NT Server version 4.0 before Service Pack 2.
+
+   -or-
+
+ - Configure the server to use a Superscope that includes the old scope(s) and
+   the new scope(s).
+
+   For additional information, please see the following article in the Microsoft
+   Knowledge Base:
+
+   ARTICLE-ID: Q161571
+   TITLE : Using DHCP "Superscopes" to Serve Multiple Logical Subnets
+
+NOTE: If you cannot change the primary IP address of your NIC and you must use
+the second option above, leave the original scope active and exclude all the
+addresses within the scope.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

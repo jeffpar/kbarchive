@@ -1,0 +1,57 @@
+DOCUMENT:Q185999  07-MAY-2002  [homegame]
+TITLE   :FS98: Location of the Learjet 45 Spoiler Indicator
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbdocerr fs98 kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Flight Simulator 98, the Aircraft Handbook for the Learjet 45: Cockpit
+Orientation incorrectly states that the spoiler indicator is located in the
+lower-right corner of the instrument panel.
+
+To display the Learjet 45 spoiler indicator, click Instrument Panel on the Views
+menu, and then click Thrust Levers. The spoiler indicator is located on the
+Thrust Levers instrument panel displayed in the upper-left corner of the screen.
+To close the instrument panel, click Instrument Panel on the Views menu, and
+then click Thrust Levers.
+
+MORE INFORMATION
+================
+
+The Thrust Levers instrument panel contains the flap, spoiler, and thrust
+indicator levers. To extend or retract the spoilers, press the FORWARD SLASH (/)
+key.
+
+Additional query words: fs98 flightsim fltsim flt sim brakes
+
+======================================================================
+Keywords          : kbui kbdocerr fs98 kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

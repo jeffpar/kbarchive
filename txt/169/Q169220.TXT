@@ -1,0 +1,66 @@
+DOCUMENT:Q169220  20-FEB-2002  [homegame]
+TITLE   :Hellbender Trial Version Is Available
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The trial version of Microsoft Hellbender for Windows, version 1.0 is now
+available for free download. The file is approximately 11 MB in size.
+
+There is also an update to the trial version, which can be downloaded separately.
+The update file is approximately 7 MB in size.
+
+TO OBTAIN THESE FILES
+---------------------
+
+You can find Heltrial.exe and Upgrade.exe, both self-extracting files, on the
+following services:
+
+ - Microsoft World Wide Web site on the Internet
+
+   http://www.microsoft.com/games/hellbender
+
+   Click the Demo Downloads icon. Click the Hellbender Trial Version link to
+   download the file.
+
+ - Internet (anonymous FTP)
+
+   FTP://FTP.microsoft.com
+   Change to the Deskapps/Games/Public/Hellbender directory
+   Get HELTRIAL.EXE - for the trial version
+   Get UPGRADE.EXE - for the trial version upgrade
+
+Additional query words: 1.00 hell-bender hell bender hellbender bion scum
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbGamesSearch kbZNotKeyword kbHellBender
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

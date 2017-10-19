@@ -1,0 +1,65 @@
+DOCUMENT:Q152951  30-MAR-1999  [exchange]
+TITLE   :XCON: MTA Heap Corruption With Misconfigured TP4/TCP Connection
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) may experience heap
+corruption if there is a misconfigured incoming TCP/IP or TP4 connection. The
+heap corruption will exhibit itself as Dr. Watson errors in the MTA.
+
+CAUSE
+=====
+
+Microsoft Exchange Server is leaking buffers from SBPDSACP in the WinSock code.
+WINSOCK DMOD (TP4/TCP) creates too many threads when many connections are
+started and stopped. Threads of different types (TP4/TCP) can be created on the
+same Thread Control Block (CB) causing two WINSOCK threads to update the
+pointers in a select call simultaneously. This can cause heap corruption.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: Dr. Watson Crash
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

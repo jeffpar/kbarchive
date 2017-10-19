@@ -1,0 +1,89 @@
+DOCUMENT:Q286433  15-AUG-2002  [iis]
+TITLE   :ASP Performance Monitor Counters Fail from Terminal Session
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbCOMIS kbWin2000sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Performance Monitor to monitor the performance and errors of Active
+Server Pages (ASP) through a Terminal Server session, every counter shows zero
+for statistics.
+
+CAUSE
+=====
+
+The ASP performance counters cannot work across the kernel object namespace
+boundaries that are required for this functionality in a Terminal Server
+platform.
+
+WORKAROUND
+==========
+
+The counters function correctly from the console, or when you connect remotely
+from Performance Monitor.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        File Name     Version      
+   ---------------------------------------
+   2/19/2001   Asp.dll       5.0.2195.3269
+   2/19/2001   Aspperf.dll   5.0.2195.3269
+   2/19/2001   Infoadmn.dll  5.0.2195.3243
+   2/19/2001   Infocomm.dll  5.0.2195.3243
+   1/15/2001   Spmsg.dll     5.0.2195.3140
+   2/19/2001   W3ctrs.dll    5.0.2195.2714
+   2/19/2001   Isatq.dll     5.0.2195.3243
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 3.
+
+Additional query words: kbIISCom
+
+======================================================================
+Keywords          : kbCOMIS kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

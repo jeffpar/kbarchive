@@ -1,0 +1,58 @@
+DOCUMENT:Q94182  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Information Stored in Schedule File Exceeds Limit Set
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+When version 1.0 of Microsoft Schedule+ for Windows informs you that older
+entries have exceeded the "archival period," it is a reminder to archive
+old information in the Schedule+ calendar file when the calendar contains
+information that is six months old (the default). You should keep your
+calendar file as small as possible by keeping current information in the
+calendar file and archiving the older information.
+
+You can change the 6-month default to anywhere from 1 to 99 months by
+starting the Schedule+ Administrator program and following this procedure:
+
+1. From the Administration menu, choose Schedule Storage.
+
+2. Type the number of months (1 to 99) you want to pass before Schedule+ reminds
+   you to archive the information in your calendar.
+
+3. Press the ENTER key.
+
+To archive old information, create an archive file by choosing Create
+Archive from the File menu of Schedule+. To view the information in an
+archive file, choose Open Archive from the File menu. Once the archive file
+is open, it behaves as if it were another calendar file.
+
+Additional query words: schedule plus 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

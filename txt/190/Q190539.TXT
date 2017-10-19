@@ -1,0 +1,130 @@
+DOCUMENT:Q190539  11-DEC-1999  [foxpro]
+TITLE   :HOWTO: Make Move or Resize Call Form's THIS_ACCESS Method
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro 6.0 gives you the ability to attach events to properties. This is
+accomplished using Access and Assign methods. These events will fire when a
+property value is queried (that is, accessed) or set to a value (that is,
+assigned). The THIS_ACCESS method is a special case that is fired whenever any
+property of an object is queried or set. Normally, this method will be fired
+only when properties are programmatically set or queried. This article describes
+how to ensure the THIS_ACCESS method is called even if a property is implicitly
+changed. An example of when you may want to do this would be when a form is
+moved the form's Top property is changed.
+
+MORE INFORMATION
+================
+
+This example demonstrates how THIS_ACCESS is not called by properties that are
+implicitly changed.
+
+1. Run the following code from a program (.prg) file:
+
+         PUBLIC oform1
+
+         oform1=NEWOBJECT("form1")
+         oform1.SHOW
+         RETURN
+
+         DEFINE CLASS form1 AS FORM
+
+            DOCREATE = .T.
+            CAPTION = "Form1"
+            NAME = "Form1"
+
+            PROCEDURE this_access
+               LPARAMETERS cMemberName
+               ? cMemberName, TTOC(DATETIME())
+               RETURN THIS
+            ENDPROC
+
+        ENDDEFINE
+
+2. Resize or move the form with the mouse. Note that no output is echoed to the
+   form.
+
+This example shows how to make THIS_ACCESS be called when moving or resizing a
+form by adding code to the form's Moved and Resize methods.
+
+1. Run the following code from a program (.prg) file. Note the code added to the
+   Moved and Resize methods.
+
+         PUBLIC oform1
+
+         oform1=NEWOBJECT("form1")
+         oform1.SHOW
+         RETURN
+
+         DEFINE CLASS form1 AS FORM
+
+            AUTOCENTER = .T.
+            CAPTION = "Form1"
+            NAME = "Form1"
+
+            PROCEDURE this_access
+               LPARAMETERS cMemberName
+               ? cMemberName, TTOC(DATETIME())
+               RETURN THIS
+            ENDPROC
+
+            PROC MOVED
+               = THIS.TOP
+               = THIS.LEFT
+               ?
+            ENDPROC
+
+            PROC RESIZE
+               = THIS.WIDTH
+               = THIS.HEIGHT
+               ?
+            ENDPROC
+
+         ENDDEFINE
+
+2. Resize or move the form with the mouse. Note that the properties that are
+   queried get echoed to the form.
+
+REFERENCES
+==========
+
+Visual FoxPro Help file, "Access and Assign Methods" topic.
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp600 kbOOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

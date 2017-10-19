@@ -1,0 +1,91 @@
+DOCUMENT:Q200362  14-NOV-2000  [word97]
+TITLE   :WD97: Bullet/Number in List Reappears When Opened in Word 6.0/95
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbconversion word8 word97 kbnumbering
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Bulleted or numbered lines of text in a Word 97 document may appear incorrectly
+when the document is opened in Word 6.0/95. Specifically, lines in the list in
+which the bullet or number was removed appear as bulleted or numbered again.
+
+This problem occurs when all of the following are true:
+
+ - The list is formatted with a custom style.
+
+   -and-
+
+ - The custom style's definition contains a Bulleted, Numbered, or Outline
+   Numbered format.
+
+   -and-
+
+ - The bullet or number was removed from blank lines in the Word 97 document.
+
+   -and-
+
+ - The document is saved in Word 97 document format.
+
+   -and-
+
+ - You open the Word 97 document directly in the earlier version of Word by
+   using the Word 97/2000 text converter.
+
+
+WORKAROUND
+==========
+
+To work around this problem, save your Word 97 document in the Word 6.0/95 file
+format. To do this, follow these steps:
+
+1. In Microsoft Word 97, open the file that contains the custom style numbered
+   list.
+
+2. On the File menu, click Save As.
+
+3. In the Save As dialog box, change the "Save as type" box to Word 6.0/95, and
+   then click Save.
+
+   NOTE: You may want to type a new file name in the "File name" box, so that
+   your original Word 97 document is not overwritten with the Word 6.0/95 file
+   format.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: Numbering numbers different differences added add now present direct formatting removal remove format change changed convert converted 7.0
+
+======================================================================
+Keywords          : kbdta kbconversion word8 word97 kbnumbering 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

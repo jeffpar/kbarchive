@@ -1,0 +1,52 @@
+DOCUMENT:Q124526  11-DEC-2001  [ssafe]
+TITLE   :HOWTO: Use the Windows Command Line
+PRODUCT :Microsoft SourceSafe
+PROD/VER:3.0X
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows Command Line allows Windows programs to make calls from macros to
+SourceSafe. All output, however, will be generated in Windows' output windows,
+instead of MS-DOS sessions.
+
+SSWCL.EXE is the Windows Command Line executable. Use it as you use SS.EXE on the
+other SourceSafe platforms. For example:
+
+   SSWCL create $/myproject
+
+NOTE: It cannot be executed from a MS-DOS session.
+
+Refer to the Microsoft Command Line Reference more information on SourceSafe
+command and command line syntax.
+
+Additional query words: 3.01 3.02 3.03 3.04
+
+======================================================================
+Keywords          :  
+Version           : 3.0X
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

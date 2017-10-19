@@ -1,0 +1,61 @@
+DOCUMENT:Q78679  22-NOV-1999  [msdos]
+TITLE   :WordPerfect Office TSRs Don't Function Correctly
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WordPerfect Office versions 3.0 and 3.01 include terminate-and-stay- resident
+programs (TSRs) that run in graphics mode. These programs may not execute
+properly within MS-DOS Shell if Shell is also operated in graphics mode.
+
+To avoid this problem, run Shell in text mode by using the /T switch, as
+follows:
+
+   dosshell /t
+
+MORE INFORMATION
+================
+
+Microsoft Windows 3.0 and other programs that use graphic screen drawings may
+also prevent WordPerfect Office TSR programs from functioning properly.
+
+The WordPerfect utilities include CL.EXE, a calendar utility, and NOTIFY.EXE, a
+notification utility.
+
+The WordPerfect products included here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 5.00 3.00 3.10 dosshell word perfect 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,72 @@
+DOCUMENT:Q198814  06-AUG-2002  [exchange]
+TITLE   :XADM: Recovering a KM Server after a complete Exchange Rebuild
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you completely reinstall Exchange Server 5.5, you will have to reinstall Key
+Management Server as well. The following article outlines the steps necessary to
+recover Key Management Server to a computer with the same name.
+
+You need the following before you can successfully restore Key Management
+Server:
+
+ - A backup of the Kmsdata directory from the original Key Management Server.
+
+ - The alpha string that you input when you start the Key Management Server
+   services, or the start up disk.
+
+1. Reinstall Exchange Server, any service packs, and Key Management Server. It
+   will create a new alpha string for you to write down or store on disk.
+
+2. After installation, stop the Exchange Key Management Server service.
+
+3. Go to the <path>\Exchsrvr\Kmsdata directory, and delete all files.
+
+4. Restore the Kmsdata directory from backup.
+
+5. Go to Services, and select the Microsoft Exchange Key Management Server
+   service.
+
+6. On the start up parameters, type in the alpha string, or insert the start up
+   disk from the old (original) Key Management Server.
+
+7. Start the Microsoft Key Management Server service.
+
+At this point, you have recovered and successfully reinstalled the original Key
+Management Server and all of its data.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,62 @@
+DOCUMENT:Q69895  06-NOV-1999  [win16sdk]
+TITLE   :PRB: Activating Full-Screen DOS App from Icon in Enhanced Mode
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Windows enhanced mode, when an application calls the OpenIcon or
+ShowWindows functions to activate a full-screen MS-DOS application from an icon,
+the activation fails. These functions perform as documented in real and standard
+mode.
+
+RESOLUTION
+==========
+
+To avoid this problem, simulate the result of an ALT+TAB key combination on the
+MS-DOS application icon: Send a WM_ACTIVATE message to the MS-DOS application,
+and then specify its handle in a call to ShowWindow function. For example:
+
+      SendMessage(hDOSApp, WM_ACTIVATE, 1, MAKELONG(hDOSApp, TRUE));
+      ShowWindow(hDOSApp, SW_SHOWNORMAL);
+
+When the application sends the WM_ACTIVATE message, wParam is set to 1 because
+the application is being invoked by simulating the keyboard. The high-order word
+of lParam is set to TRUE (non-zero) because the MS-DOS application is
+represented by an icon.
+
+The method works in all three Windows modes for windowed and full- screen MS-DOS
+applications.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

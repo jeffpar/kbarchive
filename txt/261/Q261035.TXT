@@ -1,0 +1,72 @@
+DOCUMENT:Q261035  12-JUN-2001  [homegame]
+TITLE   :MCM2: Textures Become Distorted After Text Is Displayed
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Motocross Madness 2, textures in the game may become
+distorted after text is displayed on the screen.
+
+This symptom can occur after the user interface screens are displayed or while
+you are racing.
+
+CAUSE
+=====
+
+This behavior can occur if a Creative Labs 3D Blaster RIVA TNT2 Ultra video
+adapter is installed in your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest version of the video
+driver for your video adapter from the following Creative Labs Web site:
+
+   http://www.creativelabs.com/
+
+MORE INFORMATION
+================
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 2.00 msgame mcm2 motorcycle corrupt display menu fonts
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

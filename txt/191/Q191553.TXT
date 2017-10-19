@@ -1,0 +1,107 @@
+DOCUMENT:Q191553  21-MAR-1999  [homegame]
+TITLE   :Urban Assault Hangs After Introductory Movie Is Played
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsound kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Urban Assault, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Urban Assault, the game may stop responding
+(hang) after the introductory movie is played.
+
+You may also receive an error message similar to the following:
+
+   The instruction at 0423dl0x001 reference memory at 0x00000017 memory could
+   not be read.
+
+CAUSE
+=====
+
+This behavior can occur if you do not have a sound card or if the sound card
+installed in your computer is disabled. Urban Assault requires that a
+Windows-compatible sound card be installed in your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, verify that your sound card is installed and functioning
+properly. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Device Manager tab.
+
+4. Double-click Sound, Video And Game Controllers to expand the branch.
+
+If you do not see a Sound, Video And Game Controllers entry, or if no sound card
+is listed under this entry, verify that a sound card is installed in your
+computer. If a sound card is installed in the computer, contact the manufacturer
+of the computer or the sound card and request help reinstalling the sound card
+drivers.
+
+If a sound card is listed under the Sound, Video And Game Controllers branch, but
+you see a red X beside the sound card, follow these steps:
+
+1. Click the sound card, and then click Properties.
+
+2. On the General tab, click to select the Original Configuration check box. If
+   you do not see an Original Configuration check box, click to clear the
+   Disable In This Hardware Profile check box.
+
+   NOTE: If you are using Microsoft Windows 98, click Enable Device.
+
+3. Click OK.
+
+4. Repeat steps 1-3 for all other sound cards listed with a red X.
+
+5. Click Close, and then close Control Panel.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Urban Assault, version
+1.0.
+
+MORE INFORMATION
+================
+
+If this issue remains unresolved, please see the following article in the
+Microsoft Knowledge Base for additional information about how to troubleshoot
+problems with your sound card:
+
+   Q178637 Using Game Compatible Device to Troubleshoot Sound Problems
+
+Additional query words: 1.00 msgame ua requires sysreqs kbfaq
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsound kbimu msgame kbfaq
+Technology        : kbGamesSearch kbUrbanAssault
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q127857  24-JUL-2001  [sms]
+TITLE   :Required Number of SQL Connections Needed for SMS
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbdocerr kbsmsAdmin smsadmin smsdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Systems Management Server Administrator's Guide incorrectly
+specifies the recommended number of SQL server connections needed for setting up
+SMS on page 55:
+
+   Make sure that the SQL Server has a maximum user connection
+   setting that has at least 5 connections for use by SMS. Ten
+   connections are recommended.
+
+If you attempt to setup SMS version 1.0 with less than 20 connections, then the
+following error appears during Setup:
+
+   Not enough SQL connections are available for correct execution of SMS. At
+   least 20 connections are recommended.
+
+If you choose OK, the following error appears:
+
+   Error: Number of requested connections must be >= 20.
+
+RESOLUTION
+==========
+
+Increase the number of connections available to SQL to 20 or greater.
+
+NOTE: Systems Management Server version 1.0 and 1.1 require SQL Server, not SQL
+Workstation. SQL Server allows more than 20 connections, SQL Workstation allows
+a maximum of 15.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server versions 1.0 and 1.1. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbdocerr kbsmsAdmin smsadmin smsdocerr 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

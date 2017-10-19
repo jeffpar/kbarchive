@@ -1,0 +1,63 @@
+DOCUMENT:Q156144  08-NOV-2001  [homegame]
+TITLE   :Full Court Press: Enhancing Performance
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbhowto kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can enhance the performance of both single and multiplayer games by doing
+any or all of the following:
+
+ - Close any open applications.
+
+ - Be sure that you are not logged on to a network.
+
+ - Change the game resolution to 640 x 480.
+
+ - If you have programs that generate pre-scheduled notifications, turn them off
+   before playing Full Court Press in full-screen mode.
+
+ - Reduce the detail levels in the Performance, Display, and Sound dialog boxes.
+   When you reduce the detail levels, you also affect the appearance of Full
+   Court Press. Make these changes only if performance is your primary concern.
+
+For more information about improving performance, click Help in Full Court Press,
+and then click Q&A.
+
+Additional query words: 1.00 improve improving perform increase speed access run faster
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbNBAFullCourtPress
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

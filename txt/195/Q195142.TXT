@@ -1,0 +1,72 @@
+DOCUMENT:Q195142  14-NOV-2000  [word97]
+TITLE   :WD97: Revision Colors May Change Unexpectedly
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbproof word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The color of your revision marks appears incorrect when you open your document.
+
+NOTE: To turn on revision marks, on the Tools menu, point to Track Changes, and
+then click Highlight Changes. Click to select the Track changes while editing
+check box.
+
+CAUSE
+=====
+
+This behavior is by design in Microsoft Word. Word does not assign a specific
+color to a user. The goal is to make sure that the revisions of multiple authors
+can be distinguished from each other. The colors may change even if you close
+and reopen the document on the same computer.
+
+In addition, Word does not save a specific color with the document if the color
+is changed by using the options for the Track Changes feature. For example, if
+you click Options in the Highlight Changes dialog box to set a particular color,
+that color is not maintained when the document is opened on another computer. To
+see the same color, the color would have to be set on the computer on which the
+document is opened, as well.
+
+NOTE: It is not possible to set the color by using Word Viewer.
+
+
+MORE INFORMATION
+================
+
+A document may travel from an author whose revisions colors are blue to another
+author whose revisions colors are also blue. Word cannot distinguish between
+those two authors unless it applies a different color for each user.
+
+Additional query words: user info revise revised
+
+======================================================================
+Keywords          : kbdta kbproof word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

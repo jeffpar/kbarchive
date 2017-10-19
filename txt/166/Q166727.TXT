@@ -1,0 +1,72 @@
+DOCUMENT:Q166727  25-FEB-2002  [winnt]
+TITLE   :McAfee NetShield or VirusScan May Cause Hangs with SP3
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP3
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 SP3 
+ - Microsoft Windows NT Server version 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience STOP 0x0000001E, STOP 0x0000000A bugchecks, lockups, or other
+random buchecks when you run McAfee NetShield or VirusScan on Windows NT 4.0
+Service Pack 3.
+
+CAUSE
+=====
+
+These problems occur when the filter driver (Mcfilter.sys) from these McAfee
+applications corrupts memory within Windows NT kernel's address space.
+
+
+RESOLUTION
+==========
+
+This problem is fixed in McAfee version 3.02 and later. Please contact McAfee
+Technical support for the updated version.
+
+
+MORE INFORMATION
+================
+
+For information about similar issues, please see the following article in the
+Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q178413
+   TITLE : Windows NT System May Hang When Running a Filter Driver
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 4.00 sp3 prodnt
+
+======================================================================
+Keywords          : kb3rdparty kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp3 kbWinNTSsearch kbWinNTS400sp3 kbWinNTS400search
+Version           : :4.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

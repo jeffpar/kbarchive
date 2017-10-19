@@ -1,0 +1,88 @@
+DOCUMENT:Q261042  25-JUL-2001  [homegame]
+TITLE   :MCM2: Textures and Colors on the Ground Are Distorted
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbgraphic kbhw kbimu kbHardware kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Motocross Madness 2, textures and colors on the ground
+may be distorted.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - A Creative Labs 3D Blaster Savage 4 video adapter is installed in your
+   computer.
+
+ - The video adapter is configured to use a screen resolution higher than 1280 X
+   1024 in the game.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure your video adapter to use a lower display
+resolution in the game or download and install the latest 3D Blaster Savage 4
+video driver from the following Creative Labs Web site:
+
+   http://www.creativelabs.com
+
+To configure your video adapter to use a lower screen resolution in the game:
+
+1. Start Motocross Madness 2, and then click Options ([GRAPHIC:the three
+   gears]).
+
+2. Click the Graphics tab.
+
+3. In the Display Resolution box, click a resolution that is lower than 1600 X
+   1200.
+
+4. Click Back ([GRAPHIC:the pointing hand]) until you return to the startup
+   screen.
+
+MORE INFORMATION
+================
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 2.00 msgame mcm2 corrupt graphics color palette kbgraphx
+
+======================================================================
+Keywords          : kb3rdparty kbgraphic kbhw kbimu kbHardware kbgraphxlinkcritical 
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

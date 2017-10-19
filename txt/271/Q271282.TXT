@@ -1,0 +1,56 @@
+DOCUMENT:Q271282  31-JUL-2001  [homemm]
+TITLE   :Microsoft Reader: Text Is Displayed on a Faint Blue Background
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.5
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader, version 1.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Text in the Microsoft Reader window may be displayed on a faint blue background.
+
+CAUSE
+=====
+
+This behavior can occur if an Intergraph Intense 3D 2200 video adapter is
+installed in your computer.
+
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msreader reader ebook display green
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu 
+Technology        : kbReaderSearch kbReader150
+Version           : :1.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

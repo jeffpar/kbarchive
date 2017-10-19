@@ -1,0 +1,64 @@
+DOCUMENT:Q133464  11-DEC-1999  [homemm]
+TITLE   :Mac Wine Guide: Movie Does Not Restart
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Wine Guide for the Macintosh, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you pause a video in Wine Guide 2.0 by using the Command+Period, the movie
+will pause and when you click the play button, the movie will proceed as it
+should. However, if you click Command+Period again the movie will not pause.
+
+- or -
+
+When you pause a video in Wine Guide 1.0 by using the Command+Period shortcut key
+combination, you are unable to restart the video.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Wine Guide version 2.0 and 1.0
+for the Macintosh. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To pause a movie clip, press the Pause button. To replay the movie press the
+Play button.
+
+To stop the movie, click the Close box in the upper left corner of the dialog
+box. When you want to restart the video, return to the video and play it again.
+
+Additional query words: mac 2.00 multi media multimedia mmtitles kbmm
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbWine100Mac kbWine200Mac
+Version           : MACINTOSH:1.0,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

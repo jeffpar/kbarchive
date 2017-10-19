@@ -1,0 +1,77 @@
+DOCUMENT:Q196666  08-MAY-2002  [winnt]
+TITLE   :Users Can See Administrator Auto-Created Client Printers in Apps
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:_IK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use common applications such as Microsoft Word or Excel, a user's list
+of available printers includes all of the following when only printers from the
+first two categories should be shown:
+
+ - The user's auto-created client printers
+
+ - Printers designated for the user by the administrator
+
+ - The administrator's auto-created printers
+
+CAUSE
+=====
+
+This problem occurs because of a problem in the SetPrinter() WIN32 API, which
+causes the security descriptor on the printers created by the administrator to
+be set incorrectly.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT Server
+4.0, Terminal Server Edition. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server 4.0, Terminal
+Server Edition. This problem was first corrected in Windows NT Server 4.0,
+Terminal Server Edition Service Pack 4.
+
+Additional query words: 4.00 wts tse
+
+======================================================================
+Keywords          : _IK 
+Technology        : kbWinNTsearch kbWinNTSsearch kbNTTermServSearch
+Version           : winnt:
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

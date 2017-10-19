@@ -1,0 +1,66 @@
+DOCUMENT:Q118996  26-MAY-2001  [homekids]
+TITLE   :Encarta 1994 Err Msg: Encarta Must Be Loaded To Use Dictionary!
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1994 edition,1995 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to access the Encarta dictionary from within Encarta, you may
+receive the error message:
+
+   Encarta Must Be Loaded To Use Dictionary!
+
+Terminate-and-stay-resident (TSR) programs that modify the title bar of Encarta
+may cause this problem. Typically, these TSRs add information to the title bar,
+such as the current time or the amount of available system resources.
+
+RESOLUTION
+==========
+
+Do not load these TSR programs using Encarta. These types of TSRs will normally
+load either through the RUN= or LOAD= lines in the WIN.INI file, or through the
+Startup group in Windows.
+
+To disable TSRs in the WIN.INI file:
+
+1. Open the WIN.INI file in a text editor such as Notepad.
+
+2. If anything is listed on the LOAD= or RUN= lines, place a ";" (a semicolon
+   without the quotation marks) before the lines. This prevents the information
+   on these lines from loading.
+
+
+Additional query words: dict.exe Encart94 VB multi media multimedia multi-media terminate and stay resident
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac
+Version           : :1994 edition,1995 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

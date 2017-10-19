@@ -1,0 +1,59 @@
+DOCUMENT:Q67063  05-NOV-1999  [win16sdk]
+TITLE   :Inserting Right Justified Text in a Menu in Windows
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "\a" character used with the InsertMenu() function is NOT considered to be a
+C language "\a", but is instead considered to be a resource compiler "\a". This
+code in the resource compiler is translated to a backspace character. Thus, an
+"\a" used in the resource compiler is really considered to be a "\b" or an
+"\x08" within the C Language.
+
+When an "\x08" (backspace) is used, the menu item behaves as expected. However,
+you must place at least one character, which can be a space, before the "\b".
+For example:
+
+      (LPSTR)" \bsometext"
+
+NOTE: This is still true in Windows 3.1; however, the leading blank is not
+necessary. The above example should be modified as follows:
+
+      (LPSTR)"\bsometext"
+
+This is not the case for Windows 95. In Windows 95, the MFT_RIGHTJUSTIFY flag
+should be used with InsertMenuItem()/SetMenuItemInfo/MENUEX resource.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,114 @@
+DOCUMENT:Q223104  11-JAN-2001  [vbwin]
+TITLE   :FIX: ParentControls.Count May Fail on Windows NT 4, SP4
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbVBp600bug kbOSWinNT400sp4 kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under Windows NT Service Pack 4, if a Usercontrol accesses the
+ParentControls.Count property and there are 32 or more controls on the form,
+including the Usercontrol and any controls on the Usercontrol, the Visual Basic
+app might crash.
+
+NOTE: This bug does not occur on Windows NT 4.0 Service Pack 5 or on Windows 2000
+machines.
+
+CAUSE
+=====
+
+This is caused by an error in Visual Basic's heap allocation mechanism.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio 6.0 Service Packs, please see the
+following articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic 6.0. Form1 is created by
+   default.
+
+2. Click Add Project on the File menu and add a new ActiveX Control project.
+   UserControl1 is created by default.
+
+3. Add a CommandButton to the UserControl.
+
+4. Place the following code in the Click event of the CommandButton:
+
+   MsgBox UserControl.ParentControls.Count
+
+5. Close the designer window for UserControl1.
+
+6. Place a UserControl1 control on Form1 of the Standard EXE Project.
+
+7. Add 30 TextBox controls to Form1 of the Standard EXE project.
+
+8. Press the F5 key to run the project.
+
+9. Click the CommandButton of the UserControl.
+
+After clicking the button in the last step, an Application Error occurs in
+VB6.exe.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+Q195009 Application Access Violation or Hang After Applying SP4
+
+
+Q219278 BUG: OLAP MDX Application Gives Application Error in VB IDE
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbVBp600bug kbOSWinNT400sp4 kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

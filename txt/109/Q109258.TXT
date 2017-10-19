@@ -1,0 +1,55 @@
+DOCUMENT:Q109258  10-NOV-1999  [pcmail]
+TITLE   :CONN: Full Import Removes Manually Entered Recipients
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 3.2 of the Microsoft Mail Connection for PC and AppleTalk Networks,
+manually entered gateway recipients that have been added to the Mail for
+AppleTalk Networks All list by the Network Manager are removed when a full
+directory import of the Connection Name Utility (CNU) is requested.
+
+RESOLUTION
+==========
+
+You can retain gateway recipients by using the Connection Installer Copy
+Accounts And Recipients option before you request the full directory import.
+After processing the directory import, you can restore the saved recipients by
+using the Connection Installer Install Accounts And Recipients option.
+
+Restoring the saved gateway recipients does not overwrite identical addresses
+added by the directory import request.
+
+Additional query words: 3.20 CNU Gateway Recipient
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

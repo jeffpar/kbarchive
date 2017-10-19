@@ -1,0 +1,67 @@
+DOCUMENT:Q126117  17-DEC-2000  [win95x]
+TITLE   :Plug and Play BIOS Required for Hot/Warm Docking/Undocking
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you dock or undock your computer it no longer operates properly. For
+example, your keyboard or mouse stops working.
+
+CAUSE
+=====
+
+Your computer does not have a Plug and Play BIOS. Your computer must have a Plug
+and Play BIOS to support hot or warm docking and undocking.
+
+RESOLUTION
+==========
+
+You must turn your computer off before you dock or undock it if the computer
+does not have a Plug and Play BIOS. You may want to contact your computer's
+manufacturer about upgrading the BIOS to a Plug and Play version.
+
+MORE INFORMATION
+================
+
+Hot docking and undocking refers to inserting the computer in the docking
+station or removing it from the docking station while the computer is running at
+full power. Warm docking refers to docking or undocking the computer while it is
+in suspended mode. Laptop or portable computers with a Plug and Play BIOS can be
+hot or warm docked and undocked.
+
+Some computer manufacturers will not supply a Plug and Play BIOS for certain
+computer models. For example, Toshiba has stated that it will not provide a Plug
+and Play BIOS for T4600 laptop computers.
+
+Additional query words: pnp
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

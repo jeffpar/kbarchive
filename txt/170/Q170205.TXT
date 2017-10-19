@@ -1,0 +1,77 @@
+DOCUMENT:Q170205  09-AUG-2001  [winnt]
+TITLE   :Windows NT 4.0 RAS Support for 3Com Impact ISDN Modems
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+3Com manufacturers the Impact ISDN modem, which is not listed in the current
+Windows NT Hardware Compatibility List (HCL). However, 3Com provides software
+that allows you to use the ISDN modem with Windows NT 4.0 Remote Access Service
+(RAS).
+
+For information about non-HCL hardware support, see the following article in the
+Microsoft Knowledge Base:
+
+   Q142865 Microsoft Support Policy on Hardware Not On Windows NT HCL
+
+MORE INFORMATION
+================
+
+You can use the following 3Com ISDN products with Windows NT 4.0:
+
+ - 3C871
+
+ - 3C872
+
+ - 3C882
+
+To use these products with RAS, follow the directions in the manual shipped with
+the 3Com Impact modem, or obtain the directions from 3Com's Web site:
+
+   http://infodeli.3com.com/infodeli/tools/isdn/spt-tips/install/winnt40.htm
+
+Additional support tips for the External 3Com Impact ISDN Modem are available on
+3Com's Web site at the following address:
+
+   http://infodeli.3com.com/infodeli/tools/isdn/spt-tips/impct-x.htm
+
+The 3Com products discussed here are manufactured by 3Com, Inc., a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+======================================================================
+Keywords          : kb3rdparty kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,56 @@
+DOCUMENT:Q300157  13-JUN-2001  [msdn]
+TITLE   :One Customer's Profile Apparently Viewable by Another Customer
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is possible for one customer's profile data to be viewed by another customer.
+
+CAUSE
+=====
+
+This is usually the result of an improperly configured proxy server and is not a
+Passport problem. This may occur if two users within the same proxy view pages
+that contain Passport or other private data without the server properly causing
+the content to expire or qualifying the Cache-control or Pragma: no-cache
+directives that are sent to a proxy server in the header. For more details and
+ways to fix this problem, see the following Passport Software Development Kit
+(SDK) Web site:
+
+   Caching and Personal Data
+   http://www.passport.com/sdkdocuments/sdk14/Implementation/caching.htm
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

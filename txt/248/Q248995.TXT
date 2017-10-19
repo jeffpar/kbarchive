@@ -1,0 +1,67 @@
+DOCUMENT:Q248995  30-JUN-2000  [sms]
+TITLE   :SMS: Support for Systems Management Server Queries
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbpolicy kbsms200 kbQuery
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server versions 1.2 and 2.0 provide the ability to create
+detailed queries to retrieve information from a site server's database. Support
+for queries is limited to troubleshooting properly designed queries that return
+incorrect results. Product Support Services cannot engage in the creation or
+design of custom queries.
+
+MORE INFORMATION
+================
+
+For assistance on how to create queries using Systems Management Server 1.2, the
+Systems Management Server Administrator's Guide, Chapter 4 "Queries," contains
+detailed information on this subject.
+
+For assistance on how to create queries using Systems Management Server 2.0,
+please make use of the following resources:
+
+ - Systems Management Server Administrator's Guide, Chapter 11 "Managing
+   Collections and Queries"
+
+ - Microsoft Knowledge Base: Known limitations and commonly encountered problems
+
+ - Systems Management Server 2.0 SDK: Defines syntax for WQL queries
+
+ - Microsoft Solution Providers: Qualified professionals can assist to provide
+   needed business solutions
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbpolicy kbsms200 kbQuery 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

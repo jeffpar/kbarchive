@@ -1,0 +1,140 @@
+DOCUMENT:Q195202  05-MAR-2002  [word97]
+TITLE   :WD97: Err Msg: "Word Could Not Merge the Main Document..."
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta word97 kbmerge
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to merge a range of records from your data source, the following
+error message may appear:
+
+   Word could not merge the main document with the data source because the data
+   records were empty or no data records matched your query options.
+
+CAUSE
+=====
+
+This problem may occur when the query condition you are trying to set in the
+query options does not match your data source.
+
+
+WORKAROUND
+==========
+
+Use one of the following methods appropriate for your situation.
+
+Method 1: Correct Your Query Options
+------------------------------------
+
+Edit your data source and make sure that the "Compare to" of your query options
+matches exactly the data contained in your data source. For example, if you are
+trying to set a query option to filter the FirstName field to match a particular
+first name, make sure that the name is contained in the FirstName column of your
+data source.
+
+NOTE: The FirstName field value must match EXACTLY the value you typed in the
+"Compare to" field of your query option (query option values are case
+sensitive).
+
+Method 2: Reattach Your Data Source
+-----------------------------------
+
+When you attach and save a data source to a mail merge main document, Word
+"remembers" which data source is attached by saving the attached file's path and
+file name in the main document. Word also remembers the query options that may
+have been previously set.
+
+Use the following steps to reattach your mail merge main document to your data
+source:
+
+1. Open your mail merge main document.
+
+2. On the Tools menu, click Mail Merge.
+
+3. In the Mail Merge Helper, click Create and then click "Restore to Normal Word
+   document".
+
+   NOTE: At this point, your mail merge main document does not have a data source
+   attached. Therefore, all information pertaining to the data source link and
+   query options will be lost.
+
+4. Click Create and then click the type of main document you had previously set
+   for your mail merge main document.
+
+   NOTE: When Word prompts you to use either the active document or a new
+   document, click Active Document.
+
+5. Click Get Data, attach your data source to your mail merge main document, and
+   then try setting your query options, if needed.
+
+
+To work around this problem, instead of merging to a new document or to the
+printer with query options set, follow these steps:
+
+1. In your main document, click View Merged Data on the Mail Merge toolbar.
+
+2. Click Next Record to find the correct record you want.
+
+   NOTE: You see one record at a time, and the information will populate your
+   main document.
+
+3. On the File menu, click Print.
+
+4. Repeat steps 2-3 for each record that you want to merge.
+
+MORE INFORMATION
+================
+
+As an example of the error message, if you have the following records in your
+data file
+
+Record_Number    First_Name     Last_Name
+-----------------------------------------
+
+         1          Erin           O'Melia
+         2          Lani           Ota
+         3          Suanne         Nagata
+         4          Jeff           Smith
+
+and you instruct Word to merge records 2 through 4, and you set the query options
+to filter those records in which First_Name is equal to Smith, Word displays the
+error message.
+
+For information about using the Query Options feature, click Microsoft Word Help
+Topics on the Help menu. On the Find tab, type "query" (without the quotation
+marks). Select the "Select data records from a data source" topic.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

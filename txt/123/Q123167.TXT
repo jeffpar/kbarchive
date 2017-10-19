@@ -1,0 +1,55 @@
+DOCUMENT:Q123167  08-AUG-2001  [winnt]
+TITLE   :Support for the Compaq Ethernet 16TP Network Adapter
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.50
+
+WINDOWS
+
+kb3rdparty
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Windows NT version 3.5 with a COMPAQ Ethernet 16TP network
+adapter, use the Intel EtherExpress 16TP network adapter driver. The COMPAQ
+Software Support Disk version 1.12a does not include a specific network adapter
+driver for the COMPAQ Ethernet 16TP network adapter. For more information, call
+COMPAQ Technical Support at (800) 652-6672.
+
+
+The Compaq products discussed here are manufactured by Compaq Computer Corp., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding the products' performance or reliability.
+
+Additional query words: prodnt ssd
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q132698  08-NOV-2001  [homemm]
+TITLE   :Make Wallpaper Doesn't Function: Saved with 0 Byte File Size
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft World of Flight for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a wallpaper image from within one of the programs listed at the
+top of this article, the size of the file is 0 bytes and the wallpaper is not
+saved.
+
+CAUSE
+=====
+
+If you don't have enough hard disk space when you click Make Wallpaper, no error
+message appears. Instead, the program creates a 0 byte-sized file in the Windows
+folder named Msdogs.bmp, Msoceans.bmp or Msflight.bmp, depending on the
+application in use.
+
+RESOLUTION
+==========
+
+Make additional hard disk space available, then click Make Wallpaper.
+
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm bitmap wall paper
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbDogs100 kbWorldofFlight kbOceans
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

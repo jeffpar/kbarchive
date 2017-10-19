@@ -1,0 +1,68 @@
+DOCUMENT:Q72488  18-DEC-2000  [win95x]
+TITLE   :Compaq Laptops Cannot Switch to External Monitor
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:1.x,2.x,3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 1.1, 2.03, 2.1, 2.11, 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compaq laptops, such as the 286LTE, have the option of switching between the
+built-in screen and an external monitor. However, this does not work if you are
+inside Microsoft Windows.
+
+CAUSE
+=====
+
+Windows captures all keystroke commands, which prevents this feature from
+working.
+
+WORKAROUND
+==========
+
+The only work around at this time is to execute the command before starting
+Windows.
+
+The commands to switch between the built-in screen and the external monitor port
+are:
+
+   enable:  CTRL+ALT+, (comma)
+   disable: CTRL+ALT+. (period)
+
+MORE INFORMATION
+================
+
+The Compaq products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3.00 win30 3.00a KBHW lap-top laptop
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin110 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a
+Version           : WINDOWS:1.x,2.x,3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

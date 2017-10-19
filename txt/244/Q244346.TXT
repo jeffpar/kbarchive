@@ -1,0 +1,62 @@
+DOCUMENT:Q244346  06-AUG-2002  [exchange]
+TITLE   :XCON: Routing Restrictions Don't Work with % Addresses RFC 1123
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The source routing that is specified in Request for Comments (RFC) 1123 5.2.16
+allows for addresses to be encapsulated in the recipient part of a Simple Mail
+Transfer Protocol (SMTP) address. This enables a person to send an e-mail
+address to an SMTP host, and the host then parses the address and reroutes the
+message to the intended recipient.
+
+An Internet Mail Service that is set up to receive only messages that are
+destined for the SMTP domain name processes source routing messages completely
+before it sends back a non-delivery report (NDR).
+
+Messages are completely processed, even if routing restrictions are specified and
+a user uses the source routing that is specified in RFC 1123 5.2.16. This may be
+the tactic that is used for a denial of service attack on an Internet Mail
+Service.
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+
+
+Additional query words: RFC 1123 5.2.16 , source routing, IMS
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,64 @@
+DOCUMENT:Q222625  18-SEP-1999  [msnetwork]
+TITLE   :How to Close the MSN Quick View
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.52,2.6
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides directions on how to close the MSN Quick View icon, found
+on the Windows task bar. It is a picture of a white hand inside a red circle.
+When clicked, the MSN pop-up menu appears.
+
+MORE INFORMATION
+================
+
+There are two methods to close the Quick View icon:
+
+Method 1
+--------
+
+1. Click the Quick View icon.
+
+2. Select MSN Options, and then click Close.
+
+Method 2
+--------
+
+1. Press CONTROL+ALT+DELETE at the same time to bring up the Close Program
+   window.
+
+2. Click The Microsoft Network (Quick View), and then click End Task.
+
+Additional query words: 2.52 2.60
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN252 kbMSN260
+Version           : WINDOWS:2.52,2.6
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

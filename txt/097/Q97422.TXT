@@ -1,0 +1,57 @@
+DOCUMENT:Q97422  04-MAR-2001  [homemm]
+TITLE   :Word for Windows Setup Err: Unable to Update WWORD20.INF
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::2.0a-CD,2.0c-CD
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word for Windows and Bookshelf, Multimedia Edition, versions 2.0a-CD, 2.0c-CD 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When trying to install the Word for Windows and Bookshelf integration from a
+networked CD-ROM, you may receive the following error message:
+
+   Unable to Update WWORD20.INF. If your disk is write-protected, remove the
+   protection from the disk.
+
+This error will cause Word for Windows setup to fail. Word for Windows with
+Bookshelf integration can only be installed from a local CD-ROM drive.
+
+MORE INFORMATION
+================
+
+Word for Windows Setup cannot run across a network CD-ROM drive. The Setup
+program does not recognize that it is being installed from a read-only device.
+Word Setup will ask for the customer and company name and then try to write this
+information to the WWORD20.INF file. Because the CD-ROM is read-only, this file
+cannot be changed; therefore, the error occurs.
+
+Additional query words: 2.00a-CD 2.00c-CD 2.0c-CD video sound 1.00 1991 1992 edition workgroups W_WinWord multimedia multi-media multi media Word/Bookshelf net install kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbBookshelfSearch kbWordBookshelf200a kbWordBookshelf200c
+Version           : :2.0a-CD,2.0c-CD
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

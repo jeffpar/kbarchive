@@ -1,0 +1,335 @@
+DOCUMENT:Q253151  08-MAY-2002  [sms]
+TITLE   :SMS: Systems Management Server 2.0 Dependency Package Contents
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0 SP1
+OPER/SYS:
+KEYWORDS:kbClient kbsms200 kbsms200bug kbbpqfe1a
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft has released various hotfixes to correct specific issues for Systems
+Management Server (SMS) 2.0 clients and servers. Microsoft has packaged these
+hotfixes into a single 'Dependency' hotfix package to simplify applying these
+hotfixes to an SMS 2.0 site that is running Service Pack 1 (SP1). All of the
+files included in this package are dependent upon each other and must be applied
+as a unit. This article is updated as new hotfixes are added to this Dependency
+package.
+
+The following table lists Microsoft Knowledge Base article numbers and titles
+that document corrected problems included with this hotfix package. For
+additional information about each correction included, use the article number to
+query for the article in the Microsoft Knowledge Base.
+
+CAUTION: You must apply SMS 2.0 SP1 before you install this dependency package.
+Do not install this package on sites that are not using SMS 2.0 SP1.
+
+Summary List for Dependency Package for Systems Management Server 2.0 SP1
+-------------------------------------------------------------------------
+
+   Q244157 No Way to Control Attachments to Non-Preferred NDS Servers
+
+   Q242926 MS: Multiple CCR Requests may be Generated for Site System Clients
+
+
+   Q243171 SMS: Advertisements Are Received By Clients Outside the Targeted Site
+
+   Q245812 SMS: MFC42.DLL Doesn't Upgrade as it Should
+
+   Q247896 Setup May Not Install All Components if Time Synchronization Service
+   is Running
+
+   Q245170 SMS: Missing or Corrupt Offer File May Prevent Client From Running
+   Advertisements
+
+
+   Q246785 SMS: SMSExec Components Report SQL Error Messages
+
+   Q252425 SMS: Discovered clients fail to be installed by NT Remote Install
+
+
+   Q247543 SMS: Clients Incorrectly Assigned to Multiple Sites
+
+MORE INFORMATION
+================
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next SMS service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+
+The English-language version of this software update for Service Pack 1 should
+have the following file attributes or later:
+
+   Date        Time      Size     File name       Platform   Version
+   -----------------------------------------------------------------------
+   12/17/1999  03:45p    233,312  Abnwcli.dll     I386       2.0.1380.1096
+   12/17/1999  03:45p    234,848  Abnwsvr.dll     I386       2.0.1380.1096
+   12/30/1999  08:15p    367,798  Apasetup.exe    I386       2.0.91.8    
+   12/20/1999  07:43p    878,176  Baseobj.dll     I386       2.0.1380.1101
+   10/21/1999  12:56p    259,936  Bindclin.dll    I386       2.0.1380.1060
+   01/21/2000  07:20p    314,368  Boot32nd.exe    I386       2.0.1380.1123
+   01/21/2000  07:20p    314,368  Boot32nw.exe    I386       2.0.1380.1123
+   01/21/2000  07:20p    314,368  Boot32wn.exe    I386       2.0.1380.1123
+   11/10/1999  09:42p    160,080  Ccim32.dll      I386       2.0.1380.1072
+   02/02/2000  08:22p    146,832  Ccm.dll         I386       2.0.1380.1130
+   01/21/2000  07:20p    298,720  Ccmboot.exe     I386       2.0.1380.1123
+   01/28/2000  01:50p    407,136  Ccmbtldr.exe    I386       2.0.1380.1125
+   12/17/1999  03:53p  1,318,009  Ccmcore.exe     I386       2.0.91.7
+   12/16/1999  12:03a    141,680  Cidm.dll        I386       2.0.1380.1091
+   12/20/1999  08:20p  1,161,632  Clibase.dll     I386       2.0.1380.1101
+   01/21/2000  07:34p  3,629,035  Clicore.exe     I386       2.0.1380.1123
+   12/15/1999  07:06p    112,480  Cliex32.dll     I386       2.0.1380.1090
+   11/03/1999  08:01p     76,656  Clisvcl.exe     I386       2.0.1380.1063
+   12/20/1999  08:30p    170,384  Ddm.dll         I386       2.0.1380.1102
+   10/01/1999  01:22p    157,536  Falclin.dll     I386       2.0.1380.1051
+   04/27/1999  11:59a    995,383  Mfc42.dll       I386       6.0.8447.0
+   04/27/1999  11:59a    995,384  Mfc42u.dll      I386       6.0.8447.0
+   10/27/1999  05:33p    335,712  Mslmclin.dll    I386       2.0.1380.1063
+   06/16/1998  09:45p     77,878  Msvcirt.dll     I386       6.0.8168.0
+   03/01/1999  11:44p    266,293  Msvcrt.dll      I386       6.0.8397.0
+   02/08/1999  11:31p    326,656  Msvcrt40.dll    I386       4.22.0.0
+   10/21/1999  12:56p    269,664  Ndsclin.dll     I386       2.0.1380.1060
+   12/16/1999  12:05a     35,168  Ntlginst.dll    I386       2.0.1380.1091
+   12/30/1999  08:10p     46,960  Odpsys32.exe    I386       2.0.1380.1097
+   12/30/1999  08:11p     53,104  ODPUSR32.exe    I386       2.0.1380.1097
+   12/30/1999  08:11p     54,640  Odpwin9x.exe    I386       2.0.1380.1097
+   11/19/1999  08:55p     25,440  Pipcap32.dll    I386       2.0.1380.1079
+   12/30/1999  08:13p    209,264  Smsapm32.exe    I386       2.0.1380.1097 
+   01/25/2000  06:02p     99,705  Smsboot1.exe    I386
+   01/21/2000  07:21p    468,304  Smsman.exe      I386       2.0.1380.1123
+   01/21/2000  07:20p    182,272  Smsnds1.exe     I386       2.0.1380.1123
+   12/30/1999  08:16p    631,104  Swdist32.exe    I386       2.0.91.8
+   03/02/2000  8:03p          69  Comp1103.ini    I386
+   03/02/2000  8:03p          69  Comp1130.ini    I386
+
+   12/17/1999  03:46p    411,408  Abnwcli.dll     Alpha      2.0.1380.1096
+   12/17/1999  03:46p    414,992  Abnwsvr.dll     Alpha      2.0.1380.1096
+   12/30/1999  08:15p    630,108  Apasetup.exe    Alpha      2.0.91.8
+   12/20/1999  08:18p  1,398,544  Baseobj.dll     Alpha      2.0.1380.1101
+   01/21/2000  07:20p    506,640  Boot32nd.exe    Alpha      2.0.1380.1123
+   01/21/2000  07:20p    506,640  Boot32nw.exe    Alpha      2.0.1380.1123
+   01/21/2000  07:20p    506,640  Boot32wn.exe    Alpha      2.0.1380.1123
+   11/10/1999  09:42p    255,760  Ccim32.dll      Alpha      2.0.1380.1072
+   02/02/2000  08:23p    232,720  Ccm.dll         Alpha      2.0.1380.1130  
+   01/21/2000  07:20p    483,600  Ccmboot.exe     Alpha      2.0.1380.1123
+   01/21/2000  07:20p    654,096  Ccmbtldr.exe    Alpha      2.0.1380.1125
+   12/17/1999  03:53p  1,916,081  Ccmcore.exe     Alpha      2.0.91.7 
+   12/16/1999  12:03a    244,496  Cidm.dll        Alpha      2.0.1380.1091
+   12/20/1999  08:21p  1,852,688  Clibase.dll     Alpha      2.0.1380.1101      
+   01/21/2000  07:35p  4,797,367  Clicore.exe     Alpha      2.0.1380.1123
+   12/15/1999  07:07p    179,984  Cliex32.dll     Alpha      2.0.1380.1090
+   11/03/1999  08:00p    110,352  Clisvcl.exe     Alpha      2.0.1380.1063
+   12/20/1999  08:30p    256,784  Ddm.dll         Alpha      2.0.1380.1102
+   10/01/1999  01:22p    285,968  Falclin.dll     Alpha      2.0.1380.1051
+   09/30/1998  08:21p  2,036,786  Mfc42.dll       Alpha      6.0.8447.0
+   09/30/1998  08:20p  2,026,547  Mfc42U.dll      Alpha      6.0.8447.0
+   10/27/1999  05:33p    575,760  Mslmclin.dll    Alpha      2.0.1380.1063
+   09/30/1998  07:12p    110,131  Msvcirt.dll     Alpha      6.0.8168.0
+   09/30/1998  07:15p    539,186  Msvcrt.dll      Alpha      6.0.8397.0
+   07/06/1998  04:53p    621,056  Msvcrt40.dll    Alpha      4.22.0.0
+   12/16/1999  12:06a     57,616  Ntlginst.dll    Alpha      2.0.1380.1091
+   12/30/1999  08:11p     67,856  Odpsys32.exe    Alpha      2.0.1380.1097
+   12/30/1999  08:11p     76,048  Odpusr32.exe    Alpha      2.0.1380.1097
+   11/19/1999  08:56p     45,328  Pipcap32.dll    Alpha      2.0.1380.1079
+   12/30/1999  08:13p    279,824  Smsapm32.exe    Alpha      2.0.1380.1097
+   01/21/2000  07:21p    720,656  Smsman.exe      Alpha      2.0.1380.1123
+   01/21/2000  07:20p    293,136  Smsnds1.exe     Alpha      2.0.1380.1123
+   12/30/1999  08:16p    685,444  Swdist32.exe    Alpha      2.0.91.8
+
+NOTE: Because of file dependencies, the most recent hotfix or feature that
+contains the above files may also contain additional files.
+
+
+
+Using the Hotfix Installer
+--------------------------
+
+NOTE: You can use this method only for Intel-based computers.
+
+1. Copy the hotfix folder structure to a local folder on your site server or to
+   a share on your network. It is important to keep the folder structure intact
+   because the Q253151.exe update is dependant upon the folder structure. The
+   Q253151.exe file is a Microsoft Windows Installer file that updates specific
+   files on your site server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, close the Systems Management Server Administrator
+   console.
+
+4. Run the Q253151.exe file and follow the directions in the wizard.
+
+Manual Installation
+-------------------
+
+NOTE: You can use this method for both Intel-based and Alpha-based primary site
+servers.
+
+1. Copy the hotfix folder structure to a local folder on your site server or to
+   a share on your network.
+
+2. Close the Systems Management Server Administrator console.
+
+3. Stop all SMS Services.
+
+4. Copy the following files from the appropriate hotfix platform folder to the
+   specified path below. A site server that is running on an Intel platform
+   needs only the hotfix files from the I386 hotfix folder. A site server that
+   is running on an Alpha platform needs only the hotfix files from the Alpha
+   hotfix folder.
+
+   NOTE: Rename the Comp1103.ini file to Compver.ini before copying it to the
+   \SMS\inboxes\clicomp.src\smsapm32 and SMS\inboxes\clicomp.src\SWDist folders.
+   Rename the Comp1130.ini file to Compver.ini before copying it to the
+   \SMS\inboxes\clicomp.src\base folder.
+
+   \SMS\bin\<platform>
+   -------------------
+   abnwcli.dll
+   abnwsvr.dll
+   baseobj.dll
+   bindclin.dll
+   boot32nd.exe
+   boot32nw.exe
+   boot32wn.exe
+   ccim32.dll
+   ccm.dll
+   ccmboot.exe
+   ccmbtldr.exe 
+   cidm.dll
+   clisvcl.exe
+   falclin.dll
+   mslmlin.dll
+   ndsclin.dll
+   ntlginst.dll
+   odpsys32.exe
+   odpusr32.exe
+   smsboot1.exe
+   smsnds1.exe
+   ddm.dll
+
+   \SMS\bin\<platform>\00000409
+   ----------------------------
+   smsman.exe
+
+   \SMS\bin\<platform>\System32
+   ----------------------------
+   mfc42.dll
+   mfc42u.dll
+   msvcirt.dll
+   msvcrt40.dll
+
+   \inboxes\clicomp.src\licmtr\<platform>
+   --------------------------------------
+   msvcrt.dll
+
+   \SMS\licmtr\odbc\<platform>
+   ---------------------------
+   msvcrt40.dll (in \SMS\bin\<platform>\system32)
+
+   \SMS\inboxes\clicomp.src\base\<platform>
+   ----------------------------------------
+   ccmcore.exe
+   clicore.exe
+
+   \SMS\inboxes\clicomp.src\base
+   -----------------------------
+   comp1130.ini
+
+   \SMS\inboxes\clicomp.src\smsapm32\<platform>
+   --------------------------------------------
+   apasetup.exe
+
+   \SMS\inboxes\clicomp.src\smsapm32
+   ---------------------------------
+   comp1103.ini
+
+   \SMS\inboxes\clicomp.src\SWDist
+   -------------------------------
+   comp1103.ini
+
+   \SMS\inboxes\clicomp.src\SWDist\<platform>
+   ------------------------------------------
+   swdist.exe
+
+5. Update the remote SMS provider by following these steps on the remote server
+   that is running the SMS provider:
+
+   a. Stop the SMS_SQL_MONITOR and Windows Management services.
+
+   b. Copy the following hotfixed SMS provider files from the appropriate hotfix
+      platform folder to the <Drive>:\Smsprov\Bin\<Platform>
+      folder:
+
+   Baseobj.dll
+
+   c. Restart the SMS_SQL_MONITOR and Windows Management services.
+
+6. Restart the SMS_SITE_COMPONENT_MANAGER service.
+
+To Update a Remote SMS Administrator Console
+--------------------------------------------
+
+1. From the updated SMS site server, copy the following SMS Administrator
+   console file(s) to a diskette or network share:
+
+   <DriveLetter>:\SMS\bin\i386\baseobj.dll
+
+2. Make a backup copy of the file(s).
+
+3. Copy the updated file(s) from the diskette or network share to the SMS
+   Administrator console directory:
+
+   \\<AdminConsole>\SMSAdmin\bin\i386\baseobj.dll
+
+
+These must be applied in conjunction with the Dependency Package.
+
+Additional query words: prodsms bundle
+
+======================================================================
+Keywords          : kbClient kbsms200 kbsms200bug kbbpqfe1a 
+Technology        : kbSMSSearch kbSMS200SP1
+Version           : winnt:2.0 SP1
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

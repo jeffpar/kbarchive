@@ -1,0 +1,59 @@
+DOCUMENT:Q158735  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Control Display Problems with Trident Video Card
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Systems Management Server Quick Windows Viewer will experience display
+problems when you remotely control a client computer running Windows for
+Workgroups IPX that has a Trident 8900d video card, if the client's color depth
+is greater than 256 colors. The Quick Windows Viewer will display that client's
+desktop as mostly black, although the icons may be visible.
+
+WORKAROUND
+==========
+
+To work around this problem, reduce the color depth on the client computer to
+256 colors or less.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms rc helpdesk troubleshooting
+
+======================================================================
+Keywords          : kbenv kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

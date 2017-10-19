@@ -1,0 +1,64 @@
+DOCUMENT:Q134956  18-DEC-1999  [sms]
+TITLE   :Logon Script Not Removed After Domain Is Removed From Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When a Windows NT domain is added to a Systems Management Server site, there is
+an option to configure the logon script of each user account to run SMSLS.BAT.
+If the user account did not contain a logon script prior to this action, it
+receives the SMSLS logon script. User accounts configured for a logon script
+prior to this action will have their logon script files modified with a
+reference to SMSLS.BAT.
+
+If the Windows NT domain is removed from the site, the SMSLS.BAT file is removed
+from %SYSTEMROOT%>\SYSTEM32\REPL\IMPORT\SCRIPTS directory. However, the
+references to SMSLS are not removed from the domain user account profiles.
+
+WORKAROUND
+==========
+
+To work around this problem, modify the domain user account profiles using User
+Manage for Domains to remove the reference to SMSLS.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1 and 1.2. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

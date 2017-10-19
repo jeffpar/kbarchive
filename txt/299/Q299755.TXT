@@ -1,0 +1,67 @@
+DOCUMENT:Q299755  25-JUN-2001  [homegame]
+TITLE   :Train Simulator: Program Hangs When You Unlock Computer
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Train Simulator, version 1.0, used with:
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you lock and then log back on to your computer with Microsoft Train
+Simulator at the opening screen, the following behavior may occur:
+
+    - The display becomes completely black.
+
+   -or-
+
+ - The display flickers.
+
+After you lock and then log back on to your computer with a Train Simulator
+simulation running, you may receive an error message similar to the following:
+
+   Access violation - code c0000005 (first chance)
+
+RESOLUTION
+==========
+
+To work around this issue, save the game and quit Train Simulator before you
+lock your computer.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: msgame trainsim
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

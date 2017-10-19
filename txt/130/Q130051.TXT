@@ -1,0 +1,59 @@
+DOCUMENT:Q130051  06-NOV-1999  [win16sdk]
+TITLE   :Use CHEV Command for Changing Mode of DOS/V
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Japanese Windows 3.1 requires DOS/V (Japanese MS-DOS). DOS/V has two different
+modes, English and Japanese modes. The CHEV command is used to change between
+these two modes.
+
+MORE INFORMATION
+================
+
+MSKK of Japan released DOS5/V and DOS6/V. DOS/V has two different modes, and
+Japanese Windows 3.1 runs only on Japanese mode.
+
+CHEV.EXE is used in DOS5/V to temporarily change the display between English mode
+and Japanese mode.
+
+The CHEV command was added to Japanese DOS/V as a convenience to users. The
+command is used similarly to such MS-DOS commands as MODE, XCOPY, and so forth.
+Before running Japanese Windows, make sure that you are using the Japanese mode
+of DOS/V; otherwise, use the CHEV command to change to Japanese mode.
+
+NOTE: DOS/V EDIT.COM works only in English mode.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

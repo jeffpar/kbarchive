@@ -1,0 +1,55 @@
+DOCUMENT:Q262328  12-NOV-2001  [homegame]
+TITLE   :StarLancer: Cannot View Your Sixth Medal in the Medal Locker
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you play Microsoft StarLancer in Single Player mode, six spaces are
+available in the Medals locker. As you play through the missions, you receive
+medals for your heroics.
+
+However, if you complete all of the missions successfully, only five medals are
+displayed in the Medals locker.
+
+MORE INFORMATION
+================
+
+You receive the sixth medal when you complete the game.
+
+Because you are unable to return to the bunker room after you finish the game,
+you cannot view the sixth medal that you receive.
+
+Additional query words: 1.00 msgame star lancer slots missing last final
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

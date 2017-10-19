@@ -1,0 +1,133 @@
+DOCUMENT:Q112879  12-NOV-1999  [pcmail]
+TITLE   :FFAPI: Address List Contains Local Postoffice Addresses
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (FFAPI), version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Mail for PC Networks Mail users may notice addresses from their local
+Postoffice Address List have been added to the Microsoft File Format API (FFAPI)
+network/postoffice list. These local postoffice addresses may also appear twice
+in the Global Address List.
+
+This problem will only appear on postoffices that are downstream of the FFAPI
+Gateway postoffice.
+
+CAUSE
+=====
+
+This problem is caused by the Administrator of a downstream postoffice exporting
+the local postoffice address list to the FFAPI network/postoffice.
+
+When the Administrator of a downstream postoffice performs an External-Admin,
+Export, and selects to export the local postoffice address list to ALL
+postoffices, ADMIN.EXE will send the addresses as a *SPECIAL system message to
+all external postoffices - including any downstream FFAPI network/postoffices
+definitions.
+
+The FFAPI-based gateway will attempt to deliver this system message to the
+foreign mail system, but may return it as undeliverable because *SPECIAL is not
+a valid address.
+
+When External moves the returned message from the gateway postoffice to the
+downstream postoffice, it will recognize the message as a valid *SPECIAL system
+message and will add the addresses contained within the message to the address
+listed as the FROM address, which will be the FFAPI gateway network/postoffice
+that rejected the message.
+
+If the Global Address List (GAL) is rebuilt (via DirSync or manually using the
+REBUILD.EXE utility), each local postoffice user will appear twice in the GAL.
+
+RESOLUTION
+==========
+
+This problem can be avoided by selectively exporting the postoffice address list
+rather than exporting to all postoffices. When selecting the postoffices to
+export to, do not include the Mail Connection proxy postoffice.
+
+A second option would be to have the FFAPI gateway handle a message addressed to
+FFAPINET/FFAPIPO/*SPECIAL in a different manner than normal messages. This
+message can be handled one of three ways:
+
+ - The gateway simply deletes these messages if they come in.
+
+ - The gateway returns the message back to any account other than *SPECIAL
+   stating the addressee is invalid.
+
+ - The gateway forwards the message to an account stating the *SPECIAL addressee
+   is invalid.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.0 of Microsoft Mail
+Software Development Kit (FFAPI). We are researching this problem and will post
+new information in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If you have encountered this problem, use the following instructions to repair
+the Mail Connection proxy address list and the Global Address List on the
+downstream postoffice.
+
+1. Use the IMPORT.EXE utility to extract the FFAPI Gateway address list from the
+   Directory Synchronization postoffice:
+
+   IMPORT admin -ppassword -xFFAPIET/FFAPIPO -fFFAPINME.DAT -DM
+
+   admin = Administrator's Mailbox name
+   password = Administrator's Mailbox password
+   FFAPIET/FFAPIPO = the FFAPI gateway NETWORK/POSTOFFICE
+   FFAPINME.DAT = filename to store extracted addresses
+   -DM = drive letter mapped to dirsync server postoffice
+
+2. Import the extracted FFAPI gateway network/postoffice addresses into the
+   downstream postoffice:
+
+   IMPORT admin -p<password> -fFFAPINME.DAT -DN
+
+   admin = Administrator's Mailbox name
+   password = Administrator's Mailbox password
+   FFAPINME.DAT = name of input file (extracted in step 1)
+   -DN = drive letter mapped to downstream postoffice
+
+3. If the local postoffice users appear twice in the Global Address List, run
+   the REBUILD.EXE utility to regenerate the GAL on the downstream postoffice.
+
+   REBUILD -DN
+
+   -DN = Drive letter mapped to downstream postoffice
+
+Additional query words: 3.20 Duplicate GAL POL Export Corrupt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailFFAPI300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

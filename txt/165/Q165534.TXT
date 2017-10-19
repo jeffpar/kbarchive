@@ -1,0 +1,82 @@
+DOCUMENT:Q165534  13-JUN-2001  [sna]
+TITLE   :Link Service Not Configured with Short Length of Service Title
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When configuring link services on SNA Server Manager, if the link service title
+string is less than 11 characters, you will receive the following messages:
+
+   Link Service Error - This link service cannot be configured using SNA Server
+   manager. To configure this link service, run the External Link Service tool
+   from tools menu.
+
+CAUSE
+=====
+
+The DWORD variable containing the size of a buffer used to store a registry
+value wasn't being set, and therefore the value containing the link service DLL
+name could not be determined.
+
+RESOLUTION
+==========
+
+This fix sets the buffer to the size it was before calling RegQueryValueEx.
+
+WORKAROUND
+==========
+
+You can change the link service title to a length greater than 11 character in
+the registry.
+
+The value in the registry is:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services
+      \SnaSdlcx\Parameters\Title
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

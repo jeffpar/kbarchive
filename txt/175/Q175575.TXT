@@ -1,0 +1,53 @@
+DOCUMENT:Q175575  16-JUN-2001  [msnetwork]
+TITLE   :How to Disable Music on the MSN On Stage Web Page
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5,95
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to disable the music on the MSN, The Microsoft
+Network, On Stage Web page.
+
+MORE INFORMATION
+================
+
+To disable the music, click On/Off musical note located in the lower-right
+corner of the MSN On Stage Web page.
+
+NOTE: The music is disabled only in the current MSN session. If you do not want
+to hear the music, you must disable the music each time you sign in to MSN.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5,95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q259975  28-OCT-2000  [exchange]
+TITLE   :XADM: Error Message: Account Information Is Incorrect
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Exchange Server, the setup process may stop with the following
+error message after you select the Exchange Server Service account:
+
+   Account information is incorrect.
+
+CAUSE
+=====
+
+The account that you select for the Exchange Server Service account has the
+"User Must Change Password at Next Logon" option selected.
+
+RESOLUTION
+==========
+
+In User Manager for Domains, click the account that you want to use for the
+Exchange Server Service account, and then click to clear the "User Must Change
+Password at Next Logon" check box.
+
+MORE INFORMATION
+================
+
+For additional information about this error message, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q146504 XADM: Installing Exchange Server Allows Selection of Group
+
+   Q190822 XADM: Error During Installation: Account Information Is Incorrect
+
+   Q253305 XADM: Exchange Setup Stops w. Account Information Is Incorrect
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

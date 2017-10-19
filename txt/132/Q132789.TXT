@@ -1,0 +1,66 @@
+DOCUMENT:Q132789  17-DEC-2000  [win95x]
+TITLE   :"Network Drive No Longer Exists" Error with NetFlex Card
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:msnets win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Client computers connecting to a server that is using a NetFlex network card may
+receive the following error message:
+
+   Network Drive no longer exists. Abort, Retry, Fail.
+
+The client computers continue to function properly. Trying to reconnect to the
+server is sometimes successful, although a restart of the server may be
+necessary.
+
+CAUSE
+=====
+
+The error message is caused by heavy file I/O (Input/Output) stress, similar to
+that of benchmark utilities.
+
+RESOLUTION
+==========
+
+The server must be restarted, and the heavy file I/O stress must be offloaded
+from that server to one or more alternate servers.
+
+
+MORE INFORMATION
+================
+
+The NetFlex network card is manufactured by Compaq Computer Corporation, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+======================================================================
+Keywords          : msnets win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

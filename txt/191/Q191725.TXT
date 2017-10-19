@@ -1,0 +1,75 @@
+DOCUMENT:Q191725  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Insufficient Conventional Memory to Run Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start your Windows 95-based computer, you may receive the
+following error message:
+
+   Insufficient conventional memory to run Windows.
+   Reconfigure your system to increase available memory and try again.
+
+   Windows has stopped. Press CTRL+ALT+DELETE to restart your computer.
+
+CAUSE
+=====
+
+This behavior can occur if your Windows 95-based computer is trying to use
+Microsoft Windows 98 system files. This can occur if the system files were
+transferred from a Windows 98 Startup disk to your Windows 95-based computer by
+using the sys command.
+
+RESOLUTION
+==========
+
+To resolve this issue, transfer Windows 95 system files to your Windows 95-based
+computer by using the sys command. To do so, use the following steps:
+
+1. Insert a Windows 95 Startup disk in your floppy drive and then restart your
+   computer.
+
+   NOTE: Verify that the Windows 95 Startup disk you insert matches the exact
+   revision of Windows 95 you are using in your computer. To do so, see the
+   following article in the Microsoft Knowledge Base:
+
+   Q158238 How to Determine the Version of Windows 95/98/Me in Use
+
+2. At the command prompt, type "sys c:" (without the quotation marks), and then
+   press ENTER.
+
+3. Remove the Windows 95 Startup disk from your floppy drive and then restart
+   your computer.
+
+======================================================================
+Keywords          : kbenv kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

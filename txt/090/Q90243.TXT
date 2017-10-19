@@ -1,0 +1,98 @@
+DOCUMENT:Q90243  20-SEP-2001  [win3x]
+TITLE   :Workgroup Connection SYSTEM.INI Settings
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Workgroup Connections SYSTEM.INI file contains switches used to control the
+behavior of various Workgroup Connections network components.
+
+The switches control such things as where to find certain files, sizes of some
+buffers used by the redirector, and flags that alter default behavior of
+Workgroup Connections features and default parameters used by the NET command.
+
+Most switches are found in the [Network] section, which is analogous to the
+[network] section in the Windows for Workgroups SYSTEM.INI file.
+
+MORE INFORMATION
+================
+
+Some of the more common switches:
+
+The [Password Lists] section contains the username and the location and name of
+the users password cache file.
+
+The [Network] Section
+---------------------
+
+autostart=FULL or BASIC
+
+   This will determine which redirector is loaded by default when you type "net
+   logon" (without the quotation marks), "net start workstation" (without the
+   quotation marks) or "net start" (without the quotation marks).
+
+username=
+
+   The default username when you type "net logon".
+
+workgroup=
+
+   The default domain you will view.
+
+reconnect=no or yes
+
+   This determines whether to save the connections you make as a persistent
+   connection.
+
+passwordcaching=no or yes
+
+   This enable/disable password caching.
+
+computername=
+
+   This is the name for the computer (node). It must be unique.
+
+lanroot=path
+
+   This is the path to the Workgroup connection files.
+
+dospophotkey=N
+
+   This is the key that triggers the Workgroup Connections network pop-up
+   utility if it is started. (The default is CTRL+N).
+
+Additional query words: 1.00 3.10 wc
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : :1.0,3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

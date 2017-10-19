@@ -1,0 +1,52 @@
+DOCUMENT:Q104376  08-DEC-1999  [homemm]
+TITLE   :Dinosaurs: No Visual Indication that Slide Show Is Running
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can run a slide show in Dinosaurs that randomly displays different screens
+and parts of the program. To start a slide show, click Options and then click
+Slide Show. To stop a slide show, click anywhere on the Dinosaurs window.
+
+The slide show may take several seconds to start. Also, there is no indicator on
+the screen identifying when you are in a slide show and when you are not. The
+screens look exactly the same as they do when you page manually through the
+Dinosaurs application.
+
+If you have started a slide show, be aware that it may take several seconds to
+start and to change slides. Don't click the mouse unless you want to stop the
+slide show.
+
+Additional query words: multi media multimedia multi-media slideshow switch dinos C Usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

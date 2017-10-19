@@ -1,0 +1,56 @@
+DOCUMENT:Q169583  27-JUL-2001  [sms]
+TITLE   :SMS: Readme.hlp File Is Not in Systems Management Server 1.2 SP2
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2 SP2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup kbInventory smssetup smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server 1.2 Service Pack 2 contains a new package definition
+file (PDF), Sms12sp2.pdf, for the service pack itself. When using the PDF to
+create a package, the package comment recommends that you read the Readme.hlp
+file before installing the service pack. However, that file does not exist.
+
+MORE INFORMATION
+================
+
+The following is the package comment:
+
+   Manual Setup,Custom (/noautoupgrade), Inventory--Please read the
+   README.TXT and README.HLP before installing this service pack.
+
+The Readme.txt file has all the information related to the Systems Management
+Server 1.2 Service Pack 2.
+
+Additional query words: prodsms sp2 sp
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbInventory smssetup smsinv 
+Technology        : kbSMSSearch kbSMS120SP2
+Version           : :1.2 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

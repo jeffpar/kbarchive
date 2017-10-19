@@ -1,0 +1,78 @@
+DOCUMENT:Q153946  30-MAR-1999  [exchange]
+TITLE   :XADM: Err Msg: Error Encountered Accessing Registry Keys/Value
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+ - Microsoft Exchange Server, version 4.0, Japanese version 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error might occur when you run Edbutil.exe /d /ds:
+
+   Error encountered accessing registry keys/values for specified Exchange
+   store.
+
+   Operation terminated with error -1907
+
+CAUSE
+=====
+
+The Edbutil utility assumes that the registry value below has been set. It will
+not be set unless the Microsoft Exchange Optimizer program has been run either
+during the installation process or afterwards:
+
+   HKey_local_machine\system\CCS\services\MSExchangeDS\Parameters:
+      EDB max buffers
+
+WORKAROUND
+==========
+
+Run Microsoft Exchange Optimizer program to set this value or add this value to
+the registry under HKey_local_machine\system\CurrentControlSet
+\services\MSExchangeDS\Parameters:
+
+Value Name: EDB Max Buffers
+Data Type: REG_DWORD
+Data: 64
+Radix: Hex
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: 4.0 edbutil Japanese
+
+======================================================================
+Keywords          :  
+Technology        : kbHLangJapanese kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

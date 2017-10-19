@@ -1,0 +1,97 @@
+DOCUMENT:Q154411  31-JUL-2001  [sms]
+TITLE   :SMS Err Msg: Unable to Initialize IPX Protocol
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to run the Remote Control Agent on a Windows 95 client computer
+using NetWare 3.1x or NetWare 4.x as the primary logon network and the Windows
+95 Microsoft Client for NetWare Networks driver, you may receive the following
+error message:
+
+   Unable to initialize IPX protocol
+
+CAUSE
+=====
+
+Systems Management Server 1.2 creates a Domain.ini file on the NetWare logon
+servers. The Domain.ini file includes the following section:
+
+   [SIGHT]
+   Allow Takeover=No
+   Allow Reboot=No
+   Allow File Transfer=No
+   Allow Chat=No
+   Allow Remote Execute=No
+   Visible Signal=Yes
+   Audible Signal=Yes
+   Allow Ping Test=No
+   Allow DOS Diagnostics=No
+   Allow Windows Diagnostics=No
+   Permission Required=Yes
+   Default Protocol=IPX
+   LANANUM=0
+   InstallWin16RCTsr=1
+
+The Domain.ini file is used to create the Sms.ini file on the client computer.
+The Remote Control Agent configuration is stored in the [SIGHT] section of the
+Sms.ini file. The default protocol for a NetWare client is configured to be IPX.
+The Microsoft IPX/SPX-compatible protocol for Windows 95 clients is NWLINK$.
+When the Remote Control Agent starts, it attempts to use IPX instead of NWLINK$,
+which generates the error message.
+
+WORKAROUND
+==========
+
+To work around this behavior do one of the following:
+
+ - Use the NetWare network drivers for Windows 95.
+
+-or-
+
+ - Install TCP/IP on the Windows 95 clients. Change the default protocol for
+   remote control to TCP/IP in the Systems Management Server registry. Changing
+   the default remote control protocol for Windows clients is documented in the
+   Systems Management Server 1.2 "Administrator's Guide" on pages 168-170.
+
+STATUS
+======
+
+This behavior is by product design.
+
+Additional query words: prodsms win95 remote
+
+======================================================================
+Keywords          : kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

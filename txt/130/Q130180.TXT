@@ -1,0 +1,58 @@
+DOCUMENT:Q130180  28-JUL-2001  [win95x]
+TITLE   :Safe Mode Reports 4K Less Conventional Memory
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MEM and CHKDSK commands report 4K less of conventional memory in Safe mode
+than they do when you are running Windows 95 normally.
+
+   Safe Mode   Running Normally
+   ----------------------------
+   651,264     655,360
+
+CAUSE
+=====
+
+The difference in the amount of conventional memory reported is due to a 4K
+buffer for hard disk double-buffering allocated by Safe mode. Not all computers
+require this buffer, but when started in Safe mode, Windows 95 allocates this
+buffer unconditionally as an additional safety precaution.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

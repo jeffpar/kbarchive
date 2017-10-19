@@ -1,0 +1,73 @@
+DOCUMENT:Q64667  26-OCT-1999  [win95x]
+TITLE   :Erratic Serial Mice and ALR Powerflex Computers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have an ALR Powerflex computer and you experience either of the following
+symptoms while using Microsoft Windows:
+
+ - Your serial mouse has erratic mouse-cursor movement in any of the three modes
+   of Windows.
+
+ - Your serial mouse grabs items in Windows, even if you do not press any of the
+   buttons on the mouse.
+
+CAUSE
+=====
+
+These problems occur with some older ALR motherboards.
+
+To determine if a motherboard evision will correct the problem, follow these
+steps:
+
+1. Turn the computer off.
+
+2. Take the cover off of the computer.
+
+3. Look near the edges of the green motherboard for a white sticker. This
+   sticker will contain revision letters or numbers (for example, "C-N").
+
+4. Look for a prominent period or a "bullet" (for example, "C-N.OP" or "C-N.").
+
+NOTE: If you do NOT see a period or bullet, contact your local ALR dealer for a
+motherboard revision. If you DO see a period or bullet, a motherboard revision
+is not the solution.
+
+The ALR products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products
+performance or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a KBHW 3rdparty power flex
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

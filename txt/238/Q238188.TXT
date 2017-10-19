@@ -1,0 +1,97 @@
+DOCUMENT:Q238188  01-MAY-2001  [ssafe]
+TITLE   :BUG: Branching a file gives "A more recent version is checked ou
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe500bug kbSSafe600bug kbSSExplorer _IK kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to branch a shared file you get the following error message:
+
+   A more recent version is checked out.
+
+CAUSE
+=====
+
+This error is seen when both of the following conditions are true:
+
+ - The file you are trying to branch is pinned at a previous version.
+ - The file it is shared with is currently checked out.
+
+SourceSafe doesn't let you branch the file at a previous version while a more
+recent version is checked out.
+
+RESOLUTION
+==========
+
+To resolve this problem, see the following:
+
+ - Check the shared file back in.
+ - Perform the branch from the command line.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Share "$/Project1/file1" in SourceSafe to a new location, "$/Project2/file1".
+
+2. Pin "$/Project2/file1" at current version.
+
+3. Check out "$/Project1/file1" and make a change.
+
+4. Check "$/Project1/file1" back in.
+
+5. Check "$/Project1/file1" back out again.
+
+6. Branch "$/Project2/file1".
+
+REFERENCES
+==========
+
+Additional information can be found in the Visual SourceSafe product
+documentation by searching for these titles:
+
+ - Branch shared files, how to
+ - Command line, branch
+
+Additional query words: pin share
+
+======================================================================
+Keywords          : kbSSafe500bug kbSSafe600bug kbSSExplorer _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

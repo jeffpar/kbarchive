@@ -1,0 +1,50 @@
+DOCUMENT:Q137322  13-DEC-1999  [homemm]
+TITLE   :Bookshelf  95: Accents Stripped from International Characters
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Bookshelf 1995, if a title contains international characters, the Note/Add
+Current Article dialog removes the accent notation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem Microsoft Bookshelf for Windows,
+1995 edition. This problem was corrected in Microsoft Bookshelf '96-'97 for
+Windows.
+
+
+Additional query words: 1995 multi media multimedia tilde accentmark multi-media mmtitles kbmm missing gone not there single quote
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

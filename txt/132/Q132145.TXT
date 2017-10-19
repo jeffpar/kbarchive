@@ -1,0 +1,67 @@
+DOCUMENT:Q132145  24-JUL-2001  [homemm]
+TITLE   :Dogs: Screen Split into Panels with Radius Video Card
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kbgraphic kbhw kbmm kbui kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The active program window in Microsoft Dogs is broken into multiple 1-inch
+strips spread vertically on the screen. The area between the strips is the
+background desktop.
+
+This occurs with the Radius Multiview/PC Pivot video card installed and
+configured for display resolutions greater than 640x480.
+
+STATUS
+======
+
+The Radius Multiview/PC Pivot video card uses the video driver RAD640HP.DRV. The
+Radius video card has been discontinued.
+
+RESOLUTION
+==========
+
+Configure your video card to display 640x480 resolution. For more information
+about how to accomplish this task in Windows, see your Windows printed
+documentation or online help.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: mmtitles fragmented stripped striped stripes panels cut
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kbgraphic kbhw kbmm kbui kbHardware 
+Technology        : kbHomeProdSearch kbDogs100
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

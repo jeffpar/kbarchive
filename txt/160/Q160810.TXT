@@ -1,0 +1,59 @@
+DOCUMENT:Q160810  08-NOV-2001  [frontpg]
+TITLE   :FP: IDC Wizard Creates IDC File on Non-IDC Server
+PRODUCT :Word Front Page
+PROD/VER:windows:97, macintosh:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194530.
+
+SUMMARY
+=======
+
+The FrontPage Internet Database Connector Wizard allows you to create an
+Internet Database Connector (IDC) file even if you are not using a server that
+supports this technology. Although the file is created correctly, it may not
+function on some Web servers.
+
+MORE INFORMATION
+================
+
+To use IDC files correctly, you need to publish them to one of the following Web
+servers that support the IDC standard:
+
+ - Microsoft Internet Information Server
+ - Microsoft Peer Web Services for Windows NT 4.0
+ - Microsoft Personal Web Server for Windows 95
+
+Additional query words: 97 IDC IIS
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : windows:97, macintosh:1.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

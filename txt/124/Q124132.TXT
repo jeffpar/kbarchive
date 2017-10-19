@@ -1,0 +1,82 @@
+DOCUMENT:Q124132  06-FEB-2002  [homegame]
+TITLE   :Golf 2.0: Top View Windows Moves with Mouse
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you move the mouse cursor over the Top View window in Golf 2.0, the Top
+View screen moves in the direction the mouse is moving, even if you are not
+holding down the mouse button.
+
+CAUSE
+=====
+
+This type of behavior has been encountered while running the After Dark screen
+saver program. Typically, this behavior occurs when you move the mouse, or type
+the password to disengage the screen saver, and then move the mouse over the Top
+View window.
+
+RESOLUTION
+==========
+
+Minimize and then immediately maximize Golf 2.0 to alleviate the problem.
+
+STEPS TO REPRODUCE PROBLEM
+--------------------------
+
+1. Start Golf 2.0 and begin a new round or open a saved round.
+
+2. Double-click the Top View icon (move this window to a desired location on the
+   Golf 2.0 desktop, if necessary).
+
+3. Make sure the After Dark screen saver has been loaded, and then allow it to
+   engage.
+
+4. Return to the game by moving the mouse, or typing the password, to disengage
+   the screen saver.
+
+5. Move the mouse so that the cursor sweeps over the Top View window. The
+   terrain in the Top View window moves in the same direction the mouse moved
+   over it.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 2.00 golf2 afterdark
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

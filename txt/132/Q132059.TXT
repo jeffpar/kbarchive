@@ -1,0 +1,805 @@
+DOCUMENT:Q132059  02-FEB-2002  [pcmail]
+TITLE   :PC Gen: Summary List of Mail for PC Networks 3.5 Bug Fixes
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Below is a list of bugs fixed in version 3.5 of Microsoft Mail for PC Networks.
+
+For more information on the fix listed, query in the Microsoft Knowledge Base on
+the article ID or the bug number.
+
+SUMMARY OF FILES UPGRADED FOR MAIL 3.5
+--------------------------------------
+
+All files have been upgraded with version 3.5 of Microsoft Mail for PC Networks.
+A comprehensive list of all files upgraded due to fixes or otherwise revised is
+as follows:
+
+Client (version 3.5.2000.4086)
+------------------------------
+
+MSMAIL.EXE
+MAPI.DLL
+MSSFS.DLL
+SCHEDMSG.DLL
+Microsoft Mail (Macintosh workstation)
+
+Server (version 3.5 for .EXE)
+-----------------------------
+
+ADMIN.EXE
+EXTERNAL.EXE
+ASYNC.OVL
+X25ATLAN.OVL
+X25EICON.OVL
+IMPORT.EXE
+REBUILD.EXE
+SRVMAIN.EXE
+
+SERVER BUGS FIXED IN MAIL 3.5
+-----------------------------
+
+PC Adm: Microsoft Mail ADMIN.EXE 3.2.17 Update
+----------------------------------------------
+
+   Q107443 File Updated/Modified: ADMIN.EXE
+
+ - With the earlier version of this file, a corrupt .MAI file could be created
+   when you export the address list to a large number of postoffices. ADMIN.EXE
+   has been modified so that the correct .MAI file is created when address lists
+   are exported.
+
+ - With the earlier version of this file, a corrupt SRVCONF.GLB file could be
+   created when you add a directory synchronization (Dir- Sync) requestor on a
+   computer that has an EtherExpress(TM) 16 network card and is running the
+   Ethernet_II protocol. ADMIN.EXE has been modified so that it uses a buffer
+   size of 512 bytes instead of 1K for its buffered I/O.
+
+ - If a Mail Remote for Windows user forgets his or her password or if the
+   password is changed while the remote driver is in use, the password can now
+   be reset.
+
+   NOTE: This password reset only applies to the server files. Local .MMF files
+   will not be affected by this change.
+
+   Notes:
+
+    - To resolve this problem, two files must be updated: the ADMIN.EXE file
+      (included in this update) and the MSRMTUI.DLL file (update included in
+      MSRMTUI.EXE on the MSL).
+
+    - To reset the password, you must ensure that the user's data disk was
+      created using ADMIN.EXE version 3.2.12.
+
+ - Local postoffice users added with the ADMIN.EXE utility will no longer be
+   assigned an invalid identification number if the TID.GLB file is locked open.
+   Also, batch creation of local postoffice users with the ADMIN.EXE utility
+   while the TID.GLB file is locked open no longer results in the same invalid
+   identification number being assigned to multiple users.
+
+ - When you use ADMIN.EXE to change the routing type defined for a hub
+   postoffice, the routing type definition for any downstream postoffice is also
+   updated to match the routing type of the hub postoffice.
+
+ - When you use ADMIN.EXE to remove users from a global group, access to group
+   folders associated with that global group is also removed.
+
+ - Correct figures are now reported when you use the Mail Administrator program
+   to create reports that involve multiple postoffices with more than 32,768
+   users.
+
+ - Groups with names 10 characters long can now be deleted successfully on other
+   postoffices. With versions of ADMIN.EXE earlier than 3.2.12, if a group was
+   deleted from a postoffice participating in Dir-Sync and its name was 10
+   characters long, other postoffices, including the Dir-Sync server, were
+   unable to delete the group from their .USR files.
+
+ - When the Admin account mailbox is greater than eight characters in length,
+   the Keep Updates number will no longer change when you change the
+   Administrator's Name in Config, DirSync, Server, Options.
+
+   NOTE: To fix this problem, you need ADMIN.EXE version 3.2.13 or later
+   (included in this update) and SRVMAIN.EXE version 3.2.13 or later, LISTDS.EXE
+   version 3.2.1, and SCONFIX.EXE (updates included in SRVUPD.EXE on the MSL).
+
+ - When you modify a remote client's account using Admin, Local Admin, Modify,
+   the remote user's Custom View is no longer reset to the Default view.
+
+ - ADMIN.EXE will now report an error writing to nnnnnnnn.XTN file, if locked
+   open by another process.
+
+PC Adm: IMPORT.EXE 3.2.18 Update
+--------------------------------
+
+   Q111556 File Updated/Modified: IMPORT.EXE
+
+ - The Import utility (with the -A option) no longer adds invalid DGN names to
+   the Postoffice Address List (POL) when those names do not appear in the
+   normal .USR files.
+
+ - The Import utility no longer corrupts the MCI.NME file when importing MCI
+   user names. This problem caused the Mail Administrator program to incorrectly
+   display the MCI address information.
+
+ - The Import utility no longer stops responding (hangs) when it processes
+   RESYNC.GLB after doing heavy processing.
+
+   NOTE: To resolve this problem, two .EXE files must be updated: the IMPORT.EXE
+   file (update included in IMPORT.EXE version 3.2.9) and the SRVMAIN.EXE file
+   (update included in SRVMAIN.EXE version 3.2.10).
+
+ - The Import utility now updates FLAG.GLB when it runs, causing the External
+   Mail program to update its address lists on the next cycle interval.
+
+ - The Import utility no longer does 1-byte reads of the template files.
+
+ - When it is importing modified SNADS template information, the Import utility
+   no longer incorrectly sequences the information.
+
+ - When you use the Import utility to modify a user's configuration (any option
+   set with an "&") and that user has remote access, the user's remote
+   access ability is no longer removed.
+
+ - When you use the Modify transaction type to update a user in the POL but you
+   do not make any changes to the user's alias, the user's record is no longer
+   deleted.
+
+ - When you use the -A command-line option to modify template information, the
+   Import utility no longer increases the size of the associated .INF file on
+   each pass. The Import utility now creates a new .INF file that incorporates
+   the changes rather than appending the changes to the existing .INF file.
+
+ - When you use the Import utility to change a user's mailbox name, Error
+   34--"Could not access log information file"--no longer occurs when you start
+   the MS-DOS client.
+
+ - Deleting a local user with Import no longer leaves the user's folder files
+   (.IDX and .FLD) orphaned in the FOLDERS\LOC\0000???? subdirectory of the Mail
+   database.
+
+ - A Microsoft Mail Connection 3.2 PROXYNET\PROXYPO postoffice address list is
+   now propagated to a downstream requestor postoffice when the gateway
+   postoffice is also the directory server postoffice. The Import utility now
+   copies FFAPI postoffice address lists from the directory server to the
+   GLB\RESYNC.GLB file to perform a directory synchronization manual import
+   procedure.
+
+   NOTE: To resolve this problem, two .EXE files must be updated: the IMPORT.EXE
+   file (included in this update) and the SRVMAIN.EXE file (update included in
+   SRVMAIN.EXE version 3.2.10).
+
+ - Local postoffice users added with the Import utility will no longer be
+   assigned an invalid identification number if the TID.GLB file is locked open.
+   Also, batch creation of local postoffice users with the Import utility while
+   the TID.GLB file is locked open no longer results in the same invalid
+   identification number being assigned to multiple users.
+
+ - Trap D errors or "An OS/2 program caused a protection violation" error no
+   longer occurs under OS/2 or under the OS/2 subsystem of Windows NT when you
+   use the Import utility with the -ST command- line option.
+
+ - The Import utility now creates unique mailbag numbers when you add local
+   postoffice users, even if the CONTROL.GLB file has been reset to zero.
+
+ - When you use Import to add a new local user, the Import utility now adds that
+   user's template information to the REQTRANS.GLB. Previously, even if the
+   template information was included in the IMPORT.TXT file, it was not written
+   to the REQTRANS.GLB.
+
+ - When you use Import to create a new template for an external postoffice, the
+   Macintosh client can now read the template information after the first user.
+   Previously, the last field was not visible for any user, and the template
+   information for the second and subsequent users would display incorrectly.
+
+ - When you use Import version 3.2.14 or 3.2.16, and you add users via an Import
+   batch file, these users can have their TID values reset. This will create
+   problems sending mail, adding to groups, and deleting users.
+
+PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update
+---------------------------------------------------------
+
+   Q111558 File Updated/Modified: EXTERNAL.EXE
+
+ - NetBIOS notification does not work when the sender and receiver are on
+   different postoffices and there are multiple External Mail programs running.
+   The only time notification works is if the first External Mail program that
+   was started up dispatches mail between the sender's and receiver's
+   postoffices.
+
+ - On Novell networks, the RNETWORK.GLB file is not updated at 4:00 A.M. on any
+   drives that are dynamically attached.
+
+ - In low-memory conditions, the External Mail program deletes mail from the
+   outgoing mail queue without returning that mail to the sender. There are
+   error messages in the SESSION.LOG and SYSTEM.LOG, but the mail file is still
+   deleted. In most cases, the sender is not notified that the mail was not
+   delivered. With the updated External Mail program, the mail message is not
+   deleted but remains in the outgoing queue, and the External Mail program
+   still attempts to deliver the mail. Because there is not enough memory to
+   return the message to the sender, there is no entry in the SYSTEM.LOG. The
+   administrator can return the mail from the queue.
+
+ - When the EXTERNAL.INI parameter MinKDiskFull is not included in the
+   EXTERNAL.INI file, the default value of 0 is used. This causes the External
+   Mail program to attempt to deliver mail to a postoffice that has no disk
+   space. The default value for MinKDiskFull has now been changed from 0 to
+   100K.
+
+ - When the External Mail program marks a dynamic drive as being full (no disk
+   space), it is not checked again until the External Mail program is restarted.
+   The External Mail program now checks dynamic drives that are full on every
+   cycle and changes their status if disk space becomes available.
+
+ - Messages transferred asynchronously or through an X.25 connection do not get
+   time stamped. Therefore, when you view the received message in Mail for
+   Windows, the received date/time is actually the date/time it was composed,
+   not the date/time it was received by External. The External Mail program now
+   time stamps all messages.
+
+ - The External Mail program sometimes hangs when CommType=X25EICON. The
+   CommType setting can be specified in the .INI file or on the command line for
+   External.
+
+ - Versions 3.2.5 and 3.2.6 of the External Mail program mark a static drive as
+   being full (no disk space) and the drive is not checked again until the
+   External Mail program is restarted. The External Mail program now checks
+   static drives that are full on every cycle and changes their status if disk
+   space becomes available.
+
+ - Mail sent to Remote Mail users would not be recorded in the SENT.LOG file if
+   the LogSent option was specified in the EXTERNAL.INI file or if the -ms
+   command-line option was included when the External Mail program was started.
+   Version 3.2.9 of the External Mail program will correctly log mail sent to
+   Remote Mail users in the SENT.LOG file.
+
+ - When the Import utility is run with the autocreate function, and the External
+   Mail program is also run against the same postoffice across a wide-area
+   network (WAN) connection or in a high mail traffic situation, the Import
+   utility may report "Fatal [59] Error autocreating postoffice: XXXXXXXXXX."
+   This error occurs because of .XTN file contention between the External Mail
+   program and the Import utility. Under normal circumstances, the External Mail
+   program holds an .XTN file open for a very short interval and file contention
+   is not an issue. Version 3.2.9 of the External Mail program now allows the
+   Import utility to have write access to the .XTN file.
+
+ - The External Mail program now determines and uses the appropriate
+   international date format when the MS-DOS country command is used in the
+   CONFIG.SYS file of the workstation running External.
+
+ - The MinKDiskFull and MinKDiskNotFull parameters and their specified values
+   are now recorded in the SESSION.LOG file and are displayed on screen in the
+   External Mail program's LAN Postoffice Mail Activity display area when you
+   use EXTERNAL.INI file entries and the undocumented -q1 command-line switch.
+   Previously, logging of these parameters and their specified values would only
+   occur when you used command-line parameters and the undocumented -q1 command-
+   line switch.
+
+ - The External Mail program fails to lock the queue when another instance of
+   the External Mail program requests two-way asynchronous communication,
+   including X.25. If a third instance of the External Mail program tries to
+   service the same queue to deliver a message that was already deleted by the
+   second instance, the following message may appear in the SYSTEM.LOG file:
+
+   [16] Message was not sent due to missing message file.
+
+ - The External Mail program may hang or create incorrect entries in the
+   SYSTEM.LOG file if External encounters mailbag contention when it tries to
+   deliver a single message to multiple users on a single postoffice. Under
+   these conditions, the External Mail program may add the following entry to
+   the SYSTEM.LOG file
+
+   [008] Failure delivering mail due to mailbag contention.
+   Mail item was not delivered to: <Friendly-Name>
+
+   where <Friendly-Name> may list recipients who actually did receive the
+   message, rather than listing only the recipient whose mailbag could not be
+   accessed. It is also possible that no entries will be added to the SYSTEM.LOG
+   file and External may stop responding. Under Windows NT, the External Mail
+   program may return a general- protection fault (GP fault) and exit, or
+   External may continue processing and add the following entry to the
+   SYSTEM.LOG file on the destination postoffice:
+
+   [012] This corrupt message cannot be delivered. Contact your Administrator.
+
+ - Multiple message attachments can now be sent successfully over an X.25
+   connection.
+
+ - Two entries are now placed in the SENT.LOG file for each message that is
+   transmitted asynchronously between postoffices.
+
+ - The Echo command for modem scripts now works with EXTERNAL.EXE versions 3.2.x
+   and Mail Remote for Windows.
+
+   NOTE: The Echo command is restricted to the Send command and does not affect
+   the Display command.
+
+ - The System log now returns the name of the Invalid Address user after an
+   error 002 (Unknown Address) occurs.
+
+ - In some instances, External would call Mail Remote for MS-DOS or Mail Remote
+   for Windows, make the connection, send mail, but not receive any queued mail
+   for the user. The External Mail program now transmits any queued mail.
+
+ - External was generating an extra P1 file when Mail Remote for Windows
+   attempts to receive mail. These extra P1 files were not being deleted
+   properly, and they were locked open until External was stopped. Although mail
+   was still delivered, the P1 directory could have several stranded P1 files.
+   The External Mail program now deletes the extra P1 files.
+
+ - If a message is sent to another postoffice via asynchronous communication
+   with the Useful Life of the message exceeded and no connection is made, two
+   entries are added to the SYSTEM.LOG. One has valid information, and the other
+   is a blank entry containing no message information.
+
+ - External may report a "Circular route detected" error in the SYSTEM.LOG. This
+   happens when the PO where mail is processed has a 9 character postoffice name
+   that matches the first 9 characters of a 10 character PO name in the
+   hoptrace.
+
+ - External stops delivering mail after it receives a NetBIOS datagram (for a
+   priority 5 mail message) from a user on a PO connected using the DrivesWAN
+   option.
+
+PC DirSync: Microsoft Mail REBUILD.EXE 3.2.16 Update
+----------------------------------------------------
+
+   Q111701 File Update/Modified: REBUILD.EXE
+
+ - This replacement file corrects a problem that occurs on MS-DOS and Macintosh
+   workstations when the GALNETPO.GLB file is regenerated while REBUILD.EXE is
+   running.
+
+ - In certain conditions, Rebuild would complete its process without failing or
+   returning errors. However, the global address list (GAL) would not contain
+   all the expected names.
+
+ - If a network error occurred during the Rebuild process and Rebuild was unable
+   to create or process a temporary file, an error would not be reported.
+
+PC DirSync: Microsoft Mail SRVMAIN.EXE Version 3.2.14 Update
+------------------------------------------------------------
+
+   Q111703 File Update/Modified: SRVMAIN.EXE
+
+IMPORTANT: When you update to SRVMAIN.EXE version 3.2.14, you need to update
+ADMIN.EXE to version 3.2.13 or later (update included in ADMUPD.EXE on the MSL)
+and LISTDS.EXE version 3.2.1 (included with this update). You MUST also run
+SCONFIX.EXE (included with this update) once. This is required for all users
+updating to SRVMAIN.EXE version 3.2.14.
+
+ - The Import utility no longer stops responding (hangs) when it processes
+   RESYNC.GLB after doing heavy processing. This problem occurred because the
+   heap became corrupted when it was under a heavy load.
+
+   NOTE: To resolve this problem, two .EXE files must be updated: the SRVMAIN.EXE
+   file (included in this update) and the IMPORT.EXE file (update included in
+   IMPUPD.EXE on the MSL).
+
+ - The SRVMAIN utility no longer does one-byte reads of the template files.
+
+ - A Microsoft Mail Connection 3.2 PROXYNET\PROXYPO postoffice address list is
+   now propagated to a downstream requestor postoffice when the gateway
+   postoffice is also the directory server postoffice. The Import utility now
+   copies FFAPI postoffice address lists from the directory server to the
+   GLB\RESYNC.GLB file to perform a directory synchronization manual import
+   procedure.
+
+   NOTE: To resolve this problem, two .EXE files must be updated: the SRVMAIN.EXE
+   file (included with this update) and the IMPORT.EXE file (update included in
+   IMPUPD.EXE on the MSL).
+
+ - The directory synchronization (Dir-Sync) server now continues to process
+   updates when SRVMAIN.EXE encounters duplicate entries in the system mailbag.
+   Previously, under these conditions SRVMAIN.EXE would quit without processing
+   any additional updates in the system mailbag, and the following entries would
+   be added to the DIRSYNC.LOG file:
+
+   Error [115] Failure to read mail from NULL
+
+   Warning [8] Error deleting file: <Network>/<Postoffice>/$SYSTEM.
+
+ - Dir-Sync will no longer give error
+
+   Error 156 Invalid Dirsync password from PCM:Network/Postoffice
+
+   during the T2 cycle. Previously, even if the password for the Requestor
+   postoffice was correct, the password of a requestor postoffice would be
+   incorrectly compared against other requestor postoffices listed in the
+   SRVCONF.GLB. Specifically, this occurred when postoffices were registered in
+   a particular order, and the postoffice names were similar to or part of other
+   requestor postoffice names.
+
+ - If the DSSERVER.LOG on a requestor postoffice is corrupt for some reason, the
+   SRVMAIN -r process during Dir-Sync will no longer cause a Trap D.
+
+ - When the Admin account mailbox is greater than eight characters in length,
+   the Keep Updates number will no longer change when you change the
+   Administrator's name in Config, DirSync, Server, Options.
+
+   IMPORTANT: This fix is specifically for users who have an Administrator's
+   mailbox name greater than eight characters, and who want to receive Dir-Sync
+   status messages.
+
+   To add the new Administrator's name, you need ADMIN.EXE version 3.2.13 or
+   later. Run Admin, DirSync, Server, Options. Type in the desired mailbox name.
+   If necessary, re-enter the Keep Updates field. This modified SRVMAIN requires
+   a new LISTDS.EXE version 3.2.1 or later for checking the SRVCONF.GLB file.
+
+ - If X.400 addresses are included in the very first Dir-Sync cycle, Dir-Sync
+   will no longer fail with a protection violation during the T2 cycle of the
+   SRVMAIN process.
+
+CLIENT BUGS FIXED IN MAIL 3.5
+-----------------------------
+
+Simple MAPI Version 3.2.0.4081 Update
+-------------------------------------
+
+   Q95522 File Updated/Modified: MAPI.DLL
+
+ - The sample Visual Basic Simple MAPI application has been modified to compile
+   when you use Microsoft Visual Basic version 2.0.
+
+ - Deleting a message in a shared folder does not function as expected; the
+   message in the folder is deleted, but the header still appears. If you select
+   the header to bring up the message, Mail for Windows returns a dialog box
+   that says "The message cannot be accessed." Also, if you change a message in
+   any way, the message becomes inaccessible.
+
+ - Reply, Reply All, and Forward commands on customer messages in shared folders
+   fail if these commands are called from Mail for Windows. This problem occurs
+   because the client hands off the temporary message ID of the shared folder,
+   instead of the permanent shared-folder message ID.
+
+   NOTE: For this problem to be resolved, two files must be updated: the MAPI.DLL
+   file (included in this update) and the MSMAIL.EXE file (update included in
+   Application Note WA0889).
+
+ - To correctly launch e-forms, Microsoft Electronic Forms Designer requires
+   that the message type it gives to Simple MAPI be preserved in the delivered
+   message. However, the message type is not encoded in WINMAIL.DAT by default,
+   so it is lost across gateways. Therefore, the message is received and
+   displayed as a note rather than as a Microsoft electronic form.
+
+ - Custom forms that did not include their own textize maps could not use the
+   provided default print/save functionality.
+
+   NOTE: To fix this problem, MSSFS.DLL (update included in MSSFS.EXE on the MSL)
+   version 3.2.4081 or later must be used in conjunction with the MAPI.DLL
+   included in this update.
+
+ - When you execute the MAPIAddress() function, an "Out of Memory" error can
+   occur. Thi s problem occurs because a second MAPI session is being started
+   and closed, and the MAPIAddress() function is then executed in the first
+   session.
+
+PC Win: Mail for Windows MSSFS.DLL 3.2.0.4084 Update
+----------------------------------------------------
+
+   File Updated/Modified: MSSFS.DLL
+
+ - When you send mail to an external postoffice group or gateway group that
+   contains extended characters in the address, Mail for Windows does not
+   convert from code page 850 to the ANSI code page when it reads the records
+   from the NETPO.GLB file or any other gateway address file.
+
+ - External postoffices, SNADS DGNs, and nodes for PROFS and OfficeVision are
+   not displayed in alphabetic order because Mail for Windows reads them in one
+   at a time and adds them to the hierarchy. With the updated version of
+   MSSFS.DLL, Mail for Windows reads them in all at once, sorts them, and adds
+   them to the hierarchy.
+
+ - An "Unknown user" error may occur when you send a message. Mail for Windows
+   caches only the first 8170 bytes of the NETWORK.GLB file and loses the rest.
+   Postoffices and gateways that are defined past 8170 bytes are ignored;
+   therefore, you cannot send messages to the users on those postoffices or
+   gateways.
+
+ - The simple MAPI command MAPILogon() does a case-sensitive match on the user
+   name and password; however, Microsoft Mail is not case sensitive. This
+   problem occurs only if a MAPI session was already established when
+   MAPILogon() is called.
+
+ - Incorrect message dates are displayed. When parsing old A.M./P.M. style dates
+   (generated from some gateways), Mail for Windows adds 12 to the time if it is
+   P.M. However, if the message was sent during the noon hour, the time is
+   incorrectly read as 24:xx. Because this is an invalid time, the date is set
+   to the programmer's birthday (12/16/68).
+
+ - Mail for Windows may cause a general protection (GP) fault when it encounters
+   a corrupt .XTN file in the database. It does not properly handle .XTN files
+   that are an incorrect size.
+
+ - Mail for Windows cannot view templates of SNADS or PROFS users when GALONLY=1
+   is set in the MSMAIL.INI file.
+
+ - When you read a custom message from a shared folder, the wrong date is
+   displayed.
+
+ - In version 3.0b of Mail for Windows, the time stamp associated with resolved
+   addresses is not saved correctly: if the Global Address List (GAL) was built
+   twice in the same day, any mail addressed but not sent before the second
+   rebuild could be misdirected. This problem was partially corrected in version
+   3.2 of Mail for Windows: the time stamp is saved correctly, thus reducing the
+   time frame in which this problem could occur from one day to one clock hour.
+   However, mail may still be misdirected at sites where GAL rebuilds are made
+   within the same clock hour.
+
+ - All users running Windows from a shared installation point must use the same
+   postoffice when they use Advanced Security. This problem occurs because the
+   MAIL.DAT file is saved to the Windows SYSTEM subdirectory, which is shared
+   among all users running Windows from the same location. The client now checks
+   both the WINDOWS (user's local directory) and WINDOWS\SYSTEM directories, in
+   that order, for the MAIL.DAT file.
+
+   NOTE: To resolve this problem when you are installing Mail for Windows, two
+   files must be updated: the MSSFS.DLL file (included with this update) and the
+   SETUP.EXE file (update included in SETUPD.EXE on the MSL).
+
+ - Duplicate addresses are added to the Personal Address Book (PAB).
+
+   NOTE: To resolve this problem, two .DLL files must be updated: the MSSFS.DLL
+   file (included with this update) and the PABNSP.DLL file (update included in
+   Application Note WA0887).
+
+ - If users are running Mail for Windows from a shared installation point and
+   the NETBIOS=1 flag is set in the MSMAIL.INI file, Mail checks the size, date,
+   and time of the MSMAIL.INI file every 5 seconds. Because the .INI file is on
+   the network, frames are sent to the server to check the size of the file
+   every 5 seconds, thus increasing traffic on the network. These checks no
+   longer occur with this update.
+
+ - When an urgent message is sent to an external user with NetBIOS notification
+   in use, Mail for Windows does not send a NetBIOS datagram to the External
+   Mail program. This process does work correctly when an urgent message is sent
+   to a local user. When sending urgent messages, Mail for Windows now sends
+   notifications to the External Mail program when NetBIOS notification is in
+   use.
+
+ - MACBinary II attachments are not recognized when originating from external
+   Mail Systems.
+
+ - When sending mail such that the number of recipients is greater than 200
+   (exact number depends on the specific address list), the body of the message
+   will be missing.
+
+ - When Add Recipients to Personal Address Book is selected, the GAL.NME file is
+   locked open each time a global address list (GAL) name is added to a compose
+   note.
+
+ - In certain situations, viewing details of an external name from a group
+   results in the error message:
+
+   A GLB file on your server is corrupt.
+
+ - If a message has more than 22 recipients selected from the GAL and that
+   message is stored in a shared folder, the message appears to be corrupted.
+   Attempting to open the message from the shared folder results in the error:
+
+   Mail system error, Mail could not read the entire message from the Post
+   Office. Some parts of the message may be missing. Ask the sender to resend
+   the message.
+
+ - Under certain conditions, a general protection (GP) fault can occur in
+   MSSFS.DLL when the MAPILogon() function is used to begin a session with the
+   messaging system.
+
+ - The Check Names function fails to properly resolve partial friendly names and
+   returns several selections when a unique resolution is possible. This
+   behavior is most obvious when the GAL is selected as the default address list
+   and the first and last name of the intended recipient begin with the same
+   letter.
+
+   NOTE: To resolve this problem, two .DLL files must be updated: the MSSFS.DLL
+   file (this update) and the MAILMGR.DLL file (update included in Application
+   Note WA1058).
+
+ - The Windows client stops responding when it receives a message with an
+   invalid time; that is, a time greater than 23 hours.
+
+ - Templates that were created with extended characters will lose their extended
+   characters when they are exported to other postoffices.
+
+ - The Windows client cannot display a template field of zero length. These are
+   display fields only and cannot be modified.
+
+ - Custom forms that did not include their own textize maps could not use the
+   provided default print/save functionality.
+
+   NOTE: To fix this problem, MAPI.DLL version 3.2.4081 (available as MAPIUPD.EXE
+   on the MSL) MUST be used with this MSSFS.DLL.
+
+ - When you have more than one friendly name for the same PROFS userid, and you
+   attempt to get details from the GAL in the Windows client, incorrect
+   information is displayed.
+
+ - When you add multiple users from the GAL with the same friendly name to the
+   PAB or to Personal Groups, only the first entry gets added. No errors are
+   reported.
+
+PC Mac: Macintosh Client Version 3.0.6 Update
+---------------------------------------------
+
+   Q103945 File Updated/Modified: MACLIENT.HQX
+
+ - With the earlier version of this file, the computer could stop responding
+   when sending a message to a personal group under low memory conditions. The
+   Macintosh client file has been modified to correct this problem.
+
+ - Some network operating systems will not allow a file to be created in all
+   uppercase letters. The Macintosh client file has been modified for these
+   types of networks to allow the client to create filenames in lowercase
+   letters if LOWRCASE.GLB exists in the GLB subdirectory of the Mail database.
+
+ - With the earlier version of this file, when mail is sent to global groups
+   that contain nonalphabetic characters in their names, the recipient field
+   appears blank when the message is viewed by a Mail for Windows user. The
+   Macintosh client file has been modified to correct this problem.
+
+ - Extended template information that exceeds 64K is now correctly displayed
+   when you choose the Info button in the Addressing dialog box of the Macintosh
+   client.
+
+ - The Macintosh client has been modified to enable you to address mail to an
+   X.400 recipient when the address exceeds 52 characters. Attempting to do this
+   with previous versions of the Macintosh client could produce the following
+   error message:
+
+   The application "unknown" has unexpectedly quit, because an error of type 1
+   occurred. OK?
+
+ - If you attempt to forward a message in the Macintosh client, and you choose
+   not to forward an attachment to that message, the following error message is
+   generated:
+
+   Low on Memory. Unable to complete the operation. Please close some windows.
+
+   The Macintosh client has been modified to forward the message without
+   generating the error.
+
+ - On a Power Macintosh, if the check box Open "To" Address Selector (from the
+   Compose menu, select Get Info) is selected, and you attempt to forward or
+   reply to a message, the following error message is generated and can hang the
+   machine:
+
+   The system has closed the following application "Unknown" because of an error
+   type 1".
+
+   The Macintosh client has been modified to forward or reply to a message
+   without generating the error or hanging the machine.
+
+PC Win: Mail for Windows MSMAIL.EXE 3.20.4085 Update
+----------------------------------------------------
+
+   Q111557 File Updated/Modified: MSMAIL.EXE
+
+ - When an open custom message is deleted from a shared folder, the message
+   header still appears in the folder. Trying to open the message again results
+   in the error
+
+   The message cannot be accessed.
+
+ - You cannot do a Reply, Reply All, or Forward on a custom message that is
+   located in a shared folder.
+
+   NOTE: For this problem to be resolved, two files must be updated: the
+   MSMAIL.EXE file (included in this update) and the MAPI.DLL file (update
+   included in MAPIUPD.EXE on the MSL).
+
+ - An error is now generated when the ACCESS.GLB file is locked open and a user
+   attempts to change his or her password.
+
+PC Adm: Microsoft Mail MMFCLEAN.EXE Utility
+-------------------------------------------
+
+   Q117693 File Updated/Modified: MMFCLEAN.EXE
+
+Currently, there is no way for an administrator to monitor or manage space
+consumed by a Windows or OS/2 Mail user on a version 3.0 or later Microsoft Mail
+postoffice (PO). In versions of Microsoft Mail earlier than version 3.0, the
+administrator could purge mail messages for all users on the PO. When the mail
+message file (MMF) architecture of versions 3.0 and later of Microsoft Mail for
+Windows was introduced, the administrator lost the ability to purge mail
+messages stored in the MMFs.
+
+The MMFCLEAN utility included in this Application Note is a Windows(TM) based
+application to be used on Microsoft Mail 3.0 and later postoffices to purge mail
+from MMFs. MMFs usually exist on the PO and contain the users' private mail
+messages and folders. There is one MMF per Windows user on the PO. By default,
+the Windows user will have his or her MMF file stored on the PO, but the user
+can choose to store the MMF file on his or her local machine. The MMFCLEAN
+utility matches the capability of the Mail Administrator program. The
+administrator should run it from a Windows 3.0 or 3.1, or Windows for Workgroups
+3.1 or 3.11 local area network (LAN) client connected to the PO over the
+network.
+
+You can use the MMFCLEAN utility to clean the MMF according to the following
+criteria:
+
+ - Message Age days
+
+ - All messages with size greater than XXX
+
+ - Message priority
+
+Things to Note Before Running MMFCLEAN
+--------------------------------------
+
+WARNING: Before you use the MMFCLEAN utility to clean the database, make an
+additional backup copy of your Microsoft Mail postoffice. If an error occurs
+during a fix, you can restore the backup made immediately before you used the
+MMFCLEAN utility. In all other circumstances, you should restore the database
+from your most recent regularly scheduled backup.
+
+ - Available disk space should be three times the size of the largest MMF.
+
+ - Do not use an active PO; all users should be logged off and the PO should be
+   backed up.
+
+ - File Scan is required for Novell networks.
+
+ - MMFs not stored on the PO will not be included; any MMFs stored on a user's
+   local drive or on another server will not be cleaned.
+
+ - No other Mail application should be running on the workstation when you start
+   the MMFCLEAN utility.
+
+ - The Just Compress check box in the Criteria dialog box overrides all other
+   criteria. Remember that when a cleaning is done, a compress is also
+   automatically done.
+
+   Important: When MMFCLEAN does comparisons on the aging date, the creation date
+   of the message is used instead of the date the user received the message.
+   This means that if a user was on vacation for a week and then came in and
+   downloaded his new messages to his MMF, the user's message could get deleted
+   right after it is read if the criteria for MMFCLEAN is Read Mail Greater Than
+   7 Days. We are currently investigating how to change this limitation.
+
+PC Win: Mail SCHEDMSG.DLL Version 3.2.4086 Update
+-------------------------------------------------
+
+   Q129997 File Updated/Modified: SCHEDMSG.DLL
+
+ - When an assistant responds to a meeting request on behalf of a Schedule+ for
+   Windows user, who has no .CAL file, the requestor receives the following
+   message:
+
+   Sent on behalf of %S.
+
+   The meeting requestor is unable to determine who the mail was sent on behalf
+   of.
+
+Additional query words: 3.50 wga
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

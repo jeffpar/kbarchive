@@ -1,0 +1,80 @@
+DOCUMENT:Q239829  27-OCT-2000  [winnt]
+TITLE   :How to Automate Uninstalling the DLC Protocol
+PRODUCT :Microsoft Windows NT
+PROD/VER:NT:4.0,4.5
+OPER/SYS:
+KEYWORDS:kbenv kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server versions 4.0, 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can uninstall the data link control (DLC) protocol only by using the
+graphical user interface (GUI). This method is not efficient or flexible if you
+want to uninstall the DLC protocol on many computers. However, you can automate
+the uninstallation using the Setup.exe file located in the %SystemRoot%\System32
+folder.
+
+MORE INFORMATION
+================
+
+To uninstall the DLC protocol, you must first uninstall the protocol and then
+update the bindings using the following steps:
+
+1. Create a batch or script file and give it a name (for example, Unistdlc.bat).
+
+2. Make sure the Oemnxpdl.inf file is available in the %SystemRoot%\System32
+   folder.
+
+3. Type the following commands into the batch file:
+
+   cd %SystemRoot%
+   setup.exe /f /i%SystemRoot%\system32\ncpashel.inf /t NTN_InstallMode =
+   deinstall /t NTN_Origination = deinstall /t NTN_Infname =
+   %SystemRoot%\system32\oemnxpdl.inf /t NTN_SRCPATH = %SystemRoot%\system32 /T
+   NTN_Infoption = DLC
+
+NOTE: The command line that begins with "Setup.exe" must be on one line without a
+carriage return (CR) or line feed (LF). It is wrapped in this article for
+readability purposes.
+
+4. Save and close the batch file.
+
+5. Run the batch file to uninstall the DLC protocol.
+
+6. Update the bindings by running the Runncpa.exe tool from Microsoft BackOffice
+   SNA Server at a command prompt.
+
+
+7. Restart your computer.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ400 kbBackOfficeServ450
+Version           : NT:4.0,4.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

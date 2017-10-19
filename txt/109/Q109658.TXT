@@ -1,0 +1,78 @@
+DOCUMENT:Q109658  08-NOV-2001  [homemm]
+TITLE   :Asimov: No Sound Included with QuickTime Movies
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Isaac Asimov's The Ultimate Robot for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using Sound Manager 3.0, you may find that when you play QuickTime
+movies in Asimov's Ultimate Robot, you can't hear the soundtrack. This problem
+may occur after you have opened and exited from the Robotoid Assembly Toolkit.
+
+Microsoft has confirmed this to be a problem in Sound Manager version 3.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To regain sound in your movies, follow these steps:
+
+1. Click on the Dialog or Credits buttons. This should cause the sound system to
+   begin working again.
+
+2. When the Dialog or Credits sounds have stopped playing, try running the
+   QuickTime movie again.
+
+The QuickTime movie should now play correctly, with sound included.
+
+MORE INFORMATION
+================
+
+To determine whether or not you have Sound Manager 3.0 installed, follow these
+steps:
+
+1. Open the System Folder.
+
+2. Open the Extensions Folder.
+
+3. Look for a file named Sound Manager. Click on it and choose Get Info from the
+   File menu.
+
+The info screen will list the file's version.
+
+Using this method, you can see if you have Sound Manager installed and determine
+whether or not it is version 3.0.
+
+Additional query words: mac 1.00 multi media multimedia multi-media robots video clips soundtrack audio animation clip hypercard
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch _IKkbbogus kbAsimovSearch kbAsimovUltimateRobotMac
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

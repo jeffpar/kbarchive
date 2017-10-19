@@ -1,0 +1,67 @@
+DOCUMENT:Q104728  21-NOV-1999  [msdos]
+TITLE   :DoubleGuard Message Includes "Press Any Key to Continue"
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+If you are running Windows when DoubleSpace DoubleGuard detects a data integrity
+problem, the following message is displayed
+
+   DoubleGuard Alarm #<nn>
+
+   A program has corrupted memory belonging to DoubleSpace. Further disk activity
+   could result in the loss of some or all of the data on your drive. Therefore,
+   DoubleGuard has halted your computer. For more information, see the
+   README.TXT file.
+
+   Press any key to continue.
+
+where nn is 13, 14, 15, or 16. Pressing any key has no effect.
+
+CAUSE
+=====
+
+The "Press any key to continue" message is placed on the screen by Windows and
+cannot be controlled by MS-DOS. Windows displays this message by default since
+it does not expect the MS-DOS-based application (in this case, DoubleSpace) to
+cause your system to stop responding (hang).
+
+For more information on DoubleSpace and DoubleGuard, type "help doubleguard"
+(without the quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+Additional query words: 6.20 dblspace dblguard
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

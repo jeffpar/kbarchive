@@ -1,0 +1,58 @@
+DOCUMENT:Q175130  11-MAR-1999  [exchange]
+TITLE   :XADM: Initialization of DLL Fails Starting Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+During computer startup, the following error message may appear:
+
+   Store.exe - DLL Initialization Failed
+   Initialization of the dynamic link library
+   c:\winnt\system32\imagehlp.dll
+   failed. The process is terminating abnormally.
+
+CAUSE
+=====
+
+This error may occur if the system is running low on virtual memory. Depending
+on the amount of resources available, one or more services may report this
+error.
+
+RESOLUTION
+==========
+
+You may increase the amount of virtual memory by going to Control Panel,
+clicking the System icon, and clicking the Performance tab. Increasing the
+amount of physical memory on this computer may also be necessary.
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

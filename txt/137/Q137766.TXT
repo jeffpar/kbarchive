@@ -1,0 +1,52 @@
+DOCUMENT:Q137766  13-DEC-1999  [homemm]
+TITLE   :Bookshelf: Spell Cannot Check Multiple Words
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1995 edition 
+ - Microsoft Bookshelf '95 for Windows 95 
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Bookshelf spelling checker cannot check the spelling of more than one word
+at a time. If you enter more than one misspelled word in the Find tab and then
+click the Spelling icon, Bookshelf checks the spelling of only the first
+misspelled word.
+
+RESOLUTION
+==========
+
+Use the spelling checker on only one word at a time.
+
+
+Additional query words: 1995multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995 kbBookShelf1996 kbBookShelf1997
+Version           : :1995 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

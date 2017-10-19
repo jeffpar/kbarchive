@@ -1,0 +1,59 @@
+DOCUMENT:Q172507  09-AUG-2001  [winnt]
+TITLE   :Resources go Offline and Online Repeatedly in Cluster Admin.
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to bring a resource online within Microsoft Cluster Server, the
+resource may alternate between an online and offline state.
+
+CAUSE
+=====
+
+The resource may change states repeatedly if the properties for the resource are
+invalid. Invalid resource properties may cause resource failure. Microsoft
+Cluster Server will attempt to resolve the situation according to failover
+parameters for the resource. By default, the cluster will attempt to restart the
+failed resource.
+
+
+RESOLUTION
+==========
+
+To correct this problem, verify the properties of the resource and change
+incorrect settings as necessary.
+
+Additional query words: MSCS
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

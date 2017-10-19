@@ -1,0 +1,68 @@
+DOCUMENT:Q101724  04-OCT-1999  [win95x]
+TITLE   :Drive Mappings with NWShareHandles and RestoreDrives
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are using Novell NetWare in conjunction with Microsoft Windows and you
+try to change drive mappings inside a virtual machine (VM), the condition of
+those drive mappings after you exit the VM depends on two Novell Netware
+switches: NWshareHandles and RestoreDrives.
+
+Both these switches are set in the 386 Enhanced section of the Network dialog box
+in Control Panel. Changing these settings modifies the following lines in the
+NetWare section of the SYSTEM.INI file:
+
+   NWShareHandles= <true> or <false>
+   RestoreDrives= <true> or <false>
+
+MORE INFORMATION
+================
+
+The default setting of NWShareHandles=FALSE causes NetWare to behave with the
+Inherited-visibility method. The optional setting of NWShareHandles=True makes
+the 386 enhanced mode NetWare driver use the Global-visibility method instead.
+
+The NWShareHandles setting is a function of the Novell redirector.With this
+setting set to False, new virtual machines (VMs) inherit mappings from the
+MS-DOS environment. However, if you add a mapping, it appears only in that VM.
+Base mappings remain untouched and new ones in each VM are unique.
+
+When you exit Windows and RestoreDrives is set to True, Windows restores your
+mappings to the way things were before you started Windows. This is important
+because mappings change as you use them, especially if they are not map rooted.
+
+Additional query words: 3.1 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

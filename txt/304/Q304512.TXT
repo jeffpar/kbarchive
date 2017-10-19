@@ -1,0 +1,67 @@
+DOCUMENT:Q304512  06-AUG-2002  [winnt]
+TITLE   :Err Msg: The Procedure Entry Point UnMapLS Could Not Be...
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Microsoft Management Console (MMC) version 1.2 on a Windows NT
+4.0-based computer, you may receive the following error message:
+
+   Setup.exe - Entry Point Not Found.
+
+   The procedure entry point UnMapLS could not be located in the dynamic link
+   library Kernel32.dll
+
+CAUSE
+=====
+
+This error message may occur if the Microsoft Windows 98 version of the
+Msvfw32.dll file (version 4.10.0.1998) is located in the %SystemRoot%\System32
+folder or in the path. The correct version of the Msvfw32.dll file for Windows
+NT 4.0 is version 4.0.1371.1.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, expand the Msvfw32.dl_ file from the Windows NT 4.0
+CD-ROM to the hard disk. Use the following command, where <cdrom_drive> is
+the drive letter for the CD-ROM drive that contains the Windows NT 4.0 CD-ROM:
+
+   expand -r <cdrom_drive>:\i386\msvfw32.dl_ %systemroot%\system32
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

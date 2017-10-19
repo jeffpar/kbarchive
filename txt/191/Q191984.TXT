@@ -1,0 +1,98 @@
+DOCUMENT:Q191984  09-AUG-2001  [winnt]
+TITLE   :DHCP Relay Agent Fails to Start after Install
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the DHCP relay agent on a computer running Windows NT 4.0
+Server, you may receive the following error after restarting your computer:
+
+   At least one service or driver has failed to start. Check the Event log for
+   details.
+
+When you check the Event log, you find the following information:
+
+   Event 25017 Source: Relay Agent
+   "No network interfaces are available for relaying messages on. The Relay
+   Agent is exiting."
+
+   -and-
+
+   Event 7024 Source: Service Control Manager
+   "The DHCP Relay Agent service terminated with service-specific error 1."
+
+If you try to start the DHCP Relay Agent service manually through Control Panel,
+Services, you receive the message:
+
+   "The DHCP Relay Agent service terminated with service-specific error 1."
+
+CAUSE
+=====
+
+The DHCP Relay Agent fails to invoke a protocol rebinding when it is installed.
+This will only occur when the DHCP Relay Agent is installed using the DHCP Relay
+Agent tab in Properties for TCP/IP. Normal installation as a service through
+Control Panel\Network\Services\Add will work correctly.
+
+RESOLUTION
+==========
+
+To resolve this issue, complete the following steps:
+
+1. Click Start, go to Settings and choose Control Panel.
+
+2. Double-click Network and choose the Services tab.
+
+3. Choose the DHCP Relay Agent service and press the Remove button.
+
+4. Once the DHCP Relay Agent has been removed, press the Add button.
+
+5. Choose the DHCP Relay Agent service and press the OK button.
+
+6. Follow the steps for installing the service.
+
+When the component has been added, choose Close. The computer will go through its
+rebinding and you will be prompted to enter the DHCP Relay Agent configuration
+and then asked to restart. Allow the computer to restart.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server 4.0.
+This problem is resolved in Windows 2000 Server.
+
+Additional query words: BOOTP 1542
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

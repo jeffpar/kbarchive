@@ -1,0 +1,77 @@
+DOCUMENT:Q149718  17-DEC-2000  [win95x]
+TITLE   :How to Change SPIDs in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to check or change the SPID settings in Windows 95
+after you have installed the ISDN Accelerator Pack for Internet Explorer 2.0
+
+MORE INFORMATION
+================
+
+A Service Provider ID (SPID) is the number by which an ISDN service provider is
+known. This number is critical to establishing two-way communications using ISDN
+phone services.
+
+To check or change the SPID settings in Windows 95, perform the following steps:
+
+1. In My Computer, double-click Dial-Up Networking.
+
+2. Use the right mouse button to click a connection, and then click Properties
+   on the menu that appears.
+
+3. Verify that the ISDN adapter is selected in the Connect Using box.
+
+4. Click Configure, and then click Advanced.
+
+5. Compare the SPIDs to the numbers provided by the telephone company. If the
+   SPIDs are incorrect, you cannot connect using ISDN.
+
+6. If you were provided a voice SPID and a data SPID, the data SPID should be
+   entered in the Channel 1 field. If the SPIDs are voice/data, they can be
+   entered in any order.
+
+7. If the SPIDs are incorrect, click Modify. A Channel Settings dialog box
+   should be displayed. If not, click the channel number so select the SPID to
+   change, and then click Modify again.
+
+   NOTE: Make sure to click the number. Clicking too far to the right does not
+   work.
+
+   After you modify the SPID, click OK. You must click the second channel number
+   and click Modify to edit another SPID. A line may have one or two SPIDs.
+
+8. Click OK until all dialog boxes are closed.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

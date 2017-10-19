@@ -1,0 +1,67 @@
+DOCUMENT:Q136598  08-NOV-1999  [pcmail]
+TITLE   :PC Ext: Cannot Initiate Connection to External Asynchronous PO
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0a,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0a, 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure and run the EXTERNAL.EXE program to connect postoffices via
+asynchronous communication, the session can only successfully be initialized by
+either the sending or receiving end, not both.
+
+CAUSE
+=====
+
+The postoffice (PO) on the receiving end of the connection has a corrupt or zero
+(0) byte FLAG.GLB.
+
+FLAG.GLB is a static file that should be 2 bytes in size.
+
+RESOLUTION
+==========
+
+Copy the FLAG.GLB from a postoffice that is working. If another postoffice is
+not available, install a "dummy" postoffice to a local drive, and copy the file
+to the \MAILDATA\GLB directory on the problem postoffice.
+
+MORE INFORMATION
+================
+
+FLAG.GLB is used to lock other External Mail programs from connecting to the
+postoffice.
+
+This problem will also occur when you use version 3.2 of Microsoft Mail
+Multitasking MTA.
+
+Additional query words: 3.00a 3.20 3.20a Windows NT OS/2 mta
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300a
+Version           : WINDOWS:3.0a,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

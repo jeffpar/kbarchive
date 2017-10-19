@@ -1,0 +1,56 @@
+DOCUMENT:Q184393  06-JAN-2001  [iis]
+TITLE   :INFO: Script Errors Using HTMLA When Shift-Clicking Links
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:4.0; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Explorer version 4.0 for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the HTML Administrator (HTMLA) for Internet Information Server
+(IIS) version 4.0, holding down the SHIFT key while clicking links in Internet
+Explorer 4.0 (IE4) may produce the following error message in your browser:
+
+   Internet Explorer Script Error
+   An error has occurred in the script on this page.
+   Error: Object expected
+
+CAUSE
+=====
+
+Holding down the SHIFT key in Internet Explorer 4.0 forces the browser to load
+the page into a new instance of the browser, so all scripted object links to the
+referring page or frame are broken.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbIEsearch kbiis400 kbIE95Search kbZNotKeyword3 kbIE400Win95
+Version           : WINDOWS:4.0; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

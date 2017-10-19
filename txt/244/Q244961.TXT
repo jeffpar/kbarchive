@@ -1,0 +1,121 @@
+DOCUMENT:Q244961  20-MAY-2002  [ssafe]
+TITLE   :FIX: Analyze.exe -f Replaces Project Data Files with 0 Byte File
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbSSafe600 kbSSafe600fix kbSSExplorer kbAnalyze kbDSupport kbSSafe600qfe kbVS600sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running Analyze.exe -f on a database after archiving and restoring can result in
+some files being truncated to 0 bytes.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is available in Visual Studio 6.0
+Service Pack 5. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
++-------------------------------------------------------------------------+
+| Name         | Size      | Date       | Time     | Version#  | Platform | 
++-------------------------------------------------------------------------+
+| analyze.exe  | 211,968   | 10/22/1999 | 01:27 AM | 6.0.86.60 | x86      | 
++-------------------------------------------------------------------------+
+| ddconv.exe   | 310,784   | 10/22/1999 | 12:55 AM | none      | x86      | 
++-------------------------------------------------------------------------+
+| ddupd.exe    | 443,392   | 10/22/1999 | 12:58 AM | none      | x86      | 
++-------------------------------------------------------------------------+
+| ss.exe       | 415,744   | 10/22/1999 | 12:48 AM | none      | x86      | 
++-------------------------------------------------------------------------+
+| ssapi.dll    | 591,360   | 10/22/1999 | 12:52 AM | 6.0.86.60 | x86      | 
++-------------------------------------------------------------------------+
+| ssarc.exe    | 528,384   | 10/22/1999 | 01:02 AM | 6.0.86.60 | x86      | 
++-------------------------------------------------------------------------+
+| ssrestor.exe | 526,336   | 10/22/1999 | 01:05 AM | 6.0.86.60 | x86      | 
++-------------------------------------------------------------------------+
+| ssscc.dll    | 1,501,696 | 10/22/1999 | 01:38 AM | 6.0.86.60 | x86      | 
++-------------------------------------------------------------------------+
+
+All files are contained in a self-extracting EXE.
+
++------------------------------------------------------------+
+| Name        | Size      | Date       | Time     | Platform | 
++------------------------------------------------------------+
+| VSS8660.EXE | 2,178,219 | 10/31/1999 | 11:31 AM | x86      | 
++------------------------------------------------------------+
+
+
+NOTE: If this product was already installed on your computer when you purchased
+it from the Original Equipment Manufacturer (OEM) and you need this fix, please
+call the Pay Per Incident number listed on the above Web site. If you contact
+Microsoft to obtain this fix, a fee may be charged. This fee is refundable if it
+is determined that you only require the fix you requested. However, this fee is
+non-refundable if you request additional technical support, if your no-charge
+technical support period has expired, or if you are not eligible for standard
+no-charge technical support.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the latest service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+   Visual Studio Product Updates
+   (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbSSafe600 kbSSafe600fix kbSSExplorer kbAnalyze kbDSupport kbSSafe600qfe kbVS600sp4fix kbVS600sp5fix kbSSafeAnalyze 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,58 @@
+DOCUMENT:Q68252  30-JUL-2001  [homegame]
+TITLE   :ASD: Converting Latitude/Longitude to FS Coordinates
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Aircraft & Scenery Designer (ASD) allows you to enter latitude and longitude
+coordinates in the Design Preferences option of the Static Scenery Designer. To
+convert to an equivalent Flight Simulator (FS) coordinate, use the following
+steps:
+
+1. Press 1, J, 1, L for Design Preferences.
+
+2. Press 0 to cycle through the location systems.
+
+3. Enter the desired latitude and longitude using options A-F.
+
+4. Press ESC to exit, then press L to reenter Design Preferences.
+
+5. Press 0 (zero) until FS Coordinate System is selected.
+
+Similar steps may be used to convert Flight Simulator coordinates to an
+approximate latitude and longitude.
+
+MORE INFORMATION
+================
+
+The ASD location systems for latitude and longitude are an approximate
+conversion based on the flat Flight Simulator world. When latitude or longitude
+coordinates are entered, they are converted to an FS coordinate that is used
+internally by the software. When an FS coordinate is entered, its values remain
+precise.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

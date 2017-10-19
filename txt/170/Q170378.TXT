@@ -1,0 +1,65 @@
+DOCUMENT:Q170378  28-APR-1999  [exchange]
+TITLE   :XADM: Removing SMTP Addresses for All Users
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It may be necessary to eliminate SMTP addresses for your entire Microsoft
+Exchange Server site. When you delete the addresses on the site addressing
+level, you will be unable to edit and change the SMTP attributes on the site
+level.
+
+MORE INFORMATION
+================
+
+It is possible to remove all SMTP addresses on the server level through the
+Microsoft Exchange Server Import/Export feature by following these steps:
+
+1. Create a .csv file with the attribute E-mail Addresses.
+
+2. Edit a sample .csv file located on the Exchange Server CD in
+   Support\Samples\Csvs\Mailbox, or generate a .csv file by using the Header.exe
+   program supplied with the Microsoft Exchange Server Resource Kit.
+
+3. When you use this .csv file and export the server's recipient list, edit
+   "SMTP:user@host.ext" by deleting the e-mail address; only "SMTP:" should
+   remain.
+
+4. Save the contents and import the new .csv file back to the server.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q155414 Bulk Import/Export FAQ
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

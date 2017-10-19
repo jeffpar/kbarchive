@@ -1,0 +1,46 @@
+DOCUMENT:Q104217  08-DEC-1999  [homemm]
+TITLE   :Dinosaurs: Different Depictions May Look Slightly Different
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Dinosaurs, different depictions of the same dinosaur may differ
+slightly. For example, the miniature picture in the upper-left corner of a
+screen may show different coloration than that used in the main illustration.
+This is because the artwork was taken from many different sources, and because
+many aspects of dinosaurs' appearance are matters of conjecture. There is no way
+to know for sure what color, for example, any dinosaur was.
+
+Additional query words: multi media multimedia multi-media picons picon graphics dinos Usage C
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

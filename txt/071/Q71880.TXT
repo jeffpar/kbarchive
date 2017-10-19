@@ -1,0 +1,64 @@
+DOCUMENT:Q71880  17-OCT-1999  [win95x]
+TITLE   :Cannot Find File _DEFAULT.BAT
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you execute _DEFAULT.PIF from File Manager, the following error message is
+displayed:
+
+   Cannot find file, _default.bat
+
+CAUSE
+=====
+
+This is by design.
+
+_DEFAULT.PIF should not be manually executed from anywhere inside Windows. The
+_DEFAULT.PIF file is used automatically for MS-DOS applications that do not have
+a PIF. If changes are made to _DEFAULT.PIF, they are used when MS-DOS
+applications without PIFs are started under Windows.
+
+NOTE: The file referenced in the error message, _DEFAULT.BAT, does not really
+exist. It is a dummy variable used as a placeholder to allow _DEFAULT.PIF to be
+saved (see page 449 in the "Microsoft Windows User's Guide").
+
+MORE INFORMATION
+================
+
+Please refer to page 448 of the "Microsoft Windows User's Guide" for more
+information on PIFs.
+
+Additional query words: 3.00 win30 3.00a program information file
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,174 @@
+DOCUMENT:Q248194  01-MAY-2001  [ssafe]
+TITLE   :BUG: get_Version Returns S_OK Even if the Version Does Not Exist
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAutomation kbSSafe500bug kbSSafe600bug _IK kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to get a specific version of a file or project, the get_Version
+function returns successfully and has a valid item even if that item does not
+exist in the database.
+
+RESOLUTION
+==========
+
+Instead of checking the HRESULT or whether the IVSSItem is not null, check the
+get_VersionNumber after calling get_Version. Compare the version numbers to make
+sure the version is valid. For example, place the following code inside the
+pVdb->get_VSSItem if statement:
+
+   // Used to store the latest version number of the item
+   long originalnumber, num;
+
+   // Store the latest version number of the item
+   vssi->get_VersionNumber(&originalnumber);
+
+   // Get the version at the label (this label will fail)
+   CComVariant varLabel = -51;
+   vssi->get_Version(varLabel, &vx);
+
+   // Get the version number of the returned item
+   vx->get_VersionNumber(&num);
+
+   // Compare the versions and see if the item is valid
+   if ( num > 0 && num <= originalnumber )
+      printf("Valid label.");
+
+   // Release the item
+   vx->Release();
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Win32 Console Application in Microsoft Visual C++.
+
+2. Add the following code to the project.
+
+NOTE: This is the same code as in the following Microsoft Knowledge Base
+Article:
+
+   Q169927 HOWTO: Get History Using SourceSafe OLE Automation in C++
+
+
+   #include <atlbase.h>
+   #include <comdef.h>
+   #include <initguid.h>
+   #include "ssauto.h"
+
+   int main ()
+   {
+      CLSID clsid;
+      IClassFactory *pClf;
+      IVSSDatabase *pVdb;
+      BSTR bstrPath = SysAllocString(L"c:\\Program Files\\Microsoft Visual Studio\\Common\\VSS\\srcsafe.ini");
+      BSTR bstrUName = SysAllocString(L"guest");
+      BSTR bstrUPass = SysAllocString(L"");
+
+      CoInitialize(0);
+      if(S_OK == CLSIDFromProgID(L"SourceSafe", &clsid ))
+      {
+         if(S_OK == CoGetClassObject( clsid, CLSCTX_ALL, NULL,
+            IID_IClassFactory, (void**)&pClf ))
+         {
+            if(S_OK == pClf->CreateInstance( NULL, IID_IVSSDatabase,
+               (void **) &pVdb ))
+            {
+               if(S_OK == pVdb->Open(bstrPath, bstrUName, bstrUPass))
+               {
+                  // Get the root project
+                  BSTR bstrName = SysAllocString(L"$/");
+                  IVSSItem *vx;
+                  IVSSItem *vssi;
+
+                  if( S_OK == pVdb->get_VSSItem(bstrName, FALSE, &vssi) )
+                  {
+                     // Get the version at the label (this label should fail)
+                     CComVariant varLabel = -51;
+                     if( S_OK == vssi->get_Version(varLabel, &vx) )
+                     {
+                        // This prints out even though the label in invalid
+                        printf("Should not be here.");
+
+                        vx->Release();
+                     }
+
+                     vssi->Release();
+                  }
+
+                  SysFreeString(bstrName);
+               }
+
+               pVdb->Release();
+            }
+
+            pClf->Release();
+         }
+      }
+
+      CoUninitialize();
+
+      SysFreeString(bstrPath);
+      SysFreeString(bstrUName);
+      SysFreeString(bstrUPass);
+      return 0;
+   }
+
+3. Download and add the ssauto.h header file that is used to integrate with
+   Visual SourceSafe from the following Microsoft Web site:
+
+   Microsoft Visual SourceSafe Home Page
+
+4. Run the program.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q196197 PRB: Getting a File from Project Label Using OLE Automation
+
+Additional query words: ssauto
+
+======================================================================
+Keywords          : kbAutomation kbSSafe500bug kbSSafe600bug _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

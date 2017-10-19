@@ -1,0 +1,68 @@
+DOCUMENT:Q134571  17-DEC-2000  [win95x]
+TITLE   :"No Such File or Directory" Message with File Compare (FC.EXE)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the file compare command, Fc.exe, and you use wildcards in the
+second argument of the command, the Fc.exe command reports that there is no such
+file or directory.
+
+For example, if you have two files in a directory, one named a_long_file_name and
+the other named a_really_long_file_name, when you carry out the command
+
+   fc a_long_file_name a_really_*
+
+the fc command reports
+
+   Comparing files a_long_file_name and a_really_le_name
+   FC:cannot open a_really_le_name - No such file or directory
+
+instead of the expected action of comparing the a_long_file_name file to the
+a_really_long_file_name file.
+
+CAUSE
+=====
+
+When you use wildcards in the second argument, the Fc.exe command matches the
+second argument against the first argument instead of matching the files in the
+current directory.
+
+RESOLUTION
+==========
+
+Type the second argument in full if you do not intend to match the second
+argument against the first argument.
+
+Additional query words: dos command
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

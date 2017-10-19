@@ -1,0 +1,69 @@
+DOCUMENT:Q216904  04-FEB-2000  [iis]
+TITLE   :How to Access a Client Authentication Certificate
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can access a user's Client Authentication certificate from the Windows 2000
+Active Directory. A Client Authentication certificate is an optional
+UserCertificate property on the user object.
+
+MORE INFORMATION
+================
+
+The following Visual Basic or Visual Basic Script code will access the
+UserCertificate object:
+
+   Dim oUser, vCert
+   Dim strName, strDN
+   StrName = "CN=Frodo Baggins"
+   StrDN = "CN=Users,DC=iis,DC=nttest,DC=microsoft,DC=com"
+   Set oUser = GetObject("LDAP://" & strName & "," & strDN)
+   vCert = oUser.userCertificate
+   Set oUser = Nothing
+
+The strDN must be replaced with the domain information for your environment. In
+this example, it is set to the Users object in the IIS.nttest.microsoft.com
+domain.
+
+You can set a user's client authentication certificate by using the Directory
+Management administration tool.
+
+Note: If Microsoft Certificate Services is installed, then the certificate is
+automatically added to the user's list of certificates when the client requests
+a certificate.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

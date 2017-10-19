@@ -1,0 +1,71 @@
+DOCUMENT:Q161290  20-FEB-2002  [sms]
+TITLE   :SMS: Network Adapter Card Information Not Correct
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a client computer running Windows 95 is inventoried, the hardware scan may
+not report the network adapter card inventory information properly. You may find
+the following line in the [Workstation Status] section of the Sms.ini file on
+the client:
+
+      FailedHardwareCheck=LanmanNetcardInfo.
+
+This problem occurs if the Ms\Sms\Data directory on the client computer has a
+Smssafe.tmp file that contains the following entry:
+
+      LanmanNetcardInfo=Crashed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. A supported fix is now available, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+MORE INFORMATION
+----------------
+
+This fix requires you to delete the Smssafe.tmp file and with the
+FailedHardwareChecks line of the Sms.ini file. Once that is done, inventory will
+report the correct data.
+
+Additional query words: prodsms 1.20
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

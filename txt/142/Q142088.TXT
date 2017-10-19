@@ -1,0 +1,80 @@
+DOCUMENT:Q142088  14-NOV-2000  [word97]
+TITLE   :WD97: Merge to Fax Not Available
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 kbusage word97 kbmerge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Electronic Fax is not available as a merge option.
+
+CAUSE
+=====
+
+This problem can occur because of either of the following reasons:
+
+ - The fax software is not set up properly.
+
+   -or-
+
+ - The fax software is not MAPI compliant.
+
+RESOLUTION
+==========
+
+Method 1: Add entry to Msmail.ini
+---------------------------------
+
+If your fax software is MAPI compliant, and you suspect the fax software is not
+set up properly, use a text editor such as Notepad to modify the [EFAX
+Transport] section of the Msmail.ini file to include the following statement:
+
+   LocalFax=1
+
+If LocalFax is not set to 1, Word will not present Fax as a merge destination.
+
+Method 2: Contact your fax vendor
+---------------------------------
+
+If your fax software is not MAPI compliant, contact your electronic fax vendor.
+
+MORE INFORMATION
+================
+
+For information on electronic mail support in Microsoft Word, please see the
+following article in the Microsoft Knowledge Base.
+
+   Q109833 How to Switch from MAPI to VIM Electronic Mail Support
+
+Additional query words: winword 8.0 word8 word97 fax efax electronic mail merge print merging faxing mailmerge present option
+
+======================================================================
+Keywords          : kbualink97 kbusage word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

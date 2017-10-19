@@ -1,0 +1,51 @@
+DOCUMENT:Q263160  12-NOV-2001  [homegame]
+TITLE   :Allegiance Err Msg: Error Occurred While Setting the LobbyServer
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Allegiance, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start a Microsoft Allegiance Server, you may receive the
+following error message:
+
+   An error occurred while setting the LobbyServer property: Unspecified Error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with Microsoft Allegiance version
+1.0 in Microsoft Windows NT 4.0.
+
+Additional query words: msgame msn zone
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbAllegianceSearch kbAllegiance
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

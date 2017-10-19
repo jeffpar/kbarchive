@@ -1,0 +1,62 @@
+DOCUMENT:Q195607  14-NOV-2000  [word97]
+TITLE   :WD97: How to List All Built-in Styles Using Formatting Toolbar
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+
+SUMMARY
+=======
+
+This article describes how to list all available styles using the Formatting
+toolbar.
+
+MORE INFORMATION
+================
+
+By default, the Style list on the Formatting toolbar lists the following
+styles:
+
+ - The built-in styles Heading 1-3, Normal, and Default Paragraph Font.
+
+ - Any user-defined styles stored or in use in either the document or the
+   template that the document is based upon.
+
+To list all available styles, press and hold the SHIFT key and click the style
+drop-down list on the Formatting toolbar.
+
+If this action doesn't seem to work, make sure the insertion point or selection
+is in the document text before you click the drop-down arrow.
+
+Additional query words: show
+
+======================================================================
+Keywords          : winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,97 @@
+DOCUMENT:Q109453  14-NOV-2000  [word97]
+TITLE   :WD97: TOC Field Doesn't Display AUTONUM Fields
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbfield word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Automatic paragraph numbers, AUTONUM fields, are not recognized or included in
+the TOC field when you use TC fields and tables of contents (on the Insert menu,
+click Index And Tables, and then click the Table Of Contents tab).
+
+CAUSE
+=====
+
+When used in conjunction with TC fields, the results of the AUTONUM or
+AUTONUMLGL fields work correctly within the TC field, but the numbers do not
+appear in the table of contents.
+
+For example if you insert
+
+   {TC "{AUTONUMLGL} Proceedings"}
+
+the resulting table of contents entry will look like:
+
+   Proceedings.................................................1
+
+WORKAROUND
+==========
+
+You can use a combination of SEQ fields to generate complex legal paragraph
+numbering in a document. For example, to generate paragraph numbers as 1, 1.1,
+1.1.1, and so forth, use the following sequence fields:
+
+   {seq one}
+      {seq one \c}.{seq two}
+         {seq one \c}.{seq two \c}.{seq three}
+
+Use the \c switch to keep the individual sequence numbers current. The SEQ field
+without the \c switch increments to the next number. For example
+
+   {TC "{seq one} Proceedings"}
+   {TC "{seq one \c}.{seq two} Level2 Proceedings"\l2}
+   {TC "{seq one \c}.{seq two \c}.{seq three} Level3 Proceedings"\l3}
+
+results in the following table of contents:
+
+   1. Proceedings.................................................1
+        1.1 Level2 Proceedings....................................1
+             1.1.1 Level3 Proceedings.............................1
+
+The drawback to this workaround is the loss of automatic renumbering to maintain
+the outline numbering structure. This means that you will need to edit the SEQ
+fields to maintain the correct outline sequence if you move a paragraph. The
+Auto Numbering Fields function is to maintain the numbering structure
+automatically even if the paragraph is moved.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

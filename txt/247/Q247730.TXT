@@ -1,0 +1,72 @@
+DOCUMENT:Q247730  09-NOV-2001  [homegame]
+TITLE   :Fighter Ace II Err: Fatal Error: Can't Set Video Mode 640x480x16
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kberrmsg igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Fighter Ace II, you may receive the following error
+messsage:
+
+   Fatal Error: Can't set video mode 640x480x16
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - The Diamond Viper V330 video adapter is installed in your computer.
+
+ - The video adapter installed in your computer is based on the NVidia Riva 128
+   chip set.
+
+ - The video driver installed on your computer is outdated.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest video driver for the
+NVidia Riva 128 chip set from the following NVidia Web site:
+
+   http://www.nvidia.com/Products.nsf/htmlmedia/software_drivers.html
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 2.00 fa msngz igz
+
+======================================================================
+Keywords          : kbdisplay kberrmsg igz kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

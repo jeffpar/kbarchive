@@ -1,0 +1,59 @@
+DOCUMENT:Q174741  18-DEC-1999  [exchange]
+TITLE   :XFOR: Exchange Dirsync Server Allows Empty Admin Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbusage exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are configuring an Exchange Server computer as a dirsync server, it is
+possible to select the Copy Administrator on Outgoing Messages option and
+Forward Incoming Dirsync Messages to Administrator option, even though there is
+no dirsync administrator selected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Dirsync will continue to function as normal although there is no administrator
+selected.
+
+Additional query words: DXA dir sync
+
+======================================================================
+Keywords          : kbusage exc5 exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

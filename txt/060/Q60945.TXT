@@ -1,0 +1,56 @@
+DOCUMENT:Q60945  24-NOV-1999  [macmail]
+TITLE   :Mac Form: RETURN Key Does Not Work in Scrolling Text Field
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information applies to custom forms created with the HyperCard
+Form Designer for Microsoft Mail:
+
+   Pressing RETURN while in a scrolling field that has the AutoTab attribute
+   enabled will not move the cursor to the next line.
+
+When AutoTab is enabled, pressing RETURN with the insertion point in the last
+line of a scrolling field moves the insertion point to the next field on that
+card by sending the "tabKey" message to the current card. Consequently, this
+disables RETURN for anything but the last line of the scrolling field.
+
+To enable or disable the AutoTab attribute, select the field in question, choose
+Field Info from the Objects menu, and select the AutoTab option.
+
+NOTE: Any changes made to a custom form take effect only if the card is
+recompiled and then reinstalled on the Mail server.
+
+Additional query words: 2.00 2.00a 2.00b 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

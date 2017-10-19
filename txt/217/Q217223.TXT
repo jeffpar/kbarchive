@@ -1,0 +1,55 @@
+DOCUMENT:Q217223  22-JUN-2001  [exchange]
+TITLE   :XCLN: BCC Recipients not Visible in Outlook 98
+PRODUCT :Microsoft Exchange
+PROD/VER::8.0,8.01,8.02,8.03; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03, on platform(s):
+    - the operating system: Microsoft Windows NT 
+ - Microsoft Outlook 98, on platform(s):
+    - the operating system: Microsoft Windows NT 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+BCC recipients are not visible in an Outlook client's Sent Items folder when the
+sender's mailbox resides on an Exchange Server 4.0 computer.
+
+MORE INFORMATION
+================
+
+This is the original behavior in Exchange Server 4.0 and is by design. The new
+behavior and functionality (visible BCC recipients in the Sent Items folder) was
+introduced in Exchange Server 5.0 Service Pack 2. No change will be made for
+Exchange Server version 4.0.
+
+Additional query words: 8.0 8.01 8.02 8.03 8.5
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbZNotKeyword3
+Version           : :8.0,8.01,8.02,8.03; WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

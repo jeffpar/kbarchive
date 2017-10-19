@@ -1,0 +1,121 @@
+DOCUMENT:Q132956  04-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Run w/ Megahertz EM114t Modem/Ethernet PCMCIA Card
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Microsoft Mail Remote for Windows with a Megahertz EM114t
+modem/ethernet PCMCIA card, you must either modify the CONFIG.SYS file to run
+the "card services" properly, or run the point enabler, SETEM.EXE, on the
+Megahertz Installation Diskette, if card & socket services are not installed
+on the computer.
+
+If you do not make these changes or use the point enabler, the machine will
+produce error messages stating that the modem can not be found.
+
+RESOLUTION
+==========
+
+Procedure A: Modifying the Card Services Settings
+-------------------------------------------------
+
+The modifications to the "card services" in the CONFIG.SYS are:
+
+   DEVICE=C:\EM\SSCIRRUS.EXE /ada=0 /skt=2
+   DEVICE=C:\EM\CS.EXE /irq=b
+   DEVICE=C:\EM\CSALLOC.EXE C:\CSALLOC.INI
+   DEVICE=C:\EM\CARDID.EXE
+
+NOTE: The above modifications are to be made after you run the Megahertz
+auto-install.
+
+Procedure B: Running the Point Enabler
+--------------------------------------
+
+The following switches can be used when you execute SETEM.EXE:
+
+ Switch                  Description
+--------------------------------------------------------------------
+
+ /sa or /sb              Socket placement (/sa=upper or /sb=lower)
+ /c2                     COM port setting (/c2=com2)
+ /i5                     Interrupt setting (/i5=interrupt 5)
+ /bnnn                   Port or I/O Base for ethernet board
+ /pnnnn                  Start of memory range exclusion for the card.
+ /dnnnn                  Delay in milliseconds that the driver waits to
+                         initialize the card.
+ /m                      Modem only. This option disables the network
+                         functions of the card.
+
+Using the above options, a line must be placed in either the CONFIG.SYS or the
+AUTOEXEC.BAT file before the network device drivers. For example:
+
+CONFIG.SYS:
+
+   DEVICE=C:\SETEM.EXE /sa /c2 /i5 /b300 /pd000
+
+-or-
+
+AUTOEXEC.BAT:
+
+   SETEM.EXE /sa /c2 /i5 /b300 /pd000
+
+Notes:
+
+ - The examples above are the defaults mentioned in the Megahertz Ethernet-Modem
+   "User Reference Guide".
+
+ - The point enabler will disable "hot swapping," or the ability to change
+   PCMCIA cards without rebooting the computer.
+
+MORE INFORMATION
+================
+
+For more information on configuring the Megahertz PCMCIA Ethernet-Modem card,
+EM1144-T, refer to Chapter Two - Installation of the Megahertz Ethernet-Modem
+"User Reference Guide," included with the EM1144-T PCMCIA card.
+
+This information has been verified with Megahertz technical support.
+
+Microsoft will support the use of the USGNERIC.SCR, with most Megahertz modems
+(PCMCIA or "pocket"), if configured properly, successful connections can be made
+at a maximum rate of 2400 baud.
+
+On the Megahertz BBS and on the Megahertz library of the Modem Vendors forum of
+CompuServe,(GO MEGAHERTZ), the file MHSDRIVE.EXE should be downloaded. There are
+many scripts included in this file, the one that gives optimal performance is
+XJ144REL.SCR. T3144REL.SCR will also work well.
+
+Additional query words: 3.20 pc card cannot find
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

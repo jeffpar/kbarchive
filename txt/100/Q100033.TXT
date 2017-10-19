@@ -1,0 +1,62 @@
+DOCUMENT:Q100033  10-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Color Icons Do Not Appear in Summary Window
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 3.1 of Microsoft Mail for AppleTalk Networks, the color icons for
+forms may not display in the Summary window.
+
+CAUSE
+=====
+
+This problem occurs if you have an older version of the workstation software, or
+if the form has been recompiled and reinstalled.
+
+RESOLUTION
+==========
+
+Color icons for forms are not supported when the version 3.0 workstation
+software is connected to a version 3.1 server. To display color icons in this
+situation, upgrade the workstation to version 3.1.
+
+This problem may also occur if you modify and recompile a form using the Forms
+Designer HyperCard stack. This will cause the icon to appear in black and white
+when you reinstall the form using the Form Mover button. The icons will install
+properly; however, none of the screens in the form are recompiled. If you have
+modified and compiled the form, the only way to reset the color icons is to
+install the form from the original disk, without modifying it in any way.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

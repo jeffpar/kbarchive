@@ -1,0 +1,79 @@
+DOCUMENT:Q174859  08-NOV-2001  [homegame]
+TITLE   :Cannot See Overview or Zoom Monitor
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Close Combat for Windows, you are unable to see the Overview or
+Zoom Monitor.
+
+RESOLUTION
+==========
+
+To display the Overview monitor, set your display resolution to 800 x 600.
+
+To display the Zoom monitor, set your display resolution to 1024 x 768.
+
+Use the following steps to change your display settings:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. On the Settings tab, note the current settings.
+
+4. Move the Desktop Area slider to the desired display resolution. For example,
+   800 X 600 Pixels.
+
+5. Click OK.
+
+6. If you are prompted to restart the computer, click Yes.
+
+MORE INFORMATION
+================
+
+Close Combat displays five game screen monitors:
+
+ - Team
+ - Soldier
+ - Message
+ - Overview
+ - Zoom
+
+If your display resolution is set to 640 x 480, you will only see the Team,
+Soldier, and Message monitors.
+
+Additional query words: 1.00 cc display
+
+======================================================================
+Keywords          : kbdisplay kbenv 
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbCloseCombatSearch kbCloseCombat
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

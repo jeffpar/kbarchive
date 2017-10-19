@@ -1,0 +1,107 @@
+DOCUMENT:Q167883  14-NOV-2000  [word97]
+TITLE   :WD97: Computer Hangs While Editing WordMail Template
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97; :4.0
+OPER/SYS:
+KEYWORDS:kbusage kbtemplate winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - Microsoft Exchange, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to edit a WordMail template from Microsoft Exchange, your computer
+may appear to stop responding (hang) and display an hourglass.
+
+CAUSE
+=====
+
+The Word Macro Virus Protection Warning dialog box is in the background and
+isn't visible for you to respond to.
+
+WORKAROUND
+==========
+
+To work around this problem, use any of the following methods.
+
+Method 1: Switch to Word
+------------------------
+
+Press ALT+TAB to switch to Word. The Macro Virus Protection Warning dialog box
+should be in the foreground.
+
+Method 2: Turn Off Macro Virus Protection
+-----------------------------------------
+
+NOTE: Microsoft Technical Support does not recommend that you disable the Macro
+Virus Protection feature. If you do turn this feature off, we suggest you turn
+the feature back on when you have finished editing your e-mail templates.
+
+1. On the Tools menu, click Options.
+
+2. Click the General tab.
+
+3. Under General Options, click to clear the Macro Virus Protection check box.
+
+4. Click OK to close the Options dialog box.
+
+You should now be able to edit your WordMail template from Microsoft Exchange.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+To Edit a Template from Exchange
+--------------------------------
+
+1. Start Microsoft Exchange.
+
+2. On the Compose menu, click WordMail Options.
+
+3. Click the template you want and then click Edit.
+
+NOTE: You can also use the "Enable Word as e-mail editor" option in the WordMail
+Options dialog box.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q159945 WD97: General Information About E-Mail Support
+
+   Q163932 WD: Frequently Asked Questions About Word Macro Viruses
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbtemplate winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbPTNotAssigned kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2
+Version           : WINDOWS:97; :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

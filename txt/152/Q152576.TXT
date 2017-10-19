@@ -1,0 +1,81 @@
+DOCUMENT:Q152576  30-MAR-1999  [exchange]
+TITLE   :XCLN: Components Installed During Exchange 4.0 Client Setup
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of the component differences between a Typical and a
+Laptop setup for the Microsoft Exchange clients for Windows. Typical and Custom
+installations will install the same components on the client. The only
+difference is that Custom allows the user to modify the selected components.
+
+WIN95 & WIN NT CLIENT                   TYPICAL   LAPTOP
+=====================                   =======   ======
+Microsoft Exchange                      X         X
+   Information Services                 X         X
+      Personal Address Book             X         X
+      Personal Folders                  X         X
+      Microsoft Exchange Server         X         X
+      Microsoft Mail                    -         -
+   Spelling                             X         -
+   Help                                 X         -
+
+Microsoft Schedule+ Program Files       X         X
+   Print Layouts and Paper Formats      X         X
+   Help                                 X         -
+   Additional Importers and Exporters   X         -
+   Seven Habits Tools                   X         -
+
+WINDOWS 3.x CLIENT                      TYPICAL   LAPTOP
+==================                      =======   ======
+Microsoft Exchange                      X         X
+   Information Services                 X         X
+      Personal Address Book             X         X
+      Personal Folders                  X         X
+      Microsoft Exchange Server         X         X
+      Microsoft Mail                    -         -
+   Spelling                             X         -
+   Help                                 X         -
+   Shiva                                X         X
+
+Microsoft Schedule+ Program Files       X         X
+   Print Layouts and Paper Formats      X         X
+   Help                                 X         -
+   Additional Importers and Exporters   X         -
+   Seven Habits Tools                   X         -
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

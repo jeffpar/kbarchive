@@ -1,0 +1,75 @@
+DOCUMENT:Q119350  19-NOV-1999  [msdos]
+TITLE   :DIR/CHKDSK Behavior w/ More Than 32,768 Files in Subdirectory
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:4.01,5.0,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 4.01, 5.0, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DIR and CHKDSK commands incorrectly report disk information on drives
+containing subdirectories with more than 32,767 entries. For specific examples,
+refer to the More Information section below.
+
+WORKAROUND
+==========
+
+The only workaround at this time is to move some files from the directory to
+another drive or subdirectory so that the total number of entries is fewer than
+32,767.
+
+
+MORE INFORMATION
+================
+
+DIR Command
+-----------
+
+ - If no filename or wildcard description is specified on the command line, DIR
+   reports the total number of files in the subdirectory as 32,769. This number
+   represents the total number of files or directories that DIR can see
+   (32,767), plus the additional directories "." and "..".
+
+ - If a file or directory name is specified on the command line, DIR behaves
+   normally and successfully locates the file even if it is located beyond entry
+   32,767.
+
+ - If a wildcard description is specified on the command line, DIR locates only
+   the first file beyond entry 32,767 that matches the wildcard specification.
+
+CHKDSK Command
+--------------
+
+ - Any files or subdirectories beyond entry 32,767 are incorrectly identified as
+   lost allocation units by CHKDSK.
+
+Additional query words: DIR CHKDSK 32767 4.01 5.00 6.00 6.2 6.21 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS401
+Version           : MS-DOS:4.01,5.0,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,57 @@
+DOCUMENT:Q230134  10-AUG-2001  [winnt]
+TITLE   :BUG: MprConfigServerBackup & MprConfigServerRestore Exceptions
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI _IK12469 _IK912 kbSDKPlatform kbSDKWin32 kbOSWinNT400sp3bug kbOSWinNT40
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you call MprConfigServerConnect with the first parameter lpwsServerName =
+NULL, and then make calls to MprConfigServerBackup or MprConfigServerRestore,
+the latter API throws an exception and the application hangs.
+
+RESOLUTION
+==========
+
+Set the first parameter lpwsServerName in MprConfigServerConnect to the actual
+name of the local machine instead of passing NULL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI _IK12469 _IK912 kbSDKPlatform kbSDKWin32 kbOSWinNT400sp3bug kbOSWinNT400sp3 kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp3 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q279636  22-NOV-2000  [homegame]
+TITLE   :MechWarrior 4: Error Message: STOP: Scroll Lock Pressed
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MechWarrior 4: Vengeance 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft MechWarrior 4: Vengeance, the game may stop responding
+(hang) and you may receive the following error message:
+
+   STOP: Scroll Lock pressed.
+
+CAUSE
+=====
+
+This behavior can occur if you press the SCROLL LOCK key on your keyboard.
+
+RESOLUTION
+==========
+
+To resolve this issue, click Continue.
+
+MORE INFORMATION
+================
+
+If you click Exit, you quit the game.
+
+If you click More Details, you receive a more detailed error message.
+
+After you click More Details, you can click Save to save information about your
+computer to a text file.
+
+Additional query words: msgame 4.0 mech warrior scrllck
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

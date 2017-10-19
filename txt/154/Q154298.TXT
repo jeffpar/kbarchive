@@ -1,0 +1,88 @@
+DOCUMENT:Q154298  23-MAY-2002  [exchange]
+TITLE   :XFOR: Mail Going to IMC or MSMail Stays in Outbox
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to send mail to an Internet address, the message stays in the
+Outbox. Mail sent to a MSMail 3.2 postoffice through the MSMail Connector also
+stays in the Outbox.
+
+CAUSE
+=====
+
+This occurs when the Microsoft Exchange Service Account does not have the
+correct permissions on the Configuration object. The Microsoft Exchange Service
+Account requires Service Account Admin permissions.
+
+RESOLUTION
+==========
+
+To correct the permission problems:
+
+1. Select the Configuration Container in the Microsoft Exchange Administrator
+   program.
+
+2. Click the File menu, and then click Properties. Click the Permissions tab and
+   give the Microsoft Exchange Service Account the service account
+   administration role.
+
+3. Stop and restart both the Microsoft Exchange Message Transfer Agent (MTA) and
+   Microsoft Exchange Internet Mail Connector (IMC) for the change to take
+   effect.
+
+NOTE: This can also occur if the account used for any of the related Microsoft
+Exchange services has been changed. To verify that the appropriate account has
+been specified, check the startup of each Microsoft Exchange service in the
+Services control panel.
+
+
+
+MORE INFORMATION
+================
+
+The same problem occurs when sending mail to an MS Mail postoffice. The
+Application Log in Event Viewer will log the following 2 warnings:
+
+   Event ID: 9297
+   Source: MSExchangeMTA
+   The user... Private MDB has caused a security violation...
+
+   Event ID: 3161
+   Source: MSExchangeMTA
+   An internal MTA error occurred. The logon violated security.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

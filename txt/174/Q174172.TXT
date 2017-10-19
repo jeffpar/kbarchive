@@ -1,0 +1,66 @@
+DOCUMENT:Q174172  17-DEC-1999  [exchange]
+TITLE   :XADM: ErrMsg: An Unknown, Unexpected Error Has Occurred
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you start the Exchange Administrator program, the following error message
+may appear:
+
+   An unknown, unexpected error has occurred.
+   MAPI or an unspecified service provider
+   ID no. 0000000-0000-00000000
+
+CAUSE
+=====
+
+This may be due to an incorrect version of Riched32.dll or Mapi32.dll in the
+system32 directory on this computer. This problem may occur if the system has
+been downgraded to a previous version of Exchange. Setup will not overwrite
+newer files, and because the newer DLL file is not backward compatible, this
+error will occur.
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. Rename Riched32.dll and Mapi32.dll in the winnt\system32 directory.
+
+2. Run Exchange Server Setup and choose Reinstall. If any Exchange service packs
+   were applied, they need to be reinstalled.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

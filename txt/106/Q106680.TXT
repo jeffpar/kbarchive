@@ -1,0 +1,56 @@
+DOCUMENT:Q106680  08-AUG-2001  [winnt]
+TITLE   :SFM: Macintosh Users Not Logged Off Despite Time Restrictions
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT Advanced Server allows for Logon Time Restrictions to be set on User
+accounts. If a Macintosh client is already logged on to a Windows NT Advanced
+Server and the allowable time frame for logging on has expired, that User will
+not be logged off from the server and will not receive any messages regarding
+time restrictions.
+
+Usually, if the Time Restrictions expire, a User would be logged off and receive
+a message stating their time restrictions have expired. However, once a
+Macintosh client is logged on, any Time Restrictions set on the User account do
+not apply until the User logs off and tries to log back on.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Advanced Server
+version 3.1. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

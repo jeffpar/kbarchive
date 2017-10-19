@@ -1,0 +1,142 @@
+DOCUMENT:Q177431  07-MAY-2001  [visualc]
+TITLE   :FIX: C2065: Undeclared Identifier Creating a STL Function Object
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Creating the STL function object "binder2nd" causes the compiler to generate the
+following error C2065:
+
+   'identifier' : undeclared identifier
+
+It is the std::multiples<int>(): line that causes the namespace to be lost.
+
+RESOLUTION
+==========
+
+Use one of the following methods to work around this problem:
+
+ - Use the "using namespace" directive instead of qualifying the function
+   objects.
+
+ - Pre-declare an instance of std::multiplies<int> to solve the problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft product listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+MORE INFORMATION
+================
+
+The following sample demonstrates the problem and the first workaround:
+
+      /*
+      * Compiler Options: /GX
+      */ 
+
+      #include <algorithm>
+      #include <functional>
+      #include <iostream>
+
+      #define BUG
+      //Workaround: Comment the line above.
+      //Uncomment the line below.
+      //#define WORKAROUND
+
+      #ifdef WORKAROUND
+      using namespace std ;
+      #endif
+
+      int main()
+      {
+
+      #ifdef BUG
+
+         std::binder2nd< std::multiplies<int> >
+                        times_two(std::multiplies<int>(), 2);
+      #endif
+      #ifdef WORKAROUND
+          binder2nd< multiplies<int> > times_two(multiplies<int>(), 2);
+      #endif
+
+         int n = times_two(4) ;
+         std::cout << "n = " << n << std::endl ;
+         return 0 ;
+      }
+
+The following sample demonstrates the problem and the second workaround:
+
+      /*
+      * Compiler Options: /GX
+      */ 
+
+      #include <algorithm>
+      #include <functional>
+      #include <iostream>
+
+      #define BUG
+      //Workaround: Comment the line above.
+      //Uncomment the line below.
+      //#define WORKAROUND
+
+      int main()
+      {
+
+      #ifdef BUG
+
+         std::binder2nd< std::multiplies<int> >
+                        times_two(std::multiplies<int>(), 2);
+
+      #endif
+
+      #ifdef WORKAROUND
+
+         std::multiplies<int> mi ;
+         std::binder2nd< std::multiplies<int> > times_two(mi, 2);
+
+      #endif
+
+         int n = times_two(4) ;
+         std::cout << "n = " << n << std::endl ;
+         return 0 ;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

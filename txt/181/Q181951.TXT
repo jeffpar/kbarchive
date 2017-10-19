@@ -1,0 +1,72 @@
+DOCUMENT:Q181951  02-APR-1999  [exchange]
+TITLE   :XFOR: Err Msg. Installing AT&T Easylink Gateway on Connector PO
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5, Japanese version 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing the AT&T Easylink gateway on the Exchange Connector
+postoffice (shadow post office), the installation may fail with the following
+error message:
+
+   The Ms Mail postoffice could not be found in the destination directory.
+
+CAUSE
+=====
+
+The installation program is searching for the Ms Mail maildata directory with
+its 19 subdirectories. The shadow post office is a reduced version of the
+Microsoft Mail for PC Networks and has no users. Some of the 19 subdirectories
+are not included in the shadow post office.
+
+WORKAROUND
+==========
+
+To work around this problem, do the following:
+
+1. Create the following five empty subdirectories: CAL\, FOLDERS\, INI\, MEM\,
+   and MMF\ under the Directory Exchsrvr \ CONNECT \ Maildata\.
+
+2. Try the Setup of the AT&T gateway again; it should proceed without a
+   problem.
+
+MORE INFORMATION
+================
+
+Please refer to the Microsoft Exchange Administrator's Guide for more
+information about setting up the AT&T Easylink gateway to provide service
+between Microsoft Exchange Server and the AT&T system.
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHLangJapanese kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

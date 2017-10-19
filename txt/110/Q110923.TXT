@@ -1,0 +1,58 @@
+DOCUMENT:Q110923  06-OCT-1999  [win3x]
+TITLE   :Specifying Command-Line Parameters for NDIS 2 Drivers
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Windows for Workgroups 3.11 with certain NDIS 2 network adapter
+drivers, you must specify command-line parameters to make these drivers load
+correctly. These parameters can be added by editing the SYSTEM.INI file with a
+text editor such as Microsoft Windows Notepad.
+
+Below is an example in which the real-mode drivers for a Xircom credit card
+adapter are loaded in the AUTOEXEC.BAT file:
+
+      CECFG DRIVER=NDIS
+      CENDIS
+
+When these NDIS 2 drivers are loaded with Windows for Workgroups 3.11, they are
+loaded on the transport= line of the SYSTEM.INI file. To pass the DRIVER=NDIS
+parameter to CECFG.EXE, add the following line to the [network drivers] section
+of the SYSTEM.INI file:
+
+      [network drivers]
+      CECFG.EXE="Driver=NDIS"
+
+Additional query words: 3.11 ndis2 cmd line
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

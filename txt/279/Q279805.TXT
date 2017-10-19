@@ -1,0 +1,68 @@
+DOCUMENT:Q279805  21-FEB-2001  [exchange]
+TITLE   :XFOR: Incorrect Time Is Displayed in Read Receipt from GroupWise
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you request a read receipt for a message that you sent to a Novell GroupWise
+recipient, the read receipt may indicate that the message was read seven hours
+later than it was actually read. For example, if the message was read at 4:00
+P.M., the read receipt may indicate that the message was read at 11:00 P.M. This
+problem may occur even though all of the e-mail clients and servers that are
+involved are located in the same time zone and are set to the same system time.
+
+WORKAROUND
+==========
+
+Because the time that is displayed in the read receipt is seven hours later than
+the correct time, rather than earlier than the correct time, the time that is
+displayed is usually later than the current time when you receive the read
+receipt. This makes it relatively easy to determine if the problem that this
+article describes is occurring, because the time that is displayed in the read
+receipt cannot possibly be correct. If you determine that you are experiencing
+this problem, you can work around this problem and calculate the correct time by
+subtracting seven hours from the time that is displayed in the read receipt.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+
+Additional query words: wrong off notification
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

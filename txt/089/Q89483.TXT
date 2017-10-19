@@ -1,0 +1,70 @@
+DOCUMENT:Q89483  30-OCT-1999  [win3x]
+TITLE   :Print Manager Status Bar Reports Share Name Information
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under Microsoft Windows for Workgroups, the Print Manager status bar for a
+shared printer may report a different printer name than the default printer
+name.
+
+You can correct this by changing the Comment field in the Share Printer As dialog
+in Print Manager, on the Workstation that is sharing the printer.
+
+MORE INFORMATION
+================
+
+When running Windows for Workgroups in 386 enhanced mode, you can share a local
+printer that is physically connected to your computer with others on the
+network. When sharing a printer in Print Manager the status bar may show a
+different printer name than the default printer.
+
+For example, if a Hewlett-Packard (HP) LaserJet IIIsi is being shared, but you
+type HP LaserJet II in the comment field in the Share Printer As dialog in Print
+Manager. The Print Manager status bar will show HP LaserJet II.
+
+Steps to Resolve the Problem
+----------------------------
+
+1. From the Main group, start Print Manager.
+
+2. From the Printer menu, choose Share Printer As.
+
+3. Type the user defined printer name in the Comment field. (This is what will
+   appear as the printer name on other computers.)
+
+4. Choose the OK button.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

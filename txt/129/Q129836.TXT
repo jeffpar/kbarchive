@@ -1,0 +1,94 @@
+DOCUMENT:Q129836  11-JAN-2001  [vbwin]
+TITLE   :PRB: Object Variable Not Set Error If Object Not Instantiated
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Referencing an object that has not been instantiated results in this error:
+
+   "Object variable or With block variable not Set"
+   (Err = 91)
+
+CAUSE
+=====
+
+If you declare an object as in this example:
+
+      Dim MyForm as Form1
+
+you have allocated a reference to the object (similar to a pointer in the C
+programming language), but you have not allocated or instantiated the object
+itself.
+
+Therefore, when the object is referenced in code as in this example:
+
+      MyForm.Print "Hello World!"
+
+the error message "Object variable or With block not Set" is generated.
+
+RESOLUTION
+==========
+
+The following three code examples demonstrate how to declare and use an object
+variable (MyForm in this case) correctly:
+
+Code Sample One
+---------------
+
+   Dim MyForm as Form1
+   Set MyForm = New Form1
+   ' Where the object type is the same as the object type used in the
+   ' declaration.
+   MyForm.Print "Hello World!"
+
+Code Sample Two
+---------------
+
+   Dim MyForm as New Form1
+   MyForm.Print "Hello World!"
+
+Code Sample Three
+-----------------
+
+   Dim MyForm as Form1
+   Dim MyForm1 as New Form1
+   Set MyForm= MyForm1
+   MyForm.Print "Hello World!"
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

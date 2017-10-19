@@ -1,0 +1,178 @@
+DOCUMENT:Q241102  25-SEP-2001  [vbwin]
+TITLE   :BUG: Node Item Tips Hidden whenTreeView Is Sited on UserControl
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbAPI kbCmnCtrls kbSDKWin32 kbTreeView kbVBp kbVBp500bug kbVBp600bug kbGrpDSV
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A TreeView control from either Comctl32.ocx or Mscomctl.ocx is sited on a
+UserControl. The TreeView's Node tooltip (item tip) fails to appear when the
+mouse cursor is positioned over a Node whose text is obscured by the TreeView's
+right client window edge.
+
+RESOLUTION
+==========
+
+After the TreeView control is sited on the UserControl, remove the tooltips from
+the TreeView by setting its TVS_NOTOOLTIPS style bit. Then add tooltips back to
+the TreeView by removing the style bit. The tooltip window's parent window is
+now, correctly, the top level application window in which the UserControl is
+sited. This operation can be performed in either the UserControl's Show event,
+or after the Form's Load event, where you are certain that the TreeView control
+is sited on the UserControl.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+
+NOTE: This workaround is not effective when running under Windows NT 4.0 and the
+installed version of Comctl32.dll is 4.x or lower. Under these circumstances,
+implement the workaround described in Microsoft Knowledge Base article Q241097
+shown in the "References" section below.
+
+Steps to Reproduce Problem:
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, click Add UserControl to add a UserControl to Project1.
+
+3. On the Project menu, click Components. Check either Microsoft Windows Common
+   Controls 5.0 or 6.0 and click OK.
+
+4. Add a CommandButton, TreeView, and Label control to UserControl11. Resize the
+   Label so that it is large enough to contain four lines of 50 characters each,
+   and the TreeView control is narrow enough to obscure part of the 35
+   characters of Node Text. Position the TreeView control on the right-hand edge
+   of UserControl1.
+
+5. Add the following code to the General Declarations section of UserControl1:
+
+   Option Explicit
+
+   ' TreeView window style specifying that the TreeView control does
+   ' not have an item tip tooltip window. An IE3 or later definition.
+   Private Const TVS_NOTOOLTIPS = &H80
+
+   Private Const GWL_STYLE = (-16)
+
+   Private Declare Function GetWindowLong Lib "user32" Alias "GetWindowLongA" _
+    (ByVal hWnd As Long, ByVal nIndex As Long) As Long
+
+   Private Declare Function SetWindowLong Lib "user32" Alias "SetWindowLongA" _
+    (ByVal hWnd As Long, ByVal nIndex As Long, ByVal dwNewLong As Long) As Long
+
+   Private Sub UserControl_Initialize()
+      Dim i As Integer
+      Label1.WordWrap = True
+      Label1.Caption = "The TreeView's tooltip window will " _
+       & "not appear in front of the TreeView unless it is higher in the " _
+       & "z-order than the TreeView. Run the project, and before clicking " _
+       & "the button below, notice that the TreeView's item tip tooltip " _
+       & "appears behind the form."
+      Command1.Caption = "Fix TreeView Tooltip"
+      ' Fill up the TreeView...
+      For i = 1 To 10
+         Call TreeView1.Nodes.Add(Text:="item" & i & String$(30, "x"))
+      Next i
+   End Sub
+
+   ' Correctly set the TreeView item tip tooltip window's parent window to
+   ' that of the top level client app window, by first telling the TreeView
+   ' to remove (and destroy) its tooltip window, then add a new tooltip
+   ' window back.
+   ' Can either be called in UserControl_Show, or after Form_Load.
+
+   Private Sub Command1_Click()
+      Dim dwStyle As Long
+
+      ' Get the TreeView's window style
+      dwStyle = GetWindowLong(TreeView1.hWnd, GWL_STYLE)
+
+      ' If the TreeView does not have the TVS_NOTOOLTIPS bit set,
+      ' set it, removing and destroying the TreeView's tooltip window.
+      If (dwStyle And TVS_NOTOOLTIPS) = False Then
+         Call SetWindowLong(TreeView1.hWnd, GWL_STYLE, _
+                            dwStyle Or TVS_NOTOOLTIPS)
+      End If
+
+      ' Tell the TreeView to create a new tooltip window, whose parent
+      ' window will now become the top level client app window
+      Call SetWindowLong(TreeView1.hWnd, GWL_STYLE, _
+                         dwStyle And Not TVS_NOTOOLTIPS)
+      ' Done...
+      Command1.Enabled = False
+   End Sub
+
+6. Close all of the windows for the UserControl Project, and site UserControl1
+   on Form1. Position UserControl11 at the right-hand edge of Form1.
+
+7. Run the project, and place the cursor over a Node item. Note that the tooltip
+   is obscured by the form.
+
+8. Click the CommandButton, and repeat the previous step. The tooltip is now
+   displayed properly.
+
+REFERENCES
+==========
+
+For additional information about TreeView tooltip issues, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q240924 BUG: TreeView Node Tooltips Flash When Displayed from Modal Form
+
+   Q241097 FIX: TreeView Tooltips Window Does Not Appear on Windows NT
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbAPI kbCmnCtrls kbSDKWin32 kbTreeView kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

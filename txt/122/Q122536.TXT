@@ -1,0 +1,80 @@
+DOCUMENT:Q122536  08-NOV-2001  [homegame]
+TITLE   :Arcade for Macintosh: How to Disable PowerBook Processor Cycling
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some models of the Apple Macintosh PowerBook computer include a Processor
+Cycling feature that reduces the speed of the processor and eventually turns it
+off when the processor is inactive for a certain period of time. You may want to
+disable this feature when you play Arcade.
+
+This article describes how to disable the Processor Cycling feature.
+
+MORE INFORMATION
+================
+
+To disable the Processor Cycling feature on a PowerBook computer, use the
+appropriate steps for your version of Mac/OS.
+
+Mac/OS System 7.01
+------------------
+
+To disable the Processor Cycling feature on a System 7.01-based PowerBook
+computer, follow these steps:
+
+1. On the Apple menu, point to Control Panels, and then click Portable.
+
+2. Press and hold down the OPTION key as you click Minutes Until Automatic
+   Sleep.
+
+3. Click Don't Rest.
+
+Mac/OS System 7.1
+-----------------
+
+To disable the Processor Cycling feature on a System 7.1-based PowerBook
+computer, follow these steps:
+
+1. On the Apple menu, point to Control Panels, and then click PowerBook.
+
+2. Press and hold down the OPTION key as you click Options.
+
+3. Under Processor Cycling, click Don't Allow Cycling.
+
+When you finish playing Arcade, remember to enable the Processor Cycling feature.
+
+Additional query words: 1.00 m_arcade msgame kbfaq
+
+======================================================================
+Keywords          : kbenv kbtool kbimu msgame kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcadeMac
+Version           : MACINTOSH:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

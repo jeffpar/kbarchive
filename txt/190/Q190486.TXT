@@ -1,0 +1,79 @@
+DOCUMENT:Q190486  17-JUL-2001  [visualc]
+TITLE   :DOC: Missing Styles for CToolbar::SetButtonStyles
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:6.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbref kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for CToolBar::SetButtonStyle includes the following styles:
+TBBS_BUTTON, TBBS_SEPARATOR, TBBS_CHECKBOX, TBBS_GROUP, and, TBBS_CHECKGROUP.
+
+The following styles are missing: TBBS_DROPDOWN, TBBS_AUTOSIZE, TBBS_NOPREFIX.
+
+MORE INFORMATION
+================
+
+Following is the information for the missing styles:
+
+TBBS_DROPDOWN
+-------------
+
+Creates a drop-down list button.
+
+TBBS_AUTOSIZE
+-------------
+
+The button's width is calculated based on the text of the button, not on the size
+of the image.
+
+TBBS_NOPREFIX
+-------------
+
+The button text does not have an accelerator prefix associated with it.
+
+NOTE: CToolBar uses the underlying CToolBarCtrl common control. These styles have
+the same effect for CToolBar as the TBSTYLE flags have for the toolbar common
+control. More information about these styles can be found in the toolbar common
+control documentation.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Yeong- Kah
+Tam, Microsoft Corporation.
+
+
+Additional query words: kbdocerr kbvc600
+
+======================================================================
+Keywords          : kbdocerr kbref kbVC600 
+Technology        : kbAudDeveloper kbMFC
+Version           : WINNT:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q134500  17-DEC-2000  [win95x]
+TITLE   :Problems Saving Game in Chessmaster 2000
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a game in Chessmaster 2000 running in Windows 95, you may
+experience the following problems:
+
+ - The Drives box in the Save Game dialog box contains garbled text.
+
+ - You cannot type alphabetical characters in the File Name box in the Save Game
+   dialog box. You can type numeric characters in the File Name box.
+
+CAUSE
+=====
+
+Chessmaster 2000 was not designed to work with the Windows 95 messages for
+common dialog boxes.
+
+RESOLUTION
+==========
+
+When you click a drive in the Drives box, the garbled text disappears. There is
+no effect on the functionality of the game.
+
+Use the default name or a name containing only numbers to save your game. Use
+Windows Explorer or My Computer to rename the game to the name you want.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

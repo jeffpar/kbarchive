@@ -1,0 +1,68 @@
+DOCUMENT:Q155310  07-SEP-2001  [winnt]
+TITLE   :Cannot Print Pages in Reverse Order with HP 1600C Driver
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Hewlett-Packard (HP) 1600C printer driver included with Windows
+NT 4.0, there is no option for printing in reverse order. You must reorder
+multiple-page output to put it in the intended order.
+
+For example, if you print a 100-page report, the first page is printed and
+deposited in the output tray face up, the second page is printed and deposited
+in the same way, and so on. When printing is completed, page 100 is at the top
+of the tray. To read the report as intended, you must reorder the pages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT version
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Some Windows NT printer drivers print multiple-page documents in reverse order
+automatically or provide a reverse-order printing option. In addition, some
+Windows NT-based programs may provide a program-specific option for printing
+multiple-page output in reverse order.
+
+The HP 1600C printer driver included with Windows NT 4.0 does not include a
+reverse-order option.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

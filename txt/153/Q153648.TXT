@@ -1,0 +1,75 @@
+DOCUMENT:Q153648  27-JUL-2001  [sms]
+TITLE   :Cannot Delete Secondary Site After Installing Admin Tools
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbsetup kbsmsAdmin smsadmin smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install the Systems Management Server Administrator Tool and remove a
+secondary site for the site hierachy, the secondary site continues to function
+with the its services still running.
+
+WORKAROUND
+==========
+
+To work around this problem, manually remove the Systems Management Server
+components. For additional information on how to remove the Systems Management
+Server components, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q139627 How to Manually Remove Systems Management Server
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+MORE INFORMATION
+================
+
+If the Systems Management Server Administrator Tool is installed on a secondary
+site server, the following registry subkey in the HKEY_LOCAL_MACHINE subtree is
+overwritten:
+
+   \SOFTWARE\Microsoft\SMS\Setup
+
+The registry key now includes information that only the Systems Management Server
+Administrator Tool is installed. If the Tool is de-installed, all of the
+registry entries are removed.
+
+
+Additional query words: prodsms regedt32 registry
+
+======================================================================
+Keywords          : kbsetup kbsmsAdmin smsadmin smssetup 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

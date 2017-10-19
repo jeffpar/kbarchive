@@ -1,0 +1,92 @@
+DOCUMENT:Q192678  11-DEC-2001  [winnt]
+TITLE   :Add/Remove TS Client Requires Original Installation Point
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you go to Add/Remove Programs and try the Reinstall or Remove All options,
+Terminal Server Client Setup requires the original installation point. It will
+not let you choose an alternative installation point. If the server where the
+client was originally installed is not available, Setup will fail.
+
+RESOLUTION
+==========
+
+To work around this problem, click the INSTALL button in Add/Remove Programs.
+This allows you to choose the place from where to install the client. If you
+want to remove the client, go to the original location and Remove All, or
+install from a different location. Then you will be able to remove all from the
+new installation point.
+
+STATUS
+======
+
+ 
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+1. Install a client from a share point on a Terminal Server.
+
+2. After the terminal client is installed, shut off the Terminal Server where
+   the client was installed.
+
+3. On the workstation where the Terminal Server client is installed, click
+   Start, Setting, Control Panel.
+
+4. Double-click Add/Remove Programs.
+
+5. Select Terminal Server Client.
+
+6. Click Add/Remove Programs.
+
+7. Select Reinstall or Remove All.
+
+8. The MSTSC Setup Disk Box will appear.
+
+9. A Setup message will appear:
+
+   Setup could not open the file:
+
+   \\TerminalServer\TSclients\win32\Disks\Disk1\MSTSC1.id
+
+10. You will have the choice to Abort, Retry, or Ignore.
+
+Additional query words: terminalsrv
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

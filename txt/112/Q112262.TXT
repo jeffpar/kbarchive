@@ -1,0 +1,60 @@
+DOCUMENT:Q112262  12-NOV-1999  [pcmail]
+TITLE   :PC MAPI: MAPI_SENT Set Improperly on Shared Folder Messages
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When reading a custom message from a shared folder using Simple Mail Application
+Programming Interface (MAPI), it is possible that the message will be displayed
+in the Compose form rather than the Read form. This can occur with any custom
+message class, including those created using version 1.0 of Microsoft Electronic
+Forms Designer.
+
+CAUSE
+=====
+
+When Simple MAPI reads a message from a shared folder, it creates a temporary
+copy of the message locally. This temporary message does not have its MAPI_SENT
+bit set properly. When the custom message is read, it appears to MAPI as though
+it has not been sent and displays it in the Compose form.
+
+RESOLUTION
+==========
+
+This issue was addressed in the version of MAPI.DLL which is included with
+version 1.0 of Microsoft Electronic Forms Designer.
+
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

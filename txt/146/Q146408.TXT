@@ -1,0 +1,65 @@
+DOCUMENT:Q146408  18-DEC-2000  [win95x]
+TITLE   :Chat Prompts for Password Dialing Windows NT-Based Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11,95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you dial a Microsoft Windows NT-based computer using Chat (Winchat.exe) in
+Windows 95 or Windows for Workgroups, you are prompted for a domain name and
+password.
+
+CAUSE
+=====
+
+When you dial a Windows NT-based computer using Chat in Windows 95 or Windows
+for Workgroups, domain validation is required.
+
+RESOLUTION
+==========
+
+In Windows for Workgroups, if you cache your domain password you are not
+prompted for a password when you dial a Windows NT-based computer. In Windows
+95, you must always enter your domain password when you use Chat to dial a
+Windows NT-based computer.
+
+MORE INFORMATION
+================
+
+Although you can cache your domain password when you log on to Windows 95 or
+Windows for Workgroups, Chat does not look for the cached password in Windows
+95.
+
+Additional query words: 3.10 3.11 netdde dde network
+
+======================================================================
+Keywords          : win95 
+Technology        : kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,82 @@
+DOCUMENT:Q132710  27-JUL-2001  [sms]
+TITLE   :Err Msg Installing SQL 6.0: Setup Has Detected SMS Version 1.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,6.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbConfig smsgeneral smsconfig kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install SQL Server 6.0, the following error message appears:
+
+   SMS - SQL Server Conflict
+
+   Setup has detected SMS Version 1.0 is installed on this system.
+   SMS 1.0 will not run correctly with this version of SQL Server.
+   If you wish to proceed with the installation, choose Resume.
+
+CAUSE
+=====
+
+This problem occurs when:
+
+ - You are installing or upgrading to SQL Server 6.0 and System Management
+   Server 1.0 is installed.
+
+ - The Systems Management Server 1.0 Administration Tools are currently
+   installed, or were previously installed and then removed.
+
+SQL Server 6.0 setup checks the following Window NT registry key to determine if
+Systems Management Server 1.0 is installed:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\SMS\Setup\Version
+
+If you are using build number 631 or below, this problem occurs. If the Systems
+Management Administration Tools are removed from the system, the Version key
+remains in the registry without any values, and SQL Server 6.0 installation
+assumes that Systems Management Server 1.0 exists.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+ - Upgrade to Systems Management Server 1.1 before you upgrade from SQL Server
+   4.21 to SQL Server 6.0,
+
+-or-
+
+ - If no previous SQL installation exists or the Systems Management Server 1.0
+   Administration Tools were previously installed and removed, choose resume
+   from the SQL conflict dialogue box.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbConfig smsgeneral smsconfig kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

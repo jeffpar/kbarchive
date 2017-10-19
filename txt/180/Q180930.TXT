@@ -1,0 +1,75 @@
+DOCUMENT:Q180930  02-APR-2000  [sna]
+TITLE   :Access Violation in SNA Manager When Editing DLS Properties
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Remote Link Services and Alternate Link Services fields of the Distributed
+Link Service Properties dialog box allow strings longer than 256 characters to
+be entered. With SNA Server, 3.0 SP1, SNA Manager generates an Access Violation
+if any of these fields are edited with more than 256 characters. With SNA 3.0
+SP2, SNA Manager generates an Access Violation if the "Alternate Link Services"
+field is edited with more than 256 Characters.
+
+CAUSE
+=====
+
+SNA Server uses a 255-character long array to handle those fields but the
+properties dialog box does not check for the length of the typed string.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+SP1, and 3.0 SP2.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+This update adds a check for a maximum length of 3557 characters for both lists.
+Each list can have a maximum of 127 remote link services.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

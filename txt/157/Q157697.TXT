@@ -1,0 +1,63 @@
+DOCUMENT:Q157697  06-DEC-2000  [schedplus]
+TITLE   :XCLN: Schedule+ Reminders Affect Screen Saver in Windows 95
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows 95, version 7.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+ - Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the Windows 95 screen saver starts on top of a Schedule+ appointment
+reminder, you cannot use the keyboard to dismiss the screen saver. However, you
+can still use the mouse to dismiss the screen saver.
+
+This issue has also been reported when using Microsoft Outlook 98.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Schedule+ version 7.0
+Windows 95 client. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+All keystrokes used in an attempt to dismiss the screen saver are actually
+processed by the reminder dialog box. Therefore, if you press either the ENTER
+or ESC key, the reminder is removed, and you may miss the appointment
+altogether.
+
+Additional query words: ol98
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbZNotKeyword3
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

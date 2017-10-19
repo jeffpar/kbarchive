@@ -1,0 +1,116 @@
+DOCUMENT:Q174937  09-AUG-2001  [winnt]
+TITLE   :Compaq Insight Agent Causes Tape Drive to Stop Responding
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Windows NT Backup on a Compaq computer with a 4 mm tape drive,
+Windows NT finds your 4 mm digital audio tape (DAT) drive but reports an error
+stating that the drive is not responding.
+
+NOTE: Compaq has confirmed that this does occur with other backup software,
+specifically Seagate Backup Exec. ) This problem can also affect your digital
+linear tape (DLT).
+
+CAUSE
+=====
+
+This error is caused by interaction between the Compaq insight agent and the
+tape drives firmware (revision 0322). At this time, revision 0322 is the most
+recent firmware revision therefore, a firmware upgrade will not resolve the
+problem. Previous firmware revisions do not display this behavior.
+
+These errors may be intermittent.
+
+RESOLUTION
+==========
+
+To verify that this problem is an issue with the tape drives firmware, perform
+the following steps:
+
+1. In Program Manager, double-click Control Panel, and then double-click
+   Services.
+
+2. Point to SNMP, and then click Startup.
+
+3. Click to select Disabled, and then click OK.
+
+4. Click Close, and then restart the computer.
+
+If this resolves the problem, please contact Compaq product support. (Disabling
+the SCSI agent from Insight Manager can also be used as a work around/test).
+
+Checking the Model Number and Firmware Revision
+-----------------------------------------------
+
+The model number of the device and firmware revision are in the Windows NT
+registry. To check the model number and firmware revision, follow the steps
+below.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+1. Start Registry Editor (Regedt32.exe), and go to the following subkey:
+
+   HKEY_LOCAL_MACHINE\Hardware\Devicemap\Scsi\ScsiPortx\ScsiBusx
+   \TargetIdx\LogicalUnitIdx
+
+   where x varies according to device number.
+
+2. Look at the Identifier:REG_SZ value to see the model number and firmware
+   revision values. For example, if you see
+
+   Compaq 4/16 GB TurboDat  0322
+
+   Then 0322 is the firmware revision value.
+
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+
+ARTICLE-ID: Q152346
+TITLE : Some DEC TLZ06 4MM DAT Tape Drives Not Recognized by Windows NT
+
+Additional query words: back up offline
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

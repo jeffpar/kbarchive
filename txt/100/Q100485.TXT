@@ -1,0 +1,58 @@
+DOCUMENT:Q100485  08-NOV-2001  [homemm]
+TITLE   :Musical Instruments: Colored Icons Turn Black and White
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Musical Instruments for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Musical Instruments icon may change from color to black and white when
+starting and while running Musical Instruments.
+
+
+The icons of other applications may also turn black and white when Musical
+Instruments is started. When you switch back to the desktop, however, the icons
+should return to their original colors.
+
+MORE INFORMATION
+================
+
+This also occurs when running other applications, such as Adobe Photoshop. This
+occurs with any application that changes the System palette.
+
+When an application changes the palette, the Macintosh System checks to see if
+enough of the standard colors are still available to render the icon correctly
+in color. If there are not enough standard colors available, it draws the icon
+in black and white.
+
+Additional query words: mac 1.0 multi media multimedia multi-media quit exit quitting exiting close launched launch run started start turned on off Usage CogApp
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbMusicalInstMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

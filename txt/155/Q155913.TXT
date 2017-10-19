@@ -1,0 +1,84 @@
+DOCUMENT:Q155913  19-FEB-2002  [foxpro]
+TITLE   :INFO: Visual Foxpro and ODBC Server-Side Cursors
+PRODUCT :Microsoft FoxPro
+PROD/VER::2.5,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbinterop kbODBC kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Via ODBC, some applications make use of a technology called server-side cursors.
+Server-side cursors allow users to manipulate data on the server without
+bringing all of the information to the local workstation.
+
+Visual FoxPro does not implement server-side cursors. If you need this
+functionality, technologies such as Remote Data Objects (RDO) that ship with
+Visual Basic might give you the desired behavior.
+
+MORE INFORMATION
+================
+
+ODBC exposes several different cursor models that consist of different ways to
+manage the results of a query against a DataSource.
+
+Visual FoxPro does not use any of the extended cursor models supported by ODBC,
+instead it uses one model where the local engine to manage results from the
+server. By doing this Visual FoxPro provides powerful features, including table
+buffering, creating indexes on results, and generally allowing the data from
+remote servers to behave similar to local data.
+
+Another popular model is the server-side cursor model. Server-side cursors,
+instead of returning all of the results of a query to the client workstation,
+keep the data on the server and allow the user to look at only those records
+they are interested in.
+
+Both models have benefits; however, Visual FoxPro implements only the first. To
+use server-side cursors from Visual FoxPro, you need to use an external tool for
+the client/server access. An example of one of these tools is the RDO component
+of Visual Basic 4.0.
+
+RDO is an OLE Automation Server that provides client/server data access. You can
+call RDO from within Visual FoxPro just like any other automation server.
+
+RDO is a component of Microsoft Visual Basic, and certain licensing restrictions
+regarding distribution of applications may apply. See your Visual Basic license
+agreement for details.
+
+REFERENCES
+==========
+
+See the Visual FoxPro documentation for more information about "automation
+servers."
+
+Additional query words: RDO Visual Basic
+
+======================================================================
+Keywords          : kbinterop kbODBC kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP500 kbVFP600
+Version           : :2.5,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

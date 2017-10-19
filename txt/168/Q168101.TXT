@@ -1,0 +1,89 @@
+DOCUMENT:Q168101  14-NOV-2000  [word97]
+TITLE   :WD97: AutoComplete Suggests Incorrect Date
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage kbautotext winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you start typing a date, Word may suggest an AutoComplete date format with
+an incorrect date.
+
+CAUSE
+=====
+
+The system date has changed since Word was started.
+
+WORKAROUND
+==========
+
+Quit and restart Word. Word will suggest the correct AutoComplete date.
+
+NOTE: You do not need to restart Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+To turn the AutoComplete feature off:
+
+1. On the Tools menu, click AutoCorrect.
+
+2. Click the AutoText tab.
+
+3. Click to clear the "Show AutoComplete tip for AutoText and dates" check box.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q159941 WD97: General Information about "Auto" Features in Word 97
+
+For more information about AutoComplete, click the Office Assistant, type "What
+is AutoComplete," click Search, click to view "What types of automatic changes
+does Word make?", and then click to view "Learn about AutoComplete changes Word
+makes."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Components
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbautotext winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

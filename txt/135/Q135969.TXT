@@ -1,0 +1,69 @@
+DOCUMENT:Q135969  18-DEC-2000  [win95x]
+TITLE   :Cannot Upgrade a Drive to DriveSpace 3
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you try to upgrade to
+DriveSpace 3:
+
+   Not enough free space on H (Host_For_C) to complete the task
+
+You are then prompted to resize drive C to increase free space on drive H. If you
+click Yes, you see an error message stating that Windows could not resize the
+drive, and you are told to increase the free space on drive H to at least 4 MB.
+You continue to receive this error message, no matter how much free space there
+is on drive H.
+
+CAUSE
+=====
+
+This problem occurs when all of the following conditions exist:
+
+ - Drive C is compressed with DriveSpace.
+
+ - The compressed volume file for drive C is smaller than 67 MB.
+
+ - The host drive for drive C has less than 2.2 MB of free space if no
+   Failsafe.drv folder exists, or has less than 128K of free space if the
+   Failsafe.drv folder does exist.
+
+
+RESOLUTION
+==========
+
+Remove files on the host drive so that there is a least 2.2 MB of free space if
+no Failsafe.drv folder exists, or at least 128K of free space if the
+Failsafe.drv folder does exist.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

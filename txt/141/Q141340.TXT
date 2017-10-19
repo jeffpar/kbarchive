@@ -1,0 +1,51 @@
+DOCUMENT:Q141340  12-MAR-1999  [exchange]
+TITLE   :XCLN: MAPILogon Requires Profile Name
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run a Simple Messaging Application Programming Interface (MAPI)
+application that makes a call to MAPILogon in Microsoft Exchange, the profile
+name must be passed in the Name field of the function.
+
+MORE INFORMATION
+================
+
+MAPI version 1.0 messaging systems require the profile name. The profile name is
+required, because it contains critical information, such as the mailbox name and
+all transport providers supported by that session.
+
+NOTE: Versions 3.x of Microsoft Mail for PC Networks require only the name field
+to pass the mailbox name and only support one transport provider at a time.
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

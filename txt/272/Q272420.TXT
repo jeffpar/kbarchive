@@ -1,0 +1,122 @@
+DOCUMENT:Q272420  13-JAN-2001  [vbwin]
+TITLE   :BUG: ComboBox Text Is Missing When DoEvents Is in GotFocus Event
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0,95,98
+OPER/SYS:
+KEYWORDS:kbComboBox kbVBp600bug kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 2000 
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 2000 
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Animation/Transition Display Properties system setting is turned on,
+List Item text does not display in a ComboBox if a DoEvents statement is used
+prior to assigning the ListIndex property in the GotFocus event.
+
+RESOLUTION
+==========
+
+Any of the following actions can be used to work around this behavior:
+
+ - The DoEvents statement can be placed after the statement that sets the
+   ListIndex.
+ - The Style of the ComboBox can be set to 0 - Dropdown Combo.
+ - The Animation/Transition setting can be cleared in the Effects tab of the
+   Display Properties dialog.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. For Windows 98 or Windows 95:
+
+   On the Start menu, click Control Panel, select Display Properties, and then
+   select the Effects tab to make sure that the Animate windows, menus and lists
+   item is checked.
+
+   For Windows 2000:
+
+   On the Start menu, click Control Panel, select Display Properties, and then
+   select the Effects tab to make sure that the Use transition effects for menus
+   and tooltips item is checked.
+
+2. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+3. Add two CommandButton controls and two ComboBox controls to Form1.
+
+4. Set the Style property for both ComboBox controls to 2 - Dropdown List.
+
+5. Add the following code to the General Declarations section of Form1:
+
+   Private Sub Combo1_GotFocus()
+      Combo1.ListIndex = 0
+   End Sub
+
+   Private Sub Combo2_GotFocus()
+      DoEvents
+      Combo2.ListIndex = 0
+   End Sub
+
+   Private Sub Form_Load()
+      Command1.TabIndex = 0
+      Combo1.TabIndex = 1
+      Command2.TabIndex = 2
+      Combo2.TabIndex = 3
+      Combo1.AddItem "ABC"
+      Combo2.AddItem "ABC"
+   End Sub
+
+6. Press the F5 key to run the program, and then click the drop-down arrow for
+   ComboBox1.
+
+7. Click on Form1, and then click the drop-down arrow for ComboBox2.
+
+8. Click on Form1 and note that ListIndex element number zero (0) appears in
+   ComboBox1. However, ListIndex element number zero (0) does not appear in
+   ComboBox2. ComboBox2 remains blank.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbComboBox kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :6.0,95,98
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

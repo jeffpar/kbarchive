@@ -1,0 +1,54 @@
+DOCUMENT:Q124317  12-JUN-2001  [odbc]
+TITLE   :INF: SQLColAttributes(SQL_COLUMN_LABEL) and Field Description
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using Open Database Connectivity (ODBC) version 2.0 Microsoft Access driver when
+you call SQLColAttribute for fDescType=SQL_COLUMN_LABEL for a result set column
+that is a column in a table, the returned value is the field or column name and
+not the field description that might have been added to the table in Microsoft
+Access version 2.0.
+
+
+MORE INFORMATION
+================
+
+In Microsoft Access version 2.0 during a table design, a field description can
+be added for a column. However, when a query is executed that has a result set
+with that column, SQLColAttribute with fDescType equal to SQL_COLUMN_LABEL for
+that column returns column name as the label and not the field description.
+
+Additional query words: 2.00.2317 ODBC descriptor title Windows NT
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

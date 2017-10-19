@@ -1,0 +1,83 @@
+DOCUMENT:Q261062  01-JUN-2001  [homegame]
+TITLE   :MCM2: Cannot Select Video Adapter When You Use Multiple Monitors
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Motocross Madness 2 on a computer that is
+configured to use multiple monitors, the list of available video adapters may be
+incorrect.
+
+CAUSE
+=====
+
+This behavior can occur if a 2-D video adapter is installed in your computer as
+the primary video adapter and a 3-D video adapter is installed in your computer
+as the secondary video adapter.
+
+NOTE: Motocross Madness 2 recognizes only the primary video adapter that is
+installed in your computer.
+
+RESOLUTION
+==========
+
+To work around this issue, select the Software Rasterization option when you
+start Motocross Madness 2.
+
+If you are not prompted to choose the 3-D card when you start Motocross Madness
+2:
+
+1. Start Motocross Madness 2.
+
+2. On the Motocross Madness 2 startup screen, click Options ([GRAPHIC:the three
+   gears]).
+
+3. Click Advanced.
+
+4. Click to select the "Show 3-D Renderer Selector at Startup" check box.
+
+5. Click Back ([GRAPHIC:the pointing hand]) until you return to the Motocross
+   Madness 2 startup screen.
+
+6. Click the X button to quit Motocross Madness 2.
+
+7. Quit and then restart Motocross Madness 2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Motocross Madness 2.
+
+Additional query words: 2.00 msgame mcm2 motorcross display multimon kbgraphx
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

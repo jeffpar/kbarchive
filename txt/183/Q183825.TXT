@@ -1,0 +1,61 @@
+DOCUMENT:Q183825  12-SEP-1999  [schedplus]
+TITLE   :XCLN: GPF Viewing Multiple Schedules, Leaving Schedule+ Running
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0a; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0a 
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive a general protection fault (GPF) error in Microsoft Schedule+.
+
+CAUSE
+=====
+
+This problem typically occurs when you use Schedule+ to view multiple schedules
+at the same time, or when you leave Schedule+ running for a long period of time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Schedule+ for Windows
+version 7.0a. A supported fix is now available, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+Additional query words: hang hung crash crashed locks locked frozen freezes crashing quit quits stopped crashes auto lockup freeze break won't respond waiting near memory stops responding hangs lock up fail
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2 kbScheduleSearch kbSchedule700a
+Version           : WINDOWS:7.0a; winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

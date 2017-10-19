@@ -1,0 +1,55 @@
+DOCUMENT:Q210354  23-MAR-1999  [sms]
+TITLE   :SMS: When Changing Package Access Accounts Must Update Package
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbPackage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server 2.0 gives you the ability to set access priveledges on
+Package access points. If you change the Access Account properties, the package
+must be updated on all distribution servers where this package resides in order
+for these changes to take affect. To update your distribution points after
+making this type of change, right-click the Distribution Points node and select
+Update Distribution Points on the All Tasks menu.
+
+MORE INFORMATION
+================
+
+Updating the distribution servers does not merely update the Access Account
+properties, it refreshes the entire package, including all source files (if the
+package contains any).
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbPackage 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

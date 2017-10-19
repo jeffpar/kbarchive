@@ -1,0 +1,76 @@
+DOCUMENT:Q150571  03-AUG-2001  [visualc]
+TITLE   :FIX: CWnd::DragAcceptFiles() in Books Online
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbMFC kbDocs kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC210bug kbVC220b
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, versions 1.5, 1.51, 1.52 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The documentation for CWnd::DragAcceptFiles() in Books Online states:
+
+   Call this member function from within the main window in your application's
+   CWinApp::InitInstance function to indicate that your main window and all
+   child windows accept dropped files from the Windows File Manager.
+
+This information is not correct. The message is not propagated to the child
+windows.
+
+STATUS
+======
+
+ 
+
+MORE INFORMATION
+================
+
+Since DragAcceptFiles() is a member function of CWnd class, a CWnd pointer is
+needed to call this function in CWinApp::InitInstance(). The window that calls
+DragAcceptFiles() with the bAccept parameter set to TRUE has identified itself
+as able to process the WM_DROPFILES message from Windows File Manager.
+
+For example, in an MFC MDI application, if the CMDIFrameWnd window pointer is
+used in the DragAcceptFiles() function call, only the CMDIFrameWnd window gets
+the WM_DROPFILES message. This message is not sent to all open CMDIChildWnd
+windows. For a CMDIChildWnd window to receive this message, you need to call
+DragAcceptFiles() with the CMDIChildWnd window pointer.
+
+The correct documentation is also found in Windows API DragAcceptFiles() function
+in Books Online.
+
+Additional query words: kbdocerr
+
+======================================================================
+Keywords          : kbMFC kbDocs kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC210bug kbVC220bug kbVC400bug kbVC500bug kbVC600fix kbGrpDSTools kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

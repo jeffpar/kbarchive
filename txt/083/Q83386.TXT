@@ -1,0 +1,259 @@
+DOCUMENT:Q83386  25-SEP-1999  [win95x]
+TITLE   :Windows 3.1 SYSTEM.INI [boot] Section
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article was taken from the SYSINI.WRI file contained in
+the Microsoft Windows Resource Kit for Windows version 3.1. The SYSINI.WRI file
+may be viewed with Windows Write.
+
+MORE INFORMATION
+================
+
+<BR/>
+The [boot] section of the SYSTEM.INI file contains a list of drivers and
+Windows modules that are used to configure Windows each time it boots. All
+settings contained in this section are required, with the exception of the
+CachedFileHandles entry.
+
+If any of these settings are modified or deleted, Windows may not work
+properly. There are no built-in default values for these settings; these
+settings are assigned upon Setup based on the system configuration.
+
+The [boot] section can contain the settings described in the following
+paragraphs.
+
+286grabber=<filename>
+---------------------
+
+Default:  None
+Purpose:  Specifies the filename of the device driver
+          (called a grabber) that makes a non-Windows
+          application visible when you use Windows in
+          standard mode.
+To change:  Choose the Windows Setup icon from the Main
+            Group window. This setting changes when you
+            change the Display setting in Setup. If you are
+            installing a device driver that is not included
+            with Windows, run Setup from MS-DOS.
+
+386grabber=<filename>
+---------------------
+
+Default:  None
+Purpose:  Specifies the filename of the device driver
+          (called a grabber) that makes a non-Windows
+          application visible when you use Windows in 386
+          enhanced mode.
+To change:  Choose the Windows Setup icon from the Main
+            Group window. This setting changes when you
+            change the display setting in Setup. If you are
+            installing a device driver that is not included
+            with Windows, run Setup from MS-DOS.
+
+CachedFileHandles=<number>
+--------------------------
+
+Default:  12
+Purpose:  Specifies the number of the most recently-used
+          executable (.exe) and dynamic link library (.dll)
+          files that can remain open. Windows keeps these
+          files open so that they can be accessed quickly,
+          ensuring optimal performance. However, some
+          networks have a limit on the number of files that
+          can be open on a server at a time. If you are
+          having problems running Windows from a Network
+          server, use a lower number for this setting. Valid
+          numbers are 2 through 12.
+To change:  Use Notepad to edit the SYSTEM.INI file.
+
+comm.drv=<filename>
+-------------------
+
+Default:  None
+Purpose:  Specifies the filename of the serial
+          communications driver you are using.
+To change:  Use Notepad to edit the SYSTEM.INI file.
+
+display.drv=<filename>
+----------------------
+
+Default:  None
+Purpose:  Specifies the filename of the display driver you
+          are using.
+To change:  Choose the Windows Setup icon from the Main
+            Group window. If you are installing a device
+            driver that is not included with Windows, run
+            Setup from MS-DOS.
+
+drivers=<filename-or-aliasname>
+-------------------------------
+
+Default:  None
+Purpose:  Specifies the filename(s) or alias name(s) of the
+          installable drivers that load when Windows is
+          started. An installable driver is a dynamic-link
+          library that is treated by Windows like a device
+          driver. If the drivers you want to use include
+          parameters, you must specify them by alias name.
+          Alias names are defined in the [Drivers] section
+          of the SYSTEM.INI file. You can list several file
+          or alias names in this setting
+To change:  Most setup programs add these settings to the
+            SYSTEM.INI file when installing installable
+            drivers, so you shouldn't need to change the
+            settings. Use Notepad to edit the SYSTEM.INI
+            file.
+
+fixedfon.fon=<filename>
+-----------------------
+
+Default:  None
+Purpose:  Specifies the filename of the fixed system font
+          used by Windows version 2.x. This font will still
+          be used by version 2.x applications.
+To change:  Choose the Windows Setup icon from the Main-
+            group window. This setting changes when you
+            change the display setting.
+
+fonts.fon=<filename>
+--------------------
+
+Default:  None
+Purpose:  Specifies the filename of the proportionately-
+          spaced system font used by Windows 3.1.
+To change:  Choose the Windows Setup icon from the Main-
+            group window. This setting changes when you
+            change the display setting in Setup.
+
+keyboard.drv=<filename>
+-----------------------
+
+Default:  None
+Purpose:  Specifies the filename of the keyboard driver you
+          are using.
+To change:  Choose the Windows Setup icon from the Main-
+            group window and change the setting for the
+            Keyboard option.
+
+language.dll=<library-name>
+---------------------------
+
+Default:  None
+Purpose:  Specifies the name of the dynamic-link library
+          that supplies language-specific functions. If no
+          language library is specified, Windows uses the
+          built-in U.S. English library.
+To change:  Choose the International icon from the Control
+            Panel window and change the setting for the
+            Language option.
+
+mouse.drv=<filename>
+--------------------
+
+Default:  None
+Purpose:  Specifies the filename of the mouse driver you are
+          using.
+To change:  Choose the Windows Setup icon from the Main-
+            group window and change the setting for the
+            Mouse option.
+
+network.drv=<filename>
+----------------------
+
+Default:  None
+Purpose:  Specifies the filename of the network driver you
+          are using.
+To change:  Choose the Windows Setup icon from the Main-
+            group window and change the setting for the
+            Network option.
+
+oemfonts.fon=<filename>
+-----------------------
+
+Default:  None
+Purpose:  Specifies the name of the font file for the OEM
+          character set. This setting is associated with the
+          display setting.
+To change:  Quit Windows and then run Setup from MS-DOS.
+            This setting changes when you change the
+            Codepage or Display setting in Setup.
+
+shell=<filename>
+----------------
+
+Default:  None (Setup initializes this value as PROGMAN.EXE)
+Purpose:  Specifies the Windows program that runs when you
+          start Windows. Unless you change this setting,
+          Program Manager will run when you start Windows.
+To change:  Use Notepad to edit the SYSTEM.INI file.
+
+sound.drv=<filename>
+--------------------
+
+Default:  None
+Purpose:  Specifies the filename of the system sound driver
+          you are using.
+To change:  Use Notepad to edit the SYSTEM.INI file.
+
+system.drv=<filename>
+---------------------
+
+Default:  None
+Purpose:  Specifies the filename of the system hardware
+          driver you are using.
+To change:  Quit Windows and run Setup from MS-DOS.
+
+TaskMan.Exe=<filename>
+----------------------
+
+Default:  taskman.exe
+Purpose:  Specifies the task-switching application that
+          appears when you press CTRL+ESC. If this setting
+          does not appear in the SYSTEM.INI file, then
+          Windows Task Manager is used as the task-switching
+          application.
+To Change:  Use Notepad to edit the SYSTEM.INI file.
+
+KBCategory: kbref kbdisplay kbsound
+KBSubcategory:
+
+REFERENCES
+==========
+
+Microsoft Windows Resource Kit 3.1 SYSINI.WRI file
+
+Additional query words: 3.10 win31 WRK RK
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

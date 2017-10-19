@@ -1,0 +1,77 @@
+DOCUMENT:Q224367  26-MAY-2001  [homemm]
+TITLE   :Err Msg: An Essential Component for Full Screen Video Is Missing
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kberrmsg kbtool kbimu KbDirectX
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play a full-screen video in Microsoft Encarta Reference
+DVD-ROM Suite 99, you may receive the following error message:
+
+   AN ESSENTIAL COMPONENT FOR FULL SCREEN VIDEO IS MISSING
+
+   Your DVD-ROM driver software does not support DirectShow, which Encarta
+   Encyclopedia uses to display videos at full screen size. To correct the
+   problem, contact the manufacturer of your DVD-ROM drive to receive updated
+   DVD-ROM driver software. If your DVD-ROM drive came with your computer,
+   contact the computer manufacturer.
+
+CAUSE
+=====
+
+This behavior can occur if the DVD decoder card device drivers installed on the
+computer do not support Microsoft DirectShow.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact the manufacturer of your DVD decoder card for
+information about how to obtain updated decoder card drivers that support
+DirectShow.
+
+NOTE: The manufacturer of your DVD decoder card may not be the same as the
+manufacturer of your DVD-ROM drive.
+
+MORE INFORMATION
+================
+
+DirectShow is a component of Microsoft DirectX.
+
+For additional information about DVD-ROM movies and DirectShow, please visit the
+following Microsoft Web site:
+
+   http://www.microsoft.com/directx/overview/dshow/drivers.asp
+
+Additional query words: multi multi-media media mm enc99 digital video disc
+
+======================================================================
+Keywords          : kb3rdparty kbenv kberrmsg kbtool kbimu KbDirectX 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference99
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

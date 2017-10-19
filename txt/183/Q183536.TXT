@@ -1,0 +1,54 @@
+DOCUMENT:Q183536  04-MAR-2002  [exchange]
+TITLE   :XWEB: Pressing ESC Key Erases Text in Appointment in OWA
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,4.01,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Internet Explorer versions 4.0, 4.01 for Windows 95 
+ - Microsoft Internet Explorer versions 4.0, 4.01 for Windows NT 4.0 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Pressing the ESC key after entering information in a new appointment in Outlook
+Web Access will cause the information to be erased.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the above listed products.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbIEsearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbIENT400Search kbIE95Search kbZNotKeyword3 kbOWA550 kbIE400Win95 kbIE401Win95 kbIE400WinNT400 kbIE401WinNT400
+Version           : :4.0,4.01,5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

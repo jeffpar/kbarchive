@@ -1,0 +1,66 @@
+DOCUMENT:Q271186  10-FEB-2001  [word97]
+TITLE   :WD97: Word Hangs When Started on Compaq Armada M300 or M700
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows, used with:
+    - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Word, either from a shortcut or by double-clicking a document
+name in Windows Explorer, Word stops responding (hangs). You must restart the
+computer.
+
+CAUSE
+=====
+
+This problem occurs on Compaq Armada M300 and M700 notebook computers that are
+running Windows 95 OSR-2.1 with the ATI Rage Mobility Driver.
+
+
+WORKAROUND
+==========
+
+To work around this problem, browse to the following Compaq Web site for an
+updated driver:
+
+   http://www5.compaq.com/support/files/notebooks/us/locate/3_1009.html#Display
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: prb compaq armada m300 m700 wd97 word97 win95 windows95 display hang hangs
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Hardware          : ALPHA x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

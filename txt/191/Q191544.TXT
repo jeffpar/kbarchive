@@ -1,0 +1,56 @@
+DOCUMENT:Q191544  30-MAR-1999  [homegame]
+TITLE   :Urban Assault: Occupied Vehicle Is Not Transported to Next Level
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Urban Assault, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you occupy a vehicle located on an open beam gate, the vehicle is not
+transported to the next level when you beam your Host Station to the beam gate.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, jump into your Host Station before you
+beam the Host Station to the beam gate.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Urban Assault, version
+1.0.
+
+Additional query words: 1.00 msgame ua teleport
+
+======================================================================
+Keywords          : kbimu msgame kbfaq
+Technology        : kbGamesSearch kbUrbanAssault
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

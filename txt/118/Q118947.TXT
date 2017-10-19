@@ -1,0 +1,70 @@
+DOCUMENT:Q118947  07-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Error 29 Alias Does Not Exist
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Microsoft Mail Administrator program (ADMIN.EXE), the IMPORT utility is
+used to create, modify, and delete users on the local postoffice. (For more
+information, please see pages 323-325 of Mail 3.2 "Administrator's Guide.")
+
+When you try to modify a user's friendly name, the following error message may be
+displayed:
+
+   Error 29 Alias does not exist [friendly name]
+
+CAUSE
+=====
+
+The syntax of the modify transaction is incorrect. The following transactions to
+modify the friendly name are not valid:
+
+   M Black, Fred {Folkstone}        PCM:NET/PO/FredB
+   M Brown, John {Lincoln}          PCM:NET/PO/JohnB
+
+RESOLUTION
+==========
+
+The proper form of the import file for modify transactions is as follows:
+
+   M Black, Fred (Folkstone)        PCM:NET/PO/FredB
+
+     Black, Fred {Folkstone}        PCM:NET/PO/FredB
+
+   M Brown, John (Lincoln)          PCM:NET/PO/JohnB
+
+     Brown, John {Lincoln}          PCM:NET/PO/JohnB
+
+Additional query words: 3.20 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

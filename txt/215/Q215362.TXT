@@ -1,0 +1,83 @@
+DOCUMENT:Q215362  04-FEB-1999  [foxpro]
+TITLE   :HOWTO: Detect DCOM Installation Under VFP 6.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbDCOM kbOSWinNT400 kbvfp600 kbOSWin95 kbOSWin98 kbFFC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how to detect whether DCOM is installed in a Windows
+95/98 or a Windows NT 4.0 machine from within Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+An application created with a Top-Level form needs DCOM installed in order to
+work properly when the Visual FoxPro main desktop is suppressed in the
+Config.fpw with SCREEN=OFF.
+
+With the code below, you can detect that DCOM is present. Based on this
+information, you can shut down the application if necessary.
+
+   #DEFINE HKEY_LOCAL_MACHINE  -2147483646
+   #DEFINE DCOMKEYSTRING 'SOFTWARE\Microsoft\OLE'
+   #DEFINE ENABLEDCOMKEY 'EnableDCOM'
+
+   SET CLASSLIB TO HOME()+"ffc/REGISTRY.VCX"
+   oReg=CREATEOBJECT('registry')
+   LOCAL lFoundDCOM
+   lFoundDCOM = .F.
+   IF oReg.OpenKey(DCOMKEYSTRING,HKEY_LOCAL_MACHINE,.F.) = 0
+      LOCAL cValue
+      cValue = ''
+      IF oReg.GetKeyValue(ENABLEDCOMKEY,@cValue) = 0
+         lFoundDCOM = !EMPTY(cValue)
+      ENDIF
+   ENDIF
+   IF !lFoundDCOM
+      MESSAGEBOX('DCOM not install on system')
+   ELSE
+      MESSAGEBOX('DCOM install on system')
+   ENDIF
+
+REFERENCES
+==========
+
+For additional information about exception errors terminating Top-Level form in
+Visual FoxPro applications, please see the following article in the Microsoft
+Knowledge Base:
+
+Q193472 BUG: Exception Error Exiting Top-Level Form App in Windows 95
+
+Additional query words: DCOM
+
+======================================================================
+Keywords          : kbDCOM kbOSWinNT400 kbvfp600 kbOSWin95 kbOSWin98 kbFFC 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

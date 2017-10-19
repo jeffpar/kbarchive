@@ -1,0 +1,78 @@
+DOCUMENT:Q274464  04-MAY-2001  [msnetwork]
+TITLE   :Outlook Express Shortcut Target URL Invalid After MSN Explorer I
+PRODUCT :The Microsoft Network
+PROD/VER::2.6,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.6, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing MSN Explorer over MSN Internet Access 2.6, the Outlook Express
+desktop shortcut produces an error that the shortcut it invalid and begins
+searching.
+
+CAUSE
+=====
+
+Unknown
+
+RESOLUTION
+==========
+
+Set the Outlook Express shortcut target back to default. For Windows 9x
+
+1. Right-click the Outlook Express Icon on the desktop and then click
+   Properties.
+
+2. Under the Shortcut tab in the box labeled Target type
+
+   C:\Program Files\Outlook Express\msimn.exe
+
+3. Click Ok.
+
+For Windows 2000
+
+1. Right-click the Outlook Express Icon on the desktop and then click
+   Properties.
+
+2. Under the Shortcut tab in the box labeled Target type
+
+   %ProgramFiles%\Outlook Express\msimn.exe
+
+3. Click Ok.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu MSN Explorer, Outlook Express, 2.6
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN260
+Version           : :2.6,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

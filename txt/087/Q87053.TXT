@@ -1,0 +1,59 @@
+DOCUMENT:Q87053  18-NOV-1999  [pcmail]
+TITLE   :MCI: Steps That Must Be Completed to Install the Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MCI, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Complete instructions for installing the Microsoft Mail Gateway to MCI can be
+found in "Microsoft Mail Gateway to MCI Administrator's Guide."
+
+Before installation, ensure:
+
+ - The drive and path of the directory containing the Microsoft Mail data files
+   is known.
+
+ - The drive and path of the directory containing the Microsoft Mail executables
+   is known.
+
+ - That if you are installing on the gateway postoffice, the gateway component
+   is installed first.
+
+REFERENCES
+==========
+
+Microsoft Mail Gateway to MCI Administrator's Guide
+
+
+Additional query words: 3.00 pcmail 2.1a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMCI300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

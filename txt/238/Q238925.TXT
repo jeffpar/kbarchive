@@ -1,0 +1,130 @@
+DOCUMENT:Q238925  27-OCT-2000  [homemm]
+TITLE   :Encarta 2000: How to Troubleshoot Sound and Video Driver Issues
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+ - Microsoft Encarta Reference Suite 2000 
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are unable to start Microsoft Encarta Encyclopedia 2000, or if you
+experience problems when you attempt to use the enhanced sound or display
+features in Encarta 2000, you may need to obtain updated drivers for your sound
+card or video adapter.
+
+MORE INFORMATION
+================
+
+Both the Encarta Encyclopedia 2000 and the Encarta Reference Suite 2000
+Installation and Resources CD-ROM contain a set of registry keys you can use to
+determine whether any problems that occur when you use Encarta are related to
+outdated sound card or video adapter drivers.
+
+These registry keys disable the startup sounds, the user interface sounds, and
+the enhanced display options in Encarta Encyclopedia 2000.
+
+To use these registry keys to troubleshoot problems in Encarta 2000:
+
+1. Insert the Encarta Encyclopedia 2000 or the Encarta Reference Suite
+   Installation and Resources CD-ROM into your CD-ROM or DVD-ROM drive. Press
+   and hold down the SHIFT key as you insert the CD-ROM to prevent Encarta
+   Encyclopedia or Encarta Reference Suite Setup from starting automatically.
+
+2. Double-click the My Computer icon on the desktop.
+
+3. Right-click the CD-ROM drive icon, and then click Explore.
+
+4. Double-click the Support folder.
+
+5. Double-click the Regfiles folder.
+
+6. Double-click the Ee folder.
+
+7. Double-click the Eesndoff.reg file, and then click OK.
+
+8. Start Encarta Encyclopedia 2000.
+
+9. If the problems no longer occur, contact the manufacturer of your sound card
+   to inquire about obtaining an updated sound driver for the sound card.
+
+   If the problems continue to occur, continue to the next step.
+
+10. Quit Encarta Encyclopedia 2000.
+
+11. In Windows Explorer, double-click the Eesndon.reg file, and then click OK.
+
+12. In Windows Explorer, double-click the Eevwoff.reg file, and then click OK.
+
+13. Start Encarta Encyclopedia 2000.
+
+14. If the problems no longer occur, contact the manufacturer of your video
+   adapter to inquire about obtaining an updated video driver for the video
+   adapter.
+
+   If the problems continue to occur, continue to the next step.
+
+15. Quit Encarta Encyclopedia 2000.
+
+16. In Windows Explorer, double-click the Eesndoff.reg file, and then click OK.
+
+17. Start Encarta Encyclopedia 2000.
+
+18. If the problems no longer occur, contact both the manufacturer of your sound
+   card and the manufacturer of your video adapter to inquire about obtaining
+   updated drivers for your sound card and your video adapter.
+
+   If the problems continue to occur, they are most likely unrelated to your
+   sound card or display adapter drivers.
+
+To restore the startup sounds, the user interface sounds, and the enhanced
+display options in Encarta Encyclopedia 2000:
+
+1. Double-click the My Computer icon on the desktop.
+
+2. Right-click the CD-ROM drive icon, and then click Explore.
+
+3. Double-click the Support folder.
+
+4. Double-click the Regfiles folder.
+
+5. Double-click the Ee folder.
+
+6. Double-click the Eesndon.reg file, and then click OK.
+
+7. Double-click the Eevwon.reg file, and then click OK.
+
+Additional query words: multi multi-media media mm troubleshoot tshoot
+
+======================================================================
+Keywords          : kbdisplay kbenv kbsound kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000 kbEncartaReference2000 kbEncartaReference2001
+Version           : :; WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

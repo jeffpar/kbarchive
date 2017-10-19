@@ -1,0 +1,62 @@
+DOCUMENT:Q311400  09-MAY-2002  [sms]
+TITLE   :SMS: Problem with the Keyboard in a Remote Control Session
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbtool kbui kbsms200 kbsms200bug kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the keyboard in a Systems Management Server (SMS) remote
+control session, the client's keyboard may become stuck, and may not respond
+when you press keys. If you go to the remotely-controlled computer, pressing
+certain keys in the remote control session may create unexpected results. For
+example, when you press the apostrophe (') key, you may receive the following
+result:
+
+   '7777777777777777777777777777->
+
+CAUSE
+=====
+
+This problem may occur if the Administrator console is running a 101-key
+keyboard and the remote control client is running a 106-key keyboard (Japanese).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: prodsms single quote
+
+======================================================================
+Keywords          : kbenv kbhw kbtool kbui kbsms200 kbsms200bug kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,66 @@
+DOCUMENT:Q150213  15-MAY-2001  [vbwin]
+TITLE   :FIX: Incorrect Declaration for SelectObject API Function
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbVBp400bug kbVBp500fix kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Win32Api.txt file contains an incorrect entry for the declaration of the
+32-bit SelectObject function.
+
+RESOLUTION
+==========
+
+The win32api.txt file contains the following incorrect declaration:
+
+      Declare Function SelectObject Lib "user32" Alias "SelectObject" _
+      ByVal hdc  As Long, ByVal hObject As Long) As Long
+
+The correct declaration is:
+
+      Declare Function SelectObject Lib "gdi32" Alias "SelectObject" _
+      (ByVal hdc  As Long, ByVal hObject As Long) As Long
+
+Notice that the library name was incorrect in the original declaration.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 5.0.
+
+Additional query words: kbVBp400bug kbVBp500fix kbVBp kbdsd kbDSupport KBWIN32SDK KBAPI
+
+======================================================================
+Keywords          : kbVBp400bug kbVBp500fix kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,157 @@
+DOCUMENT:Q120918  29-JUL-2001  [visualc]
+TITLE   :INFO: Visual C++ Vers 2.0 README, Part 2 Development Environment
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbreadme kbide kbVC200 kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 2.0, on platform(s):
+    - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is based on the Visual C++ version 2.0 README.WRI file:
+
+Customizing the Keyboard for Editing
+------------------------------------
+
+You can use the Keyboard tab on the Tools Customize dialog box to set command
+shortcut keys for any of the Visual C++ editors. (For more information, see
+"Customizing the Keyboard" in Chapter 17 in the Visual C++ User's Guide.)
+
+Enabling Autoscroll in the Output Window
+----------------------------------------
+
+Autoscrolling in the Output Window is disabled if the window cursor is not on the
+last line of the window. To enable autoscrolling, restore the cursor to the last
+line using the mouse or by pressing CTRL+END.
+
+Shortcut Key Settings for "Main" and Specific Editors
+-----------------------------------------------------
+
+Your command shortcut-key assignments for the Main selection and the specific
+editors in the Customize dialog box behave as designed, but they may not work as
+first expected. The following explanation clarifies this behavior.
+
+In the Customize dialog box, each editor in the Editor drop-down list box
+provides default settings. For the editor you designate (Text, Dialog, or
+Image), the command shortcut key you specify overrides any previous assignment
+for that key in that editor. It also overrides any default shortcut key
+specified in "Main" for that command.
+
+For example, you can assign CTRL+L to EditLowerCase in the "Main" editor, and use
+it successfully because there is no assignment for CTRL+L in any editor.
+However, assigning the shortcut CTRL+U to the EditUpperCase command in the
+"Main" editor does not enable you to change a Text editor selection to all
+uppercase. CTRL+U will change text to lowercase because CTRL+U is the default
+shortcut for EditLowerCase in the Text editor.
+
+To set CTRL+U to activate EditUpperCase in the Text editor, either remove the
+assignment of CTRL+U to EditLowerCase in the Text editor, or assign CTRL+U to
+EditorUpperCase in the Text editor. Of course, this will leave EditLowerCase
+without a shortcut key. You may then assign CTRL+L or any other unassigned key
+to EditLowerCase.
+
+You may encounter similar problems with other command shortcut-key assignments.
+
+Rebuilding While a Project Browser File is Open
+-----------------------------------------------
+
+If you rebuild a project while the project browser file is open, the following
+message regarding the browser (.BSC) file is displayed in the output window:
+
+Error getting status of file filename: The process cannot access the file because
+it is being used by another process. Creating browse info file. You can ignore
+this error message.
+
+Using Wildcards with Browse Information Queries
+-----------------------------------------------
+
+You start a browse information query by choosing Browse from the Search menu or
+by pressing CTRL+F11. You can expand the scope of your query by using the
+wildcard character (*) in the Query on Name edit field. For example, you might
+enter On* and specify Call Graph in the Select Query list box. When you choose
+OK, Visual C++ version 2.0 displays the Resolve Ambiguity dialog box, which
+lists all the functions beginning with On (OnActivate, OnAppAbout, OnApply and
+so on). From the list, you can select the function of interest.
+
+You can expand the scope of queries for file outlines by specifying filenames and
+extensions using the wildcard character (*). For example, if you specify O*.Cpp
+and select File Outline in the Select Query list box, Visual C++ version 2.0
+displays information about all symbols contained in all files in your project
+that begin with the letter O and have the extension .CPP. If you enter O*.*,
+information is displayed for all files beginning with the letter O. If you
+specify O* with no extension, Visual C++ reports that it cannot find browse
+information for that file.
+
+Project Directory Structure
+---------------------------
+
+Visual C++ writes all the files it creates into the same directory as the project
+file (for example, MYPROJ.MAK), or in a subdirectory of that directory. When
+Visual C++ writes filenames to the project file, it uses a path relative to the
+project directory -- for example, .\MYFILE.CPP. Because Visual C++ uses relative
+filenames, you can move entire projects from one directory to another, or one
+drive to another and the project file will contain the correct relative
+locations for its files.
+
+If you add files, or files with dependencies (in #include statements, for
+example), that are not in the project directory or one of its subdirectories,
+Visual C++ writes a fully qualified filename in the project file. If you add the
+include directory D:\INCLUDE and then add SHARED.H in D:\INCLUDE as an included
+file in one of your source files to a project in a directory on C:, Visual C++
+represents this included file as D:\INCLUDE\SHARED.H in the project file. If the
+file is on the same drive as the project, the drive letter is omitted. That is,
+if the include directory is C:\INCLUDE, Visual C++ represents the file as
+\INCLUDE\SHARED.CPP.
+
+Projects that contain files with fully qualified filenames can be moved from one
+location to another. If you anticipate moving or copying projects, you should
+keep all the project files on the same drive. If you maintain several related
+projects that have common included files or common resource files, you can keep
+the project files in one directory, and keep all the related files in
+subdirectories of that directory. For example, you might have the following
+structure:
+
+C:\PROJDIR\*.MAK C:\PROJDIR\PROJ1\*.CPP
+C:\PROJDIR\PROJ2\*.CPP
+C:\PROJDIR\INCLUDE\*.H
+
+If you always want to use relative paths for a particular dependency in the
+project file, use the following form in at least one source file:
+
+   #include "..\INCLUDE\SHARED.H"
+
+That is, if the path begins with ..\, Visual C++ uses the explicit relative path,
+regardless of whether it's in the project tree. This is a useful way to override
+the default behavior, if necessary.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbreadme kbide kbVC200 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q134662  25-JUL-2001  [sms]
+TITLE   :Incorrect Time Reported in the Database for Last Software Scan
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The Last Software Scan time is reported one hour off under the Personal Computer
+Properties, Workstation Status. For example, if you ran inventory at 10:45 on
+7/20/95, it would be reported as follows:
+
+   Last Hardware Scan      7/20/1995  10:45
+   Last Software Scan      7/20/1995  11:45
+
+This happens with Windows NT, Windows for Workgroups, and Windows 95 clients. It
+happens if the inventory is run manually or in a logon script. It also does not
+matter if you collect inventory every day or once a week.
+
+Macintosh and OS/2 clients report correctly.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+
+Additional query words: sms prodsms inventory
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

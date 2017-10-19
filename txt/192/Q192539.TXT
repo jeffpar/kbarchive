@@ -1,0 +1,188 @@
+DOCUMENT:Q192539  08-MAY-2002  [visualc]
+TITLE   :FIX: 'using namespace std' Before Friend Operator Fails Compile
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbservicepack kbLangCPP kbVC600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a "using namespace std" directive is placed before a friend operator
+declaration, you may get one of the following two errors:
+
+Case 1
+------
+
+   error C2248: [member variable name] : cannot access private member declared
+   in class [class name] [file name] (line number) : see declaration of [member
+   variable]
+
+Case 2
+------
+
+   [file name](line number) : fatal error C1001: INTERNAL COMPILER ERROR
+
+   (compiler file 'msc1.cpp', line 1786)
+   Please choose the Technical Support command on the Visual C++ Help menu, or
+   open the Technical Support help file for more information.
+
+   Error executing cl.exe.
+
+CAUSE
+=====
+
+The friend operator resolution fails in the compiler front-end when std
+namespace is introduced.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Service Pack 3 for Visual Studio 6.0 that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date      Time      Size        File Name  Version#      Platform
+   -----------------------------------------------------------------
+
+   9/15/98   08:26p    1,183,795   C1xx.dll   12.00.8257.0  (x86)
+
+
+
+Workaround
+----------
+
+Do one of the following to work around this problem:
+
+ - Move the "using namespace std" directive after the friend operator
+   declaration.
+ - Avoid using the "using namespace std" directive.
+ - Forward declare the operator and/or class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.This bug was corrected in Visual Studio 6.0 Service
+Pack 3. For more information about Visual Studio service packs, please see the
+following articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Test1.cpp Reproduces the C2248 Error in Case 1
+----------------------------------------------
+
+      // test1.cpp
+      // Compiler options needed: cl /c /GX
+      #include <iostream>
+
+      using namespace std;
+
+      #ifdef WORKAROUND
+      class CMyClass;
+      ostream& operator <<(ostream &, const CMyClass &);
+      #endif // WORKAROUND
+
+      class CMyClass
+      {
+      public:
+
+        friend ostream& operator <<(ostream &, const CMyClass &);
+        // An alternative workaround is to define the operator in the
+        // class declaration. In this case it is not necessary to forward
+        // declare the class and friend function.
+
+      private:
+
+         int value;
+      };
+
+      ostream& operator <<(ostream& out, const CMyClass& m)
+      {
+
+         int i = m.value;  // C2248 Error
+         return out;
+      }
+
+      void main()
+      { }
+
+Test2.cpp Reproduces the C1001 Error in Case 2
+----------------------------------------------
+
+      // test2.cpp
+      // Compiler options needed: cl /c /GX
+      #include <iostream>
+
+      using namespace std;
+
+      #ifdef WORKAROUND
+      int operator+(int, const class &);
+      #endif // WORKAROUND
+
+      class CMyClass
+      {
+      public:
+
+        friend int operator+(int, const CMyClass &);  // C1001 Error.
+
+      };
+
+      void main()
+      { }
+
+======================================================================
+Keywords          : kberrmsg kbservicepack kbLangCPP kbVC600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

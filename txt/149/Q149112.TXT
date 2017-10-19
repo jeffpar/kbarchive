@@ -1,0 +1,82 @@
+DOCUMENT:Q149112  21-OCT-2000  [iis]
+TITLE   :Some Image Maps Do Not Work with IIS
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Some image map files may not work well with Microsoft Internet Information
+Server (IIS) version 1.0 because of the syntax used for creating the map files.
+
+CAUSE
+=====
+
+IIS uses the CERN specifications for image maps. Map files that use the
+following syntax may work on other World Wide Web (WWW) servers but may not
+function well on IIS:
+
+   default file.htm
+   file1.htm rect (0,1) (170,53)
+   file2.htm rect (264,26) (349,53)
+   file3.htm rect (187,23) (264,53)
+
+The correct syntax for the above map data is:
+
+   default file.htm
+   rect (0,1) (170,53) file1.htm
+   rect (264,26) (349,53) file2.htm
+   rect (187,23) (264,53) file3.htm
+
+NOTE: The rectangle range specifications occur prior to the destination HTML
+file. For more information on creating image maps for use with IIS, see
+Knowledge Base article number Q146573.
+
+RESOLUTION
+==========
+
+Obtain the fix mentioned below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 1.0. This problem was corrected in the latest Windows NT 3.51 U.S.
+Service Pack. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

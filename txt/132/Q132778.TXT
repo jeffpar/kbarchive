@@ -1,0 +1,60 @@
+DOCUMENT:Q132778  17-DEC-2000  [win95x]
+TITLE   :Poor Performance Accessing Network Files with Basic Redirector
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience poor performance using the real-mode basic redirector to
+access files on a Windows 95-based server running the Microsoft Client for
+Microsoft Networks.
+
+CAUSE
+=====
+
+The basic redirector incorrectly determines the maximum packet size when it
+communicates with a Windows 95-based server that is using share-level security.
+The maximum packet size the redirector uses is 207 bytes.
+
+RESOLUTION
+==========
+
+Change the Windows 95-based server to use user-level security. To make this
+change, follow these steps on the server:
+
+1. Use the right mouse button to click Network Neighborhood, then click
+   Properties on the menu that appears.
+
+2. On the Access Control tab, click User-Level Access Control.
+
+3. Click OK.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

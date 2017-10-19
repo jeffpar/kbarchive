@@ -1,0 +1,46 @@
+DOCUMENT:Q47206  30-JUL-2001  [homegame]
+TITLE   :FltSim: Ridge and Thermal Soaring with the Sailplane
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+There are two ways to experience soaring in the sailplane, ridge soaring and
+thermal soaring.
+
+To experience ridge soaring in Flight Simulator, select the mode Sailplane: Ridge
+Soaring from the Mode Library. This flight mode releases you into the air
+currents that are rising along the coast of Marin Country, northwest of the
+Golden Gate Bridge in San Francisco.
+
+To experience thermal soaring in Flight Simulator, select the mode Sailplane:
+Thermal Soaring from the Mode Library. You will be released in an area with an
+abundance of thermal activity; by flying over the dark colored areas of the
+ground, you will likely fly into a thermal. When you do, the nose of the
+sailplane pitches up slightly, and then the VSI and altimeter indicate that you
+are climbing.
+
+Additional query words: 4.00 flight simulator flightsim fltsim soar
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

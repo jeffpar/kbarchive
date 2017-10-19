@@ -1,0 +1,118 @@
+DOCUMENT:Q159346  17-DEC-2000  [win95x]
+TITLE   :Msbatch.inf Parameters: Inserting IPX/SPX Options
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to insert IPX/SPX options using the Msbatch.inf file
+for batch installations of Windows 95.
+
+MORE INFORMATION
+================
+
+Microsoft does not encourage or support changes to .inf files; therefore,
+Microsoft Technical Support does not support the procedure in this article.
+Although we have tested the following procedure and it appears to function as
+described, make a backup copy of your .inf file before you proceed.
+
+In the Msbatch.inf file, modify the [Network] section to include the following
+line:
+
+   Protocols=NWLINK  ; other protocols can be inserted here also
+
+Also, add the following section and parameters as needed:
+
+   [NWLINK]
+   Frame_Type=value
+   NetBIOS=value
+   Cachesize=value
+   Maxconnect=value
+   Maxsockets=value
+   Forceeven=value
+
+Frame_Type values:
+
+0=802.3
+1=802.2
+2=Ethernet II
+4=Auto
+5=Token ring
+6=Token ring SNAP
+
+NetBIOS values:
+
+0=Do not install NetBIOS support over IPX/SPX
+1=Install NetBIOS support over IPX/SPX
+
+Cachesize values (Source Routing):
+
+0=Off
+16=16 entry cache (recommended)
+32=32 entry cache
+64=64 entry cache
+
+Maxconnect values (maximum connections):
+
+Allowable values are 1-128. If you do not want a value set for this parameter, do
+not include it in the section.
+
+Maxsockets values (maximum sockets):
+
+Allowable values are 2-255. If you do not want a value set for this parameter, do
+not include it in the section.
+
+Forceeven values:
+
+0=No ; Do not force even-length packets
+1=Yes ; Force even-length packets
+
+Additional Information
+----------------------
+
+If for some reason the frame_type setting in the Msbatch.inf file does not take
+effect, and a certain frame type is required, modify the Nettrans.inf file to
+force the frame type.
+
+To accomplish this, find the following line in the [NWLINK.ndi.reg] section of
+the Nettrans.inf file:
+
+   HKR,Ndi\params\Frame_Type,default,,4
+
+The number at the end of the line is the default for the frame type. Because 4 is
+the default, it defaults to Auto.
+
+When you use the Msbatch.inf file, you force the frame type for a specific
+network adapter or configuration. When enumeration takes place and a new network
+adapter is found, the information in the Nettrans.inf file is used.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

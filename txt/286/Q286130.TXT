@@ -1,0 +1,61 @@
+DOCUMENT:Q286130  12-NOV-2001  [homegame]
+TITLE   :Casino: Game Quits When You Win Too Many Complimentary Items
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Casino, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When your player wins too many complimentary items, Microsoft Casino quits
+unexpectedly.
+
+NOTE: The VIP Registration screen contains five spaces for each type of
+complimentary item that is available in Microsoft Casino.
+
+   [GRAPHIC:the VIP registration screen]
+
+RESOLUTION
+==========
+
+There is currently no resolution for this issue.
+
+To work around this issue, you can create a new player. When the new player
+exceeds the limit of complimentary items, the same issue occurs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Casino.
+
+Additional query words: msgame mscasino
+
+======================================================================
+Keywords          : kbimu msgame kbgraphxlinkcritical 
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbCasino
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

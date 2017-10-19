@@ -1,0 +1,91 @@
+DOCUMENT:Q130975  17-DEC-2000  [win95x]
+TITLE   :Resource Conflict with Standard VGA Video Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Add New Hardware Wizard to detect a video adapter, you receive
+the following error message:
+
+   You are using other hardware that conflicts with the hardware you are trying
+   to install.
+
+   You have two choices: You can continue or exit.
+
+   To continue installing the software, click Next. The hardware will not work
+   properly until you resolve the conflict. If you choose to continue, Windows
+   will provide a troubleshooting tool to help you resolve the conflict when you
+   finish the wizard.
+
+   To exit without installing the software, click Cancel.
+
+Device Manager shows a conflict with the standard VGA driver and the new video
+card that has been detected.
+
+CAUSE
+=====
+
+Most video cards are compatible with the standard VGA driver. When you run the
+Add New Hardware Wizard, you are telling Windows 95 that you have changed
+hardware when, in actuality, you have not. Therefore, both the standard VGA
+driver and the new video driver try to initialize the same adapter.
+
+RESOLUTION
+==========
+
+When you change the display driver, use the Change Display Type option in
+Display properties. To do so, follow these steps:
+
+1. Click the Start button, point to Settings, then click Control Panel.
+
+2. Double-click the Display icon.
+
+3. Click the Settings tab.
+
+4. Click the Change Display Type button.
+
+5. In the Adapter Type section, click the Change button.
+
+6. If the video adapter that is installed in your computer is displayed, click
+   it. If it is not, click the Show All Devices option button, click the
+   manufacturer of the video card, then click the correct model.
+
+This procedure replaces the standard VGA adapter with the adapter you choose and
+does not result in a resource conflict.
+
+MORE INFORMATION
+================
+
+You should run the Add New Hardware Wizard only when you change the physical
+video adapter, not when you want to change the video driver.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

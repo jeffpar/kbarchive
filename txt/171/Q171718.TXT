@@ -1,0 +1,95 @@
+DOCUMENT:Q171718  08-NOV-2001  [frontpg]
+TITLE   :FP: Editing HTML on Page w/Included Image Map Returns Error
+PRODUCT :Word Front Page
+PROD/VER:windows:97; macintosh:1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In FrontPage Editor, when you edit the HyperText Markup Language (HTML) source
+of a page that contains a WebBot Include component, which contains an image map,
+you receive the following error message:
+
+   The contents of a WebBot Component have been modified. These contents will be
+   overwritten when you save this page.
+
+In addition, FrontPage Editor creates another WebBot Include component that
+contains brackets ([]) formatted in italic. None of the changes you made are
+saved.
+
+RESOLUTION
+==========
+
+To edit the HTML code on a page that contains an included image map, use either
+of the following methods.
+
+Method 1: Modify the WebBot Include Component
+---------------------------------------------
+
+1. Select the WebBot Include component that contains the image map.
+
+2. On the Edit menu, click Cut.
+
+3. On the View menu, click HTML.
+
+4. Make the changes you want to your HTML source and then click OK.
+
+5. On the Edit menu, click Paste.
+
+Method 2: Modify the Web Page in a Text Editor
+----------------------------------------------
+
+1. In FrontPage Explorer, right-click the file that contains the WebBot Include
+   component (Windows) or press CONTROL and click the page that contains the
+   WebBot Include Component (Power Macintosh). Click Open With on the menu that
+   appears.
+
+2. From the Editor list, click Text Editor (Windows) or Simple Text (Power
+   Macintosh).
+
+3. Make the changes you want. Save and close the file.
+
+   FrontPage will reimport the file and update it within the Web.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft FrontPage
+98 for Windows.
+
+
+Additional query words: fp97 fpedit fphtml
+
+======================================================================
+Keywords          : kberrmsg kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : windows:97; macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

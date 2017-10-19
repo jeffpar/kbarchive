@@ -1,0 +1,93 @@
+DOCUMENT:Q221961  07-SEP-2001  [win95x]
+TITLE   :Err Msg: Rundll32.dll Caused a General Protection Fault in...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kberrmsg kbprint win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install a PostScript printer driver using the Add Printer
+Wizard, you may receive the following error message:
+
+   Rundll32.dll caused a general protection fault in Pscript.drv.
+
+CAUSE
+=====
+
+This issue can occur if the following lines are present in the [Boot] section of
+the System.ini file:
+
+   system.drv=atmsys.drv
+   atmsystem.drv=system.drv
+
+Adobe Type Manager is the program that inserts these lines.
+
+RESOLUTION
+==========
+
+To resolve this issue, edit the System.ini file to use the default Windows
+system driver. To do this, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "sysedit" (without the quotation marks), and then click
+   OK.
+
+3. In the [Boot] section of the System.ini file, locate the following lines, and
+   then type a semicolon (;) at the beginning of each line:
+
+   system.drv=atmsys.drv
+   atmsystem.drv=system.drv
+
+4. In the [Boot] section of the System.ini file, type the following new line:
+
+   "atm.system.drv=system.drv" (without the quotation marks)
+
+5. On the File menu, click Exit. When you are prompted to save current changes,
+   click Yes.
+
+MORE INFORMATION
+================
+
+
+For information about disabling Adobe Type Manager, see the following article in
+the Microsoft Knowledge Base:
+
+   Q69692 Disabling Adobe Type Manager from Windows
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: win95 win9x gpf postscript pstscript
+
+======================================================================
+Keywords          : kb3rdparty kbenv kberrmsg kbprint win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

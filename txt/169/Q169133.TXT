@@ -1,0 +1,52 @@
+DOCUMENT:Q169133  17-DEC-1999  [sms]
+TITLE   :SMSINST: Bitmap Missing in Edit Dialog Window
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0; winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you edit the Welcome dialog box, the bitmap on the left is missing.
+
+CAUSE
+=====
+
+This problem occurs because you are editing a dialog template and not the dialog
+in the installation script itself. The graphic is set in the installation script
+itself, not the dialog template.
+
+
+
+Additional query words: prodsms SMS
+
+======================================================================
+Keywords          : kbnetwork smsinst 
+Technology        : kbSMSSearch kbSMS120 kbSMSI100
+Version           : WINDOWS:1.0; winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q260293  16-JUL-2000  [sms]
+TITLE   :SMS: Advertised Programs Monitor Settings Do Not Take Affect for
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbClient kbConfig kbMMC kbServer kbsms200 kbsms200bug kbAdvertisement kbsmsAdmin kbSoft
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When making changes to the Notifications tab in the properties dialog of the
+Available Programs Client Agent in Systems Management Server (SMS) 2.0, the
+settings are not propagated to existing clients. These settings are also not
+updated on the clients even after they complete their next 23-hour ccim32
+cycle.
+
+To verify this, you can open the Advertised Programs Monitor applet within
+Control Panel on the client, and select Options... from the System menu. This
+problem does not affect new clients. New clients reflect the current site
+settings when they are installed.
+
+CAUSE
+=====
+
+This can occur if the "Client cannot change settings" option is not enabled. To
+verify the status of this setting, view the General tab of the Available
+Programs Client Agent Properties dialog within the Client Agents node of the SMS
+Administrator Console.
+
+WORKAROUND
+==========
+
+To force the settings in the SMS Administrator Console to take effect for
+existing clients, enable the "Clients cannot change agent settings" check box in
+the Advertised Programs Client Agent properties.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig kbMMC kbServer kbsms200 kbsms200bug kbAdvertisement kbsmsAdmin kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

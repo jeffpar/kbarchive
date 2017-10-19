@@ -1,0 +1,70 @@
+DOCUMENT:Q130220  08-AUG-2001  [winnt]
+TITLE   :DHCP Client Renew Fails after Deleting Active Lease
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.11a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Windows for Workgroups dynamic host configuration protocol (DHCP) client
+has an active lease that is manually deleted on the DHCP server, and the client
+attempts to renew its lease using IPCONFIG /RENEW or the standard renewal
+process based on lease expiration, the following error message appears:
+
+   DHCP.386: This DHCP client was unable to obtain an IP network address from a
+   DHCP server.
+
+
+WORKAROUND
+==========
+
+To resolve this problem, upgrade to Windows NT Workstation and Server version
+4.0.
+
+If you encounter this problem when you run IPCONFIG /RENEW on the client machine,
+you can work around this problem by running IPCONFIG /RELEASE before running
+IPCONFIG /RENEW.
+
+If this problem occurs during the normal lease renewal process, you must stop and
+restart the Microsoft DHCP Server service on the DHCP server to allow the client
+to receive a new IP address.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. This
+problem was corrected in Windows NT Workstation or Server version 4.0.
+
+Additional query words: 3.11 prodnt prodtcp32
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311a
+Version           : :3.11a,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

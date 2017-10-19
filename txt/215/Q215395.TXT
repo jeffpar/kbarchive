@@ -1,0 +1,84 @@
+DOCUMENT:Q215395  24-FEB-2002  [vbwin]
+TITLE   :BUG: SelChange Event in a Grid Executes on a Selected Cell
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SelChange Event in the Grid control executes on a highlighted cell. The
+expected behavior is that the SelChange Event only executes when a cell in the
+grid is selected the first time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This section shows how to create a sample project that demonstrates the
+behavior.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE HPC project in Visual Basic. Form1 is created by
+   default.
+
+2. Select Components from the Project menu and select the Microsoft CE Grid
+   Control 6.0.
+
+3. Add a Grid control to Form1.
+
+4. Copy the following code to the Form1 code window:
+
+   Option Explicit
+
+   Private Sub GridCtrl1_SelChange()
+      MsgBox "Executed SelChange Event"   
+   End Sub
+
+5. Press the F5 key to start the project. Select a particular cell in the grid.
+   The message box appears indicating the SelChange Event has executed. Close
+   the message box and click the same cell again.
+
+   BUG: The same message box appears indicating the SelChange Event has executed.
+   The expected behavior is that the SelChange event would not fire when
+   clicking the cell that's already selected.
+
+Additional query words: vbce vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

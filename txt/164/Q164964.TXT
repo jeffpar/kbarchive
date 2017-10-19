@@ -1,0 +1,74 @@
+DOCUMENT:Q164964  13-JUN-2001  [sna]
+TITLE   :Font Size Changes on Subsequent Print Jobs
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a printer definition is defined for a font override, the first job sent to
+the printer uses the font size specified, but all subsequent jobs use a larger
+size. The problem was discovered when Courier 10 was set in the printer
+properties and Courier 10 printed on the first job, but Courier 12 printed on
+all subsequent jobs.
+
+The font overrides are set in the Overrides section of the <Printer_name>
+Properties page in SNA Server 3.0 Manager.
+
+CAUSE
+=====
+
+Printer settings are not maintained between LU1 printing jobs on the same
+session. In this case, the host sent a control code to set the number of lines
+per inch to eight, but it was reset to the configured setting (six lines per
+inch) for subsequent jobs.
+
+RESOLUTION
+==========
+
+A fix is available to correct this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

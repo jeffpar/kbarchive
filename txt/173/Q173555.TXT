@@ -1,0 +1,57 @@
+DOCUMENT:Q173555  07-JAN-2000  [exchange]
+TITLE   :XADM: Exchange Generates Conflict for Same Public Folder
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use Microsoft Exchange Server version 5.5 and save simultaneous item
+changes on the same replica of a public folder, a public folder item conflict
+notification is generated.
+
+MORE INFORMATION
+================
+
+If you save multiple changes to the same item on a single public folder replica,
+an item conflict notification with the contents of both versions of the item is
+generated and sent to the owner of the public folder. The owner can then
+manually resolve the conflict. In previous versions of Microsoft Exchange
+Server, an item conflict notification is only generated if an item change is
+simultaneously saved on different replicas of a public folder.
+
+An item conflict notification is sent to both the owner of the public folder and
+the mailbox that creates the conflict.
+
+Additional query words: functionality enhancement changes
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

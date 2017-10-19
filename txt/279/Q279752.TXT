@@ -1,0 +1,80 @@
+DOCUMENT:Q279752  12-DEC-2000  [sms]
+TITLE   :SMS: Sms.ini File Is Missing Site Code and Domain Information
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2 SP3,1.2 SP4
+OPER/SYS:
+KEYWORDS:kbClient kbConfig kbServer kbsms120 kbsms120bug kbAudit kbInventory kbMaintMan kbPackag
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2 SP3, 1.2 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a secondary site with Systems Management Server (SMS) 1.2
+Service Pack 3 or Service Pack 4, the following fields may be blank in the
+Sms.ini file of the site and any new clients:
+
+ - Site
+
+ - Domain
+
+ - CurrentLogonServer
+
+ - Server1
+
+Because of this, Audit packages may not work as the site and domain entries are
+evaluated during the audit. However, the Domain.ini file on the site and the
+Sms.new file on the client contain the correct information.
+
+CAUSE
+=====
+
+This problem can be caused when the client does not populate the SITE and DOMAIN
+entries in the Sms.ini file.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods:
+
+1. Manually stop and then restart the SMS_INVENTORY_AGENT_NT Service of the
+   secondary site server.
+
+2. While you are logged on locally to the secondary site server, map a drive
+   letter to a logon server, and then run Upgrade.bat.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: prodsms smsinventory
+
+======================================================================
+Keywords          : kbClient kbConfig kbServer kbsms120 kbsms120bug kbAudit kbInventory kbMaintMan kbPackage kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS120SP3 kbSMS120SP4
+Version           : :1.2 SP3,1.2 SP4
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

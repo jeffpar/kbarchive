@@ -1,0 +1,62 @@
+DOCUMENT:Q166021  08-NOV-2001  [homekids]
+TITLE   :Plus! For Kids: Protect It Cannot Disable Main System Icons
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Plus! For Kids Protect It! allows you to place restrictions on family
+members using your computer. It will not, however, allow you to hide, delete, or
+otherwise restrict the main system icons, such as the Recycle Bin or My
+Computer.
+
+MORE INFORMATION
+================
+
+You may want to limit family members' access to the Recycle Bin. For example, so
+family members using your computer cannot perform an unauthorized delete. This
+is not a feature of Protect It!
+
+There is a Windows 95 Power Toy named TweakUI that will allow you to restrict
+access to the Recycle Bin. Microsoft does not support the Power Toys, so you
+should use TweakUI at your own risk. TweakUI is available for download at
+http://www.microsoft.com.
+
+NOTE: See TweakUI's online Help for consequences of performing certain actions
+(i.e., If you choose to hide the Network Neighborhood icon from the desktop, you
+will prevent connections to network shares via Universal Naming Conventions or
+UNCs).
+
+Additional query words: kids kidsplus kidsplus! pack plus plus!
+
+======================================================================
+Keywords          : kbenv kbinterop kbusage 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : 1.00
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

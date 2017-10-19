@@ -1,0 +1,62 @@
+DOCUMENT:Q115600  17-DEC-2000  [win95x]
+TITLE   :Problems Accessing Floppy Disk Drives
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following floppy disk problems may occur when you are running Windows 95:
+
+ - You cannot access your floppy disk drive.
+
+ - When you choose a floppy disk drive, it attempts to read the wrong drive.
+
+ - Your floppy disk drive does not appear or appears incorrectly.
+
+CAUSE
+=====
+
+If the CMOS settings of your computer do not indicate that a floppy disk drive
+is installed, Windows 95 may not be able to display your floppy disk information
+correctly. MS-DOS, or the real-mode portion of Windows 95, may allow you to
+access the floppy disk drive.
+
+
+RESOLUTION
+==========
+
+Refer to your computer documentation, or consult with your hardware vendor
+regarding how to access and update your CMOS settings.
+
+
+Additional query words: floppies errors BIOS
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

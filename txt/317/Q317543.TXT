@@ -1,0 +1,102 @@
+DOCUMENT:Q317543  23-JUL-2002  [msnetwork]
+TITLE   :How To Connect To MSN Using Macintosh Remote Access
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup kbPubTypeMSN
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Internet Access for Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure Macintosh OS 9.x to use your MSN
+Internet Access account--with a Remote Access connection.
+
+The information in this article applies to:
+
+ - Macintosh OS 8.6
+
+ - Macintosh OS 9.x
+
+MORE INFORMATION
+================
+
+The minimum requirements for connecting to MSN Internet Access are as follows:
+
+ - Macintosh OS 9.x
+
+ - A paying MSN Internet Access account
+
+ - A modem with the minimum baud rate of 28.8 Kbps
+
+ - Internet Explorer 5.x
+
+ - Outlook Express 5.0.4
+
+To obtain the local dial-up numbers for your area, follow the instructions on the
+following MSN Web site:https://rac.msn.com/popcheck/
+
+To create a Remote Access connection in Macintosh OS 9.x
+
+1. On the Apple menu, select Control Panels, and click Remote Access.
+
+2. On the File menu, click Configurations.
+
+3. Select any configuration listed, and then click Duplicate.
+
+4. Type a name for the new configuration, and then click OK.
+
+5. Select the configuration, and then click Make Active.
+
+6. Click Registered User, and then type your MSN e-mail address in the Name box
+   as MSN/Member_ID@msn.com. (example: MSN/msnuser@msn.com)
+
+7. If you do not want to enter your password each time you sign into MSN, enter
+   your password and then select the Save password box.
+
+8. In the Number box, type the local access number for your area, as it would be
+   dialed on the phone.
+   Note: Please choose your access numbers carefully; you will not be reimbursed
+   for telephone charges incurred while connected to MSN Internet Access.
+
+9. On the Remote Access menu, click TCP/IP.
+
+10. After Connect via:, select PPP.
+
+11. After Configure:, select Using PPP Server.
+
+12. Close the TCP/IP window.
+
+13. When prompted to Save changes to the current configuration?, click Save.
+
+14. In the Remote Access window, click Connect.
+
+Additional query words: kbimu MSN Macintosh mac OSX OS X ten connect IE internet outlook OLEXP OE
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbPubTypeMSN 
+Technology        : kbMSNSearch
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

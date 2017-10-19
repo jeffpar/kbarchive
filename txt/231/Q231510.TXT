@@ -1,0 +1,66 @@
+DOCUMENT:Q231510  14-SEP-2001  [automap]
+TITLE   :MapPoint 2000: Unable to Install from Novell NetWare File Server
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to install Microsoft MapPoint 2000 from a remote directory on a
+Novell NetWare file server, you receive the following error message:
+
+   Couldn't find the Microsoft MapPoint 2000 CD-ROM on this machine. Verify that
+   this CD is correctly inserted in your CD-ROM drive, then click OK (or click
+   Cancel to exit the application).
+
+CAUSE
+=====
+
+This behavior occurs because Novell NetWare does not support the Universal
+Naming Convention (UNC).
+
+RESOLUTION
+==========
+
+To work around this issue, map the remote directory as a network drive, and then
+install MapPoint 2000 from the network drive.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: mp2000 installation mount volume setup
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbsetup kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

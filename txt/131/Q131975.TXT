@@ -1,0 +1,56 @@
+DOCUMENT:Q131975  08-AUG-2001  [winnt]
+TITLE   :SETUP.TXT Missing Information Regarding Diamond Viper PCI
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+The technical note for the Diamond Viper PCI video card in the Windows
+NT 3.51 Hardware Compatibility List (HCL) states:
+
+   Refer to SETUP.TXT on the Windows NT 3.51 CD-ROM for information on
+   configuring this machine/device before installation.
+
+The SETUP.TXT does not include any information regarding the Diamond
+Viper PCI video card. It should have included the following
+information:
+
+   If you are missing chips in the U44 and U45 sockets of the Diamond Viper PCI
+   video card, contact Diamond Computer Systems Technical Support at (408)
+   325-7100 for a replacement.
+
+
+The Diamond Viper PCI video card discussed here is manufactured by
+Diamond Computer Systems, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: footnote 10 display adapter docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

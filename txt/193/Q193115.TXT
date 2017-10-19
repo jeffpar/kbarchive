@@ -1,0 +1,64 @@
+DOCUMENT:Q193115  22-NOV-1999  [powerpt]
+TITLE   :CG3: ClipGallery Opens Slowly After Installing Office SR-2 Patch
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbinterop kbole
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Clip Gallery 3.0 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to insert a Microsoft Clip Gallery 3.0 object in any Microsoft
+Office 97 program, it takes approximately twenty to thirty seconds before
+ClipGallery appears on your screen.
+
+CAUSE
+=====
+
+This behavior occurs after installing the Microsoft Office 97 Service Release 2
+(SR-2) patch if you previously installed Microsoft Office from the Microsoft
+Office Service Release (SR-1) Enterprise compact disc. This problem does not
+occur if you installed the Microsoft Office 97 Service Release 1 (SR-1) patch
+before installing the SR-2 patch.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+
+Additional query words: sr1 sr2
+
+======================================================================
+Keywords          : kbinterop kbole 
+Technology        : kbWordSearch kbFrontPageSearch kbExcelSearch kbPowerPtSearch kbWorksSearch kbPublisherSearch kbClipGallerySearch kbClipGallery300 kbHomePubSearch kbPhotoDrawSearch
+Version           : WINDOWS:3.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

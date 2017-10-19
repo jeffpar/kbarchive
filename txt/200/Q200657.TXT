@@ -1,0 +1,63 @@
+DOCUMENT:Q200657  14-MAR-1999  [sms]
+TITLE   :SMS: Character Display Limit in Status Viewer Description Field
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When viewing a status message in the Status Message Viewer of Systems Management
+Server (SMS) version 2.0, the message may appear truncated. However, the
+complete message can be displayed in the Tool Tip dialog box by moving the
+pointer over the message.
+
+Microsoft has confirmed this to be a problem in Systems Management Server version
+2.0 for Windows NT.
+
+CAUSE
+=====
+
+This is by design. The maximum number of characters that can be displayed in the
+Description field is 256. (The maximum length of the list is actually 3200
+pixels, so the number of characters displayed can be affected by the font
+selected.)
+
+WORKAROUND
+==========
+
+Double-click the message to display the entire message.
+
+You may be able to alter the number of characters by changing the font used.
+
+Additional query words: smsui prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,77 @@
+DOCUMENT:Q200490  11-JUN-2002  [exchange]
+TITLE   :XADM: Installing Exchange Server 5.5 SP1 on a Cluster
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP1
+OPER/SYS:
+KEYWORDS:exc55sp1
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP1 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+Installing Exchange Server 5.5 Service Pack 1 (SP1) on a computer running
+clustering services provided by Windows NT 4.0 Service Pack 4 (SP4) release
+candidate is not recommended. Setup may not work because the IrpStackSize
+parameter is too small.
+
+MORE INFORMATION
+================
+
+If the following entry is created in the Windows NT application event log during
+installation of Exchange Server 5.5 SP1, you can use a workaround to run
+clustering services and SP1.
+
+   ID: 2011
+   Source: srv
+   The server's configuration parameter "irpstacksize" is too small for the
+   server to use a local device. Please increase the value of this parameter.
+
+The workaround is to increase the value of the IrpStackSize parameter.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+ - If the following DWORD key exists in the registry, increase the current value
+   by one.
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\
+   Lanmanserver\Parameters\IrpStackSize
+
+ - If this registry key does not exist, add it to the registry, and set the
+   value to 6.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp1 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1
+Version           : winnt:5.5 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

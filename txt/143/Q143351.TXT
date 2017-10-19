@@ -1,0 +1,78 @@
+DOCUMENT:Q143351  17-DEC-2000  [win95x]
+TITLE   :How to Check Network Connectivity Using Net Diagnostics
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Net Diagnostics command to troubleshoot
+network connectivity between two computers.
+
+MORE INFORMATION
+================
+
+You should begin troubleshooting by starting Windows 95 with a minimal set of
+drivers. To do so, restart Windows 95, press the F8 key when you see the
+"Starting Windows 95" message, and then choose Safe Mode With Networking from
+the Startup menu.
+
+To troubleshoot, follow these steps:
+
+1. At a command prompt, type the following line and then press ENTER:
+
+   " net diag " (without the quotation marks)
+
+2. Windows 95 responds with a list of the detected protocols. Press the key for
+   the protocol you want to use for testing.
+
+   Note that the NetBEUI or IPX protocol must be installed in Windows 95. If
+   TCP/IP is the only installed protocol, Net Diag does not work.
+
+3. Windows 95 searches for a diagnostics server on the network. If no
+   diagnostics server is located, you are given the option to cause the computer
+   to begin acting as a diagnostics server.
+
+4. On another computer that is not the diagnostics server, type the following
+   line at a command prompt, and then press ENTER:
+
+   " net diag " (without the quotation marks)
+
+5. Windows 95 responds with a list of the detected protocols. Press the key for
+   the protocol you chose in step 2.
+
+6. Windows 95 searches for a diagnostics server on the network. If one is found,
+   Windows 95 communicates with the diagnostics server and validates that data
+   can be sent and received properly. After the test, the Net Diagnostics tool
+   ends and returns you to a command prompt.
+
+======================================================================
+Keywords          : kbnetwork kbtshoot win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

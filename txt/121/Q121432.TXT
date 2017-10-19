@@ -1,0 +1,54 @@
+DOCUMENT:Q121432  12-DEC-1999  [homemm]
+TITLE   :Scenes 2.0: Pictures Do Not Seem to Display Randomly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When more than one collection is selected in the Screen Saver Settings, the
+images may not appear to display randomly.
+
+MORE INFORMATION
+================
+
+The selection of an image is not out of a total pool of images. The algorithm
+that selects the next image randomly selects a collection, making sure not to
+use the same collection twice in a row. Within each collection, the image number
+is randomly chosen with no tracking.
+
+For example, if you have selected a collection with 100 images and a collection
+with 10 images, then you will most likely see repeats of the images in the 10
+image collection.
+
+Additional query words: kbhowto msscenes screen saver screensaver
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

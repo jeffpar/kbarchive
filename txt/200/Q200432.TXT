@@ -1,0 +1,67 @@
+DOCUMENT:Q200432  29-APR-1999  [exchange]
+TITLE   :XFOR: Notes Sent Time Migrates Improperly, Shifts Backward
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you migrate a Lotus Notes user from the Traditional Chinese (CHT) version
+with the calendar set to Taiwanese and who has sent items in the Sent folder to
+the U.S. version of Exchange Server, the sent date of these messages will be
+incorrect when viewed on Exchange Server using Outlook.
+
+When you compare the migrated Sent Time on Exchange Server to the original Sent
+Time from Notes, the Exchange Server time is shifted eight hours back.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5.
+
+
+MORE INFORMATION
+================
+
+Taiwanese Calendar
+------------------
+
+The Taiwanese calendar year is equal to the Western calendar year minus 11 years.
+It was set up by Taiwan. The People's Republic of China (PRC) does not use this
+system.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

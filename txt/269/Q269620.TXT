@@ -1,0 +1,66 @@
+DOCUMENT:Q269620  26-JAN-2001  [vbwin]
+TITLE   :PRB: SP_SetAppRole in RDO Causes Error Message
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbRDO kbGrpDSVBDB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the sp_SetAppRole stored procedure in Remote Data Objects (RDO) to
+set the application role for the connection, Microsoft SQL Server returns the
+following error message:
+
+   40002
+   37000: [Microsoft][ODBC SQL Server Driver][SQL Server] Application roles can
+   only be activated at the ad hoc level.
+
+CAUSE
+=====
+
+This error message occurs because a temporary stored procedure has been created
+to run the query.
+
+RESOLUTION
+==========
+
+If you use the rdExecDirect option, RDO uses the SQLExecDirect ODBC API function
+to run the query because no temporary stored procedure is created.
+
+To resolve the problem, add rdExecDirect option to the Execute method call as
+follows:
+
+   rdoConnection.Execute "sp_SetAppRole 'RoleName', 'Password'", rdExecDirect
+
+Additional query words: 40002 37000
+
+======================================================================
+Keywords          : kbRDO kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

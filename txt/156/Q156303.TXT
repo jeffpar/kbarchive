@@ -1,0 +1,75 @@
+DOCUMENT:Q156303  19-DEC-1999  [homemm]
+TITLE   :Music Central 97: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Music Central for Windows 1997 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article lists the minimum system requirements for running the 1997
+edition of Microsoft Music Central.
+
+MORE INFORMATION
+================
+
+The minimum system requirements needed to run Music Central 97 are the
+following:
+
+ - A Multimedia PC with a 486/33 MHz or higher processor
+
+ - Microsoft Windows 95 operating system or Windows NT Workstation version 3.51
+   or higher.
+
+ - 8 MB of memory (RAM) when running on Windows 95 and 16 MB when running on
+   Windows NT
+
+ - Double-speed or faster CD-ROM drive
+
+ - Super VGA 256-color monitor
+
+ - Required hard-disk space:
+
+   No hard-disk space required to run from CD
+
+   11 MB of hard-disk space recommended for best performance
+
+   8 MB of hard-disk space needed for monthly updates
+
+ - Audio board and speakers required for sound
+
+ - Microsoft Mouse or compatible pointing device
+
+ - Windows-compatible modem and online service required for online monthly
+   updates
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm requires cd cdrom compact disc
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbMusicCentral kbMusicCentral1997
+Version           : :1997 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

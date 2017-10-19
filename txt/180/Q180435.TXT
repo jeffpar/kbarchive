@@ -1,0 +1,75 @@
+DOCUMENT:Q180435  15-NOV-2001  [vbwin]
+TITLE   :PRB: ScrollBars Missing in Multiline TextBox
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp500 kbVBp600 kbVBp600bug kbOSWinCE100 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ScrollBars do not appear in a Multiline TextBox. Note that this occurs only in
+the emulation environment and not on the remote device.
+
+MORE INFORMATION
+================
+
+This behavior occurs only in the Windows CE Platform SDK version 2.0 emulation
+environment.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE (HPC) Project in Visual Basic. Form1 is created by
+   default.
+
+2. Add three TextBoxes to Form1.
+
+3. Make the following property settings:
+
+   +-----------------------------------------+
+   | Control       | Property   | Setting    | 
+   +-----------------------------------------+
+   | All TextBoxes | MultiLine  | True       | 
+   +-----------------------------------------+
+   | Text1         | ScrollBars | Horizontal | 
+   +-----------------------------------------+
+   | Text2         | ScrollBars | Vertical   | 
+   +-----------------------------------------+
+   | Text3         | ScrollBars | Both       | 
+   +-----------------------------------------+
+
+4. Press the F5 key to run the program, and note that the ScrollBars do not
+   appear when the application executes.
+
+Additional query words: wince vbce vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp500 kbVBp600 kbVBp600bug kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,91 @@
+DOCUMENT:Q184588  23-APR-1999  [homegame]
+TITLE   :Outwars: Frame Rate Is Reduced if You Enable Fogging
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outwars, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Outwars, the frame rate (the speed at which images are drawn on
+the screen, usually measured in frames per second) may be reduced if you enable
+Fogging.
+
+CAUSE
+=====
+
+This behavior can occur when you enable Direct3D hardware acceleration in
+Outwars.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable Fogging. To do this, follow these steps:
+
+1. Start a new mission. When the mission begins, press ESC.
+
+2. Press the UP ARROW or DOWN ARROW key to select Detail, and then press ENTER.
+
+3. Press ALT+F to disable Fogging.
+
+4. Press the UP ARROW or DOWN ARROW key to select Back, and then press ENTER.
+
+5. Press the UP ARROW or DOWN ARROW key to select Resume Mission, and then press
+   ENTER.
+
+If the issue continues to occur, reduce the level of graphic detail. To do this,
+follow these steps:
+
+1. Press ESC.
+
+2. Press the UP ARROW or DOWN ARROW key to select Detail, and then press ENTER.
+
+3. Press the UP ARROW or DOWN ARROW key to select Medium or Low, and then press
+   ENTER.
+
+4. Press the UP ARROW or DOWN ARROW key to select Back, and then press ENTER.
+
+5. Press the UP ARROW or DOWN ARROW key to select Resume Mission, and then press
+   ENTER.
+
+If the issue continues to occur, contact your hardware vendor to inquire about
+obtaining the latest driver for your display adapter or 3D graphics acceleration
+card.
+
+MORE INFORMATION
+================
+
+For best game performance when you play Outwars, Microsoft recommends you use a
+3D graphics acceleration card with 4 megabytes (MB) of video memory.
+
+Additional query words: 1.00 msgame outwar out wars drags choppy
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu msgame kbfaq
+Technology        : kbGamesSearch kbOutwarsSearch kbOutwars kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

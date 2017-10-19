@@ -1,0 +1,107 @@
+DOCUMENT:Q184969  02-MAY-2001  [foxpro]
+TITLE   :PRB: SET COMPATIBLE ON Causes Problems with Arrays
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0; WINDOWS:3.0,3.0b,5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Hardcore Visual Basic, Second Edition ISBN 1-57231-422-2, versions 3.0, 3.0b 
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+ - Microsoft Visual FoxPro for Macintosh, Professional Edition, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If SET COMPATIBLE is ON and an array is redimensioned, the array loses it
+previously saved values and sets the current value to logical false (.F.).
+
+CAUSE
+=====
+
+When SET COMPATIBLE is set to ON or DB4, Visual FoxPro overwrites any existing
+array with a variable of the same name when a STORE command or assignment is
+made.
+
+RESOLUTION
+==========
+
+If the array needs to retain its contents, try one of the following:
+
+ - Issue SET COMPATIBLE OFF in the program or form.
+
+ - Add COMPATIBLE=OFF to the Config.fpw file.
+
+ - From the Tools menu, select Options. In the Options dialog box, click the
+   General tab and clear the dBase compatibility check box.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+This can be demonstrated when an array is redimensioned within a loop. To
+reproduce the problem, create a new program and enter the following code:
+
+      CLEAR
+      SET COMPATIBLE ON         && Or SET COMPATIBLE DB4
+      DIMENSION atest(5)     && Dimension to some value.
+      FOR i = 1 to 10
+         DIMENSION atest(i)
+         Atest(i)="Test "+ALLTRIM(STR(i))
+      ENDFOR
+
+      DISPLAY MEMORY LIKE atest
+
+When the code is executed, the array has 10 elements, but only the last element
+contains a value. The other elements contain a logical false (.F.).
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Dean Christopher, Microsoft Corporation
+
+
+REFERENCES
+==========
+
+Visual FoxPro 3.x for Windows Help; search on: "SET COMPATIBLE" (without the
+quotation marks) and "STORE" (without the quotation marks)
+Visual FoxPro 3.0b for Macintosh Help; search on: "SET COMPATIBLE" (without the
+quotation marks) and "STORE" (without the quotation marks)
+Visual FoxPro 5.x for Windows Help; search on: "SET COMPATIBLE" (without the
+quotation marks) and "STORE" (without the quotation marks)
+Visual FoxPro 3.x for Windows, "Language Reference", pages 756 and 794.
+Visual FoxPro 5.x for Windows, "Language Reference", pages 379 and 403.
+Visual FoxPro 3.0b for Macintosh, "Language Reference", pages 803 and 843.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp 
+Technology        : kbMSPressSearch kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300Mac kbVFP500 kbVFP500a
+Version           : MACINTOSH:3.0; WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

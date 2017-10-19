@@ -1,0 +1,112 @@
+DOCUMENT:Q316974  15-MAY-2002  [homegame]
+TITLE   :Crimson Skies: Err Msg: Crimson Skies Requires a Sound Card...
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Crimson Skies, you may receive an error message
+similar to the following:
+
+   Sorry, Crimson Skies requires a sound card compatible with DirectX 7.0 or
+   later. Your sound card does not appear to be compatible. Obtaining the latest
+   drivers from the sound card manufacturer and installing them may resolve
+   this.
+
+CAUSE
+=====
+
+This behavior occurs when any of the following conditions are true:
+
+ - Your sound card is not compatible with Microsoft DirectX 7.0.
+
+ - Your sound card drivers are outdated.
+
+ - You do not have your sound card set as the preferred device to playback
+   sounds.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use the following methods in the order in which they
+are presented.
+
+Update Sound Card Drivers
+-------------------------
+
+To update your sound card driver, contact the manufacturer of your sound card to
+inquire about how to obtain and install the latest version of the sound card
+driver.
+
+For information about how to contact the manufacturer of your sound card, click
+the appropriate article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Set Sound Card As Preferred Device
+----------------------------------
+
+If updating the sound card drivers does not resolve the issue, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. On the Audio tab, point to the arrow in the "Preferred device" box, and then
+   click your sound card.
+
+4. Click to select the "Use only preferred devices" check box.
+
+5. Click Apply, and then click OK.
+
+6. Quit Control Panel, and then restart the computer.
+
+MORE INFORMATION
+================
+
+For additional information about solutions to sound problems in Crimson Skies,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+   Q274836 Crimson Skies: Game Sounds Are Not Played Correctly
+
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbsound kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch kbCrimsonSkies
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

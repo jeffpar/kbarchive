@@ -1,0 +1,84 @@
+DOCUMENT:Q191922  09-AUG-2001  [winnt]
+TITLE   :Error 1605 When Jetpacking DHCP Database
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a you try to run Jetpack.exe on the Jet database of a Dynamic Host
+Configuration Protocol (DHCP) server on a computer running Windows NT Server
+version 4.0, you may receive the following error message:
+
+   Jetpack failed with error = -1605
+
+When compacting the database using Jetpack, a Jet database duplicate key error
+-1605 may occur. This error occurs when addresses are marked bad and a unique
+value is not used for the media access control hardware address associated with
+the bad IP addresses.
+
+This problem may go away temporarily if you delete the database and reconcile.
+This problem may also result in the DHCP server ceasing to respond (hanging).
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q188027 Performance, Audit Logging, and Fixes to the DHCP Service
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

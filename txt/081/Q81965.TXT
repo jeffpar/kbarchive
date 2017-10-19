@@ -1,0 +1,68 @@
+DOCUMENT:Q81965  04-OCT-1999  [win95x]
+TITLE   :Loading SMARTDrive Low May Improve Speed w/ Double Buffering
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If double buffering is enabled for SMARTDrive version 4.x or 5.x, a significant
+performance gain can be achieved by loading SMARTDrive low.
+
+MORE INFORMATION
+================
+
+If double buffering is required, it must be loaded from the CONFIG.SYS file as
+in the following example:
+
+       DEVICE=C:\WINDOWS\SMARTDRV.EXE /DOUBLE_BUFFER
+
+NOTE: This only loads the double buffer driver. It does not load the disk cache
+portion of SMARTDrive, and cannot be loaded high.
+
+To force SMARTDrive to load into conventional memory, use the /L parameter in the
+AUTOEXEC.BAT file, as in the example below.
+
+        SMARTDRV C: D: /L
+
+When double buffering is enabled for SMARTDrive, system performance decreases.
+This is expected, due to the nature of adding an additional buffer to handle all
+disk reads and writes through conventional memory.
+
+Loading SMARTDrive into low memory is quicker than loading it into an upper
+memory block (UMB) because this eliminates the additional step of buffering from
+the UMB to conventional memory.
+
+Additional query words: 3.10 SMARTDRV.EXE
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

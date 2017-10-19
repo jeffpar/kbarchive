@@ -1,0 +1,61 @@
+DOCUMENT:Q64329  09-JUN-1999  [win16sdk]
+TITLE   :INFO: Windows Message-Processing Caveats
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbSDKPlatform kbWndw kbWndwMsg
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Do not call any function that may cause control to yield to another application
+during the processing of any of the following messages:
+
+   WM_ACTIVATE
+   WM_ACTIVATEAPP
+   WM_CREATE
+   WM_INITDIALOG
+   WM_NCCREATE
+
+Certain messages are used to notify applications of some change in Windows's
+internal status. While processing one of these messages, an application cannot
+call any function that may result in control being yielded to another
+application. Forbidden functions include message-processing functions such as
+MessageBox(), DialogBox(), GetMessage(), and PeekMessage().
+
+Violating this caveat may cause Windows to exhibit strange visual behavior.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbWndw kbWndwMsg 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

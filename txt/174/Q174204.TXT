@@ -1,0 +1,103 @@
+DOCUMENT:Q174204  21-DEC-2001  [homemm]
+TITLE   :Research Organizer: Error Message When Moving Cards/Sections
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+ - Microsoft Encarta 98 Research Organizer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Research Organizer, you may receive the following error
+message:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor.
+
+If you click the Details button, you see the following message:
+
+   ORG98 caused an invalid page fault in module COMCTL32.DLL
+
+If you receive this message, any information you added since you last saved your
+work is lost. Information you saved prior to receiving this error message is
+saved.
+
+This problem occurs if you use the arrow buttons on the toolbar or the keyboard
+(CTRL+Up Arrow), or if you use the mouse to drag a section of the organizer and
+cause the hierarchical structure to scroll.
+
+This problem does not occur when you move items down in the tree, or if you use
+the mouse to drag individual note cards.
+
+NOTE: This issue does not occur with Encarta 98 Encyclopedia for Macintosh.
+
+RESOLUTION
+==========
+
+To resolve this problem obtain the Research Organizer update (Roreva.exe) from
+the Microsoft Download Center.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Roreva.exe
+   (http://download.microsoft.com/download/encarta98enc/upd30/1/WIN98/EN-US/Roreva.exe)
+
+Release Date: Oct-16-1997
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta 98
+Encyclopedia for Windows.
+
+MORE INFORMATION
+================
+
+You may also request to have a replacement Research Organizer CD-ROM sent to you
+by calling the phone number provided to you in the CD-ROM booklet. Be prepared
+to provide the information below:
+
+ - Name
+ - Address
+ - Daytime phone number
+
+Additional query words: ro cards ipf patch kbimu multi multi-media media mm
+
+======================================================================
+Keywords          : kberrmsg kbimu kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998 kbEncartaResearchOrg98
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q191763  11-DEC-1999  [foxpro]
+TITLE   :INFO: Abbreviating NOSHOW Clause May Result in an Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Abbreviating the NOSHOW clause in the MODIFY PROJECT or CREATE PROJECT commands
+cause the following error:
+
+   Command contains unrecognized phrase/keyword.
+
+MORE INFORMATION
+================
+
+The MODIFY PROJECT and CREATE PROJECT commands have a new clause, NOSHOW, that
+can prevent the display of the Project Manager. If the NOSHOW clause is
+abbreviated to less than five characters, it is confused with the NOSHADOW
+command which can cause the preceding error to occur.
+
+The following command causes the error to occur:
+
+      MODIFY PROJECT myproj NOSH
+
+The following commands do not cause the error:
+
+      MODIFY PROJECT myproj NOSHO
+      MODIFY PROJECT myproj NOSHOW
+
+Additional query words: kbVFp600 kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

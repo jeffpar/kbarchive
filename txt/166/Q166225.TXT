@@ -1,0 +1,64 @@
+DOCUMENT:Q166225  09-MAY-1999  [exchange]
+TITLE   :XWEB: Err Msg: Requested Header Not Found
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to access a mailbox on a Microsoft Exchange Server computer by
+way of the Web, you may receive the following error message:
+
+   Internet Explorer cannot open the Internet site
+   http://<server>/exchange/LogonFrm.asp?Mailbox=<alias>.
+   The requested header was not found.
+
+NOTE: <server> is the name of the server running Internet Information
+Server (IIS) and the Active Server Components, and <alias> is the alias of
+the Exchange Server mailbox you are attempting to sign in from.
+
+CAUSE
+=====
+
+This error will occur if the only password authentication configured for IIS is
+Allow Anonymous.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+ - To log on to an Exchange mailbox, you must have either Basic (Clear Text)
+   and/or Windows NT Challenge/Response Authentication on the computer running
+   IIS. This is required in order to allow IIS to pass your user credentials on
+   to a computer running Exchange Server.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

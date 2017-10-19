@@ -1,0 +1,59 @@
+DOCUMENT:Q138119  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Readme.txt File in Drivers\Other\Creative\Sb16-awe
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is a copy of the information in the Readme.txt file in
+the Drivers\Other\Creative\Sb16-awe folder on the Windows 95 CD- ROM. Setup does
+not copy this file to your hard disk.
+
+MORE INFORMATION
+================
+
+Creative Technologies Sound Blaster 16 & AWE 32
+-----------------------------------------------
+
+This sound driver is intended for use with Creative Technologies Sound Blaster 16
+& AWE 32 sound cards.
+
+This driver is enhanced over the version built into Windows 95, as follows:
+
+* Some systems, using the current SB 16/AWE32 drivers, encounter CRC errors while
+downloading data and playing sound files. This new driver eliminates these CRC
+errors.
+
+See INSTALL.TXT for instructions about how to install this driver into Windows
+95.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

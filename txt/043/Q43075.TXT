@@ -1,0 +1,67 @@
+DOCUMENT:Q43075  18-NOV-1999  [msdos]
+TITLE   :Using Batch Files with the FOR Batch Command
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a batch file is used as the command in a FOR batch command, the FOR batch
+command only calls the batch file once. The following interactive example
+executes ONE.BAT for item "a", then stops:
+
+    FOR %i IN (a b c d) DO one %i
+
+In a batch file, use two percent examples. The change in the example above is as
+follows:
+
+    FOR %%i IN (a b c d) DO one %%i
+
+MORE INFORMATION
+================
+
+In Microsoft the MS-DOS packaged product, the CALL command can be used to
+repeatedly execute the batch file with the FOR batch command. The above
+interactive example is changed to the following:
+
+    FOR %i IN (a b c d) DO CALL one %i
+
+This example executes ONE.BAT for each item in the list.
+
+In releases of MS-DOS earlier than version 3.30, this can be done by spawning
+COMMAND.COM with the /C switch and letting it execute the batch file. The above
+interactive example is changed to the following:
+
+    FOR %i IN (a b c d) DO COMMAND /C ONE %i
+
+Additional query words: 6.22 3.x 4.00 4.01 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch
+Version           : MS-DOS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q69064  13-JUN-2001  [utilities]
+TITLE   :BUG: Brown Screen Color May Change to Yellow After Running PWB
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1,2.0,2.1.49
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1, 2.0, 2.1.49 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After running the Programmer's WorkBench (PWB), the brown screen color may
+change to yellow until the system is rebooted or the video mode is reset.
+
+For example, if you run PWB and then run the Microsoft (M) Editor, the brown
+characters will appear yellow.
+
+To work around this problem, you can create a batch file called PWB.BAT. In this
+file, you can start PWB and then reset the video mode. For example:
+
+   pwb.bat
+   pwb %1 %2 %3 %4
+   mode co80,25
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PWB versions 1.0 and 1.1. We are
+researching this problem and will post new information here as it becomes
+available.
+
+Additional query words: 1.00 1.10 2.00 2.10.49 buglist1.00 buglist1.10 buglist2.00 buglist2.10.49
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB200DOS kbPWB2149DOS
+Version           : MS-DOS:1.0,1.1,2.0,2.1.49
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

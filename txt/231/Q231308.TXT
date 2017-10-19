@@ -1,0 +1,113 @@
+DOCUMENT:Q231308  18-NOV-2000  [winnt]
+TITLE   :Glue NS Records Are Lost When You Add Additional NS Records
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you add an NS record to a DNS zone, when you restart the DNS server the glue
+NS records are missing. For example:
+
+You have a DNS domain called mycompany.com. You also have a delegated subdomain
+called sales.mycompany.com that contains an existing NS record for the primary
+server called srv1.sales.mycompany.com. When you look in the zone file, the
+following records are displayed:
+
+   Sales        NS  srv1.sales
+   srv1.sales   A   10.2.112.5
+
+For fault tolerance and load balancing, you want to add another NS record for the
+sales.mycompany.com zone using the DNS Administration tool for
+srv2.sales.mycompany.com. After you add the record, everything appears to
+function normally.
+
+After you restart the DNS server, the entries for srv1 are missing in the DNS
+Administration tool and in the zone file. This is evident in the zone files when
+you click Update Server Data Files, but srv1.sales.mycompany.com is still
+visible in the Administration tool.
+
+CAUSE
+=====
+
+This behavior occurs because the server writes records in ascending authority
+level.
+
+When the DNS Administration tool causes the DNS server to add an NS record to the
+database, the server assigns the record the same authority level as other
+records in the zone. The server also inserts them at the beginning of a list of
+NS records for the subzone. However, the DNS server assigns a slightly lower
+authority level to those records when reading the NS records from the zone file
+at startup.
+
+Because the new records have the highest authority level and are the first in the
+list, the existing records that are read from the zone file are dropped.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+File details:
+
+   Date      Time             Size    File Name   Platform
+   -------------------------------------------------------
+   06/29/99  00:25            177.424 Dns.exe     Intel
+   06/29/99  00:24            297.744 Dns.exe     Alpha
+
+WORKAROUND
+==========
+
+To work around this problem, use the appropriate method:
+
+ - When you need to add NS records, delete all existing records and then add
+   them again (including the new records). This is a time-intensive method if
+   you have many existing records.
+
+ - Edit the zone file directly, instead of using the DNS Administration tool. In
+   this case, you need to restart the service so the changes are available.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0. This problem was
+first corrected in Windows NT 4.0 Service Pack 6.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

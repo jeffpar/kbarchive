@@ -1,0 +1,67 @@
+DOCUMENT:Q108743  27-NOV-1999  [homekids]
+TITLE   :Writer 1: Fir Tree Border Prints Incorrectly on Card
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a card with a fir tree or pencil border on a Hewlett-Packard (HP)
+DeskJet 550C, some of the border elements may print incorrectly. For example,
+the green fir trees may print gray or striped instead of green. This problem is
+most severe on the rotated (upside-down) pages.
+
+This problem occurs if you are using a 256-color video driver.
+
+RESOLUTION
+==========
+
+To avoid this problem, do one of the following:
+
+ - Switch to the standard Windows VGA video driver and restart Windows, then try
+   printing again.
+
+ - Try printing to a different printer.
+
+ - Try using a different border.
+
+MORE INFORMATION
+================
+
+The problem has been found to occur with the fir tree and pencil borders, but
+may also occur with other border patterns as well. This problem may occur on a
+variety of printers, including Panasonic dot matrix and Hewlett Packard DeskJet
+printers, even if they are set to print in all-color mode. The same borders
+print correctly, however, if you use them on a page in the Writing Studio.
+
+Additional query words: gray grey greeting card cardvark project workshop KX-P DJ christmas pine green frame edge win kids mskids mczee 500 550 560 540 kxp KXP-2130 KXP2130 K XP2130 2130 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a
+Version           : WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

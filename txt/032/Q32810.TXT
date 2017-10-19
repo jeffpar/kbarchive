@@ -1,0 +1,68 @@
+DOCUMENT:Q32810  04-MAY-2001  [masm]
+TITLE   :BSESUB.INC Contains Incorrect Declarations
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the file BSESUB.INC that comes with Microsoft Macro Assembler version 5.1 and
+5.1a, the KBDINFO structure fields should all be declared with the DW directive;
+however, the fields are declared by the DB directive instead.
+
+MORE INFORMATION
+================
+
+The following is the KBDINFO structure as declared in the BSESUB.INC that comes
+with MASM 5.1 and 5.1a
+
+      KBDINFO struc
+          kbxl_cb           db ?
+          kbxl_fsMask       db ?
+          kbxl_chTurnAround db ?
+          kbxl_fsInterim    db ?
+          kbxl_fsState      dw ?
+      KBDINFO ends
+
+The following is the KBDINFO structure as declared in the BSESUB.INC that comes
+with MASM 6.0
+
+      KBDINFO         STRUCT  2 ; kbst
+      cb_             WORD    0
+      fsMask_         WORD    0
+      chTurnAround_   WORD    0
+      fsInterim_      WORD    0
+      fsState_        WORD    0
+      KBDINFO         ENDS
+
+Additional query words: kbinf 5.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510
+Version           : :5.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

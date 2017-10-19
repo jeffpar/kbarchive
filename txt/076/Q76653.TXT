@@ -1,0 +1,49 @@
+DOCUMENT:Q76653  30-JUL-2001  [homegame]
+TITLE   :Flight Simulator: Scenery Disks for Versions 1.0 and 4.0
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Currently, scenery disks for Microsoft Flight Simulator for the Macintosh
+versions 1.0 and 4.0 are available from two sources. Sublogic Corporation
+produces scenery disks for Flight Simulator version 1.0 (the monochrome
+version); contact Sublogic Corporation at (217) 359-8482. Bruce Artwick
+Organization produces scenery disks for Flight Simulator version 4.0 (the color
+version); contact Bruce Artwick Organization at (217) 356-9799.
+
+MORE INFORMATION
+================
+
+Flight Simulator version 4.0 can load the older monochrome scenery files;
+however, the older scenery files were designed for use in a monochrome program.
+The colors do not display correctly if you use the older disks on a color
+monitor. You may improve the appearance of these older files if you change your
+window setting to monochrome by closing the window and then reopening the window
+while simultaneously holding down the OPTION key. The new scenery disks work
+correctly with Flight Simulator version 4.0.
+
+Additional query words: 1.00 4.00 \ * m_fltsim
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

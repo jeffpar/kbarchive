@@ -1,0 +1,62 @@
+DOCUMENT:Q136948  17-DEC-2000  [win95x]
+TITLE   :Benefits of Using Windows 95 Sound Card Drivers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the benefits of using Windows 95 sound card drivers
+instead of earlier sound card drivers, and lists steps you can take if Windows
+95 Setup does not install a Windows 95 sound card driver.
+
+MORE INFORMATION
+================
+
+The Windows 95 sound card drivers are functionally similar to earlier drivers,
+but include support for:
+
+ - Advanced Power Management (APM)
+
+ - Plug and Play
+
+ - Dynamic loading and unloading of drivers
+
+Windows 95 Setup may not replace earlier audio drivers with a Windows 95 version
+if your sound card has features that the standard Windows 95 driver does not
+support. If Setup does not install a Windows 95 sound card driver, follow these
+steps:
+
+1. Leave the existing audio driver in place.
+
+2. Contact the sound card's manufacturer to inquire about a Windows 95 driver
+   for the sound card.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

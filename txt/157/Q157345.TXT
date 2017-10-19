@@ -1,0 +1,62 @@
+DOCUMENT:Q157345  07-SEP-2001  [winnt]
+TITLE   :No Color Output with HP PaintJet XL300
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a color image from a program in Windows NT 4.0 to a
+Hewlett-Packard PaintJet XL300 printer, the output is produced in black and
+white only.
+
+- or -
+
+Colors fail to print on an HP PaintJet XL300. Only black prints through all
+applications, on both graphics and text. Anything that is not black will be
+blank.
+
+STATUS
+======
+
+A new version of this printer driver for Windows NT 4.0 is now available from
+the Windows NT Download Library.
+
+For additional information on this driver, please see the following article in
+the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q142643
+   TITLE : Windows NT 4.0 Driver Library
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q171701  12-OCT-1999  [msnetwork]
+TITLE   :Err Msg: MSN Has Detected You Are Missing Some ActiveX Controls
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to MSN, The Microsoft Network, for the first time after
+installing MSN 2.0, you may receive the following error message:
+
+   MSN has detected you are missing some ActiveX Controls. Click OK to visit the
+   MSN Setup page where we will install the proper controls.
+
+When you click OK, you receive the following error message:
+
+   Internet Explorer cannot open the Internet site http://stagecon/setup/.
+   The site was not found. Make sure the address is correct, and try
+   again.
+
+When you click OK, you are disconnected from MSN.
+
+CAUSE
+=====
+
+The MSN safety level may be set to High, preventing the download of active
+content.
+
+RESOLUTION
+==========
+
+Reduce the MSN safety level to None so you can download the necessary files. To
+do so, follow these steps:
+
+1. Right-click the MSN icon on the desktop, and then click Properties.
+
+2. On the Security tab, click Safety Level.
+
+3. Click None, and then click OK.
+
+4. Click OK.
+
+5. Connect to MSN to download the files.
+
+After you download the necessary files, you may want to set the MSN safety level
+back to High. To do so, follow steps 1-4 above, but click High in step 3 instead
+of None.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup 
+Technology        : kbMSNSearch kbMSN200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,97 @@
+DOCUMENT:Q149264  11-JAN-2001  [vbwin]
+TITLE   :BUG: ListView in Report View Mode Truncates First ListItem
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the View property of the ListView control is set to 2 - List, ListItem
+objects may have portions of their Text property truncated. This results in, for
+example, an entry of "Thi..." instead of "This is my text".
+
+The following article details a somewhat similar problem with the Listview
+control in List mode (rather than Report Mode) and can be found in the Microsoft
+Knowledge Base:
+
+   Q149320 BUG: First ListItem Truncated with ListView in Report View
+
+This article outlines the different symptoms of that problem in addition to
+providing a different workaround.
+
+RESOLUTION
+==========
+
+To fix this problem, set the column width of the ListView control before
+displaying the items. Knowledge Base article Q147666 explains how to set the
+width of columns in a ListView control in both List and Report modes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+1. Start Visual Basic 4.0. Form1 is created by default.
+
+2. Add a single ListView control to the form.
+
+3. Add this code to the form:
+
+      Private Sub Form_Load()
+         Dim lv As ListItem
+
+         ListView1.View = lvwList
+         Set lv = ListView1.ListItems.Add
+         lv.Text = "This is a long text string"
+      End Sub
+
+4. Press F5 or select Start from the Run menu to run the application. Observe
+   that the text of the ListItem is truncated.
+
+Additional query words: kbVBp400bug kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : 4.00
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,89 @@
+DOCUMENT:Q149008  16-DEC-1999  [homemm]
+TITLE   :Pregnancy: Unable to Print or Copy Help Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When viewing Pregnancy and Child Care, you are unable to copy or print the Help
+contents.
+
+WORKAROUND
+==========
+
+To work around this behavior, copy the screen image and paste it into a word
+processing or graphics program such as WordPad or Paint.
+
+To copy and print the screen image, do the following:
+
+1. Open Pregnancy and Child Care and click Help.
+
+2. Locate the Help topic you wish to print.
+
+3. Copy the Help topic by holding-down the ALT key while pressing the PRINT SCRN
+   key (ALT+PRINT SCRN).
+
+4. Start a word processing or graphics program such as WordPad or Paint.
+
+5. Paste the image into the word processing or graphics program.
+
+   NOTE: It may be necessary to crop the screen image because the ALT+PRINT
+   SCREEN key combination copies the Help file selection and other screen
+   elements. You can use the Paintbrush, or Windows 95 Paint program Pick tool
+   to crop the image, adjust the picture size and eliminate unwanted screen
+   elements.
+
+To adjust the image using the Pick tool:
+
+1. On the Paintbrush or Paint toolbar, click the Pick tool (crops) and select
+   the Help menu item selection from the entire image.
+
+2. On the Edit menu, click Cut.
+
+3. On the File menu, click New, and then click No when asked if you want to keep
+   current changes.
+
+4. On the Edit menu, click Paste. The cropped Help menu item appears.
+
+5. On the File menu, click Print, and then click OK.
+
+For more information about using the Windows techniques described, refer to your
+Windows printed documentation or online Help.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,69 @@
+DOCUMENT:Q140191  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: SCHDIST.EXE Ignores CAL File Security
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set an user's access to your calendar file (CAL) to be None, he or she
+will not be able to see your free/busy times. However, if you set an external
+postoffice user's access to None, he or she will still be able to see your
+free/busy information.
+
+CAUSE
+=====
+
+This occurs because the free/busy information is distributed by SCHDIST.EXE in
+the form of .POF files. The .POF files do not have support for the individual
+security settings that can be applied to .CAL files created by Schedule+.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 1.0 and 1.0a of
+Microsoft Schedule+ for Windows. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q132209 Viewing Free/Busy on Remote Postoffice Via Async
+
+   Q138725 Definition of *.POF Files (Access Control List)
+
+
+Additional query words: 1.00 1.00a sched plus dist security cal error schedule
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

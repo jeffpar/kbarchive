@@ -1,0 +1,109 @@
+DOCUMENT:Q192310  14-NOV-2000  [word97]
+TITLE   :WD97: Formula in Table Is Incorrect When Using Track Changes
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbformula kbtable
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use a function in a table, the results of the function may be incorrect
+if the Track Changes While Editing Feature is enabled.
+
+Functions that can accept references to table cells include AVERAGE(), COUNT(),
+MAX(), MIN(), PRODUCT(), and SUM().
+
+CAUSE
+=====
+
+The function does not correctly interpret numbers marked for deletion. This
+problem occurs when you mark deleted text with strikethrough characters, with
+the pound sign (#), or with a caret (^).
+
+Take, for example, a table with the following values where the value 3 is derived
+by the function { = SUM(A1:A2)}.
+
+   -----
+   | 1 |
+   -----
+   | 2 |
+   -----
+   | 3 |
+   -----
+
+If you change the value in cell A1 to 2 while you have revision marks enabled, as
+in this example
+
+   --------
+   | (1)2 | (parenthesis represent a revision mark in this example)
+   --------
+   |  2   |
+   --------
+   |  3   |
+   --------
+
+the resulting value in the updated formula will be incorrect.
+
+   --------
+   | (1)2 | (parenthesis represent a revision mark in this example)
+   --------
+   |  2   |
+   --------
+   | 14   |
+   --------
+
+NOTE: To update the formula, press SHIFT+F9.
+
+The formula interprets the 1 preceding the 2 as part of the value. That is, the
+formula reads the value as 12; therefore, the sum of the values (12 + 2) is 14.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1 - Accept or Reject the Changes Before You Update Fields
+----------------------------------------------------------------
+
+To accept or reject changes, point to Track Changes on the Tools menu, and then
+click Accept Or Reject Changes.
+
+Method 2 - Hide Tracked Changes Before You Update the Formula
+-------------------------------------------------------------
+
+To hide tracked changes, click Track Changes on the Tools menu, and then click to
+clear the Highlight changes on screen check box.
+
+Additional query words: wrong error formula field code
+
+======================================================================
+Keywords          : kbdta kbformula kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

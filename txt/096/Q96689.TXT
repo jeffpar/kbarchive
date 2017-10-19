@@ -1,0 +1,68 @@
+DOCUMENT:Q96689  19-OCT-2000  [pcmail]
+TITLE   :PC WRmt: ConnectTimeOut Value Purpose and Use
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2, on platform(s):
+    - the operating system: Microsoft Windows NT, on platform(s):
+       - the operating system: Microsoft Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Modem communication can be delayed for several valid reasons. To account for
+this delay, Microsoft Mail modem products set a time-out value, that specifies
+when the connection is considered broken.
+
+When Microsoft Mail Remote version 3.2 for Windows runs with Microsoft Windows
+version 3.1, the time-out value defaults to 60 seconds. To increase this value,
+edit the ConnectTimeOut line in your MSMAIL.INI file (located in your Windows
+directory).
+
+MORE INFORMATION
+================
+
+Your MSMAIL.INI file contains an [SFSREMOTE] section. If you find it necessary
+to change the time-out value, to allow modem communications to idle for a longer
+time before Mail breaks the modem connection for apparent inactivity, edit the
+following line in the [SFSREMOTE] section:
+
+   ConnectTimeOut=<n>
+
+where <n> is a number between 60 and 999 that represents the number of
+seconds to wait before Mail determines that an error has occurred because the
+connection is inactive.
+
+The minimum ConnectTimeOut value is 60.
+
+This feature is also documented in the online help file.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

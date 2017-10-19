@@ -1,0 +1,128 @@
+DOCUMENT:Q154946  13-FEB-2002  [winnt]
+TITLE   :Bugcheck 93 in the RDR
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Your computer running Windows NT 3.51 may experience a Trap 0x93 in NTOSKRNL
+caused by the redirector with the following stack trace:
+
+0: kd> kv
+ChildEBP RetAddr  Args to Child
+fe4a36f4 80115c85 00000004 8046e768 00000118
+ntkrnlmp!RtlpBreakWithStatusInstruction (FPO: [1,0,0])
+fe4a386c 80134f2f 00000093 00000118 00000001
+ntkrnlmp!KeBugCheckEx+0x1e7(FPO: [Non-Fpo]
+fe4a3898 8013e6de 00000118 00000340 82f5bee0 ntkrnlmp!NtClose+0x1d5 (FPO:
+[EBP 0xfe4a38a4] [1,1,4])
+fe4a3898 8011a53b 00000118 00000340 82f5bee0 ntkrnlmp!KiSystemService+0xbe
+(FPO: [0,0] TrapFrame @ fe4a38a4)
+fe4a3914 fe35d1aa 00000118 8279d748 8046ac64 ntkrnlmp!ZwClose+0xb (FPO:
+[1,0,0])
+fe4a3928 fe35d331 80455448 8046abc8 00000000
+rdr!RdrDereferenceTransport+0x8a (FPO: [1,0,3])
+fe4a3940 fe349307 8046abc8 fe4a3974 8046abc8
+rdr!RdrDereferenceTransportConnectionNoRelease+0x51 (FPO: [EBP 0x8046abc8]
+[1,0,4])
+fe4a3958 fe35ab84 804183e8 8046abc8 8046abc8 rdr!RdrTdiDisconnect+0x85
+(FPO: [EBP 0xfe4a3974] [2,0,4])
+fe4a3974 fe32d3ee 804183e8 e1707748 8046abc8
+rdr!CleanupTransportConnection+0x64(FPO: [Non-Fpo]
+fe4a39c8 fe33d90c 804183e8 e1707748 e142edc8
+rdr!RdrReconnectConnection+0x1d0(FPO: [Non-Fpo]
+fe4a3a44 fe33d80a 00000001 00000000 8045ab00
+rdr!RdrFscDeviceIoControlFile+0xde(FPO: [Non-Fpo]
+fe4a3a60 80111f0b 8045ab00 804183e8 8056b388
+rdr!RdrFsdDeviceIoControlFile+0x36(FPO: [Non-Fpo]
+fe4a3a74 fe3197cf 8056b358 803da1c8 803da238 ntkrnlmp!IofCallDriver+0x37
+(FPO: [0,0,2])
+fe4a3adc fe3193d9 803da1c8 8056b358 fe4a3bac
+mup!CreateRedirectedFile+0x2f5(FPO: [Non-Fpo]
+fe4a3b2c 80111f0b 804557e0 803da1c8 803da1d8 mup!MupCreate+0xd1(FPO: [Non-
+Fpo]
+fe4a3b40 80171e31 801716a6 804557c8 00000000 ntkrnlmp!IofCallDriver+0x37
+(FPO: [0,0,2])
+fe4a3b54 fe3d1ee4 804d6648 804cb8e8 fe3d3c45
+ntkrnlmp!IopParseDevice+0x78b(FPO: [Non-Fpo]
+fe4a3b8c fe5289b8 00000018 00000000 00000000 tcpip!IPRcvComplete+0x15 (FPO:
+[0,0,2])
+fe4a3bc8 8001264d 00000008 fe4a3e40 fe4a3e55 NDIS!ndisMDpc+0x7c (FPO: [EBP
+0x00000000] [4,0,4])
+fe4a3bf0 80012b2b fe4a3e20 803ba7b8 fe4a3e2c
+halsp!HalpEndSoftwareInterrupt+0x9 (FPO: [1,0,0])
+
+0: kd> !trap fe4a38a4
+eax=804183e8 ebx=fe32ac28 ecx=00000000 edx=fe4a3f04 esi=80455454
+edi=8045544c
+eip=8011a53b esp=fe4a3918 ebp=80455448 iopl=0         nv up ei ng nz na pe
+nc
+vip=0    vif=0
+cs=0008  ss=0010  ds=75ef  es=0000  fs=0030  gs=aa44
+efl=00000282
+ErrCode = 00000000
+8011a53b c20400           ret     0x4
+
+0: kd> u 8011a53b
+ntkrnlmp!ZwClose+0xb:
+8011a53b c20400           ret     0x4
+8011a53e 8bc0             mov     eax,eax
+ntkrnlmp!ZwCloseObjectAuditAlarm:
+8011a540 b810000000       mov     eax,0x10
+8011a545 8d542404         lea     edx,[esp+0x4]
+8011a549 cd2e             int     2e
+8011a54b c20c00           ret     0xc
+8011a54e 8bc0             mov     eax,eax
+ntkrnlmp!ZwCompleteConnectPort:
+8011a550 b811000000       mov     eax,0x11
+
+CAUSE
+=====
+
+It was necessary to attach to FSP before closing the connection handle.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,78 @@
+DOCUMENT:Q304413  28-APR-2002  [winnt]
+TITLE   :Veritas Storage Replicator 2.1 for Windows NT Causes a Hang
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a server with Veritas Storage Replicator 2.1 installed and a high network
+load, the server may seem to stop responding (hang) although you can still move
+the mouse pointer. If you press CTRL+ALT+DELETE, the screen may go blank. When
+this issue occurs, the server still responds to ping commands, but is not
+accessible from the network for any resources.
+
+CAUSE
+=====
+
+This issue occurs because two process threads loop by waiting for each other to
+release a resource that is owned by the other thread.
+
+RESOLUTION
+==========
+
+If you face similar issues contact Veritas for a fix or a workaround.
+
+WORKAROUND
+==========
+
+If you cannot install an update from Veritas, you can remove the drivers or
+program until you can install the update.
+
+MORE INFORMATION
+================
+
+The following Kernel-mode drivers from Veritas Storage Replicator 2.1 exhibit
+this problem:
+
+   Rxfsrec.sys Friday, Dec. 15, 18:58:23, 2000
+   Rxfsfltr.sys Friday, Dec. 15, 18:58:23, 2000
+   Rxjnlwrt.sys Friday, Dec. 15, 18:58:23, 2000
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: VSR freeze
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,56 @@
+DOCUMENT:Q99284  11-SEP-1999  [winmisc]
+TITLE   :Support Information for Intel Video Capture Cards
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:1.00 1.10a 1.10
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the support telephone numbers at Intel Corporation, the
+manufacturer of the Action Media II, Developers RT Video, Smart Video Recorder
+capture cards, and the Indeo compressor driver. These items are commonly used
+with Microsoft's Video for Windows.
+
+   Smart Video AMII
+
+Description             Indeo           Recorder        RT Video
+----------------------------------------------------------------
+
+Tech Support Hotline (800) 843-4481 (503) 629-7000 (602) 554-4231 Demo Disk
+Hotline (503) 696-7090 N/A N/A Marketing (503) 696-1100 (800) 538-3373 (602)
+554-4645 Fax (503) 648-1145 (800) 458-6231 CompuServe TBA INTELFORUM
+AccessLibraryi750 BBS (916) 356-3600 (503) 645-6275 (916) 356-3600 Faxback (800)
+628-2283 (800) 525-3019 (800) 628-2283 Literature (800) 548-4725 (800) 548-4725
+Service/Repair U.S. N/A (800) INT-EL4U (800) INT-EL4U
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+Version           : 1.00 1.10a 1.10
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

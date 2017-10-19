@@ -1,0 +1,72 @@
+DOCUMENT:Q183686  22-JUN-2001  [exchange]
+TITLE   :XWEB: Cannot Identify Yourself When Posting Newsgroup Messages
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you use Microsoft Outlook Web Access (OWA) to post messages to an anonymous
+newsgroup, you cannot specify your name or e-mail address. Other people who read
+messages that you post do not know who posted the message. In addition, when you
+use OWA to read anonymous newsgroup messages, the name of the person who posted
+the message does not appear.
+
+MORE INFORMATION
+================
+
+Microsoft recognizes the need for people to identify themselves when using OWA
+to post messages to anonymous newsgroups. We also recognize the need for people
+to know who posted messages that they read in anonymous newsgroups. We have
+modified OWA so you can specify your Simple Mail Transfer Protocol (SMTP)
+address when you post messages after logging on to a newsgroup anonymously. In
+addition, when you use OWA to read newsgroup messages posted by people who
+logged on anonymously, the person's name or e- mail address may appear.
+
+If you specify an SMTP address in the From box when you compose a message, OWA
+attempts to determine if the address is valid before it allows you to post the
+message. If it determines that the address is valid, the address is saved and
+automatically appears in the From box the next time you compose a new message.
+You can leave this default address in the From box or type a different address.
+If you type a different address and OWA determines that the address is valid,
+this new address is saved as the default address.
+
+This feature is included in the latest Microsoft Exchange Server version 5.5 U.S.
+Service Pack. For information about obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

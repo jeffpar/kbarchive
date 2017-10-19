@@ -1,0 +1,117 @@
+DOCUMENT:Q124382  13-JUN-2001  [msdos]
+TITLE   :MS-DOS 6.0 Supplemental Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:kbfile msdos kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The file DOS6SUPP.EXE contains supplemental files for MS-DOS 6.0. For
+information about obtaining DOS6SUPP.EXE, refer to the MORE INFORMATION section
+below.
+
+The following files are inclded in DOS6SUPP.EXE:
+
+4201     CP_         2,399 04-05-93   6:00a
+4208     CP_           359 04-05-93   6:00a
+5202     CP_           260 04-05-93   6:00a
+ADOS     CFG            61 04-05-93   6:00a
+ADOS     CO_        17,911 04-05-93   6:00a
+ADOS     OV_        45,289 04-05-93   6:00a
+ADOS     TX_        40,535 04-05-93   6:00a
+AREADME  TX_        12,274 04-05-93   6:00a
+ASSIGN   CO_         4,543 04-05-93   6:00a
+BACKUP   EX_        22,504 04-05-93   6:00a
+CHOICE   COM         1,754 04-05-93   6:00a
+COMMANDS TX_        24,728 04-05-93   6:00a
+COMP     EX_         8,738 04-05-93   6:00a
+COUNTRY  SYS        17,056 04-05-93   6:00a
+CV       COM           716 04-05-93   6:00a
+DBLBOOT  BA_           872 04-05-93   6:00a
+DBLBOOT  INI            91 04-05-93   6:00a
+DISKID01 BAT            42 04-05-93   6:00a
+DISKID02 BAT            42 04-05-93   6:00a
+DOS6SUPP EXE       537,136 04-06-93  10:56a
+DVORAK   SY_         1,256 04-05-93   6:00a
+DVORAK   TX_         3,210 04-05-93   6:00a
+EDLIN    EXE        12,626 04-05-93   6:00a
+EGA      CPI        58,870 04-05-93   6:00a
+EXE2BIN  EX_         5,981 04-05-93   6:00a
+EXPAND   EXE        16,129 04-05-93   6:00a
+FAKEMOUS COM           307 04-05-93   6:00a
+GORILLA  BA_        10,439 04-05-93   6:00a
+GRAFTABL CO_         6,076 04-05-93   6:00a
+JOIN     EX_        11,527 04-05-93   6:00a
+KBDBUF   SYS           880 04-05-93   6:00a
+KEYB     COM        15,063 04-05-93   6:00a
+KEYBOARD SYS        32,566 04-05-93   6:00a
+LCD      CP_         2,793 04-05-93   6:00a
+MIRROR   CO_        11,424 04-05-93   6:00a
+MONEY    BA_        13,049 04-05-93   6:00a
+MSHERC   CO_         4,086 04-05-93   6:00a
+NET      1X_         4,704 04-05-93   6:00a
+NET      TX_         2,650 04-05-93   6:00a
+NETBEUI  DO_        21,122 04-05-93   6:00a
+NETWKSTA 1X_        38,186 04-05-93   6:00a
+NETWKSTA 2X_        60,768 04-05-93   6:00a
+NIBBLES  BA_         7,182 04-05-93   6:00a
+PRINTER  SY_        10,959 04-05-93   6:00a
+PRINTFIX COM           234 04-05-93   6:00a
+REDIR    1X_        19,627 04-05-93   6:00a
+REDIR    2X_        20,033 04-05-93   6:00a
+REMLINE  BA_         4,435 04-05-93   6:00a
+SD6COPY  BAT           630 04-05-93   6:00a
+SETNAME  EX_         3,131 04-05-93   6:00a
+SETUP    BAT         7,102 04-05-93   6:00a
+SPATCH   BAT         2,930 04-05-93   6:00a
+
+       54 file(s)      1,147,285 bytes
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   DownloadDownload Dos6supp.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: S15073 6.00
+
+======================================================================
+Keywords          : kbfile msdos kbgraphxlinkcritical 
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

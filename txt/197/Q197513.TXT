@@ -1,0 +1,54 @@
+DOCUMENT:Q197513  27-FEB-1999  [winnt]
+TITLE   :Windows NT Memory Limitations
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT is limited to four gigabytes (GB) of random access memory (RAM).
+
+MORE INFORMATION
+================
+
+Normally, each program is allocated two GB of RAM by the Windows NT kernel when
+the program is loaded. Windows NT Server Enterprise Edition makes use of 4
+Gigabyte Memory Tuning (4GT). This allows programs to use one more GB of RAM,
+increasing the memory available to the program to three GB.
+
+For additional information about 4GT, view the following Microsoft Web site:
+
+   http://www.microsoft.com/ntserver/NTServerEnterprise/exec/overview/WindowsNTEnterpriseFAQ.asp
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400
+Version           : WINNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

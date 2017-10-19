@@ -1,0 +1,70 @@
+DOCUMENT:Q172646  07-SEP-2001  [sna]
+TITLE   :Pdfcomp.exe Does Not Check for Valid Output File Creation
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Pdfcomp.exe utility does not check to see whether the
+<Directory>\<Output file name> is valid when trying to compile a
+.pdf file to .pdt format.
+
+CAUSE
+=====
+
+Pdfcomp.exe assumes that all input parameters are correct and does not validate
+the directory or output file name before attempting to write the PDT file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+With the fix applied, Pdfcomp.exe checks to make sure the file was successfully
+created before attempting to write information to the specified output file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

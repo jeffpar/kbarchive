@@ -1,0 +1,75 @@
+DOCUMENT:Q112689  27-JUL-2001  [odbc]
+TITLE   :BUG: Use of Certain Scalar Functions May Cause SQLFetch Errors
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+BUG# ODBCDBASE: 1857 (1.01.1928)
+
+SYMPTOMS
+========
+
+Under certain circumstances, memory allocation errors may be returned from
+drivers that ship with the ODBC Database Driver Pack. These errors occur when
+fetching a results set from a certain kind of SQL Statement that uses ODBC
+scalar functions.
+
+The following SQL query uses scalar functions and causes errors, not on
+SQLExecDirect or SQLExecute, but on SQLFetch after 1087 rows have been
+retrieved.
+
+      select *
+      from "test"
+      where
+      {fn CONVERT('19'+
+           {fn LEFT("test"."col_DATE_Y" ,2) }        +   '-'      +
+           {fn LEFT("test"."col_DATE_MD",2)}       +   '-'  +
+           {fn RIGHT({ fn RTRIM("test"."col_DATE_MD") }  , 2  )  }
+      ,SQL_DATE)}
+      >= '1992-01-01'
+
+Errors received on SQLFetch after 1087 rows have been fetched:
+
+   [Microsoft][ODBC Single-Tier Driver]Error in predicate:
+   [Microsoft][ODBC Single-Tier Driver]Expression evaluation error
+   [Microsoft][ODBC Single-Tier Driver]Memory allocation error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC Desktop Database
+Drivers 1.0 (drivers version 1.01.1928) This problem has been fixed in drivers
+version 1.02.1403, which is available from Microsoft Product Services. For more
+information, please contact your primary support provider.
+
+Additional query words: 1.01.1928 DDD Visual C++
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

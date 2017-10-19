@@ -1,0 +1,64 @@
+DOCUMENT:Q136271  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Does Not Detect AMI Fast SCSI II Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 does not detect an AMI Fast SCSI II controller in your computer.
+Instead, it installs a Buslogic driver.
+
+CAUSE
+=====
+
+Windows 95 does not include an AMI SCSI controller driver. The AMI Fast SCSI
+Series 7000 chip set on these controllers is backward compatible with Buslogic
+and Adaptec controllers. However, using either of these drivers may cause the
+floppy disk drive(s) not to work.
+
+RESOLUTION
+==========
+
+You may be able to use the Microsoft Windows NT driver for the AMI Fast SCSI
+controller. To do so, follow these steps:
+
+1. Obtain the Windows NT driver for the controller from AMI's BBS. The driver
+   file is currently named Ami0nt.sys.
+
+2. Rename this file to Buslogic.mpd or Aha154x.mpd.
+
+3. Copy the file to the Windows\System\Iosubsys folder.
+
+4. Refer to the controller's documentation for further information about setting
+   up the Windows NT driver for the controller.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q131571  17-DEC-2000  [win95x]
+TITLE   :Microsoft Fax Attachment Not Associated
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send a binary file attachment in Microsoft Fax using Microsoft
+Exchange in Windows 95, you may receive the following error message
+
+   The following recipient(s) could not be reached:
+
+   The file <filename> is not associated with a program. Open the file and
+   then print to the MS Fax printer.
+
+where <filename> is the name of the attached binary file.
+
+CAUSE
+=====
+
+This error can be caused by either of the following conditions:
+
+ - You tried to send a non-printable file over a Class 2 fax/modem or to a fax
+   machine that does not support binary file transfer.
+
+ - You are using a Class 1 fax/modem and have the fax properties set to Not
+   Editable (facsimile format only).
+
+RESOLUTION
+==========
+
+You can send binary files with Microsoft Fax from a Class 1 fax/modem to a Class
+1 fax/modem. Both fax/modems must be set up with the Editable If Possible or
+Editable Only setting.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

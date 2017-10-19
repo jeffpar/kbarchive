@@ -1,0 +1,74 @@
+DOCUMENT:Q82307  15-DEC-2000  [win3x]
+TITLE   :Bad Font or Display with PC Tools Version 7.0 or 7.1
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run a PC Tools version 7.0 or 7.1 MS-DOS-based application in a window in
+Microsoft Windows version 3.1, the display may look garbled or the font may not
+display correctly. This can also happen in Windows in standard mode when you
+switch to a PC Tools application.
+
+RESOLUTION
+==========
+
+To work around the problem, start PC Tools applications by using the /NF, /NG,
+or /NGM options. If PC Tools applications are included in a Program Manager
+group, use the Properties command to add options to the command line.
+
+You can also include the /NF option in the application's program information file
+(PIF) by typing it in the Optional Parameters text box in the PIF Editor. You
+can use the PC Tools PCCONFIG program to specify that PC Tools applications
+should use the Text Font to display information.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+MORE INFORMATION
+================
+
+For more information about changing application properties, see chapter 3,
+"Program Manager," in the "Microsoft Windows User's Guide" for version 3.1.
+
+For more information about changing an application's PIF, see chapter 8, "PIF
+Editor," in the "Microsoft Windows User's Guide."
+
+The PC Tools products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3.103.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

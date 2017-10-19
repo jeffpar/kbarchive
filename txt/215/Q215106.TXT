@@ -1,0 +1,80 @@
+DOCUMENT:Q215106  27-JUL-2001  [sms]
+TITLE   :SMS: Windows 3.1 Error After Uninstalling Remote Tool
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbClient kbConfig kbRemote kbsms200 kbsms200bug kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you uninstall Microsoft Systems Management Server 2.0 remote tool components
+from Microsoft Windows 3.1 clients, application errors may be generated when you
+quit Windows.
+
+The following error messages occur as application pop-up messages on the client
+computer
+
+   "Application Error: WUSER16 caused a Segment Load Failure in module USER.EXE
+   at 0001:3C0F"
+
+   "Application Error: WUSER16 caused a Segment Load Failure in module
+   IDISP16.DLL at ?"
+
+   "Application Error: PROGMAN caused a General Protection Fault in module
+   GDI.EXE at 0004:06A8."
+
+and then Progman.exe is closed.
+
+CAUSE
+=====
+
+This behavior can occur on computers with low conventional memory (less than 400
+kilobytes [KB]), particularly when Wuser.exe remains in memory but all of the
+support files have been removed. At this point, if you exit Windows, you receive
+the application errors described in the "Symptoms" section.
+
+WORKAROUND
+==========
+
+To resolve this problem, increase Windows 3.1 client conventional memory to 400
+KB or higher.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbConfig kbRemote kbsms200 kbsms200bug kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

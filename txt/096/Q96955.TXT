@@ -1,0 +1,69 @@
+DOCUMENT:Q96955  17-DEC-2000  [msdos]
+TITLE   :RENAME Drops Character If Wildcard Is Used
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive unexpected behavior from the RENAME (REN) command if you use
+wildcard characters. This occurs only if the old and new names have different
+character lengths. For example, suppose you want to rename the following two
+files:
+
+   ndcsend.cm
+   ndcsend.obj
+
+Rename them both using the following command:
+
+   ren ndc*.* tran*.*
+
+The expected result is the following filenames:
+
+   transend.c
+   transend.obj
+
+However, the following filenames are generated:
+
+   tranend.c
+   tranend.obj
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MS-DOS versions 5.x, 6.0, 6.2,
+and 6.21. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

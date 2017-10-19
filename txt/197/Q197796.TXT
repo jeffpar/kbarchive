@@ -1,0 +1,76 @@
+DOCUMENT:Q197796  10-AUG-2001  [winnt]
+TITLE   :Informix IDS Does Not Start After Installing Service Pack 4
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT 4.0 Service Pack 4 (SP4) on a computer that already
+has Informix Dynamic Server (IDS) version 7.2 or earlier installed, the IDS
+Insure database service may not start.
+
+CAUSE
+=====
+
+The IDS Insure database service is attempting to write to the Event Viewer
+security log without the proper security privilege. Fixes included in the latest
+service pack require that a process acquire the "Manage auditing and security
+log" right before attempting to write to the security log.
+
+RESOLUTION
+==========
+
+To resolve this issue, you can:
+
+ - Grant the "Manage auditing and security log" right to the user or group,
+   including a System Account, that requires write access to the security log.
+   This right is granted by default to the Administrators group, but it is not
+   explicitly added to any other user or group.
+
+ - Acquire the SE_SECURITY_PRIVILEGE before calling RegisterEventSource() in
+   your source code to write to the security log or write log data to a
+   different log that is not restricted.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

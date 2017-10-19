@@ -1,0 +1,78 @@
+DOCUMENT:Q146267  18-FEB-2002  [exchange]
+TITLE   :XCLN: Selecting Sort for Case Sensitivity Inconsistent
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Electronic Forms Designer, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Electronic Forms Designer 4.0 for Microsoft Exchange, inconsistant
+behavior can be displayed when similar words with different cases are used.
+
+For example, if the words
+
+   APPLE
+   Apple
+   apple
+   APPLE
+
+are added to the listbox in the Initial Value page for the listbox properties,
+selecting Sort might produce the following:
+
+   apple
+   APPLE
+   Apple
+   APPLE
+
+However, selecting Sort again might produce
+
+   Apple
+   APPLE
+   APPLE
+   apple
+
+and so on with each subsequent Sort.
+
+Typically, Microsoft Visual Basic List and Combo boxes ignore case sensitivity
+when the sorted property is used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with version 4.0 of Microsoft
+Exchange Forms Designer. We are researching the problem and will post new
+information here in the Knowledge Base as it becomes available.
+
+
+Additional query words: forms
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbZNotKeyword kbExchangeEForms kbExchangeEForms400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

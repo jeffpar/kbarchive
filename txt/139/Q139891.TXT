@@ -1,0 +1,60 @@
+DOCUMENT:Q139891  01-MAY-2001  [ssafe]
+TITLE   :INFO: Visual SourceSafe Installation is Processor Specific
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual SourceSafe installation is Processor specific. If you install on an
+Intel-based system, you get only the executables in the DOS, Win, and Win32
+directories for Intel-based operating systems such as Windows, Windows 95,
+Windows NT, and MS-DOS. Installing on a MIPS- or Alpha-based system, installs
+only MIPS- or ALPHA-based executables in the Ntmips or Ntaxp directories.
+
+Visual SourceSafe 6.0 does not ship with any MIPS or PowerPC executables. The
+Alpha Visual SourceSafe executables are only shipped with the Visual Basic
+Enterprise Edition.
+
+MORE INFORMATION
+================
+
+To install for more than one processor, you can run a server setup on each of
+the workstations running under each processor and direct each installation to
+the server. Each setup will add directories to the server install for that
+processor. Clients can then have access to the executables for the architecture
+they are running.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500
+Hardware          : ALPHA MIPS
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

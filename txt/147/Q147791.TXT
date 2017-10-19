@@ -1,0 +1,69 @@
+DOCUMENT:Q147791  12-JUN-2001  [sna]
+TITLE   :Small Outbound RU Size Causes Access Violations on TN3270
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server for Windows NT, version 2.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Unexpected application exceptions occur on the TN3270 server.
+
+CAUSE
+=====
+
+When the TN3270 Server processes a BIND, it examines the RU sizes in the BIND.
+If the RU sizes are larger than the default values (these are configured through
+the TN3270 Administrator), it reallocates its send and receive buffers. When the
+TN3270 Server allocates a new outbound data buffer, it releases the old one back
+to the operating system. However, it still has a pointer to this buffer, which
+is used to examine the BIND that is occasionally referencing memory already
+released.
+
+RESOLUTION
+==========
+
+Increase the default outbound RU size or apply the SNA Server for Windows NT
+version 2.11 Service Pack 1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.11 3.51 kbbug2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211NT
+Version           : :2.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

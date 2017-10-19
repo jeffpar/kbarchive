@@ -1,0 +1,54 @@
+DOCUMENT:Q137304  31-JUL-2001  [sms]
+TITLE   :Garbled Text Setting up MSN Using Remote Control
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot kbui smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When use Remote Control to set up the Microsoft Network on a Windows 95 client,
+the title in the Quick Windows Viewer Setup window shows garbled text instead of
+"The Microsoft Network" on the controlling computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem Systems Management Server version
+1.1. This problem was corrected in the latest US Service Pack for Systems
+Management Server. For information on obtaining this update, query on the
+following word in the Microsoft Knowledge Base:
+
+   " SERVPACK " (without the quotation marks)
+
+Additional query words: prodsms sms win95 helpdesk msn
+
+======================================================================
+Keywords          : kbnetwork kbtshoot kbui smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

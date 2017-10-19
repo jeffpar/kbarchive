@@ -1,0 +1,78 @@
+DOCUMENT:Q157188  11-DEC-1999  [foxpro]
+TITLE   :PRB: String Functions Cannot Be Used with SQL ORDER BY Clause
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+String functions such as LEFT(), RIGHT(), and SUBSTR() cannot be used with the
+ORDER BY clause of the SQL - SELECT statement. Doing so results in the following
+error message:
+
+   SQL Column '' is not found
+
+CAUSE
+=====
+
+ORDER BY supports only columns either by name or number, it does not support any
+other expressions.
+
+WORKAROUND
+==========
+
+Create a dummy column using the string function and then order by that column,
+as in the following example:
+
+      SELECT *,LEFT(Prod_name,5) AS x FROM PRODUCTS ORDER BY x
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open Testdata database in the HOME()+"Samples\Data\" directory, for Visual
+   FoxPro 6.0 goes to \\Program Files\Microsoft Visual Studio
+   \Common\Samples\Data.
+
+2. Issue the following command:
+
+         SELECT * FROM Products ORDER BY LEFT(Prod_name,5)
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

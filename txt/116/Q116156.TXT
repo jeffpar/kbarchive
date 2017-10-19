@@ -1,0 +1,59 @@
+DOCUMENT:Q116156  10-NOV-1999  [win3x]
+TITLE   :Farallon Phone-Net Is Incompatible with 32-Bit File Access
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Farallon Technical Support, Farallon Phone-Net PC is incompatible
+with Windows for Workgroups 3.11 32-bit file access.
+
+MORE INFORMATION
+================
+
+The Farallon Phone-Net is a network that uses 10baseT and standard Ethernet
+cards in IBM-compatible machines to allow connections to Macintosh computers.
+According to Farallon Technical Support, the Farallon redirector is incompatible
+with IFSHLP.SYS and 32-bit file access in Windows for Workgroups 3.11.
+
+WORKAROUND
+==========
+
+At this time, to work around this problem, you must use the Farallon Desk
+Accessories (DA.EXE) at the MS-DOS level outside Windows for Workgroups. This
+allow you to download files from the Macintosh servers before entering Windows
+for Workgroups.
+
+
+Additional query words: 3rdparty 3.11 vfat Phone Net
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

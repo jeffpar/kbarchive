@@ -1,0 +1,72 @@
+DOCUMENT:Q134866  23-OCT-2001  [powerpt]
+TITLE   :PPT7: Slow Performance or Memory Errors Running PowerPoint
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run Microsoft PowerPoint with virtual memory turned off in Windows 95,
+you may experience slow performance or receive memory-related error messages,
+similar to the following:
+
+   You do not have enough memory to perform this function.
+
+RESOLUTION
+==========
+
+Turn virtual memory on. To do this, follow these steps:
+
+1. Quit any programs you have running.
+
+2. On the Windows Start menu, point to Settings, and then click Control Panel.
+
+3. Double-click the System icon.
+
+4. Click the Performance tab, and then click Virtual Memory.
+
+5. Click "Let Windows manage my virtual memory settings (recommended)" to select
+   it.
+
+6. Click OK. Click Close.
+
+7. If you are prompted to restart Windows, click Yes.
+
+REFERENCES
+==========
+
+For more information about virtual memory in Windows 95, click Help on the
+Windows Start menu, and then search for help on "virtual memory settings."
+
+Additional query words: ppt95 sluggish
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

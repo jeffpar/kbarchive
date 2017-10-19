@@ -1,0 +1,77 @@
+DOCUMENT:Q196195  01-MAY-2001  [ssafe]
+TITLE   :PRB: VSSVer.scc Added to FrontPage Web
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0,97,98
+OPER/SYS:
+KEYWORDS:kbinterop kbFrontPage kbSSafe600 kbInetDev kbFrontPage97 kbFrontPage98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+ - Microsoft FrontPage 97 for Windows 
+ - Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a FrontPage Web to source control or recalculate hyperlinks on an
+existing source controlled Web, the file VSSVer.scc is added to the Web. If the
+Web has subfolders, the file also exists in the subfolders.
+
+CAUSE
+=====
+
+Visual SourceSafe version 6.0 creates the VSSVer.scc file in a project's working
+folder every time you perform a Get or Check Out operation. When you add a new
+Web to Visual SourceSafe or recalculate hyperlinks on an existing Web, Visual
+SourceSafe performs a Get on the files in the Web. The working folder for the
+Visual SourceSafe project is the location of the files on the Web server, so the
+VSSVer.scc file is created in that folder. FrontPage looks at all the files in
+that working folder, assumes that they belong to the Web, and adds them to
+FrontPage Explorer.
+
+RESOLUTION
+==========
+
+The purpose of the VSSVer.scc file is to improve the performance of Visual
+SourceSafe operations. Its presence does not impact the FrontPage Web, so you
+can leave the file as is. You can delete the file from the Web, but it will be
+recreated every time you recalculate hyperlinks.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+Visual SourceSafe Help, version 6.0; search on: Using VSS, Get and View Files
+and Projects
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbFrontPage kbSSafe600 kbInetDev kbFrontPage97 kbFrontPage98 
+Technology        : kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbFrontPage97 kbZNotKeyword4 kbZNotKeyword2 kbFrontPage97Search kbFrontPage98Search kbZNotKeyword3 kbSSafe600
+Version           : WINDOWS:6.0,97,98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

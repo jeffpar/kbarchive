@@ -1,0 +1,73 @@
+DOCUMENT:Q146556  16-MAR-1999  [exchange]
+TITLE   :XFOR: Method Used by IMS to Obtain IP Address
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the method that the Internet Mail Service uses to obtain
+the IP address of the recipient's server when the Internet Mail Service is
+configured to deliver messages using DNS.
+
+MORE INFORMATION
+================
+
+When the Internet Mail Service is configured to deliver messages using DNS, it
+uses the following method to obtain the IP address of the recipient's server:
+
+1. The Internet Mail Service queries the appropriate DNS server for mail
+   exchanger (MX) records.
+
+2. If the Internet Mail Service is unable to obtain the IP address by querying
+   the DNS server, it requests the following information from the Windows NT
+   server:
+
+    - Address (A) records
+
+    - Alias (CNAME) records
+
+    - WINS servers
+
+    - LMHOSTS file
+
+For information about problems that can arise when you attempt to establish
+TCP/IP connections using DNS, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q163391 Troubleshooting Problems Communicating on the Internet
+
+   Q169790 How to Troubleshoot Basic TCP/IP Problems in Windows NT 4.0
+
+
+Additional query words: internet mail connector imc resolution
+
+======================================================================
+Keywords          : kbnetwork kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

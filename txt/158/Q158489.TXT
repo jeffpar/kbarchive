@@ -1,0 +1,61 @@
+DOCUMENT:Q158489  10-APR-1999  [exchange]
+TITLE   :XFOR: Err Msg: The Selected Postoffice is Read Only...
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you migrate users from Microsoft Mail for PC Networks using the Microsoft
+Exchange Migration Wizard, you may receive the following error:
+
+   The selected Postoffice is read only. It must be writeable.
+
+Verify that the Master.glb file is not locked open. For more information about
+this problem, please see the following article in the Microsoft Knowledge Base:
+
+   Q147506 XFOR: Err Msg: The Selected Postoffice is Read Only...
+
+If it is not locked open, running the MAILINT utility against the postoffice will
+return the following error:
+
+   The GLB subdirectory was a file.
+
+Checking the permissions of the GLB subdirectory will show that the subdirectory
+has Read Only permissions. Removing that restriction will allow the Migration to
+complete successfuly.
+
+Note: MAILINT is a utility that checks the basic integrity of an Microsoft Mail
+postoffice. It is available in the Microsoft Mail Resource Kit.
+
+Additional query words: GLB directory files
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

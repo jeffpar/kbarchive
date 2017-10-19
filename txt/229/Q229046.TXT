@@ -1,0 +1,69 @@
+DOCUMENT:Q229046  28-APR-1999  [sna]
+TITLE   :System Event 20 Logged When Printing with SNA Print Server
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following System Event may be logged on the SNA Server computer when
+printing with the SnaPrint Service:
+
+   Event ID: 20
+   Source: Print
+
+   Description:
+   Printer Driver [printer driver name] was added or updated. Files: [list of
+   updated files]
+
+MORE INFORMATION
+================
+
+The Event 20 message could be caused by the following events that take place
+when printing with the SnaPrint Service:
+
+ - If the drivers for a remote printer are not installed on the SNA Server
+   computer, the Windows NT spooler service will copy the drivers locally in
+   order to print.
+
+ - If the drivers for the remote printer ARE installed on the SNA Server
+   computer, the spooler service still checks the remote printer server for
+   updated drivers. If the drivers are newer than the ones installed on SNA
+   Server, then the newer ones are temporarily copied locally to print the job.
+
+These events occur for every print job that is sent through an SNA Server print
+session. The message does not cause any problems with printing, and can be
+considered an informational message.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

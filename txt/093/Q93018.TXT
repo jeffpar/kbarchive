@@ -1,0 +1,75 @@
+DOCUMENT:Q93018  06-OCT-1999  [win3x]
+TITLE   :LMLOGON=1 Is Not Recognized at the Command Line
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows for Workgroups network driver does not recognize LMLOGON=1 if you
+attempt to log on from the command line before starting Windows for Workgroups,
+or if you attempt to log on from Workgroup Connections. The only entry
+recognized when starting the network at MS-DOS is LMLOGON=YES.
+
+WORKAROUND
+==========
+
+When Control Panel is used to activate LAN Manager validation, it automatically
+puts an entry of LMLOGON=1 in the [network] section of the SYSTEM.INI file. The
+only way to log on to a LAN Manager server from the command line is to manually
+modify this line.
+
+To change this entry:
+
+1. Using a text editor, open the SYSTEM.INI file.
+
+2. In the [network] section, change the LMLOGON= entry to:
+
+   LMLOGON=YES
+
+3. Save the file.
+
+4. Restart the network services from the MS-DOS command prompt.
+
+The entry LMLOGON=YES is not recognized by the Networks section of Control Panel.
+Even if the above modification is made, the LAN Manager settings in Control
+Panel do not display a check in the Logon On To LAN Manager Domain check box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.1. This problem does not occur in later versions of the product.
+
+Additional query words: 3.10 Lanman lan man
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

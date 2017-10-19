@@ -1,0 +1,61 @@
+DOCUMENT:Q67020  10-DEC-1999  [win95x]
+TITLE   :Fontware Installation Kit Cannot Copy Typeface Information
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are setting up Fontware and adding a typeface, you may get the
+following message:
+
+   Unable to copy all typeface information. Errors occurred while copying
+   typefaces.
+
+This message is generated when the Fontware kit is unable to read the disk from
+which you are trying to copy. If you are using a backup of a Fontware
+Installation Kit disk or a Bitstream Scalable Typeface disk, exit the kit, make
+a new backup copy, and try again. If the disk is an original typeface disk, you
+will need to obtain a replacement disk.
+
+MORE INFORMATION
+================
+
+A Bitstream Fontware Installation Kit is available through a fulfillment coupon
+included with the retail version of Microsoft PowerPoint for Windows. This
+starter kit will install fonts for Windows applications only; however, the kit
+can be merged with other starter kits to provide support for multiple
+applications as described above.
+
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty win30 winppt macppt
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

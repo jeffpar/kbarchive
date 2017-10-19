@@ -1,0 +1,287 @@
+DOCUMENT:Q170163  11-JAN-2001  [vbwin]
+TITLE   :INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbreadme kbwizard kbtophit kbADO kbAppSetup kbDAOsearch kbDatabase kbDataBinding kbMDAC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information below includes the documentation and workarounds for Visual
+Basic 6.0. This information can also be found in the README.htm file that ships
+with Visual Basic 6.0 on the Visual Basic 6.0 CD-ROM. Please see the REFERENCES
+section of this article for a list of the Microsoft Knowledge Base articles
+relating to the Visual Basic 6.0 readme.
+
+Following is a list of all parts of the readme file:
+
+Part 1. Important Issues - Please Read First!
+Part 2. Data Access Issues and DataBinding Tips
+Part 3. Control Issues
+Part 4. Language Issues
+Part 5. Samples Issues
+Part 6. Wizard Issues
+Part 7. Error Message Issues
+Part 8. WebClass Designer Issues
+Part 9. DHTML Page Designer Issues
+Part 10. Extensibility issues
+Part 11. Miscellaneous Issues
+Part 12. Microsoft Transaction Server (MTS) Issues
+Part 13. Dictionary Object
+Part 14. Visual Component Manager
+Part 15. Application Performance Manager
+
+MORE INFORMATION
+================
+
+Error in Data Environment Designer Code Example
+-----------------------------------------------
+
+In the topic, "Programmatically Accessing Objects in Your Data Environment
+Designer," the example under "Executing a Command Object with Multiple
+Parameters" erroneously uses the Open method:
+
+      MyDE.Commands("InsertCustomer").Parameters("ID").value = "34"
+      MyDE.Commands("InsertCustomer").Parameters("Name").value = "Fred"
+      MyDE.Commands("InsertCustomer").Open
+
+There is no Open method for the Commands object. You must use the Execute method
+instead.
+
+Incompatibilities with Data-bound Controls
+------------------------------------------
+
+Due to changes in Visual Basic 6.0, not all data-bound controls are compatible
+with all data sources. This incompatibility is due to a difference in the
+internal binding mechanisms of ADO versus DAO/RDO. Controls that were created
+specifically to work with DAO/RDO can't be bound to an ADO Data control;
+controls created for use with ADO can't be bound to the standard Data control or
+the Remote Data Control.
+
+This incompatibility primarily applies to complex-bound controls such as grids or
+lists that bind to multiple fields in a data source; simple-bound controls such
+as text boxes or labels that bind to a single field will work with either type
+of data source. Some examples are as follows:
+
+ - The Microsoft Data Bound Grid control (Dbgrid32.ocx) can be bound to the DAO
+   or RDO Data controls; it can't be bound to the ADO Data control.
+
+ - The Microsoft DataGrid control (Msdatgrd.ocx) can be bound to the ADO Data
+   control; it can't be bound to the DAO or RDO Data controls.
+
+ - The Microsoft Masked Edit Control (Msmask32.ocx) can be bound to any of the
+   Data controls.
+
+ - The intrinsic controls (TextBox, PictureBox, Label, and so on) can be bound
+   to any of the Data controls.
+
+ - Third-party controls and Visual Basic-authored User controls should be tested
+   on a case-by-case basis.
+
+When attempting to bind a control to a data source at design-time, you may
+encounter a "No compatible data source" error message. In this case, you will
+need to substitute another control that is compatible with your data source.
+
+Binding to Properties of Objects May Yield Unexpected Results
+-------------------------------------------------------------
+
+While it is possible to bind any object to any other object, the results may not
+always be what you expect. Some properties are read-only bindable and will not
+update their bound source.
+
+For example, if you were to bind the Caption property of a Frame control to a
+field named Foo in an ADO Recordset object, the Caption would change to reflect
+the value of Foo as you scrolled through the Recordset. If, however, you changed
+the Caption property programmatically (Frame1.Caption = "Bar"), the value of Foo
+would not be updated. Because the Caption property of the Frame is read-only
+bindable, it doesn't provide notification that its data has changed.
+
+This isn't a problem for Visual Basic-authored objects, since you can call the
+PropertyChanged method in your object's code. For other objects, you can
+determine if a property is update bindable by checking the DataBindings
+collection. If a property is enumerated in the DataBindings collection, it is
+update bindable and the data source will receive updates to data; if it isn't
+enumerated, the property is read-only bindable.
+
+Complex Binding to an ADO Recordset Requires CursorType
+-------------------------------------------------------
+
+When binding an ADO Recordset object to a complex-bound control (such as a Grid
+control), it is necessary to explicitly set the CursorType property to either
+adOpenStatic or adOpenKeyset. If you don't set this property, no data will be
+displayed. The following code shows the use of the CursorType property:
+
+     Private Sub DataClass_Initialize()
+        Set cn = New ADODB.Connection
+        Set rs = New ADODB.Recordset
+        rs.CursorType = adOpenStatic
+        cn.Open "northwind"
+        rs.Open "customers", cn
+     End Sub
+
+Binding to a simple-bound control (such as a TextBox) doesn't require a specific
+CursorType.
+
+Creating Visual Basic Data Sources: Type the Fields as adVarChar
+
+for SQL Server and Access Databases Instead of adBSTR
+-----------------------------------------------------
+
+When appending fields to an ADO Recordset object for use with a SQL Server or
+Access database, type the fields as adVarChar instead of adBSTR (as shown in
+some sample code). When reading data out of either SQL Server or Access
+databases, ADO will use the adVarChar type.
+
+Incorrect References for Creating OLE DB Providers
+--------------------------------------------------
+
+The documentation erroneously states that it is possible to set a class module's
+DataSourceBehavior property to 2 - vbOLEDBProvider to create an OLE DB data
+provider. The correct values for DataSourceBehavior are 0 - vbNone and 1 -
+vbDataSource.
+
+The documentation also erroneously refers to a non-existent event in class
+modules called OnDataConnection.
+
+Finally, in the topic "Creating the MyDataSource Class," the step-by-step example
+incorrectly states that you should set DataSourceBehavior to 2 -
+vbOLEDBProvider. Instead, you should set DataSourceBehavior to 1 -
+vbDataSource.
+
+To create OLE DB data providers using Visual Basic, use the Provider Writer
+Toolkit included with the OLE DB SDK. For more information, see the OLE DB
+Simple Provider Toolkit in the Platform SDK Documentation on MSDN.
+
+Finding Help For ADO Objects
+----------------------------
+
+When using the ADO objects, (for example, Recordset, Connection, Command,
+Parameter, ADOR, RDS, and RDS Server object), you cannot get context- sensitive
+help on the object or its properties, events, or methods. That is, if you have a
+reference to the object and you use one of its features, selecting the code and
+pressing F1 does not result in a help topic. Instead, you will get either a
+wrong topic or the "Keyword Not Found" topic.
+
+However, you can get help on any of the object's properties, events, or methods
+by using the online documentation Index:
+
+1. If the MSDN documentation viewer is not open, on the Help menu, click
+   Contents.
+
+2. Click the Index tab.
+
+3. Type the name of the property, event, or method including the word
+   "collection", "property", "event", or "method" as appropriate.
+
+4. From the list of available topics, select the topic that includes "ADO" in
+   its title.
+
+   NOTE: You can also find additional help on other ADO topics, such as the ADO
+   object model, by looking in the MSDN Library Table of Contents: open Platform
+   SDK and under Database and Messaging Services, go to Microsoft Data Access
+   SDK.
+
+SQL Server OLE DB Provider Requires New instcat.sql
+---------------------------------------------------
+
+Before using the SQL Server OLE DB data provider, you must run the version of
+instcat.sql distributed with Microsoft Visual Basic 6.0 on SQL Server (version
+6.5 and later). Instcat.sql is distributed with Visual Basic 6.0 and can be
+found in the \winnt\system32 directory upon installation.
+
+If Instcat.sql is not run on your SQL Server, the provider is unable to retrieve
+metadata from the SQL Server, and thus will not be able to connect to that
+server.
+
+Setup for Data Access Applications May Fail on Windows 95/98
+------------------------------------------------------------
+
+When redistributing a Visual Basic 6.0 application that includes data access
+components, setup will fail if DCOM for Windows 95 and Windows 98 isn't present
+on Windows 9x client machines.
+
+The file Mdac_typ.exe is added to your setup package by the Package and
+Deployment Wizard if your project includes references to ADO, OLEDB, or ODBC
+(you can check for this on the Included Files page of the wizard). This file
+installs MDAC 2.0 files on the client computer. MDAC 2.0 requires DCOM for
+Windows 95 and Windows 98 in order to function properly, however it does not
+perform a check for this during setup. The setup will fail if DCOM for Windows
+95 and Windows 98 isn't present on the client machine. Some of the older data
+access components will be overwritten prior to the failure, possibly causing
+older data access applications on the client to fail.
+
+When distributing data access applications for Windows 9x, you need to make sure
+that DCOM for Windows 95 and Windows 98 is installed on the client. DCOM98.EXE
+is a self-extracting executable file that installs the updated DCOM components
+for Windows 95 or Windows 98. It can be found in the DCOM98 directory of the
+Visual Basic 6.0 CD. This file may be freely distributed with your Visual Basic
+application.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q170164 : INFO: VB 6.0 Readme Part 1: Important Issues [ASCII 150] Read
+   First!
+
+   Q170162 : INFO: VB 6.0 Readme Part 3: Control Issues
+
+   Q170161 : INFO: VB 6.0 Readme Part 4: Language Issues
+
+   Q170160 : INFO: VB 6.0 Readme Part 5: Samples Issues
+
+   Q190046 : INFO: VB 6.0 Readme Part 6: Wizard Issues
+
+   Q170158 : INFO: VB 6.0 Readme Part 7: Error Message Issues
+
+   Q189539 : INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+
+   Q190249 : INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+   Q170154 : INFO: VB 6.0 Readme Part 10: Extensibility Issues
+
+   Q170157 : INFO: VB 6.0 Readme Part 11: Miscellaneous Issues
+
+   Q170156 : INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues
+
+   Q191792 : INFO: VB 6.0 Readme Part 13: Dictionary Object
+
+   Q191791 : INFO: VB 6.0 Readme Part 14: Visual Component Manager
+
+   Q191790 : INFO: VB 6.0 Readme Part 15: Application Performance Explorer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbreadme kbwizard kbtophit kbADO kbAppSetup kbDAOsearch kbDatabase kbDataBinding kbMDAC kbOLEDB kbVBp kbVBp600 kbVS600 kbDataEnv kbMDACNoSweep 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

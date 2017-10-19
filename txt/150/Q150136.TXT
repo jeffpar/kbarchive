@@ -1,0 +1,79 @@
+DOCUMENT:Q150136  02-NOV-1999  [fortran]
+TITLE   :BUG: SPREAD() Intrinsic Function Application Error
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the SPREAD() intrinsic function to copy an array into an array one
+dimension larger, you may find that some large arrays cause the following
+application error at run-time:
+
+Under Windows 95:
+
+   This program has performed an illegal operation and will be shut down.
+   If the problem persists, contact the program vendor.
+
+   Details:
+
+   <program> caused an invalid page fault in module <program.exe> at
+   0137:004013d7
+
+Under Windows NT version 3.51:
+
+   The instruction at "0x00000000" referenced memory at "0x00000000". The memory
+   could not be "read".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem
+---------------------------------
+
+   ! Compile options needed: none
+         INTEGER IRESULT(4,4,4,4,4,4)
+         INTEGER ISOURCE(4,4,4,4,4)
+         IDIM = 1
+         NCOPIES = 1
+         IRESULT = SPREAD(ISOURCE, IDIM, NCOPIES)
+         END
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

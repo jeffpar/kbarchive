@@ -1,0 +1,73 @@
+DOCUMENT:Q241271  31-JUL-2001  [iis]
+TITLE   :IIS 5.0 Returns 500;100 Error Page with Response.Buffer=False
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp500100 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set Response.Buffer to False on an ASP page, the "500;100" error
+message is still returned when an error occurs. However, when you set
+Response.Buffer to False for debugging purposes, a static error message should
+be returned, as it does in IIS 4.0 .
+
+CAUSE
+=====
+
+The ASP page sends no data to the client before the error occurs. IIS 5.0
+returns the custom error page because no data is provided by the static error
+message when there is no data written to the client.
+
+WORKAROUND
+==========
+
+For IIS 5.0 to return static error messages, you must disable the ASP dynamic
+error page. To do this, perform the following steps:
+
+1. In the Internet Service Manager MMC, right-click the Web site, and then
+   select Properties.
+
+2. Click the Custom Errors tab.
+
+3. Choose the 500;100 HTTP error.
+
+4. Change the Message Type to Default.
+
+5. Click OK, and then click Apply.
+
+IIS 5.0 will now return static messages when an error is received from all pages
+served from this Web site.
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp500100 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

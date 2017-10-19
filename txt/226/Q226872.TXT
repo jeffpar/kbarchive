@@ -1,0 +1,62 @@
+DOCUMENT:Q226872  22-OCT-2000  [sms]
+TITLE   :SMS: Can't Remove Assigned Client Remote Installation Account
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create an SMS Client Remote Installation account, you are unable to
+remove this account from Systems Management Server 2.0.
+
+WORKAROUND
+==========
+
+To work around this behavior, simply rename the account.
+
+STATUS
+======
+
+This problem was corrected in Systems Management Server version 2.0, Service
+Pack 2.
+
+MORE INFORMATION
+================
+
+When you try to remove the account from Systems Management Server, you receive
+the following message:
+
+   Please enter a Windows NT username.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : :2.0,2.0 SP1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

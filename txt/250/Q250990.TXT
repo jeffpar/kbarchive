@@ -1,0 +1,82 @@
+DOCUMENT:Q250990  30-MAY-2002  [homegame]
+TITLE   :Zone Err Msg: Game Failed to Launch
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to join a retail game on the Zone, you may receive the
+following error message:
+
+   Game failed to launch. Click OK to stay, or Cancel to return to the lobby.
+
+In addition, when you attempt to host a retail game, other players may be unable
+to connect to your game.
+
+CAUSE
+=====
+
+This behavior can occur if any of the following conditions are true:
+
+ - You connect to the Internet through a proxy server or firewall.
+
+ - Your are experiencing high Internet latency.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Configure the Proxy Server or Firewall
+--------------------------------------
+
+For additional information about how to configure a proxy server or firewall for
+use with Zone.com, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q240429 DirectX: Ports Required to Play on a Network
+
+If the issue continues to occur, proceed to the next method.
+
+Reduce Your Internet Latency
+----------------------------
+
+For additional information about how to reduce your Internet latency, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q232392 Zone: High Latency in Game Lobbies or When Playing Games
+
+Additional query words: msgame igz msngz
+
+======================================================================
+Keywords          : kberrmsg igz kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

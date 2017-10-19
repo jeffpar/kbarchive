@@ -1,0 +1,75 @@
+DOCUMENT:Q114245  27-JUL-2001  [odbc]
+TITLE   :BUG: Can Not Do Literal Update of Memo Fields Beyond 255 Chars
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+BUG# ODBCDBASE: 2064 (1.01.1928)
+
+SYMPTOMS
+========
+
+The ODBC Access driver gives a "data truncated" error (SQLSTATE 01004) when you
+try to update a memo field with a literal such that the total length of the
+updated field is greater than 255 characters. Furthermore, the memo field is
+truncated to 255 characters.
+
+For example:
+
+Create an Access table with a memo field in it. Insert one row into the table
+such that the memo field for that row has 220 chars. SQLExecDirect the following
+update statement on this table:
+
+      update <table>
+      set <memo-field-name> = <memo-field-name> + <a string of 40 chars>
+
+SQLExecDirect will return the "data truncated" with SQLSTATE 01004; only 35 of
+the 40 chars get written to the table. Further attempts to increase the size of
+the memo field will fail with the same error message. The Access driver will not
+let you increase the size of the memo field to beyond 255 chars via updates
+using literals.
+
+WORKAROUND
+==========
+
+Use parameter markers in the update statement and pass the memo field value
+using SQLSetParam.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Access Driver version
+1.01.1928. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.01.1928 ODBC ACCESS
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

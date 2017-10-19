@@ -1,0 +1,63 @@
+DOCUMENT:Q138927  08-AUG-2001  [winnt]
+TITLE   :Server Operators Unable to Format Server Hard Disk
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.50, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On your computer running Windows NT, if you are a member of the Server Operators
+group and attempt to format a fixed disk, the error Access Denied appears even
+though the chart on page 398 of the Windows NT Server System Guide shows that
+Server Operators have the ability to format a server's fixed disk.
+
+CAUSE
+=====
+
+This is a documentation error in the Server System Guide.
+
+RESOLUTION
+==========
+
+Ask your administrator to add your account to the Administrators group.
+
+This allows you to format a fixed disk and to run diagnostic utilities such as
+CHKDSK.EXE against the drive.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server versions 3.5
+and 3.51. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt ntdomain ntfilesys ntutil
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

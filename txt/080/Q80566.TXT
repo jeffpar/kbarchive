@@ -1,0 +1,77 @@
+DOCUMENT:Q80566  22-NOV-1999  [msdos]
+TITLE   :MS-DOS Shell Flashes with Metheus Display Card
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Metheus technical support, the MS-DOS Shell screen may flash the
+display boxes if Shell is configured for either VGA or EGA when using the
+Megheus graphics card model 1104 or Premier 1Mb.
+
+MORE INFORMATION
+================
+
+If you are using the Metheus graphics card model 1104 or Premier 1Mb and have
+configured Shell to use VGA or EGA mode, the display may flash the list boxes
+where files names and directories are listed. To correct this problem, you need
+to configure Shell for a CGA resolution.
+
+To reconfigure Shell, do the following:
+
+1. Expand the file CGA.GR_ (on disk 3 [5.25-inch set] or disk 2 [3.5-inch set])
+   to the MS-DOS directory on your hard drive with the following command:
+
+      expand a:\cga.gr_ c:\dos\dosshell.grb
+
+2. Expand the file CGA.IN_ (on disk 3 [5.25-inch set] or disk 2 [3.5-inch set])
+   to the MS-DOS directory on your hard drive with the following command:
+
+      expand a:\cga.in_ c:\dos\dosshell.ini
+
+3. Expand the file CGA.VI_ (on disk 2 [5.25-inch set] or disk 1 [3.5-inch set)
+   to the MS-DOS directory on your hard drive with the following command:
+
+      expand a:\cga.vi_ c:\dos\dosshell.vid
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+REFERENCES
+==========
+
+Metheus technical support: (800) 638-4387
+
+Additional query words: 5.00 5.00a 6.00dosshell MB 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,91 @@
+DOCUMENT:Q197156  10-AUG-2001  [winnt]
+TITLE   :Cannot Add New Modem or View Existing Modem Properties
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click the Modems icon in Control Panel, the Install New Modem
+wizard may not start, or the Modems Properties dialog box may not be displayed.
+
+CAUSE
+=====
+
+This behavior can occur if the PnP ISA Enabler service is not started, or if
+certain files in the Winnt\System32 folder are missing or damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+ - Verify that the PnP ISA Enabler service is installed. For information on how
+   to do this, see the following Microsoft Knowledge Base article:
+
+   Q156344 Plug and Play Devices Not Detected or Installed
+
+ - Verify that the Plug and Play service is started. To do this:
+
+   1. Click Start, point to Settings, click Control Panel, and then double-click
+      Services.
+
+   2. Highlight the Plug and Play service. If the Status does not indicate
+      Started, and the Startup mode is not Automatic, click Startup, click
+      Automatic, and then click OK. Click Start, and then click Close.
+
+ - Verify that the following files are located in the Winnt\System32 folder:
+
+   Shell32.dll
+   Rpcrt4.dll
+   Tapi32.dll
+   Setupapi.dll
+   Msvcrt.dll
+   Lz32.dll
+   Comdlg32.dll
+   Version.dll
+   Cfgmgr32.dll
+   Mpr.dll
+   Rpcltc1.dll
+
+   If any of these files are missing, reapply the latest Windows NT 4.0 Service
+   Pack. For information on obtaining the service pack, query on the following
+   word in the Microsoft Knowledge Base:
+
+   SERVPACK
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q72287  14-NOV-2000  [word97]
+TITLE   :WD97: Using AppActivate to Switch to Another Application
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprogramming kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The AppActivate command activates the specified window in a program other than
+Microsoft Word. Use AppActivate to switch to another program that is already
+running or that you have started by using Shell. To activate a window within
+Microsoft Word, use the Activate command.
+
+NOTE: If the other program is minimized, the AppActivate command will not
+maximize that program; it simply gives that program the focus and then returns
+the focus to Word.
+
+MORE INFORMATION
+================
+
+For more information about switching focus to another program from Word 97 for
+Windows, while in the Visual Basic for Applications Editor, click the Office
+Assistant, type "AppActivate" (without the quotation marks), click Search, and
+then click to view "AppActivate Statement". For examples of how to do this in
+Word, click "Example."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If the Assistant is not able to answer your query, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q176476 OFF: Office Assistant Not Answering Visual Basic Questions
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

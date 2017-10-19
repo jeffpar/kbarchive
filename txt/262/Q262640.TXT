@@ -1,0 +1,67 @@
+DOCUMENT:Q262640  04-AUG-2000  [iis]
+TITLE   :Windows NT 4.0 Option Pack Does Not Install on Windows 2000
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the Windows NT 4.0 Option Pack (NTOP) on a Windows
+2000-based computer, the following error message occurs:
+
+   The features included in the Windows NT 4.0 Option Pack are designed for
+   Microsoft Windows NT Server Version 4.0. They do not currently run on Windows
+   NT Server 5.0.
+
+CAUSE
+=====
+
+Internet Information Services (IIS) and related services, such as FTP Server,
+Indexing Service, and SMTP Service, are included as built-in components of
+Windows 2000 (both the Professional and Server editions) and cannot be installed
+through the NTOP.
+
+RESOLUTION
+==========
+
+Perform the following steps to install IIS 5.0:
+
+1. From the Start menu, click Control Panel, and then click "Add/Remove
+   Programs".
+
+2. Select "Add/Remove Windows Components", select the Internet Information
+   Services (IIS) component, and then follow the on-screen instructions.
+
+Additional query words: iis 5 setup set up set-up akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

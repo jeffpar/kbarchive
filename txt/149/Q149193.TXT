@@ -1,0 +1,62 @@
+DOCUMENT:Q149193  17-DEC-2000  [win95x]
+TITLE   :Clicking the Stop Button in CD Player May Hang Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are playing an audio CD using the CD Player tool in Windows 95, your
+computer may stop responding (hang) when you click Stop in CD Player.
+
+CAUSE
+=====
+
+This behavior can occur if you are using a Sony CDU-76E CD-ROM drive. The
+computer hangs because of a timing problem between the CD Player tool and the
+CD-ROM drive.
+
+RESOLUTION
+==========
+
+To prevent this behavior from occurring, allow more than one second to elapse
+between clicking Play and Stop in CD Player. If you click Stop immediately after
+clicking Play, the computer may hang.
+
+MORE INFORMATION
+================
+
+The Sony CDU-76E CD-ROM drive is installed in some Compaq Presario computers as
+original equipment. Sony Corporation is aware of this problem. The CDU-76E
+CD-ROM drive is no longer in production; it has been replaced by the new model
+CDU-77E CD-ROM drive.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,84 @@
+DOCUMENT:Q151420  08-NOV-2001  [homegame]
+TITLE   :Fury3: AVI Music Turns Off When Resizing Window
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fury 3 for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Fury3 AVI sounds may stop playing if you perform a Restore Down or Maximize
+Window and have assigned sound to those events.
+
+RESOLUTION
+==========
+
+Disable the sounds for the Restore Down and Maximize Window events.
+
+MORE INFORMATION
+================
+
+To Disable Sound For The Restore Down And Maximize Window Events
+----------------------------------------------------------------
+
+Windows 95/98
+-------------
+
+1. Click Start and point to Settings.
+
+2. Click Control Panel.
+
+3. Double-click Sounds.
+
+4. In the Events list, click Maximize, and in the Name list, click None.
+
+5. In the Events list, click Restore Down, and in the Name list, click None.
+
+6. Click OK.
+
+Windows 3.1
+-----------
+
+1. Double-click the Control Panel (usually in the Main group).
+
+2. Double-click Sound.
+
+3. In the Events list, click Maximize, and in the Name list, click None.
+
+4. In the Events list, click Restore Down, and in the Name list, click None.
+
+5. Click OK, and close the Control Panel.
+
+Microsoft has confirmed this to be a problem in Fury3 version 1.0.
+
+Additional query words: 1.00 fury
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbFury3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

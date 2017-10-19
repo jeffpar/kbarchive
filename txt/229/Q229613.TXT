@@ -1,0 +1,91 @@
+DOCUMENT:Q229613  17-NOV-2000  [winnt]
+TITLE   :Dtcxatm.log File Grows Unexpectedly Large
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Microsoft SQL Server is used with an XA-compliant resource manager (for
+example, Oracle, IMB DB2, or Informix), the Dtcxatm.log file can grow quite
+large. For example, it is possible for files to reach several hundred MB in
+size. Therfore, when recovery is performed, Microsoft Distributed Transaction
+Coordinator (DTC) reads through the entire log file. This can lead to extremely
+long recovery times.
+
+CAUSE
+=====
+
+This problem occurs because of an error in the way that space is reclaimed in
+the log file.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+The following files were modified in Windows NT 4.0 Service Pack 5 to fix this
+problem:
+
++-------------------------------------------+
+| Name         | Date    | Time   | Size    | 
++-------------------------------------------+
+| Dtccm.dll    | 4/22/99 | 12:04p | 110,864 | 
++-------------------------------------------+
+| Dtcxatm.dll  | 4/22/99 | 12:04p | 162,064 | 
++-------------------------------------------+
+| Logmgr.dll   | 4/22/99 | 12:04p | 59,664  | 
++-------------------------------------------+
+| Msdtcprx.dll | 4/22/99 | 12:04p | 189,712 | 
++-------------------------------------------+
+| Msdtctm.dll  | 4/22/99 | 12:04p | 456,976 | 
++-------------------------------------------+
+| Mtxoci.dll   | 4/22/99 | 12:04p | 69,904  | 
++-------------------------------------------+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0. This problem was
+first corrected in Windows NT 4.0 Service Pack 5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

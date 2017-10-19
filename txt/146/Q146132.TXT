@@ -1,0 +1,64 @@
+DOCUMENT:Q146132  24-MAY-2001  [schedplus]
+TITLE   :Meeting Wizard: Resource Displayed in Where Field
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Meeting Wizard to reserve a resource, or a conference room and
+a resource, this information is displayed in the "Where:" field of the meeting
+request message itself.
+
+
+MORE INFORMATION
+================
+
+The mail code is independent of the Meeting Wizard. The mail UI code follows
+some simple rules for what to do with the "where" label (it is only a label and
+has no other meaning). If "Where:" is empty, the code scans the recipient list
+to search for a resource. The first one it finds, it puts in the where box; this
+only occurs if the "Where:" field is empty.
+
+The problem arises because there is no distinction between "Resources" and
+"Locations." They are merged into the BCC well from the Appointment Wizard. They
+are only different in the context of display within the appointment wizard.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 7.0 of Microsoft
+Schedule+. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 4.00 mtg wiz
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : :7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

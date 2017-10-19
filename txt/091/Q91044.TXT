@@ -1,0 +1,55 @@
+DOCUMENT:Q91044  08-NOV-1999  [pcmail]
+TITLE   :PC WFW: Invalid Postoffice & Network Names for Workgroups
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Windows version 3.1 for Workgroups to create a workgroup
+postoffice, Windows for Workgroups uses the values you assign to your computer
+name and workgroup for your postoffice name and network name. Some characters
+that are valid in the computer name and workgroup boxes are not valid for the
+Postoffice and Network name fields in upgrading to the version 3.0 Microsoft
+Mail for PC Networks postoffice. If you use an invalid character, you are
+prompted to enter a new name for the corresponding field. Note that in this
+case, your mail addresses will be invalidated. The invalid characters are:
+
+   ~ ` ! @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; " ' < , > . ? /
+
+You should not change your computer name and workgroup name as part of the
+upgrade procedure, as this will invalidate all mail addresses using the old
+names. However, you can make this change by selecting Password from the
+Configure menu in ADMIN.EXE.
+
+Additional query words: 3.00 3.10 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q67714  22-DEC-1999  [win16sdk]
+TITLE   :DOC: CreateCompatibleBitmap() Parameters Documented Wrong
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) for Windows versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The nWidth and nHeight parameters to the CreateCompatibleBitmap function are
+incorrectly documented on page 4-37 in the "Microsoft Windows Software
+Development Kit Reference Volume 1" for version 3.0, and on page 79 of the
+"Microsoft Windows Software Development Kit Programmer's Reference, Volume 2:
+Functions" for version 3.1.
+
+The nWidth and nHeight parameters are expressed in pixels, not bits.
+
+The documentation should read:
+
+   Parameter     Type/Description
+   ---------     ----------------
+   hDC           HDC   Identifies the device context.
+
+   nWidth        int   Specifies the width (in pixels) of the bitmap.
+
+   nHeight       int   Specifies the height (in pixels) of the bitmap.
+
+Additional query words: 3.00 3.10 docerr
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

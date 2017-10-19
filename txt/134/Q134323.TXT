@@ -1,0 +1,55 @@
+DOCUMENT:Q134323  30-JUL-2001  [sms]
+TITLE   :Setting SMS Shared Application's Default Working Directory
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPGC smspgc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The default directory for a shared application run under Systems Management
+Server cannot be set through the Administrator Tool for the application. It is,
+however, possible to set a specific DOS environment variable which can be used
+to point the application to a working directory.
+
+To do this, set the SMS_WORKING_DIR to a specific path for the application. For
+example, add the following to your AUTOEXEC.BAT file and restart the computer:
+
+   " set SMS_WORKING_DIR=c:\word\docs " (without the quotation marks)
+
+Program Group Control (PGC) makes this path the current working directory when
+PGC launches the shared application. When the user selects Open from the
+application's File menu, the files in the c:\word\docs directory appears by
+default.
+
+
+Additional query words: prodsms 1.00 1.10 1.20
+
+======================================================================
+Keywords          : kbnetwork kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

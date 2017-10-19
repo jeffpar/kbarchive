@@ -1,0 +1,68 @@
+DOCUMENT:Q161340  09-AUG-2001  [winnt]
+TITLE   :RAS Error 692 with IBM MWave Modem and Logon Using DUN
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbui kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log onto a workstation configured with an IBM MWave Modem, and are
+using the Logon Using Dial-up Networking feature in Windows NT 4.0, you receive
+the following error message:
+
+   Error 692: Hardware failure in port or attached device.
+
+CAUSE
+=====
+
+The IBM MWave Modem is not initialized until the Mwmwin.exe file is executed.
+This file is executed when you log on to Windows NT 4.0.
+
+RESOLUTION
+==========
+
+Obtain updated MWave drivers from IBM.
+
+As a workaround, log on to Windows NT using a local account, then log off. This
+will allow Windows NT to correctly use the Logon Using Dial-Up Networking
+option.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: dun
+
+======================================================================
+Keywords          : kb3rdparty kbui kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

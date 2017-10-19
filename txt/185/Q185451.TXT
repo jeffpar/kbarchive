@@ -1,0 +1,311 @@
+DOCUMENT:Q185451  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Display Descriptions of Menu Items When Highlighted
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAPI kbMenu kbVBp500 kbVBp600 kbOSWin32s
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some applications, such as the Windows Explorer, provide a description of each
+menu item in the status bar when the menu item is highlighted. This
+functionality provides the user more information about what each menu command
+does before it is activated.
+
+This article shows you how to use several of the Windows API functions to include
+this functionality in your Visual Basic application.
+
+MORE INFORMATION
+================
+
+The following steps demonstrate how to create a sample application that provides
+descriptions for menu items when the menu items are highlighted. To achieve this
+functionality, you must use a concept known as subclassing to allow you to
+detect when the WM_MENUSELECT message occurs. This message occurs whenever a
+menu selection is either highlighted or not highlighted.
+
+For more information on subclassing, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q168795 HOWTO: Hook Into a Window's Messages Using AddressOf
+
+NOTE: Failure to unhook a window before its destruction results in application
+errors, Invalid Page Faults, or data loss. This occurs because the new
+WindowProc function that is being pointed to no longer exists, but the window
+has not been notified of the change. Always unhook the subclassed window upon
+unloading the subclassed form or exiting the application.
+
+This is especially important when you use Visual Basic to debug an application
+that includes subclassing. Pressing the End button or selecting End from the Run
+menu without unhooking causes an Invalid Page Fault and closes Microsoft Visual
+Basic.
+
+Steps to Create Sample Application
+----------------------------------
+
+1. Create a new Standard EXE project.
+
+2. Create the following menu on Form1 using the Menu Editor:
+
+   Menu Caption        Menu Name
+   -----------        ---------
+
+   File               mnuFile
+  New              mnuNew
+  Open             mnuOpen
+  Close            mnuClose
+
+   Edit               mnuEdit
+  Cut              mnuCut
+  Copy             mnuCopy
+  Paste            mnuPaste
+     Normal        mnuPasteNormal
+     Special       mnuPasteSpecial
+
+   NOTE: You should create the menu captions exactly as shown. If you choose to
+   add accelerators, you need to modify the following code to reflect these
+   changes to your captions.
+
+3. Paste the following code into the code window for Form1:
+
+   Option Explicit
+
+   Private Sub Form_Load()
+       'Store a handle to this form.
+       gHW = Me.hwnd
+
+       'Call this Sub procedure to begin hooking into messages.
+       Hook
+   End Sub
+
+   Private Sub Form_Unload(Cancel As Integer)
+       'Call this Sub procedure to cease hooking into messages.
+       Unhook
+   End Sub
+
+4. Add a standard module to the project.
+
+5. Paste the following code into the module:
+
+   Option Explicit
+
+   Private Declare Function CallWindowProc Lib "user32" _
+      Alias "CallWindowProcA" (ByVal lpPrevWndFunc As Long, _
+      ByVal hwnd As Long, ByVal Msg As Long, _
+      ByVal wParam As Long, ByVal lParam As Long) As Long
+
+   Private Declare Function SetWindowLong Lib "user32" _
+      Alias "SetWindowLongA" (ByVal hwnd As Long, _
+      ByVal nIndex As Long, ByVal dwNewLong As Long) As Long
+
+   Private Declare Function GetMenu Lib "user32" _
+     (ByVal hwnd As Long) As Long
+
+   Private Declare Function GetSubMenu Lib "user32" _
+     (ByVal hMenu As Long, ByVal nPos As Long) As Long
+
+   Private Declare Function GetMenuItemCount Lib "user32" _
+     (ByVal hMenu As Long) As Long
+
+   Private Declare Function GetMenuState Lib "user32" _
+     (ByVal hMenu As Long, ByVal wID As Long, _
+      ByVal wFlags As Long) As Long
+
+   Private Declare Function GetMenuString Lib "user32" _
+      Alias "GetMenuStringA" (ByVal hMenu As Long, _
+      ByVal wIDItem As Long, ByVal lpString As String, _
+      ByVal nMaxCount As Long, ByVal wFlag As Long) As Long
+
+   Private Const MF_BYPOSITION = &H400&
+   Private Const MF_HILITE = &H80&
+   Private Const WM_MENUSELECT = &H11F
+   Private Const GWL_WNDPROC = -4
+
+   Public lpPrevWndProc As Long
+   Public gHW As Long
+
+   Public Sub Hook()
+       'Begin hooking into messages.
+       lpPrevWndProc = SetWindowLong(gHW, GWL_WNDPROC, _
+       AddressOf WindowProc)
+   End Sub
+
+   Public Sub Unhook()
+       'Cease hooking into messages.
+       SetWindowLong gHW, GWL_WNDPROC, lpPrevWndProc
+   End Sub
+
+   Function AnyLit(hSubSubMenu As Long) As Long
+       Dim i As Long
+       Dim MenuCount As Long
+
+       'Get the number of items in the menu.
+       MenuCount = GetMenuItemCount(hSubSubMenu)
+
+       'Loop through the menu items.
+       For i = 0 To MenuCount - 1
+           'Check whether this item is highlighted.
+           If GetMenuState(hSubSubMenu, i, MF_BYPOSITION) And _
+                  MF_HILITE Then
+               AnyLit = True
+               Exit Function
+           End If
+       Next i
+
+       'Return FALSE, no items highlighted.
+       AnyLit = False
+   End Function
+
+   Private Sub WalkSubMenu(hSubMenu As Long)
+       Dim i As Long
+       Dim MenuItems As Long
+       Dim hSubSubMenu As Long
+       Dim buffer As String
+       Dim result As Long
+
+       'Get the count of menu items in this menu.
+       MenuItems = GetMenuItemCount(hSubMenu)
+
+       'Loop through all the items on the menu.
+       For i = 0 To MenuItems - 1
+           'Determine whether this item is highlighted.
+           If GetMenuState(hSubMenu, i, MF_BYPOSITION) And _
+                  MF_HILITE Then
+               'Attempt to get a submenu for each menu item.
+               hSubSubMenu = GetSubMenu(hSubMenu, i)
+
+               'Check for a submenu with something selected on it.
+               If hSubSubMenu And AnyLit(hSubSubMenu) Then
+                   'There is a submenu with a selection so walk it.
+                   WalkSubMenu hSubSubMenu
+               Else    'This is it.
+                   'Set buffer size.
+                   buffer = Space(255)
+
+                   'Call the API to get the caption for the menu item.
+                   result = GetMenuString(hSubMenu, i, buffer, _
+                      Len(buffer), MF_BYPOSITION)
+
+                   'Trim the buffer of extra characters.
+                   buffer = Left$(buffer, result)
+
+                   'Set the caption of the form to a description of the
+                   'menu item.
+                   Form1.Caption = GetDescription(buffer)
+
+                   'Exit this Sub procedure.
+                   Exit Sub
+               End If
+           End If
+       Next i
+   End Sub
+
+   Public Sub FindHilite(TheForm As Form)
+       Dim hMenu As Long
+       Dim hSubMenu As Long
+       Dim i As Long
+       Dim MenuCount As Long
+
+       'Clear any previous description.
+       Form1.Caption = ""
+
+       'Get the menu handle.
+       hMenu = GetMenu(TheForm.hwnd)
+
+       'Check to see if there is no menu.
+       If hMenu <> 0 Then
+           'Get the number of top-level menus.
+           MenuCount = GetMenuItemCount(hMenu)
+
+           'Enumerate through all top-level menus.
+           For i = 0 To MenuCount - 1
+               'Ignore top-level menus not currently selected.
+               If GetMenuState(hMenu, i, MF_BYPOSITION) And _
+                      MF_HILITE Then
+                   'Get a handle to the submenu.
+                   hSubMenu = GetSubMenu(hMenu, i)
+
+                   'Walk the submenu.
+                   WalkSubMenu hSubMenu
+               End If
+           Next i
+       End If
+   End Sub
+
+   Private Function GetDescription(MenuCaption As String) As String
+       'Determine the description of the menu item.
+       Select Case MenuCaption
+           Case "New"
+               GetDescription = "Creates a new document"
+           Case "Open"
+               GetDescription = "Opens a Document"
+           Case "Close"
+               GetDescription = "Closes Document"
+           Case "Cut"
+               GetDescription = "Cuts Selection to Clipboard"
+           Case "Copy"
+               GetDescription = "Copies Selection to Clipboard"
+           Case "Paste"
+               GetDescription = "Pastes Contents of Clipboard"
+           Case "Normal"
+               GetDescription = "Regular Paste"
+           Case "Special"
+               GetDescription = "Special Paste"
+           Case Else
+               GetDescription = ""
+       End Select
+   End Function
+
+   Function WindowProc(ByVal hw As Long, ByVal uMsg As Long, _
+          ByVal wParam As Long, ByVal lParam As Long) As Long
+
+       'Check for a menu selection message.
+       If uMsg = WM_MENUSELECT Then
+           FindHilite Form1
+       End If
+
+       'Pass the message to Windows for processing.
+       WindowProc = CallWindowProc(lpPrevWndProc, hw, uMsg, _
+          wParam, lParam)
+   End Function
+
+6. Click Start or click the F5 key to start the program. Open various menu items
+   and observe the changes that occur to the form's caption.
+
+Additional query words: Hook Subclass
+
+======================================================================
+Keywords          : kbAPI kbMenu kbVBp500 kbVBp600 kbOSWin32s 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

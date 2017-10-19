@@ -1,0 +1,87 @@
+DOCUMENT:Q108349  05-NOV-1999  [fortran]
+TITLE   :BUG: Console I/O Problem; CR/LF Skipped After File Open
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, versions 1.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A console application that opens a file with a unit specifier of 5 may cause
+subsequent screen output to appear on the same line (without carriage return and
+linefeed characters).
+
+CAUSE
+=====
+
+This problem seems to occur only when the application writes to the screen
+before opening unit 5.
+
+RESOLUTION
+==========
+
+If unit number 5 must be used for an external file, OPEN that file before
+performing any WRITE statements to the screen. Running the program with MORE
+piping (for example, | MORE) to display output one screen at a time also
+alleviates the error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+32 for Windows NT, version 1.0. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following sample program demonstrates the problem:
+
+Sample Code
+-----------
+
+   C Compile options required: none
+         character*12 buffer
+         do i=5, 7
+            write(buffer,'(i5,a)') i,'.dat'
+            write(*,*) 'Filename is: ', buffer
+            open(i,file=buffer)
+         end do
+         end
+
+Output
+------
+
+Filename is:     5.dat   Filename is:     6.dat
+Filename is:     7.dat
+
+Additional query words: 1.00 4.00 handle
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT kbFORTRANPower32400NT
+Version           : :1.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

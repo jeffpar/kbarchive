@@ -1,0 +1,77 @@
+DOCUMENT:Q317208  06-AUG-2002  [iis]
+TITLE   :Cannot Download Microsoft Office Documents from IIS Server
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.1 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Explorer version 6 for Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to download Microsoft Office documents from a server running
+Internet Information Services (IIS) to a client using Microsoft Internet
+Explorer version 6, you may receive the following error messages:
+
+   Internet Explorer cannot download <File.doc> from <ServerName>.
+
+   Internet Explorer was not able to open this Internet Site. The requested site
+   is either unavailable or cannot be found. Please try again later."
+
+Note:This problem is not reproducible with any other known file types.
+
+CAUSE
+=====
+
+This behavior occurs when the Content Expiration option in the Hypertext
+Transfer Protocol (HTTP) Headers, within IIS, is set to Expire Immediately.
+Internet Explorer must save any Microsoft Office file to the local cache
+directory, and then use the associated application to open the file. If you set
+Content Expiration to Expire Immediately, the Office documents are not cached
+locally and the operation fails.
+
+RESOLUTION
+==========
+
+When you configure the HTTP Headers within IIS for the Virtual Directory (or for
+the Directory) that contains Office documents, do not set Content Expiration to
+Expire Immediately.
+
+MORE INFORMATION
+================
+
+This is a known cause of slow performance on a Web server running IIS.
+This is not a best practice.
+
+Additional query words: iis 5 internet explorer 6 content expiration expire immediate immediately
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbOSWin2000 kbiisSearch kbIEsearch kbIE600Search kbiis500 kbIE2000Search kbIE600Win2000 kbiis510
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

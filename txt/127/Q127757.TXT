@@ -1,0 +1,83 @@
+DOCUMENT:Q127757  04-MAY-1999  [automap]
+TITLE   :Automap Streets: Recovering Maps from the Backup Disk
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:1.0,1.01
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+1.00 1.01
+WINDOWS
+kbsetup kbusage kbprb kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, versions 1.0, 1.01 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you unlock Automap street maps, you have the option to back up purchase
+details to a floppy disk. Then, if you need to reinstall Automap or recover your
+list of purchased maps, you can use the Recover functionality of the Install
+program to restore the purchase details from the backup floppy.
+
+Ordinarily, the Recover button should appear on initial screen of the Install
+program. Sometimes, however, that button is either not available (dimmed) or
+does not appear. In those cases you can start the Recover process manually.
+
+MORE INFORMATION
+================
+
+To recover your unlocked maps using your backup disk, do the following:
+
+1. Reinstall Automap as though it were a first-time installation by choosing Run
+   from the File menu in Program Manager.
+
+   Type the following in the Command Line box:
+
+   "<d>:\install" (without the quotation marks)
+
+   where <d> is the letter of your CD-ROM drive. Choose OK.
+
+2. Follow the screen instructions to install the program.
+
+3. Exit Install and return to Program Manager.
+
+4. From the File menu, choose Run. In the Command Line box, type the following
+   and choose OK
+
+   "<d>:\install recover" (without the quotation marks)
+
+   where <d> is the letter of your CD-ROM drive.
+
+5. The Install program starts and immediately asks for the backup disk. Insert
+   the disk into the appropriate floppy disk drive and press ENTER.
+
+6. When Recover completes, choose Exit.
+
+Additional query words: 1.00 1.01 kbhowto reference streets disabled greyed-out out gray
+
+======================================================================
+Keywords          : win31 
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets100 kbAutomapStreets101
+Version           : WINDOWS:1.0,1.01
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,91 @@
+DOCUMENT:Q189111  11-JAN-2001  [vbwin]
+TITLE   :INFO: What Additional Components Are Installed with VB 6.0?
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Visual Basic 6.0 is installed upon a development machine, several other
+components are installed as well. This articles lists the additional components
+installed along with Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+Visual Basic 6.0 requires a few additional system components in order to work on
+a development machine. The components installed include:
+
+   Microsoft Internet Explorer 4.1 SP1
+   Updated Java Virtual Machine
+   DCOM98
+   Visual Basic 6.0 Core Files
+   Additional Visual Basic 6.0 Features Selected (optional)
+   Microsoft Developer's Network (optional)
+   Server Components (optional)
+
+OPTIONAL COMPONENTS
+-------------------
+
+Additional Visual Basic 6.0 Features
+------------------------------------
+
+These are extra components selected to be installed along side the Core Files.
+You can select what you would like installed with a "Custom" setup. A Typical
+setup installs all the optional features except Graphics, ISAM drivers, and some
+ODBC drivers.
+
+Microsoft Developer's Network (MSDN)
+------------------------------------
+
+If you wish to access Online Help and documentation, you must install MSDN.
+Visual Basic 6.0's documentation is now a part of the Microsoft Developer's
+Network.
+
+Server Components
+-----------------
+
+There are numerous tools that ship with the Professional and Enterprise Edition
+of Visual Basic 6.0. Server Setup lets you choose additional tools to install.
+
+RESOLUTION
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q187948 : Server Installation With Visual Studio 6.0
+
+Additional query words: kbSetup kbVBp600
+
+======================================================================
+Keywords          : kbsetup kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

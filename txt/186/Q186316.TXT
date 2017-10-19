@@ -1,0 +1,84 @@
+DOCUMENT:Q186316  08-DEC-2000  [accother]
+TITLE   :ODE97: ODE License Information Missing in ODE About Box
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+When you open the About Microsoft ODE Tools dialog box, information that
+includes the Product ID number as well as the name and organization to which the
+product is licensed has disappeared.
+
+CAUSE
+=====
+
+You have installed the Microsoft Office 97 Developer Edition Service Pack 2
+(ODESP2).
+
+RESOLUTION
+==========
+
+Follow these steps to reset the information that appears under "This product is
+licensed to" in the About box:
+
+1. Insert the Microsoft Office 97 Developer Edition compact disk into your
+   CD-ROM drive.
+
+2. Click Start, and then click Run.
+
+3. In the Open box, type
+
+   "<CD-ROM Drive>:\odetools\setup /y" (without the quotation marks)
+
+   where <CD-ROM Drive> is the drive letter for your CD-ROM drive. For
+   example, if your CD-ROM drive letter is D, type:
+
+   "D:\odetools\setup /y" (without the quotation marks)
+
+   Click OK.
+
+4. In the Installation Maintenance dialog box, click Reinstall.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 97 Developer
+Edition Tools.
+
+Additional query words: missing gone not there
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

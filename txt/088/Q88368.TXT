@@ -1,0 +1,64 @@
+DOCUMENT:Q88368  31-OCT-1999  [pcmail]
+TITLE   :PC Win: Viewing Attachment Requires Association
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to view an attachment in version 3.0 of Microsoft Mail for
+Windows, the following error may occur:
+
+   The application for the attached file <filename> (or one of its
+   components) could not be found.
+
+RESOLUTION
+==========
+
+To associate the attached file with the originating application, use the
+Association command on the Windows File Manager File menu. The Associate command
+assigns and associates a specific file extension to a particular application. If
+there is no extension or no copy of the originating application, there can be no
+association.
+
+To Associate a File
+-------------------
+
+1. From the File Manager File menu, choose Associate.
+
+2. Specify the file extension in the File With Extension: box.
+
+3. Specify the application in the Associate With: box. You can use the Browse
+   feature to quickly find the application's executable file.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

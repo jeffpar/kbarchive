@@ -1,0 +1,71 @@
+DOCUMENT:Q153487  31-MAR-1999  [exchange]
+TITLE   :XFOR: Exchange Proxy Addresses Not Deleted on cc:Mail POs
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you apply a filter of the type "Only import directory entries of these
+formats", deleted Microsoft Exchange users are not removed from the cc:Mail
+postoffice after directory synchronization (dir-sync).
+
+CAUSE
+=====
+
+When you apply the filter, the cc:Mail Connector applies the filter to Microsoft
+Exchange addresses as well as cc:Mail addresses.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+ - Include the Microsoft Exchange cc:Mail site proxy address in the filter
+
+   For example: * at SITE1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0 This problem was corrected in the latest Microsoft Exchange 5.0
+Server U.S. Service Pack. For information on obtaining the service pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+
+Additional query words: dirsync dirsynch
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

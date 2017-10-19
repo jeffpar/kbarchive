@@ -1,0 +1,68 @@
+DOCUMENT:Q90793  06-NOV-1999  [win16sdk]
+TITLE   :PRB: _MSSETUP.EXE Disappears
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+_MSSETUP.EXE disappears from the default directory; in fact, it deletes itself.
+
+CAUSE
+=====
+
+This is by design. _MSSETUP.EXE is invoked when the MSSetup script file calls
+ExitExecRestart(). This function exits Windows and calls _MSSETUP.EXE to read
+any commands that have been placed in _MSSETUP.BAT. (Commands are placed in
+_MSSETUP.BAT when a file in the copy list is specified as a system file that is
+in use during the Windows portion of the MSSetup program.) As part of the
+cleanup before returning to Windows, _MSSETUP.EXE deletes itself.
+
+RESOLUTION
+==========
+
+If you run _MSSETUP.EXE from the MS-DOS command line or from the File Manager,
+it looks for _MSSETUP.BAT, does not find it, and then deletes itself. One way to
+workaround this is to compress _MSSETUP.EXE so that it cannot be executed on its
+own.
+
+MORE INFORMATION
+================
+
+NOTE: The Setup Toolkit places commands in the _MSSETUP.BAT file to copy files
+that are in use during the execution of the Windows portion of the Setup
+program. These files are specified in MSSetup's file copy list. For example, if
+a copy list includes an update to the SHELL.DLL file, Setup cannot update the
+SHELL file while Windows is running.
+
+Additional query words: 3.10 no32bit MSSetup tool kit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q156471  12-JUN-2001  [homekids]
+TITLE   :Writer 2: Print Jobs May Spool to 10+ MB Files
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+2.00
+WINDOWS
+kbprint kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Creative Writer 2, print jobs may spool to very large files. This can slow
+down printing, or even halt the printing process entirely.
+
+RESOLUTION
+==========
+
+There are several factors to consider in the spooling of a print job:
+
+ - Decrease printer dpi. The dpi of the printer affects the complexity, and
+   therefore size of the spooled file.
+
+ - Decrease color depth. The video driver in use affects complexity; higher
+   color depths increase spool files.
+
+ - Decrease complexity. Multiple stickers, backgrounds, and/or borders increase
+   the complexity of a document spool file.
+
+ - Increase free hard disk space. Hard disk space can be consumed by spool
+   files. On machines with little free hard disk space, more complex documents
+   may not print.
+
+Creative Writer 2 creates very large spool files by design. Use the steps
+outlined above to avoid difficulties when printing.
+
+Additional query words: 2.00 kids mskids artist maggie max writer cw2 cw2.0
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbCreativeWriter200
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

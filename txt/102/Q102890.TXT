@@ -1,0 +1,77 @@
+DOCUMENT:Q102890  05-FEB-2000  [foxpro]
+TITLE   :How to Calculate Running Totals in a BROWSE Command
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5; WINDOWS:2.5,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, version 2.5 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can display running totals from database fields, or running totals for a
+particular control break, by using calculated fields in a BROWSE command.
+
+The following example uses the CUSTOMER database and displays the running total
+of year-to-date purchases (YTDPURCH field) using the file and field names in
+FoxPro 2.x:
+
+      SELECT 0
+      USE CUSTOMER
+      BROWSE FIELDS CNO, YTDPURCH, RUNNINGYTD=RUNNINGSUM()
+    
+      PROCEDURE RUNNINGSUM
+      m.saverec = RECNO()
+      GO TOP
+      SUM YTDPURCH WHILE RECNO() <= m.saverec TO m.total
+      GO m.saverec
+      RETURN m.total
+
+The same concept can also be applied to display running totals for a particular
+control break. For example, if we wanted to calculate the running total of
+year-to-date purchases by company number (CNO), and have an index tag on CNO,
+the following code could be used:
+
+      SELECT 0
+      USE CUSTOMER
+      SET ORDER TO TAG CNO
+      BROWSE FIELDS CNO, YTDPURCH, RUNNINGSUM = CNOTOT(CNO)
+    
+      FUNCTION CNOTOT
+      PARAMETERS mkey
+      m.saverec = RECNO()
+      SEEK mkey
+      SUM YTDPURCH WHILE CNO=mkey .AND. RECNO()<=m.saverec to m.total
+      GO m.saverec
+      RETURN m.total
+
+Additional query words: VFoxWin FoxDos FoxWin 2.00, 2.50, BROWSE, CALCULATE
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250 kbVFP300
+Version           : MS-DOS:2.0,2.5; WINDOWS:2.5,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

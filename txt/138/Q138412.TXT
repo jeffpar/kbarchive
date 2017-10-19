@@ -1,0 +1,81 @@
+DOCUMENT:Q138412  30-JUL-2001  [visualc]
+TITLE   :FIX: AppWiz Samples Fail to Build from Command Line
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2
+OPER/SYS:
+KEYWORDS:kbtool kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to build the CUSTOMWZ, HIERWIZ, and LOGOWIZ samples from the command
+line will fail, giving errors like these:
+
+   
+
+   rc.exe /l 0x409 /fo".\Debug/customwz.res" /d "NDEBUG" /d "_PSEUDO_DEBUG"
+ /d "_AFXDLL" .\customwz.rc
+ 
+        link.exe @C:\temp\nma00116.
+        bscmake.exe @C:\temp\nmb00116.
+
+   NMAKE : fatal error U1073: don't know how to make '"\bin\ide\.awx"'
+   Stop.
+
+CAUSE
+=====
+
+The TargetName and MSDevDir macros have not been assigned values.
+
+RESOLUTION
+==========
+
+Define the macros in NMAKE's command line. Example,
+
+   NMAKE /f CUSTOMWZ.MAK MSDevDir=C:\MSDEV TargetName=customwz<Enter>
+
+NOTE: This example will default to the Pseudo-Debug target.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+The samples all build without any errors when you build them from within the
+Developer Studio using the corresponding project workspace (.mdp) files.
+
+Additional query words: kbVC400bug kbvc500fix AppWizard MSDEV NmakeIss
+
+======================================================================
+Keywords          : kbtool kbVC500fix 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420
+Version           : :4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

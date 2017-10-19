@@ -1,0 +1,81 @@
+DOCUMENT:Q235762  11-JUL-1999  [sms]
+TITLE   :SMS: NT_Logon_Server_Manager Enumerates All Shares on DCs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbServer kbsms200 kbsms200bug kbMaintMan
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During each maintenance cycle of Systems Management Server 2.0, the Windows NT
+Logon Server Manager component attempts to enumerate all of the shares on
+Windows NT domain controllers. This can consume available network bandwidth on
+slow links if any of these shares are not available.
+
+An example would be servers that have empty but shared CD-ROM drives or
+jukeboxes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+You may find the following entries in the Logon Server Manager log:
+
+   Begin service enum on server TESTNTDC1 SMS_NT_LOGON_SERVER_MANAGER 3/27/99
+   10:49:58 PM 785 (0x311)
+   Completed service enum on server TESTNTDC1 SMS_NT_LOGON_SERVER_MANAGER 3/27/99
+   10:49:58 PM 953 (0x3B9)
+   Can't determine file system for share TEMP1$ on server TESTNTDC2;
+   GetVolumeInformation GetLastError 2 SMS_NT_LOGON_SERVER_MANAGER 3/27/99
+   10:49:59 PM 808 (0x328)
+   Can't determine file system for share TEMP10$ on server TESTNTDC2;
+   GetVolumeInformation GetLastError 2 SMS_NT_LOGON_SERVER_MANAGER 3/27/99
+   10:49:59 PM 808 (0x328)
+   Can't determine file system for share TEMP11$ on server TESTNTDC2;
+   GetVolumeInformation GetLastError 2 SMS_NT_LOGON_SERVER_MANAGER 3/27/99
+   10:50:00 PM 808 (0x328)
+   Completed service enum on server TESTNTDC2 SMS_NT_LOGON_SERVER_MANAGER 3/27/99
+   10:50:00 PM 803 (0x323)
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbServer kbsms200 kbsms200bug kbMaintMan 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

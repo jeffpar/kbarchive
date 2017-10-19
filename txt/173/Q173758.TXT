@@ -1,0 +1,45 @@
+DOCUMENT:Q173758  09-AUG-1999  [foxpro]
+TITLE   :FAQ: How Do I Obtain a Copy of Visual FoxPro 5.0a?
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0a
+OPER/SYS:
+KEYWORDS:kbvfpkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0a 
+-------------------------------------------------------------------------------
+
+Q: How do I obtain a copy of Visual FoxPro 5.0a?
+
+A. If you are experiencing a specific problem with Visual FoxPro 5.0, you
+should call Microsoft Technical Support (MTS) at (425) 635-7191. Customers
+who report bugs that have been addressed in 5.0a will receive the update
+free of charge.  Customers who report valid bugs are not charged for
+technical support.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbfaq
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500a
+Version           : WINDOWS:5.0a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

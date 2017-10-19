@@ -1,0 +1,78 @@
+DOCUMENT:Q196838  02-MAY-1999  [exchange]
+TITLE   :XFOR: GroupWise Migration Event ID 4012
+PRODUCT :Microsoft Exchange
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you migrate GroupWise users into Exchange Server, you may receive the
+following error message:
+
+   One GroupWise user did not grant sufficient access rights to the
+   migration account.
+
+   The user name has been recorded in the application event log.
+
+When you review the application log, you find the following:
+
+   Event ID: 4012
+   Source:   MSExchangeMig
+   Type:     Error
+   Category: None
+
+   Description:
+   The following GroupWise users have not granted sufficient access rights
+   to the migration account.
+
+CAUSE
+=====
+
+The account being used to perform the migration does not have access to parse
+the migrated private mail messages on the Windows NT Server computer.
+
+WORKAROUND
+==========
+
+The account being used to migrate users must have permissions to access private
+messages. During the migration wizard configuration, a dialog box appears
+requiring a user ID. Enter the account that has permissions to the users'
+private messages, or enter the user ID of the actual migrated user.
+
+MORE INFORMATION
+================
+
+Documentation about migrating from Novell GroupWise can be found on the Exchange
+Server 5.0 CD under Migrate\DOCS\Gwise.doc. Chapter 10, page 212, describes the
+prerequisites of migrating GroupWise users.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

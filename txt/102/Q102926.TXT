@@ -1,0 +1,73 @@
+DOCUMENT:Q102926  12-NOV-1999  [pcmail]
+TITLE   :PC DirSync: Invalid Import Filename Does Not Create Log
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Import (IMPORT.EXE) utility included with versions 3.0 and 3.0b of Microsoft
+Mail for PC Networks includes an option to create a log of the Import process.
+If you specify an invalid path and filename, the file is not created and no
+error is given.
+
+CAUSE
+=====
+
+If you do not specify a filename, the Import utility will default to IMPORT.LOG.
+The output file is placed in the LOG directory of the Mail database. You can
+specify a directory and filename; however, if the specified directory is
+invalid, the IMPORT.EXE utility will run normally but will not create the log
+file and will not report an error.
+
+MORE INFORMATION
+================
+
+Sample Command Lines for IMPORT.EXE
+-----------------------------------
+
+Correct:
+
+   import admin -p<password> -f<filename> -l
+   import admin -p<password> -f<filename> -lm:\log\import.log
+   import admin -p<password> -f<filename> -lc:\import.log
+
+Incorrect:
+
+   import admin -p<password> -f<filename> -lm:\lgo\import.log
+
+Because LGO is not typically a valid directory in the Microsoft Mail database,
+this incorrect command line will fail.
+
+
+Additional query words: 3.00 3.00b export rebuild dirsync dir-sync directory synchronization
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

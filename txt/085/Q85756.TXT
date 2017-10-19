@@ -1,0 +1,67 @@
+DOCUMENT:Q85756  01-NOV-1999  [win95x]
+TITLE   :ALR Computers Do Not Show Valid BIOS Dates
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+According to Advance Logic Research (ALR) technical support, the BIOS dates used
+in ALR computers do not reflect the current BIOS version being used. For
+example, a BIOS may have the date 1988, but the BIOS version is version 1.13
+which is a 1992 BIOS.
+
+CAUSE
+=====
+
+When ALR changes a ROM BIOS, the date of the original BIOS remains intact; only
+the version number changes. When using Microsoft Diagnostic utility (MSD) or
+DEBUG.COM to find the date of the BIOS, you may not be finding valid
+information.
+
+RESOLUTION
+==========
+
+To find out current BIOS versions for ALR computers, contact ALR technical
+support.
+
+MORE INFORMATION
+================
+
+For more information contact ALR.
+
+The ALR products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3.10 3.1 3.11 phoenix bois fenix
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

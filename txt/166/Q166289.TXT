@@ -1,0 +1,66 @@
+DOCUMENT:Q166289  10-AUG-2001  [winnt]
+TITLE   :Cannot Remove or Reinstall Windows Messaging
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0 97
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to remove Windows Messaging by clearing the Windows
+Messaging check box on the Windows NT Setup tab in the Add/Remove Programs tool
+in Control Panel. When you try to clear the check box, your computer beeps.
+
+CAUSE
+=====
+
+This behavior occurs when Microsoft Outlook has been installed after Windows
+Messaging was installed. This occurs so that Outlook cannot be made
+nonfunctional by the removal of another program.
+
+RESOLUTION
+==========
+
+To remove Windows Messaging, you must first remove Outlook. After you remove
+Outlook and restart the computer, you can remove Windows Messaging.
+
+If you want to reinstall Windows Messaging, you should do so before reinstalling
+Outlook.
+
+MORE INFORMATION
+================
+
+Although you cannot remove Windows Messaging, you can still add and remove
+information services. To do so, click Windows Messaging on the Windows NT Setup
+tab in the Add/Remove Programs tool, and then click Details.
+
+Additional query words: uninstall
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : 4.0 97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

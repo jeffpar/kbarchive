@@ -1,0 +1,69 @@
+DOCUMENT:Q189234  26-MAY-1999  [homegame]
+TITLE   :Hellbender: Pressing ALT+TAB Does Not Switch Tasks Properly
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to switch to the Windows desktop or another program by pressing
+ALT+TAB, you may experience one of the following symptoms:
+
+ - Hellbender may not be minimized and the Windows desktop or the other program
+   may not be displayed.
+ - The other program or the Windows desktop may not be displayed properly.
+ - A portion of the screen may be continue to be covered by Hellbender.
+
+CAUSE
+=====
+
+This behavior can occur because Hellbender changes the display resolution when
+you start the game. This resolution change may prevent other programs or the
+Windows desktop from being displayed properly when you switch tasks from
+Hellbender.
+
+RESOLUTION
+==========
+
+To resolve this issue, press the F4 key until Hellbender is displayed on the
+screen, and then press ALT+TAB to switch to another program or the Windows
+desktop.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Hellbender for
+Windows, version 1.0.
+
+Additional query words: hell bender hb corner right left bottom top kbimu homegame msgame
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu msgame 
+Technology        : kbGamesSearch kbHellBender
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

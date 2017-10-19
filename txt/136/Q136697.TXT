@@ -1,0 +1,60 @@
+DOCUMENT:Q136697  15-FEB-2000  [foxpro]
+TITLE   :How to Set Page Breaks in Visual FoxPro Reports
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page breaks provide a way to organize your report into separate sections. You
+can create page breaks in a report by grouping the data. Once this is done, page
+breaks can be added at the end of each group. Page numbering can either continue
+or be reset each time a group changes. There is virtually no limit to the number
+of groups you can add to your report.
+
+MORE INFORMATION
+================
+
+In design mode, you can gain access to the grouping dialog box in two ways, by
+using the menu or by clicking the right mouse button (right-click). The grouping
+dialog box has a check box that allows you to introduce page breaks after each
+group. Each grouping level of the report has this capability.
+
+For example, the Order report in the TasTrade database is grouped on order
+number. The option to start a new page when the group changes means that each
+order is printed on a separate sheet.
+
+For more information on how to set up grouping levels, please see the Visual
+FoxPro "User's Guide," Reports and Labels, Part 4, Chapter 9, page 161.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

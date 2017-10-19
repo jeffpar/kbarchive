@@ -1,0 +1,56 @@
+DOCUMENT:Q307443  27-MAY-2002  [visualc]
+TITLE   :INFO: 16-Bit Version of Visual C++ Articles Are Archived
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,1.52a,1.52b,1.52c
+OPER/SYS:
+KEYWORDS:kbtool kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52, 1.52a, 1.52b, 1.52c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+All Microsoft Knowledge Base articles about the 16-bit version of Visual C++
+have been archived.
+
+MORE INFORMATION
+================
+
+Microsoft has archived all articles about the 16-bit version of Visual C++, and
+has removed these articles from the public knowledge base. Note that this
+includes all articles about versions of Visual C++ that are earlier than version
+2.0.
+
+For information about how to obtain the most current version of Visual C++,
+please visit the following Microsoft Web site:
+
+   http://msdn.microsoft.com/visualc/prodinfo/purchase/default.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbvc150 kbvc100 kbVC151 kbVC152 kbVC152a
+Version           : :1.0,1.5,1.51,1.52,1.52a,1.52b,1.52c
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

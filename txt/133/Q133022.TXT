@@ -1,0 +1,91 @@
+DOCUMENT:Q133022  24-MAR-2000  [foxpro]
+TITLE   :FIX: Spinner Doesn't Inherit Color Props from .vcx Definition
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A spinner definition created in a visual class library will not display the
+inherit color definitions (Forecolor, Backcolor, DisabledForecolor, and so on)
+when instances are created on a form. This occurs whether the Form Designer or
+the AddObject method is used to create the instances even though the color
+definitions are in the Properties Sheet. When the form is run, the spinner
+reverts to a display of the standard color property definitions for a spinner.
+
+WORKAROUND
+==========
+
+Add the following code to the Init method of the spinner definition in the
+visual class library (VCX):
+
+       WITH This
+           .ForeColor = .ForeColor
+           .BackColor = .BackColor
+           .DisabledForeColor = .DisabledForeColor
+           .DisabledBackColor = .DisabledBackColor
+           .SelectedForeColor = .SelectedForeColor
+           .SelectedBackColor = .SelectedBackColor
+       ENDWITH
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual FoxPro 3.0b
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open a new project, and add a new visual class library definition for a
+   spinner.
+
+2. Change the Forecolor and Backcolor properties from the default to any colors
+   desired. Save the definition as Myspinner.
+
+3. Open a new form, and place the Myspinner object from the visual class library
+   onto the form. The spinner object appears with the default colors for a
+   spinner, not those of the class definition, though the correct colors display
+   in the properties list.
+
+You can edit the colors and reset them to the defaults by clicking the right
+mouse button while editing the form, but when the form is run, the colors revert
+to the default colors for a spinner.
+
+Additional query words: VFoxWin fixlist3.00b buglist3.00
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

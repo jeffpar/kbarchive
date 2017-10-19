@@ -1,0 +1,92 @@
+DOCUMENT:Q142493  30-JUL-2001  [visualc]
+TITLE   :BUG: Cannot Cast Double to int for Use in an Array Declarator
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC kbVC500bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), used with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 4.0, 4.1, 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler generates the following error when you type cast a 'const float' or
+'const double' to 'const int' in an array declarator:
+
+   error C2057: expected constant expression
+
+RESOLUTION
+==========
+
+To work around this problem, use a #defined double value in place of a const
+double. See the "Workaround Sample Code" section for an example.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Demonstrate Problem
+----------------------------------
+
+      /* Compile options needed: /c
+      */ 
+
+      const double d_max = 5.55;
+      int arr[(const int) d_max];   // Gives C2057 here
+
+      // The following code also gives the error:
+      const double d_max = 5.55;
+      const int imax = (const int) d_max;
+
+      int arr[imax];   // Gives C2057 here
+
+Workaround One - Sample Code
+----------------------------
+
+      #define D_MAX 5.55
+      const int imax = (const int) D_MAX;
+      int arr[imax];
+
+Workaround Two - Sample Code
+----------------------------
+
+      #define D_MAX 5.55
+      int arr[(const int) D_MAX];
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC500bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :4.0,4.1,4.2,5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

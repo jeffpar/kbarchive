@@ -1,0 +1,61 @@
+DOCUMENT:Q123271  06-NOV-1999  [win16sdk]
+TITLE   :Chinese and Japanese Sorting
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Chinese and Japanese use ideographic characters. There are at least three major
+ways to sort ideographic characters:
+
+ - By strokes within radicals. Characters are sorted by radical first, then by
+   the number of strokes within the radical. Radicals themselves are sorted by
+   the number of strokes, in increasing order.
+
+ - By radicals within strokes. Characters are sorted by number of strokes first,
+   then by the order of the radicals.
+
+ - By pronunciation. Characters are sorted by their pronunciation (phonetic
+   order). Note that many Chinese characters have more than one pronunciation.
+
+Common Kanji dictionaries use all three sorting methods. Currently, most
+applications bypass these issues because sorting tables for Asian code pages are
+extremely large. Most often, the option is to sort by code points, which works
+reasonably well. The lstrcmp() function compares two strings by code points in
+Chinese and Japanese Windows.
+
+Japanese Windows uses SHIFT-JIS, Traditional Chinese Windows uses Big-5, and
+Simplified Chinese Windows use GB as their respective code pages.
+
+Additional query words: fesdk DBCS
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

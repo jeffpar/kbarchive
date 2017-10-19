@@ -1,0 +1,64 @@
+DOCUMENT:Q191804  14-OCT-1999  [msnetwork]
+TITLE   :Cannot Resize MSN Program Viewer at 640 x 480 Screen Resolution
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot resize MSN, The Microsoft Network, Program Viewer if your screen
+resolution is set to 640 x 480 pixels.
+
+MORE INFORMATION
+================
+
+To resize MSN Program Viewer, increase your screen resolution to a setting of
+800 x 600 pixels or greater. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. Move the Display Area or Screen Area slider to the right until the screen
+   resolution shown underneath the slider is 800 x 600 pixels or greater.
+
+5. Click OK, and then click OK again.
+
+6. When you are prompted to keep the new desktop setting, click Yes.
+
+7. Close Control Panel.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbdisplay kbenv kbmsn 
+Technology        : kbMSNSearch kbMSN250
+Version           : WINDOWS:2.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,214 @@
+DOCUMENT:Q174045  06-AUG-2002  [exchange]
+TITLE   :Installing and Using the CleanSweep Tool
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,8.0,8.01,8.02,8.03
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Exchange Client for Windows 95, version 5.0 
+ - Microsoft Outlook 2000 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to obtain, install and use the CleanSweep tool. This
+tool enables you to delete permissions, forms, views, rules, or reply rule
+templates from a Microsoft Exchange Server mailbox. When you delete the rules
+and permissions associated with a folder, all rules and permissions for the
+folder are deleted. This utility is useful for cases where it has been
+determined that Out of Office (OOF) messages or other rules are not functioning
+properly.
+
+MORE INFORMATION
+================
+
+The CleanSweep tool may be obtained from the Microsoft BackOffice Resource Kit,
+Part Two compact disk.
+
+NOTE: The CleanSweep tool does not work with the Microsoft Exchange Windows 95
+client, version 4.0. It is recommended that you use this extension with the
+following clients:
+
+   Microsoft Exchange Windows 95 client, version 5.0
+   Microsoft Exchange Windows NT client, versions 4.0 and 5.0
+   Microsoft Outlook Windows 95 client, versions 8.00, 8.01, 8.02, and 8.03
+   Microsoft Outlook Windows NT client, versions 8.00, 8.01, 8.02, and 8.03
+
+IMPORTANT: In Outlook 98 and 2000, CleanSweep is unable to properly remove the
+following folder attributes:
+
+ - Permissions
+
+ - Rule Reply Templates (The OOF rule is deleted, but the OOF rule is still set
+   to show the user OOF)
+
+Microsoft is researching this problem and will post more information in this
+article when the information becomes available.
+
+How to Install the CleanSweep Tool
+----------------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To install the extension, complete the following steps:
+
+1. From the following subdirectory of the Microsoft BackOffice Resource Kit,
+   Part Two CD-ROM
+
+   Exchange\operating system\platform\Admin\Cleanswp
+
+   Copy the Clnswp32.dll file to your system directory, which is \System32 on
+   Windows NT.
+
+2. Using Registry Editor (RegEdit.exe for Windows 95, or RegEdt32.exe for
+   Windows NT), add the CLNSWP value to the following Registry key:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\Extensions
+
+3. Enter the following text as a String (REG_SZ) value:
+
+   4.0;drive:\path\CLNSWP32.DLL;2
+
+   where drive and path indicate the location in which you copied the file.
+
+   For example, if the file were located in the C:\WINNT\SYSTEM32 directory, you
+   would enter the following text:
+
+   4.0;C:\WINNT\SYSTEM32\CLNSWP32.DLL;2
+
+4. Quit Registry Editor.
+
+5. Restart the Microsoft Exchange or Microsoft Outlook client.
+
+NOTE: You must verify that the Ctl3d32.dll file exists in the System, or System32
+directory. The Ctl3d32.dll file depends upon this file, and it may not be
+installed by default.
+
+If Ctl3d32.dll does not exist, extract it from the original media from which you
+installed the Microsoft Exchange or Microsoft Outlook client.
+
+For Microsoft Exchange 4.0, follow these steps to extract the file:
+
+1. From a Command prompt, navigate to the appropriate directory on the original
+   installation media. If you are using Windows 95, go to the \ENG\WIN95
+   directory. If you are using Window NT or Windows 2000, go to the
+   \ENG\WINNT\I386 directory.
+
+2. Type the following extract command to extract the file:
+
+   extract /a exchng4.cab ctl3d32.dll /L C:\Windows\System
+
+   -or-
+
+   extract /a exchng4.cab ctl3d32.dll /L C:\Winnt\System32
+
+For Microsoft Outlook 97, you can find the Ctl3d32.dll file in the \platform\OS
+directory on the CD-ROM.
+
+How to Use the CleanSweep Tool
+------------------------------
+
+When the CleanSweep tool is installed, the Clean Sweep option is added to the
+Tools menu of the Microsoft Exchange or Microsoft Outlook client. To use the
+CleanSweep extension, follow these steps:
+
+1. You may want to save any existing rules prior to running the Clean Sweep tool
+   (although this is not necessary).
+
+For additional information about how to save existing rules, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q152852 XADM: Steps to Move User and Inbox Assistant Rules
+
+2. Click to select the folder (such as Inbox) that contains the items you want
+   to delete.
+
+   NOTE: If you do not select a folder, the Clean Sweep menu item will be
+   disabled (grayed out).
+
+3. From the Tools menu, click Clean Sweep.
+
+4. Select the items to delete. Click OK.
+
+Sample Scenarios
+----------------
+
+The following are two scenarios in which you might need to run the CleanSweep
+tool.
+
+NOTE: These steps will remove the multiple OOF replies, but will not delete the
+Inbox Assistant rules, so you may want to back up your Out Of Office message
+text before you run CleanSweep.
+
+Scenario A:
+
+The Out of Office Assistant responds with two OOF messages instead of one
+message. To correct this behavior, follow these steps:
+
+1. Click the Inbox folder.
+
+2. Click Clean Sweep from the Tools menu.
+
+3. Click Rule Reply Templates.
+
+4. Click Details and select all boxes that contain the following text:
+
+   no subject
+
+5. Click OK, and then click OK again..
+
+6. In the OOF Assistant, delete and recreate the OOF rule.
+
+Scenario B:
+
+The Out of Office Assistant responds to incoming mail even when it has been
+disabled. To correct this behavior:
+
+1. Start the CleanSweep tool.
+
+2. Click Rules and then click Rule Reply Templates.
+
+3. Click Details and then click to select only the boxes titled.
+
+4. Click OK twice.
+
+5. In the OOF Assistant, delete and recreate the OOF rule.
+
+   NOTE: This will correct the OOF if it is corrupt and not firing, or if it is
+   firing even when disabled. However, as a side effect you will lose all Inbox
+   Assistant rules as well.
+
+Additional query words: clean sweep 8.5
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchangeClientSearch kbOutlook97 kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803 kbExchange400NT kbExchange500NT
+Version           : :4.0,5.0,8.0,8.01,8.02,8.03
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

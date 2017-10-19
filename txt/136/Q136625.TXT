@@ -1,0 +1,54 @@
+DOCUMENT:Q136625  19-OCT-2000  [pcmail]
+TITLE   :PC Mac: Creating a Personal User List and Personal Group
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.x, on platform(s):
+    - the operating system: Mac OS (ALL) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can create personal groups in the Macintosh Mail client for PC Networks.
+
+MORE INFORMATION
+================
+
+You must have personal user lists before you can create personal groups. To
+create a personal user list, from the Special menu, choose the Personal Users
+option.
+
+NOTE: When you view or edit the contents of personal groups, it can be awkward.
+As a result, you may want to create a personal list that includes the names you
+want in a personal group, and then create the group.
+
+
+Additional query words: 3.x mac
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

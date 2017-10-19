@@ -1,0 +1,70 @@
+DOCUMENT:Q134461  15-APR-2000  [powerpt]
+TITLE   :PPT7: Embedded OLE Object Won't Update in Branched Presentation
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbole
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to edit embedded OLE objects in an embedded (or branched)
+PowerPoint presentation while in slide show view, the objects are not updated.
+
+If you insert an OLE object into a PowerPoint presentation, you can edit that OLE
+object during a slide show by doing the following:
+
+1. Select the object.
+
+2. On the Tools menu, click Animation Settings.
+
+3. In the Play Options list, click Edit or Open.
+
+If you run the slide show, you can now edit the OLE object while in Slide Show
+view, and the updates are reflected in the object.
+
+If, however, you insert a PowerPoint presentation object into a PowerPoint
+presentation and insert an OLE object into that embedded presentation object, it
+does not update while you are in Slide Show view.
+
+CAUSE
+=====
+
+When you start an embedded PowerPoint presentation from a PowerPoint slide show,
+you are playing it, not editing it. You cannot change an object to edit mode
+while you are playing it. Because you cannot change the embedded PowerPoint
+presentation while you are playing it, OLE objects in the presentation will not
+update.
+
+Additional query words: power point powerpt branched winppt branch branching
+
+======================================================================
+Keywords          : kbole 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,63 @@
+DOCUMENT:Q132838  17-DEC-2000  [win95x]
+TITLE   :Compiling in Microsoft Visual C++ Switches Screen to Text Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build or compile a program in the IDE of Microsoft Visual C++, the
+screen switches to text mode. After the program is built or compiled, the screen
+switches back to graphics.
+
+CAUSE
+=====
+
+An old _Default.pif file is located on the path that is marked as "full screen."
+The reason this affects compiling is because Microsoft Visual C++ spawns hidden
+console programs to compile. Because Microsoft Visual C++ version 2.x itself is
+marked as a Windows version 3.x program, for compatibility, Windows 95 searches
+for a Default.pif file when it runs console or MS-DOS programs.
+
+RESOLUTION
+==========
+
+To work around this behavior, do one of the following:
+
+ - Remove the old _Default.pif file from the current path
+
+ - Set the _Default.pif file as windowed using PIFEDIT
+
+ - Delete the _Default.pif file.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

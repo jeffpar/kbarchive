@@ -1,0 +1,139 @@
+DOCUMENT:Q125881  10-JUL-2002  [sna]
+TITLE   :Maximizing IND$FILE 3270 Host File Transfer Throughput
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT SNA Server 3270 and other third-party 3270 emulators support host
+file transfer using the host IND$FILE interface. There are three ways you can
+improve performance:
+
+ - Choosing a Fast SNA Link Interface to the Host
+
+ - Maximizing the SNA Link Frame Size
+
+ - Maximizing the 3270 Structured Field RU Size
+
+Choosing a Fast SNA Link Interface to the Host
+----------------------------------------------
+
+The fastest link type supported by SNA Server is a channel connection to the
+host. SNA Server 2.11 and later includes built-in support for channel adapters.
+Please refer to the SNA Server Companion Product Catalog for more details on
+available channel adapter support. Note: SNA Server 2.1 supports channel
+connections via third-party drivers.
+
+If a channel connection is not possible, the next fastest link type supported by
+SNA Server is an 802.2 connection to the host via Token Ring (16 Mbps) or
+Ethernet (10 Mbps).
+
+Maximizing the SNA Link Frame Size
+----------------------------------
+
+The maximum frame size supported by SNA Server and the host varies depending on
+the link type. The host frame size is configured in the MAXDATA= parameter in
+the PU definition in VTAM. This setting should match the "Max BTU size" in the
+SNA Server Connection configuration dialog in SNA Admin/Manager.
+
+Here are the maximum frame sizes supported (in bytes):
+
+   802.2 Token Ring connection (16 Mbps):      16393
+   802.2 Token Ring connection (4 Mbps):        4096
+   802.2 Ethernet connection:                   1493
+
+   IBM SDLC/MPAA adapter or Microgate adapter:   521
+
+The maximum frame size provided by third-party SNA Server link support depends on
+the third-party interface being used.
+
+
+Maximizing the 3270 Structured Field RU Size
+--------------------------------------------
+
+Maximizing the SNA RU size reduces end-to-end acknowledgments at the 3270
+application level. An RU is split into multiple messages if the frame size is
+smaller.
+
+First, the query bit on the LU definition at the host must be enabled in order to
+support structured field file transfer. This is enabled in bit 0 (the high order
+bit) on byte 1 in the PSERVIC parameter which you can configure in the MODEENT
+on the 3270 LU's DLOGMODE mode entry:
+
+   PSERVIC=X'0280xxxx...
+
+   Byte 0 is the LU type (02 in this example)
+   Byte 1 is used by VSCS and needs to be set as follows:
+
+   80 - Device supports extended data stream capability. It supports
+   write structured field (WSF) and read partition query (Query)
+   structured field.
+
+Otherwise, screen-mode transfer is used, limiting the data RU size to 1920
+bytes.
+
+The RU size supported by the host is configured in the RUSIZES=LU mode entry
+(MODEENT). Here are common values used:
+
+   8787 = 1024
+   8888 = 2048
+   8989 = 4096
+   8A8A = 8192
+   8B8B = 16384
+   8C8C = 32768
+
+The RU size is computed as follows: RUSIZES = MNMN, where the RU size = M*2^N.
+This specifies the maximum length of data (request units) in bytes that the
+primary or secondary can send to each other. The leftmost two digits apply to
+the secondary (SNA Server) logical unit, and the rightmost two digits apply to
+the primary (host) logical unit. If set to 00, then the default size (no limit
+on the RU size) is used.
+
+Within the 3270 emulator, the structured field file transfer RU size must be
+specified in the file transfer configuration. Within SNA Server 3270, this is
+set in the Packet Size field within the 3270 File Transfer dialog box. The
+maximum value is 32767.
+
+MORE INFORMATION
+================
+
+While the SNA link interface and frame size are often not adjustable, maximizing
+the 3270 structured field file transfer RU size can provide dramatic performance
+improvements.
+
+However, IND$FILE is not an efficient file transfer method. For higher throughput
+host file transfer, an LU 6.2-based file transfer product should be considered.
+
+
+Additional query words: prodsna ind$file 3270 file transfer
+
+======================================================================
+Keywords          : kbnetwork kbtool kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

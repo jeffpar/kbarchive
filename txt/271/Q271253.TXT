@@ -1,0 +1,60 @@
+DOCUMENT:Q271253  31-JUL-2001  [homemm]
+TITLE   :Microsoft Reader Error Message: Error 0x8004005 (-2147467529)
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader for the Pocket PC, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a book in Microsoft Reader for the Pocket PC, you may receive the
+following error message:
+
+   The following error has occurred: 0x8004005 (-2147467529)
+
+CAUSE
+=====
+
+This behavior occurs when you open a book that is copy protected using the
+Microsoft Digital Asset Server (DAS) with the highest level of copy protection
+(level 5).
+
+Microsoft Reader for the Pocket PC does not support books that are copy protected
+in this manner.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: reader msreader ebook pocketpc cannot unable
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbOSWinCE kbReaderSearch kbPocketSearch kbPocketReader100
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

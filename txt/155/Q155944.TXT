@@ -1,0 +1,95 @@
+DOCUMENT:Q155944  14-NOV-2000  [word97]
+TITLE   :WD97: Display Icon Changes After Clicking Undo Convert Object
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbole kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you convert an object that displays an icon and then click Undo, the icon
+that Word uses to represent the object is smaller in size and different in
+appearance.
+
+CAUSE
+=====
+
+This problem occurs when you use the following steps:
+
+1. On the Insert menu, click Object.
+
+2. Click the type of object you want to insert.
+
+3. Click Float Over Text and click Display as Icon.
+
+4. Click OK.
+
+5. Select the object in the document.
+
+6. On the Edit menu, point to the type of object you inserted and click Convert.
+
+7. Clear the Display As Icon check box and click OK.
+
+8. On the Edit menu, click Undo Convert Object.
+
+
+This problem does not occur if you clear the Float Over Text check box.
+
+WORKAROUND
+==========
+
+To work around this problem after you insert the object, use the following
+steps:
+
+1. Select the object in the document.
+
+2. On the Edit menu, point to the object type, and click Convert.
+
+3. Select the Display As Icon check box, and clear the Float Over Text check
+   box.
+
+4. Click OK.
+
+The icon should appear with the correct size and appearance.
+
+To work around this problem before you insert the object, clear the Float Over
+Text check box in the Insert Object dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+
+Additional query words: 8.0 word8 word97 winword
+
+======================================================================
+Keywords          : kbole kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

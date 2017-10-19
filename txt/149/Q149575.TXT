@@ -1,0 +1,58 @@
+DOCUMENT:Q149575  27-JUL-2001  [sms]
+TITLE   :Initial SMS Client Setup Generates "Error: 259"
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows client undergoing initial SMS client setup shows setup progressing to
+approximately 3 percent, then appears to exit the entire SMS setup procedure. No
+SMS.ini is created, and the client is not set up. No error messages are visible
+unless you use verbose mode (set smsls=1). Verbose mode will show "Error: 259".
+
+CAUSE
+=====
+
+A few Windows for Workgroups computers have Winver (with no extension) instead
+of Winver.exe. SMS client setup attempts to run Winver.exe to obtain version
+information, and fails because Winver does not have an extension. This problem
+will also occur if Winver.exe is missing altogether.
+
+RESOLUTION
+==========
+
+Simply rename Winver to Winver.exe on the client. SMS client setup will now
+operate correctly.
+
+Additional query words: sms prodsms clisetup
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

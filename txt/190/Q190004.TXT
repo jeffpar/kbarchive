@@ -1,0 +1,79 @@
+DOCUMENT:Q190004  05-AUG-2000  [iis]
+TITLE   :Error 403.7 or "Connection to Server Could Not Be Established"
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One of the following errors occurs when trying to browse a Web site that has
+Secure Sockets Layer (SSL) enabled:
+
+ - HTTP Error 403
+   403.7 Forbidden: Client certificate required
+
+   This error occurs when the resource you are attempting to access requires your
+   browser to have a client Secure Sockets Layer (SSL) certificate that the
+   server recognizes. This is used for authenticating you as a valid user of the
+   resource.
+
+   Please contact the Web server's administrator to obtain a valid client
+   certificate.
+
+   -or-
+
+ - Connection to the server could not be established.
+
+CAUSE
+=====
+
+The Internet Explorer client certificate and the Internet Information Server
+(IIS) client certificate need to be synchronized.
+
+WORKAROUND
+==========
+
+To work around this problem, run the following three commands from a command
+prompt in the <%SystemRoot%>\System32\Inetsrv directory:
+
+   IISCA
+   Net Stop IISAdmin /y
+   Net Start W3SVC
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

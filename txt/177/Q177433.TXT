@@ -1,0 +1,75 @@
+DOCUMENT:Q177433  17-JUL-2001  [visualc]
+TITLE   :PRB: Build on Win 95/98/Me Reports "Error spawning empfile.exe"
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbide kbVC kbVC100 kbVC200 kbVC600 kbOSWinCEsearch kbOSWinCE100 kbOSWinCE200 k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows CE, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build a project under Microsoft Visual C++ versions 5.0 or 6.0 with the
+Microsoft Visual C++ for Windows CE product installed, the following message
+appears in the build output window:
+
+   Error spawning empfile.exe
+
+CAUSE
+=====
+
+The application is being built for the "Win32 (WCE x86em)" platform on Microsoft
+Windows 95, Windows 98, or Windows Millemmium Edition (Me). Windows CE Emulation
+is not supported these platforms.
+
+RESOLUTION
+==========
+
+The Windows CE emulation development facility requires Microsoft Windows NT 4.0
+or Windows 2000. If a standard Intel application was intended, select or add a
+configuration for the "Win32" platform.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Refer to the following link in the Visual C++ for Windows CE 1.0 online help for
+more information regarding requirements, features, and restrictions when using
+Windows CE emulation:
+
+   TITLE: "Windows CE Emulation"
+   URL: mk@ivt:wceide/rtf/emul.htm
+
+Additional query words: VCCEISS emulator kbwince100
+
+======================================================================
+Keywords          : kberrmsg kbide kbVC kbVC100 kbVC200 kbVC600 kbOSWinCEsearch kbOSWinCE100 kbOSWinCE200 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword3 kbVC100WinCE kbVC200WinCE
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

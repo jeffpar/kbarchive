@@ -1,0 +1,62 @@
+DOCUMENT:Q170286  13-JUN-2001  [sna]
+TITLE   :Application Hangs if WinRUIStartup Called Before WinAPPCStartup
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If an application attempts to open the SNA Server Windows APPC and RUI
+interfaces from the same process, the application may stop responding (hang) if
+WinRUIStartup() is called before WinAPPCStartup().
+
+NOTE: The RUI interface provides access to LU0-3 host applications, while APPC
+provides access to partner APPC transaction programs over LU6.2.
+
+RESOLUTION
+==========
+
+To workaround the problem, WinAPPCStartup should be called before WinRUIStartup.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server, versions 2.11, 3.0
+(all SPs), and 4.0 (all SPs).
+
+We are researching this problem and will post new information in the Microsoft
+Knowledge Base as it becomes available
+
+Additional query words: winappc winrui winlua SNA Server, versions 2.11, 3.0 (all SPs), and 4.0 SPs)
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:2.11,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

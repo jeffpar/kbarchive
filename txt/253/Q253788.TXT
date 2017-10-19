@@ -1,0 +1,82 @@
+DOCUMENT:Q253788  28-AUG-2001  [win95x]
+TITLE   :Unable to Open Images in Same Window
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbgraphic
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a .jpg file or any other image file, the image may be
+opened in a separate instance of the program that is associated with the image
+file type. For example, if Iexplore.exe is associated with .jpg files and you
+open multiple .jpg files in Windows Explorer, each .jpg file is opened in a new
+instance of Microsoft Internet Explorer.
+
+CAUSE
+=====
+
+This behavior occurs if Dynamic Data Exchange (DDE) parameters are not specified
+in the file association properties for the image file type.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. In Windows Explorer, on the View menu, click Folder Options.
+
+2. On the File Types tab, click the file type you want to edit (for example,
+   JPEG), and then click Edit.
+
+3. In the Actions area, click Open, and then click Edit.
+
+4. Click to select the Use DDE check box.
+
+5. Fill in the DDE commands that are required for the program that is associated
+   with the file type being edited.
+
+   For example, to use Internet Explorer to open each .jpg file in the same
+   instance, type the following DDE commands:
+
+   DDE Message:"file://%1",,-1,,,,,
+
+   Application: "C:\PROGRA~1\INTERN~1\iexplore.exe" -nohome
+
+   DDE Application Not Running: leave blank
+
+   Topic:WWW_OpenURL
+
+Additional query words: jpg tif bmp gif same
+
+======================================================================
+Keywords          : kbgraphic 
+Technology        : kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

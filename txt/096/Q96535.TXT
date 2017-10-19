@@ -1,0 +1,50 @@
+DOCUMENT:Q96535  19-OCT-2000  [pcmail]
+TITLE   :PC WRmt: How to Recover from Mistyping Password on First Login
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2, on platform(s):
+    - the operating system: Microsoft Windows NT, on platform(s):
+       - the operating system: Microsoft Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you enter your password incorrectly when you sign in to version 3.2 of
+Microsoft Mail Remote for Windows, you must delete the Mail Message File (MMF)
+and sign in again.
+
+If the Microsoft Mail Remote driver is installed, delete the file
+<Windows_directory>\MSMAIL.MMF (by default, C:\WINDOWS\MSMAIL.MMF). If the
+AT&T driver is installed, delete the file
+<Windows_directory>\MS_ATT.MMF (by default, C:\WINDOWS\MS_ATT.MMF).
+
+Additional query words: 3.20 att
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

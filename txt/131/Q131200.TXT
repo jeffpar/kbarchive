@@ -1,0 +1,60 @@
+DOCUMENT:Q131200  15-FEB-2000  [foxpro]
+TITLE   :How to Print a Report When No Records Are Involved
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The REPORT FORM command requires an open table or cursor with at least one
+record, otherwise it doesn't print anything. This article shows how to work
+around this.
+
+MORE INFORMATION
+================
+
+If you have set up a report to print the results of a SQL statement sent to a
+cursor and that query returns zero (0) rows, the report doesn't print.
+
+The following code shows by example how to print the report even if zero rows are
+returned. It is valid for a report named TEST.FRX that contains three fields:
+fname, lname, and dob (date of birth). The CREATE CURSOR command must create a
+field for each field in your report.
+
+      IF _TALLY=0
+         CREATE CURSOR Temp (fname c(30),lname c(30),dob d)
+         INSERT INTO Temp (fname) VALUES ('Nothing to print')
+      ENDIF
+      REPORT FORM TEST.FRX NOEJECT NOCONSOLE TO PRINTER
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,91 @@
+DOCUMENT:Q237530  25-JUN-2000  [homemm]
+TITLE   :Encarta 2000: Error Message When You Double-Click a Shortcut
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click a shortcut to an article in Microsoft Encarta Encyclopedia
+2000, you may receive the following error message:
+
+   There is a problem starting Encarta Encyclopedia:
+
+   The command line is improperly formatted.
+
+   Please correct the command line parameters, or load Encarta Encyclopedia
+   without any command line parameters.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - Encarta Encyclopedia 2000 is not running.
+
+ - The URL that links the shortcut to the article contains one or more blank
+   spaces between characters.
+
+RESOLUTION
+==========
+
+To work around this issue:
+
+1. On the Microsoft Windows desktop, right-click the selected shortcut, and then
+   click Properties.
+
+2. With your pointing device, place the insertion point to the right of the last
+   character in the URL box.
+
+3. Press the BACKSPACE key to delete all characters up to and including the
+   first EQUAL SIGN (=) to the left of the final blank space in the URL.
+
+4. Click OK.
+
+5. Scroll to the position in the article from which you created the shortcut.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+MORE INFORMATION
+================
+
+To prevent this issue from occurring, make sure Encarta Encyclopedia 2000 is
+running when you double-click a shortcut on the Windows desktop.
+
+Additional query words: multi multi-media media mm ee2k hyperlink icons
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

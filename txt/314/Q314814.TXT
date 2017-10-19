@@ -1,0 +1,153 @@
+DOCUMENT:Q314814  18-FEB-2002  [foxpro]
+TITLE   :FIX: Error -1073741819 in MTDLL When You Use LIKE in SQL SELECT
+PRODUCT :Microsoft FoxPro
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbCOMt kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Visual FoxPro 7.0 to build a multithreaded DLL (MTDLL) that contains
+a procedure which performs a SQL SELECT statement that contains the LIKE
+operator, when you call the procedure, the MTDLL may fail with a C05 error and
+the following error message may be returned:
+
+   OLE IDispatch exception code 5 from tstmtdll.SERVER tstmtdll.SERVER:
+   .doselect C:\Test\dllmain.prg Error in line 4 -1073741819..
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Visual FoxPro for
+Windows 7.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q316964 How to Obtain the Latest Visual FoxPro for Windows 7.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Visual FoxPro for
+Windows 7.0. This problem was first corrected in Visual FoxPro for Windows 7.0
+Service Pack 1.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new folder on your hard disk.
+
+2. Copy the files Vfp7t.dll and Vfp7enu.dll to the new folder. These files
+   should be dated 6/14/2001 with a version number of 9262.
+
+3. In Visual FoxPro 7.0, paste the following code in a new program (.prg) file
+   and then save it to the folder you created in step 1.
+
+   CD JUSTPATH(SYS(16))
+   CLEAR
+
+   IF !FILE("ReproDBF.DBF")
+   	LOCAL lnCounter AS INTEGER
+   	lnCounter = 0
+   	CREATE TABLE "ReproDBF.DBF" ;
+   		(F1 C(100) NOT NULL, ;
+   		F2 C(40) NOT NULL, ;
+   		F3 C(5) NOT NULL, ;
+   		F4 C(10) NOT NULL, ;
+   		F5 C(239) NOT NULL, ;
+   		F6 C(4) NOT NULL, ;
+   		F7 C(20) NOT NULL, ;
+   		F8 I NOT NULL, ;
+   		F9 M NOT NULL)
+
+   	INDEX ON F4 TAG F4
+
+   	FOR lnCounter = 1 TO 100
+   		INSERT INTO ReproDBF VALUES (;
+   			REPLICATE("x", 100), ;
+   			REPLICATE("x", 40), ;
+   			REPLICATE("x", 5), ;
+   			REPLICATE("x", 10), ;
+   			REPLICATE("x", 239), ;
+   			REPLICATE("x", 4), ;
+   			REPLICATE("x", 20), ;
+   			lnCounter, "")
+   	ENDFOR
+   	GO 50
+   	REPLACE F4 WITH "000"
+   	USE IN SELECT("ReproDBF")
+   	RELEASE lnCounter
+   ENDIF
+
+   LOCAL lcDLLCode AS STRING, ;
+   	lnCounter AS INTEGER, ;
+   	loTstMTDLL AS OBJECT
+
+   lcOldSetSafety = SET("Safety")
+   lcDLLCode = ""
+   lnCounter = 0
+   loTstMTDLL = NULL
+
+   TEXT TO lcDLLCode NOSHOW
+   DEFINE CLASS SERVER AS SESSION OLEPUBLIC
+   	PROCEDURE DoSelect AS INTEGER
+   		SET ANSI ON
+   		SELECT * FROM ReproDBF (WHERE F4 LIKE '000%')  INTO CURSOR temp
+   		RETURN RECCOUNT("TEMP")
+   	ENDPROC
+   ENDDEFINE
+   ENDTEXT
+
+   CLOSE DATABASES ALL
+   STRTOFILE(lcDLLCode, "DLLMAIN.PRG")
+   CREATE PROJECT TstMTDLL NOWAIT
+   _VFP.ACTIVEPROJECT.FILES.ADD("DLLMAIN.PRG")
+   _VFP.ACTIVEPROJECT.BUILD("TstMTDLL.dll", 5)
+   CLEAR
+
+   FOR lnCounter = 1 TO 100
+   	loTstMTDLL = NEWOBJECT("TstMTDLL.SERVER")
+   	? "Run # " + TRANSFORM(lnCounter) + ;
+   		"    DoSelect Results: " + TRANSFORM(loTstMTDLL.DoSelect())
+   	RELEASE loTstMTDLL
+   ENDFOR
+
+4. Run the program. A new .dbf file is created and populated. The code then
+   programmatically builds an MTDLL and calls a procedure which performs a
+   SELECT statement as described earlier. The MTDLL returns an error that
+   resembles the error outlined in the "Symptoms" section.
+
+Additional query words: kbVFP700sp1fix
+
+======================================================================
+Keywords          : kbCOMt kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

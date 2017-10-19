@@ -1,0 +1,98 @@
+DOCUMENT:Q232654  26-FEB-2002  [vbwin]
+TITLE   :BUG:CommonDialog FilterIndex Always Returns Default Filter Index
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,2.0,2.11,3.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+ - Microsoft eMbedded Visual Basic, version 3.0, on platform(s):
+    - Microsoft Windows CE versions 2.0, 2.11 for the Handheld PC 
+    - Microsoft Windows CE version 2.11 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The FilterIndex property of the CommonDialog control that ships with the
+Microsoft Windows CE Toolkit for Visual Basic 6.0 (VBCE6) will always return the
+index for the first defined filter despite being changed by the user at run
+time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The following code will behave differently between VBCE and Visual Basic 6.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE HPC Project in Visual Basic.
+
+2. Select Components from the Project menu and reference the Microsoft CE Common
+   Dialog Control 6.0.
+
+3. Add a Common dialog and a Command Button to Form1.
+
+4. Paste the following code into Form1:
+
+   Private Sub Command1_Click()
+       CommonDialog1.Filter = "Text (*.txt)|*.txt|Pictures (*.bmp)|*.bmp"
+       CommonDialog1.FilterIndex = 1
+       CommonDialog1.ShowOpen
+       
+       MsgBox "FilterIndex: " & CommonDialog1.FilterIndex
+   End Sub
+
+5. Run the project and click the Command Button.
+
+6. Select a text file to open and notice that the message box will display
+   "FilterIndex: 1."
+
+7. Click the Command Button again and select a bitmap file to open.
+
+Notice that the message box will again display "FilterIndex: 1," when it should
+display "FilterIndex: 2." This is inconsistent with how the Visual Basic 6.0
+CommonDialog control works where the FilterIndex will reflect the user's
+selection.
+
+REFERENCES
+==========
+
+Visual Basic 6.0 Online Help
+Windows CE Toolkit for Visual Basic 6.0 Online Help
+
+Additional query words: vbce vbce6 wince
+
+======================================================================
+Keywords          : kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch
+Version           : :1.0,2.0,2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

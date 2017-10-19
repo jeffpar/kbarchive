@@ -1,0 +1,45 @@
+DOCUMENT:Q89012  17-OCT-1999  [win95x]
+TITLE   :Windows: Compaq VGC Must Be Set Up as VGA
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:2.03,2.1,2.11,3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+Video Graphics Controller Board, or VGC, is the name Compaq uses for the
+VGA card included with older Compaq computers. If you install Microsoft
+Windows on such a machine, you must select the VGA option.
+
+Because of this card's ambiguous name, many people incorrectly install
+Windows with the CGA or EGA option. If you have the Compaq VGC and Windows
+stops responding on the startup screen, you must reinstall using the VGA
+option.
+
+Additional query words: 2.03 2.10 2.11 3.00 3.00a 3.10 3.11 hangs locks freezes 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:2.03,2.1,2.11,3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

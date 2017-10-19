@@ -1,0 +1,112 @@
+DOCUMENT:Q199233  07-MAY-1999  [iis]
+TITLE   :How to Use DHTML with ASP and Long SQL Queries
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When SQL Server queries take a great deal of time to process in an ASP page, the
+Web browser may be left with a blank page while information is gathered from the
+database. If you use Internet Explorer's Dynamic HTML features, a message can be
+displayed to a Web browser while the data is processed and then changed or
+erased when the page is finished being rendered.
+
+MORE INFORMATION
+================
+
+The following example ASP code uses a system Data Source Name (DSN) that points
+to the Adventure Works example Microsoft Access database that shipped with IIS
+3.0, but can be tested with any data source by changing the following two
+lines:
+
+   strSQL = "SELECT * FROM <Table Name>"
+   RS.Open strSQL, "DSN=<Datasource Name>"
+
+The following example page displays a message to the browser while loading the
+data, then changes that message to the record count after the data is loaded.
+Copy and save the following ASP code in your InetPub\Scripts folder as
+DhtmTest.asp, and then test the page by browsing to
+http://localhost/scripts/DhtmTest.asp.
+
+      <html>
+      <head><title>DHTML and ASP Example</title></head>
+      <body>
+
+      <h3 id="HideMe">Please wait while the data loads...</h3>
+
+      <%
+        Dim RS, strSQL, i
+        Set RS = Server.CreateObject("ADODB.RecordSet")
+        strSQL = "SELECT * FROM Products"
+        RS.CursorType = 1 ' open with adOpenKeyset
+        RS.Open strSQL, "DSN=AdvWorks"
+
+        If Not RS.EOF Then
+          Response.Write "<table border=1>" & vbCrLf
+
+          Response.Write "<tr>"
+          For i =  0 to (RS.Fields.Count - 1)
+            Response.Write "<th>" & RS.Fields(i).Name & "</th>"
+          Next
+          Response.Write "</tr>" & vbCrLf
+            
+          Do While Not RS.EOF
+            Response.Write "<tr>"
+            For i =  0 to (RS.Fields.Count - 1)
+              Response.Write "<td>" & RS.Fields(i).Value & "</td>"
+            Next
+            Response.Write "</tr>" & vbCrLf
+            RS.MoveNext
+          Loop
+
+          Response.Write "</table>" & vbCrLf
+        End If
+      %>
+
+      <script language="JavaScript" for="window" event="onload">
+         HideMe.innerText='<%=RS.RecordCount%> Record(s) displayed.'
+      </script>
+
+      <% RS.Close %>
+
+      </body>
+      </html>
+
+The above code can easily be modified to erase the message from the page by
+changing the script section to read as follows:
+
+      HideMe.style.display='none';
+
+Additional query words: jscript javascript scripting dhtml asp html
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbiis300
+Version           : winnt:3.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

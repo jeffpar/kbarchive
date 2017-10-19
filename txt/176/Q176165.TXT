@@ -1,0 +1,57 @@
+DOCUMENT:Q176165  14-MAR-1999  [exchange]
+TITLE   :XADM: Setup Error Message: This version of setup is older...
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Setup to add or remove components from an existing Microsoft
+Exchange 5.5 Server computer, you may receive the following error message:
+
+   This version of Exchange Setup is older than the one you previously
+   used. Use a newer version of the Server Setup program.
+
+CAUSE
+=====
+
+You are running the Setup program from Microsoft Exchange Server version 5.0.
+
+RESOLUTION
+==========
+
+Use the Microsoft Exchange Server version 5.5 Setup program located on the
+Microsoft Exchange Server version 5.5 CD-ROM.
+
+Additional query words: install remove all reinstall
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

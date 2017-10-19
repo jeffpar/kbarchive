@@ -1,0 +1,62 @@
+DOCUMENT:Q85551  17-DEC-2000  [win3x]
+TITLE   :Machine Hangs; Repeat Rate too High in Windows 3.1, MS-DOS 5
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Logical Connection sells a printer sharing device that comes with a program
+called POPLC.EXE. POPLC has several functions, including clearing the print
+sharing device buffer and selecting which printer receives the data stream. If
+POPLC.EXE is loaded without the /NORES (non-resident) switch, when the Windows
+3.1 portion of Setup starts, the machine either stops responding (hangs) or the
+keyboard repeat rate gets set too high.
+
+WORKAROUND
+==========
+
+To work around this problem, either do not load POPLC.EXE, or use it with the
+/NONRES switch.
+
+MORE INFORMATION
+================
+
+For more information, please contact Logical Connection.
+
+The Logical Connection product included here is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 3.10 3.1 5.00 5.0 5 phone hangs crashes stops freezes
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,91 @@
+DOCUMENT:Q168079  17-JUL-2001  [visualc]
+TITLE   :FIX: _com_ptr_t::operator=(const _variant_t&) AddRefs Twice
+PRODUCT :Microsoft C Compiler
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbcode kbVC500bug kbVS97sp1fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an instantiation of the _com_ptr_t template class and assign a
+_variant_t to it, the associated COM object may not be released when it should
+be.
+
+CAUSE
+=====
+
+_com_ptr_t::operator=(const _variant_t&) calls another member function,
+QueryStdInterfaces, which ultimately AddRef's upon success. The problem is that
+operator= also AddRef's upon success.
+
+RESOLUTION
+==========
+
+Call Release() explicitly before the object goes out of scope.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The sample code below demonstrates the problem with operator=(const
+_variant_t&) of the class template _com_ptr_t. The parameter vt is an
+IUnknown*. To offset the result of the second AddRef, you need to call punk-
+>Release before leaving the function below.
+
+Sample Code
+-----------
+
+      // Compile options needed: none
+      // Make an IUnknownPtr
+      _COM_SMARTPTR_TYPEDEF( IUnknown, __uuidof(IUnknown));
+      void f( const _variant_t & vt )
+      {
+          IUnknownPtr punk;
+          punk = vt;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbVC500bug kbVS97sp1fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q264552  15-JUL-2000  [winnt]
+TITLE   :Modification Error Occurs When Exporting Custom Recipients
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you import custom recipients into the Global Address List in Microsoft
+Exchange 2000 Server with the Messaging Application Programming Interface (MAPI)
+Management agent, the follow error message appears in the Zscript.log:
+
+   Modify request ignored on missing object CN=Mc Test
+   [mctest@company.com],cn=ForeignRecipients,ou=NA,O=USA
+
+If a full run is made, then the users are duplicated, although they will have
+different names.
+
+CAUSE
+=====
+
+The Foreign Users Output Construction Template is used to build the Export file.
+The following lines in the Foreign Entries Output Construction Template define
+how the Distinguished Name (DN) for the custom recipient will be created in
+Exchange:
+
+   $v_RDN= -rdn: $v_name(^[$md.mail])
+   $v_dn=cn=$v_name(^[$md.mail])
+
+If the Primary Mail address is changed in Exchange, this affects how the
+construction of the DN in the Export file. When the Management agent runs, the
+record appears to be a new user to the Exchange server.
+
+RESOLUTION
+==========
+
+To resolve this issue, you need to delete the custom recipients that have
+changed and then push them back into Exchange as new users. If you need a
+long-term solution for making the DN more unique, you can modify the following
+two lines in the Foreign Entries Output Construction Template:
+
+   $v_RDN= -rdn: $v_name(^[$v_UID])
+   $v_dn=cn=$v_name(^[$v_UID])
+
+In addition, consider the following items:
+
+ - The RDN and the DN need to be identical because Exchange will generate errors
+   if these values do not match exactly.
+
+ - There are certain DN character limitations inherent to Exchange. For
+   instance, you cannot have a comma (,) inside the brackets ([]). Test the
+   value inside the brackets to make sure that it is unique and valid.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

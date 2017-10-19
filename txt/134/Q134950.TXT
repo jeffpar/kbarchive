@@ -1,0 +1,64 @@
+DOCUMENT:Q134950  10-NOV-1999  [pcmail]
+TITLE   :X400: Err Msg: Translate to Local Form Failed on Message:
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.2 of the Microsoft Mail Gateway to X.400 may not be able to
+successfully translate messages to local form. As a result, the following error
+will occur:
+
+   ERROR 3 (transmitting message to local message store): Translate to local
+   form failed on message: xxxxxxxx
+
+where xxxxxxxx is the message hexid that is then copied to the \X400\BAD
+directory on the gateway postoffice.
+
+CAUSE
+=====
+
+This error can occur if the X400GATE.EXE is being executed from a network drive,
+as opposed to local drive. When the X.400 gateway is installed, it prompts for
+the drive and path to the Microsoft Mail for PC Networks executable files. This
+is where X400GATE.EXE is placed. If it is located on a network drive, this error
+may occur.
+
+RESOLUTION
+==========
+
+Move the file X400GATE.EXE to a local drive, and ensure the TMP environment
+variable is pointing to a valid temporary directory on the local drive.
+
+Additional query words: 3.20 3.x
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

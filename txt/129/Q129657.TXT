@@ -1,0 +1,55 @@
+DOCUMENT:Q129657  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Cannot Create 360K Floppy System Disk
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 95 cannot create a 360K floppy system disk.
+
+MORE INFORMATION
+================
+
+When you create a floppy system disk, the system files require 422K of disk
+space. Therefore, the system files do not fit on 360K disks.
+
+When you try to format a 360K floppy disk as a system disk using Windows
+Explorer, you receive the following error message:
+
+   Windows could not copy the system files to this disk. Do you want to continue
+   formatting without copying system files?
+
+If you click OK, Windows 95 formats the disk but does not copy the system files.
+If you click Cancel, Windows 95 stops formatting the disk.
+
+Additional query words: low density
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

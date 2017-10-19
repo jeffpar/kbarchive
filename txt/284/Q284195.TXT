@@ -1,0 +1,67 @@
+DOCUMENT:Q284195  13-JUN-2001  [homemm]
+TITLE   :Encarta 99: Cannot Use Research Organizer on Windows 2000
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,2000
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 99 Research Organizer, used with:
+    - Microsoft Windows 2000 Professional 
+ - Microsoft Encarta 98 Research Organizer, version 1.0, used with:
+    - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run Microsoft Encarta 99 Research Organizer on a Microsoft
+Windows 2000-based computer, you receive the following error message in a Dr.
+Watson Log file:
+
+   The application, , generated an application error The error occurred on
+   01/03/2001 @ 14:51:35.042 The exception generated was c0000005 at address
+   00407681
+
+CAUSE
+=====
+
+This behavior occurs because Encarta 99 Research Organizer is not compatible
+with Windows 2000.
+
+MORE INFORMATION
+================
+
+Although Encarta 99 Research Organizer does not work in Windows 2000, all the
+other Encarta 99 Reference products work.
+
+Microsoft Encarta Research Organizer 2000 and Microsoft Encarta Researcher 2001
+are compatible with Windows 2000. For information about these programs, please
+contact Microsoft Customer Service at 1-800-426-9400.
+
+Additional query words: ero99 multi multi-media media
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaResearchOrg99
+Version           : :1.0,2000
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

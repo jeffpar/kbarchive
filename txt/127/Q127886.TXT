@@ -1,0 +1,156 @@
+DOCUMENT:Q127886  09-OCT-1999  [win3x]
+TITLE   :Creating Multiple Schedule+ Accounts
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to set up multiple Schedule+ accounts with or without
+Microsoft Mail accounts.
+
+WARNING: This practice is not supported by Microsoft Product Support Services.
+
+NOTE: You may need to set up multiple Microsoft Mail accounts before you follow
+the steps in this article. For information about setting up multiple Microsoft
+Mail accounts, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q99108
+
+MORE INFORMATION
+================
+
+Schedule+ on One Workstation with Multiple Microsoft Mail Accounts
+------------------------------------------------------------------
+
+1. Start Schedule+.
+
+2. Sign in with the last Microsoft Mail account created. You receive the error
+   message "Your Schedule+ files could not be accessed. Is this the first time
+   you are using Schedule+ on this computer?"
+
+3. Choose Yes and confirm the Microsoft Mail password.
+
+4. Exit and sign out of Schedule+.
+
+5. Repeat steps 1-4 for each remaining account.
+
+Schedule+ on Workstation Without Microsoft Mail Accounts
+--------------------------------------------------------
+
+1. Start Schedule+. You receive the following error message:
+
+   Until you run mail once, you will not be able to use any of the Workgroup
+   features of Schedule+. Do you want to use only the personal features of
+   Schedule+ now?
+
+2. Choose the OK button.
+
+   NOTE: You may want to create the first account with the name USER and a
+   password of PASSWORD. This allows others to know the Microsoft Mail password
+   without using anyone's actual password.
+
+3. In the Microsoft Mail Sign In screen, enter USER as the user name and
+   PASSWORD as the password. Do not select the Remember Password check box. You
+   receive the error message
+
+   Your message file could not be found.
+
+4. Choose OK.
+
+5. In the Open Message File dialog box, choose the New button. You receive the
+   following message:
+
+   Warning: The existence of multiple message files can result in a loss of
+   database integrity. Delete all other message files. Your new message file can
+   be found in the C:\<WINDOWS>\MSMAIL.MMF.
+
+6. Choose OK. You receive the following message:
+
+   A new file has been created for you. Your password has been set to 'password'.
+   You can change it by using the Change Password command.
+
+7. Choose OK. From the Schedule+ Options menu, choose General Options. Select
+   Startup Off-Line and then choose OK.
+
+8. Exit and sign out of Schedule+.
+
+9. Start Schedule+.
+
+10. In the Microsoft Mail Sign In screen, enter USER as the user name and
+   PASSWORD as the password. You receive the following error message:
+
+   This message file is a backup file. Would you like to make it your primary
+   message file?
+
+11. Choose the Yes button. Exit and sign out of Schedule+.
+
+12. Start Schedule+.
+
+13. In the Microsoft Mail Sign In screen, enter a new user's name as the user
+   name and PASSWORD as the password.
+
+14. Choose OK. You receive the following error message:
+
+   The local copy of your schedule file could not be accessed in the location
+   specified in your SCHDPLUS.INI file.
+
+15. Choose OK.
+
+16. In the Find Local File dialog box, choose OK to accept the filename
+   <username>.CAL. You receive the following message:
+
+   A new file has been created for you. Your password has been set to
+   'password'. You can change it by using the Change Password command.
+
+17. Choose OK.
+
+   NOTE: The Microsoft Mail message file and the Schedule+ file both have a
+   password of PASSWORD. If you leave these passwords both set to PASSWORD,
+   users will not need to confirm the Schedule+ password when they start
+   Schedule+.
+
+18. To change the Schedule+ password, choose Change Password from the Schedule+
+   Options menu. You will be prompted for the current password and the new
+   password you want to use.
+
+   NOTE: When the user logs in to Schedule+, he or she needs to use his or her
+   Mailbox name and PASSWORD as the password and then enter his or her
+   Schedule+ password in the Confirm Password box.
+
+19. Exit and sign out of Schedule+.
+
+20. Repeat steps 12-18 for each additional account.
+
+Additional query words: 3.11 schedule msmail
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q162930  31-JAN-2001  [win95x]
+TITLE   :Cannot Create New Connection with Internet Mail Service
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set up the Internet Mail service in Windows Messaging, you are prompted
+to select the connection for accessing Internet mail. When a connection is not
+listed in the box and you click New, nothing may seem to happen. Clicking Next
+displays a dialog box prompting you to select an existing connection or click
+New to create a connection.
+
+CAUSE
+=====
+
+Dial-Up Networking is not installed on the computer.
+
+RESOLUTION
+==========
+
+Cancel the Inbox Setup Wizard, install Dial-Up Networking, and then set up the
+Internet Mail service.
+
+MORE INFORMATION
+================
+
+For information about setting up Dial-Up Networking and connecting to the
+Internet, please see the following article in the Microsoft Knowledge Base:
+
+   Q138789 How to Connect to the Internet in Windows 95
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

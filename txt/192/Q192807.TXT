@@ -1,0 +1,102 @@
+DOCUMENT:Q192807  24-OCT-2001  [sna]
+TITLE   :SNABase Service Fails to Start on SNA Server
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 SP3,4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SNABase service may not start initially but can be started manually after
+the system completes startup. In addition, an event ID 590 may be logged in the
+application event log.
+
+CAUSE
+=====
+
+The SNABase service cannot start until all dependency services have completed
+initialization. The SNABase service is designed to time out if the dependency
+services do not start after 10 seconds. SNA Server's SNABase service is
+dependent upon the following services:
+
+   Workstation, Server, and NT LM Security Support Provider
+
+If any of these other services do not start in a timely fashion, the SNABase
+service will not be able to start, and an event ID 590 may be logged in the
+application event log.
+
+RESOLUTION
+==========
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server 4.0
+--------------
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 SP3,
+4.0, and 4.0 SP1. This problem was first corrected in SNA Server 3.0 Service
+Pack 4.
+
+MORE INFORMATION
+================
+
+The following registry entry has been added to allow a configurable timeout
+parameter for the SNABase service:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SnaBase\Param eters:
+
+   Name: ServerStartupTimeout
+   Type: REG_DWORD
+   Value: <timeout in seconds> (The default is 10.)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ400SP1
+Version           : :3.0 SP3,4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

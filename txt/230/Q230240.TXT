@@ -1,0 +1,333 @@
+DOCUMENT:Q230240  20-DEC-2000  [mspress]
+TITLE   :A+ Certification Training Kit Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS A+ Certification Training Kit ISBN 0-7356-0635-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book, A+ Certification Training Kit, ISBN
+0-7356-0635-8.
+
+The following topics are covered:
+
+ - Page 15: Text Correction
+
+ - Page 17: Error In ASCII Character Set Table
+
+ - Page 46: Typo In Figure 4.11
+
+ - Page 52: Delete Last Paragraph
+
+ - Page 55: Missing Word
+
+ - Page 56: Typographical Error
+
+ - Page 107: Errors In Note
+
+ - Page 114: Typographical Error
+
+ - Page 140: Last Paragraph Should Refer To Platter Rather Than Head
+
+ - Page 180: Typo In Second Bullet
+
+ - Page 188: Change Ultra (32-bit) SCSI SI-2 to UltraSCSI
+
+ - Page 223: Graphic Doesn't Match Preceding Text
+
+ - Page 253: Transmission Control Protocol/Internet Protocol (TCP/IP)
+
+ - Page 358: Delete Last Sentence In First Paragraph
+
+ - Page 458: Typographical Error
+
+ - Page 465: UTP Cannot Support Distances Greater Than 100 Meters
+
+ - Page 465: The Twisted Pair Cable Described Is Unshielded
+
+ - Page 480: Lesson Summary Corrections
+
+ - Page 539: Chapter 5 Review Question #1 Change Surge To Sag
+
+MORE INFORMATION
+================
+
+Page 15: Text Correction
+------------------------
+
+Page 15, second to last paragraph:
+
+Change:
+"For those mathematically inclined, you will quickly realize that 256 is the
+largest number that can be represented by a byte."
+
+To:
+"For those mathematically inclined, you will quickly realize that 255 is the
+largest number that can be represented by a byte."
+
+
+Page 17: Error In ASCII Character Set Table
+-------------------------------------------
+
+The table on page 17 lists the incorrect ASCII code for the letter D.
+
+Change:
+
+    D 01000010 68
+
+To:
+
+    D 01000100 68
+
+
+Page 46: Typo In Figure 4.11
+----------------------------
+
+Change:
+"1386SX"
+
+To:
+"80386SX"
+
+
+Page 52: Delete Last Paragraph
+------------------------------
+
+Delete the information in the last paragraph on page 52, above the bulleted
+items, regarding the 50 MHz 486DX processor and DX2 processors running
+internally and externally at 50MHz. This information can not be verified or
+supported.
+
+Also delete references to 486DX processors at 50MHz in the table on page 51.
+
+
+Page 55: Missing Word
+---------------------
+
+Page 55, subheading Intel's Competitors, last sentence:
+
+Change:
+"Just like the Intel processors, these processors are all backward."
+
+To:
+"Just like the Intel processors, these processors are all backward-compatible."
+
+
+Page 56: Typographical Error
+----------------------------
+
+Page 56, second paragraph, first sentence:
+
+Change:
+"On method that the Pentium Pro used to increase efficiency..."
+
+To:
+"One method that the Pentium Pro used to increase efficiency..."
+
+
+Page 107: Errors In Note
+------------------------
+
+Page 107, note:
+
+Change:
+"Eight 64 KB x 1 RAM chips make 64 KB bytes of memory. Or eight 256 KB x 1 RAM
+chips make 256 KM bytes of memory."
+
+To:
+"Eight 64 KB x 1 RAM chips make 64 KB of memory. Or eight 256 KB x 1 RAM chips
+make 256 KB of memory."
+
+
+Page 114: Typographical Error
+-----------------------------
+
+Page 114, under the Troubleshooting RAM subheading, first sentence:
+
+Change:
+"The MTBF (Mean Time Between Failure) rate for DRAM in a computer built after
+1992 computer is something like 30 to 35 years!"
+
+To:
+"The MTBF (Mean Time Between Failure) rate for DRAM in a computer built after
+1992 is something like 30 to 35 years!"
+
+
+Page 140: Last Paragraph Should Refer To Platter Rather Than Head
+-----------------------------------------------------------------
+
+Change:
+"Data is stored in circular paths on the surface of each head. Each path is
+called a track. There are hundreds of tracks on the surface of each head. A set
+of tracks (all of the same diameter) through head head is called a cylinder."
+
+To:
+"Data is stored in circular paths on the surface of each platter. Each path is
+called a track. There are hundreds of tracks on the surface of each platter. A
+set of tracks (all of the same diameter) through each platter is called a
+cylinder."
+
+
+Page 180: Typo In Second Bullet
+-------------------------------
+
+Page 180, second bullet, first sentence:
+
+Change:
+"Master driverequires that the driver is loaded before anything else..."
+
+To:
+"Master drive requires that the driver is loaded before anything else..."
+
+
+Page 188: Change Ultra (32-bit) SCSI SI-2 to UltraSCSI
+------------------------------------------------------
+
+On page 188, in the first section SCSI-2, the third bulleted item, Ultra (32-bit)
+SCSI SI-2 should be changed to UltraSCSI.
+
+UltraSCSI does not increase the datapath to 32 bit. UltraSCSI deals with the
+transfer rate. It doubles the FAST SCSI transfer rate. UltraSCSI runs at 20
+MegaTransfers/sec. Thus, Ultra narrow SCSI (8-bit) = 20MB/sec and Ultra Wide
+(16-bit) SCSI = 40 MB/sec.
+
+
+Page 223: Graphic Doesn't Match Preceding Text
+----------------------------------------------
+
+The Pixel area in the graphic should show dots of all one color. As it is, it
+shows R, G, and B dots.
+
+
+Page 358: Delete Last Sentence In First Paragraph
+-------------------------------------------------
+
+On page 358, the last sentence in the first paragraph can be disputed.
+
+When loading an application from the "run=" statement in the Win.ini file,
+Windows uses the function SW_SHOWNORMAL. This function leaves the application
+maximized in a full-screen window.
+
+
+Page 253: Transmission Control Protocol/Internet Protocol (TCP/IP)
+------------------------------------------------------------------
+
+Change the definition for the term TCP/IP from:
+"Transfer Control Protocol/Internet Protocol..."
+
+To:
+"Transmission Control Protocol/Internet Protocol..."
+
+
+Page 358: Delete Last Sentence In First Paragraph
+-------------------------------------------------
+
+Page 358, first paragraph, last sentence:
+
+Delete:
+"When loading an application from the "run=" statement in the WIN.INI file,
+Windows uses the function SW_SHOWNORMAL. This function leaves the application
+maximized (that is, in a full-screen window)."
+
+
+Page 458: Typographical Error
+-----------------------------
+
+Page 458, under the Types Of Networks subheading, second paragraph, first
+sentence:
+
+Change:
+"In a peer-to-peer network, each computer acts as a either server..."
+
+To:
+"In a peer-to-peer network, each computer acts as either a server..."
+
+
+Page 465: UTP Cannot Support Distances Greater Than 100 Meters
+--------------------------------------------------------------
+
+Page 465, last paragraph before the Coaxial Cable subheading, second sentence:
+
+Change:
+"...it does not support distances greater than 100 feet..."
+
+To:
+"...it does not support distances greater than 100 meters..."
+
+
+Page 465: The Twisted Pair Cable Described Is Unshielded
+--------------------------------------------------------
+
+Page 465, last paragraph before Coaxial Cable subheading, first sentence:
+
+Change:
+"Twisted-pair cable has several advantages over other types of cable..."
+
+To:
+"Unshielded twisted-pair cable has several advantages over other types of
+cable..."
+
+
+Page 480: Lesson Summary Corrections
+------------------------------------
+
+Page 480, fifth bullet:
+
+Change:
+"Network cabling is designated by speed/baud/length or type."
+
+To:
+"Network cabling is designated by speed/band/length or type."
+
+
+Page 539: Chapter 5 Review Question #1 Change Surge To Sag
+----------------------------------------------------------
+
+Page 539, Chapter 5 Review Questions, first answer, last sentence:
+
+Change:
+"A surge is a brief decrease of voltage at the source."
+
+To:
+"A sag is a brief decrease of voltage at the source."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-0635-8 TKBOOK
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

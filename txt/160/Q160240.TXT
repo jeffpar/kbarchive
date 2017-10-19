@@ -1,0 +1,78 @@
+DOCUMENT:Q160240  14-NOV-2000  [word97]
+TITLE   :WD97: Office Assistant Balloon Has No Controls After Replace
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you perform a find and replace while the Office Assistant is running, the
+balloon message that informs you of how many replacements were made does not
+include an OK or a Close button. The Cancel button in the Find and Replace
+dialog box does not change to Close while the balloon message is displayed.
+
+WORKAROUND
+==========
+
+To work around this problem so that the Cancel button in the Find and Replace
+dialog box changes to Close, use one of the following methods:
+
+Method 1: Click the Find and Replace dialog box.
+
+Method 2: Press any key.
+
+Method 3: Click the balloon message.
+
+The balloon message is closed, the focus is returned to the Find and Replace
+dialog box, and the Cancel button changes to Close.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+
+MORE INFORMATION
+================
+
+A balloon message is an interactive message that requires you to confirm or
+cancel an action before you can close it. The balloon message that appears after
+you complete a find and replace operation does not include an OK or a Close
+button. If you click the Office Assistant while the balloon message is visible,
+the Office Assistant prompts you for a Help topic. If you click in the document
+while the balloon message is visible, you get a system beep.
+
+Additional query words: 8.0 word8 word97 search
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

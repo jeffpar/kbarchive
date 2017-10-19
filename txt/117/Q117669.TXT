@@ -1,0 +1,59 @@
+DOCUMENT:Q117669  03-OCT-1999  [win95x]
+TITLE   :Changing Video Drivers in 3.11--Repeated Prompts for Disk 1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to change the video driver in Windows 3.11 to a driver that has not
+been previously installed (or when you select "New" for a previously installed
+driver), Setup prompts you to insert Disk 1. After you choose OK, it continues
+to prompt you to insert Disk 1 without completing the video driver change.
+
+CAUSE
+=====
+
+This problem occurs because the Windows portion of SETUP.EXE is coded to find
+the file WIN.CNF on Disk 1. With Windows 3.11, this file is on Disk 2 of the
+3.5-inch 1.44-megabyte (MB) disk set and Disk 3 of the 5.25-inch 1.2- MB disk
+set.
+
+RESOLUTION
+==========
+
+To finish Setup, insert Disk 2 of the 3.5-inch 1.44-MB disk set or Disk 3 of the
+5.25-inch 1.2-MB disk set instead of Disk 1, or run SETUP.EXE from the Windows
+directory at an MS-DOS command prompt.
+
+Additional query words: 3.11 vga svga
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

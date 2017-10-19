@@ -1,0 +1,73 @@
+DOCUMENT:Q135692  08-AUG-2001  [winnt]
+TITLE   :"List Name From" List Box Shows Only 20 Trusted Domains
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After establishing more than twenty trust relationships, User Manager and File
+Manager do not list all the trusted domains. The Add Users and Groups dialog box
+List Name From list box lists only twenty domains plus the current domain name.
+Permissions can be successfully assigned by manually typing in the appropriate
+user account or group from an unlisted trusted domain.
+
+CAUSE
+=====
+
+When there are many trusted domains in a network, attempts to enumerate trusted
+domain names require multiple calls to the LSA API. The LSA API indicates this
+by returning ERROR_MORE_DATA as a status code to the calling routine. In this
+case, the calling routine overwrites the returned status code of ERROR_MORE_DATA
+before it checks the status again to see if additional calls to the LSA API are
+necessary.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Windows NT Workstation and Server version
+4.0.
+
+To correct this problem, upgrade to Windows NT 3.51 (if you have not already done
+so) and install the latest U.S. Service Pack for Windows NT version 3.51.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in Windows NT Workstation or Server version 4.0.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

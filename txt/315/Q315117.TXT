@@ -1,0 +1,78 @@
+DOCUMENT:Q315117  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Err Msg: You Must Purchase Asheron's Call...
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enter a portal in Microsoft Asheron's Call, you receive the following
+error message:
+
+   You must purchase Asheron's Call: Dark Majesty to use this portal.
+
+CAUSE
+=====
+
+This behavior occurs when you do not have a subscription to Asheron's Call Dark
+Majesty or did not enter the portal through the Asheron's Call Dark Majesty
+lobbies on the Zone.
+
+RESOLUTION
+==========
+
+To resolve this issue, purchase Asheron's Call Dark Majesty and redeem the
+coupon on the MSN Nickname associated with the .NET Passport that you are
+currently playing with.
+
+To redeem the coupon, follow these steps:
+
+1. Go to the following Microsoft Web site:
+
+   http://zone.msn.com/asheronscallxp/minilaunch2.asp
+
+2. Click Sign In to sign in with your .NET Passport.
+
+3. Click Subscription.
+
+4. Follow the onscreen instructions to subscribe to Asheron's Call Dark Majesty.
+
+5. Connect to Asheron's Call through the Asheron's Call Dark Majesty lobbies. To
+   do this, go to the following Microsoft Web site and click one of the worlds
+   listed:
+
+   http://zone.msn.com/asheronscallxp/minilaunch2.asp
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

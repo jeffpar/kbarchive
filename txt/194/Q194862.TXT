@@ -1,0 +1,77 @@
+DOCUMENT:Q194862  13-JUN-2002  [visualc]
+TITLE   :PRB: "QueryInterface:function does not take 1 parameters" Error
+PRODUCT :Microsoft C Compiler
+PROD/VER::3.0,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtemplate kbCOMt kbVC600 kbATL300 kbFAQ kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL) 3.0, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build an ATL project, you may get the following compiler error:
+
+   c:\program files\microsoft visual studio\vc98\atl\include\atlcom.h(3331) :
+   error C2660: 'QueryInterface' : function does not take 1 parameters
+
+CAUSE
+=====
+
+In Visual C++ 6.0, a templated version of QueryInterface(), which takes one
+parameter (instead of the usual two), was added to IUnknown. In ATL 3.0,
+CComTypeInfoHolder::GetTI() uses this templated version of QueryInterface(). If
+you have an older version of Unknwn.h in your Include path, you get this
+compiler error. For example, having the Platform SDK Include directory in front
+of the \VC98\Include directory causes this problem.
+
+RESOLUTION
+==========
+
+Replace the Unknwn.h in the other Include directory with the one from the Visual
+C++ 6.0 Include directory.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Samson
+Tanrena, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtemplate kbCOMt kbVC600 kbATL300 kbFAQ kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbVCNET
+Version           : :3.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,69 @@
+DOCUMENT:Q240285  04-SEP-1999  [homegame]
+TITLE   :NBA Inside Drive 2000: Cannot Hear Sound in Introductory Video
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsound kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft NBA Inside Drive 2000, you may be unable to hear the
+soundtrack of the introductory video clip.
+
+CAUSE
+=====
+
+This behavior can occur if audio compression is not installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, install audio compression:
+
+1. Quit NBA Inside Drive 2000.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Add/Remove Programs.
+
+4. Click the Windows Setup tab.
+
+5. Under Components, click Multimedia, and then click Details.
+
+6. Click to select the Audio Compression check box, and then click OK.
+
+7. Click OK.
+
+8. Restart NBA Inside Drive 2000.
+
+Additional query words: 1.00 msgame nba2000 nba2k basketball opening movie mute silent
+
+======================================================================
+Keywords          : kbenv kbsound kbimu msgame 
+Technology        : kbGamesSearch kbNBAInsideDrive2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

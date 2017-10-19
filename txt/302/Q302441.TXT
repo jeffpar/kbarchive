@@ -1,0 +1,66 @@
+DOCUMENT:Q302441  20-JUN-2001  [msnetwork]
+TITLE   :E-mail Message Opens In New Window Behind Main Window In MSN Exp
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You sign in to MSN Explorer version 6.1. When a new e-mail message arrives, a
+box appears just above the system tray (by the clock on your computer). You
+click the link inside this box to open the new message. The message opens in a
+new window, but the window that is already open is larger, and so the window for
+the new message is hidden.
+
+CAUSE
+=====
+
+This is a known issue. This issue will be resolved with the release of Internet
+Explorer 6.0.
+
+RESOLUTION
+==========
+
+Do one of the following:
+
+ - Click the box (this box should appear as a butterfly followed by the title of
+   the message) in the taskbar.
+
+ - Minimize the main MSN Explorer window.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNExplorer
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

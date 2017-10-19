@@ -1,0 +1,71 @@
+DOCUMENT:Q140846  05-FEB-2002  [powerpt]
+TITLE   :PPT7: "Could Not Find Pngsetup.ex_" Using Pack And Go Wizard
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbpng
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the PowerPoint Pack And Go Wizard, you may receive the following
+error message:
+
+   There may not be enough free space on A:\ to allow storage of the
+   presentation. Do you want to continue?
+
+If you click Yes and continue, you may receive the following error message:
+
+   Could not find Pngsetup.ex_. You may need to run Setup and reinstall.
+
+CAUSE
+=====
+
+These error messages occur when there is not enough available disk space to
+create the Pngsetup.ex_ file on the floppy disk or there are bad sectors on the
+disk causing the writable disk space to be less than 53.3K.
+
+RESOLUTION
+==========
+
+Test the floppy disk to make sure the disk has enough available space by trying
+to copy a file larger than 53.3K to it.
+
+MORE INFORMATION
+================
+
+You must have enough disk space for the files Pngsetup.exe and Pres0.png. If
+there is not enough disk space, you may not be able to unpack the presentation
+successfully.
+
+Additional query words: 7.00 ppt7 ppt95 png Pack and Go PowerPoint Powerpt pngsetup.ex_
+
+======================================================================
+Keywords          : kbpng 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : :7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

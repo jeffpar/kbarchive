@@ -1,0 +1,62 @@
+DOCUMENT:Q152246  21-AUG-1999  [foxpro]
+TITLE   :Refresh Setting in Visual FoxPro Has Effect on Buffered Data
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0;3.0b;6.0
+OPER/SYS:
+KEYWORDS:kbenv kbvfp300 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The setting of Refresh in Visual FoxPro has a direct effect on buffered data. If
+the command:
+
+      SET REFRESH TO 0,0
+
+is issued in a program, or if:
+
+      REFRESH=0,0
+
+is placed in the Config.fpw file, the buffers are never refreshed due to the
+second parameter being a zero (0).
+
+MORE INFORMATION
+================
+
+The setting of Refresh will have an effect on the Browse and also have an effect
+on the Grid container.
+
+REFERENCES
+==========
+
+Please see the "Set Refresh" topic of Visual FoxPro Online Help.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbenv kbvfp300 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : WINDOWS:3.0;3.0b;6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

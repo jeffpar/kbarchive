@@ -1,0 +1,69 @@
+DOCUMENT:Q112863  07-SEP-2001  [winnt]
+TITLE   :Letter Forms Pull Only from Upper Tray on Postscript Printers
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On certain printers (NEC SilentWriter 97, IBM 4039 PS, and HP LaserJet 4 Si
+Postscript) if you assign "Letter" form to the upper tray and "Letter 8.5 x 11"
+form to the lower tray and try to print to the lower tray, the printer pulls
+paper from the upper instead.
+
+WORKAROUND
+==========
+
+1. Go into Printer, Forms...
+
+2. Click on the form that is already there called "Letter".
+
+3. Type in a new name for the form such as "LowLetter" and press the ADD button.
+
+4. Then create a new queue for the printer and go into it's SETUP button.
+
+5. Click on the "Lower Tray" option for Paper Tray and click the CHANGE button.
+
+6. Select the new form created called "LowLetter" and click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.1 and
+Windows NT Advanced Server version 3.1. This problem is corrected in Windows NT
+version 3.5.
+
+
+Additional query words: prodnt post script
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

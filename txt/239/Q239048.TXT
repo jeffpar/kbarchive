@@ -1,0 +1,66 @@
+DOCUMENT:Q239048  04-FEB-2000  [iis]
+TITLE   :Access Denied When Sending a Request to an Enterprise CA
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new server certificate for use in Internet Information
+Services (IIS) 5.0 using the Web Site Certificate Wizard, you may receive an
+Access Denied error message when sending the request.
+
+This only happens when you request a certificate from an Enterprise Certificate
+Authority (CA).
+
+CAUSE
+=====
+
+This is typically caused by the Certificate Server service not being started on
+the computer you are sending the request to.
+
+RESOLUTION
+==========
+
+Make sure that the Certificate Server service is running on the computer that
+you are sending the request to.
+
+STATUS
+======
+
+This is a known issue with the Web Site Certificate Wizard and Microsoft
+Certificate Services (Enterprise CA).
+
+Additional query words: iis CA access denied
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,92 @@
+DOCUMENT:Q158868  17-DEC-2000  [win95x]
+TITLE   :Computer May Not Boot After Canceling Setup During File Copy
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you cancel the setup of OEM Service Release version 2.1 (OSR2.1) over OEM
+Service Release 2 (OSR2) during the file copy stage, you receive a successful
+setup message and you are prompted to restart your computer. The next time you
+start your computer, you may receive real-mode error messages and a Windows
+Protection Error message, after which the computer stops responding (hangs).
+Subsequent reboots generate the same errors.
+
+CAUSE
+=====
+
+Some of the OSR2.1 files were not copied to the computer and Setup was not
+completed. Your computer contains a mixture of OSR2 and OSR2.1 files.
+
+RESOLUTION
+==========
+
+Run the OSR2.1 uninstall tool. This is a file named Rem.pss on the installation
+disk. To use the uninstall tool, follow these steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+   the F8 key, and then choose Safe Mode Command Prompt Only from the Startup
+   menu.
+
+2. Copy the Rem.pss file to the root directory of the boot drive as a file named
+   Remusb.bat.
+
+3. Type "remusb" (without the quotation marks) to restore your original files.
+
+4. Restart your computer normally. Use the Add/Remove Programs tool in Control
+   Panel to remove the program named "WDM/USB Supplement."
+
+   NOTE: This program may not be listed in the Add/Remove Programs tool depending
+   on when Setup was canceled. If it is not listed, skip this step.
+
+5. Delete the Remusb.bat file from the root directory of the boot drive.
+
+MORE INFORMATION
+================
+
+There are several stages to Setup, and canceling Setup during most of them is
+harmless. The following list summarizes these stages:
+
+ - End User License Agreement - OK to cancel
+
+ - ScanDisk - Cancelling Setup during ScanDisk (or canceling ScanDisk itself) is
+   OK
+
+ - Initial extraction from cabinet files - OK to cancel
+
+ - Actual file copy stage - problems will occur if you cancel Setup at this
+   point.
+
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR210
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,70 @@
+DOCUMENT:Q169739  14-NOV-2000  [word97]
+TITLE   :WD97: Error Message on Clicking Help Button for Convert to Frame
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage kbdta word97 kbframe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the double arrow button (>>) in the Convert To Frame Help
+topic, the following error message may appear:
+
+   The topic does not exist. Contact your application vendor for an updated Help
+   file. (129)
+
+When you click OK, you receive an unrelated Help topic.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+This problem has been corrected in Word 2000.
+
+
+MORE INFORMATION
+================
+
+For more information about the difference between a frame and a text box, click
+the Office Assistant, type "what is the difference between a frame and a text
+box," click Search, and then click "The difference between a text box and a
+frame."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kberrmsg kbusage kbdta word97 kbframe 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

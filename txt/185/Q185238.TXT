@@ -1,0 +1,82 @@
+DOCUMENT:Q185238  11-JAN-2001  [vbwin]
+TITLE   :PRB: LostFocus of Textbox Control Has Different Behavior
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual Basic version 4.0, when a TextBox control has focus and a toolbar is
+clicked, the LostFocus event of the TextBox is executed. Visual Basic 5.0 and
+later does not behave the same way and the LostFocus event is not executed.
+
+RESOLUTION
+==========
+
+The toolbar is behaving similar to a menu, which is more appropriate.
+
+Do not use a toolbar, in Visual Basic version 5.0, if you want the LostFocus
+event of the TextBox control executed when the toolbar is clicked.
+
+Instead, have a CommandButton control on the form if executing LostFocus is
+important to the applications design.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE project with 1 form. Add Microsoft Common Controls by
+   clicking Components on the Project menu.
+
+2. Place a toolbar on the form.
+
+3. Add a TextBox control to the form and place one button on the toolbar by
+   right-clicking the toolbar and clicking Properties.
+
+4. Place a MsgBox command in the textbox LostFocus event:
+
+         MsgBox "LostFocus Event of TextBox Control"
+
+5. While the textbox has focus, click the Toolbar control. Note that Visual
+   Basic version 4.0 displays the MsgBox, while Visual Basic version 5.0 does
+   not.
+
+Additional query words: text box tool bar kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbCtrl
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

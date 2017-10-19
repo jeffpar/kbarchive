@@ -1,0 +1,69 @@
+DOCUMENT:Q74882  04-MAY-2001  [masm]
+TITLE   :MASM MUL Operation Accepts Only One Operand
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:5.01a,5.1,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.1, 5.01a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The assembly language multiplication instruction MUL accepts only one operand.
+The second operand is implied to be either the AX or the AL register depending
+on whether an 8-bit multiplication or 16-bit multiplication is being performed.
+
+If a second operand is specified, the Microsoft Macro Assembler (MASM) version
+6.0 will generate the following error:
+
+   error A2008: syntax error : ,
+
+MASM versions 5.1 and 5.1a generate the following warning:
+
+   warning A4001: Extra characters on line
+
+MORE INFORMATION
+================
+
+The sample code below can be used to illustrate this situation. Assembling the
+code with MASM version 5.1, 5.1a, or 6.0 will result in one of the above
+errors.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+       .MODEL small
+       .CODE
+       mul ah, 10
+       END
+
+Additional query words: kbinf 5.10 5.10a 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600
+Version           : MS-DOS:5.01a,5.1,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

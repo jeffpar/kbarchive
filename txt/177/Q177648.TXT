@@ -1,0 +1,84 @@
+DOCUMENT:Q177648  09-AUG-2001  [winnt]
+TITLE   :RAS Error: TCP/IP CP Reported Error 733: The PPP Control...
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect a Remote Access Service (RAS) client to your
+multihomed RAS Server or Routing and Remote Access Service (RRAS) Server, which
+is also a Dynamic Host Configuration Protocol (DHCP) server, the client may get
+the following error:
+
+   TCP/IP CP reported error 733: The PPP control protocol for this network
+   protocol is not available on the server.
+
+On your RAS server, Event Viewer may log one or more of the following event
+messages:
+
+   Event ID   : 1011
+   Source     : DhcpServer
+   Description: The DHCP server issued a NACK to the client
+                (5241532090DAE6D09FD4BC0101000000) for the address
+                (160.62.1.126) request.
+
+NOTE: The hardware address and the IP address above will be different for your
+network environment.
+
+
+-or-
+
+   Event ID   : 20091
+   Source     : RemoteAccess
+   Description: The remote Access Server was unable to acquire an IP
+                Addresss from the DHCP Server to be used on the Server
+                Adapter. Incoming user will be unable to connect using IP.
+
+RESOLUTION
+==========
+
+To work around this issue, you will need to reconfigure your RAS server to use a
+static pool of IP addresses. If the addresses that you use exist within the
+scope of addresses in your DHCP server scopes, you also need to exclude the
+range in DHCP Manager.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: multi-homed
+======================================================================
+Keywords          : kberrmsg kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

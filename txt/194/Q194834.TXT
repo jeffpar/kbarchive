@@ -1,0 +1,366 @@
+DOCUMENT:Q194834  05-MAR-2002  [winnt]
+TITLE   :List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 2)
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP4
+OPER/SYS:
+KEYWORDS:kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+ - Microsoft Windows NT Server version 4.0 SP4 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is part three of a current listing of the article numbers for bugs
+that were fixed in Service Pack 4 for Windows NT 4.0 and Windows NT Server 4.0,
+Terminal Server Edition. Service packs are cumulative. This means that the bugs
+fixed in a service pack are also fixed in subsequent service packs. Use the
+Qxxxxxx number that precedes the title of the bug fix to query the Microsoft
+Knowledge Base to find an article about that bug.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q150734 List of Bugs Fixed in Windows NT 4.0 and Terminal Server Edition
+   Service Pack 4 (Part 1)
+
+   Q224793 List of Bugs Fixed in Windows NT 4.0 and Terminal Server Edition
+   Service Pack 4 (Part 3)
+
+In addition to the bugs listed below, the latest service pack for Windows NT
+Server 4.0, Terminal Server Edition fixes the following problems:
+
+   Q222970 List of Bugs Fixed in Terminal Server Edition
+
+For more information on bugs fixed in Windows NT 4.0 Service Pack 1, 2, and 3,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q224792 List of Bugs Fixed in Windows NT 4.0 Service Pack 1, 2, and 3
+
+For information on obtaining the latest service pack for Windows NT 4.0 and
+Terminal Server Edition, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+MORE INFORMATION
+================
+
+Service Pack 4 Continued
+------------------------
+
+   Q177757 Dr. Watson Does Not Report Service Pack Number
+   Q177868 SnmpMgrTrapListen API Returns ERROR_SERVICE_NOT_ACTIVE Error If Not
+   Administrator
+   Q177983 Stop 0xA in Netbt.sys with Greater Than 64 Adapters
+   Q178109 Roving Profiles for Windows 95 Clients Stop Working
+   Q178110 File and Print Services for NetWare Does Not Allow OS/2 Clients to
+   Open Files
+   Q178113 Specifying a Group Name in LMHOSTS File May Cause STOP 0xA
+   Q178202 Fix for Loss of Data Records or Partial Records Written to Disk
+   Problem
+   Q178205 Connecting to a Server is Slow over RAS Using LMHOSTS File
+   Q178208 CrashOnAuditFail with Logon/Logoff Auditing Causes Blue Screen
+   Q178302 XADM: Upgrade to Exchange 5.5 Fails If Virus Software Is Enabled
+   Q178364 Macintosh Clients See Files on Windows NT Server Constantly Moving
+   Q178381 SNMP Leaks Memory If the OID Cannot Be Decoded
+   Q178393 SQL Server Hangs When Sending a Message Using SQLMail
+   Q178413 Windows NT System May Stop Responding (Hang) When Running a Filter
+   Driver Such As McAfee Virus Filter
+   Q178414 Archive Bit Is Not Reset When a File Is Renamed
+   Q178471 STOP 0XA Caused by Race Condition in VDM and Process Delete
+   Q178546 CSNW Does Not Display Directory Name with Extended Characters
+   Q178550 IP Address Conflict with Address 0.0.0.0
+   Q178557 Dr. Watson May Display Message Box Even When Disabled
+   Q178636 Directory Listing Not Correct When Using Russian Characters
+   Q178723 "Problems with ""Run Only Allowed Windows Application"""
+   Q178741 Event Log Opening Problem Causes Services.exe Failure
+   Q179092 NWLNKIPX Sends Broadcast RIPX Packets Over the Network
+   Q179107 STOP 0x0000000A in Raspptpe.sys on a Windows NT PPTP Server
+   Q179129 STOP 0x0000000A or 0x00000019 Due to Modified Teardrop Attack
+   Q179147 Access Denied Error Starting Program When Directory Named Program
+   Exists
+   Q179156 Updated TCP/IP Printing Options for Windows NT 4.0 SP3 and Later
+   Q179157 Stop 0xA in Tcpip.sys When Token Ring Source Routing Data Exceeds 18
+   Bytes
+   Q179187 Problems Using TAPI 2.1
+   Q179190 NWRDR May Send Excessive GetNearestServer Requests
+   Q179433 Cache Manager May Cause Data Corruption on SMB Servers on FAT
+   Q179553 Access Violation in PolEdit When Defining Allowed Windows
+   Applications
+   Q179741 System May Stop with a STOP 0x0A Due to Duplicate Free in Afd.sys
+   Q179827 Blue Screens Caused by Pool Corruption Due to Registry Handle Leak
+   Q179873 Files Open with UNC Path May Be Closed Prematurely
+   Q179983 RDR Sessions on UNC Name Images May Log Off Prematurely
+   Q179995 Memory Leak in FPNW Causes Windows NT Server to Hang
+   Q180122 "After Changing the Time, Windows NT May Skip a Day"
+   Q180168 Novell Client 32 for Windows 95 Displays Duplicate Files on FPNW
+   Q180356 NWConv Fails to Apply Correct Group Permissions
+   Q180532 Xircom PC Card Fails to Function
+   Q180622 "STOP: 0x0000001E with STATUS_INSUFFICIENT_RESOURCES with More Than
+   800,000 Files on a Macintosh Volume"
+   Q180648 Windows NT 4.0 Traps with a Stop 0x00000024 in NTFS or Stop
+   0x0000000a
+   Q180716 SFM Fails to Accept Associations with Two-Character Extensions
+   Q180717 SFM: File Date and Time Stamp Change with Get Info
+   Q180718 SFM: Disconnect Macintosh Clients before Dismounting Volume
+   Q180854 Access Violation in Winlogon with Third-Party Gina.dll
+   Q180875 Russian Clients May Have File I/O Problems on an FPNW Server
+   Q180963 Denial of Service Attack Causes Windows NT Systems to Restart
+   Q181022 Err: Cannot Write to LPTx Printing to Parallel Port
+   Q181120 Manual Dial Dialog Fails to Appear when Logging on When Logging on
+   Using Dial-Up Networking
+   Q181311 Data Corruption Occurs with Record Locking on FPNW Server
+   Q181721 Messages not Being Delivered Over an Association
+   Q181799 RPC/TCP Connection Attempt Made Only to First Address
+   Q181859 Stop 0x0000000A When Using UltraBac to Back Up a SQL Server or Reading
+   from a Message Type Pipe
+   Q181928 Using POLEDIT to Save Policy Files on NetWare Servers May Fail
+   Q182005 Euro Currency Not Available in Windows NT Character Sets
+   Q182047 DHCP Server Performance Degraded by Large Number of Scopes
+   Q182205 Clients Cannot Send Mail Attachments Through Modem Sharing
+   Q182227 DNS Server Does Not Check for Delegations Before Forwarding
+   Q182288 RPC May Cause System to Stop Responding during Shutdown
+   Q182322 SNMP Appends Garbage to Data in Response to SNMP Get
+   Q182333 Excessive Processor Usage on Print Servers
+   Q182441 Full Synchronization from Windows NT PDC to LanMan Server May Fail
+   Q182444 NBF MaxFrameSize Calculated Incorrectly on Token Ring
+   Q182540 WinNT x86 MPS HAL Can Fail To Map System Relative IRQs
+   Q182644 DNR Now Sorts IP Addresses for a Multihomed Host Before Returning the
+   List to Winsock Applications
+   Q182781 Client Connections to Multihomed Server Not Load Balanced
+   Q182816 WINS PriorityClassHigh Parameter Does Not Work After Restarting
+   Q182817 CSNW: Unable to Rename File on NetWare Server
+   Q182825 NET USE Returns Error 53 When Host Has 3 or more NICs
+   Q182918 Account Lockout Event also Stored in Security Event Log on Domain
+   Controller
+   Q183054 Taking Ownership Remotely May Set Owner Incorrectly
+   Q183069 Ensoniq PCI Sound Card Experiences Static When Disk Is Accessed
+   Q183123 Find Files Displays Garbled Date if Year is 2000 or Greater
+   Q183125 Shell Doc Property Dialog Custom Date Incorrect after Year 2000
+   Q183292 Print Preview Frequently Causes Access Violation in Spooler
+   Q183335 Calling Card and Area Code Not Dialed Using Both TAPI Options
+   Q183419 Memory Leak in Spoolss.exe Causes Performance Degradation
+   Q183581 Out of Virtual Memory Messages During Windows NT Installation
+   Q183651 Default Memory Settings for Lexmark Optra S 1250 Incorrect
+   Q183652 Access Violation When More Than 200 Adapters Are Installed
+   Q183653 Client Authentication Fails Connecting to Netscape Server
+   Q183654 IBM DTTA-351010 10.1 GB Drive Capacity Is Inaccurate
+   Q183656 "XCOPY Returns ""Invalid Parameter"" When Using Date Switch"
+   Q183657 Unable to Insert OLE Objects into Application Documents
+   Q183664 NDS Logon Scripts Do Not Execute Correctly When Using Objects from
+   Different Partitions
+   Q183676 Window Position of Windisk.exe Causes Access Violation
+   Q183677 Client Authentication with Personal Certificates Fail
+   Q183704 Hide Drives Policy in Common.adm Has No VALUEOFF Statement
+   Q183705 RPC Mishandles Changes in the Number of IP Addresses
+   Q183709 Printing from Xerox 3006 May Cause Paper Jams
+   Q183718 CACLS Not Resolving Principle Names Correctly
+   Q183812 Problems When a Connection over an ISDN Bridge Is Not Closed
+   Q183819 DCOM over HTTP Method Calls May Hang for up to 15 Minutes
+   Q183832 GetHostName() Must Support Alternate Computer Names
+   Q183840 Stop 0xC000021A When Starting Task Manager with CTRL+ALT+DEL
+   Q183859 Integrity Checking on Secure Channels with Domain Controllers
+   Q183875 DHCP Server Leases Excluded Addresses if the Scope Is Expanded
+   Q183886 Access Violation in LSASS When Logging on System
+   Q183930 FIX: IP Is Mangled When Using UDP on Multihomed Computers
+   Q184017 Administrators Can Display Contents of Service Account Passwords
+   Q184026 NetDDE Causes Dr. Watson When Closing Incomplete Connections
+   Q184072 HasOverlappedIoCompleted Returns TRUE While GetOverlappedResult()
+   Returns 0 Bytes Transferred
+   Q184101 Very Small Single and Double-Precision Values Are Rounded to Zero on
+   Alpha Computers
+   Q184132 The Value Entered Does Not Match with the Specified Type
+   Q184137 URL For _AuthChangeUrl Is Incorrect When Connecting Via Proxy Server
+   Q184139 Stopping RPC Locator Service Causes Error 2186
+   Q184213 SystemFileCacheInformation Can Be Changed Without Privilege
+   Q184219 Access Violation in Microsoft TAPI Browser 2.0
+   Q184228 Dr. Watson in Nwssvc.exe Deleting Queue and Printer from FPNW
+   Q184229 Copying Files to a Macintosh Volume Changes Date and Time Stamp
+   Q184278 Server in One Domain May Disconnect Client in Another Domain
+   Q184288 GP Fault May Occur with IIS on Multiprocessor System
+   Q184344 Reconcile on DHCP Scope Does Not Work Correctly for BOOTP Client
+   Q184350 WordPerfect Suite 6.0 Setup Fails with Multiple CD-ROMs
+   Q184353 DHCP ALT+H Shortcut Key for HELP Is Not Available
+   Q184414 Access Violation When Printing PostScript to SFM Print Server
+   Q184537 Very Large Files Cause Performance Problems
+   Q184538 Error Message: A Controller for This Domain Could Not Be Found
+   Q184744 DHCP Server Leaks Registry Quota on Alpha Version of Windows NT
+   Q184752 Xerox PCL Does Not Print Landscape
+   Q184754 Several Threads Created in LRPC Running Stress Test in IIS
+   Q184758 STOP 0x78 When NonPagedPoolSize > Seven-eighths of Physical Memory
+   Q184794 STOP 0x50 May Be Caused by PPTP Registry Entries
+   Q184832 Intermittent Name Conflicts with WINS Server
+   Q184835 Explorer on Windows 95 DFS Client May Hang
+   Q184836 Application Access Violates When Session Is Terminated
+   Q184875 API Function BroadcastSystemMessage() Always Returns 1 (Success)
+   Q184879 Windows NT Logon Dialog May Disappear
+   Q184881 Reverse Lookups with BIND Earlier Than 4.8.3 Fail with Unknown Host
+   Error Message
+   Q184891 Server.HTMLEncode Garbles Extended Characters
+   Q184937 Session Between Multihomed Computers May End Unexpectedly
+   Q184954 Computer Hangs While Booting with HP 6L Printer out of Paper
+   Q184996 Incomplete List of NetWare Server Volumes with CSNW/GSNW
+   Q184998 RDR May Read Or Write from Wrong File If File Is Memory Mapped and
+   Transport Error Occurs
+   Q185051 Restarting Cluster Service Causes Services.exe to Crash
+   Q185081 No Domain Controllers Found When Logging on Using RAS
+   Q185137 Log Logical Record Request May Be Sent to Wrong Server
+   Q185142 NetWare API Log Logical Record may Incorrectly Succeed
+   Q185203 SPOOLSS Hangs When Printing a File With a Corrupted EMF Record
+   Q185212 Cluster Server Does Not Support More than 900 Shares
+   Q185219 IIS 4.0 with Multiple Certificates May Return Error
+   Q185260 User Accounts May Get Locked out After Entering Wrong Password Using
+   RAS
+   Q185300 STOP 0x24 in Ntfs.sys Function NTFSMoveFile()
+   Q185323 Pool NonPaged Bytes Not Accurately Calculated for User Mode Processes
+   by Perfmon Counters
+   Q185349 Problems Remotely Accessing W3 or FTP Perfmon Counters
+   Q185355 Printers Folder Displays Printer Error When Printer Is Busy
+   Q185559 Negative Value in NtGdiFastPolyPolyline Causes Blue Screen
+   Q185568 WlxCloseUserDesktop Function Unavailable for GINA Writers
+   Q185571 Printing from Lotus Freelance 97 Produces Thin Horizontal Line
+   Q185605 Stop Error Caused by Invalid Use of Private Video Driver Handle
+   Q185624 Calls to NtQueryVolumeInformationFile May Cause Stop 0x0000001E
+   Q185625 Windows NT Client Logon Fails with EnableSecuritySignature Set
+   Q185668 IntelliMouse TrackBall Wheel Does Not Work with Service Pack 3
+   Q185682 Bugcheck When IPX Is Bound to Only Ndiswan Adapter
+   Q185722 SFM Rebuilds Indexes upon Restarting of Windows NT
+   Q185723 Explorer File Copy from Windows 95 Share Fails
+   Q185727 BUG: closesocket() Fails with 10038 After _open_osfhandle()
+   Q185729 Computer Becomes Unresponsive During CGI Stress Test
+
+
+
+   Q185736 Applications May Appear Hung or Unresponsive on Windows NT 4.0
+   Q185765 HP LaserJet 4Si Driver Unprintable Region is Incorrect
+   Q185773 NTFS Corruption on Drives Larger Than 4 GB When Using Windows NT
+   ExtendOEMPartition
+   Q185787 STOP 0x0000002E on Alpha with ISA Sound Card
+   Q185788 Windows NT Hangs on Boot on DEC Alpha Clustered Servers
+   Q185791 STOP on DEC Miata and Rawhide Platforms Using Graphics Tablet
+   Q185867 STOP 0x0000000A in Win32k.sys After Installing Korean Office 97
+   Q185870 SQL Server Insert Error Regarding Column Name Mismatch
+   Q185892 Unwanted Popup Message While Printing to an LPR Printer
+   Q185944 Stop 0x7B After Installing Windows NT on an ALR Evolution-V ST
+   Q185945 Access Violation in win32k!HMMarkObjectDestroy in Japanese and Korean
+   Windows NT
+   Q186051 Archive Bit Is Not Set with File or Directory Rename
+   Q186078 Name Resolution May Fail If NetBios Name Has ASCII Sixteenth
+   Character
+   Q186081 STOP 0x0000000A When Restoring Tape
+   Q186101 FTP Client Does Not Show the Correct Transfer Size for Files Larger
+   Than 4 GB
+   Q186131 MS-DOS Application Using Novell IPX API May Leak Memory in NTVDM
+   Q186150 NetBEUI May Hang When Using Arcnet Under Heavy Network Traffic
+   Q186158 Blue Screen When Shutting Down with RAS Connection Established
+   Q186217 3C509 Is Not Autodetected During Setup on ThinkPad 760EL and XL
+   Q186241 Dr. Watson May Cause CPU Usage to Spike
+   Q186247 Users Are Unable to Print to Server
+   Q186339 Adobe ATM 4.0 OpenType Fonts Not Showing up in Font Menu
+   Q186357 RPC UseWinsockForIP Is Only Applicable to UDP and IPX
+   Q186416 System Hang Results from Large Number of Notify Syncs
+   Q186434 Slow Network Default Profile Operation
+   Q186439 Removing Server Service Results in Memory Leak
+   Q186455 Mgmtapi.dll Opens Trap Socket in Exclusive Mode
+   Q186463 Windows NT Replies to Address Mask Requests
+   Q186473 You Can Delete All Records on a WINS Server Using SNMP
+   Q186494 Event ID 517 Not Created When Security Log Is Cleared by a Non-System
+   Administrator
+   Q186495 WOW Leak Launching Many Instances of a 16-Bit Application
+   Q186669 "FPNW Logout.exe Incorrectly Reports Year on or After Jan. 1, 2000"
+   Q186743 International Characters Print Incorrectly in Schedule Plus
+   Q186746 International Calling Codes Updated in Service Pack 4
+   Q186770 Windows NT Hangs Trying to Access SuperDisk SLS-120 Disk Drive
+   Q186805 Intermittent Stop 0xA in Srv.sys on Shutdown
+   Q186820 DNS Server Returns Wrong Response (rcode) When WINS Lookup Is Enabled
+   Q186860 Update Memory Settings and Add Exec Paper Size to Sharp Models
+   Q186873 Netbios Delays Sending/Receiving Packets When Session Is Lost
+   Q186904 MPROUTER Access Violation on Invalid Radius Response
+   Q186905 Radius Client Uses 100 Percent CPU on Invalid Response
+   Q186929 LowercaseFiles Registry Key Has Added Functionality
+   Q186963 Incorrect Dimensions in Executive Form with Mannesmann Driver
+   Q187277 The FTP PORT Command Fails in IIS 3.0 When the System Has Multiple
+   Network Interface Cards
+   Q187302 Stop 0x00000040 in NetBT Protocol
+   Q187392 PATCH: Stop 0x0000000A in Wind32k.sys xxxDDETrackWindowDying
+   Q187493 Some Netscape Client Certificates Rejected by IIS
+   Q187503 Very Long URL Passed to ASP May Cause Access Violation
+   Q187508 FTP Server Fails to Respond If First Binding Does Not Work
+   Q187518 Applications Using Beep API on Multiprocessor Systems May Crash
+   Q187519 NTBackup Will Not Run from Command Line with Blank Space
+   Q187520 Tandberg SL5 Tape Device Not Auto-Detected in Window NT 4.0
+   Q187555 WINS Incorrect Version ID Assigned During Scavenging or Consistency
+   Check
+   Q187576 Stop 0x0000000A May Occur in TCP/IP While Invalidating a Cached Route
+   Table Entry
+   Q187577 STOP 0xA Because of Spin Lock in Sfmatalk.sys on DEC Alpha
+   Q187615 Setup Hangs When System Includes More Than Two RAW Drives
+   Q187669 Unable to Use NetBIOS Resources over SLIP
+   Q187672 Access Violation in RAS Using Multilink
+   Q187686 LookupAccountSid Causes Access Violation on Multihomed System
+   Q187696 Changes to Calculator in Service Pack 4
+   Q187705 Application Error in CorelWEB.GALLERY
+   Q187708 Cannot Connect to SQL Virtual Server via Sockets in Cluster
+   Q187709 Windows NT 4.0 Domain Name Resolver Caches Responses Regardless of
+   Registry Setting
+   Q187769 Application Error in NTVDM Running cc:Mail Utilities
+   Q187802 "DHCP Assigns ""Bad_Address"" to ""Host Unreachable"""
+   Q187830 Performance Decrease Transmitting Data over the Network
+   Q187856 Limit SSL Message Size to 16 KB for Netscape
+   Q187884 CoCreateInstance Under Stress on Multiple Threads at the Same Time
+   Causes Long Hangs or Returns Failure
+   Q187936 Application May Hang Calling LogonUser() API
+   Q187939 IPX May Not Work When Packet Size Is Larger Than Receive Buffer
+   Q187940 Input Filters over IPX WAN Routing May Fail to Filter Packets
+   Q187941 An Explanation of CHKDSK and the New /C and /I Switches
+   Q187947 100 Percent CPU System Handle Problem
+   Q187964 MGI PhotoSuite May Paste Screenshots As Garbage Or an Access Violation
+   Occurs
+   Q187999 Access Denied Occurs with Personalization System & Membership
+   Server Authentication
+   Q188000 Cannot Enter Stand-Alone Dieresis Character on Swiss Keyboards
+   Q188027 "Performance, Audit Logging, and Fixes to the DHCP Service"
+   Q188303 Random Stop 0x50 Errors on Cirrus Video Adapters
+   Q188312 Lexmark Optra E+ Unprintable Region Is Incorrect
+   Q188315 Stop Error Message in Sfmsrv.sys
+   Q188342 500 Server Error Posting Data from Form with SSL & NTLM Required
+   Q188414 Random Stop 0x0000000A When Running IPX over Token Ring
+   Q188424 WD97: Multilayered Display Driver Produces Black Line in Word When
+   NetMeeting Is Installed
+   Q188571 STOP 0x0000000A in Netbt.sys Caused by Invalid DNS Record
+   Q188652 Error Replicating Registry Keys
+   Q188700 Screensaver Password Works Even if Account Is Locked Out
+   Q188806 ::$DATA Data Stream Name of a File May Return Source
+
+Additional query words: servpack SP1 SP2 SP3 SP4 bug fix qfe compact disc nt4sp4fixlist
+
+======================================================================
+Keywords          :  kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400sp4 kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0,4.0 SP4
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

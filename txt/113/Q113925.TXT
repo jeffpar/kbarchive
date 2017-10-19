@@ -1,0 +1,62 @@
+DOCUMENT:Q113925  08-NOV-2001  [visualc]
+TITLE   :FIX: Visual Workbench Cannot Create Project
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbide kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Workbench for Windows, version 1.0 
+ - Microsoft Visual C++, version 1.5 
+ - Microsoft Visual C++, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When opening a new project which is located in a nonexistent directory, it is
+possible to get a message box containing the following error:
+
+   Cannot switch to drive ". Cannot Create the Project.
+
+RESOLUTION
+==========
+
+Closing all of the open Workbench windows will resolve this problem. From the
+Workbench menu, select Windows and then Close All. You can then return to the
+Project menu, select New and create your project.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Microsoft Visual C++,
+32-bit Edition, version 2.0.
+
+Additional query words: fail 1.00 1.10 1.50 S_VCNT S_VWB
+
+======================================================================
+Keywords          : kbide kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbVSsearch kbAudDeveloper _IKkbbogus kbvc150 kbvc100 kbVWB
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

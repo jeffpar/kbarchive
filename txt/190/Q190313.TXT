@@ -1,0 +1,79 @@
+DOCUMENT:Q190313  11-DEC-1999  [foxpro]
+TITLE   :PRB: Form QueryUnload Fires Before the Activate Event
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under certain conditions, the QueryUnload event of a form fires before the
+Activate event. If code in the Activate event of a form takes some time to
+execute, the QueryUnload event fires before the code in the Activate event.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add the following code to the Activate event of the form:
+
+         ? "Inside the Activate event."
+         *DEBUGOUT PROGRAM()
+         FOR i = 1 TO 5000
+               SET MESSAGE TO ALLTRIM(STR(i))
+         NEXT i
+
+2. Add the following code to the QueryUnload event of the form:
+
+         ? "Inside the QueryUnload event."
+         *DEBUGOUT PROGRAM()
+         WAIT WINDOW "Inside the QueryUnload Event."
+
+3. Run the form and click the Command window to remove focus from the form. Now,
+   click the Close control to close the form. Notice that the Activate event
+   fires, then the QueryUnload event fires.
+
+4. Unremark the two DEBUGOUT commands and remark the WAIT WINDOW command. Open
+   the Debugger and note that in the Output window of the Debugger the
+   QueryUnload event fires after the Activate event.
+
+Additional query words: FxprgClassoop FxtoolFormdes kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

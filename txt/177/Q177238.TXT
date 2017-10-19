@@ -1,0 +1,140 @@
+DOCUMENT:Q177238  18-APR-2001  [vbwin]
+TITLE   :HOWTO: Hyperlink in UserDocuments
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.02,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbIE400 kbInternet kbVBp kbVBp500 kbVBp600 kbIE302 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Internet Explorer (Programming) versions 3.02, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how to use the hyperlink object from a UserDocument
+(Visual Basic Active Document) to navigate to another document. It demonstrates
+the following:
+
+1. How to use the Hyperlink.NavigateTo.
+
+2. How to use Parent.LocationURL.
+
+3. How to construct an absolute URL.
+
+4. Why Parent.LocationName and App.Path are not suitable for this purpose.
+
+MORE INFORMATION
+================
+
+From your UserDocument, you can jump to other UserDocuments that are in your
+application (Internal Jumping) or you can jump to other Web locations or
+documents (External Jumping). In both cases, you use the Hyperlink object's
+NavigateTo method and supply an absolute URL to where you want to jump. For
+example, you can do the following from your UserDocument code:
+
+      Hyperlink.NavigateTo "http://www.microsoft.com"
+
+This will cause Internet Explorer to navigate to the specified location. You can
+also use this method for jumping to other UserDocuments in your application.
+
+Because you have to specify an absolute URL, using this approach for other
+UserDocuments on a Web site requires extra work. You need to know the full URL
+from which the document (.vbd) was launched. You can get this information using
+Parent.LocationURL from your UserDocument code. The location can be either a Web
+URL or a UNC file location name.
+
+NOTE: You should use the Parent.LocationURL property for retrieving the location
+of the UserDocument. Parent.LocationURL, unlike Parent.LocationName, works
+identically in both Internet Explorer 3 and Internet Explorer 4. In Internet
+Explorer 3, LocationName returns the complete path just as LocationURL does. In
+Internet Explorer 4, LocationName does not always return a complete path.
+
+You should only use App.Path when the document is loaded from the local computer
+because it returns the location where your EXE or DLL exists locally, not the
+location from which the document was downloaded.
+
+Constructing an Absolute URL
+----------------------------
+
+As mentioned before, you need an absolute URL for Hyperlink.NavigateTo method.
+This can be tricky for jumping to other UserDocuments in your application
+because the UserDocuments can reside on a local (or network) file share or on a
+Web server. The following function accepts the new URL in the form of a string.
+This URL can be either a relative or an absolute path. The function returns an
+absolute URL in the form of a string that can be passed to the NavigateTo
+function:
+
+       Function PathFromURL(iURL As String) As String
+       '   Function Name:  PathFromURL
+       '   Pass in a single filename (iURL) and return the full path to that
+       '   file. This works when you run on a local computer (for testing 
+       '   purposes or running from IDE) or when running from a Web server.
+       
+       Dim navPath As String
+       Dim intLocal As Integer
+           
+       '   Check if there is an absolute URL being passed in.
+       '   If so, return that URL.
+       
+       If InStr(iURL, "://") Or InStr(iURL, ":\\") Then
+           PathFromURL = iURL
+       Else
+           '   Find the last "/"
+           intLocal = InStrRev(UserDocument.Parent.locationname, "/")
+           
+           If (intLocal = 0) Then
+           '   If there is not a "/", we are running on the local computer.
+               navPath = App.Path
+           Else
+           '   We are running on the Web server, use locationname to get
+           '   the current path.
+               navPath = Left(UserDocument.Parent.locationname, intLocal - 1)
+           End If
+           
+           '   Append the requested file name to the path for the
+           '   absolute URL.
+           PathFromURL = navPath & "/" & iURL
+       End If
+       End Function
+
+As an example, suppose you have a Doc1.VBD and a Doc2.VBD stored on a server at
+http://demo/hyperlink, but you do not want to hardcode the server name in your
+code so that these VBD files can be moved easily from one server location to
+another. To jump from Doc1.vbd to Doc2.vbd, you can use the above function as
+follows:
+
+      Hyperlink.NavigateTo PathFromURL("doc2.vbd")
+
+Because PathFromURL can work on both URLs and UNC, this technique will work in
+both cases without changing code.
+
+Additional query words: LocationName LocationURL Hyperlink
+
+======================================================================
+Keywords          : kbIE400 kbInternet kbVBp kbVBp500 kbVBp600 kbIE302 kbDSupport 
+Technology        : kbVBSearch kbIEsearch kbAudDeveloper kbZNotKeyword6 kbSDKIESearch kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3 kbSDKIE302 kbSDKIE400
+Version           : :3.02,4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

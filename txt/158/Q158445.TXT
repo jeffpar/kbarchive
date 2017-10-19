@@ -1,0 +1,53 @@
+DOCUMENT:Q158445  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Control Agent Unable to Get Workstation Name
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbtshoot smsremtshoot smshowto kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to load the Remote Control agent on a client computer running
+Windows 95, the Remote Control agent fails with the following error:
+
+   unable to get workstation name: use Lana 0
+
+MORE INFORMATION
+================
+
+This problem generally occurs on Windows 95 clients that have multiple protocols
+loaded, and no protocol is selected as the default. Select the protocol desired
+for Remote Control and set it as the default. You must restart the computer for
+the change to take effect. After that, the Remote Control agent should perform
+normally.
+
+Additional query words: Wuser
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbtshoot smsremtshoot smshowto kbRemoteProg 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

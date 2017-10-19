@@ -1,0 +1,79 @@
+DOCUMENT:Q168514  02-JUL-2000  [exchange]
+TITLE   :XFOR: Rasphone.pbk Cannot Be Accessed
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open the Dial-up Connections tab of the Internet Mail Server
+(IMS) the following error message may appear:
+
+   The Remote Access Service (RAS) phone book cannot be opened. It must be
+   accessible and in the system directory as \ winnt \ system32 \ ras \
+   rasphone.pbk.
+
+CAUSE
+=====
+
+The IMS is unable to locate the Rasphone.pbk file located in the %System
+root%\System32\ras\rasphone.pbk or the file is corrupt.
+
+RESOLUTION
+==========
+
+1. Ensure that the Rasphone.pbk file is not corrupt by using the dial-up
+   networking.
+
+2. Dial from the RAS Phone Book entry; on the Start menu, click Programs, and
+   then click Accessories and then click Dial-Up Networking.
+
+3. Verify that the Rasphone.pbk file is located in the following directory:
+
+   %System root%\System32\ras\
+
+   This can be done using File Manager or Windows Explorer.
+
+4. Ensure that the %System root% (normally the WINNT subdirectory) is shared as
+   Admin$. It should be shared as Admin$ by default.
+
+MORE INFORMATION
+================
+
+Clicking the Dial-up Connection tab in the IMS property starts the Imcadmin.dll,
+which attempts to open the file located in:
+
+   \\server\admin$\system32\ras\rasphone.pbk
+
+Additional query words: remote access
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

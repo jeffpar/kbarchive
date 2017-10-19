@@ -1,0 +1,57 @@
+DOCUMENT:Q93557  30-JUL-2001  [lanman]
+TITLE   :Controlling the Maximum Open Volumes for LMSFM
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+On a server with many Macintosh machines connecting to many volumes, an
+
+   AFP0033:Request to open too many volumes
+
+error can be generated when the default limit of 40 concurrently mounted volumes
+is reached.
+
+MORE INFORMATION
+================
+
+An undocumented parameter can be added to the LANMAN.INI file in the [MacFile]
+section that controls the number of maximum concurrently mounted volumes the
+MACFILE service can support at once. This parameter, maxvolumesopen, is
+defaulted at 40. Its range is 0-500. By adding it to the LANMAN.INI file as
+shown below (and using an appropriate number), you can avoid the above error,
+and the Macintosh users can mount the necessary volumes.
+
+Example
+-------
+
+[MacFile]
+maxvolumesopen = ###
+
+  ; There are no mandatory settings for the MacFile service.
+  ; See the "Administrator's Guide."
+
+Additional query words: 1.00 AFP0033 MAC VOLUMES
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

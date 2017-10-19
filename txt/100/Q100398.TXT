@@ -1,0 +1,58 @@
+DOCUMENT:Q100398  08-DEC-1999  [homemm]
+TITLE   :Bookshelf: Audio Does Not Always Exactly Match Quotation
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The audio clips of quotations in Bartlett's Familiar Quotations may not always
+exactly match the related texts.
+
+For example, in the poem "Fog" [1916] by Carl Sandburg, the audio clip of the
+poet reading does not match the printed quotation.
+
+The quotation appears on the screen as follows:
+
+   ...It sits looking
+   over the harbor and city...
+
+In the audio clip, however, Mr. Sandburg says the following:
+
+   ...It sits looking
+   over city and harbor...
+
+Mr. Sandburg misread his own poem, and no other recording of his voice reading
+was available to include with Bartlett's Familiar Quotations.
+
+Additional query words: 1.0 multi media multimedia multi-media quote poetry Viewer 2.0
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1993
+Version           : :1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

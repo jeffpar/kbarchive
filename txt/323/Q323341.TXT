@@ -1,0 +1,60 @@
+DOCUMENT:Q323341  28-JUN-2002  [sms]
+TITLE   :SMS: Software Installation Account Does Not Work on Windows XP
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP3,2.0 SP4
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0 SP3, 2.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an administrator tries to distribute software by using Systems Management
+Server (SMS) 2.0, an administrator can use a defined software installation
+account. You can use this account to run a program under a different user's
+security context. Programs that target Windows XP clients and use this account
+may not work if they contain command line switches or flags.
+
+WORKAROUND
+==========
+
+To work around this problem, use SMSCliToknAcct& to make the program run
+successfully. This option is defined in the program properties by turning on the
+"Run with administrative rights" feature on the Environment tab.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version SMS 2.0 Service Pack 3 (SP3), SMS 2.0 Service Pack 4 (SP4).
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMS200SP3 kbSMS200SP4
+Version           : :2.0 SP3,2.0 SP4
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

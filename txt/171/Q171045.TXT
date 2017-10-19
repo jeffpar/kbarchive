@@ -1,0 +1,68 @@
+DOCUMENT:Q171045  26-SEP-2001  [frontpg]
+TITLE   :FP97: Inserted Form Field Defaults to New Line
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194053.
+
+SYMPTOMS
+========
+
+When you insert a form field, the form field is repositioned on a new line
+rather than remaining on the same line as preceding text.
+
+CAUSE
+=====
+
+This behavior occurs because a form field must reside in a form. When you insert
+a form field, FrontPage inserts a line break and creates the form area that
+spans the entire width of the page. If you attempt to insert a form field after
+having typed your text, the form is created below the line of text. This
+behavior is by design.
+
+RESOLUTION
+==========
+
+After you add the form field, place the text inside the form. To do this, follow
+these steps:
+
+1. Select the text you want to move into the form.
+
+2. On the Edit menu, click Cut.
+
+3. Place the insertion point to the left of the form field and then click Paste
+   on the Edit menu.
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

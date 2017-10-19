@@ -1,0 +1,77 @@
+DOCUMENT:Q114397  21-NOV-1999  [msdos]
+TITLE   :Setup Error Message Incorrectly Refers to IOSYS.HDR
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If MS-DOS 6.21 or 6.22 Upgrade Setup cannot find the files IOSYSA.HDR or
+IOSYSB.HDR, Setup displays the following error message:
+
+   Setup cannot continue because it cannot read the IOSYS.HDR file. (This file
+   should be located in the same directory as SETUP.EXE.)
+
+Although the error message is correct in that Setup cannot find a required file,
+it refers to a nonexistent file (IOSYS.HDR). The actual file Setup cannot find
+is either IOSYSA.HDR or IOSYSB.HDR.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MS-DOS 6.21 and 6.22 Setup. We
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+RESOLUTION
+==========
+
+To correct this problem, ensure IOSYSA.HDR and IOSYSB.HDR are in the same
+directory as SETUP.EXE.
+
+MORE INFORMATION
+================
+
+IOSYSA.HDR and IOSYSB.HDR contain the checksum and size information for the
+existing IO.SYS file. It provides a means for MS-DOS Setup to verify the version
+and integrity of the existing IO.SYS file.
+
+Each .HDR file can hold two different checksum/size pairs. IOSYS.HDR (from MS-DOS
+6.2 Step-Up) contains this information for the MS-DOS 6.0 and the MS- DOS 6.2
+IO.SYS files. MS-DOS 6.21 has to store information for more IO.SYS files so both
+IOSYSA.HDR and IOSYSB.HDR are used. IOSYSA.HDR holds information for the MS-DOS
+6.0 and 6.2 IO.SYS files and IOSYSB.HDR holds information for the MS-DOS 6.21
+IO.SYS files. MS-DOS 6.22 IOSYSB.HDR holds information for the MS-DOS 6.21 and
+6.22 IO.SYS files.
+
+Additional query words: stepup 6.22 6.20 verification
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622
+Version           : MS-DOS:6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

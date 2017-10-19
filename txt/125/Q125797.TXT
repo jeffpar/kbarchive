@@ -1,0 +1,69 @@
+DOCUMENT:Q125797  17-DEC-2000  [win95x]
+TITLE   :Dell Computer Hangs with ATI Mach 64 ISA Display Adapter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an ATI Mach 64 ISA display adapter in a Dell DE-series computer in
+which the onboard VGA adapter has been disabled through the CMOS (not by using
+the jumper), the computer may stop responding (hang) during Windows 95 Setup, or
+during detection if the ATI adapter is installed after Windows 95 is installed.
+
+This problem can also occur with a Dell Omniplex PCI-series computer. You can
+correct this problem on these computers by upgrading the BIOS to revision A10.
+
+CAUSE
+=====
+
+The Windows 95 detection searches the ROM area of the computer's memory. The ATI
+Mach 64 adapter uses the BFC00 address. During detection, Windows 95 receives
+information from the onboard display adapter, causing Windows 95 to hang.
+
+
+STATUS
+======
+
+Dell Computer Corporation is aware of this situation and is researching the
+problem. We will post new information here in the Microsoft Knowledge Base as it
+becomes available.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: locks crashes display
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

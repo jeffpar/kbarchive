@@ -1,0 +1,56 @@
+DOCUMENT:Q136785  21-MAY-2001  [schedplus]
+TITLE   :Can't See Attachment Sent w/ Sched+ 7.0 Meeting Requests in 1.0
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Microsoft Schedule+ version 7.0 user sends a meeting request to another
+Schedule+ 7.0 user, that user can send attachments along with the meeting
+request. However, when the recipient opens the meeting request and accepts,
+there is no indication within Schedule+ that an attachment is associated with
+the meeting.
+
+RESOLUTION
+==========
+
+When the recipient views the original meeting request from the Microsoft
+Exchange client, the attachment will be present.
+
+To make meeting request recipients aware of the presence of an attachment, the
+originator of the meeting request can include a reference in the Description
+field or the Notes tab.
+
+
+Additional query words: 7.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

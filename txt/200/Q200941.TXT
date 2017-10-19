@@ -1,0 +1,581 @@
+DOCUMENT:Q200941  06-AUG-2002  [exchange]
+TITLE   :XADM: How the Restore in Progress Registry Key Works
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The "Restore in Progress" system registry key is critical to successful
+restoration of an Exchange Server online backup. This article discusses the
+following topics:
+
+ - The general functionality of the registry key.
+
+ - The relationship of the patch (.pat) files to the registry key.
+
+ - How to safely remove this registry key, when necessary.
+
+ - How to create this registry key manually, when necessary.
+
+ - How to interpret error messages that you may receive when the database starts
+   after you restore an online backup.
+
+MORE INFORMATION
+================
+
+After you restore a database from an online backup, its startup sequence is
+different from ordinary database startup in the following three critical ways:
+
+ - The process is controlled by values in the "Restore in Progress" registry
+   key. The checkpoint file (Edb.chk) is completely ignored. In essence, the
+   LowLog Number value in the registry key acts as the checkpoint.
+
+ - At least one log file must be played into the database. Database files that
+   are restored from an online backup are always inconsistent. Log files that
+   are required to make the database file consistent again are saved to tape
+   with the database, and must be replayed into the database after restoration,
+   so there is always at least one log file on every Exchange Server online
+   backup tape. The "Restore in Progress" registry key lists the range of log
+   files restored from tape.
+
+ - Information in the patch files (*.pat) must be applied to the database along
+   with information from the restored log files. Patch information is only
+   applied to the database if the "Restore in Progress" registry key exists.
+
+The following is the path to the "Restore in Progress" registry key:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeDS or
+   MSExchangeIS\Restore in Progress
+
+NOTE: The above registry key is one path; it has been wrapped for readability.
+
+Consistent vs. Inconsistent Databases Files
+-------------------------------------------
+
+An Exchange Server database file is considered inconsistent if there are any
+transactions present in the log files that have not yet been written to the
+database file. This means a database file is always inconsistent during normal
+operation. Because an online backup occurs without interrupting normal
+operation, the database saved to tape is necessarily inconsistent.
+
+During a normal shutdown, the database file is made consistent before the service
+stops; all of the information from the log files is applied to the database
+file. Consequently, when you next start the database, there is no log
+information that needs to be replayed during startup. If the database is
+unexpectedly stopped, the database file is inconsistent, and "soft recovery"
+automatically runs during the next startup, to apply outstanding log
+transactions to the database file before it restarts.
+
+The checkpoint file (Edb.chk) has the following two roles:
+
+ - The checkpoint file keeps track of which logged transactions have been
+   written to the database file. In normal operation, the checkpoint may lag
+   behind by several logs.
+
+ - The checkpoint file provides the information that the online backup process
+   needs to determine which logs should be put on tape and which logs may be
+   safely purged from the disk after the backup is complete.
+
+If the checkpoint file is unavailable after a database has been shut down in an
+inconsistent state, the database scans all of the available log files when it
+restarts to determine whether the log file data has or has not been written to
+the database file. Exchange Server can reliably determine which transactions
+have already been applied. If the checkpoint file is lost in this situation,
+startup merely takes more time.
+
+IMPORTANT: If you manually remove the checkpoint file and remove some log files,
+you may damage the database if it has been shut down in an inconsistent state.
+Exchange Server needs to apply all of the outstanding log transactions when it
+restarts. If only a subset of the outstanding log transactions is found, the
+subset is applied but is not sufficient to retain the integrity of the
+database.
+
+Never remove log files that have not been applied to the database file.
+
+For additional information about how to tell which log files are safe to remove,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q240145 XADM: How to Tell Which Transaction Log Files Can Be Safely Removed
+
+During normal operation, the transaction logs completely describe all changes
+made to the database file. As the database is put on tape, changes may be made
+to the database that affect parts of the file already locked up on tape. Not all
+such changes can be captured in the log files. These changes are therefore
+placed in the patch files.
+
+A patch file contains "snapshots" of specific pages in the database file. As
+transaction logs are replayed into a restored database file, Exchange checks to
+see if a page described in a log file also exists in the patch file. If it does,
+the version from the patch file is used. This process is called "hard recovery"
+(as opposed to the soft recovery described above).
+
+Hard Recovery and the Restore in Progress Registry Key
+------------------------------------------------------
+
+After a restored database has completed recovery successfully, the "Restore in
+Progress" registry key is automatically deleted. But if a startup does not work,
+the key remains in the registry. You may occasionally need to manually delete
+the key after you troubleshoot and resolve the cause of a startup problem. It is
+critical that you do not delete the registry key before all of the patch file
+data has been applied to the database file.
+
+If you delete the "Restore in Progress" registry key and the Edb.chk file, a soft
+recovery is run against a restored database, which scans and applies all of the
+available logs, but without the patch file information.
+
+Therefore, if you remove the "Restore in Progress" registry key, your database is
+guaranteed to be corrupted unless at least one of the following conditions is
+met:
+
+ - The patch file that matches the database is empty.
+
+ - All of the log files that are restored from the full online backup tape have
+   already been replayed into the database.
+
+An "empty" patch file is 8 kilobytes (KB) in size (it has two 4 KB header pages,
+just like a database file). If you do not play the patch file into your
+database, then for every extra 4 KB in the patch file, there is one corrupted
+page in your database.
+
+You only need patch file data to replay logs that come from a full backup tape.
+You do not need the patch file to replay additional log files from incremental
+backups or additional log files that existed on disk before restoration. If the
+startup process stops working at a point after all of the logs from the full
+backup have been played and you delete the "Restore in Progress" registry key,
+you do not cause any damage from missed patch file data.
+
+However, it is not always safe to delete the "Restore in Progress" registry key
+after events are logged in the application event log that indicate the
+successful replay of all of the logs from the tape. The key also remaps and
+controls log file paths during replay, and if the paths have changed between the
+time that the backup was taken and the time that it was restored, when you
+delete the key you may still cause other problems, or you may be unable to
+replay all of the data from all of the logs.
+
+Nonetheless, as a rule of thumb, if the Exchange Server system configuration and
+paths have not been altered after the backup was taken, it is usually safe to
+delete the "Restore in Progress" registry key if you are certain that the
+information from the patch files is no longer needed.
+
+How to Tell If Hard Recovery Has Finished
+-----------------------------------------
+
+You can determine if all of the log replay that requires the patch files is
+complete by performing the following steps:
+
+1. To view the header of the .pat file that corresponds to the database to
+   determine the range of log files that were restored from the full backup
+   tape, run the following command
+
+   ESEUTIL /MH <patch_file>
+
+   where <patch_file> is the file name of the patch file, for example:
+
+   ESEUTIL /MH PRIV.PAT
+
+   NOTE: For Exchange Server 4.0 and Exchange Server 5.0, use the EDBUTIL command
+   instead of the ESEUTIL command. Part of the output is similar to the
+   following:
+
+   
+
+   Current Full Backup:
+        Log Gen: - 36-3f
+           Mark: (58,1409,199)
+           Mark: 8/19/1999 19:47:2
+
+   The Log Gen line under the Current Full Backup section tells you which log
+   files come from the full backup tape. In this case, log files Edb00036.log
+   through Edb0003f.log are from the backup.
+
+2. Open the Windows NT Event Viewer to determine if all of the logs in this
+   range have already been replayed without generating any errors. All of the
+   versions of Exchange Server generate replay events that contain text in their
+   descriptions similar to the following text:
+
+   The database engine is replaying log file E:\Exchsrvr\Mdbdata\Edbxxxxx.log.
+
+   Make sure that a similar event has been generated for every log from the full
+   backup tape.
+
+Even if all of the logs from the tape have been replayed, only delete the
+"Restore in Progress" registry key as a last resort. Troubleshoot to determine
+the cause of the startup problem first. If you decide to delete the "Restore in
+Progress" registry key, save a copy of it by using the Regedit.exe program
+Export Registry File option.
+
+Restore in Progress Registry Key Values
+---------------------------------------
+
+Every time that Exchange Server starts, it checks for the existence of a "Restore
+in Progress" registry key. If one is found, a hard recovery is performed on the
+database. If the key exists, but the appropriate files for hard recovery (the
+.pat files and all of the logs from tape) are not available, Exchange Server
+startup does not work.
+
+After you restore a full online backup, there is always a .pat file in the
+current transaction log folder for each database file that was restored. There
+is also at least one numbered log file from the tape. (The Edb.log file is never
+put on tape; if the Edb.log file exists after a restoration from online backup,
+then it was present on the disk before the backup was restored.)
+
+If you understand the "Restore in Progress" registry key, you better understand
+the recovery process. Also, if you know what values the key should contain, when
+a malformed or incomplete key exists you can detect the problem.
+
+The following are the values in the "Restore in Progress" registry key:
+
+ - LowLogNumber. This value defines the first log file that must be replayed for
+   a hard recovery to succeed. If you change this number, a hard recovery does
+   not work.
+
+ - HighLog Number. This value is the highest numbered log file that was restored
+   from the tape. If multiple backups are restored (a full backup plus a number
+   of incremental backups), the HighLog value varies depending on the order of
+   restoration.
+
+   In general, restore backups in chronological order, so that the HighLog value
+   accurately reflects all of the logs from the tape. This is not a critical
+   requirement; it is only essential that the HighLog reflect at least the
+   highest numbered log from the full backup tape.
+
+   But if there is a problem in the log files, Exchange Server does treat logs
+   that are restored from tape differently than logs that are assumed to have
+   already existed on disk. Event Viewer may have more informative
+   recommendations about what to do to resolve a problem. In some cases, logs
+   that are assumed to have already been on disk and that could be dangerous if
+   replayed may be deleted without warning.
+
+ - EDB_RstMap. This multi-valued string defines "before" and "after" universal
+   naming convention (UNC) paths for the database files. Odd lines in the string
+   are "before" and even lines are "after." Normally, Exchange Server cannot
+   replay log files into a database that has been moved from its original path
+   location. This value maps an old path to a new path, which makes replay
+   possible even if the database is now on a server or drive that is different
+   from the drive that it was backed up on. If the "Restore in Progress"
+   registry key is malformed, this value is the most likely to have a problem.
+   If the before and after strings do not match, exercise extreme caution before
+   you delete the "Restore in Progress" registry key, because if you delete this
+   key, it may be impossible to replay enough data to make the database
+   consistent or startable.
+
+ - EDB_RstMap Size. This value corresponds to the number of databases that are
+   attached to a service. The value is either 1 or 2. For the directory service,
+   or a server that is dedicated for private folders only or public folders
+   only, the value is 1. For an information store that has both private and
+   public databases, the value is 2. This value multiplied by 2 is the number of
+   lines in the EDB_RstMap value.
+
+ - LogPath. This value is a UNC path that points to the current Transaction Logs
+   folder for the server.
+
+ - BackupLogPath. This value is a UNC path that points to the current
+   Transaction Logs folder for the server. The BackupLogPath value does not
+   point to the "before" log path location, because the original log path
+   location is not critical; only the database path location is.
+
+ - CheckpointFilePath. This value is a UNC path that points to the current
+   Working Path folder.
+
+ - "EDB Database recovered". Immediately after database restoration, this value
+   is 00. After Exchange Server has successfully replayed all of the logs
+   (whether the logs were restored from tape or already existed on disk) and
+   started the database, this value is changed to 01. Then the database
+   automatically shuts down and starts again. When the 01 value is encountered
+   during startup, the service deletes the key, instead of obeying it. If you
+   change this value to 01 manually, it has the same practical effect as
+   deleting the "Restore in Progress" registry key. If this value is 01, it is
+   safe to delete the "Restore in Progress" registry key.
+
+How to Re-Create a Restore in Progress Key
+------------------------------------------
+
+Save a copy of the "Restore in Progress" registry key before you delete it,
+instead of attempting to re-create it. Only use the instructions in this section
+as a last resort. If you make a single typographical error or any other error
+when you create the key, the restoration does not work.
+
+It is much easier to regenerate a "Restore in Progress" registry key if you have
+a template to work from. The next time that you have access to this registry
+key, save it permanently from the Regedit.exe program before you start the
+database. You can then simply merge the key into the registry and modify
+specific values.
+
+To create a valid "Restore in Progress" registry key, you must have already
+restored the database, patch, and log files from a tape.
+
+Paste the following worksheet in a text editor:
+
+   
+
+   Transaction Logs Path:  
+   Working Path:  
+   Number of databases:  
+   Server from which backup was taken:  
+   Server to which backup is being restored:  
+   LowLog Number:  
+   HighLog Number:
+
+Fill in the worksheet with the following information:
+
+ - The current path to the database and log files. You may view this information
+   in the registry.
+
+   For the directory service:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeDS\Parameters
+   (database log files path, directory service database file, directory service
+   working directory)
+
+   For the information store:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS\ParametersPrivate
+   (database path)
+
+   -and-
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS\ParametersPublic
+   (database path)
+
+   -and-
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS\ParametersSystem
+   (database log path, working directory)
+
+   NOTE: It is a good idea to document this information permanently for all of
+   your Exchange Server computers. You can do this by using the Exchange Server
+   Administrator program. The <Server> object for each server records the
+   local data paths on the Database Paths property page.
+
+ - The LowLog and HighLog value numbers for the full backup. This information
+   can be obtained from the Priv.pat file by the procedure described in the "How
+   to Tell If Hard Recovery Has Finished" section of this article.
+
+ - If the paths have changed since the backup was taken, you must know the
+   original database file path locations. You can get this information from the
+   LowLog transaction log by using the following command
+
+   ESEUTIL /ML <LowLog_file>
+
+   where <LowLog_file> is the lowest numbered log file name.
+
+   The output is similar to the following:
+
+   
+
+   E:\exchsrvr\mdbdata>ESEUTIL /ML EDB00036.LOG
+
+      1 E:\EXCHSRVR\MDBDATA\PRIV.EDB
+         dbtime: 326969 (0,0)
+          objid: 76
+      Signature: Create time:8/19/1999 19:37:35 Rand:39623424 Computer:
+   DatabaseSizeMax: 0
+      Last Attach (6,3111,100)  Last Consistent (0,0,0)
+      2 E:\EXCHSRVR\MDBDATA\PUB.EDB
+         dbtime: 3890 (0,0)
+          objid: 105
+      Signature: Create time:8/19/1999 19:37:36 Rand:39631469 Computer:
+   DatabaseSizeMax: 0
+   Last Attach (6,3575,345)  Last Consistent (0,0,0) 
+
+   NOTE: The /ML switch is only available for Exchange Server 5.5 Service Pack 1
+   or later. If you are running an earlier version of Exchange Server, you must
+   know your original path locations in advance.
+
+ - You must know the number of databases that are attached to the service. In
+   the example above of a typical information store, the number was two.
+
+ - If you want to restore the backup to a different server, you must know the
+   name of the original server. If you do not know the name of the original
+   server, you cannot easily obtain it from the backup data. The server name is
+   not contained in the information store files. If you try to start the
+   directory service files on a server that has the wrong name, the directory
+   service files log an error message and report the expected server name in the
+   Windows NT Event Viewer.
+
+After you have all of this information, you are ready to create the "Restore in
+Progress" registry key:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe, not Regedit.exe).
+
+2. Locate one of the following keys in the registry, as applicable:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeDS
+
+   -or-
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS
+
+3. Select either MSExchangeDS or MSExchangeIS as applicable, and then click Add
+   Key on the Edit menu. Type the following (case-sensitive) key name:
+
+   Restore in Progress
+
+   Leave the Class box blank, and then click OK.
+
+4. To create each value in the key, click to select Restore in Progress, click
+   Add Value on the Edit menu, and then add the following registry values (type
+   the value names exactly, and match the case):
+
+   Value Name: BackupLogPath
+   Data Type: REG_SZ
+   String: \\<SERVERNAME>\<D>$\<logpath>
+
+   For example:
+
+   \\NEWSERVER\f$\exchsrvr\mdbdata
+
+   Value Name: CheckpointFilePath
+   Data Type: REG_SZ
+   String: \\<SERVERNAME>\<D>$\<workingpath>
+   For example:
+
+   \\NEWSERVER\c$\exchsrvr\mdbdata
+
+   Value Name: EDB Database recovered
+   Data Type: REG_BINARY
+   Data Format: Hex
+   Data: 00
+
+   Value Name: EDB_RstMap
+   Data Type: REG_MULTI_SZ
+   Data: \\<BACKUPSERVER>\<D>$\<dbpath>\<dbname>.EDB
+   \\<RESTORESERVER>\<D>$\<dbpath>\<dbname>.EDB
+   For example:
+
+   \\OLDSERVER\c$\exchsrvr\MDBDATA\PRIV.EDB
+   \\NEWSERVER\d$\exchsrvr\MDBDATA\PRIV.EDB
+   \\OLDSERVER\c$\exchsrvr\MDBDATA\PUB.EDB
+   \\NEWSERVER\e$\exchsrvr\MDBDATA\PUB.EDB
+
+   NOTE: If you restore two databases, there are four lines in the EDB_RstMap
+   value; a "before" and "after" line for each database. The lines of each pair
+   only differ if you have changed servers or paths. Press the ENTER key at the
+   end of each line, except for the last line.
+
+   Value Name: EDB_RstMap Size
+   Data Type: REG_DWORD
+   Radix: Decimal
+   Data: 1 or 2
+
+   Value Name: HighLog Number
+   Data Type: REG_DWORD
+   Radix: Hex
+   Data: High log number from either the .pat file or the highest log number
+   restored from an incremental tape.
+   For example:
+
+   3f
+
+   Value Name: LogPath
+   Data Type: REG_SZ
+   String: \\<SERVERNAME>\<D>$\<logpath>
+   For example:
+
+   \\NEWSERVER\f$\exchsrvr\mdbdata
+
+   Value Name: LowLog Number
+   Data Type: REG_DWORD
+   Radix: Hex
+   Data: Low log number from the .pat file.
+   IMPORTANT: Do not put any other number here.
+   For example:
+
+   36
+
+Interpreting Error Messages During Startup of a Restored Database
+-----------------------------------------------------------------
+
+Many of the reasons a restored database may not start are similar to the reasons
+that an ordinary startup does not work. The error codes that are displayed
+during hard recovery are different than the error codes that are displayed
+normally. If you can correlate the hard recovery error codes with their soft
+recovery counterparts, you can find valuable KB articles and other resources
+that you otherwise might overlook.
+
+If you start a restored database from the command line or check the Event Viewer,
+decimal or hexadecimal failure codes of the following form are displayed:
+
+   335544nnnn
+
+   -or-
+
+   0xc8000nnn
+
+During an ordinary database startup, the same error would have the following
+forms:
+
+   42949nnnnn
+
+   -or-
+
+   0xfffffnnn
+
+For example, one of the most common error codes that may be displayed after you
+restore an online backup is 3355443730 (decimal) or 0xc8000212 (hexadecimal).
+During an ordinary startup of the database, this same error is reported as
+4294966766 or 0xfffffdee. All of these error numbers correspond to -530
+(JET_errBadLogSignature).
+
+NOTE: The Error.exe utility that is included on all versions of the Exchange
+Server Setup CD-ROM can translate error codes between hexadecimal and decimal
+forms, and can provide text representations of many errors.
+
+If you enter multiple forms of an error code (separated by "or" (without the
+quotation marks)) in a Microsoft Knowledge Base search string, you greatly
+increase your chances of finding valuable information about the causes of the
+error code.
+
+Be aware that a single problem may be reported as several successive events
+during startup, as various subcomponents in the service each report the problem
+independently. These multiple error codes provide additional information about
+the modules that are affected by the problem, but they can be confusing and may
+lead you to believe that there are multiple problems. If several error codes are
+displayed in a row during startup, they most likely report on the same error.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

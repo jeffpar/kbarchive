@@ -1,0 +1,76 @@
+DOCUMENT:Q170879  28-APR-1999  [exchange]
+TITLE   :XADM: How to Use Multiple Offline Address Books in Exchange 5.0
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Exchange Server 5.0 Service Pack (SP) 1 it is now possible for
+administrators to create multiple offline Address Books that remote users can
+use to obtain information about other users in their organization.
+
+MORE INFORMATION
+================
+
+The Offline Address Book property page on the DS Site Configuration object has
+been enhanced to allow generation and manipulation of multiple offline Address
+Books.
+
+NOTE: You must use a computer running Microsoft Exchange Server 5.0 Service Pack
+
+1. In the Exchange Administrator program, choose Configuration, and then
+   double-click DS Site Configuration.
+
+2. Select the Offline Address Book tab.
+
+3. In the Offline Address Book Server box, select one of the servers in your
+   site.
+
+4. To add containers for more offline Address Books, click Add.
+
+5. To generate multiple offline Address Books, click Generate All.
+
+To use multiple offline Address Books in the client, follow these steps:
+
+NOTE: The use of multiple offline Address Books requires at least Microsoft
+Exchange Client 5.0 SP1 or Microsoft Outlook version 8.02.
+
+1. Open the client offline.
+
+2. From the Tools Menu, choose Synchronize and then Download Address Book.
+
+3. Choose the level of detail you want with the Address Book and click the OK
+   button.
+
+4. Choose from the list of Offline Address Books that you want to view.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

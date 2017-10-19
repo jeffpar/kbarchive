@@ -1,0 +1,65 @@
+DOCUMENT:Q143190  06-MAY-1999  [iis]
+TITLE   :Internet Service Manager Fails to Connect to IIS Over Internet
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to use Internet Service Manager to manage Internet Information
+Servers in remote locations provided that you have proper administrative
+privileges. This includes not only Internet Information Servers on your Local
+Area Network (LAN) but also across the Internet.
+
+However if the Internet service manager and the remote Internet Information
+Server in the different subnets separated from routers, Internet service manager
+may not be able to see the remote Internet Information Server.
+
+MORE INFORMATION
+================
+
+To manage an Internet Information Server across subnets, use one of the
+following name resolution methods:
+
+ - Update the LMHOSTS file and enable LMHOSTS Lookup in Advanced TCP/IP
+   Configuration in Control Panel Network.
+
+   -or-
+
+ - Use WINS to resolve the name of the remote Internet Information Server.
+
+   -or-
+
+ - Use a Domain Name Server.
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

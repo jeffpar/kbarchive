@@ -1,0 +1,90 @@
+DOCUMENT:Q97352  20-FEB-2002  [win16sdk]
+TITLE   :Palette Utilization Demonstration
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbSample kb16bitonly kbSDKWin16
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses basic palette awareness, such as what it takes for an
+application to use palettes correctly in the Microsoft Windows graphical
+environment, by covering these areas:
+
+ - Responding to palette-related messages
+
+ - Managing palette-based bitmaps
+
+ - Managing multiple palettes in one application
+
+ - Using the Clipboard with palettes
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Software
+Library:
+
+   ~ PALAWARE.EXE
+   (http://support.microsoft.com/download/support/mslfiles/PALAWARE.EXE)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+The reader should be familiar with basic palette use for painting operations.
+This article is not about the Palette Manager, and the level of detail is
+limited to the very basics of the palette managing process. A sample
+application, MULTIPAL, is included on the Microsoft Developer Network CD to
+illustrate the use of multiple palettes in a single application.
+
+MULTIPAL is also included with the PALAWARE technical article located in the
+Microsoft Software Library.
+
+MULTIPAL is a Multiple Document Interface (MDI) extension to the DIBIT sample
+program that accompanies the "Using DIBs with Palettes" technical article.
+MULTIPAL allows you to display multiple DIBs with multiple palettes and handles
+palette messaging from both the system perspective and the application
+perspective. The MDI skeleton is taken from the BLANDMDI program that is
+included in the Microsoft(R) Windows(TM) version 3.1 Software Development Kit
+(SDK). MULTIPAL achieves device independence by using palettes at all times,
+regardless of the type of device being used.
+
+To see the application in action, open several color-intensive 8-bit
+device-independent bitmaps (DIBs) at the same time and change the active DIB
+window. To see the application's interaction with the rest of the system, run
+another application that uses palettes (another instance of MULTIPAL will do).
+
+Additional query words: 3.10 softlib MULTIPAL.EXE
+
+======================================================================
+Keywords          : kbfile kbSample kb16bitonly kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

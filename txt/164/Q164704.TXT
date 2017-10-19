@@ -1,0 +1,86 @@
+DOCUMENT:Q164704  13-JUN-2001  [sna]
+TITLE   :Password Change DLL Fails if First Host Account Cache Offline
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The password change DLL, a component installed on Windows NT primary domain
+controllers (PDCs) as part of the Windows NT account synchronization option of
+SNA Server host security setup, may fail to initialize when the PDC is rebooted.
+When the initialization failure occurs, it will log an error indicating that it
+cannot locate the password management service (SnaPMP, the SNA Windows NT
+account synchronization service). This will happen if the SNA host account cache
+running in only one of the resource domains is offline or unreachable even
+though host account cache services in other domains are reachable at the time.
+
+CAUSE
+=====
+
+Although host security setup for Windows NT account synchronization prompts the
+user for multiple domains that contain a host account cache, the password change
+DLL tries to initialize with only the first of the configured domain names. The
+password change DLL needs to find the host account cache to locate the primary
+Windows NT account synchronization service (SnaPMP), which may be running in
+another Windows NT Server domain.
+
+RESOLUTION
+==========
+
+The password change DLL has been enhanced to search all specified domains. The
+list of domains is specified in the following registry key where the Windows NT
+account synchronization option of host security is installed:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SNAPmp\Parameters
+   MdbDomains: REG_MULTI_SZ: <domain1> <domain2> ...
+
+The following file has been changed:
+
+   \<snaroot>\Snapwchg.dll
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna snahostsec
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q161364  31-JUL-2001  [sms]
+TITLE   :SMS: Description of Remote Control Event Log Codes
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot kbusage smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes messages that may be logged by the Systems Management
+Server Remote Control Agent service in the Security event log of a client
+computer running Windows NT. These messages will only appear on the client
+computer, not the computer running the Systems Management Server Administrator
+or the Site server.
+
+Code   Description
+----   -----------
+
+ 1     Remotely restarted by <user name> from <domain name>.
+
+ 2     Began Chat session with <user name> from <domain name>.
+
+ 3     Began file transfer session with <user name> from <domain name>.
+
+ 4     <User name> from <domain name> remotely ran <file name>.
+
+ 5     Remote control session started by <user name> from <domain name>.
+
+ 6     Remote control session with <user name> from <domain name> ended.
+
+ 7     The local user granted remote user <user name> from <domain name>
+       permission to <action> (such as remote control your computer).
+
+ 8     The local user refused to allow remote user <user name> from
+       <domain name> to <action> (such as restart your computer).
+
+ 9     Remote user <user name> from <domain name> is permitted to access
+       this computer.
+
+10     Remote user <user name> from <domain name> is not permitted to
+       access this computer.
+
+Additional query words: prodsms wuser32 winnt
+
+======================================================================
+Keywords          : kbnetwork kbtshoot kbusage smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

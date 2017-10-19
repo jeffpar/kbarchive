@@ -1,0 +1,71 @@
+DOCUMENT:Q115930  08-AUG-2001  [winnt]
+TITLE   :TBMI2.COM May Be Required on Alpha and MIPS Computers
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may need to install TBMI2.COM if the following statements are true:
+
+ - You are using an Alpha-based or MIPS-based computer.
+
+   -and-
+
+ - You are using the 16-bit Windows client software for SQL Server for Windows
+   NT.
+
+   -and-
+
+ - You are using IPX/SPX as the network protocol.
+
+MORE INFORMATION
+================
+
+TBMI2.COM was developed by Novell to allow IPX/SPX protocol applications to task
+switch in standard mode Windows. If you are using the 16-bit Windows client
+software for SQL Server for Windows NT and are using IPX/SPX as the network
+protocol, the TBMI2.COM must be loaded from the AUTOEXEC.NT file. This is
+because Windows NT on Alpha-based and MIPS-based computers emulates standard
+mode Windows.
+
+After you install the program in the AUTOEXEC.NT file, restart the computer to
+update the Win16 on Win32 (WOW) subsystem.
+
+TBMI2.COM is manufactured by the Novell Corporation, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

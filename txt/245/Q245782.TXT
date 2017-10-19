@@ -1,0 +1,79 @@
+DOCUMENT:Q245782  18-NOV-1999  [foxpro]
+TITLE   :INFO: Find Information on the Office 97/2000 Application's Objec
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbinterop kbole kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbOffice2000 kbGrpDSFox
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes when you are using OLE (Object Linking and Embedding) Automation from
+Visual FoxPro to one of the Microsoft Office Applications, such as Microsoft
+Word or Microsoft Excel, you need information on the Office application's object
+model. This information is not always available in documentation associated with
+Visual FoxPro. But it can usually be found in the online Help files for that
+particular Office application or on the Microsoft Web site.
+
+This article provides the locations of some of this information.
+
+MORE INFORMATION
+================
+
+The following articles provide OLE Automation and Object Model information for
+the Office 97 and 2000 applications.
+
+   For additional information on the Office Object Model, click the article
+   numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q222101 HOWTO: Find and Use Office Object Model Documentation
+
+
+To obtain a Help file that discusses automation theory with examples, see the
+following article.
+
+   
+
+   Q167223 OFF97: Microsoft Office 97 Automation Help File Available
+
+
+Help and information can also be obtained by going to the following address on
+the Microsoft Web site:
+
+   Microsoft Office 97/Visual Basic Programmer's Guide
+
+For Knowledge Base articles that specifically discuss OLE Automation between
+Visual FoxPro and the Microsoft Office product family, search the Knowledge Base
+using the keywords "OLE Automation and Visual FoxPro," without the quotes.
+
+
+Additional query words: word.application excel.application outlook.application powerpoint.application
+
+======================================================================
+Keywords          : kbinterop kbole kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbOffice2000 kbGrpDSFox kbDSupport kbOffice97 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

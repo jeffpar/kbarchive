@@ -1,0 +1,79 @@
+DOCUMENT:Q105795  27-JUL-2001  [odbc]
+TITLE   :BUG: Cannot Have a Pathname > 29 Char for SYSTEM.MDA
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+BUG# ODBCDBASE: 1852 (1.01.1928)
+
+SYMPTOMS
+========
+
+The ODBC Access driver does not recognize a SYSTEM.MDA file for which the path
+is longer than 29 characters.
+
+The ODBC Access driver can be used to connect to secure Access databases. To do
+this, the user should specify a SYSTEM.MDA file associated with the Access
+database--by selecting the Options button in the Access Datasource Setup dialog
+box, and specifying a complete path for the SYSTEM.MDA file.
+
+If this path is longer than 29 characters, the driver gives the following error
+during SQLConnect or SQLDriverConnect:
+
+   szSqlState = '08004', *pfNativeError = -1023
+   szErrorMsg="[Microsoft][ODBC Single-Tier Driver][ODBC File
+   Library]Invalid path
+
+For example, the following path will work for SYSTEM.MDA (it is 29 characters
+long):
+
+   c:\temp\snuffy1\ok\system.mda
+
+while the following does not work (it is 30 characters long):
+
+   c:\temp\snuffy1\bad\system.mda
+
+WORKAROUND
+==========
+
+Move the SYSTEM.MDA file to a different directory so that the path is less than
+29 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Access Driver version
+1.01.1928. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.01.1928 ODBC ACCESS
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

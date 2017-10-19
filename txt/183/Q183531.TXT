@@ -1,0 +1,75 @@
+DOCUMENT:Q183531  10-APR-1999  [exchange]
+TITLE   :XCLN: How to Update Exchange Forms Designer Forms
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Exchange forms administrators may find it necessary at times to update an
+existing Exchange form and reinstall it to a message store (for example, a
+public folder). However, after a form has been cached locally on the Exchange
+client workstation, the Exchange client may not always download the updated
+version of the form from the message store.
+
+MORE INFORMATION
+================
+
+There are two ways to ensure that the updated version of a form will be used on
+the client:
+
+Method 1:
+
+From the Exchange client, select Tools, Options, Exchange Server page, Manage
+Forms button. From the Forms Manager, select the folder by clicking the Set
+button located in the right-pane list box. Choose the folder in which the
+updated form is installed. Click the Update button.
+
+For this method some type of notification is required, so that the user knows to
+perform the above steps. One recommendation is to send a detailed message to all
+those affected after a form has been updated.
+
+Method 2:
+
+From the Microsoft Exchange Electronic Forms Designer, load the form that is to
+be updated. Select View, Form properties. From the General page, change the Item
+Type to a unique name, different from the original. (Note: The item type must
+remain in the form IPM.Vendorname or IPM.Vendorname.Subclass.)
+
+For this method, the form is automatically downloaded, because this is a new item
+type. However, unless the display name has been changed on the form, the
+Exchange client's Compose menu will list multiple forms with the same display
+name.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

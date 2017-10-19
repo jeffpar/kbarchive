@@ -1,0 +1,90 @@
+DOCUMENT:Q74746  04-MAY-2001  [masm]
+TITLE   :FIX: ORG Following ORG Statement with $ May Fail in 6.0
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Macro Assembler (MASM) version 6.0 may generate an incorrect
+offset when using the ORG directive following a previous ORG statement that uses
+the current-address operator ($). For example, incorrect code will be generated
+if the statement "ORG $+1" is placed anywhere before another ORG statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+was corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+The sample code below demonstrates this problem. You can see in the source
+listing that the label "wrongoffset" has an incorrect offset. Instead of having
+an offset of 200h, wrongoffset is placed at offset 304h, which is 104h plus the
+200h specified in the last ORG statement. Rather than assigning the location to
+200h, the assembler added 200h to the current location.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   _text SEGMENT
+   one   BYTE ?
+         ORG 100h
+   two   BYTE ?
+         ORG $+2
+   three BYTE ?
+         ORG 200h
+   wrongoffset LABEL word
+   _text ENDS
+   END
+
+Source Listing
+--------------
+
+   0000               _text SEGMENT
+   0000 00            one   BYTE ?
+                        ORG 100h
+   0100 00            two   BYTE ?
+                        ORG $+2
+   0103 00            three BYTE ?
+                        ORG 200h
+   0304               wrongoffset LABEL word
+   0304               _text ENDS
+                  END
+
+Additional query words: 6.00 buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : MS-DOS:6.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

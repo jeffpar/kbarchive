@@ -1,0 +1,63 @@
+DOCUMENT:Q198542  22-JUN-2001  [exchange]
+TITLE   :XCLN: Unable to Add Components to Outlook 98 Installation
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:98
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 98 Deployment Kit 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to add components to Outlook 98, you receive the following
+error message on the Outlook 98 Component Install page:
+
+   An unknown error occurred during installation.
+
+CAUSE
+=====
+
+If you are using a version of Outlook 98 that has been installed using the
+Outlook Deployment Wizard (ODK), installed components and options are set by the
+administrator. These options cannot be changed by the user, and using Add
+Components will fail.
+
+WORKAROUND
+==========
+
+In order to add components, the administrator needs to create a new build of
+Outlook 98 using the ODK that contains the new components. This new version can
+then be deployed to the users.
+
+MORE INFORMATION
+================
+
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlookDeployKitSearch kbOutlook98DeployKit
+Version           : WINDOWS:98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

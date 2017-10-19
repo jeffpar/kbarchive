@@ -1,0 +1,72 @@
+DOCUMENT:Q190758  06-AUG-2001  [ssafe]
+TITLE   :BUG: Recalculate Links Does Not Update File Version Number
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbide kbSSafe500 kbSSafe500bug kbSSafe600 kbSSafe600bug kbVisID600bug kbGrpDSASP kbDSup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual InterDev, version 6.0 
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Recalculate Links may fail to update the Master Web with the latest version of
+files that are checked out.
+
+RESOLUTION
+==========
+
+Undo check out for the files that are checked out and attempt the recalculate
+links command again.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft Visual Interdev 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a project that has source code control enabled.
+
+2. Check out a file.
+
+3. Within the Visual SourceSafe Explorer, update the file, so that the version
+   number changes.
+
+4. Back in Visual InterDev, issue a Recalculate Links command for your Web
+   project.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbSSafe500 kbSSafe500bug kbSSafe600 kbSSafe600bug kbVisID600bug kbGrpDSASP kbDSupport 
+Technology        : kbVisIDsearch kbSSafeSearch kbAudDeveloper kbVisID600 kbSSafe600 kbSSafe500
+Version           : :5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

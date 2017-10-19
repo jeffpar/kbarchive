@@ -1,0 +1,81 @@
+DOCUMENT:Q272305  06-AUG-2002  [exchange]
+TITLE   :XADM: Move Mailbox Fails with Event ID 8505 and Error 0x8004030
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the Move Mailbox functionality in the Microsoft Exchange
+Server 5.5 Administrator program, the following event ID message may be logged
+in the Application event log:
+
+   Event Type: Error
+   Event Source: MSExchangeISPriv
+   Event ID: 8505
+   Description: Unable to move mailbox <mailbox name>... error number
+   0x80040301
+
+The message for Error 0x80040301 is "ecPropBadValue-MAPI_E_BAD_VALUE".
+
+CAUSE
+=====
+
+This issue can occur if the mailbox has a corrupted or unexpected value.
+
+RESOLUTION
+==========
+
+To resolve this issue, correct the damaged information. To do so, use either of
+the following methods:
+
+ - Use the Isinteg utility.
+
+For additional information about how to run Isinteg to resolve this issue, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q188627 MSExchangeIS Move Mailbox Error Event IDs
+
+ - Use the CleanSweep utility from the BackOffice Resource Kit.
+
+MORE INFORMATION
+================
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q174045 Installing and Using the CleanSweep Tool
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

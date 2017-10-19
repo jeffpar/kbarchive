@@ -1,0 +1,57 @@
+DOCUMENT:Q120701  10-JUN-1999  [homegame]
+TITLE   :Setup Does Not Copy Files to Disk
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the SETUP.EXE program for Space Simulator is run from any active drive other
+than drive A or B, Setup will not copy any files to the hard disk.
+
+For example, typing "a:\setup" (without the quotation marks) at the C:\ MS-DOS
+prompt will not perform a complete setup because drive C is the active drive.
+
+MORE INFORMATION
+================
+
+The SETUP.EXE file will operate in one of two modes depending on the conditions
+it detects. If Setup detects that the active drive is either the floppy drive A
+or B, it will perform a complete installation, including creating the necessary
+directory, copying all files to the disk, and configuring the program. If Setup
+detects that the active drive is not drive A or B, it will operate in a
+configuration mode, bypassing the directory creation and file copy, and will
+only perform the configuration portion of the Setup process.
+
+Additional query words: 1.00 Spacesim sim dos ss1 D_spacesim
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

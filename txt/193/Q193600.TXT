@@ -1,0 +1,60 @@
+DOCUMENT:Q193600  09-AUG-2001  [winnt]
+TITLE   :Windows NT Load Balancing Service Setup Screen Is Slow to Load
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Load Balancing Service 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Windows NT Load Balancing Service (WLBS) Setup dialog box starts, it
+encounters a lengthy delay prior to returning control to the configuration
+screen.
+
+CAUSE
+=====
+
+The network is unreachable. You entered the final license key when installing
+WLBS prior to setting up the TCP/IP configuration and ensuring network access.
+The final license key causes the WLBS Setup dialog box to use the network to
+resolve the cluster's full Internet name to the primary IP address. If the
+network is unreachable, the dialog box will encounter a temporary delay.
+
+RESOLUTION
+==========
+
+Be sure to use the initial license key until Windows NT Load Balancing Service
+has been installed and network access has been established.
+
+Additional query words: Convoy WLBS
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTLBS100 kbWinNTLBSSearch
+Version           : winnt:1.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

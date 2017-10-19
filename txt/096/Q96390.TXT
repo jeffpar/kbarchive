@@ -1,0 +1,63 @@
+DOCUMENT:Q96390  22-NOV-1999  [msdos]
+TITLE   :Using DoubleSpace with Compressed Floppy and Removable Disks
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DoubleSpace supports disk compression on both floppy disks and removable media
+disks; however, when you swap a floppy or removable media disk you must remount
+the disk.
+
+STATUS
+======
+
+This information does not apply to later versions of MS-DOS and DoubleSpace.
+
+MORE INFORMATION
+================
+
+To mount a disk from the MS-DOS command prompt, type the following:
+
+   " dblspace /mount drive " (without the quotation marks)
+
+where "drive" is the drive location of the disk.
+
+Automation of this feature is under review and will be considered for inclusion
+in a future release.
+
+NOTE: If you are using Microsoft Windows, you cannot remount floppies or
+removable media.
+
+Additional query words: double space 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

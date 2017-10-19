@@ -1,0 +1,185 @@
+DOCUMENT:Q153435  08-NOV-2001  [homekids]
+TITLE   :MSB Earth and Dinosaurs: Mouse Freezes at Corner of Screen
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,95
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbmm kbtlc kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows 95 
+ - Scholastic's Magic School Bus series: Explores in the Age of Dinosaurs for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Rainforest for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run Setup for Magic School Bus Explores Inside the Earth or
+Explores in the Age of Dinosaurs, the mouse moves to a corner of the screen and
+freezes, while the program continues to run.
+
+Another symptom is that the mouse pointer may persistently move to the upper left
+corner of the screen (however, you may be allowed to click on objects to
+activate them).
+
+CAUSE
+=====
+
+This behavior occurs when Smartmove is enabled for the Logitech Mouse.
+
+   -or-
+
+This problem also occurs if you are using a mouse with the "Snap To" option
+enabled for your mouse software.
+
+NOTE: The problem may also be resolved by disabling animated cursors, or by
+having the program ask you if you would like to change resolution if you are
+running at a resolution higher than 640x480 and then responding with "No". (See
+the "III. ASK BEFORE RESOLUTION SWITCHING" section below for more information on
+how to do this task.)
+
+RESOLUTION
+==========
+
+I. DISABLE THE "INTELLIGENT MOUSE MOVEMENT"
+-------------------------------------------
+
+Use one of the following solutions to disable automatic mouse movement, depending
+on your mouse.
+
+Microsoft Natural Keyboard
+--------------------------
+
+If you are using a Microsoft Natural Keyboard with the "SnapTo" option enabled,
+clear the SnapTo setting on the Pointer Activity tab in the Keyboard Control
+Panel:
+
+1. Click the Start button, point to Settings, then click Control Panel.
+
+2. Double-click Keyboard.
+
+3. Click the Mouse Activity tab.
+
+4. Clear the SnapTo checkbox.
+
+5. Click the OK button to close the Keyboard control panel.
+
+Logitech Mouse
+--------------
+
+If you are using the Logitech Mouse, disable Smartmove in the Mouse Properties
+dialog box, as follows:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Mouse.
+
+3. Choose the Settings tab in the Mouse Properties dialog box, and click the
+   Advanced button.
+
+4. Clear the Smartmove check box.
+
+5. Close the Mouse Control Panel and restart Windows.
+
+PS/1 Mouse
+----------
+
+If you are using a PS/1 mouse with the Snap To option enabled, clear the Snap To
+setting on the Activities tab in the Mouse section of Control Panel:
+
+1. Click the Start button, point to Settings, and click Control Panel.
+
+2. Double-click Mouse.
+
+3. Click the Activity tab.
+
+4. Clear the Snap To check box.
+
+II. DISABLE ANIMATED CURSORS
+----------------------------
+
+To work around the problem described above, choose a pointer scheme that does not
+include animated cursors. To change the pointer scheme used by Windows 95,
+follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Mouse.
+
+3. Click the Pointers tab.
+
+4. In the Scheme box, select a pointer scheme that does not include animated
+   cursors (such as Windows Standard).
+
+III. ASK BEFORE RESOLUTION SWITCHING
+------------------------------------
+
+If you are running at a resolution higher than 640x480, you may set the program
+parameters to ask you if you would like to switch the resolution to 640x480
+while running the program.
+
+1. To start the Bus Stop Utility, click Start, point to Programs, point to
+   Microsoft Kids, then follow the instructions appropriate for the program you
+   want to run:
+
+    - MSB Dinosaurs:
+
+       - Click Bus Stop Utility-Dinosaurs. (Continue on to Step 2).
+
+    - MSB Earth:
+
+      a. Click Bus Help - Earth.
+
+      b. Double-click Troubleshooting.
+
+      c. Double-click Bus Stop Utility.
+
+      d. Click the arrow in the phrase, "Click here <arrow> to start the
+         Bus Stop Utility." (Continue on to Step 2.)
+
+2. Click the "Ask whether to change to 640x480" option.
+
+3. Click Exit.
+
+4. Restart the program.
+
+You may have difficulty with the mouse freezing when trying to get into the Bus
+Stop Utility. If you are still having difficulty with your mouse in MSB
+Dinosaurs or MSB Earth, contact Microsoft Technical Support with the number
+listed in your documentation.
+
+
+MORE INFORMATION
+================
+
+The "intelligent" mouse movement (i.e., Snap To, Smartmove) mentioned above adds
+the functionality of automatically moving your mouse pointer to the default
+button in a dialog box.
+
+Additional query words: 1.0 mouse hangs crazy corner freezes msb msbearth winmsbearth mskids kids magicbus frizz frizzle schoolbus dinos msbdino animate pointer snap-to snapto msbrain rain forest kbimu
+
+======================================================================
+Keywords          : kbenv kbhw kbmm kbtlc kbHardware kbfaq
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch _IKkbbogus kbZNotKeyword kbKidsSearch kbScholasticDinosaurs kbScholasticEarth kbScholasticRainForest kbMSBSearch
+Version           : WINDOWS:1.0,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

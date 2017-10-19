@@ -1,0 +1,63 @@
+DOCUMENT:Q124801  30-OCT-1999  [pcmail]
+TITLE   :SMTP: Err Msg: Socket Error (123) When Starting Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft 32-bit version TCP/IP for Windows for Workgroups,
+SMTPGATE.EXE will generate an error and the gateway will fail to operate. The
+user will see the following error message on the screen or in the smtpgate.log
+if the the -l logging parameter is used:
+
+   ERROR socket: (123) network error
+   SMTP_listen: system error
+
+CAUSE
+=====
+
+This error message is generated because the SMTPGATE.EXE program works with the
+LAN Manager API called sockets.exe. It does not work with Winsock APIs. The SMTP
+Gateway was developed before Windows for Workgroups and the WFW 32- bit version
+of TCP/IP.
+
+RESOLUTION
+==========
+
+To work around this issue, use the 16-bit version of TCP/IP and load SOCKETS.EXE
+before starting the gateway. The 16 bit version of TCP/IP can be found on any of
+our electronic services as the self-extracting file wfwtcp.exe. See Q96244 and
+Q105288 for related information.
+
+Additional query words: 3.00 3.0.6. 3.0 stack
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP3xSearch
+Version           : MS-DOS:3.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

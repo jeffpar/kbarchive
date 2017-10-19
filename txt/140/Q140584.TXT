@@ -1,0 +1,140 @@
+DOCUMENT:Q140584  02-NOV-2001  [visualc]
+TITLE   :HOWTO: Link with the Correct C Run-Time (CRT) Library
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3,6.0,6.0SP3,6.0sp4,6.0sp5
+OPER/SYS:
+KEYWORDS:kbCRT kbVC200 kbVC210 kbVC220 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.0a, 4.1, 4.2, 4.2b, 5.0, 5.0sp1, 5.0sp2, 5.0sp3, 6.0, 6.0SP3, 6.0sp4, 6.0sp5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are six types of reusable libraries: Static Single Threaded Library
+(Debug/Release), Static Multithreaded Library (Debug/Release), and Dynamic Link
+Library (DLL)(Debug/Release). The DLL is multithread-afe and a single- thread
+version of the CRT library is not provided for DLLs. If the reusable library or
+any user of the library is using multiple threads, then the library needs to be
+a multithread-safe library type.
+
+NOTE: Debug libraries and compiler switches /MLd, /MTd, and /MDd are only
+available in Visual C++ versions 4.0 and above.
+
+The following table shows which compiler switch should be used for building each
+of the six types of reusable libraries (all DLL types are multithread- safe).
+Any project using the reusable library should use the same compiler switch. When
+using the /ML(default), /MLd, /MT, /MTd, /MD, or /MDd compiler switches, the
+compiler places the default library name (listed under the Library column) in
+the object file.
+
+Reusable Library            Switch    Library    Macro(s) Defined
+----------------------------------------------------------------
+Single Threaded             /ML       LIBC       (none)
+Static MultiThread          /MT       LIBCMT     _MT
+Dynamic Link (DLL)          /MD       MSVCRT     _MT and _DLL
+Debug Single Threaded       /MLd      LIBCD      _DEBUG
+Debug Static MultiThread    /MTd      LIBCMTD    _DEBUG and _MT
+Debug Dynamic Link (DLL)    /MDd      MSVCRTD    _DEBUG, _MT, and _DLL
+
+You can view an object module to determine which switch was used when it was
+built by using this command:
+
+      dumpbin /all <object>.obj
+
+Look in the section titled RAW DATA #1. In the right-most column, the default
+libraries will be listed.
+
+MORE INFORMATION
+================
+
+A reusable library and all of its users should use the same CRT library types
+and therefore the same compiler switch. The macros defined (or not defined) for
+each of the compiler switches can be used in the header file(s) of your reusable
+library to enforce the proper compiler switch. The sample code in this article
+demonstrates how to use these macros.
+
+If you would like users of the library to be able to choose static or DLL CRT,
+you should provide both static and DLL reusable library types.
+
+If you do choose to mix CRT libraries, remember that you have two separate copies
+of the CRT, with separate and distinct states, so you must be careful about what
+you try to do across a CRT-boundary. There are many ways to get into trouble
+with two CRTs. Here are just a few:
+
+ - There are two separate heaps. You cannot allocate (explicitly with new,
+   malloc, or so on -- or implicitly with strdup, strstreambuf::str, or so on),
+   and then pass the pointer across a CRT-boundary to be freed.
+
+ - You cannot pass a FILE* or file handle across a CRT-boundary and expect the
+   studio low level io to work.
+
+ - You cannot set the locale in one and expect the other's locale to be set.
+
+Beginning with Visual C++ 4.0, the linker will issue a warning (LNK4098) if a
+resulting module attempts to combine more than one copy of the CRT library. For
+more information, search the Help file for LNK4098.
+
+Sample Code
+-----------
+
+The following code can be used in the reusable library's header file to ensure
+the consistent use of the correct compiler switch:
+
+   // MyReusableStaticSingleThreadReleaseLibrary.h
+   #if defined(_MT) || defined(_DEBUG)
+       #error The /ML compiler switch is required.
+   #endif
+
+   // MyReusableStaticMultithreadReleaseLibrary.h
+   #if !defined(_MT) || defined(_DLL) || defined(_DEBUG)
+       #error The /MT compiler switch is required.
+   #endif
+
+   // MyReusableDynamicLinkReleaseLibrary.h
+   #if !defined(_MT) || !defined(_DLL) || defined(_DEBUG)
+       #error The /MD compiler switch is required.
+   #endif
+
+   // MyReusableStaticSingleThreadDebugLibrary.h
+   #if defined(_MT) || !defined(_DEBUG)
+       #error The /MLd compiler switch is required.
+   #endif
+
+   // MyReusableStaticMultithreadDebugLibrary.h
+   #if !defined(_MT) || defined(_DLL) || !defined(_DEBUG)
+       #error The /MTd compiler switch is required.
+   #endif
+
+   // MyReusableDynamicLinkDebugLibrary.h
+   #if !defined(_MT) || !defined(_DLL) || !defined(_DEBUG)
+       #error The /MDd compiler switch is required.
+   #endif
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC200 kbVC210 kbVC220 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500SP1 kbVC500SP2 kbVC500SP3 kbVC600SP3 kbVC600SP4 kbVC600SP5 kbVC400a kbVC420b kbVC500Search
+Version           : :2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3,6.0,6.0SP3,6.0sp4,6.0sp5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

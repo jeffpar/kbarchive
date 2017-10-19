@@ -1,0 +1,73 @@
+DOCUMENT:Q182663  08-OCT-1999  [exchange]
+TITLE   :XADM: NDR After Information Store Stops Unexpectedly
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you send a message and then the information store stops unexpectedly before
+the message has been delivered, you may receive a non-delivery report (NDR).
+
+CAUSE
+=====
+
+When a Microsoft Exchange Server computer is unable to deliver a message because
+of a transient system failure, it may attempt to deliver the message again, or
+you may receive an NDR. If the server determines that the problem is temporary,
+it attempts to deliver the message again. If the server determines that the
+problem is permanent, it does not attempt to deliver the message again and you
+receive an NDR.
+
+The information store contains a list of problems that the server should consider
+temporary. If the specific circumstances under which the information store stops
+unexpectedly are not in this list, the server does not attempt to deliver the
+message again and you receive an NDR.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information about obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

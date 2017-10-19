@@ -1,0 +1,93 @@
+DOCUMENT:Q128788  29-NOV-2001  [visualc]
+TITLE   :BUG: C2143 When Initializing Static Member in Class Template
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When initializing a static data member that has a user-defined type in a class
+template, the compiler generates the following error message on the line after
+the last line of code:
+
+   Error C2143: syntax error : missing ';' before 'newline'
+
+RESOLUTION
+==========
+
+To work around the problem, specify a specialized instance for particular data
+types when initializing the static data member -- as in the "Sample Code"
+section in this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+The following code can be used to reproduce the problem and work around the
+problem.
+
+Sample Code
+-----------
+
+   /* Compile options needed: /c
+   */ 
+
+   typedef struct
+   {
+     int element;
+   } MyType;
+
+   template <class T1>
+   class AA
+   {
+     public:
+       static MyType m_mytype;
+   };
+
+   template <class T1> MyType AA<T1>::m_mytype = {0};
+
+   // Uncomment the following line to work around the problem.
+   // MyType AA<double>::m_mytype = {0};
+
+   AA<double> mydouble;
+
+   MyType mytype = mydouble.m_mytype;
+
+Additional query words: 2.00 2.10 9.0 9.00 9.1 9.10
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbVC200 kbVC210 kbVC32bitSearch
+Version           : :2.0,2.1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

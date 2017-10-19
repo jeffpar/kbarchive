@@ -1,0 +1,60 @@
+DOCUMENT:Q135587  29-OCT-1999  [win3x]
+TITLE   :TCP/IP-32 3.11a May Produce IP Broadcast Storm
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11; :3.11,3.11a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your HOSTS file contains incorrect IP address syntax and you PING the host
+computer by name, a broadcast storm can occur. You may receive several ICMP echo
+replies. An example of an incorrect IP address syntax is as follows:
+
+   157.54..65.212 myhosts
+
+CAUSE
+=====
+
+Given the above example, when you PING myhosts, TCP/IP-32 3.11a sends ICMP echo
+requests to the address of 255.255.255.255 (broadcast).
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in TCP/IP-32 for Windows for
+Workgroups version 3.11a. This problem was corrected in TCP/IP-32 for Windows
+for Workgroups version 3.11b.
+
+
+Additional query words: prodtcp32 3.11 3.11a wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311 kbTCPIP311a
+Version           : WINDOWS:3.11; :3.11,3.11a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

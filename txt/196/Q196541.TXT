@@ -1,0 +1,65 @@
+DOCUMENT:Q196541  14-NOV-2000  [word97]
+TITLE   :WD97: Copying Toolbar Does Not Copy Associated Macros
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbmacro kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you click a button on a toolbar that has been copied from another template,
+the button does nothing and no message appears.
+
+CAUSE
+=====
+
+When you copy a toolbar from another template using the Organizer, Word does not
+copy the macros associated with the toolbar buttons. When you click a button in
+the new template, Word looks for the macro that goes with the button and cannot
+find it.
+
+WORKAROUND
+==========
+
+Use the Organizer to copy the original template's macros.
+
+The Organizer allows you to copy items from one template to another template,
+from one document to another document, or from one document to a template. The
+Organizer can copy styles, macros, toolbars, and AutoText.
+
+To use the Organizer, on the Tools menu, point to Macro, click Macros, and then
+click Organizer.
+
+Additional query words: tool bar
+
+======================================================================
+Keywords          : kbmacro kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

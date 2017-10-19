@@ -1,0 +1,55 @@
+DOCUMENT:Q78827  18-NOV-1999  [pcmail]
+TITLE   :PC Gen: Two Versions of Hayes 9600 V-Series Modem
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1e, 3.0, 3.0b, 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Hayes Microcomputer Products, Inc. has marketed two versions of the 9600
+V-series modem. There are no physical differences between the two versions; they
+are identical except that the newer version contains additional speed checking
+capabilities. This additional capability is called Automatic Speed Buffering.
+
+You can determine the difference between the two versions by looking at the model
+sticker on the bottom of the modem. Earlier versions are marked as 215AA; later
+versions are marked as 1000US.
+
+For more information about Hayes modems, call Hayes Microcomputer Technical
+Assistance at (404) 441-1617.
+
+Hayes modems are manufactured by Hayes Microcomputer Products, Inc., a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 2.10e 3.00 3.00b 3.20 3.20a v series vseries
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN300b kbMailPCN210e
+Version           : WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

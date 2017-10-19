@@ -1,0 +1,62 @@
+DOCUMENT:Q155589  08-APR-2002  [exchange]
+TITLE   :XADM: Import Format for Generic SMTP Custom Recipient
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Administrator program can automatically generate custom
+recipients based on information provided in an import file.
+
+This article describes the minimum custom recipient attributes required to
+automatically import SMTP custom recipients.
+
+MORE INFORMATION
+================
+
+The following attributes are required to generate SMTP custom recipients:
+
+   Obj-Class, First Name, Last name, Display Name, Alias Name, Directory Name,
+   E-mail addresses
+
+The Header.exe program included in the Microsoft Exchange Resource Kit could be
+used to create an Import file with the above headers. The above headers could
+also be manually added to a file, using a text editor.
+
+Once the import file has been created with the desired headers, the corresponding
+data for each custom recipient should be added to the file. For example:
+
+   Remote,User1,User1,User1,User1,SMTP:User@ORG.COM
+
+Additional query words: custom recipients SMTP
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

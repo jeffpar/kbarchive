@@ -1,0 +1,83 @@
+DOCUMENT:Q63318  31-OCT-1999  [utilities]
+TITLE   :BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1; OS/2:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+ - Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the Programmer's WorkBench (PWB) version 1.0 or 1.1, when a region of text
+is selected and the Print function is invoked, the resulting output contains
+linefeed characters (0x0A) at the end of each line, rather than a carriage
+return-linefeed (<CR><LF>) combination (0x0D and 0x0A).
+
+Some printer drivers do not recognize this as a valid end-of-line (EOL) character
+and do not print correctly.
+
+RESOLUTION
+==========
+
+The workaround for this problem is to write a program that translates each 0x0A
+found in the output file to the bytes 0x0D and 0x0A, or use a printer driver
+that understands this type of file. In fact, most printers have an escape
+sequence or DIP switch to enable it to recognize this type of file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PWB versions 1.0 and 1.1. We are
+researching this problem and will post new information here as it becomes
+available.
+
+MORE INFORMATION
+================
+
+To reproduce this problem, open a file that contains the <CR><LF>
+combination at the end of each line. Highlight a region of text in the file and
+from the File menu choose Print. Tab to the second field and type in the
+following:
+
+   " copy %s test.txt" (without the quotation marks)
+
+This will copy the region of selected to the file TEST.TXT. Using a standard hex
+file viewer, you can see that the end of a line is denoted by a single 0A. If
+you look at the original file using the hex viewer, it will contain 0A 0D at the
+end of each line.
+
+Programmer's WorkBench will recognize this type of file (with a single 0A at each
+end of line) and display it correctly if you try to open it within PWB, but many
+printer drivers do not understand this type of file.
+
+
+Additional query words: 1.00 1.10 buglist1.00 buglist1.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

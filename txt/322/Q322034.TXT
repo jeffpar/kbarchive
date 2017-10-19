@@ -1,0 +1,63 @@
+DOCUMENT:Q322034  30-APR-2002  [msnetwork]
+TITLE   :How To Import E-mail From Netscape Mail To Outlook Express 5.0.4
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Internet Access for Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to import e-mail from Netscape Mail to Outlook
+Express 5.0.4
+
+MORE INFORMATION
+================
+
+To import e-mail from Netscape Mail to Outlook Express 5.0.4
+
+1. Open Outlook Express.
+
+2. On the File menu, click Import.
+
+3. In the Import window, click Import from an application, and then click the
+   right arrow to continue.
+
+4. Select Netscape Communicator 4.0 or higher as the application from which you
+   want to import, and click the right arrow to continue.
+
+5. Select Mail Messages as the data you wish to import, and click the right
+   arrow to continue.
+
+6. Click OK.
+   Your imported e-mail messages will be in the Communicator Import folder.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

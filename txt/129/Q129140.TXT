@@ -1,0 +1,80 @@
+DOCUMENT:Q129140  05-NOV-1999  [pcmail]
+TITLE   :SMTP: Gateway Hangs While Processing Message
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Gateway to SMTP hangs in the middle of processing a message.
+
+CAUSE
+=====
+
+The Cisco Systems IGS router needs Firmware version 9.0.2 or later for SMTP mail
+to move correctly. The IGS is a model of the Cisco Systems router. If a previous
+version of the firmware for this model is used, the Microsoft Mail Gateway to
+SMTP processes until the message is sent through the gateway to the router and
+then hangs.
+
+RESOLUTION
+==========
+
+To enable mail to flow correctly through the gateway, update the firmware on the
+IGS Cisco Systems router. Once the firmware is updated, mail will be processed
+correctly.
+
+MORE INFORMATION
+================
+
+The SMTPGATE.LOG file will contain a portion that resembles the following:
+
+   :
+   :
+   :
+   [tx] MAIL FROM:<user1@company1.com>
+   [rx] 250 <user1@company1.coml>... Sender ok
+   [tx] RCPT TO:<user2@company2.com>
+   [rx] 250 <user2@company2.com>... Recipient ok
+   [tx] DATA
+   [rx] 354 Enter mail, end with "." on a line by itself
+   [tx] ...message body...
+
+After this, the gateway hangs.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q101461 Microsoft Mail SMTPGATE.EXE Version 3.0.9 Update
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

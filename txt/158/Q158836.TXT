@@ -1,0 +1,60 @@
+DOCUMENT:Q158836  31-JAN-2001  [win95x]
+TITLE   :Compaq USB Camera May Not Work Properly on Other Computers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use a Compaq USB camera with an OpenHCI (OHCI) USB host
+controller, the camera may not be detected and may not work properly.
+
+CAUSE
+=====
+
+The Compaq USB camera was designed and developed for use on the Intel Universal
+HCI (UHCI) USB host controller. It is not supported on an OHCI controller.
+
+
+MORE INFORMATION
+================
+
+OHCI host controllers employ optimization on the control endpoint zero, where
+multiple transactions are submitted within a single frame. The UHCI host
+controller sends only a single transaction per frame. The camera cannot respond
+to a second transaction within a single frame.
+
+The Compaq USB camera that is included with the Compaq Presario computer is
+intended to be used only on that computer. For more information, contact Compaq.
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

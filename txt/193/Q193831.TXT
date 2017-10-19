@@ -1,0 +1,95 @@
+DOCUMENT:Q193831  09-AUG-2001  [iis]
+TITLE   :Compiling Large ASP Pages Can Take 100% of CPU Time
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an ASP file is requested for the first time, it must be compiled. Normally,
+this will only last a short time. However, if the ASP and associated include
+files are large, Internet Information Server (IIS) can stay at 100 percent CPU
+usage, which prevents the server from servicing client requests.
+
+CAUSE
+=====
+
+ASP is a run-time interpreted environment designed for small files. Each script
+block in the ASP file is parsed separately. Processing these blocks is CPU
+intensive, especially when there are hundreds of disparate script blocks.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+WORKAROUND
+==========
+
+To work around this problem, design the ASP to use a single script block instead
+of individual blocks. For example:
+
+   <html tag> some text </html tag> <% = variableName %>
+   <html tag> some text </html tag> <% = CallToFunction(param1,
+   param2) %>
+
+takes longer to compile than:
+
+   <%
+   Response.Write ("<html tag> some text </html tag> " &
+   variableName)
+   Response.Write ("<html tag> some text </html tag> " &
+   CallToFunction(param1, param2))
+   %>
+
+Multiple records can be displayed using ADO and a query loop. This reduces the
+amount of redundant script blocks and make the compile much faster.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0. This problem was first corrected in Windows NT 4.0 Service Pack 4.0
+and Windows NT Server 4.0, Terminal Server Edition Service Pack 4.
+
+
+Additional query words: IIS hotfix hot fix qfe quick fix engineering patch
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbiisSearch kbiis400
+Version           : WINNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

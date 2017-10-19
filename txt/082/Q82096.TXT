@@ -1,0 +1,87 @@
+DOCUMENT:Q82096  13-DEC-1999  [win95x]
+TITLE   :Disabling Drafix CAD Fonts in Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Foresight Resources Corporation's Drafix CAD for Windows versions 1.0, 1.1, and
+1.11 place a font entry and a section entry in the WIN.INI file.
+
+The font entry makes an extra 16 fonts available to Windows applications. To
+disable the Drafix CAD fonts, start Control Panel, choose the Fonts icon, and
+remove the "frc fonts" line.
+
+MORE INFORMATION
+================
+
+Drafix CAD versions 1.0, 1.1, and 1.11 place entries in the WIN.INI file to make
+their fonts available in the Drafix CAD drawing screen.
+
+Drafix CAD for Windows version 2.0 has its own DRAFIX.INI file that loads these
+fonts.
+
+Below is an example of the WIN.INI entries that the 1.0, 1.1, and 1.11 versions
+of Drafix CAD add and a listing of the names of the 16 fonts that Drafix CAD
+makes available to Windows.
+
+      [fonts]
+      frc Fonts (All res)=DRAFIX.FON
+
+      [DrafixWindowsCAD]
+      backgroundcolor=1
+      dwgdir=c:\Windows\cad\dwg
+      symboldir=c:\Windows\cad\slb
+
+The following is a list of fonts used inside the Drafix CAD for Windows drawing
+screen:
+
+   Block                 Greek Math
+   Century Bold          Helvetica
+   Century Italic        Italic
+   Century Bold Italic   Centura Bold
+   Complex               Simplex
+   Cursive               Slant
+   Cursive Bold          Special
+   Gothic Bold           Times Roman
+
+For more information, contact Foresight Resources Corporation's Technical
+Support.
+
+Drafix CAD is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+
+Additional query words: 3.00 3.00a 3rdparty cadd third party 3rd win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

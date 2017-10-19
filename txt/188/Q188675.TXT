@@ -1,0 +1,73 @@
+DOCUMENT:Q188675  16-SEP-1999  [schedplus]
+TITLE   :Schedule+ ErrMsg "The meeting request is out of date"
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0,7.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, versions 7.0, 7.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a response to a meeting request you made with another Microsoft
+Schedule+ 7.x user, the message header may display the following message:
+
+   The meeting request is out of date
+
+CAUSE
+=====
+
+This behavior may occur under the following conditions:
+
+ - The meeting attendee responded to the same meeting request more than once.
+
+   -or-
+
+ - You sent an updated meeting request and the attendee responded to the
+   original meeting request.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+REFERENCES
+==========
+
+For information on similar issue, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q146502 Which Schedule+ Meeting Time is Correct?
+
+Additional query words: sch+ sched+ Outlook groupware appointment delegate
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbSchedule750
+Version           : WINDOWS:7.0,7.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

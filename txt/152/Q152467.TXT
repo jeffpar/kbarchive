@@ -1,0 +1,64 @@
+DOCUMENT:Q152467  31-JUL-2001  [sms]
+TITLE   :PGC Errors at the Client When Registry Entry Contains a Space
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbinterop kbDatabase kbPGC smsdatabase smspgc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When an application created with Program Group Control is run, and the Registry
+setting for that application has a space in it, Program Group Control will not
+be able to start the application. PGC will consider the application to be
+incorrectly configured.
+
+
+CAUSE
+=====
+
+Windows NT allows registry entries containing spaces. Program Group Control does
+not recognize registry names with a space.
+
+RESOLUTION
+==========
+
+Do not specify a registry name containing spaces.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server versions 1.0, 1.1 and 1.2. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbinterop kbDatabase kbPGC smsdatabase smspgc 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,71 @@
+DOCUMENT:Q167376  07-SEP-2001  [winnt]
+TITLE   :Error Message When Starting Add Printer Wizard
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Add Printer Wizard, you may receive the following error
+message:
+
+   Out of resources.
+
+   Printer operation cannot continue due to lack of resources. The specified
+   module could not be found.
+
+CAUSE
+=====
+
+The Ntprint.dll file in the %SystemRoot%\System32 folder may be missing or
+damaged.
+
+RESOLUTION
+==========
+
+Expand a new copy of the Ntprint.dll file from the Windows NT 4.0 CD-ROM to the
+%SystemRoot%\System32 folder using the following steps:
+
+1. If an Ntprint.dll file already exists in the %SystemRoot%\System32 folder,
+   rename it to Ntprint.old.
+
+2. Place the Windows NT 4.0 CD-ROM in the CD-ROM drive.
+
+3. Type the following line at a command prompt:
+
+   expand d:\i386\ntprint.dl_ c:\winnt\system32\ntprint.dll
+
+   NOTE: This article assumes that Windows NT is installed in the Winnt folder on
+   drive C and that the CD-ROM drive is drive D. If this is not the case, adjust
+   the command as necessary.
+
+======================================================================
+Keywords          : kberrmsg kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

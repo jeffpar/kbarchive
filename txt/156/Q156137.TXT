@@ -1,0 +1,65 @@
+DOCUMENT:Q156137  31-JUL-2001  [visualc]
+TITLE   :FIX: Cannot Set Breakpoint at EXECUTE Statement
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:4.2
+OPER/SYS:
+KEYWORDS:kbDebug kbEEdition kbSQL kbVC kbVC500fix kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot set the breakpoint at the EXECUTE statement in a stored procedure.
+
+WORKAROUND
+==========
+
+Use EXEC instead of EXECUTE as a workaround to this bug.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This bug was fixed in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+The EXEC and EXECUTE statements mean the same in SQL Server 6.5. You can set the
+breakpoint at an EXEC statement. But the EXECUTE statement does not accept
+breakpoints. However, breakpoints are accepted on both the EXEC and EXECUTE
+statements while stepping from the previous statement.
+
+While debugging if you try to set a break point on an EXECUTE line, the
+breakpoint gets set on the next line.
+
+Additional query words: kbVC420bug
+
+======================================================================
+Keywords          : kbDebug kbEEdition kbSQL kbVC kbVC500fix kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : WINDOWS:4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

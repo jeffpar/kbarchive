@@ -1,0 +1,76 @@
+DOCUMENT:Q118611  07-MAY-2001  [visualc]
+TITLE   :INFO: SetMessageQueue Used in MFC WinMain
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0,2.1
+OPER/SYS:
+KEYWORDS:kbnokeyword kbMFC kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbWndwMsg kbGrpDSMFCATL kbArc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Functions that use the applications message queue do not work correctly if they
+are called in the constructor of a global or static object. SetMessageQueue is
+called in the initialization code at the beginning of the MFC WinMain()
+function. SetMessageQueue replaces the current message queue with a new message
+queue. The constructors of global or static C++ objects are called before
+WinMain(). If these constructors call functions that rely on the message queue,
+the objects do not work properly.
+
+MORE INFORMATION
+================
+
+MFC for Windows, version 2.5, calls SetMessageQueue in the AfxWinInit()
+function, which is called by the MFC WinMain() function. The constructors for
+global and static objects are called before WinMain(). These constructors should
+not call functions that use the applications message queue or rely on the
+message queue remaining the same after the constructor is executed. These
+functions include:
+
+ - Creating a window
+
+ - Setting a timer (using SetTimer)
+
+ - Setting a hook (using SetWindowsHook)
+
+ - Posting a message
+
+If any one of these things is done in the constructor and is not processed or
+removed from the application's message queue before the constructor exits, it
+will not work later in the application. To work around this, initialize each of
+these objects in the CWinApp::InitInstance() function: Define an initialization
+member function for the object and call it in the CWinApp::InitInstance()
+function.
+
+Additional query words: kbinf 1.50 2.00 2.10 2.50 2.51 2.52 3.00 3.10
+
+======================================================================
+Keywords          : kbnokeyword kbMFC kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbWndwMsg kbGrpDSMFCATL kbArchitecture 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

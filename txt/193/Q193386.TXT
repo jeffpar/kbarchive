@@ -1,0 +1,79 @@
+DOCUMENT:Q193386  11-DEC-2001  [winnt]
+TITLE   :MSJET35.dll Error Installing Microsoft Office 97 SR2
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When installing Office 97 SR2, you receive the following error message:
+
+   Error title: Microsoft Office 97 Setup
+   Setup cannot register MSJET35.dll in the system registry because an older
+   version is in use. Close all applications and try again.
+
+You are given two choices: Retry and Cancel.
+
+If you click Retry, the error message persists. If you click Cancel, Office Setup
+quits.
+
+CAUSE
+=====
+
+The Msjet35.dll file is in use by the Terminal Server Licensing service or
+another program.
+
+RESOLUTION
+==========
+
+Terminal Server
+---------------
+
+To work around this issue, temporarily stop the Terminal Server licensing
+Service, and select RETRY.
+
+Windows 95
+----------
+
+1. Restart your computer to a command prompt by restarting the computer,
+   pressing the F8 key when you see the "Starting Windows 95" message, and then
+   choosing Command Prompt Only from the Startup menu.
+
+2. Rename the Msjet35.dll file.
+
+3. Restart the computer normally, and then start Office Setup again.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

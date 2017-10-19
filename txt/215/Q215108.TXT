@@ -1,0 +1,63 @@
+DOCUMENT:Q215108  27-OCT-2000  [sms]
+TITLE   :SMS: Advertised Programs Wizard Displays Incorrect Message
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If two advertisements that are based on the same package and program are sent to
+a client, those advertisements will be merged. If one of the advertisements
+allows users to run it before it is assigned and the other advertisement does
+not, the following behavior occurs:
+
+When the merged advertisement reaches the client, a message pops up that the
+Advertised Programs Wizard has a new program to run, but when the Wizard is
+opened, no new program is displayed.
+
+WORKAROUND
+==========
+
+When the dialog box for a new program in the Advertised Programs Wizard is
+displayed, disregard it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

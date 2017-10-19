@@ -1,0 +1,51 @@
+DOCUMENT:Q131885  17-DEC-2000  [win95x]
+TITLE   :AMI BIOS Upgrade Needed for Adaptec 2940 PCI SCSI Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 cannot detect or enumerate an Adaptec 2940 SCSI controller installed
+on a PCI bus on computers with an AMI ROM BIOS version 1.00.07.AF2.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade the AMI ROM BIOS to version 1.00.09.AF2. For
+information about obtaining this BIOS upgrade, please contact the computer's
+manufacturer.
+
+If upgrading the ROM BIOS does not immediately resolve the problem, turn your
+computer off and back on, and then run Windows 95 Setup again.
+
+Additional query words: aha
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

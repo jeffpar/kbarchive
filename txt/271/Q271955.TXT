@@ -1,0 +1,67 @@
+DOCUMENT:Q271955  08-AUG-2001  [winnt]
+TITLE   :STOP 0x4E, STOP 0x1A, STOP 0x50, and STOP 0xA Errors Occur When
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start your computer, the computer may not start, and the
+following STOP error messages may occur:
+
+   STOP 0x0000001a (0x00041284, 0xca9a2000, 0x000077e0, 0xc0c00000)
+   MEMORY_MANAGEMENT
+
+   STOP 0x0000004e (0x00000007, 0x00007abf, 0x0000f17e,
+   0x00000000)PFN_LIST_CORRUPT
+
+   STOP 0x0000000a (0x00000028, 0x00000002, 0x00000000,
+   0x8012d2d6)IRQL_NOT_LESS_OR_EQUAL
+
+   STOP 0x00000050 (0xc2332b94, 0x00000000, 0x00000000,
+   0x00000000)PAGE_FAULT_IN_NONPAGED_AREA
+
+CAUSE
+=====
+
+This behavior can occur when the random-access memory (RAM) on your computer has
+become corrupt.
+
+RESOLUTION
+==========
+
+To resolve this behavior, replace the RAM on your computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

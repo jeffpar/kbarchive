@@ -1,0 +1,72 @@
+DOCUMENT:Q178406  17-DEC-2000  [win95x]
+TITLE   :Availability of Animated Cursor Editor and Image Editor Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows 95 Resource Kit CD-ROM includes the following programs:
+
+ - Animated Cursor Editor
+
+ - Image Editor
+
+You can use these programs to create cursors, animated cursors, bitmaps and
+icons.
+
+MORE INFORMATION
+================
+
+To install the Animated Cursor Editor and Image Editor programs, follow these
+steps:
+
+1. Insert the Windows 95 Resource Kit CD-ROM into the CD-ROM drive.
+
+2. Click Start, point to Settings, click Control Panel, and then double-click
+   Add/Remove Programs.
+
+3. Click the Windows Setup tab, and then click Have Disk.
+
+4. In the Copy Manufacturer's Files From box, type the following line, and then
+   press ENTER
+
+   " <drive>: " (without the quotation marks)
+
+   where <drive> is the drive letter assigned to your CD-ROM drive.
+
+5. Click the "Animated Cursor Editor and Image Editor" check box to select it,
+   and then click Install.
+
+6. Click OK, and then close Control Panel.
+
+======================================================================
+Keywords          : kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

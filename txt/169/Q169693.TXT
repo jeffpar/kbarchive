@@ -1,0 +1,72 @@
+DOCUMENT:Q169693  19-APR-1999  [exchange]
+TITLE   :XADM: Private Byte Memory Leak in Store.exe
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Over time, the Windows NT system responsiveness starts to appears sluggish and
+clients may report a gradual decrease in system performance.
+
+You may observe that the amount of Private Bytes for Store.exe increases over
+time. You can track this by monitoring the following counters in the Windows NT
+Performance Monitor:
+
+   Object: Process
+   Instance: STORE
+   Counter: Private Bytes
+
+CAUSE
+=====
+
+Under certain conditions, when a Microsoft Exchange or Outlook client sets focus
+to a message folder on the Microsoft Exchange Server that has a filter defined,
+a small number of private bytes are leaked.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 4.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words: leak performance gradual high paging activity
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

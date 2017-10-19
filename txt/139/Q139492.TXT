@@ -1,0 +1,69 @@
+DOCUMENT:Q139492  12-JUN-2001  [sna]
+TITLE   :Locating Microsoft SNA Server Companion Products Catalog
+PRODUCT :Microsoft SNA Server
+PROD/VER:winnt:2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server for Windows NT, versions 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to locate the Microsoft SNA Server Companion Product
+Catalog.
+
+MORE INFORMATION
+================
+
+The SNA Server Companion Product Catalog contains up-to-date information on
+hardware and software products from third-party vendors that are compatible with
+SNA Server, including the following items:
+
+ - Third-party 3270 and 5250 emulation products.
+
+ - "Middleware" connectivity products, including database connectivity, file
+   transfer, AS/400 connectivity, and administrative functions.
+
+ - Third-party adapter support.
+
+The SNA Server Product Companion Catalog is available in Microsoft Excel format.
+To download the catalog:
+
+1. Go to the following Microsoft Web site:
+
+   http://www.microsoft.com/sna/
+
+2. Click Product Showcase, and then click Third Party Solutions.
+
+3. To download the catalog, click Companion Product Catalog (this file
+   self-extracts to an Excel spreadsheet.).
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300NT kbSNAServ400NT kbSNAServ210NT kbSNAServ211NT
+Version           : winnt:2.1,2.11,3.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

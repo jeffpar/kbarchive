@@ -1,0 +1,71 @@
+DOCUMENT:Q170264  27-FEB-2000  [crossnet]
+TITLE   :Office 97 Programs Do Not Expand Environment Variables
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The paths used in Microsoft Office 97 policy templates (except the Personal
+folder) do not accept environment variables. For example, setting the user
+template folder in Policy Editor to the following path
+
+   \\<servername>\<sharename>\%username%
+
+generates the following error message when you start an Office 97 program:
+
+   The User Templates folder "\\servername\sharename\%username%" was not found.
+   Do you want to create this folder?
+
+CAUSE
+=====
+
+When they read paths from the registry, Office 97 programs do not expand
+environment variables (such as %USERPROFILE% or %USERNAME%).
+
+RESOLUTION
+==========
+
+Use fully qualified path names similar to one of the following:
+
+ - C:\Program Files\Microsoft Office\Templates
+
+ - \\<servername>\<sharename>\templates
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 %userprofile% %username% variable
+
+======================================================================
+Keywords          : kbprogramming 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

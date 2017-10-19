@@ -1,0 +1,63 @@
+DOCUMENT:Q130733  17-DEC-2000  [win95x]
+TITLE   :Cannot Connect with Evercom 2400 Modem
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an Evercom 2400 modem to dial with a program such as HyperTerminal
+or The Microsoft Network, the modem dials, connects, stops responding (hangs)
+for a while, and then disconnects.
+
+CAUSE
+=====
+
+Windows 95 detects the Evercom 2400 as a standard modem type. For the standard
+initialization string to work with this modem, the maximum port speed needs to
+be set to 2400.
+
+
+RESOLUTION
+==========
+
+To set the maximum port speed to 2400, use these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Modems.
+
+3. Click Properties.
+
+4. In the Maximum Speed box, click 2400.
+
+5. Click OK or Close until you return to Control Panel.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

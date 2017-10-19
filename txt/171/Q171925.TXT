@@ -1,0 +1,59 @@
+DOCUMENT:Q171925  07-SEP-2001  [homemm]
+TITLE   :Mac Bookshelf: Cannot Print Landscape Orientation
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:
+OPER/SYS:
+KEYWORDS:kbmm kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Macintosh 
+ - Microsoft Bookshelf 98 for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to print in landscape orientation from one of the products listed
+above, the printout is in portrait orientation. This occurs even if you click
+Landscape in the Printer Setup window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf for the
+Macintosh versions 1996-97 and 98. Microsoft is researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+WORKAROUND
+==========
+
+To print the contents of an article in landscape orientation from one of the
+products listed above, copy the contents to an application which handles the
+type of media you wish to print (such as pictures or text).
+
+Additional query words: macmm multi multimedia media land scape table tables
+
+======================================================================
+Keywords          : kbmm kbprint 
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1996Mac kbBookShelf1997Mac kbBookShelf1998Mac
+Version           : MACINTOSH:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,47 @@
+DOCUMENT:Q104633  08-NOV-2001  [homegame]
+TITLE   :Arcade: Scoring Topic in Battlezone Help File Incorrect
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:1.0; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbdocerr kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for Windows, version 1.0 
+ - Microsoft Arcade for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Scoring Topic in the Microsoft Arcade Battlezone Help file incorrectly
+states that when you score 1 million points, the game resets the score to zero.
+
+This is not true. The game continues to display your real score, even when you
+score more than 1 million points.
+
+Additional query words: 1.00 m_arcade w_arcade battle zone msgame kbfaq
+
+======================================================================
+Keywords          : kbui kbdocerr kbimu msgame kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcadeMac kbArcade
+Version           : MACINTOSH:1.0; WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

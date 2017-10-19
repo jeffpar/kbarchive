@@ -1,0 +1,53 @@
+DOCUMENT:Q98416  30-JUL-2001  [lanman]
+TITLE   :DosOpen Thread Blocked Pending DosWaitNmPipe
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+DosOpen() local call threads become blocked if a remote pipe does not open
+pending a DosWaitNmPipe() in a different thread. This is by design in OS/2 and
+is easily worked around.
+
+MORE INFORMATION
+================
+
+Set the ulTIMEOUT parameter of DosWaitNmPipe to a small value that is an
+acceptable postponement for other I/O--maybe 2 seconds--then put the
+DosWaitNmPipe in a loop. The DosWaitNmPipe now, in effect, "waits forever"
+(unless you want to limit the loop instance), but every 2 seconds other I/O from
+threads within the same process are serviced.
+
+OS/2 serializes I/O at the process level, which creates (essentially) a queue of
+I/O requests per process. If two threads within the same process issue I/O calls
+to the operating system, the first one (longest time in queue) becomes the
+DosWaitNmPipe, and the second becomes the DosOpen. The operating system must
+complete processing the DosWaitNmPipe before it can entertain the DosOpen.
+
+This behavior is not present in NT, as NT serializes I/O per thread, not per
+process.
+
+Additional query words: 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

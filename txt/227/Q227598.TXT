@@ -1,0 +1,64 @@
+DOCUMENT:Q227598  25-JUL-2001  [sms]
+TITLE   :Input Devices Do Not Work After Installing Windows Using SMS 1.2
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbhw kbsetup kbHardware
+
+======================================================================
+This article discusses a Beta release of a Microsoft product. The 
+information in this article is provided as-is and is subject to change
+without notice.
+
+No formal product support is available from Microsoft for this Beta 
+product. For information about obtaining support for a Beta release, 
+please see the documentation included with the Beta product files, or 
+check the Web location from which you downloaded the release.
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows 2000 using Systems Management Server 1.2 and you
+restart the computer at the end of the installation, the pointing device (mouse)
+and keyboard may stop functioning.
+
+CAUSE
+=====
+
+This issue can occur because of the Kbstuff.sys driver that is installed by
+Systems Management Server 1.2.
+
+STATUS
+======
+
+This issue does not occur using Systems Management Server 2.0 or later.
+
+Additional query words: trackball pointer glide pad
+
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

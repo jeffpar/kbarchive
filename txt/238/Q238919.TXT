@@ -1,0 +1,68 @@
+DOCUMENT:Q238919  06-AUG-2002  [sms]
+TITLE   :SMS: Distributing SMS Network Monitor
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+To distribute the Network Monitor tool included with Systems Management Server
+(SMS) 2.0 Service Pack 1 (SP1), the package must have a folder structure that is
+similar to that of the SMS 2.0 SP1 image. If it does not, the following error
+message occurs during installation:
+
+   Unable to find file License.txt under <Package_folder>\..\..\Smssetup
+
+CAUSE
+=====
+
+This behavior occurs because there is a hard-coded dependency on the folder
+structure within the Network Monitor Setup.exe program.
+
+RESOLUTION
+==========
+
+There are two ways to overcome this issue:
+
+ - Use the entire SMS source image as the source folder so that the original
+   folder and file structure is maintained.
+
+ - Structure your package source similarly to that of the SMS source image, but
+   reduce the size of the package by only including the minimal folder structure
+   and files. The \Nmext and \Smssetup folder structures must be in place, and
+   Setup.exe must be run from the Nmext\<Platform> folder. However, the
+   Smssetup folder needs to contain only the License.txt file and no other files
+   or folders.
+
+Additional query words: netmon prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200SP1
+Version           : winnt:2.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

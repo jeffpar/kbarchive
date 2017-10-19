@@ -1,0 +1,302 @@
+DOCUMENT:Q83490  24-SEP-1999  [win95x]
+TITLE   :Windows 3.1 File List (A-M) with Expanded File Names/Sizes
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a listing of files (A-M) included on the Microsoft Windows
+version 3.1 disks. This list includes the compressed filename, expanded
+filename, disk location, compressed files size and uncompressed file size.
+
+MORE INFORMATION
+================
+
+Filename        Filename           Disk Number            File Size
+(Expanded)      (Compressed)  1.44MB  1.2MB   720K      (Compd)(Expnd)
+============    ============  ======  =====   ====      ======= ======
+
+256COLOR.BMP    256COLOR.BM_    3       4       6       4312    5078
+386MAX.VXD      386MAX.VX_      2       2       3       20237   35167
+40291730.WPD    40291730.WP_    6       6       B       1105    2941
+40293930.WPD    40293930.WP_    6       7       B       1741    5411
+8514.DRV        8514.DR_        1       1       2       50425   92032
+8514FIX.FON     8514FIX.FO_     2       2       3       3646    10976
+8514OEM.FON     8514OEM.FO_     2       2       3       4237    12288
+8514SYS.FON     8514SYS.FO_     1       2       2       3633    9280
+APP850.FON      APP850.FO_      1       1       4       16663   36672
+APPS.HLP        APPS.HL_        3       3       5       11491   15694
+APPS.INF        APPS.IN_        4       6       6       16889   57475
+ARCADE.BMP      ARCADE.BM_      4       6       7       375     630
+ARCHES.BMP      ARCHES.BM_      4       4       6       3137    10358
+ARGYLE.BMP      ARGYLE.BM_      3       3       6       245     630
+ARIAL.FOT       ARIAL.FO_       5       6       9       427     1306
+ARIAL.TTF       ARIAL.TT_       5       6       9       52532   65692
+ARIALB.FON      ARIALB.FO_      5       6       8       10358   22144
+ARIALBD.FOT     ARIALBD.FO_     5       6       9       427     1308
+ARIALBD.TTF     ARIALBD.TT_     5       6       9       51841   66080
+ARIALBI.FOT     ARIALBI.FO_     5       6       A       436     1322
+ARIALBI.TTF     ARIALBI.TT_     5       6       9       57729   71880
+ARIALI.FOT      ARIALI.FO_      5       6       9       429     1312
+ARIALI.TTF      ARIALI.TT_      5       6       B       47643   61656
+BANINST.386     BANINST.38_     2       2       4       992     4861
+BLUEMAX.VXD     BLUEMAX.VX_     2       2       3       20270   35189
+CALC.EXE        CALC.EX_        3       5       7       27999   43072
+CALC.HLP        CALC.HL_        3       5       7       12989   18076
+CALENDAR.EXE    CALENDAR.EX_    3       4       6       37995   59824
+CALENDAR.HLP    CALENDAR.HL_    3       5       7       13794   20656
+CANON10E.DRV    CANON10E.DR_    6       7       C       2652    6000
+CANON130.DRV    CANON130.DR_    6       7       C       2931    7536
+CANON330.DRV    CANON330.DR_    6       7       C       5694    20032
+CANYON.MID      CANYON.MI_      3       5       7       17632   33883
+CAN_ADF.EXE     CAN_ADF.EX_     6       7       B       36591   69232
+CARDFILE.EXE    CARDFILE.EX_    3       4       5       48673   93184
+CARDFILE.HLP    CARDFILE.HL_    4       4       5       18523   24810
+CARS.BMP        CARS.BM_        4       3       6       332     630
+CASTLE.BMP      CASTLE.BM_      4       6       6       544     778
+CGA.2GR         CGA.2G_         2       2       3       1768    2106
+CGA40850.FON    CGA40850.FO_    2       2       3       3729    6352
+CGA40WOA.FON    CGA40WOA.FO_    2       2       3       3563    6336
+CGA80850.FON    CGA80850.FO_    2       2       3       3049    4320
+CGA80WOA.FON    CGA80WOA.FO_    2       2       3       3039    4304
+CGALOGO.LGO     CGALOGO.LG_     2       3       4       902     896
+CGALOGO.RLE     CGALOGO.RL_     2       3       4       3815    11878
+CHARMAP.EXE     CHARMAP.EX_     3       3       5       12015   22016
+CHARMAP.HLP     CHARMAP.HL_     4       4       6       4689    10797
+CHIMES.WAV      CHIMES.WA_      3       4       5       10591   15920
+CHITZ.BMP       CHITZ.BM_       4       5       6       3294    19918
+CHORD.WAV       CHORD.WA_       3       3       5       11235   24982
+CIT24US.DRV     CIT24US.DR_     6       7       C       8493    30912
+CIT9US.DRV      CIT9US.DR_      6       7       C       6979    24800
+CITOH.DRV       CITOH.DR_       6       7       C       2422    4720
+CLIPBRD.EXE     CLIPBRD.EX_     5       4       7       11384   18512
+CLIPBRD.HLP     CLIPBRD.HL_     4       6       5       7668    13071
+CLOCK.EXE       CLOCK.EX_       3       4       5       10140   16416
+COMM.DRV        COMM.DR_        1       2       2       7157    9280
+COMMDLG.DLL     COMMDLG.DL_     4       4       A       50924   89248
+CONTROL.EXE     CONTROL.EX_     5       4       7       10270   15872
+CONTROL.HLP     CONTROL.HL_     2       3       4       95210   121672
+CONTROL.INF     CONTROL.INF     5       6       A       20993   20993
+CONTROL.INI     See CONTROL.SRC N/A     N/A     N/A     N/A     Varies
+CONTROL.SRC     CONTROL.SR_     5       6       9       1278    3609
+COUR.FOT        COUR.FO_        5       6       9       428     1318
+COUR.TTF        COUR.TT_        5       6       9       53733   72356
+COURB.FON       COURB.FO_       5       6       A       8118    21856
+COURBD.FOT      COURBD.FO_      5       6       A       430     1320
+COURBD.TTF      COURBD.TT_      5       6       9       56871   78564
+COURBI.FOT      COURBI.FO_      6       6       9       437     1334
+COURBI.TTF      COURBI.TT_      5       6       9       64330   84436
+COURE.FON       COURE.FO_       5       6       A       8612    23408
+COURF.FON       COURF.FO_       5       6       A       11021   31712
+COURI.FOT       COURI.FO_       5       6       9       435     1324
+COURI.TTF       COURI.TT_       5       6       9       60757   80588
+CPWIN386.CPL    CPWIN386.CP_    1       1       1       48841   104816
+DDEML.DLL       DDEML.DL_       4       5       8       22366   36864
+DEC1150.WPD     DEC1150.WP_     6       7       B       1875    6006
+DEC2150.WPD     DEC2150.WP_     6       7       B       1835    5900
+DEC2250.WPD     DEC2250.WP_     6       7       B       1972    6434
+DEC3250.WPD     DEC3250.WP_     6       7       B       2012    6580
+DECCOLOR.WPD    DECCOLOR.WP_    6       7       B       1308    4271
+DECLPS20.WPD    DECLPS20.WP_    6       7       B       1533    4944
+DECNB.386       DECNB.38_       2       2       4       4860    9375
+DECNET.386      DECNET.38_      2       2       4       5817    14058
+DICONIX.DRV     DICONIX.DR_     6       7       C       2201    4256
+DING.WAV        DING.WA_        5       5       6       6011    11598
+DISK1           DISK1           1       1       1       8       8
+DISK2           DISK2           2       2       2       8       8
+DISK3           DISK3           3       3       3       8       8
+DISK4           DISK4           4       4       4       8       8
+DISK5           DISK5           5       5       5       8       8
+DISK6           DISK6           6       6       6       8       8
+DISK7           DISK7           N/A     7       7       8       8
+DISK8           DISK8           N/A     N/A     8       8       8
+DISK9           DISK9           N/A     N/A     9       8       8
+DISKA           DISKA           N/A     N/A     A       8       8
+DISKB           DISKB           N/A     N/A     B       8       8
+DISKC           DISKC           N/A     N/A     C       8       8
+DM309.DRV       DM309.DR_       6       7       B       3225    6688
+DMCOLOR.DLL     DMCOLOR.DL_     6       7       C       14744   18480
+DOSAPP.FON      DOSAPP.FO_      2       3       3       16721   36656
+DOSX.EXE        DOSX.EX_        2       2       3       27426   32682
+DRIVERS.CPL     DRIVERS.CP_     4       5       6       21385   41440
+DRWATSON.EXE    DRWATSON.EX_    4       4       7       18559   26864
+DSWAP.EXE       DSWAP.EX_       4       5       8       18810   27474
+EGA.3GR         EGA.3G_         1       1       2       9460    14336
+EGA.DRV         EGA.DR_         1       2       1       43319   71552
+EGA.SYS         EGA.SY_         2       2       3       4190    5039
+EGA40850.FON    EGA40850.FO_    2       2       4       4058    8384
+EGA40WOA.FON    EGA40WOA.FO_    2       2       3       3933    8368
+EGA80850.FON    EGA80850.FO_    2       2       3       3243    5328
+EGA80WOA.FON    EGA80WOA.FO_    2       2       3       3259    5312
+EGACOLOR.2GR    EGACOLOR.2G_    1       2       2       2729    3260
+EGAFIX.FON      EGAFIX.FO_      1       1       2       2534    4240
+EGAHIBW.DRV     EGAHIBW.DR_     2       2       3       26886   45264
+EGALOGO.LGO     EGALOGO.LG_     1       2       2       1105    1136
+EGALOGO.RLE     EGALOGO.RL_     1       2       3       5125    17082
+EGAMONO.2GR     EGAMONO.2G_     2       2       4       2563    3030
+EGAMONO.DRV     EGAMONO.DR_     2       2       3       26941   45328
+EGAMONO.LGO     EGAMONO.LG_     2       2       3       1073    1104
+EGAMONO.RLE     EGAMONO.RL_     2       3       4       4619    15966
+EGAOEM.FON      EGAOEM.FO_      1       2       2       3027    4176
+EGASYS.FON      EGASYS.FO_      1       2       2       2879    5264
+EGYPT.BMP       EGYPT.BM_       3       5       6       225     630
+EMM386.EXE      EMM386.EX_      4       4       6       52996   110174
+EPL75523.WPD    EPL75523.WP_    6       7       B       1554    4714
+EPSON24.DRV     EPSON24.DR_     6       7       C       5158    14960
+EPSON9.DRV      EPSON9.DR_      6       7       C       6872    22192
+ESCP2.DRV       ESCP2.DR_       6       7       C       4488    7904
+EXECJET.DRV     EXECJET.DR_     6       7       C       5979    20240
+EXPAND.EXE      EXPAND.EXE      3       3       5       15285   15285
+FINSTALL.DLL    FINSTALL.DL_    6       7       B       110030  200368
+FINSTALL.HLP    FINSTALL.HL_    6       7       C       15386   19202
+FLOCK.BMP       FLOCK.BM_       3       3       6       468     1630
+FUJI24.DRV      FUJI24.DR_      6       7       C       5907    17088
+FUJI9.DRV       FUJI9.DR_       6       7       C       3478    8576
+GDI.EXE         GDI.EX_         1       1       3       167674  220800
+GENDRV.DLL      GENDRV.DL_      6       7       B       49648   99328
+GLOSSARY.HLP    GLOSSARY.HL_    3       3       6       37606   46570
+HERC.3GR        HERC.3G_        2       2       3       5988    9216
+HERC850.FON     HERC850.FO_     2       2       3       3524    8880
+HERCLOGO.LGO    HERCLOGO.LG_    2       2       3       1019    1008
+HERCLOGO.RLE    HERCLOGO.RL_    1       2       2       4690    15808
+HERCULES.2GR    HERCULES.2G_    1       2       2       1809    2155
+HERCULES.DRV    HERCULES.DR_    3       2       3       27462   47296
+HERCWOA.FON     HERCWOA.FO_     2       2       3       3509    8864
+HERMES_1.WPD    HERMES_1.WP_    6       6       B       781     1937
+HERMES_2.WPD    HERMES_2.WP_    6       6       B       1424    4411
+HIMEM.SYS       HIMEM.SY_       5       4       7       9384    13824
+HONEY.BMP       HONEY.BM_       4       4       6       345     854
+HPDSKJET.DRV    HPDSKJET.DR_    6       7       C       23308   61856
+HPEBIOS.386     HPEBIOS.38_     1       3       4       2108    9348
+HPELI523.WPD    HPELI523.WP_    6       6       B       1592    4899
+HPIID522.WPD    HPIID522.WP_    6       6       B       1556    4799
+HPIII522.WPD    HPIII522.WP_    6       6       B       1540    4725
+HPIIP522.WPD    HPIIP522.WP_    6       6       B       1547    4762
+HPMOUSE.DRV     HPMOUSE.DR_     2       2       4       2540    4896
+HPPCL.DRV       HPPCL.DR_       6       7       C       54150   153120
+HPPCL5A.DRV     HPPCL5A.DR_     6       7       C       185016  428672
+HPPCL5A.HLP     HPPCL5A.HL_     6       7       C       17386   21805
+HPPCL5OP.HLP    HPPCL5OP.HL_    6       7       C       8013    13195
+HPPLOT.DRV      HPPLOT.DR_      6       6       B       34950   66680
+HPSYSTEM.DRV    HPSYSTEM.DR_    2       2       3       2108    2832
+HP_3D522.WPD    HP_3D522.WP_    6       6       B       1642    4988
+HP_3P522.WPD    HP_3P522.WP_    6       7       B       1566    4784
+IBM17521.WPD    IBM17521.WP_    6       6       B       1034    2695
+IBM39521.WPD    IBM39521.WP_    6       7       B       1675    5165
+IBM4019.DRV     IBM4019.DR_     6       7       C       30069   68368
+IBM5204.DRV     IBM5204.DR_     6       7       C       4797    16304
+IBMCOLOR.DRV    IBMCOLOR.DR_    6       7       C       12699   21424
+IPX.OBJ         IPX.OB_         2       2       4       15111   20340
+IPXODI.COM      IPXODI.CO_      2       3       4       13552   20903
+KBDBE.DLL       KBDBE.DL_       2       2       4       2049    2449
+KBDCA.DLL       KBDCA.DL_       2       2       4       2127    2673
+KBDDA.DLL       KBDDA.DL_       2       2       4       2032    2364
+KBDDV.DLL       KBDDV.DL_       2       3       4       1000    1332
+KBDFC.DLL       KBDFC.DL_       2       2       4       2272    2769
+KBDFI.DLL       KBDFI.DL_       2       2       4       2079    2404
+KBDFR.DLL       KBDFR.DL_       2       2       4       1928    2353
+KBDGR.DLL       KBDGR.DL_       2       2       4       1976    2481
+KBDHP.DRV       KBDHP.DR_       1       1       3       6835    8480
+KBDIC.DLL       KBDIC.DL_       2       2       4       1412    1724
+KBDIT.DLL       KBDIT.DL_       2       2       4       1806    2146
+KBDLA.DLL       KBDLA.DL_       2       2       4       2091    2465
+KBDMOUSE.DRV    KBDMOUSE.DR_    2       3       4       1078    1408
+KBDNE.DLL       KBDNE.DL_       2       2       4       2029    2358
+KBDNO.DLL       KBDNO.DL_       2       2       4       2059    2402
+KBDPO.DLL       KBDPO.DL_       2       2       4       1982    2352
+KBDSF.DLL       KBDSF.DL_       2       2       4       2002    2489
+KBDSG.DLL       KBDSG.DL_       2       2       4       1374    1653
+KBDSP.DLL       KBDSP.DL_       2       3       5       2074    2401
+KBDSW.DLL       KBDSW.DL_       2       3       4       2070    2374
+KBDUK.DLL       KBDUK.DL_       2       2       4       1153    1428
+KBDUS.DLL       KBDUS.DL_       2       3       4       996     1300
+KBDUSX.DLL      KBDUSX.DL_      2       2       4       1329    1641
+KEYBOARD.DRV    KEYBOARD.DR_    2       2       2       6115    7568
+KRNL286.EXE     KRNL286.EX_     2       2       3       55774   71730
+KRNL386.EXE     KRNL386.EX_     2       2       4       59399   75490
+L200230&.WPD    L200230&.WP_    6       7       B       749     1863
+L330_52&.WPD    L330_52&.WP_    6       7       B       859     2335
+L530_52&.WPD    L530_52&.WP_    6       7       B       858     2335
+L630_52&.WPD    L630_52&.WP_    6       7       C       859     2335
+LANGDUT.DLL     LANGDUT.DL_     2       2       4       1425    3072
+LANGENG.DLL     LANGENG.DL_     2       2       4       1430    3072
+LANGFRN.DLL     LANGFRN.DL_     2       3       4       1457    3072
+LANGGER.DLL     LANGGER.DL_     2       2       4       1425    3072
+LANGSCA.DLL     LANGSCA.DL_     2       2       4       1429    3072
+LANGSPA.DLL     LANGSPA.DL_     2       2       4       1494    3072
+LANMAN.DRV      LANMAN.DR_      2       2       4       26011   63488
+LANMAN.HLP      LANMAN.HL_      2       3       4       14000   31724
+LANMAN10.386    LANMAN10.38_    2       2       4       1550    8786
+LBPII.DRV       LBPII.DR_       6       7       B       26846   65968
+LBPIII.DRV      LBPIII.DR_      6       7       B       36482   89504
+LEAVES.BMP      LEAVES.BM_      4       6       6       4616    15118
+LMOUSE.COM      LMOUSE.CO_      2       2       3       22326   34658
+LMOUSE.DRV      LMOUSE.DR_      2       2       4       7898    12928
+LSL.COM         LSL.CO_         2       2       4       6278    7662
+LVMD.386        LVMD.38_        2       2       4       4018    9688
+LZEXPAND.DLL    LZEXPAND.DL_    2       1       1       6551    9936
+MAIN.CPL        MAIN.CP_        4       5       A       89396   148560
+MARBLE.BMP      MARBLE.BM_      4       4       6       7666    27646
+MCICDA.DRV      MCICDA.DR_      4       5       A       8368    13824
+MCISEQ.DRV      MCISEQ.DR_      4       5       7       16359   25264
+MCIWAVE.DRV     MCIWAVE.DR_     4       6       7       17133   28160
+MIDIMAP.CFG     MIDIMAP.CF_     4       6       A       7333    34522
+MIDIMAP.DRV     MIDIMAP.DR_     4       4       6       34150   52784
+MMSOUND.DRV     MMSOUND.DR_     1       2       2       2829    3440
+MMSYSTEM.DLL    MMSYSTEM.DL_    4       5       A       35478   61648
+MMTASK.TSK      MMTASK.TS_      5       6       8       777     1104
+MODERN.FON      MODERN.FO_      5       6       A       4376    8704
+MONOUMB2.386    MONOUMB2.38_    4       4       4       1017    4745
+MORICONS.DLL    MORICONS.DL_    3       4       5       40447   118864
+MOUSE.COM       MOUSE.CO_       4       4       A       31328   56408
+MOUSE.DRV       MOUSE.DR_       2       2       3       8000    10672
+MOUSE.SYS       MOUSE.SY_       4       5       A       30733   55160
+MOUSEHP.COM     MOUSEHP.CO_     4       4       A       20729   34061
+MOUSEHP.SYS     MOUSEHP.SY_     4       5       7       20642   33909
+MPLAYER.EXE     MPLAYER.EX_     3       5       7       21454   33312
+MPLAYER.HLP     MPLAYER.HL_     3       3       5       7872    12896
+MPU401.DRV      MPU401.DR_      4       4       5       5265    7088
+MSADLIB.DRV     MSADLIB.DR_     3       3       5       10495   22064
+MSC3BC2.DRV     MSC3BC2.DR_     2       3       4       2823    4832
+MSCMOUSE.DRV    MSCMOUSE.DR_    2       2       4       2901    4960
+MSCVMD.386      MSCVMD.38_      1       2       3       3257    9327
+MSD.EXE         MSD.EXE         4       5       8       155538  155538
+MSD.INI         MSD.IN_         5       6       5       350     620
+MSNET.DRV       MSNET.DR_       1       2       2       4619    7072
+MT_TI101.WPD    MT_TI101.WP_    6       7       B       1392    4383
+
+KBCategory: kbsetup kbref
+KBSubcategory: win31
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

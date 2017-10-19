@@ -1,0 +1,54 @@
+DOCUMENT:Q100359  18-JUL-2001  [win16sdk]
+TITLE   :DOC: Incomplete Description of ExitWindows()
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr kbSDKPlatform kbGrpDSUser kbWndw kbFAQ kbDSupport kbwin16sdkfaq kb16b
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The description of the ExitWindows function does not list the code that you can
+use to terminate Windows and return control to MS-DOS.
+
+MORE INFORMATION
+================
+
+Page 290 of the Microsoft Windows Software Development Kit (SDK) "Programming
+Reference, Volume 2: Functions" manual for version 3.1 states that the
+ExitWindows function can be used to terminate Windows and return control to
+MS-DOS. However, the description doesn't list the code needed to exercise this
+feature of the ExitWindows function.
+
+To allow the ExitWindows function to terminate Windows and return control to
+MS-DOS, pass a zero as the dwReturnCode parameter.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbSDKPlatform kbGrpDSUser kbWndw kbFAQ kbDSupport kbwin16sdkfaq kb16bitonly 
+Technology        : kbAudDeveloper kbSDKSearch kbWinSDKSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

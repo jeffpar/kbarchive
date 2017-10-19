@@ -1,0 +1,56 @@
+DOCUMENT:Q200858  24-OCT-2000  [sms]
+TITLE   :SMS: WinNT 3.51 Clients Fail w/Wbemsdk.exe Err. After WBEM Inst.
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbWBEM kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When installing Systems Management Server 2.0 onto a client computer running
+Microsoft Windows NT 3.51, a Wbemsdk.exe error is displayed with the following
+text:
+
+   The application or DLL \DOS Devices| c:\Temp\GLF2fs.tmp is not a valid
+   Windows NT image.
+
+WORKAROUND
+==========
+
+The Systems Management Server 2.0 client requires that Windows NT 3.51 Service
+Pack 5 is installed on client computers running Windows NT 3.51. This error may
+indicate that the service pack is not installed. Either apply or reapply Windows
+NT 3.51 Service Pack 5 to correct this error.
+
+Additional query words: sp sp5 prodsms
+
+======================================================================
+Keywords          : kbWBEM kbsms200 
+Technology        : kbSMSSearch
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

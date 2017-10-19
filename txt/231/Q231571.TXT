@@ -1,0 +1,77 @@
+DOCUMENT:Q231571  11-DEC-2001  [winnt]
+TITLE   :Err Msg: STOP 0x00000050 Occurs with HP Color LaserJet 5/5M
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP3,4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4, Terminal Server Edition 
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP3, 4.0 SP4 
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Computers running Windows NT with HP Color Laserjet 5/5m printer drivers
+installed may crash and display the following blue screen error message:
+
+   STOP 00000050 : a0cd0000 00000000 00000000 00000000
+   PAGE_FAULT_IN_NONPAGED_AREA
+
+   -or-
+
+   STOP 0x0000001e(0xc0000005,0xf1dc6d6f,0x00000000,0x0000004c)
+   KMODE_EXCEPTION_NOT_HANDLED
+
+NOTE: Parameters may vary depending on the system configuration.
+
+CAUSE
+=====
+
+This problem is caused by the HP Color Laserjet printer driver's dynamic link
+library file, Hpc3.dll.
+
+RESOLUTION
+==========
+
+To resolve this problem, contact Hewlett Packard:
+
+   http://www.hp.com/support/
+
+
+STATUS
+======
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: 0x00000050 0x0000001e
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServSearch
+Version           : :4.0,4.0 SP3,4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

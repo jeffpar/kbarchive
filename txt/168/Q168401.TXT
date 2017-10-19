@@ -1,0 +1,115 @@
+DOCUMENT:Q168401  14-NOV-2000  [word97]
+TITLE   :WD97: Invalid Page Fault Error When You Click Links Command
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Select All and then click Links on the Edit menu, the following
+error message may appear:
+
+   This program has performed an illegal operation and will be shut down.
+
+   If the problem persists, contact the program vendor.
+
+When you click Details, the following error message is displayed:
+
+   WINWORD caused an invalid page fault in module MSO97.DLL at
+   0137:<address>
+
+CAUSE
+=====
+
+This problem occurs when the document contains links to both floating (Float
+Over Text) and inline objects.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods.
+
+Method 1: Do Not Select All
+---------------------------
+
+Do not select linked floating and inline objects simultaneously before viewing
+the Links dialog box.
+
+Method 2: Convert the Floating Objects to Inline Objects
+--------------------------------------------------------
+
+1. Click the linked floating object to select it.
+
+2. On the Edit menu, point to <object name> Object (for example, Linked
+   Document Object), and then click Convert.
+
+   -or-
+
+   Right-click the object, select Format <object> (for example, Format
+   Picture), and then click the Position tab.
+
+3. Click to clear the Float Over Text check box.
+
+4. Click OK.
+
+Method 3: Remove the Links
+--------------------------
+
+1. Click the linked object to select it.
+
+2. On the Edit menu, click Links.
+
+3. Click Break Link.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+MORE INFORMATION
+================
+
+For additional information about Float Over Text objects, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q161692 WD97: Problems With Float Over Text Object
+
+   Q155822 WD97: "Float Over Text" Check Box If Paste Link Selected
+
+
+Additional query words: word97 8.0
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

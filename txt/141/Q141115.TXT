@@ -1,0 +1,78 @@
+DOCUMENT:Q141115  13-JUN-2001  [sna]
+TITLE   :SNA Server Admin "Select Domain" Dialog Box Suspended
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The SNA Server Admin "Select Domain" dialog box suspends until a full list of
+domains is shown. Anything you enter in the Domain field is not processed until
+the browse list of domains is returned.
+
+NOTE: The SNA Server Admin "Select Domain" dialog box allows an administrator to
+enter the name of an SNA Server or SNA Server domain to be administered.
+
+RESOLUTION
+==========
+
+Microsoft has updated SNA Server Admin (SNAADMIN.EXE) to include a Low Speed
+Connection check box that can be used to enable/disable browsing in the Select
+Domain dialog box. If this check box is unchecked, SNA Server Admin does not
+return a browse list of available domains.
+
+
+Microsoft has updated the following files to correct this problem:
+
+ - <snaroot>\SYSTEM\SNAADMIN.EXE
+
+ - <snaroot>\SNAFILES.INF
+
+ - <snaroot>\SNASFD.DLL
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.00 2.10 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

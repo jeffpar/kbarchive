@@ -1,0 +1,89 @@
+DOCUMENT:Q198348  11-DEC-1999  [foxpro]
+TITLE   :PRB: Component Gallery Errors in Localized German VFP
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbMiscTools kbvfp600 kbXBase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When starting the Component Gallery in German Visual FoxPro 6.0 running on
+German Windows NT 4.0, the following error appears:
+
+   Fehler bei der Klasseninstanziierung C:\Program files\Microsoft Visual
+   Studio\VFP98\Gallery\_gallery.vcx kann nicht gerfunden werden
+
+A rough translation is:
+
+   Error instantiating class C:\Program Files\Microsoft Visual
+   Studio\VFP98\Gallery\_gallery.vcx could not be found.
+
+RESOLUTION
+==========
+
+Add the default folder of Visual FoxPro in the Search Path text box of the File
+Locations tab of the Options dialog box. To get to this dialog box, from the
+Tools menu, choose Options. In the Options dialog box, click the File Locations
+tab. To determine the default folder of Visual FoxPro, issue a the following
+command in the Visual FoxPro Command window:
+
+      ?Home()
+
+MORE INFORMATION
+================
+
+The error seems to occur because the German version of Visual FoxPro installs in
+the default folder c:\Programme\Microsoft Visual Studio\VFP98 instead of the
+folder used in the US version, which is c:\Program Files\Microsoft Visual
+Studio\VFP98.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install German Windows NT 4.0 with Service Pack 3.
+
+2. Install the German version of Visual FoxPro 6.0 with Service Pack 1. Next,
+   attempt to open the Component Gallery.
+
+Before the Component Gallery launches, the error message mentioned in the SUMMARY
+section appears. That error message may be followed by an additional error
+dialog box that displays the Katalog (Catalog), Objekt (Object), Fehler (Error),
+and Methode (Method).
+
+NOTE: This error dialog box may occur twice.
+
+If you chose the Ignorieren (Ignore) option in the message dialog box, then the
+Component Gallery opens.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMiscTools kbvfp600 kbXBase 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

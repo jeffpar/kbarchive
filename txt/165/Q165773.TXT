@@ -1,0 +1,83 @@
+DOCUMENT:Q165773  14-NOV-2000  [word97]
+TITLE   :WD97: Protected Document Stuck in Normal View After You Edit It
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your document will be forced into normal view from page layout view when all of
+the following are true:
+
+ - You protect your document for tracked changes.
+
+   -and-
+
+ - You immediately insert at least two drawing objects.
+
+   -and-
+
+ - You click the Undo button until it is unavailable.
+
+   -and-
+
+ - You click the Redo button.
+
+When you do this, you cannot change the view of the document and it remains in
+normal view. If you click either the Undo button or the Redo button, the
+following error message appears:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor.
+
+If you click Details, the following error message appears:
+
+   WINWORD has caused an invalid page fault in module MSO97.dll at
+   <address>."
+
+WORKAROUND
+==========
+
+After you protect your document for tracked changes, type at least one character
+of text or press ENTER before you insert a drawing object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+Additional query words: protect mso97 invalid page fault re-do
+
+======================================================================
+Keywords          : kbusage winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

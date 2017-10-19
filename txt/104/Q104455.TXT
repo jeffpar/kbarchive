@@ -1,0 +1,54 @@
+DOCUMENT:Q104455  08-DEC-1999  [homemm]
+TITLE   :Dinosaurs: Index: Not Returned to Letter If Topic Not Selected
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select a topic in the Index, exit it, and then click the Index button to
+view it again, you return to the letter of the topic you looked at last.
+However, if you move around the Index and select a few different letters, but do
+not select a topic, you are NOT returned to the letter you viewed last when you
+re-enter the Index after exiting. Instead, you are returned to the letter for
+the topic you viewed last.
+
+For example, if you open the Index, click W, then select the entry on
+"Warm-blooded or Cold-blooded?" you are returned to the W section when you exit
+and re-enter the Index.
+
+However, if you open the Index, click on L, R, D, and S, then exit the Index, you
+do not return to the letter S when you re-enter the Index. Instead, you return
+to the letter for the topic you viewed last.
+
+Additional query words: multi media multimedia multi-media functionality listing list alphabet dinos C Usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

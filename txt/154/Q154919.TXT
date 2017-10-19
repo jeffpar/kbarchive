@@ -1,0 +1,71 @@
+DOCUMENT:Q154919  08-AUG-2001  [winnt]
+TITLE   :Internet Explorer 3.0 Setup Prompts to Overwrite Riched20.dll
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:3.0; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Internet Explorer version 3.0 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing the HTML Layout control included with Microsoft Internet
+Explorer 3.0, a Confirm File Replace dialog box appears stating that a target
+file exists and is newer. This file is the Riched20.dll file.
+
+CAUSE
+=====
+
+Internet Explorer's new version of the Riched20.dll file has an older version
+stamp than the file included with Windows NT 4.0.
+
+RESOLUTION
+==========
+
+Allow Internet Explorer Setup to overwrite the existing Riched20.dll file.
+
+MORE INFORMATION
+================
+
+The Riched20.dll file is included in the Full installation of Internet Explorer
+3.0 for Windows NT 4.0, as well as in the HTML Layout control that is available
+separately.
+
+Versions of the Riched20.dll file:
+
+   Source           Name           Size      Version
+   ---------------------------------------------------
+   Windows NT 4.0   Riched20.dll   268,560   5.0.122.2
+   Msie30m.exe      Riched20.dll   385,536   5.0.120.8
+   Setupslt.exe     Riched20.dll   385,536   5.0.120.8
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbIEsearch kbZNotKeyword2 kbIENT400Search kbZNotKeyword3 kbIE300WinNT400
+Version           : WINDOWS:3.0; winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q172144  01-APR-2000  [sna]
+TITLE   :Allow Link Service to be Distributed Option for Polaris / ESCON
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The "Allow Link Service to be distributed" option for the Polaris Bus and Tag
+channel adapter and the ESCON channel adapter is not available.
+
+RESOLUTION
+==========
+
+The fix was to add the "Allow Link Service to be distributed" option in the link
+service config dll.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server, versions 3.0 and 3.0
+SP1.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft Product
+Support Services for more information.
+
+
+
+Additional query words: distributed link Polaris
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

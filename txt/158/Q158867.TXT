@@ -1,0 +1,62 @@
+DOCUMENT:Q158867  31-JAN-2001  [win95x]
+TITLE   :Low Disk Space Dialog Box Displays Incorrect Information
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to install to a computer with low free disk space, Setup
+displays a Low Disk Space dialog box with the following information:
+
+   Approximate free space requirements in megabytes
+
+   Configuration       Compact    Typical
+   New install           49         56
+   Windows 3.1           34         41
+   Windows 3.11          34         41
+   Windows 95            24         24
+
+MORE INFORMATION
+================
+
+The disk space requirements displayed are the original estimates for Windows 95
+retail version. They are not updated for OEM Service Release 2 (OSR2).
+
+A new installation actually requires about 110 MB for the Typical option or 100
+MB for the Compact option.
+
+An OSR2 over OSR2 upgrade takes about 95 MB for the Typical option or 85 MB for
+the Compact option.
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,58 @@
+DOCUMENT:Q173803  19-DEC-1999  [exchange]
+TITLE   :XADM: Exchange Setup Remove All Removes Mapi32.dll
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are using Exchange Setup to perform a Remove All procedure, the Remove
+All function prompts you to choose whether you want to remove shared components.
+If you select OK, this will remove all messaging shared components, including
+Mapi32.dll.
+
+CAUSE
+=====
+
+This is by design.
+
+MORE INFORMATION
+================
+
+In the Remove All procedure, all originally installed components are removed,
+including Mapi32.dll. This particular file may be important to the functionality
+of other applications running on this server. Even though these other
+applications depend on this file, the Remove All process has no way of "knowing"
+this, and it will remove the file.
+
+Additional query words: dll
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,63 @@
+DOCUMENT:Q164746  09-AUG-2001  [winnt]
+TITLE   :SMC 9332 EtherPower 10/100 Driver Does Not Load
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbnetwork kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SMC 9332 EtherPower 10/100 PCI Fast Ethernet network adapter driver may not
+load if it is manually selected in the Select Network Adapter list.
+
+This problem also occurs with the driver in the Drvlib\Netcard\Smcpci folder on
+the Windows NT 4.0 CD-ROM.
+
+CAUSE
+=====
+
+The SMC 9332 EtherPower 10/100 PCI Fast Ethernet adapter has a Digital Equipment
+Corporation 21140 chip on it. Windows NT detects this adapter as a DEC PCI
+FastEthernet DECchip 21140 adapter.
+
+RESOLUTION
+==========
+
+If it is the only network adapter in the computer, remove the driver for the SMC
+9332 adapter and let Windows NT detect it as a DEC PCI FastEthernet DECchip
+21140 adapter. Or, install the driver from the disk included with the adapter.
+
+If there is more than one network adapter in the computer, remove the SMC 9332
+driver and manually select the DEC PCI FastEthernet DECchip 21140 driver in the
+Select Network Adapter list. Or, install the driver from the disk included with
+the adapter.
+
+======================================================================
+Keywords          : kbhw kbnetwork kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

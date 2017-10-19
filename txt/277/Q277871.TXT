@@ -1,0 +1,74 @@
+DOCUMENT:Q277871  19-JUL-2001  [sna]
+TITLE   :Linked Server SELECT's to DB2/400 tables w/ DBCS Char Field Fail
+PRODUCT :Microsoft SNA Server
+PROD/VER::4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft OLE DB Provider for DB2, versions 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Linked Server is configured to DB2/400 from Microsoft SQL Server by using
+the OLE DB provider for DB2, and a SELECT query is issued to retrieve data from
+a DB2/400 table that contains a DBCS fixed-length character field, the following
+error message may be returned:
+
+   OLE DB provider 'DB2OLEDB' returned unexpected length of data from fixed
+   length field <field name>
+
+CAUSE
+=====
+
+The DB2 OLE DB Provider returns different values for the field length and the
+actual data size, which causes the SELECT to fail.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+Service Pack 2 (SP2) and 4.0 SP3.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+Additional query words: DB2OLEDB AS/400 DB2 OPENQUERY OPENROWSET 4 PART NAME MSDB2OLE ODBC sp2 sp3
+
+======================================================================
+Keywords          : kbDSupport kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvDB2400SP2 kbOLEDBProvDB2400SP3 kbOLEDBProvSearch
+Version           : :4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,54 @@
+DOCUMENT:Q87931  08-OCT-1999  [utilities]
+TITLE   :Preventing Microsoft LINK From Running CVPACK
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, when the LINK command line includes the /CO[DEVIEW] option (to add
+symbolic debugging information to the executable file), LINK runs the CVPACK
+program to reduce the size of the data. To prevent LINK from running CVPACK,
+specify the following option on the LINK command line:
+
+   /CO[DEVIEW]:N[OCVPACK]
+
+To debug an application with Microsoft CodeView versions 4.0 and later, CVPACK
+must process the executable file. If CVPACK does not process the file, an
+attempt to debug it with CodeView does not show any source code and one of the
+following messages appears:
+
+   CV0102: unpacked CodeView information in 'filename': use CVPACK
+   CV0103: relink 'filename' with the current linker
+
+Additional query words: kbinf 5.30 5.31.009 5.50 5.60
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

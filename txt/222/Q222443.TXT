@@ -1,0 +1,176 @@
+DOCUMENT:Q222443  16-JUL-2002  [iis]
+TITLE   :Using Cascading Style Sheets Features with ASP Forms
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0,5,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Explorer versions 4.0, 5 for Windows NT 4.0 
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Explorer versions 4.0 and later provide a rich set of text layout
+features to Web authors through cascading style sheets functionality. Among its
+other benefits, this functionality permits you to change the display attributes
+of form fields. This article describes how to use this functionality to create
+forms with better visual layout by using style sheet tags.
+
+MORE INFORMATION
+================
+
+The following Active Server Pages (ASP) code samples use the style="" attribute,
+which can be applied to any HTML tag. For example, the following HTML code
+creates a paragraph with red text:
+
+   <p style="color: red">This is red text.</p>
+
+Certain cascading style sheets properties can be extremely useful to Web page
+authors who construct Web pages with forms. The <input>, <textarea>,
+and <select> HTML tags have simple and dissimilar parameters for modifying
+their respective display properties. By using the style="" attribute (with its
+common syntax for all fields), authors have greater flexibility over the display
+of these form fields.
+
+For example, the following code creates a simple form where each field has the
+same width:
+
+   <form method="POST">
+     <input type="text" name="txtBox1" style="width: 200"><br>
+     <textarea name="txtBox2" style="width: 200"></textarea><br>
+     <select name="txtBox3" style="width: 200">
+       <option value="1">Choice 1</option>
+       <option value="2">Choice 2</option>
+       <option value="3">Choice 3</option>
+     </select><br>
+     <input type="submit" style="width: 200">
+   </form>
+
+The following ASP page is a more advanced example that uses the user-defined
+function MakeCSS that takes the following arguments and returns a properly
+formatted style="" attribute:
+
+ - Font-family: The font style to use.
+
+ - Width: The width in pixels of the item to modify.
+
+ - Height: The height in pixels of the item.
+
+ - Background: The background color for the item.
+
+ - Color: The color for the item.
+
+To use this sample page, copy the code, save it as "Cssform.asp" in a Web folder
+with Script access enabled, and then open it by using Internet Explorer version
+4.0 or later:
+
+   <%@Language="VBSCRIPT"%>
+   <html>
+   <head><title>Stylesheet Form Examples</title></head>
+   <%
+     Function MakeCSS(fnt,wdt,hgt,bck,clr)
+       MakeCSS = "style=" & Chr(34)
+       If (fnt<>"") Then MakeCSS = MakeCSS & "font-family: " & fnt
+       If (wdt<>"") Then MakeCSS = MakeCSS & "; width: " & wdt
+       If (hgt<>"") Then MakeCSS = MakeCSS & "; height: " & hgt
+       If (bck<>"") Then MakeCSS = MakeCSS & "; background: " & bck
+       If (clr<>"") Then MakeCSS = MakeCSS & "; color: " & clr
+       MakeCSS = MakeCSS & Chr(34)
+     End Function
+   %>
+   <body <%=MakeCSS("verdana","","","#ffffff","#000000")%>>
+
+   <h3>Stylesheet Form Examples</h3>
+
+   <% If LCase(Request.ServerVariables("REQUEST_METHOD")) = "get" Then %>
+
+   <form action="<%=Request.ServerVariables("URL")%>" method="POST">
+
+   <table border="1" <%=MakeCSS("verdana","","","black","white")%>>
+     <tr>
+       <td>Name</td>
+       <td><input type="text" value="Enter Your Name" name="txtName" <%=MakeCSS("arial","300","","#ccccff","#000000")%>></td>
+     </tr>
+     <tr>
+       <td>Address</td>
+       <td><textarea name="txtAddress" <%=MakeCSS("arial","300","100","#ffcccc","#000000")%>>Enter Your Address</textarea></td>
+     </tr>
+     <tr>
+       <td>Airport</td>
+       <td>
+         <select name="txtAirport" <%=MakeCSS("arial","300","","#ccffcc","#000000")%>>
+           <option value="ORD">Chicago O'Hare, IL</option>
+           <option value="LAX">Los Angeles International, CA</option>
+           <option value="JFK">New York JFK, NY</option>
+           <option value="SEA">Seattle/Tacoma, WA</option>
+         </select>
+       </td>
+     </tr>
+     <tr>
+       <td colspan="2" align="center">
+         <input type="submit" value="Send Data" <%=MakeCSS("courier","150","30","darkred","white")%>>
+         <input type="reset" value="Reset Form" <%=MakeCSS("courier","150","30","darkgreen","white")%>>
+       </td>
+     </tr>
+   </table>
+
+   </form>
+
+   <% Else %>
+
+   <table border="1" <%=MakeCSS("verdana","","","black","white")%>>
+     <tr <%=MakeCSS("verdana","","30","black","white")%>>
+       <td>Name</td>
+       <td><%=Request.Form("txtName")%></td>
+     </tr>
+     <tr <%=MakeCSS("verdana","","100","black","white")%>>
+       <td>Address</td>
+       <td><%=Request.Form("txtAddress")%></td>
+     </tr>
+     <tr <%=MakeCSS("verdana","","30","black","white")%>>
+       <td>Airport Code</td>
+       <td style="width:300"><%=Request.Form("txtAirport")%></td>
+     </tr>
+   </table>
+
+   <% End If %>
+
+   </body>
+   </html>
+
+For more information about scripting, visit the following Microsoft Developer
+Network (MSDN) Web site:
+
+   Windows Script
+   http://msdn.microsoft.com/scripting
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbIEsearch kbiis500 kbiis400 kbiis300 kbZNotKeyword2 kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE400WinNT400 kbIE500WinNT400
+Version           : :3.0,4.0,5,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

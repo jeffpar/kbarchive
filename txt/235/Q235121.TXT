@@ -1,0 +1,78 @@
+DOCUMENT:Q235121  10-AUG-2001  [winnt]
+TITLE   :Performance Optimizing Network Shares
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0, used with:
+    - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On high traffic file servers, you can increase file server throughput by
+partitioning the workload and segmenting the clients by network and file system
+volume.
+
+By using the following practices, users with high-traffic file servers can
+increase the file server throughput.
+
+1. Partition the workload across multiple network segments. This increases file
+   server throughput by increasing network bandwidth, and improved network
+   partitioning.
+
+2. Partition the workload across multiple file system volumes on network file
+   shares. This reduces file system contention, resulting in better usage of the
+   server resources. Again, the end result is better file server throughput.
+
+MORE INFORMATION
+================
+
+The following example explains how you can use these practices to increase your
+file server throughput.
+
+A network file server with 1,000 users, who each have been assigned a network
+file share to store their work and documents, can increase file server
+throughput by:
+
+1. Segmenting the clients across multiple network segments; in this case, a
+   customer can have four network segments with the users divided evenly amongst
+   segments.
+
+2. Distributing the user file shares across different file system volumes;
+   depending on the number of disks and the amount of disk space, this can vary.
+   Dividing the users evenly amongst volumes would limit any contention that
+   could be caused by a single NTFS volume.
+
+
+Additional query words: performance ntfs log share
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

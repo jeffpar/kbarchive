@@ -1,0 +1,73 @@
+DOCUMENT:Q93906  14-DEC-1999  [win95x]
+TITLE   :PhonenetTalk Version 3.0 Required with Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Microsoft Windows version 3.1 with Broderbund Software's
+PhonenetTalk, the following error message may occur:
+
+   Cannot Select Drive C:
+
+CAUSE
+=====
+
+PhonenetTalk versions earlier than 3.0 have problems running with Windows 3.1 on
+486/33MHz machines. According to Broderbund technical support, version 3.0
+corrects these issues and is compatible with Microsoft Windows version 3.1. The
+new name for the PhonenetTalk upgrade is PhonenetPC version 3.0.
+
+RESOLUTION
+==========
+
+This error can be corrected by upgrading to PhonenetPC version 3.0 or by
+contacting Broderbund technical support to change your driver configuration.
+
+MORE INFORMATION
+================
+
+PhonenetTalk is software that allows a personal computer (PC) to communicate
+with peripherals on an AppleTalk network. If you attempt to open a file in
+Notepad, Cardfile, or any other Windows application while PhonenetTalk is
+running, the above error message may occur.
+
+For more information, contact Broderbund Software technical support.
+
+The Broderbund product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: 3.10 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

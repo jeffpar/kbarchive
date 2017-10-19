@@ -1,0 +1,85 @@
+DOCUMENT:Q197773  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Replace All Occurrences of Invalid MERGEFIELD Field
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97 kbmerge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you click the Check For Errors button on the Print Merge toolbar, Word may
+prompt you repeatedly for the same invalid MERGEFIELD field.
+
+CAUSE
+=====
+
+Word prompts you to correct each instance of invalid MERGEFIELD fields in your
+mail merge main document, but there is no way to replace or remove all
+occurrences of a single incorrect field. You can only replace or remove one
+occurrence of a field at a time.
+
+
+WORKAROUND
+==========
+
+If your main document contains multiple instances of an invalid field, you can
+use the Replace command on the Edit menu to replace or remove all instances of
+the field at once.
+
+To replace one MERGEFIELD field with another, follow these steps:
+
+1. In your main document, insert one instance of the correct MERGEFIELD fields.
+
+2. Select one of the invalid MERGEFIELD fields.
+
+3. On the Edit menu, click Copy.
+
+4. On the Edit menu, click Replace.
+
+5. Position the insertion point in the Find What box, and then press CTRL+V to
+   paste the MERGEFIELD field.
+
+6. Leave the Edit Replace dialog box open and click in your document window to
+   activate it (the Edit Replace dialog box is modeless).
+
+7. Select the correct MERGEFIELD field. On the Edit menu, click Copy.
+
+8. Click in the Edit Replace dialog box to activate it.
+
+9. Position the insertion point in the Replace With box, and then press CTRL+V
+   to paste the MERGEFIELD field.
+
+10. Click Replace All.
+
+Additional query words: repeats repeatedly several multiple times many
+
+======================================================================
+Keywords          : word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

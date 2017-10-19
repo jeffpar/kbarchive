@@ -1,0 +1,67 @@
+DOCUMENT:Q63830  08-OCT-1999  [utilities]
+TITLE   :PRB: Incomplete Printing of File Using File Print Option
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS 
+ - Microsoft Programmer's Workbench for OS/2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In some cases, the final page may not be fully printed when printing a file from
+within Programmer's WorkBench (PWB) versions 1.0 and 1.1.
+
+CAUSE
+=====
+
+This usually results from the printer buffer not dumping the end of file.
+
+RESOLUTION
+==========
+
+One work-around to this problem is to force a form feed to the printer after the
+file is printed in order to clear the buffer.
+
+MORE INFORMATION
+================
+
+The following is an example of how to set the PWB "printcmd" switch in the
+TOOLS.INI file to print the file and force a form feed:
+
+   printcmd: copy %s+form.txt prn
+
+Note that the FORM.TXT file is a file that you must create in the current
+directory that contains a single form feed character (ASCII 12). You can create
+this file in PWB by opening a new file and pressing CTRL+P (the quote function)
+and then CTRL+L to insert a literal form feed character.
+
+Additional query words: 1.00 1.10 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

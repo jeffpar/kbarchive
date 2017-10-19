@@ -1,0 +1,68 @@
+DOCUMENT:Q133015  27-JUL-2001  [odbc]
+TITLE   :BUG: Use of Apostrophes in DSN Setup Not Allowed
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJET: 2242 (2.00.2317)
+
+SYMPTOMS
+========
+
+When you use an apostrophe in the data source name (DSN) for a DSN definition
+with an ODBC Desktop Database Driver version 2.0 driver, that DSN cannot be
+accessed later using the Setup button of the ODBC Administrator. This type of
+DSN also causes the ODBC Administrator to return an incorrect error message when
+you try to delete the DSN with the Delete button in the ODBC Administrator.
+
+The ODBC Administrator returns the message:
+
+   The ODBC driver could not entirely delete the data source. Do you want to
+   remove the entry anyway?
+
+WORKAROUND
+==========
+
+Do not use apostrophes in data source names for the ODBC Desktop Database
+Drivers version 2.0. If you want to use apostrophes in a DSN, you can do so and
+use the DSN with ODBC, but it cannot be modified later using the Setup button of
+the ODBC Administrator.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in ODBC Desktop Database Drivers
+version 2.00.2317. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2317
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

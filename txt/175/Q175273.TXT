@@ -1,0 +1,68 @@
+DOCUMENT:Q175273  13-JUN-2001  [sna]
+TITLE   :SNA Server Leaks Memory If Detailed Logging Is Enabled
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the Microsoft SNA Server Default Audit Log Level is set for Detailed Problem
+Analysis, a memory leak occurs every time a new client connects to SNA Server.
+
+CAUSE
+=====
+
+The SNA Server Snadmod.dll file determines the client's logon username and
+domain name each time a client connects to SNA Server. If the user has already
+connected, then this information is retrieved from a local cache. If the user
+has not connected, the Snadmod.dll file calls the Win32 LookupAccountSid()
+function to retrieve this information. The problem occurs because Snadmod.dll
+continues to use LookupAccountSid even though the user exists in the local
+cache. In this case, memory that was allocated for the LookupAccountSid function
+is not released.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

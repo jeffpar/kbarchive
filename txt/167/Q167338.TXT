@@ -1,0 +1,89 @@
+DOCUMENT:Q167338  04-AUG-2001  [visualc]
+TITLE   :BUG: Format("%D") Fails for COleDateTime and COleDateTimeSpan
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.2
+OPER/SYS:
+KEYWORDS:kbcode kbVC500bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+COleDateTime::Format("%D") fails to return the day in the object.
+
+COleDateTimeSpan::Format("%D") fails to return the total days.
+
+RESOLUTION
+==========
+
+Instead of using Format use COleDateTime::GetDay() or
+COleDateTimeSpan::GetDays() to get the day value and use CString::Format to put
+it into a CString. The sample code below illustrates this using CString::Format.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+Sample Code
+-----------
+
+      COleDateTimeSpan span;
+      // Set to 1 day 2 hours 3 minutes and 4 seconds
+      span.SetDateTimeSpan(1,2,3,4);
+
+      CString str;
+      str = span.Format("%D;%H;%M;%S"); // BUG:Day(s) is not found in CString
+
+      // Following is equivalent to the above
+      str.Format("%02d;%s", span.GetDays(),
+                  (LPCTSTR)span.Format("%H;%M;%S"));
+
+      COleDateTime time;
+      time = COleDateTime::GetCurrentTime();
+      str = time.Format("%D;%H;%M;%S"); // BUG:Day is not found in CString
+
+      // Following is equivalent to the above
+      str.Format("%02d;%s", time.GetDay(),
+                 (LPCTSTR)time.Format("%H;%M;%S"));
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Yeong- Kah
+Tam, Microsoft Corporation
+
+
+Additional query words: kbVC420bug kbDSupport COleDateTime COleDateTimeSpan Format Day
+
+======================================================================
+Keywords          : kbcode kbVC500bug 
+Technology        : kbAudDeveloper kbMFC
+Version           : 4.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

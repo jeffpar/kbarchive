@@ -1,0 +1,81 @@
+DOCUMENT:Q302974  27-JUN-2001  [msnetwork]
+TITLE   :"Unable To Find Dial-up Credentials" Error (MSN Explorer 6.1)
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You attempt to sign in with MSN Explorer 6.1 and you get the error message "MSN
+Explorer is unable to find the proper MSN dial-up credentials on your computer".
+
+CAUSE
+=====
+
+Your dial-up credentials have been erased.
+
+RESOLUTION
+==========
+
+To reset the connection settings in MSN Explorer and use the default dialer.
+
+1. Start MSN Explorer.
+
+2. Click Connection Settings, click Change how you connect to the Internet, and
+   then click Continue.
+
+3. Select MSN Dial-up Internet Access, and then click Continue.
+
+4. Select the appropriate dialing options, and then click Continue.
+   MSN Explorer will now dial a 1-800 number. After you are connected, a window
+   appears stating "Please select the account you want to upgrade to use MSN
+   Internet Access". In the center of the screen is a section labeled This is
+   the e-mail account you will be upgrading. Your primary MSN Internet Access
+   account should be listed here.
+
+5. Type your password in the box, and then click Continue.
+
+6. Type your area code and telephone number in the boxes, and then click
+   Continue.
+
+7. Next to each local access number, select the Use box, and then clear the
+   boxes next to all numbers that are not local.
+
+8. Select the Area Code or Dial 1 box for each number (depending on the
+   requirements of your local phone service), and then click Continue.
+   MSN Explorer will now dial the first local access number chosen and sign you
+   in.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610
+Version           : :6.1
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

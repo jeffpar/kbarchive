@@ -1,0 +1,58 @@
+DOCUMENT:Q84266  01-JUN-2001  [homemm]
+TITLE   :Err Msg: This DLL Can Only Be Used with ToolBook Evaluation...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,1.0a; WINDOWS:3.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Multimedia Beethoven, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Multimedia Beethoven may display the following error message if you
+have the Multimedia ToolBook evaluation edition installed into the system:
+
+   This DLL can only be used with the ToolBook evaluation edition.
+
+MORE INFORMATION
+================
+
+Multimedia Beethoven uses the ToolBook runtime version 1.5. To alleviate the
+problem, rename the MTBEVAL directory or remove it from the path in the
+AUTOEXEC.BAT file. MTBEVAL is a demonstration version of the Multimedia ToolBook
+product.
+
+ToolBook and the Multimedia ToolBook evaluation edition are developed outside of
+Microsoft. For further information regarding ToolBook or the Multimedia ToolBook
+evaluation edition, contact Asymetrix at (206) 637-1600.
+
+NOTE: This problem does not occur in Microsoft Windows 95.
+
+Additional query words: 1.00 demo mtbeval mtb ludwig toolbook dev/drv
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMBeethoven100 kbMMBeethoven100a
+Version           : :1.0,1.0a; WINDOWS:3.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

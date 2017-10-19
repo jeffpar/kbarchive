@@ -1,0 +1,117 @@
+DOCUMENT:Q139187  24-MAR-2000  [foxpro]
+TITLE   :FIX:Open Dialog Box Appears After Clicking Next in Wizard Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,5.0
+OPER/SYS:
+KEYWORDS:kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+As you run a form that was created by using the Form Wizard, the Open dialog box
+appears when you click a navigation button such as the Next button. If the table
+used in the form is selected, the following error appears:
+
+   File is in use.
+
+This occurs if SET COMPATIBLE is set to DB4.
+
+WORKAROUND
+==========
+
+Use any of the following three workarounds:
+
+Workaround One
+--------------
+
+This workaround sets the default Compatibility of Visual FoxPro to OFF.
+
+1. On the Tools menu, click Options.
+
+2. Click the General tab.
+
+3. Clear the dBASE Compatibility check box.
+
+Workaround Two
+--------------
+
+This workaround sets the Compatibility OFF until Visual FoxPro is restarted. In a
+program or in the Command window, issue the following line of code:
+
+      SET COMPATIBLE OFF
+
+Workaround Three
+----------------
+
+This is a permanent solution. Wizard-created forms will function correctly
+regardless of the setting of SET COMPATIBILITY.
+
+1. Open the txtbtns class of the Wizstyle.vcx class library file. (This library
+   is in the Wizards directory of Visual FoxPro.)
+
+2. In the Initvars procedure, change the following existing line of code:
+
+         THIS.nWorkarea = SELECT()
+
+   to the following new line of code:
+
+         THIS.nWorkarea = SELECT(0)
+
+3. Save the class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+SET COMPATIBLE DB4 changes the behavior of the Initvars procedure. With the SET
+COMPATIBLE OFF setting, SELECT() returns the currently selected work area.
+However, with the SET COMPATIBLE DB4 setting, SELECT() returns the next
+available work area.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form by using the Form Wizard.
+
+2. Issue a SET COMPATIBLE DB4 command.
+
+3. Run the form.
+
+4. Click the Next button.
+
+Additional query words: move record kbtool kbprb
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500
+Version           : WINDOWS:3.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

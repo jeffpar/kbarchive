@@ -1,0 +1,48 @@
+DOCUMENT:Q137504  08-AUG-2001  [winnt]
+TITLE   :Server Operators Group Unable to Install FPNW
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft File and Print Services for NetWare version 3.51 
+-------------------------------------------------------------------------------
+
+Page 8 of the File and Print Services for NetWare (FPNW) version 3.51
+Administrator's Guide and the online FPNW Administrator's Guide state
+the following:
+
+   To install File and Print Services for NetWare, you must be logged on as a
+   member of the Administrators or Server Operators group.
+
+This is incorrect. To install File and Print Services for NetWare 3.51,
+you must be logged on as a member of the Administrators group. Members
+of the Server Operators group do not have built-in rights to add or
+remove any device drivers.
+
+Additional query words: prodnt NetWare Novell FPNW
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

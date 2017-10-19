@@ -1,0 +1,75 @@
+DOCUMENT:Q176425  14-MAR-1999  [exchange]
+TITLE   :XFOR: MS Mail Connector NDRs Messsage Due to Malformed Address
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Microsoft Mail Connector generates a Non-Delivery Report
+(NDR) for messages that have X.400 addresses that use the '/' as the delimiter
+and use the '$' as the escape sequence before a '/' character.
+
+CAUSE
+=====
+
+The Microsoft Mail Connector does not recognize the '$' as a valid escape
+sequence in X.400 addresses. This causes the Microsoft Mail Connector to parse
+the address incorrectly, thereby incorrectly detecting a malformed X.400
+address.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The Microsoft Mail Connector incorrectly parses X.400 addressing that use the
+'$' as the escape sequence to denote that the next character should be treated
+as a plain character. For example, an address that look like this:
+
+   /C=us/a=MCI/p=microsoft/o=PSS/dda.type=ms/dda.value=net$/po$/mailbox
+
+is incorrectly parsed. The '/' in the dda.value are treated as delimiters and
+values after the '/' are not correct X.400 field tags.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

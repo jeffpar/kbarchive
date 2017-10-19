@@ -1,0 +1,108 @@
+DOCUMENT:Q195573  14-NOV-2000  [word97]
+TITLE   :WD97: Word Doesn't Propose Correct "Address To"
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbenvelope winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When your document contains an address, Word may not properly identify the
+address paragraphs and may not propose the correct address information in the
+Address To box.
+
+CAUSE
+=====
+
+This problem may occur when you use one of the following commands:
+
+ - The Envelopes And Labels command on the Tools menu
+
+   -or-
+
+ - The ToolsCreateEnvelope macro command
+
+   -or-
+
+ - The ToolsCreateLabel macro command
+
+MORE INFORMATION
+================
+
+When you use these commands in an open document, Word searches the document for
+an address, opens a dialog box with the proposed address, and allows you to
+print the address on an envelope or label. When Word conducts an address search,
+it uses the following rules:
+
+1. Word searches for any paragraphs that you defined as bookmarks named
+   "EnvelopeAddress" and "EnvelopeReturn."
+
+2. Word searches for highlighted paragraphs that represent each line of the
+   address.
+
+   NOTE: This will not work in Microsoft Word 97 for Windows if your address
+   lines end with line feeds rather than paragraph marks.
+
+3. Word searches for a series of paragraphs meeting the following criteria:
+
+   a. left-aligned
+
+   b. only include a few words
+
+   c. include three to five paragraphs in a row envelope address bookmark
+
+   d. no formatting between paragraphs
+
+If any of these conditions is not met, Word may return an unexpected result in
+the Address To box.
+
+NOTE: If you format an address as a single paragraph (for example, if you end
+each line with a new line character or SHIFT+ENTER), Word may not find the
+correct address information.
+
+Note also that if the first line of the address is formatted with space before or
+space after formatting, Word will not find the address. If you highlight the
+address, Word will show only the first line. This is true for the Labels dialog
+box as well as for the Envelope dialog box.
+
+Some third-party information managers, such as PackRat (for Windows), store
+addresses as one paragraph with line feeds (instead of carriage returns) at the
+end of each address line. In this situation, Word may not find the three to five
+consecutive paragraphs that satisfy its search algorithm. To work around this
+problem, replace the line feeds with carriage returns.
+
+If a single paragraph has more than 58 characters and spaces, Word may not find
+the correct address information.
+
+Additional query words: automatic block bookmark center centered delivery detect determine incorrect insert justified toolbar valid
+
+======================================================================
+Keywords          : kbdta kbenvelope winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

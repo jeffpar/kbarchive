@@ -1,0 +1,112 @@
+DOCUMENT:Q129902  19-NOV-1999  [pcmail]
+TITLE   :PC Win:Valid Character for Attachment Sent from AppleTalk Mail
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you send attachments from Microsoft Mail for AppleTalk Networks Macintosh
+workstation to Mail for Windows, certain characters are invalid and should not
+be used.
+
+The invalid characters can cause the following error messages when you
+double-click them in Mail for Windows:
+
+1. 
+
+   The application for the attachment FILENAME (or one of its components) could
+   not be found.
+
+-or-
+
+2. 
+
+   The attached file could not be opened because a temporary file could not be
+   created.
+
+MORE INFORMATION
+================
+
+You can send a message with any type of file enclosure except an Image to a Mail
+for Windows user from AppleTalk Mail via the Microsoft Mail Connection for PC
+and AppleTalk Networks. The Mail Connection will convert and format the enclosed
+file.
+
+Before you attach a file to a mail message, Microsoft recommends that you save
+the file with a standard MS-DOS file name (up to eight characters followed by a
+period and the IBM-compatible application's three letter file extension).
+
+For example, to send a Microsoft Word file to an IBM-compatible user, save the
+file with a .doc extension on the Macintosh.
+
+NOTE: Even though it is recommended to save the file with a standard MS-DOS name,
+it is possible to use standard Macintosh file names (up to 32 characters).
+
+With the standard MS-DOS file format, the following characters will not cause a
+problem:
+
+   ~ { } ` _ ^ @ - ( ) ' & % $ # !
+ 
+
+~ (tilde)                 ' (apostrophe)
+& (ampersand)             $ (dollar sign)
+% (percent sign)          # (number sign)
+! (exclamation point)     { (left brace)
+} (right brace)           ` (single quotation mark)
+_ (underscore)            ^ (caret)
+@ (ampersand)             - (hyphen)
+( (left parenthesis)      ) (right parenthesis)
+
+With the standard MS-DOS file format, these characters will cause the first error
+listed above:
+
+   + = < > [ ] | ; ,
+ 
++ (plus)            = (equal sign)
+< (less than)       > (greater than)
+[ (left bracket)    ] (right bracket)
+| (pipe symbol)     ; (semi-colon)
+, (comma)             (space)
+
+In the standard Macintosh (long file name) format without extensions, ALL
+characters will work except for the \ (backslash). The backslash will cause the
+second error listed above. In the case of long file names, Mail for Windows will
+delete any invalid characters (except for the backslash).
+
+For additional information, please see the Microsoft MS-DOS version 6.21 "User's
+Guide," pages 27-29 and the Microsoft Mail Connection for PC and AppleTalk
+Networks "Administrator's Guide," page 95.
+
+
+Additional query words: 3.20 valid characters mac appletalk click start launch pcmail error
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

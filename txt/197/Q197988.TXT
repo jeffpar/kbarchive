@@ -1,0 +1,213 @@
+DOCUMENT:Q197988  01-MAR-2002  [vbwin]
+TITLE   :HOWTO: Deploy an ActiveX Control with the PDW
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbAppSetup kbCtrl kbCtrlCreate kbVBp kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two common ways to distribute an ActiveX control developed in
+Microsoft Visual Basic:
+
+ - Distribute the control with an application that uses the control.
+
+ - Distribute the control with its own setup package.
+
+This article focuses on how to distribute a control with its own setup package
+using the Package and Deployment Wizard (PDW).
+
+MORE INFORMATION
+================
+
+The following information provides detailed step-by-step instructions on how to
+package an ActiveX control created with Visual Basic using the PDW.
+
+The following steps assume that an ActiveX Control project has already been
+created using Visual Basic.
+
+Step-By-Step Example
+--------------------
+
+1. Launch the Package and Deployment Wizard application (PDW).
+
+2. When the PDW appears, the main menu is presented with the following options:
+
+    - Select Project
+
+    - Package
+
+    - Deploy
+
+    - Manage Scripts
+
+3. Select the ActiveX control project (.vbp) to package by typing the path to
+   the .vbp in the Select Project text box, or by browsing to it. If the PDW was
+   started within the Visual Basic IDE while the desired project was open, the
+   correct project is already selected for you.
+
+4. Click the Package button to begin the packaging process.
+
+5. At this time the PDW might present a dialog box similar to the following:
+
+   The following source files for this project are newer than the
+   executable 'D:\Src\Projects\MyControl.Ocx':
+
+   D:\Src\Projects\MyControl.Ctl
+   D:\Src\Projects\MyControl.Vbp
+
+   Do you want to recompile? Choose No to use the existing executable.
+
+NOTE: This message appears if the project was saved again after the control was
+compiled. If no actual change to the project has been made since the last
+compile you can ignore this message.
+
+1. The next dialog box will be the Package Type. There are three types of
+   packages the PDW can build:
+
+    - Standard Setup Package
+
+    - Internet Package
+
+    - Dependency File
+
+   Select the Standard Setup Package option and click Next.
+
+2. The next dialog box is the Package Folder. The Package Folder determines
+   where all the files for the package distribution will be located. By default,
+   the PDW wants to create a Package folder in the same directory as the project
+   file. In this example, use the default Package folder by clicking the Next
+   button. A dialog box similar to the following appears:
+
+   Cannot find 'D:\Src\Projects\Package' to use as the package folder. Do you
+   want to create it?
+
+   Click the Yes button to have the PDW create the Package folder.
+
+3. After selecting the Package folder the PDW asks the following:
+
+   If this control will be used within a design environment other than Visual
+   Basic, you will need to distribute the Property Page DLL.
+
+   Do you want to include this file in your package?
+
+   In this example the control is being packaged for run-time use and not for
+   design time use. Click the No button.
+
+4. The PDW shows the Included Files dialog box. This dialog box lists every file
+   that is currently selected to be included in the distribution package. Note
+   that the Msstkprp.dll file is listed but not selected to be included in the
+   package. This file is only included if the ActiveX control will be used in
+   non Visual Basic design environments (step 8).
+
+   With this dialog, extra files can be included with the distribution. For
+   example, ReadMe files or database files can be included at this stage. Use
+   the Add button to browse the computer system and select files to be added to
+   the distribution.
+
+   After adding extra files and reviewing the files to be included in the
+   package, click Next.
+
+5. The Cab Options dialog box appears. With a Standard Package there are two
+   options from which to choose:
+
+    - Single Cab
+
+    - Multiple Cab
+
+   If you choose the Multiple Cab option, a third option becomes available
+   specifying the size of each Cab for the package.
+
+   For this example, choose the Single Cab option and click the Next button.
+
+6. The Installation Title dialog box appears. This option determines what is
+   displayed with the setup program when the ActiveX control is being installed
+   as well as what is shown in the Add/Remove feature in the Control Panel. The
+   default is the name of the project being packaged. Click the Next button to
+   accept the default.
+
+7. The Start Menu dialog box appears. This dialog allows the customization of
+   the Program Group that the PDW adds to the Start menu during installation. By
+   default, the PDW will not create a program group for an ActiveX control.
+
+   If the ActiveX control contains additional files, such as documentation or
+   support utilities, this dialog allows you to build the group and add the
+   files to the Start menu.
+
+   In this example, click the Next button.
+
+8. The Install Location dialog box appears. This dialog allows you to customize
+   where each main file of a package will be installed on the target computer.
+   By default the PDW installs an ActiveX control into it's own folder on the
+   target computer.
+
+   In this example, click the Next button to accept the default folder.
+
+9. The Shared Files dialog box appears. A Shared File is a file which is used by
+   more than one program (a DLL or OCX is an example of a Shared File). When
+   more than one program is dependent upon a file, the operating system keeps a
+   count of how many programs use that file. This prevents one program from
+   uninstalling a shared file that is needed by a program still installed on the
+   computer.
+
+   In this example, click the Next button.
+
+10. The last dialog box, Finished, appears. This dialog gives you the chance to
+   save all the options chosen into a script file. The script file can then be
+   run to automate the distribution build process.
+
+   Click the Finish button.
+
+   At this time the PDW processes all the options selected and builds the
+   distribution set for the ActiveX control.
+
+11. When the PDW has completed building the distribution set, a Packaging Report
+   dialog box appears that contains additional information about the
+   distribution.
+
+The setup for the ActiveX control is now complete. All the files necessary to run
+the ActiveX control in a run-time environment are in the Package folder. The
+control can be installed by running the Setup.exe program, which is in the
+Package folder.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q188582 : HOWTO: Deploy an ActiveX Control with License Information
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbCtrl kbCtrlCreate kbVBp kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,74 @@
+DOCUMENT:Q221432  05-DEC-1999  [crossnet]
+TITLE   :XFOR: Pickup Folder Mishandles Read-Only File Permissions
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:winnt:2.0,4.0,5.5
+OPER/SYS:
+KEYWORDS:MCIS_MSG exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Commercial Internet System version 2.0 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you generate SMTP mail by creating files, some files are not removed. This
+happens when you create files in Request for Comments (RFC) 822 format in the
+Pickup subfolder of the Mailroot folder of the Internet Information Server (IIS)
+SMTP service (SMTPSVC). Subsequent restarts of the SMTPSVC causes the file to be
+reprocessed, but the file still is not removed.
+
+CAUSE
+=====
+
+These unremoved files that were copied into the Pickup folder have the Read-Only
+attribute set. There is no explicit checking to ascertain whether the files
+processed have the Read-Only attribute set or not. Note that this problem does
+not occur with the Pickup subfolder of the Imcdata folder when you are using the
+Exchange Server 5.5 Internet Mail Service.
+
+WORKAROUND
+==========
+
+When you copy files into the Pickup folder, ensure that the Read-Only attribute
+is not set.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : MCIS_MSG exc55 
+Component         : IMS
+Technology        : kbiisSearch kbAudDeveloper kbExchangeSearch kbExchange550 kbiis400 kbZNotKeyword2 kbMCISSearch kbMCIS200
+Version           : winnt:2.0,4.0,5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

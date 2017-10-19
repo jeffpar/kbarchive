@@ -1,0 +1,86 @@
+DOCUMENT:Q115164  30-OCT-1999  [pcmail]
+TITLE   :PC MAPI: Errors When Compiling Sample in Visual Basic
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive errors when you attempt to compile the Visual Basic Sample MAPI
+application included on the Technical Reference disk that is provided with
+version 3.0b of Microsoft Mail for Windows.
+
+CAUSE
+=====
+
+The sample source code for the Microsoft Visual Basic Simple MAPI interface is
+not compatible with version 2.0 or 3.0 of the Visual Basic development
+environment.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.0b of Microsoft Mail
+for Windows. This problem was corrected in MAPI.DLL version 3.2.0.4081. If you
+do not have version 3.2.0.4081 (or later), you can download MAPIUPD.EXE, a
+self-extracting file, on the following services:
+
+ - Microsoft's World Wide Web Site on the Internet
+
+   On the www.microsoft.com home page, click the Support icon.
+   Click Knowledge Base, and select the product.
+   Enter kbfile MAPIUPD.EXE, and click GO!
+   Open the article, and click the button to download the file.
+
+ - Internet (anonymous FTP)
+
+   ftp ftp.microsoft.com
+   Change to the Softlib/Mslfiles folder.
+
+   Get MAPIUPD.EXE
+
+ - The Microsoft Network
+
+   On the Edit menu, click Go To, and then click Other Location.
+   Type "mssupport" (without the quotation marks).
+   Double-click the MS Software Library icon.
+   Find the appropriate product area.
+   Locate and Download MAPIUPD.EXE.
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Additional query words: 3.00b VB app
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300b
+Version           : WINDOWS:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

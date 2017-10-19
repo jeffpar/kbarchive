@@ -1,0 +1,68 @@
+DOCUMENT:Q256827  06-AUG-2002  [automap]
+TITLE   :MapPoint 2001: There Was a Problem Opening <Filename>
+PRODUCT :Microsoft Automap
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2002 
+ - Microsoft MapPoint 2001 
+ - Microsoft Streets & Trips 2002, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to import a Microsoft Excel data file into Microsoft MapPoint
+2001, you may receive the following error message
+
+   There was a problem opening <filename>.
+
+where <filename> is the name of the Excel data file that you attempted to
+import.
+
+CAUSE
+=====
+
+This behavior can occur if the Excel data file contains a worksheet with a
+period in the worksheet name.
+
+RESOLUTION
+==========
+
+To resolve this issue, rename the worksheet to remove the period from the
+worksheet name.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft MapPoint 2001.
+
+Additional query words: mp2001 map point importing workbook
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbimu kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbExpediaSearch kbMapptSearch kbMapPoint2001 kbExpediaStreets2002 kbMapPoint2002
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

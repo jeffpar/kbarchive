@@ -1,0 +1,66 @@
+DOCUMENT:Q122440  08-AUG-2001  [winnt]
+TITLE   :Err Msg: Cannot Load Catalog From Tape
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Windows NT Backup program (NTBACKUP.EXE) with any tape device
+connected to a QLogic PCI SCSI adapter on a PCI bus, the following error message
+may appear:
+
+   Cannot load catalog from tape
+
+CAUSE
+=====
+
+There is a problem with the SCSI adapter driver for the QLogic PCI SCSI adapter.
+
+RESOLUTION
+==========
+
+To work around this problem, do one of the following:
+
+ - Use another supported SCSI adapter. Refer to the Windows NT version 3.5
+   Hardware Compatibility List.
+
+   -or-
+
+ - Call QLogic Technical Support at (800) 737-6524 for more information.
+
+The QLogic product discussed here is manufactured by QLogic, a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: prodnt controller
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

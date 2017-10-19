@@ -1,0 +1,78 @@
+DOCUMENT:Q147427  14-DEC-2001  [visualc]
+TITLE   :DOC: Description of C2354 Error Is Unclear
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbCompiler kbCPPonly kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Neither the error message itself nor the online documentation for the C2354
+compiler error clearly specify the cause of this error:
+
+   'reference' : initialization of reference member requires a temporary
+   variable
+
+MORE INFORMATION
+================
+
+It is illegal to initialize a reference member of a class in the class's
+constructor with a temporary variable. An attempt to do so generates the C2354
+error, as illustrated by this sample code:
+
+Sample Code
+-----------
+
+   int temp() { return 1; }
+
+   class Test
+   {
+   public:
+       int member;
+       int& ref_member;
+       Test();
+   };
+
+   Test::Test() : ref_member( temp() )
+   {
+   }
+
+When this error is encountered, the solution is to change the code so that the
+reference member is not initialized to a temporary variable. The reference must
+be initialized to an object that will exist for the lifetime of the reference
+member.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbCompiler kbCPPonly kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbOLDocs 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

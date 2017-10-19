@@ -1,0 +1,85 @@
+DOCUMENT:Q235275  05-APR-2000  [sna]
+TITLE   :INF:Sample TCP/IP CICS Concurrent Server Program Writes Log Data
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP2,4.0SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 4.0 SP2 
+ - Microsoft SNA Server, version 4.0SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Cicscs.cbl, Imsexpl.cbl, and Mscmtics.cbl comprise a set of sample COBOL
+programs supplied with COM Transaction Integrator for CICS and IMS (COMTI). By
+default, they are found in the following directory:
+
+   ...\Program Files\SNA\Comti\SampleCode\ProgrammingSpecifics\TCP
+
+There is one additional sample in that directory, Imsimpl.cbl, to which this
+article does not apply.
+
+You may modify these samples as necessary and use them if you want when TCP/IP is
+the protocol for mainframe connectivity. The programs are capable of writing
+status entries, including error information, to a log, but logging is disabled
+by default. To enable logging, the sample code must be changed, and the program
+recompiled and linkage edited.
+
+MORE INFORMATION
+================
+
+For the CICS programs, Cicscs.cbl and Mscmtics.cbl, when logging is enabled,
+data is written to the standard IBM Customer Information Control System (CICS)
+Transient Data queue named CSMT. The CICS task number is logged in addition to
+the status or error information.
+
+For the IMS program, Imsexpl.cbl, when logging is enabled, the status or error
+information is written to the Job Entry Subsystem (JES) log of the Information
+Management System (IMS) Message Processing Region (MPR) in which the program
+executes.
+
+To enable logging, change the source code to initialize the ENABLE-LOGGING
+variable to 'Y' instead of 'N'. Find the line
+
+   01 ENABLE-LOGGING PIC X VALUE 'N'
+
+and change it to
+
+   01 ENABLE-LOGGING PIC X VALUE 'Y'
+
+Then compile and link the program.
+
+Note that there may be additional administrative steps necessary on the mainframe
+to actually implement the new versions of the programs in either CICS or IMS.
+For that, the appropriate mainframe administrative personnel should be
+contacted.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI400SP2
+Version           : WINDOWS:4.0 SP2,4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

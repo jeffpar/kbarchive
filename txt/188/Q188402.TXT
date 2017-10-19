@@ -1,0 +1,73 @@
+DOCUMENT:Q188402  09-OCT-1999  [foxpro]
+TITLE   :INFO: Some Visual FoxPro Files Contained in XSOURCE Folder
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbHTMLHelp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Included with Visual FoxPro for Windows version 6.00 are two files named
+Xsource.zip and Solnhlp.zip. They are located in the \Tools\XSource folder under
+the folder returned by the Visual FoxPro HOME() function.
+
+MORE INFORMATION
+================
+
+Unzipping the Xsource.zip file with the pkunzip.exe -d parameter creates a
+folder named \vfpsource. The \vfpsource folder contains the following folders:
+
+   \Addlabel
+   \Browser
+   \Builders
+   \Coverage
+   \Wizards
+
+Unzipping the Solnhlp.zip file with the pkunzip.exe -d parameter creates a folder
+named \Solution. The \Solution folder contains 128 files which are the source
+code for the Solutions sample application (for the purpose of showing how to
+create a context sensitive HTML help file). These folders are also created:
+
+   \Compiled
+      \Html
+      \Stylesheets
+
+REFERENCES
+==========
+
+Visual FoxPro 6.0 Readme.hlp; search on: "XSOURCE"
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Perry Newton, Microsoft Corporation
+
+
+Additional query words: kbVFp kbVFp600 kbOLDocs
+
+======================================================================
+Keywords          : kbHTMLHelp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,83 @@
+DOCUMENT:Q200661  11-JUN-2002  [exchange]
+TITLE   :XFOR: Event ID 2403: Failure Converting OLE v2 Object to OLE v1
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbole exc4 exc5
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+
+SYMPTOMS
+========
+
+If you send a message that contains an OLE version 2.0 object that can not be
+converted to an OLE version 1.0 object from Exchange Server through the
+Microsoft Mail Connector, the following event is logged in the application event
+log:
+
+   Event ID: 2403
+   Category: Warning
+   Source: MSExchangeMSMI
+   Description:
+
+   Failure converting OLE v2 object to OLE v1, OLE Object Class not registered in
+   message C=US;A= ;P=Microsoft;l=BISCUITHEAD-970304034713Z-3.
+
+You can still view this OLE object in Exchange Server clients. The Microsoft Mail
+client does not display this OLE object.
+
+WORKAROUND
+==========
+
+Install the OLE application on the Microsoft Mail Connector server.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 4.0 and 5.0.
+
+MORE INFORMATION
+================
+
+Microsoft Mail for PC Networks is an OLE version 1.0 compatible application. For
+the Exchange Server client to embed OLE version 2.0 objects within a mail
+message, the Microsoft Mail Connector interchange must convert the OLE version
+1.0 object to an OLE version 2.0 object. This conversion occurs on the computer
+running the Microsoft Mail Connecter interchange. For the Microsoft Mail
+Connector interchange to convert the objects, the OLE application must be
+installed on the Microsoft Mail Connector server, because the Microsoft Mail
+Connector interchange uses the local registry to get the OLE information.
+
+Additional query words: msmi xcln msmail word excel
+
+======================================================================
+Keywords          : kbole exc4 exc5 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

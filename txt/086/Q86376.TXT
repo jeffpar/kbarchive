@@ -1,0 +1,54 @@
+DOCUMENT:Q86376  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Assistant Needs Access to Postoffice
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An assistant in Microsoft Schedule+ for Windows can be anyone from the Global
+Address List (GAL); however, if the assistant is on another postoffice, there
+must be a dynamic link to the user's postoffice from the assistant's postoffice.
+The following error will be displayed if there is no link:
+
+   Unable to access the file for manager.
+
+CAUSE
+=====
+
+SCHDIST.EXE moves the information about an assistant to another postoffice. When
+the assistant tries to read the meeting request in Schedule+, the postoffice
+file confirms that the user is the assistant, and then tries to make the
+connection. If dynamic connections have been set up, this will work normally.
+
+Additional query words: 1.00 schedule distribution plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

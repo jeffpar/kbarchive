@@ -1,0 +1,65 @@
+DOCUMENT:Q195278  08-JAN-2000  [mspress]
+TITLE   :Visual InterDev 6.0 Programmer's Guide Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Visual InterDev 6.0 Programmer's Guide ISBN 1-52731-867-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Visual InterDev 6.0 Programmer's
+Guide, ISBN 1-52731-867-8.
+
+The following topics are covered:
+
+ - Page 39: Script To Copy And Paste Not Included
+
+MORE INFORMATION
+================
+
+Page 39: Script To Copy And Paste Not Included
+----------------------------------------------
+
+Page 39, Paragraph 3:
+Delete sentence 2 ("Copy the script and HTML then..."):
+Replace with::
+"Type in the following sample client script."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ms_press 1-57231-867-8
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

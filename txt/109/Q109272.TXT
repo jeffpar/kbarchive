@@ -1,0 +1,74 @@
+DOCUMENT:Q109272  27-NOV-1999  [homekids]
+TITLE   :Writer: Can't Print from Control Room (Adult Mode)
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is not possible to print from the Control Room (adult mode). When you choose
+Printing Options from the File menu and then choose the Print button, the
+program does not really print. This procedure just sets your printing options.
+To print, return to Creative Writer or Fine Artist and click on the Toaster.
+
+This functionality is by design. You cannot print from the Control Room in the
+Windows version of Creative Writer and Fine Artist, either.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Situation
+----------------------------
+
+1. In the program, press "COMMAND+SHIFT+A" (without the quotation marks) to
+   switch to the Control Room. (In Windows, press "CTRL+SHIFT+A" (without the
+   quotation marks).)
+
+2. In the Control Room, choose File and select Printing Options.
+
+3. Choose either Set Local or Set Global.
+
+4. In the Page Setup dialog box, select your paper size and orientation
+   settings. Choose OK.
+
+5. In the second setup dialog box, set your page range, number of copies, and
+   other options. Choose Print.
+
+The document does not print. This procedure sets your printing options. To print,
+return to Creative Writer or Fine Artist and click on the Toaster.
+
+
+Additional query words: 1.00 kbhowto kids win mac printing 1.10 mskids mczee settings 1.10a prints
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbZNotKeyword2 kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist100 kbFineArtist110 kbFineArtist110a kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+Version           : MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q149208  13-JUN-2001  [sna]
+TITLE   :Large File Transfers Fail w/MS-DOS Router and IBM PC Support
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+File transfers that use the IBM PC Support Program's RTOPC utility to transfer
+data from an AS/400 to a IBM-compatible computer may fail when you use the
+MS-DOS SNA Server client's ROUTER.EXE.
+
+One possible symptom of the failure is an unknown error 9999 returned by the IBM
+PC Support program.
+
+CAUSE
+=====
+
+The SNA Server MS-DOS Router was not properly handling an APPC verb timeout
+condition if the APPC verb did not complete in 65 seconds. Instead of returning
+a timeout error, the MS-DOS Router was returning AP_OK (no error).
+
+
+RESOLUTION
+==========
+
+The ROUTER.EXE has been updated to correct the problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.0, 2.10,
+2.11, and 2.11.sp1. This problem was corrected in the latest Microsoft SNA
+Server 2.11 U.S. Service Pack. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words: ca/400 service pack 1
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

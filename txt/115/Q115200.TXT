@@ -1,0 +1,61 @@
+DOCUMENT:Q115200  27-OCT-1999  [win3x]
+TITLE   :MS-DOS-Based Apps May Not Time-Slice Well Under WFWG 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When 32-bit file access is enabled and 32-bit disk access is not, your computer
+does not accept keyboard input and then appears to stop responding (hang) in
+either an MS-DOS Prompt session or in an MS-DOS-based application. After you
+type a few characters, the machine appears to hang, and then the buffer empties,
+effectively pasting your text into the application very quickly.
+
+NOTE: Many machines are configured to behave this way (for example, those with
+disk drive controllers that are not Western Digital (WD) 1003 compatible and
+those using disk-compression schemes other than MS-DOS 6.2 DoubleSpace).
+
+CAUSE
+=====
+
+When 32-bit file access is enabled without 32-bit disk access being enabled,
+Windows for Workgroups 3.11 uses the real-mode mapper. Since the real-mode
+mapper presents a synchronous interface to 32-bit file access, it prevents other
+system events from occurring simultaneously with disk access. This problem
+occurs when a large amount of data has accumulated in the cache and must be
+flushed immediately because of a disk reset (CTRL+C) or critical error. During
+the time that the data is being written to the drive, other system events are
+ignored.
+
+Additional query words: dblspace 3.11 key board delay wait hang hung freeze frozen dump flush buffer virtual machine machines develop time-slice problems rmm
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

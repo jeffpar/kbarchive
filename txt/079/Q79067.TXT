@@ -1,0 +1,87 @@
+DOCUMENT:Q79067  04-MAY-2001  [masm]
+TITLE   :FIX: A2029 Incorrectly Generated If Operand = [ebx][ebx]
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With the Microsoft Macro Assembler (MASM) 6.0, the following error is generated
+incorrectly for instructions using the operand [ebx][ebx]:
+
+   error A2029 : multiple base registers not allowed
+
+For example:
+
+   lea esi, [ebx][ebx]
+   mov esi, [ebx][ebx]
+
+RESOLUTION
+==========
+
+A workaround for this problem is to embed the opcode for the instruction
+directly in the code. The sample code below demonstrates this method.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+has been corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+Error A2029 will be incorrectly generated for the following program. The code
+that should be generated for lea esi [ebx][ebx] is 8D 34 1B. Note that the
+operand [ebx][ebx] is available only when using the .386 or .486 directives.
+
+Sample Code
+-----------
+
+   ; Assembler options needed none
+
+   .386
+   .MODEL flat
+   .STACK 4096
+
+   CODE32 SEGMENT PUBLIC USE32
+    main PROC near
+       lea esi, [ebx][ebx]      ; Replace this by BYTE 8Dh, 34h, 1Bh
+       ret
+   main ENDP
+   CODE32 ENDS
+
+   END
+
+Additional query words: 6.00 buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : :6.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

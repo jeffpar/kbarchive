@@ -1,0 +1,110 @@
+DOCUMENT:Q189588  31-JUL-2001  [sms]
+TITLE   :SMS: SQL Transfer Manager Errors When Moving SMS Database
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+MORE INFORMATION
+================
+
+Sp_site.sql is the script that the Systems Management Server Setup program runs
+to create the sp_GetSubSites and sp_GetSubGroupSites stored procedures. Manually
+running this script creates the appropriate temporary tables, and also drops and
+re-creates the necessary Systems Management Server stored procedures.
+
+SYMPTOMS
+========
+
+When using SQL Transfer Manager to move the SMS database from one SQL Server to
+another, it is possible to encounter errors similar to the following:
+
+   ::Error::
+   In file DATABASE.SMS.PRC in statement on line 1
+   Transfer Status: Creating Stored Procedures on destination database
+   Invalid object name '#Sites'.
+
+   ::Error::
+   In file DATABASE.SMS.PRC in statement on line 1
+   Transfer Status: Creating Stored Procedures on destination database
+   Invalid object name '#Sites'.
+
+   ::Error::
+   In file DATABASE.SMS.PRC in statement on line 105
+   Transfer Status: Creating Stored Procedures on destination database
+   Invalid object name 'dbo.sp_GetSubGroupSites'.
+
+   ::Error::
+   In file DATABASE.SMS.PRC in statement on line 108
+   Transfer Status: Creating Stored Procedures on destination database
+   Invalid object name '#Sites'.
+
+   ::Error::
+   In file DATABASE.SMS.PRC in statement on line 108
+   Transfer Status: Creating Stored Procedures on destination database
+   Invalid object name '#Sites'.
+
+   ::Error::
+   In file DATABASE.SMS.PRC in statement on line 108
+   Transfer Status: Creating Stored Procedures on destination database
+   Invalid object name '#Sites'.
+
+   ::Error::
+   In file DATABASE.SMS.PRC in statement on line 160
+   Transfer Status: Creating Stored Procedures on destination database
+   Invalid object name 'dbo.sp_GetSubSites'.
+
+CAUSE
+=====
+
+These errors indicate a problem with creating the SMS stored procedures. This
+can happen if the required temporary tables are not present.
+
+WORKAROUND
+==========
+
+To work around this problem and re-create these procedures manually on the
+destination server, perform the following steps:
+
+1. Start SQL Enterprise Manager.
+
+2. On the Tools menu, click SQL Query Tool.
+
+3. Select the SMS database.
+
+4. click the Load SQL Script toolbar button.
+
+5. Navigate to the Sms\Site.srv\<Platform>.bin\Sp_site.sql file.
+
+6. Click the Execute Query toolbar button.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

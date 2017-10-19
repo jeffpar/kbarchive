@@ -1,0 +1,77 @@
+DOCUMENT:Q148904  14-MAR-2002  [win95x]
+TITLE   :NetWare Print Jobs Always Use Form Zero
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Microsoft Client for NetWare Networks, all print jobs
+revert to form zero, even if a different form number or name is used.
+
+CAUSE
+=====
+
+The option to select a form on the Capture Settings tab in the printer's
+properties is not functioning. Entering a form number or name other than form
+zero has no effect when you are using the Microsoft Client for NetWare Networks.
+
+RESOLUTION
+==========
+
+To work around this problem, use the following steps.
+
+NOTE: This workaround requires using a real-mode Novell NetWare client.
+
+1. Configure your computer to use a real-mode NetWare client (such as NETX or
+   VLM).
+
+2. Place a capture statement specifying the proper form in the login script.
+
+3. Configure the printer driver in Windows 95 to print to LPT1.DOS (or LPT2.DOS,
+   and so on).
+
+4. Restart the computer.
+
+To change the form number being used, issue a new capture command in an MS-DOS
+session.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

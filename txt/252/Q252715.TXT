@@ -1,0 +1,87 @@
+DOCUMENT:Q252715  05-MAR-2000  [winnt]
+TITLE   :Error 14064 Attempting to Change an Attribute Value Type
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to change an attribute value type (for example, Single, Multi,
+or Collective), you may receive the following error message:
+
+   An error occurred processing your request
+   The server reported [Server error value [14064]]
+
+The error code translates to:
+
+   (DB5_RC_INVALID_ATTRIBUTE_PROCESSING)
+
+CAUSE
+=====
+
+Some attributes are treated as a "special cases" within the database. If you
+attempt to change a special-case attribute, the error message is generated.
+
+The list of current special-case attributes includes:
+
+   aliasedObjectName
+   description
+   DSEType
+   lastVerifiedTime
+   structuralObjectClass
+   telephoneNumber
+
+RESOLUTION
+==========
+
+Do not attempt to change the attribute type for these special-case attributes.
+Choose a different attribute to populate as multi-valued or collective.
+
+MORE INFORMATION
+================
+
+To view or change an attribute's value type:
+
+1. Search the directory for the attribute you want to change. In Compass, click
+   Search, and then type the name of the attribute you want to change. For
+   example, try searching for GivenName.
+
+2. When the attribute is found, double-click it to display its properties.
+
+3. On the Definition tab, click one of the three attribute value types: Single,
+   Multi, or Collective. This value specifies whether an attribute is
+   single-valued, multi-valued, or collective. Collective attributes cannot be
+   multi-valued.
+
+Additional query words: MMS Zoomit VIA
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

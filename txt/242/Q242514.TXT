@@ -1,0 +1,73 @@
+DOCUMENT:Q242514  12-JUN-2001  [homegame]
+TITLE   :AoE II: You Can Hear Sounds but Cannot See the Opening Movie
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Age of Empires II: The Age of Kings, you may be unable to see the
+opening movie. However, you may be able to hear the sounds in the opening movie.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A Hercules Terminator Beast video adapter is installed in your computer.
+
+ - An outdated video driver for your Hercules Terminator Beast video adapter is
+   installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest version of the Hercules
+Terminator Beast video driver from the following Hercules Web site:
+
+   http://www.hercules.com
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: 2.00 aoe2 aok msgame black blank screen
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOE2Kings
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

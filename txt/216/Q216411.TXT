@@ -1,0 +1,74 @@
+DOCUMENT:Q216411  11-DEC-2001  [winnt]
+TITLE   :ERRMSG: A Required Privilege Is Not Held by the Client
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you connect through a terminal server client to view or modify the audit
+properties of a directory on a member server or workstation, you receive the
+following error message:
+
+   A required privilege is not held by the client.
+
+This error can occur even if the account you are using is a member of the Domain
+Admins global group in the master domain or a resource domain.
+
+CAUSE
+=====
+
+The account does not have necessary rights on the terminal server.
+
+RESOLUTION
+==========
+
+To resolve this issue, make the user a member of the local Administrators group
+on the terminal server and the member server/workstation where the user will be
+configuring the auditing changes.
+
+As a more secure solution, you could simply grant the user the right to "Manage
+auditing and security log" on the two computers. The user will then be able to
+manage auditing on a member server/workstation.
+
+MORE INFORMATION
+================
+
+This is the same error message that a user will receive if he or she tries to
+manage auditing directly on a computer to which he or she has not been granted
+the "Manage auditing and security log" right.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,322 @@
+DOCUMENT:Q237994  10-JUL-2001  [odbc]
+TITLE   :INFO: MDAC Upgrade Issues with Access ODBC Driver
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbJET kbMDAC kbODBC kbOLEDB kbProvider kbGrpDSMDAC kbGrpDSODBC kbExcel123Quattro
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for Access, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Data Access Components (MDAC) versions 2.1 and 2.5 both install a
+major new version of the Microsoft Access ODBC driver. This Access ODBC driver
+uses the Microsoft Jet 4.0 database engine, which allows access to Access 2000
+format databases as well as to all previous Access database formats. The version
+of the Access ODBC driver that ships with MDAC version 1.5 and 2.0 uses the
+Microsoft Jet 3.5 database engine to manipulate the Access database file.
+
+Due to design changes in Jet 4.0, as well as issues with backward compatibility,
+the new Access ODBC driver can break existing, installed ODBC applications that
+use the Access ODBC driver, in some cases forcing the developer to recode the
+application.
+
+MORE INFORMATION
+================
+
+Overview of MDAC 2.1 and MDAC 2.5 Access ODBC Driver Issues
+-----------------------------------------------------------
+
+The Jet 4.0-based Microsoft Access ODBC driver uses the same file name as the
+older Jet 3.5-based driver, namely Odbcjt32.dll. When you install MDAC 2.1 or
+2.5, the Jet 3.5-using Odbcjt32.dll file is overwritten by a Jet 4.0-using
+Odbcjt32.dll ODBC driver Dll. Thus, existing installed applications that use the
+Microsoft Access ODBC driver that shipped with MDAC 2.0 or MDAC 1.5 are
+converted to the newer driver if MDAC 2.1 or MDAC 2.5 is installed on the
+computer.
+
+Odbcjt32.dll is the core Microsoft Access ODBC driver DLL. This DLL exports all
+of the ODBC API functions used by an ODBC client application. When you use
+Odbcjt32.dll from ODBC, it loads and uses either Msjet35.dll or Msjet40.dll (Jet
+3.5 or Jet 4.0) to manipulate the Access database. Note that if you install MDAC
+2.0 and then install MDAC 2.1 or MDAC 2.5 on the same computer, you have two
+parallel functioning versions of Jet installed on the computer because all of
+the Jet engine files have unique file names between Jet 3.5 and Jet 4.0.
+However, since the new Odbcjt32.dll installed by MDAC 2.1 or MDAC 2.5 is wired
+to use the new version of Jet, the older Jet 3.5 DLLs are no longer used by the
+Access ODBC driver.
+
+To determine which version of the Microsoft Access ODBC driver is installed, open
+the ODBC Administrator and click on the Drivers tab. Examine the version number
+of the driver named "Microsoft Access Driver (*.mdb)". If the version starts
+with 3.5, you are using the Access ODBC driver that is hard-wired to use Jet
+3.5. If the version starts with 4.0, you are using the Access ODBC driver that
+is hard-wired to use Jet 4.0.
+
+Listing of Backward Compatibility Issues with the Microsoft Access ODBC Driver that Ships with MDAC 2.1, MDAC 2.1 SP1, MDAC 2.1 SP2, MDAC 2.5, MDAC 2.5 SP1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. The MDAC 2.1 and MDAC 2.5 version of the Access ODBC Driver does not write to
+   older format-replicated databases. If you have an Access design master or
+   replica database in Access 97 format (or Access 95 format), the MDAC 2.1 (or
+   MDAC 2.5) Access ODBC driver can open this database, but only in read-only
+   mode. In order to both read and write with ODBC, you need to use the
+   Microsoft Access ODBC driver that shipped with MDAC 2.0. The error reported
+   when attempting to update an older format replica database is "Operation not
+   supported on replicable databases that have not been converted to the current
+   version." Workarounds include converting the database to Access 2000 format,
+   dropping back to the MDAC 2.0 SP2 version of the ODBC driver, or
+   unreplicating the database.
+
+
+2. The Paradox ODBC driver that ships with MDAC 2.1 and MDAC 2.5 is read-only
+   unless the Borland Database Engine (BDE) is installed. See the following
+   article in the Microsoft Knowledge Base article for more information:
+
+   Q230126 ACC2000: Using Paradox Data with Access 2000 and Jet
+
+   However, Microsoft has created new Paradox ISAM drivers for Microsoft Jet 4.0
+   that do not require the installation of the BDE to provide full read/write
+   access to Paradox files. See the following article in the Microsoft Knowledge
+   Base article for more information:
+
+   Q263561 INFO: Non-BDE Paradox and dBase ISAM Drivers
+
+3. The dBase ODBC driver that ships with MDAC 2.1 and MDAC 2.5 is read-only
+   unless the BDE is installed. See the following article in the Microsoft
+   Knowledge Base article for more information:
+
+   Q230125 ACC2000: Using dBASE Data with Access 2000 and Jet
+
+   However, Microsoft has created new dBase ISAM drivers for Microsoft Jet 4.0
+   that do not require the installation of the Borland Database Engine (BDE) to
+   provide full read/write access to dBASE files. See the following article in
+   the Microsoft Knowledge Base article for more information:
+
+   Q263561 INFO: Non-BDE Paradox and dBase ISAM Drivers
+
+4. Installing MDAC 2.1 or MDAC 2.5 may break all applications that use the
+   Microsoft FoxPro ODBC driver. Developers need to switch to the Visual FoxPro
+   ODBC driver. See the following article in the Microsoft Knowledge Base
+   article for more information:
+
+   Q235357 PRB: FoxPro ODBC Driver Replaced by Visual FoxPro ODBC Driver
+
+5. Customers have reported several major performance issues with the Microsoft
+   Access ODBC driver that ships with MDAC 2.1 and later. Performance drops of
+   up to 400% between the Jet 3.5-based ODBC driver and the Jet 4.0-based ODBC
+   driver have been reported.
+
+   Reported issues include slower connection opens (SQLConnect), slower SQL
+   command executions (SQLExecDirect), slower record insertions when using
+   date/time fields, slower scrolling (SQLSetPos), and slower data retrieval
+   (SQLGetData) performance. The following Knowledge Base article discusses
+   these issues:
+
+   Q168686 PRB: Performance Loss When Upgrading Jet ODBC Driver
+
+6. The newer Access ODBC driver now follows the ANSI 92 SQL specification,
+   because Jet 4.0 follows this specification. This can cause SQL statements
+   that worked properly with the Jet 3.5-based ODBC driver to fail to produce
+   the desired results. The following Knowledge Base articles detail these
+   issues:
+
+   Q237992 PRB: Query Testing for NULL in Access Database Does Not Return
+   Records with Jet 4.0
+
+
+7. There is a known bug in SQLBindCol where a memory leak occurs with the MDAC
+   2.1 version of the Access ODBC Driver. This issue is fixed in MDAC 2.1 SP2.
+
+
+8. Inserting data into a Bit (Yes/No) field in a Microsoft Access database
+   results in the bit field being always False, even when a value of True is
+   specified. This issue is fixed in MDAC 2.1 SP2; see the following Knowledge
+   Base article for more details:
+
+   Q221184 FIX: Access Bit Fields and MDAC 2.1
+
+9. After installing the newer Access ODBC driver, deleting a record from a
+   keyset or dynamic cursor results in the row position becoming out of
+   synchronization. For example, after a delete you are supposed to be on record
+   5 but you end up on record 10. This issue is fixed in MDAC 2.1 SP2; see the
+   following Knowledge Base article for more details:
+
+   Q230131 Access ODBC Keyset Cursor Becomes Corrupt After a Delete
+
+10. Both MDAC 2.1 and MDAC 2.5 versions of the Access ODBC driver report
+   unexpected column lengths for text columns when calling SQLColumns. See the
+   following Knowledge Base article for more details:
+
+   Q236871 BUG: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH
+
+
+11. The MDAC 2.1 Access ODBC driver is not compatible with earlier versions
+   regarding the usage of SQL_ATTR_NOSCAN (SQL_NOSCAN). The MDAC 2.1 Access
+   ODBC driver continues to preparse ODBC escape sequences even if it is turned
+   off by ODBC API calls.
+
+   This problem is fixed with the MDAC 2.5 Access ODBC driver.
+
+
+12. The MDAC 2.1 and MDAC 2.5 Access ODBC drivers do not support the usage of
+   literal GUIDs in SQL statements. The MDAC 2.0 Access ODBC driver supports
+   literal GUIDs in SQL statements when ODBC escape sequence preparsing is
+   turned off. See the following Knowledge Base article for more details:
+
+   Q170117 HOWTO: Use GUID Fields in Access from Visual C++
+
+
+13. Both MDAC 2.1 and MDAC 2.5 Access ODBC Drivers break backward compatibility
+   with usage of the LIKE clause. This is a rare issue where a text field
+   contains the caret character ('^') and you try to select the field using a
+   like clause. For example, if a field f1 contains the value 'C^C' and you
+   attempt to select the record using the following SQL statement, the record
+   is not be selected:
+
+   SELECT * FROM Test WHERE f1='C^C'
+
+
+14. With the Access ODBC driver that ships with MDAC 2.1 and MDAc 2.5, double
+   quotes can no longer be used as string literals in SQL statements. For
+   example, the following SQL statement works properly with the MDAC 2.0 driver
+   but returns an error ([Microsoft][ODBC Microsoft Access Driver] Too few
+   parameters. Expected 1.) when using the MDAC 2.1 driver:
+
+   SELECT "Test" AS F1 FROM Test
+
+
+   Using single quotes for string literals works with both drivers.
+
+15. Customers have reported database bloating issues with the MDAC 2.1 and MDAC
+   2.5 versions of the Access ODBC driver. Jet 4.0 now stores all text data as
+   Unicode, and this can require twice as much space as ANSI text (two times
+   the amount of bloating due to Unicode storage of data). Also, there is a
+   record locking issue with MDAC 2.1 that is fixed by installing MDAC 2.1 SP2.
+   See the following Knowledge Base article for more details:
+
+   Q239527 ACC2000: Database Bloats When Importing Large Text File
+
+16. Both MDAC 2.1 and MDAC 2.5 versions of the Access ODBC driver may return
+   invalid ordinals when calling SQLColumns. If you create a table in Access
+   and later remove a column, the column ordinals reported by the Access ODBC
+   driver when calling SQLColumns are not in sequence. For example, if you
+   create a table with 4 columns and then delete column 2, the reported column
+   ordinals are 1,3,4 rather than 1,2,3. According to the ODBC specification
+   (SQLColumns, ORDINAL_POSITION), the ordinal positions of the columns must
+   start with 1 and must be in sequence.
+
+
+17. Both MDAC 2.1 and MDAC 2.5 versions of the Access ODBC driver rename some
+   native data types from the previous version. If you call SQLGetTypeInfo, the
+   following type names are renamed:
+
+    MDAC 2.0 Name    MDAC 2.1 and MDAC 2.5 Name
+    -------------   ----------------------------
+     LONGTEXT             LONGCHAR
+     LONG                 INTEGER
+     TEXT                 VARCHAR
+
+
+18. The MDAC 2.1 Access ODBC driver reported an incorrect column length when
+   calling SQLDescribeCol on a calculated textual field. For example, if you
+   submitted the following SQL statement, SQLDescribeCol returns 2147483598 as
+   the length of calculated column and not the expected 255 (standard length of
+   text column reported by the MDAC 2.0 Access ODBC driver):
+
+   SELECT [CompanyName] + [ContactName] AS x FROM Customers
+
+   This bug is fixed in MDAC 2.1 SP1 and all later MDAC 2.1 service packs.
+
+
+19. When using the MDAC 2.1 or MDAC 2.5 Access ODBC driver with
+   SQLConfigDataSource and REPAIR_DB, the call fails if the database name is
+   not enclosed in double quotes. With the MDAC 2.0 driver the double quotes
+   are not needed. This issue is fixed in MDAC 2.1 SP2.
+
+
+20. When using the MDAC 2.1 or MDAC 2.5 version of the Microsoft Access ODBC
+   driver and opening a Microsoft Access database file on a network share, an
+   excessive amount of network packet activity occurs, even when the ODBC
+   connection is idle. This is due to the newer driver interpreting the
+   PageTimeout setting correctly (whereas the MDAC 2.0 driver interpreted it
+   incorrectly).
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q246560 BUG: Excessive Network Activity When Using Access ODBC Driver
+
+21. With both MDAC 2.1 and MDAC 2.5 Access ODBC drivers, using the SQL keyword
+   TEXT without a length specifier in DDL now maps to a memo field (with the
+   MDAC 2.0 driver, TEXT would map to TEXT(255)). For example, the following
+   SQL statement creates a TEXT(255) field with the MDAC 2.0 driver and a MEMO
+   field when using the MDAC 2.1 driver:
+
+   CREATE TABLE Test (f1 TEXT)
+
+22. When executing a parameterized query that contains a subquery with the MDAC
+   2.1 or MDAC 2.5 version of the Access ODBC Driver, parameter markers are
+   processed in an unexpected order. Rather than processing the parameter
+   markers from left to right as they appear in SQL, the parameter markers in
+   the subquery are processed first, and then the main query parameter markers
+   are processed. See the following Knowledge Base article for more
+   information:
+
+   Q244719 FIX: Parameter Mismatch with Sub queries When Using Access ODBC
+
+   This problem was corrected in Microsoft Jet 4.0 Service Pack 4.
+
+23. When you open and close multiple statements under a single HDBC while using
+   Microsoft Access ODBC Driver (both MDAC 2.1 and MDAC 2.5 versions), memory
+   usage climbs until you close the parent HDBC. Also, when you open and close
+   multiple rowsets under a single session while using Microsoft Jet OLE DB
+   Provider 4.0, memory usage climbs until you release the parent session. The
+   memory usage issue can be reproduced using ADO, ODBC, or OLE DB as the
+   client API. See the following Microsoft Knowledge Base article for more
+   information:
+
+   Q247140 Memory Use Climbs with Multiple Recordsets Under a Single Jet Session
+
+Starting with Microsoft Data Access Components (MDAC) version 2.6, MDAC no longer
+contains the following Jet components:
+
+ - Microsoft Jet
+
+ - Microsoft Jet OLE DB Provider
+
+ - ODBC Desktop Database Drivers
+
+For additional information, see the following article in the Microsoft Knowledge
+Base:
+
+   Q271908 INFO: MDAC Version 2.6 Does Not Contain Jet
+
+Additional query words:
+
+======================================================================
+Keywords          : kbJET kbMDAC kbODBC kbOLEDB kbProvider kbGrpDSMDAC kbGrpDSODBC kbExcel123Quattro 
+Technology        : kbAudDeveloper kbAccessSearch kbODBCSearch kbODBCAccess400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

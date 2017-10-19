@@ -1,0 +1,348 @@
+DOCUMENT:Q298678  21-JAN-2002  [odbc]
+TITLE   :INFO: ODBC 64-Bit API Changes in MDAC 2.7
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::3.7
+OPER/SYS:
+KEYWORDS:kbGrpDSVCDB kbDSupport kbGrpDSODBC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Open Database Connectivity (ODBC) headers and libraries that ship with the
+Microsoft Data Access Components (MDAC) 2.7 software development kit (SDK)
+contain some changes from earlier versions of ODBC to allow programmers to code
+to the new 64-bit platforms. This article summarizes those changes.
+
+MORE INFORMATION
+================
+
+By ensuring that your code uses the ODBC-defined types listed below, you will be
+able to compile your code for both 64-bit and 32-bit platforms based on the
+_WIN64 or WIN32 macros.
+
+There are several points of particular importance:
+
+ - Although the size of a pointer has gone from 4 bytes to 8 bytes, integers and
+   longs remain 4-byte values. The types INT64 and UINT64 have been defined for
+   8-byte integers. These are converted in ODBC to SQLLEN and SQLULEN for 64-bit
+   compiles. Some ODBC functions which were previously defined with SQLINTEGER
+   and SQLUINTEGER parameters have therefore been changed where appropriate.
+   These cases are enumerated below, as well as the specific changes to the
+   ODBC-defined data types.
+
+ - There are several functions in ODBC that are declared as taking a pointer
+   parameter. In 32-bit ODBC, that pointer type is frequently used to pass
+   integer data as well as pointers to buffers depending on the context of the
+   call. This was possible, of course, because pointers and integers have the
+   same length; this is not the case in 64-bit Windows.
+
+ - Some descriptor fields that can be set and retrieved through the various
+   SQLSet... and SQLGet... functions have been changed to accomodate 64-bit
+   values, while others are still 32-bit values. Take care in calling these
+   methods to make sure that you use the appropriate size buffer in setting and
+   retrieving these fields. The specifics of which descriptor fields have been
+   changed are listed in the last section of this article.
+
+Changes in SQL Data Types:
+
+The following four SQL types are still supported on 32-bit only; they are not
+defined for 64-bit compiles. These types are no longer used for any parameters
+in MDAC 2.7; use of these types will cause compiler failures on 64-bit
+platforms.
+
+   
+
+   #ifdef WIN32
+   typedef SQLULEN SQLROWCOUNT;
+   typedef SQLULEN SQLROWSETSIZE;
+   typedef SQLULEN SQLTRANSID;
+   typedef SQLLEN SQLROWOFFSET;
+   #endif
+
+The definition of SQLSETPOSIROW has changed for both 32-bit and 64-bit compiles:
+
+   
+
+   #ifdef _WIN64
+   typedef UINT64 SQLSETPOSIROW;
+   #else
+   #define SQLSETPOSIROW SQLUSMALLINT
+   #endif
+
+The definitions of SQLLEN and SQLULEN have changed for 64-bit compiles:
+
+   
+
+   #ifdef _WIN64
+   typedef INT64 SQLLEN;
+   typedef UINT64 SQLULEN;
+   #else
+   #define SQLLEN SQLINTEGER
+   #define SQLULEN SQLUINTEGER
+   #endif
+
+Although SQL_C_BOOKMARK is deprecated in ODBC 3.0, for 64-bit compiles on 2.0
+clients, this value has changed:
+
+   
+
+   #ifdef _WIN64
+   #define SQL_C_BOOKMARK SQL_C_UBIGINT
+   #else
+   #define SQL_C_BOOKMARK SQL_C_ULONG
+   #endif
+
+The BOOKMARK type is defined differently in the newer headers:
+
+   
+
+   typedef SQLULEN         BOOKMARK;
+
+Function Declaration Changes:
+
+The following function signatures have changed for 64-bit programming to
+accommodate the new types. The items in bold text are the specific parameters
+that have changed.
+
+ - SQLBindCol (SQLHSTMT StatementHandle, SQLUSMALLINT ColumnNumber, SQLSMALLINT
+   TargetType, SQLPOINTER TargetValue, SQLLEN BufferLength, SQLLEN *
+   StrLen_or_Ind);
+
+ - SQLBindParam (SQLHSTMT StatementHandle, SQLUSMALLINT ParameterNumber,
+   SQLSMALLINT ValueType, SQLSMALLINT ParameterType, SQLULEN LengthPrecision,
+   SQLSMALLINT ParameterScale, SQLPOINTER ParameterValue, SQLLEN
+   *StrLen_or_Ind);
+
+ - SQLBindParameter (SQLHSTMT hstmt, SQLUSMALLINT ipar, SQLSMALLINT fParamType,
+   SQLSMALLINT fCType, SQLSMALLINT fSqlType, SQLULEN cbColDef, SQLSMALLINT
+   ibScale, SQLPOINTER rgbValue, SQLLEN cbValueMax, SQLLEN *pcbValue);
+
+ - SQLColAttribute (SQLHSTMT StatementHandle, SQLUSMALLINT ColumnNumber,
+   SQLUSMALLINT FieldIdentifier, SQLPOINTER CharacterAttribute, SQLSMALLINT
+   BufferLength, SQLSMALLINT * StringLength, SQLLEN* NumericAttribute)
+
+ - SQLColAttributes (SQLHSTMT hstmt, SQLUSMALLINT icol, SQLUSMALLINT fDescType,
+   SQLPOINTER rgbDesc, SQLSMALLINT cbDescMax, SQLSMALLINT *pcbDesc, SQLLEN *
+   pfDesc);
+
+ - SQLDescribeCol (SQLHSTMT StatementHandle, SQLUSMALLINT ColumnNumber, SQLCHAR
+   *ColumnName, SQLSMALLINT BufferLength, SQLSMALLINT *NameLength, SQLSMALLINT
+   *DataType, SQLULEN *ColumnSize, SQLSMALLINT *DecimalDigits, SQLSMALLINT
+   *Nullable);
+
+ - SQLDescribeParam (SQLHSTMT hstmt, SQLUSMALLINT ipar, SQLSMALLINT *pfSqlType,
+   SQLULEN *pcbParamDef, SQLSMALLINT *pibScale, SQLSMALLINT *pfNullable);
+
+ - SQLExtendedFetch(SQLHSTMT hstmt, SQLUSMALLINT fFetchType, SQLLEN irow,
+   SQLULEN * pcrow, SQLUSMALLINT * rgfRowStatus)
+
+ - SQLFetchScroll (SQLHSTMT StatementHandle, SQLSMALLINT FetchOrientation,
+   SQLLEN FetchOffset);
+
+ - SQLGetData (SQLHSTMT StatementHandle, SQLUSMALLINT ColumnNumber, SQLSMALLINT
+   TargetType, SQLPOINTER TargetValue, SQLLEN BufferLength, SQLLEN
+   *StrLen_or_Ind);
+
+ - SQLGetDescRec (SQLHDESC DescriptorHandle, SQLSMALLINT RecNumber, SQLCHAR
+   *Name, SQLSMALLINT BufferLength, SQLSMALLINT *StringLength, SQLSMALLINT
+   *Type, SQLSMALLINT *SubType, SQLLEN *Length, SQLSMALLINT *Precision,
+   SQLSMALLINT *Scale, SQLSMALLINT *Nullable);
+
+ - SQLParamOptions(SQLHSTMT hstmt, SQLULEN crow, SQLULEN * pirow)
+
+ - SQLPutData (SQLHSTMT StatementHandle, SQLPOINTER Data, SQLLEN StrLen_or_Ind);
+
+ - SQLRowCount (SQLHSTMT StatementHandle, SQLLEN* RowCount);
+
+ - SQLSetConnectOption(SQLHDBC ConnectHandle, SQLUSMALLINT Option, SQLULEN
+   Value);
+
+ - SQLSetPos (SQLHSTMT hstmt, SQLSETPOSIROW irow, SQLUSMALLINT fOption,
+   SQLUSMALLINT fLock);
+
+ - SQLSetDescRec (SQLHDESC DescriptorHandle, SQLSMALLINT RecNumber, SQLSMALLINT
+   Type, SQLSMALLINT SubType, SQLLEN Length, SQLSMALLINT Precision, SQLSMALLINT
+   Scale, SQLPOINTER Data, SQLLEN *StringLength, SQLLEN *Indicator);
+
+ - SQLSetParam (SQLHSTMT StatementHandle, SQLUSMALLINT ParameterNumber,
+   SQLSMALLINT ValueType, SQLSMALLINT ParameterType, SQLULEN LengthPrecision,
+   SQLSMALLINT ParameterScale, SQLPOINTER ParameterValue, SQLLEN
+   *StrLen_or_Ind);
+
+ - SQLSetScrollOptions (SQLHSTMT hstmt, SQLUSMALLINT fConcurrency, SQLLEN
+   crowKeyset, SQLUSMALLINT crowRowset);
+
+ - SQLSetStmtOption (SQLHSTMT StatementHandle, SQLUSMALLINT Option, SQLULEN
+   Value);
+
+Values Returned from ODBC API Calls Through Pointers:
+
+The following ODBC function calls take as an input parameter a pointer to a
+buffer in which data is returned from the driver. The context and meaning of the
+data returned is determined by other input parameters for the functions. In some
+cases, these methods may now return 64-bit (8-byte integer) values instead of
+the typical 32-bit (4-byte) integer values. These cases are as follows:
+
+SQLColAttribute
+When the FieldIdentifier parameter has one of the following values, a 64-bit
+value is returned in *NumericAttribute:
+SQL_DESC_DISPLAY_SIZE
+SQL_DESC_LENGTH
+SQL_DESC_OCTET_LENGTH
+SQL_DESC_COUNT
+
+SQLColAttributes
+When the fDescType parameter has one of the following values, a 64-bit value is
+returned in *pfDesc:
+SQL_COLUMN_DISPLAY_SIZE
+SQL_COLUMN_LENGTH
+SQL_COLUMN_COUNT
+
+SQLGetConnectAttr
+When the Attribute parameter has one of the following values, a 64-bit value is
+returned in Value:
+SQL_ATTR_QUIET_MODE
+
+SQLGetConnectOption
+When the Attribute parameter has one of the following values, a 64-bit value is
+returned in Value:
+SQL_ATTR_QUIET_MODE
+
+SQLGetDescField
+When the FieldIdentifier parameter has one of the following values, a 64-bit
+value is returned in *ValuePtr:
+SQL_DESC_ARRAY_SIZE
+
+SQLGetDiagField
+When the DiagIdentifier parameter has one of the following values, a 64-bit value
+is returned in *DiagInfoPtr:
+SQL_DIAG_CURSOR_ROW_COUNT
+SQL_DIAG_ROW_COUNT
+SQL_DIAG_ROW_NUMBER
+
+SQLGetInfo
+When the InfoType parameter has one of the following values, a 64-bit value is
+returned in *InfoValuePtr:
+SQL_DRIVER_HENV
+SQL_DRIVER_HDBC
+SQL_DRIVER_HLIB
+
+When InfoType has either of the following 2 values *InfoValuePtr is 64-bits on
+both input and ouput:
+SQL_DRIVER_HSTMT
+SQL_DRIVER_HDESC
+
+SQLGetStmtAttr
+When the Attribute parameter has one of the following values, a 64-bit value is
+returned in *ValuePtr:
+SQL_ATTR_APP_PARAM_DESC
+SQL_ATTR_APP_ROW_DESC
+SQL_ATTR_IMP_PARAM_DESC
+SQL_ATTR_IMP_ROW_DESC
+SQL_ATTR_MAX_LENGTH
+SQL_ATTR_MAX_ROWS
+SQL_ATTR_PARAM_BIND_OFFSET_PTR
+SQL_ATTR_ROW_ARRAY_SIZE
+SQL_ATTR_ROW_BIND_OFFSET_PTR
+SQL_ATTR_ROW_NUMBER
+SQL_ATTR_ROWS_FETCHED_PTR
+SQL_ATTR_KEYSET_SIZE
+
+SQLGetStmtOption
+When the Option parameter has one of the following values, a 64-bit value is
+returned in *Value:
+SQL_MAX_LENGTH
+SQL_MAX_ROWS
+SQL_ROWSET_SIZE
+SQL_KEYSET_SIZE
+
+SQLSetConnectAttr
+When the Attribute parameter has one of the following values, a 64-bit value is
+passed in Value:
+SQL_ATTR_QUIET_MODE
+
+SQLSetConnectOption
+When the Attribute parameter has one of the following values, a 64-bit value is
+passed in Value:
+SQL_ATTR_QUIET_MODE
+
+SQLSetDescField
+When the FieldIdentifier parameter has one of the following values, a 64-bit
+value is passed in *ValuePtr:
+SQL_DESC_ARRAY_SIZE
+
+SQLSetStmtAttr
+When the Attribute parameter has one of the following values, a 64-bit value is
+passed in *ValuePtr:
+SQL_ATTR_APP_PARAM_DESC
+SQL_ATTR_APP_ROW_DESC
+SQL_ATTR_IMP_PARAM_DESC
+SQL_ATTR_IMP_ROW_DESC
+SQL_ATTR_MAX_LENGTH
+SQL_ATTR_MAX_ROWS
+SQL_ATTR_PARAM_BIND_OFFSET_PTR
+SQL_ATTR_ROW_ARRAY_SIZE
+SQL_ATTR_ROW_BIND_OFFSET_PTR
+SQL_ATTR_ROW_NUMBER
+SQL_ATTR_ROWS_FETCHED_PTR
+SQL_ATTR_KEYSET_SIZE
+
+SQLSetConnectAttr
+When the Option parameter has one of the following values, a 64-bit value is
+passed in *Value:
+SQL_MAX_LENGTH
+SQL_MAX_ROWS
+SQL_ROWSET_SIZE
+SQL_KEYSET_SIZE
+
+REFERENCES
+==========
+
+You can obtain the MDAC 2.7 libraries and header files needed to support 64-bit
+compilation from the Microsoft Platform SDK, which can be installed from the
+following Microsoft Web site:
+
+   http://www.microsoft.com/msdownload/platformsdk/sdkupdate/default.htm
+   (http://www.microsoft.com/msdownload/platformsdk/sdkupdate/default.htm)
+
+ODBC applications will need to use the following files:
+
+Header Files:
+
+ - Sqltypes.h
+ - Sqlext.h
+
+Library:
+
+ - Odbc32.lib
+
+Additional query words: 64 bit odbc header files libraries compile api changes datatypes
+
+======================================================================
+Keywords          : kbGrpDSVCDB kbDSupport kbGrpDSODBC 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC370
+Version           : :3.7
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

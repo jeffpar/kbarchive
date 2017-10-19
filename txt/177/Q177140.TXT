@@ -1,0 +1,386 @@
+DOCUMENT:Q177140  09-AUG-2001  [winnt]
+TITLE   :How to Remove Static WINS Entries from All WINS Servers
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information on how to do this, view the "Restoring
+the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+Key" online Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+Static entries should only be used on your Windows Internet Name Service (WINS)
+Servers for non-WINS aware clients that cannot register with a WINS server, such
+as UNIX or AS400 hosts.
+
+There are many methods for removing static entries from a WINS database. Some of
+the methods in this article involve stopping all WINS server replication.
+Although using the Migrate On feature in WINS Manager does not require stopping
+replication, it may not remove all static entries. Another method that does not
+require stopping replication involves the use of a temporary additional WINS
+server. This method does require a registry change on all WINS servers.
+
+For more information on the Migrate On feature, see the following article in the
+Microsoft Knowledge Base:
+
+ARTICLE-ID: Q167806
+TITLE : Explanation of Advanced Options in WINS Manager
+
+ARTICLE-ID: Q171794
+TITLE : Migrate On/Off Does Not Allow Overwriting Static [1Ch] Mappings
+
+MORE INFORMATION
+================
+
+Methods That Do Not Require WINS Replication to Be Stopped
+----------------------------------------------------------
+
+There are two methods that do not require you to stop WINS replication on your
+network; however, both methods do require a registry change on all WINS
+servers.
+
+Method 1 uses a new, temporary WINS server:
+
+To remove static entries, use the following steps:
+
+1. Install a new WINS Server on your network.
+
+   NOTE: This will not be a production server; in other words, no clients will
+   register with this WINS server. This server will only store static mappings
+   and allow easy deletion of the static mappings.
+
+2. Make a note of all of the static entries that you want to delete from all of
+   your WINS servers throughout your network. You should note the NetBIOS name
+   and the record type, such as Unique, Group, and so on.
+
+3. Add each of the entries from step 2 as static entries on the new WINS server
+   that you created in step 1.
+
+4. Configure your new WINS server to replicate these static entries to all other
+   WINS servers through a central hub WINS server. If the replication
+   configuration is not of the hub/spoke model, make certain that replication
+   takes place with a WINS server that will reach all other downstream WINS
+   servers.
+
+5. Delete all of the static mappings from Static Mappings at all of the WINS
+   servers, except the new WINS server, on the Mappings menu of WINS Manager.
+   The original Owners of the static mappings may still retain ownership of the
+   mappings they have entered locally and this will remove their local copy and
+   ensure a replica copy of the record now resides in the local database.
+
+6. After the static entries have fully replicated, make the following registry
+   change to all production WINS Servers:
+
+   WARNING: Using Registry Editor incorrectly can cause serious problems that may
+   require you to reinstall your operating system. Microsoft cannot guarantee
+   that problems resulting from the incorrect use of Registry Editor can be
+   solved. Use Registry Editor at your own risk.
+
+   For information about how to edit the registry, view the "Changing Keys And
+   Values" online Help topic in Registry Editor (Regedit.exe) or the "Add and
+   Delete Information in the Registry" and "Edit Registry Data" online Help
+   topics in Regedt32.exe. Note that you should back up the registry before you
+   edit it.
+
+   a. Start Registry Editor (Regedt32.exe).
+
+   b. Go to the following subkey and select it:
+
+      HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WINS\Partners
+
+      NOTE: The data field of the PersonaNonGrata value has a practical limit of
+      99 IP addresses. Any number of IP addresses beyond 99 may cause the WINS
+      Service to fail to start.
+
+   c. Click Add Value on the Edit menu and use the following information:
+
+      Value Name: PersonaNonGrata
+      Data Type : REG_MULTI_SZ
+      Data      : IP Address of the new WINS Server created in step 1
+      Default   : <none>
+
+   NOTE: This registry value does not go in either the Push or Pull subkey of the
+   Partners subkey, but it is entered as a Value in the Partners subkey. After
+   enabling the value, stop and restart the WINS service.
+
+   This parameter specifies the IP addresses of WINS servers whose records are
+   not to be inserted into the local database during replication.
+
+   For more information, see the following article in the Microsoft Knowledge
+   base:
+
+   ARTICLE-ID: Q166485
+   TITLE : Removing Entries in WINS from Other Nonexistent WINS Servers
+
+7. After adding the PersonaNonGrata registry value and restarting the WINS
+   service, you must perform the following steps on all WINS servers except the
+   new WINS server that you created in step 1:
+
+   a. Using WINS Manager, click Show Database on the Mappings menu.
+
+   b. Click the new WINS server in the Select Owner list.
+
+   c. Click Delete Owner to delete all records owned by the new WINS Server.
+
+   The registry value will prevent these entries from being replicated back
+   before the entries are deleted from every other WINS Server.
+
+8. You may now remove the WINS server created in step 1 from replication and
+   disable or remove the WINS service.
+
+Method 2 uses the ConsistencyCheck registry key:
+
+NOTE: All WINS servers must be running Windows NT Server version 4.0 to use this
+method. It is also important to note that this method uses a lot of bandwidth
+and is not appropriate to use across slow WAN links.
+
+1. Delete the static mapping from the owning WINS server.
+
+2. Prior to the next replication perform a consistency check using Winscl.exe
+   from the Windows NT Resource Kit or using the ConsistencyCheck registry keys.
+
+For more information, see the following articles in the Microsoft Knowledge
+base:
+
+ARTICLE-ID: Q154410
+TITLE : New WINS Registry Entries In Windows NT 4.0
+
+ARTICLE-ID: Q167704
+TITLE : Explanation of Windows NT 4.0 WINS Consistency Checking
+
+ARTICLE-ID: Q169216
+TITLE : Using Winscl.exe to Remove Corrupt WINS Entries by Version ID
+
+Methods That Require WINS Replication to be Stopped
+---------------------------------------------------
+
+All of the methods in this section require you to stop all WINS replication on
+your network. To remove static entries from all of your WINS servers, use the
+following steps:
+
+1. Stop all replication in your WINS environment.
+
+   a. Using WINS Manager, click Replication Partners on the Server menu.
+
+   b. Clear the Replication Options check boxes for every server in the WINS
+      Server list.
+
+   NOTE: This need only be done on one side of a replication pair (a pair of WINS
+   servers set to replicate with one another). Make sure you have the
+   replication partner settings documented before breaking any replication pair.
+   Please note: the partner you are replicating with may get event log messages
+   about the missing replication partner.
+
+2. Remove the static entries using one of the following methods:
+
+    - Use Winscl.exe to remove the static entries. Winscl.exe is a utility
+      contained in the Microsoft Windows NT Resource Kit.
+
+      For more information, see the following article in the Microsoft Knowledge
+      base:
+
+      ARTICLE-ID: Q137582
+      TITLE : Using WINSCL.EXE
+
+      -or-
+
+    - Use the following steps:
+
+      a. Add static entries to each of the replication partners with the names
+         and correct IP addresses of the entries that you want to remove.
+
+      b. Delete them immediately after you add them.
+
+      -or-
+
+    - Use the Delete Owner function of WINS Manager. This method will remove all
+      records owned by a selected WINS server from a WINS database. This method
+      is described below through a step-by-step example.
+
+3. Using WINS Manager, click Replication Partners on the Server menu and
+   recreate the replication pairs that you broke in step 1.
+
+4. Depending on the type of static entries you have removed (COMPUTERNAME,
+   DOMAIN, and so on), you may need force certain computers to register with
+   WINS at this time.
+
+Example of Using the Delete Owner Function of WINS Manager
+----------------------------------------------------------
+
+To illustrate how to use Delete Owner, assume the following:
+
+ - DomainX is the domain name for a domain and the domain controllers in this
+   domain register with their WINS server, whose computer name is Wins1.
+
+ - The domains are Domain1, Domain2, and Domain3.
+
+ - The static entry that needs to be removed is Domain3[1Ch] from the WINS
+   replication environment.
+
+ - The WINS servers are configured using the hub and spoke method of
+   replication:
+
+    - Wins1 is the hub server that is set up to do a full PUSH/PULL operation
+      with both Wins2 and Wins3.
+
+    - Wins2 and Wins3 are configured to PUSH/PULL with WINS1.
+
+For this example, there is a static entry for the Domain3[1Ch] NetBIOS name in
+the database of Wins2. This static entry has replicated to both Wins1 and Wins3.
+The Domain3[1Ch] entry is a Group (or Domain for Windows NT 4.0) type
+registration that should contain every IP address for domain controllers in the
+Domain3 domain (up to a maximum of 25 IP addresses).
+
+For more information on NetBIOS names registered with WINS, see the following
+articles in the Microsoft Knowledge base:
+
+ARTICLE-ID: Q119495
+TITLE : List of Names Registered with WINS Service
+
+ARTICLE-ID: Q163409
+TITLE : NetBIOS Suffixes (16th Character of the NetBIOS Name)
+
+Because there is now a static entry for Domain3[1Ch] in the Wins3 database, the
+domain controllers in Domain3 can no longer dynamically register the
+Domain3[1Ch] entry with Wins3. The fact that this entry is owned by the Wins2
+server makes no difference here. A static entry always takes precedence over a
+dynamic entry, regardless of who is the owner of the record. You need to remove
+this static entry so that domain controllers in Domain3 can once again
+dynamically register the Domain3[1Ch] entry with WINS.
+
+To remove this static entry, use the following steps:
+
+1. Break all replication:
+
+   a. From WINS Manager, double-click Wins1 (it may show only the IP address of
+      Wins1). Verify that Wins1 is the currently selected WINS server by noting
+      the title in the caption bar. It should display the following:
+
+       - WINS Manager - (Wins1)
+
+         -or-
+
+       - WINS Manager - (Local)
+
+      NOTE: If you are currently logged on locally to Wins1, you will see the
+      second title above. The computer name, Wins1, may be replaced with the IP
+      address of Wins1.
+
+   b. Click Replication Partners from the Server menu.
+
+   c. Click Wins2 in the WINS Server list of the Replication Partners dialog
+      box.
+
+   d. Click to clear the check mark from both the Push Partner and Pull Partner
+      check boxes in the Replication Options section of the dialog box.
+
+   e. Repeat steps c and d for WINS server Wins2.
+
+   f. Click OK to exit this dialog box and return to the main WINS Manager
+      screen.
+
+   g. At this point, you have stopped all replication in your WINS environment.
+
+   NOTE: You did not need to go into Wins2 or Wins3 and break replication with
+   Wins1 because you have basically done this in the earlier steps in the other
+   direction.
+
+2. Remove the static entries using Delete Owner:
+
+   a. From WINS Manager, double-click Wins1 to make it the current WINS server.
+
+   b. Click Show Database on the Mappings menu.
+
+   c. Click Wins2 in the Select Owner list of the Show Database dialog box.
+      Click Delete Owner to remove all records owned by Wins2 from this
+      database.
+
+      NOTE: In the event that you do not know which WINS server is the owner of
+      the static entry, refer to the section, Finding the Owner of a Static
+      Entry, below.
+
+   d. Click Close and repeat steps a through c for all WINS servers that contain
+      the static entry in question.
+
+3. Recreate all replication pairs that were broken in step 1:
+
+   a. From WINS Manager, click Replication Partners on the Server menu.
+
+   b. Click the replication partners you wish to re-add and select the Push
+      Partner and Pull Partner check boxes in the Replication Options section of
+      the Replication Partners dialog box.
+
+4. Force any pertinent computers to reregister with WINS:
+
+   a. You chose the Delete Owner method, which deleted all records owned by
+      Wins2. You now need to restart Wins2 as well as all workstations and
+      servers that register with Wins2.
+
+   b. At this point, you may either wait for replication to occur normally or
+      force replication through WINS Manager by clicking Replicate Now in the
+      Replication Partners dialog box.
+
+Finding the Owner of a Static Entry
+-----------------------------------
+
+You may not initially know which WINS server is the owner of a static mapping, in
+which case you will need to do a little searching. To accomplish this, do the
+following:
+
+1. In the Show Database dialog box of WINS Manager, click the first server in
+   the Select Owner list.
+
+2. Scroll through the list of names in the Mappings list looking for entries
+   with a check mark in the S column. These are static mappings. If you do not
+   find the entry for which you are looking, click the next WINS server in the
+   Select Owner list and search the names. Continue searching each WINS server
+   in the Select Owner list until you find the static mapping you want to
+   delete.
+
+   NOTE: You may use the Filter function of WINS Manager to limit the list that
+   you search; however, this function will not display [1Bh] entries.
+
+   For more information, see the following article in the Microsoft Knowledge
+   base:
+
+   ARTICLE-ID: Q173202
+   TITLE : 1B Record Missing in WINS Manager with View Filtered for Domain
+
+3. Make a note of who is the owner of this record (the currently selected WINS
+   Server in the Select Owner list).
+
+Additional query words: 1C
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

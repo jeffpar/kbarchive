@@ -1,0 +1,57 @@
+DOCUMENT:Q155338  08-AUG-2001  [winnt]
+TITLE   :Resource Kit for Windows NT 4.0 Support Guidelines
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:; winnt:
+OPER/SYS:
+KEYWORDS:kbnetwork kbpolicy
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation 
+ - Microsoft Windows NT Server 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+Technical Support for the Windows NT 4.0 Resource Kit is available through
+the same support channels, and at the same cost, as support for Windows NT
+4.0 Server and Workstation. This support is subject to the following
+limitations:
+
+ - Resource Kit utilities and applications are not available for free download.
+
+ - Resource Kit utilities are not guaranteed. Support problem resolution is on a
+   "reasonable effort" basis.
+
+ - Bugs can be filed against Resource Kit utilities; however, Resource Kit bugs
+   will have a lower priority than operating system bugs.
+
+ - Customers can send e-mail to rkinput@microsoft.com with comments or
+   suggestions on the Windows NT Resource Kit.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbpolicy 
+Technology        : kbWinNTsearch kbWinNTWsearch kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:; winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

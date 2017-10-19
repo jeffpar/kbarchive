@@ -1,0 +1,70 @@
+DOCUMENT:Q189184  01-MAY-1999  [exchange]
+TITLE   :XFOR: Outbound SMTP Msgs. Don't Flow w/ IMC/IMS Service Running
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Outbound SMTP messages may not flow with the IMC/IMS service running, but will
+flow when the Msexchimc.exe command is run from a command prompt. Inbound SMTP
+messages work fine with the service.
+
+CAUSE
+=====
+
+This problem is usually caused by a corrupt or invalid service account. To
+verify this possibility, log on to the computer as the service account and
+attempt to send a message when running from the command prompt. If this does not
+work, check the properties of the service account.
+
+WORKAROUND
+==========
+
+To work around this problem, you must recreate this service account and confirm
+that it has the proper permissions. Please see the following Knowledge Base
+article(s) for further information:
+
+   Q147701 XADM: Exchange Service Account Permissions
+
+
+MORE INFORMATION
+================
+
+The reason that outbound messages flow when the IMC/IMS is started from the
+command prompt is that the Virtual MS-DOS Machine (VDM) is using the account
+permissions of the user logged on (most frequently the Administrator) rather
+than the Service Account permissions that the service uses.
+
+Additional query words: IMC
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

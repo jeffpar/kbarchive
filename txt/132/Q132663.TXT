@@ -1,0 +1,61 @@
+DOCUMENT:Q132663  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Hangs When You Start It Again After Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 may stop responding (hang) when you start Windows 95 for a second
+time after you have completed Setup.
+
+CAUSE
+=====
+
+This problem occurs when you manually add a SCSI adapter to the system using the
+Add New Hardware Wizard if the resource settings for that adapter are not set to
+the correct values in Device Manager. When you run Setup again, Windows 95 skips
+the detection of the incorrect resources because it detects that a card is
+already installed with the actual resources it is using.
+
+This results in two entries for the same SCSI controller (that is, one with the
+correct resource settings, and the other with incorrect resource settings). When
+Windows 95 attempts to load the SCSI drivers for the card with the incorrect
+resource settings, the computer hangs.
+
+RESOLUTION
+==========
+
+To resolve this problem, start Windows 95 in safe mode and remove the incorrect
+SCSI adapter entry. You can safely remove both entries. Then, after you start
+Windows 95 in normal mode, the detection option from the Add New Hardware Wizard
+detects the SCSI adapter and sets it up using the correct resources.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,61 @@
+DOCUMENT:Q86769  08-DEC-1999  [win95x]
+TITLE   :HP Font Files Created When Printing to File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you print to file using the HPPCL4 driver included in Microsoft Windows
+3.1, a font summary file is created. This file includes a list of all device
+fonts, soft fonts, and cartridge fonts. The filename is the driver name with an
+extension consisting of a letter and two numbers. For example:
+
+ - HPPCL.P00
+
+ - HPDSKJET.P01
+
+MORE INFORMATION
+================
+
+Applications can request font information from UNIDRV.DLL for display purposes.
+Rather than have UNIDRV.DLL check the WIN.INI file each time for this
+information, it creates a list in a font summary file. This file is changed
+every time you change cartridges in the driver, add/delete soft fonts, and so
+on. The next time an application asks for this font information, UNIDRV.DLL
+responds with this previously generated list. The performance gain is directly
+proportionate to the number of soft fonts installed.
+
+
+Additional query words: 3.10 temporary hewlit packard p08 x01 p01 p02 hewlett hp
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

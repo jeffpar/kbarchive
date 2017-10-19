@@ -1,0 +1,115 @@
+DOCUMENT:Q111637  24-NOV-1999  [macmail]
+TITLE   :Mac Adm: Using Changes Only and Full User List Input Types
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1d
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.1d 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Mail Network Administrator version 3.1d of Mail for AppleTalk
+Networks to insert gateway recipients into a server, one or all of the following
+error messages may appear:
+
+   An error occurred while processing the following line:
+   <gateway recipient address>
+   Too few fields
+
+   An error occurred while processing the following line:
+   <gateway recipient address>
+   Gateway recipient does not exist
+
+Normally, if the wrong format was used, the following error message would
+appear:
+
+   An error occurred while processing the following line:
+   <gateway recipient address>
+   Wrong format chosen for input
+
+CAUSE
+=====
+
+You can choose an input type of Changes Only or Full User List when inserting
+gateway recipients from a text file. Changes Only requires an additional
+parameter be placed at the beginning of each user record indicating the action
+to be taken. Valid parameters include the following:
+
+   Parameter     Description
+   -----------------------------------------------------------------------
+
+   Add or A      Add the user into the gateway recipient list.
+
+   Change or C   Change address information based on the user
+                 friendly names.
+
+                 NOTE: It is not possible to change the user
+                 friendly names with this command.
+
+   Delete or D   Remove the user from the gateway recipient list.
+
+For example, if you want to add Joe Smith to the AppleLinkID gateway address
+using Changes Only, you would enter the following text:
+
+   " A,Joe Smith,AppleLinkID " (without the quotation marks)
+
+If you use Full User List, the import routine expects to see only information
+pertaining to the user. It assumes all users listed within the text data file
+are to be added.
+
+If the input type has been incorrectly specified, the gateway input will not be
+able to correctly read the input text file as the number of fields expected will
+not match the number of fields provided.
+
+If you use Full User List and an input text file which contains Add, Change, or
+Delete fields before the user field information, there will be one too many
+fields. Therefore the import procedure will fail.
+
+If you use Changes Only and an input text file which does not contain Add,
+Change, or Delete fields before the user field information, there will be one
+too few fields. Therefore the import procedure will fail.
+
+RESOLUTION
+==========
+
+To resolve this situation, ensure that you specify the correct input type when
+importing user names.
+
+Changes Only import text files always have one additional field at the beginning
+of each user name containing an action to be performed such as ADD, CHANGE, or
+DELETE (A, C, or D).
+
+Full User List import text files always have the exact number of fields listed in
+the Extract GW Format output file. There will be no action fields before user
+name data.
+
+
+Additional query words: 3.1d names addresses find GNU
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310d
+Version           : WINDOWS:3.1d
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

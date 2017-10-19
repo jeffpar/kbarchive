@@ -1,0 +1,72 @@
+DOCUMENT:Q134870  15-APR-2000  [powerpt]
+TITLE   :PPT7: Illegal Operation Error Saving File as PowerPoint 4.0
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you choose to save a Microsoft PowerPoint for Windows 95 version 7.0
+presentation as a PowerPoint version 4.0 presentation, you may receive the
+following error message:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor.
+
+If you check the error details, you see the following comment:
+
+   POWERPNT executed an invalid instruction in module KERNEL32.DLL (or UNKNOWN)
+   at ####:####
+
+CAUSE
+=====
+
+This problem may occur if you start the PowerPoint presentation by
+double-clicking the filename in Windows Explorer.
+
+RESOLUTION
+==========
+
+Open PowerPoint first, then open the file by clicking the Open command on the
+File menu. Save the presentation as a PowerPoint 4.0 file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft PowerPoint for Windows
+95 version 7.0. This problem was corrected in Microsoft PowerPoint 97 for
+Windows.
+
+Additional query words: 7.0 7.00 general protection fault GPF
+
+======================================================================
+Keywords          : kberrmsg kbinterop 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

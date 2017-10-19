@@ -1,0 +1,60 @@
+DOCUMENT:Q149792  30-NOV-1999  [homekids]
+TITLE   :Writer: Solution for GhostWriter Case of Blue Makva Mystery
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0,1.1,1.1a,1.1b; WINDOWS:1.0,1.1,1.1a,1.1b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a, 1.1b 
+ - Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a, 1.1b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides the steps to use to find the solution for the GhostWriter
+mystery "Case of the Blue Makva."
+
+RESOLUTION
+==========
+
+1. Start Creative Writer.
+
+2. Open the tenth case of the GhostWriter set, "The Final Makva."
+
+3. Decode the file. To decode the file, click the Transformer tool, then click
+   the Secret Agent tool. In the Password box, type "Detective McZee to the
+   Rescue" (without the quotation marks) and hold down the CTRL+SHIFT keys when
+   you click OK to decode.
+
+4. Find the final clue section, highlight it, and use the Letter Tools to remove
+   the shimmer and turn the color of the letters from white to black.
+
+5. You have solved the case!
+
+Additional query words: kids mskids artist maggie max writer ghost solving mystery homekids homekid
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110b kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbCreativeWriter110bMac
+Version           : MACINTOSH:1.0,1.1,1.1a,1.1b; WINDOWS:1.0,1.1,1.1a,1.1b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

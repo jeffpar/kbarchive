@@ -1,0 +1,338 @@
+DOCUMENT:Q106645  02-NOV-1999  [fortran]
+TITLE   :Frequently Asked Questions on PowerStation for MS-DOS
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+These are the answers to 20 of the most commonly asked questions about Microsoft
+FORTRAN PowerStation for MS-DOS.
+
+MORE INFORMATION
+================
+
+1. Q. When I attempt to build a project using the PowerStation Visual Workbench,
+   I get an error dialog box that says:
+
+   Internal error. Timed out waiting for "C:\F32\BIN\WINTEE.EXE" to start.
+   Please contact Microsoft Product Support Services
+
+   What can I do to correct this problem?
+
+   A. The problem is probably caused by a Windows configuration setting that
+   causes Windows-based applications to get 100 percent of the computer's
+   processing time whenever a Windows-based application is active. This causes
+   MS-DOS-based applications to fail to run whenever a Windows-based application
+   is running. To correct the problem, from the Main program group, start the
+   Control Panel application. Choose the "386 Enhanced" icon. Be sure that the
+   Exclusive In Foreground check box is not checked. Choose OK to return from
+   the dialog box, and close the Control Panel application. The problem should
+   now be corrected.
+
+2. Q. My PowerStation application writes data to a binary file. Why is the
+   amount of data in the file less that what I expect?
+
+   A. There is a problem with output to binary or unformatted files with FORTRAN
+   PowerStation. If your code writes arrays larger than 64K in size to a binary
+   or unformatted file and the array is specified in the output statement
+   without using an implied DO-loop (or only a simple, single-dimension, implied
+   DO-loop), then the amount of data that will be output to the file is the size
+   of the array modulus 64K.
+
+   To correct this problem, use an explicit implied DO-loop for the array in the
+   input or output statement. The array index expression in the implied DO-loop
+   must be more than a simple variable. For example, change "array sub i" to
+   "array sub i plus zero." The functionality is the same but the more
+   complicated expression causes the compiler to generate the correct code.
+
+3. Q. When I use the PowerStation's Visual Workbench to compile and build
+   programs, it takes a very long time to compile and link. What can I do to
+   improve this process?
+
+   A. The system requirements state that you must be running MS-DOS and need 4
+   megabytes (MB) of available memory with 6 MB or more preferred. If you have
+   only 4 MB of physical memory, then under Windows you probably have less than
+   4 MB of physical memory available and are intensively using your Windows swap
+   file. Make sure that your swap file is as large as it can be and that you are
+   using a permanent swap file. You can also decrease the amount of memory that
+   SMARTDRV or any other disc caching utility is consuming. The most effective
+   solution is to add more physical memory to your machine.
+
+4. Q. I used to do mixed-language programming with high-level languages (such as
+   C) and FORTRAN. Can I do this with FORTRAN PowerStation?
+
+   A. Yes. Object modules compiled with Microsoft Visual C++ 32-bit edition, can
+   be linked with FORTRAN PowerStation. For more details, please see the
+   information in the F32\SAMPLES\MIXED_C directory. 16- bit C/C++ object
+   modules (created by earlier versions of Microsoft C or Visual C++ 16-bit
+   edition) can not be linked with 32-bit FORTRAN; these must be recompiled with
+   a 32-bit compiler.
+
+   For complete support of mixed 32-bit C and FORTRAN programming, Microsoft
+   offers development tools for Windows NT: Visual C++ 32-bit edition and
+   FORTRAN PowerStation 32 for Windows NT. Microsoft Windows NT is a true 32-bit
+   operating system (in contrast to a 32-bit DOS extender on top of 16-bit
+   MS-DOS) allowing full integration between the two languages. Mixing of C and
+   FORTRAN is also possible in a pure 16-bit world, such as MS-DOS or Windows,
+   with Microsoft FORTRAN 5.1 and Microsoft Visual C++ 16-bit edition.
+
+5. Q. Can I do Windows executable or Windows dynamic-link library (DLL)
+   programming using FORTRAN PowerStation?
+
+   A. FORTRAN PowerStation for Windows creates only 32-bit MS-DOS- extended
+   MS-DOS applications. FORTRAN PowerStation32 for Windows NT will create Win32
+   executables and DLLs.
+
+6. Q. I have some FORTRAN code that reads a file that used to work with
+   Microsoft FORTRAN version 5.1. The code now gets an error when it is almost
+   finished reading the file. What is the problem?
+
+   A. Earlier versions of Microsoft FORTRAN had some limited support for
+   end-of-file handling using the "CTRL+Z" character. This character, which is
+   number 26 in the ASCII table, is placed in files by some editors and some
+   other file creation utilities. FORTRAN PowerStation no longer treats this
+   character as a special character and gives an error message when attempting
+   to read it into a variable. Make sure that files being read by FORTRAN
+   PowerStation programs do not contain this character, which resembles a small
+   right-pointing arrow when displayed by editors capable of displaying all
+   characters in a file. This was an unintended loss of functionality with the
+   product and is under investigation.
+
+7. Q. When I run my program on a machine with lots of memory I get no error. But
+   when I run it on a machine with less memory I get the run-time error:
+
+   DOSXMSF : fatal error DX1020: unhandled exception: Page fault
+
+   A. This is an MS-DOS-extender error that indicates that the program attempted
+   to access memory that was not owned or allocated by the program. A common
+   cause of this error is an array subscript going out of the array's declared
+   range. An attempt to access an array beyond the range of the array does not
+   cause the DX1020 error to occur immediately. On machines with less physical
+   memory (RAM), this error occurs more often because any attempt to access
+   virtual memory on the disk will cause an initial nonexception page fault;
+   however, if the request for memory is invalid, the DX1020 error will occur.
+   Check the code carefully to be sure that all array access uses an array index
+   within the proper range. Also, use the /4Yb compiler option to install some
+   additional debug error checking. This can be set in the Visual Workbench by
+   choosing Project from the Options menu and then choosing the Compiler button.
+   Select the category Language Extensions and the option Extended Error
+   Handling.
+
+8. Q. When I use the PowerStation debugger under the Visual Workbench, it
+   sometimes proceeds very slowly and occasionally acts erratically. What can I
+   do to improve this situation?
+
+   A. The system requirements for FORTRAN PowerStation states that the product
+   requires 4 MB of available memory. This is an absolutely minimum requirement.
+   Under Windows, the PowerStation tools may not perform optimally without an
+   adequate amount of Windows swap file. Make sure that you have the largest
+   Windows swap file that it is possible to have. The most effective way to
+   improve performance of the PowerStation tools is to add physical memory (RAM)
+   to your machine. For optimal performance while debugging make sure that you
+   are not running any other applications. In particular, make sure that you are
+   not running any other MS-DOS applications or MS-DOS prompts.
+
+9. Q. My program runs for some time and then I see intensive disk access. It
+   takes a long time to terminate or I see the error, "F6700 Heap Space Limit
+   Exceeded."
+
+   A. There is a known memory leak with the PowerStation product, which is caused
+   by having a string concatenation inside of an IF statement. Assign the string
+   concatenation to a intermediate variable and use that variable in the IF
+   statement instead of the concatenation itself.
+
+10. Q. I have some code that uses COMPLEX variables. Why aren't I getting the
+   results I expect or why don't I get the results that I got under FORTRAN
+   version 5.1?
+
+   A. There are two known problems with COMPLEX variables that could result in
+   incorrect results. The first problem is that logical expressions that
+   compare COMPLEX variables for inequality can fail under some circumstances.
+   These are expressions such as IF (Q.NE.Z) where both Q and Z are COMPLEX
+   variables. If either the real or the imaginary elements are the same in both
+   variables then the .NE. will fail to detect that the other elements are
+   different and will return .FALSE. To avoid this problem, use the logical
+   equivalent to .NE. of .NOT.(Q.EQ.Z).
+
+   The second problem occurs if a REAL function, including the FORTRAN intrinsic
+   functions, is assigned to a COMPLEX variable. To resolve this problem,
+   assign the REAL function to a REAL intermediate variable and then assign
+   that variable to the COMPLEX variable.
+
+11. Q. I get linker errors that start with LNK. Where can I find more
+   information about these errors?
+
+   A. The LINK32 errors are available in the ERRORS.HLP Windows Help file and in
+   the ERRORS.TXT ASCII text file. Access to ERRORS.HLP is available only from
+   Windows. You can bring up this file from the Visual Workbench by selecting
+   the Help menu and choosing Search For Help On. Type in "errors" in the Help
+   Keyword text field and then choose OK. You can also access the file by
+   opening the File Manager and double-clicking the ERRORS.HLP file in the
+   \F32\HELP directory.
+
+   The ERRORS.TXT file is in the F32\README directory. It can be read or printed
+   from MS-DOS or Windows like any other text file.
+
+12. Q. I am getting some errors that begin with DX. Where can I get more
+   information on these errors?
+
+   A. The DX errors are Phar Lap DOS-extender errors and are available in the
+   ERRORS.HLP Windows Help file and in the ERRORS.TXT ASCII text file. Access
+   to ERRORS.HLP is available only from Windows. You can bring up this file
+   from the Visual Workbench by selecting the Help menu and choosing Search For
+   Help On. Type in "errors" in the Help Keyword text field and then choose OK.
+   You can also access the file by opening the File Manager and double-clicking
+   the ERRORS.HLP file in the \F32\HELP directory.
+
+   The ERRORS.TXT file is in the F32\README directory. It can be read or printed
+   from MS-DOS or Windows like any other text file.
+
+13. Q. In FORTRAN version 5.1 there is an option, /Fs, to create a source
+   listing file. Can I do this with PowerStation?
+
+   A. No, the PowerStation product does not support the source listing option.
+   Most of the functionality of source listings is available though different
+   options in the Visual Workbench. Source browser information, for example,
+   provides a visual means of locating variable definitions and references.
+
+14. Q. I created a project with the PowerStation Visual Workbench and several of
+   my source files have include statements. When I modify one of these include
+   files and then build the project, the source file does not recompile. Why
+   isn't there a build dependency for the include files?
+
+   A. You are probably using the $INCLUDE metacommand and not the INCLUDE
+   statement in your source files. The Visual Workbench build engine does not
+   create dependencies for files on $INCLUDE metacommands. Change all the
+   metacommands to FORTRAN statements and then force the project to rescan
+   dependencies by selecting Project and then choosing Scan All Dependencies.
+
+15. Q. I am getting the following error:
+
+   LINK32 : error LNK2133: Size mismatch for symbol and the symbol listed in the
+   error is the name of one of my COMMON blocks.
+
+   What is causing this error?
+
+   A. You probably have a COMMON block declared with arrays of different sizes
+   in different source files. In one source file you are initializing the
+   COMMON block with a DATA statement. You must have the object file from the
+   source file that initializes the data in the COMMON block in the link
+   command before any other object file from a source file that references the
+   COMMON block. Moving the object files in the link order will prevent the
+   error from occurring. If you are using a Visual Workbench project, change
+   the filename of the source file that initializes the COMMON block to a name
+   that is alphabetically prior to all other source filenames. This will force
+   the build to include the object file first on the link command line.
+
+16. Q. Sometimes when I start up the PowerStation Visual Workbench I can't see
+   some of the windows I had set up when I closed it; they are listed in the
+   Windows menu, but I can't see or access them. What happened and how can I
+   see my windows again?
+
+   A. You probably had the inaccessible child windows minimized within the
+   Visual Workbench frame and then closed the Visual Workbench while it was
+   itself minimized. This can easily happen if you exit Windows when the Visual
+   Workbench is still active and minimized. To avoid this problem, never exit
+   the Visual Workbench application when it is in a minimized state when the
+   Visual Workbench still active. You can make any inaccessible child windows
+   visible by selecting the Window menu and choosing Cascade.
+
+17. Q. When I try to use the PowerStation Visual Workbench browser I get the
+   error:
+
+   Cannot open the browser database file. Share is not installed or is not
+   active for this drive.
+
+   How can I avoid this error?
+
+   A. The Visual Workbench browse utility requires that SHARE.EXE, an MS-DOS
+   file access arbitration utility, is installed prior to starting Windows. The
+   easiest way to do this is put the statement "C:\DOS\SHARE" in your
+   AUTOEXEC.BAT file. Make sure that you put the SHARE command before any line
+   in the AUTOEXEC.BAT that says "win" or "dosshell."
+
+18. Q. How does virtual memory work under the PowerStation product? Is there any
+   way I can change this functionality?
+
+   A. PowerStation virtual memory management is considerably different depending
+   on whether you are running your application under MS-DOS or under MS-DOS
+   under Windows.
+
+   If you run your PowerStation application under MS-DOS, virtual memory is
+   managed by the Phar Lap DOS-extender. When your application loads into
+   memory, all declared data must load into memory. If you don't have
+   sufficient available extended memory, the DOS-extender will use virtual
+   memory on the disk where DOSXMSF.EXE is located. This process is automatic
+   and requires no interaction on the part of the program. If you want to
+   relocate the location used for virtual memory, you can set the DOSX
+   environment variable with the command:
+
+   SET DOSX=-SWAPDIR X:\MYSWAP
+
+   Note that X: is the drive/partition you want to use and MYSWAP is the
+   directory you want to place the virtual memory file in. If you want to turn
+   off use of virtual memory, you can set the DOSX environment variable as
+   follows:
+
+   SET DOSX=-NOVM
+
+   If you are running your program under an MS-DOS session under Windows, then
+   virtual memory is managed by Windows. You can control the size and type of
+   your Windows swap file by starting the Control Panel application and
+   selecting the 386 Enhanced icon. Please consult your Windows documentation
+   for further details.
+
+19. Q. I am compiling and linking in two separate steps from the command-line.
+   When I go to run the executable file I get the error:
+
+   This program cannot be run in DOS mode.
+
+   What did I do wrong?
+
+   A. PowerStation applications use an MS-DOS-extender so there is an additional
+   step required to allow the executable to run under MS-DOS. You need to run
+   the BINDMSF.EXE utility on your executable to install a small piece of code
+   called a "stub-loader." For example, if you had an executable file called
+   MYEXE.EXE, you would use the command line:
+
+   BINDMSF MYEXE.EXE
+
+20. Q. Can I run the PowerStation product under OS/2?
+
+   A. No, FORTRAN PowerStation does not run under or target OS/2 or the
+   MS-DOS-compatibility session under OS/2. Under the MS-DOS- compatibility
+   session, the MS-DOS-extender has a problem that prevents it from working
+   correctly.
+
+Additional query words: kbinf 1.00 FAQ swapfile DOS
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

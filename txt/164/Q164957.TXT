@@ -1,0 +1,74 @@
+DOCUMENT:Q164957  21-OCT-2000  [odbc]
+TITLE   :FIX: Failure to Load Odbccr32.dll on Alpha Machine
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for SQL Server, version 2.5, on platform(s):
+    - the hardware: DEC Alpha 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open and close a database connection many times, the following error
+message may appear:
+
+   Initialization of the dynamic link library
+   d:\winnt32\system32\odbccr32.dll failed. The process is terminating normally
+
+In one case, the error occurred on the 54th time the connection was opened. This
+happens when you use the version 2.50.3321 ODBC components that came with the
+Visual C++ 4.x Alpha products.
+
+You can duplicate the behavior by calling CDatabase::Open() followed by a
+corresponding CDatabase::Close() in a loop.
+
+CAUSE
+=====
+
+The problem appears to be with the ODBC components.
+
+RESOLUTION
+==========
+
+To work around the problem, use the ODBC 3.0 components for Alpha which are
+available on the Internet at the following Web site:
+
+   http://www.microsoft.com/odbc/
+
+STATUS
+======
+
+This problem was corrected in Microsoft ODBC Driver for SQL Server, version 3.0.
+
+Additional query words: kbDatabase kbMFC kbODBC kbSQLServ kbDSupport kbdsd
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch
+Version           : WINDOWS:2.5
+Hardware          : ALPHA
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

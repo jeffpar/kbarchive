@@ -1,0 +1,79 @@
+DOCUMENT:Q64032  31-OCT-1999  [utilities]
+TITLE   :DOCERR: NMAKE Predefined Macro $(@D) Has Same Value As $@
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.11; OS/2:1.11
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NMAKE Utility for MS-DOS, version 1.11 
+ - Microsoft NMAKE Utility for OS/2, version 1.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With NMAKE version 1.11 the predefined macros $@ and $(@D) both expand to the
+same value. Page 114 of the "Microsoft C Advanced Programming Techniques" manual
+that ships with C versions 6.0 and 6.0a shows an example value of the predefined
+NMAKE macro $@ as:
+
+   C:\SOURCE\PROG\SORT.OBJ
+
+The macro $(@D) is listed as having a sample value of:
+
+   C:\SOURCE\PROG
+
+With NMAKE version 1.11, both macros give the value of the full path, filename,
+and extension, or:
+
+   C:\SOURCE\PROG\SORT.OBJ
+
+RESOLUTION
+==========
+
+This problem has been fixed in NMAKE versions 1.12 and later.
+
+MORE INFORMATION
+================
+
+Running NMAKE version 1.11 with the following makefile gives the result:
+
+   echo c:\config.sys c:\config.sys
+
+The result should be:
+
+   echo c:\config c:\config
+
+Sample Makefile
+---------------
+
+c:\config.sys :
+
+   echo $(@D)
+
+Additional query words: 1.11
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE111DOS kbNMAKE111OS2
+Version           : MS-DOS:1.11; OS/2:1.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

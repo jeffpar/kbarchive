@@ -1,0 +1,63 @@
+DOCUMENT:Q140262  18-FEB-2002  [exchange]
+TITLE   :XCLN: Err Msg:Error Prevented Processing of Received Mail
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Internet Mail from a Microsoft Exchange, version 4.0, Windows 95
+client, the following error message may be displayed:
+
+   An error prevented processing the message to completion. The original message
+   is contained in the attached text file MESSAGE.TXT.
+
+CAUSE
+=====
+
+This error message indicates that Internet Mail received a message or attachment
+that was corrupt, or in a format Internet Mail could not understand and decode.
+When this happens, Internet Mail saves the message as a separate file, called
+MESSAGE.TXT.
+
+RESOLUTION
+==========
+
+If you receive a message in a format that Internet Mail cannot decode, you
+should contact the sender for the format used, and obtain a decoder for that
+format. You can then use the decoder on the MESSAGE.TXT file, allowing you to
+successfully read the message.
+
+
+Additional query words: xchange inet mail
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

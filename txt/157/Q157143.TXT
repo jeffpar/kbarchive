@@ -1,0 +1,121 @@
+DOCUMENT:Q157143  13-JUN-2001  [homemm]
+TITLE   :Encarta 97 Err Msg: Insufficient Memory/Not Enough Free Memory
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:kbhowtokbfaq
+
+======================================================================
+1997
+WINDOWS
+kbenv kberrmsg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+ - the operating system: Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error message when you start Encarta 97 in Windows
+3.1x.
+
+   Insufficient Memory
+
+   There is not enough free memory to run Encarta 97 Encyclopedia.
+
+NOTE: This message occurs even though your computer meets the minimum system
+requirements for running the program:
+
+To correct this situation:
+
+1. Close any other open applications and attempt to run Encarta Encyclopedia
+   again. If this dialog reappears, proceed to step 2.
+
+2. Increase the amount of free memory by modifying the Windows virtual memory
+   setting. For more information, click Help.
+
+CAUSE
+=====
+
+This message can be caused by one of the following:
+
+ - You may not have a Windows swapfile on your computer.
+ - The current swapfile settings are too small.
+ - Your swapfile is not permanent.
+
+RESOLUTION
+==========
+
+Create a permanent swapfile of sufficient size. To create the swapfile, do the
+following in Windows:
+
+1. From Program Manager, open the Windows Control Panel, usually located in the
+   Main program group.
+
+2. Double-click the Enhanced icon.
+
+3. In the Enhanced dialog box, click Virtual Memory. The Virtual Memory dialog
+   box appears.
+
+4. If Type under Swapfile Settings is None or Temporary, click Change.
+
+   A New Swapfile Settings section will appear at the bottom of the dialog box.
+
+   NOTE: If Type is Permanent, your computer already has a Permanent Swapfile.
+   Click Change and skip to step 6.
+
+5. In the New Swapfile Settings section, select Permanent from the Type
+   drop-down menu.
+
+6. In the New Size field, type the size of the new Swapfile. The Recommended
+   Size (shown above the New Size field) is usually the best setting.
+
+7. Click OK. Windows asks you if you are sure you want to make changes to the
+   virtual memory settings. Click Yes. Windows confirms the creation of the
+   Swapfile. Click OK. Windows prompts you to restart, click Restart Windows.
+
+MORE INFORMATION
+================
+
+If you continue to receive an Insufficient Memory error message after you try
+the steps in the "RESOLUTION" section, try some of the following troubleshooting
+steps:
+
+ - Free up more hard disk space.
+ - Defragment the hard drive and set up a larger Swapfile.
+ - Make sure you do not have any unnecessary programs running or loading on your
+   computer.
+
+For additional information about accomplishing these tasks in Windows, see your
+Windows printed documentation or online Help.
+
+KBCategory kbenv kberrmsg kbprb
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm kbimu mm
+
+======================================================================
+Keywords          : kbhowto kbfaq
+Technology        : kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbZNotKeyword6 kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbOSWin310 kbOSWin311
+Version           : WINDOWS:3.1,3.11
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,93 @@
+DOCUMENT:Q168029  17-JUL-2001  [visualc]
+TITLE   :FIX: Global Optimizations (/Og) May Cause the Compiler to Hang
+PRODUCT :Microsoft C Compiler
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbcode kbtool kbCompiler kbVC500bug kbVS97sp1fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler hangs when you are building a function that contains many
+expressions involving floating-point operations and the /Og optimization is
+enabled.
+
+RESOLUTION
+==========
+
+Disable global optimizations for the file that is causing the compiler to hang.
+You can do this with either #pragma optimize("g",off) or by using the /Og-
+switch.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The following sample reproduces the problem. Other examples of this problem are
+too large to demonstrate in a small sample.
+
+Sample Code
+-----------
+
+       // Compile options: /c /Og
+       float f(int i)
+       {
+         switch(i)
+         {
+         case  1: return ( 1.1f * i );
+         case  2: return ( 2.2f * i );
+         case  3: return ( 3.3f * i );
+         case  4: return ( 4.4f * i );
+         case  5: return ( 5.5f * i );
+         case  6: return ( 6.6f * i );
+         case  7: return ( 7.7f * i );
+         case  8: return ( 8.8f * i );
+         }
+
+       return(2.0f*i);
+       }
+
+Additional query words: /O2 Release Maximum Speed
+
+======================================================================
+Keywords          : kbcode kbtool kbCompiler kbVC500bug kbVS97sp1fix 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

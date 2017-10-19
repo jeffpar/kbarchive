@@ -1,0 +1,64 @@
+DOCUMENT:Q105207  06-NOV-1999  [win16sdk]
+TITLE   :PRB: KRNL386: Unable to Enter Protected Mode
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 3.1 fails to boot and returns to MS-DOS with a "KRNL386: Unable to enter
+Protected Mode" error message. This usually occurs after switching to the debug
+version of Windows.
+
+CAUSE
+=====
+
+Windows 3.1 was started with old files left over from an upgraded installation
+of Windows 3.0 with the Windows 3.0 Software Development Kit (SDK).
+
+RESOLUTION
+==========
+
+Replace the old files with the correct versions. The files of importance are
+KRNL386.*, KRNL286.*, GDI.*, and USER.*. The old files are from 1990 and the new
+files are from 1992. Sort by date, and replace these old files with the correct
+versions.
+
+MORE INFORMATION
+================
+
+It's generally a good idea to start with a fresh installation of Windows in a
+clean directory when this problem occurs. This ensures that other obsolete files
+are cleared from the upgraded 3.0 installation.
+
+Additional query words: 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

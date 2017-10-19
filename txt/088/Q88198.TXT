@@ -1,0 +1,236 @@
+DOCUMENT:Q88198  18-JUL-2001  [win16sdk]
+TITLE   :DOC: Common Dialog Boxes DLL Documentation Errors
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kbCmnDlg kbSDKPlatform kbFAQ kbwin16sdkfaq kb16bitonly
+
+======================================================================
+3.10
+WINDOWS
+kbtoolkbtoolg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The common dialog boxes library (COMMDLG.DLL) provides a standard set of dialog
+boxes for applications developed for the Microsoft Windows graphical
+environment. The text below lists errors in the online and printed documentation
+for the common dialog boxes DLL in the Microsoft Windows Software Development
+Kit (SDK).
+
+MORE INFORMATION
+================
+
+"Programmer's Reference, Volume 1: Overview"
+--------------------------------------------
+
+On page 132, in the "Common Dialog Box Overview" topic, change the "NAME cd"
+statement to list the name in uppercase letters (NAME CD).
+
+On page 157, in the "Customizing Common Dialog Boxes" topic, change the "NAME cd"
+statement to list the name in uppercase letters (NAME CD).
+
+On page 158, a table lists the template filenames and their corresponding dialog
+boxes. Add a note to state that these dialog boxes are defined in the DLGS.H
+file. The only exception is the ChooseColor() dialog box, which is defined in
+the COLORDLG.H file.
+
+"Programmer's Reference, Volume 2: Functions"
+---------------------------------------------
+
+On page 49, the list of errors that the ChooseColor() function can return is
+incorrect. Remove the CDERR_INITIALIZATION, CDERR_MEMALLOCFAILURE, and
+CDERR_MEMLOCKFAILURE errors from the list and add the CDERR_DIALOGFAILURE error
+to the list.
+
+On page 51, add the following comment to the documentation for the ChooseFont()
+function:
+
+   When the user selects the Show Only TrueType Fonts In
+   Applications option in the Control Panel Fonts application, the
+   Font dialog box shows only TrueType fonts.
+
+On page 52, the list of errors that the ChooseFont() function can return is
+incorrect. Remove the CDERR_INITIALIZATION and CDERR_MEMLOCKFAILURE errors from
+the list and add the CDERR_DIALOGFAILURE error to the list.
+
+On page 63, add the statement #include <cderr.h> to the documentation for
+the CommDlgExtendedError() function. This topic does not mention that the
+CDERR.H header file defines the error codes for this function.
+
+On page 306, in the documentation for the FindText() function, add the following
+comment to the discussion of the lpfr parameter:
+
+   The <B>FINDREPLACE</B> structure must be remain in memory after calling
+   the <B>FindText</B> function because the <B>Find Text</B> dialog box is
+   modeless.
+
+On page 307, the list of errors the FindText() function can return is incorrect.
+Remove the CDERR_INITIALIZATION, CDERR_MEMALLOCFAILURE, and CDERR_MEMLOCKFAILURE
+errors from the error list and add the CDERR_REGISTERMSGFAIL error to the list.
+
+On page 308, the code example that documents the FindText() function declares a
+local copy of the FINDREPLACE data structure without the "static" keyword. An
+application must store this structure in memory that persists after calling
+FindText(). This memory can be a global variable, a static local variable, or a
+dynamically allocated memory block.
+
+On page 413, the list of errors the GetOpenFileName() function can return is
+incorrect. Remove the CDERR_INITIALIZATION and CDERR_MEMLOCKFAILURE errors from
+the error list and add the CDERR_DIALOGFAILURE error to the list.
+
+On page 435, the list of errors the GetSaveFileName() function can return is
+incorrect. Remove the CDERR_INITIALIZATION and CDERR_MEMLOCKFAILURE errors from
+the list and add the CDERR_DIALOGFAILURE error to the list.
+
+On page 752, the list of errors the PrintDlg() function can return is incorrect.
+Remove the CDERR_INITIALIZATION error from the list and add the
+CDERR_DIALOGFAILURE error to the list.
+
+The Print dialog box appears in the online help for the PrintDlg() function. If a
+check box appears in the lower-right corner without any accompanying text, that
+check box is the Collate Copies box.
+
+On page 788, in the documentation for the ReplaceText() function, add the
+following comment to the discussion of the lpfr parameter:
+
+   The <B>FINDREPLACE</B> structure must remain in memory after calling
+   the ReplaceText function since the <B>Replace Text</B> dialog box is
+   modeless.
+
+On page 789, the list of errors the ReplaceText() function can return is
+incorrect. Remove the CDERR_INITIALIZATION, CDERR_MEMALLOCFAILURE, and
+CDERR_MEMLOCKFAILURE errors from the list and add CDERR_REGISTERMSGFAIL to the
+list.
+
+On page 789, the code example that documents the ReplaceText() function declares
+a local copy of the FINDREPLACE data structure with the "static" keyword.
+However, the online documentation omits this keyword. An application must store
+this structure in memory that persists after calling the FindText function. This
+memory can be a global variable, a static local variable, or a dynamically
+allocated memory block.
+
+"Programmer's Reference, Volume 3: Messages, Structures, and Macros"
+--------------------------------------------------------------------
+
+On page 246, add the following comment to the documentation for the CHOOSEFONT
+data structure:
+
+   When the user selects the Show Only TrueType Fonts In
+   Applications option in the Control Panel Fonts application, the
+   Font dialog box shows only TrueType fonts.
+
+On page 247, add a comment to the documentation for the CF_APPLY flag to note
+that a hook function is required to process a notification from this button.
+When the user presses the button, the hook function receives a WM_COMMAND
+message with wParam == psh3 (a constant defined in the DLGS.H header file).
+
+On page 248, the documentation for the CF_NOFACESEL flag refers to "multiple font
+selections." This flag indicates that the selected text is heterogeneous; some
+text in the selection is formatted with one font, some with another font.
+
+On page 248, the documentation for the CF_NOSIZESEL flag refers to "multiple size
+selections." This flag indicates that the selected text is heterogeneous; some
+text in the selection is formatted in one size, some in another size.
+
+On page 248, the documentation for the CF_NOSTYLESEL flag refers to "multiple
+style selections." This flag indicates that the selected text is heterogeneous;
+some text in the selection is formatted in one style, some in another style.
+
+On page 249, add a comment to the documentation for the CF_SCALABLEONLY flag to
+indicate that the application must specify a value in the hDC member of the
+CHOOSEFONT structure for the Font dialog box to display printer fonts.
+
+On page 251, change the documentation for the nFontType member to indicate that
+the high-order byte of this member contains one or more of the values in the
+accompanying table. The low-order byte is reserved for use by Windows.
+
+On page 286, the overview paragraph in the documentation for the FINDREPLACE data
+structure states: "After the user chooses the OK button to close the dialog box,
+the system returns information about the user's selections in this structure."
+This statement is incorrect because neither the Find nor the Replace dialog box
+has an OK button. Substitute Find Next for OK.
+
+On page 287, the documentation for the FR_DOWN flag states: "After the user
+chooses the OK button to close the dialog box, this flag specifies the user's
+selection." This statement is incorrect because the Find dialog box does not
+have an OK button. Substitute Find Next button for OK, and add a comment to
+indicate that FR_DOWN flag applies only to the Find dialog box.
+
+On page 288, in the documentation for the FR_HIDEUPDOWN and the FR_NOUPDOWN
+flags, add a comment to indicate that these flags apply only to the Find dialog
+box.
+
+On page 289, in the documentation for the lpstrReplaceWith member, add a comment
+to indicate that this member applies only to the Replace dialog box and that the
+application-supplied buffer should be at least 80 characters long.
+
+On page 289, in the documentation for the wReplaceWithLen member, add a comment
+to indicate that this member applies only to the Replace dialog box.
+
+On page 375, in the documentation for the lpstrCustomFilter member of the
+OPENFILENAME data structure, add a comment to indicate that an application can
+use the lpstrCustomFilter member to specify one additional filter. The
+description of this member incorrectly states that "The system copies the
+strings to the buffer when the user chooses the OK button to close the dialog
+box." This statement should say that the system copies the last-selected search
+filter from the List Files As Type combo box into the buffer to which this
+member points. The online Help file contains additional text (not present in the
+printed manual) that correctly describes this process.
+
+On page 376, in the documentation for the lpstrFile member, add a comment to note
+that this member takes precedence over the lpstrCustomFilter member. In other
+words, if lpstrFile is not blank, the File Name edit control shows its
+contents.
+
+On page 376, the documentation for the lpstrInitialDir member contains the
+following statement: "If the lpstrFile member contains a string that specifies a
+valid path, the common dialog box procedure will use the path specified by this
+string instead of the path specified by the string to which lpstrInitialDir
+points." To eliminate any confusion, replace the phrase "this string" with "the
+lpstrFile string."
+
+On page 378, in the documentation for the OFN_NOCHANGEDIR flag, change its
+documentation to state that this flag forces the dialog box to change to the
+current directory. The common Open dialog box procedure stores the current
+directory when it processes the WM_INITDIALOG message and restores the current
+directory when the dialog box exits.
+
+On page 394, in the documentation for the hDevMode and hDevNames members of the
+PRINTDLG structure, add a comment to indicate that the application that calls
+the PrintDlg function must call GlobalFree() to free the memory associated with
+these handles.
+
+On page 395, add a comment to the documentation for the hDC member to indicate
+that the application must call the DeleteDC function in order to free the device
+context specified in this member.
+
+Additional query words: 3.10 docerr
+
+======================================================================
+Keywords          : kbdocfix kbCmnDlg kbSDKPlatform kbFAQ kbwin16sdkfaq kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

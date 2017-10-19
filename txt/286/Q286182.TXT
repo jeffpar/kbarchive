@@ -1,0 +1,519 @@
+DOCUMENT:Q286182  08-AUG-2001  [winnt]
+TITLE   :HOWTO: Use Visual Basic to Convert a Raw SID into a String SID
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbDSupport kb32bitOnly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a method to convert a raw security identifier (SID) into a
+string security identifier (SID) by using Microsoft Visual Basic on Windows NT
+4.0 or Windows 2000.
+
+MORE INFORMATION
+================
+
+SID Components
+--------------
+
+An SID value includes components that provide information about the SID structure
+and components that uniquely identify a trustee. An SID consists of the
+following components:
+
+ - The revision level of the SID structure.
+
+ - A 48-bit identifier authority value that identifies the authority, such as a
+   Windows NT/Windows 2000 domain, that issued the SID.
+
+ - A variable number of subauthority or relative identifier (RID) values that
+   uniquely identify the trustee relative to the authority that issued the SID.
+
+The combination of the identifier authority value and the subauthority values
+ensures that no two SIDs will be the same, even if two different SID-issuing
+authorities issue the same combination of RID values. Each SID-issuing authority
+issues a given RID only once.
+
+SIDs are stored in binary format in an SID structure. To display an SID, you can
+call the ConvertSidToStringSid function to convert a binary SID to string
+format. To convert an SID string back to a valid, functional SID, call the
+ConvertStringSidToSid function.
+
+These functions use the following standardized string notation for SIDs, which
+makes it simpler to visualize their components:
+
+   S-R-I-S-S...
+
+In this notation, the literal character "S" identifies the series of digits as an
+SID, "R" is the revision level, "I" is the identifier-authority value, and
+"S..." is one or more subauthority values.
+
+The following example uses this notation to display the well-known
+domain-relative SID of the local Administrators group:
+
+   S-1?5-32-544
+
+In this example, the SID has the following components. The constants in
+parentheses are well-known identifier authority and RID values defined in
+WINNT.H.
+
+ - A revision level of "1".
+
+ - An identifier-authority value of "5" (SECURITY_NT_AUTHORITY).
+
+ - A first subauthority value of "32" (SECURITY_BUILTIN_DOMAIN_RID).
+
+ - A second subauthority value of "544" (DOMAIN_ALIAS_RID_ADMINS).
+
+Notice that the subauthority values are long integers. This makes converting the
+raw SID into its string form very straightforward.
+
+General Steps in the Conversion Process
+---------------------------------------
+
+1. Bind to a user object either by creating it or by using its ADsPath.
+
+2. Retrieve the ObjectSID property.
+
+3. Use the Convert_ObjectSID_To_SDDL function provided in the Visual Basic code
+   section of this article.
+
+   The code is very well commented. Each step in the process is explained
+   carefully. If the general flow is still unclear, consult MSDN
+   (http://msdn.microsoft.com/default.asp) for additional details.
+
+How to Use the Visual Basic Code Provided
+-----------------------------------------
+
+1. Create a new Visual Basic project.
+
+2. Create a new Visual Basic code module inside the project.
+
+3. Copy and paste the following code into a new Visual Basic module.
+
+Visual Basic Code to Convert Raw SID into String SID
+----------------------------------------------------
+
+   '***********************Constant Declaration*********************
+   ' Define the sub SID Authority byte arrays.  These arrays are here for completeness along with
+   ' their VC definitions.
+   '
+   '#define SECURITY_NULL_SID_AUTHORITY       {0,0,0,0,0,0}
+   '#define SECURITY_WORLD_SID_AUTHORITY      {0,0,0,0,0,1}
+   '#define SECURITY_LOCAL_SID_AUTHORITY      {0,0,0,0,0,2}
+   '#define SECURITY_CREATOR_SID_AUTHORITY    {0,0,0,0,0,3}
+   '#define SECURITY_NON_UNIQUE_AUTHORITY     {0,0,0,0,0,4}
+   '
+   ' C Declaration for the SID memory, included for completeness...
+   '
+   'typedef struct _SID {
+   '  BYTE  Revision;
+   '  BYTE  SubAuthorityCount;
+   '   SID_IDENTIFIER_AUTHORITY IdentifierAuthority;
+   '  DWORD SubAuthority[ANYSIZE_ARRAY];
+   '} SID;
+   'typedef PVOID PSID;
+   '***************End Constant Declaration******************************
+
+   '**********************************************************************************
+   '
+   ' Declare the APIs needed to manipulate the RAW SID
+   '
+   Public Declare Function InitializeSid Lib "advapi32.dll" (ByVal Sid As Long, _
+                                                             pIndentifierAuthority As Any, _
+                                                             ByVal nSubAuthorityCount As Byte) As Long
+                                                             
+   Public Declare Function GetSidSubAuthority Lib "advapi32.dll" (pSid As Any, _
+                                                                  ByVal nSubAuthority As Long) As Long
+                                                                  
+   Public Declare Function GetSidLengthRequired Lib "advapi32.dll" (ByVal nSubAuthorityCount As Byte) As Long
+
+   Public Declare Function LookupAccountSid Lib "advapi32.dll" Alias "LookupAccountSidA" _
+                                           (ByVal lpSystemName As String, _
+                                            Sid As Any, _
+                                            ByVal name As String, _
+                                            cbName As Long, _
+                                            ByVal ReferencedDomainName As String, _
+                                            cbReferencedDomainName As Long, _
+                                            peUse As Integer) As Long
+                                            
+   Public Declare Function GetSidSubAuthorityCount Lib "advapi32.dll" (pSid As Any) As Long
+
+   Public Declare Function GetSidIdentifierAuthority Lib "advapi32.dll" (pSid As Any) As Long
+   '
+   ' Declare the memory managment functions.
+   ' Notice there are two definitions for RtlMoveMemory, one takes a value as  Any, the other takes a value ByVal as long
+   ' this is necessary so memory can be copied as follows:
+   '  From a variable containing a 32 bit value that represents a memory location
+   '  From a variable that represents a VB alocated memory location
+   '  (ie: Dim bByte(6) as Byte type of declaration).
+   '
+   ' LocalAlloc and LocalFree are used to allocate and free memory from the heap,
+   ' respectively.
+   '
+   Public Declare Sub CopyByValMemory Lib "kernel32" Alias "RtlMoveMemory" (Destination As Any, _
+                                                                            ByVal Source As Long, _
+                                                                            ByVal Length As Long)
+                                                                            
+   Public Declare Sub CopyByRefMemory Lib "kernel32" Alias "RtlMoveMemory" (ByVal Destination As Long, _
+                                                                            Source As Any, _
+                                                                            ByVal Length As Long)
+                                                                            
+   Public Declare Function LocalAlloc Lib "kernel32" (ByVal wFlags As Long, _
+                                                      ByVal wBytes As Long) As Long
+                                                      
+   Public Declare Function LocalFree Lib "kernel32" (ByVal hMem As Long) As Long
+
+   '************API Function Declarations*************************************
+   '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   '
+   ' Declare the necessary Win32 APIs to obtain the SID for the NT user
+   ' LookupAccountName -> Does the real work once it is remoted to the appropriated DC
+   ' NetGetDcName -> Obtains the DC for the local box, used to obtain a DC name for
+   '                 LookUpAccountName
+   ' NetApiBufferFree-> used to cleanup after NetGetDcName.  The Net* APIs manage memory
+   '                    memory for you, this function is used to free the memory allocated
+   '                    NetGetDcName
+   ' lstrcpyW -> used to copy the NetGetDcName buffer into a buffer VB can work with
+   ' GetLengthSid -> used to help convert the raw SID into a hexstring SID
+   '
+   Public Declare Function LookupAccountName Lib "advapi32.dll" _
+           Alias "LookupAccountNameA" _
+           (ByVal IpSystemName As String, _
+            ByVal IpAccountName As String, _
+            pSid As Byte, _
+            cbSid As Long, _
+            ByVal ReferencedDomainName As String, _
+            cbReferencedDomainName As Long, _
+            peUse As Integer) As Long
+            
+   Public Declare Function NetGetDCName Lib "NETAPI32.DLL" _
+           (ServerName As Byte, _
+            DomainName As Byte, _
+            DCNPtr As Long) As Long
+                                            
+   Public Declare Function NetApiBufferFree Lib "NETAPI32.DLL" _
+           (ByVal Ptr As Long) As Long
+            
+   Public Declare Function PtrToStr Lib "kernel32" _
+           Alias "lstrcpyW" (RetVal As Byte, ByVal Ptr As Long) As Long
+          
+   Public Declare Function GetLengthSid Lib "advapi32.dll" _
+           (pSid As Byte) As Long
+
+   '************End API Function Declarations**************************
+   Sub main()
+       Form1.Show
+   End Sub
+   '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ' Convert_BIN_To_SDDL takes two arguments: strNTDomain-> The NT domain for the user's account
+   '                                          strNTAccount-> The NT SAM account name for the user
+   ' The function returns the SDDL form of the user's SID,
+   '
+   Public Function Convert_BIN_To_SDDL(strNTDomain As String, strNTAccount As String) As String ' pSid As pSid, pszSidText)
+       Dim SDDL_SID As String
+       Dim pSia As Long
+       Dim pSiaByte(5) As Byte
+       Dim pSid(512) As Byte
+       Dim pSubAuthorityCount As Long
+       Dim bSubAuthorityCount As Byte
+       Dim pAuthority As Long
+       Dim lAuthority As Long
+       '
+       ' Get the SID for the user's account, targetting a local PDC
+       '
+       IReturn = LookupAccountName(Get_Primary_DCName("", strNTDomain), strNTAccount, pSid(0), 512, pDomain, 512, 1)
+       '
+       ' Convert the raw sid into its SDDL form ( S-?-?-???-?????? )
+       ' The first item in the S- format is the rivision level.  If we look closely at the
+       ' SID structure in the WinNT.H C Header, we find that the revision value for the SID is
+       ' stored in the 0th byte to the raw sid.
+       '
+       ' Another interesting fact is that the last byte of the Identifying authority structure contains
+       ' the second component of the SDDL form, so lets retrieve both of those and
+       ' place them into the string.
+       '
+       pSia = GetSidIdentifierAuthority(pSid(0))
+       '
+       ' The GetSidIdentifierAuthority returns a pointer to the Identifying Authority structure
+       ' The pointer must be copied into some memory that VB knows how to manage, so....
+       '
+       CopyByValMemory pSiaByte(0), pSia, 6
+       SDDL_SID = "S-" + LTrim(str(pSid(0))) + "-" + LTrim(str(pSiaByte(5)))    '
+       '
+       ' The rest of the SDDL form contains a list of sub authorities separated by
+       ' "-"s.  The total number of these authorities can be obtained by
+       ' calling the GetSidSubAuthorityCount.  The value returned is a pointer into the
+       ' SID memory that contains the Sub Authority value, once again, this memory
+       ' must be copied into something that VB knows how to manage.
+       '
+       ' Notice that only 1 byte is copied.  This is because the sub authority count
+       ' is stored in a single byte ( see the SID srtructure definition above )
+       '
+       pSubAuthorityCount = GetSidSubAuthorityCount(pSid(0))
+       CopyByValMemory bSubAuthorityCount, pSubAuthorityCount, 1
+       '
+       ' We can loop throught the sub authorities and convert
+       ' their DWORD values to VB longs, then convert them to a
+       ' string.
+       ' The count is 0 based, so we start a 0 and goto the
+       ' number of sub authorities - 1
+       '
+       For AuthCount = 0 To bSubAuthorityCount - 1
+         pAuthority = GetSidSubAuthority(pSid(0), AuthCount)
+         CopyByValMemory lAuthority, pAuthority, LenB(lAuthority)
+       '
+       ' VB by default assumes its data types to be signed types. The sub authorities should
+       ' be unsigned and hence the following code has to work around this problem to get the
+       ' sub authorities as unsigned data types
+       '
+       ' Get rid of the most significant bit (the signed bit) if it is set (And &H7FFFFFFF), and then add it
+       ' back in into the right location in the double variable (+ 2^31)
+       '
+         dAuthority = lAuthority
+         If ((lAuthority And &H80000000) <> 0) Then
+           dAuthority = lAuthority And &H7FFFFFFF
+           dAuthority = dAuthority + 2 ^ 31
+         End If
+         SDDL_SID = SDDL_SID + "-" + LTrim(Str(dAuthority))
+
+       Next AuthCount
+       '
+       ' We are done, the SDDL_SID variable contains the SID in
+       ' SDDL form,
+       ' Return it...
+       '
+       Convert_BIN_To_SDDL = SDDL_SID
+   End Function
+   ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+   ''
+   '' Get_Primary_DCName -- gets the name of the Primary Domain Controller for
+   ''                       the NT domain
+   ''
+   ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+   Function Get_Primary_DCName(ByVal MName As String, ByVal DName As String) As String
+
+   Dim Result As Long
+   Dim DCName As String
+   Dim DCNPtr As Long
+   Dim DNArray() As Byte
+   Dim MNArray() As Byte
+   Dim DCNArray(100) As Byte
+
+       MNArray = MName & vbNullChar
+       DNArray = DName & vbNullChar
+       Result = NetGetDCName(MNArray(0), DNArray(0), DCNPtr)
+       If Result <> 0 Then
+           Exit Function
+       End If
+       Result = PtrToStr(DCNArray(0), DCNPtr)
+       Result = NetApiBufferFree(DCNPtr)
+       DCName = DCNArray()
+       Get_Primary_DCName = DCName
+       
+   End Function
+   ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+   ''
+   '' Convert_ObjectSID_To_SDDL converts the objectSID property of a user
+   '' into the SDDL form of the SID.
+   ''
+   ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+   Public Function Convert_ObjectSID_To_SDDL(obj As Variant) As String
+       Dim SDDL_SID As String
+       Dim pSia As Long
+       Dim pSiaByte(5) As Byte
+       Dim pSid(512) As Byte
+       Dim pSubAuthorityCount As Long
+       Dim bSubAuthorityCount As Byte
+       Dim pAuthority As Long
+       Dim lAuthority As Long
+       Dim cbpSid As Long
+       '
+       ' Move the obj array into a byte array to work with the raw SID
+       ' Not sure why we need to do this, but if we use the variant passed
+       ' as the argument, the GetSidSubAuthorityCount API does not return a valid
+       ' address... Curious... It might a typing issue, the obj property is
+       ' defined as a variant array ob bytes were as the pSid array is defined as
+       ' an array of bytes.
+       '
+       cbpSid = 0
+       For I = LBound(obj) To UBound(obj)
+          pSid(cbpSid) = obj(I)
+          cbpSid = cbpSid + 1
+       Next I
+       '
+       ' Convert the raw sid into its SDDL form ( S-?-?-???-?????? )
+       ' The first item in the S- format is the rivision level.  If we look closely at the
+       ' SID structure in the WinNT.H C Header, we find that the revision value for the SID is
+       ' stored in the 0th byte to the raw sid.
+       '
+       ' Another interesting fact is that the last byte of the Identifying authority structure contains
+       ' the second component of the SDDL form, so lets retrieve both of those and
+       ' place them into the string.
+       '
+       pSia = GetSidIdentifierAuthority(pSid(0))
+       '
+       ' The GetSidIdentifierAuthority returns a pointer to the Identifying Authority structure
+       ' The pointer must be copied into some memory that VB knows how to manage, so....
+       '
+       CopyByValMemory pSiaByte(0), pSia, 6
+       SDDL_SID = "S-" + LTrim(str(pSid(0))) + "-" + LTrim(str(pSiaByte(5)))    '
+       '
+       ' The rest of the SDDL form contains a list of sub authorities separated by
+       ' "-"s.  The total number of these authorities can be obtained by
+       ' calling the GetSidSubAuthorityCount.  The value returned is a pointer into the
+       ' SID memory that contains the Sub Authority value, once again, this memory
+       ' must be copied into something that VB knows how to manage.
+       '
+       ' Notice that only 1 byte is copied.  This is because the sub authority count
+       ' is stored in a single byte ( see the SID srtructure definition above )
+       '
+       pSubAuthorityCount = GetSidSubAuthorityCount(pSid(0))
+       CopyByValMemory bSubAuthorityCount, pSubAuthorityCount, 1
+       '
+       ' We can loop throught the sub authorities and convert
+       ' their DWORD values to VB longs, then convert them to a
+       ' string.
+       ' The count is 0 based, so we start a 0 and goto the
+       ' number of sub authorities - 1
+       '
+       For AuthCount = 0 To bSubAuthorityCount - 1
+         pAuthority = GetSidSubAuthority(pSid(0), AuthCount)
+         CopyByValMemory lAuthority, pAuthority, LenB(lAuthority)
+       '
+       ' VB by default assumes its data types to be signed types. The sub authorities should
+       ' be unsigned and hence the following code has to work around this problem to get the
+       ' sub authorities as unsigned data types
+       '
+       ' Get rid of the most significant bit (the signed bit) if it is set (And &H7FFFFFFF), and then add it
+       ' back in into the right location in the double variable (+ 2^31)
+       '
+         dAuthority = lAuthority
+         If ((lAuthority And &H80000000) <> 0) Then
+           dAuthority = lAuthority And &H7FFFFFFF
+           dAuthority = dAuthority + 2 ^ 31
+         End If
+         SDDL_SID = SDDL_SID + "-" + LTrim(Str(dAuthority))
+       Next AuthCount
+       '
+       ' We are done, the SDDL_SID variable contains the SID in
+       ' SDDL form,
+       ' Return it...
+       '
+       Convert_ObjectSID_To_SDDL = SDDL_SID
+       '
+   End Function
+   '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ' Local_Convert_BIN_To_SDDL takes two arguments: strNTDomain-> Netbios name for the NT machine to 
+   '                                                              Request account information from
+   '                                          strNTAccount-> The NT SAM account name for the user
+   ' The function returns the SDDL form of the user's SID,
+   '
+   Public Function Local_Convert_BIN_To_SDDL(strNTDomain As String, strNTAccount As String) As String ' pSid As pSid, pszSidText)
+       Dim SDDL_SID As String
+       Dim pSia As Long
+       Dim pSiaByte(5) As Byte
+       Dim pSid(512) As Byte
+       Dim pSubAuthorityCount As Long
+       Dim bSubAuthorityCount As Byte
+       Dim pAuthority As Long
+       Dim lAuthority As Long
+       '
+       ' Get the SID for the user's account, targetting a local PDC
+       '
+       IReturn = LookupAccountName(strNTDomain, strNTAccount, pSid(0), 512, pDomain, 512, 1)
+       '
+       ' Convert the raw sid into its SDDL form ( S-?-?-???-?????? )
+       ' The first item in the S- format is the rivision level.  If we look closely at the
+       ' SID structure in the WinNT.H C Header, we find that the revision value for the SID is
+       ' stored in the 0th byte to the raw sid.
+       '
+       ' Another interesting fact is that the last byte of the Identifying authority structure contains
+       ' the second component of the SDDL form, so lets retrieve both of those and
+       ' place them into the string.
+       '
+       pSia = GetSidIdentifierAuthority(pSid(0))
+       '
+       ' The GetSidIdentifierAuthority returns a pointer to the Identifying Authority structure
+       ' The pointer must be copied into some memory that VB knows how to manage, so....
+       '
+       CopyByValMemory pSiaByte(0), pSia, 6
+       SDDL_SID = "S-" + LTrim(str(pSid(0))) + "-" + LTrim(str(pSiaByte(5)))    '
+       '
+       ' The rest of the SDDL form contains a list of sub authorities separated by
+       ' "-"s.  The total number of these authorities can be obtained by
+       ' calling the GetSidSubAuthorityCount.  The value returned is a pointer into the
+       ' SID memory that contains the Sub Authority value, once again, this memory
+       ' must be copied into something that VB knows how to manage.
+       '
+       ' Notice that only 1 byte is copied.  This is because the sub authority count
+       ' is stored in a single byte ( see the SID srtructure definition above )
+       '
+       pSubAuthorityCount = GetSidSubAuthorityCount(pSid(0))
+       CopyByValMemory bSubAuthorityCount, pSubAuthorityCount, 1
+       '
+       ' We can loop throught the sub authorities and convert
+       ' their DWORD values to VB longs, then convert them to a
+       ' string.
+       ' The count is 0 based, so we start a 0 and goto the
+       ' number of sub authorities - 1
+       '
+       For AuthCount = 0 To bSubAuthorityCount - 1
+         pAuthority = GetSidSubAuthority(pSid(0), AuthCount)
+         CopyByValMemory lAuthority, pAuthority, LenB(lAuthority)
+       '
+       ' VB by default assumes its data types to be signed types. The sub authorities should
+       ' be unsigned and hence the following code has to work around this problem to get the
+       ' sub authorities as unsigned data types
+       '
+       ' Get rid of the most significant bit (the signed bit) if it is set (And &H7FFFFFFF), and then add it
+       ' back in into the right location in the double variable (+ 2^31)
+       '
+         dAuthority = lAuthority
+         If ((lAuthority And &H80000000) <> 0) Then
+           dAuthority = lAuthority And &H7FFFFFFF
+           dAuthority = dAuthority + 2 ^ 31
+         End If
+         SDDL_SID = SDDL_SID + "-" + LTrim(Str(dAuthority))
+       Next AuthCount
+       '
+       ' We are done, the SDDL_SID variable contains the SID in
+       ' SDDL form,
+       ' Return it...
+       '
+       Local_Convert_BIN_To_SDDL = SDDL_SID
+   End Function
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSecurity kbDSupport kb32bitOnly 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbWinAdvServSearch
+Version           : :2000,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

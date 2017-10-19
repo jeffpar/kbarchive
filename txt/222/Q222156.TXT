@@ -1,0 +1,69 @@
+DOCUMENT:Q222156  15-DEC-2000  [winnt]
+TITLE   :MSClient 3.0 Enforces Source Routing in Token Ring Broadcasts
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+ - Microsoft LAN Manager, version 2.2c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a Token ring environment using transparent bridging, MS-DOS clients are
+unable to obtain an IP address through DHCP. When using static IP addresses,
+clients can log on but no servers are available on the network.
+
+RESOLUTION
+==========
+
+To work around the issue, enable source routing on your Token ring bridges to
+operate either as Source Route Transparent (SRT) or Source Route only bridges.
+
+If changing your bridge configuration is not an option, the client must be
+configured not to rely on broadcasts for network communication. Using static IP
+addresses and WINS or a LMHOSTS file for NetBIOS name resolution will allow the
+client to function normally.
+
+MORE INFORMATION
+================
+
+The MS-DOS client software mentioned above always includes source routing
+information in broadcast frames. Token ring bridges configured for transparent
+bridging may discard frames that contain source routing information. In this
+environment, broadcasts can only reach stations in the same ring.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q102373 Token Ring Bridge/Ring Numbering and Routing Avoids Looping
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbLanManSearch kbNetworkClientSearch kbLanMan220c kbNetworkClient300DOS
+Version           : winnt:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

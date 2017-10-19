@@ -1,0 +1,77 @@
+DOCUMENT:Q233435  07-SEP-2001  [homemm]
+TITLE   :Business Planner: Black Bar Is Printed Beneath Heading of Page
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbprint kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a Web Links or Reference Directory page from Microsoft Business
+Planner, a black bar may be printed beneath the heading on the printed page.
+
+CAUSE
+=====
+
+This behavior can occur if you attempt to print an entire Web Links or Reference
+Directory page.
+
+RESOLUTION
+==========
+
+To work around this issue, select the text you want to print, and then print the
+selected text. To do this:
+
+1. Use your pointing device to select the text you want to print from the Web
+   Links page or Reference Directory page.
+
+2. On the File menu, click Print.
+
+3. Under Print Range, click Selection.
+
+4. Click Print.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+MORE INFORMATION
+================
+
+The heading at the top of a Web Links or Reference Directory page contains
+graphics that may be printed differently from the way they are displayed on the
+screen.
+
+Additional query words: msbp thick line border
+
+======================================================================
+Keywords          : kbprint kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

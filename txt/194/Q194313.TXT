@@ -1,0 +1,54 @@
+DOCUMENT:Q194313  09-DEC-2000  [exchange]
+TITLE   :XCLN: Outlook for Windows 3.x Remove All Does Not Delete Recall
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:8.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook, Exchange Server Edition, version 8.0, used with:
+    - the operating system: Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you select the Remove All option in the Setup program for Microsoft Outlook
+for Windows 3.x, the file Recall.dll is not removed. This is a non-shared
+component installed in the Windows\System folder that would normally be removed
+when uninstalling.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Outlook for Windows
+3.x, Exchange Server Edition, version 8.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch
+Version           : WINDOWS:8.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q149673  25-JUL-2001  [sms]
+TITLE   :Unexpected Reinstallation of SMS Client with a New SMSID
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the SMS client software is reinstalled and the SMS client is reinventoried
+with a new SMSID, the SMS Administrator will notice multiple SMSIDs for the same
+computer from the SMS Administrator UI.
+
+CAUSE
+=====
+
+When CLI_DOS.EXE, CLI_NT.EXE or CLI_OS2.EXE (CLISETUP) fails to open the SMS.INI
+file (because, for example, the file is locked by another application), CLISETUP
+assumes that SMS.INI does not exist and that the reason is because SMS is not
+installed.
+
+RESOLUTION
+==========
+
+Upgrade to SMS version 1.2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem was corrected in Systems Management Server version
+1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

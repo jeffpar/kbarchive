@@ -1,0 +1,89 @@
+DOCUMENT:Q85970  18-NOV-1999  [pcmail]
+TITLE   :PC Win: Missing Information in Paste Special Dialog Box
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows does not display file
+information correctly in the Pasted Special Option dialog box when an object
+linking and embedding (OLE) object is placed in a message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0b, and 3.2 of
+Microsoft Mail for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run Microsoft Windows version 3.1.
+
+2. Run Paintbrush, then open the Windows ARCADE.BMP file.
+
+3. Modify the ARCADE.BMP file and copy it to the Clipboard.
+
+4. Exit Paintbrush.
+
+5. Run Microsoft Mail for Windows, version 3.0, 3.0b, or 3.2.
+
+6. Open a new Compose Note and place cursor in the body of the message.
+
+7. From the Edit menu, choose Paste Special.
+
+Notice that "The Source: Paintbrush Picture" with the filename followed by four
+integers is displayed incorrectly.
+
+Example
+-------
+
+Incorrect:
+
+  Source: Paintbrush Picture
+         C:\WINDOWS\ARCADE.BMP  0 0
+
+(the 2nd 0 is 1/2 cut off).
+
+Correct (this is what should be displayed):
+
+  Source: Paintbrush Picture
+         C:\WINDOWS\ARCADE.BMP  0 0 32 32
+
+
+Additional query words: 3.00 3.00b 3.20 WIN31
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,169 @@
+DOCUMENT:Q121686  10-JUN-1999  [homegame]
+TITLE   :Contents of Space Simulator README.TXT File
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbreadme kbprd
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Space Simulator v1.0
+
+                 ==============================
+                   R E L E A S E    N O T E S
+
+ This document contains important information to help you configure your
+ computer so that you get the best performance from Space Simulator.
+
+* Memory Requirements - Conventional Memory (RAM)
+  Space Simulator requires at least 550K conventional memory.
+  For best results, provide as much conventional memory as possible.
+  For example:  When 560K or more conventional memory is available
+  for Space Simulator, the level of image detail for spacecraft and
+  other models can be set to Complex instead of Sparse (in the
+  Rendering Preferences dialog box), providing more realistic images
+  in the simulation.  When conventional memory is low and you set
+  image detail to Complex, Space Simulator informs you that the
+  simulator needs to change from Complex to Sparse rendering. If you
+  provide at least 560K RAM, you will enjoy continuous display of
+  complex images.
+
+  Note: Although Space Simulator has a minimum requirement of at least
+  550K free conventional memory, it will run with as little as 500K
+  free. When running Space Simulator with less than 560K free memory,
+  you will encounter the "Switching to Sparse Rendering" message more
+  frequently.
+
+* Memory Requirements - Expanded Memory (EMS)
+  Space Simulator requires at least 512K of expanded memory.
+  Providing more than 768K of expanded memory offers minimal
+  additional benefit. To provide expanded memory for Space Simulator,
+  please refer to the instructions noted on the inside back cover of
+  the Star-Pilot's Guide.
+
+* Using the System Startup Disk (Boot Disk)
+  If you don't want to change your existing memory configurations,
+  you can use Space Simulator's MAKEBOOT.COM to create a system
+  startup disk (or boot disk) that provides the memory configuration
+  you need while running Space Simulator. To create a system startup
+  disk, at the MS-DOS prompt (while still within the Space Simulator
+  directory, for example, C:\SPACESIM), type MAKEBOOT and follow the
+  on-screen instructions. To use the system startup disk, simply place
+  the disk into your disk drive (usually drive A), and restart your
+  computer. Space Simulator will use the system startup disk for its
+  memory configuration.
+
+* Running Space Simulator with Microsoft Windows
+  Space Simulator achieves maximum video performance when you run it
+  from MS-DOS. If you choose to run Space Simulator from Microsoft
+  Windows, please note the following:
+  - Prior to starting Space Simulator, run Space Simulator Setup and
+    choose the 320x400 graphics resolution option.
+  - Prior to running Windows, ensure that your computer has at least
+    768K of EMS memory.
+  - Run Space Simulator as an exclusive, full-screen application.
+  - If you switch to another application, and then return to Space
+    Simulator, the simulation display may be corrupted.  To restore
+    the simulation display, press the W key twice to toggle the Full
+    Screen View option and refresh the screen.
+
+* Video Issues
+  Space Simulator supports 320x400, 640x400, and 800x600 graphics
+  resolutions.
+  - To display resolutions greater than 320x400, you need to know the
+    chipset of your video card.  To determine the chipset of your
+    video card, refer to the documentation provided with your video
+    card, or run Microsoft Diagnostics by typing "msd" at MS-DOS
+    prompt.
+  - Some SuperVGA video cards may not run Space Simulator in 640x400
+    and/or 800x600 resolution. This is often due to the video card
+    manufacturer attempting to maximize video performance in Windows,
+    while compromising MS-DOS-application compatibility.  If you have
+    a SVGA card and have problems with higher resolutions, try the
+    VESA 1.2 video option.  If that does not work, you will have to
+    run Space Simulator in 320x400 resolution.
+  - Pentium users:  If your video card does not run Space Simulator in
+    SVGA resolutions and you must run it in 320x400 resolution, the
+    fast frame-refresh rate may cause undesirable flickering on your
+    screen. To slow the frame rate, adjust the following items in the
+    Preferences dialog box: Set Milky Way check box on, Star Limiting
+    Magnitude to 7, Precision to 8.
+  - Diamond Viper video users:
+    To run Space Simulator in 640x400 resolution:
+    1. Acquire VPRMODE.EXE v2.04 from the manufacturer.
+    2. Type "vprmode vesa" at the MS-DOS prompt to install VESA 1.2
+       compatibility.
+    3. Run Space Simulator Setup, choose 640x400 resolution, and then
+       choose the VESA 1.2 video option.
+
+* ThrustMaster Joystick Support
+  If you have a ThrustMaster Mark II Weapons Control System (WCS), you
+  can use the SPACESIM.ADV file found in your Space Simulator
+  directory to configure your hardware for use with Space Simulator.
+  Using this file with your Weapons Control System enhances your Space
+  Simulator experience by assigning many frequently-used features to
+  controls on the WCS. Note that use of this file requires the new
+  chip and microcode from ThrustMaster.  Consult the SPACESIM.ADV file
+  for details.
+
+* Learning How to Control your Spacecraft
+  Space Simulator has a concise on-screen Help menu. To see which keys
+  control your spacecraft, choose Keyboard Guide from the Help menu,
+  or see the back cover of the Star-Pilot's Guide. Be sure to review
+  the other areas of the Help menu, including Menu Commands and
+  Basic Skills.
+
+* Read the Star-Pilot's Guide
+  In space, knowledge is power! The Star-Pilot's Guide provides a
+  complete journey through Space Simulator, as well as some great
+  flying adventures.
+
+* Fly the Missions
+  Space Simulator has missions that score you on your piloting skills.
+  From the Options menu, choose Missions, and then take off!
+
+* Accept a Challenge
+  A great gateway into the heart of Space Simulator is available
+  with the Open Situation command on the Options menu. Just choose
+  a situation and find yourself in a new area of space. For extra
+  adventure, look for situations that include the word CHALLENGE
+  in their description. Read the challenge and then give it a try.
+
+                  Welcome to Space Simulator!
+                              -=*=-
+
+----------------------------------------------------------------------
+
+Additional query words: 1.00 Spacesim sim dos D_spacesim ss1 read-me read me
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

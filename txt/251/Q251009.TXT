@@ -1,0 +1,76 @@
+DOCUMENT:Q251009  25-MAY-2001  [vbwin]
+TITLE   :INFO: Where to Find the MMC Snap-In Designer for Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbtophit kbMMC kbVBp600 kbGrpDSPlatform kbDSupport kbSnapIn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Management Console (MMC) Snap-In Designer for Visual Basic is
+included with Microsoft Platform Software Development Kit (SDK), starting with
+the January 2000 edition.
+
+MORE INFORMATION
+================
+
+The Platform SDK can be downloaded from the following Web site:
+
+   http://www.microsoft.com/msdownload/platformsdk/setuplauncher.asp>
+
+Once you have installed the Platform SDK, you can find information about the
+Designer by browsing to the following location:
+
+   \Program Files\Microsoft Platform SDK\Samples\SysMgmt\MMC\Visual
+   Basic\Template\
+
+To install the MMC Snap-in Designer for Visual Basic from the platform SDK, you
+need to install the Microsoft Management Console Samples under the Sample
+Code\Management Samples section. This will install the core design-time and
+runtime files necessary for the Designer.
+
+The following table lists the core Designer files with version and size
+information:
+
++-----------------------------------+
+| FILE         | VERSION  | SIZE    | 
++-----------------------------------+
+| mmcproxy.dll | 5.0.2150 | 1162 KB | 
++-----------------------------------+
+| mssnapr.dll  | 5.0.2150 | 1715 KB | 
++-----------------------------------+
+| mssnapd.ocx  | 5.0.2150 | 1266 KB | 
++-----------------------------------+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtophit kbMMC kbVBp600 kbGrpDSPlatform kbDSupport kbSnapIn 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

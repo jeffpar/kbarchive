@@ -1,0 +1,94 @@
+DOCUMENT:Q129516  17-DEC-2000  [win95x]
+TITLE   :Exclusive Mode Mouse Setting Prevents Resizing a Window
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to move or resize an MS-DOS-based application's window using the
+mouse.
+
+CAUSE
+=====
+
+Mouse operations are exclusive to the application running in the window.
+
+RESOLUTION
+==========
+
+If you want to control the window features of an MS-DOS-based application, do
+not enable the Exclusive Mode option for the application's mouse settings.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When you enable the mouse's Exclusive Mode option for an MS-DOS-based
+application, you can interact with the application's window only by using the
+keyboard, and the window controls (such as the toolbar and the Minimize,
+Maximize, and Restore buttons) are not available. Also, the window's sizing
+controls are not operational when you enable the Exclusive Mode option.
+
+To enable the Exclusive Mode option for an MS-DOS-based application, follow these
+steps:
+
+1. With the MS-DOS-based application running in a window, use the right mouse
+   button to click the window's title bar and then click Properties on the menu
+   that appears.
+
+2. Click the Misc tab.
+
+3. In the Mouse section, click the Exclusive Mode check box.
+
+4. Click OK.
+
+To disable the Exclusive Mode option for an MS-DOS-based application running in a
+window, follow these steps:
+
+1. Press ALT+ENTER to switch the application to run in a full screen.
+
+2. Press ALT+TAB until the application is minimized.
+
+3. Use the right mouse button to click the application's button on the taskbar
+   and then click Properties on the menu that appears.
+
+4. Click the Misc tab.
+
+5. In the Mouse section, click the Exclusive Mode check box to clear it.
+
+6. Click OK.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

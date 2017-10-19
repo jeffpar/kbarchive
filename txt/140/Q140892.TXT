@@ -1,0 +1,93 @@
+DOCUMENT:Q140892  13-AUG-1999  [homemm]
+TITLE   :World Atlas Stops Responding with Ensoniq Card
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1996
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 World Atlas for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On Microsoft Windows 95/98-based computers, Microsoft Encarta 96 World Atlas may
+stop responding (hang) at the title screen when you press ENTER.
+
+-or-
+
+When you play a sound clip from Microsoft Encarta 96 World Atlas, the program may
+hang after you click Stop.
+
+CAUSE
+=====
+
+This problem can occur if you are using the Ensoniq Soundscape or Soundscape
+Elite sound card with the Ensoniq Windows 95 driver installed.
+
+Windows 95 does not supply drivers for the Soundscape sound card. To obtain
+Windows 95 drivers, contact Ensoniq.
+
+This problem occurs when the Use Single Mode DMA setting is disabled. By default,
+this setting is turned on.
+
+RESOLUTION
+==========
+
+To change the Use Single Mode DMA setting, do the following:
+
+1. With your right mouse button, click My Computer, and then click Properties.
+
+2. Click the Device Manager tab.
+
+3. Double-click Sound, Video And Game Controllers.
+
+4. Click Ensoniq Soundscape, and then click Properties.
+
+5. Click the Settings tab.
+
+6. Click Advanced Settings.
+
+7. Select Use Single Mode DMA.
+
+8. Click OK.
+
+9. Click OK.
+
+For more information, contact Ensoniq at:
+
+   - (610) 647-3930, Main number
+   - (800) 942-0096, Soundscape/multimedia Tech Support
+   - (610) 647-3195, BBS
+
+The Ensoniq products discussed here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+
+Additional query words: crash freeze stop responding encarta press push ensonic
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas1996
+Version           : 1996
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

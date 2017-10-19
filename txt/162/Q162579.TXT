@@ -1,0 +1,171 @@
+DOCUMENT:Q162579  14-NOV-2000  [word97]
+TITLE   :WD97: Linked Picture Doesn't Preserve Scaling Properties
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Word 97 does not retain the scaling (size) information for a linked graphic.
+That is, the graphic reverts to its original size (100 percent).
+
+NOTE: This also applies to other linked embedded objects.
+
+CAUSE
+=====
+
+This problem occurs when all of the following conditions are true:
+
+ - The "Link to file" check box is selected (the check box has a mark in it).
+
+   -and-
+
+ - The "Save with document" check box is not selected (the check box is clear).
+
+RESOLUTION
+==========
+
+To correct this problem, install Microsoft Word 97 Service Release 1 (SR- 1).
+
+Use one of the following methods to work around the problem.
+
+Method 1: Use This Method When Inserting New Graphics
+-----------------------------------------------------
+
+Enable the "Save with document" check box when you insert the graphic by
+following these steps:
+
+1. On the Insert menu, point to Picture, and then click From File.
+
+2. In the Insert Picture dialog box, select the desired graphic.
+
+3. Click the "Link to file" and "Save with document" check boxes so both have
+   check marks. Then, click OK.
+
+NOTE: This means that the graphic is stored in the Word document as opposed to
+being stored outside of the file only. The size of the file will be larger. This
+does not cause the file size to grow as much as it did in earlier versions of
+Word. The new graphic compression feature keeps the file size much smaller. To
+test this, create a document in an earlier version of Word and include several
+screen shots. Save it and note the size. Create a similar document in Word 97
+and note the size--it will be much smaller compared to size of the file created
+an earlier version of Word.
+
+Method 2: Use This Method to Correct Graphics in Existing Documents
+-------------------------------------------------------------------
+
+Use this method to correct existing graphics in existing documents.
+
+1. Open the document.
+
+2. On the Tools menu, click Options.
+
+3. Click the View tab.
+
+4. Enable the Field Codes check box.
+
+5. Look in the document for INCLUDEPICTURE field codes.
+
+6. For each INCLUDEPICTURE field code, locate and delete the "\d" switch.
+
+7. With your insertion point still inside the field code, press the F9 key on
+   your keyboard to update the field.
+
+8. Save and Close the document.
+
+NOTE: In place of steps 2-7 above, you can run the following macro:
+
+Dim ofield As Object
+
+      Sub FindField()
+          ActiveWindow.View.ShowFieldCodes = True
+          For Each ofield In ActiveDocument.Fields
+              ofield.Select
+              If ofield.Type = "67" Then 'INCLUDEPICTURE field
+                  With Selection.Find
+                     .MatchWholeWord = True
+                     .MatchSoundsLike = False
+                     .MatchWildcards = False
+                     .MatchAllWordForms = False
+                     .Execute findtext:=" \d ", replacewith:=" ", _
+                      replace:=True
+                      .Wrap = wdFindStop
+                  End With
+                  ofield.Update
+              End If
+          Next ofield
+          ActiveWindow.View.ShowFieldCodes = False
+      End Sub
+
+Microsoft provides examples of Visual Basic for Applications procedures for
+illustration only, without warranty either expressed or implied, including, but
+not limited to the implied warranties of merchantability and/or fitness for a
+particular purpose. The Visual Basic procedures in this article are provided 'as
+is' and Microsoft does not guarantee that they can be used in all situations.
+While Microsoft support professionals can help explain the functionality of a
+particular macro, they will not modify these examples to provide added
+functionality, nor will they help you construct macros to meet your specific
+needs. If you have limited programming experience, you may want to consult one
+of the Microsoft Solution Providers. Solution Providers offer a wide range of
+fee-based services, including creating custom macros. For more information about
+Microsoft Solution Providers, call Microsoft Customer Information Service at
+(800) 426-9400.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+This problem was corrected in Microsoft Word 97 SR-1.
+
+For additional information about SR-1, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q172475 OFF97: How to Obtain and Install MS Office 97 SR-1
+
+
+MORE INFORMATION
+================
+
+When you link a picture in Word 97 with the "Link to file" option in the Insert
+Picture dialog box, any changes you make to the size of the graphic will not be
+retained when the file is saved, closed, and reopened.
+
+This problem only occurs when the "Save with document" check box is not
+selected.
+
+NOTE: This problem is not influenced by cropping the graphic or selecting the
+"Float over text" check box.
+
+Additional query words: SR1 release1 8.0 8.00 keep hold retain maintain sustain uphold formatting format open aspect ratio bmp dib emf eps gif jpg jpeg png pcd pct pcx rle tif tga wmf wpg picture scaling reset size resize re-size
+
+======================================================================
+Keywords          : kbualink97 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

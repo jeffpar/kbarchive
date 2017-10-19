@@ -1,0 +1,74 @@
+DOCUMENT:Q176984  15-MAR-1999  [exchange]
+TITLE   :XCLN: Send to Alias Name Cannot Be Resolved
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running applications that use Simple MAPI, such as Microsoft Office or
+Microsoft Outlook, you may encounter a problem with resolving an alias name when
+sending e-mail if that alias name has a leading space. Either you cannot resolve
+the name, or the following error message, or similar error message, may appear:
+
+   Unable to resolve "group"
+
+where group is the name of the alias that has the leading space.
+
+CAUSE
+=====
+
+Simple MAPI cannot resolve names that begin with a space. However, Exchange
+Server uses Extended MAPI, which allows leading spaces. Therefore, Exchange
+Administrators can create names with leading spaces, but Simple MAPI
+applications cannot use them.
+
+WORKAROUND
+==========
+
+In Microsoft Exchange Server, change the alias name of the distribution list, so
+that the alias no longer contains a leading space.
+
+MORE INFORMATION
+================
+
+In Exchange Server, a distribution list has two names: the alias name and the
+display name. Exchange Server uses the display name for sorting the distribution
+lists in the address book, and with a leading space they sort to the beginning
+of the list. Changing only the alias name so that it does not have a leading
+space allows Exchange Server to resolve the name, because Exchange uses both the
+display and alias names to resolve the entry.
+
+Additional query words: Office95 Mail Email Word Excel Access Powerpoint Access Sent To
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : 5.0,5.5
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

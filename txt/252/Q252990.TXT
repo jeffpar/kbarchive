@@ -1,0 +1,60 @@
+DOCUMENT:Q252990  22-JUN-2001  [exchange]
+TITLE   :XCLN: No Personal Address Book in List of Services
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:2000
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Custom Installation Wizard, there is no entry for the personal address
+book (PAB) in the list of services that are available to configure profiles.
+
+MORE INFORMATION
+================
+
+In Outlook 2000, contacts are used for personal addresses and personal
+distribution lists. In an upgrade to Outlook 2000, the Personal Address Book
+service is available, but during a new installation of Outlook 2000, the
+Personal Address Book service is not installed.
+
+Outlook 2000 converts a PAB to contacts, if a PAB is detected.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q234370 OL2000: How to Configure Outlook Settings in the Custom Installation
+   Wizard
+
+Additional query words: OL2000
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbZNotKeyword3
+Version           : WINDOWS:2000
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

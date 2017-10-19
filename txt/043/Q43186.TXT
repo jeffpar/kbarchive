@@ -1,0 +1,64 @@
+DOCUMENT:Q43186  09-NOV-1999  [macmail]
+TITLE   :Mac Srv: Creating a Group of Users/Groups
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To create a group in Microsoft Mail, do the following:
+
+1. Log in as Network Manager.
+
+2. With the Summary window open, choose Users and Groups from the Mail menu. In
+   Mail version 3.X00, choose Server Users/Groups from the Mail menu.
+
+3. Select the Groups icon.
+
+4. Select Define Group and type the new group's name.
+
+5. Add users and/or groups to the group by clicking the Address Group icon. Note
+   that you can only add existing users or groups to a group; you cannot add
+   people who currently do not have an account on the Mail system.
+
+   For more information on using the Address Group window, query on the following
+   words in the Microsoft Knowledge Base:
+
+   address and group and window
+
+6. When you are done adding people and have returned to the Users and Groups
+   window, click the Define button.
+
+7. Click the close box.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

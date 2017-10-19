@@ -1,0 +1,70 @@
+DOCUMENT:Q152949  30-MAR-1999  [exchange]
+TITLE   :XFOR: Read Receipt is Received Instead of Return Receipt
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The problem occurs in the following scenario:
+
+A Microsoft Mail for PC Networks Windows client version 3.5 sends a message to a
+Microsoft Mail for PC Networks postoffice, which transfers the message over the
+MS Mail Connector to a computer running Microsoft Exchange Server, which
+transfers the message over the X.400 Connector to a remote X.400 Message
+Transfer Agent (MTA). Finally, the message reaches an X.400 recipient.
+
+The sender has selected the option "Return Receipt." However, the sender only
+receives a Read Receipt back from the recipient. A Delivery receipt is not
+returned from the remote X.400 MTA.
+
+CAUSE
+=====
+
+By default, Microsoft Exchange Server version 4.0 maps the Microsoft Mail
+"Return Receipt" option into the Read Receipt Request X.400 P2 flag.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+version 4.0. This problem was corrected in the latest Microsoft Exchange 4.0
+U.S. Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: failure crash deletion spurious
+
+======================================================================
+Keywords          : kb3rdparty kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

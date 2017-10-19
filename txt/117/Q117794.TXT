@@ -1,0 +1,116 @@
+DOCUMENT:Q117794  07-MAY-2001  [visualc]
+TITLE   :PRB: Compiler Errors when Implementing CObject-Derived Class
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbnokeyword kbLangCPP kbMFC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbG
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0, 2.10, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you implement a class derived from CObject and your code is written so that
+the copy constructor or assignment operator for the class needs to be called,
+the compiler may report errors similar to the following:
+
+   error C2660: 'CSample::CSample' : function does not take 1 parameters
+   error C2582: 'CSample' : 'operator =' function is unavailable
+
+You can reproduce the problem by compiling the sample code in the "RESOLUTION"
+section, below.
+
+NOTE: Using Visual C++, 32-bit Edition, versions 2.x and 4.0, the sample code
+shown in this article generates the following error messages:
+
+   error C2558: 'CSample::CSample' : no copy constructor available
+   error C2582: 'CSample' : 'operator =' function is unavailable
+
+CAUSE
+=====
+
+The reason for the compiler errors is that CObject declares a private copy
+constructor and assignment operator in the AFX.H file. The compiler does not
+generate a default copy constructor and assignment operator for the
+CObject-derived class because of this. Because the compiler does not find these
+functions declared in the class, it reports the errors.
+
+RESOLUTION
+==========
+
+To avoid the compiler errors, you need to implement a copy constructor and
+assignment operator for the CObject-derived class. This is illustrated in the
+sample code below. You can avoid the errors by uncommenting the lines indicated
+in the sample code.
+
+Sample Code
+-----------
+
+   /* Compile options needed: /c
+   */ 
+
+      // replace with #define _CONSOLE when compiling for Windows NT
+      #define _DOS
+
+      #include <afx.h>
+
+      class CSample : public CObject
+      {
+      private:
+          short m_nValue;
+      public:
+      // uncomment the lines below to avoid the compiler errors
+      //    CSample() {}
+      //    CSample( const CSample &s )  // copy ctor
+      //        { m_nValue = s.m_nValue; }
+      //    CSample& operator=( const CSample &s )  // assignment operator
+      //        { m_nValue = s.m_nValue; return *this; }
+      };
+
+      void main()
+      {
+          CSample a;
+          CSample b = a;
+          a = b;
+      }
+
+REFERENCES
+==========
+
+"Visual C++ and C/C++, version 7.0 Language Reference" manuals, Section 11.7,
+"Copying Class Objects."
+
+Visual C++ 4.0 Books Online: Visual C++ Books, C/C++, C++ Language Reference,
+Special Memeber Functions, Copying Class Objects.
+
+Additional query words: 7.00 1.00 1.50 2.00 2.10 2.50 1.51 1.52 2.51 3.00 3.10 4.00 arguments kbNoUpdate
+
+======================================================================
+Keywords          : kbnokeyword kbLangCPP kbMFC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

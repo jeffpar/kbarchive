@@ -1,0 +1,96 @@
+DOCUMENT:Q97868  24-NOV-1999  [msdos]
+TITLE   :Uninstall Doesn't Run If It Finds DoubleSpace Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You try to use the Uninstall disk to remove MS-DOS 6.0, but you receive an error
+message stating that you cannot uninstall MS-DOS 6.0 because you installed
+DoubleSpace.
+
+CAUSE
+=====
+
+If DoubleSpace is installed on your computer, you cannot use the Uninstall disk
+to remove MS-DOS 6.0. If you try to do so, you receive the error message
+mentioned above. If you remove DoubleSpace, you still receive this error message
+if either of the following is true:
+
+ - DBLSPACE.BIN is in the root of the host drive
+
+-or-
+
+ - A functional DoubleSpace driver is active in memory after you start your
+   computer with the Uninstall disk in drive A. This occurs when you have a
+   valid DBLSPACE.INI file on your host drive.
+
+WORKAROUND
+==========
+
+To work around these problems, try using the Uninstall disk after you following
+these steps:
+
+1. Use the DIR /A command to confirm that no DBLSPACE.<nnn> files are
+   located in the root directory of your local drive(s). As an alternative, you
+   can use the DBLSPACE /LIST command to confirm no DBLSPACE.<nnn> files
+   exist on your system.
+
+   If you find any compressed volume files (DBLSPACE.<nnn>), and you want
+   to remove DoubleSpace, see section 7.6 of the README.TXT file, "Removing
+   DoubleSpace from your computer," or query on the following words in the
+   Microsoft Knowledge Base:
+
+   "how" (without the quotation marks) and "remove" (without the quotation
+   marks) and "doublespace" (without the quotation marks) and "preserve"
+   (without the quotation marks)
+
+   After you remove any DBLSPACE.<nnn> files, continue with step 2 of this
+   procedure.
+
+2. Delete or rename any DBLSPACE.BIN or DBLSPACE.INI files in the root directory
+   of all drive(s). If the Uninstall program finds a DBLSPACE.BIN or
+   DBLSPACE.INI file in the root directory of the first hard disk drive or the
+   root of the first hard disk drive's host drive, it assumes DoubleSpace is in
+   use.
+
+3. Delete or rename DBLSPACE.BIN on the Uninstall disk. The driver can't load if
+   MS-DOS can't find it.
+
+If you cannot use the Uninstall disk to remove MS-DOS 6 because DoubleSpace is
+still detected, call Microsoft Product Support Services at (425) 646-5104 for
+assistance.
+
+
+Additional query words: 6.00 dblspace double space remove delete un-install
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

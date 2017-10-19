@@ -1,0 +1,66 @@
+DOCUMENT:Q212773  02-JUL-1999  [exchange]
+TITLE   :XFOR: CCMC Dirsync Error 14015
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Directory synchronization between the Microsoft Exchange Server computer and the
+Lotus cc:Mail post office may fail with the following Event ID:
+
+   Event ID: 14015
+
+   Source: MSExchangeCCMC
+   Type: Error
+   Category: Dir-Synch
+   Description: MS exchange ccmc directory synchronization service return
+   ds_name_error, error 4693728
+
+CAUSE
+=====
+
+A previously deleted container has been included in directory synchronization
+(dirsync).
+
+WORKAROUND
+==========
+
+1. Verify under the Export Container tab that there is a deleted container
+   included in the export list. If you find a deleted container, remove it from
+   the list of exported containers.
+
+2. Run dirsync again. It should finish without errors.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

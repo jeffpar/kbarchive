@@ -1,0 +1,68 @@
+DOCUMENT:Q147777  08-AUG-2001  [winnt]
+TITLE   :'Print Spooled Jobs First' Option Will Not Stay Selected
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In the Printer Properties-Details dialog box, when you select the "Print Spooled
+Jobs First" option and then click OK to close the dialog box and save, when you
+go back to the Details dialog box the option is not selected.
+
+CAUSE
+=====
+
+Although the option check box is available, it cannot be implemented unless the
+"Job Prints While Spooling" option is selected also. Although not mentioned in
+the help file description of this option, the ability to print spooled jobs has
+to be enabled before completely spooled jobs can be given a priority over them.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Windows NT Workstation and Server version
+4.0.
+
+Enable "Print Jobs While Spooling" at the same time as "Print Spooled Jobs
+First."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5 and 3.51.
+This problem was corrected in Windows NT Workstation or Server version 4.0.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

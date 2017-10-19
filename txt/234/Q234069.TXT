@@ -1,0 +1,129 @@
+DOCUMENT:Q234069  06-AUG-2002  [homegame]
+TITLE   :Computer Stops Responding After You Install Drivers
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kberrmsg kbtool kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+If this article does not describe your hardware-related issue, please see the following Microsoft Web site to view more articles about hardware: 
+
+   http://support.microsoft.com/support/windows/topics/hardware/hwddresctr.asp
+
+SYMPTOMS
+========
+
+When you install the video drivers included with the Diamond Fire GL 1000 Pro
+video adapter on a Microsoft Windows 98-based computer, your computer may stop
+responding (hang) or you may receive an error message similar to the following:
+
+   Invalid VxD dynamic link call from VPOWERD(06) + 00000BD9 to device VMCPD
+   Service C.
+
+CAUSE
+=====
+
+This behavior occurs because the Diamond Fire GL 1000 Pro installation program
+updates the version of the Vmcpd.vxd file to version 1413 without checking the
+installed version of the file. This can happen with Voodoo 5 drivers, as well as
+others from other vendors.
+
+NOTE: Removing the driver and installing another video driver does not resolve
+this issue.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the DirectX Diagnostic Tool (Dxdiag.exe) to determine
+if the version of the Vmcpd.vxd file installed on your computer is version
+1413.
+
+For additional information about how to use the DirectX Diagnostic Tool, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q190900 DirectX: Description of the DirectX Diagnostic Tool
+
+If the version of the Vmcpd.vxd file is 1413, replace this file with the version
+shipped with Windows 98. To do this:
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type "vmpcd.vxd" (without the quotation marks).
+
+3. In the Look In box, click My Computer, and then click Find Now.
+
+4. In the list of found files, right-click the Vmcpd.vxd file located in the
+   Windows\System folder, and then click Rename.
+
+5. Type "vmcpd.old" (without the quotation marks), and then press ENTER.
+
+6. Close the Find: Files Named Vmpcd.vxd window.
+
+7. Restart the computer.
+
+8. Insert the Windows 98 CD-ROM into your CD-ROM drive. Press and hold down the
+   SHIFT key as you insert the CD-ROM to prevent the Windows CD-ROM from
+   starting automatically.
+
+9. Click Start, and then click Run.
+
+10. In the Open box, type the following line, and then click OK:
+
+   sfc.exe
+
+11. Click "Extract one file from installation disk."
+
+12. In the "Specify the system file you would like to restore" box, type
+   "vmcpd.vxd" (without the quotation marks), andthen click Start.
+
+13. In the Restore From box, type the following line, and then click OK:
+
+   <cd-rom>:\Win98
+
+   where <cd-rom> is the drive letter of your CD-ROM drive.
+
+14. In the Save File In box, type the following line, and then click OK:
+
+   <drive>:\Windows\System\Vmm32
+
+   where <drive> is the drive letter of the hard disk on which Windows is
+   installed.
+
+
+MORE INFORMATION
+================
+
+The third-party products that are discussed in this article are manufactured by
+companies that are independent of Microsoft. Microsoft makes no warranty,
+implied or otherwise, regarding the performance or reliability of these
+products.
+
+Additional query words: HWDISHHS direct-x dx6 crash freeze lock win98x vmm32
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kberrmsg kbtool kbimu msgame 
+Technology        : kbWin98SEsearch kbWin98SE
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

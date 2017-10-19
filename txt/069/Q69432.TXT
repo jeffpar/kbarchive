@@ -1,0 +1,82 @@
+DOCUMENT:Q69432  07-DEC-1999  [win95x]
+TITLE   :Adobe Plus Pack Fonts Print Incorrectly in Ventura for Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Xerox, some of the Adobe Plus Pack soft fonts do not print
+correctly from Ventura for Windows to a PostScript printer that has the same
+internal printer fonts.
+
+The problem can be corrected by removing the reference to the Adobe Plus Pack
+soft fonts in the WIN.INI file. Use the internal printer fonts associated with
+the installed PostScript printer driver.
+
+MORE INFORMATION
+================
+
+The fonts that may be affected are as follows:
+
+agw.pfm   - avant garde
+agd.pfm   - avant garde demi
+agdo.pfm  - avant garde demi oblique
+agwo.pfm  - avant garde oblique
+bkl.pfm   - bookman light
+bkd.pfm   - bookman demi
+bkdi.pfm  - bookman demi italic
+bkli.pfm  - bookman light italic
+hvn.pfm   - helvetica narrow
+hvnb.pfm  - helvetica narrow bold
+hvnbo.pfm - helvetica narrow bold oblique
+hvno.pfm  - helvetica narrow oblique
+ncr.pfm   - new century schoolbook roman
+ncb.pfm   - new century schoolbook bold
+ncbi.pfm  - new century schoolbook bold italic
+nci.pfm   - new century schoolbook italic
+pob.pfm   - palatino bold
+por.pfm   - palatino roman
+pobi.pfm  - palatino bold italic
+poi.pfm   - palatino italic
+zcmi.pfm  - zapf chancery medium italic
+zd.pfm    - zapf dingbat
+
+For more information, contact Xerox technical support.
+
+The Xerox products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty windrvr
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

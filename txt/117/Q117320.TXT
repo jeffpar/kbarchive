@@ -1,0 +1,78 @@
+DOCUMENT:Q117320  26-JUL-2001  [visualc]
+TITLE   :How to Programatically Terminate an MFC Application
+PRODUCT :Microsoft C Compiler
+PROD/VER:1.00 1.50 1.51 1.52 | 1.00 2.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under certain conditions, you may want to terminate an MFC application
+programatically. MFC does not provide a public function to gracefully exit an
+application.
+
+MORE INFORMATION
+================
+
+A method for dealing with this is to create a function in your application like
+the following:
+
+      void ExitApp()
+      {
+           // same as double-clicking on main window close box
+           ASSERT(AfxGetApp()->m_pMainWnd != NULL);
+           AfxGetApp()->m_pMainWnd->SendMessage(WM_CLOSE);
+      }
+
+As you can see, this is implemented as a global function, which can be called
+from anywhere in your application. It simply sends a WM_CLOSE message to your
+application's mainframe window. This initiates an orderly shutdown of the
+application.
+
+If you are using MFC, version 2.5 or later, you can take advantage of a new
+global MFC function, "AfxGetMainWnd", to simplify the code:
+
+      void ExitMFCApp()
+      {
+           // same as double-clicking on main window close box
+           ASSERT(AfxGetMainWnd() != NULL);
+           AfxGetMainWnd()->SendMessage(WM_CLOSE);
+      }
+
+NOTE: Always call CDocument::SetModifiedFlag() after changing your document data.
+This will ensure that the framework prompts the user to save before shutdown. If
+you need more extensive control over the shutdown procedure, you can override
+CDocument::SaveModified().
+
+Additional query words: kbinf 1.00 1.50 1.51 1.52 2.00 2.10 2.50 2.51 2.52 3.00 3.10 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMFC
+Version           : 1.00 1.50 1.51 1.52 | 1.00 2.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q124041  15-NOV-1999  [pcmail]
+TITLE   :PC Win: Problems with CONVERT.EXE when Upgrading Folders
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can use CONVERT.EXE to convert your Microsoft Mail for MS-DOS client folders
+to Microsoft Mail for Windows client folders. Under certain circumstances, this
+conversion will halt before completing. The folders that are converted appear to
+be corrupt. Using the FIXFLD.EXE utility does not fix the corruption.
+
+CAUSE
+=====
+
+This problem is caused by the Owner field of certain records in the user's IDX
+file (which is a textized hexadecimal number) containing lowercase hexadecimal
+digits. CONVERT.EXE in version 3.0 and 3.0b of Microsoft Mail for Windows
+assumes the hexadecimal numbers are all uppercase.
+
+RESOLUTION
+==========
+
+The fix is to force the Owner field to uppercase before converting it to binary.
+This fix was incorporated in a new version of CONVERT.EXE released with
+Microsoft Mail for PC Networks version 3.2.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in earlier versions of CONVERT.EXE.
+Microsoft Mail version 3.2 incorporates the change.
+
+
+Additional query words: 2.10 3.00 convert folder
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

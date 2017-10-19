@@ -1,0 +1,64 @@
+DOCUMENT:Q74052  13-DEC-1999  [win95x]
+TITLE   :Setup Hangs on a Sharp PC6200 Series Notebook Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Sharp PC6200 series of notebook computers has a hardware setup program whose
+options must be changed if Windows Setup stops responding (hangs) when you
+insert Disk 2.
+
+For example, if VGA was chosen during the hardware selection portion of the
+Windows Setup program, and the Sharp's LCD monitor is incorrectly set to emulate
+MDA rather than VGA, Setup may hang when you insert Disk 2. Changing the Sharp's
+LCD monitor emulation to VGA should permit the Windows Setup program to run
+without incident.
+
+MORE INFORMATION
+================
+
+To change the hardware options, press CTRL+ALT+SETUP twice at the MS-DOS prompt.
+Note: SETUP is a key on the upper right-hand side of the keyboard on a PC6220
+notebook computer.
+
+The first time you press CTRL+ALT+SETUP, a menu will appear that allows you to
+change the date, time, and so on. The second time you press CTRL+ALT+SETUP, you
+will activate a menu that allows for other changes, such as LCD monitor
+emulation and memory (expanded/extended) configuration.
+
+For further information regarding Sharp's line of notebook computers, please
+contact Sharp Electronics.
+
+Additional query words: 3.0 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,69 @@
+DOCUMENT:Q191026  07-SEP-2001  [word97]
+TITLE   :WD97: Incorrect Pages Print with Odd/Even Print Order
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprint kbfield
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you choose to print even pages or odd pages, Word does not print the
+correct pages. This behavior occurs when you include page numbers that are
+numbered differently from the physical pages in the document (for example, when
+the first page of your document is defined as page 2, the second page is defined
+as page 3, and so forth). In addition, this behavior occurs whether or not you
+choose a section start equal to odd or even pages.
+
+CAUSE
+=====
+
+Word looks to the physical pages in your document to determine which pages are
+odd and even. Word does not reference any logical page numbering placed in your
+document.
+
+RESOLUTION
+==========
+
+To correctly print pages that have odd or even page numbers, you can add a blank
+page to the beginning of your section or document. When you do this, the
+physical page numbers and the logical page numbers are equivalent.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: print odd even pages range incorrect physical logical
+
+======================================================================
+Keywords          : kbprint kbfield 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

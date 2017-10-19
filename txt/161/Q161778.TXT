@@ -1,0 +1,114 @@
+DOCUMENT:Q161778  12-JUN-2001  [sna]
+TITLE   :TCP/IP Clients Can't Connect to SNA Server on Windows NT 4.0
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA Server client users may be unable to connect over TCP/IP sockets to the SNA
+Server when running on a multi-homed computer running Windows NT Server 4.0.
+This problem may occur after initially installing SNA Server, or after upgrading
+a working SNA Server system from Windows NT Server 3.51 to Windows NT Server
+4.0.
+
+SNA Server client computers running either Windows 3.x or Windows 95 may receive
+the following errors when attempting to open a session:
+
+ - Users of 3270 may observe "No SNA Servers found in configuration." In an SNA
+   Server 3270 message trace, the Open(SSCP) request will fail with the
+   following error codes: err1: 0 (no servers found), and err2: 0 (no servers
+   found).
+
+ - APPC users may observe the following ALLOCATE error:
+
+   primary_rc = 0xF004 (AP_COMM_SUBSYSTEM_NOT_LOADED)
+   secondary_rc = 0xF0000001 or 0xF0000002
+
+A client computer running Windows NT Workstation may observe a delay of 45
+seconds or more before getting a session through the server. This is caused by a
+timeout when attempting to connect with TCP/IP sockets, followed by a successful
+attempt to connect over named pipes.
+
+NOTE: A server that has the TCP/IP protocol bound to more than one network
+adapter is referred to as "multi-homed." Each TCP/IP adapter binding is
+configured with a unique IP address connected to different logical subnets.
+
+CAUSE
+=====
+
+When SNA Server initializes, the first TCP/IP address returned by Windows
+sockets is advertised to SNA Server TCP/IP client computers over their "sponsor"
+connection. This TCP/IP address may be for an address on a disparate network
+from the client computer, or have an address that the client computer's default
+gateway does not know how to route.
+
+This was not a problem under Windows NT Server 3.51 because the order of the
+TCP/IP addresses could be controlled by the TCP/IP protocol binding order within
+the Bindings dialog box (accessed in Control Panel Network).
+
+Under Windows NT Server 4.0, the internal order of TCP/IP networks is determined
+by the order that TCP/IP initialization occurs over the network adapters.
+Therefore, there is no way to directly control the order that the TCP/IP
+addresses are registered on the SNA Server.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the hotfix mentioned below. This update allows
+the administrator to specify which IP address should be advertised to the SNA
+client computers in the following registry entry:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SnaBase
+   \Parameters\SnaTcp\ 
+
+   Network:REG_DWORD:<network number>
+
+where the default is 0. If there are two different TCP/IP addresses configured
+for this server, try setting the Network to "1."
+
+Note that this registry entry is already supported by SNA Server 3.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11, and 3.0. This problem was corrected in the latest SNA Server version 2.11
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna multihomed
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

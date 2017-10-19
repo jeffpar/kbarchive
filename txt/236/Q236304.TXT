@@ -1,0 +1,50 @@
+DOCUMENT:Q236304  07-DEC-2001  [mspress]
+TITLE   :Microsoft Press E-Books Do Not Install Or Run On WindowsCE Devic
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Electronic versions of Microsoft Press books are not designed to install or run
+on Windows CE devices.
+
+MORE INFORMATION
+================
+
+Microsoft Press e-books are delivered in a compiled HTML file (.CHM). This file
+format is compatible with Microsoft Internet Explorer 4.0 and later. It is not
+compatible with Pocket Internet Explorer, used on Windows CE devices.
+
+The information in this article applies to any Microsoft Press publication that
+is released with an electronic version of the book on an accompanying CD-ROM.
+
+Additional query words: WINCE EBOOK TKBOOK
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

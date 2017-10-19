@@ -1,0 +1,73 @@
+DOCUMENT:Q193864  29-APR-1999  [exchange]
+TITLE   :XFOR: Problems with FX!32 and Exchange's cc:Mail Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Exchange Server to send an e-mail message to a Lotus
+cc:Mail custom recipient, you may get a non-delivery report (NDR) message in
+your inbox stating:
+
+   -----Original Message-----
+   From:   postmaster
+   Sent:   Jueves 20 de Agosto de 1998 05:44 PM
+   To:   e-mail, Recipient
+   Subject:   RE: test
+
+   ***  Disk error in creating message item  ***
+
+CAUSE
+=====
+
+This problem is caused by a known bug in FX!32 that causes the cc:Mail connector
+in Exchange Server to fail while running on an ALPHA server.
+
+The cc:Mail connector uses Lotus' Import.exe and Export.exe, both 16-bit DOS
+applications. FX!32 is trapping calls made by these two programs and incorrectly
+generating the NDR back to the end user.
+
+WORKAROUND
+==========
+
+To work around this problem, perform one of the following:
+
+ - Move the cc:Mail connector to an Intel server.
+
+   -OR-
+
+ - Disable or uninstall the FX!32 component.
+
+Additional query words: FX!32, ccmail, NDR, disk error
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

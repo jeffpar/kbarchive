@@ -1,0 +1,88 @@
+DOCUMENT:Q240186  17-JUL-2001  [homekids]
+TITLE   :MSB Ocean: "Error 2 Cannot Run" or Black Screen
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbsetup mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Scholastic's Magic School Bus series: Explores the
+Ocean, you may encounter either of the following symptoms:
+
+ - The screen turns black.
+
+ - You receive an error message similar to the following:
+
+   Error 2 Cannot Run
+
+CAUSE
+=====
+
+This behavior can occur if Norton AntiVirus is installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove Norton AntiVirus, and then install Magic School
+Bus series: Explores the Ocean. To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click Norton AntiVirus, and then click
+   Add/Remove.
+
+4. Follow the instructions on the screen to remove Norton AntiVirus.
+
+5. Delete the Norton AntiVirus folder on your hard disk. To do this:
+
+   a. Click Start, point to Find, and then click "Files or Folders."
+
+   b. In the Named box, type "Norton AntiVirus" (without the quotation marks).
+
+   c. In the "Look in" box, click My Computer.
+
+   d. Click to select the "Include subfolders", and then click Find Now.
+
+   e. In the list of found folders, right-click the Norton AntiVirus folder, and
+      then click Delete.
+
+6. Restart the computer.
+
+7. Install Magic School Bus series: Explores the Ocean.
+
+8. Reinstall Norton AntiVirus.
+
+Additional query words: 1.00 msbocean installaltion blank anti-virus
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbsetup mskids kbimu 
+Technology        : kbHomeProdSearch kbKidsSearch kbScholasticOcean kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,127 @@
+DOCUMENT:Q70360  30-OCT-1999  [utilities]
+TITLE   :PRB: LINK Does Not Generate L2041 Error with /NOD and /DOSSEG
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:3.x,4.x,5.0x,5.1x,5.2x,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 3.x, 4.x, 5.0x, 5.1x, 5.2x, 5.3x, 5.5, 5.6 
+ - Microsoft LINK for OS/2, versions 5.0x, 5.1, 5.11, 5.13, 5.15 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to link an application using /NOD and /DOSSEG succeeds without an
+error message, even though the combined size of the stack and data for the
+DGROUP segment exceeds 64K. This occurs even though the compiler is designed to
+cause /DOSSEG segment ordering and thus enable the linker to generate a L2041
+error.
+
+CAUSE
+=====
+
+The LINK command line being used does not enable segment ordering, so DGROUP is
+not even being created.
+
+RESOLUTION
+==========
+
+Specify a run-time library on the LINK command line that defines the segments
+needed to create DGROUP. All Microsoft C Run-Time libraries do this.
+
+MORE INFORMATION
+================
+
+If the LINK command line includes the /NOD option but not /DOSSEG and no
+run-time libraries are specified, then segment ordering is not enabled. Adding
+the /DOSSEG option to the LINK command line but still omitting run-time
+libraries will still not give the L2041 error message, even though segment
+ordering will be enabled.
+
+This is because the /DOSSEG switch only forces a certain segment class ordering
+convention; it doesn't actually define the segments that compose DGROUP. As a
+result, the "L2041: stack plus data exceed 64K" message can't be generated
+because there is no DGROUP to which the stack and data segments belong.
+
+Linking with C run-time libraries introduces both the grouping and implementation
+of data segments to form DGROUP, so in cases where the code contributes more
+then 64k of data to DGROUP, error L2041 is given.
+
+Note that Microsoft high-level language run-time libraries automatically enable
+the /DOSSEG option by means of a special object-module record included in
+libraries. To enable the /DOSSEG option in code developed with the Microsoft
+Macro Assembler (MASM), specify the .DOSSEG directive in a MASM source code
+file.
+
+The following C source code example demonstrates this problem. Each of the
+following LINK command lines demonstrate the possible scenarios and the error
+messages that result.
+
+Command line 1: link test;
+
+Result set 1:
+
+   LINK : fatal error L2041: stack plus data exceed 64k
+
+Command line 2: link /NOD test;
+
+Result set 2:
+
+   LINK : warning L4021: no stack segment
+   (unresolved externals)
+   LINK : warning L4038: program has no starting address
+
+NOTE: This result set does not include the L2041 error -- an error that you might
+expect.
+
+Command line 3: link /NOD /DOSSEG test;
+
+Result set 3:
+
+   LINK : warning L4021: no stack segment (unresolved externals) LINK : warning
+   L4038: program has no starting address
+
+NOTE: This result set contains the same errors as those generated when the /NOD
+switch is specified by itself.
+
+Sample Code
+-----------
+
+   /*
+    * Compile options needed: /c
+    */ 
+
+   unsigned char a[30*1024] = {0};  /* 30k         */ 
+   unsigned char b[30*1024] = {0};  /* 30k         */ 
+   unsigned char c[10*1024];        /* 10k         */ 
+                                    /* Total = 70k */ 
+   void main(void)
+   { }
+
+Additional query words: 4.06 4.07 4.10 5.01.20 5.01.21 5.02 5.03 5.05 5.10 5.11 5.13 5.15 5.20 5.30 5.31.009 5.50 5.60
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK3xDOSSearch kbLINK4xDOSSearch kbLINK50xDOSSearch kbLINK510xDOSSearch kbLINK520xDOSSearch kbLINK530xDOSSearch kbLINK50xOS2Search kbLINK550DOS kbLINK560DOS kbLINK510OS2 kbLINK511OS2 kbLINK513OS2 kbLINK515OS2
+Version           : MS-DOS:3.x,4.x,5.0x,5.1x,5.2x,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

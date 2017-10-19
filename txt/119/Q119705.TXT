@@ -1,0 +1,62 @@
+DOCUMENT:Q119705  13-JUN-2001  [winmisc]
+TITLE   :Windows Sound System and ASPI4DOS Causes Windows to Hang
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Microsoft Windows Sound System, Microsoft Windows loads on
+the first restart; however, if you quit Windows and then restart the system
+again, Windows stops responding (hangs) at the logo screen.
+
+CAUSE
+=====
+
+This problem occurs when the Adaptec ASPI4DOS.SYS driver version 3.30 is loaded
+on a system using the Adaptec 1542c bus-mastering SCSI hard disk controller.
+This combination causes Windows to hang at the logo screen after the Windows
+Sound System is installed and Windows is restarted a second time.
+
+RESOLUTION
+==========
+
+To correct this behavior:
+
+ - Remove the ASPI4DOS driver.
+
+-or-
+
+ - Remove the Windows Sound System drivers from the SYSTEM.INI file.
+
+Additional query words: 2.00 aspi4dos 1542cf hang setup
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,90 @@
+DOCUMENT:Q119445  09-OCT-1999  [win3x]
+TITLE   :Syntax for Addressing Faxes Using Microsoft At Work PC Fax
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send a fax through Microsoft Mail or print to Microsoft At Work
+PC Fax on FAX, you receive the following error message:
+
+   Some names could not be matched to names in the address list. Try correcting
+   the names or choose Address to select names from the address list.
+   Successfully matched names are underlined.
+
+CAUSE
+=====
+
+This error occurs when the syntax on the To: line is incorrect. The correct
+syntax for sending a fax is as follows:
+
+      [fax:number]
+
+   -or-
+
+      [fax:name@number]
+
+If any element is omitted (such as a beginning or ending bracket), the above
+error message is displayed.
+
+WORKAROUND
+==========
+
+You can work around the syntax requirement by using an alias for the fax number,
+which you can create by adding a Microsoft At Work PC Fax address book entry. To
+do this:
+
+1. Run Microsoft Mail.
+
+2. From the Mail menu, choose Address Book.
+
+3. Choose the New Address button (the one displaying a blank Rolodex card).
+
+4. Select Microsoft At Work PC Fax and choose OK.
+
+NOTE: If Microsoft At Work PC FAX is not listed as an option, from the File menu
+choose Exit and Sign Out of Mail. Restart Mail. Microsoft At Work PC FAX should
+now be an available option.
+
+1. Fill in the New User information and make sure the Fax Number entry has the
+   correct number without any syntax. (For example, if the fax number is
+   555-1234, type either 555-1234 or 5551234.) The Name On Coverpage, Location,
+   and Voice Number entries are optional.
+
+2. Choose the Personal Address Book button (the one displaying a box of address
+   cards) to insert the new entry into your Personal Address Book.
+
+3. Choose Cancel to return to the Address Book.
+
+Additional query words: ms mail msmail 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

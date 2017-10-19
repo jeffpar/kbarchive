@@ -1,0 +1,69 @@
+DOCUMENT:Q149545  17-DEC-2000  [win95x]
+TITLE   :Err Msg: The Mail Headers Could Not Be Displayed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Remote Mail on the Tools menu in Microsoft Exchange, you may
+receive either of the following error messages:
+
+   - The mail headers could not be displayed. Internal MAPI error while
+   establishing remote interface MAPI 1.0 - 839 - [80004005]
+
+   - The item could not be displayed. The action could not be completed.
+   Microsoft Exchange Client - 9997 - [80070005]
+
+CAUSE
+=====
+
+These errors can occur if your computer name contains the "@" character. The
+first error message occurs when you try to use the Remote Mail feature in
+Microsoft Exchange. The second error message occurs when you send a message with
+the The Microsoft Network Online Service information service installed in your
+default profile.
+
+RESOLUTION
+==========
+
+Remove the "@" character from your computer name. To do so, follow these steps:
+
+1. In Control Panel, double-click Network.
+
+2. Click the Identification tab.
+
+3. Change the computer name so that it does not contain the "@" character, and
+   then click OK.
+
+4. When you are prompted to restart your computer, do so.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

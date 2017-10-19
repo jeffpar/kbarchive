@@ -1,0 +1,47 @@
+DOCUMENT:Q302725  30-JUL-2001  [msnetwork]
+TITLE   :"Must restart computer" Message When Signing In To MSN Explorer
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When signing in to MSN Explorer, you may get a message telling you that you must
+restart your computer. You have the option to "Tell MSN" or "Don't Tell MSN".
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+Shut down MSN Explorer, restart your computer, and then re-start MSN Explorer.
+Note: If you click "Tell MSN" and cannot shut down MSN Explorer as a result,
+then choose option "Don't Tell MSN".
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

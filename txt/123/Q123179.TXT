@@ -1,0 +1,72 @@
+DOCUMENT:Q123179  13-JUN-2001  [sna]
+TITLE   :MDI DB2 Gateway Reports Open Server Error
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0; winnt:4.2x
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+ - Microsoft SQL Server version 4.2x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you issue a host query through the Micro DecisionWare DB2 database gateway
+for Windows NT (running over SNA Server), the gateway may report the following
+errors:
+
+   Open Server Processor Error.
+
+   -or-
+
+   Open Server OS Error: Not enough storage is available to process this
+   command.
+
+
+The Micro DecisionWare gateway was configured to communicate to SQL Server
+clients over the Netware IPX/SPX protocol.
+
+CAUSE
+=====
+
+There is a memory problem (a memory leak) in SQL Server version 4.21 in the
+DBMSSPXN.DLL file. This problem was fixed in version 4.21a.
+
+RESOLUTION
+==========
+
+To resolve this problem, apply the DBMSSPXN.DLL from SQL Server 4.21a to the
+computer running the Micro DecisionWare DB2 database gateway for Windows NT.
+
+NOTE: While this problem is not related to SNA Server, it is included here to
+make this information easier to locate.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0; winnt:4.2x
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

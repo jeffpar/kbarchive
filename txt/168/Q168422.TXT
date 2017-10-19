@@ -1,0 +1,69 @@
+DOCUMENT:Q168422  14-NOV-2000  [word97]
+TITLE   :WD97: Batch Conversion Wizard Cannot Convert Templates
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbtool winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Word Batch Conversion Wizard will not convert templates or any file with a
+.dot extension.
+
+CAUSE
+=====
+
+By design, you cannot change the file format of a Word template.
+
+WORKAROUND
+==========
+
+To convert a Word template to another file format, use the following steps to
+create a new document from the template and then convert the document to the
+desired file type:
+
+1. On the File menu, click New.
+
+2. Click the template you want.
+
+3. Click the Document option under Create New.
+
+4. Click OK.
+
+5. On the File menu, click Save As.
+
+6. You can choose to save the document in the desired format, or you can save it
+   as a Word document to be converted later using the Batch Conversion Wizard.
+
+Additional query words: convert
+
+======================================================================
+Keywords          : kbtool winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

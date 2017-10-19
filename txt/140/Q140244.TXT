@@ -1,0 +1,72 @@
+DOCUMENT:Q140244  10-FEB-2000  [foxpro]
+TITLE   :How to Dock/Undock Project Manager or Toolbar Programmatically
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some cases, you may find it difficult to use the mouse to undock a toolbar or
+the Project Manager. Also, you may want to use code to dock or undock a built-in
+toolbar or the Project Manager. This article explains how to dock and undock
+toolbars and the Project Manager programatically.
+
+MORE INFORMATION
+================
+
+A toolbar or the Project Manager may be docked or undocked by using the MOUSE
+command. To dock or undock the Standard Toolbar, type the following line in the
+Command window:
+
+   MOUSE DBLCLICK AT 0.1,0.1 WINDOW "Standard"
+
+The command must be a bit more specific when referring to the Project Manager
+because the window name of the Project Manager changes with the project name. To
+open the Tastrade project, use this command:
+
+      MODIFY PROJECT HOME()+'samples\mainsamp\tastrade.pjx'
+
+To dock the Tastrade Project, use this command:
+
+      MOUSE DBLCLICK AT -0.1,0.1 WINDOW "PROJECT MANAGER - TASTRADE"
+
+To undock the Tastrade Project, use this command:
+
+      MOUSE DBLCLICK AT 0.1,0.1 WINDOW "PROJECT MANAGER - TASTRADE"
+
+NOTE: In this last example, you could have just used the window name PROJECT.
+However, if there is more than one project open and only PROJECT is used, Visual
+FoxPro picks one of the projects at random to dock or undock. You need to use
+the complete name to guarantee that a particular project is docked or undocked.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

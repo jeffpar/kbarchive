@@ -1,0 +1,80 @@
+DOCUMENT:Q84744  06-MAY-2001  [masm]
+TITLE   :Conditionally Assembling the END Directive
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:5.x,6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.x, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes it is helpful to conditionally have a starting label specified with
+the END directive; for example, to use preprocessor directives to specify
+various END directives:
+
+   IFDEF xyz
+     END start_label
+   ELSE
+     END
+   ENDIF
+
+Note, however, that this approach will not work. As soon as MASM encounters the
+first END directive it will stop assembling. The assembler stops regardless of
+whether or not the END directive is inside a preprocessor block. This is the
+expected behavior for the assembler.
+
+A method that can be used to accomplish this task involves using a conditionally
+defined text equate with the END directive. The following sample code
+demonstrates this method:
+
+Sample Code
+-----------
+
+   ; Assemble options needed: /Dxyz
+
+   .MODEL small
+
+   .STACK 4096
+
+   .CODE
+   start_label:
+     mov ax, 4C00h
+     int 21h
+
+   IFDEF xyz
+     end_label EQU <start_label>
+   ELSE
+     end_label EQU <>
+   ENDIF
+
+   END end_label
+
+Additional query words: kbinf 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : MS-DOS:5.x,6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

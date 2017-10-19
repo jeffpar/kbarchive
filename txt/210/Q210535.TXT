@@ -1,0 +1,85 @@
+DOCUMENT:Q210535  09-FEB-1999  [homegame]
+TITLE   :Golf 99: Random Variation Introduced in Perfect Shots
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui w_golf kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 1999 Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how Golf 99 introduces random variation in your shots
+based on your skill level. This new feature increases game realism by decreasing
+your chances of scoring a hole-in-one.
+
+MORE INFORMATION
+================
+
+When you play Golf 99 at the Beginner or Amateur skill level, the game
+introduces a small amount of random variation in your perfect shots. The
+deviation for your shot increases as the distance of your shot increases. When
+you increase the range of your driver, you significantly increase the deviation
+of your shot.
+
+When you play Golf 99 at the Beginner skill level and use a driver with a
+modified range of 300 yards, any perfect drive you hit may vary wildly to the
+left or right.
+
+The following table lists the variation introduced by Golf 99 in perfect shots
+for different player skill levels and shots:
+
+   Level      Shot                         Variation
+   ---------------------------------------------------------------------
+
+   Beginner   Perfect chip < 75 yds        90% becomes 1-degree-off chip
+                                           10% perfect chip with random
+                                           variation
+
+              Perfect chip < 25 yds        75% becomes 2-degree-off chip
+                                           25% perfect chip with random
+                                           variation
+
+              1-degree-off chip < 25 yds   75% becomes 2-degree-off chip
+                                           25% 1-degree-off chip with
+                                           random variation
+
+              Any perfect non-putt shot    Random variation
+
+   Amateur    Perfect chip < 75 yds        90% becomes 1-degree-off chip
+                                           10% perfect chip with random
+                                           variation
+
+              Any perfect non-putt shot    Random variation
+
+   Other      Perfect chip < 75 yds        Random variation
+
+Additional query words: 1.00 golf99 golf msgame deviation
+
+======================================================================
+Keywords          : kbui w_golf kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolf99 kbGolfSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

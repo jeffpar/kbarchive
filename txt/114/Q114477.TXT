@@ -1,0 +1,63 @@
+DOCUMENT:Q114477  23-OCT-1999  [win3x]
+TITLE   :Cannot See Files on Shared CD-ROM Drives with Corel SCSI
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After connecting to a shared CD-ROM drive from a remote Microsoft Windows for
+Workgroups workstation, your computer cannot access any files.
+
+CAUSE
+=====
+
+Corel Technical Support has confirmed this to be a problem with the Corel
+version of CD-ROM extensions (CORELCDX.COM) prior to version 2.0.
+
+RESOLUTION
+==========
+
+You can work around this problem by using one of the following methods:
+
+ - Upgrade to CORELCDX.COM version 2.0.
+
+   -or-
+
+ - Use MSCDEX.EXE version 2.21 or later.
+
+CORELCDX.COM is manufactured by Corel, a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3.10 3.1 3.11 2.21 2.22 2.23 CDROM
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

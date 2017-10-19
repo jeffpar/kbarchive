@@ -1,0 +1,74 @@
+DOCUMENT:Q167258  04-MAY-2001  [ssafe]
+TITLE   :PRB: Analyze Leaves Files with .old Extension in Database
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run Analyze with the -f switch, some files in the data\<a-z>
+subdirectories may have an extension of .old.
+
+CAUSE
+=====
+
+When Analyze -f finds a corrupt file, it places a copy of that file in the
+backup directory, then rewrites the fixed file in the appropriate data\<a-
+z> directory. In some cases, after the original rewrite, another rewrite is
+necessary. Analyze does not overwrite the copy in the backup directory, but
+creates a file with the .old extension in the same directory as the original
+file. Under normal operations, this file should be deleted by the Analyze
+process. However, in some cases it is not.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q160914 PRB: The Data File for <file> (<physical file>) Was Not
+   Found
+
+
+RESOLUTION
+==========
+
+It is safe to delete the file with the .old extension.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

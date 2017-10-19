@@ -1,0 +1,59 @@
+DOCUMENT:Q169953  18-DEC-1999  [mastering]
+TITLE   :DOC: Mastering: Sound Level in Introduction Too low
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm kbsound kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Visual Basic 5.0 Fundamentals, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sound level of the program listed above is lower than most windows programs.
+It is most apparent in the Introduction to Chapter 7. In some cases, even with
+the volume maximized, some sounds may be difficult to hear.
+
+To remedy this, you may need to raise the sound level globally. Because this will
+cause louder than normal sounds in Windows, you return the volume level to your
+normal setting when you exit from the program.
+
+For more information about changing sound settings, see your Windows printed
+documentation or online Help, or the documentation that came with your sound
+card.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mastering Visual Basic
+5.0 Fundamentals, version 1.0. Microsoft is researching this problem and will
+post new information here as it becomes available.
+
+Additional query words: quiet silent hushed inaudible soft quietly 1.0
+
+======================================================================
+Keywords          : kbmm kbsound kbusage 
+Technology        : kbMSPressSearch
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

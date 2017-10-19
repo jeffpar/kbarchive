@@ -1,0 +1,76 @@
+DOCUMENT:Q206081  10-AUG-2001  [winnt]
+TITLE   :NMI Parity Errors on NCR WorldMark 4300 Pentium Pro
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Windows NT 3.51 on an NCR WorldMark 4300 Pentium Pro
+computer, you may receive non-maskable interrupt (NMI) parity errors.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Activate the computer's BIOS Setup tool.
+
+2. Click Advanced, and then click Advanced Chipset Configuration.
+
+3. Click Disable PERR Mode.
+
+4. Quit the BIOS Setup tool, restart the computer, and then begin the Windows NT
+   3.51 installation process.
+
+MORE INFORMATION
+================
+
+For more information, please contact NCR Technical Support for further details
+concerning this issue or go to NCR's Web site at:
+
+   http://www.ncr.com/
+
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

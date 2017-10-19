@@ -1,0 +1,55 @@
+DOCUMENT:Q254539  24-OCT-2000  [winnt]
+TITLE   :INFO: HLP Files Not Supported on 64-Bit Windows
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Driver writers may provide driver Help files in Windows Help (*.hlp) format.
+However, because Windows Help was written to run on a 16-bit code base and does
+not support Unicode, it displays garbage characters for languages that use an
+extended character set (for example, Eastern European and Far Eastern
+languages). Further, Windows Help is not supported on the 64-bit code base.
+
+MORE INFORMATION
+================
+
+Microsoft recommends that driver providers convert their help files to HTML Help
+(*.chm) format. This new HTML Help format is supported both on 32-bit and 64-bit
+code bases.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

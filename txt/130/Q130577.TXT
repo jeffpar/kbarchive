@@ -1,0 +1,102 @@
+DOCUMENT:Q130577  11-FEB-2000  [foxpro]
+TITLE   :PRB: Leading Equals Sign (=) Not Displayed If RowSource Value
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you enter operators (<>, <, >, and =) into a combo box RowSource
+property as values and the first element in the list is the equals sign (=),
+Visual FoxPro does not accept or allow the leading equals sign in the list of
+values.
+
+CAUSE
+=====
+
+Using an equals sign as the first character of an entry in a combo box RowSource
+property indicates to Visual FoxPro that the value that follows is going to be a
+numeric value returned by a function.
+
+RESOLUTION
+==========
+
+Use one of the following solutions:
+
+ - Change the order of the listed operators to begin with something other than
+   the equals sign.
+
+-or-
+
+ - Use the Expression Builder to enter your comma-separated list of operators.
+   To access the Expression Builder, bring up the combo box properties sheet,
+   and click the fx button. In the Expression Builder, enter the list of
+   operators:
+
+   " =,<,>,<> " (without the quotation marks)
+
+   Visual FoxPro will then place that string in the RowSource property field.
+   However, do not attempt to verify this expression in the Expression Builder.
+   Attempting to do so will result in a syntax error message.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+One reason for listing the operators in a combo box is to give a user a list of
+valid operators for use in an SQL query builder to build a query like this:
+
+      Select * from Customers where customer.city <> "WA"
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form.
+
+2. Add a Combo Box to the form.
+
+3. In the properties sheet under the Data tab, set the RowSourceType to 1 -
+   value.
+
+4. In the RowSource field, enter "=,<,>,<>" (without the quotation
+   marks), and press ENTER. At this point, Visual FoxPro removes the leading
+   equals sign, leaving ",<,>,<>" behind. When you run the form, the
+   position originally occupied by the equals sign appears but there is no value
+   displayed. When the same, original string is entered using the Expression
+   Builder, the leading equals sign is displayed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

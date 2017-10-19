@@ -1,0 +1,63 @@
+DOCUMENT:Q198737  28-FEB-1999  [sms]
+TITLE   :SMS: Changes Irreversible When Logging Components to One File
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbStatSum
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When logging is enabled for multiple Systems Management Server 2.0 components,
+and set to use one log file, you cannot reset the components to log in separate
+log files.
+
+To allow multiple components to log to one file, open Service Manager and select
+the Components object. The components will be listed in the right pane. Select
+multiple components and click Logging. Click to select the Logging enabled check
+box, click the "Use same file for all selected components" check box, type the
+log file name, and then click OK. Logging is now enabled for the selected
+components and only uses the log file that you specified.
+
+After logging is enabled in this manner, you cannot reset the selected components
+to log in individual log files. You can clear the "Use same file for all
+selected components" check box, but the change is not saved and logging
+continues to use the log file specified.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms smsstat
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbStatSum 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

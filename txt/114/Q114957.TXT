@@ -1,0 +1,51 @@
+DOCUMENT:Q114957  27-NOV-1999  [homekids]
+TITLE   :Artist: Prints Only in Landscape Orientation
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Fine Artist prints in Landscape orientation only. It is not possible to print in
+Portrait orientation from Fine Artist.
+
+MORE INFORMATION
+================
+
+Although it is possible to go to the Control Room (by pressing "CTRL+SHIFT+A"
+(without the quotation marks) or "COMMAND+SHIFT+A" (without the quotation
+marks)) and change the paper orientation to Portrait, Fine Artist always
+defaults back to Landscape and prints in Landscape. This is by design.
+
+Additional query words: kbhowto mskids mac win landscape portrait print sideways tall wide mode lengthwise kids mczee output 1.10a printout
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword2 kbFineArtist100 kbFineArtist110 kbFineArtist110a kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+Version           : MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

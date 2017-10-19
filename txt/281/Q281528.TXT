@@ -1,0 +1,72 @@
+DOCUMENT:Q281528  12-NOV-2001  [msnetwork]
+TITLE   :Audio - Listening to the Radio Online
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ - The customer wants to listen to the radio or music online.
+
+CAUSE
+=====
+
+ - The customer wants to listen to the radio or music online.
+
+RESOLUTION
+==========
+
+ - Inform the customer of the following issues:
+
+ - The file or streaming audio must be in a format that MSN Companion can play
+   back (any Windows Media format file will work).
+
+ - Customers can find music or streaming radio at http://www.wndowsmedia.com.
+   Here, customers can select the radio option, and choose from a wide variety
+   of music to listen to.
+
+ - Many sites on the Internet allow customers to listen to music or streaming
+   radio. Advise customers that they can only listen to audio or video files
+   that are in Windows Media Format.
+
+ - If a customer is listening to music and does not touch the MSN Companion
+   keyboard in a 10 minute period, then the device will prompt for a desire to
+   remain online. If the customer does not select yes, MSN Companion disconnects
+   from the Internet.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

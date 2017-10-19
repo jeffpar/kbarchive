@@ -1,0 +1,101 @@
+DOCUMENT:Q151994  13-JUN-2001  [homemm]
+TITLE   :Basketball 94-95 Err Msg: Unable To Start DDE Communications
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994-1995 edition; WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete NBA Basketball for Windows 1994-1995 edition 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Complete NBA Basketball for Windows in Windows 95,
+you may receive the following error message:
+
+   Unable to Start DDE communications with Program Manager
+
+   Abort, Retry, Ignore
+
+If you click Ignore, the installation continues; however, the above error message
+is received once more in the final portion of the installation. At that point,
+clicking Ignore again does not allow you to complete the installation.
+
+CAUSE
+=====
+
+This error occurs if Adobe Type Manager (ATM) is being loaded as the system
+driver in Windows 95.
+
+RESOLUTION
+==========
+
+Determine if ATM is being loaded. When ATM is installed, it modifies the
+System.ini file by changing the System.drv line and adding a new line.
+
+For example:
+
+      [Boot]
+      system.drv=atmsys.drv
+      atm.system.drv=system.drv
+
+To turn off Adobe Type Manager, do the following:
+
+NOTE: The following instructions require modifying system files. For more
+information about how to accomplish this task in Windows, see your Windows
+printed documentation or online Help.
+
+1. In a text editor such as Notepad, open the System.ini file.
+
+2. Modify the line in the [Boot] section that reads
+
+   system.drv=atmsys.drv
+
+   to read:
+
+   system.drv=system.drv
+
+3. Modify the line in the [Boot] section that reads:
+
+   atm.system.drv=system.drv
+
+   to read:
+
+   ;atm.system.drv=system.drv
+
+
+MORE INFORMATION
+================
+
+Adobe Type Manager is manufactured by a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding Adobe Type Manager's performance or
+reliability.
+
+Additional query words: 1994/95 multi media multimedia multi-media mmtitles kbmm netdde atm.sys
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbGamesSearch kbCompleteBasketballSearch kbCompleteNBABasketball kbCompleteNBABasketball1994
+Version           : :1994-1995 edition; WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

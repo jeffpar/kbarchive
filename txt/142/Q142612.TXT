@@ -1,0 +1,91 @@
+DOCUMENT:Q142612  07-SEP-2001  [winnt]
+TITLE   :TrueImage Errors 4014 When Printing from a Macintosh
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print with your user account from a Macintosh to a non-Postscript print
+queue on a Windows NT server, you may receive the following error message:
+
+   ID 4014
+   source- macprint
+   type- error
+   Category- TrueImage print
+   The TrueImage interpreter was unable to query the font list correctly to begin
+   processing job.
+
+NOTE: You can print from the Administrator account successfully.
+
+RESOLUTION
+==========
+
+To correct this problem, please install the fix below and follow these
+directions to create an account that the users can access:
+
+With SFM installed:
+
+1. Create a non-PS printer.
+
+2. Create an account called macuser.
+
+3. Double-click the Services icon in Control Panel.
+
+4. Select "Print Server for Macintosh" and choose Startup.
+
+5. Click This Account, type macuser, and then the password if you added one on
+   creation.
+
+6. Stop and restart macprint.
+
+7. Print to the non-PS printer from a Macintosh.
+
+For more information please refer to the Services for Macintosh documentation
+page 67-68.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in the latest Microsoft Windows NT 3.51 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt 3.51
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q136539  08-NOV-2001  [homekids]
+TITLE   :MSB: Program Runs Slowly on Macintosh (Virtual Memory)
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbenvkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Human Body for the Macintosh, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Ocean for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Magic School Bus, MSB Ocean or MSB Human seems to run slowly on your Macintosh.
+
+RESOLUTION
+==========
+
+The problem may be because Virtual Memory is turned on. For better performance,
+Virtual Memory should be turned off.
+
+To turn off Virtual Memory, do the following:
+
+1. On the Apple Menu click Control Panels.
+
+2. Open the Memory Control Panel.
+
+3. In the Virtual Memory section, click Off.
+
+4. Close the Window.
+
+5. Restart your computer.
+
+MORE INFORMATION
+================
+
+
+Additional query words: 1.00 mac msbhb frizz ppc kbmm multimedia macmsbhuman msbhuman msbocean macmsbocean
+
+======================================================================
+Keywords          : kbenv kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticHumanMac kbScholasticOceanMac kbMSBSearch
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

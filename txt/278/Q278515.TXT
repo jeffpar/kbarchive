@@ -1,0 +1,67 @@
+DOCUMENT:Q278515  12-NOV-2001  [msnetwork]
+TITLE   :How to use the "page options" feature on MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The page options button on the toolbar reveals several options available to the
+user.
+
+MORE INFORMATION
+================
+
+There are several options available to the user regardless of what page you are
+on. Click page options on the toolbar at the bottom of the screen to access
+these choices.
+
+ - Frame a picture from this page opens the frame a picture page, at which you
+   can select any picture from the page to become the picture viewed when your
+   MSN Companion is at rest.
+
+ - Send this page by mail opens up an e-mail form that includes the Web address
+   of the current page so that you can share it via e-mail.
+
+ - Add this page to my favorites opens up an add a favorite window in which you
+   can accept the default name of the page or type a new name and then click add
+   to favorites or click cancel.
+
+ - Print this page opens up a print options window in which you can elect to
+   print in black and white and then click print page, don't print page, or
+   help.
+
+ - Reload this page refreshes the current page.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

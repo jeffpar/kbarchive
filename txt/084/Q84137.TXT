@@ -1,0 +1,83 @@
+DOCUMENT:Q84137  30-OCT-1999  [win95x]
+TITLE   :Windows 3.0, 3.0a Resource Kit Directory (3.5-Inch Disks)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory of the Microsoft Windows Resource Kit versions
+3.0 and 3.0a 3.5-inch Disks 1, 2, and 3:
+
+DISK 1
+------
+
+   Volume in drive B is WRK_V1_1OF3
+   Volume Serial Number is 1142-13FD
+   Directory of B:\
+
+FISH     BAT      4096 04-16-91   1:16p
+HDC      BAT      3631 04-16-91   1:17p
+KIT      BAT      5309 04-16-91   1:18p
+PRODPACK BAT      4547 04-16-91   1:18p
+PRODPCK1 EXE    458187 04-05-91   1:21p
+SETUP    BAT      2809 04-16-91   1:19p
+SHARE    BAT      3949 04-16-91   1:28p
+        7 file(s)     482528 bytes
+                      244736 bytes free
+
+DISK 2
+------
+
+   Volume in drive B is WRK_V1_2OF3
+   Volume Serial Number is 1558-10DC
+   Directory of B:\
+
+PRODPCK2 EXE    679903 04-05-91   1:21p
+        1 file(s)     679903 bytes
+                       50176 bytes free
+
+DISK 3
+------
+
+   Volume in drive B is WRK_V1_3OF3
+   Volume Serial Number is 053D-10DF
+   Directory of B:\
+
+HDC      EXE    256665 04-05-91  12:13p
+SHARE    EXE    134907 04-13-91   2:32p
+WIN3FISH EXE    100108 04-05-91   1:01p
+        3 file(s)     491680 bytes
+                      237568 bytes free
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,69 @@
+DOCUMENT:Q157356  14-NOV-2000  [word97]
+TITLE   :WD97: Online Layout View Does Not Show Negative Indent
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A paragraph formatted with a negative indent does not display the negative
+indent in online layout view; however, Word allows you to set a negative indent
+while in online layout view.
+
+WORKAROUND
+==========
+
+The document prints correctly, but to display the negative indent correctly you
+must switch to normal view, page layout view, or print preview.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Microsoft Word 97 for Windows provides a new document viewing option called
+online layout view. This view optimizes the layout to make online reading
+easier. Text appears larger and wraps to fit the window, rather than the way it
+actually prints.
+
+To switch to online layout view, on the View menu, click Online Layout.
+
+
+Additional query words: 8.0 word8 word97 missing text
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,53 @@
+DOCUMENT:Q126640  08-AUG-2001  [winnt]
+TITLE   :Setting Up a Backup Domain Controller Stated Incorrectly
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+Page 38 of the "Windows NT Server Concepts and Planning Guide" incorrectly
+states:
+
+   (However, if you have an existing backup domain controller in a
+   different domain, you can move it from that domain to another.)
+
+This is incorrect. Windows NT identifies each domain by it's security
+identifier (SID), a unique number assigned to the domain. If Windows NT
+Server is moved from one domain to another, the new domain name and the
+original SID will not match. There is no way to replace the original SID
+without reinstalling Windows NT Server.
+
+Page 23 of the "Windows NT Server Installation Guide" correctly states the
+procedure of joining different domains:
+
+   After Setup is finished, the only way a Windows NT Server computer
+   can join a different domain is if you reinstall Windows NT Server.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

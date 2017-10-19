@@ -1,0 +1,62 @@
+DOCUMENT:Q174846  08-NOV-2001  [homegame]
+TITLE   :Mac Close Combat: Error -192 When Starting Program
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for the Macintosh 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you launch Close Combat for the Macintosh, the program quits unexpectedly
+and you receive a type -192 error message.
+
+CAUSE
+=====
+
+The -192 error message occurs if you are trying to run a program that is
+designed to run on a Power Macintosh on a non-Power Macintosh.
+
+RESOLUTION
+==========
+
+Close Combat for the Macintosh requires a Power Macintosh computer to run.
+
+MORE INFORMATION
+================
+
+Power Macintosh computers can be identified by the "Power Macintosh" or
+"PowerPC" logos on the case of the computer, or by the model number. All Power
+Macintosh computers have a 4 digit model number, such as Power Macintosh 9600.
+Other Macintosh computers have model numbers with three digits or less.
+
+Additional query words: 1.00 cc macintosh run
+
+======================================================================
+Keywords          : kbenv kbsetup kbusage 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbCloseCombatSearch kbCloseCombatMac
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

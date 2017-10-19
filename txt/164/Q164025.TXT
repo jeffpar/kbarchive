@@ -1,0 +1,82 @@
+DOCUMENT:Q164025  08-AUG-2001  [winnt]
+TITLE   :Error Message When Installing Client Services for NetWare
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:3.51 4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry  Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+When installing Microsoft Client Services for NetWare (CSNW), the following
+error message may appear if the Novell Client32 client software has been
+previously installed and removed:
+
+   Please remove any existing Client Services for NetWare components and reboot
+   before installing the latest version of Client Services for NetWare.
+
+RESOLUTION
+==========
+
+To resolve this problem, you may need to make a change to the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+1. Start Registry Editor.
+
+2. Navigate to the following locations and make sure the NWCWorkstation key does
+   not exist in either place:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\NWCWorkstation
+
+   -and-
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NWCWworkstation
+
+3. If you see the NWCWorkstation key in either of those locations, remove it.
+   After it has been removed, CSNW should install successfully. However, if the
+   error continues to occur, remove and reinstall NWLink.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbenv kbnetwork kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351
+Version           : WINNT:3.51 4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

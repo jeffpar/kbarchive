@@ -1,0 +1,63 @@
+DOCUMENT:Q107575  04-NOV-1999  [win3x]
+TITLE   :WFWG: Adapter Media Type Information Is Incorrect
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 146 of the Microsoft Workgroup Add-On for Windows "User's Guide," the
+"Computers or NetWare servers are not listed" section incorrectly states that an
+improper Adapter Media Type setting may cause NetWare servers to be missing from
+the Connect dialog box.
+
+MORE INFORMATION
+================
+
+This information is true only if you are using MSIPX.COM.
+
+The correct frame type is required in order to connect to NetWare servers or
+other Windows for Workgroups machines that are running the IPX/SPX compatible
+protocol. The frame type should be set to the same type as your NetWare servers.
+You must configure both your real-mode protocol (IPXODI) and, if it is
+installed, the protected-mode IPX/SPX Compatible protocol.
+
+For example, if your NetWare servers are set up for the ETHERNET_802.2 frame
+type, you must configure the IPX/SPX Compatible protocol on all Windows for
+Workgroups machines for ETHERNET_802.2. You also must configure your real-mode
+protocol used to connect to the file server for the ETHERNET_802.2 frame type.
+To do this, either place the "Frame Type ETHERNET_802.2" line first in the Link
+Driver section of the NET.CFG file, or specify it on the Protocol line in the
+Link Driver section.
+
+Additional query words: 3.11 3rdparty doc err documentation error frametype frame_type
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

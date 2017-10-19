@@ -1,0 +1,55 @@
+DOCUMENT:Q161267  08-NOV-2001  [homekids]
+TITLE   :Kids Plus!: Screen Savers Settings Require System Agent
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when trying to change the settings
+of a Microsoft Plus! For Kids screen saver:
+
+   Your must have the System Agent loaded in order for the mouse hot corners to
+   be active.
+
+MORE INFORMATION
+================
+
+You may receive this message if you try to change some of the settings in the
+Baseball, Bugs, Jungle, RE-man, Snowboarding, Space, and Underwater themes. This
+message will be displayed if the System Agent that ships with the Microsoft
+Plus! Pack is not installed. The System Agent will need to be installed to set
+the custom features for these screen saver settings.
+
+
+Additional query words: error broke
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

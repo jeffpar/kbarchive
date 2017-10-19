@@ -1,0 +1,84 @@
+DOCUMENT:Q186018  14-NOV-2000  [word97]
+TITLE   :WD97: Table Borders Lost When Table Pasted or Linked
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbole kbdta word97 kbtable
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The outside and some interior borders on your table are missing after you paste
+or paste link the table as a Picture or as a Microsoft Word Document object.
+
+WORKAROUND
+==========
+
+Use one of the following workarounds to paste your table with borders.
+
+Method 1: Link the Table as Formatted Text (RTF)
+------------------------------------------------
+
+1. On the Edit menu, click Paste Special.
+
+2. Click Paste Link.
+
+3. In the As list, click Formatted Text (RTF), and then click OK.
+
+Method 2: Crop the Table Boundaries
+-----------------------------------
+
+1. Click to select the Picture or Word Document object (your pasted table
+   object.)
+
+2. On the Picture toolbar, click Crop.
+
+3. Position the cropping tool over a sizing handle and drag it.
+
+For more information about cropping objects, click Contents And Index on the Help
+menu, click the Index tab in Word Help, type the following text
+
+   drawing objects, cropping
+
+and then double-click the selected text to go to the "Resize or crop a drawing
+object" topic. If you are unable to find the information you need, ask the
+Office Assistant.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: border cropped missing none gone
+
+======================================================================
+Keywords          : kbole kbdta word97 kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

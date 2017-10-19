@@ -1,0 +1,165 @@
+DOCUMENT:Q289573  24-JUL-2001  [odbc]
+TITLE   :PRB: Configuring DSNs with SQL Server Net-Libraries
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.6,2000.80.194,7.0
+OPER/SYS:
+KEYWORDS:kbODBC kbSQLServ kbGrpDSMDAC kbDSupport kbGrpDSODBC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for SQL Server, version 2000.80.194 
+ - Microsoft SQL Server 2000 (all editions) 
+ - Microsoft SQL Server version 7.0 
+ - Microsoft Data Access Components version 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create or configure ODBC data source names (DSNs) using the Microsoft
+SQL Server ODBC driver, issues such as the following may occur:
+
+ - Switching of Net-Library protocols.
+
+ - A new DSN's protocol is used for older DSNs, or vice versa.
+
+CAUSE
+=====
+
+If you use the server name (for example, the SQL Server instance name) for
+creating multiple DSNs, modifying the network protocol for any one of them will
+affect all the DSNs that are using this name.
+
+Also, from Microsoft Data Access Components (MDAC) 2.6 and later, the default
+network library is TCP/IP. If you use a server name (in other words, you do not
+create a server alias), even if you configure your DSN to use named pipes, it
+will revert back to TCP/IP. To resolve this problem, follow the steps given in
+the "Workaround" section.
+
+RESOLUTION
+==========
+
+Create and use server aliases with the required Net-Library settings using the
+ODBC Administrator or the SQL Server Client Network Utility, Cliconfg.exe. See
+the "More Information" section for details.
+
+WORKAROUND
+----------
+
+1. In the Client configuration utilities for SQL Server, create an alias using a
+   different name than the server name.
+
+2. Create or modify a DSN, and for the server name, choose the alias (not the
+   server) from step 1.
+
+3. Save the DSN and reopen.
+
+Note that this time the network library persists.
+
+MORE INFORMATION
+================
+
+When you specify or select the server name in the Server select box in the
+Microsoft SQL Server DSN Configuration dialog box from the ODBC Administrator
+during DSN creation, it creates a server alias with the specified name. This is
+actually a server alias name rather than the server name itself. If multiple
+DSNs use the same name, they all use the latest protocol settings of that server
+alias.
+
+The configuration information of the server aliases is stored in the registry
+under the following key:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\ConnectTo
+
+ODBC Administrator:
+
+To add a server alias using the ODBC Administrator, follow these steps:
+
+1. In Control Panel, browse to the ODBC Administrator.
+
+2. Click Add and select SQL Server as the driver. Then enter a name and
+   description for the DSN. In the Server select box, specify a new server alias
+   name and then click Next.
+
+3. Click the Client Configuration button. Enter the SQL Server name in the
+   Server name text box under Connection parameters. Also, select the required
+   Net-Library under Network Libraries. Then click OK and complete the steps to
+   create the DSN.
+
+Client Network Utility:
+
+The Client Network Utility, Cliconfg.exe, ships with several products, including
+Microsoft SQL Server and Microsoft Data Access Components (MDAC) version 2.1 SP2
+and later.
+
+This utility is typically placed in the C:\WINNT\SYSTEM32 folder on Microsoft
+Windows 2000 and Microsoft Windows NT systems and in the C:\WINDOWS\SYSTEM
+folder on Microsoft Windows 9x systems.
+
+To start this utility, follow these steps:
+
+1. If the SQL Server client is installed, on the Start menu, point to Programs,
+   point to Microsoft SQL Server, and then click Client Network Utility.
+
+2. Otherwise, on the Start menu, click Run.
+
+3. Type cliconfg in the Open text box and then click OK.
+
+To add a server alias, follow these steps:
+
+1. Click the Alias tab and then click Add.
+
+2. Type a new alias name in the Server alias text box and choose the required
+   Net-Library under Network libraries.
+
+3. Enter the SQL Server name in the Server name text box under Connection
+   parameters. You can also configure the additional parameters based on the
+   Net-Library. Then click OK.
+
+   NOTE: You can use the Remove and Edit buttons under Alias tab to delete and
+   modify the existing server aliases.
+
+REFERENCES
+==========
+
+For more information, see "Net-Libraries and Network Protocols" at the following
+Microsoft Developer Network (MSDN) Web site:
+
+   http://msdn.microsoft.com/library/psdk/sql/ad_1_server_3oxf.htm
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q257434 INF: The Protocol in Existing DSN Is Replaced by the Protocol in New
+   DSN to the Same SQL Server Name
+
+   Q250550 HOWTO: Change SQL Server Default Network Library Without Using Client
+   Network Utility
+
+   Q260249 PRB: DSN Network Library Shown as "Other" in ODBC Administrator
+
+Additional query words:
+
+======================================================================
+Keywords          : kbODBC kbSQLServ kbGrpDSMDAC kbDSupport kbGrpDSODBC 
+Technology        : kbSQLServSearch kbAudDeveloper kbSQLServ700 kbSQLServ2000Search kbODBCSearch kbMDACSearch kbMDAC260 kbODBCSQLServ200080194 kbSQLServ2000
+Version           : :2.6,2000.80.194,7.0
+Issue type        : kbprb kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

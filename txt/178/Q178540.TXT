@@ -1,0 +1,79 @@
+DOCUMENT:Q178540  21-MAR-1999  [exchange]
+TITLE   :XCON: Viewing Embedded Message Displays Compose Window
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you open an embedded message attachment in a message from another Exchange
+Server computer sent via an X.400 Connector, the message compose window may be
+displayed. This prevents you from replying to the embedded message.
+
+CAUSE
+=====
+
+This problem occurs when the X.400 Connectors between the Exchange Server
+computers have the "Remote Clients support MAPI" setting disabled on the General
+tab of the X.400 Connector properties.
+
+When this setting is disabled, the message is converted from the Exchange native
+format to an X.400 format for message delivery. The MAPI message flags are not
+properly retained on the embedded message during conversion. This, in turn,
+causes Exchange to treat the message as a saved unsent message and opens in
+compose mode.
+
+WORKAROUND
+==========
+
+To work around this problem, go to the General tab of the X.400 Connector
+property page on both Exchange Server computers and select the "Remote Clients
+support MAPI" check box. Then restart the message transfer agent (MTA) service
+on both servers.
+
+This is the default setting for the X.400 Connector. The default setting should
+always be enabled when the X.400 Connector is communicating between Exchange
+Server computers. Disabling this setting is intended for communication between
+Exchange and a third-party message transfer agent (MTA).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+version 5.5. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: conversion emsmta outlook reply-all
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q135146  17-DEC-2000  [win95x]
+TITLE   :McAfee Secure Station Clock Drawn Incorrectly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Application Manager included with McAfee Net Tools version 5.1
+as your Windows 95 shell, Secure Station Clock is not redrawn correctly and
+eventually fills up completely with black lines.
+
+CAUSE
+=====
+
+This behavior occurs only when Secure Station Clock is run with the McAfee
+Application Manager specified as the Windows 95 shell.
+
+McAfee Application Manager is a Windows 3.1-based program, and is not designed to
+run in Windows 95.
+
+RESOLUTION
+==========
+
+McAfee does not recommend running Application Manager as the Windows 95 shell,
+as it is a Windows 3.1-based program. When you use Secure Station Clock in
+Windows 95 without using Application Manager as the shell, the problem does not
+occur.
+
+MORE INFORMATION
+================
+
+McAfee Net Tools is manufactured by McAfee & Associates, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

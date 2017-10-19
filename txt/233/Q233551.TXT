@@ -1,0 +1,80 @@
+DOCUMENT:Q233551  05-APR-2000  [sna]
+TITLE   :Runtime Error 1226 Occurs When Using Diagnostic Playback
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP2,4.0SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 4.0 SP2 
+ - Microsoft SNA Server, version 4.0SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a COM Transaction Integrator for CICS and IMS (COMTI) component
+library in a COMTI Diagnostic Playback Remote Environment (RE), the following
+error may be recorded in the application Event Log.
+
+   Event ID: 102
+   Source: COMTI
+   Type: Error
+   Category: General
+
+   (102) COM Transaction Integrator reported the following exception to the
+   client:
+
+   Component: Cedar.Bank.1
+   Method: cedrbank
+
+   Exception description:
+   (1226) COM Transaction Integrator encountered an unexpected error while
+   preparing to connect to the Remote Environment (hr=0xc0000835). Delete and
+   re-create the Remote Environment.
+
+CAUSE
+=====
+
+This error may occur if the RE is renamed.
+
+WORKAROUND
+==========
+
+The error is transient. Simply try the method again, and the error should not
+reoccur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+4.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI400SP2
+Version           : WINDOWS:4.0 SP2,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,63 @@
+DOCUMENT:Q249224  31-DEC-1999  [iis]
+TITLE   :Querying Physical Dirs in IS Using SQL Returns Empty Recordsets
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Querying physical directories in an Index Server using the OLEDB Provider MSIDX
+returns empty recordsets, because the default Scope only includes all virtual
+directories.
+
+MORE INFORMATION
+================
+
+If you are using physical and virtual directories in a catalog, you need to set
+the appropriate Scope in the SQL Statement.
+
+By default an empty argument in Scope() is interpreted as "/", so that all
+virtual directories are in Scope.
+
+To include all virtual and physical directories in the Scope, the Select
+statement should look like the following:
+
+   Select Column from Scope('"/","\"')
+
+Here is a sample, how to code this statement in Visual Basic script:
+
+   SelectString = "Select Column from Scope('" + chr(34) + "/" + chr(34) + "," + chr(34) + "\" + chr(34) + "')"
+
+Additional query words: MSIDX scope OLEDB directory SQL
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : winnt:2.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

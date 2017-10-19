@@ -1,0 +1,49 @@
+DOCUMENT:Q98611  17-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Changing the Calendar Font Color in Schedule+
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+You can change the color of the font on the calendar in version 1.0 of
+Schedule+ for Windows by using the Colors option of the Control Panel.
+
+Schedule+ uses the Button Shadow color for displaying the last few days of
+the previous month and the first few days of the following month. The days
+of the current month are displayed using the Window Text color set with the
+Colors option of the Control Panel.
+
+When the Button Shadow and Window Text colors are the same, all days on the
+calendar appear in the same color. If you want to use the Month At A Glance
+view, the Button Shadow and Window Text colors should not be to the same
+color.
+
+Additional query words: schedule plus 1.00 video driver win31 3.1 bold
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,94 @@
+DOCUMENT:Q249264  16-MAY-2002  [homegame]
+TITLE   :AC Err Msg: Failed to Establish Connection to the Server
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Play in a Microsoft Asheron's Call game room on Zone.com, a
+screen with two progress vials may be displayed but neither vial may be filled.
+
+In addition, you may receive the following error message after several minutes:
+
+   Failed to establish connection to the server. Please try again in a few
+   minutes.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+ - You are connecting to the Asheron's Call server through a proxy server or
+   firewall.
+
+ - You are connecting to the Asheron's Call server using Network Address
+   Translation.
+
+ - Your are experiencing high Internet latency.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented. If the issue continues to occur, proceed to the next method.
+
+Configure the Proxy Server or Firewall
+--------------------------------------
+
+For additional information about how to configure a proxy server or firewall for
+use with Asheron's Call, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q236430 Asheron's Call: Ports Required to Play Game Through a Firewall
+
+Configure Asheron's Call to Work with Network Address Translation
+-----------------------------------------------------------------
+
+For additional information about how to configure Asheron's Call to work with
+Network Address Translation, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q238325 Asheron's Call: Only One Player on Your LAN Is Able to Play Game
+
+Reduce Your Internet Latency
+----------------------------
+
+For additional information about how to reduce your Internet latency, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q232392 Zone.com: High Latency in Game Lobbies or When Playing Games
+
+Additional query words: 1.00 ac igz msngz hourglass fills asherons
+
+======================================================================
+Keywords          : kberrmsg kbnetwork igz kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

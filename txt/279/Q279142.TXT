@@ -1,0 +1,93 @@
+DOCUMENT:Q279142  25-JUL-2001  [foxpro]
+TITLE   :FIX: BUILD EXE Command May Cause "File Is Not Open" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbProjManager kbvfp600 kbXBase kbDSupport kbCodeSnippet kbVS600sp5 kbVS600sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile the FoxIS example after you instantiate the Employee class, you
+may receive the following error message:
+
+   File is not open.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the latest service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+   Visual Studio Product Updates
+   (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual FoxPro.
+
+2. In the Visual FoxPro system menu, click the Tools menu pad, and then click
+   the Options menu bar.
+
+3. In the Options dialog box, click the File Locations tab, and make sure the
+   Samples folder is pointing to the proper folder.
+
+4. Set the folder that contains the FoxIS project as the default folder.
+
+The folder that contains the FoxIS project is normally under the VFP Samples
+folder. For example, the path may be VFPSamples\Servers\Foxisapi\FoxIS.
+
+5. Open the FoxIS project.
+
+6. In the Command window, run the following code:
+
+   X = NEWOBJECT("Employee","Employee")
+   X = 2
+   BUILD EXE FoxIS FROM FoxIS
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProjManager kbvfp600 kbXBase kbDSupport kbCodeSnippet kbVS600sp5 kbVS600sp5fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

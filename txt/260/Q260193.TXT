@@ -1,0 +1,66 @@
+DOCUMENT:Q260193  19-JUL-2000  [exchange]
+TITLE   :XADM: Mailbox Resources Displays the Wrong Display Name
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you change the display name for a mailbox, the Mailbox column under
+Mailbox Resources in the Exchange Administration program still displays the old
+display name for the mailbox.
+
+CAUSE
+=====
+
+When you update the Display Name field in the mailbox Properties dialog box, the
+change is made to the mailbox entry in the Exchange directory (the dir.edb
+file). The corresponding change to the mailbox object in the Exchange
+Information Store (the priv.edb file) is not made until one of the following
+events occurs:
+
+ - The client logs on to the mailbox.
+
+   -or-
+
+ - A message is sent to the mailbox.
+
+RESOLUTION
+==========
+
+To resolve this problem, log on to the mailbox as a client to update the Mailbox
+column in Mailbox Resources, or send a test message to the mailbox.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

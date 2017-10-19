@@ -1,0 +1,62 @@
+DOCUMENT:Q69244  16-OCT-1999  [win95x]
+TITLE   :Calculator Err Msg: List of Error Messages
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Below is a list of the possible error messages you may receive from the
+Calculator application (CALC.EXE) included with Microsoft Windows version 3.00.
+
+MORE INFORMATION
+================
+
++-----------------------------------------------------------------------------------------------------------+
+| 1 | Cannot divide by zero                                                                                 | 
++-----------------------------------------------------------------------------------------------------------+
+| 2 | Cannot open Clipboard.                                                                                | 
++-----------------------------------------------------------------------------------------------------------+
+| 3 | Insufficient memory for data; close one or more Windows
+   Applications to increase available memory. | 
++-----------------------------------------------------------------------------------------------------------+
+| 4 | Invalid input for function                                                                            | 
++-----------------------------------------------------------------------------------------------------------+
+| 5 | Result is too large for display                                                                       | 
++-----------------------------------------------------------------------------------------------------------+
+| 6 | Result is too small for display                                                                       | 
++-----------------------------------------------------------------------------------------------------------+
+| 7 | Result of function is undefined                                                                       | 
++-----------------------------------------------------------------------------------------------------------+
+
+Additional query words: 3.00 3.0 3.0a 3.00a err msg errmsp
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

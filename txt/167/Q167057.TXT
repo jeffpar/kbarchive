@@ -1,0 +1,72 @@
+DOCUMENT:Q167057  11-JAN-2001  [vbwin]
+TITLE   :PRB: Templates Are Not Available After Installing Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool kbui kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Visual Basic 5.0, remove the Visual Basic installation directory,
+then reinstall Visual Basic to a new directory, the templates might become
+unavailable. When the templates are not available, you will not be able to run
+any Wizards or load any templates from the New Project dialog.
+
+CAUSE
+=====
+
+This problem may be caused by previous installations of Visual Basic 5.0 or
+Visual Basic 5.0 Control Creation Edition (VB5CCE) that had templates in a now
+non-existent directory.
+
+RESOLUTION
+==========
+
+The following steps fix the problem:
+
+1. With a project open, go to the Tools menu and select Options. The Options
+   dialog appears.
+
+2. In the Options dialog, go to the Environment tab and set the Templates
+   Directory.
+
+3. Enter the Templates directory where your template files reside. For the
+   default templates, set the path to the Template sub-directory below your
+   Visual Basic installation directory. For example:
+
+      C:\PROGRAM FILES\DEVSTUDIO\VB\Template
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbtool kbui kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

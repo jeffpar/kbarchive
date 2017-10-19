@@ -1,0 +1,70 @@
+DOCUMENT:Q193632  13-JUN-1999  [homemm]
+TITLE   :Bookshelf: Wave Sounds Pause or Break Up During Playback
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 99 
+ - Microsoft Bookshelf 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play a sound file in Bookshelf 2000 or Bookshelf 99, the
+sound playback may pause or break up.
+
+CAUSE
+=====
+
+This behavior can occur if you run Bookshelf on a computer based on a 486
+processor.
+
+The minimum system requirements for Bookshelf 99 specify a 60 MHz Pentium or
+faster processor.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the program on a computer that meets the minimum
+system requirements to run Bookshelf 2000 or Bookshelf 99.
+
+For additional information about the minimum system requirements needed to run
+Bookshelf 99, please see the Bookshelf 99 Readme.txt file in the Support folder
+on the Bookshelf 99 CD-ROM.
+
+MORE INFORMATION
+================
+
+Bookshelf 2000 and Bookshelf 99 use MPEG-3 for compressed sound playback.
+Earlier versions of Bookshelf use Microsoft ADPCM and Microsoft GSM audio codecs
+for compressed sound playback.
+
+Additional query words: multimedia multi-media mmtitles mm MPEG choppy au multi media
+
+======================================================================
+Keywords          : kbenv kbsound kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf2000 kbBookShelf1999
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

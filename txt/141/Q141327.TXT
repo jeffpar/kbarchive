@@ -1,0 +1,70 @@
+DOCUMENT:Q141327  08-NOV-2001  [homemm]
+TITLE   :Multimedia: WinToon Causes Hang or Page Fault in Kernel32.dll
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft World of Flight for Windows, version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the multimedia programs listed at the top of this article,
+the program stops responding (hangs), or you receive an error similar to the
+following:
+
+   FLYEXP32 caused an invalid page fault in module KERNEL32.DLL
+
+CAUSE
+=====
+
+The file Otoon32.dll is corrupt and causes a Page Fault when WinToon animations
+are played.
+
+RESOLUTION
+==========
+
+To resolve this problem, try one of the following:
+
+ - Clean the multimedia CD with a soft cloth.
+
+-or-
+
+ - Delete the file Otoon32.dll located in the Windows\System folder.
+
+-or-
+
+ - Restart Windows 95.
+
+When you restart the multimedia program, the file Otoon32.dll is copied to your
+hard disk, eliminating the problem.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm hangs hanging hanged crashed crash crashes freeze frozen locked locked-up lock hang hanged bombed bomb down
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbZNotKeyword kbKidsSearch kbWorldofFlight kbOceans
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

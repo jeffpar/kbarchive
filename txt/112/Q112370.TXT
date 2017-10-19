@@ -1,0 +1,73 @@
+DOCUMENT:Q112370  02-OCT-1999  [win3x]
+TITLE   :Err Msg: The Windows for Workgroups Network Has Not Started
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+SYMPTOMS
+========
+
+When you start Windows for Workgroups, you may receive the following error
+message:
+
+   The Windows for Workgroups network was not started. Check your
+   configuration, or run setup again to set up Windows for Workgroups
+   properly.
+
+   The Windows for Workgroups network driver was unable to load.
+
+CAUSE
+=====
+
+This error message occurs if IFSHLP.SYS is not properly loaded in the
+CONFIG.SYS file. Windows for Workgroups 3.11 Setup adds the following line
+to the CONFIG.SYS file
+
+   Device=<path>\IFSHLP.SYS
+
+where <path> is the Windows directory. If this line is removed or an older
+copy of the CONFIG.SYS file is restored to the machine, and the machine is
+configured for the Microsoft Windows Network, this error is displayed.
+
+WORKAROUND
+==========
+
+To correct this problem, you must rerun Setup from the original disks or
+manually edit the CONFIG.SYS file. Running Network Setup to configure the
+network does not correct this problem, nor does running maintenance mode
+Setup.
+
+Additional query words: 3.11 "has not started"
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

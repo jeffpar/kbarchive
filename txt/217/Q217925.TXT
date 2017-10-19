@@ -1,0 +1,58 @@
+DOCUMENT:Q217925  22-OCT-2000  [winnt]
+TITLE   :Unable to Provide Installation Path for SNA Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:NT:4.5
+OPER/SYS:
+KEYWORDS:kbsetup kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run BackOffice Server 4.5 Setup, you may be prompted for an
+installation path for the SNA portion of the installation. However, when you try
+to change the installation path for SNA Server, Setup does not permit you to
+make this change.
+
+CAUSE
+=====
+
+This issue can occur if a previous installaion of Microsoft SNA Server exists on
+your computer. If this condition exists, Setup uses the original installation
+path to install SNA Server.
+
+RESOLUTION
+==========
+
+To work around this issue, uninstall the original installation of SNA Server, or
+use the same path as the existing installation.
+
+Additional query words: bof 4.50
+
+======================================================================
+Keywords          : kbsetup kbui 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : NT:4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

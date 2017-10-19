@@ -1,0 +1,128 @@
+DOCUMENT:Q101045  26-MAY-2001  [homekids]
+TITLE   :Encarta Err Msg: The Necessary Text Fonts Are Not Available
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1993 edition,1994 edition,1995 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive one of the following error messages when you start Encarta:
+
+   Error on startup
+   There is a problem starting Encarta:
+   The necessary text fonts are not available.
+
+   -or-
+
+   Error On Startup. There is a problem starting Encarta. Stop. The Dictionary
+   cannot be found. This may be due to a corrupted encarta.ini file. Encarta can
+   still run, but without the dictionary.
+
+RESOLUTION
+==========
+
+If you have just installed Encarta, you must restart Windows. If restarting
+Windows doesn't solve your problem, run Encarta Setup again from the compact
+disc (CD) or perform a manual Encarta setup.
+
+For manual setup steps, query on the following words in the Microsoft Knowledge
+Base:
+
+   Encarta and manual and installation and instructions
+
+NOTE: This error may occur also if the attributes for V5sp.Fon and V6sp.Fon are
+set to read-only. The solution is to remove the read-only attributes, recopy the
+*.fon files from the Fonts folder (directory) on the Encarta CD to the Windows
+System folder and exit and restart Windows.
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+MORE INFORMATION
+================
+
+This error message appears if any of the fonts that Encarta Setup installs and
+uses are not present in the Windows System folder.
+
+These fonts include:
+
+Encarta 1993 or 1994
+--------------------
+
+ - V1sp.fon
+
+ - V2sp.fon
+
+ - V3sp.fon
+
+ - V4sp.fon
+
+ - V5sp.fon
+
+ - V6sp.fon
+
+ - V7sp.fon
+
+Encarta 1995
+------------
+
+ - Arial.ttf
+
+ - Msref1.ttf
+
+ - Msref2.ttf
+
+ - Phonetic.ttf
+
+ - Symbol.ttf
+
+Encarta 96 Encyclopedia
+-----------------------
+
+ - Arial.ttf
+
+ - Msgeotr1.ttf
+
+ - Msgeotr2.ttf
+
+ - Msref1.ttf
+
+ - Msref2.ttf
+
+ - Phonetic.fon
+
+ - Symbol.ttf
+
+Additional query words: 1.00 starting running beginning problem 1993 1994 1995 Usage Viewer 2.0 MediaView
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac
+Version           : :1993 edition,1994 edition,1995 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

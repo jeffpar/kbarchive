@@ -1,0 +1,68 @@
+DOCUMENT:Q242126  10-AUG-2001  [winnt]
+TITLE   :Cannot Delete Print Job and Printer
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you delete a print job that has stopped responding in the print queue, the
+status of the print job may change to 'Deleting', but the print job stays in the
+print queue. Also, you are unable to delete the printer where the print job was
+sent.
+
+CAUSE
+=====
+
+This behavior can occur if the print job is stuck in the spooler.
+
+RESOLUTION
+==========
+
+To resolve this issue, restart the Spooler service. To do this, follow these
+steps:
+
+1. Close the Printers folder.
+
+2. To stop the Spooler service, type the following command at the command
+   prompt, and then press ENTER:
+
+   NET STOP SPOOLER
+
+3. To start the Spooler service again, type the following command at the command
+   prompt, and then press ENTER:
+
+   NET START SPOOLER
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

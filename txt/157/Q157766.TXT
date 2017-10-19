@@ -1,0 +1,86 @@
+DOCUMENT:Q157766  23-MAR-2000  [foxpro]
+TITLE   :FIX: Breakpoint Not Refreshed for Duplicate Watch Window Entry
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbtool kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The breakpoint for duplicate entries in the Debugger Watch window are not
+updated unless the focus is moved from one to the other.
+
+WORKAROUND
+==========
+
+After setting the breakpoint on one entry if you move to (Highlight) another
+instance of that entry, then the duplicate is assigned a breakpoint
+automatically. The reverse behavior occurs when removing the breakpoint.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run Visual FoxPro and create an object, for example:
+
+         MyForm = CREATEOBJECT("Form")
+
+2. Open the Debugger and enter "MyForm" (without the quotation marks) as a Watch
+   expression.
+
+3. Add "MyForm" (without the quotation marks) as a Watch expression again.
+
+4. Select the First MyForm entry.
+
+5. In the Watch window set a breakpoint on the first "MyForm" entry by
+   double-clicking in the blank area to the left of the "+" sign for "MyForm."
+
+6. Set a breakpoint on the second "MyForm" entry in the same manner as in the
+   previous step. Make sure that you set the breakpoint without selecting the
+   second entry and with the first entry of "MyForm" selected.
+
+In step 5 you have to double-click twice to set the breakpoint. This should not
+be allowed and should not be necessary. The breakpoints for duplicate entries
+should be updated automatically so a change (breakpoint Insert/Remove) in one
+instance affects all other instances of the entry in the Watch window.
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

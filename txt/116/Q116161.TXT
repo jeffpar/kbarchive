@@ -1,0 +1,52 @@
+DOCUMENT:Q116161  09-DEC-1999  [homemm]
+TITLE   :Baseball: Last Line of Stat List Cut Off when Printed/Copied
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball for Windows, version 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you copy or print a statistics list from Complete Baseball, you may find that
+the bottom line of the list is all or partially cut off. This behavior occurs
+with statistics lists such as Records, League Leaders, and Team Rosters.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Complete Baseball, 1994
+edition.
+
+The problem has been corrected in Complete Baseball Guide for Windows, 1995
+edition.
+
+Additional query words: 1994 multi media multimedia multi-media partly completely missing statistics statistic stats statistics/list
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

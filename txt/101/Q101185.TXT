@@ -1,0 +1,59 @@
+DOCUMENT:Q101185  26-MAR-2002  [visualc]
+TITLE   :INFO: Using cout in an Application and DLL
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbLangCPP kbVC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 1.5, 2.0, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The standard output stream (cout) can be used in an application or Dynamic- Link
+Library (DLL) to display information. When using cout in an application and a
+DLL simultaneously, special care is needed to ensure that the text display is
+synchronized.
+
+Because the cout text stream is buffered, text from a DLL may not appear correct
+relative to text from the application. To correct this problem, always use the
+endl manipulator when outputting text with cout. Below is an example:
+
+      cout << "Hello World" << endl;
+
+The endl manipulator inserts a newline character and then flushes the stream
+buffer. This ensures that text displayed from the application and DLL is
+synchronized.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbLangCPP kbVC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC500 kbVC600 kbVC200 kbVC32bitSearch kbVC500Search
+Version           : :1.0,1.5,2.0,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,60 @@
+DOCUMENT:Q289106  02-NOV-2001  [homegame]
+TITLE   :DirectX 8: Cannot Install on a Computer That Uses a Cyrix 686
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows Millennium Edition 
+ - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft DirectX 8 or later, you may receive the
+following error message:
+
+   Unsupported processor.
+
+CAUSE
+=====
+
+This behavior can occur if your computer is running a Cyrix 686-class processor.
+
+MORE INFORMATION
+================
+
+This behavior can occur if the Cyrix 686 processor does not properly support the
+CPUID command or the processor is detected as a 486-class processor.
+
+Non-Pentium class processors are unsupported by DirectX 8 and later.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbOSWin2000 kbOSWin98 kbOSWinME kbOSWinSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

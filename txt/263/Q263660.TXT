@@ -1,0 +1,81 @@
+DOCUMENT:Q263660  14-JUN-2001  [vbwin]
+TITLE   :BUG: Click Event May Fire Even Though Command Button Is Hidden
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB kbDSupport kbVBM300bug kbOSWinCEPsPC200 kbOSWinCE300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft eMbedded Visual Basic, version 3.0, used with:
+    - Microsoft Windows CE Platform SDK for Pocket PC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Windows CE for the PocketPC project, the Click event of a command button
+still fires even though it is invisible. This behavior does not occur in
+Microsoft Visual Basic 6.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Windows CE for the PocketPC project in eMbedded Visual Basic.
+   Form1 is created by default.
+
+2. Add a command button and a list box to Form1.
+
+3. Paste the following code to Form1:
+
+   Private Sub Command1_Click()
+       List1.AddItem "Addition"
+   End Sub
+
+   Private Sub Form_Load()
+       Command1.Visible = False
+       Command1.Default = True
+   End Sub
+
+   Private Sub Form_OKClick()
+       App.End
+   End Sub
+
+4. Press the F5 key to run the project, and then press ENTER. Notice that
+   "Addition" is added to the ListBox control.
+
+Additional query words: evb vbce
+
+======================================================================
+Keywords          : kbGrpDSVB kbDSupport kbVBM300bug kbOSWinCEPsPC200 kbOSWinCE300 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch
+Version           : :3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

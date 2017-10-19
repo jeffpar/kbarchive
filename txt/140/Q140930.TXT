@@ -1,0 +1,48 @@
+DOCUMENT:Q140930  01-NOV-2001  [winnt]
+TITLE   :Chinese Characters Rotated 90 Degrees in Word 97
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbinterop kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation, Pan Chinese Edition, version 4 
+ - Microsoft Word for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Chinese characters typed in Microsoft Word 97 rotate 90 degrees.
+
+RESOLUTION
+==========
+
+To resolve this problem, select the Chinese characters and then change the font
+to the Chinese Font set.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbinterop kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbHLangChinesePan kbWinNT400search kbWordSearch kbZNotKeyword2
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

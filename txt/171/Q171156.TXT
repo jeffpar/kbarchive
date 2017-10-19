@@ -1,0 +1,66 @@
+DOCUMENT:Q171156  09-AUG-2001  [winnt]
+TITLE   :Admin Wizard Creates Home Directories with Incorrect Permissions
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Administrative Wizard under Windows NT Server 4.0, the Add User
+Accounts option creates a User's Home Directory. The directory is created with
+the Everyone group having Full Control rights. It should be created with only
+the Owner having Full Control permissions.
+
+RESOLUTION
+==========
+
+To resolve this problem, do either of the following:
+
+ - Use User Manager for Domains to create the User's Home Directory; it will
+   give the directory the correct permissions, and the user will have Full
+   Control.
+
+   -or-
+
+ - After creating the directory with the Administrative Wizard, use Explorer to
+   modify the permissions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt usrmgr admin tools
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINNT:4.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

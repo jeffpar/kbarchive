@@ -1,0 +1,73 @@
+DOCUMENT:Q223044  06-AUG-2002  [sms]
+TITLE   :SMS: Remote Control Agent Not Found
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbHelpDesk
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Remote.exe file to remote control a client using a RAS link, the
+attempt to connect to the client fails and gives the following error message:
+
+   Remote Control Agent Not found.
+
+Furthermore, upon using Network Monitor to capture the network data sent to the
+client through the RAS link, no TCP data is visible. Some User Datagram Protocol
+(UDP) frames are sent but they fail with the following Internet Control Message
+Protocol (ICMP) error:
+
+   Destination unreachable
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server 2.0. For additional information, click the following article number to
+view the article in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Systems Management Server 2.0.
+This problem was first corrected in Systems Management Server 2.0 Service Pack
+Service Pack 1.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbHelpDesk 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

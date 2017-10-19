@@ -1,0 +1,68 @@
+DOCUMENT:Q256225  21-APR-2000  [pcmail]
+TITLE   :ATT: Extracting ATT Gateway User List by Using the Import Tool
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may need to extract a user list from the AT&T Mail Gateway to Microsoft
+Mail for PC Networks. You can do this by using the Import utility (Import.exe).
+
+MORE INFORMATION
+================
+
+Because the AT&T Mail Gateway to Microsoft Mail for PC Networks is an SMTP
+gateway, you must specify type SMTP for the gateway type when you use the Import
+program to extract the user list.
+
+Using the instructions for the Import utility supplied in Appendix A, pages
+320-337 of the Microsoft Mail for PC Networks Administrator's Guide, the command
+line should be
+
+   import admin -Ppassword -Ffilename -X -Gsmtp -Ddrive
+
+where admin is the administrator's mailbox, password is the password for that
+mailbox, filename is the name of the output file for the gateway users' list,
+smtp is the gateway type, and drive is the drive letter the postoffice database
+is mapped to.
+
+The AT&T Mail Gateway to Microsoft Mail for PC Networks is supported by
+AT&T. For additional information, please click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q249142 Gtwy: AT&T Mail Gateway to Microsoft Mail for PC Networks Version
+   5.0 Supported by AT&T
+
+Additional query words: export dump pull print
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

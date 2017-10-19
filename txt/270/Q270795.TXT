@@ -1,0 +1,55 @@
+DOCUMENT:Q270795  23-OCT-2000  [homemm]
+TITLE   :ELL French: Virtual Challenge Does Not Cross Out Dates
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Language Learning French 
+ - Microsoft Encarta Language Learning French Deluxe 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Virtual Challenge in the French or the French Deluxe editions
+of Microsoft Encarta Language Learning, the first task prompts you to click on
+certain dates.
+
+Although Pierre states that each date will be crossed out after you click on it,
+the dates are not crossed out.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm ellf
+
+======================================================================
+Keywords          : kbdisplay kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbHLangFrench
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

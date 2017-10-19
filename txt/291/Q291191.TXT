@@ -1,0 +1,80 @@
+DOCUMENT:Q291191  12-APR-2001  [vbwin]
+TITLE   :HOWTO: Use the ENTER Key to Navigate in Visual Basic DataGrid
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCtrl kbDataBinding kbGrpDSVBDB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many applications that display data in a grid interface allow the user to use
+the ENTER (RETURN) key to navigate from cell to cell. The Visual Basic DataGrid
+does not offer a property setting to activate such a feature. This article
+demonstrates how you can work around this limitation to achieve ENTER key
+navigation by using simple code.
+
+MORE INFORMATION
+================
+
+The Visual Basic DataGrid normally expects the user to use the ARROW keys or the
+TAB key to navigate from cell to cell and from row to row. (The exact behavior
+of the TAB key depends on your choices for the TabAction and WrapCellPointer
+properties of the DataGrid.) In order to allow the use of the ENTER key for this
+purpose, the developer must trap the ENTER key press in the DataGrid's KeyDown
+or KeyPress event and "convert" the pressed key value to a TAB key:
+
+1. On the DataGrid's Property pages, on the Keyboard tab, select the
+   WrapCellPointer checkbox and select dbgGridNavigation from the TabAction
+   dropdown list. Alternatively, you can set these two properties in your code.
+
+2. If you do not have a command button on your form with the Default property
+   set to True (which would cause the ENTER key to fire the command button's
+   click procedure), you can trap the ENTER key in the DataGrid's KeyDown event
+   as follows:
+
+   Private Sub DataGrid1_KeyDown(KeyCode As Integer, Shift As Integer)
+     If KeyCode = vbKeyReturn Then
+       KeyCode = vbKeyTab
+     End If
+   End Sub
+
+   Otherwise, you can also use the KeyPress event for the same purpose:
+
+   Private Sub DataGrid1_KeyPress(KeyAscii As Integer)
+     If KeyAscii = vbKeyReturn Then
+       KeyAscii = vbKeyTab
+     End If
+   End Sub
+
+Additional query words: DataGrid
+
+======================================================================
+Keywords          : kbCtrl kbDataBinding kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q256816  06-AUG-2002  [automap]
+TITLE   :MapPoint 2001: Error Message When You Click Shortcut in Pushpin
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft MapPoint 2001, you may receive the following error message if you
+click a map shortcut in the text balloon of a pushpin
+
+   Unable to open "%|
+   file:\\<shortcut>".
+
+where <shortcut> is the path to the map shortcut on the hard disk.
+
+CAUSE
+=====
+
+This behavior can occur if you created the map shortcut in MapPoint 2001.
+
+RESOLUTION
+==========
+
+To work around this issue, edit the map shortcut to refer to the map that you
+want to display.
+
+For information about how to accomplish this task, refer to the "Customize a map
+shortcut" Help topic in MapPoint 2001 online Help.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft MapPoint 2001.
+
+Additional query words: mp2001 map point hyperlink web link short cut
+
+======================================================================
+Keywords          : kberrmsg kbtool kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2001
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

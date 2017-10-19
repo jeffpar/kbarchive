@@ -1,0 +1,128 @@
+DOCUMENT:Q118557  10-AUG-1999  [foxpro]
+TITLE   :How FoxPro Uses Universal Thunking for 32-Bit API Calls
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.5x 2.6x 3.00 | 2.5x 2.6x
+OPER/SYS:
+KEYWORDS:kbvfp300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+ - Microsoft FoxPro for MS-DOS, versions 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two methods of creating 32-bit applications in 16-bit versions of
+Windows (versions 3.1x). FoxPro uses two variations of the universal thunking
+(UT) method through the WATCOM compiler in order to perform 32-bit Windows API
+calls.
+
+MORE INFORMATION
+================
+
+Method 1: The Universal Thunk
+-----------------------------
+
+There are three main components of the universal thunk:
+
+ - The 16-bit dynamic-link library (DLL) provides the same entry points as the
+   Win32.DLL. This DLL serves as the 16-bit end for the universal thunk. It
+   should be noted that the programmer must also include code that will detect
+   whether the 32-bit side is loaded.
+
+ - A Win32.DLL that sets up the universal thunk serves as the 32-bit end of the
+   universal thunk. This DLL is supported only under Win32s.
+
+ - A Win32 .EXE (stub) file loads the 32-bit DLL described above.
+
+The following diagram illustrates how the pieces fit together:
+
+                     -----------     -----------     ---------
+                    | Win32 EXE |-->| Win32 DLL |<->|  Win32  |
+   32-bit           |   (stub)  |   |    (UT)   |   |   DLL   |
+                     -----------     -----------     ---------
+                        /|\              /|\ 
+            -------------|----------------|---------------------
+                        \|/              \|/ 
+                     ---------       ------------
+                    | Win 3.1 | <-> | 16-bit DLL |
+   16-bit           |   app.  |     |   (UT)     |
+                      ---------      ------------
+
+The load order is as follows:
+
+   The Windows 3.0 or 3.1 application loads the 16-bit DLL. The 16-bit DLL
+   checks to see whether the 32-bit side has been initialized. If it has not
+   been initialized, the DLL spawns the 32-bit .EXE (stub), which then loads the
+   32-bit DLL that sets up the universal thunks with the 16-bit DLL. Once all
+   components are loaded and initialized, when the Windows 3.0 or 3.1
+   application calls an entry point in the 16-bit DLL, the 16- bit DLL uses the
+   32-bit universal thunk callback to pass the data to the 32-bit side. Once the
+   call has been received on the 32-bit side, the proper Win32 DLL entry point
+   can be called.
+
+Method 2: Using the Win32s
+--------------------------
+
+The Win32s consists of three components:
+
+ - An executable that loads Win32s-based applications in Windows version 3.0 or
+   3.1
+
+ - A virtual device driver that provides flat-memory model and structured
+   exception-handling support
+
+ - A set of DLLs that translate Win32 function calls to Win16 function calls
+
+To run your Win32s-based application on Windows version 3.0 or 3.1, you must
+include these Win32s components with your application. Win32s consists of a
+virtual device driver (VxD) and a set of DLLs that extend Windows 3.0 and 3.1 to
+support Win32 applications. The Win32s files must be shipped with the Win32
+application and installed on the Windows 3.0 or 3.1 system.
+
+Win32s is not built into Windows 3.0 or 3.1, so software vendors must ship and
+install Win32s (on the DEVICE = line of the WIN.INI file) along with the Win32
+application in order to have the Win32 application work under Windows 3.0 or
+3.1. The key feature of Win32s is to allow software developers to ship Win32
+applications today for Windows 3.0 or 3.1 and Windows NT that will continue to
+install and work well on future Windows operating systems.
+
+FoxPro for Windows Method
+-------------------------
+
+The WATCOM compiler is used to provide the thunking layer between Windows and
+FoxPro. FoxPro 2.5x for Windows and MS-DOS are both 16-bit applicaiton.. Any
+addresses or pointers that need to be passed to and from Windows 3.0 or 3.1 must
+be "thunked" down to 16 bit; the WATCOM compiler is used to perform the
+translation.
+
+FoxPro 2.6 uses the WATCOM compiler (32-bit) and the Phar Lap extender for
+thunking. It can run on Windows 3.0 and later, including Windows for Workgroups.
+
+Additional query words: VFoxWin FoxDos FoxWin 2.50 2.50a 2.50b 2.60 2.60a pharlap wfw windows for workgroups
+
+======================================================================
+Keywords          : kbvfp300 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbVFP300
+Version           : 2.5x 2.6x 3.00 | 2.5x 2.6x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

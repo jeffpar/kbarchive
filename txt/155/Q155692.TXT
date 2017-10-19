@@ -1,0 +1,57 @@
+DOCUMENT:Q155692  14-DEC-1999  [foxpro]
+TITLE   :HOWTO: Calculate Payments in FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The PAYMENT() function in Visual FoxPro allows the user to calculate a payment
+amount per month based upon a fixed interest rate.
+
+MORE INFORMATION
+================
+
+The following program displays the monthly payment for a 15-year home mortgage
+based upon an 8-percent interest rate:
+
+      nTotal=100000  && total amount borrowed is $100000
+      nRate=.08/12   && payment is made at the end of each month with fixed
+                     && interest rate
+      nPayments=180  && 180 months in 15 year period
+
+      cDisplay=MESSAGEBOX("Your monthly payment is" ;
+         +" "+"$"+ALLTRIM(STR(PAYMENT(nTotal,nRate,nPayments))))
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

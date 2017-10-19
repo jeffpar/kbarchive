@@ -1,0 +1,72 @@
+DOCUMENT:Q131846  27-JUL-2001  [odbc]
+TITLE   :BUG: Deleted Rows Show w/ 'Show Deleted Rows' Option Cleared
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJet: 2262 (2.00.2317)
+
+SYMPTOMS
+========
+
+The Paradox, dBase, and FoxPro drivers will show the deleted rows even when the
+Show Deleted Rows option in the ODBC Setup dialog box is cleared.
+
+NOTE: The Microsoft Access driver does not exhibit this behavior.
+
+In the datasource setup, the default for Show Deleted Rows option is off.
+However, all the above drivers will still show the deleted records on a SELECT
+statement. It appears that the ODBCDDP.INI setting Deleted=Off has no effect
+initially.
+
+CAUSE
+=====
+
+The problem occurs only if you had never selected and cleared the Show Deleted
+check box.
+
+WORKAROUND
+==========
+
+Select and clear the Show Deleted Rows check box in the ODBC Setup dialog box to
+resolve the problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the 16-bit and 32-bit ODBC
+version 2.0 Paradox, FoxPro, and dBase drivers. We are researching this problem
+and will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: odbc mfc desktop drivers
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,104 @@
+DOCUMENT:Q249879  13-JUL-2001  [vbwin]
+TITLE   :PRB: IPF in Module VB6.exe When Exiting VB6
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbVBp600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you quit Visual Basic 6.0, the following error message appears:
+
+   This program has performed an illegal operation and will be shut down.
+
+When you click details in the dialog box that displays this error message, the
+following message appears:
+
+   Invalid page fault in module VB6.exe at <address>.
+
+CAUSE
+=====
+
+Visual Basic is configured to load the Source Code Control Add-in when the
+program is started, but Ssscc.dll is not correctly registered in the system
+registry.
+
+RESOLUTION
+==========
+
+You can use one of the following two methods to resolve this issue:
+
+ - If Microsoft Visual SourceSafe is integrated with Visual Basic:
+
+   Click Start, and then click Run. Type the following commands in the text box:
+
+   regsvr32 "<x>:\<path>\ssscc.dll"
+
+   where <x>:\<path> is the location of the Ssscc.dll file
+
+ - If Microsoft Visual SourceSafe is not integrated with Visual Basic:
+
+   1. Start Visual Basic.
+
+   2. From the Add-Ins menu, click Add-In-Manager.
+
+   3. Under Available Add-Ins, select Source Code Control.
+
+   4. In the Loaded Behavior option box, clear the Loaded/Unloaded and Load on
+      Startup check boxes.
+
+   5. Exit Visual Basic.
+
+MORE INFORMATION
+================
+
+The Source Code Control integrates Visual SourceSafe with Visual Basic.
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Install Visual Basic and Visual SourceSafe.
+
+2. Unregister Ssscc.dll.
+
+3. Launch Visual Basic, and then quit the program.
+
+Additional query words: kbVS600
+
+======================================================================
+Keywords          : kbVBp600 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

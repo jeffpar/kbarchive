@@ -1,0 +1,61 @@
+DOCUMENT:Q154855  08-AUG-2001  [winnt]
+TITLE   :System Reserved Partitions on PowerPCs
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you configure partitions during the text mode portion of Setup on the
+PowerPC (Motorola PowerStack) platform, you will see a small partition marked:
+
+   -- System Reserved 10 MB
+
+The size may vary, but typically, it will be a small partition. It will not be
+assigned a drive letter.
+
+MORE INFORMATION
+================
+
+On the PowerPC platform, a special partition is created that contains the system
+firmware. Under no conditions should this partition be deleted. If you delete
+this partition, the computer will be unbootable. This partition is separate from
+the normal RISC architecture system partition that contains files needed to
+start the operating system. On RISC machines, the system partition should always
+be FAT. If the "System Reserved" partition is accidentally deleted or damaged,
+contact the hardware vendor for utilities and instructions on how to re-create
+it.
+
+
+Additional query words: prodnt PowerStack Motorola PPC
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

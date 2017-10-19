@@ -1,0 +1,133 @@
+DOCUMENT:Q128079  27-JUL-2001  [win95x]
+TITLE   :Updated Drivers for File and Printer Sharing Security
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::95
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork 3rdpartynet msnets win95 kbgraphxlinkcritical kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use "File and printer sharing for Microsoft Networks" or "File and
+printer sharing for NetWare Networks" on a Windows 95-based computer, remote
+users may be able to gain access to your entire hard disk.
+
+When you share a folder on a Windows 95-based computer, users on UNIX- based
+computers running the SMBCLIENT Samba network client who connect to the shared
+folder may be able to gain access to the entire drive on which the shared folder
+is located.
+
+CAUSE
+=====
+
+You may experience this problem with "File and printer sharing for NetWare
+Networks" or with "File and printer sharing for Microsoft Networks" when the
+following conditions are met.
+
+File and Printer Sharing for NetWare Networks (Nwserver.vxd):
+
+ - Your workstation is configured to share files and printers with "File and
+   printer sharing for NetWare Networks."
+
+ - Remote administration or the Microsoft Remote Registry service is enabled.
+
+   NOTE: These options are not enabled by default.
+
+File and Printer Sharing for Microsoft Networks (Vserver.vxd):
+
+ - Your workstation is configured to share files and printers with "File and
+   printer sharing for Microsoft Networks."
+
+ - Your workstation connects to a LAN, Internet (SLIP or PPP account), or
+   Dial-Up Networking connection that can be accessed by UNIX-based computers
+   running the SMBCLIENT Samba network client.
+
+ - The network administrator does not disable peer services using System
+   Policies.
+
+The SMBCLIENT Samba network client allows users to send illegal networking
+commands over the network. At this time, the Samba client is the only known
+SMBCLIENT that does not filter out such illegal commands. SMBCLIENT users do not
+automatically gain access to the Windows 95 drive; these users must know the
+exact steps to send these illegal commands.
+
+
+RESOLUTION
+==========
+
+To prevent these illegal commands from being run on a Windows 95 computer,
+Microsoft has released new versions of the Nwserver.vxd (4.00.951) and
+Vserver.vxd (4.00.952) files. These files are available in the Microsoft Windows
+95 Service Pack 1 Update Setup.exe file.
+
+For information about Microsoft Windows 95 Service Pack 1, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q142794 Availability of Microsoft Windows 95 Service Pack 1
+
+Installation
+------------
+
+To install this update, follow these steps:
+
+1. Download the Setup.exe file from the Microsoft Download Center to an empty
+   folder.
+
+2. In My Computer or Windows Explorer, double-click the Setup.exe file you
+   downloaded in step 1.
+
+3. Follow the instructions on the screen.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Download Setup.exe now
+   (http://download.microsoft.com/download/win95upg/sp/1/w95/en-us/setup.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+This problem is resolved in Microsoft Windows 98.
+
+For additional information about Windows 95 updates, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q161020 Implementing Windows 95 Updates
+
+Additional query words: syspol msnWin95misc servicepack1
+
+======================================================================
+Keywords          : kbenv kbnetwork 3rdpartynet msnets win95 kbgraphxlinkcritical kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

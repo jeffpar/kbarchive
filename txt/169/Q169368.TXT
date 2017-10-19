@@ -1,0 +1,76 @@
+DOCUMENT:Q169368  11-DEC-1999  [foxpro]
+TITLE   :PRB: 3D Frame Control Causes Modal Form to Become Invisible
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 5.0 or 5.0a, adding a Threed(3D) Frame ActiveX control to a
+modal Form causes the modal form to disappear when you run the form.
+
+RESOLUTION
+==========
+
+There are two workarounds for this problem:
+
+ - Change the WindowType property of the form to 0-modeless.
+
+-or-
+
+ - Assuming the WindowType property is set to 1-modal, change the Visible
+   property of the 3D Frame ActiveX control to false (.F.) at design-time then
+   set the Visible property of the 3D Frame control to .T. in the Activate event
+   of the form.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Set the WindowType property of the form to 1 - modal.
+
+3. Add a Threed Frame control to the form.
+
+4. Save and run the form. Note that the form disappears and remains invisible.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

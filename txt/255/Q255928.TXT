@@ -1,0 +1,68 @@
+DOCUMENT:Q255928  08-AUG-2001  [winnt]
+TITLE   :"STOP 0x1e" After Installing Norton AntiVirus Updates
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install a Symantec Norton AntiVirus updated driver, you may receive
+any of the following error messages on a blue screen:
+
+   0000001e : c0000005 00000085 00000000 00000085
+
+   0000001e : c0000005 f1145494 00000000 0000013c
+
+Note that the parameters in the error message may vary.
+
+CAUSE
+=====
+
+This behavior can occur if you install an updated driver with the following time
+stamp:
+
+   File name     Time stamp
+   --------------------------------------
+   Navex15.sys   Mon Feb 14 15:22:04 2000
+
+RESOLUTION
+==========
+
+Symantec recommends that you revert to an earlier version of the driver or
+install a later version from Symantec.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

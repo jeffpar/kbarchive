@@ -1,0 +1,65 @@
+DOCUMENT:Q157224  14-NOV-2000  [word97]
+TITLE   :WD97: Horizontal Rule and Other Web Elements Limited to 6.5 Inch
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Word to browse a World Wide Web page that has a horizontal rule,
+the horizontal rule appears to be approximately 6.5 inches long and is aligned
+to the left. In contrast, when you view the same page in a Web browser, such as
+Internet Explorer, the length of the horizontal rule is the full width of the
+screen.
+
+CAUSE
+=====
+
+This problem occurs because the converter that Word uses to view a Hypertext
+Markup Language (HTML) document assigns a fixed width for a horizontal rule
+because it can not determine the width of the Word window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+When you browse Web pages in Word, the widths of other elements, such as tables
+and marquees, are also limited to 6.5 inches.
+
+Additional query words: 8.0 word8 word97 line bar
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

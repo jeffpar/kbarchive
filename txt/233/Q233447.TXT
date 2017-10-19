@@ -1,0 +1,86 @@
+DOCUMENT:Q233447  06-AUG-2002  [homemm]
+TITLE   :MSBP: "Please Insert CD-ROM" Error Message When You Eject CD-ROM
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you eject the Microsoft Office 2000 Disc 2 CD-ROM while Microsoft Business
+Planner is running, the following error message may appear on a blue screen
+
+   Please insert CD-ROM O9PRMCD02
+   With Serial Number <####-####> in Drive <cd-rom>:
+
+   If the CD-ROM is still in the drive, it may require cleaning.
+   Press ENTER for OK or ESC to Cancel: OK
+
+where <####-####> is the serial number of the Microsoft Office 2000 Disc 2
+CD-ROM and <cd-rom> is the drive letter of your CD-ROM drive.
+
+If you press ENTER, this error message reappears on the screen.
+
+If you press ESC, you receive the following error message:
+
+   Unable to find Business Planner. Please insert Microsoft Office 2000 Disc 2
+   in the CD-ROM drive or check with your system administrator to ensure that
+   the network path to Business Planner is valid.
+
+If you click OK or Exit, you receive the following error message:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor.
+
+If you click Details, you receive one of the following error messages:
+
+   Msbp caused an exception c0000006H in module Msbp.exe.
+
+   Msbp caused an invalid page fault in module Krnl386.exe.
+
+CAUSE
+=====
+
+This behavior can occur if you configure Business Planner to run from the Office
+2000 Disc 2 CD-ROM.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, use one of the following methods:
+
+ - Configure Business Planner to run from your hard disk.
+
+ - Do not eject the Office 2000 Disc 2 CD-ROM while Business Planner is running.
+
+Additional query words: msbp crash hang compact disc
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

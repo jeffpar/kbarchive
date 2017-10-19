@@ -1,0 +1,68 @@
+DOCUMENT:Q198903  06-AUG-2002  [exchange]
+TITLE   :XFOR: PROFS Connector Does not Support "Messages"
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Connector for IBM OV/VM does not support the delivery of
+"messages" from the host to Exchange Server.
+
+In the OV/VM environment, it is possible to send "messages" rather than "notes"
+to other Office users. "Messages" are smaller versions of "notes." When a host
+user attempts to send a "message" to an Exchange Server user, an error will
+occur on the RSCS console with the following error message:
+
+   No active path to [NODE] is currently open. Message sent to <username>
+   at node <node>.
+
+CAUSE
+=====
+
+The only form of mail documents supported by the Microsoft Exchange Connector
+for IBM OV/VM connector are "notes."
+
+WORKAROUND
+==========
+
+Instruct host users to send only "notes" to Exchange Server users.
+
+STATUS
+======
+
+Microsoft acknowledges this to be a problem.
+
+Additional query words: RSCS, console, messages, error, missing
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

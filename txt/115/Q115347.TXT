@@ -1,0 +1,102 @@
+DOCUMENT:Q115347  11-FEB-2002  [visualc]
+TITLE   :PRB: Debugger Cannot Watch Global Constants in C++ Programs
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.1,4.0,4.01,4.1,5.0
+OPER/SYS:
+KEYWORDS:kbCodeView kbDebug kbide kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Workbench for Windows, version 1.0, used with:
+    - Microsoft Visual C++, version 1.0 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.1, 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft CodeView for MS-DOS, versions 4.0, 4.01, 4.1 
+    - Microsoft CodeView for Windows, versions 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On page 17 in chapter 2 of the C++ Tutorial included in Microsoft C/C++, version
+7.0 and Visual C++, version 1.0, it states:
+
+   "Constants declared with const have an advantage over those defined by
+   #define in that they are accessible to a symbolic debugger, making debugging
+   easier."
+
+However, when global constants are used in a C++ program, they cannot be watched
+in a local or watch window with CodeView or the Integrated (IDE) Debugger in
+Visual C++.
+
+RESOLUTION
+==========
+
+The above behavior is by design in the products listed above. In these versions,
+with the exception of CodeView 4.25 for Win32S, only local constants are
+accessible to CodeView and the Visual C++ IDE debugger.
+
+CAUSE
+=====
+
+In Microsoft C++, storage of global constants is optimized for the purpose of
+saving space, therefore no debug information is generated.
+
+MORE INFORMATION
+================
+
+When debugging the following C++ sample program with CodeView, attempting to
+watch the global const a yields the following error:
+
+   A = CXX0030: Error: expression cannot be evaluated
+
+Attempting to watch A using the Visual C++ for Windows version 1.0 or the Visual
+C++ 32-bit Edition version 1.0 or 2.1 IDE Debugger yields a dialog box with the
+following text:
+
+   Cannot watch 'A'.
+
+Attempting to watch A using the Visual C++ 32-bit Edition version 4.0 IDE
+Debugger produces the following in the Watch window:
+
+   A = CXX0017: Error: symbol "A" not found
+
+Sample Code
+-----------
+
+      /* Compile options needed: /Zi /Od
+      */ 
+
+      const int A=100;
+      void main()
+      {
+         int dummy=0;
+         dummy++;
+      }
+
+Additional query words: utilities
+
+======================================================================
+Keywords          : kbCodeView kbDebug kbide kbVC 
+Technology        : kbVSsearch kbAudDeveloper kbVWB
+Version           : :1.0,2.1,4.0,4.01,4.1,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

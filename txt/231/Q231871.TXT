@@ -1,0 +1,301 @@
+DOCUMENT:Q231871  07-APR-2001  [mspress]
+TITLE   :Running Microsoft Internet Explorer 5 Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Running Microsoft Internet Explorer 5 ISBN 1-57231-949-6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Running Microsoft Internet Explorer 5, ISBN
+1-57231-949-6.
+
+The following topics are covered:
+
+ - Page v: Chapter 13 Page Number Incorrect
+
+ - Page xvii: Chapter 13 Page Number Incorrect
+
+ - Page 22: Text Inconsistent With Interface
+
+ - Page 25: Text Correction
+
+ - Page 27: Step 5 Correction
+
+ - Page 28: Text Correction
+
+ - Page 76: Step 2 Correction
+
+ - Page 148: Step 2 Correction
+
+ - Page 178: Procedure Corrections
+
+ - Page 180: Step 9 Correction
+
+ - Page 215: URL Is No Longer Active
+
+ - Page 231: Procedure Corrections
+
+ - Page 242: Tip Missing Two References To Wallet
+
+ - Page 249: Step 4 In The Third Procedure Incorrect
+
+ - Pages 250-51: Problems In Procedures
+
+ - Page 258: Text In Step 1 Is Incorrect
+
+ - Page 277: Step 5 Correction
+
+ - Page 286: Procedure Corrections
+
+ - Page 288: Step 7 In Procedure Is Incorrect
+
+ - Page 307: Step 4 Correction
+
+ - Page 325: Step 3 In The Procedure Is Incorrect
+
+ - Page 510: Nonsense Word In The Third Bullet
+
+ - Page 529: Text In Step 2 Doesn't Match Interface
+
+ - Page 536: Inconsistency With Interface In Body Text
+
+MORE INFORMATION
+================
+
+Page v: Chapter 13 Page Number Incorrect
+----------------------------------------
+
+The page number listed in the Chapters at a Glance section for chapter 13 is
+incorrect. On page v, please change the page number from 407 to 393.
+
+
+Page xvii: Chapter 13 Page Number Incorrect
+-------------------------------------------
+
+The page number listed in the Table of Contents for Chapter 13 is incorrect. On
+page xvii, please change the page number from 407 to 393.
+
+
+Page 22: Text Inconsistent With Interface
+-----------------------------------------
+
+On page 22 in the last line after the Starting Other IE Applications head, change
+"Windows Updates" to "Windows Update".
+
+
+Page 25: Text Correction
+------------------------
+
+Page 25, add the following sentence to the end of the last paragraph:
+From here, use the Go To A Service Desk drop-down menu to select Support Online.
+
+
+Page 27: Step 5 Correction
+--------------------------
+
+Step 5, first sentence:
+Change: "Click Find."
+To: "Click Go."
+
+
+Page 28: Text Correction
+------------------------
+
+First subheading:
+Change: "Windows Updates"
+To: "Windows Update"
+
+End of first sentence:
+Change: "...and choose Windows Updates."
+To: "...and choose Windows Update."
+
+
+Page 76: Step 2 Correction
+--------------------------
+
+Step 2, first sentence:
+Change: "From the Start menu, click Programs, choose Accessories, and click
+Dial-Up Networking."
+To: From the Start menu, choose Programs, choose Accessories, choose
+Communications, and click Dial-Up Networking."
+
+
+Page 148: Step 2 Correction
+---------------------------
+
+Change: "...Show Related Sites."
+To: "...Show Related Links."
+
+
+Page 178: Procedure Corrections
+-------------------------------
+
+Step 7, under the subheading Synchronizing On Logon, and step 10, under the
+subheading Synchronizing After Your Computer Has Been Idle:
+
+Change: "Click OK until you see Internet Explorer again.
+To: "Click OK until you see the Items To Synchronize dialog box, and then click
+Close."
+
+
+Page 180: Step 9 Correction
+---------------------------
+
+Change: "Click OK until you see Internet Explorer again."
+To: "Click OK until you see the Items To Synchronize dialog box, and then click
+Close."
+
+
+Page 215: URL Is No Longer Active
+---------------------------------
+
+On page 215, the first paragraph under Accessing A VRML Site lists
+http://www.microsoft.com/vrml as a portal to find VRML sample sites. The
+Microsoft VRML pages no longer exist.
+
+
+Page 231: Procedure Corrections
+-------------------------------
+
+Page 231, delete:
+
+ - Step 3
+
+ - Step 4, first sentence: "Click Class 1."
+
+
+Page 242: Tip Missing Two References To Wallet
+----------------------------------------------
+
+The tip is missing two instances of the phrase "in Wallet."
+
+Please rewrite it to say the following:
+"If you do not want Web servers to store receipts on your computer in Wallet,
+click the Receipts tab in Wallet, click?"
+
+
+Page 249: Step 4 In The Third Procedure Incorrect
+-------------------------------------------------
+
+In the third procedure on page 249, please change step 4 from "Click Yes" to
+"Click OK"
+
+
+Pages 250-51: Problems In Procedures
+------------------------------------
+
+Page 250: In the first procedure, change step 1 to read: "On the Tools menu?"
+
+In the second procedure, change step 4 to read: "Click Name"
+
+Page 251: Renumber steps 5 and 6 to be steps 6 and 7, and add the following new
+step 5, in the proper sequence: "In the Name section, click on any e-mail
+addresses that appear, and click Remove."
+
+
+Page 258: Text In Step 1 Is Incorrect
+-------------------------------------
+
+In step 1, please change "choose Options" to "choose Internet Options".
+
+
+Page 277: Step 5 Correction
+---------------------------
+
+Page 277, step 5, under the subheading Adding Buttons:
+Change: "Click OK to confirm your toolbar choices."
+To: "Click Close to confirm your toolbar choices."
+
+
+Page 286: Procedure Corrections
+-------------------------------
+
+Step 3, change: "Internet Explorer"
+To: "Windows Explorer"
+
+Add a fourth step: "4. To return to Internet Explorer, close Windows Explorer."
+
+
+Page 288: Step 7 In Procedure Is Incorrect
+------------------------------------------
+
+The text in step 7 in the procedure is not accurate. Please replace step 7 with
+the following:
+
+Click OK to confirm your choices and Exit.
+
+
+Page 307: Step 4 Correction
+---------------------------
+
+Change: "Click OK until you see Internet Explorer again."
+To: "Click Close to exit Certificate Manager, and then click OK until you see
+Internet Explorer again.
+
+
+Page 325: Step 3 In The Procedure Is Incorrect
+----------------------------------------------
+
+On page 325, please delete the entire text of step 3, and renumber the remaining
+steps in the procedure accordingly.
+
+
+Page 510: Nonsense Word In The Third Bullet
+-------------------------------------------
+
+Please remove the interpolated characters in the third bullet item on the page,
+and replace the second word with "newsgroups."
+
+
+Page 529: Text In Step 2 Doesn't Match Interface
+------------------------------------------------
+
+In the second sub-bullet below step 2, replace "Choose New Message" with "Choose
+News Message"
+
+
+Page 536: Inconsistency With Interface In Body Text
+---------------------------------------------------
+
+In the second line below the Viewing Downloaded Messages head, please replace
+"click View" with "click the newsgroup".
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 1-57231-949-6 eubook eurun ie50 Pfaffenberger
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

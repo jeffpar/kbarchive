@@ -1,0 +1,61 @@
+DOCUMENT:Q110918  05-FEB-2000  [foxpro]
+TITLE   :BUG: Graphical Help Redraws Multiple Times
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the graphical-style help is invoked in FoxPro for Macintosh, the Help
+dialog box redraws multiple times.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in FoxPro version 2.5b for
+Macintosh. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+To reproduce this problem, type the following commands in the Command window:
+
+      SET HELP TO FOXHELP.HLP
+      HELP
+
+When the Help window first appears, it redraws multiple times before activating
+and displaying correctly.
+
+Additional query words: vFoxmac FoxMac 3.00 buglist2.50b
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

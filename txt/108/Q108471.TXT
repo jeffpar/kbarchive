@@ -1,0 +1,56 @@
+DOCUMENT:Q108471  30-JUL-2001  [lanman]
+TITLE   :Scripts Timeout for Large Transfers or over Slow Links
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+SYMPTOMS
+========
+
+Scripts may get cut off when you transfer large amounts of data during a logon
+script or run a script over a slow link.
+
+CAUSE
+=====
+
+This is caused by a hardcoded timeout in code. It was 10 seconds in LAN Manager
+2.1 and 30 seconds in LAN Manager 2.2.
+
+RESOLUTION
+==========
+
+The default timeout has been left at 30 seconds, although new code allows you to
+set the timeout by adding an entry to the LANMAN.INI file. To change the default
+timeout, add a section to LANMAN.INI, [windows], and insert a logintimeout value
+between 1 and 32000 (seconds).
+
+For example, to set the timeout at 300 seconds:
+
+   [windows]
+   logintimeout=300
+
+The change was made in Netapi.dll; the new Netapi.dll is available as CSD01.068.
+
+Additional query words: 2.10 2.1 2.10a 2.20 2.2 timeout fail hang windows win login
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

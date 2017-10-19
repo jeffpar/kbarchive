@@ -1,0 +1,59 @@
+DOCUMENT:Q125449  08-AUG-2001  [win95x]
+TITLE   :Arranging Icons by Type Does Not Sort by Extension
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95 4.00
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you choose to arrange icons by type, they are not arranged by their
+extensions.
+
+CAUSE
+=====
+
+When you choose to arrange icons by type, Windows 95 sorts the icons according
+to their registered names. Extensions are not used unless the file type is not
+registered. For example, files with .EXE extensions appear before files with
+.BMP extensions.
+
+Note that this behavior is not as apparent if you clear the "Hide MS-DOS file
+extensions for file types that are registered" check box on the View tab. To see
+this tab, click Options on the View menu.
+
+STATUS
+======
+
+This behavior is by design.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 95 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

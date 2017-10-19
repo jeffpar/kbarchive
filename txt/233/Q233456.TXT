@@ -1,0 +1,72 @@
+DOCUMENT:Q233456  23-JUN-1999  [homemm]
+TITLE   :Business Planner: Menus and Buttons Disappear from Toolbar
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the size of the Microsoft Business Planner home screen, menus
+and buttons may disappear from the standard toolbar.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - The standard toolbar does not fit on one line.
+
+ - You increase the size of the Business Planner home screen until the standard
+   toolbar no longer wraps to two lines.
+
+RESOLUTION
+==========
+
+To work around this issue, redraw the Business Planner home screen. To do this,
+minimize and then restore the Business Planner home screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+MORE INFORMATION
+================
+
+To prevent this issue from occurring, reduce the menu font size in Microsoft
+Windows until the standard toolbar does not wrap to two lines when you reduce
+the Business Planner window to its minimum size.
+
+Additional query words: msbp wrapped vanish missing
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

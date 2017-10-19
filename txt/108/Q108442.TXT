@@ -1,0 +1,61 @@
+DOCUMENT:Q108442  08-NOV-2001  [homemm]
+TITLE   :Mac Art Gallery/Wine Guide: Right Side of Image Is Cropped
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbmm kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Art Gallery for the Macintosh, version 1.0 
+ - Microsoft Wine Guide for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print images from Art Gallery or Wine Guide, the right side of the
+printed graphic may be cut off. This occurs because the page prints at the same
+proportions whether the image is in portrait or landscape orientation.
+
+RESOLUTION
+==========
+
+To avoid this problem, you must manually scale the page. To scale the page,
+follow these steps:
+
+1. From the File menu, choose Page Setup.
+
+2. In the Reduce or Enlarge field, enter an enlargement or reduction percentage.
+
+3. Choose OK.
+
+4. Print the page.
+
+Using trial and error, you should be able to find a percentage at which the
+entire graphic prints on the page without being cut off.
+
+Additional query words: mac 1.0 multi media multimedia multi-media crop
+
+======================================================================
+Keywords          : kbgraphic kbmm kbprb 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbWine100Mac kbArtGalleryMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

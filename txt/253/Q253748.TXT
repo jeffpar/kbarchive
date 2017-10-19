@@ -1,0 +1,96 @@
+DOCUMENT:Q253748  07-MAY-2001  [visualc]
+TITLE   :BUG: WizardBar Cannot Go to Declaration of Void Functions
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbide kbVC kbVC600bug kbDSupport kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the WizardBar to go to the declaration of a class member function that
+returns void generates the following message:
+
+   Cannot find the declaration of this function.
+
+RESOLUTION
+==========
+
+To navigate to the function declaration that returns void, find the function in
+the Class View. Right-click the function and select Go to declaration.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+WizardBar is a dockable toolbar that provides instant access to some of the most
+powerful features in Visual C++, such as those traditionally available from
+ClassWizard, as well as many of the new ClassView functions. WizardBar extends
+ClassView functionality by "tracking" your context, updating what's displayed in
+the WizardBar toolbar when your focus shifts.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a default MFC AppWizard exe project, such as Test.
+
+2. Open the file TestView.cpp.
+
+3. Position the cursor on the OnDraw() function (or on any other function that
+   returns a void).
+
+4. Go to WizardBar and click on the WizardBar action icon or the drop-down list
+   box next to it.
+
+5. Select Go to Function Declaration.
+
+The following error message appears:
+
+   Cannot find the declaration of this function.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q196782 BUG: WizardBar Can't Delete Functions that Return void
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbide kbVC kbVC600bug kbDSupport kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

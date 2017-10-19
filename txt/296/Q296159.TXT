@@ -1,0 +1,75 @@
+DOCUMENT:Q296159  06-AUG-2002  [sms]
+TITLE   :Setting Permissions on Packages Using MOF Files May Not Work
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting permissions on packages that are created by using MOF files with the
+SMS_PackageAccessByUsers class does not work. The following sample MOF file
+section illustrates how to use the SMS_PackageAccessByUsers class to ensure that
+Guests users have no access to a package:
+
+   instance of SMS_PackageAccessByUsers
+   {
+   PackageID = $pID;
+   UserName = "[\"Display=Guests\"]GENERIC:GROUP=Guests";
+   Access = 0;
+   };
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+   Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,68 @@
+DOCUMENT:Q100772  26-JUN-2001  [utilities]
+TITLE   :PRB: Upper Left Corner of CodeView Screen Displays "a"
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::4.0,4.01,4.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbCodeView kbDebug kbVC kbprb
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for Windows, versions 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In CodeView for Windows, the single screen mode may display one or more "a"
+characters. The "a" will appear in the title bar, the status bar, or both. This
+does not affect any of the functionality of CodeView.
+
+CAUSE
+=====
+
+This is caused by a problem in the currently set OEM font, and is not
+specifically related to CodeView.
+
+RESOLUTION
+==========
+
+To work around this problem, modify or add an OEMFONTS.FON line in the [boot]
+section of the SYSTEM.INI file. The OEMFONTS.FON line should point to one of the
+OEM fonts provided with the C/C++ compiler (either OEM10.FON or OEM08.FON from
+the BIN directory). For example, the line would appear as follows if you install
+Visual C++ in the default C:\MSVC directory:
+
+   OEMFONTS.FON=C:\MSVC\BIN\OEM10.FON
+
+MORE INFORMATION
+================
+
+Changing the OEM font used will probably change the size of the CodeView window
+on the screen.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kb16bitonly kbCodeView kbDebug kbVC kbprb 
+Technology        : kbAudDeveloper kbCodeView kbCodeView400 kbCodeView401 kbCodeView410
+Version           : :4.0,4.01,4.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

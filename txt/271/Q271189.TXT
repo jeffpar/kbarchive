@@ -1,0 +1,74 @@
+DOCUMENT:Q271189  26-OCT-2000  [winnt]
+TITLE   :Deleting All Users from Container Stops User Deletion from MMS
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1,2.2
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run the discover process on your computer system and update the
+metadirectory, users are not deleted in the metadirectory, even though they have
+been deleted from the connected directory.
+
+CAUSE
+=====
+
+This behavior can occur if all of the users are deleted from the discovered
+container, which can cause the intermediate file, Import, to be blank (empty).
+When the Import file is blank, the list of users previously deleted in the
+connected directory remains in the metadirectory. However, if there is at least
+one user listed in the Import files, your instructions to delete specific users
+can be sent to the metadirectory for processing.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following methods:
+
+ - You can delete the users manually from the connected directory.
+
+-or-
+
+ - If you are planning to repopulate the container with new users, rerun the
+   Management Agent to discover the container and the new users. This procedure
+   can populate the Import file and delete the old users.
+
+STATUS
+======
+
+This behavior is by design to prevent accidental deletions of the entire
+connector space.
+
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,128 @@
+DOCUMENT:Q132440  19-OCT-2000  [foxpro]
+TITLE   :Class Browser: How to Use the ShowMenu and AddIn Methods
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, Professional Edition, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides an example to illustrate the use of the ShowMenu and Addin
+methods of the Class Browser.
+
+MORE INFORMATION
+================
+
+The Class Browser allows you to browse and perform diverse tasks on classes
+stored in visual class libraries (.VCX files). You can customize the Class
+Browser by modifying the properties and methods it exposes. The example provided
+in this article uses the ShowMenu and the Addin methods of the Class Browser.
+
+The ShowMenu method displays a menu built from an array. The source array can
+have two dimensions defining a menu item and a corresponding action. When a menu
+option is selected, the action is executed. The example in this article creates
+a two-dimensional array.
+
+The Addin method provides a way to add user-defined code to the methods exposed
+by the Class Browser. The code can be linked to a method exposed by the Class
+Browser or invoked from the Add_In menu. The example in this article calls the
+add-in program from the Add_In menu. For an example on how to tie a program to a
+method of the Class Browser, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q130500 How to Change the Default Font of the Class Browser
+
+   Q130835 Class Browser: How to Save Data to a File
+
+Step-by-Step Example
+--------------------
+
+1. Copy and paste the following code into a program (.PRG) file. Save the file
+   as CBMENU.PRG. This code defines a two-dimensional array and calls the
+   ShowMenu method.
+
+      * Class Browser add-in example:
+      * Add-in install:  _oBrowser.AddIn('Menu Example,'CBMENU')
+      * Add-in uninstall:  _oBrowser.AddIn('Menu Example',.NULL.)
+
+      LPARAMETERS oSource
+      LOCAL laMenu
+
+      DIMENSION laMenu[3,2]
+      laMenu=''
+      laMenu[1,1]='Apples'
+      laMenu[1,2]="DO food with 'Apples'"
+      laMenu[2,1]='Oranges'
+      laMenu[2,2]="DO food with 'Oranges'"
+      laMenu[3,1]='Plums'
+      laMenu[3,2]="DO food with 'Plums'"
+
+      oSource.ShowMenu(@laMenu)
+      RETURN
+
+      FUNCTION food
+      PARAMETER cstring
+      WAIT WINDOW cstring NOWAIT
+      RETURN
+
+2. Start the Class Browser by using one of the following two methods.
+
+    - Select the Class Browser option from the Tools menu, and open BUTTONS.VCX
+      located in the SAMPLES\CONTROLS directory.
+
+   -or-
+
+    - Type "DO (_BROWSER) WITH "C:\VFP\SAMPLES\CONTROLS\BUTTONS.VCX"" (without
+      the quotation marks)
+
+3. When the Class Browser starts, the _oBrowser variable is created. It refers
+   to an instance of the Class Browser. To register the add-in program, type:
+
+      _oBrowser.AddIn('Menu Example','CBMENU')
+
+   This adds a record to the BROWSER.DBF table and registers the CBMENU program
+   as a menu item. Once CBMENU is registered, the string "Menu Example" will be
+   displayed from the Add-in menu.
+
+4. Click the AddIn button in the Class Browser window. A menu is displayed.
+
+5. Select Menu Example. The CBMENU program is run, and it executes the ShowMenu
+   method. The user defined menu is displayed.
+
+REFERENCES
+==========
+
+For more information about the Class Browser and the AddIn and ShowMenu methods,
+search for "Browsing Classes," "AddIn method," or "ShowMenu method" in the Help
+menu.
+
+Additional query words: 3.00 vFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

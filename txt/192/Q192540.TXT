@@ -1,0 +1,85 @@
+DOCUMENT:Q192540  14-AUG-2002  [exchange]
+TITLE   :XFOR: How to Clean MTS-IN/OUT Using Gwclient and Profinst
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Internet Mail Service (Internet Mail Connector in version 4.0) may stop
+delivering mail, and two Event IDs, 4018 and 4116, may be logged in the
+Application Event Log. This article gives you a set of instructions to follow or
+that can be e-mailed to customers for their use.
+
+
+This behavior is usually the cause of bad messages that you need to remove, in
+the Internet Mail Service folders that reside in the information store.
+
+When you start the Microsoft Exchange Internet Mail Service, you may receive the
+following error messages:
+
+   Event ID: 4018
+   Type: Error
+   Source: MSExchangeIMC
+   Description: Unable to start the Internet Mail Connector service because MAPI
+   could not be initialized.
+
+   Event ID: 4116
+   Type: Error
+   Source: MSExchangeIMC
+   Description: An error was returned from the messaging software the Internet
+   Mail Service uses to process messages on the Microsoft Exchange Server. It is
+   possible that the piece of mail being processed at the time will not be
+   delivered. The message that was being processed has been moved to the "BAD"
+   folder.
+
+CAUSE
+=====
+
+This behavior can occur because occasionally bad messages need to be removed
+from the Internet Mail Service folders that are located in the information
+store.
+
+MORE INFORMATION
+================
+
+The messages that you saved from the In and Out folders can be replayed, but one
+of them may be a bad message. To replay them, stop the Internet Mail Service,
+move them a few at a time to the Imcdata\In (or Out) folder, delete the
+Queue.dat file, and then start the service. The messages are processed normally
+unless one of the messages is bad. If one of the messages is bad, it stops the
+service, and you must repeat this process.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

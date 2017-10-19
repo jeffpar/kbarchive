@@ -1,0 +1,85 @@
+DOCUMENT:Q291071  02-MAY-2001  [msnetwork]
+TITLE   :Sending File Attachments With MSN Explorer's Online Buddies Or W
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A user wishes to send a file to another person, but the file is too large to
+send as an e-mail attachment. An alternative is to transmit files via MSN
+Messenger, because Messenger does not a place a size limit on transferred files.
+However, other limitations exist. Users who are behind firewalls (a Local Area
+Network), may not be able to transfer files to anyone outside of their local
+network. Also, Messenger file transfers only work if both the user sending the
+file and the recipient are online at the same time and both parties are using
+MSN Messenger.
+
+MORE INFORMATION
+================
+
+To send files using Online Buddies in MSN Explorer
+
+1. Start MSN Explorer.
+
+2. Click the Online Buddies icon.
+
+3. Click the name of the buddy that you wish to send a file to.
+   Note: This person must be online and signed in to Messenger.
+
+4. Click the Options link, and then click Send File.
+
+5. Select the file you want to send, and then click the Open button.
+   The recipient will be asked if to either accept or decline the file transfer.
+   If the recipient accepts, the file transfer will begin. If the recipient
+   declines, you will receive a message explaining that the file transfer was
+   declined.
+
+To send files if you're using MSN Messenger without MSN Explorer
+
+1. Start MSN Messenger.
+
+2. Click File, and then click Send a file to.
+   Any Online Contacts in your list that are currently online will appear.
+
+3. Click the name of the contact that you wish to send a file to.
+
+4. Select the file you want to send, and then click the Open button.
+   The recipient will be asked if to either accept or decline the file transfer.
+   If the recipient accepts, the file transfer will begin. If the recipient
+   declines, you will receive a message explaining that the file transfer was
+   declined.
+
+
+Additional query words: kbimu MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

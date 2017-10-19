@@ -1,0 +1,63 @@
+DOCUMENT:Q155594  03-APR-1999  [exchange]
+TITLE   :XADM: Generic Import Format to Add SMTP Secondary Proxy Address
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows you an import file format that produces a custom recipient
+with the same characteristics as a custom recipient produced using the Microsoft
+Exchange Administrator program.
+
+MORE INFORMATION
+================
+
+To produce a custom recipient with the Exchange Administrator program, complete
+the SMTP address and First and Last name fields in the "New Custom Recipient"
+dialog box. Using the E-mail Addresses dialog box in the given custom recipients
+dialog box, add a "New E-mail address" type of Internet Address.
+
+To produce a custom recipient with the same characteristics as one produced by
+the procedure above, use the following import file format:
+
+   Obj-Class, First Name, Last name, Display Name, Alias Name, Directory Name,
+   E-mail Address, Secondary-Proxy-Addresses
+
+   Remote,User,1,User1,User1,User1,SMTP:User1@org.com,
+   SMTP:User1@org2.com%SMTP:User1@org3.com%SMTP:User2@org2.com
+
+NOTE: The file must be produced using a tool, for example Excel, that does not
+produce an end-of-line character or line feed.
+
+Additional query words: CSV SMTP Custom Recipient Import Secondary Proxy
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

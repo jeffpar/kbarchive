@@ -1,0 +1,80 @@
+DOCUMENT:Q180761  21-NOV-2001  [vbwin]
+TITLE   :BUG: Line Controls Drawn on a Frame Are Not Visible at Run-time
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.11,3.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp kbVBp500bug kbVBp600bug kbOSWinCEsearch kbOSWinCE100 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+ - Microsoft eMbedded Visual Basic, version 3.0, used with:
+    - Microsoft Windows CE version 2.11 for the Handheld PC 
+    - Microsoft Windows CE version 2.11 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A line control can be drawn on a frame control at design-time, but it is not
+visible at run-time.
+
+RESOLUTION
+==========
+
+One workaround that affects only horizontal and vertical lines is to use a frame
+control instead of a line control. The caption property of this frame should be
+removed.
+
+When creating a horizontal line, set the height of the frame to 90 and the width
+of the frame to the desired width of the line needed. For vertical lines, set
+the width of the frame to 15 and the height of the frame to the desired line
+length.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Windows CE HPC Pro Project in either Visual Basic or eMbedded
+   Visual Basic. Form1 is created by default.
+
+2. Add a frame control to Form1.
+
+3. Draw one or more line controls onto the frame control.
+
+4. Press F5to Run the project and note that the line control(s) is not visible.
+
+Additional query words: vbce vbce6 kbGrpVB evb
+
+======================================================================
+Keywords          : kbToolkit kbVBp kbVBp500bug kbVBp600bug kbOSWinCEsearch kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch
+Version           : :2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

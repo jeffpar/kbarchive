@@ -1,0 +1,69 @@
+DOCUMENT:Q104144  19-NOV-1999  [msdos]
+TITLE   :Drive-Mapping Problems When Using Interlnk and Stacker
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SYMPTOMS
+========
+
+On a computer using Stacker version 3.0 or earlier, you may encounter
+drive-mapping problems or other unpredictable behavior when using Interlnk.
+
+CAUSE
+=====
+
+Interlnk maps drive letters based on what is available when it loads. If the
+INTERLNK.EXE driver loads before the Stacker drivers, it may map over the drive
+letter used by Stacker for its host drive. This can cause the Stacker host drive
+to map to a different location or not mount at all.
+
+RESOLUTION
+==========
+
+To work around this problem, make certain the DEVICE=C:\DOS\INTERLNK.EXE line
+follows all the Stacker DEVICE= lines in your CONFIG.SYS file.
+
+NOTE: This problem does not occur with DoubleSpace or Stacker 3.1.
+
+MORE INFORMATION
+================
+
+Stacker is manufactured by STAC Electronics, a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 6.00 6.20 dblspace unavailable interlink
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

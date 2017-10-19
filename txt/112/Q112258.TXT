@@ -1,0 +1,47 @@
+DOCUMENT:Q112258  05-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: There Was An Error Opening the Specified File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to export Mail folders to your local hard disk drive, after you
+type your password, the following error message is displayed:
+
+   There was an error opening the specified file.
+
+This problem occurs if you are not using SHARE.EXE. To avoid this problem, either
+load the SHARE.EXE file or export your folder to a file server.
+
+Additional query words: 3.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300b
+Version           : WINDOWS:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q85322  13-DEC-1999  [win95x]
+TITLE   :Genius 1000 Requires Updated ROM and G2BIOS.SYS 1.5 or Later
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you install Microsoft Windows version 3.1 on a computer with a Genius 1000
+monitor, you must have version 2.2 or greater of the Tiga video ROM and Ran-Ger
+driver version 1.5 or later to work with a permanent swap file.
+
+You may receive the following error message if you do not have the updated
+drivers:
+
+   Your CONFIG.SYS file contains a device driver that is incompatible with swap
+   file.
+
+MORE INFORMATION
+================
+
+To work with Windows, the Genius 1000 monitor requires the G2BIOS.SYS driver
+version 1.5 or later to create a permanent swap file, along with Tiga ROM
+version 2.2. Windows is still able to create a temporary swap file with versions
+1.4 and later of the Ran-Ger driver, but needs at least version 2.0 or later of
+the Tiga ROM.
+
+To obtain the current G2BIOS.SYS driver, contact Ran-Ger technical support.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.10 Micro RanGer err msg 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

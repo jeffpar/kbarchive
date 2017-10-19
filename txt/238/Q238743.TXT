@@ -1,0 +1,99 @@
+DOCUMENT:Q238743  17-DEC-2000  [win95x]
+TITLE   :Err Msg: "Setup Needs the File Msie*.exe from CD Internet..."
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During Setup for the Microsoft Zero Administration Kit (ZAK) for Windows 95, the
+following Insert CD dialog box is displayed:
+
+   Setup needs the file 'Msie*.exe' from CD 'Internet Explorer CD'. This CD is
+   not currently in the drive.
+
+If you click Cancel, Setup does not finish.
+
+CAUSE
+=====
+
+This behavior occurs because ZAK is designed to detect and install Microsoft
+Internet Explorer version 3.x.
+
+RESOLUTION
+==========
+
+To work around this issue:
+
+1. Create a file named Msie3.exe and place it on the hard disk.
+
+   NOTE: You can create this file using Notepad or a similar program. Make sure
+   that .txt is not added to the end of the file name.
+
+2. Select this file when you are prompted to do so, and Setup continues
+   normally.
+
+3. After ZAK Setup is finished, replace the Msie3.exe file in the
+   C:\Zak95\Setup\Ieak folder with the current Internet Explorer Setup files
+   (for example, the IE4Setup.exe file downloaded from the Microsoft Web site or
+   the Internet Explorer Setup files created using the Microsoft Internet
+   Explorer Administration Kit).
+
+4. Modify the [Office] section in the Msbatch.inf file to reflect the correct
+   Setup string.
+
+Original string:
+
+   [Office]
+   HKLM,Software\Microsoft\Windows\CurrentVersion\RunOnce,Ieak,,
+   "s:\ieak\MSIE3.EXE /q /r:n"
+
+New string:
+
+   [Office]
+   HKLM,Software\Microsoft\Windows\CurrentVersion\RunOnce,Ieak,,
+   "s:\ieak\IE4SETUP.EXE /q /r:n"
+
+5. Continue the installation.
+
+MORE INFORMATION
+================
+
+For additional information about Microsoft Internet Explorer Administration Kit,
+please click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q191920 Contents of the IEAK 4.01a Readme.txt File
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

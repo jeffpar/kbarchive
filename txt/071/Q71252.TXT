@@ -1,0 +1,104 @@
+DOCUMENT:Q71252  08-MAY-2002  [utilities]
+TITLE   :Null Pointer Assignment
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS, versions 2.2, 3.0, 3.11, 3.14, 4.0, 4.01, 4.05, 4.1 
+ - Microsoft CodeView for OS/2, versions 2.2, 3.0, 3.11, 3.12, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ 
+
+RESOLUTION
+==========
+
+ 
+
+STATUS
+======
+
+ 
+
+MORE INFORMATION
+================
+
+The location of the null segment can be observed in a link map. It starts at
+DS:0 and is 42H bytes long. The Microsoft copyright notice is written there at
+program startup and if this area is written to during the course of the program,
+the run-time error R6001 will be generated upon program termination.
+
+The most common cause of this error is using a pointer that has not been
+initialized to point to a memory area. Pointers that have not had space
+allocated for them [for example, with malloc()] or that have not been assigned
+to point to a specific data element (for example, arrays or structures) are
+considered uninitialized. Writing to one of these pointers generally results in
+an overwrite of the null data segment.
+
+With CodeView versions 1.0, 2.0, 2.1, 2.2, 2.3, and 2.35, the procedure described
+above should be used for locating the source of an R6001 error. With CodeView
+versions 3.0 and above, you may also use the following menu and keyboard
+commands to set the breakpoint for tracking down a null pointer assignment:
+
+1. Press the F8 or F10 key to step into main().
+
+2. Select Set Breakpoint from the Watch menu.
+
+3. Choose "Break When Expression Has Changed" from the Set Breakpoint dialog
+   box.
+
+4. In the Expression field, enter DS:0.
+
+5. In the Length field, enter 0n66.
+
+6. Choose OK, or press ENTER.
+
+7. Press the F5 key to run the program.
+
+As described above, the program will then break immediately after the errant
+pointer has written to the null segment.
+
+Note that it may be necessary to clear any breakpoints on the null data segment
+and restart the program before entering the above commands in order for these
+procedures to work correctly.
+
+In addition, any breakpoint on DS:0 may stop execution if DS changes. For
+example, if the above breakpoint is set and the program is restarted under
+CodeView, the program will break during the C start-up code [before reaching the
+main() function], since the C start-up sets DS to the default data segment.
+[This is also the reason you must step into main() before setting the breakpoint
+in the first place, otherwise you would not be setting the breakpoint on the
+correct segment.
+
+Additional query words: kbinf 3.00 4.00 4.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView220DOS kbCodeView300DOS kbCodeView311DOS kbCodeView314DOS kbCodeView400DOS kbCodeView401DOS kbCodeView405DOS kbCodeView410DOS kbCodeView220OS2 kbCodeView300OS2 kbCodeView311OS2 kbCodeView312OS2 kbCodeView350OS2
+Version           : :2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,60 @@
+DOCUMENT:Q93130  31-OCT-1999  [win95x]
+TITLE   :Differentiating Between the Add-On Getting Started Manuals
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The two Windows for Workgroups version 3.1 add-on kits contain different Getting
+Started manuals, depending on whether the kit contains a network adapter card.
+These manuals contain different information about installing network adapter
+cards.
+
+
+MORE INFORMATION
+================
+
+The Windows for Workgroups Add-on User Kit contains the Intel EtherExpress 16
+card, and the "Getting Started" manual contains information specific to this
+card. By contrast, the One-User Edition of Windows for Workgroups contains no
+network adapter, and the "Getting Started" manual contains generic information
+about network adapters.
+
+The "Getting Started" manual in the Add-on User Kit has 137 pages, and its
+"Installing Your Network Card" section is on pages 15-33.
+
+The One-User Edition has 145 pages, and its "Installing Your Network Card"
+section is on pages 15-40.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

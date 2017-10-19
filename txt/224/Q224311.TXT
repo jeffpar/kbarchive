@@ -1,0 +1,68 @@
+DOCUMENT:Q224311  01-AUG-1999  [sna]
+TITLE   :SNA Server 4.0 Service Pack 2 Upgrades MDAC To Version 2.1
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0SP2
+OPER/SYS:
+KEYWORDS:kbinterop kbActiveX _IK_kbATM
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Service Pack 2 for Microsoft SNA Server version 4.0 includes an upgrade for MDAC
+components. MDAC is automatically upgraded from version 1.5 to version 2.1.
+
+MORE INFORMATION
+================
+
+Both Microsoft SNA Server and COMTI have been tested with MDAC 2.1. These
+products are not supported with earlier versions of MDAC.
+
+REFERENCES
+==========
+
+It is possible to maintain binary compatibility in ADO components created with
+MDAC version 1.5 and 2.1. The following Knowledge Base articles discuss these
+issues:
+
+   Q195049 Maintain Binary Compatibility in Components Exposing ADO
+
+   Q201580 ADO 2.0 and ADO 2.1 Binary Compatibliity
+
+   Q201576 ADO 2.1 Ships With An ADO 2.0 Type Library
+
+Non-fatal messages are returned to the client with ADO 2.0 and higher that were
+not returned with earlier versions of ADO. These messages are discussed in the
+following Microsoft Knowledge Base article:
+
+   Q197459 PRB: ADO 2.0 Returns Connection Messages to Browser
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbActiveX _IK_kbATM 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

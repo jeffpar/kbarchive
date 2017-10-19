@@ -1,0 +1,61 @@
+DOCUMENT:Q183874  26-MAY-1999  [homegame]
+TITLE   :AOE: Priests Do Not Heal Assassins in Yamato Campaign
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusage aoe kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use a Priest to heal an Assassin in the "Yamato Empire of
+the Rising Sun" campaign, the Priest may not recognize and heal the Assassin.
+
+CAUSE
+=====
+
+The Priest may not recognize the Assassin because Yamato Priests are blind and
+lame. The Priests cannot see the Assassins, and they cannot move.
+
+RESOLUTION
+==========
+
+Use either of the following methods to heal the Assassin:
+
+ - Move the Assassin closer to the Priest until the Assassin is recognized. The
+   Priest and Assassin may almost have to touch. When the Priest recognizes the
+   Assassin, the Assassin is healed.
+
+ - Move the Assassin to different sides of the Priest until the Assassin is
+   recognized. When the Priest recognizes the Assassin, the Assassin is healed.
+
+Additional query words: 1.00 rise of rome expansion pack ages ageofempires izumo nara shimojima
+
+======================================================================
+Keywords          : kbusage aoe kbimu 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

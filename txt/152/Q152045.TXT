@@ -1,0 +1,68 @@
+DOCUMENT:Q152045  09-AUG-2001  [winnt]
+TITLE   :"Use Mappings in file" Check Box Grayed Out
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In the Migration Tool (Nwconv.exe), the Use Mappings in File check box, the
+Create button and Edit button are grayed out("disabled") on "User and Group
+Options."
+
+
+WORKAROUND
+==========
+
+ - Click OK on "User and Group Options" and continue with migration process;
+   because the Use Mappings in File option is grayed out, it will not cause a
+   problem.
+
+   OR -
+
+ - Go back to the Users and Group Options window and clear the Use Mappings in
+   File box and continue
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A fix
+to this problem is available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft Product
+Support Services for more information.
+
+
+Additional query words: NWCONV
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

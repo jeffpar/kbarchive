@@ -1,0 +1,74 @@
+DOCUMENT:Q150135  02-NOV-1999  [fortran]
+TITLE   :PRB: Error in ICHAR() Using Multi-Character Input Argument
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbcode kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to use a multi-character string input argument to the ICHAR()
+intrinsic function results in the following compilation error:
+
+   error FOR2326: character length of argument number 1 of intrinsic procedure
+   ICHAR is too long
+
+RESOLUTION
+==========
+
+Use a one-haracter substring of the multi-character string input argument to the
+ICHAR() intrinsic function.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following code illustrates the problem and workaround:
+
+Sample Code to Illustrate Behavior and Workaround
+-------------------------------------------------
+
+   ! Compile options needed: none
+
+         PROGRAM MAIN
+         CHARACTER*16 STR
+         STR='THIS IS A STRING'
+         K=ICHAR(STR)           ! FOR2326 error - comment for workaround
+   !      K=ICHAR(STR(1:1))     ! uncomment for workaround
+         PRINT *, K
+         END
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbcode kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

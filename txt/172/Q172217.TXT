@@ -1,0 +1,105 @@
+DOCUMENT:Q172217  30-APR-1999  [iis]
+TITLE   :ASP Returns Invalid Application Name Error Message
+PRODUCT :Internet Information Server
+PROD/VER:3.00
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you have more than 1000 WWW virtual directories, you may get the following
+error message when an Active Server Page (ASP) is accessed:
+
+   Invalid Application Name
+
+CAUSE
+=====
+
+You may have supplied a wrong path.
+
+ASP can only support up to 1000 WWW virtual directories.
+
+NOTE: This is hard coded in the ASP code.
+
+
+RESOLUTION
+==========
+
+Microsoft has produced a fix which allows the 1000 virtual directory upper limit
+to be changed via a registry entry.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 3.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+
+MORE INFORMATION
+================
+
+The hotfix for ASP now has a new registry entry to ASP that allows you to change
+the upper limit that how many WWW virtual directories ASP can support.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Microsoft Windows NT to correct them.
+Microsoft cannot guarantee that any problems resulting from the use of Registry
+Editor can be solved. Use this tool at your own risk.
+
+To change the upper limit, do the following steps:
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. Go to the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\ASP\Parameters
+
+3. Click Add Value on the Edit menu. Use the following entry:
+
+   Value Name: MaxVroots
+   Data Type:  REG_DWORD
+   Value:      a number which is larger than the number of WWW
+   virtual directories (default 1000).
+
+4. Exit the Registry Editor and restart the IIS for the change to take effect.
+
+Additional query words: frontpage
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbiisSearch kbiis300
+Version           : 3.00
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

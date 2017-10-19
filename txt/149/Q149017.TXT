@@ -1,0 +1,76 @@
+DOCUMENT:Q149017  28-JUL-2000  [exchange]
+TITLE   :XCON: MTACheck Event IDs and Command Line Syntax
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Message Transfer Agent (MTA) has a built-in startup recovery method
+(MTACheck). This method is automatically invoked if the MSExchangeMTA does not
+stop cleanly.
+
+This check scans and makes repairs to the MTA database files (DB*.DAT files in
+the MTADATA subdirectory).
+
+MORE INFORMATION
+================
+
+MTACheck generates the following events:
+
+   MSExchangeMTA / Field Engineering #2119 - MTACheck start
+
+   MSExchangeMTA / Field Engineering #2206 - Once for each internal MTA queue
+   checked. The MTA queues are:
+
+   XAPIWRKQ
+   OOFINFOQ
+   REFDATQ
+   MTAWORKQ
+
+   MSExchangeMTA / Field Engineering #2119 - MTACheck completed
+
+The MTACheck saves the process results in the MTACHECK.LOG file located in the
+<Exchange Server>\MTADATA\MTACHEK.OUT directory. It may take a few minutes
+to a few hours to run the MTACheck, depending on the number of files in the
+MTADATA directory.
+
+You can run the MTACheck manually. To run MTACheck manually, type the following
+at the command prompt:
+
+   mtacheck /v /f <Log file name>.LOG
+
+NOTE: You cannot run MTACheck remotely.
+
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbnetwork kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

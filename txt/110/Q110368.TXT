@@ -1,0 +1,566 @@
+DOCUMENT:Q110368  26-MAY-2001  [homemm]
+TITLE   :Encarta 1994: README.WRI Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1994
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the complete text of the README.WRI file that comes with
+Microsoft Encarta 1994 edition.
+
+
+NOTE: This Readme document refers to the Microsoft Download Service (MSDL). As of
+12/31/1998, the MSDL service is no longer available. To download support files,
+visit one of the following Microsoft Internet sites:
+
+   http://www.microsoft.com/support
+
+   ftp://ftp.microsoft.com/softlib/mslfiles
+
+MORE INFORMATION
+================
+
+Microsoft Encarta, 1994 Edition - README
+
+Microsoft Encarta Tips
+
+This document contains information about Microsoft Encarta that was
+unavailable when the User's Guide was printed.
+
+To read this file on-screen, use the Page Down and Page Up keys on your
+keyboard. You can also print the file by choosing the Print command
+from the File menu.
+
+Sending suggestions, content enhancements, and errors
+
+If you have suggestions for features you would like to see in future
+editions of Encarta or comments about the current version, please
+send them to:
+
+        Encarta Program Manager
+        Consumer Division
+        Microsoft Corporation
+        1 Microsoft Way
+        Redmond, WA  98052-6399
+        FAX: (206) 936-7329
+
+Comments about errors, comprehensives, or validity of information
+presented are very welcome. Please send these comments by FAX or U.S. mail.
+
+Table of Contents
+
+Section   Description
+
+    1.    Problems during Setup
+    2.    Encarta and Windows Performance Issues
+    3.    Video Cards and Display Problems
+    4.    Audio Card Problems
+    5.    CD-ROM Problems
+    6.    Word Processors and Encarta
+    7.    Running Encarta on Windows NT
+    8.    General Multimedia Information
+
+1. Problems during Setup
+
+Because Encarta installs system files that may be shared with other
+applications, it is best to shut down other applications before setting up.
+
+If Setup is interrupted by a loss of power, a power surge, or some
+other unexpected incident, please restart Windows before you run Setup
+again.
+
+2. Encarta and Windows Performance Issues
+
+There are several ways to make Encarta run faster.  Many of the methods
+described below are general tips to improve the performance of any
+Windows application.   Consult your Windows manual for more details.
+
+Microsoft Encarta uses your computer's memory (RAM) to display pictures
+and play animations and sound.  If Encarta runs slowly or you see
+out-of-memory errors, Encarta may not have enough memory.  Below are
+some ideas to make the best use of your available memory.
+
+* Close all applications that you are not using.
+
+* Set up a permanent Windows swap file.
+
+Windows works best when there is hard disk space allocated for swapping
+a file into or out of your computer's memory.  To set up a permanent
+Windows swap file on your hard disk, open Windows Control Panel
+(usually in the "Main" program group of Program Manager), and click on
+the icon "386 Enhanced."  Then use the "Virtual Memory" button to see
+whether your current swap file is temporary or permanent, to check the
+size of the current swap file, and to make changes.   Windows usually
+creates a temporary swap file by default, but if your disk is full or
+fragmented, this temporary file can become unavailable.  If you can,
+make the size of the permanent swap file at least 2048K.
+
+Look at the Help menu of the Windows Control Panel or in your Windows
+documentation for more information.
+
+* Defragment or optimize your hard disk by running a defragmentation
+  program.
+
+For example, MS-DOS 6.0 includes a utility called Microsoft Defrag.
+Some other popular utilities are PC Tools, Norton Utilities and Mace
+Utilities.
+
+*  Add more RAM (memory) to your computer.
+
+You can determine how much memory is available by starting MS-DOS,
+typing "mem" and pressing ENTER.  This starts a program that will tell
+you how much memory you have.  You need at least four megabytes
+(sometimes listed as 4096 kilobytes or KB) of RAM, and at least two
+megabytes in your hard disk's Windows swap file to run Encarta.
+
+* Add a cache to your CD-ROM drive.
+
+SmartDrive in MS-DOS 6.2 and utilities like Norton Speedcache+ can
+significantly improve the performance of CD-ROM products by helping
+eliminate unnecessary seeks and reads.   If you have an older or slow
+CD-ROM drive, the difference is very noticeable.
+
+For complete details on improving performance, consult your Windows and
+CD-ROM manuals or see the tips in your Encarta user guide.
+
+3. Video Cards and Display Problems
+
+In some situations, Encarta may encounter video display problems when
+using high resolution video drivers from various video card
+manufacturers. The problems include:
+
+- Maps or illustrations in the article text appear grainy or have
+  'glitches'
+- Animations break up or do not display at all
+- Videos display garbled images or crash Encarta
+
+There are several things you can do if you encounter problems like this:
+
+* Obtain updated drivers from your video card manufacturer
+
+Most problems can be fixed by obtaining new drivers from your video
+card manufacturer.  Contact the manufacturer of your video card to
+determine if there are newer versions available.   Their phone number
+should be in the manuals that came with your video card or personal
+computer.  Another option for obtaining updated drivers is the
+Microsoft Download service, an electronic bulletin board that can be
+accessed via a modem at (206) 936-MSDL (6735).
+
+* Change to a different display mode
+
+An alternative to obtaining a new or updated display driver is to
+change your video mode to a standard video mode such as 640 x 480
+resolution with 256 colors.
+
+* Use the standard VGA driver
+
+You can use the standard VGA driver that comes with Windows with almost
+all video cards.   However, the VGA driver can only show 16 colors and
+most images may not display as clear as they would in 256 colors.
+Also, image display takes slightly longer when running in 16 color mode.
+
+For instructions on installing or changing video drivers,  please see
+Help within Windows Setup.   You can start Windows setup from an icon
+usually located in the Main group in the Windows Program Manager.
+
+Special Note: USING ENCARTA 1994 WITH ATI VIDEO CARDS
+
+If you are using an ATI video card and one of the "mach" video drivers
+(mach8 or mach32) as your Windows display driver*, the Device Bitmaps
+setting for the video card must be set to "Off".  This enables the
+animations in Encarta to run properly.  To check/change this setting,
+do the following:
+
+1. Launch the Mach FlexDesk Control Panel by double-clicking on the
+"mach FlexDesk Control Panel" icon usually found in the "mach
+Utilities" program group in Program Manager.  The "mach Utilities"
+group is created when you run the ATI mach video driver setup program.
+2. Click the "Advanced..." button.
+3. Make sure "Device Bitmaps" is set to "Off", or set it to "Off" if
+   it is not.
+4. Click OK to close the FlexDesk Advanced Settings.
+5. Click OK to close the FlexDesk Control Panel.
+
+You will need to restart Windows for the changes to take effect.
+
+* You can verify the Windows Display driver selection by launching the
+"Windows Setup" icon found in the "Main" program group of the Windows
+Program Manager.
+
+For information about ATI video cards or the ATI installation utility
+referred to above, contact ATI Technical Support at (905) 882-2626.
+
+4. Audio Card Problems
+
+The following are common problems and some suggested solutions for
+playing audio in Encarta.
+
+--------------------------------------------------
+SOUND DOES NOT PLAY AT ALL
+--------------------------------------------------
+
+1. Check the volume.
+
+2. If the volume is turned up and you still hear no sounds, something
+   may be wrong with your audio card installation.  Check to see that
+   the audio card software is installed correctly and reinstall it if
+   necessary.   For further details, see the section below "MAKING
+   SURE THE SOUND CARD IS INSTALLED PROPERLY"
+
+3. If the software is installed correctly, the audio card may need to
+   be pressed more securely into its slot or have a jumper setting
+   changed on the audio card.
+
+4. If you have both a audio card and special software that bypasses
+   the audio card to play sounds through the PC speaker, we suggest
+   you remove or disable the special software (the PC speaker driver).
+   Encarta requires an MPC-compatible audio card to be installed; it
+   is not meant to run with just the PC internal speaker or any
+   combination of that speaker and special software.
+
+----------------------------------------------------------------------
+SOUND PLAYS BUT IS DISTORTED OR "FUZZY"
+----------------------------------------------------------------------
+
+Sound distortion is often caused by sending a higher volume or
+amplitude of sound than the speakers are able to handle.  Also, if the
+volume control on your audio card is set too high it may cause
+distortion from the amplifier on the audio card.  Sometimes speakers
+that are not of high quality will distort at a lower volume than better
+speakers will (compare a clock radio speaker to a big stereo system;
+the stereo speakers can play much louder with no distortion).  For
+example, if the volume for your audio card or "WAVE file output" is set
+to near its maximum it will produce distortion just like a radio with
+the volume turned up too high.  To learn how to change your audio card
+settings, check the manuals that came with your audio card.  This is
+normally done with either a volume dial on the back of your audio card
+(in the rear of your computer where the speakers plug in) or with a
+program that is often called a "mixer", that is usually installed in
+the Windows Control Panel of the Main program group.  Some audio cards
+use both types of controls and they must both be adjusted.
+
+--------------------------------------------------
+SOUND PLAYS, BUT HAS SKIPS
+--------------------------------------------------
+
+If audio breaks up or skips periodically it is usually an indication
+that the CD-ROM drive does not fully meet the MPC (Multimedia PC)
+specification for the Data Transfer Rate.  The MPC specification states
+that the CD-ROM drive needs to be capable of transferring data at a
+rate of 150 KB per second while utilizing 40% or less of the CPU.   You
+can continue to use your CD-ROM drive to run Encarta, but will continue
+to experience this choppiness in audio and animation clips.
+
+-------------------------------------
+SOUNDS ARE CUT OFF
+-------------------------------------
+
+Most audio cards can only play one sound at a time; therefore, other
+sound-producing programs could interrupt the sounds from Encarta.  Some
+sound producing programs may take over the audio capability and prevent
+other Windows programs from being able to make sounds.  If you suspect
+you have such a program do not run it at the same time as Encarta.
+
+----------------------------------------------------------------------
+MAKING SURE THE SOUND CARD IS INSTALLED PROPERLY
+----------------------------------------------------------------------
+
+1. Check to see that you can play MIDI from MS-DOS.  Most sound cards
+   come with a test utility or an MS-DOS program for playing MIDI or
+   testing the card configuration.  If MIDI does not work with these
+   then the MIDI will not work in Windows either.
+
+2. Verify Port and IRQ settings by looking at the sound card and
+   comparing the way it is set up to the way that the audio card
+   software thinks it is set up.  The audio card manual should explain
+   how to configure the audio card settings.
+
+3. Make sure the sound card does not conflict with other hardware.
+   This is done by comparing the setup of the audio card with the
+   setups of other cards in your computer.  It is important that no
+   two cards try to use the same port or IRQ.  This is a common source
+   of problems when you are getting no sound at all.
+
+COMMON SOLUTIONS TO MAKING SOUNDS PLAY:  MIDI AUDIO
+
+----------------------------------------------------------------------
+MIDI AUDIO DOES NOT PLAY IN WINDOWS OR A WINDOWS PROGRAM
+----------------------------------------------------------------------
+
+When a program that supports MIDI doesn't play the MIDI audio, it is
+commonly due to one or more of the following reasons:
+
+* The audio card is not installed properly, does not support MIDI, or
+is conflicting with another Windows device.
+
+* A MIDI driver is not installed or is improperly configured.
+
+* The MIDI Mapper is improperly configured.
+
+NOTE: Before attempting any complicated troubleshooting, try restarting
+Windows or rebooting your computer and see if your system functions
+correctly.
+
+----------------------------------------------------------------------
+MIDI TROUBLESHOOTING WITH MEDIA PLAYER
+----------------------------------------------------------------------
+
+Media Player is a program that can play MIDI files.  It is normally
+located in the Accessories group in the Program Manager.  It allows you
+to check the MIDI installation in a simple way.  After using the File
+Open command to load a .MID file into Media Player (there should be
+some in the Windows directory) please  press the Play button.  The
+following message may occur:
+
+The current MIDI Mapper setup refers to a MIDI device that is not
+installed on the system.  Use MIDI Mapper to edit the setup.
+
+If this message appears, it means that your MIDI Mapper is not
+configured properly.  The first thing to do in this case is to check to
+see if your MIDI Mapper configuration was changed.
+
+1.) Look for a file called MIDIMAP.OLD in your \windows\system
+    directory.  If this file exists, it means that your original MIDI
+    Mapper configuration file was replaced
+2.) If you see a MIDIMAP.OLD, then rename MIDIMAP.CFG to MIDIMAP.BAK.
+3.) Now rename MIDIMAP.OLD to MIDIMAP.CFG.
+4.) Try playing a MIDI file in Media Player.
+
+If this procedure fails or is inapplicable, run Control Panel (usually
+in the Main group of the Windows Program Manager) and check the setup
+in the MIDI Mapper.
+
+For example, if the Ad Lib driver is installed in the Drivers part of
+the Control Panel, the MIDI Mapper should be set for Ad Lib.  If a
+different MIDI device is installed, choose an appropriate setup for the
+device.  For more information on setting up the MIDI device drivers
+look in the manuals that came with your audio card.
+
+----------------------------------------------------------------------
+MAKING SURE THAT THE MIDI DRIVER IS INSTALLED
+----------------------------------------------------------------------
+
+1. Check to see if the MIDI driver is installed by double-clicking the
+   Drivers icon in the Control Panel.  If the sound card is Ad Lib
+   compatible, try using the Ad Lib driver that shipped with Windows
+   3.1.
+
+2. The Midi Sequencer command should be available in the Media
+   Player's Device menu.
+
+------------------------------------
+SETTING MIDI MAPPER
+-------------------------------------
+
+To set the MIDI Mapper to use the Ad Lib setup:
+
+1. Run Control Panel.
+2. Run MIDI Mapper.
+3. Press ALT+S to show setups.
+4. Press ALT+A to move to the name field for setups.
+5. Use the UP ARROW and DOWN ARROW keys to set the name field to Ad
+   Lib, and the description below the name field to "Base-level
+   setup."
+6. Close the MIDI Mapper to accept this setup.
+
+5. CD-ROM Problems
+
+COMMON SOLUTIONS FOR PROBLEMS WITH CD-ROM DRIVES
+
+NOTE:   Do not remove the Encarta compact disc from your CD-ROM drive
+while running Encarta.
+
+If Encarta cannot find the data files it needs to run, you will see an
+error message prompting you to correct the problem.  To find the source
+of the problem, do the following:
+
+* Make sure the Encarta compact disc is correctly inserted into the
+  CD-ROM drive.
+
+* If you have an external CD-ROM drive make sure that the drive is
+  connected to your computer correctly, the power is turned on and it
+  is functioning in MS-DOS.  This can be done by viewing a directory
+  of the drive at an MS-DOS prompt.  To do this, change to the CD-ROM
+  drive at an MS-DOS prompt, type DIR and press ENTER.
+
+* Make sure that the Encarta program is looking for the compact disc
+  on the correct drive.  Check that ENCARTA.INI file in the WINDOWS
+  directory.   The section called [94Options] should have a entry
+  called "BookPath".  The path should be set to the \encyc95\ 
+  directory on the drive that you CD-ROM appears as.  For example, if
+  your CD-ROM drive is drive D:, the entry would appear like the
+  following:
+
+  [94Options]
+  BookPath=D:\encyc94\ 
+
+If you still see an error message after checking the points above,
+check the manuals that came with your CD-ROM drive for information on
+how a CD-ROM is to be set up, or contact the company that supplied the
+drive.
+
+6. Word Processors and Encarta
+
+USING ENCARTA WITH WORD PROCESSORS - TIPS AND TROUBLESHOOTING
+
+Encarta allows you to create multimedia reports by copying and pasting
+pictures and sounds into Microsoft Write or your word processor of
+choice.  Audio clips can be pasted as icons into other applications.
+Double-clicking on these icons will play the audio clip. Photos,
+illustrations, and maps can be pasted into other applications also.
+
+Note that some applications will use black or white "placeholders" for
+pictures when they are pasted into that application.  This is to
+improve performance, since actual pictures in word processing documents
+can slow down scrolling and other functions.
+
+If you print a document that has been using placeholders for pictures,
+the pictures should appear properly.
+
+Remember that anything that you copy into another application should be
+credited with a footnote or acknowledgment.  See the Encarta manuals
+for details.  Please obey copyright laws.
+
+SELECTING A CUSTOM WORD PROCESSOR TO CALL FROM ENCARTA
+
+By clicking the Options menu selection under the MENU button, you can
+use the Choose Word Processor button to select any Windows application
+as the "word processor" that you will call up with Encarta's Word
+Processor menu item.  Note that after finding and selecting your word
+processor in the Choose Word Processor box, you must click OK to close
+the box, or Cancel to ignore the change.
+
+TROUBLESHOOTING TIPS FOR CALLING WORD PROCESSORS FROM ENCARTA
+
+A few tips will help you in using Encarta's Word Processor menu:
+
+1. If you Choose a Word Processor in Options, you must then make sure
+   that this word processor is not already open in Windows.  If you
+   have it open when you select the Word Processor menu item in
+   Encarta, a second instance will be launched.
+
+2. Once you open your application with the Word Processor menu item,
+   you can use this menu command to bring the Word Processor back
+   after you have minimized it.  This makes research and report
+   writing more convenient.
+
+3. Certain Windows applications do not respond to the command used by
+   Encarta's word processor menu to bring the word processor back
+   after it has been minimized.  These applications generally have
+   complicated execution commands that Encarta cannot call properly.
+   The next item, # 4, explains how to work around this problem to
+   switch back and forth from Encarta to your word processor.
+
+4. If you encounter problems bringing your personal Word Processor
+   back up with the Encarta Word Processor command, you can use
+   several methods to switch to your word processor.  In each case,
+   make sure your Word Processor is open before using the Task List.
+
+a. Hold down the ALT key, and press TAB repeatedly.  This will cycle
+   each open Windows application to the foreground in order.  When
+   you see the application you want, let go of the ALT key, and that
+   application will appear.
+
+b. Use the Windows Task List to Switch To another application.  There
+   are three ways to bring up the Task List:
+
+* Click once on the Encarta System Menu (the one you use to see the
+  Close command).  At the bottom of the list of menu commands, click
+  on "Switch To".
+
+* Double-click anywhere on the Windows desktop that is outside a
+  window.  The Windows Task List will appear.
+
+* Press the CTRL key and hit the Escape key.  The Windows Task List
+  will appear.
+
+When the Task List is open, click once on your Word Processor in the
+list to highlight it. Then press the Switch To button.  This will bring
+your Word Processor to the foreground.  You can then use the same
+method from within your Word Processor to get back to Encarta.
+
+5. You will get an Error Message from the Encarta Word Processor
+   command if you select a word processor and then delete that word
+   processor from your hard disk, or if Encarta can not find a valid
+   Windows application from your selection.  In this case, you must
+   choose a new word processor using Options before the Word Processor
+   command will work for you.
+
+7. Running Encarta on Windows NT
+
+Encarta runs well on Windows NT with the following exceptions:
+
+* The NT version of the CinePak video decompressor from SuperMac was
+  not officially released and tested when Encarta 1994 was completed.
+  Therefore, only the standard Windows decompressor is included, so
+  videos will not play on NT.
+
+* If you have a non-Intel Windows NT machine (i.e. Mips or Alpha
+  processor) then you will need to manually install two DLL's that do
+  not have the 80386 code found in the DLLs installed by default.
+
+These files are in the \encarta\nt directory on the CD and are called
+ENC94IMG.DLL and POEMWINC.DLL.  To install these files, do the following:
+
+- Do a complete setup of Encarta.   You must choose the "Faster"
+installation option so that the files to be replaced run from the hard
+driver.
+
+- Copy the two files from the \encarta\nt directory on the CD into the
+same directory you designated in Setup (C:\ENCARTA by default).   These
+files replace the ones setup copied there.
+
+N.B. On non-Intel NT machines the Encarta Dictionary/Thesaurus should
+not be run since it will cause a crash.
+
+8. General Multimedia Information
+
+For more information regarding Multimedia PCs, MPC titles, and other
+general multimedia topics of interest, please refer to the MPC
+Marketing Council at the following location:
+
+    Multimedia PC Marketing Council, Inc. 1703 M Street Suite 700
+    Washington, DC  20036
+    (202) 452-1600
+
+For more information regarding other Microsoft Multimedia titles write to:
+
+    Microsoft Multimedia Publishing Group
+    Consumer Division
+    1 Microsoft Way Redmond, WA  98052-6399
+
+For information regarding a specific MPC product, contact the
+manufacturer of that product.
+
+Additional query words: kbhowto 1994 multi media multimedia multi-media readme.txt text read me txt file MediaView
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : 1994
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

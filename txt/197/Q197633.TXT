@@ -1,0 +1,211 @@
+DOCUMENT:Q197633  08-MAY-1999  [homemm]
+TITLE   :Encarta: How to Transfer or Restore Integrated Yearbook Files
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to back up and restore Encarta yearbook files that
+have already been integrated. You can also use this procedure to transfer
+integrated Encarta yearbook files to a different computer on which the matching
+version of Encarta is installed.
+
+MORE INFORMATION
+================
+
+To transfer or restore yearbook files that have already been integrated, use the
+appropriate method for your version of Encarta Encyclopedia.
+
+Encarta 98
+----------
+
+1. Use Microsoft Backup or a similar program to make a backup of the following
+   files on your computer
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Ybbst98a.dat
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Ybbdat\Ybbst98a.dat
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Update98\*.ewl
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Update98\*.ybk
+
+   where <drive> is the drive letter of the hard disk on which Encarta 98
+   Encyclopedia is installed.
+
+   For information about how to use Microsoft Backup, please see the Backup topic
+   in Microsoft Windows online Help.
+
+2. Remove and then reinstall Encarta 98, or install Encarta 98 on a different
+   computer.
+
+3. Restore the previously backed up files to the appropriate folders on your
+   computer. When you are prompted to overwrite the files in the following
+   table, click Yes.
+
+   +------------------------------------------+
+   | Filename    | Size   | Modified          | 
+   +------------------------------------------+
+   | Adv797a.ybk | 42 KB  | 8/10/97   3:12 PM | 
+   +------------------------------------------+
+   | Yb797a.ybk  | 982 KB | 8/10/97   3:13 PM | 
+   +------------------------------------------+
+
+If you did not make a backup of your index file (Ybbst98a.dat), you can download
+a new update file, and then start Encarta to integrate the new file and
+reintegrate the other yearbook update files. To do this, follow these steps:
+
+1. Download a new Encarta 98 yearbook update file from the following MSN Web
+   site:
+
+   http://encarta.msn.com/downloads
+
+   When you are prompted to open the file or save the file to disk, save the
+   yearbook update file in the following folder on your hard disk:
+
+   C:\Program Files\Microsoft Reference\Encarta Encyclopedia\Update98
+
+2. Start Encarta to integrate the yearbook update files.
+
+Encarta 1997
+------------
+
+1. Use Microsoft Backup or a similar program to make a backup of the following
+   files on your computer:
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Ybbst97a.dat
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Updates\*.ewl
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Updates\*.ybk
+
+   where <drive> is the drive letter of the hard disk on which Encarta 97
+   Encyclopedia is installed.
+
+   For information about how to use Microsoft Backup, please see the Backup topic
+   in Microsoft Windows online Help.
+
+2. Remove and then reinstall Encarta 97, or install Encarta 97 on a different
+   computer.
+
+3. Restore the previously backed up files to the appropriate folders on your
+   computer. When you are prompted to overwrite the files in the following
+   table, click Yes.
+
+   +----------------------------------------+
+   | Filename    | Size   | Modified        | 
+   +----------------------------------------+
+   | Adv796a.ybk | 42 KB  | 8/12/96 1:36 PM | 
+   +----------------------------------------+
+   | Yb796a.ybk  | 640 KB | 8/12/96 1:43 PM | 
+   +----------------------------------------+
+
+If you did not make a backup of your index file (Ybbst97a.dat), you can download
+a new update file, and then start Encarta to integrate the new file and
+reintegrate the other yearbook update files. To do this, follow these steps:
+
+1. Download a new Encarta 97 yearbook update file from the following MSN Web
+   site:
+
+   http://encarta.msn.com/downloads
+
+   When you are prompted to open the file or save the file to disk, save the
+   yearbook update file in the following folder on your hard disk:
+
+   C:\Program Files\Microsoft Reference\Encarta Encyclopedia\Updates
+
+2. Start Encarta to integrate the yearbook update files.
+
+Encarta 1996
+------------
+
+1. Use Microsoft Backup or a similar program to make a backup of the following
+   files on your computer
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Ybstate.dat
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Updates\*.ewl
+
+   <drive>:\Program Files\Microsoft Reference\Encarta
+   Encyclopedia\Updates\*.ybk
+
+   where <drive> is the drive letter of the hard disk on which Encarta 96
+   Encyclopedia is installed.
+
+   For information about how to use Microsoft Backup, please see the Backup topic
+   in Microsoft Windows online Help.
+
+2. Remove and then reinstall Encarta 96, or install Encarta 96 on a different
+   computer.
+
+3. Restore the previously backed up files to the appropriate folders on your
+   computer. When you are prompted to overwrite the file in the following table,
+   click Yes.
+
+   +----------------------------------------+
+   | Filename   | Size   | Modified         | 
+   +----------------------------------------+
+   | Yb895a.ybk | 560 KB | 8/18/95 12:21 AM | 
+   +----------------------------------------+
+
+If you did not make a backup of your index file (Ybstate.dat), you can download a
+new update file, and then start Encarta to integrate the new file and
+reintegrate the other yearbook update files. To do this, follow these steps:
+
+1. Download a new Encarta 96 yearbook update file from the following MSN Web
+   site:
+
+   http://encarta.msn.com/downloads
+
+   When you are prompted to open the file or save the file to disk, save the
+   yearbook update file in the following folder on your hard disk:
+
+   C:\Program Files\Microsoft Reference\Encarta Encyclopedia\Updates
+
+2. Start Encarta to integrate the yearbook update files.
+
+Additional query words: multi multi-media media mm year book copy kbimu
+
+======================================================================
+Keywords          : kbtool kbui kbimu kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbEncartaEnCyc1998
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

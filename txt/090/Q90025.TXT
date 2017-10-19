@@ -1,0 +1,72 @@
+DOCUMENT:Q90025  13-JUN-2001  [winmisc]
+TITLE   :How to Uninstall Windows Sound System
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Once the Windows Sound System is installed, the only way to uninstall it is to
+follow the instructions in the DEINSTAL.TXT file.
+
+MORE INFORMATION
+================
+
+Windows Sound System installs the bulk of its files into C:\SNDSYS by default.
+In addition, files are copied to the \WINDOWS directory, the WINDOWS\SYSTEM
+directory, the EXCEL\LIBRARY directory, and the Lotus 1-2-3 for Windows
+directory (depending on the options that you select during Setup). Some existing
+.INI files such as WIN.INI, SYSTEM.INI, and CONTROL.INI are also modified in the
+Windows 3.1 directory.
+
+Windows Sound System installs a text file called DEINSTAL.TXT, located in the
+\SNDSYS directory. This file contains step-by-step instructions to remove all
+traces of Windows Sound System from your computer, including restoring your
+pre-Windows Sound System .INI files.
+
+Windows Sound System Setup creates a backup copy of all .INI files that it
+modifies in the Windows 3.1 directory with .WSS extensions. You can restore the
+pre-Windows Sound System configuration by restoring these .INI files. This
+restoration works if you have not made any changes to your system after
+installing Windows Sound System. If you have made other changes or installed new
+software, restoring the .INI files causes the changes to be lost.
+
+If you have run Windows Sound System Setup more than once, then restoring the
+.INI files will not work correctly. The DEINSTAL.TXT file describes the exact
+changes made to each of the .INI files so you manually remove those changes.
+
+Reference(s):
+
+DEINSTAL.TXT provided with Windows Sound System
+
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

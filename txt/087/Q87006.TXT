@@ -1,0 +1,69 @@
+DOCUMENT:Q87006  18-FEB-2000  [vbwin]
+TITLE   :BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an application developed for Microsoft Windows for Pen Computing, the
+dictionary function does not receive a DIRQ_SYMBOLGRAPH message for a given
+recognition session.
+
+CAUSE
+=====
+
+Windows for Pen Computing detected an unrecognized symbol in the symbol graph.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows for Pen Computing version
+1.0. We are researching this problem and will post new information here as it
+becomes available.
+
+MORE INFORMATION
+================
+
+In the Windows for Pen Computing environment, a dictionary can be designed to
+process the DIRQ_SYMBOLGRAPH message. If an application specifies the
+RCO_SUGGEST flag in the lRcOption member of the recognition context (RC) data
+structure, Windows for Pen Computing sends this message to a dictionary before
+any other message. If an application also specifies the RCO_NOSPACEBREAK flag,
+the system sends the complete symbol graph to the dictionary. Unfortunately,
+Windows for Pen Computing scans the symbol graph for any SYV_UNKNOWN symbols
+before the system sends the DIRQ_SYMBOLGRAPH message to the dictionary. If the
+symbol graph contains a SYV_UNKNOWN symbol, no DIRQ_SYMBOLGRAPH message is sent.
+
+Additional query words: buglist1.00 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

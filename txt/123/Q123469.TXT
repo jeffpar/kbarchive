@@ -1,0 +1,64 @@
+DOCUMENT:Q123469  12-FEB-2002  [ssafe]
+TITLE   :PRB: How to Handle the "invalid serial number" Error
+PRODUCT :Microsoft SourceSafe
+PROD/VER::2.0x,3.01,3.02
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SourceSafe for MS-DOS, versions 2.0x, 3.01, 3.02 
+ - Microsoft SourceSafe for Windows, versions 2.0x, 3.01, 3.02 
+ - Microsoft SourceSafe for Macintosh, versions 2.0x, 3.01, 3.02 
+ - Microsoft SourceSafe for Windows NT, versions 2.0x, 3.01, 3.02 
+ - Microsoft SourceSafe for UNIX, versions 2.0x, 3.01, 3.02 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error "invalid serial number" occurs when a DEMO serial number has expired.
+
+RESOLUTION
+==========
+
+Issue a updated serial number by following these steps:
+
+1. Run SERIALIZ on the computer with outdated serial number. For example:
+
+   C:\SS\ADMIN\SERIALIZ <data directory>
+
+   This command gives a list of current serial numbers.
+
+
+2. Install a new serial number. For example:
+
+   C:\SS\ADMIN\SERIALIZ <data directory> -s<serial_num>
+
+You can also reinstall the demo diskette to restart the 30 day period.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbusage 
+Technology        : kbHWMAC kbOSMAC kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe2xDOSSearch kbSSafe302 kbSSafe2xSearch kbSSafe301DOS kbSSafe302DOS kbSSafe301 kbSSafe20xMacSearch kbSSafe301Mac kbSSafe301UNIX kbSSafe302UNIX kbSSafe20xUNIXSearch kbSSafe302Mac kbSSafe20xNTSearch kbSSafe301NT kbSSafe302NT
+Version           : :2.0x,3.01,3.02
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

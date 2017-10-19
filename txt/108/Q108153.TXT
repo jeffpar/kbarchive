@@ -1,0 +1,81 @@
+DOCUMENT:Q108153  22-SEP-1999  [win3x]
+TITLE   :WFWG Err Msg: No Domain Server Was Available to Validate...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.11
+
+WINDOWS
+
+kbnetwork kberrmsg kbinterop
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to log on to a Microsoft Windows NT or Microsoft LAN Manager domain
+through Microsoft Windows for Workgroups, you may receive one of the following
+error messages:
+
+Windows for Workgroups 3.11
+---------------------------
+
+   No domain server was available to validate your password. You were logged on
+   without password validation.
+
+Windows for Workgroups 3.1
+--------------------------
+
+   No LAN Manager server was available to validate your password. You were
+   logged on without password validation.
+
+CAUSE
+=====
+
+This error occurs if you entered the incorrect domain name, or there is a space
+included in the Windows for Workgroups computer name.
+
+Microsoft Windows NT supports computer names with spaces, but in order for
+validation to occur, the computer name must appear in quotation marks. Windows
+for Workgroups does not allow the user to input the computer name when you log
+on; therefore, validation fails if you have a space included in your Windows for
+Workgroups computer name. The answer to whether or not validation has taken
+place never comes back.
+
+
+RESOLUTION
+==========
+
+To correct this problem, remove the space from the Windows for Workgroups
+computer name.
+
+Additional query words: 3.11 err msg Password Validation lanman winnt authentication ntas ntlan
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

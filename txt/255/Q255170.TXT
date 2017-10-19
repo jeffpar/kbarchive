@@ -1,0 +1,73 @@
+DOCUMENT:Q255170  28-JUL-2001  [sms]
+TITLE   :SMS: Remote Reboot Fails on Windows 95 at High Resolutions
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbinterop kbClient kbConfig kbMMC _IK964 kbsms200 kbsms200bug kbsmsAdmin kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, on platform(s):
+    - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Microsoft Windows 95 client may not accept the remote reboot command from the
+Administrator UI if the desktop size is set at or above 1024x768. The computers
+remain indefinitely at the following screen:
+
+   Windows is now shutting down
+
+CAUSE
+=====
+
+The Remote Reboot utility within Systems Management Server Remote Tools
+generates a remote API call to request the reboot. This has been known to occur
+on systems with but not limited to the Intel 810 and Matrox Millennium II AGP
+display adapters.
+
+WORKAROUND
+==========
+
+The client desktop resolution must be reduced to a setting of 800x600 or less.
+Such settings still offer high color, while allowing the remote reboot to
+function.
+
+This behavior does not occur on Microsoft Windows 98 or Microsoft Windows NT 4.0
+clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbConfig kbMMC _IK964 kbsms200 kbsms200bug kbsmsAdmin kbRemoteProg 
+Technology        : kbSMSSearch
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q134537  17-DEC-2000  [win95x]
+TITLE   :No Sound or Incorrect Sound from Sound Card
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a sound from a sound card in Windows 95, the sound may play
+incorrectly or not at all. The problem usually occurs when you play a sound at
+the same time you print something.
+
+CAUSE
+=====
+
+Both the sound card and the printer's ECP port are configured to IRQ 7.
+
+RESOLUTION
+==========
+
+By using Device Manager, move either the ECP port or the sound card to a new
+IRQ. To do so, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel on
+   the menu that appears.
+
+2. Double-click the System Icon.
+
+3. In the System Properties dialog box, click the Device Manager tab, and then
+   select either the Sound card icon or the Ports icon.
+
+4. In the Properties dialog box for the device you selected, click the Resources
+   tab, and then make sure the Use Automatic Settings box is not checked.
+
+5. Adjust the IRQ for the device to a new value that does not conflict with any
+   other device.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

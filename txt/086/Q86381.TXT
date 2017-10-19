@@ -1,0 +1,66 @@
+DOCUMENT:Q86381  16-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Err Msg: XXXXXXXX.CAL Is Not a Valid Local...
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can move a Schedule+ local file to a network drive; however, when you try to
+start Schedule+, the following error message is displayed:
+
+   <Drive>:\>path>\XXXXXXXX.CAL is not a valid local schedule file.
+   Is it okay to delete it?
+
+If the drive is not mapped to any server, choosing OK for the above message
+displays the following message:
+
+   The local schedule file could not be created
+
+CAUSE
+=====
+
+The network drive must be available when Schedule+ is started off line. This
+error occurs if the drive is not available, or if that server is mapped to
+another drive letter.
+
+MORE INFORMATION
+================
+
+The Schedule+ local file can be moved to any drive for easy transportation to
+another computer for home or portable use. When you start up Schedule+ off line,
+Schedule+ looks in the SCHDPLUS.INI file to find the path to the local calendar
+file. If the file is damaged, missing, or hidden, Schedule+ cannot start until a
+new file is created in the same location.
+
+Additional query words: 1.00 offline schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

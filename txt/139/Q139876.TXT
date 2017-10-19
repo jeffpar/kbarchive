@@ -1,0 +1,59 @@
+DOCUMENT:Q139876  17-DEC-2000  [win95x]
+TITLE   :Non-CompuServe Recipients Not Listed in CIS Mail Header
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send mail to multiple recipients using different service providers,
+CompuServe recipients do not see recipients on other service providers in the
+message header. Recipients on other service providers see all the other
+recipients, regardless of service provider, in the message header.
+
+RESOLUTION
+==========
+
+Messages on CompuServe cannot display recipients on other service providers in
+the message header.
+
+MORE INFORMATION
+================
+
+Transports are not required to send along addresses they cannot resolve. If
+addresses are sent along for non-CompuServe recipients, you might expect a
+CompuServe recipient to be able to send a reply to all the recipients of the
+message. However, the CompuServe address book does not have the ability to
+resolve non-CompuServe addresses.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

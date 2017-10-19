@@ -1,0 +1,74 @@
+DOCUMENT:Q190151  15-JAN-2002  [sna]
+TITLE   :SNA Server in a Cluster Server Environment
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Server, Enterprise Edition includes Microsoft Cluster Server (MSCS)
+for increased server availability. SNA Server is not cluster aware, therefore it
+cannot exploit the full set of clustering capabilities when deployed as a
+cluster server resource, but it can be installed on cluster hardware.
+
+MORE INFORMATION
+================
+
+SNA Server exhibits the following limitations:
+
+ - SNA Host Connections do not failover when a connection is lost.
+
+ - SNA Server Services do not failover when installed once on a cluster drive
+   configured in a cluster group as a resource.
+
+ - SNA Server does not provide utilities to ease the installation of SNA Server
+   on MSCS to set up the required registry parameters to failover.
+
+Due to some of the limitations of not being cluster aware, SNA Server does not
+include the capability of detecting failing connections and services in order to
+transition them to a surviving node in the cluster. For these reasons, Microsoft
+SNA Server versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3,
+4.0, and 4.0 SP1 services are not supported when deployed in a cluster group as
+a resource. However, SNA Server can be installed on Windows NT Server Enterprise
+Edition and can exploit the native hotbackup and load-balancing features as
+explained in Knowledge Base article Q128244 that are available when installed on
+both nodes of a cluster.
+
+COM Transaction Integrator for CICS and IMS, OLE DB Provider for AS/400 and VSAM,
+and the ODBC Driver for DB2 can be deployed as a cluster resource using the
+Windows NT client for SNA Server. The Readme.doc file that comes with SNA Server
+can be used as a reference for configuring the Windows NT client for SNA Server
+and its SNA-Aware applications.
+
+Additional query words: snasetup
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2
+Version           : :2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

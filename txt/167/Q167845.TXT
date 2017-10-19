@@ -1,0 +1,86 @@
+DOCUMENT:Q167845  27-JUL-2001  [visualc]
+TITLE   :FIX: Class Wizard Deletes Source Files
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbtool kbnokeyword kbATL kbDLL kbEEdition kbGenInfo kbMFC kbServer kbVC500bug kbVS97sp1
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The ClassWizard, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There are certain scenarios that result in the loss of source files (.cpp, .h
+and .IDL) when you use Class Wizard to add code to them.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Pack 1 - What, Where, and Why
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+For example, the following steps delete an .IDL file that is in an ATL project:
+
+1. Start a new instance of the Visual Studio IDE.
+
+2. Create a new ATL COM AppWizard Application, DLL server, with the MFC Support
+   check box selected (name it test).
+
+3. Go to class view, right-click and add a class named "testObject" (without the
+   quotation marks) with interfaces.
+
+4. Go to file view and select Class Wizard from the view menu.
+
+5. Add a New Class from ClassWizard called CTestClass that is derived from a
+   generic CWnd and click OK. You receive an error dialog with the following
+   message:
+
+   "Unable to update the IDL file "<drive>:\test\test.idl". Make sure the
+   file is not read-only and there is sufficient disk space"
+
+   When you dismiss this dialog box, your .idl file is deleted.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbnokeyword kbATL kbDLL kbEEdition kbGenInfo kbMFC kbServer kbVC500bug kbVS97sp1fix kbGrpDSTools kbNoUpdate kbArtTypeINF 
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

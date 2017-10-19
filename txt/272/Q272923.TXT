@@ -1,0 +1,75 @@
+DOCUMENT:Q272923  23-OCT-2000  [sms]
+TITLE   :SMS: Documentation Incorrectly States NTFS Permissions
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Systems Management Server Resource Guide Version 1.2, Chapter
+1, under the Package Distribution Servers topic, the <PackageId> folder
+permissions are incorrectly listed as shown:
+
+   Administrator's Local Group - Full Control
+   Users/Everyone - Read (R)
+
+After the despooler creates a package for distribution using the default
+permissions, it creates folders under the distribution share PackageId folder
+with the following permissions:
+
+   Administrators - Full Control
+   Users/Everyone - Special Access (RWX)
+
+MORE INFORMATION
+================
+
+You can maintain package folder security by editing options located in the
+"Setup Packages for Workstations" dialog box in the SMS 1.2 Administrator
+console.
+
+To modify the folder security settings, follow these steps:
+
+1. Click the package in the list of packages.
+
+2. Click Workstations.
+
+3. Click Access, and then set the desired access permissions.
+
+REFERENCES
+==========
+
+For additional information about file and directory permissions, see the
+Microsoft Systems Management Server Resource Guide Version 1.2, Chapter 1.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

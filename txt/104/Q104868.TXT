@@ -1,0 +1,69 @@
+DOCUMENT:Q104868  22-NOV-1999  [msdos]
+TITLE   :Backup Err Msg: Invalid Volume Information Block Detected
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when rebuilding a catalog using
+Microsoft Backup for Windows (MWBACKUP.EXE) if you are using the last disk of
+the backup set to rebuild the catalog.
+
+   Invalid Volume Information Block Detected. The component cannot be used.
+
+CAUSE
+=====
+
+This error message may occur if the backup set was created using the BACKUP
+command from a version of MS-DOS earlier than 6.0.
+
+WORKAROUND
+==========
+
+To correctly restore the backup set, you must use the RESTORE.EXE command from
+MS-DOS versions 6.0 and later. For information on using RESTORE, type "help
+restore" (without the quotation marks) at an MS-DOS command prompt.
+
+MORE INFORMATION
+================
+
+This error is not generated when using MS-DOS versions 6.0 and later Microsoft
+Backup for MS-DOS (MSBACKUP.EXE) to rebuild the catalog. Backup for MS-DOS
+correctly determines that the backup set was created using the previous MS-DOS
+BACKUP command and displays the appropriate error message. Also, if any disk
+other than the last disk is used to rebuild the catalog in Backup for Windows,
+then it too correctly determines that the backup set was created using a
+previous MS-DOS BACKUP command and displays the appropriate error message.
+
+Additional query words: 6.00, 6.20, 6.21, 6.22 BACKUP.EXE
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

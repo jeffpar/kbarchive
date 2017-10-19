@@ -1,0 +1,55 @@
+DOCUMENT:Q140503  03-AUG-2001  [visualc]
+TITLE   :DOC: Port I/O Functions Not Included in DLL Version of CRT
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:4.0;
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr kbCRT kbVC kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+The Run-Time Library Reference descriptions for the _inp, _inpw, _inpd, _outp,
+_outpw, and _outpd functions incorrectly indicate that they are included in
+Msvcrt.lib (or Msvcrtx0.dll). These functions were never intended for export
+from the DLL version of the C run-time library (CRT), and do not exist in that
+version of the CRT.
+
+A build of a project that uses the DLL version of the CRT may fail at link time
+with LNK2001 errors and one or more of the following functions reported as
+unresolved externals:
+
+   _inp, _inpw, _inpd, _outp, _outpw, _outpd
+
+To use these functions, you need to link with one of the static versions of the
+CRT -- Libc.lib or LIBCMT.lib.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbCRT kbVC kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : WINNT:4.0;
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

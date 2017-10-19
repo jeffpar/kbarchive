@@ -1,0 +1,74 @@
+DOCUMENT:Q91114  24-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: NET3651: There Is No Protocol Added...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Microsoft LAN Manager directory is in the MS-DOS PATH statement before
+the Windows for Workgroups directory, you receive the following error message:
+
+   NET3651: There is no protocol loaded. A protocol is required to complete the
+   command.
+
+To avoid this error and retain network functionality in Windows for Workgroups,
+remove the LAN Manager from the PATH statement in the AUTOEXEC.BAT file.
+
+CAUSE
+=====
+
+Windows for Workgroups Setup looks for a PATH statement in the AUTOEXEC.BAT file
+and removes the LAN Manager directory. If the syntax of the PATH statement has
+been changed, Setup fails to recognize it and does not remove the LAN Manager
+directory.
+
+Setup recognizes
+
+   SET PATH=C:\DOS;C:\LANMAN.DOS\NETPROG;C:\WINDOWS
+
+However, it does not recognize:
+
+   PATH C:\DOS;C:\LANMAN.DOS\NETPROG;C:\WINDOWS
+
+When the NET START command is executed from AUTOEXEC.BAT, LAN Manager's NET
+command is activated, causing the above error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.1 and version 3.11. We are researching this problem and will post new
+information here as it becomes available.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

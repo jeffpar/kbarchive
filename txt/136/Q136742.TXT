@@ -1,0 +1,78 @@
+DOCUMENT:Q136742  17-DEC-2000  [win95x]
+TITLE   :Drives Use MS-DOS Compatibility Mode with Iomega Zip Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install an Iomega Zip Drive connected to a parallel port, you find
+that the physical drives in your computer are using MS-DOS Compatibility mode.
+
+CAUSE
+=====
+
+The real-mode Guest.exe program supplied by Iomega is designed to allow you to
+access the Zip Drive in MS-DOS and Windows 95, causing the drives to use MS-DOS
+Compatibility mode.
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+ - Use the following steps to install the protected-mode driver:
+
+   1. In Control Panel, double-click the Add New Hardware icon.
+
+   2. Click Next, click the No option button, and then click Next.
+
+   3. Click Other Devices, and then click Next.
+
+   4. In the Manufacturers box, click Iomega, and then click Have Disk.
+
+   5. Install the files from the Windows 95 CD-ROM by inserting the CD-ROM in
+      the drive, typing the following line in the Copy Manufacturer's Files From
+      box, and then clicking Next
+
+   <drive>:\drivers\storage\iomega
+
+      where <drive> is the drive letter of the CD-ROM drive.
+
+   6. After the files are copied, click Finish.
+
+   7. When you are prompted to restart your computer, do so.
+
+ - Contact Iomega to inquire about obtaining a driver for the Zip Drive for use
+   in Windows 95.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

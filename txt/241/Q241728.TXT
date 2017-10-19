@@ -1,0 +1,166 @@
+DOCUMENT:Q241728  31-JUL-2001  [vbwin]
+TITLE   :PRB: Using 2-Digit Years w/ IsDate May Produce Unexpected Result
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbYear2000 kbDateTime KbVBA kbVBp400 kbVBp500 kbVBp600 kbDateFormat kbGrpDSVB kbDSuppor
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic for Applications versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The IsDate() function may return unexpected results if passed a date which
+contains a 2-digit year.
+
+CAUSE
+=====
+
+The VBA date functions IsDate, Format, CDate, and CVDate utilize a function
+found in OLE Automation (OleAut32.dll). This function searches all possible date
+formats by tokenizing each of the separated values in the string representing
+the date and returns a Boolean value indicating whether the input can be
+represented as a Date.
+
+This is important to remember when using the function to interpret a date that
+contains a 2 digit year. Different Locales use various date formats (that is,
+mm/dd/yy, yy/mm/dd, "DD MMM YY", "YY MMM DD", and so forth) and therefore the
+function tries the digits in all positions until the function has found a valid
+date or exhausted all possibilities.
+
+Checking whether February 29th is a valid date for a specific year, is one
+example of where you may get unexpected results when passing the IsDate function
+a date that contains a 2-digit year. To be more specific, passing the IsDate
+function an ambiguous date such as "29-FEB-01", will result in IsDate checking
+all available date formats and return TRUE because February 1, 2029 is a valid
+date. However, when the fully qualified year is passed in as "29-Feb-2001", then
+IsDate can determine that this is an invalid Date, and therefore will return
+FALSE.
+
+RESOLUTION
+==========
+
+Create a wrapper function around the IsDate function to convert the date to a
+4-digit year before passing the converted date to the IsDate() function.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The functions in OleAut32.dll use a standard "sliding year" so that, by default,
+all 2-digit years in the range 0 - 29 are considered to be in the 2000s and
+those in the range 30 - 99 are in the 1900s. This can be easily overridden with
+the following wrapper function.
+
+The documentation for the IsDate function defines it's designed behavior.
+
+IsDate(expression)
+
+   The required expression is a Variant containing a date expression or string
+   expression recognizable as a date or time.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new VB Standard EXE Project. Form1 is created by default.
+
+2. Place a CommandButton (Command1) on Form1.
+
+3. Paste the following code into the declarations section of Form1.
+
+      Private Sub Command1_Click()
+      Dim bIsDate As Boolean
+      Dim sDate As String
+
+       sDate = "29 FEB 01"
+       bIsDate = IsDate(sDate)
+       If bIsDate Then
+          MsgBox "Valid Date Found : " & Format(sDate, "mm/dd/yyyy")
+       Else
+          MsgBox sDate & " Is Not a Valid Date"
+       End If
+      End Sub
+
+4. Select F5 to run the project and click Command1. The following message will
+   appear:
+
+   Valid Date Found : 02/01/2029
+
+Steps to Avoid the Problem
+--------------------------
+
+1. Replace the earlier code in the Form1 module with the following code that
+   includes the use of a wrapper function:
+
+      Private Sub Command1_Click()
+      Dim bIsDate As Boolean
+      Dim sDate As String
+
+       sDate = ConvertYear("29 FEB 01")
+       bIsDate = IsDate(sDate)
+       If bIsDate Then
+          MsgBox "Valid Date Found : " & Format(sDate, "mm/dd/yyyy")
+       Else
+          MsgBox sDate & " Is Not a Valid Date"
+       End If
+    
+      End Sub
+
+      Private Function ConvertYear(sDate As String) As String
+      Dim sYear As String
+
+      ' This function currently uses the same sliding year as OleAut32.dll, 
+      ' but can be customized to fit the needs of the application.
+
+      sYear = Right(sDate, 2)
+      If Val(sYear) <= 29 Then   
+        ConvertYear = Left(sDate, 6) & " 20" & sYear
+      Else
+        ConvertYear = Left(sDate, 6) & " 19" & sYear
+      End If
+
+      End Function
+
+2. Run the project and select Command1. As expected, the following message will
+   appear:
+
+   29 FEB 2001 Is Not a Valid Date
+
+Additional query words:
+
+======================================================================
+Keywords          : kbYear2000 kbDateTime KbVBA kbVBp400 kbVBp500 kbVBp600 kbDateFormat kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVBASearch kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

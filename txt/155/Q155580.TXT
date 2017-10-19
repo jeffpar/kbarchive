@@ -1,0 +1,65 @@
+DOCUMENT:Q155580  10-AUG-2001  [winnt]
+TITLE   :Second PC-Card Hard Disk on Fourth IDE Channel Not Configured
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a computer with two internal IDE channels and two PC-Card type III
+slots, Windows NT will not configure the second PC-Card hard disk. When you open
+the PC-Card tool in Control Panel and look at the properties of the second disk,
+the status in the driver tab will read:
+
+   The driver is installed and started but didn't configure the device.
+
+When you look at the Resources tab, no resources are shown.
+
+CAUSE
+=====
+
+The PCMCIA driver in Windows NT does not install a fourth IDE interface. The
+current implementation requires that the driver know about possible
+configurations. This is different from Windows 95, which supports true Plug and
+Play.
+
+STATUS
+======
+
+Microsoft has confirmed this to be problem in Windows NT 4.0. We are researching
+this problem and will post additional information here in the Microsoft
+Knowledge base as it becomes available.
+
+
+Additional query words: prodnt kbbug4.0
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

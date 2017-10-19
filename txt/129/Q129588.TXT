@@ -1,0 +1,73 @@
+DOCUMENT:Q129588  08-NOV-2001  [homemm]
+TITLE   :MAC Asimov: Can't Launch with Apple's At Ease
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Isaac Asimov's The Ultimate Robot for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use The Ultimate Robot with Apple's At Ease program, Ultimate Robot may
+attempt to start, but immediately shuts down.
+
+RESOLUTION
+==========
+
+Use the following steps to set up the Ultimate Robot with At Ease:
+
+1. Open At Ease Setup.
+
+2. Select a User and click Open.
+
+3. After you make your choices, click Open User. Click Next.
+
+4. Choose Find Items.
+
+5. In the Name Contains box, type "Asimov's Ultimate Robot" (without the
+   quotation marks).
+
+6. From the Disk pop-up menu, click Asimov's Ultimate Robot CD.
+
+7. In the Items Found On Disk box click the Asimov folder.
+
+8. In the Asimov folder, click Asimov's Ultimate Robot.
+
+9. Click Add. Click OK.
+
+10. Complete user settings.
+
+11. Quit At Ease Setup.
+
+A button with a HyperCard stack icon appears on the At Ease Items tab. Click this
+button to load Ultimate Robot.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles kbmm mac asimov close launch issac hyper-card hyper card crash bomb
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch _IKkbbogus kbAsimovSearch kbAsimovUltimateRobotMac
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

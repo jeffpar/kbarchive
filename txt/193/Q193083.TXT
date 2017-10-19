@@ -1,0 +1,70 @@
+DOCUMENT:Q193083  11-JAN-2001  [vbwin]
+TITLE   :PRB: "User-Defined Type Not Defined" Error with Shdocvw.dll Enum
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbIE400bug kbVBp kbVBp300 kbVBp400 kbVBp600 kbVS600bug kbWebBrowser kbGrpDSV
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run code that uses the BrowserNavConstants or RefreshConstants
+enumeration variables (Enums) on a computer that has Internet Explorer 4.x
+installed, you receive the following error message:
+
+   Compiler error:
+
+   User-defined type not defined
+
+However, the same code works on a computer that has Internet Explorer 3.x
+installed.
+
+CAUSE
+=====
+
+The BrowserNavConstants and RefreshConstants Enums are found in the older
+versions of Shdocvw.dll that shipped with Internet Explorer 3.x. However, the
+newer versions of Shdocvw.dll that come with Internet Explorer 4.x (and Visual
+Studio 6.0) do not contain those Enums.
+
+Therefore, the following code will work on a machine with Internet Explorer 3.x:
+
+      Dim x As BrowserNavConstants
+
+However, if you compile the code on a machine with either Visual Studio 6.0 or
+Internet Explorer 4.x installed, you will get the "User-defined type not
+defined" error message.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbIE400bug kbVBp kbVBp300 kbVBp400 kbVBp600 kbVS600bug kbWebBrowser kbGrpDSVB kbDSupport kbie550bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

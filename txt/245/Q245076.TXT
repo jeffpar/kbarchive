@@ -1,0 +1,70 @@
+DOCUMENT:Q245076  10-AUG-2001  [winnt]
+TITLE   :'Access Denied' in Internet Service Manager Virtual Directory.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the list of virtual directories in the 'FTP Service Properties for
+FTP' dialog box in Microsoft Internet Server Manager, 'access denied' error
+messages may appear in one or more directories in the 'Directories' box.
+
+CAUSE
+=====
+
+This behavior can occur if the System account does not have Full Control
+permission on the physical directory to which the virtual directory points.
+
+RESOLUTION
+==========
+
+To resolve this issue, grant Full Control permission to the System account for
+the physical directory to which the virtual directory points:
+
+1. In Windows NT Explorer, right-click the physical directory.
+
+2. Click Properties.
+
+3. On the Security tab, click Permissions.
+
+4. In the Directory Permissions dialog box, click Add.
+
+5. In the Names list, click System.
+
+6. In the Type Of Access box, click Full Control.
+
+7. Click Add, and then click OK until you return to the desktop.
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

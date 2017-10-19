@@ -1,0 +1,76 @@
+DOCUMENT:Q78410  17-DEC-2000  [msdos]
+TITLE   :System Hangs with dBase III 1.0 or III+ 1.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Borland/Ashton-Tate has confirmed that dBase III version 1.0 and dBase III+
+version 1.0 may cause your system to stop responding (hang) if HIMEM.SYS is
+installed.
+
+CAUSE
+=====
+
+dBase III 1.0 and III+ 1.0 include a feature called SuperLock that conflicts
+with HIMEM.SYS. According to Borland/Ashton-Tate, SuperLock is a copy-protection
+feature that allows you to install dBase III 1.0 and III+ 1.0 only once to a
+hard drive.
+
+WORKAROUND
+==========
+
+Adding the /CPUCLOCK:ON switch to the HIMEM.SYS line in your CONFIG.SYS file may
+resolve this conflict. If you are using dBase III or III+, add the following
+line to your CONFIG.SYS file
+
+      device=[drive]:\[dir]\himem.sys /cpuclock:on
+
+where "[drive]" and "[dir]" indicate the location of the HIMEM.SYS driver.
+
+The /CPUCLOCK:ON switch slows HIMEM.SYS, allowing it to wait longer for signals.
+This affects the speed of HIMEM.SYS, but not the system clock speed. Early
+versions of dBase were written for slower machines.
+
+MORE INFORMATION
+================
+
+
+For more information, contact Borland/Ashton-Tate technical support.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 lock up plus ashton tate 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

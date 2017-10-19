@@ -1,0 +1,536 @@
+DOCUMENT:Q167167  11-JAN-2001  [vbwin]
+TITLE   :INFO: Visual Basic 5.0 README.TXT File
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbinterop kbtool kbVBp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information below includes the last-minute documentation and workarounds for
+Visual Basic 5.0 that were not added to the ReadMe.Hlp file installed with
+Visual Basic 5.0. This information can also be found in the README.TXT file that
+ships with Visual Basic 5.0 on the Visual Basic 5.0 CD- ROM. This file is not
+copied to the computer as part of the installation.
+
+MORE INFORMATION
+================
+
+Microsoft Visual Basic 5.0 ReadMe.Txt
+
+CONTENTS
+--------
+
+1. Unsigned Cabinet Files for Internet Download.
+
+2. Use RichTextBox for Multi-line Capability on the SSTab Control.
+
+3. Converting Replicated Databases.
+
+4. Opening a Replica Database Created Through Visual Basic Code.
+
+5. Removal of Implicit Transaction for SQL DML Statements.
+
+6. GPF When Running Queries on Attached ODBC Data Sources.
+
+7. Machines with More Than 1GB RAM.
+
+8. Opening Jet 2.X File Format MDBs in Exclusive Mode.
+
+9. Download Fails in Components with JET Dependency.
+
+10. Issues with Entry of Non-Latin Characters.
+
+11. Rich Error Handling Suggested in Initialization Code for ActiveX
+   Documents.
+
+12. App.Path Property and CurDir Function May Return UNC Paths,
+   Depending on How the Program/Project is Run.
+
+13. Fix to Excel Sample Code in Programmer's Guide.
+
+14. Print Method Is Not Listed in the Object Browser or with Objects
+   it Applies To.
+
+15. Internet Transfer Control: Error Constants Updates.
+
+16. Component Download Fails for DCOM Projects.
+
+17. Controls that Support DataBindings Property at Design Time.
+
+18. ActiveX Document Internet Download Issues.
+
+19. Download Problems with Multiple VB5-Authored Controls on a
+   Single HTML Page.
+
+20. ActiveX Designers May Not be Used in Unattended Servers.
+
+21. GPFs on Startup of Visual Basic 5.0.
+
+22. Visual Basic 4.0 Event Procedures May Cause Errors in
+   Visual Basic 5.0.
+
+DETAILS
+-------
+
+1. Unsigned Cabinet Files for Internet Download.
+
+   In the \Tools\cabinets folder on the Visual Basic 5.0 compact disc, you
+   will find run-time and control .cab files used for Internet component
+   download. These .cab files are not digitally signed so they should only
+   be used for testing Visual Basic 5.0-authored control download.
+   Additionally, these .cab files are not suitable for referencing directly
+   from an HTML page. For example, you can not point to the Comdlg32.cab
+   supplied on the Visual Basic 5.0 compact disc directly from an HTML page
+   using the CODEBASE tag.
+
+   The latest digitally-signed .cab files are available on the Microsoft
+   Web site. To download these .cab files, go to:
+   http://www.microsoft.com/vbasic/icompdown/ for more information.
+
+   For more information on the Setup Wizard, digital signing, safety, and
+   licensing, read the file Compdown.doc in the \Tools\docs directory on
+   the Visual Basic 5.0 compact disc.
+
+2. Use RichTextBox for Multi-line Capability on the SSTab Control.
+
+   Use the RichTextBox control to provide multi-line capability on the
+   SSTab control.
+
+   The following steps on NT 4.0 may result in an application error and
+   cause Visual Basic to close:
+
+   A. Open an ActiveX control project.
+
+   B. Put an SSTab control on the UserControl object.
+
+   C. Put a TextBox control on the SSTab control.
+
+   D. Set the TextBox control's Multi-Line property to TRUE.
+
+   E. Close the UserControl designer. When you're prompted to save
+     changes, click No.
+
+   F. Open the File menu, choose the Add Project command, and double-
+     click the Standard EXE icon on the New Project dialog.
+
+   G. Put your ActiveX control on the form.
+
+   H. Press the F5 key to run the project.
+
+   I. Click the Stop button on the Visual Basic 5.0 toolbar.
+
+   The following points are key:
+
+    - The SSTab control is on the UserControl object.
+
+    - The TextBox is on the SSTab control.
+
+    - The TextBox control's Multi-Line property is set to TRUE.
+
+3. Converting Replicated Databases.
+
+   Visual Basic 5.0 cannot open a replica created with Visual Basic 4.0.
+   You must convert the Design Master to Visual Basic 5.0 and then
+   synchronize with the associated replicas.
+
+4. Opening a Replica Database Created Through Visual Basic Code.
+
+   If you make a database replicable using Data Access Objects (DAO)
+   through Visual Basic 5.0 and then move the database to a different
+   directory without first opening it, you will receive an error when you
+   try to open the database. If you create a replica using DAO and then try
+   to open the replica before opening the Design Master, you will also get
+   an error. To solve this problem, when you replicate a database using
+   DAO, open the Design Master in Visual Basic 5 and synchronize all
+   replicas before moving the Design Master or opening a replica.
+
+5. Removal of Implicit Transaction for SQL DML Statements.
+
+   Even with all the work in Jet 3.0 to eliminate transactions in order to
+   obtain better performance, SQL DML statements were still placed in an
+   implicit transaction. This negated some of the performance work and
+   typically resulted in DAO looping code to substantially outperform SQL
+   DML statements. Jet 3.5 has removed that restriction and SQL DML
+   statements are no longer placed in an implicit transaction. This results
+   in a substantial performance benefit when running SQL DML statements
+   that affects many rows of data.
+
+   While this change provides a substantial performance increase, it also
+   introduces a change to the behavior of SQL DML statements. Previously,
+   the result of an SQL DML statement would roll back if any part of the
+   SQL DML statement could not be completed. This was due to the fact that
+   it was placed in an implicit transaction. It is now possible to have
+   some of the rows affected by a SQL DML statement to be modified while
+   others are not. If this behavior is not desired then the user will need
+   to add explicit transactions around the SQL DML statement and sacrifice
+   the performance gains.
+
+6. GPF When Running Queries on Attached ODBC Data Sources.
+
+   A GPF occurs if any relationship is defined on an MDB and a subsequent
+   query through attached tables to ODBC data sources is used to do a join.
+   This only occurs with Access 97 and this release of Jet 3.5 corrects
+   that problem.
+
+7. Machines with More Than 1GB RAM.
+
+   All versions of Jet 3.0 and previous versions of Jet 3.5 would not start
+   if a machine had more than 1GB RAM. This is fixed in this release of
+   Jet 3.5.
+
+8. Opening Jet 2.X File Format MDBs in Exclusive Mode.
+
+   Certain scenarios when using Access 97 and Jet 3.5 would prevent users
+   from opening a Jet 2.X file format database in shared mode. This issue
+   is addressed in the release of Jet 3.5.
+
+9. Download Fails in Components with Jet Dependency.
+
+   Code download might fail if your Visual Basic component has a dependency
+   on MSJet35 and is downloading to a machine with Office 97 installed. As
+   with all code download failures, there is no indication to the user as
+   to why the failure occurred. Below are the steps a developer should take
+   to work around this problem:
+
+   A. Start Setup Wizard, and select Internet Download Setup to create a
+    .cab for component download.
+
+   B. Open the Support folder of the location where the control's .cab
+     was created. The default location is Win95\Temp\Swsetup or
+     WinNT\Temp\Swsetup.
+
+   C. Open the control's .inf file.
+
+   D. Make following changes to the .inf file:
+
+      1. Remove this line from the [Add.Code] section:
+
+         VBAJET32.DLL=VBAJET32.DLL
+
+      2. Remove the entire Section [VBAJET32.DLL].
+
+   E. Save the .inf file.
+
+   F. Run Makecab.exe. Makecab.exe is located in \Setupkit\Kitfil32
+     below the folder where Visual Basic is installed. The /f parameter
+     needs to be used. To do this, follow the steps below:
+
+      1. Copy Makecab.exe to the Swsetup folder.
+
+      2. Open the Win95 Start menu, select Run, and enter the following
+        string: makecab /f yourcontrolname.ddf.
+
+10. Issues with Entry of Non-Latin Characters.
+
+   Many Win32 API functions are coded to use the System LCID setting. If
+   the User and System LCID settings don't match, you may see issues in
+   Visual Basic such as dialogs and controls displaying illegible text on
+   entry of characters from non-Latin alphabets.
+
+   It is possible to fix the problem in NT by checking the "Set as system
+   default locale" check box in the Regional Settings and then rebooting
+   the system. Windows 95, on the other hand, sets the System LCID at
+   install time. It is advisable to install the localized version of
+   Windows 95 with the same language as the User LCID. If using the Pan-
+   European version of Windows 95, it is necessary to perform a Custom
+   Installation and select the correct locale during the setup.
+
+   However, while Visual Basic controls may behave properly once System and
+   User are synchronized, entry of non-Latin characters will still result
+   in illegible text displaying in Visual Basic's design environment (IDE)
+   dialogs. Functionality is maintained, however.
+
+11. Rich Error Handling Suggested in Initialization Code for ActiveX
+   Documents.
+
+   When untrapped errors occur in the Initialize event of an ActiveX
+   document, Internet Explorer may display an error message indicating that
+   it is unable to load the .vbd file. It is strongly suggested that you
+   put rich error handling in place in any initialization code for
+   UserDocument objects.
+
+12. App.Path Property and CurDir Function May Return UNC Paths, Depending
+   on How the Program/Project is Run.
+
+   In Visual Basic 5.0, App.Path returns a UNC path (\\server\share...)
+   rather than a drive path (E:\folder\folder...) in the following
+   circumstances:
+
+    - When a project is run after being loaded from a network share, even
+      if the network share is mapped to a drive letter.
+
+    - When a compiled Exe is run from a network share, but only if the Exe
+      is run using a UNC path.
+
+   This is a change from Visual Basic 4.0 and may cause problems for some
+   existing code. The problems for compiled programs are different from the
+   problems that occur when running a project in the development
+   environment:
+
+   COMPILED EXE: Some projects use the following two lines of code in Sub
+   Main to change the current directory (as returned by the CurDir
+   function) to match the startup directory (as returned by App.Path):
+
+      ChDrive App.Path
+      ChDir App.Path
+
+   ChDrive cannot handle UNC paths and will raise an error when App.Path
+   returns a UNC path. You can handle this error by placing On Error Resume
+   Next before the ChDrive statement or by testing the first two characters
+   of App.Path to see if they are backslashes:
+
+      On Error Resume Next
+      ChDrive App.Path
+      ChDir App.Path
+
+   This modification handles all cases in which the program is started from
+   Windows using a UNC path (for example, in the Run dialog accessed from
+   the Start menu), because Windows sets the current directory to a UNC
+   path. ChDir handles changes between UNC paths correctly. (The failure of
+   ChDrive can be ignored because there is no drive letter for a UNC path.)
+
+   However, the code above will not work if a user runs the program by
+   typing a UNC path at the command line of a DOS window. This is because a
+   DOS window always has a drive path for the current directory, so CurDir
+   is set to a drive path. ChDir does not raise an error, but it fails to
+   change the directory from a drive path to a UNC path. The only
+   workaround for this is to locate a local drive that's mapped to the
+   share specified in the UNC path or to use network commands to create
+   such a mapping.
+
+   IN THE DEVELOPMENT ENVIRONMENT: If the project was loaded from a network
+   share, either a UNC path or a mapped drive path, then App.Path will
+   return a UNC path when the project is run. ChDrive will fail and raise
+   an error. ChDir will not raise an error but the directory will not be
+   changed. The only workaround is to set the drive and directory manually,
+   as in the following example:
+
+       Const PROJECTSHARE = "E:\VBPROJ\MYPROJECT"
+       #Const Debug = True
+       #If Debug Then
+           ChDrive PROJECTSHARE
+           ChDir PROJECTSHARE
+       #Else
+           On Error Resume Next
+           ChDrive App.Path
+           ChDir App.Path
+       #End If
+
+   If more than one developer might open the project on the network share,
+   a DOS environment variable can be used to allow each developer to have
+   his or her own mapping for the share:
+
+       #Const Debug = True
+       #If Debug Then
+           ChDrive Environ$("MYPROJECTDIR")
+           ChDir Environ$("MYPROJECTDIR")
+       #Else
+           On Error Resume Next
+           ChDrive App.Path
+           ChDir App.Path
+       #End If
+
+   The value of MYPROJECTDIR specifies the mapped drive letter and the
+   path. For example: SET MYPROJECTDIR=M:\VBProj\MyProject.
+
+   Note that the Help topics for the Path property, ChDir statement,
+   ChDrive statement, and CurDir function do not mention this changed
+   behavior.
+
+13. Fix to Excel Sample Code in Programmer's Guide.
+
+   In Chapter 10 of the Programmer's Guide "Programming with Components,"
+   the section "Working with ActiveX Components" contains sample code
+   adding values to Excel. Add the line:
+
+     xlBook.Close
+
+   immediately above the statement xlApp.Quit. This ensures that all Sheet
+   objects are released.
+
+14. Print Method Is Not Listed in the Object Browser or with Objects
+   it Applies To.
+
+   The Print method applies to the Form, Printer, PictureBox, UserControl,
+   UserDocument, PropertyPage, and Debug objects.
+
+   In Help, the Print method should appear in the Methods lists of all of
+   these objects although, in fact, it only appears for the Debug object.
+   In addition, these objects should all appear in the Applies To list in
+   the Print Method topic although, in fact, only the Debug object appears
+   there.
+
+   For technical reasons, the Print method does not appear in the Object
+   Browser, even though it is a valid method of the objects listed above.
+
+15. Internet Transfer Control: Error Constants Updates.
+
+   The Help topic "Trappable Errors for the Internet Transfer Control,"
+   contains the following duplicates and errors:
+
+   A. There are two entries for icnetTimeout (35768). The second can be
+     ignored.
+
+   B. The value for the constant icIncorrectPassword should be 35780.
+
+   C. The value for the constant icHttpToHttpsOnRedir should be 35805.
+
+   D. The value for the constant icHttpToHttpOnRedir should be 35806.
+
+   E. The description of icFtpDropped (35877) should be
+     "FTP - Connection dropped."
+
+16. Component Download Fails for DCOM Projects.
+
+   The .cab installation will work if the RemoteReg .cab is located in the
+   same folder as Msracli.cab. If Msracli.cab is located in another
+   location, component download will fail. The workaround is to modify the
+   .inf file so that Msracli.cab is located in the local folder. This means
+   you need access to Msracli.cab and must know how to build a .cab without
+   Setup Wizard.
+
+17. Controls that Support DataBindings Property at Design Time.
+
+   The online Visual Basic Help documents the following controls as having
+   a DataBindings property that can be accessed at design time. Some of
+   them, however, do not, in fact, support accessing their DataBindings
+   property during design time even though they have a DataBindings
+   property. The following list clarifies which controls support the
+   DataBinding property at design time:
+
+      DBList      - Yes
+      DBCombo     - Yes
+      DBGrid      - No
+      Toolbar     - No
+      TabStrip    - No
+      MaskedEdit  - Yes
+      MSChart     - No
+      MSFlexGrid  - No
+      MCI         - No
+      RichTextBox - Yes
+      Slider      - No
+      SSTab       - No
+
+18. ActiveX Document Internet Download Issues.
+
+   The sample HTML page created by the Setup Wizard for ActiveX Document-
+   based projects will download and register the Visual Basic 5.0-created
+   EXE or DLL and then jump to the .vbd file. The jump from the HTML page
+   to the .vbd file will prevent any merged menus from displaying.
+   Additionally, the DataChanged method will not operate correctly. The
+   workaround is to replace the Setup Wizard-generated HTML Window_Onload
+   event code with the following (where Userdocument1.vbd refers to your
+   vbd filename):
+
+       Sub Window_OnLoad
+          Window.Navigate "userdocument1.vbd"
+       End Sub
+
+   NOTE: You can bypass the HTML page altogether and navigate directly to
+   the .vbd file after the Visual Basic 5.0-created .exe or .dll has been
+   successfully downloaded to the client. For the latest information on the
+   Setup Wizard and ActiveX Document Internet download, go to
+   http://www.microsoft.com/vbasic/icompdown/ and read the file
+   Compdown.doc in the \Tools\docs directory on the Visual Basic 5.0
+   compact disc.
+
+19. Download Problems with Multiple VB5-Authored Controls on a Single
+   HTML Page.
+
+   If a single HTML page will contain multiple Visual Basic-authored
+   ActiveX controls, put all of the controls into a single Visual Basic
+   project and run the Setup Wizard on that project. The Setup Wizard will
+   create a single CAB file for all the controls. The containment of all
+   controls within a single CAB file minimizes download time and removes
+   the possibility of files being downloaded more than once.
+
+20. ActiveX Designers May Not Be Used in Unattended Servers.
+
+   Visual Basic 5.0 does not support the use of ActiveX designers in multi-
+   threaded (unattended) components. The UI prevents this in most cases,
+   but there is a small loophole present that allows you to build a Visual
+   Basic component containing ActiveX designers and mark the server as
+   "unattended-execution," which in turn registers that component as
+   "Apartment-Threaded." Doing this is unsupported and does not produce
+   favorable results. For example, marking a project that contains a
+   UserConnection designer as "unattended execution" and using it in a
+   multi-threaded environment, such as the Microsoft Transaction Server,
+   results in "Out of Memory" errors or more severe problems.
+
+   The workaround is to always compile projects containing ActiveX
+   designers as single-threaded. In other words, in these cases do not
+   check "Unattended Execution."
+
+21. GPFs on Startup of Visual Basic 5.0.
+
+   If you get a GPF during startup of Visual Basic 5.0, it is probably
+   caused by an incompatible add-in. You should edit the Vbaddin.ini and
+   set all entries to zero. Once the entries are set to zero, Visual Basic
+   5.0 will not load any add-ins on start-up. You can then use the Add-In
+   Manager to add back add-ins that are working properly.
+
+   If you get a GPF on start-up of the Visual Basic Learning Edition, it
+   may be caused by add-ins installed by the Visual Basic Control Creation
+   Edition Beta. The workaround is the same as above. Also, you should
+   install the released version of the Control Creation Edition.
+
+22. Visual Basic 4.0 Event Procedures May Cause Errors in
+   Visual Basic 5.0.
+
+   Visual Basic 4.0 did not recognize some typelib-defined data types, such
+   as OLE_HANDLE. When these types were used in event arguments, Visual
+   Basic 4.0 would replace them with the corresponding native type (in this
+   case, Long). Thus, Visual Basic 4.0 would produce the following event
+   procedure for an event with an argument of type OLE_HANDLE:
+
+      Private Sub SomeControl1_SomeEvent(ByVal oh As Long)
+
+      End Sub
+
+   If this same event procedure prototype is created in Visual Basic 5.0,
+   the correct data type will be used:
+
+      Private Sub SomeControl1_SomeEvent(ByVal oh As stdole.OLE_HANDLE)
+
+      End Sub
+
+   If code generated in Visual Basic 4.0 is imported into Visual Basic 5.0,
+   the event types will not match and the code will not compile. The
+   solution is to cut the code from the existing event procedure, delete
+   the event procedure prototype and recreate it in Visual Basic 5.0, and
+   then paste the code back into the event procedure.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbtool kbVBp500 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : 5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

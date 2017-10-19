@@ -1,0 +1,401 @@
+DOCUMENT:Q248838  11-JAN-2001  [exchange]
+TITLE   :XADM: Exchange Server 5.5 Post-SP3 Information Store Fixes
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+NOTE: The fixes listed in this article were most recently posted to the Microsoft Download Center on October 27, 2000. Fixes released after October 27, 2000 are available from Microsoft Product Support Services, but have not been posted to the Download Center. For additional information about how to obtain the fixes listed in this article, click the article number next to the title of the article about that issue to view the article in the Microsoft Knowledge Base.
+
+
+SUMMARY
+=======
+
+This article lists the article numbers for Exchange Server 5.5 information store
+bugs that have been fixed since Exchange Server 5.5 Service Pack 3 was
+released.
+
+NOTE: Exchange Server fixes for a particular component are cumulative and contain
+all of the previous fixes for that component. Fixes with a particular version
+number contain all of the fixes that have an earlier version number.
+
+MORE INFORMATION
+================
+
+Information store fixes include the following files:
+
++--------------------------------+
+| File name    | Current version | 
++--------------------------------+
+| Admin.exe    | 5.5.2653.22     | 
++--------------------------------+
+| Escprint.dll | 5.5.2651.0      | 
++--------------------------------+
+| Isinteg.exe  | 5.5.2652.86     | 
++--------------------------------+
+| Mailumx.dll  | 5.5.2653.22     | 
++--------------------------------+
+| Mapi32.dll   | 5.5.2652.93     | 
++--------------------------------+
+| Mdbmsg.dll   | 5.5.2652.42     | 
++--------------------------------+
+| Mdbrest.dll  | 5.5.2651.73     | 
++--------------------------------+
+| Mdbsz.dll    | 5.5.2651.29     | 
++--------------------------------+
+| Movesrvr.dll | 5.5.2653.22     | 
++--------------------------------+
+| Mvstore.dll  | 5.5.2653.11     | 
++--------------------------------+
+| Netif.dll    | 5.5.2652.21     | 
++--------------------------------+
+| Store.exe    | 5.5.2653.22     | 
++--------------------------------+
+
+
+Fixes Released on October 30, 2000
+----------------------------------
+
+The following files are modified:
+
+ - Admin.exe, Mailumx.dll, and Movesrvr.dll added and incremented to version
+   5.5.2653.22
+ - Store.exe incremented to version 5.5.2653.22
+
+The following fixes are included:
+
+   Q274200 XADM: Duplicated Message Received with Information Store Post-Service
+   Pack 3 Hotfix
+
+   Q274403 XADM: Internet Mail Service Stops Processing Inbound Conversion
+
+   Q275714 XADM: Information Store Stops Unexpectedly with Multipart or Mixed
+   Message and Null Boundary String
+
+
+Fixes Released on September 21, 2000
+------------------------------------
+
+NOTE: The Admin.exe, Mailumx.dll, and Movesrvr.dll files are not included with
+these fixes. These files are added later.
+
+The following files are modified:
+
+ - Isinteg.exe incremented to version 5.5.2652.86
+ - Mapi32.dll added and incremented to version 5.5.2652.93
+ - Mvstore.dll incremented to version 5.5.2653.11
+ - Store.exe incremented to version 5.5.2653.12
+
+The following fixes are included:
+
+   Q250302 XFOR: SMTP Mail Causes Information Store to Stop Responding
+
+   Q259541 XADM: Store Hangs During Move Mailbox Process
+
+   Q260912 XADM: Exchange Server Categorization Count Displays 4294967296 in
+   Performance Monitor
+
+   Q263457 XADM: Information Store Access Violation with Long One-Off Address
+   Entries
+
+   Q263908 XADM: Information Store Crash in EcReplFolderMessagesUnpack
+
+   Q266093 XADM: Information Store Stops Responding Because of Invalid QueryRows
+   Request
+
+   Q266259 XGEN: MAPI Applications Opening Messages Simultaneously Will Not Save
+   Properties Correctly
+
+   Q266371 XADM: Exchange Server 5.5 User Receives Duplicate E-Mail Message When
+   on Exchange 2000 Server Distribution List and Carbon Copied
+
+   Q266639 XCLN: Outlook Tasks Assigned to Users on Other Exchange Server
+   Computers Do Not Send Back Updates upon Completion
+
+
+   Q268131 XADM: Store Uses Wrong Language When It Delivers Quota Warning Message
+   to a Public Folder
+
+   Q268141 XADM: Information Store Stops Responding When IMAP Client Attempts to
+   Retrieve S/MIME Message
+
+   Q268357 XADM: Exchange Clients Appear to Hang When Information Store Queries
+   Directory
+
+   Q268380 XADM: Store Crashes When Rich Text Is Enabled over the IMAP4 Protocol
+
+   Q269576 XADM: Messages Sent Through Internet Mail Service Contain
+   UTF-8-Encoded Characters
+
+   Q270712 XADM: Store.exe Process Stops Responding with Very Large Number of
+   Threads
+
+   Q271199 XADM: Netscape Internet Message Access Protocol Clients Unable to
+   Determine Content Type of Attachments
+
+   Q271547 XADM: Move Mailbox Utility Does Not Work When Antivirus API Is In Use
+
+   Q271591 XFOR: Internet Mail Service Does Not Deliver Message After You Install
+   Virus Scan Software
+
+   Q271711 XADM: Autoforward Rules May Be Disabled When Using Antivirus API
+
+   Q271960 XADM: Address Book Search Takes Longer Than Expected
+
+   Q272113 XADM: Information Store Causes Access Violation When It Tries to
+   Process Outbound Internet E-mail Message
+
+   Q272863 XADM: Information Store Access Violation When You Attempt to Encode a
+   Corrupted HTML Message
+
+
+Fixes Released on May 10, 2000
+------------------------------
+
+NOTE: The Admin.exe, Mailumx.dll, Mapi32.dll, and Movesrvr.dll files are not
+included with these fixes. These files are added later.
+
+The following files are modified:
+
+ - Mdbmsg.dll added and incremented to version 5.5.2652.42
+ - Store.exe incremented to version 5.5.2652.42
+
+The following fixes are included:
+
+   Q259881 XADM: Unexpected Event ID 2078 in Application Event Log Occurs When a
+   Client Has Multiple Transport Providers
+
+   Q260063 XADM: News Article with Followup-To Property Defined Cannot Be Posted
+
+   Q262491 XADM: Information Store Crashes When Using Antivirus Application
+   Programming Interface
+
+   Q262578 XADM: Add Move User Event Logging
+
+
+Fixes Released on April 27, 2000
+--------------------------------
+
+NOTE: The Admin.exe, Mailumx.dll, Mapi32.dll, Movesrvr.dll, and Mdbmsg.dll files
+are not included with these fixes. These files are added later.
+
+The following files are modified:
+
+ - Isinteg.exe incremented to version 5.5.2652.33
+ - Netif.dll added and incremented to version 5.5.2652.21
+ - Store.exe incremented to version 5.5.2652.29
+
+The following fixes are included:
+
+   
+
+
+   Q258056 XADM: Store Generates 3079 and 3084 Errors When It Cannot Rehome a
+   Public Folder Correctly
+
+   Q259163 XADM: Recipients Cannot Open Attachments If Virus Scanning Interfaces
+   Are Enabled
+
+   Q259487 XADM: Isinteg Loops If the Folder's Parent Does Not Exist in the
+   Information Store
+
+   Q259675 XADM: Isinteg Utility Does Not Correct Mailbox Item Count
+
+
+   Q260701 XADM: Reducing the Large Number of Public Folder Status Messages
+
+Fixes Released on April 12, 2000
+--------------------------------
+
+NOTE: The Admin.exe, Mailumx.dll, Mapi32.dll, Mdbmsg.dll, Movesrvr.dll, and
+Netif.dll files are not included with these fixes. These files are added later.
+
+The following files are modified:
+
+ - Isinteg.exe incremented to version 5.5.2651.91
+ - Store.exe incremented to version 5.5.2652.17
+
+The following fixes are included:
+
+   Q252345 XADM: Information Store Stops with Access Violation in FEqCAI
+
+   Q252624 XIMS: Internet Mail That Contains Illegal X-Mac-Creator Attribute Is
+   Archived After Upgrading to Exchange Server 5.5 Service Pack 3
+
+   Q252820 XADM: Information Store Stops Responding When an IMAP4 User Logs on to
+   an Orphaned Mailbox
+
+   Q254035 XADM: Stack Overflow While Deleting Child Folders in a Deep Hierarchy
+
+   Q254230 XADM: Appointments Become Unusable or Are Deleted After You Run
+   Isinteg in Fix Mode
+
+   Q254533 XADM: Incoming Internet Message Shows Corrupted Display Name
+
+   Q254552 XADM: Slow Information Store Startup Because of Unnecessary Cleanup of
+   Public Folder Restrictions
+
+   Q254576 XADM: ISINTEG reports ecCorruptData-MAPI_E_CORRUPT_DATA
+
+   Q254800 XADM: Rules Do Not Work When Using Custom Recipient from the Global
+   Address List
+
+   Q254893 XFOR: Internet Mail Service Does Not Generate the Non-Delivery Report
+   to the Sender
+
+   Q255251 XADM: Cannot View Free and Busy Consistently
+
+   Q256294 XADM: Server Delegate Rule Is Disabled by External E-Mail Message
+
+   Q256315 XADM: Information Store Stops Unexpectedly Writing to Message Tracking
+   Log Because of NULL Address
+
+   Q256467 XADM: Information Store Does Not Log Message in Application Event Log
+   on Delivery
+
+
+   Q258319 XADM: Temporary File Grows Until Disk Space Is Consumed When Sending
+   or Receiving Mail with Attached File
+
+   Q258505 XADM: Information Store Receives Access Violation When UTF-8 and UTF-7
+   Client Logs On
+
+Fixes Released on January 26, 2000
+----------------------------------
+
+NOTE: The Admin.exe, Mailumx.dll, Mapi32.dll, Mdbmsg.dll, Movesrvr.dll, and
+Netif.dll files are not included with these fixes. These files are added later.
+
+The following files are modified:
+
+ - Mdbrest.dll incremented to version 5.5.2651.73
+ - Mvstore.dll added and incremented to version 5.5.2651.73
+ - Store.exe incremented to version 5.5.2651.76
+
+The following fixes are included:
+
+   Q248827 XADM: Message Is Never Delivered to Foreign System User
+
+   Q249810 XADM: Plain Text Message Becomes RTF upon Autoforward
+
+   Q250302 XFOR: SMTP Mail Causes Information Store to Stop Responding
+
+
+Fixes Released on December 20, 1999
+-----------------------------------
+
+NOTE: The Admin.exe, Mailumx.dll, Mapi32.dll, Mdbmsg.dll, Movesrvr.dll,
+Mvstore.dll, and Netif.dll files are not included with these fixes. These files
+are added later.
+
+The following files are modified:
+
+ - Escprint.dll incremented to version 5.5.2651.0
+ - Mdbsz.dll incremented to version 5.5.2651.29
+ - All other files incremented to version 5.5.2651.68
+
+The following fixes are included:
+
+   Q233353 XFOR: OLE Attachments Are Replaced With <<...>>
+
+   Q235528 XADM: Mailbox Item and Size Counts Are Incorrect
+
+   Q238183 XADM: Default IMAP4 Line-Wrap Set to 72 Characters
+
+   Q238419 XADM: Information Store Stops Responding When Delivering an NDR
+
+   Q238498 XFOR: Store Generates NDR to an SMTP Report If Prohibit Receive Is
+   Enabled and Active
+
+   Q238911 XADM: Delegate Stops Receiving Meeting Requests
+
+   Q241278 XADM: Insufficient Memory when CDO/MAPI Application Accesses a Message
+   on Exchange Server
+
+   Q241309 XADM: Isinteg Stops Responding with ecNotFound - MAPI_E_NOT_FOUND
+
+   Q241482 XADM: Invalid TNEF from the Internet Mail Service Causes the
+   Information Store to Crash Under Stress
+
+   Q242201 XADM: Information Store Stops Responding When Processing a Public
+   Folder Replication Message
+
+   Q242367 XADM: Limitation Warning Message Has Wrong Words
+
+   Q243569 XADM: Wrong Wording for Storage Warnings for Czech Clients
+
+   Q243626 XADM: Delivery Receipts Not Properly Routed to MTA for Delivery,
+   Causing 2006 Events
+
+   Q243769 XADM: Store.exe Crashes Converting Transport-Neutral Encapsulation
+   Format Data
+
+   Q245330 XADM: Information Store Stops Responding When Starting an Automatic
+   Forward Rule
+
+   Q245748 XADM: Low Resource Condition Causes Information Store to Stop
+   Unexpectedly
+
+   Q246079 XADM: ISINTEG -PRI -FIX -TEST FOLDER does not complete if it finds
+   orphaned folders.
+
+   Q246253 XADM: Site Folders Deleted for Exchange Sites That Exist in the
+   Directory
+
+   Q246597 XADM: Out of Office Message Is Received for a Message Sent to a
+   Distribution List Configured Not to Generate Them
+
+   Q247084 XADM: Access Violation in Information Store While Trying to Resolve a
+   Public Folder Conflict
+
+   Q247255 XADM: Information Store Silently Drops Messages When MTA Is Not
+   Started
+
+   Q247761 XCLN: Read Notifications Received over an X.400 Connection Do Not Show
+   Up on the Outlook Tracking Tab
+
+   Q248067 XWEB: Isinteg Cannot Fix Warnings if Public Folders Have No MAPI
+   Properties
+
+   Q248234 XCLN: Exchange Clients Get No Results Querying the Exchange Server 5.5
+   Information Store on BCC Address Properties
+
+   Q248385 XWEB: Netscape 4.7 Does Not Display the Contents of the Message Body
+
+   Q248456 XADM: Out Of Office Assistant Does Not Start If a Rule Is Set to Stop
+   Processing Other Rules
+
+   Q248825 XADM: Subject Field Is Not Displayed Correctly
+
+   Q249148 XADM: Handles Leak During Online Backup
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbfixlist
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

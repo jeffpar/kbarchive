@@ -1,0 +1,48 @@
+DOCUMENT:Q41101  26-JUN-2001  [utilities]
+TITLE   :CodeView and Video Pages
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS, versions 2.2, 3.0, 3.11, 3.14, 4.0, 4.01, 4.05, 4.1 
+ - Microsoft CodeView for OS/2, versions 2.2, 3.0, 3.11, 3.12, 3.5 
+-------------------------------------------------------------------------------
+
+CodeView does not allow you to specify which video page it will use. As a
+result, any application that uses video page one conflicts with CodeView
+and the screen becomes corrupted.
+
+To avoid such conflicts, use the two-monitor option for CodeView (cv /2).
+This option allows CodeView to send the application's output to one screen
+while using the first screen for its own output.
+
+Otherwise, simply avoid the use of video page one in programs that will be
+debugged under CodeView.
+
+Additional query words: kbinf 2.20 3.00 3.50 4.00 4.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView220DOS kbCodeView300DOS kbCodeView311DOS kbCodeView314DOS kbCodeView400DOS kbCodeView401DOS kbCodeView405DOS kbCodeView410DOS kbCodeView220OS2 kbCodeView300OS2 kbCodeView311OS2 kbCodeView312OS2 kbCodeView350OS2
+Version           : :2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

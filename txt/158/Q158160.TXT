@@ -1,0 +1,69 @@
+DOCUMENT:Q158160  01-MAY-2001  [ssafe]
+TITLE   :PRB: Cloaked Projects are Deployed
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Cloaking is a new feature in Visual SourceSafe 5.0 that excludes specified
+subprojects from recursive actions on a higher level project. If the parent
+project is a WEB project, when the project is DEPLOYed, the cloaking has no
+effect.
+
+STATUS
+======
+
+This behavior is by design. While cloaking is set by the individual user to
+determine whether a given subproject will be included in a recursive GET or
+CHECKOUT for that user only, deploying a project is a "universal" action that
+affects an entire project, including all its subprojects.
+
+MORE INFORMATION
+================
+
+Deploying a project is, in effect, identical to performing a recursive Get
+Latest Version. Because the cloaking affects the behavior of the Get, you might
+expect it to affect the Deploy in the same way.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a WEB project (the parent project) that has at least one subproject.
+
+2. Mark one of the subprojects as Cloaked.
+
+3. Deploy the parent project. Note that the subproject is also Deployed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

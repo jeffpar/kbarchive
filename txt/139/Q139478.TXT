@@ -1,0 +1,44 @@
+DOCUMENT:Q139478  30-JUL-2001  [visualc]
+TITLE   :INFO: _heapwalk() Does Not Work On Win32s
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On Win32s, _heapwalk() does not work because the underlying API is not
+implemented). A call to _heapwalk() returns _HEAPEND and sets errno to ENOSYS.
+Because Win32s does not implement the API required for the heapwalk function, it
+sets the appropriate error number.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

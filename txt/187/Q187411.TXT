@@ -1,0 +1,63 @@
+DOCUMENT:Q187411  11-DEC-2001  [winnt]
+TITLE   :Some Desktop Icons Cannot Be Moved with Right Mouse Button
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to drag the Outlook shortcut and Install IIS shortcut using the
+right mouse button and choosing Move Here.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When logged in as administrator, all icons on the Terminal Server console can be
+moved on the desktop by dragging the icon using the left mouse button. If you
+drag most shortcut icons with the right mouse button, you get an option menu
+that includes Move Here. Most icons are movable. However, the Outlook shortcut
+and the Install IIS shortcut will not move with the right mouse button and the
+Move Here option. You can drag them around the screen, but they always return to
+their starting position.
+
+This same behavior is noticed on Windows NT 4.0 SP3.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

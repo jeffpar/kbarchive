@@ -1,0 +1,130 @@
+DOCUMENT:Q311271  07-NOV-2001  [sna]
+TITLE   :Font Selection in a PDT
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0,4.0
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 4.0 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some circumstances it may be necessary to use a Printer Definition File
+compiled to a Printer Definition Table (PDT) to control print output. Setting
+and defining fonts can be problematic in that changing the font characteristics
+in a PDT may not be reflected in the printed output as expected. This is due to
+the printer ignoring commands that are inappropriate in the current
+circumstances. This is by design. It is important, therefore, to understand how
+fonts are defined.
+
+In a printer control language (PCL) environment, fonts have a distinct set of
+parameters that must be set in a sequential manner. A font is described by
+symbol set, spacing, height, pitch, style, stroke weight, typeface family, and
+orientation. If, for example, a particular font is chosen whose characteristics
+do not fit in the default symbol set, then the default font or another font may
+be used. To ensure that the expected font will be used it is best practice to
+fully qualify or describe the font.
+
+MORE INFORMATION
+================
+
+To fully describe a font the characteristics must be defined in the previously
+mentioned order: symbol set, spacing, and so on. Code strings that have
+identical leading characters may use a continuation character instead of a
+termination character and be added together. The continuation character is
+usually the value of the lower case letter with the termination character being
+the value of the upper case letter.
+
+As an example, to send a font command sequence to the printer to set the
+following
+
+   Symbol Set = ASCII
+   Spacing = fixed
+   Pitch = 10 CPI
+   Height = 8.5
+   Style = Upright
+   Stroke Weight = Medium
+   Typeface = Line Printer
+
+these codes would be used:
+
++----------------------------------+
+| ESC(U     | 1B 28 55             | 
++----------------------------------+
+| ESC(sP    | 1B 28 73 50          | 
++----------------------------------+
+| ESC(s10H  | 1B 28 73 31 30 48    | 
++----------------------------------+
+| ESC(s8.5V | 1B 28 73 38 2E 35 56 | 
++----------------------------------+
+| ESC(sS    | 1B 28 73 53          | 
++----------------------------------+
+| ESC(sB    | 1B 28 73 42          | 
++----------------------------------+
+| ESC(sT    | 1B 28 73 54          | 
++----------------------------------+
+|           |                      | 
++----------------------------------+
+
+Note that most of the sequences start with an "ESC(s" or "1B 28 73". The entire
+string can be compressed by concatenating the codes leading with "28 73". The
+termination characters must also be converted to their respective lowercase
+values with the exception of the final value.
+
+The resultant string is:
+
+   ESC(U ESC(sp10h8.5vsbT
+
+   -or-
+
+   1B 28 55 1B 28 73 70 31 30 68 38 2E 35 76 73 62 54
+
+This is the code that would be placed in a macro and the macro would be referred
+to in the Start_Job line. The macros in the Start_Job line will be sent to the
+printer when a job is started. Frequently it is easier to create a set of macros
+and then call individual macros, bearing in mind that the macros must be called
+in the specified order, and even then unexpected results may occur.
+
+More detailed information on creating Printer Definition Files is available in
+the SNA Print Service white paper, which is available at the following Microsoft
+Web site:
+
+   http://www.microsoft.com/hiserver/evaluation/previousversions/snatechinfo.asp
+
+REFERENCES
+==========
+
+Hewlett Packard PCL5 Comparison Guide
+
+Hewlett Packard PCL5 Technical Reference Manual
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 _IK954 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ400
+Version           : :3.0,4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

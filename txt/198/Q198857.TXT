@@ -1,0 +1,77 @@
+DOCUMENT:Q198857  08-MAY-1999  [exchange]
+TITLE   :XFOR: 8007010b Err: Notes/SNADS/PROFS Connector Fails To Install
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During installation of the Microsoft Exchange Notes, Microsoft Exchange SNADS,
+or Microsoft Exchange PROFS (OV/VM) connectors, you might receive the following
+error message:
+
+   Severe. Install Failed. Check the log
+   C:\exchsrvr\CONNECT\Exchconn\setup\lmeilog.txt and the NT Event Log for
+   further details. Setup is exiting...
+
+Examining the Lmeilog.txt file, you find the following:
+
+   
+
+   MEXIEXTN: Started: Tue Apr 14 09:37:26 1998
+   PARAMETER: ORG=ORG
+   PARAMETER: SITE=SITE
+   PARAMETER: SERVER=SERVER001
+   PARAMETER: MACHINE=I386
+   PARAMETER: DISPLAYNAME= Extension for Lotus Notes Connector for i386
+   PARAMETER: NAME=lsntscp0
+   PARAMETER: EXTDLL=C:\exchsrvr\CONNECT\Exchconn\install\lsntscp0.dll
+   INFO: SITE DN=/o=ORG/ou=SITE
+   ERROR: unable to install lsntscp0 admin extension [8007010b]
+   MEXIEXTN: Failed [106]: Tue Apr 14 09:37:26 1998
+   MEXIEXTN: Please check the NT Application Event Log for any additional information.
+
+CAUSE
+=====
+
+The problem is caused by the lack of a Temp directory in the root of the drive,
+for example, C:\Temp.
+
+WORKAROUND
+==========
+
+Create a Temp directory in the root of the drive.
+
+
+Additional query words: TEMP PROFS LOTUS IBM
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

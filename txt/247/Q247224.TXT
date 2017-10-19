@@ -1,0 +1,68 @@
+DOCUMENT:Q247224  10-AUG-2001  [winnt]
+TITLE   :STOP 0x0000000A in Ndis.sys When Using Services for Macintosh
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP4
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Services for Macintosh on a Windows NT Server-based computer, an
+error message in Ndis.sys may appear on a blue screen with the following stop
+parameters:
+
+   STOP 0x0000000A (0xF43270C8, 0x00000002, 0x00000000, 0xF3B83A43)
+
+NOTE: The first and last parameters may vary from computer to computer.
+
+CAUSE
+=====
+
+This behavior occurs because Services for Macintosh was installed on the
+computer and the service pack that was installed on the server was not
+reapplied. To verify this, check the date and time stamp on the following
+files:
+
++-------------------------------------------------+
+| Sfmatalk.sys | 10/14/96 1:38 am | 125,232 bytes | 
++-------------------------------------------------+
+| Sfmsrv.sys   | 10/14/96 1:38 am | 132,112 bytes | 
++-------------------------------------------------+
+
+RESOLUTION
+==========
+
+To resolve this issue, reapply the current service pack.
+
+
+Additional query words: sfm
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search
+Version           : winnt:4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

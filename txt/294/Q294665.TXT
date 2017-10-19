@@ -1,0 +1,72 @@
+DOCUMENT:Q294665  12-NOV-2001  [msnetwork]
+TITLE   :Unsolicited E-mail Reduction--Workaround Through Hotmail
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To limit unsolicited e-mail or "spam" in your MSN Companion inbox
+
+1. In the search the web box, type www.hotmail.com.
+
+2. Type your Sign-in name and Password.
+
+3. Click the Options button on the horizontal navigation bar.
+   The Options page appears.
+
+4. Under "Mail Handling", click the Inbox Protector link.
+   The Inbox Protector page appears.
+
+5. Select the Typical or Custom box to enable the protector.
+   If you chose Custom, select the boxes as appropriate to direct incoming mail
+   to your Inbox from the types of senders listed under "Custom".
+
+6. Under Discard Folder, do one of the following:
+    - Select the box next to "Bulk Mail" to have Bulk Mail messages
+      automatically deleted 14 days after receipt.
+
+    - Select the box next to "Trash Can" to have Bulk Mail messages
+      automatically deleted several times a week.
+
+7. Do one of the following:
+    - Click OK to apply the filters.
+
+    - Click Cancel to return to the Options page without saving the filters.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

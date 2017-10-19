@@ -1,0 +1,57 @@
+DOCUMENT:Q76686  05-NOV-1999  [win16sdk]
+TITLE   :BUG: Protected-Mode GlobalCompact() Return Not Free Memory
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows is running in one of its protected modes, the value returned by the
+GlobalCompact() API does not accurately reflect the amount of free memory
+available in the system.
+
+In enhanced mode, Windows can swap memory objects to disk. This process takes a
+long time relative to accessing an object in memory. Therefore, GlobalCompact()
+returns the amount of memory available without performing any paging.
+
+In standard mode, GlobalCompact() never reports more than 1 megabyte (MB) of
+memory free because of a memory allocation limit on the 80286 chip.
+
+STATUS
+======
+
+Microsoft has confirmed that this problem occurs in Windows versions 3.0 and
+3.1. We are researching this problem and will post new information here as it
+becomes available.
+
+Additional query words: buglist3.00 buglist3.10 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSDKSearch kbWinSDKSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

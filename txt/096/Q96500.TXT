@@ -1,0 +1,76 @@
+DOCUMENT:Q96500  20-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: A TPL File Has Been Incorrectly Modified...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows, you may receive
+the following error message when selecting details on a user from the postoffice
+address list:
+
+   A TPL file has been incorrectly modified. Contact your Administrator.
+
+CAUSE
+=====
+
+This error occurs if the field data type entry in the ADMIN.TPL file is in
+lowercase letters. The ADMIN.TPL file is an ASCII text file that can be defined
+by the user. It provides additional information to be displayed when selecting
+details on an address. The fields are in the following form:
+
+   FieldPrompt:~Entry1~Entry2~Entry3~Entry4~
+
+where Entry3 is the field data type.
+
+The Windows client only accepts {A,L,U,N,P} for the field data type. The MS-DOS
+client accepts {a,A,l,L,u,U,n,N,p,P} and works properly with any of these
+values.
+
+RESOLUTION
+==========
+
+For the template to work properly in both clients, the ADMIN.TPL field data type
+entries must appear in capital letters. You can make this modification using any
+text editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0b, and 3.2 of
+Microsoft Mail for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

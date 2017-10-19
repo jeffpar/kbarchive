@@ -1,0 +1,70 @@
+DOCUMENT:Q316536  05-APR-2002  [exchange]
+TITLE   :XCCC: "Have Server Reply with Specific Message"  Rule Fails
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbExchange500 kbExchange550
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange 2000 Server 
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Outlook 2002 
+ - Microsoft Outlook 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Exchange Server cannot perform the "Have server reply with specific message"
+Inbox rule if you change the mailbox that is indicated in the From box. This
+issue occurs even if you are the rule creator and you have delegate rights to
+the mailbox that is indicated in the From box.
+
+CAUSE
+=====
+
+This issue occurs because Inbox rules run in the security context of the
+Exchange Server service account, which does not have the inherited rights of the
+mailbox owner.
+
+WORKAROUND
+==========
+
+To work around this issue, configure either a mailbox agent or a client side
+rule that prompts Outlook to reply with the specific message. The client side
+rule runs in the context of the mailbox owner and completes successfully.
+
+MORE INFORMATION
+================
+
+For more information about client side rules, see Outlook Help and Outlook
+documentation. For more information about mailbox agents, see the Microsoft
+Platform Software Development Kit (SDK).
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbExchange500 kbExchange550 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbOutlook2002 kbZNotKeyword2 kbOutlook2000Search kbOutlook2002Search kbExchange2000Search kbZNotKeyword3 kbExchange2000Serv
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,69 @@
+DOCUMENT:Q75900  09-OCT-1999  [win95x]
+TITLE   :Second Hard Disk Inaccessible Using SMARTDrive in Enhanced
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A second hard disk cannot be accessed in enhanced mode when you use SMARTDRV.SYS
+version 3.03. Symptoms of this problem include
+
+   sector not found
+
+and
+
+   Violated System Integrity
+
+errors when you attempt to use non-Windows-based applications.
+
+WORKAROUND
+==========
+
+You may need to add the /b- switch to SMARTDRV.SYS to access a second hard drive
+consistently.
+
+To load SMARTDRV.SYS correctly, rewrite the device line in the CONFIG.SYS file as
+follows:
+
+   DEVICE=C:\DOS\SMARTDRV.SYS 1792 256 /b-
+
+MORE INFORMATION
+================
+
+The /b- switch turns off the double buffering feature. It is used primarily for
+SCSI hard drives, although it is sometimes necessary when a system includes a
+SCSI CD-ROM drive. This switch may also be needed even if the CD- ROM drive does
+not contain a disk.
+
+Additional query words: 3.00 win30 3.00a cdrom
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,54 @@
+DOCUMENT:Q187501  02-MAY-1999  [iis]
+TITLE   :Different Directory Types That Can Be Added To a Catalog
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Microsoft Index Server 2.0, you can add two types of directory entries to
+the catalog. Virtual roots are added when you tell the catalog to index a
+specific Web site, and physical paths are added by creating a new directory
+entry under the index.
+
+MORE INFORMATION
+================
+
+Virtual roots are normally what you add to a catalog to index Web content. They
+are added by selecting the Index This Directory entry in the properties of a
+folder or virtual folder in the Internet Information Server snap-in.
+
+Physical paths are added by right-clicking the directory folder under the catalog
+in the Index Server snap-in and choosing New. Physical paths do not return valid
+URLs based on query results, instead they return only physical directory paths.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : WINNT:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

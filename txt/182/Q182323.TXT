@@ -1,0 +1,122 @@
+DOCUMENT:Q182323  12-FEB-2002  [visualc]
+TITLE   :BUG: ClassView Add... Errors with Read-Only Project Files
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbActiveX kbCOMt kbCtrl kbide kbInprocSvr kbMFC kbVC kbVC420 kbVC500 kbVC500bu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ClassView offers the following four options for classes on the shortcut menu:
+
+ - Add Member Function
+
+ - Add Member Variable
+
+ - Add Virtual Function
+
+ - Add Windows Message Handler
+
+These operations fail if project source files are read-only.
+
+The first two operations fail displaying one of the following messages:
+
+   One or more of the files for ... are read-only.
+
+   The implementation file for class ... cannot be found.
+
+The last two operations listed above fail without any message or visual cue. They
+may not be presented as options.
+
+CAUSE
+=====
+
+Source file permissions are read-only, perhaps due to source control.
+
+RESOLUTION
+==========
+
+Change the source file permissions to permit write access. In a source control
+environment, this may require checking out the file, or having the file's
+current owner check it back in.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The .ncb file contains ClassView browser information. If it is read-only at the
+time Visual C++ opens the project, ClassView is unavailable. The .clw file
+contains ClassWizard information. If it is read-only at the time Visual C++
+opens the project, the Add Virtual Function and Add Windows Message Handler
+options are unavailable on the ClassView context menu for classes.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new MFC AppWizard (exe) project.
+
+2. Change the file permissions to read-only for all files except the .ncb file.
+
+3. Right-click a class in ClassView; select Add Member Function or Add Member
+   Variable.
+
+   NOTE: A message box appears, but the "Add..." dialog box does not.
+
+4. Right-click Add Virtual Function or Add Windows Message Handler.
+
+   NOTE: No visible response occurs.
+
+5. Close the workspace and reopen it.
+
+6. Right-click a class in ClassView. The Add Virtual Function and Add Windows
+   Message Handler options do not appear on the context menu.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q140252 PRB: ClassWizard Disables Add Function & Add Variable Buttons
+
+REFERENCES
+==========
+
+Visual C++ online books: "File Types Created for Visual C++ Projects."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbActiveX kbCOMt kbCtrl kbide kbInprocSvr kbMFC kbVC kbVC420 kbVC500 kbVC500bug kbVC600 kbVC600bug kbClassWizard kbGrpDSMFCATL kbGrpDSTools kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

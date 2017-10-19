@@ -1,0 +1,64 @@
+DOCUMENT:Q139484  13-JUN-2001  [accother]
+TITLE   :ADT95: MS ADT Licensing Q & A Available
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbfile kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Qalicen.exe file contains a six-page document of questions and answers about
+Microsoft Access Developer's Toolkit for Windows 95 licensing and distribution
+issues.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Download Qalicen.exe now
+   (http://download.microsoft.com/download/access95/qa1/1/WIN98/EN-US/Qalicen.exe)
+
+The Qalicen.exe file contains the following files:
+
+   Qalicen.doc     Microsoft Access Developer's Toolkit Licensing
+                   and Solution Distribution Question and Answers<BR/>
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: Qalicen exe doc
+
+======================================================================
+Keywords          : kbfile kbgraphxlinkcritical 
+Technology        : kbAccessSearch kbAccess95Search kbZNotKeyword3 kbAccess700
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

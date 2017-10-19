@@ -1,0 +1,247 @@
+DOCUMENT:Q182834  07-APR-2000  [sna]
+TITLE   :Missing Error Messages When Using Diagnostic Capture
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0, used with:
+    - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Error messages developed in the recording component of a Diagnostic Capture
+Remote Environment (RE) are not currently logged in the Windows NT Event Log.
+Consequently, information gathered about the encountered error is lost.
+
+The example detailed in the "More Information" section describes only one
+instance of this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft COM Transaction
+Integrator for CICS and IMS version 1.0. This problem was corrected in the
+latest SNA Server version 4.0 U.S. Service Pack. For information on obtaining
+this Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   " S E R V P A C K " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+The following is an actual example. It includes the additional information that
+you would expect to be written in the Event Log for this specific example.
+
+First, create the error situation using the CedarBank tutorial as a basis.
+
+1. Start Microsoft Management Console (MMC) and open the COM Transaction
+   Integrator snap-in.
+
+2. Right-click Remote Environments and click New...Remote Environment.
+
+3. Click Diagnostic Capture and then click OK.
+
+4. In the Capture Remote Environment Wizard, select CICS LINK as the type of RE,
+   and then click Next.
+
+5. Provide your own name for a recording file and click Next.
+
+6. Provide your own name for the Diagnostic Capture RE and click Next.
+
+7. Click Finish.
+
+8. In the left pane of MMC, right-click the new Diagnostic Capture RE and click
+   Properties.
+
+9. Click the Target tab.
+
+10. Select "Use responses created from the turnaround dialog."
+
+11. Start Windows Explorer and locate the recording file you created.
+
+12. Right-click the file and click Properties.
+
+13. Under Attribute, click to select the Read-only check box.
+
+14. Install Sna\Comti\Tutorials\CedarBank\CICSLink\Cedar.tlb in a new Microsoft
+   Transaction Server (MTS) package. Use the tutorial instructions as necessary
+   to complete the process.
+
+15. Use the COMTI snap-in to ensure that Cedar.tlb is associated with the new
+   Diagnostic Capture RE.
+
+16. Start Sna\Comti\Tutorials\CedarBank\CICSLink\VBClient\CedarBank.exe.
+
+   Result: The application displays a dialog box with the error message:
+
+   (1300) COM Transaction Integrator was unable to allocate a state machine to
+   process the method call (progress=2, hr=0x80040111).
+
+17. Click Exit on the dialog box.
+
+18. Click Start on the Windows NT Taskbar. Point to Programs, point to
+   Administrative Tools, and then click Event Viewer.
+
+19. On the Log menu, click Application.
+
+The following four error entries appear in the Event Log.
+
+ - 
+
+   Event ID: 103
+   Source: COMTI
+   Type: Error
+   Category: General
+   (103) An error occurred during object creation and couldn't be reported to the
+   client:
+
+   Exception description: (1773) Capture could not update summary information in
+   recording file c:\program files\sna\comti\recordings\BUG202.rcd. Make sure
+   that the recording file is not marked as Read Only.
+
+   Explanation: An Automation exception was formatted but couldn't be returned to
+   the client because the error occurred during object creation. The exception
+   shown above describes the error. An HRESULT of CLASS_E_CLASSNOTAVAILABLE was
+   returned to the client application.
+
+   Action: The error may be caused by communication problems or configuration
+   errors on your system. See the exception description for corrective actions.
+
+ - 
+
+   Event ID: 300
+   Source: COMTI
+   Type: Error
+   Category: StMachDisp
+   (300) COM Transaction Integrator's state machine dispenser was unable to
+   create a new state machine object
+
+   Progress Code: 6
+
+   HRESULT: 0x80040111
+
+   Explanation:
+   COM Transaction Integrator was unable to create and initialize a new state
+   machine object in response to a client request. The progress code and HRESULT
+   above indicate the source and nature of the error.
+
+   Action:
+   Determine the meaning of the HRESULT shown above and proceed accordingly.
+
+ - 
+
+   Event ID: 301
+   Source: COMTI
+   Type: Error
+   Category: StMachDisp
+   (301) COM Transaction Integrator's state machine dispenser was unable to
+   allocate a state machine object
+
+   Progress Code: 2
+
+   HRESULT: 0x80040111
+
+   Explanation:
+   COM Transaction Integrator was unable to allocate a new or existing state
+   machine object in response to a client request. The progress code and HRESULT
+   above indicate the source and nature of the error.
+
+   Action:
+   Determine the meaning of the HRESULT shown above and proceed accordingly.
+
+ - 
+
+   Event ID: 102 Source: COMTI
+   Type: Error
+   Category: General
+   (102) COM Transaction Integrator reported the following exception to a
+   client:
+
+   Component: Cedar.Bank.1
+   Method: cedrbank
+
+   Exception description:
+   (1300) COM Transaction Integrator was unable to allocate a state machine to
+   process the method call (progress=2, hr=0x80040111).
+
+   Explanation:
+   An Automation exception representing an error condition was returned to a COM
+   Transaction Integrator client. The description shown above contains more
+   information about the exception that was reported.
+
+   Action:
+   The exception may be caused by communication problems or errors in your host
+   application. See the exception description for corrective actions.
+
+A change has been made such that COMTI will write additional error entries, from
+the recording component of the Diagnostic Capture RE, to the Event Log, such as
+this one for the present example.
+
+   Event ID: 803
+   Source: COMTI CapturePlayback
+   Type: Error
+   Category: Recording
+
+   (803) COM Transaction Integrator recording object failed to update a recording
+   file for a capture or playback Remote Environment:
+
+   Recording File Identifier:
+   {6F3BF771-BE88-11D1-B04D-00C04FD5BD02}
+
+   Exception Description:
+   (8336) Unable to open recording
+   c:\program files\sna\comti\recordings\test.rcd for writing, HRESULT =
+   0x80030005.
+
+   Explanation:
+   The recording object failed in servicing a request to update the summary
+   information in a recording file. This failure may indicate that the recording
+   file path is invalid, that the user lacks permission to modify a file in the
+   folder identified by the recording path, or that the recording file is
+   read-only.
+
+   Action:
+   Start the COMTI Management Console. Select the Remote Environments folder.
+   Locate the capture or playback Remote Environment associated with the
+   recording file. Right-click to view action options, and select Properties.
+   Select the Recording tab to view recording file information. Examine the
+   recording file path and make sure that it is valid. If the Create Date field
+   is blank, the recording object does not recognize the file as a valid
+   recording, and it may be corrupted. If the Create Date field is valid, make
+   sure that the recording is not identified as read- only. To create a new
+   recording file, enter a unique path name and click Apply. To use a different
+   existing recording file, use the Browse key to select a different recording
+   file and click Open.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

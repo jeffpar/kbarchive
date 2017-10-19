@@ -1,0 +1,51 @@
+DOCUMENT:Q74387  05-NOV-1999  [vbwin]
+TITLE   :Connecting a Tablet to COM2
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The tablet drivers supplied by Microsoft as part of the release of Windows for
+Pen Computing will work correctly if the tablet is connected to COM2. Connecting
+the tablet in this manner keeps COM1 free for the debugging information that is
+displayed by CodeView for Windows or WDEB386.
+
+To instruct the tablet driver to install on COM2, it is necessary to modify the
+[Pen Driver] section of the SYSTEM.INI file to include the following line:
+
+   com2=1
+
+The next time the system loads, it will use COM2 for the tablet.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

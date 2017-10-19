@@ -1,0 +1,85 @@
+DOCUMENT:Q189894  04-MAR-2002  [word97]
+TITLE   :WD97: Cannot Find Thesaurus Error After Installing Works 4.5a
+PRODUCT :Word 97 for Windows
+PROD/VER::4.5a,Service Release 2 (SR-2)
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Works, version 4.5a 
+ - Microsoft Word 97 for Windows, version Service Release 2 (SR-2) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Works 4.5a after installing Microsoft Word 97 Service Release 2
+(SR-2), the Word 97 SR-2 thesaurus is replaced by the Works 4.5a thesaurus. The
+Works 4.5a thesaurus does not function properly and the following will occur:
+
+ - In Works 4.5a, when you try to use the thesaurus, you will receive the
+   following error message:
+
+   Cannot find the Thesaurus files. Run Works Setup again.
+
+   -or-
+
+ - In Word 97 SR-2, when you try to use the thesaurus, one of the following
+   occurs:
+
+    - Word tries to use the United Kingdom thesaurus even though you are set up
+      for US English; hence you receive the following error message:
+
+   Word cannot find the thesaurus file msth_en.lex for English (United States)".
+
+      -or-
+
+    - Nothing happens when you try to use the thesaurus.
+
+RESOLUTION
+==========
+
+Reinstall Word 97 SR-2 to replace the Works 4.5 thesaurus with the Word 97 SR-2
+thesaurus.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+For more information about installing Word 97 SR-2, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q151261 OFF97: How to Obtain and Install MS Office 97 SR-2
+
+Additional query words: err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbHomeProdSearch kbWorksSearch kbWord97 kbWord97Search kbZNotKeyword2 kbWord97SR2 kbWorks450a
+Version           : :4.5a,Service Release 2 (SR-2)
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

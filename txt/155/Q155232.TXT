@@ -1,0 +1,130 @@
+DOCUMENT:Q155232  11-DEC-1999  [odbc]
+TITLE   :BUG: Access Driver Ignores Pagetimeout in Datasources
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:3.40
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.40 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Access ODBC driver ignores the Pagetimeout parameter specified in ODBC
+datasources.
+
+WORKAROUND
+----------
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To work around this problem:
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+   \SOFTWARE\Microsoft\Jet\3.0\Engines
+
+3. From the Edit menu, select Add Key, and then enter the following key: Jet
+
+4. Select the Jet key.
+
+5. From the Edit menu, select Add Value.
+
+6. Add the following:
+
+         Value: PageTimeout
+         Data Type: REG_DWORD
+         Data: <Decimal value in milliseconds>
+
+NOTE: If this value is set too low, performance may degrade due to Jet increasing
+its reading of the .mdb file. Do not set the value lower than the Jet 2.0
+default of 0.5 second. The PageTimeout parameter is expressed in 100 millisecond
+units. So, a value of 5 stands for 500 milliseconds or .5 seconds.
+
+7. Click OK.
+
+8. Quit Registry Editor.
+
+9. Shut down and restart Windows NT.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC Access 3.40.2829
+Driver.
+
+MORE INFORMATION
+================
+
+The Access ODBC driver is built on the Jet Database Engine. Jet buffers the
+pages read from a .mdb file. The interval at which Jet reads pages from the .mdb
+file to refresh the buffer is controlled by a Pagetimeout parameter. Jet does
+not refresh its internal buffer from the .mdb file until the Pagetimeout
+interval has expired (even if you issue a Select against the table whose data is
+in those pages). If you do Select Jet provides the information from the buffer.
+It does not actually read pages in from the .mdb file until the Pagetimeout
+interval has expired.
+
+If multiple instances of Jet (such as separate connections through the Access
+driver or separate instances of Access) are working with the same .mdb file,
+updates made by one task is not visible to a second task until after the second
+task's Pagetimeout interval has expired. For example, if the second task's
+Pagetimeout interval is set to 20 seconds, the updates made by the first task is
+not visible to the second task for 20 seconds.
+
+In Jet 2.0, which is the version used in the ODBC Desktop Drivers version 2.0,
+the Jet Pagetimeout interval defaults to 0.5 second. In Jet 3.0, which is the
+version used in the ODBC Desktop Drivers 3.0, the default has been raised to 5
+seconds. Therefore, users have noticed that updates, inserts, and deletes made
+in one Jet task (either the ODBC Access driver or Access itself) does not appear
+in another Jet task for 5 seconds.
+
+The Pagetimeout interval can be specified in two places. The default for all
+instances of Jet on a computer is stored in the following Windows NT Registry
+subkey:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Jet\3.0\Engines\Jet
+
+In addition, the Access ODBC driver supports a distinct Pagetimeout value for
+each ODBC datasource. This can be specified in Advanced options when you
+configure a data source manually in the ODBC Administrator. The value specified
+in the datasource is ignored. The ODBC driver always uses the Pagetimeout value
+from the registry location mentioned above. If the Jet key does not exist or
+does not include a specified Pagetimeout value, the driver always uses the Jet
+default of 5 seconds.
+
+Additional query words: odbc 3.40.2829
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch
+Version           : WINDOWS:3.40
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

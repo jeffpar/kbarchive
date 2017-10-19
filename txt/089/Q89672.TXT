@@ -1,0 +1,46 @@
+DOCUMENT:Q89672  23-OCT-1999  [foxmisc]
+TITLE   :Importing Dates from a Text File into FoxBASE+/Mac
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+To import dates into FoxBASE+/MAC from a text file, the dates must be
+in year-month-day order and include the century. For example, 19920823
+represents August 23, 1992.
+
+If dates in the file are in month/day/year (08/23/92) format, modify
+the structure of the database to place the date into a character data
+field, ten characters long. Import the text file into the database,
+then modify the database structure and change the field to the date
+field type.
+
+Additional query words: 2.01
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

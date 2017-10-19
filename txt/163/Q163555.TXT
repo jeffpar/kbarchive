@@ -1,0 +1,83 @@
+DOCUMENT:Q163555  13-JUN-2001  [sna]
+TITLE   :Admin Displays LU as Available When It Really Is Not
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If a user closes an emulator session, the SNA Server Admin shows the logical
+unit (LU) to be "Available" when it should show "SSCP" (in use).
+
+CAUSE
+=====
+
+When the emulator unbinds the LU-LU session, SNA Server solicits an UNBIND from
+the host. The host can send an UNBIND (Bind Forthcoming - Byte1 of BIND = '02'),
+promising that it will send a BIND in the future. SNA Server responds positively
+to this, and waits for the BIND. However, the host never sends a BIND as it had
+promised, so SNA Server marks this LU as on- hold so that no unaccredited user
+can gain control of the LU in this window of time. The status of the LU in the
+SNA Server Admin is SSCP. This is normal.
+
+However, if the emulator then terminates the SSCP-LU session by issuing a Close
+SSCP request, SNA Server Admin then displays the LU as Available and never sends
+a NOTIFY SLU disabled telling the host to disable the LU. The user then
+considers the LU to be Available for use, when in fact it is not, because SNA
+Server is still waiting for the BIND.
+
+This problem is considered a host bug because it does not send the BIND after
+promising to do so. However, SNA Server should handle this special case.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the hotfix mentioned below. In the hotfix, SNA
+Server sends a NOTIFY SLU disabled, and displays SSCP in the SNA Server Admin in
+this special condition.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+2.11 and 2.11 Service Pack 1.
+This problem was corrected in the latest Microsoft SNA Server 2.11 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: sp1 prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

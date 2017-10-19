@@ -1,0 +1,89 @@
+DOCUMENT:Q156738  26-AUG-1999  [foxpro]
+TITLE   :PRB: Copy, Paste Shortcuts Work Only When Edit Menu Present
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 3.00b 5.00
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a program replaces the Visual FoxPro System Menu bar with a menu bar that
+does not contain an Edit menu pad, the shortcut keys to cut, copy, and paste
+(CTRL+X, CTRL+C and CTRL+V) no longer perform those functions.
+
+CAUSE
+=====
+
+Because the current system menu has no Edit pad, there will be no edit functions
+for the application at the time.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Shortcut keys are defined within a menu and enabled when that menu is loaded.
+While the CTRL+X, CTRL+C, and CTRL+V are used by most Windows applications as
+the shortcuts to cut, copy, and paste, they accomplish those functions only as
+menu pop-up bar shortcuts. If the system menu has no Edit pad or other edit
+functionality, those shortcut keys will not be available.
+
+Steps to Reproduce Behavior
+---------------------------
+
+In the Visual FoxPro for Windows Help file topic for [ASCII 147]Activate
+Popup,[ASCII 148] there is a sample program named Actipop.prg that modifies the
+default menu and demonstrates that the editing shortcut functionality no longer
+functions.
+
+1. Copy the code for the Actipop.prg file from the Help file example.
+
+2. Paste the code in a program file of the same name. Set the default path to
+   the directory where this file is saved.
+
+3. Run it with the program file visible and note that the system menu changes.
+
+4. Click any text shown in the program editing window.
+
+5. Try to use the clipboard features (CTRL+C,X,V) by cutting or copying the
+   selected text from one part of the open window to another.
+
+6. To restore your system menu, type the following commands in the Command
+   window:
+
+         SET SYSMENU NOSAVE
+         SET SYSMENU TO DEFAULT
+
+Additional query words: kbdsd VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : 3.00 3.00b 5.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

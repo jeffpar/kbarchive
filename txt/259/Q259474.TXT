@@ -1,0 +1,299 @@
+DOCUMENT:Q259474  08-AUG-2001  [crossnet]
+TITLE   :Australian Daylight Saving Time Changes for Microsoft Products
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:2000; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool win95 win98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Olympic Games are scheduled to be held during September, 2000 in Sydney
+Australia. Several Australian states (New South Wales, Victoria, Australian
+Capital Territory and Tasmania) have changed the daylight saving time transition
+start date from the last Sunday in October forward two months to the last Sunday
+in August.
+
+NOTE: for Tasmania, the 1999 daylight saving time start date was the first Sunday
+of October.
+
+Daylight Saving Time for 2000/2001
+----------------------------------
+
+For the year 2000 only, the official daylight saving time transition dates (as of
+March 28, 2000) for each of the states of Australia are:
+
+   South Australia 29/10/2000 To 3/2001*
+   Victoria 27/08/2000 To 25/3/2001
+   ACT 27/08/2000 To 25/3/2001
+   NSW 27/08/2000 To 25/3/2001
+   Tasmania 27/08/2000 To 25/3/2001
+
+* The South Australia daylight saving time end date was not available at time of
+publication.
+
+Source: http://www.sacentral.sa.gov.au/information/daylite.htm
+
+Microsoft provides third-party contact information to help you find technical
+support. This contact information may change without notice. Microsoft does not
+guarantee the accuracy of this third-party contact information.
+
+Clocks are advanced at 2:00 A.M by one hour on the start day to become Summer
+time.
+
+Clocks are set back at 3:00 A.M. by one hour at the end day to become Standard
+time.
+
+The change to daylight saving time will affect the transition settings for the
+following time zone rules:
+
+   (GMT + 10:00) Canberra, Melbourne, Sydney
+   (GMT + 10:00) Hobart
+
+Current versions of Microsoft products have daylight saving time transition dates
+that do not cater to the change mentioned above. These products include:
+
+   Microsoft Windows 95
+   Microsoft Windows 98
+   Microsoft Windows NT
+   Microsoft Windows 2000
+   Microsoft Windows CE
+   Microsoft Schedule+
+   Microsoft Outlook
+
+With current time zone settings, systems that use the existing time zone
+information in the affected states of Australia will not correctly interpret
+time related to the new transition to daylight saving time on August 27, 2000.
+This will cause the time to be offset by one hour from the correct time.
+
+Implications for the Use of Microsoft Calendaring Software:
+
+In the information below, the "overlap" period is defined as being the days
+between the newly defined start of daylight saving time, the last Sunday of
+August, and the regular start of daylight saving time.
+
+Any program that relies on the use of time zone information (such as calendaring
+software) will be affected by a change to the daylight saving time transition
+information. While some programs use the information stored in the operating
+system, others maintain separate lists. This information is not readily
+changeable, and as such appointments created within the overlap period may be
+displayed incorrectly. The following programs maintain a separate table of time
+zone information:
+
+   Microsoft Schedule+
+   Microsoft Outlook for Windows 3.x, Exchange Server Edition
+   Microsoft Outlook for Macintosh, Exchange Server Edition
+   Microsoft Outlook Web Access
+
+The following products all rely on the time zone information stored in the
+operating system to display the correct local start and end times for
+appointments. However, because Outlook must maintain information about the time
+zone each appointment was created for, some anomalies may still occur when you
+are using these products:
+
+   Microsoft Outlook 97
+   Microsoft Outlook 98
+   Microsoft Outlook 2000
+
+In particular, only appointments created after the new operating system time zone
+has been applied will be displayed as expected during the overlap period. Any
+appointments created before the new operating system time zone has been applied
+will be displayed incorrectly during the overlap period. To avoid these
+problems, use the following suggestions. Avoid the creation of appointments
+during the overlap period until after the operating system time zone has been
+updated.
+
+For any existing appointments created during the overlap period, the appointments
+will need to be modified by either of the following procedures:
+
+ - Export the appointments to a CSV file prior to modifying the operating system
+   time zone, delete existing appointments in the overlap period, and re-import
+   them after the operating system change. When you are exporting information
+   from your calendar to a CSV file, the local time is used. After the new time
+   zone is added to the operating system, the local time in the CSV file is
+   recalculated as GMT by using the current time zone settings.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q197480 OL2000: Changing the Time Zone Without Changing Appointment Time
+
+ - Manually modify each appointment after the operating system time zone has
+   been changed.
+
+Avoid creating future appointments in the overlap period in all successive years,
+until the operating system time zone is back to normal.
+
+As soon as possible after the overlap period ends, change the operating system
+back to the correct time zone for your location.
+
+For any appointments created during the overlap period in successive years, the
+appointments will need to be modified by either of the following procedures:
+
+ - Export the appointments to a CSV file prior to modifying the operating system
+   time zone, delete existing appointments in the overlap period, and then
+   re-import them after the operating system change.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q197480 OL2000: Changing the Time Zone Without Changing Appointment Time
+
+ - Manually modify each appointment within the overlap period in each successive
+   year after the operating system time zone has been changed back.
+
+Some users may benefit from using the additional time zone feature within
+Outlook. For example, to add the regular time zone as an additional time zone in
+Outlook 2000, click Options on the Tools menu, click Calendar Options, and then
+click Time Zone. Select the regular time zone for your location as the
+additional time zone. With the additional time zone in place, meetings added
+prior to the operating system update will show at the correct start/end times as
+referenced by the regular time zone. Unfortunately, there is no way to tell
+which appointments were created before the operating system time zone
+information was modified and which were created after the modification.
+
+The following Microsoft Knowledge Base articles provide additional information
+regarding this issue:
+
+   Q197480 OL2000: Changing the Time Zone Without Changing Appointment Time
+
+   Q186164 How Outlook Handles Time Zones for Meeting Requests
+
+RESOLUTION
+==========
+
+Windows NT 4.0, Windows 2000, Windows 95, Windows 98
+----------------------------------------------------
+
+An update has been created for the following products:
+
+   Windows NT 4.0 (including Terminal Server Edition)
+   Windows 2000
+   Windows 95
+   Windows 98
+
+The update adds a new time zone rule into the registry. The time zone has been
+named to ensure it is clearly identifiable as being for the year 2000 only:
+
+   (GMT + 10:00) Canberra, Melbourne, Sydney, Hobart (Year 2000 only)
+
+Note that this solution is English only, however, it has been tested successfully
+on some other language variants of Windows. If it is used on other language
+variants, the time zone string will appear in English.
+
+The update contains utilities that allow for the automation of the new time zone
+addition and later removal. See the Readme.txt and sample files supplied for
+further details. Please make sure to review the Readme.txt file in the update
+package for known limitations, issues, and usage.
+
+Select from the following options to download the correct update (self-expanding
+files) for your system:
+
+   http://www.microsoft.com/australia/support/timezone/2000.htm
+
+   Windows NT/Intel (Windows NT 4.0, Windows NT 4.0 Terminal Server Edition,
+   Windows 2000)
+   Windows NT/Alpha (Windows NT 4.0, Windows NT 4.0 Terminal Server Edition)
+   Windows 95/98
+
+This is a single download for the above platforms.
+
+Windows CE: For additional information, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q257178 Daylight Saving Time Incorrect for the Sydney Olympics in 2000
+
+MORE INFORMATION
+================
+
+Windows NT 3.51 platforms (MIPS, Intel, Alpha) are outside the scope of this
+update, however, by using the registry class Resource Kit tools or the methods
+documented at the above link it is possible to successfully implement the
+required time zone updates.
+
+There is currently no solution available for Microsoft Schedule+, Microsoft
+Outlook for Windows 3.x, Exchange Server Edition, and Microsoft Outlook for
+Macintosh, Exchange Server Edition.
+
+Programs built upon Microsoft Collaboration Data Object (CDO) such as Microsoft
+Outlook Web Access will also be affected by a change to the daylight saving time
+transition date. Microsoft is currently investigating a possible solution for
+CDO to account for the change in transition dates. Additional information will
+be posted if a solution is made available. The updates provided above have been
+tested on the English variants of Windows 95, Windows 98, Windows NT 4.0, and
+Windows 2000. Although these have undergone exhaustive testing, because of the
+large number of available programs and products, testing of all possible
+interactions is not possible.
+
+Limited testing on some non-English variants of Windows 98 and Windows NT 4.0 has
+been performed successfully. If used on other language variants, the time zone
+string will appear in English.
+
+Utilities in the update have been supplied as-is and are subject to Resource Kit
+support limitations.
+
+Normal precautions such as full systems backups, creation of an Emergency Repair
+disk, and off-line testing should be performed prior to full production
+implementation.
+
+If you use a Web-based or third party e-mail or calendaring solution, you need to
+check with your supplier for the handling of time zone related issues.
+
+Review the following Microsoft Knowledge Base article to ensure your systems have
+time zone information that is correct for pre-year 2000:
+
+   Q183907 Australian Daylight Saving Transition Dates Incorrect
+
+PLEASE NOTE THAT THE INFORMATION PRESENTED IN THIS DOCUMENT IS BASED ON
+INFORMATION SUPPLIED BY THIRD PARTIES. WE ASSUME THAT THAT INFORMATION IS
+ACCURATE. IF THE INFORMATION SUPPLIED BY THIRD PARTIES (ON WHICH MICROSOFT HAS
+RELIED) CHANGES OR IS SUBSEQUENTLY DETERMINED TO BE INACCURATE, MICROSOFT
+RESERVES THE RIGHT TO CHANGE THE INFORMATION PRESENTED IN THIS DOCUMENT WITHOUT
+ATTRACTING LIABILITY. THE INFORMATION PROVIDED IN THIS DOCUMENT AND ANY SOFTWARE
+OR CODE (COLLECTIVELY CALLED THE DOCUMENT) THAT MAY ACCOMPANY THIS DOCUMENT IS
+PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE. TO THE EXTENT PERMITTED BY APPLICABLE LAW,
+MICROSOFT DISCLAIMS ALL WARRANTIES, EITHER EXPRESSED OR IMPLIED, INCLUDING THE
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+SHALL MICROSOFT CORPORATION, ITS RELATED BODIES CORPORATE OR ITS SUPPLIERS BE
+LIABLE FOR ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF MICROSOFT
+CORPORATION, ITS RELATED BODIES CORPORATE OR ITS SUPPLIERS HAVE BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OR
+LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES SO THE FOREGOING
+LIMITATION MAY NOT APPLY.
+
+Additional query words: australian
+
+======================================================================
+Keywords          : kbenv kbtool win95 win98 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin98search kbWin98
+Version           : WINDOWS:2000; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

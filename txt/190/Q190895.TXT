@@ -1,0 +1,83 @@
+DOCUMENT:Q190895  13-JUN-2001  [homegame]
+TITLE   :DirectX: Different File Versions Listed in Diagnostic Tools
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run the DirectX diagnostic tools (DirectX Diagnostic Tool and DirectX
+Information) included in DirectX, a different file version number (a version
+other than 4.06.00.0318) appears to be listed for some DirectX components.
+
+NOTE: If you run the DirectX Driver Tool (a component of DirectX 5.0 and 5.2)
+after you install DirectX 6.0 on your computer, the versions of both DirectInput
+and DirectSound are listed as DirectX 5 under DirectX Version Information as
+these components are not updated to DirectX 6.0.
+
+MORE INFORMATION
+================
+
+Not all DirectX files were updated in this release of DirectX, and some files
+were updated to a different version number. The DirectX files that were not
+updated in this release retain their prior version number.
+
+The version number of these files should be 4.05.00.0155 or 4.05.00.0165 for
+Windows 95 and 4.05.01.1998 for Windows 98.
+
+The following DirectX files were not updated in this release of DirectX:
+
+ - Dinput.dll
+ - Dinput.vxd
+ - Djoyd.vxd
+ - Dsound.dll
+ - Dsound.vxd
+ - Gcdef.dll
+ - Gchand.dll
+ - Joy.cpl
+ - Msanalog.vxd
+
+The following DirectX files were updated to version 4.86.00.0318 in this release
+of DirectX:
+
+ - Ddrawex.dll
+ - Dxapi.sys
+
+For more information about how to solve problems related to DirectX, use the
+DirectX Home User Troubleshooter located at the following Microsoft Web site:
+
+   http://support.microsoft.com/support/directx/directx_7.0/tshooter/default.asp
+
+Additional query words: direct-x dxdiag dxinfo dxtool win95 win98
+
+======================================================================
+Keywords          : kbenv kbtool kbimu msgame 
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q76301  30-OCT-1999  [win16ddk]
+TITLE   :SAMPLE: VFood.exe Contains Basic Virtual Device (VxD) Structure
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbfile kbsample kb16bitonly kbDDK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+VFood.exe is a sample that contains code to a virtual device (VxD) for the
+Microsoft Windows operating system. This code demonstrates the basic features of
+a Windows VxD and how to implement them.
+
+The Microsoft Macro Assembler (MASM) and the Microsoft Windows Device Driver Kit
+(DDK) are required to build the VFOOD VxD.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Software
+Library:
+
+   VFood.exe (http://support.microsoft.com/download/support/mslfiles/VFood.exe)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbDDK 
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,430 @@
+DOCUMENT:Q105615  18-NOV-1999  [msdos]
+TITLE   :README.TXT: Microsoft MS-DOS 6.2 (Part 3 of 4)
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the MS-DOS 6.2 README.TXT file.
+
+NOTE: The MS-DOS 6.2 Upgrade and MS-DOS 6.2 Step-Up (both downloadable and disk
+versions) include the same README.TXT file.
+
+NOTES ON MS-DOS 6.2
+-------------------
+
+3. WINDOWS
+----------
+
+3.1 Your computer uses a Windows 3.0 permanent swap file.
+---------------------------------------------------------
+
+If your computer uses a Windows 3.0 permanent swap file, run the SPATCH.BAT
+program to make the swap file compatible with MS-DOS 6. To do so, carry out the
+following procedure:
+
+1. Copy the SPATCH.BAT file to your hard disk. To determine the location of the
+   file on the Setup disks, view the PACKING.LST file on Setup Disk 1.
+
+2. Type the following at the command prompt:
+
+   " SPATCH [DRIVE]:[PATH]SWAPFILE.EXE " (without the quotation marks)
+
+   For the DRIVE and PATH parameters, specify the location of your SWAPFILE.EXE
+   file.
+
+3. Follow the instructions on your screen.
+
+   The program modifies the SWAPFILE.EXE for use with MS-DOS 6 and saves a backup
+   copy as SWAPFILE.SAV. After you have confirmed the file works correctly, you
+   can delete the SWAPFILE.SAV file.
+
+3.2 Using compressed floppy disks with Windows File Manager
+-----------------------------------------------------------
+
+If you are using compressed floppy disks with automounting enabled, you might
+encounter error messages or other problems while using File Manager. To work
+around these problems, press the F5 key twice.
+
+For example, if you change from a compressed to an uncompressed floppy disk, the
+drive button for the compressed floppy disk's host drive remains until you press
+the F5 key twice.
+
+4. HARDWARE COMPATIBILITY WITH MS-DOS
+-------------------------------------
+
+4.1 Compaq EXTDISK.SYS Driver
+-----------------------------
+
+The Compaq EXTDISK.SYS driver version 3.00 or later is compatible with MS-DOS 6.
+If you have a version earlier than 3.00, contact your vendor for an upgrade.
+
+4.2 Hardcard
+------------
+
+To use DoubleSpace on a system that uses its Hardcard drive as its startup drive,
+see section 7.18. For additional Hardcard information, see the following:
+
+a. Hardcard II
+
+   If you can't use Plus Development Hardcard II or Hardcard II XL when running
+   EMM386.EXE, specify the exclude (x=) switch to prevent EMM386 from
+   conflicting with the card's BIOS address.
+
+   To configure EMM386, run MemMaker.
+
+b. Hardcard 40 or Passport
+
+   If you are using Hardcard 40 or a Passport removable disk, and you have a
+   DEVICE command in your CONFIG.SYS file for PLUSDRV.SYS, disable or remove the
+   DEVICE command. Then run MS-DOS 6.2 Setup. After Setup is complete, reenable
+   or restore the DEVICE command for PLUSDRV.SYS. Make it the last line in the
+   file.
+
+c. If you are unable to access your compressed drive after installing
+   DoubleSpace on your Hardcard, try the following:
+
+   1. Add a DBLSPACE /MOUNT command to your AUTOEXEC.BAT file to mount the
+      compressed volume file on the Hardcard every time you start your computer.
+
+   2. Or, ensure that there is at least one device driver (for example,
+      ANSI.SYS) loaded in your CONFIG.SYS file AFTER the ATDOSXL.SYS driver but
+      BEFORE the DBLSPACE.SYS driver.
+
+4.3 Toshiba
+-----------
+
+If you used the MS-DOS 5.0 version of EMM386 before you ran Setup, and you use
+the Power Management function, use the VRESUME program or device driver to avoid
+problems with the Resume feature. Carry out the following procedure:
+
+1. Make sure the VRESUME.COM or VRESUME.SYS file is on your hard disk. To load
+   the TSR, add a command for VRESUME.COM to your AUTOEXEC.BAT file. To load the
+   device driver, add a command for the VRESUME.SYS file to your CONFIG.SYS
+   file.
+
+2. Save the file, and restart your computer.
+
+   NOTE For information about using VRESUME with Windows 3.0, see the WRESUME.TXT
+   file on your Toshiba MS-DOS 5.0 disks.
+
+5. MICROSOFT PROGRAMS
+---------------------
+
+5.1 Microsoft Anti-Virus
+------------------------
+
+Before cleaning a program file, make sure you have a backup copy of it. If you
+clean a program file, and the program is corrupted, reinstall the program. If
+Anti-Virus again detects a virus, there is a chance the detection is in error;
+contact your software vendor to determine if an updated version of the program
+is available.
+
+5.2 Running Microsoft Backup for MS-DOS under Windows
+-----------------------------------------------------
+
+You should not run Backup for MS-DOS while Windows is running. However, if you
+do, and if your system is not configured correctly, Backup might display the
+following symptoms:
+
+ - Backup appears to stop running--for example, the clock runs, but there is no
+   disk activity.
+
+ - Backup reports problems while testing the second floppy disk during the
+   compatibility test. For example, it might display a "Diskette not properly
+   seated" message or ask for Disk 1 repeatedly.
+
+ - Windows displays a message that the DMA buffer size needs to be increased.
+
+ - Backup quits unexpectedly.
+
+You can correctly configure your system by carrying out the following procedure.
+
+1. Open your SYSTEM.INI file, and add a DMABufferSize=32 line to the [386Enh]
+   section.
+
+2. When you run Backup, make sure that you specify with the Settings command
+   from the Control menu that Backup run with the Exclusive and Full Screen
+   options.
+
+5.3  Backup for Windows stops running at the end of the compatibility
+    test
+------------------------------------------------------------------------------
+
+If Backup for Windows stops running at the end of the Compatibility Test, you
+might be loading an incompatible third-party backup driver in your SYSTEM.INI
+file. Carry out the following procedure.
+
+NOTE This procedure disables your third-party backup program.
+
+1. Open your SYSTEM.INI file, and locate the [386Enh] section.
+
+2. Determine whether any of the following lines are included in this section:
+
+   DEVICE=FASTBACK.386
+   DEVICE=VFD.386
+   DEVICE=CPBVXD.386
+   DEVICE=VIRWT.386
+
+3. If you find any of these lines, add a semicolon (;) to the front of the line.
+
+4. Save the file, restart Windows, and run Backup for Windows again.
+
+5.4  Running Microsoft Backup with TI4000 and Gateway NOMAD computers
+---------------------------------------------------------------------
+
+To avoid a conflict between the Turbo feature and Microsoft Backup for Windows or
+MS-DOS, add a "/L0" (without the quotation marks) switch to the DEVICE command
+in your CONFIG.SYS that loads the BATTERY.PRO file. Or, before you run Microsoft
+Backup, type "SETPOWER /L0" (without the quotation marks) at the command
+prompt.
+
+
+5.5 Microsoft Defragmenter
+--------------------------
+
+If you received the "Insufficient Memory" message from Microsoft Defragmenter,
+use the MEM command to determine how much conventional, upper, and extended
+(XMS) memory is available. In addition to using all available conventional
+memory, Defragmenter can make use of up to 384K of extended memory and 12K of
+upper memory.
+
+To increase available memory, carry out the procedures in "An MS-DOS program
+displays an out-of-memory message" in the chapter "Diagnosing and Solving
+Problems" in the MICROSOFT MS-DOS 6 USER'S GUIDE.
+
+If less than 384K of extended memory is available, carry out the procedures in
+"Freeing Extended Memory" in the "Making More Memory Available" chapter in the
+MICROSOFT MS-DOS 6 USER'S GUIDE.
+
+6. THIRD-PARTY PROGRAMS
+-----------------------
+
+6.1 4DOS and NDOS
+-----------------
+
+4DOS and NDOS are compatible with MS-DOS 6. However, to use some of the new
+features in MS-DOS 6.2 (such as MemMaker, the LOADHIGH /L switch, DIR
+compression switches, and the ability to bypass startup commands), contact JP
+Software to obtain 4DOS 4.02 or later, or Symantec to obtain Norton Utilities
+7.0 or later.
+
+If you use multiple configurations, 4DOS or NDOS will not automatically run your
+AUTOEXEC.BAT file unless you include a /P on the SHELL line in your CONFIG.SYS
+file.
+
+To use MS-DOS 6.2 Help instead of 4DOS or NDOS Help, start it by using COMMAND /C
+HELP, or define a 4DOS or NDOS alias to run HELP.COM from your MS-DOS 6.2
+directory.
+
+6.2 Above Board 286 and Above Board Plus Installation
+    Programs
+------------------------------------------------------------------
+
+Do not use an Above Board installation program dated May 1989 or earlier until
+you disable programs that use extended memory, such as SMARTDrive or RAMDrive.
+You might lose data if you leave these programs enabled. After you have
+installed Above Board, you can reenable these programs.
+
+6.3 CodeView
+------------
+
+CAUTION Using versions 3.0 to 3.13 of the CodeView CV.EXE file may cause data
+loss if your system has an 80386 memory manager (such as EMM386.EXE) and device
+drivers or programs that use extended memory. To determine which version you
+have, type "CV.EXE" (without the quotation marks) at the command prompt.
+
+6.4 Colorado Tape Backup
+------------------------
+
+If you receive a message that you have two versions of the VFINTD.386 file
+loaded, you probably need to edit your SYSTEM.INI file. To do so, carry out the
+following procedure:
+
+1. Open your SYSTEM.INI file and locate the [386Enh] section. You should see two
+   lines similar to the following:
+
+   DEVICE=C:\TAPE\CMSDTAPE.386
+   DEVICE=C:\DOS\VFINTD.386
+
+2. If you plan to use your Colorado Tape Backup program, add a semi- colon (;)
+   before the DEVICE command for the VFINTD.386 file. If you plan to use
+   Microsoft Backup, add a semi-colon before the DEVICE command for the
+   CMSDTAPE.386 file.
+
+3. Save the file, and restart Windows.
+
+6.5 Fastback Plus
+-----------------
+
+If you have a version of Fifth Generation Systems Fastback Plus earlier than 3.0,
+use the LOADFIX command before running Fastback Plus or the Fastback Plus
+installation program to ensure that you don't lose data. To do so, type the
+following at the command prompt:
+
+   " LOADFIX FB.EXE " (without the quotation marks)
+
+or
+
+   " LOADFIX FBINSTAL.EXE " (without the quotation marks)
+
+6.6 Norton Desktop for Windows 2.0
+----------------------------------
+
+Setup adds a second Tools menu which contains Microsoft Backup and Antivirus
+commands (if you installed these Windows programs), as well as a DoubleSpace
+Info command (if DoubleSpace is installed).
+
+If you use DoubleSpace to compress the drive that contains SmartCan, you might
+experience system problems afterward. To correct this, reinstall Norton Desktop
+for Windows.
+
+For information about Norton AntiVirus and DoubleSpace, see the following
+section.
+
+6.7 Norton Utilities
+--------------------
+
+The "Clear Space" option of Norton Speed Disk (prior to version 7.0) is
+incompatible with DoubleSpace drives. For an updated version of Norton Speed
+Disk, contact your software vendor.
+
+Do not use the WipeInfo utility on DoubleSpace drives. It can cause lost
+clusters. If you have already used this option, use the SCANDISK command to fix
+the lost clusters.
+
+If Norton AntiVirus is running when you use DoubleSpace to compress the drive
+that contains the NAV_.SYS file, DoubleSpace leaves a copy of the NAV_.SYS file
+on the host drive. This prevents Norton AntiVirus from reporting a virus
+infection during the compression process. After the compression process is
+complete, you can safely delete the copy of NAV_.SYS on the host drive.
+
+If you use the Norton Cache or Speedrive utilities, load the utility after the
+DEVICE command that loads DBLSPACE.SYS. For more information, see section 7.24.
+
+6.8 PC Tools
+------------
+
+If PC Shell does not show all of the files or directories on your drive, quit PC
+Shell immediately and contact Central Point Software for an update.
+
+   CAUTION: Do not attempt to use PC Shell on that drive; severe data loss might
+   occur. This problem affects both compressed and non-compressed drives.
+
+The DISKFIX /SCAN option in PC Tools can cause lost clusters on DoubleSpace
+drives. Avoid using this option. (If you have already used this option, use
+ScanDisk to fix the lost clusters.)
+
+The FORMAT command of PC Tools version 7.1 conflicts with MS-DOS 6.2. Use the
+FORMAT command that comes with MS-DOS 6.2.
+
+The COMPRESS command of PC Tools versions 6.0 and 5.5 is incompatible with
+DoubleSpace.
+
+6.9  QEMM's Stealth DoubleSpace Feature
+---------------------------------------
+
+The Stealth DoubleSpace feature of QEMM 7.01 is incompatible with MS-DOS 6.2.
+Version 7.02 is compatible with MS-DOS 6.2, but not with DEFRAG.EXE or
+DoubleSpace's Automount feature. Version 7.03 is fully compatible with MS-DOS
+6.2 and DoubleSpace; it is available to all QEMM 7 users through bulletin board
+systems such as BIX, CompuServe, and QuarterDeck BBS, as well as directly from
+QuarterDeck Office Systems.
+
+If you use the Stealth DoubleSpace feature of QEMM version 7.01 or 7.02, see the
+appropriate section below.
+
+QEMM version 7.01
+-----------------
+
+The Stealth DoubleSpace feature of QEMM 7.01 is incompatible with MS-DOS 6.2. If
+you use QEMM version 7.01 and the Stealth DoubleSpace feature, your computer
+will not start properly.
+
+To work around this problem, press F8 when your computer starts. Answer Y to all
+prompts except the following:
+
+    DEVICE=C:\QEMM\ST-DBL.SYS [Y/N]?
+
+When MS-DOS displays this prompt, answer N. (The pathname for ST-DBL.SYS may be
+different on your computer.) After your computer starts, edit your CONFIG.SYS
+file and make the following changes:
+
+ - Disable the DEVICE command for ST-DBL.SYS by using the REM command.
+
+ - Add a DEVICE command for DBLSPACE.SYS. For example:
+
+    DEVICE=C:\DOS\DBLSPACE.SYS /MOVE
+
+QEMM version 7.02
+-----------------
+
+The Stealth DoubleSpace feature of QEMM version 7.02 is compatible with MS-DOS
+6.2, with the following exceptions:
+
+ - You cannot use QEMM version 7.02's Stealth DoubleSpace feature while
+   DoubleSpace's Automount feature is enabled. To turn Automounting off, type
+   "DBLSPACE /AUTOMOUNT=O" (without the quotation marks) at the command prompt,
+   and then restart your computer.
+
+ - You cannot run the Microsoft Defragmenter (DEFRAG.EXE) while QEMM version
+   7.02's Stealth DoubleSpace driver is installed. To run DEFRAG.EXE, disable
+   the Stealth DoubleSpace driver, and then restart your computer. After you
+   finish running DEFRAG.EXE, you can reenable the Stealth DoubleSpace driver
+   and restart your computer.
+
+6.10  Johnson Computer Systems PC-Vault and PC-Vault Plus
+---------------------------------------------------------
+
+If you use version 4.6 or earlier of the PC-Vault or PC-Vault Plus hard disk
+protection system, do not use the Maximum Floppy Boot Protection option if you
+use DoubleSpace.
+
+In these versions of PC-Vault and PC-Vault plus, the Maximum Floppy Boot
+Protection option is incompatible with DoubleSpace and may cause data loss. If
+your version of PC-Vault or PC-Vault Plus is earlier than 4.6, contact Johnson
+Computer Systems for an upgrade.
+
+6.11 AddStor Double Tools
+-------------------------
+
+AddStor's Double Tools version 1.0 includes a version of DBLSPACE.BIN that is
+incompatible with MS-DOS 6.2. When you install Double Tools, do not check the
+"Install enhanced DoubleSpace drivers" box. If you do, Double Tools will replace
+the MS-DOS 6.2 DBLSPACE.BIN file with the Double Tools version of DBLSPACE.BIN.
+The next time you start your computer, it will display the message "Wrong
+DBLSPACE.BIN version" and none of your compressed drives will be mounted.
+
+
+Additional query words: MWBackup ndw 6.20 bbsstepup stepup doubletools
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

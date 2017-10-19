@@ -1,0 +1,170 @@
+DOCUMENT:Q284716  15-SEP-2001  [iis]
+TITLE   :INFO: Browser Shows Err Msg:  Remote Procedure Call Failed
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbInternet kbWinDNA kbGrpDSSIE kbDSupport kbiis400 kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes when IIS displays the following error message in a
+browser:
+
+   The Remote Procedure Call Failed and Did Not Execute.
+
+MORE INFORMATION
+================
+
+This error is displayed in the Web browser when a request is made by a user to
+an "out-of-process" Web application that has terminated or has been killed. This
+is a temporary message that is displayed until IIS has restarted the failed Web
+application. IIS, by default, automatically restarts all failed out-of-process
+Web applications, and this behavior is governed by a metabase value,
+"AppOopRecoverLimit".
+
+In IIS 4.0, a faulty in-process Web application can cause the entire Inetinfo.exe
+service to fail, which renders all Web sites unavailable. To help alleviate this
+situation, IIS 4.0 introduced the concept of out-of-process Web applications.
+When a Web application is designated as out-of-process, the application runs in
+a separate process (MTX.exe) that is isolated from the main IIS service
+(Inetinfo.exe) so that if the faulty Web application crashes, the main IIS
+service is unaffected and all other in-process and out-of-process Web sites
+remain available.
+
+In IIS 4.0, the AppOopRecoverLimit is not present in the metabase by default, but
+the value internally defaults to "5" for all out-of-process Web applications.
+This means that you can kill/crash an out-of-process Web site up to five times
+and IIS will restart the Web application for you automatically. In IIS 4.0, this
+setting only applies to out-of-process Web applications that run in MTX.exe.
+
+In IIS 5.0, the process isolation model was changed to encompass the new medium
+isolation "pooled out-of-process" Web applications in addition to high-isolation
+out-of-process Web applications. In IIS 5.0, the AppOopRecoverLimit limit is not
+present in the metabase by default, but the value internally defaults to "-1",
+which means IIS will restart all medium-isolation and high-isolation Web
+applications indefinitely. If the AppOopRecoverLimit is set in the metabase on a
+medium-isolation (pooled) Web application, it will be ignored and the pooled
+out-of-process Web application will restart indefinitely by default. In IIS 5.0,
+this setting can only be used on high-isolation Web applications that are
+running in DLLHost.exe. Additionally, if the Web site is in low isolation
+(in-process), then the application restart capability is governed by the
+properties for the IIS Admin service, which are listed in the Service Control
+Manager (which is configured through the "Services" Microsoft Management Console
+[MMC] snap-in, located in the Administrative tools group) and not by the
+AppOopRecoverLimit metabase entry. In IIS 5.0, by default, if the Inetinfo.exe
+service crashes, the IISReset.exe command will be issued to restart IIS
+indefinitely.
+
+Each time IIS 4.0 or 5.0 has to restart a failed out-of-process Web application,
+an error message similar to the following is logged in the event log:
+
+   Event ID: 37
+   Source: W3SVC
+   Description: "Out of process application /LM/w3svc/root/iishelp terminated
+   unexpectedly."
+
+In addition, each time that an out-of-process IIS Web site crashes or is killed,
+the next user to request a page from that Web site will receive the following
+error message once in his or her browser while IIS is restarting the failed
+site:
+
+   The Remote Procedure Call Failed and Did Not Execute.
+
+After receiving that error message, if the user requests the page again (or
+clicks refresh in the browser), IIS will have restarted the failed
+out-of-process Web site (provided that the AppOOPRecoverLimit hasn't been
+reached) and will return the page to the browser as usual.
+
+In IIS 4.0, after the out-of-process Web site has failed five times, on the sixth
+attempt to restart that Web site, IIS will not restart the site, and it will
+instead return the following error message to the browser:
+
+   The Remote Procedure Call Failed and Did Not Execute.
+
+Then, if the user clicks refresh or requests the page again, he or she will then
+receive the following error message:
+
+   Server Application Error
+   The server has reached the maximum recovery limit for the application during
+   the processing of your request. Please contact the server administrator for
+   assistance.
+
+If the user continues to click refresh in the browser or to request a page from
+the failed out-of-process application, he or she will continue to see the
+"Server Application Error" and the Web application will remain stopped until IIS
+is restarted.
+
+In addition, in the IIS logs if you are using W3C Extended Logging, you may see
+an entry like the following for each GET request that is sent to the server once
+AppOOPRecoverLimit has been reached:
+
+   
+
+   #Software: Microsoft Internet Information Server 4.0
+   #Version: 1.0
+   #Date: 2000-11-29 18:24:46
+   #Fields: time c-ip s-sitename s-ip cs-method cs-uri-stem sc-status sc-win32-status s-port
+   18:39:26 127.0.0.1 W3SVC1 127.0.0.1 GET /iishelp/iis/misc/default.asp 502 1727 80
+   18:39:39 127.0.0.1 W3SVC1 127.0.0.1 GET /iishelp/iis/misc/default.asp 502 1726 80
+   18:46:52 127.0.0.1 W3SVC1 127.0.0.1 GET /iishelp/iis/misc/default.asp 502 1726 80
+   18:46:52 127.0.0.1 W3SVC1 127.0.0.1 GET /iishelp/iis/misc/default.asp 502 1726 80
+
+Note in the third column from the right the "502" response code from IIS and the
+column next to that containing "1727" and "1726", which are the "Win32" response
+codes. A 1727 code maps to the "The Remote Procedure Call Failed and Did Not
+Execute" error and 1726 maps to "The Server has reached the maximum
+recovery...." The "Win32 Status" field is not enabled by default. In order to
+make that column show up in the IIS logs, you must edit the extended logging
+properties for your Web site.
+
+Also note that the time recorded in the IIS logs is in Greenwich mean time. So,
+for example, if you are in the (U.S.) eastern time zone, you would have to
+subtract 5 hours from the time that is logged in the first column to determine
+the local time at which the request was received (eastern time is Greenwich mean
+time - 5).
+
+REFERENCES
+==========
+
+For additional information about some sample codes, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q280812 DOC: AppOopRecoverLimit Range Wrong in IISHelp
+
+For additional information about setting the AppOopRecoveryLimit, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q280812 DOC: AppOopRecoverLimit Range Wrong in IISHelp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbWinDNA kbGrpDSSIE kbDSupport kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

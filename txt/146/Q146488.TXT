@@ -1,0 +1,68 @@
+DOCUMENT:Q146488  19-DEC-1999  [schedplus]
+TITLE   :Last Action for Meeting Request Overides Previous Action
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The original instance of a rescheduled appointment will appear unavailable in a
+schedule.
+
+CAUSE
+=====
+
+The above occurs when a user has clears the check box for the Work Primarily
+from a Local File (on the Synchronize tab under Options on the Tools menu) after
+his or her delegate tentatively accepts the original of a rescheduled
+appointment, and the user has previously Accepted the rescheduled appointment.
+The delegate's Tentative appointment overrides the rescheduled appointment in
+the user's schedule and appears as an outdated appointment.
+
+MORE INFORMATION
+================
+
+Have either the user or his or her delegate re-book the request for the
+rescheduled meeting request. Once the new set version is on the schedule, either
+user can update the appointment.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Schedule+ version 7.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 7.00 sched+ schedule plus gray grayed out grey
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

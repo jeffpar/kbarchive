@@ -1,0 +1,110 @@
+DOCUMENT:Q114406  07-DEC-2000  [pcmail]
+TITLE   :SNADS: First Contact Form for SNADS Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SNADS, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Please use the checklist in this article to collect information about your
+system before you call Microsoft Product Support Services. You are able to work
+more effectively with a Microsoft Support Professional if all the information
+needed to trace and solve your problem is available. Include any troubleshooting
+steps you have taken in an effort to resolve the problem. Please be as complete
+and specific as possible when you fill out this form.
+
+There are ten articles of this type, one for each gateway product. Each is
+different, so find the one suited to your case by searching these keywords
+(without the spaces):
+
+    x 4 0 0 f c c          m s f c c
+    3 c o m f c c          p r o f s f c c
+    m c i f c c            s m t p f c c
+    f f a p i f c c        s n a d s f c c
+    f a x f c c            c o n n f c c
+
+
+MORE INFORMATION
+================
+
+               MICROSOFT SNADS GATEWAY PROBLEM REPORT FORM
+
+Which SNADS Gateway is being used?    Linkage    Softswitch Central
+
+Is connection HUB mail?   YES/NO
+(SNADS used to connect two MS Mail postoffices.)
+
+Gateway version: ________
+
+MICROSOFT MAIL         Postoffice version: _____________________
+
+                             Network name: _____________________
+
+                          Postoffice name: _____________________
+
+Foreign mail system host type? ______________________
+
+Is postoffice name same as DGN?   YES/NO
+
+If YES, postoffice name: _______________________
+
+If NO, is MS Mail postoffice name 8 characters or shorter?   YES/NO
+
+If NO, is MS Mail postoffice name   9   or   10   characters?
+(NOTE: SNADS strips characters 9 and 10 from MS Mail mailbox name.)
+
+Are postoffice names mapped to DGN address component?   YES/NO
+
+Has this worked before?   YES/NO
+
+If YES: When did it quit working? _________________________
+
+Is problem seen on foreign mail system?   YES/NO
+
+Is problem seen on local (MS Mail) system?   YES/NO
+
+Is problem intermittent or consistently reproducible? ________________
+
+Can mail be sent from foreign mail system to MS Mail?   YES/NO
+
+Can mail be sent from MS Mail to foreign mail system?   YES/NO
+
+If NO, can MS Mail user send mail: through general delivery?  YES/NO
+
+                                   through DGN(DEN) addressing? YES/NO
+
+Describe the problem
+--------------------
+
+Additional query words: snadsfcc
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSNADS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

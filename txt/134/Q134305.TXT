@@ -1,0 +1,84 @@
+DOCUMENT:Q134305  15-FEB-2000  [foxpro]
+TITLE   :PRB: Invalid DragIcon Property Is Ignored
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Specifying an invalid DragIcon property for an object on a form at run time does
+not result in an error when the object is dragged. The default DragIcon is
+used.
+
+Setting the DragIcon property to an invalid file name at design time in the
+properties sheet of the object does result in a "File does not exist" error.
+
+CAUSE
+=====
+
+This behavior occurs if the file name provided for the DragIcon property is a
+non-existing file, or if the file is neither in the default directory nor on the
+FoxPro path.
+
+WORKAROUND
+==========
+
+Check for validity of the property using the FILE() function, and display a
+warning if necessary.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Add a text box to the form.
+
+3. In the Other tab of the properties sheet, set DragMode to 1 - Automatic.
+
+4. In the Init method of the form, add this code:
+
+      ThisForm.Text1.DragIcon = "anyfile.cur"
+
+5. Run the form. Note that no error occurs, and the default DragIcon is used
+   when dragging the text box.
+
+Additional query words: 3.00 VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

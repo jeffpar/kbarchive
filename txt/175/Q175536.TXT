@@ -1,0 +1,92 @@
+DOCUMENT:Q175536  08-NOV-2001  [homekids]
+TITLE   :Mac MSB Ocean: Err Msg: The CD Was Ejected While It Was in Used
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Ocean for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Scholastic's Magic School Bus Explores the Ocean for the
+Macintosh, version 1.0, you receive the following error message:
+
+   The CD was ejected while it was in used.
+
+NOTE: The word "used" is misspelled in the error message--it should be "use."
+
+CAUSE
+=====
+
+This can be caused by one of the following:
+
+ - The System or application folders are protected.
+
+ - The computer cannot read the compact disc.
+
+RESOLUTION
+==========
+
+To resolve this problem, make sure the System Folder and application folders are
+not protected. If the folders are protected, remove the protection by following
+these steps:
+
+To remove the protection on the System Folder and applications folders, do the
+following:
+
+1. On the Apple Menu, point to or click Control Panels, and then click General
+   Controls.
+
+2. In the Folder Protection area, click the Protect System Folder and the
+   Protect Applications Folders check boxes to clear them.
+
+If the System Folder and application folders are not protected, use the following
+steps to verify that your compact disc is readable and working correctly.
+
+1. Clean the compact disc. Focus on fingerprints, smudges, and dust. These can
+   often cause problems with reading the disc.
+    - Gently wipe the silver side of the disc with a soft, lint-free cotton
+      cloth. Do not use paper cloth, which may scratch the plastic or leave
+      streaks.
+
+    - Wipe from the center out. Do not use a circular motion.
+
+2. Ensure you are using the Apple CD-ROM Extension by following these steps:
+   a. On the Apple menu, point to or click Control Panels, and then click
+      Extensions Manager.
+
+   b. Make sure Apple CD-ROM is listed under Extensions.
+
+3. If Apple CD-ROM is not listed, you will need to install it from your Apple
+   Macintosh System Software compact disc.
+
+Additional query words: cd used read problem install launch
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOceanMac kbMSBSearch
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

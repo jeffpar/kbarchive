@@ -1,0 +1,54 @@
+DOCUMENT:Q307766  04-OCT-2001  [iis]
+TITLE   :Active Server Pages\Memory Allocated Performance Counter Unavail
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Internet Information Services (IIS) 5.0 online documentation describes the
+Active Server Pages\Memory Allocated counter as "the total amount of memory, in
+bytes, currently allocated by Active Server Pages." However, this counter is not
+used in IIS 5.0 and does not appear in Performance Monitor for IIS 5.0.
+
+NOTE: The Active Server Pages\Memory Allocated counter is used in IIS 4.0.
+
+
+REFERENCES
+==========
+
+http://localhost/iishelp/iis/htm/core/iicshpm.htm#MemoryAllocated
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

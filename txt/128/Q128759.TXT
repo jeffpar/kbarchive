@@ -1,0 +1,68 @@
+DOCUMENT:Q128759  13-JUN-2001  [winmisc]
+TITLE   :Garbled Sounds in Windows Sound System Using IMAADPCM.ACM
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:2.00a
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are playing a .WAV file created with the IMAADPCM.ACM compression
+manager included with Windows Sound System version 2.0a, you may hear static or
+garbled sound.
+
+CAUSE
+=====
+
+This behavior can occur if you are using a different version of the IMAADPCM.ACM
+file to play the .WAV file than the one that was in use when the .WAV file was
+created.
+
+RESOLUTION
+==========
+
+To correct this behavior, replace the IMAADPCM.ACM file with the one included
+with Windows Sound System 2.0a. The correct file has the following size and
+date:
+
+   IMAADPCM.ACM 10,320 12-15-93 2:00a
+
+MORE INFORMATION
+================
+
+A later version of the IMAADPCM.ACM file is installed when you install Microsoft
+Video for Windows Run-Time Edition version 1.1e. Note also that .WAV files
+created using the newer version of the file may not play correctly using the
+older version.
+
+
+Additional query words: 2.00a wave
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : 2.00a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

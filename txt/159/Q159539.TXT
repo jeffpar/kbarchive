@@ -1,0 +1,61 @@
+DOCUMENT:Q159539  24-JUL-2001  [sms]
+TITLE   :SMS: File Transfer Fails with Client Running NetWare Client32
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbtool kbsmsAdmin smsadmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A File Transfer in the HelpDesk functions fails with a client computer running
+Windows 95 and Novell's Client32. The administrator will see the following error
+message on the Systems Management Server Administrator window:
+
+   Unable to communicate with File Transfer slave.
+
+WORKAROUND
+==========
+
+To work around this problem, set Permission Required to No. The Systems
+Management Server administrator can also try again. Eventually, this connection
+will be made, and File Transfer can continue.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodnt prodsms
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbtool kbsmsAdmin smsadmin 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

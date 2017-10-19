@@ -1,0 +1,73 @@
+DOCUMENT:Q158196  24-JUL-2001  [win95x]
+TITLE   :Using Suspend on Certain Gateway Laptops Drains Power
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Suspend command on certain Gateway laptop computers, battery
+power drains.
+
+The following Gateway computers are known to exhibit this behavior:
+
+ - ColorBook 4SX25
+
+ - ColorBook 4SX33
+
+ - ColorBook 4DX33
+
+ - Liberty
+
+ - Solo
+
+
+CAUSE
+=====
+
+The BIOS in the computer requires an upgrade.
+
+RESOLUTION
+==========
+
+Upgrade the computer's BIOS. Contact Gateway Technical Support for additional
+information.
+
+MORE INFORMATION
+================
+
+When Suspend mode is in use, the PCMCIA slots should be receiving 0 volts. On
+the computers listed above, the PCMCIA slots receive 2.5 volts, draining the
+battery.
+
+Additional query words: apm
+
+======================================================================
+Keywords          : kbhw win95 kbHardware 
+Technology        : kbWin95search kbWin95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

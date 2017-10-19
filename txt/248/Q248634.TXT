@@ -1,0 +1,64 @@
+DOCUMENT:Q248634  08-AUG-2001  [winnt]
+TITLE   :IPX Routing Does Not Succeed on a Windows NT 4.0 Network
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a multihomed Microsoft Windows NT Server 4.0-based computer
+as a router between subnets on a local area network (LAN) that is divided into
+multiple physical subnets, routing by using the NWLink Internetwork Packet
+Exchange/Sequenced Packet Exchange (IPX/SPX) compatible protocol on your network
+may not succeed.
+
+However, Transmission Control Protocol/Internet Protocol (TCP/IP) routing works
+correctly.
+
+CAUSE
+=====
+
+This behavior can occur when each physical subnet does not have a unique
+external network number.
+
+RESOLUTION
+==========
+
+To resolve this issue, assign a unique external network number to each network
+adapter on the multihomed Windows NT Server 4.0 router. (The NWLink protocol
+uses these external network numbers to identify unique network segments.) On
+each computer in the subnet, configure NWLink to use the correct external number
+for its subnet.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

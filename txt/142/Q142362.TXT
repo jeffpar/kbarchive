@@ -1,0 +1,69 @@
+DOCUMENT:Q142362  28-JUL-2001  [win95x]
+TITLE   :NetWare FLAG and FLAGDIR Commands Do Not Work
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Novell NetWare FLAG and FLAGDIR commands may not change the attributes of
+files and folders.
+
+CAUSE
+=====
+
+This behavior can occur if the NetWare FLAG and FLAGDIR commands are being used
+on a Windows 95-based computer with the File and Printer Sharing for NetWare
+Networks service enabled.
+
+RESOLUTION
+==========
+
+This behavior is by design. These commands are not supported on Windows 95-based
+computers acting as NetWare servers.
+
+MORE INFORMATION
+================
+
+A Windows 95-based computer can appear to be a NetWare server when the File and
+Print Sharing for NetWare Networks service is enabled.
+
+The FLAG and FLAGDIR commands are used to change file or folder attributes. These
+fall under NetWare's attribute security, which is most commonly used to
+restrict:
+
+ - Copying a file
+
+ - Deleting a file
+
+ - Viewing a file or folder
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

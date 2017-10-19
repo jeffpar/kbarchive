@@ -1,0 +1,81 @@
+DOCUMENT:Q162850  08-AUG-2001  [crossnet]
+TITLE   :KiXtart Environment Variables Do Not Exist After Script Runs
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WinNT:4.0;Windows:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Environment variables set up through your KiXtart Script do not exist after the
+script terminates. When you run the KiXtart logon script on a computer running
+Windows 95, the environment variables appear to work properly.
+
+CAUSE
+=====
+
+The Set command in Windows 95 is only active during the same MS-DOS session.
+When the current session is closed, the variable is no longer in memory.
+
+NOTE: This is different behavior than from a computer running Windows NT Server
+version 4.0.
+
+RESOLUTION
+==========
+
+To have environment variables for use outside the logon script, use Winset.exe
+from the Windows 95 compact disc to set global environment variables.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q162793 How to Setup KiXtart Logon Scripts on a Windows 95 Client
+
+MORE INFORMATION
+================
+
+The following is an excerpt from the KiXtart Documentation:
+
+   Only programs that specifically support this feature (such as ProgMan and
+   TaskMan) will have their environment updated. When in doubt about a
+   particular program, please ask the supplier of the program whether or not his
+   program supports the "WM_WININICHANGE" message for changes to the
+   environment.
+
+The product mentioned here is manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : WinNT:4.0;Windows:95
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q119269  18-SEP-1999  [win3x]
+TITLE   :Printing to AWFAX Printer Driver Does Not Send Fax
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.11
+
+WINDOWS
+
+kbnetwork kbatwork kbhw
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a fax through a shared network fax (that is, a fax modem not on
+the local machine) by printing to the Microsoft At Work PC Fax printer driver
+from within an application, the fax is not sent. No error message is displayed.
+
+CAUSE
+=====
+
+This problem occurs when you do not have a MAPI application running on both
+machines.
+
+RESOLUTION
+==========
+
+To correct this problem, start a MAPI application (for example, Microsoft Mail
+or Schedule Plus) on each workstation.
+
+
+Additional query words: pause 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

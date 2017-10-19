@@ -1,0 +1,58 @@
+DOCUMENT:Q305296  28-JUN-2002  [homemm]
+TITLE   :ENC2003: Club Encarta Updates Available Until October 31, 2003
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia Standard 2003 
+ - Microsoft Encarta Encyclopedia Deluxe 2003 
+ - Microsoft Encarta Reference Library 2003, version 1.0 
+ - Microsoft Encarta Reference Library 2003 - DVD Edition 
+ - Microsoft Encarta Encyclopedia Standard 2002, version 1.0 
+ - Microsoft Encarta Encyclopedia Deluxe 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002 - DVD Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the past, Microsoft Encarta Encyclopedia has offered updates through the
+Internet, and these updates were available until the end of the following year
+after the prodcut was released. With the Encarta 2003 products that are listed
+at the beginning of this article, the new Club Encarta offers updates until
+October 31, 2003.
+
+MORE INFORMATION
+================
+
+To learn more about Club Encarta, click Help, and then click Join Club Encarta.
+
+Additional query words: ERS ERL
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbEncartaSearch kbMMSearch kbEncartaRef2002 kbEncartaEncyc2002 kbEncartaEnCyc2002Del kbEncartaRef2002DVD
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

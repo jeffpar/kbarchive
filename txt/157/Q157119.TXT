@@ -1,0 +1,92 @@
+DOCUMENT:Q157119  14-NOV-2000  [word97]
+TITLE   :WD97: Pictures Visible Even When Picture Placeholders Selected
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you select Picture Placeholders, pictures in a Word document continue to
+appear.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Reinsert the Picture
+------------------------------
+
+To reinsert the picture, follow these steps:
+
+1. On the Insert menu, click Picture, and then click From File.
+
+2. Select the picture you want to insert, clear the "Float over text" check box,
+   and then click Insert.
+
+Method 2: Convert the Picture to an Inline Format
+-------------------------------------------------
+
+To convert the picture to an inline format, follow these steps:
+
+1. Select the picture.
+
+2. Right-click the picture.
+
+3. On the shortcut menu that appears, click "Clip (Picture) Object" and click
+   Convert.
+
+4. In the Convert dialog box, clear the "Float over text" check box and click
+   OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+The Picture Placeholders option allows you to hide imported graphics. To select
+the option, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the View tab.
+
+3. Click to select the Picture Placeholders check box under Show, and then click
+   OK.
+
+Additional query words: 8.0 word8 winword word97 hide unhidden
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

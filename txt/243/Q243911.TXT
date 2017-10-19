@@ -1,0 +1,106 @@
+DOCUMENT:Q243911  01-DEC-2000  [word97]
+TITLE   :WD97: Error or Word Quits When Trying to Split Table Cells
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to split a cell in a table, Microsoft Word 97 may quit
+unexpectedly, or you may receive the following error message
+
+   WINWORD.exe has generated errors and will be closed by Windows. You will need
+   to restart the program.
+
+and then Word quits.
+
+NOTE: If Dr. Watson is running, you may receive a Dr. Watson error.
+
+CAUSE
+=====
+
+This behavior can occur if you first protect the document for forms, you then
+unprotect the document, and you then select an empty cell before you split the
+cell, as in the following example:
+
+1. Start Word 97, and then create a new document.
+
+2. On the Table menu, click Insert Table.
+
+3. In the Insert Table dialog box, accept the defaults, and then click OK.
+
+4. On the Tools menu, click Protect Document.
+
+5. In the Protect Document dialog box, click Forms, and then click OK.
+
+6. On the Tools menu, click Unprotect Document.
+
+7. Double-click an empty table cell to select the cell (the cell turns dark).
+
+8. On the Table menu, click Split Cells.
+
+Word quits unexpectedly, and you may receive an Invalid Page Fault (IPF) in
+Winword.exe.
+
+WORKAROUND
+==========
+
+To work around this issue, use one of the following methods.
+
+Method 1
+--------
+
+Instead of selecting a cell to split, place the insertion point inside the cell
+that you want, and then on the Table menu, click Split Cells.
+
+Method 2
+--------
+
+After you unprotect the document, and before you attempt to split the table cell,
+change the Zoom setting on the standard toolbar (to any new setting); after you
+split the table cell, return the Zoom setting to the setting that you want.
+
+Method 3
+--------
+
+After you unprotect the document, and before you attempt to split the table cell,
+on the View menu, click Web Layout, and then click Normal.
+
+STATUS
+======
+
+This problem was corrected in Word 2000.
+
+Additional query words: drwtsn dr watson
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q192779  08-MAY-2002  [visualc]
+TITLE   :PRB: DAO Doesn't Support ISAM Formats on Alpha
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbDAOsearch kbDatabase kbDriver kbIISAM kbODBC kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0, on platform(s):
+    - the hardware: DEC Alpha 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A DAO SDK is provided for Alpha computers. The DAO SDK allows applications
+running on an Alpha computer to access Jet Databases (.mdb files). However, the
+DAO SDK does not provide the ability to read the other Jet ISAM file formats
+such as FoxPro, Excel, Text files, and so forth.
+
+RESOLUTION
+==========
+
+This is by design. On an Alpha computer, you cannot use DAO or the Microsoft
+Access ODBC driver to access data files other than .mdb files. The RISC version
+of the Visual C++ VCRead.htm file states: The RISC version of the DAO SDK does
+not contain support for the following data formats: Paradox Excel Lotus Exchange
+Xbase text and html The above components can be selected from the installation
+menus, but they will not be installed.
+
+MORE INFORMATION
+================
+
+The DAO SDK for Alpha computers is available for download from the following
+article in the Microsoft Knowledge Base:
+
+   Q176427 PATCH: Daorisc.exe Installs DAO for Alpha (RISC)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDAOsearch kbDatabase kbDriver kbIISAM kbODBC kbVC500 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

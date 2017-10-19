@@ -1,0 +1,70 @@
+DOCUMENT:Q150950  11-JAN-2001  [vbwin]
+TITLE   :DOCFIX: SelectObject Declaration is Incorrect in API Viewer
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following describes a documentation error for the SelectObject function call
+as listed in the 32-bit edition of Visual Basic version 4.0 WIN32API.TXT file
+used by the Application Programming Interface (API) Viewer:
+
+      Declare Function SelectObject Lib "user32" Alias "SelectObject" _
+      (ByVal hdc As Long, ByVal hObject As Long) As Long
+
+Attempting to use this function as documented results in the following (error
+453) error message:
+
+   Specified DLL Function Not Found
+
+STATUS
+======
+
+This documentation error was fixed in Visual Basic 5.0.
+
+MORE INFORMATION
+================
+
+The SelectObject function is incorrectly documented as existing in the
+USER32.DLL file. This function is a Graphics Device Interface function and is
+therefore in the GDI32.DLL file. The correct declaration is as follows:
+
+      Declare Function SelectObject Lib "GDI32" Alias "SelectObject" _
+      (ByVal hdc As Long, ByVal hObject As Long) As Long
+
+You can also change the statement in the file win32api.txt so the next time you
+use the API Text Viewer, the Declare statement will be correct.
+
+Additional query words: kbVBp400 kbAPI kbDSupport kbdsd kbtoolkit
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

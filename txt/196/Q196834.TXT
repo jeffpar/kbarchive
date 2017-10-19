@@ -1,0 +1,68 @@
+DOCUMENT:Q196834  17-JUL-2001  [visualc]
+TITLE   :PRB: MFC Active Document Container May Not Hide Toolbars
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbole kbActiveDocs kbActiveX kbCOMt kbContainer kbMFC kbToolbar kbVC600 kbMFC600 kbGrpD
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Visual C++ 6.0 to create an Active Document Container,
+the toolbars associated with an Active Document Server that has lost focus may
+not hide correctly.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new MFC MDI Application with Active Document Container support.
+
+2. Build and run the application.
+
+3. Insert a new Visio Standard 5.0 object into an MDI child window.
+
+
+4. Select New from the File menu to open another MDI child window.
+
+RESULTS: Notice that the new MDI child window has focus and that the toolbars
+associated with Visio are not hidden. The menu does change, but the toolbars
+remain visible allowing the user to click on buttons that are not relevant for
+the currently active window.
+
+
+Additional query words: docobject
+
+======================================================================
+Keywords          : kbole kbActiveDocs kbActiveX kbCOMt kbContainer kbMFC kbToolbar kbVC600 kbMFC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

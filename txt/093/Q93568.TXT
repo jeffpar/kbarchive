@@ -1,0 +1,55 @@
+DOCUMENT:Q93568  30-JUL-2001  [pcmail]
+TITLE   :PC Ext: Err Msg: Cannot Connect to Server
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+In Microsoft Mail for PC Networks, versions 2.1 and 3.0, when you use the
+External Mail program (EXTERNAL.EXE) to connect dynamically to Novell NetWare
+3.11 servers, you may see the following error message in the SESSION.LOG file
+for each or some of the dynamically configured postoffices:
+
+   Cannot connect to server
+
+This error occurs when you create logs using EXTERNAL.EXE by using the
+command-line options -V, -Q1, and -L.
+
+CAUSE
+=====
+
+The AUTOEXEC.NCF file on the Novell server does not include the following
+command with this syntax:
+
+      SET ALLOW UNENCRYPTED PASSWORDS = ON
+
+RESOLUTION
+==========
+
+From the server prompt or Rconsole, load the Install program and edit the
+AUTOEXEC.NCF file to include the needed SET command shown above.
+
+Additional query words: 2.10 3.00 INIT_MASTER 3rdParty
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

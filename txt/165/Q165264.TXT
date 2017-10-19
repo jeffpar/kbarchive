@@ -1,0 +1,58 @@
+DOCUMENT:Q165264  25-JUL-2001  [sms]
+TITLE   :SMS: Wrong Use of the /D: Switch May Cause Incomplete Inventory
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can install the Systems Management Server client software to a specific disk
+drive by using the /d: switch on the cli_<operating system> line (for
+example, Cli_dos.exe) in the Smsls or Runsms batch files. For more information,
+see the following article in the Microsoft Knowledge Base:
+
+   Q127072 Installing SMS Client to Drive Other Than Most Free Disk Space
+
+However, if that switch is mistakenly used on the inv<operating system>
+line (for example, Invdos.exe) in the Smsls or Runsms batch files, the client
+reports an incomplete inventory. Therefore, some icons will be missing from the
+Personal Computer Properties in the Systems Management Server Administrator
+program.
+
+MORE INFORMATION
+================
+
+To prevent this problem from occurring, do not use the /d: switch on the
+inv<operating system> line.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

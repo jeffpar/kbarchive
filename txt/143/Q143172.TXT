@@ -1,0 +1,62 @@
+DOCUMENT:Q143172  08-AUG-2001  [winnt]
+TITLE   :Doc Err: Users Cannot Create New Clipbook Pages
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+Page 61 of the Windows NT 3.5 and 3.51 Concepts and Planning Guide states
+the following:
+
+   To create, share, stop sharing, and delete a ClipBook Viewer page,
+   a user must be in one of the following groups on the computer:
+
+      - Administrators
+      - Server Operators
+      - Power Users
+      - Users
+
+This statement is incorrect. Users cannot create new ClipBook pages. Users
+can paste data into existing ClipBook pages when the creator (an
+Administrator, Server Operator or Power User) of the page grants the user
+permission.
+
+Administrators, Server Operators and Power Users have the authority to
+share directories on the network and create shared network objects. When
+you, with only User permissions, attempt to create, share, stop sharing or
+delete a ClipBook Viewer page, the following error message appears:
+
+   You do not have sufficient privileges to perform this action.
+
+This is by design.
+
+Additional query words: prodnt groups
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

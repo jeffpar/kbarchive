@@ -1,0 +1,72 @@
+DOCUMENT:Q168040  11-DEC-1999  [foxpro]
+TITLE   :BUG: Insert Object from File Dialog Box Shows Hidden Files
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfp kbvfp300bBUGkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Hidden files appear in the Insert Object dialog box when you attempt to insert
+an OLE object from a file into a general field or OLE Container Control. When
+viewing files to insert on the hard drive of the Macintosh, hidden files such as
+Desktop, Desktop DB, Desktop DF, and Move&Rename appear in the list.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open or create a table with a general field.
+
+2. Double-click on the general field to open it.
+
+3. Select Insert Object from the Edit menu.
+
+4. Choose From File in the dialog box.
+
+5. Move to the hard drive folder of the Macintosh.
+
+6. Hidden Macintosh files such as Desktop, Desktop DB, and Desktop DF show in
+   the list of files available to insert.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp300bBUG kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

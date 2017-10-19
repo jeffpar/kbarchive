@@ -1,0 +1,75 @@
+DOCUMENT:Q83783  03-OCT-1999  [win95x]
+TITLE   :Adding Sound Functions and a Sound Icon to Control Panel
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows version 3.1 and Windows with Multimedia Extensions version 1.0 have a
+sound icon in the Control Panel. This icon allows sounds to be assigned to
+several functions. To add additional sounds, you can either program or purchase
+a software package designed specifically for this functionality.
+
+MORE INFORMATION
+================
+
+Windows 3.1 has the following development functions to which sounds (files with
+a .WAV extension) can be assigned. This information is listed in the WIN.INI
+file, but you cannot add additional sound functions without the underlying
+programming support. The following example demonstrates how the [Sounds] section
+of the WIN.INI file should appear to provide the underlying programming
+support:
+
+      [Sounds]
+      SystemAsterisk=C:\W31\CHORD.WAV,Asterisk
+      SystemHand=chord.wav,Critical Stop
+      SystemDefault=ding.wav,Default Beep
+      SystemExclamation=chord.wav,Exclamation
+      SystemQuestion=chord.wav,Question
+      SystemExit=chimes.wav,Windows Exit
+      SystemStart=C:\W31\CHIMES.WAV,Windows Start
+
+All of these functions are defined by the Windows multimedia MessageBeep
+function. You can add additional sound functions with the sndPlaySound function,
+provided you are programming Windows applications with the Microsoft Multimedia
+Development Kit.
+
+REFERENCES
+==========
+
+"Microsoft Multimedia Development Kit: Programmer's Workbook," pages 4-1 through
+4-8
+
+Additional query words: 3.10 SND.CPL
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWinMultiXSearch kbWin310 kbWin311 kbWinMultiX100
+Version           : WINDOWS:3.1,3.11; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,54 @@
+DOCUMENT:Q146341  12-FEB-1999  [winnt]
+TITLE   :Account Information Boxes Are Gray Adding Virtual Directories
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Account Information dialog boxes appear gray when you are adding virtual
+directories.
+
+CAUSE
+=====
+
+This is normal behavior. The Account Information boxes only become active when a
+universal naming convention (UNC) path is used for a virtual directory. For
+example:
+
+   \\servername\sharename
+
+The Account Information is used to validate the connection from the Internet
+Server to the share it is connecting to.
+
+Additional query words: prodiis FTP WWW Gopher alias home properties add
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q134579  17-DEC-2000  [win95x]
+TITLE   :PCMCIA Devices Stop Working on Compaq Elite Laptop
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you dock or undock a Compaq Elite laptop computer, the computer's PCMCIA
+devices may stop working. Also, multiple disabled PCMCIA controllers may appear
+in Device Manager.
+
+CAUSE
+=====
+
+Early versions of the Compaq Elite Plug and Play BIOS may report incorrect
+resources for the PCMCIA controller. When this occurs, Windows 95 disables the
+controller.
+
+RESOLUTION
+==========
+
+To remove the incorrect PCMCIA devices and install the proper one, follow these
+steps:
+
+1. In Control Panel, double-click the System icon.
+
+2. On the Device Manager tab, click each PCMCIA device and then click Remove.
+   Remove all the PCMCIA devices.
+
+3. Click Computer, and then click Refresh.
+
+4. Click OK.
+
+To prevent the problem from occurring, contact Compaq to inquire about obtaining
+an updated Plug and Play BIOS dated 5/1/95 or later.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,75 @@
+DOCUMENT:Q196857  14-MAR-2002  [word97]
+TITLE   :WD97: First Page Prints on Back of Last Page with Duplex
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the duplex option to print multiple copies of a document to a
+PostScript printer, and if the document contains an odd number of pages, the
+first page of the second copy prints on the back of the last page of the first
+copy.
+
+NOTE: This does not occur with non-PostScript (PCL) printers.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Insert text on the page that you want to be blank, and then format the color
+   of that text to be white.
+
+   -or-
+
+ - Install the Windows 3.x PostScript driver. For information about using
+   Windows 3.x drivers in Windows 95, please see the following article in the
+   Microsoft Knowledge Base:
+
+   Q132946 How to Install Windows 3.1 Drivers in Windows 95
+
+   NOTE: Windows 3.x printer drivers cannot take advantage of some of the
+   printing enhancements in Windows 95.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the PostScript printer driver
+included with Windows 95.
+
+
+Additional query words: 8.0 8.00 7.0 print duplex double-sided two- sided both sides
+
+======================================================================
+Keywords          : kbdta winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

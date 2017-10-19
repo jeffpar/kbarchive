@@ -1,0 +1,87 @@
+DOCUMENT:Q106633  06-NOV-1999  [fortran]
+TITLE   :BUG: Sample Code for GRDEMO Contains Errors
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling GRDEMO.FOR with extended error handling ($DEBUG or /4Yb) generates the
+following error:
+
+   GRDEMO.FOR(449) : error F2536: S : subscript 7 out of range
+
+The default directory for the GRDEMO program is:
+
+   \F32\SAMPLES\GRAPHICS\DEMO
+
+CAUSE
+=====
+
+Subroutine "MonitorWarning" declares a local array S as:
+
+      CHARACTER*60 S(6)
+
+However, the corresponding DATA statement initializes seven elements.
+
+There is also an error in the main program where variable iModesCur is set to 0
+(zero) and then used to access an array.
+
+RESOLUTION
+==========
+
+   On line 247, change
+
+      iModesCur = 0
+
+to the following:
+
+      iModesCur = 1
+
+On line 439, change
+
+      CHARACTER*60 s(6)
+
+to the following:
+
+      CHARACTER*60 s(7)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation version 1.0
+and 1.0a for MS-DOS.
+
+This example does not exist in FORTRAN PowerStation 32.
+
+Additional query words: 1.00 1.00a nofpsnt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,88 @@
+DOCUMENT:Q181880  17-JUL-2001  [visualc]
+TITLE   :PRB: "Access to an Unnamed File Was Denied" Error
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbCodeGen
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You get the following error when calling CFile::Read():
+
+   Access to an unnamed file was denied.
+
+If run under the Microsoft Visual C++ debugger, you will see the following
+error:
+
+   CFile exception: accessDenied, File Unknown, OS error information = 5
+
+CAUSE
+=====
+
+You are actually opening the file without read access. The following intuitively
+correct code causes the error:
+
+   CFile cf;
+      int data;
+    
+      cf.Open("myfile.dat", CFile::modeRead | CFile::modeWrite);
+    
+      cf.Write(&data, sizeof(int));
+    
+      cf.Read(&data, sizeof(int));
+
+RESOLUTION
+==========
+
+Specify CFile::modeReadWrite instead of the logical OR of CFile::modeRead and
+CFile::modeWrite.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For more information about CFile, or other MFC classes, consult the Microsoft
+Visual C++ online help.
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Joe
+Crump, Microsoft Corporation
+
+
+Additional query words: kbvc400 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kberrmsg kbCodeGen 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

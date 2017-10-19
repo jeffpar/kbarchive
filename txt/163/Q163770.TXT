@@ -1,0 +1,75 @@
+DOCUMENT:Q163770  25-MAR-2002  [win95x]
+TITLE   :Cannot Log On to Windows NT Domain w/ DNS Name Resolution Only
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1,2,2.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Windows 95 TCP/IP client without WINS or LMHOSTS entries tries to log on to
+a Windows NT domain over a routed IP network, the logon may not succeed and you
+may receive an error message similar to the following message:
+
+   No domain server was available to validate your password. You may not be able
+   to gain access to some network resources.
+
+CAUSE
+=====
+
+To log on to a Windows NT domain, clients must be able to resolve the
+domain<1C> NetBIOS name. Windows 95 clients can resolve only NetBIOS names
+ending in <00> and <20> when using DNS.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+If you receive this error message when you dial into a remote network, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q154434 Err Msg: No Domain Controller Was Available to Validate...
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR1 kbWin95OPKOSR210
+Version           : :1,2,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

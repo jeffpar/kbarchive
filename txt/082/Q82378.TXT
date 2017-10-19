@@ -1,0 +1,54 @@
+DOCUMENT:Q82378  02-NOV-1999  [win95x]
+TITLE   :24-Bit DIBs Draw Very Slowly When Running on an 8514
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the 8514 video driver included with the Microsoft Windows, a 24-bit
+DIB (device independent bitmap) draws slowly because of 24-bit to 8-bit color
+matching.
+
+MORE INFORMATION
+================
+
+24-Bit DIBs paint or appear slow on machines configured for the 8514 driver, and
+it may appear as though the machine has stopped. Actually, the machine is merely
+color-matching every pixel in the DIB. The video driver calls into the GDI
+(graphical device interface) for each pixel. This process causes the GDI to
+search the current system palette, containing 256 color elements, for the
+closest matching color. This color value is then returned to the driver. The
+slowdown occurs with any operation that converts a 24-bit DIB to an 8-bit DIB.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

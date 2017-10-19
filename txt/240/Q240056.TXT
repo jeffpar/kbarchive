@@ -1,0 +1,96 @@
+DOCUMENT:Q240056  06-AUG-2002  [sms]
+TITLE   :SMS: Forced Sites Registry Key Entry Causes Multiple Errors
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms120 kbsms120bug kbsms200sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the Forced Sites registry key to assign Systems Management Server (SMS)
+clients to specific sites can causes the following problems:
+
+ - The Sites tab in Control Panel may show random ASCII characters.
+
+ - Only the core client components are installed.
+
+ - The client does not receive advertisements.
+
+ - Viewing the client from the collections node shows "Assigned = No."
+
+CAUSE
+=====
+
+To use this feature, the client's registry needs to be changed as follows:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Sites
+
+   REG_MULTI_SZ type named "Forced Sites"
+
+This should contain a list of site codes.
+
+The Microsoft Windows 95 registry editor does not allow users to add a
+REG_MULTI_SZ type, even though it is a supported registry type. The problem
+occurs when users add the value as a String (REG_SZ).
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+To Install This Fix
+-------------------
+
+Place the Site4c.exe file on the Windows 95 client computer and run it with one
+of the following parameters:
+
+   SITE4C /? - Shows this text
+   SITE4C <XXX> - Adds the site code to the list
+   SITE4C /D <XXX> - Deletes the site code from the list
+   SITE4C /D* - Deletes all entries from the list
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms120 kbsms120bug kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

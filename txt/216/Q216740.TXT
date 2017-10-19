@@ -1,0 +1,75 @@
+DOCUMENT:Q216740  22-APR-2002  [winnt]
+TITLE   :Search Drive Mappings Lost When Using NetWare Client
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The search drive mappings are lost when running the Novell intraNetWare client
+on Windows NT Terminal Server. This problem happens at random, but can usually
+be reproduced after logging on three or four times.
+
+
+CAUSE
+=====
+
+There appears to be a race condition between Winlogon and the GINA. Winlogon may
+sometimes delete a volatile registry key where the GINA logon script process is
+saving information before the process can save the information it wrote to the
+key. If this happens, some or all of the logon script information will be lost.
+
+RESOLUTION
+==========
+
+To work around this problem, use Gateway Services for NetWare (GSNW). Refer to
+the Networking supplement guide that comes with the Windows NT 4.0, Terminal
+Server Edition documentation for instruction on installing GSNW.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0, Terminal Server
+Edition.
+
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

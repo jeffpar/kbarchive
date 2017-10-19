@@ -1,0 +1,80 @@
+DOCUMENT:Q143318  08-NOV-2001  [homegame]
+TITLE   :Unconf: Haunted House and RAM Doubler Issues
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+MACINTOSH
+unconfirmed kb3rdparty kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Haunted House for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+*********************************************************************
+**                           - WARNING -                           **
+**     THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN       **
+**     CONFIRMED OR TESTED BY MICROSOFT. USE ONLY                  **
+**     WITH DISCRETION.                                            **
+*********************************************************************
+
+SUMMARY
+=======
+
+It has been reported that RAM Doubler, a program that simulates virtual memory,
+manufactured by Connectix Corporation, can cause random hanging, and other
+problems, when running it in conjunction with The Ultimate Haunted House.
+
+MORE INFORMATION
+================
+
+One specific configuration where this has been reported is when using a Mac
+IIsi, a NEC 3FGx, NEC CD-ROM drive, RasterOps Colorboard 264, and System 7.5,
+all in conjunction with RAM Doubler.
+
+The solution to this issue is to turn off RAM Doubler by dragging the icon out of
+the extensions folder and restarting the computer.
+
+If you have any questions or concerns about RAM Doubler, please contact Connectix
+Corporation:
+
+   Connectix Corporation
+   2600 Campus Drive
+   San Mateo, CA 94403
+
+   (800) 950-5880
+   (415) 571-5100
+   (415) 571-5195 (fax)
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 Q120156 multimedia multi-media multi media black screen corruption
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbZNotKeyword kbKidsSearch kbHauntedHouseMac
+Version           : MACINTOSH:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

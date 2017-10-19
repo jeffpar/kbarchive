@@ -1,0 +1,99 @@
+DOCUMENT:Q187233  16-MAY-2001  [vbwin]
+TITLE   :BUG: DateTimePicker's CustomFormat May Be Ignored
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have a DataTimePicker control's CustomFormat property set, but when you set
+the Format property to dtpCustom, the CustomFormat is not used.
+
+RESOLUTION
+==========
+
+When you set a DateTimePicker's Format property to dtpCustom, you must follow
+this by assigning the CustomFormat property, even if it already contains a valid
+format string. This assignment to CustomFormat may be a new string value or it
+may be assigned to itself.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In a new Standard EXE project. Form1 is created by default. From the Projects
+   menu, select Components, check "Microsoft Windows Common Controls-2 6.0," and
+   click OK.
+
+2. Add two CommandButtons and a DTPicker control to Form1.
+
+3. Enter a custom format into the DTPicker control's CustomFormat property. For
+   this example, use 'Today is' MMM d, yyy.
+
+4. Add the following code to the Form's Module:
+
+         Private Sub Command1_Click()
+            DTPicker1.Format = dtpCustom
+         End Sub
+
+         Private Sub Command2_Click()
+            DTPicker1.Format = dtpCustom
+            DTPicker1.CustomFormat = DTPicker1.CustomFormat
+         End Sub
+
+5. Run the Project and Click Command1. Note that the CustomFormat is not used
+   and the date is displayed as a short date.
+
+6. Click Command2 and note that the CustomFormat is used and the date is
+   displayed in the form: Today is May 5, 1998.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q186424 : INFO: DateTimePicker CustomFormat Is Case-Sensitive
+
+Additional query words: kbDSupport kbDSD kbCtrl kbUsage kbCommon kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q323301  23-MAY-2002  [winnt]
+TITLE   :The YPCAT Command May Produce Unexpected Results
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Windows Services for UNIX (SFU) 3.0, if you run the ypcat command against the
+"netgroup.byuser" or "netgroup.byhost" map, the results may be incomplete. This
+might cause a UNIX client not to be able to use network resources if the
+client's logon process depends on parsing the results of the command.
+
+CAUSE
+=====
+
+This behavior may occur if the "netgroup.byuser" or "netgroup.byhost" map
+contains a hyphen (-) or a null entry ("").
+
+WORKAROUND
+==========
+
+Use the ypcat command to query the "netgroup" map. Group the results by user.
+You can also use the ypmatch command against the "netgroup" map to obtain the
+same results.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: solar coaster solarcoaster interix dash
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinServiceUNIXSearch kbWinServiceUNIX300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

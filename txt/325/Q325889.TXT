@@ -1,0 +1,230 @@
+DOCUMENT:Q325889  06-AUG-2002  [iis]
+TITLE   :HOW TO: Remove and Reinstall IIS 5.0 and 5.1
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - Back Up the IIS Configuration
+ - Remove or Reinstall IIS
+ - Restore the IIS Configuration
+
+    - Restore the IIS Configuration After an IIS Reinstallation
+ - Restore the IIS Configuration Without an IIS Reinstallation
+
+ - REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article explains how to remove and reinstall Internet
+Information Services (IIS) versions 5.0 and 5.1.
+
+Back Up the IIS Configuration
+-----------------------------
+
+If you already have IIS 5.0 (which comes with Microsoft Windows 2000) or IIS 5.1
+(which comes with Microsoft Windows XP Professional) installed and configured,
+you may want to back up that configuration before you remove and reinstall IIS
+so that you do not have to rebuild all of your Web sites from scratch if you
+want to restore the configuration.
+
+To back up your IIS configuration, follow these steps:
+
+NOTE: This backup method restores only your IIS settings, not your content files.
+This backup method does not work if you reinstall your operating system. Backup
+files cannot be used to restore an IIS configuration on other computers that are
+running Windows 2000.
+
+1. Click Start, point to Programs, click Administrative Tools, and then click
+   Internet Services Manager.
+
+2. Expand <Server Name>.
+
+3. For IIS 5.0:
+
+   Click Action, and then click Backup/Restore Configuration.
+
+   For IIS 5.1:
+
+   Click Action, click All Tasks, and then click Backup/Restore Configuration.
+
+4. Click Create backup, name your backup file, and then click OK.
+
+   NOTE: If you are using Windows XP, you can also click to select Encrypt backup
+   with Password, and then provide and confirm a password.
+
+NOTE: The default location of the backup is the
+%SystemRoot%\system32\inetsrv\MetaBack folder. By default, C:\Winnt is the
+%SystemRoot% folder in Windows 2000 and C:\Windows is the %SystemRoot% folder in
+Windows XP Professional. If you want to save your backup file to another
+location, you can copy the file from this default location to another location.
+Keep a copy in the default location to allow for an easy restoration.
+
+5. Click Close.
+
+6. Use your regular backup program software to back up your content files for
+   your Web sites.
+
+Remove or Reinstall IIS
+-----------------------
+
+To remove, install, or reinstall IIS 5.0 or 5.1, follow these steps:
+
+1. In Control Panel, double-click Add/Remove Programs.
+
+2. In the Add/Remove Programs window, click Add/Remove Windows Components.
+
+3. In the Components box of the Windows Components Wizard, locate Internet
+   Information Services (IIS). To install IIS, click to select this check box;
+   to remove IIS, click to clear this check box.
+
+4. In the Windows Components Wizard, click Next.
+
+5. When the Windows Components Wizard completes the installation, click Finish.
+
+Restore the IIS Configuration
+-----------------------------
+
+The steps to restore a configuration differ depending on whether you removed and
+reinstalled IIS.
+
+NOTE: If you want to restore your IIS configuration and only an older copy or no
+copy of the metabase file exists, you must follow a different procedure. For
+additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q234429 How to Manually Restore the Metabase When No Proper Backup Exists or
+   When the MMC Does Not Start
+
+Restore the IIS Configuration After an IIS Reinstallation:
+
+To restore your IIS configuration after you have removed and reinstalled IIS,
+follow these steps:
+
+1. Use your regular backup program software to restore your content files for
+   your Web sites.
+
+2. Click Start, point to Programs, click Administrative Tools, and then click
+   Internet Services Manager.
+
+3. Expand <Server Name>.
+
+4. For IIS 5.0:
+
+   Click Action, and then click Backup/Restore Configuration.
+
+   For IIS 5.1:
+
+   Click Action, click All Tasks, and then click Backup/Restore Configuration.
+
+5. In the Configuration Backup Name dialog box, select the backup file that you
+   created, and then click Restore.
+
+NOTE: If you are using Windows XP and you selected Encrypt backup with Password,
+provide and confirm the password.
+You may receive an error message that states that the restoration has failed, but
+a portion of your backed-up configuration is restored. To resolve this error
+message:
+
+NOTE: Leave the Configuration Backup Dialog box open.
+
+1. At a command prompt, type the following (where X is the letter of the drive
+   on which IIS is installed), and then press ENTER:
+
+   cscript.exe X:\InetPub\AdminScripts\Adsutil.vbs enum w3svc
+
+NOTE: To use the Adsutil.vbs utility, you must have Windows Script Host
+installed.
+
+2. In the listed settings, locate the WamUserName value.
+
+3. In Control Panel, double-click Administrative Tools, and then double-click
+   Computer Management. Click Local Users and Groups, and then click Users.
+
+4. Double-click the IWAM_computername user account. Type a password for this
+   account, and then click OK.
+
+5. At a command prompt, type the following (where X is the letter of the drive
+   on which IIS is installed), and then press ENTER:
+
+   cscript.exe X:\InetPub\AdminScripts\Synciwam.vbs
+
+6. In the Configuration Backup Name dialog box, click to select the backup file
+   that you created, and then click Restore. This fully restores your
+   configuration.
+
+   NOTE: If you change the identity of your out-of-process applications, those
+   applications revert back to the previous IWAM user name.
+
+Restore the IIS Configuration Without an IIS Reinstallation:
+
+To restore your IIS configuration if you have not removed and reinstalled IIS,
+follow these steps:
+
+1. Click Start, point to Programs, click Administrative Tools, and then click
+   Internet Services Manager.
+
+2. Expand <Server Name>.
+
+3. For IIS 5.0:
+
+   Click Action, and then click Backup/Restore Configuration.
+
+   For IIS 5.1:
+
+   Click Action, select All Tasks, and then click Backup/Restore Configuration.
+
+4. In the Configuration Backup Name dialog box, select the backup file that you
+   created, and then click Restore.
+
+NOTE: If you are using Windows XP and you selected Encrypt backup with Password,
+provide and confirm the password.
+
+5. When you are prompted to restore your configuration settings, click Yes.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q302573 HOW TO: Back Up and Restore IIS
+
+Additional query words: remove reinstall iis
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis510
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

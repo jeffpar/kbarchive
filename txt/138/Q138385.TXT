@@ -1,0 +1,102 @@
+DOCUMENT:Q138385  08-MAY-2001  [ssafe]
+TITLE   :INFO: Visual SourceSafe Shortcut Keys
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following list contains the shortcut keys that are available from within the
+SourceSafe Explorer. This functionality may not be available from other
+applications that integrate with Visual SourceSafe.
+
+MORE INFORMATION
+================
+
+Key Function
+
+   -------------------------------------------------------
+   F1                      Help
+   F5                      Refresh File List
+   F6                      Next Pane
+   TAB                     Next Pane
+   ENTER                   View
+   INSERT                  Add/Create (file/project list)
+   DELETE                  Delete
+   ALT+BACKSPACE           Undo
+   ALT+ENTER               Properties Dialog Box
+   ALT+X                   Exit
+   CTRL+A                  Add File
+   CTRL+D                  Set Working Directory
+   CTRL+G                  Get
+   CTRL+F                  Show Differences
+   CTRL+H                  Show History
+   CTRL+I                  Check in the selected file(s)
+   CTRL+INSERT             Copy the selected text to the Clipboard
+   CTRL+K                  Check Out
+   CTRL+L                  Select
+   CTRL+N                  File New
+   CTRL+O                  Check out a file
+   CTRL+Q                  Cancel Search
+   CTRL+R                  Last Results In Visual Sourcesafe 4.0a, this
+                           Views a File.
+   CTRL+S                  Status Search
+   CTRL+U                  Check In
+   CTRL+W                  Wildcard Search
+   CTRL+X                  Cut text and place it on the Clipboard
+   CTRL+Z                  Undo
+   CTRL+ENTER              Views a file
+   SHIFT+CTRL+S            Quick Status Search
+   SHIFT+CTRL+L            Select All
+   SHIFT+DELETE            Cut selected text and copy to the Clipboard
+   SHIFT+INSERT            Paste text from the Clipboard to the edit box
+   SHIFT+F6                Previous Pane
+   +                       Expand Project
+   -                       Collapse Project
+   *                       Recursively Expand Project
+   CTRL+*                  Globally expand all projects
+   HOME                    Moves to and opens the Root project
+   END                     Moves to and opens the Bottom most project
+
+REFERENCES
+==========
+
+Visual SourceSafe Quick Reference Card
+
+For more information about the Visual SourceSafe shortcut keys, search for
+Shortcut Keys in the Help menu.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

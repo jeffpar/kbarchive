@@ -1,0 +1,66 @@
+DOCUMENT:Q136938  17-DEC-2000  [win95x]
+TITLE   :Missing Third-Party Compression Driver in MS-DOS Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a shortcut that is configured to restart your computer in MS-DOS
+mode, and you choose to specify a new MS-DOS configuration, the MS-DOS-based
+program that the shortcut is configured to start may not be able to run if you
+are using third-party disk compression software.
+
+CAUSE
+=====
+
+This problem can occur if the Config.sys file that you specified for the
+shortcut does not contain a line that loads the third-party disk compression
+software.
+
+RESOLUTION
+==========
+
+Modify the Config.sys file for the shortcut so that it contains a line to load
+the third-party disk compression software. To do so, follow these steps:
+
+1. Use the right mouse button to click the shortcut, and then click Properties
+   on the menu that appears.
+
+2. On the Program tab, click the Advanced button.
+
+3. Add a line to load the third-party disk compression software in the
+   "Config.sys for MS-DOS mode" box. For information about the correct
+   parameters for this line, please consult the third-party disk compression
+   software's manual or manufacturer.
+
+4. Click OK.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

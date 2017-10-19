@@ -1,0 +1,76 @@
+DOCUMENT:Q150512  27-JUL-2001  [sms]
+TITLE   :Client Setup is Unable To Validate Windows Path
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a shared installation of Windows from a NetWare server, where your
+Windows directory also resides on a NetWare server, the following error will
+occur while running cli_dos in verbose mode:
+
+   Reading configuration...Could not Validate Windows path:
+   <Path to Windows directory>
+
+where <Path to Windows directory> denotes the complete path to the Windows
+directory on the NetWare server. For example, \USERS\JOHNDOE\WIN31.
+
+NOTE: This problem occurs on NetWare clients running NETX only. This problem does
+not occur on NetWare clients running VLM.
+
+WORKAROUND
+==========
+
+When you run the setup /n from the Windows administrative share on the NetWare
+server, specify that the Windows directory be installed locally (that is,
+C:\windows).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. We are researching this problem and will post new information in
+the Microsoft Knowledge Base as it becomes available
+
+MORE INFORMATION
+================
+
+Microsoft Knowledge Base article Q140781, "How Systems Management Server Detects
+a Windows Client," states the following:
+
+NOTE: Shared Windows is currently not supported by Systems Management Server, but
+a reasonable effort has been made to contend with it.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

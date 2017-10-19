@@ -1,0 +1,69 @@
+DOCUMENT:Q186398  03-SEP-1999  [sms]
+TITLE   :SMS: How to Use the PDF Wizard - Pdfwiz.exe
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Pdfwiz.exe, available in the Microsoft BackOffice Resource Kit, is a Package
+Definition File (PDF) wizard. You can use PDFWIZ to make an application easier
+to distribute and install with Systems Management Server. When you start PDFWIZ,
+it opens a window on your console that has directions for its use.
+
+The window prompts you for various package information, including supported
+platforms, whether to inventory a package or not, and so forth. PDFWIZ generates
+a PDF that can be loaded into Systems Management Server. Because PDFWIZ does not
+require Systems Management Server DLLs, it can run on any computer that is
+running Windows. If the Systems Management Server Administrator program is
+installed, you may prefer to use it to create the package and then extract the
+package from the database by using Writepdf.exe.
+
+MORE INFORMATION
+================
+
+PDFWIZ runs on Alpha, MIPS, and x86 hardware.
+
+NOTE: When you specify the platforms on which the files in the PDF can be
+installed, find the "Select the operating system on which the deinstallation
+command can run" dialog box. This dialog box is incorrectly labeled.
+
+Files Required for PDFWIZ
+-------------------------
+
+   Pdfile.dll
+   Pdfwiz.exe
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : ALPHA MIPS x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

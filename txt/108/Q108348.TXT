@@ -1,0 +1,76 @@
+DOCUMENT:Q108348  24-MAR-2000  [fortran]
+TITLE   :FIX: Error F1001 in schedp5u.c Compiling with -Ox and -G5
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to compile a program using the -Ox and -G5 options may cause the
+following error message to be generated:
+
+   fatal error F1001: INTERNAL COMPILER ERROR
+   (compiler file '@(#)schedp5u.c:1.0', line 2661)
+
+RESOLUTION
+==========
+
+Avoid using the optimization switch -Ox with the -G5 option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+32, version 1.0. This problem was fixed in FORTRAN PowerStation 32, version 4.0.
+
+MORE INFORMATION
+================
+
+The following program demonstrates the problem:
+
+Sample Code
+-----------
+
+   C Compile options needed: -Ox -G5
+
+      20  WT     = WT*(0.5/(I+1))
+          TERM   = WT*(.805)
+          SUM    = SUM + TERM
+          I      = I + 1
+          ADJ    = ADJ*4.3/(2.0*I)
+          IF (TERM.GE.(0.1*SUM)) GO TO 20
+          END
+
+Additional query words: 1.00 ICE
+
+======================================================================
+Keywords          : kberrmsg kbLangFortran 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

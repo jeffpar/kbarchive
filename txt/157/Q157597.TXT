@@ -1,0 +1,71 @@
+DOCUMENT:Q157597  19-FEB-2002  [win95x]
+TITLE   :BUG: 16-bit RPC Problems with Novell's Client32 for Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbAPI kbRPC kbSDKPlatform kbOSWin95bug kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a 16-bit RPC application on Windows 95 uses SPX with the Client32 Netware
+Client from Novell, it may occasionally get RPC_CALL_FAILED errors (decimal 33)
+while making RPC calls to a server running on a Windows NT platform.
+
+CAUSE
+=====
+
+This error occurs on the return from the RPC call, when a large amount of data
+is being transferred. The packet size is negotiated incorrectly. As a result,
+when the size of the data to be transferred exceeds the underlying networks
+maximum frame size, the call fails.
+
+The frame sizes are dependent on the network architecture. For example, Ethernet
+networks use a size of approximately 1500 bytes, while Token Ring networks use
+4096 bytes.
+
+RESOLUTION
+==========
+
+As a workaround, programmers must ensure that the data they transfer does not
+exceed the MTU of any of the networks between the client and the server. For
+example, if a client on an Ethernet talks to a server on a Token Ring network,
+the data must be less than the Ethernet MTU per RPC call.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbAPI kbRPC kbSDKPlatform kbOSWin95bug kbGrpDSNet 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

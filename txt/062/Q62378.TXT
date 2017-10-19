@@ -1,0 +1,60 @@
+DOCUMENT:Q62378  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Messages Are Suddenly and Unexpectedly Sent
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Magic Software's AutoSave version 1.01 enabled, if you are composing a
+Microsoft Mail message and your Macintosh receives a Mail message, or a desk
+accessory (DA), such as Pyro 4.0, becomes active, or applications are changed
+while in MultiFinder, AutoSave 1.01 may send the message automatically and
+unexpectedly through Mail.
+
+AutoSave 1.01 automatically generates a COMMAND+S to save documents created
+within applications that are included in the Control Panel Exclusive List for
+AutoSave. COMMAND+S is also the command to send mail in Microsoft Mail.
+
+Magic Software's AutoSave II can be configured to use a character other than "s"
+to save; however, the Exclusive List in the version of AutoSave (1.01) shipped
+with Microsoft Office does not include either Microsoft Mail or the DA Handler.
+This version of AutoSave, included with Microsoft Office (Microsoft CD-ROM
+version 1.01), is a disabled version that will not allow changes to be made to
+the Exclusive List other than to delete applications.
+
+To obtain a fully functional version of AutoSave (AutoSave II) in which the DA
+Handler and other applications can be added to the Exclusive List, call Magic
+Software at (402) 291-0670 or (800) 342-6243 from 10 AM to 6 PM PST.
+
+Additional query words: 2.00 2.00a 2.00b 3.00 automatic m_office
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

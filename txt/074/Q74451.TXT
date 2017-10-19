@@ -1,0 +1,65 @@
+DOCUMENT:Q74451  23-NOV-1999  [msdos]
+TITLE   :Plus Hardcard II Is Very Slow with EMM386
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Plus Hardcard II may be extremely slow when used with EMM386. The following
+information, which applies to Microsoft MS-DOS version 5.0, could help correct
+this problem.
+
+MORE INFORMATION
+================
+
+With the use of EMM386.EXE:
+
+1. Exclude the Hardcard XL BIOS address. For example:
+
+         Device=c:\dos\EMM386.EXE X=C000-C800
+
+   (These specific numbers are only examples for the purpose of syntax. The exact
+   addresses to exclude will depend on your configuration. Please see your
+   Hardcard documentation.)
+
+2. If you are not using UMBs, use the frame= parameter to set the address of the
+   page frame such that the page frame will not conflict with the addresses
+   being used by the Hardcard. For example, if the Hardcard is using addresses
+   C000-C800, you might use:
+
+         Device=c:\dos\EMM386.EXE frame=D000
+
+   This sets the page frame for the D000-DFFF range of memory.
+
+Additional query words: 5.00 5.00a 6.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

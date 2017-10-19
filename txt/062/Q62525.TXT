@@ -1,0 +1,66 @@
+DOCUMENT:Q62525  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Can't Check Spelling of Mail Messages
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail does not come with a spelling checker; therefore, there isn't a
+way to check the spelling of words within a Microsoft Mail message.
+
+MORE INFORMATION
+================
+
+This feature is under review and will be considered for inclusion in a future
+release.
+
+To work around this limitation, copy the text from the body of the message to the
+Clipboard (or to the Scrapbook). Then paste the text in an application that
+checks spelling (for example, Microsoft Word or Microsoft Works). Once the
+spelling of the text is checked, copy and paste it back into the body of the
+Mail message.
+
+Another approach is to edit the message text in another application, check its
+spelling, then copy and paste it into the body of the Mail message.
+
+Please note that some third-party spelling checkers appear to work in conjunction
+with Microsoft Mail. For example, Thunder 7 version 1.0 from Baseline Publishing
+(formerly Thunder II from Electronic Arts) appears to work with Mail. (Note:
+This product is manufactured by vendors independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.)
+
+NOTE: Microsoft Mail cannot use dictionaries from other applications.
+
+Additional query words: 2.00 2.00a 2.00b 3.00 thesaurus dictionary
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

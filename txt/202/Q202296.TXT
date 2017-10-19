@@ -1,0 +1,54 @@
+DOCUMENT:Q202296  03-MAY-2000  [sms]
+TITLE   :SMS: Cannot Modify Time of Day in Software Metering Graph Wizard
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Graph Wizard tool on the Tools menu of the Software
+Metering console, if you select Days as the time period for each unit, you are
+unable to modify the time of day in the "When would you like to graph from?"
+option. Pressing the UP ARROW and DOWN ARROW keys does not change the time of
+day from its default setting of 12:00:00 A.M.
+
+CAUSE
+=====
+
+When the interval is set to days, the time of day cannot be adjusted. When the
+time period for each unit is set to minutes, the time of day adjustment works as
+expected.
+
+
+Additional query words: prodsms time spinner
+
+======================================================================
+Keywords          : kbsms200 kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

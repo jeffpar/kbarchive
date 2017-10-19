@@ -1,0 +1,64 @@
+DOCUMENT:Q164410  08-AUG-2001  [winnt]
+TITLE   :CHGPASS and SETPASS Do Not Prompt for Typing Correction
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51,4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetworkkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft File and Print Services for NetWare versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use Microsoft's Chgpass.exe or Setpass.exe you are not prompted for the
+new password if the new password confirmation is incorrectly typed. Instead, the
+following message appears and the password is not changed:
+
+   New password not retyped correctly.
+
+You must run Chgpass.exe or Setpass.exe again to correct the problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in File and Print Services for
+NetWare versions 3.51 and 4.0, and Directory Services Manager for NetWare
+versions 3.51 and 4.0.
+
+This problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: 4.00 3.51 prodnt sfnw fpnw dsmn
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351 kbFPNW400
+Version           : :3.51,4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q121822  13-JUN-2001  [sna]
+TITLE   :Deadlocks When Using Asynchronous Named Pipes
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1; winnt:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows NT 3.5 
+ - Microsoft SNA Server, versions 2.0, 2.1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When Windows NT Workstation and Windows NT Server version 3.5 are stressed by
+asynchronous named pipes, such as by Microsoft SNA Server for Windows NT, the
+Windows NT redirector (RDR.SYS) doesn't create enough worker threads fast enough
+and system deadlock occurs.
+
+CAUSE
+=====
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Workstation and
+Windows NT Server version 3.5. This problem was corrected in the latest U.S.
+Service Pack for Windows NT version 3.5. For information on obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodnt prodsna
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbOSWinSearch kbSNAServSearch kbOSWinNTSearch
+Version           : WINDOWS:2.0,2.1; winnt:3.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

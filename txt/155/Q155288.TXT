@@ -1,0 +1,66 @@
+DOCUMENT:Q155288  19-JUL-2001  [powerpt]
+TITLE   :Slidedmp.exe Will Not Run By Itself
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0; :
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft Internet Assistant for PowerPoint 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you try to run slidedmp.exe by itself you see the following error message:
+
+   Not all files were saved properly. Do you wish to delete existing files?
+
+If you click No, you see the following message:
+
+   HTML files preserved, but the presentation may be incomplete.
+
+If you click Yes, you see the following message:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor."
+
+If you click Details, you see this message:
+
+   SLIDEDMP caused an invalid page fault in module Slidedmp.exe
+
+MORE INFORMATION
+================
+
+Slidedmp.exe is called by the PowerPoint Internet Assistant and is not intended
+to run by itself. The error message generated affects only Slidedmp.exe and is
+harmless.
+
+Additional query words: 7.0 powerpt ia pptia powerpnt html
+
+======================================================================
+Keywords          : kberrmsg kbusage 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbIAsstSearch kbPowerPt95Search kbIAsstPowerPtSearch
+Version           : WINDOWS:7.0; :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

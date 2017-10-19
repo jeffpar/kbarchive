@@ -1,0 +1,72 @@
+DOCUMENT:Q140051  30-JUL-2001  [sms]
+TITLE   :Run Command On Workstation Job Doesn't Refresh....
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following incorrect behavior applies only to "Run Command On Workstation"
+jobs and does not happen with "Share Package On Server" jobs.
+
+When you take an existing package, one that has previously been distributed to a
+machine group, and try to refresh that package on a new group that contains a
+partial list of servers from the original group, the distribution servers are
+not refreshed.
+
+The SMS Despooler processed the instruction file but fails to decompress the
+package and copy any files.
+
+This occurs when only the "Put on Specified Distribution Servers" is selected in
+the Distribute phase of the Job Details window.
+
+NOTE: If you select "Refresh Existing Distribution Servers" the package is
+distributed to all the original distribution servers regardless of the machine
+group selected in the drop down box within that dialog.
+
+WORKAROUND
+==========
+
+If it is necessary to refresh certain distribution servers, Select "Refresh
+Existing Distribution Servers" in the Distribute Phase of the Job Details
+window. This refreshes all original distribution servers for this package.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.1 and 1.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: sms
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

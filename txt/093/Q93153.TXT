@@ -1,0 +1,78 @@
+DOCUMENT:Q93153  02-OCT-1999  [win95x]
+TITLE   :SMARTDrive Can't Load with Syntax Errors or Incorrect Options
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a syntax error occurs when you try to load SMARTDrive version 4.0, 4.1, 4.2,
+or 5.0 from the AUTOEXEC.BAT file or the MS-DOS command line, SMARTDrive does
+not load. Instead of displaying an error message, SMARTDrive displays the online
+help screen. This screen contains the same information that is displayed if you
+type "SMARTDRV /?" (without the quotation marks) at the MS-DOS command prompt.
+
+Similarly, if the /C or /Q switches are used on the command line to load
+SMARTDrive from the AUTOEXEC.BAT file, SMARTDrive does not load, but it also
+does not display any information, even if /V (Verbose) switch is used.
+
+CAUSE
+=====
+
+Any syntax errors that appear on the command line used to load SMARTDrive
+generate these problems. For example, if you try to enable write-behind caching
+for drive C by typing "+C" (instead of "C+") at the end of the SMARTDRV.EXE
+command line, SMARTDrive does not load, and the online help information is
+displayed (even if you specified a /Q switch, which normally prevents the
+display of SMARTDrive information on the screen).
+
+In addition, the following command line switches prevent SMARTDrive from
+loading:
+
+   Command Line Option              Purpose
+   -------------------              -------
+
+   /C                               Writes all cached information to
+                                    the hard disk.
+
+   /S                               Displays additional information about
+                                    the status of SMARTDrive.
+
+   /?                               Displays online help about SMARTDrive.
+
+These options are not designed to be used on the command line when you start
+SMARTDrive.
+
+Additional query words: 3.10 3.11 6.00 6.20 6.21 6.22 parameters switch switches
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

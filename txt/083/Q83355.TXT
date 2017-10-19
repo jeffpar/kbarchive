@@ -1,0 +1,66 @@
+DOCUMENT:Q83355  11-OCT-1999  [win95x]
+TITLE   :A Mouse Double-Click May Act Like a Single Click
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Double-clicking your mouse in the Microsoft Windows may perform like a single
+click if the mouse Double Click Speed is set too high.
+
+To eliminate this problem, reduce the double click speed within the Mouse section
+of the Control Panel.
+
+MORE INFORMATION
+================
+
+If the mouse Double Click Speed setting in the Mouse section of the Windows
+Control Panel is set to the fastest setting, clicking the mouse button may act
+like a single click instead of a double click.
+
+To correct this problem, reduce the mouse Double Click Speed.
+
+Steps to change the mouse Double Click Speed:
+
+1. In the Windows Main group, select the Control Panel icon.
+
+2. In the Control Panel, choose the Mouse icon.
+
+3. Use the scroll bar to reduce the mouse Double Click Speed.
+
+Until the mouse Double Click Speed is changed, it may be necessary to use the
+keyboard. For more information on using Windows keyboard commands, refer to the
+"Microsoft Windows User's Guide" or Windows online Help.
+
+Additional query words: winboot 3.00 3.00a 3.10 3.11 speed too fast
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310
+Version           : WINDOWS:3.0,3.0a,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

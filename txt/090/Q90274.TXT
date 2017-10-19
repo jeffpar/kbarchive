@@ -1,0 +1,74 @@
+DOCUMENT:Q90274  17-DEC-2000  [win3x]
+TITLE   :Managing Network Printers in Print Manager and Control Panel
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can manipulate network printers from either Control Panel or Print Manager.
+However, the capabilities provided from these applications differ greatly. You
+can perform only some network printer operations from Control Panel, whereas you
+can perform all possible operations from Print Manager.
+
+MORE INFORMATION
+================
+
+In Control Panel, the network driver provides only the minimal support needed
+for making a new network connection when setting up a printer for the first
+time. This is for backward compatibility with Microsoft Windows version 3.1 and
+for use when running Windows for Workgroups Setup. (Note you might not make
+network connections during Windows for Workgroups Setup because the network
+driver is not loaded during installation.)
+
+Print Manager provides full functionality for printer configuration, including
+connecting to and disconnecting from network printers and managing documents in
+network print queues.
+
+Some rules apply to the managing of network print queues:
+
+ - On a locally connected printer, regardless of the shared status, any print
+   job can be deleted. Print jobs sent across the network can only be paused.
+
+ - On a locally connected printer, the topmost (currently printing) job cannot
+   be moved. All locally submitted print jobs must remain above all network jobs
+   in the queue. Therefore, the topmost network job cannot be moved up, and the
+   bottommost local job cannot be moved down. At least three local jobs or at
+   least two remote jobs must be in a queue before you can reposition any print
+   job. (Note: Queue management menu items and buttons are not always dimmed
+   when the options fail because of these rules.)
+
+ - On a network (shared) printer, you can only pause and delete your own print
+   jobs, and then only before they start printing. You can only move your print
+   job down in the queue, and only before it starts printing.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

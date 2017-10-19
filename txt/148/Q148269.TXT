@@ -1,0 +1,65 @@
+DOCUMENT:Q148269  24-MAY-2001  [homemm]
+TITLE   :Encarta: Video Not Updated When Changing Views
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition,1996 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+ - Microsoft Encarta 96 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change views in Encarta for the Macintosh, from Main to Main Outline,
+the window may not update correctly. The image may double or truncate.
+
+CAUSE
+=====
+
+When changing views, Encarta does not update the location of the video properly
+to reflect the new position of items in the window. As a result, the video
+doubles or truncates.
+
+RESOLUTION
+==========
+
+There is no resolution to this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Encarta 1995 and Encarta
+Encyclopedia 1996 editions for the Macintosh.
+
+This problem has been corrected in the Encarta Encyclopedia for the Macintosh
+1997 edition.
+
+
+Additional query words: 1995 1996 multi media multimedia multi- mmtitles kbmm refresh pic bad incorrect duplicated duplicate ghost lines images pictures movie movies 1997 95 96 97
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac kbEncartaEnCyc1996Mac
+Version           : :1995 edition,1996 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

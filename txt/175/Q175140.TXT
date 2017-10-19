@@ -1,0 +1,68 @@
+DOCUMENT:Q175140  07-MAY-2002  [homemm]
+TITLE   :Bookshelf/Dictionary: Application Key Does Not Function
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhw kbinterop kbimu kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+ - Microsoft Bookshelf 99 
+ - Microsoft Bookshelf 2000 
+ - Microsoft Encarta World English Dictionary 
+ - Microsoft Natural Keyboard version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press the Application key on the Microsoft Natural Keyboard while using
+Microsoft Bookshelf, the program may not respond to the keystroke.
+
+RESOLUTION
+==========
+
+To work around this problem, right-click instead of using the Application key.
+You may also select a word from left to right or double-click a word in an
+article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This behavior can occur if you select a word from the article panel by dragging
+the mouse pointer over the word from the right to the left or by placing the
+text cursor to the right of the word, pressing and holding down the SHIFT key,
+and then pressing the LEFT ARROW key.
+
+Additional query words: 1.00 multi multi-media media mm mnk
+
+======================================================================
+Keywords          : kbhw kbinterop kbimu kbHardware kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMSHardwareSearch kbEncartaSearch kbZNotKeyword kbBookshelfSearch kbBookShelf1998 kbNKeyboard kbBookShelf2000 kbBookShelf1999 kbEncartaWorldEngDict kbKeyboardSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

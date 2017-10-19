@@ -1,0 +1,59 @@
+DOCUMENT:Q164190  08-NOV-2001  [homekids]
+TITLE   :Kids Plus!: Network Neighborhood not Restricted by Protect It!
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Microsoft Plus! For Kids Protect It! to set access restrictions on
+your computer, you will not be able to restrict access to the Network
+Neighborhood if the computer is on a network.
+
+MORE INFORMATION
+================
+
+Microsoft Plus! For Kids was designed for stand-alone home computers, not for
+computers on networks. Therefore, the Network Neighborhood cannot be restricted
+using the Protect It! program. Similarly, Dial-Up Networking is not disabled by
+Microsoft Plus! For Kids, Protect It!, although a universal modem restriction
+can be put in place for a family member.
+
+Even though Protect It! cannot prevent access to the Network Neighborhood, it is
+possible to limit access to network shares and set up user-level passwords
+through the Network tool located in Control Panel. For more information about
+performing these tasks in Windows, see your Windows printed documentation or
+online Help.
+
+Additional query words: kids kbmm homekids mskids kidsplus kidsplus! pack plus plus! net privilege
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbusage 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

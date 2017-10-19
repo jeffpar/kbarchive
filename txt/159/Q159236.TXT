@@ -1,0 +1,79 @@
+DOCUMENT:Q159236  14-NOV-2000  [word97]
+TITLE   :WD97: Help Topic for Supplemental Converters Listed Twice
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following topic appears twice in Word Help:
+
+   Obtain the Word 97 file format converter and other converters.
+
+The first topic provides complete, updated information on how to obtain the
+supplemental converters. The second topic is incomplete.
+
+RESOLUTION
+==========
+
+To open the help topic that contains the correct information, use the following
+steps:
+
+1. On the Help menu, click Contents And Index, and click the Find tab.
+
+2. In box 1, type "supplemental" (without the quotation marks).
+
+3. In box 3, select the first occurrence of the "Obtain the Word 97 file format
+   converter and other converters" topic, and then click Display.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+To locate the topic that contains the incorrect information, use the following
+steps:
+
+1. On the Help menu, click Contents And Index, and click the Find tab.
+
+2. In box 1, type "supplemental" (without the quotation marks).
+
+The topic is listed twice in box 3.
+
+Additional query words: 8.0 word8 word97 duplicate entry online on-line hlp documentation error
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

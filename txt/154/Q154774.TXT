@@ -1,0 +1,307 @@
+DOCUMENT:Q154774  17-NOV-2000  [exchange]
+TITLE   :XCLN: Exchange Client Inbox Assistant Rules FAQ
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbenv kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Rules are set using either the Inbox Assistant or the Out Of Office Assistant
+options from the Tools menu in any of the Microsoft Exchange Clients for Windows
+while connected to a Microsoft Exchange Server computer. Each rule consists of
+two elements: one or more conditions that specify which items the rule applies
+to, and one or more actions that specify what to do with a qualifying item.
+
+When a rule is created, it is stored on the Exchange Server computer, including
+any template messages for replies. When a message arrives, the Exchange Server
+computer evaluates the message and determines if it has fulfilled any rules
+criteria. If it does, the Exchange Server computer will then process the message
+according to the rule action.
+
+Rules are Exchange Server-based and are executed on the Exchange Server computer
+even if the user is not logged onto mail. If the Exchange Server computer is not
+able to execute a rule (for example, moving mail to a local folder when the user
+is not logged on to the server), a Deferred Action Message (DAM) is created,
+which is used to complete the action when the client reconnects to the Exchange
+Server computer.
+
+Rules which require deferred actions are determined at the time the rule is
+created. When the DAM is received on the client, it is evaluated by the client
+and the requested action is performed. The DAM is then deleted. When a message
+arrives at the Exchange Server computer, it is evaluated independently against
+ALL existing rules before any action is taken. Then all rules that apply to the
+item are executed.
+
+MORE INFORMATION
+================
+
+Q: Are Inbox rules related to the profile that was used to create them?
+
+A: There are two types of Inbox rules: profile-dependent and
+profile-independent:
+
+Profile-dependent: Otherwise known as profile-specific rules. These rules will be
+executed only when logged onto Exchange Server with the profile that created the
+rule. Any one of the following actions in a rule make that rule
+profile-dependent:
+
+ - Alert With (New Items of Interest dialog box)
+ - Move/Copy To a folder in a Personal Store (.pst)
+ - Move/Copy To a public folder
+ - Custom Action
+
+NOTE: Each Exchange Server profile that is created, no matter what the name, has
+a unique ID number assigned to it. If two profiles have the same name, they are
+still unique profiles.
+
+Profile-independent: Otherwise known as server-specific rules. These rules are
+available for editing, appear black, and their actions take place regardless of
+the profile. Any one of the following actions in a rule make that rule
+profile-independent:
+
+ - Forward To
+ - Reply With Template
+ - Delete
+ - Move/Copy To an Exchange Server Private Store folder.
+
+
+Q: What determines whether a particular rule will be profile-dependent or
+profile-independent?
+
+A: It only takes one profile-dependent action in a rule to make the whole rule
+profile-dependent.
+
+Q: Why are some Inbox rules grayed out or unavailable?
+
+A: Each profile-dependent rule is stamped with the unique ID of the profile that
+created the rule. Profile-dependent rules can only be edited when logged on with
+the same profile that was used to create the rule. Again, this is determined by
+the unique ID. These rules become inactive and uneditable when you log on with a
+different profile or from another computer. They are the rules that appear gray
+in the Inbox Assistant window.
+
+Q: How do you edit rules that are grayed out or unavailable?
+
+A: To edit profile-dependent rules, you must be logged onto Exchange Server with
+the profile that was used to create the rule.
+
+Q: What if a profile gets deleted that has profile-dependent rules created
+against it?
+
+A: If you create a profile-dependent rule and then delete that profile, the rule
+becomes deadwood; it can't be activated or edited, just deleted by selecting the
+"Show Rules for all Profiles" option. Because of this, profile-dependent rules
+should be deleted if the originating profile is deleted or no longer used.
+
+Q: Can rules be copied from one profile to another?
+
+A: You can back up profile rules to a separate .pst file, send that .pst file to
+another user, and have them extract the rules in that .pst file. For additional
+information, please see the following article in the Microsoft Knowledge Base:
+
+   Q150303 XCLN: How to Backup Profile Rules to a Different .PST
+
+Q: How many rules can exist in a single profile?
+
+A: There is a 32-KB memory limit for creation of rules, not a defined limit for
+the maximum number of rules that can be assigned to a folder. On the average, it
+is between 40 and 50 rules for each folder. For additional information, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q147298 XCLN: Maximum Number of Rules Per Folder
+
+Q: What happens to profile-dependent rules when logging on with a different
+profile?
+
+A: All rules are stored on the Exchange Server computer and are evaluated on the
+Exchange Server computer for each message sent to a user. If a profile-dependent
+rule cannot be performed by the Exchange Server computer, it creates a Deferred
+Action Message (DAM) to be processed by the client. The DAMs are marked with the
+ID of the profile that was used to create them, and are only processed when that
+profile is used. When you log on, all the DAMs are analyzed to see if they have
+the correct ID for the current profile, and, if they do, the DAMs are processed.
+If not, they are left in the folder that stores them, a hidden folder called the
+Deferred Actions Folder (DAF), and are analyzed each time you log on until you
+log on to the profile that created them, and they can be processed.
+
+Q: How long will DAMs remain in the Deferred Action Folder due to an unused or
+deleted profile?
+
+A: Even though they are gray and inaccessible, the rules are still being analyzed
+by Exchange Server and are still creating DAMs for use when the correct (or
+matching) profile is used (where they will not be gray and will be editable).
+And they'll keep being triggered even if the profile is destroyed because there
+is no way for Exchange Server to tell if the profile still exists. This can
+cause a large backlog of DAMs that eventually will be removed by the Exchange
+Server computer (after 60 days, when the Exchange Server computer will disable
+the rules and start deleting old DAMs) and, if the backlog is large enough, it
+can affect performance while logging on. So, if you end up deleting/recreating
+one of your profiles, or never using it again, delete the gray rules associated
+with it.
+
+Q: Where are Exchange profiles stored for each of the Exchange Clients?
+
+A: Exchange profiles are stored in your computer's registry, not on the Exchange
+Server computer. The Exchange Client for Windows 3.x stores them in a special
+file in the Windows directory.
+
+Q: Is a rule configured to move a message to a public folder considered
+profile-dependent or profile-independent?
+
+A: Profile-dependent, meaning that messages that will be moved to a public folder
+require that a user to be logged on to complete the action. Otherwise, a DAM
+will be created for these actions.
+
+Q: If my computer is configured with both Windows 95 and Windows NT, can I use
+the same profile for both operating systems?
+
+A: No. If you dual-boot two different operating systems, you're using two
+different registries and hence, two different profiles. The profile-dependent
+rules you create on one side of the dual-boot won't work on the other side.
+
+Q: What happens if a single message meets the conditions of two or more rules?
+
+A: Multiple rules can act on a single message, resulting in copies of a message
+being moved to different folders for example.
+
+NOTE: Within the Microsoft Exchange Client 5.0 Inbox Assistant, the "Do not
+Process Subsequent Rules" option has been added to specifically stop rule
+processing after a particular rule has fired.
+
+Q: Does the order in which the rules are listed have any effect on the actions of
+the qualifying rules?
+
+A: Order of the rules doesn't matter except for a delete action. After the
+message is deleted with a delete action, all subsequent rule processing on that
+message stops. So when in doubt, put delete rules at the bottom of the rule
+list.
+
+NOTE: Within the Exchange Client 5.0 Inbox Assistant, the "Do not Process
+Subsequent Rules" option has been added to specifically stop rule processing
+after a particular rule has fired.
+
+Q: Can I use the Inbox Assistant with the MS Mail service installed on my
+client?
+
+A: No, because rules are Exchange Server-based, the Inbox Assistant will not be
+available without an Exchange Server service properly installed. If the MS Mail
+messages are routed through an MS Mail Connector to an Exchange Server user, the
+Inbox Assistant will function against those messages.
+
+Q: Are there any Boolean logic functions available for rules?
+
+A: Semicolons (;) can be used as an OR condition in all fields. Put quotes ("")
+around each word unless you really mean "use this root against all words." For
+example, Subject: cat; tail -- this will affect all messages with those roots in
+the subject line such as "locate," "retail," and so forth. To limit this to
+whole words of "cat" or "tail," place the words in quotes, in other words,
+Subject: "cat"; "tail".
+
+Examples of Rules Processing
+----------------------------
+
+Q: If a message matches a rule in the Out of Office Assistant (OOF), but the same
+messages also matches a delete rule in the Inbox Assistant, will the OOF
+Assistant rule get processed?
+
+A: The Inbox Assistant rules will be processed first. A delete rule in the Inbox
+Assistant will delete the message, and the OOF Assistant rule will not be
+processed.
+
+For example, user Bill has a local .pst file which is configured as the default
+delivery point. Bill has rules defined as follows:
+
+1. If mail is received from JohnDoe, delete it.
+
+2. If mail is received addressed to "Junk Alias," move it to the Later folder in
+   the local .pst file.
+
+3. If mail is received with "Bill" in the message body, move it to the BackItUp
+   folder on the Exchange Server computer.
+
+4. If mail is received from Joyce addressed directly to Bill, reply with "I'm
+   working on it."
+
+   Q: What happens if JohnDoe sends a message to the Junk Alias (assuming that I
+   am on the Junk Alias)?
+
+   A: The message will be deleted (rule #1), and no further rules will be
+   processed.
+
+   Q: What happens if Joyce sends mail to the Junk Alias (assuming that I am on
+   the Junk Alias)?
+
+   A: The message will be moved to the Later folder (rule #2) in the local .pst
+   file.
+
+   Q: What happens if Joyce sends mail to the Junk Alias (assuming that I am on
+   the Junk Alias) with "Bill" in the message body?
+
+   A: The message will be moved to the BackItUp folder on the Exchange Server
+   computer (rule #3), and a reply will be sent with "I'm working on it" as the
+   message body (rule #4).
+
+   Q: What happens if I receive 20 messages addressed to "Junk Alias" while my
+   computer is online?
+
+   A: Each message will be processed through the list of rules, and all actions
+   will be taken. None of the messages will remain in the Inbox because the
+   action (rule #2) is a MOVE action not COPY.
+
+   Q: What happens if I receive 20 messages addressed to "Junk Alias" while my
+   computer is offline?
+
+   A: Each message will be processed through the list of rules and DAMs will be
+   created for each action in the profile-dependent rules. Any
+   profile-independent rules will complete their actions.
+
+   Q: What happens if Joyce sends something directly to Bill and it has "Bill" in
+   the message body?
+
+   A: The message will move it to the BackItUp folder (rule #3) on the Exchange
+   Server computer (no copy will be left in the Inbox), and rule #4 will reply
+   with "I'm working on it" as the message body.
+
+   Q: What happens if the "Junk Alias" friendly name changes to "Junk Yard
+   Alias"?
+
+   A: The rules are processed on both resolved names (distinguished names have
+   underline) and text strings in the To field. You can solve all the rule
+   processing scenarios by indicating a distinguished name, a text version of
+   the distinguished name, and a text version of the short alias name separated
+   by semicolons (;) in the rule's To field.
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbenv kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

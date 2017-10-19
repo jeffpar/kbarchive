@@ -1,0 +1,65 @@
+DOCUMENT:Q91117  25-NOV-1999  [accother]
+TITLE   :COMPAQ DualSpeed Token Ring Card Gives Error #5
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER::1.0; MS-DOS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Connections, version 1.0 
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With Workgroup Connections or Workgroup Add-On for MS-DOS installed for the
+basic or full redirector, the NET START command in the AUTOEXEC.BAT file
+produces the following error message when you are using a COMPAQ 32-bit
+DualSpeed Token Ring card and a Proteon 1990 card:
+
+   Error #5, access denied.
+
+WORKAROUND
+==========
+
+To work around this problem, replace the "net start" line in the AUTOEXEC.BAT
+file with the following lines.
+
+   net start netbind
+   pause
+   net start netbeui
+   net start full (or basic)
+
+You can achieve the same results by typing the following at the command line:
+
+   net stop netbeui
+   net start netbeui
+   net start full (or basic)
+
+
+Additional query words: 3.11 Proteon 1 1.0 1.00 err msg dual speed
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311DOS
+Version           : :1.0; MS-DOS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

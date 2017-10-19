@@ -1,0 +1,83 @@
+DOCUMENT:Q278937  12-JUN-2001  [sna]
+TITLE   :APPC Print Job with AVM Commands May Print Extra Lines
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 SP4,4.0 SP2
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna300sp4 kbsna400sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP4, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An Advanced Program-to-Program Communication (APPC) print job that contains
+Absolute Vertical Move (AVM) commands may print with extra blank lines when you
+print through the host print service that is included with SNA Server 3.0
+Service Pack 4 (SP4) and 4.0 SP2. This problems occurs only if the print session
+in SNA Server is configured to use a Printer Definition Table (PDT) file that
+includes a New Line (NL) definition.
+
+CAUSE
+=====
+
+The virtual print driver (Winvprt.dll) that is used by the host print service is
+not correctly updating the current print line when it processes a NL for a print
+session by using a PDT that contains a NL definition. An AVM command that is
+issued after a NL causes an incorrect number of Line Feeds (LF) to be issued
+because of the incorrect value for the current print line.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 3.0 SP4 and SNA
+Server 4.0 SP2. This problem was first corrected in SNA Server 4.0 Service Pack
+3.
+
+MORE INFORMATION
+================
+
+For additional information about APPC printing, AVM commands, and PDTs, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q195402 Absolute Vertical Move Command Handled Incorrectly If PDT Used
+
+Additional query words: 2 3
+
+======================================================================
+Keywords          : kbDSupport kbsna300sp4 kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP2 kbSNAServ300SP4
+Version           : :3.0 SP4,4.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

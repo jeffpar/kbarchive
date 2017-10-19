@@ -1,0 +1,65 @@
+DOCUMENT:Q169271  07-MAY-1999  [iis]
+TITLE   :Err Msg: Database Already in Use w/ MS Access DB on Remote Share
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0,3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use a Microsoft Access database with Internet Information Server
+(IIS) where the database is located on a remote share, you may get the following
+error message:
+
+   Database already in use
+
+CAUSE
+=====
+
+This error message is actually caused because the connection is denied access to
+the share.
+
+WORKAROUND
+==========
+
+Create an account on the server that contains the share for the Microsoft Access
+database that matches the IUSR account on the IIS server.
+
+For example:
+
+IIS Server user account = IUSR_IISBOX
+Remote server: Create an account called IUSR_IISBOX and make sure the password
+matches the IUSR_IISBOX account on the IIS server.
+
+If necessary, change the password on both accounts so they match and remember to
+change the password in the Internet Service Manager on the IIS server to match.
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : winnt:2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

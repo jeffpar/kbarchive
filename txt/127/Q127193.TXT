@@ -1,0 +1,65 @@
+DOCUMENT:Q127193  25-JUL-2001  [visualc]
+TITLE   :SAMPLE: DLGDB CDialog Sharing a CRecordset Object
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,4.0
+OPER/SYS:
+KEYWORDS:kbfile kbprogramming kbDatabase kbMFC kbODBC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Foundation Classes (MFC), used with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ for Windows* use 1699, versions 1.0, 1.5, 1.51, 1.52 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NOTE: This is the 16-bit version of this sample. There is an equivalent 32- bit
+sample available under the name DLGDB32.
+
+The DLGDB code sample demonstrates how to have a CDialog derived class share a
+CRecordset object that a CRecordView is already using. In addition, when used by
+itself, the code sample also demonstrates how to select CRecordset object from a
+CDocument without having a CRecordView.
+
+NOTE: This sample assumes that ODBC has been installed and that the Student
+Registration data source has been configured.
+
+NOTE: The file must be decompressed by typing "DLGDB -d".
+
+The following file is available for download from the Microsoft Software
+Library:
+
+   Dlgdb.exe (http://support.microsoft.com/download/support/mslfiles/Dlgdb.exe)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+Additional query words: DLGDB32
+
+======================================================================
+Keywords          : kbfile kbprogramming kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

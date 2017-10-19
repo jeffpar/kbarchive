@@ -1,0 +1,70 @@
+DOCUMENT:Q188272  26-JUL-2002  [exchange]
+TITLE   :SBS IMC 4106 Event: The Parameter is Incorrect
+PRODUCT :Microsoft Exchange
+PROD/VER::4.5,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Small Business Server customers who configure the Internet Mail Service for
+dial-up networking, may see the following Event Id logged in the application
+log:
+
+   Event ID: 4106
+   Source: MSExchangeIMC
+   Category: SMTP Interface Events
+   Description: The dial-up connection <phonebook entry name here>
+   could not be  made. The error reported was: [87] The parameter
+   is incorrect.
+
+WORKAROUND
+==========
+
+This issue may be caused by a dial-up networking connection name that has more
+than 20 characters in the length.
+
+To solve this issue, perform the following the steps:
+
+1. Create a new phonebook entry in the Dial-Up Connections tab of the Internet
+   Mail Service or the Connections tab for Message Delivery. Create a new
+   phonebook entry in the Dial-up networking phonebook with 20 or less
+   characters in the name.
+
+2. Remember to change the configuration of the Internet Mail Service to use this
+   newly created phonebook entry.
+
+3. To test this, send another message and check the event log.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbExchangeClientSearch kbZNotKeyword2 kbSBServSearch kbSBServ450
+Version           : :4.5,5.0,5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

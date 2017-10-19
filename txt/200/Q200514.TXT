@@ -1,0 +1,78 @@
+DOCUMENT:Q200514  20-APR-2001  [iis]
+TITLE   :Err Msg: Server Failed to Load Application , 80004005
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an ASP file, the following error messages occur:
+
+   Server Application Error
+   Server failed to load Application.
+
+   Event ID: 36
+   Source: W3SVC
+   Description: The server failed to load application ''. The error was
+   '80004005'.
+
+CAUSE
+=====
+
+The corresponding Web application does not have a name specified or does not
+have the Script permission enabled.
+
+RESOLUTION
+==========
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+   Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click the Web site (or virtual directory), and then click Properties on
+   the Context menu.
+
+3. Click the Home Directory (or Virtual Directory) tab.
+
+4. Under Application Settings, if the Name text box is empty, type in a name.
+
+5. Click the Script permission check box to enable it.
+
+6. Click OK to return to the ISM.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: application online help product documentation web app errmsg kberrmsg akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

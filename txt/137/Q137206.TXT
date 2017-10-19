@@ -1,0 +1,55 @@
+DOCUMENT:Q137206  21-MAY-2001  [schedplus]
+TITLE   :Meeting Acceptance Differs in Schedule+ Versions 1.0 and 7.0
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the sender of a Microsoft Exchange Schedule+ version 7.0 meeting request
+reads the acceptance message sent by another Microsoft Schedule+ version 7.0
+user, the Yes: string common to Microsoft Schedule+ version 1.0 will not appear
+in the subject line.
+
+This is by product design.
+
+
+MORE INFORMATION
+================
+
+Microsoft Schedule+ version 1.x included a Yes: string in the return message.
+This is not used by Microsoft Schedule+ version 7.0. This version assigns a
+yes/no/maybe icon to the return message plus a matching yes/no/tentative line at
+the top of the returned invitation.
+
+Additional query words: 7.0
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

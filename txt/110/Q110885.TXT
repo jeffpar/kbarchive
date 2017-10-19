@@ -1,0 +1,67 @@
+DOCUMENT:Q110885  11-JUN-1999  [homegame]
+TITLE   :System Requirements for Multimedia Golf 1.0
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, multimedia edition, version 1.0 
+-------------------------------------------------------------------------------
+
+The following are the system requirements for Microsoft Multimedia
+Golf version 1.0:
+
+ - MS-DOS operating system version 3.1 or later
+
+ - Microsoft Windows version 3.1 or later
+
+ - Multimedia PC or compatible, with 80386sx or higher processor
+
+ - 4 MB RAM
+
+ - 5 MB of available hard disk space
+
+ - CD-ROM drive
+
+ - Audio board
+
+ - VGA or higher resolution monitor required
+
+ - Speakers or headphones strongly recommended
+
+ - Microsoft Mouse or compatible pointing device
+
+SUMMARY
+=======
+
+ 
+
+Additional query words: 1.00 kbmm multi-media
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

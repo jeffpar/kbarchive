@@ -1,0 +1,79 @@
+DOCUMENT:Q85610  05-NOV-1999  [pcmail]
+TITLE   :FAX: Microsoft Mail Gateway to Fax Floppy Disk Layout
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Here is a list of files included on the Microsoft Mail Gateway to Fax floppy
+disks.
+
+Gateway Component
+-----------------
+
+   Filename         Description
+   --------         -----------
+
+   DCX2TIF.EXE      DCX to TIFF conversion program
+   FAXATT.TPL
+   FAXCOV.TPL       Template for fax logo sheet
+   FAXGTW.EXE       Fax gateway program
+   FAXLOGO.PCX      Fax logo sheet
+   INSTALL.EXE      Installation program
+   MAKEDCX.EXE      Creates DCX file from multiple PCX files
+   PROFILE.EXE      Profile editor
+   PROFILE.GLB      Profile configuration file
+   RRS.FAX          Status file
+   TIF2DCX.EXE      TIFF to DCX conversion program
+
+Access Component
+----------------
+
+   Filename         Description
+   --------         -----------
+
+   FAX.HLP          Help file
+   FAX.TPL          Template for entering fax addresses
+   FAXSTD.TPL       Template for entering fax addresses
+   INSTALL.EXE      Installation program
+
+Fax Viewer
+----------
+
+   Filename         Description
+   --------         -----------
+
+   FAXVIEW.EXE      Fax view program
+
+Additional query words: 3.00 pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

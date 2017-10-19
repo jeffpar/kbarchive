@@ -1,0 +1,107 @@
+DOCUMENT:Q190264  04-AUG-1999  [foxpro]
+TITLE   :PRB: Unusual Characteristics of the ActiveMovie Control
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the ActiveMovie ActiveX control on a form in Visual FoxPro, some
+properties for the control are not listed in the Properties dialog box. These
+properties are available programmatically, they just do not appear in the
+Properties dialog box for the control. Also, when you right-click the
+ActiveMovieControl Active Movie Control Properties menu item, the Properties
+dialog box for the control does not display.
+
+CAUSE
+=====
+
+The SYS(2333) function that turns ActiveX dual interface support on and off must
+be set to ON.
+
+RESOLUTION
+==========
+
+In Visual FoxPro 5.0 and 6.0, turn the SYS(2333) function off and the missing
+properties appear in the Properties dialog box. In Visual FoxPro 3.0, you must
+access the missing properties programmatically.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro 5.0, the SYS(2333) function is turned on by default. In Visual
+FoxPro 6.0, the SYS(2333) function is turned off by default. Turning off the
+SYS(2333) allows the missing properties to be seen. The SYS(2333) function is
+not available in Visual FoxPro 3.0. The only way to access the missing
+properties in Visual FoxPro 3.0 is to programmatically assign values to them.
+
+Another characteristic of the ActiveMovie control is that when you right- click
+the control and select the ActiveMovieControl Active Movie Control Properties
+menu, the properties dialog box for the ActiveMovie control does not open.
+Instead, the display of the ActiveMovie control changes and if you right-click
+the ActiveMovie control again, there is an About ActiveMovie menu item instead
+of the ActiveMovieControl ActiveMovie Control Properties menu item. This happens
+regardless of the status of the SYS(2333) function.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Issue the =SYS(2333,1) command in the Command window.
+
+2. Create a form in Visual FoxPro and add the OLE Container control if you are
+   using Visual FoxPro 5.0. If you are using Visual FoxPro 6.0, insert the
+   ActiveX control (OleControl).
+
+3. In the Insert Object dialog box, select the Create Control option button.
+
+4. In the Object Type list, click ActiveMovieControl object and then click OK.
+
+5. If the Properties dialog box is not displayed on the desktop, right-click the
+   form, and select the Properties dialog box.
+
+6. Scroll through the properties in the dialog box and note that properties like
+   AutoRewind, FileName, and PlayCount are not listed.
+
+7. Close the form and the Properties dialog box, issue =SYS(2333,0) in the
+   Command window, and open the form. Note that all the properties are now
+   listed for the ActiveMovie control in the Properties dialog box.
+
+Additional query words: FxInteropOcx kbCtrl kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,55 @@
+DOCUMENT:Q170252  19-DEC-1999  [exchange]
+TITLE   :XCON: How to Configure Dynamic RAS Using IPX
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbsetup kbtshoot exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Dynamic RAS connector can be configured to use IPX but
+there are a few details that must be configured for it to work properly.
+
+MORE INFORMATION
+================
+
+If there are no Novell Netware servers on the LAN segment, it will be necessary
+to specify the Internal Network number for the IPX protocol in the Protocol
+section of Control Panel. The valid range is 0x1 thru 0xffffffff. In addition,
+in the RAS service, select the Network configuration and configure IPX to
+Allocate Network Numbers and specify the network number. Ensure that the
+internal network and network numbers are unique within your network. All other
+settings may be left at the default. Also, add the NetBeui protocol to provide
+netbios name resolution. This configuration was tested with RAS and the RAS
+function of Routing and Remote Access Update for Windows NT 4.0.
+
+Additional query words: Dynamic RAS IPX DRAS
+
+======================================================================
+Keywords          : kbsetup kbtshoot exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

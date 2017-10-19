@@ -1,0 +1,74 @@
+DOCUMENT:Q142195  10-NOV-1999  [pcmail]
+TITLE   :CONN: Menu Options Grayed Out in the CNU
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some menu options in the Connection Name Utility may not be available and will
+appear gray in color. In order for these menu options to be available, you must
+be signed in to Microsoft Mail for AppleTalk Networks as the Network Manager.
+
+MORE INFORMATION
+================
+
+The following menu options will be grayed out if you have not signed in to
+Microsoft Mail as the Network Manager:
+
+File Menu
+---------
+
+   Save To File
+   Export Directory
+   Import Directory
+   Resync Cycle
+   Remove Mac Names from PC
+   Remove PC Names from Mac
+
+Configure Menu
+--------------
+
+   Select Gateway
+   Application
+   Address Filtering
+
+NOTE: The Application and Address Filtering commands will be available, but you
+will not be able to make any changes in these dialog boxes.
+
+For further information on setting up and running the CNU, see Chapter 5 in the
+version 3.2 Microsoft Mail Connection for PC and AppleTalk Networks
+"Administrator's Guide."
+
+
+Additional query words: 3.20 greyed grey grayed
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

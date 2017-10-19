@@ -1,0 +1,109 @@
+DOCUMENT:Q126567  26-MAY-2001  [homekids]
+TITLE   :MindMaze Causes EMM Exception Error #06 on the Compaq Presario
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play MindMaze from Encarta 1994 on a Compaq Presario with 4
+MB of RAM, an EMM Exception Error #06 may occur. The system stops responding
+(hangs) and requires you to restart the machine.
+
+WORKAROUND
+==========
+
+NOTE: The following instructions discuss editing your AUTOEXEC.BAT file. For
+more information about how to edit your AUTOEXEC.BAT file, see your MS- DOS
+documentation.
+
+1. Disable CD-ROM caching by adding the /U switch to the SMARTDRV.EXE line in
+   the AUTOEXEC.BAT file. For example, change the SMARTDRV.EXE line to:
+
+   "C:\WINDOWS\SMARTDRV.EXE /U" (without the quotation marks)
+
+   For more information about SMARTDrive (SMARTDRV.EXE), consult your Microsoft
+   MS-DOS manual. Systems running Microsoft MS-DOS 5.0 and later can access
+   comprehensive information about MS-DOS commands by typing "help" (without the
+   quotation marks) at the MS-DOS command prompt.
+
+   NOTE: The /U option for SMARTDrive is not available on versions of Microsoft
+   MS-DOS earlier than version 5.0.
+
+2. Increase the number of CD-ROM buffers to 20 by editing the line containing
+   MSCDEX.EXE in the AUTOEXEC.BAT file. Increase the number after the /M: switch
+   to 20. If this switch is not present, add /M:20 to the line containing
+   MSCDEX.EXE.
+
+   For more information about Microsoft CD-ROM Extensions (MSCDEX.EXE), consult
+   your Microsoft MS-DOS manual. Systems running Microsoft MS- DOS 5.0 and
+   latter can access comprehensive information about MS-DOS commands by typing
+   "help" (without the quotation marks) at the MS-DOS command prompt.
+
+3. Ensure that MSCDEX.EXE loads before SMARTDRV.EXE in the AUTOEXEC.BAT file.
+
+4. Save your changes and restart the computer.
+
+MORE INFORMATION
+================
+
+According to Compaq, the default SMARTDrive configuration does not cache the
+Compaq IDE CD-ROM player correctly. Compaq recommends adding the /U switch to
+correct this problem. Compaq also recommends increasing the CD-ROM drive buffers
+by adding the /M:20 option to the entry containing MSCDEX.
+
+
+SMARTDrive (SMARTDRV.EXE)
+-------------------------
+
+The /U switch does not load the CD-ROM caching module of SMARTDrive even if you
+have a CD-ROM drive. If SMARTDrive is loaded with the /U switch, you cannot turn
+on CD-ROM drive caching. If SMARTDrive is loaded without the /U switch, you can
+turn off or on the caching of individual CD-ROM drives using the drive+|-
+parameter.
+
+Microsoft CD-ROM Extensions (MSCDEX.EXE)
+----------------------------------------
+
+The /M:[value] determines how much memory to allocate for caching information on
+the CD-ROM. This is a DOS BUFFERS type of statement for the CD-ROM that
+specifies the number of sector buffers used to cache the path table of a CD-ROM.
+Typically, each drive should have a minimum of four to five buffers. The larger
+this number is, the less your computer will have to read directly from the
+CD-ROM drive.
+
+The Compaq Presario computer is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 1994 multi media multimedia multi-media mmtitles encarta mindmaze compaq cdrom hardware smart drive mind maze
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q227028  06-AUG-2002  [sms]
+TITLE   :SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a domain controlled by many Systems Management Server sites, Logon Server
+Manager on the site servers may consistently fail to update its own Logon
+Configuration File (LCF) on the primary domain controller (PDC).
+
+One LCF file exists for each site that controls the domain:
+Smslogon\Sitescfg\<Sitecode>_cfg.lcf. To update its LCF file, Logon Server
+Manager must gain exclusive access to the PDC by exclusively opening the
+Nt_logon.tok file, located in the Smslogon\Sitescfg directory.
+
+Logon Server Manager logs the following error in its Nt_logon.log file each time
+it fails to open the Nt_logon.tok file on the PDC:
+
+   ~Warning Unable to get sole access to domain skipping
+   $$<SMS_NT_LOGON_SERVER_MANAGER>
+
+This failure prevents the Logon Server Manager from updating its LCF file. If a
+Systems Management Server site server is unable to update its LCF file within
+the polling interval plus four hours, the Systems Management Server site is
+marked with 'inactive' in its LCF file. If the Systems Management Server site
+server is still unable to update its LCF file after the polling interval plus
+seven days, then the Systems Management Server site is marked 'dead' and its
+directories on the logon points are removed.
+
+If at some point the Systems Management Server site server is able to get access
+to the PDC and updates its LCF file, its directories on the logon points will be
+re-created. However, the directories will be deleted if Logon Server Manager
+consistently fails to get access to the PDC again. This can result in excessive
+traffic if you have slow links.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsms lcf sole access token login
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

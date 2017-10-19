@@ -1,0 +1,70 @@
+DOCUMENT:Q201753  17-MAR-1999  [sms]
+TITLE   :SMS: Software Inventory Corruption in SQL Database
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SQL database shows several corrupted items (a date, time, path, or just
+miscellaneous characters) in the Software_COMM and the Software_SPEC tables.
+
+This happens when you perform a query and select the Software Group. Unwanted
+items appear in the drop-down list.
+
+WORKAROUND
+==========
+
+Go to Systems Management Server Database Manager and select Delete Group
+Classes. Go to Personal Computer architecture, select Software, and click OK.
+This action deletes the Software_COMM and the Software_SPEC tables in the SQL
+database.
+
+Go to Systems Management Server Administrator and resend all of the Packages set
+up to take software inventory. (This will re-create fresh software inventory
+tables in the SQL database)
+
+MORE INFORMATION
+================
+
+WARNING: Until the Software Inventory tables are rebuilt, Systems Management
+Server Admin will not display any Software Inventory information for all users.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q175764 SMS: DBCNV12a Does Not Modify Table During SMS 1.2 SP2 Upgrade" for
+   more information on this subject.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

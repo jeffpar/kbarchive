@@ -1,0 +1,70 @@
+DOCUMENT:Q142051  08-AUG-2001  [winnt]
+TITLE   :Panasonic LF7304 Optical Juke Box Setup Failure
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On your computer running Windows NT with a Panasonic LF7304 Optical disk
+installed on a SCSI adapter, various error messages can appear. For example, the
+drive may not be recognized as having any partitions, may get CRC errors, or you
+may receive error messages from Disk Administrator.
+
+CAUSE
+=====
+
+This drive has a proprietary format from the manufacturer, which you need to
+remove prior to using it with Windows NT.
+
+RESOLUTION
+==========
+
+To prepare the drive for operation as a secondary drive on a system that is
+running Windows NT already on another drive:
+
+1. Boot to MS-DOS and perform a low level format on the Panasonic LF7304 Optical
+   disk drive.
+
+2. Boot Windows NT and run Disk Administrator.
+
+   The drive appears as "RAW".
+
+3. Format the drive with Disk Administrator.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

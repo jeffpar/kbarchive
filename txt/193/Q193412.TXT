@@ -1,0 +1,92 @@
+DOCUMENT:Q193412  02-MAY-1999  [iis]
+TITLE   :PDF Files Do Not Index after Adobe Filter Is Installed
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it
+if a problem occurs. For information about how to do this, view the
+"Restoring the Registry" Help topic in Regedit.exe or the "Restoring a
+Registry Key" Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+After you install the .pdf (portable document format) filter from Adobe, you may
+notice that .pdf files stop indexing after you restart Index Server or restart
+the computer.
+
+CAUSE
+=====
+
+When Index Server starts, it re-registers all the filter DLLs One of these DLLs
+has a default association with the .pdf extension and therefore registers itself
+as the filter for these files.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+To resolve this problem, follow these steps:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+      HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ContentIndex
+
+3. Add the path to the Pdffilt.dll to the DLLsToRegister key. The path to the
+   .pdf filter should be added as the last entry in this key.
+
+4. Quit Registry Editor.
+
+MORE INFORMATION
+================
+
+When Index Server starts, Query.dll is re-registered (it is first in the list).
+However, Query.dll recognizes the .pdf files and associates them with the null
+filter. When you add Pdffilt.dll to the end of the registry key, it is allowed
+to re-register the .pdf files with itself.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : WINNT:2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

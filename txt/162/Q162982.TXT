@@ -1,0 +1,80 @@
+DOCUMENT:Q162982  14-NOV-2000  [word97]
+TITLE   :WD97: Appearance of Document Not Refreshed Saving as HTML
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you set the default file save type to HTML (on the Tools menu, click
+Options, and click the Save tab), clicking Save will save the document as HTML,
+but the document on the screen will not be refreshed.
+
+WORKAROUND
+==========
+
+After you save the document, close and then reopen the file. When the document
+is reloaded, the updated version will be displayed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word version 97.
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+MORE INFORMATION
+================
+
+When you save a document as HTML, Word will save the document as HTML, close the
+open document, and then reopen the HTML version of the document. This is done
+because HTML does not support many of the formatting options available in Word.
+By closing and reopening the HTML document, Word can accurately update the
+displayed document to provide an accurate representation of the HTML document.
+
+With the default file type set to HTML Document, clicking the Save button on the
+Standard toolbar or clicking Save on the File menu will automatically save the
+current document as HTML. However, saving as HTML in this manner will not
+refresh the current document.
+
+A problem may arise when the current document has formatting that is not
+supported by HTML. If the document is not refreshed, the open document not
+reflect what the HTML document will look like.
+
+For additional information about this problem in Microsoft Word 98 Macintosh
+Edition, please see the following article in the Microsoft Knowledge Base:
+
+   Q179949 WD98: Appearance of Document Not Refreshed Saving as HTML
+
+Additional query words: 97 internet Web hyper text htm
+
+======================================================================
+Keywords          : kbualink97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

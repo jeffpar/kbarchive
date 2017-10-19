@@ -1,0 +1,250 @@
+DOCUMENT:Q198379  09-JAN-2000  [vbwin]
+TITLE   :BUG: Decimal Points Truncated Using RDO Client Batch Cursors
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSQLServ kbVBp kbVBp500bug kbVBp600bug kbGrpDSVBDBkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to retrieve or update a Remote Data Object (RDO) Column of type
+DECIMAL, the value truncates to only four digits to the right of the decimal
+point. This happens only when using the RDO client batch cursors.
+
+CAUSE
+=====
+
+When using an RDO client batch cursor, the DECIMAL value of the RDO Column is
+mapped as a CURRENCY data type instead of a DECIMAL data type. This causes all
+decimal values with a scale of four or more to truncate.
+
+NOTE: The CURRENCY data type gives decimal values accurate up to 19 digits, with
+only four digits to the right of the decimal point.
+
+RESOLUTION
+==========
+
+Here are four possible ways to work around this decimal truncation problem:
+
+ - Define the data types of the columns on your backend table to be of type
+   FLOAT instead of type DECIMAL.
+
+-or-
+
+ - Use the ODBC cursor library or server-side cursors instead of the client
+   batch cursor library.
+
+-or-
+
+ - Use an rdoQuery object to explicitly map the values correctly. For more
+   information, please see the Sample Workaround code that follows.
+
+-or-
+
+ - Use ActiveX Data Objects (ADO) instead of RDO. For more information, please
+   see the Sample Workaround code that follows.
+
+Sample Workaround Code
+----------------------
+
+To test the code samples, first use ISQL/W to create the test table.
+
+1. In ISQL/w, select the Pubs database.
+
+2. Copy the following code into ISQL/w's Query window, then click the Execute
+   button:
+
+         CREATE TABLE dbo.Table1 (
+            ID int Primary Key,
+            DecValue decimal(20, 8) NULL  )
+
+3. Add a record to the new table, by executing the following code in ISQL/W:
+
+         INSERT dbo.Table1 VALUES (1, 11.12345678)
+
+4. If you do not already have a system data source name (DSN) named Pubs, use
+   the ODBC Administrator in Windows Control Panel to create a system DSN named
+   Pubs that points to the Pubs database.
+
+Workaround Using the rdoQuery Object
+------------------------------------
+
+1. Create the test table, Table1, and the Pubs DSN as described in steps 2-4 of
+   the Sample Workaround Code section.
+
+2. In Visual Basic, create a new Standard EXE project.
+
+3. Add a Command button to Form1.
+
+4. From the Project menu, choose References and then add a reference to
+   "Microsoft Remote Data Object 2.0".
+
+5. Paste the following code into the Click event of the Command button:
+
+         Dim cn As New rdoConnection
+         Dim qry As rdoQuery
+
+         cn.CursorDriver = rdUseClientBatch
+         cn.Connect = "DSN=Pubs;UID=;PWD=;Database=Pubs"
+         cn.EstablishConnection rdDriverNoPrompt, False
+
+         Set qry = cn.CreateQuery("", "Update Table1 Set DecValue = ? " & _
+                                  "Where ID = 1")
+
+         qry.rdoParameters(0).Direction = rdParamInput
+         qry.rdoParameters(0).Value = 22.12345678
+         qry.Execute
+
+         qry.Close
+         cn.Close
+
+6. Run the sample application.
+
+7. In ISQL/W, confirm that the Update was successful by running the following:
+
+         SELECT * FROM dbo.Table1
+
+Workaround using ADO
+--------------------
+
+1. Create the test table, Table1, and the Pubs DSN as described in steps 2-4 of
+   the Sample Workaround Code section.
+
+2. In Visual Basic, create a new Standard EXE project.
+
+3. Add a Command button to Form1.
+
+4. From the Project menu, choose References then add a reference to "Microsoft
+   ActiveX Data Objects Library 2.x."
+
+5. Paste the following code into the Click event of the Command button:
+
+          Dim cn As New ADODB.Connection
+          Dim rsADO As New ADODB.Recordset
+
+          cn.CursorLocation = adUseClient
+          cn.Open "DSN=pubs;UID=;PWD=;Database=Pubs"
+
+          rsADO.Open "SELECT * FROM Table1", cn, adOpenStatic, _
+                     adLockBatchOptimistic
+
+          rsADO!DecValue = 33.12345678
+          rsADO.UpdateBatch
+
+          rsADO.Close
+          cn.Close
+
+6. Run the sample application.
+
+7. In ISQL/W, confirm that the Update was successful by running the following:
+
+         SELECT * FROM dbo.Table1
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create the sample table in the Pubs database as described in steps 1-4 of the
+   Sample Workaround Code section.
+
+2. In Visual Basic, create a new Standard EXE project.
+
+3. Add a Command button to Form1.
+
+4. From the Project menu, choose References then add a reference to "Microsoft
+   Remote Data Object 2.0".
+
+5. Paste the following code into the Click event of the Command button:
+
+         Dim cn As New rdoConnection
+         Dim rsRDO As rdoResultset
+
+         cn.CursorDriver = rdUseClientBatch
+         cn.Connect = "DSN=Pubs;UID=;PWD=;Database=Pubs"
+         cn.EstablishConnection rdDriverNoPrompt, False
+
+         Set rsRDO = cn.OpenResultset("SELECT * FROM Table1", rdOpenKeyset, _
+                     rdConcurBatch)
+
+         rsRDO("ID").KeyColumn = True
+
+         rsRDO.Edit
+         rsRDO!DecValue = 44.12345678
+         MsgBox rsRDO!DecValue  '<--- Value is always chopped here.
+
+         rsRDO.Update
+         rsRDO.BatchUpdate
+
+         rsRDO.Close
+         cn.Close
+
+6. Run the sample project. Notice that the DECIMAL value truncates to only four
+   digits to the right of the decimal point. That is, the message box displays
+   44.1235.
+
+7. In ISQL/W, confirm that the Update was unsuccessful by running the following
+   code:
+
+         SELECT * FROM dbo.Table1
+
+Note that Value is reported to be 44.12350000.
+
+REFERENCES
+==========
+
+For additional information on using RDO with client batch cursors, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q177186 Error 40069 Update Resultset Returned from Stored Procedure
+
+For additional information on ADO, please see the following articles in the
+Microsoft Knowledge Base:
+
+   Q168335 INFO: Using ActiveX Data Objects (ADO) via Visual Basic
+
+   Q168336 HOWTO: Open ADO Connection & Recordset Objects
+
+
+For more information, please refer to the Visual Basic documentation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSQLServ kbVBp kbVBp500bug kbVBp600bug kbGrpDSVBDB kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

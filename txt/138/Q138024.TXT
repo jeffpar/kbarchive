@@ -1,0 +1,58 @@
+DOCUMENT:Q138024  07-SEP-2001  [win95x]
+TITLE   :Problems Printing to NewGen Turbo PS Printers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbprint win95 kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to a NewGen PS Turbo 480 printer using the Windows 95 Apple
+LaserWriter II NTX printer driver, you receive a blank test page, followed by
+PostScript error codes.
+
+You may experience similar problems using NewGen PS Turbo 300, 380, and 400
+models.
+
+CAUSE
+=====
+
+The Windows 95 PostScript printer drivers are not compatible with these older
+printers.
+
+
+RESOLUTION
+==========
+
+To use these printers with Windows 95, install a printer driver included with
+the printer by the manufacturer. For information about installing the drivers
+included with your printer, please consult the printer's documentation.
+
+======================================================================
+Keywords          : kbprint win95 kbPrinting 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

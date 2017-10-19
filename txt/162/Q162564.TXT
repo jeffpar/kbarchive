@@ -1,0 +1,59 @@
+DOCUMENT:Q162564  19-DEC-1999  [schedplus]
+TITLE   :XCLN: Cannot Change Time of Recurring Appointments
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0,7.0a; :4.0; Win95:4.0
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows 95, versions 7.0, 7.0a 
+ - Microsoft Exchange Client, version 4.0 
+ - Microsoft Exchange Client for Windows 95, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot modify the day or time of a recurring appointment series after the
+appointment has been sent to the attendees. In contrast you can modify the day
+or time for non-recurring appointments and for recurring tasks.
+
+WORKAROUND
+==========
+
+To work around this problem, delete the recurring appointment series and create
+a new one or modify each individual occurrence of the appointment.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 4.0, of Microsoft
+Exchange. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbScheduleSearch kbZNotKeyword3 kbSchedule700Win95 kbSchedule700aWin95
+Version           : WINDOWS:7.0,7.0a; :4.0; Win95:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

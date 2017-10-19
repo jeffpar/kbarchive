@@ -1,0 +1,61 @@
+DOCUMENT:Q168419  13-FEB-2002  [visualc]
+TITLE   :BUG: Browse Info Flag Not Saved for Subproject After Conversion
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC500bug kbVC600bug kbGrpDSTools kbNoUpdatekbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The state of the Build browse info file check box under the Browse Info tab in
+project settings is not preserved for subprojects when the project is converted
+from Visual C++ 4.x to Visual C++ 5.0 or from Visual C++ 5.0 to Visual C++ 6.0.
+In all cases, the browse file will not be built for subprojects.
+
+The state of the checkbox is preserved for top-level projects.
+
+RESOLUTION
+==========
+
+Set the Build browse info file check box after the conversion to 5.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words: BSC BSCMAKE
+
+======================================================================
+Keywords          : kbide kbVC kbVC500bug kbVC600bug kbGrpDSTools kbNoUpdate kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

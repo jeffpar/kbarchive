@@ -1,0 +1,74 @@
+DOCUMENT:Q274522  02-MAY-2001  [msnetwork]
+TITLE   :MSN Explorer Signup Screen Is Blank
+PRODUCT :The Microsoft Network
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The signup screen is blank.
+
+CAUSE
+=====
+
+Flash may have been corrupted or removed.
+
+RESOLUTION
+==========
+
+To reinstall Flash go to the site referenced below and follow the directions.
+
+http://www.macromedia.com/software/flash/download/
+
+Disclaimers:
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Macromedia Flash.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu MSN Explorer, Macromedia Flash
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

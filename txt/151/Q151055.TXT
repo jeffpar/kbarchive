@@ -1,0 +1,58 @@
+DOCUMENT:Q151055  13-JUN-2001  [homemm]
+TITLE   :Pregnancy: Suggested Reading List Inconsistent
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Find By Symptom feature of Microsoft Pregnancy and Child Care,
+the suggested reading list often depends on the order in which you select
+symptoms.
+
+MORE INFORMATION
+================
+
+Two parents investigating the same set of symptoms could be given different
+suggested reading lists if one parent selected one symptom first and the other
+parent selected another symptom first.
+
+For example, a child has the symptoms of blood in their stool and fever. If you
+click "Blood in stool" first, you are given a suggested reading list of
+Constipation, Diarrhea, Food Poisoning, and Your Baby's Bowel Movements.
+However, if you click "Fever" first, and you then answer the following series of
+questions, including Yes for "Blood in stool", the only suggested reading you
+are given is Diarrhea (under the category of Gastroenteritis).
+
+Additional query words: preview multi media multimedia multi-media mmtitles kbmm msnet childcare kbhowto
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

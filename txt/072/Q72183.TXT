@@ -1,0 +1,85 @@
+DOCUMENT:Q72183  19-NOV-1999  [msdos]
+TITLE   :Loading MS-DOS 5.0 TSRs and Device Drivers into UMBs
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are device drivers included with MS-DOS version 5.0 that are safe
+to load into upper memory blocks (UMBs):
+
+   EGA.SYS          DISPLAY.SYS     ANSI.SYS
+   RAMDRIVE.SYS     SMARTDRV.SYS    DRIVER.SYS
+   PRINTER.SYS
+
+The following are terminate-and-stay-resident (TSR) programs included with MS-DOS
+5.0 that are safe to load into UMBs:
+
+   DOSKEY.COM       DOSSHELL.COM    KEYB.COM     SETVER.EXE  GRAFTABL.COM
+   GRAPHICS.COM     NLSFUNC.EXE     MODE.COM     ASSIGN.COM
+   SHARE.EXE        PRINT.EXE       APPEND.EXE   FASTOPEN.EXE
+
+MIRROR.COM will automatically load high (into a UMB). For more information, query
+on the following words:
+
+   "MIRROR" (without the quotation marks) and "UMB" (without the quotation
+   marks) and "5.00" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+For each device driver (from the above list) that you want to load into a UMB,
+do the following:
+
+Note: Device drivers are loaded through the CONFIG.SYS file with a DEVICE= line.
+
+1. Make sure DEVICE=HIMEM.SYS is loaded above the DEVICE=EMM386.EXE line and
+   that the line DOS=HIGH,UMB is in the CONFIG.SYS file.
+
+2. Change the DEVICE= line, which is used to load the following device drivers,
+   to DEVICEHIGH= in the CONFIG.SYS file. For example:
+
+   devicehigh=c:\dos\ansi.sys
+
+For each TSR that is loaded in your AUTOEXEC.BAT file and is safe to load into a
+UMB, add the LOADHIGH (LH) command before the TSR. (LH is equivalent to
+LOADHIGH.) For example, you can change the line
+
+   c:\dos\doskey
+
+to the following:
+
+   lh c:\dos\doskey
+
+Additional query words: 5.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q276262  22-JUN-2001  [exchange]
+TITLE   :XCLN: Unread Messages Are Not Displayed in Other Mailboxes
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you set up an Outlook profile that you can use to open another mailbox as
+well as your own personal mailbox, the number of unread messages listed in the
+Inbox may not equal the total number of unread messages that are displayed in
+the folder. For example, the Inbox (or any other folders) of the other mailbox
+may report that you have 10 unread messages, but only five unread messages are
+displayed in that folder.
+
+MORE INFORMATION
+================
+
+This behavior occurs if the messages that are sent to the other mailbox are set
+to Private instead of the default setting, which is Normal. This behavior is by
+design.
+
+If you create a profile that logs on to that other mailbox directly, the correct
+number of messages is displayed.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook98Search kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

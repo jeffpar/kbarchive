@@ -1,0 +1,71 @@
+DOCUMENT:Q183632  09-JAN-2000  [vbwin]
+TITLE   :INFO: How to Add "Generate Report" Menu Item in Visual Mode
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The report generation feature, which generates a data dictionary from a model
+using Microsoft Word OLE Automation objects in Visual Modeler 1.0 and 1.1 was
+removed from the menu in version 2.0. The functionality can be enabled by
+modifying the vs.mnu file. This article explains how to add/enable the report
+generation feature manually; however, it is not a supported feature and should
+be used at your own risk.
+
+MORE INFORMATION
+================
+
+To enable the report generation menu option, use Notepad to edit the file
+vs.mnu, found in the Visual Modeler installation directory. Add the following
+lines to the top of the file:
+
+      Menu Report
+      {
+         Separator
+            Option "&Generate Report..."
+            {
+               RoseScript .\ReportGen.ebx
+            }
+      }
+
+Save the file.
+
+If Visual Modeler is running, you will need to shut it down and restart so the
+new settings can take effect.
+
+The Generate Report option now appears under Report on the Visual Modeler menu
+bar.
+
+Additional query words: Visual Modeler Report kbdse kbDSupport kbVBp kbVMod kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

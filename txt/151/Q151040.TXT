@@ -1,0 +1,73 @@
+DOCUMENT:Q151040  04-OCT-2001  [frontpg]
+TITLE   :FP: Copy Web Command Replaces Files on Destination Web
+PRODUCT :Word Front Page
+PROD/VER:windows:1.1,97
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q197730.
+
+For a Microsoft FrontPage 98 version of this article, see Q194269.
+
+SYMPTOMS
+========
+
+If you use the Copy Web command to add a Web to an existing Web, any files in
+the destination Web with the same name as files in the Web being copied will be
+replaced.
+
+WORKAROUND
+==========
+
+To prevent files from being overwritten, change any duplicate file names in the
+Web being copied before you use the Copy Web command.
+
+MORE INFORMATION
+================
+
+Use the following steps to change the file name of a page in FrontPage
+Explorer:
+
+1. In Link View or Summary View, find the page you want to change.
+
+2. Right-click the page you want to change, and click Properties on the menu
+   that appears.
+
+3. Click the General tab. In the Page URL box, type the new name. Click OK.
+
+You may receive the warning message "There are <number of pages> pages that
+have links to this page. Do you want to update these pages so that the links
+will not be broken?" If you want to automatically change the links, click Yes.
+
+Additional query words: 97 front page vermeer
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : windows:1.1,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

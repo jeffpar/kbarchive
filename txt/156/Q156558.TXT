@@ -1,0 +1,84 @@
+DOCUMENT:Q156558  19-DEC-1999  [homemm]
+TITLE   :Cinemania/Music Central 97: Netscape 2.0 not Starting
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1997 edition 
+ - Microsoft Music Central for Windows 1997 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a web link in one of the Microsoft products listed at the top of
+this article, your web browser does not automatically start. You may receive an
+error message similar to the following:
+
+   Your browser could not be launched. Close any open applications and try
+   again. If nothing else is open, re-install your browser and try again.
+
+This occurs when you are using Netscape Navigator version 2.0 as your browser.
+
+CAUSE
+=====
+
+Netscape Navigator 2.0 does not register itself with Windows 95 for the type of
+access used by these programs. Special registration is needed to allow Windows
+95 programs to automatically start a web browser.
+
+RESOLUTION
+==========
+
+Download Microsoft Internet Explorer 2.0 or 3.0, which installs universal
+Internet settings for Windows 95. The latest editions of Internet Explorer are
+available on the Microsoft web site at:
+
+   http://www.microsoft.com/ie
+
+After you install Internet Explorer version 2.0 or newer, Windows 95 can
+automatically start your default web browser, including Netscape Navigator. The
+first time you run Internet Explorer, it will ask if you wish to set it as your
+default web browser. If you wish to continue using Netscape Navigator as your
+default web browser, be sure to click No.
+
+MORE INFORMATION
+================
+
+Internet Explorer Setup installs universal Internet settings for Windows 95. By
+changing the properties of the Internet icon on your desktop, you can configure
+Dial-up settings, proxy connections and other options for basic Internet
+access.
+
+
+The third-party products discussed here are manufactured by a vendor ndependent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          : kbhowto 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1997 kbMusicCentral kbMusicCentral1997
+Version           : :1997 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q64936  07-NOV-1999  [win95x]
+TITLE   :Update of WordPerfect 5.1 for Expanded Memory Problems
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Unless you specify otherwise, WordPerfect version 5.1 first uses all available
+conventional memory, then available expanded memory. It does not recognize
+extended memory. Microsoft Windows version 3.0 has the ability to provide
+expanded memory.
+
+MORE INFORMATION
+================
+
+Release 11-06-89 of the WP.EXE program did not handle expanded memory properly.
+WordPerfect is aware of this problem and will issue a free upgrade to registered
+users. Contact WordPerfect for more information.
+
+You may find the release date of the version by pressing the F3 key (Help). The
+date is in the upper-right corner of the screen. Press your space bar to leave
+the Help screen. You can search the directory of the file to find the date.
+
+WORKAROUND
+==========
+
+You can work around the problem by starting WordPerfect with "/ne" (without the
+quotation marks) in the Optional Parameters line in the PIF Editor. This tells
+WordPerfect to start without using the expanded memory.
+
+NOTE: This parameter may also help with other releases of WordPerfect, and may
+also correct a problem where Windows stops responding (hangs) after starting
+WordPerfect.
+
+The parameter "/32" (without the quotation marks) may help in releases dated
+later than 11-06-89. This parameter tells WordPerfect to apply the 3.2 LIM
+specifications. Other problems regarding screen display may be resolved with
+this option also.
+
+The product included here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

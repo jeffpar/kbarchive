@@ -1,0 +1,60 @@
+DOCUMENT:Q108805  22-DEC-1999  [powerpt]
+TITLE   :Video for Windows 1.1 Utilities Disk Directory
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Video for Windows, version 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a directory listing of the Microsoft Video for Windows, version
+1.1, Video for Windows Utilities disk for the Macintosh.
+
+Video for Windows 1.1 Utilities                 11/19/93     12:25 PM
+
+AVI to QT Utility                63K            11/13/93     10:12 AM
+Read Me                           6K            11/13/93     10:48 AM
+Video for Windows Converter      86K            11/13/93     10:12 AM
+Windows Compressors              18K            11/13/93     10:12 AM
+
+MORE INFORMATION
+================
+
+The following files are on the disk and used by the Macintosh system:
+
+File                             Size           Date         Time
+---------------------------------------------------------------------
+
+Desktop                          16K            11/19/93     12:25 PM
+Icon                              2K            11/19/93     12:24 PM
+
+Additional query words: 1.1 Utilities for Macintosh
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo110
+Version           : WINDOWS:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

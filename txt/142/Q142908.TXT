@@ -1,0 +1,62 @@
+DOCUMENT:Q142908  19-FEB-2002  [winnt]
+TITLE   :Intel SatisFAXtion 400i Driver Support for Windows NT 3.51
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The drivers (Intel SatisFAXtion 100 and Intel SatisFAXtion 400e) provided in
+Windows NT 3.51 does not support the Intel SatisFAXtion 400i internal modem. The
+Intel SatisFAXtion 400i is not in the Windows NT 3.51 Hardware Compatibility
+List (HCL).
+
+To obtain the drivers for the Intel SatisFAXtion 400i modem, contact Pure Data
+Technical Support at (905) 731-4533 or download NT351.EXE (self- extracting
+file) from one of the following electronic services:
+
+  -CompuServe
+      GO PCVENF
+      Search for NT351.EXE
+      Display results and download
+  
+  -Pure Data Bulletin Board Service (BBS)
+      Dial (905) 731-4679 to connect to the BBS
+      Download NT351.EXE
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

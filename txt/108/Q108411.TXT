@@ -1,0 +1,74 @@
+DOCUMENT:Q108411  08-AUG-2001  [winnt]
+TITLE   :Configuring IRQ of Future Domain 8xx SCSI Controller
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, the Future Domain 8xx SCSI controller operates with IRQ set to 1. If
+the adapter is configured to use a different interrupt, the corresponding
+registry entry needs to be changed manually.
+
+MORE INFORMATION
+================
+
+The Setup applet of the Future Domain SCSI adapter does not have a dialog box
+that you can use to change any settings for the adapter. All settings in the
+registry are automatically set to their default values. As a result of this, if
+the IRQ level of the adapter is set to a non-default value (such as any number
+other than five), the system will not start properly.
+
+WARNING: Using the Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+Modify the value "DriverParameter:REG_SZ:IRQ=5" in the following way:
+
+1. Start Registry Editor (REGEDT32.EXE) and select the following subkey:
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fd8xx
+   \Parameters\Device0
+
+2. Double-click the value DriverParameter:REG_SZ:IRQ=5.
+
+3. Enter the following string
+
+   IRQ=<value_nr>
+
+   where "<value_nr>" is the new value on which the controller operates
+
+4. Quit Registry Editor and restart Windows NT (or Windows NT Advanced Server).
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

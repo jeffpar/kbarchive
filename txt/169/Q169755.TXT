@@ -1,0 +1,431 @@
+DOCUMENT:Q169755  11-JAN-2001  [word97]
+TITLE   :WD97: Troubleshooting Fax Problems from Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage winword word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+To troubleshoot fax problems that occur when you use Microsoft Fax to send a fax
+from Word, use the methods described in the "More Information" section of this
+article.
+
+NOTE: Third-party faxing software is available for use with Microsoft Word;
+however, Microsoft Technical Support can only support faxing from Word when
+using Microsoft Fax.
+
+MORE INFORMATION
+================
+
+To fully test your system's ability to communicate and function correctly with
+your modem and Microsoft Fax, perform the steps in the order in which they are
+listed here.
+
+Step 1: Test Windows Communications with Your Modem
+---------------------------------------------------
+
+To test whether Windows can communicate with your modem, follow these steps:
+
+   Microsoft Windows 95 and Microsoft Windows 98
+
+1. On the Windows Start menu, point to Settings, and then click Control Panel.
+
+2. Double-click the Modems icon.
+
+3. Click the Diagnostics tab, click the port at which you have your modem
+   installed, and then click More Info. Windows will now attempt to communicate
+   with your modem. Windows should display the following message:
+
+   Communicating with modem. This may take a few minutes.
+
+   Windows will send several "AT" commands to your modem. If these tests are
+   successful, Windows will display the Port Information and "AT" responses for
+   each command.
+
+   Microsoft Windows 2000
+
+1. On the Windows Start menu, point to Settings, and then click Control Panel.
+
+2. Double-click the Phone and Modem Options icon.
+
+3. Click the Modems tab, click the port at which you have your modem installed,
+   and then click Properties.
+
+4. In the Modemname dialog box, click the Diagnostics tab. Click Query Modem.
+   Windows now attempts to communicate with your modem. Windows should display
+   the following message:
+
+   Communicating with modem. This may take a few minutes.
+
+   Windows sends several "AT" commands to your modem. If these tests are
+   successful, Windows displays the Port Information and "AT" responses for each
+   command.
+
+If the tests are successful, proceed to step 2.
+
+If any of the following problems occur, you may have either a modem, modem
+configuration, or modem connection problem. If this is the case, refer to the
+additional information articles at the end of this section.
+
+Problems that may occur when you run the test:
+
+ - The COM port for your modem may not be listed as an available port.
+
+   -or-
+
+ - You receive any of the following error messages:
+
+   The modem failed to respond. Make sure it is properly connected and turned
+   on. If it is an internal modem or is connected, verify that the interrupt for
+   the port is properly set.
+
+   -or-
+
+   The COM<x> port is currently assigned to an MS-DOS application. Do you
+   want to reassign the port to Windows?
+
+   -or-
+
+   Another program is using the selected Telephony device. Try again after the
+   other program completes.
+
+   -or-
+
+   You receive a "disk full" error. The hard disk partition containing your
+   temporary fax folder is low on storage space. For information on cleaning out
+   this folder, please see the following article in the Microsoft Knowledge
+   Base:
+
+   Q130983 Removing Faxes from the Microsoft Fax Queue
+
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q105940 Troubleshooting Serial Port Problems in Windows
+
+   Q152064 How to Install an Internal Modem in Windows 95
+
+   Q158114 Err Msg: Another Program Is Using the Selected Telephony...
+
+
+Step 2: Test the Send Functionality of Microsoft Fax
+----------------------------------------------------
+
+To check the send functionality of Microsoft Fax, use the following steps:
+
+1. On the Windows Start menu, point to Programs, point to Accessories, point to
+   Fax, and then click Compose New Fax. The Compose New Fax wizard should start.
+
+2. Click Next.
+
+   NOTE: Click Dialing Properties to change dialing information, if needed.
+
+3. Type in the addressee in the To line, and then type in the fax number of a
+   fax machine you can send a test fax to. Click Add To List, and then click
+   Next.
+
+4. For your test, click No to the question "Do you want a cover page?" Click
+   Options. Under the Time To Send section, click "As soon as Possible," click
+   OK, and then click Next.
+
+5. Type in a Subject and a short Note, and then click Next.
+
+6. On the Files To Send dialog box, click Next.
+
+7. In the "Your Fax is now ready. To send it, click Finish" dialog box, click
+   Finish.
+
+Microsoft Fax will send your test document. A Microsoft Fax dialog box should
+appear on your screen. There will be several messages indicating the progress of
+the test. The messages you should see are similar to the following:
+
+ - Processing new fax message
+ - Preparing email format
+ - Email format created
+ - Calling <recipient>
+
+If these steps are successful, proceed to step 3.
+
+If either of the following problems occur, see the articles at the end of this
+section.
+
+Problems that may occur when you follow the steps:
+
+ - You receive the following error message:
+
+   The following unrecoverable error has occurred: Internal MAPI error: The
+   information service cannot be added to the profile using the Inbox Setup
+   Wizard. Contact your administrator.
+
+ - The Fax command is not available on the Accessories menu.
+
+You may have either a modem, modem configuration, modem connection, fax service,
+or profile problem. In order to correct this problem, repeat step 1 in this
+section, remove and reinstall Microsoft Fax, add Microsoft Fax to your profile,
+or reinstall Microsoft Windows 95 with Microsoft Exchange and Microsoft Fax
+selected.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q165414 Error Message: Internal MAPI Error
+
+   Q152196 How to Install and Use Microsoft Fax
+
+   Q129211 Frequently Asked Questions About Microsoft Exchange Profiles
+
+   Q105940 Troubleshooting Serial Port Problems in Windows
+
+   Q152064 How to Install an Internal Modem in Windows 95
+
+
+   Q162203 OL97: User Profiles and Information Services
+
+
+For more information about how to perform this task in Windows 95, see your
+Windows 95 printed documentation, online Help, or call Microsoft Windows 95
+Technical Support.
+
+Step 3: Test the Rendering System of Microsoft Fax from Word
+------------------------------------------------------------
+
+NOTE: Make sure that the Mail As Attachment option is turned off in Word. To turn
+the Mail As Attachment option off, click to clear the Mail As Attachment check
+box on the General tab. To view the General tab, click Options on the Tools
+menu.
+
+To test whether Microsoft Fax can render a Word document for faxing, follow these
+steps:
+
+1. Create a document in Word. On the File menu, point to Send, and then click
+   Mail Recipient.
+
+   NOTE: If Send is not available on the File menu, you must install Microsoft
+   Exchange using Windows 95 Setup.
+
+2. In the New Message dialog box, the Word document will appear as text and the
+   insertion point should be blinking in the To line.
+
+   NOTE: To send your Word document as an attachment to the mail message, in
+   Word, click Options on the Tools menu. On the General tab, click to select
+   the Mail As Attachment check box, and then click OK.
+
+3. In the To line, type "[fax:me]" (without the quotation marks).
+
+4. Use one of the following methods:
+
+Method 1: With Microsoft Outlook Installed
+------------------------------------------
+
+   a. On the File menu, click Send Options.
+
+   b. On the Fax tab, under Message Format, click to select the Not Editable
+      check box, and then click OK.
+
+Method 2: Without Microsoft Outlook Installed
+---------------------------------------------
+
+   a. On the File menu, click Properties.
+
+   b. On the General tab, under Message Format, click to select Not Editable and
+      then click OK.
+
+   c. Click OK.
+
+5. On the File menu, click Send.
+
+Word will now send your document. A Microsoft Fax dialog box should appear on
+your screen. There will be several messages indicating the progress of the test.
+The messages you should see are:
+
+ - Processing new fax message.
+ - Preparing fax format.
+ - Scheduling fax.
+ - Calling:Me.
+
+By using the [fax:me] and the Not Editable format, you force Microsoft Fax to
+render and send the fax to your inbox. If these steps are successful, proceed to
+step 4 (the cause of the problem is probably an address or fax modem problem).
+
+If any of the following problems are experienced, refer to the additional
+information articles at the end of this section.
+
+Problems you may experience when you run this test include:
+
+ - You receive the following error message in Microsoft Exchange:
+
+   The item's properties could not be displayed. No additional send options are
+   available for this message.
+
+ - When you click Send Options on the File menu from the test message, nothing
+   happens.
+ - You cannot close Microsoft Word until the Send Mail command is finished.
+   Switch to the New Message first, and either send or close the message.
+ - You receive a message stating that no transport provider was available for
+   delivery to this recipient.
+ - You receive an "Undeliverable" mail message stating "An unknown error has
+   occurred. Try to send the fax again."
+ - The Fax tab is missing from the "Send Options for this Message" dialog box
+   after you click Send Options on the File menu from your test message.
+ - You receive an "Undeliverable" mail message stating "A problem occurred
+   during message processing in the message store."
+ - Electronic Fax is not available as a merge option.
+ - When you select mail merge to "Electronic Mail" you get the following error
+   message:
+
+   Microsoft Exchange does not recognize <Phone Number>
+
+   Would you like to
+
+   Create a new address for <Phone Number>
+
+   Change to
+
+If you experience any of these problems, repeat step 2. You may not have
+Microsoft Fax properly installed. For assistance in setting up Microsoft Fax,
+you may need to call Microsoft Windows 95 Technical Support.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q160863 OL97: How to Send a Contact to a Fax Address
+
+
+   Q142345 WD: Unable to Fax Mail Merge to Microsoft Fax from Word
+
+   Q142088 WD: Merge to Fax Not Available
+
+   Q169542 WD97: Messages When Attempting to Fax From Word Windows 98 Users.
+
+   Q187549 Microsoft Fax Does Not Appear in Add/Remove Programs
+
+Step 4: Test Printing to Microsoft Fax from Word
+------------------------------------------------
+
+To test Microsoft Fax by using the Print command on the File menu, follow these
+steps:
+
+1. Create a new document or open an existing document.
+
+2. On the File menu, click Print.
+
+3. In the Print dialog box, under Printer, in the Name box, select Microsoft
+   Fax, and then click OK.
+
+   The Compose New Fax wizard should start.
+
+4. Change your Dialing Properties, if necessary, and then click Next.
+
+5. Type in the name and fax number of the fax recipient, click Add to list, and
+   then click Next.
+
+6. Click No when prompted with the question "Do you want a cover page?" Click
+   Next.
+
+7. Type in a subject and note, if desired, and then click Next.
+
+8. Click Finish to complete sending the test fax.
+
+If these steps are successful, Microsoft Fax should be properly installed.
+However, if you continue to experience problems, you may need to call Microsoft
+Windows 95 Technical Support or Microsoft Word Technical Support.
+
+If these tests are unsuccessful, then you may not have Microsoft Fax properly
+installed. For assistance in setting up Microsoft Fax, you may need to call
+Microsoft Windows 95 Technical Support.
+
+If the Microsoft Fax driver is not an available printer when you click Print on
+the File menu, please see the following articles in the Microsoft Knowledge
+Base:
+
+   Q137752 Cannot Print to Microsoft Fax Printer Driver
+
+   Q132908 Error Message: Could Not Start Print Job
+
+
+   Windows 98 Users.
+
+   Q187549 Microsoft Fax Does Not Appear in Add/Remove Programs
+
+Microsoft Support Options
+-------------------------
+
+If you cannot resolve this issue, several support options are available to assist
+you.
+
+Quickly Find Answers Yourself Online:
+
+Use Microsoft Online Support to search the Microsoft Knowledge Base and other
+technical resources for fast, accurate answers. You can also customize the site
+to control your search.
+
+To begin your search, browse to the following Web site:
+
+   http://www.microsoft.com/support/
+
+Microsoft Product Support:
+
+Contact a Microsoft Product Support professional to assist you with
+troubleshooting problems.
+
+For more information about obtaining help with troubleshooting Microsoft Windows,
+click Help Topics on the Help menu in Windows Explorer. On the Contents tab,
+double-click to open the Troubleshooting book. Then double-click to open the
+Contact Microsoft Technical Support book to view your support options.
+
+For more information about obtaining help with troubleshooting Microsoft Word,
+click About Microsoft Word on the Help menu, and then click Tech Support.
+
+For additional information about Microsoft support services, please click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q102344 Microsoft Product Support Options Q&A
+
+Microsoft Solution Providers:
+
+Microsoft Solution Providers are independent organizations that have teamed with
+Microsoft to use technology to solve business problems for companies of all
+sizes and industries.
+
+To locate a Microsoft Solution Provider in your area in the U.S. and Canada, call
+the Microsoft Sales Information Center at (800) 426-9400. If you are outside the
+United States, contact your local subsidiary. To locate your subsidiary, see the
+Microsoft World Wide Offices Web site at:
+
+   http://www.microsoft.com/worldwide/default.htm
+
+Additional query words: 8.0 tshoot troubleshooting
+
+======================================================================
+Keywords          : kbusage winword word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

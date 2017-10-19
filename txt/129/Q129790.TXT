@@ -1,0 +1,108 @@
+DOCUMENT:Q129790  10-FEB-2000  [foxpro]
+TITLE   :Base Classes Available in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+All Visual FoxPro base classes recognize a minimum set of events and properties.
+You can create objects or derive subclasses from most of the Visual FoxPro base
+classes, but not all.
+
+This article lists the Visual FoxPro base classes, indicates whether or not each
+class can be subclassed, lists the minimum event set for Visual FoxPro base
+classes, and lists the minimum property set for Visual FoxPro base classes.
+
+MORE INFORMATION
+================
+
+Visual FoxPro Base Classes That Can Be Subclassed
+-------------------------------------------------
+
+The following Visual FoxPro Classes are not an integral part of a parent
+container, so they can be subclassed in the Class Designer:
+
+  check box        EditBox        list box              Shape
+  Column (1)       Form           OLEBoundControl       Spinner
+  CommandButton    FormSet        OLEContainerControl   text box
+  CommandGroup     Grid           Timer                 ComboBox
+  OptionGroup      ToolBar        Container             Image Control
+  Label            PageFrame      Custom                Line
+
+Visual FoxPro Base Classes That Cannot Be Subclassed
+----------------------------------------------------
+
+The following Visual FoxPro Classes are an integral part of a parent container,
+so they cannot be subclassed in the Class Designer:
+
+  Header
+  OptionButton
+  Page
+  Separator
+
+Base Class Minimum Event Set
+----------------------------
+
+All Visual FoxPro base classes recognize the following minimum set of events:
+
+  Event   - Description
+-----------------------
+  Init    - Invoked when the object is created.
+  Destroy - Invoked when the object is released from memory.
+  Error   - Invoked when an error occurs in event or method procedures
+            of the class.
+
+Base Class Minimum Property Set
+-------------------------------
+
+All Visual FoxPro base classes have the following minimum set of properties:
+
+  Property     -  Description
+
+  Class        -  What type of class it is.
+
+  BaseClass    -  The base class it was derived from, such as Form,
+                  Commandbutton, Custom, and so on.
+
+  ClassLibrary -  The class library the class belongs to.
+
+  ParentClass  -  The class the object was derived from. If the class was
+                  derived directly from a Visual FoxPro base class, the
+                  ParentClass property is the same as the BaseClass
+                  property.
+
+NOTE: Most of the information in this article is available under many different
+topics in the Visual FoxPro Help file.
+
+Additional query words: VFoxWin 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

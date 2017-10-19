@@ -1,0 +1,164 @@
+DOCUMENT:Q101616  30-JUL-2001  [lanman]
+TITLE   :A Program to Generate Documentation on LAN Manager Servers
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+This article contains a REXX program that can be used to easily document much of
+a server's configuration--including users, groups, resources and configurable
+parameters.
+
+MORE INFORMATION
+================
+
+To use the program do the following:
+
+ - Cut-and-paste the listing beginning with (including) the first dollar sign
+   and continuing to (but not including) the pound sign.
+
+ - Search-and-replace the dollar sign with a forward slash (/).
+
+ - Save the file as LANDOC.CMD or some other *.CMD name.
+
+There are three command line switches to the program:
+
+ - A or /A adds the results of "net access" to the document
+
+ - G or /G adds a verbose group listing to the document
+
+ - U or /U adds a verbose user listing to the document
+
+"Verbose" means that instead of getting just a list of groups or users on the
+server you will receive information on each individual group or user.
+
+You must run this program at the server or other OS/2 machine while logged on
+with ADMIN privileges. Examples of program execution at an OS/2 command prompt
+are:
+
+   landoc             (this produces minimum documentation)
+   landoc a           (adds the "net access" results)
+   landoc g           (adds group information)
+   landoc u           (adds user information)
+   landoc g u         (adds user and group information)
+   landoc g u a       (maximum documentation)
+
+NOTE: This program may take some time to run. It requires a minimum temporary
+free disk space of approximately 24K plus 1K per user in NET.ACC and 1K per 30
+groups in NET.ACC--if you use all options.
+
+   $* MUST be logged on with ADMIN privilege *$
+   parse upper arg cmd_param_1 cmd_param_2 cmd_param_3
+   push cmd_param_1
+   push cmd_param_2
+   push cmd_param_3
+   do 3
+   pull parameter
+   if (parameter = '/U') | (parameter = 'U') then
+        do_user = 'yes'
+   if (parameter = '/G') | (parameter = 'G') then
+        do_group = 'yes'
+   if (parameter = '/A') | (parameter = 'A') then
+        do_access = 'yes'
+   end
+   "if exist lan-doc.bak del lan-doc.bak"
+   "if exist lan.doc ren lan.doc lan-doc.bak"
+   "if exist get_list.dat del get_list.dat"
+   "net config workstation >> lan.tmp"
+   "net config server >> lan.tmp"
+   "net comm >> lan.tmp"
+   "net device >> lan.tmp"
+   "net print >> lan.tmp"
+   "net accounts >> lan.tmp"
+   call cleanup
+   if do_user <> 'yes' then
+        "net user >> lan.tmp"
+   else
+        do
+        "net user >> get_list.dat"
+        call do_list user 1
+        end
+   if do_group <> 'yes' then
+        "net group >> lan.tmp"
+   else
+        do
+        "net group >> get_list.dat"
+        call do_list group 2
+        end
+   call cleanup
+   "net share >> lan.tmp"
+   if do_access = 'yes' then
+        do
+        "net access >> lan.tmp"
+        end
+   call cleanup
+   exit
+   do_list:
+   parse arg use_type start_pos
+   do i = 1 to 4
+   tempstr = linein("get_list.dat",,1)
+   end
+   do while lines("get_list.dat") > 0
+   do 3
+   name = substr(tempstr,start_pos,25,' ')
+   if substr(name,1,1) = ' ' then iterate
+   "net " use_type name " >> lan.tmp"
+   tempstr = delstr(tempstr,1,24+start_pos)
+   end
+   tempstr = linein("get_list.dat",,1)
+   i = pos( "command completed successfully", tempstr,1)
+   if  i > 0 then
+        do while lines("get_list.dat") <> 0
+        tempstr = linein("get_list.dat",,1)
+           end
+   end
+   tempstr = lineout("get_list.dat")
+   "del get_list.dat"
+   return
+   cleanup:
+   tempstr = linein("lan.tmp",1,1)
+   do while lines("lan.tmp") > 0
+   i = pos( "command completed successfully", tempstr,1)
+   if i = 0 then
+      j = lineout("lan.doc",tempstr)
+   else
+      do
+      j = lineout("lan.doc"," ")
+      j = lineout("lan.doc","******************************************")
+      j = lineout("lan.doc"," ")
+      end
+   tempstr = linein("lan.tmp",,1)
+   end
+   j = lineout("lan.tmp")
+   "del lan.tmp"
+   j = lineout("lan.doc"," ")
+   j = lineout("lan.doc","*********************************************")
+   j = lineout("lan.doc"," ")
+   j = lineout("lan.doc")
+   return
+   #
+
+Additional query words: 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

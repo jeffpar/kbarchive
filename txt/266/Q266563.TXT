@@ -1,0 +1,51 @@
+DOCUMENT:Q266563  27-OCT-2000  [homemm]
+TITLE   :Encarta Researcher: How to Select Notes to Build a Report
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Researcher 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you build a report in Microsoft Encarta Researcher, you may be unable to
+select or clear the notes that you want or do not want to appear in the report.
+
+When you click the note, you do not select or clear the note item.
+
+MORE INFORMATION
+================
+
+To select or clear a note, you must click the check box to the left of the note
+item.
+
+Additional query words: multi multi-media media mm deselect cannot
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

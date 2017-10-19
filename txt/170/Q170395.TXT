@@ -1,0 +1,66 @@
+DOCUMENT:Q170395  05-NOV-1999  [pcmail]
+TITLE   :MTG: MTA Fails with Error Code 914:ce on NetWare 4.11
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using MS-DOS MTA and Dispatch with Dynadmin results in a failure to connect to a
+Netware 4.11 server. The following sample is from External.log:
+
+   03-31-97 13:27 Dynamically connecting T: to FNIO-XDV-
+   TAFT\EMAIL:COURIER.DAT.
+   03-31-97 13:27 An unknown error code (914:ec) was returned.
+   03-31-97 13:27 Reading master file. Could not connect to drive.
+
+CAUSE
+=====
+
+The NLSP that ships with NetWare version 4.11 causes Dynadmin to fail. The
+Novell utility, NLSP, provides a link state approach to routing and is
+automatically enabled during a NetWare 4.11 installation. This link state
+routing protocol provides backwards compatibility and, in theory, should operate
+successfully in a mixed NLSP and RIP routing environment. Novell Technical
+Support has been made aware of this issue.
+
+WORKAROUND
+==========
+
+Disable the default NLSP routing on NetWare 4.11 file servers. This is
+accomplished through editing the Autoexec.ncf file and running UNLOAD IPXRTR at
+the file server console or by selecting RIP in the INETCFG utility. The server
+must then be restarted.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

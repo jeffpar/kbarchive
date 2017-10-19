@@ -1,0 +1,69 @@
+DOCUMENT:Q212943  13-AUG-2001  [sms]
+TITLE   :SMS: Alpha Versions Not Listed Under Product Compliance
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+No products for the Alpha platform are listed under Product Compliance in the
+Systems Management Server Administrator Console. All existing entries state that
+they are for the Microsoft Windows platform.
+
+MORE INFORMATION
+================
+
+You can download an updated product compliance database for Microsoft Systems
+Management Server version 2.0 from Microsoft's Web site. You can also create
+custom import files to add specific products to your product compliance
+database.
+
+Importing Product Compliance Information
+----------------------------------------
+
+Systems Management Server allows you to import product compliance information
+into your database using tab-delimited ASCII text files. For information about
+how to create these files, refer to the Systems Management Server version 2.0
+Administrator's Guide.
+
+To Import a Product Compliance File:
+
+1. In the Systems Management Server Administrator Console under Site Database,
+   right-click Product Compliance, point to All Tasks, and then click "Import
+   Product Compliance Data".
+
+2. Enter the file name of the file containing the product compliance data that
+   you want to import, and then click OK.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

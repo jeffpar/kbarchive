@@ -1,0 +1,63 @@
+DOCUMENT:Q137611  27-JUL-2001  [sms]
+TITLE   :CLIENT.BAT Added Incorrectly to AUTOEXEC.BAT
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+Remote Control of Windows for Workgroups client does not work, even after Windows
+for Workgroups is rebooted.
+
+CAUSE
+=====
+
+CLI_DOS appends the CALL D:\MS\SMS\BIN\CLIENT.BAT line to the end of your
+AUTOEXEC.BAT file, after the WIN command. Consequently, CLIENT.BAT runs after
+you quit Windows for Workgroups.
+
+RESOLUTION
+==========
+
+To correct this problem, edit the AUTOEXEC.BAT file on the client so that
+CLIENT.BAT is called before WIN.COM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

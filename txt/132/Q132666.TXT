@@ -1,0 +1,70 @@
+DOCUMENT:Q132666  24-JUL-2001  [win95x]
+TITLE   :Logitech MouseWare 6.5 and Norton Desktop
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install MouseWare 6.5 on a computer running Norton Desktop in Windows
+95, when you start the computer the following error message is displayed on a
+blue screen:
+
+   Invalid VXD dynamic link call from SYMEvent (01) + 0000121F to device VMD,
+   Service 7. Your Windows configuration is invalid. Run Windows Setup program
+   again to correct this problem.
+
+CAUSE
+=====
+
+This problem occurs because Norton Desktop for Windows is not compatible with
+MouseWare 6.5 when you are running Windows 95.
+
+RESOLUTION
+==========
+
+To resolve this problem, change to one of the Logitech mouse driver types listed
+in the Mouse tool in Control Panel. If you install any MouseWare version written
+for Windows 3.1, you need to change to one of the Windows 95 Logitech mouse
+types to reinstall the Windows 95 Logitech driver.
+
+MORE INFORMATION
+================
+
+According to Logitech, MouseWare 6.5 and earlier is not designed to work with
+Windows 95. You may want to contact Logitech to obtain an upgraded version of
+MouseWare designed to work with Windows 95.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          : kbhw win95 kbHardware 
+Technology        : kbWin95search kbWin95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

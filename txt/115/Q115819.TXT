@@ -1,0 +1,54 @@
+DOCUMENT:Q115819  09-DEC-1999  [homemm]
+TITLE   :QuickShelf: Highlighted Word Not Searched on with NT
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition,1995 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows versions 1994 edition, 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+QuickShelf may not work as expected if you are running Microsoft Windows NT. For
+example, if you highlight a word in Notepad and then click a button on the
+QuickShelf toolbar, Bookshelf will open, but the highlighted word will not
+appear in an edit field, nor will Bookshelf perform a search on the highlighted
+word.
+
+NOTE: This functionality may work correctly with some word processing
+applications and not with others. For example, it has been found to work
+correctly with Write but not with Notepad.
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf, editions
+listed at the beginning of this article. This problem has been corrected in
+Microsoft Bookshelf '95 for Windows 95 and Microsoft Bookshelf 96-97 for
+Windows.
+
+Additional query words: 1994 multi media multimedia multi-media qshelf find query seek
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1994 kbBookShelf1995
+Version           : :1994 edition,1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

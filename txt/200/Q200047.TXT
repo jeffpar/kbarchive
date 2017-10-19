@@ -1,0 +1,86 @@
+DOCUMENT:Q200047  11-DEC-2001  [winnt]
+TITLE   :Error Uninstalling Internet Explorer on Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:4.0,4.01,4.01 Service Pack 1,5; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Internet Explorer versions 4.0, 4.01, 4.01 Service Pack 1, 5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to uninstall Internet Explorer on a computer running Windows NT
+Server, Terminal Server edition through the Add/Remove Programs utility in
+Control Panel, you may receive the following error message:
+
+   Setup has determined you have multiple versions of Internet Explorer 4.0 (5)
+   installed in different operating systems. Setup can not uninstall the current
+   Internet explorer installation. Please restart the machine under the other
+   operating system and then remove Internet Explorer.
+
+   After that uninstall is complete start the system again with the original
+   operating system and use IEREMOVE from Start, Run to completely remove
+   Internet Explorer from this installation.
+
+CAUSE
+=====
+
+This problem occurs because the Add/Remove Programs shortcut does not seem to
+properly switch Terminal Server to the install mode when trying to uninstall
+Internet Explorer, which was loaded with the original installation of Windows
+Terminal server.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. Click Start, click Run and then type " cmd" (without the quotation marks). At
+   the command prompt, type "change user /install" (without the quotation marks)
+   and then minimize the command prompt window.
+
+2. Manually remove Internet Explorer. To do this, click the article link below,
+   and then perform the steps in the following Microsoft Knowledge Base
+   article:
+
+   Q224412 How to Manually Uninstall Internet Explorer 4.0 for Windows NT
+
+3. After the installation has been removed, go back to the command prompt and
+   type "change user /execute" (without the quotation marks).
+
+NOTE: For additional information about problems attempting to reinstall Internet
+Explorer, please see the following article in the Microsoft Knowledge Base:
+
+   Q196459 Terminal Server Upgrading IE 4.0 from Either IE 3.0 or IE 2.0
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbIEsearch kbZNotKeyword2 kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE400WinNT400 kbIE401WinNT400 kbIE401WinNT400SP1 kbIE500WinNT400
+Version           : WINDOWS:4.0,4.01,4.01 Service Pack 1,5; winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

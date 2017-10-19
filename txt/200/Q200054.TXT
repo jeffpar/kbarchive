@@ -1,0 +1,112 @@
+DOCUMENT:Q200054  03-MAY-2001  [visualc]
+TITLE   :PRB: OnTimer() Is Not Called Repeatedly for a List Control
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbListView kbMFC kbTimer kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you call the SetTimer function to send periodic WM_TIMER messages to a list
+control, you may find that the WM_TIMER message handler (the OnTimer function)
+for a list control is called only twice.
+
+CAUSE
+=====
+
+The WM_TIMER handler in the list control calls the KillTimer function.
+
+RESOLUTION
+==========
+
+If you define the timer ID in the SetTimer call, do not call the default handler
+for WM_TIMER.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The list control uses the timer for editing labels, and for scrolling. When you
+handle the timer message, if the timer ID is your own timer, don't call the
+default handler (CListCtrl::OnTimer).
+
+In the sample code below, without the if clause in the CMyListCtrl::OnTimer
+function, the default WM_TIMER handler is always called, which destroys both the
+control's timer and your own timer. As a result, you should see a trace
+statement for each timer.
+
+   void CGensdiView::OnInitialUpdate() 
+   {
+      CView::OnInitialUpdate();
+   	
+      m_pCtrl = new CMyListCtrl;
+      m_pCtrl->Create(WS_VISIBLE | WS_CHILD | WS_BORDER 
+                      | LVS_REPORT | LVS_EDITLABELS, 
+                      CRect(0, 0, 100, 150), this, 2134);
+
+      m_pCtrl->InsertColumn(0, "one");
+      m_pCtrl->InsertItem(0, "0 0 0 0 0 0 0 0 0 0 0");
+      m_pCtrl->InsertItem(1, "1 1 1 1 1 1 1 1 1 1 1");
+      m_pCtrl->InsertItem(2, "2 2 2 2 2 2 2 2 2 2 2");
+   }
+
+   void CGensdiView::OnLButtonDown(UINT nFlags, CPoint point) 
+   {
+      m_pCtrl->m_timerID = m_pCtrl->SetTimer(14, 500, NULL);
+      TRACE("timer %d is set\n", m_pCtrl->m_timerID);
+   }
+
+   CMyListCtrl::CMyListCtrl()
+   {
+      m_timerID = -1;
+   }
+
+   void CMyListCtrl::OnTimer(UINT nIDEvent)
+   {
+      if (nIDEvent != m_timerID)
+         CListCtrl::OnTimer(nIDEvent);
+      TRACE("OnTimer %d\n", nIDEvent);
+   }
+
+Additional query words: CListview CListctrl WM_TIMER OnTimer KillTimer SetTimer once
+
+======================================================================
+Keywords          : kbListView kbMFC kbTimer kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

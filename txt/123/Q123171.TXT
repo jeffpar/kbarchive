@@ -1,0 +1,513 @@
+DOCUMENT:Q123171  05-FEB-2002  [winnt]
+TITLE   :WINS Event Log IDs 4145 - 4290 (Error Conditions) for 3.5
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+This article describes Windows Internet Name Service (WINS) event log IDs
+4145 through 4290. These events represent error conditions.
+
+Event Log IDs 4145 - 4290
+-------------------------
+
+Event   Description
+-----   -----------
+
+4145    WINS has encountered an error that is causing it to shut down.
+
+4146    Rpl Pull thread is shutting down due to some error condition.
+
+4147    Rpl Push thread is shutting down due to some error condition.
+
+4148    Challenge thread is shutting down due to some error condition.
+
+4149    A Worker thread is shutting down due to some error condition.
+
+4150    An abnormal error was encountered during WINS initialization.
+
+4151    WINS could not set up the database properly.
+
+4152    A worker thread could not be created.
+
+4153    A thread could not be created.
+
+4154    An event could not be created.
+
+4155    The Name Challenge  Request thread could not be created.
+
+4156    A key could not be created/opened.
+
+4157    The WINS configuration key could not be created/opened.
+
+4158    The WINS PULL configuration key could not be created/opened.
+
+4159    The WINS PUSH configuration key could not be created/opened.
+
+4160    The WINS PARAMETERS key could not be created/opened.
+
+4161    The Registry change notification event could not be created.
+
+4162    The format of time should be hh:mm:ss. Check value of "SpTime"
+        in the Registry.
+
+4163    The Registry Notify Function returned an error.
+
+4164    The Name Registration Response could not be sent due to some
+        error. This Error was encountered by a NBT request thread.
+
+4165    The Name Registration Response could not be sent due to some
+        error. This error was encountered by a RPL thread.
+
+4166    The Name Registration Response could not be sent due to some
+        error. This error was encountered by the Name Challenge Thread.
+
+4167    The Name Release Response could not be sent due to some error.
+        This error was encountered by a NBT request thread.
+
+4168    The Name Query Response could not be sent due to some error.
+        This error was encountered by a NBT request thread.
+
+4169    A record could not be registered because it already existed.
+        However, the same record then could not be found. The database
+        might be corrupt.
+
+4170    WINS could not create a heap (a portion of memory reserved for
+        the program's use) because of a resource shortage. Check if the
+        computer is running short of virtual memory.
+
+4171    An error has occurred from which WINS will try to recover. If
+        recovery fails, check previous Event log entries to determine
+        what went wrong, and take appropriate action on that error.
+
+4172    WINS could not create the notification socket. Make sure the
+        TCP/IP driver is installed and running properly.
+
+4173    WINS could not create the UDP socket for listening for
+        connection notification messages sent  by another thread (PULL
+        thread) in the local WINS.
+
+4174    WINS could not create the TCP socket for listening to TCP
+        connections. Make sure the TCP/IP driver is installed and
+        running properly.
+
+4175    WINS could not create the TCP socket for making a TCP connection.
+        Make sure the TCP/IP driver is installed and running properly.
+
+4176    Could not bind an address to a socket.
+
+4177    Could not listen on the listening socket.
+
+4178    Select returned with an error.
+
+4179    %1 returned with an error code of %2.
+
+4180    GetSockName returned with an error. WINS created a socket and
+        asked bind to bind a handle to it. On calling getsockname to
+        determine the address bound, it got an error.
+
+4181    An attempt to connect to the remote WINS server with address %1
+        returned with an error. Check to see that the remote WINS server
+        is running and available, and that WINS is  running on that
+        server.
+
+4182    Could not accept on a socket.
+
+4183    Could not read from the UDP socket.
+
+4184    Could not read from NETBT.
+
+4185    Could not close a socket.
+
+4186    Sendto could not send all the bytes.
+
+4187    Could not send UDP message to WINS client.
+
+4188    Sendto returned with an error.
+
+4189    Winsock recv function returned with an unexpected error.
+
+4190    WinSock send function returned with an unexpected error.
+
+4191    A message was received on an association. The association is in
+        a bad state. This indicates a bug in WINS code.
+
+4192    Could not allocate a responder association.
+
+4193    Could not allocate an initiator association.
+
+4194    Could not allocate an implicit dialogue.
+
+4195    Could not allocate an explicit dialogue.
+
+4196    Could not look up the assoc block for an NBT association. Check
+        if the message read is corrupted. WINS looks at bit 11-14 of the
+        message to determine if the association is from another WINS or
+        from an NBT node. It is possible that the bits are corrupted or
+        that there is a mismatch between what the two WINS servers expect
+        to see in those bits (maybe you changed the value to be put in
+        code and did not increment the version number sent during
+        association setup.
+
+4197    Could not allocate a UDP Buffer.
+
+4198    Could not free a UDP Buffer.
+
+4199    Could not create a communication subsystem thread.
+
+4200    A WINS thread could not signal the main thread after closing its
+        session. This would be the last thread in WINS closing the
+        database.
+
+4201    A WINS thread could not signal a handle.
+
+4202    A WINS thread could not reset a handle.
+
+4203    An error was encountered in the database. You might need to
+        restore the database from a backup.
+
+4204    Could not update a record with name %1.
+
+4205    WINS could not update the owner id - Address mapping table in the
+        database.  This indicates a serious error in the software.  It
+        means that the in-memory table that maps to the database table has
+        gotten out of sync with the database table.
+
+4206    The Push Thread was requested for a range of records but could not
+        find any in the range. This is a serious error. Make sure that the
+        time intervals are set properly. If the tombstone interval and
+        timeout intervals are not correct (i.e. too small-- being << the
+        replication interval), the above condition is possible. This is
+        because the records might get changed into tombstones and then
+        deleted before the remote WINS can pull them. In the same vein, if
+        the refresh interval is set to be << replication interval then the
+        records could get released before a WINS can pull them (a released
+        record is not sent).
+
+4207    The Tmm Thread could not be signaled. This indicates that this
+        computer is extremely overloaded or that the WINS application
+        has failed.
+
+4208    Tmm could not signal the client thread. This indicates something
+        seriously wrong.
+
+4209    WINS could not get information about a key.
+
+4210    WINS could not get information about the PULL key.
+
+4211    WINS could not get information about the PUSH key.
+
+4212    WINS could not get information about the DATAFILES key.
+
+4213    WINS could not get information about the SPEC_GRP_MASKS key.
+
+4214    WINS could not open a subkey of the PULL key
+
+4215    WINS could not open a subkey of the PUSH key.
+
+4216    WINS could not get the time interval from a PULL record.
+
+4217    WINS could not get the time interval from a PUSH record.
+
+4218    WINS could not get the update count from a PUSH record.
+
+4219    WINS could not close an open key.
+
+4220    WINS Timer thread encountered an exception.
+
+4221    WINS Push thread encountered an exception. It will try to recover.
+
+4222    WINS Pull thread encountered an exception during the process of
+        sending a push notification to another WINS. The exception
+        code is given below in the data section.
+
+4223    A WINS RPC thread encountered an error/exception.
+
+4224    WINS TCP Listener thread encountered an exception.
+
+4225    WINS UDP Listener thread encountered an exception.
+
+4226    WINS Scavenger thread encountered an exception.
+
+4227    WINS Challenger thread encountered an exception.
+
+4228    A WINS worker thread encountered an exception.
+
+4229    WINS Scavenger thread could not scavenge a record. Will ignore
+        this error and continue on to the next record if there.
+
+4230    WINS Rpl Pul Handler could not connect to a WINS server. All
+        retries failed. WINS will try again after certain number of
+        replication time intervals have elapsed.
+
+4231    WINS did not find any subkeys under the PULL key
+
+4232    WINS did not find any subkeys under the PUSH key
+
+4233    An error has prevented wins from updating the database. The
+        database may be corrupt.
+
+4234    WINS is has been asked to pull entries from its own self. Check
+all
+        the subkeys of the PULL key for this WINS.
+
+4235    WINS was unable to propagate the push trigger.
+
+4236    WINS sent a name query or a name release with a certain
+        transaction id. It got back a response to its request, which
+        differed either in the name that it contained or in the opcode.
+        WINS has thrown the response away.
+
+4237    The Database has been found to be inconsistent. More specifically,
+        the number of owners found in the Name Address Mapping table are
+        different from the number found in the Owner Address Mapping table
+
+4238    The local WINS requested a remote WINS to update the version
+        number of a database record owned by it. The remote WINS could not
+        do it and reported an error.
+
+4239    WINS got an error while registering replicas. It will not register
+        any more replicas of this WINS (address is in data section 4th-8th
+        byte; also check previous log entry) at this time.  Please check
+        a previous log entry to determine the reason for this. If this
+        error persists over time i.e. you get the same error during
+        subsequent replication with the above partner WINS, you may want
+        to restore the database from the backup.
+
+4240    WINS got an exception while trying to register a group's replica
+        with name %1. The replica is owned by WINS with address %2.
+
+4241    WINS got an error while trying to register a unique replica with
+        name %1. The replica is owned by WINS with address %2.
+
+4242    WINS got an error while trying to register a unique entry %1.
+
+4243    WINS got an error while trying to register a group entry %1.
+
+4244    WINS got an exception while trying to update the version number of
+        a record in the database. It is not known whether the exception
+        occurred after  or before the update.
+
+4245    WINS got an exception while trying to release a record in
+        the database. It is not known whether the exception occurred
+        after or before the release was done.
+
+4246    WINS got an exception while trying to query a record in the
+        database.
+
+4247    WINS received a replica whose state is incorrect. For example, the
+        state may be RELEASED or the replica might be an Internet group
+        that does not have any members (because all members are timed out)
+        but state is not TOMBSTONE.
+
+4248    The Scavenger thread was unable to change its priority level.
+
+4249    A name release request was received for a record that didn't match
+        the unique/group type indicated in the request.  The request has
+        been ignored.
+
+4250    A name release request was received for a record %2 that didn't
+        have the same address as the requestor. The request has been
+        ignored.
+
+4251    An exception was encountered while trying send a push trigger
+        notification to a remote WINS.
+
+4252    An exception was encountered while trying service a pull range
+        request from a remote WINS.
+
+4253    WINS was either provided a bad command code or else it got
+        corrupted.
+
+4254    The static data file that is used to initialize WINS database is
+        too big.
+
+4255    An error was encountered during an operation on the static data
+        file %1.
+
+4256    The name of the file after expansion is bigger than WINS can
+        handle. The unexpanded string is %1.
+
+4257    WINS could not do Static initialization
+
+4258    An error was encountered during configuration or reconfiguration
+        of WINS.
+
+4259    Error encountered during configuration/reconfiguration of WINS.
+
+4260    A lock error has occurred.  This could happen if the WINS is
+        trying to send a response on a dialogue that is no longer ACTIVE.
+        An implicit dialogue can cease to exist if the association it is
+        mapped to terminates. In such a case, getting a lock error is
+        fine. It is normal.
+
+4261    Wins could not import static mappings from the file (%1).
+        Please verify that the file exists and is readable.
+
+4262    WINS encountered an exception while processing a push
+        trigger/update notification. The exception code is given below.
+        If it is indicates a comm. failure check if the remote WINS that
+        sent the trigger went down. If the remote WINS is on a different
+        subnet, then maybe the router is down.
+
+4263    WINS encountered an exception while processing a pull trigger.
+
+4264    WINS encountered an exception while retrieving data records
+
+4265    The WINS server cannot make/accept this connection since the
+        limit of connections has been reached. Remedy for this is to
+        increase FD_SETSIZE in winsock.h and recompile the server.
+
+4266    The exception was encountered during the processing of a grp
+        member.
+
+4267    The Scavenger thread encountered an exception while cleaning up
+        the owner-add table. It will try again after the Verify Interval
+        has elapsed.
+
+4268    WINS is trying to update the version number of a database record
+        that it does not own.  This is a serious error if the WINS
+        server is updating the record after a conflict.  It is not a
+        serious error if the WINS server is updating the record as a
+        result of a request to do so from a remote WINS server (when a
+        remote WINS server notices a conflict between an active owned entry
+        and a replica it informs the owner of the replica to update the
+        version number of the record. It is  possible that the replica is
+        no longer owned by the remote WINS). Check a previous log entry to
+        determine which situation applies here.
+
+4269    The special group mask specified is invalid. It has either a non-
+        hex character or is less than 32 characters in length. A hex
+        character is in the range 0-F (or 0-f).
+
+4270    Wins tried increasingly sized buffers to get the local name table
+        from NETBT but got a buffer overflow return status each time.
+
+4271    WINS did not get back any names from NETBT when it did an adapter
+        status.
+
+4272    At initialization, WINS creates a security object and attaches an
+        ACL to it. This security object is then used to authenticate RPC
+        calls made to WINS. WINS could not create the above security
+        object. In short, WINS could not initialize with the security
+        subsystem properly.
+
+4273    The client does not have the permissions required to execute the
+        function.
+
+4274    When WINS replicated with its partners, it found that one or more
+        of them thought that it had more data that it actually has.
+        WINS adjusted its counter so that new registrations/updates are
+        seen by its partners. This means that recovery did not work
+        properly. You may want to check which of the partners has the
+        highest version number corresponding to the local WINS. Then shut
+        down WINS and restart after specifying this number in the
+        Registry.
+
+4275    There are too many concurrent static initializations going on.
+        The number of such initializations currently active is given below.
+        This could be either as a result of reinitialization or importings
+        from the WINS Manager tool. Try again later. The number of
+        currently active initializations is given below in the data
+        section.
+
+4276    WINS encountered a memory error.  Check to see if the system is
+        running out of virtual memory.
+
+4277    WINS noticed some database corruption. The record with name %1 is
+        corrupt. It could be that recovery from the last crash did not
+        work properly. WINS will try to recover. You may decide however to
+        restore the database from the backup.
+
+4278    The following name (%1) is too long. It has not been put in the
+        WINS database. If you want this long name (> 15 characters),
+        enclose it within quotes.
+
+4279    Record with name (%1) has bad address. It has not been put in the
+        WINS database.
+
+4280    The machine you are running the WINS server on does not have a
+        valid address. When WINS requested the system for the address, it
+        got 0.0.0.0 as the address. NOTE: WINS binds to the first adapter
+        in a machine with more than one adapter bound to TCP/IP. Check the
+        binding order of adapters and make sure the first one has a valid
+        IP address for the WINS server.
+
+4281    WINS encountered an error doing backup of the database to
+        directory %1.
+
+4282    WINS countered an error while deleting the file %1.
+
+4283    WINS encountered an error while deleting one or more records of
+        WINS with address %1. Check a previous log entry to determine what
+        went wrong.
+
+4284    WINS encountered an error while getting the browser names for a
+        client.
+
+4285    The length of the message sent by another WINS indicates a very
+        big message. There may have been a corruption of the data on the
+        wire. WINS will ignore this message, terminate the connection with
+        the remote WINS, and continue on.
+
+4286    The replicator PULL thread of WINS encountered an exception while
+        processing a request. Check other log entries to determine what
+        went wrong.
+
+4287    WINS does not support this functionality as yet.
+
+4288    WINS machine has %1 processors. It has %2 bytes of physical memory
+        It has %3 bytes of available memory for allocation.
+
+4289    Record with name (%1) could not replace another record in the db.
+        The Version number of the record is (%2). The version number of
+        record in db  is (%3)
+
+4290    WINS could not come up due to missing/corrupt database.
+        Restore the database using WINSADMN and then restart
+        WINS. If WINS still does not come up, start with a
+        fresh  copy of the database. To do this:
+
+        1) delete all the files
+           - system.mdb, winstmp.mdb files from the
+             %%SystemRoot%%\system32\wins directory.
+           - wins.mdb from the %%SystemRoot%%\system32 directory
+             or one that you selected through the Registry.
+           - jet*.log files from the %%SystemRoot%%\system32 directory
+             or one that you selected through the Registry.
+
+        2) copy %%SystemRoot%%\system32\system.mdb to
+           %%SystemRoot%%\system32\wins directory
+
+        3) net start wins
+
+Additional query words: rpl NBT NETBT
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : :3.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,64 @@
+DOCUMENT:Q130771  30-OCT-1999  [win3x]
+TITLE   :Cannot Use RAS or AWFAX with Hayes Accelerator Card Drivers
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Setup program for the Hayes ESP communications accelerator card causes
+Windows for Workgroups Remote Access Service (RAS) and At Work Fax to not
+install or work correctly.
+
+CAUSE
+=====
+
+The Hayes Setup program replaces the default Windows communications driver
+(COMM.DRV) with its own driver (ESP2_W31.DRV). In Windows 3.0, the Hayes driver
+is ESP2_W30.DRV.
+
+RESOLUTION
+==========
+
+You must disable the accelerator card to use RAS and At Work Fax. To do so,
+change the COMM.DRV= line in the [boot] section of the SYSTEM.INI file to:
+
+      COMM.DRV=COMM.DRV
+
+After you make this change, quit and then restart Windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

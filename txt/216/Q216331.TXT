@@ -1,0 +1,67 @@
+DOCUMENT:Q216331  06-FEB-1999  [foxpro]
+TITLE   :PRB: Pages of Page Frame Activate with Click When the PageFrame.
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbContainer kbCtrl kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Pages on a page frame may be activated with a mouse click when the Tabs property
+of the page frame has been set to .F. and no tabs are displayed on the object.
+This behavior does not occur if a form containing a PageFrame object is created
+programmatically.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Add a PageFrame object to the form.
+
+3. Set the Tabs property of the page frame to .F.
+
+4. Select Page1 of the page frame and add a label captioned "Page 1."
+
+5. Select Page2 of the page frame and add a label captioned "Page 2."
+
+6. Save and run the form.
+
+7. Click the left-mouse button in the upper-right hand corner of the PageFrame
+   Object, until the label captioned "Page 2" is displayed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

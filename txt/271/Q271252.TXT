@@ -1,0 +1,101 @@
+DOCUMENT:Q271252  31-JUL-2001  [homemm]
+TITLE   :Microsoft Reader: List of Keyboard Shortcuts
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.5
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader, version 1.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the keyboard shortcuts that are available in Microsoft
+Reader.
+
+MORE INFORMATION
+================
+
+You can use the following keyboard shortcuts in Microsoft Reader.
+
++-----------------------------------------------------------------------------+
+| Keystroke or key combination | Action                                       | 
++-----------------------------------------------------------------------------+
+| RIGHT ARROW                  | Page Forward                                 | 
++-----------------------------------------------------------------------------+
+| PAGE DOWN                    | Page Forward                                 | 
++-----------------------------------------------------------------------------+
+| SPACEBAR                     | Page Forward                                 | 
++-----------------------------------------------------------------------------+
+| LEFT ARROW                   | Page Backward                                | 
++-----------------------------------------------------------------------------+
+| PAGE UP                      | Page Backward                                | 
++-----------------------------------------------------------------------------+
+| ESC                          | Close a menu or a pagelet                    | 
++-----------------------------------------------------------------------------+
+| F5                           | Refresh (bookstore only)                     | 
++-----------------------------------------------------------------------------+
+| F11                          | Toggle between full-screen and windowed view | 
++-----------------------------------------------------------------------------+
+| CTRL+A                       | Select All (within text notes only)          | 
++-----------------------------------------------------------------------------+
+| CTRL+C                       | Copy (within text notes only)                | 
++-----------------------------------------------------------------------------+
+| CTRL+V                       | Paste (within text notes only)               | 
++-----------------------------------------------------------------------------+
+| CTRL+X                       | Cut (within text notes only)                 | 
++-----------------------------------------------------------------------------+
+| ALT+F4                       | Quit Reader                                  | 
++-----------------------------------------------------------------------------+
+
+You can use the following additional keyboard shortcuts when you listen to an
+Audible AudioBook in Microsoft Reader.
+
++-------------------------------------------------------------------------------+
+| Keystroke or key combination | Action                                         | 
++-------------------------------------------------------------------------------+
+| CTRL+B                       | Set a bookmark within an AudioBook             | 
++-------------------------------------------------------------------------------+
+| CTRL+SHIFT+R                 | Return to the previous section in an AudioBook | 
++-------------------------------------------------------------------------------+
+| CTRL+R                       | Rewind within an AudioBook                     | 
++-------------------------------------------------------------------------------+
+| CTRL+P                       | Stop playback of an AudioBook                  | 
++-------------------------------------------------------------------------------+
+| CTRL+F                       | Move forward within an AudioBook               | 
++-------------------------------------------------------------------------------+
+| CTRL+SHIFT+F                 | Go to the next section in an AudioBook         | 
++-------------------------------------------------------------------------------+
+| CTRL+U                       | Increase sound volume                          | 
++-------------------------------------------------------------------------------+
+| CTRL+D                       | Decrease sound volume                          | 
++-------------------------------------------------------------------------------+
+
+Additional query words: reader msreader ebook audio book hotkey
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbReaderSearch kbReader150
+Version           : :1.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

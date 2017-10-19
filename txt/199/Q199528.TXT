@@ -1,0 +1,105 @@
+DOCUMENT:Q199528  04-MAY-2001  [visualc]
+TITLE   :BUG: CEPC Mouse Driver Moves Cursor Erratically
+PRODUCT :Microsoft C Compiler
+PROD/VER:N\A:2.11,2.12; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbVC500bug kbOSWinCEsearch kbOSWinCE211bug kbOSWinCE212bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0 
+ - Microsoft Windows CE Platform Builder, versions 2.11, 2.12 
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The mouse cursor on the PC-based reference platform (CEPC) may move erratically
+on some hardware combinations or if the mouse is moved while the system is
+starting (on any hardware platform).
+
+CAUSE
+=====
+
+Mouse movement data arrives in fixed-length packets from the mouse hardware. If
+the alignment of the packets in the data stream becomes out of sync with the
+alignment the driver is expecting, the driver will misinterpret the mouse data.
+For example, movement information will be interpreted as button status, and
+button status will be interpreted as movement data.
+
+The KBDMOUSE driver in Windows CE 2.11 for the x86 CEPC platform does contain
+code to resynchronize the mouse packets. However, due to a code defect, this
+part of the mouse driver does not function as intended.
+
+RESOLUTION
+==========
+
+The following modification to the KBDMOUSE sample driver will correct the
+problem.
+
+In Ps2mouse.cpp, modify the function Ps2Mouse::IsrThreadProc as follows:
+
+1. Remove, in its entirety, the first if/else clause that follows the
+   wait_for_interrupt label.
+
+2. Modify the next if statement to read as follows:
+
+   if ( WaitForSingleObject(m_hevInterrupt, (cBytes == 0) ? INFINITE : INPACKET_TIMEOUT) == WAIT_TIMEOUT )
+   			{
+   			cBytes = 0;
+   			goto wait_for_interrupt;
+   			}
+
+3. Remove references to variables bInPacket and cmsInPacketTimeout.
+
+4. Modify Ps2mouse.hpp to include:
+
+   #define INPACKET_TIMEOUT  50
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. The correction to this problem is given in the
+RESOLUTION section of this article.
+
+MORE INFORMATION
+================
+
+Mouse data arrives from the device in 3-byte packets. Each packet contains x and
+y movement data and a button-status byte. The mouse driver must synchronize the
+data at mouse reset and then keep a count of 3-byte packets.
+
+The synchronization problem in the CEPC KBDMOUSE sample driver occurs when the
+mouse port has data in the input buffer after the mouse is initialized. This
+data is interpreted as the first byte of a mouse data packet, and so the first 2
+bytes of the next mouse packet are interpreted as the second and third bytes of
+a packet. All subsequent packets are misinterpreted in the same way.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbVC500bug kbOSWinCEsearch kbOSWinCE211bug kbOSWinCE212bug 
+Technology        : kbAudDeveloper kbSDKSearch kbWinCEETKSearch kbWinCESDKSearch kbWinCESearch kbWinCESDK211 kbWinCESDK212 kbWinCEEnh210ETKVC500 kbWinCEETKVC500
+Version           : N\A:2.11,2.12; WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

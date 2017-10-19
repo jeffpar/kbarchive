@@ -1,0 +1,63 @@
+DOCUMENT:Q240351  04-SEP-1999  [homegame]
+TITLE   :NBA Inside Drive 2000: How to Enable 3D Acceleration
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Microsoft NBA Inside Drive 2000 for the first time, the game
+automatically starts in software mode. To improve the performance of graphics in
+NBA Inside Drive 2000, you can enable 3D Acceleration in the game if a 3D
+accelerator card is installed in your computer.
+
+To enable 3D Acceleration in NBA Inside Drive:
+
+1. On the startup screen, click Options.
+
+2. Click the Video tab.
+
+3. Under 3D Graphics Driver, click Primary Display Driver or your 3D
+   acceleration card, and then click OK.
+
+If you click Primary Display Driver or your 3D acceleration card and nothing
+appears under 3D Graphics Device, you must play the game in software mode.
+
+MORE INFORMATION
+================
+
+If you play NBA Inside Drive 2000 in software mode, parts of the court or crowd
+may warp or change shape.
+
+Additional query words: 1.00 msgame nba2000 nba2k basketball
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame 
+Technology        : kbGamesSearch kbNBAInsideDrive2000
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

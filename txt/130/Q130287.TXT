@@ -1,0 +1,65 @@
+DOCUMENT:Q130287  17-DEC-2000  [win95x]
+TITLE   :Spell-Checking Options in Microsoft Exchange
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Microsoft Word for Windows NT, Word makes available to Windows
+95 a spell-checking tool that you can access by clicking Options on the Tools
+menu. By default, all the options for the spell-checking tool are disabled.
+
+The options for spell-checking in Word for Windows NT are:
+
+ - Always suggest replacements for misspelled words.
+
+ - Always check spelling before sending.
+
+You can select certain words for the spell-checking tool to ignore:
+
+ - Words in uppercase letters.
+
+ - Words with numbers.
+
+ - The original text in a reply or forward.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange for Windows 95 does not include a spell-checking tool.
+However, Microsoft Exchange can use any 32-bit spell-checking tool that is
+correctly registered. Microsoft Exchange cannot use 16-bit spell-checking tools
+unless they are written specifically for Microsoft Exchange.
+
+The Microsoft Mail client also does not supply a spell-checking tool, but it can
+use any correctly registered spell-checking tool.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

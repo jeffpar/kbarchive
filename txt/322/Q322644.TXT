@@ -1,0 +1,110 @@
+DOCUMENT:Q322644  22-MAY-2002  [winnt]
+TITLE   :Remote Administration Using TNADMIN with -S, -K, or -M Fails
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using Windows Services for UNIX 2.0, and you use the tnadmin command
+with either the -s, the -k, or the -m parameter to remotely administer a Telnet
+server that is running Windows Services for UNIX 3.0, the command may not work.
+Alternatively, this command may not work if you are using Windows Services for
+UNIX 3.0 to administer a Telnet server that is running Windows Services for UNIX
+2.0 or if you are using Windows Services for UNIX 2.0 to administer a Telnet
+server that is running Windows Services for UNIX 2.0.
+
+CAUSE
+=====
+
+This problem occurs because of changes to Telnet Server that occur if you apply
+the Q301514 hotfix that is described in the following Microsoft Knowledge Base
+article:
+
+   Q301514 Memory Leak in Telnet Server
+
+RESOLUTION
+==========
+
+To resolve this issue, apply the Q301514 hotfix that is described in the
+preceding section to all computers that are running Windows Services for UNIX
+2.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The usage requirements for the following tnadmin command parameters have
+changed:
+
+ - -s: List sessions
+ - -k: Kill sessions
+ - -m: Send message
+
+The Q301514 hotfix includes security fixes that affect how these parameters are
+used. To use these parameters, you must be an administrator on the remote
+computer. If you use a parameter other than the parameters that are described in
+this section with the tnadmin command, you can pass credentials on the command
+line; however, the parameters that are described in this section do not allow
+you to pass credentials because of security limitations.
+
+Operational Functionality
+-------------------------
+
+ - If you are using Windows Services for UNIX 2.0 without the hotfix to
+   administer a server that is running Windows Services for UNIX 2.0 with the
+   hotfix, the tnadmin command with any of the parameters described in the
+   "Summary" section of this article does not work.
+
+ - If you are using Windows Services for UNIX 2.0 without the hotfix to
+   administer a server that is running Windows Services for UNIX 3.0, the
+   tnadmin command with any of the parameters described in the "Summary" section
+   of this article does not work.
+
+ - If you are using Windows Services for UNIX 2.0 with the hotfix to administer
+   a server that is running Windows Services for UNIX 2.0 with the hotfix, the
+   tnadmin command with any of the parameters described in the "Summary" section
+   of this article works as expected.
+
+ - If you are using Windows Services for UNIX 2.0 with the hotfix to administer
+   a server that is running Windows Services for UNIX 3.0, the tnadmin command
+   with any of the parameters described in the "Summary" section of this article
+   works as expected.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch kbWinServiceUNIX300
+Version           : :2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

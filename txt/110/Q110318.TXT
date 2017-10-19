@@ -1,0 +1,69 @@
+DOCUMENT:Q110318  25-SEP-1999  [win3x]
+TITLE   :WFWG 3.11 Err Msg: General Protection Fault in WFWSETUP.DLL
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade to Windows for Workgroups 3.11, you may receive the following
+error message:
+
+   General Protection fault in WFWSETUP.DLL
+
+If you choose OK, you may receive a general protection (GP) fault in USER.EXE and
+then the following error message may be displayed:
+
+   Standard Mode: Bad Fault in MS-DOS Extender.
+   Fault: 000D Stack Dump: 0000 0000 0070
+   Raw fault frame: EC=0000 IP=5EF7 CS=03AF FL=3087 SP=FFEE SS=02DF
+
+CAUSE
+=====
+
+The GP fault occurs because of the number and size of .INF files. Windows for
+Workgroups Setup loads the variable strings (information to the right of the
+equal sign) for all of the .INF files when it starts. If the size of the
+variables in all the .INF files exceeds the 32-kilobyte (K) stack allocated for
+.INF file variables, you receive a GP fault.
+
+RESOLUTION
+==========
+
+To correct this problem, rename (or delete) some of the additional .INF files in
+the Windows SYSTEM subdirectory to filenames with extensions other than .INF.
+After you have deleted or renamed the files, restart Setup.
+
+NOTE: Never rename or delete the SETUP.INF file in this subdirectory.
+
+Additional query words: 3.11 setup boundary exceeded
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

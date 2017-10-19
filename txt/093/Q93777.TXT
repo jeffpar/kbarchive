@@ -1,0 +1,57 @@
+DOCUMENT:Q93777  23-NOV-1999  [msdos]
+TITLE   :Corrupt Swap File Warning After Removing Compressed Drive
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0; WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive a corrupt swap file warning message from Windows after you remove a
+compressed drive.
+
+CAUSE
+=====
+
+Because you remove a compressed drive manually, DoubleSpace cannot update
+permanent or temporary swap file settings in SYSTEM.INI or SPART.PAR. Drive
+letters change resulting in the corrupt swap file warning because Windows cannot
+find the swap file.
+
+RESOLUTION
+==========
+
+To restore your swap file settings, run the 386 Enhanced icon from Control
+Panel.
+
+Additional query words: 6.00 3.00 3.00a 3.10 double space err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0; WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

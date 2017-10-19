@@ -1,0 +1,58 @@
+DOCUMENT:Q121950  01-APR-2002  [visualc]
+TITLE   :HOWTO: Detect an Empty CRecordset Object
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.5,1.51,4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, versions 1.5, 1.51 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 4.0, 4.1, 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, versions 4.0, 4.2, 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The CRecordset represents a set of records obtained from a data source through a
+query. If no records from the data source match the query, there will be no
+records in the record set object so CRecordset::IsEOF and CRecordset::IsBOF both
+return a nonzero value. A query is executed during calls to CRecordset::Open and
+CRecordset::Requery, so empty record sets can be detected calling
+CRecordset::IsEOF and/or CRecordset::IsBOF after executing a query.
+
+REFERENCES
+==========
+
+This behavior is described in the documentation for CRecordset::IsEOF and
+CRecordset::IsBOF.
+
+Additional query words: empty recordset MfcDatabase kbprg
+
+======================================================================
+Keywords          : kbDatabase 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.5,1.51,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

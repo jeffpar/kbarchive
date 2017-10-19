@@ -1,0 +1,47 @@
+DOCUMENT:Q97814  30-JUL-2001  [lanman]
+TITLE   :Interfaces Allowing Direct LAN Man Connection to HP
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+For Hewlett-Packard (HP) LaserJet II, IID, III, and IIID printers that work with
+LAN Man, the following are interfaces that allow direct connection:
+
+Number         Network Type
+------         ------------
+
+C2071C         802.3 Thin EtherNet
+C2071D         802.3 10Base-T
+C2071F         802.5 (4 and 16 Mbps)
+
+Install the interface in the optional I/O slot on the printer's back panel.
+
+Reference(s):
+
+For additional HP product information, call 208-344-4809 (in the U.S. only).
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

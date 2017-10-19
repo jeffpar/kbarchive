@@ -1,0 +1,75 @@
+DOCUMENT:Q180523  31-DEC-1999  [iis]
+TITLE   :Ifilttst.exe & Ifilttst.ini Files Missing from IFilter Document
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The January 1998 MSDN Library and Platform Software Development Kit (SDK)
+contains documentation on programming with the IFilter interface. The
+documentation mentions a tool that will verify an IFilter implementation. The
+tool consists of two files: Ifilttst.exe and Ifilttst.ini. These files were not
+included with the documentation.
+
+RESOLUTION
+==========
+
+You can get the missing files by downloading the IFilter SDK from the following
+location:
+
+   http://msdn.microsoft.com/library/psdk/indexsrv/ixufilt_9279.htm
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Internet
+Information Server version 4.0.
+
+MORE INFORMATION
+================
+
+Documentation on the IFilter interface test tool is located in the Platform SDK
+documentation at the following location:
+
+   
+
+   Internet/Internet/Extranet Services
+    Indexing Service
+        Indexing Service Filter Implementation
+            Filter Examples
+                IFilter Test Suite
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

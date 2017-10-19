@@ -1,0 +1,70 @@
+DOCUMENT:Q120607  17-DEC-2000  [win95x]
+TITLE   :Cannot Browse If No SMB Server Exists in Your Workgroup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can browse only Novell NetWare servers in your workgroup.
+
+CAUSE
+=====
+
+Windows 95 does not support browsing in a workgroup that does not contain an SMB
+server.
+
+RESOLUTION
+==========
+
+If your workstation is in a workgroup containing no SMB servers, follow these
+steps:
+
+1. Click the Start button, point to Settings, then click Control Panel.
+
+2. Double-click the Network icon.
+
+3. Click the Identification tab.
+
+4. In the Workgroup box, enter the name of a workgroup that contains an SMB
+   server.
+
+5. Click OK.
+
+These steps enable you to browse SMB servers in other workgroups.
+
+Note that this creates two workgroups with the same name in Network Neighborhood.
+One workgroup displays "Microsoft file and print" and the other displays
+"Microsoft file and print services for NetWare."
+
+Additional query words: admin administrator netadmin
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

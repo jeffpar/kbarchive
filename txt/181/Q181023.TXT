@@ -1,0 +1,78 @@
+DOCUMENT:Q181023  09-AUG-2001  [winnt]
+TITLE   :Migration Tool for Netware Err Msg: Unable to locate DLL
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetworkkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to run the Migration Tool for NetWare (NWConv.exe), you may
+receive the following error message:
+
+   NWCONV.EXE - Unable to locate DLL
+   The dynamic link library NWAPI32.DLL could not be found in the
+   specified path Drive:\<systemroot>\system32
+
+NOTE: The path in the error message differs depending on the path variable on
+your computer running Windows NT.
+
+CAUSE
+=====
+
+This behavior can occur if Gateway Services for NetWare (GSNW) is not installed
+on this computer running Windows NT Server.
+
+RESOLUTION
+==========
+
+To successfully run the Migration Tool for NetWare, install GSNW on your
+computer running Windows NT Server. To install GSNW, follow these steps:
+
+1. Click Start, click Settings, click Control Panel, and then double-click
+   Network.
+
+2. Click the Services tab, click Add, and then double-click Gateway (and Client)
+   Services for NetWare.
+
+3. When prompted, provide the location of your Windows NT Server source files.
+
+4. Restart your computer when prompted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+Additional query words: NWCONV Migrate convert
+======================================================================
+Keywords          : kberrmsg kbnetwork kbfaq
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

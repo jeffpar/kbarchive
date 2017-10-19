@@ -1,0 +1,83 @@
+DOCUMENT:Q150420  20-FEB-2002  [winnt]
+TITLE   :Err: Win16 Subsystem Unable to Enter Protected Mode
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to access a 16-bit application from Windows NT and are using
+Fprot.exe, the following error message is displayed:
+
+   The Win16 Subsystem was unable to enter Protected Mode, DOSX.EXE must be in
+   your AUTOEXEC.NT and present in your PATH.
+
+CAUSE
+=====
+
+Fprot.exe inadvertently changes the file's attributes to read/hidden/system
+attributes. The following may be affected:
+
+ - WINNTxx
+
+ - WINNTxx\SYSTEM
+
+ - WINNTxx\SYSTEM32
+
+ - WINNTxx\SYSTEM32\DRIVERS
+
+ - WINNTxx\SYSTEM32\REPAIR
+
+RESOLUTION
+==========
+
+Compare the damaged system with a fresh install of NT on a second computer and
+reset the attributes with either the "attrib" command or File Manager.
+
+
+MORE INFORMATION
+================
+
+ATTRIB [+R | -R] [+A | -A ] [+S | -S] [+H | -H] [[drive:] [path] filename]
+[/S]
+
++   Sets an attribute.
+-   Clears an attribute.
+R   Read-only file attribute.
+A   Archive file attribute.
+S   System file attribute.
+H   Hidden file attribute.
+/S  Processes files in all directories in the specified path.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

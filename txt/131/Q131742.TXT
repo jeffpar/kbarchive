@@ -1,0 +1,70 @@
+DOCUMENT:Q131742  17-DEC-2000  [win95x]
+TITLE   :DLL Files in the HyperTerminal Folder
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you open the HyperTerminal folder, you may see the following files in
+addition to the HYPERTERM.EXE file and any previously created connectoids:
+
+ - HTICONS.DLL
+
+ - HYPERTRM.DLL
+
+MORE INFORMATION
+================
+
+If you have selected the Show All Files option for the HyperTerminal window, all
+the files in the folder are displayed, regardless of their extensions. If you do
+not want to see these files, follow these steps:
+
+1. On the View menu, click Options.
+
+2. Click the View tab.
+
+3. Click the Hide Files Of These Types option button.
+
+4. Click OK.
+
+CAUTION: Do not remove the DLL files. Doing so will cause HyperTerminal to not
+function.
+
+The DLL files in the HyperTerminal folder have the following functions:
+
+   File           Function
+   ------------------------------------------------
+   HTICONS.DLL    Contains the connectoid icons
+   HYPERTRM.DLL   Is the main DLL for HyperTerminal
+
+Additional query words: terminal hyperterm
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

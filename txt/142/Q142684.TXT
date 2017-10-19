@@ -1,0 +1,62 @@
+DOCUMENT:Q142684  08-AUG-2001  [winnt]
+TITLE   :NetworkAddress Parameter Not Supported for a Modem
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51 4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Assigning a specific media access control address with the parameter
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NdisWAN\Parameters\ 
+NetworkAddress
+
+for the modem used for a RAS connection is not supported. Every time a RAS
+connection is made, the assigned media access control address is set randomly.
+
+
+CAUSE
+=====
+
+There are two reasons why assigning a specific media access control address is
+not supported. The first reason is that a modem uses Serial.sys, and serial is
+not a device that NetworkAddress is relative to. The second reason is that the
+NetworkAddress registry override parameter is an optional value that is enforced
+only for Token Ring. So, if Serial.sys supported the NetworkAddress parameter,
+assigning a specific media access control address could be done. However, this
+would get more complicated with multiple serial devices in a machine. So,
+although a modem is a WAN device, it does not use a network device driver, which
+is where the optional NetworkAddress registry override parameter would be
+managed.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

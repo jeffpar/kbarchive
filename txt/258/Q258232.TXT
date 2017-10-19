@@ -1,0 +1,82 @@
+DOCUMENT:Q258232  08-AUG-2001  [winnt]
+TITLE   :Cannot Run Delprof.exe Against Remote Computers on the Network
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbtool kbWin2000FixNoSP
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run Delprof.exe against a remote computer on the network, the
+tool may not work.
+
+CAUSE
+=====
+
+This behavior can occur when the remote computer name includes a hyphen or a
+space.
+
+RESOLUTION
+==========
+
+To resolve this behavior, upgrade your computer to Microsoft Windows 2000.
+
+WORKAROUND
+==========
+
+To work around this behavior, change the remote computer name so that it does
+not contain a hyphen or a space.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Delprof.exe is included in the Microsoft Windows NT 4.0 Resource Kit.
+
+When you start Delprof.exe from a command prompt and run it against a remote
+computer whose name contains a hyphen or a space, one of the following behaviors
+may occur:
+
+ - If you do not type "DELPROF" (without the quotation marks) in capital
+   letters, Delprof.exe causes the online help to appear.
+
+ - If you type "DELPROF" (without the quotation marks) in capital letters, the
+   tool may run but you are prompted to delete profiles on the local computer
+   instead of the remote computer.
+
+Additional query words: profile
+
+======================================================================
+Keywords          : kbtool kbWin2000FixNoSP 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

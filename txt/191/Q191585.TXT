@@ -1,0 +1,90 @@
+DOCUMENT:Q191585  11-DEC-1999  [foxpro]
+TITLE   :PRB: File Collections' Add Method Closes Table
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Invoking a file collections' Add method to add a table to a project object
+causes the table to close.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This behavior also occurs in the user interface. If you add an open table to a
+project, Visual FoxPro closes the open table.
+
+The following code programmatically demonstrates this behavior. The IIF()
+statement checks if the table is open and returns a message based on the
+results.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Sample Code
+-----------
+
+      CLOSE ALL
+      CLEAR ALL
+      CLEAR
+      DELETE FILE test.pj?
+      SET SAFETY OFF
+
+      CREATE TABLE testtable (field1 c(10), field2 m)
+
+      LOCAL ;
+         loFIle
+      USE testtable
+      ? IIF(USED("TestTable"), "Test Table is Open!", "Test Table is NOT ;
+      Open!")
+      MODIFY PROJECT test NOWAIT NOSHOW
+      loFIle = APPLICATION.ACTIVEPROJECT.FILES.ADD("TestTable.Dbf")
+
+      IF VARTYPE(loFIle) = "O"
+         WAIT WINDOW "File Added!" TIME 1
+      ELSE
+         WAIT WINDOW "File Not Added!" TIME 1
+      ENDIF
+
+      ? IIF(USED("TestTable"), "Test Table is Still Open!", ;
+       "Test Table is NOT still Open!")
+      APPLICATION.ACTIVEPROJECT.CLOSE()
+
+Additional query words: kbVFp600 kbProjManager
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

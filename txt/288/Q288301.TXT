@@ -1,0 +1,85 @@
+DOCUMENT:Q288301  08-AUG-2001  [winnt]
+TITLE   :Server Drops All Connections, System Logs Multiple Event 2000
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+At random intervals, the server may drop all connections, and no new connections
+can be established. Administrators can log on to the local computer, but Server
+Manager is not displayed correctly. Multiple instances of Event ID 2000 may be
+recorded in the System event log, with this error message:
+
+   Event ID: 2000
+   Source: Srv
+   Description: The server's call to a system service failed unexpectedly.
+
+   0000: 00040000 00540001 00000000 c00007d0
+   0010: 00000000 c0000054 00000000 00000000
+   0020: 00000000 00000000 05930bd3
+
+CAUSE
+=====
+
+This behavior can occur when you have an early version of the Cheyenne Open File
+Agent program installed.
+
+RESOLUTION
+==========
+
+To resolve this behavior, obtain and install the latest version of Open File
+Agent.
+
+WORKAROUND
+==========
+
+To work around this behavior, remove the Cheyenne Open File Agent program.
+
+MORE INFORMATION
+================
+
+For more information about the latest version of Open File Manager, contact St.
+Bernard Software.
+
+For information about how to contact St. Bernard Software, click the appropriate
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

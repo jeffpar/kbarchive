@@ -1,0 +1,71 @@
+DOCUMENT:Q94867  23-NOV-1999  [msdos]
+TITLE   :Err Msg after Running MemMaker: Double-Buffering Driver...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a device= statement for SMARTDRV.EXE in your CONFIG.SYS file, but
+you are not using the /DOUBLE_BUFFER switch, MemMaker may change the device=
+statement to devicehigh=. If so, you receive the following error message:
+
+   Double-buffering driver cannot be loaded into a UMB. Do not use the
+   devicehigh command or other load-high utilities to load Smartdrv.exe
+
+CAUSE
+=====
+
+MemMaker recognizes and ignores the device= statement for SMARTDRV.EXE only if
+you are using the /DOUBLE_BUFFER switch.
+
+A device= statement in the CONFIG.SYS file does not load the SMARTDrive cache; it
+loads only the double-buffering device driver embedded in the SMARTDRV.EXE file.
+This device driver cannot be loaded into upper memory.
+
+WORKAROUND
+==========
+
+To correct this problem, in the CONFIG.SYS file, change the devicehigh=
+statement for SMARTDRV.EXE to device= and add the /DOUBLE_BUFFER switch, then
+run MemMaker again.
+
+MORE INFORMATION
+================
+
+For more information on SMARTDrive and double buffering, query on the following
+words in the Microsoft Knowledge Base:
+
+   smartdrive and double and buffer and bus and mastering
+
+Additional query words: 6.22 6.00 line smart drive memaker 6.2
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

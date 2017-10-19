@@ -1,0 +1,130 @@
+DOCUMENT:Q179148  16-MAY-2002  [iis]
+TITLE   :Settings May Not Be Applied with URL with Short Filename
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT4sp6fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Personal Web Server version 4.0 for NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft has been made aware of an issue in Internet Information Server (IIS)
+4.0 and Personal Web Server (PWS) 4.0 in which certain configuration settings
+may not be applied when a URL with short file name equivalents is requested.
+These configuration setting include restricting access by IP address, PICS
+ratings, and requiring SSL encryption. Windows NT file permissions (ACLs) are
+not affected.
+
+Users are able to access certain directories or files through IIS 4.0 or PWS 4.0
+and bypass specific security settings, such as SSL encryption.
+
+CAUSE
+=====
+
+The Windows NT and Windows 95 file systems (FAT, FAT32, and NTFS) support file
+names of up to 255 characters. To maintain compatibility with older, non 32-bit
+applications, a short file name (called the 8.3 file name) is created for each
+file. This short file name equivalent is used by older applications to access
+directories and files with long names. IIS 4.0 and PWS 4.0 maintain certain
+configuration information about directories and files in a database called the
+metabase. The metabase does not contain file permissions, but rather Web
+server-specific information such as requiring SSL encryption, proxy cache
+setting, and PICS ratings. Actual file and directory permissions are enforced by
+NTFS and are not affected by this problem.
+
+In certain cases when a URL is requested using the short file name, it is
+possible that configuration properties specified in the metabase may not be
+applied as expected. This issue only occurs where long file names are used for
+directories or files, and specific metabase configuration properties are set on
+those directories or files. File permissions by a user or group using NTFS
+access control lists (ACL) are not affected.
+
+RESOLUTION
+==========
+
+Windows NT Server or Workstation 4.0
+------------------------------------
+
+NOTE: The supported fix is for IIS and PWS on Windows NT Workstation. A fix for
+PWS on Microsoft Windows 95 is still pending.
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or the
+individual software update. For information on obtaining the latest service
+pack, please go to:
+
+ - http://www.microsoft.com/Windows/ServicePacks/
+
+-or-
+
+ - Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+For information on obtaining the individual software update, contact Microsoft
+Product Support Services. For a complete list of Microsoft Product Support
+Services phone numbers and information on support costs, please go to the
+following address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT Server
+4.0, Terminal Server Edition. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Windows NT Server version 4.0, Terminal Server Edition Service Pack 6.
+
+MORE INFORMATION
+================
+
+After you apply the fix, if an 8.3 file or directory name for an equivalent long
+file or directory name is used in the URL, the following message occurs:
+
+   HTTP Error 404
+   404 Not Found
+   The Web server cannot find the file or script you asked for. Please check the
+   URL to ensure that the path is correct.
+   Please contact the server's administrator if this problem persists.
+
+
+Additional query words: 8.3 tilde
+
+======================================================================
+Keywords          : kbWinNT4sp6fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbiisSearch kbiis400 kbPersWebServSearch kbZNotKeyword3 kbPersWebServ400NTW400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

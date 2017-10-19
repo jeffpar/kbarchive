@@ -1,0 +1,67 @@
+DOCUMENT:Q104058  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Date Bold When Viewing Other's Appointment Book
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With versions 1.0 and 1.0a of Microsoft Schedule+ for Windows, if a user has an
+appointment that is both private and tentative, the appointment date on the
+calendar is bold when you view the calendar by choosing Open Other's Appt. Book
+from the File menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 1.0 and 1.0a of
+Microsoft Schedule+ for Windows. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If an appointment is both private and tentative, you cannot see the appointment
+listed in the appointment view list; therefore, the appointment should not
+appear bold on the calendar when you view it.
+
+Private appointments appear bold on the calendar and you can view the
+appointment, but you cannot see the details of the appointment.
+
+Tentative appointments appear bold on the calendar and the appointment appears as
+tentative (grayed), but you can view the details of the appointment.
+
+NOTE: This problem also occurs with recurring appointments.
+
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

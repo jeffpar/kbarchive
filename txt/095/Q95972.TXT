@@ -1,0 +1,59 @@
+DOCUMENT:Q95972  08-NOV-1999  [pcmail]
+TITLE   :PC Ext: Dispatch Cannot Spawn External with Break Options
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Dispatch tries to spawn External as an idle process and then Dispatch aborts the
+idle process and reports:
+
+   external -btxx:xx:xx terminated with exit code -1
+
+If specified, -bt will be replaced with -bdxx-xx-xx.
+
+CAUSE
+=====
+
+The command line for External contains break time options -bt or -bd. Dispatch
+appends a break relative time to the idle process command line automatically;
+thus, it cannot resolve the proper break time if -bt or -bd is already
+specified.
+
+RESOLUTION
+==========
+
+To correct this problem, do not run External with a defined break time.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q71126  10-DEC-1999  [win95x]
+TITLE   :Windows Only Supports Okidata LaserLine 6 with 512K Memory
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Windows HPPCL printer driver supports the Okidata LaserLine 6 directly with
+512K of printer memory only. However, Okidata has confirmed that the printer was
+shipped with a standard 128K of internal memory.
+
+It has been reported that using the LaserLine 6, with the HPPCL driver, with only
+the standard 128K results in inaccurate page formatting.
+
+MORE INFORMATION
+================
+
+There are two possible solutions to this problem:
+
+ - Instead of installing for the LaserLine 6, install for an HP LaserJet with
+   128K. Both use the same HPPCL driver. This results in proper output; however,
+   the LaserLine 6's internal helvetica fonts are not available.
+
+-or-
+
+ - Contact Okidata and purchase the memory upgrade kit (#7000-9201).
+
+NOTE: Okidata has discontinued production of this printer.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty windrvr
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

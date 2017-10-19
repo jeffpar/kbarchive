@@ -1,0 +1,58 @@
+DOCUMENT:Q157130  13-JAN-2000  [exchange]
+TITLE   :XCLN: Error Message From MS-DOS Client on Diskless Workstation
+PRODUCT :Microsoft Exchange
+PROD/VER:MS-DOS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange MS-DOS client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Exchange MS-DOS client on a Novell Diskless
+workstation, the following error message might be displayed when you attempt to
+start the client:
+
+   The MS Exchange directory service could not be opened. A network error has
+   occurred. Quit and Restart MS Exchange.
+
+CAUSE
+=====
+
+This error occurs because the workstation does not have a C:\ drive.
+
+WORKAROUND
+==========
+
+You can workaround this problem by mapping a network share to drive letter C.
+This can be automated in your Novell logon script.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword3 kbExchange400DOS
+Version           : MS-DOS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

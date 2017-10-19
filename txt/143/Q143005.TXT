@@ -1,0 +1,57 @@
+DOCUMENT:Q143005  07-SEP-2001  [powerpt]
+TITLE   :Limited Printing Capabilities of 32-bit PowerPoint Viewer.
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbprint kbviewer kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+You can use the 32-bit PowerPoint Viewer to print a presentation. Note, however,
+that when you print from PowerPoint Viewer, you have fewer print options that
+you do in PowerPoint.
+
+MORE INFORMATION
+================
+
+When you use PowerPoint Viewer to print a presentation, you can only print
+slides (you can't print notes, handouts, or outline pages). Also, PowerPoint
+Viewer prints all of the slides in a presentation. In addition, if you print to
+a black and white printer, the slides are printed in black and white view.
+
+Note that even though the Print dialog box in PowerPoint Viewer has buttons for
+printing a partial slide range, the buttons are unavailable.
+
+Additional query words: 7.00 pptview pp32view ppt95 ppt7 greyed out grayed dimmed dim
+
+======================================================================
+Keywords          : kbprint kbviewer kbPrinting 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

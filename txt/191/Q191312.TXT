@@ -1,0 +1,56 @@
+DOCUMENT:Q191312  17-DEC-2000  [win95x]
+TITLE   :Conflicts Visible in Device Manager But Devices Work Correctly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbdisplay kbtool kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view your computer's system devices or video adapter in Device Manager,
+you may see a red X through a device's icon, or an exclamation point in a yellow
+circle next to the device's icon. Note that this may occur even if all of your
+computer's devices are working correctly.
+
+CAUSE
+=====
+
+This issue can occur if you are using an Accelerated Graphics Port (AGP) video
+adapter. Because Windows 95 was developed prior to AGP video technology, AGP
+video adapters may cause resource conflicts to appear in Device Manager.
+
+MORE INFORMATION
+================
+
+These types of resource conflicts do not normally affect your computer's
+functionality.
+
+======================================================================
+Keywords          : kbdisplay kbtool kbui win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

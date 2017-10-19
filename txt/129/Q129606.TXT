@@ -1,0 +1,66 @@
+DOCUMENT:Q129606  17-DEC-2000  [win95x]
+TITLE   :Lightly Colored Helvetica Text Not Printed Correctly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document that contains lightly colored Helvetica text with a
+color background to a Hewlett-Packard PaintJet XL 300, the text is not printed
+correctly and is unreadable.
+
+CAUSE
+=====
+
+The Helvetica font files are not installed on your computer. When you print the
+document, Windows 95 is forced to substitute the Univers printer font for the
+Helvetica font. The Univers text is printed before the color background, causing
+the text to be unreadable if it is a lighter color than the background.
+
+RESOLUTION
+==========
+
+To work around this behavior, use either of the following methods:
+
+ - Make sure that the Helvetica font files are installed.
+
+ - Change the Helvetica text in the document to another font, such as Arial.
+
+STATUS
+======
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that it is not caused by a problem in Windows 95.
+
+
+Additional query words: xl300 unidrv hp
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

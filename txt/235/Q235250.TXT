@@ -1,0 +1,113 @@
+DOCUMENT:Q235250  20-MAY-2002  [winnt]
+TITLE   :I/O May Be Performed at the Wrong Offset with Large Files
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT4sp6fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Certain file read or write operations (also known as input/output, or I/O
+operations) may be performed at incorrect locations within a file that is larger
+than 4 gigabytes (GB) in size.
+
+For this problem to occur, I/O operations must be cached and asynchronous.
+Unbuffered, synchronous operations are not susceptible to the problem described
+in this article.
+
+This problem can occur only when two I/O operations are performed in close
+succession if the first operation is above the 4-GB mark and the second
+operation is at the same offset (modulo 4 GB), below the 4-GB mark.
+
+For example, if the first operation is performed at offset 4,295,032,832
+(0x100010000 hex) and the second is performed at offset 65,536 (0x10000 hex),
+the second I/O operation may actually take place at the first offset.
+
+CAUSE
+=====
+
+In an attempt to improve performance, the cache manager attempts to perform
+32-bit operations when performing certain lookup operations. 64-bit operations
+are more time consuming, but are required when file offsets are large enough
+that they cannot be represented in 32 bits. The problem described in this
+article occurs because the cache manager occasionally errs and performs 32-bit
+arithmetic when 64-bit arithmetic is required.
+
+RESOLUTION
+==========
+
+Windows NT Server or Workstation 4.0
+------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or the
+individual software update. For information on obtaining the latest service
+pack, please go to:
+
+ - http://www.microsoft.com/Windows/ServicePacks/
+
+-or-
+
+ - Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+For information on obtaining the individual software update, contact Microsoft
+Product Support Services. For a complete list of Microsoft Product Support
+Services phone numbers and information on support costs, please go to the
+following address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT Server
+4.0, Terminal Server Edition. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition.
+
+This problem was first corrected in Windows NT Server 4.0 Service Pack 6 and
+Windows NT Server 4.0, Terminal Server Edition Service Pack 6.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT4sp6fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,85 @@
+DOCUMENT:Q146332  08-AUG-2001  [winnt]
+TITLE   :Display Driver May Not Reset Refresh Rate During Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+There are video drivers in Windows NT 4.0 which do not properly switch back to
+standard VGA mode (640 x 480, 16 colors, 60 Hz) after you test a different
+display mode. This only happens when the display mode tested has the same
+resolution as your current display mode but a higher refresh rate. The driver
+does not switch back to 60 Hz and may cause problems with monitors that do not
+support higher frequencies.
+
+This has been observed with the Cirrus 5428, Matrox Impression, and Matrox
+Millennium drivers.
+
+RESOLUTION
+==========
+
+NOTE: Turn off the monitor so it is not damaged.
+
+If this is happening during Setup, it is OK to turn the computer off and then
+turn it back on. If you want to preserve the settings you made, you can try to
+complete Setup by pressing Y when you are prompted whether you saw the display.
+Then you need to press ENTER twice. After several minutes, Setup should be
+completed and you can press ENTER to restart the computer. If you have specified
+that you want to create an Emergency Repair Disk (ERD), you need to insert the
+disk in the floppy disk drive and press ENTER two additional times. You should
+see the floppy disk drive LED flash to indicated that it is active.
+
+If you experience this problem when detecting display adapters, you should shut
+down the computer by doing the following:
+
+1. Press CTRL-ALT-DEL.
+
+2. Press the RIGHT ARROW key twice.
+
+3. Press ENTER.
+
+4. Press the DOWN ARROW key, and then press ENTER again.
+
+When the computer restarts, choose the standard VGA entry in the boot menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbdisplay kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

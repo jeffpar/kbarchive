@@ -1,0 +1,58 @@
+DOCUMENT:Q92524  10-MAR-2000  [win16sdk]
+TITLE   :PRB: Setup Toolkit's SETUP.EXE Does Not Launch Windows
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SETUP.EXE, from the Setup toolkit, displays the message "This program requires
+Microsoft Windows" when run from the MS-DOS prompt. At other times, SETUP.EXE
+successfully launches Windows and runs.
+
+CAUSE
+=====
+
+The MS-DOS stub program for SETUP.EXE attempts to launch WIN.COM. The stub
+program can do this only if the length of the path to WIN.COM is less than or
+equal to the length of the path to SETUP.EXE, rounded up to the nearest multiple
+of 16. If the path to WIN.COM is longer than this, then the stub program
+displays the message above and returns.
+
+RESOLUTION
+==========
+
+Run the Setup program from Windows.
+
+Additional query words: 3.10 MSSETUP no32bit tool kit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

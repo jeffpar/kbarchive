@@ -1,0 +1,469 @@
+DOCUMENT:Q112158  27-FEB-2002  [sna]
+TITLE   :Configuring SNA Server to Talk to AS/400 Over 802.2
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+OPER/SYS:
+KEYWORDS:kbtool kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure SNA Server to communicate with an AS/400
+over 802.2 (Token Ring or Ethernet), to support 5250 emulation. Both SNA Server
+and AS/400 configuration parameters are discussed.
+
+NOTE: The end of this article includes sample AS/400 configuration screens.
+
+MORE INFORMATION
+================
+
+These instructions assume all of the following:
+
+ - The Windows NT DLC transport driver has been installed and is bound to the
+   correct network adapter.
+
+ - The SNA Server DLC link service has been installed using the SNA Server setup
+   program.
+
+ - The system has been restarted.
+
+Configure the following entries using the SNA Server Manager program:
+
+1. Zoom on the SNA Server service (which appears as the Windows NT machine
+   name), located in the Servers and Connections window. Enter the following
+   parameters:
+
+   SNA Network Control Point Name
+
+      Network Name =  APPN (or Remote Network ID, RMTNETID value on the
+      AS/400).
+      Control Point Name = This is the remote control point name
+      (RMTCPNAME) value in the AS/400 APPC controller definition.  For
+      simplicity, this should be set to the local Windows NT machine
+      name.
+
+   Choose OK.
+
+2. Add a new Local APPC LU off the server service by choosing the Insert button
+   and entering the following parameters:
+
+      LU 6.2 Type  = Independent
+      LU Alias     = For simplicity, this should be the same as the
+                     Local LU Name below.
+      Network Name = APPN (same as network name above)
+      LU Name      = This is the remote control point name in the AS/400
+                     APPC controller description (RMTCPNAME).
+
+   All other entries can remain at default values.
+
+   NOTE: It is most efficient for all SNA Server users to use the same Local APPC
+   LU. However, it is possible to create a unique LU for each user if desired,
+   where the LU alias and LU name above could be replaced with the actual user
+   name (though this requires additional administration to maintain).
+
+   Choose OK.
+
+3. Configure the SNA Server 802.2 connection by zooming on the connection name:
+
+      Link Service = SnaDlc1 (or name specified during SNA setup)
+      Remote End   = Peer System
+      Activation   = If set to "On Server Startup" (default), then the
+                     Switched disconnect (SWTDSC) value on the AS/400
+                     controller definition should be set to NO. This causes
+                     the underlying link to stay active even if there are
+                     no active sessions. Otherwise, if SWTDSC is YES, then
+                     SNA Server should be set to "On Demand" activation.
+
+      Allowed Directions = Outgoing calls. Check Incoming Calls if you
+                           want the AS/400 to activate the link.
+
+   Zoom on the Setup button:
+
+      Remote Network Address = Set to the network adapter address of the
+                               AS/400 (ADPTADR), located in the AS/400 line
+                               description.
+      Local Node ID = EXCHID value on the AS/400 controller description
+                      (if not specified on the AS/400, leave at default -
+                      05D FFFFF).
+      Remote Node Name:
+      Network Name = APPN (or remote network ID RMTNETID value on the
+                     AS/400)
+
+      Control Point Name = AS/400 local control point name, configured in
+                           the AS/400 Display Network Attributes screen.
+      Remote Node ID = Not used (leave blank)
+
+   Advanced options can be left at their default settings
+
+   Choose OK.
+
+4. Add a new Remote APPC LU off the connection by choosing the Insert button and
+   enter the following parameters:
+
+      LU Alias     = For simplicity, this should be the same as the
+                     Remote APPC LU Name below.
+      Network Name = APPN (or remote network id RMTNETID value on the
+                     AS/400)
+
+      LU Name      = Must be set to the AS/400 local control point name
+                    (set in the AS/400 Display Network Attributes screen).
+      Uninterpreted LU Name = Not used (leave at default setting).
+
+      Select Supports Parallel Sessions (required).
+
+   Zoom on the Partners button. The Remote APPC LU must be partnered with the
+   Local APPC LU created above, using the QPCSUPP mode. Because Enable Automatic
+   Partnering is enabled by default for APPC LU's, this pairing will already be
+   added.
+
+   Choose OK.
+
+5. Save the SNA Server configuration file and restart the SNA Server service.
+   Once the SNA Server service is Active, all connections configured to activate
+   on server startup will go into a Pending state, then switch to Active.
+
+   NOTE: If the connection stays in Pending mode and doesn't activate:
+   a. Check the Windows NT application event log (using Event Viewer) to see the
+      reason why the connection isn't activating. For example, if the AS/400 is
+      not responding to TEST commands, then the remote network address may not
+      be correct.
+
+   b. Double check the configuration entries above with your AS/400 system
+      administrator and make sure the AS/400 line is active. If all appears
+      okay, check the SNA Server controller description on the AS/400. For
+      LAN-based connections (such as Token Ring or Ethernet), the AS/400
+      defaults to auto configuration for new controllers, so manual generation
+      on the AS/400 is not required.
+
+   c. Check if the AS/400 is logging any errors when SNA Server attempts to
+      establish the connection.
+
+   d. If the connection activates but users are unable to open 5250 sessions,
+      zoom on the Status button on the Local APPC LU, which should show the
+      following (when working correctly):
+
+     Partner LU      Mode      Connection     Sessions        Limit
+
+     <remote LU>     SNASVCMG  <connection>    0               2
+     <remote LU>     QPCSUPP   <connection>    0               64
+
+   This means that up to 64 sessions are available for use, though no sessions
+   are currently active.
+
+At this point, a 5250 user can then open any valid APPC LU/LU pair supported by
+any SNA Server in the domain. However, in order to simplify 5250 user access
+through SNA Server, there are various options available to an SNA Server
+administrator and the 5250 user, including the following:
+
+ - Default AS/400 session for a user: On the SNA Server user/group record, the
+   administrator can define default local and remote APPC LU's. If defaults are
+   configured, and the 5250 applet is used, this is the LU/LU pair the 5250 user
+   will open when the 5250 applet local and partner APPC LU names are left
+   blank.
+
+ - If default APPC LU's are not preassigned to a user/group, here is how to
+   configure pools of Local APPC LU's and Remote (partner) APPC LU's to simplify
+   5250 user access to one or more AS/400's supported by SNA Server:
+
+   Local APPC LU pool: Define the Local APPC LU as a "Member of Default Outgoing
+   Local APPC LU Pool". If a 5250 user does not enter a Local APPC LU when
+   opening a session, the user will access one of the available Local LU's in
+   this pool.
+
+   Remote APPC LU pool: The Remote APPC LU pool is determined by the Remote LU's
+   which are partnered with the Local APPC LU and the QPCSUPP mode. So, if a
+   Local APPC LU is specified, but the Remote APPC LU is left blank, a 5250
+   session will be allocated from an available Remote APPC LU which it is
+   partnered with.
+
+SAMPLE AS/400 CONFIGURATION
+---------------------------
+
+The following AS/400 configuration screens are shown below, along with their
+corresponding configuration setting for SNA Server (see comments which are
+preceded with "****" below). This includes the AS/400 network attributes screen,
+Token Ring line description, APPC controller, and virtual device description.
+Many of the configuration settings are not relevant for communications to
+function, though are shown here for completeness.
+
+AS/400: Display Network Attributes
+                             System:   OLYMPIA
+ Current system name  . . . . . . . . . . . . . . :   OLYMPIA
+   Pending system name  . . . . . . . . . . . . . :
+ Local network ID . . . . . . . . . . . . . . . . :   APPN
+
+**** must match the remote network name on the SNA Server connection.
+
+ Local control point name . . . . . . . . . . . . :   OLYMPIA
+
+**** must match the remote control point name on the SNA Server connection
+
+ Default local location . . . . . . . . . . . . . :   OLYMPIA
+ Default mode . . . . . . . . . . . . . . . . . . :   BLANK
+ APPN node type . . . . . . . . . . . . . . . . . :   *ENDNODE
+ Maximum number of intermediate sessions  . . . . :   200
+ Route addition resistance  . . . . . . . . . . . :   128
+ Server network ID/control point name . . . . . . :   APPN        REDHOOK
+ Alert status . . . . . . . . . . . . . . . . . . :   *OFF
+ Alert logging status . . . . . . . . . . . . . . :   *NONE
+ Alert primary focal point  . . . . . . . . . . . :   *NO
+ Alert default focal point  . . . . . . . . . . . :   *NO
+ Alert backup focal point . . . . . . . . . . . . :
+   Network ID . . . . . . . . . . . . . . . . . . :     *NONE
+ Alert focal point to request . . . . . . . . . . :
+   Network ID . . . . . . . . . . . . . . . . . . :     *NONE
+ Alert controller description . . . . . . . . . . :   *NONE
+ Alert hold count . . . . . . . . . . . . . . . . :   0
+ Alert filter . . . . . . . . . . . . . . . . . . :   *NONE
+   Library  . . . . . . . . . . . . . . . . . . . :
+ Message queue  . . . . . . . . . . . . . . . . . :   QSYSOPR
+   Library  . . . . . . . . . . . . . . . . . . . :     QSYS
+ Output queue . . . . . . . . . . . . . . . . . . :   QPRINT
+   Library  . . . . . . . . . . . . . . . . . . . :     QGPL
+ Job action . . . . . . . . . . . . . . . . . . . :   *FILE
+ Maximum hop count  . . . . . . . . . . . . . . . :   16
+ DDM request access . . . . . . . . . . . . . . . :   *OBJAUT
+ PC Support request access  . . . . . . . . . . . :   *OBJAUT
+ Default ISDN network type  . . . . . . . . . . . :
+ Default ISDN connection list . . . . . . . . . . :   QDCCNNLANY
+
+AS/400: Change Line Desc (Token Ring) (CHGLINTRN)
+
+Line description . . . . . . . . LIND         > LANLINE
+ Resource name  . . . . . . . . . RSRCNAME       LIN031
+ Online at IPL  . . . . . . . . . ONLINE         *YES
+ Vary on wait . . . . . . . . . . VRYWAIT        *NOWAIT
+ Maximum controllers  . . . . . . MAXCTL         64
+ Line speed . . . . . . . . . . . LINESPEED      16M
+ Maximum frame size . . . . . . . MAXFRAME       1033
+ TRLAN manager logging level  . . TRNLOGLVL      *OFF
+ TRLAN manager mode . . . . . . . TRNMGRMODE     *OBSERVING
+ Log configuration changes  . . . LOGCFGCHG      *LOG
+ Token Ring inform of beacon  . . TRNINFBCN      *YES
+ Local adapter address  . . . . . ADPTADR        494061026052
+
+**** Must match the remote network address on the SNA Server connection.
+
+Also, the Local Adapter Address (ADPTADR) parameter on the line description (for
+Token Ring or Ethernet) has a default of *ADPT. AS/400 Administrators can choose
+to enter their own locally administered address or the *ADPT inserts the
+burned-in adapter card address. The following information includes advantages of
+both options.
+
+Locally Administered Address:
+
+Advantages: The address is permanent and will not change. It is important to pick
+a unique address so that there are no network conflicts. This is the IBM
+recommended option.
+
+*ADPT Address:
+
+Advantages: The adapter address is inserted into the line description when the
+line is varied on. Afterward, you can display the line description and see the
+adapter card address. This address is a unique address and you are insured there
+will be no duplicates on your network.
+
+Disadvantages: If the Adapter card has a hardware problem and is replaced, you
+need to have a new address when the line is varied on for the first time. All
+users who connect using the address will not be able to communicate unless they
+change their configuration accordingly. This can cause problems if you have many
+users because they all reference the same adapter address.
+
+ Functional address . . . . . . . FCNADR         *SAME
+                  + for more values
+ SSAP list:                       SSAP
+   Source Service Access Point  .                04
+   SSAP maximum frame . . . . . .                *MAXFRAME
+   SSAP type  . . . . . . . . . .                *SNA
+                  + for more values
+ Early token release  . . . . . . ELYTKNRLS      *YES
+
+**** For 16 MB Token Ring, note the Early Token Release setting. This
+should match the early token release setting used on your local Windows NT
+network adapter (set using the Network applet in Control Panel).
+
+ Error threshold level  . . . . . THRESHOLD      *OFF
+ Link speed . . . . . . . . . . . LINKSPEED      16M
+ Cost/connect time  . . . . . . . COSTCNN        0
+ Cost/byte  . . . . . . . . . . . COSTBYTE       0
+ Security for line  . . . . . . . SECURITY       *NONSECURE
+ Propagation delay  . . . . . . . PRPDLY         *LAN
+ User-defined 1 . . . . . . . . . USRDFN1        128
+ User-defined 2 . . . . . . . . . USRDFN2        128
+ User-defined 3 . . . . . . . . . USRDFN3        128
+ Autocreate controller  . . . . . AUTOCRTCTL     *YES
+
+**** This setting controls whether the APPC controller definition and
+virtual device definition (listed below) are automatically created by the
+AS/400 on this line. For Token Ring or Ethernet lines, this is the default.
+However, this is not the case for SDLC.
+
+ Autodelete controller  . . . . . AUTODLTCTL     1440
+ Recovery limits:                 CMNRCYLMT
+   Count limit  . . . . . . . . .                2
+   Time interval  . . . . . . . .                5
+ Text 'description' . . . . . . . TEXT           'LAN Line description'
+
+**** Note: If AUTOCRTCTL is YES (in the line description above), then the
+APPC controller and virtual device definitions below do not have to be
+generated. In this case, the SNA Server configuration settings noted below
+will cause these AS/400 configuration entries to be automatically
+generated.
+
+AS/400: Change Ctl Desc (APPC) (CHGCTLAPPC)
+
+Controller description . . . . . CTLD         > TRUTH00
+ Online at IPL  . . . . . . . . . ONLINE         *NO
+ APPN-capable . . . . . . . . . . APPN           *YES
+ Switched line list . . . . . . . SWTLINLST      LANLINE
+                  + for more values
+ Character code . . . . . . . . . CODE           *EBCDIC
+ Maximum frame size . . . . . . . MAXFRAME       16393
+ Remote network identifier  . . . RMTNETID       APPN
+
+**** Must match the network name configured on SNA Server (set using Admin
+when zooming on the server name), as well as the network name configured on
+the Local APPC LU.
+
+ Remote control point . . . . . . RMTCPNAME      TRUTH
+
+**** Must match the local control point name configured on SNA Server (set
+using Admin when zooming on the server name), as well as the LU name of the
+Local APPC LU.
+
+Exchange identifier  . . . . . . . :   EXCHID      05600001
+
+**** Must match the Local Node ID in the SNA Server connection
+
+ SSCP identifier  . . . . . . . . SSCPID         *SAME
+ Initial connection . . . . . . . INLCNN         *DIAL
+ Dial initiation  . . . . . . . . DIALINIT       *LINKTYPE
+ Switched disconnect  . . . . . . SWTDSC         *YES
+
+**** If this is set to YES, the AS/400 drops the link when there are no
+active users, so the SNA Server connection should be configured to activate
+On Demand. Note that SNA Server 802.2 connections default to activate On
+Server Startup. If this is desired, the SWTDSC setting should be set to NO.
+
+ Disconnect timer:                DSCTMR
+   Minimum connect timer  . . . .                170
+   Disconnection delay timer  . .                0
+ LAN remote adapter address . . . ADPTADR        10005A38374C
+
+**** This is the network adapter address of the network card being used
+on the SNA Server computer.
+
+ LAN DSAP . . . . . . . . . . . . DSAP           04
+
+**** This must match the SAP address on the SNA Server link service,
+configured using SNA Server setup. This is usually set to 04, so this
+rarely (if ever) changes.
+
+ LAN SSAP . . . . . . . . . . . . SSAP           04
+
+**** This is the SAP address of the destination AS/400 computer, and must
+match the SAP address on the SNA Server connection, configured using SNA
+Server Admin. Again, this rarely (if ever) changes.
+
+ LAN frame retry  . . . . . . . . LANFRMRTY      *CALC
+ LAN connection retry . . . . . . LANCNNRTY      *CALC
+ LAN response timer . . . . . . . LANRSPTMR      *CALC
+ LAN connection timer . . . . . . LANCNNTMR      *CALC
+ LAN acknowledgment timer  . . .  LANACKTMR      *CALC
+ LAN inactivity timer . . . . . . LANINACTMR     *CALC
+ LAN acknowledgment frequency  .  LANACKFRQ      *CALC
+ LAN max outstanding frames . . . LANMAXOUT      *CALC
+ LAN access priority  . . . . . . LANACCPTY      *CALC
+ LAN window step  . . . . . . . . LANWDWSTP      *NONE
+ APPN CP session support  . . . . CPSSN          *YES
+ APPN node type . . . . . . . . . NODETYPE       *CALC
+ APPN transmission group number   TMSGRPNBR      *CALC
+ APPN minimum switched status . . MINSWTSTS      *VRYONPND
+ Autodelete device  . . . . . . . AUTODLTDEV     1440
+ User-defined 1 . . . . . . . . . USRDFN1        *LIND
+ User-defined 2 . . . . . . . . . USRDFN2        *LIND
+ User-defined 3 . . . . . . . . . USRDFN3        *LIND
+ Recovery limits:                 CMNRCYLMT
+   Count limit  . . . . . . . . .                2
+   Time interval  . . . . . . . .                5
+ Model controller description . . MDLCTL         *NO
+ Connection network network ID  . CNNNETID       *SAME
+ Connection network CP  . . . . . CNNCPNAME      *SAME
+ Control owner  . . . . . . . . . CTLOWN         *SAME
+ Text 'description' . . . . . . . TEXT           'AUTOMATICALLY CREATED
+ BY QLUS'
+
+AS/400:  Change Device Desc (APPC) (CHGDEVAPPC)
+
+Device description . . . . . . . DEVD         > TRUTH03
+
+**** This device name corresponds with the SNA Server Local APPC LU name
+(in this case, TRUTH), plus a two-digit device number, generated by the
+AS/400 (but not configured in SNA Server).
+
+ Online at IPL  . . . . . . . . . ONLINE         *NO
+ Mode . . . . . . . . . . . . . . MODE           *NETATR
+                  + for more values
+ Message queue  . . . . . . . . . MSGQ           QSYSOPR
+   Library  . . . . . . . . . . .                  *LIBL
+ Local location address . . . . . LOCADR         00
+ Single session:                  SNGSSN
+   Single session capable . . . .                *NO
+   Number of conversations  . . .
+ Locally controlled session . . . LCLCTLSSN      *SAME
+ Pre-established session  . . . . PREESTSSN      *SAME
+ Text 'description' . . . . . . . TEXT           'AUTOMATICALLY CREATED
+ BY QLUS'
+ Mode description . . . . . . . . MODD         > QPCSUPP
+
+**** This should not be changed; this is the default mode name for IBM PC
+Support clients (and SNA Server).
+
+ Class-of-service . . . . . . . . COS            #CONNECT
+ Maximum sessions . . . . . . . . MAXSSN         64
+
+**** This is the number of sessions supported by the QPCSUPP mode, and
+should match the SNA Server session limit configured on the QPCSUPP mode
+entry, configured using the SNA Server setup program (zoom on Local or
+Remote LU, zoom on Partners button, then choose the Modes button).
+
+ Maximum conversations  . . . . . MAXCNV         64
+
+**** This should match the MAXSSN setting above.
+
+ Locally controlled sessions  . . LCLCTLSSN      16
+ Pre-established sessions . . . . PREESTSSN      0
+ Inbound pacing value . . . . . . INPACING       7
+ Outbound pacing value  . . . . . OUTPACING      7
+ Maximum length of request unit   MAXLENRU       *CALC
+ Text 'description' . . . . . . . TEXT           'created by <name>'
+
+Additional query words: prodsna TR snafaq
+
+======================================================================
+Keywords          : kbtool kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2
+Version           : :2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

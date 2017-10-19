@@ -1,0 +1,82 @@
+DOCUMENT:Q121666  10-NOV-1999  [macmail]
+TITLE   :CONN: Err Msg: Error [20] Insufficient Memory
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::1.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection Gateway, version 1.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using version 1.0b of the Mail Connection Gateway and if a Microsoft Mail
+for PC Networks mail message sent to a user on the Microsoft Mail for AppleTalk
+Networks becomes corrupt, the PC side of the Mail Connection Gateway will return
+an error message:
+
+   Error [20] Insufficient Memory Returned from FFAPI Program
+
+The PC MACGATE.EXE program will exit to MS-DOS and display the above error
+message. As a result, Mail will not be transferred between the Macintosh and the
+PC Mail systems.
+
+CAUSE
+=====
+
+There are two possible causes for this error.
+
+One possible cause is a corrupt PC mail message waiting to be delivered to the
+Macintosh. This keeps any of the messages that come later from being delivered
+through the Gateway.
+
+Another possibility is that a lot of names are on the TO: field. This may cause
+MACGATE.EXE to run out of memory. This happens because Connection 1.0b uses an
+older version of FFAPI and was compiled using a small memory model. Version 3.2
+of Microsoft Mail Connection for PC and AppleTalk Networks uses the large memory
+model and is less likely to encounter out-of- memory problems than version 1.0b.
+
+RESOLUTION
+==========
+
+Delete or return the oldest message in the MSMail queue on the Mail Connection
+Gateway postoffice. This message may not necessarily be at the bottom of the
+queue.
+
+NOTE: There may be multiple messages in the queue with the same time stamp.
+
+You may have to delete or return all mail with this time stamp in order to remove
+the corrupt message.
+
+If the problem is frequent, then the cause for the corruption should be checked.
+It is likely a network issue and may require a network trace or sniffer reading
+to see why the messages are corrupt.
+
+
+Additional query words: 1.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailConn100b
+Version           : :1.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

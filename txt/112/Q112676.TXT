@@ -1,0 +1,354 @@
+DOCUMENT:Q112676  21-SEP-1999  [win95x]
+TITLE   :Troubleshooting Insufficient Memory Errors
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive insufficient memory errors in Windows or Windows for Workgroups when
+you try to run an application or perform a task. The specific error messages
+vary but are similar to the following:
+
+   Application Execution Error
+   Insufficient memory to run this application. Quit one or more Windows
+   applications and then try again.
+
+-or-
+
+   There is not enough memory available.
+
+CAUSE
+=====
+
+These errors may be caused by any of the following:
+
+ - Insufficient Memory in the Global Heap
+
+ - Insufficient Windows System Resources
+
+ - File Corruption, Application Problems, or Configuration Problems
+
+ - Low Memory Below 1 Megabyte (MB)
+
+ - Low Windows Selectors
+
+ - The BIOS Is Configured Incorrectly for Your System
+
+
+Each of these issues, and possible workarounds, is discussed below. Although
+these issues are listed in the order they are most likely to occur,
+troubleshooting insufficient memory errors in Windows is not always a
+straightforward step-by-step process. To increase your knowledge of the major
+issues and decrease your troubleshooting time, you may want to read this entire
+article before you proceed.
+
+RESOLUTION
+==========
+
+Insufficient Memory in the Global Heap
+--------------------------------------
+
+The entire memory area that Windows controls is called "global memory" or the
+"global heap." The global heap begins at the location where MS-DOS first loads
+Windows into memory and ends at the top of available memory, which most often is
+at the top of physical memory. A Windows-based application returns an
+insufficient memory error if the amount of free memory in the global heap, after
+swapping, is insufficient to run the application or perform the selected task.
+
+To determine how much memory is free in the global memory heap, set your Windows
+swap file to None in Control Panel's 386 Enhanced Virtual Memory dialog box and
+then choose About Program Manager from the Help menu in Program Manager. The
+Memory value reported is free memory in the global heap. If your application
+requires more memory than is available in the global heap, you may receive an
+"out of memory" error message. Increasing the size of the swap file may allow
+Windows to swap enough information to disk to free memory in the global heap.
+
+Resolution:
+
+To free more memory for your application, close one or more Windows-based
+applications or increase the size of your permanent swap file. If this does not
+correct the out of memory errors, you may need to update your system with
+additional RAM.
+
+Insufficient Windows System Resources
+-------------------------------------
+
+Cause:
+
+Insufficient memory errors also occur when Windows calculates that not enough
+system resources exist to perform the desired operation.
+
+Status: In Windows 3.1 and Windows for Workgroups, system resources are
+determined by the following four heaps:
+
+ - GDI.EXE (64-kilobyte [K] data segment)
+
+   The GDI.EXE heap contains information about graphical objects, such as pens,
+   brushes, cursors, fonts, icons, buttons, scroll bars, and so on. In Windows
+   3.1 and Windows for Workgroups, the GDI heap is likely to be the bottleneck;
+   therefore, closing heavily graphics-oriented applications results in GDI
+   resources being freed.
+
+ - USER.EXE (64K data segment)
+
+   The USER.EXE heap contains information about the windows currently in
+   existence, dialog boxes, controls in dialog boxes, and so on.
+
+ - menu (64K data segment)
+
+ - menu strings (64K data segment)
+
+   The menu and menu string heaps are new in Windows 3.1. These heaps, originally
+   combined in USER.EXE under Windows 3.0, were designed to free up space in the
+   USER heap. These heaps are created dynamically (that is, at run time) by the
+   USER heap. They are not contained in any .EXE files and are each limited to
+   64K.
+
+When you choose About Program Manager from the Help menu, Windows and Windows for
+Workgroups report the heap with the smallest amount available as the amount of
+free system resources.
+
+To maintain backwards compatibility with earlier versions of Windows and
+Windows-based applications, all four heaps were each designed with a 64K data
+segment limit.
+
+Resolution:
+
+Some applications may not release all the system resources they use after they
+are closed. If you have a chronic problem with one or more applications, contact
+the manufacturer of the applications for more information.
+
+Some 16-bit Windows applications (such as Microsoft Word for Windows, Microsoft
+Access, Microsoft Visual Basic, and Microsoft Excel) require ample free amounts
+of both USER.EXE and GDI.EXE heaps because of the graphical user interface
+(GUI). If these applications do not find available space to load their
+information into these heaps, they generate an insufficient memory error (or a
+similar error). A large Excel workbook and large graphical images on machines
+running high resolution video drivers rely heavily on the GDI resource because
+of their graphical nature.
+
+If your system resources are often low, keeping few applications running is
+probably the best solution; however, you may also want to try the following:
+
+ - Minimize seldom-used groups to conserve system resources.
+
+ - Do not use wallpaper, or use a small bitmap and tile it.
+
+ - Try not to open groups that have many icons.
+
+ - If you run an application that uses system resources every time it runs, try
+   to keep it open instead of closing and reopening it many times.
+
+ - Try not to load fonts that are not needed.
+
+ - Check your screen savers to make sure that they are not overusing resources.
+
+File Corruption, Application Problems, or Configuration Problems
+----------------------------------------------------------------
+
+Cause:
+
+Insufficient memory errors may occur when two or more memory resident programs or
+drivers conflict, when Windows accesses corrupted files or files that are still
+in compressed form, or when there is a problem in the application you are
+running.
+
+Resolution:
+
+Try to isolate the problem to a specific application. Clean boot the computer so
+that only the necessary Windows and application-specific device drivers and
+terminate-and-stay-resident (TSR) programs are loading in the CONFIG.SYS and
+AUTOEXEC.BAT files. For more information about a "clean boot" for Windows and
+Windows for Workgroups, query on the following words in the Microsoft Knowledge
+Base:
+
+   clean and boot and append
+
+Disable any applications that start automatically when you start Windows (check
+the WIN.INI file and the StartUp group), run Windows Setup and change to
+standard Windows drivers (VGA, No Mouse, No Network), and use the Program
+Manager (PROGMAN.EXE) as your Windows shell.
+
+If the insufficient memory errors occur only in a specific application, try
+reinstalling the application to a new directory or manually expand any necessary
+files to rule out file corruption.
+
+If the application has never worked, it is possible that the files on the
+original installation disks are corrupted. Try to install the offending
+application on another computer using the same disks.
+
+If these procedures do not eliminate the problem, contact the manufacturer of the
+application that is causing the errors.
+
+Low Memory Below 1 Megabyte (MB)
+--------------------------------
+
+Cause:
+
+When Windows creates a new task (that is, starts a new application), the Windows
+loader creates a task database (TDB) for it. The TDB contains vital information
+about the task, such as its current directory, its instance handle, and so on.
+To maintain compatibility with 16-bit Intel processors and MS-DOS, Windows
+creates the TDB in memory below 1 MB in the global heap. Because the only memory
+below 1 MB in the global heap is conventional memory, the TDB must be created
+below 640K (conventional memory).
+
+Status:
+
+Memory below 1 MB is limited and should be used sparingly. TDBs are not the only
+block of memory that may end up below 1 MB. Applications such as Microsoft Word
+for Windows, Microsoft Remote Access Services (RAS), Microsoft Anti-Virus ,
+Microsoft Mail, Microsoft Schedule+, and multimedia packages are examples of
+applications that load .DLL files into the first megabyte of memory when loading
+or performing certain operations.
+
+Every segment in the Windows global heap is marked with certain attributes that
+tell Windows how to manage the segment. First and foremost, the segments are
+marked as Fixed or Moveable. A fixed segment always resides at the same physical
+memory location where it was first allocated (although it can be paged if it is
+not "page-locked"). Movable code can be moved or marked as Discardable code.
+This means that Windows can move moveable segments in memory if necessary to
+make room for other memory allocations or, if the code is marked as Discardable,
+Windows can discard the code by determining the "least recently used" (LRU)
+discardable segment. Windows can later reload the discardable code by accessing
+the application's .EXE file.
+
+The enhanced mode global heap is composed of a series of free and in-use blocks
+stored contiguously in memory. When Windows is asked by an application to
+allocate a block of memory, KRNL386.EXE starts at the beginning or end of the
+global heap, depending on the type of code the application loads, and iterates
+through each of the blocks until it finds a suitably sized free block.
+
+KRNL386.EXE starts to allocate fixed segments from the bottom up in the global
+heap. At the top of the global heap, Windows allocates discardable segments.
+Between the fixed and discardable segments, Windows allocates moveable segments.
+When an application starts and Windows needs to allocate fixed segments, Windows
+starts searching from the bottom up for a sufficiently large free block below
+the area of moveable segments. This is to avoid memory fragmentation. If it
+cannot find a segment large enough it begins moving moveable segments up in
+memory to make room. If that doesn't work, Windows begins discarding discardable
+segments.
+
+TDBs must be located below 1 MB, but fixed and moveable memory segments do not.
+An insufficient memory error that appears when you try to start an application
+may occur because fixed segments, which are loaded starting from the bottom of
+the global heap to avoid memory fragmentation, end up loading in the first
+megabyte. These fixed memory segments cannot be moved if they are "page-locked,"
+hence they may consume memory space that Windows would otherwise use to load the
+TDBs. KRNL386.EXE's desire to keep fixed memory as low as possible conflicts
+with the need to keep memory below 1 MB as free as possible.
+
+Because of the way Windows allocates memory, memory below 1 MB is a limited
+resource even when you are running Windows-based applications. Program
+developers are encouraged to ensure that their programs and .DLL files do not
+use this space needlessly. Fixed memory segments should not be used unless
+absolutely necessary.
+
+Resolution:
+
+To troubleshoot this problem, optimize conventional memory as much as possible.
+If you have MS-DOS version 6.0 or 6.2, use MemMaker to optimize conventional
+memory. You may also want to change the order in which your programs or drivers
+load. This may alter where the fixed code gets located and minimize memory
+fragmentation. For a workaround, create a multi-boot configuration to minimize
+what loads into conventional memory for particular operations. This may free
+enough space so that Windows can load the TDBs.
+
+Disable any applications that start automatically when you start Windows (check
+the WIN.INI file and StartUp group), run Windows Setup and change to standard
+Windows drivers (VGA, No Mouse, No Network), and use the Program Manager
+(PROGMAN.EXE) as your Windows shell. For troubleshooting, remove any third-party
+Windows drivers or virtual device drivers (VxDs) by rebuilding the WIN.INI and
+SYSTEM.INI files. For more information about this procedure, query on the
+following words in the Microsoft Knowledge Base:
+
+   win.ini and win.sr_ and create
+
+-and-
+
+   system.ini and system.sr_ and create
+
+Low Selectors
+-------------
+
+Cause:
+
+An important aspect of Windows-based application memory management that is NOT
+included in the free system resources percentage is the number of selectors. A
+selector is a memory pointer that is consumed with each memory allocation made
+by a Windows-based application. Windows has a fixed number of selectors (4096 in
+standard mode, 8192 in 386 enhanced mode). If a Windows-based application
+allocates a very large number of small data objects, it is possible to run out
+of selectors. This also produces an insufficient memory message.
+
+Resolution:
+
+These problems are application specific. Writing a Windows-based application to
+handle its own data objects more efficiently can help in this situation. If you
+experience a chronic problem with a particular application while none or few
+other applications are loaded and the computer is clean-booted, contact the
+application vendor. It is important that the vendor become aware of the problem
+so that it can be corrected if possible.
+
+The BIOS Is Configured Incorrectly for Your System
+--------------------------------------------------
+
+If your BIOS is incorrectly configured for a floppy disk drive, you may receive
+the aforementioned error messages when you attempt to install software. For
+example, an error can occur if you have a 1.44-megabyte 3.5- inch floppy disk
+drive installed and the BIOS is set for a 1.2-megabyte 5.25-inch disk drive.
+
+MORE INFORMATION
+================
+
+You can also receive "Insufficient memory" error messages if you try to load an
+application over the network to run on a Windows-based computer running an
+MS-DOS network client when the network is heavily congested. Request timeouts
+during application loading are misinterpreted locally as an insufficient memory
+condition.
+
+Also, you can receive this error message if the Execute permission has been
+removed from the network share containing the application.
+
+REFERENCES
+==========
+
+"Windows 3.1 Technical Reference Manual"
+
+"Microsoft Systems Journal," October 1993, pages 69-75
+
+"Programming Windows 3.1," by Charles Petzold, pages 271-303
+
+Additional query words: 3.00 3.0 3.0a 3.10 3.1 3.11 browser err msg not enough memory tshoot mb mega byte
+
+======================================================================
+Keywords          : win31 
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

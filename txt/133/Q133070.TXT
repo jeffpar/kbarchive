@@ -1,0 +1,92 @@
+DOCUMENT:Q133070  11-JUN-2002  [visualc]
+TITLE   :PRB: C2059 Error Using extern "C" in .C Source Files
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,2.2,4.0,5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbLangC kbLangCPP kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Use of "extern "C"" in source files that have a .C extension causes error C2059,
+and results in this error message:
+
+   error C2059:syntax error:'string'
+
+CAUSE
+=====
+
+In the C language, the string-literal "C" is not recognized. It is used in C++
+to prevent name decoration.
+
+RESOLUTION
+==========
+
+Remove the string-literal "C" in extern declarations, or use the following in
+the function declaration:
+
+   #ifdef __cplusplus
+      extern "C"
+   #endif
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Behavior
+---------------------------------
+
+   /* Compile options needed: None
+      The following program reproduces the behavior if the source
+      file has .C extension
+   */ 
+
+   #include <windows.h>
+
+   extern "C" _declspec(dllexport) BOOL WINAPI function1(void);
+
+   BOOL WINAPI DllMain ( HINSTANCE hInst, DWORD dwReason,
+                           LPVOID lpReserved)
+   {
+      // Other required code goes here.
+      return TRUE;
+   }
+
+Additional query words: 9.0 9.00 9.1 9.10
+
+======================================================================
+Keywords          : kberrmsg kbLangC kbLangCPP kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :2.0,2.1,2.2,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

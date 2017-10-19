@@ -1,0 +1,58 @@
+DOCUMENT:Q141727  13-APR-2000  [homemm]
+TITLE   :Bookshelf Add-In for Excel Does Not Provide Description
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:; Win95:7.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf '95 for Windows 95 
+ - Microsoft Excel for Windows 95, version 7.0 
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Bookshelf, the Excel for Windows 95 version 7.0 Add-Ins
+Available dialog box lists "bshxl" (without the quotes) as one of the installed
+items, but the Update Add-In Links dialog box displaying a description is blank.
+
+RESOLUTION
+==========
+
+There is no resolution to this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf '95 for
+Windows 95 and Bookshelf '96-'97 for Windows. We are researching this problem
+and will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 1995multi media multimedia multi-media mmtitles kbmm win95
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbExcelSearch kbHomeMMsearch kbExcel700 kbBookshelfSearch kbExcel95Search kbBookShelf1995 kbBookShelf1996 kbBookShelf1997
+Version           : WINDOWS:; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

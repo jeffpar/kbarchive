@@ -1,0 +1,77 @@
+DOCUMENT:Q134604  17-DEC-2000  [win95x]
+TITLE   :Sound Problems in the "_Are_You_Afraid_Of_The_Dark?_" Game
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play the "_Are_You_Afraid_of_the_Dark?_" game, version 1.0 (by
+Viacom/Nickelodeon), the sound effects are choppy and you hear a buzzing.
+
+CAUSE
+=====
+
+The program is using memory in a way that conflicts with the sound effects.
+
+
+RESOLUTION
+==========
+
+To work around this behavior, run the program in MS-DOS mode. To do so, follow
+these steps:
+
+1. In My Computer, using the right mouse button, click the _Are_You_ Afraid_
+   of_the_Dark?_ icon, and then click Properties on the menu that appears.
+
+2. In the _Are_You_Afraid_of_the_Dark?_ Properties dialog box, click the Program
+   tab, and then click the Advanced button.
+
+3. Make sure the MS-DOS mode box is checked.
+
+4. Select the Use Current MS-DOS Configuration button.
+
+5. Click the OK button on all the dialog boxes that appear.
+
+To run the program, double-click the program icon or click the Start button,
+click Run, and then type the program name in the Run dialog box. If you type the
+program name at an MS-DOS prompt, the program's settings are not invoked.
+
+MORE INFORMATION
+================
+
+In addition, you may have to reinstall sound card, mouse, and CD-ROM support.
+Use standard MS-DOS-mode troubleshooting techniques to resolve any problems.
+
+The third-party product discussed here is manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

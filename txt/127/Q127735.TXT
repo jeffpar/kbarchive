@@ -1,0 +1,74 @@
+DOCUMENT:Q127735  31-OCT-1999  [pcmail]
+TITLE   :PC Win: Err Msg: File Manager Cannot Find Specified File...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Setup program for version 3.2 of Microsoft Mail for Windows
+from File Manager, you may receive the following error prior to the display of
+the Welcome to Microsoft Mail for Windows dialog box:
+
+   File Manager cannot find the specified file (or one of its components).
+
+   Make sure the path and file names are correct and that all required libraries
+   are available.
+
+CAUSE
+=====
+
+This error is caused by a missing dynamic-link library (DLL) needed for the
+Setup program.
+
+RESOLUTION
+==========
+
+1. Determine if the following files are present in the shared client
+   installation directory, and replace any missing files:
+
+   MSCOMSTF.DLL
+   MSSHLSTF.DLL
+   MSUILSTF.DLL
+   MSINSSTF.DLL
+   MSDETSTF.DLL
+   MSCPYDIS.DLL
+   CUISTF.DLL
+
+2. Run the client Setup program, SETUP.EXE, from Program Manager from the File
+   menu, choose Run. You will receive a dialog box with the name of the missing
+   file.
+
+   NOTE: The Windows session may hang with this method.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

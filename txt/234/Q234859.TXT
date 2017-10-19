@@ -1,0 +1,76 @@
+DOCUMENT:Q234859  10-AUG-2001  [winnt]
+TITLE   :PRB: Windows Desktop Update Is Required for Product Resiliency
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbAppSetup kbide kbMSI kbFAQ kbGrpDSTools kbvc600faq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Windows Installer-based applications, the shortcuts that populate the
+Start menu display the Missing Shortcut dialog box with the "searching
+flashlight," and fail to find the target path of the shortcut.
+
+CAUSE
+=====
+
+This problem can occur in situations where the application is damaged, or when
+the application is assigned in the Active Directory and the user attempts to
+start the application by using the shortcut. The Windows Installer is attempting
+to repair the installation or install new features.
+
+This problem occurs because the shell update in Internet Explorer 4.01 or higher
+is necessary to allow the Windows Installer to create the correct shortcut to
+enable the Windows Installer to perform application repair and assignments for
+the application's features.
+
+RESOLUTION
+==========
+
+Verify that the Shell32.dll version is 4.72.3110 or greater. Shell32.dll is
+found in the %systemroot%\System32 folder. Right-click the file and click
+Properties, and then click the Version tab. The version entry should be viewable
+on the File version: line.
+
+If the version number is less than 4.72.3110, install the Windows Desktop Update
+that ships with Internet Explorer 4.01 Service Pack 1 (SP1).
+
+STATUS
+======
+
+This is by design of the Windows Installer and the Windows Desktop Update.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAppSetup kbide kbMSI kbFAQ kbGrpDSTools kbvc600faq 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95; winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

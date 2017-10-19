@@ -1,0 +1,162 @@
+DOCUMENT:Q199078  11-JUN-2002  [sms]
+TITLE   :SMS: How to Remove a Systems Management Server 2.0 Client
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbClient kbsms200kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+There are four methods for initiating the removal of the Systems Management
+Server client software from a client:
+
+1. Run the SMSMAN wizard, and select the Remove Systems Management Components
+   check box.
+
+2. Modify the client's registry to add a removal value.
+
+3. Change the site's boundary to exclude the Internet Protocol (IP) subnet or
+   Internetwork Packet Exchange (IPX) network number used by a client or
+   clients.
+
+4. Run the 20clicln.bat utility from the support tools included on the SMS
+   service pack cd or available by download from
+
+   Http://www.microsoft.com/smsmgmt/downloads/default.asp
+   (Http://www.microsoft.com/smsmgmt/downloads/default.asp)
+
+These options are discussed further in the MORE INFORMATION section of this
+article.
+
+NOTE: Each of these options requires an administrative equivalent account on the
+client computer to remove the SMS client software.
+
+MORE INFORMATION
+================
+
+Using the SMSMAN Wizard
+-----------------------
+
+1. Run SMSMAN from the following path:
+
+   \\server\smslogon\x86.bin\00000409
+
+2. Click Next.
+
+3. Select Remove Systems Management Components and then click Next.
+
+Setting a Registry Key
+----------------------
+
+To use the registry method, perform the steps below corresponding to the
+operating system you are using.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Windows 95:
+
+1. Use Regedit.exe to add the string value "SMS Client Deinstall" to the client
+   registry under the following key and set it to TRUE:
+
+      HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Configuration\Client Properties
+
+2. Restart the client to launch Clisvc95.exe to start a CCIM maintenance cycle.
+
+   NOTE: A restart is not required; the CCIM polling interval is 23 hours, so if
+   you do not restart the computer, the CCIM maintenance cycle will occur later.
+
+Windows NT:
+
+1. Use Regedit.exe to add the string value "SMS Client Deinstall" to the client
+   registry under the following key and set it to TRUE:
+
+      HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Configuration\Client Properties
+
+2. Stop and start the SMS Client Service to start a CCIM maintenance cycle.
+
+Removing Client's Subnet or Network Number From the Site Boundary
+-----------------------------------------------------------------
+
+You can remove Systems Management Server software from clients by removing the
+client's subnet/network number from the site boundaries (so that the client is
+no longer assigned to a Systems Management Server site). The Systems Management
+Server client software is removed from that client during the next maintenance
+interval, or by restarting the client.
+
+To remove the subnet or network number from the site boundary, perform the
+following steps from in the Systems Management Server Administrator console:
+
+1. Expand the Site Database property.
+
+2. Expand the Site Hierarchy property.
+
+3. Right-click the site and click Properties on the shortcut menu.
+
+4. Click the Boundaries tab.
+
+5. Right-click the subnet/network number to remove and click Delete on the
+   shortcut menu.
+
+You can remove the client from all x86 based operating systems by using the
+20clicln.bat utility provided in the support tools:
+
+ - Map a drive to the location of the 20clicln.bat file ( this location must
+   include the 20clicln.bat, hammer.exe, kill.exe, and setevnt.exe files).
+
+ - Then execute the 20clicln.bat and wait for it to complete. (This could take
+   15 to 20 minutes depending on degree of traffic and bandwidth in the
+   network.)
+
+Notes
+-----
+
+All of these methods of removing the SMS 2.0 client software except the
+20clicln.bat assume that you still have the SMS site server working and
+available on the network. Updated support tools are available as they are
+released from the following Microsoft Web site:
+http://www.microsoft.com/smsmgmt.
+
+The 20clicln.bat utility removes almost all traces of the SMS client software
+from the computer. Only the GUID (unique SMS ID) stays. This means that the next
+time this computer becomes assigned to an SMS site and installs the SMS client,
+all client software files will once again be downloaded across the network
+before the SMS client install process can begin.
+
+Additional query words: prodsms cli32 uninstall deinstall flag
+
+======================================================================
+Keywords          : kbClient kbsms200 kbfaq
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,81 @@
+DOCUMENT:Q186537  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Commands: PERUSER
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+PERUSER enables or disables per-user file associations.
+
+Syntax
+------
+
+peruser [/query] [/enable] [/disable]
+
+Parameters
+----------
+
+none
+
+/query
+
+   Queries the current setting.
+
+/enable
+
+   Enables per-user file associations.
+
+/disable
+
+   Disables per-user file associations.
+
+Security Restrictions
+---------------------
+
+Only administrators can run peruser.
+
+PERUSER -- Additional Notes
+---------------------------
+
+By default, all file associations in applications such as File Manager are system
+global (they apply to all users). Per-user file associations are not enabled
+because they may cause user profiles to grow 1-2 MB. If you have users who
+require per-user file associations (for example, if one user wants to associate
+.doc files with Microsoft Word but another user wants them to start the Word
+Viewer), you can enable per-user file associations by using the peruser /enable
+command. Use peruser /disable to disable per- user file associations. Use
+peruser /query to check if per-user file associations are enabled.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

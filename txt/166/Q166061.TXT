@@ -1,0 +1,72 @@
+DOCUMENT:Q166061  19-JUL-2001  [word97]
+TITLE   :WV: Cannot Follow Hyperlink to Its Source from Word Viewer
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbusage kbviewer word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word Viewer 97-2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you choose to have Microsoft Word Viewer 97-2000 as the default program for
+opening documents, clicking a hyperlink to a document opens the document in Word
+Viewer.
+
+Because Word Viewer does not have a Web toolbar, there is no way to navigate
+"back" to the source of the link. That is, there is no "back" button in Word
+Viewer.
+
+CAUSE
+=====
+
+Microsoft Word Viewer 97-2000 does not support toolbars.
+
+WORKAROUND
+==========
+
+If you are navigating from one document to another document by clicking
+hyperlinks inside Word Viewer, you can work around this problem by using the
+"most recently used file" list on the File menu to switch from the current
+document to the previous document. However, the "most recently used file" list
+only shows the four most recently opened documents.
+
+REFERENCES
+==========
+
+For more information about Word Viewer 97-2000, please see the following
+Knowledge Base article:
+
+   
+
+   Q165908 WV: How to Obtain Microsoft Word Viewers
+
+Additional query words: HTML mru
+
+======================================================================
+Keywords          : kbinterop kbusage kbviewer word97 
+Technology        : kbWordViewerSearch kbViewerSearch kbWordViewer97
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

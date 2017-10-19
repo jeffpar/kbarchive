@@ -1,0 +1,80 @@
+DOCUMENT:Q155272  10-AUG-2001  [winnt]
+TITLE   :Cogent eMaster 110 Network Card Detected as DEC 21140
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbnetwork kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows NT 4.0, your Cogent eMaster 110 Fast Ethernet
+PCI adapter is detected as a DEC 21140 network card.
+
+If you use this driver, the network card causes large amounts of network traffic
+(a broadcast storm).
+
+CAUSE
+=====
+
+Windows NT Setup does not automatically detect the Cogent eMaster card.
+
+RESOLUTION
+==========
+
+After Setup finishes, install the driver for the Cogent eMaster card from the
+Windows NT 4.0 CD-ROM. To install the driver, follow these steps:
+
+1. In Control Panel, double-click Network.
+
+2. On the Adapters tab, click the DEC 21140 network card, and then click Remove.
+
+3. Click OK, and then click Add.
+
+4. Click Have Disk.
+
+5. Enter the following path:
+
+   <drive>:\drvlib\netcard\x86\empci
+
+   -OR-
+
+   <drive>:\i386\drvlib.nic\empci
+
+   where <drive> is the drive letter for your CD-ROM drive.
+
+6. Click OK.
+
+7. Select the proper settings for the card, and restart your computer when you
+   are prompted to do so.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhw kbnetwork kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

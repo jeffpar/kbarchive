@@ -1,0 +1,69 @@
+DOCUMENT:Q142295  17-DEC-2000  [win95x]
+TITLE   :Err Msg: The Microsoft Mail Post Office Could Not Be Found...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Exchange, you may receive the follow error message:
+
+   The Microsoft Mail post office could not be found on the server
+   <servername>. Be sure to enter the correct path to the post office. If
+   you don't know the path contact your administrator.
+
+CAUSE
+=====
+
+This error can occur if you are using the Microsoft Mail service in Microsoft
+Exchange but you are not using a LAN or remote post office.
+
+RESOLUTION
+==========
+
+The Microsoft Mail service is used only for connecting to WGPO post offices
+(including Windows 95, Microsoft Windows NT, and Microsoft Windows for
+Workgroups post offices) or Microsoft Mail 3.x post offices. It is not necessary
+to use the Microsoft Mail service for sending mail on The Microsoft Network.
+
+To remove the Microsoft Mail service, follow these steps:
+
+1. Close Microsoft Exchange.
+
+2. In Control Panel, double-click Mail And Fax.
+
+3. Click the Microsoft Mail service.
+
+4. Click Remove.
+
+Additional query words: postoffice
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

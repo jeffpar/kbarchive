@@ -1,0 +1,97 @@
+DOCUMENT:Q141058  23-MAY-2002  [vbwin]
+TITLE   :PRB: Visual Basic .FRX File Not Added to SourceSafe
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbSSafe400bug kbSSafe500bug kbVBp400bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a form with both an .frm and an .frx file exists in Visual Basic and in
+SourceSafe and the form is deleted from the Visual Basic project, adding a new
+form with the same name as the deleted form will omit adding the .frx file to
+the SourceSafe project.
+
+RESOLUTION
+==========
+
+In Steps to Reproduce Problem in the MORE INFORMATION section below, do the
+following between steps 3 and 4:
+
+1. Run SourceSafe.
+
+2. Select the SourceSafe project that stores the Visual Basic project.
+
+3. From the File menu, choose Properties.
+
+4. From the Deleted Items tab, purge the .frx and .frm that were deleted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a form that has both an .frm and .frx file (binary) in Visual Basic by
+   adding a control (such as a picturebox, grid, or other control) that contains
+   binary information to a form. Then put the files in SourceSafe.
+
+2. Check out the Project (.vbp file) from SourceSafe.
+
+3. In Visual Basic, delete the form. Note that both the .frm and .frx files are
+   deleted in SourceSafe.
+
+4. In Visual Basic, create a new form that has the same name as the deleted
+   form, which will require an .frx file (as described in Step 1.)
+
+5. Save the new form, and when prompted, add the form to SourceSafe.
+
+6. Answer No to the following prompt:
+
+   A deleted file with this name already exists. Recover the existing file?
+
+7. The .frm file is added to SourceSafe, but the .frx is not.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500bug kbVBp400bug 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

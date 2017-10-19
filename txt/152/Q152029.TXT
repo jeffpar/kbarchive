@@ -1,0 +1,113 @@
+DOCUMENT:Q152029  07-MAY-2001  [visualc]
+TITLE   :HOWTO: Prevent Creation of Initial Macintosh Document
+PRODUCT :Microsoft C Compiler
+PROD/VER:MACINTOSH:2.0,4.0
+OPER/SYS:
+KEYWORDS:kbDocView kbHWMAC kbMFC kbVC200 kbVC400 kbVC420 kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, Macintosh Cross-Development Addon, versions 2.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes it is preferable not to initially open a new document in an MFC
+application. To implement this behavior on Windows, you can remove the call to
+OnFileNew() or ParseCommandLine() from InitInstance. On the Macintosh, you need
+to override CWinApp::CreateInitialDocument(). This article describes how to
+accomplish these behaviors.
+
+MORE INFORMATION
+================
+
+In a Windows MFC application, a new document is initially created if the Command
+Line is empty. Since Macintosh applications do not have Command Lines, the open
+application Apple Event is sent to the application and is handled by
+_AfxOpenAppHandler(), which calls CreateInitialDocument() to open a new
+document:
+
+     // From Visual C++ 4.0
+      OSErr PASCAL _AfxOpenAppHandler(AppleEvent* pae,
+                                      AppleEvent* paeReply,
+                                      long lRefcon)
+      {
+        CWinApp* pApp;
+        OSErr err = HandlerCommon(pae, lRefcon, pApp);
+        if (err == noErr)
+        {
+          if (pApp->CreateInitialDocument())
+            err = noErr;
+          else
+            err = errAEEventNotHandled;
+        }
+        AfxOleSetUserCtrl(TRUE);
+        return err;
+      }
+
+      // From Visual C++ 4.0
+      BOOL CWinApp::CreateInitialDocument()
+      {
+        if (m_pMainWnd != NULL)
+          m_pMainWnd->SendMessage(WM_COMMAND, ID_FILE_NEW);
+        else if (m_pDocManager != NULL)
+        {
+          POSITION pos = m_pDocManager->GetFirstDocTemplatePosition();
+          if (pos != NULL)
+          {
+            CDocTemplate* pTemplate = m_pDocManager->GetNextDocTemplate(pos);
+
+            // if MDI, or SDI but we haven't opened any documents yet,
+            // open a new one
+            if (pTemplate != NULL &&
+              (pTemplate->IsKindOf(RUNTIME_CLASS(CMultiDocTemplate)) ||
+              m_pDocManager->GetOpenDocumentCount() == 0))
+            {
+              OnFileNew();
+            }
+          }
+        }
+        return TRUE;
+      }
+
+When a new document is not needed, you can override CreateInitialDocument() and
+have it return TRUE. This is desirable to prevent the file type dialog from
+appearing in applications supporting multiple document types:
+
+      BOOL CMyWinApp::CreateInitialDocument()
+      {
+        return TRUE;
+      }
+
+REFERENCES
+==========
+
+See "Creating Initial Documents" in the Macintosh Porting Guide within the
+Online Documentation.
+
+Additional query words: WM_MACINTOSH WLM_MACEVENT
+
+======================================================================
+Keywords          : kbDocView kbHWMAC kbMFC kbVC200 kbVC400 kbVC420 kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev200Mac kbVCXDev400Mac
+Version           : MACINTOSH:2.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

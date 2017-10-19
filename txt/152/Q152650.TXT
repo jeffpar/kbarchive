@@ -1,0 +1,60 @@
+DOCUMENT:Q152650  31-JUL-2001  [sms]
+TITLE   :Win95 Changes to Full Screen During Inventory Process
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbDatabase smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During the logon process, when running the hardware inventory phase on Windows
+95 clients, the inventory window will change to "full screen" mode. This has
+been known to affect screen resolution of notebooks and have an adverse effect
+on touch screen monitors. To prevent this from happening, modify the
+Lmscript.pif file located in the system directory on the client.
+
+1. Using the My Computer icon, select the \Windows\System directory.
+
+2. Find Lmscript.pif, select it and right-click on it.
+
+3. Select Properties.
+
+4. Select Program.
+
+5. Select 'Minimized' from the Run dialog box.
+
+6. Select Apply.
+
+Next time the logon process runs, the logon window will remain minimized on the
+task bar. Consequently, the screen never enters "full screen" mode.
+
+Additional query words: prodsms sms lmscript pif
+
+======================================================================
+Keywords          : kbnetwork kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

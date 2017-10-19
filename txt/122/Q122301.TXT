@@ -1,0 +1,68 @@
+DOCUMENT:Q122301  29-JUL-2001  [visualc]
+TITLE   :FIX: Correct Icons Are Not Displayed After CD-ROM Setup
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installation is finished, the icons for MFC Tracer, PView, and WinDiff are
+displayed with the default white icons instead of with their own icons. Note
+that the path to run the tools is correct.
+
+CAUSE
+=====
+
+The setup program sets the properties, in Program Manager, for the three icons
+for these three tools to point to the hard disk installation directories. For
+the CD-ROM installation option in setup, these tools are used from the CD-ROM
+and not copied to the hard disk, so the location for the icons is incorrect.
+
+RESOLUTION
+==========
+
+From the Program Manager menu, choose File.Property for the MFC Tracer in the
+'Visual C++ 2.0' group. Click the Change Icon ... button. Change the path for
+the icon to point to the \MSVC20\BIN\TRACER.EXE on CD-ROM. Repeat the procedure
+for PView and WinDiff.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+Additional query words: 2.00 buglist2.00
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVCsearch kbAudDeveloper kbVC200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

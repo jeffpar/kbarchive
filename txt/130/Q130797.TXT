@@ -1,0 +1,59 @@
+DOCUMENT:Q130797  17-DEC-2000  [win95x]
+TITLE   :Cannot Specify Different Default Logon Name for Second Client
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you have both the Microsoft Client for Microsoft Networks and the Microsoft
+Client for NetWare Networks installed, you cannot specify different default
+logon names for the two servers you want to log on to. The logon name that is
+used for the primary network client is always used as the default logon name for
+the secondary network client.
+
+MORE INFORMATION
+================
+
+When you have both the Microsoft Networks and the NetWare Networks clients
+installed, the number of logon dialog boxes you are presented with depends on
+the organization of your logon passwords. If your Windows 95, Windows NT, and
+NetWare passwords are the same, you are presented with only one logon dialog box
+when you start Windows 95. If your Windows 95 and Windows NT passwords are the
+same, but your NetWare password is different, you are presented with two logon
+dialog boxes.
+
+You cannot avoid multiple logon dialog boxes if any two of your logon names are
+different. Because there is no way to specify different default logon names for
+the Microsoft Networks and the NetWare Networks clients, you must manually
+change the logon name for the secondary network client in the logon dialog box
+for that client.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

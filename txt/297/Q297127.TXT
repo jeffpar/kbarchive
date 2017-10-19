@@ -1,0 +1,64 @@
+DOCUMENT:Q297127  10-MAY-2001  [msnetwork]
+TITLE   :Users With Web-based E-mail Accounts Can Receive At Both @msn.co
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a free msn.com e-mail address, you may discover (possibly through
+replies to your e-mail messages) that you can receive e-mail from both msn.com
+and hotmail.msn.com addresses (userid@msn.com and userid@hotmail.msn.com).
+
+CAUSE
+=====
+
+MSN uses certain conventions to differentiate between users with Post Office
+Protocol 3 (POP3) e-mail accounts and those with Web-based email accounts. Users
+with POP3 e-mail accounts will be routed to userid@email.msn.com and users with
+Web-based accounts will be routed to userid@hotmail.msn.com.
+
+RESOLUTION
+==========
+
+The "@hotmail.msn.com" e-mail suffix is a convention that MSN uses to
+differentiate between POP3 and Web-based e-mail accounts, but it is not
+necessary for you to use an address such as userid@hotmail.msn.com. You can
+still receive e-mail using only the "@msn.com" (userid@msn.com).
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q154722  26-JAN-2002  [sms]
+TITLE   :SMS: Administrator and Guest Accounts Are Not Modified
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.0,1.1,1.2,2.0
+OPER/SYS:
+KEYWORDS:kbusage kbInventory kbsmsAdmin smsadmin smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Systems Management Server is configured to automatically configure
+workstation login scripts, it will not modify the user profile for the
+Administrator and Guest accounts.
+
+MORE INFORMATION
+================
+
+Systems Management Server can be configured take the inventory of a computer
+each time it logs on to a domain. This is accomplished with the account's login
+script. Systems Management Server will create a script (Smsls.bat/.cmd) and
+assign it to accounts that did not previously have a logon script or will add
+the necessary lines to those that do. This automatic configuration does not
+assign a script to the Administrator and Guest accounts of a domain. This is by
+design.
+
+If the user profiles of the Administrator or Guest accounts are configured to run
+a login script that is also shared by a normal user account, Systems Management
+Server will configure the existing .bat or .cmd file to call SMSLS. This is the
+only way to automatically configure the Administrator or Guest accounts to
+execute Systems Management Server client setup and inventory.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbusage kbInventory kbsmsAdmin smsadmin smsinv 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : :1.0,1.1,1.2,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

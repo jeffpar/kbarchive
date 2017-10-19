@@ -1,0 +1,97 @@
+DOCUMENT:Q120967  13-FEB-2002  [visualc]
+TITLE   :BUG: Try Blocks Within a Switch Statement Behave Incorrectly
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbCompiler kbCPPonly kbVC kbVC200bug kbVC400bug kbVC410 kbVC420bug kbVC500bug kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 4.0, 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A try block within a switch statement may cause the exception to be handled
+incorrectly, as illustrated by the sample code in the MORE INFORMATION section
+below.
+
+CAUSE
+=====
+
+The compiler doesn't recognize catch blocks within the switch statement.
+Therefore, the compiler attempts to link the try block to the next catch block
+outside the switch. In the sample code in the More Information section below,
+the second catch block is executed after the exception is thrown.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+The following sample code demonstrates the problem:
+
+   /* Compile options needed: /GX
+   */ 
+
+   #include <stdio.h>
+
+   void main(void)
+   {
+      int i = 0;
+
+      try
+      {
+         switch ( i )
+         try
+         {
+            case 0:
+               throw i;
+         }
+         catch( int )
+         {
+         /* Should be caught here but isn't */ 
+            printf( "Passed.\n" );
+         }
+      }
+      catch (...)
+      {
+      /* Is caught here incorrectly */ 
+         printf( "Failed.\n" );
+      }
+   }
+
+Additional query words: kbVC400bug 9.00 10.00 10.10 10.20 exception handling
+
+======================================================================
+Keywords          : kbcode kbCompiler kbCPPonly kbVC kbVC200bug kbVC400bug kbVC410 kbVC420bug kbVC500bug kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :2.0,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

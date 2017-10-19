@@ -1,0 +1,93 @@
+DOCUMENT:Q67788  06-MAY-2001  [masm]
+TITLE   :FIX: IRP Directive Has Single Line Limit of 120 Characters
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:5.1,5.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.1, 5.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Microsoft Macro Assembler (MASM) versions 5.1 and 5.1a, the IRP
+(instruction repeat) directive has a single line limit of 120 characters. MASM
+version 6.0 has no limit. The code example below shows a macro with an IRP that
+has 125 characters. The result of this program with MASM 5.1 or 5.1a is an error
+message that states:
+
+   End of file encountered on input file
+   Number of open conditionals:14
+   End of file encountered on input file
+
+CAUSE
+=====
+
+This error occurs because the assembler is looking for a closing bracket (>),
+but the line is over the limit of 120 characters. As a result, the assembler
+accepts the rest of the code to be part of the IRP parameters. By shortening the
+final parameter to be within the limit (change TP$_EOS to TP), the bracket is
+read correctly and the remainder of the program is assembled with no errors.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 5.1 and 5.1a. This
+problem was corrected in MASM version 6.0.
+
+MORE INFORMATION
+================
+
+Note: In this example, the IRP argument list is stated in three lines; however,
+it should be all on the same line to cause the error. The 120-character limit is
+only on the same line. A workaround is to continue the argument on the next line
+as seen below.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   $tran   macro   keyword
+      irpc TP$_DUMMY, <keyword>
+         ifidn <&TP$_DUMMY>, <T>
+            irp TP$_DUMMY2, <TP$_ANY,TP$_ALPHA,TP$_DIGIT,
+                            TP$_STRING,TP$_SYMBOL,TP$_BLANK,TP$_DECIMAL,
+                            TP$_OCTAL,TP$_HEX,TP$_LAMBDA,TP$_EOS>
+               %out TP$_DUMMY2
+            endm
+         endif
+      endm
+   endm
+
+      $tran     if_anything_cmd
+   end
+
+Additional query words: 5.10 5.10a buglist5.10 buglist5.10a fixlist6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM510a
+Version           : MS-DOS:5.1,5.1a
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

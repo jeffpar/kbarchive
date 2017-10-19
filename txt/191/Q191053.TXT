@@ -1,0 +1,68 @@
+DOCUMENT:Q191053  11-DEC-2001  [winnt]
+TITLE   :Error Appears Behind C2 Security Config Tool Splash Screen
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the C2 Configuration utility from the Terminal Server compact Disc,
+an error dialog may appear behind the Security Manager splash screen. However,
+at most display resolutions, it is impossible to see the error, or to drag it
+into view.
+
+CAUSE
+=====
+
+The Section header "[C2 Security Items]" (no quotation marks) in the
+c2config.inf file should read, "[Security Items]" (no quotation marks). The
+incorrect header causes the error to appear.
+
+RESOLUTION
+==========
+
+1. Copy the files from the Windows Terminal Server 4.0 compact disc
+   \Support\Sectool\Alpha or from the I386 folder, to a folder on your hard disk
+   drive.
+
+2. Edit the C2Config.Inf file and change "[C2 Security Items]" to "[Security
+   Items]" (no quotation marks).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows Terminal Server 4.0.
+
+Additional query words: security tool
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

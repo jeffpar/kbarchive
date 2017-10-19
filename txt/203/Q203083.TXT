@@ -1,0 +1,72 @@
+DOCUMENT:Q203083  17-JUN-2000  [sms]
+TITLE   :SMS: Site System Status Does Not Show Current Database Size
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbMMC kbsms200 kbsms200bug kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Systems Management Server Administrator console, the site system status
+pane does not display the correct database size.
+
+CAUSE
+=====
+
+The Site System Status Summarizer polls the database according to the schedule
+set in Site System Status Summarizer properties.
+
+WORKAROUND
+==========
+
+Use Services in Control Panel on the server to stop and restart the
+SMS_EXECUTIVE service; this action updates the database size in the site system
+status pane.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0 for Microsoft Windows 2000.
+
+MORE INFORMATION
+================
+
+For more information about about viewing the System Status Summarizer schedule,
+click Microsoft Systems Management Server Help on the Help menu, type "status
+summarizers configuration" (without the quotation marks) in the Office Assistant
+or the Answer Wizard, and then click Search to view the topic.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbMMC kbsms200 kbsms200bug kbsmsAdmin 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

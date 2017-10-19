@@ -1,0 +1,105 @@
+DOCUMENT:Q197362  11-JAN-2001  [vbwin]
+TITLE   :FIX: FormatString Ignored for Fixed Columns in MSHFlexGrid
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbCtrl kbVBp kbVBp600bug kbGrpDSVB kbVS600sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you specify justification settings in the FormatString Property of the
+Microsoft Hierarchical Flexgrid control, the justification is ignored for fixed
+columns.
+
+RESOLUTION
+==========
+
+Following are two alternatives, both of which have limitations:
+
+ - If possible, use the Microsoft FlexGrid control. The FlexGrid control is not
+   affected by this problem.
+
+ - Avoid using fixed columns when using the Hierarchical FlexGrid.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio 6.0 Service Packs, please see the
+following articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Visual Basic Standard EXE Project. Form1 is created by default.
+
+2. From the Project menu, choose Components and then select the Microsoft
+   Hierarchical FlexGrid Control 6.0 (OLEDB). Click OK.
+
+3. Place an instance of the Hierarchical FlexGrid on Form1.
+
+4. Place the following code in the General Declarations section of Form1:
+
+         Option Explicit
+
+         Private Sub Form_Load()
+            Dim strFormat As String
+            ' The '^' in strFormat is a Center Justify instruction
+            strFormat = "^AAA      |^BBBB      |^CCC      "
+            MSHFlexGrid1.Rows = 10
+            MSHFlexGrid1.Cols = 3
+            For i = 0 To 9
+               For j = 0 To 2
+                  MSHFlexGrid1.TextMatrix(i, j) = "XXX"
+               Next j
+            Next i
+            MSHFlexGrid1.FormatString = strFormat
+         End Sub
+
+5. Run the Project. Note that the justification does not take effect on the
+   fixed column (that is, column 1.)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbCtrl kbVBp kbVBp600bug kbGrpDSVB kbVS600sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

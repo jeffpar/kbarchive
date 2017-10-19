@@ -1,0 +1,275 @@
+DOCUMENT:Q159298  19-JUN-2001  [exchange]
+TITLE   :Analyzing Exchange RPC Traffic Over TCP/IP
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Exchange Server, you sometimes need to read and analyze sniffer traces when
+troubleshooting server-to-server communication along with client-to- server
+communication. This article addresses RPC sniffs between various Exchange Server
+services.
+
+MORE INFORMATION
+================
+
+End Point Mapper
+----------------
+
+To understand the various stages an RPC Client goes through in order to connect
+to a certain service, we must first understand how the Remote Procedure Call
+(RPC) Service', otherwise known as the End Point Mapper, aids Exchange in its
+quest for service UUID numbers. The End Point Mapper performs a variety of tasks
+but the one we are interested in is its ability to tell us the port number a
+service we are looking for is listening on. UUID's can be generally categorized
+by their first 2 characters, for Microsoft Exchange v4.0 and v5.0:
+
+   A4 - STORE
+   F5 - DIRECTORY
+   E1 - ENDPOINT MAPPER
+
+Let us take the following example where ExchangeA Server wants to send a message
+to ExchangeB Server (ExchangeA and ExchangeB are in the same site therefore the
+communication mechanism is RPC and in this case it is over TCP/IP).
+
+The first thing that ExchangeA must do is query ExchangeB's End Point Mapper to
+find where its MTA is listening. The reason for this is the port number that
+each Exchange service listens on can change on subsequent startups. The End
+Point Mapper is responsible for tracking which service is listening on which
+point. When an Exchange service starts, it registers itself with the End Point
+Mapper and asks the End Point Mapper to assign it a port number. The End Point
+Mapper is always listening on port 135 for TCP/IP and the End Point Mapper's
+UUID is (E1AF8308-5D1F-11C9-91A4-08002B14A0FA).
+
+The following 11 frames show the complete conversation between ExchangeA (on port
+3464) and ExchangeB's End Point Mapper (on port 135):
+
+1. TCP: ....S., len:    4, seq: 562005063-562005066, ack:         0, win:
+   8192, src: 3464  dst:  135
+
+2. TCP: .A..S., len:    4, seq: 875064831-875064834, ack: 562005064, win:
+   8760, src:  135  dst: 3464
+
+3. TCP: .A...., len:    0, seq: 562005064-562005064, ack: 875064832, win:
+   8760, src: 3464  dst:  135
+
+4. MSRPC: c/o RPC Bind:         UUID E1AF8308-5D1F-11C9-91A4-08002B14A0FA
+   call 0x54004E  assoc grp 0x0  xmit 0x16D0  recv 0x16D0
+
+5. MSRPC: c/o RPC Bind Ack:     call 0x54004E  assoc grp 0x33CFA  xmit
+   0x16D0  recv 0x16D0
+
+6. MSRPC: c/o RPC Request:      call 0x1  opnum 0x3  context 0x0  hint
+   0x84
+
+7. MSRPC: c/o RPC Response:     call 0x1  context 0x0  hint 0x80  cancels
+   0x0
+
+8. TCP: .A...F, len:    0, seq: 562005292-562005292, ack: 875065044, win:
+   8548, src: 3464  dst:  135
+
+9. TCP: .A...., len:    0, seq: 875065044-875065044, ack: 562005293, win:
+   8532, src:  135  dst: 3464
+
+10. TCP: .A...F, len:    0, seq: 875065044-875065044, ack: 562005293, win:
+   8532, src:  135  dst: 3464
+
+11. TCP: .A...., len:    0, seq: 562005293-562005293, ack: 875065045, win:
+   8548, src: 3464  dst:  135
+
+Frame 1 - ExchangeA sends a Syn packet to ExchangeB.
+
+Frame 2 - ExchangeB acknowledges the packet with a SynAck packet.
+
+Frame 3 - ExchangeA sends an acknowledge of the SynAck. We now have a TCP
+connection between ExchangeA and ExchangeB.
+
+Frame 4 - ExchangeA is Binding to ExchangeB's End Point Mapper. We know this by
+the UUID number (E1AF8308-5D1F-11C9-91A4-08002B14A0FA) it is sending the Bind to
+and also by the dst: port number.
+
+Frame 5 - ExchangeB acknowledges the Bind with a BindAck. We now have an RPC
+connection between ExchangeA and ExchangeB's End Point Mapper.
+
+Frame 6 - ExchangeA sends an RPC Request of opnum 0x3 to ExchangeB along with the
+UUID of the service it is looking for (in this case it is ExchangeB's MTA). This
+is to request the port number of the service with the corresponding UUID.
+
+Frame 7 - ExchangeB returns the port number that the service that matches this
+UUID is listening on. ExchangeA now has all the information it needs to find the
+MTA on ExchangeB.
+
+Frames 8 through 11 - Closing down the TCP connection between ExchangeA and
+ExchangeB.
+
+Now that ExchangeA knows the port number it needs to connect to ExchangeB's MTA.
+An important note here is the Exchange MTA does an RPC bind slightly different
+than most RPC binds. It performs a two-way handshake, meaning, not only does
+ExchangeA have to bind to ExchangeB but ExchangeB must bind to ExchangeA before
+any messages can be sent. Therefore, you should see a Bind followed by a BindAck
+then another Bind from the other server followed by another BindAck as
+illustrated below.
+
+1. TCP: ....S., len:    4, seq: 562005113-562005116, ack:         0, win:
+   8192, src: 3470  dst: 4764
+
+2. TCP: .A..S., len:    4, seq: 875064881-875064884, ack: 562005114, win:
+   8760, src: 4764  dst: 3470
+
+3. TCP: .A...., len:    0, seq: 562005114-562005114, ack: 875064882, win:
+   8760, src: 3470  dst: 4764
+
+4. MSRPC: c/o RPC Bind:         UUID 9E8EE830-4459-11CE-979B-00AA005FFEBE
+   call 0x1EBE80  assoc grp 0x0  xmit 0x16D0  recv 0x16D0
+
+5. MSRPC: c/o RPC Bind Ack:     call 0x1EBE80  assoc grp 0x3150EAC1  xmit
+   0x16D0  recv 0x16D0
+
+6. TCP: .AP..., len:  206, seq: 562005250-562005455, ack: 875064990, win:
+   8652, src: 3470  dst: 4764
+
+7. MSRPC: c/o RPC Request:      call 0x1  opnum 0x0  context 0x0  hint
+   0x11E
+
+8. TCP: .A...., len:    0, seq: 875064990-875064990, ack: 562005792, win:
+    8082, src: 4764  dst: 3470
+
+9. TCP: ....S., len:    4, seq: 875064951-875064954, ack:         0, win:
+    8192, src: 1969  dst: 1733
+
+10. TCP: .A..S., len:    4, seq: 562005173-562005176, ack: 875064952, win:
+   8760, src: 1733  dst: 1969
+
+11. TCP: .A...., len:    0, seq: 875064952-875064952, ack: 562005174, win:
+   8760, src: 1969  dst: 1733
+
+12. MSRPC: c/o RPC Bind:         UUID 9E8EE830-4459-11CE-979B-00AA005FFEBE
+   call 0x6C645F65  assoc grp 0x0  xmit 0x16D0  recv 0x16D0
+
+13. MSRPC: c/o RPC Bind Ack:     call 0x6C645F65  assoc grp 0x215D6F47
+   xmit 0x16D0  recv 0x16D0
+
+14. TCP: .AP..., len:  192, seq: 875065087-875065278, ack: 562005282, win:
+   8652, src: 1969  dst: 1733
+
+15. MSRPC: c/o RPC Request:      call 0x7DFE09C  opnum 0x1  context 0x0
+   hint 0x2
+
+16. TCP: .A...., len:    0, seq: 562005282-562005282, ack: 875065335, win:
+   8377, src: 1733  dst: 1969
+
+17. MSRPC: c/o RPC Response:     call 0x7DFE09C  context 0x0  hint 0x1C
+   cancels 0x0
+
+18. MSRPC: c/o RPC Response:     call 0x1  context 0x0  hint 0x20  cancels
+   0x0
+
+Frames 1 through 3 - Once again our TCP three way handshake.
+
+Frame 4 - ExchangeA MTA is binding to ExchangeB MTA.
+
+Frame 5 - ExchangeB acknowledges the Bind with a BindAck.
+
+Frame 6 -
+
+Frame 7 - ExchangeA sends an RPC Request with opnum 0x0. An opnum 0x0 is an
+MtaBind call. This will trigger ExchangeB's MTA to issue a Bind to ExchangeA as
+the MTA's need a two way connection.
+
+Frame 8 - ExchangeB acknowledges it received Frame 7.
+
+Framess 9 through 11 - Our TCP three way handshake initiated by ExchangeB this
+time.
+
+Frame 12 - ExchangeB MTA is binding to ExchangeB's MTA.
+
+Frame 13 - ExchangeA acknowledges the Bind with a BindAck.
+
+Frame 14 -
+
+Frame 15 - ExchangeB sends an RPC Request with opnum 0x1. An opnum 0x1 is an
+MtaBindBack call. This is setting up the two way conversation the MTA's need.
+
+Frame 16 - ExchangeA acknowledges it received Frame 15.
+
+Frame 17 - ExchangeB's response to Frame 7.
+
+Frame 18 - ExchangeA's response to Frame 15.
+
+This illustrates the flow of an RPC connection. The example above illustrates
+specifically a typical connection between two MTA's. This same kind of
+conversation will happen between the other various Exchange Services as well
+although the MTA is the only one that needs a two way conversation to exchange
+information.
+
+The information contained in this article uses the MTA for its examples. An
+important note is this same type of conversation will happen with any and all
+Exchange RPC communication over TCP/IP.
+
+1. The TCP three-way handshake will be established.
+
+2. The End Point Mapper is consulted in order to determine on which port the
+   service wanted is listening.
+
+3. A Bind and BindAck between the two services will happen to establish RPC
+   communication.
+
+4. Optional - A series of Requests and Responses with opnums will be issued.
+
+5. Optional - The RPC communication is ended.
+
+6. The TCP connection is broken with Fin packets.
+
+When looking through sniffer traces of RPC communications, or any TCP
+communication, it is important that you are aware that multiple conversations
+can be occurring simultaneously. Do not assume that simply because a Request
+packet follows a BindAck packet that this Request came from the particular
+conversation you are interested in. A quick check of the destination and source
+ports with TCP will tell you if the packet you are looking at is part of the
+conversation you are interested or not. If the destination and/or source port
+number is no the same as the port numbers used in the TCP three way handshake,
+the packet you are looking at is part of a separate conversation.
+
+A good display filter within Network Monitor, filtering on the destination and
+source port numbers will serve as a great aide in ensuring the packets you are
+looking at do indeed belong to the conversation in question.
+
+One other important note is this article addresses RPC over TCP only. No matter
+what the underlying protocol is, the RPC piece of this article remains the same.
+For example RPC over IPX would work quite similarly except the IPX communication
+would have to be established prior to RPC much in the same way TCP must be
+established before RPC.
+
+
+Additional query words: Netmon Network Monitor
+
+======================================================================
+Keywords          : kbnetwork kbtool kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

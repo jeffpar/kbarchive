@@ -1,0 +1,97 @@
+DOCUMENT:Q307489  04-OCT-2001  [iis]
+TITLE   :Cannot Access .shtml Files with JRUN ISAPI Filter Installed
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Users cannot browse to files with a .shtml extension. Even though the .shtml
+application mapping is correctly mapped to Ssinc.dll, requests for files with
+the .shtml extension receive a "404 - Page Not Found" error message.
+
+CAUSE
+=====
+
+A problem in the JRUN ISAPI filter prevents .shtml from being properly passed to
+Internet Information Services (IIS) for processing.
+
+RESOLUTION
+==========
+
+Contact the manufacturer (Macromedia or Allaire) of the JRUN ISAPI filter for
+updates or fixes.
+
+WORKAROUND
+==========
+
+Remove the JRUN ISAPI filter from IIS to allow the files to be processed:
+
+NOTE: Removing the JRUN ISAPI filter from IIS will disable any Java applications
+that depend on JRUN.
+
+1. Open the Internet Service Manager.
+
+2. Right-click the server name, and then click Properties.
+
+3. Under Master Properties, select WWW Service, and then click Edit.
+
+4. Click the Home Directory tab, and then click the ISAPI Filters tab.
+
+5. Click to highlight the JRUN ISAPI filter, and then click Remove.
+
+6. Click OK until all the property sheets are closed.
+
+7. Right-click the server name again, and then click Restart IIS....
+
+8. Make sure that Restart Internet Services on <server name> is selected,
+   and then click OK.
+
+MORE INFORMATION
+================
+
+The JRUN ISAPI filter may also cause IIS logging to be distorted, duplicated,
+corrupt, or incorrect.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: iis 5; JRUN; ISAPI; .shtml
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

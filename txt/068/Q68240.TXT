@@ -1,0 +1,64 @@
+DOCUMENT:Q68240  09-NOV-1999  [win95x]
+TITLE   :Renaissance RVGA 2 Video Card WIN30FIX Patch for Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to run an MS-DOS application in a window when you are using the
+RVGA 2 video card from Renaissance, Microsoft Windows version 3.0 may stop
+responding (hang). The MS-DOS application works correctly in full- screen mode.
+
+RESOLUTION
+==========
+
+Renaissance is aware of this problem and has created a patch to correct this
+behavior. The file you need is WIN30FIX.EXE. Before you load Windows 3.0,
+execute this file. You can run this file at the MS-DOS prompt or execute it in
+the AUTOEXEC.BAT file.
+
+You can obtain this file by downloading it from Renaissance's Bulletin Board at
+(425) 454-0511 or by calling its technical support number (800) 422-7369. Ask
+for the RVGA 2 video card patch to correct the problem of MS-DOS applications
+running incorrectly in a window under Windows 3.0, and they will mail you the
+WIN30FIX.EXE file.
+
+MORE INFORMATION
+================
+
+The Renaissance product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance ore reliability.
+
+Additional query words: 3rdparty WIN30 3.0 3.0a 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q232333  10-AUG-2001  [winnt]
+TITLE   :Error Message When Using a Colon in File or Folder Name in SFU
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Services for UNIX Add-On Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Services for UNIX Client for NFS component to create a file or
+folder name that contains a colon on an NFS file share, you may receive an error
+message. For example, if you attempt to create a folder named 7:5, you may
+receive an error message similar to the following example:
+
+   MakeDir cannot create 7:5 : Not owner.
+
+CAUSE
+=====
+
+When only one character precedes a colon in a file or folder name, Windows NT
+interprets the file or folder name as a drive letter.
+
+RESOLUTION
+==========
+
+To resolve this issue, do not use file or folder names that have only one
+character preceding a colon.
+
+Additional query words: sfu
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTServicesUnix
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

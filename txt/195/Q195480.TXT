@@ -1,0 +1,172 @@
+DOCUMENT:Q195480  17-JUL-2002  [homegame]
+TITLE   :Close Combat Error Message: Inform DirectDraw That the Previous
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kberrmsg ccabtf kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat: A Bridge Too Far, version 2.0 
+ - Microsoft Close Combat III: The Russian Front 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Close Combat: A Bridge Too Far, you may receive the
+following error message:
+
+   Inform DirectDraw that the previous BLT which is transferring information to
+   or from this surface is incomplete.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions are true:
+
+ - The settings for your display adapter are incorrect.
+ - The video driver for your display adapter is outdated.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods.
+
+Change Display Settings
+-----------------------
+
+To resolve this issue, change the screen resolution and color palette settings to
+the settings used by Close Combat: A Bridge Too Far. To do this, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Colors or Color Palette box, click High Color (16-bit).
+
+5. Move the Screen Area or Desktop Area slider until "800 by 600 pixels" is
+   displayed under the slider.
+
+6. Click OK. If you are prompted to restart the computer, do so.
+
+7. Close Control Panel.
+
+If the issue continues to occur, proceed to the next method.
+
+Disable DirectDraw
+------------------
+
+To work around this issue, disable DirectDraw in the DirectX Diagnostic Tool
+window:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+   OK.
+
+3. On the Display tab, under DirectX Features (next to DirectDraw Acceleration),
+   click Disable.
+
+4. When you receive the following warning, click OK:
+
+   This will disable hardware acceleration of DirectDraw for ALL display devices
+   on your system. It will also make any Direct3D acceleration unavailable.
+
+5. Click Exit.
+
+Obtain an Updated Video Driver
+------------------------------
+
+Contact your hardware manufacturer to inquire about obtaining the latest
+DirectX-compatible video driver for your display adapter.
+
+For additional information about how to contact your hardware manufacturer, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+If the issue continues to occur, proceed to the next method.
+
+Reduce the Graphics Hardware Acceleration
+-----------------------------------------
+
+To reduce the graphics hardware acceleration, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Performance tab, and then click Graphics.
+
+4. Move the Hardware Acceleration slider until it is one notch to the right of
+   None (the Basic acceleration setting).
+
+5. Click OK, and then click Close.
+
+6. When you are prompted to restart the computer, click Yes.
+
+   NOTE: If you encounter any problems after reducing the hardware acceleration
+   setting, follow these steps to restore the original setting:
+
+   a. Restart Windows in Safe mode. To do so, follow the steps in the
+      appropriate section below:
+
+      Windows 95
+      ----------
+
+      Restart your computer. When you see the "Starting Windows 95" message,
+      press the F8 key, and then choose Safe Mode from the Startup menu.
+
+      Windows 98
+      ----------
+
+      Restart your computer, press and hold down the CTRL key after the computer
+      completes the Power On Self Test (POST), and then select Safe Mode from
+      the Startup menu.
+
+   b. When Windows starts in Safe mode, click OK.
+
+   c. Repeat steps 1-6, but in step 4 move the Hardware Acceleration slider back
+      to its original setting.
+
+STATUS
+======
+
+Microsoft provides third-party contact information to help you find technical
+support. This contact information may change without notice. Microsoft does not
+guarantee the accuracy of this third-party contact information.
+
+Additional query words: 2.00 msgame abtf abridgetoofar cc2 ccii
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kberrmsg ccabtf kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

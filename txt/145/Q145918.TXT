@@ -1,0 +1,77 @@
+DOCUMENT:Q145918  04-OCT-2001  [frontpg]
+TITLE   :FP: HTTP Error 400 Opening FrontPage Explorer
+PRODUCT :Word Front Page
+PROD/VER:windows:1.0,1.1,97
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194058.
+
+SYMPTOMS
+========
+
+When you open FrontPage Explorer and click the List Webs button in the Open Webs
+dialog box or create a new Web, you get an HTTP 400 error message.
+
+CAUSE
+=====
+
+This error indicates insufficient memory due to one or more of the following:
+
+ - Not enough physical Random Access Memory (RAM).
+ - Insufficient free space on your hard disk drive.
+ - Not enough virtual memory.
+ - Invalid or no Temp directory.
+
+RESOLUTION
+==========
+
+To resolve this error, do the following:
+
+1. Make sure that you have at least 16 megabytes (MB) of physical RAM installed
+   on your computer if you are running the Personal Web Server, FrontPage
+   Explorer, and FrontPage Editor at the same time. If you are not running the
+   Personal Web Server, but you are running FrontPage Explorer and FrontPage
+   Editor, make sure your computer has at least 8 MB of physical RAM.
+
+2. Verify that you have at least 16 MB of free space on the hard disk.
+
+3. Make sure that you have a permanent swap file that is at least 20 MB.
+
+4. Check that there is a valid SET TEMP statement in the Autoexec.bat file. Also
+   make sure that the Temp directory exists and is not full of temporary files.
+   Microsoft recommends that you delete these temporary files after you exit
+   Windows.
+
+Additional query words: 1.00a front page personal Web server pws explorer editor out of memory insufficient low not enough vermeer
+
+======================================================================
+Keywords          : kberrmsg kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : windows:1.0,1.1,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

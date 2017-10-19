@@ -1,0 +1,67 @@
+DOCUMENT:Q69483  30-OCT-1999  [win95x]
+TITLE   :Running SMARTDrive with Windows and Future Domain's LDRIVE.SYS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Future Domain, SMARTDrive may be run with Future Domain's
+LDRIVE.SYS driver for its SCSI drive without risk of data loss if LDRIVE.SYS is
+loaded after SMARTDrive in the CONFIG.SYS file.
+
+MORE INFORMATION
+================
+
+LDRIVE.SYS is a third-party disk partitioning driver that addresses partitions
+larger than 32 MB. Microsoft generally recommends that SMARTDrive not be used
+when using third-party disk partitioning drivers that create a nonstandard
+MS-DOS environment. However, for bus mastering disk controllers such as SCSI
+drives, SMARTDrive provides double buffering of data that is important for
+Windows operation.
+
+Future Domain has tested this configuration extensively and supports running both
+these drivers concurrently, as long as the device line for SMARTDrive comes
+before LDRIVE.SYS in the CONFIG.SYS file. An alternative is to reformat and
+partition the hard drive with the MS-DOS FDISK program if this configuration is
+incompatible.
+
+This information has been supplied by Future Domain and has not yet been fully
+researched or tested by Microsoft. For more information, contact Future Domain
+technical support.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding the products' performance
+or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty winmem smart drive disk-partitioning
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,71 @@
+DOCUMENT:Q139389  10-FEB-2000  [foxpro]
+TITLE   :How to Read OLE Type Library Information in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro allows the use of OLE controls in your applications. These
+controls are available from a variety of sources. Often, it is necessary to
+determine the names of the properties, methods, and events available in an OLE
+control.
+
+MORE INFORMATION
+================
+
+This information is available through the OLE control's type library, which was
+created by the .ocx developer. Visual FoxPro allows you to read this information
+programmatically by using the AMEMBERS() function.
+
+Steps to Determine Events, Methods, and Properties Exposed in an .Ocx File
+--------------------------------------------------------------------------
+
+1. Create a new form.
+
+2. Add an OLE Container control to the form.
+
+3. On the Insert menu, click Control, and select the desired control.
+
+4. Save and run the form. Minimize the form.
+
+5. In the Command window, type:
+
+      =AMEMBERS(aType, formname.olecontrol1,1)
+      _SCREEN.SHOW
+      DISPLAY MEMORY LIKE aType
+
+The array containing the exposed properties and methods of the .ocx should be
+displayed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

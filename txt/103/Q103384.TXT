@@ -1,0 +1,57 @@
+DOCUMENT:Q103384  15-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Mail Remote for Windows Doesn't Accept Incoming Calls
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.2 of Microsoft Mail Remote for Windows provides no way to accept
+incoming calls from the External Mail program. Windows Remote users can only be
+set up as Request and not as Call/Request.
+
+Versions of the Mail Remote client earlier than version 3.2 support the use of
+the Listen program. The Listen program is a terminate-and-stay-resident (TSR)
+program that allows the user's machine to interrogate the phone line for
+incoming mail from the External Mail program while the user operates other
+programs on his or her machine. In this case, the Mail administrator would set
+up the user to be a Call/Request user (this procedure is explained in Chapter 10
+of the Microsoft Mail version 3.2 "Administrator's Guide").
+
+In the Mail Remote for Windows client, the Listen program is no longer supported
+because of the nature of the interaction between Windows and most TSR programs.
+The user therefore cannot be set up as a Call/Request user because there is no
+way for Mail Remote for Windows to receive the calls.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

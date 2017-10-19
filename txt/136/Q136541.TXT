@@ -1,0 +1,91 @@
+DOCUMENT:Q136541  07-DEC-2001  [ssafe]
+TITLE   :PRB: Visual SourceSafe Books Online Help Viewer Crashes
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Start Books Online. The introductory dialog that appears includes an OK command
+button, a Cancel command button, and a grayed and disabled Help button. Pressing
+F1 to bring up a help dialog causes one of the following error messages to be
+appear, depending on the operating system that you are using:
+
+Windows NT
+----------
+
+   The instruction at "0x00429318" referenced memory at "0x00000320". The memory
+   could not be "read".
+
+Windows 95
+----------
+
+   The program has performed an illegal operation and will be shut down.
+
+After you dismiss this dialog, the InfoViewer terminates.
+
+CAUSE
+=====
+
+Visual SourceSafe ships with the InfoViewer application to enable documentation
+to be viewed online. This is a known InfoViewer bug.
+
+RESOLUTION
+==========
+
+Do not press F1 when you see a grayed help button. To view one of the topics,
+select its title in the list box and click OK. If you've decided you don't wish
+to view any of the listed topics, press Cancel.
+
+STATUS
+======
+
+This problem will be fixed in InfoViewer 2.52.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the Microsoft Visual SourceSafe program group in Program Manager, or
+   navigate to the Visual SourceSafe menu from the Start button.
+
+2. Double-click the Books Online icon to start a copy of the InfoViewer browser.
+   A dialog appears with enabled OK and Cancel buttons, as well as a disabled
+   Help button.
+
+3. Press F1.
+
+RESULT: You receive one of the two error messages listed under the SYMPTOMS
+section, depending on your operating system.
+
+Additional query words: gp fault crash
+
+======================================================================
+Keywords          : kbSSafe400 
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

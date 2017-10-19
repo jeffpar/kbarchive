@@ -1,0 +1,59 @@
+DOCUMENT:Q177262  07-MAY-2002  [homegame]
+TITLE   :FS98: List of Video Codecs Installed by the Indeo4 Setup Program
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the video codes that are installed by the Indeo4
+Setup program.
+
+MORE INFORMATION
+================
+
+The video codecs installed by Indeo4 are:
+
+ - Indeo video interactive R4.1 by Intel
+ - Indeo video R3.2 by Intel (this video codec is listed twice)
+ - Indeo video Raw YVU9 by Intel or iyvu9_32[YVU9]
+
+The Indeo4 Setup program is located in the Indeo4 folder on the Flight Simulator
+98 CD-ROM. To run Indeo4 Setup, double-click Install.exe, and then choose the
+appropriate version of Setup for your operating system.
+
+A video codec is a software compressor and decompressor for compressing and
+decompressing video data.
+
+Additional query words: flightsim fltsim flt sim fs98 display compression decompression
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

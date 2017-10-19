@@ -1,0 +1,73 @@
+DOCUMENT:Q157426  16-SEP-1999  [schedplus]
+TITLE   :XCLN: "All Your Access Permissions Could Not Be Reset..." Err
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0a
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+7.00a
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to set Access Permissions on your schedule file, the user may
+receive the following informational error message:
+
+   All your access permissions could not be reset on the server. Those that were
+   not set have been removed from your shared schedule file. Choose Set Access
+   Permissions from the Tools menu to see which permissions could not be set.
+
+CAUSE
+=====
+
+The user is trying to add users for Access Permissions from the personal address
+book (PAB).
+
+RESOLUTION
+==========
+
+Remove the users added using the PAB, and select subsequent users from the
+global address list (GAL).
+
+STATUS
+======
+
+This is by design.
+
+MORE INFORMATION
+================
+
+The server-based calendar file (.SCD) cannot recognize the entries stored in the
+local PAB.
+
+Additional query words: 7.00a
+
+======================================================================
+Keywords          : win95 
+Technology        : kbScheduleSearch kbSchedule700a
+Version           : WINDOWS:7.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

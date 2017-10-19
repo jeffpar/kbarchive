@@ -1,0 +1,70 @@
+DOCUMENT:Q121850  08-AUG-2001  [winnt]
+TITLE   :Windows NT Hangs on Computers Using AMD PCNet Network Cards
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.50
+
+WINDOWS
+
+kbhw
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT stops responding (hangs) when you try to copy a file during periods
+of high network traffic. If you are using a computer with a built- in network
+adapter, the system may hang intermittently.
+
+CAUSE
+=====
+
+These problems occur when you are using one of the AMD PCNet network adapters
+and the Windows NT version 3.5 AMD Enet driver (PCNTN3.SYS).
+
+
+RESOLUTION
+==========
+
+Contact Compaq Technical Support at (800) 652-6672 for the latest version of the
+Compaq Support Software Diskette (SSD) for Windows NT 3.5. For more information
+on the Compaq SSD, query on the following words here in the Microsoft Knowledge
+Base:
+
+   COMPAQ SSD V112
+
+The Compaq products discussed here are manufactured by Compaq Computer Corp., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+Additional query words: prodnt v1.12a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

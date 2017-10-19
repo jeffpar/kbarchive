@@ -1,0 +1,61 @@
+DOCUMENT:Q233448  24-JUN-1999  [homemm]
+TITLE   :Business Planner: Changing Link Color Does Not Affect Web Links
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the link color option in Microsoft Business Planner, the color
+of the Web links on Web Links pages does not change.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+You can only change the color of links that appear within Business Planner
+articles, such as links to related articles and the glossary.
+
+You cannot change the color of the following links:
+
+ - Links to external Web sites
+ - Links to Tips
+ - Links to Topic Resources pages
+ - Wizard links to templates in other programs
+
+Additional query words: msbp hyperlinks colors hot jump
+
+======================================================================
+Keywords          : kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

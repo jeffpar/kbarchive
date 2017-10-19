@@ -1,0 +1,188 @@
+DOCUMENT:Q75488  08-JAN-2000  [win95x]
+TITLE   :Floppy Disk Drive Problems in 386 Enhanced Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+If you are experiencing errors reading, writing, or formatting floppy disk drives
+while running Windows in 386 enhanced mode, follow the steps listed below to
+troubleshoot and resolve the problem.
+
+WORKAROUND
+==========
+
+1. Exit Windows.
+
+2. To determine whether your system is reading the floppy disk directory, insert
+   a disk in drive A, and type the following at the MS-DOS command prompt:
+
+   " dir a: " (without the quotation marks)
+
+   NOTE: If you remove the disk from drive A and type "dir a:" (without the
+   quotation marks) and the directory lists again, it is an indication of an
+   improper CMOS version or incorrect hardware setup (for example, a 3.5-inch
+   drive on a jumper for an XT computer).
+
+3. To determine whether your system writes to the floppy disk drive, type the
+   following at the MS-DOS command prompt
+
+   " copy <filename> a: " (without the quotation marks)
+
+   where <filename> is any valid file on your hard disk.
+
+   If the commands in steps 2 and 3 do not work, the problem is at the MS-DOS
+   level.
+
+4. Restart your computer using the minimum information in your AUTOEXEC.BAT file
+   and CONFIG.SYS file that your computer needs to start up. For more
+   information about how to do this, query on the following words in the
+   Microsoft Knowledge Base:
+
+   " troubleshooting and autoexec.bat and config.sys and files " (without the
+   quotation marks)
+
+   NOTE: Anti-Virus software commonly causes this problem.
+
+5. Does the floppy disk drive read problem go away when you run Windows in
+   standard mode or real mode? To test this, start Windows by typing the
+   following at the MS-DOS command prompt:
+
+   " win /s " (without the quotation marks)
+
+   If everything works correctly in Windows, you know that the problem is related
+   only to running Windows in 386 enhanced mode.
+
+   If the problem is specifically related to 386 enhanced mode, you may be
+   loading SYMEVNT.386 from Norton Utilities 8.0. For more information about
+   SYMEVNT.386, query in the Microsoft Knowledge Base on the following words:
+
+   " symevnt.386 and norton " (without the quotation marks)
+
+   If the problem is specifically related to 386 enhanced mode but you are not
+   loading SYMEVNT.386, using the switches below may lessen the problem. Add
+   these switches to the SYSTEM.INI file in the [386Enh] section in the order
+   shown. If you find one of the switches works, you can try removing previous
+   switches that had no effect. Note that the switches listed in item (b) should
+   be added or removed as a pair. (See the MORE INFORMATION section of this
+   article for an explanation of these switches.)
+
+   a. IRQ9GLOBAL=YES
+
+   b. HIGHFLOPPYREADS=NO
+      EMMEXCLUDE=E000-EFFF
+
+   c. VirtualHDIrq=OFF
+
+6. Insert a semicolon (;) before the Load= and Run= lines in the WIN.INI file to
+   ensure that nothing else is being loaded that could cause a problem.
+
+7. Check to see if you can successfully issue commands in Windows at the MS-DOS
+   command prompt. If commands work at the MS-DOS level, it indicates a BIOS or
+   hard disk drive/floppy controller BIOS problem.
+
+8. Is the floppy disk drive icon displayed in File Manager? If not, check your
+   BIOS version and contact your hardware manufacturer for an update.
+
+9. Disable any BIOS and video shadowing. Each computer may have a different way
+   of disabling its shadowing. You will need to check your system documentation
+   and follow the instructions provided there to perform this task.
+
+10. Check for third-party or external floppy disk drivers.
+
+11. Check the type and version of MS-DOS. MS-DOS versions earlier than 3.3 do
+   not support 1.44-MB drives.
+
+12. Check for hardware devices that may be using the same IRQ as the floppy disk
+   drive controller. (By default, the floppy disk drive controller uses IRQ 6.)
+
+13. Check to see if an IDE ATIO card is in use. This is an integrated card that
+   contains a game port, serial port, parallel port, IDE, and floppy disk drive
+   controller. Remove this card and insert a card that has only the IDE floppy
+   disk drive controller on it.
+
+MORE INFORMATION
+================
+
+The following paragraphs explain the switches used in step 5 above.
+
+IRQ9Global=<boolean>
+--------------------
+
+Default: No
+
+Purpose: If enabled, this switch converts IRQ9 masks to global. Enable this
+setting if your system stops responding (hangs) when accessing a floppy disk
+drive, or make sure your system accesses the floppy disk drive before you start
+Windows.
+
+HighFloppyReads=<boolean>
+-------------------------
+
+Default: Yes
+
+Purpose: Normally, Windows turns a DMA verify to the area E000:0000- EFFF:FFFF
+into a read. In rare cases, this might cause the system to fail because some
+software might, as a result, write over the system's shadow RAM if you have it
+in this area. If this happens, disable this setting and set EMMExclude to
+E000-EFFF.
+
+EMMExclude=<paragraph-range>
+----------------------------
+
+Default: None
+
+Purpose: Specifies a range of memory that Windows will not scan to find unused
+address space. This has the side effect of turning off the RAM and ROM search
+code for the range. The range (two paragraph values separated by a hyphen) must
+be between A000 and EFFF. This scanning can interfere with some adapters that
+use the same memory area. The starting value is rounded down and the ending
+value is rounded up to a multiple of 16K. For example, you could set
+EMMExclude=C800-CFFF to prevent Windows from scanning the addresses C800:0000
+through CFFF:000F. You can specify more than one range by including more than
+one EMMExclude line.
+
+VirtualHDIrq=<boolean>
+----------------------
+
+Default: On
+
+Purpose: If enabled, Windows in 386 enhanced mode can terminate interrupts from
+the hard disk controller, bypassing the ROM routine that handles these
+interrupts. Some hard disk drives may require this setting to be disabled for
+interrupts to be processed correctly. If this setting is disabled, the ROM
+routine handles the interrupts, which slows down system performance.
+
+Additional query words: tshoot 3.00 3.00a 3.10 3.11 central point norton format
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,54 @@
+DOCUMENT:Q96657  08-NOV-1999  [pcmail]
+TITLE   :3COM: UPLOAD.EXE -D Parameter Does Not Require Backslash (\)
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to 3Com 3+Mail, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for version 1.0 of the Microsoft Mail Gateway to 3Com Mail
+Conversion Utility contains an error that may make installing the product more
+difficult.
+
+On pages 46 and 47 of the "Microsoft Mail Gateway to 3Com 3_Mail Administrator's
+Guide," and in the README.TXT file for Microsoft Mail Conversion Utility to 3Com
+3+Mail, the discussion of the -D parameter (which indicates the MS-DOS drive
+letter for the Microsoft Mail for PC Networks postoffice) documents the
+parameter as -DM:\, with a trailing backslash (\) character. The backslash
+character is not used and it can cause the conversion to fail.
+
+Page 47 shows a correct example under the heading "Typical UPLOAD Examples." The
+example shows the parameter as -DM:, where the drive letter is followed only by
+a colon (:) character.
+
+Additional query words: 1.00 slash forwardslash docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGate3COM3Plus100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

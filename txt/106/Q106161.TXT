@@ -1,0 +1,90 @@
+DOCUMENT:Q106161  05-FEB-2000  [foxpro]
+TITLE   :How to Convert Screen Object Positions Between Platforms
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you transport FoxPro applications between character-based and graphic-
+based environments, you must convert the row and column positions of screen
+objects appropriately, as explained below.
+
+MORE INFORMATION
+================
+
+In FoxPro for MS-DOS, objects are placed based on row and column positions. The
+size of each row and column remains constant, since only one screen font is
+available. However, in FoxPro for Windows and FoxPro for the Macintosh, row and
+column sizes will vary based on the current font and the current resolution of
+the screen.
+
+In order to provide a consistent unit of measurement and accurate placement of
+objects between platforms, foxels were developed. Foxels are simply fractional
+rows and columns, expressed in decimal form. A foxelrow is used to indicate a
+single vertical row of characters. A foxelcol is used to indicate a single
+horizontal character.
+
+The size of a foxelrow will vary depending on the height of the current font. The
+number of foxelrows available can be determined with the SROWS() function. The
+size of a foxelcol will vary depending on the average width of characters in the
+current font. The number of foxelcols available can be determined with the
+SCOLS() function.
+
+The algorithm to determine pixel-to-foxel conversion is:
+
+      FUNCTION _pix2fox
+         PARAMETER m.apixel,m.dimension
+         RETURN m.apixel/FONTMETRIC(IIF(UPPER(m.dimension) = "H",6,1))
+
+The following two parameters are passed to the function:
+
+ - M.APIXEL indicates the pixel position.
+
+ - M.DIMENSION indicates a "V" for vertical values and an "H" for horizontal
+   values.
+
+Usage
+-----
+
+      myfoxelrow = _pix2fox(pixvalnum,"V") && for vertical (row) values
+      myfoxelcol = _pix2fox(pixvalnum,"H") && for horizontal (col) values
+
+The algorithm for foxelrows divides the pixel position by the character height in
+pixels for the current font. The algorithm for foxelcols divides the pixel
+position by the average character width in pixels for the current font.
+
+Additional query words: VFoxWin FoxMac FoxWin 2.50 floating transport
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

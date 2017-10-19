@@ -1,0 +1,70 @@
+DOCUMENT:Q200481  09-MAY-1999  [homemm]
+TITLE   :Encarta 99: Insufficient Hard Disk Space to Complete Setup
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbimukbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Encarta Encyclopedia 99, the installation
+program may not finish successfully, and you may receive an error message
+stating that there is insufficient hard disk space to install the program.
+
+CAUSE
+=====
+
+This behavior can occur because the Encarta Encyclopedia 99 installation program
+does not check for sufficient hard disk space.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, make sure at least 50 megabytes (MB) of
+hard disk space is available on the hard disk on which you want to install
+Encarta Encyclopedia 99 before you install the program.
+
+NOTE: In addition to the 50 MB of hard disk space needed to install Encarta
+Encyclopedia 99, Microsoft recommends you maintain at least 50 MB of available
+space on the hard disk on which Microsoft Windows is installed. This disk space
+is needed by the Windows swap file, but may also be used by other programs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+99.
+
+Additional query words: multi-media mm room drive free
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu kbbuglist
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999
+Version           : WINDOWS:
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

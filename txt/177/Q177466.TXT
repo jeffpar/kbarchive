@@ -1,0 +1,62 @@
+DOCUMENT:Q177466  30-JUL-2001  [sms]
+TITLE   :SMS: NNP Stays on Windows 95 Taskbar After Login
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbPGC smspgc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After a Windows 95 client logs on to a domain and runs the Smsls.bat file, the
+Network Naming Provider (NNP) application may appear on the taskbar and Program
+Group Control (PGC) may appear to stop responding. The NNP application can be
+manually closed and may allow PGC to continue. This usually occurs when the
+client is started, although it may also occur if the client is logged off and
+back on.
+
+MORE INFORMATION
+================
+
+The problem may occur if the Desktop Applications Director (DAD) toolbar from
+Perfect Office is loaded. Verify whether this application exists in the client's
+Startup Group. Running DAD manually may also cause the NNP application to appear
+on the taskbar.
+
+To workaround the problem, remove the Desktop Applications Director from the
+Startup Group.
+
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: nnp w95 win95 app tool bar hang hung stop
+
+======================================================================
+Keywords          : kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

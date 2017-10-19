@@ -1,0 +1,396 @@
+DOCUMENT:Q237689  09-MAR-2001  [mspress]
+TITLE   :SQL Server 7.0 Database Implementation Training Kit Comments and
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft SQL Server 7.0 Database Implementation Training Kit ISBN 1-57231-826-0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft SQL Server 7.0 Database
+Implementation Training Kit, ISBN 1-57231-826-0.
+
+The following topics are covered:
+
+ - CD-ROM: Readme.txt Instructions For Installing NTSP4
+
+ - CD-ROM: PowerPoint Presentation Uses Incorrect References
+
+ - CD-ROM: Broken Links In Files On CD-ROM
+
+ - CD-ROM: NT4SP4 Installs More Than SP4 From CD-ROM
+
+ - CD-ROM: No Sound In Demos
+
+ - Page 3: Figure Number In Last Paragraph Should Be 1.2
+
+ - Page 52: Change COLUMNOBJECT to COLUMNPROPERTY
+
+ - Page 69: Error In Code At The Bottom Of The Page
+
+ - Page 94: Typo Under Modify File Section
+
+ - Page 94: Incorrect Syntax
+
+ - Page 97: Code Correction
+
+ - Page 100: Correction For First Sentence
+
+ - Page 103: Code Corrections
+
+ - Page 106: Change Tables To Table In Statement For Security Information For
+   Table Privileges
+
+ - Page 108: firstname Should Be birth_date
+
+ - Page 111: Correction To Loanhist Table In Figure 3.6
+
+ - Page 195: Example 2 Should Reference Member Table
+
+ - Page 234: Correction to Figure 8.1 Results
+
+ - Page 244: Figure 8.4 Corrections
+
+ - Page 258: Question 4 Should Ask For Phone Numbers Instead Of Addresses
+
+ - Page 265: Correction To First Bulleted Item
+
+ - Page 269: Incorrect Date
+
+ - Page 434: Figure 14.3 Shows Incorrect Code In Execute Line
+
+MORE INFORMATION
+================
+
+CD-ROM: Readme.txt Instructions For Installing NTSP4
+----------------------------------------------------
+
+The readme.txt file located in the NT4SP4 folder does not give accurate
+directions for installing Windows NT Service Pack 4 from the CD-ROM that
+accompanies this training kit. The Readme.txt file in the root of this CD-ROM
+does contain the correct instructions for installing the service pack.
+
+To install Windows NT Service Pack 4, run the Sp4i386.exe file located in the
+NT4SP4 folder on the CD-ROM.
+
+
+PowerPoint Presentation Uses Incorrect References
+-------------------------------------------------
+
+The PowerPoint presentation included on the SMS 2.0 Supplementary course
+materials CD makes several references in chapter 12, to "Windows NT 5.0", as
+part of the presentation text and in at least one slide title.
+
+These references should be changed to "Windows 2000".
+
+
+Broken Links In Files On CD-ROM
+-------------------------------
+
+There are broken links within two of the documents on the SMS 2.0 Supplementary
+course materials CD, as follows:
+
+   Chapt01\Articles\pressreleases.htm - links to the missing files: \others.htm
+   and \standards.htm
+
+   Chapt07\Articles\Q142641.doc - contains a link to an external source:
+   ftp://info.cert.org/pub/cert_advisories and this link cannot be opened
+
+
+NT4SP4 Installs More Than SP4 From CD-ROM
+-----------------------------------------
+
+The NT4SP4.exe included on the SMS 2.0 Supplemental Course materials CD, as well
+as the SP4 included in the autorun install on the SMS 2.0 Evaluation CD,
+installs more than Service Pack 4.
+
+NT4SP4.exe is in the Chapt04\Exfiles\Ex20 folder of the supplemental course
+materials CD and in the NTQFE\NT4SP4 folder of the SMS Evaluation CD.
+
+When the user runs this executable, it installs NT4 Service Pack 4, IE4.01SP1,
+and MDAC, with no option or opportunity to install just one or a combination of
+these applications.
+
+
+CD-ROM: No Sound In Demos
+-------------------------
+
+There is no sound to accompany the demonstration files included in the Chapter
+folders.
+
+The omission of sound was by design to ensure that all content was accessible,
+regardless of whether the computer was configured to provide audio. No sound is
+necessary to fully understand the concepts being demonstrated.
+
+Correction: Add this information to the README.TXT file on the CD-ROM.
+
+
+Page 3: Figure Number In Last Paragraph Should Be 1.2
+-----------------------------------------------------
+
+On page 3, in the last sentence on the page, the Figure number should be 1.2.
+
+Change:
+"In this implementation, the host computer fulfills the role of client and the
+role of server, as shown in Figure 1."
+
+To:
+"In this implementation, the host computer fulfills the role of client and the
+role of server, as shown in Figure 1.2."
+
+
+Page 52: Change COLUMNOBJECT to COLUMNPROPERTY
+----------------------------------------------
+
+In Chapter 2, Lesson 2, on page 52, change COLUMNOBJECT to COLUMNPROPERTY.
+
+The last sentence in the first paragraph on this page should read: "The first
+argument of the COLUMNPROPERTY function requires an object ID rather than an
+object name."
+
+
+Page 69: Error In Code At The Bottom Of The Page
+------------------------------------------------
+
+On Page 69, in the code sample at the bottom of the page, "COMMIT TRANSACTION"
+should be moved to the next line, and second custid should be 78910.
+
+Change:
+
+   BEGIN TRANSACTION
+      UPDATE savings SET amount = (amount - 100)
+           WHERE custid = 78910
+      UPDATE checking SET amount = (amount + 100)
+           WHERE custid = 7891COMMIT TRANSACTION
+
+To:
+
+   BEGIN TRANSACTION
+       UPDATE savings SET amount = (amount - 100)
+             WHERE custid = 78910
+       UPDATE checking SET amount = (amount + 100)
+             WHERE custid = 78910
+   COMMIT TRANSACTION
+
+
+Page 94: Typo Under Modify File Section
+---------------------------------------
+
+On page 94, in the paragraph titled "Modify File", there is a typo in the last
+sentence.
+
+Change:
+"You may not specify the FILENAME option with the MODIFY OPTION."
+
+To:
+"You may not specify the FILENAME option with the MODIFY FILE option."
+
+
+Page 94: Incorrect Syntax
+-------------------------
+
+On page 94, the Syntax example contains some errors.
+
+Change:
+"| CREATE FILEGROUP filegroup_name
+| DROP FILEGROUP filegroup"
+
+To:
+"| ADD FILEGROUP filegroup_name
+| REMOVE FILEGROUP filegroup"
+
+
+Page 97: Code Correction
+------------------------
+
+On page 97, under the Example heading, the last line of code can be deleted.
+
+Delete:
+"GOCOMP: INSERT PRACTICE ICON".
+
+
+Page 100: Correction For First Sentence
+---------------------------------------
+
+On page 100, "using SQL Server Enterprise Manager or" can be deleted from the
+first sentence on the page.
+
+Change:
+"You can shrink a data file in a database using SQL Server Enterprise Manager or
+by executing the DBCC SHRINKFILE statement."
+
+To:
+"You can shrink a data file in a database by executing the DBCC SHRINKFILE
+statement."
+
+
+Page 103: Code Corrections
+--------------------------
+
+On page 103, in the example code, you will need to capitalize
+"OrderHistoryGroup", in the second and last line of code, and "Northwind", in
+the fourth line of code.
+
+
+Page 106: Change Tables To Table In Statement For Security Information For Table Privileges
+-------------------------------------------------------------------------------------------
+
+On page 106, in the table containing information schema view and descriptions,
+the statement for security information for table privileges will not run as
+written.
+
+Change:
+"information_schema.tables_privileges"
+
+To:
+"information_schema.table_privileges"
+
+
+Page 108: firstname Should Be birth_date
+----------------------------------------
+
+In Chapter 3, Lesson 5, page 108, in figure 3.4 the juvenile table has a
+mislabeled column.
+
+Change "firstname" to "birth_date".
+
+
+Page 111: Correction To Loanhist Table In Figure 3.6
+----------------------------------------------------
+
+On page 111, in figure 3.6, in the loanhist table, under the member_no column, FK
+should not be listed. A foreign key constraint was not created on the member_no
+column of the loanhist table.
+
+
+Page 195: Example 2 Should Reference Member Table
+-------------------------------------------------
+
+In Example 2 on page 195, the paragraph describing the example references the
+wrong table.
+
+Change:
+"This example executes a statement that accesses the table ID of the juvenile
+table and..."
+
+To:
+"This example executes a statement that accesses the table ID of the member table
+and..."
+
+
+Page 234: Correction to Figure 8.1 Results
+------------------------------------------
+
+On page 234, Figure 8.1, Result table, buyer_id column:
+
+Change:
+"1, 2, 3, 4, 3"
+
+To:
+"1, 1, 4, 3, 4"
+
+The Result table for this figure should match the information on page 235, under
+the subheading Result.
+
+
+Page 244: Figure 8.4 Corrections
+--------------------------------
+
+On page 244, in figure 8.4, the column labeled [buyer_id] should be [prod_id] in
+the Produce table.
+
+
+Page 258: Question 4 Should Ask For Phone Numbers Instead Of Addresses
+----------------------------------------------------------------------
+
+On page 258, in question four, change "addresses" to "phone numbers". The tables
+that are used in reference to this question do not include an address column.
+
+This question is repeated in Appendix A, in the Question and Answer section on
+page 478 and should also be changed there.
+
+Change:
+"How can you produce a single list of names and addresses for both doctors and
+patients?"
+
+To:
+"How can you produce a single list of names and phone numbers for both doctors
+and patients?"
+
+
+Page 265: Correction To First Bulleted Item
+-------------------------------------------
+
+On page 265, the first bulleted item under Correlated Subqueries is misleading.
+You do not have to use aliases to distinguish table names. You can use the
+actual table name if you prefer.
+
+Change:
+"You must use aliases to distinguish table names."
+
+To:
+"You must distinguish table names using either an alias or the full table name."
+
+
+Page 269: Incorrect Date
+------------------------
+
+On page 269, in Example 1, there is a wrong date in the first sentence.
+
+Change:
+"... a list of employees who received orders on 9/2/94."
+
+To:
+"... a list of employees who received orders on 9/5/97."
+
+
+Page 434: Figure 14.3 Shows Incorrect Code In Execute Line
+----------------------------------------------------------
+
+On page 434, in Figure 14.3, there is an error in the code. Please remove the "@"
+sign in front of "mathtutor".
+
+Change:
+"EXECUTE @mathtutor 5, 6, @answer OUTPUT"
+
+To:
+"EXECUTE mathtutor 5, 6, @answer OUTPUT"
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 1-57231-826-0 TKBOOK SQL
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

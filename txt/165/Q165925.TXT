@@ -1,0 +1,67 @@
+DOCUMENT:Q165925  14-NOV-2000  [word97]
+TITLE   :WD97: "Distance From Text" Property Not Applied to Inside Border
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbui kbusage word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When applying borders to multiple paragraphs to which you have
+
+ - included an inside border (a border between paragraphs)
+
+   -and-
+
+ - set a distance from text for the Bottom border,
+
+the distance from text is not applied to the inside border--although the preview
+for From Text (Border and Shading Options) indicates the specified distance from
+the text will be applied.
+
+WORKAROUND
+==========
+
+To achieve the same result as setting a distance from text for borders between
+paragraphs, apply separate borders to each paragraph and set the top and bottom
+space for the From Text value to the desired distance.
+
+MORE INFORMATION
+================
+
+For a group of selected paragraphs, you can set a top, bottom, left, right, and
+a between border. For top, bottom, left, and right borders, you can specify the
+distance from text. However, you cannot set a distance from text for the border
+between paragraphs.
+
+Additional query words: vb vba vbe
+
+======================================================================
+Keywords          : kbui kbusage word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,75 @@
+DOCUMENT:Q131215  24-MAR-2000  [foxpro]
+TITLE   :FIX: COPY STRUCTURE EXTENDED Ignores Long Field Names
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro's COPY STRUCTURE EXTENDED command was enhanced to provide for many
+of the new properties that a table may have, but it still only observes
+standard-length (10 character) field names. It ignores long field names.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Issue the following commands in the Command window:
+
+      CREATE DATABASE mydbc
+      CREATE TABLE mytbl (a2345678901234 c(3))
+      COPY STRUCTURE EXTENDED TO backup
+      USE backup
+      CREATE mytbl2 FROM backup
+
+Note the field name in mytbl2 is only 10 characters (a123456789).
+
+NOTE: Though the COPY STRUCTURE EXTENDED command has been corrected, in order to
+create a table that uses the same long field names, you must specify the
+database name and long table name for the new table. For the example above,
+change the last CREATE command as follows:
+
+      CREATE mytbl2 DATABASE mydbc NAME mytbl2 FROM backup
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,230 @@
+DOCUMENT:Q271744  06-AUG-2002  [exchange]
+TITLE   :XADM: Intersite Directory Replication Stops with Event ID 1091
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you set up intersite directory replication in an Exchange Server 5.5
+organization, directory replication may run successfully and then stop
+responding. The bridgehead server in one site cannot send requests or retrieve
+any incoming requests that are in the directory service mailbox. In addition,
+the following event ID message may be logged in the Application event log:
+
+   Event ID: 1091
+   Source: MSExchangeDS
+   Type: Warning
+   Category: Replication
+   Description: The directory replication agent (DRA) attempted to open mail with
+   name
+   /o=Organization/ou=SITE/cn=Configuration/cn=Servers/cn=ServerName/cn=Microsoft
+   DSA ServerName but received error 2147942414. Messages could not be sent.
+   Make sure that the mail service on this Microsoft Exchange Server computer is
+   running.
+
+RESOLUTION
+==========
+
+To resolve this behavior:
+
+1. Open Control Panel, and then quit the Microsoft Exchange Server Directory
+   Service.
+
+2. Use the Mdbvu32.exe program to empty the directory service mailbox. Refer to
+   the "More Information" section in this article for detailed steps about how
+   to use Mdbvu32.exe.
+
+3. Quit the Network Associates GroupShield service.
+
+   NOTE: If you quit the Network Associates GroupShield service and it does not
+   resolve the issue, remove GroupShield.
+
+4. In Control Panel, start the Microsoft Exchange Server Directory Service.
+
+This behavior can also be related to Norton AntiVirus. Use the same resolution to
+resolve that behavior, but substitute Norton AntiVirus where Groupshield is
+mentioned.
+
+MORE INFORMATION
+================
+
+To use Mdbvu32.exe successfully, create a profile for the directory service
+mailbox, and then run Mdbvu32.exe.
+
+IMPORTANT: Before you begin, back up the directory service mailbox and private
+information store.
+
+WARNING: If you use the raw mode of the Exchange Server Administrator program
+(admin /r) incorrectly, serious problems may occur that may require you to
+reinstall Microsoft Windows NT Server, Microsoft Exchange Server, or both.
+Microsoft cannot guarantee that problems that result from using raw mode
+incorrectly can be solved. Use raw mode at your own risk.
+
+First, create a profile for the service mailbox folder:
+
+1. Log on to the computer that runs Windows NT Server as the Exchange service
+   account.
+
+2. Start the Microsoft Exchange Server Administrator program in Raw mode. To do
+   so, type "admin /r" (without the quotation marks) at the command prompt, and
+   then press ENTER.
+
+3. In the left pane, under the appropriate site, click to expand the
+   Configuration object, click to expand the Servers object, and then click the
+   appropriate server.
+
+4. In the right pane, click the Directory Service object.
+
+5. On the File menu, click Raw Properties.
+
+6. In the raw properties for the Directory Service object, in the List
+   Attributes Of Type box, click Optional.
+
+7. In the Object Attributes list, click Display Name.
+
+8. In the Edit Value box, type "<servername>DS" (without the quotation
+   marks), where <servername> is the name of your server.
+
+9. Click Set, and then click Apply.
+
+10. In the Object Attributes list, click Obj-Dist-Name.
+
+11. Click all of the text in the Edit Value box, and then press CTRL+C to copy
+   the text to the clipboard.
+
+12. Click OK to close the raw properties for the Directory Service object.
+
+13. Click Start, point to Settings, click Control Panel, and then double-click
+   Mail.
+
+   NOTE: If the Mail icon is not displayed in Control Panel, install the
+   Exchange Server client. Click the Show Profiles button in the dialog box
+   that is displayed. If a Show Profiles button is not displayed, proceed to
+   the next step.
+
+14. Click Add, click to select the Microsoft Exchange Server check box, and then
+   click Next.
+
+15. If you are prompted to specify a profile name, type "<servername>DS"
+   (without the quotation marks), where <servername> is the name of your
+   server, and then click Next.
+
+16. In the Microsoft Exchange Server dialog box, type the name of the server.
+
+17. In the Mailbox box, press CTRL+V to paste the text that you copied in step
+   11, and then click Next.
+
+18. Proceed through the remainder of the wizard. When you finish the wizard, you
+   automatically return to the General tab for profiles.
+
+19. Click the new profile, and then click Properties.
+
+20. In the list of information services, click Microsoft Exchange Server, and
+   then click Properties.
+
+21. On the General tab, click Check Name. The server and mailbox resolve.
+
+   NOTE:The display name that you specified in step 8 is displayed in the
+   Mailbox box, and both the server and mailbox are underlined.
+
+22. Click OK, click OK again, and then click Close.
+
+Next, use Mdbvu32.exe to remove messages from the directory service mailbox:
+
+1. Run Mdbvu32.exe. The file is located in the Server\Support\Utils folder on
+   the Exchange Server 5.5 CD-ROM.
+
+2. In the MAPILogonEx(MAPI_LOGON_UI) dialog box, click to select the following
+   check boxes, and then click OK:
+
+    - MAPI_NEW_SESSION
+
+    - MAPI_EXPLICIT_PROFILE
+
+    - MAPI_NO_MAIL
+
+3. After you receive a prompt to select a profile, click the profile that you
+   created for the directory service mailbox. If you were prompted to specify a
+   profile name when you created the profile, the profile name is
+   <servername>DS, where <servername> is the name of your server.
+
+4. In the MDB Viewer Test Application window, click OpenMessageStore on the MDB
+   menu.
+
+5. In the Select Message Store to Open dialog box, click the entry for the
+   directory service mailbox, and then click Open.
+
+6. In the MDB Viewer Test Application window, click Open Root Folder on the MDB
+   menu.
+
+7. In the MAPI_FOLDER - Root dialog box, double-click "Top of Information Store"
+   in the Child Folders box.
+
+8. In the "MAPI_FOLDER - Top of Information Store" dialog box, double-click
+   Inbox in the Child Folders box.
+
+   In the MAPI_FOLDER - Inbox dialog box that is displayed, the messages that are
+   waiting for a response in the directory service mailbox are displayed in the
+   Messages In Folder box. This box may take some time to populate. Each message
+   is displayed in the following format:
+
+   Replication Message <version number>
+
+NOTE: The time it takes for the box to populate depends on the number of messages
+that are backed up in the mailbox.
+
+9. Click the message that you want to delete.
+
+10. In the Operations available box, click IpFld -> DeleteMessages().
+
+11. Click Call Function to delete the selected message.
+
+12. Repeat steps 9 through 11 for any additional messages that you want to
+   delete.
+
+   NOTE: You can delete multiple messages at the same time by using either the
+   CTRL or SHIFT key to select multiple messages in step 9.
+
+13. After you delete all the messages that you want to delete and there are no
+   replication messages in the Inbox, click Close three times to return to the
+   MDB Viewer Test Application window.
+
+14. Click Session Logoff on the Session menu, and then click OK in the
+   IpMDB->StoreLogoff() dialog box.
+
+Finally, open Control Panel, double-click Mail, and then delete the profile that
+you created for the directory service mailbox.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

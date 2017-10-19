@@ -1,0 +1,50 @@
+DOCUMENT:Q87293  30-JUL-2001  [lanman]
+TITLE   :Registering Message Alias on RPL Workstation
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When starting messenger on an MS-DOS RPL workstation, the user name is not
+registered as a message alias. This can be confirmed by executing the NET NAME
+command from the RPL workstation. Output shows only the workstation name as
+being a registered name. This problem precludes the user from receiving net
+popups addressed to the user. Messages sent to the workstation name are
+correctly named.
+
+RESOLUTION
+==========
+
+Increase the number of NetBIOS names the workstation can register. This can be
+accomplished by increasing the NAMES parameter in the [NETBEUI] section in
+
+      \LANMAN\RPL\BBLOCK\NETBEUI\<netcrd>\PROTOCOL.INI
+
+(where <netcard> is the network interface card for the workstation in
+question) from 5 to 6.
+
+
+Additional query words: 2.10 RIPL messenger
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

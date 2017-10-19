@@ -1,0 +1,105 @@
+DOCUMENT:Q128640  28-JUL-2001  [win95x]
+TITLE   :Boca Vortek Drivers Cause "Error in EXE File" Error Message
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you use the Vortek Utilities SET RES tool to change the display resolution
+and Windows 95 restarts your computer, you receive the following error message
+and are returned to a command prompt:
+
+   Error in EXE file
+
+If Windows 95 does not restart your computer, the correct resolution is displayed
+until the next time you start Windows 95. You receive the error message at that
+time and are returned to a command prompt.
+
+CAUSE
+=====
+
+The SET RES tool attempts to modify the WIN.COM file and causes the WIN.COM file
+to have a size of 0 bytes. Windows 95 cannot load without a valid WIN.COM file.
+
+RESOLUTION
+==========
+
+Restart your computer and boot to a command prompt by pressing the F8 key when
+you see the "Starting Windows 95" message. Choose "Command Prompt Only" when you
+are prompted. Then, replace the damaged WIN.COM file by extracting the WIN.CNF
+file from the original Windows 95 disks or CD-ROM.
+
+To extract the WIN.CNF file, follow these steps:
+
+1. If you are using diskettes, insert Disk 3 in the appropriate disk drive. If
+   you are using the CD-ROM, insert the CD-ROM in the CD-ROM drive.
+
+2. Change to the <windows>\COMMAND directory, where <windows> is
+   your Windows 95 directory.
+
+3. If you are using Disk 3, type the following command
+
+   " extract <sd>:\win95_03.cab win.cnf /L <dd>:\<windows>
+   win.com /Y " (without the quotation marks)
+
+   where <sd> is the disk drive containing Disk 3, <dd> is the hard
+   disk containing Windows 95, and <windows> is the Windows 95 directory.
+   For example, if you have Disk 3 in drive A, and Windows 95 is in the WINDOWS
+   directory on drive C, type:
+
+   " extract a:\win95_03.cab win.cnf /L c:\windows win.com /Y " (without the
+   quotation marks)
+
+4. If you are using the CD-ROM, type the following command
+
+   " extract <sd>:\win95\win95_03.cab win.cnf /L <dd>:\<win>
+   win.com /Y " (without the quotation marks)
+
+   where <sd> is the CD-ROM drive, <dd> is the hard disk containing
+   Windows 95, and <win> is the Windows 95 directory. For example, if the
+   CD-ROM drive is drive D, and Windows 95 is in the WINDOWS directory on drive
+   C, type:
+
+   " extract d:\win95\win95_03.cab win.cnf /L c:\windows win.com /Y " (without
+   the quotation marks)
+
+NOTE: The /Y switch causes the EXTRACT command to replace the existing WIN.COM
+file without prompting you for confirmation.
+
+MORE INFORMATION
+================
+
+The third-party product discussed here is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,172 @@
+DOCUMENT:Q191513  23-AUG-2001  [vbwin]
+TITLE   :BUG: T-SQL Debugger Not Invoked Calling Second Stored Procedure
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.0,2.1 SP2,2.5,2.6,6.0
+OPER/SYS:
+KEYWORDS:kbADO210bug kbDebug kbSQLServ kbStoredProc kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbATSsear
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Data Access Components versions 2.0, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If multiple stored procedures are executed when using ADO 2.0, the T-SQL
+Debugger automatically starts for the first stored procedure, but does not
+automatically start upon executing the second or subsequent stored procedures.
+The following error message displays:
+
+   The query could not be debugged due to a problem coordinating events with the
+   server. Check the server and client log to find the exact cause, fix the
+   problem and try again.
+
+This problem no longer occurs in ADO 2.1 and later when calling simple stored
+procedures like the pubs..reptq1 procedure that is called in the example code
+below. However, if you are calling multiple stored procedures that accept
+parameters, using a single ADO Connection, the T-SQL Debugger does not start
+automatically when executing the second or subsequent stored procedures. You
+will either receive the error described above, or it will fail silently.
+
+RESOLUTION
+==========
+
+In ADO 2.1 and later, to temporarily work around this while debugging, execute
+each store procedure on a separate connection. This workaround is illustrated in
+"Steps to Reproduce Behavior Using ADO 2.1" that follows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior Using ADO 2.0
+-----------------------------------------
+
+1. Create a new Standard EXE project.
+
+2. Add a reference to the Microsoft ActiveX Data Objects 2.0 Library.
+
+3. From the Add-Ins menu, click Add_In Manager and then select the Visual Basic
+   TSQL Debugger Loaded/Unloaded check box.
+
+4. Paste the following code into the Form_Load section of the form. Change the
+   Data Source, Initial Catalog, User ID and Password in the connection string
+   to match your configuration:
+
+         Dim cn As New ADODB.Connection
+         Dim cmd As New ADODB.Command
+         Dim cmd2 As New ADODB.Command
+         cn.Open "Provider=SQLOLEDB;Data Source=<Your Server>;" & _
+                 "Initial Catalog=pubs;User ID=sa;pwd=;"
+         cmd.ActiveConnection = cn
+         cmd.CommandText = "reptq1"
+         cmd.CommandType = adCmdStoredProc
+         cmd.Execute  'TSQL Debugger is invoked at this point.
+
+         MsgBox "Error Will Occur Next"
+
+         cmd2.ActiveConnection = cn
+         cmd2.CommandText = "reptq1"
+         cmd2.CommandType = adCmdStoredProc
+         cmd2.Execute  'TSQL Debugger is not invoked at this point.
+
+5. The error occurs as soon as the Form_Load finishes running.
+
+Steps to Reproduce Behavior Using ADO 2.1 or Later
+--------------------------------------------------
+
+1. Create a new Standard EXE project.
+
+2. Add a reference to the Microsoft ActiveX Data Objects Library.
+
+3. From the Add-Ins menu, click Add_In Manager and then select the Visual Basic
+   TSQL Debugger Loaded/Unloaded check box.
+
+4. Paste the following code into the Form_Load section of the form. Change the
+   Data Source, Initial Catalog, User ID and Password in both connection strings
+   to match your configuration:
+
+   Dim cn As New ADODB.Connection
+   Dim cn2 As New ADODB.Connection
+   Dim strSQLCmd As String
+   Dim cmd As New ADODB.Command
+   Dim cmd2 As New ADODB.Command
+   Dim adoRs As New ADODB.Recordset
+   Dim adoRs2 As New ADODB.Recordset
+   Dim prm As ADODB.Parameter
+   Dim prm2 As ADODB.Parameter
+
+   cn.Open "Provider=SQLOLEDB;Data Source=<<I>Your Server</I>>;" & _
+                    "Initial Catalog=pubs;User ID=sa;pwd=;"
+
+   cmd.ActiveConnection = cn
+   cmd.CommandText = "byroyalty"
+   cmd.CommandType = adCmdStoredProc
+
+   Set prm = cmd.CreateParameter("Percentage", adInteger, adParamInput, 4, 40)
+   cmd.Parameters.Append prm
+
+   adoRs.CursorLocation = adUseServer
+   adoRs.CursorType = adOpenStatic
+   adoRs.LockType = adLockOptimistic
+
+   Set adoRs = cmd.Execute
+
+   cn2.Open "Provider=SQLOLEDB;Data Source=<<I>Your Server</I>>;" & _
+                    "Initial Catalog=pubs;User ID=sa;pwd=;"
+
+   cmd2.ActiveConnection = cn   'Use the cn2 connection to resolve the problem.
+   cmd2.CommandText = "byroyalty"
+   cmd2.CommandType = adCmdStoredProc
+
+   Set prm2 = cmd.CreateParameter("Percentage", adInteger, adParamInput, 4, 40)
+   cmd2.Parameters.Append prm
+
+   adoRs2.CursorLocation = adUseServer
+   adoRs2.CursorType = adOpenStatic
+   adoRs2.LockType = adLockOptimistic
+
+   Set adoRs2 = cmd2.Execute
+
+5. Run the project. The execution of the second stored procedure will either
+   fail silently, or return the error mentioned in the Symptoms section of this
+   article.
+
+6. Change the cmd2.ActiveConnection to use cn2 and run the project. The T-SQL
+   Debugger should run correctly for both stored procedure calls.
+
+Additional query words: tsql
+
+======================================================================
+Keywords          : kbADO210bug kbDebug kbSQLServ kbStoredProc kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbATSsearch kbADO250bug kbADO260bug kbmdac270bug kbado270bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMDACSearch kbMDAC200 kbMDAC210SP2 kbMDAC250 kbMDAC260 kbMDAC270
+Version           : :2.0,2.1 SP2,2.5,2.6,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

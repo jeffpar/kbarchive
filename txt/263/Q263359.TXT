@@ -1,0 +1,76 @@
+DOCUMENT:Q263359  20-OCT-2000  [sms]
+TITLE   :SMS: When Deleting an Ad You Receive "No Status" Error Message
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to delete an advertisement when Microsoft SQL Server is not running,
+and the advertisement is not deleted, you receive a "No Status" error message.
+
+CAUSE
+=====
+
+The process of deleting an advertisement within the Systems Management Server
+Administrator console appears to take longer, and the deleted advertisement is
+no longer displayed. After restarting the SQL service, the deleted advertisement
+is displayed again. The error messages in the Offersum.log file are the only
+indication that the advertisement could not be removed.
+
+Here is an example from an Offersum.log file:
+
+   Error: Could not get a SQL connection from the connection cache. Will try
+   again in 60 seconds. : The handle is invalid.~~
+   $$<SMS_OFFER_STATUS_SUMMARIZER><Mon Aug 21 10:12:30.296 2000 Pacific
+   Daylight Time><thread=564 (0x234)> Error: Could not get a SQL
+   connection from the connection cache. Will try again in 60 seconds. : The
+   handle is invalid.~~ $$<SMS_OFFER_STATUS_SUMMARIZER><Mon Aug 21
+   10:20:47.015 2000 Pacific Daylight Time><thread=564 (0x234)>
+   Info>: Resetting the default heartbeat timer. It will expire by: Mon Aug
+   21 11:00:00 2000~ $$<SMS_OFFER_STATUS_SUMMARIZER><Mon Aug 21
+   10:20:52.031 2000 Pacific Daylight Time><thread=564 (0x234)> --->
+   SMS_OFFER_STATUS_SUMMARIZER stopping. The exit code is 0xfffffffe
+   $$<SMS_OFFER_STATUS_SUMMARIZER><Mon Aug 21 10:20:52.031 2000 Pacific
+   Daylight Time><thread=564 (0x234)> SMS_OFFER_STATUS_SUMMARIZER
+   stopped $$<SMS_OFFER_STATUS_SUMMARIZER><Mon Aug 21 10:20:52.031 2000
+   Pacific Daylight Time><thread=564 (0x234)>
+
+WORKAROUND
+==========
+
+After the SQL services are running again, you can delete the advertisement.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

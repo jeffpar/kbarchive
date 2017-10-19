@@ -1,0 +1,72 @@
+DOCUMENT:Q140124  28-JUL-2001  [win95x]
+TITLE   :NetWare Search Mapping Works Only in Current MS-DOS Session
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the NetWare MAP command in an MS-DOS session to set a search path,
+the search path is retained only for the current MS-DOS session.
+
+CAUSE
+=====
+
+Using MAP to add a Search Drive mapping sets an environment variable. Such
+settings created inside an MS-DOS session are used for that MS-DOS session only.
+
+RESOLUTION
+==========
+
+Place the command to map a search drive in your login script.
+
+MORE INFORMATION
+================
+
+This behavior occurs using the Microsoft Client for NetWare Networks. This
+behavior does not apply to the MAP command if used simply to associate a drive
+letter with a NetWare resource; it applies only to the MAP command when used to
+associate a drive letter with a NetWare resource and add that drive to the
+search path (equivalent to the MS-DOS path).
+
+The following are examples of mapping a "normal", non-search drive:
+
+   MAP Q:=CLARICE/DATA:WIN95
+   MAP ROOT R:=CLARICE/DATA:WIN95
+
+The following are examples of mapping a search drive:
+
+   MAP S16:=CLARICE/SYS:PUBLIC
+   MAP INS S4:=CLARICE/SYS:PUBLIC\NLS
+   MAP ROOT INS S1:=CLARICE/SYS:APPS\WORKS
+
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

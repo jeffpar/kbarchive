@@ -1,0 +1,58 @@
+DOCUMENT:Q180047  27-MAR-1999  [exchange]
+TITLE   :XCLN: Post Note Appears Instead of Compose Note
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+ - Microsoft Exchange Active Server Components, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to compose a new mail message using Microsoft Exchange Server
+5.0 Active Server Component, a post note appears instead of the compose note.
+This may occur after you post to a public folder and then attempt to compose a
+new message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem was corrected in Microsoft Exchange Server version 5.5
+and in the latest Microsoft Exchange 5.0 Server U.S. Service Pack. For
+information on obtaining the service pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: Web Access Outlook
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbZNotKeyword2 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,56 @@
+DOCUMENT:Q74279  17-DEC-2000  [msdos]
+TITLE   :No Support for 2.88 Megabyte Disks During Setup
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft MS-DOS 5 or later Upgrade supports 2.88-megabyte 3.5-inch disks;
+however, the MS-DOS 5.0 or later Setup program does not.
+
+MORE INFORMATION
+================
+
+The MS-DOS 5.0 or later Setup program will allow setup to 720K and 1.44-
+megabyte 3.5-inch disks, but support for 2.88-megabyte disks is not a part of
+the Setup program.
+
+If a 2.88-megabyte disk (formatted or unformatted) is used in conjunction with
+the Setup program, Setup will not recognize the disk, and will offer to format a
+1.44-megabyte or 720K disk.
+
+To achieve this type of setup, install MS-DOS 5.0 or later on different-size
+media, and copy the disks to the 2.88-megabyte disk.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 uninstall disk
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

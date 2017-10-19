@@ -1,0 +1,75 @@
+DOCUMENT:Q162775  10-AUG-2001  [winnt]
+TITLE   :Access Violation in SPOOLSS when Printing to a Serial Printer
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a serial port configuration string greater than 20 characters is specified
+and that serial port is used by an active printer, Localmon.dll generates an
+access violation in Spoolss.exe.
+
+CAUSE
+=====
+
+This problem can only occur if the following Registry Key is directly edited
+using a Registry Editor:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\ 
+CurrentVersion\Ports\COMx
+
+If a serial port configuration string greater that 20 characters is entered into
+this value it will cause Localmon.dll to generate an access violation.
+
+These keys are normally directly configured using Ports in Control Panel. If this
+application is used, it is not possible to specify a port configuration greater
+than 20 characters. However, it may be necessary to specify a custom port
+configuration for some serial handshaking options, which can require a string
+longer than 20 characters.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt GPF General Protection Fault CPL AV
+
+======================================================================
+Keywords          : kbnetwork kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

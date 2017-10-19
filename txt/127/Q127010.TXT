@@ -1,0 +1,64 @@
+DOCUMENT:Q127010  01-AUG-2001  [foxpro]
+TITLE   :PRB: Check Box Loses 3D Look at Higher Font Sizes
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Increasing the FontSize of a check box at design or run time results in
+displaying the check box as a 2D check box. The thicker border on the left side
+disappears. This occurs even though the value of the SpecialEffect property is
+0-3D.
+
+CAUSE
+=====
+
+The border for the check box is not wide enough to accommodate the check box.
+
+WORKAROUND
+==========
+
+Use the Autosize property for this control and set it to .T. (True). The
+Autosize property specifies whether a control is automatically sized to fit its
+content. It defaults to a .F. (False) value.
+
+For more information about the Autosize property, search for Autosize using the
+FoxPro Help system.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin pointsize
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

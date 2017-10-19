@@ -1,0 +1,65 @@
+DOCUMENT:Q152637  13-FEB-2002  [sms]
+TITLE   :Cli_dos Error Reading from Drive X - Abort Retry Fail
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.1
+OPER/SYS:
+KEYWORDS:kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When Cli_dos.exe is run, the computer returns the following message:
+
+   Error reading from drive D - Abort Retry Fail
+
+When you run it in verbose mode, the output is as follows:
+
+   Attempting to execute file (\\smsserver\sms_shr\x86.bin\cli_dos.exe)
+   Reading configuration......
+   Invalid media type reading drive D:
+   Abort Retry Fail
+
+CAUSE
+=====
+
+Cli_dos fails to recover from detecting a partition or a second drive that is
+unformatted or was formatted with an unrecognized operating system.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110
+Version           : :1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

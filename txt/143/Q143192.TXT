@@ -1,0 +1,82 @@
+DOCUMENT:Q143192  10-JUL-2001  [iis]
+TITLE   :Access Is Denied Error in Internet Service Virtual Directory
+PRODUCT :Internet Information Server
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply the new service properties for your File Transfer Protocol
+(FTP), Gopher, and World Wide Web (WWW) servers, the following error message
+appears in the Directories tab of the server Service Properties:
+
+   Access is denied.
+
+This error appears after you create a virtual publishing directory in Microsoft
+Internet Service Manager by specifying a link to an existing network share in
+universal naming convention (UNC) format.
+
+CAUSE
+=====
+
+This problem occurs if the user account information is missing in the
+Directories tab of the FTP, Gopher, and WWW server Service Properties.
+
+RESOLUTION
+==========
+
+To correct this problem, enter the correct user account information as follows:
+
+1. Run Internet Service Manager again.
+
+2. Select the computer name for the service. From the Properties menu, select
+   Service Properties.
+
+3. Choose the Directories tab and select the publishing directory.
+
+4. Choose Edit Properties.
+
+5. Enter the account information in the following format and choose OK:
+
+   User Name: <domain name>\<user name>
+   Password: <Password for user name>
+
+6. In the Service Properties dialog box, choose Apply and then choose OK.
+
+7. In the main window of Internet Service Manager, select the computer and the
+   service you just changed.
+
+8. From the Properties menu, select Service Properties. Choose the Directories
+   tab. The error message has disappeared.
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

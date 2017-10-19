@@ -1,0 +1,90 @@
+DOCUMENT:Q196716  14-NOV-2000  [word97]
+TITLE   :WD97: Selecting "(None)" Resets Filter Comparison
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97 kbmerge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In the Query Options dialog box, if you delete a query that precedes another
+query, the comparison criteria for all subsequent queries change to match that
+of the query that was deleted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+For example, if your query options are set up as follows
+
+             Field:          Comparison:          Compare to:
+
+             <field1>        is Blank             (empty)
+   Or        <field2>        Equal to             (text)
+   Or        <field3>        is Not Blank         (empty)
+   Or        <field4>        Not Equal to         (text)
+   Or        <field5>        Less than            (text)
+
+and you modify the <field1> entry by selecting (none) from the Field list,
+your query changes to this:
+
+             <field2>        is Blank             (text)
+   Or        <field3>        is Blank             (empty)
+   Or        <field4>        is Blank             (text)
+   Or        <field5>        is Blank             (text)
+
+Your query should change to this:
+
+             <field2>        Equal to             (text)
+   Or        <field3>        is Not Blank         (empty)
+   Or        <field4>        Not Equal to         (text)
+   Or        <field5>        Less than            (text)
+
+You can find these query options on the Filter Records tab. To locate this tab,
+follow these steps:
+
+1. Open the mail merge main document.
+
+2. On the Tools menu, click Mail Merge.
+
+3. Under "Merge the data with the document", click Query Options.
+
+Additional query words: filter filtering queries same change changes comparison 8.0 8.00
+
+======================================================================
+Keywords          : kbdta word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,86 @@
+DOCUMENT:Q113429  22-JUL-2001  [visualc]
+TITLE   :FIX: C1001: coff.c, Line 280, new of __declspec(dllimport)
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE) 
+ - Microsoft Visual C++, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler generates the following internal compiler error message when the
+sample program below is compiled:
+
+   fatal error C1001: INTERNAL COMPILER ERROR
+   (compiler file '@(#)coff.c:1.14', line 280)
+
+The internal compiler error is triggered by the code, which does a new of an
+array of a class that is marked __declspec(dllimport).
+
+RESOLUTION
+==========
+
+To avoid the error, remove the __declspec(dllimport) from the class declaration
+and link with an import library instead.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. The problem was corrected in Visual C++, 32-bit
+edition, version 2.0.
+
+Sample Code
+-----------
+
+   /* Compile options needed: /c
+   */ 
+
+   class __declspec(dllimport) CImport
+   {
+   public:
+       CImport();
+       ~CImport();
+   };
+
+   class CMyClass
+   {
+   protected:
+       CImport * piArray;
+   public:
+       CMyClass() {piArray = new CImport[2];}
+       ~CMyClass() {delete[] piArray;}
+   };
+
+Additional query words: 8.00 9.00 9.10 1.00 2.00 2.10
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbvc100 kbCVCComp
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

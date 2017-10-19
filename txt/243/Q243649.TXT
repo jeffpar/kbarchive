@@ -1,0 +1,150 @@
+DOCUMENT:Q243649  09-MAY-2002  [winnt]
+TITLE   :MS99-047: Unchecked Print Spooler Buffer May Expose System Vulne
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.5
+OPER/SYS:
+KEYWORDS:kbprint kbSecurity kbWinNT400PreSP7Fix KbSECVulnerabilitykbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft BackOffice Server versions 4.0, 4.5 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you pass random data to some of the functions in the Windows NT 4.0 print
+spooler sub-system Application Programming Interface (API) that have unchecked
+buffers, the print spooler service may stop responding (hang). If the affected
+API is provided with a specially-malformed argument, it may be possible to
+bypass the computer security settings and run an unauthorized program using a
+buffer overrun technique.
+
+The majority of the affected APIs require that the user be a member of the Power
+Users or Administrators group. However, at least one API is callable by users
+that have not been assigned extended security permissions. The calls can also be
+made remotely.
+
+RESOLUTION
+==========
+
+Windows NT Server or Workstation 4.0
+------------------------------------
+
+To resolve this problem, obtain the individual package referenced below or obtain
+the Windows NT 4.0 Security Rollup Package. For additional information on the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The English-language version of this fix should have the following file
+attributes or later:
+
+   Date       Time     Size      File name      Platform
+   -------------------------------------------------------------
+   11/03/99   01:23p    18,704   Localmon.dll   x86
+   11/03/99   01:23p   140,560   Localspl.dll   x86
+   11/03/99   01:23p    13,072   Lprhelp.dll    x86
+   11/03/99   01:23p    21,776   Lprmon.dll     x86
+   11/03/99   06:36p    48,400   Spoolss.dll    x86
+   11/03/99   01:23p    39,184   Spoolss.exe    x86
+   11/03/99   01:23p    80,144   Win32spl.dll   x86
+
+   11/03/99   01:23p    32,016   Localmon.dll   Alpha
+   11/03/99   01:23p   236,304   Localspl.dll   Alpha
+   11/03/99   01:23p    22,288   Lprhelp.dll    Alpha
+   11/03/99   01:23p    34,064   Lprmon.dll     Alpha
+   11/03/99   06:36p    85,264   Spoolss.dll    Alpha
+   11/03/99   01:23p    65,808   Spoolss.exe    Alpha
+   11/03/99   01:23p   136,464   Win32spl.dll   Alpha
+
+NOTE: Lmmon.dll and Lmmon.dbg were inadvertently packaged in Q243649.exe. These
+files are not installed when running Q243649.exe and are not required to protect
+against the vulnerability described in this kb article.
+
+The Intel-based version of this hotfix has been posted to the following Internet
+location as Q243649.exe:
+
+   http://download.microsoft.com/download/winntsrv40/Patch/Spooler-fix/NT4/EN-US/Q243649.exe
+
+The Alpha-based version of this hotfix has been posted to the following Internet
+location as Q243649.exe:
+
+   http://download.microsoft.com/download/winntsrv40/Patch/Spooler-fix/ALPHA/EN-US/Q243649.exe
+
+NOTE: You must be running Service Pack 4 (SP4) or later to apply this fix.
+
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT Server
+4.0, Terminal Server Edition. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Windows NT 4.0
+--------------
+
+Microsoft has confirmed that this problem could result in some degree of security
+vulnerability in Windows NT 4.0.
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+Microsoft has confirmed that this problem could result in some degree of security
+vulnerability in Windows NT Server 4.0, Terminal Server Edition. This problem
+was first corrected in Windows NT Server 4.0, Terminal Server Edition Service
+Pack 6.
+
+MORE INFORMATION
+================
+
+For related information on this problem, please visit the following Microsoft
+Web site:
+
+   http://www.microsoft.com/security/bulletins/ms99-047faq.asp
+
+For additional security-related information about Microsoft products, please
+visit the following Microsoft Web site:
+
+   http://www.microsoft.com/security/
+
+Additional query words: security_patch
+
+======================================================================
+Keywords          : kbprint kbSecurity kbWinNT400PreSP7Fix KbSECVulnerability kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbBackOfficeSearch kbSBServSearch kbBackOfficeServ400 kbBackOfficeServ450 kbSBServ400 kbSBServ450
+Version           : :4.0,4.5
+Hardware          : ALPHA x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,61 @@
+DOCUMENT:Q247558  25-DEC-1999  [iis]
+TITLE   :Browsing HTML Administrator without Default Document Enabled Ret
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to browse the HTML Administration Web site with no default
+document enabled and directory browsing disabled returns, an error similar to
+the following occurs:
+
+   HTTP Error 403 - Forbidden
+   You are not authorized to view this page
+   You might not have permission to view this directory or page using the
+   credentials you supplied.
+
+CAUSE
+=====
+
+This behavior is by design. When a client request is made to a folder or Web
+site that has no default document enabled and has directory browsing disabled,
+Internet Information Services (IIS) returns an "HTTP 403 Forbidden" error
+message to inform the client that the request is denied for reasons other than
+an authentication error, which results in an "HTTP 401 Unauthorized" error
+message.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

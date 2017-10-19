@@ -1,0 +1,92 @@
+DOCUMENT:Q150304  13-JUN-2001  [sna]
+TITLE   :SNA Server Admin Application Exception When Use Banyan Vines
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork kbnetserv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you exit the SNA Server Admin, you may get an application exception if the
+SNA Server is installed on a Microsoft Windows NT Server running the Banyan
+Vines version 5.56(30) redirector. The application exception is similar to the
+following:
+
+   snaadmin.exe - application error
+
+   The instruction at "0x77f8d637" referenced memory at "0x00000010". The memory
+   could not be "written".
+
+   Click OK to terminate the application.
+
+In addition, SNA Server logs the following message in the Application Event log:
+
+   Event ID: 560
+   Source: SNA Base Service
+   Description: Read from mailslot failed, rc = 165
+
+CAUSE
+=====
+
+The application exception occurs when SNA Server Admin tries to close a Vines
+socket from the Client/Server interface's detach entry point.
+
+The Event 560 message is caused because the 5.56(30) version of the Banyan Vines
+redirector returns a different error code on the VnsSocketReceive() API than
+earlier versions when the socket is closed.
+
+These two problems did not occur with previous versions of the Banyan Vines
+redirector.
+
+
+RESOLUTION
+==========
+
+Snadmod.dll and Snabv.dll have been updated so that the Vines socket is closed
+before the Client/Server interface's detach entry point is called.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.1, 2.11,
+and 2.11.sp1. This problem was corrected in the latest Microsoft SNA Server 2.11
+U.S. Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodsna trap drwtsn32
+
+======================================================================
+Keywords          : kbnetwork kbnetserv 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

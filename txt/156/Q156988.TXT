@@ -1,0 +1,73 @@
+DOCUMENT:Q156988  08-NOV-2001  [homegame]
+TITLE   :Error Message: Unable to Load VGA Palette
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbdisplay kberrmsgkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fury 3 for Windows, version 1.0 
+ - Microsoft CART Precision Racing, version 1.0 
+ - Microsoft Monster Truck Madness, version 1.0 
+ - Microsoft Monster Truck Madness 2, version 2.0 
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the games listed above, you may receive the following
+error message:
+
+   Unable to load VGA palette
+
+CAUSE
+=====
+
+This message occurs if the Games .pod file has been damaged, or was not
+transferred to your hard disk properly.
+
+RESOLUTION
+==========
+
+To resolve this problem, uninstall, and then reinstall the game. To remove and
+reinstall the game, follow these steps:
+
+1. Click the Start button, point to Setting, and click Control Panel.
+
+2. Click Add/Remove Programs.
+
+3. Click the Install/Uninstall tab.
+
+4. Click the game you want to remove, and then click Add/Remove.
+
+5. Follow the instructions on the screen to remove the game.
+
+6. Reinstall the game.
+
+Additional query words: 1.00 2.00 vga palette error fury 3 three msgame
+
+======================================================================
+Keywords          : kbdisplay kberrmsg kbfaq
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbZNotKeyword kbCARTRacingSearch kbMonsterTMSearch kbMonsterTM kbHellBender kbMonsterTM2 kbCARTRacing kbFury3
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

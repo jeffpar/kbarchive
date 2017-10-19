@@ -1,0 +1,74 @@
+DOCUMENT:Q226363  04-FEB-2000  [iis]
+TITLE   :HTMLA Web Administration Forms Display Incorrect Max Log Size
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set up logging for Internet Information Services (IIS) 5.0 using the
+HTMLA Web Administration Forms, the value for "When Max File Size Reaches ..."
+may be incorrectly formatted. This should only effect the following languages:
+
+   German
+   Japanese
+   Arabic
+   Russian
+
+The default value for the maximum file size is 19.53125 MB. These languages are
+normally formatted as follows:
+
+   German: 19,53 (comma as decimal symbol, 2 digits after decimal) (currently
+   displays 5 decimal places, not 2)
+
+   Japanese: 19.53 (period as decimal symbol, 2 digits after decimal) (currently
+   displays 5 decimal places, not 2)
+
+   Arabic: 19.53 (period as decimal symbol, 2 digits after decimal) (currently
+   19,53125)
+
+   Hindi: 19.53 (period as decimal symbol, 2 digits after decimal) (currently
+   displays 5 decimal places, not 2)
+
+   Russian: 19,53 (comma as decimal symbol, 2 digits after decimal) (currently
+   displays 5 decimal places, not 2)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+5.0.
+
+Additional query words: Globalization
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

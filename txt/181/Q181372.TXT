@@ -1,0 +1,73 @@
+DOCUMENT:Q181372  05-JUN-2001  [iis]
+TITLE   :HttpMon.exe Does Not Write to CSV File
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0; :2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+No data CSV files are generated in the OUTPUTDIRECTORY when the Microsoft
+HttpMon service is started.
+
+WORKAROUND
+==========
+
+To work around this problem, obtain the updated version of Httpmon.exe described
+below. The new version of Httpmon.exe 2.0 is build 011298.
+
+MORE INFORMATION
+================
+
+The sample Httpmon.ini file located in the %windir% directory included with the
+application installation does not include a key field and value to run
+correctly. As a result, the application is started (running), but no data is
+written to the data CSV files.
+
+To fix the problem, a new version of the executable has been compiled. It is
+available for free download at the following location:
+
+   ftp.microsoft.com/bussys/utilities/httpmon
+
+   get Httpmon.exe
+   get Readme.txt
+
+After you download these files, replace your existing Httpmon.exe file with the
+new one and restart the service.
+
+NOTE: You must first stop the application before copying the new Httpmon.exe over
+the existing Httpmon.exe.
+
+
+Additional query words: reskit resource kit
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0; :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

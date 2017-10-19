@@ -1,0 +1,62 @@
+DOCUMENT:Q172531  02-MAY-2001  [odbc]
+TITLE   :BUG: IDBSchemaRowset Reports DBTYPE_NUMERIC for MONEY Datatype
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::1.1
+OPER/SYS:
+KEYWORDS:kbprogramming
+
+======================================================================
+-----------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft OLE DB, version 1.1 
+-------------------------------------------------------------------------------
+
+BUG #: 4643 (OLEDSDK)
+
+SYMPTOMS
+========
+
+When an application queries SQL Server for the MONEY datatype using
+IDBSchemaRowset::GetRowset DBSCHEMA_COLUMNS, it returns DBTYPE_NUMERIC (131).
+This is inconsistent with IColumnsInfo::GetColumnInfo, which returns DBTYPE_CY
+(6) for the MONEY datatype.
+
+WORKAROUND
+==========
+
+To work around this problem, use IColumnsInfo::GetColumnInfo for the column
+metadata.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in OLEDB SDK version 1.1. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: ODBC SQL_DECIMAL software developers developer's kit
+
+======================================================================
+Keywords          : kbprogramming 
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDB110
+Version           : :1.1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

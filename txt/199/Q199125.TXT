@@ -1,0 +1,69 @@
+DOCUMENT:Q199125  07-NOV-1999  [exchange]
+TITLE   :XCON: Connectors Included with Microsoft Exchange Server 5.5
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following connectors are included in Exchange Server 5.5 Single Server
+Edition:
+
+ - Connector for Lotus cc:Mail
+ - Connector for Lotus Notes
+ - Directory Replication Connector
+ - Dynamic RAS Connector
+ - Internet Mail Service
+ - Internet News Service/NNTP
+ - Message Transfer Agent
+ - Microsoft Mail Connector (includes both PC Mail and AppleTalk Mail)
+ - Site Connector
+
+In addition to the connectors listed above, the following connectors are included
+with Exchange Server 5.5 Enterprise Edition:
+
+ - Connector for SNADS
+ - Connector for IBM OfficeVision/VM
+ - X.400 Connector
+
+MORE INFORMATION
+================
+
+For more information regarding configuring and troubleshooting these connectors
+and other Exchange Server components, please refer to Books Online included with
+Exchange Server, the additional documentation included on the Exchange Server
+CD-ROM, and the Knowledge Base included with TechNet and at our Support Online
+Web site located on the Internet at http://msdn.microsoft.com/support.
+
+Additional query words: 4.0 5.0 upgrade services DRAS
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

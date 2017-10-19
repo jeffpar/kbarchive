@@ -1,0 +1,61 @@
+DOCUMENT:Q69027  06-NOV-1999  [win16sdk]
+TITLE   :Handling Critical Errors in Windows-Based Application
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:_IK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows SetErrorMode() function controls whether Windows handles MS-DOS
+Function 24H errors or allows the calling application to handle them. Listed
+below is an example of an MS-DOS Function 24H error and Windows's method for
+handling the error: if an application attempts to access drive A and there is no
+disk in that drive, Windows displays the System Error message box "Cannot read
+from drive A: (Cancel) (Retry)."
+
+Calling SetErrorMode() allows the application to handle these messages rather
+than defaulting to the System Error message box.
+
+The following code fragment demonstrates this process:
+
+     SetErrorMode(1);   // Allow application to handle system error
+         ...
+        /* If error occurs, handle it appropriately. */ 
+         ...
+      SetErrorMode(0);   // Windows will display the standard
+                         // INT 24H error message box for any other
+                         // System Errors.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

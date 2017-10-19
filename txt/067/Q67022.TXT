@@ -1,0 +1,60 @@
+DOCUMENT:Q67022  10-DEC-1999  [win95x]
+TITLE   :Fontware Installation Kit Unable to Make Directory
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you get the following message when you run the Fontware Setup program, and
+you enter the Fontware directory name
+
+   Unable to make this directory. Choose a different directory
+
+you have entered a directory name that the kit cannot create on your hard disk.
+Press ESC and enter a different directory name. This may indicate a general
+problem with writing to your hard disk, or you may have selected the name of a
+file that already exists. Note that Fontware will not accept any directory name
+that DOS does not accept as a directory name.
+
+MORE INFORMATION
+================
+
+A Bitstream Fontware Installation Kit is available through a fulfillment coupon
+included with the retail version of Microsoft PowerPoint for Windows. This
+starter kit will install fonts for Windows applications only; however, the kit
+can be merged with other starter kits to provide support for multiple
+applications.
+
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty win30 winppt macppt
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

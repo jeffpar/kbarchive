@@ -1,0 +1,85 @@
+DOCUMENT:Q180776  17-DEC-2000  [win95x]
+TITLE   :Windows Messaging Does Not Change Addresses to Hyperlinks
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+NOTE: In this article, the term "Windows Messaging" refers to both
+Microsoft Windows Messaging and Microsoft Exchange.
+
+SYMPTOMS
+========
+
+When you type a Web, Mailto, file transfer protocol (FTP), Gopher, or shell
+folder address in a Windows Messaging e-mail message, nothing happens when you
+click it.
+
+CAUSE
+=====
+
+This behavior occurs because Windows Messaging does not change these types of
+addresses into hyperlinks.
+
+RESOLUTION
+==========
+
+To work around this behavior, use either of the following methods:
+
+Method 1
+--------
+
+Use one of the following e-mail programs instead of Windows Messaging:
+
+ - Microsoft Outlook
+
+ - Microsoft Exchange Server Client (retail version)
+
+ - Microsoft Internet Mail (included in Microsoft Internet Mail and News)
+
+ - Microsoft Outlook Express
+
+Method 2
+--------
+
+Use a word processor (such as Microsoft Word 97) that provides this functionality
+as your default e-mail editor. For information about whether your word processor
+provides this functionality and can be configured as your default e-mail editor,
+consult the documentation included with your word processor.
+
+MORE INFORMATION
+================
+
+A shell folder is a resource on your local hard disk or local area network (LAN)
+that can be accessed using the "File:" protocol (for example,
+"file://c:\windows" or "file://\\<path>\webpage.htm," where <path>
+is the full universal naming convention (UNC) path to the Webpage.htm file).
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

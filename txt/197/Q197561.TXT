@@ -1,0 +1,62 @@
+DOCUMENT:Q197561  21-MAY-1999  [homegame]
+TITLE   :Pinball Arcade: Tables Included in Pinball Arcade
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbref kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pinball Arcade, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the pinball tables that are included in Microsoft Pinball
+Arcade, version 1.0.
+
+MORE INFORMATION
+================
+
+The following pinball tables are included in Pinball Arcade:
+
+ - Baffle Ball (1931)
+
+ - Cue Ball Wizard (1992)
+
+ - Haunted House (1982)
+
+ - Humpty Dumpty (1947)
+
+ - Knock Out (1950)
+
+ - Slick Click (1963)
+
+ - Spirit Of 76 (1976)
+
+Additional query words: 1.00 msgame bumper flipper
+
+======================================================================
+Keywords          : kbref kbimu msgame 
+Technology        : kbGamesSearch kbPinballArc kbArcadeSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

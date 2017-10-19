@@ -1,0 +1,56 @@
+DOCUMENT:Q160592  07-SEP-2001  [word97]
+TITLE   :WD97: Can't Print Multiple Files from Open Dialog Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to print multiple files from the Open dialog box (on the File
+menu, click Open), some files are not printed. In contrast, when you print
+multiple files from Windows Explorer, all files are printed.
+
+WORKAROUND
+==========
+
+To work around this problem, print fewer files from the Open dialog box. To
+print from the File Open dialog box, use these steps:
+
+1. On the File menu, click Open, and then select the documents that you want to
+   print.
+
+2. Right-click the selection and then click Print.
+
+
+
+Additional query words: 8.0 word8 word97 limitation printing stop stopped halt halted halts terminates terminated doesn't won't isn't
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q161224  31-JAN-2001  [win95x]
+TITLE   :Error Message During Setup on DEC Ultra II Laptop
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows 95 OEM Service Release 2 (OSR2) on a DEC Ultra
+II P133 or P150 laptop computer, you may receive an error message on a blue
+screen.
+
+CAUSE
+=====
+
+This behavior can occur if the Viking Memory 9443195a 16-MB add-on memory module
+is installed in your computer. This memory module is incompatible with the DEC
+Ultra II P133 and P150 laptop computers.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods:
+
+ - Disable PC Audio in the computer's CMOS settings, and then run Setup again.
+
+ - Contact Viking Components or a hardware vendor to exchange the memory for a
+   compatible module.
+
+Additional query words: 95 fatal exception gpf page fault kberrmsg
+
+======================================================================
+Keywords          : osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

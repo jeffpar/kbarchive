@@ -1,0 +1,42 @@
+DOCUMENT:Q103508  30-JUL-2001  [lanman]
+TITLE   :Can't Access Member Server After Password Change
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If you change your password in a domain controller during a net logon attempt,
+and then try to use the NET USE command to connect to a member server, you will
+be refused admission because your new password has not yet been updated.
+
+To work around this problem, issue a NET ACCOUNTS /SYNC command after you log on
+and change your password, and before you issue the NET USE command. Issuing NET
+ACCOUNTS /SYNC forces the user accounts system (UAS) to be replicated and
+consequently updates your password. The replication takes some time--how much
+depends on the size of the UAS--but it synchronizes your password and restores
+your access to member servers.
+
+Additional query words: 2.00 2.10 2.10a 2.20 2.0 2.1 2.1a 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

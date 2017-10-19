@@ -1,0 +1,70 @@
+DOCUMENT:Q69434  14-NOV-1999  [win95x]
+TITLE   :Pagemaker Err Msg: Memory Manager Failure
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Aldus Pagemaker 3.0 may display the following error message if Microsoft Windows
+3.0 is running in standard or enhanced mode:
+
+   MEMORY MANAGER FAILURE
+
+The system then stops responding (hangs, or locks up).
+
+CAUSE
+=====
+
+Aldus Pagemaker version 3.0 or earlier was designed to run with Windows versions
+2.x and does not operate correctly with Windows 3.0 running in standard or
+enhanced mode.
+
+WORKAROUND
+==========
+
+You should run this version of Pagemaker in real mode only.
+
+MORE INFORMATION
+================
+
+Aldus reports that Pagemaker version 3.01 operates correctly with Windows 3.0
+running in standard or enhanced mode.
+
+For additional information, contact Aldus technical support.
+
+The Pagemaker product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a Err Msg page maker
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

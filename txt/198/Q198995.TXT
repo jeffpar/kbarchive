@@ -1,0 +1,89 @@
+DOCUMENT:Q198995  17-SEP-1999  [exchange]
+TITLE   :XADM: Fatal Error Installing Exchange Server on MSCS
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install a Microsoft Cluster Server (MSCS), you try to re-install
+Microsoft Exchange Server before removing all known Exchange Server components.
+You receive the following fatal error message:
+
+   Check that you have sufficient memory and disk space available.
+
+And you try running Setup again.
+
+CAUSE
+=====
+
+You receive this error because the Remove All Option did not remove all the
+registry keys associated with Exchange Server.
+
+NOTE: The Remove All button is displayed when you run Exchange Server Setup and
+select Exchange Server 5.5. Exchange Server detects the presence of an existing
+Exchange Server computer and prompts you to remove all.
+
+RESOLUTION
+==========
+
+Remove the ESE97 Exchange Server registry keys and all services beginning with
+MSExchange located under the
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services registry key. Delete all
+occurrences of the Exchange Server folder, Exchsrvr, from all drives.
+
+Also remove the ESE97 registry key located under
+HKEY_LOCAL_MACHINE\Software\Microsoft and the SETUP key under
+HKEY_LOCAL_MACHINE\Software\Microsoft\Exchange.
+
+WORKAROUND
+==========
+
+Use the Exchange Server Setup program to remove the Exchange Server using the
+Remove All option of the Setup program, then manually delete any remaining
+registry entries and manually delete the Exchsrvr folder.
+
+-or-
+
+Stop the Exchange Server services, then delete ALL the Exchange Server registry
+entries under HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services and manually
+delete the Exchsrvr folder.
+
+MORE INFORMATION
+================
+
+Be sure to make a backup of the Dsadata, Mdbdata, and Mtadata folders before
+deleting the Exchsrvr folders.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

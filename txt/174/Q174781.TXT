@@ -1,0 +1,72 @@
+DOCUMENT:Q174781  07-MAY-1999  [iis]
+TITLE   :Key Storage File Invalid Msg. When Try to Recover a Certificate
+PRODUCT :Internet Information Server
+PROD/VER:3.00
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install or reinstall a certificate, you will get the following
+error message:
+
+   Key storage file is invalid.
+
+CAUSE
+=====
+
+When a certificate is installed on Internet Information Server (IIS), both an
+.Req (certificate request) file and a number of encrypted registry entries are
+created for the key pair.
+
+When you try to replace a certificate by just putting the .Req file back in
+place, you will get the above error message. It is necessary to have a backup of
+the complete private key and the request file to successfully reinstall the
+certificate.
+
+In order to successfully reinstall a certificate, a current and complete back up
+of the registry or a full certificate backup from within Key Manager is
+required.
+
+WORKAROUND
+==========
+
+To back up a certificate from within Key Manager, click Key, select Export File,
+then select Backup. This will generate a warning screen and then allow a
+complete certificate back up to be made.
+
+NOTE: The warning concerns the possibility that if someone else gets a copy of
+the complete certificate, they will be able to "spoof" or mimic the legitimate
+site. Appropriate security measures must be taken to ensure that the copy of the
+complete certificate is not available to non-authorized users.
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbiisSearch kbiis300
+Version           : 3.00
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

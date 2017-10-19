@@ -1,0 +1,67 @@
+DOCUMENT:Q131447  18-JUL-2001  [ssafe]
+TITLE   :HOWTO: Use PHYSICAL Command to Find SourceSafe Database File
+PRODUCT :Microsoft SourceSafe
+PROD/VER:MS-DOS:3.04,3.1; WINDOWS:3.04,3.1,4.0,5.0,6.0; winnt:3.04,3.1
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbSSafe310 kbSSafe304 kbSsafe600FAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+ - Microsoft SourceSafe for Windows, versions 3.04, 3.1 
+ - Microsoft SourceSafe for Windows NT, versions 3.04, 3.1 
+ - Microsoft SourceSafe for MS-DOS, versions 3.04, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When debugging and troubleshooting, you may need to determine what file inside a
+project corresponds to a file in the SourceSafe database.
+
+MORE INFORMATION
+================
+
+Use the following undocumented command lines:
+
+      To Find                       Use This Command Line
+      ------------------------------------------------------------------
+
+      Project file                  SS PHYSICAL <Project Path>
+      Certain file in a project     SS PHYSICAL <Project Path>/<FileName>
+      All files in a project        SS PHYSICAL <Project Path> -R
+
+
+Use the -o switch to redirect the output of the SS PHYSICAL command to a text
+file. For example:
+
+      SS PHYSICAL -r $/ "-o@Filename.ext"
+
+This command reports the physical names of all projects and files starting with
+the root project and directs this output to a file named Filename.ext.
+
+Additional query words: SourceSafe vss vbwin SS SRCSAFE
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbSSafe310 kbSSafe304 kbSsafe600FAQ 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe304 kbSSafe304DOS kbSSafe310 kbSSafe310DOS kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe304NT kbSSafe310NT
+Version           : MS-DOS:3.04,3.1; WINDOWS:3.04,3.1,4.0,5.0,6.0; winnt:3.04,3.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q146609  17-DEC-2000  [win95x]
+TITLE   :Sound Card Beeps During Hardware Detection
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows 95 on a computer with a sound card, the sound
+card may beep intermittently during the hardware detection portion of Setup.
+
+CAUSE
+=====
+
+Setup may leave the sound card in an unsteady state during the hardware
+detection portion if the sound card is set to use a non-standard I/O range.
+
+RESOLUTION
+==========
+
+Typically, the beeps cease shortly after hardware detection is finished. In some
+cases, however, the computer may stop responding (hang), requiring you to
+restart the computer. In either case, run Setup again and choose Safe Recovery
+when you are prompted.
+
+After you run Setup, set the sound card for a standard I/O range and install the
+drivers, if available, using the Add New Hardware tool in Control Panel.
+
+For information about setting the sound card to a standard I/O range, please
+refer to the sound card's documentation or manufacturer.
+
+MORE INFORMATION
+================
+
+You may also encounter the behavior described in this article if you install a
+new sound card and run the automatic hardware detection routine in an existing
+installation of Windows 95.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

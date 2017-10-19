@@ -1,0 +1,78 @@
+DOCUMENT:Q234832  20-NOV-1999  [ssafe]
+TITLE   :MOD2000: Inconsistent Menu Behavior Using Check Out from VBA
+PRODUCT :Microsoft SourceSafe
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta modSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 2000 Developer 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to check out an object that is under source code control, you
+receive the "Check Out Files from SourceSafe" dialog box. When you try to check
+out an object that is not under source code control, nothing happens.
+
+CAUSE
+=====
+
+To receive a dialog box when you try to check out an object, the object must be
+under source code control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Excel, and create a new workbook that contains three sheets.
+
+2. Press ALT+F11 to open the Visual Basic Editor, and add Sheet1 and Sheet2 to
+   Visual SourceSafe (VSS). Do not add Sheet3.
+
+3. Select Sheet1, point to VBA Source Code Control on the Add-ins menu, and then
+   click Check Out. Note that you receive a dialog box that prompts you to check
+   out sheets 1 and 2.
+
+4. Click Cancel.
+
+5. Select Sheet3, point to VBA Source Code Control on the Add-ins menu, and then
+   click Check Out. Note that nothing happens.
+
+Additional query words: pra
+
+======================================================================
+Keywords          : kbdta modSSafe 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice2000Search kbOffice2000 kbOffice2000DevSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

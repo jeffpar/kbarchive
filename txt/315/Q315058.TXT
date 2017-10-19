@@ -1,0 +1,270 @@
+DOCUMENT:Q315058  23-APR-2002  [mspress]
+TITLE   :Microsoft ASP.NET Step by Step Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft ASP.NET Step By Step ISBN 0-7356-1287-0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft ASP.NET Step by Step, ISBN
+0-7356-1287-0.
+
+The following topics are covered:
+
+ - CD-ROM: Correction To Sample Code
+
+ - Page 68: Error In Code Sample
+
+ - Page 119: Missing Closing Bracket In Code Sample
+
+ - Page 154: Missing Closing Bracket In Code Sample
+
+ - Page 196: Msg.Text Should Be Message.Text
+
+ - Page 307: Correction To Step 6
+
+ - Page 408: Code Listing Typo
+
+ - Page 408: Code Listing Typo
+
+ - Page 438: Typo In GetData Function
+
+MORE INFORMATION
+================
+
+CD-ROM: Correction To Sample Code
+---------------------------------
+
+The typo is in the GetData function, for the two sample code files
+CacheAuthorsClearButton.aspx and AuthorsTrigger.aspx. Change:
+
+   Function GetData() As DataSet
+      Dim myDS As New DataSet()
+      Dim ConnStr As String
+      ConnStr =
+   "server=(local)\NetSDK;database=pubs;Trusted_Connection=yes"
+      Dim SQLSelect As String
+      SQLSelect = "SELECT au_id, au_lname, au_fname, "
+      SQLSelect &= "zip FROM Authors WHERE zip = '94609'"
+      Dim mySqlConn As New SqlConnection(ConnStr)
+      Dim mySqlDA As New SqlDataAdapter(SQLSelect, ConnStr)
+      mySqlDA.Fill(myDS)
+      Return myDS
+   End Function
+
+To:
+
+   Function GetData() As DataSet
+      Dim myDS As New DataSet()
+      Dim ConnStr As String
+      ConnStr =
+   "server=(local)\NetSDK;database=pubs;Trusted_Connection=yes"
+      Dim SQLSelect As String
+      SQLSelect = "SELECT au_id, au_lname, au_fname, "
+      SQLSelect &= "zip FROM Authors WHERE zip = '94609'"
+      Dim mySqlDA As New SqlDataAdapter(SQLSelect, ConnStr)
+      mySqlDA.Fill(myDS)
+      Return myDS
+   End Function
+
+Because the SqlDataAdapter class can automatically open and close its own
+SqlConnection object, the SqlConnection object, mySqlConn, is not necessary.
+
+Alternatively, you could explicitly create and open the connection, and pass it
+as an argument to the constructor of the SqlDataAdapter object. With this
+technique, you would also need to explicitly close the connection after filling
+and returning the DataSet to the caller.
+
+
+Page 68: Error In Code Sample
+-----------------------------
+
+There is an error in the code sample on page 154.
+
+Change:
+
+   Dim s(5) As String
+
+To:
+
+   Dim s(4) As String
+
+
+Page 119: Missing Closing Bracket In Code Sample
+------------------------------------------------
+
+There is an error in the code sample on page 119.
+
+Change:
+
+   <elementName2
+      attributeName1=value
+      attributeName2=value
+      attributeNameN=value
+
+To:
+
+   <elementName2
+      attributeName1=value
+      attributeName2=value
+      attributeNameN=value />
+
+
+Page 154: Missing Closing Bracket In Code Sample
+------------------------------------------------
+
+There is an error in the code sample on page 154.
+
+Change:
+
+   <remove
+      name="name"
+
+To:
+
+   <remove
+      name="name" />
+
+
+Page 196: Msg.Text Should Be Message.Text
+-----------------------------------------
+
+There is an error in the code sample on page 154.
+
+Change:
+
+   Else
+      Msg.Text = "Incorrect Username or Password: Try again."
+   End If
+
+To:
+
+   Else
+      Message.Text = "Incorrect Username or Password: Try again."
+   End If
+
+
+Page 307: Correction To Step 6
+------------------------------
+
+On page 307, in step 6,
+
+Change:
+
+   sp_addrolemember 'db_datawriter','ASPNET'
+   go
+
+To:
+
+   sp_addrolemember 'db_datawriter','ASPNET'
+   go
+
+
+Page 408: Code Listing Typo
+---------------------------
+
+On page 408, the code listing for HelloService_CB.vb contains a typo.
+
+Change:
+
+   Public Class Hello
+
+To:
+
+   Public Class Hello_CB
+
+
+Page 408: Code Listing Typo
+---------------------------
+
+On page 408, the code listing for HelloService_CB.asmx contains a typo.
+
+Change:
+
+   <%@ WebService Class="ASPNETSBS.Hello_(B, HelloService_CB"%> 
+
+To:
+
+   <%@ WebService Class="ASPNETSBS.Hello_CB, HelloService_CB"%>
+
+
+Page 438: Typo In GetData Function
+----------------------------------
+
+On page 438, the code listing for CacheAuthors.aspx contains a typo. The typo is
+in the GetData function. Change:
+
+   Function GetData() As DataSet
+      Dim myDS As New DataSet()
+      Dim ConnStr As String
+      ConnStr = "server=(local)\NetSDK;database=pubs;Trusted_Connection=yes"
+      Dim SQLSelect As String
+      SQLSelect = "SELECT au_id, au_lname, au_fname, "
+      SQLSelect &= "zip FROM Authors WHERE zip = '94609'"
+      Dim mySqlConn As New SqlConnection(ConnStr)
+      Dim mySqlDA As New SqlDataAdapter(SQLSelect, ConnStr)
+      mySqlDA.Fill(myDS)
+      Return myDS
+   End Function
+
+To:
+
+   Function GetData() As DataSet
+      Dim myDS As New DataSet()
+      Dim ConnStr As String
+      ConnStr = "server=(local)\NetSDK;database=pubs;Trusted_Connection=yes"
+      Dim SQLSelect As String
+      SQLSelect = "SELECT au_id, au_lname, au_fname, "
+      SQLSelect &= "zip FROM Authors WHERE zip = '94609'"
+      Dim mySqlDA As New SqlDataAdapter(SQLSelect, ConnStr)
+      mySqlDA.Fill(myDS)
+      Return myDS
+   End Function
+
+Because the SqlDataAdapter class can automatically open and close its own
+SqlConnection object, the SqlConnection object, mySqlConn, is not necessary.
+
+Alternatively, you could explicitly create and open the connection, and pass it
+as an argument to the constructor of the SqlDataAdapter object. With this
+technique, you would also need to explicitly close the connection after filling
+and returning the DataSet to the caller.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1287-0 Duthie EUBOOK EUSBS
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

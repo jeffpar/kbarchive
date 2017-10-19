@@ -1,0 +1,79 @@
+DOCUMENT:Q229895  10-AUG-2001  [winnt]
+TITLE   :Err Msg: Setup Was Unable to Copy the Following File Cdrom.sys
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start an unattended installation of Windows NT 4.0 from an MS-DOS
+prompt, you may receive the following error message:
+
+   Setup was unable to copy the following file, cdrom.sys.
+
+Also, in MS-DOS mode you may not be able to create or manipulate any file called
+Cdrom.sys.
+
+CAUSE
+=====
+
+This problem can occur if you load ATAPI Real Mode CD-ROM driver in the
+Config.sys file.
+
+RESOLUTION
+==========
+
+To resolve this problem, edit the Config.sys file. To do this, follow these
+steps:
+
+1. At the MS-DOS prompt, type "edit config.sys" (without the quotation marks),
+   and then press ENTER.
+
+2. Find the Device= line that contains the ATAPI Real Mode CD-ROM driver.
+
+3. Edit the line so the /D: switch does not contain the word value "cdrom."
+
+For example change the following line from
+
+   Device=<driver> /d:cdrom
+
+to
+
+   Device=<driver> /d:test1
+
+where <driver> is the path and file name of your CD-ROM driver.
+
+Additional query words: msdos cdrom.sys cdrom unattend install nt 4.0
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q109989  16-NOV-1999  [pcmail]
+TITLE   :PROFS: Location Field in Meeting Request Dropped
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The LOCATION field in PROFS/OfficeVision meeting request is lost when a PROFS/OV
+user invites a version 1.0 of Microsoft Schedule+ for Windows user to a meeting.
+
+CAUSE
+=====
+
+Schedule+ does not have an equivalent LOCATION field so the LOCATION information
+is placed into the body of the meeting request. This is by design. When the
+Schedule+ accepts the meeting, only the subject field is added to the entry in
+the Schedule+ calendar.
+
+RESOLUTION
+==========
+
+The location information must be manually copied (using copy/paste) into the
+Schedule+ appointment.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.4 of Microsoft Mail
+Gateway to PROFS. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 3.40
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS340
+Version           : :3.4
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

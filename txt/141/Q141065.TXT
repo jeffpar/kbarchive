@@ -1,0 +1,72 @@
+DOCUMENT:Q141065  04-NOV-1999  [pcmail]
+TITLE   :PC Win: MMF Displays No Messages After Integrity Check
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you do an integrity check on your Mail Message File (MMF), your folders and
+messages may disappear.
+
+CAUSE
+=====
+
+This may happen if the pointers stored in the MMF are corrupt.
+
+RESOLUTION
+==========
+
+1. Create a new MMF with a different name.
+
+2. From the File menu, choose Import.
+   From this option, the folders and messages will be viewable for import into
+   the new MMF.
+
+3. Select the folders and messages you want to import to your new MMF.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q132744 Description of Mail Integrity Check MAILINT.EXE
+
+   Q112265 Using F5 or SHIFT Key to Start Mail Utilities
+
+   Q96501 Incorrect Unread Message Count
+
+   Q112210 Check MMF Utility Repeatedly Asks to Check MMF
+
+Additional query words: 3.20 3.50 mail integrity check mmf corrupt import
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail350 kbMail320
+Version           : WINDOWS:3.2,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

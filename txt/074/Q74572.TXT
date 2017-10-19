@@ -1,0 +1,58 @@
+DOCUMENT:Q74572  06-NOV-1999  [win16ddk]
+TITLE   :How Microsoft Windows Uses an MS-DOS Mouse Driver
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For performance reasons, the Microsoft Windows graphical environment does not
+use the MS-DOS mouse driver even if one is installed. Windows has its own mouse
+driver (usually a file named MOUSE.DRV) that handles mouse input. Therefore,
+Windows applications can use the mouse as long as the appropriate Windows mouse
+driver is installed, regardless of whether an MS-DOS mouse driver is present.
+
+The Windows mouse driver does not provide any mouse support for MS-DOS
+(non-Windows) applications. You must load the MS-DOS mouse driver to use the
+mouse with an MS-DOS application running under Windows. You can load the MS-DOS
+mouse driver either before running Windows or in an MS-DOS session under
+Windows. However, we recommend that you load the mouse driver before starting
+Windows because hardware conflicts may occur if a mouse driver attempts to
+initialize the hardware after Windows has started.
+
+The virtual device driver named VMD manages ownership of the mouse hardware
+between the Windows mouse driver and the MS-DOS mouse driver. VMD is not a mouse
+driver; it simply switches hardware ownership between the MS-DOS and Windows
+drivers.
+
+Additional query words: 3.00 3.10 control
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

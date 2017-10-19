@@ -1,0 +1,107 @@
+DOCUMENT:Q259343  07-MAY-2000  [exchange]
+TITLE   :XADM: Events 2028 and 290 from Messages Sent by a Public Folder
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following events may be logged in the application event log regarding
+non-delivery report (NDR) messages that are sent from a public folder:
+
+    - Event Type: Warning
+   Event Source: MSExchangeMTA
+   Event Category: X.400 Service
+   Event ID: 290
+   Description:
+   A non-delivery report (reason code unable-to-transfer and diagnostic code
+   unrecognised-OR-name) is being generated for message C=US;A=
+   ;P=ORGANIZATION;L=AANGBWAS012-000407193425Z-5. It was originally destined
+   for DN:/o=ORGANIZATION/ou=SITE/cn=RECIPIENTS/cn=MAILBOX§
+
+   (recipient number 1), and was to be redirected to . [MTA DISP:RESULT
+   14 136] (12)
+
+    - Event Type: Error
+   Event Source: MSExchangeIS Public
+   Event Category: Transport Delivering
+   Event ID: 2028
+   Description:
+   The delivery of a message sent by a public folder
+   /o=ORGANIZATION/ou=SITE/cn=RECIPIENTS/cn=FOLDERX16A69D5016A69D5016
+   A69D50D194BB5600177D has failed
+   To: MAILBOX
+   Cc:
+
+   The non-delivery report has been deleted.
+
+    - Event Type: Information
+   Event Source: MSExchangeIS Private
+   Event Category: Transport Delivering
+   Event ID: 2025
+   Date: 4/7/2000
+   Time: 3:41:08 PM
+   User: N/A
+   Computer: AANGBWAS012
+   Description:
+   The delivery of a message failed due to error 8004010F. A non-delivery
+   report is being sent to the message's originator.
+
+CAUSE
+=====
+
+This issue can occur if a moderated public folder or another rule that forwards
+posts to Exchange Server mailboxes sends e-mail messages to specified accounts.
+If an account is deleted, the rule still attempts to send the message and
+generates an NDR and the events in the "Symptoms" section of this article.
+
+RESOLUTION
+==========
+
+To resolve this issue, open the properties for the public folder in question
+from a mailbox that has owner rights. Click the Administration tab, click
+Moderated Folder, and then verify that any mailboxes in the To box are still
+valid mailboxes. Click Folder Assistant, and then check any rules that are
+created for the folder to ensure that all of the accounts that are listed are
+valid.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q249796 XGEN: Outlook Rule Creates Message Loop in Information Store
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

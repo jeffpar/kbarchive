@@ -1,0 +1,72 @@
+DOCUMENT:Q138106  11-DEC-1999  [foxpro]
+TITLE   :PRB: Navigation Buttons Font Different from Other Object Fonts
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a Wizard-generated form, the font used for the navigation buttons is
+different from the font used for labels and other form objects.
+
+CAUSE
+=====
+
+To maintain consistency with user expectations, the MS Sans Serif font was used
+instead of Arial.
+
+RESOLUTION
+==========
+
+To use Arial fonts exclusively on Wizard-generated forms, modify the Wizstyle
+visual class library as found in the \Vfp\Wizards directory. Open the TxtBtns
+class of the Wizstyle.vcx and change the FontName attribute for each
+CommandButton object to Arial.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In 'Step 2 - Style' of designing a form using the Form Wizard, you are asked to
+specify the style of the form. While all fields and other objects placed on the
+form use the Arial font, the text buttons use the MS Sans Serif font.
+
+NOTE: If the information in the "Resolution" section of this article is used, all
+forms that use the TxtBtns class will reflect the changed font because of
+Inheritance.
+
+Additional query words: VFoxWin Screen Form Style Visual Class
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q151217  13-JUN-2001  [sna]
+TITLE   :Password Substitution Is Not Available in SNASVCMG Mode
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Currently, SNA Server does not support password substitution on the SNA System
+Services (SNASVCMG) mode, even though strict SNA implementations require that
+all sessions between two LUs have the same conversation-level security
+indicators. If the data modes support password substitution then the service
+modes should support password substitution as well.
+
+RESOLUTION
+==========
+
+Because strict SNA implementations require that all sessions between two LUs
+support the same conversation level security indicators, a hotfix is available
+to support this feature.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server for Windows
+NT, versions 2.0, 2.1, 2.11, and 2.11.sp1. This problem was corrected in the
+latest Microsoft SNA Server 2.11 U.S. Service Pack. For information on obtaining
+the service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna sna nt mode appc snasvcmg
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

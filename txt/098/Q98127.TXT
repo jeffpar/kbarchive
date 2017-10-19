@@ -1,0 +1,71 @@
+DOCUMENT:Q98127  14-NOV-2000  [word97]
+TITLE   :WD97: Error Message: "The Document Template Is Not Valid"
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg kbualink97 kbdta winword
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Sometimes the following error message occurs when you use the Templates and
+Add-in Command on the Tools menu to attach a different template:
+
+   The document template is not valid.
+
+CAUSE
+=====
+
+This behavior occurs when you attempt to attach a global template or add-in and
+you select a file
+
+ - with a .dot file name extension that is in a format other than Word Document
+   Template format.
+
+   -or-
+
+ - that is in a format other than Word Document Template format, such as a Word
+   document.
+
+MORE INFORMATION
+================
+
+In Word, you usually create a new document by basing it on a template. However,
+you can also base a new document on another Word document, but you cannot later
+attach a Word document as a template to an existing Word document.
+
+When you base a new document on an existing Word document, Word inserts the text
+from the existing document in the new document as a boilerplate.
+
+
+Additional query words: word97
+
+======================================================================
+Keywords          : kberrmsg kbualink97 kbdta winword 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

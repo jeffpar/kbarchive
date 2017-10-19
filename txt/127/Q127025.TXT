@@ -1,0 +1,51 @@
+DOCUMENT:Q127025  24-JUL-2001  [sms]
+TITLE   :Switch Required for USERTSR for WFW 3.1 Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbConfig smsconfig
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you configure a computer running Windows for Workgroups version 3.1 as a
+Microsoft Systems Management Server version 1.0 client, you may need to add a -W
+switch to USERTSR in the CLIENT.BAT file located at the MS\SMS\Bin directory.
+However, Windows for Workgroups version 3.1 is not a supported client system for
+SMS Server version 1.0.
+
+The -W switch loads USERTSR for clients running Windows for Workgroups. When you
+use the switch, USERTSR waits for the Remote Control Agent (WUSER.EXE) to start
+before initializing itself on the network. Client Setup does not add this switch
+because it handles Windows for Workgroups version 3.1 as if it were a LAN
+Manager client.
+
+Additional query words: prodsms wfw sms
+
+======================================================================
+Keywords          : kbnetwork kbConfig smsconfig 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

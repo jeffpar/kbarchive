@@ -1,0 +1,55 @@
+DOCUMENT:Q156787  08-NOV-2001  [homekids]
+TITLE   :MSB Ocean: Typographic Error in Tide Pool
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Ocean for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Magic School Bus Explores the Ocean has a typographical error in the Tide
+Pool when using the Blueprint button.
+
+MORE INFORMATION
+================
+
+If you click the Blueprint button in the Tide Pool scene, the following detailed
+information about the view appears through the windshield:
+
+   Many rocky shores have tide pools, which are home to a great variety of
+   oganisms.
+
+The word "oganisms" should read "organisms".
+
+Additional query words: kids mskids msb msbhb msbss frizz kbmm multimedia multi-media multi media msbdino msbdinos msbearth
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOcean kbScholasticOceanMac kbMSBSearch
+Version           : MACINTOSH:1.0; WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

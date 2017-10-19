@@ -1,0 +1,80 @@
+DOCUMENT:Q269815  14-FEB-2002  [homekids]
+TITLE   :MSB: Distorted Sound or MMSYSTEM326 Error Message in Program
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsound mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's The Magic School Bus in Concert 
+ - Scholastic's The Magic School Bus Lands on Mars 
+ - Scholastic's Magic School Bus Series: Volcanoes, version 1.0 
+ - Scholastic's The Magic School Bus Discovers Flight, version 1.0 
+ - Scholastic's The Magic School Bus Whales and Dolphins, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run one of the programs listed at the beginning of this article, you
+may experience one or more of the following symptoms:
+
+ - Sounds in the game may not be played.
+
+ - Sound playback may be distorted or scratchy.
+
+ - Sound playback may skip or stutter.
+
+ - You may receive an error message similar to the following:
+
+   MMSYSTEM326 No wave device that can play files in the current format is
+   installed.
+
+CAUSE
+=====
+
+This behavior can occur if the sound driver for your sound card is outdated.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact the your sound card manufacturer to inquire about
+how to obtain and install the latest version of the sound driver for your sound
+card.
+
+For information about how to contact the manufacturer of your sound card, click
+the appropriate article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Additional query words: 1.00 mskids schoolbus msbconcert msbmars
+
+======================================================================
+Keywords          : kberrmsg kbsound mskids kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticVolcanoes kbScholasticFlight kbScholasticMars kbScholasticWhales kbMSBSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

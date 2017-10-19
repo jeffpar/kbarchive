@@ -1,0 +1,56 @@
+DOCUMENT:Q115551  09-NOV-1999  [pcmail]
+TITLE   :X400: Manually Adding TP4/CLNP Peer Address to Node
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.2 of Microsoft Mail Gateway to X.400 supports the ES to IS routing
+protocol within its CLNP layer, so you can run it over a TP4/CLNP network.
+
+These systems send ES-hellos and answer the ES-hellos of other systems, and this
+makes them automatically aware of other nodes' network addresses.
+
+If a node cannot send or answer ES-hellos, you must manually add its network
+address at the node by running the following command on the system on which you
+are running the gateway TP4/CLNP:
+
+   addrte NSAP MAC
+
+To ensure that the remote network SAP value and MAC address were correctly added,
+run the ESQ command.
+
+For more information, see the "TP4/CLNP Configuration and Utilities Guide."
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

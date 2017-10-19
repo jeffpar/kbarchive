@@ -1,0 +1,79 @@
+DOCUMENT:Q77436  10-DEC-1999  [win95x]
+TITLE   :DEC Printer Emulations for Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The following are Digital Equipment Corporation (DEC) printer emulations for
+Windows 3.0:
+
+   DEC Printer             Windows Driver
+   -----------             --------------
+
+   LA70                    IBM ProPrinter
+   LA75                    IBM ProPrinter
+   LA210                   IBM Graphics
+   LA324                   IBM ProPrinter 24
+   LJ250                   HP PaintJet series
+   LJ252                   HP PaintJet series
+   LN03R                   Digital LN03R ScriptPrinter
+   DECLaser 2100           Canon LBP8
+    with CaPSL cartridge
+   DECLaser 2150           PostScript printer
+    with PostScript cartridge
+   DECLaser 2200           Canon LBP8 III
+    with CaPSL cartridge
+   DECLaser 2250           PostScript printer
+    with PostScript cartridge
+   LPS20                   Digital LPS PrintServer 40
+   LPS40                   Digital LPS PrintServer 40
+
+MORE INFORMATION
+================
+
+For more information, contact DEC technical support.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+REFERENCES
+==========
+
+"Pathworks for DOS: Microsoft Windows Support Guide," pages 3-7.
+
+
+Additional query words: 3.00 3.00A
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

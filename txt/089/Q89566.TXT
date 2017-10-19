@@ -1,0 +1,65 @@
+DOCUMENT:Q89566  12-JUN-1999  [win16sdk]
+TITLE   :PRB: Common Dialog Box Hook Function Cannot Access Variables
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbCmnDlg kbSDKPlatform kbGrpDSUser
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an application developed for the Microsoft Windows environment using a common
+dialog box and a dialog box hook function, the hook function is unable to access
+global or local variables even though it receives messages.
+
+CAUSE
+=====
+
+Because the hook function is not exported in the application's module definition
+(.DEF) file, the hook function's data segment is not set correctly when
+functions in the common dialog box library (COMMDLG.DLL) call the hook function.
+
+RESOLUTION
+==========
+
+Modify the .DEF file to list the hook function in the EXPORTS section.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly kbCmnDlg kbSDKPlatform kbGrpDSUser 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

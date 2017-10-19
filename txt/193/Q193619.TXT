@@ -1,0 +1,79 @@
+DOCUMENT:Q193619  01-MAY-2001  [ssafe]
+TITLE   :FIX: Get from Project History Does Not Display Get Dialog Box
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe500bug kbSSafe600fix kbSSExplorer
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have set the project level Get dialog box to appear only when you press
+the SHIFT key and you open a project's history, hold the SHIFT key down, and
+click Get, the Get dialog box does not appear.
+
+RESOLUTION
+==========
+
+From the Tools menu, click Options, click the Common Dialogs tab, and select Get
+Latest Version check box in the list of commands used for projects to set the
+project level Get dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Visual SourceSafe 5.0.
+This bug was corrected in Visual SourceSafe 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open Visual SourceSafe Explorer.
+
+2. From the Tools menu, click Options, click the Common Dialogs tab, and clear
+   the Get Latest Version check box in the list of commands used for projects to
+   set the project level Get dialog box.
+
+3. Click OK.
+
+4. Select a project and do a recursive history on it.
+
+5. Select a project.
+
+6. While pressing the SHIFT key, click Get.
+
+The Get dialog box does not appear.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe500bug kbSSafe600fix kbSSExplorer 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe500
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

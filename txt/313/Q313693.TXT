@@ -1,0 +1,70 @@
+DOCUMENT:Q313693  07-DEC-2001  [sna]
+TITLE   :3270 Client (Win3270.exe) Doesn't Enforce User/Group Assignments
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhis2000 kbhis2000bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The 3270 client (Win3270.exe) allows a user to open multiple 3270 sessions even
+though only a single instance of a 3270 logical Unit (LU) pool is assigned to
+the user/group record in the Host Integration Server (HIS) 2000 configuration.
+
+CAUSE
+=====
+
+The 3270 client was not updated to enforce user/group assignments after it was
+enhanced to support multiple 3270 sessions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+MORE INFORMATION
+================
+
+If a single instance of a 3270 LU pool is assigned to a user or group, the user
+should be restricted to opening a single 3270 session. To grant access to
+multiple pooled 3270 sessions, an HIS 2000 administrator can assign multiple
+instances of the 3270 LU pool to the user or group.
+
+This problem has been observed with some third-party emulators, as described in
+the following Microsoft Knowledge Base article:
+
+   Q158775 3270 Emulator Fails to Enforce SNA User/Group Assignments
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhis2000 kbhis2000bug 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

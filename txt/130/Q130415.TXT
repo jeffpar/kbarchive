@@ -1,0 +1,74 @@
+DOCUMENT:Q130415  12-JUN-2001  [homegame]
+TITLE   :Golf 2.0 Err Msg: Crucial Files Missing
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+kbsetup kberrmsg kbprb kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Golf 2.0 for Windows, you may receive the following
+error message:
+
+   Crucial Files Missing
+
+CAUSE
+=====
+
+This message occurs because the player profile setting does not recognize any
+extended keyboard characters or any foreign keyboard characters.
+
+Setup allows use of extended characters (for example foreign accent marks) during
+initial setup, but after setup they cause the above error message because player
+profile doesn't recognize extended characters.
+
+RESOLUTION
+==========
+
+To correct the problem, you must obtain a new set of Golf disks, delete your
+Golf directory, and reinstall the program without using extended characters in
+the name fields. For more information about how to perform these tasks in
+Windows, see your Windows printed documentation or online Help.
+
+To obtain new or updated Microsoft products, call the Microsoft Sales Information
+Center at (800) 426-9400. International customers should see Microsoft's World
+Wide Offices Web site at:
+
+   http://www.microsoft.com/worldwide/default.htm
+
+Microsoft has confirmed this to be a problem in Golf version 2.0 for Windows.
+
+Additional query words: 2.00 error hang
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,85 @@
+DOCUMENT:Q301498  12-JUN-2001  [msnetwork]
+TITLE   :E-mail: Inbox Protector
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The customer would like to keep from being sent bulk or junk mail.
+
+MORE INFORMATION
+================
+
+To set up inbox protector
+
+1. Click "mail settings".
+
+2. On the "mail settings" page, click "inbox protector".
+
+3. On the "inbox protector" page choose one of the following options:
+
+    - Typical - Incoming e-mail will be directed to your Inbox if:
+
+       - Your e-mail address appears on the "TO:" or "CC:" line.
+
+       - The sender's address appears in your Hotmail Address Book.
+
+       - It is a user in the msn.com domain.
+
+       - Any users maintaining an account with these services.
+
+       - It is a Hotmail WebCourier or Special Offers Subscription, Hotmail
+         Member Letter, or it is from Microsoft, MSN, or a Microsoft Passport
+         partner site.
+
+    - Custom - For advanced users. Use the check boxes to indicate which e-mail
+      message should be delivered to your inbox:
+
+       - Your address appears on the "TO:" or "CC:" line
+
+       - The sender's address is in your Hotmail Address Book.
+
+       - The sender's address is in the msn.com domain.
+
+4. Choose how to discard these items. You can send them to:
+
+    - Bulk Mail Folder - Messages are deleted after 14 days.
+
+    - Trash Can - This is emptied several times a week.
+
+5. Select the domains, if any, from which you are willing to receive mail. This
+   is your "Safe List".
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

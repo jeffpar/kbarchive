@@ -1,0 +1,117 @@
+DOCUMENT:Q139828  06-MAY-2001  [visualc]
+TITLE   :PRB: MFC Does Not Reopen an Open Document
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbDocView kbFileIO kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a default MFC AppWizard application, the framework will not reopen a document
+file from disk that is currently open in the application.
+
+RESOLUTION
+==========
+
+This is by design. In a typical MFC application, the Open File command is mapped
+to the CWinApp::OnFileOpen() function. In earlier versions of MFC, this function
+in turn called the CWinApp::OpenDocumentFile() function. Since MFC 4.0, there is
+now an intervening CDocManager class, but the call to OnFileOpen() still
+eventually results in a call to CWinApp::OpenDocumentFile().
+
+CWinApp::OpenDocumentFile() first processes the string holding the requested file
+name. Then it searches through the list of document templates that were added
+for the application by calls to AddDocTemplate in order to find the best match
+between the name of the file and a document template to open it with. At this
+point, if OpenDocumentFile() finds that this file is already currently opened
+for one of the templates, OpenDocumentFile() activates the view for that file
+and then returns. It does not re-open the file.
+
+If that document file is not currently open and OpenDocumentFile() has found a
+valid template to open the file with, it calls that template's
+OpenDocumentFile() function. This function is responsible for opening the file
+and loading its data into an appropriate document.
+
+In some situations, you may want to reopen an open document. For example, Notepad
+does this. On a file open request, Notepad first displays a prompt dialog to
+allow the user to save a modified file. If the user does not click cancel on
+this dialog box, Notepad then brings up the File Open dialog box. If the user
+chooses to reopen the current file, Notepad rereads it from disk and discards
+any unsaved changes.
+
+To duplicate this behavior in an MFC program, the programmer needs to override
+the OpenDocumentFile() member function of CWinApp. Or, if the appropriate
+template for the file is easy to determine (such as when the application has
+only one kind of doc template), it would be possible to call the template's
+OpenDocumentFile() directly from an override of CWinApp::OnFileOpen(). This is
+demonstrated in the "Sample Code" section of this article.
+
+Note that MFC will display the Save Modified prompt dialog after the Open File
+dialog box; this is counter to the behavior of Notepad.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+
+   void CWinApp::OnFileOpen()
+   {
+      // prompt the user (with all document templates)
+      CString newName;
+      if (!DoPromptFileName(newName, AFX_IDS_OPENFILE,
+             OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, TRUE, NULL))
+          return; // open cancelled
+
+      // Process newName string if necessary
+
+      // Get pTemplate, a pointer to one of the app's document templates
+
+      pTemplate->OpenDocumentFile(newName);
+   } // end of CWinApp::OnFileOpen()
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Jason Strayer, Microsoft Corporation
+
+
+Additional query words: 1.00 1.50 2.00 2.10 2.20 4.00 2.50 2.51 2.52 3.00 3.10 3.20
+
+======================================================================
+Keywords          : kbDocView kbFileIO kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

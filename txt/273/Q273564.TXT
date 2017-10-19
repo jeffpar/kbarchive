@@ -1,0 +1,69 @@
+DOCUMENT:Q273564  12-NOV-2001  [msnetwork]
+TITLE   :How to change call waiting settings in MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Step-by-step instructions for changing call waiting settings.
+
+MORE INFORMATION
+================
+
+If your phone has Call Waiting, you can choose whether to have the call
+disconnect your Web session.
+
+To turn off Call Waiting so your calls will not interrupt your online sessions
+
+1. Click settings on the start page and then click call waiting.
+
+2. Select the don't allow incoming calls to interrupt me while I'm online
+   checkbox, select *70 (used mostly for touch tone phones) or select other code
+   and type your cancel-call-waiting code, and then click done.
+
+To turn on Call Waiting so your calls will interrupt your online sessions
+
+1. Click settings on the start page and then click call waiting.
+
+2. Clear the don't allow incoming calls to interrupt me while I'm online
+   checkbox, click done, and then disconnect MSN companion from the Internet.
+
+Note: If you do not have Call Waiting from the phone company and select call
+waiting settings on MSN Companion, you will not be able to connect to the
+Internet. After MSN Companion fails to connect, you will be given a dialup
+troubleshooting page. Click I heard an operator's message and then click I do
+not have Call Waiting.
+
+Additional query words: kbimu MSN Companion Call Waiting
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

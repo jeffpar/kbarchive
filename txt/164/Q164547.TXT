@@ -1,0 +1,160 @@
+DOCUMENT:Q164547  14-NOV-2000  [word97]
+TITLE   :WD97: Fillin Field Prompts Twice
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 kbusage kbfield word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Fillin field in a new document, you are prompted twice for the
+information.
+
+CAUSE
+=====
+
+Word 97 has a new feature that automatically updates a Fillin field under the
+following conditions:
+
+ - The fill-in field is stored in a template other than Normal.dot.
+
+   -and-
+
+ - You create a new document based on this template.
+
+   NOTE: If a fillin field is placed in the normal template (Normal.dot), that
+   fillin field does NOT update automatically when a new document is opened.
+
+If you have an AutoNew or FileNew macro that issues a command to update fields,
+Word 97 will prompt you twice for each of your Fillin fields when creating a new
+document based upon the template containing the fields.
+
+NOTE: This functionality is different from previous versions of Word, and there
+is no way to turn off this feature.
+
+WORKAROUND
+==========
+
+Method 1: Remove the AutoNew Macro
+----------------------------------
+
+NOTE: This method may remove other functionality if the AutoNew macro performs
+additional tasks other than updating the fields.
+
+1. On the Tools menu, point to Macro, and then click Macros.
+
+2. Click AutoNew.
+
+3. Click Delete.
+
+4. Click Yes to the "Do you want to delete the macro?" prompt.
+
+5. When you close the document, click Yes to save changes to the template.
+
+Method 2: Lock the Fillin Fields
+--------------------------------
+
+1. On the File menu, click Open and open your template.
+
+2. Display the field codes in your document. On the Tools menu, click Options.
+   Click the View tab. Under Show, click the Field Codes option to select it,
+   and then click OK.
+
+3. Select your Fillin field, and then press CTRL+F11.
+
+   This locks the Fillin field so it will not update. Repeat this step for each
+   of your Fillin fields.
+
+4. Create an AutoNew macro with the following statement:
+
+         ActiveDocument.Fields.Locked = False
+         ' Note: If you do not want the fields
+         ' to update automatically, do not add
+         ' the following command line to your
+         ' AutoNew macro.
+         ActiveDocument.Fields.Update
+
+5. Close and save the macro and your template.
+
+NOTE: Word updates Fillin fields before running an AutoNew macro. Because you
+have locked the Fillin fields, Word can only prompt once for each of your fillin
+fields as a result of the AutoNew macro.
+
+Method 3: Use Form Fields
+-------------------------
+
+Use form fields to enter information into your form instead of the Fillin field.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q141990 How to Create an Online Form Using Form Fields
+
+Method 4: Use the Ask field
+---------------------------
+
+Use the Ask field to prompt you for the required information. Then use the REF
+field to insert the prompted information into your document.
+
+For example:
+
+   {Ask Name "What is your name?"}{REF Name}
+
+NOTE: Do not use the Fillin field.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Microsoft Word 97 retained, for backward compatibility, the use of certain
+fields to prompt you for the insertion of information into your document. In
+earlier versions of Word, you can use the Ask or Fillin fields to prompt you for
+information. Using these fields requires a macro that forces Word to bring up
+the field prompts automatically.
+
+Microsoft Word 97 automatically brings up the prompt for any Fillin field you may
+have in your document without the use of a macro, but it does not bring up the
+prompt for the Ask field.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q142213 How to Create an Automated Form with Fill-in Fields
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbualink97 kbusage kbfield word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

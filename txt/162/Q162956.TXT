@@ -1,0 +1,72 @@
+DOCUMENT:Q162956  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Delete Certain Objects in HTML Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Scrolling text (the marquee), Background Sound Clips, and Video Clips can be
+difficult to remove from a document. For example the scrolling text may not be
+removed when you click the object and then press DELETE on the keyboard or when
+you click Cut on the Edit menu.
+
+NOTE: That Word Help states that you should be able to remove the marquee by
+clicking Cut on the Edit menu.
+
+CAUSE
+=====
+
+The scrolling text, Background Sound Clip, and Video Clip are ActiveX controls.
+An ActiveX controls owns its own window and processes all of the keystrokes that
+are given to them. You cannot delete an ActiveX control in run mode with a
+keystroke.
+
+RESOLUTION
+==========
+
+To remove the scrolling text (marquee), Background Sound Clip, or Video Clip use
+the following steps:
+
+ - Select the item and then click Clear on the Edit menu.
+
+   -or-
+
+ - Select the item area by moving the mouse into the selection bar area on the
+   far left of the screen and clicking the mouse button.
+
+   Once the item is selected, you can now delete the it by clicking DELETE, or by
+   clicking Cut on the Edit menu.
+
+Additional query words: 97 embedded sound video
+
+======================================================================
+Keywords          : kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

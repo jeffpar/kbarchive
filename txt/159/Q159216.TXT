@@ -1,0 +1,67 @@
+DOCUMENT:Q159216  08-DEC-2000  [exchange]
+TITLE   :XCLN: How to Create One-off Address in Korean Exchange Client
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0 
+ - Microsoft Exchange Korean Client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the administrative steps necessary to allow the Korean
+Microsoft Exchange client to create one-off addresses such as addresses for
+Microsoft Mail, Microsoft Mail for AppleTalk Networks, Internet, and X.400.
+
+MORE INFORMATION
+================
+
+When a user attempts to create a one-off address for an X.400 address in the
+Korean Microsoft Exchange client, he or she may not be able to do so because
+"X.400 Address" is not listed in the "New Entry" dialog box. The user may see
+only "Other Address" and "Personal Distribution List" in the listbox.
+
+In order for the Korean Microsoft Exchange client to display complete set of
+address types in "New Entry" dialog box, the Microsoft Exchange Server
+administrator needs to install the Korean template on the computer running
+Microsoft Exchange Server. To install the Korean template:
+
+1. In the Microsoft Exchange Server Administrator program, on the Tools menu,
+   click Directory Import.
+
+2. Click Import File.
+
+3. Select \\Kor\Tpl\Template.csv in the Korean Microsoft Exchange client compact
+   disc.
+
+4. Click Import button.
+
+Additional query words: DBCS kbkorea
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbHLangKorean kbExchangeSearch kbExchange550 kbExchange400 kbExchangeClientSearch kbZNotKeyword2
+Version           : :4.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

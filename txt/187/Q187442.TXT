@@ -1,0 +1,68 @@
+DOCUMENT:Q187442  11-DEC-2001  [winnt]
+TITLE   :Unable to Create a New Session
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A user may log on from a computer where the user connects to the Windows
+Terminal Server with a login name of GUEST, and then disconnects. On a computer
+other than the first, a different user connects to the same Windows Terminal
+Server with same login name GUEST. The second user is reconnected to the
+previously disconnected session opened by the first user.
+
+CAUSE
+=====
+
+This problem is caused by a specific setting in the Terminal Connection
+Configuration utility.
+
+RESOLUTION
+==========
+
+This behavior is a feature that may be turned off or on in the Terminal Server
+Connection Configuration utility. By selecting the Advanced tab in Terminal
+Server Connection Configuration, you can set the default option. While on this
+menu, in the "On a broken or timeout session" drop down menu, you can choose to
+either disconnect or reset the session. Select reset, and new connections may be
+made under the same user name.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

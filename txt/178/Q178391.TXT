@@ -1,0 +1,70 @@
+DOCUMENT:Q178391  11-SEP-2001  [odbc]
+TITLE   :PRB: Oracle TNS: Authentication Service Initialization Error
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.0,2.1,2.5,2.6,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.03,Build 2.73.7356
+OPER/SYS:
+KEYWORDS:kb3rdparty kbATM kbDatabase kbDriver kbODBC kbOracle kbGrpDSMDAC kbDSupport kbIIS kbGrp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC for Oracle version 2.0, versions Build 2.73.7269, Build 2.73.7283.03, Build 2.73.7356 
+ - Microsoft ODBC for Oracle version 2.5 Build 2.573.2927 
+ - Microsoft Data Access Components versions 2.0, 2.1, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Oracle databases authenticate users that are logged on with SQL*Net
+Authentication services. This service works fine for users logged into Oracle
+through SQLPlus; however, when the logged on user is a service like Internet
+Information Server, the authentication fails with the following error:
+
+   [Microsoft][ODBC driver for Oracle][Oracle]ORA-12641: TNS:authentication
+   service failed to initialize
+
+CAUSE
+=====
+
+This is a known limitation of SQL*Net Authentication.
+
+RESOLUTION
+==========
+
+The problem may be corrected by editing the Sqlnet.ora file. This configuration
+file is usually stored in the Network/Admin subdirectory of the Oracle Home
+directory. The following line needs to be added to this file:
+
+   SQLNET.AUTHENTICATION_SERVICES = (none)
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbATM kbDatabase kbDriver kbODBC kbOracle kbGrpDSMDAC kbDSupport kbIIS kbGrpDSODBC 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC200 kbMDAC210 kbMDAC250 kbMDAC260 kbODBCOracle2737269 kbODBCOracle273728303 kbODBCOracle25732927 kbODBCOracle2737356 kbODBCOracle200Search kbODBCOracle250Search
+Version           : :2.0,2.1,2.5,2.6,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.03,Build 2.73.7356
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

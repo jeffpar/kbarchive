@@ -1,0 +1,94 @@
+DOCUMENT:Q231886  20-FEB-2002  [winnt]
+TITLE   :BUG: Misleading Error 0x8004d021 When Import Transaction Fails
+PRODUCT :Microsoft Windows NT
+PROD/VER::1.0,1.5
+OPER/SYS:
+KEYWORDS:kbCOMPlus kbDTC kbOSWin2000bug kbGrpDSCom kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM+, versions 1.0, 1.5 
+ - the operating system: Microsoft Windows 2000 
+ - the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Bring Your Own Transaction (BYOT), the import transaction may fail
+with XACT_E_TIP_PULL_FAILED. The following message may be logged in event
+viewer:
+
+   The BYOT Gateway failed to import the transaction using Transaction Internet
+   Protocol (TIP). Make sure that the installed DTC supports the TIP protocol.
+
+   Server Application ID : {A20B779B-03F6-11D3-926A-00C04F8EF295}
+   Server Application Name : server_name
+   Error Code = 0x8004d021 :
+   COM+ Services Internals Information :
+   File: .\byotex.cpp, Line: 105
+
+CAUSE
+=====
+
+This error is misleading because import transaction can fail even if Microsoft
+Distributed Coordinator (MS DTC) supports Transaction Internet Protocol (TIP).
+
+This error is returned when a PULLED command is sent to the Transaction Manager
+(TM), and the TM sends back a NOTPULLED token. Any TM that is TIP-compliant can
+send a NOTPULLED token. A TM can return this token if for any reason the Pull
+relationship is not established. For additional information, see the "More
+Information" section to follow.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+MS DTC returns a NOTPULLED token under the following circumstances:
+
+ - The Transaction identifier (TrID) that is included in the PULL command is not
+   valid. TIP specification does not define a format for TrID. Each TM defines
+   its own TrID. For MS DTC, the valid TrID should comply with the following
+   format:
+
+   oletx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+   which is 43 characters long (including terminal NULL).
+
+ - The application was badly designed. The transaction was committed before the
+   complete transaction tree was set up.
+
+ - The specified TrID is not in the list for the active transactions. As a
+   result, the transaction is stopped or timed out.
+
+Additional query words: error 0x8004d021
+
+======================================================================
+Keywords          : kbCOMPlus kbDTC kbOSWin2000bug kbGrpDSCom kbDSupport 
+Technology        : kbOSWin2000 kbAudDeveloper kbOSWinSearch kbOSWinXP kbCOMPlusSearch kbZNotKeyword3 kbCOMPlus100 kbOSWinXPSearch
+Version           : :1.0,1.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

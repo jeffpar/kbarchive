@@ -1,0 +1,63 @@
+DOCUMENT:Q299866  13-JUN-2001  [msdn]
+TITLE   :Pages Always Show the Sign-out Logo After User Signs Out
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+My pages always show the Sign-out logo (from LogoTag2) after a user attempts to
+sign out.
+
+CAUSE
+=====
+
+If the user browser is behind a proxy, bad proxy settings may be returning
+cached content when they should not.
+
+RESOLUTION
+==========
+
+Make sure that you are expiring pages and content on either a site-wide or a
+page-by-page basis.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q299353 Passport Cookies Are Not Deleted When a User Signs Out
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

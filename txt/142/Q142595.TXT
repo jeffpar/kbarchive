@@ -1,0 +1,78 @@
+DOCUMENT:Q142595  17-DEC-2000  [crossnet]
+TITLE   :Using a Generic Logon with SBS Shared Installation
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Windows 95 from a Server-Based-Setup (SBS) shared installation on
+a Microsoft Windows NT server, two separate logons are required: a real-mode
+network logon and a protected-mode network logon in Windows 95. There are 2
+methods you can use to automate these logons:
+
+ - To bypass the protected-mode logon, log on in real-mode with your domain user
+   name and domain password.
+
+ - To bypass the real-mode logon, add the following line to the Autoexec.bat
+   file in the root directory of drive C
+
+         net logon <generic_username> <password> /domain:<domain name> /y
+
+   where <generic_username> is a generic account that you have created with
+   <password> as its password. This causes a generic logon in real mode.
+   You can then log on with your normal user account when you are prompted in
+   protected mode (in Windows 95).
+
+MORE INFORMATION
+================
+
+When you use the second method above, you must make sure that your shared
+installation is not located on any primary or backup domain controllers. If the
+shared installation is located on a primary or backup domain controller, you
+will be able to use the generic logon in real mode successfully, but you will
+not be able to log on in Windows 95. You will receive the following error
+message:
+
+   The domain password you supplied is not correct, or access to your logon
+   server has been denied.
+
+The shared installation must not reside on a primary or backup domain controller
+for this method to work correctly.
+
+REFERENCES
+==========
+
+Microsoft Windows 95 Resource Kit page 140
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

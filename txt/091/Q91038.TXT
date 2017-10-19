@@ -1,0 +1,63 @@
+DOCUMENT:Q91038  12-NOV-1999  [pcmail]
+TITLE   :PC WFW: Features of Extensions for Windows for Workgroups
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.0 of Microsoft Mail and Schedule+ Extensions for Windows for
+Workgroups contains EXTEND.EXE, which automatically upgrades an existing Windows
+version 3.1 for Workgroups postoffice to a version 3.0 Microsoft Mail for PC
+Networks postoffice.
+
+Upgrading to Microsoft Mail allows you to use the following additional features:
+
+ - Exchange mail and share schedules with users on other Microsoft Mail
+   postoffices on the network.
+
+ - Exchange mail and Schedule+ meeting requests with remote Microsoft Mail
+   postoffices.
+
+ - Exchange mail with other mail systems, such as MCI Mail, PROFS, MHS, SNADS,
+   SMTP, and with fax systems through gateways.
+
+ - Dial in from a Microsoft Mail Remote workstation to send and receive
+   messages.
+
+ - Exchange mail with users on Macintosh, MS-DOS, Windows, and OS/2 computers.
+
+ - Exchange and automatically update user names in the Global Address List.
+
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3 kbMailScheduleX300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q134750  17-DEC-2000  [win95x]
+TITLE   :Err Msg: SCANDISK Will Work Only with MS-DOS Versions...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows 95, the MS-DOS version of ScanDisk does not operate.
+When you try to start ScanDisk from the DOS directory, you receive one of the
+following error messages:
+
+   This version of Microsoft SCANDISK will work only with MS-DOS versions 6.0
+   and later.
+
+   This version of Microsoft SCANDISK will work only on MS-DOS versions 6 and
+   6.20.
+
+CAUSE
+=====
+
+Setup leaves the MS-DOS version of ScanDisk in the DOS directory for backwards
+compatibility, but this version of ScanDisk does not run in Windows 95.
+
+RESOLUTION
+==========
+
+Run ScanDisk from the Windows\Command folder, or run it by clicking the Start
+button, pointing to Programs, pointing to Accessories, pointing to System Tools,
+and then clicking ScanDisk.
+
+MORE INFORMATION
+================
+
+You can run the version of ScanDisk in the DOS directory only if you boot your
+computer to your previous version of MS-DOS. We do not recommend that you do
+this because running the MS-DOS version of ScanDisk from the DOS directory can
+damage long filenames.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

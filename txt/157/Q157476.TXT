@@ -1,0 +1,64 @@
+DOCUMENT:Q157476  14-NOV-2000  [word97]
+TITLE   :WD97: Equation Editor Objects Not Visible In Converted Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you convert a Word 97 document that contains equation objects to
+WordPerfect 5.x for Windows format, and then reopen the document in Word 97, the
+equation objects appear to be missing. If field codes view is turned on, you
+will see the {Embed.Equation.3} fields; however, if field codes view is turned
+off, you do not see the equation objects.
+
+The document appears correctly when opened in WordPerfect 5.x or 6.x. However,
+when you edit and save the document in WordPerfect and then reopen the document
+in Word 97, the objects appear to be missing.
+
+WORKAROUND
+==========
+
+The objects are still present in the document, but it may be difficult to locate
+them. Turn on field codes view to determine where they are located, turn off
+field codes view, and then double-click the equation object to update it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,62 @@
+DOCUMENT:Q281792  01-JUN-2001  [homegame]
+TITLE   :Casino: Dice, Cards, Wheels, and Slot Animations Do Not Appear
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Casino 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The animations of dice, cards, wheels, and slot machines in Microsoft Casino do
+not appear.
+
+CAUSE
+=====
+
+This behavior can occur if the Game Animation check box, under Options, is not
+selected.
+
+RESOLUTION
+==========
+
+To turn on the game animations, follow these steps:
+
+1. On the main menu, click Options.
+
+2. Click to select the Game Animation check box.
+
+3. Click OK ([GRAPHIC:the star and circle with the green check mark]).
+
+The game animations now work as expected.
+
+Additional query words: msgame mscasino
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbHomeMMsearch kbGamesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

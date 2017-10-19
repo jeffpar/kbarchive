@@ -1,0 +1,89 @@
+DOCUMENT:Q166936  11-DEC-1999  [foxpro]
+TITLE   :PRB: Letters A through J and M Invalid Object Variable Names
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs when trying to access the properties of an object
+that is named by a single character from A through J, or M:
+
+   Variable '<variablename>' not found.
+
+CAUSE
+=====
+
+The letters A through J are reserved by Visual FoxPro to reference workspace
+names. The letter M is reserved for backward compatibility with the SCATTER and
+GATHER commands.
+
+RESOLUTION
+==========
+
+Do not name object variables by the single characters from A through J or M.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form.
+
+2. Place a command button on the form.
+
+3. In the Click event of the command button, place the following code:
+
+         C=THISFORM
+         WAIT WINDOW C.NAME
+
+   When this code is run, it produces this error:
+
+   Variable 'NAME' Not Found
+
+If you need to use one of these letters as an object variable, use the following
+method to return the value of a property. This does not allow the setting of
+properties, nor does it expose any methods of the object.
+
+         C="THISFORM"
+         WAIT WINDOW EVALUATE(C+".NAME")
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

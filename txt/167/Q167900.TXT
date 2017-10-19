@@ -1,0 +1,72 @@
+DOCUMENT:Q167900  22-FEB-2002  [winnt]
+TITLE   :Error Attempting to Save System Policy File
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use System Policy Editor and attempt to save a policy file on a
+computer running Windows NT, you may receive the following error message:
+
+   An error occurred writing the registry. The file cannot be saved.
+
+CAUSE
+=====
+
+To save a policy file using System Policy Editor on a computer running Windows
+NT, you must be a member of the administrators group. The reason for this
+limitation is that, even when you are only saving a .pol file to the local
+system, you need to access registry settings to complete the operation.
+
+
+MORE INFORMATION
+================
+
+The specified policy file will be saved to the system. The size of the file will
+be 0 KB. If you attempt to open this file you receive an error message similar
+to the following:
+
+   Unable to open c:\ntconfig.pol:
+   A required privilege is not held by the client.
+
+When you try the same procedure using an administrator-equivalent account you
+will receive an error message similar to the following:
+
+   Unable to open c:\ntconfig.pol:
+   The configuration registry database is corrupt.
+
+Additional query words: system policy editor save as rights poledit
+
+======================================================================
+Keywords          : kbenv kbnetwork kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

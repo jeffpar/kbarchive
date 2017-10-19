@@ -1,0 +1,71 @@
+DOCUMENT:Q149675  22-MAR-1999  [exchange]
+TITLE   :XFOR: Error Sending Mail from Exchange out an MHS Gateway
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to send mail out a PCMTA connector to a DOS Microsoft MHS gateway,
+you might receive the following error:
+
+   Your message did not reach all or some of the intended recipients.
+
+MORE INFORMATION
+================
+
+Check the following configuration in the Microsoft Exchange Administrator
+program:
+
+1. Verify that the Address Space on the PC Mail Connector has:
+
+   TYPE    Address                   COST
+   MHS                                  1
+
+   If MHS is not a type, use New General to add it. Then Stop and Start the PC
+   Mail Connector service.
+
+2. Verify that the Site, Configuration, Site Addressing Object, Routing Tab for
+   the MHS address is defined properly. If it is not, go back to step one and
+   remove and recreate the address space.
+
+3. Recalculate Routing on the Site, Configuration, Site Addressing Object,
+   Routing tab.
+
+4. On the MS Mail connector Properties Connections tab, verify that the Access
+   component is hanging off the gateway PO. If it is there, but is not shown
+   under the gateway MS Mail PO, remove the access component from the connector
+   PO and reinstall it, so that it is pointing to the MS Mail gateway PO.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

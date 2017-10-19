@@ -1,0 +1,120 @@
+DOCUMENT:Q186626  11-DEC-2001  [winnt]
+TITLE   :Terminal Server and User Accounts/SAM Use
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Citrix Winframe 1.6 and earlier versions stored user account information
+specific to Winframe sessions in the registry. This meant that the information
+would not replicate, even if the Winframe server was a domain controller. Citrix
+introduced a utility called CNVRTUC, to convert registry information into the
+security account manager (SAM) database, so that the user information could be
+replicated. Windows Terminal Server uses the SAM for user information by
+default, although CNVRTUC is included with Terminal Server to facilitate
+upgrades from Citrix Winframe 1.6. This could raise concerns about the SAM in a
+domain environment. Concerns include how the user accounts database on Terminal
+Server is different from the SAM on other non-Terminal Server domain
+controllers. Also, there could be a concern about whether the SAM will properly
+replicate, and whether or not it is structurally different from non-Terminal
+Server SAMs.
+
+MORE INFORMATION
+================
+
+Citrix Winframe and Terminal Server make use of optional fields that were built
+into Windows NT Server user account databases. These fields were included to
+allow software developers to add special features to Windows NT without making
+structural changes that might be detrimental to "normal" user account databases.
+If data exists in these fields, it is replicated through the domain, making it
+available wherever users might log on.
+
+So, although Terminal Server makes use of these optional fields in the SAM, the
+user accounts database is not structurally different from copies of the SAM on
+other domain controllers, member servers, or standalone servers. Terminal Server
+(and Citrix Winframe) are fully compatible with Windows NT Server 3.51 and 4.0
+SAMs.
+
+However, since Terminal Server user accounts will normally have more data, the
+individual record sizes in the SAM will be larger. This should be considered in
+capacity planning. In Windows NT Server, a single user account consumes from 1
+through 4 KB of space. Here are the possible sizes for Terminal Server accounts.
+The actual sizes you see will depend on how much data you include in each
+account. These figures are not exact. They are intended to demonstrate the range
+you might see on your Terminal Server.
+
+1. A simple user: just a username, password, no descriptions or full names:
+   approximately 1K.
+
+2. A complex user: adding the maximum amount possible on every available input
+   line for names, passwords, paths to home directories, and so on, can increase
+   the size to 8 KB per user.
+
+3. Global groups add about 4 KB (the same as Windows NT Server).
+
+4. Local groups add about 1 KB (the same as Windows NT Server)
+
+If you install a Terminal Server as a primary domain controller (PDC), or as a
+backup domain controller (BDC), you can expect to see much larger account sizes
+and a much larger SAM than on Windows NT Server domain controllers. As with
+Windows NT Server, Microsoft recommends that the SAM be no larger than 60 MB for
+a single domain. This may mean that you want to create a separate domain for
+your Terminal Servers. If you want users to use any of the special attributes
+found in Terminal Server User Manager, the users' logon accounts must be
+modified. This means that if Terminal Server is in a separate domain, that
+domain needs to be a master accounts domain, rather than a resource domain.
+
+Another consideration, even if Terminal Server plays only a member server role in
+your domain, is to use Terminal Server's User Manager to manage the domain.
+Again, because Terminal Server makes use of optional fields, and cannot
+distinguish between Terminal Server and non-Terminal Server user account
+databases, if you manage your non-Terminal Server domain accounts (focusing on
+the PDC) from the Terminal Server, you will create accounts that are somewhat
+larger than normal. If this is a consideration in your domain, do not use
+Terminal Server's User Manager to manage domain user accounts.
+
+However, if you want to use any of the special configuration options available in
+Terminal Server's User Manager, you must manage your accounts from a Terminal
+Server. That Server can be a member server, or a domain controller, in your
+accounts domain. It could also be a server in a trusted or trusting domain, if
+the Terminal Server's global administrators group has been added to the local
+administrators group in the accounts domain. Normal security considerations
+apply to Terminal Servers in resource or accounts domains.
+
+For additional information about the SAM size, see the following article in the
+Microsoft Knowledge Base:
+
+   Q130914 Number of Users and Groups Affects SAM Size of Domain
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

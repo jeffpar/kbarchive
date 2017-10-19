@@ -1,0 +1,286 @@
+DOCUMENT:Q263562  08-AUG-2001  [winnt]
+TITLE   :Extra Files That Can Be Manually Installed from the SP4 CD
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP4
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4 
+ - Microsoft Windows NT Server version 4.0 SP4, Terminal Server Edition 
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Service Pack 4 (SP4) CD contains files in the Alpha and i386 folders that
+are not installed automatically. These files are included only in the CD version
+of SP4. They are not included in the downloadable version of SP4.
+
+The files are of the following types:
+
+ - Files for Remote Access Service (RAS), used to install versions of Windows CE
+   Services.
+
+ - Sound Blaster Plug and Play files.
+
+ - Updated files for debugging.
+
+ - Multimedia Setup files.
+
+ - Updated printer files and drivers.
+
+MORE INFORMATION
+================
+
+The list below has been broken down by component for easier identification and
+mapping of file to driver.
+
+Additional Remote Access Service Components
+-------------------------------------------
+
+Service Pack 4 allows Windows CE Services to install RAS directly from the SP4
+CD. These files contain no additional fixes from the retail version of Windows
+NT 4.0 and are not installed by Update.exe.
+
+NOTE: This applies only to the installation of versions of Windows CE Services
+earlier than version 3.0.
+
+ - Rasadmin.cnt - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasgloss.cnt - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasphone.cnt - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rassetup.cnt - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasadhlp.dll - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasapi16.dll - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rascbcp.dll - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasctrs.dll - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasfil32.dll - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasadmin.exe - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasautou.exe - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasman.exe - Included so Windows CE can install RAS from an SP4 CD
+
+ - Script.doc - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasgloss.hlp - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasgloss.hlp - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rassetup.hlp - Included so Windows CE can install RAS from an SP4 CD
+
+ - Ras.ico - Included so Windows CE can install RAS from an SP4 CD
+
+ - Modem.inf - Included so Windows CE can install RAS from an SP4 CD
+
+ - Pad.inf - Included so Windows CE can install RAS from an SP4 CD + SP2 RAS
+   Setup issue
+
+ - Switch.inf - Included so Windows CE can install RAS from an SP4 CD
+
+ - Cis.scp - Included so Windows CE can install RAS from an SP4 CD
+
+ - Pppmenu.scp - Included so Windows CE can install RAS from an SP4 CD
+
+ - Slip.scp - Included so Windows CE can install RAS from an SP4 CD
+
+ - Slipmenu.scp - Included so Windows CE can install RAS from an SP4 CD
+
+ - Rasread.txt - Included so Windows CE can install RAS from an SP4 CD
+
+Updated Audio Drivers
+---------------------
+
+For additional information about audio files, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q143155 No Audio with Crystal Audio or SoundBlaster AWE32
+
+ - Devpre.exe - Drvlib - Installer for updated Sound Drivers released with SP3
+
+ - Devupd.inf - Drvlib - INF file used by Devpre.exe released with SP3
+
+ - _cs32ba1.dll - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - cs32ba11.dll - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - Csbase.dll - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - _csbase.dll - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - Cwaudio.bin - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - _cwaudio.bin - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - _cs32ba1.sys - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - Cs32ba11.sys - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - Csbase.sys - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - _csbase.sys - Drvlib - New Crystal Semiconductor Audio Drivers released with
+   SP3
+
+ - Sbawe32.drv - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - _sbawe32.drv - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - _sndblst.dll - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - _sndblst.sys - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - Synthgm.sb_ - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - _synthgm.sb_ - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - Synthgs.sb_ - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - _synthgs.sb_ - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - Synthmt.sb_ - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - _synthmt.sb_ - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - Sbawe32.sys - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - _sbawe32.sys - Drvlib - New Creative Labs audio drivers released with SP3
+
+ - Joyport.sys - Drvlib - New Joystick Port Drivers released with SP3
+
+ - _joyport.sys - Drvlib - New Joystick Port Drivers released with SP3
+
+ - Joyport.dll - Drvlib - New Joystick Port Drivers released with SP3
+
+ - _joyport.dll - Drvlib - New Joystick Port Drivers released with SP3
+
+ - _mpu401.sys - Drvlib - Generic MPU Sound Drivers released with SP3
+
+ - _mpu401.dll - Drvlib - Generic MPU Sound Drivers released with SP3
+
+Lexmark Optra Printer Drivers
+-----------------------------
+
+The following Lexmark Optra printer drivers are included in Service Pack 4.
+
+ - Lexmark Optra SC 1275, Lexmark Optra E+, Lexmark Optra S 2450
+
+ - Lexmark Optra S 1650, Lexmark Optra S 1250, Lexmark Optra S 2460, Lexmark
+   Optra S 1620
+
+ - Lmpclmd3.dll - Drvlib - New Lexmark Optra drivers in SP4
+
+ - Lmpclmd4.dll - Drvlib - New Lexmark Optra drivers in SP4
+
+ - Lmpclmd5.dll - Drvlib - New Lexmark Optra drivers in SP4
+
+Samsung Printer Drivers
+-----------------------
+
+The following Samsung printer drivers are included in Service Pack 4.
+
+ - Samsung ML-84(PCL)
+
+ - Samsung QL-84
+
+ - Samsung ML-85(PCL)
+
+ - Samsung QL-85
+
+ - Samsung SI-630A
+
+ - Samsung MJ-630A
+
+ - Samsung MJ-705A
+
+ - Samsung MJC-640A
+
+ - Samsung MJC-650A
+
+ - Sml84.dll - Drvlib - New Samsung drivers in SP4
+
+ - Sml85.dll - Drvlib - New Samsung drivers in SP4
+
+ - Ssmyjet.dll - Drvlib - New Samsung drivers in SP4
+
+Miscellaneous Drivers
+---------------------
+
+ - Sidewndr.dll - Sidewinder joystick driver
+
+ - Pnpisa.inf - Drvlib - New PNP ISA driver released with SP3
+
+ - _miniqic.sys - Drvlib - New SCSI Tape Drive miniport driver released with SP3
+
+Additional Windows 95 Point and Print Support
+---------------------------------------------
+
+The following drivers must be applied manually so that OEM drivers are not
+replaced.
+
+ - Ntprinta.dll - Q168511 - Printer Wizard - adding Windows 95 drivers
+
+ - Pclibm.dll - Updated IBM Network Printer Names to include PCL
+
+ - Xdskjet.dll - Q183709 - Remove #10 envelope from list
+
+Debugger Fixes and Enhancements
+-------------------------------
+
+Access Violation fix in kernel-mode debugger and two new commands added to
+ntsd/cdb.
+
+ - Kdextalp.dll - Access Violation fixed in Kernel Debugger - SP4
+
+ - Kdextx86.dll - Access Violation fixed in Kernel Debugger - SP4
+
+ - Alphakd.exe - Access Violation fixed in Kernel Debugger - SP4
+
+ - Cdb.exe - !reload and !sympath support for ntsd/cdb - SP4
+
+ - Ntsd.exe - !reload and !sympath support for ntsd/cdb - SP4
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search kbNTTermServ400sp4 kbNTTermServSearch
+Version           : :4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

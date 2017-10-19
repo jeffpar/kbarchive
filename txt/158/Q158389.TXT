@@ -1,0 +1,61 @@
+DOCUMENT:Q158389  08-NOV-2001  [homegame]
+TITLE   :Games: Redraw Problems with ATI Video Cards
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for Windows 1.0 
+ - Microsoft Golf for Windows, version 3.0 
+ - Microsoft Return of Arcade for Windows, version 1.0 
+ - Microsoft Best of Windows Entertainment Pack, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The screen may redraw slowly in the programs listed above when you are using
+some ATI video drivers.
+
+RESOLUTION
+==========
+
+This problem can be corrected by adding the following line to the [Display]
+section of the System.ini file:
+
+   STRETCHENGINE=0
+
+MORE INFORMATION
+================
+
+Adding STRETCHENGINE=0 to the System.ini file changes the stretching of bitmaps
+from the ATI video driver to Windows or the CPU. This solution may work for
+other programs experiencing screen redraw problems using ATI video drivers.
+
+Additional query words: 1.00 3.00 close combat ATI redraw slow video stretchengine stretch engine upsidedown upside down bow golf roa arcade
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbArcadeRet kbZNotKeyword kbGolfSearch kbArcadeSearch kbCloseCombatSearch kbWinEntPkSearch kbZNotKeyword3 kbWinEntPkBest kbCloseCombat kbGolf300
+Version           : WINDOWS:1.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

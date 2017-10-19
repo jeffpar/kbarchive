@@ -1,0 +1,120 @@
+DOCUMENT:Q199811  10-AUG-2001  [winnt]
+TITLE   :How to Install ATI Rage Pro Drivers During Unattended Install
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to install ATI Rage Pro (AGP) drivers during an
+unattended installation of Windows NT 4.0. Support for AGP video cards was not
+included in Windows NT until the release of Service Pack 3, so the following
+steps outline the method by which these drivers can be properly installed during
+an unattended installation.
+
+1. Determine which multiprocessor HAL your computer requires using the following
+   list:
+
+    - Halast.dll = "AST Manhattan SMP"
+    - Halsp.dll = "Compaq SystemPro Multiprocessor or 100% Compatible"
+    - Halcbus.dll = "Corollary C-bus Architecture"
+    - Halmca.dll = "IBM PS/2 or other Micro Channel-based PC"
+    - Halmpsm.dll = "Micro Channel Multi Processor PC"
+    - Halapic.dll = "MPS Uniprocessor PC"
+    - Halmps.dll = "MPS Multiprocessor PC"
+    - Halncr.dll = "NCR System 3000 Model 3360/3450/3550"
+    - Haloli.dll = "Olivetti LSX5030/40"
+    - Hal.dll = "Standard PC" (single processor HAL)
+    - Hal486c.dll = "Standard PC with C-Step i486"
+    - Halwyse7.dll = "Wyse Series 7000i Model 740MP/760MP"
+
+2. Rename hal*.dll to hal*.old in the sharepoint where the Windows NT setup
+   files are located.
+
+3. Copy hal*.dll from Service Pack 3 or later to the sharepoint where the
+   Windows NT setup files are located. The Hardware Abstraction Layer (hal.dll)
+   is the file that must be updated for proper functionality of AGP video
+   cards.
+
+   For additional information, please see the following article(s) in the
+   Microsoft Knowledge Base:
+
+   Q177203 ATI 3D RAGE PRO Chipset Requires Windows NT SP3
+
+4. Assuming the Windows NT setup files are in a folder called I386, create a
+   folder under the sharepoint called I386\$OEM$. Under I386\$OEM$, create a
+   folder called Display. Place the OEM video drivers for the Rage Pro card in
+   the I386\$OEM$\Display folder.
+
+5. Place the following information in the [Display] section of your Unattend.txt
+   file. Make proper adjustments to the BitsPerPel, Resolution, and Refresh
+   settings as applicable.
+
+         [Display]
+         InfFile = "ati.inf"
+         InfOption = "ATI Technologies Inc. 3D RAGE PRO"
+         BitsPerPel = 8
+         XResolution = 640
+         YResolution = 480
+         VRefresh = 60
+         AutoConfirm = 1
+         InstallDriver = 1
+
+NOTE: The information below needs to be verified with the version of driver you
+are using. In particular, verify that the name of the INF file inluded with your
+drivers is Ati.inf, or change the line below to reflect the correct name of your
+INF file. Also, the InfOption must match the description of the driver. The
+easiest way to verify this setting is to view the following registry entry on a
+computer that has the Rage Pro card properly installed:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ati
+   \Device0"Device Description"="ATI Technologies Inc. 3D RAGE PRO"
+
+At this point, the unattended installation is ready to run.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q155197 Unattended Setup Parameters for Unattend.txt File
+
+   Q177462 Troubleshooting Cmdlines.txt During an Unattended Setup
+
+For additional information, please see the following guide available on the
+Microsoft Web server:
+
+   URL: http://www.microsoft.com/windows/downloads/bin/ntw/
+   Title: Windows NT Deployment Guide
+
+Additional query words: ATI AGP unattend Setup Install
+
+======================================================================
+Keywords          : kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

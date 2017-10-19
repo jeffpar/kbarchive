@@ -1,0 +1,60 @@
+DOCUMENT:Q123814  08-AUG-2001  [winnt]
+TITLE   :Win NT Err Msg: MBR Checksum Error: A Virus May Be Present...
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Windows NT detects a problem with the Master Boot Record (MBR), the following
+message appears:
+
+   MBR checksum error: a virus may be present. Verify Master Boot Record
+   integrity.
+
+
+MORE INFORMATION
+================
+
+MBR problems are frequently caused by boot sector viruses. Microsoft has
+confirmed that versions of the Stoned and Josh viruses can cause the MBR
+checksum error message.
+
+This problem most often occurs when you have set up Windows NT using WINNT.EXE.
+The floppy disks for a CD-ROM installation can become infected when you run DIR
+from an infected MS-DOS computer.
+
+If the MBR checksum error message occurs during setup, Windows NT Setup does not
+continue. If this happens, run an anti-virus program to remove the virus.
+
+
+Additional query words: prodnt NT infected
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

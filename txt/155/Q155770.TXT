@@ -1,0 +1,78 @@
+DOCUMENT:Q155770  08-NOV-2001  [frontpg]
+TITLE   :FP: Registration Form not Supported on IIS Web Server
+PRODUCT :Word Front Page
+PROD/VER::; MACINTOSH:1.0; WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q208637.
+
+For a Microsoft FrontPage 98 version of this article, see Q194452.
+
+SYMPTOMS
+========
+
+If you try to use the FrontPage Registration WebBot in on a Web site running the
+Microsoft Internet Information Server (IIS) or Microsoft Personal Web Server,
+you may receive the following error message when viewing the properties of the
+page:
+
+   This server does not support registered end users.
+
+CAUSE
+=====
+
+Internet Information Server and Microsoft Personal Web Server do not allow users
+to register through a browser for access to a Web.
+
+MORE INFORMATION
+================
+
+IIS requires that all users, authors, and administrators of a FrontPage Web have
+valid Windows NT accounts. User accounts can only be created by a Windows NT
+administrator using User Manager. The HyperText Transport Protocol (HTTP) does
+not support creating user accounts.
+
+When you create a registration Web, you ask the server to create and update a
+list of registered users based on input from HTTP browsers. IIS is not designed
+to support the creation of registered users without creating a corresponding
+Windows NT account.
+
+For additional information about how to create a registration page for use with
+Web servers that support this feature, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q143092 FP: How to Create a Registration Web
+
+Additional query words: logon restricted restrict security
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage110
+Version           : :; MACINTOSH:1.0; WINDOWS:1.1
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

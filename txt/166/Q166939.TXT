@@ -1,0 +1,81 @@
+DOCUMENT:Q166939  04-AUG-2001  [visualc]
+TITLE   :BUG: CRecordset::Update Fails After Upgrading
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.2 4.2b 5.0
+OPER/SYS:
+KEYWORDS:kbVC500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you recompile it with Visual C++ 4.2 or Visual C++ 5.0, an MFC/ODBC
+application built with Visual C++ 4.0 or 4.1 begins to fail in
+CRecordset::Update.
+
+CAUSE
+=====
+
+MFC 4.2 removes the "FOR UPDATE OF" clause from SELECT statements generated for
+all CRecordset objects.
+
+Some ODBC drivers depend on this syntax and will fail to process the SQL when it
+is not found.
+
+RESOLUTION
+==========
+
+A member variable CDatabase::m_bAddForUpdate was added in MFC 4.2 to internally
+control the inclusion of the "FOR UPDATE" clause.
+
+Setting this variable to TRUE before opening the recordset will cause "FOR
+UPDATE" to be appended to the generated SQL statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+CDatabase::m_bAddForUpdate is an undocumented member of CDatabase and as such is
+not guaranteed to have the same use or even exist in future versions of MFC.
+
+It is offered for use in this article as a workaround only for this current
+problem.
+
+This problem is not believed to affect many ODBC drivers.
+
+Additional query words: kbvc420bug kbvc500bug kbmfc kbdatabase kbodbc
+
+======================================================================
+Keywords          : kbVC500bug kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC32bitSearch kbVC420b kbVC500Search
+Version           : 4.2 4.2b 5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

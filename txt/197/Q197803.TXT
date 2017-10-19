@@ -1,0 +1,102 @@
+DOCUMENT:Q197803  14-NOV-2000  [word97]
+TITLE   :WD97: High Network Traffic When Using Large Tables (Novell)
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience heavy network traffic when you have large tables in your
+document and the document is accessed over a Novell network.
+
+CAUSE
+=====
+
+Large tables can cause a lot of network traffic on a Novell network because
+Novell network drivers do not allow caching.
+
+WORKAROUND
+==========
+
+Use one of the following methods to work around this problem:
+
+Method 1: Increase the Word Cache (Cache Size)
+----------------------------------------------
+
+This may reduce the number of read requests needed for large table access. To
+increase the word cache from a default amount of 64 kilobytes (KB), you need to
+load the Support8.dot template and then run the RegOptions macro. To do this,
+follow these steps:
+
+1. On the Tools menu, click Templates And Add-Ins.
+
+2. Click Add. Select the following folder:
+
+   Program Files\Microsoft Office\Office\Macros
+
+   NOTE: This is the default folder where Support8.dot will be placed. If you did
+   a Typical installation, this template is not installed and you must run Setup
+   again to add these templates. For additional information, please see the
+   following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+3. Select the Support8 template (Support8.dot). Click OK twice.
+
+4. On the Tools menu, point to Macro, and then click Macros.
+
+5. Click to select the RegOptions macro, and then click Run.
+
+6. Click the Word 8.0 Options tab. Click to select CacheSize. In the Setting
+   box, type "1024" (without the quotation marks). Click OK.
+
+7. Quit and restart Word.
+
+For administrative purposes, and for new Word installations only, you can also
+set the following registry value:
+
+   HKLM\Software\Microsoft\Office\8.0\New User Settings\Word\Options
+    CacheSize
+
+Depending on the size of the tables involved, increasing this value to 512 (or
+even 1024) will, in most cases, be sufficient.
+
+Method 2: Split the Table into Multiple One-Page Tables
+-------------------------------------------------------
+
+With large tables, an alternative to increasing the Word cache is to create
+multi-page tables so they appear as a contiguous table; but in reality, they do
+not span multiple pages.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

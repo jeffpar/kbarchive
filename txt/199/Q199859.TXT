@@ -1,0 +1,63 @@
+DOCUMENT:Q199859  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: Computer Hangs After EULA Is Displayed
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Combat Flight Simulator, your computer may
+stop responding (hang) after the installation program displays the End User
+License Agreement (EULA).
+
+CAUSE
+=====
+
+This behavior can occur if the microprocessor (CPU) installed in your computer
+does not meet the minimum system requirements needed to play Combat Flight
+Simulator.
+
+MORE INFORMATION
+================
+
+To play Combat Flight Simulator, a Pentium 133 MHz or faster CPU must be
+installed in your computer.
+
+For a list of the minimum system requirements needed to play Combat Flight
+Simulator, please see the following article in the Microsoft Knowledge Base:
+
+Combat Flight Simulator: Minimum System Requirements
+
+
+Additional query words: 1.00 msgame combatfs cfs crash freeze motherboard chip
+
+======================================================================
+Keywords          : kbenv kbsetup kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

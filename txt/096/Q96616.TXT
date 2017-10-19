@@ -1,0 +1,39 @@
+DOCUMENT:Q96616  30-JUL-2001  [lanman]
+TITLE   :AutoCad Overlay Files Must be Local to Work with LAN Man
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+Q. Can AutoCad work with LAN Manager?
+
+A. AutoCad works fine with LAN Manager if the AutoCad overlay files
+
+   are on the workstation (local). AutoCad's overlay loading procedure somehow
+   does not work with LAN Manager, and the result is that the workstation tries
+   to load the overlays off the wrong network drive. For instance, the overlay
+   files are on drive X, but the workstation tries to load from L, then issues
+   an "unable to locate ..." error message. This does not happen if the overlays
+   are local.
+
+Additional query words: 2.00 2.10 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

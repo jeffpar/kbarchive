@@ -1,0 +1,127 @@
+DOCUMENT:Q143048  11-JAN-2001  [vbwin]
+TITLE   :BUG: Form Unload in Any DBGrid Event Ends Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbVBp400 kbGrpDSVBDBkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Unloading a form with a DBGrid control by using the Unload statement in the any
+event of the DBGrid control causes an application error that ends the Visual
+Basic program. The following are ways to work around this issue:
+
+ - Set the form to nothing prior to unloading the form.
+
+   -or-
+
+ - Unload the form in an event other than a DBGrid event.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+MORE INFORMATION
+================
+
+The following is an example to reproduce this behavior. Two forms are used:
+
+ - The first form has a command button that shows the second form.
+
+ - The second form contains the DBGrid control. The click event of the DBGrid
+   control unloads the second form. Run the program and click the command button
+   to show the second form. Click the DBGrid control in the second form and the
+   application error occurs.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic 4.0 or if it is already running, click New Project on the
+   File menu.
+
+2. Add a command button to the Form1 form.
+
+3. Copy the following code sample to the Form1 code window:
+
+         Option Explicit
+
+         Private Sub Command1_Click()
+            'Show Form2
+            Form2.Show
+         End Sub
+
+4. On the Insert menu, click Form to insert a second form into the project.
+
+5. Add a DBGrid control to the Form2 form and copy the following code sample to
+   the Form2 code window:
+
+         Option Explicit
+
+         Private Sub DBGrid1_Click()
+            'Remove the comment marks from the next two lines
+            'to work around the bug.
+            'Form2.Hide
+            'Set Form2 = Nothing
+            Unload Form2
+         End Sub
+
+6. On the Run menu, click Start, or press the F5 key to start the program. Click
+   the Command1 command button to display the second form. Click on the DBGrid
+   control in the second form. An application error occurs with the following
+   message and Visual Basic ends:
+
+
+   32-bit Visual Basic 4.0:
+
+      Windows NT-An application error has occurred and an application
+                      error log is being generated. VB32.exe, Exception:
+                      access violation (0xc0000005), Address: 0x022a00b8.
+
+      Windows 95-VB32 caused and invalid page fault in module <unknown> at
+                 0000:00000015.
+
+   16-bit edition of Visual Basic 4.0:
+
+      All Operating Systems - VB caused a general protection fault in
+                              module DBGrid16.OCX at 0003:0000fb7f.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbnokeyword kbVBp400 kbGrpDSVBDB kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

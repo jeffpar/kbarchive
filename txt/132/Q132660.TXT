@@ -1,0 +1,77 @@
+DOCUMENT:Q132660  08-AUG-2001  [win95x]
+TITLE   :Invalid Characters Allowed When Creating File Association
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You can type invalid extension characters when you are creating or modifying a
+file association.
+
+CAUSE
+=====
+
+The File Types tab in the Options dialog box does not validate the characters
+you type.
+
+RESOLUTION
+==========
+
+Do not use spaces or special characters in an extension when you are creating or
+modifying a file association. Special characters you should not use in
+extensions include:
+
+   <
+   >
+   |
+   \ 
+   / 
+   :
+   ;
+   *
+   ?
+   "
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 4.0
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : WINDOWS:95; winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

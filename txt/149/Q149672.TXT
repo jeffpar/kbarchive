@@ -1,0 +1,69 @@
+DOCUMENT:Q149672  30-JUL-2001  [sms]
+TITLE   :PCMSVC32 Reports Incorrect Job Status for Completed Jobs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Package Command Manager (PCMSVC32) for Windows NT may report an invalid job
+status when a job has been completed. Instead of being designated "complete,"
+the job status is given as "retrying."
+
+The following information is taken from the Pacman.log file:
+
+>>> The process handle is #20
+>>> Execution error #20 detected.
+>>> Flagging this process as bad with handle #-1
+    Ending LaunchScript..................
+    Package executed.
+    Monitoring the job.
+    Job completed.
+    Reporting job status.
+    Beginning ReportOnProcess...........
+>>> An error was detected while attempting to run the job.
+
+CAUSE
+=====
+
+This problem occurs when a process handle is less than 32.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

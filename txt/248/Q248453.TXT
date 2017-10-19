@@ -1,0 +1,68 @@
+DOCUMENT:Q248453  12-NOV-2000  [exchange]
+TITLE   :XADM: Administrator Program Is Not Updating DL Membership List
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You cannot remove a user from a distribution list (DL) by using the Exchange
+Server Administrator program that is included with Exchange Server version 5.5
+Service Pack 3. In all of the other builds of Exchange Server 5.5 the Exchange
+Server Administrator program works correctly.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 3. This problem was first corrected in Exchange Server
+5.5 Service Pack 4.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

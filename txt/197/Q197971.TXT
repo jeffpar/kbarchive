@@ -1,0 +1,61 @@
+DOCUMENT:Q197971  06-MAY-1999  [exchange]
+TITLE   :XADM: The Exchange Server Tmp.edb File
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Tmp.edb file is stored in the Exchange Server Mdbdata and Dsadata
+directories which are considered the "working area" for the information store or
+directory services.
+
+The Mdbdata and Dsadata directories also contain Edb.chk (the checkpoint file),
+which is important because it contains a pointer indicating which log file the
+transaction roll-forward process should start with. These directories also
+contain the Tmp.edb file, and it contains temporary information used by the
+information store and directory services while running.
+
+MORE INFORMATION
+================
+
+The Tmp.edb file is not backed up and is deleted when the information store or
+directory service is shut down gracefully.
+
+The Tmp.edb file is also used for transient storage during information store
+maintenance and for temporary tables, like creating indexes or sorting data.
+
+The Tmp.edb file does not need to be backed up.
+
+Additional query words: temp
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q170349  21-FEB-1999  [winnt]
+TITLE   :Options Command on View Menu Does Not Work in Internet Explorer
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Options on the View menu in Microsoft Internet Explorer, no
+dialog box may be displayed.
+
+CAUSE
+=====
+
+The behavior can occur for any of the following reasons:
+
+ - The Zero Administration Kit (ZAK) Appstation or Taskstation that you are
+   using has had this functionality disabled by the administrator.
+
+ - The system administrator has disabled this functionality using a policy
+   provided with the Microsoft Internet Explorer Administration Kit (IEAK).
+
+RESOLUTION
+==========
+
+Contact your System Administrator to enable this functionality.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

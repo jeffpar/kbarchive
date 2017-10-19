@@ -1,0 +1,68 @@
+DOCUMENT:Q182964  05-APR-1999  [exchange]
+TITLE   :XADM: Unable to Access Others' Schedules
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to access schedule information for users on other servers in the
+same site, the following error message appears:
+
+   Unable to display the folder. Outlook could not be opened because a
+   location to send and receive mail could not be found.
+
+WORKAROUND
+==========
+
+To work around this problem, do the following:
+
+1. From the user's Exchange Server computer, in the Exchange Administrator
+   program, at Configuration / Servers / <server name> / Public
+   Information Store, add the Schedule+ Free/Busy folder to the right side of
+   the Instances tab.
+
+2. Perform an Update Now (refresh all items in the directory).
+
+MORE INFORMATION
+================
+
+If this is an isolated incident, that is, only a few users experience the
+problem, make sure you verify that the users are accessing their Calendar from
+their delivery location. If the users have messages delivered to their personal
+folder, and the personal folder has a Calendar item, then attempt to view
+Calendar information from the personal folder.
+
+If this problem is widespread, then you need to troubleshoot the Schedule+
+Free/Busy folder from the Exchange Administrator program.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

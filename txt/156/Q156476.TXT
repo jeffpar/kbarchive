@@ -1,0 +1,77 @@
+DOCUMENT:Q156476  27-JUL-2001  [sms]
+TITLE   :SMS: Documentation Error in the SMS 1.2 Release Notes
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbdocerr smssetup smsdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The Systems Management Server 1.2 Release Notes contains the following
+information in the Upgrade Information section:
+
+   Before you upgrade a Systems Management Server (SMS) system, Microsoft
+   strongly recommends that you read Systems Management Server Installation and
+   Configuration, Chapter 4, section Adding Clients. Specifically, make sure you
+   understand the effects of:
+
+   The Permitted Viewers list in the registry.
+
+   The rights required on computers running Windows NT Workstation to allow
+   inventory and client setup to work correctly.
+
+   Copyright 1993-1996 Microsoft Corporation
+
+This information sends the reader to another chapter and section for more
+information. However, the information is not found at that location.
+
+WORKAROUND
+==========
+
+Information about "The rights required on computers running Windows NT
+Workstation to allow inventory and client setup to work correctly" exists in
+Chapter 3, Giving Administrator Privilege to the SMS Service Account, of the
+Adding Clients section of the Installation and Configuration Guide,
+
+Information about "The Permitted Viewers list in the registry" exists in Chapter
+10, Configuring Client Remote Control, of the Remote Troubleshooting section of
+the Administrators Guide.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Systems Management Server
+version 1.2 documentation. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup kbdocerr smssetup smsdocerr 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q259833  06-AUG-2002  [homegame]
+TITLE   :StarLancer: How to Install on a Microsoft Windows 2000-Based Com
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the additional steps that are required to install
+Microsoft StarLancer on a Microsoft Windows 2000-based computer.
+
+MORE INFORMATION
+================
+
+To install StarLancer on a Windows 2000-based computer, you must log on to the
+computer as a member of the Administrators group, install the Windows 2000
+Compatibility Update, and then install StarLancer.
+
+To do this:
+
+1. Log on to the computer as an Administrator.
+
+2. Click Start, and then click Windows Update.
+
+3. On the Microsoft Windows Update Web page, click the Product Updates Web link.
+
+4. Under Recommended Updates, click to select the Windows 2000 Compatibility
+   Updates check box.
+
+5. Click Download.
+
+6. Click Start Download.
+
+7. When you are prompted to accept the Supplemental End User License Agreement,
+   click Yes.
+
+8. When you are prompted to restart the computer, click Yes.
+
+9. Log on to the computer as an Administrator.
+
+10. Insert the StarLancer CD-1 CD-ROM into the CD-ROM drive.
+
+   If StarLancer Setup does not start automatically:
+
+   a. Click Start, and then click Run.
+
+   b. In the Open box, type the following line, and then click OK
+
+   <cd-rom>:\setup.exe
+
+      where <cd-rom> is the drive letter of the CD-ROM drive.
+
+11. Follow the instructions on the screen to install StarLancer.
+
+Additional query words: 1.00 msgame star lancer win2k
+
+======================================================================
+Keywords          : kbenv kbsetup kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

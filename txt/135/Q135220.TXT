@@ -1,0 +1,68 @@
+DOCUMENT:Q135220  17-DEC-2000  [win95x]
+TITLE   :Bold Text on PostScript Printer Has Downward Slant
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print bold text no larger than 24 points to a PostScript printer, the
+text may be printed with a downward slant.
+
+CAUSE
+=====
+
+Some fonts do not include bold versions. When this is the case, Windows 95
+simulates the bold effect. The code responsible for this effect can sometimes
+cause the behavior described above.
+
+RESOLUTION
+==========
+
+To work around this behavior, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Use the right mouse button to click the PostScript printer icon, and then
+   click Properties on the menu that appears.
+
+3. On the Fonts tab, click the Sends Fonts As button.
+
+4. Change the "Threshold to switch between downloading bitmap or outline fonts"
+   setting to 1. (The default value is 100.)
+
+5. Click OK. Click OK.
+
+These steps cause the font to be sent as outlines, rather than bitmaps.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

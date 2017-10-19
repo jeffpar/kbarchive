@@ -1,0 +1,65 @@
+DOCUMENT:Q153438  08-NOV-2001  [pcmail]
+TITLE   :Microsoft Phone Does Not Translate Letters to Numbers
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Phone, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Phone may incorrectly dial a phone number that contains letters.
+
+CAUSE
+=====
+
+Microsoft Phone does not translate letters into corresponding DTMF tones if the
+"Use country code and area code" check box in the Dialing Options dialog box is
+not selected.
+
+RESOLUTION
+==========
+
+In the Dialing Options dialog box, click the "Use country code and area code"
+check box to select it. This setting causes Microsoft Phone to translate letters
+into the corresponding DTMF tones needed to place a call. For example, the phone
+number 425-936-ABCD would be translated to 425-936-2223.
+
+MORE INFORMATION
+================
+
+If the "Use country code and area code" check box is not selected, Microsoft
+Phone interprets letters in a phone number literally. For example, the phone
+number 425-555-ABCD would be dialed as 425-555-ABCD, which would result in the
+call not being completed because there are no tones assigned to the letters
+"ABCD."
+
+Additional query words: 95 1.00 tazz
+
+======================================================================
+Keywords          : win95 
+Technology        : _IKkbbogus kbMSHardwareSearch kbPhone
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

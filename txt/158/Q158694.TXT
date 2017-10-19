@@ -1,0 +1,62 @@
+DOCUMENT:Q158694  09-APR-1999  [exchange]
+TITLE   :XFOR: Dir-Sync: Map Template Info Between MSMail & Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During directory synchronization, Microsoft Mail postoffices can exchange
+template information with each other and with Microsoft Exchange. In order to
+accomplish this, each Microsoft Mail template attribute must be mapped to a
+Microsoft Exchange property using the Microsoft Exchange Server Administrator
+program. Additionally, Microsoft Exchange can also send template information to
+Microsoft Mail postoffices during directory synchronization. This information
+must also be mapped in the same manner.
+
+MORE INFORMATION
+================
+
+1. Start the Microsoft Exchange Server Administrator program and open the
+   Configuration Container - Servers - Directory Synchronization.
+
+2. For Microsoft Exchange to Microsoft Mail template mapping, click the Outgoing
+   Templates tab, or, for Microsoft Mail to Microsoft Exchange template mapping,
+   click the Incoming Templates tab.
+
+3. Click New. You will be asked for the Microsoft Mail attribute as it appears
+   in the *.tpl file (without punctuation: that is, "Address", not "~Address")
+   and the Microsoft Exchange attribute to map to\from.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

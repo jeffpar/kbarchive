@@ -1,0 +1,68 @@
+DOCUMENT:Q150354  19-FEB-2002  [homemm]
+TITLE   :Bookshelf '95 Does Not Start in Office 95 Trial Kit
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf '95 for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Microsoft Windows 95 and Office for Windows 95 Trial Kit, when
+you attempt to start Microsoft Bookshelf '95 by clicking the Microsoft Bookshelf
+'95 shortcut on the Start menu or the Office Shortcut Bar, or you attempt to
+start Microsoft Bookshelf '95 by clicking Lookup Reference on the Tools menu in
+Microsoft Excel or Word, the following message appears:
+
+   Please insert the Bookshelf '95 disc in the CD-ROM drive. If the drive letter
+   shown below is not the correct drive, please change it.
+
+If you change the CD-ROM drive letter in the dialog box or click OK, the message
+remains on the screen. If you click Cancel, the message disappears; however,
+Microsoft Bookshelf does not start.
+
+CAUSE
+=====
+
+This behavior occurs because the Microsoft Windows 95 and Office for Windows 95
+Trial Kit, a limited promotional package, includes a Setup option for Bookshelf
+'95, but does not include the Bookshelf '95 files.
+
+MORE INFORMATION
+================
+
+Microsoft distributed the Office 95 Trial Kits to a limited number of
+participants in the Microsoft TechEval Seminar. Seminar participants received
+one of two kits: one kit included the Office Professional version, and the other
+kit included the Office Standard version. Although some kits included the Office
+Professional version, the Bookshelf files are missing.
+
+Additional query words: 7.00 Trial95
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

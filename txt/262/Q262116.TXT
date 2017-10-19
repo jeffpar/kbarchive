@@ -1,0 +1,69 @@
+DOCUMENT:Q262116  20-OCT-2000  [exchange]
+TITLE   :XCON: How Exchange Server 5.5 Routes Custom Recipient Messages I
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how Exchange Server 5.5 routes custom recipient messages
+internally.
+
+MORE INFORMATION
+================
+
+When you send an e-mail message to a custom recipient address, the directory
+places the default address in the custom recipient address X.400 proxy address
+as a domain-defined attribute (DDA).
+
+For example, if a custom recipient that has a default Simple Mail Transfer
+Protocol (SMTP) address of "someone@microsoft.com" has the following X.400 proxy
+address
+
+   C=us;a= ;p=Org;o=Site;s=Someone;g=MsGuy
+
+when you send an e-mail message to that custom recipient that has a default SMTP
+address of someone@microsoft.com, the message is routed as follows, and is
+routed by DDA first:
+
+   C=us;a= ;p=Org;o=Site;s=Someone;g=MsGuy;dda=SMTP:someone@microsoft.com
+
+If the message transfer agent (MTA) cannot find a route, the MTA routes on the
+X.400 address. In some cases the custom recipient address is routed to an X.400
+connector with a "C=*" address space.
+
+Typically, the message loops when the message is rerouted back to the originating
+site.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

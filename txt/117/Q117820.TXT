@@ -1,0 +1,60 @@
+DOCUMENT:Q117820  09-DEC-1999  [homemm]
+TITLE   :Mac Cinemania 94: Problems Pressing Keyboard Keys Repeatedly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for the Macintosh 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you press the PAGE UP, PAGE DOWN, or other keys repeatedly, you may
+experience a variety of problems in Cinemania. For example, you may be ejected
+from the Cinemania Gallery, Help may spontaneously open, the color of your hot
+text or windows may change, you may be switched out to the Finder, or your
+Macintosh may stop responding (hang).
+
+This problem occurs if you are using QuickKeys.
+
+CAUSE
+=====
+
+This problem is due to a conflict between Cinemania 1994 and QuickKeys.
+Microsoft has confirmed this to be a problem in Cinemania 1994. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To avoid this problem, disable QuickKeys before running Cinemania.
+
+Additional query words: mac 1994 multi media multimedia multi-media hotkeys keyboard lock eject hang crash lockup up freeze
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994Mac
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

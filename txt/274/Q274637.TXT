@@ -1,0 +1,65 @@
+DOCUMENT:Q274637  02-MAY-2001  [msnetwork]
+TITLE   :MSN Explorer Gives Ambiguous Error When Trying To Switch Connect
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Error:
+
+   The modem you have selected is not working. It may be turned off or not
+   plugged in. Please make sure that your modem is connected to your computer
+   and turned on.
+
+CAUSE
+=====
+
+If the user tries to change Connection Settings while connected to the Internet,
+MSN Explorer will not detect that the connection is extant and will try to
+connect again. Failing this, it returns an error that is not descriptive of the
+actual issue.
+
+RESOLUTION
+==========
+
+Close out of MSN Explorer completely and make sure the connection to the
+Internet has been terminated. Re-launch MSN Explorer to the sign on screen and
+change the Connection Settings again.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

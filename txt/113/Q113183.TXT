@@ -1,0 +1,55 @@
+DOCUMENT:Q113183  18-NOV-1999  [accother]
+TITLE   :Difficulty Adding Support for ODI/NDIS or IPX/SPX
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:MS-DOS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to set up the ODI/NDIS or IPX/SPX support drivers in Microsoft
+Workgroup Add-On for MS-DOS, you are continually prompted to "Add driver for
+network adapter."
+
+CAUSE
+=====
+
+The ODI/NDIS and IPX/SPX support drivers cannot be installed if the Novell
+NetWare drivers are not loaded when you run Workgroup Add-On for MS-DOS Setup.
+
+RESOLUTION
+==========
+
+To correct this problem, ensure that the Novell NetWare drivers are loaded
+before you run Workgroup Add-On for MS-DOS Setup.
+
+Additional query words: 2.0 keeps on prompting over again loop 3.11 3.12 4.0 wgao error message
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : MS-DOS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

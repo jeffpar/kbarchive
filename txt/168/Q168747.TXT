@@ -1,0 +1,116 @@
+DOCUMENT:Q168747  14-MAR-2002  [win95x]
+TITLE   :Update to Windows 95 TCP/IP to Address Out-of-Band Issue
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1,2,2.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbfile kbnetwork osr1 osr2 win95 kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a computer running Microsoft Windows 95 (all releases) using the Microsoft
+TCP/IP protocol, the following error message may occur when certain data is
+received over the network:
+
+   Fatal exception 0E at 0028:<address> in VxD MSTCP(01) + 000041AE.
+   This was called from 0028:<address> in VxD NDIS(01) + 00000D7C.
+
+After this error message occurs, the computer may not receive further network
+data until Windows is restarted.
+
+CAUSE
+=====
+
+This error message can occur if certain, very specific, "out-of-band" data
+packets are deliberately sent to the server during a TCP/IP session.
+
+
+RESOLUTION
+==========
+
+This issue is resolved by the following updated files for Windows 95 (all
+releases):
+
+ - Vtcp.386 version 4.00.0954 (dated 05/20/97) and later
+
+ - Vnbt.386 version 4.00.0959 (dated 05/15/97) and later
+
+To install these updated files, follow these steps:
+
+1. Download the Vtcpupd.exe file to an empty folder.
+
+2. In My Computer or Windows Explorer, double-click the Vtcpupd.exe file you
+   downloaded in step 1.
+
+3. Follow the instructions on the screen.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Download Vtcpupd.exe now
+   (http://download.microsoft.com/download/win95upg/patch1/1/w95/EN-US/vtcpupd.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+The following files are installed by Vtcpupd.exe:
+
+   File name     Version    Date/Time        Size     Destination folder
+   ---------------------------------------------------------------------
+   Vtcp.386      4.00.0954  05/20/97 09:54a  47,413   Windows\System
+   Vnbt.386      4.00.0959  05/15/97 09:59a  95,497   Windows\System
+
+
+For additional information about issues resolved by updates to these components,
+see the following articles in the Microsoft Knowledge Base:
+
+   Q163770 Cannot Log On to Windows NT Domain w/ DNS Name Resolution Only
+
+   Q154579 Slow TCP/IP Performance When Resuming Large Data Transfer
+
+   Q152791 Error Message: No Domain Server Was Available...
+
+For additional information about a similar issue with Microsoft Windows NT, see
+the following article in the Microsoft Knowledge Base:
+
+   Q143478 Stop 0A in TCPIP.SYS When Receiving Out Of Band (OOB) Data
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbfile kbnetwork osr1 osr2 win95 kbgraphxlinkcritical 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR1 kbWin95OPKOSR210
+Version           : :1,2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

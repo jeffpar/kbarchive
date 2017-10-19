@@ -1,0 +1,63 @@
+DOCUMENT:Q122983  22-NOV-1999  [msdos]
+TITLE   :ScanDisk Does Not Check for Lowercase Characters in Filenames
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a disk stores a file that has lowercase letters in its filename, ScanDisk
+does not find any problems with the file structure, even though you cannot gain
+access to the file.
+
+WORKAROUND
+==========
+
+To work around this problem, rename or delete the file by using wildcards, or
+use a third-party program such as Norton's DiskEdit to change the lowercase
+letters.
+
+NOTE: Lowercase letters can sometimes occur as a result of using Microsoft
+Undelete for Windows, version 6.0. For specific workaround information, please
+see the following article(s) in the Microsoft Knowledge Base:
+
+   Q98404 "Using MS Undelete to Restore Files with Existing Filenames"
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in MS-DOS version 6.22. We are
+researching this problem and will post new information here as it becomes
+available.
+
+Additional query words: 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

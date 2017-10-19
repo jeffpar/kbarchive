@@ -1,0 +1,62 @@
+DOCUMENT:Q139762  08-NOV-2001  [homemm]
+TITLE   :Control Menu Fails to Drop Down
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1996 edition; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1996 edition 
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you start one of the programs listed at the top of this article, if you
+press and release the ALT key and then press the SPACEBAR, the Control menu
+fails to drop down.
+
+WORKAROUND
+==========
+
+To work around this problem, press ALT+SPACEBAR (that is, press and hold down
+ALT while you press the SPACEBAR) to cause the Control menu to drop down.
+
+NOTE: In Cinemania, ALT+SPACEBAR does not activate the Control menu while you are
+in the Find box. Press ALT, SPACEBAR to activate it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the above named products. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: 96 multi media multimedia multi-media mmtitles kbmm kbhowto
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword kbEncartaEncycSearch kbCineManiaSearch kbCinemania1996 kbJuliaChild kbEncartaEnCyc1996
+Version           : :1996 edition; WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

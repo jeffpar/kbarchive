@@ -1,0 +1,155 @@
+DOCUMENT:Q289749  15-MAR-2001  [iis]
+TITLE   :Certificate Revocation Lists (CRL) and IIS 5.0: Common Questions
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article has some of the frequently asked questions regarding Certificate
+Revocation Lists (CRL) and Internet Information Services (IIS) 5.0.
+
+MORE INFORMATION
+================
+
+Q.: What is a Certificate Revocation List (CRL) and a CRL Distribution Point
+(CDP)?
+
+A.: A CRL is a file that contains a list of revoked certificates, their serial
+numbers, and their revocation date. A CRL file also usually contain the name of
+the issuer of the CRL, effective date and the next update date. A CDP is the
+location from which you can download the latest CRL and is usually listed as
+"CRL Distribution Points" in the details of the certificate. It is common to
+list multiple CDP's, using multiple access methods, to insure that applications
+(that is, browsers, Web servers) are always able to obtain the latest CRL.
+
+Example CDPs
+
+[1]CRL Distribution Point (Note: This CDP is accessed via the LDAP protocol)
+     Distribution Point Name:
+          Full Name:
+               URL=ldap:///CN=SecTestCA1,CN=SECTESTCA1,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=rte,DC=microsoft,DC=com?certificateRevocationList?base?objectclass=cRLDistributionPoint
+
+[2]CRL Distribution Point (Note: This CDP is accessed via the http protocol)
+     Distribution Point Name:
+          Full Name:
+               URL=http://sectestca1.rte.microsoft.com/CertEnroll/SecTestCA1.crl
+
+[3]CRL Distribution Point (Note: This CDP is accessed via the file protocol)
+     Distribution Point Name:
+          Full Name:
+               URL=file://\\sectestca1.rte.microsoft.com\CertEnroll\SecTestCA1.crl
+
+Q.: When does IIS retrieve a CRL?
+
+A.: Each CRL has an effective date (also called next update, or validity period).
+IIS only retrieves a CRL when presented with a certificate for which it
+currently does not have the associated CRL in its cache or if the cached CRL has
+passed its effective date.
+
+Q.: If the certificate contains several CRL Distribution Points does IIS retrieve
+the CRL from each location?
+
+A.: No. The first, or top, location is used. If unsuccessful then the next CRL
+Distribution point is tried.
+
+Q.: Are the contents of each CRL at each distribution point downloaded and
+combined?
+
+A.: No. Only one CRL is downloaded.
+
+Q.: Are CRLs stored on the IIS computer?
+
+A.: Yes. The current CRL is cached in the SYSTEM profile located at:
+
+   \Documents and Settings\SYSTEM\Local Settings\Temporary Internet Files\
+
+NOTE: The current CRL is always stored in the profile of the identity under which
+IIS is running. By default, this is the "System" account.
+
+Q.: How are CRLs identified (filename)?
+
+A.: By a .crl file extension. For example, CRLfilename[1].crl.
+
+NOTE: The actual filename is listed in the CRL's distribution point on the
+certificate.
+
+Q.: What happens if IIS 5.0 can not find one of the CRLs?
+
+A.: By default, IIS 5.0 fails if the CRL of a certificate can not be accessed.
+This is why there are multiple paths and protocols to the same CRL distribution
+point. For example, http, LDAP, and File.
+
+Q.: What error message is seen in the browser if an effective CRL can not be
+obtained? Is the same error message displayed if the CRL is obtained and it
+shows the certificate as revoked?
+
+A.: Yes. This error message is presented in both scenarios:
+
+   HTTP 403.13 Forbidden: Client certificate revoked The page requires a valid
+   client certificate
+
+Q.: We made sure that the CRL is unavailable and IIS does not appear to be
+retrieving a new one or failing?
+
+We revoked a certificate and republished the CRL and IIS still allows users to
+browse the Web site using a revoked certificate. Why?
+
+A.: Both of these questions revolve around the fact that IIS still uses a cached
+CRL which has not passed it's effective date. For more information, refer to the
+second question.
+
+Q.: How do we force refreshing the cache on IIS so that it uses the very latest
+CRL?
+
+A.: Delete the CRL from the cache. Refer to the earlier answer for location of
+where CRL is stored.
+
+Q.: Can IIS perform "real time" CRL checking?
+
+A.: No. IIS uses the CRL in the cache until it expires. The lowest validity
+period for a CRL published by Microsoft Certificate Services is 1 hour. You can
+delete the CRL from the cache to force the retrieval of a new CRL. However, the
+new CRL still has the same validity period.
+
+REFERENCES
+==========
+
+For more information, see the following Web address:
+
+RFC: 2459
+
+Internet RFC/STD/FYI/BCP Archives (http://www.faqs.org/rfcs/rfc2459.html)
+
+Additional query words: CRL revocation
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

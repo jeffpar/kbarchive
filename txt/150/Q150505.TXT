@@ -1,0 +1,80 @@
+DOCUMENT:Q150505  26-AUG-1999  [foxpro]
+TITLE   :DOCERR: Commands Not Supported by Visual FoxPro ODBC Driver
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for Visual FoxPro, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual FoxPro ODBC driver Help file (Drvvfp.hlp) lists all the commands
+supported by the driver. However, the ODBC driver does not support all of the
+documented commands.
+
+MORE INFORMATION
+================
+
+The following Visual FoxPro commands are incorrectly listed as supported by the
+Visual FoxPro driver:
+
+   APPEND FROM
+   APPEND MEMO
+   DECLARE - DLL
+   ERROR Command
+   GETCP()
+   GETEXPR()
+   MESSAGE()
+   ON KEY Interface command
+   PAD() Interface Function
+   REMOVE TABLE
+   CLOSE DATA
+   REFRESH()
+   REQUERY()
+   SET CARRY
+   SET DEFAULT
+   SET FIELDS TO
+   SET PROC TO
+   UPDATE ON
+   CREATE DATA
+
+Calling these commands in a trigger results in the following error messages:
+
+   Connectivity error: [Microsoft][ODBC Visual FoxPro Driver]Unsupported command
+   in rule or trigger
+
+-or-
+
+   Connectivity error: [Microsoft][ODBC Visual FoxPro Driver]Unsupported
+   function in rule or trigger
+
+
+Additional query words: 1.00 VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

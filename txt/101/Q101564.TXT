@@ -1,0 +1,77 @@
+DOCUMENT:Q101564  22-NOV-1999  [msdos]
+TITLE   :Stacked Floppy Disk Drives Interfere with Stacker Conversion
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+DoubleSpace may be unable to convert a Stacker 3.0-compressed hard disk drive if
+a floppy disk drive is identified as a Stacker- compressed drive in the
+CONFIG.SYS file. In this case, the following error messages may occur when you
+run the Stacker conversion:
+
+ - Drive A: is not a Stacker drive.
+
+ - DoubleSpace was not able to convert your Stacker drives to DoubleSpace
+   format.
+
+Because the conversion was unsuccessful, Stacker remains installed on your
+system. Press ENTER to reboot your computer and reenable Stacker.
+
+CAUSE
+=====
+
+These errors occur if you identify a floppy disk drive on the Stacker device
+line in your CONFIG.SYS file. For example:
+
+      device=c:\stacker\stacker.com c:\stacvol.dsk a:
+
+RESOLUTION
+==========
+
+To correct this problem, remove the reference to your floppy disk drive from the
+Stacker device line in your CONFIG.SYS file. For example:
+
+      device=c:\stacker\stacker.com c:\stackvol.dsk
+
+Now, run the Stacker conversion again.
+
+MORE INFORMATION
+================
+
+Stacker is manufactured by STAC Electronics, a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: dblspace 6.00 staker stacer stak stacked convert.bat convert conversion disk users floppies
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q150584  27-JUL-2001  [sms]
+TITLE   :Service Pack 1 for SMS 1.1 Does Not Update Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you apply Service Pack 1 for SMS 1.1, your SMS clients may not receive the
+Service Pack files.
+
+CAUSE
+=====
+
+
+WORKAROUND
+==========
+
+Delete the Cl_???.txt files from your primary site
+\sms\site.srv\maincfg.box\client.src directory and from the \SMS\logon.srv
+directory. After you delete the files, run SMS Setup and reset the site.
+
+After you reset the site, Maintenance Manager will create new Cl_???.txt files
+containing a new CopyListVersion value. This new version will trigger the update
+on the SMS clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+Additional query words: sp1 service pack prodsms
+
+======================================================================
+Keywords          : kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

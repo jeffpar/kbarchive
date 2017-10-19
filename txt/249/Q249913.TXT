@@ -1,0 +1,76 @@
+DOCUMENT:Q249913  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: How Character Information Is Stored
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how your Microsoft Asheron's Call character information
+is stored on the Asheron's Call servers.
+
+MORE INFORMATION
+================
+
+ - Characters you create are stored on the Asheron's Call servers. For this
+   reason, character information is not deleted if you remove or reinstall
+   Asheron's Call on your computer.
+
+ - Characters are stored for up to 1 year. If the subscription for the account
+   has not been active in this time, the characters on that account are subject
+   to being removed.
+
+ - Character information is linked to your MSN Nickname used on Zone.com. You
+   can use the same character on any computer on which Asheron's Call is
+   installed if you log in to the Zone with the same MSN Nickname.
+
+ - A character can only be used in the world in which it was created. If you
+   create a character in one world, that character is not available in other
+   worlds.
+
+   You can have up to five characters in each world.
+
+ - You cannot transfer characters from one MSN Nickname to another, or from one
+   world to another.
+
+ - When you delete a character, that character is permanently deleted after one
+   hour.
+
+ - For additional information about deleting a character, click the article
+   number below to view the article in the Microsoft Knowledge Base:
+
+   Q244736 Asheron's Call: Character Created at a Previous Time Is Missing
+
+Additional query words: 1.00 ac msngz data storage accounts asherons
+
+======================================================================
+Keywords          : kbui igz kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

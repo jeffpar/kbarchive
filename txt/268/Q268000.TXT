@@ -1,0 +1,62 @@
+DOCUMENT:Q268000  07-MAR-2002  [exchange]
+TITLE   :XADM: Exchange 5.5 Server from Select CD Limits IS to 16 GB
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Exchange Server 5.5 from the Microsoft Select CD,
+using AutoRun from the Setup.exe program file, Exchange Server may alert you
+that the 16-gigabyte (GB) database limit is reached.
+
+CAUSE
+=====
+
+This issue can occur when you install the Standard Edition of Exchange Server
+5.5. The information store databases (Priv.edb and Pub.edb) in this version are
+limited to 16 GB each. After the limit is reached, the Exchange Server database
+engine stops taking transactions and notifies the information store to shut
+down.
+
+RESOLUTION
+==========
+
+To resolve this issue, run the SrvRmax.exe program file from the Select CD to
+install the Enterprise Edition of Exchange Server 5.5. The Enterprise Edition
+information store databases are limited only by available hardware resources.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Component         : Setup
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

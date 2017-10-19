@@ -1,0 +1,140 @@
+DOCUMENT:Q167847  01-JUL-2002  [ssafe]
+TITLE   :ACC97: IPF Executing VSS Add and Create Commands at Same Time
+PRODUCT :Microsoft SourceSafe
+PROD/VER:97
+OPER/SYS:
+KEYWORDS:kbAccess kbSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+
+SYMPTOMS
+========
+
+When you execute a Visual SourceSafe command, you can call other commands from
+any enabled button on a floating toolbar, even if a SourceSafe dialog box is
+visible on your screen.
+
+If you execute the "Add Database to SourceSafe" and "Create Database from
+SourceSafe Project" commands at the same time, you receive one or more of the
+following error messages, and then Microsoft Access quits:
+
+   MSACCESS caused an invalid page fault in module MSO97.DLL
+
+   MSACCESS caused an invalid page fault in module SSSCC.DLL
+
+   MSACCESS caused an invalid page fault in module DAO350.DLL
+
+   MSACCESS caused an invalid page fault in module ACCSCC.DLL
+
+   MSACCESS caused an invalid page fault in module MSACCESS.EXE
+
+
+NOTE: If you click buttons on other floating toolbars while you are executing a
+Visual SourceSafe command, you may experience different error messages or
+different results.
+
+This article assumes that you are familiar with using the client side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or the Help topics
+available from the Visual SourceSafe Help menu.
+
+RESOLUTION
+==========
+
+You can minimize your chances of encountering this error when you work with
+Visual SourceSafe if you dock all your toolbars. Once a toolbar is docked, you
+may want to modify its properties to prevent it from being detached:
+
+1. On the View menu, point to Toolbars, and then click Customize.
+
+2. In the Customize dialog box, click the Toolbars tab, and then select the
+   toolbar you want to prevent from floating.
+
+3. Click the Properties button.
+
+4. In the Toolbar Properties dialog box, click to clear the Allow Moving check
+   box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access 97. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+WARNING: Following these steps will cause a page fault on your computer. Make
+sure you save and close any open work on your computer before following these
+steps.
+
+The following example assumes that you have the Microsoft Access Source Code
+Control component of Microsoft Office 97 Developer Edition Tools installed, and
+that you are using Microsoft Visual SourceSafe as your source code control
+program.
+
+1. Start Microsoft Access and create a new, blank database called Vss.mdb.
+
+2. On the View menu, point to Toolbars, and then click Customize.
+
+3. In the Customize dialog box, click the New button.
+
+4. In the New Toolbar dialog box, type MyToolbar in the Toolbar name box, and
+   then click OK. A new, empty toolbar appears. Position the new toolbar and the
+   Customize dialog box so you can see them both on your screen at the same
+   time.
+
+5. Click the Commands tab in the Customize dialog box.
+
+6. Select Source Code Control in the Categories box, and then drag "Create
+   Database from SourceSafe Project" from the Commands box to the new toolbar.
+   Then drag "Add Database to SourceSafe" from the Commands box to the new
+   toolbar.
+
+7. Click Close in the Customize dialog box.
+
+8. Click "Create Database from SourceSafe Project" on the new toolbar. The
+   Visual SourceSafe Login dialog box appears.
+
+9. Click "Add Database to SourceSafe" on the new toolbar.
+
+10. Respond to prompts and dialog boxes from both commands in turn as they
+   appear, and note that the page fault error(s) occurs.
+
+Additional query words: ipf gpf page fault watson vss scc accscc
+
+======================================================================
+Keywords          : kbAccess kbSSafe 
+Technology        : kbSSafeSearch kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbSSafe400 kbSSafe400a kbSSafe500 kbOffice97DevSearch
+Version           : 97
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

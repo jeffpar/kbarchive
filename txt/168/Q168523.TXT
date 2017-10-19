@@ -1,0 +1,85 @@
+DOCUMENT:Q168523  07-SEP-2001  [foxpro]
+TITLE   :FIX: Report Fails When Printing Under Windows NT 4.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:5.0 5.0a
+OPER/SYS:
+KEYWORDS:kbprint kbvfp kbvfp500aBUG kbvfp500bug kbVS97sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When printing some reports under Windows NT, Visual FoxPro causes a Dr. Watson
+error such as the following:
+
+   Exception: Access Violation (0xc0000005)
+
+This may happen when printing a report multiple times in a loop.
+
+RESOLUTION
+==========
+
+Use the following code to ensure that the appropriate fields in the report file
+are null-terminated, as FoxPro expects. Run this code to process the reports in
+the current directory:
+
+   
+
+      *  Get list of report files in current directory.
+      nNumReports = ADIR(aReports, "*.FRX")
+
+      *  Loop through reports
+      FOR nCurrentReport = 1 TO nNumReports
+        USE (aReports[nCurrentReport,1]) EXCLUSIVE ALIAS FRXFILE
+
+        * Add terminating null to printer information record.
+        REPLACE ALL expr WITH expr + CHR(0) ;
+           FOR objtype = 1 AND RIGHT(expr,1) != CHR(0)
+
+        PACK
+        USE
+      NEXT
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 2.
+
+For more information on the Visual Studio 97 Service Pack 2, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbvfp kbvfp500aBUG kbvfp500bug kbVS97sp2fix 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : 5.0 5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

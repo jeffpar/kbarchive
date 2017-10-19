@@ -1,0 +1,61 @@
+DOCUMENT:Q108444  08-NOV-2001  [homemm]
+TITLE   :Art Gallery: Search List Contains Multiple Instances of Titles
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Art Gallery for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you perform a search for information that appears in several different places
+in Art Gallery, the list of titles found doesn't differentiate between the
+entries.
+
+For example, if you search on the word "Madonna," the resulting list includes
+twelve separate instances of the title "The Madonna and Child with Saints."
+However, the list doesn't indicate which sections of Art Gallery the twelve
+different instances of this painting or paintings are in.
+
+The Art Gallery Find list also doesn't differentiate between similar painting
+names, such as "Modonna and Child with Saints John the Baptist and Catherine of
+Alexandria," and "Madonna and Child with Saints James the Greater, Jerome, the
+Infant Baptist, and Catherine of Alexandria." These painting names are both
+simply shortened to "the Madonna and Child with Saints."
+
+RESOLUTION
+==========
+
+To narrow down your search, choose the Refine Search button and add another
+search word to your query. This searches only on the list you have already
+found.
+
+Additional query words: mac 1.00 multi media multimedia multi-media query found
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbArtGalleryMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

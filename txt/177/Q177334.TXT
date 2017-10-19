@@ -1,0 +1,59 @@
+DOCUMENT:Q177334  07-JAN-2001  [msnetwork]
+TITLE   :How to Select the Default Web Browser for MSN
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+ - Microsoft Internet Explorer version 4.0 for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to select either Internet Explorer 4.0 or MSN Program
+Viewer as the default Web browser for MSN, The Microsoft Network.
+
+MORE INFORMATION
+================
+
+To select the default Web browser for MSN, follow these steps:
+
+1. Click the MSN Quick View icon, point to MSN Options, and then click Customize
+   MSN.
+
+2. Under Settings, click MSN Browser.
+
+3. Click either Use Internet Explorer or Use MSN Program Viewer, and then click
+   Apply.
+
+4. Quit and then restart MSN to use your new default Web browser.
+
+Additional query words: 4.0 msnet msnetwork microsoft-net quickview
+
+======================================================================
+Keywords          : kbenv kbmsn 
+Technology        : kbIEsearch kbMSNSearch kbIE95Search kbZNotKeyword3 kbIE400Win95 kbMSN250
+Version           : WINDOWS:2.5,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

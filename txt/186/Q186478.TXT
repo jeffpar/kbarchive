@@ -1,0 +1,78 @@
+DOCUMENT:Q186478  11-DEC-2001  [winnt]
+TITLE   :Error Writing to LPT1:
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print to a local printer attached to the parallel port, the
+following STOP blue screen error message is reported by the Win32 spooler:
+
+   Error Writing to LPT1: for document <application name>
+
+   <path \ file name>: the system cannot find the file specified.
+
+For example, if you try to print the file, Probrep.txt, from Notepad, following
+blue screen STOP error message appears:
+
+   Error Writing to LPT1: for document notepad
+
+   C:\winnt35\system32\probrep.txt: the system cannot find the file specified.
+
+NOTE: The address above is one path; it has been wrapped for readability.
+
+This error is generated any time the Parallel.sys driver is not started. This can
+happen if NTDETECT does not find a valid parallel port on your computer, or if
+the parallel device is disabled or stopped with the Devices tool in Control
+Panel.
+
+Furthermore, if the parallel device driver is not started, and you attempt to
+start it manually, error 20 (hardware not detected) appears.
+
+RESOLUTION
+==========
+
+Newer motherboards have the capability to support enhanced parallel port (EPP),
+enhanced communication port (ECP), and standard parallel port settings. This is
+usually a jumper on the motherboard or a system BIOS option.
+
+Windows NT versions 4.0 and earlier do not support EPP or ECP bi- directional
+communication ports, and will cause the parallel port detection to fail if set
+to use either one of these standards.
+
+Use the jumper on the motherboard or modify the BIOS settings to use the standard
+parallel port to ensure Windows NT can detect the parallel port for printing.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,77 @@
+DOCUMENT:Q260868  08-DEC-2000  [mspress]
+TITLE   :Small Business Solutions for Networking Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Small Business Solutions for Networking ISBN 0-7356-0685-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Small Business Solutions for Networking,
+ISBN 0-7356-0685-4.
+
+The following topics are covered:
+
+ - Page 257: Delete Reference to Chapter 24
+
+ - Page 438: Step #11 Is Missing
+
+MORE INFORMATION
+================
+
+Page 257: Delete Reference to Chapter 24
+----------------------------------------
+
+On page 257, the reference to Chapter 24 can be deleted. This chapter does not
+exist. Chapter 23 is the last chapter in the book.
+
+Delete:
+"24 - Sharing Modems and Internet Accounts"
+
+
+Page 438: Step #11 Is Missing
+-----------------------------
+
+Step #11 is missing from page 438.
+
+The numbered steps on page 438 skip from 10 to 12. Because no user action is
+required between these two steps, the steps on this page should be renumbered 11
+through 15.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-0685-4 ExecBK
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

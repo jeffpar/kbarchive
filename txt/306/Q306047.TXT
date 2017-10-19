@@ -1,0 +1,65 @@
+DOCUMENT:Q306047  26-SEP-2001  [homemm]
+TITLE   :ENC2002: Status Bar at 100% When Copying to Hard Drive
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Library 2002 - DVD Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Encarta Reference Library 2002 - DVD Edition allows you to copy the
+product to the hard drive before you install it. During this process, the
+installation status bar moves to 100% (the full position), and stays there while
+files are being copied. That is, the installation status bar is at 100%,
+although the installation is not complete yet.
+
+Because the status bar does not show you how the installation is proceeding, the
+installation process may appear to stop responding (hang).
+
+CAUSE
+=====
+
+The installation process may appear to stop responding, but it is actually still
+copying files to the hard drive. Some files may take several minutes to copy,
+depending on the speed of your DVD-ROM drive.
+
+NOTE: Do not quit Setup until it is complete.
+
+MORE INFORMATION
+================
+
+This type of installation may take 30 minutes or longer. To see how the
+installation is progressing, look at the file names, which change as each file
+is copied.
+
+Additional query words: multi multi-media media mm
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbEncartaSearch kbMMSearch kbEncartaRef2002DVD
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

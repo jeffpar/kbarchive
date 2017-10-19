@@ -1,0 +1,168 @@
+DOCUMENT:Q123750  08-AUG-2001  [winnt]
+TITLE   :Debugging Windows NT Setup STOP Screens
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a reproducible STOP screen error appears when you run Windows NT Setup, you
+can usually debug the error either locally or remotely. Since Setup does not run
+in debug mode by default, you must first change the Setup configuration to allow
+debugging, and then run Setup again. How you then proceed depends upon whether
+the STOP screen occurs during the text portion or the Graphical User Interface
+(GUI) portion of Setup.
+
+MORE INFORMATION
+================
+
+The STOP Screen Occurs While Booting the System from
+
+the Setup Floppy Disk or During the Text Portion of Setup
+---------------------------------------------------------
+
+If the STOP screen occurs while booting the system from the Setup floppy disk or
+during the text portion of Setup, and Setup was able to load enough of the
+operating system to invoke the debugger, you may be able to set up a debug
+session. To configure Setup for debugging when booting from the Setup floppy
+disks:
+
+1. Make a copy of the disk labeled "Setup Boot Disk." If you created your boot
+   floppy disks using the WINNT or WINNT32 installation methods, use disk one of
+   the three-disk set.
+
+2. Edit the Txtsetup.sif file on the copy of the Setup Boot Disk.
+
+3. Change the OsLoadOptions = "/nodebug" entry to read:
+
+   OsLoadOptions = "/debug"
+
+   NOTE: You can also add other debug parameters to the string inside the quotes.
+   For example:
+
+   OsLoadOptions = "/debug /debugport=com2 /baudrate=19200"
+
+4. Save the changed file and boot from this modified disk.
+
+If the startup sequence gets past the point at which Ntoskrnl.exe is loaded, then
+the debugger is loaded.
+
+The STOP Screen Occurs During the Text
+
+Portion of a WINNT /B or WINNT32 /B Installation
+------------------------------------------------
+
+If the STOP screen occurs during the text portion of a WINNT /B or WINNT32 /B
+installation, and your boot drive uses a File Allocation Table (FAT) partition,
+edit the Txtsetup.sif file on the root of drive C and change the OsLoadOptions =
+"/nodebug" entry to read:
+
+   OsLoadOptions = "/debug"
+
+   NOTE: You can also add other debug parameters to the string inside the quotes.
+   For example:
+
+   OsLoadOptions = "/debug /debugport=com2 /baudrate=19200"
+
+1. Save the changed file and reboot into setup.
+
+NOTE: You need to edit the C:\Txtsetup.sif file before booting to begin Setup but
+after WINNT or WINNT32 has finished copying the temporary files to the hard
+drive.
+
+The STOP screen Occurs During the GUI Portion
+
+of Setup and Your Boot Drive Uses a FAT Partition
+-------------------------------------------------
+
+If the STOP screen occurs during the GUI portion of Setup and your boot drive
+uses a FAT partition, edit the Boot.ini file on drive C, and add the /debug
+switch to the correct line in the [operating systems] section of the Boot.ini
+file. To do this, boot from an MS-DOS floppy disk after the text portion of
+Setup completes, change the Boot.ini file, and then reboot from the hard disk.
+
+The Boot.ini file entry you need to edit should look similar to the following:
+
+   multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Windows NT Server
+   Version 3.5"
+
+The /debug switch should be added after the text in quotation marks.
+
+The STOP Screen Occurs During the GUI Portion
+
+of Setup and Your Boot Drive Uses an NTFS Partition
+---------------------------------------------------
+
+If your boot drive uses a Windows NT file system (NTFS) partition and you need to
+debug the GUI portion of Setup:
+
+1. Create a boot disk for NTFS. For additional information, please see the
+   following article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q119467
+   TITLE : Creating a Boot Disk for an NTFS or FAT Partition
+
+2. Add the /debug switch to the correct entry in the [operating systems] section
+   of the Boot.ini file, as well as any other switches needed to configure the
+   computer for a remote or local debug. The entry to edit should look similar
+   to the following:
+
+   multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Windows NT Server Version 3.5"
+
+   The /debug switch should be added after the text in quotation marks.
+
+3. After Setup completes the text portion and prompts you to remove all floppy
+   disks from the disk drives and reboot, place the boot disk you have created
+   into drive A and reboot the system. This puts the system into debug mode for
+   the GUI portion of Setup.
+
+NOTE: The Windows NT Setup process uses standard NT kernel and system files
+during setup. To load the appropriate debugging symbols, copy the entire
+contents of the Support\Debug\<Hardware Platform>\Symbols folder of the
+installation compact disc to your symbols folder. For example, when you attempt
+to debug the Windows NT 3.5 setup, load the debug symbols from the Windows NT
+3.5 compact disc.
+
+For additional information about the Boot.ini and its contents, query on the
+following words here in the Microsoft Knowledge Base:
+
+   Boot.ini and arc and path
+
+For more information on debug Setup for Windows NT (such as how to configure the
+modem for dial in and additional debug settings and parameters), see the Windows
+NT Executive Messages chapter in the "Windows NT Messages" guide of the Windows
+NT 3.1 and 3.5 Resource Kits.
+
+Additional query words: blue screen bluescreen hang halt 1 3 disk1 tshoot
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,79 @@
+DOCUMENT:Q130464  11-FEB-2000  [foxpro]
+TITLE   :BUG: Number Entry Starts at Center or Left in a Browse
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbui kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When entering a number in a numeric field, the numbers are echoed to the Browse
+field at a position other than the far right as expected. The exact location
+depends on which font you are using. The starting position can be anywhere from
+the third to the tenth position.
+
+RESOLUTION
+==========
+
+When you press the ENTER key, the number shifts to the correct location.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+This problem was not corrected in version 3.0 in order to maintain backward
+compatibility with version 2.6. There are many complex issues concerning input
+masks and picture clauses that would be effected by a change in this area.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a table containing a numeric field with no decimal point:
+
+      CREATE CURSOR testnum (num n(10))
+
+2. Browse the table, and add a record.
+
+3. Enter the number 123456789.
+
+Notice that the numbers start somewhere other than the far right as expected for
+a numeric field. However, when you press the ENTER key, the number shifts to the
+correct location.
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbui kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

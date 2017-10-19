@@ -1,0 +1,67 @@
+DOCUMENT:Q240917  06-AUG-2002  [iis]
+TITLE   :XIMS: Relocating the Directories Used by SMTP Service
+PRODUCT :Internet Information Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbiis400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT version 4.0 Option Pack 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may want to change the location of the directories that are used by the
+Windows NT version 4.0 Option Pack SMTP mail service. This article provides a
+procedure to make that change.
+
+MORE INFORMATION
+================
+
+Make sure that you stop the SMTP service before you perform this procedure. To
+change the location of the directories, duplicate the mail service structure on
+the drive or location that you want to use, and then modify the metabase by
+running the following command line entries:
+
+ - adsutil.vbs set smtpsvc/1/dropdirectory "<drive
+   letter>:\inetpub\mailroot\drop"
+
+ - adsutil.vbs set smtpsvc/1badmaildirectory "<drive
+   letter>:\inetpub\mailroot\badmail"
+
+ - adsutil.vbs set pickupdirectory "<drive
+   letter>:\inetpub\mailroot\pickup"
+
+ - adsutil.vbs set queuedirectory "<drive letter>:\inetpub\mailroot\queue"
+
+After you perform this procedure, the existing directories are moved to a new
+location. Messages that are queued are processed when you restart the SMTP
+service.
+
+Additional query words: smtpsvc
+
+======================================================================
+Keywords          : kbiis400 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNT400OptionPack
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

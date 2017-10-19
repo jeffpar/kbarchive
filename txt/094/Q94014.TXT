@@ -1,0 +1,79 @@
+DOCUMENT:Q94014  11-SEP-1999  [winmisc]
+TITLE   :WSS: Internal Error at File XLRDR.C with Proofreader
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using Microsoft Excel and Windows Sound System Proofreader, the following
+error message may appear:
+
+   Internal error at file XLRDR.C, line 1360
+
+WORKAROUND
+==========
+
+To work around this problem in Excel 4.0, choose Workspace from the Options menu
+in Excel and clear the Ignore Remote Requests check box.
+
+To work around this problem in Excel 5.0:
+
+1. From the Excel Tools menu choose Options.
+
+2. Choose the General tab.
+
+3. Clear the Ignore other applications check box.
+
+MORE INFORMATION
+================
+
+This error message is caused by choosing Workspace from the Options menu in
+Excel and selecting the Ignore Remote Requests check box as follows.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In Microsoft Excel, choose Workspace from the Options menu.
+
+2. Select the Ignore Remote Requests check box.
+
+3. Load a remote spreadsheet from a file server. For example
+
+      c:\excel\excel.exe x:\amortize.xls
+
+   where x is the drive letter of the file server.
+
+When you start Excel, the error message appears and the spreadsheet loads, but
+the Sound System Proofreader fails.
+
+Additional query words: 1.00 err msg 4.00 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

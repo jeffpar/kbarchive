@@ -1,0 +1,74 @@
+DOCUMENT:Q166191  08-NOV-2001  [homekids]
+TITLE   :Protect It! Everything Restricted if You Use McAfee WebScan
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have McAfee WebScan installed on your computer, and you use Microsoft
+Plus! For Kids, Protect It! to restrict a family member's access to specific
+programs, you may find that everything is restricted. For example, programs you
+did not restrict are now restricted.
+
+CAUSE
+=====
+
+McAfee WebScan conflicts with Microsoft Plus! For Kids, Protect It! When WebScan
+is installed on your computer; all programs will be restricted when you restrict
+a user, fully, partially, or not at all, in the "Limit Programs" Protect It!
+dialog.
+
+WORKAROUND
+==========
+
+The only workaround for this problem is to uninstall McAfee WebScan. To
+uninstall WebScan, do the following:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, select McAfee WebScan from the list of
+   programs, and then click the Add/Remove button.
+
+4. Remove McAfee WebScan.
+
+Protect It! will now run correctly and restrict restricting those programs that
+were designated to be restricted by the Protect It! administrator.
+
+For further information about McAfee WebScan, contact McAfee Technical Support at
+(408) 988-3832.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : 1.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

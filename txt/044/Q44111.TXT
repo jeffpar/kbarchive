@@ -1,0 +1,59 @@
+DOCUMENT:Q44111  02-NOV-1999  [win95x]
+TITLE   :Windows with Hercules and a Secondary Display Connected
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is no method of running Microsoft Windows installed for Hercules if a
+secondary display adapter is present in the system. This limitation exists
+because Windows uses the second video page of the Hercules display card for its
+own function. This area of memory is also used by color (CGA/EGA/VGA) displays;
+therefore, a conflict results, causing erroneous output to both displays.
+
+MORE INFORMATION
+================
+
+The reason you can run on a color adapter with a Hercules card installed in
+addition to the color adapter is because the first video page of the Hercules
+display card is the default and does not conflict with another display type in
+memory.
+
+If you write to the standard color adapter area of memory, you are not writing to
+the first page; thus, no output or conflict occurs with the Hercules display.
+This means that the only way to run correctly on a Hercules adapter is to have
+only the single display card in the system.
+
+
+Additional query words: 3.00 win30 KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

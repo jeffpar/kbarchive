@@ -1,0 +1,72 @@
+DOCUMENT:Q128172  17-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: SPlusReadAppt Fails to Retrieve Creator Information
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Microsoft Visual Basic application attempting to use the SPlusReadAppt
+function will not retrieve the creator of an appointment.
+
+CAUSE
+=====
+
+For developing applications in Visual Basic, the Schedule Access Libraries (SAL)
+includes the SPlusReadAppt function, which is declared in the module file
+SPLUS.BAS to make calls to the library SPLUS.DLL. SPlusReadAppt makes calls to
+functions BPLUSReadAppt() and BPLUSGetReadAppt().
+
+The call to BPLUSGetReadAppt() function should return a type (structure) of
+SPlusAppt that includes a reference to the creator type. However, the creator
+type is not correctly returned. The creator information can be accessed by an
+application built with the C interface to SPLUS.DLL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 1.0a of Microsoft
+Schedule+ for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Not every appointment will have a creator associated with it. The creator
+information is included when the appointment is created by a user who is not the
+owner of the calendar file. This can only happen when another user has been
+given create or assistant rights by the owner of the calendar. When these users
+create appointments on calendars other than their own, they are recorded as the
+creator.
+
+Additional query words: schedule plus 1.00a salapp mapirecip organizer mapi
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100a
+Version           : WINDOWS:1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

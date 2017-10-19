@@ -1,0 +1,94 @@
+DOCUMENT:Q116404  08-AUG-2001  [winnt]
+TITLE   :STOP Message: 0xC000021A or Other Problems with Long PATH
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your AUTOEXEC.BAT file contains PATH statement(s) which evaluate to a very
+long PATH variable (greater than approximately 1024 characters), after you log
+on, the resulting PATH variable will not reflect those PATH statement(s). For
+example, if your AUTOEXEC.BAT file contains the following lines:
+
+.
+.
+.
+PATH c:\directory1;c:\directory2;c:\directory3;c:\directory4;c:\directory5
+PATH %path%;%path%;%path%;%path%;c:\directory6
+PATH %path%;%path%;%path%;%path%;c:\directory7
+.
+.
+.
+
+after logging on, the PATH variable will contain only the values specified in the
+registry. When this happens, a new environment variable named "AutoexecPath" is
+created with the value specified by the PATH statement(s) in your AUTOEXEC.BAT
+file.
+
+
+If your PATH statement(s) evaluate to an even longer PATH variable, logging on
+will cause WINLOGON.EXE to terminate, resulting in this STOP message:
+
+   STOP: 0xC000021A {Fatal System Error} The Windows Logon Process system
+   process terminated unexpectedly with a status of 0xC0000005. The system has
+   been shutdown.
+
+
+CAUSE
+=====
+
+This is caused by the PATH variable buffer overflowing its size of 1024
+characters.
+
+WORKAROUND
+==========
+
+Edit the PATH statement(s) in your AUTOEXEC.BAT file to evaluate to a shorter
+PATH variable.
+
+If you computer hangs with the above STOP message, you can regain access to it by
+connecting to it remotely over the network and editing or renaming the
+AUTOEXEC.BAT file. Alternately, if the file system is formatted as FAT, start
+MS-DOS and edit or rename your AUTOEXEC.BAT file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. This problem has been corrected in Windows NT
+Workstation and Windows NT Server version 3.5.
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

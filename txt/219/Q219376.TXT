@@ -1,0 +1,86 @@
+DOCUMENT:Q219376  16-MAY-2002  [winnt]
+TITLE   :NDIS Does Not Indicate NDIS_RESET_END Status
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP4
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a computer running Windows NT 4.0 Service Pack 4, the Microsoft Network
+Driver Interface Specification (NDIS) software does not notify any protocols
+bound to a miniport driver that the miniport has completed its reset routine.
+The NDIS_RESET_START command is issued during a reset, but no command is issued
+at the completion of the reset. Previous versions of NDIS notified the protocol
+bound to the miniport at both the beginning (using NDIS_RESET_START) and the end
+(with NDIS_RESET_END) during a reset.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+the individual software update. For information on obtaining the latest service
+pack, please go to:
+
+ - http://www.microsoft.com/windows/servicepacks/
+
+-or-
+
+ - Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+For information on obtaining the individual software update, contact Microsoft
+Product Support Services. For a complete list of Microsoft Product Support
+Services phone numbers and information on support costs, please go to the
+following address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server 4.0 Service
+Pack 4. This problem was first corrected in Windows NT 4.0 Service Pack 5.
+
+MORE INFORMATION
+================
+
+For additional information about troubleshooting NDIS issues, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q216780 DLC Protocol Stops Transmitting Packets
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search
+Version           : winnt:4.0 SP4
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

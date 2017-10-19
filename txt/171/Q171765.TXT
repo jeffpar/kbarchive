@@ -1,0 +1,69 @@
+DOCUMENT:Q171765  25-JUL-2001  [sms]
+TITLE   :SMS: Win95 Clients Are Put in the Wrong SMS Site with Smsls.ini
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbenv kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Windows 95 client computer has been upgraded from Windows for Workgroups
+3.11, it may be put into the wrong Systems Management Server site if you are
+using the Smsls.ini file.
+
+CAUSE
+=====
+
+When the computer running Windows 95 is upgraded, the [Network] section of the
+System.ini file is not removed. If the computer name or workgroup is changed in
+Windows 95, the registry is updated, but the [Network] section of the System.ini
+file is not. When the Smsls.ini file is used, the SETLS program reads the
+[Network] section of the System.ini file, not the registry. This may result in
+the client reporting its inventory to the wrong Systems Management Server site.
+
+WORKAROUND
+==========
+
+To work around this problem, remove the [Network] section of the System.ini file
+from the computers running Windows 95. Doing this allows the SETLS program to
+obtain the correct information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms machine
+
+======================================================================
+Keywords          : kbenv kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,87 @@
+DOCUMENT:Q263402  09-MAY-2002  [sms]
+TITLE   :SMS: Msiexec.exe Cannot Process an MSI File
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbSoftwareDist kbsms200preSP3 kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run an .msi file by specifying the name of the file at a command
+prompt, the Msiexec.exe program cannot process the .msi file.
+
+CAUSE
+=====
+
+When you run .msi files by just specifying the name of the .msi file, no command
+prompt parameters are passed to the Msiexec.exe program, so the Msiexec.exe
+program cannot process the .msi file.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+To work around this problem, include an explicit call to the Msiexec.exe program
+at the command prompt when you want to advertise programs. You must also type
+the appropriate command-line switch with the Msiexec.exe program, such as /I (to
+install) or /f (to repair the installation). For a complete list of command-line
+switches that you can use with the Msiexec.exe program, view the following
+Microsoft Knowledge Base article:
+
+   Q227091 Command-Line Switches for the Microsoft Windows Installer Tool
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+You can run Windows Installer packages (.msi packages) by either double-clicking
+the .msi file itself or by calling it by using the Msiexec.exe program from a
+command prompt.
+
+When you use System Management Server (SMS) 2.0, you can advertise and run .msi
+packages only by explicitly calling the command prompt and specifying the name
+of the .msi file that you want to run.
+
+Additional query words: prodsms c line
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbSoftwareDist kbsms200preSP3 kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

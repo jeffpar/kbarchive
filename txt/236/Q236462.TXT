@@ -1,0 +1,62 @@
+DOCUMENT:Q236462  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Characters Receive Damage Through Doors
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Asheron's Call, you may receive damage from an enemy
+through a closed door, and you may be able to damage an enemy through a closed
+door.
+
+CAUSE
+=====
+
+This behavior can occur if you stand too close to the door.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, do not stand in close proximity to doors.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Asheron's Call,
+version 1.0 and Microsoft Asheron's Call: Dark Majesty.
+
+Additional query words: 1.00 msgame ac damaged hit asherons
+
+======================================================================
+Keywords          : kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

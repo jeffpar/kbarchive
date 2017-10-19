@@ -1,0 +1,80 @@
+DOCUMENT:Q126634  17-DEC-2000  [win95x]
+TITLE   :Disable Device Bitmap Support in Windows 3.1 Video Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive general protection (GP) fault error messages in various applications
+in Microsoft Windows 95.
+
+CAUSE
+=====
+
+These errors can occur if, in Windows 95, you are using a Windows version 3.1
+video driver that supports bitmaps.
+
+WORKAROUND
+==========
+
+To work around this situation, use one of the following methods:
+
+ - Use one of the video drivers supplied with Windows 95 (such as the standard
+   VGA driver).
+
+ - Contact the manufacturer of the Windows 3.1 video driver about obtaining a
+   video driver for Windows 95.
+
+ - If the video driver supports device bitmaps, disable this support. To do
+   this, you must run a utility that is shipped with your video card. Please
+   contact your video card manufacturer for more information.
+
+   NOTE: This method has worked on computers with the following video cards:
+
+   - Apian Renegade 1280 ISA
+
+MORE INFORMATION
+================
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that it is not caused by a problem in Windows
+
+1. For more information about resolving this issue, contact your
+
+video card manufacturer.
+
+The products discussed here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: gpf wwt
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

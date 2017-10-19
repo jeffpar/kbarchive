@@ -1,0 +1,74 @@
+DOCUMENT:Q310326  13-AUG-2002  [ssafe]
+TITLE   :DOC: SourceSafe - Change Password Topic in Help is Incorrect
+PRODUCT :Microsoft SourceSafe
+PROD/VER::4.0,4.0a,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual SourceSafe Explorer Help topic "Change Passwords" incorrectly states
+that in the event of a lost or forgotten password, you should contact Microsoft
+Technical Support.
+
+   MICROSOFT SUPPORT PROFESSIONALS CANNOT ASSIST, UNDER ANY CIRCUMSTANCES, IN
+   THE BREAKING OF PASSWORDS APPLIED TO FILES AND FEATURES WITHIN MICROSOFT
+   PROGRAMS.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Start Visual SourceSafe.
+
+2. On the Help menu, click "Search for Help on".
+
+3. In the Search Criteria box, type "Change Passwords" (without the quotation
+   marks).
+
+4. Select the Change Passwords Help topic. Notice that the last sentence
+   incorrectly states: "If you cannot remember the old password, contact
+   Microsoft Technical Support."
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q189126 Microsoft's Policy Regarding Missing or Invalid Passwords
+
+Additional query words: lost admin password
+
+======================================================================
+Keywords          : kbdocerr kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe32bitSearch
+Version           : :4.0,4.0a,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

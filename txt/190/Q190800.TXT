@@ -1,0 +1,83 @@
+DOCUMENT:Q190800  17-JUL-2001  [visualc]
+TITLE   :FIX: VC Debugger Fails for WINCE App if Total DLLs Exceed Four
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbDebug kbVC500 kbOSWinCE200bug kbOSWinCE210fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++ 5.0 
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Visual C++ Debugger fails to start when a Windows CE application uses more
+than four DLLs with debug information. When you start the Debugger with Debug GO
+(F5), F10, or F11, the following type of error message appears for the .exe file
+and each of the DLLs:
+
+   The project '<Host project path >\myapp.exe' does not match the
+   corresponding file on the remote machine.
+
+After clicking all of the OK buttons, the debugger starts in unknown assembly
+code with no call stack information. You have to select Stop debugging from the
+Debug menu.
+
+RESOLUTION
+==========
+
+If you want to debug your application and the DLLs, keep the number of DLLs
+containing debug information to less than five.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in the Microsoft Windows
+CE Toolkit for Visual C++ 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create a simple Windows application or use the Generic sample. Add to this
+application, your DLL projects one at a time. Build the application and the DLLs
+with debug information. The Debugger works fine up to four DLLs. After you add
+the fifth DLL, the symptom described above occurs.
+
+The application might run properly outside the debugger in the Handheld PC device
+if there is no other coding problem. Outside the debugger, the number of DLLs
+you can add to your application is dependent on the available program memory in
+the Handheld PC.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbDebug kbVC500 kbOSWinCE200bug kbOSWinCE210fix 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCEETKSearch kbWinCESearch kbWinCETK500VC kbWinCEETKVC500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

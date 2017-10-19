@@ -1,0 +1,69 @@
+DOCUMENT:Q130743  17-DEC-2000  [win95x]
+TITLE   :Setup Does Not Detect IBM Token Ring 16/4 on IBM Aptiva
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows 95 on an IBM Aptiva computer, the IBM Token Ring 16/4
+network adapter in the computer may not be detected. If the network adapter is
+not detected, it does not function after you install Windows 95.
+
+CAUSE
+=====
+
+This problem can occur if your IBM Aptiva computer contains a Sound Blaster
+sound card that is configured to use a base I/O address of 220. A Sound Blaster
+card using this base address prevents Windows 95 from detecting the IBM Token
+Ring network adapter.
+
+
+RESOLUTION
+==========
+
+To allow Windows 95 to detect and use the IBM Token Ring network adapter, change
+the base I/O address that the Sound Blaster card uses to an address other than
+220. For information about how to do so, please refer to the Sound Blaster
+documentation or contact the hardware manufacturer.
+
+MORE INFORMATION
+================
+
+This behavior can also occur with other IBM computer models, including the 350-
+and 750-series desktop computers. These computers contain a VIBRA 16 CT2800
+sound card, with the same problem as described above.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

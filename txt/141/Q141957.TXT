@@ -1,0 +1,84 @@
+DOCUMENT:Q141957  08-FEB-2000  [foxpro]
+TITLE   :BUG: Float Fields Show Asterisks in Wizard-Generated Screen
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Wizard-generated screen displays numeric float data with asterisks instead
+of actual numbers.
+
+CAUSE
+=====
+
+The default InputMask clause for the text box object that is used to display the
+Float field is not defined to handle any numbers greater than 99,999.99.
+
+WORKAROUND
+==========
+
+Modify the form in the Form Designer, and change the InputMask to 9,999,999.99
+or whatever setting is appropriate.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run the following code to create a sample table for use with the Form
+   Wizard:
+
+      SET SAFETY OFF
+      CLOSE ALL
+      CLEAR ALL
+      CLEAR
+      CREATE TABLE mytable (Project C(5), Company C(40), DolrAmt F(14,8))
+      INSERT INTO mytable VALUES ("00001","Acme Inc.",1234567.23)
+      INSERT INTO mytable VALUES ("00002","Weatherford Inc.",75232.33243)
+      INSERT INTO mytable VALUES ("00003","Wonkaland",9123.22)
+
+2. Run the Form Wizard on the new table, choosing all the fields listed in Step
+   1. Click Finish, and then select Preview on the last dialog screen. As you go
+   from record to record, the amount shown for Acme, Inc. will be displayed as
+   asterisks.
+
+Additional query words: VFoxWin buglist3.00b inputmask kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0b,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

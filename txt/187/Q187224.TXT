@@ -1,0 +1,57 @@
+DOCUMENT:Q187224  01-FEB-2001  [iis]
+TITLE   :Country/Region Hong Kong Is Misplaced
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to create a SSL certificate request file using Microsoft Internet
+Information Server (IIS) 4.0 Key Manager (after filling out the Key Name,
+Password, Organization, Organization Unit, and Common Name), if you type "H" for
+"Hong Kong" inside the Country drop-down list box, you cannot find "Hong Kong."
+
+CAUSE
+=====
+
+"Hong Kong" is being listed as "Kong Hong."
+
+WORKAROUND
+==========
+
+Selecting "Kong Hong" will correctly display the abbreviation "HK" (without the
+quotation marks). You can also manually type in "HK" (without the quotation
+marks) to work around this problem.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

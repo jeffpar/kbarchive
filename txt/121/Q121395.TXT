@@ -1,0 +1,65 @@
+DOCUMENT:Q121395  31-OCT-1999  [crossnet]
+TITLE   :Running NetBEUI in Real Mode with WFW 3.11
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11; WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+On a Windows for Workgroups (WfWG) version 3.11 computer with TCP/IP-32, if you
+load NetBEUI into real mode (conventional memory) prior to starting Windows you
+may encounter problems such as network errors, inability to make network
+connections, other machines not able to connect to your shares, or your computer
+may stop responding (hang) when attempting to make a network connection.
+
+NOTE: To load NetBEUI into conventional memory, run the following command at the
+command prompt prior to starting Windows, or add it to the AUTOEXEC.BAT file:
+
+      Net Start NetBEUI
+
+WORKAROUND
+==========
+
+Remove TCP/IP, or do not load NetBEUI in real mode.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups, and
+TCP/IP-32. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodtcp32 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311
+Version           : :3.11; WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

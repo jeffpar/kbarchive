@@ -1,0 +1,68 @@
+DOCUMENT:Q253000  11-JAN-2002  [winnt]
+TITLE   :Last Foreign User Update Time Appears Not to Be Updated
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a management agent (MA) that processes foreign users, the
+zcdsLastExportTime setting remains set to a previous date. In some situations,
+the MA processes only 2,000 transactions in a single run and export only 1,000
+records. The zcdsLastExportTime setting is only slightly incremented and appears
+to be "stuck" on a single date. When you run the MA concurrently, approximately
+1,000 records are processed each time, picking up where the previous MA run left
+off.
+
+CAUSE
+=====
+
+The Importt tool is reading only a portion of the transactions and quitting.
+Importt is not able to recover for the next set of 2,000 transactions without
+running the MA again.
+
+
+RESOLUTION
+==========
+
+This issue has been resolved with a patch. Please contact Technical Support for
+a fix or upgrade to Microsoft Metadirectory Services (MMS) 2.2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: Zoomit Via zscript genlogs
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

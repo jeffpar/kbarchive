@@ -1,0 +1,68 @@
+DOCUMENT:Q133750  08-NOV-2001  [homemm]
+TITLE   :Julia Child: Button Bar Disappears When Selecting Help Index
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you click the Help Index option while in Cooking with Master Chefs Help, the
+button bar underneath the Help screen disappears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Julia Child Home Cooking With
+Master Chefs for Windows, version 1.0. We are researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+RESOLUTION
+==========
+
+Use one of the following methods to restore the Help Contents:
+
+Method 1
+--------
+
+When you are in Help Index, press the F1 function key.
+
+-or-
+
+Method 2
+--------
+
+Click one of the blue-colored Help topic items on the Help Index.
+
+
+Additional query words: multi media multimedia multi-media mmtitles Julia Child french
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbZNotKeyword kbJuliaChild
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

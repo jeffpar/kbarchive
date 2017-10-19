@@ -1,0 +1,68 @@
+DOCUMENT:Q140161  02-NOV-2001  [homemm]
+TITLE   :Bookshelf: Cannot Print Multiple Pages
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbbuglist kbfaq
+
+======================================================================
+WINDOWS
+kbprint kbmm kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf '95 for Windows 95 
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you want to print a Bookshelf article that is several pages long, the Print
+Range option for multiple pages is not available.
+
+RESOLUTION
+==========
+
+Copy and paste the article into a word processing program such as WordPad or
+Word for Windows:
+
+1. On the Edit menu click Copy.
+
+2. Switch to the word processing program of your choice and paste the text.
+
+   For example, if you are using Word for Windows, click Paste on the Edit menu.
+   Word for Windows allows you to print multiple pages if more than one page of
+   text is contained in the article.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbbuglist kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995 kbBookShelf1996 kbBookShelf1997
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

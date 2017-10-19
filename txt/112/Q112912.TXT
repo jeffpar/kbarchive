@@ -1,0 +1,56 @@
+DOCUMENT:Q112912  16-NOV-1999  [pcmail]
+TITLE   :PC Win: Duplicate Header of WELCOME.GLB Message
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Versions 3.0 and 3.2 of Microsoft Mail for Windows will display duplicate header
+information in the body of the welcome message if there are fewer than 78 dashes
+separating the header information from the message text in the WELCOME.GLB
+file.
+
+In addition, if the subject was modified and there are fewer than 78 dashes, the
+modified subject will appear in the duplicated header information, but the
+original subject, "Welcome to the Mail System," will still be displayed in the
+header.
+
+If the number of dashes is greater than 78, the header will not be duplicated and
+the modified subject will appear in the header; however, the additional dashes
+will appear as the first characters in the welcome message.
+
+This behavior only exists in Mail for Windows.
+
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

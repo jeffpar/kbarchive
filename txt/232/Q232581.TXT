@@ -1,0 +1,68 @@
+DOCUMENT:Q232581  20-OCT-2001  [win95x]
+TITLE   :BUG: GetMetaFile() Fails on Long File Names
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbGDI kbMetafile kbSDKWin32 kbOSWin95bug kbOSWin98bug kbGrpDSGDI
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The GetMetaFile() API, used to load a disk-based Windows metafile into memory,
+returns failure code when passed a long file name.
+
+RESOLUTION
+==========
+
+To work around this problem, use the metafile's short file name in the call to
+GetMetaFile(). Code similar to the following should work properly:
+
+   HMETAFILE MyGetMetaFile( LPTSTR szFileName )
+   {
+   	HMETAFILE	hWMF;
+   	TCHAR		szTemp[MAX_PATH];
+
+   	if( (hWMF=GetMetaFile(szFileName)) != NULL )
+   		return hWMF;
+   	if( GetShortPathName( szFileName, szTemp, MAX_PATH ) == 0 )
+   		return NULL;
+   	return GetMetaFile( szTemp );
+   }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGDI kbMetafile kbSDKWin32 kbOSWin95bug kbOSWin98bug kbGrpDSGDI 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q157318  11-DEC-1999  [foxpro]
+TITLE   :DOCERR: Function Key Information Incorrect in VFP 5.0 Help
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is incorrect information for the function keys F2 to F9, in the "Keyboard
+differences between dBASE and Visual FoxPro" Help topic in Visual FoxPro 5.0.
+
+MORE INFORMATION
+================
+
+The topic "Keyboard differences between dBASE and Visual FoxPro" in the Visual
+FoxPro Help file shows the following actions associated with the F2 through F9
+function keys in the section titled "Visual FoxPro and dBASE Function Key
+Assignments":
+
+   F2   Set (displays the View window)
+   F3   List
+   F4   Dir(ectory)
+   F5   Display Structure
+   F6   Display Status
+   F7   Display Memory
+   F8   Display
+   F9   Append
+
+This information is incorrect. The function keys F2 to F9 are ignored by default
+and do not perform the actions described in the Help topic. This functionality
+is provided by a Default.fky macro file, which is no longer provided. This
+functionality was removed because some of these keys are now used by the FoxPro
+Debugger, as shown in the list below:
+
+   F5         Resume
+   F6         Step Over
+   F7         Run to Cursor
+   Shift+F7   Step Out
+   F8         Step Into
+
+For more information about keyboard shortcuts in the Debugger, search for
+"Debugger Keyboard Shortcuts" in the Visual FoxPro Help file.
+
+You can assign expressions to the functions keys F2 to F9, in the configuration
+file (Config.fpw) so that they perform the actions described in the Help topic.
+
+REFERENCES
+==========
+
+For more information about setting up the Configuration file with this
+functionality, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q97052 Redefining the Function Keys in FoxPro Config File
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

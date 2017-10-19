@@ -1,0 +1,59 @@
+DOCUMENT:Q155578  09-AUG-2001  [winnt]
+TITLE   :Computer May Not Boot with CD-ROM Installed
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to boot a Compaq Prosignia server with a CD-ROM in the first
+CD-ROM drive, the computer may stop responding while waiting for the CD-ROM to
+boot. The computer does not boot until the CD-ROM is removed from the drive.
+
+CAUSE
+=====
+
+This behavior can be caused by a system BIOS firmware or configuration problem.
+
+RESOLUTION
+==========
+
+Change the boot sequence in the computer's CMOS settings to boot first from the
+hard disk, then from drive A, and then from the CD-ROM drive.
+
+If the computer hangs with the CD-ROM installed, but boots when the CD-ROM is
+removed, the system's firmware does not fully support booting from a CD-ROM.
+Contact the manufacturer to obtain a firmware upgrade.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

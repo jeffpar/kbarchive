@@ -1,0 +1,74 @@
+DOCUMENT:Q137869  17-DEC-2000  [win95x]
+TITLE   :Error Message: System Error - Network Error on Drive <X>
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message if the network disconnects during
+certain network operations:
+
+   SYSTEM ERROR
+   Network Error on Drive <X>
+
+When you receive this error message, clicking Cancel or Retry has no effect.
+Pressing CTRL+ALT+DELETE also has no effect. You must turn the computer off and
+back on, or press its reset switch, to restart the computer.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Note that this problem does not occur when you are using a real-mode Novell
+NetWare client such as NETX.
+
+This error can be triggered by a program trying to access an open file handle
+that has become invalid due to the network connection being lost. If the program
+tries to access the handle a finite number of times, clicking Cancel repeatedly
+will eventually return control to the program. If the program tries to access
+the handle in an infinite loop, there is no way to return control to the program
+or the system.
+
+This error has also been reported to occur if a local, external hard disk is
+disconnected or turned off while a program has files on the drive open.
+
+Additional query words: unrecoverable hangs
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

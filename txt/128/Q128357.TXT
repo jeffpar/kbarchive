@@ -1,0 +1,71 @@
+DOCUMENT:Q128357  05-NOV-1999  [pcmail]
+TITLE   :PC DB: Err Msg: Not Find Mail System Data Files on Drive M:
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Administration program (ADMIN.EXE) for Microsoft Mail for PC
+Networks, the following message may be received:
+
+   Could Not Find Mail System Data Files on Drive M:
+
+CAUSE
+=====
+
+This may be caused if ADMIN.EXE cannot open the MODEM.GLB with READ/WRITE
+access.
+
+When ADMIN.EXE launches, it tries to open the MODEM.GLB with READ/WRITE access.
+If this fails, either due to corruption or the READ-ONLY attribute having been
+applied, ADMIN.EXE will fail to start, returning the above error.
+
+RESOLUTION
+==========
+
+If this should occur, either remove the READ-ONLY attribute, or remove the
+file.
+
+A new MODEM.GLB can be created by doing the following:
+
+1. Delete MODEM.GLB
+
+2. Restart ADMIN.EXE
+
+   A MODEM.GLB will be recreated automatically.
+
+3. Because the new MODEM.GLB may not have the correct settings, select Config,
+   Serial in ADMIN.EXE to set the baud rate, comm prt, and dial type.
+
+Additional query words: 3.20 error MODEM.GLB
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

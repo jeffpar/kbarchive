@@ -1,0 +1,75 @@
+DOCUMENT:Q135595  17-DEC-2000  [crossnet]
+TITLE   :IPCONFIG Does Not Display Domain Name if Assigned Via DHCP
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11,3.11a,3.11b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The IPCONFIG.EXE utility included with Microsoft TCP/IP-32 for Windows for
+Workgroups 3.11 does not display the fully qualified domain name (FQDN) of the
+host computer if the domain name is assigned through DHCP. If the domain name is
+assigned manually, IPCONFIG correctly reports the FQDN.
+
+The version of IPCONFIG supplied with Windows NT does report the domain name.
+
+Sample output from IPCONFIG when run on Windows for Workgroups 3.11 DHCP client:
+
+    Host Name . . . . . . . . . : ENG-LAB041 (should be
+                                 ENG-LAB041.NETLAB.DOM in this example)
+   DNS Servers . . . . . . . . : 157.55.136.218
+                                 157.55.136.219
+                                 157.55.136.220
+   Node Type . . . . . . . . . : Mixed
+   NetBIOS Scope ID. . . . . . :
+   IP Routing Enabled. . . . . : No
+   WINS Proxy Enabled. . . . . : No
+   NetBIOS Resolution uses DNS : No
+
+CAUSE
+=====
+
+IPCONFIG.EXE does not read the domain name from the DHCP.BIN file. The domain
+name is read only from SYSTEM.INI.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32 for Windows for
+Workgroups versions 3.11, 3.11a, and 3.11b. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: wfw wfwg 3.11 3.11a 3.11b prodtcp32
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

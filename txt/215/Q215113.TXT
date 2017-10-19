@@ -1,0 +1,68 @@
+DOCUMENT:Q215113  27-OCT-2000  [sms]
+TITLE   :SMS: Windows 9x Clients Can't Connect to Bindery Emulation CAPs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbClient kbConfig kbSecurity kbServer kbsms kbsms200 kbsms200bug kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 9x clients cannot connect to client access points (CAPs) on servers that
+use bindery emulation.
+
+
+CAUSE
+=====
+
+The client must make an initial connection to a bindery logon point to
+authenticate before gaining access to a CAP or distribution point on another
+NetWare 4.x server.
+
+WORKAROUND
+==========
+
+Place all CAPs and distribution points on the bindery emulation servers that act
+as logon points for the Windows 9x clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbClient kbConfig kbSecurity kbServer kbsms kbsms200 kbsms200bug kbBindery kbCAP kbOSNovell 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

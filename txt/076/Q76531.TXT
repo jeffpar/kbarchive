@@ -1,0 +1,83 @@
+DOCUMENT:Q76531  15-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Cannot Connect Printers...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you choose the Printers icon from the Control Panel in Windows, you may
+receive the error message:
+
+   Cannot connect printers because the [ports] section of the WIN.INI file is
+   missing; Choose cancel and edit the WIN.INI file or choose OK to continue.
+
+CAUSE
+=====
+
+This error message may be caused by one of the following:
+
+ - The [ports] section of the WIN.INI file is missing. If this is the case, make
+   sure you have a section in the WIN.INI file, as follows:
+
+         [Ports]
+         LPT1:=
+         LPT2:=
+         LPT3:=
+         COM1:=9600,n,8,1
+         COM2:=9600,n,8,1
+         COM3:=9600,n,8,1
+         COM4:=9600,n,8,1
+         EPT:=
+         FILE:=
+         LPT1.OS2=
+         LPT2.OS2=
+
+ - The WIN.INI file is corrupted. In this case, if you have a good backup copy
+   of WIN.INI, copy this file into your Windows directory. If you don't have a
+   good backup copy, expand the file WIN.SRC from the original Microsoft Windows
+   disks to the Windows directory. Use the following command:
+
+   c:\windows\expand a:win.src c:\windows\win.ini
+
+   NOTE: Renaming the WIN.INI file does not solve the problem. The [ports]
+   section will still be missing.
+
+ - Microsoft Windows cannot find the WIN.INI file, or does not recognize it. You
+   need to reinstall Windows to create a new WIN.INI.
+
+   If Windows is on a network, you should install Microsoft Windows on your local
+   hard drive. This eliminates any problems that might arise through the "share"
+   and "user" directories.
+
+Additional query words: 3.00 win30 win31 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

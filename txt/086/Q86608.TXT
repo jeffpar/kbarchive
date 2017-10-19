@@ -1,0 +1,48 @@
+DOCUMENT:Q86608  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Day Must Start on Hour or Half Hour
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+One of the general options available in Microsoft Schedule+ for Windows is
+for when the day starts. You can set this option to any time, but for
+practical purposes, Schedule+ rounds this time to the nearest half hour.
+
+When you first open the Appointment Book, the time setting scrolls the
+Appointment Book to the beginning of the day. The time setting is also used
+by Auto-Pick to define a range of acceptable times in your day when you set
+meetings. The Planner, Appointment Book, and the Auto-Pick command use half-
+hour increments for display, so this setting is rounded to the nearest half
+hour. This setting is not reflected when other people view your schedule in
+the Planner or open your Appointment Book.
+
+Additional query words: 1.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

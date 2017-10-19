@@ -1,0 +1,89 @@
+DOCUMENT:Q240697  22-JUN-2001  [exchange]
+TITLE   :XCLN: "Outlook Cannot Perform Your Search" Message Using Find
+PRODUCT :Microsoft Exchange
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+WARNING: ANY USE BY YOU OF THE COMMAND-LINE SWITCHES PROVIDED IN THIS ARTICLE IS
+AT YOUR OWN RISK. Microsoft provides these command-line switches without
+warranty of any kind, either express or implied, including but not limited to
+the implied warranties of merchantability and/or fitness for a particular
+purpose. When you use the Find feature in Outlook, you receive the following
+error message:
+
+   Outlook cannot perform your search. Outlook cannot display this view. The
+   folder already exists.
+
+CAUSE
+=====
+
+A previously-defined Advanced Find has been saved and is now corrupted.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. Quit and log off of Outlook.
+
+2. Click Start, click Run, and in the Open box type:
+
+   outlook /cleanfinders
+
+When you run Outlook with the /cleanfinders switch, it removes all saved searches
+from the mailbox.
+
+MORE INFORMATION
+================
+
+For additional information about this and other command-line switches for
+Outlook 2000, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q197180 OL2000: Additional Command-Line Switches
+
+Outlook 98:
+
+   Q182112 OL98: Additional Command-Line Switches
+
+Outlook 97:
+
+   Q156982 OL97: Additional Command-Line Switches
+
+Additional query words: search 8.0 8.01 8.02 8.03 8.04 8.5 9.0
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : :; WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

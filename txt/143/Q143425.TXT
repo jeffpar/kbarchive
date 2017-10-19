@@ -1,0 +1,71 @@
+DOCUMENT:Q143425  11-JAN-2001  [vbwin]
+TITLE   :FIX: Cannot Load Binary Data or Files Containing Binary Data
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the RichTextBox control and attempting to load a text file that
+contains a blank line as the first line, or, assigning a file, which contains a
+blank line as the first line, to the FileName property of the RichTextBox
+control, you will receive an error (32002):
+
+   Cannot load binary data or files containing binary data
+
+CAUSE
+=====
+
+The RichTextBox control scans the file and examines the first 5 characters. This
+error is generated if any of the first 5 characters have an ANSI value less than
+25 or greater than 250.
+
+RESOLUTION
+==========
+
+To workaround the problem, import the file into any text editor (MS-DOS Edit,
+Notepad or WordPad) and add 5 blank spaces on the first line.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been corrected in the Visual
+Basic version 4.0a for Windows synchronization release. This problem has also
+been corrected in Visual Basic 5.0 and 6.0.
+
+Additional query words: kbVBp400bug kbVBp500fix kbVBp600fix kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : 4.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

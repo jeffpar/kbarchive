@@ -1,0 +1,70 @@
+DOCUMENT:Q189527  25-MAR-2002  [win95x]
+TITLE   :Unable to Create Folder on an NTFS Partition
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1,2.5
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbui osr2 win95kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try use your Windows 95 OEM Service Release 2-based computer to create
+a new folder on a Microsoft Windows NT Server-based computer's NTFS partition,
+you may receive the following error message:
+
+   Unable to create directory.
+
+This problem may occur even though you have full file permissions to the folder
+in which the new folder is being created.
+
+CAUSE
+=====
+
+This problem can occur if you do not have full file permissions to a parent
+folder under which the new folder is being created. In Windows 95 OEM Service
+Release 2 (OSR2), the full path is verified when a new folder is created, so if
+you do not have permissions at one of the folder levels in the path, the error
+message is generated.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+
+Additional query words: 95 2.0 2.10 2.50
+
+======================================================================
+Keywords          : kbenv kberrmsg kbui osr2 win95 kbfixlist
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : :2,2.1,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

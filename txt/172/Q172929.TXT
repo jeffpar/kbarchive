@@ -1,0 +1,90 @@
+DOCUMENT:Q172929  03-DEC-2001  [crossnet]
+TITLE   :Windows 95 Print Jobs Disappear from Windows NT Print Queue
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows Millennium Edition 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your attempts to print to a Windows NT 4.0 or Windows 2000 printer from a
+Windows 95, Windows 98, or Windows Millennium (Me) workstation fail. No error is
+logged on the Windows NT or Windows 2000 Server, or on the Windows 95, Windows
+98, or Windows Me client. The Windows NT or Windows 2000 printer receives the
+job but the job disappears. The print device never receives the job and does not
+show an error.
+
+CAUSE
+=====
+
+The Windows NT or Windows 2000 print processor may be set to "NT EMF 1.003."
+
+To verify this, perform the following steps:
+
+1. Click Start, point to Settings, and then click Printers.
+
+2. Right-click on the printer, and then click Properties.
+
+3. On the General tab, and then click Print Processor.
+
+   NOTE: In Windows 2000 this button is located on the Advanced tab.
+
+4. Observe the Default Datatype (the highlighted item).
+
+If the item is NT EMF 1.003, Windows 95 clients exhibit the above problem.
+
+RESOLUTION
+==========
+
+Set the default Datatype to RAW by using the steps outlined above. Windows 95
+clients should then be able to print.
+
+STATUS
+======
+
+Microsoft has confirmed this to be by design.
+
+
+MORE INFORMATION
+================
+
+Windows NT 95 EMF is only used when jobs are printed locally. All remote print
+jobs are spooled using the RAW datatype.
+
+Additional query words: meta file prodnt queue
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : :2000,4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q122562  15-FEB-2002  [visualc]
+TITLE   :DOC: _set_se_translator and set_terminate Help Info Incorrect
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr kbCompiler kbCPPonly kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft Visual C++, 32-bit Editions, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Quick Reference Help and Books Online both state that the
+_set_se_translator() and set_terminate() functions return a pointer to their
+argument. In fact, they return a pointer to the previous translator or terminate
+function respectively.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in the documentation of
+Microsoft Visual C++ 4.0.
+
+MORE INFORMATION
+================
+
+Annotate the Books Online and the Quick Reference Help to include the correct
+documentation. For the _set_se_translator help or Books Online:
+
+1. Choose Annotate from the Edit menu.
+
+2. Enter the following text:
+
+   " The return value is incorrectly documented. _set_se_translator() returns a
+   pointer to the previous translator function." (without the quotation marks)
+
+3. Click the Save button.
+
+For the set_terminate function, repeat the above steps using the following text:
+
+ - The return value is incorrectly documented. set_terminator() returns a
+   pointer to the previous terminator function.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,94 @@
+DOCUMENT:Q140536  23-FEB-2000  [foxpro]
+TITLE   :PRB: "TDS buffer length too large" Error with SQL Server
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,3.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbvfp300 kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to a data source on a SQL Server, you may receive an
+error, which may be intermittent, that is similar to this:
+
+   [Microsoft][ODBC SQL Server Driver]TDS buffer length too large(#0)
+
+CAUSE
+=====
+
+This often shows up on workstations running Windows for Workgroups 3.11, servers
+that were originally running Windows NT 3.1 but have been upgraded to Windows NT
+3.5 or 3.51, and on systems using named pipes over Microsoft's NWLINK network
+redirector.
+
+NWLINK is Microsoft's IPX/SPX compatible network redirector. Windows NT 3.5
+introduced a new feature called Direct Hosting, where the workstation and server
+bypass the NETBIOS layer of the protocol. This allows the two to talk more
+directly, eliminates a layer of overhead, and generally speeds
+workstation/server interactions. However, when direct hosting is used with older
+versions of the redirector, communications become unreliable.
+
+RESOLUTION
+==========
+
+There are basically two resolutions, either replace the redirector or turn off
+direct hosting. It is best to update the redirector to retain the speed of
+direct hosting and to use the most recent versions of the drivers.
+
+To replace the redirector, you need to find the files that comprise it and copy
+them to the Windows\System subdirectory. The updated files are:
+
+   NDIS.386
+   NET.EXE
+   NETAPI.DLL
+   NWNBLINK.386
+   VNETSUP.386
+   VREDIR.386
+
+They can be found on the Windows NT compact disc. For Windows NT 3.5, they are
+located in \Clients\Wfw\Update. Note that these files are only for Windows for
+Workgroups 3.11.
+
+To turn off direct hosting, open the System.ini file on the Windows for
+Workgroups client, find the [network] section, and add this line:
+
+      DirectHost=off
+
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: connection VFoxWin
+
+======================================================================
+Keywords          : kbnetwork kbvfp300 kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300
+Version           : WINDOWS:2.5,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

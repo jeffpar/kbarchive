@@ -1,0 +1,86 @@
+DOCUMENT:Q134215  26-APR-2001  [foxpro]
+TITLE   :BUG: OLE SUBCLASS: Subclassing of OleControl/OLE Unspecified
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an OleControl is subclassed, the following error message appears in Visual
+FoxPro:
+
+   OLE error code 0x80004005: Unspecified error.
+
+Visual FoxPro 5.0 generates this error message:
+
+   Object class is invalid for this container.
+
+
+WORKAROUND
+==========
+
+Create a new class with the name you want based on the subclass that was just
+created.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. To create a new class, type the following code in the Command window:
+
+         CREATE CLASS comm1 OF comms AS olecontrol
+
+2. Select the "Create Control" option and then select the Microsoft Comm
+   Control.
+
+3. Click OK.
+
+4. When the Class Designer comes up, save and close the new class.
+
+5. To try to rename the new class, type the following in the Command window:
+
+         RENAME CLASS comm1 OF comms TO mycomm
+
+At this point, Visual FoxPro generates the error.
+
+Additional query words: OLE control kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kberrmsg kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

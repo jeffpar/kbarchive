@@ -1,0 +1,51 @@
+DOCUMENT:Q90241  30-SEP-1999  [win3x]
+TITLE   :NET.EXE Does Not Save Passwords or Restore Connections
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+The Windows for Workgroups or Workgroup Connections pop-up Terminate-
+and-stay-resident (TSR) program [started by typing "net start popup" (without the quotation marks)] does not make use of your password
+cache. If you reconnect to a shared resource with a password, you will
+be prompted for the password again.
+
+The setting Reconnect At Startup only functions as long as the
+computer is not turned off or the pop-up TSR is not removed from
+memory. After restarting your computer, none of the connections you
+had will be maintained. The pop-up TSR will not read the Reconnect=
+statement in the SYSTEM.INI file.
+
+Both of these limitations were designed to save conventional memory
+usage by the pop-up TSR.
+
+Additional query words: 3.10 1.00 rebooting wc
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

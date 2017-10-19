@@ -1,0 +1,71 @@
+DOCUMENT:Q272174  28-OCT-2001  [sms]
+TITLE   :Advertisements Report Multiple Successes for One Successful Run
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the Advertisement Status messages after a program has run
+successfully, two entries are listed for each successful run.
+
+CAUSE
+=====
+
+This behavior occurs because Microsoft Systems Management Server (SMS) is set to
+"Program restarts computer", or "SMS restarts computer".
+
+WORKAROUND
+==========
+
+The Advertview.exe tool can be used to provide more accurate and realistic
+reports, and is included in the SMS 2.0 Service Pack 2 (SP2) Support Tools
+files. For more information, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/smsmgmt/downloads/default.asp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+When you view Advertisement Status messages you may receive two 10008 messages,
+or one 10008 and one 10009 message.
+
+
+Additional query words: prodsms Win9x Win95 Win98
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200fix 
+Technology        : kbSMSSearch kbSMS200SP2 kbSMS200SP3
+Version           : :2.0 SP2,2.0 SP3
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

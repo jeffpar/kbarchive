@@ -1,0 +1,73 @@
+DOCUMENT:Q95981  05-NOV-1999  [win16sdk]
+TITLE   :BUG: ProgMan DDE Reload() Command Does Not Work Properly
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Program Manager DDE Reload() command that is new for Windows 3.1 does not
+work as documented.
+
+SYMPTOMS
+========
+
+Attempting to use the Reload() command in Windows version 3.1 for a particular
+GroupName causes that Program Manager group to disappear. On the other hand, not
+specifying any GroupName, which supposedly instructs the Program Manager to
+unload all groups and reload the [Groups] section of PROGMAN.INI, causes all the
+groups to disappear.
+
+RESOLUTION
+==========
+
+After all necessary modifications have been made, the Program Manager DDE
+ReplaceItem() command may be used to delete the group items that have changed;
+add them back again with the AddItem() command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows version 3.1. This problem is
+scheduled to be corrected in the next Windows version.
+
+MORE INFORMATION
+================
+
+The DDE Reload() command documented in the Microsoft Windows version 3.1
+Software Development Kit (SDK) "Programmer's Reference, Volume 1: Overview"
+instructs Program Manager to remove and reload an existing group. An application
+that modifies group files can use this command to cause the Program Manager to
+update the groups when it has finished making modifications.
+
+Additional query words: buglist3.10 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

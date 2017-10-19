@@ -1,0 +1,311 @@
+DOCUMENT:Q67416  26-OCT-1999  [win95x]
+TITLE   :PIF Files Created by Windows 3.0 Setup from M to N
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the default parameters for program information files (PIFs)
+created by the Microsoft Windows version 3.0 Setup program, in alphabetical
+order from M to N. These defaults may be modified by loading the PIF file into
+the Windows 3.0 PIF Editor, PIFEDIT.EXE.
+
+MORE INFORMATION
+================
+
+Description: Mail
+Name of Executable: MAIL.EXE
+Name of PIF File Created: MAIL.PIF
+Optional Parameters: None
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 5
+
+Description: Make utility
+Name of Executable: MAKE.EXE
+Name of PIF File Created: MAKE.PIF
+Optional Parameters: N/A
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: MicroRim rBase
+Name of Executable: RBASE.EXE
+Name of PIF File Created: RBASE.PIF
+Optional Parameters: None
+Minimum Memory Required: 512
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 4
+
+Description: MicroRim rBase 5000
+Name of Executable: RB5000.EXE
+Name of PIF File Created: RB5000.PIF
+Optional Parameters: None
+Minimum Memory Required: 400
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 4
+
+Description: MicroRim rBase Clout
+Name of Executable: CLOUT.EXE
+Name of PIF File Created: CLOUT.PIF
+Optional Parameters: None
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 4
+
+Description: Microsoft Advanced Basic
+Name of Executable: BASICA.EXE
+Name of PIF File Created: BASICA.PIF
+Optional Parameters: None
+Minimum Memory Required: 80
+Uses Graphics: Yes
+Uses COM Ports: Yes
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Basic
+Name of Executable: BASIC.COM
+Name of PIF File Created: BASIC.PIF
+Optional Parameters: None
+Minimum Memory Required: 64
+Uses Graphics: Yes
+Uses COM Ports: Yes
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Bookshelf
+Name of Executable: BOOKS.EXE
+Name of PIF File Created: BOOKS.PIF
+Optional Parameters: None
+Minimum Memory Required: 128
+Uses Graphics: Yes
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft C Compiler
+Name of Executable: CL.EXE
+Name of PIF File Created: CL.PIF
+Optional Parameters: ?
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Chart
+Name of Executable: CHART.COM
+Name of PIF File Created: CHART.PIF
+Optional Parameters: None
+Minimum Memory Required: 256
+Uses Graphics: Yes
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Macro Assembler
+Name of Executable: MASM.EXE
+Name of PIF File Created: MASM.PIF
+Optional Parameters: N/A
+Minimum Memory Required: 182
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Multiplan
+Name of Executable: MP.EXE
+Name of PIF File Created: MP.PIF
+Optional Parameters: None
+Minimum Memory Required: 208
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 3
+
+Description: Microsoft Multiplan
+Name of Executable: MP.COM
+Name of PIF File Created: MP.PIF
+Optional Parameters: None
+Minimum Memory Required: 208
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 3
+
+Description: Microsoft Pascal Compiler
+Name of Executable: PL.EXE
+Name of PIF File Created: PL.PIF
+Optional Parameters: N/A
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Project
+Name of Executable: PROJ.COM
+Name of PIF File Created: PROJ.PIF
+Optional Parameters: None
+Minimum Memory Required: 256
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Quick C
+Name of Executable: QC.EXE
+Name of PIF File Created: QC.PIF
+Optional Parameters: None
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Quick Pascal
+Name of Executable: QP.EXE
+Name of PIF File Created: QP.PIF
+Optional Parameters: None
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft QuickBASIC
+Name of Executable: QB.EXE
+Name of PIF File Created: QB.PIF
+Optional Parameters: None
+Minimum Memory Required: 450
+Uses Graphics: Yes
+Uses COM Ports: No
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Spell
+Name of Executable: SPELL.COM
+Name of PIF File Created: SPELL.PIF
+Optional Parameters: None
+Minimum Memory Required: 64
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: Microsoft Word
+Name of Executable: WORD.COM
+Name of PIF File Created: WORD.PIF
+Optional Parameters: None
+Minimum Memory Required: 256
+Uses Graphics: Yes
+Uses COM Ports: No
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 2
+
+Description: Microsoft Word
+Name of Executable: WORD.EXE
+Name of PIF File Created: WORD5.PIF
+Optional Parameters: None
+Minimum Memory Required: 384
+Uses Graphics: Yes
+Uses COM Ports: No
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 2
+
+Description: Microsoft Works
+Name of Executable: WORKS.EXE
+Name of PIF File Created: WORKS.PIF
+Optional Parameters: None
+Minimum Memory Required: 384
+Uses Graphics: Yes
+Uses COM Ports: Yes
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Description: MultiMate
+Name of Executable: MM.EXE
+Name of PIF File Created: MM.PIF
+Optional Parameters: None
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: Yes
+Runs in the Background: No
+Program Manager Icon Index: 2
+
+Description: Norton Advanced Utilities
+Name of Executable: NI.EXE
+Name of PIF File Created: NI.PIF
+Optional Parameters: None
+Minimum Memory Required: 128
+Uses Graphics: No
+Uses COM Ports: No
+Allow Fast Paste: No
+Runs in the Background: No
+Program Manager Icon Index: 6
+
+Additional query words: 3.00 win30 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q172891  08-SEP-1999  [msnetwork]
+TITLE   :Modem Disconnects from MSN After Idle for 20 Minutes
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are connected to MSN, The Microsoft Network, your modem may disconnect
+after 20 minutes if there has been no activity.
+
+CAUSE
+=====
+
+This behavior can occur if the MSN connection settings are configured to
+disconnect a call when the connection is idle for more than 20 minutes.
+
+RESOLUTION
+==========
+
+You can change the connection setting so your connection does not terminate. To
+do so, follow these steps:
+
+1. Disconnect from MSN.
+
+2. Right-click the MSN icon on the desktop, and then click Connection Settings.
+
+3. On the Options tab, click the Disconnect if idle for more than 20 minutes
+   check box to clear it.
+
+4. Click OK.
+
+MORE INFORMATION
+================
+
+You can set the number of minutes of idle time after which the modem
+disconnects; 20 minutes is the default value set during MSN Setup.
+
+Note: If you leave your connection open for long periods without any activity you
+will be disconnected. The connection servers now monitor connections for
+"inactivity", this is to insure that all customers have an equal chance to
+connect to the servers.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbenv kbmsn 
+Technology        : kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

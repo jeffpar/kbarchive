@@ -1,0 +1,64 @@
+DOCUMENT:Q203077  17-DEC-2000  [win95x]
+TITLE   :BUG: Duplicating Sockets Is Invalid Over IPX/SPX in Windows 9x
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95,98
+OPER/SYS:
+KEYWORDS:kbOSWin95 kbOSWin98 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using DuplicateHandle() for shared sockets over SPX in Windows 9x, subsequent
+socket operations on the duplicated socket operations on the duplicated socket
+always fail. WSAGetLastError() reports error WSANOTSOCK.
+
+NOTE: This is reproducible in both Windows 95 and Windows 98.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+For additional information, please click the article number(s) below to view the
+article(s) in the Microsoft Knowledge Base:
+
+   Q156319 BUG: Inherited Socket Becomes Invalid If Parent Exits on Win95
+
+   Q150523 BUG: Socket Inheritance in Windows 95 and Windows NT 3.51
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin95 kbOSWin98 kbDSupport 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95,98
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

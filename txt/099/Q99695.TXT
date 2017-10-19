@@ -1,0 +1,72 @@
+DOCUMENT:Q99695  05-NOV-1999  [pcmail]
+TITLE   :PC Win: Spell Checker Changes Words Without Prompt
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2; :3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+ - Microsoft Mail for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail for Windows spell checker uses a custom dictionary file. If
+words are added through the user interface while another word is in the
+Suggested field, the spell checker may appear to be changing words without
+prompting the user for confirmation.
+
+
+CAUSE
+=====
+
+The custom dictionary is a text file and by default is named CUSTOM.DIC. The
+file consists of special or unique words that were not found by the spell check
+process in the main dictionary. The user may choose to add these words to the
+custom dictionary file. The added words are arranged within the custom
+dictionary file one word per line.
+
+If words are added with another word in the Suggested field, the original word
+may be replaced with the suggested word. The result would be two words per line
+within the custom dictionary file. If this happens, the spell checker will
+replace the first word on the line with the second word and will not prompt the
+user. For example, suppose the CUSTOM.DIC file contains the following entry:
+
+   manman madman
+
+Any time the spell checker encounters the first entry "manman," it would be
+changed to "madman" without prompting the user for confirmation.
+
+RESOLUTION
+==========
+
+To correct the problem, use a text editor to edit the custom dictionary and
+remove the second word on the line.
+
+Additional query words: 3.00 3.00b 3.20 spellchecker replaces check spelling always suggest bad words windows nt
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMail350NT kbMailPCN320 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:3.0,3.0b,3.2; :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

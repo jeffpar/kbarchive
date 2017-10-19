@@ -1,0 +1,63 @@
+DOCUMENT:Q172110  25-FEB-1999  [winnt]
+TITLE   :Cannot Install Windows NT Workstation from ZAK Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Windows NT Workstation 4.0 from a Zero
+Administration Kit (ZAK) Server, the following error message may be displayed
+when the GUI portion of Setup starts:
+
+   Windows NT Setup
+
+   No previous version of Windows NT could be found on your computer. Setup is
+   unable to verify that you qualify to use this upgrade product.
+
+   Press F3 to exit
+
+CAUSE
+=====
+
+When you configured the ZAK Server distribution point, you used the upgrade
+version of Windows NT Workstation.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the full retail version of Windows NT Workstation 4.0
+when you create the distribution point for Windows NT Workstation on your ZAK
+Server.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

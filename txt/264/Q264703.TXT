@@ -1,0 +1,58 @@
+DOCUMENT:Q264703  20-OCT-2000  [sms]
+TITLE   :SMS:Queries Missing During Collection Creation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Systems Management Server (SMS) 2.0, if you want to create a new
+collection based on a query membership rule, you can use the Browse button in
+the Query Rule Properties window to import available queries. However, not all
+queries listed under the queries object in the SMS administrator console are
+displayed in the Browse Query window.
+
+MORE INFORMATION
+================
+
+This behavior occurs because the Browse Query window only displays queries based
+on the resource class or object type (for example, System Resource, User Group
+Resource or User Resource).
+
+In addition, queries that contain prompted value statements are not displayed as
+a collection. This kind of query would prompt the user for input at every
+collection update interval.
+
+
+Additional query words: prodsms disappear
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

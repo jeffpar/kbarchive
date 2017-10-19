@@ -1,0 +1,80 @@
+DOCUMENT:Q181953  04-MAR-2002  [exchange]
+TITLE   :Sending RTF with Attachment as MIME Loses Attachment
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a message with a MIME attachment from an Exchange client and have
+configured an Internet recipient to "Always send to this recipient as RTF", and
+that recipient uses a POP3 client, the recipient will not receive the
+attachment.
+
+CAUSE
+=====
+
+The MIME-encoded attachment is still present but is not accessible by the POP3
+client (depending on the receiving client). This problem only happens when
+sending an attachment as MIME.
+
+WORKAROUND
+==========
+
+There are two ways to work around this problem:
+
+1. Disable the option "Always send to this recipient as RTF" when sending an
+   attachment to an Internet recipient using a POP3 client.
+
+2. Do not include an attachment in an RTF message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server 5.5.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Most POP3 clients do not understand Rich Text Format (RTF) used by Microsoft
+transport-neutral encapsulation format (TNEF). Consequently, the sender must
+turn off the option "Always send to this recipient as RTF", in order for the
+POP3 client to see the attachments.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,55 @@
+DOCUMENT:Q130072  17-DEC-2000  [win95x]
+TITLE   :Net Watcher Shows Users Without Access Rights as Connected
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Net Watcher shows all users who browse a Windows 95 computer as being connected
+to all user-level-security shared folders, even if those users have not been
+given access rights to any of the shared folders.
+
+Note that this behavior occurs only if the Windows 95 computer has been
+configured to use File and Print Sharing for NetWare Networks.
+
+MORE INFORMATION
+================
+
+File and Print Sharing for NetWare Networks (NWSERVER) does not understand the
+client's drive mappings and there is no NetWare Core Protocol (NCP) that can
+obtain the list of directory handles for a random session. Also, even if an NCP
+method existed, users can open a directory handle on an NCP share on which they
+do not have any rights (although they cannot view the contents of the share).
+Net Watcher shows these users as being connected to shares to which they have no
+access rights.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

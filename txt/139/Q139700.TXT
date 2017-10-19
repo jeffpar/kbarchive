@@ -1,0 +1,79 @@
+DOCUMENT:Q139700  18-NOV-1999  [pcmail]
+TITLE   :X400: Abbreviations for Recommendation X.410
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists some of the acronyms that are seen when you view the
+X400MMDD.LOG file, where mmdd represents the month (mm) and the day (dd) the log
+was written when debug (-LD) was enabled.
+
+MORE INFORMATION
+================
+
+The following abbreviations are used in Recommendation X.410.
+
+   AE             Application Entity
+   APDU           Application protocol data unit
+   IA5            International Alphabet No. 5
+   IPM            Interpersonal messaging
+   MHS            Message handling system
+   MT             Message transfer
+   MTA            Message transfer agent
+   MTAE           Message transfer agent entity
+   NSDU           Network service data unit
+   OPDU           Operation protocol data unit
+   P1             Message transfer protocol
+   P3             Submission and delivery protocol
+   RTS            Reliable transfer server
+   SPDU           Session protocol data unit
+   SSAP           Session service access point
+   SSDU           Session service data unit
+   TPDU           Transport protocol data unit
+   TSAP           Transport service access point
+   TSDU           Transport service data unit
+   UTC            Coordinated universal time
+
+The above information was extracted from The International Telegraph and
+Telephone Consultative Committee (CCITT), Recommendation X.410 (Red Book), Annex
+A, page 121. Refer to Recommendation X.410 for a more in-depth definition.
+
+For a description of the X400MMDD.LOG, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q86988 X400: How MTAs Initiate and Communicate
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400300 kbMailGatex400320
+Version           : MS-DOS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

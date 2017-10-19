@@ -1,0 +1,69 @@
+DOCUMENT:Q90482  07-OCT-1999  [win3x]
+TITLE   :Password Cache Not Used with UNC File Access
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows for Workgroups allows files to be accessed by using a Universal Naming
+Connection (UNC). When you access a file using this method, the Windows for
+Workgroups password cache file is not used.
+
+For example:
+
+1. You connected to \\SERVER\SHARE, and provided a password. The password is
+   stored in your password cache file.
+
+2. You reconnect to \\SERVER\SHARE and the password is provided by the password
+   cache file. You are not prompted to enter a password.
+
+3. In the Microsoft Write File Open dialog box, you open the file README.TXT on
+   that server by typing
+
+   \\server\share\readme.txt
+
+   where "server" is your server, and "share" is your share.
+
+   This causes Windows for Workgroups to prompt you for a password even though it
+   is in the password cache file.
+
+MORE INFORMATION
+================
+
+This behavior is caused by Windows use of MS-DOS file management. Due to the
+nonreentrant nature of MS-DOS, Windows for Workgroups is unable to open the
+password cache file because it is in the process of opening the file specified
+in the UNC.
+
+Additional query words: 3.10 name naming 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

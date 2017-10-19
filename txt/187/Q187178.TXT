@@ -1,0 +1,79 @@
+DOCUMENT:Q187178  11-DEC-2001  [winnt]
+TITLE   :Mouse Pointer Location Undetected by RDP Client
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ 
+
+MORE INFORMATION
+================
+
+This is not an accessibility feature. It is a feature added by Intellipoint
+Mouse support. To see the behavior, you must have Intellipoint Mouse support
+enabled on the Server, but not on the Client. The Terminal Server client sends
+keystrokes to the Server because the Client is the active application.
+Intellipoint intercepts the CTRL sequence and draws the rings where it thinks
+the cursor is located. The cursor is at the edge of the window, because that is
+where it is clipped to by the Server.
+
+SYMPTOMS
+========
+
+When a Terminal Server client window is in focus and the user moves the mouse
+pointer out of the window, the client does not register that the mouse location
+is out of range. Instead, it behaves as though the mouse is still in the client
+window.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+RESOLUTION
+==========
+
+To work around the problem, the user may either:
+
+ - Install Intellipoint Mouse support on the Client, and deconfigure it from the
+   Server.
+
+-or-
+
+ - Remove Intellipoint Mouse support from the Server.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

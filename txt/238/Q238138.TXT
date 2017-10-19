@@ -1,0 +1,63 @@
+DOCUMENT:Q238138  26-SEP-2001  [frontpg]
+TITLE   :FP97: Importing Files from Unix Server Will Not Import All Files
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q200804.
+
+For a Microsoft FrontPage 98 version of this article, see Q238139.
+
+SYMPTOMS
+========
+
+If you import files with the same name but with different case from a Unix
+server into a Windows-based server, hyperlinks to at least one of the files will
+break.
+
+CAUSE
+=====
+
+Unix operating systems are case sensitive. For example, files called
+"mypage.htm" and "Mypage.htm" are recognized as different files on the Unix
+operating system. Because Windows-based operating systems are not case
+sensitive, these two files are recognized as being the same file.
+
+RESOLUTION
+==========
+
+Save the file with lowercase letters from a Web browser. Change the name of the
+file, and then import it into FrontPage.
+
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,75 @@
+DOCUMENT:Q222522  06-AUG-2002  [winnt]
+TITLE   :Unable to View Modem Sharing Port in Ports Tool
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to view the "Modem Sharing" port in the Ports tool in Control Panel
+on your Small Business Server-based computer, "Modem Sharing" may be missing
+from the list of available ports.
+
+CAUSE
+=====
+
+This issue can occur after you apply Microsoft Windows NT 4.0 Service Pack 4 to
+your Small Business Server-based computer. When you do so, the Ports.cpl file is
+replaced, and this removes the "Modem Sharing" port from the Ports tool.
+
+RESOLUTION
+==========
+
+To work around this issue, view the modem sharing port with the "netmodem"
+command:
+
+1. Click Start, point to Programs, and then click Command Prompt.
+
+2. At the command prompt, type "netmodem view <Small Business Server
+   name>" (without the quotation marks) and then press ENTER, where <Small
+   Business Server name> is the name of the computer with shared modems.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft BackOffice Small
+Business Server.
+
+MORE INFORMATION
+================
+
+In BackOffice Small Business Server versions 4.0a and earlier, modem sharing is
+listed as an available port in the Ports tool.
+
+Additional query words: smallbiz bof
+
+======================================================================
+Keywords          : kbnetwork kbtool kbui 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

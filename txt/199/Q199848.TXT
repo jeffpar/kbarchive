@@ -1,0 +1,214 @@
+DOCUMENT:Q199848  19-APR-2001  [foxpro]
+TITLE   :BUG: Fatal Error When Releasing a Converted FoxPro 2.x Form
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbContainer kbCtrl kbvfp300bBUG kbvfp300BUG kbvfp500aBUG kbvfp500bug kbvfp600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro terminates when you release a converted FoxPro 2.x form. Depending
+on the version of Visual FoxPro, one of the following error messages appear:
+
+Visual FoxPro 6.0 displays the following message:
+
+    Fatal Error: Exception Code=C0000005
+
+Visual FoxPro 3.x and Visual FoxPro 5.x, display a message box captioned "VFP.EXE
+APPLICATION ERROR" that contains a message similar to the following:
+
+   The instruction at "0x0046ae8e" referenced memory at "0x00000020".
+   The memory count not be "read".<BR/>
+
+-or-
+
+Visual FoxPro 3.0 and Visual FoxPro 5.0x produce this error:
+
+   VFP caused an invalid page fault in module VFP.EXE at 0137:0045e07a.
+
+-or-
+
+Visual FoxPro hangs and does not close. The Visual FoxPro session or the
+executable created with Visual FoxPro then terminates.
+
+CAUSE
+=====
+
+This behavior may occur in forms that have been functionally converted from
+screens created using FoxPro 2.x and an attempt is made to release the converted
+formset from memory while an @ ... GET statement is active.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+With earlier versions of FoxPro, there are some conditions in which a developer
+may have found it desirable to include @ ... GET statements in the ERROR,
+MESSAGE, VALID, or WHEN clause of certain controls.
+
+When screens created with FoxPro 2.x are functionally converted to Visual FoxPro
+forms, @ ... GET statements, used to generate a FoxPro 2.x screen, are converted
+to a corresponding Visual FoxPro control. Likewise, any code contained in any of
+the clauses of the control is copied to a corresponding Visual FoxPro form
+method. If the ERROR, MESSAGE, VALID, or WHEN clause of a FoxPro 2.x screen
+contains an @ ... GET statement, then the @ ... GET statement is copied into the
+Visual FoxPro as code and is not treated as a form control.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Using FoxPro 2.6 create a quick screen named ztest.
+
+2. Add the following code to the screen SETUP:
+
+      STORE "This is a test" to test_var
+
+3. Add a Get field to the screen.
+
+4. In the Valid Clause of the Get field, add the following code:
+
+      @ 1, 15 GET test_var
+
+5. Add a push button to the screen. Set the variable to "test", and then set it
+   to Terminate Read.
+
+6. Save the form.
+
+7. From Visual FoxPro, modify the form and select functional conversion.
+
+8. In the Command window type:
+
+      DO ZTEST.SPR
+
+9. Click the command button.
+
+The following Visual FoxPro code illustrates the error that occurs.
+
+NOTE: The memory error may not occur under Visual FoxPro 3.0x when running the
+.spr file created in the conversion process. However, Visual FoxPro 5.0x and 6.0
+do produce the problem.
+
+WARNING: To minimize the risk of corruption associated with abnormal program
+termination, it is recommended that any open databases and tables be closed
+before running the following code.
+
+1. Create a program called "Showtest.prg" using the following code:
+
+      *!* Begin Code
+      DO TEST
+      RELEASE ox
+
+      PROCEDURE TEST
+      PUBLIC ox
+      ox=CREATEOBJECT('testset')
+      ox.SHOW
+
+      DEFINE CLASS testset AS FORMSET
+            AUTORELEASE =.t.
+            WINDOWTYPE  = 2
+
+         ADD OBJECT form1 AS test1 WITH ;
+            TOP    = 0, ;
+            LEFT   = 0, ;
+            HEIGHT = 250, ;
+            WIDTH  = 375
+      ENDDEFINE
+
+      DEFINE CLASS test1 AS FORM
+         DOCREATE = .T.
+         CAPTION  = "Form1"
+         NAME     = "Form1"
+
+         PROCEDURE activate
+            m.cust_id="this is a test"
+            @ 10,1 GET m.cust_id ;
+               SIZE 1, 25
+         ENDPROC
+
+         ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+            TOP = 192, ;
+            LEFT = 48, ;
+            HEIGHT = 25, ;
+            WIDTH = 241, ;
+            CAPTION = "E\<xit", ;
+            TERMINATEREAD=.t., ;
+            NAME = "Command1"
+
+         PROCEDURE command1.CLICK
+            RELEASE THISFORM
+         ENDPROC
+      ENDDEFINE
+      *!* End Code
+
+2. At the command prompt type:
+
+      DO SHOWTEST
+
+3. Click the command button labeled "Exit"
+
+4. Depending on the version of Visual FoxPro, one of the following occurs:
+   Visual FoxPro 6.0 displays the following message:
+
+      Fatal Error: Exception Code=C0000005
+
+   Visual FoxPro 3.x and Visual FoxPro 5.x, display a message box captioned
+   "VFP.EXE APPLICATION ERROR" that has a message similar to the following:
+
+     The instruction at <memory address> referenced memory at <memory address>.
+
+     The memory count not be "read".
+
+   -or-
+
+   Visual FoxPro 3.0 and Visual FoxPro 5.0x produce this error:
+
+      VFP caused an invalid page fault in  module VFP.EXE at <memory address>.
+
+   -or-
+
+   Visual FoxPro hangs and does not close.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by John R.
+Desch, Microsoft Corporation.
+
+
+Additional query words: kbDSupport kbDSE
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp300bBUG kbvfp300BUG kbvfp500aBUG kbvfp500bug kbvfp600bug 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

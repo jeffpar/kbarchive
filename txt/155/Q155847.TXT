@@ -1,0 +1,71 @@
+DOCUMENT:Q155847  14-DEC-1999  [foxpro]
+TITLE   :HOWTO: Activate a System Menu Item in Visual FoxPro 5.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbBuilder kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SYS(1500) function allows you to gain access and activate a specific system
+menu item. However, the SYS(1500) function does not work with user defined menu
+items.
+
+MORE INFORMATION
+================
+
+The SYS(1500) function allows you to call the functionality of system menu
+options from within your programs. Unfortunately, if the specific menus are not
+active or if SYSMENU is OFF, SYS(1500) does not work.
+
+The following example uses SYS(1500) to paste a command into a program file.
+Place the following code into a program file:
+
+   _CLIPTEXT = "MESSAGEBOX([ASCII 145]TEST[ASCII 146])" && Command to paste
+   MODIFY COMMAND myprog NOWAIT  && Open a program file
+   =SYS(1500, '_MED_PASTE', '_MEDIT')  && Paste menu item
+
+Compile the program file and execute the .fxp file. The program creates a file
+called Myprog that contains "MESSAGEBOX('TEST')."
+
+REFERENCES
+==========
+
+Visual FoxPro 5.0 Help file; search on "SYS(2013)" (without the quotation
+marks). The SYS(2013) topic displays each system menu bar, its title, and the
+items it contains.
+
+Visual FoxPro 5.0 Help file; search on "SYS(1500)" (without the quotation marks)
+and click "System Menu Names."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbBuilder kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,76 @@
+DOCUMENT:Q194574  14-AUG-1999  [foxpro]
+TITLE   :PRB: SET HELP TO Causes "File Does Not Exist" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.6,2.6a; WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, versions 2.6, 2.6a 
+ - Microsoft FoxPro for MS-DOS, versions 2.6, 2.6a 
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When issuing a SET HELP TO command in FoxPro, the following error occurs:
+
+   "File does not exist."
+
+CAUSE
+=====
+
+The Foxhelp.hlp (when using Foxpro 2.x, 3.0 or 5.0) or Foxhelp.chm (using Visual
+FoxPro 6.0) file is missing or damaged.
+
+RESOLUTION
+==========
+
+ - Copy the Foxhelp.dbf or Foxhelp.hlp from the diskettes if using FoxPro 2.x.
+
+ - Copy the Foxhelp.hlp from the CD if using Visual FoxPro 3.0 or 5.0.
+
+ - Install the MSDN - Visual Studio 6.0 CD if using Visual FoxPro 6.0 so the
+   Foxhelp.chm file and other necessary files will be installed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Issue the SET HELP TO command into the Command window of an installation of
+FoxPro that does not have the Foxhelp file installed.
+
+Additional query words: kbVFP600 kbvfp300b kbvfp500a
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MS-DOS:2.6,2.6a; WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

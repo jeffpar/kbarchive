@@ -1,0 +1,70 @@
+DOCUMENT:Q148736  13-JUN-2001  [sna]
+TITLE   :SNA EIS Guide:Open(SSCP)Error 0x1009, 0x100B Not Documented
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Section 5.2.1 of the SNA Server 3270 Emulator Interface Specification (EIS)
+lists Open(SSCP) errors that SNA Server may return to an emulator when it opens
+a 3270 session. However, the following Error Code 1 errors are not listed in
+this section:
+
+   X'1009': The local link service for the connection is active but the
+   connection itself is not active. The 3270 emulator should report to the user
+   that the connection is not active, or try reposting a new Open(SSCP) request.
+
+
+   X'100B': The connection is in the process of activating as the result of
+   another Open(SSCP) client request, manual administrator activation, or
+   automatic recovery from a previous connection failure. The 3270 emulator
+   should report to the user that the connection is activating, and try
+   reposting a new Open(SSCP) request.
+
+
+CAUSE
+=====
+
+These errors were inadvertently omitted from the SNA Server 3270 EIS manual.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server. A future
+update to the SNA Server Emulator Interface Specification will correct this
+problem.
+
+Additional query words: prodsna 2.00 2.10 2.11 SP1
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

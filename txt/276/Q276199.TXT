@@ -1,0 +1,104 @@
+DOCUMENT:Q276199  13-JUN-2001  [sna]
+TITLE   :SNA Manager (Snaexp.exe) Trapping in CSnaOleObj::CreateObject
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fixkbb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you open a large pool of logical units (LUs) in SNA Server Manager, one of
+the following traps may result:
+
+   function: CTN3270AddressItem::`RTTI Complete Object Locator'
+   FAULT ->677048b0 0000             add     [eax],al                     ds:677026e4=ac
+           677048b2 0000             add     [eax],al                     ds:677026e4=ac
+           677048b4 0400             add     al,0x0
+           677048b6 0000             add     [eax],al                     ds:677026e4=ac
+           677048b8 0000             add     [eax],al                     ds:677026e4=ac
+           677048ba 0000             add     [eax],al                     ds:677026e4=ac
+           677048bc e8f67267f8       call    5fd7bbb7
+           677048c1 48               dec     eax
+           677048c2 7067         jo CTN5250AddressItem::`RTTI Complete Object Locator'+0xb (6770492b)
+           677048c4 0000             add     [eax],al                     ds:677026e4=ac
+           677048c6 0000             add     [eax],al                     ds:677026e4=ac
+
+   function: CSnaOleObj::CreateObject
+           01012fb1 8b43e4           mov     eax,[ebx-0x1c]         ds:0117f8de=????????
+           01012fb4 8b0cb0           mov     ecx,[eax+esi*4]        ds:0000000a=????????
+           01012fb7 8b4120           mov     eax,[ecx+0x20]         ds:0117f1c6=????????
+           01012fba 85c0             test    eax,eax
+           01012fbc 0f84e5000000     je      CSnaOleObj::CreateObject+0x157 (010130a7)
+           01012fc2 8b7c243c         mov     edi,[esp+0x3c]         ss:00f8e05b=????????
+           01012fc6 8d442410         lea     eax,[esp+0x10]         ss:00f8e05b=????????
+           01012fca 50               push    eax
+           01012fcb 57               push    edi
+           01012fcc 8b17             mov     edx,[edi]              ds:670438dc=0000000c
+   FAULT ->01012fce ff5240           call    dword ptr [edx+0x40]   ds:00f1ea12=????????
+           01012fd1 85c0             test    eax,eax
+           01012fd3 8d73d8           lea     esi,[ebx-0x28]         ds:0117f8de=????????
+           01012fd6 7c1c             jl      CSnaOleObj::CreateObject+0xa4 (01012ff4)
+           01012fd8 8b4c2410         mov     ecx,[esp+0x10]         ss:00f8e05b=????????
+           01012fdc 6a01             push    0x1
+           01012fde 51               push    ecx
+           01012fdf 8bce             mov     ecx,esi
+           01012fe1 e88af2ffff       call    CSnaOleObj::GetObjFromInterface (01012270)
+           01012fe6 8be8             mov     ebp,eax
+           01012fe8 8b442410         mov     eax,[esp+0x10]         ss:00f8e05b=????????
+           01012fec 50               push    eax
+
+At other times, SNA Manager may not cause a Dr. Watson error, but may appear to
+stop responding (hang), or the SNA services may appear to go offline and then
+recover (in the SNA Manager view--the services do not actually shut down).
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+4.0.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+Additional query words: sp1 sp2 sp3
+
+======================================================================
+Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

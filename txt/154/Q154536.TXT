@@ -1,0 +1,59 @@
+DOCUMENT:Q154536  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Control "Permission Required" Behavior
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbtshoot kbusage smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In Systems Management Server versions 1.0 and 1.1, a client only asks you once
+if you will permit the console to connect. This is true for each Helpdesk option
+(that is, Viewing, Reboot, and so forth).
+
+In Systems Management Server version 1.2, each time the server attempts to
+connect to a client, you are prompted to allow the console to connect.
+
+MORE INFORMATION
+================
+
+In Systems Management Server versions 1.0 and 1.1, if the Remote Control Options
+on a client are set to Permission Required, and permission is granted once,
+subsequent attempts to remotely control the computer do not require permission
+until Windows is exited and restarted.
+
+The design was changed in Systems Management Server 1.2. When the Permission
+Required option is enabled, every attempt to initiate a Remote Control session
+generates a prompt asking if you want to allow Remote Control.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtshoot kbusage smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

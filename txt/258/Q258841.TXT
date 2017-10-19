@@ -1,0 +1,99 @@
+DOCUMENT:Q258841  10-NOV-2000  [foxpro]
+TITLE   :KybdStck.exe Manipulates the Keyboard Layout Stack from VFP
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbSample kbAPI kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+KybdStck.exe is a sample that demonstrates how to use API functions to navigate
+through the Keyboard Layout Stack that is used for multi-language support.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   KybdStck.exe
+   (http://download.microsoft.com/download/vfox60/sample/60/w9x2k/en-us/kybdstck.exe)
+
+Release Date: Apr-12-2000
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+CAUTION: You must have multi-language support enabled to run this sample form
+effectively. For more information on enabling multi-language support, please see
+the "References" section.
+
+After downloading and unzipping KybdStck.exe to a temporary directory, run the
+form KybdStck. The list box is populated with any loaded Keyboard Layouts.
+Clicking on a language sets the keyboard layout to that language. Clicking on
+the button at the bottom of the form displays the currently selected layout.
+
+This form demonstrates the following points:
+
+ - The Init event of the list box uses the GetKeyboardLayoutList function to get
+   the number of Keyboard Layouts loaded. It also uses the GetKeyboardLayoutName
+   and ActivateKeyboardLayout functions to generate a list of the loaded
+   layouts.
+
+ - The click event of the command button uses the GetKeyboardLayoutName function
+   to get the name of the currently loaded layout.
+
+ - The click event of the list box uses the ActivateKeyboardLayout function to
+   set the layout to the selected language.
+
+REFERENCES
+==========
+
+The table Langlist.dbf is used as a lookup for the keyboard layout descriptions.
+This list was obtained from the July 99 edition of the MSDN Library and can be
+found under the index listing of the LoadKeyboardLayout function and then
+following the link for Language Identifiers.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q141306 How to Enable Support for Multiple Languages in Windows
+
+Additional query words: kybdstck
+
+======================================================================
+Keywords          : kbfile kbSample kbAPI kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

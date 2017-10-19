@@ -1,0 +1,62 @@
+DOCUMENT:Q84512  06-DEC-1999  [win95x]
+TITLE   :HP LaserJet IIIP and IIID Settings Not Saved
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The value in the Memory list box and all other settings isn't saved for
+Hewlett-Packard (HP) LaserJet IIIP or IIID printers under Microsoft Windows
+version 3.1 if the port selected is either LPT1x.OS2, LPTx.DOS, LPTx.PRN,
+COMx.OS2, COMx.DOS, COMx.PRN, or any port name with an extension.
+
+WORKAROUND
+==========
+
+To work around this problem, connect the printer to a port without an extension,
+such as LPT1 or COM1, and then clear the Fast Printing Direct To Port check box.
+Selecting this check box has the same result as printing to a port with an
+extension such as LPT1.DOS -- Windows prints through MS-DOS instead of printing
+directly to the port through the BIOS.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the HP LaserJet III driver that
+ships with Windows version 3.1. We are researching this problem and will post
+new information here as it becomes available.
+
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

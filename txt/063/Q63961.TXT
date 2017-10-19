@@ -1,0 +1,63 @@
+DOCUMENT:Q63961  01-NOV-1999  [win95x]
+TITLE   :Exaggerated Mouse Tracking With Logitech 9 on Toshiba
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Logitech Series 9 Mouse is compatible with Microsoft Windows version 3.0.
+However, if you use a Toshiba T-1600 you need to adjust the mouse- scaling speed
+after you install Windows. If you don't adjust the speed, your mouse cursor may
+move off the screen after the slightest movement of the mouse.
+
+MORE INFORMATION
+================
+
+To set the mouse-scaling speed to the minimum in the Control Panel, follow these
+steps:
+
+1. From the Program Manager, choose the Main group.
+
+2. Choose Control Panel, then Mouse.
+
+3. Drag the scaling speed bar to the far left (minimum).
+
+This stabilizes the mouse arrow display, reduces the speed, and eliminate the
+loss of the arrow off the screen.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

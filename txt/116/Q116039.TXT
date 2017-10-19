@@ -1,0 +1,84 @@
+DOCUMENT:Q116039  03-AUG-2000  [foxpro]
+TITLE   :Results of Double-Clicking FoxPro Files in Finder
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Double-clicking most types of FoxPro files in the Macintosh Finder causes FoxPro
+to open and/or run that file.
+
+Below is a list of FoxPro files and extensions (the three letters following the
+period in a file's name) and FoxPro's response when each file type is
+double-clicked.
+
+MORE INFORMATION
+================
+
+   File extension               FoxPro's action
+   -------------------------------------------------------------
+
+   .APP, .PRG, .FXP, .MPR,      Attempts to run the program or
+   .MPX, .SPR, .SPX             application
+
+   .DBF, .FPT, .QPR, .QPX       Opens the Browse window
+
+   .SCX, .SCT                   Opens the Screen Design window. If you are
+                                running Visual FoxPro for Macintosh and the
+                                .SCX was created in previous versions of
+                                FoxPro, the conversion utility starts.
+
+   .FRX, .FRT                   Opens the Report Layout window. If you are
+                                running Visual FoxPro for Macintosh and the
+                                .SCX was created in previous versions of
+                                FoxPro, the conversion utility starts.
+
+   .LBX, .LBT                   Opens the Label Layout window
+
+   .MNX, .MNT                   Opens the Menu Design window
+
+   .PJX, .PJT                   Open the Project window
+
+   .TXT, .BAK, and other        Opens a window for modifying the file
+   text files
+
+   FOXUSER.DBF, FOXUSER.FPT     Uses the resource settings for this
+                                file, in addition to opening a Browse
+                                window for it
+
+   CONFIG.FPM                   Uses the configuration settings for
+                                this file
+
+Additional query words: vFoxMac FoxMac double clicking mouse kinds akz
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

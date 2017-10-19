@@ -1,0 +1,75 @@
+DOCUMENT:Q159269  24-MAR-2000  [foxpro]
+TITLE   :FIX: Label Caption Longer Than 255 Characters Causes GPF
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbvfp600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro 5.0 causes a General Protection Fault (GPF) when the caption
+property of a Label is set more than 255 characters.
+
+WORKAROUND
+==========
+
+Set the caption property of a Label to something less than 255 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This behavior happens only in Visual FoxPro 5.0; it works as expected in Visual
+FoxPro 3.0 or 3.0b.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Form and place a Label on it.
+
+2. In the INIT method of the form, put in the following code:
+
+         ThisForm.Label1.Caption = Replicate("X",256)
+
+3. Save and run the form.
+
+NOTE: Visual FoxPro terminates immediately when the form runs. (Generally the
+fault is an "Invalid Page Fault.")
+
+Additional query words: kbdse vfoxwin
+
+======================================================================
+Keywords          : kbvfp600fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

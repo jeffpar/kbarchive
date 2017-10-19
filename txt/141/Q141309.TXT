@@ -1,0 +1,57 @@
+DOCUMENT:Q141309  18-DEC-2000  [win95x]
+TITLE   :MS Plus! Setup Cannot Display 1 GB or More Free Disk Space
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Plus! using the Custom Setup option, the Custom Setup
+dialog box does not display free disk space of 1 gigabyte (GB) or more.
+
+CAUSE
+=====
+
+Setup cannot display the gigabyte unit correctly. If a disk has 1 GB or more of
+free disk space, Setup displays only 999,999K as being available. The incorrect
+amount of free disk space displayed does not affect Setup's ability to
+successfully install Microsoft Plus!.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! version 1.0 for
+Windows 95. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

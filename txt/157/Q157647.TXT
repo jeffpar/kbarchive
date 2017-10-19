@@ -1,0 +1,56 @@
+DOCUMENT:Q157647  22-DEC-1999  [exchange]
+TITLE   :XADM: Can't Change Location of IS Log Files if IS Not Running
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to change the location of Information Store (IS) log files through
+the Microsoft Exchange Server Administrator program, the Administrator program
+shuts down the Information Store service before changing the path. If the
+Information Store service is not running, the Microsoft Exchange Server
+Administrator program tries to start the service before shutting it down. This
+is done to help ensure that the shutdown of the database is clean; this is a
+prerequisite to moving the database.
+
+If the service has stopped due to lack of disk space and you attempt to change
+the location of IS log files through the Administrator program, the
+Administrator program will return an error message stating that the service
+could not be stopped. It is actually trying to start and then stop the service.
+Use Performance Optimizer to move the IS log files. Microsoft has confirmed this
+to be a problem in Microsoft Exchange Server, version 4.0. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+Additional query words: PerfOpt logs
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

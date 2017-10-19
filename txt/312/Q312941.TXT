@@ -1,0 +1,79 @@
+DOCUMENT:Q312941  22-JAN-2002  [iis]
+TITLE   :PRB: IIS May Hang If You Enable ASP Server-Side Script Debugging
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you enable Active Server Pages (ASP) server-side script debugging in the Web
+site configuration and ASP encounters a scripting error, Internet Information
+Services (IIS) may hang, but no error messages are sent to the client browser.
+
+NOTE: This behavior may occur if you have installed the Microsoft Script Debugger
+or Microsoft Visual Interdev on a server that is running Microsoft IIS 4.0 or
+5.0 in a development environment.
+
+CAUSE
+=====
+
+This behavior occurs because you have not properly configured the default
+debugger that is in use.
+
+RESOLUTION
+==========
+
+To resolve this behavior, make the additional configurations that are outlined
+in the following article in the Microsoft Knowledge Base:
+
+   Q281427 PRB: Microsoft Script Debugger Does Not Break at Error
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+You should not enable the Enable Server-Side Script Debugging property on a
+production environment.
+
+The enabling of server-side script debugging causes ASP to run in a single
+threaded mode; therefore, one thread at a time only executes for each
+application. Even if you properly configure the Microsoft Script Debugger, this
+dramatically affects the Web server performance.
+
+Additional query words: iis 5 debugger Script pdm msscrdbg
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

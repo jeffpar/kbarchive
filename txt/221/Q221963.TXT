@@ -1,0 +1,68 @@
+DOCUMENT:Q221963  30-JUN-2000  [pcmail]
+TITLE   :PC DB: Recovering Messages in the Inqueue3 and P1 Folder
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to reset the Inqueue3.key and Inqueue3.mbg files
+without losing the messages in the P1 folder.
+
+MORE INFORMATION
+================
+
+To reset the Inqueue3.key and Inqueue3.mbg files without losing the messages in
+the P1 folder:
+
+1. Create a temporary newly defined external postoffice, and then determine the
+   hexadecimal ID of this postoffice by using the Netdump utility.
+
+2. Copy the Inqueue3.key and Inqueue3.mbg files to the hexadecimal ID of new
+   postoffice (which you determined in step 1).
+
+3. Start the Administrator program on this postoffice, and check the queue.
+   Locate the newly defined postoffice, and then return all messages in the
+   queue.
+
+4. Back up the Inqueue3.key and Inqueue3.mbg files, and then reset the
+   Inqueue3.key and Inqueue3.mbg files by using the Mailq16 utility.
+
+5. Remove all files from the P1 folder other than the Populate.msm file.
+
+6. Log back on to the Administrator program and delete the temporary postoffice.
+
+The messages are returned to the original senders and can now be resent.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN350
+Version           : WINDOWS:3.0,3.2,3.2a,3.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

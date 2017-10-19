@@ -1,0 +1,70 @@
+DOCUMENT:Q150380  05-DEC-2001  [visualc]
+TITLE   :PRB: Sizeof Constant Character Returns Different Values
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1
+OPER/SYS:
+KEYWORDS:kbCompiler kbCRT kbVC kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The sizeof('x') or sizeof(L'x') constants do not return expected results. In C,
+the return value is 4 for the sizeof character constant and 2 for the sizeof
+multicharacter constant. In C++, the return value is 1 for the sizeof character
+constant and 2 for the sizeof multicharacter constant.
+
+CAUSE
+=====
+
+The specification on this point is different for C from what it is for C++. In
+C, a character constant is of type int. In C++, a character constant is of type
+char. Multicharacter constants are implementation dependent.
+
+RESOLUTION
+==========
+
+When using C, do not use sizeof to determine the width of a character constant.
+Use sizeof("") to give the width of one character in both C and C++.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For more information, see "The Annotated C++ Reference Manual" by Margaret Ellis
+and Bjarne Stroustrup, Section 2.5.2.
+
+Additional query words: 2.00 2.10 2.20 4.00 4.10
+
+======================================================================
+Keywords          : kbCompiler kbCRT kbVC kbprb 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC32bitSearch
+Version           : :4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

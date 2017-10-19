@@ -1,0 +1,191 @@
+DOCUMENT:Q290287  06-AUG-2002  [exchange]
+TITLE   :XCCC: How to Completely Remove and Re-Install OWA
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article describes how to manually uninstall and re-install the Exchange
+Server 5.5 version of Microsoft Outlook Web Access (OWA).
+
+MORE INFORMATION
+================
+
+To manually uninstall and re-install OWA:
+
+1. Stop and disable all third-party services and programs (for example,
+   antivirus or backup software). Stop the World Wide Web Publishing service.
+
+2. If you use any customized Active Server Pages, back up your Webdata folder,
+   which contains your custom files.
+
+3. Uninstall OWA:
+
+   a. Insert the Exchange Server 5.5 CD-ROM in the CD-ROM drive, and then locate
+      the Setup.exe file in the following location:
+
+   Server\Setup\I386\Setup.exe
+
+   b. Click Install Exchange 5.5.
+
+   c. Click Add/Remove.
+
+   d. Click to clear the Outlook Web Access check box.
+
+   e. Click Yes when you are prompted about whether you want to remove one
+      previously installed component.
+
+4. Use the Internet Service Manager in Microsoft Internet Information Server
+   (IIS) version 4.0 or Microsoft Internet Information Services version 5.0 to
+   delete the Exchange virtual directory if it exists. If a virtual directory
+   named Exchange exists, right-click the Exchange virtual directory, and then
+   click Delete.
+
+5. Remove the "exchfilt" ISAPI filter from the Web site:
+
+   a. Use the Internet Service Manager to open the properties of the default Web
+      site.
+
+   b. Click the ISAPI filter page, click "exchfilt", and then click Remove.
+
+6. Rename the OWA files:
+
+   a. Locate the Winnt\System32 folder.
+
+   b. If Exchfilt.dll exists, rename it to Exchfilt.old.
+
+   c. Rename the Cdo.dll file to Cdo.old.
+
+   d. Locate the Exchsrvr\Bin folder.
+
+   e. Rename the Cdohtml.dll file to Cdohtml.old.
+
+   f. Locate the Exchsrvr folder.
+
+   g. Rename the Webdata folder to Webdata.old.
+
+   h. Rename the Webtemp folder to Webtemp.old.
+
+7. Remove the OWA registry values. To do so, you need to edit the registry.
+
+   WARNING: If you use Registry Editor incorrectly, you may cause serious
+   problems that may require you to reinstall your operating system. Microsoft
+   cannot guarantee that you can solve problems that result from using Registry
+   Editor incorrectly. Use Registry Editor at your own risk.
+
+   To remove the OWA registry values:
+
+   a. Start Registry Editor (Regedt32.exe).
+
+   b. Locate and click the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services
+
+   c. If the MSExchangeWeb key still exists, delete it.
+
+   d. Locate and click the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Exchange\Setup
+
+   e. If the Web Connector key still exists, delete it.
+
+   f. Locate and click the following key in the registry:
+
+   HKEY_CLASSES_ROOT\CLSID
+
+   g. If the {bc00f780-31ac-11d0-b5f1-00aa00bf3382} key still exists, delete it.
+
+   h. If the {bc00f781-31ac-11d0-b5f1-00aa00bf3382} key still exists, delete it.
+
+   i. If the {bc00f782-31ac-11d0-b5f1-00aa00bf3382} key still exists, delete it.
+
+   j. Locate and click the following key in the registry:
+
+   HKEY_CLASSES_ROOT\TypeLib
+
+   k. If the {BC00F700-31AC-11D0-B5F1-00AA00BF3382} key still exists, delete it.
+
+   l. Quit Registry Editor.
+
+8. Remove the Microsoft Transaction Server components (only for Microsoft
+   Windows NT 4.0):
+
+   a. In the IIS management console, locate the Microsoft Transaction Server
+      tree.
+
+   b. Expand the Computers container.
+
+   c. Expand "My computer".
+
+   d. Expand "Packages installed".
+
+   e. Expand "IIS In-Process Applications"
+
+   f. Expand Components.
+
+   g. Delete all of the occurrences of IISWAM.1_Root_Exchange.
+
+      NOTE: The IISWAM.1 changes if OWA is under another Web site. The
+      "_Root_Exchange" remains constant.
+
+9. Stop and restart the IIS Administrator service.
+
+10. Apply the service pack for your operating system again.
+
+11. Re-install OWA:
+
+   a. Insert the Exchange Server 5.5 CD-ROM in the CD-ROM drive, and then locate
+      the Setup.exe file in the following location:
+
+   Server\Setup\I386\Setup.exe
+
+   b. Choose a custom installation, and then click to select the Outlook Web
+      Access check box.
+
+      IMPORTANT: Make sure that the Microsoft Exchange Server and Microsoft
+      Exchange Administrator check boxes are selected. If these check boxes are
+      not selected, Exchange Server is removed and the information store is
+      lost.
+
+12. Apply the Exchange Server 5.5 service pack again.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

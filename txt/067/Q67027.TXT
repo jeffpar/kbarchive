@@ -1,0 +1,80 @@
+DOCUMENT:Q67027  12-NOV-1999  [win95x]
+TITLE   :Bitstream Fontware 3.0 Installation Kit Description
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a brief description of the Fontware 3.0 Installation Kit.
+
+MORE INFORMATION
+================
+
+ - The kit makes fonts for the most popular laser printers from Hewlett-Packard,
+   Apple Computer, and other vendors.
+
+ - It makes fonts for dot-matrix printers and displays (screens) for certain
+   applications/environments.
+
+ - It makes fonts for devices equipped with the Bitstream Quality Enhancement
+   Module (QEM) (Alternative PostScript PDL printers that provide Bitstream
+   "hints").
+
+ - It makes fonts in sizes ranging from 2 points to 144 points, depending on
+   your application.
+
+ - It supports most popular character sets, including ASCII, IBM PC, HP Roman 8,
+   and PostScript.
+
+ - It allows merging of several Fontware 3.0 Installation Kits. You can share
+   directories and typefaces among the applications supported by the kits. You
+   can also create fonts for multiple applications simultaneously and share
+   laser-printer fonts among them.
+
+ - It allows for easy addition and removal of support for individual devices or
+   applications.
+
+ - It creates a dated and time-stamped summary log file each time you make
+   fonts.
+
+ - It creates a dated and time-stamped error log file each time an error or
+   warning occurs when you make fonts, so that you may troubleshoot more
+   effectively.
+
+ - It Provides extensive online help.
+
+A Bitstream Fontware Installation Kit is available through a fulfillment coupon
+included with the retail version of Microsoft PowerPoint for Windows.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

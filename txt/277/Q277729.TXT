@@ -1,0 +1,144 @@
+DOCUMENT:Q277729  05-SEP-2001  [sms]
+TITLE   :SMS: Multiple Mmc.exe Tasks on a Windows 2000-Based SMS Site Ser
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbtool kbMMC kbServer kbsms200 kbsms200bug kbPackage kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3, used with:
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows 2000-based server that is running a Systems Management Server (SMS)
+site may show multiple Mmc.exe tasks in Task Manager. These tasks:
+
+ - use memory.
+
+ - consume no CPU time.
+
+ - do not quit.
+
+ - do not appear on the desktop or task bar.
+
+ - may be deleted manually from Task Manager.
+
+Over time, on an unattended SMS site server, these tasks may build up to the
+point of taking up all of the available memory.
+
+CAUSE
+=====
+
+The SMS Site Backup service starts two Mmc.exe processes each time that you
+perform a site backup on a Windows 2000-based server. This occurs because of the
+following command line in the Machinfo.bat file:
+
+   winmsd.exe \\%1 /A /F
+
+The command-line syntax for Winmsd on computers that are running Windows 2000
+differs from the command-line syntax on computers that are running Windows NT
+4.0. Because the Windows 2000-based Winmsd.exe does not interpret the
+command-line parameters from the Machinfo.bat file (which are for the Windows NT
+4.0-based Winmsd.exe), the Windows 2000-based Winmsd.exe ignores them, which
+leaves the two Mmc.exe processes started and running.
+
+WORKAROUND
+==========
+
+To work around this behavior:
+
+1. Quit the SMS Backup service.
+
+2. Edit the Machinfo.bat file that is located in the SMS\Bin\i386 folder on the
+   site server.
+
+3. Find the command line
+
+   winmsd.exe \\%1 /A /F
+
+   and replace it with the following command line:
+
+   winmsd.exe \\%1 /report %2\%3
+
+4. Save the Machinfo.bat file.
+
+NOTE: Make sure that you do not schedule to start the SMS backup task while you
+are editing the Machinfo.bat file to change this command line.
+
+NOTE: If you notice that multiple mmc tasks are left over on Win2000 Servers
+running SMS built-in backups, and, after implementing the above steps
+encountered more msinfo32 tasks in task manager, then implement the following
+steps:
+
+ - Confirm that all support files are present in the \sms\bin\i386\ folder for
+   this task, including: Msinfo32.exe, Now.exe, Srvinfo.exe, and Tlist.exe.
+
+ - Modify sms\bin\i386\machinfo.bat to call msinfo32 directly instead of winmsd.
+   Change the line containing:
+
+   WINMSD.EXE \\%1 /report %2\%3
+
+   to
+
+   MSINFO32.EXE \\%1 /report %2\%3
+
+ - Confirm successful backup in smsbkup.log file. Run command line
+
+   MACHINFO.BAT MCFR1D33 e:\sms backup\MCS\SiteServer\SMSbkSiteConfigNT (exit
+   status 0).
+
+   08/23/01 01:53:55 - backup completed.
+   |SMS_SITE_BACKUP |8/23/2001 1:53:55 AM |1180 (0x049C)
+
+   SMS site backup service is stopping.
+   |SMS_SITE_BACKUP |8/23/2001 1:53:55 AM |1180 (0x049C)
+
+ - Check the task list for mmc or msinfo32 tasks. There should be no tasks
+   remaining.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+When you update the site to Service Pack 3 (SP3) or later, the service pack may
+replace the updated Machinfo.bat file with a default file.
+
+After you upgrade the site to SP3, check the Machinfo.bat file for the Winmsd
+command line and modify it by following the steps in the "Workaround" section in
+this article.
+
+Additional query words: prodsms backup virtual bytes MMC syntax
+
+======================================================================
+Keywords          : kbenv kbinterop kbtool kbMMC kbServer kbsms200 kbsms200bug kbPackage kbsmsUtil 
+Technology        : kbSMSSearch
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

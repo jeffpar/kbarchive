@@ -1,0 +1,62 @@
+DOCUMENT:Q220826  04-FEB-2000  [iis]
+TITLE   :Back Button in HTMLA Administration Forms May be Problematic
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the HTMLA Administration Forms (Internet Services Manager HTML) in
+Internet Information Services (IIS) 5.0, ASP creates a session for the user.
+
+Keeping session state on these pages may cause a problem if users allow the
+session to time-out (the default time-out is 20 minutes). After the user's
+session times-out, if they use the Back button on the browser, only a partial
+view of the tree used to show the Web sites appears. In most instances, the user
+is informed that the session has timed out (which is the proper message).
+
+RESOLUTION
+==========
+
+In order to avoid this issue, reconnect to the HTMLA Administration forms and
+try again. This will create a new session for the user.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Services version 5.0.
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,52 @@
+DOCUMENT:Q228527  30-JUL-2001  [homegame]
+TITLE   :BBall 2000: Cannot Control Actions with Two-Button Game Device
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbhw kbimu msgame
+
+======================================================================
+SYMPTOMS
+========
+
+When you play Microsoft Baseball 2000, you may be unable to use your game
+controller to control game actions and player movements.
+
+CAUSE
+=====
+
+This behavior can occur if you use a two-button game controller.
+
+RESOLUTION
+==========
+
+To work around this issue, use the keyboard to control game actions and player
+movements in Baseball 2000.
+
+MORE INFORMATION
+================
+
+Baseball 2000 is designed to work only with game pads and joysticks that have
+four or more buttons.
+
+Additional query words: 1.00 reaction gaming controls bball2000 bball2k
+
+======================================================================
+Keywords          : kbhw kbimu msgame 
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

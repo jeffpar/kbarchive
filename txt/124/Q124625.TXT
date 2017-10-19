@@ -1,0 +1,102 @@
+DOCUMENT:Q124625  09-NOV-2001  [homemm]
+TITLE   :Encarta Err Msg: "Specified File Cannot Be Played"
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbmm kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Encarta, when you try to play a video (.avi) file, you may receive
+any of the following error messages:
+
+If You Are Running Windows 95
+-----------------------------
+
+   MMSYSTEM006 There is no driver installed on your system.
+
+-or-
+
+   Cannot find vids.iv32 Decompressor.
+
+NOTE: This issue does not occur in Microsoft Windows 98.
+
+If You Are Running Windows 3.x
+------------------------------
+
+   The specified file cannot be played on the specified MCI device. The file may
+   be corrupt, or not in the correct format.
+
+CAUSE
+=====
+
+This problem occurs on a computer running Windows 95 if there are incorrect
+entries in the [drivers 32] section of your System.ini file. In earlier versions
+of Windows, the incorrect entries are in the [drivers] section of your
+System.ini file.
+
+RESOLUTION
+==========
+
+If You Are Running Windows 95
+-----------------------------
+
+Make sure that the following lines exist in the [drivers32] section of your
+System.ini file:
+
+   VIDC.CVID=iccvid.dll
+   VIDC.IV31=ir32_32.dll
+   VIDC.IV32=ir32_32.dll
+   VIDC.MSVC=msvidc32.dll
+   VIDC.MRLE=msrle32.dll
+
+If You Are Running Windows 3.1
+------------------------------
+
+Make sure that the following lines exist in the [drivers] section of your
+System.ini file:
+
+   VIDC.RT21=indeov.drv
+   VIDC.IV31=ir32.dll
+   VIDC.YVU9=indeov.drv
+   VIDC.IV32=ir32.dll
+
+
+MORE INFORMATION
+================
+
+The Indeo drivers included with Encarta 1995 and 1996 are different from the
+Indeo drivers included with Encarta 1994; therefore, these drivers use different
+dynamic-link library (DLL) files.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles errs errors messages mess start open audio video movie
+
+======================================================================
+Keywords          : kbmm kbprb 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbEncartaEnCyc1994
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

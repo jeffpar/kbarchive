@@ -1,0 +1,69 @@
+DOCUMENT:Q166452  14-NOV-2000  [word97]
+TITLE   :WD97: Table Row Height Set to "At Least" After Vertical Merge
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbtable
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you vertically merge two or more table cells, the Height Of Row property
+changes to an At Least setting. This means that if you set the Height Of Row
+property to Auto or Exactly and then vertically merge the cells, you lose the
+Auto or Exactly settings.
+
+CAUSE
+=====
+
+The Height Of Row property is reset to the At Least setting after a vertical
+merge in order to accommodate all of the text from the merged cells.
+
+RESOLUTION
+==========
+
+After you merge the table cells, reset the row height:
+
+1. With the insertion point in the merged cell, click Cell Height and Width on
+   the Table menu.
+
+2. Click the Row tab.
+
+3. In the Height Of Row drop-down list, select the setting you want.
+
+4. Optional: In the At box, select the value and type a new measurement, or
+   click the arrows to select a new value.
+
+5. Click OK.
+
+Additional query words: 97 8.0 word97 word8 ntword kbtable
+
+======================================================================
+Keywords          : kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

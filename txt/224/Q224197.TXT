@@ -1,0 +1,74 @@
+DOCUMENT:Q224197  22-NOV-2000  [sms]
+TITLE   :Cliex32.dll Error 126 Error Message When You Run Smsman.exe
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install a client by using the Systems Management Installation
+Wizard (Smsman.exe) in Systems Management Server (SMS) 2.0, you may receive the
+following error message (or one similar to it) in the Wnmanual.log file:
+
+   Begin CliEx processing.~
+   ERROR: Load of DLL CliEx32.dll failed:
+   (C:\WINNT\MS\SMS\CORE\BIN\cliex32.dll),126
+   ERROR: Initializing CliEx failed error code 126~
+   Unable to continue; exiting~
+
+CAUSE
+=====
+
+This behavior occurs because of one of the following:
+
+ - If you run the Systems Management Installation Wizard from a location other
+   than the \x86.bin\00000409 folder within the SMSLOGON share of an SMS logon
+   point, and then use the Automatically select installation location feature.
+
+ - The %TEMP% or %TMP% environment variables do not exist for the target system.
+
+ - The %TEMP% or %TMP% environment variables point to a folder which does not
+   exist in the file system.
+
+NOTE: In the case of number 3, a temporary (.TMP) file is created in the root of
+C:\ (in the root of the system/boot partition), causing the sequence of errors
+listed under the symptoms section.
+
+WORKAROUND
+==========
+
+To work around this issue, run the Systems Management Installation Wizard from
+the \x86.bin\00000409 folder within the SMSLOGON share of an SMS logon point.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup kbtool kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

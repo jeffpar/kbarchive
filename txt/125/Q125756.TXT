@@ -1,0 +1,61 @@
+DOCUMENT:Q125756  08-AUG-2001  [winnt]
+TITLE   :Cannot Reconnect With Same IP Address to SLIP Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Remote Access Service (RAS) utility, Remote Access, in Windows NT version
+3.5 supports connections to servers that use Serial Line Internet Protocol
+(SLIP). If a RAS client makes and breaks a connection to a SLIP server, it can
+no longer use the same IP address to reconnect to the SLIP server.
+
+MORE INFORMATION
+================
+
+Unlike PPP, you are unable to configure Windows NT 3.5 RAS to use a specific IP
+address from the SLIP server being dialed. The SLIP server will assign the
+Windows NT 3.5 RAS client an IP address. Therefore, the RAS client does not have
+the capacity to reuse the previous IP address when it attempts to reconnect to
+the SLIP server after the initial connection is broken.
+
+Other design constraints involving RAS connections to SLIP servers include the
+fact that a terminal interface window will always appear first during the logon
+process to the SLIP server. There is no way to disable this feature.
+Additionally, the RAS client will not disconnect from the SLIP server until the
+SLIP server drops the Data Carrier Detect (DCD) signal. If the modem through
+which RAS is making the SLIP connection does not drop the DCD signal, the RAS
+client will not hang up.
+
+Additional query words: point-to-point prodnt tcp/ip
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS350search
+Version           : 3.5 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,92 @@
+DOCUMENT:Q207722  01-MAY-1999  [sms]
+TITLE   :SMS: Retaining Status Summaries After Advertisement Done
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbStatSum
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you delete an advertisement, the status summary for the advertisement is
+also deleted. This prevents a build-up of obsolete status summaries. However,
+you may want to maintain the status summaries after you are done using the
+advertisement for a variety of reasons, such as:
+
+ - You expect status information to continue to arrive from child sites.
+
+ - You want to collect status information on advertisements over time.
+
+ - The advertisement was a pilot project, and you want to analyze the summary
+   data as you plan the full rollout.
+
+MORE INFORMATION
+================
+
+To stop an advertisement but maintain the status summary for the advertisement,
+do either of the following:
+
+ - Set the expiration time for the advertisement to a time in the past, as
+   follows:
+
+   1. Open the SMS Administrator console and expand Site Database. Then expand
+      Advertisements.
+
+   2. Right-click the advertisement you want to modify, and then click
+      Properties on the shortcut menu.
+
+   3. Click the Schedule tab.
+
+   4. Set the Advertisement Will Expire to a time in the past. As little as a
+      minute before the present is sufficient.
+
+   The advertisement and its status summary continue to exist but the
+   advertisement no longer runs on clients.
+
+ - Disable the program, as follows:
+
+   1. Open the SMS Administrator console and expand Site Database. Then expand
+      Packages, expand the package you want to modify, and expand Programs.
+
+   2. Right-click the program you want to modify, and then click Properties on
+      the shortcut menu.
+
+   3. Click the Advanced tab.
+
+   4. Select the Disable this program on computers where it is advertised
+      checkbox.
+
+   This prevents any advertisement from running the program. The advertisement
+   and its status summary continue to exist in the Administrator Console, but
+   the advertisement for the program no longer runs on clients.
+
+Additional query words: prodsms smsstat
+
+======================================================================
+Keywords          : kbsms200 kbStatSum 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

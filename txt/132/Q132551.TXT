@@ -1,0 +1,61 @@
+DOCUMENT:Q132551  07-SEP-2001  [homemm]
+TITLE   :Dogs, 500 Nations: Can't Print Portrait or Landscape
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0,95,98
+OPER/SYS:
+KEYWORDS:kbenv kbmm kbprint kbimu kbPrintingkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 500 Nations, version 1.0 
+ - Microsoft Dogs for Windows, version 1.0 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Paper orientation is incorrect when you print with Windows 95/98, even though
+the Print Orientation setting in the Options menu is correct.
+
+For example, if you click the option to print Landscape, it still prints
+Portrait.
+
+
+RESOLUTION
+==========
+
+The printing settings must be configured in Microsoft Windows 95/98, and not in
+the multimedia program.
+
+For information about how to change Windows printing settings, see the following
+article in the Microsoft Knowledge Base:
+
+   Q130255 Windows 95/98: Installing or Setting a Default Printer Driver
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm turned flipped rotate rotated crun spam
+
+======================================================================
+Keywords          : kbenv kbmm kbprint kbimu kbPrinting kbfaq
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeProdSearch kb500Nations100 kbDogs100
+Version           : WINDOWS:1.0,95,98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

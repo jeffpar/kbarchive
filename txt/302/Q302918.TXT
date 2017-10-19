@@ -1,0 +1,65 @@
+DOCUMENT:Q302918  26-JUN-2001  [msnetwork]
+TITLE   :"Program.exe not found" Error When Launching Internet Explorer A
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You install MSN Explorer on a Windows 95 (OSR2) computer with MSN 2.6 software.
+After upgrading to MSN Explorer, you click the Internet Explorer icon on the
+desktop and get a "Program.exe not found" error message.
+
+CAUSE
+=====
+
+The icon on your desktop does not point to the directory of latest Internet
+Explorer installation.
+
+RESOLUTION
+==========
+
+To resolve this issue
+
+1. Select the old Internet Explorer icon from your desktop, right-click, and
+   then click Delete.
+
+2. Click Start, point to Programs, right-click Internet Explorer, and then click
+   Copy.
+
+3. Click in the space on your desktop where you want your Internet Explorer icon
+   to be, right-click, and then click Paste.
+   A shortcut to Internet Explorer will appear on your desktop.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNExplorer
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q238127  10-MAY-2000  [sms]
+TITLE   :SMS: SMS_NT_LOGON_DISCOVERY_AGENT May Experience Logon Problems
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbConfig kbsms200 kbsms200bug kbSiteComp kbsms200sp1fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SMS_NT_LOGON_DISCOVERY_AGENT service on some logon points may not start
+because of a logon problem.
+
+CAUSE
+=====
+
+The password for the SMSLogonSVC account may not be synchronized with the rest
+of the Systems Management Server (SMS) domain, causing the service not to start
+correctly.
+
+RESOLUTION
+==========
+
+To resolve this issue, install SMS 2.0 Service Pack 1 (SP1) or later. After you
+have applied SP1 successfully to all the sites that share the same Microsoft
+Windows NT-based domain, the NT Logon Discovery Agent services on domain
+controllers are reinstalled with the new SMSLogonSVC account password during the
+next senior site's Logon Server Manager domain update cycle.
+
+MORE INFORMATION
+================
+
+For additional information about obtaining the latest SMS service pack, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q236325 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbConfig kbsms200 kbsms200bug kbSiteComp kbsms200sp1fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

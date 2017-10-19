@@ -1,0 +1,213 @@
+DOCUMENT:Q238315  14-MAR-2002  [sms]
+TITLE   :SMS: How to Use SMS 1.2 and  2.0 to Deploy Windows NT 4.0 SP6a
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2,2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use Systems Management Server (SMS) to distribute
+Microsoft Windows NT 4.0 Service Pack 6a (SP6a).
+
+For additional information about how to obtain Windows NT SP6a, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q246009 Windows NT 4.0 Service Pack 6a Available
+
+MORE INFORMATION
+================
+
+How to Use SMS 2.0 to Install Windows NT SP6a
+---------------------------------------------
+
+The procedure that is described in this section assumes that you have already
+downloaded the Windows NT SP6a files (Sp6i386.exe) from the following Microsoft
+Web site:
+
+   http://www.microsoft.com/ntserver/nts/downloads/recommended/SP6/allSP6.asp.
+
+NOTE: You can also obtain Windows NT 4.0 SP6a from the Windows NT 4.0 SP6a
+CD-ROM. The Windows NT 4.0 SP6a CD-ROM contains the N4sp6a.pdf file, which you
+can use to automatically populate the SMS package and program properties.
+
+1. Extract the Sp6i386.exe files to a Temporary folder.
+
+2. Create a new folder named "NT4sp6a", and then move the Sp6i386.exe files to
+   the new folder.
+
+   NOTE: The NT4sp6a folder is the source of the Windows NT4 SP6a SMS package.
+
+3. Start the SMS Administrator console, and then create a new package with
+   "NT4sp6a" as the source folder.
+
+   For more information about SMS software distribution and package creation
+   options, refer to SMS Online Help.
+
+   NOTE: This example describes how to create the SMS package and the SMS program
+   and advertisement separately. You can also use the Distribute Software Wizard
+   or the Windows NT 4.0 SP6a Package Definition File (Nt4sp6.pdf) if these
+   tools are available.
+
+4. Use the following command line to create a new program for the package you
+   created in step 3:
+
+   update\update.exe /q
+
+   You can also manually edit the command line to use any of the Update.exe
+   command-line switches that are described in the "Update.exe Command-Line
+   Switches" section of this article.
+
+   NOTE: It is important to verify that this command line conforms to the
+   specific package source folder structure you have created. SMS is not able to
+   browse the folder structure and the program will fail if it does not have the
+   correct path to Update.exe.
+
+5. Open the program properties, click the Environment tab, and then ensure that
+   the program is either set to run with administrative rights or it is using a
+   Windows NT client software installation account that has the proper
+   administrative rights (if the Windows NT user does not have local
+   administrative rights or if no user is logged on when you create the
+   program).
+
+   Typically, a Windows NT client software installation account is used only if
+   either the installation source files are not on an SMS distribution point or
+   if the installation process needs to access files that are not on an SMS
+   distribution point.
+
+6. Select the distribution points to which you want to send the NT4sp6a package.
+
+7. Create a new advertisement for the NT4sp6a package or program that you
+   created in step 4.
+
+   Make sure that you select the correct package, program, and collection
+   settings on the General tab of the advertisement.
+
+8. If you want to run the service pack installation automatically, open the
+   advertisement properties, click the Schedule tab, and then create a mandatory
+   assignment for the program.
+
+How to Use SMS 1.2 to Install Windows NT SP6a
+---------------------------------------------
+
+1. Use the procedure that is described in the preceding section to create the
+   package source.
+
+2. Use the following command line to create a new package for Windows SP6a:
+
+   update/update.exe /q
+
+3. Verify that the workstation command-line options are correctly set for the
+   type of installation that you are using.
+
+   The type of installation you select depends on the rights of the user that is
+   logged on to the target client.
+
+4. If you are targeting either a low-rights user who does not have local
+   administrative rights or a server to which no one logs on, click "System
+   (Background) Task".
+
+   The Package Command Manager service handles the installation.
+
+   NOTE: For any package that is using the Package Command Manager service to
+   finish successfully:
+
+    - You must configure the package to run completely silently and require no
+      user interaction.
+
+    - You must set the System (Background) Task option.
+
+    - You must set the job to run as Mandatory.
+
+   You must manually install the Package Command Manager service on SMS clients.
+   For more information about how to use Rservice.exe to manually install
+   Pcmsvc32.exe, refer to the Install.doc file that is included in SMS Service
+   Pack 4 (SP4). If you do not select the System (Background) Task option, the
+   installation is handled by the Package Command Manager program, it is run in
+   the foreground, and it requires a logged-on user to have local administrative
+   rights to finish the service pack installation.
+
+5. Create a new job to distribute the Windows NT SP6a package, and then target
+   it at the clients you want to upgrade.
+
+   If you select the System (Background) Task option for your package, make sure
+   to set the job to run as Mandatory. The mandatory date is set to one week in
+   advance by default.
+
+Both SMS 1.2 and 2.0 SP6a installations require you to restart the client after
+the installation is complete.
+
+NOTE: The service pack Setup program requires you to have administrative rights
+after you restart the computer. Windows NT SP6a adds several keys to the RunOnce
+registry key. If you have administrative rights, you must to log on to the
+client for the service pack Setup program to complete. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q255987 Service Pack Requires Logon with Local Administrative Rights
+
+
+For more information about software distribution by using Systems Management
+Server 2.0, refer to the Systems Management Server 2.0 Administrator's Guide,
+Chapter 12, "Distributing Software." For more information about Systems
+Management Server 1.2 software distribution, refer to the Systems Management
+Server 1.2 Administrator's Guide, Part 2, "Software Management."
+
+Update.exe Command-Line Switches
+--------------------------------
+
+The following command line describes the syntax for Update.exe:
+
+   update [-u] [-f] [-n] [-o] [-z] [-q]
+
+You can use the following switches with Update.exe:
+
+ - -u: Use this parameter for Unattended mode.
+
+ - -f: Use this parameter to force other programs to close when you shut down
+   the computer.
+
+ - -n: Use this parameter if you do not want to back up files when you uninstall
+   the program.
+
+ - -o: Use this parameter if you do not want to be prompted when the original
+   equipment manufacturer (OEM) files are overwritten.
+
+ - -z: Use this parameter if you do not want to restart the computer when the
+   installation is complete.
+
+ - -q: Use this parameter for Quiet mode (no user interaction).
+
+To view help for this command, type "update /?" (without the quotation marks).
+
+Additional query words: prodsms sp6 ntsp6 ntsp
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : :1.2,2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

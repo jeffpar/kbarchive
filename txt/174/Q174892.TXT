@@ -1,0 +1,57 @@
+DOCUMENT:Q174892  25-JUL-2001  [homekids]
+TITLE   :Ultimate Climb: Err Msg: Cannot Find Msacm32.dll
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0a
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Beyond the Limit: Ultimate Climb, version 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Beyond the Limit: Ultimate Climb, version
+1.0a, you receive the following error message:
+
+   Cannot find MSACM32.dll
+
+CAUSE
+=====
+
+This error message occurs if you attempt to install the program on a computer
+that is not running Windows 95.
+
+RESOLUTION
+==========
+
+Microsoft Beyond the Limit: Ultimate Climb is designed for Windows 95 or later.
+It requires a pure 32-bit environment. You will receive this error message if
+you attempt to install the program on a computer running Windows 3.1 or earlier.
+
+Additional query words: beyond limit
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup 
+Technology        : kbHomeProdSearch kbUltimateClimb100a
+Version           : WINDOWS:1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

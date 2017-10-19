@@ -1,0 +1,68 @@
+DOCUMENT:Q76933  10-JUN-1999  [win16sdk]
+TITLE   :DOC: Button Styles May Not Be OR'd with Other Button Styles
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbButton kbCtrl kbSDKPlatform
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Resource script statements are documented in Chapter 8 of the Microsoft Windows
+SDK version 3.0 "Reference Volume 2" and in chapter 13 of the Microsoft Windows
+SDK version 3.10 "Programmer's Reference: Volume 4, Resources" These chapters
+include statements such as the following:
+
+   In addition to these styles, the style field may contain any combination
+   (or none) of the BUTTON-class styles. Styles can be combined using the
+   bitwise OR operator.
+
+This statement, which is repeated a number of times throughout the chapter, is
+incorrect; button styles cannot be combined.
+
+MORE INFORMATION
+================
+
+The button style identifiers (BS_*) are defined in the WINDOWS.H file as
+consecutive integers, not individual bits. If two button styles are combined and
+the combination creates a legal button style, the button will be created with
+that style. However, if two button styles are combined and the combination does
+not create a legal button style, the button will be created, but will not be
+painted on the screen.
+
+NOTE: Button styles may be combined with window styles (WS_*) by using the
+bitwise OR operator (|).
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbButton kbCtrl kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

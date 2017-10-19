@@ -1,0 +1,57 @@
+DOCUMENT:Q280384  02-DEC-2000  [homegame]
+TITLE   :Links LS Error Message: File Not Found
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Links LS 2000 
+ - Microsoft Links 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to send a wave (.wav) file during a multiplayer game, you may
+receive the following error message:
+
+   "File not found"
+
+CAUSE
+=====
+
+This behavior can occur if your player name contains a carat (^) or a bracket.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the player name or use a player name that does not
+contain a carat or a bracket.
+
+Additional query words: linksls multiplayer voice chat carats carrots wave files greater than less links 2001
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbLinkGolfSearch kbGamesSearch kbGolfSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

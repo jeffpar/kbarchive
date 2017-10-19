@@ -1,0 +1,74 @@
+DOCUMENT:Q140707  28-JUL-2001  [win95x]
+TITLE   :File Not Listed Using DIR Command with OS/2 Name Space
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the DIR command on a NetWare volume, files with no extension may
+not be listed.
+
+CAUSE
+=====
+
+This is a known limitation with Command.com when you are using NetWare servers
+with OS/2 Name Space (long file name) support installed.
+
+RESOLUTION
+==========
+
+When you use the DIR command to list a file with no extension, use a period (.)
+at the end of the file name. For example, to list a file named Test, type the
+following command:
+
+   dir test.
+
+You could also type
+
+   dir *.*
+
+or
+
+   dir
+
+to list the Test file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: lfn namespace
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

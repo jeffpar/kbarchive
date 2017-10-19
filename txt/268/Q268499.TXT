@@ -1,0 +1,70 @@
+DOCUMENT:Q268499  19-NOV-2000  [sms]
+TITLE   :SMS: Software Distribution Does Not Function on Alpha Platform
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply Systems Management Server (SMS) Service Pack 2 (SP2), software
+distribution may not work on Alpha-based computers that have the Network Monitor
+Agent tool version 2 installed. The last entry that is reported in the the log
+for the Smsapm32.exe tool is "Checking if a user is actually logged on." At this
+point Smsapm32.exe quits silently.
+
+CAUSE
+=====
+
+This behavior is caused by an issue with the Network Monitor Performance Counter
+Nmperf.dll dynamic link library (DLL) file. This file causes the Smsapm32.exe
+process to quit unexpectedly while it is attempting to determine if a user is
+logged on. This behavior does not occur with earlier versions of SMS because the
+process that Smsapm32.exe uses to determine if a user is logged on locally has
+been modified.
+
+WORKAROUND
+==========
+
+To work around this issue, rename or remove the Nmperf.dll file from the
+%SystemRoot%\System32 folder. This procedure removes the Network Segment
+Performance Counter object, and therefore prevents Smsapm32.exe from quitting
+unexpectedly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

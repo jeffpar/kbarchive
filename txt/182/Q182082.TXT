@@ -1,0 +1,78 @@
+DOCUMENT:Q182082  27-OCT-2000  [exchange]
+TITLE   :XADM: Event Service Won't Start If Alternate PF Server Selected
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure a different server to be the Public Folder Server, the Event
+Service fails to start and logs the following sequence of events in the Windows
+NT Event Log:
+
+   Event ID   : 0
+   Source     : MSExchangeES
+   Type       : Informational
+   Category   : General
+   Description: The Microsoft Exchange Event Service (5.5.1960.3)
+                Started successfully.
+
+   Event ID   : 5
+   Source     : MSExchangeES
+   Type       : Error
+   Category   : General
+   Description: An unexpected MAPI error occurred. Error returned
+                was [0x80004005].
+
+   Event ID   : 1
+   Source     : MSExchangeES
+   Type       : Informational
+   Category   : General
+   Description: The Microsoft Exchange Event Service stopped successfully.
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+When you change Server A's private store to use the public store on Server B,
+this change is not complete until the DS changes have replicated from Server A
+to Server B, which takes 10 to 15 minutes (or whatever the replication latency
+of your site is). After that time, the Event Service should start normally.
+
+As an alternative, you should be able to force a DS replication update in the
+site to make this happen sooner.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,62 @@
+DOCUMENT:Q146282  16-DEC-1999  [schedplus]
+TITLE   :Import Project with Same Name as Existing Project Merges Tasks
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you import data into Schedule+ version 7.0, the tasks associated with a
+project that currently exists in the schedule will be merged with those
+associated with the project. If the imported task has the same name as an
+existing task, the information in the task being imported will overwrite the
+existing task information.
+
+CAUSE
+=====
+
+This is by design.
+
+The ObjectID's for the individual objects are not exported to the .SCH file
+during the export process. This eliminates duplication of ObjectID conflicts
+between the two user's appointment books. The New ObjectID's for the Projects or
+Tasks will be assigned when the user's appointment book is imported.
+
+In the case where a duplicate Project or Tasks name is found in the destination
+appointment book, the imported Project or Tasks will assume the ObjectID of the
+existing Project; therefore, it adds the Same_Name_Project/Tasks from the
+exported file as part of the existing Project in the appointment book.
+
+
+Additional query words: 7.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbZNotKeyword3 kbSchedule700Win95
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

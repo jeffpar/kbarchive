@@ -1,0 +1,51 @@
+DOCUMENT:Q125860  15-DEC-2000  [crossnet]
+TITLE   :Incorrect Range for RegistrySizeLimit in Resource Kit
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows NT Registry Entries Help File, REGENTRY.HLP, included with the
+Resource Kit for Windows NT 3.5 incorrectly specifies the RegistrySizeLimit
+parameter range as from "4 Bytes to Unlimited." The correct range is "4
+Megabytes to Unlimited."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Resource Kit for
+Windows NT 3.5. This problem should be fixed in a future release.
+
+
+Additional query words: prodnt 3.50 reskit hlp
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

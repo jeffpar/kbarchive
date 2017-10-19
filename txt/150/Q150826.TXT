@@ -1,0 +1,67 @@
+DOCUMENT:Q150826  05-MAY-1999  [iis]
+TITLE   :Batch File to Display IIS Environment Variables from Browser
+PRODUCT :Internet Information Server
+PROD/VER:1.0 3.5 3.51
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following batch file will create a listing of environment variables when a
+client connects to a Microsoft Internet Information Server (IIS).
+
+Create a file with Notepad and type the following lines of code. Save the file in
+the scripts directory as Environment.cmd.
+
+      @echo off
+      echo Content-Type: text/plain
+      echo.
+      set
+
+From a browser, type the http://<Web Server Name>/<Path to the Script
+file>
+
+where, WWW.UNKNOWN.COM is the full qualified Domain Name, and
+SCRIPTS/ENVIRONMENT.CMD? is the Path to the Script file. For example:,
+HTTP://WWW.UNKNOWN.COM/SCRIPTS/ENVIRONMENT.CMD?
+
+NOTE: The question mark is very important. It informs the server that this is a
+GET request instead of downloading the file.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q150041 : Environment Variables Returned by IIS via CGI
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0 3.5 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

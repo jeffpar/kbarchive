@@ -1,0 +1,60 @@
+DOCUMENT:Q134510  17-DEC-2000  [win95x]
+TITLE   :ScanDisk States That Compression Ratio Is Too High
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you convert an uncompressed drive that is almost full to a compressed
+drive using DriveSpace, you may receive the following error message when you run
+ScanDisk:
+
+   The ratio that Windows is using to estimate the amount of free space
+   available on this drive is too high. As a result, Windows reports that your
+   disk contains more free space than it actually does. To change the ratio,
+   click the help button, and then carry out the procedure for changing your
+   compression ratio.
+
+CAUSE
+=====
+
+The DriveSpace conversion tool automatically sets the estimated compression
+ratio to 2:1. In some rare cases, this ratio is too high.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow the instructions on the screen to change the
+compression ratio.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

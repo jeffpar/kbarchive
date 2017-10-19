@@ -1,0 +1,64 @@
+DOCUMENT:Q85193  16-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: System Error, Application Terminated
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.0 of Microsoft Mail for Windows will not run with Microsoft Windows
+version 3.0 in standard mode with 2 megabytes of RAM. The following Windows
+error message appears when you try to load Mail:
+
+   System Error, application terminated
+
+CAUSE
+=====
+
+This problem is caused by Windows having a difficult time loading code segments
+with low memory conditions.
+
+RESOLUTION
+==========
+
+To correct this problem, update to Windows 3.1 or run Windows in enhanced mode
+(this requires a 386 computer).
+
+STATUS
+======
+
+This problem was corrected in Microsoft Windows operating environment version
+3.1.
+
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

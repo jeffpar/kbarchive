@@ -1,0 +1,68 @@
+DOCUMENT:Q71208  12-DEC-1999  [win95x]
+TITLE   :Running Setup Within a Window Causes UAE On Novell Network
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are in an MS-DOS window while running Windows 3.0 in enhanced mode and
+you attempt to change or check the network configuration of a user, your system
+may stop responding (hang) or the following error may appear:
+
+   UNRECOVERABLE APPLICATION ERROR TERMINATING CURRENT APPLICATION
+
+MORE INFORMATION
+================
+
+When creating a new Novell workstation installation of Windows 3.0 or checking
+an existing one, the Windows Setup program (SETUP.EXE) should be executed in one
+of the following two ways:
+
+1. If you are on a workstation and attempting to configure a new installation of
+   Windows, always run the Windows Setup program by typing "setup" (without the
+   quotation marks) or "setup /n" (without the quotation marks) at the normal
+   DOS system prompt.
+
+   -or-
+
+2. If a current network installation of Windows 3.00 is being checked or
+   modified, run the Setup program by double clicking the Setup icon located in
+   the Main Group of the Program Manager.
+
+Exercising one of the two Windows installation methods above will ensure that the
+system does not hang and that this error does not occur. For more information on
+installing Windows on a network, please refer to pages 553-554 of the "Microsoft
+Windows User's Guide" for version 3.00.
+
+Additional query words: 3.0 3.00 win30 3.00A
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

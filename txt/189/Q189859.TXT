@@ -1,0 +1,106 @@
+DOCUMENT:Q189859  14-NOV-2000  [word97]
+TITLE   :WD97: Bullets, Numbers Lost After Saving As WordPerfect 5.x
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdta kbconversion
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you convert a Microsoft Word 97 for Windows document, containing bulleted
+or numbered lists, in WordPerfect 5.x format, the bullets and numbering
+formatting is not retained. This behavior occurs if the first paragraph in your
+document is not part of the bulleted or numbered list.
+
+CAUSE
+=====
+
+The problem occurs because of an error in the WordPerfect 5.x converter that
+ships with Word 97 for Windows.
+
+WORKAROUND
+==========
+
+You can work around this problem by using either of the following methods.
+
+Method 1: Save the File in WordPerfect 5.x Format
+-------------------------------------------------
+
+1. Click anywhere in the first paragraph, and then click the Bullets button on
+   the Formatting toolbar. This will add a bullet to the first paragraph.
+
+2. On the File menu, click Save As.
+
+3. From the Save File As Type list, select WordPerfect 5.x for Windows, type a
+   name for your file, and then click OK.
+
+   NOTE: All of the numbers and bullets are converted to text or symbols, so
+   there are no more "lists."
+
+4. On the File menu, click Close.
+
+5. On the File menu, click Open.
+
+6. Select the document you just saved, and click Open.
+
+7. Select the bullet and then press DELETE.
+
+8. Repeat steps 2 and 3 to save the document again.
+
+Method 2: Save the File in Another Format
+-----------------------------------------
+
+Save the file in another format, such as Rich Text Format (RTF).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+This problem does not occur in Word 2000.
+
+MORE INFORMATION
+================
+
+For additional information about converting to and from WordPerfect, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q157085 WD97: Limitations of Converting WordPerfect 5.x Documents
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: lost missing disappear
+
+======================================================================
+Keywords          : kb3rdparty kbdta kbconversion 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

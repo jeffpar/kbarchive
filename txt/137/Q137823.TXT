@@ -1,0 +1,66 @@
+DOCUMENT:Q137823  28-JUL-2001  [win95x]
+TITLE   :Windows 95 Client Can Browse NetWare 2.x Without Permission
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you browse NetWare version 2.x servers using the Microsoft Client for
+NetWare networks, you may be able to view folders and files that you do not have
+permission to view. If you try to run or open such a file or folder, you receive
+one of the following error messages:
+
+ - Windows can't find <executable>
+
+ - Access denied
+
+CAUSE
+=====
+
+The Novell NetWare NETX and VLM redirectors cannot view files for which the
+client does not have access permissions. However, because the Microsoft Client
+for NetWare Networks is a graphical network client, it allows you to browse
+NetWare resources.
+
+For example, with the Microsoft Client for NetWare Networks installed, you may be
+able to view shared folders that you do not have permissions for and to view a
+list of the files that those folders contain. However, if you try to run, open,
+or manipulate any of these files or folders, you receive an error messages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

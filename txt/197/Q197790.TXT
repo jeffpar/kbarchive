@@ -1,0 +1,63 @@
+DOCUMENT:Q197790  19-DEC-1999  [homemm]
+TITLE   :Bookshelf 99: Error Message When You Resize Program Window
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you resize the Bookshelf 99 program window when the Bookshelf CD-ROM is not
+in the CD-ROM drive, you receive a message prompting you to insert the Bookshelf
+disc into the CD-ROM drive.
+
+When you insert the Bookshelf CD-ROM into the CD-ROM drive, and then click OK,
+you may receive the following error message:
+
+   Bshelf99 caused an invalid page fault in module Bshelf99.exe.
+
+If you click Close, Bookshelf quits and you must restart the program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf 99.
+
+MORE INFORMATION
+================
+
+To prevent this issue from occurring, do not remove the Bookshelf CD-ROM from
+the CD-ROM drive while you are running Bookshelf.
+
+Additional query words: multi multi-media media mm bs99
+
+======================================================================
+Keywords          : kbdisplay kberrmsg kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1999
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

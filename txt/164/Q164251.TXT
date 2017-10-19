@@ -1,0 +1,76 @@
+DOCUMENT:Q164251  24-MAR-2000  [foxpro]
+TITLE   :FIX: Blank Field Type Causes Error in Table Wizard
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfpkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Selecting a blank field type in step 2 of the Table Wizard causes the following
+error message:
+
+   Error # 10 in processoutput(0): Syntax error.
+
+In order to get a blank field type, you must scroll to the bottom of the Type
+list box and choose the blank entry at the bottom of the list.
+
+The Table Wizard in Visual FoxPro for Windows 5.0 does not have a blank entry in
+the Type list box. Therefore, this error does not occur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual FoxPro 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Table Wizard.
+
+2. Select several fields from the Accounts table and click Next.
+
+3. In "Step 2-Field Settings," click the Type list box, scroll to the end of the
+   list, and select the blank field type.
+
+4. Click Finish and save the table.
+
+While saving the table, the error occurs.
+
+Additional query words: kbvfp500fix
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,90 @@
+DOCUMENT:Q138808  09-MAR-2000  [foxpro]
+TITLE   :PRB: "Error Writing Winspool.drv" During Visual FoxPro Setup
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error "Error Writing to Winspool.drv" appears while you are:
+
+ - Setting up Visual FoxPro under Windows or Windows for WorkGroups.
+
+-or-
+
+ - Starting Visual FoxPro.
+
+CAUSE
+=====
+
+The LaserMaster Print Manager was installed before you ran Setup. When Visual
+FoxPro is installed under Windows or Windows for Workgroups, the Setup program
+installs Win32s. The LaserMaster drivers interfere with installing Win32s
+because the LaserMaster creates a WINSPOOL device. When the Setup program tries
+to write to Winspool.drv, it fails because it tries to write to the WINSPOOL
+device instead.
+
+WORKAROUND
+==========
+
+Disable the WINSPOOL driver before installing Visual FoxPro. Once Visual FoxPro
+and Win32s have been installed, you can reinstall the driver. You may need to
+disable the driver at all times to run Visual FoxPro. However, this should not
+prevent you from printing to the LaserMaster. To disable the driver, change the
+following three lines to comments in the [386enh] section of the System.ini
+file.
+
+      device = lmharold.386
+      device = lmmi
+      device = lmcap
+
+Then restart your computer before you install Visual FoxPro, so the changes take
+effect.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+For more information about this issue, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q106715 Troubleshooting Win32s Installation Problems
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

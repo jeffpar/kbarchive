@@ -1,0 +1,61 @@
+DOCUMENT:Q177805  22-JUN-2001  [exchange]
+TITLE   :XCLN: Setup Cannot Register Comcat.dll in the System Registry
+PRODUCT :Microsoft Exchange
+PROD/VER::8.03
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, version 8.03, on platform(s):
+    - the operating system: Microsoft Windows NT 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Microsoft Outlook client on a Microsoft Exchange Server
+computer, you may receive the following error:
+
+   Setup cannot register COMCAT.dll in the system registry
+   because an older version is in use. Close all applications
+   and try again.
+
+CAUSE
+=====
+
+The Microsoft Exchange Event Service that uses the Comcat.dll file may be
+running. This behavior is by design.
+
+RESOLUTION
+==========
+
+Stop the Microsoft Exchange Event service in the Control Panel Services icon
+before starting or continuing with the Outlook installation.
+
+Additional query words: ol97
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbZNotKeyword3
+Version           : :8.03
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

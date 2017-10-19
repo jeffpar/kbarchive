@@ -1,0 +1,69 @@
+DOCUMENT:Q104425  03-MAR-2001  [pcmail]
+TITLE   :ATT: Running SMTPGET and SMTPPUT Manually
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to AT T, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 1.0 of the Microsoft Mail Gateway to AT&T is based on the Microsoft
+Mail File Format Application Program Interface (FFAPI). FFAPI is used to place
+mail messages into and extract messages from the Microsoft Mail for PC Networks
+postoffice. The gateway uses the FFAPI executables common to the SMTP gateway
+because they both require the same SMTP addressing components and mail queues.
+
+MORE INFORMATION
+================
+
+The SMTPGET.EXE and SMTPPUT.EXE executable files are spawned by the AT&T
+gateway executable using the following command lines:
+
+   smtpput -f1 -h -l\attgate\log.txt mmff.put
+
+   smtpget -f1 -h -j -l\attgate\l\log.txt mmff.get
+
+Both the MMFF.PUT and MMFF.GET files are placed in the ATTGATE\MMFF subdirectory
+on the Microsoft Mail postoffice. They are in an ASCII text file that contains
+the complete mail message in FFAPI format.
+
+NOTE: This is a good test to use when trying to determine if a problem with the
+gateway is caused by FFAPI executables or the gateway executables themselves. It
+is a good starting place for mail and database issues.
+
+REFERENCES
+==========
+
+File Format Application Program; Interface AT&T to Microsoft Mail Gateway
+Technical Manual.
+
+Additional query words: 1.00 File Format API
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateATT100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

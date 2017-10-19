@@ -1,0 +1,59 @@
+DOCUMENT:Q187430  11-DEC-2001  [winnt]
+TITLE   :Client Setup Requires License That Is Already Installed
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Terminal Server Client, the following message will appear
+after the Name and Organization Information dialog box:
+
+   Please note that use of this client software requires a valid Windows NT
+   Workstation license and Windows NT Server Client Access License, as described
+   in the End-User License Agreement for Microsoft Windows NT Server version
+   4.0, Terminal Server Edition. This license can be found both in hard copy
+   form in the box containing the server software and in electronic form in the
+   eula.txt file located in the \i386 and \alpha directories on the CD-ROM.
+
+
+STATUS
+======
+
+This behavior is by design. The Terminal Server Client Setup does not detect
+whether the appropriate licenses are available on Terminal Server. This message
+will appear whether or not the licenses exist.
+
+Additional query words: TS client
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

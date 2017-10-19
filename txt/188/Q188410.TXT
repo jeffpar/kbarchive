@@ -1,0 +1,69 @@
+DOCUMENT:Q188410  10-AUG-2001  [winnt]
+TITLE   :How to Use Both B Channels with CHAP on ImpactIQ ISDN Adapter
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use both B channels with CHAP on the 3COM ImpactIQ
+external ISDN adapter.
+
+MORE INFORMATION
+================
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Modems.
+
+2. Click Properties, click the Connection tab, and then click Advanced.
+
+3. In the Extra Settings box, enter the following:
+
+   s84=0 s80=0 s60=56 s61=2
+
+4. Click OK, click OK, and then click Close.
+
+5. Click Start, point to Programs, point to Accessories, and then click Dial-Up
+   Networking.
+
+6. Click Phonebook Entry To Dial, click More, and then click "Edit entry and
+   modem properties".
+
+7. Enter two phone numbers separated by an ampersand (&) in the Phone Number
+   box. For example:
+
+   12223334444 & 15556667777
+
+   NOTE: The phone numbers can be the same.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

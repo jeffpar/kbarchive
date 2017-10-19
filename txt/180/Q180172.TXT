@@ -1,0 +1,74 @@
+DOCUMENT:Q180172  11-JAN-2001  [vbwin]
+TITLE   :PRB: "Login has failed" Error Using the MAPISession Control
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Standard Edition for Windows, versions 4.0, 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When calling the SignOn method of the MAPISession control, the following error
+may occur:
+
+   Run-Time Error '32003' Login has failed.
+
+CAUSE
+=====
+
+The LogonUI property of the MAPISession control is set to False and the UserName
+property of the control contains an invalid profile name or is empty.
+
+RESOLUTION
+==========
+
+Set the UserName Property of the MAPISession control equal to a profile name
+that exists on the machine before the SignOn method of the control is called.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The MAPI 1.0 specification requires a profile to log on to a messaging session.
+The MAPISession control was written before the MAPI 1.0 specification was
+established. In order to use this control to establish a MAPI 1.0 session and
+prevent the Choose Profile dialog box from being displayed, the Username
+property must be used to pass the name of the profile needed to sign on.
+
+Additional query words: msmapi32.ocx vbmapi kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbVBpkbMAPI
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbVB400Search kbVB400
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

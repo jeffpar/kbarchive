@@ -1,0 +1,78 @@
+DOCUMENT:Q217921  01-MAY-1999  [winnt]
+TITLE   :SBS FAX: Unsent Fax Does Not Stay in Queue for Days Specified
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send a fax job using the Small Business Server (SBS) Fax service and the
+fax job is not sent successfully, the job remains in the fax queue indefinitely
+or until you manually remove the fax job.
+
+CAUSE
+=====
+
+This behavior is caused by the Windows NT 4.0 print spooler code, which
+specifies that print jobs be deleted only after they finish successfully or when
+a user with sufficient permission manually deletes them. Because of this design,
+the spooler does not recognize delete commands from the SBS Fax service.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+To reproduce this problem:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Fax Server.
+
+3. Type "1" (without the quotation marks) in the "Days to Keep Unsent Faxes"
+   box.
+
+4. Restart the Fax service.
+
+5. Send a fax to an invalid number.
+
+6. Allow the fax job to remain in the queue for at least one full day.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

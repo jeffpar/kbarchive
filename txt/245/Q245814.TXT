@@ -1,0 +1,75 @@
+DOCUMENT:Q245814  23-OCT-2000  [winnt]
+TITLE   :Interix Software Development Kit Libraries
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a summary of the Interix Software Development Kit
+libraries.
+
+MORE INFORMATION
+================
+
+The Interix Software Development Kit includes the following libraries:
+
+ - libc.a - Standard C library
+
+ - libcurses.a - Ncurses (System V curses) library ported to Interix
+
+ - libform.a - Forms library (part of Ncurses)
+
+ - libl.a - Lex library
+
+ - libmenu.a - Menu library (part of Ncurses)
+
+ - libpanel.a - Panel library (part of Ncurses)
+
+ - libsocket.a - Stub for compatibility; not actually required
+
+ - libtermcap.a - Termcap library
+
+ - psxdll.a - Interix API entry points as a DLL
+
+Metaconfig scripts search specified files for application programming interfaces
+(APIs). They do not locate many of the system calls because the Psxdll.a file is
+not specified for the scripts.
+
+For additional information about configuring scripts with Interix, see the
+following Interix Web site:
+
+   http://www.interix.com/NewInterix/technotes/note0007.html
+
+Additional query words: 2.2.10 2.2.20 2.2.30 2.2.40
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

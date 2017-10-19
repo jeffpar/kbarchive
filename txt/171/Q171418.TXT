@@ -1,0 +1,69 @@
+DOCUMENT:Q171418  14-NOV-2000  [word97]
+TITLE   :WD97: Using Word as E-mail Editor in Outlook Changes Word View
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop kbui word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - Microsoft Outlook 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the default template in Microsoft Word uses page layout view and Microsoft
+Outlook uses Word as its e-mail editor, the default view in Word changes to
+normal view.
+
+WORKAROUND
+==========
+
+To work around this problem, do not use Word as the e-mail editor in Outlook. To
+do this, follow these steps:
+
+1. In Microsoft Outlook, click Options on the Tools menu.
+
+2. On the E-mail tab, click to clear the "Use Microsoft Word as the e-mail
+   editor" check box, and then click OK.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q159476 WD97: How to Enable, Disable Microsoft Word as the E-Mail Editor
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+Additional query words: 8.0 ol97
+
+======================================================================
+Keywords          : kbinterop kbui word97 
+Technology        : kbWordSearch kbOutlookSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

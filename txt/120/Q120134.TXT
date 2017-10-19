@@ -1,0 +1,65 @@
+DOCUMENT:Q120134  20-NOV-1999  [accother]
+TITLE   :Workgroup Add-On for MS-DOS Continuously Accesses Hard Disk
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:MS-DOS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you share a network printer (NET SHARE PRINTER=LPTx) from a Workgroup
+Add-On for MS-DOS machine and you change to a large directory (more than 50
+files), your hard disk continuously spins. This continuous access slows down
+other commands (such as DIR), making your computer work slower.
+
+CAUSE
+=====
+
+Workgroup Add-On for MS-DOS uses conventional memory to spool print jobs in
+order to be backwards compatible. This spooler requires buffers or a drive cache
+to do to operate optimally.
+
+RESOLUTION
+==========
+
+To stop the spooler from continuously accessing the hard disk in large
+directories, do the following:
+
+ - Open the AUTOEXEC.BAT file in a text editor (such as Windows Notepad) and set
+   SMARTDRV.EXE as the first statement.
+
+-or-
+
+ - Open the CONFIG.SYS file in a text editor (such as Windows Notepad) and set
+   BUFFERS to a value greater than 30.
+
+Additional query words: 3.11 slow wgao
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : MS-DOS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

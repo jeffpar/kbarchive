@@ -1,0 +1,58 @@
+DOCUMENT:Q109444  10-NOV-1999  [pcmail]
+TITLE   :CONN: Err Msg: Error [68] Network Name Already in Use: MACNET
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Import program (IMPORT.EXE) may display the following error during the T3
+Directory Synchronization (Dir-Sync) cycle (this error is also recorded in the
+DIRSYNC.LOG file):
+
+   Error [68] Network name already in use: MACNET
+
+CAUSE
+=====
+
+Version 3.2 of the Microsoft Mail Connection for PC and AppleTalk Networks
+requires version 3.0.3 or later of the Mail for PC Networks IMPORT.EXE program
+to complete the T3 stage of the Directory Synchronization (Dir-Sync) cycle.
+
+Version 3.0.3 or later of the IMPORT.EXE program is required to successfully
+exchange address lists between Mail for AppleTalk Networks and Mail for PC
+Networks by means of Mail Connection version 3.2.
+
+IMPORT.EXE is included with version 3.2 of Microsoft Mail for PC Networks.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,61 @@
+DOCUMENT:Q139101  08-AUG-2001  [winnt]
+TITLE   :Sony ATAPI CD-ROM Drive Must Be Master Drive on IDE Adapters
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use a Sony ATAPI CD-ROM drive on a standard IDE adapter, you may have
+to configure the Sony drive as the master drive.
+
+MORE INFORMATION
+================
+
+Sony has found that there can be timing problems if a SONY ATAPI CD-ROM drive is
+connected to a standard inexpensive IDE adapter with many hard drives. They
+suggest configuring all models of SONY ATAPI drives connected to standard IDE
+adapters as master drives, which avoids the timing issues.
+
+EIDE adapters do not have the same timing issues, so the SONY ATAPI CD-ROM can be
+used as Master or Slave with those adapters.
+
+
+For more information contact Sony technical support at (408) 894-0555.
+
+The products discussed here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: prodnt ntsetup
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q142798  08-AUG-2001  [winnt]
+TITLE   :True Type Font Corruption After Applying Service Pack 3
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you apply Service Pack 3 for Microsoft Windows NT 3.51, some True Type
+fonts may not display correctly. Documents that display corrupt fonts may still
+print properly.
+
+CAUSE
+=====
+
+Code in WINSRV.DLL did not handle an entry in the font cmap table properly.
+
+
+RESOLUTION
+==========
+
+Replacing WINSRV.DLL with the version that exists in Microsoft Windows NT 3.51
+Service Pack 2 (or earlier Microsoft Windows NT 3.51 version) should restore
+normal functionality.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A fix
+to this problem is in development, but has not been regression-tested and may be
+destabilizing in production environments. Microsoft does not recommend
+implementing this fix at this time. Contact Microsoft Product Support Services
+for more information on the availability of this fix.
+
+
+Additional query words: REGRESSION FONT TRUE TYPE CORRUPT DISPLAY
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

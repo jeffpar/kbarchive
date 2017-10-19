@@ -1,0 +1,57 @@
+DOCUMENT:Q250371  28-MAY-2001  [winnt]
+TITLE   :INFO: Launching Setup from Start Menu Brings Up Compliancy Check
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:; winnt:6.5 Service Pack 5 and 5a
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbSQLServ kbSQLServ650sp5 kbDSupport kbGrpDSW2KISV
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After the initial installation of SQL Server 6.5 and Service Pack 5, restarting
+SQL Server 6.5 Setup from the Start menu brings up the BackOffice compliancy
+message, even though the latest version of the service pack is installed.
+
+MORE INFORMATION
+================
+
+The BackOffice compliancy message states that the SQL Server 6.5 Service Pack 5
+is necessary to run the product on Windows 2000. This message appears when
+installing the product for the first time.
+
+In order to run SQL Server 6.5 on Windows 2000, SQL Server 6.5 Service Pack 5
+must be applied after SQL Server 6.5 installation. If SQL Server is reinstalled,
+Service Pack 5 must be reapplied as well.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbSQLServ kbSQLServ650sp5 kbDSupport kbGrpDSW2KISV 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:; winnt:6.5 Service Pack 5 and 5a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

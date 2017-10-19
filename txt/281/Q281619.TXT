@@ -1,0 +1,106 @@
+DOCUMENT:Q281619  14-DEC-2000  [sna]
+TITLE   :HIS 2000 End-User Client Doesn't Delete All Files During Removal
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport kbhis2000bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Host Integration Server (HIS) 2000 End-User Client is removed from a
+computer that is running Microsoft Windows 95 or Microsoft Windows 98 by
+clicking the Add/Remove Programs icon in Control Panel, the following files are
+left in the %WINDIR%\System folder:
+
+ - Winsli.dll
+ - Winsli32.dll
+ - Luastr32.dll
+ - Winrui.dll
+ - Winrui32.dll
+ - Csvstr32.dll
+ - Wincsv.dll
+ - Wincsv32.dll
+ - Wcpic32.dll
+ - Wincpic.dll
+ - Appcst32.dll
+ - Wappc32.dll
+ - Winapcc.dll
+ - Winmgt32.dll
+ - Snadump.dll
+ - Snareg.dll
+ - Snatrcsn.dll
+ - Dmodappc.dll
+ - Snatrc.dll
+ - Snadmod.dll
+ - Snakrnl.dll
+ - Snaclm.dll
+ - Snacnw.dll
+ - Snacbv.dll
+ - Snacip.dll
+ - fmistr32.dll
+ - Vstapi.dll
+ - Snancp.dll
+ - Bvnsst.dll
+ - Ibbcast.dll
+ - Lmbcast.dll
+ - Snasap32.dll
+ - Snands32.dll
+ - Adloc.dll
+ - Snanls.dll
+ - *.nls
+
+This problem does not occur if the HIS 2000 End-User Client is installed on a
+computer that is running Microsoft Windows 2000 Professional or Microsoft
+Windows NT 4.0 Workstation, because these files are not installed in the
+%WINDIR%\System folder.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+
+MORE INFORMATION
+================
+
+The files listed in the "Symptoms" section can be deleted manually after the HIS
+2000 End-User Client is removed.
+
+The Windows 95 or Windows 98 Client for SNA Server 4.0 does not function
+correctly if it is installed after the HIS 2000 End-User Client is removed,
+unless these files are deleted manually prior to installing the SNA Server
+client.
+
+Additional query words: sp1
+
+======================================================================
+Keywords          : kbDSupport kbhis2000bug 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

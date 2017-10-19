@@ -1,0 +1,78 @@
+DOCUMENT:Q257967  17-FEB-2001  [sms]
+TITLE   :SMSINST: Deleting Installer Packages May Remove Shared INI Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbClient kbConfig kbsms200 kbPackage kbsmsInst kbSoftwareDist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience the following problem when you remove a package that shares
+files from a workstation:
+
+When multiple programs that write to the same file, such as Lotus.ini, are
+packaged and distributed by using Systems Management Server (SMS) Installer, you
+may find that when you remove the first package, you also remove the shared
+file.
+
+CAUSE
+=====
+
+This behavior occurs because SMS Installer lists the shared .ini file as a
+component of the first package. So, by removing the first package, you are also
+removing the file, whether or not it is in use by other programs. This behavior
+occurs because of the design of SMS Installer.
+
+WORKAROUND
+==========
+
+To work around this behavior, use either of the following methods:
+
+ - Create a separate package that creates the file on the local computer. You
+   can then install this package first, before other dependent packages are
+   distributed. This ensures that the shared file will still exist when you
+   remove the programs.
+
+ - Include the shared file as part of a standard workstation build. In doing so,
+   the file will already exist (it can be a 0 byte file) on all workstations.
+   When packages are rolled out, they can then edit the file.
+
+MORE INFORMATION
+================
+
+For example, many Lotus products will share the same Lotus.ini file. This is not
+a problem unless you decide to remove the package that you installed first.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbConfig kbsms200 kbPackage kbsmsInst kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200 kbSMSI200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

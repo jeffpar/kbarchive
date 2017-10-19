@@ -1,0 +1,79 @@
+DOCUMENT:Q57949  12-DEC-2001  [visualc]
+TITLE   :INFO: Use of the Stringizing Operator (#) in Macros
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbLangC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 1.5, 2.0, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft C for MS-DOS and Windows NT, when you are writing a preprocessor
+macro that takes an argument that must appear in quotation marks, you can use
+the # sign to expand the argument. One implementation of this preprocessor
+directive is the use of printf() in the macro. The following code demonstrates
+an example:
+
+Sample Code
+-----------
+
+   #define PR(fmt,value) printf("value = %" #fmt "\n", (value))
+
+   #include <stdio.h>
+
+   void main(void)
+   {
+      float afl;
+
+      afl = 3.14f;
+      PR(5.2f, afl);
+   }
+
+The sample code outputs the following string:
+
+   value =  3.14
+
+The # sign in front of the fmt variable allows the macro to be expanded using
+quotation marks. Note that the preprocessor concatenates consecutive pairs of
+double quotation marks so that the following string
+
+   "value = %""5.2f""\n"
+
+is translated into the following:
+
+   "value = %5.2f\n"
+
+Additional query words: pound number
+
+======================================================================
+Keywords          : kbLangC kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC500 kbVC600 kbVC200 kbVC32bitSearch kbVC500Search
+Version           : :1.0,1.5,2.0,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

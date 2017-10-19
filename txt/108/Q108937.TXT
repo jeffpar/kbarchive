@@ -1,0 +1,105 @@
+DOCUMENT:Q108937  09-JUN-1999  [win16sdk]
+TITLE   :PRB: Graying Text in Disabled Multi-line Edit Controls
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbCtrl kbEditCtrl kbSDKPlatform
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Disabling multi-line edit controls prevents user input to the control, but does
+not make the text unavailable (gray or dim) in the edit control. However, single
+line edit controls, when disabled, make the text unavailable, as well as
+preventing user input.
+
+RESOLUTION
+==========
+
+This is a design feature in Windows and is not a bug.
+
+MORE INFORMATION
+================
+
+The rationale behind this design feature is that the single line edit control is
+generally used in different circumstances than is the multi-line edit control.
+The single line edit control is used in such situations as selecting a filename,
+where making the disabled text unavailable helps make the user interface
+clearer. Multi-line edit controls are often used as read-only fields, and
+therefore need to be black when disabled.
+
+One way to make the text of a disabled multi-line edit control unavailable is in
+the following description.
+
+Whenever a predefined control is about to draw itself, it sends its parent a
+WM_CTLCOLOR message. The parent can use this message to set the control's text
+and background colors.
+
+In the window procedure of the multi-line edit control's parent window, process
+the WM_CTLCOLOR message as follows:
+
+Sample Code
+-----------
+
+    static HBRUS  hBrush;
+
+    case WM_INITDIALOG:
+
+      hBrush = CreateSolidBrush (GetSysColor (COLOR_WINDOW));
+      break;
+
+    case WM_CTLCOLOR:
+
+      /* If the control is disabled, set the text color to gray and the
+       * background color to the system window background color.
+       */ 
+
+       hCtl = GetDlgItem (hDlg, IDC_MULTIEDIT );
+
+       enabled = IsWindowEnabled(hCtl) ;
+
+       if ((!enabled) && (HIWORD(lParam) == CTLCOLOR_EDIT)) {
+         SetTextColor(wParam, RGB(128,128,128) );
+         SetBkColor( wParam, GetSysColor (COLOR_WINDOW));
+         return ((HBRUSH) hBrush);
+       }
+
+       break;
+
+     InvalidateRect (hCtl, NULL, TRUE);
+     UpdateWindow (hCtl);
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbCtrl kbEditCtrl kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

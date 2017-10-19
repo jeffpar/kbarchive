@@ -1,0 +1,63 @@
+DOCUMENT:Q193613  09-AUG-2001  [iis]
+TITLE   :ADSI Paths Greater than 80 Characters Causes Access Violation
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.5,4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix kbADSI kbiis400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Active Directory Service Interfaces, version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using paths that are greater than 80 characters with the Microsoft Active
+Directory Services Interface (ADSI) causes an access violation error to occur.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0. This problem was first corrected in Windows NT 4.0 Service Pack 4.0
+and Windows NT Server 4.0, Terminal Server Edition Service Pack 4.
+
+Additional query words: pathnames path-names path names eighty akz
+
+======================================================================
+Keywords          : kbWinNT400sp4fix kbADSI kbiis400 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbiisSearch kbAudDeveloper kbADSISearch kbiis400 kbADSI250
+Version           : winnt:2.5,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

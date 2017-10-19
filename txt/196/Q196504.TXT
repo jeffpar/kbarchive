@@ -1,0 +1,81 @@
+DOCUMENT:Q196504  14-NOV-2000  [word97]
+TITLE   :WD97: Symbol in STYLEREF Field Appears as Opening Parenthesis
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfield word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you insert a symbol in a paragraph and refer to that paragraph with a
+STYLEREF field, the symbol may not appear correctly in the STYLEREF field
+result. Instead, it appears as a "(" symbol (opening parenthesis).
+
+CAUSE
+=====
+
+This happens when you insert the symbol and specify any font other than Normal
+text.
+
+WORKAROUND
+==========
+
+There are three ways to make the symbol appear correctly in the STYLEREF field
+result:
+
+Method 1
+--------
+
+Insert the symbol without specifying a particular font. To do this, follow these
+steps:
+
+1. On the Insert menu, click Symbol.
+
+2. In the Font box, select (normal text).
+
+3. Select the symbol.
+
+Method 2
+--------
+
+If the symbol is in the Special Characters list, use the shortcut keystroke to
+insert the symbol.
+
+Method 3
+--------
+
+With the insertion point in the paragraph you are referring to, hold down the ALT
+key and type the four-digit ANSI code using the numeric keypad.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

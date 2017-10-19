@@ -1,0 +1,82 @@
+DOCUMENT:Q157398  08-NOV-2001  [homegame]
+TITLE   :Soccer: What's in the Goodies Folder
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Soccer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Goodies folder on the Microsoft Soccer compact disc contains three items:
+
+ - Internet Explorer 3.0
+ - Microsoft Games Demo
+ - Microsoft System Information Application
+
+To access these items, click Start, point to Programs, then click Windows
+Explorer. Find your Goodies folder on your Football compact disc.
+
+MORE INFORMATION
+================
+
+Internet Explorer 3.0
+---------------------
+
+The Goodies folder contains the IE 3.0 For Windows 95 folder. If you haven't
+installed Internet Explorer 3.0, you can install it from the IE 3.0 For Windows
+95 folder. This folder contains the following localized versions: English,
+Portuguese (Brazil), French, German, Italian, and Spanish. To install Internet
+Explorer, double-click the appropriate icon in the folder.
+
+Other localized versions of Internet Explorer 3.0 are available on the Internet
+World Wide Web site:
+
+   http://www.microsoft.com/ie/
+
+Microsoft Games Demo
+--------------------
+
+The Goodies folder contains the Gamedemo folder, which contains the Microsoft
+Games Demo. The Games Demo includes promotions and, in some cases, playable
+demos for other Microsoft games. To run the Games Demo, just double-click the
+Gamesmpl.exe icon in the Gamedemo folder.
+
+Microsoft System Information Application
+----------------------------------------
+
+The Goodies folder also contains the Microsoft System Information Application.
+This application is available to help you provide information about your system
+configuration that could assist Microsoft product support engineers in
+troubleshooting.
+
+Additional query words: 1.00 football soccer trouble shoot
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbSoccer
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

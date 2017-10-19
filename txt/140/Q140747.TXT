@@ -1,0 +1,75 @@
+DOCUMENT:Q140747  29-MAR-2002  [win95x]
+TITLE   :Error Installing Spanish Keyboard Layouts
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg win95kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the U.S. version of Windows 95, you may receive the following
+error message if you try to add one of the Spanish keyboard layouts using the
+Keyboard tool in Control Panel:
+
+   Windows could not copy the Spanish (Modern Sort) files. Make sure a disk is
+   in your drive, the file is on the disk, and that the drive door is closed.
+
+CAUSE
+=====
+
+This problem is caused by an error in the Multilng.inf file included with the
+U.S. version of Windows 95. The error is known to affect the following keyboard
+layouts:
+
+ - Basque
+
+ - Catalan
+
+ - Spanish (Mexican)
+
+ - Spanish (Modern Sort)
+
+ - Spanish (Traditional Sort)
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. This
+problem no longer occurs in newer versions of Windows. To resolve this problem,
+install the current version of Windows. For information about the current
+version of Windows, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/windows
+
+Additional query words: w95qfe locale regional hang
+
+======================================================================
+Keywords          : kbenv kberrmsg win95 kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

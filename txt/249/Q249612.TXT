@@ -1,0 +1,83 @@
+DOCUMENT:Q249612  17-NOV-2000  [exchange]
+TITLE   :XCLN: Auto Name Check Does Not Work After Running Exmerge
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP2
+OPER/SYS:
+KEYWORDS:exc55sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Microsoft Exmerge utility to re-create and populate the
+Information Store, the automatic name checking feature on the Microsoft Outlook
+Contacts folder may not work.
+
+CAUSE
+=====
+
+When you create a new Information Store, a new set of mailbox folders is
+created. The automatic name checking feature is linked to the Contacts folder of
+the previous Information Store. When this link is broken, the automatic name
+checking feature does not work.
+
+RESOLUTION
+==========
+
+To resolve this issue, add the new Contacts folder to the Outlook Address Book:
+
+1. In Outlook, right-click the Contacts folder, and then click Properties.
+
+   NOTE: The Contacts folder is created automatically the first time the user
+   logs on to the mailbox in Outlook.
+
+2. On the Outlook Address Book tab, click to select the "Show this folder as an
+   e-mail Address Book" check box.
+
+3. Click OK.
+
+4. On the Tools menu, click Services.
+
+5. On the Services tab, click Outlook Address Book, and then click Properties.
+
+6. Click the old Contacts folder, and then click "Remove Address Book".
+
+7. Click OK.
+
+8. On the Tools menu, click Services, click the Addressing tab, and then click
+   Add.
+
+9. In the Address List box, click the new Address Book you created in step two,
+   and then click Add.
+
+10. Click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp2 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP2
+Version           : :5.5 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

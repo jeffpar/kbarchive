@@ -1,0 +1,81 @@
+DOCUMENT:Q149752  02-NOV-1999  [fortran]
+TITLE   :BUG: FOR2862 Error Caused by External Function Without Type
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you don't fully qualify an external function with a type and attempt to use
+it in a WRITE statement, the following compilation error occurs:
+
+   error FOR2862: procedure name <procedure> in I/O list
+
+RESOLUTION
+==========
+
+Fully qualify the externl function by giving it a type attribute.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem and Workaround
+------------------------------------------------
+
+   ! Compile options needed: none
+
+         MODULE THE_MODULE
+           IMPLICIT INTEGER(E)
+   ! comment the next line for workaround
+           EXTERNAL EXTERN_FUNC
+   ! uncomment the next line for workaround
+   !        INTEGER, EXTERNAL :: EXTERN_FUNC
+         END MODULE
+
+         PROGRAM THE_PROGRAM
+           USE THE_MODULE
+           WRITE(6,*) EXTERN_FUNC()
+         END PROGRAM THE_PROGRAM
+
+         INTEGER FUNCTION EXTERN_FUNC()
+           EXTERN_FUNC = 737
+         END FUNCTION
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

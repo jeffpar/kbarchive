@@ -1,0 +1,66 @@
+DOCUMENT:Q135259  06-DEC-2000  [powerpt]
+TITLE   :"More Colors" Color Squares Won't Change from Black or White
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:3.1,4.0,4.0a,4.0c,7.0,95; winnt:3.51
+OPER/SYS:
+KEYWORDS:kbgraphickbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c, used with:
+    - the operating system: Microsoft Windows 3.1 
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows NT 3.51 
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select a black or white color swatch in the Slide Color Scheme dialog box
+or the Colors And Lines dialog box and then go to the More Colors dialog box,
+moving the cross-hairs on the color palette will not change the Color or Solid
+squares. If you select any color swatch other than black or white, the Color and
+Solid squares change color to reflect the location of the cross-hairs on the
+color palette.
+
+RESOLUTION
+==========
+
+To get to the More Colors dialog box, you must first go to the Other Colors
+dialog box. If, while you are there, you click any color besides black or white,
+the More Colors dialog box will behave normally when you get there.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PowerPoint version 4.0 and 7.0
+for Windows. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 4.00a 4.00c winppt win95 winnt
+
+======================================================================
+Keywords          : kbgraphic kbbuglist
+Technology        : kbPowerPtSearch kbZNotKeyword2
+Version           : WINDOWS:3.1,4.0,4.0a,4.0c,7.0,95; winnt:3.51
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

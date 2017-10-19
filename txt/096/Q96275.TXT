@@ -1,0 +1,67 @@
+DOCUMENT:Q96275  09-NOV-1999  [macmail]
+TITLE   :Mac ARA: AppleLink Gateway Conflicts with ARA
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1,3.1a,3.1c,3.1d
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.1, 3.1a, 3.1c, 3.1d 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The communication program in the AppleLink gateway will not function correctly
+with AppleTalk Remote Access (ARA) version 1.0. If ARA is installed on the
+server with an AppleLink master gateway and the communication program in the
+AppleLink gateway tries to initiate a call, the following error message will
+occur:
+
+   Ramsdopen: -97
+
+CAUSE
+=====
+
+ARA utilizes the Serial Port Arbitrator to check if the serial port is in use
+before attempting communication. The AppleLink gateway does not recognize the
+Serial Port Arbitrator and tries to use the modem port directly. To avoid this
+problem, put the AppleLink gateway on another server that does not have ARA
+installed. If an alternate network connection exists such as EtherTalk or
+TokenTalk, ARA may be moved to the printer port which will leave the modem port
+available for AppleTalk exclusively. This solution however, requires a modem for
+both the gateway and ARA.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.1 of Microsoft Mail
+for AppleTalk Networks. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.10 3.10a 3.10c 3.10d macmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310 kbMailATN310a kbMailATN310c kbMailATN310d
+Version           : WINDOWS:3.1,3.1a,3.1c,3.1d
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

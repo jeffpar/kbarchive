@@ -1,0 +1,75 @@
+DOCUMENT:Q185079  14-OCT-1999  [win3x]
+TITLE   :Date of File Copied to a Windows NT Server and Back Is Changed
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::3.11
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you copy a file from a computer running Workgroup Add-On for MS-DOS to a
+Windows NT server and then back again, the file date may be changed.
+
+For example, if you copy a file with a date of 01-01-98 to a Windows NT server,
+the date is changed to 13-01-97 when you copy the file back to the computer
+running Workgroup Add-On for MS-DOS.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions exist:
+
+ - You copy a file created on January 1 of any non-leap year.
+
+ - You are using the basic redirector included with Workgroup Add-On for MS-DOS.
+
+RESOLUTION
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Use the full redirector included with Workgroup Add-On for MS-DOS. To do so,
+   type "net start full" (without the quotation marks) at a command prompt, and
+   then press ENTER.
+
+ - Copy the file to the Windows NT server using the XCOPY command instead of the
+   COPY command.
+
+MORE INFORMATION
+================
+
+The file date is always changed to 13-01-<nn>, where <nn> is one
+year less than the year of the file you originally copied to the Windows NT
+server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : :3.11
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

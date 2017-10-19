@@ -1,0 +1,122 @@
+DOCUMENT:Q122337  28-AUG-1995  [foxpro]
+TITLE   :PRB: Moving Wizard-Generated Code from Windows to MS-DOS
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.00 2.5x 2.60 2.60a | 2.5x 2.60 2.60a
+OPER/SYS:MS-DOS               | WINDOWS
+KEYWORDS:kbtool kbprb kbenv
+
+---------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a
+---------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A screen created in FoxPro for Windows by using the Wizards won't run
+correctly in FoxPro for MS-DOS. You see blinking and flashes when you
+attempt to run the resulting SPR code in FoxPro for MS-DOS.
+
+CAUSE
+=====
+
+This occurs because the Windows GUI environment has a larger display area
+than MS-DOS.
+
+RESOLUTION
+==========
+
+To run Wizard-generated code on the MS-DOS platform, you must copy the
+Wizard-created .SCX and associated .SCT file to the MS-DOS environment.
+Then use the Transporter to convert them for use in the native MS-DOS
+environment. For the example given in the More Information section, you
+would copy the .SCX and .SCT files; then choose File, Open on the CUSTOMER
+screen to invoke the Transporter and create MS-DOS objects. Once in the
+screen tool, make any necessary modifications to the screens. Then choose
+Program, Generate from the FoxPro menu to generate MS-DOS-specific code.
+Then the transported code can be run on the MS-DOS platform.
+
+NOTE: If you simply re-generate the code, your screen will NOT be fully
+functional. This is because the navigation buttons will be off the screen
+when the un-changed screen is brought into FoxPro and then regenerated. You
+will have to move things around in order to get all fields and buttons
+displayed on one screen.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Demonstrate Behavior
+-----------------------------
+
+To use the following information, you must have installed the tutorial
+databases in the tutorial directory and have access to the CUSTOMER
+database in both FoxPro for MS-DOS and FoxPro for Windows. This
+demonstration uses the Screen Wizard, so to follow it, you will need
+version 2.6 of both packages.
+
+1. In the Command Window of FoxPro for Windows, issue these commands:
+
+   SET DEFAULT TO C:\<FoxPro directory>\TUTORIAL <Enter>
+   SELECT 1
+   USE CUSTOMER
+
+2. From the FoxPro menu, select Run, Wizard, Screen.
+
+3. On screen 1 of 5, the only table that should be selected is CUSTOMER.
+   Click the NEXT button.
+
+4. On screen 2, click the "Add All" button to select all fields from the
+   CUSTOMER database. Then click the NEXT button.
+
+5. On screens 3 and 4, click the NEXT button without selecting anything.
+
+6. On screen 5, choose the "Save and run screen" radio button. In the Save
+   As dialog box, accept the default name of CUSTOMER or type in another
+   name. If you choose to type in a different name, modify the following
+   directions accordingly. When finished, click the SAVE button.
+
+   At this point, FoxPro will generate the new screen and run it. When the
+   new screen comes up, click the CLOSE button.
+
+7. Copy the *.SPR file that was just created to the FoxPro for MS-DOS
+   tutorial directory (usually, C:\FOXPRO\TUTORIAL). This is important
+   because the generated screen will require the use of the Customer table.
+   If you do not have the CUSTOMER table in the Tutorial directory, modify
+   the previous directions accordingly.
+
+8. Start FoxPro for MS-DOS. Choose Program, Do from the FoxPro menu. Select
+   CUSTOMER.SPR. The SPR will run, however what you will see on the screen
+   is blinking text on a solid-colored background. In most instances, this
+   will likely be white field names, black field values, and a gray
+   background. What will be displayed is shown not in a window but on the
+   main FoxPro workspace -- consequently, while the push buttons do
+   function correctly, the information displayed can't be sized or moved.
+
+Additional reference words: blink transport convert move FoxWin FoxDos
+XPlatform
+KBCategory: kbtool kbprb kbenv
+KBSubcategory: FxtoolWizscreen
+
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1995.

@@ -1,0 +1,76 @@
+DOCUMENT:Q125976  08-AUG-2001  [winnt]
+TITLE   :How to Assign IPX Network Numbers to Multiple Network Cards
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+You cannot configure a Windows NT computer through the user interface to
+access two different IPX networks on two different network adapters, each
+with a different frame type. If you run Control Panel, choose Network,
+select each adapter, and assign a network number, the same network number
+is used for both network adapters. In order to provide the network number
+for each network card, you must modify the Windows NT Registry.
+
+   WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+   problems that may require you to reinstall Windows NT to correct them.
+   Microsoft cannot guarantee that any problems resulting from the use of
+   Registry Editor can be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (REGEDT32.EXE).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+
+   SYSTEM\CurrentControlSet\Services\NwlnkIpx\NetConfig\<network card>
+
+   where <network card> is the network card you are configuring for a
+   different IPX network.
+
+3. Remove the entry: NetworkNumber
+
+4. From the Edit menu, choose Add Value. Add the following:
+
+   Value Name: NetworkNumber
+   Data Type: REG_MULTI_SZ
+   Data: <Network ID>
+
+5. If necessary, repeat steps 2 through 4 for each network adapter.
+
+6. Quit the Registry.
+
+7. Shutdown and restart Windows NT.
+
+For additional information, please see the following article in the
+Microsoft Knowledge base:
+
+   Q150546: NWLink IPX/SPX: Network Number vs. Internal Network Number
+
+Additional query words: prodnt nwlink ethernet 802.2 802.3 snap multihomed interface card cards nic nics
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

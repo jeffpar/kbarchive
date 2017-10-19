@@ -1,0 +1,75 @@
+DOCUMENT:Q272746  12-NOV-2001  [msnetwork]
+TITLE   :MSN Companion Keyboard doesn't work
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use your MSN Companion keyboard, you cannot input any data or
+use the mouse.
+
+CAUSE
+=====
+
+This can occur if the batteries for the keyboard are low on power, you are too
+far from the console, the keyboard is pointed away from the console, or somthing
+is between the keyboard and console blocking the signal.
+
+RESOLUTION
+==========
+
+The MSN Companion keyboard sends a signal to the console by ultraviolet light,
+just like a TV remote control.
+
+To fix your keyboard, if it is not working
+
+1. Make sure there is nothing blocking the line-of-sight from the keyboard to
+   the Web Companion Console.
+
+2. Test the keyboard by placing it a few inches from the console and press the
+   Start button or Start page button, or try moving the mouse control. If it
+   works, move the keyboard further away, testing it as you get further away. Be
+   certain the
+
+3. Check the batteries. Take them out and insert a set of new batteries.
+
+4. If after these steps, your keyboard does not work, please call MSN Technical
+   Support at 1 (888) 386-6497
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu msn msnetwork web companion
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

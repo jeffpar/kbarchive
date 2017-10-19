@@ -1,0 +1,98 @@
+DOCUMENT:Q224245  06-AUG-2002  [automap]
+TITLE   :Err Msg: Couldn't Find the Microsoft Expedia Streets & Trips...
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you switch from another program to Microsoft Expedia Streets and Trips
+2000, you may receive the following error message
+
+   Couldn't find the Microsoft Expedia Streets & Trips 2000 CD-ROM in drive
+   <cd-rom>:. Ensure that the CD is correctly inserted in your
+   <cd-rom>: drive, then click OK (or click Cancel to exit the
+   application).
+
+where <cd-rom> is the drive letter of your CD-ROM or DVD-ROM drive.
+
+If you click Cancel, you quit the program. If you click OK or attempt to use the
+program without inserting the CD-ROM, you receive the following error message on
+a blue screen:
+
+   Error Reading CD-ROM in Drive <cd-rom>:
+
+   Please insert CD-ROM
+   With Serial Number <xxxx-xxxx> in Drive <cd-rom>:
+
+   If the CD-ROM is still in the drive, it may require cleaning.
+
+   Press ENTER for OK, or press ESC to Cancel: OK
+
+where <cd-rom> is the drive letter of your CD-ROM or DVD-ROM drive.
+
+If you press ENTER without inserting the CD-ROM, the error message remains on the
+screen. If you press ESC without inserting the CD-ROM, an empty Expedia Streets
+and Trips 2000 window is displayed on the screen, and the computer may stop
+responding (hang).
+
+If you insert the CD-ROM and then press ENTER, you can continue to use Expedia
+Streets and Trips 2000. However, if you do not click OK to close the error
+message, the computer may eventually hang.
+
+CAUSE
+=====
+
+This behavior can occur if you remove the Expedia Streets and Trips 2000 CD-ROM
+from the CD-ROM or DVD-ROM drive while the program is running.
+
+RESOLUTION
+==========
+
+To resolve this issue, insert the Expedia Streets and Trips 2000 CD-ROM into the
+CD-ROM or DVD-ROM drive, press ENTER to close the error message on the blue
+screen, and then click OK to close the Expedia Streets and Trips 2000 error
+message before you continue to use the program.
+
+To prevent this issue from occurring, do not remove the Expedia Streets and Trips
+2000 CD-ROM from the CD-ROM or DVD-ROM drive while the program is running.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Expedia Streets and
+Trips 2000.
+
+Additional query words: multi multi-media media mm amap automap crash lock freeze
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

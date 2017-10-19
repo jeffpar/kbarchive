@@ -1,0 +1,90 @@
+DOCUMENT:Q288116  20-JUL-2001  [frontpg]
+TITLE   :FP98: Percent Sign in URL Returns HTTP 404 Error
+PRODUCT :Word Front Page
+PROD/VER::5,5.5
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 98 for Windows 
+ - Microsoft Internet Explorer versions 5, 5.5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2002 version of this article, see Q289624.
+
+SYMPTOMS
+========
+
+When you try to browse a folder whose name contains a percent sign, you may
+receive an error message similar to the following:
+
+   HTTP/1.1 404 Object Not Found
+
+CAUSE
+=====
+
+A percent sign defines an "escape sequence" in a Web address, as described in
+section "2.4. Escape Sequences," in the Request for Comment (RFC) article number
+2396.
+
+MORE INFORMATION
+================
+
+Escape sequences are used in a Uniform Resource Locator (URL) to allow
+characters that may appear in a folder or file name, but are not allowed in a
+URL. The syntax for an escape sequence is defined as a percent sign, followed by
+two hexadecimal digits, (for example, %A1, %2B, and so on).
+
+When you name a folder to have a percent sign, if the characters following the
+percent sign are valid hexadecimal characters, the folder name may not be
+resolved correctly, for example:
+
+ - A folder named 100%DAD may not work, because the two characters following the
+   percent sign are valid hexadecimal characters. In this case, the "%DA"
+   sequence may be misinterpreted as character 218, which, depending on the
+   character set that is being used, may be a "Latin Capital U with Acute." This
+   results in a Web request for a folder name that may not physically exist on
+   the server.
+
+ - A folder named 100%MOM may work, because the two characters following the
+   percent sign are not valid hexadecimal characters.
+
+Additional References
+---------------------
+
+For more information about this topic, please see the following Web sites:
+
+   RFC 2396 (ftp://nis.nsf.net/internet/documents/rfc/rfc2396.txt) Uniform
+   Resource Identifiers (URI): Generic Syntax
+
+   RFC 2396 (ftp://nis.nsf.net/internet/documents/rfc/rfc2616.txt) Hypertext
+   Transfer Protocol - HTTP/1.1
+
+   Q284278 FP2000: Cannot Open a Subweb with an Ampersand Character in the Name
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbIEsearch kbFrontPageSearch kbZNotKeyword4 kbZNotKeyword2 kbFrontPage98Search kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE500WinNT400 kbIE550WinNT400 kbIE550Search
+Version           : :5,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

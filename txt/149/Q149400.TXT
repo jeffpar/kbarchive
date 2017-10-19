@@ -1,0 +1,66 @@
+DOCUMENT:Q149400  17-DEC-1999  [schedplus]
+TITLE   :Err Msg: The Topic Does Not Exist. Contact Your Application...
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you access a help topic in Schedule+, you may get the following error
+message:
+
+   The Topic Does Not Exist. Contact your application vendor for an updated file
+   (129).
+
+CAUSE
+=====
+
+Microsoft Windows 95 was installed as an upgrade over Microsoft Windows for
+Workgroups version 3.11. Windows for Workgroups 3.11 comes with Schedule+ 1.0,
+and it's associated help file, Schdplus.hlp, is located in the C:\WINDOWS
+directory. During Windows 95 installation the Schedule+ 1.0 help file is not
+removed.
+
+Schedule+ 7.0 also has a help file with the same name, but is located in the
+Schedule directory. Therefore, multiple Schedule+ help files exist on the hard
+drive causing the above error message.
+
+WORKAROUND
+==========
+
+1. Search your hard drive for all instances of Schdplus.hlp.
+
+2. Rename the extra copies. NOTE: The only copy that should exist will be in the
+   Schedule+ 7.0 directory.
+
+Additional query words: 95 error 129 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

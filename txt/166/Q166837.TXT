@@ -1,0 +1,75 @@
+DOCUMENT:Q166837  31-JUL-2001  [sms]
+TITLE   :SMS: Incorrect Remote Control Permissions Dialog Box
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When a remote control session is established by a user whose user name contains a
+space, as in "FirstName LastName," the Remote Control Permissions dialog box on
+the system being remote controlled will display the either of the following:
+
+ - Will you allow "FirstName" to LastName?
+
+-or-
+
+ - Will you allow "FirstName" to ?? Unknown prompt from server?
+
+The message that should be displayed is
+
+   Will you allow "FirstName LastName" to Remote Control your machine?
+
+where "FirstName LastName" is the Windows NT User Name of the account that is
+attempting remote control.
+
+A user logged on with a User Name of one word who has a Full Name of two words
+with a space, will also produce the same error on the client computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+MORE INFORMATION
+================
+
+The Remote Control Permissions dialog box on the client displays correctly and
+completely if the Remote Controlling user's name is only one word.
+
+
+Additional query words: prodsms rc
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

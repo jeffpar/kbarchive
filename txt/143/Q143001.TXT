@@ -1,0 +1,84 @@
+DOCUMENT:Q143001  11-FEB-2000  [foxpro]
+TITLE   :PRB: Child Property Doesn't Reflect Parent Container Property
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set a child object's property value equal to a parent container's value
+and then change the value for the parent container's property, the new value is
+not reflected by the child object.
+
+CAUSE
+=====
+
+Expressions placed in the child object's property sheet are evaluated once.
+
+RESOLUTION
+==========
+
+If you change the parent container's property, you can force a reevaluation of
+the child object's property by clicking into the property of the child on the
+property sheet and pressing ENTER or by clicking the checkmark in the child
+object's property sheet.
+
+When you run the form, Visual FoxPro will evaluate all expressions once to
+initialize the altered properties of every object. The exceptions to this are
+the DynamicXX properties of the Grid column object. These are evaluated
+dynamically when the grid is refreshed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Demonstrate Behavior
+-----------------------------
+
+1. Create a new form.
+
+2. Place an object such as a command button on the form.
+
+3. In the Property sheet, set the property of the object's FontSize to
+   Thisform.FontSize. After you press ENTER, the child object should pick up the
+   value from the parent container.
+
+4. Change the parent container's FontSize value. Note that the child does not
+   pick up the new value until you force the form to reevaluate the parent
+   container's value.
+
+Additional query words: VFoxWin dynamic evaluate
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

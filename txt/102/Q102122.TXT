@@ -1,0 +1,92 @@
+DOCUMENT:Q102122  10-NOV-1999  [macmail]
+TITLE   :Mac SMI: MAPI For AppleTalk Networks Error Codes
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Following are MAPI, Mail Application Programming Interface, error codes for
+versions 3.0 and 3.1 of Microsoft Mail for AppleTalk Networks. You may see these
+error codes in any application or tool that uses MAPI.
+
+   NoDriver -2600 There is no Microsoft Mail driver present
+
+   OldDriver -2599 The driver's version is too old
+
+   NoServer -2598 The driver is not connected to a server
+
+   OldServer -2597 The server's version is too old
+
+   BadMessHandle -2596 The MessHdl doesn't point to a valid message
+
+   BadListHandle -2595 The ListHdl doesn't point to a valid list
+
+   TooManyEnclosures -2594 No more enclosures may be added
+
+   NoSuchEnclosure -2593 Index into enclosure list was out of bounds
+
+   MessAlreadySent -2592 Invalid request on sent message
+
+   CantReplyToStatus -2591 Can't reply to or forward status message
+
+   MessNotSent -2590 Invalid request on unsent message
+
+   NoRecipients -2589 Message has no recipients
+
+   BodyTooBig -2588 Body field greater than 32767 characters
+
+   BadFldrId -2587 Bad folder ID
+
+   RootFldr -2586 Folder is root of hierarchy
+
+   DupFldrName -2585 A folder with the same name already exists
+
+   BadFldrName -2584 Folder name is invalid
+
+   NoFCPInit -2583 FCP MAPI has not been initialized
+
+   BadListIndex -2582 List index was out of bounds
+
+   BadListField -2581 Subelem passed to msmGetListField was wrong
+
+   NoSuchServer -2580 No server with that serial number exists
+
+   AlreadyLoggedOn -2579 User is already logged on
+
+   EnclosuresTooBig -2578 Enclosure size limit exceeded
+
+   InvalidParameter -2577 Parameter is not valid (NULL?)
+
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

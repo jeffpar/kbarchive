@@ -1,0 +1,56 @@
+DOCUMENT:Q145801  01-JUN-2001  [homemm]
+TITLE   :Pregnancy and Child Care: Problems Connecting to WWW Sites
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Pregnancy and Child Care contains links to various World Wide Web
+(WWW) sites. Sometimes, you are not able to connect to those sites.
+
+RESOLUTION
+==========
+
+World Wide Web (WWW) sites that are listed in Microsoft Pregnancy and Child Care
+are not managed or monitored by Microsoft. These sites may not be accessible for
+one or more of the following reasons:
+
+ - The WWW address may not be accessible at all times. Try accessing the WWW
+   link at a later time.
+
+ - The owner of the World Wide Web link may have moved or given up the WWW
+   address. Use an Internet browser to check the address. Pregnancy and Child
+   Care cannot search for the WWW address if the site has been moved.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles kbmm kbfaq kbpriority1 childcare msnet net microsoft network
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

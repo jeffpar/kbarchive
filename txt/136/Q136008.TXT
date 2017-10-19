@@ -1,0 +1,59 @@
+DOCUMENT:Q136008  18-NOV-1999  [pcmail]
+TITLE   :PC Ext: The F2 Key Does Not Display All Postoffices
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the External Mail program with 13 or more postoffices, and you
+press the F2 key to view the status of postoffices and use the down arrow to
+scroll to view other postoffices, you do not see the 13th postoffice in the
+list.
+
+RESOLUTION
+==========
+
+To see all available postoffices, use the down arrow key to scroll to the bottom
+of the list; then use the up arrow key to go back to the top of the list. The
+missing postoffice will appear as you scroll up.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0a, 3.2, 3.2a,
+and 3.5 of Microsoft Mail for PC Networks. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 3.00 3.00a 3.20 3.20a 3.50 3.x
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN300a kbMailPCN350
+Version           : WINDOWS:3.0,3.0a,3.2,3.2a,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

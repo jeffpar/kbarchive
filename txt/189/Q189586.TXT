@@ -1,0 +1,67 @@
+DOCUMENT:Q189586  18-MAY-2001  [exchange]
+TITLE   :XFOR: Dial-up Internet Mail Service Fails with Event 4106
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows NT 4.0 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you set up a dial-up Internet Mail Service connector, the following stop
+events randomly appear in the application event log:
+
+   MSExchangeIMC Error SMTP Interface Events 4106 The Dial-up connection 'Phone
+   book entry' could not be made. The error reported was: [317] (317)
+
+   -OR-
+
+   MSExchangeIMC Error SMTP Interface Events 4106 The dial-up connection 'Phone
+   book entry' could not be made. The error reported was: [4264763456]
+   (4264763456)
+
+When this event occurs, the modem fails to dial. The modem eventually recovers
+and successfully dials. This event can cause the Internet Mail Service connector
+to miss its scheduled dial-up session.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Windows NT 4.0 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces): S E R V P A C K
+
+Additional query words: sp4
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTSsearch kbExchangeSearch kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

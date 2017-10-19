@@ -1,0 +1,69 @@
+DOCUMENT:Q153939  31-OCT-1999  [crossnet]
+TITLE   :WFW TCPIP32b Client Does Not Hold Lease if DHCP Not Available
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11,3.11a,3.11b
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A computer running Windows For Workgroups (WFWG) with TCPIP32 DHCP client
+installed and that is also running the Shiva Remote client that is supplied with
+Microsoft Exchange, is unable to access TCP/IP resources after being restarted.
+Carrying out an ipconfig command from an MS-DOS command prompt shows an IP
+address of 0.0.0.0. The client previously had a valid DHCP lease before
+restarting.
+
+CAUSE
+=====
+
+The client does not retain the previous lease after being restarted. Instead, it
+issues a new discover <request packet?> each time it is restarted. The
+DHCP server was temporarily unavailable when the WFWG client restarted and was
+unable to lease a new address.
+
+There are 2 files that may have been replaced as a hotfix, Vdhcp.386 and
+Vnbt.386. The file dates would be from 1996. These files are necessary for the
+Shiva remote client to accept a TCP/IP address from a PPP server. However, these
+files are the cause of the client not retaining a valid lease after restart.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups TCPIP32
+version 3.11b. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

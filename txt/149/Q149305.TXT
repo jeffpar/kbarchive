@@ -1,0 +1,78 @@
+DOCUMENT:Q149305  18-FEB-2002  [winnt]
+TITLE   :PCMCIA Network Cards May Fail to Start During NT Installation
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51,4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Installing Windows NT on a machine using certain PCMCIA network cards may cause
+the following error message:
+
+   The dependency service or group failed to start.
+   This error prevented the network from starting.
+
+To correct this problem, choose Yes to return to the network dialog box to
+reconfigure the software. After you finish installing Windows NT and reboot your
+computer, the network driver should start normally, giving you access to the
+network.
+
+MORE INFORMATION
+================
+
+These messages usually occur when you use OEM network drivers. Windows NT can
+only dynamically start PCMCIA network cards that are autodetected by the Windows
+NT Setup program. OEM drivers, by design, are not autodetected by the Setup
+program. Windows NT PCMCIA.SYS handles this special case by starting the network
+driver without rebooting. This issue has nothing to do with the OEMSETUP.INF
+file or OEM driver supplied by the network card manufacturer.
+
+Currently, the following PCMCIA network cards can be autodetected and installed
+without rebooting if the defaults are accepted and nonconflicting:
+
+   3Com 3C589 Etherlink III PCMCIA Ethernet Adapter
+   3Com 3C589B Etherlink III PCMCIA Ethernet Adapter
+   IBM PCMCIA Ethernet Adapter II
+   Kingston EtherRx PCMCIA Adapter
+   National InfoMover NE4100 PCMCIA Ethernet Adapter
+
+NOTES:
+
+ - The Toshiba T4900 and IBM ThinkPads cannot use IRQ=10 (reserved for onboard
+   soundcard).
+
+ - The Compaq LTE-5x00 cannot use 2, 5, 10, or 11 if a docking station is using
+   an NE2000-compatible network card.
+
+Additional query words: autodetect autostart unattend unattended
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

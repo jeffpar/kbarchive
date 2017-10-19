@@ -1,0 +1,72 @@
+DOCUMENT:Q238050  25-JUL-2001  [homemm]
+TITLE   :Encarta Dictionary 2000: Cannot Scroll Using IntelliMouse Wheel
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbimu kbHardware
+
+======================================================================
+This article discusses a Beta release of a Microsoft product. The 
+information in this article is provided as-is and is subject to change
+without notice.
+
+No formal product support is available from Microsoft for this Beta 
+product. For information about obtaining support for a Beta release, 
+please see the documentation included with the Beta product files, or 
+check the Web location from which you downloaded the release.
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta World English Dictionary 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be unable to scroll through the Pinpointer in Microsoft Encarta World
+English Dictionary 2000 using the Microsoft IntelliMouse wheel.
+
+CAUSE
+=====
+
+This behavior can occur if you use the version of the Microsoft IntelliPoint
+software that is included in Microsoft Windows 98 or Microsoft Windows 2000.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest version of the Microsoft
+IntelliPoint software from the following Microsoft Web site:
+
+   http://www.microsoft.com/products/hardware/mouse/intellimouse/default.htm
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm ewed scrolls mouse point
+
+======================================================================
+Keywords          : kbenv kbhw kbimu kbHardware 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

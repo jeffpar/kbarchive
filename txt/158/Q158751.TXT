@@ -1,0 +1,103 @@
+DOCUMENT:Q158751  07-SEP-2001  [winnt]
+TITLE   :Printing Problems Caused By Fax Software
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Spooler Service stops running on a Windows NT computer and the following
+error occurs:
+
+
+On the print server, the following error appears in the system log when users
+attempt to print:
+
+   Event ID: 2510
+   Source: SRV
+   Type: Error
+   Description: "The server service was unable to map error code 1722."
+
+-or-
+
+
+When you attempt to print on a computer running Windows NT Workstation the
+following error message appears:
+
+   An application error has occurred and an application error log is being
+   generated.
+
+   Spoolss.exe
+
+   Exception: access violation (0xc00000005), Address: <Hex address>
+
+CAUSE
+=====
+
+These error conditions during printing may occur when third-party fax software
+is installed either on an Windows NT print server computer or on a computer
+running Windows NT Workstation.
+
+RESOLUTION
+==========
+
+Some fax software programs modify the registry. It might become necessary to
+remove the fax software in order to print. However, some programs do not clean
+up the registry when they are removed. Check the registry to see if there are
+entries added by a fax software program that might be causing one of the
+previous errors.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe) and locate the following key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
+
+2. Look for any entries that might be related to a fax software program.
+
+3. Delete these entries.
+
+NOTE: Do NOT delete any of the subkeys of the Print key, such as Environments,
+Forms, Monitors, Printers, and Providers.
+
+NOTE: The symptoms described in this article may also be caused by third party
+port monitor software, and it may be necessary to remove the port monitor from
+the registry using the steps above.
+
+
+Additional query words: printing hangs
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

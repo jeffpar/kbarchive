@@ -1,0 +1,69 @@
+DOCUMENT:Q126792  30-OCT-1999  [pcmail]
+TITLE   :PC Win WRmt: Err Msg: Following Recipient(s) Could Not Be...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2, 3.2a 
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a mail message in Microsoft Mail Remote for Windows using the
+Mail Remote driver and attempt to send the message with the Microsoft Mail for
+PC Networks driver, the following error may occur:
+
+   Message Undeliverable:
+   The following recipient(s) could not be reached:
+
+   Mailbox(es)
+
+   The recipient has been deleted or has no e-mail address.
+
+The same error may also occur when you create a message with the Mail for PC
+Networks driver and send it from the Mail Remote driver.
+
+RESOLUTION
+==========
+
+To be able to address and compose a message with the Mail Remote for Windows
+driver and send it from Mail for PC Networks driver, the recipient should be
+selected from the Personal Address Book (PAB).
+
+
+MORE INFORMATION
+================
+
+This error is to be expected, because the mail message address was resolved and
+prepared to be sent using the driver that created it. See the "Important"
+section on page 15 of the Mail Remote "User's Guide."
+
+Additional query words: 3.20 sending
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b kbMail320a kbMailRemote320
+Version           : WINDOWS:3.0,3.0b,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

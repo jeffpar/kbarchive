@@ -1,0 +1,534 @@
+DOCUMENT:Q148995  20-FEB-2002  [winnt]
+TITLE   :README.TXT: Microsoft File and Print Services for NetWare
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft File and Print Services for NetWare version 3.51 
+-------------------------------------------------------------------------------
+
+The following is the text of the Microsoft File and Print Services
+for NetWare (FPNW) version 1.0 README.TXT file.
+
+Microsoft File and Print Services for NetWare 3.51 -- Release Notes:
+--------------------------------------------------------------------
+
+Thank you for purchasing File and Print Services for NetWare.
+
+These release notes explain software changes made after the File and Print
+Services for NetWare Administrator's Guide was printed, and other
+information not covered in the Administrator's Guide.
+
+TABLE OF CONTENTS
+
+1.0 INSTALLATION ISSUES
+   1.1 Upgrading from Pre-release Version
+   1.2 Installing File and Print Services for NetWare From
+       Floppy Disks
+   1.3 Must Install NWLink Before File and Print Services
+       for NetWare
+
+2.0 MIGRATION TOOL FOR NETWARE
+   2.1 Migration Tool Requires Client or Gateway Service for NetWare
+   2.2 Use Migration Tool for NetWare Only on Domain Controllers
+   2.3 Using Migration Tool for NetWare to Migrate Login Scripts
+
+3.0 CHANGING PASSWORDS
+   3.1 CHGPASS.EXE and SETPASS.EXE Are Merged
+
+4.0 PRINTING NOTES
+   4.1 Setting Up a Print Server to Service a Printer Queue on a
+            Different File Server
+   4.2 Network Print Server Devices Tested
+   4.3 Setting Up the Milan Network Print Server Device
+   4.4 Miscellaneous Printing Notes
+
+5.0 MISCELLANEOUS NOTES
+   5.1 Default Permissions on SYS Volume
+   5.2 Two Checkboxes Are Mutually Exclusive
+   5.3 Volume Name Restrictions
+   5.4 Using Windows NT Server as a Client to Connect to NetWare Servers
+   5.5 "Operators" and "Users" Buttons Reserved for Future Versions
+
+6.0 APPLICATION NOTES
+   6.1 Seeing Users Listed Multiple Times Within Applications
+   6.2 Other Application Notes
+
+7.0 DOCUMENTATION NOTES
+   7.1 Installing and Using the Online Administrator's Guide
+   7.2 System Login Script File is Incorrectly Listed
+   7.3 SYS Volume Incorrectly Referenced
+   7.4 User Interface Changes After Administrator's Guide Was Printed
+   7.5 RPRINTER not Supported
+
+8.0 LEGAL NOTES
+
+--------------------------------------------------------------------------
+1.0  INSTALLATION ISSUES
+
+1.1 Upgrading From Pre-release Version
+--------------------------------------
+If you are installing File and Print Services for NetWare on a computer
+already running a pre-release version of the utility, use the following
+procedure. Do not use the Update option in the Network Settings dialog
+box, as the pre-release versions are not compatible with the
+installation program in the commercial release.
+
+1. Double-click the Network icon in Control Panel.
+
+2. In the Installed Network Software list of the Network Settings
+   dialog box, select File and Print Services for NetWare, and then
+   choose Remove.
+
+3. Follow the instructions on the screen to remove the pre-release
+   version from your computer.
+
+4. During the removal of the pre-release version, if you are
+   prompted "Is this the last FPNW Server in the Domain?", specify
+   No. If you specify Yes, all the FPNW passwords of all user
+   accounts that are NetWare-enabled will be lost.
+
+5. Install File and Print Services using the instructions in the
+   Administrator's Guide.
+
+   IMPORTANT- When you update your server with this version of File
+   and Print Services for NetWare, you must select <Other> in the
+   Add Network Software dialog box; do not select "File and Print
+   Services for NetWare" from the list in this dialog box. (If you
+   do not select <Other>, the pre-release setup file will be used
+   for the installation and not all components will be updated.)
+
+1.2 Installing File and Print Services for NetWare From Floppy Disks
+--------------------------------------------------------------------
+If you want to install File and Print Services for NetWare on a computer
+that does not have a CD-ROM drive, you can use the File and Print Services
+for NetWare CD to create 3.5-inch floppy disks that you can use for
+installation.
+
+To create floppy disks for installation:
+
+1. Get two formatted, blank, high-density 3.5-inch floppy disks.
+
+2. At a computer that has a CD-ROM drive, insert the File and Print
+   Services for NetWare CD-ROM.
+
+3. Change directories to the DISKS directory on the CD-ROM. Then
+   change directories to the subdirectory for the platform for
+   which you want to create installation disks; for example, change
+   to DISKS\i386 if you want to create disks to use to install
+   the utility on an x86-based computer. The subdirectories are
+   i386 for x86-based computers; ALPHA for DEC Alpha computers;
+   MIPS for RISC-based computers; and PPC for PowerPC-based
+   computers.
+
+4. Copy the contents of the DISK1 subdirectory to one of the floppy
+   disks, and then copy the contents of the DISK2 subdirectory to
+   the other floppy disk.
+
+To install the utility using the floppy disks you have made:
+
+*  Follow the installation instructions in the Administrator's Guide,
+   but in the Insert Disk dialog box, specify the drive containing
+   the floppy disk.
+
+1.3 Must Install NWLink Before File and Print Services for NetWare
+------------------------------------------------------------------
+Before you can install File and Print Services for NetWare on a computer,
+the computer must have the NWLink IPX/SPX Compatible Transport installed.
+If you attempt to install File and Print Services for NetWare and NWLink
+is not already installed, you will be prompted to use the Windows NT
+Server media to install NWLink.
+
+To install NWLink before you install File and Print Services for NetWare,
+use the Network icon in Control Panel and choose the Add Software button.
+
+2.0  MIGRATION TOOL FOR NETWARE
+
+2.1 Migration Tool Requires Client or Gateway Service for NetWare
+-----------------------------------------------------------------
+To use the Migration Tool for NetWare, Client Service for NetWare
+or Gateway Service for NetWare must be installed on the computer
+from which you are running the Migration Tool for NetWare.
+
+2.2 Use Migration Tool for NetWare Only on Domain Controllers
+-------------------------------------------------------------
+The Migration Tool for NetWare supports migrating information from NetWare
+servers to Windows NT Server computers functioning as primary domain
+controllers or backup domain controllers. It does not support Windows NT
+Server computers running in the "server" role.
+
+2.3 Using Migration Tool for NetWare to Migrate Login Scripts
+-------------------------------------------------------------
+If you want Migration Tool for NetWare to migrate login scripts or
+the information contained in users' mail directories, from a
+NetWare server to a Windows NT Server computer, then you must do the
+following: in the Migration Tool, once you have selected a pair of
+servers for migration, choose File Options, select the SYS
+volume, select FILES, and then enable the transfer of the MAIL
+subdirectory.
+
+3.0  CHANGING PASSWORDS
+
+3.1 CHGPASS.EXE and SETPASS.EXE Are Merged
+------------------------------------------
+After the Administrator's Guide was printed, the CHGPASS and SETPASS
+utilities were merged. The new merged utility appears twice on the File
+and Print Services for NetWare CD, as both CHGPASS.EXE and SETPASS.EXE.
+
+CHGPASS and SETPASS both now change both a user's Windows NT Server
+password and FPNW password, providing users with an easy way to change
+their passwords and keep them synchronized.
+
+In situations where the primary domain controller of the domain where the
+user's account is located does not both run Gateway Service for NetWare
+and have File and Print Services for NetWare installed, then CHGPASS and
+SETPASS change only the user's FPNW password. The same is true when
+the user's client computer cannot access the primary domain controller
+over the IPX/SPX protocol.
+
+Note that CHGPASS, SETPASS, and LOGIN all require the .RPC support
+files, RPC16C1.RPC, RPC16C6.RPC, and SECURITY.RPC. Also, these .RPC
+support files must be in a user's search path. If you have users copy
+any of these utilities and the .RPC support files to their own hard
+drives,
+you must ensure that the .RPC files are in a directory in the user's
+search path.
+
+4.0 PRINTING NOTES
+
+4.1 Setting Up a Print Server to Service a Printer Queue on a
+    Different File Server
+-------------------------------------------------------------
+Use the following procedure to set up a print server to service a printer
+queue located at another server. In this situation, either server can be
+running File and Print Services for NetWare.
+
+1. On the server where the printer is physically located, create a printer
+   queue.
+
+2. On the other server, create a printer queue. If this server is running
+   File and Print Services for NetWare, set the queue to print to a
+   NetWareCompatiblePServerx port, and be sure to select the Share This
+   Printer On the Network box.
+
+3. On each server, create a print server. These two print servers must
+   have the same name.
+
+4. On each server, add the other server as a file server to be services by
+   the local print server.
+
+5. On the server where the printer is physically located, create a
+   printer. Set it to print to the port to which the printer is physically
+   attached.
+
+6. On the other server, create a printer, with the same name as the
+   printer you created in step 5. Set the printer's type to Defines
+   Elsewhere.
+
+7. If you have made any changes to the print server software, unload the
+   software and reload it.
+
+4.2 Network Print Server Devices Tested
+---------------------------------------
+File and Print Services for NetWare has been tested with the following
+network print server devices:
+
+   HP JetDirect Cards
+   Intel NetPort XL
+   Xircom II series
+   Milan FastPort 3000 series
+   Digital NetPrint 100
+   Emulex NetJet Card
+   AXIS NPS 550
+   Extended Systems ESI-2866A
+
+4.3 Setting Up the Milan Network Print Server Device
+----------------------------------------------------
+To successfully set up File and Print Services for NetWare to print to a
+printer attached to a Milan network print server device, use the following
+procedure:
+
+1. Use Print Manager to create a logical printer for the printer. Be
+   sure to do the following in the Printer Properties dialog box:
+
+   *  In the Print To box, specify NetWareCompatiblePServer0 or
+      NetWareCompatiblePServer1
+
+   *  Mark the Share This Printer On The Network check box.
+
+2. In Server Manager, choose Print Servers from the FPNW menu.
+
+3. Choose the Add button, and specify FPxxxxxx in the Print Server box,
+   where xxxxxx are the last 6 characters of the Milan MAC address. You
+   can find the address printed on the bottom of the device. Then choose
+   OK.
+
+4. Back in the Print Servers On dialog box, select the print server you
+   created in step 3, and then choose Printers.
+
+5. In the Printers on Print Server dialog box, choose the Add button.
+
+6. Fill out the Add Printer To dialog box with information for the
+   printer. Be sure to specify Remote Other/Unknown in the Type box.
+   Then choose OK.
+
+7. Back in the Printers on Print Server dialog box, choose the Queues
+   button, and add the queue you created in step 1.
+
+4.4 Miscellaneous Printing Notes
+--------------------------------
+If you find that print jobs sent from NetWare clients to File and Print
+Services for NetWare printers are not printing banner sheets, or are not
+notifying clients correctly, you should check certain printer properties.
+
+To check the printer properties:
+
+1. Start Print Manager.
+
+2. Select the printer, and then choose Properties from the Printer
+   menu.
+
+3. Check that the Print To box is set correctly, to either a
+   NetWareCompatiblePServer port or a local port, such as LPT1:
+
+4. Check that the Share This Printer On The Network box is selected.
+
+5. Choose the Details button, and then check that the Print Processor
+   box is set to nwprint.
+
+6. Choose OK.
+
+7. Close Print Manager, and then stop and restart the File and Print
+   Services for NetWare service.
+
+Similarly, if you have two printer queues that use the same printer, and
+one of the printer queues has the Job Type set to WINPRINT, then jobs in
+that queue may freeze with the message "Waiting for PServer", causing both
+queues to freeze. To correct this problem, stop and restart the print
+server software, or stop and restart the File and Print Services for
+NetWare service.
+
+5.0 MISCELLANEOUS NOTES
+
+5.1 Default Permissions on SYS Volume
+-------------------------------------
+When you install File and Print Services for NetWare on a server, and you
+specify a directory that does not already exist as the server's SYS
+volume, File and Print Services for NetWare creates this directory. Be
+aware that by default, Everyone is given Full Control for this directory.
+If you want different permissions for the SYS volume root directory, you
+must edit the directory permissions using File Manager.
+
+It is especially important to adjust permissions for the SYS volume if you
+plan to use Migration Tool for NetWare to migrate directories from NetWare
+servers to be subdirectories of the SYS volume, as these migrated
+directories will inherit permissions from the SYS volume root directory.
+
+5.2 Two Checkboxes Are Mutually Exclusive
+-----------------------------------------
+On a server running File and Print Services for NetWare, the "Users Must
+Log On In Order To Change Password" check box (in the Account Policy
+dialog box) and the "User Must Change Password at Next Logon" check box
+(in the User Properties dialog box for each user account) are mutually
+exclusive.
+
+If the "Users Must Log On In Order To Change Password" check box is
+marked, then users who have the "User Must Change Password at Next Logon"
+check box marked in their accounts will not be able to use CHGPASS (or
+SETPASS or LOGIN) to change their passwords after they have logged on to
+the server.
+
+It is recommended that you do not have both these check boxes marked for
+File and Print Services for NetWare users.
+
+5.3 Volume Name Restrictions
+----------------------------
+Be sure to include at least two characters in volume names. Users will be
+unable to connect to volumes with names with only one character.
+
+Also, do not include either forward slashes (/) or backslashes (\) in
+volume names.
+
+5.4 Using Windows NT Server as a Client to Connect to NetWare Servers
+---------------------------------------------------------------------
+On a computer running Windows NT Server and File and Print Services for
+NetWare, the automatic restoration of connections from that computer to
+NetWare servers may not work if the computer does not have a preferred
+server selected, and a user logs in immediately after booting the
+computer. This happens because the Windows NT Server computer does not
+have time to gather information about available NetWare servers before
+attempting to restore connections.
+
+5.5 "Operators" and "Users" Buttons Reserved for Future Versions
+----------------------------------------------------------------
+The Operators and Users buttons in the Print Servers For dialog box do not
+have any functionality in this release of File and Print Services for
+NetWare. They are reserved for use for added functionality in future
+versions of the utility.
+
+6.0 APPLICATION NOTES
+
+6.1 Seeing Users Listed Multiple Times Within Applications
+----------------------------------------------------------
+When using certain applications that reference the server's database of
+users, the application may list the same user multiple times in one list.
+This may mean that the user is logged in from multiple workstations,
+or it could also be the case that this is a display error caused by
+the application because it cannot handle a server with more than 256
+connections.
+
+If you require this listing to be accurate, you reduce the maximum
+number of concurrent connections to FPNW by using the MaxUsers value
+in the Registry. See Appendix A of the Administrator's Guide for more
+details.
+
+6.2 Other Application Notes
+----------------------------
+Some applications require a different serial number. If you need to
+change the File and Print Services for NetWare serial number, you can do
+so using the registry. See Appendix A of the File and Print Services for
+NetWare Administrator's Guide for more information.
+
+Some server-management applications enable you to rename groups. Windows
+NT Server does not support renaming of groups, so these functions do not
+work on servers running File and Print Services for NetWare.
+
+Also, File and Print Services for NetWare currently does not support
+user-defined printer queues. You must use Print Manager to create queues.
+
+Some third-party NetWare-compatible utilities may take an extended time
+to return values. This may be caused by the following:
+
+- File and Print Services for NetWare supports only printer queues created
+  using Print Manager.
+
+- The maximum number of users defaults to 10,000 users.  Some utilities
+  may try to enumerate all connections. To correct this, adjust the
+  MaxUsers value in the Registry. For more information, see Appendix A
+  of the File and Print Services for NetWare Administrator's Guide.
+
+7.0 DOCUMENTATION Notes
+
+7.1 Installing and Using the Online Administrator's Guide
+---------------------------------------------------------
+The File and Print Services for NetWare Administrator's Guide is also
+provided in an online format on the File and Print Services for NetWare
+CD.
+
+The online book is not automatically installed on your hard drive when you
+install File and Print Services for NetWare. You can use the online book
+directly from the CD, or you can manually install the online book files
+(approximately 563K) on a hard disk and use them from there.
+
+If you want to copy the online book files to a hard drive, copy all of the
+files from the ONLINE.DOC directory of the CD to the hard drive.
+
+To use the online book, you should first create a program item for it.
+
+To create a program item for the online book:
+
+1.  In Program Manager, open the program group to which you want to add
+    the Online Books icon.
+
+    You may want to use a common group rather than a personal group so
+    that anyone who logs on to this computer can view the books.
+
+2.  From the File menu, choose New. Then select Program Item and choose
+    OK. The Program Item Properties dialog box appears.
+
+3.  In the Description box, type a description, such as Online FPNW Admin
+    Guide.
+
+4.  In the Command Line box, type the path to the MSFPNW.HLP file. For
+    example, if you are using the books from CD and the CD is in drive E,
+    type E:\ONLINE.DOC\MSFPNW.HLP.
+
+5.  Choose OK.
+
+    The dialog box closes, and a generic Help icon appears in the chosen
+    group.
+
+To change the generic help icon to the Online Book icon:
+
+1.  Select the Online FPNW Admin Guide program item.
+
+2.  From the File menu, choose Properties.
+
+3.  In the Program Item Properties dialog box, choose the Change Icon
+    button.
+
+4.  In the File Name box, type the path to the BOOKS.ICO file, and then
+    choose OK.
+
+7.2 System Login Script File is Incorrectly Listed
+--------------------------------------------------
+The Administrator's Guide lists an incorrect filename for the NetWare
+system login script. The correct file is NET$LOG.DAT. Edit this file,
+using Notepad or another text editor, to edit the server's system login
+script.
+
+7.3 SYS Volume Incorrectly Referenced
+-------------------------------------
+Page 6 of the File and Print Services for NetWare Administrator's Guide
+lists the wrong default name for the SYS volume. The correct default
+volume name is SYS, and the directory represented by it is SYSVOL.
+
+7.4 User Interface Changes After Administrator's Guide Was Printed
+------------------------------------------------------------------
+After the Administrator's Guide was printed, the names of some fields and
+boxes in the user interface were changed slightly. These changes do not
+represent any changes in functionality or in how to accomplish tasks using
+the interface.
+
+7.5 RPRINTER not Supported
+-------------------------------------
+Page 57 of the File and Print Services for NetWare Administrator's Guide
+incorrectly references the RPRINTER utility. This utility is actually not
+supported by File and Print Services for NetWare.
+
+8.0 LEGAL NOTES
+
+Third-Party License Agreements
+-------------------------------------
+Administrators should ensure they comply with all applicable license
+agreements governing use of software in conjunction with File and Print
+Services for NetWare.
+
+Trademarks
+----------
+Microsoft and Windows NT are either registered trademarks or
+trademarks of Microsoft Corporation in the U.S. and/or other countries.
+
+Novell and NetWare are registered trademarks of Novell, Inc.
+
+Other companies and product names may be trademarks of their respective
+companies.
+
+Additional query words: fpnw novell NWCONV
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

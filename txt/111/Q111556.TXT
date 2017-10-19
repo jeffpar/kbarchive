@@ -1,0 +1,202 @@
+DOCUMENT:Q111556  21-DEC-2001  [pcmail]
+TITLE   :PC Adm: IMPORT.EXE 3.2.18 Update
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft provides a replacement for the Import Mail program file that is
+included with versions 3.2 and 3.2a of Microsoft Mail for PC Networks.
+
+For complete information about obtaining and installing the Import Mail program
+file, see the following sections:
+
+ - To download the updated file
+
+ - To update your IMPORT.EXE file
+
+MORE INFORMATION
+================
+
+This update contains the Import Mail program (IMPORT.EXE), a replacement for the
+Import Mail program file that is included with versions 3.2 and 3.2a of
+Microsoft Mail for PC Networks. This update resolves the following problems:
+
+ - The Import utility (with the -A option) no longer adds invalid DGN names to
+   the Postoffice Address List (POL) when those names do not appear in the
+   normal .USR files.
+
+ - The Import utility no longer corrupts the MCI.NME file when importing MCI
+   user names. This problem caused the Mail Administrator program to incorrectly
+   display the MCI address information.
+
+ - The Import utility no longer stops responding (hangs) when it processes
+   RESYNC.GLB after doing heavy processing.
+
+   NOTE: To resolve this problem, two .EXE files must be updated: the IMPORT.EXE
+   file (update included in IMPORT.EXE version 3.2.9) and the SRVMAIN.EXE file
+   (update included in SRVMAIN.EXE version 3.2.10).
+
+ - The Import utility now updates FLAG.GLB when it runs, causing the External
+   Mail program to update its address lists on the next cycle interval.
+
+ - The Import utility no longer does 1-byte reads of the template files.
+
+ - When it is importing modified SNADS template information, the Import utility
+   no longer incorrectly sequences the information.
+
+ - When you use the Import utility to modify a user's configuration (any option
+   set with an "&") and that user has remote access, the user's remote
+   access ability is no longer removed.
+
+ - When you use the Modify transaction type to update a user in the POL but you
+   do not make any changes to the user's alias, the user's record is no longer
+   deleted.
+
+ - When you use the -A command-line option to modify template information, the
+   Import utility no longer increases the size of the associated .INF file on
+   each pass. The Import utility now creates a new .INF file that incorporates
+   the changes rather than appending the changes to the existing .INF file.
+
+ - When you use the Import utility to change a user's mailbox name, Error
+   34--"Could not access log information file"--no longer occurs when you start
+   the MS-DOS client.
+
+ - Deleting a local user with Import no longer leaves the user's folder files
+   (.IDX and .FLD) orphaned in the FOLDERS\LOC\0000???? subdirectory of the Mail
+   database.
+
+ - A Microsoft Mail Connection 3.2 PROXYNET\PROXYPO postoffice address list is
+   now propagated to a downstream requestor postoffice when the gateway
+   postoffice is also the directory server postoffice. The Import utility now
+   copies FFAPI postoffice address lists from the directory server to the
+   GLB\RESYNC.GLB file to perform a directory synchronization manual import
+   procedure.
+
+   NOTE: To resolve this problem, two .EXE files must be updated: the IMPORT.EXE
+   file (included in this update) and the SRVMAIN.EXE file (update included in
+   SRVMAIN.EXE version 3.2.10).
+
+ - Local postoffice users added with the Import utility will no longer be
+   assigned an invalid identification number if the TID.GLB file is locked open.
+   Also, batch creation of local postoffice users with the Import utility while
+   the TID.GLB file is locked open no longer results in the same invalid
+   identification number being assigned to multiple users.
+
+ - Trap D errors or "An OS/2 program caused a protection violation" error no
+   longer occurs under OS/2 or under the OS/2 subsystem of Windows NT when you
+   use the Import utility with the -ST command- line option.
+
+ - The Import utility now creates unique mailbag numbers when you add local
+   postoffice users, even if the CONTROL.GLB file has been reset to zero.
+
+ - When you use Import to add a new local user, the Import utility now adds that
+   user's template information to the REQTRANS.GLB. Previously, even if the
+   template information was included in the IMPORT.TXT file, it was not written
+   to the REQTRANS.GLB.
+
+
+ - When you use Import to create a new template for an external postoffice, the
+   Macintosh client can now read the template information after the first user.
+   Previously, the last field was not visible for any user, and the template
+   information for the second and subsequent users would display incorrectly.
+
+
+ - When you use Import version 3.2.14 or 3.2.16, and you add users via an Import
+   batch file, these users can have their TID values reset. This will create
+   problems sending mail, adding to groups, and deleting users.
+
+
+To download the updated file
+----------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Impupd.exe now
+   (http://download.microsoft.com/download/pcmail/Update/3/DOS/EN-US/Impupd.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+After you download IMPUPD.EXE to a clean directory, run it (by typing "impupd"
+(without the quotation marks) at the MS-DOS command prompt) to extract the
+contents of the file. You should receive the following files:
+
+   IMPORT.EXE (204,675 bytes, dated 5-3-95, 6:02 P.M.)
+   README.TXT
+
+To update your IMPORT.EXE file
+------------------------------
+
+At the MS-DOS command prompt, type the following and press ENTER
+
+   " copy <drive>:\import.exe <destination> " (without the quotation
+   marks)
+
+where <drive> is the drive and directory where you ran the self- extracting
+IMPUPD.EXE file and <destination> is the drive and directory where your
+IMPORT.EXE file currently resides. For example, if you ran the self-extracting
+file from the TEST directory on drive D, and the IMPORT.EXE file is located in
+the MAILEXE directory on drive C, type the following command:
+
+   " copy d:\test\import.exe c:\mailexe " (without the quotation marks)
+
+NOTE: The IMPORT.EXE file typically resides on the postoffice server in the Mail
+executables directory as well as on the machine importing addresses into the
+database. Make sure you update all copies of the IMPORT.EXE file.
+
+Note that this article is referred to by the pcmail articles
+
+   "PC Adm: Deleting Users w/IMPORT Leaves Orphaned Folders, .IDXs," Q117197
+
+   "PC Adm: IMPORT .INF File Size Increases When IMPORT -A Is Used" Q117198
+
+   "PC Adm: Err: Modifying Mailbox Name Causes Notice 34 & 127" Q117259
+
+   "PC Adm: IMPORT.EXE Does Not Recover from Reset CONTROL.GLB" Q117738
+
+   "PC Adm: Using IMPORT -A Removes Users from Postoffice List" Q118447
+
+   "PC Gen: Bound Applications That Work with MMTA" Q118677
+
+If you modify or delete this article, please make corresponding changes in those
+articles.
+
+Additional query words: 3.20 wga admin
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

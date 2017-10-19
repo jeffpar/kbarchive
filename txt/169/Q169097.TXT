@@ -1,0 +1,125 @@
+DOCUMENT:Q169097  08-NOV-2001  [frontpg]
+TITLE   :FP: How to Create Invisible Frames in FrontPage
+PRODUCT :Word Front Page
+PROD/VER:windows:1.1,97; macintosh:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q196125.
+
+For a Microsoft FrontPage 98 version of this article, see Q194152.
+
+SUMMARY
+=======
+
+The Microsoft FrontPage Frames Wizard does not provide a way to create frames
+that are invisible or have no border. This article describes how to create an
+invisible frame in FrontPage Editor.
+
+MORE INFORMATION
+================
+
+FrontPage 97
+------------
+
+To create an invisible frame, follow these steps:
+
+1. Start FrontPage Editor.
+
+2. On the File menu, click New.
+
+3. In the Template Or Wizard list, click Frames Wizard, and then click OK.
+
+4. Click Next on each panel of the wizard, until the last panel. On the last
+   panel, click Finish.
+
+5. In FrontPage Explorer, right-click the page you created in steps 1 through 4,
+   and then click Open With.
+
+6. In the Editor list, click FrontPage Editor, and then click OK.
+
+7. On the View menu, click HTML.
+
+8. In the HTML box, locate the <FrameSet> tag, and add the FrameBorder and
+   FrameSpacing attributes so that the tag looks something like this:
+
+   <FRAMESET ROWS="50%,50%" FRAMEBORDER="0" BORDER="0" FRAMESPACING="0">
+
+9. On the File menu, click Save.
+
+FrontPage 1.1
+-------------
+
+Open the Web page in a text editor, such as Notepad, and insert the
+<FrameSet> tag. For example, insert this code:
+
+   <FRAMESET ROWS="50%,50%" FRAMEBORDER="0" BORDER="0" FRAMESPACING="0">
+
+NOTE: If you reopen your Web page in FrontPage Editor, FrontPage deletes the
+FrameBorder and FrameSpacing attributes.
+
+FrontPage for the Power Macintosh
+---------------------------------
+
+To create an invisible frame, follow these steps:
+
+1. Start FrontPage Editor.
+
+2. On the File menu, click New.
+
+3. In the Template Or Wizard list, click Frames Wizard, and then click OK.
+
+4. Click Next on each panel of the wizard, until the last panel. On the last
+   panel, click Finish.
+
+5. In FrontPage Explorer, hold down the CONTROL key and click the page you
+   created in steps 1 through 4.
+
+6. Click Open With.
+
+7. In the Editor list, click FrontPage Editor, and click OK.
+
+8. On the View menu, click HTML.
+
+9. In the HTML box, locate the <FrameSet> tag, and add the FrameBorder and
+   FrameSpacing attributes so that the tag looks something like this:
+
+   <FRAMESET ROWS="50%,50%" FRAMEBORDER="0" BORDER="0" FRAMESPACING="0"
+
+   Click OK.
+
+10. On the File menu, click Save.
+
+Additional query words: 97 borderless none no border without
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage110
+Version           : windows:1.1,97; macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

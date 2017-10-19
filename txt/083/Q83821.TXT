@@ -1,0 +1,55 @@
+DOCUMENT:Q83821  05-DEC-1999  [homemm]
+TITLE   :Bookshelf: Windows 3.1 Setup Renames MIDIMAP .CFG
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - All Microsoft Multimedia Products 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you upgrade from Microsoft Windows 3.0 with Multimedia Extensions 1.0 to
+Microsoft Windows operating system version 3.1, Setup renames MIDIMAP.CFG to
+MIDIMAP.OLD.
+
+MORE INFORMATION
+================
+
+The Windows 3.1 upgrade renames the current MIDI patch map file MIDIMAP.CFG to
+MIDIMAP.OLD and installs the MIDI patch map for the AdLib card. This will work
+correctly with any MIDI synthesizer that is AdLib compatible.
+
+If MIDI files played correctly under the earlier installation of Microsoft
+Windows 3.0 with Multimedia Extensions 1.0 and the MIDI files do not play
+correctly after upgrading to Windows 3.1, rename the MIDIMAP.OLD file located in
+the WINDOWS\SYSTEM to MIDIMAP.CFG.
+
+Additional query words: 1.00 mm bookshelf multimedia 1991
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

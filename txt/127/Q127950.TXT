@@ -1,0 +1,71 @@
+DOCUMENT:Q127950  17-DEC-2000  [win95x]
+TITLE   :Cannot Use DSP Modem on HP Integrated Office Board
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Hewlett-Packard (HP) DATA.EXE utility to initialize the DSP
+modem on your HP Integrated Office Board, you receive the following error
+message:
+
+   Copyright (c) 1987-1993
+   Analog Devices Inc., Digicom Systems Inc., Ring Zero Systems Inc.
+   All Rights Reserved.
+   You have an incompatible version of MS Windows or
+   MS Windows is not running in Enhanced mode.
+
+The modem does not function properly after you receive this error message.
+
+
+CAUSE
+=====
+
+The HP DATA.EXE utility performs a version check that allows it to run only in
+Windows version 3.1x. Because this version check fails in Windows 95, the modem
+is not properly initialized and will not function.
+
+MORE INFORMATION
+================
+
+The HP Integrated Office Board is an adapter card that contains a sound card,
+SCSI adapter, and modem. To use the modem, you must first run the DATA.EXE
+utility to initialize the modem's DSP chip. The DATA.EXE utility is hard-coded
+to check for Windows 3.1x and fails in Windows 95.
+
+Note that the sound card and SCSI adapter do not require the DATA.EXE utility and
+so will function in Windows 95.
+
+The Hewlett-Packard Integrated Office Board is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

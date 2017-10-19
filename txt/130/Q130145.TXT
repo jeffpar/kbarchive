@@ -1,0 +1,60 @@
+DOCUMENT:Q130145  07-DEC-2001  [ssafe]
+TITLE   :BUG: SourceSafe and Windows Debug Kernel Causes Termination
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe kbDSupport kbSSafe300bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SourceSafe terminates or Windows terminates when you perform various operations
+from within the SourceSafe GUI. No error messages are given. To work around the
+problem, do the following:
+
+1. Remove the debug kernel, and restart Windows.
+
+2. Run SourceSafe, and perform all operations on the database.
+
+3. Exit Windows, and restart with the debug kernel.
+
+CAUSE
+=====
+
+This occurs when the user is running the Windows debug kernel and SourceSafe.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft SourceSafe version 3.1. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe kbDSupport kbSSafe300bug kbbuglist
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

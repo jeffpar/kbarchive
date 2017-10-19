@@ -1,0 +1,68 @@
+DOCUMENT:Q137461  13-JUN-2001  [homemm]
+TITLE   :Mac Encarta 95: Some Sounds Do Not Play
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play sounds, some of the sounds, primarily national anthems,
+do not play. You may receive the following error message:
+
+   Could not open Multimedia window.
+
+CAUSE
+=====
+
+This problem occurs if the QuickTime version installed on the system is earlier
+than version 2.0.
+
+RESOLUTION
+==========
+
+To check the version of QuickTime, do the following:
+
+1. Open the System Folder.
+
+2. Open the Extensions Folder.
+
+3. Locate the QuickTime entry and click it.
+
+4. On the File menu, click Get Info.
+
+If the version number is earlier than 2.0, reinstall a newer version from the
+Encarta compact disc or from your Apple Macintosh compact disc. The Quicktime
+extension is located in the System Files folder which is in the Installer Files
+folder on the Encarta compact disk.
+
+Additional query words: mac 1995 multi media multimedia multi-media mmtitles kbmm distorted quick time
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

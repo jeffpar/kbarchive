@@ -1,0 +1,92 @@
+DOCUMENT:Q96760  27-NOV-2001  [visualc]
+TITLE   :PRB: Gray Box Appears Using SDK Custom Control in App Studio
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:_IK920 kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbG
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The App Studio, used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the App Studio, or Developer Studio, an attempt to install a "User- Defined"
+control fails and a gray box appears instead of the visual representation of the
+control.
+
+CAUSE
+=====
+
+The App Studio dialog editor supports the following procedures for
+"User-Defined" controls:
+
+ - Specify a location for the control in the dialog box
+
+ - Specify a caption for the control
+
+ - Specify the window class for the control
+
+ - Specify a 32-bit hexadecimal value for the control style
+
+These procedures are described in the "Working with User-Defined Controls"
+section in the "Using the Dialog Editor" chapter of both the Visual C++ version
+1.0 "App Studio User's Guide" and the Visual C++, 32-bit Edition, versions 2.x
+and 4.0, Books Online.
+
+RESOLUTION
+==========
+
+Even though the dialog editor does not display a visual representation of the
+user-defined control, you can change the size and position of the gray box to
+reflect the desired placement of the control within the dialog box.
+
+MORE INFORMATION
+================
+
+Visual C++ for Windows (16-bit) supports installing and design-time testing for
+VBX version 1.0 controls. For 32-bit systems, OLE Controls (OCX) is the
+preferred custom control architecture. Building and using OLE Controls is fully
+supported in Visual C++ versions 2.0 and above. See MFC Technical Note 27
+included with these versions of Visual C++ for more information.
+
+Versions 3.0 and later of the Microsoft Windows Software Development Kit (SDK)
+define an dynamic-link library (DLL) interface for custom controls. The Dialog
+Editor provided with the Windows SDK supports installing custom controls and
+testing their functions. Section 20.2.5 of the Windows SDK "Guide to
+Programming" manual for version 3.1 documents this interface.
+
+Typically, a user-defined control implemented as a DLL registers a WNDCLASS
+structure in its LibMain() procedure. Once a user-defined control is installed
+into a dialog box in App Studio, double click on the gray box to change the
+properties of the control and enter the window class and any style information.
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK920 kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

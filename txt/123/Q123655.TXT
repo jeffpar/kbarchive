@@ -1,0 +1,70 @@
+DOCUMENT:Q123655  11-FEB-2000  [foxpro]
+TITLE   :PRB: Printing with QuickDraw GX Doesn't Work
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.6a,3.0b
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, version 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+WARNING: The information in this article has not been confirmed or tested
+by Microsoft. ANY USE BY YOU OF THE INFORMATION PROVIDED IN THIS ARTICLE IS
+AT YOUR OWN RISK. Microsoft provides this information "as is" without
+warranty of any kind, either expressed or implied, including but not
+limited to the implied warranties of merchantability and/or fitness for a
+particular purpose.
+
+SYMPTOMS
+========
+
+Quick Printing with QuickDraw GX does not function with FoxPro for Macintosh.
+
+RESOLUTION
+==========
+
+To print the .PRG file, use the File Print command within FoxPro or another text
+editor.
+
+MORE INFORMATION
+================
+
+NOTE: QuickDraw GX is manufactured by a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding the performance or reliability of
+QuickDraw GX.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. With QuickDraw GX installed, create a printer on the desktop.
+
+2. Drag a FoxPro .PRG file to the printer. FoxPro starts, but quits with no
+   error message. The .PRG file is not printed.
+
+Additional query words: VFoxMac FoxMac
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.6a,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

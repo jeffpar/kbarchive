@@ -1,0 +1,64 @@
+DOCUMENT:Q71555  17-OCT-1999  [win95x]
+TITLE   :Paintbrush: Insufficient Memory and Disk Error Messages
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you open Paintbrush, you may have a monochrome palette and one of the
+following error messages may be generated:
+
+ - Insufficient memory to edit image; close one or more Windows applications to
+   increase available memory and try again.
+
+ - Insufficient disk space to edit image; delete one or more files from drive %s
+   and try again.
+
+Both of these errors may result on a system with ample free memory and disk space
+if the standard drawing size is set to a very large area.
+
+To check the standard drawing size, choose Image Attributes from the Paintbrush
+Options menu.
+
+If the standard drawing size is found to be substantially larger than the default
+(6.67 inches x 5.00 inches), try using the default size.
+
+MORE INFORMATION
+================
+
+A very large standard drawing size may require more disk space or free memory
+than available, causing the appropriate error message. Paintbrush switches to a
+monochrome palette in these situations to use less memory.
+
+Additional query words: 3.00 3.00a 3.10 3.11 win31 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

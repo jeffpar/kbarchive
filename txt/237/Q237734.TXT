@@ -1,0 +1,145 @@
+DOCUMENT:Q237734  22-SEP-1999  [homegame]
+TITLE   :NFL Fever 2000: Unable to Add Plays to Playbook During Season
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add new plays to a team's playbook in Microsoft NFL Fever 2000, the
+plays may not appear in the play picker when you play a game.
+
+NOTE: The new plays are available when you play a Practice.
+
+CAUSE
+=====
+
+This behavior occurs if you add the new plays after you begin a season.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, add the new plays that you want to use
+during a season to a team's playbook before you begin a season.
+
+To work around this issue, use the following methods in the order in which they
+are presented.
+
+Delete All of Your Saved Games
+------------------------------
+
+To delete all of your saved games:
+
+1. Start NFL Fever 2000.
+
+2. On the Main screen, click Loaded Saved.
+
+3. Click Single.
+
+4. Click the title of any game in the list of saved games, click Delete, and
+   then click Yes.
+
+5. Repeat step 4 until you delete all of the saved games.
+
+6. Click Cancel to close the Loaded Saved Game window.
+
+7. Click Season.
+
+8. Repeat steps 4 through 6.
+
+9. Click Playoff.
+
+10. Repeat steps 4 through 6.
+
+Create and Add the New Plays That You Want to Use
+-------------------------------------------------
+
+To create and add a new play:
+
+1. On the Main screen, click Manager.
+
+2. Click Playbook Manager.
+
+3. Click to select the team you want, and then click New Play.
+
+4. Under Formation, click to select the Formation you want.
+
+5. Under Sub Formation, click to select the Sub Formation you want.
+
+6. Right-click the quarterback icon, and then click to select the quarterback's
+   action.
+
+7. Right-click either a backfield or a receiver player icon, and then click the
+   circle that terminates the path you want that player to take.
+
+8. Repeat step 7 until the path for each backfield and receiver player is
+   selected.
+
+9. Click Save Play.
+
+10. Type the name of the play in the Play Name box.
+
+11. Click OK, click Close, and then click Close again.
+
+12. Click Main to return to the Main screen.
+
+NOTE: If you want to create and add new plays to more than one team's playbook,
+you must repeat these steps for each team.
+
+Start a New Season
+------------------
+
+To start a new season:
+
+1. On the Main screen, click New Season.
+
+2. Under Difficulty, click to select Rookie, Veteran, or All Pro.
+
+3. Under "Length of Quarter," click to select 3, 5, 10, or 15.
+
+4. Under Schedule, click to select Random or NFL 99.
+
+5. Click Create Season.
+
+6. Click Main to return to the Main screen, or click Kickoff to start the first
+   game of the season.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft NFL Fever 2000,
+version 1.0.
+
+Additional query words: 1.00 msgame nflfever nfl2k football missing not available
+
+======================================================================
+Keywords          : kbui kbimu msgame 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

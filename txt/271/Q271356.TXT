@@ -1,0 +1,69 @@
+DOCUMENT:Q271356  10-AUG-2001  [iis]
+TITLE   :Require Secure Channel Incorrectly Checked Changing Certificate
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0,4.0 SP6a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have the Require Secure Channel option enabled for a Web site, and then
+change the IP or Port bindings of the associated Certificate in Key Manager,
+when you exit Key Manager, the Secure Communications dialog box still shows that
+SSL is required to access the resource, even though it is not.
+
+CAUSE
+=====
+
+There is no refresh of the Microsoft Management Console (MMC) snap-in when you
+exit Key Manager.
+
+RESOLUTION
+==========
+
+To display the status correctly, close and re-open the Web Site Properties
+dialog box. The Require Secure Channel check box will then show the correct
+status.
+
+After you change the bindings of a Certificate, Microsoft recommends that you
+check and configure SSL, and then browse to your site to ensure that SSL is
+working correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400search kbWinNTS400 kbiisSearch kbiis400
+Version           : winnt:4.0,4.0 SP6a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

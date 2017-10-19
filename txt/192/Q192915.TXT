@@ -1,0 +1,86 @@
+DOCUMENT:Q192915  27-MAY-2001  [msdn]
+TITLE   :PRB: Corrupt Hh.dat Prevents Starting the MSDN Library
+PRODUCT :Microsoft Developer Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbHTMLHelp kbMSDN
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Studio 6.0 
+ - Microsoft Developer Network (MSDN) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the MSDN Library from Visual Studio 6.0, the following
+error message appears:
+
+   MSDEV.EXE - Application Error : The instruction at "0x5d48d2f0" referenced
+   memory at "0x00000000". The memory could not be "written".
+
+When you try to start the MSDN Library from the desktop, the following error
+message appears:
+
+   OleMain ThreadWndName: HH.EXE - Application Error : The instruction at
+   "0x5d48d2f0" referenced memory at "0x00000000". The memory could not be
+   "written".
+
+This message is followed by:
+
+   OleMain ThreadWndName: HH.EXE - Application Error : The instruction at
+   "0x5d48932e" referenced memory at "0x00000000". The memory could not be
+   "read".
+
+CAUSE
+=====
+
+The Hh.dat file is corrupt.
+
+RESOLUTION
+==========
+
+Close all instances of the MSDN Library. Search for all occurences of the Hh.dat
+file on the system. Delete the Hh.dat file, and attempt to launch the MSDN
+Library again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Hh.dat is a database file that saves information about the HTML Help window and
+MSDN Library favorites. Unfortunately, all favorites are lost when the Hh.dat
+file is deleted, but there is no other known way to recover from this error. The
+Hh.dat file is recreated when the MSDN Library launches.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp kbMSDN 
+Technology        : kbVSsearch kbAudDeveloper kbMSDNSearch kbZNotKeyword2 kbVS600 kbVS600Search
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

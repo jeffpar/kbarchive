@@ -1,0 +1,123 @@
+DOCUMENT:Q289865  08-MAY-2002  [exchange]
+TITLE   :XADM: Crash in store!CmcvtrBptExternal__hrCheckIntlShCut
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbExchange550preSP5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you start the Internet Mail Service, an access violation may occur in the
+information store. When the access violation occurs, the stack trace may look
+like the following stack trace:
+
+   
+
+   ChildEBP RetAddr  Args to Child
+   09a1f604 0084043e 096cb930 096bbeb0 09a1f6a4 store!CmcvtrBptExternal__hrCheckIntlShCut+0xf
+   09a1f628 0084008b 096cb930 096bbeb0 09a1f6a4 store!CmcvtrBptExternal__hrCheckExternalBody+0x9e
+   09a1f6a8 0081d6f3 096cb930 096fa940 00000400 store!CmcvtrBptExternal__hrEmit+0xeb
+   09a1f6e4 0084fdf2 096f2cb8 00002000 09a1f79c store!CINETemtr__hrEmit+0x2c3 
+   09a1f724 005abc45 09653640 096f2cb8 00002000 store!CConvertStream__Read+0x112
+   09a1f740 005abb7f 096f2cb8 00002000 09a1f79c store!CSTREAM__HrRead+0x25 
+   09a1f774 0045d3f6 00002000 096f2cb8 09a1f79c store!EcReadStreamOp+0xdf 
+   09a1f7a0 0044f88f 00000001 0000001e 09a1f940 store!EcReadStream+0xa6
+   09a1f8a8 00467c2d 09a1f920 00002200 09a1f940 store!EcRpc+0x19ff
+   09a1f93c 77e11dc7 00180490 096f2ca8 00181838 store!EcDoRpc+0xdd
+   09a1f95c 77e56205 00467b50 09a1fb50 00000004 RPCRT4!Invoke+0x28
+   09a1f978 77e561d6 00467b50 09a1fb50 00000004 RPCRT4!NdrCallServerManager+0x15
+   09a1fc3c 77e55f3e 00000000 00000000 09a1ff28 RPCRT4!NdrStubCall+0x292
+   09a1fc54 77e113a4 09a1ff28 0016fd20 09a1ff28 RPCRT4!NdrServerCall+0x19
+   09a1fc90 77e111be 008d4b9a 09a1ff28 09a1fdd8 RPCRT4!DispatchToStubInC+0x33
+   09a1fce4 77e11403 09a1ff28 00000000 09a1fdd8 RPCRT4!RPC_INTERFACE__DispatchToStubWorker+0xb0
+   09a1fd04 77e11903 09a1ff28 00000000 09a1fdd8 RPCRT4!RPC_INTERFACE__DispatchToStub+0x41
+   09a1fddc 77e15af1 0013ad78 09a1fe10 09a1ff28 RPCRT4!WMSG_SASSOCIATION__DealWithRequestMessage+0x182
+   09a1ff90 77e15a1d 77e160f7 00143730 09a1ffec RPCRT4!WMSG_ADDRESS__ReceiveLotsaCalls+0xd1
+   09a1ff94 77e160f7 00143730 09a1ffec 00000000 RPCRT4!RecvLotsaCallsWrapper+0x9
+
+CAUSE
+=====
+
+This problem can occur if a Simple Mail Transfer Protocol (SMTP) message fails
+conversion during the IMAIL conversion process in the information store because
+of a problem with the message format, and the failure causes a buffer overrun.
+This results in an access violation in the information store.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Exchange Server 5.5 service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Messaging Database (MDB)
+
++-------------------------+
+| File name | Version     | 
++-------------------------+
+| Store.exe | 5.5.2654.67 | 
++-------------------------+
+
+NOTE: Because of file dependencies, this fix requires Microsoft Exchange Server
+version 5.5 Service Pack 4.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbExchange550preSP5fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,46 @@
+DOCUMENT:Q90269  17-DEC-2000  [win3x]
+TITLE   :NetWare Printing in Windows for Workgroups
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+In general, Microsoft Windows for Workgroups Print Manager extends the
+printing capabilities from those in Microsoft Windows version 3.1. In
+the case of NetWare printers, the capabilities are much the same as in
+Windows 3.1. Only the jobs submitted by the user are shown, and jobs
+may be paused, resumed, or deleted. These actions can be done from the
+document menu or the appropriate buttons on the toolbar.
+
+The NetWare product included here is manufactured by Novell, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: 3.10 3.11 net ware tool bar novell 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

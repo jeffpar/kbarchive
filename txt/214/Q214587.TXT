@@ -1,0 +1,53 @@
+DOCUMENT:Q214587  12-APR-2001  [homegame]
+TITLE   :Close Combat III: Game Quits When You Move Pointer Over Unit
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat III: The Russian Front 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Close Combat III: The Russian Front with another player,
+the game may quit without warning when you move the pointer over a unit.
+
+NOTE: This behavior occurs very rarely.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Close Combat III: The
+Russian Front, version 1.0.
+
+
+Additional query words: 1.00 msgame closecombat russianfront cc3 cciii stop crash
+
+======================================================================
+Keywords          : kbnetwork kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat3
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

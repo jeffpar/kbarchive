@@ -1,0 +1,62 @@
+DOCUMENT:Q118758  30-AUG-2001  [visualc]
+TITLE   :Article List for Problems With a CLongBinary Field
+PRODUCT :Microsoft C Compiler
+PROD/VER:1.50 1.51 1.52 | 2.00 2.10 2.20
+OPER/SYS:
+KEYWORDS:kbref
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following articles describe issues associated with using a CLongBinary
+Field.
+
+   Q130438 BUG: Program Crashes When Memo Field Mapped to CLongBinary
+
+   Q132399 PRB: SQLGetData() Returns SQL_NO_TOTAL in RFX_LongBinary()
+
+   Q140534 BUG: "Data Truncated Column" Erroneously Reported
+
+   Q150408 BUG: Data Entered w/HGLOBAL Not Placed in Table
+
+   Q141303 FIX: Dynasets w/ CLongBinary Fields Throws Incorrect Exception
+
+   Q147948 BUG: Errors Occur Using DAO CLongBinary Data from Database
+
+   Q149137 BUG: ODBC Long Binary Functions Use SQL_NO_TOTAL Incorrectly
+
+   Q149139 FIX: Visual C++ Breaks ODBC CLongBinary w/ GlobalReAll Misuse
+
+   Q153888 PRB: RFX_LongBinary not Optimized for SQL Server
+
+Additional query words: kbinf 2.50 2.51 2.52 4.00 4.10 kblist
+
+======================================================================
+Keywords          : kbref 
+Technology        : kbAudDeveloper kbMFC
+Version           : 1.50 1.51 1.52 | 2.00 2.10 2.20
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

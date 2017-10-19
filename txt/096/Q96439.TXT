@@ -1,0 +1,39 @@
+DOCUMENT:Q96439  30-JUL-2001  [lanman]
+TITLE   :Differences Between LAN Manager 2.2 and 2.2a
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+SUMMARY
+=======
+
+New disks for LAN Manager 2.2 are marked LAN Manager 2.2a but is NOT a new
+bug-fix release of LAN Manager.
+
+Because of licensing reasons, Microsoft has removed the TRW drivers from the disk
+set, and because the disk set has changed it cannot still be called LAN Manager
+2.2. The revised disk set is called LAN Manager 2.2a, although it differs from
+LAN Manager 2.2 only in the absence of a single NDIS driver.
+
+Additional query words: 2.20 2.2 2.2a 2.20a LM
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

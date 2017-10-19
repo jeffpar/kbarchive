@@ -1,0 +1,101 @@
+DOCUMENT:Q156162  16-APR-2000  [powerpt]
+TITLE   :PPT: Error Opening Unpacked Presentation In Windows 3.1
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:4.0,7.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta kbpng
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you unpack a PowerPoint Pack and Go presentation onto a computer running
+Windows 3.1x, you may get the following error when you try to run the
+presentation in the PowerPoint Viewer:
+
+   Sorry, this is not a PowerPoint presentation.
+
+CAUSE
+=====
+
+The following is a list of possible causes of this error:
+
+1. You did not follow the steps listed in the following article in the Microsoft
+   Knowledge Base:
+
+   Q140983 PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1
+
+2. The following files, located in Windows\System folder, are not the proper
+   size, date, or version:
+
+   Ole2.dll
+   Ole2prox.dll
+   Ole2disp.dll
+   Ole2conv.dll
+   Storage.dll
+   Compobj.dll
+
+3. The filename listed in the PowerPoint Presentation Playlist (*.lst) contains
+   a long filename.
+
+RESOLUTION
+==========
+
+How to Install Correct Versions of OLE Files
+--------------------------------------------
+
+NOTE: These steps assume that Windows is installed in the folder C:\Windows.
+
+1. Exit Windows.
+
+2. At the command prompt, type:
+
+   cd \windows\system and then press ENTER
+
+   ren ole2*.* ole2*.old and then press ENTER
+
+   ren storage.dll storage.old and then press ENTER
+
+   ren compobj.dll compobj.old and then press ENTER
+
+3. Start Windows.
+
+4. Insert the PowerPoint Viewer disk that ships with Office 95 into your disk
+   drive.
+
+5. Run the program called Vsetup.exe on this disk.
+
+This procedure installs all of the PowerPoint viewer files and replaces the OLE
+files in Windows 3.1x.
+
+Additional query words: 4.00 7.00 powerpt powerpnt ppt error 3.1 3.11 3.10 viewer
+
+======================================================================
+Keywords          : kbusage kbdta kbpng 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400
+Version           : WINDOWS:4.0,7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,78 @@
+DOCUMENT:Q298033  06-AUG-2002  [sms]
+TITLE   :SMS: Can't Use Remote Control w. Unsupported Database Collation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbConfig kbDatabase _IK964 kbServer kbsms200 kbHelpDesk kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have appropriate Systems Management Server (SMS) security rights and
+try to remotely control an SMS client, you may be unable to do so. The following
+error message may be generated:
+
+   Remote Tools
+   Security rights to run remote tools on this client have been denied.
+
+Note that this issue may also occur when you run the Remote.exe command from a
+command prompt.
+
+CAUSE
+=====
+
+This issue can occur if the SMS database is located on a Microsoft SQL Server
+2000 computer on which the database is configured to use
+SQL_SwedishStd_Pref_CP1_CI_AS collation. Unless this configuration is specified
+manually, either on database or server level, this issue occurs when you upgrade
+the database server from SQL Server 7.0 configured with ISO character set (ID=1)
+and Swedish/Finnish (Std) dict order, case insensitive, uppercase pref sort
+order (ID=185). To determine whether this is the configured database collation,
+right-click the SMS database in SQL Server Enterprise Manager, and then click
+Properties. You can view the configured collation under Collation Name.
+
+MORE INFORMATION
+================
+
+Microsoft does not recommend or support the use of this collation in conjunction
+with SMS. If you are already running this database configuration, you may want
+to contact Microsoft Product Support Services (PSS) for assistance transferring
+the data in the SMS database to a server that is running a different collation.
+For a complete list of Microsoft Product Support Services phone numbers and
+information about support costs, view the following Microsoft Web site:
+
+   http://www.microsoft.com/support/supportnet/overview/overview.asp
+   (http://www.microsoft.com/support/supportnet/overview/overview.asp)
+
+
+
+Additional query words: prodsms SQL Error: Cannot resolve collation conflict for equal to operation.
+
+======================================================================
+Keywords          : kbinterop kbConfig kbDatabase _IK964 kbServer kbsms200 kbHelpDesk kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

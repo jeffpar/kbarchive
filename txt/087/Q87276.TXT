@@ -1,0 +1,70 @@
+DOCUMENT:Q87276  01-NOV-1999  [win95x]
+TITLE   :Windows Err Msg: Micro Channel Bus Time-out Error
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Micro Channel (MC) version of the Creative Labs Sound
+Blaster with Windows 3.1, you receive the following error message:
+
+   System error: Micro Channel bus time-out error detected.
+   System halted.
+
+CAUSE
+=====
+
+This message is caused by an MC device and the MC bus not synching properly
+during the bus arbitration process. This error may be caused by the Sound
+Blaster MCA or a third-party floppy disk drive for PS/2s.
+
+WORKAROUND
+==========
+
+Run Windows in standard mode instead of 386 enhanced mode. This error can also
+occur in standard mode, but it is less likely.
+
+NOTE: You should not use the MCADMA= switch (in the SYSTEM.INI file [386Enh]
+section) on any PS/2 other than the model 55sx. This switch should not be used
+for this problem.
+
+
+STATUS
+======
+
+Creative Labs is researching this problem and we will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 3.10 3.11 pro sound blaster ps2 ps/2 micro channel soundblaster MicroChannel timeout err msg 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

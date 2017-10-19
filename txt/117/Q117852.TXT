@@ -1,0 +1,105 @@
+DOCUMENT:Q117852  27-NOV-1999  [homekids]
+TITLE   :Writer: List of Picture Window Graphics
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 1.0 
+ - Microsoft Creative Writer for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists all the default pictures contained in the Idea Workshop's
+Picture Window in Creative Writer, version 1.0, on floppy diskettes.
+
+MORE INFORMATION
+================
+
+The list is compiled in the same order that the pictures appear in the Picture
+Window list.
+
+ - Dog Face
+
+ - Mom and me
+
+ - Duet
+
+ - The amazing Bird Boy
+
+ - The magic box
+
+ - Monkey biking
+
+ - Horse Rider
+
+ - Castle gatekeeper
+
+ - The adventure begins
+
+ - Little Monster
+
+ - Fish Ride
+
+ - Ate my homework
+
+ - Hide behind dad
+
+ - Map of Held
+
+ - Polar snowbear
+
+ - Library
+
+ - Another Door?!
+
+ - Look both ways
+
+ - Spaceball!
+
+ - Cowboy and car
+
+ - Cat underwater
+
+ - By the seashore
+
+ - Boo!
+
+ - Dress up
+
+ - Ship Ahoy!
+
+ - Floating
+
+ - What the?
+
+ - The rescue
+
+Additional query words: kbhowto 1.00 mskids mac win pictures graphics listing drawings cw mczee kids
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter100 kbCreativeWriter100Mac
+Version           : MACINTOSH:1.0; WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

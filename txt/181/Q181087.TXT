@@ -1,0 +1,68 @@
+DOCUMENT:Q181087  13-MAR-2002  [winnt]
+TITLE   :Computer Hangs When Using the DIR Command in DFS Shared Folders
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,2.1,2.5,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 2.0, 2.1, 2.5 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the DIR command from a command prompt on a Windows 95 Distributed
+File System (DFS) client to view the contents of a DFS shared network folder on
+a Windows NT server, your computer may stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+ - The current folder in which you are using the DIR command is several levels
+   down on the DFS shared network drive. For example, this behavior can occur if
+   you use the DIR command in Folder5 of the following path
+
+   <drive>:\Folder1\Folder2\Folder3\Folder4\Folder5
+
+   where <drive> is the mapped drive to the DFS shared network folder.
+
+ - The DFS volume on the Windows NT server has a volume label.
+
+
+RESOLUTION
+==========
+
+To work around this issue, remove the volume label from the DFS volume on the
+Windows NT server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork win95 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : :2.0,2.1,2.5,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,45 @@
+DOCUMENT:Q99750  30-JUL-2001  [lanman]
+TITLE   :Using LAN Manager 2.2 OS/2 Workstation to Support OS/2
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+SUMMARY
+=======
+
+Although it is not supported yet, you can use a LAN Manager 2.2 OS/2 workstation
+to support OS/2 2.1. All you have to do is make the following change so that the
+workstation does not respond that the wrong version of OS/2 is installed:
+
+1. Use COPY CON to create the file C:\OS2VER.
+
+2. Add this line:
+
+   2.0=netwksta.sys
+
+3. Close the file via F6 or ^Z.
+
+4. Reboot.
+
+Additional query words: 2.20 2.2
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

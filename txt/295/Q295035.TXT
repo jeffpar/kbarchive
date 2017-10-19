@@ -1,0 +1,69 @@
+DOCUMENT:Q295035  29-OCT-2001  [sms]
+TITLE   :SMS: Charting in Web Reporting Tool Requires Office Run Locally
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Charting option in the Systems Management Server (SMS) Web
+Reporting tool, you may receive the following error message:
+
+   Charting requires Office 2000 on the client machine.
+
+You may receive this error message even if Microsoft Office 2000 components are
+installed on the local computer.
+
+CAUSE
+=====
+
+This issue can occur because the SMS Web Reporting tool is calling the Office
+2000 components by class ID. When this occurs, the "install on demand" feature
+of MSI does not start, so the feature does not become available.
+
+WORKAROUND
+==========
+
+To resolve this issue, run Office 2000 Setup by using the Add/Remove Programs
+tool in Control Panel, and set Office Web Components (under Office Shared
+Features) to run locally.
+
+MORE INFORMATION
+================
+
+The SMS Web Reporting Tool is available from the following Microsoft Web site:
+
+   http://www.microsoft.com/downloads/release.asp?ReleaseID=28039
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,56 @@
+DOCUMENT:Q159438  26-SEP-2001  [frontpg]
+TITLE   :FP97: Page Fault When 1.1 Server Administrator Run on FP Web
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the FrontPage 1.1 Server Administrator on a Web server that has the
+FrontPage 97 server extensions installed on it, you may receive an invalid page
+fault error similar to the following:
+
+   FPSRVWIN caused an invalid page fault in module <fp20*.dll> at address
+   <address>.
+
+Note that the module and address of the page fault may vary.
+
+RESOLUTION
+==========
+
+Use the FrontPage 97 Server Administrator to manage FrontPage 97 server
+extensions.
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbnetwork kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

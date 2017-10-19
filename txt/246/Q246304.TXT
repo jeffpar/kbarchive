@@ -1,0 +1,70 @@
+DOCUMENT:Q246304  24-OCT-2000  [winnt]
+TITLE   :Debugging Ported Code
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When debugging ported code, there are several behavioral differences between
+Interix and traditional systems like Solaris.
+
+Some users porting code notice that their application memory faults more often
+than it did on the original platform. This is usually a result of defects in the
+code, and not in the Interix subsystem.
+
+A common cause of this behavior is trying to dereference an uninitialized
+pointer. An uninitialized pointer contains some random bit pattern. An attempt
+to read or write to that location will succeed or fail depending on whether the
+user is permitted access to that address. If the attempt fails, it fails with a
+segment fault. If it succeeds, it may cause problems for other programs using
+that memory space.
+
+In Microsoft Windows NT 4.0, most of the four-gigabyte address space is off
+limits to the user program. Any attempt to read or write to this space causes
+the segmentation violation.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+For a more complete description of this issue, see the "Porting Applications in
+C" Tech Note topic at the following Interix Web site:
+
+   http://www.interix.com/newinterix/main_technotes.htm
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

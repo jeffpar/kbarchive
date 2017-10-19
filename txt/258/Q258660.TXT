@@ -1,0 +1,60 @@
+DOCUMENT:Q258660  01-APR-2000  [homegame]
+TITLE   :Baseball 2001: Unable to Start the Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Baseball 2001, the game may not start.
+
+CAUSE
+=====
+
+This behavior can occur if a Diamond Stealth II G460 video adapter is installed
+in your computer.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest version of the reference
+video driver from the following Intel Web site:
+
+   http://developer.intel.com/design/graphics/drivers/
+
+You may be able to work around this issue by reducing your screen resolution to
+800 x 600 pixels or lower in Microsoft Windows.
+
+Additional query words: 1.00 bball bb2001 base ball nothing happens
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

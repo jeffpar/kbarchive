@@ -1,0 +1,70 @@
+DOCUMENT:Q199296  22-JUN-2001  [exchange]
+TITLE   :XCLN: Outlook 97 Error: "Failed to Perform Client Side Action"
+PRODUCT :Microsoft Exchange
+PROD/VER::8.0,8.01,8.02,8.03
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Outlook 97, you may receive an error similar to the following after
+you receive a new message that an Inbox Assistant rule attempts to process to a
+public folder.
+
+   Title : Rules in Error
+   Rule
+   Subject:xxxCOPY or MOVE TO:<unavailable>
+   Error:
+   Failed to perform client side action
+
+CAUSE
+=====
+
+This error may be generated if a rule has been set up to move or copy messages
+to a public folder in which you do not have proper permissions.
+
+RESOLUTION
+==========
+
+To resolve this problem, verify that you have the correct permissions on the
+public folder your rule is trying to copy or move messages to.
+
+MORE INFORMATION
+================
+
+Outlook 98 does not allow you to set up a rule on a public folder for which you
+do not have proper permissions.
+
+
+Additional query words: 8.0 8.01 8.02 8.03
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97 kbOutlook97Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : :8.0,8.01,8.02,8.03
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

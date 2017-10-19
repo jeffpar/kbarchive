@@ -1,0 +1,80 @@
+DOCUMENT:Q143081  03-AUG-2001  [visualc]
+TITLE   :PRB: Ambiguous Msg If Function Template Return Type Omitted
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Given a function template, if the return type is omitted, the error that results
+is a syntax error on the semicolon preceding the closing brace of the function.
+
+   minmax.cpp(4) : error C2059: syntax error : ';'
+
+RESOLUTION
+==========
+
+Specify a return type for the function template.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In C++, it is an error for a function to be declared without a return type. This
+is in compliance with the proposed ANSI C++ specification (ref. ARM, section
+7.1.1).
+
+Sample Code
+-----------
+
+       /* Compile options needed: /c */ 
+
+      // This Min is in error (no return type is specified)
+      template <class X> Min (X &t1, X &t2) {
+         if (t1<t2) return t1;
+         return t2;
+      } //the error message appears for this line
+
+      //This Min is correct
+      template <class X> X& Min (X &t1, X &t2) {
+         if (t1<t2) return t1;
+         return t2;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

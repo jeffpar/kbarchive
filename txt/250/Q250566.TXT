@@ -1,0 +1,74 @@
+DOCUMENT:Q250566  13-SEP-2001  [crossnet]
+TITLE   :Unable to Connect to Internet When Connected to Network with RAS
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:2000,5,5.01; winnt:2.0,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Explorer versions 5, 5.01 for Windows 98 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to a local area network (LAN) using RAS or PPTP, you may be
+unable to gain access to the Internet if your LAN is using a Proxy server.
+
+CAUSE
+=====
+
+This issue can occur if the Proxy server configuration is not set up on the
+client computer for each connection made using RAS.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Right-click the Internet Explorer icon on your desktop, and then click
+   Properties.
+
+2. On the Connections tab, click the Dial-Up Networking connection that you use
+   to connect to your LAN, and then click Settings.
+
+3. Under "Proxy server", click the "Use a Proxy server" box, and then add the
+   correct address and port that your proxy server uses. In most cases, you may
+   also want to click to select the "Bypass proxy server for local connections"
+   check box. Check with your network administrator if you are unsure whether
+   this entry should be selected. Click to clear the "Automatically detect
+   settings" check box. Even if this entry is used on local connections, it
+   causes RAS and PPTP connections to fail to connect to the proxy server.
+
+4. Click OK, and then click OK.
+
+Additional query words: smallbiz vpn
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbIEsearch kbIE500Search kbWinAdvServSearch kbZNotKeyword3 kbIE98Search kbIE500Win98 kbIE501Win98
+Version           : WINDOWS:2000,5,5.01; winnt:2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

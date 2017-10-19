@@ -1,0 +1,86 @@
+DOCUMENT:Q159153  20-MAY-2002  [win95x]
+TITLE   :Error Messages While Backing Up to Some Floppy Disk Drives
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1.0,2.0,2.1,2.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbhw kbpolicy osr1 osr2 win95 kbHardwarekbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 1.0, 2.0, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Microsoft Backup to back up data to certain models of floppy
+disk drives, you may receive the following error messages:
+
+   Warning: Tape needs to be erased before operation can proceed.
+
+   Microsoft Backup unable to read from the disk or network drive. Quit and
+   restart Backup, and then try again.
+
+   Warning: This operation has been canceled by the system.
+
+CAUSE
+=====
+
+Some models of floppy disk drives require specific timing and delays between
+disk operations to work properly. The timing implemented by the Windows 95
+floppy disk driver is not sufficient for some of these drives.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+There are two separate timing issues known to relate to this symptom:
+
+ - Some floppy disk drives require a specific minimum delay time after a Write
+   operation, before a Step operation can occur.
+
+
+ - Some floppy disk drives require a specific minimum head-settling time between
+   a Seek and subsequent Write operation.
+
+
+In each of these cases, the delay required by the drive is greater than the
+Windows 95 floppy disk driver implements.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbhw kbpolicy osr1 osr2 win95 kbHardware kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : :1.0,2.0,2.1,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

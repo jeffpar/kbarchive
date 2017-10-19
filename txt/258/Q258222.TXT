@@ -1,0 +1,61 @@
+DOCUMENT:Q258222  29-MAY-2000  [exchange]
+TITLE   :XADM: How Mailbox Manager Uses the System Cleanup Folder
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how Mailbox Manager uses the System Cleanup folder, and
+the way that deleted item retention interacts with the System Cleanup folder.
+
+MORE INFORMATION
+================
+
+When you set the deletion mode to "Move to System Cleanup Folders", a replica of
+the existing mailbox folder hierarchy is created in a top-level folder called
+the System Cleanup folder. Targeted messages are moved to the corresponding
+folder in the System Cleanup folder, which retains the folder location of a
+given message.
+
+If a user deletes a message from the System Cleanup folder, it is moved to the
+Deleted Items folder. If a message is deleted from the Deleted Items folder, you
+may be able to recover the message, depending on the deleted item retention
+time.
+
+If items are deleted from the System Cleanup folder based on the policies for
+folder age limits on System Cleanup folders, these items are deleted permanently
+from the user's mailbox and cannot be recovered.
+
+Additional query words: item recovery
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

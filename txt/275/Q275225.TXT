@@ -1,0 +1,61 @@
+DOCUMENT:Q275225  23-OCT-2000  [homemm]
+TITLE   :Encarta Language Learning Online: Audio Dialogue Is Not Repeated
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Encarta Language Learning. Version 1.0 (online edition) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use NullSoft WinAmp to play an audio dialogue in Microsoft Encarta
+Language Learning Online, the dialogue may not be repeated even when you enable
+the Repeat playback option.
+
+CAUSE
+=====
+
+This behavior can occur if the "Stop after current" playback option is enabled.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable the "Stop after current" playback option.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: multi multi-media media mm msnetwork ello
+
+======================================================================
+Keywords          : kb3rdparty kbsound kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,61 @@
+DOCUMENT:Q105333  22-NOV-1999  [msdos]
+TITLE   :MS-DOS 6.x Err Msg: Error Attempting to Update <FILENAME>.INI
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If MS-DOS Setup is interrupted by a power loss or system reboot, it can continue
+when you restart the system; however, you may receive the following error
+messages:
+
+   Error attempting to update WINFILE.INI file.
+   Error attempting to update SYSTEM.INI file.
+   Error attempting to update PROGMAN.INI file.
+
+CAUSE
+=====
+
+This problem occurs when you are installing the Windows-based version of
+Microsoft Backup, Microsoft Undelete, or Microsoft Anti-Virus, and your Windows
+installation is not on drive C.
+
+RESOLUTION
+==========
+
+To work around this problem, run SETUP /E to reinstall the optional
+Windows-based programs. This allows Setup the opportunity to correctly update
+your Windows .INI files.
+
+Additional query words: msbackup 6.22 6.00 6.20 6.21 upgrade step-up stepup
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,89 @@
+DOCUMENT:Q149506  03-NOV-1999  [fortran]
+TITLE   :BUG: /4fps1 and /Ox Compiler Options with Complex Calculations
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the /4fps1 and /Ox compiler options together with source code containing
+complex number calculations causes the results of those calculations to be
+erroneous.
+
+RESOLUTION
+==========
+
+If you are performing complex number calculations, do not use the /4fps1 and /Ox
+compiler options together.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem
+---------------------------------
+
+   C Compile options needed: none
+
+         COMPLEX A, B
+
+         C = 3.1415926535897932384626434
+         D = 3.0/2.0
+
+         B = CMPLX(COS(1.5), SIN(D)) ** 3
+         WRITE(*,*) B
+
+         A = B - CMPLX(COS(4.5), -SIN(4.5 + C))
+         WRITE(*,*) A
+
+         END
+
+Correct Output
+--------------
+
+   (-2.107958E-01,-9.775301E-01)
+   (9.473733E-09,0.000000E+00)
+
+Output using /4fps1 /Ox
+-----------------------
+
+   (-3.537882E-05,6.484614E-05)
+   (2.107604E-01,9.775950E-01)
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

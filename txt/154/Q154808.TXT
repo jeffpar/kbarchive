@@ -1,0 +1,59 @@
+DOCUMENT:Q154808  08-AUG-2001  [winnt]
+TITLE   :How to Create a Common Folder in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbui kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a common folder on the Start menu in
+Windows NT 4.0. Common folders allow access to programs to all users.
+
+MORE INFORMATION
+================
+
+To add a common folder to the Programs menu, follow these steps:
+
+1. Log on to Windows NT with administrative privileges.
+
+2. Use the right mouse button to click the Start button, and then click Open All
+   Users on the menu that appears.
+
+3. Create a new folder in the Programs folder.
+
+4. Add shortcuts that you want to be accessible to all users to the new folder.
+
+Common folders appear below the separator line at the bottom of the Programs
+menu. Administrators can use this method to create shortcuts in one place that
+appear on the Programs menu for all users.
+
+======================================================================
+Keywords          : kbui kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

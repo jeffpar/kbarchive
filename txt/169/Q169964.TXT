@@ -1,0 +1,77 @@
+DOCUMENT:Q169964  16-APR-2000  [powerpt]
+TITLE   :PPT7: Animation Effect Doesn't Work with Auto Advance
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you apply an animation effect, such as Hide After Animation, and set the
+timing to start automatically, the animation effect does not work on the last
+object on the slide. (To locate the Hide After Animation effect, select the
+object, click Custom Animation on the Tools menu, click the Effects tab, and
+then click the After Animation drop-down list.)
+
+CAUSE
+=====
+
+Animation effects that control actions occurring after the animation for a
+selected object, occur with the next build step, such as a mouse click. They do
+not occur between automatic builds.
+
+WORKAROUND
+==========
+
+To work around this problem, set the timing option to On Mouse Click. To do
+this, follow these steps:
+
+1. Select the object.
+
+2. On the Tools menu, click Custom Animation.
+
+3. Click the Timing tab.
+
+4. In the Start Animation section, click On Mouse Click.
+
+5. Click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,54 @@
+DOCUMENT:Q196404  26-MAY-2001  [exchange]
+TITLE   :XADM: Load Simulator Missing in Exchange Server 5.5
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Exchange Server version 5.5 does not ship with the utility known as
+Load Simulator (Loadsim).
+
+Load Simulator is a multi-client messaging emulation tool for the MAPI protocol.
+It is used to test the performance of Microsoft Exchange Server under varying
+message loads. Specific workloads can be defined in Load Simulator to exercise
+servers in a controlled manner. This information can then be used to help
+determine the optimum number of users per server, identify performance
+bottlenecks, and evaluate server hardware performance.
+
+It is publicly available in both x86 and Alpha versions at the following URL:
+
+   http://www.microsoft.com/exchange/downloads/55/LoadSim.asp
+
+Additional query words: loadsim
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

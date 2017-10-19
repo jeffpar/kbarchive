@@ -1,0 +1,68 @@
+DOCUMENT:Q141471  08-AUG-2001  [winnt]
+TITLE   :Err Msg: No Such File or Directory Using FC.EXE
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Windows NT 3.51 file compare utility (FC.EXE) to compare two
+identical files, the following error message appears:
+
+   FC: cannot open C:\<file_name> - No such file or directory
+
+This error occurs only if the first file has only the Compressed bit set. If any
+of the other Attribute bits (Hidden, System, Read-only, or Archive) are set in
+addition to the Compressed bit, the operation completes without an error.
+Attribute bits set on the second file do not effect the compare operation.
+
+CAUSE
+=====
+
+File compare does not support the compressed file attributes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A fix
+to this problem is in development, but has not been regression-tested and may be
+destabilizing in production environments. Microsoft does not recommend
+implementing this fix at this time. Contact Microsoft Product Support Services
+for more information on the availability of this fix.
+
+
+prodnt
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

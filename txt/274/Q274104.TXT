@@ -1,0 +1,74 @@
+DOCUMENT:Q274104  22-OCT-2000  [homegame]
+TITLE   :Metal Gear Solid: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbref kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metal Gear Solid 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the minimum system requirements needed to play
+Microsoft Metal Gear Solid.
+
+MORE INFORMATION
+================
+
+To play Metal Gear Solid, you need:
+
+ - Multimedia PC with a Pentium II 233 MHz or higher processor with MMX support
+
+ - Microsoft Windows 95, Windows 98, Windows Millennium Edition, or Windows 2000
+   operating system
+
+ - 32 megabytes (MB) of RAM
+
+ - 300 MB of available hard disk space for a minimum installation; additional
+   100 MB of available hard disk space for the swap file
+
+ - Quad-speed or faster CD-ROM drive
+
+ - Microsoft Mouse or compatible pointing device
+
+ - Gamepad or joystick game controller
+
+ - DirectX 7.0a or later API (included on CD-ROM)
+
+ - DirectX 7.0a or later compatible sound card
+
+ - Video adapter with 4 MB of video memory required for 3D hardware acceleration
+
+ - Speakers or headphones required for audio
+
+ - Super VGA, 16-bit color monitor
+
+Additional query words: 1.00 msgame mgs requires sysreqs
+
+======================================================================
+Keywords          : kbref kbimu msgame 
+Technology        : kbGamesSearch kbMetalGearSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

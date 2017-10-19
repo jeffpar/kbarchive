@@ -1,0 +1,69 @@
+DOCUMENT:Q165941  10-AUG-2001  [winnt]
+TITLE   :RAS Fails w/ Error 1068 "RIP for NWLINK Failed to Start"
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Remote Access Service, you receive the following error:
+
+   Error starting Remote Access Service on <servername>. Check the Event
+   log on <servername> for details. Error 1068: The dependency service
+   failed to start.
+
+The System Event log on <servername> contains the following errors:
+
+   Event Id 7000
+   The RIP for Nwlink IPX service failed to start due to the following
+   error: The parameter is incorrect.
+
+   Event Id 7001
+   The Remote Access Service depends on the RIP for Nwlink IPX service
+   which failed to start because of the following error:
+   The parameter is incorrect.
+
+CAUSE
+=====
+
+If you install Remote Access Service after you install a Service Pack, an older
+version of Nwlnkrip.sys is installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, reapply the Windows NT Service Pack.
+
+
+Additional query words: 7000 7001 1068 IPX RIP Nwlink RAS
+
+======================================================================
+Keywords          : kbnetwork kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

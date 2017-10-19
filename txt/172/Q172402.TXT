@@ -1,0 +1,66 @@
+DOCUMENT:Q172402  09-AUG-2001  [winnt]
+TITLE   :Auditing Logon Failures Does Not Log Remote Failures
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Not all failure events are recorded when User Manager for Domains is set to
+audit logon and logoff failures.
+
+CAUSE
+=====
+
+If a user fails to logon locally, the Event Viewer System Log records an event
+529 (Logon Failure). However, if a Remote User fails to log on to the domain, no
+event is recorded. The account is locked out if configured to do so, but no
+event is recorded.
+
+
+RESOLUTION
+==========
+
+If you are using Windows NT 4.0, to resolve this issue, see the following
+article in the Microsoft Knowledge Base:
+
+   Q182918 Account Lockout Event also Stored in Security Event Log on DC
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.51 and
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 4.00 usrmgr audit use r account lockout
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

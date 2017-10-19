@@ -1,0 +1,67 @@
+DOCUMENT:Q140790  17-DEC-2000  [win95x]
+TITLE   :MS Backup Err Msg: Errors Occurred During This Operation...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Backup to format a QIC-80 2120XL (extended length) tape
+on a Connor Tape Stor 250 tape drive that is controlled by the floppy disk drive
+controller, you may receive the following error message:
+
+   Errors occurred during this operation. Do you want to view them now?
+
+The error log reports the following information:
+
+   Error/Warnings during operation:
+   1173(11056,2) - \\ Unknown error.
+   1320(13408,3) - \\ Warning: This operation has been canceled by the system.
+
+   Total number of errors encountered: 2
+
+CAUSE
+=====
+
+This error can occur if you try to format a 2120XL tape on an older Connor Tape
+Stor 250 tape drive. Older drives can be identified by the presence of an eject
+button.
+
+RESOLUTION
+==========
+
+Connor currently has no solution for this problem. Connor advises customers to
+purchase preformatted XL tapes for these older drives. Connor's newer drives
+(without the eject button) do not experience this problem.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,77 @@
+DOCUMENT:Q268014  04-NOV-2000  [sms]
+TITLE   :SMS: Error Message on a Blue Screen After You Upgrade to SMS 2.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbDriver kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade a client computer to System Management Server (SMS) 2.0 Service
+Pack 2 (SP2) on a computer running Windows NT 4.0 and using NeoMagic video
+drivers, you may receive an error message on a blue screen.
+
+CAUSE
+=====
+
+This problem can occur if video acceleration is enabled on the computer.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Remove NeoMagic from the list of accelerated drivers
+
+   -or-
+
+2. Start the laptop computer in VGA mode, and then reinstall the service pack.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem has also been reported on computers that have the same
+configuration mentioned in the "Symptoms" section when Microsoft NetMeeting is
+installed. For additional information about this problem, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q264627 SMS: Video Acceleration and NetMeeting Cause Error Message
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kb3rdparty kbDriver kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

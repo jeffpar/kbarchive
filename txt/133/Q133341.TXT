@@ -1,0 +1,189 @@
+DOCUMENT:Q133341  13-JUN-2001  [accother]
+TITLE   :ACC2: WX1200: Microsoft ADT Custom Controls Service Pack
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbfile kbdta kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The WX1200.exe file contains the Microsoft Access Developer's Toolkit Custom
+Controls Service Pack, which contains three custom controls that replace the
+existing custom controls in your ADT folder.
+
+If you are using the ADT Setup Wizard to generate disks to distribute in a 32-bit
+environment, note that the upgraded OCX files are compatible with applications
+running under Windows 3.x and can be distributed with applications designed for
+Windows 3.x.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Download Wx1200.exe now
+   (http://download.microsoft.com/download/adk20/SP/1/WIN98/EN-US/Wx1200.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+The following information is contained in the Wx1200.exe file's Readme text and
+includes the license agreement and the installation instructions.
+
+Readme Text
+-----------
+
+The following information applies to Microsoft Access Developer's
+Toolkit, version 2.0.
+
+             ADDENDUM TO MICROSOFT LICENSE AGREEMENT
+             for the Microsoft Access Developer's Toolkit
+
+This addendum ("Addendum") is made to the Microsoft Software License
+Agreement which you received with the Microsoft Access Developer's
+Toolkit ("EULA"), and pertains to the software accompanying this EULA
+("ADD-ON SOFTWARE"). If you have not previously acquired a licensed
+copy of the Microsoft Access Developer's Toolkit, Microsoft grants you
+no rights whatsoever with respect to the ADD-ON SOFTWARE.
+
+If you choose to use the ADD-ON SOFTWARE, you:
+
+1. Acknowledge that you have previously acquired a licensed version of
+   the Microsoft Access Developer's Toolkit;
+
+2. Agree that your use of the ADD-ON SOFTWARE is subject to all terms
+   and conditions of the EULA applying to the "SOFTWARE," "SOFTWARE
+   PRODUCT" and "REDISTRIBUTABLES," as such terms are defined in the
+   EULA.
+
+NOTE: As a REDISTRIBUTABLE under the terms of the EULA, the ADD-ON
+SOFTWARE is provided AS IS WITH NO WARRANTY OF ANY KIND, AND MICROSOFT
+AND ITS SUPPLIERS DISCLAIM ALL OTHER WARRANTIES, EITHER EXPRESS OR
+IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THIS LIMITED
+WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS. YOU MAY HAVE OTHERS, WHICH
+VARY FROM STATE/JURISDICTION TO STATE/JURISDICTION.
+
+Copyright (C) 1995 Microsoft Corporation. All Rights Reserved.
+Microsoft, MS-DOS, and Windows are registered trademarks of Microsoft
+Corporation.
+
+INTRODUCTION
+============
+
+The Microsoft Access Developer's Toolkit (ADT) version 2.0 Service
+Pack contains three custom controls (.OCX files) that replace the
+existing custom controls in your Microsoft ADT directory
+(C:\ACCESS\ADT or C:\MSOFFICE\ACCESS\ADT). The Service Pack includes
+the latest version of the following custom controls:
+
+ - Calendar Control (MSACAL20.OCX version 1.0.002 dated 8/21/95)
+
+ - Scrollbar Control (MSASB20.OCX version 1.0.002  dated 8/21/95)
+
+ - Data Outline Control (OUTL1016.OCX version 1.0.013 dated 8/21/95)
+
+The updated custom controls correct the general protection fault that
+may occur if you use the original custom controls in Windows(R) 95 or
+Windows NT(TM) version 3.51.
+
+INSTALLATION
+============
+
+If they are running, quit the ADT and Microsoft Access, and then copy
+the files from the WX1200.exe to your C:\ACCESS\ADT (or C:\MSOFFICE\ACCESS\ADT) directory.
+
+<B>IMPORTANT</B>: When you install the updated custom controls, make sure
+that you replace the original .OCX files with the newer files. If
+you have two versions of the same custom controls in your Microsoft
+ADT directory, you may experience problems when you use the custom
+controls in Microsoft Access.
+
+After you install the updated custom controls, you should reregister
+them and their supporting dynamic link library (OC1016.DLL). To
+register a custom control or OC1016.DLL, follow the steps for your
+operating system.
+
+For Microsoft Windows 95
+------------------------
+
+1. Click the Start button, and then click Run.
+
+2. In the Open text box, type a command similar to the following line:
+
+      c:\application\msareg.exe c:\application\control.ocx
+
+   For example, to register the Calendar control, type the following
+   line:
+
+      c:\access\adt\msareg.exe c:\access\adt\msacal20.ocx
+
+   To register the custom control's supporting DLL, type the following
+   line:
+
+      c:\access\adt\msareg.exe c:\windows\system\oc1016.dll
+
+3. Click OK to run the MSAREG.EXE file and to register the OLE custom
+   control.
+
+For Microsoft Windows NT
+------------------------
+
+1. In Program Manager or File Manager, click Run on the File menu.
+
+2. In the Command text box, type a command similar to the following
+   line:
+
+      c:\application\msareg.exe c:\application\control.ocx
+
+   For example, to register the Calendar control, type the following
+   line:
+
+      c:\access\adt\msareg.exe c:\access\adt\msacal20.ocx
+
+   To register the custom control's supporting DLL, type the following
+   line:
+
+      c:\access\adt\msareg.exe c:\windows\system\oc1016.dll
+
+3. Click OK to run the MSAREG.EXE file and to register the OLE custom
+   control.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbdta kbgraphxlinkcritical 
+Technology        : kbAccessSearch kbAccess200
+Version           : WINDOWS:2.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

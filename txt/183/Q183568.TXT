@@ -1,0 +1,64 @@
+DOCUMENT:Q183568  21-JUL-2001  [sna]
+TITLE   :CCSID In The Data Source Does Not Override Driver's Value
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft OLE DB Provider for AS/400 and VSAM, version 1.0, used with:
+    - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a CCSID is removed from the Host Column Description (HCD) with a text
+editor, tracing reveals that the column still shows as 037 even though the data
+type is binary (or another type) and the Data Source CCSID and the Driver CCSID
+are something other than 037.
+
+When the column description is removed all together, a default of 65535 is shown
+by tracing, even though the Data Source CCSID and the Driver CCSID are something
+other than 65535.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft OLE DB Provider for
+AS/400 and VSAM version 1.00 included with SNA Server version 4.0.
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvSearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

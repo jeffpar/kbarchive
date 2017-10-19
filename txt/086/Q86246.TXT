@@ -1,0 +1,51 @@
+DOCUMENT:Q86246  05-DEC-1999  [homemm]
+TITLE   :Setup Documentation Error Bookshelf 1991
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1991 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Bookshelf 1991 contains a documentation error concerning Setup. Page 4 of the
+"Microsoft Bookshelf User's Guide" outlines the seven steps necessary to install
+the product. The directions in step 5 are incorrect. Step 5 is printed as
+follows:
+
+1. Type the drive letter for the CD-ROM drive, a colon (:), and setup (for
+   example d:setup).
+
+Typing "d:setup" (without the quotation marks) results in a Application Execution
+Error. The proper syntax for Setup is "d:\setup" without the quotation marks,
+where d is the CD-ROM drive.
+
+Additional query words: 1.00 viewer 1.0 usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991
+Version           : :1991 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

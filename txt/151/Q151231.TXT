@@ -1,0 +1,62 @@
+DOCUMENT:Q151231  26-MAR-1999  [exchange]
+TITLE   :XFOR: MSExchangeMSMI Session Error EventID 2376
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MS Mail Connector Interchange (MSMI) logs a configuration problem in the NT
+event log when it tries to deliver a Non-Delivery Report (NDR) to a MS Mail
+user. The NDR is coming back from an adjacent 1984 X.400 Message Transfter Ageng
+(MTA). Microsoft Exchange Server acts as a messaging switch between MS Mail and
+any 1984 X.400 system. The Microsoft Exchange MTA hands the NDR to MSMI without
+passing a distinguished name (DN) for the recipeint of the NDR. Since the
+recipient's address is still an X.400 address, MSMI complains correctly that the
+proper MS Mail gateway component is not set up at the MS Mail Connector
+Postoffice.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 4.0 of Microsoft
+Exchange Server. This issue is corrected in Microsoft Exchange Service Pack1.
+
+MORE INFORMATION
+================
+
+The Microsoft Exchange MTA passes the DN to MSMI for further delivery of the NDR
+to the MS Mail based recipient.
+
+
+Additional query words: MSMIExchange NDR EventID 2568
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

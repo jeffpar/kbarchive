@@ -1,0 +1,83 @@
+DOCUMENT:Q156613  12-JUN-2001  [homekids]
+TITLE   :Writer 2: "The Printer Could Not Be Found" Error Message
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+2.00
+WINDOWS
+kbprint kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to print from within Creative Writer 2, you may receive the following
+error:
+
+   The printer could not be found.
+
+CAUSE
+=====
+
+This behavior may occur if you change and remove the current printer while
+Creative Writer 2 is open.
+
+Creative Writer defaults to the printer selected the first time you print from
+within the program. If you try to print to another printer within Creative
+Writer 2 after removing or renaming the printer driver, you may also get this
+error message.
+
+RESOLUTION
+==========
+
+Use one of the following solutions.
+
+Solution A
+----------
+
+Open a new document:
+
+1. Click the File folder icon, then click New Project.
+
+2. Confirm to save changes if you desire.
+
+Solution B
+----------
+
+Close and reopen Creative Writer:
+
+1. Click the File folder icon, then click Quit.
+
+2. Confirm to save changes if you desire.
+
+Additional query words: 2.00 kids mskids max writer cw2 cw2.0 cw
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbCreativeWriter200
+Version           : WINDOWS:2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

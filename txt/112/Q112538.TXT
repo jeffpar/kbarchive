@@ -1,0 +1,86 @@
+DOCUMENT:Q112538  08-NOV-2001  [homemm]
+TITLE   :Schubert: GPF or Insufficient Memory Error with Orchid Video
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Schubert for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play the Trout Game and successfully match rocks, you may receive
+either an insufficient memory error message or the following general protection
+(GP) fault:
+
+   Schubert has caused a General Protection Fault in VBRUN300.DLL at 0030:1163.
+
+CAUSE
+=====
+
+This problem occurs if you are using the Orchid Fahrenheit 1280 Advanced VGA
+video driver and card.
+
+This problem is most likely to occur when Schubert plays two animations one after
+the other in the Trout Game (which is what happens when you successfully match
+two rocks).
+
+Microsoft has confirmed this to be a problem in Schubert version 1.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To eliminate this problem, use a different driver that is compatible with your
+video card.
+
+For information about changing your video mode, refer to pages 557-560 in the
+"Microsoft Windows User's Guide" for Windows 3.1.
+
+MORE INFORMATION
+================
+
+This problem generally occurs when you successfully match rocks in the Trout
+Game. The MMTASK or the ORCHIDF driver causes the error and the GP Fault or the
+insufficent memory message will appear. After choosing OK to accept these error
+messages, Schubert usually displays an "MCI error" message box and then resumes
+the game.
+
+Occasionally when you receive these error messages, you may find that your CD-ROM
+drive's "busy" LED begins to flash continuously and your system stops responding
+(hangs). When this occurs, you must restart your computer.
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," version 3.1, pages 557-560
+
+Additional query words: 1.0 multi media multimedia multi-media avi freeze lock crash gpf reboot hang locked up
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMSchubert
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

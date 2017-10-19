@@ -1,0 +1,60 @@
+DOCUMENT:Q164183  30-DEC-1999  [iis]
+TITLE   :.HTM Files Are Indexed by Text Filter Instead of HTML Filter
+PRODUCT :Internet Information Server
+PROD/VER:WINNT: 1.1,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 1.1, 2.0 
+ - Indexing Service 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install Netscape Navigator, and you make it your default browser,
+Index Server uses Text filter instead of HTML filter to filter HTML files.
+
+CAUSE
+=====
+
+Netscape overwrites the class data in the registry.
+
+WORKAROUND
+==========
+
+For Index Server 1.x:
+
+Reinstall Index Server to re-enter registry keys.
+
+For Index Server 2.0 and Indexing Service:
+
+Stop and restart the Index Server or Service to register the filters on startup.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ110 kbIdxServ200
+Version           : WINNT: 1.1,2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

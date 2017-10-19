@@ -1,0 +1,68 @@
+DOCUMENT:Q169748  31-JUL-2001  [sms]
+TITLE   :SMS: Packages Not Copied to NetWare Distribution Servers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbDespooler kbPCM smsdespooler smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When distributing Systems Management Server packages to a NetWare distribution
+server, you may receive an Event ID 108 error:
+
+   108 Failed to install package to X. Verify the package server is up and
+   running and has sufficient disk space. The SMS service account must exist on
+   the package server and has the same password as the site server, and the
+   service account must have admin privilege. If the package server is a NetWare
+   server, verify the volume exists.
+
+This event is also generated when the Everyone group does not exist on that
+NetWare server.
+
+MORE INFORMATION
+================
+
+The Systems Management Server Despooler fails to set permissions on the package
+directory on the NetWare server because it cannot find the Everyone group.
+
+The Despooler Log shows the following message:
+
+   NWScanObject for user or group EVERYONE; return: ffff
+   6/01/97 3:25:15 PM
+   NWScanObject for user or group EVERYONE; return: ffff
+   6/01/97 3:25:15 PM
+   Failed to set permission on
+   \\Jamal\APPL\SMS\logon.srv\pcmpkg.src\CS100005
+   6/01/97 3:25:15 PM
+
+Additional query words: prodsms id Novell
+
+======================================================================
+Keywords          : kbnetwork kbDespooler kbPCM smsdespooler smspcm 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

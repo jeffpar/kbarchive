@@ -1,0 +1,50 @@
+DOCUMENT:Q107168  14-NOV-1999  [miscsdk]
+TITLE   :Limits on Number of Groups and Word Wheels
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::2.0,2.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer Publishing Toolkit, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+A Viewer title can have at most 200 total word wheels and topic
+groups. This limit includes browse sequences, which are a special type
+of topic group. Page 4-11 of the Microsoft Multimedia Viewer
+Publishing Toolkit "Technical Reference" incorrectly says that the
+limit on the number of groups applies only to searchable groups; the
+limit applies to the combined total of all groups and word wheels.
+
+If more than 200 groups and word wheels are defined in the .MVP file,
+the Viewer compiler, WMVC.EXE, will generate the warning 8041:
+"Entry/Exit macro specification overflow." Any group footnotes in the
+RTF file that reference a group over the 200 limit will generate the
+warning 8161: "Bad group reference; all groups must be declared in the
+project file."
+
+Additional query words: 2.00 2.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200 kbMMViewer200a
+Version           : :2.0,2.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

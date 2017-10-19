@@ -1,0 +1,71 @@
+DOCUMENT:Q61978  04-NOV-1999  [utilities]
+TITLE   :FIX: U1001 w/ Corrupted MAKEDIR Macro in Real Mode NMAKE 1.11
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.11
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NMAKE Utility for MS-DOS, version 1.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+NMAKE version 1.11 may produce a U1001 "syntax error: illegal character
+<character> in macro" while building a project because of a problem with
+the MAKEDIR macro. The problem occurs only with the DOS version of NMAKE 1.11
+and not the protected mode version.
+
+CAUSE
+=====
+
+NMAKE has an internal macro, MAKEDIR, which contains the full drive and path to
+the directory from where NMAKE was invoked. This macro is corrupted in NMAKE
+version 1.11 under DOS. Rather than the correct pathname, the macro contains
+"garbage" or graphics characters. This macro can cause the U1001 "illegal
+character" error message.
+
+To display the contents of MAKEDIR, invoke NMAKE with the /P switch. This switch
+causes all macros to be displayed to the screen.
+
+RESOLUTION
+==========
+
+To work around this problem, manually set MAKEDIR in the .MAK file for the
+project. Set it to the drive and path where the project is being built. If
+MAKEDIR is manually set in the .MAK file, it will override the default setting
+and correct the problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in NMAKE version 1.11. This problem
+was corrected in NMAKE version 1.12.
+
+Additional query words: 1.11 buglist1.11 fixlist1.12
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE111DOS
+Version           : MS-DOS:1.11
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

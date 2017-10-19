@@ -1,0 +1,88 @@
+DOCUMENT:Q238143  10-AUG-2001  [winnt]
+TITLE   :BUG: WTSQuerySessionInformation() Returns Invalid Client Address
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI kbOSWin2000 kbOSWin2000bug kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDSN
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You should use the WTSQuerySessionInformation function with the filtering flag,
+WTSClientAddress, to get the client IP address on a Windows Terminal Client. The
+buffer that is returned by this function contains a WTS_CLIENT_ADDRESS structure
+for the client address family and address. However, on Windows NT Server version
+4.0, Terminal Server Edition (TS4), the client address field is invalid.
+
+RESOLUTION
+==========
+
+As a workaround on TS4, you can first use the WTSQuerySessionInformation
+function with the WTSClientName filtering flag to get the client name. The
+client name is either a dotted IP address or a name string. If the client name
+is a name string, use the gethostbyname function to resolve the name to an IP
+address.
+
+The following code fragment illustrates how to use the gethostbyname function to
+resolve a client name string to its IP address:
+
+      ...
+      ...
+      ...
+      lphp = gethostbyname(szClientName);
+
+      if (lphp == NULL)
+      {
+         printf("gethostbyname failed: %d", WSAGetLastError());
+         return -1;
+      }
+
+      inAddr.s_addr = ((struct in_addr far *)(lphp->h_addr))->s_addr;
+      printf("Client address: %s\n", inet_ntoa(inAddr));
+      ...
+      ...
+      ...
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Because of this bug, both the auditing event log and tsadmin do not show the IP
+address of the client.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbOSWin2000 kbOSWin2000bug kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

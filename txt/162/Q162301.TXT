@@ -1,0 +1,82 @@
+DOCUMENT:Q162301  07-SEP-2001  [foxpro]
+TITLE   :FIX: @ SAY Causes Error After SET DEVICE to PRINTER Command
+PRODUCT :Microsoft FoxPro
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbprint kbvfp kbvfp500aFIXkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After issuing an @ SAY command that follows a SET DEVICE to PRINTER command, the
+following error occurs:
+
+   Memory is low, so streaming output updating has been disabled.
+
+Subsequent operations in Windows 95 may become sluggish due to a possible loss of
+memory resources.
+
+STATUS
+======
+
+This problem has been fixed in Visual FoxPro 5.0a.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Command window, enter the following two lines:
+
+       SET DEVICE to PRINT   && press the <Enter> key at the end
+       @1,2 SAY ''           && of each of these lines.
+
+   NOTE: The following message appears in a pop-up dialog box: "Memory is low, so
+   streaming output updating has been disabled."
+
+2. Click OK to remove the message box.
+
+3. In the Command window, enter the following line:
+
+       @3,2 SAY "Print out this test line"
+
+NOTE: When issuing the @...SAY command, ensure the Windows 95 desktop is visible.
+Observe the second @ SAY command or any other subsequent @...SAY command causes
+the desktop icons to flash.
+
+NOTE: A workaround to this problem is to SET PRINTER ON, SET DEVICE TO PRINT and
+issue the print statement using the question marks ("?"). A SET PRINTER OFF and
+SET PRINTER TO command should be issued once the print statements are completed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbvfp kbvfp500aFIX kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

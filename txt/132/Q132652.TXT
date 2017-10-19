@@ -1,0 +1,66 @@
+DOCUMENT:Q132652  17-DEC-2000  [win95x]
+TITLE   :Pressing ESC Key May Cause Garbled Startup Screen
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95, the Startup screen (text mode) may be displayed
+incorrectly. If you press the ESC key to view the text-mode screen, the
+characters may seem garbled.
+
+CAUSE
+=====
+
+Some types of video adapters cannot properly handle the video mode switching
+that occurs when you press the ESC key.
+
+RESOLUTION
+==========
+
+To resolve this problem, add the following line to the [Options] section of the
+Msdos.sys file:
+
+   Logo=0
+
+This line prevents the Windows 95 logo from being displayed at startup, allowing
+the text-mode screen to be displayed correctly.
+
+MORE INFORMATION
+================
+
+The Msdos.sys file has its hidden and read-only attributes set. You must clear
+these attributes before you can edit the file.
+
+You may also need to use the "Logo=0" switch in the Msdos.sys file if a batch
+file that prevents starting protected mode is called from the Autoexec.bat file.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

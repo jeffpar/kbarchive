@@ -1,0 +1,73 @@
+DOCUMENT:Q149607  08-NOV-2001  [pcmail]
+TITLE   :Must Restart After Installing Microsoft Phone on Presario
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:win95 msphone1
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Phone, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Microsoft Phone software on a Compaq Presario model 520,
+720, or 920 computer, the following error message may be displayed if you start
+Microsoft Phone before you restart your computer:
+
+   Phone is unable to access the voice commands. Try closing Phone,
+   restart your computer, and try again.
+   Win32 error (module SPEECH).
+   The program has selected a non-existent speech engine.
+
+If you restart your computer and then start Microsoft Phone again, the error
+message is not displayed, but the Answering Machine is turned off.
+
+CAUSE
+=====
+
+Compaq Presario model 520, 720, and 920 computers include a voice phone that is
+supported by the Microsoft Phone software. However, after you install the
+Microsoft Phone software on these computers, you must restart the computer for
+the Microsoft Phone software to function properly.
+
+RESOLUTION
+==========
+
+If you receive the error message stated above the first time you start Microsoft
+Phone on a Compaq Presario model 520, 720, or 920 computer, restart your
+computer, and then start Microsoft Phone again. To turn on the Answering Machine
+after you start Microsoft Phone, follow these steps:
+
+1. In Microsoft Phone, click Phone Properties on the Options menu.
+
+2. Click the Answer tab.
+
+3. Click the Turn On Answering Machine check box to select it.
+
+Additional query words: 1.00 tazz wiley msphone1
+
+======================================================================
+Keywords          : win95 msphone1 
+Technology        : _IKkbbogus kbMSHardwareSearch kbPhone
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

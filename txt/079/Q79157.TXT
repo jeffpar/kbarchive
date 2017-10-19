@@ -1,0 +1,59 @@
+DOCUMENT:Q79157  27-JUL-2001  [visualc]
+TITLE   :FIX: H2INC Doesn't Recognize /BATCH Command-Line Switch
+PRODUCT :Microsoft C Compiler
+PROD/VER:OS/2:1.0; winnt:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is documented that H2INC version 1.0, which shipped with Microsoft Macro
+Assembler (MASM) versions 6.0, 6.0a, and 6.0b, recognizes but ignores C 6.0
+options that aren't specified as an H2INC option. However, the /BATCH switch
+produces the following error:
+
+   fatal error HI1800: '/BATCH' : unrecognized option
+
+This is most prevalent while working in the Microsoft Programmer's WorkBench
+(PWB) where the /BATCH switch is added by default to the compiler switches that
+H2INC uses when it is called.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in H2INC version 1.0. This problem
+was corrected in H2INC for MS-DOS version 1.1 which is included with MASM for
+MS-DOS version 6.1.
+
+Additional query words: 6.00 6.00a 6.00b 1.00 buglist1.00 fixlist1.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM100
+Version           : OS/2:1.0; winnt:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

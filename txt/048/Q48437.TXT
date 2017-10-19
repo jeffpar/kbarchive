@@ -1,0 +1,40 @@
+DOCUMENT:Q48437  30-JUL-2001  [homegame]
+TITLE   :View Panning in Flight Simulator Version 4.00
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+With Flight Simulator Version 4.00, press SHIFT+ENTER to pan downward and
+SHIFT+BACKSPACE to pan upward. Press the "view control" key (SCROLL LOCK on an
+IBM PC with function keys on left, keypad * for IBM PC with function keys on
+top, BREAK on Tandy) to return to level view.
+
+Sideways smooth panning is available on the Tandy 1000 with the LEFT ARROW and
+RIGHT ARROW keys. Press the LEFT ARROW key to pan left and the RIGHT ARROW key
+to pan right.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

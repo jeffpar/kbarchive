@@ -1,0 +1,73 @@
+DOCUMENT:Q163715  25-JUN-2002  [accother]
+TITLE   :ODE97: ODE Help Workshop - Cancel and Close Buttons Fail
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+When you click the New button in Microsoft Help Workshop, the New dialog box is
+opened. In the New dialog box, if you click the Cancel button or the Close
+button, the dialog box remains open.
+
+RESOLUTION
+==========
+
+To close the New dialog box, you must first click OK to open a new Help Project,
+and then click Cancel in the Project File Name box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 97 Developer
+Edition Tools.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. On the Start menu, point to Programs, point to Microsoft ODE Tools, and then
+   click Microsoft Help Workshop.
+
+2. On the File menu, click New.
+
+3. In the New dialog box, click Cancel or click the Close button. Note that the
+   New dialog box remains on the screen.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

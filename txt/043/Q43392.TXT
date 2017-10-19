@@ -1,0 +1,120 @@
+DOCUMENT:Q43392  22-JUL-2001  [visualc]
+TITLE   :INFO: Clarification of the "g" Format Specifier for printf()
+PRODUCT :Microsoft C Compiler
+PROD/VER:MS-DOS:6.0,6.00a,6.00ax,7.00; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5
+OPER/SYS:
+KEYWORDS:kbcode kbCRT kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+    - Microsoft C for OS/2, versions 6.0, 6.0a 
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft C, the output format resulting from the printf() format specifier
+"g" does not exactly match the output format resulting from either format
+specifier "e" or "f". The documentation states that "g" will use either the "f"
+or "e" format, whichever is more compact. This is true in the sense of the
+overall format but there are some differences.
+
+The precision value is interpreted differently in "g" format than in "f" format.
+The documentation explains this difference. The precision for "f" specifies the
+number of digits after the decimal point. The precision for "g" specifies the
+maximum number of significant digits printed.
+
+MORE INFORMATION
+================
+
+The following example demonstrates the difference described in the SUMMARY:
+
+Sample Code
+-----------
+
+   #include <stdio.h>
+
+   void main (void)
+   {
+      double x = 2.0/3.0; /* 0.666... */ 
+      double y;
+
+      y = 6.0 + x;
+     printf ("%.4g\n", y);
+     printf ("%.4f\n", y);
+     printf ("%.4e\n\n", y);
+
+      y = 66.0 + x;
+     printf ("%.4g\n", y);
+     printf ("%.4f\n", y);
+     printf ("%.4e\n\n", y);
+
+      y = 666.0 + x;
+     printf ("%.4g\n", y);
+     printf ("%.4f\n", y);
+     printf ("%.4e\n\n", y);
+
+      y = 6666.0 + x;
+     printf ("%.4g\n", y);
+     printf ("%.4f\n", y);
+     printf ("%.4e\n\n", y);
+
+      y = 66666.0 + x;
+     printf ("%.4g\n", y);    /* switches to "e" notation here */ 
+     printf ("%.4f\n", y);
+     printf ("%.4e\n\n", y);
+   }
+
+The results of the above program are correct as shown below:
+
+6.667
+6.6667
+6.6667e+000
+
+66.67
+66.6667
+6.6667e+001
+
+666.7
+666.6667
+6.6667e+002
+
+6667
+6666.6667
+6.6667e+003
+
+6.667e+004
+66666.6667
+6.6667e+004
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbCRT kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : MS-DOS:6.0,6.00a,6.00ax,7.00; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

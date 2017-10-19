@@ -1,0 +1,74 @@
+DOCUMENT:Q166429  09-AUG-2001  [winnt]
+TITLE   :PCNTW: How to Set Appropriate System Locale for Applications
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To run Traditional Chinese and Simplified Chinese applications in Pan Chinese
+Windows NT Workstation 4.0, you need to switch between different locales.
+Otherwise, the applications will not show the proper text or User Interface on
+screen.
+
+For BIG5 applications, you must switch system locale to Chinese (Taiwan) locale.
+For example, Traditional Chinese Office 95 uses the Chinese (Taiwan) locale.
+
+For GB or GBK applications, you must switch system locale to Chinese (PRC)
+locale. For example, Simplified Chinese Office 95 uses the Chinese (PRC)
+locale.
+
+Unicode or English applications can run on any Chinese (PRC) or (Taiwan) or (Hong
+Kong) locale. For example, Notepad in Pan Chinese Windows NT is able to use any
+of these locales.
+
+MORE INFORMATION
+================
+
+To change system locale:
+
+1. Log on to an account with administrator privileges.
+
+2. Click the Start button, point to Settings, click Control Panel, and then
+   double-click Regional Settings.
+
+3. Click the Regional Settings tab.
+
+4. Click either Chinese (PRC) or Chinese (Taiwan) locale.
+
+5. Click Set As System Default Locale, so that it is selected, and then click
+   OK.
+
+6. Restart your computer to activate the selected system locale.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

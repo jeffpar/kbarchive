@@ -1,0 +1,63 @@
+DOCUMENT:Q257926  12-NOV-2001  [homemm]
+TITLE   :Encarta Dictionary: Essays in Hardbound Edition Are Not Included
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0; :
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta World English Dictionary, version 1.0 
+ - Microsoft Encarta World English Dictionary 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Three introductory essays that are included in the Microsoft Encarta World
+English Dictionary Hardbound Edition are not included in the CD-ROM version.
+
+MORE INFORMATION
+================
+
+The hardbound edition of the Encarta World English Dictionary includes
+additional content that is not included in the dictionary's CD-ROM version.
+
+The CD-ROM version of Encarta World English Dictionary is both sold separately
+and as part of Microsoft Encarta Reference Suite 2000.
+
+The hardbound edition includes the following additional essays:
+
+ - "History of the English Language" by Professor Christian J. Kay and Professor
+   Lee Pederson, with additional contribution by Anne H. Soukhanov.
+
+ - "A Brief History of Dictionaries and Dictionary Makers" by Jonathon Green.
+
+ - "World English" by Tom McArthur.
+
+
+Additional query words: multi multi-media media mm ewed hardcover cloth bound
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbEncartaWorldEngDict kbEncartaWorldEngDict2001
+Version           : WINDOWS:1.0; :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

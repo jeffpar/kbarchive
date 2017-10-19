@@ -1,0 +1,57 @@
+DOCUMENT:Q146366  18-DEC-1999  [schedplus]
+TITLE   :Mtg Req: Decline and Don't Send Response - Attendee Icon Wrong
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:4.0,7.0; Win95:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange Client for Windows 95, version 4.0 
+ - Microsoft Schedule+, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When User1 sends a meeting request to User2, and User2 declines the meeting but
+doesn't send a response (just closes the response without sending it), User1
+still shows User2's icon as being the closed envelope with the question mark and
+not the red X.
+
+The icons in the Attendees list for User2 still has the envelope with the
+question mark, showing that they have been sent a request.
+
+CAUSE
+=====
+
+We changed the design from silent response to no response if the user declines
+to send a response. Customers complained about Microsoft Exchange sending
+messages that they said NO to sending.
+
+Additional query words: 4.00 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbZNotKeyword3 kbExchange400NT
+Version           : WINDOWS:4.0,7.0; Win95:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

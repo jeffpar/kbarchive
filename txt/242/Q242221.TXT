@@ -1,0 +1,323 @@
+DOCUMENT:Q242221  09-OCT-2001  [exchange]
+TITLE   :XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 1
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP1
+OPER/SYS:
+KEYWORDS:exc55sp1kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is a current listing of the article numbers for bugs that are fixed
+in Exchange Server 5.5 Service Pack 1. Use the Qxxxxxx number that precedes the
+title of the bug fix to query the Microsoft Knowledge Base to find an article
+about that bug.
+
+NOTE: Exchange Server service packs are cumulative and contain all fixes included
+in earlier service packs. For example, Exchange Server 5.5 Service Pack 3
+contains all fixes included in Exchange Server 5.5 Service Pack 1 and 2. You do
+not need to install an earlier service pack before you install Exchange Server
+5.5 Service Pack 3.
+
+For additional information about bug fixes included in other Exchange Server 5.5
+service packs, click the article numbers below to view the articles in the
+Microsoft Knowledge Base:
+
+   Q235453 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3 (Part
+   1)
+
+   Q241740 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3 (Part
+   2)
+
+   Q242222 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 2
+
+MORE INFORMATION
+================
+
+SERVICE PACK 1
+
+   Q152932 XCON: X.400 Connector Uses Session Selector on X.400
+   Q164863 XFOR: Setting the MSMI to Send SNADS Address as Reply-To
+   Q166520 XADM: Administrator Incorrectly Creates an MS Mail Connector Mailbox
+   Q169113 XCON: Using an X.400 Connector with TCP/IP in a Cluster Environment
+   Q169130 XFOR: MS Mail Migration Fails When User List File Is Specified
+   Q173713 XFOR: Custom Recipient Receives Rich Text Format Information
+   Unexpectedly
+   Q174488 PRB: Application Generates Run-Time Error 3633 When Run on New
+   Machine
+   Q175042 XCON: Extended T.61 Translated Incorrectly in P2/P22 Subject Field
+   Q175360 XFOR: DirSync Cycle Removes Secondary X.400 Addresses
+   Q175437 XFOR: Thai Characters are not Translated by the MS Mail Connector
+   Q175982 XFOR: Outbound SMTP Mail Never Leaves Microsoft Exchange Server
+   Q176037 XWEB: Blank To: Line When Deleting Recurring Appointment
+   Q176397 XFOR: Access Violation Migrating Messages from SFS Postoffice
+   Q176952 XFOR: Store Fails to Deliver Auto-Generated Messages from X.400
+   Service Provider
+   Q177251 XADM: Disabling Public Folder Replication Status Messages on
+   Information Store Startup
+   Q177268 XADM: Information Store Stops When Decoding Inbound TNEF Properties
+   Q177308 XADM: Slow Client Logon Due to Missing Addressing Template
+   Q177557 XFOR: Recipients Ignored on Mail Sent to Two or More CMS Nodes
+   Q177710 XADM: Store Stops Referencing Parent Attachment Pointer
+   Q177762 XADM: Access Violation (0xc0000005) During Exchange Setup
+   Q177783 XADM: Temp Files Remain After OAB Generation Fails
+   Q177793 XADM: NDRs Discarded by Internet Mail Service
+   Q177807 XADM: Online Backup of the Information Store or Directory May Stop
+   with Access Violation
+   Q177820 XCON: MTA Stops Unexpectedly When Accessing Memory
+   Q177825 XWEB: Support for Multiple SSI Providers Is Missing
+   Q177862 XCON: Messages that Fail Downgrade Bounce Between X.400 Connectors
+   Q177867 XCON: NDR Not Received When Sending to Bad PAB Entry
+   Q177869 XFOR: Messages with X.400 Address in From Field Not Delivered
+   Q177875 XADM: Memory Leak in Directory Service of Exchange Server
+   Q177942 XADM: MIME Message Text Word Wrap Option Cannot Be Configured
+   Q177979 XCON: Internet Originated Message w/Message as Attachment Generates
+   NDR at the MSMI
+   Q178053 XADM: Store Thread's Processor Utilization Peaks Indefinitely Based on
+   Predictable Weekly Schedule
+   Q178056 XCLN: One-Off RFC822 Addresses in Form of: John Smith [johns@xyz.com]
+   Supported
+   Q178082 XFOR: BCC Recipient Appears in To: Field When Sending to PROFS
+   Q178091 XFOR: Message from Client Not Homed on Server Crashes IMC
+   Q178092 XADM: Modifying Cross-Posted Message Crashes Information Store
+   Q178093 XADM: Attachments with Long Names Crash SNADS or PROFS Connector
+   Q178094 XFOR: Incorrect Time Stamp on Messages Sent from New Zealand Daylight
+   Savings Time (NZDT) Zone
+   Q178095 XADM: Access Violation in Store.exe when Importing Active Text File
+   Q178096 XCLN: Outlook Client Crashes Accessing Restricted DL
+   Q178219 XADM: Administrator Cannot Specify a Font Size in IMC
+   Q178259 XADM: Chat Service Failure Caused by an Invalid Number of
+   Reply/Request Arguments
+   Q178338 XADM: Information Store Access Violation in hrVerifyAttach
+   Q178376 XCON: Local Address Space Replicated to Other Sites
+   Q178378 XCON: IMS Does Not NDR Message When Passed DISP_NDR_ORIG
+   Q178386 XWEB: RecvTextA Interface for Channel Service Is Broken
+   Q178436 XFOR: Looping Messages over Internet Mail Service Site
+   Q178543 XCLN: Err Msg: Can't open this item. Cannot add the attachment; no
+   data source was provided.
+   Q178620 XCLN: Client Profile Update Doesn't Update DNS FQDN
+   Q178627 XFOR: Chat Server 2.0 Can Fail with Extremely Heavy Usage
+   Q178657 XADM: Hyperlinks Composed in WordMail 97 Do Not Function
+   Q178659 XCON: Asserts Problem When Downloading Messages
+   Q178820 XADM: Collabra Migration Tool Does Not Handle OLE Embedded Docs
+   Q178939 XADM: Language Not Maintained with Cyrillic (KOI8-R) Messages
+   Q179014 XFOR: Characters Are Stripped on Fixed File Sent from PROFS
+   Q179048 XADM: Admin Mailbox Cleanup Deletes Calendar, Contacts, Notes,
+   Journal, and Tasks
+   Q179050 XADM: WinNT Account Becomes Domain\\User When Output by Export
+   Q179056 XADM: Store Stops While Processing Rule for Client
+   Q179058 XADM: Store on Alpha Fails When POP3 User Retrieves Attachment
+   Q179072 XFOR: Exchange cc:Mail Connector Causes NFT Error on Clandata
+   Q179289 XFOR: Internet Mail Service May Not Start When Multiple Entries Are
+   Used and RelayFlags Are Set to RELAY_USE_ALLOW_LIST
+   Q179441 XCLN: Exchange Server Slows with Message Stuck in User Mailbox
+   Q179623 XADM: Store Terminates Unexpectedly in CbBinlen
+   Q179677 XFOR: Comma Precedes SMTP Sender's Display Name When Sending to
+   cc:Mail by Means of Internet Mail Service
+   Q179739 XCON: T.61 Body Part of Incoming Messages Not Handled Correctly
+   Q179814 XADM: Dr Watson in Store in EcFormatMVString8
+   Q179837 XCON: NDR from Malformed Message Not Received
+   Q179893 XWEB: Forwarding Message Sends Message to All on BCC: Line
+   Q179927 XADM: KCC Site Teardown Blocked by Large Site-Proxy-Space Attribute
+   Q179980 XFOR: DBCS Messages Not Migrated Correctly from Novell GroupWise
+   Q180350 XADM: Remote Monitoring Increases Open Handles on Server
+   Q180544 XADM: SMTP Display Name in Korean Displays Incorrectly After Public
+   Folder Replication
+   Q180641 XCON: cc:Mail Connector NDRs Messages with Unknown Date Format
+   Q180679 XCON: Encapsulated Message Properties May Be Lost
+   Q180730 XCON: Erroneous Deletion of SMTP and SNADS Routes During Routing
+   Recalculation
+   Q180876 XADM: Err Msg: Invalid Home Server Definition in User List File
+   Q181086 XCLN: Err Msg: The MS Exchange Directory Service Could Not Be...
+   Q181124 XADM: Invalid Page Fault Opening Signed Message with Attachment
+   Q181125 XFOR: Bcc Recipients Visible in Migrated cc:Mail Messages
+   Q181130 XFOR: Additional Characters Appear in Migrated cc:Mail Messages
+   Q181186 XFOR: CCMC Fails to Operate if Exchange is Installed to Long Directory
+   Name
+   Q181263 XADM: Exchange Sends Message Without Valid O/R Address
+   Q181410 XADM: Store Stops Responding with High CPU Usage for a Thread
+   Q181481 XFOR: Non-Delivery Report When Using SSL Without Authentication
+   Q181513 XCON: MTA DRAS Connection Terminates With 1294 and 9316 Events
+   Q181579 XCON: Private Messages Not Always Delivered
+   Q181649 XADM: MSMail Message Body Missing when Received Through the Internet
+   Mail Service
+   Q181742 XFOR: Message from Notes to Exchange Gets Stuck in Exchange
+   Q181824 XADM: Exchange Database Engine Doesn't Detect Removed Page in B-tree
+   Split Operation
+   Q181838 XADM: Jet97 Database Header Does Not Contain Last Repaired Date
+   Q181848 XCON: MTA Stops Unexpectedly When Message Volume Is Very High
+   Q181864 XADM: Setup /Q Prompts for Service Account When Installing Non-Service
+   Components
+   Q181871 XADM: PR_MESSAGE_FLAGS MSGFLAG_UNMODIFIED Bit Not Set Correctly
+   Q181931 XADM: Information Store Crashes in JetMove
+   Q181938 XCLN: Assertion Failure When Starting Outlook 8.0
+   Q182010 XADM: Auto Receipt Is Always from POSTMASTER@<local_domain.ext>
+   Q182040 XFOR: Internet Mail Service Converts Two-Digit Years Incorrectly
+   Q182051 XADM: Cannot Move E-form Message From a Public Folder to a Mailbox or
+   PST File
+   Q182084 XGEN: CDO's GetNext with Custom Property Fails at 17th Time
+   Q182232 SMTP Messages with TNEF Sent Via the Internet Mail Service May Lose
+   Formatting and Attachments
+   Q182294 XADM: Synchronization Fails When Attempting to Modify a Deleted
+   Message
+   Q182307 XADM: Text Attachments Appear Corrupted Because IMS Uses
+   Quoted-Printable Encoding
+   Q182314 XADM: DBCS Becomes "?" When You Click "Save Window Contents"
+   Q182321 XADM: Event ID 1025 Occurs When Search Folders Are Added To the
+   Backlinks List
+   Q182478 XADM: Information Store Crashes Attempting to Deliver Message with No
+   Message Class Attribute
+   Q182479 XFOR: GP Fault Sending or Receiving SMTP Messages
+   Q182521 XADM: Access Violation When Using Directory Import to Delete Windows
+   NT Accounts
+   Q182522 XADM: Administrator Program Corrupts the IMC Routing Table
+   Q182618 XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish or
+   Norwegian
+   Q182619 XCON: MTA Terminates with 9404 Error
+   Q182663 XADM: NDR After Information Store Stops Unexpectedly
+   Q182715 XADM: Store Stops in STORE!COLLECT::EcImportHierChange
+   Q182716 XCLN: Internet Options Tab Missing from Send Options Dialog Box
+   Q182758 XCON: X.25 Cards Supported Through Direct Hardware Interface
+   Q182797 XADM: Directory Replication Stops in Low Memory Condition
+   Q182798 XADM: Routing Calculation Fails Across Entire Organization
+   Q182821 XFOR: Internet Mail Service Not Trying Next Exchange Record
+   Q182932 XFOR: Directory Replication Fails over Internet Mail Service
+   Q182953 XCON: MTA Fails to Convert Attachment and Stops Unexpectedly
+   Q182955 XWEB: Some MHTML and HTML Messages Are Not Displayed Correctly
+   Q182990 XCON: MTA Stops Unexpectedly After Receiving RPC Information
+   Q183015 XADM: Restrictions on ABV Break Mailbox Name Resolution
+   Q183057 XADM: Private Information Store Has High Disk Size Item Numbers
+   Q183064 XCON: MTA Does Not Correctly Handle DDA Values With Equal Signs
+   Q183073 XADM: Microsoft IS Generates AV in LOGON::IncrObjCount
+   Q183105 XADM: Dr. Watson While Upgrading from 4.0 SP4 to 5.5
+   Q183225 XADM: GPF Occurs on Double-Byte Character Set Server
+   Q183312 XADM: SFS Mail Not Migrated When Custom Recipient Is Converted
+   Q183415 XFOR: NNTP JIS Message Converted to SJIS, Displayed Incorrectly
+   Q183481 XADM: CR/LF Characters Missing from End of Internet Text Body Parts
+   Q183598 XFOR: Multiple "Text/Plain" Body Parts Combined by Default
+   Q183605 XADM: Access Violation in Store.exe
+   Q183615 XADM: Access Violation in Store.exe
+   Q183633 XADM: High CPU in Store.exe with Incorrectly Formatted Attachment
+   Q183686 XWEB: Cannot Identify Yourself When Posting Newsgroup Messages
+   Q183719 FIX: MAPI_E_NOT_FOUND Returned Adding Personal Address Book
+   Q183801 XFOR: Internet Mail Service Can Only Send SMTP Type Mail
+   Q183818 XCON: MTA Unable to Send Message to Large Number of Recipients
+   Q184051 XFOR: Queued Message Waiting for ETRN Never Expires
+   Q184052 XFOR: Reply Address Wrong in cc:Mail Enterprise to Enterprise ADE
+   Relationship
+   Q184053 XCON: Fax from cc:fax to Exchange Recipient Is Not Readable
+   Q184103 XCON: MTA Converts General Text BP15 Attachments
+   Q184160 XADM: Messages Left After Deleting Mailbox with Directory Import
+   Q184190 XADM: System Instabilities After Restoring Information Store
+   Q184230 XADM: ESEUTIL/P Generates JET_errLVCorrupted (-1526) Error
+   Q184392 XWEB: Temporary Files Accumulate in Webtemp Directory When Using OWA
+   Q184437 XADM: Information Store Stops with Large Number of NNTP Users
+   Q184468 XADM: Edbutil.exe and Eseutil.exe Cannot Dump Log File Header
+   Q184536 XADM: Removing E-mail Addresses Through Directory Import
+   Q184542 XFOR: Internet Mail Service Very Slow with High Message Volume
+   Q184746 XFOR: Attendees Missing from Migrated Groupwise Meeting
+   Q184823 XADM: Bad Schema Index After Exchange 4.0 to 5.5 Upgrade
+   Q184841 XWEB: OWA Add-in Component for IIS May Cause Heap Corruption
+   Q185024 XCON: MTA NDRs Messages with Loop Detection After Upgrading Bridgehead
+   to 5.0SP2 or 5.5
+   Q185180 XFOR: Carriage Returns Not Preserved by Notes Connector on Mail from
+   Notes Web Client
+   Q185330 XFOR: SNADS and PROFS Connectors Reject Messages When
+   Auto-registration PAB Fills Up
+   Q185455 XCON: DRAS Connection Is Established and Dropped Immediately
+   Q185504 XFOR: Dxadata Folder Cannot Be Moved to Different Location
+   Q185593 XFOR: cc:Mail Dirsync Results in Blank Firstname, Lastname Fields in
+   Exchange GAL
+   Q185692 XADM: Synchronization of OST Fails
+   Q185694 XADM: Thread Deadlock When Windows NT Backup Is Stopped
+   Q185847 XFOR: Message Conversion Fails If Fixed Font Setting Is Enabled
+   Q185905 XADM: Cannot Display Message with Content-Type Entry That Wraps
+   Q185942 XADM: Cannot Run ISINTEG -PATCH on Cluster Server Computer
+   Q185996 XFOR: Internet Mail Service Takes Unusually Long Time to Start
+   Q186043 XCON: ECB Usage Count Events Appear with Large Directories
+   Q186048 XCON: MTA Closes Improperly After Repeated Stops and Restarts
+   Q186096 XADM: Eseutil.exe Does Not Fix Records with Missing Long Values
+   Q186172 XCON: POP3 RETR and LIST Command Behavior Reversed
+   Q186182 XFOR: Some Macintosh Attachments Not Encoded Using BinHex
+   Q186184 XADM: Cannot Perform Online Backup After Repairing Database
+   Q186215 XADM: Cleanup of Items Past Retention Triggers Read Receipts with "Not
+   Read" Status
+   Q186216 XFOR: Date Appended to Attached Files Sent to cc:Mail Mailing List
+   Q186289 XCON: Least-cost Routing Doesn?t Take Open-retry State into Account in
+   Routing Algorithm
+   Q186291 XADM: Cannot Determine Free Space Available in Exchange Database
+   Q186292 XADM: Database Size Increases Even Though Free Space Available
+   Q186344 XCON: Exchange Routes Messages Over X.400 Connector When It Should NDR
+   Them Locally
+   Q186580 XFOR: OV/VM Connector Fails to Return NDR for Message Addressed to
+   Non-Existent Exchange PROFS Proxy Addresses
+   Q186581 XCON: Event ID:152 When Messages Are Filtered Based on O/R Address of
+   Originator
+   Q186673 XWEB: Error Msg: Unable to Delete Message After Exceeding Storage
+   Limit Using OWA
+   Q186714 XCON: Cannot Configure MTA to Provide Adequate Message Control
+   Q186756 XCON: MTA Associations Fail On MSCS Installation
+   Q186764 XCLN: Cannot Search For Names That Contain Swedish Characters
+   Q186788 XWEB: Cannot View Attachments in OWA on IIS 4.0 Computer
+   Q186833 XADM: Internet Messages with Attachments Have Wrong Extension
+   Q186915 XFOR: Notes Connector May Send Empty Messages
+   Q186930 XFOR: Cannot Log On After Upgrading to Microsoft Chat 2.1
+   Q187225 XCON: Clustered MTA May Generate Socket Errors on X.400 Connections
+   Via IP
+   Q187226 XCON: MTA Generates Application Exception in Function otpugobj When
+   Performing FANOUT
+   Q187246 XFOR: Internet Mail Service Produces Dr. Watson
+   Q187798 XWEB: Appointment Shows End Date In Different Month Than Start
+   Q187799 FIX: ERR Msg: Failed to Perform MAPI Logon
+   Q187828 XADM: Information Store Hangs as Thread CPU Utilization Drops to 0%
+   Q187865 XFOR: Problems Running Multiple LinkAge Connectors
+   Q187866 XADM: Store Produces Dr. Watson When Converting File Name
+   Q187868 XADM: Downloading Messages Using Outlook Express Crashes Store
+   Q187869 XADM: Information Store Stops While Processing Message
+   Q187911 XCLN: Outlook Template Adds Zeros to Raw Number Field
+   Q187921 XADM: Body Part Not Mapped in Multipart/Alternative Message
+   Q187929 XCON: Recovery Checkpoint Size Different, MTA Connection Fails
+   Q187970 XCON: Unicode Message with TNEF Causes Information Store to Stop
+   Q188013 XFOR: Application Error With Multipart/Alternative Message
+   Q188040 XCON: MTA Disconnects and 2004 Event Appears in Event Log
+   Q188302 XADM: Clean Mailbox Command Cannot Delete Based on Date Received
+   Q188341 XFOR: AUTH/EHLO Commands Cause Internet Mail Service to Stop
+   Q188369 XADM: AUTHINFO Command Causes Information Store Problems
+   Q189142 XADM: ESEUTIL /P Uses All Available Disk Space
+   Q189268 XADM: Encrypted Message Unreadable When TNEF Is Turned On
+   Q189790 XFOR: Linkage 3.2 Connectors or Exchange Connectors Crash When Message
+   Contains PR_REPLY_RECIPIENT_ENTRIES
+   Q190441 XADM: Access Violation Deleting NT Accounts Using DAPI
+   Q190661 XADM: Cannot Install Exchange 5.5 After Installing CDO 1.21
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp1 kbfixlist
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1
+Version           : :5.5 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

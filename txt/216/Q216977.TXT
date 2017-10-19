@@ -1,0 +1,108 @@
+DOCUMENT:Q216977  08-MAY-2002  [visualc]
+TITLE   :FIX: C2233 on User-Defined Type Array Member of Template Class
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC600bug kbVC600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile a template class that contains a data member that is an array
+of a second template class, and the second class contains a data member that is
+an array, and the size of both arrays is dependent on a template parameter, you
+may receive the following error:
+
+   error C2233: '<Unknown>' : arrays of objects containing zero-size
+   arrays are illegal
+
+RESOLUTION
+==========
+
+Use a pointer instead of an array. Allocate the space for the array in the
+constructor, and deallocate the space for the array in the destructor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug has been fixed in Microsoft Visual Studio 6.0 Service Pack 5 (SP5).
+
+To download service pack 5, see the Visual Studio Product Updates page on the
+following Microsoft Web site at:
+
+   http://support.microsoft.com/support/servicepacks/VS/6.0/default.asp?sd=msdn
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+   template <int k>
+   class A
+   {
+       char x[k];
+   };
+
+   template <int h, int j>
+   class B  
+   {
+        A<h> y[j];
+   };
+
+Workaround
+----------
+
+   template <int k>
+   class A
+   {
+       char *x;
+       A() {
+           x = new char[k];
+       }
+       ~A() {
+           delete[] x;
+       }
+   };
+   template <int h, int j>
+   class B  
+   {
+        A<h> y[j];
+   };
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC600bug kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,60 @@
+DOCUMENT:Q120452  13-JUN-2001  [winmisc]
+TITLE   :Invalid Machine ID with OEM Windows Sound System 2.0
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:2.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to open the Microsoft Windows Sound System Audio Control icon, the
+following error message is displayed:
+
+   Invalid Machine ID
+
+CAUSE
+=====
+
+Toshiba uses a subset of the Windows Sound System that is coded to identify
+Toshiba systems. This subset is meant to function on Toshiba systems with
+integrated audio only. If it is installed in a non-Toshiba system, the subset
+loads correctly but generates the above error when you open the Audio Control
+icon.
+
+MORE INFORMATION
+================
+
+This problem may also occur on other systems that include subsets of Windows
+Sound System not specifically designed for those particular systems.
+
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : 2.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

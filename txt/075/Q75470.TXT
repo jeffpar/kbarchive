@@ -1,0 +1,64 @@
+DOCUMENT:Q75470  22-NOV-1999  [msdos]
+TITLE   :Incorrect Recommendation for BIOS Upgrade for Always SCSI
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have an Always Technologies SCSI controller card and are installing the
+Microsoft MS-DOS 5 Upgrade, a warning message similar to the following may be
+displayed during installation:
+
+   If you are using a Western Digital WD 7000 FASST or AT/XT SCSI controller
+   with hard-disk ROM version 3.35 or earlier, contact your vendor for an
+   upgrade before installing MS-DOS 5.0.
+
+This warning can also be found in section 2.14 of the README.TXT file shipped
+with the Microsoft MS-DOS 5 Upgrade package.
+
+CAUSE
+=====
+
+The current ROM BIOS revision of Always Technologies SCSI controllers is 3.33.
+The Setup program will display the above warning, suggesting that you obtain an
+upgrade. This warning is only intended for systems with Western Digital SCSI
+controllers; if your system doesn't have one, the error message should be
+ignored.
+
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these product's performance
+or reliability.
+
+Additional query words: 5.00
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

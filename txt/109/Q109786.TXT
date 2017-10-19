@@ -1,0 +1,71 @@
+DOCUMENT:Q109786  08-NOV-2001  [homemm]
+TITLE   :Mac Art Gallery/Wine Guide: Sound May Break or Not Play
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Art Gallery for the Macintosh, version 1.0 
+ - Microsoft Wine Guide for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Sounds may play badly or not at all when you are playing animations in Art
+Gallery or Wine Guide. This problem can occur if some or all of the following
+conditions exist:
+
+ - You are using a relatively slow Macintosh.
+
+ - You do not have much free memory.
+
+ - You are using a relatively slow CD-ROM drive.
+
+ - The animation is complex or large.
+
+RESOLUTION
+==========
+
+To minimize this problem:
+
+1. Close Art Gallery.
+
+2. Free some memory by exiting any other applications or utilities that may be
+   running.
+
+3. Restart Art Gallery.
+
+4. Try running the Art Gallery animation again.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q99809 Sounds Are Choppy When Virtual Memory Is Turned On
+
+Additional query words: mac multi media multimedia multi-media audio narration soundtrack effects
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbWine100Mac kbArtGalleryMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

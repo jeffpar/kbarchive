@@ -1,0 +1,78 @@
+DOCUMENT:Q135168  17-DEC-2000  [win95x]
+TITLE   :PCMCIA Disk Drive Not Available in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert a PCMCIA disk drive into a PCMCIA slot, your computer beeps,
+indicating that the PCMCIA card is recognized, but the disk drive is unavailable
+in Windows 95.
+
+CAUSE
+=====
+
+A resource conflict may exist if the PCMCIA disk controller is configured to use
+I/O ports 170-177 and your computer uses the same ports for some other purpose.
+
+RESOLUTION
+==========
+
+Examine the computer settings in Device Manager. If the PCMCIA disk controller
+is using ports 170-177, try either of the following methods to resolve the
+conflict:
+
+ - Reserve I/O ports 170-177, forcing Windows 95 to configure the PCMCIA disk
+   controller at another I/O address. To do so, follow these steps:
+
+    - In Control Panel, double-click the System icon.
+
+    - On the Device Manager tab, click Properties.
+
+    - On the Reserve Resources tab, click the Input/Output (I/O) option button,
+      and then click Add.
+
+    - In the Start Value box, enter 170.
+
+    - In the End Value box, enter 177.
+
+    - Click OK until you return to Control Panel
+
+    - Restart your computer.
+
+   Windows 95 will not configure any device to use I/O ports 170-177 if it can
+   avoid doing so.
+
+ - Try disabling any secondary disk controller that uses I/O ports 170-177 in
+   the computer's CMOS settings.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

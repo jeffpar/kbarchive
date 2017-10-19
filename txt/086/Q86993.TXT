@@ -1,0 +1,118 @@
+DOCUMENT:Q86993  05-FEB-2002  [win95x]
+TITLE   :Using WINFILE.INI's LongFileNames= Setting
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In File Manager, to view network directories and files with long names greater
+than the MS-DOS standard convention, use the following entry in the WINFILE.INI
+file's [SETTINGS] section:
+
+        longfilenames=1
+
+This information applies to LAN Manager version 2.1. This entry works only for
+the LANMAN21.DRV driver used with Windows version 3.1; it does not work with
+Windows for Workgroups.
+
+
+MORE INFORMATION
+================
+
+This switch does not exist in the WINFILE.INI file by default and must be added
+to see directories and files with long names greater than the MS-DOS convention.
+The MS-DOS convention is eight characters followed by a period (.), and then
+three more characters (for example, FILENAME.EXT).
+
+Many networks, such as LAN Manager networks running on OS/2 servers, support
+directories and filenames greater than the MS-DOS standard convention.
+
+FEATURES OF LONG FILENAME SUPPORT
+---------------------------------
+
+1. You can rename a long filename to a shorter filename.
+
+2. You can rename a short filename to a longer filename.
+
+3. You can copy the long filename from one directory on the server to another
+   directory on the server.
+
+4. You can copy a long filename from the server to a local MS-DOS partitioned
+   hard disk, but will receive the following message about needing to shorten
+   the filename:
+
+   This path does not match the DOS format for filenames. Please enter a new
+   name.
+
+5. Windows 3.1's Association feature will not function on files with long names.
+   For more information on the Association feature, refer to the pages 130-132
+   of the "Microsoft Windows User's Guide."
+
+6. Windows 3.1 applications cannot open files with long names.
+
+   Write displays the following error message:
+
+   This filename is not valid.
+
+   Notepad displays the following error message:
+
+   Cannot find LONGFILENAME.EXT.
+
+   Do you want to create a new file?
+
+   Answering either Yes or No, creates a new untitled document.
+
+Workaround:
+
+Rename the file to a short filename and then you can open it.
+
+FEATURES OF LONG DIRECTORY NAME SUPPORT
+---------------------------------------
+
+1. File Manager will allow you to create directories with long names on the
+   server after displaying the following message:
+
+   File Manager may not be able to access files created in the directory
+   "X:\LONGDIRNAME".
+
+   Do you want to continue?
+
+2. If a short filename or long filename file is located in a directory that has
+   a long directory name, then the Run command under the File menu will be
+   unavailable (dimmed).
+
+KBCategory: kbnetwork kbusage
+KBSubcategory: wfw wfwg win31
+
+Additional query words: lfn 3.10 3.11 grey gray grayed greyed
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : :3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

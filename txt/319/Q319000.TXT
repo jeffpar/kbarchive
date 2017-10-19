@@ -1,0 +1,64 @@
+DOCUMENT:Q319000  12-APR-2002  [msnetwork]
+TITLE   :How To Import Bookmarks From Netscape To Internet Explorer 5.x
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Internet Access for Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to import bookmarks from Netscape to Internet Explorer
+5.x.
+The information in this article applies to:  - Macintosh Internet Explorer 5.x
+
+MORE INFORMATION
+================
+
+To import bookmarks from Netscape to Internet Explorer 5.x
+
+1. Start Internet Explorer.
+
+2. On the Favorites menu, click Organize Favorites.
+
+3. On the File menu, click Import Favorites.
+
+4. In the Open window, browse to the location of your Netscape Bookmark File.
+   (For example: [Harddrive]: System Folder: Preferences: Netscape Users:
+   [Profile Name]:)
+
+5. Highlight Bookmarks.html.
+
+6. Click Open.
+   Your imported bookmarks will be listed under the Favorites menu as
+   Bookmarks.html.
+
+Additional query words: kbimu MSN Mac OSX OS X ten connect IE internet
+
+======================================================================
+Keywords          :  
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

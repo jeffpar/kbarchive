@@ -1,0 +1,64 @@
+DOCUMENT:Q301495  21-AUG-2001  [msnetwork]
+TITLE   :E-mail: How to Block a Sender
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You would like to prevent another Internet user from sending mail to them.
+
+MORE INFORMATION
+================
+
+To block a sender
+
+1. Open a message from the sender whom you want to block.
+
+2. At the bottom right hand corner of the screen select "block sender".
+
+3. The Helper will advise that the sender has been blocked. The Helper will also
+   offer information on how to unblock the sender.
+
+To unblock a sender
+
+1. From the "inbox", select the "mail settings" option.
+
+2. On the "mail settings" page, click "block sender".
+
+3. On the new page select the user id(so) that you want to unblock.
+
+4. At the bottom left hand corner of the screen, click "remove".
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

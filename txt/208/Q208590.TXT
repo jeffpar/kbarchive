@@ -1,0 +1,96 @@
+DOCUMENT:Q208590  26-FEB-2002  [vbwin]
+TITLE   :BUG: CommandBar: "Memory Could Not Be Read" Error
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600bug kbOSWinCEsearch kbOSWinCE100 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a ComboBox in a CommandBar has the focus while running a project in
+emulation, and the form is then closed via the CommandBar, an Application Error
+will result.
+
+Note that this behavior occurs only in the emulator.
+
+RESOLUTION
+==========
+
+This error does not occur if another control is selected before the Close button
+of the CommandBar is clicked or if the Close button of the Form is clicked.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE HPC Project in Visual Basic. Form1 is created by
+   default.
+
+2. When the Project Properties dialog appears, ensure that the Run on Target
+   value is set to Handheld PC Emulation.
+
+3. Select Components from the Project menu, and select the Microsoft CE
+   CommandBar Control 6.0.
+
+4. Add a CommandBar control to Form1.
+
+5. Paste the following code into the code module of Form1:
+
+   Option Explicit
+
+   Private Sub Form_Load()
+       Dim C As CommandBarComboBox
+       Set C = CommandBar1.Controls.Add(cbrComboBox, "MyCombo")
+   End Sub
+
+6. Run the project.
+
+7. Set the focus to the ComboBox by selecting it.
+
+8. Click the Close button on the CommandBar to close the form. Note that an
+   Application Error in pvbload.exe results.
+
+The problem happens if any ComboBox on the CommandBar has the focus when the
+Close button on the CommandBar is clicked: the ComboBox does not have to be
+empty.
+
+Additional query words: vbce vbce6 wince wce
+
+======================================================================
+Keywords          : kbToolkit kbVBp600bug kbOSWinCEsearch kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

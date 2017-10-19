@@ -1,0 +1,57 @@
+DOCUMENT:Q99058  19-NOV-1999  [pcmail]
+TITLE   :PC Forms: Telephone Note Accelerator Keys
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On the Telephone Note E-form included with version of 1.0 of Microsoft
+Electronic Forms Designer, there is only one accelerator key in the group of 3-D
+check boxes above the Comments field. The option that accepts an accelerator key
+is the Telephoned option.
+
+CAUSE
+=====
+
+This is by product design.
+
+RESOLUTION
+==========
+
+You can assign accelerator keys to the other 3-D check boxes available, and then
+recompile the form.
+
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

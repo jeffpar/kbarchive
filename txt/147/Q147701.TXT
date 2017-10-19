@@ -1,0 +1,56 @@
+DOCUMENT:Q147701  08-MAR-2000  [exchange]
+TITLE   :XADM: Exchange Service Account Permissions
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:winnt
+KEYWORDS:kbenv kbsetup XADM exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To install and start Microsoft Exchange Server version 4.0, 5.0, or 5.5, you
+need to create an Exchange Server service account with Domain User rights. This
+account is used to start the Exchange Server services. Create the account using
+the User Manager for Domains program that is provided with Microsoft Windows NT
+Server. During Exchange Server installation, Setup requests a service account
+and adds "Log On as a Service," "Restore Files and Directories," and "Act as
+Part of the Operating System" rights to this account.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q147702 XADM: Permissions Required to Install Microsoft Exchange Server
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbenv kbsetup XADM exc4 exc5 exc55 
+Version           : winnt:4.0,5.0,5.5
+Platform          : winnt
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

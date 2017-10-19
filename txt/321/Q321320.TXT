@@ -1,0 +1,78 @@
+DOCUMENT:Q321320  04-JUN-2002  [sms]
+TITLE   :SMSINST: Installer v2.0.148.00 repackage changes registry entry
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Systems Management Server (SMS) Installer version 2.0.148.00 repackage changes
+registry entry from "%1" to <SystemRoot>. This may prevent software from
+running.
+
+WORKAROUND
+==========
+
+To work around this problem, put a "dummy" variable name in the second variable
+of the Parse String script item.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+When you repackage, compile, and run a program with SMS Installer 2.0148.00, a
+registry entry value (the registry path may vary from one program to another)
+under HKEY_CLASS_ROOT\APP.Document\shell\open\command (or DDEEXEC) changes from
+"%1" to "\WINNT". After this registry entry is changed, running a program file
+from anywhere on the computer displays the following error message:
+
+   There was an error opening this document. The file does not exist.
+
+This problem occurs in the Parse String script item, which is part of the default
+script that is created when you use Installation Expert. The string that is
+parsed is the WIN variable. This is typically similar to C:\WINNT. The line is
+split at the colon (:); the first part of the string (such as C) is placed in
+the SYSDRIVE variable. Because there is no variable defined for the second part
+of the string, it should be discarded, but Installer creates a NULL variable
+that is equal to WINNT. Therefore, if %% is used later in the script to
+reference the percent (%) sign, the NULL variable is references instead. Because
+the NULL variable has been set to WINNT in the Parse String script item, %% is
+evaluated as WINNT.
+
+Additional query words: prodsms smsinst systemroot
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMSI200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

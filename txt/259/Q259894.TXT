@@ -1,0 +1,90 @@
+DOCUMENT:Q259894  08-MAY-2002  [exchange]
+TITLE   :XCLN: Error Closing PowerPoint Presentation from Public Folder
+PRODUCT :Microsoft Exchange
+PROD/VER::2000
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 2000 
+ - Microsoft PowerPoint 97 for Windows 
+ - Microsoft PowerPoint 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you close a PowerPoint presentation that was opened from an Exchange Server
+public folder, you may receive an error message that is similar to the
+following:
+
+   Unable to save changes to the document. Your changes will be placed in the
+   temporary file, 'c:\temp\filename.ppt'. You can copy this file into the
+   original folder if you want to recover your changes to the original document.
+   The operation failed.
+
+RESOLUTION
+==========
+
+To resolve this problem, apply Microsoft Office 2000 Service Pack 2 (SP2). For
+additional information about how to obtain Office 2000 SP2, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q276367 OFF2000: How to Obtain the Latest Office 2000 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This behavior occurs if the following conditions exist:
+
+ - You have Reviewer (read-only) permissions to the Exchange Server public
+   folder.
+
+ - You did not make any changes to the PowerPoint presentation.
+
+ - The PowerPoint presentation that you opened was placed in the Exchange Server
+   public folder by using the drag-and-drop method, instead of by creating the
+   PowerPoint presentation in the public folder.
+
+ - You opened the PowerPoint presentation from the Folder List pane, and not the
+   Preview pane.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbPowerPtSearch kbExchangeSearch kbExchange550 kbPowerPt2000 kbPowerPt97 kbZNotKeyword2 kbPowerPt2000Search kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbPowerPt97Search kbZNotKeyword3
+Version           : :2000
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

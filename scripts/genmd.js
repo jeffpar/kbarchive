@@ -5,7 +5,7 @@
  *
  * This should be run from the project's root:
  *
- *      node scripts/genmd.js kbtxt | tee scripts/genmd.log
+ *      node scripts/genmd.js txt | tee scripts/genmd.log
  */
 
 "use strict";
@@ -77,7 +77,7 @@ function processDir(sDir) {
  * @param {string} sFile
  */
 function processFile(sFile) {
-    let sNewDir = sFile.replace("kbtxt/", "kb/").replace(".TXT", "");
+    let sNewDir = sFile.replace("txt/", "kb/").replace(".TXT", "");
     let sNewFile = path.join(sNewDir, "README.md");
 
     // console.log("processing " + sFile + " new dir: " + sNewDir + " new file: " + sNewFile);

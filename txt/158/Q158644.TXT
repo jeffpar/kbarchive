@@ -1,0 +1,71 @@
+DOCUMENT:Q158644  30-JUL-2001  [sms]
+TITLE   :SMS: Windows NT 4.0 Upgrade Job Repeats Continually
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbPCM smspcmkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A Windows NT 4.0 unattended upgrade will continually cycle through the
+installation process when sent as System Background task. Note that the upgrade
+installs correctly, but the job repeats infinitely.
+
+CAUSE
+=====
+
+This problem occurs when you run the upgrade as a System Background task and no
+user is logged on to the computer. The Package Command Manager (PCM) service
+fails to report a job completion status. Disabling this option will allow the
+upgrade to complete successfully.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in System Management Server version
+1.2. This problem was corrected in the latest Microsoft Systems Management
+Server version 1.2 U.S. Service Pack. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+The upgrade will be performed correctly, but once it is done, the upgrade will
+start again. Sending the Windows NT 4.0 Service Pack (as a System Background
+task) works as expected, and does not display this problem.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbPCM smspcm kbfixlist
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

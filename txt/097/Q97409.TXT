@@ -1,0 +1,101 @@
+DOCUMENT:Q97409  09-FEB-2000  [win16sdk]
+TITLE   :DDESERV Demonstrates a Basic DDE Server
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbDDE
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Adding dynamic data exchange (DDE) server support to an application has never
+been easier. This article describes a code module you can include in your own
+application that makes adding DDE server support trivial. The code module makes
+use of the dynamic data exchange management library (DDEML) to implement the DDE
+protocol and provides the following features:
+
+ - Full System topic support
+
+ - An application programming interface (API) to dynamically add and remove
+   topics and topic/item pairs
+
+ - An API to dynamically add and remove DDE execute commands to a topic
+
+ - Automatic tracking of conversations
+
+ - Built-in execute command parser
+
+ - Partial support for the Execute Control 1 protocol, which allows a result
+   string to be returned in response to a DDE execute command request
+
+This article requires considerable familiarity with DDE concepts---it's not a
+good place to start learning about DDE. Please refer to the Microsoft Windows
+version 3.1 Software Development Kit (SDK) Programmer's Reference, Volume 1:
+Overview, Part 2: Extension Libraries for a general introduction to DDE and
+DDEML. The following articles on the Microsoft Developer Network CD (Technical
+Articles, Windows Articles, OLE and DDE Articles) provide more detail on various
+DDE topics:
+
+ - "DDE Execute Strings"
+
+ - "DDE Hot Links"
+
+ - "Performing DDE from a Dynamic-Link Library"
+
+ - "Raw DDE"
+
+ - "Supporting the Clipboard, DDE, and OLE in Applications"
+
+ - "Supporting the DDE System Topic"
+
+DDESERV shows how you can easily create a dynamic data exchange (DDE) server that
+supports the System topic and an Execute command set. You can build the server
+by using the STDDDE.C module included in the sample.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Ddeserv.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words: softlib DDESERV.EXE
+
+======================================================================
+Keywords          : kbfile kbDDE 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

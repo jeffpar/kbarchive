@@ -1,0 +1,80 @@
+DOCUMENT:Q128896  11-JUN-2002  [visualc]
+TITLE   :PRB: Exception in Service Causes JIT Debugger to Hang Computer
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDebug kbide kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Integrated Debugger, included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Just-In-Time (JIT) debugging is enabled in Visual C++, applications that
+cause exceptions (debuggees) bring up a dialog that will allow you to start the
+debugger.
+
+If a process running in a different context, such as a Service, causes an access
+violation or another exception under Windows NT version 3.5, the dialog appears,
+but the debugger never comes up and the process causes the computer to hang
+(stop responding).
+
+CAUSE
+=====
+
+When Windows NT starts the debugger after a fault, it runs in the same context
+as the application that faulted. Many services run in the LocalSystem account,
+which does not have access to the user desktop by default. Because the process
+cannot interact with the desktop, the debugger cannot either.
+
+RESOLUTION
+==========
+
+Beginning with version 3.5 of Windows NT, you can allow a Service to interact
+with the desktop. There are two ways to do this:
+
+ - Use the SERVICE_INTERACTIVE_PROCESS flag when calling CreateService().
+
+   -or-
+
+ - Start the Services control panel applet. Select the service, press the
+   Startup button, and choose Allow Service to Interact with Destop.
+
+STATUS
+======
+
+This behavior is by design in Windows NT 3.1 and 3.5. This problem does not
+occur under Windows NT 3.51.
+
+Additional query words: hung hang WorkBench
+
+======================================================================
+Keywords          : kbDebug kbide kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : :2.0,2.1,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

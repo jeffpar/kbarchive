@@ -1,0 +1,64 @@
+DOCUMENT:Q180702  02-APR-2000  [sna]
+TITLE   :Deleting LUA Pool from TN3270 May Delete Pool
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you delete an LUA pool assignment from the TN3270 service, the LUA pool
+itself may be deleted. This problem occurs when you are using the Microsoft
+Management Console (MMC) SNA snap-in interface with SNA Server 4.0, but not with
+the SNA Manager interface.
+
+CAUSE
+=====
+
+The SNA MMC snap-in is incorrectly referencing the LUA pool object instead of
+the TN3270 LUA pool assignment.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0. This
+problem was corrected in the latest SNA Server version 4.0 U.S. Service Pack.
+For information on obtaining this Service Pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+
+Additional query words: snammc
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

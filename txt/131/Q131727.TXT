@@ -1,0 +1,82 @@
+DOCUMENT:Q131727  02-FEB-2002  [exchange]
+TITLE   :XADM: EDBUTIL /d <Path to Dir.edb> Causes NT 2140 Error
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Edbutil /d <path to Dir.edb> is run from the Exchsrvr\Bin directory,
+the following errors will occur:
+
+ - In some cases, such as RC2 to RTM upgrade, a dialogue box will appear before
+   Edbutil finishes saying that Chkdsk needs to be run and that the
+   Exchsrvr\Dsadata directory is damaged and corrupt. After this dialogue is
+   cleared, Edbutil will finish successfully.
+
+ - When the Microsoft Exchange Directory Service is restarted from Control Panel
+   Services, the following error message will be displayed:
+
+   Could not start the Microsoft Exchange Directory Service on server
+   \\<server name>. Error 2140: An Internal Windows NT error occurred.
+
+WORKAROUND
+==========
+
+Edbutil will create an Edb.chk, Edb.log, Res1.log and Res2.log in the directory
+in which it is run. When the Directory Service starts up, it is looking for
+these newly created files and cannot find them in it's working directory
+(Exchsrvr\Dsadata). There are two workarounds for this problem:
+
+ - Run Edbutil in the Dsadata directory as follows:
+
+   C:\Exchsrvr\Dsadata>C:\Exchsrvr\Bin\Edbutil /d
+   C:\Exchsrvr\Dsadata\Dir.edb
+
+   Where C: should be replaced with the appropriate installation drive letter.
+   This will cause the .log files and Edb.chk file to be created in the
+   Exchsrvr\Dsadata directory.
+
+ - Move the Edb.chk, Edb.log, Res1.log, and Res2.log files from the directory
+   where Edbutil was run, into the Exchsrvr\Dsadata directory.
+
+After performing either of the above steps, restart the Directory Service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 4.0 of Microsoft
+Exchange Server. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

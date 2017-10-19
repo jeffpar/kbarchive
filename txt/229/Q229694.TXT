@@ -1,0 +1,134 @@
+DOCUMENT:Q229694  11-JUL-2002  [iis]
+TITLE   :HOW TO: Install and Use the IIS Security "What If" Tool
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbHOWTOmaster kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - Install the Utility
+ - Use the Utility
+ - Remove the Utility
+
+SUMMARY
+=======
+
+The purpose of this article is to explain how to install, use, and remove the
+IIS Security "What If" tool. The IIS Security "What If" tool is a Dynamic HTML
+(DHTML) utility that is designed to help in troubleshooting security issues with
+IIS.
+
+NOTE: This utility requires a DHTML-enabled browser and has been tested with
+Microsoft Internet Explorer versions 4.0 and 5.0. Although the tool works with
+most DHTML-enabled browsers, Microsoft cannot guarantee compatibility with
+third-party Web browsers. Therefore, this article has been written specifically
+for use with Internet Explorer.
+
+Install the Utility
+-------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+   Download Iisperms.exe now
+   (http://download.microsoft.com/download/iis50/Utility/2.0/NT5/EN-US/Iisperms.exe)
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+NOTE: Microsoft Product Support Services does not support the installation or use
+of this tool. It is provided "as-is" to help IIS users.
+
+1. Download Iisperms.exe and save it to your desktop.
+
+2. After the download is complete, double-click the Iisperms.exe file on your
+   desktop.
+
+3. Specify a folder to extract the files to in the Unzip to Folder text box (for
+   example, C:\Whatif).
+
+4. Click Unzip to install the files to the specified folder.
+
+5. Click OK after the files have been extracted.
+
+Use the Utility
+---------------
+
+1. Open My Computer, and then double-click the folder that you specified during
+   the installation to locate the files.
+
+2. Double-click the IISPermissions.htm file.
+
+3. When the page opens in Internet Explorer, click to select the following
+   options:
+
++-----------------------------------------------------------------------------------------------------------------------+
+| Column          | Description                                                                                         | 
++-----------------------------------------------------------------------------------------------------------------------+
+| Browser         | The Web browser that a client uses to browse an IIS site.                                           | 
++-----------------------------------------------------------------------------------------------------------------------+
+| Client OS       | The operating system that the client Web browser is running on.                                     | 
++-----------------------------------------------------------------------------------------------------------------------+
+| Scenario        | Specifies wehther the client is browsing across the Internet or is located on an intranet with IIS. | 
++-----------------------------------------------------------------------------------------------------------------------+
+| Web Server      | The IIS and operating system versions that are used on the server.                                  | 
++-----------------------------------------------------------------------------------------------------------------------+
+| Web Auth Scheme | The type of authentication that is used in this deployment.                                         | 
++-----------------------------------------------------------------------------------------------------------------------+
+
+4. After you select these options, click Check. The graphics display is updated
+   to show which computers and resources the client can reach based on the
+   conditions that you specified.
+
+Remove the Utility
+------------------
+
+1. Open My Computer, and then locate the folder that you specified during the
+   installation.
+
+2. Right-click the folder that you specified during installation, click Delete,
+   and then click Yes to confirm that you want to delete the folder.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster kbgraphxlinkcritical 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

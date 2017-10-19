@@ -1,0 +1,68 @@
+DOCUMENT:Q274422  23-OCT-2000  [msnetwork]
+TITLE   :MSN Explorer Address Picker puts addresses in the Subject box.
+PRODUCT :The Microsoft Network
+PROD/VER::Preview 2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Explorer, version Preview 2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Addresses selected from the address list start appearing in the Subject box,
+instead of in the To box or the CC box.
+
+CAUSE
+=====
+
+If a user opens the CC box and begins to enter addressees, then deletes the
+addressees and closes the CC box, and then selects new addressees, the new
+addressees may show up in the Subject line on the e-mail.
+
+This is because the address list is still "focused on" or "pointed to" the CC
+box, which no longer exists. The program drops the content into the next
+available field, which is the Subject box.
+
+RESOLUTION
+==========
+
+Either do not open the CC box, or leave it open.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MSN Explorer Mail.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu MSN Explorer Preview 2, address, subject
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNExplorer
+Version           : :Preview 2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

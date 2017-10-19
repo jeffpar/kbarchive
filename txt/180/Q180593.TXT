@@ -1,0 +1,86 @@
+DOCUMENT:Q180593  17-JUL-2001  [visualc]
+TITLE   :FIX: Cannot Rename Directory of a Closed Workspace
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.0a, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While Visual C++ is running, renaming a project's directory fails even though
+the project has been closed.
+
+CAUSE
+=====
+
+The project .ncb file remains open even after the project is closed.
+
+RESOLUTION
+==========
+
+Open another project, or close Visual C++ Developer Studio.
+
+If renaming the directory still fails, and Visual C++ previously crashed [general
+protection (GP) fault], consult Task Manager for a running process named
+Msdev.exe and end the process.
+
+If renaming still fails, another task may have a file open in that directory or
+one of its subdirectories. Find and close that task.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a directory named C:\MyTest.
+
+2. In Visual C++, on the File menu, click New and start a new MFC AppWizard
+   project located in C:\MyTest. Click Finish, then click OK.
+
+3. On the File menu, click Close Workspace.
+
+4. Using Windows Explorer, try to rename C:\MyTest.
+
+RESULTS: Windows Explorer reports a sharing violation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC32bitSearch kbVC400a kbVC420b kbVC500Search
+Version           : WINNT:4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

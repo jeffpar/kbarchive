@@ -1,0 +1,67 @@
+DOCUMENT:Q139180  17-DEC-2000  [win95x]
+TITLE   :"Data or No Disc Loaded" with Sony CDU-541 SCSI CD-ROM Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to play an audio CD using a Sony CDU-541 CD-ROM drive connected to
+an Adaptec 1520 SCSI controller, you may receive the following error message:
+
+   Data or no disc loaded
+
+CAUSE
+=====
+
+The Sparrow.mpd driver that you are using may not work correctly with the Sony
+CDU-541 CD-ROM drive.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Rename the Sparrow.mpd file in the Windows\System\Iosubsys folder.
+
+2. Copy the updated Sparrow.mpd file from the Drivers\Storage\Adaptec folder on
+   the Windows 95 CD-ROM to the Windows\System\Iosubsys folder on the hard disk.
+
+3. Shut down and restart Windows 95.
+
+MORE INFORMATION
+================
+
+When you are using the original Sparrow.mpd driver, the CD Player tool may
+recognize that there is an audio CD in the CD-ROM drive, but be unable to play
+the CD.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

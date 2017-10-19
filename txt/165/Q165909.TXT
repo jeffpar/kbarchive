@@ -1,0 +1,72 @@
+DOCUMENT:Q165909  19-JUL-2001  [word97]
+TITLE   :WV: Form Fields Are Not Editable in Word Viewer 97-2000
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbusage kbfield word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word Viewer 97-2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Form fields can not be edited in Word Viewer 97-2000. When you try to change a
+text box form field, you get the error message:
+
+   Word Viewer cannot edit a document.
+
+NOTE: Check box and drop-down form fields function normally. Note also that this
+behavior is different from Word Viewer for Windows 95 version 7.0.
+
+CAUSE
+=====
+
+This functionality is by design. Word Viewer is only for viewing and printing
+Word documents. To edit a document, you must use Microsoft Word.
+
+RESOLUTION
+==========
+
+If you have Microsoft Word installed on your computer, you can edit the document
+in Word. In Word Viewer 97-2000, on the File menu, click Open for Editing.
+
+This starts Microsoft Word, loads the document, and allows you to make changes.
+
+MORE INFORMATION
+================
+
+For more information about Word Viewer 97-2000, please see the following
+Knowledge Base article:
+
+   
+
+   Q165908 WV: How to Obtain Microsoft Word Viewers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbfield word97 
+Technology        : kbWordViewerSearch kbViewerSearch kbWordViewer97
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

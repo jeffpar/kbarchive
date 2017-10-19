@@ -1,0 +1,65 @@
+DOCUMENT:Q140080  17-DEC-2000  [win95x]
+TITLE   :Err Msg: A Set of Folders Could Not Be Opened
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Exchange with the Shared Folders upgrade, you may receive
+the following error message when you click Microsoft Mail Shared Folders:
+
+   The set of folders could not be opened. An unexpected error occurred. Could
+   not initialize provider (MSFS.DLL). MAPI 1.0 - 1027 -[8004010F]
+
+CAUSE
+=====
+
+If Microsoft Exchange is running when you add the Shared Folders upgrade, the
+Msfs32.dll file is in use and is not replaced with the updated version of the
+file. The original file is dated 7-11-95 with a size of 384K. The updated
+version of the file has a more recent date and is larger.
+
+RESOLUTION
+==========
+
+Exit and log off Microsoft Exchange and then run the Shared Folders upgrade
+again to replace the Msfs32.dll file.
+
+MORE INFORMATION
+================
+
+For additional information about the Shared Folders upgrade, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q141127 SFS Post Office Shared Folders Not Available with MS Exchange
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

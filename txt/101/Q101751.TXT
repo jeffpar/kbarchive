@@ -1,0 +1,66 @@
+DOCUMENT:Q101751  08-NOV-1999  [pcmail]
+TITLE   :PC Forms: Err Msg: Another Application Denied Your Request
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Electronic Forms Designer with Microsoft Mail for
+Windows, you may receive the following error message when you exit Mail:
+
+   Another application has denied your request
+
+CAUSE
+=====
+
+This error message is presented when a MAPI application is running and you close
+the Mail client by choosing Exit And Sign Out.
+
+RESOLUTION
+==========
+
+To solve this problem, close any open MAPI applications (including electronic
+forms) before you sign out of Mail. There is currently no way for custom
+commands, messages, or other MAPI applications to be informed that a sign out
+request has been made in Mail 3.0 or 3.2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 1.0 of Microsoft
+Electronic Forms Designer. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 err msg errmsg alert
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

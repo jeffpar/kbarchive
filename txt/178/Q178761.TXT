@@ -1,0 +1,78 @@
+DOCUMENT:Q178761  21-MAR-1999  [exchange]
+TITLE   :XWEB: Attachments Produce JavaScript Errors in Browser
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to open a Microsoft Excel or Microsoft Word attachment in a
+public folder or in an e-mail message from the Outlook Web Access client using
+Internet Explorer (3.02 or 4.x), Internet Explorer starts Excel or Word within
+the browser. Internet Explorer also inserts the following text in the first cell
+or line of the document:
+
+   <script
+   language="JavaScript">top.location='/exchange/logon.asp'</script>
+
+
+WORKAROUND
+==========
+
+For Internet Explorer 3.02 build 1300, the fix is to install Rfc1867.exe by
+installing the Internet Explorer 3.02 File Upload Add-On from Microsoft's Web
+site at http://www.microsoft.com/ie/download/.
+
+Internet Explorer version 4.0 does not show this problem. For Internet Explorer
+version 4.01, you must be running build 4.72.3110.8.or later, which is Internet
+Explorer 4.01 SP1. This is publicly available from http://www.microsoft.com/ie.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+
+Additional query words: javascript owa word attachment error logon IE 4.01 exclnfaqold
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

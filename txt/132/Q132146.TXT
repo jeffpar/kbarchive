@@ -1,0 +1,73 @@
+DOCUMENT:Q132146  24-JUL-2001  [homemm]
+TITLE   :Dogs: Movies Choppy with Some Video Drivers
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kbgraphic kbhw kbmm kbui kbhowto kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some video configurations cause Microsoft Dogs movie clips to drop frames and
+appear choppy and jumpy. The problem is most noticeable with screen resolutions
+set to 640x480 with 16.7 million colors.
+
+This article lists some of those configurations.
+
+MORE INFORMATION
+================
+
+Video configurations in Windows 3.x and Windows 95 known to cause problems with
+Microsoft Dogs movie clips:
+
+Board Model                        Driver Information
+-----------                        -------------------
+
+Integrated SVGA (1 MB)             Cirrus Logic CL-GD 5428
+
+Media Vision T&L v1.0              AVGA16MM
+
+ET4Turbo                           MMTLLO v3.00
+
+Diamond Speedstar Plus             ET4000
+
+Zenith Z-6 49                      TIGA 640x480x256
+
+Though the problems usually remain when you use fewer colors in 640x480
+resolution, higher resolutions, such as 600x800 or 1024x768 may provide some
+improvement.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: kbhowto mmtitles kbmm chopped jerky broken halting rough videos clip clipped
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kbgraphic kbhw kbmm kbui kbhowto kbHardware kbfaq
+Technology        : kbHomeProdSearch kbDogs100
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,75 @@
+DOCUMENT:Q213173  09-MAY-2002  [sms]
+TITLE   :SMS: Error When Using DISTINCT Keyword Inside Count Query in WQL
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the DISTINCT keyword inside of the COUNT function in a Web-Based
+Enterprise Management (WBEM) Query Language (WQL) query, an error message
+appears and it fails to run.
+
+For example, if you run the following WQL query:
+
+   SELECT COUNT(DISTINCT CollectionID) from SMS_Collection
+
+the following error message appears:
+
+   Failed to parse WQL stringSELECT COUNT(DISTINCT CollectionID) FROM
+   SMS_Collection
+
+The query should return a generic object with the number of collections as a
+property.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+Using the same example, run the following query:
+
+   SELECT DISTINCT CollectionID from SMS_Collection
+
+If you are doing this programmatically use the appropriate API. If you are using
+WBEMTEST, the number of objects are returned in the Query Result window.
+
+
+Additional query words: prodsms smssql wql query
+
+======================================================================
+Keywords          : kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

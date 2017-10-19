@@ -1,0 +1,49 @@
+DOCUMENT:Q11270  22-DEC-1999  [miscsdk]
+TITLE   :INFO: CreatePen() and CreatePenIndirect() Use Predefined Styles
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbOSWin310 kbDSupport kbOSWin300 kbSDKWin16
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) for Windows versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows, the CreatePen() and CreatePenIndirect() calls only allow the
+creation of a pen with predefined styles (for example, solid, dash, and dot). It
+is not possible to create a pen with a unique style. The only styles available
+are the stock pens and styles provided with Windows.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbOSWin310 kbDSupport kbOSWin300 kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : :3.0,3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

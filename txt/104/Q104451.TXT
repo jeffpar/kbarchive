@@ -1,0 +1,90 @@
+DOCUMENT:Q104451  15-APR-2000  [powerpt]
+TITLE   :PPT: Copy Picture from Excel Automatically Paste Links
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:3.0,4.0,4.0a,4.0c,5.0,7.0
+OPER/SYS:
+KEYWORDS:kbinterop kbole kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, versions 3.0, 4.0, 4.0a, 4.0c 
+ - Microsoft Excel for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you paste link a picture of an Excel chart to a PowerPoint slide, it is
+linked to the original worksheet by default, rather than linking the picture to
+the chart. This behavior occurs if you place the chart in its own chart window
+before selecting Edit Copy Picture.
+
+You can see that the picture has been linked rather than embedded by going to the
+PowerPoint Edit menu and selecting Links, which is available only if the slide
+contains linked object(s).
+
+RESOLUTION
+==========
+
+Follow these steps to paste the picture as an embedded object:
+
+1. In Excel, select the chart on the worksheet.
+
+2. Holding down the SHIFT key, on the Edit menu click Copy Picture.
+
+3. Switch to PowerPoint, and on the Edit menu click Paste.
+
+After following these steps, you should have an embedded picture of the Excel
+chart on your PowerPoint slide.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a chart in an Excel spreadsheet.
+
+2. Double-click the chart so that it is in its own chart window (it does not
+   have to be maximized).
+
+3. Hold down the SHIFT key and click the Edit menu.
+
+4. Click Copy Picture.
+
+5. Switch to PowerPoint, then click Paste on the Edit menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft
+PowerPoint 97 for Windows.
+
+Additional query words: 3.00 4.00 4.00a 4.00c power point powerpt 7.00 w_excel winppt macppt ppt95
+
+======================================================================
+Keywords          : kbinterop kbole kbdta 
+Technology        : kbExcelSearch kbPowerPtSearch kbExcel500 kbPowerPt700 kbZNotKeyword2 kbExcel400 kbPowerPt700Search kbPowerPt400 kbPowerPt300 kbPowerPt400c kbPowerPt400a
+Version           : WINDOWS:3.0,4.0,4.0a,4.0c,5.0,7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

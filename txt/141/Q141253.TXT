@@ -1,0 +1,77 @@
+DOCUMENT:Q141253  08-NOV-2001  [homemm]
+TITLE   :Picture Gallery Wallpaper Is Not Centered on Screen
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0,95
+OPER/SYS:
+KEYWORDS:kbbuglist kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft World of Flight for Windows, version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a screen resolution higher than 640 x 480 and select an image from
+the Picture Gallery to use as your wallpaper, the image occupies the upper left
+portion of the screen only.
+
+CAUSE
+=====
+
+The problem occurs when the Display setting have not been set as described
+below.
+
+RESOLUTION
+==========
+
+To properly center the image on the screen:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the Display icon.
+
+3. On the Background tab, click the desired wallpaper. For example, if you are
+   using Microsoft Dogs, click Msdogs.
+
+4. Click the Center button.
+
+5. Click Apply, and then click OK.
+
+The wallpaper image is now properly centered on the screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the programs listed at the top
+of this article. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          :  kbbuglist kbfaq
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbZNotKeyword kbKidsSearch kbDogs100 kbWorldofFlight kbOceans
+Version           : WINDOWS:1.0,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

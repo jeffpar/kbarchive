@@ -1,0 +1,60 @@
+DOCUMENT:Q258882  18-JUN-2000  [winnt]
+TITLE   :Management Agent Can Be Damaged by Low-Disk-Space Condition
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Management Agent (MA) icon may not be visible in the Compass client, or if
+the MA icon is visible, commands may be missing from the Actions menu.
+
+CAUSE
+=====
+
+This issue can occur if you run the MA with insufficient disk space. Operating
+the MA with insufficient disk space can cause unpredictable behavior, including
+corruption of the MA.
+
+RESOLUTION
+==========
+
+To resolve this issue, increase the available disk space. Monitor the disk space
+on a regular basis to prevent this issue from occurring. You can also run
+Viacompact to resolve this issue, but in most cases you must delete and
+re-create the MA. The database may also be damaged; and you may need to
+reinstall Microsoft Metadirectory Services.
+
+
+Additional query words: VIA mms
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

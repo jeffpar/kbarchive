@@ -1,0 +1,59 @@
+DOCUMENT:Q135970  18-DEC-2000  [win95x]
+TITLE   :Protected-Mode-Only Drives Not Mounted
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restart your computer, one or more compressed drives is not available.
+
+CAUSE
+=====
+
+The missing drive is located on a protected-mode-only hardware device, and the
+feature to automatically mount drives is turned off.
+
+RESOLUTION
+==========
+
+Start DriveSpace, and then click Settings on the Advanced menu. Click the
+Automatically Mount New Drives check box to select it, and then click OK.
+
+
+MORE INFORMATION
+================
+
+Protected-mode-only devices (such as Syquest or Iomega drives) are not mounted
+in real mode and therefore are not mounted in protected mode. You must mount
+these drives manually (in DriveSpace), or use the automatic mounting feature.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

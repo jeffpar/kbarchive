@@ -1,0 +1,78 @@
+DOCUMENT:Q131253  15-FEB-2000  [foxpro]
+TITLE   :PRB: Right Mouse Functions Incorrectly w/ IntelliPoint Driver
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro for Windows, a right mouse click displays a context- sensitive
+short-cut menu for that specific function or area. If the secondary button
+option of the IntelliPoint software's Button tab is enabled, the Visual FoxPro
+context-sensitive short-cut menu items are disabled when a right mouse click is
+executed.
+
+CAUSE
+=====
+
+The settings in the IntelliPoint driver (Version 1.1) override the settings
+specific to an application.
+
+WORKAROUND
+==========
+
+To enable the right mouse button functions of Visual FoxPro, the setting for the
+Secondary button must be set to Unassigned.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Access the IntelliPoint Mouse driver settings by choosing Mouse from the
+   Control Panel, or by clicking the 'IntelliPoint Tools & Controls' icon in
+   the 'Microsoft Input Devices' group.
+
+2. On the Buttons page, assign the Seconday button to Help.
+
+3. Observe that in Visual FoxPro, clicking the right mouse button now displays
+   the Help topics rather than the appropriate task list available for that
+   particular Visual FoxPro feature.
+
+Additional query words: VFoxWin key wrong menu choice
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

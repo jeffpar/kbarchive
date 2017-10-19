@@ -1,0 +1,161 @@
+DOCUMENT:Q170157  11-JAN-2001  [vbwin]
+TITLE   :INFO: VB 6.0 Readme Part 11: Miscellaneous Issues
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbreadme kbActiveX kbVBp kbVBp600 kbVS600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information below includes the documentation and workarounds for Visual
+Basic 6.0. This information can also be found in the README.htm file that ships
+with Visual Basic 6.0 on the Visual Basic 6.0 CD-ROM. Please see the REFERENCES
+section of this article for a list of the Microsoft Knowledge Base articles
+relating to the Visual Basic 6.0 readme.
+
+Following is a list of all parts of the readme file:
+
+Part 1. Important Issues - Please Read First!
+Part 2. Data Access Issues and DataBinding Tips
+Part 3. Control Issues
+Part 4. Language Issues
+Part 5. Samples Issues
+Part 6. Wizard Issues
+Part 7. Error Message Issues
+Part 8. WebClass Designer Issues
+Part 9. DHTML Page Designer Issues
+Part 10. Extensibility issues
+Part 11. Miscellaneous Issues
+Part 12. Microsoft Transaction Server (MTS) Issues
+Part 13. Dictionary Object
+Part 14. Visual Component Manager
+Part 15. Application Performance Manager
+
+MORE INFORMATION
+================
+
+Returning an Error Value from a DLL
+-----------------------------------
+
+To return an error value from a dynamic link library (DLL) procedure, the C
+language prototype must be coded so that the return value is an HRESULT. Refer
+to the Microsoft Press OLE 2 Programmer's Reference, Volume 2 for more
+information on how to do this.
+
+Data Access Guide: DataFormats Tutorial Has Wrong File Extension
+----------------------------------------------------------------
+
+The topic named "Format Objects Tutorial" contains a wrong reference to a file
+with the extension .mdl. The actual file extension is .udl. For more
+information, search online, with Search titles only selected, for "Format
+Objects Tutorial" in the MSDN Library Visual Studio 6.0 documentation. The file
+in question is listed as "Northwind.mdl," but should be "Northwind.udl."
+
+External Editor Field Added to Options Dialog Box
+-------------------------------------------------
+
+The Advanced tab of the Options dialog box has a new text box called External
+HTML Editor. This option allows you to select the HTML editing program that
+appears when you select Launch Editor from either the DHTML Page Designer or the
+Webclass Designer. You must enter the drive, path, and executable name of the
+program you want to use. You can choose an HTML editing program, a word
+processing program, or the text editor you prefer to use.
+
+CodeBase Fixup Utility in Internet Component Download
+-----------------------------------------------------
+
+The "Downloading ActiveX Components" section of the Building Internet
+Applications book makes reference to a utility called the CodeBase Fixup Utility
+that can be used to manually set codebase information in an ActiveX document.
+This information is incorrect. The utility is not shipped in the \Tools
+directory with Visual Basic, and you do not need to perform this process
+manually for Internet Explorer 4.0 because the Package and Deployment wizard
+automatically inserts the appropriate codebase information for these and other
+applicable projects.
+
+Text in Project Properties/Open Dialogs Truncated
+
+in Japanese, Chinese, and Korean Versions of Windows
+----------------------------------------------------
+
+When you run Visual Basic in the Japanese, Chinese, or Korean version of Windows,
+you may notice that text in the Project Properties or Open dialogs is truncated.
+If this occurs, shut down Windows, restart it, then restart Visual Basic and the
+problem will be fixed.
+
+Avoid Using Repository Add-In with ActiveX Designers
+----------------------------------------------------
+
+You should avoid using the Repository add-in with projects that contain ActiveX
+designers.
+
+For a complete list of available designers, on the Project menu in Visual Basic,
+click Components, and then click the Designers tab in the Components dialog box.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q170164 : INFO: VB 6.0 Readme Part 1: Important Issues - Read First!
+
+   Q170163 : INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues
+
+   Q170162 : INFO: VB 6.0 Readme Part 3: Control Issues
+
+   Q170161 : INFO: VB 6.0 Readme Part 4: Language Issues
+
+   Q170160 : INFO: VB 6.0 Readme Part 5: Samples Issues
+
+   Q190046 : INFO: VB 6.0 Readme Part 6: Wizard Issues
+
+   Q170158 : INFO: VB 6.0 Readme Part 7: Error Message Issues
+
+   Q189539 : INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+
+   Q190249 : INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+   Q170154 : INFO: VB 6.0 Readme Part 10: Extensibility Issues
+
+   Q170156 : INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues
+
+   Q191792 : INFO: VB 6.0 Readme Part 13: Dictionary Object
+
+   Q191791 : INFO: VB 6.0 Readme Part 14: Visual Component Manager
+
+   Q191790 : INFO: VB 6.0 Readme Part 15: Application Performance Explorer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbreadme kbActiveX kbVBp kbVBp600 kbVS600 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

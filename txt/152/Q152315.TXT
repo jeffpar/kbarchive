@@ -1,0 +1,102 @@
+DOCUMENT:Q152315  04-AUG-2001  [visualc]
+TITLE   :PRB: When to Call AfxDaoTerm() in an Automation Server
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS NT: 4.0 4.1 4.2 4.2b 5.0
+OPER/SYS:
+KEYWORDS:kbProgramming kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MFC DLLs and OCXs that use DAO need to call AfxDaoTerm() to terminate DAO before
+their ExitInstance() function is called. MFC, by default, calls AfxDaoTerm()
+from within CWinApp::ExitInstance().
+
+An automation server may expose multiple objects that use DAO. Calling
+AfxDaoTerm() when one of these objects is destructed may have the undesired
+effect of terminating DAO for all other objects that may still be in use.
+
+RESOLUTION
+==========
+
+MFC keeps an internal object lock count of automation objects in the module
+state. The constructor of each object exposed by the automation server calls
+AfxOleLockApp() to increment this count and calls AfxOleUnlockApp() to decrement
+it.
+
+An MFC DLL automation server gets unloaded when the AfxOleCanExitApp() function
+returns TRUE. This function checks the object lock count and returns TRUE if no
+objects are in use. The default implementation of DllCanUnloadNow() in an
+AppWizard-generated automation server looks like this:
+
+      STDAPI DllCanUnloadNow(void)
+      {
+          AFX_MANAGE_STATE(AfxGetStaticModuleState());
+          return AfxDllCanUnloadNow();
+      }
+
+Add the following code to terminate DAO when no automation objects are in use any
+longer:
+
+      STDAPI DllCanUnloadNow(void)
+      {
+          AFX_MANAGE_STATE(AfxGetStaticModuleState());
+
+          if (AfxOleCanExitApp())
+              AfxDaoTerm();
+
+          return AfxDllCanUnloadNow();
+      }
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For more information, please refer to the following articles in the Microsoft
+Knowledge Base:
+
+   Q143084 FIX: Problems with Using the MFC DAO Classes in a .DLL or .OCX
+
+   Q149889 PRB: Assertion or Problems Using DAO in a DLL
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 
+Technology        : kbAudDeveloper kbMFC
+Version           : WINDOWS NT: 4.0 4.1 4.2 4.2b 5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

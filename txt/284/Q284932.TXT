@@ -1,0 +1,74 @@
+DOCUMENT:Q284932  13-JUN-2001  [exchange]
+TITLE   :XADM: Error Message: Unable to Get Organizational Information...
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Exmap.exe utility, you may receive the following error
+message:
+
+   Error: Unable to get organizational information from LDAP server. Your user
+   credentials may not allow sufficient access to the directory.
+
+CAUSE
+=====
+
+This issue can occur if you are running Active Directory Services Interface
+(ADSI) version 2.5 with Microsoft Data Access Components (MDAC) version 2.6.
+
+WORKAROUND
+==========
+
+To resolve this issue, install MDAC by using the rollback procedures that are
+described in the document that is located on the following Microsoft Web site:
+
+   http://support.microsoft.com/support/mdac/26setupfaq.asp
+   (http://support.microsoft.com/support/mdac/26setupfaq.asp)
+
+After you complete the rollback procedure, install MDAC version 2.5.
+
+MORE INFORMATION
+================
+
+For additional information about compatibility issues with ADSI and MDAC, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q275917 ADSI 2.5 and MDAC 2.6 Compatibility Issues
+
+For more information on these consult:
+-
+
+Additional query words: exmap exch2kp2w
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

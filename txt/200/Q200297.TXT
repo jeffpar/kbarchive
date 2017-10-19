@@ -1,0 +1,83 @@
+DOCUMENT:Q200297  17-JUL-1999  [exchange]
+TITLE   :XADM: Incorrect Product Name Listed with Non-Frames Browser
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you view some of the HTML viles that come with the Microsoft Exchange Move
+Server Wizard with a browser that does not support frames, the incorrect product
+name is listed. Below are the files, errors, and the corrected error that should
+be displayed.
+
+Movesvr.htm
+
+Incorrect: The documentation for Microsoft Exchange 5.5 Service Pack 1 is best
+viewed using a browser application such as Internet Explorer 3.01 or any
+frames-capable browser application such as Netscape Navigator.
+
+Correct: The documentation for Microsoft Exchange Move Server Wizard is best
+viewed using a browser application such as Internet Explorer 3.01 or any
+frames-capable browser application such as Netscape Navigator.
+
+Xframsie.htm
+
+Incorrect: The documentation for Microsoft Exchange 5.5 Move Server Wizard is
+best viewed using a browser application such as Internet Explorer 3.01 or any
+frames-capable browser application such as Netscape Navigator.
+
+Correct: The documentation for Microsoft Exchange Move Server Wizard is best
+viewed using a browser application such as Internet Explorer 3.01 or any
+frames-capable browser application such as Netscape Navigator.
+
+Xframsns.htm
+
+Incorrect: The documentation for Microsoft Exchange 5.5 Move Server Wizard is
+best viewed using a browser application such as Internet Explorer 3.01 or any
+frames-capable browser application such as Netscape Navigator.
+
+Correct: The documentation for Microsoft Exchange Move Server Wizard is best
+viewed using a browser application such as Internet Explorer 3.01 or any
+frames-capable browser application such as Netscape Navigator.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

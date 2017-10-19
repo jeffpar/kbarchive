@@ -1,0 +1,56 @@
+DOCUMENT:Q181452  01-APR-1999  [exchange]
+TITLE   :XADM: How to Make Exchange Extensions Available in User Manager
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to make the Microsoft Exchange extensions available in the Microsoft
+Windows NT User Manager for Domains, the Microsoft Exchange Administrator
+program must be installed on the computer running User Manager for Domains.
+
+MORE INFORMATION
+================
+
+1. To install the Microsoft Exchange Administrator program, run the Microsoft
+   Exchange Server Setup program.
+
+2. Select the Complete/Custom option.
+
+3. Select only the Microsoft Exchange Administrator option, and complete the
+   Setup process.
+
+4. After the Administrator program is installed, the next time User Manager for
+   Domains is run, the Exchange extensions will be available.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,54 @@
+DOCUMENT:Q268870  19-JAN-2001  [win95x]
+TITLE   :Internet Explorer Exhausts System/User Resources w/ Some Pages
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbtool msiew95 msiew98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+ - the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you open an HTML page that contains a large amount of Select elements, you
+may receive a "low system resource" message which suggests that you close the
+program. The same page is displayed correctly on a computer that is running
+Microsoft Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool msiew95 msiew98 
+Technology        : kbOSWinME kbOSWinSearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

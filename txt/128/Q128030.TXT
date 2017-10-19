@@ -1,0 +1,68 @@
+DOCUMENT:Q128030  17-DEC-2000  [win95x]
+TITLE   :Setup Error Message: Generic Install Error
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows 95, you may receive the following error
+message:
+
+   Generic install error
+   Invalid GenInstall INF file. -[Exiting with error code = 402(0x192).]
+
+When you choose OK, the Setup program exits.
+
+CAUSE
+=====
+
+This error occurs if the existing WIN.INI file contains a LOAD entry that does
+not have an equal sign (=).
+
+RESOLUTION
+==========
+
+Edit the WIN.INI file and either remove the LOAD entry or add an equal sign to
+the entry (so that it reads "LOAD=") and then run the Windows 95 Setup program
+again.
+
+MORE INFORMATION
+================
+
+During Setup, SETUPX.DLL parses the WIN.INI file and MBASE.INF searches for the
+LOAD= entry. If the entry does not have an equal sign, the error message stated
+above occurs.
+
+NOTE: MBASE.INF exists only while Setup is running. When Setup is finished, this
+file is deleted. You will not find this file in the Windows\INF subdirectory.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

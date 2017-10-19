@@ -1,0 +1,64 @@
+DOCUMENT:Q114688  08-AUG-2001  [winnt]
+TITLE   :RAS Can't Connect at 14400 or 19200 on TI 4000e
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot connect from LAN Manager Remote Access Services (RAS) version 1.1a on
+a TI 4000e series portable computer to a Windows NT server at 14400 or 19200
+bits per second (bps). After the number is dialed, you do not see any
+confirmation that the computers connected.
+
+The modem sold by TI for use with the 4000e computers is a modified U.S. Robotics
+Sportster 14400.
+
+WORKAROUND
+==========
+
+To enable this modem to work with RAS 1.1a you need to modify the MODEM.INF file
+in the SYSTEM32\RAS sub-directory. Before you make any changes to this file,
+make a backup copy.
+
+In MODEM.INF, find two lines that contain the following
+
+   <cr><If>CONNECT<carrierbps>/ARQ<cr><If>
+
+Change both lines to read
+
+   <cr><If>CONNECT<carrierbps>/SEL<cr><If>
+
+RAS should now be able to dial in and connect properly.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

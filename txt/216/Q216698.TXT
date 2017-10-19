@@ -1,0 +1,63 @@
+DOCUMENT:Q216698  10-AUG-2001  [winnt]
+TITLE   :Cannot Connect to Network Drive While Backing Up
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP3
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP3 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Users with all the required rights may have problems backing up files to a
+server on the network. When this occurs, the error message in the backup log
+reads:
+
+   Unable to connect to network drive. Logon type not granted
+
+CAUSE
+=====
+
+This behavior can occur if the Everyone group on the destination server does not
+have "Access this computer from network" rights.
+
+RESOLUTION
+==========
+
+Check to make sure the "Access this computer from network" right is granted to
+the Everyone group on the destination server. You can use the User Manager for
+Domains tool to do this.
+
+The Backup Operators group cannot gain access to the resource on the server if
+this right is not granted to the Everyone group.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400sp3 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0,4.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

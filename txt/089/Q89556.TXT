@@ -1,0 +1,77 @@
+DOCUMENT:Q89556  06-OCT-1999  [win3x]
+TITLE   :Windows for Workgroups Drivers Install in Root Directory
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When installing Windows for Workgroups on a computer that has either a removable
+hard drive, such as Bernoulli or SyQuest, or is using disk compression software,
+such as Stacker, Double Disk, or SpeedStor, the MS-DOS level Windows for
+Workgroups network files are installed to the root of drive C.
+
+MORE INFORMATION
+================
+
+Removable Hard Drives
+---------------------
+
+The Windows for Workgroups Setup program cannot determine whether the removable
+hard drive will be present at all times.
+
+Disk Compression Software
+-------------------------
+
+Windows for Workgroups Setup does not know when the compressed volume will be
+mounted; therefore, it copies the MS-DOS level network drivers to the root of
+drive C. Some of these files include:
+
+   WORKGRP.SYS
+   PROTMAN.EXE
+   PROH.MSG
+   PROTMAN.DOS
+   PROTOCOL.INI
+
+NOTE: Depending on the specific Windows for Workgroups configuration, there may
+also be other .DOS or .EXE files that will be required for Windows for
+Workgroups to operate properly.
+
+These files should not be moved from the directory in which the Windows for
+Workgroups installation program placed them. Relocating these files is not
+reliable and is known to cause problems in some configurations.
+
+KBCategory: kbhw kb3rdparty
+KBSubcategory: wfw wfwg
+
+Additional query words: 3.10 Peer cartridge removeable stac 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q165990  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Policies Do Not Work Without User Profiles
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a system policy for Windows 95-based client computers, you may
+find that the policy is not implemented even though the Config.pol file is
+placed in %systemroot%\system32\repl\import\scripts (the Netlogon share) on
+every domain controller and users have adequate permissions to access the
+policy. A protocol analysis trace taken with Network Monitor shows the policy
+file being opened and read without an error, however, no element of the policy
+will take effect on the Windows 95 client computer.
+
+CAUSE
+=====
+
+This behavior can occur if User Profiles are not enabled.
+
+RESOLUTION
+==========
+
+To resolve this issue, enable User Profiles. To do so, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Passwords, and then click the User Profiles tab.
+
+3. Click "Users can customize their preferences and desktop settings. Windows
+   switches to your personal settings whenever you log in," and then click OK.
+
+4. Click Yes when you are prompted to restart your computer.
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 1.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

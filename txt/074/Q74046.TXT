@@ -1,0 +1,79 @@
+DOCUMENT:Q74046  17-DEC-2000  [msdos]
+TITLE   :Setver /? [Drive:Path] Refers to SETVER, Not Executable
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The syntax for the SETVER command is as follows:
+
+   setver [drive:path] filename version
+
+Where [drive:path] refers to the drive and the path of SETVER, not the filename
+that will follow it. When using the SETVER /? help menu, this syntax is not at
+first apparent. The following example adds the file C:\PROGRAM.EXE:
+
+   setver c:\dos c:\program.exe 4.01
+
+MORE INFORMATION
+================
+
+SETVER may return the error:
+
+   ERROR: Missing parameter.
+
+   Use "SETVER /?" for help
+
+Typing "setver /?" (without the quotation marks) at the DOS prompt will give the
+following help screen:
+
+Sets the version number that MS-DOS reports to a program.
+ 
+Display current
+version table:      SETVER [drive:path]
+Add entry:          SETVER [drive:path] filename n.nn
+Delete entry:       SETVER [drive:path] filename /DELETE [/QUIET]
+ 
+  [drive:path]      Specifies location of the SETVER.EXE file.
+  filename          Specifies the filename of the program.
+  n.nn              Specifies the MS-DOS version to be reported to the 
+                    program.
+ 
+  /DELETE or /D     Deletes the version-table entry for the specified
+                    program.
+ 
+  /QUIET            Hides the message typically displayed during
+                    deletion of version-table entry.
+
+Additional query words: 6.22 5.x 6.00 6.20 online help
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

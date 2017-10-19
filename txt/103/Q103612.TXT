@@ -1,0 +1,54 @@
+DOCUMENT:Q103612  07-SEP-2001  [foxpro]
+TITLE   :PRB: REPORT FORM <Report> TO <File> w/ IBM Laser Printer 4019
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send output from a report to a file with the command
+
+   REPORT FORM <report> TO <file>
+
+and you are using the IBM Laser Printer 4019 printer driver that ships with
+Windows 3.1, the Print To File dialog box will appear and ask for a filename,
+even though you have already supplied one.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: VFoxWin FoxWin 2.50 Print To File dialog IBM Laser Printer 4019
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

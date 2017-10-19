@@ -1,0 +1,277 @@
+DOCUMENT:Q163330  28-JUL-2000  [exchange]
+TITLE   :XCLN: Using Open Transport 1.1.2 and MacPPP for the Mac Client
+PRODUCT :Microsoft Exchange
+PROD/VER:MACINTOSH:8.0,8.1,8.2; WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, versions 8.0, 8.1, 8.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Apple's Open Transport 1.1.2 contains a version of MacPPP for the Macintosh. You
+can use MacPPP to dial in to a Microsoft Windows NT Server computer running
+Point-to-Point Protocol (PPP) and connect to a Microsoft Exchange Server
+computer.
+
+MORE INFORMATION
+================
+
+Currently, there is no remote solution included with the Exchange Macintosh
+Client. Although the client does support offline folders and offline mode, it
+does not contain any type of dial-up networking components. The Macintosh
+operating system also has no built-in dial-up networking solution.
+
+MacPPP allows you to create a dial-up networking connection for the Macintosh
+using TCP/IP that is compatible with Windows NT Server computer running RAS. A
+Macintosh with Open Transport 1.1.2 and MacPPP installed can call a Windows NT
+Server computer running RAS, get validated, and use the Exchange Macintosh
+client across the dial-up connection.
+
+Below are some general tips to help you use this software successfully. Complete
+instructions for obtaining, installing, and using MacPPP and the Exchange
+Macintosh Client are also included.
+
+Tips
+----
+
+ - The client can ONLY be run in continuous (online) mode or use the
+   Synchronization feature ONLY after a dial-up connection has been made. The
+   dial-up connection must be made prior to starting the Exchange Macintosh
+   Client, and the client does NOT auto-dial the connection.
+
+ - There are individual files available for download if the single Net Install
+   file is too large, four files named OT_1.1.2-1OFx.SEA.HQX (x=1 of 4, 800 KB
+   each). Both the complete Open Transport installation and the Open Transport
+   Extras are required.
+
+ - The steps for configuring Open Transport assume that the Macintosh has both a
+   LAN network adapter and a modem for dial-up networking. If you don't want to
+   configure a LAN adapter, then proceed with steps 1 through 6 only and use
+   your dial-up networking TCP/IP settings for the default configuration.
+
+ - Although there are many other options in the Config PPP Control Panel, the
+   steps for configuring MacPPP are the minimum configuration for connection to
+   a Windows NT Server computer running RAS.
+
+ - Be sure that you switch the dial-up networking configuration you want BEFORE
+   you dial your PPP server. When you make this switch you are not prompted to
+   restart the Macintosh, although you may have to restart to help clear
+   problems.
+
+ - During connections an error message similar to the following may be
+   displayed:
+
+   Message from server: E=268
+
+   If you connect to a Windows NT Server computer running RAS and you receive
+   these error messages, refer to the Windows NT RAS Help file for an
+   explanation of the number.
+
+ - Use a utility like MacPING (available on the World Wide Web) to ping the
+   Exchange Server name. It is important that you receive a reply from the
+   server's IP address. If you cannot ping the server name, try pinging the IP
+   address of the server. If you can ping the address but not the name, create a
+   local Hosts file that contains the IP addresses of the Exchange Server
+   computer and the primary domain controller (PDC)(if they are different
+   computers).
+
+   For additional information about configuring the Exchange Macintosh Client for
+   TCP/IP, click the article number below to view the article in the Microsoft
+   Knowledge Base:
+
+   Q149596 XCLN: Configuring Mac Client for TCP/IP
+
+ - You can also test profile and connection without starting the client. Start
+   the Exchange Settings application, and in the Exchange Server Service
+   properties page, click the General tab, and then click Check Names. When you
+   are prompted for your domain credentials, type them. If the Exchange Server
+   and user name appear underlined, then the client starts without problems.
+
+Installing Open Transport 1.1.2
+-------------------------------
+
+1. Obtain Open Transport 1.1.2 from:
+
+   ftp://ftp.apple.com/Apple_Support_Area/Apple_Software_Updates/US/Macintosh/Networking-Communications/Open_Transport
+
+   or do a Web site search from:
+
+   http://www.apple.com
+
+2. Download the files OT_1.1.2-NET_INSTALL.SEA.HQX (9 MB) as well as
+   OT_1.1.2-EXTRAS.SEA.HQX (6 MB). See the second item in the list of tips
+   above.
+
+3. Use a BinHex converter (available on the Web), to extract the contents of the
+   downloaded files onto the desktop. This creates two folders, Net Install and
+   Open Transport Extras.
+
+4. Review the included Readme document.
+
+5. Open the Net Install folder. It contains four Install sub-folders, several
+   Readme files and an Installer. Start the Installer to install Open Transport
+   1.1.2 on the Macintosh. Restart the Macintosh.
+
+6. Open the Open Transport Extras folder and the MacPPP sub-folder. Copy the PPP
+   System Extension and Config PPP Control Panel to the System folder. They will
+   automatically be placed in the correct sub-folders. Restart the Macintosh.
+
+Configuring Open Transport 1.1.2
+--------------------------------
+
+See the third item in the list of tips above.
+
+1. On the Apple menu, click Control Panels and TCP/IP.
+
+2. In the Connect Via list, select your network adapter (that is, Ethernet
+   Built-In, Ethernet Slot 1, or MacPPP). This is the adapter that you're
+   creating a configuration for TCP/IP to use.
+
+3. Type the TCP/IP settings according to the network you're using. If you need
+   more options, on the Edit menu, click User Mode, select Advanced, and then
+   click OK. This provides the TCP/IP configuration with more options. These
+   settings must be correct for the Exchange Macintosh Client to be able to
+   resolve the name of the Exchange Server computer.
+
+4. Click Options, and ensure that the Active check box is selected and the Load
+   Only When Needed check box is cleared. Click Select Hosts File if necessary.
+   Please see the Microsoft Knowledge Base article Q149596 for a sample Hosts
+   file.
+
+5. Close the TCP/IP Control Panel. You are prompted to Save Changes to the
+   Current Configuration; click Save. This saves this configuration as the
+   Default TCP/IP configuration.
+
+   This allows use of TCP/IP over the specified adapter with the settings
+   provided.
+
+   NOTE: Only proceed with the following steps if you want two TCP/IP
+   configurations (one for a LAN and another for dial-up networking).
+
+6. On the Apple menu, select Control Panels and TCP/IP.
+
+7. On the File menu, click Configurations. Click Default, and then click
+   Duplicate. Name the new configuration something unique to dial-up networking
+   (that is, MacPPP). Select the new configuration, click Make Active, and then
+   click Close.
+
+8. In the Connect Via box, click MacPPP. Type the TCP/IP settings according to
+   the network you're dialing. If you need more options, on the Edit menu, click
+   User Mode, click Advanced, and then click OK. This provides the TCP/IP
+   configuration with more options. These settings must be correct for the
+   Exchange Macintosh Client to be able to resolve the name of the Exchange
+   Server computer.
+
+9. Close the TCP/IP Control Panel. You are prompted to Save Changes to the
+   Current Configuration; click Save. This saves this configuration as the
+   TCP/IP configuration you specified above.
+
+10. To change between LAN and dial-up networking, use the TCP/IP Control Panel
+   and the Configurations menu. The configuration that is set to Active is used
+   for ALL TCP/IP applications.
+
+Configuring MacPPP
+------------------
+
+See the fourth item in the list of tips above.
+
+1. On the Apple menu, click Control Panels and Config PPP.
+
+2. Click New to specify a new server. Type the name for this server. Click OK.
+
+3. Click Config to set up this new server. Change the Port Speed to match your
+   modem, select either the Tone or Pulse check box, according to your needs,
+   and type the phone number of the server you need to call.
+
+4. Click Authentication, and then type your Windows NT domain user name and
+   Windows NT domain password. Click OK.
+
+5. Click Open to establish a dial-up networking connection with the selected
+   server. See the fifth and seventh items in the list of tips above.
+
+Using Exchange Macintosh Client and MacPPP
+------------------------------------------
+
+1. Create a new profile for your Exchange Server mailbox. In the Exchange Server
+   properties, click the General tab, select TCP/IP for the connection.
+
+2. Connect to the Exchange Server computer's network either by means of MacPPP
+   dial-up or LAN connection (use LAN to configure offline folders).
+
+3. Start the Exchange Macintosh Client using this new profile to test the
+   connection to the Exchange Server computer. You are prompted for your Windows
+   NT domain account information. Once the client is open, send yourself a test
+   message to verify that mail is moving correctly. See the eighth item in the
+   list of tips above.
+
+4. If you want offline folders, on the Tools menu, click Services.
+
+   Select the Exchange Server service, and click Properties. Click the Advanced
+   tab. Click Offline Folders, and then create a new Offline Folders file. Click
+   OK, and return to the Inbox.
+
+5. While you are still in online mode, on the Tools menu, click Synchronize All
+   Folders. The Offline Folders file is now ready.
+
+To get a copy of the global address list to use while working offline, on the
+Tools menu, click Synchronize, and then click Download Address Book. This gives
+you a copy of the global address list to use when you work offline.
+
+You can now start the client using this profile in offline mode. You can read and
+compose mail, and view and post to public folders in the Favorites folder. Any
+changes made offline are delayed until the next synchronization with the
+Exchange Server computer.
+
+Suggestions
+-----------
+
+ - Always use the simplest settings first, for the server as well as the client.
+   Use clear text authentication and don't use callbacks on the RAS server.
+
+ - Create different Exchange profiles for working directly connected by means of
+   the LAN and using MacPPP.
+
+ - Test the connection by pinging server names and getting replies from their IP
+   addresses. The Exchange Macintosh Client will need to communicate with the
+   PDC as well as the Exchange Server computer (if they are different
+   computers).
+
+ - Ensure the Exchange account can be accessed from a LAN workstation.
+
+ - Try using static IP addresses for dial-up clients instead of Dynamic Host
+   Configuration Protocol (DHCP) and create a local Hosts file instead of using
+   Domain Name System (DNS) for testing.
+
+ - Try reducing the baud rate of the calling modem.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbOutlookMacSearch kbExchange500Mac kbExchange400Mac kbOutlook800Mac kbOutlook810Mac kbOutlook820Mac
+Version           : MACINTOSH:8.0,8.1,8.2; WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

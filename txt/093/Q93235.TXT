@@ -1,0 +1,82 @@
+DOCUMENT:Q93235  08-DEC-1999  [winprint]
+TITLE   :Kodak Ekta Plus 7008 TrueType Problems in Landscape Mode
+PRODUCT :Microsoft Windows Printing Issues
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Printing TrueType fonts on the C. Itoh CI-4, or Kodak Ekta Plus 7008 printer in
+landscape orientation while emulating the Hewlett-Packard (HP) LaserJet IIP
+results in incorrect output. Portrait orientation is not affected and TrueType
+fonts print correctly.
+
+CAUSE
+=====
+
+There is no specific driver available for this printer from either Microsoft or
+Kodak. According to Kodak technical support, the problem occurs when the printer
+is using the primary emulation of the HP LaserJet IIP. It does not occur when
+using the HP LaserJet Series II driver supplied with Windows 3.1.
+
+WORKAROUND
+==========
+
+Kodak recommends two workarounds: using the HP LaserJet Series II driver, or
+selecting Print TrueType As Graphics.
+
+Selecting Print TrueType As Graphics
+------------------------------------
+
+1. Run the Control Panel.
+
+2. Choose the Printers icon.
+
+3. Select the HP LaserJet IIP.
+
+4. Choose the Setup button.
+
+5. Choose the Options button.
+
+6. Select the Print TrueType As Graphics check box.
+
+MORE INFORMATION
+================
+
+The Kodak product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: 3.10 Kodac ECTA 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

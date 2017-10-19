@@ -1,0 +1,66 @@
+DOCUMENT:Q154916  08-AUG-2001  [winnt]
+TITLE   :Cannot Switch to Running Control Panel Tool
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to switch to a running Control Panel tool using either the ALT+TAB
+key combination or Task Manager, the tool is not in the list of running
+programs.
+
+CAUSE
+=====
+
+This behavior is by design. Control Panel tools are treated as modeless dialog
+boxes, and as such are always part of Control Panel. The same behavior occurs if
+you try to switch to a property sheet dialog box.
+
+RESOLUTION
+==========
+
+To switch to the running Control Panel tool, use one of the following methods:
+
+ - Use ALT-ESC to set the focus back on the desired Control Panel tool.
+
+   -or-
+
+ - Use the mouse to select the tool on the desktop.
+
+   -or-
+
+ - Switch to Control Panel and open the tool again.
+
+Additional query words: missing cpl
+
+======================================================================
+Keywords          : kbenv kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

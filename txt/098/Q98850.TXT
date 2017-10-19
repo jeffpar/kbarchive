@@ -1,0 +1,75 @@
+DOCUMENT:Q98850  26-MAY-2001  [homekids]
+TITLE   :Encarta 1993: Minimal Installation May Cause Sound Gaps
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta for Windows 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A minimal installation of Microsoft Encarta may make a Multimedia PC compatible
+system produce intermittent sound gaps in the Encarta animations.
+
+MORE INFORMATION
+================
+
+The recommended installation of Encarta (which requires 7.9 MB of disk space)
+provides faster performance than the minimal installation (which requires 2.5 MB
+of disk space). The slower performance of the minimal installation may make a
+normally Multimedia PC compatible system produce intermittent sound gaps in the
+Encarta animations. This only occurs in animations.
+
+This gap in the sound can occur if you are running low on memory and, due to the
+minimal installation, a piece of code must be accessed from the compact disc
+while the animation is running. The read head moves away from the location of
+the currently running animation and if it cannot return to that location before
+the buffer empties, it will produce a gap in the sound.
+
+This may also occur if the compact disc device driver is not functioning
+properly. It may be sending empty blocks of data to the buffer or it may not
+return to the right place on the compact disc when the read head moves.
+
+For more information in the Microsoft Knowledge Base query on the following
+words:
+
+   sounds and interrupted and stutter
+
+Workaround
+----------
+
+1. Reinstall Encarta using the installation recommended by the Encarta Setup
+   program.
+
+2. Install the most current drivers for the compact disc drive.
+
+
+Additional query words: 1.00 multimedia multi media multi-media non MPC halt start stop nonmpc non-mpc halting setup intermittent sounds occur animations version 1.0 loss no studder usage sound viewer 2.0 cd cd-rom
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncarta1993
+Version           : :1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

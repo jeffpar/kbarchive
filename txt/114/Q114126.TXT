@@ -1,0 +1,62 @@
+DOCUMENT:Q114126  26-OCT-2000  [pcmail]
+TITLE   :PC DOS: Mail Does Not Release Memory After Notice 0
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1c,3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1c, 3.0, 3.0b, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With versions 2.1c through 3.0b of the Microsoft Mail for PC Networks MS-DOS
+client, you may have difficulties reading mail under low-memory conditions. You
+will receive Notice 0 (out of memory) and Notice 16 (error reading mail)
+messages every time you try to read mail.
+
+CAUSE
+=====
+
+When Mail reads a message, it attempts to load the entire text of the message
+into memory. If the message text is too large to fit in available conventional
+memory, Mail notifies you of the problem. However, it does not then release the
+memory it allocated. Until Mail is restarted, no messages can be read.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 2.1c, 3.0, and 3.0b of
+Microsoft Mail for PC Networks, MS-DOS workstation. We are researching this
+problem and will post new information here in the Microsoft Knowledge Base as it
+becomes available.
+
+
+Additional query words: 2.10c 3.00 3.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:2.1c,3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,74 @@
+DOCUMENT:Q223259  24-MAR-2000  [iis]
+TITLE   :How To Install FTP from NTOP on Microsoft Cluster Server 1.0
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install the File Transfer Protocol (FTP) Server from the Windows NT
+Option Pack (NTOP) in order to add fail-over enabled FTP Sites on a Microsoft
+Cluster Server Resource Group, you must also install the World Wide Web Server
+from the NTOP.
+
+MORE INFORMATION
+================
+
+The files used by the Microsoft Cluster Administrator tool to create IIS Server
+Instances are only installed during the World Wide Web Server installation piece
+of the NTOP. If you choose to only install the FTP Server on the Microsoft
+Cluster Server, then the IIS clustering files will not get installed on the
+Cluster Server.
+
+If you want to create IIS Server instances of the FTP Sites on the Microsoft
+Cluster Server, but you have only installed the FTP Server on the Microsoft
+Cluster Server, you can run the NTOP Setup again and choose Add/Remove programs.
+Choose to install the World Wide Web Server.
+
+For the proper installation instructions for NTOP on Microsoft Cluster Server
+1.0, see the following article in the Microsoft Knowledge Base:
+
+   Q191138 How to Install Windows NT Option Pack on Cluster Server
+
+After the World Wide Web Server is installed on the Cluster Server computer, you
+can create IIS Server instances for your FTP Sites.
+
+If you want to disable your World Wide Web Server, go to Control Panel Services
+and set the startup type of the World Wide Web Publishing Service to Disabled.
+
+For more information, please see the following white paper:
+
+   http://www.microsoft.com/ntserver/ntserverenterprise/deployment/planguide/ntoption.asp
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

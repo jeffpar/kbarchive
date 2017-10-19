@@ -1,0 +1,82 @@
+DOCUMENT:Q176919  02-MAY-1999  [iis]
+TITLE   :IIS Fails to Display Custom Error Messages for .asp Files
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you retrieve a document with an extension that has a corresponding script
+map entry (for example, .asp, .stm, .idq ), the custom error messages configured
+to replace the default error messages are not used.
+
+RESOLUTION
+==========
+
+In cases where the default error messages are displayed instead of the
+configured custom error messages, the following workaround exists:
+
+1. From the Microsoft Management Console (MMC) IIS Snapin, right-click the Web
+   site and click Properties.
+
+2. On the Home Directory tab, click the "Configuration" button.
+
+3. Highlight the extension that fails to return the custom error message and
+   click Edit.
+
+4. Select the Check That File Exists option.
+
+5. Click OK, and then click Apply.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When a request is made to an IIS server for a registered file (such as an ASP
+page), IIS simply passes that request to the corresponding ISAPI extension. The
+ISAPI extension that is registered for that file type is responsible for the
+completion of the request, including the return of any errors to the user.
+
+This allows the ISAPI extensions to return error messages that may relate more
+information than a standard error. When the "Check that file exists" option is
+enabled in the Add/Edit Application Extension Mapping dialog, this forces IIS to
+check and verify that the file exists, and the user has appropriate permissions
+prior to passing the request to the ISAPI extension. When this option is enabled
+and the file is missing, or the authenticated user has inappropriate
+permissions, IIS will return the appropriate custom error message.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

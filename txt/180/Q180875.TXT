@@ -1,0 +1,75 @@
+DOCUMENT:Q180875  09-AUG-2001  [winnt]
+TITLE   :Russian Clients May Have File I/O Problems on an FPNW Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Services for NetWare version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If your MS-DOS, Windows for Workgroups, Windows 95, or Windows NT client uses a
+Russian version of the operating system, or if the Russian system default locale
+is installed, you may experience one or more of the following problems while
+accessing a Microsoft File and Print Services for NetWare (FPNW) server:
+
+ - After you create a directory with Russian characters using a Novell NetWare
+   redirector and refresh the view in Windows NT Explorer, all directories that
+   do not contain Russian characters disappear.
+
+ - If you create a directory containing Russian characters on an FPNW server,
+   you may see a name similar to "3c5a8~1". This name disappears if you refresh
+   the screen and the correct directory name is displayed.
+
+ - You cannot create a new directory on an FPNW server because, if you try to
+   rename the default folder name ("---------") to any other name, you receive
+   an error message.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in File and Print Services for
+NetWare version 4.0. This problem was first corrected in Windows NT 4.0 Service
+Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition Service Pack 4.
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbServicesNetware400 kbServicesNetwareSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,71 @@
+DOCUMENT:Q107850  02-NOV-2001  [vbwin]
+TITLE   :VB CDK Cannot Access the Properties of the VB System Objects
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Visual Basic Control Development Kit (CDK) provides no mechanism
+to access the properties of the system objects. The Visual Basic system objects
+are Screen, Printer, App, Clipboard, and Debug.
+
+This feature is under review and will be considered for inclusion in a future
+release.
+
+MORE INFORMATION
+================
+
+The five Visual Basic system objects are as follows:
+
+   Object      Use
+   ----------------------------------------------------------------------
+   Screen      Supplies data on current form, control, and screen display.
+   Printer     Enables printing text and graphics to the printer.
+   App         Supplies information specific to the application.
+   Clipboard   Gives access to the Windows Clipboard.
+   Debug       Enables printing to the Debug window in Visual Basic.
+
+Because the system objects are global, you can use them in code anywhere in your
+application. You cannot declare object variables for any of these system
+objects, and you cannot pass the system objects to a procedure.
+
+The Control Development Kit is provided with the professional edition of Visual
+Basic for Windows.
+
+REFERENCES
+==========
+
+"Visual Basic 3.0: Programmer's Guide," version 3.0, page 206, "System Objects."
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

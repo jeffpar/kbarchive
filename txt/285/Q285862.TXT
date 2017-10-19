@@ -1,0 +1,77 @@
+DOCUMENT:Q285862  30-MAY-2002  [homegame]
+TITLE   :Games Error Message: Problem Getting DP2 Interface
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Zone.com 
+ - Microsoft Flight Simulator 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to join or host a Microsoft Combat Flight Simulator 2 game on
+Zone.com, you may receive the following error message:
+
+   Problem getting DP2 interface.
+
+CAUSE
+=====
+
+This behavior can occur if you are running firewall, network address translation
+(NAT), proxy, or other Internet router software on your computer or your local
+area network (LAN).
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Disable Firewall Software
+-------------------------
+
+Refer to your firewall software documentation to disable the firewall.
+
+If you are not able to disable your firewall software, contact the manufacturer
+of your firewall software.
+
+Configure the Proxy Server or Firewall
+--------------------------------------
+
+For additional information about how to configure a proxy server or firewall for
+use with Zone.com, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q240429 DirectX: Ports Required to Play on a Network
+
+Additional query words: msgame msngz igz combatfs cfs2
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbMSNSearch kbCombatFlightSim2 kbCombatFlightSimSearch kbFlightSim2000 kbZone kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

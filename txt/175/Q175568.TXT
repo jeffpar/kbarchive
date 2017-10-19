@@ -1,0 +1,68 @@
+DOCUMENT:Q175568  12-MAR-1999  [exchange]
+TITLE   :XADM: Pause Option Not Available With Exchange Admin on Cluster
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Windows NT Cluster Service Administrator page only lists online and offline
+options for the Exchange services; a Pause option is not available. Because
+pausing a service, such as the Directory Exchange Agent (DXA), may be necessary,
+this can be a problem.
+
+CAUSE
+=====
+
+The Windows NT Cluster Service Administrator page does not allow a paused status
+for a service. Therefore, Pause is not an option. Only online and offline
+options are available.
+
+WORKAROUND
+==========
+
+The Pause button and paused status can be viewed from the Control Panel Services
+icon. The following steps are recommended if pausing a service is necessary:
+
+1. In Windows NT Cluster Service Administrator, take the Exchange service
+   offline.
+
+2. From the Control Panel Services icon, start the Exchange service.
+
+3. As required, pause the Exchange service from the Control Panel.
+
+4. When you finish performing any tasks to the Exchange Server computer,
+   continue the service (it should start running again).
+
+5. In Windows NT Cluster Service Administrator, bring the Exchange service
+   online.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

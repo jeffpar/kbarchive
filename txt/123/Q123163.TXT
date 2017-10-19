@@ -1,0 +1,72 @@
+DOCUMENT:Q123163  30-JUL-2001  [visualc]
+TITLE   :FIX: __TIMESTAMP__ Reports Pacific Standard Time
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbCompilerkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - 
+    - Microsoft C/C++ Compiler (CL.EXE) 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The __TIMESTAMP__ predefined compiler macro always returns timestamp information
+in Pacific Standard time, regardless of the local time and time zone on the
+machine where CL.EXE is run.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This bug was corrected in Visual C++, 32-bit Edition, version
+2.0.
+
+MORE INFORMATION
+================
+
+The following sample code can be used to demonstrate the problem. NOTE: You must
+change your time zone via the Date/Time Control Panel applet if you are under
+Pacific Standard Time to see the problem.
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+
+   #include <stdio.h>
+
+   void main()
+   {
+      printf( "The time is %s\n", __TIMESTAMP__ );
+   }
+
+Additional query words: 1.00 8.00 PST stamp local time
+
+======================================================================
+Keywords          : kbCompiler kbbuglist kbfixlist
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

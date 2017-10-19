@@ -1,0 +1,47 @@
+DOCUMENT:Q113099  09-DEC-1999  [homemm]
+TITLE   :Bookshelf: Footnotes Not Included When Tables Printed/Copied
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition,1995 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows versions 1994 edition, 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Footnotes are viewable on the screen in Bookshelf, but if you copy or print a
+table, the footnote information or explanations are not included.
+
+MORE INFORMATION
+================
+
+This problem was fixed in Bookshelf 96-97.
+
+Additional query words: msn_bookshelf 1994 multi media multimedia multi- foot note notes
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1994 kbBookShelf1995
+Version           : :1994 edition,1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

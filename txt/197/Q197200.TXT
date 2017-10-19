@@ -1,0 +1,60 @@
+DOCUMENT:Q197200  14-NOV-2000  [word97]
+TITLE   :WD97: "Shrink to Fit" Repaginates Document Several Times
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you click the Shrink to Fit button on the Print Preview toolbar, Word may
+repaginate your document several times. It may appear that Word is repaginating
+your document in an endless loop.
+
+CAUSE
+=====
+
+Sometimes Word must perform several repagination operations to maximally reduce
+the number of pages in a document. If you choose the Shrink to Fit button and
+Word is unable to reduce the number of pages in your document after repaginating
+the document several times, one of the following messages may appear:
+
+   After several attempts, Word was unable to shrink the document by one page.
+
+-or-
+
+   Word could not shrink the document by one page because the document is
+   already one page.
+
+Additional query words: repagination multiple endless loop continuous infinite looping
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

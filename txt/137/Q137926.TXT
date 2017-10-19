@@ -1,0 +1,78 @@
+DOCUMENT:Q137926  07-SEP-2001  [winnt]
+TITLE   :Underline Not Printed on IBM 40x9 Printers Using Courier
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Underlining is not printed with the Courier typeface if you are using the IBM
+40x9 series of drivers to print to an IBM 40x9 series printer.
+
+IBM 40x9 series printers include the IBM 4019 and 4029 printers.
+
+CAUSE
+=====
+
+Windows NT 3.51 does not correctly issue the underline command to the printer
+during the printing process.
+
+WORKAROUND
+==========
+
+To work around this problem, change the program font to the Courier New typeface
+that uses True Type instead of the printer-resident Courier typeface.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Printer-resident Courier typefaces include the following:
+
+Courier 10
+Courier 10 Bold
+Courier 12
+Courier 17*1
+
+The third-party products discussed here are manufactured by IBM Corporation, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+Additional query words: prodnt LaserPrinter laser
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

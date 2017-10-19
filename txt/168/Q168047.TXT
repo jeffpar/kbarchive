@@ -1,0 +1,173 @@
+DOCUMENT:Q168047  05-MAY-2001  [visualc]
+TITLE   :HOWTO: STL Sample for [list::remove, remove_if] Function(s)
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:_IK kbVC420 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Standard C++ Library, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the [list::remove, list::remove_if]
+STL function(s) in Visual C++.
+
+Note that there are some differences in the implementation of the Standard C++
+Library components in Visual C++ version 4.2 versus later revisions. The
+relevant sections of code below compile conditionally based upon the value of
+_MSC_VER.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+      <list>
+      <string>
+      <iostream>
+
+Prototype
+---------
+
+      void remove(const T& x);
+      void remove_if(binder2nd< not_equal_to<T> > pr);
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+This example shows how to use list::remove and list::remove_if. It also shows how
+to use list::remove_if with your own function.
+
+Sample Code
+-----------
+
+      ////////////////////////////////////////////////////////////////////// 
+      // 
+      // Compile options needed: -GX
+      // 
+      // remove.cpp :  This example shows how to use list::remove and
+      //               list::remove_if.  It also shows how to use
+      //               list::remove_if with your own function.
+      // 
+      // Functions:
+      // 
+      //  list::remove
+      //  list::remove_if
+      // 
+      // Written by Andrew Bradnan
+      // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+      ////////////////////////////////////////////////////////////////////// 
+
+      #pragma warning(disable:4786) // disable spurious C4786 warnings
+
+      #include <list>
+      #include <string>
+      #include <iostream>
+      using namespace std;
+
+      #if _MSC_VER > 1020   // if later than revision 4.2
+      using namespace std;   // std c++ libs are implemented in std
+      #endif
+
+      typedef list<string, allocator<string> > LISTSTR;
+
+      // Used to customize list::remove_if()
+      class is_four_chars
+         : public not_equal_to<string>
+      {
+         bool operator()(const string& rhs, const string&) const
+         {  return rhs.size() == 4; }
+      };
+
+      void main()
+      {
+         LISTSTR test;
+         LISTSTR::iterator i;
+
+         test.push_back("good");
+         test.push_back("bad");
+         test.push_back("ugly");
+
+         // good bad ugly
+         for (i = test.begin(); i != test.end(); ++i)
+            cout << *i << " ";
+         cout << endl;
+
+         test.remove("bad");
+
+         // good ugly
+         for (i = test.begin(); i != test.end(); ++i)
+            cout << *i << " ";
+         cout << endl;
+
+         // remove any not equal to "good"
+         test.remove_if(binder2nd<not_equal_to<string> >
+            (not_equal_to<string>(), "good"));
+
+         // good
+         for (i = test.begin(); i != test.end(); ++i)
+            cout << *i << " ";
+         cout << endl;
+
+         // Remove any strings that are four characters long
+         test.remove_if(binder2nd<not_equal_to<string> >
+            (is_four_chars(), "useless parameter"));
+
+         if (test.empty())
+            cout << "Empty list\n";
+
+      }
+
+Program Output
+--------------
+
+   good bad ugly
+   good ugly
+   good
+   Empty list
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample [xxxx]
+
+======================================================================
+Keywords          : _IK kbVC420 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,132 @@
+DOCUMENT:Q116235  07-APR-2000  [foxpro]
+TITLE   :INFO: FoxPro Can Use SQL pass-through commands and ODBC
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,6.0; :
+OPER/SYS:
+KEYWORDS:kbinterop kbDatabase kbvfp300 kbvfp500 kbvfp600 kbvfp260
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+ - Microsoft FoxPro Connectivity Kit 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FoxPro can use SQL pass-through commands and ODBC. This ability provides a
+methodology for communicating with different data sources using a common syntax.
+
+MORE INFORMATION
+================
+
+The FoxPro Connectivity Kit
+---------------------------
+
+FoxPro provides users with a "pass through" SQL capability. That is, you can pass
+SQL commands to the ODBC data source by using SQL pass-through functions. This
+capability is provided through 12 functions that are used to perform various
+ODBC-related tasks.
+
+Single and Multitier ODBC Drivers
+---------------------------------
+
+Current ODBC drivers fall into one of the following two categories: single- tier
+or multitier.
+
+ - Single-Tier ODBC Drivers
+
+   Single-tier drivers are used when the processing of SQL statements must be
+   done by the driver itself; that is, when there is no back-end server to
+   process the SQL statements. Thus, single-tier drivers are used to connect to
+   dBASE, FoxPro, Paradox, Btrieve, Microsoft Access, Microsoft Excel, and text
+   files.
+
+   All of the Microsoft single-tier drivers use SIMBA.DLL and/or TXTISAM.DLL as
+   the database "engine."
+
+ - Multitier ODBC Drivers
+
+   Multitier drivers do not contain any processing capability and rely on a
+   client-server DBMS to process SQL statements. SQL Server and ORACLE are two
+   of the best known examples of a client-server DBMS.
+
+ODBC Conformance Levels
+-----------------------
+
+There are two conformance levels for ODBC: API and SQL. The API conformance
+levels are Core, Level 1, and Level 2. These specify varying degrees of API
+support. Most current ODBC drivers are Level 1 and partially implement Level 2
+features, such as scrollable cursors. (For a detailed discussion of this topic,
+refer to the ODBC SDK documentation listed at the end of this article.)
+
+The ODBC SQL conformance level is related to the SQL grammar implementation, and
+falls into one of the following three categories:
+
+  Minimum  - All ODBC drivers should implement this level.<BR/>
+  Core     - Most ODBC drivers meet or exceed this level.<BR/>
+  Extended - Many ODBC drivers partially implement this level.
+
+The syntax for each level can be obtained from the ODBC SDK documentation, which
+is listed at the end of this article.
+
+Scalar Functions
+----------------
+
+ODBC has a number of functions built-in to allow language independence between
+various database management systems. A list of these functions can be found in
+the following Microsoft Knowledge Base articles:
+
+   Q103576 SQL Server Time/Date Func Support for Connectivity Kit
+
+   Q104342 SQL Server System Funcs Supported by the Connectivity Kit
+
+ODBC functions are implemented with an ODBC "escape shorthand" syntax. This
+syntax looks like:
+
+   {fn ODBCFunction([Arguments])}
+
+The following example shows how you can use the DBExec() function included in
+FoxPro 2.x with the SQRT() ODBC function:
+
+      lnResult=DBExec(dbHdle, "SELECT {fn sqrt(4)}","output")
+
+In Visual FoxPro, use the following command:
+
+      lnResult=SQLExec(dbHdle, "SELECT {fn sqrt(4)}","output")
+
+To see an additional example of ODBC scalar functions, use the ClientServer
+Wizard in the Professional edition of FoxPro version 2.6 for Windows to create
+an outer join, and then examine the generated code.
+
+REFERENCES
+==========
+
+"Microsoft ODBC 2.0 Programmer's Reference and SDK Guide," Microsoft Press
+
+Additional query words: CK multi-tier
+
+======================================================================
+Keywords          : kbinterop kbDatabase kbvfp300 kbvfp500 kbvfp600 kbvfp260 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300 kbVFP500 kbVFP600
+Version           : WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,6.0; :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q241019  25-JUL-2001  [homegame]
+TITLE   :NBA Inside Drive 2000: Court Lines Disappear When Playing Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbhw kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft NBA Inside Drive 2000, the court lines may unexpectedly
+disappear.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A video adapter based on the ATI Rage Pro chipset is installed in your
+   computer.
+
+ - The Stadium Detail setting in NBA Inside Drive 2000 is set to Low.
+
+RESOLUTION
+==========
+
+To resolve this issue, set the Stadium Detail setting to Medium:
+
+1. On the NBA Inside Drive 2000 startup screen, click Options.
+
+2. On the Performance tab, click Medium under Stadium Detail.
+
+3. Click OK.
+
+Additional query words: 1.00 nba2000 nba2k basketball missing
+
+======================================================================
+Keywords          : kbdisplay kbenv kbhw kbimu msgame kbHardware 
+Technology        : kbGamesSearch kbNBAInsideDrive2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

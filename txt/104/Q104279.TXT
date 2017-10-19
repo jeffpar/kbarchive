@@ -1,0 +1,86 @@
+DOCUMENT:Q104279  27-OCT-1999  [pcmail]
+TITLE   :PC DB: Creating or Resetting a .KEY and .MBG Pair
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In versions 3.0x and 3.2 of Microsoft Mail for PC Networks, it is sometimes
+necessary to re-create or reset the .KEY and .MBG files. This article describes
+the process.
+
+NOTE: Before you make any modifications to the files, make copies of them
+(*.OLD). Use the .OLD files to restore if something goes wrong and to track down
+possibly orphaned .MAI files, if needed.
+
+MORE INFORMATION
+================
+
+NOTE: An easier way to reset the .KEY and .MBG files can be done with
+MAILQ16.EXE. For more information on how to run MAILQ16.EXE, refer to the
+following article in the Knowledge Base:
+
+   Q130285 Resetting or Rebuilding Mailbags with MAILQ16.EXE
+
+In the following examples, substitute the filenames of the appropriate .KEY and
+.MBG files for the INQUEUE.KEY and INQUEUE.MBG that were used as examples.
+
+To create a new .KEY file
+-------------------------
+
+   debug INQUEUE.KEY
+   -rcx
+   CX 0000
+   :230
+   -f100,32f,0
+   -w
+   -q
+
+To reset a .KEY file
+--------------------
+
+   debug INQUEUE.KEY
+   -f100,32f,0
+   -w
+   -q
+
+To create/reset an .MBG file
+----------------------------
+
+   M:\MBG> type nul > INQUEUE.MBG
+
+NOTE: You can verify that the file was created by using the MS-DOS DIR command to
+check for the existence of a zero-byte INQUEUE.MBG file.
+
+Additional query words: 3.00 3.00a 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a kbMailPCN300b
+Version           : WINDOWS:3.0,3.0a,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

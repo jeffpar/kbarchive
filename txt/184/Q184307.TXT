@@ -1,0 +1,120 @@
+DOCUMENT:Q184307  14-MAR-2000  [sna]
+TITLE   :How to Obtain the Latest SNA Server Version 3.0 Service Pack
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP4
+OPER/SYS:
+KEYWORDS:kbsna300sp4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP4 
+-------------------------------------------------------------------------------
+
+** THIS U.S. SERVICE PACK 4 IS FOR SNA SERVER 3.0 COMPUTERS ONLY!! **
+
+SUMMARY
+=======
+
+This article explains how to order and download SNA Server 3.0 Service Pack 4.
+For a list of Microsoft Knowledge Base articles about bugs fixed by this Service
+Pack, please see the following article in the Microsoft Knowledge Base:
+
+   Q233388 List of Bugs Fixed in SNA Server 3.0 Service Pack 4
+
+To view the Readme.txt file that accompanies this Service Pack, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q233366 SNA Server 3.0 Service Pack 4 Readme.txt File
+
+MORE INFORMATION
+================
+
+SNA Server 3.0 Service Pack 4 (SP4) includes all bug fixes implemented since the
+initial SNA Server 3.0 release. In addition, the 3.0 SP4 CD includes updated
+documentation, collateral, sample WEB-installable SNA Server Windows 95 client
+software, and SDK (software development kit) files. SNA 3.0 SP4 includes updated
+SNA Server and client software for I386 (Intel) and DEC Alpha platforms.
+
+NOTE: Support for MIPS and Power PC platforms have been discontinued and is not
+included in 3.0 SP4.
+
+Ordering the SNA Server 3.0 Service Pack 4 CD
+---------------------------------------------
+
+Microsoft SNA Server 3.0 U.S. Service Pack 4 (SP4) is available in CD media
+format under part number 211-00334. The CD can be ordered by customers within
+the U.S. and Canada through the Microsoft Order Desk at (800) 360-7561. The cost
+is US $14.95 (CDN $19.95) plus customer service and handling charges of US $7.95
+(CDN $12) per order. Customers outside the U.S. should contact their Microsoft
+subsidiary or local distributor and request the following part number:
+
+   SNA Server 3.0 SP4 CD
+   Part number: 211-00334
+
+Downloading SNA Server 3.0 Service Pack 4
+-----------------------------------------
+
+You can find links to download the correct version for your computer platform at
+the following location:
+
+   ftp://ftp.microsoft.com/bussys/winnt/sna-public/fixes/sna30/ussp4
+
+
+The following files comprise the updated SNA Server and client files for SNA
+Server 3.0 SP4:
+
+   File name     Date      Time   Size         Description
+   ------------------------------------------------------------------------
+   30sp4txt.exe 05/26/99  07:45a     533,608   Release Notes and Help 
+   30sp4is.exe  05/26/99  07:45a  23,744,016   Server Update (Intel) 
+   30sp4as.exe  05/26/99  07:45a  26,912,896   Server Update (Alpha) 
+   30sp4icu.exe 05/26/99  07:45a   6,914,928   NT Client Update (Intel) 
+   30sp4acu.exe 05/26/99  07:45a   9,052,176   NT Client Update (Alpha) 
+   30sp495u.exe 05/26/99  07:44a   2,927,432   Windows 95 Client Update 
+   30sp4clu.exe 05/26/99  07:45a   3,039,992   Windows 3.x Client Update 
+   30sp4ihs.exe 05/26/99  07:45a     954,272   Host Security Update (Intel) 
+   30sp4ahs.exe 05/26/99  07:45a   1,138,264   Host Security Update (Alpha)
+
+
+For information about changes implemented in 3.0 SP4, see the Sna30sp4.hlp file
+included in the 30sp4txt.exe, 30sp4is.exe or 30sp4as.exe file. The Sna30sp4.hlp
+file also lists new features added in the service pack and articles describing
+the symptoms and causes for problems fixed in the service pack.
+
+NOTE: SNA Server 3.0 SP4 includes updates to SNA Server, Print Service, TN3270
+Service, TN5250 Service, ODBC drivers, AFTP, and Shared Folders Gateway.
+
+For information about decompressing and installing these files, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q233366 SNA Server 3.0 Service Pack 4 Readme.txt File
+
+For information about obtaining earlier SNA Server 3.0 Service Packs, please see
+the following Microsoft Web site:
+
+   http://support.microsoft.com/support/sna/sp.asp
+
+Additional query words: servpack
+
+======================================================================
+Keywords          : kbsna300sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP4
+Version           : WINDOWS:3.0 SP4
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,87 @@
+DOCUMENT:Q223173  27-MAR-1999  [homemm]
+TITLE   :Bookshelf 2000: What's New in Bookshelf 2000
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbpolicy kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the new features and updated content included in Microsoft
+Bookshelf 2000, in addition to differences between Bookshelf 2000 and Microsoft
+Bookshelf 99.
+
+MORE INFORMATION
+================
+
+Bookshelf 2000 includes the following new features and updated content.
+
+New Features
+------------
+
+ - Bookshelf 2000 displays a letter from the editor when you start the program
+   for the first time.
+
+ - A drop-down button between the Back and Forward buttons on the Bookshelf 2000
+   menu bar lists up to 19 items you have opened during the current session and
+   enables you to return to any of these items with a single mouse click.
+
+ - The Microsoft Word toolbar contains a Bookshelf button that starts Bookshelf
+   2000 directly from Word.
+
+Updated Content
+---------------
+
+ - The Timeline feature has been updated to include events occurring through
+   November, 1998.
+
+ - Articles have been updated to include content current through December 31,
+   1998 (about six months more recent than the content included in Bookshelf
+   99).
+
+The following differences exist between Bookshelf 2000 and Bookshelf 99.
+
+Differences Between Bookshelf 2000 and Bookshelf 99
+---------------------------------------------------
+
+ - Bookshelf 2000 does not play an introductory animation.
+
+ - The Bookshelf 2000 menu bar does not contain the Suite menu (a menu that
+   enabled you to start another Encarta Reference Suite 99 program directly from
+   Boookshelf).
+
+ - Bookshelf 2000 installs Macromedia Shockwave Director 7.0 if a later version
+   is not already installed on your computer.
+
+
+Additional query words: multi multi-media media mm bs2000 bs2k bs99
+
+======================================================================
+Keywords          : kbpolicy kbref kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf2000
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

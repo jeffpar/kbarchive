@@ -1,0 +1,73 @@
+DOCUMENT:Q108926  06-NOV-1999  [win16sdk]
+TITLE   :DdeCreateDataHandle() Memory Allocation Granularity DDEML
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The DdeCreateDataHandle function creates a global memory object and fills the
+object with the data pointed to by the lpvSrcBuf parameter (second). A DDEML
+application uses this function during transactions that involve passing data to
+the partner application.
+
+This application programming interface (API) allocates global memory in multiples
+of 32 bytes to create data handles. If the application requests a data handle
+for a buffer size that is not a multiple of 32 bytes, then there will be some
+memory leak involved (less than 31 bytes).
+
+MORE INFORMATION
+================
+
+For example, calling DdeCreateDataHandle() on a 3-byte buffer causes DDEML to
+allocate a global memory block of 32 bytes and returns a data handle for these
+32 bytes of memory. If DdeGetData() or DdeAccessData() is used to obtain the
+size of the data handle, then the return value will be 32 bytes (or 28,
+depending on the type of transaction; please see NOTE below). Similarly, if the
+data buffer was 35 bytes long, DdeCreateDataHandle() allocates a global memory
+block of 64 bytes and returns the handle to that memory block.
+
+Internally, DDEML uses GlobalAlloc(GMEM_DDESHARE) to allocate global memory and
+create data handles. GlobalAlloc() allocates memory from the global heap and
+aligns the allocation size to a 32-byte boundary. Because the> function
+DdeCreateDataHandle() uses GlobalAlloc() to create data handles, this overhead
+is imminent.
+
+NOTE: For transactions such as XTYP_REQUEST, DDEML uses the first 4 bytes of the
+data buffer for maintaining header information. Calling DdeGetData(hData, NULL,
+0, 0) to obtain the size of the memory object associated with the data handle
+yields a return value of 28 bytes, instead of the allocated 32 bytes.
+Transactions such as XTYP_EXECUTE, however, do not use the first 4 bytes, so the
+return value is the full 32 bytes allocated.
+
+Additional query words: 3.00 no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,71 @@
+DOCUMENT:Q139719  18-DEC-2000  [win95x]
+TITLE   :"Science" and "60's USA" Screen Savers Require 256 Colors
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Windows 95 with a 16-color palette, the "Science" and "60's
+USA" screen savers included with Microsoft Plus! do not work in normal or
+preview mode. When you use these screen savers, the "Rendering lens" message
+does not appear and the screen saver is not visible. However, when you interrupt
+the screen saver, the screen is redrawn as if the screen saver were running.
+
+The other screen savers included with Microsoft Plus! work normally in 16-color
+mode.
+
+CAUSE
+=====
+
+You are using a 16-color palette in Windows 95.
+
+RESOLUTION
+==========
+
+Configure Windows 95 to use 256 or more colors. To do so, follow these steps:
+
+1. In Control Panel, double-click the Display icon.
+
+2. On the Settings tab, change the Color Palette settings from 16 to 256 or
+   greater.
+
+3. Click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! version 1.0 for
+Windows 95. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

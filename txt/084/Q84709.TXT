@@ -1,0 +1,104 @@
+DOCUMENT:Q84709  16-DEC-2000  [win3x]
+TITLE   :How to Disable Access to Specific Control Panel Tools
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11,95
+OPER/SYS:
+KEYWORDS:kbenv kbusage win31 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to disable access to specific tools in Control Panel.
+You can use the procedure in this article to cause specific tools not to appear
+in Control Panel.
+
+MORE INFORMATION
+================
+
+To disable access to a specific tool in Control Panel, follow these steps:
+
+1. Use any text editor (such as Notepad) to open the Control.ini file in the
+   Windows folder.
+
+2. Search the file for a [don't load] section. If this section does not exist,
+   add it.
+
+3. Add the following line to the [don't load] section for each tool you want to
+   disable
+
+   <icon>=no
+
+   where <icon> is the Control Panel tool you want to disable.
+
+   For Windows and Windows for Workgroups versions 3.1 and 3.11, use the name of
+   the tool as it appears in Control Panel. For example, to disable the Printers
+   tool in Windows for Workgroups 3.11, add the following line to the [don't
+   load] section:
+
+   Printers=no
+
+   For Windows 95, use the name of the .cpl file associated with the tool you
+   want to disable. The Windows 95 .cpl files are listed in the table below. For
+   example, to disable the System tool in Windows 95, add the following line to
+   the [don't load] section:
+
+   sysdm.cpl=no
+
+4. Save the Control.ini file and then quit the editor.
+
+5. Restart the computer.
+
+The following table lists the .cpl file associated with each tool in Control
+Panel in Windows 95:
+
+   .cpl file      Control Panel tool(s)
+   ---------------------------------------------------
+   Access.cpl     Accessibility Options
+   Appwiz.cpl     Add/Remove Programs
+   Desk.cpl       Display
+   Intl.cpl       Regional Settings
+   Jetadmin.cpl   HP JetAdmin
+   Joy.cpl        Joystick
+   Main.cpl       Fonts, Keyboard, Mouse, and Printers
+   Mlcfg32.cpl    Mail And Fax
+   Mmsys.cpl      Multimedia and Sounds
+   Modem.cpl      Modems
+   Netcpl.cpl     Network
+   Password.cpl   Passwords
+   Sysdm.cpl      System and Add New Hardware
+   Timedate.cpl   Date/Time
+   Wgpocpl.cpl    Microsoft Mail Postoffice
+
+
+Additional query words: 3.10 3.11 restrict hide remove
+
+======================================================================
+Keywords          : kbenv kbusage win31 win95 
+Technology        : kbAudDeveloper kbWin3xSearch kbWin95search kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11,95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

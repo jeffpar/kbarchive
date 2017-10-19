@@ -1,0 +1,100 @@
+DOCUMENT:Q303857  07-JUN-2002  [homegame]
+TITLE   :Flight Simulator: Can't Add Planes from Combat Flight Simulator
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+ - Microsoft Flight Simulator 98 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2002 
+ - Microsoft Flight Simulator 2002 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to import an aircraft or a piece of scenery from a newer
+version of a Microsoft Flight Simulator or Microsoft Combat Flight Simulator
+into an older version, one of the following may occur:
+
+ - You may receive errors indicating that this operation is unsupported.
+
+ - The operation may simply fail.
+
+ - The aircraft that is imported will not behave as expected.
+
+CAUSE
+=====
+
+This issue occurs because newer versions of Microsoft Simulators have updated
+Aircraft and Scenery files that are not backwards compatible with older versions
+of these products.
+
+MORE INFORMATION
+================
+
+Although it is unsupported by Microsoft Technical Support it is usually possible
+to import aircraft and scenery from the previous two versions into the next
+available version. It is usually not possible to import aircraft and scenery
+from any versions outside those parameters. For example you can import Planes
+and Scenery from CFS2 and FS2000 into FS2002 Standard or Professional but you
+cannot import Planes and scenery from CFS1, FS98 or FS95 into FS2002 Standard or
+Professional.
+
+For more information on importing Scenery and Aircraft from previous versions
+into later version please see the following articles:
+
+   Q175873 FS98/2000: Using Aircraft and Adventures from Earlier Versions
+
+   Q197805 Combat Flight Simulator: How to Import Flight Simulator Aircraft
+
+   Q197807 Combat Flight Simulator: How to Import Flight Simulator Scenery
+
+   Q198394 Combat Flight Simulator: Aircraft Lighting Is Not Available
+
+   Q278642 CFS2: How to Import Missions from Combat Flight Simulator
+
+   Q279149 CFS2: How to Import Scenery from Flight Simulator
+
+   Q279747 CFS2: How to Import Combat Flight Simulator Scenery
+
+   Q286252 CFS2: How to Import Combat Flight Simulator Aircraft
+
+   Q303857 Flight Simulator: Can't Add Planes from Combat Flight Simulator
+
+   Q315201 FS2002: How to Import Adventures from Flight Simulator 2000
+
+   Q317828 FS2002: How to Import Aircraft from Combat Flight Simulator
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbFlightSim95 kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

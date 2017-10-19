@@ -1,0 +1,84 @@
+DOCUMENT:Q64268  01-NOV-1999  [win95x]
+TITLE   :Description of Options for Using NETWARE.INI
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.0 builds the NETWARE.INI text file upon entering the
+Network section of the Control Panel for the first time. The NETWARE.INI file
+tells the NetWare driver what commands are available under the Network icon in
+the Windows Control Panel.
+
+MORE INFORMATION
+================
+
+Modifying the NETWARE.INI File
+------------------------------
+
+The NETWARE.INI file can be modified using any text editor. It may be easier to
+use the Notepad application since it is included with the Windows package. Any
+application, command, or utility that runs under Windows can be added to the
+NETWARE.INI file.
+
+The file header must not be changed. It must appear before the command lines. The
+following is a sample modified NETWARE.INI file:
+
+      [MSW30-Utils]
+
+      Attach A File Server=<Attach
+      Detach A File Server=<Detach
+      Disable Broadcast Messages=<No Messages
+      Enable Broadcast Messages=<Messages
+      A Game of Dots=REVERSI.EXE
+      Show Your Timepiece=CLOCK
+      Run System Console=SYSCON.EXE
+      Acctg/Laser/Landscape=capture l=1 j=0
+
+The first four commands are default commands, as indicated by the less-than sign
+(<) preceding the command.
+
+There are several rules for modifying the NETWARE.INI file, as follows:
+
+1. The command line includes the title of the command that will appear in the
+   Network Utilities dialog when the Network icon is opened. To the right of the
+   command title is an equal sign (=) and the name of the executable file for
+   the appropriate program or command.
+
+2. The total length of all the titles cannot exceed 512 characters.
+
+3. The total number of characters after the "=" for each command line cannot
+   exceed 128.
+
+Additional query words: 3.00 3.0 3.0a 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

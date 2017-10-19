@@ -1,0 +1,89 @@
+DOCUMENT:Q198710  27-JUL-1999  [sms]
+TITLE   :SMSINST: Edit ini File May Produce Unexpected Results
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0,2.0; winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms120 kbsms120bug kbsmsInst smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+ - Microsoft Systems Management Server Installer versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Edit INI File script item in Systems Management Server Installer is used to
+make modifications to an existing INI file during script execution. When using a
+single script item to make modifications to existing values while at the same
+time removing other sections of an INI file, the resulting contents of the INI
+file may be incorrect.
+
+Example of Script Item Settings That Can Reproduce Problem
+----------------------------------------------------------
+
+[Section1]
+
+[Section2]
+Valueitem=XXXXXX
+
+[Section3]
+Valueitem=XXXXXX
+
+The results of this modification should be to remove [Section1] completely and
+change the values of the entries listed under the other sections. Test results
+have shown that this can actually leave [Section1] in the INI file and
+transcribe the values from the following section back into the unremoved
+[Section1]. To work around this problem, try either of the following:
+
+1. Separate the task into multiple Edit INI File script items.
+
+   -or-
+
+2. Move the section to be deleted to the bottom of the Edit INI File settings.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server 2.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q236325 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server 2.0.
+This problem was first corrected in Systems Management Server 2.0 Service Pack
+Service Pack 1.
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbsmsInst smsinst 
+Technology        : kbSMSSearch kbSMS200 kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0; winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,63 @@
+DOCUMENT:Q224368  04-FEB-2000  [iis]
+TITLE   :HTMLA Web Site Friendly Names Are Truncated
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new Web site using the Internet Services Manager, if certain
+characters are used (other than letters or numbers), the full name in the HTMLA
+Web Administration forms may be truncated.
+
+For example, if you create a new site using the Internet Services Manager and
+call it New"Web"Site (including the quotation marks), when you view the site in
+the HTMLA Web Administration forms ("http://localhost/iisadmin" by default),
+only "New" is viewable, instead of the Web site's full name.
+
+CAUSE
+=====
+
+The problem is caused when the string values in an ASP script are used to
+generate JavaScript literals. The characters cause a problem in the script
+itself (errors), so they are truncated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+version 5.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

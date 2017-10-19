@@ -1,0 +1,77 @@
+DOCUMENT:Q196709  01-NOV-2001  [foxpro]
+TITLE   :INFO: Files Installed Win 98\SYSTEM Folder for DCOM98 Step 3
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbvfp600 kbOSWin98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0, on platform(s):
+    - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NOTE: This article is part of a series of Knowledge Base (KB) articles that
+provide a list of files that are installed by Visual FoxPro version 6.0 into a
+fresh installation of Windows 98.
+
+This is the third article in this series for Windows 98 and lists the files in
+the \WINDOWS\SYSTEM folder of Windows 98 placed there during this step in the
+installation of Visual FoxPro 6.0, which installs DCOM 98. This will reboot your
+system.
+
+MORE INFORMATION
+================
+
+Directory of \WIN98\SYSTEM (after installing DCOM 98):
+
+    681 File(s)     74,425,037 bytes
+
+WINDOWS\SYSTEM Files that are added or modified when you install DCOM98:
+
+   File Name         File Size File Date  File Time  File Version
+   Dcom2W98.DLL           5584 06/02/1998 15:59:56   2.1
+
+A subdirectory named Dcom98, which contains three text files, and another
+subdirectory named oldole, which contains 25 files, are created.
+
+REFERENCES
+==========
+
+For additional information on files installed in the \WINDOWS\SYSTEM folder,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q197017 Files Installed Windows 98\SYSTEM Folder Before VFP6 Setup
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Perry
+Newton, Microsoft Corporation.
+
+
+Additional query words: DCOM98 Fresh Install
+
+======================================================================
+Keywords          : kbsetup kbvfp600 kbOSWin98 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : :6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

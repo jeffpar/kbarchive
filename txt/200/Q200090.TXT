@@ -1,0 +1,56 @@
+DOCUMENT:Q200090  06-AUG-2002  [exchange]
+TITLE   :XFOR: Wrong cc:Mail Connector Screen in Exchange 5.0 What's New
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:exc5
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Exchange Server 5.0 What's New book, on page 114, the screen
+shot of the Connector for Lotus cc:Mail Properties dialog box is incorrect.
+
+The following path in the screen shot is incorrect:
+
+   Path: n:\ccdata
+
+MORE INFORMATION
+================
+
+The Path field requires the network path to the Lotus cc:Mail post office data
+directory to be consistent with universal naming convention (UNC) format, as
+follows:
+
+   Path: \\<Computername>\<Share>\Ccdata
+
+Additional query words: CCMC
+
+======================================================================
+Keywords          : exc5 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

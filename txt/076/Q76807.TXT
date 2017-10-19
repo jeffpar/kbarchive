@@ -1,0 +1,60 @@
+DOCUMENT:Q76807  30-OCT-1999  [winmisc]
+TITLE   :Sound Blaster: Built-In Stereo Power Amplifier
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::1.0; WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the built-in stereo power amplifier of the Sound Blaster
+card hardware and how it works with Windows with Multimedia Extensions version
+1.0 and Windows version 3.1.
+
+MORE INFORMATION
+================
+
+The Sound Blaster has a built-in amplifier that provides a maximum output of 4
+watts per channel into a 4 ohm load. This is enough to drive an inexpensive set
+of headphones or some "Walkman" style speakers.
+
+And although the output is "stereo," the ONLY thing that is truly stereo on the
+Sound Blaster is the creative music synthesizer (C/MS) chip set (which Windows
+with Multimedia Extensions does not use). All of those interesting sounds played
+in Windows with Multimedia Extensions are mono.
+
+Sound Blaster is manufactured by Creative Labs, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: MMWIN 3.10 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWinMultiXSearch kbWin310 kbWinMultiX100
+Version           : :1.0; WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

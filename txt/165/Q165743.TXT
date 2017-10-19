@@ -1,0 +1,71 @@
+DOCUMENT:Q165743  08-AUG-2001  [winnt]
+TITLE   :Default Domain Administrator Not Correctly Configured
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you change the Administrator accounts password or any other account with
+domain administrative privileges, you receive the following error message:
+
+   This default domain administrator is not configured correctly.
+
+However, if you click OK, you are logged in and have full administrative
+privileges.
+
+MORE INFORMATION
+================
+
+The error message can occur if a Citrix Winframe client is running on the
+workstation where you try to log on. Within the Citrix Winframe Client setup,
+there is a User-ID & Password option. If this option has been filled out
+using an account whose credentials no longer match (for example, the password
+has changed), the accounts will no longer be in synch, and will cause the error
+message.
+
+RESOLUTION
+==========
+
+Clear the checkbox in the Citrix Winframe Client setup (there should also be a
+Citrix tab in User Manager where you can access this information) so that no
+account is defined. You can also change the password to match that of the
+specified account.
+
+MORE INFORMATION
+================
+
+The product mentioned here is manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

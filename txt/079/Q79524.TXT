@@ -1,0 +1,73 @@
+DOCUMENT:Q79524  04-DEC-1999  [homemm]
+TITLE   :Bookshelf for Windows 1991 AUTOEXEC.BAT and WIN.INI Changes
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1991 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Bookshelf for Windows Setup program makes the following changes to
+the AUTOEXEC.BAT and WIN.INI files:
+
+1. It adds the VIEWER directory to the path statement in the AUTOEXEC.BAT file.
+
+2. It adds QUICKEYS.EXE to the load= line of the WIN.INI file.
+
+3. It installs special screen fonts into the [fonts] section of the WIN.INI
+   file. The screen fonts installed depend upon the display type as follows:
+
+   For VGA
+   -------
+
+   Lucida Sans B 10,12,14 VGALSB.FON
+   Lucida Sans B1 10,12,14 VGALSB1.FON
+   Lucida Sans B2 10,12,14 VGALSB2.FON
+   Symbol B 10,12,14 VGALSB.FON
+
+   For EGA
+   -------
+
+   Lucida Sans B 10,12,14 EGALSB.FON
+   Lucida Sans B1 10,12,14 EGALSB1.FON
+   Lucida Sans B2 10,12,14 EGALSB2.FON
+   Symbol B 10,12,14 EGASB.FON
+
+   For 8514
+   --------
+
+   Lucida Sans B 10,12,14 8514LSB.FON
+   Lucida Sans B1 10,12,14 8514LSB1.FON
+   Lucida Sans B2 10,12,14 8514LSB2.FON
+   Symbol B 10,12,14 8514SB.FON
+
+Additional query words: Viewer 1.0 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991
+Version           : :1991 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

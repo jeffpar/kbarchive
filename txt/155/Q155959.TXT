@@ -1,0 +1,73 @@
+DOCUMENT:Q155959  07-SEP-2001  [word97]
+TITLE   :WD97: Envelope Feed Method Displayed Incorrectly (HP DeskJet)
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint kbualink97 word97 kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Envelopes and Labels on the Tools menu, the Envelopes tab may show
+an incorrect envelope feed method.
+
+CAUSE
+=====
+
+This problem has been reported to occur with the following Hewlett-Packard (HP)
+DeskJet printer drivers: 500, 550c, 510, 560, 660c, 672c, 692c, 693c, 820cse,
+855, 870csi, and 1200c.
+
+
+WORKAROUND
+==========
+
+Manually select the proper orientation for the envelope feed method. To do this,
+follow these steps:
+
+1. On the Tools menu, click Envelopes and Labels.
+
+2. Select the Envelopes tab, and click Options.
+
+3. Select the Printing Options tab.
+
+4. Select the proper feed method for the DeskJet printer you have, and click OK.
+
+It may be necessary to change the clockwise rotation to on or off, depending on
+the printer and printer driver version you are using.
+
+Make sure you have the most current version of the printer driver installed.
+
+
+
+Additional query words: position angle upsidedown wrong direction hp hpdj dj500 dj550c dj510 dj560 dj1200c
+
+======================================================================
+Keywords          : kb3rdparty kbprint kbualink97 word97 kbPrinting 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

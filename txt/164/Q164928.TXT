@@ -1,0 +1,77 @@
+DOCUMENT:Q164928  08-AUG-2001  [winnt]
+TITLE   :Not All Objects Are Displayed When Browsing NDS Trees
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Client Services for NetWare (CSNW) or Gateway Services for
+NetWare (GSNW) to browse a NetWare Directory Services (NDS) tree, some NDS
+objects may be missing from the list of available objects.
+
+CAUSE
+=====
+
+The Microsoft client software does not correctly handle cases where the NDS tree
+is very large. If the data requested by the client is not entirely contained by
+the first reply from a NetWare server, some NDS objects may be omitted from the
+list displayed by the Windows NT-based client. This may prevent users from
+seeing servers or printers that ought to show up in browse lists.
+
+This problem does not prevent users from connecting to NDS resources that exist;
+it only prevents some of the resources from being displayed when browsing for
+network resources.
+
+WORKAROUND
+==========
+
+If possible, keep the size of the NDS tree to a minimum. Alternatively obtain
+the hotfix mentioned below or update to the service pack containing this fix
+when it is available.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt print queues volume printer
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

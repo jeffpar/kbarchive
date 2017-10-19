@@ -1,0 +1,72 @@
+DOCUMENT:Q170471  17-APR-1999  [exchange]
+TITLE   :XCON: 290/4284 Errors Indicate Misconfigured MTA or Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0 5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Microsoft Exchange Server Message Transfer Agent (MTA) may return messages
+back to originators with Non-Delivery Reports (NDRs) that state:
+
+   Unable to deliver due to MTA congestion.
+
+These NDRs will be accompanied by the following events logged in the Windows NT
+Server Event Viewer Application Log:
+
+   4284 A error occurred during connection/disconnection.
+   Error code: 8511 [POP4 POP4 DOWN 4 179] (14)
+
+   290 A non-delivery report (reason code unable-to-transfer and diagnostic code
+   maximum-time-expired) is being generated for message C=US;A= ;P=Organization;
+   L=Server03-970224213600Z-1460. It was originally destined for
+   DN:/o=organization/ou=sitename/cn=recipients/cn=recipientnameC=US;A= ;
+   P=organization;O=sitename;S=user;G=joe; (recipient number 1); and was to be
+   redirected to . [MTA DISP:RESULT 20 136] (12)
+
+MORE INFORMATION
+================
+
+This combination of errors usually indicates a misconfigured MTA and/or
+connector. To troubleshoot this issue follow these steps:
+
+1. Verify that the Windows NT Servername matches the local MTA name.
+
+2. Verify that the naming conventions used to communicate between the two
+   servers are functioning correctly.
+
+3. If X400 connectors are being used, make sure all the manually entered
+   information is correct on both servers.
+
+If any of these are incorrect, this behavior is by product design.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : 4.0 5.0 5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

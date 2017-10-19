@@ -1,0 +1,59 @@
+DOCUMENT:Q128724  08-AUG-2001  [winnt]
+TITLE   :Unable to stop more than 13 services
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an application installs a Windows NT service, it may also install other
+dependent services. If more than 13 dependent services are installed, you
+receive the following error message when you stop the primary service:
+
+   More data is available
+
+None of the dependent services stop. If you manually stop the dependent services
+until there are fewer than 13 running, stopping the primary service will
+correctly stop all the dependent services.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. A fix to
+this problem is in development, but has not been regression-tested and may be
+destabilizing in production environments. Microsoft does not recommend
+implementing this fix at this time. Contact Microsoft Product Support Services
+for more information on the availability of this fix.
+
+Additional query words: prodnt 3.50 Control Panel Services
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : winnt:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

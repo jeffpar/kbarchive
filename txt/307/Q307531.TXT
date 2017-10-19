@@ -1,0 +1,74 @@
+DOCUMENT:Q307531  31-MAY-2002  [sms]
+TITLE   :SMS: SMS 2.0 English-Language Client Support on Non-English OS
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft supports for a System Management Server (SMS) 2.0 English-language
+client that runs on a non-English operating system. You can have this
+combination if the following conditions are met:
+
+ - The SQL Server code page is ANSI 1252 for the SMS site database.
+
+ - The AutomaticAnsiToOEM option is turned off.
+
+MORE INFORMATION
+================
+
+The non-English SMS 2.0 server languages include both the localized language
+client and the U.S. English-language client. For example, an SMS 2.0 Japanese
+site server can install either Japanese or English-language SMS clients. If the
+client's language is not recognized when it is installed, the English-language
+client is installed. Microsoft supports this configuration.
+
+For example, if a Chinese operating system tries to install an SMS client from a
+Japanese SMS site server, the English-language client is installed and supported
+on the Chinese computer.
+
+If you use SQL Server 7.0 Japanese for the SMS site database, you must install
+the SQL Server with following settings:
+
+   Character Set : 1252/ISO changed from 932 (Japanese SQL Server default
+   setting)
+   Sort Order : Dictionary order, case-insensitive
+   Unicode Collation - Locale Identifier : General Unicode
+
+After the SQL server installs, turn off the AutomaticAnsiToOEM option.
+
+For more information about the SQL Server and the other versions, please see the
+SQL Server manual or contact Microsoft Product Support Services.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

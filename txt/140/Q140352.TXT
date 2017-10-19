@@ -1,0 +1,66 @@
+DOCUMENT:Q140352  03-AUG-2001  [visualc]
+TITLE   :BUG: RC1120: RC Out of Memory When Compiling for Macintosh
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbHWMAC kbVCkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, Macintosh Cross-Development Addon, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling a resource script (.rc file), the resource compiler gives the
+following error message:
+
+   RC : fatal error RC1120 : out of memory, needed xxxx bytes
+
+This error happens only when compiling for a Macintosh or a Power Macintosh
+target. Also, the error occurs on large .rc files only.
+
+RESOLUTION
+==========
+
+Break the large .rc file into multiple smaller .rc files. Breaking an .rc file
+into two .rc files can be done conveniently by using Developer Studio's Resource
+Editor. Because the Resource Editor supports drag and drop between two .rc
+files, move the resources from one .rc file to another.
+
+Developer Studio's build system does not support including more than one .rc
+files. Include only one .rc file in the project. Instead of including the second
+.rc file, compile it from command prompt and include the resulting .rsc file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 4.00 mac pmac rc wings ppc
+
+======================================================================
+Keywords          : kbHWMAC kbVC kbbuglist
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400Mac
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

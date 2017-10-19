@@ -1,0 +1,106 @@
+DOCUMENT:Q141551  09-AUG-1999  [foxpro]
+TITLE   :How to Hide the "FoxPro Run Command" Window in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 3.00b
+OPER/SYS:
+KEYWORDS:kbcode kbsample kbvfp kbvfp300 kbvfp300b kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By using the Windows API function WinExec, you can execute an MS-DOS command or
+program without the user seeing the "FoxPro Run Command" window or another
+MS-DOS session.
+
+MORE INFORMATION
+================
+
+The following program creates a sample function that executes an MS-DOS command
+or program and keeps the MS-DOS window hidden. The program takes one parameter,
+the command to be executed.
+
+To maintain control over the MS-DOS window, the program sends the command through
+a PIF file. To keep this window hidden, use the Windows PIF Editor to make the
+following changes to the PIF file you use (this example uses Foxrun.pif in the
+Visual FoxPro directory):
+
+1. Select the Close Window on Exit check box.
+
+2. Set Display Usage to Windowed.
+
+Code Sample
+-----------
+
+   *---------------- Run.prg -----------------------------
+   * Sample program to Execute an MS-DOS command and keep
+   * the MS-DOS window hidden.
+   *
+   * To use this function in FoxPro to create a new directory,
+   * use one of the following commands that illustrate two
+   * ways to call the function and achieve the same result:
+   *
+   *    = run("MD C:\VFP\TESTDIR")
+   *
+   *    DO run WITH "MD C:\VFP\TESTDIR"
+   *
+
+   FUNCTION run
+   PARAMETER doscmd
+
+   DECLARE INTEGER WinExec IN win32api AS run ;
+      STRING command, INTEGER param
+
+   * To have control over the visibility of the
+   * MS-DOS command, call it through a .pif file.
+   *
+   * IMPORTANT: (1) Be sure the "Close Window on Exit" check box in
+   * the PIF file is selected. (2) Be sure "Windowed" is the
+   * selected "Display Usage."
+
+   cmdstart = SYS(2004) + "FOXRUN.PIF /C "
+
+   * Now concatenate the two pieces of the command:
+
+   fullcmd = cmdstart + doscmd
+
+   retval = run(fullcmd, 0)
+
+   RETURN retval
+   *------- End of program ----------------------
+
+NOTE: For more information about hiding the FoxPro Run Command window in FoxPro
+for Windows, versions 2.x, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q131621 How to Hide the "FoxPro Run Command" Window
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbsample kbvfp kbvfp300 kbvfp300b kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : 3.00 3.00b
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

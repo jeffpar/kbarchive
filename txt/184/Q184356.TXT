@@ -1,0 +1,72 @@
+DOCUMENT:Q184356  10-MAR-1999  [homegame]
+TITLE   :Age of Empires: How to Use the Scenario Builder
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbtool kbui aoe kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use Scenario Builder to create new scenarios for
+Age of Empires.
+
+MORE INFORMATION
+================
+
+To create or edit a scenario, click Scenario Builder on the Age of Empires
+startup screen.
+
+You can use the tools in Scenario Builder to edit an existing scenario or create
+a new one. The following table lists the tools in Scenario Builder, and the
+number of the page in the Age of Empires manual on which each tool is described
+in detail:
+
+   Feature                                    Page
+   -----------------------------------------------
+
+   Customizing the Map                         49
+   Customizing the Terrain                     49
+   Customizing the Players                     50
+   Customizing the Units                       52
+   Customizing Diplomacy                       53
+   Customizing Global Victory Conditions       54
+   Customizing Individual Victory Conditions   56
+   Customizing Options                         59
+   Customizing Messages                        59
+   Customizing Cinematics                      61
+
+For additional information about how to use the Scenario Builder in Microsoft Age
+of Empires, please see Chapter Six: "Creating and Customizing Scenarios and
+Campaigns" in the Age of Empires manual.
+
+Additional query words: 1.00 aoe ror msgame kbfaq
+
+======================================================================
+Keywords          : kbtool kbui aoe kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

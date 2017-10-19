@@ -1,0 +1,67 @@
+DOCUMENT:Q189781  19-DEC-1999  [homemm]
+TITLE   :Black Screen When Starting Microsoft Dinosaurs for Macintosh
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for the Macintosh 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Dinosaurs for Macintosh, the program window and the
+Apple menu icon on the menu bar may be black.
+
+CAUSE
+=====
+
+This behavior can occur if the Gamma settings in the Monitors And Sound control
+panel are not configured properly.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click the Apple menu, point to Control Panels, and then click Monitors or
+   Monitors & Sound.
+
+2. In the Gamma section, click Uncorrected Gamma.
+
+3. Close the Monitors or Monitors & Sound window.
+
+MORE INFORMATION
+================
+
+This issue can occur on Macintosh computers using Radius Thunder-series video
+cards.
+
+Additional query words: 1.00 dinos multi multi-media media macmm mmtitles
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbDinosaurs100Mac
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

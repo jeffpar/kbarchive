@@ -1,0 +1,66 @@
+DOCUMENT:Q248478  09-NOV-2001  [homegame]
+TITLE   :Fighter Ace II: How to Enable or Disable 3D Acceleration
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to enable or disable 3D hardware acceleration in
+Microsoft Fighter Ace II.
+
+MORE INFORMATION
+================
+
+Enabling 3D hardware acceleration improves both the performance and the quality
+of graphics in Fighter Ace II. To enable 3D hardware acceleration in Fighter Ace
+II:
+
+1. Start Microsoft Fighter Ace II.
+
+2. Click the Settings tab.
+
+3. Under Display, click Direct 3D or Glide.
+
+If you experience display problems when you play Fighter Ace II, you may be able
+to work around these problems by disabling 3D hardware acceleration.To disable
+3D hardware acceleration in Fighter Ace II:
+
+1. Start Microsoft Fighter Ace II.
+
+2. Click the Settings tab.
+
+3. Under Display, click Software.
+
+Additional query words: 2.00 msgame faii msngz igz
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

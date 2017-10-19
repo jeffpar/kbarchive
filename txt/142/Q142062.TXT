@@ -1,0 +1,63 @@
+DOCUMENT:Q142062  02-OCT-1999  [crossnet]
+TITLE   :Unable to Run Win16 Sockets Application under Windows 3.1
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot run 16-bit Windows sockets application under Windows 3.1 when using
+the real mode TCP/IP stack provided by Microsoft Network Client for MS-DOS 3.0.
+The winsock application fails at startup with an error returned by WSASTARTUP()
+function. WSASYSNOTREADY or WSANOTINITIALIZED errors may be returned.
+
+CAUSE
+=====
+
+When you install the real mode TCP/IP stack , Network Client for MS-DOS Setup
+does not copy one of the files necessary for Windows Sockets support. The file
+is WSAHDAPP.EXE. This file is located in the Windows NT Server CD- ROM in
+uncompressed format in the \CLIENTS\MSCLIENT\NETSETUP directory and in a
+compressed format in the \CLIENTS\MSCLIENT\DISKS\DISK2 directory.
+
+RESOLUTION
+==========
+
+Manually copy WSAHDAPP.EXE from the CD-ROM to the directory where the Network
+Client for MS-DOS is installed (by default: "C:\NET"). For additional
+information on configuring Microsoft Network Client for MS-DOS 3.0 for sockets
+support, please see the following article in the Microsoft Knowledge Base:
+
+   Q128751 No "Advanced" button in Client TCP/IP Configuration Box
+
+Additional query words: 3.0
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : winnt:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

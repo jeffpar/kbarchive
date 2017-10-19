@@ -1,0 +1,134 @@
+DOCUMENT:Q254818  11-NOV-2000  [exchange]
+TITLE   :XCON: MTA Stops Processing E-Mail over X.400 Conn. w. Event 9156
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The message transfer agent (MTA) may stop delivering e-mail messages over an
+X.400 Connector. As a result, the X.400 queues of the MTA may back up.
+Eventually e-mail messages generate non-delivery reports (NDRs), which contain a
+reason code that indicates MTA congestion.
+
+This issue only occurs on Exchange Server computers that have a local time zone
+set to 30 minutes offset. For example, servers in Tehran, Iran are set for +
+3:30 Greenwich mean time, which is at a 30 minute offset from the full hour, as
+compared to servers in Nairobi, Kenya, which are set at + 3:00 Greenwich mean
+time, which is a complete full hour offset. The following Event IDs from the MTA
+may be logged in the application event log:
+
+   Event ID 4282
+   An interoperability error occurred. Interface protocol was violated. Error
+   code=8453, Control Block index=96 [POP4 MAIN BASE 1 18] (14)
+
+   Event ID 4284
+   A error occurred during connection/disconnection. Error code: 8511 [0 POP4
+   POP4 DOWN 6] (14)
+
+   Event ID 4287
+   An internal MTA error occurred. Contact Microsoft Technical Support. Error
+   code=8640 [64 POP4 POP4 DOWN 6] (14)
+
+   Event ID 290
+   A non-delivery report (reason code transfer-failure and diagnostic code
+   MTS-congestion) is being generated for message C=US;A= ;P=Microsoft;
+   L=Server1-000114132344Z-648. It was originally destined for
+   DN:/o=Microsoft/ou=LC/cn=Recipients/cn=mnadeem§ (recipient number 1) and was
+   to be redirected to DN:/o=Microsoft/ou=LC/cn=RECIPIENTS/ cn=mnadeem§C=US;
+   ;P=Microsoft;S=Nadeem;G=M;. [MTA DISP:RESULT 22 136] (12)
+
+   Event ID 9156
+   A resource limit has been reached while attempting to open an association.
+   There are no free control blocks available for network type 1. The configured
+   count is 20. [BASE IL MAIN BASE 1 171] (10)
+
+CAUSE
+=====
+
+In MTA build 5.5.2580.0, the MTA was changed to use coordinated universal time
+(UTC) rather than local time in a number of places, to avoid local time and
+daylight saving time issues. For additional information, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q225345 XCON: MTA Mishandles Deferred Delivery Messages After Daylight
+   Savings Time Changes
+
+The Timer Checking routine compared the last time that Timer control blocks (CBs)
+were checked by using system time. The Timer CB setup routine read the last
+check time by using local time. Generally this inconsistency did not cause a
+issue, because the MTA only looks for seconds differences, so any difference in
+hours was cancelled out.
+
+However, with certain times, for example, Greenwich mean time + 5:30, the system
+time and local time are out by 1800 seconds. This causes all of the timer CBs to
+think that they have been running for 30 minutes plus the real run time and they
+time out in 0 seconds.
+
+RESOLUTION
+==========
+
+To resolve this issue, system time must be used consistently when the MTA
+calculates the time differences. For additional information about the latest
+service pack for Exchange Server 5.5, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest the latest Exchange Server 5.5 Service
+   Pack
+
+
+WORKAROUND
+==========
+
+To work around this issue, use one of the following two methods:
+
+ - In the Schedule tab of the X.400 properties, change the connector schedule to
+   the "Remote initiated" setting, and then stop and restart the MTA.
+
+ - Set the system local time zone to a full hour offset, for example, if the
+   server is in Darwin, Australia, change the system local time from + 9:30
+   Greenwich mean time to + 9:00 Greenwich mean time. Then restart the server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 3. This problem was first corrected in Exchange Server
+5.5 Service Pack 4.
+
+
+
+Additional query words: timezone MTA 9156 congestion
+
+======================================================================
+Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : :5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

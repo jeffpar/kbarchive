@@ -1,0 +1,69 @@
+DOCUMENT:Q184484  05-AUG-2000  [iis]
+TITLE   :Err Msg: HTTP/1.0 403 Access Forbidden
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While browsing a site, you may receive the following error message:
+
+   HTTP/1.0 403 Access Forbidden
+
+CAUSE
+=====
+
+This error may be caused if either of the following conditions exist:
+
+ - The file designated as the default document for the site does not exist. This
+   default file for a Web site is typically Default.htm or Default.asp.
+
+ - The site has been configured to use to use a secure channel over the HTTPS
+   protocol, but the browser used HTTP as its protocol instead.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods:
+
+ - Use the Directories tab under the WWW Service Properties to set the correct
+   default document.
+
+ - Browse the server using the HTTPS protocol instead of HTTP.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: winsock ssl secure sockets layer akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis300
+Version           : winnt:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,60 @@
+DOCUMENT:Q111589  18-JUN-1999  [win16sdk]
+TITLE   :BUG: Brush Misaligned in PaintRgn()
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbSDKWin32
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a mapping mode other than MM_TEXT with the background mode set to
+TRANSPARENT, when calling PaintRgn() to paint a nonrectangular region with a
+hatched brush, the brush is misaligned.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows version 3.1.
+
+MORE INFORMATION
+================
+
+To work around this problem, call SetMapMode() to switch to the mapping mode
+MM_TEXT before calling PaintRgn().
+
+Additional query words: buglist3.10 3.10
+
+======================================================================
+Keywords          : kbSDKWin32 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

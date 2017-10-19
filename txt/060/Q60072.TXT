@@ -1,0 +1,75 @@
+DOCUMENT:Q60072  06-MAY-2001  [masm]
+TITLE   :FIX: Duplicate Struc Declaration and /Zi Hangs MASM 5.1, 5.1a
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:5.1,5.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.1, 5.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Assembler source file has a structure declared twice and the /Zi option
+is used, the Microsoft Macro Assembler versions 5.1 and 5.1a will go into an
+infinite loop.
+
+RESOLUTION
+==========
+
+Remove the duplicate declaration.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 5.1 and 5.1a. This
+problem was corrected in MASM version 6.0.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates this problem.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   junk STRUC     ; Declaration of structure 'junk'
+      dw ?
+   junk ENDS
+
+   junk STRUC     ; Duplicate declaration of 'junk'
+      dd ?
+   junk ENDS
+
+        END       ; End of Assembler file
+
+Additional query words: 5.10 5.10a buglist5.10 buglist5.10a fixlist6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM510a
+Version           : MS-DOS:5.1,5.1a
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

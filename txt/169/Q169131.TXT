@@ -1,0 +1,106 @@
+DOCUMENT:Q169131  25-FEB-2002  [winnt]
+TITLE   :Print Setup Dialog Box May Take a Long Time to Display
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbprint kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Applications that use the print setup common dialog take a long time, 40 to 60
+seconds, to display the print setup dialog box. This delay only occurs when the
+default printer name is longer than 32 characters.
+
+CAUSE
+=====
+
+This problem occurs when an application uses the common dialog (Comdlg32.dll)
+routine for print setup (PrintDlg) and specifies a truncated default print queue
+name. Because the truncated print queue name does not really exist on the target
+print server, Windows NT attempts to reach the print queue over every installed
+network redirector until they all timeout (usually 40 to 60 seconds). After all
+attempts have timed out in the redirectors, Comdlg32.dll assumes the print queue
+name was specified incorrectly and substitutes the default print queue port
+name, which is never truncated.
+
+MORE INFORMATION
+================
+
+PrintDlg can be called in two distinct modes:
+
+ - To retrieve the current default print queue information.
+
+ - To open the print settings dialog optionally specifying the default printer
+   name.
+
+If an application uses PrintDlg to retrieve the default print queue name and the
+default printer name is longer than 32 characters, the name will be truncated.
+
+For example, a 34 character print queue name such as
+
+   \\Red_dog\pq-mc0838-hplj4sib-3-081
+
+would be truncated to 31 characters such as
+
+   \\Red_dog\pq-mc0838-hplj4sib-3-
+
+Truncation of long print queue names occurs because the print queue name variable
+in Comdlg32.dll is limited to 32 characters in length. This limitation has it's
+roots in the Windows 3.x products where the maximum length for a device name was
+32 characters and is documented in the Win32 SDK (Software Development Kit).
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

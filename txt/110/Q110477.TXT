@@ -1,0 +1,94 @@
+DOCUMENT:Q110477  06-MAY-2001  [masm]
+TITLE   :BUG: L1103 Error Caused by Incorrectly Nested Segments
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.0,6.0a,6.0b,6.1,6.11,6.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b, 6.1, 6.1a, 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a simplified segment directive is used when two segments are already open,
+the resulting object file may generate the following error when it is linked:
+
+   fatal error L1103: attempt to access data outside segment bounds
+
+RESOLUTION
+==========
+
+The code shown below illustrates a case where this problem will occur. The
+comment lines show how to resolve the problem by closing one or more of the
+nested segments.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.x. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following code sample illustrates the problem. When the simplified directive
+.CODE is encountered in this sample, only one of the previously opened segments
+is closed and the error results. If either or both of the ENDS statements is
+placed in the code, the program will link correctly.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+   .MODEL large,c
+   .STACK
+    
+   myseg SEGMENT
+       mydata WORD 1
+   ;myseg ENDS   ; fixes the problem
+
+   myseg2 SEGMENT
+       data2 WORD 2
+
+   ;myseg2 ENDS  ; fixes the problem
+
+   .CODE
+       .STARTUP
+       ASSUME ds:myseg
+       mov dx, SEG mydata
+       mov ds, dx
+       mov ax, mydata
+       ASSUME ds:myseg2
+       mov dx, SEG mydata2
+       mov ds, dx
+       mov ax, mydata2
+       .EXIT
+
+Additional query words: 6.00 6.10 6.11 6.1x buglist6.10 buglist6.10a buglist6.11 buglist6.00 buglist6.00a buglist6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610 kbMASM611 kbMASM610a kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b,6.1,6.11,6.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

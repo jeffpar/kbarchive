@@ -1,0 +1,85 @@
+DOCUMENT:Q152355  15-DEC-1999  [foxpro]
+TITLE   :PRB: Error Installing EXE With "\" in Icon File Description
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Setup Wizard in Visual FoxPro allows the user to insert a "\" in the icon
+file description that will cause an error during installation of the executable.
+The error "Setup Error 279 object 243" is received shortly after the
+installation process begins followed by a message that indicates the
+installation did not succeed.
+
+CAUSE
+=====
+
+Setup Error 279 Object 243 is received in Win95 during setup. The user is then
+notified that setup was not successful and installation is exited.
+
+Other characters like "*", "<", ">", "?", and "|" will produce the same
+error. These are characters that are not allowed in file names under 8.3 DOS
+naming conventions.
+
+WORKAROUND
+==========
+
+The workaround is to run the Setup Wizard again and remove the "\" from the name
+of the icon file.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a project and put an icon file in the distribution directory.
+
+2. From the Tools menu, select Wizards, and then choose Setup.
+
+3. In Step 6 of the Setup Wizard, select the PM Item for the icon file and, in
+   the description, enter a "/" character. For the Command line, type:
+
+   " %s\name.exe " (without the quotation marks)
+
+   where "name" is the name of the executable.
+
+4. Select Finish, and run the Setup.exe file that is created.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

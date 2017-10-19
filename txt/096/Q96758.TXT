@@ -1,0 +1,77 @@
+DOCUMENT:Q96758  23-NOV-1999  [msdos]
+TITLE   :Using MS-DOS 6 with DNA Lanmarc Network Software
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to DNA Lanmarc, DNA Lanmarc Network software can be used with MS-DOS
+6.0 subject to the conditions described in this article.
+
+MORE INFORMATION
+================
+
+ - You must use DNA Lanmarc Network version 6.0 or later. If you use a version
+   earlier than 6.0, you receive the following error message:
+
+   Error #839 Incompatible Version
+
+ - You must disable the network drivers in the CONFIG.SYS file before you run
+   MS-DOS 6 Upgrade Setup. To do this, remark out the following lines.
+
+      rem device=\lanmarc\master.sys
+      rem device=\lanmarc\print.sys
+      rem device=\lanmarc\spool.sys
+
+   After you remark out these device drivers, restart the computer and run Setup.
+   If you plan to install DoubleSpace, do so before you remove the REM
+   statements and restart the computer to regain your network functionality.
+
+ - When you run DoubleSpace, CHKDSK, or Defragmenter, you must start your
+   computer without loading the previously mentioned DNA Lanmarc network
+   drivers. To do this, restart your computer and press the F8 function key when
+   "Starting MS-DOS..." is displayed. You can then step through your CONFIG.SYS
+   file, bypassing the network device drivers.
+
+   Some DoubleSpace features (such as LIST, CHKDSK, MOUNT, and UNMOUNT) do not
+   work correctly unless the network is disabled.
+
+   NOTE: DoubleSpace does not compress some of the DNA Lanmarc Network files.
+   These files remain on the uncompressed host drive.
+
+The DNA Lanmarc product included in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 6.00 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

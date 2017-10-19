@@ -1,0 +1,115 @@
+DOCUMENT:Q248058  03-JAN-2002  [iis]
+TITLE   :Error Message: HTTP 403.13 Forbidden: Client Certificate Revoked
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp40313 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to access an Internet resource, one of the following error
+messages may be displayed in the Web browser:
+
+   HTTP 403.13 Forbidden: Client certificate revoked
+
+   The page requires a valid client certificate
+
+CAUSE
+=====
+
+An HTTP 403.13 error message is returned when a resource that the user is
+attempting to access requires a valid client Secure Sockets Layer (SSL)
+certificate that the server recognizes. This client SSL certificate must be
+installed in the Web browser, because it is used for authenticating the user of
+that browser as a valid user of the resource.
+
+The error message can also occur if IIS is unable to contact the server that
+stores the Certificate Revocation List (CRL) when checking for revoked
+certificates. If a CRL server is unreachable, the certificates are presumed to
+be revoked.
+
+RESOLUTION
+==========
+
+In the Web browser that is displaying the error, install a certificate from a
+recognized Certificate Authority (CA). If a certificate from a valid CA is
+installed, then contact that CA to verify the certificate has not been revoked,
+and that their CRL store is online.
+
+If the certificate was created with Microsoft's Certificate Server, you will want
+to verify that the IIS server is able to directly see the Certificate Server.
+You can verify the path under the CRL Distribution Points and verify that the
+path is accessible from the IIS server. To do this, follow these steps:
+
+1. In the Certificates Snap-in, expand Certificates, and then expand Personal.
+
+2. Under the Certificates folder, double-click the certificate you are
+   verifying, and then click the Details tab.
+
+3. Verify the paths under the CRL Distribution Points.
+
+4. Check the paths by trying to access them through Windows Explorer, (from
+   Start, click Run or Internet Explorer).
+
+5. If the paths are not accessible from the IIS server, then it is necessary to
+   rectify the connection to allow the IIS server to connect to the Certificate
+   Server.
+
+MORE INFORMATION
+================
+
+For additional information on how to quickly install a certificate from a
+recognized Certificate Authority (CA), click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q297681 Error Message: This Security Certificate Was Issued by a Company that
+   You Have Not Chosen to Trust
+
+For more information on using Digital Certificates with Microsoft Internet
+Explorer, see the following Knowledge Base article:
+
+   Q195724 Description of Digital Certificates
+
+For more information on Certificate Revocation List (CRL) and IIS 5.0, see the
+following Knowledge Base article:
+
+   Q289749 Certificate Revocation Lists (CRL) and IIS 5.0: Common Questions
+
+The Security & Cryptography section of Microsoft's Online Web Workshop site
+provides detailed information about encryption and secure Internet
+communications.
+
+An online seminar entitled Fundamental Cryptography and Certificates on the
+Internet is available for viewing at Microsoft's Seminar Online site.
+
+Additional query words: IIS 5
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp40313 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

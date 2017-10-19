@@ -1,0 +1,59 @@
+DOCUMENT:Q130862  13-JUN-2001  [winmisc]
+TITLE   :Unable to Start Quick Recorder as an OLE Server
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Windows Sound System, you may receive the following error
+message when you try to start Quick Recorder:
+
+   Unable to start Quick Recorder as an OLE server. Run Windows Sound System
+   Setup again.
+
+CAUSE
+=====
+
+The REG.DAT file may not have been updated correctly, or may have been damaged.
+
+RESOLUTION
+==========
+
+To correct this error, either re-install the Windows Sound System soft- ware, or
+rebuild the default REG.DAT file. For information about how to rebuild the
+default REG.DAT file, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q80393 How to Rebuild a Default REG.DAT File
+
+Additional query words: 1.00 1.10 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

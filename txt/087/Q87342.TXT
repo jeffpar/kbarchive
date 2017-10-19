@@ -1,0 +1,68 @@
+DOCUMENT:Q87342  25-APR-2001  [win16sdk]
+TITLE   :PRB: Small Caps Text Unchanged in Windows Help
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a help file developed for version 3.1 of Microsoft Windows Help contains
+non-alphabetic characters formatted with the Small Caps character formatting,
+the Microsoft Windows Help application displays these characters at normal size.
+
+RESOLUTION
+==========
+
+To work around this limitation, change the case of the characters. The following
+macro for version 2.0 of Microsoft Word for Windows performs this conversion:
+
+      Sub MAIN
+      StartOfDocument
+      EditFindChar .Font = "", .Points = "", .Bold = - 1, \ 
+      .Italic = - 1, .Strikeout = - 1, .Hidden = - 1, .SmallCaps = 1, \ 
+      .AllCaps = 0, .Underline = - 1, .Color = - 1, .Position = "", \ 
+      .Spacing = ""
+      EditFind .Find = "", .WholeWord = 0, .MatchCase = 0, \ 
+      .Direction = 1, .Format = 1
+      While EditFindFound()
+           Size = FontSize()
+           Size = Size - 2
+           FontSize Size
+           SmallCaps 0
+           ChangeCase 1
+           EditFind .Find = "", .WholeWord = 0, .MatchCase = 0, \ 
+           .Direction = 1, .Format = 1
+      Wend
+      End Sub
+
+Additional query words: 3.10 HC31 HC31.EXE RTF no32bit /scaps
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

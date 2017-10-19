@@ -1,0 +1,91 @@
+DOCUMENT:Q131004  28-JUL-2001  [win95x]
+TITLE   :How to Enable Print Notification with NetWare Print Servers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Client for NetWare Networks (NWREDIR.VXD) to print to
+a NetWare print queue, print notification is not an option in the properties for
+the printer.
+
+CAUSE
+=====
+
+Windows 95 provides the following common Novell NetWare capture settings:
+
+ - Banner Page
+
+ - Form Feed
+
+ - Expand Tabs
+
+ - Form
+
+ - Timeout
+
+Capture settings that do not appear in the printer properties can be enabled
+using the NetWare CAPTURE command.
+
+RESOLUTION
+==========
+
+To receive notification when a print job is finished on a NetWare print queue,
+follow these steps:
+
+1. Use the following command in your user or system login script
+
+   capture L=<x> /server=<y> /queue=<z> /notify
+
+   where <x> is the LPT port, <y> is the NetWare server name, and
+   <z> is the NetWare print queue name you are using.
+
+   For more information about the CAPTURE command, please consult your NetWare
+   administrator, documentation, or dealer.
+
+2. Install the printer. Make sure that the "Print to the following port" setting
+   is set to the port you are using, not to the printe's UNC name.
+
+3. Run Winpopup.exe from the Windows directory. (Winpopup.exe is installed when
+   you install the Microsoft Client for Microsoft Networks or NetWare Networks.)
+
+After you follow these steps, the NetWare print server uses WinPopUp to send you
+print notifications.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

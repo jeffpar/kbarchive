@@ -1,0 +1,79 @@
+DOCUMENT:Q174821  08-MAR-1999  [exchange]
+TITLE   :XADM: TCP/IP Error Messages Following Install and Reboot
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft Exchange Server 5.0, the following errors may appear
+in the Application log following each reboot:
+
+   ID 11502
+   MSExchangeNNTP
+   Error
+   Initialization of the NNTP external interface failed with error -
+   2147467259.
+
+   ID 11303
+   MSExchangeNNTP
+   Error
+   An error occurred while binding NNTP to SSL in the GetHostName function.
+
+   ID 11504
+   MSExchange Pop3
+   Error
+   Initialization of the POP3 external interface failed with error -
+   2147467259.
+
+These errors will continue to appear, even if a clean install has been performed.
+
+CAUSE
+=====
+
+If TCP/IP has been loaded on to the server and then removed, the above errors
+will occur whenever Exchange Server 5.0 is loaded on to that server and then
+rebooted.
+
+RESOLUTION
+==========
+
+Reload TCP/IP on the server and the errors will no longer appear in the
+Application log.
+
+MORE INFORMATION
+================
+
+NNTP and POP3 are native to TCP/IP. Therefore, they are trying to call/perform
+Winsock32 functions. Because Winsock is not present (because TCP/IP was
+uninstalled) these errors occur.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

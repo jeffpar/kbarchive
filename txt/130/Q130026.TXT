@@ -1,0 +1,57 @@
+DOCUMENT:Q130026  08-NOV-2001  [homegame]
+TITLE   :Best of Windows Entertainment Pack: Listing of Games
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbother
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Best of Windows Entertainment Pack, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Best of Windows Entertainment Pack comprises 13 games from previously
+released Windows Entertainment Packs.
+
+The following games are included:
+
+ - From Windows Entertainment Pack 1: Golf, Taipei, and Tetris.
+
+ - From Windows Entertainment Pack 2: Free Cell, Pipe Dream, Rodent's Revenge,
+   and Tut's Tomb.
+
+ - From Windows Entertainment Pack 3: SkiFree, TetraVex, TriPeaks.
+
+ - From Windows Entertainment Pack 4: Chip's Challenge, Dr. Black Jack, and Jezz
+   Ball.
+
+Additional query words: 1.00 kbhowto wep bow contents content
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbWinEntPkSearch kbWinEntPkBest
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

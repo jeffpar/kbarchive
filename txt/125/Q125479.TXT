@@ -1,0 +1,51 @@
+DOCUMENT:Q125479  07-FEB-2002  [win95x]
+TITLE   :MONITOR2.INF Resolution Does Not Match Hardware Spec
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The MONITOR2.INF file lists details about monitors that are supported in Windows
+95. In some cases, the file lists a feature of a monitor that exceeds the
+manufacturer's specifications. For example, the MONITOR2.INF file lists a
+maximum resolution of 1280 x 1024 for the NEC 5FGe monitor. The NEC
+specification for this monitor lists a maximum resolution of 1024 x 768.
+
+Note that some hardware manufacturers list the maximum possible resolution for
+monitors only in non-interlaced mode. The MONITOR2.INF file lists the maximum
+possible resolution in interlaced or non-interlaced mode.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

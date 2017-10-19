@@ -1,0 +1,67 @@
+DOCUMENT:Q280096  01-JUN-2001  [exchange]
+TITLE   :XCCC: Unable to Connect to Exchange Server By Using POP3
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to Exchange Server by using Post Office Protocol 3
+(POP3), you may be prompted for logon credentials numerous times, and you may
+not be able to log on successfully.
+
+CAUSE
+=====
+
+This issue can occur if you have installed the Norton Anti-Virus 2000 program on
+the computer and the Popproxy.exe service is running.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable or remove Popproxy.exe.
+
+MORE INFORMATION
+================
+
+If you connect to port 110 by using telnet, you receive the following banner:
+
+   18:33:22 POP3: 18:33:23 [rx] +OK POP3 server ready
+
+   POP3: 18:33:23 [tx]
+
+However, this banner is not the Exchange Server POP3 banner.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty 
+Component         : POP3
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

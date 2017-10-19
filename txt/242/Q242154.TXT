@@ -1,0 +1,80 @@
+DOCUMENT:Q242154  10-AUG-2001  [winnt]
+TITLE   :Server Does Not Start with Stop c0000221 Error Message
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your server may not start and the following error message may be displayed:
+
+   Stop c0000221 {bad image checksum} The image oleaut32.dll is possibly corrupt
+   the header checksum does not match the computed checksum.
+
+NOTE: The error message may also reference a file other than Oleaut32.dll.
+
+CAUSE
+=====
+
+This behavior can occur if you install a program that replaces the Oleaut32.dll
+file in the Winnt\System32 folder.
+
+RESOLUTION
+==========
+
+To resolve this issue, repair the damaged file:
+
+1. Perform a parallel installation of the appropriate version of Windows NT 4.0
+   into a new folder (for example, C:\Winntfix).
+
+2. Start into the parallel installation and apply the same service pack that
+   exists on the original installation.
+
+3. After you apply the service pack, restart the computer and delete all copies
+   of the Oleaut32.dll file in the original installation, leaving only the new
+   version of that file located in the %WinDir%\System32 folder on the parallel
+   installation of Windows NT.
+
+4. Copy the %WinDir%\System32\Oleaut32.dll file to the %WinDir%\System32 folder
+   on the original installation.
+
+5. Restart into the original Windows NT installation. After the original
+   installation is repaired, delete the parallel folder and remove any
+   references to it from the Boot.ini file.
+
+NOTE: Be sure the parallel installation matches the exact operating system
+version number and service pack level of the damaged installation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

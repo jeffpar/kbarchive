@@ -1,0 +1,65 @@
+DOCUMENT:Q140085  12-JUN-2001  [homegame]
+TITLE   :Golf 2.0: Accessing Tips Included on CD-ROM Version
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+2.00
+WINDOWS
+kbusage kbmm
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Golf includes golf tips for the Torrey Pines and Firestone courses.
+Each hole includes a single tip.
+
+To access the tip, do one of the following:
+
+ - Click the tip button in the swing control window.
+
+   -or-
+
+ - Click the Action menu, and then click Tip.
+
+MORE INFORMATION
+================
+
+The Tip button and Action menu Tip option are unavailable with all golf courses
+except those included on the Golf compact disc.
+
+The tips may be presented by a male or female pro. The gender of the person
+giving the tip is random and not dependent on whether the golfer is male or
+female.
+
+Additional query words: 2.00 w_golf 2.0CD c-d disk cd cd-rom multimedia edition
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf200
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

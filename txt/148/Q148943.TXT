@@ -1,0 +1,74 @@
+DOCUMENT:Q148943  09-AUG-2001  [winnt]
+TITLE   :Removing Banyan Vines Client for NT Leaves Vines Protocol
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51 4.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Setup/uninstall from the Banyan VINES Client for NT distribution
+media, the VINES Workstation Service and the VINES program group are
+successfully removed. However, the VINES IP Protocol is not removed. Although
+the bindings for VINES IP are removed, the VINES IP Protocol is still displayed
+in Installed Network Software under Control Panel Network.
+
+CAUSE
+=====
+
+The Banyan Setup/uninstall utility does not remove the following key, nor its
+subkeys, from the registry:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Banyan
+
+
+WORKAROUND
+==========
+
+You can work around this problem with the following steps:
+
+1. Run Setup/uninstall from the VINES Client for NT distribution media.
+
+2. Restart the server.
+
+3. Open Control Panel Network and push the Close button. (This button is not
+   normally available when you first open Network; it will be available after
+   the first two steps have been taken).
+
+4. Delete the following key from the registry:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Banyan
+
+5. Restart the server.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

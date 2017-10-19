@@ -1,0 +1,67 @@
+DOCUMENT:Q119087  19-OCT-2000  [pcmail]
+TITLE   :PC DOS: Attachments Save to Root with Monitor 3.0b
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0b, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the memory-resident Monitor program (MONITOR.COM) version 3.0b,
+which is provided with the MS-DOS workstation of Microsoft Mail for PC Networks,
+to read and save an attachment using the Attachments-Save option, the attachment
+saves to the root directory instead of to the path you specify.
+
+This problem occurs only with Monitor version 3.0b; it does not occur with
+Monitor version 3.0.
+
+RESOLUTION
+==========
+
+To avoid this problem, use Monitor version 3.0.
+
+Monitor versions 3.0 and 3.0b have the following file sizes and dates:
+
+                         File Size    Date
+------------------------------------------
+Monitor version 3.0b     65692        9/92
+Monitor version 3.0      65756        6/92
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail for PC Networks,
+version 3.0b. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.00b DOS Monitor Attach*
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

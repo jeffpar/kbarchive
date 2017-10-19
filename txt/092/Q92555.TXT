@@ -1,0 +1,57 @@
+DOCUMENT:Q92555  25-SEP-1999  [win3x]
+TITLE   :WFWG: Null Password Bypasses Login
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows for Workgroups allows multiple users to use the same machine
+through the use of PassWord cache Lists (PWLs). Windows for Workgroups also
+supports null passwords (an empty password).
+
+MORE INFORMATION
+================
+
+If Windows for Workgroups has the Logon At Startup option selected in Control
+Panel, and the previous user has a PWL file with a null password, the Logon
+dialog box is bypassed at startup.
+
+To allow a different user to log on to the Windows for Workgroups machine, the
+previous user must be logged off. To do this, use the Logoff button in the
+Control Panel.
+
+Windows for Workgroups always provides the previous user's name at the logon
+prompt during Windows for Workgroups startup.
+
+Additional query words: 3.1 3.10 by-passed 3.11 nul startup
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

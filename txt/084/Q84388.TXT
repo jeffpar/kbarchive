@@ -1,0 +1,152 @@
+DOCUMENT:Q84388  21-SEP-1999  [win95x]
+TITLE   :Windows 3.1 Memory Limits
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+3.10 3.11
+
+WINDOWS
+
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a brief explanation and overview of memory allocation and
+limits in Microsoft Windows version 3.1. This article is not intended to be a
+exhaustive explanation of the subject; it is intended to be an overview only.
+
+This information applies to Microsoft Windows version 3.1 and may not apply to
+future versions of Windows.
+
+MORE INFORMATION
+================
+
+Microsoft Windows version 3.1, in both standard and 386 enhanced mode, allocates
+the memory that it uses from the XMS driver. The only exception occurs when you
+run Windows in standard mode because standard mode Windows can allocate memory
+from a Virtual Control Program Interface (VCPI) provider (server) or a DOS
+Protected Mode Interface (DPMI) provider. Please note that standard mode has
+this capability, but 386 enhanced mode does not.
+
+Memory Limits Imposed by Memory Managers
+----------------------------------------
+
+The XMS driver shipped with Windows 3.1 is HIMEM.SYS version 3.07, but any other
+XMS driver that conforms to the XMS 2.x or 3.x XMS provider specifications
+should work just as well. HIMEM.SYS XMS 2.x drivers shipped with Windows 3.0 and
+MS-DOS 5.0 impose a 16 MB memory limit and do not make memory above the 16 MB
+bus address available through XMS memory calls.
+
+If Windows 3.1 is run with an earlier HIMEM.SYS XMS driver from Windows 3.0 or
+MS-DOS 5.0, then Windows 3.1 cannot use memory above 16 MB. You must upgrade the
+XMS driver to the new one shipped with Windows 3.1 to eliminate this 16 MB
+barrier.
+
+
+Windows 3.0 does not support memory above 16 MB limitation in both standard and
+enhanced mode, and relies on the XMS driver to enforce this limit. This 16 MB
+limit does not apply to Windows 3.1.
+
+Memory Limits Imposed by Windows 3.1
+------------------------------------
+
+The memory limit for Windows 3.1 has been reported as 512 MB. This limit, while
+technically correct, does need some qualification. This limit applies only to
+Windows running in standard mode. The limit for 386 enhanced mode is 256 MB.
+This number is a sum of both physical and virtual memory. The stated 512 MB
+limit of standard mode Windows is only theoretically possible and is not
+practical. In practice, the limit on standard mode Windows is the same as the
+386 enhanced mode limit of 256 MB. This information does not apply to computers
+using a 80286 processor. This processor is physically limited to accessing only
+16 MB.
+
+Windows 3.1 does not use the extended XMS 3.0 capabilities of an XMS 3.0 driver.
+This does not place any limit on the ability of Windows to allocate available
+XMS memory. The only additional capability provided by an XMS 3.0 memory manager
+is the ability to allocate and manipulate a single XMS memory block larger than
+64 MB. This does NOT place a 64 MB limit on operating systems or applications
+that use XMS 2.x calls to allocate memory from an XMS 3.0 driver. The result is,
+an XMS 2.x allocator has to allocate multiple blocks of XMS memory, each not
+greater than 64 MB, to access all of the memory on machines with more than 64 MB
+of memory. Windows does this in both standard and 386 enhanced mode.
+
+The reason the 512 MB limit for standard mode is not practical can best be
+explained by looking at where this number actually comes from. On the 286 and
+386 CPUs there is a system object that is called the local descriptor table
+(LDT). This data structure is used to set up the addressing of almost all of the
+Windows usable memory in the system. This table has room for 8096 descriptors.
+Each of these descriptors, in turn, can address up to 64K of memory. The 512 MB
+value is determined by multiplying the size of the number of possible
+descriptors by each descriptors maximum size.
+
+   8096k * 64K = 512 MB
+
+To reach 512 MB, every descriptor in the LDT has to be the maximum possible size
+of 64K. In a typical Windows system, the average descriptor size is much
+smaller. The average descriptor size is probably 32K. This yields a limit half
+as big: 256 MB.
+
+The 256 MB limit of 386 enhanced mode Windows 3.1 is a limit of total physical
+memory and total virtual memory. Normally the total amount of virtual memory is
+four times as much as the total amount of physical memory that Windows can
+access. Because both of these items are limited to 256 MB, the following is
+generally true:
+
+Total Physical      Usual Virtual     Actual Virtual
+Memory in MB        Memory in MB      Memory in MB
+--------------      -------------     --------------
+
+       4                  16                16
+       8                  32                32
+      16                  64                64
+      32                 128               128
+      64                 256               256
+     128                 512               256
+     256                1024               256
+
+The actual virtual memory size stays at 256 MB once you reach 64 MB of total
+physical memory, and never gets any bigger.
+
+Note that in the preceding paragraph, physical memory is referred to as "total
+physical memory." This is because this 256 MB limit is purely a limit on the
+total AMOUNT of physical memory. This limit has nothing to do with the location
+on the machine bus of the memory (the memory's address). This distinction is
+important because on many "large memory" machines, the physical memory is not
+all in one contiguous block.
+
+This means that for Windows 3.1 running in standard mode, the limit for the
+maximum usable physical memory address is 4096 MB; the limit for 386 enhanced
+mode is 2044 MB.
+
+Additional query words: 3.10 3.11 HIMEM 64Mb 512Mb 256Mb AST power premium eisa ram
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

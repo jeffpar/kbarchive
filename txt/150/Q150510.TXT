@@ -1,0 +1,50 @@
+DOCUMENT:Q150510  16-DEC-1999  [homemm]
+TITLE   :Pregnancy and Child Care: Find Highlight is Inconsistent
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Find By Word feature, the queried words are may not highlighted
+consistently in the retrieved article.
+
+MORE INFORMATION
+================
+
+When you enter multiple words, there is an implicit logical AND between them.
+Therefore, if the overview or article does not contain both word A AND word B,
+neither word is highlighted.
+
+
+Additional query words: preview multi media multimedia multi-media childcare mmtitles kbmm msnet
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

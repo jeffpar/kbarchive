@@ -1,0 +1,64 @@
+DOCUMENT:Q92374  27-OCT-1999  [pcmail]
+TITLE   :PC Win: Err Msg: That User's Mailbox Is Corrupt...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the postoffice administrator deletes a mailbox between the time you log in to
+Mail and the time you send mail to that mailbox, you receive the following error
+message:
+
+   That user's mailbox is corrupt. Please contact your system administrator.
+
+CAUSE
+=====
+
+Microsoft Mail cannot find the mailbox so it marks it as corrupted. Mail should
+instead give you the following error:
+
+   There is no user with that name on your Mail server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.0 of Microsoft Mail
+for Windows. This problem was corrected in version 3.0b.
+
+RESOLUTION
+==========
+
+Exit from Microsoft Mail for Windows and restart it.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

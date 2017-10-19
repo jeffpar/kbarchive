@@ -1,0 +1,51 @@
+DOCUMENT:Q216760  08-MAY-1999  [iis]
+TITLE   :IIS: FTP Users Will Still Be Prompted for Credentials Even From
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When users connect to an IIS FTP server from a restricted IP address, they will
+still be prompted for credentials.
+For example, you have an FTP site at 192.168.1.1 with IP Address and Domain
+Restrictions, by default, set to denied access. If a user from a denied IP
+connects to your FTP server, he will be prompted for credentials. Once the user
+logs into the server, he will receive an access denied message from the server.
+
+CAUSE
+=====
+
+Once an FTP connection is established, a client/server handshake must take place
+before anything else can be done. Part of this handshake is obtaining the
+username and password to be used for the connection. Once the necessary
+handshake is finished, then the IP restrictions are checked.
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : winnt:3.0,4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

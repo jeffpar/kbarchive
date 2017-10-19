@@ -1,0 +1,53 @@
+DOCUMENT:Q68910  30-JUL-2001  [homegame]
+TITLE   :ASD: Setting Scenery Memory Allocations
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Memory allocations for static and dynamic scenery may be set in the Setup
+Configuration menu. Requesting a higher memory allocation allows individual
+scenery files to contain more scenery.
+
+To change the memory allocations for a scenery file, do the following:
+
+1. From the Mode menu, select J, Scenery Design.
+
+2. From the Scenery Designer menu, choose 0, Setup Configuration.
+
+3. Select A for Static Scenery Memory Allocation or B for Dynamic Scenery Memory
+   Allocation, and enter the number desired. Note that 61440 (60K) is the
+   maximum value.
+
+4. Press ENTER, S to save the configuration.
+
+5. Exit Flight Simulator and restart it to have the changes take effect.
+
+Requesting more memory for scenery requires additional free RAM. If you have
+accidentally requested too much memory, you may return to the default values by
+deleting the file CONFIG.AD1.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

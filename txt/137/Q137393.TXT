@@ -1,0 +1,260 @@
+DOCUMENT:Q137393  01-FEB-2002  [pcmail]
+TITLE   :PC Gen: Useful Novell Utilities For Administrators
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you maintain or troubleshoot a Microsoft Mail for PC Networks postoffice in
+a Novell NetWare environment, many Novell utilities can be useful, such as the
+following:
+
+    CHKVOL.EXE  - Displays statistics on the current volume.
+
+       FLAG.EXE  - Displays and allows modification to NetWare file
+                   attributes.
+
+    MONITOR.NLM  - Views open files and releases locked files (launched
+                   from the server console only).
+
+       NDIR.EXE  - Displays the size, date, time, and owner of each file in
+                   a NetWare directory.
+
+      PURGE.EXE  - Permanently deletes previously erased files in a
+                   NetWare directory.
+
+     RIGHTS.EXE  - Displays a user's access rights in the current
+                   directory.
+
+    SALVAGE.EXE  - Restores deleted files that are not yet purged.
+
+     SYSCON.EXE  - For network administration (user accounts, server
+                   error log, file server information, etc.).
+
+   USERLIST.EXE  - Displays a list of all users currently logged onto the
+                   server.
+
+NOTE: For best results, make sure you are logged onto the Novell server as
+SUPERVISOR or equivalent before you run any of the above utilities.
+
+MORE INFORMATION
+================
+
+The following is detailed information about the utilities listed above:
+
+CHKVOL.EXE
+----------
+
+Usage: CHKVOL
+
+Chkvol will report the following information on the current volume:
+
+ - Total volume space
+
+ - Space in use by files
+
+ - Space in use by deleted files
+
+ - Space available from deleted files
+
+ - Space remaining on volume
+
+ - Space available to <currentuser>
+
+Because mail executables do not consider "Space in use by deleted files" as
+actual free space, a purge may be needed (see PURGE.EXE below). To determine the
+actual amount of free space a mail executable sees, use the following formula:
+
+   (Space Remaining on Volume) minus (Space in Use by Deleted Files) equals
+   (Actual Free Space)
+
+This utility is also useful in determining the actual space available to the user
+that is currently logged on. This may or may not be less than the Space
+Remaining on Volume figure. See the SYSCON section below about volume/disk
+restrictions for more information.
+
+FLAG.EXE
+--------
+
+Usage: FLAG [path [option | [+|-] attribute(s) ] [SUB]]
+Example: FLAG M:\MAILDATA\*.* RW SUB
+
+This will change all file attributes under MAILDATA and subdirectories to
+Read/Write. For high-traffic postoffices, you can also add the (S)hareable
+attribute to KEY files and GLB files (with the exception of CONTROL.GLB,
+TID.GLB, FLAG.GLB, and MASTER.GLB).
+
+MONITOR.NLM
+-----------
+
+Usage: (from the file server console only) LOAD MONITOR. This is a menu driven
+utility useful for clearing locked files from stranded connections. It also
+provides viewing of file open/lock activity, file server resource utilization
+stats, connections, and disk information.
+
+NOTE: In order to run this utility from a workstation, RSPX.NLM and REMOTE.NLM
+must be loaded on the file server, and Remote Console (RCONSOLE.EXE) must be
+launched at the workstation. RCONSOLE provides a direct console connection to
+the server so that it is possible to run MONITOR from a desktop machine.
+
+When a workstation running a mail executable crashes, MAILDATA files may be left
+open. Use MONITOR to close the files safely, and clear the connection.
+
+1. From the Available Options menu, choose Connection Information.
+
+2. Select the logon ID whose machine has crashed, then press DELETE.
+
+3. Answer Yes to the Clear Connection? prompt.
+
+NDIR.EXE
+--------
+
+Usage: NDIR [path] [/option...]
+Example: NDIR M:\MAILDATA\*.* /OW LE " " /SUB
+
+Displays all ownerless files under MAILDATA and subdirectories along with the
+file date/time stamp and size.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q100511 Assigning Owners to Files in NetWare 2.x and 3.x
+
+
+PURGE.EXE
+---------
+
+Usage: PURGE [filename | wildcard] [/ALL | /A]
+Example: PURGE M:\MAILDATA\*.* /ALL
+
+Purges all deleted MAILDATA files from the volume. Because mail executables can
+not interpret free space from the space used by deleted files, a periodic purge
+may be necessary.
+
+RIGHTS.EXE
+----------
+
+Usage: RIGHTS [path]
+Example: RIGHTS M:\MAILDATA
+
+Rights can contain any of the following: [SRWCEMFA]
+
+      All | Supervisor | Read | Write | Create | Erase
+          | Modify |File scan |Access Control
+
+Displays the current logon ID's effective rights for the MAILDATA directory.
+
+Usually these rights are inherited down into all sub-directories as well, unless
+otherwise specified in Trustee Directory Assignments for that user. It is useful
+for checking a mail client or a mail message transfer agent's (MTAs) user rights
+to MAILDATA.
+
+SALVAGE.EXE
+-----------
+
+Usage: SALVAGE
+This is a menu driven utility.
+
+SALVAGE is useful for quickly restoring a recently deleted file. To restore a
+deleted MAILDATA file, do the following:
+
+1. Run SALVAGE in the same volume where MAILDATA resides.
+
+2. Change the current directory to the MAILDATA directory that contained the
+   deleted file.
+
+3. Select to View\Recover Deleted files, then set the view criteria for *.*
+
+4. Search for the filename you wish to restore; highlight it, and press ENTER.
+
+NOTE: If you restore a previous version over an existing file, you will be
+prompted to rename the file you are restoring.
+
+SYSCON.EXE
+----------
+
+Usage: SYSCON
+This is a menu driven utility.
+
+SYSCON (short for SYStem CONfiguration) performs most of the system management
+functions. Some of the pertinent options are:
+
+File Server Information:
+
+   Allows the viewing of the NetWare versions, revision numbers and number of
+   licenses for any on-line Novell server on the network.
+
+Supervisor Options:
+
+   Contains several functions, including view/edit system AUTOEXEC file (to see
+   which modules are being loaded on the server) and view the file server's
+   error log.
+
+User Information: Contains all users accounts and associated information, such
+as
+
+ - Account restrictions (when does the account and/or password expire?).
+
+ - Groups Belonged to (default = EVERYONE).
+
+ - Other Information (last login date/time, disk space in use).
+
+ - Security Equivalencies (either to a group or another user).
+
+ - Station Restrictions (limits the user to logging on from only the specified
+   MAC address or addresses).
+
+ - Time Restrictions (time interval specified for allowed logins).
+
+ - Trustee Directory Assignments (access privileges to specified directories).
+
+ - Volume/Disk Restrictions (limits the amount of disk space the user can
+   actually fill on a volume).
+
+USERLIST.EXE
+------------
+
+Usage: USERLIST [fileserver/][name] [/Address | /Object] [Continuous]
+Example: USERLIST MAILSRV/ /A
+
+Displays all currently logged on users on the Novell file server MAILSRV, as well
+as each node address and login time. You must be currently logged on or attached
+to the server you wish to run USERLIST on. If you do not specify a server name,
+USERLIST will default to the server you are currently logged on to and running
+the USERLIST utility from.
+
+Novell is a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding this product's performance or reliability.
+
+Additional query words: 3.20 3.20a 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350
+Version           : :3.2,3.2a,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

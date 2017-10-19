@@ -1,0 +1,112 @@
+DOCUMENT:Q163305  25-JUL-2001  [word97]
+TITLE   :WD97: Not Enough Memory with Effect Preview in Photo Editor
+PRODUCT :Word 97 for Windows
+PROD/VER::97
+OPER/SYS:
+KEYWORDS:kbgraphic kbhw kbinterop kbdta word97 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - Photo Editor 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Photo Editor, if you choose any of the effects that has a preview,
+the computer may stop responding (hang), or one of the following error messages
+may appear in the preview window:
+
+   Not enough memory for effect preview
+
+-or-
+
+   General Protection Fault
+
+-or-
+
+   Access Violation
+
+-or-
+
+   Divide by Zero
+
+CAUSE
+=====
+
+This error may occur when both of the following conditions are true:
+
+ - You chose one of the following special effects from the Effects menu:
+
+   Chalk and Charcoal
+   Emboss
+   Graphic Pen
+   Notepaper
+   Watercolor
+   Stained Glass
+   Stamp
+   Texturizer
+
+ - You are using any of the following video cards:
+
+   Matrox
+   Video 9
+
+
+RESOLUTION
+==========
+
+To correct this problem, contact the video card manufacturer and obtain an
+updated driver for that card.
+
+For information about how to contact third-party vendors, click the appropriate
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Change the video driver to standard VGA or super VGA.:
+
+Method 2: Change the resolution or the number of display colors.:
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: blank Imager
+
+======================================================================
+Keywords          : kbgraphic kbhw kbinterop kbdta word97 kbHardware 
+Technology        : kbWordSearch kbHomeProdSearch kbPowerPtSearch kbWord97 kbWord97Search kbZNotKeyword2 kbPowerPt97Search kbPhotoEd97
+Version           : :97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

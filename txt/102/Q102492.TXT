@@ -1,0 +1,61 @@
+DOCUMENT:Q102492  12-NOV-1999  [pcmail]
+TITLE   :PC Ext: Debug Message Displayed Twice When Using -Q1 Option
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In versions 3.0 and 3.2 of Microsoft Mail for PC Networks, if you use the
+External Mail program (EXTERNAL.EXE) with the -Q1 command-line option, External
+displays two identical messages for each postoffice when it processes mail. The
+messages appear as follows:
+
+   Delivering new mail to NETWORK/POSTOFFICE
+   Delivering new mail to NETWORK/POSTOFFICE
+
+CAUSE
+=====
+
+The double message is given because External is attempting to deliver mail from
+the INQUEUE.MBG and INQUEUE3.MBG files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0 and 3.2 of
+Microsoft Mail for PC Networks. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 3.00 3.20 duplicate
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

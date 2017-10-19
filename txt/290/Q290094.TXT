@@ -1,0 +1,65 @@
+DOCUMENT:Q290094  10-MAY-2001  [msnetwork]
+TITLE   :How To Migrate To The Newest Version of MSN Explorer
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MSN Explorer user is not using the latest version.
+
+MORE INFORMATION
+================
+
+To update a user to the latest version of MSN Explorer:
+
+1. Log on to MSN Explorer.
+
+2. In the upper right corner, click More Choices.
+
+3. Click About MSN Explorer.
+
+4. In the dialog box, click More Info.
+
+5. Scroll to the top of the web page that appears. Click the Update MSN Explorer
+   Now link that is located just above Update History.
+
+6. Click the Update Now button.
+
+MSN Explorer will now download the newest update information. Once the download
+is complete, Explorer will shut down and then restart. You are now running the
+latest version of MSN Explorer.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

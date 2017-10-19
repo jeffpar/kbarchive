@@ -1,0 +1,82 @@
+DOCUMENT:Q199994  11-JUN-2002  [sms]
+TITLE   :SMS: Removing a Server as a Distribution Server Leaves Reg Value
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbServer kbsms120
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Registry values for package locations on the site server still reflect a
+distribution server that has been removed from the SMS hierarchy. As a result, a
+job that sends this package to a client may update a client's .ins file and
+contain the "removed" distribution server as a source for the package.
+
+If you review the .ins file with Pcmdump.exe, the servers section will contain
+the "removed" server.
+
+Please see the References section for similar KB articles.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+WORKAROUND
+==========
+
+To resolve this problem, cancel any active jobs for this package. Open the
+registry on the site server and go to:
+
+   Hkey_Local_Machine\Software\Microsoft\SMS\Components\ SMS_Despooler\Transfer
+   Packages.
+
+NOTE: The above registry location has been line-wrapped for readability.
+
+Go to the W_packageid subkey. Under it are keys reflecting the distribution
+servers that have an image of the package. Delete the subkey for the
+distribution server that has been removed from the hierarchy.
+
+Create a new job for this package and send it. The .ins files for the clients
+will no longer reflect the "removed" server.
+
+MORE INFORMATION
+================
+
+For additional information about this topic, please see the following articles
+in the Microsoft Knowledge Base:
+
+   Q168569 SMS: Remove Package from Server Leaves Registry Key
+   Q147616 Current History Registry Key Is Not Updated Properly
+
+Additional query words: prodsms ins server distribution removed
+
+======================================================================
+Keywords          : kbServer kbsms120 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

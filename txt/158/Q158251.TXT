@@ -1,0 +1,82 @@
+DOCUMENT:Q158251  11-DEC-1999  [foxpro]
+TITLE   :BUG: Incorrect Group Header Information in Report
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Group header information prints incorrectly when all of the following are true:
+
+ - The group is set to start on a new page.
+
+ - The group header is set to print on every page.
+
+ - The group header and footer are the only bands that print on the page (no
+   detail printed).
+
+In this case, the group header information printed on the current page of the
+group is actually the header information for the next record.
+
+WORKAROUND
+==========
+
+For more information about one method of solving this problem, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q135617 BUG: Group Header Information Prints Incorrectly
+
+The above method works in some cases, but may not work correctly with a Print
+Preview. In the case of a Print Preview, follow these steps:
+
+1. Move field(s) from the Group Header to Page Header. Double-click the field
+   and change the following Print When options:
+
+         Set the Print Repeated Values to No.
+         In Also Print section,
+            check When This Group Changes
+            check When Detail Overflow to New Page/Column
+
+2. Field(s) in the Group Footer remains the same.
+
+3. Make sure that Group Properties (in Data Grouping) are set to "Start Each
+   Group on a New Page" option.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: VFoxWin kbdse
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,71 @@
+DOCUMENT:Q177414  09-AUG-2001  [winnt]
+TITLE   :Using Incorrect DNS Forwarders Cause High Processor Usage
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Microsoft Windows NT Domain Name Service (DNS) server may experience times
+when the processor usage climbs as high as 90 percent. Your computer may also
+appear extremely unresponsive while the processor usage remains at this high
+level.
+
+CAUSE
+=====
+
+Your DNS server has its own IP address configured as a forwarder.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following steps:
+
+1. From DNS Manager, click your DNS server in the Server List.
+
+2. Click Properties on the DNS menu.
+
+3. Click the Forwarders tab, select your DNS server's IP address, and click
+   Remove.
+
+4. Click OK.
+
+MORE INFORMATION
+================
+
+When you set up Microsoft DNS server, you may desire to use Forwarders. When
+configuring this setting, it is not necessary to include your own IP address in
+the list of forwarders. This setting is used as the next place to look when the
+DNS server does not have the name or address in its cache. By including your own
+IP address in the forwarders setting, you are creating a resolver loop where the
+computer keeps trying to forward queries to itself.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

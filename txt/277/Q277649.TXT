@@ -1,0 +1,76 @@
+DOCUMENT:Q277649  13-JUN-2001  [homegame]
+TITLE   :DirectX: Screen Flickers When You Start a Program
+PRODUCT :Microsoft Home Games
+PROD/VER::2000,95
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows 98 Second Edition 
+ - the operating system: Microsoft Windows Millennium Edition 
+ - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a program that uses Microsoft DirectX 8.0, you may experience the
+following symptoms:
+
+ - Your screen may flicker.
+
+ - Programs that are running on your computer may briefly stop responding.
+
+CAUSE
+=====
+
+This behavior occurs because DirectDraw tests the capabilities of your video
+adapter the first time that you start a program that uses DirectX 8.0 on your
+computer.
+
+The symptoms occur while DirectDraw tests different display modes.
+
+MORE INFORMATION
+================
+
+DirectX 8.0 cycles through several display modes to test the capabilities of
+your video adapter. The results of the video tests are written to the following
+file:
+
+   D3d8caps.dat
+
+If you delete the D3d8caps.dat file or change the configuration of your video
+adapter, the same symptoms occur the next time that you start a program that
+uses DirectX 8.0.
+
+NOTE: These symptoms also occur if you test DirectDraw by using the DirectX
+Diagnostic Tool (Dxdiag.exe).
+
+Additional query words: msgame direct-x dx8 dxdiag flash blink winme
+
+======================================================================
+Keywords          : kbdisplay kbimu 
+Technology        : kbOSWin2000 kbOSWin98 kbOSWin95 kbOSWinME kbOSWin98SE kbOSWinSearch
+Version           : :2000,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

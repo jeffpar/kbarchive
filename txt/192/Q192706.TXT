@@ -1,0 +1,108 @@
+DOCUMENT:Q192706  13-AUG-2001  [word97]
+TITLE   :WD97: Year 2000 Date Parsing Improvements in SR-2
+PRODUCT :Word 97 for Windows
+PROD/VER::Service Release 2
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows, version Service Release 2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Office 97 Service Release 2 (SR-2) improves the way Word handles
+dates. Specifically, SR-2 makes it easier to do the following in Word:
+
+ - Work with dates that use single digits (for example 1/1/0)
+
+ - Sort dates that use 00 for the year
+
+ - Use dates in a document saved in RTF format
+
+MORE INFORMATION
+================
+
+Working with Dates That Use Single Digits
+-----------------------------------------
+
+If you set the Regional Settings in Control Panel to a non-US date format, such
+as Year/Month/Day, Microsoft Word 97 SR-2 will now correctly parse single digit
+years around the year 2000.
+
+
+Sorting Dates That Use 00 for the Year
+--------------------------------------
+
+If you set the Regional Settings in Control Panel to a non-US date format, such
+as Year/Month/Day, Microsoft Word 97 SR-2 will now correctly parse dates that
+have a zero for the month or day. Pre-SR-2 versions of Microsoft Word would give
+erroneous results in this situation.
+
+
+Using Dates in a Document Saved in RTF Format
+---------------------------------------------
+
+If you set the Regional Settings in Control Panel to a short date format, such as
+mm/dd/yy, and then save a document containing a 2-digit date value, such as
+"11/15/01," as Rich text Format (RTF), Microsoft Word 97 SR-2 will write out
+custom date properties as 4 digits (instead of two) in the RTF file. Pre-SR-2
+versions of Microsoft Word would write custom date properties out in RTF as
+"11/15/01." SR-2 correctly writes it out as "11/15/2001."
+
+When Is Date Parsing Used?
+--------------------------
+
+Microsoft Word parses dates whenever it performs operations on dates. Examples
+include:
+
+ - Sorting dates in a table.
+
+ - Applying a date formatting picture switch to merge fields, quote fields, or
+   input to a form field.
+
+ - Linking bookmarked text to a date type custom property.
+
+ - String to date operations in WordBasic.
+
+REFERENCES
+==========
+
+For more information about the year 2000, please see the following articles in
+the Microsoft Knowledge Base:
+
+   Q171286 WD: Find File Fails with Dates Beyond Year 2000
+
+   Q110995 WD6X: How to Set a Default DATE Field Format in Word 6.0
+
+   Q85557 File Manager Shows Garbled Date for Year 2000 or Later
+
+
+Additional query words: year 2000
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2 kbWord97SR2
+Version           : :Service Release 2
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

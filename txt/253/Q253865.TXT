@@ -1,0 +1,55 @@
+DOCUMENT:Q253865  06-AUG-2002  [winnt]
+TITLE   :Java Log Is Not Created on Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Internet Explorer has an advanced option to create a log file for
+logging Java errors that are encountered by Internet Explorer when the browser
+visits a Java-enabled Web site. This creates a log that is stored in the
+%SystemRoot%\Java folder. However, when you are using Internet Explorer on
+Terminal Server and you enable this option, the log file is not created.
+
+RESOLUTION
+==========
+
+When you enable this advanced option in Internet Explorer while you are using
+Terminal Server, the creation of the Java folder is mapped to the user's space,
+or to the %SytemRoot%\Profiles\<Username>\Windows folder instead of the
+%SystemRoot% folder. To resolve this issue, simply create the Java folder in the
+%SytemRoot%\Profiles\<Username>\Windows folder.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

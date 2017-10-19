@@ -1,0 +1,56 @@
+DOCUMENT:Q107085  15-NOV-1999  [pcmail]
+TITLE   :PROFS: Using CMS Peek Command to Troubleshoot
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2,3.3,3.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, versions 3.2, 3.3, 3.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When troubleshooting with Microsoft Mail Gateway to PROFS and OfficeVision you
+can halt the virtual machine (which makes up the host components) and examine it
+for unprocessed reader files that may hold a clue to the problem. Here is how to
+use the PEEK command to examine these files for format integrity:
+
+1. List the reader by typing:
+
+   " Q RDR ALL" (without the quotation marks)
+
+   This lists the items in the reader and the associated file number given each
+   file and print job routed through the VM.
+
+2. Use the file number and the PEEK command to view the file:
+
+   PEEK file ###
+
+
+Additional query words: host reader looping $$special$$ 3.20 3.2 3.30 3.3 3.40 3.4
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320 kbMailGateIBMPROFS330 kbMailGateIBMPROFS340
+Version           : :3.2,3.3,3.4
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

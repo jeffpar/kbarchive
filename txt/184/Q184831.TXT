@@ -1,0 +1,85 @@
+DOCUMENT:Q184831  11-JUN-2002  [winnt]
+TITLE   :How to Disable the "Logon Using Dial-Up Networking" Option
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IMPORTANT: This article contains information about editing the registry. Before
+you edit the registry, make sure you understand how to restore it if a problem
+occurs. For information about how to do this, view the "Restoring the Registry"
+Help topic in Regedit.exe or the "Restoring a Registry Key" Help topic in
+Regedt32.exe.
+
+This article explains how to disable the checkbox for "Logon Using Dial-Up
+Networking" at the logon prompt on your Windows NT computer. This option
+normally is available on the logon dialog box and allows you to dial into your
+logon server for authentication of your user account.
+
+MORE INFORMATION
+================
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+To configure this option so that it is unavailable, use the following steps to
+edit the registry:
+
+1. Start Registry Editor (Regedt32.exe), and select the following subkey:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion
+   \Winlogon
+
+   NOTE: The above registry key is one path; it has been wrapped for readability.
+
+2. From the Edit menu, click Add Value, and type the following information:
+
+   Value Name: RASDisable
+   Data Type: REG_SZ
+   Value: 1
+
+If you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+NOTE: After you add this value, "Logon Using Dial-up Networking" will be
+permanently unavailable.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

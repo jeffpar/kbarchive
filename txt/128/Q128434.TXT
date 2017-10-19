@@ -1,0 +1,57 @@
+DOCUMENT:Q128434  05-NOV-1999  [pcmail]
+TITLE   :SMTP: Err Msg: Error SMTPGet 52 a File Open Error Has Occurred
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start up Microsoft Mail Gateway to SMTP, the following error appears:
+
+   Error SMTPGet 52 a file open error has occurred
+   NC_Incoming system error
+
+To troubleshoot this error message:
+
+1. Ensure you can either ping the server or and telnet to port 25.
+
+2. Check for open files on the gateway machine and the postoffice server
+   (especially in the MAI and ATT subdirectories).
+
+3. Delete any SMTPXXX.XXX temporary files in the SMTP directory.
+
+4. Delete XXXXXXXX.API files in the SMTP directory.
+
+5. Look in Administrator queue and return any mail for a gateway.
+
+Additional query words: tshoot troubleshooting tshooting t-shoot Admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

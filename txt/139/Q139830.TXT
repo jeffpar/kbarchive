@@ -1,0 +1,63 @@
+DOCUMENT:Q139830  08-NOV-2001  [homekids]
+TITLE   :Multimedia, Kids: Windows 95 Icons Moved in Full Screen Mode
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0; WINDOWS:1.0,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker, version 1.0 
+ - Microsoft Dogs for Windows, version 1.0 
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft My Personal Tutor: Sam's Hide and Seek Adventure, version 1.0 
+ - Microsoft My Personal Tutor: Sky's Space Station Voyage, version 1.0 
+ - Microsoft My Personal Tutor: Turru's Daring Sea Quest, version 1.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run one of the products listed at the top of the article in full-
+screen mode and your desktop area is set to a resolution greater than 640 x 480,
+you see random icon positioning.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the above named products. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+When you run the program in full-screen mode, the video resolution is 640 x 480.
+When the program releases control of the desktop, any icons outside of the 640 x
+480 area move inside the 640 x 480 viewing area.
+
+Additional query words: multi media multimedia multi- mmtitles kbmm homekids kids 3d 3-d faq kbfaq 3dmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbWin95search _IKkbbogus kbZNotKeyword kbKidsSearch kbZNotKeyword3 kbDogs100 kbMPTSam kbMPTSky kbMPTTurru kb3dMovieMaker kbOceans
+Version           : :1.0; WINDOWS:1.0,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

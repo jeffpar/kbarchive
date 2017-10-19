@@ -1,0 +1,86 @@
+DOCUMENT:Q151638  15-DEC-1999  [foxpro]
+TITLE   :BUG: RECO Is Unrecognized Phrase on VALIDATE DATABASE Command
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the VALIDATE DATABASE RECO command is issued, the following error occurs:
+
+   Command contains unrecognized phrase/keyword
+
+WORKAROUND
+==========
+
+Use an extra letter on the RECOVER clause of the VALIDATE DATABASE command or
+spell out the entire command. The following examples will work:
+
+       "VALI DATA RECOV"
+
+   - or -
+
+       "VALIDATE DATABASE RECOVER"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The VALIDATE DATABASE command ensures that the locations of tables and indexes
+in the current database are correct. The RECOVER clause displays a dialog
+allowing the issuer to locate tables and indexes that are not in the locations
+contained in the database.
+
+Many commands in Visual FoxPro can be abbreviated to just four letters. There are
+some exceptions when the first four letters of two or more commands are the
+same. The VALIDATE DATABASE RECOVER command is not an exception to this
+abbreviation feature in Visual FoxPro for Windows.
+
+Steps to Reproduce Problem
+--------------------------
+
+ - Issue the following commands in the Command window:
+
+      "OPEN DATABASE HOME()+"samples:data:testdata"
+      VALI DATA RECO"
+
+ - Note that you receive the following error message:
+
+   Command contains unrecognized phrase/keyword
+
+Additional query words: VFoxMac
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

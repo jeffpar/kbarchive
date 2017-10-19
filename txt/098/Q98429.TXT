@@ -1,0 +1,50 @@
+DOCUMENT:Q98429  30-JUL-2001  [lanman]
+TITLE   :Logshow Reports "Failed to Generate Interrupt" Error
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+A logshow report includes the error
+
+   DISK01 FFAA date time - Ctrl/drive failed to generate an interrupt
+
+CAUSE
+=====
+
+This represents an RCB timeout, indicating that the system sent an I/O to the
+card but received no interrupt notifying it that the I/O completed. Usually this
+error occurs if the disk does not respond to the adapter or the adapter
+encounters a firmware problem.
+
+RESOLUTION
+==========
+
+If the error does not occur frequently, it's nothing to be concerned about. If
+it does occur frequently, your system performance can be affected, in which case
+you may want to consider replacing the disk and controller.
+
+Additional query words: 2.10 2.1 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

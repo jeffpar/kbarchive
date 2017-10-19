@@ -1,0 +1,58 @@
+DOCUMENT:Q234923  31-JUL-2001  [iis]
+TITLE   :Err Msg: HTTP/1.1 501 Not Supported
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp501 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to download a file from a server running IIS, the following
+error message occurs:
+
+   HTTP/1.1 501 Not Supported
+
+CAUSE
+=====
+
+This is by design. IIS does not serve files larger than 4 gigabytes (GB).
+
+WORKAROUND
+==========
+
+Individual files greater than 4 GB can often be compressed using third-party
+utilities to reduce the file size for downloading.
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp501 kbProd2Web 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

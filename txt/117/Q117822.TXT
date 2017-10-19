@@ -1,0 +1,58 @@
+DOCUMENT:Q117822  09-DEC-1999  [homemm]
+TITLE   :Cinemania: Special and Foreign Characters Change When Copied
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for the Macintosh 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you copy text that includes special or international characters from
+Cinemania into another application, the special characters may no longer display
+correctly. This occurs because the text is no longer formatted for Lucida.
+
+RESOLUTION
+==========
+
+To restore the special or foreign characters, format your text as Lucida. The
+characters should now display and print correctly.
+
+MORE INFORMATION
+================
+
+The V-series Lucida Sans fonts is a custom bitmap font installed with Cinemania.
+This font does not map special or international characters correctly to the
+Macintosh character set. Because of this, special characters may appear as boxes
+or other inappropriate or nonprinting characters when you copy them to an
+application such as TeachText.
+
+Additional query words: mac 1994 multi media multimedia multi-media change alter switch move clipboard clipbook non-printing
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994Mac
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

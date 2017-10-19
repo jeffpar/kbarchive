@@ -1,0 +1,73 @@
+DOCUMENT:Q311063  13-NOV-2001  [foxpro]
+TITLE   :PRB: FSIZE() Returns Zero If Expression Has Trailing Spaces
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0,3.0b,5.0,5.0a,6.0,7.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300b kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport kbCodeSnippet kbvfp300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you pass a field name that has trailing spaces to the FSIZE() function, it
+will not find the name and will return 0.
+
+CAUSE
+=====
+
+FSIZE() performs an exactly-equal test when searching for a matching field name.
+
+RESOLUTION
+==========
+
+Use the ALLTRIM() function to strip out trailing spaces in the expression that
+you pass to FSIZE().
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code to see the behavior. Uncomment the last line for the
+workaround.
+
+   CREATE CURSOR test (cField C(30))
+   INSERT INTO test VALUES ("labels.Type")
+   lcField = SUBSTR(test.cField, AT(".", test.cField) + 1)
+   lcAlias = LEFT(test.cField, AT(".", test.cField) - 1)
+
+   USE HOME() + "labels" IN 0
+   ? FSIZE(lcField, lcAlias)  && 0
+   *!* ? FSIZE(ALLTRIM(lcField), lcAlias) && 12
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300b kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport kbCodeSnippet kbvfp300xSearch kbvfp500xSearch kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP700 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0,7.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

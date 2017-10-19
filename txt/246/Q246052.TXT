@@ -1,0 +1,72 @@
+DOCUMENT:Q246052  22-JUN-2001  [exchange]
+TITLE   :XCLN: No Offline Folder Settings Button in Service Properties
+PRODUCT :Microsoft Exchange
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to set up an offline folder file, the Enable Offline Use and
+Offline Folder Settings buttons may be missing from the Advanced tab in the
+Properties of the Exchange Server service in the profile.
+
+When you right-click any of the default folders and then click Properties, there
+is no Synchronization tab.
+
+CAUSE
+=====
+
+This behavior can occur when you are run Windows NT 4.0 Terminal Server Edition
+or Windows 2000 Server (or Advanced Server or Datacenter), and Terminal Services
+are enabled.
+
+RESOLUTION
+==========
+
+For Windows 2000, remove Terminal Services and Terminal Services licensing, and
+then restart the computer.
+
+MORE INFORMATION
+================
+
+Offline folders are not allowed on Windows NT 4.0 Terminal Server Edition or on
+a Windows 2000 server that is running Terminal Services. When you install
+Outlook on such a computer, you do not receive the question, "Do you travel with
+this computer?". This behavior is by design.
+
+Additional query words: enable synchronization 8.0 8.01 8.02 8.03 8.04 8.5 9.0
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : :; WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

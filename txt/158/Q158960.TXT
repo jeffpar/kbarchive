@@ -1,0 +1,97 @@
+DOCUMENT:Q158960  07-MAY-2002  [homegame]
+TITLE   :Files Installed by DirectX 2.0a
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0,1.0a,3.0
+OPER/SYS:
+KEYWORDS:kbsetup kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for Windows 1.0a 
+ - Microsoft Deadly Tide for Windows 1.0 
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+ - Microsoft GEX, version 1.0 
+ - Microsoft Hellbender for Windows, version 1.0 
+ - Microsoft Monster Truck Madness, version 1.0 
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+ - Microsoft Soccer, version 1.0 
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of the DirectX system files installed to your hard disk
+by DirectX 2.0a.
+
+NOTE: DirectX 2.0 includes newer versions of DirectX 1.0 files plus the
+introduction of Direct3D files.
+
+MORE INFORMATION
+================
+
+All files are marked as version 4.03.00.1096.
+
+Direct3D
+--------
+
+ - D3dhalf.dll
+ - D3dim.dll
+ - D3drampf.dll
+ - D3drg16f.dll
+ - D3drg24f.dll
+ - D3drg32f.dll
+ - D3drg8f.dll
+ - D3drgbf.dll
+ - D3drm.dll
+ - D3drm16f.dll
+ - D3drm24f.dll
+ - D3drm32f.dll
+ - D3drm8f.dll
+ - D3dxof.dll
+
+DirectDraw
+----------
+
+ - Ddhelp.exe
+ - Ddraw.dll
+ - Ddraw16.dll
+
+DirectPlay
+----------
+
+ - Dplay.dll
+ - Dpserial.dll
+ - Dpwsock.dll
+
+DirectSound
+-----------
+
+ - Dsound.dll
+ - Dsound.vxd
+
+Additional query words: 1.00 1.00a 6.00 direct-x dx dxsetup.exe ts troubleshoot
+
+======================================================================
+Keywords          : kbsetup kbref kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbFlightSimSearch kbZNotKeyword kbGolfSearch kbCloseCombatSearch kbMonsterTMSearch kbGEX kbMonsterTM kbHellBender kbCloseCombat kbFlightSim95 kbSoccer kbDeadlyTide kbNBAFullCourtPress kbGolf300 kbSimSearch
+Version           : WINDOWS:1.0,1.0a,3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

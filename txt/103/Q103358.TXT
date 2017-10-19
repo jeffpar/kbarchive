@@ -1,0 +1,80 @@
+DOCUMENT:Q103358  08-AUG-2001  [winnt]
+TITLE   :Lotus Improv May Not be Able to Change the Paper Size to Print
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are running Lotus Improv version 2.0 under Windows NT, you may not be
+able to change the paper size of the document to be printed.
+
+RESOLUTION
+==========
+
+To work around this problem, do the following:
+
+1. In Improv, open the item to be printed and select File Print.
+
+2. In the Print dialog box, select Setup.
+
+3. Select the paper size you want.
+
+4. Choose OK.
+
+The print job should be the size you want.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. With a Windows NT printer driver and Lotus Improv installed, select the Print
+   Setup menu in Improv.
+
+2. Select a paper size other than the default size.
+
+3. Choose OK.
+
+4. If you use the Print Setup menu again, it will have reverted to the original
+   paper size.
+
+Improv is manufactured by Lotus Development Corp., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this products'
+performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

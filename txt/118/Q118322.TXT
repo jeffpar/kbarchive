@@ -1,0 +1,58 @@
+DOCUMENT:Q118322  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: New Users in Group Cannot Access .CAL File
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Schedule+ for Windows allows you to set access to calendar files for
+individuals and groups. If you define a group as having access to your calendar
+file and you subsequently add new users to that group, the new users will not be
+able to access your calendar file.
+
+CAUSE
+=====
+
+When you add a group as having access to your calendar file, Schedule+ resolves
+that group to the individual names contained within that group. Therefore, any
+users added to the group after that will not have access to your calendar file.
+
+RESOLUTION
+==========
+
+To assign access privileges to new users, either add the entire group again or
+add each group member as you would normally do.
+
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100a
+Version           : WINDOWS:1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

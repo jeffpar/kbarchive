@@ -1,0 +1,63 @@
+DOCUMENT:Q258149  06-AUG-2002  [sms]
+TITLE   :SMS: Verify Hotfix Installation in System Management Server 2.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to determine which hotfixes have been installed on a
+site running Systems Management Server 2.0 Service Pack 1 or later.
+
+MORE INFORMATION
+================
+
+There has been a change in the way hotfix update programs are written for
+Systems Management Server 2.0 Service Pack 1. When the update program runs, it
+writes an entry to the registry of the site server at the following location:
+
+   HKLM\Software\Microsoft\Updates\SMS 2.0\<Service Pack Level>
+
+The hotfix setup program will write a key at that location that corresponds to
+the ID number of the Knowledge Base article for the hotfix that was applied.
+
+A log with the hot fix number is also created under \SMS\LOGS, and a QFE Update
+group is created which lists the hot fixes under Hardware inventory in the
+Resource Explorer of the server.
+
+Note: Hotfixes released earlier than Service Pack 1 do not have this
+functionality.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200SP1 kbSMS200SP2
+Version           : winnt:2.0 SP1,2.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

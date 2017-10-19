@@ -1,0 +1,65 @@
+DOCUMENT:Q176522  09-AUG-2001  [iis]
+TITLE   :IIS Server Instance Error Message with Microsoft Cluster Server
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install an Internet Information Server (IIS) node in Microsoft
+Cluster Server, you may get the following error message:
+
+   An error occurred attempting to read properties for the
+   'IIS Server Instance' resource type:
+   More data is available.
+   Error ID: 234 (000000ea).
+
+CAUSE
+=====
+
+This can occur if the two IIS installations reside on installations of Microsoft
+Windows NT Server that are in different directories. For example, Computer 1 has
+Windows NT installed in C:\Winnt, and Computer 2 has Windows NT installed in
+C:\Winnt35. As a result, the Dlls files that are in the InetSrv directory are in
+different places and the Cluster Server cannot find them on one of the two
+systems.
+
+WORKAROUND
+==========
+
+Make sure that both systems in the cluster have Windows NT installed into the
+same directory.
+
+Additional query words: mscs
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbiisSearch kbiis400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

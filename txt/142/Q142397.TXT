@@ -1,0 +1,104 @@
+DOCUMENT:Q142397  10-FEB-2000  [foxpro]
+TITLE   :BUG: REPLACE with UDF May Cause "Record Is Not Locked" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using a user-defined function (UDF) that moves the record pointer in the
+currently selected table with a REPLACE command causes a "Record is not locked"
+error message. This error occurs if the buffering property is set to
+2-Pessimistic record, 3-Optimistic record, or 5-Optimistic table.
+
+WORKAROUND
+==========
+
+Set the buffering property to 4-Pessimistic table. This locks the record and
+updates it after issuing the TABLEUPDATE() function.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a program called Test.prg containing the following code:
+
+      SET MULTILOCKS ON
+      SET EXCLUSIVE OFF
+      SET DEFAULT TO SYS(2004)+"Samples\Data"
+      OPEN DATABASE Testdata
+      USE Customer
+      =CURSORSETPROP("Buffering",2)
+      GO 5
+      REPLACE maxordamt WITH mfunc()
+      REPLACE maxordamt WITH mfunc()
+      =TABLEUPDATE()
+      =CURSORSETPROP("Buffering",1)
+
+      FUNCTION mfunc
+      ** Moves record from original position
+      oldrec=IIF(EOF(),0,RECNO())
+      GO 1
+      tmp=maxordamt
+      IF oldrec>0
+         GO oldrec
+      ENDIF
+      RETURN tmp
+
+2. Run the program. The error "Record is not locked" appears after encountering
+   the second REPLACE command.
+
+REFERENCES
+==========
+
+For more information about the affect of SET EXCLUSIVE, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q125732 Cursor Created by User or ODBC Has EXCLUSIVE Status
+
+For more information about the affect of READ NOLOCK, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q131031 READ NOLOCK Behavior in Visual FoxPro
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,76 @@
+DOCUMENT:Q246050  06-AUG-2002  [automap]
+TITLE   :MapPoint: How to Import Streets & Trips 2000 Pushpins
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to import pushpins from Microsoft Streets & Trips
+2000 into Microsoft MapPoint.
+
+MORE INFORMATION
+================
+
+To import Streets & Trips 2000 pushpins into MapPoint:
+
+1. On the Tools menu in Streets & Trips 2000, click Pushpin Explorer.
+
+2. In the Sets box, click to select the pushpin set that you want to use in
+   MapPoint, and then click Export.
+
+3. In the "Save as type" box, click All Files (*.*).
+
+4. In the File name box, type "<filename>.csv" (without the quotation
+   marks), where <filename> is the name of the pushpin set.
+
+5. Quit Streets & Trips 2000, and then start MapPoint.
+
+6. On the Tools menu, click Pushpin Explorer.
+
+7. Click Import.
+
+8. In the "File of type" box, click Text Files (*.txt, *.csv, *.tab, *.asc).
+
+9. In the list of files, click the file that you created in step four, and then
+   click Open.
+
+10. Click Pushpin Map, and then click Next.
+
+11. In the Pushpin Set Symbol box, click the symbol that you want to use for all
+   pushpins in the pushpin set.
+
+12. In the Set Name box, type a name for the pushpin set, and then click Finish.
+
+Additional query words: mp2000 mp2001 multi multi-media media mm push pins automap a-map
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

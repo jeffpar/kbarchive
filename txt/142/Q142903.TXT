@@ -1,0 +1,83 @@
+DOCUMENT:Q142903  08-AUG-2001  [winnt]
+TITLE   :Windows NT Ndis.sys and Netflx3.sys Performance Improvement
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP1 
+ - Microsoft Windows NT Server version 4.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft has developed an enhancement to Windows NT that allows a computer with
+at least two CPUs and at least two Compaq NetFlex network cards to significantly
+improve network performance.
+
+Previously, the network driver interrupt moderation on Symmetric Multi- Processor
+(SMP) computers did not receive adequate information regarding CPU utilization.
+
+To improve the network performance, obtain the enhancement mentioned below or
+wait for the next Windows NT Service Pack.
+
+
+MORE INFORMATION
+================
+
+Ndis.sys and Netflx3.sys have been modified to enhance performance. The new
+Netflex3 driver has an improved interrupt moderation algorithm based on the
+server CPU utilization in addition to the frame rate. The improved interrupt
+moderation helps reduce the amount of server CPU usage for processing
+interrupts, especially on a busy server.
+
+The new Netflx3 driver is only available for the Intel platform whereas Ndis.sys
+is available for Intel and Risc platforms.
+
+This enhancement is currently only available as a "hotfix" and has been posted to
+the following Internet location:
+
+ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-
+postSP1/ndis-fix
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0, Service
+Pack 1. This problem was corrected in the latest Microsoft Windows NT 4.0 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp1 kbWinNTSsearch kbWinNTS400sp1 kbWinNTS400search
+Version           : :4.0,4.0 SP1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

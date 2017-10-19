@@ -1,0 +1,55 @@
+DOCUMENT:Q194059  07-SEP-2001  [homemm]
+TITLE   :Encarta Virtual Globe 99: How to Print the Map Legend
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbprint kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to print the map legend in Microsoft Encarta Virtual
+Globe 99.
+
+MORE INFORMATION
+================
+
+When you click the Legend tab in Encarta Virtual Globe 99 to display the map
+legend, the legend is shown inside an expanded tab overlying the map displayed
+on the screen. To print the map legend, right-click inside this expanded tab,
+click Print, and then click OK.
+
+NOTE: If you want to print both the map legend and the map on the same page, copy
+both the map legend and the map into a graphics program such as Microsoft Paint,
+and then print the page from this program.
+
+Additional query words: multi multi-media media mm world atlas evg
+
+======================================================================
+Keywords          : kbprint kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

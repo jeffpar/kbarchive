@@ -1,0 +1,98 @@
+DOCUMENT:Q138376  11-FEB-2000  [foxpro]
+TITLE   :BUG: NODEFAULT Is Ignored in Text Box KeyPress Event Code
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The NODEFAULT clause is ignored in the KeyPress event of a text box custom class
+based on the text box base class.
+
+WORKAROUND
+==========
+
+To work around this, perform the following:
+
+1. Edit the form.
+
+2. Click the text box on the form.
+
+3. Right-click the KeyPress event in the property sheet, and then click Reset to
+   Default.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a form, and place a text box on the form.
+
+2. In the KeyPress event of the text box, enter the word, NODEFAULT.
+
+3. Save the text box as a class.
+
+4. Delete the text box from your form.
+
+5. Place an instance of the text box class on your form. You can do this by
+   adding the class library that contains the text box to the Form Control
+   toolbar. Next, drop the text box control onto the form.
+
+6. Run the form and note that you are unable to type in the form. This is the
+   expected behavior.
+
+7. Edit your form, and add the following line to the KeyPress event of the
+   instance of the text box:
+
+   " TEXTBOX::KEYPRESS " (without the quotation marks)
+
+8. Run your form. Note that you can now type into it, but each letter you type
+   is doubled. This is the expected behavior.
+
+9. Edit your form, and from the KeyPress event of your text box, delete the code
+   you entered in step 7 (the line TEXTBOX::KEYPRESS).
+
+10. Run your form. Note that now you can type into it even though you removed
+   the code you added and returned it to its original status where you couldn't
+   type into it.
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q186317  21-OCT-2000  [sna]
+TITLE   :Subscriptions Fail Transferring DB2 CHAR and VARCHAR Datatype
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Data Replicator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Subscriptions fail transferring DB2 CHAR & VARCHAR Datatypes to SQL Server
+TEXT Columns. No nulls were included in the data transferred. The following
+error appears in the HDR Manager:
+
+   [Microsoft][ODBC SQL Server Driver][SQL Server]Attempt to insert the value
+   NULL into column 'ColumnName', table 'TableName'; column does not allow
+   nulls. INSERT fails.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Host Data Replicator version
+1.0.
+
+NOTE: Effective immediately, Microsoft has granted exclusive marketing and
+distribution rights to StarQuest Software for Host Data Replicator 1.1, a
+software utility for replicating among heterogeneous databases. Microsoft will
+not be offering this product or any future versions to its customers. StarQuest
+has renamed the product, StarQuest Data Replicator. Please refer to the
+following link for more information:
+
+   http://www.microsoft.com/sna/guide/starqst.asp?A=2&B=7
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSQLServSearch kbAudDeveloper kbHostDataRep
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

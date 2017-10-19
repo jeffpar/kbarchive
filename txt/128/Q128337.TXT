@@ -1,0 +1,75 @@
+DOCUMENT:Q128337  12-FEB-2000  [foxpro]
+TITLE   :How to Make a Terminating Command Button
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to create a command button on a form that will
+close the form in Visual FoxPro.
+
+In FoxPro version 2.x, you could do this by selecting the "Terminate Read on
+Selection" check box for the push button options. There is no such option for a
+Visual FoxPro command button.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+This example creates a new form with a command button that when clicked will
+close the form.
+
+1. Create a new form:
+
+      CREATE FORM
+
+2. Place a command button on the form.
+
+3. Change the caption property of the command button to "Quit".
+
+4. Type the following code in the click event handler of the command button:
+
+      IF TYPE('ThisForm.parent') = "O"
+         RELEASE ThisFormSet
+      ELSE
+         RELEASE ThisForm
+      ENDIF
+
+5. Choose Run Form from the Form menu.
+
+6. Click the Quit button, and the form will close.
+
+Additional query words: VFoxWin 3.00
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbAudDeveloper kbFoxproSearch
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

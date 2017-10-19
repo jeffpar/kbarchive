@@ -1,0 +1,124 @@
+DOCUMENT:Q275722  08-MAY-2002  [sna]
+TITLE   :APPC Hot Backup Application Slow to Recover When Primary Fails
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:sna4 kbSNA400sp4fix kbSNA400PreSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+APPC/5250 applications connecting to SNA Server computers that are configured
+for APPC Load Balancing and Hot Backup may be slow to reestablish a session to a
+backup server once the primary node/connection becomes unavailable.
+
+CAUSE
+=====
+
+If a client has an APPC/5250 session through an existing SNA Server which
+becomes unavailable, the client still attempts (two more times) to reestablish
+itself to the same SNA Server before moving onto the second server.
+
+
+RESOLUTION
+==========
+
+SNA Server 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+
+Host Integration Server 2000
+----------------------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Host Integration Server 2000 service pack that contains
+this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
++----------------------------------+
+| File name   | Date       | Time  | 
++----------------------------------+
+| Wappc32.dll | 01/11/2001 | 09:55 | 
++----------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+For additional information on Load Balancing and Hot Backup, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q128244 SNA Server Load Balancing and Hot Backup
+
+
+Additional query words:
+
+======================================================================
+Keywords          : sna4 kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

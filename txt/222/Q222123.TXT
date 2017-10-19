@@ -1,0 +1,155 @@
+DOCUMENT:Q222123  23-AUG-2001  [visualc]
+TITLE   :HOWTO: Debug OLE DB Providers That Are Called From SQL Server 7
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbOLEDB kbProvider kbSQLServ kbATL300 kbGrpDSVCDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides tips for debugging OLE DB Providers which are called from
+SQL Server version 7.0. Moreover, SQL Server 7.0 can perform distributed queries
+by using the OPENROWSET and OPENQUERY Transact SQL functions.
+
+MORE INFORMATION
+================
+
+Specify that the OLE DB Provider is to be Loaded in the SQL Server Process Space.
+---------------------------------------------------------------------------------
+
+By default, an OLE DB Provider is invoked by SQL Server as an out-of-process
+component. This is done by using proxy/stub code in Msdaps.dll which is provided
+with the OLE DB core components. The OLE DB provider is hosted by using
+Dllhost.exe and is the surrogate process for the OLE DB Provider. Because it is
+difficult to attach to the Dllhost.exe process with the Visual C++ debugger, it
+is recommended that you mark the provider as in-process for debugging purposes.
+You can then attach the debugger to the SQL Server process Sqlservr.exe.
+To mark a provider as in-process, use one of the following two processes:
+
+1. Create a linked server in SQL Server 7.0 which specifies the provider. In the
+   SQL Enterprise Manager, click Properties for the new linked server, choose
+   Options, and then select Allow InProcess.
+
+2. Add the provider ProgID to a key in the register at:
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Providers and add a DWORD
+   value under that key which is AllowInProcess with a value of 1.
+
+NOTE: Once you have marked the provider as in-process, you can then attach to SQL
+Server and more easily debug the provider.
+
+Attach the Debugger to the SQL Server Process
+---------------------------------------------
+
+This can be done by going to Build. Click Start. Select Debug and click Attach to
+Process in the Visual C++ development environment. When the process list
+displays, select Show System Processes and you should see SQLSERVR appear in the
+list. This is the SQL Server process. Select it and the debugger will attach to
+the process. Go to Project then click Settings and select the Debug tab and add
+your OLE DB Provider DLL to the list of additional DLLs. This causes the debug
+information for your DLL to be loaded so breakpoints can be set in your OLE DB
+Provider source code.
+
+Debugging Providers which are Invoked Out-of-Process
+----------------------------------------------------
+
+Occasionally, a problem will occur only when an OLE DB Provider is invoked
+out-of-process. By default, SQL server invokes OLE DB Providers out-of-process.
+This can be changed by using the steps described earlier in this article.
+However, if you must debug a problem which only occurs when the provider is
+out-of-process, you need to have a way to attach the debugger to the component.
+Following are a couple of ways to accomplish this:
+
+1. Put a Sleep() in the constructor of the datasource object of the provider so
+   that you have time to attach the debugger to the Dllhost.exe process which is
+   the surrogate for the provider.
+
+2. Add code to the provider so the debugger will attach automatically. Insert
+   the following code into the FinalConstruct() for the datasource object:
+
+   HRESULT FinalConstruct()
+   {
+      if (!IsDebuggerPresent())
+      {
+        char szDebuggerCmd[100];
+        wsprintf(szDebuggerCmd, "C:\\Program Files\\Microsoft Visual Studio\\Common\\MSDev98\\Bin\\MSDEV -p %ld", (long)GetCurrentProcessId());
+        PROCESS_INFORMATION pi;
+        STARTUPINFO si;
+        ZeroMemory(&si, sizeof(si));
+        si.cb = sizeof(si);
+        si.lpDesktop = "Winsta0\\Default";
+
+        CreateProcess(NULL, szDebuggerCmd, NULL, NULL, TRUE, 0, NULL, NULL,  &si, &pi); 
+        Sleep(5000);
+        _asm int 3
+      }
+
+      return FInit();
+   }
+
+Enable OLE DB Tracing in Query Analyzer
+---------------------------------------
+
+You can have OLE DB trace information returned in Query Analyzer by typing the
+command: DBCC traceon(7300). After executing a distributed query, if the
+provider returned an error, diagnostic information will be displayed in the
+results window.
+
+Enable OLE DB Tracing in SQL Server Profiler
+--------------------------------------------
+
+The SQL Server Profiler application also provides diagnostic traces for OLE DB
+calls. To get information about OLE DB errors and warnings, do the following:
+
+1. Start the SQL Server 7.0 Profiler application.
+
+2. Go to Tools and click Options. Click the General tab and select All event
+   classes.
+
+3. Open a trace file by going to File and click New or go to File and click
+   Open, and then go to File and click Properties.
+
+4. A dialog entitled Trace Properties will be displayed. Click the Events tab.
+
+5. Select Error and Warning events and select the OLEDB errors event.
+
+If your OLE DB provider returns an error to SQL Server, the trace displays the
+OLE DB call that failed and the return value.
+
+REFERENCES
+==========
+
+For additional information, see the Support WebCast at the following location:
+
+   http://support.microsoft.com/servicedesks/webcasts/wc102699/WC102699.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbOLEDB kbProvider kbSQLServ kbATL300 kbGrpDSVCDB 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

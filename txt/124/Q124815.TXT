@@ -1,0 +1,69 @@
+DOCUMENT:Q124815  12-JUN-2001  [odbc]
+TITLE   :INFO: Explanation of the Two Available MS Access Drivers
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+2.00
+
+WINDOWS
+
+kbref
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the difference between the ODBC Access driver that ships
+with Microsoft Office Professional/Microsoft Access version 2.0 and the Access
+driver that ships with the ODBC Desktop Database Drivers version 2.0/ODBC
+Software Development Kit (SDK) version 2.10.
+
+MORE INFORMATION
+================
+
+The ODBC Access driver, included in Microsoft Office Professional version 4.3
+and Microsoft Access version 2.0, is intended to be used only from within
+Microsoft Word and Microsoft Excel to get to Microsoft Access 2.0 databases. The
+use of this driver from any other application is not supported. This driver
+cannot be redistributed with any other application.
+
+To get the general purpose ODBC Access driver for Microsoft Access 2.0 databases,
+you need to have ODBC Desktop Database Drivers version 2.0.
+
+The Microsoft Windows Driver Library (WDL) is available on online services. For
+more information about the WDL, see the following article in the Microsoft
+Knowledge Base.
+
+   Q135314 Windows 95 Driver Library
+
+Additional query words: odbc ref obtain
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

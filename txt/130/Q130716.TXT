@@ -1,0 +1,72 @@
+DOCUMENT:Q130716  17-DEC-2000  [win95x]
+TITLE   :Write Fault Error Printing from MS-DOS-Based Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print from an MS-DOS-based program in Windows 95, you may
+receive the following error message:
+
+   Write fault error writing device LPT1
+   Abort, Retry, Ignore, Fail?
+
+CAUSE
+=====
+
+This error can occur if the printer has been placed in Work Offline mode.
+
+RESOLUTION
+==========
+
+To correct this problem, follow these steps to disable the Work Offline
+setting:
+
+1. Click the Start button, point to Settings, then click Printers.
+
+2. Double-click the icon for the printer you want to print to.
+
+3. On the Printer menu, click Work Offline to disable the setting.
+
+Note that you can re-enable the Work Offline setting by repeating these steps.
+
+MORE INFORMATION
+================
+
+This error is likely to occur on notebook computers that are removed from and
+rejoined to a docking station. When a notebook computer is undocked, the printer
+is automatically placed in Work Offline mode.
+
+The Work Offline mode disables MS-DOS spooling for the local port. If there is
+not a printer physically attached to the computer, printing from an MS-DOS-based
+program generates the error message stated above.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

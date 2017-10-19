@@ -1,0 +1,57 @@
+DOCUMENT:Q98311  23-NOV-1999  [msdos]
+TITLE   :Firmware V135 Required for Gateway 2000 Handbook Computers
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following problems have been reported on Gateway 2000 Handbook 80286
+computers running MS-DOS 6.0 and DoubleSpace:
+
+ - Data Error Reading Drive X: (Choosing the Retry button may correct this
+   error.)
+
+-and-
+
+ - Random system hangs that cannot be corrected by rebooting. (Pressing
+   CTRL+ALT+DEL doesn't work; you must turn the computer off and then on again.
+
+WORKAROUND
+==========
+
+To avoid these problems, upgrade your Handbook firmware to version 135. For more
+information, contact Gateway 2000.
+
+
+Additional query words: 6.00 double space dblspace hardware
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,72 @@
+DOCUMENT:Q134580  17-DEC-2000  [win95x]
+TITLE   :Cannot Install Fastback 6.0 with Install Program Wizard
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install Fastback version 6.0 with the Install Program Wizard,
+you receive the following error message:
+
+   To install Fastback Plus, please type
+   A:INSTALL if you have inserted the installation disk in drive A:, or
+   B:INSTALL if you have inserted the installation disk in drive B:
+
+When you do so, the Fastback Setup program cannot find its setup files and cannot
+continue.
+
+CAUSE
+=====
+
+When the Fastback Setup program runs from the Install Program Wizard, it
+receives an invalid drive letter option from the wizard.
+
+RESOLUTION
+==========
+
+Run the Setup program in MS-DOS mode. To do so, follow these steps:
+
+1. Click the Start button, click Shut Down, click the "Restart the computer in
+   MS-DOS mode" option button, and then click Yes.
+
+2. Run the Setup program from the MS-DOS prompt.
+
+MORE INFORMATION
+================
+
+Fastback is manufactured by Symantec, a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

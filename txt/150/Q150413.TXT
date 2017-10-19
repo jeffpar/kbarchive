@@ -1,0 +1,63 @@
+DOCUMENT:Q150413  08-SEP-1999  [msnetwork]
+TITLE   :Using Netscape Navigator with The Microsoft Network
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.3, 2.0, 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use Netscape Navigator as a Web browser with MSN, The Microsoft Network.
+However, you must set up Netscape Navigator using the Windows 95 version of
+TCP/IP.
+
+MORE INFORMATION
+================
+
+Netscape Navigator Personal Edition Setup installs the Netscape version of
+TCP/IP. You cannot connect to MSN with this version of TCP/IP. To ensure you
+have the proper version of TCP/IP, verify that the following three files are the
+Windows 95 versions:
+
+ - Wsock32.dll
+
+ - Wsock.vxd
+
+ - Winsock.dll
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+
+Additional query words: msn
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

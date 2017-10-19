@@ -1,0 +1,56 @@
+DOCUMENT:Q153164  19-FEB-2002  [win95x]
+TITLE   :MS-DOS Compatibility Mode on National Semiconductor Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Device Manager may display an exclamation point (!) in a yellow circle for a
+controller labeled "National Semiconductor Dual PCI IDE Controller RMM Support
+Only." When this occurs, an exclamation point may also be displayed for COM2.
+
+MORE INFORMATION
+================
+
+The driver included with Windows 95 does not provide protected-mode support for
+the National Semiconductor Dual Channel PCI IDE Controller. All drives using
+this controller use the real-mode mapper (RMM).
+
+An updated Windows 95 driver that provides protected-mode support for the
+National Semiconductor Dual Channel PCI IDE Controller is available from Tekram
+Technology.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhw win95 kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

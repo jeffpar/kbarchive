@@ -1,0 +1,125 @@
+DOCUMENT:Q88749  06-NOV-1999  [win16sdk]
+TITLE   :Details of Setup Toolkit Function GetCopyListCost()
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Setup Toolkit for Windows GetCopyListCost() function can be used
+to compute the cost needed to install the files in the copy list to the target.
+The syntax for GetCopyListCost() is:
+
+      Long&=GetCopyListCost(szExtras$,szCosts$,szNeededs$)
+
+szExtras$ is an input parameter to GetCopyListCost(), and szCosts$ and szNeededs$
+are output parameters. All three parameters are symbols whose values are lists
+of up to 26 integers. The nth integer in the list will have the information
+about the nth alphabetic drive, where the drives are A-Z.
+
+If there will be extra costs beyond the cost of copying and decompressing the
+files in the copy list, these costs should be included in szExtras$. For
+example, to specify an extra cost of 5000 bytes on the Windows drive, the code
+might resemble the following:
+
+      WinDrive$ = MID$(GetWindowsDir, 1, 1)
+      ndrive% = ASC (ucase$(WinDrive$)) - ASC ("A")
+      for i% = 1 to ndrive% step 1
+          AddListItem "ExtraCosts", "0"
+      next i%
+      AddListItem "ExtraCosts", "5000"
+
+      need& = GetCopyListCost ("ExtraCosts", "costs", "needs")
+
+If there are no extra costs, "" can be passed for szExtras$.
+
+On return, the value of szCosts$ will be a list of 26 integers, which are the
+total costs for drives A-Z of copying the files in the copy list and of the
+costs in szExtras$. The value of szNeededs$ will be a list of 26 integers, which
+are the total costs for each drive--the amount of free space on the drive. For
+any drive that will not be affected by the extra costs or by copying the copy
+list, szNeededs$ will report 0.
+
+MORE INFORMATION
+================
+
+In computing szCosts$ and szNeededs$, all files sizes, as well as the costs in
+szExtras$, are rounded up to the nearest cluster. The integers in the lists will
+always be some multiple of the cluster size for the appropriate drive. The
+cluster sizes in bytes for various disks are as follows:
+
+   Single-sided floppy disk    512
+   Double-sided floppy disk   1024
+   PC/AT fixed disk           2048
+   PC/XT fixed disk           4096
+   Other fixed disks          8192 & 16384
+
+The cost of each file on the copy list is calculated as follows. The properties
+mentioned are from the file's property list in the .INF file:
+
+   if the file does not exist at the install target
+      if the source file has the REMOVE property
+         file cost=0
+      else
+         file cost=size of source file
+   else // the file does exist at the install target
+   {
+      if the source file has the REMOVE property
+         file cost=-size of existing file at target
+      else if the file has the NEVER overwrite property
+         file cost=0
+      else if the existing target file is read only and the source file
+                  has the UNPROTECTED overwrite property
+         file cost=0
+      else if the file has the OLDER overwrite property and
+                  the existing target file is newer
+         file cost=0
+      else if the file has the OLDER overwrite property and
+              the existing target file is exactly the same (i.e. no copy)
+         file cost=size of source file (for temporary copy used for
+                                              language version check
+      else // file will be copied
+      {
+         file cost=size of source file - size of existing target file
+         if existing dest file is to be backed up (source file has
+                    BACKUP property)
+            file cost=file cost+size of existing target file
+      }
+
+   }
+
+Note that GetCopyListCost() computes the copy cost incorrectly for split files
+that already exist at the target. It erroneously reports that most of the space
+used by the file will be freed.
+
+Additional query words: 3.10 no32bit MSSETUP tool kit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,87 @@
+DOCUMENT:Q155929  07-SEP-2001  [foxpro]
+TITLE   :BUG: APRINTERS Function Behaves Differently in Windows 95
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting kbvfp kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With the APRINTERS() function, you can place the names of printers currently
+installed in the Windows Print Manager into a memory variable array. The
+APRINTERS() function creates a two-dimensional array. The first column of the
+array contains the names of the currently installed printers, and the second
+column contains the ports to which the printers are connected. In Windows 95, if
+the specific printer's share name contains a space, the PRINTERS() function
+returns a separate array row with the same printer name in the first column and
+two incomplete share names in the second column. An example is a printer named
+MyPrinter on share \\MyPrinter Share. The APRINTERS() function produces the
+following two rows:
+
+   Myprinter     \\MyPrinter
+   Myprinter     Share
+
+WORKAROUND
+==========
+
+Use the GETPRINTER() function to print directly to the printer name instead of
+the share name. If the share name is required, concatenate the share name
+strings that have the same printer name in the first column of the array.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Set up a Local Printer in Windows 95 or Windows NT. For this example, the
+   printer name is "HP LaserJet 4Si MX" and the share name is "\\Tim\Test
+   Printer."
+
+2. On a second Windows 95 computer, issue the following command in the Visual
+   FoxPro Command window:
+
+         =APRINTERS(Lprint)
+
+   The preceding command creates an array Lprint with the following elements:
+
+         Lprint(1,1) = "HP LaserJet 4Si MX" , Lprint(1,2) = "\\Tim\Test"
+         Lprint(2,1) = "HP LaserJet 4Si MX" , Lprint(2,2) = "Printer"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbPrinting kbvfp kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

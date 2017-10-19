@@ -1,0 +1,144 @@
+DOCUMENT:Q181737  12-JUN-2001  [sna]
+TITLE   :How a 3270 EIS Application May Affect Outbound Pacing
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the SNA Server 3270 EIS interface, a 3270 application has the option
+of choosing the Application Pacing option in the Connection Information Control
+Block when sending its OPEN(PLU) response, as documented in section 3.3.1 of the
+3270 EIS online guide. This option can be used by 3270 applications that have
+limited resources (for example, a printer) to allow the application to affect
+SNA Server pacing responses on outbound host data, preventing the host from
+sending more data than the 3270 application can handle.
+
+However, the 3270 application must implement this option properly, or SNA Server
+does not respond to host pacing requests, causing the SNA session to hang (stop
+responding).
+
+The 3270 application sets the Application Pacing option in the Open(PLU) response
+by setting dataru[21] in the first element to 0x01. After it sets this option,
+the emulator must send Status(Resource) messages to the SNA Server to indicate
+that it can accept further outbound messages. The emulator must supply enough
+credit to the SNA Server for the server to accept a full pacing window of
+messages from the host (or the SNA Server does not respond to the host pacing
+indicator request).
+
+If this happens, the 3270 application hangs with an XCLOCK indication, because
+the host is unable to send any further messages on the session.
+
+MORE INFORMATION
+================
+
+The SNA pacing responses that the SNA Server sends to the host are not like the
+credit (Status Resource) messages that the 3270 application sends to the SNA
+Server:
+
+ - In Status Resource messages, the 3270 application specifies how much credit
+   it is giving. It can specify as much or as little as it likes in pacing
+   responses to the SNA Server, but it cannot specify the number of messages the
+   host can now send.
+
+ - An SNA Server pacing response (or IPR) tells the host that it can now send
+   the SNA Server one more pacing window's worth of messages (where the size of
+   the pacing window was established in the SNA session BIND).
+
+The idea behind the pacing window is that the SNA Server will not grant the host
+another pacing window's worth of credit until it can guarantee to be able to
+immediately pass every message in that pacing window to the 3270 application. To
+be able to guarantee this, the 3270 application must have given the SNA Server
+enough credit for those messages, and any the SNA Server has already guaranteed
+to send, before the SNA Server sends the host the pacing response for them.
+
+Here is a scenario that could cause a 3270 application to hang, by not providing
+sufficient credit responses to SNA Server:
+
+Assume that the host can send seven messages to SNA Server before needing a
+pacing response to send more. The SNA Server can send eight messages to the 3270
+application before it needs a credit (Status Resource) message to send more.
+
+When the session is first started, SNA Server has "given" seven pacing credits to
+the host and "received" eight application credits from the 3270 application. At
+this point, SNA Server has one credit "in hand" for the host, but cannot send a
+pacing response until it has seven credits "in hand" from the 3270 application.
+
+Next, assume the host sends seven messages to SNA Server, which are passed to the
+3270 application, and the application responds with a Status Resource message
+providing a further three credits. After this, the host has no (0) pacing
+credits, and the SNA Server has (8 - 7 + 3 =) 4 credits from the 3270
+application, which are insufficient to grant the host another pacing window of
+seven. The SNA Server will not send the host a pacing response (that is,
+Isolated Pacing Response, or IPR) until it gets (at least) another three credits
+from the 3270 application.
+
+As a side note, it is possible to capture messages sent by the emulation product
+by enabling SNA Server 3270 message tracing on the SNA Server itself, or on the
+client. Here is an example of an Open PLU Response message, as traced in an SNA
+Server 3270 message trace:
+
+   FMI   ----------------------------------------------- 14:38:27.0546
+   FMI   41120F00->01023205 OPEN  PLU  RSP OK
+   FMI                      FMI  LU#10 CredR:0 CredS:8
+   FMI
+   FMI   ---- Header  at address 0146DD74, 2 elements ----
+   FMI   0202020A 00010000 000800AF 01003000     <..............0.>
+   FMI
+   FMI   ---- Element at address 01980C88, start 1, end 25 ----
+   FMI   20202020 20202020 20200000 00000000     <          ......>
+   FMI   00000020 01010000 02                    <... .....       >
+   FMI
+   FMI   ---- Element at address 0197E49C, start 13, end 59 ----
+   FMI   31010303 B1903080 000787C7 80000280     <1.....0...gG....>
+   FMI   00000000 18500000 7E000008 E3E2D6F1     <.....P..~...TSO1>
+   FMI   F0F1F1F8 000008E3 C3F3F0F0 F0F0C1       <0118...TC30000A >
+
+In the above trace, the Application Pacing option is set, because byte 21 of the
+first element is set to 01.
+
+Here is an example of a Status Resource message, as appearing in an SNA Server
+3270 message trace:
+
+   FMI   ----------------------------------------------- 14:38:27.0703
+   FMI   41120F00->01023205 FMIST RSRC
+   FMI                      Credit:3
+   FMI
+   FMI   ---- Header  at address 0146E1B8, 0 elements ----
+   FMI   04020003 00010000 00080100 01000000     <................>
+
+In this message, the 3270 emulator is informing SNA Server that it can accept
+three more messages on this session.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

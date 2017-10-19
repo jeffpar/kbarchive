@@ -1,0 +1,70 @@
+DOCUMENT:Q153401  08-AUG-2001  [winnt]
+TITLE   :User Profile Editor Does Not Save System Default Profiles
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 SP4 
+ - Microsoft Windows NT Server version 3.51 SP4 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you apply Service Pack 4 (SP4) for Windows NT 3.51, you use User Profile
+Editor to save System Default Profiles. No error message is displayed, but the
+new settings do not take effect.
+
+CAUSE
+=====
+
+User Profile Editor uses the MoveFileEx API internally. This API is does not
+work in SP4. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+Q149857MoveFileEx API Does Not Work After Applying SP4
+
+RESOLUTION
+==========
+
+Install the fix referenced below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the product listed. This problem
+was corrected in the latest Windows NT 3.51 U.S. Service Pack. For information
+on obtaining the Service Pack, query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: 3.51 prodnt MoveFileEx SP4 Q149857
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTSsearch kbWinNTS351search kbWinNTS351sp4 kbWinNTW351SP4
+Version           : :3.51 SP4
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

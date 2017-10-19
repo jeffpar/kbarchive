@@ -1,0 +1,59 @@
+DOCUMENT:Q262247  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: How to Restore Accidentally Deleted Characters
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you accidentally delete a character in Microsoft Asheron's Call, you may
+restore the lost character within one hour of the deletion.
+
+MORE INFORMATION
+================
+
+When you delete a character in Asheron's Call, the name of the character remains
+on the character list. However, the name appears red and a line is drawn through
+it.
+
+To restore the deleted character, click the name of the character to select the
+character. When you do so, the Delete Character button changes to a Restore
+Character button. Press the Restore Character button to restore the deleted
+character.
+
+NOTE: If you do not restore a character within one hour after you delete the
+character, the character is permanently lost.
+
+Additional query words: 1.00 msgame igz msngz ac ashcall player remove asherons
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

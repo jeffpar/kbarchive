@@ -1,0 +1,94 @@
+DOCUMENT:Q104945  30-OCT-1999  [fortran]
+TITLE   :DOCERR: BEEPQQ and SLEEPQQ Deal in Milliseconds and Hz
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft FORTRAN PowerStation "Language Guide" describes the BEEPQQ
+subroutine on page 214 as follows:
+
+    BEEPQQ(duration, frequency)
+         duration
+            (Integer*4; input)   Length of the beep in microseconds.
+         frequency
+            (Integer*4; input)   Frequency of the tone in KHz.
+
+The documentation on SLEEPQQ on page 496 is as follows:
+
+      SLEEPQQ(duration)
+         duration
+            (Integer*4; input)   The number of microseconds to sleep (delay
+                                 program execution).
+
+The above information is incorrect. The arguments for BEEPQQ are in the wrong
+order. The duration should be in milliseconds and the frequency in hertz (Hz).
+The online help for these two run-time subroutines is correct.
+
+RESOLUTION
+==========
+
+Make the following modifications on page 214 of your documentation:
+
+    
+      BEEPQQ(frequency, duration)
+         frequency
+            (Integer*4; input)    Frequency of the tone in Hz.
+         duration
+            (Integer*4; input)    Length of the beep in milliseconds.
+
+      Remarks
+         BEEPQQ does not return before the sound terminates.
+
+Similarly, page 496 should be modified to reflect the following:
+
+      SLEEPQQ(duration)
+         duration
+            (Integer*4; input)    The number of milliseconds to sleep (delay
+                                  program execution).
+
+Sample Code
+-----------
+
+   C No compiler options required
+          include 'flib.fi'
+          include 'flib.fd'
+          print *, 1
+          call beepqq(262,1000)
+          print *, 2
+          call sleepqq(1000)
+          print *, 3
+          end
+
+Additional query words: nofpsnt 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

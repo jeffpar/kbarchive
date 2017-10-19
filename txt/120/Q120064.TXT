@@ -1,0 +1,89 @@
+DOCUMENT:Q120064  04-MAY-2001  [masm]
+TITLE   :BUG: Error A2005 Generated Due to Conflict with Global Label
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.1,6.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.1, 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+According to page 354 of the "MASM 6.1 Programmer's Guide," labels within a
+procedure that are defined with a single colon are local, provided there is a
+language specifier on the .Model statement. However, if the symbol used for a
+local label appears as a global label in an earlier part of the source file, the
+following error is generated during assembly:
+
+   A2005: symbol redefinition
+
+RESOLUTION
+==========
+
+If possible, rearrange the code so that the global label does not appear before
+the local label.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in MASM versions 6.1 and 6.11. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following sample code can be used to demonstrate the problem. If "two proc"
+were placed after "one proc", there would be no assembly errors and the "jmp
+two" would cause a jump to the local label "two".
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+      .model small, C
+      .code
+
+      two proc
+         ret
+      two endp
+
+      one proc
+
+         jmp two
+         nop
+
+      two:            ; error A2005: symbol redefinition : two
+
+      one endp
+      end
+
+Additional query words: 6.10 6.11 buglist6.10 buglist6.11
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM610 kbMASM611
+Version           : :6.1,6.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

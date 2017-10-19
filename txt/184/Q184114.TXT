@@ -1,0 +1,89 @@
+DOCUMENT:Q184114  14-NOV-2000  [word97]
+TITLE   :WD97: Table of Contents Loses Character Formatting
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfield
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you update the entire table of contents by pressing F9, manual character
+formatting is lost.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods.
+
+Method 1: Update Page Numbers Only
+----------------------------------
+
+Select Update Page Numbers Only in the Update Table Of Contents dialog box.
+
+Method 2: Redefine TOC styles
+-----------------------------
+
+1. On the Insert menu, click Index And Tables and then click the Table Of
+   Contents tab.
+
+2. Click Modify.
+
+3. Change the TOC styles to reflect the character formatting you want.
+
+4. Click Apply.
+
+5. Click OK.
+
+Method 3: Replace the Table of Contents
+---------------------------------------
+
+1. Select the existing table of contents and press DELETE.
+
+2. On the Insert menu, click Index And Tables and then click the Table Of
+   Contents tab.
+
+3. Click OK.
+
+4. Re-apply the manual formatting you want to the table of contents.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfield 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

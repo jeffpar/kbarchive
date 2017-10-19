@@ -1,0 +1,53 @@
+DOCUMENT:Q120756  08-AUG-2001  [winnt]
+TITLE   :WINS Manager: Static Mapping Expiration Dates are 1/18/38
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbYear2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5x, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Show Database dialog box in Windows Internet Name Service (WINS) Manager,
+the statically mapped entries (which have a check mark in the S column) may have
+an expiration date looking like 1/18/38. The Year column (38) is correct,
+implying the year 2038 (not 1938). Static mapped entries are set to expire on
+the maximum date of the PC's clock and calendar chip. To verify this, select a
+format with a four-digit year by following these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Regional Settings.
+
+3. Click the Date tab.
+
+4. In the Short Date Style box, click a format with a four-digit year (such as
+   MM/dd/yyyy).
+
+5. Click Apply. The year is displayed as 2038.
+======================================================================
+Keywords          : kbYear2000 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

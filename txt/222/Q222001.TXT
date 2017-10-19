@@ -1,0 +1,60 @@
+DOCUMENT:Q222001  22-JUN-2001  [exchange]
+TITLE   :XCLN: No "Open Recurring Item" Prompt in Outlook Calendar
+PRODUCT :Microsoft Exchange
+PROD/VER::8.0,8.01,8.02,8.03; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a recurring appointment in the Outlook Calendar, you may not get
+the following "Open Recurring Item" prompt:
+
+   Appointment subject is a recurring appointment. Do you want to open only this
+   occurrence or the series?
+
+ - Open this occurrence
+
+ - Open the series
+
+Instead, the appointment series is opened.
+
+CAUSE
+=====
+
+This is by design. You only get the "Open Recurring Item" prompt when you are in
+Day/Week/Month view. All other views only allow you to open the series.
+
+Additional query words: 8.0 8.01 8.02 8.03 8.5 9.0
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : :8.0,8.01,8.02,8.03; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,532 @@
+DOCUMENT:Q171926  11-AUG-1999  [homemm]
+TITLE   :Mac Bookshelf 98: Contents of Read Me Document (Complete Text)
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbmm kbreadme
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the complete text of the Read Me file included on the
+Bookshelf 98 for Macintosh compact disc.
+
+MORE INFORMATION
+================
+
+Readme File
+-----------
+
+This file contains information on the following topics:
+
+1. SYSTEM REQUIREMENTS FOR RUNNING MICROSOFT BOOKSHELF
+      - What you need to run Bookshelf 98
+
+2. MEMORY USE
+      - Memory needed to run Bookshelf 98
+      - Running on low-memory machines
+
+3. PERFORMANCE
+      - Tips on how to increase Bookshelf's speed
+
+4. SCREEN SIZES AND COLOR CONFIGURATION
+      - What makes Bookshelf 98 look best
+
+5. SOUND PROBLEMS
+      - Common problems playing sounds and how to fix them
+
+6. PRINTING AND COPYING
+      - How to print and copy information from Bookshelf 98
+
+7. SCRIPTING
+      - How to automate Bookshelf 98 using AppleScript
+
+8. TROUBLESHOOTING
+      - Known problems and ways to work around them
+
+9. SPECIAL INFORMATION ABOUT INTERNET CONFIG
+      - Information on how Bookshelf 98 uses Internet Config to
+        access the Internet.
+
+----------------------------------------------------------
+1. SYSTEM REQUIREMENTS FOR RUNNING MICROSOFT BOOKSHELF
+----------------------------------------------------------
+To install and run Microsoft(R) Bookshelf(R) 98 you need:
+
+- Any Power Macintosh or 25MHz 68030 Macintosh computer that supports
+  a 256-color, 640x480 (13-inch) or higher resolution monitor
+- System 7.1 or later
+- At least 8 MB of random-access memory (RAM) (12MB is recommended for
+  System 7.5 and above)
+- CD-ROM drive (double-speed or faster)
+
+You can run Bookshelf 98 directly from the compact disc. However, to play
+the movies and hear the sounds, QuickTime(TM) 2.0 or later must be
+installed in your System Folder. If Bookshelf 98 can't find these files, it
+will prompt you to run the Installer. You can also install QuickTime
+manually by dragging the files from the System Files folder on the CD onto
+your System Folder icon.
+
+The Bookshelf 98 Installer will add all necessary files to your System
+Folder. It will also copy the Bookshelf 98 program to a folder on your hard
+disk titled "Bookshelf 98". Although installing the application on to your
+hard drive occupies about 8 MB of hard drive space, it makes the program
+launch and run noticeably faster. The text, sounds, and images remain on
+the Bookshelf 98 disc, so you still need to insert the compact disk to run
+Bookshelf.
+
+---------------
+2. MEMORY USE
+---------------
+Bookshelf 98 will run on any Macintosh with 8 MB of RAM. However, 4 MB of
+memory must be free when you launch Bookshelf 98.
+
+Most systems with 8 MB of RAM will not experience problems, but if your
+system software uses more than 4 MB you may need to adjust memory usage for
+Bookshelf 98 to run properly.  If you have System 7.5 or greater installed
+on your computer, your system software may take up more than 6 MB of RAM.
+For users running System 7.5 or greater, we recommend at least 12 MB of
+RAM.
+
+Some general suggestions for optimizing memory usage follow:
+
+- Run only one application at a time. If other applications are running,
+close them, and then relaunch Bookshelf.
+
+- Reduce the amount of memory being used by your system software. To do
+this, return to the Finder and select About This Macintosh... (or About
+This Computer... if you're running System 7.5.5 or later) from the Apple
+menu at the top left corner of the screen. The Largest Unused Block needs
+to be greater than 4096K to run Bookshelf 98. If the only item listed in
+the About This Macintosh dialog is System Software and the Largest Unused
+Block is less than 4096K, reduce the amount of memory used by your system
+software. Refer to your Macintosh documentation for details on how to do
+this, but some general suggestions follow:
+
+- Open the Memory Control Panel and check the Disk Cache setting. Set the
+Disk Cache setting to the lowest amount possible.
+
+- Fonts and sounds consume system memory. You can make more memory
+available by removing those you aren't using.  However, make sure that you
+leave the Arial, Symbol, Times New Roman, and Bookshelf Fonts as these are
+required by Bookshelf 98.
+
+- Third-party system extensions such as screen savers, fax software,
+desktop pictures, menu-modifying utilities, and other system enhancements
+increase the amount of memory consumed by your system software. They may
+also cause a conflict with Bookshelf. Removing some or all of these
+extensions will increase the amount of memory available to applications and
+minimize the risk of conflict. Be sure that you save anything you remove
+from your System Folder and place it in a separate folder on your hard disk
+so that you can replace it later. You can use Apple's Extension Manager or
+an equivalent third-party utility to do this. Please make sure not to
+remove your CD-ROM driver software, or QuickTime as those extensions are
+necessary to run Bookshelf 98.
+
+- Turn on Virtual Memory. Virtual Memory allows you to increase the amount
+of available memory by using space on your computer's hard disk to simulate
+RAM. Although using virtual memory may slow down performance, the extra
+available memory may cause applications like Bookshelf 98 to be allocated
+more memory at start up or allow more applications to be run
+simultaneously. To turn on Virtual Memory, open the Memory control panel,
+switch the Virtual Memory radio button to on, and then restart your
+computer.
+
+Warning: Reducing the minimum size for Bookshelf's memory requirements may
+cause the program to perform poorly. For example, Bookshelf 98 may not be
+able to play video clips or enlarge images if it runs out of memory. If you
+allocate less than 4096K, these problems are likely to result.
+
+For support on Mac OS memory management, please contact Apple Computer,
+Inc.
+
+----------------
+3. PERFORMANCE
+----------------
+If Bookshelf 98 seems to be running slowly or its audio and video clips are
+choppy or interrupted, there are a number of things which may help:
+
+- If you have over 8 MB of available hard drive space, you can install the
+Bookshelf 98 application to your computer's hard drive rather than running
+it directly off the CD-ROM. To install the application to your computer's
+hard drive, double-click the Installer icon on the Bookshelf 98 disc and
+select Easy Install.
+
+- If less than 5 MB of memory are free when you start Bookshelf, you may
+notice some performance problems. Check the previous section, MEMORY USE.
+
+- Increase the preferred size for Bookshelf's memory allocation. Microsoft
+Bookshelf 98 is preset to a suggested memory size of 5000K. If there is
+sufficient additional memory available to run Bookshelf, you can increase
+the amount of memory the program requests by selecting the Microsoft
+Bookshelf 98 application icon on your hard drive, choosing Get Info from
+the File menu, and then changing the preferred size in the area titled
+"Memory Requirements".
+
+Note: If the Bookshelf 98 application is running or busy, these fields may
+be locked. If you encounter this problem, quit Bookshelf, and try again. If
+this persists, restart your computer and try again.
+
+- If you are using Virtual Memory to expand available memory to more than
+double physical RAM capacity, you may find that Bookshelf 98 runs slowly.
+For best performance, turn off Virtual Memory or reduce its allocated size
+in the Memory control panel.
+
+-  Bookshelf 98 is designed to work properly on a CD-ROM drive with a
+150K/sec transfer rate or faster. A double-speed CD-ROM drive or one with a
+faster transfer rate will provide even better performance in some areas. If
+your CD-ROM drive has a sustained transfer rate of less than 150K/sec, it
+may not be able to supply audio and video information to the Macintosh at
+the speed required. This problem can only be fixed by upgrading to a faster
+CD-ROM drive. If you suspect a problem with your drive, ensure that it is
+properly terminated and that its software is properly installed. For
+details on SCSI termination, see your Macintosh or CD-ROM drive
+documentation, or contact your Apple dealer.
+
+- A dirty or scratched compact disc can cause your drive to perform poorly.
+Other symptoms are "Cannot Read" error messages and ceaseless spinning of
+the CD-ROM (these appear to cause the computer to "hang"). Make sure the
+bottom surface of the Bookshelf 98 disc is clean and undamaged.
+
+- If you are using QuickTime 2.0, the video clips and animations in
+Bookshelf 98 will run more smoothly if you upgrade to QuickTime 2.5. To
+install QuickTime 2.5, double-click the Bookshelf 98 Installer icon on the
+Bookshelf 98 disc, select Customize, and install the QuickTime package that
+is appropriate for your Macintosh.
+
+QuickTime Support and Upgrades are available on http://quicktime.apple.com.
+
+-----------------------------------------
+4. SCREEN SIZES AND COLOR CONFIGURATION
+-----------------------------------------
+On startup, Bookshelf 98 checks your monitor to ensure your computer is set
+for at least 256 colors.  If your monitor is set to a lower configuration,
+but the settings can be adjusted to run in 256 colors, you will be prompted
+to change the settings.
+
+Bookshelf 98 will run on any 256-color, 640x480 (13-inch) or higher
+resolution Macintosh compatible monitor, although Bookshelf's video clips
+and still images look best in 16-bit color (thousands of colors) or 24-bit
+color (millions of colors).
+
+Note: Running in 24-bit color (millions of colors) will slow performance
+and cause Bookshelf 98 to consume memory more quickly. If your Macintosh
+normally runs in this color mode and you get out of memory messages, you
+can increase the amount of memory Bookshelf 98 requests by clicking the
+Microsoft Bookshelf 98 icon, choosing Get Info from the File menu, and then
+changing the preferred size in the area titled "Memory Requirements".
+
+Bookshelf 98 is not designed to run in black and white, in 16 colors, or on
+monitors displaying less than 640x480 pixels (e.g., Color Classics, most
+PowerBooks and all 12 inch Apple monitors).
+
+-------------------
+5. SOUND PROBLEMS
+-------------------
+If the audio in Bookshelf 98 is missing or interrupted, check the
+following:
+
+- Sounds will be inaudible if the sound level is turned down. To set the
+sound level, open the Sound control panel and experiment with the speaker
+volume setting until you find a comfortable sound level. If you set the
+sound level to maximum, you may get sound distortion, just as you might on
+a stereo system. With external speakers, be sure they are connected
+properly and turned on; you can usually adjust sound level with the
+external speaker volume knob as well as with the Sound control panel.
+
+- If Virtual Memory is enabled on your Macintosh, sounds may be choppy.
+When Virtual Memory is turned on, sounds are sometimes temporarily stored
+on the hard disk rather than in physical RAM. For optimal performance,
+Virtual Memory should be turned off. To disable Virtual Memory, open the
+Memory control panel, click the Virtual Memory Off button, and then restart
+your computer.
+
+Note: You must have a sufficient amount of RAM to run your both your System
+Software and Bookshelf 98 (and any other applications) with Virtual Memory
+turned off.  Also note that it may not be appropriate to turn off Virtual
+Memory on a Power Macintosh.  Please see your manual for more information
+about Power Macintoshes and Virtual Memory.
+
+- In low memory situations, sounds may not load or play. If you cannot get
+a sound to play and are sure that your Sound control panel is set
+correctly, or you are receiving error messages when attempting to play
+sounds, you may need to allocate more memory for Bookshelf. See the MEMORY
+USE section for suggestions on how to solve memory problems.
+
+- Some sounds used in Bookshelf 98 are stored on the disc in a compressed
+format. In order to be played, the sound must be read from the disc and
+decompressed. Older or slower Macintoshes (such as the Macintosh IIci and
+Macintosh LC III) may experience interruptions in audio playback.
+
+- In some situations, QuickTime 2.0 and Sound Manager 3.0 may have
+insufficient system memory available to play sounds. Upgrading to QuickTime
+2.5, included with Bookshelf 98, should improve the system's ability to
+play sounds under these conditions.
+
+- Version 1.5.1 of Connectix RAM Doubler(TM) has a known bug that prevents
+audio and video clips from playing properly on Power Macintosh models. To
+obtain upgrade information, contact Connectix Corporation. For RAM
+Doubler(TM) support see http://www.connectix.com.
+
+- There are some incompatibilities with Now Menus and Bookshelf 98 audio.
+Adjusting the volume of the audio via the Now Menus customized menus should
+be avoided while Bookshelf 98 is running. For Now Menus support see
+http://www.nowsoft.com.
+
+------------------------
+6. PRINTING AND COPYING
+------------------------
+You can print or copy from any article within Bookshelf 98 by selecting a
+range of text and choosing the appropriate command from the File or Edit
+menu. To copy a media element, select it by holding down the Control key
+and then click on the image. In the shortcut menu that appears, choose
+Copy. Please note that sounds cannot be copied due to copyright
+restrictions.
+
+If you find that printed text is improperly formatted or that special
+characters do not print correctly, try the following:
+
+- Turn off Background Printing. Bookshelf 98 stores its custom TrueType
+fonts within the application. This provides Bookshelf 98 access to these
+custom fonts without taking up space on your hard drive. However, because
+many printer drivers launch a separate application to manage the printer
+queue and handle print jobs in the background, printing errors may result
+when Background Printing is enabled. To disable Background Printing, open
+the Chooser, select the active printer and switch the Background Printing
+radio button to off.
+
+Note: If you install the Bookshelf 98 TrueType fonts, Background Printing
+is fully supported. To install these fonts, start the Installer on the
+Bookshelf 98 disc, choose Customize from the popup menu, select Bookshelf
+98 Fonts, and press Return.
+
+------------
+7. SCRIPTING
+------------
+You can use Microsoft Bookshelf to look up and define words from
+AppleScript, QuicKeys, Userland Frontier or any OSA-compliant scripting
+environment. The Microsoft Bookshelf custom AppleEvent suite is defined
+as follows:
+
+Bookshelf Suite: Events to look up words or phrases using Microsoft
+                 Bookshelf
+
+Find: Search for a word or phrase in a Bookshelf reference source
+      Find string [in  book]
+         -- Specific reference source to search
+
+Contents: Search for a word or phrase in the table of contents
+     Contents string [in  book]
+             -- Specific reference source to search
+
+Define: Define a word or phrase
+   Define string
+
+Enumeration book: A Microsoft Bookshelf reference source
+
+All -- All books contained within Microsoft Bookshelf
+Dictionary -- The American Heritage Dictionary of the English Language
+Thesaurus -- The Original Roget's Thesaurus of English Words and Phrases
+Quotations -- The Columbia Dictionary of Quotations
+Encyclopedia -- The Concise Columbia Encyclopedia
+Atlas -- The Concise Encarta World Atlas
+Chronology  -- The People's Chronology
+Almanac -- The World Almanac(R) and Book of Facts 1997
+Internet -- The Microsoft Bookshelf Internet Directory 98
+Computer --  The Microsoft Bookshelf Computer and Internet Dictionary 98
+
+Example:
+
+tell application "Microsoft Bookshelf"
+   activate
+   Contents "Macintosh" in Internet
+end tell
+
+The above AppleScript code will look up all articles in the Internet
+Directory that contain the word "Macintosh".
+
+Microsoft does not provide AppleScript support.  If you are interested in
+finding out more about AppleScript, please contact Apple Computer, Inc. or
+see their web site at http://www.apple.com.
+
+--------------------
+8. TROUBLESHOOTING
+--------------------
+If you find that you are experiencing trouble, first check the following:
+
+- Wrong or Multiple Versions of QuickTime(TM)
+During installation, the Installer checks the versions of QuickTime and
+Sound Manager present on your Macintosh and, if necessary, replaces them
+with newer versions. However, the Installer cannot remove older versions if
+you or another installer program have renamed them. For example, if you
+renamed an older version of QuickTime to "Old QuickTime", the Bookshelf 98
+Installer would install a newer version of QuickTime, but would fail to
+remove the older version. The same would happen if another installer
+application placed a file, "QuickTime 2.0" in the Extensions folder. The
+only QuickTime files should be named, QuickTime(TM), QuickTime(TM)
+PowerPlug (Power Mac only), QuickTime(TM) Musical Instruments and
+QuickTime(TM) Settings. To fix this problem, manually remove any renamed
+copies of these system components and restart your Macintosh.
+
+- Font Display Problems
+Microsoft Bookshelf 98 uses custom fonts to represent special and
+international characters. These characters usually don't correspond to
+special characters within the standard Macintosh character set and will
+appear as inappropriate or non-printing characters when copied to an
+application such as SimpleText. However, these special and international
+characters will print correctly if you print from Bookshelf 98 or install
+the Bookshelf 98 Fonts and paste into an applications that support Rich
+Text Format (RTF) such as Microsoft Office and Microsoft Works.
+
+- Problems Running Bookshelf on System 7.0
+Due to an incompatibility among Microsoft Bookshelf, Apple Guide 2.0, and
+versions of System 7.0, access to the Bookshelf Guide from within the
+Bookshelf 98 application has been disabled with this configuration and the
+minimum configuration for Bookshelf 98 is 7.1. To fix this problem, upgrade
+to System 7.1 or later.
+
+- Problems installing Bookshelf or changing Bookshelf's memory partition
+In order to minimize the number of extensions that Microsoft Bookshelf 98
+must install in your System Folder, we have built several PowerPC shared
+libraries into the Microsoft Bookshelf 98 application itself. Since these
+libraries can stay open even after you quit the application, you may be
+unable to delete the Microsoft Bookshelf 98 application or edit the
+application's memory partition sizes in Get Info until you restart your
+Macintosh.
+
+- Unsuccessful searches in Quick Zip Code
+In some instances the Quick Zip Code may be unable to suggest a zip code
+based on a street address alone. In this case, try using a specific city
+name (spelled correctly) and/or a state name to narrow down zip code
+information.
+
+- Internet Connection Difficulties
+Depending on your Internet connection, it may take up to several minutes
+for your browser to successfully connect with a site that you have launched
+from the Internet Directory. You should wait to see if the connection is
+successful before returning to the Internet Directory and attempting to
+initiate another link. Attempting to connect with multiple Internet sites
+simultaneously is not recommended.
+
+--------------------------------------------------------------
+9.  SPECIAL INFORMATION ABOUT BOOKSHELF 98 AND THE INTERNET
+--------------------------------------------------------------
+
+For the online features in Bookshelf 98 to work, you will need access to
+the Internet through an Internet Service Provider (ISP).  These online
+features include URLs in the Internet Directory and in the Help Menu.
+
+You may already have an ISP through your employer or academic institution.
+However, if you want to use the Internet for personal use, you may need to
+find an ISP that sells Internet access to the general public. If you use an
+ISP with proprietary software, be sure to ask if they have a Macintosh
+version - some are Windows-only - and find out if the Macintosh version has
+similar features to the Windows version.
+
+Most Macintosh users access the Internet with their modem through a SLIP or
+PPP account using a freeware control panel (although there are commercial
+versions and Apple has recently released its own PPP control panel designed
+for use with Open Transport 1.1.2). Whether you will use SLIP or PPP
+depends on what software you have and which protocol your ISP supports, but
+PPP is the more flexible protocol and has lately become much more
+prevalent. These accounts let you run graphical Internet applications that
+work and feel just like Macintosh applications should. If your computer has
+enough memory, you can even run several Internet programs concurrently with
+Bookshelf.
+
+Setting up a SLIP/PPP control panel and configuring the MacTCP or the
+TCP/IP control panel (included with Open Transport in System 7.5.2 and
+later) can be a bit overwhelming. Your ISP should walk you through this
+process, providing you with critical information like DNS addresses and
+search domains, as well as the essential phone numbers and modem settings
+to get you up and running on their service.
+
+When Bookshelf 98 launches an Internet application, the browser assumes
+that you have a TCP/IP connection already established. Some SLIP/PPP
+control panels will automatically dial up and initiate a session when you
+launch an Internet application, but often the time lag required for dialing
+and negotiating the connection exceeds the timeout on the request. So you
+should usually connect to your ISP prior to using the Internet Directory or
+other features that connect you to the Internet.
+
+Depending on the speed of your Internet connection, it may take up to
+several minutes for your Web browser to successfully connect with a site
+that you have launched from Bookshelf 98. You should wait to see if the
+connection is successful before returning to Bookshelf and attempting to
+initiate another link. Attempting to connect with multiple Internet sites
+simultaneously is not recommended.
+
+Bookshelf 98 uses software called Internet Config to determine which Web
+browser should be used to connect to the Web. If you aren't currently using
+Internet Config, it will be installed for you when you run the Bookshelf 98
+Installer.  Also your Internet Preferences will be preset to use Internet
+Explorer to handle the following Internet resource types: Web (http), FTP
+(ftp), Gopher (gopher), Email (mailto) and Usenet News Groups (news). If
+you want to use a different browser or override any of these defaults, you
+can start the Internet Config application and change the Helper application
+for that resource type.
+
+Note: For more information on Internet Config, please see the User
+Documentation provided in the Internet Config 1.3 folder.
+
+HOW TO CHOOSE YOUR BROWSER WITH INTERNET CONFIG:
+
+If Internet Config is not set up properly, you may see the following
+error message:
+
+   Internet Config is not properly installed. Please launch Internet
+   Config and ensure that you have a valid helper application selected
+   for this Internet resource type.
+
+Or you may simply click on an Internet Link in Bookshelf 98 and have
+nothing happen.  If this is the case you need to use Internet Config to
+select your HTTP Helper application. To select the helper application,
+do the following:
+
+1. Locate and open the Internet Config 1.3 folder on your hard drive.
+
+2. Double-click the Internet Config application icon.
+
+3. In the Window menu, choose the Helpers item.
+
+4. Select the HTTP icon, and then click Change.
+
+5. Click Choose Helper.
+
+6. Navigate to the location of web browser.
+
+7. Select the application, and then click Open.
+
+8. Click OK.
+
+9. On the File menu, click Quit, and then click OK when prompted to
+   save the changes.
+
+Additional query words: multi-media multimedia multi media
+
+======================================================================
+Keywords          : kbmm kbreadme 
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1998Mac
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

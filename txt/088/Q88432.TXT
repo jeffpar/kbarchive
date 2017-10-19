@@ -1,0 +1,69 @@
+DOCUMENT:Q88432  01-OCT-1999  [win95x]
+TITLE   :STB Video Cards and Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following STB (Simply The Best) video cards run with Microsoft Windows:
+
+Card                   Notes
+----                   -----
+
+Powergraph VGA         Has a driver to support 1024 x 768 with 256
+                       colors; this card needs at least 1 MB of
+                       memory to support this video mode
+
+Auto VGA               Uses a Microsoft driver for standard VGA
+
+VGA Extra Em           Uses a Microsoft driver for standard VGA
+
+VGA EM-16              Uses a Microsoft driver for standard VGA; only
+                       runs in standard mode unless BIOS is 1.33
+                       or greater
+
+640 VGA and VGA 80/16  May require a BIOS upgrade from STB if the
+                       BIOS version is 1.78 or earlier
+
+If you use these cards while running in 386 enhanced mode of Windows operating
+system version 3.1, and you are experiencing erratic mouse behavior after
+exiting from the MS-DOS Prompt, you may need to update your STB Systems video
+drivers. Video driver incompatibility may also terminate Windows and return you
+to the MS-DOS command prompt.
+
+STB video cards are manufactured by STB, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding these cards' performance or
+reliability.
+
+Additional query words: 3.00 3.00a 3.10 3.11 3rdparty adapter graphics
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

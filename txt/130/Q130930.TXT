@@ -1,0 +1,51 @@
+DOCUMENT:Q130930  08-AUG-2001  [winnt]
+TITLE   :Creating a Boot Floppy for a Multibus SCSI Adapter
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+To create an FT boot floppy to boot the mirror drive attached to the
+secondary channel/bus of a Multibus SCSI adapter, you must modify the
+Arc path in the BOOT.INI file. For scsi(x)disk(y)rdisk(z)parition(a), the
+variable (y) should be calculated as follows:
+
+   y= [ (scsi bus/channel number) x (32) ] + (scsi id of the disk)
+
+For example, the Adaptec AHA-2740T/2742T has two channels; SCSI Channel A
+(bus 0) and SCSI Channel B (bus 1). Each channel can accommodate a SCSI bus
+with up to seven devices. If the Windows NT mirror drive is located on the
+first partition on a SCSI disk with the target ID of 4, and is connected to
+SCSI Channel B (bus number 1) of an Adaptec AHA-2742T controller, the ARC
+name in the BOOT.INI file would be:
+
+   scsi(0)disk(36)rdisk(0)partition(1)
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q98014  11-NOV-1999  [pcmail]
+TITLE   :PC WFW: Schedule+ for Windows Disk 3 [5.25, 1.2 MB)
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory listing of the version 1.0 Microsoft Schedule+
+for Windows Disk 3 - Program 2, 5.25-inch format.
+
+ Volume in drive A is DISK2
+ Volume Serial Number is 2423-3310
+ Directory of A:\ 
+
+AB       DL_     52231 10-06-92  12:00a
+DEMILAYR DL_     28770 10-06-92  12:00a
+FRAMEWRK DL_    123187 10-06-92  12:00a
+MAILMGR  DL_     23745 10-06-92  12:00a
+MAILSPL  EX_     25713 10-06-92  12:00a
+MSSFS    DL_    147374 10-06-92  12:00a
+NVCONN   DL_      5789 10-06-92  12:00a
+PABNSP   DL_     23237 10-06-92  12:00a
+STORE    DL_    129383 10-06-92  12:00a
+TRNSCHED DL_      7985 10-06-92  12:00a
+WINHELP  EX_    147911 10-06-92  12:00a
+       11 file(s)     715325 bytes
+
+Total files listed:
+       11 file(s)     715325 bytes
+                      495616 bytes free
+
+Additional query words: 1.00a dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3 kbMailScheduleX300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,54 @@
+DOCUMENT:Q186482  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Modifications to NetDDE
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When NETDDE starts in Windows NT Server or Windows NT Workstation, NETDDE
+registers the computer name on the network with the NetBIOS designation of
+[1fh]. To register this name for use by NETDDE, the computer name must be
+unique. This is normally not a problem because computer names must be unique in
+any case. However, NETDDE in Terminal Server registers as [1fh] with the user
+name rather than the computer name. This makes sense because all the users
+connected to the Terminal Server will use the same computer name, making NETDDE
+impossible. However, registering NETDDE with the user name introduces a new
+requirement that all users on the network use unique user names if NETDDE is
+going to be used. If NETDDE is not used, this should not be a concern. Users who
+use the Terminal Server client to connect to multiple sessions will find that
+NETDDE will only start in the first session if they try to use the same user
+name for multiple sessions.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

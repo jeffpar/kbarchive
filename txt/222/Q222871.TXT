@@ -1,0 +1,86 @@
+DOCUMENT:Q222871  06-AUG-2002  [winnt]
+TITLE   :Err Msg: "Drive Is Not Ready for Use" with Removable Media
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use removable media devices (such as the Iomega Zip drive or the Iomega
+Jaz drive) with Windows NT, the following error message may be displayed after
+startup:
+
+   The drive is not ready for use; its door may be open. Please check drive
+   \<Device>\<Harddisk1>\<Partition1> and make sure that a
+   disk is inserted and that the drive door is closed.
+
+NOTE: The <Device>, <Harddisk>, and <Partition> values may be
+different, based on your configuration.
+
+CAUSE
+=====
+
+This behavior occurs because removable media can be reported as malfunctioning
+if a cartridge is not present in the removable media device.
+
+When the disk controller BIOS queries a removable media device, it stores the
+device status information in memory. At startup, Windows NT sends a query to
+determine the status of devices connected to the disk controller. Depending on
+the firmware installed, the BIOS revision, or the characteristics of the disk
+controller, removable media can be reported as malfunctioning if a cartridge is
+not present in the removable media device.
+
+RESOLUTION
+==========
+
+To resolve this problem, place a cartridge in the removable media device and
+restart Windows NT.
+
+MORE INFORMATION
+================
+
+This problem may occur on either IDE-based or SCSI-based systems.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q171213 Copy to Removable Drive in Explorer May Fail After Media Swap
+
+   Q159456 Using IOMEGA Zip IDE Insider under Windows NT
+
+Additional query words: syquest
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

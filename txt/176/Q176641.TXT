@@ -1,0 +1,97 @@
+DOCUMENT:Q176641  11-JAN-2001  [vbwin]
+TITLE   :FIX: Do Until Loop Evaluates "True" as -1 Exclusively
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Do Until loop that uses a literal or a variable of type Integer as a
+conditional will execute endlessly if the value is not -1.
+
+RESOLUTION
+==========
+
+Use a variable of type Variant or Long as the conditional argument for the loop.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+Visual Basic defines "True" to mean "non-zero." Any value that is not zero
+should be evaluated as True. The Do Until loop in Visual Basic 5.0, however,
+evaluates only -1 as True if a literal value or a variable of type integer is
+used for the conditional argument.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Method 1:
+
+1. Place the following code on a CommandButton on a Visual Basic 5.0 form:
+
+         Debug.Print "A"
+         Do Until 3
+            Debug.Print "B"
+         Loop
+         Debug.Print "C"
+
+2. Click the button. This loop will print "B" endlessly. (Press CTRL-BRK to stop
+   execution.)
+
+Method 2:
+
+1. Place the following code on a CommandButton on a Visual Basic 5.0 form:
+
+         Dim i As Integer
+         i = 3
+         Debug.Print "A"
+         Do Until i
+            Debug.Print "B"
+         Loop
+         Debug.Print "C"
+
+2. Click on the button. This loop will print "B" endlessly. (Press CTRL-BRK to
+   stop execution.)
+
+   NOTE: In both cases, the loop that prints "B" should not execute.
+
+Additional query words: infinite loop iterate kbVBp500bug kbVBp600fix kbVBp kbdsd kbDSupport kbVBA
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

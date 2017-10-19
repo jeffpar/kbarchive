@@ -1,0 +1,67 @@
+DOCUMENT:Q167162  08-NOV-2001  [homekids]
+TITLE   :Kids Plus: Custom Icons Appear in User Start Menu Profiles
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Microsoft Plus! for Kids Protect It!, programs (.exe, .bat,
+and .com files) that have custom icons may appear on the first level of the
+Start menu.
+
+For example, you may specifically add (by using the More button) a program to the
+Allowed Programs list for a family member. Because the program has a custom
+icon, it did not previously appear on the Start menu.
+
+After installing Protect It!, the .exe file icons are grouped together with the
+other icons on the Start menu. This behavior occurs only with programs with
+custom icons, not with those with a default MS-DOS icon.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. Log in as the appropriate family member.
+
+2. Use the right mouse button to click the Start button, and then click Open.
+
+3. Double-click the Programs folder to open it.
+
+4. Delete the icons that you do not want to appear on the Start menu.
+
+Or, you can edit user Start menu profiles for each user in the
+C:\Windows\Profiles\<username>\Start Menu folder.
+
+Additional query words: kids kidsplus kidsplus! pack plus plus!
+
+======================================================================
+Keywords          : kbui 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

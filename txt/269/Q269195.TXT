@@ -1,0 +1,66 @@
+DOCUMENT:Q269195  23-OCT-2000  [winnt]
+TITLE   :Active Directoy MA Does Not Allow DN
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Management Agent (MA) logon information used to connect to Active
+Directory is specified as a distinguished name (DN), the MA cannot locate Active
+Directory. The operator's log may contain an error message similar to the
+following:
+
+   ERR_00 0590 00/07/20 14:54:10.202 (AD-MA_doSchemaDiscovery) Couldn't bind to
+   bpdomain.local: LDAP error 49, Invalid Credentials.
+
+CAUSE
+=====
+
+This behavior occurs because the MA requires the user's credentials to be set up
+either as a user principal name, for example, user@domain.com, or in down-level
+domain format, for example, domain\user.
+
+RESOLUTION
+==========
+
+To resolve this behavior, you must set up the user's credentials either as a
+user principal name, or in down-level domain format.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: metadirectory, via, zoomit, adma
+
+======================================================================
+Keywords          :  
+Technology        : kbMMSSearch kbMMS220
+Version           : :2.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

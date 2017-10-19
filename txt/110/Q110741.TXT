@@ -1,0 +1,56 @@
+DOCUMENT:Q110741  13-OCT-1999  [win3x]
+TITLE   :Printer Drivers Included in WFWG 3.1 but Not WFWG 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+Some of the printer drivers included in Windows for Workgroups version 3.1
+are not included in Windows for Workgroups version 3.11. The following list
+of printer drivers are included with version 3.1 but are not included in
+version 3.11.
+
+Printer                              Driver Filename
+----------------------------------------------------
+
+C-Itoh / AT&T 470/475                  CITOH.DRV
+C-Itoh 8510                            CITOH.DRV
+Hermes H 606 PS (13 fonts)             HERMES_1.WPD
+Hermes H 606 PS (35 fonts)             HERMES_2.WPD
+IBM Color Printer                      IBMCOLOR.DRV
+Olivetti DM 109                        OLIVETI1.WPD
+Olivetti DM 309                        OLIVETI2.WPD
+TI 850/855                             TI850.DRV
+Triumph Adler SDR 7706 PS13            TRIUMPH1.WPD
+Triumph Adler SDR 7706 PS35            TRIUMPH2.WPD
+Unisys AP9415                          U9415470.WPD
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,72 @@
+DOCUMENT:Q256283  10-MAR-2000  [iis]
+TITLE   :Error Message: The Pipe Has Ended
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you choose full or summary hit highlighting for one of your search results,
+you may receive the following error message:
+
+   The pipe has ended
+
+CAUSE
+=====
+
+This error message occurs if the document you are trying to run hit highlighting
+against is located on a virtual root that points to a UNC path on another
+computer. By default, the folder that contains the hit highlighting code
+(Inetpub/Iissamples/Issamples/Oop) is set to run out of process. When it id run
+out of process, it cannot access data on remote computers.
+
+RESOLUTION
+==========
+
+To resolve this issue, perform the following steps:
+
+1. In the IIS Microsoft Management Console (MMC), locate the Web site that the
+   search is under.
+
+2. Right-click the Inetpub/Iissamples/Issamples/Oop folder, and then click
+   Properties.
+
+3. On the Directory tab, click to uncheck the Run in separate memory space
+   (isolated process) check box.
+
+The folder will now execute in process and allow the hit highlighting code to
+successfully work on data that is on virtual roots pointing to UNC shares.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

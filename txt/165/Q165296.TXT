@@ -1,0 +1,67 @@
+DOCUMENT:Q165296  11-DEC-1999  [foxpro]
+TITLE   :PRB: Hiding Standard Toolbar Moves Position of Command Window
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbtool kbui kbHWMAC kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Command window shifts upward when undocking or closing (via the Toolbars
+selection from the View menu) the Standard toolbar or any docked toolbar when
+this removes a toolbar docking level. The Visual FoxPro desktop, Form Designer,
+Project Manager, Report Designer, Database Designer, user-designed forms and
+just about everything in Visual FoxPro all exhibit this behavior. Conversely,
+the windows shift down when another toolbar docking level is added.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Position the Command window flush against the lower left corner of the Visual
+   FoxPro desktop.
+
+2. Click Toolbars from the View menu. Clear the check box next to Standard.
+
+3. The Command window shifts slightly upward from its original position.
+
+Changing the value of SET MACDESKTOP does not change this behavior.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbui kbHWMAC kbvfp 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

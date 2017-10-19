@@ -1,0 +1,74 @@
+DOCUMENT:Q245071  10-AUG-2001  [winnt]
+TITLE   :Cannot Use Telnet on UNIX Workstation Through Proxy Server 2.0.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:2.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to use a telnet client program on a UNIX workstation to
+connect to another computer through a machine that is running Microsoft Windows
+NT Server 4.0 and Microsoft Proxy Server 2.0.
+
+CAUSE
+=====
+
+This behavior can occur if the telnet client program on the UNIX workstation is
+not fully compatible with Socks version 4.3a.
+
+RESOLUTION
+==========
+
+To resolve this issue, use a telnet client program that is fully compatible with
+Socks version 4.3a on the UNIX workstation.
+
+MORE INFORMATION
+================
+
+Socks is a cross-platform mechanism that establishes secure communications
+between client and server computers. The Socks Proxy Service supports Socks
+version 4.3a and allows network users transparent access to the Internet by
+means of a Proxy Server. The Socks Proxy Service extends the redirection
+provided by the WinSock Proxy service to non-Windows platforms. It uses
+Transmission Control Protocol/Internet Protocol (TCP/IP) and can be used for
+TELNET, File Transfer Protocol (FTP), Gopher, and Hypertext Transfer Protocol
+(HTTP). The Socks Proxy Service does not support applications that rely on the
+User Datagram Protocol (UDP).
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: nt 4.0 fail proxy telnet
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbProxyServSearch kbProxyServ200
+Version           : winnt:2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

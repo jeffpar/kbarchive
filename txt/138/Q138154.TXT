@@ -1,0 +1,72 @@
+DOCUMENT:Q138154  17-DEC-2000  [win95x]
+TITLE   :FOR Command Does Not Support Long Filenames in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the MS-DOS FOR command in Windows 95, long filenames (LFNs) may not
+be handled correctly in MS-DOS sessions or with LAN Manager version 2.11
+servers.
+
+CAUSE
+=====
+
+When you use the FOR command in Windows 95, LFN support is turned off. This
+behavior is by design.
+
+RESOLUTION
+==========
+
+Use the "LFNFOR ON" command before you execute a FOR command in a batch file.
+
+For example, the following batch file displays all LFNs on the screen:
+
+   @echo off
+   lfnfor on
+   for %%I in (*.*) do echo %%I
+
+In this example, the "LFNFOR ON" command causes LFNs to be displayed correctly. A
+file named "New Text Document.txt" is displayed with its full name. Without the
+"LFNFOR ON" command, the file would be displayed with its 8.3 filename of
+"Newtex~1.txt."
+
+MORE INFORMATION
+================
+
+The LFNFOR command enables and disables LFN support when processing FOR
+commands. Use "LFNFOR ON" to enable LFN support, and "LFNFOR OFF" to disable LFN
+support.
+
+Type "lfnfor" without a parameter to display the current setting. The default
+value is LFNFOR OFF.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

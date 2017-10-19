@@ -1,0 +1,74 @@
+DOCUMENT:Q116236  09-DEC-1999  [homemm]
+TITLE   :Baseball: Custom Modem Setting Disappears When Not Selected
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball for Windows, version 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your custom modem settings will not be retained when you choose a predefined
+setting in Complete Baseball. If you do not leave Baseball set to your custom
+settings, you may have to retype these settings every time you want to reselect
+them.
+
+Microsoft has confirmed this to be a problem in Complete Baseball for Windows,
+1994 edition. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In Complete Baseball, choose Options.
+
+2. Choose Baseball Daily Settings.
+
+3. Choose Modem Settings.
+
+4. Choose Advanced Settings.
+
+   The default setting is Hayes-Compatible. Under Other, the unavailable (dimmed)
+   modem command setting "ATQ0V1E0X4S0=0" appears.
+
+5. Select Other and type any text (such as "test" (without the quotation
+   marks)).
+
+6. Select Hayes-Compatible again.
+
+The text you typed under Other disappears. The Other setting reverts back to its
+original string setting. Your custom entry should remain in the Other list even
+when Other is no longer selected.
+
+Additional query words: 1994 multi media multimedia multi-media deleted gone daily online electronic
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

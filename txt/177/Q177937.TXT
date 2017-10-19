@@ -1,0 +1,103 @@
+DOCUMENT:Q177937  10-FEB-2002  [visualc]
+TITLE   :FIX: Debugger Cannot Watch Function Returning struct or union
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,5.0sp1,5.0sp2,6.0
+OPER/SYS:
+KEYWORDS:kbDebug kbide kbVC500bug kbVC600bug kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Integrated Debugger, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 5.0sp1, 5.0sp2, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 5.0sp1, 5.0sp2, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Adding a function call in the Developer Studio debugger Watch window may result
+in the following message if the function returns a struct or union with a field
+width greater than 4 bytes:
+
+   Error: cannot display value
+
+RESOLUTION
+==========
+
+There is no workaround for this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The following procedure reproduces this problem:
+
+1. Create a new console application project and add the following file to the
+   project:
+
+         /* File: TEST.CPP */ 
+
+          struct _XX
+              {
+              char   m1;
+              char   m2;
+              char   m3;
+              char   m4;
+              } XX;
+
+          struct _XX fun()
+          {
+              return XX;
+          }
+
+          int main()
+          {
+              fun();
+              return 0;
+          }
+
+2. Build the project.
+
+3. Click Build|Start Debug|Step Into on the Developer Studio menu.
+
+4. Goto the Watch window by selecting View|Debug Windows|Watch.
+
+5. Add the following watch expression in the "Name" column: fun()
+
+Results: You will see the message "Error: cannot display value" in the "Value"
+column.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbide kbVC500bug kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : :5.0,5.0sp1,5.0sp2,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

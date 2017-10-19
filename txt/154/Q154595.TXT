@@ -1,0 +1,79 @@
+DOCUMENT:Q154595  11-JAN-2002  [exchange]
+TITLE   :XADM: Directory Won't Start If System Date Later Than 2038
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start the Microsoft Exchange Directory service, you may
+receive the following error message:
+
+   Could not start the Microsoft Exchange Directory service on \\servername.
+
+   Error 2140: An internal Windows NT error occurred.
+
+In addition, the following events may appear in the application event log:
+
+    - Event ID: 5000
+   Source: MSExchangeIS
+   Type: Error
+   Category: General
+
+   Description: Unable to initialize the Microsoft Exchange Information Store
+   service. Error 4015.
+
+    - Event ID: 1121
+   Source: MSExchangeIS
+   Type: Error
+   Category: General
+
+   Description: Error 4015 connecting to the Microsoft Exchange Information
+   Server Directory Service.
+
+CAUSE
+=====
+
+The Directory service will not start if the system date is later than January
+17, 2038.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+versions 4.0 and 5.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: internal id 30d0180 1166 2140
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

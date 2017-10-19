@@ -1,0 +1,67 @@
+DOCUMENT:Q99808  09-DEC-1999  [win16sdk]
+TITLE   :MsgColor.exe Changes Msg. Box Background & Text Color
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbMessageBox kbGrpDSUser kbOSWin310
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MsgColor.exe is a sample file that demonstrates how to change the background and
+text color of a message box by subclassing the message box.
+
+MsgColor.exe implements the ColorMessageBox() function, which creates a message
+box whose background and text color can be changed. The function subclasses the
+message box and processes WM_CTLCOLOR to modify the colors. Subclassing the
+message box requires obtaining the window handle of the message box. The window
+handle is obtained using a WH_CBT hook. The hook is called when the message box
+is created, and provides access to the window handle.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Msgcolor.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbMessageBox kbGrpDSUser kbOSWin310 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

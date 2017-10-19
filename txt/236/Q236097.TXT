@@ -1,0 +1,101 @@
+DOCUMENT:Q236097  13-AUG-1999  [foxpro]
+TITLE   :PRB: ReadMethod Returns Name of Method at Run Time
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbOOP kbvfp600 kbXBase kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+At design time, calling the ReadMethod function returns the text of the
+specified method. At run time, calling the ReadMethod function returns only the
+name of the method.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual FoxPro, create a new project.
+
+2. Change to the Code tab, highlight Programs and click the New button. Add the
+   following code in the code window:
+
+   DO FORM form1
+   READ EVENTS
+
+3. Save the new program file as main.prg.
+
+4. Change to the Documents tab, highlight Forms and click the New button.
+
+5. Add the following to the events in the form:
+
+FORM.LOAD:
+
+   WAIT WINDOW THIS.READMETHOD('CLICK')
+
+FORM.CLICK:
+
+   'THIS IS THE CODE IN THE CLICK OF THE FORM
+
+FORM.UNLOAD:
+
+   CLEAR EVENTS
+
+6. Save the form as Form1 and close the designer.
+
+7. On the Project Manager, click the Build button and build an executable file
+   named Mytest.exe.
+
+8. Change back to the Code tab in the Project Manager, highlight Main.prg, and
+   click the Run button. Note that when the form is launched, a WAIT WINDOW
+   appears with the text that was entered in the Click method of the form. Close
+   the form with the close box.
+
+Now, launch Windows Explorer and navigate to the directory that contains
+Mytest.exe (built earlier in step 7). Double-click the executable. Note that a
+WAIT WINDOW with only the method name 'Click' appears.
+
+REFERENCES
+==========
+
+For additional information about ReadMethod, please click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q190547 ReadMethod Only Returns Method Text From Visual Class
+
+   Q130440 INFO: Reserved Words in Visual FoxPro
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbvfp600 kbXBase kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

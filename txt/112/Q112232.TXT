@@ -1,0 +1,66 @@
+DOCUMENT:Q112232  28-OCT-1999  [pcmail]
+TITLE   :FaxDrv: Installing the Fax Driver for Windows
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail Gateway to FAX Windows printer driver is a Windows printer
+driver designed to function with Microsoft Mail for Windows and the Microsoft
+Mail Gateway to FAX. The driver enables a Windows document or image to be sent
+through Mail Windows for Windows to the Mail Gateway to FAX.
+
+MORE INFORMATION
+================
+
+The windows driver is installed like any Windows printer driver.
+
+1. Open the Control Panel and select Printers.
+
+2. Select the Add button.
+
+3. In the List of Printers box, select Install Unlisted or Updated Printer.
+
+4. Choose the Install button.
+
+5. When the dialog box appears prompting for the diskette, insert the Microsoft
+   FAX diskette and type A:\usa or B:\usa at the prompt.
+
+6. In the List of Printers dialog box, make sure Microsoft Fax is selected.
+   Choose the OK button. The Microsoft Fax printer driver is now installed.
+
+NOTE: The Send Fax command is added to the File menu of Microsoft Word for
+Windows and Microsoft Excel.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

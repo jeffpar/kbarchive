@@ -1,0 +1,68 @@
+DOCUMENT:Q269579  11-JAN-2001  [vbwin]
+TITLE   :PRB: Tabbed Dialog Control Has Different Behavior on Non-VB Form
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbCOMt kbCtrl kbVBp500 kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When placing the Microsoft Tabbed Dialog Control on a non-Visual Basic form, the
+design-time behavior is different than it is when the control is placed on a
+Visual Basic Form. Specifically, when a tab is clicked, any child controls on
+other tabs are still visible.
+
+CAUSE
+=====
+
+This behavior occurs because the Microsoft Tabbed Dialog Control uses a private
+Visual Basic specific interface, IVBGetControl, to iterate through all the child
+controls on the form. The IVBGetControl interface is not documented and it is
+not available in containers other than Visual Basic.
+
+RESOLUTION
+==========
+
+Currently, there is no solution to using the same design time features of the
+Microsoft Tabbed Dialog Control outside of a Visual Basic form.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbCtrl kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

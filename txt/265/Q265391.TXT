@@ -1,0 +1,59 @@
+DOCUMENT:Q265391  23-OCT-2000  [exchange]
+TITLE   :XADM: Exchange Server Honors Message Expiry Even If Incorrect
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Messages that come into an Exchange Server site may be rejected without
+notification to the sender if the message has an expiry time and it is earlier
+than the Exchange Server computer's current date and time.
+
+MORE INFORMATION
+================
+
+Users of Internet mail can set a message expiry time. This defines how long the
+message will stay in the recipient's Inbox. If the expiry time of the incoming
+message is earlier than the Exchange Server computer's current date and time,
+the message is discarded without notification because the Exchange Server
+computer recognizes the message as already expired.
+
+This behavior is by design. E-mail clients set message expiry. Simple Mail
+Transfer Protocol (SMTP) e-mail users should not stamp an outbound message with
+expiry, and when they do SMTP e-mail clients act unexpectedly if the message
+expiry has the current date and time as the message.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Component         : SMTP
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,51 @@
+DOCUMENT:Q121076  06-NOV-1999  [win16sdk]
+TITLE   :Video for Windows DK Setup Script Function VflatdPresent
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1; :1.1,1.1d,1.1e
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+ - Microsoft Video for Windows Development Kit, versions 1.1, 1.1d, 1.1e 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Video for Windows Runtime setup script (SETUP.MST) contains calls
+to a number of functions. All the functions are documented except for the
+VflatdPresent() function.
+
+The VflatdPresent() function detects whether the line "device=dva.386" exists in
+the SYSTEM.INI file. If the line doesn't exist, the CreateSysIniKey() function
+creates the entry. This code is necessary to avoid the possibility of having two
+identical entries in the SYSTEM.INI file, which would result in a warning being
+generated during setup. The DVA.386 file is the virtual device driver that
+provides direct video access internally to Video for Windows.
+
+Additional query words: 3.10 1.10 1.10d 1.10e VfW DVA no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbVideoSearch kbSDKSearch kbWinSDKSearch kbWinSDK310 kbVideoDK110
+Version           : WINDOWS:3.1; :1.1,1.1d,1.1e
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,66 @@
+DOCUMENT:Q218953  10-AUG-2001  [winnt]
+TITLE   :Display Problems with Greetings Workshop on Windows NT 4.0 SP4
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP4
+OPER/SYS:
+KEYWORDS:kbdisplay
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft Greetings Workshop, graphics may not be displayed
+properly, or the screen display may be distorted. This behavior may occur even
+if Greetings Workshop is not currently running.
+
+CAUSE
+=====
+
+This behavior can occur if your video adapter's refresh rate is set to 60
+hertz.
+
+
+RESOLUTION
+==========
+
+To work around this behavior, set your video adapter's refresh rate to 72
+hertz:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. On the Settings tab, click 72 Hertz in the Refresh Frequency box.
+
+4. Click OK.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdisplay 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4
+Version           : winnt:4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

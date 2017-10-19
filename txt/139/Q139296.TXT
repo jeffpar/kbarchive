@@ -1,0 +1,82 @@
+DOCUMENT:Q139296  03-AUG-2001  [visualc]
+TITLE   :BUG: C2955 Error Generated If Using Same Name as Template
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC kbVC500bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the name of a template class as a void * parameter to a function, as
+illustrated in this article results in this error:
+
+   C:\test.cpp(6) : error C2955: 'a' class template name expecting parameter
+   list
+
+WORKAROUND
+==========
+
+The resolution to this problem depends on which version of Visual C++ is being
+used. For Visual C++ 2.x, either change the parameter name, change the parameter
+type from a void * to non pointer data type, or do not use a template class.
+
+For Visual C++ version 4.0 and later, you may use one of the version 2.x
+workarounds, or use namespaces. Consult your Visual C++ documentation for more
+information on how to use namespaces.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      /* Compile options needed: none
+      */ 
+
+      template<class T>
+      class a
+      {
+      };
+
+      void fn( void* a );
+
+Additional query words: kbVC400bug name space
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC500bug 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC500 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

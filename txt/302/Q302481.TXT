@@ -1,0 +1,68 @@
+DOCUMENT:Q302481  08-MAY-2002  [winnt]
+TITLE   :FIX: Persistent Storage Manager Disallows Access to Snapshots
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Server Appliance Kit (SAK), version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After the Reliability Framework is installed and the system rebooted, Persistent
+Storage Manager (PSM) will no longer allow access to snapshots.
+
+CAUSE
+=====
+
+The watchdog timer overwrites the registry key:
+
+   HKYEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session
+   Manager\BootExecute
+
+PSM writes the value psmready into this key, and when this value is overwritten,
+PSM no longer works correctly.
+
+RESOLUTION
+==========
+
+A hotfix has been created to fix this problem. Contact your technical account
+manager (TAM), OEM representative, or Microsoft Product Support Services
+(http://support.microsoft.com/directory/) to obtain this hotfix.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: SAK QFE VMWatchdog psmready psm
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbSAK200 kbAudDeveloper kbSAKSearch
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

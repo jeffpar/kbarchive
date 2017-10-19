@@ -1,0 +1,82 @@
+DOCUMENT:Q227029  07-FEB-2001  [sms]
+TITLE   :SMS: "All Tasks" List May Be Incomplete When Activated on Query
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200preSP3fix kbsms200SP3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you right-click a resource that appears in the results pane of a query and
+then point to All Tasks, the available tasks differ from those that appear when
+you right-click the same resource from a collection and then point to All Tasks.
+
+CAUSE
+=====
+
+Any query created by the query builder that does not have simple property access
+to the ResourceID property does not have access to some tasks. For example, the
+query returns a subset of the sms_r_system properties, and the subset does not
+contain the ResourceID property or it returns multiple embedded generic objects.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+WORKAROUND
+==========
+
+When possible, include the ResourceID property in your queries.
+
+   -or-
+
+Use queries to locate resources, and then find the same resource in one of the
+collections folders. From the collection results, right-click the object, point
+to All Tasks, and then click your task.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 3.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200preSP3fix kbsms200SP3fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q97504  16-NOV-1999  [msdos]
+TITLE   :MS-DOS: No Interactive Boot Option for the AUTOEXEC.BAT File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The interactive boot option included with MS-DOS 6.0 (the F8 key) works with the
+CONFIG.SYS file only; it does not work with the AUTOEXEC.BAT file. Stepping
+through a batch file using the interactive boot option is not a feature of
+MS-DOS 6.0. You can, however, use the CHOICE and IF ERRORLEVEL commands to step
+through the AUTOEXEC.BAT file.
+
+NOTE: This information does not apply to later versions of MS-DOS.
+
+MORE INFORMATION
+================
+
+The CHOICE command provides the ability to prompt for input while running a
+batch file program. With the CHOICE command, you can display a specified prompt
+and then pause for user input. For example, if you add the following line to a
+batch file program
+
+   " CHOICE /C:ABC Choose an Option " (without the quotation marks)
+
+the user sees the following when CHOICE is started:
+
+   Choose an Option [A,B,C,]?
+
+For more information on using the CHOICE command, type "help choice" (without the
+quotation marks) at the MS-DOS command prompt.
+
+Additional query words: 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

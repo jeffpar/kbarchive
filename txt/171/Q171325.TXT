@@ -1,0 +1,125 @@
+DOCUMENT:Q171325  10-AUG-2001  [win95x]
+TITLE   :Incorrect Icons Displayed for .ico Files
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:4.0,95
+OPER/SYS:
+KEYWORDS:win95 kbshell
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows to correct them.
+Microsoft cannot guarantee that any problems resulting from the use of
+Registry Editor can be solved. Use this tool at your own risk.
+
+SYMPTOMS
+========
+
+When you view icon (.ico) files, the icons may display the default Windows
+system icon instead of the actual icon image.
+
+CAUSE
+=====
+
+The .ico file association is missing, or is damaged.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+NOTE: For information about how to edit the registry, see the online Help in
+Registry Editor.
+
+To resolve this issue, follow these steps:
+
+1. Double-click My Computer, and then click Options on the View menu.
+
+2. Verify that the Icon file type appears on the File Types tab. If the Icon
+   file type does not appear in the Registered File Types box, skip to step 10.
+
+3. Click Icon in the Registered File Types box, and then click Edit.
+
+4. Verify that the following settings exist, and then click OK:
+
+    - The Description Of Type box contains "Icon" (without the quotation marks).
+
+    - If there is a Confirm Open After Download check box, it should be
+      selected.
+
+5. If the settings do not appear exactly as listed in step 4, click Remove,
+   click Yes, and then click OK. If the settings do appear as listed in step 4,
+   skip to step 10.
+
+6. Click New Type.
+
+7. In the Description Of Type box, type "Icon" (without the quotation marks).
+
+8. In the Associated Extension box, type "ICO" (without the quotation marks).
+
+9. Click OK, and then click Close.
+
+10. Use Registry Editor to view the
+
+   HKEY_CLASSES_ROOT\.ico
+
+   key, and then verify that the default string contains the following value:
+
+   icofile
+
+   If the .ico key does not exist, create it, and then insert the value listed
+   above. If any other values exist in the .ico key, delete them.
+
+11. Use Registry Editor to view the
+
+   HKEY_CLASSES_ROOT\icofile
+
+   key, and then verify that the default string contains the following value:
+
+   icon
+
+   If the icofile key does not exist, create it, and then insert the value
+   listed above. If any other values exist, delete them.
+
+12. Create a new key in the icofile key called "DefaultIcon" (without the
+   quotation marks) , and type "%1" (without the quotation marks) as this key's
+   default value.
+
+13. Quit Registry Editor, and then restart your computer.
+
+MORE INFORMATION
+================
+
+When this issue occurs, the default system icon may be displayed for all the
+icons on the desktop.
+
+======================================================================
+Keywords          : win95 kbshell 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWin95search kbZNotKeyword3
+Version           : WINDOWS:4.0,95
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,81 @@
+DOCUMENT:Q168064  10-AUG-2001  [winnt]
+TITLE   :PPTP Protocol Not Available on MCA Computers
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install point to point tunneling protocol (PPTP), it does not
+appear as an installable protocol in the Network Control Panel on Microchannel
+computers.
+
+CAUSE
+=====
+
+Windows NT operating system components can be installed based on bus type. In
+this case, MCA is not listed as a supported bus architecture in the
+[PlatformsSupported] section of Oemnxppp.inf.
+
+WORKAROUND
+==========
+
+To work around this problem open the Oemnxppp.inf file (located in the
+%Systemroot%\System32 directory). In the [PlatformsSupported] section, add MCA.
+Another resolution is to delete the [PlatformsSupported] section entirely.
+
+See Example:
+
+Before:
+
+   [PlatformsSupported]
+   ISA
+   EISA
+   "JAZZ-INTERNAL BUS"
+
+After:
+
+   [PlatformsSupported]
+   MCA
+   ISA
+   EISA
+   "JAZZ-INTERNAL BUS"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server version 4.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt Micro-channel MCA Point to point transfer ps/2 micro-channel
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

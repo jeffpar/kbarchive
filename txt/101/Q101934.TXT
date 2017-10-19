@@ -1,0 +1,53 @@
+DOCUMENT:Q101934  04-NOV-1999  [pcmail]
+TITLE   :PC Ext: Attachments Not Returned When Useful Life Is Exceeded
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the External Mail program (EXTERNAL.EXE), if a message with
+attachments is sent that has exceeded its "useful life" and the asynchronous
+communication is interrupted, the message is returned to the sender with no
+attachments. If the same scenario exists but there is no interruption of
+asynchronous services, the message with attachments is delivered to the remote
+client even though the useful life has been exceeded.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0a, and 3.2 of
+Microsoft Mail for PC Networks. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.00 3.00a 3.20 006 Mail Failure Useful Life Exceeded
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a
+Version           : WINDOWS:3.0,3.0a,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

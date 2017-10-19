@@ -1,0 +1,66 @@
+DOCUMENT:Q184314  28-JUN-2001  [iis]
+TITLE   :File Path Error During Setup of Certificate Server
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Certificate Server version 1.0 
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ 
+
+SYMPTOMS
+========
+
+When you run Setup for Microsoft Certificate Server version 1.0, the following
+error message may appear:
+
+   You must enter the full path of a directory, starting with a drive letter and
+   :
+
+CAUSE
+=====
+
+A UNC path cannot be used to point to the shared folder. For example:
+
+   \\servername\share
+
+Using this path will elicit the above error message.
+
+WORKAROUND
+==========
+
+In order to resolve this issue, use a path similar to the following:
+
+   C:\winnt\certs
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbCertServSearch kbZNotKeyword3 kbCertServ100
+Version           : WINNT:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

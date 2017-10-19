@@ -1,0 +1,61 @@
+DOCUMENT:Q128319  11-NOV-1999  [pcmail]
+TITLE   :PC Adm: Non-Alphanumeric Password Does Not Allow Connection
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enter a password for an external postoffice that is configured as
+Direct Via modem, the password field will not accept non-alphanumeric
+characters.
+
+The password can be configured via the Config, Password option under ADMIN.EXE to
+contain non-alphanumeric characters. If this occurs, it will be impossible to
+connect directly to this postoffice via modem.
+
+RESOLUTION
+==========
+
+Change the postoffice password to only contain alphanumeric characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0a, 3.2, and
+3.2a of Microsoft Mail for PC Networks. We are researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: 3.00 3.00a 3.20 3.20a alphanumeric
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN300a
+Version           : WINDOWS:3.0,3.0a,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

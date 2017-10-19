@@ -1,0 +1,161 @@
+DOCUMENT:Q216355  13-JUN-2001  [homegame]
+TITLE   :DirectX: List of Files Installed by the DirectX 6.1 Update
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbref kbimu msgame KbDirectXkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the files installed by the Microsoft DirectX 6.1
+update.
+
+MORE INFORMATION
+================
+
+The following table lists the files installed by the DirectX 6.1 update.
+
+   Filename       Size        Modified
+   -------------------------------------------
+
+   D3d.inf        1,580       01/08/99   6:10p
+   D3dim.dll      610,064     01/08/99   6:10p
+   D3dpmesh.dll   87,312      01/08/99   6:10p
+   D3dramp.dll    590,096     01/08/99   6:10p
+   D3drm.dll      437,008     01/08/99   6:10p
+   D3drm.inf      693         07/29/98   6:00p
+   D3dxof.dll     107,792     01/08/99   6:10p
+   Ddhelp.exe     38,672      02/07/06   6:28a
+   Ddraw.dll      310,544     01/08/99   6:10p
+   Ddraw.inf      4,466       07/29/98   6:00p
+   Ddraw.vxd      30,389      01/08/99   6:10p
+   Ddraw16.dll    28,000      01/08/99   6:10p
+   Ddrawex.dll    24,848      01/08/99   6:10p
+   Dijoy.hlp      16,339      07/14/97   5:00p
+   Dijoybrz.hlp   13,330      07/29/98   6:00p
+   Dijoychs.hlp   12,778      07/29/98   6:00p
+   Dijoycht.hlp   19,401      07/29/98   6:00p
+   Dijoycze.hlp   13,511      07/29/98   6:00p
+   Dijoydut.hlp   13,271      07/29/98   6:00p
+   Dijoyfrn.hlp   13,589      07/29/98   6:00p
+   Dijoyger.hlp   13,678      07/29/98   6:00p
+   Dijoyitn.hlp   13,493      07/29/98   6:00p
+   Dijoyjpn.hlp   13,424      07/29/98   6:00p
+   Dijoykor.hlp   13,647      07/29/98   6:00p
+   Dijoynec.hlp   13,424      07/29/98   6:00p
+   Dijoypol.hlp   13,778      07/29/98   6:00p
+   Dijoyrus.hlp   13,812      07/29/98   6:00p
+   Dijoyspa.hlp   13,618      07/29/98   6:00p
+   Dijoyswe.hlp   13,343      07/29/98   6:00p
+   Dinput.dll     175,616     07/14/97   5:00p
+   Dinput.inf     13,301      07/29/98   6:00p
+   Dinput.vxd     16,986      07/14/97   5:00p
+   Directx.inf    5,301       01/08/99   2:57a
+   Dmband.dll     27,920      01/08/99   6:10p
+   Dmcompos.dll   48,912      01/08/99   6:10p
+   Dmime.dll      79,120      01/08/99   6:10p
+   Dmloader.dll   22,800      01/08/99   6:10p
+   Dmstyle.dll    82,192      01/08/99   6:10p
+   Dmsynth.dll    51,472      01/08/99   6:10p
+   Dmusic.dll     46,352      01/08/99   6:10p
+   Dmusic16.dll   11,328      01/08/99   6:10p
+   Dmusic32.dll   16,144      01/08/99   6:10p
+   Dplay.dll      39,936      07/14/97   5:00p
+   Dplay.inf      14,338      01/08/99   6:10p
+   Dplaydx2.inf   1,549       07/14/97   5:00p
+   Dplaysvr.exe   29,968      02/07/06   6:28a
+   Dplayx.dll     215,824     01/08/99   6:10p
+   Dpmodemx.dll   77,072      01/08/99   6:10p
+   Dpserial.dll   41,472      07/14/97   5:00p
+   Dpwsock.dll    24,064      07/14/97   5:00p
+   Dpwsockx.dll   65,808      01/08/99   6:10p
+   Dsetup.dll     135,680     01/08/99   6:10p
+   Dsetup.inf     1,124       07/29/98   6:00p
+   Dsetup16.dll   64,512      01/08/99   6:10p
+   Dsetup32.dll   57,344      01/08/99   6:10p
+   Dsound.dll     134,928     07/29/98   6:00p
+   Dsound.inf     815         07/29/98   6:00p
+   Dsound.vxd     64,443      07/29/98   6:00p
+   Dx6migr.inf    10,301      07/29/98   6:00p
+   Dxapi.sys      2,384       01/08/99   6:10p
+   Dxdiabrz.cnt   621         01/08/99   6:10p
+   Dxdiabrz.hlp   16,347      01/08/99   6:10p
+   Dxdiachs.cnt   480         01/08/99   6:10p
+   Dxdiachs.hlp   16,156      01/08/99   6:10p
+   Dxdiacht.cnt   432         01/08/99   6:10p
+   Dxdiacht.hlp   15,355      01/08/99   6:10p
+   Dxdiacze.cnt   680         01/08/99   6:10p
+   Dxdiacze.hlp   18,285      01/08/99   6:10p
+   Dxdiadut.cnt   587         01/08/99   6:10p
+   Dxdiadut.hlp   16,403      01/08/99   6:10p
+   Dxdiafrn.cnt   579         01/08/99   6:10p
+   Dxdiafrn.hlp   17,804      01/08/99   6:10p
+   Dxdiag.cnt     511         01/08/99   6:10p
+   Dxdiag.exe     1,253,648   01/08/99   6:10p
+   Dxdiag.hlp     16,032      01/08/99   6:10p
+   Dxdiager.cnt   612         01/08/99   6:10p
+   Dxdiager.hlp   17,853      01/08/99   6:10p
+   Dxdiaitn.cnt   635         01/08/99   6:10p
+   Dxdiaitn.hlp   18,135      01/08/99   6:10p
+   Dxdiajpn.cnt   560         01/08/99   6:10p
+   Dxdiajpn.hlp   17,377      01/08/99   6:10p
+   Dxdiakor.cnt   501         01/08/99   6:10p
+   Dxdiakor.hlp   17,447      01/08/99   6:10p
+   Dxdiapol.cnt   638         01/08/99   6:10p
+   Dxdiapol.hlp   18,563      01/08/99   6:10p
+   Dxdiarus.cnt   629         01/08/99   6:10p
+   Dxdiarus.hlp   18,274      01/08/99   6:10p
+   Dxdiaspa.cnt   670         01/08/99   6:10p
+   Dxdiaspa.hlp   17,415      01/08/99   6:10p
+   Dxdiaswe.cnt   605         01/08/99   6:10p
+   Dxdiaswe.hlp   17,411      01/08/99   6:10p
+   Dxmigr.dll     5,440       01/08/99   6:10p
+   Dxsetup.exe    96,768      01/08/99   6:10p
+   Dxver.inf      208         01/08/99   2:57a
+   Gcdef.dll      564,224     07/14/97   5:00p
+   Gchand.dll     80,384      07/14/97   5:00p
+   Gm16.dls       3,440,660   01/08/99   6:10p
+   Gmreadme.txt   576         01/08/99   6:10p
+   Joy.cpl        229,888     07/14/97   5:00p
+   License.txt    1,315       07/29/98   6:00p
+   Msanalog.vxd   12,101      07/14/97   5:00p
+   Msvcrt.dll     271,632     01/08/98   7:09a
+   Mtrr.inf       216         07/29/98   6:00p
+   Mtrr.vxd       12,009      07/14/97   5:00p
+   Regsvr32.exe   30,720      09/02/98   7:07a
+   Vjoyd.vxd      30,320      07/14/97   5:00p
+   Vmcpd.nec      18,602      07/14/97   5:00p
+   Vmcpd.x86      18,602      07/14/97   5:00p
+
+Additional query words: direct-x dx6 dx6.1 directory contents listing
+
+======================================================================
+Keywords          : kbref kbimu msgame KbDirectX kbfaq
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,88 @@
+DOCUMENT:Q108412  08-AUG-2001  [winnt]
+TITLE   :Exabyte 8200-EXB Streamer Time-Outs During Backup
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.1,3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Exabyte 8200-EXB (SCSI-1 device) and backing up files
+with NTBACKUP, NTBACKUP stops after processing less than 1.5 megabyte (MB) of
+data. NTBACKUP displays the following error message:
+
+   Fatal error 1.
+
+The Event log contains the following message from the Service Control Manager:
+
+   \Device\ScsiPort0 timed out.
+
+RESOLUTION
+==========
+
+The Exabyte 8200-EXB can be configured for SCSI disconnects on even or odd byte
+boundaries. In order to operate properly with NTBACKUP, the streamer should be
+configured to disconnect on even boundary.
+
+Configuration of the streamer is controlled by 8 dip-switches. Switch 3
+determines the SCSI disconnects. In order for NTBACKUP to operate correctly,
+switch 3 should be set On (Even boundary).
+
+Detailed explanation of the dip-switches:
+
+SW  Default value (Off)            Optional Value (On)
+
+------------------------------------------------------
+
+1   Run Memory Test on             Bypass Memory Test on
+    Power-On Reset (65 sec)        Power-On-Reset (8 sec)
+2   SCSI Parity Checking disabled  SCSI Parity Checking enabled
+3   Odd or Even Byte disconnect    Even Byte disconnect
+4   Report Busy Status             Non Busy Enabled
+5   Fixed Block Mode on Power Up   Variable Block Mode on Power up
+6   Normal Data Operation          No Disconnect During Data Transfer
+7   Reserved                       Reserved
+8   P6 Cartridge Type (106 meters) PI Cartridge Type (112 meters)
+
+NOTE: Incorrect settings of any of these switches may cause problems with your
+configuration. Please consult your Exabyte documentation for more details on how
+to configure the streamer.
+
+The Exabyte product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: prodnt Exabyte SCSI timeout
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : WinNT:3.1,3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

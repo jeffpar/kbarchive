@@ -1,0 +1,91 @@
+DOCUMENT:Q121889  11-FEB-2002  [visualc]
+TITLE   :PRB: Error C2858: Command-line Options Inconsistent
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC kbVC100 kbVC200 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a file from an existing application that uses precompiled header
+files, the compiler produces the following error if the source drive letter has
+changed:
+
+   error C2858: command-line option 'program database name
+   (/FdN:\test.pdb)' inconsistent with precompiled header,
+   which used '/FdM:\test.pdb'
+
+CAUSE
+=====
+
+The compiler stores and uses an absolute path to the precompiled header file,
+not a relative path.
+
+RESOLUTION
+==========
+
+Microsoft recommends that you rebuild an application when moving its source code
+or when connecting with a different drive letter.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the behavior. If the two files shown
+below are compiled from the M: drive and later TEST2.CPP is compiled from the N:
+drive, the error will occur.
+
+Sample Code
+-----------
+
+   /* Compile options needed: /Zi /Fp"test.pch" /Yc
+      TEST1.CPP
+   */ 
+
+   #include <iostream.h>
+
+   void main()
+   {
+   }
+
+   /* Compile options needed: /Zi /Fp"test.pch" /Yu"iostream.h"
+      TEST2.CPP
+   */ 
+
+   #include <iostream.h>
+
+   void sub()
+   {
+   }
+
+Additional query words: 9.00
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC100 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,2.0,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

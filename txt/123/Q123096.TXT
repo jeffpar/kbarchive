@@ -1,0 +1,83 @@
+DOCUMENT:Q123096  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Err Msg: Setup Error G1. Windows Setup Cannot...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you type "setup" (without the quotation marks) to start the Microsoft
+Windows 95 Setup program, you may receive the following error message:
+
+   Setup Warning G1: Setup cannot run from MS-DOS with EMM386.EXE or other
+   memory managers (such as QEMM or 386Max) running on your computer. If Windows
+   is on your computer, run Setup from Windows. Otherwise, remove the memory
+   manager from your CONFIG.SYS file, and then restart your computer before
+   running Setup. After Windows 95 is installed, you can safely add the memory
+   manager back to your CONFIG.SYS file.
+
+CAUSE
+=====
+
+Some Gateway 2000 computers are equipped with BIOS chip sets that cause this
+error message to appear when you run Setup from MS-DOS and you are loading
+EMM386.EXE, or a similar memory manager, in the CONFIG.SYS file.
+
+WORKAROUND
+==========
+
+To work around this error message:
+
+ - Remove EMM386.EXE (or the similar memory manager) before you run Setup.
+
+   -or-
+
+ - Run Setup from within Windows (for example, perform an upgrade over a
+   previous version of Windows or Windows for Workgroups).
+
+   -or-
+
+ - Upgrade the BIOS in your computer.
+
+
+MORE INFORMATION
+================
+
+It is uncertain exactly which BIOS manufacturers and versions cause this error
+message; however, it has been reported with the following BIOS chip sets:
+
+ - Phoenix 486 ROM BIOS Plus dated 1/15/88
+
+ - Phoenix ROM BIOS version 0.10 copyright 1990
+
+Additional query words: 3rdparty err msg
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,67 @@
+DOCUMENT:Q131304  08-AUG-2001  [winnt]
+TITLE   :Intel EtherExpress PRO/100 Drivers for Windows NT 3.5
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Intel EtherExpress PRO/100 is a high speed (100mbps) ethernet network
+adapter. Although the Intel EtherExpress PRO is on the Hardware Compatibility
+List for Windows NT 3.5, the Intel EtherExpress PRO/100 is not.
+
+NOTE: The Intel EtherExpress PRO/100 EISA network adapter card is on the Windows
+NT 3.51 HCL. It requires a driver from the \DRVLIB directory on the Windows NT
+3.51 CD-ROM.
+
+MORE INFORMATION
+================
+
+A Windows NT 3.5 driver is available for the EtherExpress PRO/100 on Intel's BBS
+(503) 645-6275. Currently the Windows NT 3.5 driver is only available as part of
+a drivers disk, EP100.EXE, which a self extracting executable file which you
+must download. The expanded driver, which is included with drivers for many
+other platforms, currently has the following size and date after expanding the
+compressed file E100.SY_:
+
+   E100.SYS     39, 424 bytes       date  10/9/94.
+
+After executing EP100.EXE, you will see a number of directories on your
+destination disk. The compressed file E100.SY_ will reside in the \NT
+subdirectory. Read \INFO\MS\MSNT35.TXT for installation instructions.
+
+The product included here is manufactured by Intel, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: prodnt card nic fast 100mb/s enet
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

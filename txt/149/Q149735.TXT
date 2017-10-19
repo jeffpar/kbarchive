@@ -1,0 +1,83 @@
+DOCUMENT:Q149735  11-JAN-2001  [vbwin]
+TITLE   :BUG: DBGrid CachePages Property Is Disabled
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbGrpDSVBDBkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running a Visual Basic program containing a DBGrid control with the CachePages
+property set at design time results in the error message - Member or Data method
+not found.
+
+CAUSE
+=====
+
+This property has been disabled.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this issue and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This property is documented in the online Help file, but has been disabled in
+the product.
+
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start 16-bit or 32-bit Visual Basic version 4.0. If it is already running, on
+   the File menu, click New Project. Add a DBGrid control to the Form1 form.
+
+2. Copy the following code to the Code window of the Form1 form:
+
+      Option Explicit
+
+      Private Sub Form_Load()
+         DBGrid1.CachePages = 3
+      End Sub
+
+3. On the Run menu, click Start, or press F5. A message box appears with the
+   message - Method or Data member not found.
+
+Additional query words: 4.00 vb4all DBGrid
+
+======================================================================
+Keywords          : kbVBp400 kbGrpDSVBDB kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

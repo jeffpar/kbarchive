@@ -1,0 +1,73 @@
+DOCUMENT:Q90726  25-OCT-1999  [win95x]
+TITLE   :WinLogin GP Fault in WLDAPI.DLL
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft WinLogin, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running Microsoft WinLogin on a workstation (client) and exiting or saving
+the current configuration, you may receive the following error message:
+
+   WINLOGIN caused a General Protection Fault in module WLDAPI.DLL at 0001:AFB3
+
+CAUSE
+=====
+
+This error occurs if the length of any key (entry on the left side of the equal
+sign) in an .INI file that WinLogin is managing exceeds 63 characters in length.
+
+RESOLUTION
+==========
+
+To avoid this error, make sure that there are no key entries exceeding 63
+characters in length in any .INI file managed by WinLogin.
+
+For example:
+
+   [DummySection]
+   ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzABCDEFGHIJK=1
+   ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKL=1
+
+The first entry is a valid key (63 characters), while the second entry (64
+characters) is not and results in the general protection (GP) fault.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+
+Additional query words: gpf 3.10 3.1 winlogin win login ini limit limitation jet err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbWinLoginSearch kbZNotKeyword3 kbWin310 kbWin311 kbWinLogin100
+Version           : WINDOWS:3.1,3.11; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

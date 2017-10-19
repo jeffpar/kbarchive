@@ -1,0 +1,98 @@
+DOCUMENT:Q237505  06-AUG-2002  [homemm]
+TITLE   :Encarta Encyclopedia: Repeatedly Prompted to Insert CD-ROM
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 99 
+ - Microsoft Encarta Encyclopedia 2000 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start one of the programs listed at the beginning of this
+article, you may be prompted to insert the program CD-ROM into the CD-ROM drive,
+even if the program CD-ROM is already inserted in the CD-ROM drive.
+
+If the CD-ROM is not inserted in the CD-ROM drive when you are prompted to insert
+the program CD-ROM, you may continue to be prompted to insert the CD-ROM after
+you insert the CD-ROM.
+
+NOTE: If you type the path to the executable file of the program in the Drive box
+of the prompt and then click OK, you may receive an error message similar to the
+following:
+
+   Cannot find the file: <filename> (or one of its components). Make sure
+   the path and filename are correct and that all required libraries are
+   available.
+
+RESOLUTION
+==========
+
+To work around this issue:
+
+1. Insert the program CD-ROM into the CD-ROM drive if it is not already
+   inserted.
+
+2. When you are prompted to insert the program CD-ROM, type the path to the
+   executable file of the program in the Drive box, or click Browse and then
+   browse to the location of the executable file of the program.
+
+   The path to the executable file of the program is listed in the following
+   table. The executable file is located on the hard disk to which you installed
+   the program.
+
++-----------------------------------------------------------------------------------------------------------+
+| Program                   | Path to executable file                                                       | 
++-----------------------------------------------------------------------------------------------------------+
+| Encarta Encyclopedia 99   | Program Files\Microsoft Reference\Encarta Encyclopedia
+        99\Enc99.exe   | 
++-----------------------------------------------------------------------------------------------------------+
+| Encarta Encyclopedia 2000 | Program Files\Microsoft Encarta\Encarta Encyclopedia
+        2000\Enc2000.exe | 
++-----------------------------------------------------------------------------------------------------------+
+| Encarta Encyclopedia 2001 | Program Files\Microsoft Encarta\Encarta Encyclopedia\Enc2001.exe              | 
++-----------------------------------------------------------------------------------------------------------+
+
+3. Press ENTER.
+
+4. Click OK.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm enc99 ee2k
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000 kbEncartaEnCyc1999
+Version           : WINDOWS:; :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

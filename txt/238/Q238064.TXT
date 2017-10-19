@@ -1,0 +1,73 @@
+DOCUMENT:Q238064  10-MAY-2000  [sms]
+TITLE   :SMS: Sender Routing in Multi-Tiered Hierarchies
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article summarizes how packages that are configured and sent at a central
+site are sent down to grandchild sites. The following hierarchy example is used
+in this article:
+
+Central Site
+|
+Primary Child Site
+|
+Secondary Child Site (grandchild to the central site)
+
+MORE INFORMATION
+================
+
+A package that is configured at a central site and that is destined for all
+child sites below it, is sent directly to each child site. However, if the
+central site does not have an address to the grandchild site, or if the address
+is unavailable (due to scheduling configuration), the central site sends the
+package through the grandchild's direct parent. This is called routing.
+
+Routing through the direct parent site is recommended in low bandwidth
+environments where the child and the grandchild share the same link to the
+central site (such as through dial-up or RAS). Routing is also recommended for
+ISDN environments that are billed by connection time, as it prevents the same
+package information from being sent twice over the same link.
+
+For more information about senders and addresses, please refer to the Configuring
+Site Communications section of the Administrator's Guide, Chapter 8. For
+information about scheduling, please refer to the following Help file topics:
+
+ - Standard Sender Address Properties Dialog Box: General Tab
+
+ - Standard Sender Address Properties Dialog Box: Schedule Tab
+
+Additional query words: prodsms lansend outbox schedule route fanout fan out distribute
+
+======================================================================
+Keywords          : kbnetwork kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,56 @@
+DOCUMENT:Q89872  13-JUN-2001  [winmisc]
+TITLE   :Control Panel Changes Have No Effect with Proof Reader, 1-2-3
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Windows Sound System Proof Reader with Lotus 1-2-3 for Windows, any
+changes you make to the International option in Control Panel have no effect
+when you proofread a spreadsheet.
+
+MORE INFORMATION
+================
+
+You can use the International option in Control Panel to specify international
+settings for country, language, keyboard layout, and system of measurement. When
+you select a country, Windows adjusts the date, time, currency, and number
+formats to reflect those used by the selected country (these settings are saved
+in the WIN.INI file). Lotus 1-2-3 for Windows does not review these changes
+before starting, and therefore is not aware of them.
+
+1-2-3 provides a way of handling internationalization (dates and times only) by
+using the Format command on the Range menu. Set the format for a cell to be the
+type found in this menu selection, then it should proofread accordingly.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

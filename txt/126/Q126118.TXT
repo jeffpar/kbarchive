@@ -1,0 +1,281 @@
+DOCUMENT:Q126118  07-JAN-2000  [mspress]
+TITLE   :MS WORD 6 SBS FOR WINDOWS: Corrections and Comments
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Word 6 for Windows Step by Step ISBN 1-55615-576-X 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Microsoft Word 6 for Windows Step by
+Step."
+
+The following topics are covered:
+
+ - Installation Error Message: "CDR 101: Error reading drive..."
+
+ - Practice Files Not Located in WINWORD Directory
+
+ - 03LIST.DOC Contains Invalid Font Tms Rmny
+
+ - Page 10: Step 3 Unclear for Proper Copy Procedure
+
+ - Page 152: Office Installation Uses Graph 5.0 Instead of Graph 3.0
+
+ - Page 189: SHIFT+TAB Should Be ALT+TAB to Switch to Program Manager
+
+ - Page 190: First Step 3 Does Not Describe PRACTICE Location
+
+MORE INFORMATION
+================
+
+In addition to a description of the book's problems, this document might also
+include sections labeled "Correction" and "Comments." Please note that the
+"Correction" section is worded for correcting the book and does not necessarily
+address the problem introduced by the book error. The "Comments" section
+contains specific information for working around problems.
+
+Installation Error Message: "CDR 101:  Error Reading Drive..."
+--------------------------------------------------------------
+
+The installation program produces the following error message when you try to run
+it on some computers that are configured with a CD-ROM drive:
+
+   CDR101: Error reading drive DOGRAM. Abort, Retry, or Fail?
+
+Correction:
+
+A new installation program is under development that will address this issue.
+
+Comments:
+
+This error is produced when the installation program encounters some types of
+CD-ROM drive device drivers. It is the CD-ROM driver that produces the error.
+
+To work around this problem, press F to fail the CD-ROM operation. The
+installation will continue as normal, with no further problems. Because the
+installation program cannot write files to a CD-ROM, this option will have no
+adverse effects on the installation.
+
+Practice Files Not Located in WINWORD Directory
+-----------------------------------------------
+
+Page 24 is the first location in this book where the reader opens a practice
+file. However, if Word was installed as part of Microsoft Office and the default
+installation path was not changed, the practice subdirectory may not be located
+in your Word directory as shown in the book.
+
+Correction:
+
+A new installation program is under development by Microsoft Press that will
+address this issue.
+
+Comments:
+
+The default installation path for the book's practice files is
+
+   C:\WINWORD\PRACTICE.
+
+To properly install the practice files on a computer that has Word installed as
+part of Microsoft Office, you should type the following path when the
+installation program requests a destination path:
+
+   " <drive>:<location>\PRACTICE" (without the quotation marks)
+
+where <drive> is your hard disk drive and <location> is the path to
+your Word directory. For example, if your hard disk is drive C, and
+\MSOFFICE\WINWORD is the path to your Word directory, you would type:
+
+   " C:\MSOFFICE\WINWORD\PRACTICE" (without the quotation marks)
+
+
+03LIST.DOC Contains Invalid Font Tms Rmny
+-----------------------------------------
+
+The file 03LIST.DOC uses a font named Tms Rmny (y has accent marks). This font
+name is in the screen capture on pages 37-52 (all of lesson 3).
+
+This font maps to Symbol (a Greek character font) on some systems.
+
+Correction:
+
+Change all Tms Rmny font references to Times New Roman in the file 03LIST.DOC.
+Also change screen captures on pages 37-52 to replace the Tms Rmny font listing
+with Times New Roman.
+
+Comments:
+
+To correct this problem, select each block of Tms Rmny text and change the font
+to Times New Roman.
+
+See the "Change the design and size of text" section on page 15 for steps to
+change a font.
+
+Remember to save your changes once you have corrected the file.
+
+Page 10: Step 3 Unclear for Proper Copy Procedure
+-------------------------------------------------
+
+Step 3 on page 10 instructs the reader to drag a dotted insertion point and then
+"Release the CTRL key and the mouse button." However, the CTRL key and the mouse
+button must be released in the proper order to correctly complete this step.
+
+Correction:
+
+Step 3 should read:
+
+Drag the dotted insertion point to the place immediately before the word
+"version." Release the mouse button first, then the CTRL key.
+
+Comments:
+
+The mouse button must be released before the CTRL key is released. If the CTRL
+key is released first, the text is moved, instead of copied, to the
+destination.
+
+Page 152: Office Installation Uses Graph 5.0 Instead of Graph 3.0
+-----------------------------------------------------------------
+
+Pages 151-153 describe how to use MS Graph from within Word 6.0 for Windows.
+These pages assume the use of MS Graph 3.0 which is provided with Word 6.0.
+
+Microsoft Office installs Graph 5.0, as do PowerPoint 4.0, and Microsoft Excel
+5.0. Graph 5.0 has a different format from Graph 3.0, which is shipped with Word
+6.0. This makes the steps and figures on pages 152 and 153 inaccurate.
+
+Correction:
+
+A paragraph or note should be presented to describe the difference between Graph
+3.0 and Graph 5.0. Information on how to use the lesson with a different version
+of MS Graph should also be included.
+
+Here are some corrections under consideration:
+
+On page 151, at bottom of page (after paragraph below step 2), add the following
+text:
+
+NOTE: If you have Microsoft Office or Microsoft Excel 5.0 installed, Graph
+version 5.0 may be installed on your machine instead of Graph version 3.0, which
+is included with Word 6.0. If you are running Graph 5.0, a ChartWizard will
+appear. Press Finish to go directly to the embedded chart.
+
+On page 153, in the left margin, add the following margin note:
+
+For Graph 5.0 (provided by Microsoft Office), simply click outside the graph area
+to return to Word.
+
+Comments:
+
+Graph 5.0 was developed after the initial release of this book and after the
+release of Word 6.0. See the Correction section for alternate steps you can use
+if you are running Graph 5.0.
+
+Page 189: SHIFT+TAB Should Be ALT+TAB to Switch to Program Manager
+------------------------------------------------------------------
+
+Step 1 at the bottom of page 189 says to press SHIFT+TAB to switch to Program
+Manager. This information is incorrect. To switch to the Program Manager, press
+ALT+TAB.
+
+Correction:
+
+On page 189, the second line from the last (Step 1 under "Copy a source object")
+should read: "Press ALT+TAB to switch to Program Manager."
+
+Page 190: First Step 3 Does Not Describe PRACTICE Location
+----------------------------------------------------------
+
+Step 3 at the top of page 190 states the following:
+
+Open the file 12SPREAD.XLS in your PRACTICE directory.
+
+However, the application used to open this file is Microsoft Excel, which will
+not have the proper PRACTICE subdirectory immediately visible when you choose
+the Open command.
+
+Correction:
+
+Step 3 should read:
+
+Open the file 12SPREAD.XLS, which can be found in the WINWORD\PRACTICE directory,
+and maximize the document window within Microsoft Excel. The PRACTICE directory
+is a subdirectory of the WINWORD directory, so you must first change your File
+Open directory from your EXCEL directory to your WINWORD directory.
+
+Comments:
+
+To locate the file 12SPREAD.XLS, as mentioned in step 3, follow the steps listed
+below to switch from the EXCEL directory to the WINWORD directory.
+
+If you installed Microsoft Excel and Word separately (not as part of Microsoft
+Office), follow these steps:
+
+1. Switch to Microsoft Excel, and choose Open from the File menu.
+
+The Open dialog box appears.
+
+1. In the Directories box, select the root directory (usually C).
+
+2. In the Directories box, double-click the WINWORD directory.
+
+You should now see the PRACTICE subdirectory.
+
+1. Double-click the PRACTICE subdirectory.
+
+-or-
+
+2. If you installed Word and Microsoft Excel by running Microsoft Office Setup,
+   follow these steps:
+
+   1. Switch to Microsoft Excel, and choose Open from the File menu.
+
+      The Open dialog box appears.
+
+   2. In the Directories box, double-click the MSOFFICE directory (usually
+      located on drive C).
+
+      This will move you to the MSOFFICE directory, which contains both the EXCEL
+      and WINWORD subdirectories.
+
+   3. In the Directories box, double-click the WINWORD directory.
+
+      You should now see the PRACTICE subdirectory.
+
+   4. Double-click the PRACTICE subdirectory.
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: mspress ms_press press bookbug CDR101 CDR-101 CDR 101 sbs
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

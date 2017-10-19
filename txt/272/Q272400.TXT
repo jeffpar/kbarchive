@@ -1,0 +1,94 @@
+DOCUMENT:Q272400  11-JAN-2001  [vbwin]
+TITLE   :BUG: Application Error Returns Resized Array to Event Procedure
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCmnCtrls kbCtrl kbMonthCalCtrl kbVBp600bug kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to assign the return value of a function to an event procedure
+array argument, an Application Error occurs if the function returns an array
+that is not the same size as the array argument in the event procedure.
+
+RESOLUTION
+==========
+
+To work around this behavior:
+
+ - a temporary array can be used as the return for the function and the array
+   argument can be resized in the event procedure.
+
+-or-
+
+ - the array in the function can be re-dimensioned to the same size as the array
+   in the event procedure.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, select Components. In the Components dialog box, select
+   the Microsoft Windows Common Controls-2 6.0 component, and then click OK.
+
+3. Add a MonthView control to Form1.
+
+4. Add the following code to the General Declarations section of Form1:
+
+   Private Sub MonthView1_GetDayBold(ByVal StartDate As Date, ByVal Count As Integer, State() As Boolean)
+      State = ChangeArray(UBound(State))
+   End Sub
+
+   Function ChangeArray(UpperBound As Integer)
+      Dim aryNew() As Boolean
+      'Uncomment the following line to examine a workaround.
+      'ReDim aryNew(UpperBound) As Boolean
+      ChangeArray = aryNew
+   End Function
+
+5. Press the F5 key to run the program and note that an Application Error
+   occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCmnCtrls kbCtrl kbMonthCalCtrl kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

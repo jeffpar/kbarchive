@@ -1,0 +1,67 @@
+DOCUMENT:Q182140  14-MAR-2000  [sna]
+TITLE   :DSPU and PU Passthrough Available in SNA Workstation Product
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNA Workstation allows the configuration of DSPU (DownStream Physical Units) and
+PU Passthrough connections. These features should only be available in the SNA
+Server product.
+
+Microsoft SNA Workstation is a single-user version of SNA Server that supports
+access to SNA networks from a single Windows NT computer. SNA Workstation
+supports SNA connectivity from the SNA Workstation computer but does not support
+gateway access from a client computer.
+
+CAUSE
+=====
+
+The SNA Server/Workstation management functions did not include a check that
+would disable the Downstream and PU Passthrough "Remote End" options on the
+connection properties dialog box on an SNA Workstation installation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0. This
+problem was corrected in the latest SNA Server version 4.0 U.S. Service Pack.
+For information on obtaining this Service Pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

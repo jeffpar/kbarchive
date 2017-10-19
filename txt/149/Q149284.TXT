@@ -1,0 +1,63 @@
+DOCUMENT:Q149284  22-MAR-1999  [exchange]
+TITLE   :XADM: PC Mail Shared Folders not Converted To Public Folders
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Migration Wizard for Microsoft Mail for PC Networks fails
+to migrate shared folders from Mail for PC Networks postoffices; however,
+everything else migrates.
+
+The application log in Event log reads:
+
+   Could not migrate shared folders Event 168
+
+CAUSE
+=====
+
+The Information Store Site Configuration does not have the Microsoft Exchange
+Service Account specified under Top Level Folder Creation tab in the Microsoft
+Exchange Administrator program.
+
+RESOLUTION
+==========
+
+Start the Microsoft Exchange Administrator program. Under Configuration,
+double-click the Information Store Site Configuration tab and select the Top
+Level Folder Creation tab. Change the Allowed to Create Top Level Folder radio
+button to All and migrate the users. After migration users can be limited to who
+can create top level folders.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

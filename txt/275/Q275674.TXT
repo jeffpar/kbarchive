@@ -1,0 +1,78 @@
+DOCUMENT:Q275674  03-MAY-2001  [visualc]
+TITLE   :BUG: C2955 Error When You Use Template Name as Function Argument
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbLangCPP kbVC600bug kbDSupport kbGrpDSVCCompiler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message if you try to use a template name as
+a function argument:
+
+   error C2955: 'S' : use of class template requires template argument List
+
+Please refer to the sample code in the "More Information" section for details.
+
+RESOLUTION
+==========
+
+Use a different name for the template class or the function argument.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the bug:
+
+   // Test.cpp
+   // Compiler option needed: none
+
+   template <class T>
+   struct S { };
+
+   int hoo (int *S);
+
+Additional query words: C2955
+
+======================================================================
+Keywords          : kbCompiler kbLangCPP kbVC600bug kbDSupport kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

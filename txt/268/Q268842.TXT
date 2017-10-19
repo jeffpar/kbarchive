@@ -1,0 +1,74 @@
+DOCUMENT:Q268842  12-NOV-2001  [homegame]
+TITLE   :AoE II: Game Hangs After You Disconnect from the Internet
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbnetwork aoe kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II Expansion: The Conquerors, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you disconnect from the Internet while you are playing a multiplayer game
+of Microsoft Age of Empires II Expansion: The Conquerors, the game may stop
+responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if you attempt to rejoin the game before you click
+Reconnect or Cancel.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps after you disconnect from the
+Internet:
+
+1. Click Cancel in the Disconnect dialog box.
+
+2. Click the Age of Empires II Expansion: The Conquerors icon located on the
+   Windows taskbar.
+
+3. Save the current game, and then quit Age of Empires II Expansion: The
+   Conquerors.
+
+4. Connect to your Internet service provider (ISP).
+
+5. Start a new game or open the saved multiplayer game.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Age of Empires II
+Expansion: The Conquerors, version 1.0.
+
+Additional query words: 1.00 msgame aoe2 aoeii aok expansion pack conquerers
+
+======================================================================
+Keywords          : kbnetwork aoe kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbAOESearch kbAOE2ExpConquerors
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

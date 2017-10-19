@@ -1,0 +1,76 @@
+DOCUMENT:Q248489  17-DEC-1999  [exchange]
+TITLE   :XADM: Insufficient Access Rights When Creating Site Connectors
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to Microsoft Exchange Server as Administrator to create a site
+connector between sites in different domains that are in a two-way trust, and
+then enter the name of the remote server as the target site in the New Site
+Connector dialog box, you may receive this message:
+
+   DS_E_INSUFFICIENT_ACCESS_RIGHTS
+
+CAUSE
+=====
+
+This issue can occur when the account that you are using does not have
+permissions to create site connectors.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Confirm that the Exchange Server service account is properly configured with
+   the appropriate Microsoft Windows NT permissions.
+
+2. Confirm that the service account has the Service Account Admin role at the
+   site level on both sites. The service account should have this role on the
+   Organization and Configuration containers as well.
+
+3. Log off the current account, log on as the local service account, and then
+   create the site connector.
+
+MORE INFORMATION
+================
+
+For additional informationExchange Server service account permissions, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q147701 XADM: Exchange Service Account Permissions
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

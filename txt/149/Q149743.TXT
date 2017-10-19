@@ -1,0 +1,80 @@
+DOCUMENT:Q149743  11-JAN-2001  [vbwin]
+TITLE   :BUG: Error When Data Control Is Set to a Wrong Text Database
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbGrpDSVBDBkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A 16-bit Visual Basic for Windows version 4.0 program containing a Data control
+with a Connect property set to Text and the DatabaseName property set to a
+non-text database generates an application error when run. The application error
+displays the message - VB caused a General Protection Fault in module VB.EXE at
+003F:2106. Choose close. VB will close.
+
+A 32-bit Visual Basic for Windows version 4.0 program with the same control set
+to the same property displays the error message - Couldn't find object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this issue and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following instructions reproduce the behavior in the 16-bit version of Visual
+Basic:
+
+1. Start 16-bit Visual Basic 4.0. If it is already running, on the File menu,
+   click New Project.
+
+2. Add a data control to the Form1 form and set the Connect property to Text.
+   Set the DatabaseName property to a non-text database, such as an Access or
+   DBaseIV database.
+
+3. On the Run menu, click Start, or press F5. An application error occurs
+   displaying the error message - VB caused a General Protection Fault in module
+   VB.EXE at 003F:2106. Choose close. VB will close.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbVBp400 kbGrpDSVBDB kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,47 @@
+DOCUMENT:Q185789  09-AUG-2001  [winnt]
+TITLE   :INFO: QLogic QLA1040 SCSI Miniport driver added to SP4
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbFEA kbWinNT400sp4fea
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 SP4 
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Support for the QLA1040 Wide UltraSCSI Host Bus Adapter by QLogic Corporation,
+was not included in Service Pack 3. The driver for this adapter, Ql10wnt.sys,
+has been added to Windows NT Service Pack 4.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbFEA kbWinNT400sp4fea 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp4 kbWinNTS400sp4 kbWinNTS400search
+Version           : WinNT:4.0
+Issue type        : kbbug kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,166 @@
+DOCUMENT:Q277891  28-JUN-2001  [iis]
+TITLE   :How to Renew Certificates That Are Used with IIS 5.0
+PRODUCT :Internet Information Server
+PROD/VER::2.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Certificate Services, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Certificates that are installed on computers running Internet Information
+Services (IIS) 5.0 are usually set to expire in one year from the issue date
+depending on the Certificate Authority that issued them.
+
+If you have a certificate that is about to expire, you have the option of
+renewing it to make sure that it continues to be valid. This article describes
+the steps in the renew process.
+
+MORE INFORMATION
+================
+
+NOTE: If you received your original Web server certificate from a Certificate
+Authority that is not running Microsoft Certificate Server 2.0 (for example,
+from Verisign), see the following Knowledge Base article for more information:
+
+   
+
+   Q262979 Cannot Renew Verisign Certificates in IIS 5.0
+
+In IIS 5.0, the certificates are set for each Web site. To renew a certificate
+bound to a certain Web site, follow these steps:
+
+IMPORTANT: Do not change any of the Web Site or Directory Security properties for
+the site until the renewal process is complete.
+
+1. Open Internet Service Manager.
+
+2. Right-click the Web site for which you want to renew the certificate, and
+   then click Properties.
+
+3. Under the Directory Security section, click Server Certificate.
+
+4. In the Web Server Certificate Wizard, click Next, click Renew the current
+   certificate, and then click Next.
+
+5. If you are running Microsoft Certificate Server 2.0 and it is part of your
+   Active Directory, do the following:
+
+   a. Click Send the request immediately to an online certificate authority, and
+      then click Next.
+
+   b. From the drop-down list, select Certificate Authority, and then click
+      Next.
+
+   c. Confirm your selection, and then click Next to complete the renew process.
+
+   If you are not running Microsoft Certificate Server 2.0, click Prepare the
+   request now, but send it later.
+
+6. Choose the request file name, and note the directory where you save it.
+
+7. Click Next twice, and then click Finish to complete the wizard. Click OK to
+   close the Web site properties and the Internet Service Manager. You now have
+   a renewal request file.
+
+8. If you received your certificate from a third-party certificate authority
+   (for example, Verisign), send them the renew request file that you created,
+   wait for them to e-mail you a renewed certificate, save the renewed
+   certificate file to your hard disk, and then go to step 16. To save the
+   renewed certificate file to your hard disk, copy the following lines:
+
+   -----BEGIN NEW CERTIFICATE REQUEST-----" until and including "-----END NEW
+   CERTIFICATE REQUEST-----
+
+   Paste the text into a text editor, such as Notepad, and then save the file
+   with a .txt or .cer file extension.
+
+   NOTE: Be careful not to include any blank spaces or extra lines.
+
+9. If you received the original certificate from Microsoft Certificate Server
+   1.0 or 2.0, submit the renewal request by using the Web interface.
+
+10. Open the request file that you generated in step 6, and copy the following
+   lines:
+
+   -----BEGIN NEW CERTIFICATE REQUEST-----" until and including "-----END NEW
+   CERTIFICATE REQUEST-----
+
+   NOTE: Be careful not to include any blank spaces or extra lines.
+
+11. Open your Certificate Server Web interface (for example,
+   http://MyCertificateServer/certsrv).
+
+12. Click Request a certificate, click Next, click Advanced Request, and then
+   click Next. (In Certificate Server 1.0, click Certificate enrollment tools,
+   click Process a certificate request, and then go to step 13.)
+
+13. Click Submit a certificate request using a base64 encoded PKCS #10 file or a
+   renewal request using a base64 encoded PKCS #7 file, and then click Next.
+
+14. Paste the text that you copied in step 10 into the Saved request box, and
+   then click Next.
+
+15. Click Download CA Certification Path, and then save the file on your hard
+   drive. This is your renewed certificate file.
+
+16. In Internet Service Manager, right-click the Web site for which you are
+   renewing the certificate (from step 2), and then click Properties.
+
+17. On the Directory Security tab, click Server Certificate.
+
+18. In the wizard window, click Next, click Process the pending request and
+   install the certificate, and then click Next.
+
+19. Browse to the renewed certificate file, select it, click Next twice, and
+   then click Finish.
+
+20. Click OK to close the sites properties and the Internet Information Services
+   snap-in.
+
+You have successfully renewed the certificate used with IIS 5.0.
+
+IMPORTANT: To confirm that the renewed certificate is correctly bound to the Web
+site, type the following command at a command prompt:
+
+   "netstat -an" (without the quotation marks)
+
+If it is correctly bound, the netstat -an listing displays the Web site's IP
+address:port address in a LISTENING or ESTABLISHED state. If this is not the
+case, restart the IIS service or the computer, and then check the event logs.
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q260729 IIS: Enabling Schannel Logging
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbCertServSearch kbZNotKeyword3 kbCertServ200
+Version           : :2.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q192165  11-DEC-2001  [winnt]
+TITLE   :Error: Terminal Server Has Ended Your Connection
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the maximum connection count has been reached and another client tries to
+log on to the Terminal Server, the following error message will be seen:
+
+   Terminal Server has ended your connection.
+   Error Code: 0x904
+
+The Terminal Server event log will display:
+
+   Event ID 71:
+   The maximum connection count was exceeded for the RDP-TCP protocol. The
+   client connection request was rejected.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Click Start, click Programs, click Administrative Tools, and then click
+   Terminal Server Connection Manager.
+
+2. Double-click the RDP-TCP connection.
+
+3. Increase the maximum connection count.
+
+4. Click OK.
+
+5. Have the user try to connect again.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q256575  06-AUG-2002  [winnt]
+TITLE   :ClipBook Viewer Prompts for Network Access Password
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user starts ClipBook Viewer (Clipbk.exe), the following dialog box may be
+displayed:
+
+   Enter Network Access Password for Server: <computer name>, DDE Share
+   CLPBK$
+
+Regardless of the password or account that is used, an "Incorrect Password" error
+message is displayed.
+
+CAUSE
+=====
+
+The Enter Network Access Password dialog box is displayed if the user does not
+have the correct network access rights because Clipbk.exe uses Network Dynamic
+Data Exchange (NetDDE) to communicate. Checking the user rights in User Manager
+may also show that the correct user account is listed, but that the user account
+was originally in another domain.
+
+RESOLUTION
+==========
+
+1. Start User Manager.
+
+2. On the Policies menu, click User Rights.
+
+3. Verify that "Access this computer from the network" is selected in the Right
+   box, or that the Domain Users global group is listed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

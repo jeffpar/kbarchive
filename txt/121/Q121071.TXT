@@ -1,0 +1,69 @@
+DOCUMENT:Q121071  08-AUG-2001  [winnt]
+TITLE   :No Ports in Print Manager with Services for NetWare Installed
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.10
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10
+
+WINDOWS
+
+kbprint
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With Services for NetWare installed, if you try to create a printer on a remote
+machine, the port entries are missing in the Print Manager Create Printer dialog
+box.
+
+CAUSE
+=====
+
+The NetWare print provider returns ERROR_NOT_SUPPORTED instead of
+ERROR_INVALID_NAME from EnumPorts().
+
+RESOLUTION
+==========
+
+Currently the only resolution is to remove Services for NetWare.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.1. This
+problem was corrected in Windows NT version 3.5.
+
+
+Additional query words: prodnt 3.10 Novell gateway client nwcs ncc
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.10
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

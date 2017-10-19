@@ -1,0 +1,79 @@
+DOCUMENT:Q277760  05-JUN-2001  [iis]
+TITLE   :Passport Express Purchase Implementation Guide Release Notes
+PRODUCT :Internet Information Server
+PROD/VER::1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, version 1.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the new features and changes that are implemented in version
+1.4 of the Microsoft Passport express purchase (EP) service.
+
+MORE INFORMATION
+================
+
+ - The service used to implement Passport wallet is now known as Passport
+   express purchase (EP). This is a terminology change only and has no impact on
+   code. However, it may affect the way your refer to the service on your site.
+
+ - The Express Purchase Implementation Guide is now included in the same table
+   of contents as the documentation for the Passport single sign-in (SSI)
+   service and Kids Passport service. This is intended as a convenience for
+   sites that will implement more than one service.
+
+ - The Passport Wallet server now supports a flexible-layout cobranding
+   technique. Using this technique, participant sites can cobrand specific
+   elements of the Passport wallet user interface (UI) and the EP service, as
+   well as enclose the entire UI inside a page layout of their choosing.
+
+ - Means-of-payment instruments (such as credit cards) that are supported by
+   Passport EP are now listed in a convenient table.
+
+ - The Passport Wallet server now supports a flexible-layout cobranding
+   technique. Using this technique, participant sites can cobrand specific
+   elements of the Passport wallet user interface (UI) and the EP service, as
+   well as enclose the entire UI inside a page layout of their choosing.
+
+REFERENCES
+----------
+
+For more information, see the following Web sites:
+
+   http://www.passport.com/DevInfo/Start_Goals.asp
+   (http://www.passport.com/DevInfo/Start_Goals.asp)
+
+   http://www.passport.com/devinfo/dev_ppep.asp
+   (http://www.passport.com/devinfo/dev_ppep.asp)
+
+Additional query words: readme wallet implementation express purchase
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassportSearch
+Version           : :1.4
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

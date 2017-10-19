@@ -1,0 +1,81 @@
+DOCUMENT:Q114013  27-JUN-1999  [win16sdk]
+TITLE   :BUG: General Protection Fault When Accessing an HFONT
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly _IK kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On rare occasions, in low memory situations or after calling the function
+GlobalCompact(-1), a general protection fault (GP) Fault may occur when calling
+SelectObject() to select a handle to a logical font (HFONT) into a device
+context. This happens when the application caches the handle to the logical
+font.
+
+CAUSE
+=====
+
+Part of the internal data structure for the font resides in global memory that
+is allocated as GMEM_DISCARDABLE. In tight memory situations, this global memory
+may be discarded and GDI does not detect this situation before attempting to
+access the memory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows version 3.1.
+
+This problem does not occur in Windows 95.
+
+MORE INFORMATION
+================
+
+To avoid this bug, applications should not cache font handles but instead hold
+onto the LOGFONT structure that contains the information for recreating the
+font. By holding onto the LOGFONT and calling the function CreateFontIndirect()
+each time a font is needed, applications should be able to safely avoid this
+bug.
+
+NOTE: The call to CreateFontIndirect() is not an expensive call in terms of
+performance. The actual mapping of logical font to physical font happens when
+you call SelectObject(). When you cache HFONTs, you still have to call
+SelectObject() each time before calling any of the Windows text APIs so this
+approach only requires one additional function call.
+
+Additional query words: buglist3.10 3.10 font fault error
+
+======================================================================
+Keywords          : kb16bitonly _IK kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

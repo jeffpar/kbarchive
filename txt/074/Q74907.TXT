@@ -1,0 +1,101 @@
+DOCUMENT:Q74907  30-JUL-2001  [homegame]
+TITLE   :North/East Boundaries and Center Location of Flight Sim World
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Flight Simulator 3.0 and 4.0 world contains a square flat surface area
+within the following coordinates:
+
+   North: 0 to 65536.0000
+   East:  0 to 65536.0000
+
+Page 74 of the version 4.0 "Information Manual and Flight Handbook" notes that
+"The center coordinate (x=0,y=0) of the Flight Simulator world is 40 degrees
+north latitude and 88 degrees 30 minutes west/east longitude, about 30 miles
+southwest of Champaign, Illinois."
+
+Note that this refers to the geographical center of the square Flight Simulator
+world, not the 0-0 coordinate navigational location. That is, coordinate North
+0, East 0 is not on a corner or center of the Flight Simulator map--it is
+southwest of Panama.
+
+MORE INFORMATION
+================
+
+The Flight Simulator world can be displayed using the map view. To position and
+size the map, do the following:
+
+1. Press 5 for Nav/Com, press 9 for Slew, then press ESC.
+
+2. Press 2 for Views, then press C for Setup Windows.
+
+3. Press 3 until the map is On.
+
+4. Press C for Move, use the keypad arrow keys to position the map just below
+   the northeast coordinates in the top left corner of the screen, then press
+   ENTER.
+
+5. Press 8 for Size, press the right arrow key until the width of the map
+   stretches across the entire screen, and press ENTER. (Note: The height should
+   remain less than 1/4 of the width.)
+
+6. Press ESC to return to the Views menu, press 3 until the Zoom displays 2000
+   miles, and press ESC.
+
+The map should now show most of North America and land on either side of the
+ocean. Spin the map using Keypad 1 or 3 and the map reveals the boundaries of
+the Flight Simulator world.
+
+Assuming the plane is facing directly north, the coordinates for the following
+are:
+
+Top left corner of map:       north: 49242.9999
+                              east:  49243.0000
+
+Top right corner of map:      north: 49242.9999
+                              east:  49242.9999
+
+Bottom left corner of map:    north: 49243.0000
+                              east:  49243.0000
+
+Bottom right corner of map:   north: 49243.0000
+                              east:  49242.9999
+
+Example
+-------
+
+If the aircraft is flying/slewing directly north, the north coordinate will reach
+the boundary of the world at 49242.9999. Keeping the same direction, the
+aircraft will jump to the southern most point on the opposite side of the world
+and the coordinate will keep increasing from 49243.0000 to 65536.0000. At this
+point (65536.0000), the aircraft is somewhere southwest of Panama.
+
+For more information on displaying, sizing, and moving the map, see pages 21-26
+in the "Information Manual and Flight Handbook" version 4.0 manual.
+
+Additional query words: fs4
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

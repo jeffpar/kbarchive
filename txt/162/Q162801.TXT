@@ -1,0 +1,71 @@
+DOCUMENT:Q162801  14-NOV-2000  [word97]
+TITLE   :WD97: Toolbars Dock on Top of Other Toolbars, Hide Buttons
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you dock one toolbar next to another toolbar, some of the buttons on one or
+both of the toolbars are not visible. For example, when you dock the Formatting
+toolbar to the right of the Standard toolbar, both toolbars fit within the
+window width, some of the buttons are not visible, and both toolbars display two
+chevron characters (>>) in the top right corner.
+
+NOTE: This functionality is different from previous versions of Word where if you
+dock one toolbar next to another, the second toolbar appears to run off the
+screen.
+
+CAUSE
+=====
+
+When you dock one toolbar next to another, Word hides some of the buttons and
+adds the chevron characters to the toolbar that contains the hidden buttons. The
+chevron characters allow you to identify a toolbar that contains hidden buttons.
+You can quickly display the buttons on the toolbar by double-clicking the
+chevron characters.
+
+WORKAROUND
+==========
+
+To see all of the buttons on a toolbar, use either of the following methods:
+
+ - Double-click the chevron characters in the top right corner of the toolbar.
+
+   The toolbar will "float" in the document area.
+
+   -or-
+
+ - Drag the toolbar to a new location.
+
+Additional query words: 8.0 word8 word97 gone disappeared hidden missing lost hides angle bracket brackets greater than sign
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

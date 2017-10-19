@@ -1,0 +1,69 @@
+DOCUMENT:Q151290  20-FEB-2002  [win95x]
+TITLE   :Top Articles on Windows 95 Hardware
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+INSTRUCTION
+-----------
+
+The Knowledge Base is available on the World Wide Web and The Microsoft Network.
+You can also access the Knowledge Base if you purchase a Microsoft TechNet
+compact disc subscription.
+
+The Microsoft Knowledge Base on the World Wide Web
+--------------------------------------------------
+
+Connect to the Knowledge Base by using the following address
+
+   http://support.microsoft.com/support/default.asp
+
+and follow the detailed instructions on the page.
+
+ARTICLE LISTING
+---------------
+
+ITEM ID ARTICLE TITLE                                                PAGES
+--------------------------------------------------------------------------
+Q120442 Using Hard Disk Utilities with Windows 95                        3
+Q124730 Tape Backup Units Supported in Windows 95                        2
+Q126855 Windows 95 Support for Large IDE Hard Disks                      6
+Q134503 Parity Error Messages May Indicate Bad Memory                    2
+Q136651 Shutdown Hangs After "Please Wait While..." Screen               1
+
+End of listing.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

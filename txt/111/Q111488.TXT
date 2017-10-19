@@ -1,0 +1,54 @@
+DOCUMENT:Q111488  09-JUN-1999  [homegame]
+TITLE   :Pipe Dream: Scoring Error in Help File
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Entertainment Pack, volume 2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Pipe Dream, a game included with volume 2 of the Microsoft Windows Entertainment
+Pack, has an incorrect entry in the Help file.
+
+MORE INFORMATION
+================
+
+1. From the Help menu, click How To Play.
+
+2. Click Scoring. The seventh scoring topic states:
+
+   10,000 points if the goo crosses itself in 5 crosspieces.
+
+The score you will actually receive is 5000 points.
+
+Additional query words: 1.00 wep pipe pipedream docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbWinEntPkSearch kbWinEntPk200
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

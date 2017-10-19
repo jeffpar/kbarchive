@@ -1,0 +1,103 @@
+DOCUMENT:Q132950  08-AUG-2001  [winnt]
+TITLE   :Event ID 3216 and 3208 Logged For Replicator Service
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you replicate logon scripts using the Replicator service in Windows NT,
+although the replication occurs, the following events appear in the Event Viewer
+system log:
+
+   Event ID: 3216
+   Source: Replicator
+   Type: Error
+   Description: System Error 32 occurred.
+
+   Event ID: 3208
+   Source: Replicator
+   Type: Error
+   Description: The replication service could not update Directory
+   Scripts from the source on Computer_name due to error 32.
+
+
+If you have alerts configured, the following error messages may appear:
+
+   The replication service could not update directory Scripts from the Source on
+   <computer_name> due to error 32.
+
+   Replicated data has changed in Directory Scripts.
+
+CAUSE
+=====
+
+The replicator service requires exclusive use of resources, such as directories
+and all of their subdirectories being imported or exported, and files on the
+REPL$ and NETLOGON shares. Any violation of this exclusive use, such as File
+Manager having one of these directories open, or users connected to the NETLOGON
+share, causes this problem.
+
+MORE INFORMATION
+================
+
+Some things you can do to minimize these nuisance messages are:
+
+ - Make sure nothing on the export server is keeping the REPL\EXPORT directory
+   or subdirectories open.
+
+ - If user logon scripts are being used, make sure the client fully exits the
+   batch file and doesn't keep it open.
+
+ - Make sure there are no persistent connections established to the NETLOGON
+   share from any clients.
+
+ - Tune the replication service to replicate at longer intervals - see
+   associated article in the Microsoft Knowledge Base:
+
+   Q138125 How to Set Replication Interval to Minimum
+
+For additional information on Event ID 3216, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q159926 Event ID 3216 - System Error 53 Occurred
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.5, 3.51,
+and 4.0. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt directory replication directory replicator
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

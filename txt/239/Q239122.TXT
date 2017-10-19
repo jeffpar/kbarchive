@@ -1,0 +1,65 @@
+DOCUMENT:Q239122  08-MAY-2002  [exchange]
+TITLE   :XFOR: SNADS Documentation Chap03.doc on Exchange CD Is Corrupted
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open the Chap03.doc file in the
+Docs\Word_Docs\Connectivity\Snads folder on the Exchange Server 5.5 CD-ROM with
+Word 2000, you are prompted with a File Conversion dialog box. If you attempt to
+open the file in Word 95 or Word 97, the file appears corrupted.
+
+CAUSE
+=====
+
+The Chap03.doc file is corrupted.
+
+RESOLUTION
+==========
+
+To obtain the new file, Snads.rtf, you need to apply Exchange Server 5.5 Service
+Pack 3 (SP3) for the Exchange SNADS Connector. To do so, you must run
+Snaconn.exe from the Exchconn\Setup\I386\Snaconn folder on the SP3 CD-ROM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+
+Additional query words: hosed as/400 sna bad
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

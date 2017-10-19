@@ -1,0 +1,65 @@
+DOCUMENT:Q94183  16-SEP-1999  [schedplus]
+TITLE   :PC WSPlus: Schedule Distribution Command-Line Parameters
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00 1.00a
+WINDOWS
+kbother kbtlc
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+You can use the following command-line parameters when you run the schedule
+distribution program (SCHDIST.EXE) for versions 1.0 and 1.0a of Microsoft
+Schedule+ for Windows:
+
+Parameter       Description
+--------------------------------------------------------------------------
+
+ -Dxy           Specifies the drives to be processed, where x is the first
+                drive to be processed and y is the last.
+
+ -In            Indicates the number of times to cycle through the
+                specified postoffices. If n is left blank, Schedule
+                Distribution runs until it is stopped manually.
+
+ -L<path>       Tells the program to generate a log file in the path
+                specified.
+
+ -O             Enables free/busy sharing with other applications. Run
+                Schedule Distribution with this option if you use other
+                applications that share free/busy information with
+                Schedule+.
+
+ -V             Tells the program to shows more detail in its screen
+                output.
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

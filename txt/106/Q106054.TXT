@@ -1,0 +1,60 @@
+DOCUMENT:Q106054  31-OCT-1999  [win3x]
+TITLE   :SPX-Compatible Applications and Windows for Workgroups 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the frame type being used on your Novell NetWare server is not set to
+Ethernet_802.3, SPX-compatible applications, such as RConsole, may not work
+correctly under Windows for Workgroups 3.11.
+
+For example, if you start the RConsole application, some servers may be missing
+from the list of servers to administer. This problem occurs if the server's
+frame type is set to Ethernet_II, Ethernet_802.2, or Ethernet_SNAP.
+
+CAUSE
+=====
+
+This problem occurs because the Windows for Workgroups server defaults to the
+802.3 frame type.
+
+RESOLUTION
+==========
+
+To correct this problem, choose the Network Setup icon and change the frame type
+for the Windows for Workgroups IPX/SPX-compatible protocol to the same frame
+type as the NetWare server.
+
+Additional query words: 3.11 novell network server tape backup util utility arcserve
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

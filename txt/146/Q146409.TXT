@@ -1,0 +1,81 @@
+DOCUMENT:Q146409  04-SEP-1999  [win95x]
+TITLE   :Backup Error.log File Contains Garbage Characters
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Error.log file located in the Program Files\Accessories\Log folder created
+by Windows 95 Backup may contain garbage characters.
+
+CAUSE
+=====
+
+This problem may occur after you attempt to perform an incremental backup if any
+of the following conditions are true:
+
+ - Some of the files or folders specified in the original backup no longer
+   exist.
+
+ - You do not have the necessary network access rights.
+
+ - No changes have been made to the original files before running an incremental
+   backup.
+
+NOTE: If any of the above conditions are true when you attempt to perform an
+incremental backup, you receive the following error message:
+
+   Microsoft Backup could not find any files for this operation. Either the
+   specified files or directory no longer exist, you do not have the necessary
+   network access rights, or none of the selected files need to be backed up.
+   This operation has been canceled.
+
+RESOLUTION
+==========
+
+To remove the garbage characters from the Error.log file, use either of the
+following methods:
+
+ - Manually delete the garbage characters by opening the file in any text editor
+   (such as Notepad).
+
+ - Click the Overwrite Old Status Log Files check box in Backup so that it is
+   selected. To access the check box, click Options on the Settings menu in
+   Backup, and then click the General tab.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

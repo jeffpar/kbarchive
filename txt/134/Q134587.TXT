@@ -1,0 +1,69 @@
+DOCUMENT:Q134587  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Can't Use -REALBREAK Under this Version of DPMI
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run an MS-DOS-based program, you may receive the following error
+message:
+
+   error.TNT:20074: can't use -REALBREAK under this version of DPMI
+
+This error is more likely to occur with computer-aided design (CAD) programs such
+as Cadkey Light or AutoCad.
+
+CAUSE
+=====
+
+In order to run in Windows 95, these programs require that the Pharlap.386
+driver be loaded in the System.ini file.
+
+RESOLUTION
+==========
+
+Install the Pharlap.386 device driver in the System.ini file. To do so, follow
+these steps:
+
+1. Use any text editor (such as Notepad) to open the System.ini file in the
+   Windows directory.
+
+2. Add the following line to the [386Enh] section of the file
+
+   device=<path>:\pharlap.386
+
+   where <path> is the full path to the Pharlap.386 file.
+
+3. Save and then close the System.ini file.
+
+4. Restart Windows 95.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

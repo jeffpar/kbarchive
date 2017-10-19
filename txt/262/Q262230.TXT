@@ -1,0 +1,82 @@
+DOCUMENT:Q262230  06-AUG-2002  [sms]
+TITLE   :Microsoft Installer Programs and Systems Management Server 2.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows Installer is an installation technology that streamlines the
+program installation process and offers continued resiliency for programs,
+including the ability to install additional features on demand, automatically
+repair programs, uninstall programs cleanly, and roll back programs reliably.
+This technology is included with Windows 2000 and Systems Management Server
+(SMS) 2.0.
+
+When you use SMS 2.0 to deploy Windows Installer Setup packages, you gain
+additional change and configuration benefits. For example, you can use SMS to
+deploy Windows Installer Setup packages (.msi files) throughout your
+organization.
+
+Various white papers and Microsoft Knowledge Base articles exist that detail
+general deployment and usage issues for Windows Installer.
+
+MORE INFORMATION
+================
+
+Running an MSI script from an SMS advertisement may produce "Incorrect command
+line parameters" error messages.
+
+For additional information, review the following white papers and Microsoft
+Knowledge Base articles:
+
+Software Deployment Using Windows 2000 and Systems Management Server 2.0:
+
+   http://www.microsoft.com/windows2000/techinfo/planning/management/smsintell.asp
+
+Deploying Windows Installer Setup Packages with Systems Management Server 2.0:
+
+   http://www.microsoft.com/smsmgmt/deployment/deploymsi.asp
+
+Microsoft Knowledge Base Articles:
+
+   Q242479 Overview of the Windows Installer Technology
+
+   Q230781 How to Use Property Reference Command-Line Parameters with
+   Msiexec.exe
+
+   Q227091 Command-Line Switches for the Microsoft Windows Installer Tool
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMSI200
+Version           : :2.0,2.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

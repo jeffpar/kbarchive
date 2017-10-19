@@ -1,0 +1,69 @@
+DOCUMENT:Q101671  05-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Inbox Shadowing Not Recommended
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Inbox Shadowing is not recommended when using version 3.2 of Microsoft Mail
+Remote for Windows because of possible problems accessing the same mailbox as
+the one being used by Microsoft Mail for Windows.
+
+NOTE: For more information on Inbox Shadowing, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q96718 PC Win: Description and Use of Inbox Shadowing
+
+CAUSE
+=====
+
+The Windows client is the controlling client. Therefore, if you delete messages
+with another client such as Mail Remote for Windows or Microsoft Mail for PC
+Networks, MS-DOS workstation, the Windows client does not reflect the
+deletions.
+
+For example, after you delete a message with Mail Remote for Windows or the
+MS-DOS client, the inbox shows 85 headers or messages.
+
+However, when you run the Windows client, it tells you that there are 127
+messages in the Inbox.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of Microsoft Mail
+for PC Networks. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

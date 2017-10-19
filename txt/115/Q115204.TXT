@@ -1,0 +1,64 @@
+DOCUMENT:Q115204  22-NOV-1999  [msdos]
+TITLE   :Err Msg Creating Uninstall Disk: Bad Uninstall Disk...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use 360-kilobyte (K) 5.25-inch floppy disks as your Uninstall disks
+during installation of MS-DOS 6.22, you run out of disk space on the second
+disk. As a result, you receive the following error message:
+
+   Bad Uninstall disk, press ENTER to exit
+
+After you receive the above error, the only option available is to exit Setup.
+
+NOTE: This problem occurs only when you install MS-DOS 6.22 over MS-DOS 6.22.
+
+CAUSE
+=====
+
+Since Uninstall now backs up the DRVSPACE.BIN and DRVSPACE.INI file in addition
+to DBLSPACE.BIN and DBLSPACE.INI, more disk space is required on the Uninstall
+disks. This problem occurs when you have both DoubleSpace and DriveSpace
+volumes, large CONFIG.SYS and AUTOEXEC.BAT files, and you use 360K floppy disks
+for your Uninstall disks.
+
+WORKAROUND
+==========
+
+To work around this problem, reduce the size of your CONFIG.SYS and AUTOEXEC.BAT
+files, or convert all DoubleSpace drives to DriveSpace drives.
+
+Additional query words: low density
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

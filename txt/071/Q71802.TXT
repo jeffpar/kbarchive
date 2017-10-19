@@ -1,0 +1,70 @@
+DOCUMENT:Q71802  01-NOV-1999  [win95x]
+TITLE   :Windows Setup Does Not Recognize paging=off Setting
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you run the Windows Setup program, from the Main Group under Program Manager,
+it does not display the correct swap file setting if the line
+
+   paging=off
+
+is added to the SYSTEM.INI file's [386Enh] section.
+
+MORE INFORMATION
+================
+
+It is possible to have either a permanent or temporary swap file reported by
+Windows Setup, but not have Windows use it. In enhanced mode, the line "Swap
+file:" in the Windows Setup window has only two display settings:
+
+   Temporary
+
+   - or -
+
+   Permanent
+
+In real and standard modes, if a temporary swap file is being used, Windows Setup
+shows "Swap file: None."
+
+In 386 enhanced mode, the line "paging=off" is added to the SYSTEM.INI file's
+[386Enh] section to stop Windows from paging applications to the virtualized
+memory on the hard disk. When this line is invoked, the Windows Setup program is
+unaware of its existence.
+
+For more information on the "paging=off" setting, please refer to the SYSINI3.TXT
+file in your Windows directory.
+
+Additional query words: 3.00 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

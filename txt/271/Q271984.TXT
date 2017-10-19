@@ -1,0 +1,82 @@
+DOCUMENT:Q271984  06-AUG-2002  [exchange]
+TITLE   :XADM: Event ID 1101 Error 0x8004010f with Background Processing
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange 2000 Server 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During a routine background processing, the following event may be logged in the
+Application event log:
+
+   Event Source: MSExchangeISPri
+   Event ID: 1101
+   Description: Error 0x8004010f occurred during background cleanup on message
+   <number>
+
+CAUSE
+=====
+
+During routine background processing, the content of each mailbox size is
+checked against its limit. If a message contains a pointer to an attachment that
+is not found in the attachment table, this event is logged. The event may be
+logged if you use the ISScan utility to remove certain attachments because the
+messages have pointers to the attachments.
+
+RESOLUTION
+==========
+
+These events are harmless and disappear when no more messages that contain the
+removed attachment exist.
+
+You can use the following command in the ISInteg utility to resolve this
+behavior: Exchange Server 5.5:
+
+   "ISINTEG -PRI -FIX -TEST ALLTESTS" (without the quotation marks)
+
+Exchange 2000 Server:
+
+   "Isinteg -s <servername> -fix -test alltests" (without the quotation
+   marks)
+
+where <servername> is the netbios name of the Exchange 2000 server.
+
+MORE INFORMATION
+================
+
+The ISInteg utility is a standard utility that is installed with Microsoft
+Exchange Server. The ISInteg utility is located in the Exchsrvr\Bin folder.
+
+Additional query words: cleanup clean up extra
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

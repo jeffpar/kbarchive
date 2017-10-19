@@ -1,0 +1,61 @@
+DOCUMENT:Q192597  31-OCT-2001  [homemm]
+TITLE   :Official Microsoft Bookshelf Internet Directory: Support Options
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbpolicy kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Official Microsoft Bookshelf Internet Directory, 1998 Edition ISBN 1-57231-617-9 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the support options that are available for Official
+Microsoft Bookshelf Internet Directory, 1998 edition.
+
+MORE INFORMATION
+================
+
+To request support for Official Microsoft Bookshelf Internet Directory, please
+send an e-mail message containing details about the issue to the following
+address:
+
+   mspinput@microsoft.com
+
+Telephone support and Microsoft Online Assisted Support are not available for
+this Microsoft Press book.
+
+For more information about Microsoft Press products, please visit the following
+Microsoft Web site:
+
+   http://mspress.microsoft.com
+
+
+Additional query words: 1998 multi multi-media media mm
+
+======================================================================
+Keywords          : kbpolicy kbref kbimu 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

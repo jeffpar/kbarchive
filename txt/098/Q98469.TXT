@@ -1,0 +1,72 @@
+DOCUMENT:Q98469  22-NOV-1999  [msdos]
+TITLE   :Razzle Dazzle 1.0 and MS-DOS 6.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using Razzle Dazzle version 1.0 and the temporary file for this
+screen saver is located on a DoubleSpace-compressed drive, you may encounter
+problems returning to your system after the screen saver has engaged. The video
+screen may become unclear and difficult to read.
+
+CAUSE
+=====
+
+Razzle Dazzle writes a temporary file to your hard disk drive for its use. Video
+corruption occurs because the screen saver cannot write to the temporary file
+when that file is located on a compressed drive.
+
+WORKAROUND
+==========
+
+To correct this problem, point the temporary file to the uncompressed drive. To
+do this, change the following line in the AUTOEXEC.BAT file from:
+
+   C:\RAZDAZ\DAZTSR /fC:\RAZDAZ\ /QN /S=300 /e or /x
+
+to:
+
+   C:\RAZDAZ\DAZTSR /fC:\RAZDAZ\ /QN /S=300 /IH:\XXXXXXXX.$$$
+
+where "H:" represents the host (uncompressed) drive and "XXXXXXXX" is the
+temporary filename.
+
+For more information, contact Rhodes Scholar Software.
+
+Razzle Dazzle is manufactured by Rhodes Scholar Software, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 6.00 Razzle Dazzle Saver 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

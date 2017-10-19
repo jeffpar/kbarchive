@@ -1,0 +1,56 @@
+DOCUMENT:Q179895  28-MAR-1999  [exchange]
+TITLE   :XWEB: Err Msg. "Object Moved" When Accessing Active Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are use Microsoft Internet Explorer to access the Microsoft Exchange
+Active Server Components (Web connector), the following error message can
+appear:
+
+   Object moved.
+   The object may be found <here>.
+
+The word "here" is a link to another page. Accessing the link will not allow
+access to the Active Server Components Web-based Inbox or public folders.
+
+WORKAROUND
+==========
+
+The above situation can occur if you are using a version of Internet Explorer
+earlier than version 3.01. For the proper processing of Active Server
+Components, upgrade the browser to Internet Explorer version 3.01 or later.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

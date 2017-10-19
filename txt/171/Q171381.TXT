@@ -1,0 +1,66 @@
+DOCUMENT:Q171381  13-JUN-2001  [sna]
+TITLE   :Windows 95 Domain Password Change Doesn't Change Local Password
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a Windows 95 system password expires, and you change the password using the
+SNA Server Windows 95 client, the password only changes through the SNA Server
+computer. The next logon attempt will fail because the local system password
+remains the same as the old one.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0 Service
+Pack 1. This problem was corrected in the latest SNA Server version 3.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+With the fix applied, the SNA Server Windows 95 client changes passwords by
+using the Windows 95 password change function instead of relying on the SNA
+Server computer. SNA Server Windows 95 client will automatically start the
+connection with the system password.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP1
+Version           : WINDOWS:3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q135814  13-JUN-2001  [win95x]
+TITLE   :Setup Error 943 and 723 Setting Up or Removing Microsoft Plus!
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to install or remove Microsoft Plus! for Windows 95, you may
+receive the following error messages:
+
+   Setup Error 943
+   Your Setup files may be damaged. Try restarting the Setup program.
+
+   Setup Error 723
+   The processing of top-level information has failed.
+
+   Microsoft Plus! for Windows 95 Setup was not completed successfully.
+
+CAUSE
+=====
+
+These error messages can occur if the Setup.stf file in the Program
+Files\Plus!\Setup folder is damaged or truncated.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Delete the Program Files\Plus!\Setup folder.
+
+2. Reinstall Microsoft Plus!
+
+
+======================================================================
+Keywords          : win95 kbfaq
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbWin95 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

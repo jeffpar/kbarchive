@@ -1,0 +1,83 @@
+DOCUMENT:Q171284  25-MAR-2002  [win95x]
+TITLE   :Problems Enumerating CardBus Devices with No Free IRQs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbenv kbhw osr2 win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Windows 95 on a computer with CardBus slots, you may
+experience the following symptoms:
+
+ - When multiple PC Cards are installed and the computer is started, Windows may
+   not start and you may receive the following error message:
+
+   While initializing ... device V86MMGR: Insufficient memory to initialize
+   Windows.
+
+ - If Windows is running with one PC Card inserted, the computer may become
+   unresponsive for several minutes when you insert another PC Card. When the
+   computer returns from this busy state, Device Manager Reports the new card as
+   disabled because of a resource conflict (code 12).
+
+CAUSE
+=====
+
+These symptoms can occur if there are not enough available IRQ lines for all the
+installed devices.
+
+RESOLUTION
+==========
+
+
+To work around this issue, make more IRQ resources available by disabling a
+device (such as a COM port or LPT port). Such devices can typically be disabled
+in Device Manager.
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+If there are not enough available IRQ lines, there is no configuration that
+allows all devices to be active without a resource conflict. A device must be
+removed or disabled to free an IRQ line and allow the remaining devices to be
+configured successfully.
+
+
+Additional query words: pccard card bus hang
+
+======================================================================
+Keywords          : kbenv kbhw osr2 win95 kbHardware 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

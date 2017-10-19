@@ -1,0 +1,306 @@
+DOCUMENT:Q138804  13-JUN-2001  [sna]
+TITLE   :Compatibility with S/36
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+This article describes how to configure SNA Server to communicate with an IBM
+S/36 (SSP release 5.5 or later) over 802.2 Token Ring to support 5250 emulation.
+Both SNA Server and S/36 configuration parameters are discussed.
+
+NOTE: The SNA Server 5250 applet shipped with SNA server 2.11 and before did not
+support S/36 device emulation. An updated applet which supports both AS/400 and
+S/36 is available from Microsoft.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11 and 2.11 Service Pack 1. This problem was corrected in the latest Microsoft
+SNA Server 2.11 U.S. Service Pack. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+These instructions assume all of the following:
+
+ - The Windows NT DLC transport driver is already installed and is bound to the
+   correct network adapter.
+
+ - The SNA Server DLC link service is already installed using SNA Server Setup.
+
+ - The system has been restarted.
+
+S/36 Configuration
+------------------
+
+1. Sign on to the S/36 console.
+
+2. Determine the S/36 token ring adapter address:
+
+    - At the command line type STATUS COMCNFIG.
+
+    - Enter "1" (without the quotation marks) in the field to display specific
+      line status.
+
+    - Enter "9" (without the quotation marks) in the next screen to display the
+      status of the token ring line.
+
+   NOTE: Lines 9 and 10 are the only valid lines for token ring on the S/36. If
+   no adapter address is displayed, verify that you are using the correct line
+   number, and that the token ring card is properly installed.
+
+3. Note the adapter address for use in configuring SNA Server. Press CMD7 until
+   you are back at the main S/36 menu. If necessary, use the BLDLIBR command to
+   create a library to contain the communications configuration.
+
+4. Type CNFIGICF to start configuring the S/36 communications.
+
+5. First, define an ICF line member for your token ring line. On the "SSP-ICF
+   CONFIGURATION MEMBER DEFINITION" screen enter a name for your token ring line
+   member description and the library in which to create it. Type "1" (without
+   the quotation marks) to create a new member, then press ENTER.
+
+6. On screen 2.0 enter "3" (without the quotation marks) for SNA.
+
+7. On screen 4.0 enter "4" (without the quotation marks) for a token ring line
+   member. A second question appears. Enter "Y" (without the quotation marks) to
+   indicate that APPC will be used.
+
+8. On the "SNA LINE MEMBER ATTRIBUTES" screen, enter the exchange ID (XID) and
+   SAP values. In most cases "00000" can be used for the XID and "04" can be
+   used for the SAP.
+
+9. On screen 12.5 type a "1" (without the quotation marks) to create a new
+   remote system with the name of your SNA Server in the "Remote System Name"
+   field. Press ENTER.
+
+10. On screen 13.0 enter "2" (without the quotation marks) for a peer system.
+   Press ENTER.
+
+11. Enter the two parts of the SNA Server's XID. This value must match the Local
+   node ID value in the 802.2 Setup window in SNA Server admin. Press ENTER.
+
+12. Enter the adapter address and SAP value for your SNA Server. The appropriate
+   SAP address for your SNA Server can be found in the Link properties for the
+   link service used by the connection to the S/36. In most cases this will be
+   "04". Press ENTER which returns you to the "SNA LINE MEMBER ATTRIBUTES"
+   screen. Then press Cmd5 to restart CNFIGICF.
+
+13. Define a communications subsystem member. The screen currently shows the
+   name for the line member you just created. Change the member name to a new
+   name for your new subsystem member. Select the following options:
+
+    - "1" for Create a member.
+
+    - "3" for SNA, "1" for SNA subsystem,
+
+    - "7" for APPN.
+
+   You should now see the "SUBSYSTEM MEMBER DEFINITION" screen.
+
+14. Type the system and network names for your S/36. These values correspond to
+   the Control Point Name and Network Name fields in the Remote Node Name
+   section of the 802.2 Setup window.
+
+15. On screen 28.0 select "1" to define a non-networking node. Press ENTER and
+   you are prompted for a line member name. Type in the name of the line member
+   from step 5 above. Press ENTER.
+
+16. Type "1" (without the quotation marks) to create a new location. Enter the
+   name of your SNA Server in the Remote location name and Remote system name
+   fields. This name must match the Control Point name in the Server Properties
+   window in SNA Server Admin.
+
+17. Type "2" (without the quotation marks) next to the entry you just created
+   and press ENTER. On the next screen enter "N" (without the quotation marks)
+   for Send alerts, "N" (without the quotation marks) for Single-session
+   location and "Y" (without the quotation marks) for Stay Operational. Press
+   ENTER, then CMD7 to return to the APPN SUBSYSTEM MEMBER DEFINITION screen.
+
+18. Enter "5" (without the quotation marks) to begin defining the QPCSUPP mode.
+   The S/36 refers to modes as "session groups".
+
+19. Type "1" (without the quotation marks) to create a new session group,
+   "QPCSUPP", in the Session group name and Default session group fields, then
+   press Enter. Go down to the new entry and edit it with option "2".
+
+20. Enter "1" (without the quotation marks) for Interactive, "32" (without the
+   quotation marks) for the session limit, and "00" (without the quotation
+   marks) for the other fields. NOTE: It should be possible to set the maximum
+   session limit to 64, but there is unofficial word that a single S/36 token
+   ring card will only support 32 sessions. You will need to press ENTER twice
+   to continue.
+
+21. Enter "07" (without the quotation marks) for the pacing size, "16384"
+   (without the quotation marks) for the maximum RU size, and "N" (without the
+   quotation marks) for the Acquire sessions field. Press Enter. You can now
+   press CMD7 until you exit CNFIGICF. Once you ENABLE the line your S/36 is
+   ready to communicate.
+
+SNA Server Configuration
+------------------------
+
+Configure the following entries using the SNA Server Admin program:
+
+1. Select the SNA Server service (which appears as the Windows NT machine name),
+   located in the Servers and Connections window of Admin. Enter the following
+   parameters:
+
+   SNA Network Control Point Name
+    - Network Name = "APPN" (without the quotation marks) (or Network ID in the
+      S/36 Subsystem Member Definition).
+
+    - Control Point Name = This is the Remote location name and Remote system
+      name in the S/36 APPN Subsystem Member definition. For simplicity, this
+      should be set to the local Windows NT machine name.
+
+   (These values were specified in step 14 of the S/36 configuration.)
+
+   Choose OK.
+
+2. Add a new Local APPC LU off the server service by choosing the Insert button
+   and entering the following parameters:
+
+   "LU 6.2 Type = Independent
+
+   LU Alias = For simplicity, this should be the same as the
+   Local LU Name below.
+
+   Network Name = APPN (same as network name in step 1)
+
+   LU Name = This is the same as the control point name in step 1.
+
+   All other entries can remain at default values. " (without the quotation
+   marks)
+
+   NOTE: It is most efficient for all SNA Server users to use the same Local APPC
+   LU. However, it is possible to create a unique LU for each user if desired,
+   where the LU alias and LU name above could be replaced with the actual user
+   name (although this requires additional administration to maintain).
+
+   Choose OK.
+
+3. Configure the SNA Server 802.2 connection by zooming on the connection name:
+
+      Link Service = SnaDlc1 (or name specified during SNA setup)
+
+      Remote End   = Peer System
+
+      Activation   = Pick the value appropriate for your environment.
+
+      Allowed Directions = Outgoing calls. Check Incoming Calls if you
+                           want the S/36 to be able to activate the link.
+
+      Choose the Setup button configure the following parameters:
+
+         Remote Network Address = Set to the network adapter address of the
+                                  S/36.
+
+         Local Node ID = Leave at default - 05D FFFFF.
+
+         Remote Node Name:
+
+         Network Name = APPN (same as Network Name in step 1)
+
+         Control Point Name = S/36 local system name, configured in the
+                              S/36 APPN Subsystem Member Definition.
+
+         Remote Node ID = Not used (leave blank)
+
+         Advanced options can be left at their default settings
+
+   Choose OK.
+
+4. Add a new Remote APPC LU off the connection by choosing the Insert button and
+   entering the following parameters:
+
+      LU Alias     = For simplicity, this should be the same as the
+                     Remote APPC LU Name below.
+
+      Network Name = APPN (Same as other network values above)
+
+      LU Name      = Must be set to the S/36 system name.
+
+      Uninterpreted LU Name = Not used (leave at default setting).
+
+      Select Supports Parallel Sessions (required).
+
+      Choose the Partners button. The Remote APPC LU must be partnered
+      with the Local APPC LU created above, using the QPCSUPP mode. Because
+      Enable Automatic Partnering is enabled by default for APPC LU's,
+      this pairing will already be added.
+
+   Choose OK.
+
+5. Save the SNA Server configuration file and restart the SNA Server service.
+   Once the SNA Server service is Active, all connections configured to activate
+   on server startup will go into a Pending state, then switch to Active.
+
+   NOTE: If the connection stays in Pending mode and doesn't activate:
+
+   a. Check the Windows NT Application Event Log (using Event Viewer) to see the
+      reason why the connection isn't activating. For example, if the S/36 is
+      not responding to TEST commands, then the remote network address may not
+      be correct.
+
+   b. Verify the configuration entries above with your S/36 system administrator
+      and make sure the S/36 line and communications subsystem are enabled.
+
+   c. Check if the S/36 is logging any console messages when SNA Server attempts
+      to establish the connection.
+
+   d. If the connection activates but users are unable to open 5250 sessions,
+      zoom on the Status button on the Local APPC LU, which should show the
+      following (when working correctly):
+
+      Partner LU    Mode       Connection     Sessions   Limit
+      -----------   --------   ------------   --------   ------
+      <remote LU>   SNASVCMG   <connection>   0          2
+      <remote LU>   QPCSUPP    <connection>   0          32
+
+      This means that up to 32 sessions are available for use, though no sessions
+      are currently active.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

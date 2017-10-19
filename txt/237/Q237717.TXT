@@ -1,0 +1,75 @@
+DOCUMENT:Q237717  12-SEP-1999  [homegame]
+TITLE   :NFL Fever 2000: Slow Frame Rate and Poor Graphics Performance
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft NFL Fever 2000, you may experience a slow video frame
+rate and poor graphics performance in the game.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A Diamond Monster 3D or a 3Dfx Voodoo II SLI-based video adapter is installed
+   in your computer.
+
+ - The video driver for the video adapter installed in your computer is
+   outdated.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest video driver for your
+video adapter from the appropriate Web site.
+
+Diamond Monster 3D Video Adapter:
+
+   http://www.diamondmm.com/products/drivers/driver-index.html
+
+3Dfx Voodoo II SLI-based Video Adapter:
+
+   http://www.3dfx.com/view.asp?PAGE=nusV2drivers
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame nflfever nfl2k football jerky choppy
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu msgame 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

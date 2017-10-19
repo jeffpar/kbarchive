@@ -1,0 +1,76 @@
+DOCUMENT:Q134514  17-DEC-2000  [win95x]
+TITLE   :Lotus Notes Does Not Print to a Network Printer with UNC Path
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print a document from Lotus Notes to a network printer, the
+document is not printed.
+
+CAUSE
+=====
+
+The printer is connected using a Uniform Naming Conventions (UNC) path. Lotus
+Notes does not recognize the UNC path, and therefore cannot find the printer.
+
+RESOLUTION
+==========
+
+If you use a network printer, make sure the network path is associated with a
+printer port. (This is also referred to as "capturing" a printer port.)
+Otherwise, when you print to a network printer from Lotus Notes, you may
+encounter problems.
+
+To capture a printer port, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Printers on the
+   menu that appears.
+
+2. In the Printers dialog box, using the right mouse button, click the icon for
+   the printer you use, and then click Properties on the menu that appears.
+
+3. In the Properties box for the printer, click the Details tab, and then click
+   the Capture Printer Port button.
+
+4. In the Capture Printer Port dialog box, select the port the printer is
+   connected to, and then type the path to the printer.
+
+5. In the Lotus Notes Printer Setup dialog box, select the printer you captured.
+
+MORE INFORMATION
+================
+
+The third-party product discussed here is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

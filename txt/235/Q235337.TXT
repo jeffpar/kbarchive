@@ -1,0 +1,83 @@
+DOCUMENT:Q235337  10-AUG-2001  [winnt]
+TITLE   :Cannot Remove Internet Explorer 5 After You Uninstall Service Pa
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the Microsoft Internet Explorer 5.0 uninstall feature on
+a computer running Windows NT that has already had Windows NT 4.0 Service Pack 4
+uninstalled (reverting back to Service Pack 3), the uninstall process stops and
+the following error message may be displayed:
+
+   Unable to locate Regsvr32.exe
+
+CAUSE
+=====
+
+This behavior occurs because the Update.inf file for Service Pack 4 was
+configured to remove Regsvr32.exe (as are all other files installed by the
+service pack Update process) during an uninstallation of the service pack.
+However, the Internet Explorer 5 uninstall feature requires the Regsvr32.exe
+file to be present to properly complete the uninstall process.
+
+NOTE: If the Regsvr32.exe file already exists on the computer before the Service
+Pack 4 installation, uninstalling the service pack restores the previous version
+of Regsvr32.exe and the uninstall process can then be completed.
+
+RESOLUTION
+==========
+
+To work around this issue, complete the uninstall process for Internet Explorer
+5.0 before uninstalling Service Pack 4.
+
+To resolve this problem, obtain the latest service pack for Windows NT. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Windows NT 4.0 Service Pack 5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,79 @@
+DOCUMENT:Q173984  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 98: What's New
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbusage kbtlckbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Flight Simulator 98 is the most significant upgrade in the history of the
+product. With aircraft flight models validated by Cessna, Learjet, and
+aerobatics champion Patty Wagstaff, plus detailed information developed in
+conjunction with Flight Safety International, a worldwide database of airports
+and navigational aids, and the latest graphical technology, Flight Simulator 98
+is "As real as it gets!"
+
+MORE INFORMATION
+================
+
+What's New
+----------
+
+ - Detailed scenery with support for 3-D graphics acceleration.
+
+ - Highly detailed objects in more than 45 cities around the world.
+
+ - Support for force feedback devices.
+
+ - Digitally sampled sounds.
+
+ - Multiplayer capability over the Internet, a network, or via a Modem,
+   including support for Zone.com at http:\\www.zone.com.
+
+ - Photo Realistic Panels.
+
+ - More than 3,000 airports worldwide.
+
+ - Online Airport and Facilities Directory that displays airport, ILS, VOR, and
+   NDB data directly from the scenery files.
+
+ - More lessons and Adventures.
+
+ - Customize Controls dialog box makes it easy to assign functions to joystick
+   buttons and key combinations.
+
+ - Three new aircraft. A Bell 206B JetRanger III helicopter, a Cessna Skylane
+   182S, ad the Learjet 45.
+
+Additional query words: flightsim new whatsnew fs98 different
+
+======================================================================
+Keywords          : kbusage kbtlc kbfaq
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,67 @@
+DOCUMENT:Q40959  11-MAY-2001  [win16sdk]
+TITLE   :FastBlt.exe Implements Smooth Movement of a Bitmap
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1,95; winnt:3.5,3.51
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbOSWinNT350 kbOSWinNT351 kbSDKWin32 kbOSWin310 kbOSWin95 kbDSupport kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+ - Microsoft Win32 Application Programming Interface (API), used with:
+    - Microsoft Windows NT Server versions 3.5, 3.51 
+    - Microsoft Windows NT Workstation versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FastBlt.exe is a sample application that demonstrates how to implement the
+smooth movement of a bitmap around the screen. Basically, it sets up a pair of
+BitBlt() calls: one that erases the image and another that redisplays the image.
+The necessary ROP codes for BitBlt() that should be used are SRCCOPY and
+SRCINVERT.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+FastBlt.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbOSWinNT350 kbOSWinNT351 kbSDKWin32 kbOSWin310 kbOSWin95 kbDSupport kbOSWin300 
+Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

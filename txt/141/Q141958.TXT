@@ -1,0 +1,81 @@
+DOCUMENT:Q141958  30-JUL-2001  [visualc]
+TITLE   :FIX: _CRTDBG_MAP_ALLOC Environment Var References Incorrect
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCRT kbDocs kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There are several incorrect references to setting the _CRTDBG_MAP_ALLOC
+environment variable in the documentation for the debug version of the C
+run-time library.
+
+It is not an environment variable, but rather a preprocessor constant. This
+symbol needs to be defined either in the code with a #define or from the command
+line with the compiler /D option.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+If you look in the header file, Crtdbg.h, you will see that this symbol is used
+as a preprocessor constant.
+
+There are two places where this symbol is referred to as an environment variable
+in the Run-Time Library Reference. From the Help contents, go to "Debug Version
+for the Run-Time Library" in the Run-Time Library Reference book, go to "Memory
+Management and the Debug Heap" and then "Using the Debug Version Versus the Base
+Version." The second sentence in the third paragraph states, "Applications that
+do not want to convert their malloc calls to _malloc_dbg can obtain the source
+file information by defining the _CRTDBG_MAP_ALLOC environment variable." In the
+next paragraph, it also states, "When _DEBUG is not defined, calls to malloc are
+not disturbed, calls to _malloc_dbg are resolved to malloc, the
+_CRTDBG_MAP_ALLOC environment variable is ignored, ..."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbDocs kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

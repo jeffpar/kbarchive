@@ -1,0 +1,80 @@
+DOCUMENT:Q187541  09-AUG-2001  [winnt]
+TITLE   :NWCONV Migration May Change Domain Account Policy
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+ 
+
+MORE INFORMATION
+================
+
+If the Use Supervisor Defaults is selected in the Migration Tool for NetWare,
+changes made to Domain User Account Policies and the NetWare Compatible
+Properties for each specific user become the default user properties in Windows
+NT.
+
+SYMPTOMS
+========
+
+Using the Migration Tool for NetWare (Nwconv.exe) to migrate users from a
+NetWare server to a Windows NT primary domain controller (PDC) may change Domain
+Account Policies for users.
+
+CAUSE
+=====
+
+This behavior occurs if the "Use Supervisor Defaults" box is selected on the
+Defaults tab of the User and Group Options dialog box. (NOTE: Use Supervisor
+Defaults and Migrate NetWare Specific Account Information boxes are selected by
+default.)
+
+NOTE: Current user default settings may be reviewed on a NetWare server by
+opening the SYSCON utility (NetWare version 3.x), and then, under Supervisor
+options, look at the Default Account Balance/Restrictions. (NOTE: NWAdmn3x.exe
+is the utility used on NetWare 4.x servers.)
+
+
+RESOLUTION
+==========
+
+If changes to Domain Account Policy are not wanted, click to clear the "Use
+Supervisor Defaults" check box before migrating user accounts. Otherwise, prior
+to migration, make changes on the NetWare server to equivalent settings in
+Windows NT or, after the migration is concluded, verify the Windows NT Account
+Policies and make the necessary changes to restore the Account Policies to their
+previous settings.
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

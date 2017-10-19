@@ -1,0 +1,105 @@
+DOCUMENT:Q168373  07-MAY-2001  [visualc]
+TITLE   :FIX: C2065 When Default Constructor of a Nested Class Called
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbcode kberrmsg kbtool kbVC500bug kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the default constructor of a nested class gets called, it causes the C2065
+compiler error:
+
+   'identifier' : undeclared identifier
+
+RESOLUTION
+==========
+
+Please see the MORE INFORMATION section for a workaround.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This problem was corrected in Microsoft
+Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+NOTE: Because constructors do not have names, they are never found during name
+lookup; however an explicit type conversion using the functional notation causes
+a constructor to be called to initialize an object. (This information came from
+the C++ Working Paper.)
+
+The following sample code demonstrates the problem and the workaround.
+
+Sample Code
+-----------
+
+      /*
+      Compile options: None
+      */ 
+
+      class Base
+      {
+      public:
+
+          class Common
+          {
+          public:
+             Common(){};
+          };
+          class Derived : public Common
+          {
+          public:
+             Derived() {}
+             Derived(int n) {}
+          };
+          Base( const Common &theCommon) {}
+      };
+
+      int main(void)
+      {
+          Base B1(Base::Derived());  //C2065 here
+
+          // Workaround: Comment the above line
+          // Uncomment the following lines
+          // Base::Derived D ;
+          // Base B1(D) ;
+          return 0;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kberrmsg kbtool kbVC500bug kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

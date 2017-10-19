@@ -1,0 +1,103 @@
+DOCUMENT:Q199506  10-JAN-2001  [mspress]
+TITLE   :Active Visual Basic 5.0 Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Active Visual Basic 5.0 ISBN 1-57231-512-1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Active Visual Basic 5.0, ISBN
+1-57231-512-1.
+
+The following topics are covered:
+
+ - Page 125: One Line Of Code is Missing
+
+MORE INFORMATION
+================
+
+Page 125: One Line Of Code is Missing
+-------------------------------------
+
+Page 125, Exercise 7-2, Step 12:
+
+One line of code is missing. Right before the If statement insert:
+
+     OneSmile.Name = TheName
+
+Corrected Code:
+
+   Private Sub Command1_Click()
+
+     Dim TheName As String
+     Dim MySmile As Smile
+
+     Do
+
+       Dim OneSmile As New Smile
+       TheName = InputBox("Please enter a name for this _
+       Smile object," & Chr(13) & "Press Cancel to see names in _
+       the collection.", "Name the Smiles collection items")
+
+       OneSmile.Name = TheName
+
+     If OneSmile.Name <> "" Then
+
+       Smiles.Add OneSmile
+
+     End If
+
+     Set OneSmile = Nothing
+     Loop Until TheName = ""
+     Print Smiles.Count & " Smile object(s) in the _
+     Smiles collection."
+
+     For Each MySmile In Smiles
+
+       Print MySmile.Name
+
+     Next MySmile
+
+   End Sub
+
+The sample code on the enclosed CD-ROM is correct.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ms_press 1-57231-512-1
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

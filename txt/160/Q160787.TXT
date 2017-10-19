@@ -1,0 +1,92 @@
+DOCUMENT:Q160787  08-AUG-2001  [winnt]
+TITLE   :D-link DE-220 ISA Ethernet Adapter will Not Install
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the D-link DE-220 ISA Ethernet Adapter from The
+Control Panel Network utility, you will receive the following error.
+
+   Please insert the disk labeled 'Windows NT Workstation CD-ROM' into <x>
+
+where <x> is the drive letter of your CD-ROM.
+
+Neither the Windows NT Server or Windows NT Workstation CD-ROM will work. No
+matter what path is defined, the message just repeats itself. The only option is
+to cancel.
+
+CAUSE
+=====
+
+When you install the D-Link DE-220 ISA Ethernet Adapter, Control Panel pulls the
+driver and the oemsetup file from the following path:
+
+   <cdrom drive>:\I386\Drvlib.nic\Ne2k.isa\ 
+
+The first time that the driver is installed, the Oemsetup.inf file will be saved
+as Oemnad0.inf in the %SytemRoot%\System32 directory. Repeated attempts to
+install will result in the setup file being copied as oemnadx.inf where x is
+incremented in each subsequent installation.
+
+RESOLUTION
+==========
+
+To correct this problem, the Oemnad0.inf file must be edited. The file is
+located in the %SystemRoot%\System32 directory. To edit this file, perform the
+following steps:
+
+1. Open the file in Notepad.
+
+2. Search for the text string: [Source Media Descriptions]. Immediately below
+   this text will be the following text.
+
+   1 = "Windows NT Workstation DRVLIB"
+   2 = "Windows NT Workstation CD-ROM" , TAGFILE = cdrom.w
+
+3. Delete the text after "CD-ROM". It should now look like this:
+
+   1 = "Windows NT Workstation DRVLIB"
+   2 = "Windows NT Workstation CD-ROM"
+
+4. Save the changes.
+
+The driver will now install from either the Windows NT Workstation or Windows NT
+Server CD-ROM.
+
+The OEMSETUP file can also be edited in the same way and the files placed on a
+floppy disk. Then use the <Have disk..> option in the Control Panel
+Network utility when installing the adapter.
+
+Additional query words: NIC
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

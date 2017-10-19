@@ -1,0 +1,78 @@
+DOCUMENT:Q191277  11-DEC-1999  [foxpro]
+TITLE   :PRB: VARTYPE() Function Returns Data Type Mismatch Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error may appear after you use a question mark to display the
+value returned from the VARTYPE() function:
+
+   Data type mismatch.
+
+CAUSE
+=====
+
+The question mark does not support the value returned by the VARTYPE() function
+when evaluating a variable created by the SAVE SCREEN command.
+
+RESOLUTION
+==========
+
+Use a temporary variable to store the result of the VARTYPE() function. For
+example:
+
+      SAVE SCREEN to screenvar
+      temp=VARTYPE(screenvar)
+      ? temp
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Type the following commands in the Command window:
+
+      ? "Hello World"
+      SAVE SCREEN to screenvar
+      ? VARTYPE(screenvar)
+
+RESULTS: The error occurs.
+
+Additional query words: kbXBase kbVFp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

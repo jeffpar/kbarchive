@@ -1,0 +1,73 @@
+DOCUMENT:Q260016  12-NOV-2001  [homegame]
+TITLE   :StarLancer Err Msg: DirectX 7.0a Is Required to Run StarLancer
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft StarLancer, you may receive an error message similar to
+the following:
+
+   DirectX 7.0a is required to run StarLancer.
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft DirectX 7.0a is not installed on the
+computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, install DirectX 7.0a from the StarLancer CD-1 CD-ROM:
+
+1. Insert the StarLancer CD-1 CD-ROM into the CD-ROM drive. Press and hold down
+   the SHIFT key as you insert the CD-ROM to prevent the game from starting
+   automatically.
+
+2. Double-click the My Computer icon on the desktop.
+
+3. Right-click the icon for the CD-ROM drive that contains the StarLancer CD-1
+   CD-ROM, and then click Explore.
+
+4. Double-click the DirectX folder.
+
+5. Double-click the Dxsetup.exe file.
+
+6. Follow the instructions on the screen to install DirectX 7.0a.
+
+7. When you are prompted to restart the computer, do so.
+
+Additional query words: 1.00 msgame star lancer direct-x dx7a
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q167693  17-JUL-2001  [visualc]
+TITLE   :FIX: MFC Application Hangs on Multiprocessor Machine
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbMFC kbThread kbVC500bug kbVS97sp1fix kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run some multithreaded MFC applications, the computer may hang if
+threads are created and terminated very quickly. This is most likely to happen
+when the application is run on high-performance multiprocessor computers (4+
+processors at 200+ MHz). However, this problem could occur on any machine. This
+problem only occurs when you use the DLL version of MFC.
+
+CAUSE
+=====
+
+MFC maintains a global list of thread local storage (TLS). As threads are
+created and terminated, MFC adds or removes a node of TLS tracking information
+to this list. This list is not protected from simultaneous thread access and
+under the conditions described above, corruption of this list can occur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+Additional query words: Multithread hang multiprocessor
+
+======================================================================
+Keywords          : kbMFC kbThread kbVC500bug kbVS97sp1fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

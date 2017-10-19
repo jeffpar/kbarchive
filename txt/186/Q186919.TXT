@@ -1,0 +1,299 @@
+DOCUMENT:Q186919  11-AUG-1999  [foxpro]
+TITLE   :HOWTO: Manual Mode OLE Drag and Drop Mouse Pointer Changes
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides the steps for implementing OLE Drag and Drop in manual
+mode to drag the caption of a command button to a text box. The article also
+features the Data Object methods ClearData, SetData and the changing of mouse
+cursors. This article is a more extensive version of the Microsoft Knowledge
+Base article Q185654, "HOWTO: Starting OLE Drag & Drop In Manual Mode". The
+steps and the information in this article are the same as those in Q185654.
+However, there are many enhancements in this article. If you are new to OLE Drag
+and Drop, we recommend that you start with Q185654.
+
+This article does not cover the background for OLE Drag and Drop. For more
+information on OLE Drag and Drop, please see Chapter 31: Interoperability and
+the Internet in the Microsoft Visual FoxPro "Programmer's Guide," version 6.0.
+
+MORE INFORMATION
+================
+
+The steps below illustrate how to implement OLE Drag and Drop in manual mode to
+drag the caption of a Command button to a Text box. In the steps where you add
+code to the various events and methods, the LPARAMETERS lines shown are already
+there by default. Do not add the lines a second time.
+
+1. Create a new form and save the form. Be sure the default directory is set to
+   the folder where the form is saved.
+
+2. Add two command buttons and a text box.
+
+3. Select the command button with the caption of "Command2" and change the
+   caption to "Reset Controls".
+
+4. Place the following code in the Click event of Command2:
+
+         Thisform.Text1.Value=SPACE(10)
+         Thisform.Command1.Caption="Text To Drag"
+
+5. Copy the following files from the Visual Studio\Common\Graphics folders
+   specified to the folder where the form is saved:
+
+      \Icons\Misc\Eye.ico
+      \Cursors\H_move.cur
+      \Cursors\H_we.cur
+
+6. Set the following properties of Command1:
+
+         Caption="Text To Drag"
+         OLEDragPicture="eye.ico"
+
+7. Add the following code to the Click event of Command1:
+
+         WAIT WINDOW "Hello"
+
+8. Add the following code to the MouseDown event of Command1:
+
+         LPARAMETERS nButton, nShift, nXCoord, nYCoord
+
+         IF nButton=2
+            *This.OLEDrag(.F.)
+            This.OLEDrag(.T.)
+         ENDIF
+
+   This code checks to see if the right mouse button is down. If the right mouse
+   button is down, the code calls the OLEDrag method. You can call the OLEDrag
+   method with either true or false. The difference is shown later in this
+   article.
+
+9. Add the following code to the OLEDrag method of Command1:
+
+         LPARAMETERS lDetectDrag
+
+         IF lDetectDrag
+            This.ForeColor=RGB(0,255,64)
+         ELSE
+            This.ForeColor=RGB(255,0,255)
+         ENDIF
+
+   The code above changes the color of the caption text of the command button. It
+   is included here as a visual confirmation that the method is firing.
+
+10. Add the following code to the OLEStartDrag event of Command1:
+
+         LPARAMETERS oDataObject, nEffect
+
+         nEffect=3
+         oDataObject.ClearData
+         oDataObject.SetData("Hello",1)
+
+   In this event code, you clear the data in the Data Object, which in this case
+   means that you clear the caption of the command button is from the Data
+   Object. Next, it sets the caption to the word "Hello." for illustration
+   purposes only. If you need to drop the actual command button caption into
+   the text box, you would not use this code. The nEffect parameter is set to
+   3, which is the sum of 1 (for copy) and 2 (for move). The nEffect parameter
+   is an output parameter that you pass to the OLEDragOver event of the drop
+   target. By default, it would be 7 (copy+move+link). Since this specific code
+   example does not support linking, nEffect is set to 3.
+
+   When using OLE Drag and Drop in automatic mode, the OLEStartDrag event is the
+   first event to fire. In manual mode, the MouseDown and OLEDrag methods have
+   to run first to start OLEStartDrag.
+
+11. Add the following code to the OLEGiveFeedback event of Command1:
+
+         LPARAMETERS nEffect, eMouseCursor
+           DO CASE
+            CASE nEffect=1
+               eMouseCursor="H_we.cur"
+            CASE nEffect=2
+               eMouseCursor="H_move.cur"
+           ENDCASE
+
+   The code in this method checks the nEffect parameter. Visual FoxPro
+   automatically sets the nEffect parameter to either 1 or 2, depending on
+   whether or not the control key is depressed. The mouse cursor is then set
+   appropriately. Note that the use of these cursors are for illustration
+   purposes only.
+
+12. Add the following code to the OLECompleteDrag event of Command1:
+
+         LPARAMETERS nEffect
+
+         DO CASE
+         CASE nEffect=2
+            This.Caption="You Moved Me"
+         CASE nEffect=1
+            This.Caption="You Copied Me"
+         CASE nEffect=0
+            This.Caption="You Didn't Drop Me"
+         ENDCASE
+         This.ResetToDefault("ForeColor")
+         Thisform.Text1.BackColor=RGB(200,224,216)
+
+   This code checks to see if you should copy or move the text from the command
+   button. The OLEDragDrop event of the drop target (the text box) sets the
+   nEffect parameter and then passes it to the OLECompleteDrag of the drag
+   source (the command button). The programmer then needs to take appropriate
+   action in the OLECompleteDrag.
+
+13. Set the OLEDropMode property of the text box to 1 - Enabled.
+
+14. Add the following code to the OLEDragOver event of the text box:
+
+         LPARAMETERS oDataObject, nEffect, nButton, nShift, ;
+            nXCoord, nYCoord, nState
+
+         DO CASE
+         CASE nState=0
+            This.BackColor=RGB(10,255,10)
+            IF oDataObject.GetFormat(1)    && CF_TEXT
+                   This.OLEDropHasData=1
+                   This.OLEDropEffects=3     && Copy and Move
+            ELSE
+                   This.OLEDropHasData=0
+                   This.OLEDropEffects=0
+            ENDIF
+         CASE nState=1
+         CASE nState=2
+         ENDCASE
+
+   This code fires when you drag data over the text box. This sets the nState
+   parameter to zero. The event checks the Data Object to see if there is text
+   data in the object. If so, it sets the OLEDropHasData and OLEDropEffects
+   properties. The other cases for nState without any code are for illustration
+   purposes only.
+
+15. Add the following code to the OLEDragDrop event of the text box:
+
+         LPARAMETERS oDataObject, nEffect, nButton, nShift, nXCoord, nYCoord
+         LOCAL nOperation
+
+         IF nShift=2        && Control is down
+             nOperation=1   && DropEffect_Copy
+         ELSE
+             nOperation=2   && DropEffect_Move
+         ENDIF
+
+         DO CASE
+         CASE oDataObject.GetFormat(1)    && CF_TEXT
+             This.Value=oDataObject.GetData(1)
+             NODEFAULT
+         ENDCASE
+         nEffect=nOperation
+
+   This code fires when you drop data onto the text box. The first check that
+   takes place is for the nShift parameter. If the Control key is down, the
+   nEffect parameter sets to 1 for copy, otherwise it is 2 for move. The
+   nEffect parameter is an output parameter so it passes to the OLECompleteDrag
+   event of the drag source, Command1. After the check of the nShift parameter,
+   a check for the Data Object for text data with the oDataObject.GetFormat(1)
+   code occurs. If the check finds text, the Value property of the text box
+   changes to text data. The inclusion of the NODEFAULT keyword here has two
+   purposes. First, if it is not, a shortcut menu appears when you drop the
+   data. Based on the settings in the code above, the menu has options for Copy
+   Here, Move Here and Cancel. This menu essentially does nothing as there has
+   been no allowances made for it in the OLECompleteDrag event of the drag
+   source. Second, if you do not include NODEFAULT, and select either Copy Here
+   or Move Here from the shortcut menu, the text you are dropping into the text
+   box, appears twice. "Hello Hello" is what displays. This is because you set
+   the Value property to "Hello" in the code and then the default drop behavior
+   of the text box adds the second "Hello" to the Value property.
+
+16. Save and run the form. Right-click the "Text To Drag" command button and
+   drag and drop into the text box. Use the Reset Controls command button to
+   reset. Try holding down the Control key while right dragging.
+
+   The key program code in the example created above for starting OLE Drag and
+   Drop in manual mode is the code shown in step 8 for the MouseDown event of
+   the drag source. Also note that the OLEDragMode property of the "Text To
+   Drag" command button is set to 0 - Manual.
+
+   As stated in step 8, you can call the OLEDrag method with either True (.T.)
+   or False (.F.). If you call OLEDrag with False, the OLEStartDrag event fires
+   immediately. If you call OLEDrag with True, there is a slight delay before
+   the OLEStartDrag event fires. Follow these steps to see the difference.
+
+17. Starting with the OLEDrag method being True, which is how it should be set
+   after step 16 above, right-click the "Text To Drag" command button. There
+   should be a slight delay before the eye icon appears. Try this a few times.
+   It should not be necessary to reset the controls.
+
+18. Modify the form. Open the MouseDown event of the "Text To Drag" command
+   button. Remark out the This.OLEDrag(.T.) and unremark the This.OLEDrag(.F.)
+   lines of code. Save and run the form.
+
+19. Right-click the "Text To Drag" command button. Notice that the eye icon
+   appears immediately. If you move the mouse, the No Drop mouse pointer also
+   appears.
+
+Try some of the changes to the example form from the list below. They illustrate
+some of the features of OLE Drag and Drop. Please see the Help file
+documentation for further explanations of the options in the OLE Drag and Drop
+events.
+
+1. As discussed in step 15 above, remark out the NODEFAULT keyword in the
+   OLEDragDrop event of the text box. Run the form and drag the "Text To Drag"
+   command button over the text box. Experiment.
+
+2. Try not clearing and setting the data in the OLEStartDrag event of the "Text
+   To Drag" command button. See step 10 above. Also, try not setting nEffect in
+   the OLEStartDrag event.
+
+3. Try setting the OLEDropEffects for the text box to 1 or 2. See step 14 above
+   for the code. Try this in conjunction with removing the NODEFAULT keyword
+   from the OLEDragDrop event of the text box. Try setting OLEDropEffects to 4
+   and 7. OLEDropEffect of 4 is Link. Seven is Copy, Move or Link.
+
+REFERENCES
+==========
+
+Visual FoxPro Books Online: Programmer's Guide; Chapter 31 - Interoperability
+and the Internet; OLE Drag and Drop topic.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q185654 HOWTO: Starting OLE Drag and Drop In Manual Mode
+
+   Q184386 HOWTO: Using OLE Drag & Drop to Move Controls on a Form
+
+   Q185497 HOWTO: Using GridHitTest() with OLE Drag and Drop
+
+Additional query words: kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

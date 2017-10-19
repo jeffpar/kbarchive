@@ -1,0 +1,70 @@
+DOCUMENT:Q239772  28-AUG-1999  [homegame]
+TITLE   :NFL Fever 2000: Unable to Pause a Game or a Practice
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgame kbFAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft NFL Fever 2000, you may be unable to pause a game or a
+practice. As a result, you may be unable to gain access to the Paused Game menu.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - Your game pad does not have a Start button.
+
+ - You are playing the game or the practice in two-player mode.
+
+RESOLUTION
+==========
+
+To work around this issue, play the game or the practice in one-player mode and
+press ESC to pause the game.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft NFL Fever 2000.
+
+MORE INFORMATION
+================
+
+NFL Fever 2000 is designed to be played using a game pad with at least six
+buttons. For optimum performance, an eight-button game pad is recommended.
+
+Additional query words: 1.00 msgame nflfever nfl2k football
+
+======================================================================
+Keywords          : kbui kbimu msgame kbFAQ 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

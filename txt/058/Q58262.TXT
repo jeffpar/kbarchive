@@ -1,0 +1,72 @@
+DOCUMENT:Q58262  26-OCT-1999  [win95x]
+TITLE   :Location of Installed Windows 3.0 Drivers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article is specific to Microsoft Windows version 3.0.
+
+The following is a list of the installed locations of drivers included with
+Windows 3.0:
+
+   Driver        Location
+   ------        --------
+
+   RAMDRIVE.SYS  Windows 3.00 directory
+   SMARTDRV.SYS  Windows 3.00 directory
+   EMM386.SYS    Windows 3.00 directory
+   EGA.SYS       Windows 3.00 directory
+   MOUSE.COM     Windows 3.00 directory (optional)
+   MOUSE.SYS     Windows 3.00 directory (optional)
+   MOUSEHP.COM   Windows 3.00 directory (optional)
+   MOUSEHP.SYS   Windows 3.00 directory (optional)
+   HIMEM.SYS     Root directory of Drive C
+
+MORE INFORMATION
+================
+
+Mouse drivers are copied to the hard drive only if they are needed to replace an
+existing older version of the same driver.
+
+HIMEM.SYS is copied to the root directory of Drive C because of potential
+problems with hard drive partitioning drivers.
+
+HIMEM.SYS is always placed first in the CONFIG.SYS file. If Windows is installed
+on a drive other than C:, and a hard drive partitioning driver is used,
+HIMEM.SYS will be listed before the partitioning driver and thus will not load
+because its drive is not present before the partitioning driver is loaded.
+Always placing HIMEM.SYS in the root directory of C: solves this problem.
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,177 @@
+DOCUMENT:Q272297  11-JUN-2002  [homegame]
+TITLE   :Zone Error Message: You Do Not Have a <Game> Subscription...
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Play in the Asheron's Call lobby on Zone.com, you may receive the
+following error message:
+
+    - You do not have a Asheron's Call subscription. Click Subscription on the left
+   side of the main Asheron's Call web page.
+
+CAUSE
+=====
+
+This behavior can occur if one of the following conditions are true:
+
+ - You entered the wrong lobby.
+
+ - Your subscription to the game that you want to play has expired.
+
+ - You do not have a subscription to the game that you want to play.
+
+ - You used a .NET Passport or an MSN Nickname that does not have a subscription
+   to the game that you want to play.
+
+RESOLUTION
+==========
+
+Use the Correct Lobby
+---------------------
+
+Asheron's Call has two sets of lobbies. Please make sure you are going the
+correct lobby for the subscription you have. These are located at:
+
+Asheron's Call:
+
+   http://zone.msn.com/asheronscall/minilaunch2.asp
+
+Asheron's Call Dark Majesty:
+
+   http://zone.msn.com/asheronscallxp/minilaunch2.asp
+
+Renew Your Subscription
+-----------------------
+
+1. Go to the following Zone.com Web site:
+
+   http://zone.msn.com/services/support.asp
+
+2. If you need to, on the top of the page, click Sign In to sign in with a .NET
+   Passport, and then click My Zone.
+
+3. Under the Billing section, find the game that you want to play, and then
+   click the Unsubscribe link to open the Billing Services window.
+
+4. Click Submit.
+
+5. Click Buy Subscription.
+
+6. Follow the steps on the screen to renew your subscription to the game you
+   want to play.
+
+Obtain A Subscription
+---------------------
+
+1. Connect to the following Zone Web site:
+
+   http://zone.msn.com
+
+2. Click the Premium game that you want to play.
+
+3. If you need to, on the top of the page, click Sign In to sign in with a .NET
+   Passport.
+
+4. In the left pane, click Subscription.
+
+5. In the Game box, click the game that you want to play.
+
+6. Click Submit.
+
+7. Click Buy Subscription.
+
+8. Click the type of subscription that you want to use.
+
+9. Follow the instructions on the screen to subscribe to the game.
+
+If you experience problems redeeming the coupon, click the following article
+number to view the article(s) in the Microsoft Knowledge Base:
+
+   Q245445 Asheron's Call Err Msg: The Subscription Coupon Number You Entered
+   Has Already Been Redeemed
+
+   Q259731 Asheron's Call Error Message: The Subscription Coupon Number You
+   Entered Is Not Valid
+
+Sign In With the Correct .NET Passport
+--------------------------------------
+
+1. Go to the following Zone.com Web site:
+
+   http://zone.msn.com/services/support.asp
+
+2. If you need to, on the top of the page, click Sign In to sign in with a .NET
+   Passport, and then click My Zone.
+
+3. Under the Billing section, find the game that you want to play, and then
+   click the Unsubscribe link to open the subscription service window. If the
+   Billing section is blank, repeat the previous steps and use a different .NET
+   Passport, if possible.
+
+4. Follow the steps on the screen to renew your subscription to the game you
+   want to play.
+
+Change Your MSN Nickname Currently Associated With Your .NET Passport
+---------------------------------------------------------------------
+
+1. Go to the following Zone.com Web site:
+
+   http://zone.msn.com/services/support.asp
+
+2. If you need to, on the top of the page, click Sign In to sign in with a .NET
+   Passport, and then click My Zone.
+
+3. Click Change Nickname.
+
+4. Under "Reactivate a Nickname", if there is a list of previously associated
+   MSN Nicknames please click one, and then click Yes.
+
+5. Click My Zone, and then verify that the Billing section is populated with the
+   game you want to play. If not, repeat the previous steps and select a
+   different MSN Nickname, if available, from the list of previously associated
+   MSN Nicknames.
+
+Contact Billing Support
+-----------------------
+
+If you are still unable to resolve this issue, please contact Billing Support at
+the following Zone.com web site for additional assistance:
+
+   http://zone.msn.com/billing
+
+Additional query words: 1.00 2.00 msngz igz ashcall fa2 fighterace asherons
+
+======================================================================
+Keywords          : kberrmsg igz kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,75 @@
+DOCUMENT:Q87822  14-OCT-1999  [win3x]
+TITLE   :ROTATE.DRV Will Not Rotate Full-Screen MS-DOS Applications
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows for Pen Computing, the Rotate Screen Orientation function from
+Control Panel controls only Windows or MS-DOS-based applications running in a
+window.
+
+Full-screen MS-DOS-based applications and the MS-DOS command prompt will not be
+affected.
+
+MORE INFORMATION
+================
+
+To rotate an MS-DOS-based application, you must run the application in a
+window.
+
+MS-DOS-based applications can only be run in a window while Windows is in 386
+enhanced mode.
+
+If you are running a full-screen MS-DOS-based application and you want to run the
+application in a window, press ALT+ENTER.
+
+For more information on this procedure see pages 21-22 of the "Microsoft Windows
+User's Guide" for version 3.1.
+
+To run an MS-DOS-based application in a window automatically when it is launched,
+start the program using a program instruction (PIF) file. You may want to start
+the MS-DOS-based application by writing a PIF file.
+
+The Rotate Screen Orientation icon may be added to the Control Panel by the
+Windows for Pen Computing extensions. Due to the variety of hardware offered by
+Pen Computing equipment manufactures, you may want to customize the display
+screen orientation by rotating it from landscape to portrait.
+
+The Rotate Screen Orientation icon will appear in the Control Panel if the
+CPROT.CPL file is recognized in the CONTROL.INI file. The default location
+should be in the C:\WINDOWS\SYSTEM directory. This is an extenuation to Windows
+and therefore does not affect MS-DOS or the hardware.
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100 kbWinPen100a
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

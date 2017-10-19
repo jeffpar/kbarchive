@@ -1,0 +1,147 @@
+DOCUMENT:Q230204  08-MAY-2002  [sna]
+TITLE   :SNA Server Fails Due to Access Violation in SNADMOD!RpcRouteProc
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The SNA Server service (Snaservr.exe) may fail unexpectedly or may stop
+accepting new client connections when the access violation in
+SNADMOD!RpcRoutProc occurs. This results in one or both of the following:
+
+ - Previously-connected users lose their host (mainframe or AS/400) sessions.
+ - New users are unable to obtain a new host session.
+
+If the Windows NT Server where SNA Server is running is configured with
+Drwtsn32.exe as the default debugger, a Drwtsn32.log entry may be generated when
+this failure occurs, indicating a FAULT in the top-level routine along with the
+following stack-back trace (which may vary):
+
+       snadmod!RpcRouteProc+0x400
+       snadmod!sepdq2_int+0x122
+       ntdll!RtlLeaveCriticalSection+0x1d
+       snadmod!sbpdin_int+0x23d
+       snadmod!sbpdin+0x25
+       snaservr!sbpcdin+0x50
+       snaservr!sbpsched+0x2ac
+       snaservr!sbpgmain+0x25
+       snasvc!ServiceMainFunction+0x140
+       advapi32!ScSvcctrlThreadA+0xe
+       kernel32!BaseThreadStart+0x51
+
+In the reported instances of this problem, the SNA Server systems had to be
+rebooted to recover.
+
+CAUSE
+=====
+
+The access violation occurs when an SNA Server RPC Response message is
+inadvertently routed to the SNA Server service. The SNA Server service is unable
+to interpret this message, which causes the access violation to occur.
+
+RESOLUTION
+==========
+
+SNA Server 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+SNA Server 3.0
+--------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
++---------------------------------+
+| File name    | Date    | Time   | 
++---------------------------------+
+| Snadmod.dll  | 3/11/99 | 7:45PM | 
++---------------------------------+
+| snaevent.dll | 3/11/99 | 7:46PM | 
++---------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1, and 4.0 SP2. This problem was
+first corrected in SNA Server version 4.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+An exception handler was added to handle this exception whenever it may occur.
+The SNA Server service will no longer fail unexpectedly or stop accepting client
+connections when this occurs after the update is applied. In addition, the
+following event will be logged in the Windows NT application event log if this
+problem occurs after the update is applied.
+
+   Event ID: 731
+   Description: Invalid RPC Response message
+   RPC Code: <value>
+   Source: <value>
+   Destination: <value>
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp3fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

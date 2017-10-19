@@ -1,0 +1,115 @@
+DOCUMENT:Q194202  11-DEC-1999  [foxpro]
+TITLE   :PRB: Datatype Error Accessing Property With _Access Method
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Returning an invalid datatype in the _Access method of an object's property
+results in the following error when you reference that property:
+
+   Datatype is invalid for this property.
+
+RESOLUTION
+==========
+
+To avoid this error, make sure that the datatype returned is valid for the
+property being accessed.
+
+It is recommended that the return value of the _Access method be the property's
+value.
+
+Example:
+
+      PROCEDURE object1.INTERVAL_Access
+         RETURN THIS.INTERVAL
+      ENDPROC
+
+In the rare instance where you need to return a value other than the property's
+value, changing the value of the property, and returning the property ensures
+that you are storing the value for future comparison.
+
+NOTE: You should consider changing the value of a property in the property's
+_Access method an extreme case, and make sure you fully document the change.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+NOTE: The example we provide in this article is not the only place this behavior
+occurs. Any access method that tries to return an invalid datatype for the
+property fails with the error.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following sample code from a program file.
+
+Notice that the RETURN statement in the object1.INTERVAL_access method returns
+nothing explicitly. In Visual FoxPro, unless you specify what to return, FoxPro
+returns a logical true or false (.T. or .F.). This is not a valid setting for
+the Interval property of the Timer object. This results in the error "Datatype
+is invalid for this property," and Visual FoxPro cannot instantiate the object.
+
+         *******Begin Sample Code************
+
+         PUBLIC oDS
+         oDS=CREATEOBJECT("test")
+         oDS.SHOW
+         READ EVENTS
+         USE
+         RELEASE oDS
+
+         DEFINE CLASS test AS FORM
+            DOCREATE = .T.
+            CAPTION = "Now Testing Access for Object TIMER"
+            ADD OBJECT object1 AS TIMER
+            ADD OBJECT btnClose AS COMMANDBUTTON
+            PROCEDURE object1.INTERVAL_access
+               RETURN
+            ENDPROC
+            PROCEDURE btnClose.CLICK
+               CLEAR EVENTS
+               RELE THISFORM
+            ENDPROC
+         ENDDEFINE
+
+         *********End Sample Code********
+
+Additional query words: kbVFp600 kbOOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

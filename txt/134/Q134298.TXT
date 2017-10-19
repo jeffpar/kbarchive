@@ -1,0 +1,68 @@
+DOCUMENT:Q134298  17-DEC-2000  [win95x]
+TITLE   :Older Disk Controllers Incompatible with Protected-Mode Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows 95 on a Compaq DeskPro 16 computer (circa 1988), you
+may receive the following error message:
+
+   Your system is not configured for its fastest performance
+
+If you click the Details button, you receive the following message:
+
+   Drive C: using MS-DOS Compatibility mode
+
+CAUSE
+=====
+
+Certain older computers with proprietary disk controllers exhibit this behavior.
+Windows 95 protected-mode disk drivers are not guaranteed to work with IDE
+controllers using proprietary firmware to access drives.
+
+The proprietary firmware in some older IDE disk controllers is not designed to
+work correctly with the Windows 95 INT 13 interface.
+
+RESOLUTION
+==========
+
+You must disable protected-mode support for older IDE controllers that exhibit
+this problem. To do so, disable the IDE/ESDI controller in Device Manager.
+
+STATUS
+======
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that it is not caused by a problem in Windows 95.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

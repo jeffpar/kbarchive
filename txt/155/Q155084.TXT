@@ -1,0 +1,60 @@
+DOCUMENT:Q155084  14-DEC-1999  [foxpro]
+TITLE   :DOCERR: AppleScript Do Script "Quit" Causes Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 77 of the "Visual FoxPro Installation Guide and Master Index," the
+following is given as an example of how to quit Visual FoxPro:
+
+      DO SCRIPT "QUIT"
+
+This information is not correct. Implementing the behavior will cause the
+following error:
+
+   "Microsoft Visual FoxPro got an error. Can't continue."
+
+MORE INFORMATION
+================
+
+To quit Visual FoxPro, simply issue the QUIT command as illustrated in the
+example on the top of page 78.
+
+REFERENCES
+==========
+
+"Visual FoxPro Installation Guide and Master Index," page 77 and 78.
+
+Additional query words: kbdsd VFoxMac
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

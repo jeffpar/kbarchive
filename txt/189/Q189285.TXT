@@ -1,0 +1,59 @@
+DOCUMENT:Q189285  06-MAY-1999  [exchange]
+TITLE   :XADM: Testing IPX Name Resolution with IPXROUTE.EXE
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IPX/SPX uses the Service Advertising Protocol (SAP) for name resolution. The
+IPXROUTE.EXE utility included in the Windows NT Multi Protocol Router can be
+used to verify that Exchange clients can use SAP to locate Exchange Server
+computers.
+
+MORE INFORMATION
+================
+
+IPXROUTE can only be used on Windows NT computers running NWLINK and the SAP
+agent. Exchange Server uses an SAP type of 1600. To verify that SAP is working
+correctly, run the following command:
+
+   ipxroute servers /type=1600
+
+The result will look like the following:
+
+   00000002.00805fcc4e90        1600          EXCHANGE1
+
+where the first number is the IPX Network.Node, 1600 is the SAP type, and
+EXCHANGE1 is the name of the computer running Exchange Server.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q176846  25-JUL-2001  [homemm]
+TITLE   :Encarta Encyclopedia Does Not Recognize the Second CD-ROM
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbmm kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you are using Microsoft Encarta Encyclopedia for Windows, Encarta
+Encyclopedia may prompt you to insert the second CD-ROM. When you insert the
+second CD-ROM and click OK, Encarta Encyclopedia may continue to prompt you to
+insert the second CD-ROM.
+
+CAUSE
+=====
+
+This behavior can occur if you are using a real-mode CD-ROM driver. Many
+real-mode CD-ROM drivers are unable to automatically detect when you insert a
+different CD-ROM.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact your hardware manufacturer to inquire about
+obtaining a 32-bit (protected-mode) driver for your CD-ROM drive.
+
+Additional query words: 1997 98 multi media multimedia multi-media mmtitles kbimu mm
+
+======================================================================
+Keywords          : kbenv kbhw kbmm kbHardware kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbEncartaEnCyc1998
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

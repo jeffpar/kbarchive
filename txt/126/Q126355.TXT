@@ -1,0 +1,56 @@
+DOCUMENT:Q126355  17-DEC-2000  [win95x]
+TITLE   :Intel EtherExpress Pro Detected as 82595-Based Ethernet
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install an Intel EtherExpress Pro network interface card in your
+computer, Windows 95 detects the card as an Intel 82595-based Ethernet card.
+
+CAUSE
+=====
+
+Windows 95 cannot safely query the EPROM on the Intel EtherExpress Pro card
+while attempting to detect the network interface card that is installed because
+the EtherExpress Pro card may be in use. As a result, the detection routine
+cannot determine the card's Vendor ID and cannot identify the card beyond the
+fact that it is an 82595-based card.
+
+RESOLUTION
+==========
+
+Do not try to redetect the network interface card. Windows 95 uses the same
+drivers and configuration for EtherExpress Pro cards and 82595-based Ethernet
+cards. The only difference is the description of the card. None of the
+EtherExpress Pro card's functionality is lost.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,87 @@
+DOCUMENT:Q227203  16-JUL-1999  [homegame]
+TITLE   :Baseball 2000: Setup Hangs Before Installation Is Complete
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Baseball 2000, Setup may stop responding
+(hang) before the installation is complete.
+
+You may be able to regain control of your computer by following these steps:
+
+1. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+2. Click Setup (Not Responding).
+
+3. Click End Task.
+
+4. If you receive a message stating that the program is busy or not responding,
+   click End Task again.
+
+CAUSE
+=====
+
+This behavior can occur if Gravis Experience software is running on your
+computer.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, quit Gravis Experience before you attempt
+to install Baseball 2000. To do this, follow these steps:
+
+1. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+2. Click Dbserver.
+
+3. Click End Task.
+
+4. If you receive a message stating that the program is busy or not responding,
+   click End Task again.
+
+When Gravis Experience is no longer running, install Baseball 2000.
+
+NOTE: After you install Baseball 2000 on your computer, restart the computer to
+restart Gravis Experience.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame bball2000 bball2k crash freeze lock
+
+======================================================================
+Keywords          : kb3rdparty kbsetup kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

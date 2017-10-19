@@ -1,0 +1,68 @@
+DOCUMENT:Q263709  20-OCT-2000  [exchange]
+TITLE   :XCON: Message Smaller Than Size Restriction Returned w/ NDR
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A message that is smaller than the size restriction on a remote Message Transfer
+Agent (MTA) is rejected with a Non-Delivery Report (NDR) stating that the
+content length is too long.
+
+CAUSE
+=====
+
+If the MTA in the originating site passes the message to a mailbox server where
+the size restriction configured on the local MTA is smaller than the message
+size, the MTA rejects the message instead of passing it to the connector server
+to be delivered to the foreign mail system.
+
+RESOLUTION
+==========
+
+Clear the selection of the Mailbox servers from the Target Servers tab of the
+Site Connector, or make MTA size restrictions uniform throughout all sites.
+
+MORE INFORMATION
+================
+
+Example:
+
+A message from the originating site, Site A, enters Site B by way of a Site
+Connector. In Site A, the Target Servers tab on the Site Connector properties
+has all remote servers in Site B selected. The mailbox servers in Site B have a
+smaller size restriction set on their MTAs than the connector servers in Site B.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

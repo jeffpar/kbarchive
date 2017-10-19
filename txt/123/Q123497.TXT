@@ -1,0 +1,69 @@
+DOCUMENT:Q123497  08-AUG-2001  [winnt]
+TITLE   :ALR Evolution Pentium Does Not Detect COM Ports
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10 3.50
+
+WINDOWS
+
+kb3rdparty nthw
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT version 3.5 on ALR Evolution V-Q/60 and Evolution
+V-Q/66 computers, the serial ports are not recognized in the Ports option in
+Control Panel. Windows NT Terminal reports that all serial (COM) ports are in
+use.
+
+CAUSE
+=====
+
+This problem occurs when Windows NT version 3.5 NTDETECT.COM is not able to read
+the ALR EISA configuration file for serial port information. This problem does
+not occur in Windows NT version 3.1.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain ECU213.ZIP from ALR's bulletin board system
+(BBS) at (714) 458-6834. This file includes the updated EISA configuration
+utility (version 213). For additional information, contact ALR Technical Support
+at (714) 581-6770 or (800) 257-1230.
+
+The ALR Evolution computers discussed here are manufactured by Advanced Logic
+Research Inc. (ALR), a vendor independent of Microsoft; we make no warranty,
+implied or otherwise, regarding these products' performance or reliability.
+
+Additional query words: prodnt 3.10 terminal.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q173770  14-NOV-2000  [word97]
+TITLE   :WD97: Check Links Finds Some Redirected Links Are Invalid
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:winword word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word 97, when you run the Check Links command on a Web page that
+contains redirected links, Word may find that some redirected links are broken.
+
+WORKAROUND
+==========
+
+To work around this problem, when Word prompts you that a redirected link is
+broken, click Ignore in the "Check Links: Broken Link" dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+A redirected link is one that redirects you to a different Web page.
+
+The new Check Links feature in the Web Authoring Tools Update checks each
+hyperlink or linked image in a Word 97 Hypertext Markup Language (HTML) document
+to verify that the target destination exists. For each broken hyperlink, Word
+prompts you to update the hyperlink.
+
+For additional information about the Web AutoUpdate feature in Word, please see
+the following articles in the Microsoft Knowledge Base:
+
+   Q172747 WD97: What's New in the Web Page Authoring Tools Update
+
+   Q163299 WD97: Web Page Authoring Tools AutoUpdate
+
+   Q172502 WD97: Troubleshooting Setup for the Web AutoUpdate Feature
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : winword word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

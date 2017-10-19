@@ -1,0 +1,62 @@
+DOCUMENT:Q166831  16-JUL-2001  [iis]
+TITLE   :How to Query MS Access Database Located on NetWare Server
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0; :1.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+ - Microsoft Active Server Pages, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to successfully perform a query using Internet Database Connector (IDC)
+or Active Server Pages (ASP) to an Microsoft Access 95 or 97 database (.mdb)
+located on a Novell server, you must have Gateway Services for NetWare installed
+and properly configured on the Internet Information Server (IIS) computer.
+
+MORE INFORMATION
+================
+
+1. Install Gateway Services for NetWare via Control Panel Networks.
+
+2. In Control Panel GSNW, click Gateway and enable the gateway. By default, this
+   is not enabled.
+
+3. Create shares to the .mdb and .mdw (for secure access databases). Typically
+   the .mdw will be on another share or drive.
+
+Once the above is done, you will not need to map these drives in the login script
+that you run during the logon to the Windows NT Server. Clients should then be
+able to successfully query to the Microsoft Access database.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbiisSearch kbAudDeveloper kbASPsearch kbiis300 kbASP100
+Version           : winnt:3.0; :1.0
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

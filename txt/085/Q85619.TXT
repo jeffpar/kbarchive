@@ -1,0 +1,72 @@
+DOCUMENT:Q85619  31-OCT-1999  [win95x]
+TITLE   :Installing an Application from a Network Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows provides an option to set up applications. You can set up
+applications located on network drives if the network is connected and included
+in the PATH environment variable.
+
+MORE INFORMATION
+================
+
+Applications can automatically be installed for Windows with Windows Setup. The
+Windows Setup icon is located in the Main group.
+
+Windows searchs the specified drive for applications and creates an icon for each
+application you select. In Windows 3.1, the search path defaults to "Path" in
+the Setup Applications dialog box. Path represents the directories listed in the
+path of the AUTOEXEC.BAT file (or the PATH variable).
+
+Other drives may be selected; however, if a network directory needs to be
+searched, that drive must be connected and included in the PATH variable.
+
+To connect to a network drive in Windows, from the File Manager Disk menu, choose
+Network Connections (Connect to Network in Windows 3.0). You can also connect to
+network drives at the MS-DOS level.
+
+Once the network drive is connected, it must be included in the path. From the
+MS-DOS command prompt, type
+
+   set path=%path%;x:
+
+where x is the active (connected) network drive.
+
+When viewing the list of drives from the Setup Applications dialog box, the
+network drives will be noted as [unknown drive]. Hard disk drives are noted as
+[local drive].
+
+Additional query words: 3.00 3.0 3.0a 3.1 3.11 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

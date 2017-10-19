@@ -1,0 +1,76 @@
+DOCUMENT:Q181683  07-JAN-2000  [mspress]
+TITLE   :Project SBS Page xxii: Setup Directions Do Not Work
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Project 98 Step by Step ISBN 1-57231-605-5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to perform step 8 on page xxii, or attempt to perform step 2 on
+page xxiii, you will receive the following error message:
+
+   File Not Found.
+
+CAUSE
+=====
+
+All of the files on the Microsoft Project 98 Step by Step CD-ROM are found in
+the "Project CD" folder. This folder must be added to the path for the files to
+work correctly.
+
+
+WORKAROUND
+==========
+
+On page xxiii, replace "d:\setup" with "d:\Project CD\setup".
+
+NOTE: If you are using Windows 95 with MS-DOS CD-ROM drivers, this command may
+not work. The \Project CD folder may appear in a shortened form, such as
+\Projec~9. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q181682 Project SBS: Cannot Find Installation Folder On CD-ROM
+
+On page xxiii, replace "d:\msn\msnstart.exe" with "d:\Project
+CD\msn\msnstart.exe."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in "Microsoft Project 98 Step by
+Step."
+
+
+Additional query words: press ms_press 1-57231-605-5
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

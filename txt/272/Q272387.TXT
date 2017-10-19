@@ -1,0 +1,75 @@
+DOCUMENT:Q272387  08-AUG-2001  [winnt]
+TITLE   :Unable to Connect to Local LPT Port with NET USE Command, 'Error
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the NET USE command to connect to a local LPT port,you
+may be unable to do so, and you may receive the following error message:
+
+   Error 85: local device is already in use.
+
+CAUSE
+=====
+
+This behavior can occur when the LPT port is currently connected to a print
+share.
+
+RESOLUTION
+==========
+
+To resolve this behavior, disconnect the LPT port and try again.
+
+MORE INFORMATION
+================
+
+Follow these steps:
+
+1. To see whether the LPT port is in fact currently connected to a print share,
+   type the following at a command prompt:
+
+   "NET USE" (without the quotation marks)
+
+2. If the LPT port is currently connected to a print share, type the following
+   command to disconnect the LPT port from the print share:
+
+   "NET USE LPT(x) /D" (without the quotation marks)
+
+   where (x) is the number of the LPT port.
+
+3. Carry out the original NET USE LPTx \\servername\share command.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

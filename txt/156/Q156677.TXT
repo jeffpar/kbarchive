@@ -1,0 +1,158 @@
+DOCUMENT:Q156677  11-JUN-2002  [winnt]
+TITLE   :Logoff Screen Saver Does Not Function in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+If you are logged on to a server or workstation without administrative rights,
+the logoff screen saver included in the Windows NT 3.51 and 4.0 Resource Kits
+does not function properly.
+
+You will also get the following error messages when attempting to use the utility
+without administrative rights:
+
+   Error encountered while creating registry key. Make sure you have set values
+   and create subkey permissions.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+In order for non-administrators to be able to use WINEXIT, you must add Set Value
+and Create Subkey permissions for the group Everyone on the following registry
+key:
+
+   HKEY_Local_Machine\Software\Microsoft\Windows
+   NT\CurrentVersion\IniFileMappings\Control.ini
+
+To do this, use the following steps:
+
+NOTE: You must be logged on with administrative rights to make these changes.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Open the following key:
+
+   HKEY_Local_Machine\Software\Microsoft\Windows
+   NT\CurrentVersion\IniFileMappings\Control.ini
+
+3. On the Security menu, click Permissions.
+
+4. In the Name box, click Everyone, and then click Special Access in the "Type
+   of Access" box.
+
+5. Click to select the Set Value and Create Subkey check boxes.
+
+6. Click OK, and then click OK.
+
+7. Quit Registry Editor, and then restart the computer.
+
+MORE INFORMATION
+================
+
+WINEXIT is a screen saver that logs the current user off after the specified
+time has elapsed. In other respects, it is similar to other screen savers and
+can be configured and tested on the Screen Saver tab of the Display Properties
+dialog box in Control Panel.
+
+WINEXIT displays a dialog box in which it displays the countdown timer and a
+user-defined message. When the countdown timer reaches zero, the log off process
+is initiated.
+
+To install Winexit.scr before configuring:
+
+1. Install the Windows NT Resource Kit on the workstation.
+
+2. Locate the Winexit.scr file in the NTreskit folder.
+
+3. Right-click the Winexit.scr file, and then click Install.
+
+To activate WINEXIT, perform the following steps:
+
+1. Click the Start button, point to Settings, and click Control Panel, then
+   double-click the Display icon.
+
+2. On the Screen Saver tab, select Windows Exit from the Screen Saver list.
+
+3. In the Wait box, select the number of minutes of inactivity before the screen
+   saver appears.
+
+4. To configure the screen saver, click Settings. In the Force Logoff box,
+   select the Force Application Termination checkbox to have the system close
+   all running applications regardless of their current state.
+
+   By default, this checkbox is not selected and the system queries applications
+   to see if work needs to be saved before forcing the application to quit. Use
+   this setting with caution because applications with unsaved data will not
+   have a chance to save their work.
+
+5. In the Time To Log Off box, type the time WinExit will display its logoff
+   dialog box before proceeding with the log off process. Type a value between 0
+   and 999 seconds.
+
+6. In the Logoff Message box, type a message to display in the logoff dialog
+   box. The message is limited to 255 characters and will be truncated if extra
+   characters are typed.
+
+7. To start the screen saver temporarily, click the Preview button. To return to
+   Windows, move your mouse.
+
+   NOTE: You can now test Windows Exit screen saver by clicking Preview on the
+   Screen Saver tab without WINEXIT attempting to log you off.
+
+When activated, WINEXIT beeps, indicating that the logoff process is about to
+begin, and displays the logoff dialog box. If no action is taken and the
+countdown timer reaches zero, the system will initiate the log off procedure.
+You can abort the process before the countdown timer reaches zero by either
+moving the mouse pointer over the dialog box or pressing any key on the
+keyboard.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 &
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: winexit.scr
+
+======================================================================
+Keywords          : kbsetup kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

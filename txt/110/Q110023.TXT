@@ -1,0 +1,69 @@
+DOCUMENT:Q110023  21-FEB-2002  [powerpt]
+TITLE   :GP Fault When Playing Multiple AVI Files
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Video for Windows, version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive a general protection (GP) fault in the selected codec driver
+when you play multiple AVI files at the same time that have different data
+rates.
+
+RESOLUTION
+==========
+
+To correct this problem, obtain the new version of the Avifile.dll file
+available in the Video 1.1e for Windows Run-Time Edition update.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Compress a 200K/sec file as noninterleaved.
+
+2. Compress a second file, that is 100K/sec, as noninterleaved.
+
+3. If you play the 200K/sec file, then the 100K/sec file, the read buffer
+   created for the first file will be made too small for the second file
+   resulting in the GP fault.
+
+   NOTE: If you play the 100K/sec file, then the 200K/sec file, the read buffer
+   for the 100K/sec file is large enough to accommodate the 200K/sec file and no
+   error will result.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo110
+Version           : :1.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

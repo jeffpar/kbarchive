@@ -1,0 +1,56 @@
+DOCUMENT:Q131077  09-NOV-1999  [macmail]
+TITLE   :Mac Form: Unable to Create New Stack Using Forms Designer
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.1x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Forms Designer Hypercard Stack, included with version 3.1x of
+Microsoft Mail for AppleTalk Networks, you may not be able to create a new
+stack.
+
+MORE INFORMATION
+================
+
+This will be the case if you are using the Hypercard Player to run the Forms
+Designer Stack. In order to create a new stack, you must be running the full
+version of Hypercard. Hypercard Player does not allow you to create or edit the
+Forms Designer Stacks.
+
+For additional information on version compatibility, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q47013 Mac Form: Versions of HyperCard Required by the Forms Designer
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN31xSearch
+Version           : WINDOWS:3.1x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

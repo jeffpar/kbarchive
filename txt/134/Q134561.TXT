@@ -1,0 +1,83 @@
+DOCUMENT:Q134561  17-DEC-2000  [win95x]
+TITLE   :Problems with Novell/Eagle NE200T PCMCIA Network Adapter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using an NDIS2 MAC driver for a Novell/Eagle NE200T PCMCIA network
+adapter card in Windows 95, your computer may stop responding (hang) or have no
+network functionality.
+
+CAUSE
+=====
+
+This network adapter may require the real-mode enabler for the PCMCIA card
+services, or may require a different MAC driver to work properly.
+
+RESOLUTION
+==========
+
+ - You may need to load the real-mode card and socket services drivers. Although
+   the exact names of these drivers varies from one system to another, they
+   typically appear as follows in the Config.sys file:
+
+   device=c:\<path>\cs.exe device=c:\<path>\sscirrus.exe
+   device=c:\<path>\csalloc.exe
+
+   NOTE: You may be able to find references to the original real-mode drivers in
+   the Config.dos file.
+
+ - These systems also typically require that the Novell ODI/NETX or VLM driver
+   be installed for the network adapter. To change the driver type, follow these
+   steps:
+
+   1. Click the Start button, point to Settings, and then click Control Panel.
+
+   2. Double-click the Network icon.
+
+   3. Click the Novell/Eagle NE200T PCMCIA network adapter, and then click
+      Properties.
+
+   4. On the Driver Type tab, click the Real Mode (16-bit) ODI Driver option
+      button, and then click OK.
+
+   5. Click OK. When you are prompted to do so, enter the location for the
+      Novell files.
+
+      NOTE: The necessary files should be on a drivers disk included with the
+      network adapter, or you can obtain them from Novell.
+
+   6. When you are prompted to restart the computer, do so.
+
+Additional query words: nic
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

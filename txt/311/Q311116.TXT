@@ -1,0 +1,72 @@
+DOCUMENT:Q311116  02-NOV-2001  [iis]
+TITLE   :URLScan AllowDotInPath Documentation Contains an Error
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.1 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "URLScan" section of the IIS Lockdown Tool 2.0 documentation contains an
+explanation of the AllowDotInPath setting that is incorrect.
+
+The AllowDotInPath documentation contains the following text, which is
+incorrect:
+
+   AllowDotInPath: Allowed values are 0 or 1. Default is 0. If set to 1, UrlScan
+   rejects any requests containing multiple instances of the dot (.) character.
+   If set to 0, UrlScan does not perform this test.
+
+The documentation should read:
+
+   AllowDotInPath: Allowed values are 0 or 1. Default is 0. If set to 0, UrlScan
+   rejects any requests containing multiple instances of the dot (.) character.
+   If set to 1, UrlScan does not perform this test.
+
+MORE INFORMATION
+================
+
+Version 1.0 of the URLScan ISAPI filter contains a problem that causes FrontPage
+Server Extension requests to be rejected. For additional information, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q307976 FP: Error When Using FrontPage With URLScan
+
+Note that the resolution contained in this Knowledge Base article only applies to
+version 1.0 of the URLScan ISAPI filter and is not required in the latest
+version.
+
+Additional query words: iis lockdown urlscan allowdotinpath
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis510
+Version           : :4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

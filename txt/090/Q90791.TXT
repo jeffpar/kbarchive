@@ -1,0 +1,67 @@
+DOCUMENT:Q90791  05-NOV-1999  [win16sdk]
+TITLE   :DOCERR: Minimal SDK Profiler Functions Required
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The directions given in Chapter 10 of the Windows 3.1 SDK "Programming Tools"
+manual are followed, but no profiler output is generated.
+
+CAUSE
+=====
+
+The "Programming Tools" manual states the following on page 208:
+
+1. Include in your application at least the two mandatory Profiler functions
+   ProfStart() and ProfStop().
+
+   ProfStart() indicates when you want Profiler to start sampling code;
+   ProfStop() indicates when you want Profiler to stop sampling. Other Profiler
+   functions are optional.
+
+This is accurate but not complete. ProfStop() does stop sampling, but it does not
+write any output to the disk. Because of this, the Profiler appears to not work.
+
+RESOLUTION
+==========
+
+To get the Profiler to function completely, either a call to the Profiler
+function ProfFlush() must be made prior to the call to ProfStop(), or the
+function ProfFinish() should be used. The documentation would be more accurate
+if it stated that the minimum Profile application contained a call to
+ProfStart() and a call to ProfFinish(). ProfFinish() stops profile sampling and
+flushes the buffer (to disk).
+
+Additional query words: 3.10 no32bit docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

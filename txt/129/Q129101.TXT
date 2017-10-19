@@ -1,0 +1,60 @@
+DOCUMENT:Q129101  19-OCT-2000  [homemm]
+TITLE   :500 Nations: Videos Have Psychedelic Background Pattern
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 500 Nations, version 1.0, on platform(s):
+    - the operating system: Microsoft Windows NT, on platform(s):
+       - the operating system: Microsoft Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft 500 Nations, when you play videos on a computer using a Diamond
+Viper Pro video card with the Wieteck P9100 chipset, the screen background may
+change to a multicolored or psychedelic pattern.
+
+MORE INFORMATION
+================
+
+Even though the background pattern is incorrect, the video continues to play
+normally, without discoloration.
+
+Microsoft has confirmed this to be a problem in Microsoft 500 Nations. We are
+researching this problem and will post new information here in the Knowledge
+Base as it becomes available.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+
+Additional query words: 1.00 mmtitles kbmm color palette ugly distorted washed out faded strange bug SVGA
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

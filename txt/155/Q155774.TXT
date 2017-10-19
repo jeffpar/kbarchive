@@ -1,0 +1,59 @@
+DOCUMENT:Q155774  14-NOV-2000  [word97]
+TITLE   :WD97: Framed Object Positioned Incorrectly in Online Layout View
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view your document using online layout view, the text wraps differently
+and the framed objects appear in a different position than when you view your
+document using either print preview or page layout view. In addition, the text
+and objects are positioned differently when you print your document.
+
+CAUSE
+=====
+
+Online layout view is designed to optimize the layout of the document to make it
+easier for online reading. For example, text appears larger and wraps to fit the
+window. In contrast, page layout and print preview are designed to give you an
+idea of how your document will look when you print it.
+
+WORKAROUND
+==========
+
+If you do not plan to use your document online and you want to view how it will
+look when you print it, select either Print Preview (on the File menu) or Page
+Layout (on the View menu).
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

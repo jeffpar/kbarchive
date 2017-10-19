@@ -1,0 +1,60 @@
+DOCUMENT:Q154954  11-JUN-1999  [exchange]
+TITLE   :XADM: Limited Sort Options in Administrator Program
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are only two sort options provided by the Microsoft Exchange Administrator
+program for Recipients containers. The two options are to sort by Display Name
+or to sort by Last Modified Date.
+
+MORE INFORMATION
+================
+
+To change the sort option for the Recipients container, select Sort from the
+View menu. The sort order can also be changed by clicking the column heading, an
+arrow will appear to denote the sort option selected.
+
+The Microsoft Exchange Administrator program allows for many different column
+headings to be displayed. Select Columns from the View menu to see the column
+headings you can select. The column headings can be arranged in any order but
+sorting options for the headings are not available, even when clicking the
+column heading.
+
+The Display Name is taken from the Dir.edb file located in the DSADATA
+subdirectory on the Microsoft Exchange Server. The directory can be accessed by
+using MAPI commands.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

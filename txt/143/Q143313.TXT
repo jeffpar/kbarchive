@@ -1,0 +1,105 @@
+DOCUMENT:Q143313  11-FEB-2002  [visualc]
+TITLE   :FIX: CToolTipCtrl Stops Working After Dialog Is Displayed
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbMFC kbToolTip KbUIDesign kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a CToolTipCtrl and call AddTool() to activate it, it will work
+until you display a modal dialog box. For example, if on the Help menu, you
+click About to display the About box, and you then click OK to dismiss it, the
+CToolTipCtrl will not pop up anymore.
+
+CAUSE
+=====
+
+MFC is sending a WM_DISABLEMODAL to all of the frame's descendant windows when a
+modal dialog box pops up. The CToolTipCtrl responds to the WM_DISABLEMODAL by
+sending itself a TTM_ACTIVATE with a FALSE. This disables it. However, the
+CToolTipCtrl doesn't reactivate itself once the frame calls EnableWindow() for
+its descendants.
+
+RESOLUTION
+==========
+
+You should have a PreTranslateMessage() function where you are calling
+RelayEvent(). The workaround for this problem is to call Activate(TRUE) before
+the call to RelayEvent().
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+This is only a problem if you create your own CToolTipCtrl. Using
+EnableToolTips() does not have this problem.
+
+Sample Code to Demonstrate Problem
+----------------------------------
+
+      // m_pToolTip is a CToolTipCtrl *
+      BOOL CTestView::PreTranslateMessage(MSG* pMsg)
+      {
+          switch(pMsg->message)
+          {
+              case WM_MOUSEMOVE:
+              case WM_LBUTTONDOWN:
+              case WM_LBUTTONUP:
+              case WM_MBUTTONDOWN:
+              case WM_MBUTTONUP:
+              case WM_RBUTTONDOWN:
+              case WM_RBUTTONUP:
+                  // This will reactivate the tooltip
+                  m_ToolTip.Activate (TRUE);
+                  m_ToolTip.RelayEvent (pMsg);
+          }
+          return CFormView::PreTranslateMessage(pMsg);
+      }
+
+      /* Compile options needed: default
+      */ 
+
+Additional query words: kbVC400bug kbvc410bug kbvc420bug kbvc500bug kbvc600bug CToolTipCtrl DoModal
+
+======================================================================
+Keywords          : kbMFC kbToolTip KbUIDesign kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,70 @@
+DOCUMENT:Q159433  04-OCT-2001  [frontpg]
+TITLE   :FP: Error, Broken Image Inserting WordPerfect Graphic File
+PRODUCT :Word Front Page
+PROD/VER::; WINDOWS:1.1
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbgraphic kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194250.
+
+SYMPTOMS
+========
+
+In FrontPage Editor, version 1.1, when you insert a WordPerfect graphic file
+(.wpg) you receive the following error message:
+
+   Could not load <path to the file>.
+
+In FrontPage Editor 97, when you insert a WordPerfect graphic file, the image
+appears as a broken icon.
+
+CAUSE
+=====
+
+The .wpg graphics converter used by FrontPage is unable to convert all .wpg
+files.
+
+WORKAROUND
+==========
+
+To work around this problem, use an image editing software program (such as
+Microsoft Imager) to convert the .wpg file to GIF or JPEG format.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbgraphic kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : :; WINDOWS:1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

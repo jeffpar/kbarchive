@@ -1,0 +1,57 @@
+DOCUMENT:Q122116  08-AUG-2001  [winnt]
+TITLE   :/BASEVIDEO Switch Doesn't Work After Upgrade to 3.5
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade a SCSI Windows NT version 3.1 computer to Windows NT version
+3.5, the /BASEVIDEO switch does not work if you choose to start Windows NT in
+VGA Mode.
+
+CAUSE
+=====
+
+During the upgrade from Windows NT version 3.1 to Windows NT version 3.5, Setup
+fails to remove the /SCSIORDINAL:0 from the end of the ARC path in the BOOT.INI
+file.
+
+WORKAROUND
+==========
+
+To work around this problem, remove the /SCSIORDINAL switch from the ARC path in
+the BOOT.INI file. This switch is not needed if the ARC path begins with
+"Multi."
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

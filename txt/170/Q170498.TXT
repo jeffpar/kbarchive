@@ -1,0 +1,56 @@
+DOCUMENT:Q170498  08-NOV-2001  [frontpg]
+TITLE   :FP: Access Permissions Applied at Web-level Not Per File Basis
+PRODUCT :Word Front Page
+PROD/VER:windows:1.0,1.1,97, macintosh:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 1.0, 1.0a, 1.1 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194356.
+
+SUMMARY
+=======
+
+In FrontPage Explorer, you can manage access to FrontPage Web files in the
+Permissions dialog box on the Tools menu. These permissions are applied at the
+Web level only. Tighter control of permissions on subfolders or files is not
+available.
+
+By design, when FrontPage Editor saves an edited file, the original file is
+deleted and it is replaced by a temporary copy created during the editing
+process. When the new file is placed in the directory on the Web server it
+inherits the access control settings of the FrontPage Web into which it was
+saved.
+
+Additional query words: 97 1.1 perms delete1.00
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage100 kbFrontPage100a kbFrontPage110
+Version           : windows:1.0,1.1,97, macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

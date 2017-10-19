@@ -1,0 +1,52 @@
+DOCUMENT:Q135552  12-JUN-2001  [sna]
+TITLE   :SNA Server Administrator Does Not Expose Administrator APIs
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbsetup sna4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server Administrator uses internal APIs to manage and configure the SNA
+Server domain. These APIs are not documented or exposed for developers to write
+to.
+
+MORE INFORMATION
+================
+
+For configuration (not management) of the SNA Server domain, you can use the
+SNACFG.EXE command line utility and a script file to generate a custom
+configuration without having to use SNA Server Administrator. See Appendix E of
+the "SNA Server Administration Guide" for command-line interface specifics.
+
+
+Additional query words: prodsna admin
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbsetup sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

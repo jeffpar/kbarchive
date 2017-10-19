@@ -1,0 +1,99 @@
+DOCUMENT:Q216087  10-FEB-1999  [foxpro]
+TITLE   :PRB: Err "Unable to find Visual Class Library"
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbvfp600bug kbFFC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the _Utility Visual class library is added to a project, the following error
+message displays when the project is built:
+
+   Unable to find Visual Class Library.
+
+CAUSE
+=====
+
+The _xtab Visual class in the _Utility Visual class library contains some method
+code that uses the NEWOBJECT() function to create a new class from the _GENXTAB
+system variable. The _GENXTAB system memory variable is referencing the
+Vfpxtab.prg program file.
+
+RESOLUTION
+==========
+
+Open the _xtab Visual class in the _Utility Visual class library, which is
+located in the \FFC folder. Once the _xtab class is open, open the Runxtab
+method. Change the following line of code:
+
+   oNewXtab=NEWOBJECT('genxtab',(_GENXTAB),"",;
+
+Replace the _GENXTAB to point directly to the VFPXTAB program. For example:
+
+   oNewXtab=NEWOBJECT('genxtab',"Home()+"vfpxtab.prg","",;
+
+MORE INFORMATION
+================
+
+If you choose the Ignore or Ignore all options from the error message, the
+project continues to build. If you choose the Locate option and add any Visual
+class library to the project, whether it is the correct Visual class library or
+not, it will be added without being checked if it already exists in the project.
+Therefore, you could end up with multiple instances of the Visual class library
+in the project, and it does not prevent the error from occurring on the next
+build.
+
+Steps to Reproduce the Error
+
+1. Create a new project, add a form and then modify the form.
+
+2. From the Tools menu, choose Component Gallery.
+
+3. Locate and open the Foundation Classes folder.
+
+4. Open the Automation folder and add the Graph by Record class to the form.
+
+5. Save and close the form.
+
+6. Build the project.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600bug kbFFC 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,51 @@
+DOCUMENT:Q90003  11-SEP-1999  [winmisc]
+TITLE   :Setup Defaults to Custom Installation with Low Disk Space
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During installation, Windows Sound System Setup defaults to custom installation
+mode if it does not detect enough disk space to perform a complete installation.
+Even if you are only running Setup in order to add one program (for example,
+Proof Reader), you are forced into custom installation mode. All options are
+available as in a normal installation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows Sound System Setup
+version 1.0. We are researching this problem and will post new information here
+as it becomes available.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

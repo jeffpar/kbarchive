@@ -1,0 +1,62 @@
+DOCUMENT:Q95991  07-DEC-1999  [win95x]
+TITLE   :Printing PostScript Takes Longer in Windows 3.1 and WFWG
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.1 and Windows for Workgroups version 3.1 print to
+PostScript printers slightly slower than Windows 3.0 does because they must
+convert TrueType fonts to Type 1 fonts as the document is printing. This slowing
+can be avoided by disabling TrueType fonts in Control Panel, but it is not
+recommended.
+
+In addition, Windows 3.1 Print Manager holds the whole print job until it has all
+the data. It then sends the job to the printer in the background.
+
+MORE INFORMATION
+================
+
+Windows 3.0 Print Manager does not function as a true print spooler. In Windows
+3.0, part of the print job is sent to Print Manager. After Print Manager has
+printed that portion of the print job, it then returns to Windows to get another
+piece.
+
+In Windows 3.1 and Windows for Workgroups, you get control of your machine back
+more quickly; however, as a trade-off, it takes longer to complete the print job
+because it is being spooled out in the background.
+
+
+Additional query words: 3.1 3.10 3.11 win31 fast faster print wfwg prints speed difference
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,48 @@
+DOCUMENT:Q49322  04-NOV-1999  [utilities]
+TITLE   :Linker Err Msg Under OS/2: L1083: Cannot Open Run File
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:OS/2:5.0x,5.1x
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for OS/2, versions 5.0x, 5.1x 
+-------------------------------------------------------------------------------
+
+When linking a program that is currently running in another session,
+the linker returns the following error:
+
+   L1083 CANNOT OPEN RUN FILE
+
+This error disappears when the program that is running is closed.
+
+This error occurs because OS/2 may want to discard the program's code
+segment and reload it later. If the linker writes a new EXE file and
+OS/2 reloads the code segment, it will be different and cause the
+accompanying problems.
+
+Additional query words: kbinf 5.00 5.10 5.0x 5.1x
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK50xOS2Search
+Version           : OS/2:5.0x,5.1x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

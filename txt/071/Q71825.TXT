@@ -1,0 +1,273 @@
+DOCUMENT:Q71825  31-JAN-2002  [msdos]
+TITLE   :MS-DOS 5 PACKING.LST (5.25-Inch Disk Set)
+PRODUCT :Microsoft Disk Operating System
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the packing list from Disk 3 of the Microsoft MS-DOS 5
+5.25-inch disk set. The 360K Distribution Disk Layout lists the compressed files
+on the disks shipped with the product. The 360K Destination Disk Layout
+describes the working disks created when installing on floppy disks.
+
+360K Distribution Disk Layout
+-----------------------------
+
+Disk 1:
+
+io.sys
+msdos.sys
+autoexec.bat
+command.com
+config.sys
+country.sys
+ega.sy_
+format.com
+keyb.com
+keyboard.sys
+nlsfunc.exe
+setup.exe
+setup.ini
+cv.com
+readme.1st
+
+Disk 2:
+
+display.sy_
+ega.cp_
+himem.sy_
+mode.co_
+setver.ex_
+ansi.sy_
+debug.ex_
+edlin.ex_
+emm386.ex_
+fastopen.ex_
+fdisk.exe
+mem.ex_
+mirror.co_
+ramdrive.sy_
+share.ex_
+smartdrv.sy_
+sys.co_
+undelete.ex_
+unformat.com
+xcopy.ex_
+
+Disk 3:
+
+doskey.co_
+cga.gr_
+cga.in_
+cga.vi_
+dosshell.co_
+dosshell.ex_
+dosswap.ex_
+ega.gr_
+ega.in_
+ega.vi_
+egamono.gr_
+herc.gr_
+herc.vi_
+mono.gr_
+mono.in_
+packing.lst
+print.ex_
+vga.gr_
+vga.vi_
+vgamono.gr_
+appnotes.txt
+doshelp.hl_
+dosshell.hl_
+edit.hl_
+help.ex_
+recover.ex_
+
+Disk 4:
+
+qbasic.hl_
+edit.com
+money.ba_
+msherc.co_
+qbasic.ex_
+
+Disk 5:
+
+gorilla.ba_
+4201.cp_
+4208.cp_
+5202.cp_
+append.ex_
+assign.co_
+attrib.ex_
+backup.ex_
+chkdsk.ex_
+comp.ex_
+diskcomp.co_
+diskcopy.co_
+driver.sy_
+fc.ex_
+find.ex_
+graftabl.co_
+graphics.co_
+label.ex_
+more.co_
+nibbles.ba_
+remline.ba_
+restore.ex_
+sort.ex_
+wina20.38_
+exe2bin.ex_
+expand.exe
+graphics.pr_
+join.ex_
+lcd.cp_
+loadfix.co_
+printer.sy_
+readme.txt
+replace.ex_
+subst.ex_
+tree.co_
+
+360K Destination Disk Layout
+----------------------------
+
+Startup:
+
+io.sys
+msdos.sys
+command.com
+country.sys
+ega.sys
+format.com
+keyb.com
+keyboard.sys
+nlsfunc.exe
+display.sys
+ega.cpi
+himem.sys
+mode.com
+setver.exe
+config.sys
+autoexec.bat
+
+Support:
+
+ansi.sys
+debug.exe
+edlin.exe
+emm386.exe
+fastopen.exe
+fdisk.exe
+mem.exe
+mirror.com
+ramdrive.sys
+share.exe
+smartdrv.sys
+sys.com
+undelete.exe
+unformat.com
+xcopy.exe
+doskey.com
+
+Shell:
+
+dosshell.vid
+dosshell.ini
+dosshell.com
+dosshell.exe
+dosshell.grb
+dosswap.exe
+packing.lst
+print.exe
+
+Help:
+
+appnotes.txt
+dosshell.hlp
+edit.hlp
+recover.exe
+doshelp.hlp
+help.exe
+qbasic.hlp
+
+BASIC/Edit:
+
+edit.com
+money.bas
+msherc.com
+qbasic.exe
+gorilla.bas
+
+Utility:
+
+4201.cpi
+4208.cpi
+5202.cpi
+append.exe
+assign.com
+attrib.exe
+backup.exe
+chkdsk.exe
+comp.exe
+diskcomp.com
+diskcopy.com
+driver.sys
+fc.exe
+find.exe
+graftabl.com
+graphics.com
+graphics.pro
+label.exe
+more.com
+nibbles.bas
+remline.bas
+restore.exe
+sort.exe
+wina20.386
+
+Supplemental:
+
+exe2bin.exe
+expand.exe
+join.exe
+lcd.cpi
+loadfix.com
+printer.sys
+readme.txt
+replace.exe
+subst.exe
+tree.com
+
+Additional query words: 5.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : :5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,81 @@
+DOCUMENT:Q134695  08-AUG-2001  [winnt]
+TITLE   :BW-Connect NFS 3.5 for Windows NT Hangs Windows NT 3.51 VDMs
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use BW-Connect NFS version 3.5 for Windows NT with Windows NT version
+3.51, virtual DOS machines (VDMs) requiring keyboard input stop responding
+(hang). For example, if you run an MS-DOS based-text editor, the VDM hangs. You
+cannot use the Task List End Task button to close the MS-DOS Command Prompt.
+
+CAUSE
+=====
+
+This problem occurs because BW-Connect NFS version 3.5 is incompatible with the
+way Windows NT 3.51 handles universal naming conversion (UNC) names.
+
+WORKAROUND
+==========
+
+To work around this problem, obtain BW-Connect NFS version 3.6 for Windows NT.
+Version 3.6 includes a new NFS driver specifically written for Windows NT
+version 3.51. For additional information:
+
+ - please see the following article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q136447
+   TITLE : Performance Problems in Windows NT 3.51 With Intergraph PC-NFS
+
+ - contact Beame & Whiteside Technical Support via email at support@bws.com
+   or phone at (919) 831-8975.
+
+MORE INFORMATION
+================
+
+You can also contact Beame & Whiteside at:
+
+   Beame & Whiteside Software, Inc. Sales
+   706 Hillsborough Street
+   Raleigh North Carolina
+   USA 27603-1655
+
+   Voice: (919) 831-8989
+   Fax: (919) 831-8990
+   email: sales@bws.com
+   WWW: www.bws.com
+   FTP: ftp.bws.com
+
+Additional query words: prodnt bw bws vdm crash Integraph
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

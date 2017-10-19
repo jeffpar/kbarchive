@@ -1,0 +1,153 @@
+DOCUMENT:Q106628  25-NOV-1999  [msdos]
+TITLE   :Comprehensive List - "MS-DOS 6.2 Upgrade for Dummies" Doc Errs
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information about the documentation errors in the book
+"Microsoft MS-DOS 6.2 Upgrade for Dummies."
+
+
+The following topics are covered:
+
+ - Page 18: This Number Tells You How Much Room Is Left...
+
+ - Page 23: That's EDIT, a Space, C, Colon, Backslash, and then...
+
+ - Page 37: Make Sure That the Drive Light Is Not on...
+
+ - Page 177: Edit Works Like a Word Processor, but It Lacks...
+
+ - Page 252: To Obtain This New Information, You Can...
+
+ - Page 309: All About the Double Buffering Nonsense
+
+Page 18: This Number Tells You How Much Room Is Left...
+-------------------------------------------------------
+
+"Microsoft MS-DOS 6.2 Upgrade for Dummies" contains the following text under the
+first bulleted point on page 18:
+
+   An important value to note on Figure 1-3 is the "Space available on drive C:"
+   number. This number tells you how much room is left on your hard drive after
+   you upgrade to MS-DOS 6.2, given the MS-DOS/Windows programs you select.
+
+This value actually represents the space available on your hard disk before you
+upgrade to MS-DOS 6.2.
+
+Page 23: That's EDIT, a Space, C, Colon, Backslash, and then...
+---------------------------------------------------------------
+
+"Microsoft MS-DOS 6.2 Upgrade for Dummies" contains the following text on page
+18:
+
+   That's EDIT, a space, C, colon, backslash, and then README.TXT. Press Enter
+   and you'll see the readme file in the Editor.
+
+The above command results in MS-DOS Editor creating a new file called README.TXT,
+which is saved in the root directory by default (that is, C:\README.TXT).
+
+The correct text should be:
+
+   That's EDIT, a space, C, colon, backslash, DOS, backslash, and then
+   README.TXT. Press Enter and you'll see the readme file in the Editor.
+
+Page 37: Make Sure That the Drive Light Is Not on...
+----------------------------------------------------
+
+Page 37 incorrectly state the following:
+
+   Make sure that the drive light is not on. You should never remove a disk from
+   the drive when the light is on.
+
+NOTE: Similar text is included in the list of "Ten Things You Should Never Do" on
+page 284.
+
+While this is true under most circumstances, it is not true when you are running
+advanced backup programs such as Microsoft Backup and Microsoft Backup for
+Windows. During a backup or restore with Microsoft Backup, the floppy drive
+light never turns off. When you are prompted to change floppy disks, you can
+safely do so even though the drive light is on.
+
+WARNING: If you wait for the drive light to go out before swapping floppy disks
+in Microsoft Backup or Microsoft Backup for Windows, Backup generates a
+time-out, resulting in the second and subsequent backup disks being blank. For
+more information on this problem, query on the following words in the Microsoft
+Knowledge Base:
+
+   "backup" (without the quotation marks) and "subsequent" (without the
+   quotation marks) and "6.20" (without the quotation marks)
+
+Page 177: Edit Works Like a Word Processor, but It Lacks
+--------------------------------------------------------
+
+The first sentence in the last paragraph on page 177 states the following:
+
+   Edit works like a word processor, but it lacks many of the fancier features
+   -- like the capability to print, apply fancy formatting, spellcheck, create
+   graphics, and so on.
+
+MS-DOS Editor (Edit) does have the ability to print text files.
+
+Page 252: To Obtain This New Information, You Can...
+----------------------------------------------------
+
+The last sentence of page 252 states the following:
+
+   To obtain this new information, you can fill out and return the Anti-Virus
+   update coupon in the back of this book.
+
+The initial copies of "Microsoft MS-DOS 6.2 Upgrade for Dummies" do not include
+an Anti-Virus update coupon in the back of the book. If your book does not
+contain the Anti-Virus update coupon, contact Microsoft Sales Information Center
+at (800) 426-9400; ask for the MS DOS 6.2 Anti-Virus Coupon from DOS for
+Dummies: part number 098-54321.
+
+Page 309: All About the Double Buffering Nonsense
+-------------------------------------------------
+
+The example for the SMARTDRV DOUBLE_BUFFERING command contains an incorrect
+backslash (\) reference.
+
+The following command
+
+   DEVICE=C:\DOS\SMARTDRV.EXE\DOUBLE_BUFFER
+
+should be:
+
+   DEVICE=C:\DOS\SMARTDRV.EXE /DOUBLE_BUFFER
+
+
+Additional query words: MWBackup 6.20 docerr doc err documentation errors edit.exe comprehensive
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

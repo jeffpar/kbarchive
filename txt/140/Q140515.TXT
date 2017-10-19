@@ -1,0 +1,66 @@
+DOCUMENT:Q140515  08-AUG-2001  [winnt]
+TITLE   :BUG: VDM Apps Can Cause Other Applications to Redraw Slowly
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+On WinNT 3.51, moving a VDM Application on the screen or changing its focus in
+relation to other 16-bit or 32-bit Windows-based applications (moving to the
+foreground or background) causes the Windows-based applications to redraw slowly
+taking four to six seconds.
+
+CAUSE
+=====
+
+Some VDM applications, such as Microsoft QuickBasic applications or Edit.com
+with the menu pulled down, have a thread that loops tightly while waiting for
+keyboard input. This thread, always being in the run/ready state, slows the
+redraw of other Windows-based applications.
+
+WORKAROUND
+==========
+
+This problem can be eliminated by creating a .pif file for the VDM Application
+using Pifedit.exe. Click the Advanced button, and reduce its Foreground and
+Background Priority by half.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

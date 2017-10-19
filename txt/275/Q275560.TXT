@@ -1,0 +1,89 @@
+DOCUMENT:Q275560  11-MAY-2001  [visualc]
+TITLE   :PRB: DLL Breakpoints Are Skipped or Disabled
+PRODUCT :Microsoft C Compiler
+PROD/VER::3.0,6.0
+OPER/SYS:
+KEYWORDS:kbDebug kbOSWinCEsearch kbDSupport kbGrpDSETK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0 
+ - Microsoft Windows CE Toolkit for Visual C++ 6.0 
+ - Microsoft eMbedded Visual C++ version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While debugging a C++ application in the eMbedded Visual C++ 3.0 development
+environment, the following things may occur:
+
+ - Some debug breakpoints in dynamic-link libraries (DLLs) may be skipped.
+
+ - A message or warning dialog box may appear indicating that some breakpoints
+   have been disabled and cannot be set.
+
+CAUSE
+=====
+
+To enable breakpoints in DLLs, the paths to the DLLs on both the development
+computer and the Windows CE target device must be set properly in the project
+settings.
+
+RESOLUTION
+==========
+
+To set these paths for your Windows CE project, follow these steps:
+
+1. On the Project menu, click Settings. Click the Debug tab, and then click
+   Additional DLLs.
+
+2. In Local Name, specify the path of the debug DLL that resides on the
+   development (host) computer.
+
+3. In Remote Name, specify the path of the corresponding DLL on the target
+   device.
+
+   For example, if debugging an application with a DLL named Util.dll, you can
+   set breakpoints in the DLL by using settings that resemble the following:
+
+   Local Name : C:\Program Files\MyProject\WCEDbg\Util.dll
+   Remote Name : \Windows\Util.dll
+
+Note that in order for debugging to be accurate, the remote DLL must be an exact
+copy of the DLL on the development computer (except for certain debug
+information which is automatically stripped when the DLL is transferred to the
+target device).
+
+REFERENCES
+==========
+
+For additional information about debugging on Windows CE, see "Debugging a
+Windows CE Application" in the eMbedded Visual Tools 3.0 online documentation.
+
+Additional query words: Debug eVT DLL Workspace Project Settings
+
+======================================================================
+Keywords          : kbDebug kbOSWinCEsearch kbDSupport kbGrpDSETK 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCEETKSearch kbWinCESearch kbVCeMb kbWinCETK600VC kbWinCEETKVC500
+Version           : :3.0,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q141114  08-AUG-2001  [winnt]
+TITLE   :PRB: "NetBIOS AddName Failure" On Remote Boot Workstation
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error is received soon after the password is entered on a remote
+boot diskless workstation using a 3COM ETHERLINKIII network adapter:
+
+   NetBIOS AddName Failure.
+
+CAUSE
+=====
+
+The NDIS2 driver, ELNK3.DOS, which is on the server compact disc, does not work
+with newer 3COM ETHERLINK III network interface cards, although it successfully
+binds with the protocol stack.
+
+Information on ELNK3.DOS driver that does not work:
+
+   ELNK3.DOS 05/26/95  10:57a   size: 13,014
+
+RESOLUTION
+==========
+
+Obtain a more recent driver from 3COM. On the remote boot server, replace
+\RPL\BBLOCK\NDIS\ELNK3.DOS with the more recent driver.
+
+Information on driver that does work:
+
+   ELNK3.DOS 09/15/95  10:51a   size: 17,901
+
+
+Additional query words: 3COM ELNK3.DOS
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

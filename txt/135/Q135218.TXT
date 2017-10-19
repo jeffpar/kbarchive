@@ -1,0 +1,69 @@
+DOCUMENT:Q135218  17-DEC-2000  [win95x]
+TITLE   :Double-Clicking Document Does Not Open It in WordPad
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+WordPad may not open certain documents that you double-click in Windows Explorer
+or My Computer.
+
+CAUSE
+=====
+
+The Windows 95 version of the Write.exe file overwrites any version from an
+earlier version of Windows. The Windows 95 version of Write.exe is a link to
+WordPad, but it does not pass certain parameters (such as long filenames) to
+WordPad correctly.
+
+RESOLUTION
+==========
+
+Rename the document to use a short filename, or change the file's association
+from Write.exe to Wordpad.exe.
+
+MORE INFORMATION
+================
+
+To change a file's association to Wordpad.exe, follow these steps:
+
+1. In Windows Explorer or My Computer, press down and hold the SHIFT key while
+   you click the file with the right mouse button, and then click Open With on
+   the menu that appears.
+
+2. In the "Choose the program you want to use" box, click WordPad.
+
+3. Click the "Always use this program to open this type of file" check box to
+   select it.
+
+4. Click OK.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

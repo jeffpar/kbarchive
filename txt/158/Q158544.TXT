@@ -1,0 +1,170 @@
+DOCUMENT:Q158544  13-JUN-2001  [sna]
+TITLE   :IBM Multiprotocol SDLC Adapter Not Work on HP Vectra XU 6/15
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Notes:
+
+ - The information in this article has been tested by Microsoft running
+   Microsoft Windows NT Server version 4.0. This has not been confirmed by
+   Hewlett-Packard; however, they did conclude that the IBM MPA/A is not listed
+   as a supported or tested device on their Vectra series computers.
+
+ - The following assumes you have disabled SERIAL.SYS, parallel ports, and any
+   COM ports that use interrupts that could cause conflicts when you use this
+   card.
+
+After you configure an IBM Multiprotocol SDLC Adapter on a Hewlett-Packard Vectra
+XU 6/150 computer, the connection status may remain in an inactive state after
+you try to activate the service.
+
+CAUSE
+=====
+
+
+RESOLUTION
+==========
+
+Use a different SDLC card. Supported adapters can be found in the SNA Server
+Companion Product Catalog and in Isvcatal.doc in the \Collatrl\General directory
+on the SNA Server compact disc.
+
+The IBM and Hewlett-Packard products discussed here are manufactured by IBM and
+Hewlett-Packard Corporation respectably, vendors independent of Microsoft; we
+make no warranty, implied or otherwise, regarding these products performance or
+reliability.
+
+MORE INFORMATION
+================
+
+If you run a DLC trace (linkmsg.trc), you will see an open link response (rsp)
+error 000A. This is a fatal LLC hardware error that is also reported in the
+application log of the event viewer.
+
+|0000007e.00000089 DLC    ----------------------------------------------
+13:31:17.22
+|0000007e.00000089 DLC    03020100->01000000 OPEN  LINK REQUEST
+|0000007e.00000089 DLC
+|0000007e.00000089 DLC    ---- Header  at address 01114E0C, 2 elements ----
+|0000007e.00000089 DLC    0110B008 007A0028 05000000 01009500
+<.....z.(......n.>
+|0000007e.00000089 DLC
+|0000007e.00000089 DLC    ---- Element at address 0160FD90, start 1, end 92
+----
+|0000007e.00000089 DLC    534E4153 45525652 20205344 4C433220     <SNASERVR
+SDLC2 >
+|0000007e.00000089 DLC    20202020 00010101 01C1FF01 7530000A     <
+.....A..u0..>
+|0000007e.00000089 DLC    03E80003 03E8FFFF 03E8FFFF 03E8001E
+<.Y...Y...Y...Y..>
+|0000007e.00000089 DLC    7530000A 03E8003C 03E8000F 03E8012C
+<u0...Y.<.Y...Y.,>
+|0000007e.00000089 DLC    00000402 00000000 00000000 00000000
+<................>
+|0000007e.00000089 DLC    00000000 00000000 00000000
+<............    >
+|0000007e.00000089 DLC
+|0000007e.00000089 DLC    ---- Element at address 0160FC6C, start 1, end 1
+----
+|0000007e.00000089 DLC    01                                      <.
+>
+|0000007e.00000089 DLC    ----------------------------------------------
+13:31:17.23
+|0000007e.00000089 DLC    01160100->03020100 OPEN  LINK RSP ERROR
+|0000007e.00000089 DLC                       Err:000A
+|0000007e.00000089 DLC
+|0000007e.00000089 DLC    ---- Header  at address 01114E0C, 2 elements ----
+|0000007e.00000089 DLC    0310B008 007A000A 00020000 01009500
+<.....z........n.>
+|0000007e.00000089 DLC
+|0000007e.00000089 DLC    ---- Element at address 0160FD90, start 1, end 92
+----
+|0000007e.00000089 DLC    53444C43 32202020 2020534E 41534552     <SDLC2
+SNASER>
+|0000007e.00000089 DLC    56522020 00010101 01C1FF01 7530000A     <VR
+.....A..u0..>
+|0000007e.00000089 DLC    03E80003 03E8FFFF 03E8FFFF 03E8001E
+<.Y...Y...Y...Y..>
+|0000007e.00000089 DLC    7530000A 03E8003C 03E8000F 03E8012C
+<u0...Y.<.Y...Y.,>
+|0000007e.00000089 DLC    00000402 00000000 00000000 00000000
+<................>
+|0000007e.00000089 DLC    00000000 00000000 00000000
+<............    >
+|0000007e.00000089 DLC
+|0000007e.00000089 DLC    ---- Element at address 0160FC6C, start 1, end 1
+----
+|0000007e.00000089 DLC    01                                      <.
+>
+
+The following errors will be logged in the Event Viewer.
+
+SYSTEM LOG
+----------
+
+   Event 1: Source: IBMSYNC
+   An error occurred while setting up the default link characteristics.
+
+APPLICATION LOG
+---------------
+
+   
+
+   Event 169:
+
+   Failed to Open device driver \Device\MPCA_1. Windows NT rc = c000003e
+   EXPLANATION: An error occurred during an attempt to open the SDLC device
+   driver.
+   The return code from the OpenFile call is shown.
+
+   Event 199:
+
+   Secondary return code = 0
+
+   Event 170:
+
+   Initialization failed for link service <value>, used by connection <value>
+   EXPLANATION: The SDLC link service could not be initialized. A previous
+   message gives the
+   reason for failure.
+
+   Event id 77:
+
+   Connection <value> failed to activate due to failure at link service.
+   Error Code = 000A
+
+Additional query words: link service prodsna
+
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

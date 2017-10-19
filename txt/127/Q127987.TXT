@@ -1,0 +1,65 @@
+DOCUMENT:Q127987  17-DEC-2000  [win95x]
+TITLE   :VFW Err Msg: Unable to Load the Capture Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the CapScrn tool (CAPSCRN.EXE) that is included with
+Microsoft Video for Windows version 1.1 and the Video for Windows portion of
+Microsoft Office Professional version 4.3c, you receive the following error
+message:
+
+   Unable to load the capture driver. The driver is either already in use, out
+   of memory, or is not installed.
+
+CAUSE
+=====
+
+When you start CapScrn, SCRNCAP.DRV (the capture device driver) is loaded into
+memory. MSVIDEO.DLL, the file responsible for loading this device driver, has
+changed from Windows version 3.1 and requires an entry in the SYSTEM.INI file to
+load the driver into memory correctly in Windows 95.
+
+RESOLUTION
+==========
+
+To resolve this problem, use any text editor (such as Notepad) to edit the
+SYSTEM.INI file. Add the following line to the [Drivers] section of the file:
+
+   MSVIDEO8=SCRNCAP.DRV
+
+After you add this line, save and close the file and then restart your computer.
+
+Additional query words: screen capture
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

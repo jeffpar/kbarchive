@@ -1,0 +1,57 @@
+DOCUMENT:Q173642  10-SEP-1999  [sms]
+TITLE   :SMSINST: Add Device To System.ini Command Causes GPF
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusage smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can add a device entry to the 386Enh section of the System.ini file with the
+Add Device to System.ini script item. When you run a script on Windows 95 with
+the Add Device to System.ini command in it, you receive the following error
+message:
+
+   This program has performed and illegal operation and will be shutdown
+
+The error details show SMSISTUB caused a general protection fault (GP fault) in
+module ~GLC0003.TMP at 0002:0000dd20.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Systems Management Server
+Installer 1.0. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.20 prodsms
+
+======================================================================
+Keywords          : kbusage smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

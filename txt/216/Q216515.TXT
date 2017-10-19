@@ -1,0 +1,264 @@
+DOCUMENT:Q216515  23-AUG-2001  [vbwin]
+TITLE   :BUG: DataMember of GetDataMember Empty If DataSource Is DataList
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.1,2.1 SP2,2.5,2.6,6.0,6.0 SP4
+OPER/SYS:
+KEYWORDS:kbDataBinding kbVBp600bug kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO250 kbMDAC260 kbADO26
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0, 6.0 SP4 
+ - ActiveX Data Objects (ADO), versions 2.1, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DataMember property of a DataList box is empty when the GetDataMember event
+is called, even though the DataMember property was assigned a value.
+
+RESOLUTION
+==========
+
+Create a Property Let in the DataSource class. In the Property Let, assign the
+DataMember property to a private string variable in the class. Test the
+DataMember property in the GetDataMember event. If the DataMember property is
+empty, use the value contained in the string to replace the empty DataMember
+property.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+In Visual Basic 6.0, you can create a class module that can serve as a
+DataSource. To create a DataSource class, set the DataSourceBehavior of a class
+module to 1 - vbDataSource. Specifying a class as a DataSource adds a
+DataMembers collection and a GetDataMember event to the class.
+
+The DataMembers collection allows other objects to see the available DataMembers
+of the class. A DataMember represents a recordsets stored in the DataSource.
+
+The GetDataMember event is called when the DataSource property of a bound object
+is set to the DataSource class.
+
+The GetDataMember event has two parameters. The DataMember parameter is a string
+supplied by a bound object's DataMember property. The DataMember parameter
+selects a specific member of the class's DataMembers collection. The Data
+parameter of the GetDataMember event is the recordset object to be passed back
+to the bound object.
+
+You should set a bound control's DataMember property before setting the control's
+DataSource property. That way, the control's DataMember property will supply a
+value for the GetDataMember's DataMember parameter before GetDataMember is
+called. However, when using a DataList control, the DataMember parameter is
+empty when GetDataMember is called, even though the DataMember property of the
+DataList has been assigned.
+
+The following example demonstrates binding both a DataList box and a DataGrid to
+a DataSource class. When GetDataMember is called for the DataGrid, the
+DataMember parameter is correctly assigned. When GetDataMember is called for the
+DataList, the DataMember parameter is an empty string.
+
+Setting the DataSource properties in the Form Load event calls the GetDataMember
+event. The GetDatamember event uses a Select Case statement, which contains an
+Else clause. When the DataMember is not assigned using the Property Let, the
+DataList and the DataGrid use different recordsets because the DataList falls
+through to the Else clause in the Select Case statement. If you uncomment the
+call to the Property Let in the Form Load event, the DataList and DataGrid will
+use the same recordset.
+
+The code in Command1's Click event sets the DataGrid and the DataList to the
+DataMember that is default DataMember in the Case statement. Uncommenting the
+call to the Property Let appears to make no difference. However, in Debug mode,
+you can see that the DataMember is empty when called by the DataList, unless
+Property Let is used.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a standard exe project in Visual Basic and add a class module.
+
+2. In the properties Window for the class, change DataSourceBehavior to 1 -
+   vbDataSource.
+
+3. Change the Name property of the class to clsNamesData.
+
+4. Under Project References, check Microsoft Active Data Objects Library.
+
+5. Paste the following code in the Class code window:
+
+   Dim rsnames As ADODB.Recordset
+   Dim rsnames2 As ADODB.Recordset
+   Dim alternate_datamember As String
+
+   Private Sub Class_GetDataMember(DataMember As String, Data As Object)
+         
+     If alternate_datamember <> "" Then
+         DataMember = alternate_datamember
+     End If 
+     alternate_datamember = ""
+         
+     Select Case DataMember
+       Case "Names"
+           Set Data = rsnames
+       Case "Names2"
+           Set Data = rsnames2
+       Case Else
+           Set Data = rsnames
+     End Select
+         
+   End Sub
+
+   Private Sub Class_Initialize()
+         
+      'Add the names of the new data members to the DataMembers collection.
+      'This allows other objects to see the available DataMembers.
+      DataMembers.Add "Names"
+      DataMembers.Add "Names2"
+      
+      'Create the recordsets of the DataSource class.
+      Set rsnames = New ADODB.Recordset
+      Set rsnames2 = New ADODB.Recordset
+      
+      'Create the recordset schema.   
+      With rsnames
+         .Fields.Append "ID", adInteger
+         .Fields.Append "Name", adBSTR, 255
+         .CursorType = adOpenStatic
+         .LockType = adLockOptimistic
+         .Open
+      End With
+      
+      'Add ten records.   
+      Dim i As Integer
+      For i = 1 To 10 
+         rsnames.AddNew
+         rsnames!ID = i
+         rsnames!Name = "Name " & i
+         rsnames.Update
+      Next i
+      rsnames.MoveFirst
+      
+      'Create the recordset schema.   
+      With rsnames2
+         .Fields.Append "ID", adInteger
+         .Fields.Append "Name", adBSTR, 255
+         .CursorType = adOpenStatic
+         .LockType = adLockOptimistic
+         .Open
+      End With
+      
+      ' Add ten records.
+      For i = 1 To 10
+         rsnames2.AddNew
+         rsnames2!ID = i
+         rsnames2!Name = "Smith " & i
+         rsnames2.Update
+       Next i
+      rsnames2.MoveFirst
+
+   End Sub
+
+   Public Property Let dmember(ByVal vNewValue As Variant)
+         
+      alternate_datamember = vNewValue
+         
+   End Property
+
+6. Under Project Components, check Microsoft Datagrid Control 6.0 (OLEDB) and
+   Microsoft DataList Control 6.0 (OLEDB).
+
+7. Add a CommandButton, a DataList box and a DataGrid to the existing form.
+
+8. Paste the following code in the form's code window:
+
+   Option Explicit
+   Private datNames As clsNamesData
+
+   Private Sub Form_Load()
+     
+      Set datNames = New clsNamesData
+    
+      DataGrid1.DataMember = "Names2"
+      Set DataGrid1.DataSource = datNames
+
+      ' DataMember is set here, but is "" in the class DataSource.
+      DataList1.DataMember = "Names2"
+       
+      ' The next line is the workaround to this problem.
+      ' Uncomment the following line to make it work correctly.
+      ' datNames.dmember = "Names2"
+       
+      DataList1.ListField = "name"
+      ' DataList requires RowSource instead of DataSource.    
+      Set DataList1.RowSource = datNames 
+       
+   End Sub
+
+   Private Sub Command1_Click()
+       
+      'Reassigning the DataGrid and DataList to another recordset.
+       
+      'GetDataMember is called once per control unless
+      'the class is reinstantiated.
+      Set datNames = Nothing
+      Set datNames = New clsNamesData
+       
+      DataGrid1.DataMember = "Names"
+      Set DataGrid1.DataSource = datNames
+       
+      ' DataMember is set here, but is "" in the class DataSource.
+      DataList1.DataMember = "Names"
+       
+      ' The next line is the workaround to this problem.
+      ' Uncomment the following line to make it work correctly:
+      ' datNames.dmember = "Names"
+       
+      DataList1.ListField = "name"
+      Set DataList1.RowSource = datNames
+       
+   End Sub
+
+REFERENCES
+==========
+
+For instructions and sample code on how to create and bind to a DataSource
+class, as well as descriptions of the GetDataMember event and the DataMembers
+collection, please see the following topics in Microsoft Visual Basic 6.0 Online
+Help:
+
+   GetDataMembers event
+   DataMembers collection
+   DataGrid control, class module as data source
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDataBinding kbVBp600bug kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO250 kbMDAC260 kbADO260 kbATM kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVB600SP4 kbADO270
+Version           : :2.1,2.1 SP2,2.5,2.6,6.0,6.0 SP4
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

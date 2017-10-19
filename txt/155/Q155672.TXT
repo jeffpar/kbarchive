@@ -1,0 +1,369 @@
+DOCUMENT:Q155672  08-NOV-2001  [homegame]
+TITLE   :Monster Truck Madness: Multiplayer Information
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article discusses how to play Monster Truck Madness with other
+players, and how to troubleshoot multiplayer issues. This information is from
+the Monster Truck Madness Readme.txt file.
+
+MODEM-TO-MODEM PLAY
+
+During modem-to-modem play, the modems will connect no faster
+   than the slowest modem (and possibly slower).
+
+If you are connecting with a 14.4 kbps modem, you should not
+   include any computer trucks in the race.
+
+If you are connecting between two 28.8 kbps modems you can
+   include one computer truck. If you are using faster
+   connections, you can experiment with including more trucks.
+
+MODEMS CAN'T CONNECT TO EACH OTHER FOR HEAD-TO-HEAD PLAY
+
+You will have the best chance of connecting your modems if you
+and your opponent are using the same handshaking speed. Set
+the initial handshaking speed on both machines to match the
+fastest speed of the slower modem:
+
+Click Start, point to Settings, and then click Control Panel.
+
+Double-click the Modems icon.
+
+Click the modem that matches your system in the list box.
+
+   (NOTE: If there are no modems listed then you need to add
+   one by clicking Add.)
+
+Click Properties.
+
+Click the Connection tab.
+
+Make sure both computers have the same connection preferences.
+
+Click the General tab.
+
+Make sure both modems have the same maximum speed setting. This
+   speed should be set to the maximum speed of the slower modem.
+
+LAN ISSUES
+
+To play a multiplayer game on a LAN, your machine must be physically
+connected to a LAN. Please see your system administrator if you need
+assistance with this.
+
+You must also make sure that all players use the same protocol (for
+example, WinSock TCP, or WinSock IPX), and that the protocol is
+installed on your machine.
+
+To check the protocol:
+
+Click the Start button, point to Settings, and then click Control
+   Panel.
+
+Double-click the Network icon.
+
+In the Configuration tab, you should see the protocol listed in
+   the list box.
+
+   If you do not have the same protocol as the person you want to
+   race against, continue with these steps to add a new protocol:
+
+Click Add.
+
+From the list, click Protocol and then click Add.
+
+From the Manufacturer's list, click Microsoft.
+
+Click either TCP/IP or IPX/SPX.
+
+Click OK as many times as necessary.
+
+Click Yes to restart your computer.
+
+SPEEDING UP PLAY ON THE INTERNET
+
+Network "latency," the time it takes for a packet of data to travel
+between two computers, and "bandwidth," the amount of information
+that can be passed at any given moment, are two major concerns for
+any multiplayer game. These problems are more noticeable when playing
+over the Internet (which has a relatively high bandwidth but
+unacceptably long latencies) and when using a modem (which can pass
+information fairly quickly, but only in very small amounts). When
+modems are used to play multiplayer games through an Internet
+Service Provider (ISP), the player is hit with both the high latency
+of the Internet and the low bandwidth of the modem.
+
+Unfortunately there is no software solution for network latency.
+Usually it is due to the limitations of the network hardware (in
+this case, the Internet) and the amount of traffic the network is
+experiencing. There are, however, ways to minimize the impact of
+latency on games. See the suggestions below:
+
+Have all participating players connect using the same ISP.
+
+Limit the number of players. This reduces the amount of data that
+   needs to be transferred between players.
+
+Before starting play, close any applications, such as chats,
+   e-mail notifiers, and web browsers, that are constantly
+   sending and receiving data. This increases the available
+   bandwidth for the game.
+
+AUTOMATIC DISCONNECT AFTER NO ACTIVITY IN MSN
+
+If you are using MSN as a dial-up network to play an Internet
+game, MSN may disconnect you after it has exceeded the time limit
+of inactivity. The system does not consider joystick input as
+activity.
+
+To alleviate the problem, do the following:
+
+Start MSN.
+
+On the View menu, click Options.
+
+In the Disconnect After XX Minutes of Inactivity box, specify a
+   longer period of time (in minutes).
+
+SUGGESTION: Changing the value to 59, for example, should give you
+sufficient time to finish your game.
+
+JOINING A GAME ALREADY IN PROGRESS
+
+You cannot join a TCP/IP (Internet) multiplayer game that is already
+in progress. Attempting to join a TCP/IP (Internet) game that is
+already in-progress freezes the game on your machine. If you
+accidentally try it, You can press CTRL+ALT+DEL, and then click End
+Task in the Close Program dialog box.
+
+SYNCHRONIZATION PROBLEMS WITH INTERNET PLAY
+
+If you connect to the Internet with a modem, the latency of the
+connection between players is the sum of your and your opponent's
+modem latency and the Internet latency. This latency increases
+with the number of players connected in your game. The end result
+of increasing latency is that synchronization may suffer. If you
+are experiencing latency, first remove computer-controlled trucks
+from the game. Then try playing with fewer participants.
+
+SYNCHRONIZATION PROBLEMS PAUSING A MULTIPLAYER GAME
+
+A multiplayer game can get out of sync if one of the players pauses
+the game. Because of this, the pause keys (P and F3) are disabled
+in multiplayer mode. However, it is still possible to pause the
+game by pressing ALT to activate the menu. We strongly recommend
+that you do not do this. If you have to do it, do it quickly and
+get back to the game.
+
+For example, pausing a multiplayer game may cause the paused
+computer to miss the fact that a remote computer went through a
+checkpoint. This means that the race may not end correctly.
+
+DPSOCKET ERROR RESULTS IF HOST EXITS IN THE MIDDLE OF A RACE
+
+If the host player quits the game (or loses the connection) in the
+middle of a race, the remaining players will crash. This problem
+will be corrected in a later version of DirectX, which was not
+available when Monster Truck Madness was released. Check our
+Monster Truck Madness product support page on the Monster Truck Web
+Stop for late-breaking information:
+
+http://www.microsoft.com/games/monster/ 
+
+RESULTS NOT SYNCHED BETWEEN PLAYERS IN INTERNET PLAY
+
+Due to latency between computer connections in multiplayer play,
+the times displayed in the Results screen may differ by a few
+seconds between players' machines.
+
+The host player's computer results should be used for official
+times and scoring.
+
+TRUCK GETS STUCK
+
+The truck of a joining player who leaves the race gets stuck in
+park if the joining player is running on Windows NT 4.0.
+
+If you are playing a multiplayer game and a joining player (who uses
+Windows NT 4.0) leaves the game before the light turns green, the
+exiting player's truck will remain stuck in park.
+
+This is a very rare scenario, but the game will never end if this
+behavior occurs. The game goes on as if the human player is still
+connected and so will continue without end, waiting for this
+player to finish. If this happens to you, restart the multiplayer
+game.
+
+IF THE NEXT BUTTON IS DISABLED FOR JOINING PLAYER
+
+Once a joining player reaches the Races screen and is waiting for
+the race to begin, the joining player should not activate any menu
+or command. If the player selects a menu or command, the Next
+button may not be enabled and the race will not begin.
+
+WINSOCK DLL IS MISSING
+
+To use online or Internet connections to play Monster Truck Madness,
+you must have the proper version of WinSock installed. Using a
+version of Wsock32.dll other than version 4.00.950, which is
+manufactured by Microsoft, may cause Monster Truck Madness to
+function improperly.
+
+The following steps describe how to check which version of Wsock32.dll
+you are using:
+
+On your Windows desktop, double-click My Computer, and then
+   double-click the hard drive that contains Windows (usually
+   drive C).
+
+Double-click the Windows folder, and then double-click the
+   System folder.
+
+With the right mouse button, click Wsock32.dll, and then click
+   Properties.
+
+   NOTE: To view all the files in the folder, you may have to click
+   Options on the View menu, click the View tab, click Show All
+   Files, and then click OK.
+
+Click the Version tab.
+
+Monster Truck Madness will not run properly, if the version
+   information is:
+
+   File Version: Version: 04.10.01.27
+
+IMPORTANT: By replacing your current Wsock32.dll file, you may
+adversely affect the functionality of another manufacturer's
+product that relies on this file.
+
+The following sections describe how to replace the existing version
+of the Wsock32.dll file with a version of the file that will allow
+Monster Truck Madness to function properly. If you installed Windows
+from a compact disc, refer to section 1 below. If you installed
+Windows 95 from floppy disks, refer to section 2.
+
+1: If You Installed Windows from CD-ROM
+
+This section describes how to replace the existing version of the
+Wsock32.dll file with a version of the file that will allow Monster
+Truck Madness to function properly.
+
+On your Windows desktop, double-click My Computer, and then
+   double-click the hard drive that contains Windows (usually
+   drive C).
+
+Double-click the Windows folder, and then double-click the
+   System folder.
+
+With your right mouse button, click Wsock32.dll, and then click
+   Rename.
+
+Type Wsock32.old
+
+Insert your Windows compact disc.
+
+Click Start, point to Programs, and then click MS-DOS Prompt.
+
+   NOTE: If you are using Windows 98, extract the Wsock32.dll file from
+   the Windows 98 CD-ROM to the \Windows\System folder, and then proceed
+   to step 9. For information about how to extract a file from the Windows
+   98 CD-ROM, please see the following article in the Microsoft Knowledge
+   Base:
+
+      ARTICLE-ID: Q129605
+      TITLE     : How to Extract Original Compressed Windows Files
+
+Type the following
+
+      extract /L c:\windows\system d:\win95\win95_11.cab WSOCK32.
+
+   where C:\Windows refers to the drive and folder where Windows
+   95 is installed, and where D refers to your CD-ROM drive.
+
+Type exit and press ENTER to close the MS-DOS Prompt.
+
+Click Start, click Shut Down, click Restart The Computer, and then
+   click Yes.
+
+2: If You Installed Windows 95 from 3.5-inch Floppy Disks
+
+This section describes how to replace the existing version of the
+Wsock32.dll file with a version of the file that will allow Monster
+Truck Madness to function properly.
+
+On your Windows 95 desktop, double-click My Computer, and then
+   double-click the hard drive that contains Windows 95 (usually
+   drive C).
+
+Double-click the Windows folder, and then double-click the
+   System folder.
+
+With your right mouse button, click Wsock32.dll, and then click
+   Rename.
+
+Type Wsock32.old
+
+Click Start, point to Programs, and then click MS-DOS Prompt.
+
+If you have DMF disks, insert disk #12 and type
+
+      extract /L c:\windows\system a:\win95_12.cab Wsock32.dll
+
+   where c:\windows refers to the drive and folder where Windows 95
+   is installed, and where "a" refers to your floppy disk drive.
+
+   -or-
+
+   If you have non-DMF disks, insert disk #19 and type
+
+      extract /L c:\windows\system a:\win95_19.cab Wsock32.dll
+
+   where c:\windows refers to the drive and folder where Windows
+   95 is installed, and where "a" refers to your disk drive.
+
+   NOTE: If there are 13 disks in your Windows 95 upgrade, you
+   have a set of DMF disks. If there are 21 disks in your Windows
+   95 upgrade, you have non-DMF disks.
+
+Type exit and press ENTER to close the MS-DOS Prompt.
+
+Click Start, click Shut Down, click Restart The Computer, and
+   then click Yes.
+
+Additional query words: 1.00 Monster Truck Madness multi-player web problems issues modem cd cd-rom Goosebumps DreamWorks
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

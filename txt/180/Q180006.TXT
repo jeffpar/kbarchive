@@ -1,0 +1,58 @@
+DOCUMENT:Q180006  09-AUG-2001  [winnt]
+TITLE   :Event ID: 4229 When Replicating with Partners
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Windows Internet Name Service (WINS) Server may log one of the following
+events in the system log of Event Viewer:
+
+   Event ID   : 4229
+   Source     : WINS
+   Description: WINS pool thread encountered an exception during the
+                process of sending a push notification to another WINS.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, use the information in the following article to compact
+your WINS database:
+
+   ARTICLE-ID: Q145881
+   TITLE : How to Use Jetpack.exe to Compact a WINS or DHCP Database
+
+
+Additional query words: replication
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

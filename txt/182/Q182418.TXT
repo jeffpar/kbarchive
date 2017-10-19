@@ -1,0 +1,66 @@
+DOCUMENT:Q182418  31-JUL-2001  [sms]
+TITLE   :SMS: Site Config Manager Cannot Use a Preferred Drive Letter
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbSCMan smssiteconfigman
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Specified Servers in <Site Properties>\<Domains>, it is
+possible to specify a drive letter for Systems Management Server Site
+Configuration Manager to use when installing shares and services.
+
+However when enumerating a domain, there is currently no way to provide for a
+preferred drive letter. The Systems Management Server Site Configuration Manager
+will create the Systems Management Server root directory (and shares it as
+SMS_SHRx) and the SMS_SHR share on the NTFS drive with the most free space on
+all logon servers. If no NTFS drive exists, it chooses the drive with the most
+available space even it is a FAT drive.
+
+WORKAROUND
+==========
+
+To ensure that the Systems Management Server files will be installed on a
+specific drive on your Logon Server, make sure that the drive is an NTFS drive
+and that it has the most free space.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbSCMan smssiteconfigman 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q209010  24-FEB-2002  [vbwin]
+TITLE   :BUG: IDE: File/Make Retains Last VBCE Project Name
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After creating a new Windows CE HPC or Windows CE HPC Pro project in Visual
+Basic 6.0, the project name as reflected in the Make selection of the File menu
+will persist.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Windows CE HPC or Windows CE HPC Pro project in Visual Basic
+   6.0.
+
+2. In the Project Properties dialog box, change the project name to
+   "TestProject" and click OK.
+
+3. Click the File menu and note that the "Make TestProject..." menu item is
+   available.
+
+4. Exit Visual Basic and do not save the changes to the project.
+
+5. Launch Visual Basic and open a new Standard EXE.
+
+6. Click the File menu.
+
+Note that the "Make TestProject..." menu item appears.
+
+Additional query words: vbce vbce6 wince
+
+======================================================================
+Keywords          : kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

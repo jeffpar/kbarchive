@@ -1,0 +1,75 @@
+DOCUMENT:Q173240  10-AUG-2001  [winnt]
+TITLE   :Multihomed Agent Sends SNMP Trap with Incorrect IP Source
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbSDKPlatform kbSNMP kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When your multihomed Windows NT computer sends Simple Network Management
+Protocol (SNMP) traps, the IP address of the first interface is included as the
+originating host in the Agent ID field of the Trap Protocol Data Unit (PDU),
+even though the SNMP traps are being sent to the network on a different
+interface.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+MORE INFORMATION
+================
+
+The Trap PDU is issued by an SNMP entity on behalf of a network management agent
+application. It is used to notify the management station of a significant event.
+The Agent ID field is included in the Trap PDU, and it should contain the IP
+address of the object generating the trap.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+ARTICLE-ID: Q172879
+TITLE : Simple Network Management Protocol (SNMP) and Traps
+
+Additional query words: multi-homed
+======================================================================
+Keywords          : kbnetwork kbSDKPlatform kbSNMP kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,85 @@
+DOCUMENT:Q238903  04-APR-2000  [sna]
+TITLE   :COBOL Wizard Specifies Variable as the Return Value
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbsna400sp2 kbsna400sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 4.0 SP2 
+ - Microsoft SNA Server, versions 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The COM Transaction Integrator for CICS and IMS (COMTI) Component Builder is
+used to create a new component library by importing a COBOL program using the
+Import COBOL Wizard. After completion, the variable selected to be the return
+value appears, as an [output] parameter.
+
+CAUSE
+=====
+
+The means of producing this error is fairly complex. At the point where the
+wizard asks you to click Finish the operation, instead follow these steps:
+
+1. Click Back
+
+2. Click Back again.
+
+3. Click Next.
+
+4. Click Finish.
+
+WORKAROUND
+==========
+
+One workaround is to redo the Import COBOL Wizard operation, avoiding the
+sequence specified under the CAUSE section.
+
+A second workaround is to manually correct the component's declarations using
+Component Builder.
+
+1. Right-click the method in the left pane and click Unlock.
+
+2. In the right pane, select and delete the inconsistent parameter.
+
+3. Right-click the method in the left pane and click Properties
+
+4. Specify the correct return value using the Properties dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+Service Pack 2 and Microsoft SNA Server version 4.0 Service Pack 3.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI400SP2 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

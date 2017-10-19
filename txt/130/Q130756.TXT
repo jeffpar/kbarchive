@@ -1,0 +1,60 @@
+DOCUMENT:Q130756  30-OCT-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Notice 28 Mailbox Recovered
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0a,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0a, 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to recover a lost password with ADMIN.EXE, the following
+message shows on the screen at the end of the procedure:
+
+   Notice 28
+   Mailbox recovered.
+   Global password used.
+   Press Enter to continue
+
+WORKAROUND
+==========
+
+This is not an error message. It is a confirmation that the password has been
+recovered to the global password.
+
+MORE INFORMATION
+================
+
+For more information on password recovery, please refer to the Microsoft Mail
+for PC Networks "Administrator's Guide" section "Recovering a Lost Password"
+pages 104-105 for version 3.2 & 3.2a, page 99 for version 3.0b.
+
+Additional query words: 3.00a 3.20 3.20a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300a
+Version           : WINDOWS:3.0a,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

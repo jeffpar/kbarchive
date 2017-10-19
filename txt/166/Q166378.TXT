@@ -1,0 +1,305 @@
+DOCUMENT:Q166378  06-AUG-1999  [foxpro]
+TITLE   :HOWTO: Simulate an Incremental Search from a Text Box
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbDesigner kbOOP kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The combo box control has an Incremental Search property that, when set to true
+(.T.), searches the Control Source of the combo box with each keystroke. Thus,
+if a user types the string "ABC," the table is searched after each keystroke,
+first for the letter "A," then the string "AB," then the string "ABC."
+
+While this is a very useful property, the fact that the search is triggered by
+action rather than inaction causes UI problems--the user may not want to search
+for each letter of a string as he or she builds it, but rather search for the
+whole string after it has been fully entered. The text box does not have an
+incremental search property, but the action can be simulated, and made to search
+when the user stops typing, rather than when the user is entering the string for
+which to search.
+
+The code in this article creates a fully editable text box that implements an
+incremental search procedure. Using a timer, the incremental search is triggered
+when the user has not pressed a key for a certain timeout period.
+
+MORE INFORMATION
+================
+
+1. Create a new form, and add the Customer table from the Testdata database
+   (located in the Samples folder in Visual FoxPro 5.0 and the Microsoft Visual
+   Studio\Common\Samples\Data folder in Visual FoxPro 6.0) to the
+   DataEnvironment. Drag the table onto the form to create a grid. Make sure the
+   grid is named Grid1. Add to the form three custom properties: PREVAL,
+   TICKCOUNT, and HOLDVALUE. Change the default values of PREVAL and HOLDVALUE
+   to blank. Change the default value of TICKCOUNT to 0.
+
+2. Add to the form a custom method named SearchVal. To that method, add the
+   following code:
+
+   
+
+         * Only seek if the value in the text box has changed
+         IF !(THIS.PREVAL == ALLTRIM(THIS.TEXT1.VALUE))
+
+           * Set the previous value to the current value
+           THIS.PREVAL = ALLTRIM(THIS.TEXT1.VALUE)
+
+           * Seek for the text value
+           GO TOP
+           SEEK THIS.PREVAL
+
+           IF FOUND()
+              * The custom property holdvalue is used to store the
+              * string the user has entered.
+              THISFORM.HOLDVALUE = THIS.PREVAL
+
+              * This sets focus to the grid so that the located
+              * record is displayed in the grid and the
+              * RecordMark is turned on for the located record
+              THISFORM.GRID1.SETFOCUS
+
+              * Reset focus immediately to the text box
+              THIS.TEXT1.SETFOCUS
+              THIS.TEXT1.VALUE    = THISFORM.HOLDVALUE
+              THIS.TEXT1.SELSTART = LEN(THISFORM.HOLDVALUE)
+           ENDIF
+         ENDIF
+
+3. Add a timer to the form, and set the Interval property of the timer to 50. In
+   the Timer event of the Timer control, add the following code:
+
+   
+
+         THIS.PARENT.TICKCOUNT = THIS.PARENT.TICKCOUNT + 1
+
+         IF THIS.PARENT.TICKCOUNT >= 20
+           THIS.PARENT.TICKCOUNT = 0
+           THIS.PARENT.SEARCHVAL()
+         ENDIF
+
+4. Add a text box to the form. Do not specify a control source for the text box.
+   In the Load event of the form, enter the following command:
+
+   
+
+         SET ORDER TO CUST_ID && or whatever the name of the index tag
+                              && for the cust_id field is.
+
+5. Add the following code to the text box KeyPress event procedure:
+
+   
+
+         * NOTE: The SHIFT-DIRECTIONKEY highlighting works, but is non
+         * standard. For example, SHIFT-LEFT-ARROW highlighting three
+         * characters to the right, then hitting the right arrow key, only
+         * increments the current position by one. In most editors, doing
+         * this would increment the current position by four.  In order to
+         * emulate this behavior, however, it would be necessary to save
+         * the last key pressed in a variable, then check it to find out
+         * in which direction we were last moving, then perform a
+         * calculation ... it just didn't seem worth the effort.
+
+         LOCAL nPos, nLen, nSel
+
+         nPos = THIS.SELSTART         && current pos of the cursor
+         nLen = LEN(ALLTRIM(THIS.VALUE))   && length of text in textbox
+         nSel = THIS.SELLENGTH         && number of selected chars
+
+         THIS.PARENT.TICKCOUNT = 0
+
+         * Turn off all default processing of the Keypress Event;
+         * this is necessary for code to work
+         NODEFAULT
+
+         DO CASE
+            * Tests/traps for nKeycode >= 65, <= 122 (limits input to
+            * alpha characters), nKeycode = 32 (allows for spaces). To
+            * allow for input of numerals and/or other characters,
+            * refer to the INKEY() topic in the Help file for codes
+            * 39 is for single quote
+            CASE (nKeyCode >= 65 AND nKeyCode <= 122) OR nKeyCode = 32;
+               OR nKeyCode  = 44 OR  nKeyCode  = 45   OR nKeyCode = 39
+
+               * Insert the new character in the right place
+               THIS.VALUE = UPPER(LEFT(THIS.VALUE, nPos) +   ;
+                 CHR(nKeyCode) + RIGHT(THIS.VALUE,;
+                 nLen - (nPos + nSel)))
+
+               * Increment our position holder so we are placed
+               * after the new letter
+               nPos = nPos + 1
+               nSel = 0
+
+            * Tests/traps for the SHIFT-LEFT-ARROW combo (highlight-left)
+            CASE nKeyCode = 52
+               * Move one to the left, increase number selected by one
+               IF  nPos > 0
+                  nPos = nPos - 1
+                  nSel = nSel + 1
+               ENDIF
+
+            * Tests/traps for the SHIFT-RIGHT-ARROW combo (highlight-right)
+            CASE nKeyCode = 54
+               * Increase number selected by one, if there is more to
+               * select
+               IF (nPos + nSel) < nLen
+                  nSel = nSel + 1
+               ENDIF
+
+            * Tests/traps for the SHIFT-HOME combo (highlight-left-end)
+            CASE nKeyCode = 55
+               * Set the number of characters selected to the number of
+               * characters between our current position and the start
+               * position, then move to the start position
+               nSel = nSel + nPos
+               nPos = 0
+
+            * Tests/traps for the SHIFT-END combo (higlight-right-end)
+            CASE nKeyCode = 49
+               * Set the number of characters selected to the number to
+               * the right of our current position
+               nSel = nLen - nPos
+
+            * Tests/traps for the LEFT-ARROW key
+            CASE nKeyCode = 19
+               * Deselect any selected characters
+               nSel = 0
+
+               * Move left one
+               IF nPos > 0
+                  nPos = nPos - 1
+               ENDIF
+
+            * Tests/traps for the RIGHT-ARROW key
+            CASE nKeyCode = 4
+               * Deselect any selected characters
+               nSel = 0
+
+               * Move right one
+               IF  nPos < nLen
+                  nPos = nPos + 1
+               ENDIF
+
+            * Tests/traps for the HOME key
+            CASE nKeyCode = 1
+               * Deselect any selected characters
+               nSel = 0
+
+               * Move to the start
+               nPos = 0
+
+            * Tests/traps for the END key
+            CASE nKeyCode = 6
+               * Deselect any selected characters
+               nSel = 0
+
+               * Move to the end
+               nPos = nLen
+
+            * Tests/traps for the DELETE key
+            CASE nKeyCode = 7
+               * If we have not 'highlighted' the letter we want to delete,
+               * the count of letters to delete will be zero, so we have
+               * to manually set the letter to remove
+               IF  nSel = 0
+                  nSel = 1
+               ENDIF
+
+               * Rebuild the string without the deleted character(s)
+               THIS.VALUE = LEFT(THIS.VALUE, nPos) + ;
+                   RIGHT(THIS.VALUE, nLen - (nPos + nSel))
+
+               * Deselect any selected characters
+               nSel = 0
+
+            * Tests/traps for the BACKSPACE key
+            CASE nKeycode = 127
+               * If no letters are 'highlighted', just delete the one
+               * before the cursor and
+               * move the cursor back one
+               IF nSel = 0
+                  IF  nPos > 0
+                     THIS.VALUE = LEFT(THIS.VALUE, nPos - 1) + ;
+                       RIGHT(THIS.VALUE, nLen - nPos)
+                       nPos = nPos - 1
+                  ENDIF
+
+                  * If letters are highlighted, remove the block of
+                  * highlighted letters, and don't move the cursor
+                  * (just like hitting DELETE)
+               ELSE
+                  THIS.VALUE = LEFT(THIS.VALUE, nPos) + ;
+                     RIGHT(THIS.VALUE, nLen - (nPos + nSel))
+               ENDIF
+
+               * Deselect any selected characters
+               nSel = 0
+
+         ENDCASE
+
+         * Get rid of whitespace at the end of the entered word
+         IF nLen != LEN(ALLTRIM(THIS.VALUE))
+            THIS.MAXLENGTH = LEN(ALLTRIM(THIS.VALUE)) + 1
+         ENDIF
+
+         * This moves the cursor to the current position in the string in the
+         * text box
+         THIS.SELSTART  = nPos
+
+         * And this selects the proper number of characters
+         THIS.SELLENGTH = nSel
+
+6. Save and run the form. Type a search field into the text box. After a brief
+   pause, any matching fields should be located within the database and pointed
+   to on the Grid. Experiment with different timeout periods until you find one
+   with which you are comfortable.
+
+General Notes
+-------------
+
+ - In this example it is assumed that the text box is named Text1. If the name
+   of that text box is different, modify the code accordingly.
+
+ - The NODEFAULT command turns off all of the default processing of the KeyPress
+   event and allows the code to completely control the processing of the key
+   presses. This command is necessary.
+
+ - As is noted in a few of the comments, the edit emulation is not perfect, but
+   it is fairly close to target.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Robert
+Mobbs, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDesigner kbOOP kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

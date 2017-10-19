@@ -1,0 +1,63 @@
+DOCUMENT:Q172438  12-OCT-1999  [msnetwork]
+TITLE   :How to View Connection Status Information on MSN
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While you are connected to MSN, The Microsoft Network, you may want to view
+connection status information such as call duration, connection speed, or the
+number of bytes sent and received. This article describes how to view this
+information.
+
+MORE INFORMATION
+================
+
+To view connection status information while you are connected to MSN, use one of
+the following methods:
+
+Method 1
+--------
+
+Click the MSN Quick View icon on the taskbar, point to MSN Options, and then
+click Connection Settings.
+
+Method 2
+--------
+
+Right-click the MSN (or The Microsoft Network) icon on the desktop, and then
+click Connection Settings.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN250
+Version           : WINDOWS:2.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

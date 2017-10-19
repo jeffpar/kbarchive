@@ -1,0 +1,62 @@
+DOCUMENT:Q104988  25-NOV-1999  [msdos]
+TITLE   :How to Recover from a Failed MS-DOS 6.2 Step-Up Installation
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+If MS-DOS 6.2 Step-Up Setup is interrupted before the update is finished, restart
+your computer with your Uninstall disk in drive A, uninstall MS-DOS 6.2, and
+then run Step-Up Setup again.
+
+If your Uninstall disk is unavailable for some reason, you can use the following
+procedure to work around this problem:
+
+1. Copy all files from the C:\OLD_DOS.1 directory to your original MS-DOS
+   directory (typically C:\DOS).
+
+2. Start (boot) your computer from an MS-DOS 6.0 floppy disk.
+
+3. Use the SYS program to transfer the MS-DOS 6.0 system files to drive C (or
+   the host drive for C if C is compressed).
+
+4. Run MS-DOS 6.2 Step-Up Setup again.
+
+If Step-Up cannot run because it does not recognize your MS-DOS 6.0 files, you
+may have to install MS-DOS 6.0 before you run Step-Up again. For more
+information, see section 4 of the MS-DOS 6.2 Step-Up README.NOW file.
+
+
+Additional query words: 6.20 stepup
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

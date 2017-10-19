@@ -1,0 +1,265 @@
+DOCUMENT:Q171570  24-OCT-2000  [foxpro]
+TITLE   :Disable.exe Example Enables/Disables Menu Pads and Bars
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Disable.exe is a sample that shows how to enable and disable menus, menu pads
+and menu bars in a Top-Level form in Visual FoxPro 5.x.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   Disable.exe
+   (http://download.microsoft.com/download/vfox50/Sample/1/W9X/EN-US/disable.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+To use the files included, follow these steps:
+
+1. Download the Disable.exe file and place it in a new folder.
+
+2. Double-click Disable.exe to extract the files.
+
+3. Once the files are extracted, start Visual FoxPro 5.x.
+
+4. In Visual FoxPro, set the default directory to the location of the files
+   through the Tools, Options dialog box, File Locations tab or with the SET
+   DEFAULT TO command.
+
+5. Start the program by issuing DO Disable.prg in the Visual FoxPro Command
+   window or by choosing Do from the Program menu and choosing Disable.prg.
+
+6. Click the buttons to disable and enable menu items as desired.
+
+7. Quit and examine the Disable.mnx, Disable.scx and Disable.prg files as
+   desired.
+
+Symptoms
+--------
+
+Menu pads and the menu bars on those menu pads do not disable properly and then
+do not re-enable when changing the SKIP FOR setting when the menu is placed in
+an SDI form. In the case of menu pad bars, when the SKIP FOR setting is changed
+to true, the bar will not disable (turn gray) until the second time it is
+chosen. However, the command or procedure assigned to that bar will not run. In
+the case of the menu pad, it also does not disable until the second time it is
+chosen. However, even though the menu will drop down, the options on it will not
+function.
+
+Changing the SKIP FOR setting means that a logical memory variable is setup in
+the Prompt Options dialog box for a menu prompt in the Skip For: box. Normally
+changing that memory variable to True or False will enable or disable the prompt
+if the menu is not in a Top-Level(SDI) form.
+
+Resolution
+----------
+
+The best resolution to this is to issue the full SET SKIP OF command to enable or
+disable the menu components. To get the example in the Steps To Reproduce
+Behavior to work properly, add the following code in the places indicated.
+
+In the Toggle Disable Menu button click method, make this the second line of
+code:
+
+      SET SKIP OF PAD colors OF (Thisform.Name) lMenu
+
+In the Toggle Disable Menu Bar button click method, make this the second line of
+code:
+
+      SET SKIP OF BAR 1 OF colors lRed
+
+See the attached sample files for a better example of disabling and re- enabling
+menus in a Top-Level form.
+
+Status
+------
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional Information
+----------------------
+
+When designing a menu in the Menu Designer, a logical memory variable can be
+placed in the SKIP FOR expression in the Prompt Options dialog box. The logical
+values .T. or .F. can also be used for this expression but they cannot be
+changed at runtime and this problem still occurs.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following steps to reproduce the behavior assume a working knowledge of the
+Menu Designer and Form Designer in Visual FoxPro:
+
+1. Create a new program file and save it as NoDisabl.prg. Place the following
+   code in the program file, and then save and close it:
+
+         lMenu=.F.
+         lRed=.F.
+         DO FORM NoDisabl
+         READ EVENTS
+
+2. Create a new menu in the Menu Designer called NoDisabl.
+
+3. At the prompt for the first menu pad, type "Colors." Make the result a
+   Submenu. Click the Options button and place "lMenu" in the Skip For text box
+   (in the Prompt Options dialog box). Type in "colors" in the Pad Name box.
+   Click OK to exit the Prompt Options dialog box.
+
+   NOTE: The Pad Name is not necessary to reproduce the problem. The pad name
+   will be used later to illustrate a workaround to the problem.
+
+4. Choose the Create button to create the Submenu.
+
+5. To create two menu bar prompts, type "Red" and "Blue." Make the result of
+   each a command. For the commands, enter:
+
+         WAIT WINDOW "Red"
+
+   -and-
+
+         WAIT WINDOW "Blue"
+
+6. Click the Options button for the Red bar. In the Prompt Options dialog box,
+   place "lRed" in the Skip For box. Click OK to exit the Prompt Options dialog
+   box.
+
+7. From the View menu, select General Options. Check the Top-Level Form check
+   box in the General Options dialog box. Click OK.
+
+8. Select the Generate command from the Menu, and then save and generate the
+   menu. Name the menu files "NoDisabl.mnx" and "NoDisabl.mpr."
+
+9. Create a new form named NoDisabl.
+
+10. In the Init method of the form, place the following code:
+
+         DO NoDisabl.mpr WITH THIS, .T.
+
+11. In the Destroy method of the form, place the following code:
+
+         RELEASE MENU (THIS.Name) EXTENDED
+         CLEAR EVENTS
+
+12. Place three CommandButtons on the form. Change the caption properties on the
+   buttons to Quit, Toggle Disable Menu, and Toggle Disable Menu Bar.
+
+13. In the Click method of the Quit button, place the following code:
+
+         Thisform.release
+
+14. In the Click method of the Toggle Disable Menu, place the following code:
+
+         lMenu=!lMenu
+         IF lMenu
+            WAIT WINDOW "lMenu is True, the pad should be disabled"
+         ELSE
+            WAIT WINDOW "lMenu is False, the pad should be reenabled"
+         ENDIF
+         Thisform.refresh
+
+15. In the Click method of the Toggle Disable Menu Bar, place the following
+   code:
+
+         lRed=!lRed
+         IF lRed
+            WAIT WINDOW "lRed is True, menu bar Red should be disabled"
+         ELSE
+            WAIT WINDOW "lRed is False, menu bar Red should be reenabled"
+         ENDIF
+         Thisform.refresh
+
+16. Set the ShowWindow property of the form to be 2 - As Top-Level Form.
+
+17. Save the form as NoDisabl.scx and close it.
+
+18. Issue the following command in the Visual FoxPro Command window:
+
+         DO NoDisabl.prg
+
+19. Pull down the menu (use the mouse for this and the following steps) and
+   ensure the Color options work.
+
+20. Click the Toggle Disable Menu Bar button, note the WAIT WINDOW that appears.
+   Pull down the menu and choose Red. Note that it is not disabled (gray) but
+   the WAIT WINDOW does not appear. Pull down the menu again. The Red option
+   should now be disabled (gray). Click the Toggle Disable Menu Bar button
+   again and pull down the menu. Note that Red is still disabled.
+
+21. Click on the Toggle Disable Menu button. Note the WAIT WINDOW and pull down
+   the menu. Notice that it is not disabled but the Blue option doesn't bring
+   up its WAIT WINDOW. Click on the menu pad again. It should immediately
+   disable, if it is not already disabled. Click the Toggle Disable Menu button
+   again. Note that the menu pad does not re-enable.
+
+22. The menu pad should now be re-enabled but the mouse cannot get it to work.
+   Press the ALT key and click the menu pad. It should now be re-enabled and
+   the Blue option should work.
+
+23. To see the menu work as expected outside the form, undo the following or
+   re-create the example without the following:
+
+    - Step #7 - uncheck the Top-Level form and be sure to regenerate the menu.
+
+    - Steps #10, 11 - remark out these lines of code.
+
+    - Step #16 - set the ShowWindow property of the form to 0 - In Screen.
+
+    - Add the following line of code to the NoDisabl.prg file just before the DO
+      FORM NoDisabl line:
+
+            DO NoDisabl.mpr
+
+    - In the NoDisabl.prg file, place SET SYSMENU TO DEFAULT after the CLEAR
+      EVENTS command.
+
+   When you run the NoDisabl program, the menu should work as expected. The Pad
+   will not show as enabled or disabled until you click on it once or press the
+   ALT key.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

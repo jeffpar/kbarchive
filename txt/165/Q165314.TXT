@@ -1,0 +1,69 @@
+DOCUMENT:Q165314  17-APR-2000  [winnt]
+TITLE   :Grace Logon Remaining Is Not Decremented When Logging to BDC
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.00
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft File and Print Services for NetWare versions 3.51, 4.00 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a Novell NetWare Client logs on to a backup domain controller (BDC) and if
+the password has expired for the user, the Grace Logon Remaining counter is not
+updated.
+
+CAUSE
+=====
+
+File and Print Services for NetWare provides an authentication package that is
+responsible for updating the NetWare related credentials in the security account
+database. The authentication package was not calling the LSASS subsystem
+correctly to update this information.
+
+RESOLUTION
+==========
+
+Use the hotfix mentioned below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 and 4.0.
+This problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbbuglist kbfixlist
+Technology        : kbServicesNetwareSearch kbFPNW351
+Version           : winnt:3.51,4.00
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

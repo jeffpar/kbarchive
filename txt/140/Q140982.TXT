@@ -1,0 +1,71 @@
+DOCUMENT:Q140982  16-APR-2000  [powerpt]
+TITLE   :PPT7: PowerPoint Presentation Conferencing: Hidden Slides
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbualink97 kbconf
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run a presentation conference, each audience machine receives an entire
+copy of the presentation, including hidden slides. After the presentation
+conference is over, or if an audience machine breaks out of the conference, the
+audience machines retain that presentation and can display those hidden slides.
+
+MORE INFORMATION
+================
+
+The presenter can choose any hidden slide from the original presentation by
+clicking the slide number or name and clicking the Go To button in the Slide
+Navigator. The hidden slides have parentheses around the slide number. After the
+presenter selects a hidden slide, the slide is then visible to the audience
+computer.
+
+The first slide of the original presentation splashes on the audience's screen
+after the presenter's computer downloads a temp file. The audience computer then
+synchronizes with the slide displayed on the presenter's computer. The Stage
+Manager does not display any of the previous slides on the audience computers;
+however, the slides can be accessed through the Slide Navigator.
+
+The slide displayed on the presenter's computer at the start of the conference is
+considered the first slide by the Stage Manager. Even if it has a hidden
+attribute, the slide is available throughout the conference using the Stage
+Manager.
+
+If the first slide of the original presentation is a hidden slide and the
+presenter is not starting the presentation with that slide on the screen, it
+still splashes on the audience computers once, but is then no longer visible
+during the conference unless specifically chosen through the Slide Navigator by
+the presenter.
+
+Additional query words: 7.00 ppt95 ppt7 w_powerpt powerpnt
+
+======================================================================
+Keywords          : kbualink97 kbconf 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

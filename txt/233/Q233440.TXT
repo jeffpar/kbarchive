@@ -1,0 +1,55 @@
+DOCUMENT:Q233440  23-JUN-1999  [homemm]
+TITLE   :MSBP: Complete Text of Article Not Displayed in Text Only Mode
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to view an article in Text Only Mode in Microsoft Business
+Planner, the complete text of the article may not fit inside the Text Only Mode
+window.
+
+RESOLUTION
+==========
+
+To resolve this issue, maximize the Text Only Mode window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+Additional query words: msbp truncated cut short text-only
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

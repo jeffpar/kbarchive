@@ -1,0 +1,66 @@
+DOCUMENT:Q141920  17-DEC-2000  [win95x]
+TITLE   :MS Fax Error Message: Address Incorrect or Does Not Exist
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a fax using Microsoft Exchange, your fax may be returned
+immediately as undeliverable. When you open the message, you see the following
+explanation:
+
+   The recipient's e-mail address is incorrect or does not exist. Be
+   sure to type the address correctly, and try sending the message
+   again. If the message cannot be sent, contact your administrator.
+
+CAUSE
+=====
+
+This behavior can occur if the fax client is behind the mail client in the
+delivery order.
+
+
+RESOLUTION
+==========
+
+Change the delivery order to place the fax client ahead of the mail client. To
+do so, follow these steps:
+
+1. Use the right mouse button to click the Inbox icon on the desktop, and then
+   click Properties on the menu that appears.
+
+2. Click the Delivery tab.
+
+3. Click Microsoft Fax Transport, and then move it above Microsoft Mail using
+   the arrows to the right of the box.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

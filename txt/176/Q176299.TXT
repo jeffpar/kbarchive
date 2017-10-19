@@ -1,0 +1,54 @@
+DOCUMENT:Q176299  12-JUN-2001  [homegame]
+TITLE   :Bridge Too Far: Location of Product Identification Number (PID)
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbusage kbtlckbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat: A Bridge Too Far, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can locate the Product Identification Number
+(PID) in Close Combat: A Bridge Too Far.
+
+MORE INFORMATION
+================
+
+You can find the Close Combat: A Bridge Too Far PID by following these steps:
+
+1. Start Close Combat: A Bridge Too Far.
+
+2. Press the F8 key to open the Close Combat Options dialog box.
+
+3. Click About Close Combat. The PID is listed at the bottom of the screen.
+
+Additional query words: 2.00 cc abtf product id pin
+
+======================================================================
+Keywords          : kbusage kbtlc kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat2
+Version           : WINDOWS:2.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

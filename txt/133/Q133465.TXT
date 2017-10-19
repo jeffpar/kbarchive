@@ -1,0 +1,67 @@
+DOCUMENT:Q133465  13-DEC-1999  [homemm]
+TITLE   :Wine Guide for the Macintosh: Movie Control Buttons Missing
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Wine Guide for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some or all of the Wine Guide movie control buttons are missing. The control
+buttons are used to start, pause, forward and rewind a movie.
+
+The problem may occur after you have done both of the following:
+
+ - Paused the movie using the COMMAND+PERIOD shortcut key combination.
+
+   -and-
+
+ - Moved the movie dialog box to the right side of the monitor.
+
+   When you moved the movie dialog box, part of the movie may have been hidden
+   off the screen.
+
+WORKAROUND
+==========
+
+To work around this problem, close the movie dialog box, then reopen it. All the
+control buttons for the movie should appear.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Wine Guide version 1.0 for the
+Macintosh. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: mac multi media multimedia multi-media mmtitles kbmm redraw
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbWine100Mac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

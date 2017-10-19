@@ -1,0 +1,63 @@
+DOCUMENT:Q174848  29-MAY-1999  [homegame]
+TITLE   :Problems Changing Player Preferences In Golf 3.0
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you launch Microsoft Golf 3.0 for Windows, you may be unable to change the
+preferences of the character you've selected.
+
+CAUSE
+=====
+
+This will occur if Golf 3.0 is installed to the root folder on the hard disk.
+
+RESOLUTION
+==========
+
+Use the following steps to resolve the problem:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Remove Golf 3.0.
+
+4. Reinstall Golf, making sure there is a path after the drive letter. For
+   example, C:\Golf3.
+
+
+Additional query words: 3.00 golf character change color person
+
+======================================================================
+Keywords          : kbenv kbsetup kbusage 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,245 @@
+DOCUMENT:Q142179  14-FEB-2002  [win95x]
+TITLE   :Troubleshooting .avi File Playback Problems in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbmm kbtshoot win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains steps to help you troubleshoot problems playing .avi files
+in Windows 95.
+
+MORE INFORMATION
+================
+
+Program-Specific Problems
+-------------------------
+
+Try to play the .avi file with different programs such as Media Player, Windows
+Explorer, and the program the .avi file was included with.
+
+1. If there is a problem viewing the .avi file with a third-party program, try
+   to play the file using Media Player. If you can play the .avi file with Media
+   Player, contact the third-party program's manufacturer.
+
+2. If you cannot play the .avi file with Media Player, the file may be damaged.
+   Try to play another .avi file. If you do not have another .avi file, connect
+   to the Microsoft Download Service and download Avisampl.exe. If you can play
+   other .avi files, the problem may be related to the codec used to create the
+   .avi file. For information about how to obtain the Avisampl.exe file, see the
+   following article in the Microsoft Knowledge Base:
+
+   Q119383 AVI Files Available for Testing Video for Windows Runtime
+
+3. If you cannot play any .avi file, the MCI video device may be disabled. To
+   enable it, double-click Multimedia in Control Panel, click the Advanced tab,
+   double-click Media Control Devices, double-click Motion Video Device, click
+   the Use This Media Control Device check box to select it, and then click OK.
+
+Playback Device Not Configured Properly
+---------------------------------------
+
+If the .avi file plays poorly (jerky video or breaks in the sound), the problem
+may be related to the video playback size setting. By default, Windows 95 sets
+video playback to be twice the original size of the video clip. To achieve
+better playback quality, use the following steps to adjust the video playback
+size:
+
+1. Click Start, point to Settings, click Control Panel, and then double- click
+   Multimedia.
+
+2. On the Video tab, click Windows, and then click Original Size in the Window
+   box.
+
+3. Click OK.
+
+CD-ROM Throughput Not Fast Enough
+---------------------------------
+
+If an .avi file plays poorly (jerky video or breaks in the sound) from the CD-ROM
+drive, the .avi file's target rate may exceed the CD-ROM drive's throughput. Use
+the following steps to determine the .avi file's target rate:
+
+1. In Windows Explorer, use the right mouse button to click the .avi file, and
+   then click Properties on the menu that appears.
+
+2. Click the Details tab and note the Video Format information. The file's
+   target video playback rate is listed in KB/sec.
+
+Most files are recorded at a target data rate (video and sound included) of less
+than or equal to 300 KB/sec.
+
+If there is enough free space on your hard disk, copy the .avi file to your hard
+disk (to an uncompressed drive, if possible) and test the playback of the file.
+If there is not enough free space on your hard disk, test a smaller .avi file
+with the same properties.
+
+If the file plays correctly from your hard disk, your CD-ROM drive may not be
+providing fast enough throughput and may need to be optimized. For information
+about optimizing CD-ROM drive access in Windows 95, see the following article in
+the Microsoft Knowledge Base:
+
+   Q141368 Poor Performance from CD-ROM-Based Program
+
+If playback of the .avi file does not improve after optimizing, you may need to
+use a faster CD-ROM drive or play .avi files from your hard disk.
+
+Playing .avi Files as Links or Over the Network
+-----------------------------------------------
+
+The playback of an .avi file linked into a document or across the network can
+cause poor playback performance. Access time to files on the network can vary
+depending on network traffic and the hardware being used. For better playback,
+you should copy .avi files to and play them from your hard disk.
+
+Video Driver Displays Colors Incorrectly
+----------------------------------------
+
+If the .avi file flashes or displays incorrect colors during playback, the
+problem may be related to the video driver you have installed. Check the .avi
+file format for the number of colors (such as 8-bit or 24-bit color). If you are
+using a video driver with 16 colors, .avi files with 256 or more colors will
+look very different during playback or may not play at all. Such .avi files will
+have a washed-out look during playback because of the dithering (converting from
+256 to 16 colors) that takes place. Use one of the following steps to resolve
+these problems:
+
+ - Install a display driver with higher color capabilities, or adjust the color
+   palette of your current display driver to use more colors.
+
+ - Remove and reinstall your display driver.
+
+ - Obtain and install an updated display driver designed for Windows 95 from the
+   manufacturer of your video adapter, if available.
+
+Problems with Sound During .avi File Playback
+---------------------------------------------
+
+If there are breaks in sound during playback of the .avi file or there is no
+sound, the sound card may not be configured properly. Sound in an .avi file is
+not usually compressed, so you can test playback of an uncompressed file such as
+the Chimes.wav file included with Windows 95. If .wav files do not play
+correctly, see the following article in the Microsoft Knowledge Base:
+
+   Q140334 How to Troubleshoot Wave Sound File Problems in Windows 95, Windows
+   98, and Windows Millennium Edition (Me)
+
+NOTE: Make sure the volume is set properly for your sound card, and check that
+the .avi file was captured with sound by looking at the properties for the file
+and checking the audio format.
+
+Codec Is Not Installed or Is Damaged
+------------------------------------
+
+If you receive a message about a codec that is missing or not installed when you
+try to play an .avi file, make sure that the required codec is installed. Use
+the following steps to find out which codec was used to compress the .avi file:
+
+1. In Windows Explorer, use the right mouse button to click the .avi file, and
+   then click Properties on the menu that appears.
+
+2. Click the Details tab and note the Video Format information. The codec used
+   to compress the file is the last piece of information listed.
+
+3. Click Start, point to Settings, click Control Panel, and then double- click
+   Multimedia.
+
+4. On the Advanced tab, double-click Video Compression Codecs. If the codec used
+   to compress the file is not listed, you must install it.
+
+Windows 95 includes the following 32-bit video codecs:
+
+ - Intel Indeo (IR31 or IR32)
+
+ - Supermatch Cinepak
+
+ - Microsoft RLE (MS-RLE)
+
+ - Microsoft Video 1 (MS-CRAM)
+
+You may also receive a message about a codec that is missing or not installed if
+the codec that the .avi file is attempting to use is damaged. Use the following
+steps to remove and reinstall a 32-bit video codec:
+
+1. Click Start, point to Settings, click Control Panel, and then double- click
+   Multimedia.
+
+2. On the Advanced tab, double-click Video Compression Codecs.
+
+3. Click the codec you want to remove, click Properties, click Remove, and then
+   click Yes when you are prompted.
+
+4. Close the Multimedia Properties dialog box.
+
+5. Click Start, point to Settings, click Control Panel, and then double- click
+   Add New Hardware.
+
+6. Click Next, click No, and then click Next.
+
+7. In the Hardware Types box, double-click Sound, Video, And Game Controllers.
+
+8. In the Manufacturers box, click the appropriate item:
+
+    - for RLE and Video 1, click Microsoft Video Codecs
+
+    - for Cinepak, click SuperMatch
+
+    - for IR31 or IR32, click Intel
+
+9. Click the appropriate codec in the Models box, click Next, and then click
+   Finish. If you are prompted to restart Windows 95, do so.
+
+If you have a 16-bit video codec installed, you should disable it and install a
+corresponding 32-bit video codec. 16-bit video codecs are listed in the
+[Drivers] section of the System.ini file and usually begin with the word "VIDC."
+To disable a 16-bit codec, place a semicolon (;) at the beginning of the
+corresponding line in the System.ini file, save the System.ini file, and then
+restart Windows 95.
+
+Display Problems
+----------------
+
+Reduce the graphics acceleration setting. To do so, follow these steps:
+
+1. Right-click My Computer, and then click Properties.
+
+2. Click the Performance tab, click Graphics, and then move the Hardware
+   Acceleration slider to one notch from the left.
+
+3. Click OK, and then click Close.
+
+4. Click Yes when you are prompted to restart your computer.
+
+
+
+Additional query words: audio visual
+
+======================================================================
+Keywords          : kbmm kbtshoot win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

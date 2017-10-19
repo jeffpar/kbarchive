@@ -1,0 +1,76 @@
+DOCUMENT:Q152973  11-NOV-2000  [foxpro]
+TITLE   :Setprop.exe Show How to Add Properties at Run Time
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0b,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbHWMAC kbvfp300 kbvfp600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0b, 6.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Setprop.exe is a sample that allows developers to add properties to objects at
+run time.
+
+This behavior cannot be accomplished through the FoxPro language, but can be done
+with the Library Construction Kit (LCK). You can download the source code and
+libraries that provide this functionality using Setprop.exe.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   Setprop.exe
+   (http://download.microsoft.com/download/vfox60/Howto2/1/W9X/EN-US/Setprop.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The following files are contained in the self-extracting EXE:
+
+   Reamde.txt        Instructions for use of the function
+   Setprop.c         C Source File
+   Setprop.fll       DLL containing SETPROP Function
+   Setprop.hqx       A BinHex5, text-formatted file that
+
+                     contains Setprop.cfm, a library that can be used
+                     with Microsoft Visual FoxPro for the Power Macintosh.
+
+Additional query words: VFoxWin VFoxMac kbfile Setprop
+
+======================================================================
+Keywords          : kbfile kbsample kbHWMAC kbvfp300 kbvfp600 kbDSupport 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300b kbVFP600
+Version           : MACINTOSH:3.0b; WINDOWS:3.0b,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

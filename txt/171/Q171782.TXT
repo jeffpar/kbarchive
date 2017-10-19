@@ -1,0 +1,94 @@
+DOCUMENT:Q171782  09-AUG-2001  [winnt]
+TITLE   :INFO: How to Map a Network Drive During an Unattended Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During an unattended setup of Windows NT 4.0, it may be beneficial to map a
+network drive in the of middle setup. Mapping drives during setup allows you to
+load balance your servers, have your distribution share on one server, and an
+application share on another.
+
+MORE INFORMATION
+================
+
+An entry in the Cmdlines.txt will be used to map a drive during setup. This is
+possible because Cmdlines.txt is run after Machine Name is set and the Network
+is started.
+
+   [Commands]
+      ".\net use s: \\server\share /user:Domainname\Username /persistent:no"
+      "s:\internet\msie30.exe /Q /R:N"
+      "s:\sp\update -u -z -n"
+
+NOTE: Use the /user: parameter because Windows NT setup is run using the System
+Account, which does not have a user account associated with it.
+
+NOTE: Use /user:Domainname\Username Password - if the username has a password
+associated with it.
+
+The /persistent parameter is used to ensure that the drive letter is not
+automatically reconnected when logging on. It is best to force a static drive
+letter than use a dynamic letter, which, by default, picks the next available
+drive letter. In the above example, it is assumed that an Internet Explore
+package has been built with the Internet Admin Kit and has been place on the
+distribution server in a directory called Internet.
+
+Depending on the rollout of Windows NT 4.0, it may be beneficial to enable the
+Guest Account on the Application Share, and connect with a
+/user:Domainname\Guest. This will ensure that, if a computer can get on the
+network, but cannot be validated by a domain controller, setup can still be
+completed.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q168814 Installing NT 4.0 Service Packs During Unattended Installation
+
+For additional information on Windows NT 4.0 deployment and unattended
+installation consult the Microsoft Knowledge Base at:
+
+   http://www.microsoft.com/kb
+
+and download the Windows NT 4.0 Deployment Guide from:
+
+   http://www.microsoft.com/ntworkstation
+
+NOTE: The deployment guide is valid for both Windows NT Workstation and Windows
+NT Server.
+
+Additional query words: Unattended Setup
+
+======================================================================
+Keywords          : kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

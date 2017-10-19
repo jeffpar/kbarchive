@@ -1,0 +1,65 @@
+DOCUMENT:Q165998  25-FEB-2002  [iis]
+TITLE   :Cold Fusion Applications Bypass Security
+PRODUCT :Internet Information Server
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Cold Fusion template files that should be only accessible to authenticated users
+are also getting returned to other users.
+
+CAUSE
+=====
+
+The Cold Fusion ISAPI dll file is running in a manner that does not preserve the
+user context. Therefore, it allows the cfm file to run solely based on the
+permissions assigned the Cold Fusion dll (Iscf.dll) file.
+
+WORKAROUND
+==========
+
+Allaire is working on a new version of the .dll file (maintenance fix 2.02) that
+will resolve the problem.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft. We make no warranty, implied or otherwise, regarding performance
+or reliability of these products.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : :2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

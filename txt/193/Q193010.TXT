@@ -1,0 +1,86 @@
+DOCUMENT:Q193010  11-JAN-2001  [vbwin]
+TITLE   :BUG: Blinking Hourglass When Expanding Object in Watch Window
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbDebug kbVBp kbVBp600bug kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While expanding an object in the Watch Window, the mouse pointer (cursor)
+becomes a blinking hourglass, and Visual Basic appears to stop responding.
+
+CAUSE
+=====
+
+The run object being expanded contains member objects (clientsessions) that have
+run member objects that are the same instance as the parent run. (This is a
+circular reference.)
+
+NOTE: The problem appears to only occur with objects that access a Microsoft
+Transaction Server (MTS) component.
+
+
+RESOLUTION
+==========
+
+To stop the blinking hourglass, press the CTRL+BREAK key combination. If the
+hourglass does not stop blinking, press the CTRL+ALT+DEL key combination to get
+to the Close Programs dialog box in Windows 95 and later, or the Task Manager in
+NT 4.0 and later. From there, select the program, and click End Task.
+
+To work around the problem, print the information to the Immediate window instead
+of the Watch window using one of the following alternatives:
+
+ - Use Debug.Print in the code.
+
+-or-
+
+ - Use the Print method (or ?) directly in the Immediate window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+MSDN Library Visual Studio 6.0: Visual Basic Documentation; Using Visual Basic;
+Programmer's Guide (All Editions); Part 2: What Can You Do With Visual Basic?;
+Debugging Your Code and Handling Errors; Using the Debugging Windows
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

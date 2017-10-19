@@ -1,0 +1,75 @@
+DOCUMENT:Q90322  20-SEP-2001  [win3x]
+TITLE   :Persistent Connections and Windows for Workgroups
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If resource connections are persistent in Windows for Workgroups or Workgroup
+Connections, connecting to and disconnecting from resource connections in
+Windows for Workgroups and Workgroup Connections changes the list of persistent
+connections.
+
+MORE INFORMATION
+================
+
+Disconnecting from a network drive is permanent, and removes it from the list of
+persistent connections. There is no one-time-only disconnect feature, although
+you can replace a persistent connection for one session with a temporary
+connection. This can only be done in Windows for Workgroups through the Connect
+Network and Connect Network Printer dialog boxes.
+
+To use a resource for one session, without disrupting the persistent connection
+list, clear the selection of the Reconnect At Startup check box when connecting
+to that resource.
+
+The CONNECT.DAT file contains a list of persistent connections. When starting the
+network, either from Windows Connections or Windows for Workgroups, this list is
+used to keep track of the connections. These connections are established when
+you either log on to the network in Windows Connections, or when Windows for
+Workgroups is started.
+
+For example, if a persistent printer resource is set in Windows for Workgroups
+and is then disconnected from Windows Connections by using the NET command, the
+resource will not automatically reconnect when starting Windows for Workgroups.
+
+Novell Users
+------------
+
+You must log on to Novell before starting Windows for Workgroups for persistent
+connections to be established when starting Windows for Workgroups.
+
+Additional query words: 1.00 3.10 LAN Manager LANman 3.11 wc 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : :1.0,3.1,3.11
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

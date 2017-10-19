@@ -1,0 +1,68 @@
+DOCUMENT:Q146661  18-MAR-1999  [exchange]
+TITLE   :XCLN: Cannot Paste Bitmaps or Files into a RichEntry Field
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you add a RichEntry field into a Microsoft Exchange Electronic Form, and
+compile and install the form, you cannot paste anything other than richtext into
+the RichEntry field. Even though the Edit/Paste menu option is enabled on the
+form's menu, when the RichEntry field is selected on the form, you cannot paste
+a bitmap or a file into the field.
+
+RESOLUTION
+==========
+
+By default, OLE objects in this version of the RichEntry fields can only handle
+richtext, not Bitmaps or external files. If you want to be able to paste bitmaps
+or external files into the RichEntry field, you must perform the following steps
+when you add or edit properties of a RichEntry field:
+
+1. Insert a RichEntry field if it doesn't already exist.
+
+2. Select the RichEntry Field so that it has the focus on the form.
+
+3. Choose Field Properties from the View menu or hit F4.
+
+4. Choose the General tab on the property sheet.
+
+5. Change the reference name in the drop down box from the field name to
+   MAPI_Body_Custom.
+
+6. Save the project, recompile it, and then reinstall the form.
+
+Additional query words: Paste RichEntry Bitmap
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

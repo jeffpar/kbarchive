@@ -1,0 +1,71 @@
+DOCUMENT:Q213340  22-OCT-2000  [sms]
+TITLE   :SMS: Can't Open Membership Rules Tab at Child Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbMMC kbServer kbsms200 kbsms200bug kbCollections
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attach a site to a parent site that has a collection with an identical
+name as a collection at the new child site, the collections are properly
+replicated to the child site and may result in two identically named collections
+being listed at the child site. However, when you click the Membership Rules tab
+of either collection, you receive the following error message:
+
+   This collection name is already in use. Please enter a different name.
+
+CAUSE
+=====
+
+This behavior occurs because Microsoft Systems Management Server 2.0 enforces
+uniqueness based on name. Note that this behavior does not occur for the default
+collections installed by Systems Management Server.
+
+WORKAROUND
+==========
+
+In this situation, Systems Management Server 2.0 prompts the user to fix the
+name conflict. When the collection's Properties page is open, change either the
+child site's collection name or the identical collection name at the parent
+site.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbMMC kbServer kbsms200 kbsms200bug kbCollections 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

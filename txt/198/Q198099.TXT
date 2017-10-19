@@ -1,0 +1,68 @@
+DOCUMENT:Q198099  22-JUN-2001  [exchange]
+TITLE   :XGEN: ODK: "The disk labeled 'default' is now required"
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:98
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 98 Deployment Kit 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an Iexpress package containing a file with a long file name, you
+may receive the following error:
+
+   The disk labeled default is now required.
+   This disk is provided by your computer manufacturer.
+   Click OK to continue. OK
+
+The next dialog box that appears states the following:
+
+   The file longfilename. On default cannot be found.
+   Insert default in the selected drive, and click OK.
+
+   Options:
+   OK
+   Cancel
+   Skip File
+   Details
+   Browse
+
+WORKAROUND
+==========
+
+To work around this problem, change the long file name to an 8.3 character file
+name in the Iexpress package or select "Store files using Long File Name inside
+package" in the Package Name and Options dialog box during Iexpress package
+creation.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlookDeployKitSearch kbOutlook98DeployKit
+Version           : WINDOWS:98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

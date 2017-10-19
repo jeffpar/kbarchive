@@ -1,0 +1,82 @@
+DOCUMENT:Q132923  20-FEB-2000  [ssafe]
+TITLE   :INFO: Sharing SourceSafe Projects
+PRODUCT :Microsoft SourceSafe
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbusage kbSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SourceSafe for Windows, version 3.1 
+ - Microsoft SourceSafe for MS-DOS, version 3.1 
+ - Microsoft SourceSafe for Windows NT, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the two methods of sharing projects in SourceSafe. In
+addition, the article shows how to identify shared projects and how they are
+shared.
+
+MORE INFORMATION
+================
+
+When you share Projects, SourceSafe shares all of the files in the project and
+its subprojects if you select recursive.
+
+While the multiple pages icon indicates that a file has been shared, you may
+forget where the file is located in other projects. The LINKS command can
+display the locations of the shared file in other projects.
+
+Example 1 - Sharing the most recent version of the project
+----------------------------------------------------------
+
+1. Highlight the Location where you want to move the project. For this example,
+   suppose we create a new project in the $/ (root) project.
+
+2. Select Share from the SourceSafe menu.
+
+3. Highlight the $/<orig. project> project in the Projects: list box.
+
+4. Select the Share push button.
+
+5. Type the <new project> in the New Name text box.
+
+6. Select the Recursive check box.
+
+7. Select OK.
+
+Example 2 - Sharing a specific version of a project
+---------------------------------------------------
+
+You can also select a specific version of a project from the history window. The
+only difference between sharing a specific version of a file and sharing a
+specific version of a project is the dialog that allows you to select where you
+want to share the project.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe310 kbSSafe310DOS kbSSafe310NT
+Version           : 3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

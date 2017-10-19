@@ -1,0 +1,90 @@
+DOCUMENT:Q130462  19-OCT-2000  [foxpro]
+TITLE   :INFO: Difference Between REQUERY and REFRESH in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the differences in functionality between two new functions -
+REQUERY() and REFRESH() - in Visual FoxPro.
+
+MORE INFORMATION
+================
+
+REQUERY()
+---------
+
+ - Retrieves data again for a SQL view.
+
+ - Throws out the current cursor and starts over, possibly with new parameters.
+
+ - Pulls in all rows.
+
+ - Returns 1 if data is successfully retrieved; otherwise, it returns 0.
+
+ - Is typically used to refresh a SQL view when data has changed on the data
+   source.
+
+REFRESH()
+---------
+
+ - Refreshes data in an updatable SQL view. It goes back to the server and gets
+   new values for any rows that you haven't edited in a buffered view. (It also
+   caches an image of the rows you have been editing, but it doesn't force these
+   values over the top of your changes.)
+
+ - Is helpful for checking to see whether other users have changed data while
+   you've been buffering.
+
+ - Takes an optional parameter to specify what rows to update, so you can grab
+   just the ones that are currently on the user's screen, for example.
+
+ - Is a necessary precursor to issuing CURVAL() for remote data.
+
+ - Returns the number of records refreshed. The records are refreshed with data
+   from the tables from which the SQL view is created. Records are refreshed in
+   the SQL view open in the currently selected work area.
+
+ - Cannot refresh locked or buffered records, and the records refreshed must
+   have unique primary keys. If a record in a table does not have a primary key
+   value, the corresponding record in the SQL view is marked for deletion.
+
+REFERENCES
+==========
+
+For more information about REQUERY() and REFRESH(), search for the "REQUERY()
+function" and "REFRESH() function" topics in the Visual FoxPro Help menu.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

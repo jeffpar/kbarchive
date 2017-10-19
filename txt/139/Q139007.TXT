@@ -1,0 +1,60 @@
+DOCUMENT:Q139007  22-OCT-1999  [mastering]
+TITLE   :"Unable to Find" Mastering Visual FoxPro Error Upon Startup
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual FoxPro 3.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When starting Mastering Visual FoxPro, the following error appears and the
+program does not run:
+
+   Cannot find startup system book 'c:\mtb30\mtb30.sbk'. None of the startup
+   system books will be loaded."
+
+RESOLUTION
+==========
+
+If Multimedia ToolBook is not installed on the system, delete the Mtb30.ini file
+from the Windows directory. If Multimedia ToolBook is installed on the system,
+refer to the Multimedia ToolBook manuals for information on how to modify the
+Mtb30.ini configuration file to correct the problem.
+
+MORE INFORMATION
+================
+
+This error message is caused from incorrect information in a Multimedia ToolBook
+configuration file on the system. Even if Multimedia ToolBook is no longer
+installed on the system, this file may still exist in the Windows directory.
+
+Additional query words: 1.00 1995 multi media multimedia multi-media mmtitles mastering
+
+======================================================================
+Keywords          : kbmm 
+Technology        : kbMSPressSearch
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

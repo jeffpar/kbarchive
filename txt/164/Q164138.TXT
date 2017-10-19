@@ -1,0 +1,75 @@
+DOCUMENT:Q164138  10-AUG-2001  [winnt]
+TITLE   :Files in Macintosh Volume Disappear from Macintosh Clients
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using File Services for the Macintosh, Macintosh users may report that
+files that should be available are missing or have disappeared. When viewed by
+the server or PC clients, these files may found to reside on the server.
+
+CAUSE
+=====
+
+In certain instances, some directories were not enumerated at the file level by
+Macintosh File Services. Because of this problem, the MacFile index was not kept
+in sync with the NTFS file system.
+
+RESOLUTION
+==========
+
+A hotfixed version of Sfmsrv.sys is available to resolve this issue. To fully
+recover and resolve this issue once it has occurred, affected Macintosh volumes
+should be rebuilt after the hotfix is applied. For additional information
+performing the rebuild, please see the following article in the Microsoft
+Knowledge Base:
+
+   ARTICLE-ID: Q147909
+   TITLE : Troubleshooting MacVolume Creation Errors
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.51 and
+4.0. This problem was corrected in the latest Microsoft Windows NT 4.0 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: sfm post-sp5 resource fork duplicate duplicates disappearing disappears
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

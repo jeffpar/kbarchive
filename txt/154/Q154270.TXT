@@ -1,0 +1,69 @@
+DOCUMENT:Q154270  18-DEC-2000  [win95x]
+TITLE   :Desktop Wallpaper Overruns Desktop
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change display resolutions, the desktop wallpaper may seem to have been
+cut off, or the entire image may not seem to be displayed.
+
+CAUSE
+=====
+
+This behavior can occur if you change to a lower resolution than when you
+originally selected the wallpaper.
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+ - Run the Desktop Themes tool in Control panel and click Apply to reapply the
+   wallpaper using the new resolution.
+
+ - Enable the "Stretch desktop wallpaper to fit the screen" option on the Plus!
+   tab in Display properties.
+
+MORE INFORMATION
+================
+
+The wallpaper was applied at a different resolution than is currently in use.
+For example, if you apply a wallpaper when the resolution is set to 800 x 600,
+the theme switcher stretches the image to fit that resolution. If you then
+change resolutions to 640 x 480, the image is too large for the current
+resolution and seems to be cut off.
+
+Additional query words: kidsplus kidsplus! pack kids plus plus!
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

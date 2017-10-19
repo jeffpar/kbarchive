@@ -1,0 +1,79 @@
+DOCUMENT:Q266298  07-MAY-2001  [visualc]
+TITLE   :BUG: IWindows::Next and IDocuments::Next Leak Memory
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAutomation kbide kbVC kbVC500bug kbVC600bug kbDSupport kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call the IWindows::Next or IDocuments::Next method to automate the
+Visual C++ Integrated Development Environment (IDE), you may see a memory leak.
+This leak is approximately 4 bytes for each time the IWindows::Next or
+IDocuments::Next method is called.
+
+CAUSE
+=====
+
+This problem is caused by a bug in the automation layer code for the Visual C++
+IDE.
+
+RESOLUTION
+==========
+
+After prolonged use, the IDE may need to be closed and restarted because the
+leak may cause the system to become low on resources. If you restart the IDE,
+memory that was leaked is freed and the system regains the resources that were
+consumed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+To reproduce this leak, compile the ReplAll Visual C++ add-in sample and run the
+sample in the Visual C++ IDE. You can find the ReplAll sample in the MSDN index
+by searching on ReplAll.
+
+The leak is noticeable by using a memory monitoring tool such as Task Manager in
+Microsoft Windows NT. View the memory usage for the Msdev.exe file.
+
+Additional query words: reply all replyall msdev
+
+======================================================================
+Keywords          : kbAutomation kbide kbVC kbVC500bug kbVC600bug kbDSupport kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

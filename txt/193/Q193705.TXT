@@ -1,0 +1,64 @@
+DOCUMENT:Q193705  27-JUL-2001  [win95x]
+TITLE   :Cannot Use 11 or More Musical Instrument Device Interface Ports
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you configure your Windows 95-based computer to use more than ten Musical
+Instrument Device Interface (MIDI) ports, your computer may stop responding
+(hang), or you may receive the following error message:
+
+   Msgsrv32.exe This program has performed an illegal operation and will be shut
+   down.
+
+If you then click Details, you may receive the following error message:
+
+   MSGSRV32 caused invalid page fault in module KERNEL32.DLL
+
+CAUSE
+=====
+
+This issue occurs because Windows 95 does not support using more than 10 MIDI
+ports.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure your computer to use 10 MIDI ports or less. For
+information about how to do so, view the documentation included with your MIDI
+device.
+
+Note that you can use more than 10 MIDI ports in Microsoft Windows 98.
+
+======================================================================
+Keywords          : kbenv kberrmsg kbhw win95 kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

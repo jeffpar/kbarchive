@@ -1,0 +1,71 @@
+DOCUMENT:Q172473  17-DEC-2000  [win95x]
+TITLE   :Disk Defragmenter or ScanDisk Loops Continuously
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run ScanDisk or Disk Defragmenter, the operation may restart when only
+a small percentage of the operation is finished and then continue to restart
+repeatedly, or the operation may take a very long time.
+
+CAUSE
+=====
+
+This behavior can occur if Hewlett-Packard ScanJet Button Manager is running in
+the background.
+
+
+RESOLUTION
+==========
+
+To work around this issue, quit ScanJet Button Manager before you run ScanDisk
+or Disk Defragmenter. To quit ScanJet Button Manager, press CTRL+ALT+DELETE to
+open the Close Program dialog box, click Hpsjbmgr in the list of running
+programs, and then click End Task.
+
+
+MORE INFORMATION
+================
+
+Disabling ScanJet Button Manager does not disable scanning, but it does disable
+one-touch scanning. For more information about ScanJet Button Manager, please
+contact Hewlett-Packard.
+
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: slow hang finish
+
+======================================================================
+Keywords          : kb3rdparty kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

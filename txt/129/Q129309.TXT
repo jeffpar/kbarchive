@@ -1,0 +1,69 @@
+DOCUMENT:Q129309  12-FEB-2000  [foxpro]
+TITLE   :PRB: Can't Paste OLE Control into an OLE Control on a Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot place an OLE object that has been copied to the clipboard into an OLE
+control on a form by choosing Paste from the Edit menu or by choosing Paste
+Special from the Edit menu.
+
+STATUS
+======
+
+This behavior is by design. Pasting an OLE object creates a new object, and this
+can only be done on a surface that allows new objects to be created. An OLE
+control in a form is not such a surface.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form and add an OLE control (either a container control or a
+   bound control).
+
+2. In the Windows File Manager, select and double-click CARS.BMP in the Windows
+   subdirectory. This should launch Paintbrush, which will open CARS.BMP.
+
+3. In Paintbrush, use the scissors tool to draw a rectangle around the image.
+   Then choose Copy from the Edit menu.
+
+4. Switch back to Visual FoxPro, and select the OLE control.
+
+5. Note that both Paste and Paste Special on the Edit menu are greyed out.
+
+Additional query words: VFoxWin gray grayed unavailable 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

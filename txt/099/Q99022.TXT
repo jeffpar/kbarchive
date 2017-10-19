@@ -1,0 +1,150 @@
+DOCUMENT:Q99022  19-FEB-2002  [visualc]
+TITLE   :INFO: Foundation Class Debug Library Detects Memory Leaks
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbDebug kbMFC kbVC100 kbVC150 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, version 1.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Version 2.0 of the Microsoft Foundation Classes debugging libraries provide
+automatic memory leak detection, a new feature that version 1.0 did not
+provide.
+
+In an application developed with a Microsoft Foundation Classes version 1.0
+library, the application object code typically calls the Checkpoint() function
+in CMemoryState objects in its InitInstance() and ExitInstance() functions. Then
+the application calls the CMemoryState::Difference() function to verify that no
+memory leaked during execution. This process is not necessary when the
+application uses library version 2.0.
+
+The Microsoft Foundation Classes version 2.0 debugging libraries automatically
+perform memory leak detection. The detection code is in AFXMEM.CPP, which is
+installed in the C:\MSVC\MFC\SRC directory by default. This code detects the
+case in which an application dynamically allocates an object and fails to delete
+the object before the program terminates. The library sends a TRACE() message to
+the debug window stating that memory has leaked. To see these messages, TRACE()
+output must be enabled. Please refer to MFC Tech Note #7 for more information
+about enabling TRACE() output.
+
+In version 2.0, placing a CMemoryState::Checkpoint() call in InitInstance() and
+ExitInstance(), as demonstrated in the code example below, does not function
+correctly. The code example below produces the following output:
+
+   Memory leaked
+   0 bytes in 0 Free Blocks
+   0 bytes in 0 Object Blocks
+   -56 bytes in -4 Non-Object Blocks
+
+The negative numbers indicate that memory is allocated before the Checkpoint()
+call in InitInstance() and freed before the Checkpoint() call in
+ExitInstance().
+
+The output shown above is for an application built using the medium memory model.
+An application built using the large memory model will double the byte count
+shown in the last line of output like so:
+
+   -112 bytes in -4 Non-Object blocks
+
+In the Microsoft Foundation Classes Library source code file WINHAND.CPP, line 75
+calls InitHashTable(). The code is as follows:
+
+      m_temporaryMap.InitHashTable(7); // small table for temporary map
+
+The code calls this function for each CHandleMap object: _afxMapHDC,
+_afxMapHGDIOBJ, _afxMapHMENU, and _afxMapHWND. These hash tables contain the
+permanent and temporary maps for window handles and their associated C++
+objects.
+
+The initial temporary maps that this function creates are destroyed in the
+CWinApp::OnIdle() function. In order for manual memory leak detection to work
+correctly, these temporary maps may be removed before your first memory
+checkpoint is initialized by calling DeleteTempMap() for each of the CHandleMap
+objects. In the code example below, removing the comment indication from the
+specified lines of code deletes the temporary maps and enables the manual memory
+leak detection code to work correctly.
+
+As mentioned above, the Microsoft Foundation Classes debugging libraries for
+version 2.0 automatically detect memory leaks and the leak detection code shown
+below is not necessary.
+
+MORE INFORMATION
+================
+
+The problem described in this article does not occur in the 32-bit versions of
+MFC included with Microsoft Visual C++ 2.0 or later.
+
+Sample Code
+-----------
+
+   /*
+    * Compile options needed: None
+    */ 
+
+   static CMemoryState oldstate, newstate, diffstate;
+
+   BOOL CTheApp::InitInstance()
+   {
+      // Remove the comment indication from the following 4 lines to
+      // delete the temporary maps and allow the code to detect true
+      // memory leaks.
+      // CGdiObject::DeleteTempMap();
+      // CDC::DeleteTempMap();
+      // CMenu::DeleteTempMap();
+      // CWnd::DeleteTempMap();
+
+      oldstate.Checkpoint();
+
+      m_pMainWnd = new CMainWindow();
+      m_pMainWnd->ShowWindow( m_nCmdShow );
+      m_pMainWnd->UpdateWindow();
+
+      return TRUE;
+   }
+
+   int CTheApp::ExitInstance()
+   {
+      newstate.Checkpoint();
+      if (diffstate.Difference(oldstate, newstate))
+         {
+         TRACE("Memory leaked\n");
+         diffstate.DumpStatistics();
+         }
+      return 0;
+   }
+
+Additional query words: kbinf 1.00 1.50 1.51 1.52 2.00 2.50 2.51 2.52
+
+======================================================================
+Keywords          : kbDebug kbMFC kbVC100 kbVC150 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

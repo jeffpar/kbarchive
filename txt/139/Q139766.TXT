@@ -1,0 +1,59 @@
+DOCUMENT:Q139766  08-NOV-2001  [homemm]
+TITLE   :Julia Child: Windows Minimize All Option Not Available
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Julia Child, the Microsoft Windows 95/98 "Minimize All Windows"
+option is not available from the taskbar.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Julia Child: Home
+Cooking With Master Chefs version 1.0 for Windows.
+
+WORKAROUND
+==========
+
+To minimize Julia Child, click the minimize button in the program.
+
+MORE INFORMATION
+================
+
+In Windows, the Minimize All Windows command can be accessed by clicking the
+taskbar with the right mouse button
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles kbmm task bar minimal shrink
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbJuliaChild
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

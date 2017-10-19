@@ -1,0 +1,69 @@
+DOCUMENT:Q248338  09-NOV-2001  [homegame]
+TITLE   :Fighter Ace II: Problems If You Press ALT+TAB When You Play Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Fighter Ace II, you may experience one of the following
+symptoms if you press ALT+TAB to task switch to a different program or if a
+window from another program pops up on the screen:
+
+ - Fighter Ace II may stop responding or quit.
+
+ - Fighter Ace II may no longer be displayed correctly.
+
+ - You may receive an error message.
+
+CAUSE
+=====
+
+This behavior can occur because Fighter Ace II does not support task switching
+to a different program while it is running.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, quit all running programs before you start
+Fighter Ace II and do not attempt to task switch to a different program when you
+play Fighter Ace II.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 2.00 msgame fa msngz igz hang lock freeze crash
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

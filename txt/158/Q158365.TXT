@@ -1,0 +1,66 @@
+DOCUMENT:Q158365  07-MAY-2002  [homegame]
+TITLE   :Scenery Compatibility with Flight Simulator for Windows 95
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+6.0
+WINDOWS
+kbusage kbhowto kb3rdparty kbfaq kbfasttip
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Third-party scenery packages that are compatible with Flight Simulator 5.0,
+5.0a, and 5.1 are compatible with Flight Simulator for Windows 95. This includes
+the BAO scenery package, Las Vegas.
+
+MORE INFORMATION
+================
+
+User-created scenery created for the earlier versions of Flight Simulator should
+also be compatible. Some problems have been reported in some scenery packages
+when Dynamic scenery is turned on. Turning off Dynamic Scenery should solve the
+problem.
+
+The Microsoft Scenery packages New York and Paris, and the BAO package Las Vegas,
+have been included in the default scenery of Flight Simulator for Windows 95.
+There is no need to run a special Setup for them. The palette issue that allowed
+for compatibility with the Haze feature of Flight Simulator 5.1, has been
+corrected in Flight Simulator 95.
+
+Some Flight Simulator 4.0 scenery may work. This is dependent on the individual
+scenery. There is no workaround to any Flight Simulator 4.0 scenery that does
+not work.
+
+Additional query words: 1.0 flightsim fltsim mac m_fltsim scenery bao scenes 3rd party old previous newer releases versions editions former compatible work use fs95 fs6
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

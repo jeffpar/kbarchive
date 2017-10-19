@@ -1,0 +1,91 @@
+DOCUMENT:Q152033  16-APR-2000  [powerpt]
+TITLE   :PPT: How to Rotate Clip Images
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:4.0; WINDOWS:4.0,7.0
+OPER/SYS:
+KEYWORDS:kbgraphic
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft PowerPoint for Macintosh, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft PowerPoint has the ability to freely rotate native objects. Native
+objects are objects created with PowerPoint text and drawing tools. Some
+imported objects can be converted to PowerPoint objects and then rotated. This
+article describes how to rotate an object from Clip Gallery.
+
+MORE INFORMATION
+================
+
+To rotate a clip art object, first ungroup and then regroup the object.
+
+Import a Clip Art Object into PowerPoint
+----------------------------------------
+
+1. On the Insert menu, point to Picture, and then click Clip Art.
+
+2. Select a thumbnail, and then click Insert.
+
+Rotate the Clip Art
+-------------------
+
+1. Click the clip object to select it. When the object is selected, eight
+   handles should surround the object.
+
+2. On the Draw menu, click Ungroup. You may see a message similar to the
+   following:
+
+   This is an imported object, not a group. Converting it to PowerPoint objects
+   will permanently discard any embedded data or linking information it may
+   contain. Convert to PowerPoint objects?
+
+   Click OK to convert the object. This step breaks the object into several
+   PowerPoint objects.
+
+3. With all objects selected, click Group on the Draw menu. This makes the clip
+   image one object, rather then many small pieces.
+
+4. On the Drawing toolbar, click the Free Rotate Tool.
+
+5. Rotate the clip image by clicking one of the corner handles and turning the
+   object around by the handle.
+
+Ungrouping an object severs the link between that Object Linking and Embedding
+(OLE) server (the application used to create the object) and PowerPoint. You can
+no longer edit that object within the server application.
+
+NOTE: You may be able to restore the object using the Undo command.
+
+Additional query words: 95 ppt97 can't cant flip turn spin clipart clip art
+
+======================================================================
+Keywords          : kbgraphic 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt700Search kbPowerPt400 kbPowerPt400Mac
+Version           : MACINTOSH:4.0; WINDOWS:4.0,7.0
+Hardware          : MAC x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

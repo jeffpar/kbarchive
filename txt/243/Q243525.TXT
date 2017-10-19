@@ -1,0 +1,58 @@
+DOCUMENT:Q243525  22-JUN-2001  [exchange]
+TITLE   :XCLN: Inbox Assistant Rule on Custom Field Does Not Start
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An Inbox Assistant rule that is based on a custom field of one-off form does not
+work.
+
+WORKAROUND
+==========
+
+To work around this problem, publish the form to the Organization Forms Library.
+
+MORE INFORMATION
+================
+
+This behavior is by design. Inbox Assistant rules do not work for custom
+properties on one-off forms.
+
+
+Additional query words: trigger, OL97, OL98
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

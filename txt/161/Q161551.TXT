@@ -1,0 +1,69 @@
+DOCUMENT:Q161551  14-NOV-2000  [word97]
+TITLE   :WD97: AutoSummarize Doesn't Find Some Text to Summarize
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Word does not summarize all the text in your document or you receive the
+following error message:
+
+   Word cannot find any text to summarize.
+
+CAUSE
+=====
+
+The AutoSummarize feature does not summarize text if the text is:
+
+ - formatted in a language other than English.
+
+ - formatted as 'no proofing'.
+
+ - inside a text box.
+
+ - inside a frame.
+
+ - inside a table.
+
+For more information about creating summaries automatically, click the Office
+Assistant, type "AutoSummarize" (without the quotation marks), click Search, and
+then click to view "Automatically summarize a document."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words:
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

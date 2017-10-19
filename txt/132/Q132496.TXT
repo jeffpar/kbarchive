@@ -1,0 +1,69 @@
+DOCUMENT:Q132496  24-SEP-1999  [win95x]
+TITLE   :Err Msg: Invalid VxD Dynamic Link Call to Device Number 0005
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows, you may receive the following error message:
+
+   Invalid VxD dynamic link call to device number 0005, service 0001. Your
+   Windows configuration is invalid. Run the Windows Setup program again to
+   correct this problem.
+
+CAUSE
+=====
+
+This error can occur if the following line is missing from the [386Enh] section
+of the SYSTEM.INI file:
+
+       device=*vtd
+
+RESOLUTION
+==========
+
+Remove or remark out any reference to third-party virtual timer drivers in the
+SYSTEM.INI file and then add the following line to the [386Enh] section of the
+file:
+
+       device=*vtd
+
+MORE INFORMATION
+================
+
+This behavior can occur if the VTDA.386 file included with the Windows 3.11
+Refresh Files is missing or damaged.
+
+Additional query words: 3.10 3.11 vtd
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

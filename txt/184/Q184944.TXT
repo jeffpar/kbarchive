@@ -1,0 +1,80 @@
+DOCUMENT:Q184944  14-NOV-2000  [word97]
+TITLE   :WD97: Send Command Sends Attachment as Word 97 Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Send To command on the File menu, the current document is
+attached as a Word 97 document even if you saved the file in a non-Word 97
+format.
+
+NOTE: This problem occurs when you "Send to" any of the following:
+
+ - Mail Recipient
+
+ - Routing Recipient
+
+ - Public Folder
+
+ - Fax Recipient (Class 1 Fax Modems Only)
+
+CAUSE
+=====
+
+This behavior occurs when the Mail As Attachment option is selected on the
+General tab in the Options dialog box (on the Tools menu, click Options).
+
+WORKAROUND
+==========
+
+To send a file in a non-Word 97 format, save the file in that format and then
+attach the file to your mail or fax message.
+
+MORE INFORMATION
+================
+
+In Word 97, this also applies to files that are saved as previous versions of
+Word unless your default save is set to that version. For example, if you open a
+Word 6.0 document and click Send To on the File menu, the file will be sent in
+Word 97 format unless your default save option (on the Tools menu, click Options
+and click Save) is set to Word 6.0/95.
+
+NOTE: This does not apply to documents sent with the Routing feature. Routing
+always sends the documents in the Word 97 format.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

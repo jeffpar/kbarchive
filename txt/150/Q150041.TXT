@@ -1,0 +1,70 @@
+DOCUMENT:Q150041  20-FEB-2002  [iis]
+TITLE   :Environment Variables Returned by IIS via CGI
+PRODUCT :Internet Information Server
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Custom environment variables will not be returned by Internet Information Server
+(IIS) via a CGI application.
+
+MORE INFORMATION
+================
+
+The following environment variables are returned by IIS:
+
+   AUTH_TYPE
+   ComSpec
+   GATEWAY_INTERFACE
+   All HTTP_* variables
+   CONTENT_LENGTH
+   CONTENT_TYPE
+   PATH
+   PATH_INFO
+   PATH_TRANSLATED
+   QUERY_STRING
+   REMOTE_ADDR
+   REMOTE_HOST
+   REMOTE_USER
+   REQUEST_METHOD
+   SCRIPT_NAME
+   SERVER_NAME
+   SERVER_PROTOCOL
+   SERVER_PORT
+   SERVER_SOFTWARE
+   SystemRoot
+   windir
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

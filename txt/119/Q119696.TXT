@@ -1,0 +1,66 @@
+DOCUMENT:Q119696  09-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Please Update Your Version of Foldcomp
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the FOLDCOMP -S command to run the folder compression utility to
+compress and reset folder semaphore locks, the following error message may be
+displayed:
+
+   Checking file: .\000011a8.fld
+   Please update your version of Foldcomp.
+
+CAUSE
+=====
+
+This error is caused by a corrupted folder file (<xxxxxxxx>.FLD, where
+<xxxxxxxx> is an eight-digit number). The folder displayed on the line
+preceding the error is corrupted.
+
+RESOLUTION
+==========
+
+If you rename the corrupted folder, the FOLDCOMP -S process will complete
+successfully. Try restoring the <xxxxxxxx>.FLD file from a backup copy. If
+a backup is not available, create a new folder. This new folder will be 129
+bytes in size. Copy the new <xxxxxxxx>.FLD file to the
+<xxxxxxxx>.FLD file that is corrupted.
+
+For example, if the corrupted folder file is 000011A8.FLD and the new folder
+created is 00000011.FLD, copy 00000011.FLD to 000011A8.FLD. You can now delete
+the corrupted folder, as well as the new folder.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

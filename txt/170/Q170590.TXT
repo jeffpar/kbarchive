@@ -1,0 +1,92 @@
+DOCUMENT:Q170590  23-JUL-2002  [winnt]
+TITLE   :RIP Announcements Are Not Sent After Installing MPR
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Multiple Protocol Router (MPR) in Windows NT Server 3.51 or
+4.0, routing information protocol (RIP) announcements are not sent.
+
+CAUSE
+=====
+
+This problem occurs when you have a multihomed computer using a multiple-
+interface network adapter, and SilentRIP is set to 1 in the registry.
+Multiple-interface adapters have multiple network interfaces on one card.
+
+RESOLUTION
+==========
+
+To enable RIP on the network adapter, the SilentRIP registry key must be
+disabled.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To enable RIP broadcasts, the SilentRIP registry entry must be set to zero. To do
+this, perform the following steps:
+
+1. Run Registry Editor (Regedt32.exe).
+
+2. Go to the following key in the registry:
+
+      HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ 
+      IpRip\Parameters
+
+3. On the Edit menu, click Add Value and use the following entry:
+
+      Value Name: SilentRIP
+      Data Type:  REG_DWORD
+      Value:      0
+
+   NOTE: Setting this to 1 lets the server accept but not send RIP packets.
+   Setting this to 0 causes the server to also send RIP packets.
+
+MORE INFORMATION
+================
+
+RIP for Internet Protocol (IP RIP) can be installed on Windows NT Server with
+one network adapter. When IP RIP is installed on a computer with only one
+network adapter, IP RIP is configured to run in Silent Mode. In Silent Mode, IP
+RIP will receive RIP routing announcements and update its routing table, but it
+will not send any routing announcements.
+
+Windows NT Server recognizes the multi-interface adapter as one network adapter
+and enables SilentRIP.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

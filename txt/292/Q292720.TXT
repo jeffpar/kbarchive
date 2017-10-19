@@ -1,0 +1,82 @@
+DOCUMENT:Q292720  14-MAR-2001  [mspress]
+TITLE   :Inside Windows NT Second Edition Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Inside Windows NT Second Edition ISBN 1-57231-677-2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Inside Windows NT Second Edition, ISBN
+1-57231-677-2.
+
+The following topics are covered:
+
+ - Page xxiii: URL Is Incorrect
+
+ - Page 17: URL Is Incorrect
+
+MORE INFORMATION
+================
+
+Page xxiii: URL Is Incorrect
+----------------------------
+
+On page xxiii, in the last line, the URL is incorrect.
+
+Change:
+http://mspress.microsoft.com/support/support.htm
+
+To:
+http://mspress.microsoft.com/support/
+
+
+Page 17: URL Is Incorrect
+-------------------------
+
+On page 17, in the last paragraph the URL is incorrect.
+
+Change:
+www.ntinternals.com
+
+To:
+www.sysinternals.com
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ITBook 1-57231-677-2 Solomon
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

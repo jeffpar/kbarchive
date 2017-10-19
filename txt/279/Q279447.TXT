@@ -1,0 +1,66 @@
+DOCUMENT:Q279447  12-NOV-2001  [msnetwork]
+TITLE   :How to change MSN Companion e-mail address or member ID
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is not possible to change an e-mail address or member ID. It is only possible
+to cancel and account and open a new account.
+
+MORE INFORMATION
+================
+
+This is not recommended for MSN Companion customers. You will need to cancel
+your MSN account and create an entirely new MSN account. This will also change
+their e-mail, and an entirely new e-mail mailbox. None of your existing e-mail
+will be moved to the new mailbox and no mail forwarding is available.
+
+You could, however, access your old e-mail using www.hotmail.com or by using the
+new MSN Explorer on a personal computer connected to the Internet.
+
+To cancel your existing account and open a new account call Customer Service at
+(888) 765-2411.
+
+Once this is done, reset the MSN Companion using the "MURMUR" code. See Q279037 -
+MSN Companion Troubleshooting Tool MURMUR
+
+The Setup screens will typically automatically detect your new information. If
+they do not, you will be given an opportunity to type in your new member id and
+password.
+
+You should be all set up with your new member id.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,52 @@
+DOCUMENT:Q100313  30-JUL-2001  [lanman]
+TITLE   :Windows for Workgroups "V86ModeLanas" and TCP/IP
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Microsoft TCP/IP for Windows for Workgroups setup makes several modifications to
+the WFWG SYSTEM.INI file. Although the WFWG resource kit specifies that
+SYSTEM.INI should contain the line V86ModeLanas=1, this line is NOT necessary,
+and is not added by TCP/IP setup.
+
+MORE INFORMATION
+================
+
+When VNetBIOS comes up, it probes for NetBIOS drivers on LANAs 0 through 7. The
+default is to use all drivers found, so the V86ModeLana parameter limits the
+drivers probed because some old transports answer on all LANAs even though there
+is really only one driver on one card.
+
+Because the Microsoft TCP/IP stack correctly uses the LANA number in the NCB, you
+should NOT set the V86ModeLana parameter.
+
+REFERENCES
+==========
+
+Microsoft Windows for Workgroups Resource Kit.
+
+Additional query words: 2.20 2.2 3.10 3.1 resource WFW tcpip ntdocerr doc
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,79 @@
+DOCUMENT:Q94983  31-DEC-1999  [win95x]
+TITLE   :Microsoft Systems Journal: March 1993
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10
+WINDOWS
+kbfile
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Note: "Microsoft Systems Journal" does not make any representation or warranty,
+express or implied, with respect to any code or other information herein.
+"Microsoft Systems Journal" disclaims any liability whatsoever for any use of
+such code or other information.
+
+The following is a list of the filenames and S numbers for the source code from
+the March 1993 issue of the "Microsoft Systems Journal" (Vol. 8, No. 3):
+
+ - S13983 DIAG.ZIP
+
+   "MFC Diagnostic Facilities Part II: More-Sophisticated Debugging Techniques"
+   by Brian Meyers, page 55.
+
+   This issue, Brian Meyers explains advanced debugging techniques for the
+   Microsoft Foundation Classes, demonstrating memory leak detection, hooking
+   memory allocations, run-time type checking, dynamic type checking, and object
+   validity testing.
+
+   This file can be found in the Software/Data Library by searching on the word
+   DIAG, the Q number of this article, or S13983. DIAG.ZIP was archived using
+   the PKware file-compression utility.
+
+ - S13982 MEMMAN.ZIP
+
+   "An Introduction to WIn32 Heap and Virtual Memory Management Routines" by
+   Jeffrey Richter, page 15.
+
+   Jeffrey Richter explains the various heap and virtual memory management
+   techniques available to Win32-based applications. He illustrates these
+   techniques with sample programs that work with virtual address spaces and
+   report statistics on virtual memory.
+
+   This file can be found in the Software/Data Library by searching on the word
+   MEMMAN, the Q number of this article, or S13982. MEMMAN.ZIP was archived
+   using the PKware file-compression utility.
+
+Additional query words: msj v8-3 march 1993 issue vol8-3
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

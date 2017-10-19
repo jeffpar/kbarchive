@@ -1,0 +1,67 @@
+DOCUMENT:Q87536  11-JUN-1999  [win16sdk]
+TITLE   :PRB: Crash Double-Clicking File in Open or Save Common Dialog
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbCmnDlg kbCmnDlgFileO kbCmnDlgSave kbSDKPlatform
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an application developed for the Microsoft Windows environment with the Open
+or Save common dialog box, when the user double-clicks a filename in the dialog
+box, the application crashes. However, when the user selects a filename and
+chooses the OK button, the operation succeeds.
+
+CAUSE
+=====
+
+Because the amount of space reserved for the application's stack is
+insufficient, the application overwrites part of its data segment when calling
+GetOpenFileName() or GetSaveFileName().
+
+RESOLUTION
+==========
+
+Modify the application's module definition (.DEF) file to specify at least 8192
+bytes for the stack.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbCmnDlg kbCmnDlgFileO kbCmnDlgSave kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

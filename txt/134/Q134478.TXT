@@ -1,0 +1,66 @@
+DOCUMENT:Q134478  17-DEC-2000  [win95x]
+TITLE   :Incorrect "Invalid Path" Error Message Returned by XCOPY
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the XCOPY command to copy a file to or from a floppy disk, you may
+receive the following error message:
+
+   Invalid path
+
+CAUSE
+=====
+
+The XCOPY command treats any error it encounters when it tries to validate the
+source or destination drive as an Invalid Path error.
+
+RESOLUTION
+==========
+
+Be aware when you use the XCOPY command that the Invalid Path error message can
+indicate problems other than an invalid path.
+
+MORE INFORMATION
+================
+
+The Invalid Path error may also be caused by any of the following conditions:
+
+ - The floppy disk drive does not contain a disk.
+
+ - The floppy disk drive door is open.
+
+ - The floppy disk is not properly formatted.
+
+ - The floppy disk is damaged
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

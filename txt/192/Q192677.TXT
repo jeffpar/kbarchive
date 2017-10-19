@@ -1,0 +1,65 @@
+DOCUMENT:Q192677  22-JUN-2001  [exchange]
+TITLE   :XWEB: Name, Company, Business Phone, & E-mail Fields are Empty
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Outlook HTML Form Converter 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+You may receive the following warning message when trying to save a custom HTML
+contact from within the Outlook Web Access Client:
+
+   The name, company, business phone, and e-mail fields are empty. You will have
+   to use the next/previous button to open this item.
+
+This behavior will occur only if the following conditions are met:
+
+ - The custom HTML contact form does not contain a General Page.
+
+- and -
+
+ - Only one of the following fields were completed before trying to save the
+   contact:
+
+   First Name, Company or Business Phone
+
+WORKAROUND
+==========
+
+Simply complete more than one of the required fields before saving the contact.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbAudDeveloper kbOWASearch kbOutlookHTMLConv kbOWA550SP1
+Version           : WINDOWS:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

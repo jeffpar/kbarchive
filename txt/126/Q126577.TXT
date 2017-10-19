@@ -1,0 +1,72 @@
+DOCUMENT:Q126577  31-JUL-2001  [sms]
+TITLE   :SMS Modifies Application INI Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbinterop kbDatabase smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you specify the location of the WORKGROUP-DOT-PATH during a workstation
+installation of Word for Windows version 6.0 on a Windows for Workgroups version
+3.11 system, Systems Management Server overwrites the user-modified entries in
+the WINWORD6.INI file.
+
+For example, after you install Word for Windows, your WINWORD6.INI file
+contains:
+
+   [Microsoft Word]
+   USER-DOT-PATH=C:\WINWORD\TEMPLATE
+   WORKGROUP-DOT-PATH=<net drive>:\TEMPLATE
+
+where <net drive> is the network drive letter of the shared application.
+
+You modify the WINWORD6.INI file to read:
+
+   [Microsoft Word]
+   USER-DOT-PATH=C:\WINWORD\TEMPLATE
+   WORKGROUP-DOT-PATH=C:\WINWORD\TEMPLATE
+
+After you install SMS, the WINWORD6.INI file contains:
+
+   [Microsoft Word]
+   USER-DOT-PATH=C:\WINWORD\TEMPLATE
+   WORKGROUP-DOT-PATH=<net drive>:\TEMPLATE
+
+where <net drive> is the network drive letter of the shared application.
+
+WORKAROUND
+==========
+
+
+Additional query words: sms prodsms winword word6
+
+======================================================================
+Keywords          : kbinterop kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

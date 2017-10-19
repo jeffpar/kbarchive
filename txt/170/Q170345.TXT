@@ -1,0 +1,63 @@
+DOCUMENT:Q170345  25-AUG-1999  [odbc]
+TITLE   :Open Database Connectivity (ODBC) 3.0 Service Pack 1 Fixlist
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+The following is a list of fixes and other various improvements that have
+been made in Microsoft ODBC version 3.0 Service Pack 1, now available from
+your primary support provider. For additional information, please see the
+following article(s) in the Microsoft Knowledge Base:
+
+   Q168612 How to Obtain ODBC 3.0 Service Pack 1
+
+Please note that the workarounds described in these articles have been
+provided for your information only. It is not necessary to implement these
+workarounds if you have the updated software.
+
+LIST OF PROBLEMS CORRECTED IN SERVICE PACK 1
+--------------------------------------------
+
+   Q168250 FIX: IIS Performance Degrades with a Bad Connection
+
+   Q168251 FIX: Odbccp32.lib Requires Msvcrt.lib to Compiler
+
+   Q169218 FIX: "Invalid Argument Value" Error with SQLSetConnectOption
+
+   Q170223 FIX: Creating a New File DSN Causes a Refresh Problem on Desktop
+
+   Q171870 FIX: SQL_CUR_USE_IF_NEEDED Does Not Work with 2.0 Drivers
+
+   Q171878 FIX: Cursor Library Memory Leak in Multithreaded Environment
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

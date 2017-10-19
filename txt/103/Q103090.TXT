@@ -1,0 +1,104 @@
+DOCUMENT:Q103090  23-OCT-1999  [foxmisc]
+TITLE   :ERR: "File Does Not Exist" or "Syntax Error" on READ Command
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error message "File Does Not Exist" occurs on the READ command in a program
+after a VALID function is executed. This error may also occur in a format file
+after a VALID function is executed. In releases of FoxBASE+/Mac before June
+1992, the error that results may be
+
+   Syntax Error
+
+instead of
+
+   File Does Not Exist.
+
+CAUSE
+=====
+
+When a user-defined function (UDF) is called from the VALID clause of a GET, the
+UDF must return a value; otherwise, the error
+
+   File Does Not Exist
+
+or
+
+   Syntax Error
+
+will occur.
+
+RESOLUTION
+==========
+
+To eliminate the error in the sample below, change the last line of MYVAL.PRG
+from "RETURN" (without the quotation marks) to "RETURN .T." (without the
+quotation marks).
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a program called VALTEST.PRG as follows:
+
+         USE :foxbase:tutorial:faculty.dbf
+
+         CLEAR
+         @ PIXELS 15,13 GET faculty->last VALID myval() SIZE 15,72
+         @ PIXELS 36,13 GET faculty->first SIZE 15,72
+         READ
+
+2. Create another program called MYVAL.PRG as follows:
+
+         WAIT "In faculty->last VALID function..press any key to continue"
+         RETURN
+
+3. In the Command window, type "do valtest" (without the quotation marks).
+
+4. When the GET fields appear, press the TAB key to move to the second field and
+   execute the VALID function. A WAIT message will appear; press any key to
+   continue, as directed.
+
+The
+
+   File Does Not Exist
+
+error will then occur and the highlighted line in the program is the READ
+command.
+
+Additional query words: format .fmt syntax
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q151744  08-AUG-2001  [winnt]
+TITLE   :Network Client 3.0 with IPX Needs Direct Hosting on Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Network Client 3.0 computer cannot communicate with a Windows NT server using
+NWLink as the only protocol. A trace shows that the server does not respond to
+any client requests.
+
+CAUSE
+=====
+
+Assuming that IPX/SPX has been loaded on the server, the problem may be related
+to direct hosting. To communicate with a Windows NT Server by means of NWLink
+(IPX), the Network Client 3.0 needs direct hosting enabled on the server. This
+is normally enabled by default, but can be disabled.
+
+RESOLUTION
+==========
+
+Enable direct hosting at the server.
+
+1. In Control Panel, double-click the Network icon, and click Bindings.
+
+2. Select the Server.
+
+3. Either:
+
+   a. If the line "Server->Nwlink Ipx/Spx Compatible" (without quotes) is
+      there but disabled, select the line and click Enable. Click OK and quit
+      Network Settings.
+
+   b. If the line is not there, remove and reinstall the IPX/SPX compatible
+      transport. This will enable direct hosting by default.
+
+Alternatively, remove NWLink on the client and use another protocol.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

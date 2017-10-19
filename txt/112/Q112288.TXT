@@ -1,0 +1,68 @@
+DOCUMENT:Q112288  18-NOV-1999  [pcmail]
+TITLE   :PC Win: Duplicate Menu Options
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create custom menus, you may get a duplicated entry in the menu
+listing, as well as a missing entry.
+
+The MSMAIL.INI and SHARED.INI files require the following syntax:
+
+   Tag=Mail version;[Menu Name]; [Command Name];...
+
+If, when defining a menu, you use the same Tag, it will be repeated in the menu
+listing.
+
+MORE INFORMATION
+================
+
+A example of duplicate entries is:
+
+   [Custom commands]
+   MyCommand=3.0;File;&Run Notepad;0;appexec.dll;notepad; ...
+   MyCommand=3.0;File;&Run Calculator;0;appexec.dll;calc; ...
+
+This will place Run Notepad under the File menu twice because the tag is not
+unique.
+
+An example of correct entries is:
+
+   [Custom commands]
+   MyCommand1=3.0;File;&Run Notepad;0;appexec.dll;notepad; ...
+   MyCommand2=3.0;File;&Run Calculator;0;appexec.dll;calc; ...
+
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

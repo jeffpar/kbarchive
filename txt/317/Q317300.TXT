@@ -1,0 +1,84 @@
+DOCUMENT:Q317300  06-AUG-2002  [sms]
+TITLE   :SMS: "Couldn't Get Defined Architecture" Responses
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Database maintenance of aged discovery data occurs by default for discovery data
+that is more than 90 days old. You can review the Smsdbmon.log file to determine
+how many records are deleted, as described in the following Microsoft Knowledge
+Base article:
+
+   Q263913 SMS: Delete Aged Discovery Task Always Reports Zero Items Deleted
+
+If you review the Smsdbmon.log file, you may see architectures other than System
+that report:
+
+   CTriggerManager::ExecuteTask - beginning Delete Aged Discovery Data process.
+   CTriggerManager::ExecuteTask - deleting discovery items that haven't been
+   discovered in 90 days
+   CMachine::DeleteMachine - couldn't get defined architecture
+   DeleteDiscoveryItems deleted 0 rows of architecture User Group
+   DeleteLostMachines deleted 0 inventory items
+
+Note that this entry is not an error. This entry may occur for other discovery
+architectures such as User or IP_Network.
+
+MORE INFORMATION
+================
+
+This entry is the result of queries that are run during the database maintenance
+tasks. The first query that is run is:
+
+   "select * from DiscoveryArchitectures"
+
+Multiple queries are then run against the results from the first query. One query
+is run for each DiscArchName entry that results from the DiscoveryArchitectures
+query. The query format is
+
+   "Select ArchitectureName,ArchitectureKey,Mode from ArchitectureMap where
+   ArchitectureName = "<DiscArchName>"
+
+where <DiscArchName> is one of the values that is returned from the
+DISCARCHNAME field that resulted from the first query.
+
+Except for the System architecture, all of the queries result in no records
+(because the respective architecture in the ArchitectureMap table is not
+present). These architectures are processed one by one; if there is no response,
+"CMachine::DeleteMachine - couldn't get defined architecture" is logged.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,80 @@
+DOCUMENT:Q141630  10-FEB-2000  [foxpro]
+TITLE   :PRB: Visual Foxpro Must Quit After Error When Set PageCount
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting the PageCount property of a pageframe generates this error:
+
+   This program has performed an illegal operation and will be shut down.
+   If the problem persists, contact the program vendor.
+
+If you click Details, the following error appearss:
+
+   Visual FoxPro caused an invalid page fault in module ...
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new form in the Form Designer.
+
+2. Add a pageframe to the form, and set its PageCount property to 0.
+
+3. Run the form.
+
+4. In the Command window, type these commands:
+
+      _SCREEN.FORMS(1).PAGEFRAME1.ADDOBJECT("Page1","Page")
+      _SCREEN.FORMS(1).PAGEFRAME1.ADDOBJECT("Page2","Page")
+      _SCREEN.FORMS(1).PAGEFRAME1.ADDOBJECT("Page3","Page")
+      _SCREEN.FORMS(1).PAGEFRAME1.REMOVEOBJECT("Page1","Page")
+      _SCREEN.FORMS(1).PAGEFRAME1.REMOVEOBJECT("Page2","Page")
+      _SCREEN.FORMS(1).PAGEFRAME1.ADDOBJECT("Page1","Page")
+      _SCREEN.FORMS(1).PAGEFRAME1.ADDOBJECT("Page2","Page")
+      _SCREEN.FORMS(1).PAGEFRAME1.PAGECOUNT=0
+      _SCREEN.FORMS(1).PAGEFRAME1.PAGECOUNT=0
+
+   The error message is generated and Visual FoxPro must be shut down.
+
+Additional query words: VFoxWin Closed Terminated
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

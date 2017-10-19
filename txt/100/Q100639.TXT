@@ -1,0 +1,75 @@
+DOCUMENT:Q100639  07-MAY-2001  [visualc]
+TITLE   :INFO: Unicode Support in the Microsoft Foundation Class Library
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,4.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbMFC kbVC kbVC200 kbVC400 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Unicode support is not available in MFC version 2.0.
+
+Unicode support is enabled in MFC versions 3.0 and later, if you link with the
+right libraries.
+
+ - If you're writing an AFXDLL application or DLL, link with MFCx0U.LIB or
+   MFCx0UD.LIB (where "x" represents the major MFC version, currently either 3
+   or 4).
+
+ - If you're writing an application, link with UAFXCWD.LIB or UAFXCW.LIB.
+
+ - If you're writing a USRDLL with MFC 3.0, link with UAFXDWD.LIB or UAFXDW.LIB.
+
+MORE INFORMATION
+================
+
+Because WinMain() comes from MFC in an MFC application, you should make sure
+that you have the right MFC libraries, or you will get an unresolved external on
+WinMain@16. An unresolved external on _WinMain@16 will also occur if you fail to
+add wWinMainCRTStartup into the EntryPointSymbol section of the link output
+category after adding _UNICODE to the preprocessor symbols. For more
+information, refer to the "Unicode Programming Summary" article in the
+"Developing for International Markets" chapter of the "Programming Techniques"
+in the Visual C++ Books Online.
+
+In MFC 4.0, _USRDLL is obsolete. A new DLL model is now available, simply called
+"Regular DLLs." Regular DLLs statically linked to MFC have the same
+characteristics as the former USRDLL. For more information, see Tech Note 33,
+DLL Version of MFC, or search the Visual C++ 4.0 Books Online for "_USRDLL" and
+"Dynamic-Link Libraries."
+
+NOTE: The MFC Unicode libraries are NOT installed by default; you can rerun setup
+and select only the Unicode MFC libraries.
+
+Additional query words: 1.00 2.00 2.10 3.00 4.00
+
+======================================================================
+Keywords          : kbnokeyword kbMFC kbVC kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

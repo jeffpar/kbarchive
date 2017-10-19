@@ -1,0 +1,62 @@
+DOCUMENT:Q191557  21-MAR-1999  [homegame]
+TITLE   :Motocross Madness: How to Increase the Level of Difficulty
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to increase the level of difficulty in a
+single-player game of Microsoft Motocross Madness.
+
+MORE INFORMATION
+================
+
+To increase the level of difficulty in a single-player game of Motocross
+Madness, disable the Automatic Level Of Difficulty (ALOD) feature.
+
+The ALOD feature is designed to limit the Artificial Intelligence (AI) of
+computer-generated opponents. This feature is enabled by default when you start
+the game.
+
+To disable the ALOD feature, press CTRL+A. When you do this, a PLUS SIGN (+) is
+displayed briefly in the lower-left corner of the screen. To reenable ALOD,
+press CTRL+A again. When you do this, a MINUS SIGN (-) is displayed briefly in
+the lower-left corner of the screen.
+
+Enabling ALOD slows down computer-generated opponents when they are too far ahead
+of you. Conversely, disabling ALOD increases the skill of computer-generated
+opponents, making them more difficult for you to lap.
+
+Additional query words: 1.00 msgame mcm motorcross motorcycle kbfaq
+
+======================================================================
+Keywords          : kbui kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,85 @@
+DOCUMENT:Q49495  04-MAY-2001  [fortran]
+TITLE   :FIX: F1001: ctypes.c When FORTRAN Program Contains $NOLOOPOPT
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::5.0,5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN compiler for OS/2, versions 5.0, 5.1 
+ - Microsoft FORTRAN Compiler for MS-DOS, versions 5.0, 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to compile an application fails and the compiler generates one of the
+following messages. For FORTRAN version 5.0:
+
+   fatal error F1001: Internal Compiler Error
+   (compiler file '@(#)ctypes.c:1.11', line 1657)
+
+For FORTRAN version 5.1:
+
+   fatal error F1001: Internal Compiler Error
+   (compiler file '@(#)ctypes.c:1.12', line 1655)
+
+CAUSE
+=====
+
+The application source code contains the $NOLOOPOPT metacommand.
+
+RESOLUTION
+==========
+
+To work around this problem, perform one of the following two steps:
+
+ - Modify the source code to remove the $NOLOOPOPT metacommand.
+
+ - Specify the /Od compiler option switch to suppress the optimization.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN versions 5.0 and 5.1 for
+MS-DOS and OS/2. This problem was corrected in FORTRAN PowerStation.
+
+MORE INFORMATION
+================
+
+The following code example demonstrates this problem.
+
+Sample Code
+-----------
+
+   C Compile options needed: None
+   $NOLOOPOPT
+         END
+
+Additional query words: 5.00 5.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRAN510DOS kbFORTRAN500DOS kbFORTRAN500OS2 kbFORTRAN510OS2
+Version           : :5.0,5.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

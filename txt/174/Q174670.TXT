@@ -1,0 +1,77 @@
+DOCUMENT:Q174670  08-NOV-2001  [homegame]
+TITLE   :Close Combat: Program Hangs During Game Play
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbpatch kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for the Macintosh 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the 1.0a update patch for Close Combat 1.0, you may experience
+the following symptoms when you play the game:
+
+ - The game may stop responding after a few moments of game play.
+
+ - The screen may turn black.
+
+ - The title bar may turn yellow.
+
+CAUSE
+=====
+
+This behavior can occur if Macintosh Operating System (OS) version 7.5.5 and
+higher is installed on your Macintosh computer.
+
+Close Combat 1.0a is not fully compatible with Macintosh Operating System (OS)
+version 7.5.5 and higher.
+
+RESOLUTION
+==========
+
+To resolve this issue, uninstall Close Combat 1.0a, and then reinstall Close
+Combat 1.0.
+
+You may also be able to resolve this issue by disabling sound in the game.
+
+To disable sound in Close Combat:
+
+1. On the Options menu in Close Combat, click to clear the Sound check box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Close Combat version
+1.0a.
+
+Additional query words: 1.00 cc closecombat
+
+======================================================================
+Keywords          : kbenv kbpatch kbsetup 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbCloseCombatSearch kbCloseCombatMac
+Version           : :1.0
+Issue type        : kbbug kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q256274  10-MAR-2000  [iis]
+TITLE   :Index Server Searches Return IDQ Code Instead of Search Results
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running a search using HTM, IDQ, HTX files, the client may receive the code
+of the IDQ page in its browser instead of search results.
+
+CAUSE
+=====
+
+This behavior can occur when the folder that contains the IDQ file has not been
+set as an application, or one of its parent folders is not marked as an
+application, you may see .
+
+Also, if you do not make an HTTP connection to the HTM file when you attempt to
+do a query, the code of the IDQ page appears on the screen.
+
+RESOLUTION
+==========
+
+1. In the management console for IIS, select the folder that contains the IDQ
+   file, and then click Properties.
+
+2. On the Directory tab, select Application Settings, and then click Create.
+   This sets the folder as an application.
+
+3. Click the Configuration button. Verify that there is an entry for the IDQ
+   file in the App Mappings list, and that it is mapped to Idq.dll.
+
+4. Make sure that the connection you are testing the query over is an HTTP
+   connection. You cannot double-click the HTM file. You must make a connection
+   through the Web server using http.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,58 @@
+DOCUMENT:Q156291  21-FEB-2002  [winnt]
+TITLE   :Winnt.exe Shows Hidden Attribute in July 1996 MSDN Level 3
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:kbother kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you change to the I386 directory and try to install Windows NT Server with
+the July 1996 issue of Microsoft Developer Network (MSDN) Level 3 (BackOffice),
+an error stating that the Winnt.exe file cannot be found is generated. When you
+search the I386 directory, it shows that the file has an attribute of Hidden.
+Because the file is on the compact disc, you cannot change the attributes in
+order to use it.
+
+MORE INFORMATION
+================
+
+The installation files in the July 1996 issue of MSDN Level 3 (BackOffice) are
+hidden by design and this is not a bug. The intent of this action is to ensure
+that the installation of BackOffice products is limited to the BackOffice
+interface, and the individual products cannot be installed in any other manner.
+If you install Windows NT Server 3.51 from within the BackOffice interface, it
+works properly. If you try to install Windows NT Server 3.51 by changing to the
+I386 directory and using Winnt.exe, it fails.
+
+
+Additional query words: MSDN Level 3 July 1996 Back Office Installation Setup prodnt
+
+======================================================================
+Keywords          : kbother kbsetup 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

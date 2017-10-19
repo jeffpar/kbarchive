@@ -1,0 +1,72 @@
+DOCUMENT:Q214648  07-MAY-1999  [exchange]
+TITLE   :XFOR:"No objects which match the query criteria" message on API
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Upon performing an initial directory synchronization from Exchange Server to
+Novell GroupWise, you may notice the following error message in the API
+gateway:
+
+   There are no objects which match the query criteria.
+
+MORE INFORMATION
+================
+
+The directory synchronization cycle between Exchange Server and GroupWise
+involves two sets of transactions. During the first transaction, the GroupWise
+connector will send a "LIST" type command to the GroupWise system, essentially
+asking for GroupWise to return a directory list of all objects that belong to a
+specific GroupWise Domain and post office (in this case, the Exchange Server
+reference). The GroupWise system will then send a response to Exchange Server
+containing all, if any, objects that match the query. The Microsoft Exchange
+Connector for Novell GroupWise then processes this response and sends the second
+transaction to GroupWise with any updates from the selected EXPORT containers.
+(There are actually two API messages, one to create the Exchange Server post
+office object, and one containing all the user objects). The GroupWise system
+will then create the Exchange Server post office object and all corresponding
+Exchange Server user objects.
+
+The error message will only be encountered during an initial directory
+synchronization to GroupWise because the "LIST" message is asking for a
+non-existent object in GroupWise.
+
+However, if you are continually encountering this error message, there is most
+likely a misconfiguration on the API gateway or the GroupWise connector. Refer
+to the documentation included with these components for details on configuring
+them.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,79 @@
+DOCUMENT:Q157331  07-SEP-2001  [winnt]
+TITLE   :HP JetAdmin 2.0 Does Not Attach Printers in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Hewlett-Packard (HP) JetAdmin 2.0 for Windows 95 tool reports that no
+information can be obtained about the connected printers.
+
+CAUSE
+=====
+
+The Windows 95 version of HP JetAdmin 2.0 does not work in Windows NT 4.0.
+
+RESOLUTION
+==========
+
+Hewlett-Packard is developing a version of JetAdmin for Windows NT 4.0. Contact
+Hewlett-Packard for additional information.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or other- wise, regarding
+this product's performance or reliability.
+
+NOTE: JetDirect is no longer supported by HP. SDI (Simple Device Installation) is
+now used to install network printers. For more information on this, see:
+
+   http://www.hp.com/cgi-bin/cposupport/ccsearch/getdoc?doc=bpj05973
+
+   or
+
+   http://www.hp.com/cposupport/networking/support_doc/bpj06765.html
+
+HP recommends a new software admin package (TCP/IP / IPX/SPX based). For further
+information see:
+
+   http://www.hp.com/cgi-bin/cposupport/ccsearch/getdoc?doc=bpj06723
+
+   or
+
+   http://www.hp.com/cgi-bin/cposupport/ccsearch/getdoc?doc=bpj06724
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kb3rdparty kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,132 @@
+DOCUMENT:Q175276  09-AUG-2001  [winnt]
+TITLE   :Licensing Policy Implementation with MSCS
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article discusses the licensing considerations when you deploy
+Microsoft Cluster Server (MSCS).
+
+MORE INFORMATION
+================
+
+Each application vendor must determine its own licensing policies for
+applications running on Microsoft Cluster Server clusters.
+
+The current policy for server application licensing provided by Microsoft applies
+to MSCS clusters: an application must be separately licensed for each server on
+which it is installed.
+
+Per-Seat Licensing
+------------------
+
+If the customer is using per-seat Client Access Licenses (CALs) for the
+application, those licenses apply when a client is accessing the application on
+either server in the cluster.
+
+Per-Server Licensing
+--------------------
+
+If the customer is using per-server (or concurrent use) Client Access Licenses
+for the application, each computer in the cluster should have a sufficient
+number of per-server Client Access Licenses for the expected peak load of the
+application on that computer
+
+For example, if both nodes of a cluster were running Microsoft SQL Server
+Enterprise Edition, the following licenses are needed to install a SQL Server
+based MSCS implementation:
+
+ - Two fully licensed nodes of Windows NT 4.0 Server, Enterprise Edition or two
+   licensed Windows 2000 Advanced servers.
+
+ - Two licensed copies of SQL Server Enterprise 6.5 or 7.0. (Two SQL server
+   licenses are required even if only one instance of the server is run at a
+   time in active-passive mode and four licenses are required for an
+   Active-Active configuration).
+
+ - SQL Server Client Access Licenses (CAL?s). Both the nodes of the cluster must
+   be licensed even if only one node at a time is being run as in active passive
+   mode. In an environment running in per-server mode, MSCS does not transfer
+   CAL?s from one node to the other in the event of a fail over. Separate CAL?S
+   have to be purchased for each node even if the clients connect only to one
+   virtual server. However, a cluster does not affect per-seat licensing.
+
+ - Depending on the network library used for connecting to the SQL server,
+   separate CAL?s might be needed.
+
+   If using Named Pipes, an Windows NT 4.0/Windows 2000 CAL is needed for each
+   client as Windows NT 4.0/Windows 2000 authenticates these connections
+   directly.
+
+   or
+
+   If using TCP/IP sockets, Windows NT 4.0/Windows 2000 CAL?s for each client are
+   not needed because Windows NT 4.0/Windows 2000 does not authenticate these
+   connections directly.
+
+In a scenario where 50 users want to connect to a Virtual SQL Server using Named
+Pipes as default Network Library the following are the total licenses needed:
+
+ - Two licenses each for Windows NT 4.0 / Windows 2000 Server and SQL Server.
+
+ - 100 SQL Server Client Access Licenses (50 for each node).
+
+ - 100 NT CAL?s (50 for each node).
+
+In the same above scenario if we connect to an Virtual SQL Server with TCP/IP
+sockets as the default network library, then for 50 users we need:
+
+ - Two licenses each for SQL Server and Windows NT 4.0 / Windows 2000 Servers.
+
+ - 100 SQL Server Client Access licenses (50 for each node).
+
+ - 2 Windows NT 4.0/Windows 2000 CAL?s one for each node.
+
+NOTE: Per-server Client Access Licenses do not failover from one computer in the
+cluster to the other.
+
+Cluster Server Licensing
+------------------------
+
+In a Cluster Server cluster, if an application runs on both servers, or even if
+it only runs on one server at a time but must be installed on both servers to
+permit failover, the application must be licensed for both servers. Thus, MSCS
+is licensed per server.
+
+Client licensing is covered under the Microsoft Windows NT Server licensing
+agreement.
+
+Additional query words: MSCS SQL VSS
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

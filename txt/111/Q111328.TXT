@@ -1,0 +1,55 @@
+DOCUMENT:Q111328  30-JUL-2001  [lanman]
+TITLE   :DosReadMailslot Reads Incorrect Data Under Stress
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+
+An application can fail because DosReadMailslot sometimes returns a message that
+was not addressed to it. Generally this occurs when mailslot traffic is heavy.
+
+CAUSE
+=====
+
+The code used when writing mailslot data to a local mailslot is not being marked
+as busy early enough in the routine to keep other mailslot datagrams from
+affecting the data.
+
+RESOLUTION
+==========
+
+A fix for the LAN Manager MS-DOS redirector corrects this problem and is
+available as CSD00.079.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in LAN Manager version 2.2. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 2.20 2.2 mailslot
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

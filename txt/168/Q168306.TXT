@@ -1,0 +1,69 @@
+DOCUMENT:Q168306  09-OCT-1999  [msnetwork]
+TITLE   :Err Msg: Disconnected from the Remote Server
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsgkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to MSN, The Microsoft Network, using NTT INS MATE V-1SII
+(ISDN), you may not be able to connect to MSN and you may receive the following
+error message:
+
+   Disconnected from the remote server
+
+CAUSE
+=====
+
+The terminal adapter needs a special command.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Double-click the MSN icon.
+
+2. On the Sign In screen, click Settings, and then click Modem Settings.
+
+3. Click the Connection tab, and then click Advanced.
+
+4. In the Extra Settings box, add:
+
+   "ATQ0V1X3$N1=1" (without the quotation marks)
+
+5. Click OK, and then click OK again.
+
+
+Additional query words: msn
+
+======================================================================
+Keywords          : kbenv kberrmsg kbfaq
+Technology        : kbMSNSearch kbMSN200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

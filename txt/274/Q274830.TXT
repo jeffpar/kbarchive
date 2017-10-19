@@ -1,0 +1,68 @@
+DOCUMENT:Q274830  31-JAN-2001  [homegame]
+TITLE   :Metal Gear Solid: What's New in Metal Gear Solid
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metal Gear Solid 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the new features that are included in Microsoft Metal
+Gear Solid for Windows-based computers.
+
+MORE INFORMATION
+================
+
+New Features in Metal Gear Solid
+--------------------------------
+
+ - Support for 3-D Hardware, and screen resolutions up to 1024x768.
+
+ - First-person play mode.
+
+   Previously, first-person play mode was only offered in the Japanese console
+   version of the game and is unlocked only after you complete the game.
+
+ - Save the game at any moment. In the console versions, you could only save the
+   game at each stage.
+
+ - Both the original and VR missions are now offered in one package.
+
+ - In-game textures and graphics have been improved and optimized for the
+   personal computer.
+
+For more information, please visit the Metal Gear Solid Web site at:
+
+   http://www.mgspc.com
+
+Additional query words: msgame improvements additions mgs konami
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbMetalGearSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

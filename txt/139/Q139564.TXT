@@ -1,0 +1,131 @@
+DOCUMENT:Q139564  14-NOV-2000  [word97]
+TITLE   :WD97: How to Disable Word AutoFormat Features
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbproof word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The AutoFormat feature in Word works behind the scenes to produce an attractive,
+easy-to-read document while you concentrate on the content. Word analyzes each
+paragraph to see how it's used in the document (for example, as a heading or as
+an item in a numbered list) and then applies an appropriate style for that item.
+Word also automatically formats Internet, network, and e-mail addresses as
+hyperlinks; applies bold or underline character formatting to text surrounded by
+asterisks or underscores; replaces two hyphens with an em dash; and so on.
+
+AutoFormat works in these ways:
+
+ - Word automatically formats headings, bulleted and numbered lists, borders,
+   numbers, symbols, and so on as you're typing your document. You can control
+   which automatic changes Word makes, or you can turn AutoFormat off
+   completely.
+
+ - You can automatically format selected document text or the entire unformatted
+   document, such as an e-mail message, in one pass with the AutoFormat command.
+   You will be able to review, accept, or reject each change.
+
+ - Word automatically formats headings and lists in your plain text WordMail
+   messages when you open them. You can easily distinguish the current message
+   from the previous messages in the e-mail stream.
+
+By default, AutoFormat is "on" the first time you start Word. You can turn off
+the options that you don't want.
+
+This article describes how to disable (turn off) the AutoFormat features in
+Microsoft Word 97 for Windows.
+
+For more information about the AutoFormat feature in Word, click Contents And
+Index on the Help menu, click the Find tab in Microsoft Word Help, type the
+following text
+
+   AutoFormat changes Word makes
+
+and then double-click the "Learn about AutoFormat changes Word makes" topic. If
+you are unable to find the information you need, ask the Office Assistant.
+
+MORE INFORMATION
+================
+
+To disable (turn off) the AutoFormat features in Word, do one or both of the
+following.
+
+Disabling "AutoFormat As You Type" Options
+------------------------------------------
+
+To disable certain automatic format features as you type your document, follow
+these steps:
+
+1. On the Tools menu, click AutoCorrect.
+
+2. Click the "AutoFormat As You Type" tab.
+
+3. Click to clear (remove the check mark from) the settings under the Apply As
+   You Type, Replace As You Type, and Automatically As You Type sections. Clear
+   the check boxes for those settings that you want to format manually.
+
+4. Click OK.
+
+Disabling AutoFormat Features
+-----------------------------
+
+To disable certain automatic format features when you click AutoFormat on the
+Format menu, follow these steps:
+
+1. On the Format menu, click AutoFormat.
+
+2. Click Options.
+
+3. On the AutoFormat tab, click to clear (remove the check mark from) all of the
+   settings under the Apply, Replace, Preserve, and Always AutoFormat sections
+   that you do not want Word to automatically format.
+
+4. Click OK.
+
+When you click OK in the AutoFormat dialog box to automatically format your
+existing Word document, Word will use only the features that you have selected
+to format your document.
+
+For more information the AutoFormat feature in Word, click Contents And Index on
+the Help menu, click the Index tab in Microsoft Word Help, type the following
+text
+
+   AutoFormat
+
+and then double-click the selected text and go to the "Troubleshoot automatic
+formatting changes" topic. If you are unable to find the information you need,
+ask the Office Assistant.
+
+Additional query words: auto format
+
+======================================================================
+Keywords          : kbdta kbproof word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

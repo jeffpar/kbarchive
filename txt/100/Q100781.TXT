@@ -1,0 +1,63 @@
+DOCUMENT:Q100781  13-JAN-2001  [vbwin]
+TITLE   :INFO: Developer Services Offers Solution Provider Packages
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbVBp300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+ - Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Solution Provider Services is a fee-based package for customers to get
+technical help. This package is sold through Developer Services.
+
+MORE INFORMATION
+================
+
+Microsoft Solution Providers are independent organizations that have teamed up
+with Microsoft to use technology to solve business problems for companies of all
+sizes and industries.
+
+To locate a Microsoft Solution Provider in your area, in the U.S. and Canada,
+call the Microsoft Sales Information Center at (800) 426-9400. If you are
+outside the United States, contact your local subsidiary. To locate your
+subsidiary, see the Microsoft World Wide Offices Web site at:
+
+   http://www.microsoft.com/worldwide/default.htm
+
+You can also get information by choosing the "Shop" option on the Microsoft Web
+site at:
+
+   http://www.microsoft.com/
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp300 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

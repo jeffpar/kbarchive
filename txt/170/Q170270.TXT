@@ -1,0 +1,55 @@
+DOCUMENT:Q170270  20-FEB-1999  [winnt]
+TITLE   :Availability of ZAK for Windows NT Workstation 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the availability of Microsoft Zero Administration Kit
+(ZAK) for Windows NT Workstation 4.0.
+
+MORE INFORMATION
+================
+
+Zero Administration Kit for Windows NT Workstation 4.0 is available for download
+from the following Microsoft Web site:
+
+   http://www.microsoft.com/windows/zak/default.htm
+
+For a description of Microsoft Zero Administration Kit for Windows NT Workstation
+4.0, see the following article in the Microsoft Knowledge Base:
+
+   Q170271 Description of ZAK for Windows NT Workstation 4.0
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

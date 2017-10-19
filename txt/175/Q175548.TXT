@@ -1,0 +1,67 @@
+DOCUMENT:Q175548  14-JUN-2001  [msnetwork]
+TITLE   :About MSN Displays Incorrect Version of Internet Explorer
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.51,4.0,95
+OPER/SYS:
+KEYWORDS:kbui kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.51 
+ - Microsoft Internet Explorer version 4.0 for Windows 95 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the About MSN dialog box in MSN, The Microsoft Network, the
+version of Internet Explorer is shown as 4.0 (4.71.1712.5).
+
+The correct build number of Internet Explorer is 4.71.1712.6.
+
+CAUSE
+=====
+
+MSN obtains the build number of Internet Explorer from the Shdocvw.dll file. The
+Shdocvw.dll file was not updated in the 4.71.1712.6 build of Internet Explorer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in The Microsoft Network version
+2.51. Microsoft is researching this problem and will post new information here
+as it becomes available.
+
+MORE INFORMATION
+================
+
+To display the correct build number of Internet Explorer, click About Internet
+Explorer on the Help menu in Internet Explorer.
+
+
+Additional query words: 4.0 msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbui kbmsn 
+Technology        : kbIEsearch kbWin95search kbMSNSearch kbIE95Search kbZNotKeyword3 kbWin95 kbIE400Win95 kbMSN251
+Version           : WINDOWS:2.51,4.0,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

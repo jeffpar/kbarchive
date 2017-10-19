@@ -1,0 +1,58 @@
+DOCUMENT:Q88746  02-FEB-2000  [foxpro]
+TITLE   :Difference Between Macro Substitution and Named Expression
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Macro substitution and name expressions are both methods used to place the value
+of a variable in a FoxPro command. The fundamental difference between the two is
+that with name expressions, the value of the variable is substituted before
+execution. With macro substitution, the value is substituted during execution.
+
+MORE INFORMATION
+================
+
+The FoxPro language compiler parses the program and replaces a name expression
+with the value during the first pass; from that point on, only the value, not
+the variable, is used. The FoxPro compiler leaves a macro substitution as a
+reference to the variable that is not resolved until the program is executed.
+
+If you use a name expression and the variable changes during execution, the new
+value of the variable is not used. However, if you use a macro substitution, the
+new value will be substituted.
+
+Additional query words: VFoxWin FoxWin FoxDos
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

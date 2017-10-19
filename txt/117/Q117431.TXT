@@ -1,0 +1,67 @@
+DOCUMENT:Q117431  28-JUL-2001  [win95x]
+TITLE   :Windows 95 Does Not Boot After Running MicroHelp UnInstaller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run MicroHelp UnInstaller version 2.0 under Windows 95, your system
+does not boot.
+
+CAUSE
+=====
+
+UnInstaller searches your system and deletes files associated with a specified
+application that you want to remove. However, if you run UnInstaller under
+Windows 95, it leaves the system unbootable.
+
+RESOLUTION
+==========
+
+To correct this problem, reinstall Windows 95.
+
+MORE INFORMATION
+================
+
+For more information, contact MicroHelp Incorporated. For information about
+contacting MicroHelp, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+UnInstaller is manufactured by MicroHelp Inc., a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 3rdparty file registry error corrupting corrupted
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q90553  08-OCT-1999  [utilities]
+TITLE   :Unreferenced Packaged Functions Included With /Zi and /CO
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft C/C++ generates packaged functions when the compiler command line for
+a module specifies the /Gy option switch. The /PACKF option instructs Microsoft
+LINK to exclude unreferenced packaged functions from the executable image.
+
+However, if the compiler command line specifies both the /Gy and /Zi options and
+the LINK command line specifies the /CODEVIEW option, LINK includes the
+unreferenced packaged functions in the executable image.
+
+MORE INFORMATION
+================
+
+When an application refers to a function, the compiler generates a CEXTDEF
+record that contains the name of the function. If the object module does not
+contain a CEXTDEF record for a packaged function and the /PACKF linker switch is
+specified (the default behavior), the COMDAT record for the packaged function is
+not linked into the executable image. However, when the /Zi compiler option is
+specified when an application is compiled, the compiler generates a CEXTDEF
+record for each COMDAT record. Because these records indicate that the
+application refers to each function, the LINK includes the functions in the
+executable image. Visual C++ version 1.0 documents this behavior in its
+description of the /PACKF option as follows: "Packaged functions compiled with
+/Zi (to add debugging information) are referenced by the compiler. These
+functions are not removed by /PACKF."
+
+Additional query words: kbinf 5.30 5.31.009 5.50 5.60
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q255858  24-OCT-2000  [winnt]
+TITLE   :PRB: New Behavior of Multiline CJK Rich Edit Controls w/ Win2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbSDKPlatform kbVC kbVC500 kbVC500bug kbVC500fix kbVC600 kbVC600bug kbVC600fix kbLocali
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The display of multiline text in rich edit controls may be truncated when
+Chinese, Japanese, or Korean fonts are used.
+
+CAUSE
+=====
+
+There has been a change in the behavior of rich edit controls under Windows 2000
+when Chinese, Japanese, or Korean fonts are used. In earlier versions, there is
+no spacing between lines. With the intention of increasing readability, lines
+are now spaced slightly apart. This can truncate displays if the computation of
+the rectangle for the control does not take this change into account.
+
+RESOLUTION
+==========
+
+The behavior in earlier versions can be recovered; the following code fragment
+suggests a method:
+
+   	PARAFORMAT2 pf;
+   	ZeroMemory((void*)&pf, sizeof(pf));
+   	pf.cbSize = sizeof(pf);
+   	pf.dwMask = PFM_LINESPACING;
+   	pf.dyLineSpacing=lfWeight;
+   	pf.bLineSpacingRule = 4;
+   	::SendMessage(m_field.m_hWnd, EM_SETPARAFORMAT, 0, (LPARAM)&pf);
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSDKPlatform kbVC kbVC500 kbVC500bug kbVC500fix kbVC600 kbVC600bug kbVC600fix kbLocalization kbVC500QFE kbVC600QFE kbGrpDSIntl 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

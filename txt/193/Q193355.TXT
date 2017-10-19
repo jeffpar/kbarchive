@@ -1,0 +1,82 @@
+DOCUMENT:Q193355  10-SEP-1999  [sms]
+TITLE   :SMS: Status MIF Creator - Ismif16.exe
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Ismif16.exe is a utility that is available from the BackOffice Resource Kit. It
+writes a generic status MIF file from information provided in a command line, a
+dialog box, or both.
+
+ISMIF16 is a 16-bit application that opens a dialog box that allows you to type
+any information that is not specified on the command line. Items specified on
+the command line appear in the corresponding fields of the dialog box.
+
+MORE INFORMATION
+================
+
+Files Required for ISMIF16
+--------------------------
+
+   Ismif16.dll
+   Ismif16.exe
+
+ISMIF16 Syntax
+--------------
+
+   ismif16 [-f Filename] [-c Manufacturer] [-p Product] [-v Version]
+   [-l Locale] [-n Serial_Number] [-d Description] [-s Status] [-q] [-?]
+
+Options                    Description
+-f Filename                Specifies the name of the MIF file that will be
+                           created. A MIF extension is automatically
+                           appended. The default file name is Setup.mif.
+
+-c, -p, -v, -l, -n, -d     Each of these options can specify a text string.
+                           Each of these options corresponds to a field in
+                           the resulting dialog box. Strings containing
+                           spaces must be enclosed in quotation marks.
+
+-s Status                  Value can equal 0 or 1. The number 1 means
+                           success.
+
+-q                         Quiet mode. No output is displayed on the
+                           screen.
+
+-?                         Provides a usage statement.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : ALPHA MIPS x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q141842  28-JUL-2001  [win95x]
+TITLE   :Sounds Played Repeatedly with Sigma Designs ReelMagic Board
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Sigma Designs' ReelMagic (also called RealMagic) drivers, the
+system startup sound is played repeatedly when you restart your computer. If you
+open the Sounds tool in Control Panel and play a wave (.wav) file, the sound is
+played repeatedly.
+
+CAUSE
+=====
+
+Sigma Designs' software looks for an "Int=" line in the [Sound] section of the
+Fmpdrv.ini file in the folder in which you installed the ReelMagic software. If
+this line is not present, the software defaults the audio IRQ setting to 5,
+instead of using the IRQ setting you may have specified. Note that the
+"Interrupt=" line in the Fmpdrv.ini file is not used to set the interrupt.
+
+RESOLUTION
+==========
+
+Use any text editor (such as Notepad) to edit the Fmpdrv.ini file and add the
+line
+
+   Int=<x>
+
+to the [Sound] section of the file, where <x> is an available interrupt,
+and then restart your computer.
+
+MORE INFORMATION
+================
+
+The ReelMagic board is manufactured by Sigma Designs, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

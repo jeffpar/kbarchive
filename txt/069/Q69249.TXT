@@ -1,0 +1,63 @@
+DOCUMENT:Q69249  02-NOV-1999  [win95x]
+TITLE   :Oak Technology Inc. Video BIOS Version 2.14 and Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have an Oak Technology Video BIOS version earlier than 2.14, you may
+experience the following problems when running Microsoft Windows 3.0 or 3.0a:
+
+ - Your machine hangs when going into enhanced mode.
+
+ - The system works correctly in real and standard modes.
+
+WORKAROUND
+==========
+
+If you have an Oak Technology BIOS version earlier than 2.14, you should upgrade
+the BIOS before running Microsoft Windows version 3.0 or 3.0a.
+
+Windows 3.0 and 3.0a operate correctly with the Oak Technology Video BIOS version
+2.14 (chip number 037) or later.
+
+Contact your video card dealer to obtain the latest version of the Oak Technology
+Video BIOS.
+
+
+The Oak Technology products included here are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: VGA 3.00 3.00a win30 KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

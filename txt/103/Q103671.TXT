@@ -1,0 +1,68 @@
+DOCUMENT:Q103671  07-MAY-2002  [homegame]
+TITLE   :Flashing Blue or Green Triangle in Bottom Right Corner
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:4.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 4.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Microsoft Flight Simulator 4.0, you may experience a flashing blue
+and/or green triangle in the bottom-right corner of the scenery window while
+flying or slewing.
+
+This does not seem to occur when the Microsoft Flight Simulator Aircraft and
+Scenery Designer is installed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Flight Simulator version 4.0b.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Click the NAV/COM menu.
+
+2. Click option A for Position Set.
+
+3. Set position to North 17899, East 21853, and Altitude 20 for Lawrence Logan
+   International Airport in Boston. This occurs after setting position to other
+   airports as well.
+
+4. Start flying or slewing.
+
+Additional query words: 4.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbSimSearch
+Version           : MS-DOS:4.0b
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,175 @@
+DOCUMENT:Q139359  18-FEB-2002  [ssafe]
+TITLE   :INFO: Readme.wri: Section 2, General Notes and Tips
+PRODUCT :Microsoft SourceSafe
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbVBp400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article holds Section 2, General Notes and Tips, of the Visual SourceSafe
+Version4.0 Readme.wri file found in the main Visual SourceSafe directory
+(Vssafe). For more information about other sections of the Readme.wri file,
+please see the following articles in the Microsoft Knowledge Base:
+
+   Q139358 Readme.wri: Section 1, Software Installation Information
+
+   Q139361 Readme.wri: Section 3, Issues and Considerations
+
+   Q139360 Readme.wri: Section 4, Documentation Notes
+
+   Q139362 Readme.wri: Section 5, New Features of Visual SourceSafe
+
+
+MORE INFORMATION
+================
+
+Back Up Your Visual SourceSafe Database
+---------------------------------------
+
+Before installing an upgrade to Visual SourceSafe, back up your previous Visual
+SourceSafe database. The upgrade process involves a major data conversion, which
+is irreversible in case of problems.
+
+Once Visual SourceSafe is installed, you should still back up your database on a
+very regular basis.
+
+Database corruption is uncommon, but could occur. The Analyze.exe program detects
+any problems in the database. A backup will help you recover gracefully should
+you need to recreate your database. If you receive any errors after running the
+Analyze program, please contact Microsoft Support. For information on the
+Analyze.exe program, please see Appendix C in the Microsoft Visual SourceSafe
+User's Guide or Help file for the Admin program.
+
+Visual SourceSafe 32-Bit and Visual SourceSafe 16-Bit
+-----------------------------------------------------
+
+There are two versions of Visual SourceSafe for Windows: 32-bit and 16-bit.
+
+Users of MS-DOS should use Visual SourceSafe for MS-DOS, a command-line only
+product.
+
+Users of Microsoft Windows 3.1 and Microsoft Windows for Workgroups should use
+the 16-bit version of Visual SourceSafe for Windows.
+
+Users of Microsoft Windows NT and Microsoft Windows 95 should use the 32-bit
+version of Visual SourceSafe for Windows.
+
+Notes for Users of Previous Versions of SourceSafe
+--------------------------------------------------
+
+Users of SourceSafe 3.x will note a number of major changes to the product. New
+features are listed separately below, but some of the important miscellaneous
+changes include:
+
+1. The SourceSafe directory structure has changed, and the SourceSafe program
+   files have different names. For example, if you have an icon pointing to
+   R:\Vss\Winnt\Ssnt.Exe, that directory and file no longer exist. The new
+   location is R:\Vss\Win32\Ssexp.Exe. The client Setup program creates new
+   program manager icons that point to the appropriate executables.
+
+2. The SourceSafe text-based interface for MS-DOS (SS.EXE) is not supported in
+   4.0 or future versions of Visual SourceSafe.
+
+3. Several SourceSafe commands have been renamed. The most prominent are:
+
+   Update     -->  Check In
+   Uncheckout -->  Undo Checkout
+   Separate   -->  Branch
+   Remove     -->  Delete
+   Scan       -->  Find in Files
+   Merge      -->  Merge Branches
+
+4. The PIN command is new. It replaces the SHARE command in the History of File
+   dialog box and allows you to "stick a pin" through a specific version of a
+   file, freezing it at that specific version. The PIN command's complement, the
+   UNPIN command, allows you to "unstick" a file that has been pinned.
+
+Design Restriction in Visual Basic Integration
+----------------------------------------------
+
+When you are working in Visual Basic with projects under source code control,
+Visual Basic launches a new version of itself under the following conditions:
+you open a project under source code control, use the Show History command on a
+file associated with Visual Basic, and then click View in the History dialog
+box. This is normal behavior also found when working with a Visual Basic form
+from the File Manager in Windows NT and the Explorer in Windows 95.
+
+Need to Specify a Makefile Extension for Visual Basic Integration
+-----------------------------------------------------------------
+
+In Windows 95, a Visual Basic project can have a make file with no extension, or
+with an extension other than .vbp or .mak. However, the source code control
+(SCC) Add-in has to have some way to recognize make files from other files, and
+the extension is often the only way. In other words, for you to use SCC
+successfully with a project, the make file name must end in .vbp or .mak. The
+most likely situation where a make file has no extension is when the Windows 95
+Explorer is set to hide file extensions. Then, when you save a make file, Visual
+Basic doesn't automatically add the .vbp extension. The solution to this
+situation is to set the Windows 95 Explorer view option to show file extensions,
+and ensure that that all Visual Basic make files have a .vbp or .mak file
+extension.
+
+Installing Two or More Visual SourceSafe Databases on One Computer
+------------------------------------------------------------------
+
+The Visual SourceSafe installation was designed for one installation per
+computer. There might be occasions when you want to have two or more copies of
+Visual SourceSafe installed on your computer, such as in the following cases:
+
+Case 1. You are an administrator who wants both a server and a client
+installation on your computer. To accomplish this, you run Setup from your
+Visual SourceSafe compact disc, and then use the Netsetup program from the
+directory in which you installed the Visual SourceSafe server option.
+
+Case 2. You need to have separate databases for testing, application development,
+and maintaining product specifications. You want to have different locations on
+your computer that point to different network locations you can access. To
+accomplish this, use the Regedit program in Windows NT or Windows 95. Go to the
+HK_LOCAL_MACHINE key, then to SOFTWARE, then to MS SETUP (ACME), then to TABLE
+FILES. You see two entries for Visual SourceSafe: Ssadmin.exe file, for the
+server installation from the compact disc, and Ssexp.exe for the network client
+setup. Delete one of these two entries, and then run Setup again. Note that you
+can have only one Visual SourceSafe installation at a time integrated with
+Visual Basic on a local hard disk.
+
+When you work with two separate network installations, only one can be integrated
+with an IDE at a time. For example, say you want to switch from database1, which
+is currently active, to database2. To switch between Visual SourceSafe databases
+and maintain IDE integration, go to the \Win or \Win32 directory under the
+directory in which you installed Visual SourceSafe on your local hard disk, and
+run the Ssint program. The Ssint program's dialog box contains the check box,
+Update Vb.ini, that allows you switch to the version of Visual SourceSafe you
+want to use by choosing to update Vb.ini or not.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbVBp400 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

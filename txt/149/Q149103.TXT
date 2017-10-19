@@ -1,0 +1,57 @@
+DOCUMENT:Q149103  08-NOV-2001  [homekids]
+TITLE   :MSN Interactive Teen: How to Send Suggestions
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0; WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MSN Interactive Teen, version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses ways for you to give us feedback and suggestions on our
+MSN Interactive Teen site.
+
+MORE INFORMATION
+================
+
+If you would like to request an MSN Interactive Teen enhancement, or if you
+would like to submit feature suggestions for future releases of MSN Interactive
+Teen, or if you have read product content you believe is incorrect, we would
+like to hear from you.
+
+The Product Team can be reached by sending email to the following address:
+
+   iteen@microsoft.com
+
+We look forward to hearing from you.
+
+Additional query words: Current msn 1.2 microsoft network msnkids suggest tell develop development improve improvements get make better msnetwork enhance updates
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch _IKkbbogus kbMSNSearch kbMSNTeen
+Version           : :1.0; WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

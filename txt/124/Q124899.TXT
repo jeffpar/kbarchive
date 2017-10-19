@@ -1,0 +1,78 @@
+DOCUMENT:Q124899  27-JUL-2001  [odbc]
+TITLE   :BUG: SQLNumResultCols May Fail After Prepared SQL Statement
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+BUG# AddonBugs: 10888 (1.02.3231)
+
+SYMPTOMS
+========
+
+After preparing a SELECT statement, a call to an ODBC meta data function call,
+such as SQLDescribeCol, SQLNumResultCols, and SQLColAttributes, fails with the
+message:
+
+   Syntax error near 'where'
+
+This happens only if the above functions are called after SQLPrepare has been
+called but before SQLExecute has been called. The following code demonstrates
+the problem:
+
+      SQLPrepare(hstmt, "select sum(qty) from sales group by stor_id")
+      SQLNumResultCols(hstmt, &col)  ==> SQL_ERROR
+      SQLError() ==> "Syntax error near 'where'"
+
+CAUSE
+=====
+
+The SQL Server driver is sending an improperly constructed SQL statement to SQL
+Server at the time SQLNumResultCols, SQLDescribeCol, and SQLColAttributes are
+called.
+
+WORKAROUND
+==========
+
+Because this problem appears only if SQLExecute has not been called, it is
+recommended that meta data function calls be called after both SQLPrepare and
+SQLExecute have been called.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the 16-bit Microsoft SQL Server
+driver version 1.02.3231 and 32-bit SQL Server driver version 2.00.1912. We are
+researching this problem and will post more information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 1.02.3231 2.00.1912 Windows NT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200 kbODBC100
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

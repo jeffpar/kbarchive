@@ -1,0 +1,58 @@
+DOCUMENT:Q94147  07-DEC-1999  [win95x]
+TITLE   :HPPCL5E: Printer Intellifont Fonts Are Not Listed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you use the printer driver for the Hewlett-Packard (HP) LaserJet 4/4M
+(HPPCL5E.DRV) and the TrueType Screen Fonts Installed check box located in the
+driver's setup dialog box is selected, the driver will not enumerate the
+internal Intellifont fonts for an application's font list.
+
+MORE INFORMATION
+================
+
+This option is provided in the driver so that if equivalent TrueType fonts are
+installed, the fonts do not show up twice in the font list. If the equivalent
+TrueType fonts are not installed and the TrueType Screen Fonts check box is
+selected, no Intellifont fonts will be displayed in the font list.
+
+The HP product included here is manufactured by HP, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: win31 CG Times Univers true type true-type tt ttg appear 3.10 3.11 show up
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

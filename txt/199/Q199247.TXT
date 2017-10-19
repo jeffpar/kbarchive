@@ -1,0 +1,80 @@
+DOCUMENT:Q199247  12-JUN-1999  [exchange]
+TITLE   :XCON: Lsdxamex.exe Application Error Running LDE 3.2 Dirsync
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:3.2; winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - LinkAge Message Exchange, version 3.2 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run directory synchronization (dirsync) between Exchange Server 5.5
+(running on a Windows NT 4.0 computer with Service Pack 3 installed) and LinkAge
+Directory Exchange (LDE) 3.2, you receive the following application error
+message:
+
+   Lsdxamex.exe application error. The instruction at "0X002b9dbd" referenced
+   memory at "0X0000C" The memory could not be "read".
+
+CAUSE
+=====
+
+The cause of the problem is that a corrupted message is being processed by LDE.
+
+WORKAROUND
+==========
+
+1. Look at the most recent linkage log file located in the Linkage\Logs folder.
+   The files are created using the current date and adding a .log extension.
+   Look in the log file for the location of the Dxamex.in and Dxm.in folders.
+
+2. Stop the Linkage Directory Exchange service and delete all .rdy and .mpb
+   files in the Exchconn\Q\Dxamex.in\ and Exchconn\Q\Dxm.in\ folders.
+
+3. Start the LinkAge Directory Exchange service back up.
+
+Now it is necessary to propagate the new information from the Linkage
+administrator program. In the Linkage Administrator program:
+
+1. Expand Directory Exchange Manager, expand Directory Exchange Agents, expand
+   Linkage DXAMEX, and double-click Configuration.
+
+2. Double-click Propagation, click Send Updates, and then click Updates Only.
+
+MORE INFORMATION
+================
+
+There is no message generated in the application log and no User.dmp file. This
+is not a Dr. Watson error.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange550 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+Version           : WINDOWS:3.2; winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

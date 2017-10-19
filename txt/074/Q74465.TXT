@@ -1,0 +1,68 @@
+DOCUMENT:Q74465  17-DEC-2000  [msdos]
+TITLE   :XMS Memory with MS-DOS Shell Task Swapper
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Applications running under MS-DOS Shell with Task Swapper enabled cannot
+allocate XMS memory unless you specify a value in the "XMS memory required"
+option. This is done to prevent Task Swapper from having to swap unused XMS
+memory to disk. Programs will be unaware of the existence of XMS memory, and the
+MEM command will report 0 (zero) bytes of available XMS memory.
+
+MORE INFORMATION
+================
+
+XMS memory can be specified for a task by specifying a value in the XMS Memory
+KB Required option of the Advanced dialog box, as follows:
+
+1. From the program list, select an application.
+
+2. From the File menu, choose Properties.
+
+3. From the Program Item Properties box, choose Advanced.
+
+4. In the XMS Memory KB Required box, insert the amount of XMS memory that you
+   want to be available to the program.
+
+5. Choose OK as many times as you need to return to Shell.
+
+Whenever Task Swapper is enabled, that application can access XMS memory up to
+either the limit specified in the XMS Memory Required box or the XMS Memory KB
+Limit box, whichever is greater.
+
+NOTE: Some XMS memory must be specified in the XMS Memory Required field.
+
+Additional query words: 5.00 5.00A 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

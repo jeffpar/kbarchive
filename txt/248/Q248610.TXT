@@ -1,0 +1,81 @@
+DOCUMENT:Q248610  07-MAY-2002  [homegame]
+TITLE   :Games Err Msg:"A Required DirectX file was not found"
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbsetup igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bicycle Board Games Version 1.5 
+ - Microsoft Bicycle Card Games Version 1.0 
+ - Microsoft Dungeon Siege, version 1.0 
+ - Microsoft Fighter Ace II 
+ - Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to play one of the Microsoft games listed above, you may receive an
+error message that indicates one of the following files were not found:
+
+   Ddraw.dll, Dinput.dll, Dsound.dll, or D3dim.dll
+
+CAUSE
+=====
+
+This behavior can occur if the version of Microsoft DirectX required by the
+game, or later, is not properly installed on the computer.
+
+RESOLUTION
+==========
+
+If you have a newly published game, the latest version of DirectX available at
+the time of publishing is included with the game. To install this version:
+
+1. Insert the game CD into the drive. If the game has more than one CD, insert
+   the first CD or CD1.
+
+2. If the game runs automatically, cancel or exit the window.
+
+3. Double-click My Computer, right-click the game CD icon, and then select
+   Install DirectX.
+
+If after installing DirectX you still have the missing file error or do not have
+the option to install DirectX from the CD, please download and install the
+latest version of Microsoft DirectX from the following Microsoft Web site:
+
+   http://www.microsoft.com/windows/directx/downloads/default.asp
+
+For additional information about how to obtain and install the latest version of
+DirectX, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Additional query words: 2.00 faii msngz dx7 missing
+
+======================================================================
+Keywords          : kbenv kbinterop kbsetup igz kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbMSNSearch _IK kbFighterAceSearch kbDungeonSiege kbFighterAce2 kbTrainSim kbBicycleCard100 kbBicycleSearch kbBicycleBoard150 kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

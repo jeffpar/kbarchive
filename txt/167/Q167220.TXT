@@ -1,0 +1,143 @@
+DOCUMENT:Q167220  09-AUG-2001  [win95x]
+TITLE   :How to Create Custom Calling Card Rules
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:4.0 95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a custom calling card rule in Windows 95,
+Windows NT Server version 4.0, or Windows NT Workstation version 4.0. Calling
+card rules can be used with Dial-Up Networking, HyperTerminal, Microsoft Fax,
+Phone Dialer, or any other program that uses Windows 95 or Windows NT 4.0
+telephony.
+
+MORE INFORMATION
+================
+
+To create a custom calling card rule, follow these steps:
+
+1. In Control Panel, double-click Modems.
+
+2. Click Dialing Properties, and then click the Dial Using Calling Card check
+   box to select it.
+
+3. Click New, type the name of the calling card in the text box, and then click
+   OK.
+
+4. Click Advanced, and then type your calling card rule in the text box for
+   which you want to create a rule. Rules can be created for each of the
+   following call types:
+
+   - Calls within the same area code
+   - Long distance calls
+   - International calls
+
+   NOTE: In Windows NT Workstation 4.0 and Windows NT Server 4.0, click Rules
+   instead of Advanced.
+
+5. Click Close, click OK, and then click OK again.
+
+If you would like to edit an existing rule from a predefined calling card, click
+Copy From in Step 4 and then follow these steps:
+
+1. Click a predefined calling card from the list, and then click OK.
+
+2. Edit the existing calling card rule in the text box for which you want to
+   create a rule.
+
+3. Click Close, click OK, and then click OK again.
+
+The following list describes the different dialing codes that can be used when
+you are setting up custom calling card rules.
+
+Rules for Dialing
+-----------------
+
+0-9: Numbers to be dialed.
+
+ABCD: Characters to be dialed. (Tone dialing only - used for special control on
+some phone systems.)
+
+E: Dial the country code.
+
+F: Dial the area code (city code).
+
+G: Dial the local phone number.
+
+H: Dial the card number.
+
+*,#: Characters to be dialed (tone dialing only).
+
+T: Subsequent numbers are to be tone dialed.
+
+P: Subsequent numbers are to be pulse dialed.
+
+,: Pause for a fixed time.
+
+!: Flash (1/2 second on-hook, 1/2 second off-hook).
+
+W: Wait for a second dial tone.
+
+@: Wait for quiet answer (ring-back followed by five seconds of silence).
+
+$: Wait for calling card prompt tone.
+
+?: Suspend dialing until user provides input.
+
+For example, the MCI via 1-800-674-7000 calling card has the following rule for
+long distance calls:
+
+   18006747000,,,,,,TH,,FG
+
+This means that the following sequence needs to be dialed in order to place a
+long distance call with an MCI calling card:
+
+1. Call 1-800-674-7000.
+
+2. Wait (6 commas).
+
+3. Dial next numbers as tone.
+
+4. Dial the calling card number.
+
+5. Wait (2 commas).
+
+6. Dial the area code.
+
+7. Dial the phone number.
+
+Additional query words: tapi at t sprint
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 4.0 95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,140 @@
+DOCUMENT:Q110312  12-NOV-1999  [miscsdk]
+TITLE   :Full Screen Graphics and Viewer Startup Screen
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::2.0,2.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer Publishing Toolkit, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to display large graphics in Viewer without using
+scroll bars. The first method described below also explains how to make this
+graphic topic appear as the first topic you see when Viewer starts up. Three
+methods for displaying large graphics in Viewer are listed below:
+
+ - Put your graphic in the non scrolling region of the master pane of either the
+   main window or a custom-defined secondary window.
+
+   -or-
+
+ - Put your graphic in a customized regular pane that is sized to fill the
+   entire window (maximum width and height set to the device-independent value
+   1023). Regular panes never have scroll bars.
+
+   -or-
+
+ - Put your graphic in a pop-up window. The default pop-up window will size
+   itself to either the maximum extent of the graphic or the the maximum size of
+   the main Viewer window (whichever is smaller). Pop-up windows in Viewer never
+   have scroll bars.
+
+MORE INFORMATION
+================
+
+Displaying Graphics in the Master Pane of Any Window
+----------------------------------------------------
+
+In the Noncrolling Region:
+
+If you want the large graphic to appear at the top of the topic or at the very
+bottom of the topic, you can place your graphic in a non scrolling region (see
+pages 3-30 and 5-33 of the "Authoring Guide"). Or, if the graphic is the only
+item in the entire topic, define the whole topic as a non scrolling region.
+
+NOTE: The default action of Viewer is to put a line between the scrolling and non
+scrolling regions. You can remove the line between the scrolling and non
+scrolling regions by editing the properties of the master pane in the Window
+Definitions dialog box. Page 5-18 of the Authoring Guide, it describes the
+properties of the master pane. Set the border of the non scrolling region to
+"none" in the Window Definitions dialog box.
+
+In the Scrolling Region:
+
+If you must place your large graphic in the scrolling region, you must make some
+sacrifices. You need to decide the most common screen size(s) and resolution(s)
+your customers will use. You might assume that customers with smaller
+resolutions would have 4-bit displays and customers with higher resolution
+monitors would have 8-bit or higher displays (see "Displaying Alternate
+Pictures" on page 9-20 of the "Authoring Guide"). Using that assumption, you
+might place a 620x470 bitmap in the 4-bit option of the ewX statement, and use a
+720x590 bitmap in the 8-bit option of the ewX statement. The border of the
+master pane, the border of the window, the button bar, the menu bar, and the
+window caption take up a few pixels that you will need to account for when
+resizing your bitmaps.
+
+NOTE: If you want to make more space for your bitmap, you can use HideButtonBar()
+and/or HideMenuBar(). Page 5-3 of the "Authoring Guide" shows a Viewer screen
+with no button bar or menu bar. You can also remove the window caption and
+maximize and minimize buttons using the Windows API (application programming
+interface) call to SetWindowLong(). You can also temporarily change the size of
+your window or master pane using PositionWindow(), PositionMaster(), or
+PositionTopic(). For additional information on changing the main window, please
+see the following article(s) in the Microsoft Knowledge Base:
+
+   Q83915 SAMPLE: Adding and Removing Caption of a Window
+
+TIP: To make this graphic topic your "startup screen," just specify this topic as
+the CONTENTS option (see page 3-11 of the "Authoring Guide"). You can provide an
+easy exit from your graphic screen by either creating a hotspot on the bitmap
+that runs a JumpID() command, or you can make the whole bitmap into a hotspot
+using the ewX statement and the "When Clicked, Run Command" section (see page
+9-17 of the "Authoring Guide"). If your graphic is a startup screen, then the
+default Contents button will jump to the bitmap topic instead of your table of
+contents. You can change the Contents button function with a
+ChangeButtonBinding() command (see page 5- 29 of the "Technical Reference").
+
+Displaying Graphics in a Regular Pane
+-------------------------------------
+
+Regular panes cannot have scroll bars. You can set the size of a regular pane in
+the Window Definitions section of your project file. (see pages 5-3 to 5-10 and
+5-21 to 5-23 of the "Authoring Guide").
+
+TIP: You can provide an easy exit from a full page bitmap screen by either
+creating a hotspot on the bitmap that runs a ClosePane() command, or you can
+make the whole bitmap into a hotspot using the ewX statement and the "When
+Clicked, Run Command" section (see page 9-17 of the "Authoring Guide").
+
+Displaying Graphics in a Pop-up Window
+--------------------------------------
+
+The default pop-up window will size itself to a rectangle that just fits all text
+and bitmaps in the topic. If the text and bitmaps fill a rectangle that is
+bigger than the Viewer window, then the image will be clipped. You can also set
+a custom pop-up window size and color (see page 5-24 of the "Authoring Guide").
+
+TIP: You can close a pop-up window by clicking with the mouse anywhere outside of
+the pop-up window. You can also use the ESC key on you keyboard to close a
+pop-up window. You can also place hotspots on the bitmap to run any kind of
+jump. There is no command that closes a pop-up window.
+
+Additional query words: 2.00 2.00a popup
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200 kbMMViewer200a
+Version           : :2.0,2.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

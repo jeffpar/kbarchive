@@ -1,0 +1,64 @@
+DOCUMENT:Q134551  17-DEC-2000  [win95x]
+TITLE   :Hardware Suspend Button Hangs AcerNote 782 Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With the Windows 95 Advanced Power Management (APM) features enabled on an
+AcerNote 782 laptop computer, if you press the hardware Suspend button on the
+computer, the computer stops responding (hangs). Turning the computer off and
+then back on does not resolve the problem.
+
+CAUSE
+=====
+
+Windows 95 uses APM version 1.1. The AcerNote 782 computer does not reliably
+support APM 1.1.
+
+RESOLUTION
+==========
+
+To work around this problem, configure Windows 95 to use APM version 1.0. To do
+so, follow these steps:
+
+1. In Control Panel, double-click the System icon.
+
+2. On the Device Manager tab, double-click the System branch, and then
+   double-click Advanced Power Management Support.
+
+3. On the Settings tab, click the Force APM 1.0 Mode check box to select it.
+
+4. Click OK until you return to Control Panel. When you are prompted to restart
+   your computer, do so.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

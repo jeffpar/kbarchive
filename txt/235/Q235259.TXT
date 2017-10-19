@@ -1,0 +1,81 @@
+DOCUMENT:Q235259  14-NOV-2000  [foxpro]
+TITLE   :HOWTO: Delete a Database in ATSWeb 2.0
+PRODUCT :Microsoft FoxPro
+PROD/VER::2.0,6.0
+OPER/SYS:
+KEYWORDS:kbMiscTools kbvfp600 kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+ - Microsoft Anomaly Tracking System, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how you can delete an unwanted ATSWeb 2.0 database.
+
+WARNING: ANY USE BY YOU OF ATSWEB IS AT YOUR OWN RISK. Microsoft provides the
+utility "as is" without warranty of any kind, either expressed or implied,
+including but not limited to the implied warranties of merchantability and/or
+fitness for a particular purpose. Use by you of the utility is not supported by
+Microsoft Product Support Services (or Microsoft Product Support Services
+Support Professionals).
+
+MORE INFORMATION
+================
+
+ATSWeb does not provide any way within the interface to delete any unwanted
+database. You can delete the ATSWeb database by deleting the entire database
+directory in the physical hard drive where the database is located, but this
+will only delete the physical database: a reference to the database will still
+exist in ATSWeb. You need to follow the steps below to delete any unwanted
+database reference:
+
+1. Locate the ats.usr file in the ATSWeb directory, and open this file in
+   Notepad.
+
+2. The following settings appear in the ats.usr file:
+
+   [App]
+   MainWinZoom=2
+   MainWinTop=393
+   MainWinLeft=723
+   MainWinHeight=311
+   MainWinWidth=499
+   DataPath1=c:\atsweb\servers\..\shardata\ 
+   DataPath2=c:\test
+   DataPath3=
+   DataPath4=
+   ...
+
+3. To delete the reference to the database, remove the path next to the DataPath
+   keyword and save the file. For example, to delete the database reference to
+   'c:\test' directory, remove the path information.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMiscTools kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVSsearch kbVFPsearch kbAudDeveloper kbATS200 kbVFP600 kbVS97Search
+Version           : :2.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,54 @@
+DOCUMENT:Q111535  08-AUG-2001  [winnt]
+TITLE   :Connect from WfWG Computer Without Network Policy
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+Trying to log onto a Windows NT Advanced Server domain with the "Access
+this computer from the network" policy not assigned to the Everyone group
+causes the following error message to appear on Windows for Workgroups
+computers:
+
+   No domain server was available to validate your password. You were logged on
+   without password validation.
+
+To avoid this error message, start User Manager for Domains on the Windows
+NT Advanced Server server for the domain and perform the following steps:
+
+1. Choose User Rights from the Policies menu.
+
+2. Select the "Access this computer from the network" right.
+
+3. Select Administrator and Everyone.
+
+4. Choose OK.
+
+Additional query words: wfw wfwg prodnt wfwg
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

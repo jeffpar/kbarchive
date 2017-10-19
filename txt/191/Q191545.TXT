@@ -1,0 +1,83 @@
+DOCUMENT:Q191545  11-JUN-2002  [homegame]
+TITLE   :Urban Assault Err Msg: Please Insert the Urban Assault CD
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Urban Assault, version 1.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Urban Assault, you may receive the following
+error message:
+
+   Please insert the Urban Assault CD.
+
+This error message is displayed even if the Urban Assault CD is in the CD-ROM
+drive.
+
+If you click OK, the error message reappears on the screen.
+
+If you click Cancel, the game does not start and you are returned to the Windows
+desktop.
+
+CAUSE
+=====
+
+This behavior can occur if you installed Urban Assault from a network location.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this issue, remove the InstalledFrom and InstalledGroup values from
+the following registry key:
+
+   
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Games\Urban Assault\1.0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Urban Assault, version
+1.0.
+
+Additional query words: 1.00 msgame ua cdrom
+
+======================================================================
+Keywords          : kberrmsg kbimu msgame 
+Technology        : kbGamesSearch kbZNotKeyword kbUrbanAssault
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

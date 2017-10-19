@@ -1,0 +1,70 @@
+DOCUMENT:Q131963  19-OCT-2000  [pcmail]
+TITLE   :PC Mac: Client Hangs When Accessing PO on NT 3.5 Server
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0, on platform(s):
+    - the operating system: Mac OS (ALL) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Mail for PC Networks, Macintosh workstation against a
+version 3.2 Microsoft Mail postoffice located on Microsoft Windows NT version
+3.5 Server with Services for Macintosh installed, the Macintosh clients may
+experience severe performance degradation, or the client may hang
+intermittently.
+
+CAUSE
+=====
+
+This may occur when you mount the volume on the Macintosh client, logging on to
+the Mail server, or when you manipulate mail messages on the server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT version 3.5
+and Microsoft Windows NT version 3.51. This problem was corrected in the latest
+U.S. Service Pack for Windows NT. The server MUST be version 3.51 to implement
+this fix.
+
+This fix is available only on Windows NT 3.51. If this fix is required and
+Windows NT 3.51 is not the current version being used, Product Support has been
+authorized to send a Windows NT 3.51 server step-up upgrade CD-ROM. The latest
+U.S. Service Pack will need to be applied to the version 3.51 installation.
+
+For information on obtaining this update, query on the following in the Microsoft
+Knowledge Base:
+
+   SERVPACK
+
+Additional query words: 3.00 mac
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

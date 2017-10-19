@@ -1,0 +1,56 @@
+DOCUMENT:Q163281  15-MAY-1999  [exchange]
+TITLE   :XADM: Setting Advanced Security on a Second Computer
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbtshoot
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Advanced Security can only be enabled for a single user on a single computer.
+Attempting to add security on a second computer for a user who already has
+security enabled results in a request to create a new token. This will
+invalidate the current token.
+
+MORE INFORMATION
+================
+
+To enable a user's second computer to send encrypted mail:
+
+1. Copy the *.epf file from the original client computer to the second client
+   computer.
+
+2. On the second client computer, on the Tools menu, click Options, and then
+   click Security and browse for the .epf file.
+
+Additional query words: KM server
+
+======================================================================
+Keywords          : kbtshoot 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

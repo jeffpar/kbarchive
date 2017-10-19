@@ -1,0 +1,70 @@
+DOCUMENT:Q124415  10-DEC-1999  [homemm]
+TITLE   :Cinemania 1995: Manual Setup Err Msg: "Path Not Found"
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Pss.bat file located in the Aamsstp\Manual folder on the
+Microsoft Cinemania 1995 compact disc, you receive the error message "Path not
+found" after the first seven files are copied.
+
+RESOLUTION
+==========
+
+To work around this problem, do the following:
+
+1. Run the Pss.bat file.
+
+2. Make the system changes described in the Msetup.txt file.
+
+3. At an MS-DOS prompt, copy all the files from the Aamsstp\System folder
+   (subdirectory) on the compact disc to the Windows\System folder on your hard
+   disk. For example, if your CD-ROM drive is drive X, and your hard disk drive
+   is drive C, to copy the files, type the following line and press ENTER:
+
+   "copy x:\aamsstp\system\*.* c:\windows\system" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+The manual installation batch file for Cinemania 1995 does not specify the
+correct path name for most of the files it is supposed to copy. The batch file
+specifies the System directory as the source for the files, but the files are
+actually in the Aamsstp\System folder.
+
+CAUTION: The manual installation batch file for Cinemania 1995 should not be used
+on computers running Microsoft Windows 95 or Microsoft Windows NT.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles set up error message pathing bat man installation
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1995
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

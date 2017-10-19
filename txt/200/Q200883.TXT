@@ -1,0 +1,75 @@
+DOCUMENT:Q200883  22-JUN-2001  [exchange]
+TITLE   :XWEB: Netscape OWA Client Displays Incorrect Language Text
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When accessing Outlook Web Access (OWA) using a Netscape Navigator Web browser,
+you may see the text display in a language not consistent with the primary
+language of the client or server computers. This can happen if you have applied
+the incorrect Exchange Server service pack to the Exchange Server computer. For
+example, if you have a computer running Exchange Server version 5.5 (U.S.
+English Version) and install Service Pack 1 for Exchange Server (German
+version), Netscape Navigator Browser OWA clients may display German text, even
+after you apply the U.S. English version of Exchange Service Pack 1.
+
+RESOLUTION
+==========
+
+To use Netscape Navigator OWA clients again, you must restore the Exchange
+Server installation from a backup made prior to applying the incorrect service
+pack version.
+
+WORKAROUND
+==========
+
+OWA clients can use a browser other than Netscape Navigator without this effect.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Outlook Web Access
+version 5.5 Service Pack 1.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550SP1
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

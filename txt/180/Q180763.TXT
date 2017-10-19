@@ -1,0 +1,58 @@
+DOCUMENT:Q180763  09-OCT-1999  [msnetwork]
+TITLE   :MSN Err Msg: Account Failed: Permission Denied
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kberrmsg kbtlc kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to send or receive e-mail messages on MSN, The Microsoft
+Network, using Hotmail's Web-based e-mail client, you receive the following
+error message:
+
+   Account failed: Permission denied.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+To access your MSN e-mail account, you must use an e-mail client that supports
+Secure Password Authentication. Hotmail's Web-based e-mail client does not
+support Secure Password Authentication.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n. email
+
+======================================================================
+Keywords          : kb3rdparty kbenv kberrmsg kbtlc kbmsn 
+Technology        : kbMSNSearch kbMSN250
+Version           : WINDOWS:2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,91 @@
+DOCUMENT:Q194414  11-JAN-2001  [vbwin]
+TITLE   :FIX: "Unexpected Error" Message When Loading a GIF
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbVBp kbVBp500bug kbVBp600fix kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Loading a GIF file that does not specifically contain an Image Object into
+Visual Basic 5.0 (for example, through the PictureBox control), generates the
+run-time error 50003:
+
+   "Unexpected Error"
+
+It is important to note that this error is somewhat of a "catch-all" error that
+can be generated under other circumstances completely unrelated to the use of
+GIF files. The purpose of this article is to provide details regarding one
+particular set of circumstances where this error may arise.
+
+CAUSE
+=====
+
+Visual Basic 5.0 does not support GIFs that include images that are contained
+within Application Blocks. The Image Object must be included in the GIF as a
+separate Image Object.
+
+RESOLUTION
+==========
+
+Use one of the following methods to work around this problem:
+
+ - Use Error Handling to trap for and handle appropriately error 50003
+   (unexpected error) in your Visual Basic application. For more information,
+   search for the Help topic "Designing an Error Handler" in the Microsoft
+   Visual Basic 6.0 Online Documentation.
+
+ - Ensure that images contained within a GIF file are included specifically as
+   Image Objects and not contained within Application Blocks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Visual Basic version 6.0 for Windows.
+
+MORE INFORMATION
+================
+
+As mentioned in the "Cause" section of this article, Visual Basic 5.0 does not
+support GIFs that include images which are contained within Application Blocks.
+The Image Object must be included in the GIF as a separate Image Object. This
+functionality currently exists in Microsoft Internet Explorer 4.0 as well as
+Visual Basic 6.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVBp kbVBp500bug kbVBp600fix kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

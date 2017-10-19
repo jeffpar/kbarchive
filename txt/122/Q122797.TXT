@@ -1,0 +1,58 @@
+DOCUMENT:Q122797  27-JUL-2001  [sms]
+TITLE   :Standard Template Files Restrict Word Backward Compatibility
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbinterop smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Program Group Control to perform a workstation installation of
+Microsoft Office version 4.2 and you use the standard template files that ship
+with Office version 4.2, you may not be able to save Microsoft Word version 6.0
+files in Microsoft Word version 2.0 format. The same problem also occurs with
+any batch workstation installations that uses the standard template files of
+Office.
+
+CAUSE
+=====
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.0. We are researching this problem and will post new information in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: sms prodsms mom
+
+======================================================================
+Keywords          : kbinterop smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

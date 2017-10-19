@@ -1,0 +1,59 @@
+DOCUMENT:Q160614  26-SEP-2001  [frontpg]
+TITLE   :FP97: AVI Files Are Converted to GIF Files
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbgraphic kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194442.
+
+SYMPTOMS
+========
+
+In FrontPage, when you convert a non-HTML document that includes an AVI file to
+an HTML-formatted document, the AVI file is converted to a GIF file.
+
+WORKAROUND
+==========
+
+To include the AVI file on the converted page, following these steps:
+
+1. In FrontPage Explorer, import the AVI file.
+
+2. In FrontPage Editor, open the page in which you want to include the AVI file.
+
+3. On the Insert Menu, click Video, select the AVI file and then click OK.
+
+Once you have inserted the AVI file, remove the converted GIF file from the Web.
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbgraphic kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

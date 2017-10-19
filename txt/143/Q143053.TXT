@@ -1,0 +1,81 @@
+DOCUMENT:Q143053  17-DEC-2000  [win95x]
+TITLE   :Mouse Systems Driver May Cause Windows Protection Error
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restart your computer after installing Windows 95 or making a system
+change that requires the computer to be restarted, you may receive the following
+error message:
+
+   While Initializing Device IOS: Windows Protection Error
+
+Or, you may receive a general protection (GP) fault error message in Gui.exe.
+
+CAUSE
+=====
+
+This error can occur if the Mscmouse.com driver by Mouse Systems is being loaded
+in the Autoexec.bat file, or if Gui.exe is being loaded from the "load=" line in
+the Win.ini file.
+
+
+RESOLUTION
+==========
+
+Remove the Mscmouse.com line in the Autoexec.bat file and then install the Mouse
+Systems driver update available from the Mouse Systems BBS.
+
+Use any text editor (such as Notepad) to open the Win.ini file in the Windows
+folder and remove the Gui.exe entry from the "load=" line. Save the Win.ini
+file, close it, and then restart your computer.
+
+MORE INFORMATION
+================
+
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q135888 Windows 95 CD-ROM Mouse.txt file
+
+   Q60782 Hardware and Software Third-Party Vendor List, Q-Z
+
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: gpf
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

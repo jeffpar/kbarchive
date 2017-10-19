@@ -1,0 +1,60 @@
+DOCUMENT:Q182202  03-APR-1999  [exchange]
+TITLE   :XADM: Clean Mailbox Progress Bar Displays Incorrect Message Coun
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+During the Clean Mailbox process, the progress bar always displays 0 even though
+messages are being deleted.
+
+CAUSE
+=====
+
+This behavior occurs when the number of messages is less than 200
+(approximately).
+
+This is by product design
+
+MORE INFORMATION
+================
+
+The progress bar displayed by the Clean Mailbox function is driven by MAPI
+calls, which are only updated periodically. When less than a certain number of
+messages (200+) are found, the callback either never happens or happens only
+once (right before the transition to deleting messages), in which case you never
+see the actual number. If you delete a larger number of messages, the status bar
+will not be zero.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

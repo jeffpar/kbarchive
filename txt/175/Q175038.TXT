@@ -1,0 +1,64 @@
+DOCUMENT:Q175038  12-OCT-1999  [msnetwork]
+TITLE   :How to Disable Call Waiting When You Use MSN
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to disable Call Waiting when you use MSN, The
+Microsoft Network.
+
+MORE INFORMATION
+================
+
+To disable call waiting, use the following steps:
+
+1. Right-click the The Microsoft Network icon, and then click Connection
+   Settings.
+
+2. Click Dialing Properties.
+
+3. Click the This Location Has Call Waiting check box to select it.
+
+   NOTE: Step 4 requires that you know the numbers to dial that disable call
+   waiting. If you do not have this information, contact your telephone company
+   to determine the numbers to dial that disable call waiting.
+
+4. In the To Disable It Dial box, type the numbers to dial that disable call
+   waiting.
+
+5. Click Ok, and then click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN250
+Version           : WINDOWS:2.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

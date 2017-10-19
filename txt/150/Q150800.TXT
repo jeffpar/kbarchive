@@ -1,0 +1,334 @@
+DOCUMENT:Q150800  08-AUG-2001  [crossnet]
+TITLE   :Domain Browsing with TCP/IP and LMHOSTS Files
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::2000,3.11,3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI kbNetBIOS kbSDKPlatform kbNetAPI kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows 95 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft TCP/IP-32 for Windows for Workgroups 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In TCP/IP-based networks involving routers and multiple segments, it is
+generally recommended that you implement WINS for name resolution and browsing
+support. However, as an alternative to WINS, it is possible to have full domain
+browsing by using only LMHOSTS files on all computers, although there are some
+limitations that will be discussed in this article.
+
+In either case, it is important to note that a client only participates in domain
+browsing when the client is using a workgroup name that is equivalent to the
+domain name (WorkgroupName = DomainName). Windows NT computers can also "join"
+the domain to gain this functionality, instead of being in a workgroup.
+
+This functionality of LMHOSTS-based domain browsing (over routers) has not been
+formally documented or tested by Microsoft, and may not be available in future
+versions of the client and server operating systems. Use this information with
+discretion.
+
+MORE INFORMATION
+================
+
+"Browsing" in a Microsoft network should be considered a distributed service
+provided by one or more computers. Each computer can fall into several browser
+roles; however, this article focuses on the two most important ones:
+
+ - Segment master browser (SegMB): This can be any Windows NT Server,
+   Workstation, or domain controller. It can also be a Windows 95 or Windows for
+   Workgroups 3.11 computer. It is responsible for maintaining a browse list of
+   the computers on its local segment, forwarding that list to the domain master
+   browser, and requesting the domain browse list from the domain master
+   browser. The SegMB merges the domain list with its local list, and make that
+   list available to any local client that requests it.
+
+ - Domain master browser (DomMB): This is the Windows NT primary domain
+   controller (PDC). It is responsible for maintaining the browse list on its
+   local segment (like a SegMB), as well as collecting browse lists from other
+   (remote) segment master browsers with the same domain name (or WorkgroupName
+   = DomainName). The DomMB merges the lists it collects, along with its local
+   list, then redistribute the combined list back to all the remote SegMBs. Thus
+   it is the central hub for maintaining the domain-wide browse list.
+
+NOTE: The Windows for Workgroups browser requires updated files.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q102878 Information on Browser Operation
+
+
+In order for this distributed browse service to work, the SegMBs need a way to
+determine exactly who the DomMB is. They can determine this by locating the
+computer that has registered the NetBIOS name "Domain<1b>", because that
+is only registered by the PDC (which also is the DomMB, as noted above).
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q119495 List of Names Registered with WINS Service
+
+Domain Browsing with WINS
+-------------------------
+
+In a WINS environment, a SegMB would query WINS to determine who registered
+Domain<1b>. In this case WINS acts as a convenient central resource for
+this information. There is one more benefit in having WINS to assist browsing:
+multi-domain browsing.
+
+Multi-Domain Browsing with WINS
+-------------------------------
+
+A PDC that is set up to query WINS periodically requests the list of all domains
+that are registered in the database. (A domain is identified by a
+"Domain<1b>" registration in the database, and the associated IP address
+of the PDC that registered it.) The PDC combines this with its own domain browse
+list, and thus has a complete list of computers in its domain, as well as a list
+of other domains, all across the WAN. When the PDC then interacts with its
+SegMB's, it gives them this complete list. You then see the effect of this when
+you browse the network using File Manager or Network Neighborhood.
+
+NOTE: That is the extent of WINS involvement with browsing. It is not involved in
+the browser election process, nor with helping a client determine who its local
+segment master browser is, nor with helping the DomMB determine who the SegMBs
+are; that is done in the process when the SegMB first contacts the DomMB.
+
+In certain networks it may not be valuable to use WINS; this can only be
+determined on a case-by-case basis. You can then use either LMHOSTS or DNS to
+resolve computer names; however, LMHOSTS are required for domain browsing, as
+well as other domain management issues such as database replication and domain
+secure channels.
+
+Domain Browsing with LMHOSTS
+----------------------------
+
+Without WINS, you need special LMHOSTS entries that designate who all the domain
+controllers are. This is done in the following convention:
+
+   
+
+   199.199.199.1  ComputerName   #PRE  #DOM:DomainName
+
+When a computer is booted, it reads these entries and store them permanently in
+the NetBIOS name cache until the computer is powered down. (Because of this, it
+is best that these entries are last in the LMHOSTS file, for subsequent LMHOSTS
+parsing efficiency.) All computers in the domain needs one of these entries for
+each domain controller (in the local domain), as well as one for the PDC. Also
+note the exact order of #PRE #DOM, and that they are capitalized. The other
+names are not case sensitive.
+
+Windows NT Segment Master Browsers
+----------------------------------
+
+Having the above entries is sufficient for a Windows NT computer: Upon becoming a
+Segment Master Browser, a Windows NT computer determines who the PDC is by
+sending a query (using the NetGetDcName API) to all LMHOSTS entries with the
+#DOM:<localdomain> designation. Only the PDC responds. The Windows NT
+computer then contacts the PDC, informs the PDC that it is a master browser,
+then continues the process of getting the domain browse list. The PDC then
+contacts the Windows NT computer to get its local segment browse list. This
+process repeats every 12 to 15 minutes.
+
+
+Windows 95 and Windows for Workgroups Segment Master Browsers
+-------------------------------------------------------------
+
+These do not perform the NetGetDcName API, so they need entries in the LMHOSTS
+file that indicate who the PDC is. Assuming the example above is the PDC of the
+domain, you would have two entries for a Windows 95 or Windows for Workgroups
+client:
+
+   
+
+   199.199.199.1  controller1   #PRE  #DOM:domainname<BR/>
+   199.199.199.1  "domainname,,,,,\0x1b"  #PRE
+
+The first entry allows the PDC to act as a logon domain controller for the
+client, the second entry allows the client browser service to explicitly find
+the PDC. Remember you will probably have multiple lines similar to the first
+line (for multiple domain controllers), but only one line with the \0x1b
+directive (to designate the PDC). Note that the domain name must be in quotes,
+and padded with spaces for a total of 15 characters before the \0x1b portion.
+(The example above shows commas for visual placeholders, however in a real
+LMHOSTS file these commas would be replaced with spaces). Also be aware that
+moving the PDC role to another Windows NT Server (via promotion) will cause your
+\0x1b entry to be invalid. Options to fix this:
+
+ - Switch IP addresses on the controllers, so effectively the PDC always has the
+   same address. You would not need to change anything in the LMHOSTS file.
+
+ - Change the \0x1b IP address in all the LMHOSTS files on the clients, or on
+   the centrally distributed LMHOSTS file (if you are implementing that).
+
+Note About NetBIOS Names
+------------------------
+
+Every NetBIOS name is a full 16 characters in length; the first 15 are user
+definable (or padded with spaces), and the 16th character is reserved to
+identify the network service that registered the name. The most familiar example
+of a NetBIOS name is the ComputerName on any Microsoft networking client. When
+the client is booted, various client network services will register the
+ComputerName along with their unique extension, such as ComputerName<00>
+(workstation service), and ComputerName<20> (server service). In this
+case, the only difference between these two names is the 16th character - and
+that does make them individually identifiable. A client can register all of its
+names by broadcast, and by direct datagram to WINS, depending on the client node
+type. Other companies may also register NetBIOS extensions that are not reserved
+by Microsoft.
+
+For more information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q119493 NetBIOS over TCP/IP Name Resolution and WINS
+
+   Q119495 List of Names Registered with WINS Service
+
+LMHOSTS Example
+---------------
+
+Your domain name is "Globe", your PDC NetBIOS name is "Mongo", and you have other
+various backup domain controllers. Your LMHOSTS file would look like this:
+
+   
+
+   199.199.199.1   "globe       \0x1b"  #PRE<BR/>
+   199.199.199.1   mongo      #PRE  #DOM:globe<BR/>
+   199.199.199.2   otherdc1   #PRE  #DOM:globe<BR/>
+   199.199.199.3   otherdc2   #PRE  #DOM:globe
+
+To verify that you've entered these correctly, open a command window (DOS prompt)
+and look at your NetBIOS cache:
+
+   c:\> nbtstat -c
+
+ NetBIOS Remote Cache Name Table
+
+     Name              Type       Host Address    Life [sec]
+ ------------------------------------------------------------
+ globe          <1B>  UNIQUE      199.199.199.1       -1
+ MONGO          <03>  UNIQUE      199.199.199.1       -1
+ MONGO          <00>  UNIQUE      199.199.199.1       -1
+ MONGO          <20>  UNIQUE      199.199.199.1       -1
+ OTHERDC1       <03>  UNIQUE      199.199.199.2       -1
+ OTHERDC1       <00>  UNIQUE      199.199.199.2       -1
+ OTHERDC1       <20>  UNIQUE      199.199.199.2       -1
+ OTHERDC2       <03>  UNIQUE      199.199.199.3       -1
+ OTHERDC2       <00>  UNIQUE      199.199.199.3       -1
+ OTHERDC2       <20>  UNIQUE      199.199.199.3       -1
+
+TIP: the <1B> entry will not show up if you do not have exactly 15
+characters in the name, or if you do not use quotes, or if you enter the forward
+slash "/0x1b" (as opposed to "\0x1b").
+
+Multi-Domain Browsing with LMHOSTS
+----------------------------------
+
+It is important to note that the main drawback to LMHOSTS browsing is that it
+does not provide the automatic ability of multi-domain browsing. As previously
+mentioned, the PDC will query WINS for a list of remote domains and include that
+information in its browse list. However, the PDC will not parse the LMHOSTS file
+for the same information, nor will it include other \0x1b entries with the #PRE
+(cache) directive. Effectively, if your PDC does not query WINS, you will not
+see other domains through File Manager or Network Neighborhood. However, you can
+still browse other domains manually, (provided that you know the domain name and
+that you have special entries in your LMHOSTS file), and there is still a chance
+that you may browse remote domains based on broadcasts.
+
+Manual Method: this is accomplished by including a \0x1b entry for the PDC of any
+remote domain you want to browse. This technique applies to Windows NT, Windows
+95, and Windows for Workgroups. It is effective because of the following
+sequence of events, necessary for remote domain browsing:
+
+1. The client determines who the PDC is of the remote domain through the
+   domain<1b> name (for LMHOSTS this is done by having the \0x1b entry;
+   for WINS it would be via query).
+
+2. The client sends a GetBackupList API request to the remote PDC
+
+3. The remote PDC responds with a list of up to three master browsers,
+   potentially including itself.
+
+4. The client sends a NetServerEnum API request to one of the master browsers
+
+5. The master browser responds with his domain-wide browse list.
+
+The "manual way" of getting this browse list is through a command window:
+
+   For WinNT computers: c:\net view /domain:<domainname>
+   For Win95 and WFW: c:\net view /workgroup:<domainname>
+
+Broadcast Method: This works in the case of any network segment that has members
+of multiple domains. There is a SegMB of each domain on the "mutual" segment,
+and each SegMB announces its domain via broadcast to a special NetBIOS name
+<01><02>_MSBROWSE_<02><01>. This broadcast packet
+includes the domain name and the computer name of the SegMB that announced it.
+
+The SegMBs of other domains (on this mutual segment) listen for this information,
+and add it to their local browse list. A SegMB on this segment has now
+"discovered" other domains, and send the discovered information to: the DomMB of
+his domain, and to local clients (in his domain) that request a browse list.
+
+A client requests the local domain browse list (from a local SegMB) and see the
+discovered domains in File Manager and Network Neighborhood. When the client
+selects the discovered domain, he actually requests a browse list directly from
+the SegMB that made the announcement in the
+<01><02>_MSBROWSE_<02><01> packet. Furthermore, since
+this information was also sent to the client's DomMB, it is propagated to
+SegMB's on other segments that are part of this domain.
+
+Clients on a remote segment can now leverage this information, and browse the
+remote domain even though there is no remote domain member on their segment.
+However, this process is very volatile using LMHOSTS files, because you are
+dependent on the "discovered remote SegMB's" still being active. In a WINS
+environment, this remote browsing feature is much more stable because WINS
+provides information about the remote domains to your PDC.
+
+Things to consider:
+
+1. For domain logon and domain browsing to work via LMHOSTS, all computers
+   require an LMHOSTS file that includes entries for all domain controllers and
+   proper \0x1b entries, and the PDC requires an entry for each remote segment
+   master browser (if they are not already listed).
+
+2. Most likely every WAN computer is listed. This could be done most efficiently
+   by having one common LMHOSTS file that is distributed to all clients and
+   servers; however, you must keep it updated with all proper IP address
+   changes, and that could become an administrative burden.
+
+3. Seeing a computer in the browse list does not imply you can connect to it. If
+   it is on your local segment, you can connect through broadcast; if it is on a
+   remote segment, you need an LMHOSTS entry for it.
+
+Additional query words: 3.11 3.11b 3.50 3.51 95 winnt windows95
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbNetBIOS kbSDKPlatform kbNetAPI kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbTCPIPSearch kbWFWSearch kbWinAdvServSearch kbZNotKeyword3 kbWFW311
+Version           : :2000,3.11,3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

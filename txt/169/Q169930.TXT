@@ -1,0 +1,343 @@
+DOCUMENT:Q169930  31-JUL-2001  [word97]
+TITLE   :WD97: Word 97 for Windows 3.5" Disk Contents (Disks 1-6)
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdiskdir winword word97 kbdir
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the file names, file sizes, and the files that each of the
+cabinet (.cab) files contains for Microsoft Word 97 for Windows. This article
+lists the contents of disks 1-6 (18 disks total) for the 3.5-inch DMF disks.
+
+You can browse the contents of the cabinet files with the CABFILE Viewer utility,
+which is located on Disk 1.
+
+For more information about the CABFILE Viewer utility, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q163811 OFF97: How to Use the CABFILE Viewer Utility
+
+MORE INFORMATION
+================
+
+Disk 1
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Cabview.dll      61,440         01-17-97   4:37am
+   Cabview.inf       1,588         01-17-97   4:37am
+   Extract.exe      87,916         01-17-97   4:37am
+   Netwrk8.txt      20,309         01-17-97   4:37am
+   Setup.exe        74,192         01-17-97   4:37am
+   Setup.ini           149         01-17-97   4:37am
+   Setup.lst         1,969         01-17-97   4:37am
+   Setup.tdf            84         01-17-97   4:37am
+   Wdread8.txt      29,613         01-17-97   4:37am
+   Word97.inf       53,457         01-17-97   4:37am
+   Word97.stf      197,156         01-17-97   4:37am
+   Wrd97_1.cab     897,422         01-17-97   4:37am
+
+          12 file(s)    1,425,295 bytes
+
+Contents of Wrd97_1.cab
+
+   File Date    Time           File Size   File Name
+   --------------------------------------------------------------
+
+   01-17-1997    7:02:38p ----   352,256   Acmsetup.exe
+   01-17-1997    5:27:04p ----    86,016   Wrd97inv.dll
+   01-17-1997    5:19:54p ----     1,516   Word97.pdf
+   01-17-1997   10:52:40a ----     3,478   Ofs97_01.ico
+   01-17-1997    3:03:24a ----     1,943   Admin.lst
+   01-17-1997    5:31:08p ----    47,376   Ffast_bb.dll
+   01-17-1997    3:02:06a ----    20,848   Acmsetup.hlp
+   01-17-1997    5:51:30p ----   299,520   Off97_bb.dll
+   01-17-1997   10:50:38a ----    41,700   Offsetup.ttf
+   01-17-1997    7:02:40p ----   255,488   Mssetup.dll
+   01-17-1997   11:10:42a ----   491,792   Os\System\Oleaut32.dll
+   01-17-1997   11:09:50a ----   326,656   Msvcrt40.dll
+   01-17-1997   11:04:28a ----   253,952   Msvcrt20.dll
+   01-17-1997   11:09:50a ----    32,256   Selfreg.dll
+   01-17-1997    8:31:06p ----   110,080   Offclean.dll
+   01-17-1997   11:37:38a ----   135,945   Offcln97.opc
+
+                   16 Files    2,460,822 bytes
+
+Disk 2
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_2.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_2.cab
+
+   File Date    Time           File Size   File Name
+   -----------------------------------------------------------------------
+
+   01-17-1997   11:40:00a ----   921,872   Os\System\Mfc40.dll
+   01-17-1997    7:02:42p ----    74,192   Acmeword.exe
+   01-17-1997    3:03:46a ----    52,166   Admin.inf
+   01-17-1997    6:41:44p ----   111,376   Office\Findfast.exe
+   01-17-1997    2:42:16a ----    22,528   Os\System\Findfast.cpl
+   01-17-1997   10:52:20a ----        43   Os\System\Ffastlog.txt
+   01-17-1997   11:52:46a ----    28,183   Office\Findfast.hlp
+   01-17-1997   11:38:18a ----       934   Office\Findfast.cnt
+   01-17-1997   11:10:06a ----    45,328   Office\Ifilter.cnv
+   01-17-1997   11:05:08a ----    27,136   Os\Ctl3d32.dll
+   01-17-1997   10:56:50a ----    35,262   Os\Mso97.acl
+   01-17-1997    5:20:50p ----    35,904   Office\Pss8.hlp
+   01-17-1997   10:54:52a ----       690   Office\Pss8.cnt
+   01-17-1997   10:54:54a ----    15,896   Office\Psso8.hlp
+   01-17-1997   10:54:54a ----       162   Office\Psso8.cnt
+   01-17-1997   10:54:38a ----    39,427   Office\Eula8.hlp
+   01-17-1997    5:15:02p ----       288   Office\Eula8.cnt
+   01-17-1997   10:54:38a ----    33,074   Office\Eulao8.hlp
+   01-17-1997    6:00:16p ----       268   Office\Eulao8.cnt
+   01-17-1997    3:35:54a ----   320,282   Office\Vbaoff8.hlp
+   01-17-1997    2:52:08a ----   168,843   Office\Vbaoff8.aw
+   01-17-1997    2:52:08a ----    10,080   Office\Vbaoff8.cnt
+   01-17-1997   11:54:10a ----    18,432   Os\Msapps\Msinfo\Imgwalk.dll
+   01-17-1997   11:54:10a ----    16,304   Os\Msapps\Msinfo\Msinf16h.exe
+   01-17-1997   11:54:12a ----   452,096   OS\Msapps\Msinfo\Msinfo32.exe
+   01-17-1997   11:01:22a ----    40,815   OS\Msapps\Msinfo\Msinfo32.hlp
+   01-17-1997   11:10:32a ----     2,967   OS\Msapps\Msinfo\MsinfO32.cnt
+   01-17-1997   11:39:48a ----    26,112   OS\Msapps\Textconv\Nims32.dll
+   01-17-1997   11:39:46a ----    10,240   OS\Msapps\Textconv\Mscthunk.dll
+   01-17-1997   11:05:30a ----    29,696   OS\Msapps\Proof\Mshy32.dll
+   01-17-1997   10:51:14a ----   134,144   OS\Msapps\Proof\Mshy_en.lex
+   01-17-1997   11:05:30a ----    19,456   OS\Msapps\Proof\Msth32.dll
+   01-17-1997   10:51:18a ----   669,695   OS\Msapps\Proof\Msth_am.lex
+
+                     33 Files  3,363,891 bytes
+
+Disk 3
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_3.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_3.cab
+
+   File Date    Time           File Size   File Name
+   ------------------------------------------------------------------------
+
+   Os\Msapps\Proof\Msth_am.lex : Starts in cabinet Wrd97_2.cab on disk 2
+
+   01-17-1997   10:51:18a ----   354,113   Os\Msapps\Proof\Msth_br.lex
+   01-17-1997    5:26:32p ----   521,216   Os\Msapps\Equation\Eqnedt32.exe
+   01-17-1997   10:57:38a ----   147,903   Os\Msapps\Equation\Eqnedt32.hlp
+   01-17-1997   10:57:36a ----     2,557   Os\Msapps\Equation\Eqnedt32.cnt
+   01-17-1997   10:57:38a ----     4,402   Os\Msapps\Equation\Eqnedt32.srg
+   01-17-1997   10:50:00a ----     7,656   Os\Fonts\Mtextra.ttf
+   01-17-1997    5:30:20p ----    61,952   Template\Letters\Contfax.dot
+   01-17-1997    8:28:22p ----    48,640   Template\Letters\Elegfax.dot
+   01-17-1997    8:28:22p ----    49,152   Template\Letters\Proffax.dot
+   01-17-1997   10:59:08a ----    89,600   Template\Reports\Contrepo.dot
+   01-17-1997   10:59:08a ----    57,856   Template\Reports\Elegrepo.dot
+   01-17-1997    5:24:24p ----    53,248   Template\Letters\Contltr.dot
+   01-17-1997    5:30:22p ----    47,616   Template\Memos\Contmemo.dot
+   01-17-1997    5:24:26p ----    47,104   Template\Letters\Elegltr.dot
+   01-17-1997    8:28:24p ----    41,984   Template\Memos\Elegmemo.dot
+   01-17-1997    5:24:28p ----    47,104   Template\Letters\Profltr.dot
+   01-17-1997    8:28:24p ----    41,984   Template\Memos\Profmemo.dot
+   01-17-1997    2:38:44a ----    53,248   Template\Other\Contresu.dot
+   01-17-1997    5:06:46p ----    54,784   Template\Other\Elegresu.dot
+   01-17-1997    5:25:04p ----    60,416   Template\Reports\Profrepo.dot
+   01-17-1997   10:59:04a ----    44,544   Template\Other\Profresu.dot
+   01-17-1997   10:49:56a ----   123,976   Os\Fonts\Arialn.ttf
+   01-17-1997   10:49:58a ----   130,180   Os\Fonts\Arialni.ttf
+   01-17-1997   10:49:56a ----   127,720   Os\Fonts\Arialnb.ttf
+   01-17-1997   10:49:56a ----   126,980   Os\Fonts\Arialnbi.ttf
+   01-17-1997   10:49:58a ----   150,412   Os\Fonts\Bookos.ttf
+   01-17-1997   10:56:50a ----   143,368   Os\Fonts\Bookosb.ttf
+   01-17-1997   10:56:52a ----   150,900   Os\Fonts\Bookosbi.ttf
+   01-17-1997   10:56:52a ----   149,704   Os\Fonts\Bookosi.ttf
+   01-17-1997   10:49:58a ----   103,992   Os\Fonts\Ariblk.ttf
+   01-17-1997   10:49:58a ----   185,680   Os\Fonts\Gara.ttf
+   01-17-1997   10:50:00a ----   186,744   Os\Fonts\Garabd.ttf
+   01-17-1997   10:50:00a ----   176,916   Os\Fonts\Garait.ttf
+   01-17-1997   10:50:00a ----   126,056   Os\Fonts\Impact.ttf
+
+                     34 Files  3,719,707 bytes
+
+Disk 4
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_4.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_4.cab
+
+   File Date    Time           File Size   File Name
+   ------------------------------------------------------------------------
+
+   OS\Fonts\Garait.ttf : Starts in cabinet Wrd97_3.cab on disk 3
+   OS\Fonts\Impact.ttf : Starts in cabinet Wrd97_3.cab on disk 3
+
+   01-17-1997   10:51:06a ----   105,312   Os\Fonts\Tahoma.ttf
+   01-17-1997    5:27:39p ----   136,192   Os\Msapps\Textconv\Excel32.cnv
+   01-17-1997    5:19:28p ----   125,440   Os\Msapps\Textconv\Msconv97.dll
+   01-17-1997   11:39:46a ----   109,568   Os\Msapps\Textconv\Lotus32.cnv
+   01-17-1997    2:44:00a ----   181,248   Os\Msapps\Textconv\Macwrd32.cnv
+   01-17-1997   10:58:04a ----     2,212   Os\Msapps\Textconv\Rtf_mw5.txt
+   01-17-1997   11:39:50a ----   183,808   Os\Msapps\Textconv\Wnwrd232.cnv
+   01-17-1997    9:54:54p ----   135,680   Os\Msapps\Textconv\Mswrd632.cnv
+   01-17-1997   11:39:52a ----   340,480   Os\Msapps\Textconv\Wpft532.cnv
+   01-17-1997   11:39:52a ----   108,544   Os\Msapps\Textconv\Wpequ532.dll
+   01-17-1997   10:58:04a ----     5,528   Os\Msapps\Textconv\Rtf_wp5.txt
+   01-17-1997    5:58:44p ----   252,928   Os\Msapps\Textconv\Wpft632.cnv
+   01-17-1997   11:39:50a ----   189,440   Os\Msapps\Textconv\Txtlyt32.cnv
+   01-17-1997   11:39:48a ----    38,912   Os\Msapps\Textconv\Recovr32.cnv
+   01-17-1997    5:38:28p ----   377,344   Os\Msapps\Textconv\Html32.cnv
+   01-17-1997    5:07:26p ----    94,208   Os\Msapps\Textconv\Msencode.dll
+   01-17-1997   11:39:54a ----    19,456   Os\Msapps\Textconv\Wrd6ex32.cnv
+   01-17-1997    3:29:48a ----   259,072   Os\Msapps\Textconv\Mswrd832.cnv
+   01-17-1997   11:39:50a ----   118,272   Os\Msapps\Textconv\Works332.cnv
+   01-17-1997   11:39:52a ----   260,096   Os\Msapps\Textconv\Works432.cnv
+   01-17-1997   11:39:28a ----   280,576   Os\Msapps\Grphflt\Dxfimp32.flt
+   01-17-1997   10:51:12a ----    17,909   Os\Msapps\Grphflt\Ms.dxf
+   01-17-1997   11:39:30a ----   340,480   Os\Msapps\Grphflt\Emfimp32.flt
+   01-17-1997   10:51:12a ----     2,396   Os\Msapps\Grphflt\Ms.emf
+   01-17-1997    5:38:24p ----   130,560   Os\Msapps\Grphflt\Gifimp32.flt
+   01-17-1997    5:20:00p ----    81,920   Os\Msapps\Grphflt\Pictim32.flt
+   01-17-1997   10:51:12a ----     3,314   Os\Msapps\Grphflt\Ms.pct
+   01-17-1997   10:51:12a ----     1,069   Os\Msapps\Grphflt\Ms.gif
+   01-17-1997    5:21:36p ----   222,720   Os\Msapps\Grphflt\Png32.flt
+   01-17-1997   10:51:12a ----     1,682   Os\Msapps\Grphflt\Ms.png
+   01-17-1997    6:02:06p ----   393,728   Os\Msapps\Grphflt\Cgmimp32.flt
+   01-17-1997   10:51:10a ----   606,062   Os\Msapps\Grphflt\Cgmimp32.fnt
+
+                     32 Files  5,126,156 bytes
+
+Disk 5
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_5.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_5.cab
+
+   File Date    Time           File Size   File Name
+   ------------------------------------------------------------------------
+
+   Os\Msapps\Grphflt\Cgmimp32.fnt : Starts in cabinet Wrd97_4.cab on disk 4
+
+   01-17-1997   10:51:10a ----     6,615   Os\Msapps\Grphflt\Cgmimp32.cfg
+   01-17-1997   10:57:38a ----    31,497   Os\Msapps\Grphflt\Cgmimp32.hlp
+   01-17-1997   10:51:10a ----     1,908   Os\Msapps\Grphflt\Ms.cgm
+   01-17-1997    5:20:14p ----   203,264   Os\Msapps\Grphflt\Cdrimp32.flt
+   01-17-1997   10:51:10a ----    15,558   Os\Msapps\Grphflt\Ms.cdr
+   01-17-1997   11:39:32a ----    68,608   Os\Msapps\Grphflt\Wpgexp32.flt
+   01-17-1997   11:39:34a ----   149,504   Os\Msapps\Grphflt\Wpgimp32.flt
+   01-17-1997   10:51:12a ----     1,382   Os\Msapps\Grphflt\Ms.wpg
+   01-17-1997    8:34:36p ----    52,224   Os\Msapps\Grphflt\Epsimp32.flt
+   01-17-1997   10:51:12a ----    15,067   Os\Msapps\Grphflt\Ms.eps
+   01-17-1997   11:39:30a ----    69,120   Os\Msapps\Grphflt\Pcdimp32.flt
+   01-17-1997   11:39:30a ----   212,480   Os\Msapps\Grphflt\Pcdlib32.dll
+   01-17-1997   11:39:26a ----   265,728   Os\Msapps\Grphflt\Drwimp32.flt
+   01-17-1997   10:51:12a ----     2,989   Os\Msapps\Grphflt\Ms.drw
+   01-17-1997   11:39:30a ----    57,344   Os\Msapps\Grphflt\Pcximp32.flt
+   01-17-1997   10:51:12a ----     1,359   Os\Msapps\Grphflt\Ms.pcx
+   01-17-1997    5:07:58p ----   104,960   Os\Msapps\Grphflt\Tiffim32.flt
+   01-17-1997   10:51:12a ----     2,650   Os\Msapps\Grphflt\Ms.tif
+   01-17-1997   11:39:32a ----    55,808   Os\Msapps\Grphflt\Tgaimp32.flt
+   01-17-1997   10:51:12a ----     1,810   Os\Msapps\Grphflt\Ms.tga
+   01-17-1997   11:39:26a ----    61,952   Os\Msapps\Grphflt\Bmpimp32.flt
+   01-17-1997   11:39:32a ----    13,312   Os\Msapps\Grphflt\Wmfimp32.flt
+   01-17-1997   10:51:10a ----     2,102   Os\Msapps\Grphflt\Ms.bmp
+   01-17-1997   10:51:12a ----     3,238   Os\Msapps\Grphflt\Ms.wmf
+   01-17-1997   11:39:30a ----   171,520   Os\Msapps\Grphflt\Jpegim32.flt
+   01-17-1997   10:51:12a ----     1,061   Os\Msapps\Grphflt\Ms.jpg
+   01-17-1997    5:36:52p ----    94,208   Template\Other\More.dot
+   01-17-1997    5:30:20p ----   680,960   Template\Legal\Pleading.wiz
+   01-17-1997    5:24:44p ----   424,448   Template\Pub\Newslttr.wiz
+   01-17-1997    5:24:38p ----   428,544   Template\Other\Resume.wiz
+   01-17-1997    5:24:28p ----   477,184   Template\Letters\Fax.wiz
+   01-17-1997    5:24:28p ----    54,784   Template\Letters\Label.wiz
+   01-17-1997    5:24:26p ----    49,152   Template\Letters\Envelope.wiz
+   01-17-1997    5:24:34p ----   415,744   Template\Memos\Memo.wiz
+
+                     34 Files  4,198,084 bytes
+
+Disk 6
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_6.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_6.cab
+
+   File date    Time           File size   File name
+   ------------------------------------------------------------------------
+
+   Template\Memos\Memo.wiz : Starts in cabinet Wrd97_5.cab on disk 5
+
+   01-17-1997    5:24:28p ----    63,488   Template\Letters\Letter.wiz
+   01-17-1997   11:39:58a ----   130,048   Os\System\Mapivi32.dll
+   01-17-1997   11:39:58a ----    18,944   Os\System\Mapivitk.dll
+   01-17-1997   11:05:48a ----    11,856   Os\System\Mvthksvr.exe
+   01-17-1997    6:00:18p ----   594,164   Office\Oftip8.hlp
+   01-17-1997   10:54:44a ----     9,921   Office\Ofnew8.hlp
+   01-17-1997    9:52:04p ----       782   Office\Ofnew8.cnt
+   01-17-1997   10:54:38a ----     6,885   Office\Commtb32.hlp
+   01-17-1997   11:38:22a ----    31,744   Office\Hlp95en.dll
+   01-17-1997   11:04:36a ----    22,528   Office\Convert8.dll
+   01-17-1997    6:00:28p ----   240,128   Office\Macros\Convert8.wiz
+   01-17-1997    5:29:58p ----   177,152   Office\Macros\Support8.dot
+   01-17-1997    5:29:58p ----   585,216   Office\Macros\Macros8.dot
+   01-17-1997   10:55:22a ----   165,735   Office\Wdwph8.hlp
+   01-17-1997   10:55:20a ---- 1,968,249   Office\Wdmain8.hlp
+
+                     15 Files  4,026,840 bytes
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q169931 WD97: Word 97 for Windows 3.5" Disk Contents (Disks 7-12)
+
+   Q169933 WD97: Word 97 for Windows 3.5" Disk Contents (Disks 13-18)
+
+Additional query words: 8.0 diskette floppy floppies 3 1/2 3.5 contents listing directory dir
+
+======================================================================
+Keywords          : kbdiskdir winword word97 kbdir 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

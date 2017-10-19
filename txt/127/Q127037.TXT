@@ -1,0 +1,81 @@
+DOCUMENT:Q127037  24-AUG-1999  [foxpro]
+TITLE   :Purpose of CHARACTER BINARY and MEMO BINARY Fields
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro version 3.0 introduces several new data types including
+Character(binary) and Memo(binary). This article describes the purpose and
+implementation of these two new data types.
+
+MORE INFORMATION
+================
+
+The Character(binary) and Memo(binary) data types are provided for fields that
+should not be translated if the table is opened using a different code page. If
+the table is converted to another code page, the binary fields will not be
+translated. In all other respects, the Character(binary) and Memo(binary) fields
+are identical to the existing Character and Memo fields.
+
+You might use binary fields to store:
+
+ - Unsupported graphic images. For example, SQL SERVER contains unsupported
+   graphic images that could be selected into a memo field.
+
+ - Encrypted passwords that use the extended ASCII character set.
+
+ - Compiled code.
+
+ - FoxPro commands that contain strings that use the extended character set. For
+   example, if a memo field or character field contains FoxPro code that
+   references field names, these field names would be changed by a change in a
+   code page if they used characters from the extended character set. However,
+   the field names of the tables themselves would not be changed by a change in
+   a code page.
+
+Using the Table Designer in Visual FoxPro, the Character(binary) and Memo(binary)
+field types may be selected from the data Type drop down list.
+
+To specify that a field is going be binary with the CREATE or ALTER TABLE
+commands, use the NOCPTRANS clause, as in this example:
+
+      CREATE TABLE mytab (cLastName C(35) NOCPTRANS))
+
+This creates the cLastName field with a data type of Character(Binary).
+
+The TYPE function will return 'M' or 'C' for the binary memo or binary character
+field. This return value is the same as for a regular memo or character field.
+
+Additional query words: VFoxWin proprietary encryption non ole server
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

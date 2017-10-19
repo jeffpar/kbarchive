@@ -1,0 +1,76 @@
+DOCUMENT:Q113710  08-AUG-2001  [winnt]
+TITLE   :Err Msg: "Access Denied" on Backup or Update of RAS Temp File
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Remote Access Service (RAS) Server is running, and you attempt to either
+backup the root directory using NTBackup or update the Emergency Repair Disk
+using REPAIR.EXE from the Windows NT 3.1 Resource Kit, the following error
+message appears:
+
+   Copy %systemroot%\System32\RAS41766.TEM
+
+   Access Denied.
+
+   Abort or Retry.
+
+CAUSE
+=====
+
+The RAS Server initialization code creates the temporary file RAS41766.TEM in
+the %systemroot%\System32 directory when starting RAS and deletes it when RAS is
+stopped. The location for this temporary file is not user selectable. When you
+perform a disk backup or an update to the Emergency Repair Disk, Windows NT
+tries to access this file. Because Windows NT security only allows access to
+this file by the RAS Server initialization code (the file's parent process),
+NTBACKUP.EXE or REPAIR.EXE are denied access resulting in the above error.
+
+RESOLUTION
+==========
+
+To work around this problem, stop RAS before attempting to backup your disk with
+NTBackup or update the Emergency Repair Disk.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. This problem has been corrected in Windows NT
+Workstation and Windows NT Server version 3.5.
+
+Additional query words: prodnt admin manager
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,49 @@
+DOCUMENT:Q71364  01-NOV-1999  [win95x]
+TITLE   :Program Manager Command Line Limited to 80 Characters
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+The Program Manager (PROGMAN.EXE) included with Windows 3.0 has an
+80-character limit in the Command Line text entry box in the Program Item
+Properties dialog box. (This dialog box can be accessed by choosing
+Properties from the File menu.) There is no way to get beyond this
+limitation. If the pathnames to your programs are very long, you may want
+to consider placing these pathnames in the AUTOEXEC.BAT or some other batch
+file that you run before starting Windows. This way, just the executable
+needs to be on the command line.
+
+NOTE: MS-DOS itself has a limitation of 128 characters on its command line.
+Additional character length in the Program Manager Command Line field is
+available in Windows 3.1, which allows up to 128 characters.
+
+Additional query words: 3.00 win30 windrvr 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

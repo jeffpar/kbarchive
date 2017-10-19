@@ -1,0 +1,49 @@
+DOCUMENT:Q78056  27-OCT-1999  [win3x]
+TITLE   :Roland Driver Does Not Play Wave Files
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00 | 3.10
+WINDOWS
+kbmm kbsound
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+The Roland driver that ships with Windows with Multimedia Extensions
+is a MIDI driver, not a sound driver. Because this driver is a MIDI
+driver, it does not offer sound support, such as the playing of wave
+(.WAV) files.
+
+The driver also does not show up under the initial setup of Windows
+under Sound Board options. This driver can only be manipulated by
+using Control Panel's Driver icon.
+
+Additional query words: 1.00 1.0 3.10 MMWIN WIN31
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

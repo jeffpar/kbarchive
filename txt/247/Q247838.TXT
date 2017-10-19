@@ -1,0 +1,72 @@
+DOCUMENT:Q247838  10-APR-2001  [sms]
+TITLE   :SMS: Clients Not Installed When Site Server in Resource Domain
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbClient kbConfig kbSecurity kbsms200 kbCAP
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Systems Management Server (SMS) site server is installed in a resource
+domain and the clients reside in the master domain, only the Available Programs
+Manager (APM) and client-based components are installed. It is possible that the
+clients will not be able to access the client access point (CAP) for the site.
+When this behavior occurs, the remainder of the client components are not
+installed.
+
+To fully install the client components, you must perform the following tasks:
+
+For sites where the CAP resides on a member server:
+
+ - Add the Domain Admins group from the master domain to the local
+   Administrators group on the member server with the CAP.
+
+   -and-
+
+ - Add the Domain Users group from the master domain to the local Users group on
+   the member server with the CAP.
+
+-or-
+
+For sites where the CAP resides on a domain controller in the resource domain:
+
+ - Add the Domain Users group from the master domain to the local Users group of
+   the resource domain where the SMS site server resides.
+
+After the CAP's security has been addressed, the SMS client components can be
+installed. When you either stop and start the SMS Client Service on the SMS
+clients or run one of the client-installation methods, the client contacts the
+CAP. It then installs the additional client components that have been enabled
+from the SMS Administrator Console.
+
+Additional query words: prodsms not available
+
+======================================================================
+Keywords          : kbsetup kbClient kbConfig kbSecurity kbsms200 kbCAP 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q161387  19-MAY-1999  [homegame]
+TITLE   :Golf 3.0: Installing Links LS Courses
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+3.0
+WINDOWS
+kbusage kb3rdparty kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When your are installing a Access Software Links LS course, Microsoft Golf 3.0
+is not found.
+
+RESOLUTION
+==========
+
+To install the Links LS course(s) for use with Golf 3.0, create a text file
+named Msgolf3.exe in the Msgolf folder.
+
+1. Create a new file in Notepad or Wordpad.
+
+   NOTE: This file does need to contain any information.
+
+2. Rename the file you created in Step 1 to Msgolf3.exe.
+
+3. Copy or Move file to the MSGOLF directory.
+
+   NOTE: For more instructions about how copy, move, or rename a file, see your
+   Windows printed documentation or online Help.
+
+4. Install the Links LS course.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 3.00 course access addition pro add
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

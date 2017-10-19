@@ -1,0 +1,85 @@
+DOCUMENT:Q150226  11-JAN-2001  [vbwin]
+TITLE   :BUG: Sheridan Panel Receives Focus & Active Control Loses Focus
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbVBp400bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the 16-bit edition of Microsoft Visual Basic 4.0, clicking on a Sheridan
+Panel causes the panel to receive the focus while causing the active control on
+the panel to lose the focus. Users are unable to send any input to the Panel
+control, and the control lacks a GotFocus or LostFocus event.
+
+RESOLUTION
+==========
+
+In the Click event of the panel, place the following lines of code:
+
+      Private Sub SSPanel1_Click()
+         SendKeys "{TAB}"
+         Beep
+      End Sub
+
+When the user clicks or double-clicks the frame control, the focus is restored to
+the control that had the focus previously. However, the user is unable to use
+keystrokes to tab to the frame control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start a new project in the 16-bit edition of Visual Basic 4.0. Form1 is
+   created by default.
+
+2. Place a Sheridan Panel control on Form1.
+
+3. Place a Text box on the Sheridan panel.
+
+4. Press F5 to run the project and click on the Sheridan panel. The Text box
+   loses the focus.
+
+To correct this problem, place the code from the Workaround section above into
+the Click event of the Sheridan panel control.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400bug 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

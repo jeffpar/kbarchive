@@ -1,0 +1,109 @@
+DOCUMENT:Q170071  13-JUN-2001  [sna]
+TITLE   :Invokable TP Timeout May Occur With Non-queued Operation
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,3.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 3.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to invoke a non-queued Win32 autostarted APPC or CPIC
+application configured to run on the SNA Server Windows NT and Windows 95 client
+computer, the following error may occur:
+
+   Event ID: 60
+   Failed to invoke APPC TP <tpname>, sense data = 084C0000
+
+SNA client-side traces reveal that the application is invoked and correctly posts
+a RECEIVE_ALLOCATE (or CMACCP) before the dynamic load request for the TP
+arrives, though the RECEIVE_ALLOCATE (or CMACCP) never completes and the above
+dynamic load timeout error is logged.
+
+CAUSE
+=====
+
+Due to changes implemented within SNA Server 2.11 (and later versions) to
+support IBM CICS for Windows NT, invokable APPC TPs which require non- queued
+operation may occasionally experience dynamic load timeout problems along with
+Event 60.
+
+RESOLUTION
+==========
+
+An update to the SNA Server 3.0 Windows NT and Windows 95 client is available to
+correct this problem (post-SP1). With this update applied, a new registry
+setting can be configured to disable this special support for the IBM CICS
+product
+
+   CicsSupport: REG_DWORD: 0
+
+where:
+
+   0 = disable support for IBM CICS for Windows NT
+   1 = enable support (the default)
+
+If the initial invokable TP is written as a Windows NT service, then the registry
+key value to add exists in:
+
+   HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/<tpname>
+   /Parameters/ 
+
+If the initial invokable TP is written as a Windows NT application, then the
+registry key value to add exists in:
+
+   HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/SnaBase/Tps
+   /<tpname>/Parameters/ 
+
+If the initial invokable TP is configured to run on a Windows 95 client, then the
+registry key value to add exists in
+
+   HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/SnaBase/Parameters/TPs
+   /<tpname>/Parameters/ 
+
+where <tpname> is the APPC or CPIC transaction program name.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0 and 3.0
+Service Pack 1. This problem was corrected in the latest SNA Server version 3.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: SAS
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

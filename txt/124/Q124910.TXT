@@ -1,0 +1,136 @@
+DOCUMENT:Q124910  08-AUG-2001  [winnt]
+TITLE   :Using Ontrack Disk Manager to Support Large IDE Drives
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes using Ontrack Disk Manager on an MS-DOS system to
+partition and format a large (more than 540 megabytes [MB]) IDE hard disk drive.
+A large IDE hard disk drive usually requires a system BIOS or controller that
+supports more than 1024 cylinders. For general information on installing Windows
+NT on large IDE hard disk drives, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q124307: Installing Windows NT on Large IDE Disk Drives
+
+NOTE: To use Ontrack Disk Manager with Windows NT version 3.5, you need to obtain
+an updated driver from Microsoft Product Support Services.
+
+This updated driver (ATDISK.SYS) is included with the latest U.S. Service Pack
+for Windows NT version 3.5. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+Installing the Updated Driver
+-----------------------------
+
+Once you obtain the updated driver, if you are installing it on a system already
+running Windows NT version 3.5, follow the installation instructions included
+with the updated driver or Service Pack.
+
+If you are attempting to install Windows NT version 3.5 on a drive that has been
+formatted with Ontrack Disk Manager, installation of the updated driver is
+complicated and depends upon whether you are installing from a CD-ROM or from
+floppy disk.
+
+CD-ROM Installation
+-------------------
+
+Installing from a CD-ROM onto a disk formatted with Ontrack Disk Manager requires
+that you boot the system under MS-DOS and access the CD-ROM. After booting under
+MS-DOS, start installation from the \I386 directory on the CD-ROM using the
+WINNT.EXE command. Allow the Windows NT Setup program to create three boot disks
+and copy files to the temporary directory, $WIN_NT$.~LS. You may also use the
+WINNT /B mode of Setup, which does not require the three boot floppy disks but
+does require more free space on your boot partition. After the file copy is
+finished, Setup asks you to reboot the system with the boot floppy disk in drive
+A; do not do this. Instead, reboot to MS-DOS and do the following:
+
+1. Replace the ATDISK.SYS file on Setup Disk 3 with the updated file. If you
+   used the /b option on Windows NT, replace ATDISK.SYS in the $WIN_NT$.~BT
+   directory instead.
+
+   NOTE: If your copy of ATDISK.SYS is compressed (ends with .SY_ instead of
+   .SYS) you will need to decompress it, using the expand command, before
+   replacing the copy on the installation disks.
+
+2. Replace the ATDISK.SYS file in the directory $WIN_NT$.~LS with the updated
+   file.
+
+3. Reboot the system and when Disk Manager gives you the option of starting from
+   a boot floppy disk, select this option and boot from Setup Disk 1.
+
+This should allow you to set up Windows NT version 3.5 on a drive formatted with
+Ontrack Disk Manager.
+
+Floppy Disk Installation
+------------------------
+
+Floppy installation on an Ontrack Disk Manager-formatted drive requires that you
+install Windows NT on to a FAT partition. You can convert the partition to NTFS
+after Setup is complete. To set up, follow these steps:
+
+1. Make a disk copy of Setup Disk 3.
+
+2. Replace ATDISK.SYS on the disk copy with the updated ATDISK.SYS file.
+
+   NOTE: If your copy of ATDISK.SYS is compressed (ends with .SY_ instead of
+   .SYS) you will need to decompress it, using the expand command, before
+   replacing the copy on the installation disks.
+
+3. Reboot the system and when Disk Manager gives you the option of starting from
+   a boot floppy disk, select this option and boot from the Setup boot disk.
+
+4. When you reach the first reboot (at Disk 9) do not allow Setup to continue;
+   instead reboot to MS-DOS (either using a bootable MS-DOS floppy disk or
+   interrupting the boot menu before it loads Setup) and replace ATDISK.SYS in
+   <WINNT>\SYSTEM32\DRIVERS with the updated file, and then reboot and
+   allow Setup to finish.
+
+After you finish installing Windows NT version 3.5, you can convert your
+partitions from FAT to NTFS if you want. You may experience an extra delay in
+booting after you convert your boot partition to NTFS; however, other than this
+delay, there are no problems with converting to NTFS.
+
+Ontrack Disk Manager is manufactured by a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: prodnt howto hrdwr
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

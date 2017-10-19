@@ -1,0 +1,77 @@
+DOCUMENT:Q243300  06-AUG-2002  [sms]
+TITLE   :Err Msg: Remote Tools Security Rights to Run Remote Tools on...
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbsms200 kbsms200bug kbsmsProvider
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have appropriate Systems Management Server (SMS) security rights and
+try to remotely control an SMS client, you may be unable to do so, and you may
+receive the following error message:
+
+   Remote Tools
+   Security rights to run remote tools on this client have been denied.
+
+Note that this problem may also occur when you run the Remote.exe command from a
+command prompt.
+
+
+Also, you may receive the following error message (or one that is similar to it)
+in the Smsprov.log file:
+
+   *
+   *
+   E:\OPALSP1\sdk_provider\nt\smsprov\SspStatusMessage.cpp(420) : User
+   "DOMAIN\user" is unknown to SMS security and does not have permissions to log
+   status messages.
+   *
+   *
+
+CAUSE
+=====
+
+This problem can occur when SQL is configured to use a case-sensitive sort order
+and the logged-on user name that the MMC retrieves from the workstation does not
+match the case of the user name in the Systems Management Server Administrator
+Console under Site Database\Security Rights.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbtool kbsms200 kbsms200bug kbsmsProvider 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

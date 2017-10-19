@@ -1,0 +1,67 @@
+DOCUMENT:Q66654  10-JUN-1999  [win16sdk]
+TITLE   :INFO: Possible Causes for System Resource Reduction
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbSDKPlatform kbSysSettings
+
+======================================================================
+3.00  3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can note via Program Manager's "About Box" that Windows's System Resources
+can be inadvertently reduced by a Windows-based application, causing subsequent
+RegisterWindow() or CreateWindow() function calls to fail.
+
+The system resources are a reflection of the lower USER and GDI's data segments.
+The following steps eliminate the major causes of USER's data segment fill-up
+listed in the following:
+
+ - Ensure that the cbClsExtraBytes and cbWndExtraBytes are set to 0 in the
+   WNDCLASS structure, unless the application is definitely using them.
+
+ - Ensure that a MakeProcInstance() is performed and the window procedure is
+   EXPORTed in the .DEF file.
+
+ - Use CVW to verify that the application is receiving the WM_CREATE message.
+
+ - Confirm that all menus created, loaded, or added dynamically [that is, using
+   CreateMenu(), AppendMenu(), and so forth] are properly destroyed before
+   terminating the application.
+
+The main reason why GDI's data segment fills up is that objects are being created
+and are not being destroyed when they are no longer needed.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbSysSettings 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

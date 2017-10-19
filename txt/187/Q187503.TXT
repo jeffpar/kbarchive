@@ -1,0 +1,68 @@
+DOCUMENT:Q187503  21-MAY-2002  [iis]
+TITLE   :Very Long URL Passed to ASP May Cause Access Violation
+PRODUCT :Internet Information Server
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a very long Uniform Resource Locator (URL), usually with hundreds of
+forward slash (/) characters, is passed to an Active Server Pages (ASP) page on
+the Web server, an access violation occurs.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the following fix.
+
+This fix should have the following time stamp:
+
+      04/10/98  07:49p               382,576 asp.dll (Intel)
+      04/10/98  08:04p               557,328 asp.dll (Alpha)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 3.0.
+
+A supported fix is now available, but has not been fully regression tested and
+should be applied only to systems experiencing this specific problem. Contact
+Microsoft Technical Support for more information.
+
+
+
+Additional query words: violate hot fix qfe MapPath akz
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbiisSearch kbiis300
+Version           : :3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

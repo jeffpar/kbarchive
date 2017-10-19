@@ -1,0 +1,74 @@
+DOCUMENT:Q166708  09-AUG-2001  [winnt]
+TITLE   :"Entry Point Not Found" Error with CleanSweep 3.0 and Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing Service Pack 4 or Service Pack 5 in Windows NT version 3.51,
+the following error message may be received multiple times:
+
+   Entry Point Not Found
+   The procedure entry point SymSetOptions could not be located in the dynamic
+   link library Imagehlp.dll
+
+This error message appears frequently when you are using the computer. The file
+reporting the error changes.
+
+CAUSE
+=====
+
+CleanSweep replaces Imagehlp.dll, a Windows NT system file. The service pack
+upgrade replaces the CleanSweep version of this file.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method:
+
+ - Install the service pack before installing CleanSweep version 3.0.
+
+ - If CleanSweep version 3.0 is already installed, uninstall Cleansweep using
+   its uninstall tool, and then reinstall Cleansweep.
+
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: winlogon winfile imagehelp
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

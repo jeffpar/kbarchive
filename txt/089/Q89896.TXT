@@ -1,0 +1,61 @@
+DOCUMENT:Q89896  14-JUN-2001  [winmisc]
+TITLE   :How to Add Vocabulary Items to ProofReader Dictionary
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+ - Microsoft Excel for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows Sound System ProofReader comes with five default dictionaries:
+DATES.DCT, MONEY.DCT, OTHER.DCT, NUMBERS.DCT, and USER.DCT. USER.DCT is empty by
+default and is the only dictionary to which you can add new vocabulary items.
+
+To add a new vocabulary item to the USER.DCT dictionary:
+
+1. From the Excel Proof menu, choose Options.
+
+2. Choose the Dictionary icon.
+
+3. Select the USER.DCT dictionary icon.
+
+4. Choose the New button.
+
+5. In the New Vocabulary Item Name field, enter the name of the new item.
+
+6. Choose the Record button.
+
+7. Dictate the pronunciation for the new item using the microphone.
+
+8. Choose the Stop and OK buttons to save your new vocabulary item.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExcelSearch kbExcel500 kbExcel400 kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200 kbExcelWinSearch
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

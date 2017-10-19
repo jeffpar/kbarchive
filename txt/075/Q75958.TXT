@@ -1,0 +1,64 @@
+DOCUMENT:Q75958  09-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Adding Multiple Enclosures to a Message
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The AddEnclosure command in the Microsoft Mail version 3.0 HyperCard Software
+Development Kit (SDK) does not use Mail's File dialog box. It uses the standard
+Macintosh File dialog box, which adds only one file to the message at a time.
+
+To add multiple enclosures, this command must be called multiple times.
+
+MORE INFORMATION
+================
+
+The following script allows an unknown number of files to be added to a
+message:
+
+     on mouseup
+         put msmail (CreateMessage) into messageRef
+         put 0 into count
+         repeat
+           put msmail (AddEnclosure, messageRef)
+           if msmail (GetEnclosureInfo, messageRef, "enclCount") = count
+      then exit repeat
+           add 1 to count
+         end repeat
+
+This script brings up the standard Macintosh File dialog box until the Cancel
+button is clicked.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard300
+Version           : :3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

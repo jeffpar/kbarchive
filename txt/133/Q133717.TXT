@@ -1,0 +1,72 @@
+DOCUMENT:Q133717  01-JAN-2001  [homemisc]
+TITLE   :Windows 95/98: How to Find a File
+PRODUCT :Microsoft Home Miscellaneous Products
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to find a file in Windows 95/98.
+
+MORE INFORMATION
+================
+
+To find a file in Windows 95/98, do the following:
+
+1. Click Start, point to Find, and then click Files and Folders.
+
+2. In the Named box, type the name of the file you want to find.
+
+3. In the Look In box, select the name of the hard drive or connected resource
+   you want to search. If you want to search all connected resources, including
+   your hard drive, select My Computer.
+
+4. Make sure the Include Subfolders box is checked.
+
+5. Click Find Now.
+
+Additional Find Features
+------------------------
+
+You can search for more than one file at a time by separating each file name with
+a space. If the name of the file contains at least one space, enclose each file
+name within quotation marks.
+
+The Date Modified tab and the Advanced tab contain additional, more selective
+search features.
+
+For more information about how to use these features, please see your Windows
+online Help.
+
+Additional query words: kbhowto locate finding search finds
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

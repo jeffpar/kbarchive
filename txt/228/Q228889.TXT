@@ -1,0 +1,74 @@
+DOCUMENT:Q228889  10-AUG-2001  [winnt]
+TITLE   :Err Msg: "NFS Login Failed" When Connecting to NFS Share
+PRODUCT :Microsoft Windows NT
+PROD/VER::; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Services for UNIX Add-On Pack 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Client for NFS component of Services for UNIX, whenever a
+user attempts to connect to a network file system (NFS) share the following
+error message is displayed:
+
+   NFS Login Failed
+
+CAUSE
+=====
+
+This behavior occurs because the user's NFS client credentials did not
+authenticate to the UNIX network information service (NIS) server or the
+personal computer network file system daemon (PCNFSD) server.
+
+RESOLUTION
+==========
+
+To resolve this issue, specify an existing NIS server and NIS domain, or specify
+a PCNFSD server that can positively validate the NFS user and password
+credentials in the Client for NFS configuration. If no NIS or PCNFSD server
+exists, the client uses the Nobody/Nobody (-2/-1) UID/GID NFS credentials.
+
+To disable the NFS login confirmation dialog box:
+
+1. In the Client for NFS Configuration dialog box, click the Authentication tab.
+
+2. Clear the following check boxes:
+
+    - "Authenticate at System Logon"
+
+    - "Display this Dialog on Connect"
+
+    - "Display Confirmation"
+
+Additional query words: SFU
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTServicesUnix
+Version           : :; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

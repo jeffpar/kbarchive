@@ -1,0 +1,89 @@
+DOCUMENT:Q85271  06-NOV-1999  [win95x]
+TITLE   :Word for MS-DOS Err Msg: System Integrity Violation
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running version 5.5 of Microsoft Word for MS-DOS from Microsoft Windows,
+you may receive the following error message:
+
+   System Integrity Violation
+
+CAUSE
+=====
+
+This is usually caused by Word attempting to access an EMS LIM 3.2 page frame
+when there is not one.
+
+RESOLUTION
+==========
+
+There are three solutions to this problem:
+
+ - Add the Optional Parameter /X to the PIF for Word:
+
+   a. Run PIF Editor.
+
+   b. From the File menu, choose Open and load Word's PIF.
+
+   c. Add the following to the Optional Parameters field:
+
+         /X
+
+   The /X disables Word from using EMS memory.
+
+   -or-
+
+ - Change the EMS Memory option in the PIF to:
+
+      KB Required 0    KB Desired 0
+
+   -or-
+
+ - Ensure that Windows has a LIM 3.2 page frame available. If you are using
+   EMM386.EXE for UMB support to load drivers and programs high, then make sure
+   you use the RAM switch and not the NOEMS switch. You can run MSD.EXE from
+   Windows and choose the Memory option to determine what type of page frame is
+   available to MS-DOS-based applications running under Windows.
+
+MORE INFORMATION
+================
+
+For more information on possible switches and settings for page frames and
+Windows, consult the SYSINI.WRI file that comes with Windows. For more
+information on the PIF Editor or EMM386.EXE, consult the "Microsoft Windows
+User's Guide."
+
+Additional query words: 3.10 3.1 3.11 pageframe 4.0
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

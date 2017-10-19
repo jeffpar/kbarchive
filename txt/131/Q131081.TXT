@@ -1,0 +1,119 @@
+DOCUMENT:Q131081  15-FEB-2000  [foxpro]
+TITLE   :How to Set Object's BackColor to Button Face's BackColor
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to set the BackColor of an object to the
+current button-face color. You can use this in a program to change the BackColor
+of the form or form page color to match that of the button face or 3D color.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example Using Code
+-------------------------------
+
+The following program displays a form that contains one command button (Button1).
+The code in the Click procedure sets the BackColor of the form to the current
+BackColor of the button face.
+
+1. From the File menu, choose New. Select the Program option, and choose the New
+   File button to bring up the Modify Program window.
+
+2. Enter the following code:
+
+      oMyForm = CREATEOBJECT("MyForm")
+      oMyForm.show
+      READ EVENTS
+
+      DEFINE CLASS MyForm AS FORM
+
+         ADD OBJECT Button1 AS COMMANDBUTTON WITH ;
+            caption="QUIT"
+
+         PROCEDURE Click
+            Local cColor cRGB
+            m.cRGB = RGBSCHEME(1,2)
+            m.cColor = 'RGB(' + SUBSTR(m.cRGB, AT(',', m.cRGB, 3) +1)
+            This.BackColor = EVAL(cColor)
+         ENDPROC
+
+         PROCEDURE button1.Click
+            CLEAR EVENTS
+         ENDPROC
+      ENDDEFINE
+
+3. Save the Program, and run it. When the form displays, click an area of the
+   form to see the BackColor of the form change to the BackColor of the button.
+
+Step-by-Step Example Using the Form Designer
+--------------------------------------------
+
+To add this functionality to a Form by using the Visual FoxPro Form Designer,
+follow these steps:
+
+1. Add a command button to the form by using the Form Control Toolbar.
+
+2. Using the secondary (right) mouse button, click the new command button
+   object. Select Properties from the menu that appears.
+
+3. Select the Layout tab in the Properties dialog box. Change the Caption
+   property to QUIT.
+
+4. Select the Methods tab in the Properties dialog box, and double-click the
+   Click event to open the Code window for the Click Procedure of the command
+   button. In the Code window for the Click event, type:
+
+      THISFORM.RELEASE
+
+   NOTE: This code differs from that used in the code example. The command
+   THISFORM.RELEASE is used instead of CLEAR EVENTS because the READ EVENTS is
+   not used to keep the form in memory when DO FORM <formname> is used.
+
+5. Using the primary (left) mouse button, double-click the Form to open the Code
+   window for the different events available for the Form.
+
+6. Select Click from the Procedure list, and add the following code to this
+   Click event:
+
+      Local cColor cRGB
+      m.cRGB = RGBSCHEME(1,2)
+      m.cColor = 'RGB(' + SUBSTR(m.cRGB, AT(',', m.cRGB, 3) +1)
+      This.BackColor = EVAL(cColor)
+
+7. Save the Form, and run it.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

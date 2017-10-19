@@ -1,0 +1,63 @@
+DOCUMENT:Q87450  01-OCT-1999  [win95x]
+TITLE   :MSD Utility Incorrectly Identifies UART Chip
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Microsoft Diagnostic Utility (MSD) shipped with Windows 3.1 to
+identify local COM ports on a personal computer, MSD will erroneously report a
+16550AF under "UART Chip Used" when in fact there is no UART (universal
+asynchronous receiver transmitter) chip or COM port installed at that address.
+This occurs when a utility, such as SETCOM.COM, or a debug script has been used
+to create a COM port address in the BIOS data segment for a non-existing COM
+port.
+
+Other defaults reported by MSD for the non-existing COM port are:
+
+   Baud Rate: 1
+   Parity: Space
+   Data Bits: 8
+   Stop Bits: 2
+   Carrier Detect (CD): Yes
+   Ring Indicator: (RI): Yes
+   Clear To Send (CTS): Yes
+
+MORE INFORMATION
+================
+
+The 16550AF chip is a UART chip with a 16-byte character buffer to reduce
+interrupt overhead and errors during high-speed serial transmissions.
+
+Additional query words: 3.10 3.11 communications comm serial modem
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

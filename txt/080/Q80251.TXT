@@ -1,0 +1,88 @@
+DOCUMENT:Q80251  08-NOV-1999  [pcmail]
+TITLE   :PC Gen: Contents of Modem Script File BUSY.MDM
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 2.1e 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the Microsoft Mail version 2.1e modem script file BUSY.MDM,
+which can be compiled with SCRCOMP.EXE:
+
+   ;********************************************************************
+   ;
+   ;                    Microsoft Mail Script File
+   ;
+   ;       Filename: busy.mdm
+   ;       Date    : Jun 12, 1990
+   ;       Script  : Script file to prevent dialing out
+   ;
+   ;  This script is intended to be used in the phone number field for
+   ;  one or more postoffices in the Admin Setup screen.
+   ;
+   ;  Script procedures defined:
+   ;       CALL
+   ;       DISCONNECT
+   ;
+   ;********************************************************************
+
+   CALL:
+           display ">>> No dialout performed <<<"
+
+           return 7               ; return "busy" signal
+
+   DISCONNECT:
+           wait 2                 ; wait 2 seconds
+
+           send "+++"             ; send escape sequence to put modem
+                                  ;    back to command state
+           wait 2                 ; wait 2 seconds
+
+           clearrsp               ; clear the response buffer
+
+           sendln "ATH0"          ; hang up the phone
+
+           waitrsp 1              ; wait for a response
+
+           if (response != "0^M") ; if hang up failed, drop DTR to force
+                                  ;    hang up
+               {
+               DTR 0              ; drop DTR to reset modem
+               wait 2             ; some modems require a delay here
+               DTR 1              ; raise DTR
+               clearrsp           ; clear response buffer
+               }
+
+           return 0               ; always return OK
+
+Additional query words: 2.1 2.10e 2.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN210e
+Version           : WINDOWS:2.1e
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

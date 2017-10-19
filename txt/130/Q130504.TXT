@@ -1,0 +1,69 @@
+DOCUMENT:Q130504  23-FEB-2000  [foxpro]
+TITLE   :PRB: Connection Dialog Box Doesn't Show Data Source Choices
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,3.0
+OPER/SYS:
+KEYWORDS:kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to create a remote view or when using the Connection Designer
+functions, you may get a connection dialog box with no available data source
+choices. Even though you have ODBC installed and have available data sources in
+the ODBC Control Panel in Windows, Visual FoxPro does not seem to recognize the
+data sources.
+
+CAUSE
+=====
+
+The computer is running Windows 95 or Windows NT but has only 16-bit data
+sources installed. Both of these platforms require 32-bit data sources.
+
+RESOLUTION
+==========
+
+To use the installed data sources, you must install the 32-bit ODBC components
+by reinstalling the ODBC components using Setup or the ODBC Driver 2 Pack.
+
+For information about Windows 95 ODBC drivers, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q128376 ODBC on Windows 95
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: kbfest VFoxWin
+
+======================================================================
+Keywords          : kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300
+Version           : WINDOWS:2.5,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

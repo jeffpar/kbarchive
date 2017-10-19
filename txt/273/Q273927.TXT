@@ -1,0 +1,55 @@
+DOCUMENT:Q273927  22-OCT-2000  [homegame]
+TITLE   :Crimson Skies: Game Hangs When You Start Instant Action Mission
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you fly more than 15 consecutive Instant Action missions in Microsoft
+Crimson Skies, the game stops responding (hangs) when you attempt to start a new
+Instant Action mission.
+
+RESOLUTION
+==========
+
+There is currently no resolution to this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Crimson Skies.
+
+Additional query words: 1.00 msgame cskies crimskies cs hangs freeze lock crash
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

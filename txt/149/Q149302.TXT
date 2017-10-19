@@ -1,0 +1,64 @@
+DOCUMENT:Q149302  13-JUN-2001  [sna]
+TITLE   :If No Session Configured, TN3270 Client Error Can Be Misleading
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 3.0, 4.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If no LUs are defined in the TN3270 Server configuration, or you have a pool
+with zero sessions, the following error message returned to the client can be
+misleading:
+
+   The primary error message is an event 511:
+   Telnet negotiation failure: client did not send term type.
+
+This can cause some confusion as why you are unable to establish a session.
+
+RESOLUTION
+==========
+
+Define LUs in the TN3270 Server configuration on SNA Server 2.11, or assign LUs
+to a TN3270 Server in SNA Server Manager on SNA Server 3.0. Verify that LUA
+pools used by the TN3270 servers contain valid LUs.
+
+MORE INFORMATION
+================
+
+A trace shows the client and server going into a loop trying to establish its
+terminal type, and finally the TN3270 server terminating the session. This
+happens because the client did not send the correct terminal type. Because no
+LUs are configured, there is no way it can ever send the correct terminal type.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11,3.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

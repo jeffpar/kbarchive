@@ -1,0 +1,81 @@
+DOCUMENT:Q130225  10-FEB-2000  [foxpro]
+TITLE   :PRB: Setting the ReadOnly Property of a Control Does Not Work
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting the READONLY property of a control in a Grid does not have any effect at
+runtime. It is possible to edit the data in the Grid.
+
+CAUSE
+=====
+
+The READONLY attribute is controlled by the READONLY property of the Column
+object, which takes precedence over the READONLY property of the controls
+contained in a column.
+
+WORKAROUND
+==========
+
+Set the READONLY property of a column to .T. if you want users to view the data
+without editing it.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form.
+
+2. Right-click and select Data Environment. Add the SAMPLES\DATA\CUSTOMER table
+   to the Data Environment.
+
+3. Place a grid on the form, and set the ColumnCount to 3.
+
+4. Select the Column2 object, and set its READONLY property to .T..
+
+5. Select the Text1 object contained in Column1, and set its READONLY property
+   to .T..
+
+6. Save and run the form. When the form is run, the data in Column1 can be
+   edited, but the data in Column2 cannot be changed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

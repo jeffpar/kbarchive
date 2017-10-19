@@ -1,0 +1,86 @@
+DOCUMENT:Q196279  18-JUN-2001  [ssafe]
+TITLE   :FIX: "File or Project not Found" Adding Files Via Integration
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbinterop kbSSafe500bug kbSSafe600fix kbVBp500 kbVC500 kbvfp500 kbVS97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a project to Visual SourceSafe from one of the applications that
+Visual SourceSafe integrates with, you receive the following error message:
+
+   File or Project not Found.
+
+CAUSE
+=====
+
+Some of the files that you are trying to add are in a subdirectory of the home
+directory (the home directory is the one that contains the .vbp, .dsp, or .pjx
+file), and project security is turned on.
+
+RESOLUTION
+==========
+
+Turn off project security by clearing the Enable Project Security check box in
+the Admin program. To do this, open the Visual SourceSafe Administrator, go to
+the Tools menu, click Options, click the Project Security tab, and clear the
+Enable Project Security check box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual SourceSafe 6.0.
+
+MORE INFORMATION
+================
+
+Only the Administrator of the Visual SourceSafe database has permission to turn
+project security on or off.
+
+REFERENCES
+==========
+
+For additional information on related issues, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q164684 PRB: VFP/VSS File Could Not Be Mapped to SourceSafe Project
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbSSafe500bug kbSSafe600fix kbVBp500 kbVC500 kbvfp500 kbVS97 
+Technology        : kbVCsearch kbVFPsearch kbVBSearch kbSSafeSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500 kbVC500 kbVC32bitSearch kbVFP500 kbVFP500a kbSSafe500 kbVC500Search
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

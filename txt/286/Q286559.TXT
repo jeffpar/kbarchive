@@ -1,0 +1,102 @@
+DOCUMENT:Q286559  10-AUG-2001  [exchange]
+TITLE   :XFOR:"No Mapping Between Account Names & Security IDs Was Done"
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5, on platform(s):
+    - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On servers that are running any of the following products
+
+1. Microsoft Exchange Connector for Lotus Notes
+
+2. Microsoft Exchange Connector for IBM OfficeVision/VM (PROFS)
+
+3. Microsoft Exchange Connector for SNADS
+
+the following event ID may be logged in the Application log each time that you
+start the Connectivity Controller:
+
+   Event ID: 2014
+   Source: MSExchangeCoCo
+   Type: Error
+   Category: Controller
+
+   Description:
+   "{WIN32:1332(No mapping between account names and security IDs was done.)}:
+   Could not determine SID for Administrators"
+
+CAUSE
+=====
+
+This issue may occur due to an incorrect setting of the Exchconn.ini file. The
+error is logged if there is an invalid account that is specified for the
+parameter "rcsaccess".
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+ - Navigate to the \Exchsrvr\Connect\Exchconn folder to create a backup of the
+   Exchconn.ini file.
+
+ - Open the Exchconn.ini in Notepad.
+
+ - Locate the line that starts with the following parameter:
+
+   rcsaccess =
+
+ - Remove any invalid network accounts, and then empty Groups. Make sure that
+   you specified the Administrators group and that all entries after the
+   parameter "rcsaccess = " are separated by commas.
+
+WORKAROUND
+==========
+
+You can safely ignore the error message.
+
+MORE INFORMATION
+================
+
+There is no non-English installer for the Exchange Notes Connector on Exchange
+Service Pack CDs, so you have to use the English installer Ntsconn.exe from the
+\Exchconn\Setup\i386\Ntsconn\ folder. This installer creates an Exchconn.ini
+with the line "rcsaccess = Administrators". On non-English systems the name of
+the Administrators group may be localized, so that the Administrators group does
+not exist. This causes the Connectivity Controller to log the event 2014 during
+startup.
+
+Additional query words: exch2kp2w
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

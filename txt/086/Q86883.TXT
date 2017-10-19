@@ -1,0 +1,78 @@
+DOCUMENT:Q86883  06-DEC-1999  [win95x]
+TITLE   :Generic Text Driver Causes Underlines to Disappear in Write
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You may experience screen redraw problems when using the underline feature in
+Windows Write with the Generic/Text Only printer driver installed. The underline
+may disappear on the screen, but it prints correctly.
+
+This problem only occurs when the default Roman 10 point font is selected. This
+does not occur in other applications such as Microsoft Word for Windows or
+Microsoft Excel for Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows Write version 3.1. We
+are researching this problem and will post new information here as it becomes
+available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run Control Panel from the Main group, and double-click the Printers option.
+
+2. Choose the Add button. In the List of Printers box, select Generic/Text Only.
+
+3. Choose the Install button.
+
+4. Choose the Set as Default Printer button, then choose Close.
+
+5. Run Write from the Accessories group.
+
+6. From the Character menu, choose Underline.
+
+7. Type a few lines of text, and press ENTER after each line.
+
+Notice that the underlining disappears from the screen.
+
+
+Additional query words: 3.10 3.11 WRITE Generic invisible
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

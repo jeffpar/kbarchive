@@ -1,0 +1,86 @@
+DOCUMENT:Q142736  11-FEB-2000  [foxpro]
+TITLE   :PRB: RETRY Command in Method Causes Visual FoxPro to Quit
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An "ON ERROR <object>.<method>" command is used to trap for an
+error. The ON ERROR command calls a method of an object. Inside the method,
+RETRY will trigger a "Mismatched pushjmp/popjmp call" error, which is not listed
+in the Help File. After you click OK, Visual FoxPro quits.
+
+WORKAROUND
+==========
+
+Do not call a method from an ON ERROR command. Call a program file instead.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Add the following code to the form's Load event:
+
+         ON ERROR _Screen.Activeform.Mymethod
+
+3. Create a new method of the form called Mymethod, and type the following code
+   into it:
+
+      PUBLIC obj1
+      obj1=_Screen.Activeform
+      RETRY
+
+4. Place a command button on the form, and enter the following code in its Click
+   event:
+
+      obj1.Caption="Fox"
+
+5. Run the form, and click the command button. The Error "Mismatched'
+   pushjmp/popjmp call" is triggered. Inside the help for the error is the
+   message "The topic does not exist. Contact your application vendor for an
+   updated Help File (129)."
+
+6. Click OK, and Visual FoxPro quits.
+
+Additional query words: VFoxWin crash terminate abort
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

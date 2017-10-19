@@ -1,0 +1,89 @@
+DOCUMENT:Q184211  20-MAY-2002  [iis]
+TITLE   :NT Option Pack Fails to Install with Turkish Regional Settings
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run the Microsoft Windows NT Option Pack Setup program on a computer
+running Windows NT 4.0 or Windows 95 with the regional settings set to Turkish,
+the following error message appears:
+
+   Microsoft Index Server setup internal error: can't get version.
+
+CAUSE
+=====
+
+The Setupapi.dll file is unable to process the "I" character. As a result, Setup
+cannot find the version string in the Is20.inf.
+
+RESOLUTION
+==========
+
+NOTE: You must copy the contents of the Microsoft Windows NT Option Pack (NTOP)
+compact disc to your local hard disk and replace the Setupapi.dll file that
+ships with Windows NT Option Pack version 1.0 with the hotfix.
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to computers
+experiencing this specific problem. If you are not severely affected by this
+specific problem, Microsoft recommends that you wait for the next service pack.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date     Time    Version      Size     File name   Platform
+   -----------------------------------------------------------
+   05/02/98                      500,496  setupapi.dll (alpha)
+   19/02/98                      323,344  setupapi.dll (intel)
+
+
+NOTE: This fix does not apply to Microsoft Windows 95.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Windows NT Option
+Pack version 1.0. Microsoft has confirmed this to be a problem in Windows 95.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : WINNT:1.0,2.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

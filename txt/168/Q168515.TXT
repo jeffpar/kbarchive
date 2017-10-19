@@ -1,0 +1,64 @@
+DOCUMENT:Q168515  10-AUG-2001  [winnt]
+TITLE   :Explanation of an OSPF Area
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An Autonomous System (AS) in an Open Shortest Path First (OSPF) routed network
+can be broken up into areas. An OSPF area, based on the same concept as IP
+subnets, consists of a group of networks logically linked and sharing a single
+link state database (LSDB).
+
+MORE INFORMATION
+================
+
+Routers within a single area maintain the same LSDB and communicate this
+information to each other by flooding the area with link state advertisements
+(LSA).
+
+A router that is connected to more than one area is called an area border router
+(ABR). ABRs are most commonly used to connect tie areas together by being
+connected its own area and the backbone area. An area border router advertises a
+summary of its area information to other area border routers using summary
+advertisements. This area topology significantly reduces the amount of traffic
+between routers. It also reduces the size of the LSDB within an area. Since the
+LSDB is used to calculate the SPF, this size reduction can be a significant
+performance enhancement on the router.
+
+Area ID's are 32-bit numbers and in dotted decimal notation. The area ID is in no
+way related to the IP address of a network. However, it is possible to logically
+associate these numbers for administrative convenience.
+
+Additional query words: prodnt 4.00 steelhead rras
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

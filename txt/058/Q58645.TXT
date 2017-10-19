@@ -1,0 +1,69 @@
+DOCUMENT:Q58645  30-JUL-2001  [lanman]
+TITLE   :UB Drivers Specified in LANMAN.INI/AUTOEXEC.BAT Truncated
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+If the combined length (in characters) of the filenames and the loader exceeds
+128 characters, MS-DOS truncates the string and issues a "file not found" error
+message.
+
+CAUSE
+=====
+
+This message is seen only when the loader is executed from the AUTOEXEC.BAT
+file. However, if the command is issued from the LANMAN.INI file from the
+services group, it produces an unsatisfactory error, "could not load ub
+drivers."
+
+WORKAROUND
+==========
+
+Limit the sum character length (spaces inclusive) to be equal to or less than
+128 characters.
+
+MORE INFORMATION
+================
+
+Example
+-------
+
+Assume LAN Manager operates from the directory LANMAN20.DOS. The following
+command is in the AUTOEXEC.BAT file:
+
+c:\lanman20.dos\drivers\ub\loadniu.exe -r -d -m:d8 -p:4 -i:5 c:\lanman20.do
+drivers\ub\ex2niuw.xfm c:\lanman20.dos\drivers\ub\stdlc
+
+At run time, the last file will be truncated to
+
+   c:\lanman20.dos\drivers\ub\ 
+
+and the following error message will be issued:
+
+   File not found
+
+Additional query words: 2.00 2.10 dos fail
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q174623  09-AUG-2001  [winnt]
+TITLE   :Error Message After Upgrading Windows NT for Second Processor
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade Windows NT to support a second processor, you may receive
+either of the following error messages:
+
+ - If the Operating System is on a file allocation table (FAT) partition, you
+   receive the following error message:
+
+   Windows NT could not start because the following file is
+   corrupt:%winnt%\system32\drivers\fastfat.sys
+
+ - If the Operating System is on a NTFS file system (NTFS) partition:
+
+   Windows NT could not start because the following file is
+   corrupt:%winnt%\system32\drivers\ntfs.sys.
+
+CAUSE
+=====
+
+This behavior can be caused by a file mismatch between the files from Windows NT
+and those from an installed Service Pack.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods:
+
+If You Have Not Yet Restarted After the Upgrade
+-----------------------------------------------
+
+Reapply the latest Service Pack before you restart the computer.
+
+If You Have Already Restarted After the Upgrade
+-----------------------------------------------
+
+Refer to the following article.
+
+For additional information about which files to replace, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q156358 How to Manually Add Support for a Second Processor
+
+Additional query words: hal.dll
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

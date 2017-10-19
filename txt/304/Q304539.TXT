@@ -1,0 +1,91 @@
+DOCUMENT:Q304539  11-AUG-2001  [ssafe]
+TITLE   :BUG: Deploying Web Project by Label Returns "Version Not Found"
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSExplorer kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are attempting to deploy a labeled version of a SourceSafe web project,
+use of ss deploy returns "Version not found" and does not deploy the files.
+
+RESOLUTION
+==========
+
+Use the ss get command with the -gl (to specify the deployment path) and -vl (to
+specify the labeled version) switches to deploy to a drive or UNC path. For
+example:
+
+   ss get $/"<project name>" -vl"<test label>" -gl"<deployment
+   path>"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a project named "Projecta" (without the quotation marks) in Visual
+   SourceSafe.
+
+2. Add files to the project.
+
+3. Use the Admin utility to designate Projecta as a Web project (go to the Tools
+   menu, click Options, and then click the Web Projects tab) and set the
+   deployment path to "C:\test" (without the quotation marks).
+
+4. Add a label "testlabel" to Projecta.
+
+5. From the Vss/Win32 folder run the command line:
+
+   ss deploy $/Projecta -vltestlabel
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q169260 HOWTO: No Command Line Equivalent for Some Web Features
+
+   Q240052 HOWTO: Specifying a VSS Database Using the Command Line
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSExplorer kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500 kbSSafe32bitSearch
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

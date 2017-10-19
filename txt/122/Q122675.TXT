@@ -1,0 +1,311 @@
+DOCUMENT:Q122675  24-JUN-2002  [visualc]
+TITLE   :BUG: Wrong Operator Delete Called for Exported Class
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbcode kbCompiler kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC220 kbVC400 kbVC4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When allocating and deleting an object of a class that is exported from a DLL,
+you may find that the new operator in the EXE is called to allocate the memory
+but the delete operator in the DLL is called to delete the memory. Therefore,
+there is a new/delete mismatching problem, which may cause run-time errors.
+
+CAUSE
+=====
+
+This problem is a result of the way objects are allocated, constructed,
+destructed and deallocated. The following things occur when allocating and
+deallocating objects that have constructors and destructors:
+
+Allocating:
+
+   A1. The memory that the object will reside in is allocated.
+   A2. The appropriate constructor for that object is called.
+
+Deallocating:
+
+   D1. The destructor for the object is called.
+   D2. If the object is being deallocated via delete, call delete.
+
+Step D2 is where the problem arises for objects created from classes exported
+from a DLL. Steps D1 and D2 are often carried out by a scalar or vector deleting
+destructor, which are a compiler generated helper functions. When this helper
+function is created in the DLL, any calls it makes to the delete operator will
+be in the context of the DLL. Therefore the delete operator overridden in the
+EXE will not be called as expected.
+
+Note that the scalar deleting destructor is called when deallocating single
+objects, and the vector deleting destructor is called when deallocating arrays
+of one or more objects.
+
+RESOLUTION
+==========
+
+You can use one of the following workarounds:
+
+1. If your code does not use virtual destructors, make the constructor and
+   destructor for the object inline, and put the actual work into your own
+   helper functions. If the destructor is inline, the code and the compiler
+   generated helper functions (if present) are in the EXE and so the proper
+   operator delete is called.
+
+   If the destructor is virtual, this work-around won't work. This is because
+   virtual functions can be called through base class pointers, usually known as
+   run-time binding or dynamic binding. Which function is called is determined
+   at runtime through the v-table. Since inlining is generated at compile time,
+   runtime binding is not possible if the functions are actually inlined.
+
+   - or -
+
+2. Override the operators new and delete for the DLL classes so that the
+   new/delete calls usage will be made within the DLL. A class with its own
+   version of new and delete will override any global version of new and delete
+   defined in either the EXE or the DLL. Therefore the proper new and delete
+   will always be called. Please see the sample code below in the MORE
+   INFORMATION section.
+
+   - or -
+
+3. If you are using Visual C++ 2.0 or later, try using a template wrapper class.
+   By using this templated class, you are deriving a class "on the fly" from the
+   imported class. The constructor and the destructor for the new class are in
+   the context of the EXE and not in the context of the DLL and the problem will
+   be avoided. Please see the sample code below in the MORE INFORMATION
+   section.
+
+   If you are using Visual C++ 16-bit editions, you can derive a class from the
+   DLL exported class in the EXE file, so the constructor and the destructor for
+   the new class are in the context of the EXE and not in the context of the DLL
+   and the problem also will be avoided.
+
+   - or -
+
+4. If you use Visual C++ 5.0 or later, a new implementation of new/delete is
+   available which is virtually transparent. To invoke this new implementation
+   you must:
+
+   a. Specify _declspec(dllexport) in the class declaration when you implement
+      the class.
+
+   b. Specify _declspec(dllimport) in the class declaration when you use the
+      class.
+
+   c. Use a virtual destructor.
+
+   If these requirements aren't met, the compiler generates code using the same
+   new/delete implementation that was present in the previous version of the
+   product.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem and provides the workarounds
+mentioned above in the RESOLUTION section.
+
+1. Sample Code Illustrates the Problem and Workaround #2
+--------------------------------------------------------
+
+Use the following files to build two projects, one for DLL and one for EXE. In
+the DLL project, include file testdll.cpp and define preprocessor identifier
+_DLL. In the EXE project, include file testapp.cpp. testdll.h is the shared
+header file for both DLL and EXE.
+
+Make sure to define preprocessor identifier _WORKAROUND in both the EXE and the
+DLL projects if you want to work around the problem. For example, using the
+compiler switch /D_WORKAROUND.
+
+The problem code produces the following output:
+
+   In EXE global new
+   In DLL class constructor
+   In DLL class destructor
+   In DLL global delete
+
+The workaround code produces the following output:
+
+   In DLL class new
+   In DLL class constructor
+   In DLL class destructor
+   In DLL class delete
+
+   /* Compile options needed:
+    *    testapp - /MD  and default settings for Console application.
+    *    testdll - /MD, /D_DLL, and default setting for DLL project.
+    *    Use /D_WORKAROUND in both the EXE and DLL projects to see the
+    *    work-around.
+    */ 
+
+testdll.h
+---------
+
+      #include <iostream.h>
+      #include <stdlib.h>
+
+      #ifdef _DLL
+      #define DLLEXP __declspec(dllexport)
+      #else
+      #define DLLEXP __declspec(dllimport)
+      #endif
+
+      // For use with the 16-bit versions, you need to use the following code
+      // to define DLLEXP. Also start by using a QuickWin application for
+      // testapp and a DLL project for testdll
+
+      //#ifdef _DLL
+      //#define DLLEXP __export
+      //#else
+      //#define DLLEXP
+      //#endif
+
+      class DLLEXP testdll
+      {
+        public:
+
+         testdll();
+         virtual ~testdll();
+
+      #ifdef _WORKAROUND
+         void* operator new( size_t tSize );
+         void  operator delete( void* p );
+      #endif
+
+      };
+
+testapp.cpp
+-----------
+
+      #include <iostream.h>
+      #include "testdll.h"
+
+      void* operator new(size_t nSize)
+      {
+         void* p=malloc(nSize);
+         cout << "In EXE global new\n";
+         return p;
+      }
+
+      void operator delete( void *p )
+      {
+         free(p);
+         cout << "In EXE global delete\n";
+      }
+
+      void main()
+      {
+
+         testdll *p = new testdll;
+         delete p;
+      }
+
+testdll.cpp
+-----------
+
+      #include <iostream.h>
+      #include "testdll.h"
+
+      DLLEXP testdll::testdll()
+      {
+        cout << "In class DLL constructor\n";
+      }
+
+      DLLEXP testdll::~testdll()
+      {
+        cout << "In class DLL destructor\n";
+      }
+
+      void* operator new( size_t tSize )
+      {
+         void* p=malloc(tSize);
+         cout << "In DLL global new\n";
+         return p;
+      }
+
+      void operator delete( void* p )
+      {
+         free(p);
+         cout << "In DLL global delete\n";
+      }
+
+      #ifdef _WORKAROUND
+      DLLEXP void* testdll :: operator new( size_t tSize )
+      {
+         void* p=malloc(tSize);
+         cout << "In DLL class new\n";
+         return p;
+      }
+
+      DLLEXP void testdll :: operator delete( void* p )
+      {
+         free(p);
+         cout << "In DLL class delete\n";
+      }
+      #endif
+
+2. Sample Code for Workaround #3
+--------------------------------
+
+The following code fragment demonstrates how you might implement a template
+wrapper class in the EXE to work around this problem:
+
+      template <class T>
+      class DLLFix: public T
+      {
+      public:
+          DLLFix();
+          virtual ~DLLFix();
+      };
+
+Assuming that ExportedClass is a class that is exported from a DLL, make the
+following change:
+
+      //Old code
+         ExportedClass * p = new ExportedClass;
+         delete p; // wrong delete may be called here;
+
+      //new code
+         DLLFix<ExportedClass> * p = new DLLFix<ExportedClass>;
+         delete p;
+
+
+Additional query words: _USRDLL _AFXDLL 8.00 9.00 GPF general protection fault GP
+
+======================================================================
+Keywords          : kbcode kbCompiler kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC220 kbVC410 kbVC420 kbVC500 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC152 kbVC500Search
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

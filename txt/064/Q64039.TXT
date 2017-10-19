@@ -1,0 +1,50 @@
+DOCUMENT:Q64039  30-JUL-2001  [lanman]
+TITLE   :Refresh NIF Menus When ADMIN Account Is Downgraded
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+BUG: 8029
+
+SYMPTOMS
+========
+
+When an ADMIN account is downgraded (under NIF) to a USER or GUEST account, NIF
+detects the change correctly (the user no longer has the access permissions he
+or she had while his or her account was an ADMIN account). However, the menus
+still allow the user to access most of the screen groups he or she could access
+before. NIF should update the menus to reflect the change in the user's
+privileges.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in OS/2 LAN Manager versions 2.x.
+We are researching this problem and will post new information here as it becomes
+available.
+
+Additional query words: 2.00 2.10 2.10a 2.20 keep net
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

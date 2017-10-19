@@ -1,0 +1,104 @@
+DOCUMENT:Q246874  01-MAY-2001  [ssafe]
+TITLE   :INFO: Visual SourceSafe 6.0 Installation From Visual C++ 6.0
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article delineates the differences between an individual Visual SourceSafe
+version 6.0 installation from a Visual SourceSafe installation from Visual C++
+6.0 Enterprise Edition.
+
+Visual SourceSafe version 6.0 is included with the Visual C++ 6.0 Enterprise
+Edition product. When a you install Visual SourceSafe using the Visual C++ setup
+procedure, you are presented with the following two setup options:
+
+ - Install Visual C++ Enterprise Edition
+
+ - Server Applications
+
+MORE INFORMATION
+================
+
+Install Visual C++ Enterprise Edition
+
+This option creates a private database on your local machine; it does not create
+a Netsetup image. Choosing this option installs the same options as the Stand
+Alone setup option in the individual boxed version of the product.
+
+ - Create Database
+
+ - Admin Tools
+
+ - Client Tools
+
+ - Integration components and Registry Settings
+
+ - Help Files
+
+Server Applications
+
+This option creates a shared database and installs the admin software and the
+Netsetup program so that users can install the client software from the server.
+Choosing this option installs the same components as the Shared Database Server
+setup option in the individual boxed version of the product.
+
+ - Create Database
+
+ - Admin Tools
+
+ - Client Tools
+
+ - Integration components and Registry Settings
+
+ - Help Files
+
+ - Netsetup Image
+
+ - IE4 Setup Image
+
+Use the Server Applications option when you are creating a database that will be
+used by many clients. This option can be used to install a database to a local
+or remote drive. You should use the Install Visual C++ Enterprise Edition option
+when you want to set up a local, private database on your computer.
+
+Although the look of the Enterprise Edition setup procedures and the individual
+boxed version setup procedures are very different, they all install the same
+components. It makes no difference which product you purchase (Visual Studio
+version 6.0 Enterprise, Visual C++ 6.0 Enterprise, Visual Basic 6.0 Enterprise,
+or SourceSafe in its own box). The same product and the same components are
+installed on your computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

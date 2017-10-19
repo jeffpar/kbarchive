@@ -1,0 +1,64 @@
+DOCUMENT:Q94767  15-NOV-1999  [win3x]
+TITLE   :WFWG: Schedule+ May Not Print Entire Appointment Field
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:1.0,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print with version 1.0 of Microsoft Schedule+ or Windows for Workgroups
+Schedule+, the text in the appointment fields may be truncated. There is no
+method to customize the printout so that all information is displayed.
+
+WORKAROUND
+==========
+
+The only way to work around this limitation is to export the data to a text file
+and then import it to another application, such as Notepad or another word
+processor, to be printed.
+
+Schedule+ prints approximately 29 characters of the appointment field when
+printing the Pocket size page, 96 characters when printing the Junior size, and
+116 characters when printing the Standard size. Schedule+ indicates that there
+is more information by adding ellipsis (...) to the end of the line.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a limitation of Windows for Workgroups
+Schedule+ included with versions 3.1 and 3.11. We are researching this problem
+and will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 3.10 3.11 plus schedplus 1.0
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbScheduleSearch kbWFWSearch kbWFW310 kbWFW311 kbSchedule100
+Version           : WINDOWS:1.0,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

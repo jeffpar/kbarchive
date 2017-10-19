@@ -1,0 +1,119 @@
+DOCUMENT:Q242092  08-AUG-2001  [winnt]
+TITLE   :How to Use System Policies to Hide Drives
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how a system administrator can restrict use of drives by
+'hiding' one or more drives on a Windows NT-based computer. The System Policy
+Editor in Microsoft Windows NT Server 4.0 has an "Hide drives in My Computer"
+feature that hides all drives from the user. However, you may want to hide only
+selected drives, while retaining use of other drives.
+
+MORE INFORMATION
+================
+
+To use system policies to hide drives, follow these steps:
+
+1. Obtain the decimal value for the drives you want to restrict.
+
+   NOTE: The registry key that this policy affects uses a decimal number that
+   corresponds to a 26-bit binary string, with each bit representing a drive
+   letter:
+
+  11111111111111111111111111
+  ZYXWVUTSRQPONMLKJIHGFEDCBA
+
+   This configuration corresponds to 67108863 (in decimal) and hides all drives.
+   If you want to hide drive C, you would make the third lowest bit 0 and then
+   convert the binary string to decimal. The following are sample values that
+   correspond to various drive letters:
+
+   Hide all drive letters (default): 67108863
+   Hide all drive letters but C: 67108859
+   Hide all drive letters but U: 66060287
+   Hide all drive letters but C: and U: 66060283
+   Hide all drive letters but C,O, and U: 66043899
+
+2. Edit the Common.adm file:
+
+   a. Open the Common.adm file in a text editor such as Notepad.
+
+   b. Locate the HideDrives section in the Common.adm file. Note that it should
+      look like the following:
+
+     CATEGORY !!Shell
+     CATEGORY !!Restrictions
+     POLICY !!HideDrives
+     VALUENAME ''NoDrives''
+     VALUEON NUMERIC 67108863	; low 26 bits on (1 bit per drive)
+     END POLICY
+
+   c. Replace the VALUEON NUMERIC value with your new value.
+
+   d. Save and then close the file.
+
+3. Edit the system policy:
+
+   a. Click Start, point to Programs, point to Administrative Tools (Common),
+      and then click System Policy Editor.
+
+   b. On the File menu, click Open Registry.
+
+   c. Double-click the Local User policy.
+
+   d. Open the policy to the following location:
+
+   Local User\Shell\Restrictions
+
+   e. Click to select the Hide drives in My Computer check box, and then click
+      OK.
+
+      NOTE: Only the drives that you specified in the VALUEON NUMERIC value in
+      the Common.adm file are hidden.
+
+   f. On the File menu, click Save.
+
+4. Log off and then log on to the computer for the changes to take effect.
+
+You can also use the Microsoft Zero Administration Kit (ZAK) for Windows NT
+Server 4.0 to selectively hide files. However, the ZAK method requires modifying
+the Zakwinnt.adm file to add other drive letter options beyond the five built-in
+selections. The ZAK method can be implemented using only a Windows NT
+Server-based computer and the original policy template files (Common.adm and
+Winnt.adm).
+
+Additional query words: policy
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

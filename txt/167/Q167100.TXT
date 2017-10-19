@@ -1,0 +1,80 @@
+DOCUMENT:Q167100  01-MAY-1999  [exchange]
+TITLE   :XCLN: Out of Memory Errors with Exchange 5.0 16-Bit Client
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Microsoft Exchange 5.0 Windows 3.x client, the following
+error message is displayed:
+
+   Microsoft Exchange could not be started. The operation could not be
+   completed due to insufficient memory. Close one or more applications to
+   make more memory available.
+
+If NetBEUI is being used instead of TCP/IP, the following error message is
+didplayed:
+
+   Microsoft Exchange could not be started. The Microsoft Exchange
+   Address Book was unable to log on to the Microsoft Exchange Server
+   computer. Contact your system administrator if the problem persists.
+
+Or, when you try to resolve the name in the profile, the following error message
+is displayed:
+
+   The name could not be resolved. The Microsoft Exchange Address
+   Book was unable to log on to the Microsoft Exchange Server computer.
+   Contact your system administrator if the problem persists.
+
+NOTE: This problem occurs while the client is trying to resolve the during name
+resolution. If a profile is set up to work offline, the error Message is not
+displayed.
+
+CAUSE
+=====
+
+More than 61 objects (sites and recipient containers) exist in the Global
+Address List (GAL).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange Windows
+3.x client, version 5.0. This problem was corrected in the latest Microsoft
+Exchange Server 5.0 U.S. Service Pack. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchangeClientSearch kbZNotKeyword3
+Version           : 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

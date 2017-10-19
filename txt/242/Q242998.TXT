@@ -1,0 +1,82 @@
+DOCUMENT:Q242998  13-OCT-1999  [foxpro]
+TITLE   :PRB: Beautify Changes the Case of Multi-Line Strings
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbMiscTools kbvfp500a kbvfp600 kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After running the Beautify Application, string expressions that span multiple
+lines are changed to either upper or lower case. This behavior occurs when the
+Capitalization for Symbols option in the Beautify Options dialog box is set to
+either "UPPERCASE" or "lowercase".
+
+RESOLUTION
+==========
+
+When running the Beautify Application, set the Capitalization for Symbols option
+in the Beautify Options dialog box to either "Match first occurrence" or "No
+change."
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file named Test.prg using the following code:
+
+   multi_line_value  = "This should be " + ;
+      "Mixed Case"
+
+2. From the Tools menu, select Beautify.
+
+3. In the Beautify Options dialog box, set the Capitalization for Symbols option
+   to UPPERCASE.
+
+4. Click the Run command button in the Beautify Options dialog box. Note that
+   after the Beautify application runs, the "Mixed Case" portion of the string
+   is changed to "MIXED CASE."
+
+5. From the Tools menu, select Beautify.
+
+6. In the Beautify Options dialog box, set the Capitalization for Symbols option
+   to "lowercase."
+
+7. Click the Run command button in the Beautify Option dialog box. Note that
+   after the Beautify application runs, the "MIXED CASE" portion of the string
+   is changed to "mixed case."
+
+Additional query words: kbDSE
+
+======================================================================
+Keywords          : kbMiscTools kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,62 @@
+DOCUMENT:Q171135  28-JUN-2001  [iis]
+TITLE   :Access Forbidden Accessing Secure Website
+PRODUCT :Internet Information Server
+PROD/VER:Winnt:2.0,3.0
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+ - Microsoft Certificate Server version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to access a web site, the browser displays the following error
+message:
+
+   HTTP/1.1 403 Access Forbidden
+
+   Secure Channel Required
+
+   This virtual directory requires a browser that supports the configured
+   encryption options.
+
+CAUSE
+=====
+
+The web site you are trying to access requires the Secure Sockets Layer (SSL)
+encryption protocol. As a result, http:// will not work.
+
+RESOLUTION
+==========
+
+Change the URL to read https://. This instructs the browser to use the Secure
+Sockets Layer (SSL) encryption protocol.
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbiisSearch kbiis300 kbiis200 kbCertServSearch kbZNotKeyword3 kbCertServ100
+Version           : Winnt:2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

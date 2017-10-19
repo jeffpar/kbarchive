@@ -1,0 +1,59 @@
+DOCUMENT:Q117713  30-JUL-2001  [pcmail]
+TITLE   :PC Win: Files Used with Regenerate Command
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Regenerate command is used to create the default user list for a remote mail
+user. The Regenerate command is displayed after selecting the Remote command
+with the ADMIN.EXE program.
+
+The following files are read when using the Regenerate command with the ADMIN.EXE
+program:
+
+   REMOTE.OVL
+   NETWORK.GLB
+   ACCESS2.GLB
+   GROUP.GLB
+   All *.XTN files in the \XTN sub-directory
+   All *.USR files in the \USR sub-directory
+   All *.TPL files in the \TPL sub-directory
+
+The following file is written when using the Regenerate command with the
+ADMIN.EXE program:
+
+   RNETWORK.GLB
+
+MORE INFORMATION
+================
+
+The Regenerate command is commonly used to re-create the RNETWORK.GLB file after
+External Postoffices or Gateways have been defined. An Init-Disk or Update-Disk
+commands would follow in order to update the Remote Mail user's address list.
+
+
+Additional query words: 2.10 3.00 3.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

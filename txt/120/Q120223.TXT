@@ -1,0 +1,58 @@
+DOCUMENT:Q120223  17-DEC-2000  [win95x]
+TITLE   :Sending Messages from WinPopup to NWPOPUP in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Although you can use WinPopup to send messages to someone using NWPOPUP, there
+are some limitations.
+
+MORE INFORMATION
+================
+
+Windows 95 lets you run the client for Windows networks (VREDIR) and the Client
+for NetWare networks (NWREDIR) together. If you send a message using WinPopup,
+VREDIR handles the request. In the event that VREDIR fails, WinPopup attempts to
+send the pop-up message to everyone on your preferred or default NetWare
+server.
+
+The fact that the recipient must be on your preferred server is one of the
+limitations. The other limitation is that the message cannot exceed 38
+characters.
+
+Novell NetWare is manufactured by Novell, Inc., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: winpopup.exe nwpopup.exe 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

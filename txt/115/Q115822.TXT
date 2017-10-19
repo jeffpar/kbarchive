@@ -1,0 +1,48 @@
+DOCUMENT:Q115822  12-DEC-1999  [homemm]
+TITLE   :CD Sampler: Mouse Required Because No Keyboard Equivalents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::Spring 1994
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Home CD Sampler Spring 1994 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is not possible to navigate through the Home CD Sampler using the keyboard.
+To choose demonstration buttons and/or exit the program, you must use the mouse.
+
+MORE INFORMATION
+================
+
+The list of system requirements includes "Microsoft Mouse or compatible pointing
+device."
+
+Additional query words: kbhowto 1994 multi media multimedia multi-media quick keys quickkeys hot alt combination equivalents cd-rom disc
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword5 kbCDSamplerS1994
+Version           : :Spring 1994
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

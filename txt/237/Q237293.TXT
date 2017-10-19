@@ -1,0 +1,63 @@
+DOCUMENT:Q237293  14-OCT-1999  [exchange]
+TITLE   :XADM: Owner Field Blank in Distribution List Properties
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you view the properties of a distribution list from the Microsoft Outlook
+client, the Owner field is blank. However, if you view the properties of the
+distribution list from the Microsoft Exchange Server Administrator program, the
+Owner field is populated.
+
+MORE INFORMATION
+================
+
+This behavior is by design. The owner of the distribution list has been hidden
+from the global address list.
+
+The owner of a distribution list must be in the same site as the distribution
+list. You can assign a mailbox to manage a distribution list; create a "dummy"
+mailbox in the site where the distribution list is located and assign owner
+rights to this mailbox. Then hide this mailbox from the global address list so
+that the user only has one valid mailbox in the global address list.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q152082 XADM: Cannot Modify DL if DL and Owner Not in the Same Site
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

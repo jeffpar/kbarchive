@@ -1,0 +1,90 @@
+DOCUMENT:Q135945  27-JUN-1999  [win95x]
+TITLE   :Error Message: Setup Error 907 with Microsoft Plus!
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+When you install Microsoft Plus!, you may receive one of the following error
+messages:
+
+   - Setup Error 907
+   Object 140
+   Your Setup files may be damaged. Try restarting the Setup Program.
+
+   - Setup Error 907
+   Object 240
+   Your Setup files may be damaged. Try restarting the Setup Program.
+
+When this occurs, Setup installs Microsoft Plus! in the Progra~1\Plus! folder
+instead of the Program Files\Plus! folder.
+
+CAUSE
+=====
+
+This behavior occurs when Setup detects that the system cannot use long file
+names.
+
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following methods:
+
+ - Reinstall Windows 95. This resets the registry key that is causing the
+   problem.
+
+ - Manually reset the registry key using Registry Editor.
+
+   WARNING: Using Registry Editor incorrectly can cause serious problems that may
+   require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+   resulting from the incorrect use of Registry Editor can be solved. Use
+   Registry Editor at your own risk.
+
+   NOTE: For information about how to edit the registry, view the Changing Keys
+   And Values online Help topic in Registry Editor (Regedit.exe). Note that you
+   should make a backup copy of the registry files (System.dat and User.dat)
+   before you edit the registry.
+
+   Use Registry Editor to delete the Win31FileSystem key in the under the
+   following registry key:
+
+      KEY_LOCAL_MACHINE\System\CurrentControlSet\Control\FileSystem
+
+   After you delete the key, restart the computer.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

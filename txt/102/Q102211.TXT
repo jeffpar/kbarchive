@@ -1,0 +1,71 @@
+DOCUMENT:Q102211  22-NOV-1999  [msdos]
+TITLE   :Stacker Conversion Hangs at "Loading DoubleSpace Setup..."
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run CONVERT.BAT from the Stacker Conversion Disk, the following message
+is displayed:
+
+   Press ENTER at the DoubleSpace Setup Welcome screen to begin converting your
+   Stacker drives.
+
+   Loading DoubleSpace Setup...
+
+CAUSE
+=====
+
+CONVERT.BAT displays the above message and calls the MS-DOS CHOICE command with
+the following parameters to pause for five seconds before continuing
+
+   choice /ty,5 /n > nul
+
+where "/ty,5" allows CHOICE to accept only the "Y" key or to default to "Y" after
+five seconds and continue; "/n" causes CHOICE not to prompt for user input;
+"> nul" redirects output from CHOICE so that it is not displayed on screen.
+
+This problem occurs if a key other than "Y" is pressed when the message appears.
+Once pressed, the countdown timer stops and waits for the required key to be
+pressed. The computer appears to be hung at that screen although it is actually
+waiting for the "Y" key to continue.
+
+WORKAROUND
+==========
+
+If the computer appears to stop responding (hang) when this message appears on
+the screen, press the letter "Y" on the keyboard to continue the DoubleSpace
+conversion.
+
+Additional query words: dblspace 6.00 dos6 stopped
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

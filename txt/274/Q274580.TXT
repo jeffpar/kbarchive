@@ -1,0 +1,117 @@
+DOCUMENT:Q274580  06-AUG-2002  [winnt]
+TITLE   :Creating Supplementary Timestamp Log in MMS Management Agent Log
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1,2.2
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the procedure to create a supplementary timestamp log in
+the Microsoft Metadirectory Services Management Agent (MA) logs.
+
+Even though you cannot directly embed timestamps in the Zscript file logs, a
+supplemental log file can be created in the MA control script to contain the
+timestamp messages.
+
+MORE INFORMATION
+================
+
+There are two components that can create a supplemental log file:
+
+ - A batch file in the \Zoomserv\Bin directory.
+
+ - The corresponding changes in the Zscript file template.
+
+An Example:
+-----------
+
+In this example, the batch file is called Stampit.bat.
+
+Place the batch file in the \Zoomserv\Bin directory, and then place the output
+files in the working directory of the Management Agent. This latter step can be
+accomplished by using the <ZcDsDirectory> variable in the second parameter
+of the calls to the Stampit.bat file in the Zscript file template.
+
+The following commands are used in the program located in
+\Zoomserv\Bin\Stampit.bat:
+
+   echo %2 >> %1
+   date /t >> %1
+   time /t >> %1
+   echo . >> %1
+
+NOTE: Do not use any spaces in the local parameters used in the vset command.
+
+The following commands can be used in the Zscript file template:
+
+   vset timeLogFile = "ThisMATimeLog.txt"
+   vset banner = "************************************"
+   vset message1 = "LDAP_MA_Begins"
+   vset message2 = "LDAP_MA_Ends"
+
+   execute stampit.bat <zcDsDirectory>\<timeLogFile> <banner>
+   execute stampit.bat
+   <zcDsDirectory>\<timeLogFile> <message1>
+   execute stampit.bat <zcDsDirectory>\<timeLogFile> <message2>
+
+The output of the preceding example is:
+
+   ************************************
+   Tues 09/19/2000
+   10:21a
+
+   LDAP_MA_Begins
+   Tues 09/19/2000
+   10:21a
+
+   LDAP_MA_Ends
+   Tues 09/19/2000
+   10:22a
+
+NOTE:
+
+ - The use of local variables and the vset command can help minimize the chances
+   of typographical mistakes.
+
+ - Local variables can be grouped together at the start of the template.
+
+ - The banner helps to easily identify the start of each run.
+
+ - The file can continue to grow, run after run, and must be manually
+   maintained.
+
+ - The call to the batch program and each line in the batch program is written
+   to the Zscript file log.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

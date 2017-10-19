@@ -1,0 +1,69 @@
+DOCUMENT:Q141893  24-MAY-2001  [homemm]
+TITLE   :Encarta 1996 for the Macintosh System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1996 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements for the 1996 edition of
+Microsoft Encarta for the Macintosh.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Encarta 1996 for the Macintosh are:
+
+ - Macintosh LC 550 or higher (68030 33Mhz)
+
+ - Any Apple Macintosh computer supporting a 256-color, 640x480 resolution
+   (13-inch), or higher resolution monitor.
+
+ - Minimum 8 MB RAM memory
+
+ - Minimum 7 MB available hard disk space (11 MB recommended)
+
+ - Double-speed CD-ROM: The CD-ROM drive should be able to transfer data from
+   the CD-ROM at 300k per second while using less than 40% of the CPU bandwidth
+   and has an average seek time of less than 400 milliseconds.
+
+The minimum system requirements to use the Encarta Yearbook Builder, are:
+
+ - Hayes or Hayes-compatible modem
+
+ - Access to the Internet
+
+ - Minimum 7.5 MB available hard disk space to download all 12 Yearbook Builder
+   files
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1996Mac
+Version           : :1996 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

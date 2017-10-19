@@ -1,0 +1,70 @@
+DOCUMENT:Q203620  28-AUG-1999  [exchange]
+TITLE   :XADM: NT Account for DL Owner Is Not Added to Permissions
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set the Owner mailbox when you create a Distribution List (DL), the
+primary Windows NT account of the Owner mailbox is placed in the "Windows NT
+accounts with permissions" list for the DL with the role of "User."
+
+If the Owner mailbox is assigned at a later date, or changed to another mailbox
+with a different primary Windows NT account, the "Windows NT accounts with
+permissions" list may not be updated to reflect the new primary Windows NT
+account.
+
+CAUSE
+=====
+
+The administrator modifying the DL does not have the Modify Permissions right
+for the site level naming context. The Modify Permissions right is granted only
+to administrators who have the Permissions Admin. role (that is, an
+administrator who has the Admin. role does not have the "right" to modify
+permissions).
+
+An administrator who does not have the right to modify permissions may only set
+permissions at object creation. All subsequent modifications to the object that
+require alterations to the "Windows NT accounts with permissions" list must be
+done by an administrator who has the right to modify permissions.
+
+WORKAROUND
+==========
+
+Give administrators who need the ability to modify the permissions of DLs or any
+other object in the site naming context the role of Permissions Admin. for the
+site naming context.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

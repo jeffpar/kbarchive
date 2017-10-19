@@ -1,0 +1,64 @@
+DOCUMENT:Q141319  09-MAR-2000  [foxpro]
+TITLE   :PRB: Setup Wizard Fails to Create Distribution Directory
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Visual FoxPro is installed on a shared Windows network running Novell
+Netware 3.12 with a local workstation installation, the Setup Wizard fails if
+the user selects the "create directory" option.
+
+CAUSE
+=====
+
+Visual FoxPro was installed as a shared network installation and by design, the
+workstation installation does not include the "Professional Features" option.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The "Professional Features" option and associated programs of the "Application
+Distribution" option, were not intended to be run on a shared network
+environment. The Setup Wizard will function correctly with a local copy of
+Windows 3.1, Windows for Worgroups, Windows NT, or Windows 95 and a local
+installation of Visual FoxPro.
+
+Additional query words: VFoxWin distrib workstation network
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,60 @@
+DOCUMENT:Q85529  07-DEC-1999  [win95x]
+TITLE   :Cannot Change Paper Sizes with Canon Bubble-Jet 10e
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You are unable to change the paper size for a Canon Bubble-Jet 10e. The Paper
+Size option is unavailable (dimmed) for the Canon Bubble-Jet 10e in any
+application that uses the Windows 3.1 common dialog boxes (COMMDLG.DLL), such as
+Windows Write.
+
+WORKAROUND
+==========
+
+To work around this problem, change the paper size using the Printers icon in
+Control Panel before printing the document.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in CANON10E.DRV version 1.0. We are
+researching this problem and will post new information here as it becomes
+available.
+
+
+Additional query words: 3.10 3.11 greyed grayed cannon
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

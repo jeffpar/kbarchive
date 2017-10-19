@@ -1,0 +1,81 @@
+DOCUMENT:Q302729  24-JUN-2001  [msnetwork]
+TITLE   :"We were unable to sign you in" Error When Protocols Are Not Ena
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You attempt to sign in to MSN Explorer 6.1. MSN Explorer attempts to sign in
+five times, and then returns an error message stating "We were not able to sign
+you in. There may be a problem with our service or your Internet connection.
+Please try again later."
+
+CAUSE
+=====
+
+Protocols are not enabled on the machine.
+
+RESOLUTION
+==========
+
+To allow MSN Explorer to function, at least one of the following security
+protocols must be enabled: PCT 1.0, SSL 2.0 or 3.0, or TLS 1.0.
+To enable a protocol
+
+1. Click Start, point to Settings, and then Control Panel.
+
+2. Double-click the Internet Options icon.
+   Note: For Windows Millenium and Windows 2000, you may have to click the
+   Display all Control Panel options link in Control Panel to view the Internet
+   Options icon.
+
+3. At the top of the Internet Properties window, click the Advanced tab.
+
+4. Scroll through the list of options until you find the section labeled
+   Security.
+
+5. Select at least one of the following boxes:
+    - PCT 1.0
+
+    - SSL 2.0
+
+    - SSL 3.0
+
+    - TLS 1.0
+
+6. Click the Apply button at the bottom of the screen, and then click the OK
+   button.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNExplorer
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

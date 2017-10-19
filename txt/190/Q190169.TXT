@@ -1,0 +1,74 @@
+DOCUMENT:Q190169  30-MAY-2002  [homegame]
+TITLE   :Zone: How to Change or Reset a Forgotten Password
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to change or reset a forgotten .NET Passport password.
+
+MORE INFORMATION
+================
+
+To change your Microsoft .NET Passport password, follow these steps:
+
+1. Click the link below to connect to .NET Passport Member Services:
+
+   http://memberservices.passport.com/memberservice.srf
+
+2. Click Change my password.
+
+If you forgot your Microsoft .NET Passport password and want to reset it, follow
+these steps:
+
+1. Click the link below to connect to the Zone:
+
+   http://zone.msn.com/services/support.asp
+
+2. Click Forgot.
+
+3. Click "I forgot my password".
+
+Alternatively, click the link below to go directly to the "Reset Your Password"
+page:
+
+   https://memberservices.passport.com/ppsecure/MSRV_ResetPW.srf
+
+For further assistance, please contact .NET Passport Member Services at the
+following Web address:
+
+   http://register.passport.com/contactus.srf
+
+Additional query words: msgame igz login logon forgot lost
+
+======================================================================
+Keywords          : kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

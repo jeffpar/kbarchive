@@ -1,0 +1,56 @@
+DOCUMENT:Q129238  08-MAR-1999  [exchange]
+TITLE   :XCLN: Err Msg: Could Not Log On to Exchange Address...
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Exchange on a Microsoft Windows 3.1 computer that is
+running Microsoft Workgroup Add-On for MS-DOS as its network redirector, the
+following error is generated when the user profile is being set up:
+
+   Could not log on to the Exchange address book server
+   Microsoft Exchange Client - 17402 - [810043FA]
+
+CAUSE
+=====
+
+Running the Microsoft Exchange Windows 3.x client on a Windows 3.1 machine using
+Microsoft Workgroup Add-On for MS-DOS is not supported.
+
+RESOLUTION
+==========
+
+Use the LAN Manager version 2.2c MS-DOS network redirector instead of the
+Workgroup add-on or use Windows for Workgroups version 3.11.
+
+======================================================================
+Keywords          : kbnetwork kbsetup 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : 4.0 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

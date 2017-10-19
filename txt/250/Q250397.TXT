@@ -1,0 +1,79 @@
+DOCUMENT:Q250397  17-NOV-2000  [iis]
+TITLE   :Content is Lost at SF_NOTIFY_AUTH_COMPLETE
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbWin2000PreSP1Fix kbWin2000sp1Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a POST request is redirected from an Internet Server Application Programming
+Interface (ISAPI) filter in the SF_NOTIFY_AUTH_COMPLETE handler, the content
+data submitted is not available to the script where the request is redirected.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 1.Microsoft has confirmed this to be a problem in
+Internet Information Services 5.0.
+
+MORE INFORMATION
+================
+
+If a POST request is redirected from an ISAPI filter in the
+SF_NOTIFY_AUTH_COMPLETE handler, the content data submitted is not available to
+the script where the request is redirected. If the redirection target is a CGI
+script, the following error message occurs:
+
+   502 error: cgi time out
+
+This occurs even though the CONTENT_LENGTH environment variable is set to the
+correct value. The posted data is not available through STDIN.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWin2000PreSP1Fix kbWin2000sp1Fix 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

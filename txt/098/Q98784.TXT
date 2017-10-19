@@ -1,0 +1,61 @@
+DOCUMENT:Q98784  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Cannot Choose All When Exporting to a Text File
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to export information from Microsoft Schedule+ for Windows to a
+text file, the All option button is not available. Similarly, when you attempt
+to export Schedule+ information in the Schedule+ file format, the only option
+available is All.
+
+CAUSE
+=====
+
+When you export a file as ASCII text, Schedule+ only allows you to export either
+all information, in the case of the Schedule+ file format, or information from
+one date to another.
+
+The Schedule+ Help file incorrectly implies that you can export any file format
+to a file using either the All or the From option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 1.0 and 1.0a of
+Microsoft Schedule+ for Windows. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

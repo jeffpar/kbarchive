@@ -1,0 +1,70 @@
+DOCUMENT:Q165340  01-MAY-1999  [iis]
+TITLE   :Change Permissions Needed on Index Server System Files
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:1.1,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Index Server, you may get the following error message in
+your browser after it authenticates the query page:
+
+   Error: Access is denied.
+
+CAUSE
+=====
+
+Even if you have rights to the three files needed to make the query (*.htm,
+*.idq, and *.htx), the files still may not be authenticated. Microsoft Windows
+NT NTFS file restrictions on the files used may cause a problem for the search
+engine under the %systemroot%\system32 directory.
+
+WORKAROUND
+==========
+
+Do one of the following:
+
+ - Make sure you have Change permissions to the %systemroot%\system32
+   directory.
+
+   -or-
+
+ - Make sure you have Change permissions to the following files:
+
+      Idq.dll
+      Query.dll
+      Iinfoadmn.dll
+      Imagehlp.dll
+      Qperf.dll
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ110 kbIdxServ200
+Version           : WINNT:1.1,2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

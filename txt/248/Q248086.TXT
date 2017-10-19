@@ -1,0 +1,62 @@
+DOCUMENT:Q248086  10-AUG-2001  [winnt]
+TITLE   :White Paper About Setting Up a New Cluster for Use with NTOP
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft has made the "Installing the Windows NT Option Pack on Microsoft
+Cluster Server (MSCS)" white paper available. This white paper outlines the
+steps necessary to set up a new cluster for use with Windows NT Option Pack
+(NTOP). The white paper also describes how to install Windows NT Option Pack on
+your cluster.
+
+NOTE: If you do not install the programs in the order specified in this white
+paper, Windows NT Option Pack may not function correctly.
+
+MORE INFORMATION
+================
+
+The white paper also details coexistence strategies for Windows NT Option Pack
+and Microsoft SQL Server, and includes information about overcoming issues that
+Windows NT Option Pack experiences with certain versions of the Microsoft
+Distributed Transaction Coordinator (MSDTC) service.
+
+To obtain this white paper, download the Ntop.exe file from the following
+Microsoft FTP site:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

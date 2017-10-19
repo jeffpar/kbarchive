@@ -1,0 +1,106 @@
+DOCUMENT:Q139339  17-DEC-2000  [winnt]
+TITLE   :CPS Does Not Profile License Logging Service
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Computer Profile Setup (CPS) does not profile the License Logging Service.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Using UPLODPRF.EXE, upload the Master system. For details on running
+   UPLODPRF.EXE read Volume 1, Chapter 3 of the "Windows NT version 3.51
+   Resource Kit."
+
+2. Run Registry Editor (REGEDT32.EXE).
+
+3. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+   \SYSTEM\CurrentControlSet\Services\LicenseService
+
+4. Choose the Save Key option from the Registry menu to save the LicenseService
+   Key to a file (for example: A:\LICENSE.TMP).
+
+5. Choose the OK button.
+
+6. Make sure the HKEY_LOCAL_MACHINE window is highlighted by selecting it.
+
+7. Choose the LOAD HIVE option from the Registry menu to load the registry of
+   the Distribution System.
+
+8. In the Load Hive dialog box, specify the filename that was uploaded to the
+   distribution server and choose the OK button:
+   %SYSTEMROOT%\SYSTEM32\CONFIG\SYSTEM
+
+9. When prompted for Key Name, specify "Distribution System" (without quotes)
+   and choose the OK button.
+
+10. Go to the key: \Distribution System\CurrentControlSet1\Services
+
+11. From the Edit menu, choose Add Key.
+
+12. Specify LicenseService as the key name.
+
+13. Choose the OK button.
+
+14. Go to the following key: \Distribution
+   System\CurrentControlSet1\Services\LicenseService
+
+15. Choose the Restore option from the Registry menu and specify the file saved
+   in Step 4 above (for example: A:\LICENSE.TMP).
+
+16. Select the Distribution System key.
+
+17. Choose the Unload Hive option from the Registry menu.
+
+18. Run WINNTP.EXE from the target system. For details on WINNTP.EXE, read
+   Volume 1, Chapter 3 of the "Windows NT version 3.51 Resource Kit."
+
+NOTE: The License Logging Service only applies to Windows NT Servers. Make sure
+the Target system does not violate your Windows NT Server license agreement. You
+can verify the licensing configuration from License Manager or from the
+Licensing section of Control Panel.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword5
+Version           : 3.5 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

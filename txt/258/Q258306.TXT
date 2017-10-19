@@ -1,0 +1,70 @@
+DOCUMENT:Q258306  01-AUG-2001  [winnt]
+TITLE   :Microsoft INTERIX Installation Program Stops Responding
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4,2.2.4.03,2.2.4.08,2.2.5
+OPER/SYS:
+KEYWORDS:w2000sfu kbUNIXService
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.4.03, 2.2.4.08, 2.2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+INTERIX, Microsoft's Unix environment on Windows NT, may stop responding as it
+installs. Looking at the hard drive will not show any directory creation, no
+files will have been copied, but a look under
+HKEY_LOCAL_MACHINE\Software\Softway Systems will have been created. The
+installation simply begins clocking.
+
+CAUSE
+=====
+
+The installation routine is looking for an active POSIX subsystem. This would be
+one of three files located in Winnt\System32, Psxrun.exe, Posix.exe, and
+Psxdll.dll. These files are shipped with Microsoft Windows NT and Microsoft
+Windows 2000, and comprise the POSIX subsystem. They are frequently "adjusted"
+by different POSIX-dependent applications, such as the Windows NT 4.0 FTP
+server, and various POSIX-compliant applications from third parties.
+
+RESOLUTION
+==========
+
+To resolve this issue, you can use an environment variable from the command
+prompt.
+
+From an MS-DOS prompt (assuming the CD-ROM drive is drive D): C:\> set
+CHECKSS=NO C:\> d: D:\> D:\> cd X86 D:\X86> setup.exe
+
+This should allow the installation routine to progress normally. You may see a
+"path name not normalized" message; if you have taken all INTERIX defaults, this
+should not be an issue. If it is, see "Path Name Not Normalized" in the
+Knowledge Base.
+
+Additional query words:
+
+======================================================================
+Keywords          : w2000sfu kbUNIXService 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224 kbInterix22403 kbInterix22408 kbInterix225
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4,2.2.4.03,2.2.4.08,2.2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

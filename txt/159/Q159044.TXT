@@ -1,0 +1,73 @@
+DOCUMENT:Q159044  10-AUG-2001  [winnt]
+TITLE   :Error Message: Schedule Plus DLL Unable to Initialize
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you start Microsoft Schedule
+Plus 7.0:
+
+   A problem occurred initializing Microsoft Schedule Plus.dll which prevents
+   Microsoft Schedule Plus from running. You may need to reinstall Microsoft
+   Schedule Plus.
+
+CAUSE
+=====
+
+The Ctl3d32.dll file is missing or damaged.
+
+RESOLUTION
+==========
+
+Copy the file Ctl3d32.dll from the i386\Inetsrv\Odbc folder on the Windows NT
+CD-ROM to the Winnt\System32 folder on the hard drive. Then restart your
+computer.
+
+<d>:
+cd \i386\inetsrv\odbc
+copy ctl3d32.dll c:\winnt\system32\ctl3d32.dll
+
+where <d> is the drive letter for the CD-ROM drive. After you copy the
+file, restart your computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT version
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodnt Schedule+.dll
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

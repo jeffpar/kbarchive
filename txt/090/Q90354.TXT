@@ -1,0 +1,55 @@
+DOCUMENT:Q90354  05-DEC-1999  [homemm]
+TITLE   :Cinemania: Filters Display Four Stars Instead of Five
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1992 editions
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania 1992 editions 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Movie Listings section of Cinemania, you are allowed to use Index Filters
+to narrow the focus of your search. Within the Index Filters there is a Star
+Rating category which is based on a 1 to 4 scale. The 1 to 4 rating is based on
+"Leonard Maltin's Movie and Video Guide 1992" which contains capsule reviews of
+over 19,000 movies.
+
+MORE INFORMATION
+================
+
+Motion pictures in Cinemania which have a 5 star rating are in the Detailed
+Review and are listings from "The Motion Picture Guide." Cinemania contains only
+750 reviews from "The Motion Picture Guide" and are therefore not included in
+filtering. Cinemania contains content from three sources; "Leonard Maltin's
+Movie and Video Guide 1992," "The Motion Picture Guide," and "The Encyclopedia
+of Film."
+
+Additional query words: index filter stars
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1992
+Version           : :1992 editions
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

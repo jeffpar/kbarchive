@@ -1,0 +1,94 @@
+DOCUMENT:Q120965  22-JUL-2001  [visualc]
+TITLE   :FIX: C1001: 'e:\b_bld\c2\P2\main.c', line 374 with /Zi Switch
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling an application that uses a local temporary static union, as does the
+sample code shown in the More Information section below, may cause the following
+internal compiler error when built with debug information only:
+
+   TEST.CPP(9) : fatal error C1001: INTERNAL COMPILER ERROR
+   (compiler file 'e:\b_bld\c2\P2\main.c', line 374)
+   Please choose the Technical Support command on the Visual C++ Help menu, or
+   open the Technical Support help file for more information
+
+TEST.CPP is the sample code file given in the More Information section below.
+
+RESOLUTION
+==========
+
+Use either of these two workarounds:
+
+ - Remove the /Zi compiler option.
+
+-or-
+
+ - Create an object to represent the local static union:
+
+         static union { int z;} tmp;
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Visual C++, 32-bit Edition,
+version 4.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+
+   /* Compile options needed: /Zi
+   */ 
+
+   static union { int i; };
+   static union { int k; };
+
+   void local()
+   {
+      union { int x; };
+      union { int y; };
+      static union { int z; };
+   }
+
+
+Additional query words: 2.00 9.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

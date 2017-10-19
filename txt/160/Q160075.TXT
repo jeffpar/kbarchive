@@ -1,0 +1,81 @@
+DOCUMENT:Q160075  31-JUL-2001  [visualc]
+TITLE   :FIX: Problems Debugging in Case-sensitive Database
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:4.2
+OPER/SYS:
+KEYWORDS:kbDebug kbEEdition kbide kbSQL kbVC kbVC500fix kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a case-sensitive database on Microsoft SQL Server 6.5 and create two
+stored procedures with the same name but with a different case, you may see
+inconsistent behavior when you execute or debug one of those procedures.
+
+MORE INFORMATION
+================
+
+To reproduce the problem, create two procedures in a case-sensitive SQL Server
+6.5 database:
+
+      ---------
+      CREATE PROCEDURE test AS
+      DECLARE @a INTEGER
+      DECLARE @A INTEGER
+      select @a = 10
+      select @A = 20
+      print 'test done'
+      RETURN
+      ---------
+      CREATE PROCEDURE TEST AS
+      DECLARE @a INTEGER
+      DECLARE @A INTEGER
+      select @a = 1
+      select @A = 2
+      print 'TEST done'
+      RETURN
+
+When stored procedure names differ only by case (for example, one called test and
+another called TEST), inconsistent behavior may occur when you execute or debug
+one of those procedures. For example, when you start debugging 'TEST,' the
+debugger may show the source code for TEST but it will actually execute 'test'.
+If you have variables common to both procedures, you will see the values as used
+in 'test' in the watch window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbEEdition kbide kbSQL kbVC kbVC500fix kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : WINDOWS:4.2
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,76 @@
+DOCUMENT:Q264714  10-AUG-2000  [sms]
+TITLE   :SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbClient kbConfig kbMMC kbsms200 kbAdvertisement kbPackage kbsmsAdmin kbSoftwareDist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Windows 95 and Microsoft Windows 98 clients fail to run an
+advertisement and report a status message 10003 with error 1317, "The specified
+user does not exist." The following error message is logged in the Smsapm32.log
+file on the client:
+
+   ACCOUNT MGR : ERROR: Could not get APM run account data for site 'XXX'
+   ACCOUNT MGR : Could not get data blob for site 'XXX'
+   SCHED DATA : Return code = 0x525; The specified user does not exist
+
+CAUSE
+=====
+
+When you create a new program using the Systems Management Server Administrator
+console, you can enable the following settings:
+
+ - "Run with administrative rights"
+ - "Use Windows NT client software installation account"
+
+However, only Microsoft Windows NT clients can run programs using the NT client
+software installation account. Note that Windows 95 and Windows 98 clients still
+attempt to run such a program as long as they are in the targeted collection and
+are not excluded by the "This program can only run on specified platforms"
+setting. This is because the Windows 95 and Windows 98 operating systems can
+only execute a process in the logged-on user's context. The concept of multiple
+user contexts does not exist.
+
+WORKAROUND
+==========
+
+If you need to advertise a program that must run with administrative privileges
+to Windows 95, Windows 98 clients, and Windows NT clients in a single
+advertisement, enable the "Run with administrative rights" setting but not "Use
+Windows NT client software installation account" setting. Windows 95 and Windows
+98 clients can successfully execute such a program in the logged-on user's
+context.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig kbMMC kbsms200 kbAdvertisement kbPackage kbsmsAdmin kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

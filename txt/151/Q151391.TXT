@@ -1,0 +1,53 @@
+DOCUMENT:Q151391  22-OCT-2000  [msnetwork]
+TITLE   :New Password May Not Take Effect Immediately
+PRODUCT :The Microsoft Network
+PROD/VER::2.6,5.0,5.1,5.2
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.6, 5.0, 5.1, 5.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you sign out of MSN, The Microsoft Network, after you change your password,
+and then try to sign back in using the new password, you may receive a message
+stating that your password is not valid.
+
+Your new password may not take effect immediately. Usually, password changes take
+effect within one or two minutes, but longer delays are possible.
+
+Wait a few more minutes and then sign in to MSN.
+
+MORE INFORMATION
+================
+
+
+Additional query words: msn 1.30 2.00 2.50 2.60 kbimu
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN520 kbMSN510 kbMSN500 kbMSN260
+Version           : :2.6,5.0,5.1,5.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

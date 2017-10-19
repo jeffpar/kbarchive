@@ -1,0 +1,58 @@
+DOCUMENT:Q201301  28-FEB-2002  [frontpg]
+TITLE   :FP98: Office Binder Documents Are Not Recognized
+PRODUCT :Word Front Page
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage kbInternet kbInetDevkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 98 for Windows 
+ - Microsoft Excel 97 for Windows 
+ - Microsoft Office Binder 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a Microsoft Office Binder document to your web that has hyperlinks
+in one of its components, FrontPage will not be able to display or track those
+hyperlinks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+
+Additional query words: Office Binder Document internal hyperlinks
+
+======================================================================
+Keywords          : kbusage kbInternet kbInetDev kbbuglist
+Technology        : kbOfficeSearch kbFrontPageSearch kbExcelSearch _IKkbZNotKeyword4 kbOffice97Search kbExcel97Search kbFrontPage98Search kbZNotKeyword3 kbOfficeBinder97 kbOfficeBinderSearch kbExcelWinSearch
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug kbhowto
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

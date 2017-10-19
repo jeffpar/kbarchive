@@ -1,0 +1,119 @@
+DOCUMENT:Q160245  11-DEC-1999  [foxpro]
+TITLE   :PRB: Apple Guide Help Files Need Type of HELP
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you set Help to an Apple Guide Help file in Visual FoxPro for Macintosh,
+you receive the following error when you call Help:
+
+   Microsoft Help - This file is not a Microsoft Help file.
+
+CAUSE
+=====
+
+The Apple Guide does not have a type of "help."
+
+RESOLUTION
+==========
+
+Change the "Type of the Apple Guide" to "help" using ResEdit or some other
+resource editor that can change the type of a file.
+
+Use the following code in Visual FoxPro to check and then set the "Type of an
+Apple Guide" to "help":
+
+      CLEAR
+      SET HELP TO    && set HELP back to the default help file
+      SET LIBRARY TO SYS(2004)+"Foxtools.cfm"
+      cType=""
+      cCreator=""
+
+      * The next command only displays Apple Guides that have a type
+      * of "poco." See Help for GETFILE() for information about
+      * changing what files are displayed.
+
+      cFileName=SYS(2027,GETFILE("", ;
+       "Check 'All Files' if the file you want doesn't appear","OK",0,"poco"))
+
+      =FxFileType(cFileName,@cType,@cCreator)
+
+      ? "The File Type was "+'"'+cType+'"'
+      ? "The File Creator was "+'"'+cCreator+'"'
+
+      nCool=FxSetType(cFileName,"help","reno")
+
+      IF nCool=0
+          =FxFileType(cFileName,@cType,@cCreator)
+          ? "The File Type is now "+'"'+cType+'"'
+          ? "The File Creator is now "+'"'+cCreator+'"'
+      ELSE
+          ? "There was an error"
+          ? "The operating system error number is "+STR(nCool)
+      ENDIF
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Page 184 of the Visual FoxPro for Macintosh "Professional Features Guide" states
+that "Apple Guides developed for use with the Apple Guide Macintosh system
+extensions" can be used when integrating context-sensitive Help into an
+application.
+
+These Apple Guides need to have a type of "help" and a Creator of "reno." "poco"
+is another common "Type for Apple Guides."
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. From the Visual FoxPro Command window, type the following command:
+
+   " SET HELP TO GETFILE() " (without the quotation marks)
+
+   When the open dialog box appears, check the All Files check box and find an
+   Apple Guide. If you have not developed a specific Apple Guide for use with
+   Visual FoxPro, many Macintoshes have the AppleCD Audio Player that installs
+   the AppleCD Audio Player Guide in the "Apple Extras:AppleCD Audio Player"
+   folder. This Apple Guide has a Type of "poco" so you should receive the error
+   message when you call Help if Help is set to this file.
+
+2. Call Help in Visual FoxPro.
+
+Additional query words: vfoxmac kbdsd
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,80 @@
+DOCUMENT:Q90911  26-JUN-2001  [utilities]
+TITLE   :FIX: CodeView Version 4.0 Redirects STDPRN to the Screen
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::4.0,4.01,4.05
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS, versions 4.0, 4.01, 4.05 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When version 4.0, 4.01, or 4.05 of CodeView for MS-DOS is used to debug an
+application that sends output to STDPRN, the output is redirected to the screen.
+
+RESOLUTION
+==========
+
+Reopen STDPRN to the PRN device. The sample code below demonstrates the steps
+involved.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in CodeView versions 4.0, 4.01, and
+4.05. This problem was corrected in CodeView version 4.1.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+   /* Compile options needed: /Od /Zi (/D_DEBUG to work around problem)
+   */ 
+
+   #include <stdio.h>
+
+   void main(void)
+   {
+       fprintf(stdprn, "When running under CV 4.0, this "
+                       "is sent to the screen.\n");
+
+   #ifdef _DEBUG
+       freopen("PRN", "wb", stdprn);
+
+       fprintf(stdprn, "When running under CV 4.0, this "
+                       "is sent to the printer.\n");
+   #endif
+
+   }
+
+Additional query words: 4.00 4.01 4.05
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView400DOS kbCodeView401DOS kbCodeView405DOS
+Version           : :4.0,4.01,4.05
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

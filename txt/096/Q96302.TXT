@@ -1,0 +1,78 @@
+DOCUMENT:Q96302  22-OCT-1999  [foxmisc]
+TITLE   :PRB: Line in Group Header/Footer Ignores Data Grouping
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are printing a report in FoxBASE+/Mac that has a line or lines in
+either the group header or group footer, the line may print for only the first
+data group that is printed on the page. On subsequent pages, the line will print
+in the same position as it did on the first page regardless of where the other
+data groups start or stop. This behavior occurs if one (or both) ends of the
+line is positioned outside the boundaries of the report.
+
+RESOLUTION
+==========
+
+Using the mouse to draw a line on a report normally keeps the ends of the line
+within the boundaries of the report. However, it is possible to position one or
+both ends of the line outside the report boundaries. Below are the steps to
+accomplish this. To get the line inside the boundaries of the report, you can
+reverse these same steps, or you can delete the line and draw it again.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Draw a line in a group header or group footer report band. The report needs
+   to have a data grouping.
+
+2. Make sure the line is selected. It will have little black squares at both
+   ends if it is selected.
+
+3. Use the LEFT ARROW or RIGHT ARROW key to move one end of the line off the
+   edge of the report.
+
+4. Using the mouse, grab the end of the line that is still on the report and
+   make the line longer.
+
+5. Preview the report.
+
+The line will appear only once on the first page and then in the same position on
+subsequent pages.
+
+Additional query words: 2.01
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

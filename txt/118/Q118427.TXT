@@ -1,0 +1,71 @@
+DOCUMENT:Q118427  08-NOV-2001  [homemm]
+TITLE   :Schubert: Insufficient Resources Error After Bookshelf Set Up
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Schubert for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Microsoft Bookshelf 1994 after installing Schubert, and then try
+to run Schubert, you may receive the following error message:
+
+   Insufficient Resources: Close one or more applications.
+
+This problem occurs because the Bookshelf 1994 installation program installs an
+earlier version of SPUSH.VBX in the Windows directory.
+
+RESOLUTION
+==========
+
+To correct this problem, delete the files PICCLIP.VBX and SPUSH.VBX from the
+Windows directory. If necessary, recopy them from the Schubert CD to the Windows
+SYSTEM subdirectory.
+
+MORE INFORMATION
+================
+
+The Bookshelf 1994 Setup program adds two files, PICCLIP.VBX and SPUSH.VBX, to
+the Windows directory during a full installation. These files are needed for the
+Multimedia Catalog. When Schubert is installed, it places more recent versions
+of these .VBX files into the Windows SYSTEM subdirectory.
+
+Because the routine Windows uses to search for .DLL and .VBX files involves
+searching the Windows directory first and the Windows SYSTEM subdirectory
+second, the earlier .VBX files, located in the Windows directory, are found
+first and used.
+
+NOTE: Bookshelf 1994 installs SPUSH.VBX (dated 7/7/93) and PICCLIP.VBX (dated
+4/27/93), while Schubert installs SPUSH.VBX (dated 12/8/93) and PICCLIP.VBX
+(dated 4/28/93).
+
+Additional query words: 1994 multi media multimedia multi-media err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMSchubert
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

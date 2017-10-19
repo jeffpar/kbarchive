@@ -1,0 +1,91 @@
+DOCUMENT:Q172067  01-APR-2000  [sna]
+TITLE   :Duplicate HSD Causes Incorrect Error Using "Insert" Option
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you manually create a host security domain (HSD) using the "Insert" option
+in SNA Server Manager, the following error message appears if there is already
+an HSD with the same name.
+
+   The NT local group <HSD_Name> already exist. Do you want to add
+   a new Host Security Domain for it? Yes, No
+
+If you click No, the program closes. If you click Yes, the following error
+message appears:
+
+   Failed to connect to the SNA Host Account Cache. Host Security
+   Domains cannot be added at present.
+
+In the application log of the event viewer, the following stop error message
+appears:
+
+   Event ID 1315
+   Source: SNA Host Security
+
+   An attempt was made to add a pre-existing domain to the database
+   supplied code 0
+
+CAUSE
+=====
+
+SNA Server is reporting an incorrect error message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The logging of the Event 1315 is a valid and correct message; however the error
+messages are misleading and incorrect. The correct message that should be
+received is the same message that appears when you are using the HSD Wizard:
+
+   Host Security Domain <HSD_Name> already exists.
+   Please choose a different name.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

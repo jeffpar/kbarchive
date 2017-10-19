@@ -1,0 +1,80 @@
+DOCUMENT:Q71993  31-OCT-1999  [win95x]
+TITLE   :PCL Driver 3.3 and 3.4 Does Not Set Default Paper Source
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You are using the Microsoft Windows 3.0 PCL/HP driver version 3.3 or 3.4 and
+when you change the default Paper Source field through Control Panel, your
+changes aren't saved when you exit and restart Windows.
+
+CAUSE
+=====
+
+The Windows 3.0 PCL/HP driver does not allow the default Paper Source field to
+be changed and saved through Control Panel and Printers if the paper source is
+set to either Manual Feed or Envelope. If either of these are set, the Paper
+Source reverts back to upper tray the next time Windows is started.
+
+WORKAROUND
+==========
+
+Set the default Paper Source field manually through the WIN.INI file:
+
+1. Load the WIN.INI file into a text editor such as Notepad.
+
+2. Locate the section [HPPCL,LPTx] or [HPPCL,COMx], and add a new line to this
+   section
+
+   Tray=x
+
+    where x = 1 for Default paper tray ("top tray")
+              2 for Lower paper tray
+              3 for Manual feed
+              7 for Auto paper feed
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+"Microsoft Windows Device Development Kit: Printers and Fonts Kit," Microsoft
+Corporation. Pages 9-1, 12-5.
+
+Additional query words: 3.00 win30 3.00a ddk winddk winfont
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

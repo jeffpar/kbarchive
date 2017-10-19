@@ -1,0 +1,78 @@
+DOCUMENT:Q198197  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: Functionality of Numeric Keypad
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the differences in the functionality of the NUM LOCK key
+and the keys on the numeric keypad in Microsoft Combat Flight Simulator and
+Microsoft Flight Simulator.
+
+MORE INFORMATION
+================
+
+When you press the NUM LOCK key in Combat Flight Simulator, you toggle the
+Number Lock setting on your keyboard. When you press the NUM LOCK key in Flight
+Simulator, you open a map window.
+
+To use the keys on the numeric keypad to control your aircraft in Combat Flight
+Simulator, make sure the Number Lock setting on your keyboard is turned off (the
+LED representing the NUM LOCK key is not lit).
+
+The following table lists the functions of the NUM LOCK key and the keys on the
+numeric keypad in Combat Flight Simulator and Flight Simulator.
+
+   Key               Combat Flight Simulator        Flight Simulator
+   ------------------------------------------------------------------
+
+   NUM LOCK          Turns on and off the Number    Opens map window
+                     Lock setting on the keyboard
+
+   Keys on numeric   Selects view (Number Lock      Controls aircraft
+   keypad            turned on) or controls
+                     aircraft (Number Lock
+                     turned off)
+
+REFERENCES
+==========
+
+For additional information about how to use the numeric pad to control an
+aircraft, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q275665 Flight Simulator: Cannot Use Numeric Keypad to Control Aircraft
+
+Additional query words: 1.00 msgame fsim combatfs cfs numbers views
+
+======================================================================
+Keywords          : kbui kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

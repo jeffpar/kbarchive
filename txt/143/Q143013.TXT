@@ -1,0 +1,72 @@
+DOCUMENT:Q143013  16-APR-2000  [powerpt]
+TITLE   :PPT7: After Build Step Fails in Slide Show
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run your presentation in slide show view, some of the objects in your
+presentation (text boxes, pictures, drawing objects) may be built incorrectly.
+
+CAUSE
+=====
+
+This problem may occur when the animation settings for the object includes the
+following:
+
+ - The "Start When Previous Build Ends" check box is selected (under "Build
+   Options"
+
+ - A setting is selected in the "After Build Step" drop-down box
+
+If you use these two options with the same object, the After Build Step will
+fail.
+
+RESOLUTION
+==========
+
+Use one or the other of these options. That is, if you want to use the the
+"After Build Step" option, clear the "Start When Previous Build Ends" check box
+(under Build Options).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PowerPoint version 7.0 for
+Windows 95. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 7.00 ppt powerpt powerpnt dim change color
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

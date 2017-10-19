@@ -1,0 +1,73 @@
+DOCUMENT:Q274633  02-MAY-2001  [msnetwork]
+TITLE   :MSN Explorer Not Readable With ZoomText Screen Reader
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ZoomText screen reader software will not read MSN Explorer text but will
+function normally for other applications.
+
+CAUSE
+=====
+
+Unknown
+
+RESOLUTION
+==========
+
+Unfortunately, there is no resolution for this at this time. Other screen
+readers such as Jaws and Windows Eyes are compatible with this application.
+
+MSN Explorer does incorporate Microsoft Active Accessibility (MSAA) software
+which is a developer technology that improves the way programs and the operating
+system work with accessibility aids. Using Active Accessibility, software
+developers can make their programs more compatible with accessibility aids, and
+accessibility aid developers can make more reliable, and robust, aids.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in ZoomText Screen Reader Software.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: kbimu MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

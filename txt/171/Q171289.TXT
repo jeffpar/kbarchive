@@ -1,0 +1,72 @@
+DOCUMENT:Q171289  31-JUL-2001  [sms]
+TITLE   :SMS: Grey Quick Windows Viewer with Remote Control
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbenv kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to Remote Control a client computer running Windows NT, the Quick
+Windows Viewer appears "empty" and the background color is grey.
+
+The remote keyboard and the remote mouse are correctly driven.
+
+CAUSE
+=====
+
+The Systems Management Server Remote Control Agent is probably not configured
+correctly. Check the properties of the Systems Management Server Remote Control
+Agent service on the Systems Management Server client.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps:
+
+1. Open Control Panel and double-click the Services icon.
+
+2. Select the SMS Remote Control Agent and click Startup.
+
+3. Ensure that the "Allow Service to Interact with Desktop" option is enabled.
+
+4. Restart the Systems Management Server Remote Control Agent.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms helpdesk rc gray
+
+======================================================================
+Keywords          : kbenv kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,169 @@
+DOCUMENT:Q138436  11-FEB-2000  [foxpro]
+TITLE   :PRB: BorderColor Property Doesn't Change Color of Border
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The BorderColor Property does not change the color of an object's border color
+unless other properties of the object are set to specific values. The properties
+that must be set before the BorderColor Property becomes effective differ for
+each object.
+
+RESOLUTION
+==========
+
+Set the appropriate other properties for the object to a setting that will allow
+the BorderColor Property to be effective.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following is a list of properties and the values that must be set to for the
+BorderColor Property of each object to be effective.
+
+Combo Box
+---------
+
+   SpecialEffect Property
+      0-3D            Only the down arrow will have a border color.
+
+   -or-
+
+      1-Plain         The whole object will have a border color.
+
+Command Group
+-------------
+
+   BorderStyle Property
+      1-Fixed Single
+
+   -and-
+
+   SpecialEffect Property
+      1-Plain
+
+Container
+---------
+
+   This object inherits BorderColor from its SpecialEffect Property
+   parent class.
+      2-Flat
+
+Control
+-------
+
+   This object inherits BorderColor from its SpecialEffect Property
+   parent class.
+      2-Flat
+
+Image
+-----
+
+   BorderStyle Property
+      1-Fixed Single
+
+Line
+----
+
+   BorderStyle Property
+      1-Solid OR 2-Dash OR 3-Dot OR 4-Dash-Dot OR 5-Dash-Dot-Dot OR
+      6-Inside Solid
+
+List Box
+--------
+
+   SpecialEffect Property
+      1-Plain
+
+Option Group
+------------
+
+   BorderStyle Property
+      1-Fixed Single
+
+   -and-
+
+   SpecialEffect Property
+      1-Plain
+
+Page Frame
+----------
+
+   Tabs Property      This must be set first to make the SpecialEffect
+      .F.-False      and BorderColor Properties editable.
+         AND
+   SpecialEffect Property
+      2-Flat
+
+Shape
+-----
+
+   BorderStyle Property
+      2-Dash OR 3-Dot OR 4-Dash-Dot OR 5-Dash-Dot-Dot OR 6-Inside Solid
+
+   -and-
+
+   SpecialEffect Property
+      0-3D
+
+-or-
+
+   BorderStyle Property
+
+      1-Solid or 2-Dash or 3-Dot or 4-Dash-Dot or 5-Dash-Dot-Dot or
+      6-Inside Solid
+
+   -and-
+
+   SpecialEffect Property
+      1-Plain
+
+Text Box
+--------
+
+   BorderStyle Property
+      1-Fixed Single
+
+   -and-
+
+   SpecialEffect Property
+      1-Plain
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

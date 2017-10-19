@@ -1,0 +1,120 @@
+DOCUMENT:Q104281  07-NOV-1999  [pcmail]
+TITLE   :PROFS: How to Create and Import Customized Templates
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.0 and 3.2 of Microsoft Mail for PC Networks support customized
+addressing templates for these gateway types:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision
+
+ - Microsoft Mail Message Service for IBM SNADS
+
+ - Microsoft Mail File Format API for Gateways
+
+Mail administrators use these templates to add information to the address lists
+for these external addresses.
+
+NOTE: The PROFS, SNADS, and FFAPI templates are all created with the Import
+utility (IMPORT.EXE). All the examples below use PROFS as an example, but you
+can substitute FFAPI for PROFS.
+
+Defining a Template
+-------------------
+
+The text file that defines the template begins with information such as:
+
+   T PROFS: Gatewayname/Nodeid
+
+   Full Name:~10~25~A~John Doe~
+   Location:~10~25~~A~
+
+The first line designates the type of address template you are creating; the "T"
+designates the file as a template definition. The second line gives the type of
+address information, and the third gives the associated gateway and host IDs.
+
+NOTE: Use Gateway/DGN for SNADS; Network/Postoffice for FFAPI.
+
+Each succeeding line defines a template field. The fields all start in column 2
+with the field data starting position, field length, and then a default value
+for the field. For more detailed information about these fields, see the
+Microsoft Mail for PC Networks "Administrator's Guide."
+
+Use the IMPORT.EXE program to import the template file into the postoffice. For
+example
+
+   import admin -ppassword -ftmplt.txt -t
+
+where TMPLT.TXT is the text file containing the template definition and -t
+specifies that the import support template information.
+
+Adding Names with Template Information
+--------------------------------------
+
+After the template has been created in the postoffice, PROFS addresses can be
+imported into the postoffice along with additional information for the template
+fields. The import file for the addresses should follow this example:
+
+   A Mike Sterns                     PROFS:PSSGATE/MSVM6/MSTERNS
+   - Full Name:/Mike A. Sterns
+   - Location:/New York, NY
+   A John Foe                        PROFS:PSSGATE/MSVM6/JFOE
+   - Full Name:/John G. Foe
+   - Location:/LOS Angeles, CA
+
+The "A" designates that this address is to be added to the postoffice, along with
+the template information. Each following line of template information must start
+with a dash (-) followed by a space. The order of the prompts in the information
+should match the order of the prompts in the template definition.
+
+Use the IMPORT.EXE utility to import these addresses into the post office. For
+example
+
+   import admin -ppassword -fnames.txt -t
+
+where NAMES.TXT is the text file containing the gateway names with template
+information and -t specifies that the import should support template
+information.
+
+NOTE: You can combine a template's definition and address into one file and
+import it into the mail database in one step.
+
+REFERENCES
+==========
+
+Microsoft Mail "Administrator's Guide," pages 143-160, 318-330.
+
+Additional query words: 3.00 Addressing SNADS FFAPI File Format 3.0 API
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300 kbMailGateIBMPROFS320
+Version           : :3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

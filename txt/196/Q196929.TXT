@@ -1,0 +1,60 @@
+DOCUMENT:Q196929  13-AUG-1999  [homemm]
+TITLE   :Cannot Install Encarta on Windows NT 4.0-Based Computer
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 99 
+ - Microsoft Encarta Reference Suite 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Encarta Encyclopedia 99 on a Microsoft
+Windows NT 4.0-based computer, you may receive one of the following error
+messages:
+
+ - Cannot use derived alpha-method from Intel code.
+
+ - Encarta Setup cannot open the file C:\Winnt\Sys32x86\Oleaut32.dll.
+
+CAUSE
+=====
+
+This behavior can occur if an Alpha microprocessor is installed in the computer.
+
+MORE INFORMATION
+================
+
+Encarta Encyclopedia 99 contains code that is specifically designed to run only
+on microprocessors that are fully compliant with the Intel x86 instruction set.
+
+Additional query words: multi multi-media media mm enc99 winnt
+
+======================================================================
+Keywords          : kb3rdparty kbenv kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaReference99
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

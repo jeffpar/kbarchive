@@ -1,0 +1,75 @@
+DOCUMENT:Q172821  22-OCT-2000  [sna]
+TITLE   :Expectation of Unbind Response Can Cause Application Failure
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 3.0, 3.0 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If an LUA RUI application does not respond to an UNBIND request, SNA Server will
+abend the application.
+
+CAUSE
+=====
+
+SNA Server requires an LUA RUI application to respond to an UNBIND request
+before allowing a new session to be bound to the LU. Some applications are not
+written to respond to this request. For example CM/2 does not have this
+requirement.
+
+RESOLUTION
+==========
+
+A new registry entry has been added to the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ 
+   Snabase\Parameters\Client
+
+The new entry is DontWaitUnbindResponse. If it is present and set to any numeric
+value, SNA Server will not expect a response to the UNBIND from the application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 3.0 and 3.0 Service
+Pack 1 (SP1). This problem was corrected in the latest SNA Server version 3.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: RUI
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11,3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

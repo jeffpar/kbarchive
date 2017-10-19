@@ -1,0 +1,60 @@
+DOCUMENT:Q110413  07-MAY-2002  [homegame]
+TITLE   :Err Msg: No Airport Information Is Available for This...
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following message appears when you choose Airports from the World menu:
+
+   No Airport Information is Available for This Flight Area
+
+MORE INFORMATION
+================
+
+This occurs when you use a scenery file that does not include airport
+information. This will occur with:
+
+ - The Flight Simulator Aircraft & Scenery Designer version 4.0 Scenery Disk
+   (SAIL.SCN) that ships with Flight Simulator 5.0
+
+ - Any .SC1 or .SCN scenery file imported from Flight Simulator 4.0
+
+ - Third-party scenery for Flight Simulator 5.0 that does not include airport
+   information
+
+Additional query words: 5.00 5.00a flightsim fltsim dos FS5 add- on fs4
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

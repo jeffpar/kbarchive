@@ -1,0 +1,67 @@
+DOCUMENT:Q186617  11-DEC-2001  [winnt]
+TITLE   :Error 204: Terminal Server Client TCP Port error
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to a Beta 2 Terminal Server using the Terminal Server
+Client, you may get a "Failure to connect: 204" error. The cause of this error
+is most likely that you are using a pre-Beta 2 version of the client. A change
+was made in Terminal Server so that it listens for traffic on port 3389, rather
+than on port 1503, as in pre-Beta 2 versions.
+
+RESOLUTION
+==========
+
+You can verify that this is the cause of your connection problem by capturing
+the network traffic with Network Monitor (included with Terminal Server) as you
+attempt to connect. After stopping the trace, the summary view screen will show
+the client attempting to connect. You should see the source port number (src:)
+and the destination port number (dst:3389) in the description field.
+
+Uninstall any client versions prior to Beta 2, and install the new version.
+
+If this is not the problem, the 204 error points to a TCP port problem. It means
+that the initial socket connection between the Terminal Server and the client
+could not be established. You might have a protocol problem on the client
+computer, particularly with Windows for Workgroups 3.11 clients. Be sure you are
+using the TCP/IP-32B version from the Clients subdirectory on the Terminal
+Server CD. For Windows 95 or Windows NT Clients, try reinstalling the TCP/IP
+protocol. Third, you could have a protocol problem on the Terminal Server.
+Reboot the server and then, if this doesn't resolve the problem, reinstall the
+TCP/IP protocol on the server.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

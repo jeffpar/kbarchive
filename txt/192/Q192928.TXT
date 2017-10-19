@@ -1,0 +1,60 @@
+DOCUMENT:Q192928  25-JUL-2001  [homegame]
+TITLE   :MCM: Motorcycle Does Not Move When You Attempt to Accelerate
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhw kbui kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Motocross Madness, your motorcycle may not move when you
+attempt to accelerate.
+
+CAUSE
+=====
+
+This behavior can occur if you assign the acceleration function to a
+proportional device such as a joystick handle or throttle control.
+
+RESOLUTION
+==========
+
+To resolve this issue, assign the acceleration function to a button on the game
+controller or mouse, or to a key on the keyboard.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 1.00 msgame mcm motorcross motorcycle
+
+======================================================================
+Keywords          : kbhw kbui kbimu msgame kbHardware 
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

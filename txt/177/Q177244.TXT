@@ -1,0 +1,107 @@
+DOCUMENT:Q177244  17-MAY-2002  [visualc]
+TITLE   :HOWTO: AsyncDown Demonstrates Asynchronous Data Download
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,4.2b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbole kbSample kbInternet kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSInet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Windows Internet Services (WinInet) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Asyndown.exe sample demonstrates asynchronous download of data in an MFC
+ActiveX control. MFC wraps this asynchronous download process in the
+CAsyncMonikerFile class.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Asyndown.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+
+An Asynchronous moniker provides a way to download data asynchronously over a
+network. After a download is first requested, Asynchronous Monikers use a
+callback interface to indicate that data is available. This data can then be
+read with an Asynchronous Read operation.
+
+A Read operation on an Asynchronous moniker returns immediately even if the
+operation has not been completed. If there are only 10 bytes available and Read
+is called with 1K, it does not block but returns with the 10 available bytes at
+that point in time. It is the caller's responsibility to return later and
+attempt to read more data when notified through the callback.
+
+MFC wraps this asynchronous download process in the CAsyncMonikerFile class.
+ActiveX controls can use the CDataPathProperty class, derived from
+CAsyncMonikerFile, to help implement asynchronous control properties. This
+sample demonstrates how to set up an asynchronous loop using timers to read the
+data.
+
+In the function CDataPathProperty::OnDataAvailable, a timer is set to indicate
+that data is available. When the timer message is received, the sample reads in
+blocks of 128 bytes and fills an edit control. If data is not available when the
+timer message is handled, the timer is turned off. OnDataAvailable turns on the
+timer if more data arrives later.
+
+Please note that the timer duration is intentionally large and data blocks are
+intentionally small to demonstrate the behavior even with small files.
+
+You can test the control either by using the HTML page with the sample or by
+inserting the control in a control container and setting the DataPath property.
+The control is not signed so you need to set your security settings
+appropriately if you want to test the control. Depending on your security
+setting, you may still be warned that the control is not safe for scripting.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Sridhar S.
+Madhugiri, Microsoft Corporation
+
+Additional query words: softlib
+
+======================================================================
+Keywords          : kbfile kbole kbSample kbInternet kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSInet 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.2,4.2b,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

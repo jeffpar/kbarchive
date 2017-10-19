@@ -1,0 +1,92 @@
+DOCUMENT:Q168507  16-APR-2000  [powerpt]
+TITLE   :PPT7: Changes to Notes Master Not Reflected in Notes View
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you apply a border and/or fill to the notes pages while using the notes
+master view, you may see one of the following results:
+
+ - When you attempt to apply a border and a fill, the border is applied, but the
+   fill is not. When you look at the slide in notes view, it appears as though
+   neither the border nor the fill were applied to the slide.
+
+ - When you attempt to apply a fill, the fill is not applied. For example, when
+   you look at the slide in notes view, you will not see the fill.
+
+ - When you attempt to apply a border, the border appears to be applied.
+   However, when you look at the slide in notes view, you will see one of the
+   following symptoms:
+    - The current slide has a border.
+
+    - Some of the slides have a border.
+
+    - None of the slides have a border.
+
+These symptoms appear in the notes master, notes view, and slide view.
+
+WORKAROUND
+==========
+
+NOTE: There is currently no workaround to apply the fill.
+
+To work around this problem and apply a border to the notes pages, do the
+following:
+
+1. Go to the slide on which you want to add a border.
+
+2. On the View menu, click Notes Pages.
+
+3. On the Status Bar, click Notes Layout.
+
+4. Click to select Reapply Master, and then click OK.
+
+5. On the View menu, point to Master, and click Notes Master.
+
+6. Make the changes you want to the border only.
+
+7. On the View menu, click Notes Pages.
+
+The changes will now appear on every slide in the presentation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: 7.00 update missing broken follow
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

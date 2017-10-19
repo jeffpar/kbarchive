@@ -1,0 +1,71 @@
+DOCUMENT:Q107119  12-JUN-2001  [sna]
+TITLE   :Local and Remote Control Point Names Can't be the Same
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.11
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have difficulty making a connection with a link, confirm that the local
+and remote Control Point names are not the same. A common cause of connection
+difficulties with a new configuration is that the same names have been specified
+for both local and remote Control Point and Network names.
+
+MORE INFORMATION
+================
+
+In SNA Server Admin, the local Control Point and Network names are set in a
+different dialog box than the remote Control Point and Network names. The local
+Control Point Name and Network Name apply to all connections, and are set in the
+Server Properties dialog box. The remote Control Point Name and Network Name for
+a particular connection are set in the Connection Properties dialog box.
+
+ - The local network name and control point name (configured in the Server
+   dialog) identify the SNA Server node to the SNA network.
+
+ - The remote network name and remote control point name (configured in the
+   connection dialog) identify the remote node name that you want to connect to.
+
+ - These should never be set to the same value. If they are, the connection will
+   show up as "Pending" and never activate (note that there are other causes for
+   a Pending status besides this possible configuration problem).
+
+To verify duplicate names use SNA Admin and do the following:
+
+1. In the Servers and Connections window, choose Services.
+
+2. Select Properties.
+
+3. Make a note of the SNA Server Network Control Point Name.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211
+Version           : WINDOWS:2.0,2.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

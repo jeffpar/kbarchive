@@ -1,0 +1,49 @@
+DOCUMENT:Q86114  08-NOV-1999  [pcmail]
+TITLE   :PROFS: How to Prevent the Gateway VM ID from "Going to Sleep"
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the Microsoft Mail gateway VM ID is logged off automatically, the LAN side
+will not be able to communicate and will subsequently exit to MS-DOS.
+
+The VM administrator should make sure that the gateway VM ID is not included on
+the list of IDs that will be automatically logged off of VM because of
+inactivity. Also, make sure the gateway VM ID does not load any "screen saver"
+software, which would blank the host session screen. This prevents the LAN side
+gateway program from "reading" the host session screen.
+
+
+Additional query words: 3.20 pcmail profsvm
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

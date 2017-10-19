@@ -1,0 +1,94 @@
+DOCUMENT:Q186294  17-DEC-1999  [schedplus]
+TITLE   :Schedule+ Week Numbering Incorrect in Monthly View
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0,7.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, versions 7.0, 7.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With Microsoft Schedule+, when you use the option to "Show week numbers in the
+calendar" and view a calendar using the monthly view, the week numbers displayed
+may not be correct and may not match those printed.
+
+CAUSE
+=====
+
+This occurs when the first day of the year starts on the fifth day of the
+calendar week. For example, in 1998, the first day of the year starts on
+Thursday. If you have the first day of the week option set for Sunday, then
+January 1 is on the fifth day of the week in the monthly calendar display.
+
+WORKAROUND
+==========
+
+Choosing another day as the first day of the week corrects this problem. In the
+example above, if you change the first day of the week to Monday, then January 1
+will start on the forth day of the calendar week.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Schedule+ 7.0, & 7.5.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce the Problem
+------------------------------
+
+1. On the Tools menu, click Options.
+
+2. On the General tab, click to select Sunday from the "Week starts on" list.
+
+3. On the Display tab, click to select the "Show week numbers in the calendar"
+   option, and click OK.
+
+4. Click the Monthly tab to display the Monthly view.
+
+5. Click the calendar controls to go to January 1998.
+
+6. Notice that January 1 is found in week one and February 1 is found in week
+   six.
+
+7. Click the calendar controls to go to February 1998.
+
+8. Notice that February 1 is now found in week five. This same weekly sequence
+   continues for the rest of the year.
+
+NOTE: If you print monthly calendars for the whole year, you will find January 1
+in week one and February 1 in week five. This same pattern follows for the
+entire year.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbSchedule750
+Version           : WINDOWS:7.0,7.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

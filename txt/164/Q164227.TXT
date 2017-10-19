@@ -1,0 +1,70 @@
+DOCUMENT:Q164227  25-MAR-2002  [win95x]
+TITLE   :Second PC Card Not Recognized When Inserted in Dock
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On certain laptop computers running Windows 95 OEM Service Release 2 (OSR2),
+when a PC Card is inserted into a slot in the docking station while another slot
+in the docking station is occupied by a PC Card, the newly inserted PC Card may
+not be recognized.
+
+CAUSE
+=====
+
+This symptom has been observed with certain docking stations that use the TI
+1130 PCI-to-CardBus bridge, and occurs only when the PC Card is inserted into a
+CardBus slot connected through this bridge (that is, in the docking station).
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+
+MORE INFORMATION
+================
+
+This symptom may occur regardless of whether the PCI-to-CardBus bridge in the
+docking station is configured as a "positive decode" or a "subtractive decode"
+bridge.
+
+
+If you are experiencing this symptom, contact your computer manufacturer for a
+possible remedy.
+
+Additional query words: 95 Texas Instruments TI1130
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

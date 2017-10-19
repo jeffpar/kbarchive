@@ -1,0 +1,133 @@
+DOCUMENT:Q184619  13-JUL-2001  [iis]
+TITLE   :How to Change Windows NT Account Passwords Using IIS 4.0
+PRODUCT :Internet Information Server
+PROD/VER::2.5,4.0
+OPER/SYS:
+KEYWORDS:kbADSI kbIIS kbiis400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Active Directory Service Interfaces, version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure Internet Information Server (IIS) so
+that users can change their Windows NT passwords.
+
+NOTE: Changing a password over the Internet is a potential security risk.
+
+MORE INFORMATION
+================
+
+To configure IIS so users can change their Windows NT passwords, you can use
+either the IISADMPWD virtual directory or the Microsoft Active Directory Service
+Interfaces (ADSI) provided with IIS.
+
+Using the built-in support:
+
+IIS 4.0 ships with the ability to allow users to change their Windows NT
+passwords and to notify users that their passwords are about to expire. This is
+done by using the IISADMPWD virtual server that installs as part of the default
+Web site. This feature is implemented as a set of .htr files located in the
+<System>\System32\Inetsrv\Iisadmpwd directory and an ISAPI extension named
+Ism.dll.
+
+You can configure a site to support password changes by setting the following
+properties on the site: PasswordCacheTTL, PasswordChangeFlags and
+PasswordExpirePrenotifyDays. Refer to the IIS documentation for more details on
+these properties.
+
+To allow a user to change their password, provide a link in your Web page to the
+following location:
+
+   http://servername/IISADMPWD/aexp.htr
+
+These properties can be set either through the MetaEdit tool that ships in the
+IIS 4.0 Resource Kit, or you can include the following sample script in ASP,
+Visual Basic, or the Windows Script Host:
+
+      Dim IIsObj, vDay
+      Set IIsObj = GetObject("IIS://LocalHost/W3SVC")
+
+      vDay = 10
+
+      Set new value
+      IIsObj.PasswordExpirePrenotifyDays = vDay
+
+      'Save the changes back to the data store
+      IIsObj.SetInfo
+
+Using the ADSI Interfaces provided by IIS:
+
+ADSI allows access to many directory stores in addition to the IIS metabase,
+including Windows NT user accounts. If you use ADSI from ASP to access NT
+accounts, you must run an account that has administrator access to a domain
+controller. If your IIS server is not a domain controller, you have to establish
+a useable administrator security context. In this case, you cannot use the IIS
+4.0 Windows Challenge/Response, you must use basic authentication or force your
+.asp script to run as an explicit administrator account. With IIS 5.0, you can
+use Windows Integrated Security as long as all your users are running Windows
+2000 clients and your IIS server computer account is marked as trusted for
+delegation. The following is some sample code to create a new user account,
+<USERNAME>, with the password, <PASSWORD>, in the group,
+<GROUP>, and domain, <DOMAIN>:
+
+       ' General Constants
+         strDomain ="<DOMAIN>"
+         strUser ="<USERNAME>"
+         strGroup = "<GROUP>"
+
+         ' Create new user with password
+         Set oDomain = GetObject("WinNT://" & strDomain)
+         Set oUser = oDomain.Create ("User", strUser)
+         oUser.SetInfo
+         oUser.SetPassword = "<PASSWORD>"
+         Set oUser = nothing
+
+         ' Add user to specific group
+         Set oGroup = oDomain.GetObject("Group", strGroup)
+         oGroup.Add ("WinNT://" & strDomain & "/" & strUser)
+       oGroup.SetInfo
+       Set oGroup = nothing
+         Set oDomain = nothing
+
+NOTE: On Windows NT 4.0, IIS installs a limited version of ADSI. This sample
+script only works on Windows NT 4.0 if you have installed the full version of
+namespace provider. For more documentation and a full version of ADSI, please
+see the following Web page:
+
+   http://www.microsoft.com/ADSI (http://www.microsoft.com/ADSI)
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q184058 Unable to Change Password Using the IIS 4.0 Change Password Feature
+
+Additional query words:
+
+======================================================================
+Keywords          : kbADSI kbIIS kbiis400 
+Technology        : kbiisSearch kbAudDeveloper kbADSISearch kbiis400 kbADSI250
+Version           : :2.5,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

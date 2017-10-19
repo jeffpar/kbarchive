@@ -1,0 +1,58 @@
+DOCUMENT:Q151880  08-AUG-2001  [winnt]
+TITLE   :Using Server-Based User Profiles w/ Citrix Winframe
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to log on with a user profile on a Windows NT Server running
+Citrix Winframe, you may get the following error:
+
+   Unable to log you on because you do not have security access to the
+   information inside your mandatory profile.
+
+Normally, this error would mean that you had not been granted access to the
+profile in User Profile Editor. However, with Winframe installed, you may get
+this error even though you have the appropriate access.
+
+RESOLUTION
+==========
+
+With Winframe installed, user profiles must be kept in a share called Profile.
+If the profiles are kept in any other share, you may get the error mentioned
+above. The appropriate entry in User Manager for profile path is:
+
+   \\servername\Profile\mandatory.man
+
+where servername is the computer name of the server where the profiles are
+stored, and mandatory.man is the name of the profile assigned to the user.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,57 @@
+DOCUMENT:Q104037  26-NOV-1999  [msdos]
+TITLE   :Microsoft Backup Doesn't Write to Second Disk After Time-Out
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a time-out occurs during a backup procedure, Microsoft Backup may not
+continue successfully (although it appears to do so).
+
+CAUSE
+=====
+
+This problem occurs if you wait until the drive light goes out when you are
+switching disks. At that point, Microsoft Backup asks you if you want to
+continue or quit. After you choose to continue, Microsoft Backup appears to
+finish normally; however, the second (or subsequent) disk may be blank.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Backup versions 6.0
+and 6.2. This problem was corrected in later version of MS-DOS.
+
+
+Additional query words: 6.00 6.20 timeout time out msbackup.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

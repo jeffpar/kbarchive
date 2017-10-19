@@ -1,0 +1,69 @@
+DOCUMENT:Q193814  22-OCT-2000  [sna]
+TITLE   :Performance Improvements for APPC/CPIC Applications
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Various performance improvements have been implemented within the SNA Server
+client (Snadmod.dll, Snalm.dll) and the Win32 APPC .dll (Wappc32.dll) to help
+maximize performance of APPC or CPIC applications. Improvements include:
+
+ - More efficient internal buffer allocation/deallocation within the SNA client
+   software.
+
+ - Reduced thread usage when an application calls RECEIVE_ALLOCATE more than
+   once and specifies the same TP name.
+
+ - Improved routing of incoming FMH-5 to the SNA client computer where the
+   invokable TP is running.
+
+ - Improved SNA Server performance while handling an incoming FMH-5 Attach
+   request.
+
+
+RESOLUTION
+==========
+
+Microsoft has produced an update to SNA Server 4.0 which improves performance
+for APPC or CPIC applications. This update is included in the latest SNA Server
+version 4.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+Version           : WINDOWS:4.0,4.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

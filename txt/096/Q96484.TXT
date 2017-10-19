@@ -1,0 +1,68 @@
+DOCUMENT:Q96484  30-JUL-2001  [lanman]
+TITLE   :Certified Boot ROM List
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+This article contains a list of boot ROM that are supported for LAN Manager 2.0,
+2.1, and 2.1a.
+
+LAN Manager 2.0
+---------------
+
+IBM Token Ring
+
+LAN Manager 2.0c
+----------------
+
+The above list plus:
+
+Western Digital (now SMC) ethernet
+
+LAN Manager 2.1
+---------------
+
+The above list plus:
+
+   IBM Ethernet
+   3COM Etherlink
+   3COM EtherlinkII
+   3COM Etherlink/MC
+   3COM 3Station (several different models, DOS only)
+   3COM Etherlink16
+   Novell NE1000
+   Novell NE2000
+   Nokia Data (now ICL) Ethernet IIe
+
+LAN Manager 2.1a
+----------------
+
+The above list plus:
+
+   HP Ethertwist
+
+Additional query words: Etherlink
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

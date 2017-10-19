@@ -1,0 +1,77 @@
+DOCUMENT:Q215402  24-FEB-2002  [vbwin]
+TITLE   :BUG: Pressing F1 for Windows CE Controls Does Not Display Help
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you press F1 to display context sensitive Help topics while focus is set to a
+non-intrinsic control (for example, the Microsoft CE PictureBox Control 6.0)
+within the Visual Basic design environment, a Help topic does not display.
+
+RESOLUTION
+==========
+
+The Help files for these controls exist, but the user has to explicitly browse
+for them in the Microsoft Developer Network (MSDN) Help files. To locate the
+Help topics for the control select the Help menu, and then click Windows CE
+Toolkit Help. Next, select the Index tab and search on the control name (for
+example, PictureBox control).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE Project in Visual Basic.
+
+2. Select any Windows CE control from the Components dialog box located under
+   the Project menu (for example, Microsoft CE PictureBox Control 6.0).
+
+3. Draw the control on the default form (Form1).
+
+4. Press F1 to open the context sensitive help for that control.
+
+RESULT: No help topic displays.
+
+Additional query words: vbce wce vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

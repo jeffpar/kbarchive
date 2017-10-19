@@ -1,0 +1,77 @@
+DOCUMENT:Q143428  02-NOV-2001  [vbwin]
+TITLE   :DOCERR: SetWindowPos Declaration Incorrect in On-Line Help
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article corrects a documentation error for the SetWindowPos function call
+as described in the Microsoft Visual Basic on-line help file (WIN31API.HLP) that
+shipped with Microsoft Visual Basic version 3.0 for Windows. In Example 1 for
+the hWnd property, if you run the code example, the following error message
+displays:
+
+   Bad DLL calling convention
+
+MORE INFORMATION
+================
+
+The declaration is incorrectly documented as the following:
+
+   Declare Sub SetWindowPos Lib "User" (ByVal h1 As Integer,
+                                        ByVal h2 As Integer,
+                                        ByVal x As Integer,
+                                        ByVal y As Integer,
+                                        ByVal cx As Integer,
+                                        ByVal cy As Integer,
+                                        ByVal f As Long)
+
+The correct declaration is as follows:
+
+   Declare Sub SetWindowPos Lib "User" (ByVal h1 As Integer,
+                                        ByVal h2 As Integer,
+                                        ByVal x As Integer,
+                                        ByVal y As Integer,
+                                        ByVal cx As Integer,
+                                        ByVal cy As Integer,
+                                        ByVal f As Integer)
+
+NOTE: Each Declare statement must be entered as one, single line.
+
+Please note that the last parameter (ByVal f As Long) is incorrectly defined as
+Long. It should be defined as Integer.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,78 @@
+DOCUMENT:Q83708  10-OCT-1999  [win95x]
+TITLE   :"sLanguage=<string>" Is Not Inserted into the WIN.INI File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When changing the language setting in the International dialog box of the
+Control Panel, the change is not reflected in the [intl] section of the WIN.INI.
+
+MORE INFORMATION
+================
+
+The purpose of this setting is to specify the language you want to work in.
+Windows applications that provide language-specific tasks, such as sorting or
+spell-checking, use this setting. Following are the standard values:
+
+   Value         Language
+   -----         --------
+   dan           Danish
+   dut           Dutch
+   eng           International English
+   fcf           French Canadian
+   fin           Finnish
+   frn           French
+   ger           German
+   ice           Icelandic
+   itn           Italian
+   nor           Norwegian
+   por           Portuguese
+   spa           Spanish
+   usa           U.S. English
+
+To reflect the change made in the Control Panel, add the following line to the
+[intl] section of the WIN.INI file:
+
+   sLanguage=<string>
+
+where string is the value for the specified language. For example, for Dutch you
+would insert the following line:
+
+   sLanguage=dut
+
+This information does not apply to the Microsoft Windows operating system version
+3.1.
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

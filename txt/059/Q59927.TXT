@@ -1,0 +1,78 @@
+DOCUMENT:Q59927  10-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Accessing Resources or Data in Nonstandard Fields
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To access information stored in nonstandard message types in Microsoft Mail
+version 2.0, use the following syntax:
+
+      msmail(GetField, messageRef, ident [, index]) => data
+
+For normal message types, the simpler commands, such as getSubject and getBody,
+can be used instead.
+
+getField returns the contents of the nth occurrence of the field, as specified by
+"index," with the given ident. For fields that are only allowed to occur once in
+a given message, no index needs to be passed. The first field in a message has
+index 0 (zero) in Mail 2.0 and index 1 in Mail 3.0 (see "Note" below for
+details). This allows for multiple resources of the same type ("ident") to be
+sent with one message. For more information, see the documentation on addField.
+
+"ident" is a 4-character type identification for that handle, such as "ICON",
+"CODE", and "snd ", or a 4-character field name identification for the field,
+such as "PHON" (the phone number on the phone form) or "T001" on a custom form.
+
+"index" is a number that directs the command to access a particular occurrence of
+the specified field or resource.
+
+To find out which idents are assigned to nonstandard objects on custom forms, use
+the following syntax:
+
+   show background field idmap
+
+Type this in the message box on the Send screen or Read screen of the form's
+stack. A field will display the mapping between HyperCard field names and Mail
+idents. There is also a list of the standard idents.
+
+Note: getField is not completely compatible between versions; the "index" default
+for the first field in Mail 2.0 is 0 (zero), while the default for the first
+field in Mail 3.0 is 1 (one). For additional arguments, see getField in the
+documentation for Mail 3.0.
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

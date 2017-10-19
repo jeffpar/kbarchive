@@ -1,0 +1,99 @@
+DOCUMENT:Q163383  09-AUG-2001  [winnt]
+TITLE   :Failure to Obtain IP Address Via DHCP on Token Ring w/ SP2
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Windows NT version 4.0, with Service Pack 2 applied, in a source
+routed Token Ring environment and configured as a DHCP client, you may receive
+the following message when you start:
+
+   The DHCP client could not obtain an IP address.
+
+   If you want to see DHCP messages in the future, choose YES, otherwise choose
+   NO.
+
+Event ID 1003 may be logged in the System.log file, and visible in Event Viewer
+with the following detail:
+
+   DHCP failed to obtain a lease for the card with network address <12-digit
+   hexadecimal media access control address of the local network adapter>.
+   The following error occurred: The semaphore timeout period had expired.
+
+CAUSE
+=====
+
+This problem was caused by the way that Tcpip.sys read the registry value that
+indicates that source routing should be used.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To change this value in the Registry on the client, perform the following steps:
+
+1. Start the Registry Editor (Regedt32.exe).
+
+2. Go to the following key in the Registry:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ 
+   Tcpip\Parameters
+
+3. Change the ArpAlwaysSourceRoute value to 1. If this value is not present,
+   click on Edit, Add Value, and enter the following settings:
+
+   Value Type: REG_DWORD - Boolean
+   Valid Range: 0,1 (False or True)
+   Default: 0 (False)
+
+4. Restart the computer for the change to take effect.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt dhcp
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

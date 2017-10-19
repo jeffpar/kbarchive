@@ -1,0 +1,97 @@
+DOCUMENT:Q94468  30-OCT-1999  [pcmail]
+TITLE   :MHS: Microsoft Mail & Netware Global Messaging (NGM)
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MHS, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Netware Global Messaging (NGM) is the update Novell has released to MHS 1.5.
+Even though NGM handles messages in a manner similar to MHS, the procedure to
+install the Gateway is different.
+
+MORE INFORMATION
+================
+
+All gateways that support the Simple Message Format (SMF) 70 Specification are
+compatible with NGM. The Microsoft Mail Gateway to MHS version 3.0 was written
+to this specification. However, because NGM was released after the gateway, the
+information in this article was not subject to the normal pre- release testing
+and beta cycle procedures which were in place for MHS 1.5.
+
+Chapter 8 of the NGM Administration Manual, titled "SMF Gateways, Non-
+Participating, Passive, and Indirectly Accessed Servers," deals with installing
+gateways such as the Microsoft Mail Gateway to MHS, version 3.0. To install the
+gateway, follow the procedure on page 8-22 titled "Establishing Connectivity
+with Indirectly-Accessible Messaging Servers."
+
+Note the section on GWDEMON, a separate component that must run on a workstation
+to support a gateway. GWDEMON is required by any gateway that uses the inpost,
+outpost method to submit messages to MHS. GWDEMON acts similarly to the
+Connectivity Manager in MHS 1.5. Page 8-24 of the NGM Administration Manual
+describes the GWDEMON application.
+
+In the process of defining the SMF Gateway in the New SMF Gateway Information
+form (documented on page 8-25 of the NGM manual), the following fields are
+equivalent to those in MHS 1.5:
+
+ - Gateway NGM Short Name: an 8 letter address, equivalent to the gateway Host
+   Name in MHS 1.5
+
+ - Command Line: accepts the command line switches documented on page 19 of the
+   "Microsoft Mail Gateway to MHS Administrator's Guide" for version 3.0.
+
+ - SMF Version: Must contain the value 70.
+
+After completing this information, the installation program creates a new set of
+directories in the MHS\MAIL\GATES\<GATENAME> directory, where
+<GATENAME> is replaced by the gateway host name. This directory contains
+five subdirectories, as follows:
+
+IN      Holds messages from Microsoft Mail to NGM
+
+OUT     Holds messages from NGM to Microsoft Mail
+
+IPARCEL Holds attachment files that correspond to messages in the IN
+        subdirectory
+
+OPARCEL Holds attachment files that correspond to messages in the OUT
+        subdirectory
+
+PUBLIC  Holds the executable files (put INPOST.EXE and OUTPOST.EXE
+        here)
+
+After these directories are available, run GWDEMON and Microsoft Mail can
+communicate with NGM.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

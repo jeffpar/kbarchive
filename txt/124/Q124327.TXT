@@ -1,0 +1,53 @@
+DOCUMENT:Q124327  11-FEB-2000  [foxpro]
+TITLE   :How To Calculate a Person's Current Age
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, version 2.6a 
+ - Microsoft FoxPro for MS-DOS, version 2.6a 
+ - Microsoft FoxPro for Macintosh, version 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To calculate a person's current age, enter the following commands in the Command
+window:
+
+      m.DOB = {12/03/62}
+      m.age = ROUND(((DATE() - m.DOB) / 365.25),0)
+      ? m.age
+
+NOTES: The value 365.25 accounts for leap years, and the question mark tells
+FoxPro to print the age to the screen. You may need to minimize open windows to
+see the printed value.
+
+Additional query words: VFoxWin FoxWin FoxDos FoxMac birthday birthdate
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro260aDOS kbFoxPro260a kbVFP300
+Version           : MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

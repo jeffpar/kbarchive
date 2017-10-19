@@ -1,0 +1,202 @@
+DOCUMENT:Q236135  06-AUG-2002  [sna]
+TITLE   :Password Change Lost if Password Change DLL Can't Contact SNAPMP
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+OPER/SYS:
+KEYWORDS:kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The password change DLL has been updated to implement a retry mechanism if it is
+unable to contact the master Windows NT Password Synchronization service.
+
+When you use the SNA Server Host Security feature to synchronize passwords
+between a host and a Windows NT domain, the password change DLL (Snapwchg.dll)
+is responsible for intercepting password changes made to Windows NT accounts in
+its Windows NT domain and passing them on to the Windows NT Password
+Synchronization (SNAPMP) service.
+
+In multiple domain environments, the password change DLL and the master (primary)
+SNAPMP service may reside on primary domain controllers (PDCs) in different
+Windows NT domains. In environments such as these, password changes will be lost
+if the password change DLL is unable to contact the master SNAPMP service
+running on the PDC in the other Windows NT domain.
+
+The password change DLL is not designed to provide any type of retry mechanism if
+it fails to communicate with the SNAPMP service.
+
+MORE INFORMATION
+================
+
+After you apply the update, the password change DLL writes all password change
+notifications it intercepts into a memory queue. After the password change
+notification is written to the memory queue, the dispatch thread of password
+change DLL dequeues the first password change notification and immediately
+attempts to contact the SNAPMP service to propagate it. If the SNAPMP service
+cannot be contacted, the password change DLL attempts to send the password
+change notification stored in the memory buffer a total of five times. The
+initial attempt, is then followed by up to four retries. The password change DLL
+stops retrying if the total retry time exceeds five minutes. The actual interval
+between retries may vary depending on specific network situations.
+
+In addition, the password change notifications are written to an encrypted file
+if the five attempts to contact the SNAPMP from the memory buffer fail or if the
+retry time exceeds five minutes. If the message queue file is enabled, the
+password change DLL attempts to contact the SNAPMP service every five minutes to
+propagate the password changes that are queued in the file. The password change
+DLL only attempts to send the password change notification once for each
+five-minute period. After a password change notification is successfully sent to
+the SNAPMP service from the message queue file, the next password change
+notification in the message queue file is sent immediately and it is attempted
+up to five times. It is not resent for another five minutes if the fifth attempt
+fails or if the maximum retry time of five minutes is exceeded.
+
+The following registry entry is used to specify the path and name of the
+encrypted file that the password changes messages will be written to.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SNA Server
+   \CurrentVersion\HostSecurity\PasswordChange
+
+   NOTE: The above registry key is one path; it has been wrapped for readability.
+
+3. On the Edit menu, click Add Value, and then add the following registry value:
+
+   Value Name: MsgQueFileName
+   Data Type: REG_SZ
+   Value: <path\filename>
+
+4. Quit Registry Editor.
+
+NOTE: The message queue file can be located in any path on the local computer
+running Windows NT Server and can have any valid file name. However, it is
+recommended that the file be located in the folder where the SNA Server Host
+Security software is installed. For example, if the host security software is
+installed in the C:\Hostsec folder, the recommended location and name of the
+message queue file is:
+
+   C:\HostSec\HSSystem\SnaMsgQueFile
+
+If the path and file name in the registry is incorrect, the password change
+notifications will only be queued in the memory queue.
+
+The following registry entry has to be added to disable the use of the message
+queue file:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SNA Server
+   \CurrentVersion\HostSecurity\PasswordChange
+
+   NOTE: The above registry key is one path; it has been wrapped for readability.
+
+3. On the Edit menu, click Add Value, and then add the following registry value:
+
+   Value Name: MsgQueFileWriteToFile
+   Data Type: REG_DWORD
+   Value: 0
+
+4. Quit Registry Editor.
+
+If a message queue file is not used, the password change notifications are
+discarded after the fifth attempt to contact the SNAPMP service from the memory
+buffer.
+
+The following are some other items related to this new retry functionality:
+
+ - The memory buffer queue can contain a maximum of 1000 password change
+   notifications. The message file queue can contain a maximum of 10,000
+   password change notifications. The queue sizes are not configurable at this
+   time.
+
+ - If a new password change notification arrives when either the memory buffer
+   or message queue file is full, the new password change notification is
+   discarded, and one of the following events is logged in the application event
+   log:
+
+   Event ID: 668
+   Source: SNA Host Security
+   Description: Password Change DLL -- The message queue file is full.
+
+   Event ID: 676
+   Source: SNA Host Security
+   Description: Password Change DLL -- The memory password change message queue
+   is full.
+
+ - Before writing a password change notification to the message queue file, the
+   password change DLL searches the message queue file for a notification with
+   the same user name and replaces the old password change message with the new
+   one if a previous entry is found.
+
+ - After a password change notification fails to be propagated to the SNAPMP
+   service, all subsequent password change notifications are appended to the end
+   of the message queue file. The password change DLL does not propagate
+   password change notifications from the memory buffer until all pending
+   password change notifications in the message queue file are successfully sent
+   to the SNAPMP service.
+
+ - The message queue file is encrypted using 128-bit encryption.
+
+ - The password change DLL tries to verify the integrity of the encrypted
+   message queue file when the DLL is initialized. If, for some reason, the
+   encrypted message queue file is corrupted, memory-only message dispatch is
+   used. Deleting the corrupted message queue file and restarting the system
+   results in a new message queue file being created.
+
+This feature is available in the latest service pack for SNA Server version 4.0.
+For additional information, click the following article number to view the
+article in the Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+This feature was first included in SNA Server version 4.0 Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

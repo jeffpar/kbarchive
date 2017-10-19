@@ -1,0 +1,78 @@
+DOCUMENT:Q171858  14-NOV-2000  [word97]
+TITLE   :WD97: Receive "The Specified Path Is Invalid" Saving HTML File
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to save an HTML file from Microsoft Word 97 for Windows to a
+Novell NetWare server or to an operating system that either does not use long
+file names or is set to use only 8.3 file names (file names with eight
+characters and a three letter extension), you will receive the following error
+message:
+
+   The specified path is invalid.
+
+
+CAUSE
+=====
+
+By default, Microsoft Word uses an .html file name extension for HTML- formatted
+documents. If the server does not have OS/2 or long file name space support
+installed, you will receive this error message.
+
+WORKAROUND
+==========
+
+Before clicking OK to save the file, delete the "l" from the ".html" file name
+extension (that is, change ".html" to ".htm"). Files with an .htm extension are
+still recognized as HTML files and can be saved to the server successfully.
+
+MORE INFORMATION
+================
+
+By default, Novell NetWare servers support MS-DOS file names only. Support for
+long file names is optional and can be added by an administrator.
+
+NetWare is manufactured by Novell, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+For information about how to contact Novell, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+Additional query words: OS/2 LONG_NAMES 3.11 3.12 4.10 4.1 4.11 IntraNetWare Banyan Vines
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

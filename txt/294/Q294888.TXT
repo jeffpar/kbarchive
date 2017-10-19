@@ -1,0 +1,136 @@
+DOCUMENT:Q294888  15-AUG-2002  [vbwin]
+TITLE   :BUG: Instantiation of ActiveX EXE SingleUse Objects Is Blocked
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbClient KbClientServer kbCOMt kbLocalSvr kbOSWin2000 kbVBp600 kbGrpDSVB kbDS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, used with:
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a client instantiates an object from a SingleUse class in an ActiveX EXE
+server, and another client tries to instantiate the same SingleUse class while
+the first instance is processing messages (for example, while the first instance
+is running some code), the second client is blocked. Thus, the second instance
+of the ActiveX EXE is not started until the first instance has finished
+processing.
+
+This blocking occurs only in environments that are running Windows 2000 and
+Windows 2000 Service Pack 1 (SP1). Blocking does not occur on Windows NT 4.0 (in
+any of its service packs).
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+
+Another resolution to this issue is found in the following Microsoft Knowledge
+Base article:
+
+   Q313582 INFO: Availability of Windows 2000 Post-Service Pack 2 COM+ Hotfix
+   Rollup Package 18.1
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Windows 2000. This
+problem was first corrected in Windows 2000 Service Pack 2.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create the Server:
+
+1. Create a new ActiveX EXE project in Visual Basic. Class1 is created by
+   default.
+
+2. From the Properties window, change the Instancing property of Class1 to
+   SingleUse.
+
+3. Rename Class1 as "clsServer" (without the quotation marks).
+
+4. Rename the project "proServer" (without the quotation marks).
+
+5. Add the following code to clsServer:
+
+   Private Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long)
+
+   Public Sub DoSomething(x As Long)
+       Sleep (x)
+   End Sub
+
+6. Save the project. From the File menu, click "Make proServer.exe" to compile
+   the project.
+
+Create the Client:
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+   default.
+
+2. From the Project menu, click References, select the proServer.exe check box,
+   and then click OK.
+
+3. Add a CommandButton control to Form1.
+
+4. Add the following code to Form1:
+
+   Private obj As proServer.clsServer
+
+   Private Sub Command1_Click()
+       Set obj = New proServer.clsServer
+       obj.DoSomething (100000)
+   End Sub
+
+5. Save the project. From the File menu, click "Make project1.exe" to compile
+   the client.
+
+Reproduce the Blocking Behavior:
+
+1. On a Windows 2000-based computer, run two instances of the client EXE.
+
+2. On the first client instance, click Command1 to start proServer.exe.
+
+3. On the second client instance, click Command1. Notice that no new instance of
+   proServer.exe is started until the first instance has finished processing the
+   DoSomething call.
+
+Additional query words: kbIISCom launch
+
+======================================================================
+Keywords          : kbActiveX kbClient KbClientServer kbCOMt kbLocalSvr kbOSWin2000 kbVBp600 kbGrpDSVB kbDSupport kbCOMIS kbWin2000SP2Fix kbgrpdsvc kbWin2000sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

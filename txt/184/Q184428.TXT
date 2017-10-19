@@ -1,0 +1,57 @@
+DOCUMENT:Q184428  25-JUL-1999  [exchange]
+TITLE   :XADM: NDRs When Sending Mail To User On Moved Server
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP1,5.5 SP2
+OPER/SYS:
+KEYWORDS:exc55sp1 exc55sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5 SP1, 5.5 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After moving a server using the Move Server Wizard (Movesrvr), messages sent
+from a user in the original site to a user on the moved server may result in a
+non-delivery report (NDR).
+
+CAUSE
+=====
+
+An NDR is generated because directory replication has not yet completed.
+
+WORKAROUND
+==========
+
+Make sure that directory replication is working between the two sites and allow
+time for replication to complete.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp1 exc55sp2 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2
+Version           : winnt:5.5 SP1,5.5 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

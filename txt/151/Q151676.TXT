@@ -1,0 +1,52 @@
+DOCUMENT:Q151676  25-AUG-1999  [automap]
+TITLE   :Automap Streets GPS Enabler Disk Contents (3.5 inch, 1.44 MB)
+PRODUCT :Microsoft Automap
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the contents of the Automap Streets 4.0 GPS Enabler for Windows
+3.5-inch (1.44 MB) disk:
+
+Volume Label: AMS4GPS
+
+AMS4GPS  CAB       313,191   11-15-95  12:00p  ams4gps.cab
+EXTRACT  EXE        78,438   11-15-95  12:00p  extract.exe
+SETUP    EXE        58,800   11-15-95  12:00p  setup.exe
+SETUP    INI           149   02-20-96   2:53p  setup.ini
+SETUP    LST           589   11-15-95  12:00p  setup.lst
+
+         5 file(s)        451,167 bytes
+         0 dir(s)       1,005,056 bytes free
+
+Additional query words: auto auto-map automap reference kbmm multimedia multi-media multi media map
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

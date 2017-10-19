@@ -1,0 +1,71 @@
+DOCUMENT:Q256203  14-MAY-2000  [sms]
+TITLE   :SMS: Status Messages Are Not Displayed in SQL Server Database
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbenv kbsms200 kbsms200bug kbStatSum
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In some situations, you may notice that status messages are being reported in
+Systems Management Server (SMS), but the detailed messages that accompany the
+status messages are not displayed.
+
+CAUSE
+=====
+
+This behavior can occur when you use Microsoft SQL Server 6.5 to run the SMS 2.0
+database. By default, the SQL Server computer's system memory is set to 8,192
+pages (or 16 MB). On Japanese computers, this can be insufficient for running
+certain SMS stored procedures because of the extra memory required for wide
+characters in the Japanese character set.
+
+WORKAROUND
+==========
+
+To work around this issue, increase the amount of system memory available to SQL
+Server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+Status messages allow administrators to monitor SMS system operations.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbsms200 kbsms200bug kbStatSum 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

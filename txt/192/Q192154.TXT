@@ -1,0 +1,65 @@
+DOCUMENT:Q192154  25-APR-2001  [vbwin]
+TITLE   :INFO: ASP Pages Cannot Be Imported into an IIS Application
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbhtml kbInternet kbVBp kbVBp600 kbWebClasses kbGrpDSASP kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you import an ASP Page into an IIS Application, you will get the following
+error in the WebClass Designer:
+
+   "An internal error occurred while loading the HTML template <file> for
+   TemplateX."
+
+You will then see the following Visual Basic error:
+
+   "Out of Memory"
+
+MORE INFORMATION
+================
+
+Do not import ASP Pages into the WebClass Designer. This functionality is by
+design.
+
+REFERENCES
+==========
+
+Please see the following Microsoft Knowledge Base article for more information
+on WebClasses:
+
+   Q189539 INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhtml kbInternet kbVBp kbVBp600 kbWebClasses kbGrpDSASP kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

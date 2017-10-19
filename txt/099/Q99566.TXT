@@ -1,0 +1,60 @@
+DOCUMENT:Q99566  30-JUL-2001  [lanman]
+TITLE   :Possible Causes for Net 3100 (Default) Errors
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+Over the course of 6-8 hours, the error log fills up with WORKSTATION 3100
+errors (one every few minutes), then the network dies.
+
+CAUSE
+=====
+
+NET3100 is the default error message: it is displayed when you have nothing else
+to map the error to. Some possible causes:
+
+ - There may be a physical problem on network. Check cabling, NIC cards,
+   concentrators, transceivers and wiring closet.
+
+ - Uncertified Arcnet cards may be in use.
+
+ - A third party NetBIOS may not be sufficiently compatible with system
+   software.
+
+ - Too much stress on server.
+
+ - Database applications may be running in an MS-DOS box under OS/2 on the
+   server.
+
+ - The group servers may have the wrong server name account.
+
+WORKAROUND
+==========
+
+Take appropriate actions for any cause you can isolate.
+
+Additional query words: adapter 2.20 2.10a 2.1a 2.1 2.10 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

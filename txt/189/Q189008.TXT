@@ -1,0 +1,81 @@
+DOCUMENT:Q189008  09-AUG-2001  [winnt]
+TITLE   :SBS Unable to Get Name Resolution with DNS
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0,4.0a
+OPER/SYS:
+KEYWORDS:sbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Windows NT Small Business Server can use Dial-Up Networking to connect to
+an ISP; however, after connected, you cannot get name resolution from your ISP's
+DNS server.
+
+When trying to resolve host names to IP addresses, your server may receive the
+following error message:
+
+   Bad IP Address <hostname>
+
+However, you can still ping hosts by IP address.
+
+Additionally the SBS server also may not be able to successfully connect to FTP,
+HTTP, Telnet resources on the Internet.
+
+CAUSE
+=====
+
+WinSock Proxy Client is installed and enabled on the server.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable the Winsock Proxy Agent by following these
+steps:
+
+1. Click Start, point at Settings, and then click Control Panel.
+
+2. Double-click the WSP Client icon.
+
+3. Click to clear the Enable the WinSock Proxy Client check box.
+
+4. Close the configuration screen and restart the computer.
+
+MORE INFORMATION
+================
+
+The WinSock Proxy Agent is installed and enabled by default in the Windows NT
+Small Business Server. If you are not using the Proxy server, you should disable
+this feature.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : sbs 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : WinNT:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

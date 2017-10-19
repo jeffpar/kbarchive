@@ -1,0 +1,57 @@
+DOCUMENT:Q158096  08-NOV-2001  [homegame]
+TITLE   :GEX: Running GEX on NexGen Chips and Processors
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.0
+WINDOWS
+kbtshoot kbreadme kbfaq kbfasttip
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft GEX, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses issues that affect Gex on NexGen chips and processors:
+
+ - GEX is not compatible with NexGen chips earlier than the Nx586 model because
+   these chips are 386-class chips that emulate a Pentium. GEX requires a
+   Pentium or better chip.
+
+ - There are two minor performance issues related to Windows 95 on the NexGen
+   Nx586 processor. NexGen has addressed these issues by making its Windows CPU
+   Identifier utility available from the NexGen World Wide Web site. You can
+   download the VL and PCI versions of this utility from the following address:
+
+   http://www.amd.com
+
+Additional query words: 1.00 hang crash freeze up stops stop pauses pause black screen nothing happens
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbGEX
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q303626  25-SEP-2001  [sms]
+TITLE   :SMSINST: Version of Windows Not Detected Correctly
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbtool kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the "check configuration" script item from Systems Management
+Server (SMS) Installer to determine if the computer is running an operating
+system that is later than Microsoft Windows 95, a computer that is running
+Microsoft Windows 2000 is detected as being a version of Windows that is earlier
+than Windows 95.
+
+
+WORKAROUND
+==========
+
+To work around this problem use the Windows NT Running check configuration
+option instead of the Windows 95 or Later Running option.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 2.0.148.00.
+
+Additional query words: prodsms isu
+
+======================================================================
+Keywords          : kbtool kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMSI200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

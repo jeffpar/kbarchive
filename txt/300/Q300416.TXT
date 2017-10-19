@@ -1,0 +1,59 @@
+DOCUMENT:Q300416  06-AUG-2001  [msdn]
+TITLE   :Netscape Navigator Browsers Display a "404 Page Not Found" Error
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Netscape Navigator browsers are redirected to the Passport network pages,
+you may receive the following error message:
+
+   404 Page Not Found
+
+CAUSE
+=====
+
+If your site is experiencing this problem with the Netscape Navigator browsers
+only, it is probably the result of a misplaced or missing CSS cobranding style
+sheet, cobranding template, or an element called by your cobranding.
+
+RESOLUTION
+==========
+
+Make sure that a CSS style sheet is available using the path and file name you
+supplied for the CoBrandCSSURL and that the cobranding template is available
+from the URL you supplied for CoBrandURL at site registration time.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

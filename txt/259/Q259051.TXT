@@ -1,0 +1,63 @@
+DOCUMENT:Q259051  06-MAY-2000  [winnt]
+TITLE   :Compass Client Shuts Down Unexpectedly
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Metadirectory Services (MMS) Compass client may stop responding
+(hang) or shut down unexpectedly. This may occur frequently. This may also occur
+when you attempt to gain access to a specific object in the directory.
+
+CAUSE
+=====
+
+The Compass client caches files locally to improve the speed of directory
+access. If the cached files become corrupted, the Compass client may hang or
+shut down unexpectedly.
+
+RESOLUTION
+==========
+
+Clear the entire contents of the cache folder. The default cache location is the
+Program Files\Zoomit\Compass\Cache folder or the Program Files\Microsoft
+Metadirectory Services\Compass\Cache folder.
+
+To clear the cache, use Windows Explorer to delete the entire contents (files and
+folders) of the Program Files\Zoomit\Compass\Cache folder or the Program
+Files\Microsoft Metadirectory Services\Compass\Cache folder. The cache contents
+are re-created automatically when you next start Compass.
+
+Additional query words: VIA Zoomit
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

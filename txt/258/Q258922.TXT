@@ -1,0 +1,87 @@
+DOCUMENT:Q258922  12-NOV-2001  [homegame]
+TITLE   :Description of the GEX Cheat Codes
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft GEX, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the cheat codes that are available in Microsoft Gex.
+
+You can use these cheat codes to obtain powerups, gain access to other worlds, or
+obtain extra bonuses.
+
+MORE INFORMATION
+================
+
+To use the cheat codes, type the code while you are playing Gex.
+
+NOTE: To use the Start Screen or the World Map cheat codes, you must type the
+code from the start screen or the world map.
+
++----------------------------------------+
+| Powerups      | Cheat code             | 
++----------------------------------------+
+| Fireball      | secondhandsmoke        | 
++----------------------------------------+
+| Iceball       | ihaveshrinkage         | 
++----------------------------------------+
+| Electricity   | thentherewaslight      | 
++----------------------------------------+
+| Superjump     | itsagasgasgas          | 
++----------------------------------------+
+| Superspeed    | grandenonwalter        | 
++----------------------------------------+
+| Invincibility | drunkenmaster          | 
++----------------------------------------+
+| Immortality   | iwillneverdiebungholio | 
++----------------------------------------+
+
++---------------------------------------------------+
+| Start screen codes   | Cheat code                 | 
++---------------------------------------------------+
+| Bonus credits        | imaloserbaby               | 
++---------------------------------------------------+
+| SciFi world selector | partyatroswellimaloserbaby | 
++---------------------------------------------------+
+
++--------------------------------+
+| World map codes | Cheat code   | 
++--------------------------------+
+| Level selector  | hoosierbuddy | 
++--------------------------------+
+| Open all TVs    | sofakingdom  | 
++--------------------------------+
+
+Additional query words: 1.00 msgame gex enhancement code
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbGamesSearch kbZNotKeyword kbGEX
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

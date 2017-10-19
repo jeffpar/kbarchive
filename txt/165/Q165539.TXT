@@ -1,0 +1,146 @@
+DOCUMENT:Q165539  08-NOV-2001  [automap]
+TITLE   :Microsoft Pocket Automap Streets: Frequently Asked Questions
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets 98 
+ - Microsoft Expedia Streets 98 Deluxe, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides answers for frequently asked questions about Pocket
+Automap Streets for Windows CE.
+
+MORE INFORMATION
+================
+
+1. Q. What is Pocket Streets?
+
+   A. Pocket Streets is the newest addition to the Microsoft Automap product
+   line. It is designed to give the H/PC user access to features formerly
+   available only on a desktop or laptop computer.
+
+2. Q. What do I need to use Pocket Streets?
+
+   A. To use Pocket Streets, you need a Windows CE H/PC and a desktop or a laptop
+   computer.
+
+3. Q. How can I get a copy of Pocket Streets?
+
+   A. Pocket Streets is available in the Hpc folder on the Expedia Streets 98
+   CD-ROM, and some H/PC manufacturers include Pocket Streets on the
+   installation CD-ROM for the H/PC. Pocket Streets is also available as a free
+   download from the following Microsoft Web site:
+
+   http://www.microsoft.com/pocketpc/downloads/streets.asp
+
+4. Q. Can I use Pocket Streets on my desktop computer?
+
+   A. Pocket Streets functions only with Microsoft Windows CE.
+
+5. Q. Where can I get maps for Pocket Streets?
+
+   A. Approximately 15 free maps are available for download from the following
+   Microsoft Web site:
+
+   http://www.microsoft.com/pocketpc/downloads/streets.asp
+
+   Sample maps of major metropolitan areas are also located in the Hpc\Maps
+   folder on the Expedia Streets98 CD-ROM.
+
+6. Q. Can I create maps for Pocket Streets from the maps in Microsoft Automap
+   Streets Plus 97?
+
+   A. You can use Streets 98 to create a Pocket Streets map of any area in the
+   United States. However, the 1997 Edition of Microsoft Automap Streets Plus
+   does not have the ability to export maps to Pocket Streets.
+
+7. Q. Why are some details that are available in Streets Plus not available in
+   Pocket Streets?
+
+   A. To keep the maps small enough for the memory available on the H/PC, some
+   information is not included in maps for Pocket Streets. Street addresses and
+   Points of Interest are still available.
+
+8. Q. Can I create or import pushpins for addresses and custom places in Pocket
+   Streets?
+
+   A. Pocket Streets, version 2.0 supports pushpins. When you export a map from
+   Streets 98, the program creates a map file and a separate pushpins file that
+   contains all open pushpins on the map. To use your pushpins with Pocket
+   Streets, copy both the map file and the pushpins file to your H/PC device.
+
+9. Q. What Points of Interest are available in Pocket Streets?
+
+   A. Pocket Streets offers information on the following types of attractions:
+
+    - Hotels and Motels
+    - Bed and Breakfast
+    - Restaurants
+    - Museums and Galleries
+    - Tourist Information
+
+10. Q. How can I select and view Points of Interest?
+
+   A. On the Options menu, tap Points of Interest. Click the items that you want
+   to display. To prevent map clutter, Points of Interest are only shown at
+   close zoom levels. To view the selected Points of Interest use the zoom
+   control to select the desired area.
+
+11. Q. The maps are difficult to read because of the dark background. How can I
+   change this?
+
+   A. You can select a different background color from Map Styles on the Options
+   menu.
+
+12. Q. Can I search for an address outside the currently loaded map?
+
+   A. Pocket Streets can only search for addresses in the currently loaded map.
+   To find an address in another area, open the map of that area, and then find
+   the address.
+
+13. Q. How do I report inaccurate or incomplete information on Pocket Streets?
+
+   A. To report content and map errors in Pocket Streets, please send a detailed
+   message about the error to the following e-mail address:
+
+   automrkt@microsoft.com
+
+14. Q. How can I get technical support for Pocket Streets?
+
+   A. Peer-to-peer technical support is available in the following Internet
+   newsgroup:
+
+   microsoft.public.automap
+
+Additional query words: 1.00 auto map automap auto-map pocket streets multi multi-media media mm
+
+======================================================================
+Keywords          : kbimu kbfaq
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets98 kbExpediaStreets98del
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

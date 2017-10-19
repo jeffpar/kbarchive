@@ -1,0 +1,72 @@
+DOCUMENT:Q84393  10-OCT-1999  [win95x]
+TITLE   :Error Messages When Installing Windows 3.1 on a Compudyne 286
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you receive either of the following error messages when you attempt to
+install the Microsoft Windows operating system version 3.1 on a Compudyne
+286/16, you need to reconfigure your CMOS settings:
+
+   Incorrect DOS Version
+
+   -or-
+
+   Standard Mode Fault Outside of MS-DOS Extender
+
+MORE INFORMATION
+================
+
+On a Compudyne 286/16, you may need to turn off the Turbo mode to make Windows
+3.1 install correctly. The following steps allow you to change the Turbo mode in
+the CMOS settings:
+
+1. Press CTRL+ALT+DEL after the memory check.
+
+2. Choose Speed Select.
+
+3. Select Low. This lowers the clock speed from 16MHz to 12MHz.
+
+4. Press F10 to save changes.
+
+5. Press F5 to exit CMOS Setup.
+
+For additional information, please contact Compudyne.
+
+The Compudyne 286/16 is manufactured by Compudyne, vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 286/16 16Mhz
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,122 @@
+DOCUMENT:Q246876  01-MAY-2001  [ssafe]
+TITLE   :INFO: Visual SourceSafe 6.0 Installation as Stand Alone Product
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article delineates the aspects of a Visual SourceSafe stand alone
+installation.
+
+When you purchase and install Microsoft Visual SourceSafe as an individual
+product (as opposed to getting Visual SourceSafe as part of an Enterprise
+Edition product), you are led through the installation process similar to past
+install processes.
+
+You are presented with the following three options when installing the individual
+box version of Visual SourceSafe:
+
+ - Shared Database Server
+
+ - Custom
+
+ - Stand Alone
+
+MORE INFORMATION
+================
+
+Shared Database Server
+
+This option creates a database and installs the admin software and the Netsetup
+program so that you can install the client software from the server. Choosing
+this option installs the following:
+
+ - Create Database
+
+ - Admin Tools
+
+ - Client Tools
+
+ - Integration components and Registry Settings
+
+ - Help Files
+
+ - Netsetup Image
+
+ - IE4 Setup Image
+
+Custom
+
+This option allows you to select the set of components installed to your
+computer. You can choose from the following components:
+
+ - Create Local (or Remote) Database
+
+ - Admin Tools
+
+ - Client Tools
+
+ - Integration components and Registry Settings
+
+ - Netsetup Image
+
+ - IE4 Setup Image
+
+ - Conversion Utilities
+
+ - Help Files
+
+Stand Alone
+
+This options creates a private database on your local computer; it does not
+create a Netsetup image.
+
+ - Create Database
+
+ - Admin Tools
+
+ - Client Tools
+
+ - Integration components and Registry Settings
+
+ - Help Files
+
+Use the Shared Database Server when you are creating a database that will be used
+by many clients. This Shared Database Server option can be used to install a
+database to a local or remote drive. Use the Custom option when you want to
+choose the items to install to your computer, and use the stand alone option
+when you are setting up a database for individual use.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

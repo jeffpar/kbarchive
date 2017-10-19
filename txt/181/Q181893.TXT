@@ -1,0 +1,72 @@
+DOCUMENT:Q181893  17-JUL-2001  [visualc]
+TITLE   :PRB: Debug Exception Connecting to Oracle Server
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:5.0,5.0sp1,5.0sp2,5.0sp3
+OPER/SYS:
+KEYWORDS:kb3rdparty kbDatabase kbMFC kbODBC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 5.0sp1, 5.0sp2, 5.0sp3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an application using the ODBC API and running under the Visual C++ 5.0
+debugger attempts to connect to an Oracle Server the following exception may be
+generated:
+
+   Unhandled Exception in <app_name> ntdll.dll 0xC0000008
+
+
+CAUSE
+=====
+
+This exception is caused by a bug in the Oracle Trace Collection Services DLL
+(Otrace73.dll) installed by version 7.3.3.0 of the Oracle Client software.
+
+RESOLUTION
+==========
+
+Obtain a patch from the Oracle Corporation to upgrade the Oracle Client Software
+to 7.3.3.0.3 or later.
+
+If the patch is not available, use the Oracle Installer to uninstall the Oracle
+Trace Collection Services from the client. This solution should be considered a
+temporary workaround until the patch can be applied.
+
+MORE INFORMATION
+================
+
+The exception is generated during a call to one of the following ODBC APIs:
+
+   SQLDriverConnect()
+   SQLConnect()
+   SQLBrowseConnect()
+
+Additional query words: kbOracle kbMFC kbDatabase GPF Hang Fault
+
+======================================================================
+Keywords          : kb3rdparty kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500SP1 kbVC500SP2 kbVC500SP3 kbVC500Search
+Version           : WINDOWS:5.0,5.0sp1,5.0sp2,5.0sp3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

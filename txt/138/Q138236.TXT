@@ -1,0 +1,53 @@
+DOCUMENT:Q138236  27-JUL-2001  [sms]
+TITLE   :Deinstall of SMS Administrator Does Not Clean Registry
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you deinstalling Systems Management Server Administrator, the registry
+still contain keys for Systems Management Server. The deinstall process leaves
+the Systems Management Server key with Components and Setup subkeys user:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.1 and 1.2. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms sms registry
+
+======================================================================
+Keywords          : kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

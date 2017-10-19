@@ -1,0 +1,63 @@
+DOCUMENT:Q171144  16-SEP-1999  [schedplus]
+TITLE   :XCLN: DocErr: Delegate Owner Does Not Receive Reminders
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Schedule+ 7.0, the online help states that Delegate Owners can
+receive reminders on your behalf. This information is incorrect.
+
+MORE INFORMATION
+================
+
+The second sentence of the Delegate Owner permission definition under the Access
+Permissions help topic states the following:
+
+Delegate Owners can change users' access permissions for your schedule,
+and they receive meeting requests and reminders on your behalf.
+
+This sentence should state the following:
+
+Delegate Owners can change users' access permissions for your schedule,
+and they receive meeting requests on your behalf.
+
+REFERENCES
+==========
+
+For more information about Delegate Owners, click "Microsoft Schedule+ Help
+Topics" on the Help menu, select the Index tab, type "delegate" (without the
+quotation marks), and then click Display to view the available subtopics.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q155052  15-MAR-2000  [iis]
+TITLE   :IIS Server Handling of URLs Using "\", "<", and ">"
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Web clients that send Universal Resource Locator (URL) map requests using the
+backward slash (\) as a relational specifier can point to any file on the disk.
+Web clients that send Common Gateway Interface (CGI) requests using either of
+the angle brackets (< or >) as a redirection specifier can overwrite a
+file on the disk.
+
+CAUSE
+=====
+
+Internet Information Server 1.0 (IIS) did not handle the backward slash (\) in
+the same way as the forward slash (/); consequently, URL map requests using '\'
+could be used to specify any file in the hierarchical file system structure on
+the server.
+
+IIS CGI processing did not disable the use of either of the angle brackets (<
+or >) as redirection operators; consequently, CGI requests can overwrite
+existing files by redirecting console output to a filename on the server.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in IIS version 1.0. This problem
+was corrected in the latest Windows NT 3.51 U.S. Service Pack. For information
+on obtaining the Service Pack, query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

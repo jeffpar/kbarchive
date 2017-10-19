@@ -1,0 +1,228 @@
+DOCUMENT:Q108109  24-SEP-1999  [win3x]
+TITLE   :Comprehensive List of WFWG 3.11 Resource Kit Doc Errors
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article contains information about the documentation errors in the manual
+"Microsoft Windows for Workgroups Resource Kit Addendum for Operating System
+version 3.11."
+
+The following topics are covered:
+
+ - Page 1-25: 32-Bit Disk Cache
+
+ - Page 1-28: ForceLazyOn= Goes in [386Enh] Section, Not [vcache] Section
+
+ - Page 4-12: DeferBrowsing= Is Not a Valid Entry
+
+ - Page 4-14: LogonDisconnected=Entry in SYSTEM.INI Shows Incorrect Default
+
+ - Page 4-16: PrintBufTime= Goes in the [IFSMGR] Section
+
+ - Pages 4-20 & 4-21: ForceLazyOn= and ForceLazyOff= Go in [386Enh] Section
+
+ - Page 4-25: Log= Entry in EFAXPUMP.INI Should Be in [MODEM] Section
+
+ - Page 4-28: [Message] Section DeliveryFormat Entry Defined Incorrectly
+
+ - Page 5-10: ADMINFCFG.EXE Should Be ADMINCFG.EXE
+
+ - Page 8-32, 35, 37: Secondnet.drv=Netware.drv Entry Should Be in [Boot]
+   Section of SYSTEM.INI
+
+ - Page 8-39: Figure 8.13 Should Not Include ODIHLP.EXE
+
+ - Page 8-42: Important Note Is Incorrect for Windows for Workgroups 3.11
+
+ - Page 10-4: At Work PC Fax Does Not Route Incoming Faxes
+
+ - Page 13-5: Windows for Workgroups 3.11 Startup Switches
+
+MORE INFORMATION
+================
+
+Page 1-25: 32-Bit Disk Cache
+----------------------------
+
+The second sentence of the first paragraph in the 32-Bit Disk Cache section on
+page 1-25 states:
+
+   VFAT is responsible from reading and writing information from or to the disk
+   device...
+
+The sentence should state:
+
+   VFAT is responsible for reading and writing information from or to the disk
+   device...
+
+Page 1-28: ForceLazyOn= Goes in [386Enh] Section, Not [vcache] Section
+----------------------------------------------------------------------
+
+Page 1-28 of the Resource Kit incorrectly states ForceLazyOn= goes in the
+[vcache] section of the SYSTEM.INI file. It actually goes it the [386Enh]
+section of the SYSTEM.INI file.
+
+Page 4-12: DeferBrowsing= Is Not a Valid Entry
+----------------------------------------------
+
+Page 4-12 of the Resource Kit incorrectly lists DeferBrowsing= as a valid entry
+for the [Network] section of the SYSTEM.INI file.
+
+The correct entry is DeferBrowse=. DeferBrowsing is not valid and has no effect
+on Windows for Workgroups.
+
+Page 4-14: LogonDisconnected=Entry in SYSTEM.INI Shows Incorrect Default
+------------------------------------------------------------------------
+
+The LogonDisconnected= entry in the [Network] section of the SYSTEM.INI file
+incorrectly states the default for this setting.
+
+The correct default is YES.
+
+Page 4-16: PrintBufTime= Goes in the [IFSMGR] Section
+-----------------------------------------------------
+
+Page 4-16 of the Resource Kit incorrectly states PrintBufTime= goes in the
+[network] section of the SYSTEM.INI file. This entry goes in the [IFSMGR]
+section of the SYSTEM.INI file. This section does not appear by default, you
+must create it.
+
+The PrintBufTime= entry goes in BOTH sections. The PrintBufTime= entry in the
+[IFSMGR] section controls the network printing timeout for MS-DOS applications
+running in an MS-DOS VM under Windows, using the protected-mode redirector
+(VREDIR.386). The PrintBufTime= entry in the [network] section controls the
+network printing timeout for MS-DOS applications running outside of Windows
+entirely, using the real-mode redirector (NET.EXE).
+
+
+Pages 4-20 & 4-21: ForceLazyOn= and ForceLazyOff= Go in [386Enh] Section
+------------------------------------------------------------------------
+
+Page 4-20 of the Resource Kit incorrectly states ForceLazyOn= goes in the
+[vcache] section of the SYSTEM.INI file. Page 4-21 of the Resource Kit
+incorrectly states ForceLazyOff= goes in the [vcache] section of the SYSTEM.INI
+file. Both of these entries are valid only in the [386Enh] section of the
+SYSTEM.INI file.
+
+Page 4-25: Log= Entry in EFAXPUMP.INI Should Be in [MODEM] Section
+------------------------------------------------------------------
+
+The Log= entry in the [COMn] section of the EFAXPUMP.INI file has no effect on
+the logging of transmission information in the FAXWATCH.LOG file.
+
+However, if you place the Log= entry in the [MODEM] section of the EFAXPUMP.INI
+file, the entry generates a FAXWATCH.LOG file, and the transmission information
+is saved to FAXWATCH.LOG after you exit Mail.
+
+Page 4-28: [Message] Section DeliveryFormat Entry Defined Incorrectly
+---------------------------------------------------------------------
+
+The DeliveryFormat=n paragraph incorrectly defines the functionality of the three
+valid settings (0, 1, and 2). It also incorrectly defines the default. The
+following text is correct:
+
+   DeliveryFormat=n specifies the default delivery format for sending an
+   outgoing fax message. A value of 2 indicates that the fax message should be
+   sent as a binary message. A value of 1 indicates that the fax message should
+   be sent as a rendered Group 3 facsimile transmission. A value of 0 indicates
+   that the fax message should be sent as email if the destination machine
+   supports that type of message, otherwise a Group 3 facsimile is transmitted.
+   The default is 0.
+
+Page 5-10: ADMINFCFG.EXE Should Be ADMINCFG.EXE
+-----------------------------------------------
+
+On page 5-10, the command for expanding ADMINCFG.EX_ incorrectly instructs you to
+expand it as ADMINFCFG.EXE. The command should read as follows:
+
+   expand a:admincfg.ex_ c:\windows\admincfg.exe
+
+Page 8-32, 35, 37: Secondnet.drv=Netware.drv Entry Should Be in
+[Boot] Section of SYSTEM.INI
+--------------------------------------------------------------------------------------------
+
+The Secondnet.drv=Netware.drv entry is incorrectly shown in the [386Enh] section
+of the sample SYSTEM.INI files on pages 8-32, 8-35, and 8-37.
+
+This entry should be placed in the [boot] section of the SYSTEM.INI file.
+
+Page 8-39: Figure 8.13 Should Not Include ODIHLP.EXE
+----------------------------------------------------
+
+The INI file entries in Chapter 8 are correct, but figure 8.13 should not include
+ODIHLP.EXE.
+
+NDIS2SUP provides the ODI layer through ODINSUP NDIS 3.0 protocols. ODIHLP.EXE
+would cause problems as both ODIHLP.EXE and ODINSUP.COM would attempt to grab
+the same frames.
+
+Page 8-42: Important Note Is Incorrect for Windows for Workgroups 3.11
+----------------------------------------------------------------------
+
+The note labeled "Important" on page 8-42 states the following:
+
+   If the ODI MLID filename begins with a numeral, you must preface the filename
+   with an "x" in the BINDINGS= statement. For example, 3COM's 3C509 network
+   adapter card uses an ODI MLID with a filename of "3C509.COM". In the
+   PROTOCOL.INI file, the BINDINGS= statements would need to be:
+
+   BINDINGS=X3C509.COM
+
+Although this is true for Windows for Workgroups 3.1, it is incorrect for Windows
+for Workgroups 3.11.
+
+Page 10-4: At Work PC Fax Does Not Route Incoming Faxes
+-------------------------------------------------------
+
+Page 10-4 states the following:
+
+   Inbound faxes are received by the machine with the shared fax board and are
+   then automatically routed to the correct recipient's PC.
+
+This is incorrect. At Work PC Fax does not route inbound faxes.
+
+Page 13-5: Windows for Workgroups 3.11 Startup Switches
+-------------------------------------------------------
+
+Page 13-5 incorrectly states:
+
+   ...starting Windows with the "Win /d:xsvfe" command would start Windows with
+   all troubleshooting switches enabled.
+
+The command should be "Win /d:xsvfc."
+
+Additional query words: 3.11 docerr doc err documentation error errors workgroup add-on LogonDisconnected comprehensive
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

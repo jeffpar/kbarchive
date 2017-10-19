@@ -1,0 +1,57 @@
+DOCUMENT:Q174369  07-MAY-2002  [homegame]
+TITLE   :Selecting Europe Navaids Causes System Hang
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbusage kbtlckbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to access the Navaids for Europe in Microsoft Flight Simulator
+98, you receive an hour glass, and then it appears as if your computer has
+locked up or hung.
+
+To access Navaids, click Airport/Facility Directory on the World menu, and then
+click a location (Europe) on the world map.
+
+MORE INFORMATION
+================
+
+The computer does not actually hang when you access the Navaids in Europe, but
+accessing them can take from 3-10 minutes total depending on the computer's
+speed and performance.
+
+Once you receive the hour glass, wait for it to return to a pointer, and then you
+can access the navigational information.
+
+Additional query words: Airport Facility hang lock-up freeze hourglass fs98 navaid
+
+======================================================================
+Keywords          : kbusage kbtlc kbfaq
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

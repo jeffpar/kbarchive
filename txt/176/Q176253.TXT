@@ -1,0 +1,66 @@
+DOCUMENT:Q176253  08-NOV-2001  [homekids]
+TITLE   :Plus! For Kids: "Restrictions" Err Msg When You Start Windows
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbusage kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive one or more instances of the following error message when you
+start Windows:
+
+   Restrictions
+   This operation has been cancelled due to restrictions in effect on this
+   computer. Please contact your system administrator.
+
+CAUSE
+=====
+
+You have restricted access to certain programs installed on your computer. These
+programs are in your Startup folder and automatically run every time you start
+Windows.
+
+RESOLUTION
+==========
+
+You can either remove these programs from the Windows Startup folder or add them
+to the list of Allowed Programs in Protect It!
+
+To remove a program from the Windows Startup folder, see the Windows Help topic
+"Removing a program from the Start or Programs menu. "
+
+For more information about adding Allowed Programs in Protect It!, see the
+Microsoft Plus! For Kids online Help.
+
+Additional query words: user log on in password logon login
+
+======================================================================
+Keywords          : kbenv kberrmsg kbusage kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

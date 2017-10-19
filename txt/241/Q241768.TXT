@@ -1,0 +1,74 @@
+DOCUMENT:Q241768  23-SEP-1999  [sna]
+TITLE   :How to Do an Unattended Update to the Latest Service Pack
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information applies to SNA Server and SNA Server Client version
+4.0, and subsequent service packs for this version.
+
+To complete an unattended update to the latest service level for SNA Server, use
+the following switch for the Update executable:
+
+   /quietmode: "Yes"
+
+Note: This switch is case sensitive. For example:
+
+   Update.exe /quietmode: "Yes"
+
+For SNA Server and SNA Server Client 3.0 and subsequent service packs for this
+version, use the following switches to complete an unattended update:
+
+   /q for quiet
+   /b for batch
+   /u for uninstall of service pack availability
+
+For example:
+
+   Update.exe /q /b /u
+
+Note that these switches do not cause a complete silent update. A dialog progress
+box is displayed. However, no user intervention is required.
+
+MORE INFORMATION
+================
+
+For additional information on SNA Server 2.11 Service Pack 1 and earlier, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q148936 Unattended Installation of Microsoft SNA 2.11 Service Pack 1
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

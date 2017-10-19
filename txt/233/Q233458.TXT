@@ -1,0 +1,63 @@
+DOCUMENT:Q233458  02-SEP-1999  [homemm]
+TITLE   :MSBP: Back Button on Wizard Toolbar Does Not Function
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the back button next to Action Plan on the Wizard toolbar in
+Microsoft Business Planner, you may return to the Business Planner home page,
+and the back button on the Wizard toolbar may no longer function.
+
+CAUSE
+=====
+
+This behavior occurs if you open an article in an Action Plan from any screen
+that is not a step in a Business Planner wizard.
+
+
+RESOLUTION
+==========
+
+To work around this issue, click the Exit button on the Wizard toolbar, and then
+click the back button on the standard toolbar.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+Additional query words: msbp stuck left arrows
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

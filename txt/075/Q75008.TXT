@@ -1,0 +1,137 @@
+DOCUMENT:Q75008  30-OCT-1999  [win16ddk]
+TITLE   :Virtual Display Device I/O Trapping
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.0,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Windows graphical environment, the virtual display device
+(VDD), is the virtual device (VxD) responsible for all input and output to the
+display adapter. The VDD must maintain a data structure that contains enough I/O
+register values to program the display adapter, and it must provide for
+emulating I/O when the virtual machine (VM) accessing the I/O port does not own
+the physical display. VDD performs these operations by reading and writing the
+I/O ports when it switches ownership of the display, and by trapping I/O
+operations and saving the data. The routines that enable and disable trapping
+and handling the traps are in the VDDTIO.ASM module.
+
+MORE INFORMATION
+================
+
+Enabling and Disabling I/O Trapping
+-----------------------------------
+
+During initialization, all I/O ports associated with the display should be
+trapped. This is accomplished by installing I/O trapping handlers and not
+disabling the trapping. When initialization of the VDD and the system VM is
+complete, trapping of the ports should be disabled. If the state of the hardware
+is not readable, then the Windows display driver must assume and maintain some
+standard state of the display. When switching back to the system VM, Windows
+will restore that standard state; the display driver is responsible for doing
+any additional work required. The VxD and the display driver may be required to
+call each other through some callback mechanism. In many cases, the existing
+Interrupt 2F Functions 4000h through 4007h mechanism is sufficient. For more
+information see pages 18 and 19 of the "Microsoft Windows Device Driver Kit:
+Device Driver Adaptation Guide" for Windows 3.1 or pages 2-15 and 2-16 of the
+"Microsoft Windows Device Development Kit Device Driver Adaptation Guide" for
+Windows 3.0.
+
+When Windows creates another VM, the VDD must first initialize the new VM's
+virtual state and must place the hardware into that state if the VM is running
+full screen. From this point on, the I/O ports should be trapped as infrequently
+as possible. Specifically, do not trap the I/O ports when the VM that owns the
+display is running. However, it is not a good idea to change the trapping state
+each time a VM is scheduled because the program running in the VM may not access
+the display at all. A good way to handle this is to turn on trapping and disable
+access to memory when the VM that owns the display loses control of one or more
+of the registers. Restore the entire state and disable trapping when the VM
+touches I/O ports or memory. While the Windows 3.0 VDD for EGA/VGA restores the
+registers through a VM event each time the display owner is run, the Windows 3.1
+VDD waits for a display access before it restores the state.
+
+Be sure to note that there are three bits in the program information file (PIF)
+through which the user can specify that trapping is enabled in a VM. If the code
+can successfully perform all of the needed operations without trapping (in other
+words, the driver can read the state of the hardware completely), then the
+driver can ignore these bits. Otherwise, trapping should remain on continually
+when the VM is in any mode that corresponds to a set "enable trapping" bit.
+
+Monochrome Support
+------------------
+
+During initialization, the VDD for VGA attempts to determine if a secondary
+monochrome adapter is installed and whether the system is configured to support
+running the VGA in monochrome modes. If the VDD determines that the VGA display
+should support monochrome, it traps the monochrome I/O addresses for the CRTC
+and status registers and treats these identically to the color I/O addresses.
+
+Display Adapter Extensions Support
+----------------------------------
+
+To support registers that exist at I/O addresses different from the standard
+EGA/VGA I/O ports, install the appropriate I/O handlers in the VDD_IO_Init
+routine of VDDTIO and enable/disable trapping in the VDD_IO_SetTrap routine of
+the same module. If the extensions exist at the same addresses, modify the
+existing VIOT_* routines to detect access to the extended registers and take the
+appropriate action (see below).
+
+I/O Handler Routines
+--------------------
+
+The I/O trap handlers must always accept and receive data as if the application
+were accessing the real hardware. In some cases, it is not necessary to handle
+specific I/O either because the I/O is only done during machine boot or the
+particular feature enabled by the operation is not normally used and is not
+supported. The I/O handler has the option to specifically warn the user when an
+application attempts to use an unsupported feature.
+
+When the driver handles I/O, the data needed to simulate functionality or to
+restore the VM's state to the physical display should be stored in the portion
+of the Control Block reserved for the VDD. If the display is owned by the VM,
+the driver also performs the physical I/O, with a few exceptions. One example:
+The driver simulates the VRTC bit in the status register to allow existing
+applications to work properly in the preemptive multitasking environment. If the
+VM is running in physical memory but does not own the display, merge its output
+with that of the display owner to send to the physical I/O port. If the VM is
+running entirely simulated, the routine may need to remap the memory if the I/O
+affects the virtual display's memory state. Note that the remapping is best
+delayed until the driver makes an actual access to the memory (until then,
+disable access to the video memory addresses).
+
+Note that because of register locking and/or translation, some display adapters
+require that multiple copies of the registers be kept to restore the state of
+the physical display, and some extra logic is required to determine which of
+these states is to be returned on input.
+
+Additional query words: 3.00 3.10 3.11 DDKDISPLAY EGA VGA WIN386
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310 kbWinDDK311
+Version           : :3.0,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

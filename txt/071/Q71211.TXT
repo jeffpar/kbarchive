@@ -1,0 +1,108 @@
+DOCUMENT:Q71211  08-OCT-1999  [win95x]
+TITLE   :Windowed MS-DOS Apps Revert to Full Screen in Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While running an MS-DOS application in a window, Microsoft Windows may switch it
+to full screen if an MS-DOS critical error occurs. Typically, the critical error
+will be a disk error, but there are other causes as well.
+
+The common critical MS-DOS errors are:
+
+ - attempting to access a floppy drive with no disk
+
+ - attempting to write a file to a write-protected floppy disk
+
+ - attempting to access an unformatted floppy disk
+
+When an MS-DOS critical error occurs, MS-DOS is unstable until the critical error
+is resolved. To maximize stability, Windows switches the application to
+full-screen text mode. This is by design and there is no workaround. Press
+ALT+ENTER, after the error is resolved, to switch the MS-DOS application back to
+the windowed display mode.
+
+MORE INFORMATION
+================
+
+Switching Between Full Screen and Windowed Display Modes
+--------------------------------------------------------
+
+The "windowed" display mode of MS-DOS applications is only available in 386
+enhanced mode. There are three actions that can be performed to run an MS-DOS
+application in a window or full screen:
+
+1. Select the desired mode in the PIF Editor.
+
+2. Press ALT+ENTER to toggle between the two modes.
+
+3. Select the desired mode from the MS-DOS application's system menu:
+
+   a. Start the MS-DOS application in question.
+
+   b. Press ALT+SPACEBAR to display the system menu.
+
+   c. Select Settings (press T).
+
+   d. Select Windowed (press W).
+
+   e. Press ENTER.
+
+MS-DOS Int 24H Critical Errors
+------------------------------
+
+The critical error handler is a function of interrupt 24H. A complete listing of
+the MS-DOS Int 24H critical errors are listed below.
+
+Error Code
+Hex     Dec  Description
+---------------------------------------------
+
+00H      0   Write-protect error
+01H      1   Unknown unit (invalid drive number)
+02H      2   Drive not ready (no disk or driver door open)
+03H      3   Unknown command requested
+04H      4   Data error (CRC)
+05H      5   Bad request structure length
+06H      6   Seek error; move to requested cylinder failed
+07H      7   Unknown disk format
+08H      8   Sector not found
+09H      9   Printer out of paper
+0AH     10   Write fault
+0BH     11   Read fault
+0CH     12   General, nonspecific error
+0FH     15   Invalid disk change (MS-DOS version 3.0 or later)
+
+Additional query words: 3.00 3.00a 3.10 3.0 3.1 3.11 win31 win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

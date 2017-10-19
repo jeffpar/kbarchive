@@ -1,0 +1,74 @@
+DOCUMENT:Q141670  30-JUL-2001  [visualc]
+TITLE   :FIX: Profiling May Fail If Install Dir Contains Long File Name
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC410fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+The information in this article is included in the documentation starting
+with Visual C++ 5.0. Look there for future revisions.
+
+SYMPTOMS
+========
+
+If you have installed Visual C++ in a directory that has a long file name like
+this one:
+
+   C:\Microsoft Program Files\Development Platforms
+
+you will get the following error message when you attempt to profile a project:
+
+   VcSpawn is a utility program required by Visual C++ Development
+   Environment.
+   prep failed.
+
+NOTE: This problem only occurs if the long file name contains spaces.
+
+RESOLUTION
+==========
+
+To work around the problem, you can run the profiling tools from the command
+line rather than through Developer Studio. Start a command prompt, and run the
+Vcvars32.bat file in the Bin subdirectory of your Visual C++ installation. This
+will ensure that the profiling tools directory is included in your PATH
+environment variable. Now you can run one of the standard profiling batch files,
+such as Fcount.bat, to profile your project. For more information on the
+standard batch files, refer to Profiler Reference in the online documentation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+Additional query words: kbVC400bug 4.00 4.10
+
+======================================================================
+Keywords          : kbide kbVC kbVC410fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : 4.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

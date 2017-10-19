@@ -1,0 +1,85 @@
+DOCUMENT:Q263924  06-AUG-2002  [exchange]
+TITLE   :Message Transfer Agent Slows Down and CPU Usage Increases
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Message Transfer Agent (MTA) processes messages, it may randomly slow
+down, and the percentage of the CPU used by the MTA may increase.
+
+CAUSE
+=====
+
+This behavior can occur if a distribution list is used to restrict the delivery
+of mail on X.400 connectors and connectors which contain the Internet Mail
+Service. The server on which the connector resides, and any server in the site
+on which this restriction has replicated are affected.
+
+WORKAROUND
+==========
+
+To work around this behavior, do not not use distribution lists to restrict the
+use of connectors.
+
+If you need to use distribution lists to restrict the use of a connector, you may
+need to increase the memory or the number of processors on the affected
+computer. If you increase the <MDB Users> MTA registry parameter, you may
+also have to increase MTA performance.
+
+MORE INFORMATION
+================
+
+To prevent the server from undergoing an inter-MTA hop, any server that has
+replicated the restriction data has its restrictions checked. This process is
+beneficial when sending large messages, but it can impede MTA performance if
+distribution lists are used to restrict usage of the connector. The MTA
+generates a Non-Delivery Report (NDR) for the message as soon as possible. If
+this restriction is not checked until the message reaches the connector server,
+the server must wait for the hop to the gateway before the check is performed.
+During this process bandwidth is wasted.
+
+This design makes it is possible to check certain properties of all possible
+routes before you choose a link which contains costs and restrictions.
+
+For additional information about delivery restrictions and low MDB users, click
+the article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q158590 XCON: Delivery Restrictions Max CPU and Slow Down Message Delivery
+
+   Q176076 XCON: Low MDB USERS Registry Entry Causes Slow Connector
+
+
+Additional query words: delivery restrictions
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

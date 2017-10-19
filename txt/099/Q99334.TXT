@@ -1,0 +1,58 @@
+DOCUMENT:Q99334  06-NOV-1999  [win16sdk]
+TITLE   :DOCERR: Metafile Terminator Record Not Documented
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The metafile file format, which is described in the Windows Software Development
+Kit (SDK) version 3.1 "Programmer's Reference, Volume 4: Resources" manual, does
+not contain the entire metafile format; the definition of the metafile
+terminator record is missing.
+
+MORE INFORMATION
+================
+
+The metafile terminator record denotes the end of the disk-based metafile, and
+is the last record in the file. The function number for the terminator
+(rdFunction) is 0 (zero) and the size (rdSize) is 3 words.
+
+This information is needed for applications that manually read and write
+metafiles, bypassing the standard graphical device interface (GDI) functions. If
+an application manually creates a metafile, it must place the terminator record
+as the last record in the file. If an application is reading a metafile
+manually, it must terminate reading the records after seeing a terminator
+record.
+
+Additional query words: 3.10 docerr no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,93 @@
+DOCUMENT:Q76755  05-OCT-1999  [win95x]
+TITLE   :Forest & Trees for Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Forest & Trees by Channel Computing, Inc., is an application that provides
+read-only access to a variety of database files, spreadsheets, and database
+servers.
+
+MORE INFORMATION
+================
+
+Forest & Trees allows you to query a wide range of external database systems
+and use Windows Dynamic Data Exchange (DDE) to return the results to an Excel
+spreadsheet. Forest & Trees supports access to both local and network-based
+files.
+
+Forest & Trees includes support for the following environments/databases:
+
+ - AS/400
+
+ - Oracle
+
+ - Paradox
+
+ - SQL Server
+
+ - SQLBase
+
+ - DB2
+
+ - Btrieve
+
+ - Lotus 1-2-3
+
+ - Microsoft Excel
+
+ - DBASE
+
+ - R:BASE
+
+ - DataEase
+
+ - Q&A
+
+ - Novell SQL
+
+ - ASCII flat files
+
+System requirements include an 80286 or higher processor, EGA or higher, 2 MB or
+more of RAM, Windows 3.0 or later. A mouse is optional.
+
+For additional information on Forest & Trees for Windows, please contact
+Channel Computing, Inc.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.0 3.00 3rdparty 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

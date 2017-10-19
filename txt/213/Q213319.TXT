@@ -1,0 +1,78 @@
+DOCUMENT:Q213319  31-JUL-2001  [sms]
+TITLE   :SMS: Sender Address Properties Box Displays Server As Unknown
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbMMC kbServer kbsms200 kbsms200bug kbSender kbsmsAdmin kbSMSSender
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the properties of a Sender Address on a child site in the Systems
+Management Server Administrator console, the properties box incorrectly displays
+a known server as (Unknown).
+
+CAUSE
+=====
+
+The parent site correctly displays the Sender Address data because it retrieves
+the site information from the child site's Site Control File. This file is
+received automatically by the parent site as part of the site attachment
+process. However, the parent site never sends its Site Control File to the child
+site. As a result, the child site never retrieves this data.
+
+WORKAROUND
+==========
+
+To work around this issue, check the Details pane of the Address node, which
+correctly displays the complete destination address.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 2.0.
+
+MORE INFORMATION
+================
+
+To communicate, sites must have one or more senders. The sender itself does not
+provide connectivity to a site. Instead, the sender manages the connection,
+ensures the integrity of transferred data, recovers from errors, and ends the
+connection when it is no longer needed.
+
+For more information on Sender Addresses, please refer to the Systems Management
+Server Administrator Guide.
+
+
+Additional query words: prodsms mmc snapin snap-in
+
+======================================================================
+Keywords          : kbMMC kbServer kbsms200 kbsms200bug kbSender kbsmsAdmin kbSMSSender 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

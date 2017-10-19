@@ -1,0 +1,65 @@
+DOCUMENT:Q133083  21-MAR-2001  [powerpt]
+TITLE   :PPT7: Presentation Designs Are the Same as Design Templates
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+What were known in earlier versions of PowerPoint as templates are called
+Presentation Designs in PowerPoint 97. These files have a .pot extension and are
+in the folder called:
+
+   Templates\Presentation Designs
+
+which is in the same folder as Microsoft Office.
+
+However, this folder is the only place in which these files are called
+Presentation Designs. Elsewhere in PowerPoint, the term Design Template is used,
+but it refers to the same thing. For example:
+
+ - The icon used to apply Presentation Designs has a Tooltip that says Apply
+   Design Template.
+
+ - There is an Apply Design command on the Format menu.
+
+ - The dialog box where you select and preview Presentation Designs is entitled
+   Apply Design.
+
+MORE INFORMATION
+================
+
+The terms Presentation Design and Design Template are fully interchangeable.
+
+Additional query words: win95 power point winppt macppt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

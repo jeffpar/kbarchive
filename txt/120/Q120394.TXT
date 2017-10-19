@@ -1,0 +1,73 @@
+DOCUMENT:Q120394  03-NOV-1999  [fortran]
+TITLE   :BUG: PS for DOS GPFs When Using an NT Makefile
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to open a project created with Microsoft FORTRAN PowerStation for
+Windows NT, the visual workbench from Microsoft PowerStation for MS-DOS
+generates this error:
+
+   Application Error: F32VWB caused a General Protection Fault in Module
+   F32VWB.EXE at xxxx:xxxx.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start the FORTRAN Visual Workbench for Windows NT.
+
+2. In the project menu, create a new project. Add a .FOR file to the project.
+
+3. Close the project.
+
+4. Exit Windows NT and start Windows version 3.1.
+
+5. Start the FORTRAN Visual Workbench for MS-DOS.
+
+6. In the project menu, open the project just created.
+
+7. When asked if you want to open it as an external makefile, choose Yes. The
+   visual workbench will now fail giving the error message shown above.
+
+Additional query words: 1.00 nofpsnt 1.00a GPF winnt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

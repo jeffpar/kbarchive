@@ -1,0 +1,69 @@
+DOCUMENT:Q195234  11-DEC-2001  [winnt]
+TITLE   :The Operating System Was Unable to Load Your Profile
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to log on to Terminal Server, you receive the following error
+message:
+
+   User Environment
+   The operating system was unable to load your profile.
+   Please contact your Network Administrator. (203)
+
+The dialog box gives you 30 seconds to read the message. Then, it closes the
+connection to the Terminal Server. Selecting the OK button on the dialog box
+also disconnects the session to the Terminal Server.
+
+The Application Log on the Terminal Server records an Event ID 1000. The source
+is Userenv. You get the same message that you are shown when you try to connect.
+
+MORE INFORMATION
+================
+
+The Terminal Server's registry quota has been exceeded. As each new user logs on
+to the Terminal Server, your ntuser.dat from your profile is loaded into the
+Terminal Server's registry. If several users are logged on to the Terminal
+Server at the same time, it is possible that the default value for the
+computer's registry quota can be exceeded.
+
+The System Log in the Terminal Server's event log will show an Event ID 26, which
+indicates that the system is running low on registry quota.
+
+To remedy this situation, start the System utility in the Control Panel and
+select the Virtual Memory button to increase the computer's registry quota.
+
+Additional query words: terminalsrv RDP
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

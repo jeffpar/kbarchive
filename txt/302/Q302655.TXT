@@ -1,0 +1,54 @@
+DOCUMENT:Q302655  22-JUN-2001  [msnetwork]
+TITLE   :Weather On Start-Page Not Updating After Changing The Zip Code
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You change your zip code and the start page does not display the correct weather
+information for the updated zip code.
+
+CAUSE
+=====
+
+When you signed up for MSN at a retailer through Remote Account Creation (RAC),
+you specified a zip code. There is no way to change it.
+
+RESOLUTION
+==========
+
+This is a known issue and the product team is working to resolve it.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

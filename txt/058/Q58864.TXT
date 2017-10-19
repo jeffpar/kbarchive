@@ -1,0 +1,68 @@
+DOCUMENT:Q58864  06-MAY-2001  [masm]
+TITLE   :Using a Macro to Determine the Current Segment
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.1,5.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.1, 5.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following macro can be used to determine the segment from which the macro is
+called during assembly of a source file.
+
+In the following example, the "findseg" macro is called from within two
+individual segments named code1 and code2, respectively. The macro then uses IF
+statements to determine the segment. Then, depending upon the segment, any
+desired code can be assembled.
+
+           findseg macro segname
+             ifidn <code1>, <segname> ; if in segment code1
+                     :                ; do what is desired
+             endif
+
+             ifidn <code2>, <segname> ; if in segment code2
+                     :                ; do what is desired
+             endif
+             endm                     ; end macro
+
+             findseg code1   ;macro call in segment code1
+                        .
+                        .
+                        .
+             findseg code2   ;macro call in segment code2
+
+Note that invoking the findseg macro with the @curseg equate as a macro argument
+will not yield a true condition for the ifidn expression. The value of "segname"
+is resolved to the string "@curseg" which, in the example, is identical to
+"code1".
+
+Additional query words: 5.10 5.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM510a
+Version           : :5.1,5.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

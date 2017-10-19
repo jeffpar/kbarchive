@@ -1,0 +1,67 @@
+DOCUMENT:Q75755  29-OCT-1999  [win95x]
+TITLE   :Starting Windows Terminal in Full-Screen Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using the WIN.INI switch MAXIMIZED=1 under the [TERMINAL] setting in your
+WIN.INI file permits Terminal to start in full-screen mode.
+
+MORE INFORMATION
+================
+
+To use this switch, follow these steps:
+
+1. Locate the [TERMINAL] section in the WIN.INI file.
+
+2. Add the line
+
+   MAXIMIZED=1
+
+   to this section, and then save the WIN.INI file.
+
+3. To allow the updated WIN.INI file to be re-read, either restart Windows or
+   force the file to be read by using a Control Panel utility such as Colors.
+
+NOTE: Contrary to a PC Magazine article published on September 10, 1991, the
+MAXIMIZED setting only affects Terminal. It does not affect other applications,
+including Help, in Windows 3.1.
+
+REFERENCES
+==========
+
+"PC Magazine," September 10, 1991, page 449
+
+Additional query words: full screen 3.0 3.00 3.0a 3.00a 3.1 3.10 articles books WIN31 wincomm 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

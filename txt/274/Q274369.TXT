@@ -1,0 +1,67 @@
+DOCUMENT:Q274369  04-MAY-2001  [msnetwork]
+TITLE   :Internet Explorer No Longer Prompts To Accept Cookies
+PRODUCT :The Microsoft Network
+PROD/VER::5,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.0 
+ - Microsoft Internet Explorer version 5 for Windows 95 
+ - Microsoft Internet Explorer version 5 for Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Internet Explorer no longer prompts to accept cookies when the user is surfing
+the Internet.
+
+CAUSE
+=====
+
+If MSN Explorer fails to respond after the user has selected the option to
+temporarily accept cookies, the Internet Explorer settings do not revert to
+previous settings.
+
+RESOLUTION
+==========
+
+To reset default security settings so that cookies are accepted
+
+1. In Internet Explorer click Tools, click Internet Options and then click the
+   Security tab.
+
+2. Under Select a Web Content Zone... click Internet, click Default Level, and
+   then click Apply.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbIEsearch kbMSNSearch kbIE95Search kbIE500Search kbZNotKeyword3 kbIE98Search kbIE500Win95 kbIE500Win98 kbMSN600
+Version           : :5,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,79 @@
+DOCUMENT:Q151499  31-JUL-2001  [visualc]
+TITLE   :FIX: Compiler Performs Illegal Sign Conversion Optimization
+PRODUCT :Microsoft C Compiler
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbtool kbVS97sp1fix kbVS97sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the /Og optimization, or an option that includes it such as /Ox, /O2,
+or /O1, the compiler may incorrectly sign extend a value when performing a
+conversion.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97,
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The following sample demonstrates this bug. As you step through this code in the
+debugger, you will observed that i and j compare as equal when they should not.
+
+Sample Code
+-----------
+
+      int i, j;
+      char c1=-1, c2, c3;
+      bool f()
+      {
+         i = c1 + (unsigned char)c1;
+         j = c1 + c1;
+         if( i == j )  // this should fail
+            return false;
+         else
+            return true;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbVS97sp1fix kbVS97sp2fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

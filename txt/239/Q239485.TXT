@@ -1,0 +1,68 @@
+DOCUMENT:Q239485  22-JUN-2001  [exchange]
+TITLE   :XWEB: OWA and IIS Authentication on a Member Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Microsoft Outlook Web Access (OWA) and Microsoft Internet Information Server
+(IIS) are installed on a member server, users may be prompted for credentials
+three times and then get a blank screen with no error messages.
+
+CAUSE
+=====
+
+This can be caused by IIS looking to the local security account manager (SAM)
+database for user authentication rather than to the domain controller.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. In the IIS Manager, select the Exchange Server virtual directory and bring up
+   the properties.
+
+2. Click the Directory Security tab, and click Edit on the Anonymous Access and
+   Authentication control.
+
+3. Make sure that Basic Authentication is checked, and click Edit. In the box,
+   type the domain where the Exchange Server computer, IIS computer, and OWA are
+   located. Click OK to quit.
+
+4. Stop and start the WWW services.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

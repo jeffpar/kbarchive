@@ -1,0 +1,63 @@
+DOCUMENT:Q130031  08-AUG-2001  [winnt]
+TITLE   :Cannot Remotely Administer RAS Server in Low Speed Connection
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Remote Access Admin (RASADMIN.EXE) to remotely administer a Remote
+Access Service (RAS) server over a RAS connection and view user permissions, the
+user accounts Grant All button and Revoke All buttons are missing.
+
+CAUSE
+=====
+
+This problem occurs if you attempt RAS administration over a low speed
+connection. When a low speed connection is used, user accounts are not passed
+across the RAS link.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. In Remote Access Admin, select "Select Domain or Server" from the Server
+   menu.
+
+2. Clear the Low Speed Connection check box.
+
+3. Enter the domain or server name.
+
+Additional query words: prodnt option administrator
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS350search
+Version           : 3.5 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

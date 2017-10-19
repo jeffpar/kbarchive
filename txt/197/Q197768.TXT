@@ -1,0 +1,73 @@
+DOCUMENT:Q197768  14-NOV-2000  [word97]
+TITLE   :WD97: Deleted File Still Listed on MRU List
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The name of a deleted file remains in the list at the bottom of the File menu
+(the "most recently used" or "MRU" list) after the file has been deleted (or
+made unavailable).
+
+CAUSE
+=====
+
+Microsoft Word maintains a list of up to nine of the most recently used (MRU)
+files, at the bottom of the File menu.
+
+MORE INFORMATION
+================
+
+Word allows you to completely clear the MRU list. To clear files from the MRU
+list, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Select the General tab.
+
+3. Click to clear the "Recently Used File List" check box.
+
+4. Click OK.
+
+5. On the Tools menu, click Options.
+
+6. Select the General tab.
+
+7. Click to select the "Recently Used File List" check box.
+
+8. Click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

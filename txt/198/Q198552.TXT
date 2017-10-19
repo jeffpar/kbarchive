@@ -1,0 +1,58 @@
+DOCUMENT:Q198552  28-FEB-1999  [winnt]
+TITLE   :Windows NT Load Balancing Service Cluster Is Not Load Balancing
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Load Balancing Service 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT Load Balancing Service (WLBS) is not load balancing an application or
+applications, and the default host handles all network traffic.
+
+CAUSE
+=====
+
+This problem occurs because a port rule is missing. By default, WLBS directs all
+incoming network traffic for the cluster IP address to the default host. This
+ensures that applications you do not want load balanced will behave properly.
+
+RESOLUTION
+==========
+
+To load balance an application across the cluster, you should create a port rule
+on every cluster host for the TCP/IP port or ports serviced by the application.
+
+Additional query words: Convoy
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400 kbWinNTLBSSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

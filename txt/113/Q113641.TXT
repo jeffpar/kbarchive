@@ -1,0 +1,664 @@
+DOCUMENT:Q113641  06-FEB-2002  [msdos]
+TITLE   :README.TXT: Microsoft MS-DOS 6.21 Upgrade (Part 1 of 3)
+PRODUCT :Microsoft Disk Operating System
+PROD/VER::6.21
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.21 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the MS-DOS 6.21 Upgrade README.TXT
+file.
+
+MORE INFORMATION
+================
+
+README.TXT
+
+MS-DOS 6.21 does not include data compression. It differs from MS-DOS 6.2 as
+follows:
+
+ - DoubleSpace is not included. For more information, see Section 7 of this
+   file.
+
+ - ScanDisk will not run on DoubleSpace drives unless DoubleSpace is installed
+   (that is, DBLSPACE.BIN is loaded in memory).
+
+ - The Backup programs do not compress data while backing up, and cannot restore
+   compressed backups made by previous versions of Microsoft Backup. (By
+   default, Setup does not replace your current version of Backup, if any). For
+   more information, see section 5.5 of this file.
+
+NOTES ON MS-DOS 6.21
+--------------------
+
+This file provides important information not included in the MICROSOFT MS-DOS
+USER'S GUIDE or in MS-DOS Help.
+
+This file is divided into the following major sections:
+
+1. Setup
+
+2. MemMaker, EMM386, and Memory Management
+
+3. Windows
+
+4. Hardware Compatibility with MS-DOS 6.21
+
+5. Microsoft Programs
+
+6. Third-Party Programs
+
+7. DoubleSpace
+
+If the subject you need information about doesn't appear in this file, you might
+find it in one of the following text files included with MS-DOS:
+
+ - OS2.TXT, which describes how to remove and save data on your computer when
+   you replace OS/2 with MS-DOS 6.21.
+
+ - NETWORKS.TXT, which describes how to update your network software for use
+   with MS-DOS 6.21.
+
+For information about new features, type "HELP WHATSNEW" (without the quotation
+marks) at the command prompt.
+
+This file contains the following topics:
+
+1. Setup
+
+   1.1  SpeedStor
+   1.2  Incompatible Hard Disk or Device Driver
+   1.3  AT&T 6300 Computer
+   1.4  Toshiba with a Hard RAM Disk
+   1.5  Tandy with ROM DOS
+   1.6  Setup displays the "Your computer uses a disk-compression
+        program that is incompatible with Setup" message.
+   1.7  You deleted files from the directory that Setup needs
+        to install the optional Windows programs.
+   1.8  Running Setup if Your Computer Uses Windows NT
+   1.9  Setup detects that your computer has a non-MS-DOS
+        partition or non-MS-DOS files, and your computer uses Windows NT.
+   1.10 Setup displays the "Your computer uses password protection"
+        screen.
+   1.11 Setup displays the "Your computer is using an incompatible
+        delete-protection program" screen.
+   1.12 Setup detects that your computer uses DR DOS.
+   1.13 Installing MS-DOS on a Drive Other Than C
+   1.14 Bypassing the Uninstall Disk and Using Default Setup Options
+   1.15 Installing MS-DOS on a System with a CorelSCSI UNI_ASP.SYS Driver
+   1.16 Installing MS-DOS if you have DrivePro or EZ-Drive
+   1.17 Setup displays the "There is not enough disk space" screen
+        and you are running PC-DOS version 6.1
+   1.18 Setup cannot update a file
+   1.19 Upgrading from PC-DOS 6.1
+
+2. MemMaker, EMM386, and Memory Management
+
+   2.1  Intel Expanded-Memory Driver (EMM.SYS)
+   2.2  Running MemMaker on a Computer with PC-NFS
+   2.3  You have a Super VGA display and want to conserve memory.
+   2.4  Using MemMaker with IBM LAN
+   2.5  MemMaker and Adaptec SCSI devices
+   2.6  Running MemMaker on a computer with PC Tools RAMBoost
+   2.7  EMM386 detects an error in an application
+   2.8  MemMaker no longer aggressively scans upper memory by default
+
+3. Windows
+
+   3.1  Your computer uses a Windows 3.0 permanent swap file.
+   3.2  Using compressed floppy disks with Windows File Manager
+
+4. Hardware Compatibility with MS-DOS 6.21
+
+   4.1  Compaq EXTDISK.SYS Driver
+   4.2  Hardcard
+   4.3  Toshiba
+
+5. Microsoft Programs
+
+   5.1  Microsoft Anti-Virus
+   5.2  Running Microsoft Backup for MS-DOS under Windows
+   5.3  Backup for Windows stops running at the end of the
+        compatibility test
+   5.4  Running Microsoft Backup with TI4000 and Gateway NOMAD computers
+   5.5  MS-DOS 6.21 Backup Cannot Restore 6 or 6.2 Backups
+   5.6  Microsoft Defragmenter
+
+6. Third-party Programs
+
+   6.1  4DOS and NDOS
+   6.2  Above Board 286 and Above Board Plus Installation
+        Programs
+   6.3  CodeView
+   6.4  Colorado Tape Backup
+   6.5  Fastback Plus
+   6.6  Norton Desktop for Windows 2.0
+   6.7  Norton Utilities
+   6.8  PC Tools
+   6.9  QEMM's Stealth DoubleSpace Feature
+   6.10 Johnson Computer Systems PC-Vault and PC-Vault Plus
+   6.11 AddStor DoubleTools
+
+7. DoubleSpace
+
+   7.1  Converting Your XtraDrive Disk-Compression Software
+        to DoubleSpace
+   7.2  Converting Stacker 3.1 Software to DoubleSpace
+   7.3  Converting Other Disk-Compression Software to DoubleSpace
+   7.4  DoubleSpace Setup indicates that your computer is running an
+        incompatible disk-caching program.
+   7.5  Your compressed drive runs out of disk space.
+   7.6  Your uncompressed (host) drive runs out of disk space.
+   7.7  DoubleSpace did not compress all of your files because
+        the drive ran out of disk space.
+   7.8  Windows displays the message "The permanent swap file is corrupt."
+   7.9  EXTDISK.SYS displays a warning about drive letters.
+   7.10 You need a special device driver to use your startup drive.
+   7.11 Defragmenting uncompressed drives after changing file attributes
+   7.12 Files DoubleSpace cannot compress
+   7.13 Microsoft Defragmenter runs out of memory while you are
+        compressing a drive.
+   7.14 DoubleSpace and PC-Vault
+   7.15 Maximum size of a compressed drive
+   7.16 DoubleSpace could not mount a drive due to problems with the drive
+   7.17 DoubleSpace finishes installation, but you cannot access your
+        Hardcard.
+   7.18 You receive a DoubleGuard Alarm message
+   7.19 A compressed drive is currently too fragmented to mount
+   7.20 DoubleSpace displays the message "Your computer is running with an
+        incompatible version of DBLSPACE.BIN"
+   7.21 Using the DBLSPACE command after bypassing DBLSPACE.BIN
+   7.22 Removing the write-protection from a compressed floppy disk
+   7.23 Automounting and Norton Disk Cache
+   7.24 Undelete utilities and DoubleSpace
+   7.25 Creating an Emergency Startup Disk for DoubleSpace Systems
+   7.26 If ScanDisk Cannot Check or Repair a DoubleSpace Volume File
+
+1. SETUP
+--------
+
+1.1 SpeedStor:
+
+If Setup referred you to this section and your computer has an OS/2 partition
+created by using the FDISKPM utility in OS/2 2.1, run MS-DOS Setup by typing
+"SETUP /U" (without the quotation marks) at the command prompt.
+
+If Setup referred you to this section and you have neither OS/2 nor a SpeedStor
+partition on your computer, see the section "Setup displays the Incompatible
+Hard Disk or Device Driver screen" in the "Diagnosing and Solving Problems"
+chapter of the MS-DOS User's Guide.
+
+If you do have a SpeedStor partition on your computer, Setup probably referred
+you to this section for one of the following reasons:
+
+ - Setup could not find in your CONFIG.SYS file a command for the device driver
+   that supports your SpeedStor partition. If this is the case, add the command
+   line to your CONFIG.SYS file, restart your computer, and run Setup. For more
+   information about adding the command line to your CONFIG.SYS file, see your
+   SpeedStor documentation.
+
+ - Your CONFIG.SYS file has a DEVICE=HARDRIVE.SYS line in it. If this is the
+   case, carry out the following procedure:
+   1. Use the EXPAND command to expand and copy the SSTOR.SYS file to your hard
+      disk. Make sure you copy the SSTOR.SYS file to the same path as the
+      HARDRIVE.SYS file. See the PACKING.LST file on Setup Disk 1 for the
+      location of the SSTOR.SYS file on the Setup disks and for instructions on
+      how to expand and copy it to your hard disk.
+
+   2. Replace the DEVICE=HARDRIVE.SYS command with a DEVICE=SSTOR.SYS command.
+      For example, if the command that loaded the HARDRIVE.SYS file was
+      DEVICE=C:\SSTOR\HARDRIVE.SYS, you would replace it with
+      DEVICE=C:\SSTOR\SSTOR.SYS.
+
+   3. Restart your computer.
+
+   4. Make sure you can access your hard disk.
+
+   5. Run Setup.
+
+1.2 Incompatible Hard Disk or Device Driver:
+
+If Setup referred you to this section, and no other section in this file is
+relevant to your system, you have a partition that is incompatible with MS-DOS
+6.21. You must delete the partition from your hard disk. See "Using Fdisk to
+Configure Your Hard Disk" in the chapter "Diagnosing and Solving Problems" in
+the MICROSOFT MS-DOS USER'S GUIDE.
+
+1.3 AT&T 6300 Computer:
+
+If you use an AT&T 6300 computer and your ROM BIOS is version 1.21, contact
+your vendor for a ROM BIOS upgrade. The ROM BIOS version number is displayed
+when you start your computer.
+
+1.4 Toshiba with a Hard RAM Disk:
+
+These instructions apply to Toshiba models T1200, T1600, T1200XE and T1000LE.
+
+To use the hard RAM disk, carry out the following procedure before you install
+MS-DOS 6.21:
+
+1. Back up your hard RAM disk.
+
+2. Using the Toshiba Setup program, delete the hard RAM disk by allocating zero
+   kilobytes (KB) to it. All data on the hard RAM disk will be lost.
+
+3. Restart your computer
+
+4. Run MS-DOS Setup.
+
+5. After Setup is complete, run the Toshiba Setup program to reinstall the hard
+   RAM disk.
+
+6. Run FDISK, change to drive 2, and create a primary DOS partition. Quit FDISK.
+
+7. Use the FORMAT command to format drive D.
+
+1.5 Tandy with ROM DOS:
+
+Contact your hardware manufacturer for information about upgrading a Tandy
+computer with ROM DOS to MS-DOS 6.21. This applies to the following models:
+1000EX, 1000HX, 1000SL, 1000SL2, 1000TL, 1000TL2, 1000TL3, 1000RL, 1000RLX,
+1000RL-HD, 1000RLX-HD, 1100FD, 2500XL, 2500XL2.
+
+1.6 Setup displays the "Your computer uses a disk-compression
+     program that is incompatible with Setup" message.
+
+If Setup indicated that your computer has an incompatible disk-compression
+program, you must remove it manually before you can install MS-DOS 6.21. Contact
+your disk-compression vendor for an updated version of your software. In most
+cases, current versions of disk-compression software are compatible with MS-DOS
+6.21.
+
+Alternatively, you can use the procedure below to remove your current
+disk-compression software.
+
+1. Back up all the files on your compressed drive. In step 3, you will format
+   your uncompressed drive, which destroys all the files on your compressed and
+   uncompressed drives.
+
+2. If your Setup disks are compatible with drive A, insert Setup Disk 1 in drive
+   A, and restart your computer. After Setup displays the first screen, quit
+   Setup by pressing F3 twice.
+
+   If your Setup disks are not compatible with drive A, create a startup floppy
+   disk for drive A. To do this, insert Setup Disk 1 in drive B, and a blank
+   floppy disk in drive A. Then type "B:SETUP /F " (without the quotation
+   marks)at the command prompt.
+
+   When prompted, choose to install MS-DOS on the floppy disk in drive A. After
+   Setup is finished, leave the disk in drive A, and restart your computer.
+
+3. At the command prompt, type FORMAT C: /S to reformat your startup drive and
+   transfer MS-DOS 6.21 system files to it.
+
+4. Remove the disk from drive A, and restart your computer.
+
+5. Insert Setup Disk 1 in drive A or B, and type "A:SETUP" (without the
+   quotation marks) or B:SETUP at the command prompt.
+
+6. After Setup is complete, restore the files you backed up. Do not restore
+   older versions of MS-DOS files.
+
+1.7 You deleted files from the directory that Setup needs
+    to install the optional Windows programs.
+
+If you typed BUSETUP /E at the command prompt, the "Setup did not find the files
+it needs in the directory specified" message appeared, and you think you deleted
+the files from your hard disk, insert Setup Disk 1 in drive A or B, and start
+Setup by typing "A:SETUP /E" (without the quotation marks) or "B:SETUP /E"
+(without the quotation marks) at the command prompt.
+
+1.8 Running Setup if Your Computer Uses Windows NT:
+
+If your computer has Windows NT installed, but does not have MS-DOS installed on
+it, carry out Procedure 1. If your computer has Windows NT and MS-DOS installed
+on it, carry out Procedure 2.
+
+Procedure 1
+
+1. Run Setup by inserting Setup Disk 1 in drive A and restarting your computer.
+   Complete Setup by following the instructions on the screen. When Setup is
+   complete, Windows NT will be disabled.
+
+   If Windows NT was installed on a FAT partition, complete steps 2 and 3 of this
+   procedure to reenable Windows NT so that you can use both the Windows NT and
+   MS-DOS operating systems.
+
+   If Windows NT was installed on a non-FAT partition, see section 1.9.
+
+2. Insert your Windows NT Setup disk in drive A or drive B, and then restart
+   your computer.
+
+3. When the Windows NT Setup screen appears, choose Repair, and then insert your
+   Windows NT Emergency Repair Disk (which you created when you installed
+   Windows NT) to repair the Windows NT system files.
+
+Procedure 2
+
+1. When you start your computer, choose MS-DOS as your operating system.
+
+2. Run Setup by inserting Setup Disk 1 in drive A or B, and typing "A:SETUP"
+   (without the quotation marks) or "B:SETUP" (without the quotation marks) at
+   the command prompt.
+
+1.9  Setup detects that your computer has a non-MS-DOS
+     partition or non-MS-DOS files, and your computer uses
+     Windows NT
+
+The procedure you use depends on whether you want to preserve the partition and
+its files. Find the section below that describes the configuration you want.
+
+You Don't Want to Preserve the Partition or its Files:
+
+If you don't want to preserve the partition or its files, choose to remove the
+partition or files if Setup prompts you to do so. If Setup doesn't offer you
+that choice, remove the partition manually after Setup is complete. For
+instructions on removing a non-MS-DOS partition manually, see "Using Fdisk to
+Configure Your Hard Disk" in the chapter "Diagnosing and Solving Problems" in
+the MICROSOFT MS-DOS USER'S GUIDE.
+
+You Don't Want to Preserve the Partition but Want to Save its Files:
+
+If you want to save the data files, but don't want to preserve the partition,
+back up the files, run Setup again, and then choose to remove the partition or
+files if Setup prompts you to do so. If Setup doesn't offer you this choice,
+remove the partition manually after Setup is complete. For instructions on
+removing the partition manually, see "Using Fdisk to Configure Your Hard Disk"
+in the chapter "Diagnosing and Solving Problems" in the MICROSOFT MS-DOS USER'S
+GUIDE.
+
+You Want to Preserve the Partition and Its Files:
+
+Carry out the following procedure.
+
+NOTE If the non-MS-DOS partition takes up all the space on your hard disk, you
+must reconfigure your hard disk. You can either let Setup do it for you, as
+described in the preceding section, or reconfigure it yourself manually. For
+instructions on reconfiguring your hard disk manually, see your Windows NT
+documentation.
+
+To install MS-DOS 6.21 and preserve your partition or files:
+
+1. Run MS-DOS Setup.
+
+2. When prompted, choose to continue Setup without removing the partition or
+   files.
+
+3. After Setup is complete, insert your Windows NT Setup disk in drive A or
+   drive B, and then restart your computer.
+
+4. When the Windows NT Setup screen appears, choose Repair, and then insert your
+   Windows NT Emergency Repair Disk (which you created when you installed
+   Windows NT) to repair the Windows NT system files.
+
+1.10 Setup displays the "Your computer uses password protection"
+     screen.
+
+See section 1.12.
+
+1.11 Setup displays the "Your computer is using an incompatible
+     delete-protection program" screen.
+
+See section 1.12.
+
+1.12 Setup detects that your computer uses DR DOS.:
+
+If you have DR DOS installed on your computer, take the following precautions
+before restarting Setup:
+
+ - If your system has any security features, including password protection,
+   disable them. For more information, see "Setup displays the 'Your computer
+   uses password protection' screen" in the chapter "Diagnosing and Solving
+   Problems" in the MICROSOFT MS-DOS USER'S GUIDE.
+
+   If you have protected any files or directories with a password, remove the
+   password protection, particularly if you have protected your CONFIG.SYS or
+   AUTOEXEC.BAT files, or your DR DOS directory.
+
+ - If you have DELWATCH installed on your computer, carry out the procedure
+   "Setup displays the 'Your computer is using an incompatible delete-protection
+   program' screen" in the chapter "Diagnosing and Solving Problems" in the
+   MICROSOFT MS-DOS USER'S GUIDE.
+
+ - If your CONFIG.SYS or AUTOEXEC.BAT files use any conditional commands-- such
+   as the "?" or GOTO commands--remove them and adjust the order of commands in
+   your startup files accordingly.
+
+ - If your CONFIG.SYS file uses the CHAIN command, remove it and adjust the
+   order of commands in the file accordingly.
+
+ - If your computer uses disk compression, but drive C is not compressed, run
+   Setup as described in the chapter "Getting Started" in the MICROSOFT MS-DOS
+   USER'S GUIDE. When Setup displays the "Your CONFIG.SYS file contains commands
+   that are not valid MS-DOS commands" message, choose the "Modify original
+   files" option.
+
+   If drive C is compressed, carry out the following procedure:
+
+   1. Determine which drive is your original uncompressed drive. For more
+      information, see your DR DOS documentation.
+
+   2. Make backup copies of the CONFIG.SYS and AUTOEXEC.BAT files on your
+      compressed drive, and the DCONFIG.SYS file on your uncompressed drive.
+
+   3. Combine the two configuration files. For example, if drive D is your
+      uncompressed drive, type the following at the command prompt:
+
+   " COPY D:\DCONFIG.SYS+C:\CONFIG.SYS D:\CONFIG.SYS " (without the quotation
+   marks)
+
+   4. Copy the combined CONFIG.SYS file to drive C. For example, if drive D is
+      your uncompressed drive, type the following at the command prompt:
+
+   " COPY D:\CONFIG.SYS C:\CONFIG.SYS " (without the quotation marks)
+
+   5. Copy your AUTOEXEC.BAT to your uncompressed drive. For example, if drive D
+      is your uncompressed drive, type the following at the command prompt:
+
+   " COPY C:\AUTOEXEC.BAT D:\AUTOEXEC.BAT " (without the quotation marks)
+
+   6. Run MS-DOS 6.21 Setup.
+
+   7. When Setup displays the "Your CONFIG.SYS file contains commands that are
+      not valid MS-DOS commands" message, choose the "Modify original files"
+      option.
+
+      When Setup displays the "Because you are currently using the DR DOS
+      operating system" message, choose Continue.
+
+   8. After Setup is complete, MS-DOS displays an "Unrecognized command" message
+      on your screen for each command in your AUTOEXEC.BAT and CONFIG.SYS files
+      that is not a valid MS-DOS command. Remove these commands from your
+      CONFIG.SYS and AUTOEXEC.BAT files.
+
+   9. Add the DEVICE=HIMEM.SYS command to the beginning of your CONFIG.SYS file,
+      and the restart your computer.
+
+1.13 Installing MS-DOS on a Drive Other Than C:
+
+As described in the following procedure, you can install MS-DOS on a drive other
+than C by using the /M switch to copy the system files to your startup drive and
+then using the /Q switch to copy your MS-DOS files to a different drive.
+
+NOTE This procedure is designed for advanced users. If your computer uses
+disk-compression software, modify the procedure as appropriate.
+
+NOTE If your computer uses disk-partitioning software, such as Disk Manager,
+SpeedStor, Priam, or Everex, do not carry out the procedure until you have
+carried out steps 1 through 3 of "You need to install MS-DOS manually" in the
+chapter "Diagnosing and Solving Problems" in the MICROSOFT MS-DOS USER'S GUIDE.
+If your software uses a driver to enable the drive on which you want to install
+MS-DOS, make sure you create a startup disk with the driver in a CONFIG.SYS or
+AUTOEXEC.BAT file. After you have carried out these steps, skip to step 3 of the
+following procedure.
+
+1. Run Setup by inserting Setup Disk 1 in drive A or B, and typing "A:SETUP /M"
+   (without the quotation marks) or "B:SETUP /M" (without the quotation marks)
+   at the command prompt.
+
+   NOTE Your CONFIG.SYS and AUTOEXEC.BAT files were saved as CONFIG.NEW and
+   AUTOEXEC.NEW.
+
+2. Run Setup by inserting Setup Disk 1 in drive A or B, and typing "A:SETUP /Q"
+   (without the quotation marks) or "B:SETUP /Q" (without the quotation marks)
+   at the command prompt. Follow the instructions on your screen.
+
+3. When Setup displays the system settings screen, choose the MS-DOS Path
+   option. Type the drive and directory where you want to install MS-DOS, and
+   press ENTER. Continue Setup.
+
+4. After Setup is complete, open your CONFIG.NEW and AUTOEXEC.NEW files and
+   ensure that their commands specify the correct path. Save the files as
+   CONFIG.SYS and AUTOEXEC.BAT. Then restart your computer.
+
+1.14 Bypassing the Uninstall Disk and Using Default Setup Options:
+
+To keep Setup from creating an Uninstall Disk, use the /G switch with the Setup
+command.
+
+To bypass the Uninstall disk and use default Setup options instead of choosing
+them yourself, use both the /H and /G switches with the Setup command.
+
+WARNING The primary purpose of the Uninstall disk is to safeguard your files
+during and after Setup. If Setup doesn't create an Uninstall disk, you will not
+be able to restore your previous version of DOS. If Setup should render your
+hard disk inaccessible, you will not be able to use the Uninstall disk to make
+it accessible again.
+
+NOTE If you have a version of MS-DOS earlier than 5.0, and you use the /G switch
+or the /H and /G switches together, Setup will not prompt you if you need to
+update your network files.
+
+1.15 Installing MS-DOS 6.21 on a System with a CorelSCSI UNI_ASP.SYS Driver:
+
+If your system uses the CorelSCSI UNI_ASP.SYS device driver for optical drives,
+and Setup stops running when you try to install MS-DOS 6, delete the DEVICE
+command in your CONFIG.SYS that loads the Corel UNI_ASP.SYS driver. Then run
+Setup again. After Setup is complete, reinstall the Corel UNI_ASP.SYS driver as
+you originally installed it. If you continue to have problems, contact Corel
+Customer Service.
+
+1.16  Installing MS-DOS 6.21 if you have DrivePro or EZ-Drive:
+
+If your hard disk was set up using Micro House DrivePro(TM) or EZ-Drive(TM), you
+must carry out one of the following procedures before you can install MS-DOS
+6.21.
+
+ - If your DrivePro or EZ-Drive floppy disks include the DOS6INST.EXE file, run
+   the DOS6INST program and follow the instructions on the screen. (This program
+   is also available on the Micro House BBS at (303) 443-9957.)
+
+ - If you don't have the DOS6INST program, run the MHDRIVE program (if you have
+   DrivePro) or the EZ-RESET program (if you have EZ-Drive). Press ENTER to
+   accept the default answers until the program prompts you to insert MS-DOS
+   Setup Disk 1. Insert the disk and then press ENTER. At the second Setup
+   screen, choose "Continue Setup and replace your current version of DOS."
+   (Note that this procedure will replace your current CONFIG.SYS and
+   AUTOEXEC.BAT files with basic versions of these files.)
+
+For additional information, or if you encounter problems, contact Micro House
+Technical Support.
+
+1.17 Setup displays the "There is not enough free disk space" screen
+     and you are running PC-DOS version 6.1 with compression
+
+If your computer is running PC-DOS version 6.1 with PC-DOS disk compression, when
+you run MS-DOS Setup, it displays the message "There is not enough free disk
+space on drive C to install MS-DOS."
+
+PC-DOS disk compression is incompatible with MS-DOS. Before you install MS-DOS
+6.21, you must first uninstall your PC-DOS disk compression from all your
+compressed drives and then completely remove PC-DOS disk compression. For more
+information, see "Upgrading from PC-DOS 6.1" later in this file.
+
+Note: If you have completely uninstalled PC-DOS compression and this message
+still occurs, you also need to free some space on drive C.
+
+1.18  Setup cannot update a file:
+
+If Setup cannot update one of your MS-DOS files, it displays a message with the
+title "Cannot Update File." If you continued Setup, your MS-DOS 6.21
+installation is incomplete because the specified file was not updated to version
+6.21. If the file is one you know you don't need (for example, if it's a
+DoubleSpace file and you don't use DoubleSpace), don't worry about it. (If you
+are running PC-DOS 6.1, see section 1.20 of this file). If you are not sure,
+update the file using the following procedure (you will need your MS-DOS 6.0
+distribution disks):
+
+1. If you use DoubleSpace and the file that was not updated was a DoubleSpace
+   file, or if your system does not work properly after you receive this error
+   message, insert your Uninstall disk in drive A and type A:\UNINSTAL at the
+   command prompt.
+
+2. Insert MS-DOS 6.0 Setup Disk 1 (not MS-DOS 6.21 Setup Disk 1) in drive A or
+   drive B, and then use MS-DOS Editor (EDIT) to view the contents of the
+   PACKING.LST file. This file tells you where each file is located on your
+   MS-DOS 6.0 disks. Determine which MS-DOS 6.0 disk contains the file you need.
+
+3. Insert the appropriate MS-DOS 6 disk in drive A or drive B, and then use the
+   EXPAND command to expand the file. For example, to expand the file
+   DBLSPACE.BI_ from the disk in drive A to the directory C:\DOS, you would type
+   the following command:
+
+   " EXPAND A:\DBLSPACE.BI_ C:\DOS\DBLSPACE.BIN " (without the quotation marks)
+
+   For more information, see the comments at the beginning of the PACKING.LST
+   file, or see the MS-DOS 6 User's Guide.
+
+4. Run MS-DOS 6.21 Setup again. This time, Setup should be able to update the
+   file.
+
+1.19 Upgrading from PC-DOS 6.1:
+
+If your computer is running PC-DOS version 6.1 with PC-DOS disk compression, you
+cannot install MS-DOS 6.21 until you remove the disk compression. This is
+because PC-DOS disk compression is incompatible with MS-DOS. Follow these
+steps:
+
+1. First, uninstall your PC-DOS disk compression from all your compressed
+   drives. (For information on uncompressing PC-DOS compressed drives, see the
+   information on the SSUNCOMP command in the PC-DOS documentation.)
+
+2. When SSUNCOMP uncompresses your last compressed drive, it asks if you want to
+   disable the driver. Answer Yes to remove the PC-DOS version of the
+   DBLSPACE.BIN file.
+
+3. Change to the directory that contains your PC-DOS files, and then type the
+   following command:
+
+   " DEL DBLSPACE.* " (without the quotation marks)
+
+4. Insert MS-DOS 6.21 Setup Disk 1 in drive A or drive B, and then type A:SETUP
+   or B:SETUP.
+
+Additional query words: msbackup ndw defrag dblguard 6.21
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621
+Version           : :6.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

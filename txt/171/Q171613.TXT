@@ -1,0 +1,69 @@
+DOCUMENT:Q171613  19-JUL-2001  [odbc]
+TITLE   :INFO: Retaining Transactions with Transaction Object
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::1.1
+OPER/SYS:
+KEYWORDS:kbprogramming kbODBC kbOLEDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft OLE DB, version 1.1 
+ - Microsoft OLE DB Provider for ODBC, version 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the relationship of retaining transactions and transaction
+object.
+
+MORE INFORMATION
+================
+
+An OLE DB application can use ITransactionLocal::StartTransaction to begin a
+transaction if the transaction object is supported by providers.
+ITransactionLocal is an interface on the session object, and can be
+QueryInterface from any other interface on the session object. Information
+regarding a transaction can be retrieved by calling the GetTransactionInfo
+method.
+
+The Commit or Abort method of the transaction object can be used to commit or
+abort a transaction. The Commit and Abort methods allow you to specify whether
+or not to retain a transaction. If you do not retain the transaction object, a
+new transaction will not be started after the original transaction is finished,
+and the transaction object will become inactive. The only valid action for the
+transaction object will be to release it. To retain a transaction, set
+fRetaining flag to TRUE in the Commit or Abort method.
+
+The OLE DB Provider for ODBC version 1.1 supports transaction object and
+commit/abort retaining. Transactions can be committed synchronously,
+asynchronously, or two-phased, depending on the setting of XACTTC flag. With
+fRetaining set to TRUE, however, the XACTTC flag must be set to zero. The OLE DB
+Provider for ODBC version 1.1 does not support any setting of XACTTC flag when
+fRetaining set to TRUE.
+
+Additional query words: ado preserve cursor active data objects
+
+======================================================================
+Keywords          : kbprogramming kbODBC kbOLEDB 
+Technology        : kbAudDeveloper kbODBCSearch kbOLEDBSearch kbOLEDB110 kbOLEDBProvODBC110 kbOLEDBProvSearch
+Version           : :1.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

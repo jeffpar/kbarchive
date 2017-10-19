@@ -1,0 +1,80 @@
+DOCUMENT:Q193747  31-JUL-2001  [sms]
+TITLE   :SMS: File Token Generator - Filetokn.exe
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbInventory kbsmsUtil smsinv smsutil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Filetokn.exe, a utility available in the Microsoft BackOffice Resource Kit,
+generates token information about a file, which can be used to inventory a file.
+The information includes checksum, Cyclic Redundancy Check (CRC), date, time,
+size, and so forth.
+
+MORE INFORMATION
+================
+
+FILETOKN Syntax
+---------------
+
+   filetokn filename [/b offset] [/l offset] [/w offset] [/c offset length]
+   [/r offset length] [/s] [/t] [/x]
+
+Options                    Description
+---------------------------------------------------------------------------
+
+/b offset                  Gets an 8-bit token.
+
+/c offset length           Gets a 32-bit checksum at offset for length
+                           bytes.
+
+/l offset                  Gets a 32-bit long-integer token.
+
+/r offset length           Gets a CCITT_CRC (Consultative Committee for
+                           International Telephone and Telegraph Cyclic
+                           Redundancy Check) at offset for length bytes.
+
+/s                         Shows string tokens and offsets.
+
+/t                         Terse mode. Less output is displayed on the
+                           screen.
+
+/w offset                  Gets a 16-bit integer token.
+
+/x                         Output values are displayed in hexadecimal.
+
+/?                         Provides a usage statement.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbInventory kbsmsUtil smsinv smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : ALPHA MIPS x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

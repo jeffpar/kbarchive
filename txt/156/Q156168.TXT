@@ -1,0 +1,53 @@
+DOCUMENT:Q156168  14-DEC-1999  [foxpro]
+TITLE   :INFO: Platforms Supported by Visual FoxPro Version 5.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Unlike Visual FoxPro 3.0 for Windows, Visual FoxPro 5.0 does not run or create
+executable files for 16-bit operating systems, such as Windows 3.1 or Windows
+for Workgroups. Visual FoxPro 5.0 runs only on the Windows 95 and the Windows NT
+32-bit operating systems.
+
+MORE INFORMATION
+================
+
+Visual FoxPro 5.0 no longer supports the Win32s subsystem. The Win32s files
+allow the native Visual FoxPro 32-bit application code to communicate with
+16-bit operating systems. By not supporting the Win32s subsystem, Visual FoxPro
+5.0 hopes to improve performance, increase stability, and reduce overhead.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

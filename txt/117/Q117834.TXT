@@ -1,0 +1,81 @@
+DOCUMENT:Q117834  25-JUL-2001  [visualc]
+TITLE   :FIX: Wrong Output Library Name Used with VCNT Makefile
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbide kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Workbench for Windows, version 1.0, used with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the makefile created by the Visual Workbench for Windows NT on a
+command line, or as an external makefile to build a static library, the output
+library name is not formed as the project name plus the .LIB extension. Instead,
+the library name is formed using the base name of the first object module
+specified on the output-dependency line in the makefile.
+
+RESOLUTION
+==========
+
+Currently, there are not any flags that can be set from the Visual Workbench to
+change this behavior. However, you can use the following workarounds by
+modifying the makefile directly:
+
+ - Add option /OUT to the section in the makefile that is creating the response
+   file. For example:
+
+       echo >NUL @<<$(PROJ).CRF
+         /OUT:$(PROJ).lib
+         module1.obj
+         module2.obj
+         ...
+
+-or-
+
+ - Add option /OUT on the link line where the LIB.EXE file is being invoked. For
+   example:
+
+         link -LIB /OUT:$(PROJ).lib @$(PROJ).CRF
+
+-or-
+
+ - Create a batch file to rename the library.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was corrected in Visual C++ version 2.0.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbide kbVC kbbuglist kbfixlist
+Technology        : kbVSsearch kbAudDeveloper
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

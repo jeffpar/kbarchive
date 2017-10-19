@@ -1,0 +1,64 @@
+DOCUMENT:Q132603  09-FEB-2001  [win95x]
+TITLE   :Cannot View Shared Fonts Folder
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+ - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to view a shared Fonts folder on another computer, you see the
+fonts in the local Fonts folder.
+
+CAUSE
+=====
+
+The Fonts folder contains a Desktop.ini file. Viewing a shared Fonts folder
+displays the contents of the local Fonts folder.
+
+RESOLUTION
+==========
+
+To view the contents of a shared Fonts folder, go to the shared computer and
+make a copy of the Fonts folder and share it instead. You can view the contents
+of this folder.
+
+STATUS
+======
+
+Microsoft is researching this behavior and may post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: network remote
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

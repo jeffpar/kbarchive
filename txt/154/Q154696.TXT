@@ -1,0 +1,74 @@
+DOCUMENT:Q154696  08-AUG-2001  [winnt]
+TITLE   :Starting MS-DOS from Office 95 Shortcut Bar May Fail
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you start an MS-DOS prompt from the Microsoft Office shortcut bar, you may
+receive the following error:
+
+   <Office Path>\Shortc~1\Office\MS-DOS~1.pif Invalid program file name,
+   please check your pif file
+
+CAUSE
+=====
+
+The Cmd line for the MS-DOS prompt properties incorrectly points to where
+<Winnt> is the directory where your Windows NT files reside.
+
+WORKAROUND
+==========
+
+1. Choose Properties on the MS-DOS icon on the Office shortcut bar.
+
+2. Click the Program tab.
+
+3. Change the Cmd line to Cmd.exe.
+
+A Windows NT command window will now open when you click the MS-DOS button on the
+Microsoft Office shortcut bar.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

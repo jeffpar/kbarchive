@@ -1,0 +1,104 @@
+DOCUMENT:Q85237  29-NOV-1999  [win95x]
+TITLE   :Err Msgs: "Cannot Find UNIDRV.DLL" or "Cannot Print"
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If you attempt to print from the Microsoft Windows version 3.1 Write program,
+you may receive some of the error messages below. These messages indicate that
+your Universal Printer Driver (UNIDRV.DLL) is corrupted or missing.
+
+NOTE: These error messages are not exclusive to Write or the Universal Printer
+Driver. If you get these error messages, check the driver file's size and date,
+and reinstall it if necessary.
+
+MORE INFORMATION
+================
+
+Starting Write
+--------------
+
+You may receive the following error messages when starting Write:
+
+   Cannot find UNIDRV.DLL.
+
+   Cannot print.
+
+Make sure that your printer is connected properly, and use the Printers icon in
+the Control Panel to verify that the printer is configured properly.
+
+In addition, the Print command on the File menu will be unavailable (dimmed).
+
+With Print Manager Active
+-------------------------
+
+You may receive the following error message when Print Manager is active:
+
+   Print Manager
+
+   The printer on LPT1 is out of paper or is not connected to your computer.
+   Check the printer cable or network connection to make sure the printer is
+   connected, or refresh the paper supply. Then resume the print queue.
+
+With Print Manager Inactive
+---------------------------
+
+You may receive the following error messages when Print Manager is not active:
+
+   LPT1
+
+   The printer on this port is out of paper or is not connected to your
+   computer.
+
+   Check the printer cable or network connection to make sure the printer is
+   connected, or refresh the printer's paper supply, and then resume the print
+   queue.
+
+With Fast Printing Direct To Port Option Disabled
+-------------------------------------------------
+
+You may receive the following error messages when the Fast Printing Direct To
+Port option is disabled:
+
+   LPT1
+
+   The printer on this port is not responding.
+
+   Check the printer or increase the Transmission Retry value in the Printers
+   Connect dialog box, and then resume the print queue.
+
+
+Additional query words: 3.10 grayed greyed
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

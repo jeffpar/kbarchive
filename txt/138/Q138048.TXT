@@ -1,0 +1,76 @@
+DOCUMENT:Q138048  17-DEC-2000  [win95x]
+TITLE   :Server Name Not Displayed in Login Dialog Box
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Microsoft Service for NetWare Directory Services (NDS),
+if you log in to a bindery server using the Advanced button in the Login dialog
+box, and then click "Close all programs and log on as a different user" in the
+Shut Down dialog box, the Login dialog box states:
+
+   You are logging into the server named. You will not have access to
+   your directory tree.
+
+The server name in the dialog box is blank. If you enter your password and click
+Continue, you receive the following error message:
+
+   You are not logged in to the server. The server name you specified is not
+   valid or the server is not available.
+
+CAUSE
+=====
+
+This area of the Login dialog box is based on the Preferred Server entry in the
+properties for the Microsoft Client for NetWare Networks. If this entry is
+blank, the problem described above occurs.
+
+RESOLUTION
+==========
+
+To resolve this problem, use either of the following methods:
+
+ - In the Login dialog box, click Advanced, click "Log in to a bindery server,"
+   and enter the name of the correct server.
+
+ - Add a preferred server on the General tab in the properties for the Microsoft
+   Client for NetWare Networks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

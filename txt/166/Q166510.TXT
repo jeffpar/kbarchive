@@ -1,0 +1,91 @@
+DOCUMENT:Q166510  11-DEC-1999  [foxpro]
+TITLE   :BUG: Option Button in Export Dialog Box Causes Error Messages
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfpkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Choosing the Option button in the Export dialog when attempting to export a
+table contained within a database causes one of two error messages to appear:
+
+   .DBC Internal Consistency Error
+
+   -or-
+
+   Cannot find object in database.
+
+However, if you simply choose a table from a database, pick a file type from the
+Type list box, and type a name in the To list box, all the records in the table
+export properly.
+
+RESOLUTION
+==========
+
+Use the EXPORT command by typing it in the Command window or running it from a
+program. For instance, to copy the first 10 records of the Products table into
+an Excel 4.0 worksheet, use the following syntax:
+
+      USE HOME()+"\Samples\data\Products.dbf"
+      EXPORT TO Ztest.xls TYPE XLS FOR RECNO()<11
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Options button normally reveals a dialog box that allows you to set filters
+that control which records or fields are exported.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type "CLOSE ALL" (without the quotation marks) in the Command window.
+
+2. Select Export from the File menu.
+
+3. In the Export dialog box, click the button to the right of the "From" field.
+
+4. Navigate to the Samples\Data folder and select Products.dbf.
+
+5. Click OK.
+
+6. In the Export dialog box, click Options.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

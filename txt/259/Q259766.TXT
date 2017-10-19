@@ -1,0 +1,66 @@
+DOCUMENT:Q259766  18-MAY-2001  [exchange]
+TITLE   :XADM: Installation of ADC Stops Responding at Schema Update
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3, on platform(s):
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Active Directory Connector (ADC) for Exchange Server 5.5
+Service Pack 3 on either a member server or domain controller in a native
+Windows 2000 Server environment, the installation may not work and the following
+error message may be displayed:
+
+   Schema Update failed--busy.
+
+There are no errors logged in the application event log.
+
+CAUSE
+=====
+
+This issue can occur if the computer that is running Schema Master is too slow.
+
+RESOLUTION
+==========
+
+To resolve this issue, gather the necessary information about the system
+topology and forest organization, and then transfer the Schema role to a faster
+computer. For additional information, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q255690 How to View and Transfer FSMO Roles in the Graphical User Interface
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : winnt:5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q155604  26-AUG-1999  [odbc]
+TITLE   :INF: Unable to Load ODBCCP32.DLL in Custom ODBC Setup Programs
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+2.50
+WINDOWS
+kbnetwork
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Driver Setup Kit sample program from ODBC SDK 2.1 with
+ODBCCP32.DLL version 2.5, the following error message appears:
+
+   Initialization of the dynamic link library ODBCCP32.DLL failed
+
+CAUSE
+=====
+
+ODBCCP32.DLL version 2.5 requires ODBCINT.DLL to load. ODBCINT.DLL is a new
+language resource library introduced by ODBC SDK 2.5. All code that needs to be
+localized for all ODBC core components have been centralized into this library.
+This file includes all error strings and all dialog boxes.
+
+The Driver Setup Kit sample program from ODBC SDK 2.1 is based on the old version
+installer DLL, which does not use ODBCINT.DLL. When you install the Drivers from
+Desktop Driver Pack 3.0 (which uses the ODBC 2.5 core components), modify the
+SETUP.LST file as described below.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Include ODBCINT.DL_ or ODBCINT.DLL in your installation disks.
+
+2. Add the following in the [Files] section of SETUP.LST:
+
+   ODBCINT.DL_  =  ODBCINT.DLL
+
+   -or-
+
+   ODBCINT.DLL  = ODBCINT.DLL
+
+   NOTE: If the file is in compressed format, add the first entry in the [Files]
+   section of SETUP.LST. Otherwise, add the second entry.
+
+This enables the Setup program to load ODBCINT.DLL, which is required for the
+initialization of ODBCCP32.DLL.
+
+Additional query words: ODBC SDK 2.50
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC250
+Version           : WINDOWS:2.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

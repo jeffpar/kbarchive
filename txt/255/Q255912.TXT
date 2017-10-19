@@ -1,0 +1,68 @@
+DOCUMENT:Q255912  19-MAR-2000  [iis]
+TITLE   :Shutting Down COM+ Application at Timeout
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:2000; winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For a COM+ application, you can set the server process that is associated with
+the COM+ application to shut down automatically after a certain period of
+inactivity through the Component Services.
+
+If the COM+ application is used by Internet Information Services (IIS), the
+type-library caching feature in IIS must be disabled to let this timeout take
+effect. The "More Information" section of this article describes how to disable
+the type-library caching.
+
+MORE INFORMATION
+================
+
+The AspEnabletypelibCache value in the metabase controls the type library
+caching feature. Set it to False (it is set to True by default) to disable the
+type library caching. There are three application-protection levels in IIS:
+
+   Low (IIS Process)
+   Medium (Pooled)
+   High (Isolated)
+
+The AspEnabletypelibCache setting at the /W3SVC level of the metabase affects all
+applications with Low (IIS Process) and Medium (Pooled) protection levels. If
+the application protection is set to High (Isolated), the AspEnabletypelibCache
+setting should be set at that application level of the metabase, so that it only
+applies to that application.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbiisSearch kbiis500
+Version           : WINDOWS:2000; winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

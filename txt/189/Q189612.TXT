@@ -1,0 +1,169 @@
+DOCUMENT:Q189612  09-AUG-2001  [winnt]
+TITLE   :Access Violation Occurs in Windows NT Explorer (Explorer.exe)
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An access violation occurs in Windows NT Explorer (Explorer.exe), which
+generates a Dr. Watson log similar to the following:
+
+State Dump for Thread Id 0xd1
+
+ eax=00000004 ebx=00000000 ecx=001745a0 edx=00188c44 esi=00140000
+ edi=fffffffc
+ eip=77f64b53 esp=0103fa2c ebp=0103fa44 iopl=0         nv up ei pl zr na po
+ nc
+ cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+ efl=00000246
+
+ function: RtlFreeHeap
+        77f64b32 53               push    ebx
+        77f64b33 56               push    esi
+        77f64b34 57               push    edi
+        77f64b35 0f84d7010000     je      RtlFreeHeap+0x1ec (77f64d12)
+        77f64b3b 8b7508           mov     esi,[ebp+0x8]
+ ss:0239e44a=????????
+        77f64b3e 8b5d0c           mov     ebx,[ebp+0xc]
+ ss:0239e44a=????????
+        77f64b41 0b5e10           or      ebx,[esi+0x10]
+ ds:0149ea06=00000000
+        77f64b44 f7c3600f036f     test    ebx,0x6f030f60
+        77f64b4a 0f85b8010000     jne     RtlFreeHeap+0x1e2 (77f64d08)
+        77f64b50 8d78f8           lea     edi,[eax-0x8]
+ ds:0135ea0a=890c8d92
+
+ FAULT ->77f64b53 f6470501         test    byte ptr [edi+0x5],0x1
+ ds:0135ea02=89
+        77f64b57 0f8485010000     je      RtlFreeHeap+0x1bc (77f64ce2)
+        77f64b5d a807             test    al,0x7
+        77f64b5f 0f857d010000     jne     RtlFreeHeap+0x1bc (77f64ce2)
+        77f64b65 807f0410         cmp     byte ptr [edi+0x4],0x10
+ ds:0135ea02=89
+        77f64b69 0f8373010000     jnb     RtlFreeHeap+0x1bc (77f64ce2)
+        77f64b6f 83e301           and     ebx,0x1
+        77f64b72 750b             jnz     RtlFreeHeap+0x59 (77f64b7f)
+        77f64b74 ffb6b8040000     push    dword ptr [esi+0x4b8]
+ ds:001404b8=00140548
+        77f64b7a e891280000       call    RtlEnterCriticalSection
+ (77f67410)
+        77f64b7f f6470508         test    byte ptr [edi+0x5],0x8
+ ds:0135ea02=89
+        77f64b83 0f85f8000000     jne     RtlFreeHeap+0x15b (77f64c81)
+
+ *----> Stack Back Trace <----*
+
+ FramePtr ReturnAd Function Name
+ 0103fa44 77e11012 ntdll!RtlFreeHeap
+ 0103fa54 77e11489 rpcrt4!operator delete
+ 0103fa64 77e1bc32 rpcrt4!CLIENT_AUTH_INFO::~CLIENT_AUTH_INFO [omap]
+ 0103fa78 77e15903 rpcrt4!WMSG_CASSOCIATION::~WMSG_CASSOCIATION [omap]
+ 0103fa8c 77e1b9e1 rpcrt4!WMSG_CASSOCIATION::RemoveReference [omap]
+ 0103faa0 77e1ba42 rpcrt4!WMSG_BINDING_HANDLE::~WMSG_BINDING_HANDLE [omap]
+ 0103faa8 77e1ba8e rpcrt4!WMSG_BINDING_HANDLE::`scalar deleting destructor'
+ [omap]
+ 0103fab8 77e16705 rpcrt4!WMSG_BINDING_HANDLE::BindingFree [omap]
+ 0103fac8 77ba82e5 rpcrt4!RpcBindingFree [omap]
+ 0103fad4 77ba808a ole32!CRpcChannelBuffer::~CRpcChannelBuffer [omap]
+ 0103fae0 77b455cb ole32!CErrorObject::`vftable' [omap]
+ 0103fb3c 77b252ea ole32!CStdMarshal::DisconnectCliIPIDs [omap]
+ 0103fb48 77b25520 ole32!CStdMarshal::Disconnect [omap]
+ 00157f28 77bb0ce8 ole32!CStdIdentity::Disconnect [omap]
+ 77bb0d10 77b2110d ole32!IProxyManager::`vftable' [omap]
+ 77bb0d28 77b77862 ole32!CStdIdentity::CInternalUnk::Release [omap]
+ 77b77836 0824448b ole32!CStdIdentity::CreateServerWithHandler [omap]
+
+ *----> Stack Back Trace <----*
+
+ FramePtr ReturnAd Function Name
+ 0103fa44 77e11012 ntdll!RtlFreeHeap
+ 0103fa54 77e11489 rpcrt4!operator delete
+ 0103fa64 77e1bc32 rpcrt4!CLIENT_AUTH_INFO::~CLIENT_AUTH_INFO [omap]
+ 0103fa78 77e15903 rpcrt4!WMSG_CASSOCIATION::~WMSG_CASSOCIATION [omap]
+ 0103fa8c 77e1b9e1 rpcrt4!WMSG_CASSOCIATION::RemoveReference [omap]
+ 0103faa0 77e1ba42 rpcrt4!WMSG_BINDING_HANDLE::~WMSG_BINDING_HANDLE [omap]
+ 0103faa8 77e1ba8e rpcrt4!WMSG_BINDING_HANDLE::`scalar deleting destructor'
+ [omap]
+ 0103fab8 77e16705 rpcrt4!WMSG_BINDING_HANDLE::BindingFree [omap]
+ 0103fac8 77ba82e5 rpcrt4!RpcBindingFree [omap]
+ 0103fad4 77ba808a ole32!CRpcChannelBuffer::~CRpcChannelBuffer [omap]
+ 0103fae0 77b455cb ole32!CErrorObject::`vftable' [omap]
+ 0103fb3c 77b252ea ole32!CStdMarshal::DisconnectCliIPIDs [omap]
+ 0103fb48 77b25520 ole32!CStdMarshal::Disconnect [omap]
+ 00157f28 77bb0ce8 ole32!CStdIdentity::Disconnect [omap]
+ 77bb0d10 77b2110d ole32!IProxyManager::`vftable' [omap]
+ 77bb0d28 77b77862 ole32!CStdIdentity::CInternalUnk::Release [omap]
+ 77b77836 0824448b ole32!CStdIdentity::CreateServerWithHandler [omap]
+
+CAUSE
+=====
+
+This problem is caused by a problem in Rpcrt.dll, which generates a message with
+an invalid memory address that results in the above access violation. This
+problem has been seen most often when running Microsoft Transaction Server
+(MTS), but can occur in other situations and can cause problems in applications
+other than Windows NT Explorer.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+This fix is also included in a rollup of fixes for Microsoft Exchange 5.5 and
+Microsoft Internet Information Server 4.0, which is available on the Microsoft
+FTP Site. For more information on this rollup, please see the following article
+in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q147222
+   TITLE : Group of Hotfixes for Exchange 5.5 and IIS 4.0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q143167  14-NOV-2000  [word97]
+TITLE   :WD97: Footnote Reference Mark Converted to Arabic Number
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbconversion
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Word 6.x or 7.x, when you open a Word 97 document that contains auto-numbered
+footnote reference marks that are formatted as special characters using Word 97,
+the special characters may change to Arabic numbers.
+
+This occurs specifically when the auto-numbered reference is an asterisk, a
+cross, a double cross, or a section break symbol.
+
+CAUSE
+=====
+
+This problem occurs when you use the Word Import Converter (Mswrd832.cnv) to
+open the document.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to the latest version of the Word 97-2000
+Import Converter. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   
+
+   Q162214 WD: How to Obtain the Word 97-2000 Import Converter
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with certain versions of the Word
+97 Import Converter.
+This problem was corrected in Word 2000.
+
+Additional query words: import converter special characters mswrd832.cnv
+
+======================================================================
+Keywords          : kbdta kbconversion 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

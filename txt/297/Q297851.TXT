@@ -1,0 +1,75 @@
+DOCUMENT:Q297851  17-SEP-2001  [foxpro]
+TITLE   :FIX: Syntax Error in Startup Program Causes Fatal Exception
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When there is a syntax error in a program run at startup from the Config.fpw
+file, Visual FoxPro may close without warning.
+
+STATUS
+======
+
+This problem was corrected in Microsoft Visual FoxPro version 7.0 for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create the following program and save it as "c:\temp\vfpStart.prg":
+
+   DEFINE BAR 50 OF _MTOOLS PROMPT 'test'
+   ON SELECTION BAR 50 OF _MTOOLS x =   && Intentional error
+
+2. Compile the program:
+
+   COMPILE c:\temp\vfpStart.prg
+
+3. Create the following config file and save it as "c:\temp\config.fpw":
+
+   COMMAND=DO c:\temp\vfpStart.prg
+
+4. Run the following code in the Command window:
+
+   lcCmd = '"' + HOME() + 'vfp6.exe' + '" -cc:\temp\config.fpw'
+   RUN /N &lcCmd.
+
+Visual FoxPro opens and then closes immediately.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,56 @@
+DOCUMENT:Q109181  12-DEC-1999  [homemm]
+TITLE   :CD Sampler: Add to Shopping List Displays Colorless Dialog Box
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::Fall 1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Home CD Sampler Fall 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an item is added to the shopping list, a dialog box is displayed indicating
+that the item has successfully been added to the shopping list. This dialog box
+does not follow the Windows color palette and will display black and white
+except for the Exclamation icon and Control menu.
+
+MORE INFORMATION
+================
+
+When an item is successfully installed, a dialog box is displayed with the
+following message:
+
+   Shopping List Updated.
+
+However, the dialog box is colorless except for the Control menu (which is gray)
+and the Exclamation icon (which is blue). This effect is a result of the way
+MacroMind Director handles the Windows color palette.
+
+Additional query words: kbhowto Fall 1993 CD Sampler multi media multimedia multi-media mmtitles samples C D compact disc disk greyed out grayed gray grey invisible unavailable dimmed
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword5 kbCDSamplerF1993
+Version           : :Fall 1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

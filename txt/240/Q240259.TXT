@@ -1,0 +1,107 @@
+DOCUMENT:Q240259  04-NOV-2000  [mspress]
+TITLE   :Microsoft Computer Dictionary 4th Ed. Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Computer Dictionary, Fourth Edition ISBN 0-7356-0615-3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Computer Dictionary, Fourth
+Edition, ISBN 0-7356-0615-3.
+
+The following topics are covered:
+
+ - Page 62: Term British Naval Connector Is Misspelled
+
+ - Page 210: Full Name Of The ITU Spelled Incorrectly
+
+ - Page 217: Incorrect Microhenries Symbol
+
+ - Page 418: Spacebar Entry Incorrectly Capitalized
+
+MORE INFORMATION
+================
+
+Page 62: Term British Naval Connector Is Misspelled
+---------------------------------------------------
+
+Change:
+"British Navel Connector"
+
+To:
+"British Naval Connector"
+
+
+Page 210: Full Name Of The ITU Spelled Incorrectly
+--------------------------------------------------
+
+The definitions for H.320, H.323, and H.324 each have the full name of the ITU
+spelled incorrectly.
+
+Change:
+"International Telecommunications Union"
+
+To:
+"International Telecommunication Union"
+
+
+Page 217: Incorrect Microhenries Symbol
+---------------------------------------
+
+On page 217, the microhenris symbol in the definition of "henry" contains a
+typo.
+
+Change:
+<MU>H=
+
+To:
+µH=
+
+
+Page 418: Spacebar Entry Incorrectly Capitalized
+------------------------------------------------
+
+Change:
+"Spacebar"
+
+To:
+"spacebar"
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-0615-3 EUBOOK
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch kbZNotKeyword2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

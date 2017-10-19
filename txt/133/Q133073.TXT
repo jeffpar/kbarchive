@@ -1,0 +1,79 @@
+DOCUMENT:Q133073  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Sound Recorder Cannot Record or Play Back...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to play a sound (.wav) file, you may receive the following error
+message:
+
+   Sound Recorder cannot record or play back because a sound device is not
+   installed. To install a sound device, click 'Add New Hardware' in Control
+   Panel.
+
+CAUSE
+=====
+
+This problem can occur if the "drivers=MMSYSTEM.DLL" entry is missing from the
+[boot] section of the System.ini file.
+
+RESOLUTION
+==========
+
+Add the following line to the [boot] section of the System.ini file:
+
+   drivers=MMSYSTEM.DLL
+
+If the line is present but has a semicolon (;) at the beginning, remove the
+semicolon.
+
+MORE INFORMATION
+================
+
+Following the instructions in the error message does not eliminate the problem,
+nor does removing and reinstalling the device in Device Manager. Removing and
+reinstalling all multimedia components also does not eliminate the error
+message.
+
+This problem can also cause other symptoms. When you try to adjust the volume
+using Mixer Control you may receive the following error message:
+
+   There are no active mixer devices available. You may install or activate
+   mixer devices from Control Panel. This application will now exit.
+
+Media Player will run with this problem present, but the only device listed in
+the Devices menu will be Video For Windows.
+
+Additional query words: wmptop
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

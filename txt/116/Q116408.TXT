@@ -1,0 +1,97 @@
+DOCUMENT:Q116408  13-JUN-2001  [sna]
+TITLE   :Starting SNA Server Causes Computer to Slow Down
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT SNA Server, several default shares are created with
+permissions set to EVERYONE FULL CONTROL. Changing permissions on these
+directories to something else can cause the SNA product to not function
+correctly.
+
+One symptom of this is that the system slows down when you start Windows NT after
+you have modified permissions on the COMCFG share or file privileges on the
+COM.CFG file.
+
+CAUSE
+=====
+
+SNA Server services (SnaBase, SnaServer, Link services) run under the local
+system context and access the CONFIG file through UNC names
+(\\SERVER\COMCFG\COM.CFG). If the EVERYONE users doesn't have full control
+access, this causes the services to go into a loop trying to open COM.CFG.
+
+RESOLUTION
+==========
+
+SNA Patch #8 (SNA20.P08 - update to SNADMOD.DLL) is modified to display a dialog
+box that says COM.CFG cannot be opened, thus allowing the Windows NT server to
+perform as usual. Later updates to the SNA Server 2.0 SNADMOD.DLL will also
+include this fix.
+
+
+WORKAROUND
+==========
+
+SNA Server 2.0 patches are located on:
+
+
+ - Microsoft's Internet Server (FTP.MICROSOFT.COM)
+
+    - BUSSYS\SNASRVR\SUP-ED\FIXES (supported)
+
+    - BUSSYS\SNASRVR\UNSUP-ED\FIXES (unsupported)
+
+Also, various hotfixed versions of Windows NT version 3.1 include an updated
+SRV.SYS which will lead to similar problems mentioned above. The original
+release of Windows NT version 3.1, and all official Service Pack #1 and #2
+updates work fine.
+
+However, the following version of <winnt>\SYSTEM32\DRIVERS\SRV.SYS should
+be avoided:
+
+   U.S. Service Pack 2a version (shipped on the August and September 1994
+   TechNet CD-ROM), which has a size of 193748.
+
+STATUS
+======
+
+This problem is corrected by applying the regular U.S. Service Pack 2 or U.S.
+Service Pack 3, which has a size of 193732.
+
+
+Additional query words: prodsna 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

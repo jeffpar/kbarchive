@@ -1,0 +1,66 @@
+DOCUMENT:Q260337  18-MAY-2000  [foxpro]
+TITLE   :HOWTO: Use the Sleep API to Pause Program Execution in a DLL
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbAPI kbCOMt kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Sleep application program interface (API), causes the current program to
+suspend execution for a specified number of milliseconds. This is useful when
+you need to pause code execution in a DLL or multi-threaded DLL.
+
+MORE INFORMATION
+================
+
+Since you can not have an interface in a DLL, you can not use a WAIT or =INKEY
+function. The following code shows you how to declare the Sleep API and then how
+to call the Sleep API.
+
+The number you pass to the API is in milliseconds.
+
+   DECLARE Integer Sleep IN Win32API Integer
+   =Sleep(5000)      && Pause for 5 seconds
+
+NOTE: APIs are case sensitive. So, make sure that you type the command exactly as
+shown.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbCOMt kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

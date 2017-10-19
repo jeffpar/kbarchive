@@ -1,0 +1,94 @@
+DOCUMENT:Q66582  31-JAN-2002  [homegame]
+TITLE   :ASD: Placement Accuracy of Navigational Aids
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If you place custom navigational aids with Flight Simulator Aircraft &
+Scenery Designer (ASD), the following accuracies can be expected:
+
+Navigational Aid      North/South      East/West
+----------------      -----------      ---------
+VOR                   128 meters       1 meter
+ILS                   No variance      No variance
+NDB                   No variance      No variance
+Audible markers       128 meters       128 meters
+
+Using the Longitude/Latitude feature may introduce additional variance due to the
+complexity of the conversion algorithm. The Flight Simulator coordinate system
+provides the highest degree of accuracy.
+
+
+MORE INFORMATION
+================
+
+To confirm the positional accuracy of navigational aids, use the following
+steps:
+
+1. Boot Flight Simulator 4.00 with ASD.
+
+2. Press 1 (Mode).
+
+3. Press J (Scenery Design).
+
+4. Press 1 (Static Scenery).
+
+5. Press C (Add Buildings, Objects).
+
+6. Press A (Total Length) and type 100.
+
+7. Press ENTER.
+
+8. Press B (Total Width) and type 100.
+
+9. Press ENTER twice.
+
+10. Press A (to add object).
+
+11. Press ESC.
+
+12. Press H (Add Navigational Aids).
+
+13. Press 1 (to choose navigational aid).
+
+14. Press ENTER.
+
+15. Press A (to add Navigational aid).
+
+16. Press ESC.
+
+17. Press J (Edit Static Scenery).
+
+18. Press A, B, C, D, E, F, G, and I (do NOT press H).
+
+19. Press TAB (Find Next Object).
+
+The navigational aid just created should be selected. Note the location of the
+navigational aid in relation to the building. Knowing that the building is
+100-by-100-feet square, you can estimate the placement accuracy.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

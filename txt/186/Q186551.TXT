@@ -1,0 +1,804 @@
+DOCUMENT:Q186551  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Error Messages: 1200 to 1399
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes Terminal Server error messages 1200 to 1399.
+
+MORE INFORMATION
+================
+
+Error 1200
+----------
+
+   The specified device name is invalid.
+
+Error 1201
+----------
+
+   The device is not currently connected but it is a remembered connection.
+
+Error 1202
+----------
+
+   An attempt was made to remember a device that had previously been remembered.
+
+Error 1203
+----------
+
+   No network provider accepted the given network path.
+
+Error 1204
+----------
+
+   The specified network provider name is invalid.
+
+Error 1205
+----------
+
+   Unable to open the network connection profile.
+
+Error 1206
+----------
+
+   The network connection profile is corrupt.
+
+Error 1207
+----------
+
+   Cannot enumerate a non-container.
+
+Error 1208
+----------
+
+   An extended error has occurred.
+
+Error 1209
+----------
+
+   The format of the specified group name is invalid.
+
+Error 1210
+----------
+
+   The format of the specified computer name is invalid.
+
+Error 1211
+----------
+
+   The format of the specified event name is invalid.
+
+Error 1212
+----------
+
+   The format of the specified domain name is invalid.
+
+Error 1213
+----------
+
+   The format of the specified service name is invalid.
+
+Error 1214
+----------
+
+   The format of the specified network name is invalid.
+
+Error 1215
+----------
+
+   The format of the specified share name is invalid.
+
+Error 1216
+----------
+
+   The format of the specified password is invalid.
+
+Error 1217
+----------
+
+   The format of the specified message name is invalid.
+
+Error 1218
+----------
+
+   The format of the specified message destination is invalid.
+
+Error 1219
+----------
+
+   The credentials supplied conflict with an existing set of credentials.
+
+Error 1220
+----------
+
+   An attempt was made to establish a session to a network server, but there are
+   already too many sessions established to that server.
+
+Error 1221
+----------
+
+   The workgroup or domain name is already in use by another computer on the
+   network.
+
+Error 1222
+----------
+
+   The network is not present or not started.
+
+Error 1223
+----------
+
+   The operation was cancelled by the user.
+
+Error 1224
+----------
+
+   The requested operation cannot be performed on a file with a user mapped
+   section open.
+
+Error 1225
+----------
+
+   The remote system refused the network connection.
+
+Error 1226
+----------
+
+   The network connection was gracefully closed.
+
+Error 1227
+----------
+
+   The network transport endpoint already has an address associated with it.
+
+Error 1228
+----------
+
+   An address has not yet been associated with the network endpoint.
+
+Error 1229
+----------
+
+   An operation was attempted on a non-existent network connection.
+
+Error 1230
+----------
+
+   An invalid operation was attempted on an active network connection.
+
+Error 1231
+----------
+
+   The remote network is not reachable by the transport.
+
+Error 1232
+----------
+
+   The remote system is not reachable by the transport.
+
+Error 1233
+----------
+
+   The remote system does not support the transport protocol.
+
+Error 1234
+----------
+
+   No service is operating at the destination network endpoint on the remote
+   system.
+
+Error 1235
+----------
+
+   The request was aborted.
+
+Error 1236
+----------
+
+   The network connection was aborted by the local system.
+
+Error 1237
+----------
+
+   The operation could not be completed. A retry should be performed.
+
+Error 1238
+----------
+
+   A connection to the server could not be made because the limit on the number
+   of concurrent connections for this account has been reached.
+
+Error 1239
+----------
+
+   Attempting to login during an unauthorized time of day for this account.
+
+Error 1240
+----------
+
+   The account is not authorized to login from this station.
+
+Error 1241
+----------
+
+   The network address could not be used for the operation requested.
+
+Error 1242
+----------
+
+   The service is already registered.
+
+Error 1243
+----------
+
+   The specified service does not exist.
+
+Error 1244
+----------
+
+   The operation being requested was not performed because the user has not been
+   authenticated.
+
+Error 1245
+----------
+
+   The operation being requested was not performed because the user has not
+   logged on to the network. The specified service does not exist.
+
+Error 1246
+----------
+
+   Return that wants caller to continue with work in progress.
+
+Error 1247
+----------
+
+   An attempt was made to perform an initialization operation when
+   initialization has already been completed.
+
+Error 1248
+----------
+
+   No more local devices.
+
+Error 1300
+----------
+
+   Not all privileges referenced are assigned to the caller.
+
+Error 1301
+----------
+
+   Some mapping between account names and security IDs was not done.
+
+Error 1302
+----------
+
+   No system quota limits are specifically set for this account.
+
+Error 1303
+----------
+
+   No encryption key is available. A well-known encryption key was returned.
+
+Error 1304
+----------
+
+   The NT password is too complex to be converted to a LAN Manager password. The
+   LAN Manager password returned is a NULL string.
+
+Error 1305
+----------
+
+   The revision level is unknown.
+
+Error 1306
+----------
+
+   Indicates two revision levels are incompatible.
+
+Error 1307
+----------
+
+   This security ID may not be assigned as the owner of this object.
+
+Error 1308
+----------
+
+   This security ID may not be assigned as the primary group of an object.
+
+Error 1309
+----------
+
+   An attempt has been made to operate on an impersonation token by a thread
+   that is not currently impersonating a client.
+
+Error 1310
+----------
+
+   The group may not be disabled.
+
+Error 1311
+----------
+
+   There are currently no logon servers available to service the logon request.
+
+Error 1312
+----------
+
+   A specified logon session does not exist. It may already have been
+   terminated.
+
+Error 1313
+----------
+
+   A specified privilege does not exist.
+
+Error 1314
+----------
+
+   A required privilege is not held by the client.
+
+Error 1315
+----------
+
+   The name provided is not a properly formed account name.
+
+Error 1316
+----------
+
+   The specified user already exists.
+
+Error 1317
+----------
+
+   The specified user does not exist.
+
+Error 1318
+----------
+
+   The specified group already exists.
+
+Error 1319
+----------
+
+   The specified group does not exist.
+
+Error 1320
+----------
+
+   Either the specified user account is already a member of the specified group,
+   or the specified group cannot be deleted because it contains a member.
+
+Error 1321
+----------
+
+   The specified user account is not a member of the specified group account.
+
+Error 1322
+----------
+
+   The last remaining administration account cannot be disabled or deleted.
+
+Error 1323
+----------
+
+   Unable to update the password. The value provided as the current password is
+   incorrect.
+
+Error 1324
+----------
+
+   Unable to update the password. The value provided for the new password
+   contains values that are not allowed in passwords.
+
+Error 1325
+----------
+
+   Unable to update the password because a password update rule has been
+   violated.
+
+Error 1326
+----------
+
+   Logon failure: unknown user name or bad password.
+
+Error 1327
+----------
+
+   Logon failure: user account restriction.
+
+Error 1328
+----------
+
+   Logon failure: account logon time restriction violation.
+
+Error 1329
+----------
+
+   Logon failure: user not allowed to log on to this computer.
+
+Error 1330
+----------
+
+   Logon failure: the specified account password has expired.
+
+Error 1331
+----------
+
+   Logon failure: account currently disabled.
+
+Error 1332
+----------
+
+   No mapping between account names and security IDs was done.
+
+Error 1333
+----------
+
+   Too many local user identifiers (LUIDs) were requested at one time.
+
+Error 1334
+----------
+
+   No more local user identifiers (LUIDs) are available.
+
+Error 1335
+----------
+
+   The subauthority part of a security ID is invalid for this particular use.
+
+Error 1336
+----------
+
+   The access control list (ACL) structure is invalid.
+
+Error 1337
+----------
+
+   The security ID structure is invalid.
+
+Error 1338
+----------
+
+   The security descriptor structure is invalid.
+
+Error 1340
+----------
+
+   The inherited access control list (ACL) or access control entry (ACE) could
+   not be built.
+
+Error 1341
+----------
+
+   The server is currently disabled.
+
+Error 1342
+----------
+
+   The server is currently enabled.
+
+Error 1343
+----------
+
+   The value provided was an invalid value for an identifier authority.
+
+Error 1344
+----------
+
+   No more memory is available for security information updates.
+
+Error 1345
+----------
+
+   The specified attributes are invalid, or incompatible with the attributes for
+   the group as a whole.
+
+Error 1346
+----------
+
+   Either a required impersonation level was not provided, or the provided
+   impersonation level is invalid.
+
+Error 1347
+----------
+
+   Cannot open an anonymous level security token.
+
+Error 1348
+----------
+
+   The validation information class requested was invalid.
+
+Error 1349
+----------
+
+   The type of the token is inappropriate for its attempted use.
+
+Error 1350
+----------
+
+   Unable to perform a security operation on an object which has no associated
+   security.
+
+Error 1351
+----------
+
+   Indicates a Windows NT Server could not be contacted or that objects within
+   the domain are protected such that necessary information could not be
+   retrieved.
+
+Error 1352
+----------
+
+   The security account manager (SAM) or local security authority (LSA) server
+   was in the wrong state to perform the security operation.
+
+Error 1353
+----------
+
+   The domain was in the wrong state to perform the security operation.
+
+Error 1354
+----------
+
+   This operation is only allowed for the Primary Domain Controller of the
+   domain.
+
+Error 1355
+----------
+
+   The specified domain did not exist.
+
+Error 1356
+----------
+
+   The specified domain already exists.
+
+Error 1357
+----------
+
+   An attempt was made to exceed the limit on the number of domains per server.
+
+Error 1358
+----------
+
+   Unable to complete the requested operation because of either a catastrophic
+   media failure or a data structure corruption on the disk.
+
+Error 1359
+----------
+
+   The security account database contains an internal inconsistency.
+
+Error 1360
+----------
+
+   Generic access types were contained in an access mask which should already be
+   mapped to non-generic types.
+
+Error 1361
+----------
+
+   A security descriptor is not in the right format (absolute or self-
+   relative).
+
+Error 1362
+----------
+
+   The requested action is restricted for use by logon processes only. The
+   calling process has not registered as a logon process.
+
+Error 1363
+----------
+
+   Cannot start a new logon session with an ID that is already in use.
+
+Error 1364
+----------
+
+   A specified authentication package is unknown.
+
+Error 1365
+----------
+
+   The logon session is not in a state that is consistent with the requested
+   operation.
+
+Error 1366
+----------
+
+   The logon session ID is already in use.
+
+Error 1367
+----------
+
+   A logon request contained an invalid logon type value.
+
+Error 1368
+----------
+
+   Unable to impersonate via a named pipe until data has been read from that
+   pipe.
+
+Error 1369
+----------
+
+   The transaction state of a Registry subtree is incompatible with the
+   requested operation.
+
+Error 1370
+----------
+
+   An internal security database corruption has been encountered.
+
+Error 1371
+----------
+
+   Cannot perform this operation on built-in accounts.
+
+Error 1372
+----------
+
+   Cannot perform this operation on this built-in special group.
+
+Error 1373
+----------
+
+   Cannot perform this operation on this built-in special user.
+
+Error 1374
+----------
+
+   The user cannot be removed from a group because the group is currently the
+   user's primary group.
+
+Error 1375
+----------
+
+   The token is already in use as a primary token.
+
+Error 1376
+----------
+
+   The specified local group does not exist.
+
+Error 1377
+----------
+
+   The specified account name is not a member of the local group.
+
+Error 1378
+----------
+
+   The specified account name is already a member of the local group.
+
+Error 1379
+----------
+
+   The specified local group already exists.
+
+Error 1380
+----------
+
+   Logon failure: the user has not been granted the requested logon type at this
+   computer.
+
+Error 1381
+----------
+
+   The maximum number of secrets that may be stored in a single system has been
+   exceeded.
+
+Error 1382
+----------
+
+   The length of a secret exceeds the maximum length allowed.
+
+Error 1383
+----------
+
+   The local security authority database contains an internal inconsistency.
+
+Error 1384
+----------
+
+   During a logon attempt, the user's security context accumulated too many
+   security IDs.
+
+Error 1385
+----------
+
+   Logon failure: the user has not been granted the requested logon type at this
+   computer.
+
+Error 1386
+----------
+
+   A cross-encrypted password is necessary to change a user password.
+
+Error 1387
+----------
+
+   A new member could not be added to a local group because the member does not
+   exist.
+
+Error 1388
+----------
+
+   A new member could not be added to a local group because the member has the
+   wrong account type.
+
+Error 1389
+----------
+
+   Too many security IDs have been specified.
+
+Error 1390
+----------
+
+   A cross-encrypted password is necessary to change this user password.
+
+Error 1391
+----------
+
+   Indicates an ACL contains no inheritable components
+
+Error 1392
+----------
+
+   The file or directory is corrupt and non-readable.
+
+Error 1393
+----------
+
+   The disk structure is corrupt and non-readable.
+
+Error 1394
+----------
+
+   There is no user session key for the specified logon session.
+
+Error 1395
+----------
+
+   The service being accessed is licensed for a particular number of
+   connections. No more connections can be made to the service at this time
+   because there are already as many connections as the service can accept.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

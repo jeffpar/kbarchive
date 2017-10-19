@@ -1,0 +1,95 @@
+DOCUMENT:Q216715  07-MAY-2001  [visualc]
+TITLE   :FIX: Bad Code Generated in ?: Operator Converting Class Types
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbCompiler kbCPPonly kbVC600bug kbVC600fix kbVS600sp2 kbVS600SP1 kbVS600s
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling source code containing the ternary operator (?:), if the compiler
+converts one of the operands from one class type to another, incorrect code may
+be generated or you might receive the following error message:
+
+   fatal error C1001: INTERNAL COMPILER ERROR (compiler file
+   'E:\8168\vc98\p2\src\P2\ehexcept.c', line 577)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+   #include <afx.h>
+   class F
+   {
+   	char m_str[50];
+   	CString cstr;
+   public:
+   	F(char *str)
+   	{
+   		strcpy(m_str, str);
+   		cstr = "CSTRING";
+   	}
+   	operator CString() 
+   	{
+   		cstr = m_str;
+   		return cstr;
+   	}
+   };
+
+   void H( const CString & state)
+   {
+   	F f("test");
+   	CString str;
+   	str = (state != "off") ? state : f;
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbCompiler kbCPPonly kbVC600bug kbVC600fix kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,48 @@
+DOCUMENT:Q150618  01-JUN-2001  [homemm]
+TITLE   :Pregnancy: Program Window Does Not Reopen To Previous Size
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you restart Microsoft Pregnancy and Child Care after resizing the program
+window, Pregnancy and Child Care returns to its original size. The program
+window does not open in its previous size.
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+Additional query words: preview multi media multimedia multi-media childcare mmtitles kbmm msnet
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q175182  04-APR-1999  [automap]
+TITLE   :Streets 98: Program Hangs When Importing Large Text Files
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets 98 
+ - Microsoft Expedia Trip Planner 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to import a very large text file to create a pushpin set,
+Microsoft Expedia Streets 98 and Microsoft Expedia Trip Planner 98 may stop
+responding (hang).
+
+CAUSE
+=====
+
+Expedia Streets 98 and Expedia Trip Planner 98 cannot import text files that
+contain more than approximately 14,000 entries.
+
+RESOLUTION
+==========
+
+To work around this problem, split the text file into smaller files that each
+contain less than approximately 14,000 entries.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Expedia Streets 98 and Expedia
+Trip Planner 98. Microsoft is researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          : kbtool kbimu kbfaq
+Technology        : kbHomeProdSearch kbExpediaSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

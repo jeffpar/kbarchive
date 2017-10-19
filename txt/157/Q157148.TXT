@@ -1,0 +1,84 @@
+DOCUMENT:Q157148  14-NOV-2000  [word97]
+TITLE   :WD97: Newsletter Wizard Address Printed in Wrong Location
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbtemplate word97 kblayout
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run the Newsletter Wizard, Word places the mailing and return address
+information in the wrong location in relation to the fold of the printed
+newsletter.
+
+WORKAROUND
+==========
+
+To work around this behavior, run the wizard, and then move the address
+information such that it prints above the fold when you fold the printed
+document.
+
+NOTE: The address information is placed inside a table. To move the address
+information, select the table and then cut and paste the table to the
+appropriate location above the fold of the printed newsletter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The Newsletter Wizard allows you to add mailing address information to the
+newsletter. This is a feature that is not available in earlier versions of the
+Newsletter Wizard.
+
+The Newsletter Wizard places the mailing address information on the last page of
+the document. When you fold the printed document, the address is located below
+the fold.
+
+According to U.S. Postal requirements, the bound edge must be the bottom edge of
+the mailing piece, parallel to the lines of the delivery address. The top edge
+of the mailing piece must be closed.
+
+REFERENCES
+==========
+
+United States Postal Service, "Publication 25, Designing Business Letter Mail,"
+pages 18-20
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate word97 kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

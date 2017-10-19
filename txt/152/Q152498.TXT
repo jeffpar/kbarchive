@@ -1,0 +1,77 @@
+DOCUMENT:Q152498  21-JUL-1999  [exchange]
+TITLE   :XADM: Unable to Enable Advanced Security on User Account
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to enable Advanced Security on a user mailbox within the Microsoft
+Exchange Administrator program, you may get the following error message:
+
+   The advanced security operation failed due to an unknown cause. Restart the
+   Administrator program or the Key Management server, or both, and then try
+   again.
+
+   Microsoft Exchange Administrator
+   ID no: c1031252
+
+CAUSE
+=====
+
+This problem can occur if a comma was used in the directory name for the user
+mailbox object.
+
+WORKAROUND
+==========
+
+To check, run the Microsoft Exchange Administrator program and check the
+properties for the user's mailbox. Then click the Advanced tab and look the
+Directory Name.
+
+Currently there is no way to modify the Exchange X.500 database, so the user
+account will need to be deleted and recreated to fix the problem. Move the
+user's mail to a .PST file. Delete and recreated the user's mailbox, then import
+the .PST file back onto the server store.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in Microsoft Exchange Server version
+5.0.
+
+Additional query words: km digital encryption signed sealed
+
+======================================================================
+Keywords          : kbenv exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

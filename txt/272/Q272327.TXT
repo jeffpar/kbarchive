@@ -1,0 +1,74 @@
+DOCUMENT:Q272327  08-AUG-2001  [winnt]
+TITLE   :Cluster Admin Stops Responding When Renaming File Share Name
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:w2000mscs kbClustering
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you rename multiple-clustered resource share names using the Cluster.exe
+tool from the command console, the following error message may be displayed:
+
+   System error 87 has occurred.
+   The parameter is incorrect.
+
+Also, the Cluster Administrator may stop responding while it attempts to
+enumerate the clustered resources.
+
+CAUSE
+=====
+
+This behavior can occur if the rename commands occur too rapidly; for example,
+if they are executed in a script.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use one of the following methods:
+
+ - Rewrite the script to include an adequate pause between each rename command.
+
+ - Rewrite the script to create new file share resources instead of renaming
+   existing resource share names; then use another script to remove the unwanted
+   share resources.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: MSCS hang cluster administrator
+
+======================================================================
+Keywords          : w2000mscs kbClustering 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

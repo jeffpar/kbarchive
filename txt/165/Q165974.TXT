@@ -1,0 +1,72 @@
+DOCUMENT:Q165974  08-AUG-2001  [winnt]
+TITLE   :PRB: Cannot Install CSNW with "Attended=Yes" in Unattend.txt Fil
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot install Client Services for NetWare (CSNW) during an unattended Setup
+with "Attended=Yes" in the [Network] section of the Unattend.txt file.
+
+CAUSE
+=====
+
+Installation of CSNW during an unattended Setup requires the InstallServices
+entry in the [Network] section of the Unattend.txt file. When you add the
+"Attended=Yes" line to install network components interactively, Setup ignores
+all entries in the [Network] section. The Setup Wizard for installing the
+network components that is started at this time does not prompt you to install
+additional services.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here In the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Windows NT Workstation 4.0 unattended Setup runs a Typical Setup. Network
+options are available only during a Custom Setup. At this time there are no
+settings to force Setup to perform a Custom Setup.
+
+For additional information, see the following article in the Microsoft Knowledge
+Base:
+
+   Q155197 Unattended Setup Parameters for Unattend.txt File
+
+Additional query words: Unattended Setup Install
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

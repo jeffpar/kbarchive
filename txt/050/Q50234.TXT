@@ -1,0 +1,97 @@
+DOCUMENT:Q50234  22-JUL-2001  [visualc]
+TITLE   :Using Function Name Without "()" Produces No Code
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,4.0,6.0,6.0a,6.0ax
+OPER/SYS:
+KEYWORDS:kbCompiler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+    - Microsoft C for OS/2, versions 6.0, 6.0a 
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++, versions 1.0, 1.5 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article is included in the documentation starting with
+Visual C++ 5.0. Look there for future revisions.
+
+
+When a function name declared in your program is used without parentheses, the
+compiler does not produce any code. The compiler may not produce error messages
+or warnings as long as the function has been prototyped. This occurs regardless
+of whether or not the function takes parameters because the compiler calculates
+the function address; however, because the function call operator "()" is not
+present, no call is made. This result is similar to the following:
+
+      int a;
+
+      a;      /* no code generated here either */ 
+
+In Microsoft C versions 6.0, 6.0a, and 6.0ax, the following warning is generated
+on warning level 4:
+
+   warning C4205: statement has no effect
+
+In Microsoft C/C++ version 7.0, 16-bit Visual C++ version 1.XX, and 32-bit Visual
+C++ version 1.0, using warning level 4 generates the following:
+
+   warning C4705: statement has no effect with /W4
+
+The warning is only generated when compiling with the optimizing compiler and
+does not occur if the fast (/f) compiler is used.
+
+In Microsoft 32-bit Visual C++ versions 2.0 and above, even using warning level 4
+generates no diagnostic output. No warning issued, no code is produced.
+
+MORE INFORMATION
+================
+
+The sample code below compiles and links correctly without errors but produces
+no code in reference to myfunc(). For this to work correctly, add the function
+call operator "()".
+
+Sample Code
+-----------
+
+   /* Compiler Options needed: /W4     (C6.0, C6.0a, C6.0ax and 8.00 for
+                                        Visual C++ for Windows NT)
+                               /f- /W4 (7.0, and 8.0 for Visual C++
+                                        for Windows)
+   */ 
+
+   void funcname(int a, int b);
+   void main(void)
+   {
+        funcname;   /* Using myfunc without function call operator () */ 
+   }
+
+Additional query words: 1.00 1.50 2.00 4.00 6.00 6.00a 6.00ax 7.00 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,2.0,4.0,6.0,6.0a,6.0ax
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

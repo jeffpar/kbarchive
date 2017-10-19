@@ -1,0 +1,263 @@
+DOCUMENT:Q214629  13-JUN-2001  [sna]
+TITLE   :How To Retrieve 3270 LU Information For SNA Server
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+OPER/SYS:
+KEYWORDS:kbfile kbprogramming kbsamplekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server currently does not expose any APIs directly to gather 3270 status
+information. However, the APPC DISPLAY management verb does allow some
+information to be gathered on the status of the LUs. The following code is a
+continuation of Q214572 - "How To Retrieve Link Information For SNA Server
+Programmatically" that can be added to the program in that article to dump out
+to a console window the status of all 3270 LUs in a domain. This can possibly be
+modified to monitor for LU status changes in a monitoring application to report
+when some error conditions occur.
+
+MORE INFORMATION
+================
+
+Using the code from Q214572 as a starting point, add the following three
+functions to the program.
+
+   /*****************************************************************************/ 
+   /* Get3270Info - calls the Display Management verb to get lu_0_3_info for a  */ 
+   /* particular server/node in the SNA Domain.                                 */ 
+   /*****************************************************************************/ 
+   void Get3270Info(dispvcb_t *dispvcb, dbufstruct *DataBuffer, char boxname[])
+   {
+   	dispvcb->display.opcode = AP_DISPLAY;
+   	dispvcb->display.init_sect_len = (unsigned long)&(((DISPLAY *)0)->sna_global_info_ptr);
+   	dispvcb->display.num_sections = 0x10;
+   	dispvcb->display.buffer_len = sizeof(DataBuffer->dbuf);
+   	dispvcb->display.buffer_ptr = DataBuffer->dbuf;
+   	strcpy( (char*)DataBuffer->dbuf, "CSEXTNID" );
+   	memcpy( DataBuffer->dbuf + 8, boxname,32 );
+   	dispvcb->display.lu_0_3_info = AP_YES;
+   	APPC( (long)dispvcb );
+   }
+
+   /*****************************************************************************/ 
+   /* Enumerate3270Data - This function goes through the LU_0_3_INFO_SECT and   */ 
+   /* prints out the information returned for each 3270 LU found.               */ 
+   /*****************************************************************************/ 
+   void Enumerate3270Data(dispvcb_t *dispvcb)
+   {
+   	LU_0_3_INFO_SECT *lu_0_3_info;
+   	LU_0_3_OVERLAY *lu_0_3_overlay;
+   	unsigned short i;
+
+   	char buffer1[20];
+
+   	lu_0_3_info = dispvcb->display.lu_0_3_info_ptr;
+
+   	lu_0_3_overlay = (LU_0_3_OVERLAY *)((char *)lu_0_3_info + lu_0_3_info->lu_0_3_init_sect_len);
+   	if (lu_0_3_info->num_lu_0_3s == 0)
+   	{
+   		printf("No 3270 type LUs found.\n");
+   	}
+   	else
+   	{
+   		for (i = 0; i < lu_0_3_info->num_lu_0_3s; i++)
+   		{
+   			SetupString( (char*)buffer1, (char*)lu_0_3_overlay->lu_long_name,8);
+   			printf("\tLU Name: %8.8s\n",buffer1);
+   			
+   			switch (lu_0_3_overlay->access_type)
+   			{
+   			case AP_3270_EMULATION:
+   					printf("\tAccess Type = 3270 Emulation\n");
+   					break;
+   			case AP_LUA:
+   					printf("\tAccess Type = LUA\n");
+   					break;
+   			default:
+   					printf("\tAccess Type = UNKNOWN\n");
+   					break;
+   			}
+
+   			switch (lu_0_3_overlay->lu_type)
+   			{
+   			case AP_LU0:
+   				printf("\tLU type = LU0\n");
+   				break;
+   			case AP_LU1:
+   				printf("\tLU type = LU1\n");
+   				break;
+   			case AP_LU2:
+   				printf("\tLU type = LU2\n");
+   				break;
+   			case AP_LU3:
+   				printf("\tLU type = LU3\n");
+   				break;
+   			default:
+   				printf("\tLU type = UNKNOWN\n");
+   				break;
+   			}
+   			
+   			switch (lu_0_3_overlay->sscp_lu_sess_state)
+   			{
+   			case AP_DEACTIVATED:
+   				printf("\tSSCP-LU Session State = Deactivated\n");
+   				break;
+   			case AP_ACTIVATED:
+   				printf("\tSSCP-LU Session State = Activated\n");
+   				break;
+   			case AP_ACTIVATING:
+   				printf("\tSSCP-LU Session State = Activating\n");
+   				break;
+   			case AP_DEACTIVATING:
+   				printf("\tSSCP-LU Session State = Deactivating\n");
+   				break;
+   			default:
+   				printf("\tSSCP-LU Session State = UNKNOWN\n");
+   				break;
+   			}
+
+   			switch (lu_0_3_overlay->lu_lu_sess_state)
+   			{
+   			case AP_NOT_BOUND:
+   				printf("\tLU-LU Session State = Not Bound\n");
+   				break;
+   			case AP_BOUND:
+   				printf("\tLU-LU Session State = Bound\n");
+   				break;
+   			case AP_BINDING:
+   				printf("\tLU-LU Session State = Binding\n");
+   				break;
+   			case AP_UNBINDING:
+   				printf("\tLU-LU Session State = Unbound\n");
+   				break;
+   			default:
+   				printf("\tLU-LU Session State = UNKNOWN\n");
+   				break;
+   			}
+
+   			lu_0_3_overlay = (LU_0_3_OVERLAY *)((char *)lu_0_3_overlay + lu_0_3_overlay->lu_0_3_entry_len);
+   			printf("\n"); //empty line
+   		}
+   	}
+   }
+
+   /*****************************************************************************/ 
+   /* Do3270LU - This function does most of the work. It loops through each     */ 
+   /* node, calling Get3270Info and Enumerate3270Data to display the status of  */ 
+   /* all available 3270 LUs in the domain.                                        */ 
+   /*****************************************************************************/ 
+   bool Do3270LU(namestruct *Names)
+   {
+   	dbufstruct DataBuffer;
+   	dispvcb_t dispvcb;
+   	char *dispvcbptr;
+   	int loop;
+
+   	dispvcbptr=(char *)&dispvcb;
+   	for (loop = 0; loop < Names->nodenumber; loop++)
+   	{
+   		CLEARDISPVCB;
+   		ZERODATABUFFER;
+   		Get3270Info(&dispvcb, &DataBuffer, Names->boxname[loop]); //lu_0_3_info
+   		if( dispvcb.display.primary_rc != AP_OK )
+   		{
+   			DisplayVerbFailed(dispvcb.display.primary_rc, dispvcb.display.secondary_rc);
+   			DSPAppcError(&dispvcb);
+   			return false;
+   		}
+   		else
+   		{
+   			printf("\nBoxName:Server: %.8s:%s\n",Names->nodename[loop],Names->shortname[loop]);
+   			Enumerate3270Data(&dispvcb);
+   		} //end else
+   	} //end for loop
+   	return true;
+   }
+
+Next, change Main so that instead of calling DoLinkInfo(&gNames), you call
+GetNodes(&gNames). Recompile the application and run.
+
+The output will be for EVERY 3270 LU on the domain, broken up by server or node.
+There is currently no way to pull this information for an individual link.
+However, the application can be modified to only query against one SNA Server or
+node. The following output is from an SNA Server with three nodes, with 3270 LUs
+configured on two of the nodes.
+
+BoxName:Server: SNASERVR:COMPUTER.01
+	LU Name:     PRT3
+	Access Type = 3270 Emulation
+	LU type = LU1
+	SSCP-LU Session State = Deactivated
+	LU-LU Session State = Not Bound
+
+	LU Name:     PRT7
+	Access Type = 3270 Emulation
+	LU type = LU1
+	SSCP-LU Session State = Activated
+	LU-LU Session State = Not Bound
+
+BoxName:Server: SNASRV02:COMPUTER.02
+	LU Name:   DSP002
+	Access Type = 3270 Emulation
+	LU type = LU2
+	SSCP-LU Session State = Activated
+	LU-LU Session State = Not Bound
+
+	LU Name:   DSP003
+	Access Type = 3270 Emulation
+	LU type = LU2
+	SSCP-LU Session State = Activated
+	LU-LU Session State = Bound
+
+	LU Name:   DSP004
+	Access Type = 3270 Emulation
+	LU type = LU2
+	SSCP-LU Session State = Deactivated
+	LU-LU Session State = Not Bound
+
+BoxName:Server: SNASRV03:COMPUTER.03
+No 3270 type LUs found.
+Completed
+
+In the output above, for PRT3 is a printer LU that is not activated. PRT7 is an
+active print LU that is not currently in session. DSP002 is a 3270 emulator
+session where the user has started the session, but is at a SSCP screen. DSP003
+is a session where the user is logged in. DSP004 is a 3270 LU that is not
+active.
+
+For information on how to retrieve Link information, see Q214572. For information
+on how to use the NLS API to do EBCDIC - ASCII conversion see Q214649. For
+additional information, please see the SNA SDK documentation that is included
+with SNA Server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbprogramming kbsample kbfaq
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

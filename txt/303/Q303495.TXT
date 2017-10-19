@@ -1,0 +1,181 @@
+DOCUMENT:Q303495  07-MAY-2002  [homegame]
+TITLE   :Train Simulator: Error Message When Winter or Snow in Activity
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Train Simulator, and choose an activity that contains
+snow or if you change the weather in your activity to snow then you may receive
+one of the following error messages when starting the activity or when the
+activity displays snow:
+
+   AppName: Train.exe
+   AppVer: 1.16.5.912
+   ModName: D3Dim700.dll
+   ModVer: 4.8.0.400
+   Offset: 00089ce4
+
+   AppName: Train.exe
+   AppVer: 1.16.5.912
+   ModName: D3Dim700.dll
+   ModVer: 5.0.2180.1 Offset: 0004DC50
+
+   App Name: Train.exe
+   App Ver: 1.16.5.912
+   Mod Name: D3Dim700.dll
+   Mod Ver: 4.8.1.881
+   OffSet: 0008E2C6
+
+CAUSE
+=====
+
+This behavior can occur if there are issues with your computer's video card.
+This behavior has been known to occur with the following video chip sets:
+
+ - Intel i740
+
+ - Intel 810 (82810e)
+
+ - ATI Rage Fury Maxx
+
+ - Elsa Victory II
+
+ - SiS 530/630/730
+
+This behavior can also occur if you are using one of the Marias Pass activities
+that features snow -- for example, the "Grain Train Through the Night" scenario.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Method 1: Update Video Drivers
+------------------------------
+
+For information about how to contact your video card manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+To identify the manufacturer and model of your video adapter, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. If you are using Microsoft Windows 95, Microsoft Windows 98, or Microsoft
+   Windows Millennium Edition (Me), click the Device Manager tab.
+
+   -or-
+
+   If you are using Microsoft Windows 2000, click Device Manager on the Hardware
+   tab.
+
+4. Click the plus sign (+) next to "Display adapters" to expand the branch.
+
+5. Under the "Display adapters" branch, note the manufacturer and the model of
+   your video adapter, and then click OK.
+
+6. Close all of the open windows on the desktop.
+
+After updating your video card drivers, follow these steps to refresh the video
+settings in Train Simulator:
+
+1. Quit Train Simulator.
+
+2. Click Start, point to Programs, point to Microsoft Games, point to Train
+   Simulator, and then click Train Simulator Troubleshooter.
+
+3. Click Change Video Driver.
+
+4. Quit Train Simulator Troubleshooter.
+
+If this issue continues to occur, proceed to the next method.
+
+Method 2: Install Update
+------------------------
+
+An update has been created to resolve some compatibility problems with several
+video cards. To download and install the update, browse to the following
+Microsoft Web site:
+
+   http://www.microsoft.com/games/trainsim
+
+If this issue continues to occur, proceed to the next method.
+
+Method 3 Disable Snow
+---------------------
+
+You may be able to work around this issue by using the disable-snow option in
+Train Simulator Troubleshooter. To do this, follow these steps:
+
+1. Quit Train Simulator.
+
+2. Click Start, point to Programs, point to Microsoft Games, point to Train
+   Simulator, and then click Train Simulator Troubleshooter.
+
+3. Click Troubleshooting.
+
+4. Click to select the "Snow causes game to crash or does not display" check
+   box.
+
+5. Quit Train Simulator Troubleshooter.
+
+MORE INFORMATION
+================
+
+For additional information about the Error Reporting tool in Train Simulator,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+   Q300963 Train Simulator: Description and Availability of Error Reporting Tool
+
+   Q299760 Train Simulator: How to Use the Troubleshooter
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: msgame trainsim
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbTrainSim
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

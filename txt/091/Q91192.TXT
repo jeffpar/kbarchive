@@ -1,0 +1,63 @@
+DOCUMENT:Q91192  07-DEC-1999  [win95x]
+TITLE   :HP IIIsi Printer Setup Creates GP Fault on 286 with Low Memory
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Choosing the Setup button in the Printers dialog box may generate a general
+protection (GP) fault under the following circumstances:
+
+ - You are using a 80286 computer.
+
+ - You are using the Hewlett-Packard (HP) IIIsi printer driver HPPCL5.DRV dated
+   10/08/92 and found on the Windows Driver Library.
+
+ - Your computer has low system memory.
+
+WORKAROUND
+==========
+
+To configure this printer driver, close all Windows applications, restart
+Windows, then try choosing the Setup button again.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+
+Additional query words: gpf 3.10 HPIIIsi HPIII III
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

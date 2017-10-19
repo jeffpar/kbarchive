@@ -1,0 +1,81 @@
+DOCUMENT:Q266620  09-NOV-2001  [homegame]
+TITLE   :Age of Empires II: The Age of Kings: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbref kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the minimum system requirements needed to play
+Microsoft Age of Empires II: The Age of Kings.
+
+MORE INFORMATION
+================
+
+To play Microsoft Age of Empires II: The Age of Kings, you need:
+
+ - Multimedia PC with Pentium 166 MHZ or higher processor
+
+ - Microsoft Windows 95 or Windows 98 operating system, or Windows NT
+   Workstation operating system version 4.0 with Service Pack 5 or later
+
+ - 32 megabytes (MB) of RAM
+
+ - 200 MB of available hard disk space (an additional 100 MB of available hard
+   disk space is required for the swap file)
+
+ - Super VGA monitor capable of displaying 16-bit color at a screen resolution
+   of 800 x 600 pixels
+
+ - Local bus video adapter with 2 MB of video memory capable of displaying
+   16-bit color at a screen resolution of 800 x 600 pixels
+
+ - Quad-speed or faster CD-ROM drive
+
+ - Microsoft Mouse or compatible pointing device
+
+ - Sound card with speakers or headphones recommended
+
+Requirements for multiplayer play:
+
+ - 28.8 Kbps modem (or higher recommended) for Internet or head-to-head play
+
+ - Internet access required for Internet play. May require payment of a separate
+   fee to an Internet service provider (ISP). Connect time charges may apply.
+
+ - To play on Zone.com, you need to have one of the following Web browsers:
+   Microsoft Internet Explorer 3.02 or later or Netscape Communicator 4.0 or
+   later
+
+Additional query words: 2.00 msgame aoe2 aoeii aok requires sysreqs
+
+======================================================================
+Keywords          : kbref kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOE2Kings
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

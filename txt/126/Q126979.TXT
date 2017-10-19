@@ -1,0 +1,65 @@
+DOCUMENT:Q126979  08-AUG-2001  [winnt]
+TITLE   :Group Does Not Migrate from NetWare Server to Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetworkkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Migration Tool for NetWare (Nwconv.exe) to migrate users and
+groups from a Novell NetWare server to Windows NT, the Migration Tool for
+NetWare may fail to migrate some groups. The Error.log file reports the
+following error:
+
+   [Adding Users to Groups]
+   Could not enumerate users for Group: <Group_Name>
+
+CAUSE
+=====
+
+This problem can occur if the group account referenced by the error in the
+Error.log file has the same name as a user account on the NetWare server.
+
+RESOLUTION
+==========
+
+To work around this problem, rename the group account or the user account on the
+NetWare server, and then try the group migration again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.5, 3.51,
+and 4.0.
+
+Additional query words: nwconv migrate convert
+======================================================================
+Keywords          : kbnetwork kbfaq
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

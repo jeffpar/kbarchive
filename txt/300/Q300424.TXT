@@ -1,0 +1,106 @@
+DOCUMENT:Q300424  15-AUG-2002  [iis]
+TITLE   :Access Violation in Inetinfo.exe When an SMTP Message Received
+PRODUCT :Internet Information Server
+PROD/VER::2000,2000 SP1,2000 SP2,5.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbSysAdmin kbWin2000PreSP3Fix kbWin2000sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Professional 
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Server 
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Advanced Server 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you receive an SMTP e-mail message, you may receive an access violation
+error message in the Inetinfo.exe process. With correct symbols (or in a
+debugger), you find the following stack:
+
+   00 0fdcfe2c 6e5a9a84 7fae006c 00000000 7fae0044
+   IisRTL!CLockedDoubleList__InsertHead+0x16
+   01 0fdcfe44 6c95a520 6c952d68 6c95a686 6c95a690
+   IisRTL!CLKRHashTable__CLKRHashTable+0x4c
+   02 0fdcfe70 6c9595df 7fae0000 6c958b77 7e190000
+   mailmsg!CRecipientsHashTable__CRecipientsHashTable+0x31
+   03 0fdcfe78 6c958b77 7e190000 6c958025 7fb3017c
+   mailmsg!CRecipientsHash__CRecipientsHash+0xb
+   04 0fdcfe80 6c958025 7fb3017c 7e190000 7fb3003c
+   mailmsg!CMailMsgRecipientsAdd__CMailMsgRecipientsAdd+0xb
+   05 0fdcfe90 6783a1d4 7fb3003c 7e190a00 0000001e
+   mailmsg!CMailMsgRecipients__AllocNewList+0x2d
+   06 0fdcfec4 6783243b 00000000 0000001e 00000004
+   SMTPSVC!SMTP_CONNECTION__GlueDispatch+0x2e2
+   07 0fdcfefc 67831ef9 00000020 7e190000 701214a1
+   SMTPSVC!SMTP_CONNECTION__ProcessInputBuffer+0x2e5
+   08 0fdcff18 67832756 00000020 00000000 7e190074
+   SMTPSVC!SMTP_CONNECTION__ProcessReadIO+0x7a
+   09 0fdcff3c 6782fad2 00000020 00000000 7e190074
+   SMTPSVC!SMTP_CONNECTION__ProcessClient+0x14d
+   0a 0fdcff4c 6d70142e 7e190000 00000020 00000000 SMTPSVC!SmtpCompletion+0x15
+   0b 0fadbe78 00000000 00000000 00000000 00000000 ISATQ!AtqpProcessContext+0x262
+
+CAUSE
+=====
+
+This problem can be caused by freeing virtual memory and unloading the DLL while
+there were still outstanding references to objects in use.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Internet Information
+Services 5.0. This problem was first corrected in Windows 2000 Service Pack 3.
+
+
+MORE INFORMATION
+================
+
+For additional information about how to install Windows 2000 and Windows 2000
+hotfixes at the same time, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+
+The code in the hotfix that is described in this article now checks to make sure
+there are no outstanding objects before the DLL is unloaded.
+
+Additional query words: kbMgmtAdmin
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbSysAdmin kbWin2000PreSP3Fix kbWin2000sp3fix 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbiisSearch kbiis500 kbWinAdvServSearch kbWin2000AdvServSP2 kbWin2000AdvServSP1 kbWin2000ProSP2 kbWin2000ProSP1 kbwin2000ServSP1 kbwin2000ServSP2
+Version           : :2000,2000 SP1,2000 SP2,5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

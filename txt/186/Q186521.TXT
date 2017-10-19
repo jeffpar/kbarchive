@@ -1,0 +1,88 @@
+DOCUMENT:Q186521  11-DEC-2001  [winnt]
+TITLE   :Why Terminal Server Users Should Have New Home Directories
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The default home directory location is the user's profile. This may not be
+efficient if the user stores a large amount of data in the home directory.
+
+MORE INFORMATION
+================
+
+By default, all users have a home directory defined for them. The default
+location is the user's profile, located under %systemroot%\profiles\%username%.
+The home directory is called "Windows," and contains a necessary subdirectory
+called "System." These are critical directories. The system writes user-specific
+application INI files to the user's Windows directory, and by default, refers
+any application requesting the system Windows directory to the user's Windows
+directory.
+
+Users typically make use of a home directory to save files.
+
+If users do not save files in their home directories, then the default location
+of the user's profile may not be an issue. However, if the user stores files in
+the Windows home director, the user needs a new home directory path outside of
+the user profile.
+
+When a user logs on, the entire profile is parsed and loaded, including any files
+in the default home directory. If you use roaming profiles, for example, the
+profile and the entire set of files in the home directory will be copied to the
+profile cache (the user's profile under %SystemRoot%\Profiles\%UserName%) at
+every logon attempt. This can take considerable time and resources, especially
+if the roaming profile is stored across the network.
+
+For these reasons, it is a good idea to specify a new location for home
+directories in User Manager for each user. For example, create a directory on
+the computer running Terminal Server called HOMEDIRS, and give the group called
+"Everyone," Change permissions. Then you can specify the home directory location
+as C:\Homedirs\%UserName% in User Manager. The system will automatically create
+the username subdirectory and give it appropriate permissions (Administrators
+receive Special Access permission with directory-level access only, and the
+specific users receive Full Control). The default permissions allow
+Administrators to copy files into the home directory, but not to read or delete
+files there.
+
+The Windows and Windows\System directories will also be automatically created in
+the user's home directory. Administrators will be given Full Control of these
+directories (and MUST have full control).
+
+After the home directory is created, copy any files in the existing home
+directory under the user's profile to the new home directory (make sure you
+check the Windows and Windows\System subdirectories for any files). You can then
+delete the old home directory.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

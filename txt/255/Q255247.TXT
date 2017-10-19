@@ -1,0 +1,61 @@
+DOCUMENT:Q255247  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Profile Path and Home Directory Missing
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When your network is using Terminal Server, some user accounts may randomly lose
+their Terminal Server Profile Path, their Terminal Server Home Directory
+location, or both.
+
+CAUSE
+=====
+
+This behavior can occur when there are Microsoft Windows NT Server 3.51-based
+computers on your network and you use the Windows NT 3.51 version of User
+Manager for Domains to edit user account information. Using this version to make
+changes to a user account overwrites the Terminal Server Profile Path and
+Terminal Server Home Directory location for that user.
+
+RESOLUTION
+==========
+
+To work around this behavior, do not use the Windows NT 3.51 version of User
+Manager for Domains to edit any user account information or to administer
+Terminal Server user accounts. Use only the Terminal Server version of User
+Manager for Domains.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

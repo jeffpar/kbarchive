@@ -1,0 +1,57 @@
+DOCUMENT:Q94179  15-NOV-1999  [pcmail]
+TITLE   :PC WFW: Description of Extensions for Windows for Workgroups
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail and Schedule+ Extensions for Windows for Workgroups provides
+enhanced connectivity and advanced administrative features for a Windows for
+Workgroups postoffice. It allows you to extend the mail and scheduling
+functionality in three ways:
+
+ - It allows multiple postoffices to be connected together.
+
+ - It connects to other mail and scheduling postoffices.
+
+ - It provides remote dial-in support for Mail.
+
+Extensions upgrades the Windows for Workgroups postoffice to version 3.0 of
+Microsoft Mail for PC Networks, allowing Workgroups Mail to do all that the
+retail Mail for Windows package can accomplish. The Extensions for Windows for
+Workgroups product number is 068-499V300 and can be ordered through Microsoft
+Customer Service at (800) 426-9400.
+
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3 kbMailScheduleX300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

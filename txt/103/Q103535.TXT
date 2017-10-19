@@ -1,0 +1,74 @@
+DOCUMENT:Q103535  18-NOV-1999  [msdos]
+TITLE   :Cannot Manually Mount Fragmented DoubleSpace-Compressed Drive
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SYMPTOMS
+========
+
+If DoubleSpace cannot mount a compressed volume file (CVF) at startup because
+the CVF is too fragmented, DoubleSpace increases the MaxFileFragments setting in
+the DBLSPACE.INI file and restarts your computer.
+
+However, when you try to manually mount a DoubleSpace-compressed drive (from the
+command line or using the DoubleSpace maintenance program), DoubleSpace does not
+mount the CVF if it is too fragmented.
+
+RESOLUTION
+==========
+
+To work around this situation, use the DBLSPACE /MAXFILEFRAGMENTS command to
+increase the MaxFileFragments setting in your DBLSPACE.INI file. To do this:
+
+1. Use the TYPE command to view the current DBLSPACE.INI settings. For example:
+
+   type h:\dblspace.ini
+
+   NOTE: The DBLSPACE.INI file is hidden in the root directory of the host drive.
+   To find the host drive for your DoubleSpace-compressed drive, type "dblspace
+   /list" (without the quotation marks) at the MS-DOS command prompt and then
+   press ENTER.
+
+2. Increase the MaxFileFragments setting by at least 1000. For example, if the
+   current setting is 1000, type the following at the MS-DOS command prompt, and
+   then press ENTER:
+
+   " dblspace /maxfilefragments=2000" (without the quotation marks)
+
+3. Press CTRL+ALT+DEL to restart your computer.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,51 @@
+DOCUMENT:Q302554  30-JUL-2001  [msnetwork]
+TITLE   :General Information About Favorites
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+You would like to know how many Favorites MSN Companion allows per user, and
+also how many Thumbnails (a small screenshot of the Web page you selected as a
+Favorite) MSN Companion allows.
+
+MORE INFORMATION
+================
+
+Each MSN Companion can have up to nine users, and each user can have up to 50
+favorites.
+
+Each MSN Companion can have a total of 40 Thumbnails. The 40 are assigned the
+following way:
+
+ - The first 40 favorites are represented by a corresponding Thumbnail,
+   regardless of which user selects the Favorites.
+
+ - If the you delete a Favorite that has a Thumbnail, the next Favorite you
+   choose will get a Thumbnail.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

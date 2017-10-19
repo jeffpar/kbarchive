@@ -1,0 +1,61 @@
+DOCUMENT:Q101750  07-NOV-1999  [pcmail]
+TITLE   :PC Ext: Overlay Files and How They Work
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The External Mail program (EXTERNAL.EXE) included with version 3.2 of Microsoft
+Mail for PC Networks introduces overlay files to control different forms of
+communication. These files are loaded into extended memory and introduce the
+need for EXTERNAL.EXE to be stored on the local computer.
+
+There are three overlay files, which provide the following functions:
+
+ - The AYSNC.OVL file controls asynchronous communication.
+
+ - The X25EICON.OVL file controls communication with the Eicon X.25 card.
+
+ - The X25ATLAN.OVL file controls communication with the Atlantis X.25 card.
+
+The External Mail program must load one of these overlay files because these
+files contain shared code for the Mailer and Dispatch processes to distribute
+messages on the network.
+
+By loading this part of the process into extended memory, more postoffices can be
+controlled by the External Mail program, thus getting around the memory
+constraints of version 3.0 of the External Mail program.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,257 @@
+DOCUMENT:Q257513  07-MAY-2002  [homegame]
+TITLE   :Combat FS: Rudder Control Does Not Function Properly
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the rudder control on your game controller in Microsoft Combat
+Flight Simulator, it may not function properly.
+
+This behavior can occur even if the rudder control functions properly when you
+calibrate and test the game controller in the Game Controllers tool in Control
+Panel.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Disable Auto-Coordination
+-------------------------
+
+The Auto-Coordination feature in Combat Flight Simulator disables the rudder
+control. If the game does not respond when you use the rudder control on your
+game controller, Auto-Coordination may be enabled.
+
+To disable Auto-Coordination:
+
+1. Start a new flight in Combat Flight Simulator.
+
+2. On the Options menu, click Settings.
+
+3. Under Controls, click to clear the "Enable auto rudder" check box.
+
+4. Click OK.
+
+If the issue continues to occur, proceed to the next method.
+
+Reset the Default Game Controller Actions
+-----------------------------------------
+
+To reset the default actions assigned to the game controller:
+
+1. Start a new flight in Combat Flight Simulator or Combat Flight Simulator 2.
+
+2. On the Options menu, click Settings.
+
+3. Under Controls, click Customize Controls or Customize Assignments.
+
+4. Click the Assignments or the Joystick Axes tab.
+
+5. Click any action in the Axis or the Device column, and then click Reset
+   Defaults.
+
+6. When you are prompted to reset your device assignments, click Yes.
+
+7. Click OK.
+
+8. To make sure that the default actions are selected for your 4-axis game
+   controller, verify that the Action settings for each Device match the
+   settings that are listed in the following table.
+
+   
+   +---------------------------------------+
+   | Action        | Device                | 
+   +---------------------------------------+
+   | Ailerons axis | Axis 01 or X          | 
+   +---------------------------------------+
+   | Elevator axis | Axis 02 or Y          | 
+   +---------------------------------------+
+   | Rudder axis   | Axis 04 or Z rotation | 
+   +---------------------------------------+
+   | Throttle axis | Axis 03 or slider     | 
+   +---------------------------------------+
+
+If the default actions are not selected, assign the default actions manually:
+
+1. Repeat steps 1 through 4 in the above procedure.
+
+2. In the Axis or the Device column, click an action that you want to assign to
+   a button or an axis on the game controller, and then click Assign or "Change
+   assignments".
+
+3. On the game controller, press the button or move the axis that you want to
+   use for the selected action.
+
+   If you receive a warning message that a different action is already assigned
+   to the game controller button or axis, click Clear, and then click Assign or
+   Change assignment to assign the action to a different button or axis.
+
+   NOTE: When you click Assign or "Change assignment", you must press the button
+   or move the axis that you want to use for the selected action within five
+   seconds.
+
+4. When you are finished manually assigning actions to the buttons and axes on
+   the game controller, click OK.
+
+If the issue continues to occur, proceed to the next method.
+
+Calibrate the Game Controller in Combat Flight Simulator
+--------------------------------------------------------
+
+NOTE: Digital game controllers are calibrated automatically by the game
+controller software. This method applies to analog game controllers only.
+
+To calibrate the game controller in Combat Flight Simulator or Combat Flight
+Simulator 2:
+
+1. Start a new flight in Combat Flight Simulator or Combat Flight Simulator 2.
+
+2. On the Options menu, point to Settings, and then click Game Controllers or
+   "Calibrate joystick".
+
+   NOTE: If the option to calibrate the game controller is not available in the
+   Game Controllers dialog box, then the game controller may be a digital device
+   that is calibrated automatically by the game controller software.
+
+3. Follow the instructions on the screen to calibrate the game controller.
+
+4. Click OK until you return to the Settings dialog box, and then click OK
+   again.
+
+If the issue continues to occur, proceed to the next method.
+
+Disable Sound in Combat Flight Simulator
+----------------------------------------
+
+To determine if there is a problem with your sound card or the driver for your
+sound card, disable sound in Combat Flight Simulator. To do so, press the Q
+key.
+
+If the issue is resolved when you disable sound in the game, contact your sound
+card manufacturer to inquire about how to obtain and install an updated driver
+for your sound card. For information about how to contact your sound card
+manufacturer, click the appropriate article number in the following list to view
+the article in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+If the issue continues to occur, proceed to the next method.
+
+Reduce the Sound Playback Quality
+---------------------------------
+
+If the issue is resolved when you disable sound in the game, your sound card may
+be unable to properly process game port signals and high quality game sounds at
+the same time.
+
+If this is the case, you may be able to work around the issue by reducing the
+sound playback quality in the game:
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type "combatfs.cfg" (without the quotation marks).
+
+3. In the "Look in" box, click My Computer, and then click Find Now.
+
+4. In the list of found files, double-click the Combatfs.cfg file.
+
+5. If you are prompted to select the program that you want to use to open the
+   file, click Notepad in the "Choose the program you want to use" box, and then
+   click OK.
+
+6. Scroll to the end of the file, press ENTER twice, and then type the following
+   lines, pressing ENTER after you type each line:
+
+   [SOUND]
+   Channels=1
+   SamplesPerSec=11025
+
+7. On the File menu, click Exit. When you are prompted to save the changes,
+   click Yes.
+
+8. Close the Find: Files Named Combatfs.cfg window.
+
+NOTE: The Cfs2.cfg file that is included with Combat Flight Simulator 2 already
+contains the following lines:
+
+   [SOUND]
+   Channels=1
+   SamplesPerSec=11025
+
+If the issue continues to occur, proceed to the next method.
+
+Configure the Game Controller as a Different Gaming Device
+----------------------------------------------------------
+
+Use the Game Controllers tool in Control Panel to configure the game controller
+as a different gaming device.
+
+NOTE: You cannot configure any Microsoft SideWinder game controller as a
+different device except for the SideWinder Standard or the SideWinder 3D Pro.
+
+To configure a SideWinder 3D Pro joystick as a 3-axis 4-button joystick with
+Rudder/Pedals:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Game Controllers, and then click Microsoft SideWinder 3D Pro.
+
+3. Click Remove, and then click Yes.
+
+4. Click Add, click 3-Axis, 4-Button Joystick, and then click OK.
+
+5. Click Properties.
+
+6. On the Settings tab, click to select the Rudder/Pedals check box.
+
+7. Click Calibrate, and then follow the instructions on the screen to calibrate
+   the game controller.
+
+   NOTE: Axis 3 is the throttle control, and Axis 4 is the rudder control.
+
+8. Click Test to verify that the game controller functions properly.
+
+9. When you finish calibrating and testing the game controller, click OK, and
+   then click OK again.
+
+Additional query words: 1.00 msgame combatfs cfs side winder sw joystick gamepad
+
+======================================================================
+Keywords          : kbenv kbhw kbimu msgame kbHardware 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

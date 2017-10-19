@@ -1,0 +1,79 @@
+DOCUMENT:Q196485  26-FEB-1999  [winnt]
+TITLE   :Computer Loses Network Connectivity
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Computers running Windows NT Server or Windows NT Workstation may lose network
+connectivity. The computer is fully operational from the console, but it cannot
+make network connections, be PINGed, or accessed across the network.
+
+This behavior has been exhibited when Network Monitor is started from the console
+or if Network Monitor is capturing the traffic in or out of this computer from
+another computer.
+
+CAUSE
+=====
+
+This problem has been experienced on computers with IBM token ring network
+adapters using the driver with the following date and time stamp:
+
+   Ibmtrp.sys   Tue May 21 15:31:12 1996
+
+This problem happens when the Microsoft Network Monitor driver, Bhnt.sys,
+attempts to place the token ring card in promiscuous mode.
+
+The same behavior would occur when Performance Monitor is started locally or when
+another computer remotely selects this computer as target.
+
+RESOLUTION
+==========
+
+Contact IBM for the latest version of Ibmtrp.sys.
+
+MORE INFORMATION
+================
+
+Both Network Monitor and Performance Monitor load Bhnt.sys when they are
+started.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: hang ping connectivity
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

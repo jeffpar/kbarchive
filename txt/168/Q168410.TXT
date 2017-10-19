@@ -1,0 +1,74 @@
+DOCUMENT:Q168410  06-JUN-2001  [visualc]
+TITLE   :FIX: Dependency Information Is Lost After Workspace Is Closed
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC500bug kbVC600fix kbGrpDSToolskbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If there are changes to a header included in a .C file that cause a build to
+fail and the workspace is closed and re-opened, then the dependency information
+is lost and the build system will report the build is up-to-date.
+
+CAUSE
+=====
+
+The dependency information in the project .IDB file containing the header file
+was deleted during the failed build.
+
+RESOLUTION
+==========
+
+ - Compile the .C file instead of selecting Build from the Build menu.
+
+-or-
+
+ - Select Rebuild All from the Build menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+version 6.0.
+
+MORE INFORMATION
+================
+
+Note that this only applies to .C files. Files with recognized C++ file
+extensions (such as .CPP) are unaffected.
+
+Additional query words: BetaPublic
+
+======================================================================
+Keywords          : kbide kbVC kbVC500bug kbVC600fix kbGrpDSTools kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

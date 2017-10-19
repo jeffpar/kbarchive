@@ -1,0 +1,66 @@
+DOCUMENT:Q171931  30-JUL-2001  [mspress]
+TITLE   :Microsoft Press CD-ROM and Floppy Disk Replacement Policy
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbpolicy
+
+======================================================================
+SUMMARY
+=======
+
+This article describes the process for obtaining a replacement CD-ROM or
+diskette for any Microsoft Press companion CD-ROMs and floppy disks.
+
+MORE INFORMATION
+================
+
+If your CD-ROM or floppy disk is clearly physically defective (cracked, badly
+warped, contains a deep scratch, etc.), you can exchange it for a replacement
+CD-ROM or floppy disk in the United States of America by calling Microsoft Press
+at 800-MS-PRESS.
+
+If you are outside the United States of America, please contact your local
+Microsoft Press distributor or subsidiary. For a list of distributors, please
+connect to the Microsoft Press Web site at
+
+   http://mspress.microsoft.com/
+
+and look for the English Language Distributors list.
+
+IMPORTANT: Replacing the CD-ROM or floppy disk will not solve any software
+related issues. Therefore, replacement should be considered only if the Setup
+program fails and if there are no other known problems posted on the Microsoft
+Press Support Web site at:
+
+   http://mspress.microsoft.com/support/
+
+Unfortunately we currently cannot provide replacement disk contents via the Web
+due to legal considerations. However, individual file patches are posted on the
+Internet when appropriate. Please refer to the Microsoft Press Support Web site
+for further information.
+
+If you need further assistance obtaining a replacement disc, please e- mail
+MSPINPUT@MICROSOFT.COM.
+
+
+Additional query words: mspress ms_press press bookbug
+
+======================================================================
+Keywords          : kbpolicy 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

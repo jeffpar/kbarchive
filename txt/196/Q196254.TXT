@@ -1,0 +1,65 @@
+DOCUMENT:Q196254  13-MAY-1999  [exchange]
+TITLE   :XFOR: MMC Must Be Closed and Reopened after a Net Stop
+PRODUCT :Microsoft Exchange
+PROD/VER:WINNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Management Console (MMC) must be closed and reopened to be usable
+after a 'net stop ChatSvc' with the MMC open. This happens when you stop the
+Microsoft Exchange Chat service from the command prompt using the command "net
+stop chatsvc," and then start the service again with the command "net start
+chatsvc" with the MMC open.
+
+CAUSE
+=====
+
+The MMC can not determine the state of the service. Both the Pause and Continue
+buttons are unavailable.
+
+RESOLUTION
+==========
+
+Stop and restart the MMC.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Chat Server.
+
+
+Additional query words: Mcischat
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINNT:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

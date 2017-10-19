@@ -1,0 +1,94 @@
+DOCUMENT:Q124866  08-NOV-2001  [homemm]
+TITLE   :Ultimate Frank Lloyd Wright: Manual Installation Instructions
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft The Ultimate Frank Lloyd Wright, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following describes how to manually set up The Ultimate Frank Lloyd Wright.
+These directions assume the following:
+
+ - Your hard disk drive is drive C
+
+ - Windows is installed in the C:\WINDOWS directory
+
+ - The CD-ROM drive is drive X
+
+MORE INFORMATION
+================
+
+To manually set up The Ultimate Frank Lloyd Wright
+--------------------------------------------------
+
+1. Create a directory called \WRIGHT on your hard drive.
+
+2. Copy the following files from the CD-ROM to the C:\WRIGHT directory on your
+   hard drive:
+
+   X:\XFILES\MSSTP\PIDHOLDR.DLL
+   X:\PRE\FLW.ICO
+   X:\README.WRI
+
+3. Create a file named FLW.INI with the following entries:
+
+         [Paths]
+         InstPath=C:\WRIGHT\ 
+
+   Save the file FLW.INI to the C:\WINDOWS directory.
+
+4. If you are using Program Manager, create a new Program Group called
+   "Microsoft Multimedia."
+
+   NOTE: If you are using a third-party shell program, or Windows 95 instead of
+   Program Manager, refer to the manufacturer's User's Guide for assistance.
+
+5. Add the following new program items to this group.
+
+      Item 1:
+      Description:      Frank Lloyd Wright
+      Command Line:     X:\PRE\FLW.EXE
+      Icon File Name:   C:\WRIGHT\FLW.ICO
+
+      Item 2:
+      Description:      Frank Lloyd Wright Read Me
+      Command Line:     WRITE C:\WRIGHT\README.WRI
+
+      Item 3:
+      Description:      Frank Lloyd Wright Bibliography
+      Command Line:     WRITE X:\FLWINFO.WRI
+
+For more information on how to make any of the above changes, please consult your
+"Microsoft Windows User's Guide," or online Help.
+
+Additional query words: kbhowto 1.00 setup multi media multimedia multi- mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbGamesSearch kbUltimateFLW
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

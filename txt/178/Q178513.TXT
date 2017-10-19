@@ -1,0 +1,65 @@
+DOCUMENT:Q178513  09-APR-1999  [homemm]
+TITLE   :Bookshelf 98: Norton AntiVirus Identifies Unwise.exe as a Virus
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprbkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Bookshelf 98 for Windows, you may be alerted that the
+10_Past_3.748 virus was found in the Unwise.exe file. This alert is incorrect.
+
+CAUSE
+=====
+
+The Norton AntiVirus utility monitors your system for certain activities that
+may indicate the presence of a virus. The Unwise.exe program performs one or
+more of the activities for which Norton AntiVirus is monitoring.
+
+RESOLUTION
+==========
+
+To work around this issue, temporarily disable Norton AntiVirus and then install
+Bookshelf 98.
+
+MORE INFORMATION
+================
+
+The Unwise.exe file does not contain a virus. Although Norton AntiVirus
+indicates that the file is performing "virus-like" activities, previous versions
+of Norton AntiVirus do not indicate this behavior, nor do other virus detection
+utilities.
+
+
+Additional query words: 98 multi media multimedia multi-media mmtitles symantec symantic norton's nortons anti virus kbimu
+
+======================================================================
+Keywords          : kb3rdparty kbprb kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

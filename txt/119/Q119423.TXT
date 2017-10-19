@@ -1,0 +1,65 @@
+DOCUMENT:Q119423  08-NOV-1999  [pcmail]
+TITLE   :FPD: Previous File Name Not Cleared When Printing to File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail FAX Printer Driver, version 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you "Print to File" with the FAX Printer Driver selected as your default
+printer driver, the first filename you enter stays in the Name Output File Name
+dialog box. Later uses of the command do not replace it with new filenames.
+
+Version 3.0a of the Microsoft FAX Printer Driver comes with versions 3.0 and 3.0a
+of the Microsoft Mail Gateway to FAX and with versions 3.0, 3.0a and 3.2 of
+Microsoft Mail for PC Networks.
+
+CAUSE
+=====
+
+Under investigation.
+
+WORKAROUND
+==========
+
+Manually clear the highlighted filename before you select OK in subsequent
+"Print to File" operations.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the Microsoft FAX Printer
+Driver, version 3.0a. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailFPD300a
+Version           : :3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

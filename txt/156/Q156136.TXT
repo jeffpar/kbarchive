@@ -1,0 +1,66 @@
+DOCUMENT:Q156136  31-JUL-2001  [visualc]
+TITLE   :FIX: F1 Help Not Hooked to Some New Dialog Boxes
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:4.2
+OPER/SYS:
+KEYWORDS:kbEEdition kbVC kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the F1 key (context-sensitive help) is pressed when certain dialog boxes are
+displayed, the following error message may appear:
+
+   Cannot find <path>\Msdev.hlp, do you want to try to find this file
+   yourself?
+
+CAUSE
+=====
+
+Some of the dialog boxes that get displayed during SQL operations are not hooked
+to F1 help. Also, the error message indicates a missing Msdev.hlp file, which is
+incorrect.
+
+WORKAROUND
+==========
+
+Use the Help button on the dialog boxes to get Help.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Microsoft Visual C++,
+Enterprise Edition, version 5.0.
+
+Additional query words: kbVC420bug
+
+======================================================================
+Keywords          : kbEEdition kbVC kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : WINDOWS:4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q82342  08-DEC-1999  [win95x]
+TITLE   :Epson FX-286 Prints Page Shifted to the Right in Excel 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print from Microsoft Excel 3.0 using the Epson FX-286 Printer under
+Microsoft Windows version 3.1, and you use the center vertically/horizontally
+options, the page is shifted to the right.
+
+CAUSE
+=====
+
+This is a problem with the printer hardware, not Windows 3.1. The Epson printer
+manual states:
+
+   Position the pin-feed holder midway between the two stops on the
+   tractor bar....
+ 
+   (When running the self test) align the left edge of the paper with
+   the first black mark on the paper bail.
+
+WORKAROUND
+==========
+
+To work around the problem, move the paper in the printer over to the right so
+that the very edge of the paper lines up with the |1| mark on the paper bail.
+
+CAUTION: This workaround causes the document to print over the perforated edge of
+the paper when you print from the MS-DOS command line.
+
+
+MORE INFORMATION
+================
+
+The printer driver in Windows 3.1 does not print the same (left to right) as in
+Windows 3.0 or in MS-DOS. When printing from MS-DOS, the driver places text
+right against, but not over, the perforation.
+
+
+Additional query words: 3.10 3.11 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

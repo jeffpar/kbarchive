@@ -1,0 +1,79 @@
+DOCUMENT:Q195382  12-FEB-2002  [visualc]
+TITLE   :BUG: MsDev Caused an Invalid Page Fault in Devedit.pkg
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbVC600 kbVC600bug kbDSupport kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0, used with:
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Visual C++ 6.0, you get the following error message soon after
+the splash screen is displayed:
+
+   MsDev caused an invalid page fault C0000005 in devedit.pkg at 0171:50809e6d
+
+CAUSE
+=====
+
+This error is caused by a corrupted PKG file that is being accessed by
+Devedit.pkg. The Devedit.pkg module is using the corrupted PKG file to look up
+information about how to display text.
+
+This problem happens only under very rare circumstances; however, on some
+systems, one of these PKG files gets corrupted during installation.
+
+
+RESOLUTION
+==========
+
+Manually copy the PKG files from directory \Common\Msdev98\Bin\Ide on CD-1, to
+the ...\Common\Msdev98\Bin\Ide on your hard drive--replacing the ones that the
+setup program put onto your system. Copy these PKG files (depending on the
+product edition, you may not have all of the following files):
+
+   devodl.pkg
+   devdtg.pkg
+   devhtmx.pkg
+   devent.pkg
+   devcpp.pkg
+   devaut1.pkg
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbVC600 kbVC600bug kbDSupport kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

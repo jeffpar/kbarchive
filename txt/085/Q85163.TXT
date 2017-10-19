@@ -1,0 +1,66 @@
+DOCUMENT:Q85163  17-DEC-2000  [win3x]
+TITLE   :Default CONFIG.SYS and AUTOEXEC.BAT Files
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the default CONFIG.SYS and AUTOEXEC.BAT files created by the
+Windows & MS-DOS 5 for PS/2 Setup program.
+
+Default AUTOEXEC.BAT
+--------------------
+
+   C:\WINDOWS\SMARTDRV.EXE
+   @ECHO OFF
+   PROMPT $p$g
+   PATH C:\WINDOWS;C:\DOS
+   SET TEMP=C:\DOS
+
+Default CONFIG.SYS
+------------------
+
+   DEVICE=C:\DOS\SETVER.EXE
+   DEVICE=C:\WINDOWS\HIMEM.SYS
+   DOS=HIGH
+   FILES=30
+   DEVICE=C:\WINDOWS\SMARTDRV.EXE /DOUBLE_BUFFER
+   STACKS=9,256
+
+Some IBM PS/2 machines may be configured with other hard drive types, such as IDE
+or ESDI, in which case the double buffering portion of SMARTDrive may not appear
+in the CONFIG.SYS file.
+
+Additional query words: 3.10 5.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,74 @@
+DOCUMENT:Q177559  10-OCT-1999  [msnetwork]
+TITLE   :How to Connect to MSN Using a Third-Party ISP
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to connect to MSN, The Microsoft Network, using a
+third-party Internet service provider (ISP).
+
+MORE INFORMATION
+================
+
+To connect to MSN using a third-party ISP, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Internet.
+
+3. On the Connection tab, click "Connect to the Internet using a Modem."
+
+4. Click Settings.
+
+5. Click the third-party ISP's Dial-Up Networking connection in the "Use the
+   following Dial-Up Networking connection" box.
+
+6. Click OK until you return to Control Panel.
+
+7. Close Control Panel, and then restart the computer.
+
+If your third-party ISP does not use a Dial-Up Networking connection, use the
+following steps:
+
+1. Right-click the MSN icon on the desktop, and then click Connection Settings.
+
+2. On the Options tab, click the "Use this service for all dial-up Internet
+   access" check box to clear it, and then click OK.
+
+NOTE: After you perform these steps, you must connect to your third-party ISP
+before you connect to MSN.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN251
+Version           : WINDOWS:2.51
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

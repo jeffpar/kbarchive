@@ -1,0 +1,69 @@
+DOCUMENT:Q254935  08-MAR-2000  [foxpro]
+TITLE   :PRB: Visual FoxPro Setup Wizard Does Not Include the Vbame.dll F
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbAppSetup kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You use the setup wizard to install a Visual FoxPro application on a Hebrew
+version of Microsoft Windows 95, Windows 98, or Windows NT on a computer that
+has never had Visual FoxPro previously installed. When you launch the
+application, the following error occurs:
+
+   "An invalid page fault has occurred in VFP6r.dll..."
+
+CAUSE
+=====
+
+The Visual FoxPro 6.0 Setup Wizard fails to include the required file,
+Vbame.dll, a Middle East support file.
+
+RESOLUTION
+==========
+
+As a workaround to this problem, you can do the following:
+
+1. Copy the Vbame.dll file from the \Vfp98\Distrib.src\System folder to the
+   distribution files folder (that is, the distribution files directory entered
+   at step 1 of the setup wizard).
+
+2. At step 6 of the setup wizard (that is, Change File Settings), ensure that
+   the Vbame.dll file was included and change the Target Dir from AppDir to
+   WinSysDir.
+
+Now when the installation program executes, it installs the Vbame.dll file into
+the Windows System folder.
+
+Additional query words: Localization
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

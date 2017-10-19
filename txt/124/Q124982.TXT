@@ -1,0 +1,66 @@
+DOCUMENT:Q124982  26-MAY-2001  [homemm]
+TITLE   :Encarta: Some Images Do Not Have the Print or Copy Option
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 editions
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Most images in Microsoft Encarta for Windows have the Print and Copy options,
+but some images do not. This is by design.
+
+MORE INFORMATION
+================
+
+The following types of images do not have the Print and Copy options:
+
+ - Charts and tables that have scroll bars
+
+ - Population and climate charts
+
+ - Other charts or tables when accessed through Media Gallery, when enlarged
+
+ - Videos
+
+ - Animation, when enlarged
+
+ - Compound pictures, when enlarged
+
+Although many charts and tables can be printed from the article, you cannot print
+them if you are viewing them through Media Gallery.
+
+Compound pictures (such as Types Of Bird Nests, located in the Bird article) can
+be printed at the small size, or they can be enlarged and you can print the
+individual images.
+
+Additional query words: kbhowto msn_encarta 1995 multi media multimedia multi- mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaEncycSearch kbEncarta1995
+Version           : :1995 editions
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

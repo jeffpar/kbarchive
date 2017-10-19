@@ -1,0 +1,68 @@
+DOCUMENT:Q193058  10-AUG-2001  [winnt]
+TITLE   :DOC: How to use the RasSecurityDialogReceive API
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI _IK12469 kbSDKPlatform kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentaion does not explain how to correctly use the third parameter
+(pBufferLength) of the RasSecurityDialogReceive API.
+
+MORE INFORMATION
+================
+
+The documentation does not mention that the third parameter of the
+RasSecurityDialogReceive API should be set to the number of bytes expected to be
+received before the API is called. Upon API completion, this parameter will have
+the number of bytes received (excluding a terminating NULL character).
+
+For example, if the user expects to enter a password up to 10 characters long,
+the following code could be used:
+
+      WORD dwBytes = 10;
+      gfpRasSecurityDialogReceive ( hPort, pRecvBuf, &dwBytes, 0, hEvent);
+      DWORD dwWait = WaitForSingleObject (hEvent, MY_TIMEOUT);
+      if (dwWait == WAIT_OBJECT_0)
+      {
+
+          // We have received data
+          wsprintf (szTemp, "Bytes recevied: %d, buffer received: %s\n",
+          dwBytes, pRecvBuf);
+      }
+
+For more information about using this API, please refer to the RASHOST sample
+located in the Win32 SDK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI _IK12469 kbSDKPlatform kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

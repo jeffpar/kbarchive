@@ -1,0 +1,92 @@
+DOCUMENT:Q259726  28-JUL-2001  [visualc]
+TITLE   :FIX: Debugger Encounters Invisible Breakpoints in Assembly Code
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbDebug kbide kbVC600 kbVS600sp4fix kbVS600sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - The Integrated Debugger 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you debug your code locally, you may encounter invisible breakpoints in the
+Visual C++ Debugger when you single step or step over certain assembly
+instructions.
+
+On a Microsoft Windows 2000-based computer, remote debugging may stop responding
+(hang).
+
+CAUSE
+=====
+
+This occurs because of a bug in the debugger.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in the latest
+service pack for Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the following
+article numbers to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+To download the latest Visual Studio service pack, visit the following Microsoft
+Web site:
+
+   http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+MORE INFORMATION
+================
+
+The behavior described in the "Symptoms" section can appear in the following
+assembly instructions.
+
+When stepping into:
+
+INSB,INSW,OUTSB,OUTSW,PUSHFD,POPFD,CLI,STI,IRET.
+
+-or-
+
+When stepping over:
+
+INSB,INSW,OUTSB,OUTSW,MOVSB,MOVSW,CMPSB,CMPSW,STOSB,STOSW,LODSB,LODSW,SCASB
+,SCASW.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbDebug kbide kbVC600 kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbIntegratedDebugger
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

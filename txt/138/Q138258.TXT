@@ -1,0 +1,404 @@
+DOCUMENT:Q138258  06-AUG-2002  [winnt]
+TITLE   :Windows NT Debug Symbol Setup Information
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.1,3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides detailed information on how to set up Microsoft Windows NT
+Symbol Trees, as well as advanced setup tips and tricks.
+
+MORE INFORMATION
+================
+
+Article Contents
+----------------
+
+ - General Information
+
+ - Setting up Custom Symbol Trees
+
+ - Single Processor vs. Multi Processor
+
+ - Custom HAL.DLL
+
+ - Using Symbols in Debugger
+
+ - Verifying the Symbols
+
+ - Advanced Symbol Verification
+
+ - Checked Versions
+
+General Information
+-------------------
+
+Debug Symbol files (symbols) are required to do both kernel and user-mode
+debugging in Windows NT. Symbols provide a way to reference global variables and
+function names in the loaded executable.
+
+Symbols are produced by the linker. They are stripped out of retail product and
+saved in a separate (.DBG) file. This considerably reduces file size which
+decreases file load time and thus increases system performance. It also reduces
+the number of install floppies. Symbols represent Function/API names and global
+variables.
+
+The .DBG File contains symbolic information for each file. They can be found on
+the installation CD-ROM in \Support\Debug\[i386 | mips]\Symbols. They can also
+be found on the NT build server. The location is
+\\Ntbuilds\Release\Usa\Build###\[x86 | mips |alpha]\Fre.srv\symbols.
+
+The Symbols directory is divided up into seven subdirectories, called Extension
+Subdirectories (note that many of the symbol files in these directories are User
+mode):
+
+   COM - symbols for all files ending in .COM go here
+   CPL - symbols for all files ending in .CPL go here.
+   DLL - symbols for all files ending in .DLL go here
+   DRV - symbols for all files ending in .DRV go here
+   EXE - symbols for all files ending in .EXE go here
+   SCR - symbols for all files ending in .SCR go here
+   SYS - symbols for all files ending in .SYS go here.
+
+Symbols must match file versions:
+
+Symbols from a different build give erroneous information and send developers
+chasing shadows and waste considerable time. Double check with the customer what
+build the customer is running and if the customer has any patches installed. The
+Kernel Stop Screen displays the build number of the kernel.
+
+Patched Builds:
+
+Patched builds such as Service Packs require a special set of symbols, that is a
+combination of the base build and the patched symbols.
+
+Setting Up Custom Symbol Trees
+------------------------------
+
+Remember that symbols must match the files installed on a customer's computer.
+You often have to create a custom set of symbols just for a particular
+customer.
+
+NOTE: Complete Symbol Trees can take up over 30 MB of disk space.
+
+1. Create a subdirectory to store your customer symbol set. For example:
+
+   C:\MYSYMBOLS
+
+2. Always start with the base Windows NT version number. Copy the following
+   files from the installation CD-ROM for the appropriate version:
+
+   " XCOPY [CD Drive]\SUPPORT\DEBUG\I386 C:\MYSYMBOLS /S. " (without the
+   quotation marks)
+
+3. Copy symbols for the appropriate Service Pack binary files over your custom
+   tree. Service Pack symbols can be found on the servers listed in the section
+   below titled "Symbol Locations."
+
+4. Copy any third-party patches such as Compaq SSD symbols over to your custom
+   symbol tree. You may need to get these symbols from the vendor.
+
+
+   NOTE: Steps 3 and 4 may need to be reversed depending on the order that they
+   were installed by the customer. Match the customer's steps.
+
+5. If the server has hotfixes installed, you need to obtain the matching symbol
+   for that hotfix. If a symbol file is not provided with the hotfix, you need
+   to contact Microsoft Product Support Services to inquire about the
+   availability of these symbols. Copy the updated symbol over your custom
+   symbol tree. Make sure that you place it in the correct subfolder (for
+   example, Sys, exe, dll, etc.).
+
+
+Single Processor vs. Multi Processor
+------------------------------------
+
+Windows NT uses a special kernel for SMP systems. During installation this kernel
+is renamed. It is important that you also rename the SYMBOL.DBG file for
+debugging.
+
+   NTOSKRNL.EXE NTOSKRNL.DBG = Single processor NTKRNLMP.EXE. NTKRNLMP.DBG =
+   Multiple processors
+
+1. If you have a multi-processor system do the following. Under your custom
+   symbol tree in \SYMBOLS\EXE there are two kernel files. Rename NTOSKRNL.DBG
+   to NTOSKRNL.UNI.
+
+2. Copy NTKRNLMP.DBG to NTOSKRNL.DBG.
+
+Custom HAL.DLL
+--------------
+
+Some hardware platforms require a special Hardware Abstraction Layer Driver. Like
+the Kernel file, the custom HAL is renamed during the installation process. Here
+is a list of common HALs:
+
+HAL files for I386 Computers:
+
+              Uncompressed
+Filename      Size (bytes) Description
+-------------------------------------------------------------------------
+HAL.DLL       48,416       Standard HAL for Intel systems
+HAL486C.DLL   47,376       HAL for 486 c step processor
+HALAPIC.DLL   63,616       Uniprocessor version of HALMPS.DLL
+HALAST.DLL    46,416       HAL for AST SMP systems
+HALCBUS.DLL   79,776       HAL for Cbus systems
+HALMCA.DLL    45,488       HAL for MCA-based systems (PS/2 and others)
+HALMPS.DLL    65,696       HAL for most Intel multiprocessor systems
+HALNCR.DLL    79,392       HAL for NCR SMP machines
+HALOLI.DLL    40,048       HAL for Olivetti SMP machines
+HALSP.DLL     52,320       HAL for Compaq Systempro
+HALWYSE7.DLL  40,848       HAL for Wyse7 systems
+
+HAL files for DEC Alpha Computers:
+
+              Uncompressed
+Filename      Size (bytes) Description
+--------------------------------------------------------------------------
+HAL0JENS.DLL  56,800       Digital DECpc AXP 150 HAL
+HALALCOR.DLL  69,120       Digital AlphaStation 600 Family
+HALAVANT.DLL  66,752       Digital AlphaStation 200/400 Family HAL
+HALEB64P.DLL  70,528       Digital AlphaPC64 HAL
+HALGAMMP.DLL  72,896       Digital AlphaServer 2x00 5/xxx Family HAL
+HALMIKAS.DLL  67,040       Digital AlphaServer 1000 Family Uniprocessor
+HAL
+HALNONME.DLL  65,376       Digital AXPpci 33 HAL
+HALQS.DLL     65,088       Digital Multia MultiClient Desktop HAL
+HALSABMP.DLL  72,736       Digital AlphaServer 2x00 4/xxx Family HAL
+
+HAL files for MIPS Computers:
+
+              Uncompressed
+Filename      Size (bytes) Description
+--------------------------------------------------------------------------
+HALACR.DLL    43,648       ACER HAL
+HALDTI.DLL    68,288       DESKStation Evolution
+HALDUOMP.DLL  41,728       Microsoft-designed dual MP HAL
+HALFXS.DLL    42,016       MTI with a r4000 or r4400
+HALFXSPC.DLL  42,176       MTI with a r4600
+HALNECMP.DLL  44,736       NEC dual MP
+HALNTP.DLL    116,000      NeTpower FASTseries
+HALR98MP.DLL  127,232      NEC 4 processor MP
+HALSNI4X.DLL  95,520       Siemens Nixdorf UP and MP
+HALTYNE.DLL   68,032       DESKstation Tyne
+
+HAL files for PPC Computers:
+
+              Uncompressed
+Filename      Size (bytes) Description
+--------------------------------------------------------------------------
+HALCARO.DLL   169,504      HAL for IBM-6070
+HALEAGLE.DLL  206,208      HAL for Motorola PowerStack and Big Bend
+HALFIRE.DLL   136,576      Hal for Powerized_ES,
+                                   Powerized_MX, and
+                                   Powerized_MX MP
+HALPOLO.DLL   169,152      HAL for IBM-6030
+HALPPC.DLL    169,184      HAL for IBM-6015
+HALWOOD.DLL   95,616       HAL for IBM-6020
+
+How to Determine Which HAL to Use:
+
+During installation a text log file is created. This file can inform you about
+the original name of the HAL.
+
+1. Go to %systemroot%\REPAIR subdirectory.
+
+2. Run ATTRIB -R -H -S SETUP.LOG to make the file visible.
+
+3. Bring up the file in Microsoft Notepad and search for HAL.
+
+NOTE: This same technique can be useful to verify if a special kernel is also
+used.
+
+Go to Setup HAL Symbol:
+
+1. Go to your custom symbol tree under \SYMBOLS\DLL.
+
+2. Rename HAL.DBG to HAL.X86.
+
+3. Copy the "Custom HLL.DBG" to HAL.DBG.
+
+Using Symbols in the Debugger
+-----------------------------
+
+A Windows NT Debugger, such as I386KD.EXE, looks for symbols in the following
+locations:
+
+   _NT_ALT_SYMBOL_PATH system environment variable
+   _NT_SYMBOL_PATH system environment variable
+
+These locations are set via system environment variables. They are usually
+configured by a debug batch file using the SET command. The _NT_ALT_SYMBOL_PATH
+is optional. For example:
+
+   set _NT_SYMBOL_PATH=K:\NT35-SP3\SYMBOLS
+   set _NT_ALT_SYMBOL_PATH=c:\WINNT\SYMBOLS
+
+NOTE: The symbols directory is the directory directly above the extension
+subdirectories (that is, if the kernel symbol file, NTOSKRNL.DBG, is located at
+C:\DEBUG\511\I386\SYMBOLS\EXE\NTOSKRNL.DBG. The _NT_SYMBOL_PATH should be set to
+C:\DEBUG\511\I386\SYMBOLS
+
+How to Use Paths:
+
+A good use of these various paths is for keeping static symbol trees for each
+Windows NT version. You simply point your symbol paths to each version and
+Service Pack as needed. For example, for a 1057 system with SP2 installed you
+could use the following:
+
+   set _NT_ALT_SYMBOL_PATH=c:\NT351-SP2\SYMBOLS
+   set _NT_SYMBOL_PATH=K:\NT351-1057\SYMBOLS
+
+The debugger attempts to use the Service Pack symbols first. [The Service Pack
+symbols do not include the base build symbols in this case, only the SP
+symbols.] If the debugger does not find a particular symbol in the SP tree it
+looks it up in the 1057 symbol tree.
+
+Search Order:
+
+The various symbol paths are searched in the order listed above. The first symbol
+file with the correct name that is encountered is used. In the example above,
+_NT_ALT_SYMBOL_PATH=c:\NT351-SP2\SYMBOLS is the first one searched.
+
+Environment Variable Override:
+
+I386KD supports a command line switch "-y" where you can specify a symbol path.
+However, using this switch overrides your existing environment variables.
+
+Change Path on the Fly:
+
+You can change the symbol search path at any time in the debugger by issuing
+"!Sympath" command. For example:
+
+   !SYMPATH C:\SYMBOLS.
+
+Verifying the Symbols
+---------------------
+
+!RELOAD:
+
+Once you have gotten to the "kd>" prompt for the first time, you must type
+"!RELOAD". This causes the symbolic information to be reloaded and synchronized.
+If you get the error "PsLoadedModuleList is NULL!", you probably have the wrong
+symbols loaded. Be sure you have the correct HAL.DBG and NTOSKRNL.DBG file
+installed for the computer that you are debugging.
+
+!PROCESS:
+
+Symbols can also be verified by typing "!PROCESS" if you get the error, "Can't
+find process list head", you probably have the wrong symbols loaded.
+
+KB:
+
+If the Stack Trace has gaps in the function name list, this indicates that you
+are missing symbols. Missing functions could also indicate a corrupt stack but
+this is somewhat rare. Double check your symbols before declaring a corrupt
+stack. Also, look at the return addresses on the stack. They should all be
+greater than 8000000.
+
+!SYMPATH:
+
+Incorrect symbols can be corrected by going to another command window, copying
+the correct symbols and doing a !reload on the debugger or by specifying the
+correct path with !SYMPATH <symbol_path>.
+
+Advanced Symbol Verification
+----------------------------
+
+Sometimes customers do not know what driver versions they have installed on their
+computers. Perhaps they installed a hotfix for NTFS but they do not know which
+bug number. You may need to manually determine which .DBG files are needed.
+
+The best way to absolutely verify if target and dbg's match is to view their
+check sum value. This value is stored inside the file header.
+
+Note: To learn more about operating system file format search MSDN for "Portable
+Execution File Format." The PE header contains version numbers, link date\time,
+etc.
+
+The general plan here is to first find out the check sum of the customers files
+and then find a dbg file that has a matching check sum.
+
+There are many ways to extract the chksum from the target and the dbg. If you
+have access to the files, you can use the following. This example assumes you
+are interested in the file NTOSKRNL.
+
+LINK32:
+
+This utility can be found in the NT Build subdirectory \MSTOOLS:
+
+   LINK32.EXE -DUMP -HEADERS NTOSKRNL.EXE LINK32.EXE -DUMP -HEADERS NTOSKRNL.DBG
+
+DUMPBIN:
+
+This utility can be found in the Visual C bin directory:
+
+   DUMPBIN.EXE /HEADERS NTOSKRNL.EXE DUMPBIN.EXE /HEADERS NTOSKRNL.DBG
+
+If you are using a debugger on a system or a crash dump, you can find the
+checksum of the target file by viewing the file header in memory.
+
+1. !DRIVERS - Will give you driver base address.
+
+2. dd baseaddr+d8 L1
+
+Checked Versions
+----------------
+
+If you install debug checked versions of Windows NT files you need to make
+special arrangements for they dbg symbol files. Some hotfix checked builds have
+the symbolic information built into the target file. In these cases, just make a
+copy of the file and name it *.DBG. Place the file in the normal symbol sub
+directory, that is, \SYMBOLS\EXE.
+
+All publicly released check builds have separate dbg files just like the free
+releases. However, the dbg for checked and free versions are different. For
+example, the MS NT DDK contains a complete checked build of NT. It also contains
+a complete symbol set to go with it.
+
+NOTE: Checked versions of the NT kernel are the same for both Multiprocessor and
+Uniprocessor systems.
+
+Symbol Locations
+----------------
+
+Retail Product:
+
+   CD-ROM \SUPPORT\DEBUG\I386\SYMBOLS
+   \\NTX86X\FREEBINS.XXX
+
+
+Additional query words: prodnt debugref
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :3.1,3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

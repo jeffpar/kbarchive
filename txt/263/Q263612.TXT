@@ -1,0 +1,70 @@
+DOCUMENT:Q263612  28-OCT-2000  [winnt]
+TITLE   :PRB: Unable to Add a Performance Counter on Windows 2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbKernBase kbOSWin2000 kbPerfMon kbSDKWin32 kbDSupport kbGrpDSKernBase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select a counter in the Add Counters dialog box in the Performance
+Monitor utility (PerfMon.exe), the Add button may be disabled. Consequently, the
+corresponding performance counter cannot be monitored through Performance
+Monitor.
+
+CAUSE
+=====
+
+The Add button is disabled if the Performance Extension DLL for the selected
+performance object reports that there are currently 0 instances of the object.
+This behavior is also seen if the Performance Extension DLL reports that there
+are 0 instances for a performance object that doesn't even support instance
+data.
+
+RESOLUTION
+==========
+
+The PERF_OBJECT_TYPE structure describes object-specific performance information
+that is returned by a Performance Extension DLL. This structure contains a
+member called NumInstances that specifies the number of object instances for
+which counters are provided.
+
+If the performance object will never provide instance data by means of
+PERF_INSTANCE_DEFINITION structures, the NumInstances value should be set to
+PERF_NO_INSTANCES, or -1. If the performance object supports 0 or more
+instances, the NumInstances value should reflect the current number of instances
+of the object.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbKernBase kbOSWin2000 kbPerfMon kbSDKWin32 kbDSupport kbGrpDSKernBase 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

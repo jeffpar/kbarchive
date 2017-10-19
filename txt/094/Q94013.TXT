@@ -1,0 +1,58 @@
+DOCUMENT:Q94013  19-NOV-1999  [msdos]
+TITLE   :MS-DOS: MEM Doesn't Display "Bytes Available XMS Memory"
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MEM command does not display the following line if the Extended Memory
+Specification (XMS) driver is not loaded, or if the driver is loaded but not
+initialized:
+
+   Bytes available XMS memory
+
+MORE INFORMATION
+================
+
+The amount of available extended memory is not displayed until the XMS driver
+(usually HIMEM.SYS) is loaded AND a device driver that uses extended memory has
+also loaded. The following MS-DOS commands or device drivers use extended
+memory:
+
+      dos=high
+      device=c:\dos\emm386.exe
+      device=c:\dos\smartdrv.sys
+      device=c:\dos\ramdrive.sys /e
+
+Additional query words: 5.00 5.00a
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

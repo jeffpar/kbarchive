@@ -1,0 +1,61 @@
+DOCUMENT:Q186621  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Commands: C2CFG or C2CONFIG
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+These commands run the Windows NT C2 Configuration Manager, which is used to
+help configure the security of a Windows NT Workstation, Windows NT Server, or a
+Windows Terminal Server. The C2 Configuration Manager may be used to change one
+or more security attributes on the system. Refer to the Windows NT
+Administration documentation for more information on what the correct settings
+are for the desired security level as well as for more information on defining
+and implementing a security policy. C2 Security
+
+The National Computer Security Center (NCSC) is the United States government
+agency responsible for performing software product security evaluations. These
+evaluations are carried out against a set of requirements outlined in the NCSC
+publication Department of Defense Trusted Computer System Evaluation Criteria,
+which is commonly referred to as the Orange Book. Windows NT has been
+successfully evaluated by the NCSC at the C2 level as defined in the Orange
+Book. Because Windows NT supports C2 Level security, the workstation must be
+configured appropriately to apply this. Additionally, Windows NT supports
+security features that are not required to meet C2 Level security. The Windows
+NT C2 Security System Administrators Guide provides information on how to define
+and implement security on your system and should be reviewed for more
+information.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

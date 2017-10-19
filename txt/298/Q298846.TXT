@@ -1,0 +1,66 @@
+DOCUMENT:Q298846  07-JUN-2002  [automap]
+TITLE   :Installation of Office XP May Disable Help in Other Programs
+PRODUCT :Microsoft Automap
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2001 
+ - Microsoft Streets and Trips 2001 
+ - Microsoft PhotoDraw 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Help in any of the programs listed in the "applies to"
+section of this article, you may receive no response.
+
+CAUSE
+=====
+
+This behavior can occur if you install Microsoft Office XP on a computer on
+which any of the programs listed in the "applies to" section are already
+installed.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall the program in which you have lost access to
+Help.
+
+MORE INFORMATION
+================
+
+The installation of Office XP changes the way in which certain products access
+their Help files. The Help files are not damaged or corrupted, but they are
+unable to start from within the programs listed in the "applies to" section.
+
+Additional query words: lock assistance ? suite map
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbExpediaSearch kbPhotoDraw2000 kbMapptSearch kbPhotoDraw2000Search kbMapPoint2001 kbExpediaStreets2001 kbPhotoDrawSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

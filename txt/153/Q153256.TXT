@@ -1,0 +1,74 @@
+DOCUMENT:Q153256  13-JUN-2001  [sna]
+TITLE   :Unable to Build Wrui3270.exe Sample App. with VC++ 4.0
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to build the Wrui3270.exe sample application from the SNA SDK with
+Microsoft Visual C++ version 4.0, the build would fail with the following
+compiler output:
+
+   
+
+   LINK : warning LNK4049: locally defined symbol _exit imported
+   rui3270.obj : error LNK2001: unresolved external symbol __imp__printf
+   wrui3270.exe : fatal error LNK1120: 1 unresolved externals
+   NMAKE : fatal error U1077: 'link' : return code '0x19'
+   Stop.
+   Error executing NMAKE.
+   n3271.exe - 3 error(s), 1 warning(s)
+
+CAUSE
+=====
+
+The make file was compiling with options from one C Runtime library and linking
+with another, leading to the unresolved externals.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server 2.0, 2.1,
+2.11, and 2.11.sp1. This problem was corrected in the latest Microsoft SNA
+Server 2.11 U.S. Service Pack. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

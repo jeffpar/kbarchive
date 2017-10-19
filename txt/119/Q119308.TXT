@@ -1,0 +1,59 @@
+DOCUMENT:Q119308  11-NOV-1999  [pcmail]
+TITLE   :PROFS: Gateway Export Generates Two Notes to PROFS/OV UserID
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2,3.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, versions 3.2, 3.3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail Gateway to PROFS generates two IBM Notes to the UserID: one
+contains the post office address list and the other contains a notice informing
+the administrator that the post office address list has been downloaded.
+
+The number of notes this generates for the UserID reader may become troublesome.
+
+CAUSE
+=====
+
+By design.
+
+RESOLUTION
+==========
+
+The Microsoft Mail Gateway to PROFS/OfficeVision Host Access component version
+3.3 resolves this problem by making the second note optional.
+
+To disable the second note, set the DIRECTORY_NOTE field to "NO" (without the
+quotation marks) in the PWAINIT DATA file.
+
+Additional query words: 3.20 3.30
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320 kbMailGateIBMPROFS330
+Version           : :3.2,3.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

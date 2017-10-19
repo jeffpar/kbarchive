@@ -1,0 +1,66 @@
+DOCUMENT:Q86488  08-OCT-1999  [win95x]
+TITLE   :MIDI Sound Scrambled When Played Through Media Player
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When playing MIDI files with a sound card configured with the Adlib driver from
+Microsoft Windows operating system version 3.1, the sound produced may be
+scrambled or distorted.
+
+RESOLUTION
+==========
+
+To eliminate this problem, use the MIDI Mapper to disable channel 10.
+
+1. From Control Panel, run MIDI Mapper.
+
+2. From the MIDI Mapper dialog box, choose Setups in the Show area.
+
+3. Choose Edit.
+
+4. In the MIDI setup window, cancel the selection of Channel 10 in the Active
+   column.
+
+5. Choose OK.
+
+MORE INFORMATION
+================
+
+Channel 10 is customarily the drum track and may be interpreted as notes,
+producing a scrambled or distorted sound. This article deals with playing MIDI
+files using the Media Player.
+
+Additional query words: 3.10 3.11 garbled .mid mid
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

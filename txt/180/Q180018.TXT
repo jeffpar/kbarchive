@@ -1,0 +1,59 @@
+DOCUMENT:Q180018  09-AUG-2001  [winnt]
+TITLE   :SGCINST.EXE Appears to Execute but SGC Does Not Work
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.0,4.0,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP3 
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Sgcinst.exe appears to execute but SGC does not work.
+
+CAUSE
+=====
+
+VeriSign used to include the certificate, the intermediate certificates, and the
+root certificate. They stopped sending the root certificate since it was
+redundant and ignored. Sgcinst.exe fails because it believes the intermediate
+certificate was really the root certificate.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the Server Gated Cryptography (SGC) update. For
+more information on how to obtain the updated version of Schannel.dll, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q148427 : Generic SSL (PCT/TLS) Updates for IIS and MS Internet Products
+
+Additional query words: Schannel.exe Sgcschannel.exe Sgcschnl.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp3 kbWinNTS400search kbiisSearch kbiis400 kbiis300
+Version           : winnt:3.0,4.0,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q175937  10-AUG-2001  [winnt]
+TITLE   :Cannot Start More Than 100 Services
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The number of simultaneously running services is limited to 100 (excluding all
+shared services that run under the Services.exe process, such as Alerter,
+Browser, EventLog, LanmanServer, LanmanWorkstation, LMHOSTS, Messenger, and so
+on).
+
+Trying to start an additional service leads to the following error message:
+
+   All pipe instances are busy.
+
+NOTE: This does not apply to Microsoft Windows 2000. The MAX_INSTANCES constraint
+has been removed.
+
+CAUSE
+=====
+
+The Service Control Manager (that is, Services.exe) creates a pipe for each of
+the services it starts. This pipe is used for interprocess communication between
+the Service Control Manager and the process of the service. The maximum number
+of pipe instances is hard-coded to 100.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

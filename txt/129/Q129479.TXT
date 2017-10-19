@@ -1,0 +1,77 @@
+DOCUMENT:Q129479  29-JUL-2001  [visualc]
+TITLE   :PRB: _searchenv() Does Not Check the Buffer Size
+PRODUCT :Microsoft C Compiler
+PROD/VER:2.1 4.0 5.0
+OPER/SYS:
+KEYWORDS:kbCRT kbVC kbVC210 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.1, 4.0, 5.0, 6.0, on platform(s):
+       - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If _searchenv() is called with a pathname buffer (third parameter) that has a
+length shorter than the length of the fully qualified path name returned, the
+function will overwrite the buffer.
+
+CAUSE
+=====
+
+As the documentation states, "You must ensure that there is sufficient space for
+the constructed path." A number of CRT routines, including _searchenv(), do not
+take a size parameter and cannot check to see if the buffer passed is big enough
+to hold the data. It is up to the programmer to make sure the buffer is large
+enough for the data.
+
+RESOLUTION
+==========
+
+To avoid potential access violations that occur because of the overwrite, do one
+of the following:
+
+ - Before calling _searchenv(), check to see that the sum of the length of the
+   filename and the length of any directory in the environment variable to be
+   used (for example, the PATH) does not exceed _MAX_PATH. If it does, give an
+   error message to the user.
+
+   -or-
+
+ - Increase the length of buffer (pathname) passed to _searchenv() so that it is
+   at least as big as the sum of the length of the filename and the length of
+   the longest directory in the environment variable to be used.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : 2.1 4.0 5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

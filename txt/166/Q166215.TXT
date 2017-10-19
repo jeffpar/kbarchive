@@ -1,0 +1,70 @@
+DOCUMENT:Q166215  11-JAN-2001  [vbwin]
+TITLE   :INFO: Modifying VTables with AddressOf Is Not Supported
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbpolicy kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the March 1997 issue of the Visual Basic Programmer's Journal, an article by
+Matthew Curland and William Storage was published which featured a technique for
+simulating the calling of function pointers in Microsoft Visual Basic 5.0.
+
+MORE INFORMATION
+================
+
+As described in the article, the technique requires modification of a class's
+VTable through the use of the AddressOf operator and the CopyMemory and
+VirtualProtect Win32 API functions.
+
+Modifying VTables and the technique described in the article are not supported by
+Microsoft.
+
+Visual Basic Programmer's Journal is published by Fawcette Technical
+Publications, a publisher independent of Microsoft; we make no warranty, implied
+or otherwise, regarding this publication's content or reliability.
+
+
+REFERENCES
+==========
+
+Visual Basic Programmer's Journal
+Fawcette Technical Publications
+March 1997, Volume 7, No. 3
+"Modifying vtables with AddressOf." (pgs 131-133)
+
+Additional query words: Vtables pointer recursive recursion hack sort qsort compare void overwrite
+
+======================================================================
+Keywords          : kbpolicy kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : 5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

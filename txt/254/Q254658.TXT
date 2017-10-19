@@ -1,0 +1,66 @@
+DOCUMENT:Q254658  04-AUG-2000  [iis]
+TITLE   :Problems Using ISM (HTML) to Create & View Virtual Directory
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the browser-based Internet Services Manager (ISM) to create a
+virtual directory that uses an extended character in its name, the following
+problems occur:
+
+ - The Local path text box is blank.
+ - The Read, Log visits, and Index this resource check boxes are not selected
+   (checked).
+ - A Web application based on the virtual directory does not appear to have been
+   created (although it actually has been created).
+ - The Execute permissions and Application Protection drop-down lists are too
+   small, and are not populated.
+
+WORKAROUND
+==========
+
+Use the IIS snap-in version of the ISM to correctly view and modify the
+settings.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Services version 5.0.
+
+
+Additional query words: iis 5 webadmin web admin htmla vdir symbol foreign character akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

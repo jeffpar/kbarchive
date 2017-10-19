@@ -1,0 +1,58 @@
+DOCUMENT:Q169535  01-MAY-2001  [ssafe]
+TITLE   :INFO: Cannot Set EOL Option from the Visual SourceSafe GUI
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Unlike Visual SourceSafe 4.x, you cannot set the EOL option cannot within the
+Visual SourceSafe 5.0 or later Advanced dialog box. In Visual SourceSafe 5.0 or
+later, you have to manually set the EOL option in the Srcsafe.ini file. This is
+by design.
+
+REFERENCES
+==========
+
+For additional information on the EOL ini variable, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q170750 INFO: End of Line Character Settings for SourceSafe
+
+For additional information about Srcsafe.ini settings, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q140316 INFO: All Variable Settings for Visual SourceSafe .INI File
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,90 @@
+DOCUMENT:Q142192  21-AUG-1999  [foxpro]
+TITLE   :PRB: Abnormal Termination When Instantiate Object from VCX
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 3.00b 5.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After instantiating an object from a corrupt .vcx file, Visual FoxPro may stop
+responding and return to Program Manager in Windows 3.x and Windows for
+Workgroups 3.x. Under Windows 95 and Windows NT, the following error messages
+are displayed respectively:
+
+Windows 95:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor.
+
+Windows NT:
+
+   An application error has occurred and an application error log is being
+   generated. VFP.exe Exception: access violation
+
+CAUSE
+=====
+
+The Visual Class Library Files (.vcx and .vct files) may be corrupt.
+
+RESOLUTION
+==========
+
+Replace or recreate the corrupted Visual Class Library files.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Set CLASSLIB to CorruptVCX.
+
+2. Assign oObject to CREATEOBJECT("ClassName").
+
+-or-
+
+1. Create a new form.
+
+2. Click the View Classes tool, and choose Add.
+
+3. Select the CorruptVCX.
+
+4. Add an object from the CorruptVCX to the form.
+
+Additional query words: VFoxWin bad
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : 3.00 3.00b 5.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

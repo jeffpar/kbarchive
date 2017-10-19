@@ -1,0 +1,67 @@
+DOCUMENT:Q258080  10-AUG-2001  [winnt]
+TITLE   :Digital Drives and Drive Letters Disappear with Clustered Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restart your server, some Digital Array controllers may randomly lose
+the shared drive in a cluster.
+
+CAUSE
+=====
+
+This behavior can occur if the /pcilock switch is enabled on one computer but
+not on the other.
+
+RESOLUTION
+==========
+
+To resolve this behavior, enable the /pcilock switch in the Boot.ini file. Then,
+shut down and then restart the computer.
+
+MORE INFORMATION
+================
+
+The /pcilock switch prevents the hardware abstraction layer (HAL) from moving
+anything on the PCI bus. The I/O and memory resources are left exactly as they
+were set by the BIOS.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q170756 Available Switch Options for Windows NT Boot.ini File
+
+Additional query words: MSCS
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

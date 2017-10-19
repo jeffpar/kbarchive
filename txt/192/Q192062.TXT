@@ -1,0 +1,91 @@
+DOCUMENT:Q192062  12-JUN-2001  [homegame]
+TITLE   :CC: A Bridge Too Far Err Msg: Out of Command Data Space
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbdisplay kberrmsg kbsound kbui ccabtf kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat: A Bridge Too Far, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Close Combat: A Bridge Too Far, you may receive the
+following error message when you begin a battle:
+
+   Out of commmand data space.
+
+CAUSE
+=====
+
+This behavior can occur if sound, music, or video playback is disabled in Close
+Combat: A Bridge Too Far.
+
+RESOLUTION
+==========
+
+To resolve this issue, verify that sound, music, and videos are enabled in Close
+Combat: A Bridge Too Far. To do this, use the appropriate method for your
+operating system.
+
+Microsoft Windows 95/98
+-----------------------
+
+1. Start Close Combat: A Bridge Too Far.
+
+2. Press the F8 key.
+
+3. Under Game Options, verify that the Enable Sound, Enable Music, and Enable
+   Videos check boxes are selected. Click to select any check boxes that are not
+   selected.
+
+4. Click OK.
+
+Macintosh OS
+------------
+
+1. Start Close Combat: A Bridge Too Far.
+
+2. Press the SPACEBAR.
+
+3. On the Options menu, verify that the Sound, Music, and Video options are
+   selected. Click to select any options that are not selected.
+
+4. Press the SPACEBAR.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Close Combat: A Bridge
+Too Far version 2.0.
+
+Additional query words: abtf abridgetoofar closecombat cc2 ccii msgame kbfaq
+
+======================================================================
+Keywords          : kbdisplay kberrmsg kbsound kbui ccabtf kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat2
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

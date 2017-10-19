@@ -1,0 +1,66 @@
+DOCUMENT:Q84964  16-OCT-1999  [win95x]
+TITLE   :Bringing a Card to the Front in the Cardfile Program
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The keystrokes to bring a specific card to the front of a file in Microsoft
+Windows Cardfile are different from the keystrokes used in the Windows 3.0
+Cardfile program.
+
+MORE INFORMATION
+================
+
+In the Windows 3.0 Cardfile program, to bring a specific card to the front of
+the file, hold down the CTRL key and type a letter. A card beginning with that
+letter is moved to the foreground.
+
+In the Windows 3.1 Cardfile program, to bring a specific card to the front of the
+file, hold down the CTRL+SHIFT keys and press the appropriate letter to bring a
+specific card to the front of a file.
+
+For example, in the Windows 3.0 Cardfile program, pressing CTRL+W would display
+the first card in the file that starts with the letter "W". In the Windows 3.1
+Cardfile program, pressing CTRL+SHIFT+W will display the first card with the
+letter "W".
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," version 3.1, pages 437-439
+
+"Microsoft Windows User's Guide," version 3.0, pages 389-391
+
+Additional query words: 3.00 3.00a 3.10 3.11 index hot key
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310
+Version           : WINDOWS:3.0,3.0a,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

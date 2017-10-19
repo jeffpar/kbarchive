@@ -1,0 +1,100 @@
+DOCUMENT:Q184493  23-OCT-2001  [visualc]
+TITLE   :INFO: Programmer's Guide to Using Index Server Provider in VC++
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,2.5,2.6,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbole kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft OLE DB Provider for Index Server, version 2.0 
+ - Microsoft Data Access Components versions 2.0, 2.1, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+This article presents information that can be useful to anyone wanting to take
+advantage of the OLE DB Provider for Index Server (MSIDXS) in a Visual C++ 5.0
+ADO application to query Index Server 2.0. The following topics are discussed:
+
+ - How to Obtain the OLE DB Provider for Index Server (MSIDXS)
+
+ - MSIDXS and Index Server Resources/Points of Information
+
+ - How to Find Knowledge Base Articles on MSIDXS Provider
+
+
+
+MORE INFORMATION
+================
+
+How to Obtain the OLE DB Provider for Index Server (MSIDXS)
+-----------------------------------------------------------
+
+Index Server 2.0 and the OLE DB Provider for Index Server (MSIDXS) ship with
+Windows NT 4.0 Option Pack, available free for download at:
+
+   http://www.microsoft.com/ntserver
+
+MSIDXS and Index Server Resources/Points of Information
+-------------------------------------------------------
+
+For more information on Index Server, refer to the Index Server documentation in
+Windows NT Option Pack documentation. The chapter "SQL Access to Index Server
+Data" is the best reference for SQL query syntax for Index Server.
+
+How to Find Knowledge Base Articles on MSIDXS Provider
+------------------------------------------------------
+
+To find articles on MSIDXS Provider in the Microsoft Knowledge Base (KB) on the
+Web, connect to
+
+   http://msdn.microsoft.com/support/
+
+On this site, select "OLE DB" as the product. To search for other Index Server
+articles, select "Index Server" as the product.
+
+For the MSDN or other non-Web-based Knowledge Base search mechanisms, you can use
+the keyword oledbProvIndex, which is included in all articles on MSIDXS
+Provider.
+
+
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q184480 FILE: Idxadovc.exe Index Server, OLE DB & ADO in Visual C++
+
+Additional query words: oledbProvIndex kbdse
+
+======================================================================
+Keywords          : kbole kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 
+Technology        : kbVCsearch kbiisSearch kbAudDeveloper kbOLEDBSearch kbMDACSearch kbMDAC200 kbMDAC210 kbMDAC250 kbMDAC260 kbOLEDBProvIdvServ200 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search kbOLEDBProvSearch
+Version           : :2.0,2.1,2.5,2.6,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

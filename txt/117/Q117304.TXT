@@ -1,0 +1,840 @@
+DOCUMENT:Q117304  08-AUG-2001  [winnt]
+TITLE   :RAS Event ID (Error Code) Information
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.1,3.5,3.51,4.0;Win95
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains Remote Access Service (RAS) Event IDs as they appear in
+the Event Viewer System Log of Windows versions 3.1 and 3.5. The following list
+contains the error code (RAS EVENT ID), the symbol name, the message text, a
+brief explanation of the code, and a suggested course of action to correct the
+problem causing the error code.
+
+NOTE: RAS Event IDs begin with RAS_LOG_BASE = 20000. However, RAS Event ID codes
+specific to Windows NT version 3.5 begin with RAS_LOG_BASE = 20064.
+
+MORE INFORMATION
+================
+
+RAS EVENT ID: 20001
+SYMBOL NAME : RASLOG_CANT_LOAD_NBGATEWAY
+MESSAGE TEXT: Cannot load the NetBIOS gateway DLL components.
+EXPLANATION : The RAS NetBIOS gateway could not load.
+USER ACTION : Reconfigure RAS by removing and then reinstalling it.
+
+RAS EVENT ID: 20002
+SYMBOL NAME : RASLOG_CANT_OPEN_REGKEY
+MESSAGE TEXT: Cannot open the RAS Server parameters registry key.
+EXPLANATION : Registry problem.
+USER ACTION : Reconfigure RAS by removing and then reinstalling it.
+
+RAS EVENT ID: 20003
+SYMBOL NAME : RASLOG_CANT_GET_REGKEYVALUES
+MESSAGE TEXT: Cannot access registry key values.
+EXPLANATION : Registry problem.
+USER ACTION : Reconfigure RAS by removing and then reinstalling it.
+
+RAS EVENT ID: 20004
+SYMBOL NAME : RASLOG_NOT_ENOUGH_MEMORY
+MESSAGE TEXT: Memory allocation failure.
+EXPLANATION : Not enough free memory for the RAS service to function
+              properly.
+USER ACTION : Free up some memory on the server by optimizing memory
+              allocations to other resources, or by stopping some
+              non-essential services, or by installing additional memory on
+              the server.
+
+RAS EVENT ID: 20005
+SYMBOL NAME : RASLOG_CANT_ENUM_REGKEY_VALUES
+MESSAGE TEXT: Cannot enumerate registry key values.
+EXPLANATION : Possible registry problem.
+USER ACTION : Reconfigure RAS by removing and then reinstalling it.
+
+RAS EVENT ID: 20006
+SYMBOL NAME : RASLOG_INVALID_PARAMETER_TYPE
+MESSAGE TEXT: Parameter %1 has an invalid type.
+EXPLANATION :
+USER ACTION : Reconfigure RAS by removing and then reinstalling it.
+
+RAS EVENT ID: 20007
+SYMBOL NAME : RASLOG_CANT_ENUM_PORTS
+MESSAGE TEXT: Cannot enumerate the RAS Connection Manager ports
+EXPLANATION : Multiport adapter may not have been installed properly
+              (Hardware and/or Software).
+USER ACTION : Use Network Control to reconfigure the multiple port adapter.
+
+RAS EVENT ID: 20008
+SYMBOL NAME : RASLOG_NO_DIALIN_PORTS
+MESSAGE TEXT: The Remote Access Server is not configured to receive calls.
+EXPLANATION : The RAS server is configured for dialing out only or some
+              other program is using the port.
+USER ACTION : Use Network Control to reconfigure RAS for Dial out and
+              Receive calls.
+
+RAS EVENT ID: 20009
+SYMBOL NAME : RASLOG_CANT_RECEIVE_FRAME
+MESSAGE TEXT: Cannot receive initial frame on port %1. The user has been
+              Disconnected.
+EXPLANATION : RAS may not be installed on client.
+USER ACTION : Reinstall RAS on the client.
+
+RAS EVENT ID: 20010
+SYMBOL NAME : RASLOG_AUTODISCONNECT
+MESSAGE TEXT: The user connected to port %1 has been disconnected due to
+              inactivity.
+EXPLANATION :
+USER ACTION : Redial and then reconnect to the port.
+
+RAS EVENT ID: 20011
+SYMBOL NAME : RASLOG_EXCEPT_MEMORY
+MESSAGE TEXT: The user connected to port %1 has been disconnected because
+              there is not enough memory available in the system.
+EXPLANATION :
+USER ACTION : Install more memory on the RAS server.
+
+RAS EVENT ID: 20012
+SYMBOL NAME : RASLOG_EXCEPT_SYSTEM
+MESSAGE TEXT: The user connected to port %1 has been disconnected due to a
+              system error.
+EXPLANATION : A system error caused the RAS user to be disconnected.
+USER ACTION : Look in the Event Viewer for other system error messages,
+              correct the failure and redial.
+
+RAS EVENT ID: 20013
+SYMBOL NAME : RASLOG_EXCEPT_LAN_FAILURE
+MESSAGE TEXT: The user connected to port %1 has been disconnected due to a
+              fatal network error on the local network.
+EXPLANATION : Possible physical network error.
+USER ACTION : Verify that the network adapter is connected and working
+              properly.
+
+RAS EVENT ID: 20014
+SYMBOL NAME : RASLOG_EXCEPT_ASYNC_FAILURE
+MESSAGE TEXT: The user connected to port %1 has been disconnected due to a
+              fatal network error on the async network.
+EXPLANATION : Possible serial port problems.
+USER ACTION : Verify that the serial ports are working properly.
+
+RAS EVENT ID: 20015
+SYMBOL NAME : RASLOG_DEV_HW_ERROR
+MESSAGE TEXT: The communications device attached to port %1 is not
+              Functioning.
+EXPLANATION : Hardware failure.
+USER ACTION : Verify that the modem is working properly. Check the
+              cabling.
+
+RAS EVENT ID: 20016
+SYMBOL NAME : RASLOG_AUTH_FAILURE
+MESSAGE TEXT: The user %1 has connected and failed to authenticate on port
+              %2. The line has been disconnected.
+EXPLANATION :
+USER ACTION : Check the permissions on the user in the RAS admin utility.
+              Check user name and password.
+
+RAS EVENT ID: 20017
+SYMBOL NAME : RASLOG_AUTH_SUCCESS
+MESSAGE TEXT: The user %1 has connected and has been successfully
+              authenticated on port %2.
+EXPLANATION :
+USER ACTION : None
+
+RAS EVENT ID: 20018
+SYMBOL NAME : RASLOG_AUTH_CONVERSTION_FAILURE
+MESSAGE TEXT: The user connected to port %1 has been disconnected because
+              there was a transports-level error during the authentication
+              conversation.
+EXPLANATION :
+USER ACTION : Redial and try again
+
+RAS EVENT ID: 20019
+SYMBOL NAME : RASLOG_USER_DISCONNECTED
+MESSAGE TEXT: The user has disconnected from port %2.
+EXPLANATION : The remote user has hung up.
+USER ACTION : NONE
+
+RAS EVENT ID: 20020
+SYMBOL NAME : RASLOG_CANT_RESET_LAN
+MESSAGE TEXT: Cannot reset the network adapter for LANA %1. The error code
+              is the data.
+EXPLANATION :
+USER ACTION : Reconfigure RAS.
+
+RAS EVENT ID: 20021
+SYMBOL NAME : RASLOG_CANT_GET_COMPUTERNAME
+MESSAGE TEXT: Remote Access Server Security Failure. Cannot locate the
+              computer name.
+EXPLANATION : The message appears when the remote computer name cannot be
+              found, so the computer cannot be validated.
+USER ACTION : Reconfigure RAS on the client.
+
+RAS EVENT ID: 20022
+SYMBOL NAME : RASLOG_CANT_ADD_RASSECURITYNAME
+MESSAGE TEXT: Remote Access Server Security Failure. Cannot add the name
+              for communication with the security agent on LANA %1.
+EXPLANATION : Possible duplicate name on LANA %1.
+USER ACTION : Verify that another server on LANA %1 does not have the same
+              name.
+
+RAS EVENT ID: 20023
+SYMBOL NAME : RASLOG_CANT_GET_ADAPTERADDRESS
+MESSAGE TEXT: Remote Access Server Security Failure. Cannot access the
+              network adapter address on LANA %1.
+EXPLANATION :
+USER ACTION : Reconfigure RAS.
+
+RAS EVENT ID: 20024
+SYMBOL NAME : RASLOG_SESSOPEN_REJECTED
+MESSAGE TEXT: Remote Access Server Security Failure. The security agent
+              has rejected the Remote Access server's call to establish a
+              session on LANA %1.
+EXPLANATION : A remote access security agent is running on your local
+              network.
+USER ACTION : Contact your system administrator.
+
+RAS EVENT ID: 20025
+SYMBOL NAME : RASLOG_START_SERVICE_REJECTED
+MESSAGE TEXT: Remote Access Server Security Failure. The security agent
+              has rejected the Remote Access server's request to start the
+              service on this computer on LANA %1.
+EXPLANATION : A remote access security agent is running on your local
+              network.
+USER ACTION : Contact your system administrator.
+
+RAS EVENT ID: 20026
+SYMBOL NAME : RASLOG_SECURITY_NET_ERROR
+MESSAGE TEXT: Remote Access Server Security Failure. A network error has
+              occurred when trying to establish a session with the security
+              agent on LANA %1. The error code is the data.
+EXPLANATION :
+USER ACTION : Reconfigure RAS
+
+RAS EVENT ID: 20027
+SYMBOL NAME : RASLOG_EXCEPT_OSRESNOTAV
+MESSAGE TEXT: The user connected to port %1 has been disconnected because
+              there are no operating system resources available.
+EXPLANATION :
+USER ACTION : Free up some memory on the server by optimizing memory
+              allocations to other resources, or by stopping some
+              non-essential services, or by installing additional memory on
+              the server.
+
+RAS EVENT ID: 20028
+SYMBOL NAME : RASLOG_EXCEPT_LOCKFAIL
+MESSAGE TEXT: The user connected to port %1 has been disconnected because
+              of a failure to lock user memory.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20029
+SYMBOL NAME : RASLOG_CANNOT_OPEN_RASHUB
+MESSAGE TEXT: Remote Access Connection Manager failed to start because
+              RASHUB could not be opened.
+EXPLANATION :
+USER ACTION : Reinstall RAS
+
+RAS EVENT ID: 20030
+SYMBOL NAME : RASLOG_CANNOT_INIT_SEC_ATTRIBUTE
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not initialize the security attributes.
+EXPLANATION :
+USER ACTION : Restart the computer, or reinstall RAS if problem persists.
+
+RAS EVENT ID: 20031
+SYMBOL NAME : RASLOG_CANNOT_GET_ENDPOINTS
+MESSAGE TEXT: Remote Access Connection Manager failed to start because no
+              endpoints were available.
+EXPLANATION :
+USER ACTION : Restart the computer, or reinstall RAS if problem persists.
+
+RAS EVENT ID: 20032
+SYMBOL NAME : RASLOG_CANNOT_GET_MEDIA_INFO
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not load one or more communication DLL's.
+EXPLANATION : Possible hardware problem.
+USER ACTION : Ensure that your communications H/W is installed properly
+              and restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20033
+SYMBOL NAME : RASLOG_CANNOT_GET_PORT_INFO
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not locate port information from Media DLL's.
+EXPLANATION : Possible hardware problem.
+USER ACTION : Ensure that your communications H/W is installed properly
+              and restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20034
+SYMBOL NAME : RASLOG_CANNOT_GET_PROTOCOL_INFO
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not access protocol information from the registry.
+EXPLANATION : Possible registry problem.
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20035
+SYMBOL NAME : RASLOG_CANNOT_REGISTER_LSA
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not register with the Local Security Authority.
+EXPLANATION : Possible Registry problem.
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20036
+SYMBOL NAME : RASLOG_CANNOT_CREATE_FILEMAPPING
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not create shared file mapping.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20037
+SYMBOL NAME : RASLOG_CANNOT_INIT_BUFFERS
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not create buffers.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20038
+SYMBOL NAME : RASLOG_CANNOT_INIT_REQTHREAD
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not access resources.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20039
+SYMBOL NAME : RASLOG_CANNOT_START_WORKERS
+MESSAGE TEXT: Remote Access Connection Manager failed to start because it
+              could not start worker threads.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20040
+SYMBOL NAME : RASLOG_CANT_GET_LANNETS
+MESSAGE TEXT: Remote Access Server failure. Cannot find the LANA numbers
+              for the network adapters.
+EXPLANATION : RAS was not installed properly.
+USER ACTION : Remove and reinstall RAS.
+RAS EVENT ID: 20041
+SYMBOL NAME : RASLOG_CANNOT_OPEN_SERIAL_INI
+MESSAGE TEXT: RASSER.DLL cannot open the SERIAL.INI file.
+EXPLANATION :
+USER ACTION : Check configuration of RAS with the Control Panel Network
+              tool.
+
+RAS EVENT ID: 20042
+SYMBOL NAME : RASLOG_CANNOT_GET_ASYNCMAC_HANDLE
+MESSAGE TEXT: An attempt by Rasser.dll to get a async media access control
+              handle failed.
+EXPLANATION :
+USER ACTION : Check configuration of RAS with the Control Panel Network
+              tool. Reinstall RAS if needed.
+
+RAS EVENT ID: 20043
+SYMBOL NAME : RASLOG_CANNOT_LOAD_SERIAL_DLL
+MESSAGE TEXT: RASMXS.DLL cannot load RASSER.DLL.
+EXPLANATION :
+USER ACTION : Remove and re-install RAS
+
+RAS EVENT ID: 20044
+SYMBOL NAME : RASLOG_CANNOT_ALLOCATE_ROUTE
+MESSAGE TEXT: The Remote Access Server cannot allocate a route for the
+              user connected on port %1. The user has been disconnected.
+              Check the configuration of your Remote Access Service.
+EXPLANATION :
+USER ACTION : Check configuration of RAS with the Control Panel Network
+              tool. Reinstall RAS if needed.
+
+RAS EVENT ID: 20045
+SYMBOL NAME : RASLOG_ADMIN_MEMORY_FAILURE
+MESSAGE TEXT: Cannot allocate memory in the admin support thread for the
+              Remote Access Service.
+EXPLANATION : Since the memory cannot be allocated, RAS cannot be used.
+USER ACTION : Check configuration of RAS with the Control Panel Network
+              tool. Reinstall RAS if needed.
+
+RAS EVENT ID: 20046
+SYMBOL NAME : RASLOG_ADMIN_THREAD_CREATION_FAILURE
+MESSAGE TEXT: Cannot create an instance thread in the admin support thread
+              for Remote Access Service.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20047
+SYMBOL NAME : RASLOG_ADMIN_PIPE_CREATION_FAILURE
+MESSAGE TEXT: Cannot create a named pipe instance in the admin support
+              thread for Remote Access Service.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS
+
+RAS EVENT ID: 20048
+SYMBOL NAME : RASLOG_ADMIN_PIPE_FAILURE
+MESSAGE TEXT: General named pipe failure occurred in the admin support
+              thread for Remote Access Service.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS.
+
+RAS EVENT ID: 20049
+SYMBOL NAME : RASLOG_ADMIN_INVALID_REQUEST
+MESSAGE TEXT: An invalid request was sent to the admin support thread for
+              Remote Access Service, possibly from a down level admin
+              tool. The request was not processed.
+EXPLANATION :
+USER ACTION : Restart the computer. If problem persists, reinstall RAS
+
+RAS EVENT ID: 20050
+SYMBOL NAME : RASLOG_USER_ACTIVE_TIME
+MESSAGE TEXT: The user %1<machine\username> connected on COM port %2
+              <port> on %3<date\time> disconnected on %4 <date\time>.
+              The user was active %5 minutes. %6 bytes were %7
+              <sent|received>.  Disconnected at %8<USER|ADMIN> request.
+
+EXPLANATION : Either the RAS server initiated the disconnect "ADMIN" or
+              the dialin client "USER" initiated the disconnect request.
+USER ACTION : If ADMIN initiated the disconnect check the registry
+              Entry: ...\RemoteAccess\Parameters\AutoDisconnect.
+
+RAS EVENT ID: 20051
+SYMBOL NAME : RASLOG_REGVALUE_OVERIDDEN
+MESSAGE TEXT: Using the default value for registry parameter %1 because
+              the value given is not in the legal range for the parameter.
+EXPLANATION : Illegal entry in the registry for the parameter given.
+USER ACTION : Check the registry entries.
+
+RAS EVENT ID: 20052
+SYMBOL NAME : RASLOG_AUTH_TIMEOUT
+MESSAGE TEXT: The user connected to port %1 has been disconnected due an
+              authentication time-out.
+EXPLANATION : The caller has taken too long to authenticate.
+USER ACTION : Try to connect to port again. If problem persisted, increase
+              the authentication time.
+
+RAS EVENT ID: 20053
+SYMBOL NAME : RASLOG_AUTH_NO_PROJECTIONS
+MESSAGE TEXT: The user %1 connected to port %2 has been disconnected
+              because the computer could not be projected onto the
+              network.
+EXPLANATION :
+USER ACTION : Disconnect and the reconnect to the network. Make sure that
+              the remote computer has a UNIQUE computer name.
+
+RAS EVENT ID: 20054
+SYMBOL NAME : RASLOG_AUTH_INTERNAL_ERROR
+MESSAGE TEXT: The user %1 connected to port %2 has been disconnected
+              because and internal authentication error occurred.
+EXPLANATION :
+USER ACTION : Try to connect to port again. Restart and reinstall RAS.
+
+RAS EVENT ID: 20055
+SYMBOL NAME : RASLOG_NO_LANNETS_AVAILABLE
+MESSAGE TEXT: The Remote Access server could not be started because it has
+              been configured to access the network and there are no
+              network adapters available.
+EXPLANATION : The configuration of RAS does not match the configuration of
+              the computer.
+USER ACTION : Reconfigure RAS to access the local computer only, or put a
+              network adapter on the computer.
+
+RAS EVENT ID: 20056
+SYMBOL NAME : RASLOG_NETBIOS_SESSION_ESTABLISHED
+MESSAGE TEXT: The user %1 established a NetBIOS session between the remote
+              workstation and the network server.
+EXPLANATION :
+USER ACTION : None
+
+RAS EVENT ID: 20057
+SYMBOL NAME : RASLOG_RASMAN_NOT_AVAILABLE
+MESSAGE TEXT: Remote Access Service failed to start because the Remote
+              Access Connection Manager failed to initialize.
+EXPLANATION : RAS Connection Manager is configured incorrectly.
+USER ACTION : Check the Event viewer for related errors to determine the
+              configuration problem.
+
+RAS EVENT ID: 20058
+SYMBOL NAME : RASLOG_CANT_ADD_NAME
+MESSAGE TEXT: Cannot add the remote computer name %1 on LANA %2. the
+              error code is the data.
+EXPLANATION : Another computer on the network has the same name as the
+              remote computer.
+USER ACTION : Remove the other computer from the network, or rename the
+              remote computer.
+
+RAS EVENT ID: 20059
+SYMBOL NAME : RASLOG_CANT_DELETE_NAME
+MESSAGE TEXT: Cannot delete the remote computer name %1 from LANA %2. The
+              error code is the data.
+EXPLANATION : An internal error has occurred.
+USER ACTION : Get the data from the Event Viewer and contact technical
+              support.
+
+RAS EVENT ID: 20060
+SYMBOL NAME : RASLOG_CANT_ADD_GROUPNAME
+MESSAGE TEXT: Cannot add remote computer group name %1 on LANA %2. The
+              error code is the data.
+EXPLANATION : A computer has the same name as the remote computer group
+              name.
+USER ACTION : Remove the computer with the duplicate name from the
+              network.
+
+RAS EVENT ID: 20061
+SYMBOL NAME : RASLOG_CANT_DELETE_GROUPNAME
+MESSAGE TEXT: Cannot delete the remote computer group name %1 from LANA
+              %2. The error code is the data.
+EXPLANATION : An internal error has occurred.
+USER ACTION : Get the data from the Event Viewer and contact technical
+              support.
+
+RAS EVENT ID: 20062
+SYMBOL NAME : RASLOG_UNSUPPORTED_BPS
+MESSAGE TEXT: The modem on %1 moved to an unsupported BPS rate.
+EXPLANATION : The COM port does not support the speed that the modem tried
+              to use.
+USER ACTION : Try a different COM port, or change the BPS rate to a
+              supported value.
+
+RAS EVENT ID: 20063
+SYMBOL NAME : RASLOG_SERIAL_QUEUE_SIZE_SMALL
+MESSAGE TEXT: The serial driver could not allocate adequate I/O queues.
+              the may result in a unreliable connection.
+EXPLANATION : If you are using a muliport adapter card, it may be
+              configured to use too many ports. Or you are out of memory.
+USER ACTION : Reduce the number of ports being used on the multiport
+              adapter. Add more memory.
+
+RAS EVENT ID: 20064
+SYMBOL NAME : RASLOG_CANNOT_REOPEN_BIPLEX_PORT
+MESSAGE TEXT: Remote Access connection Manager could not re-open bi-plex
+              port %1. The port will not be available to calling in or
+              calling out. Restart all Remote Access Service components.
+EXPLANATION : Possible hardware of configuration problem.
+USER ACTION : Stop and restart all RAS services and components. If
+              problems still persists, reinstall RAS
+
+RAS EVENT ID: 20065
+SYMBOL NAME : RASLOG_DISCONNECT_ERROR
+MESSAGE TEXT: Internal Error: Disconnect operation on %1 completed with an
+              error.
+EXPLANATION : Disconnected from remote user with an error.
+USER ACTION : Have the remote user call in again and retry operation.
+              Restart the computer if needed.
+
+RAS EVENT ID: 20066
+SYMBOL NAME : RASLOG_PPP_PIPE_FAILURE
+MESSAGE TEXT: General named pipe failure occurred in the Point to Point
+              Protocol engine.
+EXPLANATION :
+USER ACTION : Restart the computer. Reinstall RAS with PPP if needed
+
+RAS EVENT ID: 20067
+SYMBOL NAME : RASLOG_CANNOT_INIT_PPP
+MESSAGE TEXT: Remote Access Connection Manager failed to start because the
+              Point to Point Protocol failed to initialize.
+EXPLANATION :
+USER ACTION : Restart the computer. Reinstall RAS with PPP if needed
+
+RAS EVENT ID: 20068
+SYMBOL NAME : RASLOG_CLIENT_CALLED_BACK
+MESSAGE TEXT: The user %1 on port %2 was called back at the number %3.
+EXPLANATION :
+USER ACTION : None
+
+RAS EVENT ID: 20069
+SYMBOL NAME : RASLOG_PROXY_CANT_CREATE_PROCESS
+MESSAGE TEXT: The Remote Access Gateway Proxy could not create a process.
+EXPLANATION :
+USER ACTION : Check RAS Gateway installation.
+
+RAS EVENT ID: 20070
+SYMBOL NAME : RASLOG_PROXY_CANT_CREATE_PIPE
+MESSAGE TEXT: The Remote Access Gateway Proxy could not create a process.
+EXPLANATION :
+USER ACTION : Check RAS Gateway installation.
+
+RAS EVENT ID: 20071
+SYMBOL NAME : RASLOG_PROXY_CANT_CONNECT_PIPE
+MESSAGE TEXT: The Remote Access Gateway Proxy could not establish a named
+              pipe connection with the Remote Access Supervisor Proxy.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20072
+SYMBOL NAME : RASLOG_PROXY_PIPE_FAILURE
+MESSAGE TEXT: A general error occurred on the named pipe in the remote
+              Access %1 Proxy.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20073
+SYMBOL NAME : RASLOG_CANT_OPEN_PPP_REGKEY
+MESSAGE TEXT: Cannot open obtain information about the PPP key or one its
+              subkeys.
+EXPLANATION : Possible registry problem.
+USER ACTION : Check the registry for PPP entries
+
+RAS EVENT ID: 20074
+SYMBOL NAME : RASLOG_PPP_CANT_LOAD_DLL
+MESSAGE TEXT: Point to Point Protocol engine was unable to load the %1
+              module.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20075
+SYMBOL NAME : RASLOG_PPPCP_DLL_ERROR
+MESSAGE TEXT: The Point to Point Protocol module %1 return an error while
+              initializing.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20076
+SYMBOL NAME : RASLOG_NO_AUTHENTICATION_CPS
+MESSAGE TEXT: The Point to Point protocol failed to load the required PAP
+              and/or CHAP authentication modules.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20077
+SYMBOL NAME : RASLOG_PPP_FAILURE
+MESSAGE TEXT: An error occurred in the Point to Point protocol module. The
+              error code is the data.
+EXPLANATION :
+USER ACTION : Save the data from the event log and call Tech Support.
+
+RAS EVENT ID: 20078
+SYMBOL NAME : RASLOG_IPXCP_NETWORK_NUMBER_CONFLICT
+MESSAGE TEXT: The IPX network number %1 configured for the WAN interface
+              is already in use on the LAN.
+EXPLANATION :
+USER ACTION : Reconfigure the IPX network number in question.
+
+RAS EVENT ID: 20079
+SYMBOL NAME : RASLOG_IPXCP_CANNOT_CHANGE_WAN_NETWORK_NUMBER
+MESSAGE TEXT: The IPX network number %1 requested by the remote client for
+              the WAN interface cannot be used on the local IPX router
+              because the router is not configured to change its local WAN
+              network numbers. You should configure the IPX Remote Access
+              Service to allocate addresses automatically and use
+              different address for remote IPX clients.
+EXPLANATION :
+USER ACTION : You should configure the IPX Remote Access Service to
+              allocate addresses automatically and use different address
+              for remote IPX clients.
+
+RAS EVENT ID: 20080
+SYMBOL NAME : RASLOG_PASSWORD_EXPIRED
+MESSAGE TEXT: The password for user %1\%2 connected on port %3 has
+              expired. The line has been disconnected.
+EXPLANATION : The user password has expired.
+USER ACTION : Change password. Contact administrator if you are unable to
+              change the password without logging on first.
+
+RAS EVENT ID: 20081
+SYMBOL NAME : RASLOG_ACCT_EXPIRED
+MESSAGE TEXT: The account for user %1\%2 connected on port %3 has expired.
+              The line has been disconnected.
+EXPLANATION : The user account has expired.
+USER ACTION : Contact the administrator.
+
+RAS EVENT ID: 20082
+SYMBOL NAME : RASLOG_NO_DIALIN_PRIVILEGE
+MESSAGE TEXT: The account for user %1\%2 connected on port %3 does not
+              have Remote Access privilege. The line has been disconnected.
+EXPLANATION : The user account does not have Remote Access privileges.
+USER ACTION : Contact the administrator.
+
+RAS EVENT ID: 20083
+SYMBOL NAME : RASLOG_UNSUPPORTED_VERSION
+MESSAGE TEXT: The software version of the user %1\%2 connected on port %3
+              is unsupported. The line has been disconnected.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20084
+SYMBOL NAME : RASLOG_ENCRYPTION_REQUIRED
+MESSAGE TEXT: The server machine is configured to require data encryption.
+              The machine for user %1\%2 connected on port %3 does not
+              support encryption. The line has been disconnected.
+EXPLANATION : The RAS Server (Windows NT 3.5 or later)is configured to use
+              Data Encryption.
+USER ACTION : Enable Data encryption via the RAS Phonebook Security entry.
+
+RAS EVENT ID: 20085
+SYMBOL NAME : RASLOG_NO_SECURITY_CHECK
+MESSAGE TEXT: Remote Access Server Security Failure. Could not reset lana
+              %1 (the error code is the data). Security check not
+              performed.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20086
+SYMBOL NAME : RASLOG_GATEWAY_NOT_ACTIVE_ON_NET
+MESSAGE TEXT: The Remote Access Server could not reset lana %1 (the error
+              code is the data) and will not be active on it.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20087
+SYMBOL NAME : RASLOG_IPXCP_NO_NET_NUMBER
+MESSAGE TEXT: The IPX network number for the LAN adapter with the
+              MAC address %1 on the local machine has not been configured
+              or could not be auto-detected. The IPX Router will not work
+              on this LAN segment.
+EXPLANATION : RAS Server is unable to route NWLink traffic from the RAS
+              client.
+USER ACTION : Contact the administrator.
+
+For additional information, see the following article in the Microsoft
+Knowledge Base
+
+   ARTICLE-ID: Q133032
+   TITLE : Event ID 20087 Appears When You Dial a RAS Server
+
+RAS EVENT ID: 20088
+SYMBOL NAME : RASLOG_SRV_ADDR_LEASE_LOST
+MESSAGE TEXT: The Remote Access Server was unable to renew the lease for
+              IP Address %1 from the DHCP Server. ALL connected users using
+              IP will be unable to access network resources. Users can re-
+              connect to the server to restore IP connectivity.
+EXPLANATION : The RAS server is unable to communicate through TCP/IP.
+USER ACTION : Contact the administrator. Possible DHCP Server Problem.
+
+RAS EVENT ID: 20089
+SYMBOL NAME : RASLOG_CLIENT_ADDR_LEASE_LOST
+MESSAGE TEXT: The Remote Access Server was unable to renew the lease for
+              IP Address %1 from the DHCP Server. The user assigned with
+              this IP address will be unable to access network resources
+              using IP. Reconnecting to the server will restore IP
+              connectivity.
+EXPLANATION : The RAS client is unable to communicate to the remote
+              Network through TCP/IP.
+USER ACTION : Contact the administrator. Possible DHCP Server Problem.
+
+RAS EVENT ID: 20090
+SYMBOL NAME : RASLOG_ADDRESS_NOT_AVAILABLE
+MESSAGE TEXT: The Remote Access Server was unable to acquire an IP Address
+              from the DHCP Server to assign to the incoming user.
+EXPLANATION : The RAS client will be unable to communicate to the remote
+              network through TCP/IP.
+USER ACTION : Contact the administrator. Possible DHCP Server Problem.
+
+RAS EVENT ID: 20091
+SYMBOL NAME : RASLOG_SRV_ADDR_NOT_AVAILABLE
+MESSAGE TEXT: The Remote Access Server was unable to acquire an IP Address
+              from the DHCP Server to be used on the Server Adapter.
+              Incoming user will be unable to connect using IP.
+EXPLANATION : The RAS client will be unable to communicate to the remote
+              network through TCP/IP.
+USER ACTION : Contact the administrator. Possible DHCP Server Problem.
+
+RAS EVENT ID: 20092
+SYMBOL NAME : RASLOG_SRV_ADDR_ACQUIRED
+MESSAGE TEXT: The Remote Access Server acquired IP Address %1 from the
+              DHCP Server to be used on the Server Adapter.
+EXPLANATION : The RAS Server has an IP address for its NDISWan connection.
+USER ACTION : None.
+
+RAS EVENT ID: 20093
+SYMBOL NAME : RASLOG_CALLBACK_FAILURE
+MESSAGE TEXT: The Remote Access Server's attempt to callback user %1\%2 on
+              port %3 failed with RAS error code %4.
+EXPLANATION : The RAS Server was unable to complete a callback
+USER ACTION : Contact Administrator.
+
+RAS EVENT ID: 20094
+SYMBOL NAME : RASLOG_PROXY_WRITE_PIPE_FAILURE
+MESSAGE TEXT: A general error occurred writing to the named pipe in the
+              Remote Access Proxy.
+EXPLANATION :
+USER ACTION :
+
+RAS EVENT ID: 20095
+SYMBOL NAME : RASLOG_CANT_OPEN_SECMODULE_KEY
+MESSAGE TEXT: Cannot open the RAS security host Registry key.
+EXPLANATION : Registry problem.
+USER ACTION : Reconfigure RAS by removing and then reinstalling it.
+
+RAS EVENT ID: 20096
+SYMBOL NAME : RASLOG_CANT_LOAD_SECDLL
+MESSAGE TEXT: Cannot load the Security host module component.
+EXPLANATION : Registry Problem.
+USER ACTION : Reconfigure RAS by removing and then reinstalling it.
+
+RAS EVENT ID: 20097
+SYMBOL NAME : RASLOG_SEC_AUTH_FAILURE
+MESSAGE TEXT: The user %1 has connected and failed to authenticate with a
+              third party security on port %2. The line has been
+              disconnected.
+EXPLANATION : The security host connected to the RAS server failed to
+              authenticate the user.
+USER ACTION : Contact the administrator.
+
+RAS EVENT ID: 20098
+SYMBOL NAME : RASLOG_SEC_AUTH_INTERNAL_ERROR
+MESSAGE TEXT: The user connected to port %1 has been disconnected because
+              an internal authentication error occurred in the third party
+              security module. The error code is in the data.
+EXPLANATION : The security host connected to the RAS server failed to
+              authenticate the user.
+USER ACTION : Contact the administrator.
+
+RAS EVENT ID: 20099
+SYMBOL NAME : RASLOG_CANT_RECEIVE_BYTES
+MESSAGE TEXT: Cannot receive initial data on port %1. The user has been
+              disconnected.
+EXPLANATION : Possible bad phone lines or bad modem.
+USER ACTION :
+
+RAS EVENT ID: 20100
+SYMBOL NAME : RASLOG_AUTH_DIFFUSER_FAILURE
+MESSAGE TEXT: The user was authenticated as %1 by the third party security
+              host module but was authenticated as %2 by the RAS security.
+              The user has been disconnected.
+EXPLANATION : The security host connected to the RAS server authenticated
+              a different user than was passed to the RAS server.
+USER ACTION : Use the same user name for the security host as the RAS
+              server.
+
+RAS EVENT ID: 20101
+SYMBOL NAME : RASLOG_LICENSE_LIMIT_EXCEEDED
+MESSAGE TEXT: A user was unable to connect on port %1. No more connections
+              can be made to this remote computer because the computer has
+              exceeded its client license limit.
+EXPLANATION : The RAS server ran out of per server licenses.
+USER ACTION : Contact the administrator. Buy more per server licenses, or
+              see the following article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q135680
+   TITLE : RAS Err Msg: Unable to Connect. No More Connections can be...
+
+Additional query words: ppplog ntfaqipr
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWin95search kbWinNT310Search kbWinNTW310Search kbZNotKeyword3
+Version           : WinNT:3.1,3.5,3.51,4.0;Win95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

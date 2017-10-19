@@ -1,0 +1,68 @@
+DOCUMENT:Q214480  10-AUG-2001  [winnt]
+TITLE   :Err Msg: Incorrect Password or Unknown Username
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run the Convert.exe tool on the hard disk, you may receive the
+following error message:
+
+   Incorrect password or unknown username for:\\<Computer>\c$
+
+RESOLUTION
+==========
+
+To work around this behavior, remove the computer from the domain and then add
+it back to the domain:
+
+1. Click Start, click Run, type "srvmgr" (without the quotation marks), and then
+   press ENTER.
+
+2. Click the computer that you want to remove, and then press DELETE.
+
+3. Click Yes, and then add the computer to the domain.
+
+For information about how to add a computer to a domain, click Contents on the
+Help menu, click the Index tab, type "adding" (without the quotation marks),
+click Display, and then double-click the "Adding a Computer to the Domain"
+topic.
+
+For additional information about this error message, see the following article in
+the Microsoft Knowledge Base: Prompted for Password When Connecting to Windows
+NT
+
+Additional query words: reset machine account
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

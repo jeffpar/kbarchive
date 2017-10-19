@@ -1,0 +1,60 @@
+DOCUMENT:Q25371  18-DEC-2000  [win95x]
+TITLE   :Underlining Spaces in Microsoft Windows Write
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:1.x,2.x,3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 1.1, 2.03, 2.1, 2.11, 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To underline spaces in Microsoft Windows Write and keep them on the screen after
+you press ENTER, you must type a character at the end of the underlined spaces,
+as in the following steps:
+
+1. Press F8 or choose Underline from the Character menu.
+
+2. Type the desired number of underlined spaces.
+
+3. Press SHIFT+-(MINUS SIGN).
+
+4. Press ENTER.
+
+The underlined spaces remain on the screen.
+
+MORE INFORMATION
+================
+
+You can achieve the same effect by typing SHIFT+- multiple times for the desired
+number of underlined spaces.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3.1 3.10 3.11 win30 win31 wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin110 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:1.x,2.x,3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

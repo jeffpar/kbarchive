@@ -1,0 +1,54 @@
+DOCUMENT:Q112299  27-JUL-2001  [visualc]
+TITLE   :DOC: MSVCRT10.DLL and MSFRT10.DLL Are Redistributable
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbreadme kbdocerr kbGenInfo kbVC kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 1.0 
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The REDISTRB.WRI file included with Visual C++ 32-bit Edition lists those files
+that can be legally redistributed with applications created with Visual C++ for
+Windows NT. The REDISTRB.WRI file does not list MSVCRT10.DLL; however, this file
+is also legally redistributable.
+
+MSVCRT10.DLL is needed by applications that have been built to use the
+dynamic-link library (DLL) version of the C run-time library. It is legal for
+registered owners to redistribute MSVCRT10.DLL with applications created with
+Visual C++ for Windows NT.
+
+MSFRT10.DLL shipped with Microsoft FORTRAN PowerStation 32 for Windows NT,
+version 1.0 is also redistributable. This DLL contains the dynamic-link library
+version of the FORTRAN run-time library.
+
+Additional query words: FPSNT 1.00
+
+======================================================================
+Keywords          : kbreadme kbdocerr kbGenInfo kbVC kbArtTypeINF 
+Technology        : kbVCsearch kbAudDeveloper kbFortranSearch kbvc100 kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

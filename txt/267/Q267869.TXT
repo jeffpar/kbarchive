@@ -1,0 +1,59 @@
+DOCUMENT:Q267869  08-AUG-2001  [winnt]
+TITLE   :Windows NT 4.0 SP 6 May Make Empty Folder Structure C:\Inetpub
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT 4.0 Service Pack 6 or Service Pack 6a, an empty
+folder structure may be created in the C:\Inetpub folder. Note that this only
+occurs if you install the Microsoft Windows NT 4.0 Option Pack (including the
+"ExAir" sample), and your Inetpub folder is different from C:\Inetpub.
+
+WORKAROUND
+==========
+
+To work around this problem, note that you can safely delete the empty folders
+in the C:\Inetpub folder because the files in your actual Inetpub folder have
+been updated correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 Service Pack 6.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbui 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

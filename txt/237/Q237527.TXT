@@ -1,0 +1,55 @@
+DOCUMENT:Q237527  25-JUL-2001  [homemm]
+TITLE   :Encarta Dictionary 2000: Pointing Device Behaves Unexpectedly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kbhw kbinterop kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta World English Dictionary 
+ - Microsoft Encarta World English Dictionary 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Microsoft Encarta World English Dictionary 2000 with version 2.2c
+or earlier of the Microsoft IntelliPoint software, your pointing device may
+behave unexpectedly.
+
+MORE INFORMATION
+================
+
+To resolve any issues you may experience between Encarta World English
+Dictionary 2000 and the IntelliPoint software, download and install the latest
+version of the IntelliPoint software. To do this, visit the following Microsoft
+Web site:
+
+   http://www.microsoft.com/products/hardware/mouse/driver/default.htm
+
+Additional query words: multi multi-media media mm ewed scrolls mouse wheel
+
+======================================================================
+Keywords          : kbhw kbinterop kbimu kbHardware 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldEngDict2001
+Version           : WINDOWS:; :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,193 @@
+DOCUMENT:Q109252  27-FEB-2002  [homemm]
+TITLE   :Cinemania 1994: MMPERF.TMP Diagnostics File
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 editions
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania 1994 editions 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Setup program for Microsoft Cinemania 1994 automatically generates a file
+named MMPERF.TMP in the root directory of the installed drive. This file
+provides multimedia personal computer performance diagnostic information. This
+is a text formatted file, and can be opened and read with any text editor to
+provide system related information for troubleshooting purposes.
+
+For detailed information about the multimedia PC specification, query on the
+following words in the Microsoft Knowledge Base:
+
+   Multimedia and PC and Specifications
+
+
+NOTE: The MMPERF.TMP file is created during setup. There is no way to generate
+this file outside of setup.
+
+SUMMARY OF MMPERF.TMP DIAGNOSTIC MEASUREMENTS
+---------------------------------------------
+
+Item                     Possible Values      Desired Values
+-----------------------  ---------------      --------------
+
+Windows major version:     3                     3
+
+Windows minor version:     10, 11*, 95           10, 11*, 95
+
+Number of wave audio
+devices hooked up:         0-3                   1 or greater
+
+Number of MIDI devices
+hooked up:                 0-3                   1 or greater
+
+Physical memory:           0-65500               n/a
+                           (0-655K,
+                           last digit is
+                           truncated)
+
+Virtual memory:            0 or above            200000 or greater
+                           (last digit is
+                           truncated)
+
+VGA:                       0,1                   1
+
+256 colors:                0,1                   1
+
+CD TEST:                   0,1                   1
+
+CPU load:                  0-100                 40 or less
+
+XFER rate:                 n/a                   150,000 or greater
+
+MORE INFORMATION
+================
+
+The following is a description of the elements tested and included in the
+MMPERF.TMP file.
+
+Windows Major Version/Windows Minor Version
+-------------------------------------------
+
+This is the version of Windows reported by the system. For example, Windows 3.1
+will report a major version of 3 and a minor version of 1. Multimedia PC
+compatibility requires Windows version 3.1 or later. Windows 95 will report a
+major version of 3 and a minor version of 95.
+
+
+Number of Wave Audio Devices Hooked Up
+--------------------------------------
+
+This reports the number of Wave audio device drivers installed in the Drivers
+section of Control Panel but does not include the Microsoft Audio Compression
+Manager driver. Multimedia PC compatibility requires at least 1 valid Wave audio
+device and driver.
+
+Number of MIDI Devices Hooked Up
+--------------------------------
+
+This reports the number of MIDI audio device drivers installed in the Drivers
+section of Control Panel, including standard MIDI support and any Stereo FM MIDI
+device drivers. Multimedia PC compatibility requires at least 1 valid MIDI audio
+device and driver.
+
+Physical Memory
+---------------
+
+Measured in kilobytes (last zero not shown), this reports the free conventional
+memory available to the system.
+
+Virtual Memory
+--------------
+
+Measured in kilobytes (last zero not shown), this reports the free virtual memory
+available to the system. Low virtual memory (less than 2 megabytes) can result
+in the inability of Cinemania to play .AVI files (movie clips), display images,
+or play sounds (music scores or movie still audio) correctly.
+
+VGA
+---
+
+This reports whether the video card used on the system is at least VGA
+compatible, which is the minimum allowable by the multimedia PC specification. A
+value of 1 indicates a card capable of VGA or better display; a value of 0
+indicates a card that is not capable of at least a VGA display.
+
+256 Colors
+----------
+
+This reports whether the video card used on the system is at least 256-color
+capable, which is recommended (not required) by the multimedia PC specification.
+A value of 1 indicates a card capable of displaying 256 colors; a value of 0
+indicates a card that is not capable of 256-color display. Cinemania 1994 will
+use a grayscale palette if only a 16 color display is available.
+
+CD-ROM Test
+-----------
+
+This reports whether the seek time achieved on the CD-ROM drive is less than or
+equal to 1 second. Multimedia PC specification requires a maximum of 1 second
+seek time (data access) from the CD-ROM. A value of 1 indicates 1 second or less
+seek time; a value of zero indicates greater than 1 second seek time.
+
+CPU Load
+--------
+
+This reports the percentage of CPU bandwidth used to read from the CD-ROM drive
+at the current performance levels (transfer rate and seek time). Multimedia PC
+specification requires that no greater than 40 percent of CPU bandwidth be
+required to achieve 150K per second transfer rate. A reported value greater than
+40 indicates that sound problems, jerky video, and slow performance may be
+witnessed on the system.
+
+XFER Rate
+---------
+
+Measured in kilobytes, this reports the actual kilobyte per second data transfer
+being achieved by the machine. Multimedia PC specification requires no less than
+150K per second transfer speed. A reported value less than 150,000 bytes (150K)
+indicates that sound problems, jerky video, and slow performance may be
+witnessed on the system.
+
+Sample MMPERF.TMP File Output:
+------------------------------
+
+Windows major version: 3
+Windows minor version: 10
+Number of wave audio devices hooked up: 1
+Number of MIDI devices hooked up: 2
+Physical memory: 56066
+Virtual memory: 1073762
+VGA: 1
+256 colors: 1
+CD TEST 1
+CPU load: 36
+XFER rate: 151634
+
+Additional query words: kbhowto 1994 multi media multimedia multi-media mpc hiccups
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994
+Version           : :1994 editions
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

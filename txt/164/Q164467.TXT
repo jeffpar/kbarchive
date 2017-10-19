@@ -1,0 +1,56 @@
+DOCUMENT:Q164467  21-DEC-1999  [exchange]
+TITLE   :XCLN: Chinese Translation of ShivaRemote Message Is Wrong
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A sentence translated into Traditional Chinese is wrong in the Microsoft
+Exchange Client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange clients,
+version 4.0, listed at the beginning of this article. This problem was corrected
+in Microsoft Exchange Server 4.0 U.S. Service Pack 4. For information on
+obtaining the service pack, query on the following word in the Microsoft
+Knowledge Base:
+
+   " SERVPACK " (without the quotation marks)
+
+
+Additional query words: double byte character set DBCS double-byte char
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

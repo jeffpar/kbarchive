@@ -1,0 +1,69 @@
+DOCUMENT:Q288335  06-AUG-2002  [exchange]
+TITLE   :XADM:  Error Messages Occur When You Run Exmerge
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Mailbox Merge program (Exmerge.exe) to export or import mail
+data from an Exchange Server information store, you may receive either of the
+following error messages:
+
+   Error encountered reading list of recipients on server
+   '\\<SERVERNAME>'. Make sure you have Administrator permissions on the
+   Private Information Store object. Please refer to the 'C:\Exmerge.log' log
+   file for more information.
+
+   -or-
+
+   The server '\\<SERVERNAME>' is inaccessible. It is either not a
+   Microsoft Exchange Server or you do not have rights to access the Microsoft
+   Exchange Directory on this machine.
+
+NOTE: These error messages may be reported in Exmerge.log.
+
+CAUSE
+=====
+
+This issue can occur if you use the Universal Naming Convention (UNC) format
+(\\<SERVERNAME>) when you enter the server name when you run Exmerge.
+
+RESOLUTION
+==========
+
+To resolve this issue, enter the NetBIOS server name instead (remove the
+backslash symbols [\\] that precede the server name).
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

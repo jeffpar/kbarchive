@@ -1,0 +1,66 @@
+DOCUMENT:Q148674  08-NOV-2001  [homegame]
+TITLE   :Err Msg: An Error Occurred While Trying to Remove MS Fury3
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0,95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbusagekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fury 3 for Windows, version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to remove Fury 3 using Add/Remove Programs option in Windows 95, you
+may receive the following error message:
+
+   An error occurred while trying to remove MS Fury3. Uninstallation has been
+   canceled.
+
+CAUSE
+=====
+
+This occurs when if you already used Windows Explorer to delete the Fury 3
+program files from your hard drive.
+
+The error message occurs because the Fury3 setup files have been removed and
+Windows cannot run the setup routine to properly remove Fury3.
+
+The Add/Remove Program option cannot remove the entry if it does not find the
+program setup files
+
+RESOLUTION
+==========
+
+To remove Fury 3 from the Add/Remove list, you need to reinstall the program.
+This installs the Fury Setup files and allows you to use the Add/Remove Programs
+option to remove Fury files and remove Fury from the Add/Remove Programs list.
+
+Additional query words: 1.00 fury3 fury-3 fury-cubed cubed uninstall uninstaller install installer
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbusage kbfaq
+Technology        : kbOSWin95 kbOSWinSearch kbGamesSearch kbZNotKeyword kbFury3
+Version           : WINDOWS:1.0,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

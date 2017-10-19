@@ -1,0 +1,84 @@
+DOCUMENT:Q166393  08-AUG-2001  [winnt]
+TITLE   :Windows NT May Hang or Show "Stop 0x1E" Error with Iomega Drive
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Iomega Parallel Port Zip Drive drivers version 1.41,
+Windows NT may hang or display a "STOP 0x1E" error message at startup.
+
+CAUSE
+=====
+
+The drive is not connected to the parallel port.
+
+RESOLUTION
+==========
+
+To correct this behavior, use one of the following methods.
+
+Method 1
+--------
+
+1. In Control Panel, double-click Devices.
+
+2. In the list of devices, click PPA3NT.
+
+3. Click Startup, and then set the device to Manual. Manually start the PPA3NT
+   device by repeating steps 1-2 and clicking Start to load the driver when the
+   drive is connected.
+
+Method 2
+--------
+
+1. In Control Panel, double-click Devices.
+
+2. In the list of devices, click PPA3NT.
+
+3. Click Startup and then set the device to Disabled. When the drive is
+   connected, set the device to Boot.
+
+Method 3
+--------
+
+Contact the manufacturer for a possible updated driver.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          : kbenv kberrmsg kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

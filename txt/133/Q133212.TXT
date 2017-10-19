@@ -1,0 +1,120 @@
+DOCUMENT:Q133212  17-DEC-2000  [win95x]
+TITLE   :Description of Microsoft Client for NetWare Networks Features
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes the features of the Microsoft Client for NetWare Networks
+in Windows 95.
+
+For Windows 95, Microsoft has written a 32-bit NetWare-compatible network
+provider and file system driver. These components are installed in the Windows
+95 network architecture for seamless integration into the Windows 95 user
+interface.
+
+If real-mode NetWare TSRs or add-on products are not needed, then there is no
+need for NetWare real-mode components such as Ipx.com, Ipxodi.com, Netx.exe, or
+Vlm.exe. The Windows 95 NetWare Core Protocol (NCP) client and server supply
+32-bit performance that is faster than native NetWare drivers are and take up no
+conventional memory.
+
+The Microsoft Client for NetWare Networks provides interoperability for NetWare
+2.2, 3.x, and 4.x servers running bindery emulation. Windows 95 systems can
+browse NetWare servers, connect to servers, map network drives, and connect
+NetWare bindery-based utilities. The Microsoft Client for NetWare Networks
+executes NetWare login scripts that do not contain TSRs.
+
+MORE INFORMATION
+================
+
+The Microsoft Client for NetWare Networks has the following key features:
+
+ - High performance - The Microsoft Client for NetWare Networks performs large
+   block file transfers and common network read and write operations much faster
+   than Windows 3.1 with the Novell VLM shell.
+
+ - Reliability - The client runs in protected mode and is designed for operation
+   in a multitasking environment.
+
+   No conventional memory footprint - By running in protected mode as a 32-bit
+   VxD, the drivers take no MS-DOS conventional memory space.
+
+ - Auto-reconnect - This feature allows the Microsoft Client for NetWare
+   Networks to behave similarly to Microsoft network Server Message Block (SMB)
+   connections. If a Windows 95-based computer loses its connection to an NCP
+   server, the Windows 95-based computer's connection is re- established when
+   that NCP server becomes available again. The connection status, drive
+   mappings, and printer connections are all re-established.
+
+ - Packet Burst protocol support - The Microsoft Client for NetWare Networks
+   supports burst mode NCPs for faster transfer of NCP information.
+
+ - Client-side caching - As a Windows 95 file system driver (FSD), the Windows
+   95 NCP redirector uses the same 32-bit cache as all other FSDs and can cache
+   network data for faster access.
+
+ - Plug and Play-aware - The Microsoft Client for NetWare Networks is Plug and
+   Play enabled and monitors and responds to Plug and Play events.
+
+ - Long filename support - The Microsoft Client for NetWare Networks supports
+   long filenames on NetWare volumes configured with OS/2 Name Space (an HPFS
+   implementation for Novell NetWare server volumes) and on Windows 95-based
+   computers configured with the File and Print Sharing for NetWare Networks
+   service (NCP server).
+
+ - Fully integrated into the Windows 95 user interface - NetWare server
+   resources can be accessed using Network Neighborhood, or through any drive or
+   printer dialog box.
+
+ - Fully interoperable with Novell NetWare 2.2, 3.x, and 4.x servers - The
+   Microsoft Client for NetWare Networks can access bindery-based NetWare
+   servers. This includes 2.2 and 3.x servers, and 4.x servers configured for
+   bindery emulation.
+
+ - Graphical logon to NetWare 2.2, 3.x, and 4.x bindery - Logon to Windows 95 is
+   linked to a NetWare bindery-based server. This logs users on to the Windows
+   95 system and to their preferred NetWare server. In addition, a user can be
+   validated for the Windows 95 system by their preferred server by making the
+   Microsoft Client for NetWare Networks the primary logon.
+
+ - Supports Large Internetwork Packet (LIP) protocol - NetWare clients and
+   servers negotiate packet size when a client attaches to a server. Previously,
+   if a server identified a router between itself and the client, the packet
+   size was set to 576 bytes. LIP allows the client and server to negotiate the
+   packet size used when communication occurs through a router. With LIP, the
+   packet size depends on the maximum physical packet size common to both the
+   client and the server. LIP is enabled between Windows 95-based computers
+   running the Microsoft Client for NetWare Networks and either NetWare 3.12 or
+   4.x servers or Windows 95 NCP servers.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,426 @@
+DOCUMENT:Q101818  21-SEP-1999  [win95x]
+TITLE   :Comprehensive List of WRK Version 3.1 Doc Errors, Part 1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10 3.11
+
+WINDOWS
+
+kbother kbdisplay kbsound kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a comprehensive list of documentation errors in the
+"Microsoft Windows Resource Kit" for version 3.1. This article covers the
+LAYOUTS.WRI, PRINTERS.WRI, and SYSADMIN.WRI files and pages 1-199 of the
+"Microsoft Windows Resource Kit" guide for Windows version 3.1.
+
+The following topics are covered:
+
+ - LAYOUTS.WRI Lists Wrong Size for MONOUMB2.386
+
+ - LAYOUTS.WRI Lists Wrong Size for UNIDRV.DLL
+
+ - PRINTERS.WRI Incorrectly References Minoutlineppem
+
+ - Page 12 Incorrectly States T3100/20 Laptop Requires Updated BIOS
+
+ - Page 12 Incorrectly States Which Phoenix ROM BIOS Needs Update
+
+ - Page 12 Incorrectly States Information Regarding AMI BIOS
+
+ - Page 17 Flowchart Incorrectly States SMARTDrive Cache Parameter
+
+ - Page 21 Flowchart Incorrectly Uses LANMAN10.DOS for LANMAN10.386
+
+ - Page 23 IRQ Line in SYSTEM.INI Referenced Incorrectly
+
+ - Page 30 Flowchart Shows Incorrect Directory for TESTPS.TXT
+
+ - Page 78 Incorrectly States .SHH File Prompts for Directory
+
+ - Page 131 Incorrectly States SETUP /N Creates Directories
+
+ - Page 143 Incorrectly Lists Sound Blaster Driver Versions
+
+ - Page 172 Incorrectly Lists iNegCurr= Value
+
+ - Page 176 Incorrectly Documents TTIfCollisions=
+
+ - Page 196 Incorrectly Indicates COMxFIFO is Boolean Aware
+
+ - Page 196 Incorrectly Documents COMMdrv30= as COMdrv30=
+
+MORE INFORMATION
+================
+
+LAYOUTS.WRI Lists Wrong Size for MONOUMB2.386
+---------------------------------------------
+
+The LAYOUTS.WRI file included with the Microsoft Windows Resource Kit (WRK) for
+version 3.1 incorrectly lists the expanded size for MONOUMB2.386. The listed
+size is 46161 bytes.
+
+The actual size of the expanded MONOUMB2.386 file is 4745 bytes.
+
+LAYOUTS.WRI Lists Wrong Size for UNIDRV.DLL
+-------------------------------------------
+
+The LAYOUTS.WRI file included with the Microsoft Windows Resource Kit (WRK) for
+version 3.1 incorrectly lists the expanded file size for UNIDRV.DLL. The listed
+size is 119008 bytes.
+
+The actual size of the UNIDRV.DLL file included with the original WRK is 119296
+bytes, and the file date is 3/10/92.
+
+NOTE: The UNIDRV.DLL file is occasionally updated and the file size and date may
+change.
+
+For more information about this driver, query the following in the Microsoft
+Knowledge Base:
+
+   unidrv.dll and windows and update
+
+PRINTERS.WRI Incorrectly References Minoutlineppem
+--------------------------------------------------
+
+Section 4.5 of the PRINTERS.WRI file included with Microsoft Windows 3.1 and with
+the Microsoft Windows Resource Kit for version 3.1 incorrectly spells the
+WIN.INI PostScript setting "minoutlineppem."
+
+Section 4.5, "Controlling TrueType Font Downloading on PostScript Printers,"
+references the following WIN.INI setting:
+
+        minoutlineeppem=<number>
+
+This is spelled incorrectly. It should be spelled as follows
+
+        minoutlineppem=<number>
+
+where <number> refers to points per em space (an em space is a unit of
+measurement where the width of the space is about as wide as it is tall).
+
+Using the incorrect spelling results in Windows using the default value of 101
+points per em space.
+
+NOTE: If you change the minoutlineppem setting, you must exit and restart Windows
+for the changes to take effect.
+
+Additional information on the minoutlineppem setting can be found by querying on
+the following words in the Microsoft Knowledge Base:
+
+   postscript and minoutlineppem and win.ini
+
+Page 12 Incorrectly States T3100/20 Laptop Requires Updated BIOS
+----------------------------------------------------------------
+
+Page 12 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+incorrectly states that BIOS version 4.2 or later is necessary for the T3100/20
+laptop computer to run Windows.
+
+The T3100/20 works with Windows 3.0 with a BIOS of 2.01, provided CGA is selected
+as the display.
+
+For more information about this model, query on the following keywords:
+
+   toshiba and bios and t3100
+
+Page 12 Incorrectly States Which Phoenix ROM BIOS Needs Update
+--------------------------------------------------------------
+
+Chart 1.4 on page 12 of the "Microsoft Windows Resource Kit" (WRK) guide for
+Windows 3.1 states:
+
+   According to Phoenix, any BIOS dated earlier than 1988 should be upgraded.
+   There are several OEM versions of Phoenix BIOS that cause problems. Contact
+   the computer manufacturer for more information.
+
+The information above should state:
+
+   "...any BIOS dated 1988 and earlier should be upgraded."
+
+
+Page 12 Incorrectly States Information Regarding AMI BIOS
+---------------------------------------------------------
+
+Page 12, chart 1.4, incorrectly states the following in the AMI BIOS box:
+
+   1989 - Causes intermittent UAEs and system hangs.
+
+   1991 - Serial port problems. Most often seen as mouse and modem
+   problems.
+
+The 1989 BIOS description should read as follows:
+
+   1989 - On a computer with an IDE hard disk, you may experience intermittent
+   unrecoverable application errors (UAEs) or general protection (GP) faults,
+   and the system consequently hangs.
+
+The 1991 BIOS description should not be included because AMI has confirmed that
+this information is erroneous.
+
+Page 17 Flowchart Incorrectly States SMARTDrive Cache Parameter
+---------------------------------------------------------------
+
+Page 17, chart 1.8, of the "Microsoft Windows Resource Kit" (WRK) guide for
+Windows 3.1 states the following in the fifth flowchart step:
+
+   Note: The SMARTDrive command line can be edited to allow caching of "stacked"
+   volumes by adding a +<drive> (where <drive> is a "stacked"
+   volume). If caching...
+
+The +<drive> parameter is incorrect. The correct command line syntax to
+turn on the SMARTDrive disk cache is as follows:
+
+   C:\WINDOWS\SMARTDRV.EXE <drive>+
+
+SMARTDrive automatically detects the existence of Stacker and caches the
+underlying Stacker drive. SMARTDrive should not be used to cache a Stacker
+volume. Typing "smartdrv /?" (without the quotation marks) at the MS-DOS command
+prompt lists the command line parameters for SMARTDrive with their meanings.
+
+Page 21 Flowchart Incorrectly Uses LANMAN10.DOS for LANMAN10.386
+----------------------------------------------------------------
+
+The flowchart on page 21 of the "Microsoft Windows Resource Kit" (WRK) guide for
+Windows 3.1 incorrectly uses the term LANMAN10.DOS where LANMAN10.386 is
+intended.
+
+Page 23 IRQ Line in SYSTEM.INI Referenced Incorrectly
+-----------------------------------------------------
+
+In Flowchart 2.5 B on page 23 of the "Microsoft Windows Resource Kit" (WRK) guide
+for Windows 3.1, the following line is incorrect:
+
+   Leave the IRQ9=Global line in the SYSTEM.INI.
+
+The line should read:
+
+   Leave the IRQ9Global=Yes line in the SYSTEM.INI file.
+
+Page 30 Flowchart Shows Incorrect Directory for TESTPS.TXT
+----------------------------------------------------------
+
+The "Cannot Print on Stand-Alone PC" flowchart (4.1) on page 30 of the "Microsoft
+Windows Resource Kit" (WRK) guide for Windows 3.1 suggests that you copy the
+TESTPS.TXT file from the Windows directory to the PostScript printer if you have
+a PostScript printer.
+
+The TESTPS.TXT file is located in the WINDOWS\SYSTEM subdirectory, not the
+Windows directory.
+
+Page 78 Incorrectly States .SHH File Prompts for Directory
+----------------------------------------------------------
+
+Page 78 of the "Microsoft Windows Resource Kit" guide for Windows 3.1 states that
+if the [windir] section of the SETUP.SHH file is left blank, Windows Setup
+prompts you for a directory. This information is incorrect.
+
+If the directory is not specified in the [windir] section, the dialog box never
+appears, and Windows installs to the default directory WINDOWS.
+
+The system settings template file, SETUP.SHH, that comes with Windows is used to
+create a custom system settings file. This file is used in conjunction with the
+SETUP /H:<filespec> option (where <filespec> is SETUP.SHH with its
+fully qualified path if SETUP.SHH does not exist in the Windows directory). The
+[windir] section is used to specify the directory where the user files are
+installed.
+
+To work around this situation:
+
+1. Add the line "C:\*" (without the quotation marks) to the [windir] section of
+   SETUP.SHH:
+
+         [windir]
+         C:\*
+
+   C:\* is an invalid directory, and this entry forces Setup to prompt you for a
+   valid directory.
+
+2. Run Setup. Setup displays a red warning box that states that an error has
+   occurred and asks you to press ENTER to continue or press F3 to exit.
+
+3. Press ENTER. The next screen prompts you for the correct directory.
+
+4. Type the name of the directory where you want to install the Windows user
+   files and press ENTER.
+
+Page 131 Incorrectly States SETUP /N Creates Directories
+--------------------------------------------------------
+
+When you initiate a network setup (using the SETUP /N command) for Windows 3.1,
+you should be able to create directories and copy files to them by modifying the
+SETUP.INF file.
+
+The "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1 documents this
+procedure on page 131; however, this procedure does not create the directory.
+
+If you follow the example listed in the WRK guide, SETUP /N should create the
+APPDIR directory within the Windows user directory and copy the files in the
+[custom.apps] section. However, this directory is never created and Setup copies
+the files to the Windows user directory before completing the installation.
+
+To create the APPDIR directory, use the MS-DOS MD (MAKE DIRECTORY) command.
+
+Page 143 Incorrectly Lists Sound Blaster Driver Versions
+--------------------------------------------------------
+
+Page 143 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+incorrectly states the association of Sound Blaster drivers and versions as
+follows:
+
+   SNDBLST.DRV=SoundBlaster 1.5 DSP driver
+   SNDBLST2.DRV=SoundBlaster 2.0 DSP driver
+
+The correct associations are:
+
+   SNDBLST.DRV=SoundBlaster 1.0 DSP driver (for a Sound Blaster version 1.0 card
+   or a version 1.5 card with an old DSP 1.05 chip)
+
+   SNDBLST2.DRV=SoundBlaster 1.5 DSP driver (for a Sound Blaster version 1.5 card
+   with a DSP 2.0 chip, or a version 2.0 card [this is the Sound Blaster Pro])
+
+With the Sound Blaster Pro card (these have DSP versions 3.x), you can use
+SNDBLST2.DRV; however, Windows may display a warning message when setting the
+port and IRQ, indicating that new drivers are needed from the manufacturer.
+
+These drivers are available from Creative Labs Technical Support.
+
+For more information, query on the following words:
+
+   dsp and specific and soundblaster
+
+Page 172 Incorrectly Lists iNegCurr= Value
+------------------------------------------
+
+Page 172 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+lists an incorrect value for the iNegCurr= entry in the [intl] section of the
+WIN.INI file. The Windows Resource Kit (WRK) lists both "($1)" and "$ 1-" as
+having the iNegCurr value of 0. The value for "$ 1-" is incorrect. The correct
+value for "$ 1-" is 10.
+
+The [intl] section of the WIN.INI file describes how to display dates, times,
+currency amounts, and other items for countries around the world. The default
+values reflect U.S. options.
+
+The iNegCurr entry indicates the format to use for negative values for currency.
+This entry can be changed by choosing the International icon from Control Panel,
+and using the Currency Format option.
+
+Valid entries for the iNegCurr= entry are:
+
+   Value    Format
+   ---------------
+
+   0        ($1)
+   1        -$1
+   2        $-1
+   3        $1-
+   4        (1$)
+   5        -1$
+   6        1-$
+   7        1$-
+   8        -1 $
+   9        -$ 1
+   10        $ 1-
+
+For example, the entry iNegCurr=5 would cause a negative currency value to be
+displayed in the format "-1$."
+
+Page 176 Incorrectly Documents TTIfCollisions=
+----------------------------------------------
+
+Page 176 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+incorrectly documents the TTIfCollisions= entry of the [TRUETYPE] section of the
+WIN.INI file. The same error occurs in the WININI.WRI file.
+
+Both page 176 and WININI.WRI state the following about the TTIfCollisions= entry
+in the WIN.INI file:
+
+   If you set this value to 0, Windows will use the TrueType version.
+
+The correct statement should be:
+
+   If you set this value to 1, Windows will use the TrueType version.
+
+The TTIfCollisions= entry specifies whether to use TrueType fonts in place of
+other fonts if both types of fonts are installed on the system and have the same
+font name.
+
+Page 196 Incorrectly Indicates COMxFIFO is Boolean Aware
+--------------------------------------------------------
+
+Page 196 of the "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1
+incorrectly identifies On/Off as functioning with the COMxFIFO switch. The
+SYSINI.WRI file included with the WRK also incorrectly identifies TRUE/FALSE as
+functioning with this switch.
+
+The SYSTEM.INI's [386Enh] setting COMxFIFO= is not fully Boolean aware. It can be
+set to either 0 for off or 1 for on, but does not correctly understand
+True/False, On/Off, Yes/No.
+
+COMxFIFO=1 and COMxFIFO=0 are the usable switches (where "x" is the
+communications port).
+
+For more information about this setting, query on:
+
+   commq&a and windows 3.1
+
+Page 196 Incorrectly Documents COMMdrv30= as COMdrv30=
+------------------------------------------------------
+
+The "Microsoft Windows Resource Kit" (WRK) guide for Windows 3.1 incorrectly
+documents the SYSTEM.INI [386Enh] switch for using the Windows 3.0
+communications driver on page 196. The WRK incorrectly spells the switch as
+COMdrv30=. The correct spelling of this switch is COMMdrv30=.
+
+This error also exists in the WRK's version of the SYSINI.WRI dated 4/6/92.
+
+   COMMdrv30=<Boolean>
+
+This switch should be set for Yes or True, if you are:
+
+ - Using the COMM.DRV driver that came with Windows 3.0
+
+   -or-
+
+ - Using a third-party driver compatible with the Windows 3.0 communication
+   driver, but not with Windows 3.1's driver. When set to True or Yes, the
+   Virtual COM Driver (VCD) will use its own copy of the serial communications
+   driver's interrupt handler. By default, this line does not exist, which is
+   the same as saying COMMdrv30=False or No.
+
+
+Additional query words: 3.11 3.10 3.1 manual wrk wrkit
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

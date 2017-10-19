@@ -1,0 +1,173 @@
+DOCUMENT:Q137866  20-MAY-2002  [pcmail]
+TITLE   :PC NTMMTA: Err Msg: Drive Is Either Local, Used or Greater...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Windows NT Multitasking MTA (NT MMTA) External Mail program on
+either the command line or as a service, the following error may occur in a
+Monitor window or in the SESSION.LOG when you use Dynamic Drive connections:
+
+   Drive is either local, used or greater than LASTDRIVE
+   Initializing data structures. Could not connect to drive
+
+CAUSE
+=====
+
+The drive letter used by the External Mail program to dynamically connect to the
+postoffice is unavailable for use. The drive letter may be in use by one of the
+following processes:
+
+ - A hardware device, such as a drive or CD player.
+
+ - The substitute drive assignment is in use.
+
+ - The LASTDRIVE statement in the CONFIG.SYS is lower than the drive letter the
+   External Mail program is trying to use.
+
+ - The network drive assignment is in use by the Dispatch Mail program (see MORE
+   INFORMATION below).
+
+ - You may also get the same error if you run the MS-DOS External.exe from
+   Windows NT and using the Dynadmin table. For the NTMMTA, make sure you are
+   running the correct version of External.exe, located in the Mailexe
+   \External.NT subdirectory.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+   File Name      Version
+   ----------------------
+   Dispatch.exe   3.5.23
+
+This hotfix has been posted to the following Internet location as Dirsy2k.exe:
+
+   ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+
+WORKAROUND
+==========
+
+Review the current drives used by the system using the Net Use command at the
+command prompt to ensure that the device letter selected is not used in the
+EXTERNAL.INI file. Check any drives connected to local subdirectories with the
+SUBST command.
+
+Confirm that the LASTDRIVE entry in the CONFIG.SYS is higher than the drive
+letters used by the External Mail program. Check the DISPATCH.INI file to
+confirm that Dispatch is not trying to use a drive letter that is assigned to
+the External Mail program. See the More Information section below for additional
+information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail Multitasking MTA
+for Windows NT version 3.5
+
+MORE INFORMATION
+================
+
+When you use dynamic drives, and the External Mail program dynamically
+initializes an instance and uses drive E, then pauses until the next cycle of
+checking for new mail, it will release its connection to drive E. If Dispatch
+initializes in order to check the process table and/or run a scheduled Directory
+Synchronization (Dir-Sync) event, it will also use drive E as the next available
+drive letter. Dispatch usually releases the drive before the External instance
+resumes its cycle; however, the External Mail program may try to resume before
+Dispatch is finished with its process. In this case, the External Mail program
+will try to use the same dynamic drive Dispatch is currently using (drive E),
+resulting in the error above.
+
+This can be prevented by initiating all Dispatch instances before initializing
+the External instances. If a Dispatch service needs to be stopped, ensure that
+all External instances are stopped, and re-start the Dispatch instance followed
+by the External instance.
+
+If the NT MMTA is started through batch files or AT commands, you can organize
+the drive letter assignments to ensure that Dispatch should be assigned the
+first available drive letters (for example, D, E, F, G, or H). The External
+instances should be assigned the available drive letters at the end of the drive
+range (for example, U, V, W, X, Y, or Z). This will reduce the possibility that
+the drive letters assigned to be used by the External instances for dynamic
+connections will be selected as the next available drive.
+
+If the NT-MMTA is being run as a service, Dispatch instances will normally start
+before External instances, but you can still have this problem if a dispatch
+service is stopped and then restarted manually. You can prevent this by using
+the Registry Editor (RegEdit) to add all dispatch instances to the
+DependendOnService parameter of:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MS Mail External -
+   (instance)
+
+Key for each External instance. The Dispatch instances must be specified, as they
+appear in the Services key name, for example:
+
+   MS Mail Dispatch - (instance)
+
+WARNING: Using the Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+The Windows NT server must be re-booted for these changes to take effect. You can
+test the changes after re-booting by:
+
+1. Stop a dispatch instance, and see if all the External instances are
+   automatically stopped.
+
+2. Restart all External instances and make sure the Dispatch instance is
+   automatically restarted when you re-start the first External instance.
+
+Repeat the above steps for each of the remaining Dispatch instances.
+
+Additional query words: 3.20 3.50 mta
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,71 @@
+DOCUMENT:Q133745  30-DEC-1999  [automap]
+TITLE   :Automap Streets: How to Find Street Addresses
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+4.00
+WINDOWS
+kbusage kbref
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to find addresses in Automap Streets.
+
+MORE INFORMATION
+================
+
+The address databases and address finding routines used in Microsoft Automap
+Streets work best if use the following guidelines:
+
+1. Use numeric house numbers. For example, use "1600 Pennsylvania Avenue"
+   (without the quotation marks) instead of "Sixteen Hundred Pennsylvania
+   Avenue".
+
+2. Road names that are the same as a suffix, such as "Circle Drive" or "Court
+   Avenue" may not be correctly interpreted by the program.
+
+3. If Automap Streets does not find an address, shorten the address by entering
+   the street name only. For example, if no match is found for "2345 Someplace
+   Avenue Southwest" try "Someplace Avenue" or "Someplace".
+
+4. If a map has more than one road with the same name and one of the roads does
+   not have house number data, Automap may not find either street. Shorten the
+   address by removing the house number and try again.
+
+5. When you find the street you want, if you click in different points along the
+   street, the status bar at the bottom of the screen will show the closest
+   house numbers.
+
+Additional query words: kbhowto auto auto-map automap searching
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+Version           : WINDOWS:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,74 @@
+DOCUMENT:Q178178  17-DEC-2000  [win95x]
+TITLE   :Error Message: Error SU995034 -- Invalid INF file (0x13aa)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork kbsetup win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are performing a server-based Setup (SBS) of Windows 95, after you
+accept the End User License Agreement you may receive the following error
+message:
+
+   Error SU995034 -- Invalid INF file (0x13aa)
+
+CAUSE
+=====
+
+This behavior can occur if Setup attempts to place temporary files into an
+invalid temporary folder.
+
+RESOLUTION
+==========
+
+To work around this behavior, specify the temporary folder for Setup to use
+during the SBS. To do so, use the following command
+
+   setup <drive>:\<filename.inf> /t:<path>\<folder>
+
+where <drive> is the location of the .inf file that may, or may not be in
+the same location as Setup.exe, <filename.inf> is the batch file generated
+by the Batch.exe program, and <path> and <folder> specify the path
+to and name of the temporary folder for Windows 95 to use during Setup.
+
+For example, you might use a command similar to:
+
+   setup c:\msbatch.inf /t:c:\temp
+
+MORE INFORMATION
+================
+
+For additional information about switches you can use with the Windows 95 Setup
+program, please see the following article in the Microsoft Knowledge Base:
+
+   Q128400 Windows 95 Setup Switches
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbsetup win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

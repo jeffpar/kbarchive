@@ -1,0 +1,67 @@
+DOCUMENT:Q121419  11-FEB-2000  [foxpro]
+TITLE   :ALT+<Hot Key> Will Not Choose Push Button on Macintosh
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,2.6a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro for Macintosh, the ALT+<hot key> key combination does not choose
+a push button like it does in Windows even if KEYCOMP is set to WINDOWS.
+
+MORE INFORMATION
+================
+
+Page 107 of the FoxPro for Macintosh "Language Reference" manual says that if
+KEYCOMP is set to WINDOWS, hot keys are underlined. This is true, but
+ALT+<hot key> does not select the push button when another GET object,
+edit region, list box, or popup is currently selected. However, if a radio
+button is the active GET object, pressing SHIFT and the underlined letter will
+choose the push button. Hot keys on the Macintosh function more like hot keys
+under FoxPro for MS-DOS. This behavior is described on page 106.
+
+If the push button GET is currently selected, pressing the hot key without ALT
+will choose the push button.
+
+If KEYCOMP is set to MAC, hot keys are not underlined, and push buttons can be
+chosen only with the mouse.
+
+NOTE: Pressing CTRL+ALT+<hot key> in the FoxPro for Macintosh is equivalent
+to pressing ALT+<hot key> in FoxPro for Windows.
+
+REFERENCES
+==========
+
+FoxPro "Language Reference," pages 106-107
+
+Additional query words: FoxMac hotkey accelerator access docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac
+Version           : MACINTOSH:2.5b,2.5c,2.6a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

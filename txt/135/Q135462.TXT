@@ -1,0 +1,92 @@
+DOCUMENT:Q135462  18-DEC-2000  [crossnet]
+TITLE   :TCPIP-32 on Client with IPXODI Can Only Ping Itself
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11,3.11a,3.11b; WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft's TCP/IP-32 stack on your computer running Windows
+for Workgroups 3.1x and the NetWare IPXODI real-mode stack, the client can PING
+itself, but attempts to PING other IP addresses result in "Request timed out"
+messages.
+
+CAUSE
+=====
+
+The NetWare client file, NET.CFG, does not contain entries for all of the four
+ethernet frame types or the two token-ring frame types.
+
+RESOLUTION
+==========
+
+Open the NetWare file, NET.CFG, with a text editor. Under the Link Driver
+section heading make sure all four frame types are specified. Make sure the
+first frame type listed is the primary frame type you use to connect to NetWare
+servers. For example:
+
+ - If you have an Ethernet network:
+
+      Link Driver NE2000
+         Frame Ethernet_802.2
+         Frame Ethernet_802.3
+         Frame Ethernet_II
+         Frame Ethernet_SNAP
+      PORT 320
+
+      INT 5
+      MEM D0000
+
+      NetWare DOS Requester
+         FIRST NETWORK DRIVE = F
+
+   NOTE: By default Microsoft's TCP/IP-32 stack uses the ETHERNET_II Frame to
+   communicate on the network.
+
+-or-
+
+ - If you have a Token-ring network:
+
+      Link Driver TOKEN
+         Frame Token-ring
+         Frame Token-ring_SNAP
+      PORT 320
+
+      INT 5
+      MEM D0000
+
+      NetWare DOS Requester
+         FIRST NETWORK DRIVE = F
+
+Additional query words: prodtcp32 3.11 wfw wfwg 32 tcpip win95x
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin95search kbTCPIPSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b; WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

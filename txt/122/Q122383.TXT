@@ -1,0 +1,66 @@
+DOCUMENT:Q122383  31-JUL-2001  [sms]
+TITLE   :Problems Running SMS w/Non-English Versions of Windows NT
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbSCMan smssiteconfigman
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Systems Management Server version 1.0 with a non-English
+version of Windows NT, one or both of the following problems may occur:
+
+ - Site Configuration Manager cannot set any directory permissions.
+
+ - Despooler fails on any package because the directory permissions cannot be
+   set.
+
+RESOLUTION
+==========
+
+To allow SMS to work with non-English versions of Windows NT Server, the
+following procedure is recommended in User Manager:
+
+1. Duplicate the non-English local Administrators group to "Administrators" in
+   English.
+
+2. Duplicate the non-English local Guests group as the "Guests" group in
+   English.
+
+3. Duplicate the non-English local Users group as the "Users" group in English.
+
+4. Duplicate the non-English local Users group as the "Everyone" group in
+   English and add the global Domain Guests group to it.
+
+5. Restart Windows NT.
+
+Additional query words: config sms prodsms umd
+
+======================================================================
+Keywords          : kbnetwork kbSCMan smssiteconfigman 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

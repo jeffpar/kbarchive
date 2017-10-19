@@ -1,0 +1,71 @@
+DOCUMENT:Q134641  15-FEB-2000  [foxpro]
+TITLE   :DOCERR: Calling Parent Class Method Code Example Is Incorrect
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Scope Resolution examples shown in the Developer's Guide, page 272, "Calling
+Parent Class Method Code," are not correct for the released version of Visual
+FoxPro version 3.0.
+
+MORE INFORMATION
+================
+
+In the Developer's Guide, on page 272, there are two specific examples to call
+parent class code from the VCR visual class provided as a sample with Visual
+FoxPro version 3.0. The message being issued does not properly reference the
+object to which the message is being sent.
+
+The first example, cmdNav::Click(), causes a "This object does not inherit from
+class CMDNAV" error message. The correct command to execute is:
+
+      VCR.cmdTop::Click
+
+In this particular case, the actual name of the parent class (VCR) and the member
+of that parent (cmdTop) must be explicitly used in order to properly reference
+the object where the method to execute is located.
+
+
+The second example, =EVAL(this.ParentClass + '::Click()', on Page 272 causes a
+"Missing Expression" error message. The syntax should be:
+
+      =EVAL(This.Parent.Class+"."+This.Name+"::click()")
+
+In this example, This.Parent.Class evaluates to VCR, which is the container
+Class. And This.Name evaluates to the name of the current object (cmdTop). The
+result of the evaluation is the same message identified in the first example,
+VCR.cmdTop::Click.
+
+Additional query words: 3.00 VFoxWin OOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

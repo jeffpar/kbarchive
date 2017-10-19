@@ -1,0 +1,135 @@
+DOCUMENT:Q242985  07-MAY-2002  [homegame]
+TITLE   :DirectX: List of New Features Included in Microsoft DirectX 7.0
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Allegiance, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Crimson Skies 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Links 2001 
+ - Microsoft Metal Gear Solid 
+ - Microsoft Midtown Madness 2, version 2.0 
+ - Microsoft Motocross Madness 2, version 2.0 
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the new features included in Microsoft DirectX 7.0.
+
+MORE INFORMATION
+================
+
+DirectX 7.0 is composed of the following six components:
+
+ - Direct3D (used for 3-dimensional rendering)
+ - DirectDraw (used for screen graphics)
+ - DirectSound (used for audio playback)
+ - DirectPlay (used for multi-player gaming)
+ - DirectInput (used for input device support)
+ - DirectMusic (used for message-based musical data)
+
+The following new features are included in DirectX 7.0.
+
+New Direct3D features include:
+
+ - Hardware-accelerated transformation and lighting: Direct3D can now take
+   advantage of 3-D accelerators to accelerate transformation and lighting
+   operations in hardware devices.
+
+ - Environment mapping with cubic environment maps: Direct3D and DirectDraw now
+   support a special type of texture map used in environment mapping, called a
+   cubic environment map. Cubic environment mapping involves the use of a
+   six-sided texture that can contain images to be applied to objects in a
+   scene. Cubic environment maps provide realistic environment mapping in
+   programs.
+
+ - Geometry Blending: Programs that use the Direct3D geometry pipeline can take
+   advantage of new support for geometry blending. Geometry blending can be used
+   to perform "skinning" effects to increase the realism of segmented objects in
+   a scene, especially characters.
+
+ - Device-state blocks: Programs that target the new IDirect3DDevice7 interface
+   can take advantage of its support for programmable sets of state changes,
+   called state blocks. State blocks make it possible for a Direct3D program to
+   record common sequences of device state changes into a construct that has a
+   unique identifier, or block handle. Programs can use the block handle to
+   execute previously recorded state blocks in a single method call. Besides
+   minimizing the calls required to change device states, state blocks enable
+   devices to cache precompiled sets of state changes for optimal execution,
+   often resulting in improved performance.
+
+ - Improved texture management: The Direct3D texture manager has been expanded
+   to allow programs to prioritize managed textures. Direct3D uses texture
+   priorities to determine which textures to keep in memory, and which to
+   remove.
+
+ - Enhanced software emulation: Direct3D has been optimized to use any special
+   instructions supported by the CPU. Supported instruction sets include the AMD
+   3D-Now! instruction set on some AMD processors and the MMX instruction set
+   supported by many Intel processors. Where available, Direct3D utilizes the
+   3D-Now! instruction set to accelerate transformation and lighting operations
+   and the MMX instruction set to accelerate rasterization. Programs that use
+   the Direct3D transformation and lighting pipeline with software devices
+   automatically benefit from this feature.
+
+New DirectDraw features include:
+
+ - DirectDraw stereo support has been added for active devices.
+
+New DirectSound features include:
+
+ - Improved hardware voice management.
+
+ - New 3-D audio processing algorithms result in better CPU utilization.
+
+New DirectPlay features include:
+
+ - Ripple launching is provided for Microsoft DirectPlay lobbied programs.
+
+New DirectInput features include:
+
+ - Microsoft DirectInput now supports up to eight mouse buttons, exclusive
+   access to the keyboard, and delayed start for force-feedback effects.
+
+New DirectMusic features include:
+
+ - Microsoft DirectMusic supports the Downloadable Sounds level 2 standard.
+
+For information about how to download and install DirectX 7.0, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Additional query words: direct-x dx improvements update versions
+
+======================================================================
+Keywords          : kbsetup kbtool msgame kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbLinkGolfSearch kbGamesSearch kbFlightSimSearch kbGolfSearch kbAllegianceSearch kbMetalGearSearch kbMotocrossSearch kbStarlancerSearch kbCrimsonSkiesSearch kbMidtownMadSearch kbAllegiance kbStarlancer kbCombatFlightSim2 kbCombatFlightSimSearch kbFlightSim2000 kbMetalGearSolid kbMidtownMadness2 kbMotocrossM2 kbCrimsonSkies kbLinks2001 kbSimSearch
+Version           : :1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

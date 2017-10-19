@@ -1,0 +1,72 @@
+DOCUMENT:Q182026  04-MAR-2002  [exchange]
+TITLE   :XFOR: Chat Channel Created w/Double-byte Lead Character Fails
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In any version of the Microsoft Exchange Chat Service that supports a
+double-byte character set, for example, the Japanese version, you may receive
+the following error message:
+
+   An IRC-compatible channel name must begin with the number sign (#) or
+   the ampersand (&).
+   Do you want to make this an MIC-only channel?
+
+NOTE: The above message will appear in the localized language.
+
+CAUSE
+=====
+
+Microsoft Exchange Chat Service does not support double-byte #, &, or % as
+valid leading characters as IRC channel names.
+
+RESOLUTION
+==========
+
+Use a single-byte #, &, or % as the leading character for all IRC/IRCX
+compatible channel names.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft Exchange Server version
+5.5. Microsoft is researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: MCISCHAT
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

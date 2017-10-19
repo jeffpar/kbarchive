@@ -1,0 +1,105 @@
+DOCUMENT:Q36324  18-JUL-2001  [win16sdk]
+TITLE   :HOWTO: Perform Background Processing Without Using Timers
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kbSDKPlatform kbGrpDSUser kbWndw kbWndwMsg kbFAQ kbwin16sdkfaq kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A Windows-based application that performs a long, background task, such as
+repaginating a word processing document, can be designed in a number of
+different ways.
+
+A polling task can be accomplished by setting a timer to fire at the desired
+interval. Many non-polling tasks can be performed in pieces. Although Windows
+does not have a method to schedule processing based on overall system load, an
+application can wait until there are no other messages to be processed by that
+application before proceeding. This article discusses the code required to
+implement this method.
+
+NOTE: This polling method is unnecessary for native Win32 applications.
+
+MORE INFORMATION
+================
+
+It is important that each piece of the task be relatively small. This allows
+Windows to devote processing time to other applications running in the system.
+Similarly, once the task is complete, it is important that the application
+signal that it is idle. This allows Windows to optimize its performance and to
+prolong battery life on portable computers.
+
+The following code skeleton demonstrates how this might be implemented:
+
+      WinMain
+      {
+      do application initialization
+
+      fBackgroundToDo = TRUE;
+      fRunning = TRUE;
+
+      while (fBackgroundToDo && fRunning)
+           {
+           if (fBackgroundToDo)
+                {
+                if ((PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+                     {
+                     if (msg.message == WM_QUIT)
+                          {
+                          fRunning = FALSE;
+                          break;
+                          }
+
+                     TranslateMessage(&msg);
+                     DispatchMessage(&msg);
+                     }
+                else
+                     fBackgroundToDo = DoABitOfBackground();
+                }
+           else if ((fRunning = GetMessage(&msg, NULL, NULL, NULL)) != 0)
+                {
+                TranslateMessage(&msg);
+                DispatchMessage(&msg);
+
+                fBackgroundToDo = IsThereBackgroundToDo();
+                }
+           }
+      }
+
+For additional information on this topic, query on the following words in this
+Knowledge Base:
+
+   SpawnAndWait
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSDKPlatform kbGrpDSUser kbWndw kbWndwMsg kbFAQ kbwin16sdkfaq kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

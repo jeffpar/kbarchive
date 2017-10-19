@@ -1,0 +1,79 @@
+DOCUMENT:Q128148  25-JUL-2001  [visualc]
+TITLE   :PRB: Procedure Entry Point FDIV Not Located in MSVCRT20.DLL
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.1
+OPER/SYS:
+KEYWORDS:kbprogramming kbtshoot kbusage kbCRT kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a Visual C++ version 2.1 application on Windows NT, you may
+receive this error:
+
+   The procedure entry point 'symbol' could not be located in the dynamic
+   library MSVCRT20.DLL.
+
+where 'symbol' could be one or all of these:
+
+   _adjust_fdiv
+   _adj_fdiv_r
+   _adj_fdiv_m64
+   _adj_fdivr_m64
+
+
+CAUSE
+=====
+
+The MSVCRT20.DLL file shipped with Visual C++ version 2.1 includes a fix for
+Pentium floating point functions. The faulty Pentium FDIV operations are
+implemented as internal functions in MSVCRT20.DLL. The error listed above is
+caused by linking to an older version of MSVCRT20.DLL - one that does not
+contain these functions.
+
+RESOLUTION
+==========
+
+The MSVCRT20.DLL library located in the WINDOWS\SYSTEM32 directory under Windows
+NT, should be version 2.10 or greater. You can check the version by using the
+File Manager. Select (highlight) the MSVCRT20.DLL file, and press ALT-ENTER to
+get its properties. If it isn't version 2.10, copy the newer version from the
+Visual C++ version 2.1 CD.
+
+
+A patch has been made available for those who do not have the Visual C++ version
+2.1 product CD. For additional information, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q128123 PATCH: Pentium FDIV Patch for Visual C++ 2.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbtshoot kbusage kbCRT kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbVC210
+Version           : winnt:2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

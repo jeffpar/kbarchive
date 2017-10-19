@@ -1,0 +1,163 @@
+DOCUMENT:Q148707  28-OCT-1999  [pcmail]
+TITLE   :PC DB: Troubleshooting Mail When Messages Are Not Moving
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Occasionally, due to file corruption, mail will stop moving between postoffices.
+This article provides guidance for isolating and solving the problem. Please
+read this entire article before attempting any of the recommended
+troubleshooting steps. Further assistance is available by placing a support call
+to Microsoft Product Support.
+
+MORE INFORMATION
+================
+
+Determine which direction mail is not moving. This step is critical. The MSMail
+for PC Networks version 3.x system uses separate postoffice mailbags to hold
+outbound mail destined to externally defined postoffices and a global mailbag
+for all inbound mail from externally defined postoffices. You will not be able
+to do any further troubleshooting if you cannot determine which way mail is not
+moving.
+
+Below are suggestions for isolating the problem:
+
+1. Send a message from the Admin Mail account on one postoffice to the Admin
+   Mail account on another postoffice.
+
+2. Verify the message is placed in the outbound queue by running ADMIN.EXE,
+   QUEUE and selecting the network name and postoffice name of the destination
+   postoffice.
+
+3. Allow the EXTERNAL.EXE program to run twice.
+
+4. Check the QUEUE to verify the status of the message. If the message is still
+   present, mail is not moving out.
+
+5. If the message has left the QUEUE, login to the Admin Mail account at the
+   destination postoffice and verify the message has arrived. If it is not
+   present, mail is not moving in. If this is the case, send a message from a
+   different postoffice to the same admin account to confirm the analysis.
+
+Additional troubleshooting steps once the problem has been isolated:
+
+1. Restart the External program servicing the problem postoffices. Wait for two
+   cycles and see if that clears up the problem. Watch the external screen for
+   the Sending Mail message to see if this starts the mail moving.
+
+2. At the postoffice from which mail is not moving (in or out), check the P1
+   subdirectory for files older than the time specified for the External program
+   to poll the postoffices. This time setting can be verified by checking the
+   -Nx (x in minutes) switch in the External command line string or the
+   INTERVALREGULAR=x (x in minutes) in the EXTERNAL.INI file. If there is no
+   entry, the default is 5 minutes.
+
+   If there are messages older than the time specified, run a single instance of
+   external against this postoffice. This will clear out any active P1 files.
+
+   An alternative method of resolving the problem of stranded P1s is to move all
+   old P1 files to a temporary directory and wait for another cycle of External.
+   The problem with this method is that if any of the P1s are still current
+   (there are headers associated with these P1 files in the INQUEUE3.MBG), then
+   these messages will spawn NDRs and the mail will not be recoverable.
+
+   Once mail is moving again satisfactorily it is safe to move out any old P1
+   files.
+
+3. Check the MTAs user account (the account which the External computer is using
+   to log into the postoffice with) rights on this directory. The MTA user
+   account must have full rights to the P1 subdirectory.
+
+4. Ensure files in the P1 subdirectory are not ownerless (Novell Servers Only).
+
+Specific guidance if mail is not moving *out* of a specific postoffice:
+
+a. Determine how much mail is in the outbound Queue by running ADMIN.EXE, QUEUE
+   and selecting the network name and postoffice name of the destination
+   postoffice.
+
+b. Determine the oldest message in any queue. If there are messages older than
+   today, delete or return the message(s).
+
+c. If there are many old messages in the queue, consider returning all the mail.
+   Send one message, verify that the message is in the queue, and run the
+   External program to deliver the message.
+
+   If the message leaves the queue, then there probably was a corrupted message
+   in the queue. If the message does not leave the queue, then there probably is
+   a corrupt outbound mailbag for the destination postoffice. You can reset
+   these .KEY and .MBG files using MAILQ16.EXE that comes with the MSMail
+   Resource Kit.
+
+   You may want to contact Product Support Services for assistance and
+   confirmation of your analysis.
+
+Specific guidance if mail is not moving *into* a specific postoffice:
+
+All inbound mail from externally defined postoffices (version 3.0 or later) is
+deposited into the INQUEUE3.KEY and INQUEUE3.MBG.
+
+a. Determine the size of the INQUEUE3.KEY and INQUEUE3.MBG. Divide the
+   INQUEUE3.MBG by 116. This *may* tell you the number of undelivered messages.
+   (The most accurate way to determine the number of undelivered messages in the
+   INQUEUE3 is to have all users logout from the postoffice, run ADMIN.EXE,
+   Local-Admin, Storage, Compress, then divide the INQUEUE3.MBG by 116 or run
+   MAILQ16.EXE that comes with the MSMail Resource Kit).
+
+b. Determine the time and date stamp on INQUEUE3.KEY and INQUEUE3.MBG. If it is
+   recent, the External program is writing to these files. If it is not recent,
+   check the externals to make sure there is an instance accessing this
+   postoffice. If the time is current, run a separate instance of the External
+   program against this postoffice to determine if it can deliver messages to
+   the recipients' mailbags. If the separate instance of External is successful
+   in moving messages (this can be reliably verified by logging into mail as the
+   recipient, because the size of the INQUEUE3 will not necessarily reflect a
+   change), then the MailerDisable option may be enabled on the original
+   external program that is servicing this postoffice.
+
+   MailerDisable is disabled by default. To verify the state of this switch, look
+   for "/MailerDisable" on the command line string or "MailerDisable" in the
+   EXTERNAL.INI file. If this entry is present, MailerDisable is enabled.
+
+c. If messages are still not being delivered from the INQUEUE3.MBG and
+   INQUEUE3.KEY, reset these files. These files can be reset using the MAILQ16
+   utility. This utility is available with the Mail Resource Kit. Once these
+   files are reset, send another test message. If mail transfer is successful,
+   there was corruption in the INQUEUE3 files.
+
+   In all cases of mail not moving if you are unsure of the steps to take please
+   don't hesitate to place a support call.
+
+Additional query words: 3.50 tshoot mailflow mail not moving pcmailfaq
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

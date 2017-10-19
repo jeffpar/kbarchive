@@ -1,0 +1,54 @@
+DOCUMENT:Q173797  25-JUL-2001  [win95x]
+TITLE   :Toshiba 300CT Laptop Computer Uses a Windows Modem
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The modem built into the Toshiba 300CT laptop computer is a Windows modem. The
+modem works only with Windows 95.
+
+MORE INFORMATION
+================
+
+Other operating systems may offer support for this modem at a later date. To
+determine if this modem is supported by an operating system, consult with the
+manufacturer of the operating system. If you need to use an operating system
+other than Windows 95 with the Toshiba 300CT laptop computer, Toshiba recommends
+installing a Personal Computer Memory Card International Association (PCMCIA) or
+PC Card modem. For information about installing a PCMCIA or PC Card modem into
+the Toshiba 300CT laptop computer, contact Toshiba or refer to the documentation
+included with the computer.
+
+
+======================================================================
+Keywords          : kbhw win95 kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

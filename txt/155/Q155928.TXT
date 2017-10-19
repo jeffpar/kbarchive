@@ -1,0 +1,74 @@
+DOCUMENT:Q155928  27-JUL-2001  [foxpro]
+TITLE   :SELECT - SQL's NOFILTER Clause Forces Physical File
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbSQL kbvfp500 kbvfp600 KbDBFDBC kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The new SELECT ... INTO CURSOR ... NOFILTER clause causes a cursor to be created
+that has a corresponding physical file.
+
+MORE INFORMATION
+================
+
+In previous versions of FoxPro, the following code generates an error:
+
+      SELECT * FROM customer INTO Cursor temp
+      SELECT * FROM temp INTO Cursor temp2
+
+The following error, 1815, is generated:
+
+   'TEMP' must be created with SELECT...INTO TABLE.
+
+The following code was frequently used as a workaround in previous versions of
+FoxPro:
+
+      SELECT *,.T. FROM customer INTO Cursor temp
+      SELECT * FROM temp INTO Cursor temp2
+
+The extra column created by the .T. causes a physical file to be created, which
+can have subsequent SELECT - SQL statements run against it.
+
+In FoxPro 5.0, you can use the following code instead:
+
+      SELECT * FROM customer INTO Cursor temp NOFILTER
+      SELECT * FROM temp INTO Cursor temp2
+
+The NOFILTER clause forces the SELECT to create a physical file that can have
+SELECT - SQL statements run against it, without adding more columns.
+
+When the cursor is closed, the physical (temp) file is deleted.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbSQL kbvfp500 kbvfp600 KbDBFDBC kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

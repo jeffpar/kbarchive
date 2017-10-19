@@ -1,0 +1,103 @@
+DOCUMENT:Q176872  28-APR-1999  [automap]
+TITLE   :Streets 98 Err Msg: Unable to Register File Abico11.dll...
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:98
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets 98, version 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Expedia Streets 98, you may receive an
+error message similar to the following:
+
+   Microsoft Expedia Streets 98
+
+   Unable to register file Abico11.dll. Please reinstall.
+
+If you attempt to reinstall Expedia Streets 98, the same error message is
+displayed.
+
+CAUSE
+=====
+
+You may be running background terminate-and-stay-resident (TSR) programs or
+other programs that are interfering with the installation.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit all unnecessary programs that are running before you
+attempt to reinstall Expedia Streets. To do so, use the following steps:
+
+1. Restart the computer at a command prompt. To do so, follow the steps in the
+   appropriate section below:
+
+   Microsoft Windows 95
+   --------------------
+
+   Restart your computer. When you see the "Starting Windows 95" message, press
+   the F8 key, and then choose Command Prompt Only from the Startup menu.
+
+   Microsoft Windows 98
+   --------------------
+
+   Restart your computer, press and hold down the CTRL key after your computer
+   completes the Power On Self Test (POST), and then choose Command Prompt Only
+   from the Startup menu.
+
+2. Start Windows by typing "win" (without the quotation marks) and holding down
+   the SHIFT key for the duration of Windows startup. This prevents any programs
+   from being loaded automatically when Windows starts.
+
+3. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+4. Quit all programs except Explorer and Systray (which are parts of Windows).
+   To quit a program, click the program, and then click End Task.
+
+5. Repeat steps 3-4 until all unnecessary programs are no longer running.
+
+6. Disable any anti-virus or disk tool programs installed on the computer. For
+   information about how to disable these programs, see the printed or online
+   documentation for the program.
+
+
+After you complete these steps, you should be able to reinstall Expedia Streets
+without any further problems.
+
+MORE INFORMATION
+================
+
+TSR programs, such as anti-virus and uninstallation programs, can often
+interfere with the successful installation of a program.
+
+Additional query words: auto map automap auto-map mmtitles abicoll.dll multi multi-media media mm
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbimu kbfaq
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets98
+Version           : WINDOWS:98
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

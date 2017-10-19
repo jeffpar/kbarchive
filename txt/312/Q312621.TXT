@@ -1,0 +1,80 @@
+DOCUMENT:Q312621  13-NOV-2001  [msnetwork]
+TITLE   :Unable To Add Free MSN Account Again After A System Restoration
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network Version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have MSN Internet Access and you added eight free MSN accounts to MSN
+Explorer on your computer. You did a system restoration on your computer. After
+the restoration, you attempted to add your MSN Internet Access account plus
+eight free MSN accounts that were previously subsidiary accounts on MSN Explorer
+on your computer. After you attempt to add the first free MSN account, you see
+the following message:
+
+   You have exceeded the limit of associating the free accounts to the paying
+   account.
+
+CAUSE
+=====
+
+When you add a free user, MSN Explorer does not check to see if you are
+associating a new or old account with the paying MSN account.
+
+RESOLUTION
+==========
+
+To resolve this issue
+
+1. Sign on with the primary (Account Manager) account.
+
+2. Click Help and Settings, and then click Accounts.
+
+3. Click Remove User, and delete the primary (Account Manager) account.
+   MSN Explorer will sign you out
+
+4. Click Add New User.
+
+5. When prompted, Do you have one of the following e-mail addresses?, click I
+   have an @msn.com e-mail address.
+
+6. Add all free MSN accounts first.
+
+7. After adding all the free MSN accounts, add the primary (Account Manager)
+   account.
+
+Start MSN Explorer
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN700
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

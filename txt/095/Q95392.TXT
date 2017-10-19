@@ -1,0 +1,67 @@
+DOCUMENT:Q95392  17-JUN-1999  [win16sdk]
+TITLE   :INFO: Managing Icons Extracted Using ExtractIcon()
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ExtractIcon() API is new to Windows version 3.1. The Window 3.1 Software
+Development Kit (SDK) "Programmer's Reference, Volume 2: Functions" description
+of this function, on page 296, does not address management of the memory
+occupied by the icons extracted using ExtractIcon. This article provides that
+information.
+
+MORE INFORMATION
+================
+
+When an application calls ExtractIcon(), it passes an hInstance. When that
+hInstance is terminated, the memory occupied by that icon is automatically
+freed.
+
+Applications that extract several icons during their lifetime may not be able to
+keep several unused icons in memory. Such applications can call DestroyIcon to
+free memory occupied by icons.
+
+If application A needs to pass a handle to an icon to application B in the
+system, it should make a copy of the icon with CopyIcon() using the hInstance of
+application B. This ensures that even if application A quits while application B
+is still using the icon, the handle to the icon passed to application B will
+still be valid.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q98390  20-NOV-1999  [pcmail]
+TITLE   :PC WFW: 3.0b Windows Client Disk 3 [3.5, 720K]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory listing of the version 3.0b Microsoft Mail
+Windows-based and OS/2 Presentation Manager-based workstation Disk 3.
+
+ Volume in drive B is HELP
+ Volume Serial Number is 451C-3907
+ Directory of B:\ 
+ 
+CBTLIB3  DL_     10106 10-07-92  12:00a
+CLKLIB   DE_      4549 10-07-92  12:00a
+MAILSPL  IC_       467 10-07-92  12:00a
+MSMAIL   HL_    184972 10-07-92  12:00a
+MSMAIL   IC_       485 10-07-92  12:00a
+MSMAIL   LE_    322963 10-07-92  12:00a
+PLAY     EX_     64256 10-07-92  12:00a
+USER     DL_    138138 10-07-92  12:00a
+WINHELP  EX_    142018 10-07-92  12:00a
+WINHELP  HL_     17863 10-07-92  12:00a
+ 
+       10 file(s)     885817 bytes
+
+
+Additional query words: 3.00b dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3
+Version           : :3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

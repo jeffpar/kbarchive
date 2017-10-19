@@ -1,0 +1,70 @@
+DOCUMENT:Q170996  13-JUN-2001  [sna]
+TITLE   :SNA Server Fails to Send Data to DSPU After an Outage
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11 SP2,3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11 SP2, 3.0, 3.0 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Under certain circumstances, like a link outage between SNA Server and a
+Downstream System, SNA Server may fail to send host data to the downstream
+System on the SSCP-LU session. Sessions or applications on the downstream system
+then seem to hang, waiting for data.
+
+CAUSE
+=====
+
+We recently introduced a queue within the SNA Server service to ensure that
+requests from the Host on the LU-SSCP session were handled serially.
+Unfortunately in one case this queue is not cleared. The particular case is when
+the SNA Server service receives a request from the host when the downstream
+session or application is not ready to receive data. The EXR or -RSP generated
+was not routed through the DFC layer (where the queue was managed).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11 Service
+Pack 2, 3.0 and 3.0 Service Pack 1. A fix to this problem is in development, but
+has not been regression-tested and may be destabilizing in production
+environments.
+
+Microsoft does not recommend implementing this fix at this time. Contact
+Microsoft Product Support Services for more information on the availability of
+this fix.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11 SP2,3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

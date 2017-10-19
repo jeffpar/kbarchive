@@ -1,0 +1,68 @@
+DOCUMENT:Q157613  14-NOV-2000  [word97]
+TITLE   :WD97: Bullet Symbol Changes After Roundtrip Conversion
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a Word 97 document that contains bullet characters to Word for the
+Macintosh 5.x format, and then reopen the document in Word 97, the bullets
+display as boxes. The document opens correctly in Word for the Macintosh 5.x.
+However, if you edit and save the document in Word for the Macintosh 5.x format
+and then reopen it in Word 97, the bullets display as boxes. This problem occurs
+in Word 97 when you apply bullets using the Bullet button on the Formatting
+toolbar, or when you choose the Symbol command on the Insert menu and select the
+Symbol font.
+
+
+WORKAROUND
+==========
+
+To work around this problem, choose the appropriate method:
+
+Method 1. In Word 97, create the bullets using the Symbol command on the Insert
+menu and the normal text font.
+
+Method 2. After you open the document in Word for the Macintosh and make changes,
+save the document in Interchange Format (RTF).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 8.0 word8 word97 macword macword5
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

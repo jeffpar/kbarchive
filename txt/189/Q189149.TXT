@@ -1,0 +1,75 @@
+DOCUMENT:Q189149  10-AUG-2001  [winnt]
+TITLE   :Disk Counters on Clustered Disk Record Zero Values
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Performance Monitor to record activity on a shared clustered drive
+in a Microsoft Cluster Server, the Physical and Logical Disk counters may record
+zero or incorrect values. Even after enabling Diskperf -Y and restarting the
+servers in the cluster, the first server to boot may properly record the disk
+counters but if the shared drive is failed over to a second server, the disk
+counters record zero and show no activity on the shared drive on the second
+server.
+
+RESOLUTION
+==========
+
+To work around this problem, you can initiate a failover to the shared disk and
+then fail back again using the following steps:
+
+1. Launch Cluster Administrator.
+
+2. Right-click the group where the shared disk resides, and then click Move
+   Group.
+
+3. After the disk is online, repeat step 2 and move the group back again. This
+   resets Performance Monitor and allows you to monitor disk activity.
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+STATUS
+======
+
+This problem was first corrected in Windows NT 4.0 Service Pack 4.
+
+Additional query words: mscs chart log perfmon
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

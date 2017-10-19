@@ -1,0 +1,115 @@
+DOCUMENT:Q235726  04-DEC-2001  [sms]
+TITLE   :SMS: Specifying Senior Site for WinNT Logon Point Management
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When multiple Systems Management Server sites using Windows Networking Logon
+Client Installation and/or Windows Networking Logon Client Discovery share a
+common domain, the senior site is responsible for updates to user profiles,
+scripts, and logon point files. By default, senior sites are elected based upon
+site code and version.
+
+Administrators may need the ability to manually configure which site will serve
+as senior site; for example, if the default senior site is across a slow link.
+
+Systems Management Server Service Pack 1 (SP1) gives Administrators the ability
+to specify which site will act as the senior site, without regard to
+participating sites' version or site code.
+
+To specify which site is to server as senior site, you need to create a
+Senior.lst file in the smslogon\sitescfg directory on the PDC. The first three
+characters of the file need to contain the desired site code.
+
+NOTE: The site specified in the senior.LST file MUST participate in Logon Point
+Management by having Windows Networking Logon Client Installation and/or Windows
+Networking Logon Client Discovery enabled.
+
+STATUS
+------
+
+Microsoft has confirmed this to be a problem in Systems Management Server version
+2.0. This problem has been corrected in the latest U.S. service pack for Systems
+Management Server version 2.0. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+
+MORE INFORMATION
+================
+
+Administrators can create a Senior.lst file with any text editor; however, for
+simplicity the example below uses the MS-DOS copy con command.
+
+How to create a Senior.lst File
+-------------------------------
+
+1. Move to an MS-DOS command prompt.
+
+2. Type "copy con Senior.lst" (without the quotation marks) and press ENTER.
+
+3. Type the desired three-character site code; for example, "XYZ" (without the
+   quotation marks) and press ENTER.
+
+NOTE: The SMS_NT_LOGON_SERVER_MANAGER service is case sensitive, so the site code
+must be entered in uppercase text.
+
+4. Press CTRL+Z.
+
+5. Copy the Senior.lst file to your PDC; for example,
+   \\server\smslogon\sitescfg.
+
+To verify the new site specified is acting as the senior site, you can enable
+logging for SMS_NT_LOGON_SERVER_MANAGER in Systems Management Server Service
+Manager, then monitor the Nt_logon.log file. The senior site's Nt_logon log
+states the following:
+
+This site is senior site, updating all servers
+
+For participating sites that are not acting as senior sites, the Nt_logon.log
+file states the following:
+
+This site is not the senior site, Site XXX is responsible for updating servers
+
+NOTE: If this file does not exist then the senior site is the one with the
+highest version of Systems Management Server which has either logon disc or
+installation enabled. The proposed Senior Site must have either logon discovery
+or logon installation enabled.
+
+Additional query words: prodsms nt_logon Logon server manager senior point
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

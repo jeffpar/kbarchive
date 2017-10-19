@@ -1,0 +1,60 @@
+DOCUMENT:Q146305  18-DEC-1999  [schedplus]
+TITLE   :Covey Sample Index May Not Show Information
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Covey Seven Habits Tools, the Sampler Index on the Wisdom tab
+may be blank.
+
+NOTE: The Sample Index lists the contents of the SAMPLE1.CLW file included with
+Schedule+.
+
+CAUSE
+=====
+
+If the SAMPLE1.CLW file is not located in the same directory where Schedule+ is
+installed, the Sample Index will be blank.
+
+WORKAROUND
+==========
+
+To see the topics in the Sample Index, locate the SAMPLEL1.CLW file on your hard
+drive. If you are unable to locate this file , the original can be expanded or
+extracted from your setup disk to the directory where Schedule+ is installed.
+
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbZNotKeyword3 kbSchedule700Win95
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

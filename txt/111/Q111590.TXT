@@ -1,0 +1,70 @@
+DOCUMENT:Q111590  16-JUL-1999  [win16sdk]
+TITLE   :BUG: Some TrueType Character Pairs Run Together on VGA
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbOSWin310 _IK kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On some displays such as the standard VGA display that ships with Windows 3.1,
+certain TrueType font character pairs do not have any space between them and run
+together. For example, when using the Arial TrueType font at a point size of 14
+or greater, the characters "f7" don't have any space between them.
+
+CAUSE
+=====
+
+The standard VGA display driver does not support one-pass opaquing of the entire
+glyph black box so GDI must simulate. The simulation is not done correctly for
+certain characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+If you are using TextOut() to display the text and this slight cosmetic problem
+is not acceptable, you can use the ExtTextOut() function and specify the spacing
+between the characters.
+
+Additional query words: buglist3.10 3.10
+
+======================================================================
+Keywords          : kbOSWin310 _IK kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

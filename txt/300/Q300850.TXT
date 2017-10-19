@@ -1,0 +1,243 @@
+DOCUMENT:Q300850  16-MAY-2002  [vbwin]
+TITLE   :BUG: GlobalMultiUse Class Doesn't End in Multithreaded Environmt
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0,6.0 SP4,6.0 SP5
+OPER/SYS:
+KEYWORDS:kbActiveX kbCOMt kbLocalSvr kbGrpDSVB kbDSupport kbVS600sp4bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Studio versions 6.0 SP4, 6.0 SP5 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0 SP4, 6.0 SP5 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When two clients call a procedure of an ActiveX EXE component at the same time,
+and this procedure calls another procedure of a MultiUse class in an ActiveX
+dynamic-link library (DLL), if this class accesses a procedure in a
+GlobalMultiUse class in another ActiveX DLL, the ActiveX EXE component stays in
+memory; that is, the process fails to terminate, even after all the references
+to it have been released.
+
+This behavior does not occur in Visual Basic 6.0 Service Pack 3 (SP3) or earlier.
+
+CAUSE
+=====
+
+This problem occurs because the DllCanUnloadNow function of the GlobalMultiUse
+DLL returns FALSE if it is currently being called by another thread. This means
+that the GlobalMultiUse DLL may not be able to release itself in a multithreaded
+environment.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+it has not been fully regression tested and should be applied only to computers
+that are experiencing this specific problem.
+
+NOTE: You must have a Visual Studio license agreement to obtain this fix.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date         Time        Version    Size     File name   
+   ---------------------------------------------------------
+   29 May 2001  3:32:23 PM  6.0.92.37  1.32 MB  MSVBVM60.DLL
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create the DLL with a GlobalMultiUse Class:
+
+1. Create a new ActiveX DLL project with a default class, Class1.
+
+2. From the Project menu, click Project1 Properties. Change the project name to
+   "GMultiUseDll" (without the quotation marks), and then click OK.
+
+3. In the Properties dialog box, set the Instancing property of Class1 to "6 -
+   GlobalMultiUse".
+
+4. Copy and paste the following code to Class1's code module:
+
+   Public Function ClassName() As String
+       ClassName = "Class1"
+   End Function
+
+5. From the File menu, click Make GMultiUseDll.dll to compile the project.
+   GMultiUseDll.dll is created.
+
+Create the DLL with a MultiUse Class:
+
+1. Create a new ActiveX DLL project with a default class, Class1.
+
+2. From the Project menu, click Project1 Properties. Change the project name to
+   "MultiUseDll" (without the quotation marks), and then click OK.
+
+3. From the Project menu, click References, select the GMultiUseDll.dll check
+   box, and then click OK.
+
+4. Copy and paste the following code to Class1's code module:
+
+   Public Function GetString() As String
+       GetString = ClassName
+   End Function
+
+5. From the File menu, click Make MultiUseDll.dll to compile the project.
+   MultiUseDll.dll is created.
+
+Create the ActiveX EXE Project:
+
+1. Create a new ActiveX EXE project with a default class, Class1.
+
+2. From the Project menu, click Project1 Properties. Change the project name to
+   "TestServer" (without the quotation marks), and then click OK.
+
+3. From the Project menu, click References, select the MultiUseDll.dll check
+   box, and then click OK.
+
+4. From the Project menu, click TestServer Properties. On the General tab, set
+   the Thread Pool to 10 threads.
+
+5. Copy and paste the following code to Class1's code module
+
+   Public Sub DoSomething()
+       Dim obj As MultiuseDll.Class1
+       Set obj = New MultiuseDll.Class1
+       obj.GetString
+   End Sub
+
+6. From the File menu, click Make TextServer.exe to compile the project.
+   TextServer.exe is created.
+
+Create the Client Project:
+
+1. Create a new Standard EXE project with a default form, Form1.
+
+2. From the Project menu, click Project1 Properties. Change the project name to
+   "TestClient" (without the quotation marks), and then click OK.
+
+3. Add a Label (Label1), a TextBox (Text1) and two CommandButtons (Command1 and
+   Command2) to Form1.
+
+4. Copy and paste the following code to Form1's code module:
+
+   Dim bStop As Boolean
+
+   Private Sub Command1_Click()
+       Dim oServer As Object
+       Set oServer = CreateObject("TestServer.Class1")
+       WaitTRUEinFile Text1.Text
+       oServer.DoSomething
+       Set oServer = Nothing
+       Label1.Caption = "The reference was released"
+   End Sub
+
+   ' The purpose of this function is to synchronize the call to the
+   ' GlobalMultiUse DLL through the file Sync.txt.
+   Private Sub WaitTRUEinFile(sFile As String)
+       Dim sFlag      As String
+       Label1.Caption = "Waiting for 'TRUE' in " & sFile
+       Do While bStop = False
+           Open sFile For Input As #1
+           Line Input #1, sFlag
+           Close #1
+           
+           If UCase(Trim(sFlag)) = "TRUE" Then
+               Exit Do
+           End If
+           DoEvents
+       Loop
+   End Sub
+
+   Private Sub Command2_Click()
+       bStop = True
+   End Sub
+
+   Private Sub Form_Load()
+       Text1.Text = "c:\sync.txt"
+       Command1.Caption = "Start"
+       Command2.Caption = "Stop"
+       bStop = False
+   End Sub
+
+   Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
+       bStop = True
+   End Sub
+
+5. From the File menu, click Make TestClient.exe to compile the project.
+   TestClient.exe is created.
+
+Run the Test:
+
+1. Open Notepad. Add the letter "t" to the first position, and save the file as
+   Sync.txt in the root of drive C.
+
+2. Start two instances of TestClient.exe. Notice that two TestClient.exe
+   processes are running in Task Manager.
+
+3. Click Start for both instances of TestClient.
+
+4. Open Sync.txt. Change the first line to "true," and save.
+
+   After you save the file, notice the TestServer.exe process in Task Manager.
+
+5. Click Stop for both instances of TestClient, and close the forms. Notice that
+   there are no instances of TestClient.exe running. At this point,
+   TestServer.exe stays loaded.
+
+For additional information on issues related to multithreading in Visual Basic,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q241896 PRB: Threading Issues with Visual Basic 6.0 ActiveX Components
+
+Additional query words: multi-thread
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbLocalSvr kbGrpDSVB kbDSupport kbVS600sp4bug 
+Technology        : kbVSsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVS600SP4 kbVS600SP5 kbVB600SP4 kbVB600SP5 kbVS600Search
+Version           : :6.0,6.0 SP4,6.0 SP5
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

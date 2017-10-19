@@ -1,0 +1,70 @@
+DOCUMENT:Q215051  28-OCT-2000  [sms]
+TITLE   :SMS: Removing Primary Site Does Not Remove SMSPKG Package Folder
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2,2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you remove a Systems Management Server (SMS) primary site, a folder named
+SMSPKGd$ is not removed. This share is created when the Primary Site Server is
+used as a Distribution Server. The letter x in SMSPKGx$ designates the drive on
+which the share is created.
+
+WORKAROUND
+==========
+
+To work around this problem, follow these steps on the SMS Site Server:
+
+1. Start Windows Explorer.
+
+2. Expand drive D.
+
+3. Right-click SMSPKGd$.
+
+4. Click Sharing.
+
+5. Click Not Shared, and then click OK.
+
+6. Select SMSPKGd$.
+
+7. Click Delete.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbSMSSearch kbSMS120 kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :1.2,2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

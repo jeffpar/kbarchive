@@ -1,0 +1,85 @@
+DOCUMENT:Q130393  29-NOV-1999  [homekids]
+TITLE   :Writer/Artist: Colored Squares Appear Around Some Objects
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view graphics in Microsoft PowerPoint while you run either Creative
+Writer or Fine Artist, blocks of color may appear around many of the objects in
+Creative Writer and Fine Artist.
+
+This problem occurs with drawing and painting tools in Fine Artist and is most
+likely to occur when running a PowerPoint Slide Show.
+
+WORKAROUND
+==========
+
+Use the following steps to work around the problem:
+
+If you are using Fine Artist:
+
+1. Quit Fine Artist.
+
+2. Do NOT save the changes you have made to your work.
+
+3. Exit PowerPoint.
+
+4. Run Fine Artist.
+
+5. If after following these steps the problem persists, restart Windows. Start
+   Fine Artist again.
+
+If you are using Creative Writer:
+
+1. Quit Creative Writer. Save any changes you have made to your work.
+
+2. Exit PowerPoint.
+
+3. Start Creative Writer.
+
+4. If the problem persists, restart Windows. Restart Creative Writer.
+
+After following these steps, you should be able to run Creative Writer and Fine
+Artist successfully.
+
+MORE INFORMATION
+================
+
+Do not save your work in Fine Artist, because the colors may save incorrectly
+and the original work may be lost.
+
+
+Additional query words: kids mskids artist maggie max writer colors ppt power point slide show video screen change odd strange boxes box block 1.10 1.00 1.10a creative fine mczee squares square games game
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword2 kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a kbFineArtist100 kbFineArtist110 kbFineArtist110a
+Version           : WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

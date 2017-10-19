@@ -1,0 +1,83 @@
+DOCUMENT:Q83840  07-DEC-1999  [win95x]
+TITLE   :Emulations for Seikosha Printers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Currently, there are no Seikosha printer drivers for any version of Microsoft
+Windows. This article provides a list of recommended emulations.
+
+MORE INFORMATION
+================
+
+Model             Primary Emulation       Secondary Emulation
+-----             -----------------       -------------------
+SP-1000A*         Epson FX-80             None
+SP-1000I*         IBM Graphics            None
+SP-1000AS*        Epson FX-80             None
+SP-1200AI*        Epson FX-80             IBM Graphics
+SP-1200AS*        Epson FX-80             IBM Graphics
+SP-1600AI*        Epson FX-80             IBM Graphics
+SP-1600AS*        Epson FX-80             IBM Graphics
+SP-2000*          Epson FX-850            IBM Proprinter II
+SP-2000S          Epson FX-850            IBM Proprinter II
+SP-2000 Plus      Epson FX-850            IBM Proprinter II
+SP-2400           Epson FX-850            IBM Proprinter II
+SP-2415           Epson FX-1050           IBM Proprinter II
+SK-3000AI*        Epson FX/JX-80          IBM Graphics
+SK-3005AI*        Epson FX/JX-80          IBM Graphics
+SK-3005 Plus      Epson FX/JX-80          IBM Proprinter IIIXL
+MP-1300AI*        Epson FX/JX-80          IBM Graphics
+MP-5300AI*        Epson FX-80             IBM Graphics
+SL-80AI           Epson LQ-1500           IBM Graphics
+SL-90             Epson LQ-850            None
+SL-90 Plus        Epson LQ-850            None
+SL-230*           Epson LQ-1050           IBM Proprinter XL24
+SL-270            Epson LQ-1050           IBM Proprinter XL24
+LT-20             IBM Proprinter X24      None
+BP-5420AI*        Epson FX-80             IBM Graphics
+BP-5420FA*        Epson FX-80             IBM Graphics
+BP-5460*          Epson FX-80             IBM Graphics
+BP-5780           Epson FX-1050           IBM Proprinter IIIXL
+SBP-10AI          Epson FX-286e           IBM Proprinter XL
+
+* Discontinued Product
+
+For additional information on Seikosha Printers, contact Seikosha America
+Technical Support.
+
+
+Additional query words: 3.10 3rdparty win31 works windows ms-dos
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

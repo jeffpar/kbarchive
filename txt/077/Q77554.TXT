@@ -1,0 +1,61 @@
+DOCUMENT:Q77554  14-DEC-1999  [win95x]
+TITLE   :Text Copied from DOS Application Appends Carriage Return
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Text copied from an MS-DOS application running in a window under Windows 3.0 to
+the Clipboard will have a carriage return added to it, if one does not already
+exist.
+
+Some Windows applications such as Word for Windows, Write, and Notepad show this
+added carriage return when this text is pasted. The insertion point of the
+Windows application begins on a new line after the pasted text.
+
+MORE INFORMATION
+================
+
+If a carriage return is copied from the MS-DOS application, then a carriage
+return is not appended to the existing carriage return copied with the text to
+the Clipboard.
+
+It is possible to save the Clipboard file and then view the file's contents with
+a sector or disk editing utility and see the added carriage return. A carriage
+return is represented by the value "0D."
+
+When a Windows application such as Write or Notepad has text copied to the
+Clipboard, this does not occur.
+
+Additional query words: 3.0 3.0a 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

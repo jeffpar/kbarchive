@@ -1,0 +1,74 @@
+DOCUMENT:Q237520  25-JUL-2001  [homemm]
+TITLE   :Encarta 2000: Article Opens Slowly or Program Stops Responding
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhw kbui kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open an article in Microsoft Encarta Encyclopedia 2000, the article may
+take an unexpectedly long time to appear on the screen or the program may stop
+responding.
+
+CAUSE
+=====
+
+This behavior can occur if the microprocessor (CPU) installed in your computer
+meets or only barely exceeds the minimum system requirements needed to run
+Encarta Encyclopedia 2000.
+
+RESOLUTION
+==========
+
+To resolve this issue, install a faster microprocessor in your computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+MORE INFORMATION
+================
+
+If a CD-ROM changer is installed in your computer, you may be able to improve
+performance by inserting only one Encarta Encyclopedia compact disc in the
+CD-ROM changer at any one time.
+
+When you are prompted to insert the other Encarta Encyclopedia CD-ROM into the
+CD-ROM drive, remove the Encarta CD-ROM that is currently in the CD-ROM changer
+before you insert the other disc.
+
+Additional query words: multi multi-media media mm ee2k opens hangs freeze lock
+
+======================================================================
+Keywords          : kbhw kbui kbimu kbHardware 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

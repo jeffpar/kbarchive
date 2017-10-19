@@ -1,0 +1,155 @@
+DOCUMENT:Q240653  11-SEP-2001  [vbwin]
+TITLE   :HOWTO: Copy the Screen or Active Window to the Clipboard from VB
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbprint kbAPI kbClipboard kbPrinting kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbOSWin95 kbOSW
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to programmatically copy the active window or the
+whole screen to the clipboard and print the image.
+
+MORE INFORMATION
+================
+
+The code included in Knowledge Base article:
+
+   Q161299 HOWTO: Capture and Print the Screen, a Form, or any Window
+
+shows how to capture any form or window, including the screen, and place it in a
+Visual Basic Picture object. If the only requirement is to copy the active
+window or screen to the clipboard, the keybd_event API is a much easier and
+lower overhead approach. Calling the keybd_event API achieves the same
+functionality as entering the key combinations PRINTSCRN (copy the screen to the
+clipboard) or ALT+PRINTSCRN (copy the active window to the clipboard). If you
+also need to print the image, a hidden PictureBox can provide this
+functionality.
+
+Step-by-step Example
+--------------------
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. Add three CommandButtons and a PictureBox to Form1.
+
+3. Add the following code into the General Declarations section of Form1:
+
+   Option Explicit
+
+   Private Declare Sub keybd_event Lib "user32" (ByVal bVk As Byte, ByVal _
+      bScan As Byte, ByVal dwFlags As Long, ByVal dwExtraInfo As Long)
+
+   Private Declare Function GetVersionExA Lib "kernel32" _
+         (lpVersionInformation As OSVERSIONINFO) As Integer
+
+   Private Type OSVERSIONINFO
+       dwOSVersionInfoSize As Long
+       dwMajorVersion As Long
+       dwMinorVersion As Long
+       dwBuildNumber As Long
+       dwPlatformId As Long
+       szCSDVersion As String * 128
+   End Type
+
+   Private Const KEYEVENTF_KEYUP = &H2
+   Private Const VK_SNAPSHOT = &H2C
+   Private Const VK_MENU = &H12
+
+   Dim blnAboveVer4 As Boolean
+
+   Private Sub Command1_Click()
+       If blnAboveVer4 Then
+           keybd_event VK_SNAPSHOT, 0, 0, 0
+       Else
+           keybd_event VK_SNAPSHOT, 1, 0, 0
+       End If
+   End Sub
+
+   Private Sub Command2_Click()
+       If blnAboveVer4 Then
+           keybd_event VK_SNAPSHOT, 1, 0, 0
+       Else
+           keybd_event VK_MENU, 0, 0, 0
+           keybd_event VK_SNAPSHOT, 0, 0, 0
+           keybd_event VK_SNAPSHOT, 0, KEYEVENTF_KEYUP, 0
+           keybd_event VK_MENU, 0, KEYEVENTF_KEYUP, 0
+       End If
+   End Sub
+
+   Private Sub Command3_Click()
+       ' Load the captured image into a PictureBox and print it
+       Picture1.Picture = Clipboard.GetData()
+       Printer.PaintPicture Picture1.Picture, 0, 0
+       Printer.EndDoc
+   End Sub
+
+   Private Sub Form_Load()
+       Dim osinfo As OSVERSIONINFO
+       Dim retvalue As Integer
+      
+       osinfo.dwOSVersionInfoSize = 148
+       osinfo.szCSDVersion = Space$(128)
+       retvalue = GetVersionExA(osinfo)
+       If osinfo.dwMajorVersion > 4 Then blnAboveVer4 = True
+
+       Picture1.Visible = False
+       Command1.Caption = "Print Screen"
+       Command2.Caption = "Alt+Print Screen"
+       Command3.Caption = "Print Image"
+   End Sub
+
+4. Open Microsoft Paint, and then run the project.
+
+5. Click the Print Screen button, switch to Paint, and press CTRL+V to paste the
+   contents of the clipboard into Paint. The entire screen is pasted.
+
+6. Click the Alt+Print Screen button, switch to Paint as before, and press
+   CTRL+V again. Only the active window is pasted.
+
+7. Click the Print Image button and the captured image will print (using a
+   hidden PictureBox).
+
+REFERENCES
+==========
+
+For additional information, please click the article numbers below to view them
+in the Microsoft Knowledge Base:
+
+   Q161299 HOWTO: Capture and Print the Screen, a Form, or any Window
+
+   Q189249 HOWTO: Determine Which 32-Bit Windows Version Is Being Used
+
+Additional query words: PRINTSCREEN ALTPRINTSCREEN ALT+PRINTSCREEN
+
+======================================================================
+Keywords          : kbprint kbAPI kbClipboard kbPrinting kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

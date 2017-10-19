@@ -1,0 +1,69 @@
+DOCUMENT:Q239664  25-JUN-2000  [homemm]
+TITLE   :Encarta 2000: Cannot Play "Arabian Camel" in Full Screen Mode
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play the "Arabian Camel" video clip in Full Screen Video
+mode in Microsoft Encarta Encyclopedia 2000, you experience both of the
+following symptoms:
+
+ - The video clip continues to be played in the program window instead of in
+   Full Screen Video mode.
+
+ - The "An essential component for full-screen video is missing" online Help
+   topic is displayed.
+
+If you then attempt to play any other video clip in Full Screen Video mode, the
+video clip is played in the program window.
+
+NOTE: This issue occurs only with the DVD-ROM version of Encarta Encyclopedia
+2000.
+
+RESOLUTION
+==========
+
+To play any video clip except "Arabian Camel" in Full Screen Video mode, quit
+Encarta Encyclopedia, restart the computer, and then play the video clip.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+Additional query words: multi multi-media media mm ee2k movie
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,62 @@
+DOCUMENT:Q128613  27-JUL-2001  [sms]
+TITLE   :SMS: WUSER GP Faults with Compaq Qvision Adapter
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Remote Control Applet (WUSER.EXE) to remotely control a 16- bit
+Windows client, the following error appears:
+
+   WUSER2 caused a general protection fault in module IDIS_LM.DLL at 0005:0dd0
+
+This GP-fault occurs when the client workstation has Compaq Qvision Windows
+driver CPQLQV04.DRV and is using 640x480 16 colors 16 dot fonts.
+
+
+WORKAROUND
+==========
+
+Change the Qvision driver resolution from 16 colors to 256 colors or use the
+Standard VGA driver instead of the Qvision driver.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 1.0. This problem was corrected in Systems Management Server
+version 1.1.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

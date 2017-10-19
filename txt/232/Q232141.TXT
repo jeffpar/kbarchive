@@ -1,0 +1,65 @@
+DOCUMENT:Q232141  10-AUG-2001  [winnt]
+TITLE   :Load Balancing Telnet with WLBS
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Load Balancing Service 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to load balance Telnet using Windows NT Load
+Balancing Service (WLBS).
+
+MORE INFORMATION
+================
+
+To load balance Telnet:
+
+1. Configure a port rule on all cluster hosts with a port range from 23 to 23,
+   and choose TCP as the protocol.
+
+2. Click Multiple Hosts, and then click None for the Affinity value.
+
+NOTE: A Telnet session spans just one TCP connection, so Affinity is not needed.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q198496 How to Configure WLBS Port Rules
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTLBSSearch kbwin2000Search kbWinAdvServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

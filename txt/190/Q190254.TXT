@@ -1,0 +1,66 @@
+DOCUMENT:Q190254  11-JAN-2001  [vbwin]
+TITLE   :BUG: Cannot Insert MFC 4.1-Based Controls in DHTML Page Designer
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbInternet kbPageDesigner kbVBp kbVBp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert an ActiveX control based on Microsoft Foundation Classes (MFC),
+version 4.1 in the DHTML Page Designer, and you open the property page for the
+control and click Cancel, you encounter a general protection fault (GPF) in
+Mfc40.dll.
+
+RESOLUTION
+==========
+
+Controls built with MFC 4.2 that shipped with Visual C++, version 5.0 or later
+work correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+Please see the following Microsoft Knowledge Base article for more information
+on the DHTML Page Designer:
+
+   Q190249 INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbPageDesigner kbVBp kbVBp600 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

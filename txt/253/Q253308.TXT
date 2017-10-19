@@ -1,0 +1,180 @@
+DOCUMENT:Q253308  07-DEC-2000  [winnt]
+TITLE   :BUG: MFT_RIGHTORDER Doesn't Work for Nonresource Menu
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:_IK kbOSWinNT400bug kbOSWin2000 kbOSWin2000bug kbOSWin2000fix kbSDKPlatform kbOSWin98 k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Win32 Software Development Kit (SDK), on platform(s):
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MFT_RIGHTORDER style doesn't work as expected (to cause the submenu to
+cascade from right to left) when the menu is dynamically created; that is, when
+the menu is not loaded from the resource.
+
+For example, a pop-up menu (for example, a menu that contains one submenu,
+"color", and one item in the drop-down menu, "red") is created dynamically, by
+using the MFT_RIGHTORDER style, in order for the submenu to drop down from right
+to left. Currently, because the menu is not loaded from the resource, the
+submenu still drops down from left to right, even though the MFT_RIGHTORDER
+style is used. See the following code (this code does not work correctly with
+MFT_RIGHTORDER):
+
+   HMENU hmenu,submenu;
+   MENUITEMINFO mni, mni2;
+   char szMenuText[30];
+   POINT pt;
+
+   submenu = CreateMenu();
+   mni2.fMask= MIIM_DATA|MIIM_TYPE;
+   mni2.fType = MFT_RIGHTJUSTIFY | MFT_RIGHTORDER | MFT_STRING;
+   		lstrcpy(szMenuText, "red");
+   mni2.dwTypeData = szMenuText;
+   mni2.cbSize = sizeof(MENUITEMINFO);
+   mni2.cch        = sizeof(szMenuText); 
+   InsertMenuItem(submenu, 0, TRUE, &mni2);
+
+   hmenu = CreatePopupMenu();
+   mni.fMask= MIIM_DATA|MIIM_TYPE|MIIM_SUBMENU;
+   mni.fType = MFT_RIGHTJUSTIFY | MFT_RIGHTORDER | MFT_STRING;
+   lstrcpy(szMenuText, "color");
+   mni.dwTypeData = szMenuText;
+   mni.cbSize = sizeof(MENUITEMINFO);
+   mni.cch        = sizeof(szMenuText); 
+   mni.hSubMenu = submenu;
+   InsertMenuItem(hmenu,0,TRUE,&mni);
+
+   pt.x = (long) LOWORD(lParam);		
+   pt.y = (long) HIWORD(lParam);
+   ClientToScreen(hWnd,&pt);
+
+   TrackPopupMenu(hmenu, TPM_RIGHTALIGN,pt.x,pt.y, 0, hWnd,NULL);
+
+RESOLUTION
+==========
+
+To use a right-to-left drop-down submenu, you must put the menu in the resource,
+and then load the menu at run time, as follows:
+
+   // The menu in the resource file resembles the following:
+   PopupMenu MENUEX DISCARDABLE 
+   BEGIN
+       POPUP "MOO-Dummy Popup",                65535,
+       MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+       BEGIN
+           POPUP "Fonts",                          65535,
+           MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+           BEGIN
+               MENUITEM "Courier",                     IDM_FONT,
+               MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+               MENUITEM "Times Roman",                 IDM_FONT,
+               MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+               MENUITEM "Swiss",                       IDM_FONT,
+               MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+               MENUITEM "Helvetica",                   IDM_FONT,
+               MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+               MENUITEM "Old English",                 IDM_FONT,
+               MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+           END
+           POPUP "Sizes",                          65535,
+           MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+           BEGIN
+               MENUITEM "7",                           IDM_SIZE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "8",                           IDM_SIZE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "9",                           IDM_SIZE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "10",                          IDM_SIZE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "11",                          IDM_SIZE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "12",                          IDM_SIZE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "14",                          IDM_SIZE,MFT_STRING,
+               MFS_ENABLED
+           END
+           POPUP "Styles",                         65535,
+           MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+           BEGIN
+               MENUITEM "Bold",                        IDM_STYLE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "Italic",                      IDM_STYLE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "Strike Out",                  IDM_STYLE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "Superscript",                 IDM_STYLE,MFT_STRING,
+               MFS_ENABLED
+               MENUITEM "Subscript",                   IDM_STYLE,MFT_STRING,
+               MFS_ENABLED
+           END
+       END
+   END
+
+The code to load that right-to-left pop-up menu would resemble the following:
+
+       HMENU hMenu;
+       HMENU hMenuTrackPopup;
+
+       /* Get the menu for the popup from the resource file. */ 
+       hMenu = LoadMenu (hInst, "PopupMenu");
+       if (!hMenu)
+           return;
+
+       /* Get the first menu in it, which we will use for the call to
+        * TrackPopup(). This could also have been created on the fly using
+        * CreatePopupMenu and then we could have used InsertMenu() or
+        * AppendMenu.
+        */ 
+       hMenuTrackPopup = GetSubMenu (hMenu, 0);
+
+       /* Convert the mouse point to screen coordinates because that is what
+        * TrackPopup expects.
+        */ 
+       ClientToScreen (hwnd, (LPPOINT)&point);
+
+       /* Draw and track the "floating" pop-up menu. */ 
+       TrackPopupMenu (hMenuTrackPopup, 0, point.x, point.y, 0, hwnd, NULL);
+
+       /* Destroy the menu because we are done with it. */ 
+       DestroyMenu (hMenu);
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbOSWinNT400bug kbOSWin2000 kbOSWin2000bug kbOSWin2000fix kbSDKPlatform kbOSWin98 kbOSWin98bug kbOSWin98fix kbLocalization kbGrpDSIntl kbDSupport 
+Technology        : kbWin32SDKSearch kbAudDeveloper kbSDKSearch kbWin32sSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

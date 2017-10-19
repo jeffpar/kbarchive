@@ -1,0 +1,52 @@
+DOCUMENT:Q185334  18-JUN-2001  [msnetwork]
+TITLE   :Internet Explorer Starts When You Double-Click MSN Icon
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.52,2.6,4.0,4.01 Service Pack 2,5,98,98 Second Edition
+OPER/SYS:
+KEYWORDS:kbui kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.52, 2.6 
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows 98 Second Edition 
+ - Microsoft Internet Explorer versions 4.0, 4.01 Service Pack 2, 5 for Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click the MSN icon on the desktop, Microsoft Internet Explorer
+starts instead of the MSN Program Viewer.
+
+STATUS
+======
+
+This behavior is by design. MSN Program Viewer is not installed with the Windows
+98 version of MSN.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n. win98 2.52 2.60
+
+======================================================================
+Keywords          : kbui kbmsn 
+Technology        : kbOSWin98 kbIEsearch kbOSWin98SE kbOSWinSearch kbMSNSearch kbIE500Search kbZNotKeyword3 kbIE98Search kbIE400Win98 kbIE401Win98SP2 kbIE500Win98 kbMSN252 kbMSN260
+Version           : WINDOWS:2.52,2.6,4.0,4.01 Service Pack 2,5,98,98 Second Edition
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

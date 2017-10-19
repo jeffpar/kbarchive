@@ -1,0 +1,82 @@
+DOCUMENT:Q183680  26-SEP-2001  [frontpg]
+TITLE   :FP97: Text in Dialog Box Appears in the Wrong Language
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194447.
+
+SYMPTOMS
+========
+
+When you close FrontPage Editor while you have unsaved pages open, a dialog box
+in a language other than English may appear.
+
+CAUSE
+=====
+
+This behavior occurs if Mfc40loc.dll is installed on your computer.
+
+RESOLUTION
+==========
+
+Rename the Mfc40loc.dll file. To rename this file, follow these steps.
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please consult your product
+documentation to complete these steps.
+
+1. Close FrontPage Explorer and FrontPage Editor.
+
+2. On the Windows Start menu, point to Find, and then click Files Or Folders.
+
+3. In the Named box, type "Mfc40loc.dll" (without the quotation marks). In the
+   Look in box, select the hard disk where you installed Windows. Click Find
+   Now.
+
+4. Select the Mfc40loc.dll file in the Results pane.
+
+5. On the File menu, click Rename.
+
+6. Rename the file to Mfc40loc.old and press ENTER.
+
+MORE INFORMATION
+================
+
+Mfc40.dll is the Microsoft Foundation Class library and is required for
+FrontPage to run. Mfc40loc.dll provides localized (foreign language) text
+strings for several dialog boxes. If this file is present, FrontPage uses the
+localized text strings within this file.
+
+Additional query words: mfc40loc.dll 97 localize local
+
+======================================================================
+Keywords          :  
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,85 @@
+DOCUMENT:Q149216  10-FEB-2000  [foxpro]
+TITLE   :PRB: Not All Build Options Are Available in Project Manager
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Build button in Project Manager, one or both of the following
+options is not available:
+
+ - Build PowerMac Executable
+
+ - Build 68K Executable
+
+CAUSE
+=====
+
+There is no corresponding Visual FoxPro Support Library in the Visual FoxPro
+folder.
+
+RESOLUTION
+==========
+
+Make sure that the following files are located in the Visual FoxPro folder:
+
+ - VFP Support Library PPC
+
+ - VFP Support Library 68K
+
+STATUS
+======
+
+This behavior is by design. The support libraries are used by Visual FoxPro to
+build executable files.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Locate the following files in the Visual FoxPro folder. Move one or both to
+   the desktop.
+
+   VFP Support Library PPC
+   VFP Support Library 68K
+
+2. Start Visual FoxPro, and open a project. Make sure it has a file marked as
+   Main.
+
+3. Choose Build. Note that the Build option corresponding to the moved Support
+   Library is not available.
+
+Additional query words: VFoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,53 @@
+DOCUMENT:Q107099  12-NOV-1999  [pcmail]
+TITLE   :X400: 3.2 Gateway Memory Requirements
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail Gateway to X.400 requires at least 400K of conventional memory on
+the Gateway machine after all drivers are loaded.
+
+The amount of conventional memory available on the Gateway machine determines how
+many recipients and attachments are supported in a message.
+
+Configure the Gateway machine for the maximum free conventional memory. To
+determine the largest executable program size that can be run, use the Microsoft
+MS-DOS MEM command.
+
+For additional information about maximizing conventional memory, consult your
+MS-DOS and network operating system documentation.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

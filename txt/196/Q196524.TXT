@@ -1,0 +1,63 @@
+DOCUMENT:Q196524  14-NOV-2000  [word97]
+TITLE   :How to Generate a List of Keyboard Commands for Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to obtain a list of keyboard assignments in Microsoft
+Word for Windows.
+
+MORE INFORMATION
+================
+
+1. On the Tools menu, point to Macro and then click Macros.
+
+2. From the "Macros in" list, choose Word Commands.
+
+3. Select ListCommands in the Macro Name list.
+
+4. Click Run.
+
+5. In the List Commands dialog box, choose either "Current menu and keyboard
+   settings" or "All Word commands".
+
+6. Click OK.
+
+Word creates a new document that lists the commands and their associated shortcut
+key assignments.
+
+Additional query words: keystrokes listcommands list commands shortcut shortcuts keyboard assignments combination 8.0 8.00
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

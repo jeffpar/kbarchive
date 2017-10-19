@@ -1,0 +1,79 @@
+DOCUMENT:Q162683  05-FEB-2000  [foxpro]
+TITLE   :BUG: BROWSE FORMAT May Cause Blank Browse Window
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbHWMAC kbvfp kbvfp300bBUG kbvfp500aBUGkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a BROWSE FORMAT command uses a format file that contains a syntax error, the
+resulting Browse window is blank. Visual FoxPro produces no error message.
+Earlier versions of FoxPro produce the following error message:
+
+   No fields to process
+
+And no Browse window appears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Step to Reproduce Behavior
+--------------------------
+
+1. Use the Customer.dbf file located in the Visual FoxPro \Samples\Data folder.
+
+2. Create a format file by typing "MODIFY COMMAND Test.fmt" (without the
+   quotation marks) in the Command window. Add the following line of code to the
+   file:
+
+         @ SAY 24,24,  company+contact
+
+   This line of code is incorrect intentionally.
+
+3. Type the following lines in the Command window, pressing the Enter key after
+   each line:
+
+   " SET FORMAT TO Test.fmt
+   BROWSE FORMAT " (without the quotation marks)
+
+4. A blank Browse window appears.
+
+Additional query words: kbvfp300b kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbHWMAC kbvfp kbvfp300bBUG kbvfp500aBUG kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

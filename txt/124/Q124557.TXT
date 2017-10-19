@@ -1,0 +1,64 @@
+DOCUMENT:Q124557  16-DEC-2000  [win3x]
+TITLE   :WordPerfect 6 ErrMsg: The WP Draw Server Could Not Be Launched
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Chart or Draw button on the button bar in WordPerfect version
+6.0 for Windows, you receive the following error message:
+
+   The WP Draw server could not be launched
+
+This same error occurs if you choose Chart or Draw from the Graphics menu.
+
+CAUSE
+=====
+
+This error message is sporadic, and no exact cause has been determined.
+
+WORKAROUND
+==========
+
+At this time, the only workaround is to try the command again.
+
+MORE INFORMATION
+================
+
+WordPerfect is manufactured by Novell, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3rdparty wpwin err msg function
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW311
+Version           : WINDOWS:3.11,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

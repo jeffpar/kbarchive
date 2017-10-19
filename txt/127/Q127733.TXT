@@ -1,0 +1,60 @@
+DOCUMENT:Q127733  05-NOV-1999  [pcmail]
+TITLE   :SMTP: Err Msg: 134 Error Accessing SMTP Configuration File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to add an additional postoffice to your configuration, the
+Microsoft Mail Gateway to SMTP may display the following error message in the
+Administrator program:
+
+   134 Error accessing SMTP Configuration File
+
+CAUSE
+=====
+
+The local postoffice records are created in the MAILDATA\SMTP\LOCAL.CFG file. If
+this file does not exist or is not available, or if the SMTP directory does not
+exist, users will get this error.
+
+RESOLUTION
+==========
+
+Check the rights to the SMTP subdirectory and ensure the file exists. If it does
+not exist, you can restore the LOCAL.CFG file from a backup of the postoffice,
+copy the file from the SMTP Gateway disk, or let the Administrator program
+re-create it by reconfiguring the SMTP gateway.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

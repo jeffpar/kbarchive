@@ -1,0 +1,76 @@
+DOCUMENT:Q299304  06-MAR-2002  [exchange]
+TITLE   :XFOR: Random Inbound Messages Appear with Empty Fields
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kb3rdparty kbui kbExchange kbExchange550
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Microsoft Exchange version 4.0, 5.0, or 5.5 is installed with Internet Mail
+Service behind a Cisco Secure PIX Firewall version 4.2(2), inbound messages may
+randomly appear with an empty To box or an empty message body. In some cases,
+the message body may appear in the header, or the message body may contain a
+long string of X characters.
+
+CAUSE
+=====
+
+This behavior can occur if the version of Cisco Secure PIX Firewall that you are
+using is not fully compatible with your Exchange version, Internet Mail Service,
+or both.
+
+RESOLUTION
+==========
+
+To resolve this behavior, upgrade to Cisco Secure PIX Firewall version 4.2(3) or
+later.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+For information about how to contact Cisco Systems Inc., click the appropriate
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+Additional query words: xims outlook
+
+======================================================================
+Keywords          : kb3rdparty kbui kbExchange kbExchange550 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

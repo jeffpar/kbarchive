@@ -1,0 +1,76 @@
+DOCUMENT:Q192860  11-DEC-1999  [foxpro]
+TITLE   :PRB: Creating Join in Join Condition Dialog Box Creates Filter
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating a remote view though the View Designer, if a join condition is
+specified in the Join Condition Dialog box, the join condition is specified as a
+filter rather than a join.
+
+RESOLUTION
+==========
+
+If you desire to use the Join syntax, you should use the Join tab to specify
+your join condition. You can also use the CREATE SQL VIEW command to create the
+remote view.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a remote view though the View Designer.
+
+2. Add two related tables, and note that the Join Condition dialog box is
+   displayed.
+
+3. Create a join in that dialog and close the dialog.
+
+4. Click the Join tab in the View Designer, and note that there is no join
+   specified there.
+
+5. Click the Filter tab in the View Designer. Note that there is a filter
+   entered that matches the join condition specified in the Join Condition
+   dialog box.
+
+Additional query words: kbDSupport KBDSE kbVFp600 kbDatabase KbDBFDBC kbDesigner
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

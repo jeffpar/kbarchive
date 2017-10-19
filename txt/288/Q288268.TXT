@@ -1,0 +1,51 @@
+DOCUMENT:Q288268  15-APR-2001  [exchange]
+TITLE   :XADM: How to Determine Which Users Are Using KMS
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3, 5.5 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to determine which users (mailboxes) in a given
+Exchange Server site are using Key Management server (KMS).
+
+MORE INFORMATION
+================
+
+If you are an Exchange Server Administrator, to find out which users are using
+KMS, perform a folder export of the mailboxes to a .csv file. Create .csv file
+with a header called "Tagged-X509-Cert" (without quotes). All the mailboxes that
+are using KMS have entries in the Tagged-X509-Cert header.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3 kbExchange550SP4
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

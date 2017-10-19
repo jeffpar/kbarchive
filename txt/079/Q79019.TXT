@@ -1,0 +1,60 @@
+DOCUMENT:Q79019  28-OCT-1999  [winmisc]
+TITLE   :Double-Clicking on Desktop Starts Multimedia Screen Saver
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you double-click anywhere on the Windows desktop with the right mouse button,
+and you have set up one of the screen savers provided with Windows with
+Multimedia Extensions, the screen saver starts.
+
+MORE INFORMATION
+================
+
+Windows with Multimedia Extensions comes with six different screen savers you
+can choose by selecting Screen Saver from the Control Panel. Any one of these
+savers can be customized through the Control Panel, but no special selection
+must be made to get the screen saver to activate with the right mouse button.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Set up a screen saver by selecting Screen Saver from the Control Panel.
+
+2. Close the Control Panel and minimize the Program Manager.
+
+3. Double-click the right mouse button with the pointer on the desktop.
+
+Additional query words: 3.00 3.00a multimedia 1.00 MMWIN
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

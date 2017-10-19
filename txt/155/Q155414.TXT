@@ -1,0 +1,235 @@
+DOCUMENT:Q155414  27-OCT-2000  [exchange]
+TITLE   :XADM: Bulk Import/Export FAQ
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Administrator program has the ability to import and
+export mailboxes, custom recipients, and Distribution Lists (DLs). This article
+covers the most frequently raised issues related to Bulk Import and Export.
+
+MORE INFORMATION
+================
+
+Exporting mailbox data does not export all data fields
+
+   By default, the Microsoft Exchange Administrator program does not export all
+   of the data fields associated with a mailbox, custom recipient, or DL. If you
+   need a particular field that is not exported by default, the following are
+   your two available methods:
+
+1. Create a header file that contains all of the headers that you want to
+   export. You can do this in the following two ways:
+
+   a. Use the Header.exe program in the Microsoft Exchange Resource Kit to
+      create a file with the data field names that you want to export.
+
+   b. Manually create a file with the data fields you want to export.
+
+2. To export all of the data fields associated with an object, instead of
+   creating a header file with all the data field names, use one of the sample
+   header files available on the Microsoft Exchange Server CD-ROM 4.0 in the
+   Support\Samples\Csvs directory. There are subdirectories that contain header
+   files for mailboxes, custom recipients, and DLs. Copy the relevant .CSV file
+   from the CD to your hard drive, remove the Read-Only attribute on the file,
+   and then run the Export command from the Microsoft Exchange Administrator
+   program, specifying the file that you copied from the CD. The Export command
+   will read all the headers in the file specified and will export those
+   attributes.
+
+How to modify attributes using Bulk Import
+
+   You can use the Bulk Import program to modify attributes associated with
+   mailboxes, custom recipients, and DLs. To modify the value of an attribute,
+   export the existing data to a .CSV file, change the value of the attributes
+   in the data file, and import the file. All existing objects will be modified
+   with the new values.
+
+How to modify the value of Custom Attributes
+
+   Each mailbox, custom recipient, and DL has 10 Custom Attributes that the
+   administrator can use to specify custom data. These Custom Attributes can
+   also be modified using the Directory Import program. There are 10 Custom
+   Attributes which are named "Custom Attribute 1" through "Custom Attribute
+   10".
+
+   To change the value of a particular Custom Attribute for mailboxes, follow
+   these steps (for Custom Attribute 1):
+
+1. Use Header.exe to create a header file (Cust.csv) with the required fields.
+   Custom Attribute 1 should be included.
+
+2. From the Microsoft Exchange Administrator program, run the Directory Export
+   command specifying the header file created in step 1. This will populate the
+   header file with data.
+
+3. Edit the modified header file using a spreadsheet like Microsoft Excel.
+   Modify the values in the Custom Attribute 1 column.
+
+4. From the Microsoft Exchange Administrator program, run the Directory Import
+   command specifying the header file modified in step 3. This will modify the
+   Custom Attribute 1 field for all the objects that were exported in step 2.
+
+Error Importing data into Custom Attributes
+
+   When you import data into a Custom Attribute, the following error is
+   received:
+
+   The attribute Custom Attribute 1 is unknown
+
+   This error might be received if the Custom Attribute 1 has been renamed.
+
+   To determine what the Custom Attribute names currently are, follow these
+   steps:
+
+1. In the Microsoft Exchange Administrator program, double click on the
+   Configuration container.
+
+2. Get Properties of the DS Site Configuration object.
+
+3. Select the Custom Attributes page.
+
+4. The Custom Attributes names should be displayed. The names can also be
+   renamed on this page.
+
+How to clear data attributes using Bulk Import
+
+   Please refer to the following Microsoft Knowledge Base articles:
+
+   Q152854 XADM: Using Bulk Import to Remove Data
+
+   Q152727 XADM: Importing Blank Value Won't Modify Mailbox Value
+
+Exporting mailbox information does not export the Secondary E-mail addresses
+
+   By default, the Secondary E-mail (Proxy) addresses are not exported. For
+   information about how to export these addresses, please refer to the
+   following Microsoft Knowledge Base article:
+
+   Q153028 XADM: How to Export Multiple (Secondary) E-mail Addresses
+
+How to import multiple E-mail addresses
+
+   The following Microsoft Knowledge Base article describes how to associate
+   more than one E-mail address with a mailbox:
+
+   Q148339 XADM: How to Import Multiple SMTP Addresses
+
+On exporting, Custom recipients are not exported
+
+   The following Microsoft Knowledge Base article describes a possible reason
+   why the export only contains header fields:
+
+   Q147854 XADM: Custom Recipients DIR Export Creates Headers-Only CSV
+
+How to run Import/Export in a batch mode
+
+   The directory import/export can be run from the command line and, therefore,
+   can be run as part of a batch process. For more information on running
+   import/export from the command line, please refer to Microsoft Exchange
+   Administrator's Guide, pages 479-487.
+
+How to specify the delimiter to be used
+
+   Please refer to the following Microsoft Knowledge Base article:
+
+   Q152472 XADM: How to Specify a Tab or Space as Separator in .csv File
+
+ExportObject entry in the options file not working
+
+   The following Microsoft Knowledge Base article provides more information
+   about the ExportObject setting:
+
+   Q152300 XADM: ExportObject in Command-Line Export Options File Only
+
+How to export the entire GAL using the command line Import program
+
+   The following Microsoft Knowledge Base article describes how to perform a
+   command line Directory Export of the Global Address List (GAL) using the
+   Microsoft Exchange Administrator program:
+
+   Q149447 XADM: How to Perform a Directory Export of the GAL
+
+Issue with opening .CSV files containing Exchange DL data in Microsoft Excel
+
+   Microsoft Excel has a limit of 255 characters per cell. When you open a .CSV
+   file containing DL data, it is very likely that the Members field, which
+   contains the members of the DL, will be larger than 255 characters in length.
+   If you use Microsoft Excel to modify the data in the .CSV file, when you save
+   the file any field with more than 255 characters will be truncated. This
+   could cause problems when this data is imported back into the Microsoft
+   Exchange system via the Directory Import command. It is possible that the
+   members of large DLs will not have all the original members that were present
+   when the data was exported. It is also likely that sending mail to these DLs
+   will generate errors.
+
+How to export subcontainers
+
+   When you use the Directory Export command interactively from the Microsoft
+   Exchange Administrator program, there is an Include Subcontainers check box
+   on the Directory Export dialog. If this check box is set, subcontainers of
+   the selected container will be exported.
+
+   When you run the Directory Export program from the command line, there is a
+   setting in the Export Options file that you need to be set:
+
+      [Export]
+      Subcontainers=Yes
+
+"Unable to process object"
+
+   When you import data from a .CSV file, the following error might be received
+   in the Event Log:
+
+   Event ID: 291
+   Source: MSExchangeDSImp
+   Type: Error
+   Category: None
+   Description:
+   "Unable to process object TestUser because the import line must contain the
+   same number of fields as the header line. 10 were expected, 8 were found."
+
+   As the error message indicates, this error is generated if the data supplied
+   in the .CSV file is incomplete. In other words, if there are 10 fields
+   specified in the header of the file, each record in the file should have 10
+   data fields, even if the fields are empty. This problem can easily occur if
+   commas are missing from a line in the .CSV file. It may not be possible to
+   detect this problem by viewing the data in Microsoft Excel because Microsoft
+   Excel does not display the data delimiters (commas, in this case). You will
+   need to update the .CSV file using a text editor like Notepad.
+
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

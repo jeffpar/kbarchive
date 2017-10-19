@@ -1,0 +1,87 @@
+DOCUMENT:Q197826  14-NOV-2000  [word97]
+TITLE   :WD97: Underline Formatting Does Not Appear at End of Line
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You cannot apply underline character formatting to a line that contains only
+spaces. If you attempt to apply this type of formatting to a space character,
+the underline is not displayed or printed.
+
+CAUSE
+=====
+
+There must be at least one character other than a space at the end of a line for
+underline formatting to appear. Similarly, underline character formatting does
+not appear on spaces following the last character on a line.
+
+WORKAROUND
+==========
+
+Use one of the following procedures to extend an underline past the end of text
+on a line:
+
+ - Type at least one non-breaking space at the end of the line where you want
+   the underline to stop. To type a non-breaking space, press
+   CTRL+SHIFT+SPACEBAR.
+
+   -or-
+
+ - Set a right-aligned tab stop at the position where you want the underline to
+   stop. Apply underline formatting to the tab.
+
+   -or-
+
+ - Set a right-aligned tab stop with a solid, underscore leader. To do this,
+   click to select the Leader 4 option button in the Tabs dialog box (Format
+   menu).
+
+If you apply hidden and underline character formatting to text, the underline
+formatting appears on the screen, but it is not displayed in print preview nor
+is it printed.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q195485 WD97: How to Create Ruling Lines or Blank Underlines in Word
+
+   Q196855 WD97: How to Extend Form Field Underlines to a Fixed Point
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbualink97 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

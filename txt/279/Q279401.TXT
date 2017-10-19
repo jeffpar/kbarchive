@@ -1,0 +1,162 @@
+DOCUMENT:Q279401  12-MAY-2001  [odbc]
+TITLE   :PRB: Overlocalized Sort Order Strings in Access/Jet ODBC Driver
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.1,2.5,2000,2000 Service Release 1 (SR-1),4.0
+OPER/SYS:
+KEYWORDS:kbJET kbODBC kbMDAC250 kbMDAC250bug kbMDAC250SP1fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for Access, version 4.0 
+ - Microsoft Data Access Components versions 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a SQLConfigDataSource ODBC function call, the Microsoft Access/Jet 4.0 ODBC
+driver allows you to specify a sort order as part of the CREATE_DB attribute,
+where <sort order> might be General, Arabic, Czech, Japanese, Russian, and
+so on. The CREATE_DB attribute has the following format:
+
+   CREATE_DB=<path name> <sort order>
+
+For example:
+
+   CREATE_DB=C:\\LocTest.mdb Czech
+
+When you use a localized version of Jet, a sort order that is specified in
+English fails; however, a sort order that is specified in the localized language
+succeeds.
+
+For example, a German localized version of the Jet ODBC driver needs to use
+Allgemein, Arabisch, Tschechisch, Japanisch, Russisch, and so on, as the sort
+order value.
+
+CAUSE
+=====
+
+Microsoft Access offers a localized list of sort orders to use when you create a
+new database. To change this setting in Access, on the Tools menu, click
+Options, and then click the General tab. In the New database sort order box,
+click the language that you want to use.
+
+The Jet 4.0 ODBC driver incorrectly uses this localized list of sort orders to
+verify sort languages while it creates a new database file. This means that
+applications that use the CREATE_DB option with the SQLConfigDataSource ODBC
+function to create new databases with a specific sort order will fail, unless
+the localized version of the sort order language is provided.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Microsoft Data
+Access Components (MDAC) version 2.5. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q267307 MDAC 2.5 Service Pack 1 Is Included with Windows 2000 Service Pack 1
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in MDAC 2.5 Service Pack 1 (SP1), which is also
+included with Microsoft Windows 2000 SP1.
+
+MORE INFORMATION
+================
+
+
+This problem has been resolved by adding another function to the Jet Sorting
+Library dynamic-link library (DLL), Mswstr10.dll, which presents the sort order
+languages in English. The Jet 4.0 ODBC driver has also been modified so that it
+calls this new function. For this reason, the MDAC 2.5 SP1/Microsoft Windows
+2000 SP1 version of the Jet ODBC driver (Odbcjt32.dll, version 4.0.5303.1) must
+have the matching version of Mswstr10.dll (4.00.3829.2) on the computer or it
+will fail to load.
+
+This modified version of the Jet Sorting Library DLL is also installed with
+Microsoft SQL Server 7.0 Service Pack 3 (SP3) , but the ODBC driver is not
+installed. Therefore, a computer may have the updated Mswstr10.dll file without
+having MDAC 2.5 SP1 or Windows 2000 SP1 installed. If you need to determine
+which version of MDAC is on the computer, other files such as Msado15.dll or
+Oledb32.dll should be used instead.
+
+Note that the MDAC 2.5 RTM version of the Access/Jet ODBC driver (4.0.4403.2)
+will continue to call into the localized sort order function even if the newer
+Jet Sorting Library DLL exists on the computer. It is necessary to install the
+MDAC 2.5 SP1 version of the driver (4.0.5303.1) in order to completely correct
+this problem.
+
+Starting with Microsoft Data Access Components (MDAC) version 2.6, MDAC no longer
+contains the following Jet components:
+
+ - Microsoft Jet
+ - Microsoft Jet OLE DB Provider
+ - ODBC Desktop Database Drivers
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q239114 ACC2000: Updated Version of Microsoft Jet 4.0 Available in Download
+   Center
+
+The "MDAC 2.5 Stack and Windows File Protection" white paper contains a full list
+of the components that are shipped with MDAC 2.5, along with a discussion of
+Windows File Protection. Refer to this white paper for more information about
+the Jet dynamic-link libraries (DLLs) that are included in MDAC 2.5, which are
+no longer a part of MDAC 2.6.
+
+For more information about MDAC 2.5 and Windows File Protection, see the
+following Microsoft Web site:
+
+   http://www.microsoft.com/data/mdacwfp.htm
+
+REFERENCES
+==========
+
+The Microsoft Data Access Components version 2.5 SP1 can be downloaded from the
+following Microsoft Universal Data Access Download Page Web site.
+
+   http://www.microsoft.com/data/download.htm
+   (http://www.microsoft.com/data/download.htm)
+
+For additional information about how to obtain the latest Microsoft Windows 2000
+Service Pack, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+For additional information on creating Access databases with
+SQLConfigDataSource(), click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q149558 HOWTO: Create an .MDB File for Microsoft Access Databases
+
+Additional query words: localized create_db sqlconfigdatasource sp3 odbcjt32
+
+======================================================================
+Keywords          : kbJET kbODBC kbMDAC250 kbMDAC250bug kbMDAC250SP1fix 
+Technology        : kbAudDeveloper kbAccessSearch kbODBCSearch kbMDACSearch kbMDAC210 kbMDAC250 kbODBCAccess400
+Version           : :2.1,2.5,2000,2000 Service Release 1 (SR-1),4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

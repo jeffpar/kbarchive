@@ -1,0 +1,46 @@
+DOCUMENT:Q76855  06-OCT-1999  [win3x]
+TITLE   :Sound Driver Plays Portion of Sound, Then Stops
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+If the sound interrupt is not set correctly, the sound driver plays
+only the first part of the sound, represented by the first 2K of data.
+If the sound is being played synchronously, Windows may hang as the
+application waits for an event that will never occur.
+
+You should make sure that the interrupt from the Sound Blaster card is
+correctly specified in the Driver Setup in the Control Panel. Also,
+make sure that the interrupt selected for the Sound Blaster does not
+conflict with any other interrupt on your system.
+
+Additional query words: MMWIN
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,80 @@
+DOCUMENT:Q157310  17-DEC-2000  [win95x]
+TITLE   :Batch.exe Creates [InstallLocationsMRU] Section Incorrectly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Batch Installation Utility (Batch.exe) included with
+Microsoft Windows 95 Service Pack 1 to create a custom Msbatch.inf file that
+contains an [InstallLocationsMRU] section, the section is successfully added to
+the file. However, after you install Windows 95 using the custom Msbatch.inf
+file, the [InstallLocationsMRU] section may not be implemented as you intended
+it to be.
+
+CAUSE
+=====
+
+When you use the Batch.exe tool to create an Msbatch.inf file that contains an
+[InstallLocationsMRU] section, the section is added to the file and entries for
+each path that you specify are added to the section. However, the entries are
+created using an incorrect syntax.
+
+RESOLUTION
+==========
+
+To work around this problem, manually edit the Msbatch.inf file so that each
+entry in the [InstallLocationsMRU] section uses the following syntax
+
+   <source>=mru<n>
+
+where <source> is the path that you want to appear in the list of folders
+from which you can choose when you are prompted for the location of the Windows
+95 Setup files and <n> is a sequential number associated with each entry.
+
+For example, the [InstallLocationsMRU] section could appear similar to the
+following example:
+
+   [InstallLocationsMRU]
+   \\server\share\folder=mru1
+   c:\win95=mru2
+   \\winserver\source=mru3
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: sp1 mru1 mru2 mru3
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

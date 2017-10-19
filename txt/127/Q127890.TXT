@@ -1,0 +1,67 @@
+DOCUMENT:Q127890  11-NOV-1999  [pcmail]
+TITLE   :PC DynAd: Dynadmin Does Not Allow Blank Admin Password
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log into the Dynadmin program (DYNADMIN.EXE) with an Administrator's
+account that does not have a password, Dynadmin will prompt you for a password.
+If you press ENTER, Dynadmin will return you to the MS- DOS prompt. However, the
+Administrator's program (ADMIN.EXE) will launch with the same account
+information.
+
+CAUSE
+=====
+
+When enhanced security is enabled, Dynadmin does not properly validate an Admin
+account without a password.
+
+RESOLUTION
+==========
+
+Always use a password with the Admin account for Dynadmin, or specify DrivesUNC
+or DrivesNovell as the dynamic connection parameter. This parameter can be used
+with either the External or Dispatch programs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in DYNADMIN.EXE, included with
+version 3.2 of Microsoft Mail for PC Networks. We are researching this problem
+and will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

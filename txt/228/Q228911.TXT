@@ -1,0 +1,71 @@
+DOCUMENT:Q228911  10-AUG-2001  [winnt]
+TITLE   :Err Msg: STOP 0x00000035 When Using TDITrace from Resource Kit
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Network tool in Control Panel to install the TDITrace protocol
+from the Windows NT 4.0 resource kit, your computer may display the following
+error message:
+
+   STOP 0x00000035 (0xff787dc8, 0x00000000, 0x00000000, 0x00000000)
+
+The first parameter may vary.
+
+CAUSE
+=====
+
+This behavior occurs because of an old Oemsetup.inf file that was placed in the
+Common\Netdiag\Tditrace subfolder of the initial Windows NT 4.0 Resource Kit CD.
+
+RESOLUTION
+==========
+
+To resolve this problem, remove and reinstall the TDITrace protocol using the
+updated Oemsetup.inf file from the latest Windows NT resource kit.
+
+NOTE: This driver can be installed in both Windows NT 3.51 and Windows NT 4.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the TDITrace protocol.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Component         : ResourceKit
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

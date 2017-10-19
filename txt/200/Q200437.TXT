@@ -1,0 +1,65 @@
+DOCUMENT:Q200437  19-MAR-1999  [sms]
+TITLE   :SMS: Status MIFs Are Generated with .MIF.MIF Extension
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms120 kbsmsInst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Systems Management Server Installer version 1.0.45 to create a
+status MIF and specify the MIF file name as MyFile.mif, the resulting MIF file
+might be saved as MyFile.mif.mif. This only occurs with executables compiled as
+True Win32. Executables compiled as WIN16/WIN32 do not add the extra .mif
+extension to the output file.
+
+If you specify the MIF file without the .mif extension, you create the correct
+MyFile.mif.
+
+WORKAROUND
+==========
+
+To work around this problem when you compile as True Win32, remove the .mif
+extension when you specify the Install MIF Filename in the SMS tab of the
+Installation Properties dialog box. SMS Installer adds the .mif extension to the
+base file name and generates a valid MIF file name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 1.0. This problem was corrected in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms swdist32
+
+======================================================================
+Keywords          : kbsms200 kbsms120 kbsmsInst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

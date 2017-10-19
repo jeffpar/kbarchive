@@ -1,0 +1,88 @@
+DOCUMENT:Q158760  11-DEC-1999  [foxpro]
+TITLE   :FIX: Setting Grid RowHeight to Large Number Affects Page Down
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0
+OPER/SYS:
+KEYWORDS:kbtool kbvfp kbvfp300bBUG kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set the RowHeight of a grid to a large number and you cannot see two
+complete rows in the grid, the PAGE DOWN key might not function properly. It
+might page down once and stop, or it might not page down at all. If the
+RowHeight is set to a number such as 150 or higher, then a general protection
+fault (GPF) might occur when you press the PAGE DOWN key one or more times while
+in the grid.
+
+WORKAROUND
+==========
+
+Make sure that there are at least two rows of data showing in the grid, or set
+the RowHeight property of the grid to a smaller number.
+
+STATUS
+======
+
+This problem has been fixed in Visual FoxPro 5.0a.
+
+
+MORE INFORMATION
+================
+
+The RowHeight of a grid must be set so that you can see at least two rows of
+data in the grid or else the PAGE DOWN key does not move through the records
+properly. The PAGE UP key and the ARROW keys work correctly, but PAGE DOWN key
+does not work. When the RowHeight is set less than 100, the PAGE DOWN key does
+not work. When the setting is more than 150, a general protection fault occurs
+when you press the PAGE DOWN key one or more times.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add a table to the DataEnvironment.
+
+2. Add a grid to the form and set the RowSource to the table in the
+   DataEnvironment.
+
+3. Change the RowHeight of the grid to 75.
+
+4. Run the form and press the PAGE DOWN key. Note that it might page down once
+   or not at all.
+
+5. Modify the form and change the RowHeight of the grid to 200.
+
+6. Run the form and press the PAGE DOWN key one or more times. A general
+   protection fault occurs and Visual FoxPro closes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp300bBUG kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500
+Version           : WINDOWS:3.0,3.0b,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

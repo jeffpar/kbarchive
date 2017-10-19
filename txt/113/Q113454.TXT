@@ -1,0 +1,79 @@
+DOCUMENT:Q113454  19-NOV-1999  [pcmail]
+TITLE   :FFAPI: Multiple File Transfer with AppPut, RmtPut -W Option
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (FFAPI), version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The -W parameter allows you to specify users and files on the command line as a
+method to send attachments with FFAPI. You can list files in two forms: physical
+filename, or physical name followed by a comma then logical filename. If you
+want to send two files, you can specify one by physical filename and the other
+by physical plus logical filename.
+
+Here are some examples of -W syntax.
+
+1. To send more than one file to one user (each filename must be preceded by a
+   space):
+
+   -Wny4/po1/jbrown c:\dos\list1.txt c:\dos\list2.txt
+
+2. To send more than one file to more than one user (each address must be
+   separated from the next by a comma; no more than 10 spaces can precede or
+   follow the comma):
+
+   -Wny4/po1/jbrown c:\dos\list1.txt, ny4/sales/margb c:\dos\list2.txt
+
+3. To repeat the -W option for each additional user:
+
+   -Wny4/po1/jbrown c:\dos\list1.txt -Wlanet/sales/margb a:list2.txt
+
+Variables:
+
+ - ny4 is the network name
+
+ - po1 is the PO name
+
+ - jbrown is a userID
+
+ - margb is a userID
+
+REFERENCES
+==========
+
+File Format API for Gateways and Applications Software Development Kit, page 98
+appendix B.
+
+
+Additional query words: 3.00 2.10 ffapi -w
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailFFAPI300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

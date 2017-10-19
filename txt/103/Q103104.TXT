@@ -1,0 +1,81 @@
+DOCUMENT:Q103104  08-AUG-2001  [winnt]
+TITLE   :Err Msg: The Win16 Subsystem Was Unable to Enter Protect...
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,3.51
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server 
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the 16-bit Windows or Windows on Windows (WOW) subsystem starts, the
+following error message is displayed:
+
+NOTE: The WOW subsystem may be started automatically when you start Windows NT or
+the first time you run a 16-bit Windows-based application.
+
+   The Win16 Subsystem was unable to enter Protected Mode, DOSX.EXE must be in
+   your AUTOEXEC.NT and present in your PATH.
+
+CAUSE
+=====
+
+One or more of the following conditions exists in Microsoft Windows NT or
+Windows NT Advanced Server:
+
+ - HIMEM.SYS or DOSX.EXE is missing or corrupt in the SYSTEM32 directory.
+
+ - HIMEM.SYS is not being loaded in the CONFIG.NT file.
+
+ - DOSX.EXE is not being loaded in the AUTOEXEC.NT file.
+
+RESOLUTION
+==========
+
+Make sure that the line, "device=%SystemRoot%\system32\himem.sys," exists in the
+CONFIG.NT file.
+
+Make sure that the line, "lh %SystemRoot%\system32\dosx.exe," exists in the
+AUTOEXEC.NT file.
+
+Expand HIMEM.SYS, DOSX.EXE, or both from the Windows NT setup disks or CD- ROM
+disc if either or both are missing from the SYSTEM32 directory.
+
+For more information on DOSX.EXE, query on the following keywords in the
+Microsoft Knowledge Base:
+
+   WOW and 16-BIT
+
+Additional query words: wfw wfwg prodnt wow 16-bit
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNT351search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS351 kbWinNTAdvSerSearch kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWinAdvServSearch
+Version           : :2000,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

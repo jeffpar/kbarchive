@@ -1,0 +1,56 @@
+DOCUMENT:Q244698  24-OCT-2000  [winnt]
+TITLE   :INFO: After Upgrade Migdb.inf Apps Started Will Query User
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After an upgrade from Windows 95 or Windows 98 to Windows 200, users who try to
+start an application listed in Migdb.inf receive a dialog box displaying the
+application's status. The user is then given the option to start, remove, or
+restore the shortcut for the application.
+
+MORE INFORMATION
+================
+
+Applications listed in the Windows 2000 Upgrade Report as incompatible,
+requiring reinstallation, or exhibiting minor problems will be "linkstubbed"
+with the dialog box in their Start menu shortcuts. Therefore, when the user
+attempts to start the application from the shortcut, the "start-remove-restore"
+message will appear before Windows will start the application.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

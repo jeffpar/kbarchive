@@ -1,0 +1,65 @@
+DOCUMENT:Q114177  11-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: Some Names Could Not Be Matched...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With versions 3.0 and 3.0b of Microsoft Mail for Windows, when you use the Check
+Names option to validate a name against the Global Address List (GAL), the
+following error message may be displayed, even though the name exists in the
+Global Address list:
+
+   Some names could not be matched to names in the address list
+
+CAUSE
+=====
+
+This error is caused by an improper rebuild of the GAL using version 3.0 of the
+Rebuild program.
+
+RESOLUTION
+==========
+
+This issue was addressed in version 3.2 of the Rebuild program (REBUILD.EXE).
+
+MORE INFORMATION
+================
+
+The Check Names utility is one of the options available in the Mail for Windows
+Compose screen. The purpose of the utility is to check the characters in the To:
+and Cc: lines against the address lists.
+
+
+Additional query words: 3.00 3.00b 3.20 dirsync T3 update
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

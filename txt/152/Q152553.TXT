@@ -1,0 +1,64 @@
+DOCUMENT:Q152553  09-AUG-2001  [winnt]
+TITLE   :Print Jobs from MAC OTI Clients May Hang in WinNT Print Queue
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you print to a Windows NT Server with Services for Macintosh installed from
+an Apple Macintosh client running (OTI) Open Transport Protocol, the print jobs
+will hang in the Windows NT print queue for up to 30 minutes. The print jobs
+hang indefinitely in a "spooling" state.
+
+This problem is caused when you send a print job to Windows NT from a Macintosh
+client running OTI. When the Macintosh client finishes sending the job to
+Windows NT, the LaserWriter driver sends out its PAP EOF and ATP EOM, then it
+sets up a data structure and waits for the transaction release (TRel) coming
+back from the Windows NT Server. The result is that the client never sees the
+TRel and never breaks down the connection before it receives an OpenConn PAP
+request. The TRel is coming back from Windows NT before the LaserWriter driver
+is ready to handle the TRel, resulting in the job staying in a spooling state on
+the Windows NT Server.
+
+MORE INFORMATION
+================
+
+This problem was fixed in the latest Apple LaserWriter driver. For information
+about obtaining this driver please contact Apple Computer, Inc.
+
+This issue has been seen most commonly with the following printer:
+
+ - Apple Laserwriter 16/600 PS
+
+Additional query words: SFM 16 600
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search
+Version           : 3.1 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,298 @@
+DOCUMENT:Q256145  18-JUL-2002  [winnt]
+TITLE   :Use Network Monitor to Determine Proxy Server Configuration
+PRODUCT :Microsoft Windows NT
+PROD/VER:NT:4.5; winnt:2.0,4.0,4.5
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5 
+ - Microsoft BackOffice Small Business Server version 4.5 
+ - Microsoft Proxy Server version 2.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Microsoft Network Monitor Tools and agent
+provided with Windows NT and Small Business Server to determine how to configure
+protocol definitions and custom packet filters for Proxy Server.
+
+MORE INFORMATION
+================
+
+Protocol definitions are necessary for some client applications to function
+properly through Proxy Server. Custom static packet filters are necessary for
+applications that must run on the server. Network Monitor is useful when the
+application does not provide documentation containing port numbers and
+configuration information.
+
+To determine the necessary custom configuration for an application to communicate
+through Proxy Server, you need to do the followng five procedures in this order
+(these procedures are explained in detail later in this article):
+
+1. Determine whether the application uses Winsock or Web Proxy.
+
+2. Install Network Monitor on the Proxy Server.
+
+3. Capture and analyze the network traffic to determine the needs of the
+   application.
+
+4. Configure the necessary protocol definitions or static custom packet filters.
+
+5. Test the application.
+
+Determine Whether the Application Uses Winsock or Web Proxy
+-----------------------------------------------------------
+
+Many applications provide support for use with a Proxy Server. A good example of
+this is Microsoft Internet Explorer. Internet Explorer can be configured to use
+a Proxy Server through the connection settings in Internet Options. Applications
+that are configured to use a proxy server use the Web Proxy to communicate
+through the Proxy. These applications should require only that the proper Proxy
+Server information be entered in order for the Web Proxy to handle the
+application's requests.
+
+Applications that have no feature to use a Proxy Server may also be able to
+communicate through Proxy Server. These applications use the Proxy Server's
+Winsock Proxy. In order for this to work properly, the application must use
+Winsock for communication and the client computer hosting the application must
+have the Winsock Proxy Client properly installed. To install the Winsock Proxy
+Client on a Proxy Server's client computer, follow these steps:
+
+1. Run Setup.exe from the \\<servername>\mspclnt share, or use the browser
+   to go to http://<servername>/msproxy.
+
+2. After the Winsock Proxy Client installation is complete, open a command
+   prompt.
+
+3. Change directories to the \mspclnt folder, usually at c:\mspclnt.
+
+4. Type the following command
+
+   chkwsp32 /f
+
+   and then press ENTER.
+
+If the Winsock Proxy Client is installed and communicating properly with the
+Proxy Server, you receive the following message:
+
+   Client control protocol version MATCHES the server Control protocol
+
+For applications that run on the Server, see the "Custom Packet Filters" section
+later in this article.
+
+Install the Network Monitor Tools and Agent on the Proxy Server
+---------------------------------------------------------------
+
+1. Right-Click Network Neighborhood, and then click Properties.
+
+2. On the Services tab, click Add.
+
+3. Click "Network Monitor Tools and Agent", and then click OK.
+
+4. Close the Network Properties dialog box, and restart the computer when
+   prompted.
+
+NOTE: The full version of Network Monitor ships with Microsoft Systems Management
+Server (SMS). SMS is included with Microsoft BackOffice. For additional
+information about Network Monitor, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q148942 How to Capture Network Traffic with Network Monitor
+
+Capture Network Traffic from the Client Computer
+------------------------------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Network Monitor.
+
+   NOTE: If you use the version of Network Monitor that is included in SMS,
+   start Network Monitor this way: click Start, point to Programs, point to
+   Network Analysis Tools, and then click Network Monitor.
+
+2. On the Capture menu, click Networks.
+
+3. Double-click the server's internal network interface.
+
+4. To start the capture, click the Play button on the toolbar, or click Start on
+   the Capture menu.
+
+5. Attempt to connect to the Internet using the Client application from the
+   Client computer.
+
+6. Once the attempt fails from the Client computer, stop the capture: click the
+   Stop button on the toolbar, click Stop on the Capture menu.
+
+7. To view the capture, click the "eyeglasses" button on the toolbar, or click
+   Display Captured Data on the Capture menu.
+
+   NOTE: On exceptionally busy networks, you may have to click Buffer Settings
+   on the Capture menu, and increase the amount of memory used for the buffer to
+   make sure you do not lose any packets.
+
+Analyze Network Traffic
+-----------------------
+
+The following is an example of a Network Monitor trace that was used to determine
+Protocol Definitions for a Winsock Application. Network Monitor interprets the
+TCP header information and displays it as follows:
+
+TCP: ....S., len: 0, seq: 28201-298201, ack: 0, win: 8192, src: 1124  dst:  443
+
+The following is a brief description of each header component:
+
+TCP = Type of Frame
+S = SYN flag, used at the beginning of the connection setup to establish sequence and acknowledgement numbers.
+len = Header length, Data offset
+seq = Sequence number, used to indicate the sequence number corresponding to the first octet in this segment or frame.
+ack = acknowledgement number, significant only if the Ack flag is set
+win = TCP Window size
+src = Source Port
+dst = Destination Port
+
+Configure Protocol Definition
+-----------------------------
+
+Because the sample frame above shows the application making a request to the
+Destination, TCP port 443, from the Source, TCP port 1124, the Protocol
+Definition would be configured as follows:
+
+Protocol Name: CustomApp
+Initial Connection: Port 443
+Type: TCP
+Direction: Outbound
+
+Port Ranges for subsequent connections:
+Port: 0
+Type: TCP
+Direction Inbound
+
+In this case, because the request was made to port 443, the reply would be sent
+back from port 443 to the originating port of 1124. The resulting configuration
+includes Port Ranges for subsequent connections to allow reply traffic from the
+external server. To configure the Protocol Definition described in the example
+above, follow these steps:
+
+1. Click the Protocols tab in the Winsock Proxy Service Properties dialog box.
+
+2. Click the Add button.
+
+3. Type the protocol name.
+
+4. Choose the port type and direction.
+
+5. Under port ranges for subsequent connections, click Add.
+
+6. Fill in the Port Range fields, and then select the type and direction.
+
+7. Click OK until you return to the Microsoft Management Console, and then stop
+   and restart the Winsock Proxy.
+
+NOTE: A port range setting of 0 for inbound connections indicates Port_Any, which
+allows the server to select the port from the range 1024-5000.
+
+Configure Custom Static Packet Filters
+--------------------------------------
+
+Custom static packet filters are only required if the application resides on the
+server. A static packet filter is one that has been manually configured. Once a
+Static Packet Filter is enabled for a particular port, that port is open to
+anyone on the External Interface. The fewer ports and services open on the
+External Interface, the fewer the chances of external attacks. For more
+information about Security, see the following Web site:
+
+   http://www.microsoft.com/security
+
+If a Network Monitor trace is necessary to determine port numbers for an
+application running from the server, use the method described in the "Capture
+Network Traffic from the Client Computer" section earlier in this article. Be
+sure to select the external interface for the Proxy Server in step 3.
+
+If an application must be run on the Proxy Server, configure a custom static
+packet filter:
+
+1. In the Winsock Proxy Server Properties dialog box, click the Security button.
+
+2. In the Security dialog box, on the Packet Filters tab, click Add.
+
+3. Click Custom Filter and define the custom filter.
+
+   a. Select the protocol to use.
+
+   b. Select the direction of packets that this filter will apply to.
+
+   c. Select the port on the Proxy Server that the application will use.
+
+   d. Select the port on the remote host that the application will use.
+
+   NOTE: If the application uses a fixed port for outbound packets, and a dynamic
+   port for inbound packets, it may be necessary to define two filters, one for
+   each direction.
+
+4. To select the local host computer that will exchange packets with a remote
+   host computer, under Local host, do one of the following:
+
+    - To allow the default IP address for each external interface of the Proxy
+      Server computer to exchange packets, click "Default Proxy external IP
+      addresses".
+
+    - To allow a specific IP address for an external interface of the Proxy
+      Server computer to exchange packets, click Specific Proxy IP, and type a
+      valid IP address.
+
+    - To allow a specific internal computer behind Proxy Server to exchange
+      packets, click Internal computer, and type a valid IP address.
+
+5. To allow a specific Internet (remote) host computer to exchange packets,
+   under "Remote host", click "Single host" and type a valid IP address. Or, to
+   allow any Internet (remote) host computer to exchange packets, click "Any
+   host".
+
+6. Click OK.
+
+Additional information can be found in Requests for Comments (RFCs) at the
+following Web site:
+
+   http://www.rfc-editor.org
+
+The RFCs form a series of notes about the Internet, and discuss many aspects of
+computer communication, networking protocols, procedures, programs, and
+concepts.
+
+The Internet Assigned Numbers Authority documents protocol numbers and assignment
+services at the following Web site:
+
+   http://www.iana.org
+
+Microsoft provides third-party contact information to help you find technical
+support. This contact information may change without notice. Microsoft does not
+guarantee the accuracy of this third-party contact information.
+
+Additional query words: netmon SBS Internet firewall
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbBackOfficeSearch kbProxyServSearch kbSBServSearch kbBackOfficeServ450 kbSBServ450 kbProxyServ200
+Version           : NT:4.5; winnt:2.0,4.0,4.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

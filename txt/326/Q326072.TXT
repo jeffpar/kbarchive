@@ -1,0 +1,63 @@
+DOCUMENT:Q326072  30-JUL-2002  [sms]
+TITLE   :SMS: First 2,000 Results Are Returned When You Search for Values
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbtool kbui kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you make a query and the value for which you are searching is not known
+ahead of time, you can display a list of known values by clicking the Values
+button in Systems Management Server (SMS) 2.0. This list displays the values
+that might match the query criteria. When you click the Values button, only the
+first 2,000 results are returned.
+
+CAUSE
+=====
+
+This behavior occurs because the 2,000-result limit is set for performance
+reasons. Note that you cannot change this limit.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If a value is not in the list, you can manually add the value.
+
+Additional query words: prodsms smsquery
+
+======================================================================
+Keywords          : kbtool kbui kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

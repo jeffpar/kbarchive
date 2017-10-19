@@ -1,0 +1,81 @@
+DOCUMENT:Q236036  08-MAY-2002  [sms]
+TITLE   :SMS: NetDisc Fails to Discover Static IP Addresses Reserved and
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms120 kbsms120bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Network Discovery with Systems Management Server to locate system
+resources on a network, those clients that have DHCP reservations are not
+discovered.
+
+CAUSE
+=====
+
+Network Discovery interrogates the DHCP server for information regarding devices
+present on the network. The data requested does not include data corresponding
+to DHCP reservations.
+
+RESOLUTION
+==========
+
+ 
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+Many organizations prefer to use DHCP reservations over static IP, for more
+information see:
+
+   Q170062 Advantages of DHCP Reservation over Static IP Assignment
+
+If your organization is using static IP rather than DHCP reservations see:
+
+   Q201781 SMS: Clients with Static IP Addresses Not Network Discovered
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

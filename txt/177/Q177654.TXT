@@ -1,0 +1,119 @@
+DOCUMENT:Q177654  09-AUG-2001  [winnt]
+TITLE   :Slow Network Performance Using NetBEUI Across Bridges
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information on how to do this, view the "Restoring
+the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+Key" online Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+Your network performance seems to slow down and may actually stop in some
+instances. You are using the NetBEUI protocol with your Windows NT computers.
+
+CAUSE
+=====
+
+Network performance can decrease because of the frequency and time interval the
+Logical Link Control (LLC) POLL frames are sent. When LLC POLL frames are not
+answered, NetBEUI starts resending these frames. Depending on the circumstances,
+the first LLC POLL frame is sent after +/- 400 ms (a hardcoded value for
+MinimumT1Timeout), thereafter increasing the time between LLC POLL frames.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+After obtaining the fix mentioned above, then you will need to edit the registry
+using the following steps:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" online Help topic in Registry Editor (Regedit.exe) or the "Add and
+Delete Information in the Registry" and "Edit Registry Data" online Help topics
+in Regedt32.exe. Note that you should back up the registry before you edit it.
+
+1. Start Registry Editor (Regedt32.exe or Regedit.exe).
+
+2. Go to the following subkey:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Nbf\Parameters
+
+3. Create a new value with the following information:
+
+   Value name: MinimumT1Timeout
+   Data type : REG_DWORD
+   Default:  8 (decimal) (which equals 400 milliseconds)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+MORE INFORMATION
+================
+
+In the following trace you can see the time intervals (measured as seconds from
+previous frame):
+
+1  0.000 LLC       RR DSAP=0xF0 SSAP=0xF1 R N(R) = 0x04 FINAL
+2  1.772 LLC       RR DSAP=0xF0 SSAP=0xF0 C N(R) = 0x04 POLL
+3  0.450 LLC       RR DSAP=0xF0 SSAP=0xF0 C N(R) = 0x04 POLL
+4  0.651 LLC       RR DSAP=0xF0 SSAP=0xF0 C N(R) = 0x04 POLL
+5  0.952 LLC       RR DSAP=0xF0 SSAP=0xF0 C N(R) = 0x04 POLL
+6  1.402 LLC       RR DSAP=0xF0 SSAP=0xF0 C N(R) = 0x04 POLL
+
+This causes increased network traffic and LLC POLL frames from other Stations
+could timeout (router overload) increasing the overall number of LLC POLL
+frames, which can finally lead to severe bridge problems.
+======================================================================
+Keywords          : kbnetwork kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

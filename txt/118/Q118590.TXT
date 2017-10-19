@@ -1,0 +1,58 @@
+DOCUMENT:Q118590  22-DEC-1999  [powerpt]
+TITLE   :How to Capture or Create a Palette from an AVI File
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:1.0,1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Video for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides information about how to capture a palette from an AVI
+file. Microsoft Video for Windows allows palettes to be stored inside each AVI
+file; this allows for a unique palette in each AVI file.
+
+MORE INFORMATION
+================
+
+Video for Windows version 1.0 ships with a program called PalEdit. This
+application is used to view, modify, and capture palettes. A palette can also be
+captured in VidCap and VidEdit, but it cannot be modified in those tools.
+PalEdit can be used to capture palettes by simply loading the AVI file (choose
+Open from the File menu). In other applications, the palette must be copied to
+the Clipboard and then pasted into PalEdit.
+
+NOTE: PalEdit is not included in Video for Windows 1.1. However, if you upgraded
+from version 1.0, PalEdit is still available. Neither version of Video for
+Windows is sold through retail locations. It is sometimes sold with capture
+boards as an OEM product.
+
+Additional query words: palette VFW 1.00 1.10 paledit
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo100 kbVideo110
+Version           : WINDOWS:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

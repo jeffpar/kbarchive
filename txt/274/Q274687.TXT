@@ -1,0 +1,94 @@
+DOCUMENT:Q274687  22-OCT-2000  [homegame]
+TITLE   :MGS Error Message: Mgsi Executed an Invalid Instruction...
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metal Gear Solid 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Metal Gear Solid, you may receive the following error
+message:
+
+   Mgsi executed an invalid instruction in module Mgsi.exe.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+ - Your computer does not meet the minimum system requirements to play the game.
+
+ - Your computer does not fully support MMX technology.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods.
+
+Check System Requirements
+-------------------------
+
+Make sure that your computer meets the minimum system requirements to play Metal
+Gear Solid.
+
+For additional information about the minimum system requirements to play Metal
+Gear Solid, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q274104 Metal Gear Solid: Minimum System Requirements
+
+Make Sure That Your Computer Supports MMX Technology
+----------------------------------------------------
+
+If the processor (CPU) in your computer supports MMX, but the motherboard does
+not support MMX, you may be able to update the BIOS on the motherboard to add
+support for MMX technology.
+
+NOTE: If the processor in your computer does not support MMX technology, the only
+way to add MMX support is to upgrade the processor.
+
+To determine if your computer supports MMX technology, refer to the documentation
+for your computer, or contact your hardware manufacturer.
+
+For information about how to contact your hardware manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Additional query words: msgame mgs
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu msgame 
+Technology        : kbGamesSearch kbMetalGearSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

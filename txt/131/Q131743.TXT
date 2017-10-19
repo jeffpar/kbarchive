@@ -1,0 +1,62 @@
+DOCUMENT:Q131743  17-DEC-2000  [win95x]
+TITLE   :Fatal Exception Selecting to End of Line in Edit
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are editing a text file in an MS-DOS command prompt session with the
+Windows 95 Edit tool, you may receive the following error message:
+
+   A fatal exception occurred at 0028:C0037E2E in VXD VDD(01) + 00001D8A. The
+   current application will be terminated.
+
+This error occurs when you use the mouse to select and scroll text beyond the
+right edge of the screen.
+
+CAUSE
+=====
+
+This error can occur if the MS-DOS command prompt window is maximized and you
+are using Windows 3.1 Diamond Viper video drivers.
+
+RESOLUTION
+==========
+
+Either use the Windows 95 standard VGA video driver, or obtain updated drivers
+from Diamond for the Viper video card.
+
+Note that this error does not occur if you are using a full-screen MS-DOS command
+prompt session.
+
+Additional query words: gpf
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,61 @@
+DOCUMENT:Q233500  17-NOV-2000  [winnt]
+TITLE   :Service Pack 5 No Longer Keeps a Separate PS1 Folder for IBM
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbYear2000 kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are known year 2000 issues for IBM PS/1 ValuePoint computers that have
+Windows NT 4.0 installed. To fix these known issues, you must upgrade the
+Ntdetect.com file in order to resolve known year 2000 issues in older versions
+of the file.
+
+MORE INFORMATION
+================
+
+In previous service packs, the Ntdetect.com file is located in a separate Ps1
+folder. In Windows NT 4.0 Service Pack 5 (SP5), the Ntdetect.com file is now
+located in the i386 and Alpha folders that contains this fix. The Ps1 folder no
+longer exists in the SP5 folder structure.
+
+Installing SP5 updates the Ntdetect.com file on your computer. Alternatively, you
+can copy the Ntdetect.com file from the CD to your computer's primary boot
+partition. You do not need to restart your computer for the change to take
+effect.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbYear2000 kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

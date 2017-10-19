@@ -1,0 +1,118 @@
+DOCUMENT:Q174403  04-MAY-2001  [visualc]
+TITLE   :FIX: Unresolved Externals When Building MFC42 and MFCD42xD
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0sp1,5.0sp2
+OPER/SYS:
+KEYWORDS:kbDLL kbMFC kbVC500bug kbVS97sp3fix kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0sp1 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0sp1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0sp2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0sp2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When rebuilding Mfc42.dll, Mfcd42d.dll, or Mfcd42ud.dll after installing Visual
+Studio 97 Service Pack 1 or Service Pack 2, the "LNK2001: unresolved external
+symbol" error message occurs for the following functions:
+
+   AfxThunkSQLDescribeColA
+   AfxThunkSQLDriverConnectA
+   AfxThunkSQLErrorA
+   AfxThunkSQLExecDirectA
+   AfxThunkSQLGetCursorNameA
+   AfxThunkSQLGetInfoA
+   AfxThunkSQLPrepareA
+   AfxThunkSQLSetConnectOptionA
+
+CAUSE
+=====
+
+The symbols generated for these functions when compiling the file Dbcore.cpp do
+not match the function definitions specified for export in Mfc42.def,
+Mfcd42d.def, or Mfcd42ud.def.
+
+RESOLUTION
+==========
+
+Modify the function definitions in Mfc42.def, mfcd42d.def, or mfcd42ud.def to
+match the symbols for the function generated when compiling Dbcore.cpp.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The difference between the function definitions in Dbcore.cpp and Mfc42.def,
+Mfcd42d.def, or Mfcd42ud.def is that the function definitions have an "A"
+appended to the function names in Mfc42.def, Mfcd42d.def, or Mfcd42ud.def.
+
+These functions exist in Dbcore.cpp without the "A" appended to the function
+name.
+
+Remove the "A" from the function names in question for the .def file you specify
+when rebuilding Mfc42.dll, Mfcd42d.dll, or Mfcd42ud.dll.
+
+For example:
+
+Change the following
+
+      ?AfxThunkSQLDescribeColA@@YGFPAXGPAEFPAF2PAK22@Z @ 1507 NONAME
+
+to the following:
+
+      ?AfxThunkSQLDescribeCol@@YGFPAXGPAEFPAF2PAK22@Z @ 1507 NONAME
+
+REFERENCES
+==========
+
+See the section "Building the MFC DLL" in TN033 for information on how to
+rebuild the MFC DLL.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Isaac
+Varon, Microsoft Corporation.
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Isaac Varon, Microsoft Corporation
+
+
+Additional query words: AfxThunkSQL
+
+======================================================================
+Keywords          : kbDLL kbMFC kbVC500bug kbVS97sp3fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0sp1,5.0sp2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q140297  10-FEB-2000  [foxpro]
+TITLE   :DOC: SendUpdates also Applies to Cursors from Local Views
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,6.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbvfp300 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Visual FoxPro Language Reference and in the Help file under
+CURSORSETPROP(), the SendUpdates property is described as follows:
+
+SendUpdates   .T. - Specifies that a SQL update query is sent to update
+              remote tables.
+              .F. - Specifies that a SQL update query is not sent to update
+              remote tables.
+
+In the Visual FoxPro Language Reference and in the Help file under
+CURSORGETPROP(), the SendUpdates property is described as follows:
+
+SendUpdates     L      Contains true (.T.) if a SQL update query is sent
+                       to update remote tables; otherwise, contains false
+                       (.F.) (the default).
+                       Read-Write.
+
+Although these imply that this property is only valid for cursors from remote
+views, this property also applies to cursors that are created from local views.
+
+This documentation error has been fixed in Visual FoxPro 5.0 for Windows.
+
+MORE INFORMATION
+================
+
+A cursor created from a view must have its SendUpdates property set to true
+(.T.) if changes to the view are to update the source table. This is the case
+regardless of whether the view is from a native FoxPro table (a local view) or
+from a non-FoxPro table such as a Microsoft Access or SQL Server database (a
+remote view).
+
+Additional query words: docerr VFoxWin 5.00
+
+======================================================================
+Keywords          : kbdocfix kbvfp300 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP600
+Version           : WINDOWS:3.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

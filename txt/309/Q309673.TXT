@@ -1,0 +1,77 @@
+DOCUMENT:Q309673  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 2002: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2002 
+ - Microsoft Flight Simulator 2002 Professional Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article summarizes the minimum system requirements to run Microsoft Flight
+Simulator 2002.
+
+MORE INFORMATION
+================
+
+To run Flight Simulator, you need the following system resources:
+
+ - Multimedia PC with Pentium II 300 MHz equivalent or higher processor with 8MB
+   3D video hardware acceleration or better.
+
+ - Microsoft Windows 98, Microsoft Windows Millennium Edition, Microsoft Windows
+   2000, or Microsoft Windows XP operating system. (Microsoft Windows NT not
+   supported.)
+
+ - 64 megabytes (MB) of memory.
+
+ - Approximately 650 MB of available hard disk space; additional 100 MB for swap
+   file.
+
+ - Super VGA monitor supporting 800 x 600 resolutions in 16-bit color.
+
+ - DirectX 8.0a API or later.
+
+ - DirectX 8.0a or later compatible 8 MB video card.
+
+ - DirectX 8.0a API compatible sound card with speakers or headphones.
+
+ - Joystick or flight yoke (recommended).
+
+ - Microsoft Mouse or compatible pointing device.
+
+ - Sound card with speakers or headphones required for audio.
+
+ - Quad Speed or better CD-ROM drive.
+
+Additional query words: msgame fs2002
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

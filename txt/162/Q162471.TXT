@@ -1,0 +1,124 @@
+DOCUMENT:Q162471  10-AUG-2001  [winnt]
+TITLE   :WinNT 4.0 May Not Recognize SCSI Devices Using Nonzero LUNs
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetupkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+Registry" Help topic in Regedit.exe or the "Restoring a Registry Key" Help
+topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+Windows NT 4.0 may not recognize a SCSI device that uses a logical unit number
+(LUN) other than zero and that comes online after the system is started.
+
+NOTE: Hardware RAID devices commonly use nonzero LUNs.
+
+CAUSE
+=====
+
+This problem is caused because the Scsiport.sys driver does not scan for
+non-zero LUNs if LUN 0 has already been detected.
+
+For example, you have a system with a single SCSI disk drive at ID=0, LUN=0, and
+start the computer. Next, you turn on an external drive that is configured for
+ID=0, LUN=1. The Windows NT 4.0 system will not see this new device. Even if you
+send an IOCTL_SCSI_RESCAN_BUS call by running Disk Manager, the new device will
+not be found because of the problem with the Scsiport.sys driver.
+
+STATUS
+======
+
+Rescanning of nonzero LUNs requires two things:
+
+ - Install WinNT 4.0 Service Pack 3 (or later) version of Scsiport.sys.
+
+   and
+
+ - a LunRescan value added to the Disk key.
+
+After these two things are in place, IOCTL_SCSI_RESCAN_BUS should find nonzero
+LUNs. The value under the Disk key is used even if the system has no disk
+devices installed.
+
+Note that ScsiPort.sys will only find consecutive LUNs with the LunRescan
+registry entry, starting from LUN 0 up to the maximum LUNs supported on the
+device. As soon as a LUN does not respond, ScsiPort.sys stops scanning. For
+example, on a system with LUN 0, LUN 1, and LUN 5 responding, only LUN 0 and LUN
+1 will be recognized. This behavior is by design.
+
+To add this value to the Disk key, perform the following steps:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+1. Start Registry Editor (Regedt32.exe), and go to the following subkey:
+
+   \\HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Disk
+
+2. Add the following value to the Disk key:
+
+   Value name: LunRescan
+   Data type: REG_MULTI_SZ
+
+The Data for this value can be left NULL and the IOCTL rescan will apply to all
+devices. To specify a specific device, the string in the value should match the
+device(s) Inquiry string. Only the matched string should be rescanned when the
+IOCTL is issued, but the SCSIPORT SP3 implementation does not limit rescan to
+only the specified device. However, this might change in a future release.
+
+After this key is added, a reboot is NOT required. The IOCTL_SCSI_RESCAN_BUS
+should now search the nonzero LUNs.
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

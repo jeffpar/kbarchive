@@ -1,0 +1,53 @@
+DOCUMENT:Q239076  08-OCT-1999  [exchange]
+TITLE   :XADM: Notification Body Doesn't Display Complete Path
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you configure the Microsoft Exchange Server Mailbox Manager to notify users
+after a cleanup, the notification may not contain the complete folder path of
+the folder. Only the folder that was cleaned and its parent are displayed when
+the folder is more than two levels deep.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5
+Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

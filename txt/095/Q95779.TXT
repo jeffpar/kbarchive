@@ -1,0 +1,70 @@
+DOCUMENT:Q95779  24-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: Cannot Install Protected Mode Mapping
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message may be displayed when you start your computer after
+installing support for Banyan Vines connectivity:
+
+   Cannot install protected mode mapping
+
+This error message is displayed when WFWNET.DRV cannot load VINES.DRV.
+
+CAUSE
+=====
+
+This error message may be caused by a lack of available conventional memory.
+
+WORKAROUND
+==========
+
+To work around this problem, try to increase the amount of free conventional
+memory. (In one case, 390 kilobytes of free conventional memory was needed.)
+
+MORE INFORMATION
+================
+
+This error message occurs in low memory situations when the VINES
+protect-to-real mapping code fails to get a low memory buffer that is needed for
+interrupts that pass a buffer of data. The default value is for the mapping
+device load library (DLL) to get one 16K buffer. You can change this by setting
+the following values in the VINES.INI file:
+
+[communications]
+ bufsize=16384   ;size of mapping buffer
+ buffers=1       ;number of buffers to get
+
+Additional query words: 3.10 3.11 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,54 @@
+DOCUMENT:Q134678  07-NOV-1999  [pcmail]
+TITLE   :PC Gen: 3.5 Mail for PC Networks Macintosh Client Disk [3.5]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory listing of the version 3.5 Microsoft Mail for PC
+Networks, Macintosh Workstation 3.5-inch [1.44MB] Disk.
+
+<H3>Disk 1 - Apple Macintosh Workstation Version</H3>
+<BR/><BR/>
+Name                         Size      Last Modified
+------------------------------------------------------------------
+
+Microsoft Mail Application    420K       Thu, May 25, 1995, 1:31 PM
+Microsoft Mail Notifier       41K       Fri, Mar 17, 1995, 3:42 PM
+
+NOTE: This is a Macintosh version of the Microsoft Mail client. This will only
+operate on Apple Macintosh hardware and is designed for Macintosh client
+workstations that are connected to a Microsoft Mail for PC Networks postoffice.
+
+Additional query words: 3.50 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

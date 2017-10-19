@@ -1,0 +1,68 @@
+DOCUMENT:Q255951  04-AUG-2000  [iis]
+TITLE   :HTTP Compression Methods and Files Used by IIS 5.0
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, Internet Information Services (IIS) 5.0 uses the GZip and Deflate
+HTTP compression methods. Both compression methods are implemented through an
+ISAPI filter.
+
+MORE INFORMATION
+================
+
+ISAPI Filter:
+
+HTTP compression is a subservice of IIS, which is handled through an ISAPI
+filter. Because this filter is installed at the WWW Service level, compression
+must be configured for the entire Web server. It cannot be configured for a
+specific Web site. The following two files handle this compression (located in
+the %WinDir%\System32\INETSERV folder):
+
+ - CompFilt.dll
+ - GZIP.dll
+
+Compression Methods:
+
+ - GZIP file format specification - RFC 1952
+ - DEFLATE Compressed Data Format Specification - RFC 1951
+
+Note: To look up an RFC, see http://www.ietf.org
+
+For more information on enabling HTTP compression, review the Internet
+Information Services documentation.
+
+Additional query words: iis 5 akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

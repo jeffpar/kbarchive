@@ -1,0 +1,84 @@
+DOCUMENT:Q176991  09-AUG-2001  [crossnet]
+TITLE   :RAS Client Registers with WINS Using RAS Server's IP Address
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:3.11,95; winnt:3.5,3.51,4.0; :3.11,3.11a,3.11b
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the Windows Internet Name Service (WINS) mappings in WINS Manager,
+your Remote Access Service (RAS) Clients are registered with the IP address of
+your RAS Server's network interface card (NIC).
+
+You may expect the RAS Clients to register with the WINS Server using their
+RAS-assigned IP addresses instead.
+
+CAUSE
+=====
+
+The RAS Client is configured with one of the following:
+
+ - The TCP/IP protocol and either NetBEUI or NWLink IPX/SPX Compatible Transport
+   protocol.
+
+-or-
+
+ - NetBEUI or NWLink IPX/SPX Compatible Transport protocol without the TCP/IP
+   protocol.
+
+RESOLUTION
+==========
+
+Use one of the following methods to force your RAS Clients to register in WINS
+using their RAS IP addresses:
+
+ - Configure your RAS Clients to use only the TCP/IP protocol.
+
+-or-
+
+ - Configure your RAS Server to accept connections using only the TCP/IP
+   protocol.
+
+MORE INFORMATION
+================
+
+This issue is a function of the NetBIOS Gateway portion of the RAS Server. It
+allows RAS Clients to communicate with non-IP or IP-only Local Area Network
+(LAN) clients.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : WINDOWS:3.11,95; winnt:3.5,3.51,4.0; :3.11,3.11a,3.11b
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

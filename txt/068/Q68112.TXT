@@ -1,0 +1,50 @@
+DOCUMENT:Q68112  30-JUL-2001  [homegame]
+TITLE   :ASD: Coordinate Systems Available
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+By default, Microsoft Aircraft & Scenery Designer uses the Flight Simulator
+coordinate system. To change the coordinate system, do the following:
+
+1. From the Mode menu, choose option J, Scenery Design.
+
+2. From the Scenery Designer menu, choose option 1, Static Scenery Designer.
+
+3. Choose option L, Design Preferences.
+
+4. Press 0 (zero) to select the Location System that you want.
+
+Note that Location System contains the following three options:
+
+ - FS Coordinate System
+
+ - North Latitude/West Longitude
+
+ - North Latitude/East Longitude
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

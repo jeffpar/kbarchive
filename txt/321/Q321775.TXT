@@ -1,0 +1,77 @@
+DOCUMENT:Q321775  30-MAY-2002  [winnt]
+TITLE   :Error Loading Gdi.exe Connecting to Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start a Terminal Server client session, you may receive the
+following error message:
+
+   Error loading GDI.EXE
+
+CAUSE
+=====
+
+This issue may occur if both of the following conditions are true:
+
+ - You are using a Microsoft Windows 95-based computer to connect to the
+   Terminal server.
+
+   -and-
+
+ - The Windows 95-based computer is using a video card that uses hardware
+   acceleration.
+
+RESOLUTION
+==========
+
+To resolve this issue, reduce the graphics acceleration setting. To do so,
+follow these steps:
+
+1. Right-click My Computer, and then click Properties.
+
+2. Click the Performance tab, click Graphics, and then reduce the Hardware
+   Acceleration slider by one notch.
+
+3. Click OK, and then click Close.
+
+4. Click Yes when you are prompted to restart your computer.
+
+5. Try to start a Terminal Server Client session. If you receive the error
+   message again, repeat steps 1 through 4, and reduce the Hardware Acceleration
+   slider by another notch.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

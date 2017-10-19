@@ -1,0 +1,59 @@
+DOCUMENT:Q111571  10-OCT-1999  [win3x]
+TITLE   :Video Corruption with Diamond Stealth and WFWG VGA Driver
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the Microsoft Windows for Workgroups version 3.11
+standard VGA video driver with a Diamond Stealth VRAM 3.33 video adapter, you
+encounter video corruption when you return to Windows from an MS-DOS- based
+application or the MS-DOS Prompt.
+
+WORKAROUND
+==========
+
+To work around this problem use a video driver supplied by Diamond.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.11. We are researching this problem and will post new information here as it
+becomes available.
+
+KBCategory: kbhw kbdisplay kb3rdparty kbgraphic kbbuglist
+KBSubcategory: wfw wfwg windrvr
+
+Additional query words: 3.11 garbage
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

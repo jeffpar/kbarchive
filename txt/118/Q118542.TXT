@@ -1,0 +1,65 @@
+DOCUMENT:Q118542  08-NOV-2001  [homemm]
+TITLE   :Dangerous Creatures: Choosing Back Button Skips a Screen
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dangerous Creatures for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you choose the Back button in Dangerous Creatures, you may not return to
+the screen you saw most recently. Choosing Back may skip a screen.
+
+MORE INFORMATION
+================
+
+This occurs because the Back feature does not include pop-up screens. Instead,
+Dangerous Creatures returns to the most recently viewed main screen.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. From the Main screen, click Weapons.
+
+2. In the Weapons screen, click Jaws.
+
+3. In the Jaws screen, click Wolf.
+
+4. In the Wolf screen, click the Back button.
+
+Instead of returning to the Jaws screen, Dangerous Creatures returns to the
+Weapons screen.
+
+This occurs because the Back feature does not include pop-up screens. The Jaws
+screen is a pop-up screen, whereas the Weapons screen is a main screen.
+
+Additional query words: kbhowto 1994 multi media multimedia multi-media popup jump omit include doesn't does not bring
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbZNotKeyword kbDangerousCreatures
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

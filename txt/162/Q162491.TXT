@@ -1,0 +1,85 @@
+DOCUMENT:Q162491  13-JUN-2001  [sna]
+TITLE   :SNA Server Performance Degrades with Event 631 Errors
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11 SP1,3.0
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA client response is slow, and at the same time SNA Server or SnaBase reports
+multiple Event 631 errors (from 10-30 per second) in the Windows NT application
+event log:
+
+   Event: 631
+   Source: SNA Server (or SnaBase)
+   Description: Invalid message received across the LAN:
+   remote: <client IP address:port> msgid 0x0 incorrect or msgtype 1
+   too high (max 33)
+
+All Event 631 errors are reported from the same client address and client port
+number.
+
+CAUSE
+=====
+
+Event 631 is logged by SNA Server (or SnaBase) whenever it receives an
+improperly formatted message from an SNA Server client emulator over an existing
+client TCP/IP socket. The cause of this client behavior is under investigation.
+
+RESOLUTION
+==========
+
+An update to SNA Server 2.11 SP1 and SNA Server 3.0 changes the way that invalid
+client messages are handled. Instead of reporting an Event 631 on each invalid
+message, this update causes SNA Server (or SnaBase) to:
+
+ - report a single Event 631 for this client port, and
+
+ - close the TCP/IP socket to this client.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11, 2.11
+SP1 and 3.0.
+
+
+A supported fix for SNA Server 2.11 SP1 and 3.0 is now available, but has not
+been fully regression-tested and should be applied only to systems experiencing
+this specific problem. Unless you are severely impacted by this specific
+problem, Microsoft recommends that you wait for the next Service Pack that
+contains this fix. Contact Microsoft Technical Support for more information.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

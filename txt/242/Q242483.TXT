@@ -1,0 +1,227 @@
+DOCUMENT:Q242483  11-SEP-2001  [vbwin]
+TITLE   :FIX: Error 486 or 482 Occurs When Using PrintForm
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbprint kbCmnDlgPage kbCmnDlgPrint kbPrinting kbVBp kbVBp600bug kbOSWin95 kbOSWin98 kbG
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using code that calls the PrintForm method can cause one or more of the
+following errors after you change a page level setting (for example,
+Orientation) or you try to print text to the same page:
+
+   Run-time error '482': Printer Error
+
+   Run-time error '486': Can't print form image to this type of printer
+
+   Printer Error
+
+Running under Microsoft Windows NT or Windows 2000, the initial call to PrintForm
+after changing settings works but subsequent attempts fail. Running under
+Windows 95, Windows 98, or Windows Me, code that makes even a single call to the
+PrintForm method after changing Orientation or any other page level setting
+fails with one or more of the preceding errors.
+
+RESOLUTION
+==========
+
+You can circumvent this problem by not using PrintForm and instead employing
+WIN32 API code. See the References section below for descriptions of these
+methods.
+
+Running under Windows NT or Windows 2000:
+
+ - Calling the EndDoc method after the call to PrintForm fixes the problem.
+
+Running under Windows 95, Windows 98, or Windows Me:
+
+ - Calling the EndDoc method before the call to PrintForm skirts the problem but
+   any settings made to the Printer object are lost. This means that PrintForm
+   uses the settings of the current default printer. This was the behavior prior
+   to Visual Basic 6.0.
+
+ - Use the Common Dialog control to change page properties instead of direct
+   assignments to the properties of the Printer object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the latest service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+   Visual Studio Product Updates
+   (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+MORE INFORMATION
+================
+
+Prior to Visual Basic 6.0, the PrintForm method was completely self contained
+and ignored any settings made to the Printer object. This was because the
+Printer object and the PrintForm method each used its own Device Context (DC)
+for the current printer. Each had its own printer settings that did not affect
+any other DC. This also meant that PrintForm would end the current print job,
+start its own job, and end it when finished.
+
+In order to give developers the ability to control printer settings for PrintForm
+and to allow the printing of text on the same pages with the form image,
+PrintForm was changed to use the DC of the Printer object. Thus, now you can
+change printer settings and your call to PrintForm uses them. However, when
+attempting this under Windows 95 or Windows 98, or when this is done multiple
+times within a print job under Windows NT or Windows 2000, the errors listed in
+the Symptoms section can occur. You can get around this problem by replacing
+PrintForm with WIN32 API code (see References below) or by using the EndDoc
+method, which ends the print job and allows a new job to start. Also, under
+Windows 95 and Windows 98, you can use the printer Common Dialog instead of
+direct assignments to Printer.Orientation. While using EndDoc allows you to
+print text in the same code that uses PrintForm, you still cannot put the form
+image and text on the same page. However, you can print text and your form image
+on the same page using API calls.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project. Form1 is created by default.
+
+2. Add the following to the module of Form1:
+
+   Private Sub Form_Click()
+       Printer.Orientation = vbPRORPortrait
+       PrintForm
+       Printer.Orientation = vbPRORLandscape
+       PrintForm
+   End Sub
+
+3. Run the project and click on the form. The error(s) occur. If you are running
+   under Windows 95 or Windows 98, this occurs on the first PrintForm call. The
+   errors occur on the second call when you are running Windows NT or Windows
+   2000.
+
+WorkArounds
+-----------
+
+WINDOWS NT AND WINDOWS 2000
+
+1. Continue with the project created in the preceding steps and add calls to the
+   EndDoc method after each call to PrintForm, so that your code appears as
+   follows:
+
+   Private Sub Form_Click()
+       Printer.Orientation = vbPRORPortrait
+       PrintForm
+       Printer.EndDoc
+       Printer.Orientation = vbPRORLandscape
+       PrintForm
+   End Sub
+
+2. Run the project and click on the form. Your form should print on two pages,
+   once in portrait and once in landscape.
+
+WINDOWS 95, WINDOWS 98, OR WINDOWS ME
+
+ - Continue with the original project created previously and add calls to the
+   EndDoc method before each call to PrintForm, so that your code appears as
+   follows:
+
+   Private Sub Form_Click()
+       Printer.Orientation = vbPRORPortrait
+       Printer.EndDoc
+       PrintForm
+       Printer.Orientation = vbPRORLandscape
+       Printer.EndDoc
+       PrintForm
+   End Sub
+
+   Run the project and click on the form. Your form should print on two pages,
+   but each time it just uses the default orientation for the current printer.
+
+   -or-
+
+ - Continue with the original project created above and add calls to the Common
+   Dialog control to change page settings instead of using direct assignments,
+   so that your code appears as follows:
+
+   Private Sub Form_Click()
+       CommonDialog1.ShowPrinter ' set to Landscape
+       PrintForm
+       CommonDialog1.ShowPrinter ' set to Portrait
+       PrintForm
+   End Sub
+
+   1. From the Project menu, choose Components and then select Microsoft Common
+      Dialog Control 6.0. Click OK.
+
+   2. Add a CommonDialog control to Form1.
+
+   3. Run the project and click on the form. You are prompted twice with a
+      printer dialog. Select a different orientation each time. Your form should
+      print on two pages, once in landscape and once in portrait.
+
+REFERENCES
+==========
+
+For additional information on WIN32 API alternatives to using PrintForm, click
+the article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q161299 HOWTO: Capture and Print the Screen, a Form, or any Window
+
+   Q178076 HOWTO: Use a PictureBox to Control Orientation Printing a Form
+
+   Q230502 HOWTO: Print a Form That is Too Large for the Screen or Page
+
+For additional information on using the Printer Common Dialog, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q198712 PRB: CommonDialog Changes System Wide Printer Properties
+
+For additional information on an alternative way to change Orientation when using
+PrintForm, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q198901 Sample: PageSet.exe Programmatically Changes Default Printer
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbprint kbCmnDlgPage kbCmnDlgPrint kbPrinting kbVBp kbVBp600bug kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport kbVS600sp4fix kbOSWinME kbVS600sp5fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

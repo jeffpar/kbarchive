@@ -1,0 +1,80 @@
+DOCUMENT:Q166767  04-AUG-2001  [visualc]
+TITLE   :PRB: GetControlUnknown() Returns NULL in COleControl
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,4.2b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbole kbActiveX kbCOMt kbCtrl kbInprocSvr kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call GetControlUnknown() from inside a COleControl-derived class, it
+always returns NULL.
+
+CAUSE
+=====
+
+The function CWnd::GetControlUnknown() should be called from the control
+container.
+
+RESOLUTION
+==========
+
+Call CCmdTarget::GetControllingUnknown() instead of
+CWnd::GetControlUnknown().
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+CWnd::GetControlUnknown() can be called to check if the CWnd is being used as a
+proxy, or wrapper, for a contained Activex control. It does this by checking the
+m_pCtrlSite CWnd member to see if it's NULL or not. If m_pCtrlSite is NULL, then
+NULL is returned. Since m_pCtrlSite is only set when the CWnd represents a
+contained ActiveX control, m_pCtrlSite will always be NULL if
+GetControlUnknown() is called from inside an ActiveX control's source.
+
+CCmdTarget::GetControllingUnknown() can be used to get the IUnknown of the outer,
+or controlling, object from within an object which is being aggregated. If the
+object is not being aggregated then CCmdTarget::GetControllingUnknown() simply
+returns the object's own IUnknown.
+
+Note that CCmdTarget::GetControllingUnknown() is an undocumented function and may
+change in future versions of MFC.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbActiveX kbCOMt kbCtrl kbInprocSvr kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC420b kbVC500Search
+Version           : winnt:4.2,4.2b,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

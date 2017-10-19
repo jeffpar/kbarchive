@@ -1,0 +1,191 @@
+DOCUMENT:Q192986  27-JAN-2001  [vbwin]
+TITLE   :SAMPLE: MODLIST.EXE Shows How to Enumerate Processes and Modules
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbprogramming kbsample kbOSWinNT kbOSWin2000 kbVBp kbVBp500 kbVBp600 kbOSWin kbO
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One common programming problem in Visual Basic is the need to enumerate all
+processes and the associated files (modules) loaded into memory. The Task
+Manager under Windows NT 4.0 and Windows 2000 is a perfect example of this. The
+first tab of the Task Manager lists all application windows on the desktop. The
+second tab of the Task Manager lists all the processes in the system. This
+article provides details on how to list these processes and the modules for each
+process in Windows 95, Windows 98, Windows Me, Windows NT, and Windows 2000.
+
+Modlist.exe is a sample project that shows how to list all the processes and
+their modules under Windows 95, Windows 98, Windows Me, Windows NT, and Windows
+2000.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   Modlist.exe
+   (http://download.microsoft.com/download/vb50pro/Sample7/1/W9XNT4/EN-US/Modlist.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+In addition to the information below, the sample code included in Modlist.exe
+includes extensive comments describing how the code works. It may be useful to
+follow the code flow in the sample while reading this article.
+
+The first thing to note when enumerating the processes of the operating system is
+that the necessary API functions are completely different under Windows 95/98/Me
+and Windows NT/2000. Under Windows 95/98/Me, functions from the ToolHelp32 group
+of APIs are used. Under Windows NT/2000, functions from PSAPI.DLL are used.
+
+Windows 95/98/Me and ToolHelp32
+-------------------------------
+
+The Toolhelp32 APIs used under Windows 95, Windows 98, and Windows Me reside in
+the KERNEL32.DLL. These API functions are available only under Windows 95,
+Windows 98, and Windows Me. The following ToolHelp32 functions allow you to
+enumerate processes in the system, as well as get memory and module
+information:
+
+   CreateToolhelp32Snapshot()
+   Process32First()
+   Process32Next()
+   Module32First()
+   Module32Next()
+
+The first step is to create a "snapshot" of the information in the system using
+the CreateToolhelp32Snapshot() function. This function allows you to choose what
+type of information is stored in the snapshot. The Modlist sample initially
+specifies the TH32CS_SNAPPROCESS flag because you are interested in process
+information. This function returns a handle to a PROCESSENTRY32 structure, and
+it is important to remember to pass the handle to CloseHandle() when processing
+is complete. To iterate through the list of processes in the snapshot, call
+Process32First once, followed by repeated calls to Process32Next, until one of
+these functions returns FALSE. Both of these functions take the handle to the
+snapshot and a pointer to a PROCESSENTRY32 structure as parameters.
+Process32First and Process32Next fill a PROCESSENTRY32 structure with useful
+information about a process in the system.
+
+The process ID is in the th32ProcessID member of the structure. The process'
+executable file and path are stored in the szExeFile member of the structure.
+Other useful information is also available in the structure. The Modlist sample
+only retrieves the EXE name and adds it to a listbox. The process ID can be
+passed to the OpenProcess() API to get a handle to the process.
+
+With a valid process id, you can again call the CreateToolHelp32Snapshot() to
+retrieve module information for the process. This secondary call to
+CreateToolHelp32Snapshot() passes the TH32CS_SNAPMODULE flag and a pointer to
+the process ID (th32ProcessID value of the PROCESSENTRY32 structure) as the
+parameters, and creates a snapshot of the modules in that process.
+
+Again, this function returns a HANDLE and it is important to remember to close
+the handle, using CloseHandle(), after retrieving information about the
+process.
+
+In a manner similar to retrieving process information, Module32First is called
+once and Module32Next is called as many times as required to iterate through the
+modules information for the process.
+
+Windows NT, Windows 2000, and the PSAPI.DLL
+-------------------------------------------
+
+The Windows NT and Windows 2000 approach to creating a list of processes and
+modules uses functions from the PSAPI.DLL. The PSAPI.DLL file is distributed
+with the Platform SDK, available at:
+
+   http://www.microsoft.com/msdn/sdk
+
+Like the ToolHelp32 functions, the PSAPI.DLL also contains a variety of useful
+functions. However, this article only discusses those functions relevant to
+enumerating processes and modules:
+
+   EnumProcesses()
+   EnumProcessModules()
+   GetModuleFileNameExA()
+
+First, a call is made to EnumProcesses() to fill an array of process IDs. The
+ModList sample code also includes a method of calculating the number of
+processes returned.
+
+Next, OpenProcess() is called for each of the process IDs to retrieve a handle to
+the process, if the handle is valid, then call EnumProcessModules() to enumerate
+the modules of the process. EnumProcessModules() fills an array passed as a
+parameter, with the module handles associated with the process.
+
+GetModuleFileNameExA() is used to retrieve the name of the module using the
+process handle and module handle as parameters. The module name would be the
+path and file name of the dll, ocx, etc., that the process has loaded.
+
+In ModList, a module name is indented in the listbox to show it to be a "child"
+under the process it is associated with.
+
+Additional notes
+----------------
+
+The name of a process may also be displayed in the list of modules for that
+process. If this is not desirable, simply compare the module name to the process
+name before adding it to the list.
+
+In Windows 95, 16-bit applications have process IDs etc., just like Win32
+applications. Therefore, they are reported equally by Toolhelp32 functions.
+However, this is not the case under Windows NT. 16-Bit applications running
+under Windows NT and Windows 2000 run in what is called a Virtual Dos Machine
+(VDM). EnumProcesses will not recognize any 16-bit applications in the system.
+However, it will return the 32-bit NTVDM processes under which the 16-bit
+applications are running. In order to enumerate 16-bit applications under
+Windows NT and Windows 2000, you must use a function called VDMEnumTaskWOWEx().
+
+Use if VDMEnumTaskWOWEx() is not covered in this article or the ModList sample.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q175030 HOWTO: Enumerate Applications in Win32
+
+
+   Q187913 HOWTO: List Running Processes
+
+Additional query words: Modlist
+
+======================================================================
+Keywords          : kbfile kbprogramming kbsample kbOSWinNT kbOSWin2000 kbVBp kbVBp500 kbVBp600 kbOSWin kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,85 @@
+DOCUMENT:Q265330  17-JUN-2002  [exchange]
+TITLE   :XFOR: Message Text from SNADS Received As an Attachment
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbsetup exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, Microsoft Exchange Server's connector for System Network
+Architecture Distribution Services (SNADS) formats the body of a message from a
+SNADS system as a text attachment.
+
+MORE INFORMATION
+================
+
+To change this behavior so that the message text is received in the body of a
+message, remove the comment (;) tag and change the value for "FinalDocInBody="
+from No to Yes in the [LME-SNADS] section of the Exchconn.ini file:
+
+   [LME-SNADS]
+       title = Microsoft Exchange Connector for SNADS
+       tasks = LME-SNADS-MEXIN,LME-SNADS-MEXOUT,LME-SNADS-DIAMEX,LME-SNADS-OUT,LME-SNADS-IN,LME-SNADS-MEXDIA,LME-SNADS-DXA
+       addresstype = SNADS
+       ; below are set so the user is prompted to enter the non default values
+       localrgn    =
+       localren    =MPLNT3
+       partnerrgn  =
+       partnerren  =AGCHEMA
+       locallu     = MPLNT3
+       partnerlu   = AGCHEMA
+       modename    =MSX
+       nodename    =MPLNT3
+       NumAttempts = 0
+       TimeOut     = 60
+       maxnumhops  = 10
+       inputq      = snads.in
+       outputq     = dia2mex.in
+       dbgdir      = traces
+       ; default parameters
+       ;MapCODtoRRN = No
+       ;MapRRNtoCOD = No
+       ; The following line was changed from FinalDocInBody=No to
+       ; FinalDocInBody=Yes to prevent msg body from SNADS coming as 
+       ; attachment
+       ; FinalDocInBody=No is the default setting
+       FinalDocInBody = Yes
+       ;sendattach = Yes
+       ;hostnoterightmargin = 78
+       ;ctfilename = tables\ct2
+       ;ctcompressmaxdelay = 5
+       ;autoregfilename = tables\SNADSreg
+       ;autoregistration = Yes
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

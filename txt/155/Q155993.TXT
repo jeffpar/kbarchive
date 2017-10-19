@@ -1,0 +1,76 @@
+DOCUMENT:Q155993  08-NOV-2001  [homegame]
+TITLE   :Hellbender: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbsetup kbref kbusage kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article lists the minimum system requirements to run Microsoft
+Hellbender.
+
+MORE INFORMATION
+================
+
+The minimum system requirements for Hellbender are:
+
+ - A Multimedia PC with Pentium 75 MHz processor or higher processor.
+
+ - Microsoft Windows 95 operating system.
+
+ - 8 MB of memory (RAM).
+
+ - 32 MB of available hard-disk space.
+
+ - Quad-speed CD-ROM drive.
+
+ - Local SVGA bus video, 256-color display.
+
+ - Microsoft Mouse or compatible pointing device (joystick or other flight
+   control recommended).
+
+ - Sound board plus speakers or headphones to hear audio.
+
+ - 3-D accelerated video for best graphic quality.
+
+Optional:
+
+ - Hayes-compatible modem - 14.4 Kbps for head-to-head play (9600 Kbps or higher
+   recommended for connection to the Hellbender Web Stop site)
+
+Additional query words: 1.00 Hellbender system requirements minimum requires
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbHellBender
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

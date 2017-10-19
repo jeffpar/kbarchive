@@ -1,0 +1,78 @@
+DOCUMENT:Q165801  14-NOV-2000  [word97]
+TITLE   :WD97: "Activate As" Word Picture Activates Object as Word Docume
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbole
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert an object in your document (click Object on the Insert menu) and
+convert the object to be activated as a Microsoft Word Picture object, the
+object is activated as a Microsoft Word Document object.
+
+WORKAROUND
+==========
+
+To work around this problem, convert the Document object to a Microsoft Word
+Picture object. This allows you to edit the object in the Microsoft Word Picture
+Editor. When you have completed editing the object, you can convert the picture
+back to a Document object.
+
+To convert the document object to a Microsoft Word picture, use the following
+steps:
+
+1. Position the insertion point over the Document object then click to select
+   it.
+
+2. On the Edit menu, point to Document Object, and then click Convert.
+
+3. From the Convert dialog box select "Microsoft Word Picture" in the Object
+   Type box.
+
+4. Click OK.
+
+To convert the Microsoft Word Picture object back to a Microsoft Word Document
+object, do the following:
+
+1. Position the insertion point over the picture object, and then click to
+   select the picture object.
+
+2. On the Edit menu, point to Picture Object, and then click Convert.
+
+3. From the Convert dialog box, select "Microsoft Word Document" in the Object
+   Type list box.
+
+4. Click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

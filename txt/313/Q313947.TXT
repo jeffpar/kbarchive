@@ -1,0 +1,100 @@
+DOCUMENT:Q313947  11-APR-2002  [homemm]
+TITLE   :ENC2002:  "Page Cannot Be Displayed" Err Msg Starting Researcher
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Library 2002, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the Researcher in Microsoft Encarta Reference Library
+2002, you may receive an error message similar to the following:
+
+   The page cannot be displayed.
+
+   There is a problem with the page you are trying to reach and it cannot be
+   displayed.
+
+CAUSE
+=====
+
+This behavior may occur if Encarta Reference Library is damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps.
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please consult your product
+documentation to complete these steps.
+
+1. Click Start, and then click Control Panel.
+
+2. Click "Add or Remove Programs".
+
+3. In the list of currently installed programs, click "Microsoft Encarta
+   Reference Library 2002", and then click Remove.
+
+4. Start Windows Explorer, and then browse to the folder where Encarta is
+   installed (for example, C:\Program Files\Microsoft Encarta).
+
+5. Delete the Microsoft Encarta folder and the FactFinder folder.
+
+6. Use a clean boot to restart your computer.
+
+   NOTE: A clean boot is a way to create a clean environment. When you start your
+   computer with a clean boot, Microsoft Windows starts and loads only basic
+   devices and services. For information about how to use a clean boot and how
+   to use a normal startup, see the "More Information" section later in this
+   article.
+
+7. Reinstall Encarta Reference Library.
+
+8. Use a normal startup to restart Windows.
+
+REFERENCES
+==========
+
+For additional information about how to perform a clean boot, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q310353 How to Perform a Clean Boot in Windows XP
+
+   Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+   Q281770 How to Perform Clean-Boot Troubleshooting for Windows 2000
+
+   Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbEncartaSearch kbMMSearch kbEncartaRef2002
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,84 @@
+DOCUMENT:Q272416  22-OCT-2000  [homegame]
+TITLE   :Plus! Game Pack: Cannot Establish Multiplayer Connection
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! Game Pack: Cards and Puzzles 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to host a multiplayer game of Microsoft Plus! Game Pack: Cards
+& Puzzles, you may be unable to connect to the guest computers with a modem
+or a serial connection.
+
+CAUSE
+=====
+
+This behavior can occur if the modem speed or serial connection speed that is
+used by the guest computers does not match the modem speed or serial connection
+speed that is used by the host computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure all of the computers to use the same modem
+speed or serial connection speed:
+
+1. Start Plus! Game Pack, and then select your player ID.
+
+2. In the list of games, click Multiplayer.
+
+3. In the list of games, click the game that you want to play.
+
+4. Under Connection Types, click Modem or Serial.
+
+5. On the host computer:
+
+   a. Click Host New Game.
+
+   b. In the "Name your online session" box, type a name for the game session,
+      and then click OK.
+
+   On the guest computer, click Join Existing Game.
+
+6. Make sure that the values in the following boxes on the guest computer match
+   the corresponding values on the host computer:
+
+    - Baud Rate
+    - Flow
+    - Parity
+    - Stop Bits
+
+7. Click OK.
+
+Additional query words: msgame plusgp bicycle multiplay wep pep
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbGamesSearch kbPlusSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

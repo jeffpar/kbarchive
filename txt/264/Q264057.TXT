@@ -1,0 +1,54 @@
+DOCUMENT:Q264057  04-AUG-2000  [iis]
+TITLE   :Cannot Install IIS 5.0 on Windows 95/98 or Windows NT 4.0
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Information Services (IIS) version 5.0 is a built-in component of
+Windows 2000. Unlike Internet Information Server (IIS) version 4.0, IIS 5.0 is
+not available separately. Therefore, it cannot be run on Windows 95, Windows 98,
+or Windows NT 4.0. Instead, you need to run Personal Web Server (PWS) on Windows
+95 and Windows 98.
+
+MORE INFORMATION
+================
+
+IIS 4.0 and PWS are included in the Windows NT Option Pack, which is available
+on the following Web page:
+
+   http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/.
+
+Additional query words: iis 5 Peer Web Server Service NTOP setup install akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

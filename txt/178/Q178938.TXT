@@ -1,0 +1,69 @@
+DOCUMENT:Q178938  07-MAY-2002  [homegame]
+TITLE   :FS98/2000: Description of the Ambiguity Indicator
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbusage fs98 kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The appearance of the ambiguity indicator on the Cessna aircraft instrument
+panel in Flight Simulator 98/2000 is different from the Cessna ambiguity
+indicator in earlier versions of Flight Simulator.
+
+The ambiguity indicator displays your position relative to the station and the
+radial that you have selected with the omni-bearing selector (OBS). The
+ambiguity indicator also indicates whether you are receiving a usable navigation
+signal.
+
+MORE INFORMATION
+================
+
+When you receive a usable navigation signal, the ambiguity indicator (the
+triangle located beside the small letters "NAV" near the bottom of the VOR 1
+Indicator gauge) points up or down. The up position indicates that the OBS is
+set to a radial leading toward the very high frequency omnidirectional range
+(VOR) signal. The up position on the ambiguity indicator is the same as the TO
+indicator in earlier versions of Flight Simulator.
+
+The down position on the ambiguity indicator indicates that the OBS is set to a
+radial leading away from the VOR signal. The down position on the ambiguity
+indicator is the same as the FROM indicator in earlier versions of Flight
+Simulator.
+
+If the ambiguity indicator is striped, the gauge is not receiving a usable
+navigation signal. A striped ambiguity indicator is the same as the OFF
+indicator in earlier versions of Flight Simulator.
+
+Additional query words: fs98 fs2k flightsim fltsim flt sim changed
+
+======================================================================
+Keywords          : kbui kbusage fs98 kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

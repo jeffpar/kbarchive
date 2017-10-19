@@ -1,0 +1,70 @@
+DOCUMENT:Q269958  25-JUL-2001  [homekids]
+TITLE   :MSB in Concert: Minimum System Requirements for Macintosh
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhw mskids kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's The Magic School Bus in Concert 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the minimum system requirements that you need to run
+Microsoft Scholastic's The Magic School Bus in Concert on a Macintosh computer.
+
+MORE INFORMATION
+================
+
+To run The Magic School Bus in Concert on a Macintosh computer, you need:
+
+ - Macintosh iMac, iBook, or PowerPC computer with a 233 Mhz or faster processor
+
+ - System OS 8.1 or later
+
+ - 16 megabytes (MB) of RAM; 32 MB of RAM for Macintosh OS System 9.1 or later
+
+ - 15 MB of available hard disk space; additional available hard disk space for
+   the swap file
+
+ - Quad-speed or faster CD-ROM drive
+
+ - 256 color, Super-VGA monitor
+
+ - Video adapter capable of displaying 256 or more colors at a resolution of 640
+   x 480 pixels or higher
+
+ - Microsoft mouse, Apple mouse, or compatible pointing device
+
+ - Speakers or headphones for sound playback (recommended)
+
+ - Printer or network interface card (optional)
+
+Additional query words: 1.00 mskids schoolbus msbconcert sysreqs requires
+
+======================================================================
+Keywords          : kbhw mskids kbimu kbHardware 
+Technology        : kbHomeProdSearch kbKidsSearch kbMSBSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

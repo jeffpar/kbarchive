@@ -1,0 +1,68 @@
+DOCUMENT:Q119411  19-OCT-2000  [pcmail]
+TITLE   :PC DOS: SCRCOMP.EXE -P Option Not Work
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SCRCOMP.EXE script compiler program compiles an ASCII script file into an
+encrypted script file for use with EXTERNAL.EXE and Remote client programs. When
+you use the -Pscript option with SCRCOMP.EXE to test scripts as described on pg.
+382 of the Microsoft Mail 3.2 "Administrator's Guide," the program always plays
+the INITIALIZE script.
+
+CAUSE
+=====
+
+The SCRCOMP.EXE program always sets the -P option to INITIALIZE, regardless of
+the script specified.
+
+RESOLUTION
+==========
+
+It is possible to work around the problem by swapping the INITIALIZE label with
+the label of the script to be tested; CALL, ANSWER, RESET, or DISCONNECT, and
+execute the SCRCOMP.EXE program with the -P option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of Microsoft Mail
+for PC Networks, MS-DOS workstation. We are researching this problem. and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

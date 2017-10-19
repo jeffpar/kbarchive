@@ -1,0 +1,62 @@
+DOCUMENT:Q190287  30-JUL-2001  [sms]
+TITLE   :SMS: PCM Files on SMS 1.2 SP3 Are Newer Than the Files on BORK
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Both Systems Management Server 1.2 Service Pack 3 and the Microsoft BackOffice
+Resource Kit (BORK) come with updated Package Command Manager (PCM) files.
+However, the PCM files that come with Systems Management Server 1.2 Service Pack
+3 are a newer version than the ones from the BackOffice Resource Kit, even
+though the BackOffice Resource Kit file dates are older.
+
+MORE INFORMATION
+================
+
+The files in question are the PCM service (Pcmsvc32.exe) and PCM executable
+(Pcmwin32.exe) files. Microsoft Technical Support recommends that you use the
+PCM files provided with Systems Management Server 1.2 Service Pack 3.
+
+The file sizes and dates are shown in the table below.
+
+   Source        File Name         File Size    File Date
+   ------------------------------------------------------
+   SMS 1.2 SP3   Pcmsvc32.exe      259,520      10/08/97
+   SMS 1.2 SP3   Pcmwin32.exe      459,664      10/08/97
+   BORK          Pcmsvc32.exe      252,736      02/24/98
+   BORK          Pcmwin32.exe      455,072      02/24/98
+
+Additional query words: prodsms SP back office included shipped
+
+======================================================================
+Keywords          : kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

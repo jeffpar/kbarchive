@@ -1,0 +1,67 @@
+DOCUMENT:Q247699  09-NOV-2001  [homegame]
+TITLE   :Fighter Ace II: Splash Screen Is Grainy & Colors Are Washed Out
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbtool igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Fighter Ace II, the splash screen may appear grainy,
+and its colors may appear washed out.
+
+CAUSE
+=====
+
+This behavior can occur if the Microsoft Windows color palette setting is set to
+256 colors.
+
+RESOLUTION
+==========
+
+To work around this issue, increase the Windows color palette setting to High
+Color (16 bit). To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Color Palette or Colors box, click High Color (16 bit).
+
+5. Click OK, and then click OK again.
+
+6. Close Control Panel.
+
+Additional query words: 2.00 igz msgame fa discolored
+
+======================================================================
+Keywords          : kbdisplay kbtool igz kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

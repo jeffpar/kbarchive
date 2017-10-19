@@ -1,0 +1,77 @@
+DOCUMENT:Q160564  18-DEC-1999  [exchange]
+TITLE   :XFOR: MSMail Read-Receipts Missing Data Across Organizations
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a mail message from a Microsoft Mail 3.x client to a Microsoft
+Exchange user in a different organization with a read-receipt request, the
+result is a read-receipt returned that is missing the To and Subject fields.
+
+Also, mail sent from Microsoft Exchange to a Microsoft Mail user across a
+different organization with a read-receipt request will result in the following
+returned receipt:
+
+   Your message
+
+      To:   Unknown
+      Subject: Unknown
+      Sent: Unknown
+
+   was read on 11/8/96 8:36:00 AM.
+
+CAUSE
+=====
+
+The Microsoft Mail client generates and responds to Read Receipts using MAPI
+commands. These commands are encapsulated by Exchange in the MDBEF format when
+they arrive in Exchange. However, when going to another Exchange organization,
+they are converted to a native X.400 format, and the MDBEF properties are
+stripped out.
+
+The Microsoft Mail client cannot compensate for this X.400 limitation, because it
+does not know how to properly encode the message using standard X.400 flags for
+the handling of read receipts.
+
+RESOLUTION
+==========
+
+The only current workaround for this Microsoft Mail client limitation is to
+include all of the computers in the same organization running Microsoft Exchange
+Server so that the MDBEF can be preserved and the read receipt will maintain its
+proper format.
+
+Additional query words: rr msmail windows client x400 p2 ia5 org
+
+======================================================================
+Keywords          : kbusage exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

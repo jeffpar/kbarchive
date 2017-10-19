@@ -1,0 +1,80 @@
+DOCUMENT:Q67132  31-OCT-1999  [win95x]
+TITLE   :Windows 3.0: Western Digital Controllers - Quick Ref. Card
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following table is a list of Western Digital storage hard disk controllers.
+This information comes from the "Western Digital Storage Controllers Quick
+Reference Card."
+
+MORE INFORMATION
+================
+
+                   AT and XT Compatible Controllers
+
+Former Name         New Name             Features
+-------------------------------------------------------------------
+
+AT Controllers
+--------------
+
+WD1003-WAH F003R    WD1003V-MM1 F300R    MFM/2:1 Hard Only
+WD1003-WA2  F003R   WD1003V-MM2 F300R    MFM/2:1 Hard & Floppy
+WD1003-RAH          WD1003V-SR1 F301R    RLL/ 2:1 Hard Only/ BIOS
+WD1003-RA2          WD1003V-SR2 F301R    RLL/ 2:1 H&F/ BIOS
+WD1006-WAH F001     WD1006V-MM1 F300R    MFM/ 1:1 Hard Only
+WD1006-RAH F001     WD1006V-SR1 F301R    RLL/ 1:1 Hard Only/ BIOS
+WD1007A-WAH F301R   WD1007A-WAH F301R    ESDI/10 Mbit H Only/BIOS
+WD1007A-WA2 F301 R  WD1007A-WA2 F301R    ESDI/10 Mbit H&F/BIOS
+7000 FASST2 Kit     7000 FASST2 Kit      SCSI/ Software & Cable
+(NEW PRODUCT)       WD1006V-MM2 F300R    MFM/ 1:1 H&F
+(NEW PRODUCT)       WD1006V-SR2 F301R    RLL/ 1:1 H&F/ BIOS
+(NEW PRODUCT)       WD1007V-SE1 F301 R   ESDI/15 Mbit H Only/BIOS
+(NEW PRODUCT)       WD1007V-SE2 F301 R   ESDI/15 Mbit H&F/BIOS
+
+XT Controllers
+---------------
+
+WDXT-GEN F300R      WDXT-GEN2 F300R      MFM Controller
+WD1002A-WX1 F300R   WD1004A-WX1 F300R    MFM/ Power Connector
+WD1002A-27X F300R   WD1004A-27X F300R    RLL Controller
+WD1002A-27X F301R   WD1004-27X F301R     RLL/ Power Connector
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

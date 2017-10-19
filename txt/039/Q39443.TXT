@@ -1,0 +1,74 @@
+DOCUMENT:Q39443  04-MAY-2001  [masm]
+TITLE   :FIX: Parentheses Necessary for Operator Precedence
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using Microsoft Macro Assembler (MASM) version 5.1, You may be able to correct
+"Illegal size for operand" errors by careful use of parentheses.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 5.1. This problem
+was corrected in MASM version 5.1a.
+
+MORE INFORMATION
+================
+
+The following code demonstrates warnings, errors, and their solution:
+
+   dosseg
+   .model small,c
+   .data
+
+   .code
+   myproc PROC buffer:FAR PTR BYTE
+
+              mov     bx, WORD PTR buffer[0]
+              mov     ds, WORD PTR buffer[2]
+
+   ; MASM gives an operand-size error. This is a precedence problem that
+   ; you can correct with parentheses:
+
+              mov     bx, WORD PTR (buffer[0])
+              mov     ds, WORD PTR (buffer[2])
+
+   myproc ENDP
+
+   end
+
+Additional query words: 5.10 buglist5.10 fixlist5.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510
+Version           : :5.1
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

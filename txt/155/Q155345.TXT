@@ -1,0 +1,63 @@
+DOCUMENT:Q155345  06-AUG-2002  [winnt]
+TITLE   :How To Re-Create Administrative Shares in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Server Manager or the "NET USE /D" command to stop sharing a
+shared, administrative folder (such as ADMIN$ or C$), users are unable to access
+files or folders on the shared location.
+
+RESOLUTION
+==========
+
+You can re-establish the share by using one of the following procedures:
+
+ - Type the following commands from a command prompt:
+
+   net share sharename$
+
+ - If you run Microsoft Windows NT 4.0, you can also use System Policy Editor
+   (Poledit.exe) to specify the "Create hidden drive shares" option in the
+   Computer\Windows NT Network\Sharing\Create hidden drive shares folder.
+
+ - Restart the computer.
+
+These shares behave as standard administrative shares. For example, you cannot
+configure permissions on them.
+
+Additional query words: recreate
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

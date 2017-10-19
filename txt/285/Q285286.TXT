@@ -1,0 +1,67 @@
+DOCUMENT:Q285286  13-JUN-2001  [iis]
+TITLE   :Cannot Access IIS Metabase Through IIS Admin Objects
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to access the Internet Information Services (IIS) metabase through
+the IIS Admin objects programatically in an ASP page, IIS returns the following
+error message to the client browser:
+
+   Microsoft VBScript runtime error '800a0046'
+   Permission denied: 'GetObject'
+   /filename.asp, line xxx
+
+CAUSE
+=====
+
+For security reasons, access to the metabase (and subsequently the IIS Admin
+Objects) is restricted to members of the local Administrators group.
+
+WORKAROUND
+==========
+
+Use an authentication technique such as basic, digest, Windows, or certificate
+mapping, and make sure that the account in question has access to the metabase
+(that is, the account is a member of the local Administrators group).
+
+Under no circumstances should you add any user account to the local
+Administrator's group in an attempt to work around this issue. Doing so leads to
+major security vulnerabilities.
+
+Additional query words: iis 5 metabase admin administer 4
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

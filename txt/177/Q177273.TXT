@@ -1,0 +1,98 @@
+DOCUMENT:Q177273  28-OCT-2000  [msnetwork]
+TITLE   :Err Msg: The Server Name You Specified Cannot Be Found...
+PRODUCT :The Microsoft Network
+PROD/VER::2.5,97
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtlc kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+ - Microsoft Outlook 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to send e-mail on MSN, The Microsoft Network, using Microsoft
+Outlook 97 as your e-mail client, you may receive the following error message:
+
+   The SMTP server name you specified cannot be found.
+   Please check the name and try again.
+
+   SMTP.email.msn.com.
+
+Similarly, when you attempt to receive e-mail on MSN using Outlook 97 as your
+e-mail client, you may receive the following error message:
+
+   The POP3 server name you specified cannot be found.
+   Please check the name and try again.
+
+   POP3.email.msn.com.
+
+When you click OK, e-mail is sent or received normally.
+
+CAUSE
+=====
+
+This behavior can occur if the MSN e-mail server is very busy, or if you have
+established a slow modem connection to MSN.
+
+RESOLUTION
+==========
+
+To resolve this issue, increase the server timeout setting to give the MSN
+e-mail server additional time to respond. To do so, use the following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Mail or Mail And Fax.
+
+3. In the "The following information services are set up in this profile" box,
+   click Internet E-mail, and then click Properties.
+
+4. On the Advanced tab, move the Server Timeouts slider to the right to increase
+   the server timeout setting.
+
+   Note: The maximum server timeout setting is 5 minutes.
+
+5. Click OK until you return to Control Panel.
+
+6. Close Control Panel.
+
+Note: If proxy is being used, be sure to verify that the user has WinSock Proxy
+Client installed and enabled.
+
+MORE INFORMATION
+================
+
+The server timeout setting determines how long Outlook 97 attempts to connect to
+the MSN e-mail server before stopping or "timing out." The default server
+timeout setting for Outlook 97 is 30 seconds. You may need to increase this
+setting if your Internet connection is slow.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtlc kbmsn 
+Technology        : kbOutlookSearch kbMSNSearch kbOutlook97Search kbZNotKeyword3 kbMSN250
+Version           : :2.5,97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

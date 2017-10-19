@@ -1,0 +1,206 @@
+DOCUMENT:Q190022  15-APR-1999  [exchange]
+TITLE   :XCON: Comparison of X.400 and Site Connectors
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is designed to help Microsoft Exchange Server administrators
+compare the features, capabilities, and limitations of Site Connector and X.400
+Connectors. This information may help administrators decide which connector will
+work best within their organization. This article is not an in-depth technical
+discussion of connector configuration, but rather a discussion of the general
+capabilities and limitations of the site and X.400 Connector. Each customer
+environment is unique and proper testing and analysis of results should be
+performed to determine the best connector solution.
+
+MORE INFORMATION
+================
+
+Site Connector
+--------------
+
+The Site Connector is relatively easy to use, especially when the Exchange Server
+computers involved are in the same Windows NT domain, or both servers trust the
+same master domain. Unfortunately, there are also fewer configuration options
+available for the Site Connector.
+
+The Site Connector cannot be scheduled to send messages at selected time. A Site
+Connector is always active. Nor can message size limitations be configured on
+the Site Connector. If message size limitations are desired over the Site
+Connector, you must restrict message size at the server's message transfer agent
+(MTA) level (or at the store level), which will also limit message size over all
+other connectors, and on message transfer between servers within the site using
+remote procedure call (RPC).
+
+The difference in message delivery times between a Site Connector and an X.400
+Connector (set to always) is negligible. The time for delivery depends on
+bandwidth, physical distance traveled, number of routers traversed, and so on,
+but all things being equal the difference in time is usually a matter of
+milliseconds.
+
+As a general guideline, a Site Connector needs at least 56 Kbps of network
+bandwidth, available for Exchange Server communications only. It must be heavily
+stressed that the 56-Kbps transfer rate is a bare minimum for light mail flow,
+with little or no directory replication traffic.
+
+
+More would be better, especially in a busy production environment. If there is a
+56-Kbps dedicated line, which is also being used for file transfer, voice
+communications, or any other network activity, a Site Connector may not work
+well on a consistent basis. If thousands of messages/hour (including user mail,
+public folder, directory replication, and link monitor messages) are going
+across this link, 56 Kbps may not be enough to consistently establish and
+maintain a connection between servers.
+
+Exchange Server MTAs communicating by Site Connectors use RPCs. RPCs run on top
+of network protocols such as TCP/IP (recommended).
+
+For additional information regarding RPC bandwidth requirements, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q177446 : How to Test Microsoft Remote Procedure Call Performance
+
+X.400 Connector
+---------------
+
+The Microsoft X.400 Connector requires one of three different MTA transport
+stacks (which must be installed and configured prior to installing the
+connector). The three choices are:
+
+ - TCP/IP. Installed by default with Microsoft Windows NT. This is the most
+   common transport stack used by the X.400 Connector.
+
+ - TP4. Defined by the ITU (International Telecommunications Union, formerly
+   known as the CCITT, or Commite Consultatif International de Telegraphie et
+   Telephonie), TP4 provides connectionless network connectivity. It is often
+   used on Ethernet networks.
+
+   For additional information on installing the TP4 transport stack, please see
+   the following articles in the Microsoft Knowledge Base:
+
+   Q148288 : XADM: Microsoft Exchange TP4 Transport Stack
+
+   Q152961 : How to Install TP4 Components on Windows NT 4.0
+
+ - TP0. Another ITU standard for network communications. TP0 requires X.25
+   hardware and software provided by an X.25 public carrier. Use of this
+   transport stack is more common in Europe than in the United States. Eicon,
+   SAT, and Cirel hardware/software is supported for use with Microsoft Exchange
+   Server.
+
+   For additional information, please see the following articles in the Microsoft
+   Knowledge Base:
+
+   Q149062 : XCON: Eicon Tech. X.25 Diagnostic Commands for WinNT &
+   Exchange
+
+   Q169668 : XCON: X.25 Support for SAT Cards
+
+   Q169667 : XCON: X.25 Support for Cirel Cards
+
+There are several advantages to using the X.400 Connector instead of the Site
+Connector.
+
+No trust relationships are required to connect two Microsoft MTAs with an X.400
+Connector. Microsoft fully complies with the ITU's X.400 communications
+standards, which do not require Microsoft NT LAN Manager (NTLM) authentication.
+Additional security is not usually necessary, but can be added to the connection
+by adding a remote MTA password and/or Outgoing/Incoming Open System
+Interconnect (OSI) address information on the Transport Stack and the X.400
+Connector property pages.
+
+Message size limitations can be enforced on individual X.400 Connectors, which
+can be useful in low bandwidth environments.
+
+Message delivery is also flexible when using the X.400 Connector. On the Schedule
+tab of the X.400 Connector property page, you can set one of four different
+options:
+
+ - Remotely Initiated. No queued mail will be sent until a remote MTA connects
+   to this MTA. Both MTAs must have the two-way alternate option selected on the
+   Advanced tab of the X.400 Connector for this to work, and only one of these
+   connectors can be set to remotely initiated, or mail will not flow.
+
+ - Never. Mail will never flow over this connection. Can be useful for testing
+   other routes.
+
+ - Always. The connector is scheduled to be active for consecutive 15- minute
+   time segments. In essence, it is continuously active.
+
+ - Selected Times. This option schedules the connector to be active in one- hour
+   or 15-minute time segments (see the Detail View option on the right side of
+   the page).
+
+Generally, with the same traffic load, an X.400 Connector can work successfully
+on less bandwidth than a Site Connector, because X.400 connectivity does not use
+RPC. An X.400 Connector can use 56-Kbps links or even lower, depending on
+traffic.
+
+Summary
+-------
+
+A Site Connector requires more bandwidth than an X.400 Connector, and can only
+connect to other Exchange Server sites. Site Connectors also rely on Microsoft
+Windows NTLM authentication to work successfully. If these three conditions are
+met (bandwidth, Exchange Server, and NTLM), then a Site Connector will work
+fine.
+
+There are many more configuration options available with the X.400 connector,
+including transport stacks, message size limitations, scheduled connection
+times, and connections to foreign MTAs. If the default values are used when
+setting up an X.400 Connector, the configuration is not difficult.
+
+A Microsoft Exchange X.400 Connector can also be used to connect and transfer
+mail between non-Microsoft MTAs. While some information included in this
+document might be useful if connecting to a foreign MTA, an in- depth discussion
+of such connections is largely beyond the scope of this document.
+
+For configuration/installation specifics of these connectors, see the following
+Knowledge Base articles, or query the knowledge base for "site connector" or
+"X.400 Connector".
+
+   Q165119 : XCON:Site Connector Configuration Basics
+
+   Q165324 : XCON:Basic Site Connector Troubleshooting Checklist
+
+   Q154624 : XCON:Configuring the Site Connector Between Untrusted Domains
+
+   Q165111 : XCON:Configuring X.400 Connector Between Two Exchange Servers
+
+   Q169159 : XCON:X.400 Connector Configuration Checklist
+
+Additional query words: X.400 site connector Cirel SAT Eicon Remote Procedure Call Untrusted foreign TP4 TP0 X.25 TCP/IP
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

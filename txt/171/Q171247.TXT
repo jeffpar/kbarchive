@@ -1,0 +1,72 @@
+DOCUMENT:Q171247  08-NOV-2001  [odbc]
+TITLE   :FIX: Setup Quits When Microsoft ODBC Driver for Oracle Is Used
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for Oracle (Build 2.06325), version 1.0 
+ - Microsoft Commerce Server 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Commerce Server Setup uses the Microsoft ODBC driver for Oracle version
+2.00.006325 to configure a new datasource, the Setup program quits without any
+error messages.
+
+CAUSE
+=====
+
+The Commerce Server Setup program uses invalid keywords for the Oracle driver in
+the connection string. The driver does not permit any keywords that it does not
+recognize, and closes the Setup program. This is a problem in the ODBC driver
+that will be addressed in a future version.
+
+WORKAROUND
+==========
+
+Configure a new system datasource using the ODBC Administrator in Control Panel
+and then select this datasource during the Commerce Server Setup. Note that the
+problem only occurs if you try to configure a new datasource from within the
+Commerce Server Setup program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of the article. This bug has been corrected in Microsoft's Oracle ODBC
+driver, version 2.73.7269 and higher. You can obtain this driver or new drivers
+in the Microsoft Data Access Components at the following Web address:
+
+   http://www.microsoft.com/data/
+
+Additional query words: Site Enterprise Edition DSN abort aborts terminate terminates exit exits kbOracle kbODBC kbDriver kbDatabase
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbAudDeveloper kbZNotKeyword kbODBCSearch kbCommServSearch kbCommServ200 kbODBCOracle206325 kbODBCOracle100Search
+Version           : :1.0,2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

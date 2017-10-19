@@ -1,0 +1,54 @@
+DOCUMENT:Q313614  13-MAY-2002  [sms]
+TITLE   :SMS: Administrator Console Queries Enumerate Slowly
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbui kbsms200 kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select the Query node in the SMS Administrator console, the console may
+appear to stop responding (hang) before all of the available queries are
+displayed.
+
+CAUSE
+=====
+
+This behavior may occur after you apply Systems Management Server (SMS) 2.0
+Service Pack 4 (SP4). Changes in SMS 2.0 SP4 were made to prevent duplicate
+queries from appearing in the SMS Administrator console as described in the
+following Microsoft Knowledge Base article:
+
+   Q302508 Duplicate Queries Appear in the Administrator Console
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool kbui kbsms200 kbsmsAdmin 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

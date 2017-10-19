@@ -1,0 +1,59 @@
+DOCUMENT:Q182916  12-JUN-2001  [sna]
+TITLE   :SNA Server Using Twinax to IBM System 36 Is Not Supported
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SNA Server does not support Twinax connections to an IBM System 36
+(S/36) or Advanced System 36 (AS/36).
+
+MORE INFORMATION
+================
+
+The System 36 and Advanced System 36 only support LU 7 communications over a
+Twinax connection. Microsoft SNA Server does not support the LU 7 protocol. SNA
+Server supports LU6.2 when communicating with a S/36, AS/36, and AS/400.
+
+SNA Server can connect to an S/36 using Token Ring and synchronous data link
+control (SDLC), but cannot connect using Ethernet because it is not available on
+an S/36. Ethernet connectivity is supported with an Advanced System 36, which
+also supports Token Ring, SDLC, and Twinax.
+
+The IBM product(s) discussed here are manufactured by International Business
+Machines Corp. (IBM), a vendor independent of Microsoft; we make no warranty,
+implied or otherwise, regarding this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q281817  27-JUL-2001  [automap]
+TITLE   :Expedia Streets and Trips 2000: How to Submit Map Feedback
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to submit feedback to Microsoft about the map data in
+Microsoft Expedia Streets and Trips 2000.
+
+MORE INFORMATION
+================
+
+If you find any errors in the map or map data that is included with Expedia
+Streets and Trips 2000, use the following steps to submit feedback to
+Microsoft:
+
+1. On the File menu, click Help.
+
+2. Click "Feedback on the Map".
+
+3. Follow the instructions in the Feedback Wizard to submit the data to
+   Microsoft.
+
+If you have a suggestion for a feature that you would like to see in future
+editions of Streets and Trips, or if you have a comment about the current
+version of Streets and Trips, please send them to
+
+   Microsoft Streets & Trips Program Manager
+   Microsoft Corporation
+   One Microsoft Way
+   Redmond, WA 98052-6399
+
+or visit the following Microsoft Web site:
+
+   http://www.microsoft.com/mswish
+
+Additional query words: st2000
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

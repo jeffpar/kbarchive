@@ -1,0 +1,66 @@
+DOCUMENT:Q272671  22-OCT-2000  [homegame]
+TITLE   :Golf 2001: Unable to Adjust the Master Volume in the Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbsound kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 2001 Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Golf 2001 Edition, you may be unable to adjust the
+master volume in the game.
+
+CAUSE
+=====
+
+This behavior can occur if Golf 2001 Edition is installed on a Microsoft Windows
+NT 4.0-based computer.
+
+RESOLUTION
+==========
+
+To adjust the volume level in Golf 2001 Edition, you must use the volume level
+sliders in the Multimedia tool in Control Panel.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Golf 2001 Edition.
+
+MORE INFORMATION
+================
+
+This behavior is caused by a limitation of the DirectSound component of
+Microsoft DirectX that is included with Windows NT 4.0.
+
+Additional query words: msgame msgolf golf2001 sounds loud quiet change set winnt
+
+======================================================================
+Keywords          : kbenv kbsound kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

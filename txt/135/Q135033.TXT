@@ -1,0 +1,66 @@
+DOCUMENT:Q135033  04-NOV-1999  [pcmail]
+TITLE   :PC NTMMTA: Service Account Cannot Be a Group
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Microsoft Windows NT Multitasking MTA (NT MMTA), you cannot
+assign the Service Account to a group. The Service Account option must be a
+user. This user can belong to a group that has log on as service privileges to
+centralize administration, but it must be a user.
+
+If a group is entered in the Service Account option from the Edit Service dialog
+box, then you will get the following error when you start the service:
+
+   Could not start the MS Mail External - (instance)
+   service on \\computername.
+
+   Error 1069: The service did not start due to logon failure.
+
+MORE INFORMATION
+================
+
+When the Services start, they log on. Although most services must log on to the
+system account, some services can be configured to log on to special user
+accounts. (Usually, of the default Services provided with Windows NT, only the
+Directory Replicator and Schedule Services will be configured in this manner.)
+
+A user account used to log on a Service should be created in the User Manager
+specifically for that purpose. Make certain that the user account has the
+Password Never Expires option selected, and it has membership in the appropriate
+groups. The particular group memberships assigned will depend on the operations
+that must be accomplished by the service.
+
+Additional query words: 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

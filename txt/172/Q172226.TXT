@@ -1,0 +1,78 @@
+DOCUMENT:Q172226  27-JUL-2001  [sms]
+TITLE   :SMS: Applying SMS 1.2 SP2 May Overwrite Some SQL Server Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2 SP2
+OPER/SYS:
+KEYWORDS:kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Applying Systems Management Server 1.2 Service Pack 2 overwrites the SQL Server
+files listed below, even though the existing files are of a later version. If
+SQL Server 6.5 Service Pack 2 or later has been applied, followed by Systems
+Management Server 1.2 Service Pack 2, it may be necessary to examine these files
+and make certain the latest versions are still in place.
+
+File name     Systems Management     SQL Server     SQL Server
+              Server 1.2 SP2 date    6.5 SP2 date   6.5 SP3 date
+
+Ntwdblib.dll     6/10/96               12/17/96       6/16/97
+Dbnmpntw.dll     6/10/96               12/17/96       6/16/97
+Msvcrt40.dll     9/29/95               12/17/96       6/16/97
+
+CAUSE
+=====
+
+The Systems Management Server 1.2 Service Pack 2 Setup program does not perform
+any file version checking on these files before replacing them.
+
+WORKAROUND
+==========
+
+To work around this problem, do either of the following:
+
+ - Reapply the appropriate SQL Server service pack.
+
+-or-
+
+ - Manually copy these files from the SQL Server service pack to their
+   appropriate locations.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2 Service Pack 2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms sp higher
+
+======================================================================
+Keywords          : kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS120SP2
+Version           : winnt:1.2 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

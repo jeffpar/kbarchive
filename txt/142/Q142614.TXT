@@ -1,0 +1,63 @@
+DOCUMENT:Q142614  01-MAY-1999  [iis]
+TITLE   :Internet Information Server SMTP Gateway Troubleshooting
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Information Server SMTP connectivity can be tested with the
+TELNET utility.
+
+MORE INFORMATION
+================
+
+For additional information on how to test the TCP layer of the connection,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q115492 : SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway
+
+Use the TELNET command with a "25" after the host ID or IP address to specify the
+mail socket. Run the TELNET command from the gateway PC to the host, and from
+the host to the gateway PC. For example:
+
+   TELNET tcpiphost.company.com 25
+   TELNET msmailgwy.company.com 25
+
+NOTE: You cannot run the second command unless the gateway is running.
+
+If these commands are successful, you will receive the response "220...." from
+the destination host. Successful completion means the TCP layer is working. Type
+QUIT to end the test.
+
+
+Additional query words: prodiis1
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

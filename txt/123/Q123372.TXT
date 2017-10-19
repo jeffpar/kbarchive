@@ -1,0 +1,78 @@
+DOCUMENT:Q123372  05-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Notice 19 Error Accessing Post Office...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using version 3.2 of Microsoft Mail for PC Networks when attempting to
+update or modify external postoffice definitions, you may receive the following
+error message:
+
+   Notice 19 Error Accessing Post Office Definition
+
+CAUSE
+=====
+
+This error will occur when the access permissions to the XTN subdirectory of the
+postoffice or the *.XTN file itself are too restrictive.
+
+RESOLUTION
+==========
+
+To resolve this problem, make sure that the rights are set correctly. For more
+information, see page 18 of the version 3.2 "Administrator's Guide."
+
+MORE INFORMATION
+================
+
+The *.XTN files hold the routing, naming, and sign-on information for external
+services and postoffices. If the ADMIN.EXE program cannot write to this file,
+the changes and updates cannot be made. As a result, the ADMIN.EXE program will
+generate the Notice 19 error.
+
+If the XTN file is missing, the error received will be either
+
+   Notice 10 No external post office names have been defined yet
+
+   -or-
+
+   Notice 92 There are no post offices defined at this network which are
+   connected Direct via modem.
+
+If the XTN file is held open by another process, the error will be:
+
+   Notice -1 Device not Available.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

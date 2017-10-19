@@ -1,0 +1,96 @@
+DOCUMENT:Q177975  05-APR-2000  [sna]
+TITLE   :BUG: VBClientExplicitSecurity:ActiveX Component Can't Create Obj
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the VBClientExplicitSecurity tutorial sample, you receive the
+following error message:
+
+   Object Creation Failed: ActiveX component can't create object.
+
+CAUSE
+=====
+
+The statement
+
+      Set objSecurityContext = CreateObject("Cedar.HostSecurityContext")
+
+specifies the wrong PROGID. The correct PROGID is
+
+      COMTI.HostSecurityContext
+
+WORKAROUND
+==========
+
+To work around the problem, perform the following steps:
+
+1. In the Visual Basic (VB) development environment, open the following
+   project:
+
+      ~\sna\Comti\Tutorials\CedarBank\VBClientExplicitSecurity
+      \CedarBank.vbp
+
+   NOTE: The path and project name should be typed as one line.
+
+2. Select the Form, frmMain (Testbank.frm)
+
+3. On the View menu, click Code.
+
+4. Locate both occurrences of the line
+
+         Set objSecurityContext = CreateObject("Cedar.HostSecurityContext")
+
+   and change each statement to
+
+         Set objSecurityContext = CreateObject("COMTI.HostSecurityContext")
+
+5. On the File menu, click Make, and then select CedarBank.exe from the menu (or
+   test by running in VB debug mode).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 4.0. A supported fix
+is now available for SNA Server 4.0, but has not been fully regression-tested
+and should be applied only to systems experiencing this specific problem. Unless
+you are severely impacted by this specific problem, Microsoft recommends that
+you wait for the next Service Pack that contains this fix. Contact Microsoft
+Product Support Services for more information.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbAudDeveloper kbCOMTISearch kbCOMTI100
+Version           : WINDOWS:1.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

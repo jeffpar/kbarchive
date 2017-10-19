@@ -1,0 +1,59 @@
+DOCUMENT:Q134583  17-DEC-2000  [win95x]
+TITLE   :Xircom PE3 Parallel Adapter Does Not Work on Toshiba Laptops
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The protected-mode driver for the Xircom PE3 Pocket Ethernet Parallel Port
+Adapter may not function correctly on Toshiba laptop computers that support
+bidirectional parallel ports.
+
+CAUSE
+=====
+
+The protected-mode driver from Xircom does not support the bidirectional
+parallel ports on these computers.
+
+RESOLUTION
+==========
+
+To correct the problem, use any one of the following methods:
+
+ - Contact Xircom to inquire about obtaining an updated driver.
+
+ - Use the real-mode driver for the adapter. For information about installing
+   this driver, please consult the adapter's documentation or manufacturer.
+
+ - If you installed Windows 95 from a CD-ROM, install the Pe3ndis.vxd driver
+   from the Drivers\Network\Xircom folder.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,78 @@
+DOCUMENT:Q220945  11-MAR-1999  [sna]
+TITLE   :Undocumented COMTI Methods Are Exposed
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0SP1,4.0SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a COM Transaction Integrator (COMTI) component has been successfully
+registered with Microsoft Transaction Server (MTS), you can see two additional
+interface methods when you view the COMTI object methods within the MTS
+adminstration tool. The two methods are ServerPid() and LastSM(). These methods
+are not intended to be used by developers and are unsupported.
+
+MORE INFORMATION
+================
+
+The Interface Definition Language (IDL) infomation below depicts the built-in
+properties that are inherited for all COMTI objects.
+
+   / 
+   [id(0x7fffffff), propget, hidden]
+   long ServerPID();
+
+   [id(0x7ffffffe), propget, hidden]
+   long LastSM();
+
+   [id(0x7ffffffd), propget, helpstring("Current status of the remote environment")]
+   BSTR REStatus();
+
+   [id(0x7ffffffc), propget, helpstring("Build a new Recordset object")]
+   IDispatch *NewRecordset(BSTR name);
+
+   //[id(0x7ffffffb), propget, helpstring("Explicit selection of the remote RE")]
+   //BSTR CurrentRE();
+
+   [id(0x7ffffffb), propput]
+   void SelectionHint(BSTR rhs);
+
+   //[id(0x7ffffffa), propget, helpstring("Collection of compatible REs")]
+   //IUnknown *RECollection();
+
+The two undocumented functions have an associated "hidden" attribute and should
+not be displayed in most object browsers. However, certain object browsers may
+disregard the attribute and display the properties anyway.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0,4.0SP1,4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

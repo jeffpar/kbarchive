@@ -1,0 +1,68 @@
+DOCUMENT:Q139645  19-FEB-2002  [exchange]
+TITLE   :XCLN: Err Msg: Dial-Up Networking Connection not Found
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Internet Mail from a Microsoft Exchange, version 4.0, Windows 95
+client the following error message may be displayed:
+
+   The current Dial-Up Networking connection cannot be found.
+   Select or add a different connection entry.
+
+CAUSE
+=====
+
+This error message occurs when the Dial-Up Networking connection that you have
+previously selected to use with Internet Mail has been deleted.
+
+RESOLUTION
+==========
+
+Follow the directions given in the error message to select a different
+connection or create a new one.
+
+MORE INFORMATION
+================
+
+Internet Mail can connect to the mail server over a dial-up connection or a LAN
+connection. If you are using a modem to connect to the mail server, you must
+have a dial-up connection defined. To do this, click the Start button, point to
+Programs, then point to Accessories, then point to Dial-Up Networking, and then
+click Dial-Up Networking.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

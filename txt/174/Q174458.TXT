@@ -1,0 +1,75 @@
+DOCUMENT:Q174458  31-JUL-2001  [sms]
+TITLE   :SMS: Failure Playing AVIs During a Win95 Remote Control Session
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an audio-video interleaved (AVI) file through Remote Control to a
+computer running Windows 95, the computer running the Systems Management Server
+Administrator program may be abruptly disconnected. This problem only appears to
+occur when both of the following conditions are true:
+
+ - The default protocol is set to TCP/IP in Control Panel Network.
+
+-and-
+
+ - The Sms.ini file parameter for Default Protocol is set to NetBIOS.
+
+This configuration forces a NetBT type of protocol to be used between the Windows
+95 client computer and the computer running the Systems Management Server
+Administrator program.
+
+CAUSE
+=====
+
+The client computer running Windows 95 is sending a session RESET command that
+closes the Remote Control session.
+
+WORKAROUND
+==========
+
+To work around this problem, Change the Default Protocol parameter in the
+Sms.ini file from NetBIOS to IP.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms helpdesk
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

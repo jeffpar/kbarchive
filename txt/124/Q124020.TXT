@@ -1,0 +1,53 @@
+DOCUMENT:Q124020  08-NOV-2001  [homemm]
+TITLE   :Composers: Backdrop Bitmap Looks Ugly After Closing Dialog Box
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,1.1; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Stravinsky, The Rite of Spring, version 1.0 
+ - Microsoft Multimedia Beethoven: The Ninth Symphony, versions 1.0, 1.1 
+ - Microsoft Multimedia Mozart, The Dissonant Quartet, version 1.0 
+ - Microsoft Multimedia Schubert for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a 256-color bitmap displayed as your backdrop in Windows, you may
+find that areas of it become blacked out or change color after you have opened
+and closed a secondary window in any of the composer titles listed at the top of
+this article. For example, after you close Help, the Glossary, the Game Entry
+form, or the Find dialog box in Schubert, you may find that the area of the
+bitmap that was underneath the dialog box looks strange or is black.
+
+Microsoft has confirmed this to be a problem in the composer titles listed at the
+top of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: multi media multimedia multi-media mmtitles video monitor screen corruption graphic image desktop bmp
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbZNotKeyword kbMMSchubert kbMMStravinskyRS kbMMMozartDQ kbMMBeethoven9th100 kbMMBeethoven9th110
+Version           : :1.0,1.1; WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

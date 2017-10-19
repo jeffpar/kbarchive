@@ -1,0 +1,42 @@
+DOCUMENT:Q66665  30-JUL-2001  [homegame]
+TITLE   :ASD: Cannot View 3-D Window 2 in Boeing Field Mode
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+3-D window 2 is not visible when activated with the ] (right bracket) key in the
+Boeing Field Runway 13R mode. 3-D window 2 has a lower priority in this mode,
+causing it to display behind 3-D window 1.
+
+To make 3-D window 2 topmost, press the ] key followed by the ' (apostrophe)
+key.
+
+For more information on Flight Simulator windows, refer to the "Flight Simulator
+4.00 Quick Reference Card" or pages 23-26 of the "Microsoft Flight Simulator
+Information Manual and Flight Handbook."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

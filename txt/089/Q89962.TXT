@@ -1,0 +1,59 @@
+DOCUMENT:Q89962  30-JUL-2001  [win3x]
+TITLE   :Toshiba T3300SL Date and Time Do Not Change on Resume
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+SYMPTOMS
+========
+
+When you use the Auto Resume feature of the Toshiba 386SL laptop with Microsoft
+Windows 3.1, the time and date may not be updated correctly when the machine
+resumes operation.
+
+RESOLUTION
+==========
+
+WRESUME.386, a driver available from Toshiba, allows the system clock to update
+correctly.
+
+You can obtain the driver from CompuServe or you can call Toshiba technical
+support (ask forthe Diagnostic Supplemental Disk.)
+
+MORE INFORMATION
+================
+
+To install WRESUME.386:
+
+1. Copy WRESUME.386 to the Windows SYSTEM subdirectory.
+
+2. Add the following entry to the [386Enh] section of the SYSTEM.INI file:
+
+   device=WRESUME.386
+
+The product included here is manufactured by Toshiba, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 lap top lap-top
+
+======================================================================
+Keywords          : win31 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

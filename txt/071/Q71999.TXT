@@ -1,0 +1,65 @@
+DOCUMENT:Q71999  14-NOV-2000  [word97]
+TITLE   :WD97: How to Disable the Fast Saves Option
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage kbdta word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Many third-party programs that are used to check Microsoft Word for Windows
+files (such as Grammatik) do not work correctly if the file is saved with a fast
+save, rather than a normal save. A fast save appends changes to a document at
+the end of a file, rather than rearranging the entire file to insert all changes
+every time you save the file.
+
+MORE INFORMATION
+================
+
+To turn off the Fast Saves feature in Word 97 for Windows, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. In the Options dialog box, click the Save tab.
+
+3. Click to clear the Allow fast saves check box.
+
+For additional information about the Fast Saves option, please see the following
+article in the Microsoft Knowledge Base:
+
+   
+
+   Q170406 WD97: Allow Fast Saves Option Not Selected By Default
+
+Additional query words: size change large
+
+======================================================================
+Keywords          : kbusage kbdta word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

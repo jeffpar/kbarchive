@@ -1,0 +1,71 @@
+DOCUMENT:Q168929  29-APR-1999  [exchange]
+TITLE   :XCLN: Err Msg: You Need More Memory or System Resources
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbtshoot kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Mail icon in Control Panel you may receive the following
+error message:
+
+   You need more memory or system resources. Close some windows and try
+   again.
+
+CAUSE
+=====
+
+The Mapi.dll file, located in the Windows\System subdirectory by default, is
+either missing, corrupted, or has been replaced by another version.
+
+
+RESOLUTION
+==========
+
+1. Reinstall Microsoft Exchange Client.
+
+2. Expand Mapi.dll from the Exchange Client cabinet (cab) files.
+
+3. Copy Mapi.dll from another Windows computer that is currently working. Both
+   computers must be running the same version and service pack of Exchange
+   Client. See table below and compare the size of the Mapi.dll file to find out
+   this information.
+
+   Mapi.dll File Size       Version
+                 ====        ======
+               1,000,288    5.0
+                989,280     4.0 SP4
+                988,544     4.0 SP3
+                988,480     4.0 SP2
+                890,464     4.0 RTM
+
+======================================================================
+Keywords          : kbtshoot kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

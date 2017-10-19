@@ -1,0 +1,67 @@
+DOCUMENT:Q156206  25-JUL-2001  [sms]
+TITLE   :SMS: OS/2 Inventory Agent Does Not Detect Pentium Processor
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbInventory smsinv kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the Systems Management Server Inventory Agent is run on a computer running
+OS/2 that has a Pentium CPU, the inventory will report that it is a 80486 CPU.
+
+CAUSE
+=====
+
+The OS/2 Inventory Agent is not able to detect Pentium processors at this time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.1 and 1.2. A supported fix is now available for version 1.1, but has
+not been fully regression-tested and should be applied only to systems
+experiencing this specific problem. Unless you are severely impacted by this
+specific problem, Microsoft recommends that you wait for the next Service Pack
+that contains this fix. Contact Microsoft Technical Support for more
+information.
+
+
+This problem has been corrected in the latest U.S. Service Pack for Systems
+Management Server version 1.2. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   " S E R V P A C K " (without the quotation marks)
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbInventory smsinv kbHardware 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

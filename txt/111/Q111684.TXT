@@ -1,0 +1,73 @@
+DOCUMENT:Q111684  29-OCT-1999  [win3x]
+TITLE   :After WFWG Install, Can't Access NetWare Servers Using IPXODI
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install Microsoft Windows for Workgroups version 3.11, you cannot
+access your Novell NetWare servers using IPXODI.
+
+CAUSE
+=====
+
+If you are not using a NET.CFG file with the Novell IPXODI stack, Windows for
+Workgroups Setup creates one and places it in the Windows directory. In order
+for the contents of the NET.CFG file to be read, it must be located in the same
+subdirectory as LSL.COM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.11. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To correct this problem, move the NET.CFG file to the same directory in which
+the Novell LSL.COM file resides and then update your PROTOCOL.INI file. To
+update PROTOCOL.INI:
+
+ - Use a text editor to change the PATH= line in the [net.cfg] section of your
+   PROTOCOL.INI file, which is located in your Windows directory, to specify the
+   new location of NET.CFG. For example, if NET.CFG and LSL.COM are located in
+   the C:\NOVELL directory, the [net.cfg] section should read as follows:
+
+         [net.cfg]
+         PATH=C:\NOVELL\NET.CFG
+
+Additional query words: 3.11 wrong incorrect
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,103 @@
+DOCUMENT:Q193585  01-MAY-2001  [ssafe]
+TITLE   :BUG: Recursive History Fails if Used With -f- Switch
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:_IK kbSSafe500bug kbSSafe600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the SourceSafe History command is used on a project with the -r (recursive)
+and -f- (Do Not Display Individual File Updates) switches, the -r switch does
+not work correctly.
+
+CAUSE
+=====
+
+This problem only occurs when using the -r and -f- switches together.
+
+RESOLUTION
+==========
+
+Use the SourceSafe Explorer to generate a recursive project history that does
+not show file updates.
+
+To accomplish this, clear the "Include file checkins" option in the Project
+History Options dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+From the SourceSafe Explorer:
+
+1. Create a project named TestProj under $/, then add a subproject named SubProj
+   under TestProj.
+
+2. Add some files to the TestProj and SubProj projects. Next, check out, modify,
+   and check in the files to create some history for the files.
+
+From the Command Line:
+
+1. Set the current database with the following command:
+
+        set ssdir = <path to SourceSafe directory>
+
+2. Get the history for the project, $/TestProj in addition to the subprojects
+   for $/TestProj with the following command:
+
+         ss history -r -f- $/TestProj
+
+Notice that only the files contained in $/TestProj are listed instead of the
+files in both the $/TestProj and $/TestProj/SubProj directories.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q128723 HOWTO: Reference a Time on the Command Line
+
+Visual SourceSafe Books Online; search on: "History"
+
+Additional query words: kbDSupport sub
+
+======================================================================
+Keywords          : _IK kbSSafe500bug kbSSafe600bug 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

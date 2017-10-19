@@ -1,0 +1,111 @@
+DOCUMENT:Q170651  26-AUG-1999  [foxpro]
+TITLE   :PRB: ODBC Connectivity Errors with 68K Executables Only
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kberrmsg kbHWMAC kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error messages are received when running a 68K Visual FoxPro for
+Macintosh executable and using either the SQLConnect() command and specifying a
+connection, or trying to bring up a form that has a remote view based on a
+connection in its data environment:
+
+   Connectivity error: [Visigenic][ODBC SQL Server Driver] invalid object name
+   'dbo.titles'.
+
+   Error loading file - Loading form or the data environment - record number 4.
+
+   Connectivity error: [Visigenic][ODBC SQL Server Driver] invalid object name
+   'dbo.titles'.
+
+The invalid object name referenced in the error messages varies depending upon
+the SQL Server database used on the remote data source. The above messages were
+generated while connecting to the Authors table in the sample Pubs database
+provided with SQL Server. The record number, when loading the form, may also
+vary.
+
+The same code works without error in a Visual FoxPro for Macintosh PowerMacintosh
+executable.
+
+NOTE: As of 12/9/98, Visigenic has been acquired by INPRISE, Inc.
+
+CAUSE
+=====
+
+The connection used to connect to the remote data source has the "Always" option
+set for when to Display ODBC Login Prompts.
+
+RESOLUTION
+==========
+
+Set the Display ODBC Login Prompts for the connection in the database to "When
+Login info is not specified" or "Never." If it is set to "When Login info is not
+specified," ensure that the login info is always specified in the connection.
+The connection can be modified through the Project Manager or with the MODIFY
+CONNECTION <connection name> command when the database is open and
+current.
+
+Another possible resolution is to use the 68K ODBC files that come with FoxPro
+2.6 for Macintosh or Microsoft Office for Macintosh. The problem does not occur
+when using these ODBC extensions. These files have a Microsoft or Apple
+copyright, depending upon the file. The 68K ODBC files shipped with Visual
+FoxPro have a Visigenic Software Inc. copyright.
+
+Note that when using the non-Visigenic ODBC extensions, the data sources must be
+modified (no changes necessary though) and resaved before the errors clear up.
+
+MORE INFORMATION
+================
+
+Visual FoxPro for Macintosh can connect to remote data on SQL Server and, if an
+ODBC driver is available, other remote data sources. The ODBC driver for SQL
+Server, both 68K and PowerPC versions, is provided with Visual FoxPro.
+
+REFERENCES
+==========
+
+For additional information on the ODBC related files installed with Visual
+FoxPro for Macintosh, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152516 List of ODBC Files Installed During Setup
+
+For information on how to contact INPRISE, Inc., please see the following article
+in the Microsoft Knowledge Base for one of the following articles:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbHWMAC kbvfp 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

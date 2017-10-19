@@ -1,0 +1,69 @@
+DOCUMENT:Q192506  20-OCT-2000  [mspress]
+TITLE   :Windows 98 Starts Here Demo Does Not Load Correctly
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows 98 Step by Step ISBN 1-57231-683-7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Autorun.inf file included with this demonstration does not work.
+Additionally, many of the links in the Starts Here demonstration are broken,
+including the links to the Media Player on the Start.htm page. Microsoft Media
+Player is required to view the demonstration files.
+
+WORKAROUND
+==========
+
+To load the demonstration, follow these steps:
+
+1. Insert the "Windows 98 Step by Step" CD-ROM into your CD-ROM drive.
+
+2. Double-click My Computer and then double-click your CD-ROM drive to open it.
+
+3. Double-click the Win98SH folder and then double-click Start.htm to begin the
+   demonstration.
+
+If you do not have Microsoft NetShow installed on your system, please download
+the latest version from the following Web site:
+
+   http://www.microsoft.com/windows/windowsmedia/en/download/default.asp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in "Microsoft Windows 98 Step by
+Step."
+
+Additional query words: ms_press bookbug 1-57231-683-7
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

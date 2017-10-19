@@ -1,0 +1,84 @@
+DOCUMENT:Q111001  04-NOV-1999  [fortran]
+TITLE   :BUG: PEEKCHARQQ Incorrectly Returning .TRUE.
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a FORTRAN PowerStation application, PEEKCHARQQ may return a value of .TRUE.
+even though there is no keystroke waiting in the keyboard buffer.
+
+CAUSE
+=====
+
+If GETCHARQQ is not called at least once in the program before calling
+PEEKCHARQQ, a call to PEEKCHARQQ will always return .TRUE.. Even after first
+calling GETCHARQQ, PEEKCHARQQ, when called repeatedly, may incorrectly return
+that a keystroke is available.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation 32 for
+Windows NT, version 1.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The sample program below should print stars until a key is pressed. However,
+after entering a keystroke to start the PEEKCHARQQ loop, stars will stop
+printing if no key is pressed. If the call to GETCHARQQ is removed, only one
+star will print.
+
+Sample Code
+-----------
+
+   C Compile options needed: none
+   C
+
+         include 'flib.fi'
+         include 'flib.fd'
+         character*1 key
+         logical pressed/.false./ 
+         write(*,*) 'Enter a key to begin test'
+         key = GETCHARQQ()      ! Must call GETCHARQQ first
+         do while (.NOT. pressed)
+            write (*, 900) '*'  ! Print stars until a key is pressed
+            pressed = PEEKCHARQQ()
+         end do
+   900   format (1X, A, \)
+         end
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

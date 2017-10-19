@@ -1,0 +1,92 @@
+DOCUMENT:Q178274  14-MAR-2002  [crossnet]
+TITLE   :No Authentication Using Non-Domain Controller for RAS Server
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11,3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft TCP/IP-32 for Windows for Workgroups 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a computer running Windows NT Server and the
+Remote Access Service (RAS) from either a RAS client or a Dial-Up Networking
+(DUN) client, you may receive the following error:
+
+   No domain server was available to validate your password. You may not be able
+   to gain access to some network resources.
+
+The RAS server is using a RAS device that uses its own Point to Point Protocol
+(PPP) validation.
+
+
+CAUSE
+=====
+
+Certain RAS devices may use their own PPP validation and not the validation of
+the RAS server. This may not be a problem if such a device is directly connected
+to a primary domain controller (PDC) or a backup domain controller (BDC).
+However, if the RAS server is a member server that participates in domain
+security, the RAS client may not be able to get validated.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform one of the following:
+
+ - Exchange your RAS device for one that is on the Microsoft Windows NT Server
+   Hardware Compatibility List. For more information, see the following article
+   in the Microsoft Knowledge Base:
+
+   Q131303 Latest Windows 2000 and Windows NT Hardware Compatibility List (HCL)
+
+-or-
+
+ - On the RAS client, specify the domain name in the user credentials, such as
+   the following:
+
+   <DomainName>\<UserName>
+
+MORE INFORMATION
+================
+
+The problem has to do with the way the authentication takes place. The RAS
+server attempts to log the client into its local account database first (if one
+exists). Next, the RAS server appends the domain name and sends the validation
+request to the appropriate domain controller. If the RAS device attempts the
+validation, it never appends the domain name. As a result, if there is not an
+account in the local account database, the client will not be validated.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311
+Version           : :3.11,3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

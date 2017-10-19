@@ -1,0 +1,54 @@
+DOCUMENT:Q262781  25-MAY-2000  [msnetwork]
+TITLE   :MSN 5.1 download client sometimes freezes at the select payment
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+User is downloading MSN to sign up as a new MSN Internet Access member. MSN
+download client sometimes freezes at the select payment plan screen.
+
+RESOLUTION
+==========
+
+User should call Customer Service at 800-386-5550 and sign up for a membership
+over the phone. He or she will be given a member ID, a password, and will be
+instructed how to set up a dial up network account.
+
+The new member can then go to http://free.msn.com/upgrade.asp and download MSN as
+an existing member.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN510
+Version           : WINDOWS:5.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

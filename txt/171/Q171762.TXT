@@ -1,0 +1,100 @@
+DOCUMENT:Q171762  09-AUG-2001  [winnt]
+TITLE   :Allowing Profile Shortcut Paths To Point To Local Drives
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, desktop shortcut paths will point to the original application
+location regardless of where a roaming user logs on.
+
+MORE INFORMATION
+================
+
+For example, a user installs Microsoft Word on his or her normal workstation. If
+Microsoft Word is installed in the C:\WORD directory, a shortcut created to
+Word.exe will use the path C:\WORD\WORD.EXE. When the roaming user logs on at
+another workstation and loads his or her roaming profile, the shortcut will
+appear, but the path will now be modified to point back to the workstation on
+which the application was originally installed. In some cases, the administrator
+may prefer that the path not be linked to the original workstation. This can be
+accomplished through use of a system policy.
+
+By definition, a roaming user will log on to multiple computers. Roaming profiles
+were created to allow this user to have the same desktop and access to the same
+applications regardless of where the logs on to the network. Typically, roaming
+users will access applications stored in a central location, whether from a
+server share or from a share on their normal workstation. Because this is the
+typical situation, the default behavior for a desktop shortcut path is to point
+back to the original application location. This allows the user to run exactly
+the same applications regardless of the log on computer's location.
+
+However, in an environment where every workstation is configured identically,
+with the same applications and application locations, administrators may prefer
+that shortcut paths point to the local drive, not the remote, original
+location.
+
+A System Policy entry was added to Windows NT Server 4.0 Service Pack 2 to allow
+shortcut paths to remain static and thus always use the same path. If the
+original path for the shortcut was C:\WORD\WORD.EXE then that same path to the
+local drive can be the same regardless of where the user logs on.
+
+To enable this feature, create a system policy using System Policy Editor in
+Windows NT Server 4.0. To enable this entry, perform the following steps:
+
+1. Copy Winnt.adm from the latest Windows NT Service Pack to the
+   %SystemRoot%\Inf folder.
+
+2. Start System Policy Editor (Poledit.exe).
+
+3. On the Options menu, click Policy Template, and then click Add.
+
+4. Click Winnt.adm in the %SystemRoot%\Inf folder, and then click Open.
+
+5. Click Winnt.adm and then click OK.
+
+6. On the File menu, click Open Registry, and then double-click Local User.
+
+7. Double-click Windows NT Shell, double-click Restrictions, and then click
+   Disable Link File Tracking so that it is selected.
+
+8. Click OK, and then on the File menu, click Save.
+
+9. Exit System Policy Editor.
+
+Note that this policy will not alter paths created before the policy was
+implemented, so new paths may need to be established.
+
+Additional query words: shortcut UNC profile policy path
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

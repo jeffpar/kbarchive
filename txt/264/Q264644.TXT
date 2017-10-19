@@ -1,0 +1,77 @@
+DOCUMENT:Q264644  08-AUG-2001  [winnt]
+TITLE   :"The Drive Cannot Be Locked for Exclusive Use" Message When Dele
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to delete a partition from a broken mirror set, you may receive
+the following error message:
+
+   The drive cannot be locked for exclusive use. Please check to see if some
+   applications are currently accessing the drive. If so, close them and try
+   again.
+
+WORKAROUND
+==========
+
+As a workaround, click the Do not assign a drive letter option in Disk
+Administrator, and then delete the partition. Replace the failed drive and
+recreate the mirror set.
+
+MORE INFORMATION
+================
+
+To work around this behavior, follow these steps:
+
+1. Start Disk Administrator.
+
+2. Select the broken partition of the mirror set.
+
+3. On the Tools menu, select Assign Drive Letter.
+
+4. In the Assign Drive Letter dialog box, click Do not assign a drive letter and
+   then click OK.
+
+5. On the Partition menu, select Commit Changes Now.
+
+6. Reboot the computer.
+
+7. Start Disk Administrator, and then delete the partition of the broken mirror
+   set.
+
+8. Replace the failed drive, and recreate the mirror set.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

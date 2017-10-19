@@ -1,0 +1,63 @@
+DOCUMENT:Q249824  17-DEC-2000  [win95x]
+TITLE   :BUG: VOLTRACK Is Erroneously Unloaded After 255 Device Additions
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95,98,98 Second Edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+VOLTRACK is unloaded and may cause Windows to display a blue screen after 255
+device additions and removals.
+
+CAUSE
+=====
+
+VOLTRACK keeps a count of the number of devices it is attached to in an internal
+byte-size variable. This variable is incremented in response to a AEP_CONFIG_DCB
+command, but is not decremented. After 255 additions and removals, the byte
+overflows and VOLTRACK is unloaded in response to a AEP_BOOT_COMPLETE command
+from IOS. This can cause driver memory to be overwritten and can cause system
+instability.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : WINDOWS:95,98,98 Second Edition
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

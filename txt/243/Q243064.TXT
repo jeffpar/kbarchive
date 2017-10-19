@@ -1,0 +1,51 @@
+DOCUMENT:Q243064  12-JUN-2001  [homegame]
+TITLE   :Age of Empires II: Duplicate Pages or Missing Pages in Manual
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some copies of Age of Empires II: The Age of Kings may include a manual that
+contains duplicates of certain pages or is missing certain pages.
+
+RESOLUTION
+==========
+
+If you have a defective manual, please call Microsoft Customer Service at (800)
+426-9400 to request a replacement manual. Microsoft Customer Service hours are
+Monday through Friday, 8:00 A.M. to 5:00 P.M. Pacific time.
+
+
+Additional query words: 2.00 aoe2 aok msgame book booklet pamphlet
+
+======================================================================
+Keywords          : kbdocerr kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOE2Kings
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

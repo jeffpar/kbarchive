@@ -1,0 +1,78 @@
+DOCUMENT:Q236339  10-AUG-2001  [winnt]
+TITLE   :Removing Custom DHCP Scope Option Sets Lease Duration to Zero
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the lease duration for a DHCP scope, it may be set to 0 days, 0
+hours, and 0 minutes.
+
+CAUSE
+=====
+
+This problem can occur after a customized DHCP Option is removed from the DHCP
+Scope. Note that this does not happen when you remove a custom Global Option.
+
+RESOLUTION
+==========
+
+To work around this problem, manually set the lease duration back to the
+previous value. Note that the default lease duration is 3 days.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+DHCP extensibility provides the ability to add custom DHCP options. This is done
+within DHCP Manager by clicking Defaults on the DHCP Options menu. In the
+Default Values window, the New button permits you to create the custom option.
+For example, to create a custom option that assigns an FTP server with an option
+number of 161, type the following information in the following fields:
+
+Name: FTP Option
+Data Type: IP Address
+Identifier: 161
+Comment: FTP Server
+
+After this is done, the custom scope option can now be added to global or scope
+properties.
+
+Additional query words: zero
+
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

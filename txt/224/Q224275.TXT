@@ -1,0 +1,61 @@
+DOCUMENT:Q224275  27-JUL-2001  [automap]
+TITLE   :S&T 2000: Cannot Enter Latitude and Longitude in All Formats
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbdocerr kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Expedia Streets and Trips 2000, the Latitude And Longitude online
+Help topic incorrectly states that you can specify both latitude and longitude
+coordinates in any of the following formats:
+
+ - Decimal degrees
+
+ - Degrees and minutes
+
+ - Degrees, minutes, and seconds
+
+However, when you attempt to search for a specific location based on its latitude
+and longitude (to do this, click Latitude/Longitude on the Find menu), you are
+only able to enter the latitude and longitude coordinates in decimal degrees.
+
+MORE INFORMATION
+================
+
+When you use the Location Sensor, you can display latitude and longitude
+coordinates in any of the formats listed in the "Summary" section of this
+article.
+
+Additional query words: multi multi-media media mm auto-map amap co-ordinates lat/long
+
+======================================================================
+Keywords          : kbui kbdocerr kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

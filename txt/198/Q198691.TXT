@@ -1,0 +1,84 @@
+DOCUMENT:Q198691  27-JUL-2001  [sms]
+TITLE   :SMS: Forcing Changes in RC Settings to 32-bit Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbClient kbRemote kbsms200 kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When settings are changed at the site for the Systems Management Server Remote
+Control Agent, some of these changes are not automatically implemented at
+existing clients in the site. In particular, the protocol, the compression type,
+and the video acceleration are not changed on existing clients. Newly installed
+clients will get current settings for the Remote Control Agent.
+
+MORE INFORMATION
+================
+
+This action is by design. You can, however, force an update on clients by using
+any of the following methods:
+
+ - At the client, start Control Panel and double-click the Systems Management
+   icon to initiate a component reinstallation. On the Components tab, click the
+   Remote Control component, and then click the Repair Installation button. When
+   the agent is reinstalled on the client, it will receive the current settings.
+
+ - At the client, run the following command line:
+
+   %WinDir%\MS\SMS\CLICOMP\REMCTRL\RCHWCFG.EXE install
+
+   This will cause the current settings for the items listed above to be
+   refreshed. This option can also be implemented using the software
+   distribution capabilities of Systems Management Server.
+
+ - Use Systems Management Server Administrator to disable the remote tools
+   client agent, wait for the component to be removed on the clients. (The
+   client becomes active and uninstalls the agent at the next polling interval,
+   every 23 hours.) Change the settings as appropriate and enable the agent so
+   that the clients will reinstall that component and receive the current
+   settings.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q198717 SMS: Client Requirements for Remote Control
+
+You can also find information in the online Help topics:
+
+ - Remote Tools Client Agent Properties Dialog Box: Advanced Tab
+
+ - Changing Advanced Tab Settings for Existing Clients
+
+
+Additional query words: prodsms RC32
+
+======================================================================
+Keywords          : kbClient kbRemote kbsms200 kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

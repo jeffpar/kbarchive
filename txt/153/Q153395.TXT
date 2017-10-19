@@ -1,0 +1,67 @@
+DOCUMENT:Q153395  15-MAR-2002  [win95x]
+TITLE   :Error Message: "Exception 0E in VPOWERD" During First Boot
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+VPOWERD may cause a page fault (Fatal Exception error 0E) on the first reboot
+during Windows 95 Setup on certain computer models that support advanced power
+management (APM).
+
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods:
+
+ - Disable the APM feature during Windows 95 Setup.
+
+    - If you are not using an automated Setup, click the Custom button in the
+      Setup Options screen, and then click the Advanced Power Management check
+      box to clear it in the Computer Settings screen.
+
+    - If you are using an automated Setup, add the following line to the
+      [System] section of the Msbatch.inf file:
+
+   "Power"="No APM" (include the quotation marks)
+
+   This method disables all APM functionality in Windows 95.
+
+ - You may be able to resolve this issue by upgrading the computer's BIOS.
+   Contact the computer's manufacturer for information about a possible BIOS
+   upgrade.
+
+
+Additional query words: hp
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,66 @@
+DOCUMENT:Q90079  02-NOV-1999  [win95x]
+TITLE   :Setting Up Vi-Spy with Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Vi-Spy is a virus-protection application capable of running in both Windows and
+MS-DOS environments. For Windows to work properly with Vi-Spy, you must run the
+Windows-based Setup utility provided on the Vi-Spy Setup disks.
+
+NOTE: Failure to do so may cause MS-DOS-based applications to stop responding
+(hang) when started from within Windows.
+
+MORE INFORMATION
+================
+
+Vi-Spy virus protection software comes with separate installation programs for
+MS-DOS and Windows. Both programs should be run before using Vi-Spy with
+Windows. The MS-DOS Setup utility places the RVS.EXE terminate-
+and-stay-resident (TSR) in the AUTOEXEC.BAT file. The Windows-based Setup
+utility places the RVSWIN.EXE TSR in the LOAD= line of the WIN.INI file.
+
+RVSWIN.EXE is necessary to resolve memory conflicts with RVS.EXE when running
+under Windows. If the Windows-based Setup utility is not run, or RVSWIN.EXE is
+removed from the LOAD= line of the WIN.INI file, Windows may hang when an
+MS-DOS-based application or MS-DOS Prompt is executed from within Windows.
+
+To ensure that the Vi-Spy virus-protection software is installed correctly,
+contact RG Software Systems technical support.
+
+Vi-Spy is manufactured by a vendor independent of Microsoft; we make no warranty,
+implied or otherwise, regarding this product's performance or reliability.
+
+Additional query words: 3.10 3.11 vi-spi vy-spi vispy vyspy R.G. DOS freezes locks up lockup win31 3rdparty crashes
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q139068  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Issues When Multiple Users Have the Same Assistant
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Multiple users can have the same Assistant defined in their respective access
+privileges. For example, UserA and UserB can define the same Assistant, UserC,
+in their access privileges. If the Assistant (UserC) deletes a meeting request
+message sent to both UserA and UserB, the users can no longer respond to the
+meeting request, either confirming or denying attendance.
+
+RESOLUTION
+==========
+
+This is by product design. The current Schedule+ architecture cannot handle
+creating multiple messages.
+
+MORE INFORMATION
+================
+
+When UserD invites both UserA and UserB to a meeting, the meeting request
+message is received by the Assistant as one message. The Assistant double-
+clicks the meeting request, and it displays the meeting request messages for
+both UserA and UserB. If the Assistant (UserC) deletes the message or one of the
+meeting request displays, BOTH meeting request displays are deleted.
+
+If UserA has accepted the meeting, and UserB is out of town, and the Assistant
+(UserC) deletes the message, the Assistant (UserC) can not accept the meeting
+for UserB.
+
+
+Additional query words: 1.00 1.00a schedule plus multiple meeting requests Assistant
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q74454  17-DEC-2000  [msdos]
+TITLE   :MS-DOS Shell and the Colorado Tape Backup System
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have a Colorado Tape Backup on your system, and when you try to exit a
+program that has been run from MS-DOS Shell, you receive an error message
+similar to one of the following:
+
+   Unable to Load MS-DOS Shell
+
+   -or-
+
+   Unable to Unload MS-DOS Shell
+
+If you choose the RETRY button you are returned to MS-DOS Shell. If you choose
+the NO button, you are returned to the MS-DOS command prompt.
+
+CAUSE
+=====
+
+According to Colorado Memory Systems, when you load the automatic backup program
+from the AUTOEXEC.BAT file, it causes a memory conflict with Shell. If its
+automatic tape backup program is loaded from the AUTOEXEC.BAT file, it does not
+leave enough memory for Shell to operate properly.
+
+WORKAROUND
+==========
+
+A workaround for this problem is to load the automatic tape backup program from
+the MS-DOS command prompt, instead of the AUTOEXEC.BAT file.
+
+MORE INFORMATION
+================
+
+The product included here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this products' performance
+or reliability.
+
+Additional query words: 5.00 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

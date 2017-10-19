@@ -1,0 +1,69 @@
+DOCUMENT:Q207566  25-NOV-1999  [sms]
+TITLE   :SMS: Client Remote Installation Account Cannot Be Deleted
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bugkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Systems Management Server Client Remote Installation Account cannot be
+deleted or cleared after it has been set.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+If you no longer want to use a Client Remote Installation Account, enter a
+non-existent account in the Windows NT Remote Client Installation properties
+dialog box.
+
+To disable client remote installation altogether, perform the following steps:
+
+1. Run the Systems Manangement Server Administrator console.
+
+2. Locate the Site Database, Site Hierarchy, Site Code, Site Name, Site
+   Settings, and Client Installation Methods.
+
+3. Double-click "Windows NT Remote Client Installation".
+
+4. Clear the "Enable Windows NT Remote Client Installation" check box and click
+   OK.
+
+Additional query words: prodsms sms20 smssec
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbfaq
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

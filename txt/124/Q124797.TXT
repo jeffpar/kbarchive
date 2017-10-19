@@ -1,0 +1,60 @@
+DOCUMENT:Q124797  08-AUG-2001  [crossnet]
+TITLE   :ARP Static Cache Entries Switch to Dynamic
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:winnt:3.5; :3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If a static ARP (address resolution protocol) cache entry is added (for example,
+ARP -s inet_addr eth_addr) it occasionally switches to dynamic. Unfortunately,
+dynamic entries are deleted after two minutes of dormancy.
+
+CAUSE
+=====
+
+Whenever ARP receives an ARP request for itself, it updates its ARP cache with
+the information of the requestor. It does this without respect to the type of an
+existing entry.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: wfw wfwg prodtcp32 3.11 tcpip
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311
+Version           : winnt:3.5; :3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

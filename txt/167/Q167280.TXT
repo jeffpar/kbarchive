@@ -1,0 +1,75 @@
+DOCUMENT:Q167280  10-FEB-2000  [exchange]
+TITLE   :XFOR: Err Msg: Cannot Open, HTTP/1.0 500 Server Error
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbusage exc5
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an Internet browser to log on to Microsoft Exchange Server, you are
+prompted to enter your user name and password. When you type the correct name
+and password, one of the following two error messages may appear:
+
+   Cannot open http://<server_name>/exchange/logon.asp
+
+   HTTP/1.0 500 Server Error (Not enough storage is available to process this
+   command.)
+
+CAUSE
+=====
+
+The first error message appears when only basic (clear text) password
+authentication is being used, or when all three authentication methods (basic,
+anonymous, and Windows NT challenge/Response) are in use. Using all three is the
+default.
+
+The second error message appears if anonymous authentication, Windows NT
+challenge/response authentication, or both are being used without basic
+authentication.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+ - Check the security permissions on the file Exchsrvr\Bin\Amhtml.dll and verify
+   that the group Everyone has a minimum access level of Read.
+
+   To assign full control (or any other combination of rights) to the group
+   Everyone.
+
+ - In Windows Explorer, right-click the Exchsrvr directory and click Properties,
+   and then click Security, and then Permissions.
+
+
+Additional query words: logon.asp Active Server Pages
+
+======================================================================
+Keywords          : kbusage exc5 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

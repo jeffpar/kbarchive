@@ -1,0 +1,84 @@
+DOCUMENT:Q173783  14-NOV-2000  [word97]
+TITLE   :WD97: Web Browser Cannot Open a Mailed or Routed HTML File
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click a Hypertext Markup Language (HTML) document icon that was
+sent to you in Microsoft Word 97 using the "Send To Mail Recipient" or "Send To
+Routing Recipient" command, you may receive the following error message:
+
+   Internet Explorer cannot open file: <Path>
+   Internet Explorer cannot open file: <Path>
+
+CAUSE
+=====
+
+When you send an HTML document in Word with the "Send To Mail Recipient" or
+"Send To Routing Recipient" command, the full HTML format is not preserved;
+therefore, Microsoft Internet Explorer does not recognize the file format.
+
+WORKAROUND
+==========
+
+To work around this problem, save and close the HTML file and send it to the
+recipient as an e-mail attachment. To do this, follow these steps:
+
+1. In Word, click Save As on the File menu.
+
+2. In the Save As Type list, click to select HTML Document. Type a name in the
+   File Name box, and then click Save.
+
+3. On the File menu, click Close to close the document.
+
+4. In your e-mail program, create a new message, insert the HTML file from step
+   2 as an attachment, and then send the message to the recipient.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+For additional information about Web page authoring, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q159948 WD97: General Information About Web Page Authoring
+
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kberrmsg word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

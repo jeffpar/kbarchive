@@ -1,0 +1,75 @@
+DOCUMENT:Q155986  09-AUG-2001  [winnt]
+TITLE   :NetBT Communication Slow on Multihomed Client
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you communicate using NetBIOS over TCP/IP (NetBT) to a device that uses the
+second interface of a multihomed Windows NT client, the initial session
+establishment is slow.
+
+CAUSE
+=====
+
+This problem will only be seen in environments in which the subnets on both
+sides of the Windows NT client are not configured to communicate with each
+other.
+
+RESOLUTION
+==========
+
+Define a route, either per client or on the routers, to allow accessibility to
+both adapters on the computer running Windows NT Server.
+
+MORE INFORMATION
+================
+
+NetBT first defines the IP address on the source packet of a three-way handshake
+using the IP address of the adapter that resolved the name. If this fails, NetBT
+uses the IP address of the second adapter. This can cause a delay of up to 50
+seconds in the establishment of the connection.
+
+NOTE: In Windows NT version 4.0 and Windows NT version 4.0 Service Pack 2,
+significant network connection enhancements have been added to improve
+connectivity for multi-homed computers. For detailed information, please see the
+following articles in the Microsoft Knowledge base:
+
+   ARTICLE ID: Q161425
+   TITLE: WinNT 4.0 SP2 Multihomed Computer Connection Enhancement
+
+   ARTICLE ID: Q166159
+   TITLE: NetBIOS Connections from a Multihomed Computer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q128770  14-AUG-1999  [foxpro]
+TITLE   :PRB: "Insufficient Memory" Previewing A Report In FPM
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.60a 3.00b
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, version 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error messages may be received when previewing a report:
+
+   Insufficient Memory
+
+   -or-
+
+   Internal Consistency Error
+
+   -or-
+
+   Error #43 in process (O): there is not enough memory to complete this
+   operation."
+
+CAUSE
+=====
+
+On the Macintosh, there is a 'Setting of selected monitor' in the Monitors
+Control Panel. If this setting is set to 'Millions' or 'Thousands' of colors
+this may cause FoxPro to report 'INSUFFICIENT MEMORY' when previewing a report.
+This has also been reported to cause Internal Consistency Errors (ICE) errors.
+
+RESOLUTION
+==========
+
+To prevent this from occurring, change the setting under 'Control
+Panel/Monitors' to 256 or 16 (recommended).
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: FoxMac vFoxmac
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : 2.60a 3.00b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

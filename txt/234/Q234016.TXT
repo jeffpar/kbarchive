@@ -1,0 +1,64 @@
+DOCUMENT:Q234016  08-MAY-2002  [iis]
+TITLE   :ASP May Improperly Parse Cookies Containing a Plus Sign
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a client-side cookie is written from a browser with JavaScript that contains
+a plus sign (+) in the string, IIS 4.0 returns the space character " " instead
+of the plus sign (+), as stored in the cookie.
+
+CAUSE
+=====
+
+This is by design.
+
+WORKAROUND
+==========
+
+It is recommended that any script requiring non-standard characters use URL
+style encoding (RFC 1738) for cookie handling, including the plus sign (+). The
+workaround is to use an escaped plus sign or space when you create cookies using
+client-side scripts.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server 4.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

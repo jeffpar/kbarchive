@@ -1,0 +1,64 @@
+DOCUMENT:Q168731  09-AUG-2001  [winnt]
+TITLE   :No RAS-Capable Devices to Add in Remote Access Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork dun kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Remote Access Setup, the following error message may be
+displayed:
+
+   There are no RAS capable devices to add. Do you want to invoke the Modem
+   installer to enable you to add a modem?
+
+When you add a modem, the Add RAS Device dialog box appears, but you are unable
+to select a device.
+
+CAUSE
+=====
+
+There are no Telephony service providers installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. In Control Panel, double-click Telephony.
+
+2. Click the Telephony Drivers tab.
+
+3. Verify that there is a service provider installed. Windows NT installs the
+   Unimodem service provider by default.
+
+======================================================================
+Keywords          : kberrmsg kbnetwork dun kbDialUp 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

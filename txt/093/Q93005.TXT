@@ -1,0 +1,69 @@
+DOCUMENT:Q93005  06-MAY-2001  [masm]
+TITLE   :FIX: /Z Switch Gives "Unknown Option" Error in MASM 6.0b
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the MASM compatibility driver provided with version 6.0b of the Microsoft
+Macro Assembler is called with the /Z command line switch, the following error
+occurs:
+
+   Unknown option: z. Use /help for list of options
+
+RESOLUTION
+==========
+
+Omit the /Z switch from the command line. The /Z switch has no effect.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0b. This problem
+was corrected in MASM for MS-DOS version 6.1.
+
+MORE INFORMATION
+================
+
+The ML driver invokes the Microsoft Macro Assembler (MASM) versions 6.x. MASM
+includes the MASM.EXE compatibility driver for backward compatibility with
+makefiles written for the MASM driver used in versions 5.x and earlier.
+
+In MASM versions 5.x, the /Z switch displays on the screen the source file lines
+that contain errors. In MASM versions 6.0 and 6.0a, the /Z option is correctly
+ignored. However, in version 6.0b, MASM generates an error in response to this
+option switch and does not assemble the file.
+
+Additional query words: 6.00b buglist6.00b fixlist6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600b
+Version           : MS-DOS:6.0b
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

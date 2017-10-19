@@ -1,0 +1,62 @@
+DOCUMENT:Q70072  06-NOV-1999  [win16sdk]
+TITLE   :Corrupt RES File May Crash Dialog Editor
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A corrupt RES file may cause the Dialog Editor distributed with the Windows
+Software Development Kit (SDK) to crash. If the Dialog Editor crashes
+consistently processing a particular file, delete the RES file created by the
+Dialog Editor and use the resource compiler to recompile the DLG dialog script
+file.
+
+MORE INFORMATION
+================
+
+To compile the DLG dialog script file, you must include WINDOWS.H at the top of
+the script. You must make the following line the first line in your DLG file:
+
+      #include <windows.h>
+
+To compile the dialog script file using the resource compiler, use the following
+command line:
+
+   rc mydlg.dlg
+
+where "mydlg" is replaced with the name of the dialog script file. This will
+produce a RES file that can be used by the Dialog Editor and should help to
+alleviate the crashing problems.
+
+Additional query words: 3.00 no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

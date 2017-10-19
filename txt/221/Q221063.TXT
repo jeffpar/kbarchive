@@ -1,0 +1,73 @@
+DOCUMENT:Q221063  10-AUG-2001  [winnt]
+TITLE   :Network Drives Created with Substitute Command Cannot Copy
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP3 
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a mapping is made to a network drive using the Substitute command, clients
+might not be able to copy files from that drive mapping to My Briefcase. The
+copy operation fails, but there is no error message.
+
+
+CAUSE
+=====
+
+Symptoms only occur when the Substitute command is used to map a network
+resource.
+
+RESOLUTION
+==========
+
+To work around this problem, move or copy the file to a local drive first, and
+then copy the file to My Briefcase.
+
+Do not use the Substitute command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+
+MORE INFORMATION
+================
+
+Dr. Watson errors have also been observed when using My Briefcase in conjunction
+with substitute drives.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp3 kbWinNTSsearch kbWinNTS400sp3 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

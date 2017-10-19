@@ -1,0 +1,94 @@
+DOCUMENT:Q85315  12-OCT-1999  [win95x]
+TITLE   :Norton Desktop 2.0 Adds Options to Windows 3.1 File Manager
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Norton Desktop for Windows version 2.0 is installed on a system with
+Microsoft Windows, Norton Desktop adds two new options to File Manager: an
+Undelete command is added to the File menu, and a Norton menu is added (to the
+left of the Help menu).
+
+MORE INFORMATION
+================
+
+When you install Norton Desktop for Windows 2.0, it adds the above two options
+under the File Manager menu bar, and makes the following changes to the
+WINFILE.INI file:
+
+ - In the [AddOns] section of the file, Norton Desktop adds the line:
+
+         NortonDesktopDLL=NFMEXT.DLL
+       
+
+ - In the [Settings] section of the file, Norton Desktop adds the line:
+
+   undelete.dll=NFMEXT.DLL
+
+ - Norton Desktop adds a new section called [Norton Desktop] and adds the line:
+
+   ToolsTitle=&Norton
+
+As a result of these modifications to WINFILE.INI, File Manager is modified in
+the following ways:
+
+ - An Undelete command is added to the File menu. The Undelete command allows
+   you to undelete files from File Manager.
+
+ - A new menu, Norton, is added to the left of the Help menu. The Norton menu
+   allows quick access to the following Norton Desktop programs:
+
+   Desktop Editor
+   Calculator (NDW version)
+   KeyFinder
+   Scheduler
+   Screen Saver (Norton "Sleeper" program)
+   SuperFind
+   Unerase
+   Shredder
+   Norton Disk Doctor
+   Norton Backup
+   Norton AntiVirus
+   System Info
+   Icon Editor
+   Batch Builder
+   Macro Builder
+   Norton Viewer
+
+The product included here, Norton Desktop for Windows, is manufactured by a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: calc 3.10 3.1 3.11 Norton NDW desktop addons addins
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

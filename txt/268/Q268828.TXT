@@ -1,0 +1,72 @@
+DOCUMENT:Q268828  11-DEC-2001  [winnt]
+TITLE   :How to Modify the Registry to Delete Locally Cached Profiles
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use the System Policy Editor to modify the registry
+on the Terminal Server computer to delete locally cached profiles.
+
+MORE INFORMATION
+================
+
+1. Create Terminal Server roaming profiles for all users.
+
+2. On the Terminal Server computer, click Start, click Run, and then type
+   poledit.
+
+3. On the File menu, select Open Registry.
+
+4. Double-click Local Computer, and then double-click Windows NT User Profiles.
+
+5. Click to select the Delete cached copies of roaming profiles check box, and
+   then click OK.
+
+6. Close the System Policy Editor. You are prompted to save the changes to the
+   registry.
+
+7. Click Yes to save the changes.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q214470 How to Move the Location of a Locally Cached Profile
+
+NOTE: The UserEnv.dll file is responsible for creating the locally cached profile
+and enumerating the registry with the local profile path:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\ProfileList
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q153368  31-JUL-2001  [sms]
+TITLE   :SMS: Deleting Computers Fails with "Out Of Locks" Errors
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbConfig kbDatabase kbsmsAdmin smsadmin smsgeneral smsconfig smsdatabase kbArtTypeINFkb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Deleting a large number of computers from the SMS Administrator tool fails with
+"out of locks" errors. No computers are deleted, and the following error is
+displayed:
+
+   Couldn't delete all the items.
+
+   Error attempting to delete the requested items. Items have been removed from
+   the query result list but not necessarily from the database. Refresh the data
+   to ensure the result is correct.
+
+The following error is displayed in the SQL messages window:
+
+   Msg SQL Server has run out of LOCKS. Re-run your command when there are fewer
+   active users, or ask your System Administrator reconfigure SQL Server with
+   more LOCKS.
+
+   Msg The rollback transaction request has no corresponding BEGIN TRANSACTION.
+
+
+CAUSE
+=====
+
+All the computers in the query window are locked during a delete. Each lock uses
+32 bytes. For example, 10,000 locks uses 320,000 bytes, which are then
+unavailable for caching the database.
+
+WORKAROUND
+==========
+
+To work around this problem, add more locks in SQL Server. If you must perform a
+one-time delete of a large number of computers, you can increase the number of
+locks specifically for the delete operation and then reduce the number of locks
+later.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, and 1.1, and 1.2. This problem is not as severe under Systems
+Management Server version 1.2.
+
+Additional query words: prodsms err error message
+
+======================================================================
+Keywords          : kbConfig kbDatabase kbsmsAdmin smsadmin smsgeneral smsconfig smsdatabase kbArtTypeINF kbfixlist
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

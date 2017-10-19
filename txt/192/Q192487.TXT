@@ -1,0 +1,59 @@
+DOCUMENT:Q192487  09-JUL-2002  [sms]
+TITLE   :SMS: Logon Discovery May Not Find Windows NT Domain Controllers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In a Microsoft Systems Management Server version 2.0 environment, all Windows NT
+Server computers may not become Systems Management Server Logon Points.
+
+The Systems Management Server 2.0 Logon Server Manager relies on the Windows NT
+Master Browser to find Domain Controllers for Logon Discovery. This is an
+intermittent problem that is dependant upon how up to date the Master Browser
+list is when Logon Discovery takes place.
+
+MORE INFORMATION
+================
+
+If there is an open connection to the computer that needs to be a Logon Point,
+then the computer will be in the Master Browser list. It will then be installed
+the next time Logon Server Manager polls the domain.
+
+This may account for Logon Points not being discovered and installed in some
+instances.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : :1.2,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

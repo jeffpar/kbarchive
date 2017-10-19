@@ -1,0 +1,72 @@
+DOCUMENT:Q191121  27-JAN-2001  [vbwin]
+TITLE   :DOC: CreateObject Documentation Using Servername Argument
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the Microsoft Visual Basic CreateObject function to create/return a
+reference to an ActiveX object using the servername argument, the following
+errors may occur:
+
+   Runtime Error '429':
+   ActiveX component can't createobject
+
+   -or-
+
+   Runtime Error '462':
+   The Remote Server Machine does not exist or is unavailable
+
+MORE INFORMATION
+================
+
+The documentation for the CreateObject function does not mention that the server
+referenced in the servername argument must be a Windows NT or Windows 2000
+server.
+
+For example, the following line of code should create and return a Microsoft
+Excel application object from the specified server, if the server is running
+Windows NT or Windows 2000.
+
+      Sub Test()
+         Set xlObj = CreateObject("Excel.Application","\\MyServer")
+         xlObj.Visible = True
+      End
+
+If the servername specified is a Windows 95, Windows 98, or Windows Me machine,
+one of the errors listed above will occur.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

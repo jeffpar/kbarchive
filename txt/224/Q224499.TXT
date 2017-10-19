@@ -1,0 +1,59 @@
+DOCUMENT:Q224499  30-APR-1999  [winnt]
+TITLE   :SBS Modem Unavailable if Clients Do Not Disconnect
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0a,4.5
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a, 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use a Small Business Server (SBS) modem by using Modem Sharing
+on your client computer, you may be unable to do so.
+
+CAUSE
+=====
+
+This issue can occur if another modem-sharing client computer is using the SBS
+modem. Client computers that dial out by using the SBS modem are permitted
+exclusive use of the modem, and this prevents other users from using the same
+modem. Note that this issue can occur if a user does not explicitly disconnect
+from the server or quit the communication-related program that uses the shared
+modem.
+
+RESOLUTION
+==========
+
+To resolve this issue, clients that use the SBS modem must disconnect from the
+SBS modem or communication-related program that uses the shared modem.
+
+Additional query words: smallbiz bos bof
+
+======================================================================
+Keywords          : kbnetwork kbtool kbui 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a kbSBServ450
+Version           : winnt:4.0,4.0a,4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

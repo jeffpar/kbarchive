@@ -1,0 +1,94 @@
+DOCUMENT:Q152779  10-MAR-2000  [foxpro]
+TITLE   :PRB: ODBC Driver "unrecognized phrase/keyword" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop
+
+======================================================================
+1.00
+
+WINDOWS
+
+kbinterop
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for Visual FoxPro, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Crystal Reports, selecting a Visual FoxPro table can result in the following
+error:
+
+   ODBC Visual FoxPro Driver Command contains unrecognized phrase/keyword
+
+Crystal Reports is unable to use Visual FoxPro database tables or free tables
+with this version of the ODBC driver.
+
+
+WORKAROUND
+==========
+
+Steps to Workaround Behavior
+----------------------------
+
+1. Open the table in the Command window by using a command like this one:
+
+   Use customer
+
+2. Use the COPY command to copy the table to to c:\Temp\cust2x with a type of
+   FOX2.
+
+3. Create a new datasource for this table.
+
+4. Use the new datasource to use the table in Crystal Reports.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Crystal Reports.
+
+2. On the File menu, click New. Then click Report, and click OK.
+
+3. In the Choose Database File dialog box, select SQL Table.
+
+4. Select your Visual FoxPro Datasource from the "Log on to Server" dialog box.
+
+5. Select a table, and click OK.
+
+Additional query words: 1.00 vFoxWin
+
+======================================================================
+Keywords          : kb3rdparty kbinterop 
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP100
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

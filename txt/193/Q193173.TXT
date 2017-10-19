@@ -1,0 +1,73 @@
+DOCUMENT:Q193173  11-JAN-2001  [vbwin]
+TITLE   :PRB: Silent Setup of PDW Package Cannot Create New Folder
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Package and Deployment Wizard (PDW) in silent mode, it gives
+the following error if the script contains a folder that does not already
+exist:
+
+   "Cannot package the project in silent mode because the package folder
+   <path to folder> does not exist."
+
+CAUSE
+=====
+
+Unlike the interactive PDW, the silent mode works without user intervention. It
+is not supposed to create a new folder without approval from the user. To allow
+PDW to work silently, the folder must exist and must be empty.
+
+RESOLUTION
+==========
+
+To create a new folder as part of batch processing, you can have your batch file
+create the folder before performing silent packaging and deployment.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+MSDN, article "Starting the Package and Deployment Wizard", section "Running the
+Wizard in Silent Mode"
+
+Additional query words: kbdss kbDSupport kbVBp kbVBp600 kbWizard kbAppSetup
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q145968  21-DEC-1999  [word97]
+TITLE   :WD97: Revision Number/EditTime Incorrect (Word 6.0/95 Export)
+PRODUCT :Word 97 for Windows
+PROD/VER::Service Release 1 (SR-1)
+OPER/SYS:
+KEYWORDS:kbdta kbconversion
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows, version Service Release 1 (SR-1) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a file in Word 6.0/95 format, if the file contains either the
+REVNUM or the EDITTIME field, an incorrect value is displayed when the field is
+updated.
+
+CAUSE
+=====
+
+This is due to a problem in the Word 6.0/95 binary converter (Wrd6ex32.cnv).
+
+RESOLUTION
+==========
+
+Obtain the latest Word 6.0/95 binary converter shipped with Microsoft Office 97
+Service Release 2 (SR-2).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. This problem was corrected in Microsoft Office 97
+Service Release 2 (SR-2).
+
+For additional information about SR-2, please see the following article in the
+Microsoft Knowledge Base:
+
+   
+
+   Q151261 OFF97: How to Obtain and Install MS Office 97 SR-2
+
+Additional query words: binary converter revnum edittime
+
+======================================================================
+Keywords          : kbdta kbconversion 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2 kbWord97SR1
+Version           : :Service Release 1 (SR-1)
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

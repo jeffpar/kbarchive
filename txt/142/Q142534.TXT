@@ -1,0 +1,351 @@
+DOCUMENT:Q142534  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Create Programs in Visual Basic That Use Remote OLE
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the steps to create a new example program that uses
+Remote OLE. The first example creates a client-server example illustrating use
+of a 32-bit client and a 32-bit server application; the second example is of a
+16-bit client communicating with a 32-bit server application.
+
+MORE INFORMATION
+================
+
+Both examples are very simple, because the purpose of this article is to
+illustrate the most basic steps to get a Remote client and server working.
+
+In this article, the 32-bit to 32-bit example involves creating the client and
+the server applications on the client workstation, and then distributing the
+server application onto the server machine. However, there is no reason why the
+reverse process of creating the server and client applications on the server
+machine, and then creating a setup for the client could not also occur.
+
+The 16-bit to 32-Bit example involves creating the 16-bit client and the 32- bit
+server applications on the server machine, and then distributing the client
+application to a workstation (clearly a 32-bit server cannot be developed on a
+16-bit operating system).
+
+32-Bit Client to 32-Bit Remote Server Example
+---------------------------------------------
+
+This example uses a 32-bit client and a 32-bit server. Both the client and the
+server machines must be run on either Windows 95, Windows 98, Windows 2000, or
+Windows NT 3.51 (or higher)(that is, a 32-bit operating systems). In this
+example, the 'client' workstation needs to have Visual Basic 4.0, 32-bit
+edition, installed. A setup program is created for the server application.
+
+STAGE 1 - CREATION OF THE SERVER APPLICATION
+
+1. On the client workstation, start a new project in Visual Basic 4.0, 32- bit
+   edition. Form1 is created by default. Insert a class module by choosing
+   Insert.Class Module from the menu. In the class module, type the following
+   code:
+
+         Public Sub Test()
+         Msgbox "Hi"
+         End Sub
+
+   Remove unnecessary controls from the project by choosing Tools.Custom Controls
+   from the menu, and clearing all the controls. Since no controls have been
+   added to the form, all check boxes in the Custom Controls list box can be
+   cleared. In addition, remove all unnecessary references from the project.
+   This can be accomplished by selecting Tools.References and clearing all the
+   entries except for "Visual Basic For Applications," "Visual Basic objects and
+   procedures," and "Standard OLE Types." This will save time later on when in
+   the distribution stage for the server application.
+
+2. Press F4 to bring up the property window for the class. Set the following
+   properties:
+
+      Name:       TestObj
+      Instancing:   2 - Creatable Multiuse
+      Public:      True
+
+3. Choose Tools.Options from the menu, and choose the Project tab. Set the
+   following properties:
+
+   Project name:      TestApp
+
+   Select the OLE Server radio button and then press the OK button to accept the
+   changes.
+
+4. Save the project files to a new directory. Now, choose File.Make EXE from the
+   menu. Make the EXE in the same directory as the VBP project file. Name the
+   EXE TestAapp.exe.
+
+5. Go to Tools.Options from the menu, choose the Project tab. Choose the
+   ellipsis (three dots) button contained in the right hand side of the
+   "Compatible OLE Server" box, and select TestApp.exe from the dialog box.
+
+   Although this step was not strictly necessary, it is useful because after
+   selecting the "Compatible OLE Server", Visual Basic will reuse the ID for the
+   server application, so that client applications that are bound to that ID
+   will not break if the server application needs to be recompiled.
+
+6. Save the project file again.
+
+STAGE 2 - REGISTER THE SERVER APPLICATION ON THE CLIENT WORKSTATION.
+7. Register the server locally by running TestApp.exe. Close down the
+   application by choosing Close from the System menu on the upper-left corner
+   of Form1. The action of running the server caused it to be registered
+   locally.
+
+This step is important to ensure that the server application works, and that it
+correctly registers.
+
+STAGE 3 - CREATION OF THE CLIENT APPLICATION.
+8. Start a new project in Visual Basic, 32-bit edition. Form1 is created by
+   default. Go to the Click event for Form1 and place the following code:
+
+         Dim x as New TestApp.TestObj
+         x.Test
+
+9. Go to Tools.References in the menu, and check the entry for TestApp.
+
+10. Run the Client application in the Design environment. Click on the form and
+   the server application should be launched and a MsgBox should appear.
+
+11. Stop the client application in the design environment and then close down
+   the server application by choosing Close from the System menu on the still
+   displayed Form1 of the server application.
+
+12. Save the client project files to a new directory. Choose Make EXE for the
+   client application - call it ClientApp.exe. Make the EXE file in the same
+   location as the VBP file.
+
+13. Exit Visual Basic and save the change to the Project file (the change was
+   the location and name of the executable).
+
+STAGE 4 - TEST THE CLIENT APPLICATION LOCALLY.
+14. In Explorer in Windows 95, Windows NT 4.0, or Windows 2000, or File Manager
+   in Windows NT 3.51, double- click on ClientApp.EXE. Click the Form and it
+   should again launch the server and bring up a MsgBox of "Hi" if successful.
+   Close down the server and client completely.
+
+STAGE 5 - INSTALLATION OF SERVER APPLICATION ON REMOTE MACHINE
+15. Choose the Visual Basic 4 32-bit Setup Wizard. Choose the TestApp.vbp
+   Project file in Step 1. Do not choose the Rebuild EXE option. Choose the
+   Next button. If Step 2 appears, simply choose the Next button.
+
+16. In Step 3 of Setup Wizard you can choose to install the application to a new
+   directory or to floppy disks. For Steps 4 and 5 simply choose the Next
+   button.
+
+17. In Step 6 of Setup Wizard choose the option to Install in Application
+   Directory and check the box labeled:
+
+       "Yes, install remote OLE automation server components"
+
+   Press Next on the Setup Wizard.
+
+18. In Step 7 press the Finish button to create the compressed files and setup
+   program.
+
+19. Go to the server machine, and run the setup program from the drive and
+   directory or floppy disks where Setup Wizard placed the compressed server
+   files and setup program.
+
+   At the completion of the setup program, assuming it completed successfully,
+   there should be icons for the RemAuto Connection Manager, the Automation
+   Manager, the server TestApp, and an icon to uninstall the server
+   application.
+
+STAGE 6 - CONFIGURATION OF OLE SERVER APPLICATION
+20. The Setup program should have registered the server application. To ensure
+   it works correctly, run TestApp.exe and then close it down by choosing Close
+   from the System menu of Form1.
+
+21. Start the 32-bit Remote Automation (RemAuto) Connection Manager on the
+   server. Choose the Client Access tab (this is the only tab we are concerned
+   with when on the server machine; on the client machine, we are only
+   concerned with the Server Connection tab).
+
+   Highlight TestApp.TestObj and choose the "Allow all Remote Creates" option,
+   press the Apply button and exit the Remote Connection Manager.
+
+22. Start the Automation Manager.
+
+STAGE 7 - CONFIGURATION OF CLIENT WORKSTATION
+23. Start the 32-bit Remote Connection Manager on the client machine. Go to the
+   Server Connection Tab.
+
+24. Highlight TestApp.TestObj. Fill in the details for network address, protocol
+   and Authentication. An example would be:
+
+      Machine:          Machine2
+      Protocol:          TCP/IP
+      Authentication:       None
+
+   Choose the Remote menu item from the Register menu. Press the Apply button
+   and exit the RemAuto Connection Manager.
+
+25. Start the Client Application via Explorer or File Manager. Click Form1 of
+   the client application and a Msgbox should appear on the Remote machine.
+   Click OK to close the message box and watch as the Automation Manager
+   returns to 0 connection(s) to 0 object(s) when the client-side object
+   reference is destroyed as the object variable goes out of scope. Shut down
+   the server and the client applications.
+
+16-Bit Client to 32-Bit Remote Server Example
+---------------------------------------------
+
+To follow through these steps, you will need Visual Basic 4.0 16-bit and 32- bit
+editions installed on a workstation that is going to represent the server
+machine. The server should be running either Windows 95, Windows 98, Windows
+2000, or Windows NT 3.51(or higher). A setup program for the client application
+is created. The client workstation can be running any operating system such as
+Windows 3.1, Windows 3.11, Windows 95, Windows 98, Windows 2000, or Windows NT
+3.51. (or higher).
+
+STAGE 1 - CREATION OF THE SERVER APPLICATION
+
+1. On the server workstation, start a new project in Visual Basic 4, 32- bit
+   Edition.
+
+2. Insert a class module into the Project by choosing Insert.Class Module from
+   the menu and set the properties of the Class to the following:
+
+      Instancing:    Creatable MultiUse
+      Name:         RemObject
+      Public:        True
+
+   Add the following code to the class module:
+
+         Public Sub MyMessage()
+         MsgBox "Hello there"
+         End Sub
+
+3. Go to Tools.Options from the menu and choose the Project tab. Set "Project
+   Name" = RemServer. Select the OLE Server radio button and press the OK
+   button.
+
+4. Choose File.Make EXE from the menu. Change the name of the program to
+   RemSer.exe. Before choosing OK, choose the Options button and check the
+   "Remote Server Support Files" check box. Now make the EXE file.
+
+5. Save the project files to the same location as the EXE file.
+
+6. Choose Tools.Options, and select the Project tab. Select the "Compatible OLE
+   Server" and select the EXE file "RemSer.exe". Choose OK, and then save the
+   project.
+
+7. Exit Visual Basic 4 32-bit edition, saving changes to the files. Go to File
+   Manager and run the server to ensure that it works.
+
+STAGE 2 - CREATION OF THE CLIENT
+8. On the server workstation, start Visual Basic 4, 16-bit Edition. Start a new
+   project, and Form1 is created by default.
+
+   Remove unnecessary controls from the project by choosing Tools.Custom Controls
+   from the menu, and unchecking all the controls. Since no controls have been
+   added to the form, all check boxes in the Custom Controls list box can be
+   cleared. In addition, remove all unnecessary references from the project.
+   This can be accomplished by selecting Tools.References and clearing all the
+   entries except for "Visual Basic For Applications," "Visual Basic objects and
+   procedures," and "Standard OLE Types." This will save time later on when in
+   the distribution stage for the server application.
+
+9. Choose Tools.. References from the menu. Check the entry for RemServer.
+
+10. Go to the Form_Click event for Form1, and place the following code:
+
+         Dim x As RemServer.RemObject
+         Set x = New RemServer.RemObject
+         x.MyMessage
+
+11. Save the project files and make an EXE into the same directory as the
+   project files for the client. From File Manager, run the client EXE on the
+   server machine, click on the form and it should launch the server and bring
+   up the message box. Shut down the client and server applications.
+
+STAGE 3 - CREATION OF THE CLIENT APPLICATION SETUP PROGRAM
+12. Run the 16-bit edition of the Setup Wizard. In Step 1 choose the VBP file
+   for the client application--do not select the Rebuild the Project EXE
+   option.
+
+13. Choose the Next button for Step 2, and in Step 3 choose to install into a
+   brand new directory. In Step4, choose the Add OLE Server button, change the
+   'List Files of Type:' text box to show 'Remote OLE Servers' instead of
+   'Local OLE Servers'. Locate the VBR file for the server which should be in
+   the directory where the server EXE was made. It asks for details when you
+   select the VBR file - type in the Network address (the Machine name), and
+   choose the protocol (TCP/IP recommended). Leave Authentication at None.
+   Choose OK and move on to the next step. Skip through Step 5 by choosing the
+   Next button, and in Step 6 leave the default, which is "Install in
+   Application Directory". Choose the Next button and in Step 7 choose the
+   Finish button.
+
+14. In File Manager, or Explorer, share the directory that contains the server
+   files.
+
+STAGE 4 - SETUP OF THE CLIENT
+15. On the client connect to the shared directory on the server machine
+   containing the compressed files and the setup program, and run the setup
+   program to install the client application to the client machine.
+
+STAGE 5 - TESTING IT OUT
+16. Start the Automation Manager on the server.
+
+17. Run the client and click on the client Form. You should get a Message Box on
+   the server. Close the message box and shut down both the client and the
+   server.
+
+16-Bit Client to 16-Bit Remote Server
+-------------------------------------
+
+In order to construct a 16-bit to 16-bit example, exactly the same steps used for
+the 16-bit client to 32-bit server example can be used, except that Stage 1 -
+Creation of the Server (steps 1-7 inclusive) would take place in Visual Basic
+4.0, 16-bit Edition. It is imperative to stress that the server must run on a
+32-bit operating system because the Automation Manager must be running, and this
+program is only available as a 32-bit application. In general, it is far
+preferable to run a 32-bit server because of performance and reliability
+reasons.
+
+Troubleshooting Remote OLE Problems
+-----------------------------------
+
+This article is useful for testing if Remote OLE is working at all - if the steps
+to create a new Remote OLE example above have been faithfully reproduced, and
+errors still occur, then it could indicate that there is a network configuration
+or other software problem. For additional troubleshooting information, please
+see the following article(s) in the Microsoft Knowledge Base:
+
+   Q141824 : Common Remote OLE Automation Errors
+
+Additional query words: kbVBp400 kbDSupport kbdse kbVBp
+
+======================================================================
+Keywords          : kbVBp400 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

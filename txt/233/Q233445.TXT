@@ -1,0 +1,65 @@
+DOCUMENT:Q233445  30-JUN-1999  [homemm]
+TITLE   :Business Planner: 20-Second Delay Before Program Starts
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Business Planner, you may experience a
+20-second delay before the program starts.
+
+CAUSE
+=====
+
+This behavior can occur if you are viewing a wizard interview page when you quit
+Business Planner, and one or more of the following conditions is true:
+
+ - You run Business Planner on a Microsoft Windows 95 or Microsoft Windows NT
+   4.0-based computer.
+
+ - You attempt to start Business Planner immediately after you quit the program.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, click Exit on the Wizard toolbar before
+you quit Business Planner.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: msbp delay prolonged slow
+
+======================================================================
+Keywords          : kbenv kbtool kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

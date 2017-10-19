@@ -1,0 +1,76 @@
+DOCUMENT:Q263601  03-MAY-2001  [visualc]
+TITLE   :BUG: C1001 When Using Certain float Values as Template Arguments
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbtemplate kbCompiler kbCPPonly kbVC600bug kbDSupport kbGrpDSVCCompiler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a float (or double) constant is a template argument in a template class and
+you instantiate the class by certain values of float, the compiler may generate
+the following error:
+
+   fatal error C1001: INTERNAL COMPILER ERROR (compiler file '.\outdname.c',
+   line 572) Please choose the Technical Support command on the Visual C++ Help
+   menu, or open the Technical Support help file for more information
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the bug:
+
+   // Test.cpp
+   // Compiler option needed:none
+   // Both of these examples produce the error.
+    
+   template<float f> class C { };
+   C<3.402823466E+38> minimum;
+    
+   template<float f, float g> class D { };
+   D<0., 2147000000.> range;
+
+Additional query words: "Compiler Error" C1001
+
+======================================================================
+Keywords          : kbtemplate kbCompiler kbCPPonly kbVC600bug kbDSupport kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

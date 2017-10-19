@@ -1,0 +1,59 @@
+DOCUMENT:Q134771  18-DEC-2000  [win95x]
+TITLE   :File Contents Changed After Running Compression Agent
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After running Compression Agent, you may notice that the contents of some files
+on the compressed drive have changed.
+
+CAUSE
+=====
+
+The changed files were created by a program that pre-allocates storage space by
+creating one large file on the hard disk. When the program needs to write a data
+file to the hard disk, it overwrites part of the original file with the data
+from the new file. This method of pre-allocating storage space leads to large
+areas of undefined disk space that are allocated to the original file. When
+Compression Agent runs, the contents of these areas may change.
+
+MORE INFORMATION
+================
+
+The contents that have changed are undefined areas that do not contain actual
+data. This change should not affect the performance of Windows 95 or your
+programs.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

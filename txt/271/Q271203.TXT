@@ -1,0 +1,88 @@
+DOCUMENT:Q271203  13-JUN-2001  [exchange]
+TITLE   :XADM: Accounts  Moved with Clone Principal Not Resolved
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes issues that occur when you use Clone Principal to move
+user accounts. When you use Clone Principal, user accounts have two Security ID
+numbers (SIDs), the SID for the previous Microsoft Windows NT 4.0 domain, and an
+SID for Windows 2000 Active Directory.
+
+MORE INFORMATION
+================
+
+When you select a user that has Exchange Server 5.5 Administrator accounts in
+Microsoft Windows 2000 Active Directory, if you have moved Active Directory by
+using Clone Principal, the user account may resolve to the new Active Directory
+account even if you selected the previous Windows NT 4.0 account. If you select
+the account from the Windows NT 4.0 domain, the account is displayed correctly.
+If you select a Windows 2000 account from the Windows NT 4.0 domain, the account
+is also displayed correctly.
+
+The following scenario is an example of this behavior:
+
+You have a user that was in the previous domain called WindowsNT4_DOM/user1. That
+user was moved to the Windows 2000 domain by using Clone Principal and now has
+two SIDs:
+
+ - One for the WindowsNT4_DOM/user1 account
+
+ - One for the new Windows2000_DOM/user1 account
+
+From the Windows 2000 domain:
+
+You have used the Microsoft Exchange Server Administrator program to associate
+the Windows NT account for the mailbox of User1 with the WindowsNT4_DOM/user1
+account. However, if you click the user account, and then click Apply, the
+account is resolved as the Windows2000_DOM/user1 account. This behavior occurs
+because the Administrator program gets its information from the Active Directory
+database; the Administrator program selects the first returned account for the
+SID, which is the new Windows2000_DOM account. The accounts both share the SID
+so that the user is able to log on to the mailbox and authenticate
+successfully.
+
+From a Windows NT 4.O domain:
+
+When you run the Administrator program on a Windows NT 4.0-based server in the
+Windows NT 4.0 domain, if you select the user from the Windows NT 4.0 domain,
+the account is resolved correctly. In addition, if you select the account from
+Windows2000_DOM/user1, the account also works correctly and displays
+"Windows2000_DOM/user1" in the associated Windows NT account dialog box.
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

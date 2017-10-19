@@ -1,0 +1,70 @@
+DOCUMENT:Q129515  17-DEC-2000  [win95x]
+TITLE   :File Transfer Using Zmodem Protocol Hangs HyperTerminal
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you transfer a file to another computer in HyperTerminal using the Zmodem
+protocol, HyperTerminal seems to stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions are met:
+
+ - The filename begins with a backslash (\).
+
+ - The filename is "C:" (without the quotation marks).
+
+
+RESOLUTION
+==========
+
+To work around this behavior, use either of the following methods:
+
+ - Use another protocol, such as Xmodem, to transfer the file in Hyper-
+   Terminal.
+
+ - Rename the file.
+
+MORE INFORMATION
+================
+
+When the situation described in the "Symptoms" section occurs, Hyper- Terminal
+generates a fault that is passed to the Windows 95 exception handler. The
+Windows 95 exception handler determines that the fault should be handled by
+HyperTerminal and passes the fault back. The fault is passed back and forth in
+an internal loop until there is a stack overflow.
+
+Additional query words: upload ymodem ymodemg ymodem-g hyperterm
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

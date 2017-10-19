@@ -1,0 +1,180 @@
+DOCUMENT:Q107567  12-JUN-2001  [sna]
+TITLE   :Configuring SNA Server through a 3174 Gateway via 802.2
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This document provides the configuration parameters required on an IBM 3174
+controller acting as an 802.2 gateway for SNA Server.
+
+Note: SNA Server can connect through the 3174 gateway feature over either Token
+Ring or Ethernet. The 3174 can connect to the host over any supported link
+interface.
+
+MORE INFORMATION
+================
+
+SNA Server can access a host system through an IBM 3174 controller, where the
+3174 is configured to support a downstream PU 2.0 computer through the 3174
+gateway feature.
+
+In this configuration, SNA Server is configured with an 802.2 connection with
+"remote end=host" (as a secondary PU 2.0 node), where the 3174 provides the
+gateway function to a mainframe system.
+
+On the SNA Server computer, do the following:
+
+1. Run SNA Server Setup and add an 802.2 link service.
+
+2. Run SNA Server Admin and configure the 802.2 connection (associated with the
+   802.2 link service) from the Servers And Connections dialog box, using the
+   following properties:
+    - Remote End: Host System
+
+    - Activation: (as desired by the administrator--default for 802.2
+      connections is On Server Startup)
+
+    - Allowed Directions: Outgoing Calls must be selected (Incoming optional)
+
+3. Zoom on the Setup button, and set the following additional parameters:
+    - Remote Network Address: Enter the network card interface address of the
+      3174. This is set in Response 900 in the 3174 customization program.
+
+      NOTE: If the 3174 is connecting to the host via X.25, Response 900 is no
+      longer the destination for the SNA Servers on the network. The 3174
+      gateway now performs as a bridge between the SNA Servers on the network
+      (Token Ring or Ethernet) and the X.25 hosts. Therefore, the destination
+      for the SNA Servers is the ring address assigned to the X.25 host via
+      Response 943 in the 3174 Customization program.
+
+    - Local Node ID and Remote Node Name fields: not used--leave to defaults.
+
+    - The Advanced settings can be left at the default settings.
+
+4. Return to the main Servers And Connections dialog box. Focus on the 802.2
+   connection and create all required LUs off the connection (that is, 3270, LUA
+   and/or dependent APPC LUs).
+
+5. Optional: Configure pools of LUs through the LU Pools dialog box of SNA
+   Server Admin.
+
+6. Using the Users And Groups dialog box in SNA Server Admin, assign LUs and/or
+   LU Pools to the appropriate users and groups.
+
+On the IBM 3174 computer, do the following:
+
+1. Using the 3174 configuration utility, configure downstream devices in Panel
+   940. Enter the SNA Server Token Ring network card (MAC) address in this
+   panel. You can find the network card address of the SNA Server computer by
+   entering "NET CONFIG WKSTA" from the command line of the Windows NT
+   computer.
+
+   When connecting over Ethernet, set the network card address in the 3174 Panel
+   940 to the bit-flipped version of the SNA Server local Ethernet address. The
+   3174 appears to bit-flip the incoming source address on the SNA Server XID
+   message before matching against the addresses in the 940 screen. See below
+   for instructions for determining the bit-flipped address.
+
+   Most Windows NT adapters support overriding the network card address through
+   the Windows NT network control panel. So, the SNA Server local network
+   address could be set to match the address in Panel 940 on the 3174.
+
+
+The 3174 gateway feature recognizes the SNA Server computer by it's network card
+address only. If the address in Panel 940 does not match (either the actual
+address if Token Ring, or the bit-flipped address if Ethernet), the SNA Server
+connection will stay "Pending" and the following error will be reported in the
+Windows NT application event log:
+
+   Event: 230 Remote station not responding to XID commands
+
+NOTE: If the 3174 is communicating to the host via X.25, Panel 940 is not used to
+configure downstream devices. 3174 Configuration Questions 942, 943 and 944 are
+used to help identify which downstream devices can communicate with the X.25
+hosts.
+
+2. Set the T value in panel 940 to Controller and not Workstation. If it is set
+   to Workstation, the connection (PU) will become active but the LUs defined in
+   SNA Server Admin will remain inactive. To allow "Workstation" to work
+   properly, the SNA Server connection must be configured to send a Format 0 XID
+   (configurable within SNA Server Admin connection's setup / advanced dialog).
+
+3. Complete the 3174 configuration and reload it according to 3174 procedures.
+
+Determining a bit-flipped Ethernet address:
+
+1. Separate the 12-digit hexadecimal address into a set of two digits. For
+   example:
+
+   40000A123456       ->   40 00 0A 12 34 56
+
+2. Reverse the positions of the characters in each of the two-digit sets. For
+   example:
+
+   40 00 0A 12 34 56  ->   04 00 A0 21 43 65
+
+3. Use the table below to bit-reverse each digit. For example:
+
+   04 00 A0 21 43 65  ->   02 00 50 48 2C 6A
+
+   Conversion Table
+   ----------------
+
+   Original  Converted
+   Bit       Bit
+   --------  ---------
+   0          0
+   1          8
+   2          4
+   3          C
+   4          2
+   5          A
+   6          6
+   7          E
+   8          1
+   9          9
+   A          5
+   B          D
+   C          3
+   D          B
+   E          7
+   F          F
+
+4. After bit-reversing each digit, combine the six pairs into a 12-digit
+   hexadecimal address. For example:
+
+   020050482C6A
+
+Additional query words: prodsna 3174 gateway snafaq
+
+======================================================================
+Keywords          : kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

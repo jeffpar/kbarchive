@@ -1,0 +1,57 @@
+DOCUMENT:Q258627  30-MAR-2000  [homegame]
+TITLE   :Baseball 2001: Parts of Outfield Are Not Displayed Correctly
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you play Microsoft Baseball 2001, parts of the outfield may not be
+displayed correctly. For example, areas of the outfield grass may appear white
+on the screen.
+
+MORE INFORMATION
+================
+
+To resolve this issue, turn off MIP mapping:
+
+1. Start Baseball 2001.
+
+2. On the Home Plate screen, click Options.
+
+3. Click the Graphics tab.
+
+4. Click to set the MIP Mapping option to Off, and then click OK.
+
+Additional query words: 1.00 msgame bb2001 bball discolored field
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

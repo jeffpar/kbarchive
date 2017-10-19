@@ -1,0 +1,71 @@
+DOCUMENT:Q130301  10-FEB-2000  [foxpro]
+TITLE   :PRB: INSERT Command Fails with Buffering and Integrity Rules
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs when you issue an INSERT command on a table in which
+fields have validation rules or when table or row buffering is enabled:
+
+   INSERT cannot be issued when row or table buffering is enabled or when
+   integrity constraints are in effect.
+
+CAUSE
+=====
+
+The INSERT command is included with Visual FoxPro for backward compatibility. It
+cannot be used on a table in a database that has table or row buffering enabled,
+or on a table with referential integrity rules such as triggers, primary keys,
+or candidate keys.
+
+WORKAROUND
+==========
+
+To use the INSERT command on tables that do not have referential integrity
+rules, buffering can be disabled with the CURSORSETPROP() function. The
+following code may be executed from the Command window to disable row and table
+buffering:
+
+      =CURSORSETPROP("Buffering",1)
+
+If a table has referential integrity rules the INSERT SQL command or the APPEND
+command may be used instead of the INSERT command.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

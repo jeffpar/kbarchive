@@ -1,0 +1,83 @@
+DOCUMENT:Q282458  15-AUG-2002  [iis]
+TITLE   :502 Access Denied Errors Occur When There Are a Large Number of
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbSysAdmin kbWin2000sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A News Reader client may receive "502 Access Denied" error messages when
+attempting to view the contents of a folder for which they have permissions to
+view.
+
+CAUSE
+=====
+
+The NNTP folder contains a large number of security descriptors for users who
+have permissions to view the contents of this folder. The buffer that is set
+aside to hold these security descriptors is not large enough to hold all the
+descriptors, and therefore, none of the security descriptors are retrieved.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date       Time    Version         Size     File name  
+   ------------------------------------------------------
+   5/31/2001  03:31p  5.0.2195.3649  610,576  Nntpsvc.dll
+
+
+WORKAROUND
+==========
+
+To work around this problem, create nested groups that contains more groups and
+individuals. This will reduce the size of immediate permissions on the folder.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Internet Information Services
+5.0. This problem was first corrected in Windows 2000 Service Pack 3.
+
+Additional query words: kbMgmtAdmin
+
+======================================================================
+Keywords          : kbSysAdmin kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

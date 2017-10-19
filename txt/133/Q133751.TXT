@@ -1,0 +1,55 @@
+DOCUMENT:Q133751  30-DEC-1999  [automap]
+TITLE   :Streets 4.0: Street Address Displayed on Wrong Side of Street
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+4.00
+WINDOWS
+kbusage kbui kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The address label places the address on the wrong side of the street when you
+use the Go To option to find a street address in Automap Streets.
+
+CAUSE
+=====
+
+Microsoft Automap Streets is designed to put the address label toward the center
+of the window. This feature is by design. The address location feature is
+designed to give an approximate location for the address, and to assist you in
+planning your route based on the address.
+
+Additional query words: auto auto-map label goto go-to opposite
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+Version           : WINDOWS:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

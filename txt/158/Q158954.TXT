@@ -1,0 +1,64 @@
+DOCUMENT:Q158954  10-AUG-2001  [winnt]
+TITLE   :Fd8xx.sys Times Out Repeatedly with Quantum xp32150
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a Quantum xp32150 SCSI hard disk with a Future Domain
+8xx-series SCSI controller, Fd8xx.sys times out repeatedly. The system may pause
+and application error messages may occur.
+
+CAUSE
+=====
+
+An incompatibility exists between the Quantum xp32150 hard disk and the Future
+Domain 8xx-series controller.
+
+RESOLUTION
+==========
+
+Removing the xp32150 hard disk from the SCSI bus prevents the timeouts from
+occurring.
+
+MORE INFORMATION
+================
+
+When Windows NT is installed on the Quantum hard disk, frequent timeouts can
+result. A demonstration of the timeouts can be performed by running Disk
+Administrator and attempting to detect tape devices at the same time. This can
+cause the system to pause for up to 10 seconds.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q112098  16-NOV-1999  [pcmail]
+TITLE   :PC MMTA: Err Msg: 999:55 Drive in Use. Attempting to Use...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use dynamic drive connections when you run version 3.2 of the Microsoft
+Mail Multitasking Message Transfer Agent (MTA) under OS/2 (version 1.3 or
+later), NetWare 3.11 or 3.12 file servers, or the Novell redirector for OS/2
+(version 1.3 or later), the following error message may appear:
+
+   999:55 Drive in use. Attempting to use local or mapped drive.
+
+CAUSE
+=====
+
+This error results from a problem in the Novell redirector for OS/2. The problem
+is that the drive connections are not closed properly.
+
+RESOLUTION
+==========
+
+To obtain the latest update to the NetWare Requestor for OS/2, contact Novell at
+(800) 638-9273.
+
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailMMTA320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

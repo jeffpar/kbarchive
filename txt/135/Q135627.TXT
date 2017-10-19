@@ -1,0 +1,77 @@
+DOCUMENT:Q135627  24-MAR-2000  [foxpro]
+TITLE   :FIX: Logical Fields Unavailable in Step 4 of Query Wizard
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Logical Fields are unavailable in Step 4 - Filtering of the Query Wizard.
+
+WORKAROUND
+==========
+
+Step 4 of the Query Wizard is used to filter your data. Because logical fields
+are unavailable, the Query Designer must be used to modify and execute the
+query. On the Final step of the Query Wizard, Finish, select the 'Save query and
+modify it in the Query Designer' option. In the Query Designer, in the Selection
+Criteria tab, drop down the Fields list and select the desired logical field.
+Select the filter criteria, and enter the example (.T. or .F.). Then execute the
+query.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual FoxPro 3.0b
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a table containing logical fields or open an existing table that has
+   logical fields.
+
+2. On the Tools menu, click Wizards and then Query. Open the Query Wizard.
+
+3. On Step 1, select the desired table. Then select the desired fields,
+   including a logical field.
+
+4. On Step 4, the logical field will not be available for filtering.
+
+Additional query words: 3.00 VFoxWin fixlist3.00b buglist3.00
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

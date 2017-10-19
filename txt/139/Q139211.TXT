@@ -1,0 +1,54 @@
+DOCUMENT:Q139211  13-JUN-2001  [sna]
+TITLE   :Win32 RECEIVE_AND_POST Uses an Event Handle, Not a Semaphore
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SNA Server APPC Programmer's Guide included with SNA Server 2.0, 2.1 and
+2.11 incorrectly documents a sema parameter in the description of the
+[MC_]RECEIVE_AND_POST function.
+
+On Windows NT, the sema parameter is an auto-reset event object obtained by
+calling either the CreateEvent or OpenEvent Win32 functions. Because the Win32
+APPC interface uses an auto-reset event object, the application does not need to
+manage the state of the event when calling [MC_]RECEIVE_AND_POST.
+
+On OS/2, the sema parameter is either a RAM or system semaphore.
+
+This correction is documented in the SNA Server 2.11 Enhancements Guide.
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

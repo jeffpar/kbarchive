@@ -1,0 +1,92 @@
+DOCUMENT:Q93133  31-OCT-1999  [pcmail]
+TITLE   :PC DOS: Advanced Security on NetWare MS-DOS Client
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The advanced security feature provided by version 3.0 of Microsoft Mail for PC
+Networks is designed for networks that support MS-DOS Interrupt 21, Function 5F.
+Novell NetWare's shell (Netx or IPX) does not support this call.
+
+RESOLUTION
+==========
+
+You can work around this problem on a Microsoft Mail for MS-DOS Novell NetWare
+workstation by using the following procedure:
+
+1. Create a batch file with the following commands:
+
+         @echo off
+         cls
+         ;Set search drive to mail executables:
+         MAP INS S1:=server name/volume name:mail exe dir_name
+
+         ;Set drive mapping to mail database:
+         MAP M: =server name/volume name:mail database dir_name
+
+         ;Start mail program:
+         MAIL
+
+         ;Delete search drive to mail executable:
+         MAP DEL S1:
+
+         ;Delete drive mapping to mail database:
+         MAP DEL M:
+
+2. Store the batch file in a public share subdirectory that is on your
+   workstation's search path after logging in. Flag the batch file as RSH (read
+   only, sharable, hidden) by using the following command:
+
+   flag <filename> rsh
+
+3. Run the batch file. It will establish the proper drive mappings and start
+   Microsoft Mail.
+
+When you exit from Microsoft Mail, the batch program will delete the drive
+mappings and return you to the MS-DOS prompt. Because the batch file is flagged
+as read only and hidden, a user other than yourself, working at your
+workstation, will not be able to access the file unless he or she knows the
+filename. Even if he or she could access the file, he or she cannot modify the
+batch file because you flagged it as read only.
+
+To prevent the user from shelling out to MS-DOS from within the MS-DOS Mail
+client, you should disable this right when creating the user. For information on
+how to do this, see page 96 of the Microsoft Mail "Administrator's Guide."
+
+As an additional option, you can place the command BREAK=OFF in the workstation's
+CONFIG.SYS file. This will prevent someone from terminating the batch file in
+the middle of execution after the drive mappings have been established.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

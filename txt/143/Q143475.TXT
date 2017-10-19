@@ -1,0 +1,312 @@
+DOCUMENT:Q143475  04-OCT-2001  [winnt]
+TITLE   :Windows NT System Key Permits Strong Encryption of the SAM
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Datacenter Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Windows NT Server 4.0 System Key hotfix provides the capability to use
+strong encryption techniques to increase protection of account password
+information stored in the registry by the Security Account Manager (SAM).
+Windows NT Server stores user account information, including a derivative of the
+user account password, in a secure portion of the Registry protected by access
+control and an obfuscation function. The account information in the Registry is
+only accessible to members of the Administrators group. Windows NT Server, like
+other operating systems, allows privileged users who are administrators access
+to all resources in the system. For installations that want enhanced security,
+strong encryption of account password derivative information provides an
+additional level of security to prevent Administrators from intentionally or
+unintentionally accessing password derivatives using Registry programming
+interfaces.
+
+This file has been posted to the following Internet location:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postsp2/sec-fix/
+
+NOTE: If you want to change where the SYSKEY key is stored, use the SYSKEY tool
+do not modify the registry directly. If you modify the registry, SYSKEY will
+work correctly but give the impression that it is not.
+
+IMPORTANT: For important information about a security issue with the Syskey tool,
+see the following article in the Microsoft Knowledge Base:
+
+   Q248183 Syskey Tool Reuses Keystream
+
+MORE INFORMATION
+================
+
+The strong encryption capability with the Windows NT 4.0 System Key hotfix is an
+optional feature. Administrators may choose to implement strong encryption by
+defining a System Key for Windows NT. Strong encryption protects private account
+information by encrypting the password data using a 128-bit cryptographically
+random key, known as a password encryption key.
+
+Only the private password information is strongly encrypted in the database, not
+the entire account database. Every system using the strong encryption option
+will have a unique password encryption key. The password encryption key is
+itself encrypted with a System Key. Strong password encryption may be used on
+both Windows NT Server and Workstation where account information is stored.
+Using strong encryption of account passwords adds additional protection for the
+contents of the SAM portion of the registry and subsequent backup copies of the
+registry information in the %systemroot%\repair directory created using the
+RDISK command and on system backup tapes.
+
+The System Key is defined using the command Syskey.exe. Only members of the
+Administrators group can run the Syskey.exe command. The utility is used to
+initialize or change the System Key. The System Key is the "master key" used to
+protect the password encryption key and therefore protection of the System Key
+is a critical system security operation.
+
+There are three options for managing the System Key designed to meet the needs of
+different Windows NT environments. The System Key options are the following:
+
+ - Use a machine-generated random key as the System Key and store the key on the
+   local system using a complex obfuscation algorithm. This option provides
+   strong encryption of password information in the registry and allows for
+   unattended system restart.
+
+ - Use a machine-generated random key and store the key on a floppy disk. The
+   floppy disk with the System Key is required for the system to start and must
+   be inserted when prompted after Windows NT begins the startup sequence, but
+   before the system is available for users to logon. The System Key is not
+   stored anywhere on the local system.
+
+ - Use a password chosen by the Administrator to derive the System Key. Windows
+   NT will prompt for the System Key password when the system is in the initial
+   startup sequence, but before the system is available for users to logon. The
+   System Key password is not stored anywhere on the system. An MD5 digest of
+   the password is used as the master key to protect the password encryption
+   key.
+
+The System Key options using either a password or requiring a floppy disk
+introduce a new prompt during the initialization of the Windows NT operating
+system. They offer the strongest protection option available because master key
+material is not stored on the system and control of the key can be restricted to
+a few individuals. On the other hand, knowledge of the System Key password, or
+possession of the System Key disk is required to boot the system. (If the System
+Key is saved to a floppy disk, backup copies of the System Key disk are
+recommended.) Unattended system restart may require that System Key material be
+available to the system without Administrator response. Storing the System Key
+on the local system using a complex obfuscation algorithm makes the key
+available only to core operating system security components. In the future, it
+will be possible to configure the System Key to obtain the key material from
+tamper proof hardware components for maximum security.
+
+WARNING: If the System Key password is forgotten or the System Key floppy disk is
+lost, it may not be possible to start the system. Protect and store the System
+Key information safely with backup copies in the event of emergency. The only
+way to recover the system if the System Key is lost is using a repair disk to
+restore the registry to a state prior to enabling strong encryption. See the
+Repair Issues section below.
+
+Strong encryption may be configured independently on the Primary and each Backup
+Domain Controllers (DCs). Each domain controller will have a unique password
+encryption key and a unique System Key. For example, the Primary DC may be
+configured to use a machine generated System Key stored on a disk, and Backup
+DCs may each use a different machine generated System Key stored on the local
+system. A machine generated System Key stored locally on a Primary domain
+controller is not replicated.
+
+Before enabling strong encryption for Primary domain controllers, you may want to
+ensure a complete updated Backup domain controller is available to use as a
+backup system until changes to the Primary domain are complete and verified.
+Before enabling strong encryption on any system, Microsoft recommends making a
+fresh copy of the Emergency Repair Disk, including the security information in
+the registry, using the command, RDISK /S. Please see the following article in
+the Microsoft Knowledge Base prior to using RDISK /S:
+
+   ARTICLE-ID: Q122857
+   TITLE : RDISK /S and RDISK /S- Options in Windows NT
+
+The SYSKEY command is used to select the System Key option and generate the
+initial key value. The key value may be either a machine generated key or a
+password derived key. The SYSKEY command first displays a dialog showing whether
+strong encryption is enabled or disabled. After the strong encryption capability
+is enabled, it cannot be disabled. To enable strong authentication of the
+account database, select the option "Encryption Enabled", and click OK. A
+confirm dialog appears reminding the administrator to make an updated emergency
+repair disk. A new dialog appears presenting options for the Account Database
+Key. Use the options available on Account Database Key dialog to select the
+System Key.
+
+After selecting the System Key option, Windows NT must be restarted for the
+System Key option to take effect. When the system restarts, the administrator
+may be prompted to enter the System Key, depending on the key option chosen.
+Windows NT detects the first use of the System Key and generates a new random
+password encryption key. The password encryption key is protected with the
+System Key, and then all account password information is strongly encrypted.
+
+The SYSKEY command needs to be run on each system where strong encryption of the
+account password information is required. SYSKEY supports a "-l" command option
+to generate the master key and store the key locally on the system. This option
+enables strong password encryption in the registry and allows the command to run
+without an interactive dialog. The SYSKEY command can be used at a later time to
+change the System Key options from one method to another, or to change the
+System Key to a new key. Changing the System Key requires knowledge of, or
+possession of, the current System Key. If the password derived System Key option
+is used, SYSKEY does not enforce a minimum password length, however long
+passwords (greater than 12 characters) are recommended. The maximum System Key
+password length is 128 characters.
+
+SYSKEY should be applied to all domain controllers. If this is not done, the SAM
+on the backup domain controllers (BDCs) will not be as secure as that on the
+primary domain controller (PDC). Thus, the point of installing SYSKEY would be
+defeated.
+
+REPAIR ISSUES
+-------------
+
+Introduction of strong encryption of account password information changes the
+SYSTEM and SAM portions of the registry in ways that affect the repair options
+available for recovery of a Windows NT system. Always use the RDISK command with
+the /S option to create a new Emergency Repair Disk including a backup copy of
+the SYSTEM and SAM portion of the registry in the \Repair folder.
+
+For complete recovery options, the following Emergency Repair Disks should be
+available:
+
+ - Prior to installing the System Key hotfix, create a fresh repair disk. This
+   disk is a "pre-hotfix" repair disk that contains a copy of the system
+   configuration and account information prior to installation of the hotfix.
+   The "pre-hotfix" repair disk may be used to recover the registry and system
+   files using the Windows NT distribution CDROM.
+
+ - After installation of the System Key hotfix, but before enabling strong
+   encryption using the SYSKEY command, create a repair disk. This repair disk
+   is "hotfix - Before Encryption". This repair disk can be used to repair the
+   Registry to the state before strong encryption is enabled, for example it may
+   be used to recover a system if the Windows NT System Key is lost or
+   forgotten.
+
+ - After running SYSKEY to enable strong encryption, create a repair disk. This
+   repair disk is "hotfix - After Encryption". This repair disk, and subsequent
+   updates to this repair disk, can be used to recover the registry with strong
+   encryption intact using the System Key in effect at the time the repair disk
+   was last updated.
+
+The System Key hotfix support for strong encryption affects the following system
+components:
+
+ - SYSTEM and SAM registry hives
+
+ - Three system security component files: Winlogon.exe, Samsrv.dll, Samlib.dll
+
+In general, the repair process needs to use matching versions of these
+components. Whatever repair option you choose, the repair process will
+coordinate repair of the registry hives with the matching system files.
+
+The following table lists the recovery options available.
+
+Desired System        Repair disk to        Repaired System
+Configuration         apply
+after Repair
+--------------------------------------------------------------------------
+
+Windows NT 4.0,       Use the "Pre-hotfix"  Registry matches system before
+prior to hotfix       repair disk           hotfix installed; the three
+installation                                system security component
+                                            files need to be repaired from
+                                            the Windows NT 4.0 compact
+                                            disc to match the pre-hotfix
+                                            registry format.
+
+Windows NT 4.0 with   Use the "hotfix -     Registry matches the system
+hotfix installed,     Before Encryption"    before strong encryption.
+but strong            repair disk           System Key is not in effect;
+encryption is not                           strong encryption not enabled.
+enabled                                     System security files do not
+                                            need to be repaired from the
+                                            Windows NT 4.0 compact disc.
+
+Windows NT 4.0 with   Use the "hotfix -     Registry matches the system
+hotfix installed,     After Encryption"     with strong encryption
+and strong            repair disk           enabled; the System Key in
+encryption is                               effect is the System Key used
+enabled                                     at the time the repair disk
+                                            was made.
+
+In the event that an Administrator needs to repair the system after the System
+Key hotfix is installed, both the SYSTEM and SAM portions of the registry need
+to be repaired at the same time. The System Key option in the SYSTEM portion of
+the registry must match the strong encryption key used for the SAM portion of
+the registry. If one registry hive is repaired without the other, it may be
+possible for the system to try to use a different System Key option (password
+derived or machine generated) that does not match the strong encryption key used
+for the account password information.
+
+Installation of the System Key hotfix will update the checksums for the system
+security component (Winlogon.exe, Samsrv.dll, Samlib.dll) in the System.log
+file. The System.log file is saved on the Emergency Repair Disk. The System.log
+file is used during recovery to determine if the files need to be updated from
+the Windows NT Server 4.0 CD-ROM to match the pre-hotfix registry configuration.
+If the desired recovery system configuration is Windows NT Server 4.0 with the
+System Key hotfix, you will not be asked to repair these system security files.
+
+After installing the System Key hotfix, and you have not enabled strong
+encryption, if you attempt to repair the system files using a repair disk
+created before installing the System Key hotfix (that is, using the "pre-
+hotfix" repair disk) you also MUST repair the SYSTEM and SAM registry. If you do
+not repair the registry, the system files and registry format will not match.
+You will get an error (error number C00000DF) when you attempt to log on. When
+the registry and system files are mismatched, the recovery procedure is to
+repair matching system and registry files. Either repair the registry hives from
+the same "pre-hotfix" repair disk, or use the "hotfix - Before Encryption"
+repair disk, which has a registry format that matches the System Key hotfix
+system files.
+
+Finally, if you have a situation where the system security files (Winlogon,
+Samsrv.dll, Samlib.dll) are corrupted, then you must recover the system using a
+"Pre-hotfix" repair disk and repair the corrupted files from a Windows NT Server
+4.0 CD-ROM. You must also repair the SYSTEM and SAM registry hives to match the
+system files from the "Pre-hotfix" repair disk.
+
+Current United States export regulations allow the use of 128-bit encryption keys
+to be used to protect authentication data, such as passwords. The encryption
+keys used for Syskey are specific to the protection of passwords stored in SAM
+and the Security portion of the registry. There are no application APIs
+available for using 128-bit Syskey encryption for general-purpose data
+protection.
+
+In Windows 2000 and later operating systems, Syskey is enabled automatically, and
+may not be disabled. The only option available for modification is to move the
+startup key to a floppy disk rather than using local storage.
+
+Additional query words: sp3
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

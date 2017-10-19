@@ -1,0 +1,82 @@
+DOCUMENT:Q236069  03-AUG-1999  [foxpro]
+TITLE   :PRB:View Field Properties Window Defaults to First Field of View
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbDesigner kbvfp600bug KbDBFDBC kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When displaying the properties of any field in the Selected Fields list of a
+view, only the properties of the first listed field are available.
+
+This worked properly in Visual FoxPro 5.0. However, Visual Studio 6.0 Service
+Pack 3 does not fix this problem.
+
+RESOLUTION
+==========
+
+Open the Properties dialog box and choose the desired field from the Field
+drop-down list. This will cause the field properties to refresh correctly.
+
+STATUS
+======
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a local or remote view in Visual FoxPro 6.0. Use a table that has
+   fields of differing data types.
+
+2. With the View Designer open, modify the view by right-clicking on it and
+   choosing Modify.
+
+3. Highlight the first field in the Selected Fields list and press the
+   Properties button on the View Designer.
+
+4. In the View Field Properties window, note the name of the field displayed in
+   the Field text box. Close the dialog.
+
+5. Highlight any other field in the Selected Fields list and press the
+   Properties button again.
+
+In the View Field Properties window, observe that the name of the first field
+still appears in the Field text box. The Field, Data Type, and Width text boxes
+are not being updated.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbDesigner kbvfp600bug KbDBFDBC kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

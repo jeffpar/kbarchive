@@ -1,0 +1,139 @@
+DOCUMENT:Q198941  10-AUG-2001  [winnt]
+TITLE   :Users Cannot Change Password When Logging On
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user on a computer running Windows NT Workstation logs on with an expired
+password and is prompted to change the password, he or she receives either of
+the the following errors:
+
+   You do not have permission to change your password.
+
+-or-
+
+   Unable to change the password on this account (C00000BE). Please consult your
+   system administrator.
+
+CAUSE
+=====
+
+Users can receive the above error messages under a variety of conditions. The
+underlying cause for these errors is a security registry change involving the
+RestrictAnonymous value. For additional information about the RestrictAnonymous
+value, please see the following articles in the Microsoft Knowledge Base:
+
+   Q143474 Restricting Information Available to Anonymous Logon Users
+
+Scenario 1
+----------
+
+In this scenario, the following conditions are true:
+
+ - RestrictAnonymous is enabled on the PDC.
+
+ - The primary domain controller (PDC) is running Service Pack 3 (SP3).
+
+ - The clients are running SP3.
+
+ - Strong passwords are enforced on the domain, either by Passfilt.dll or
+   Passprop.exe from the Windows NT resource kit, or a minimum password length
+   is specified in the Account Policy in User Manager for Domains.
+
+If the client attempts to change an expired password when logging on and it does
+not meet the password requirements, the following error message will be
+displayed:
+
+   You do not have permission to change your password.
+
+If the password meets the password requirements, the password should be changed
+successfully. The error text is reported incorrectly and should state that the
+user's password does not meet the domain policy. This issue is addressed in
+SP4.
+
+Scenario 2
+----------
+
+In this scenario, the following conditions are true:
+
+ - RestrictAnonymous is enabled on the PDC.
+
+ - The PDC is running Service Pack 4 (SP4).
+
+ - The clients are running SP3.
+
+If the client attempts to change an expired password when logging on, the
+following error message will be displayed:
+
+   Unable to change the password on this account (C00000BE). Please consult your
+   system administrator.
+
+Because a null session is used for this password change, the operation fails.
+
+Scenario 3
+----------
+
+In this scenario, administrators can have the "Users must log on in order to
+change password" account policy enabled. For additional information, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q135060 Access Denied Attempting to Change Client Domain Password
+
+RESOLUTION
+==========
+
+To work around this problem, remove the RestrictAnonymous entry or set the value
+to 0, and then restart the PDC. This workaround will resolve both scenarios
+above. In scenario 2, upgrading the clients to Service Pack 4 will also resolve
+the problem.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q196289 PRB: SP3 Clients Cannot Change Passwords - Error C00000BE
+
+   Q161990 How to Enable Strong Password Functionality in Windows NT
+
+   Q174076 Invalid Password Message When Strong Passwords Are Required
+
+   Q158388 Useful Resource Kit Utilities for Domain Administrators
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

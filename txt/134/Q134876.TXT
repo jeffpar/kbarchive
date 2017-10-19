@@ -1,0 +1,72 @@
+DOCUMENT:Q134876  07-SEP-2001  [powerpt]
+TITLE   :PPT7: PowerPoint Hangs After Canceling "Print To File"
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbenv kbprint kbPrintingkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are printing a PowerPoint for Windows 95 presentation to a printer whose
+port is set to FILE and you cancel the print job, PowerPoint hangs (stops
+responding), even after you try to cancel the File dialog box that asks you for
+a filename.
+
+CAUSE
+=====
+
+This problem occurs if background printing is turned on and you have not
+selected the Print To File check box in the Print dialog box.
+
+RESOLUTION
+==========
+
+You can prevent this problem by turning off background printing:
+
+1. In PowerPoint, click Options on the Tools menu.
+
+2. Click the General tab. Clear the Print In Background check box.
+
+If you don't want to disable background printing, be sure to select the Print To
+File check box in the Print dialog box, even if the printer driver is already
+set up to print to a port called FILE.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PowerPoint version 7.0 for
+Windows 95. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 7.00 ppt95 hang hung crash crashed locks locked frozen freezes crashing quit quits stopped crashes bomb stop responding hp postscript slides
+
+======================================================================
+Keywords          : kbenv kbprint kbPrinting kbbuglist
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

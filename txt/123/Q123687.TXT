@@ -1,0 +1,78 @@
+DOCUMENT:Q123687  03-NOV-1999  [fortran]
+TITLE   :Enabling CTRL+C and CTRL+BREAK by Using PeekcharQQ
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To break out of a long running program, it is customary to use CTRL+C or
+CTRL+BREAK. However, MS-DOS only checks for CTRL+C or CTRL+BREAK when processing
+keyboard input. If there is no keyboard input in a loop (it contains only
+calculations), the program is likely to ignore CTRL+C and CTRL+BREAK.
+
+The PeekcharQQ() function performs keyboard input processing and should not
+significantly slow down your program, if used cautiously.
+
+MORE INFORMATION
+================
+
+When you call PeekcharQQ() in a long loop, MS-DOS checks the keyboard for input.
+If CTRL+C or CTRK+BREAK was pressed, the program terminates.
+
+In the sample code in this article, PeekcharQQ() is called thousands of times a
+second. In an actual application, this would noticeably slow the program. It is
+usually sufficient to place calls to PeekcharQQ() so that it is called at most a
+few times a second.
+
+NOTE: Sometimes the following simple code will break on a CTRL+C even without the
+call to PeekcharQQ(). However, more complex code will require adding calls to
+PeekcharQQ() to allow CTRL+C or CTRL+BREAK processing.
+
+Sample Code
+-----------
+
+   C Compile Options needed: none
+
+         include'flib.fi'
+         include'flib.fd'
+
+         logical l
+
+         do i=1,1000000
+            x = sqrt(i)
+            l = peekcharqq()
+         end do
+         end
+
+Additional query words: kbinf nofpsnt 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,74 @@
+DOCUMENT:Q153198  16-DEC-1999  [homemm]
+TITLE   :Encarta 96 ErrMsg: Setup Tried to Create an Invalid Path
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbmm kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you install Encarta Encyclopedia for Windows, 1996 edition, you receive
+one of the following error messages.
+
+Windows 95 Error Message:
+
+   Setup tried to create an invalid path using D:\ and Encarta\Pidholdr.dll
+
+Windows 3.x Error Message:
+
+   Could not open the file D:\ENCARTA\PIDHOLDR.DLL
+
+CAUSE
+=====
+
+Your CD-ROM drive letter has changed since the original installation of
+Microsoft Encarta.
+
+RESOLUTION
+==========
+
+Remove and then reinstall Encarta using the following steps:
+
+1. Run Encarta Setup. Select the Remove All option.
+
+2. Complete the Setup removal process.
+
+3. Run Encarta Setup again to reinstall Encarta.
+
+MORE INFORMATION
+================
+
+This problem often occurs after you install a second hard drive. In many cases,
+this causes your CD-ROM drive designation to change from drive D to drive E.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm encarta setup error errmsg
+
+======================================================================
+Keywords          : kbenv kberrmsg kbmm kbsetup 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

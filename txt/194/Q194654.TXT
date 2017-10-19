@@ -1,0 +1,66 @@
+DOCUMENT:Q194654  17-JUL-2001  [visualc]
+TITLE   :PRB: DBGrid Control Not Fully Functional in VC++
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCtrl kbDatabase kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Certain DBGrid methods and properties that function properly when used in
+Microsoft Visual Basic do not work properly when the DBGrid control is inserted
+into a Microsoft Visual C++ project.
+
+CAUSE
+=====
+
+The DBGrid control is designed to work specifically in Microsoft Visual Basic.
+The DBGrid control utilizes functionality only exposed by Visual Basic's OLE
+control container.
+
+RESOLUTION
+==========
+
+The DBGrid control is only fully functional when used inside Microsoft Visual
+Basic. Instead of using the DBGrid control, you can use the Microsoft DataGrid
+Control 6.0 or the Microsoft FlexGrid control--these controls are not dependent
+on Visual Basic for their functionality.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+======================================================================
+Keywords          : kbCtrl kbDatabase kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC32bitSearch kbVCPE500 kbVCPE600 kbVCEE500 kbVCEE600 kbVCLE600
+Version           : WINNT:4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

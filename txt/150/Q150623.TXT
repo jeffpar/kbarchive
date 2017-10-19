@@ -1,0 +1,73 @@
+DOCUMENT:Q150623  16-DEC-1999  [homemm]
+TITLE   :Mac Bookshelf '96-'97: Startup Screen Appears Fuzzy or Blurry
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Bookshelf, the startup screen looks fuzzy, blurry, or distorted.
+
+CAUSE
+=====
+
+The quality of the startup screen depends upon the color depth of your monitor.
+If your monitor is set to a low color depth, you may experience distorted
+startup screen problems.
+
+WORKAROUND
+==========
+
+If possible, increase the number of colors being displayed on your screen. To
+change your display settings, do the following:
+
+1. On the Apple Menu, click Control Panels.
+
+2. From the Control Panels, open the Monitors control panel.
+
+3. In the Monitors window, select either Thousands or Millions.
+
+The startup screen appearance should improve.
+
+If you are not able to increase the number of colors displayed to Thousands or
+Millions, the startup screen will continue to appear fuzzy. This will not have
+any impact on the performance of the program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Bookshelf '96-'97. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles blurry focus hazy distorted fuzzy blurred washed-out garbled none black
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1996Mac kbBookShelf1997Mac
+Version           : MACINTOSH:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

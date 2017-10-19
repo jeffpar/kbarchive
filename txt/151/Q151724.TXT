@@ -1,0 +1,68 @@
+DOCUMENT:Q151724  17-DEC-1999  [schedplus]
+TITLE   :Meeting Created by Delegate Shows Manager as Organizer
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a delegate on a manager's Appointment Book creates a meeting, the meeting
+will show the delegate as the Organizer; however, the Edit Appointment dialog
+box will show the manager.
+
+
+CAUSE
+=====
+
+This is by design.
+
+The person who has the original appointment on his or her schedule is the owner,
+not the person who sent the mail. The delegate is acting on behalf of the
+manager as a "virtual manager."
+
+MORE INFORMATION
+================
+
+No one invited is aware that the appointment was organized by the delegate. On
+the original invitation sent by the delegate is the following:
+
+   Sending on behalf of USERX.
+
+where userx is the manager.
+
+However, this is not sent to the invitees. The meeting responses are received by
+the delegate only and contain the following:
+
+   Received on behalf of USERX.
+
+Additional query words: 7.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

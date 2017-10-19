@@ -1,0 +1,59 @@
+DOCUMENT:Q154640  10-AUG-2001  [winnt]
+TITLE   :Computer Hangs During Setup with Intel EtherExpress PRO/100A
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During Setup on a computer equipped with an Intel EtherExpress PRO/100A network
+adapter, the computer may stop responding (hang) when the network is being
+started.
+
+
+CAUSE
+=====
+
+The Intel EtherExpress PRO/100 EISA and PCI cards are not supported in Windows
+NT version 4.0.
+
+RESOLUTION
+==========
+
+The Intel EtherExpress PRO/100B network adapter is supported by Windows NT 4.0.
+The driver is included in the Drvlib\Netcard\X86\E100b folder on the Windows NT
+4.0 CD-ROM.
+
+
+Additional query words: access violation
+
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q69186  10-OCT-1999  [win95x]
+TITLE   :WINSTART.BAT Won't Load Microsoft LAN Manager Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can create a batch file called WINSTART.BAT to load memory-resident
+utilities in Windows applications. This gives you more conventional memory to
+run DOS applications under Microsoft Windows version 3.00. Microsoft LAN Manager
+and some other network drivers will not load properly using WINSTART.BAT. If the
+network driver does load, an error message is displayed on exit because there is
+no way to unload the driver.
+
+MORE INFORMATION
+================
+
+If Microsoft LAN Manager is loaded with WINSTART.BAT, you will receive the
+following error message:
+
+   The Workstation has not been started
+   Error spawning C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE
+
+When the logon command is completed, it will respond with the following error
+message:
+
+   The workstation has already been started
+
+Windows will then display a warning that full API support has not been loaded and
+the network will be unavailable. The only workaround is to load the network
+before running Windows.
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," version 3.00, page 519.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

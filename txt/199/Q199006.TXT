@@ -1,0 +1,78 @@
+DOCUMENT:Q199006  20-FEB-1999  [foxpro]
+TITLE   :BUG: Issuing PACK <table name> Causes Fatal Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbvfp600bug KbDBFDBC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing PACK <table name> causes the following error:
+
+   Fatal error: Exception code = C0000005.
+
+This error only occurs in Visual FoxPro 6.0. The ability to add the table name
+clause was added in Visual FoxPro 5.0
+
+RESOLUTION
+==========
+
+Do not use the <table name> clause with the PACK command. Open the table,
+and then issue the PACK command without any clauses.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The PACK command has an undocumented feature of adding the table name to the end
+of the command. This feature is useful if the table is closed at the time the
+PACK <table name> command is issued. If the table is in use, the "File is
+in use" error occurs.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Visual FoxPro 6.0 Command window, type the following command:
+
+      PACK HOME(2)+"\data\customer"
+
+Note that the fatal error occurs and FoxPro quits.
+
+
+Additional query words: kbDSupport kbDSE
+
+======================================================================
+Keywords          : kbvfp600bug KbDBFDBC 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

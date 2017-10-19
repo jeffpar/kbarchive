@@ -1,0 +1,84 @@
+DOCUMENT:Q261034  25-JUL-2001  [homegame]
+TITLE   :MCM2: Distorted Textures When You Start Race or Encounter Snow
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbimu kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a race in Microsoft Motocross Madness 2 or you encounter snow in
+the Enduro races, textures in the game may be distorted.
+
+CAUSE
+=====
+
+This behavior can occur if a video adapter that is based on the 3Dfx Voodoo2 SLI
+chip set is installed in your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest reference driver for the
+3Dfx Voodoo2 SLI chip set from the following 3Dfx Web site:
+
+   http://www.3dfx.com
+
+MORE INFORMATION
+================
+
+To determine the brand and model of your video adapter:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click Device Manager.
+
+4. Double-click Display Adapters.
+
+In the branch under Display Adapters, the brand and model of your video adapter
+is displayed.
+
+5. Close Control Panel.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: 2.00 msgame mcm2 motorcross corrupt graphics display
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbimu kbHardware kbfaq
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

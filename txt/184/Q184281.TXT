@@ -1,0 +1,111 @@
+DOCUMENT:Q184281  11-JAN-2001  [vbwin]
+TITLE   :BUG: Constants Used in Function Call Breaks Binary Compatibility
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to compile an ActiveX DLL or ActiveX EXE, the following error is
+received, even when you have not modified any interfaces:
+
+   <FUNCTION NAME> in the <CLASS NAME> class module has arguments
+   and/or a return type that is incompatible with a similar declaration in the
+   version compatible component.
+
+CAUSE
+=====
+
+This error is caused by using a CONSTANT (CONST) in a function declaration.
+
+RESOLUTION
+==========
+
+In the function declaration, use the actual value of the CONSTANT, rather than
+the CONSTANT itself.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The steps to resolve this problem are as follows:
+
+Steps To Reproduce
+------------------
+
+1. Create a new ActiveX DLL Project in Visual Basic.
+
+2. Add the following code to the default class module:
+
+         Public Sub CauseSomeTrouble(Optional Test As String = vbNullString)
+            Msgbox "This Will Not Work For Long!"
+         End Sub
+
+3. On the File menu, click Make Project1.dll. This action compiles the project
+   into a final DLL/EXE executable.
+
+4. On the Project menu, click Project1 Properties, and click the Component tab.
+   Under Version Compatibility, select Binary Compatibility. Click the ellipsis
+   on the right, and in the Compatible ActiveX Component dialog box,
+   double-click the Project1.dll file that you created in step 3. Click OK.
+
+5. Attempt to make the DLL again (repeat step 3).
+
+RESULTS: The following error dialog box appears:
+
+   CauseSomeTrouble in the Class1 class module has arguments and/or a return
+   type that is incompatible with a similar declaration in the version
+   compatible component.
+
+Steps To Resolve
+----------------
+
+Change the following line of code shown in step 2 above from:
+
+      Public Sub CauseSomeTrouble(Optional Test As String = vbNullString)
+
+-to-
+
+      Public Sub CauseSomeTrouble(Optional Test As String = "")
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

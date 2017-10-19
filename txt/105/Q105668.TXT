@@ -1,0 +1,105 @@
+DOCUMENT:Q105668  30-JUL-2001  [win3x]
+TITLE   :Windows Err Msg: Not Enough Environment Space
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+The following information applies to:
+
+ - Microsoft Windows operating system versions 3.0, 3.0a, 3.1, 3.11
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11
+
+SYMPTOMS
+========
+
+You may receive the following error message when you start the MS-DOS Prompt or
+an MS-DOS-based application:
+
+   Not Enough Environment Space
+
+CAUSE
+=====
+
+The above error message may occur if you are running Novell NetWare and have not
+installed Windows with Novell connectivity, or if the MS-DOS-based application
+you are trying to run requires more than 256 bytes of environment space.
+
+WORKAROUND
+==========
+
+ - If Windows 3.0 or later is running on a Novell NetWare network, make sure
+   that the appropriate network selection is made in Windows Setup.
+
+ - If the MS-DOS-based application requires more than 256 bytes of environment
+   space and you are running Windows 3.1 or later, add the following line to the
+   SYSTEM.INI file under the [NonWindowsApp] section:
+
+      [NonWindowsApp]
+      CommandEnvSize=1024
+
+   1024 bytes should work properly; however, the setting can be set as high as
+   32,768 bytes. The value must be either zero or between 160 and 32768.
+
+   This is a global setting that affects all virtual machines (VMs).
+
+
+ - With Windows 2.x and later, you can create a program information file (PIF)
+   to increase the environment space for the single application. Use the
+   following settings in the PIF:
+
+   For Windows 3.0:
+   ----------------
+
+   Field                          Setting
+   =====                          =======
+
+   Program FileName               Command.COM
+   Window Title                   My Program
+   Optional Parameters            /e:2048 /c C:\mydir\myprog.exe
+   Startup Directory              C:\mydir
+
+   For Windows 2.x:
+   ----------------
+
+   Field                          Setting
+   =====                          =======
+
+   Program Name                   Command.COM
+   Program Title                  My Program
+   Program Parameters             /e:2048 /c C:\mydir\myprog.exe
+   Initial Directory              C:\mydir
+
+   "/e:2048" is the size of the environment space in bytes; this value also
+   ranges from 160 to 32768.
+
+   "Mydir" is the name of the directory that contains the executable of the
+   program.
+
+   "Myprog.exe" is the name of the program.
+
+   "/C" specifies that the command processor is to execute MYPROG.EXE and then
+   terminate itself.
+
+Additional query words: tshoot 2.10 2.11 3.00 3.00a 3.10 insufficient vm virtual machine box DOSapp out of environment space information
+
+======================================================================
+Keywords          : win31 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

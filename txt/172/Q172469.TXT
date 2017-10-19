@@ -1,0 +1,78 @@
+DOCUMENT:Q172469  14-MAR-2000  [sna]
+TITLE   :Last Byte of Transparent Section Interpreted Incorrectly
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP1
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The last byte in a transparent section gets interpreted as being outside the
+transparent section when the transparent section is immediately preceded by a
+control character (IE - "0D"). For instance, the following sequence has '0D'
+(carriage return) followed by a transparent section starting with '35'. In this
+case, the 1B (Esc character) would be inappropriately dropped and, therefore,
+the remaining bytes would be sent to the printer without the leading Esc
+character. This would cause the remaining bytes to be printed when they were
+actually intended to be part of the escape sequence.
+
+   0D35011B 5081F2F2 D9
+
+CAUSE
+=====
+
+When there is a control character immediately preceding transparent sections,
+there was a bug in the code which caused the print server to believe the
+transparent section to be one byte shorter than it really was.
+
+RESOLUTION
+==========
+
+A change was made to check whether a transparent byte has actually been sent to
+the printer before decrementing the number of transparent bytes left to be
+processed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server, version
+3.0 SP1. This problem was corrected in the latest SNA Server version 3.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP1
+Version           : WINDOWS:3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

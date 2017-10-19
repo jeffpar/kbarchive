@@ -1,0 +1,81 @@
+DOCUMENT:Q186798  06-MAY-1999  [iis]
+TITLE   :Populating Connection Manager Profile Using the INS File
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Internet Connection Wizard does not configure Connection Manager for
+Internet Service Provider (ISP) Signup.
+
+CAUSE
+=====
+
+Some of the fields needed in the INS file are missing, and therefore the
+Internet Connection Wizard (ICW) does not know it needs to configure the
+Connection Manager.
+
+WORKAROUND
+==========
+
+To work around this problem, add or modify the following fields in the INS file
+as follows:
+
+      [ClientSetup]
+      Done_Message
+      <The message you want to display to the user at the end of signup
+      here.>
+      Explore_Command
+      <The page you want to take the user to at the end of signup here.
+      For example: http://www.microsoft.com>
+
+      [Custom]
+      Run=icwconn2.exe
+
+      [Custom_Dialer]
+      Auto_Dial_DLL=cmdial32.dll
+      Auto_Dial_Function=_InetDialHandler@16
+
+      [Entry]
+      Entry_Name=<This has to match the name of your Connection Manager
+      profile.>
+
+Also make the following changes in the Template.cmp file, located in the CMAK\ENU
+directory, and rebuild your profile using CMAK:
+
+      [Connection Manager]
+      RememberPassword=1
+
+Additional query words: connection manager cm cmak
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

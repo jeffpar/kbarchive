@@ -1,0 +1,70 @@
+DOCUMENT:Q260013  16-JUL-2000  [exchange]
+TITLE   :XADM: Unable to View Free and Busy Time Across Exchange Sites
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When users attempt to view free and busy time for users in another site, they
+may only see hash marks for those users on the Attendee Availability tab, for
+example:
+
+   Username \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+CAUSE
+=====
+
+Free and busy replication has not been configured to replicate across all sites.
+
+RESOLUTION
+==========
+
+In the Exchange Administrator program, follow these steps to configure free and
+busy replication:
+
+1. Locate the Schedule+ Free Busy folder. To do this, click the Organization
+   Level, click Folders, click System Folders, and then click Schedule+ Free
+   Busy folder. This displays all free and busy folders for each site within the
+   organization.
+
+2. Open the properties for the local site.
+
+3. On the Replicas tab, include the other sites in the Replicate Folders To
+   pane.
+
+After the replication procedure is finished, all users can view free and busy
+information across all sites.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

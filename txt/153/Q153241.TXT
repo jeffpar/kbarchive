@@ -1,0 +1,64 @@
+DOCUMENT:Q153241  31-JUL-2001  [sms]
+TITLE   :Office95 Professional Falsely Reported in Inventory
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbAudit kbInventory smsinv smsaudit
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you inventory MSOffice on a client that runs any version of Microsoft
+Office other than Microsoft Office95 Professional, the client's Properties for
+Packages will show that the client has Office Professional installed.
+
+CAUSE
+=====
+
+The inventory rule in the package definition file (PDF) for Office95
+Professional has only one rule with the file name Msoffice.exe. Since versions
+of Office have an executable file named Msoffice.exe, all versions will be
+inventoried as Office95 Professional.
+
+RESOLUTION
+==========
+
+Use the PDF that comes with MSOffice95 Professional.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. This problem has been corrected in Systems Management
+Server version 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbAudit kbInventory smsinv smsaudit 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

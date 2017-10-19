@@ -1,0 +1,72 @@
+DOCUMENT:Q111706  17-DEC-2000  [msdos]
+TITLE   :REPLACE Error Message: "Path Not Found..."
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The REPLACE command displays a "Path not found" error and does not update the
+files in the destination directory.
+
+CAUSE
+=====
+
+This error can occur if the destination directory name has an extension and you
+use "." or ".." path notation in the REPLACE command line. For example, if the
+destination directory is C:\TEST.DIR and you type the following command from the
+C:\TEST.DIR> prompt
+
+   " replace c:\dos\*.com ..\test.dir" (without the quotation marks)
+
+the result is:
+
+   Path not found - C:\TESTIR\
+   No files replaced
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MS-DOS versions 5.0, 5.0a, 6.0,
+6.2, and 6.21. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To work around this problem, specify the complete path on the REPLACE command
+line instead of using the "." or ".." notation. For example:
+
+   replace c:\dos\*.com c:\test.dir
+
+Additional query words: 6.22 6.20 errmsg err message pathname
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

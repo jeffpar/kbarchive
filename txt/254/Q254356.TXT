@@ -1,0 +1,69 @@
+DOCUMENT:Q254356  14-SEP-2001  [automap]
+TITLE   :MapPoint 2000: Program Hangs When Splash Screen Is Displayed
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft MapPoint 2000, the program may stop responding when the
+splash screen is displayed.
+
+CAUSE
+=====
+
+The behavior can occur if you are running CyberMedia's Guard Dog software.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit Guard Dog before you attempt to start MapPoint
+2000:
+
+1. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+2. In the list of running programs, click Guard Dog, and then click End Task.
+
+3. When you are prompted to quit Guard Dog, click Yes.
+
+NOTE: Guard Dog starts again the next time you restart Microsoft Windows.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: mp2000 hangs crash freeze lock
+
+======================================================================
+Keywords          : kb3rdparty kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

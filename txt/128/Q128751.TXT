@@ -1,0 +1,197 @@
+DOCUMENT:Q128751  28-FEB-1999  [winnt]
+TITLE   :No "Advanced" button in Client TCP/IP Configuration Box
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Network client version 3.0 for MS-DOS Release Notes (README.TXT)
+suggests that you should be able to configure Domain Name Resolver (DNR) and
+Socket settings by choosing an Advanced button in the Network Client MS-TCP/IP
+configuration dialog box. This is a documentation error; no such button exists.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Network Client for
+MS-DOS, version 3.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To enable DNR or Sockets, modify the appropriate settings in the TCPUTILS.INI
+file and load the appropriate device drivers in the AUTOEXEC.BAT file as
+follows:
+
+1. Using a text editor, add the following lines to the TCPUTILS.INI file:
+
+      [dnr]
+      drivername=DNR$
+      bindings=TCPIP
+
+   NOTE: The TCPUTILS.INI file can be found in the directory you specified for
+   the Network Client software during setup (the default directory is C:\NET).
+
+2. Add the following line to the AUTOEXEC.BAT file (on the line above the NET
+   START command):
+
+   <path>\DNR
+
+To enable and configure Windows Sockets:
+
+1. Make sure that SOCKETS.EXE resides in a directory that is in your path.
+
+2. Add the following command to the AUTOEXEC.BAT file (on the line immediately
+   below the DNR command):
+
+   <path>\SOCKETS
+
+3. Under the [sockets] heading, change
+
+   bindings=TCPIP_XIF
+
+   to:
+
+   bindings=TCPIP
+
+This allows the TCPUTILS.INI file to correctly reference the [TCPIP] heading in
+the Network Client PROTOCOL.INI file. The PROTOCOL.INI file [TCPIP] section
+contains the current binding configuration information for the client.
+
+Examples
+--------
+
+The following working examples CONFIG.SYS, AUTOEXEC.BAT, TCPUTILS.INI, and
+PROTOCOL.INI files correctly load TCP/IP, DNR, and Sockets.
+
+WARNING: Do not use separator periods in the IP addresses. If you do, TCP/IP will
+not load.
+
+CONFIG.SYS
+----------
+
+DEVICE=C:\DOS\SETVER.EXE
+DEVICE=C:\DOS\HIMEM.SYS
+DEVICE=C:\WINDOWS\EMM386.EXE NOEMS
+DOS=HIGH,UMB
+FILES=20
+SHELL=C:\DOS\COMMAND.COM C:\DOS\  /P
+LASTDRIVE=Z
+DEVICE=C:\WINDOWS\SMARTDRV.EXE /DOUBLE_BUFFER
+STACKS=9,256
+DEVICE=C:\NET\IFSHLP.SYS
+
+AUTOEXEC.BAT
+------------
+
+C:\NET\NET INITIALIZE
+C:\DOS\SHARE.EXE
+@ECHO OFF
+PROMPT $P$G
+PATH C:\NET;C:\DOS
+SET TEMP=C:\DOS
+C:\NET\NETBIND.COM
+C:\NET\UMB.COM
+C:\NET\TCPTSR.EXE
+C:\NET\TINYRFC.EXE
+C:\NET\NMTSR.EXE
+C:\NET\EMSBFR.EXE
+C:\NET\DNR.EXE
+C:\NET\SOCKETS
+C:\NET\NET START
+
+TCPUTILS.INI
+------------
+
+[tcpglobal]
+drivername=GLOBAL$
+hostname=username
+
+[sockets]
+drivername=SOCKETS$
+bindings=TCPIP
+numsockets=4
+numthreads=32
+poolsize=3200
+maxsendsize=1024
+
+[DNR]
+drivername=DNR$
+bindings=TCPIP
+nameserver0=199 198 45 45
+
+[telnet]
+drivername=TELNET$
+bindings=TCPIP
+nsessions=0
+max_out_sends=0
+
+NOTE: For more information on TCPUTILS.INI file entries not discussed in this
+article, please refer to Chapter 7 of the LAN Manager, "Microsoft TCP/IP
+Utilities User's Guide."
+
+PROTOCOL.INI
+------------
+
+[network.setup]
+version=0x3110
+netcard=ms$elnk3,1,MS$ELNK3,1
+transport=tcpip,TCPIP
+lana0=ms$elnk3,1,tcpip
+
+[TCPIP]
+DefaultGateway0=22 100 0 1
+NBSessions=6
+SubNetMask0=255 255 0 0
+IPAddress0=22 100 67 96
+DisableDHCP=1
+DriverName=TCPIP$
+BINDINGS=MS$ELNK3
+LANABASE=0
+[protman]
+DriverName=PROTMAN$
+PRIORITY=MS$NDISHLP
+
+[MS$ELNK3]
+DriverName=ELNK3$
+
+REFERENCES
+==========
+
+"Microsoft TCP/IP Utilities, User's Guide: Microsoft TCP/IP Utilities for LAN
+Manager," version 1.0, page 10, pgs. 121-126.
+
+"Microsoft Network Client version 3.0 for MS-DOS Release Notes," (README.TXT),
+Microsoft Network Client version 3.0, NT 3.5 Server CD in the CLIENTS directory.
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : 3.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

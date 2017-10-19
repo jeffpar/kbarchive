@@ -1,0 +1,119 @@
+DOCUMENT:Q215494  28-APR-1999  [exchange]
+TITLE   :XFOR: Message Flow Through the IBM OV/VM-PROFS Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes message flow between Exchange Server and the IBM
+OV/VM-PROFS Connector.
+
+MORE INFORMATION
+================
+
+Message flow from Exchange Server to IBM OV/VM-PROFS 
+----------------------------------------------------
+
+1. The message is passed by the Exchange Server information store to the
+   connector's MTS-OUT folder if on same Exchange Server computer. Otherwise,
+   the message transfer agent (MTA) routes it to the Exchange Server computer
+   where the OV/VM Connector is installed, and places it in the connector's
+   MTS-OUT folder.
+
+2. The OV/VM Connector picks up the message from the MTS-OUT folder, looks up
+   the directory entries for the recipients, and places the message in the
+   READYOUT folder.
+
+   NOTE: Specifically, the process, Lsmexout.exe, listed in Exchange Connectivity
+   Administrator's Process Manager as "Transfer from Exchange for OV/VM," or
+   "LME-PROFS-MEXOUT," is responsible for the above action. In the Queues tab of
+   the OV/VM Connector Property page, MTS-OUT is called "Outbound from
+   Exchange," and READYOUT is called "Outbound to OV/VM."
+
+3. The OV/VM Connector receives the message from the MTS-OUT folder and puts it
+   into the READYOUT folder.
+
+4. The OV/VM Connector then translates it into an intermediary GML structure
+   (similar to DIA), breaks out the attachments into separate messages, and
+   places the message header(s) (one for the body, one for each attachment) into
+   the Exchsrvr\Connect\Exchconn\Q\Dia2vm.in directory as a file with the
+   extension .rdy, and places the message body (*.tmp) and attachments (*.att)
+   into separate files in the Exchsrvr\Connect\Exchconn\Q\Objects directory.
+
+   NOTE: Specifically, the process, Lsmexdia.exe, listed in Exchange Connectivity
+   Administrator's Process Manager as "Exchange to OV/VM Transform," or
+   "LME-PROFS-MEXDIA," is responsible for the above action.
+
+5. The OV/VM Connector then picks up the *.rdy file (and associated files), and
+   sends an OV/VM distribution to RSCS/VM over an LU 0 session. When RSCS
+   confirms that it has received the distribution, the OV/VM Connector removes
+   the *.rdy file and associated files.
+
+   NOTE: Specifically, the processes Lsdiavm.exe and Lsnje.exe, listed in
+   Exchange Connectivity Administrator's Process Manager as "Outbound to OV/VM"
+   ([LME-PROFS-DIAVM]), and "NJE Server" ([LME-PROFS-VMDIA]), respectively, work
+   together to process the message. Lsdiavm.exe does the message conversion, and
+   Lsnje.exe handles the SNA interface and acts as a traffic cop for the LU 0
+   session.
+
+Message Flow from IBM OV/VM-PROFS to Exchange Server
+----------------------------------------------------
+
+1. The OV/VM Connector listens to receive an incoming distribution from RSCS,
+   receives the distribution over an LU 0 session, and generates a file in the
+   Exchsrvr\Connect\Exchconn\Q\Vm2mex.in directory (extension *.rdy) containing
+   the message header, and generates a file in the
+   Exchsrvr\Connect\Exchconn\Q\Objects (extension *.snd) containing the message
+   body (or document/binary file).
+
+   NOTE: Specifically, the processes Lsnje.exe and Lsvmdia.exe, listed in
+   Exchange Connectivity Administrator's Process Manager as "NJE Server"
+   ([LME-PROFS-NJE]), and "Inbound from OV/VM" ([LME-PROFS-VMDIA]),
+   respectively, work together to process the message. Lsnje.exe handles the SNA
+   protocols and acts as a traffic cop for the LU 0 session, and Lsvmdia.exe
+   handles the message conversion.
+
+2. The OV/VM Connector picks up the *.rdy file (and associated files) from the
+   Exchsrvr\Connect\Exchconn\Q\Vm2mex.in directory, translates the message into
+   Microsoft internal format, and puts the message in the READYIN folder.
+
+   NOTE: Specifically, the process Lsdiamex.exe, listed in Exchange Connectivity
+   Administrator's Process Manager as "OV/VM to Exchange Transform," or
+   "LME-PROFS-DIAMEX," is responsible for the above action.
+
+3. The OV/VM Connector then verifies the validity of the recipients and puts the
+   message into the MTS-IN folder.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

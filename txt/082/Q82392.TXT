@@ -1,0 +1,107 @@
+DOCUMENT:Q82392  15-NOV-1999  [win95x]
+TITLE   :PC Tools 7.1 May Incorrectly Add Group to Program Manager
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+PC Tools version 7.1 uses an MS-DOS-based Setup program that parses and modifies
+the PROGMAN.INI file included with Microsoft Windows. This Setup program makes
+some invalid assumptions about the format of this file that can cause some of
+the PC Tools programs to set up improperly. The common result of this problem is
+that either a group now fails to appear or two identical groups appear instead.
+
+MORE INFORMATION
+================
+
+PC Tools's Setup program assumes that the [Groups] section comes last in the
+PROGMAN.INI file and that it contains lines only of the form GroupX= (where "X"
+is an integer).
+
+However, it is possible for other information to be located in the [Groups]
+section or for a [Restrictions] section to be located at the end of the
+PROGMAN.INI file.
+
+After PC Tools is installed, the corrupted PROGMAN.INI file usually resembles the
+following:
+
+[Settings]
+Window=4 5 639 395 1
+display.drv=vga.drv
+Order= 5 3 4 4 2 1  <--- Two 4's
+AutoArrange=1
+
+[Groups]
+Group1=C:\WINDOWS\MAIN.GRP
+Group2=C:\WINDOWS\ACCESSOR.GRP
+Group4=C:\WINDOWS\STARTUP.GRP   <---  | Two Group4 lines
+Group5=C:\WINDOWS\APPLICAT.GRP        |
+Group3=C:\WINDOWS\GAMES.GRP           |
+Group4=C:\WINDOWS\CPSDOS.GRP    <---  |
+Order=3 5 4 2 1                 <---    Potential text that may
+                                        confuse the PC Tools Setup
+                                        program
+
+If the above problem occurs, you must modify your PROGMAN.INI file using a text
+editor (such MS-DOS Editor). Make your modifications at the MS-DOS level, then
+restart Windows. Program Manager should then load all the groups correctly and
+rebuild the Order= line so that it works correctly. To restore PROGMAN.INI, make
+the following changes:
+
+1. Remove the Order= line from the [Settings] section.
+
+2. Remove any lines not of the form GroupX= from the [Groups] section.
+
+3. List the group numbers sequentially.
+
+A PROGMAN.INI file that has been corrected should look similar to the following:
+
+   [Settings]
+   Window=4 5 639 395 1
+   display.drv=vga.drv
+   AutoArrange=1
+
+   [Groups]
+   Group1=C:\WINDOWS\MAIN.GRP
+   Group2=C:\WINDOWS\ACCESSOR.GRP
+   Group3=C:\WINDOWS\STARTUP.GRP
+   Group4=C:\WINDOWS\APPLICAT.GRP
+   Group5=C:\WINDOWS\GAMES.GRP
+   Group6=C:\WINDOWS\CPSDOS.GRP
+
+PC Tools is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3.10 3.1 pctools 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

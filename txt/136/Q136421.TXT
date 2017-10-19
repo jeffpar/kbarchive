@@ -1,0 +1,81 @@
+DOCUMENT:Q136421  15-FEB-2000  [foxpro]
+TITLE   :How NULL Values Sort in Indexes
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Expression indexes that evaluate to NULL are inserted into the .cdx file before
+non-NULL entries, so NULL expressions in indexes sort at the beginning rather
+than at the end.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program called Myprog.prg.
+
+2. Key in the following code fragment:
+
+      CREATE TABLE mytable (lastname c(20) NULL, firstname c(20) NULL, ;
+         city c(20) NULL)
+      INSERT INTO mytable (lastname,firstname,city) ;
+         VALUES ("Ansarti","Jim","San Jose")
+      INSERT INTO mytable (lastname,firstname,city) ;
+         VALUES ("Hayden","Rance",.NULL.)
+      INSERT INTO mytable (lastname,firstname,city) ;
+         VALUES ("Putnam","Phil","New Orleans")
+      USE mytable
+      INDEX ON city TAG city          && Create the Index and the Tag
+      SET ORDER TO city               && Set the order to the Tag
+      BROWSE
+
+3. Save the program.
+
+4. In the Command window, type:
+
+      DO Myprog.prg
+
+5. When the program runs, it displays a Browse window where the first record
+   containing .NULL. in the city field is the first field in the Browse window.
+
+REFERENCES
+==========
+
+Visual FoxPro for Windows "Developer's Guide," version 3.0, pages 143-145 and
+172-173.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q184699  10-APR-1999  [exchange]
+TITLE   :XADM: Store.exe Working Set Performance Counter Keeps Growing
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Working Set performance counter keeps increasing under a moderate load. When
+the load has subsided, the counter remains constantly high. It does not decrease
+memory used.
+
+CAUSE
+=====
+
+The Store.exe process has a counter called "Working Set." This counter displays
+the current amount of RAM used by the information store code and its related
+data. When memory is reserved, it does not free until the process is stopped and
+restarted; however, if Windows NT swaps some of these pages from RAM to disk,
+the performance monitor value will decrease to reflect the change in the amount
+of RAM being used by the information store.
+
+This is by design.
+
+MORE INFORMATION
+================
+
+This memory is just reserved, not allocated. If the server is under stress from
+another application, these pages will be swapped to the page file to free up
+RAM, which will reduce the Working Set size.
+
+Additional query words: PerfMon MSEXHCHANGEIS Information Store
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

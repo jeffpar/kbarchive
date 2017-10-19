@@ -1,0 +1,126 @@
+DOCUMENT:Q117895  08-FEB-2002  [pcmail]
+TITLE   :PC Adm: 007 Error Caused by Missing .MEM File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The External Mail program (EXTERNAL.EXE) generates the following error in the
+SYSTEM.LOG file if it tries to deliver mail to a postoffice group for which
+there is no .MEM file:
+
+   [007] Message addressed to group that no longer exists.
+
+NOTE: This message is misleading in that the group clearly exists when the
+administrator checks for the group using the Mail Administrator program.
+
+CAUSE
+=====
+
+If the administrator deletes a user who was the only local member of a group
+containing local and external members, the program will delete the .MEM file.
+
+MOVEUSER.EXE will also cause the .MEM file to be deleted if the last member of a
+group is deleted from within MOVEUSER.
+
+RESOLUTION
+==========
+
+To avoid this problem, remove users from Groups prior to deleting them. The
+Admin, Group Modify function does not delete the .MEM file.
+
+To recover from the problem:
+
+1. Start the Mail Administrator program and select Local-Admin, Group, Modify.
+
+2. Select the group that was mentioned in the error message in the SYSTEM.LOG
+   file.
+
+3. Press the ENTER key (do not press ESC) and continue to press ENTER at the
+   prompts. This will re-create the zero-byte .MEM file.
+
+NOTE: If a modification of the group occurs, addressing mail to the group from
+the Global Address List (GAL) will be invalid until the GAL is rebuilt.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of Microsoft Mail
+for PC Networks. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Ordinarily, the .MEM file contains a mailbag list of the local postoffice users
+who are members of the group. It is acceptable to have a zero-byte .MEM file. In
+fact, a zero-byte .MEM file is created for groups that only have members at
+other postoffices.
+
+The MOVEUSER utility is provided with MVUSR.EXE on the Microsoft Software Library
+(MSL).
+
+You can find MVUSR.EXE,
+(http://support.microsoft.com/download/support/mslfiles/MVUSR.EXE,) a
+self-extracting file, on the following services:
+
+ - Microsoft's World Wide Web Site on the Internet
+
+   On the www.microsoft.com home page, click the Support icon.
+   Click Knowledge Base, and select the product.
+   Enter kbfile MVUSR.EXE, and click GO!
+   Open the article, and click the button to download the file.
+
+ - Internet (anonymous FTP)
+
+   ftp ftp.microsoft.com
+   Change to the Softlib/Mslfiles folder.
+   Get MVUSR.EXE
+
+ - The Microsoft Network
+
+   On the Edit menu, click Go To, and then click Other Location.
+   Type "mssupport" (without the quotation marks).
+   Double-click the MS Software Library icon.
+   Find the appropriate product area.
+   Locate and Download MVUSR.EXE.
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Additional query words: 3.20 3.20.3
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

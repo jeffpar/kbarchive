@@ -1,0 +1,65 @@
+DOCUMENT:Q262840  09-NOV-2000  [sms]
+TITLE   :The New SMS 2.0 Site Is Unable to Run SQL Setup
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2
+OPER/SYS:
+KEYWORDS:kbinterop kbsetup kbDatabase kbServer kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install a new Microsoft Systems Management Server (SMS) version 2.0
+site, the SMS Setup program may run the Microsoft SQL Setup program to install a
+local copy of SQL version 6.5 or 7.0 to contain the SMS site database. However,
+the SQL Setup program is unsuccessful when instructed to run on your system.
+
+CAUSE
+=====
+
+This behavior may occur because the SMS Setup program attempted to install
+Microsoft SQL 2000 as its version of the SQL program.
+
+WORKAROUND
+==========
+
+To work around this behavior, you must install SQL 2000 before you run the SMS
+Setup program.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbsetup kbDatabase kbServer kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

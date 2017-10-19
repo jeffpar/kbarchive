@@ -1,0 +1,48 @@
+DOCUMENT:Q58141  18-DEC-2000  [win95x]
+TITLE   :Computer Viruses Can Increase .COM and .EXE File Sizes
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:2.x,3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+If you have used all the standard procedures for installation and Microsoft
+Windows stops responding (hangs) or performs inconsistently, check the size
+of .COM and .EXE files to see if the size is within normal limits. Some
+computer viruses can increase the size of .COM and .EXE files. If Windows
+does not run properly after setting it up with the correct options, check
+these file sizes to determine if a virus has infected the system.
+
+For more information on viruses, query on the following words in the
+Microsoft Knowledge Base:
+
+   MS-DOS and VIRUS
+
+Additional query words: 2.0 2.03 2.1 2.10 2.11 3.0 3.00 3.0a 3.00a 3.1 3.10 3.11 Win30 win31 winword2 excel
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:2.x,3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

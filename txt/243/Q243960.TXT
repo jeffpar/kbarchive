@@ -1,0 +1,71 @@
+DOCUMENT:Q243960  19-JUN-2002  [iis]
+TITLE   :Site Operators Receive Error When Creating New Virtual Directory
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an operator of a Web site attempts to create a new virtual directory with
+the HTML Administrator (HTMLA), the following error message occurs:
+
+   Microsoft Internet Explorer
+   An error occurred 70(46)
+
+The operator cannot see the new virtual directory using the HTMLA.
+
+WORKAROUND
+==========
+
+By design, a user assigned Website Operator privileges from the IIS management
+console, website properties, operators tab cannot add a virtual directory.
+Creation of virtual directories require Local Administrators group permissions.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Internet Information
+Services version 5.0.
+
+REFERENCES
+==========
+
+For additional information about what a Website operator can and cannot do,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q298969 Web Site Operator Capabilities and Limitations
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

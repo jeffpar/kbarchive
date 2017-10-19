@@ -1,0 +1,64 @@
+DOCUMENT:Q104106  18-NOV-1999  [pcmail]
+TITLE   :PC Win: GP Fault During Setup When Installing Only Spelling
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you specify the Custom Install option during the Setup process of version 3.0
+or 3.0b of Microsoft Mail for Windows, and you choose to install only the
+spelling drivers, the following error occurs:
+
+   Could not open the file named: C:\WINDOWS\SYSTEM\TRNSCHED.DLL
+
+   Choose Abort and click Yes to exit. Re-run SETUP.EXE.
+
+   Result: GP Fault in MSCOMSTF.DLL @002D:001A.
+
+CAUSE
+=====
+
+This error occurs only if your current transport is not the PC Mail Transport;
+for example, if you are running Microsoft Mail Remote for Windows or if you do
+not have an existing installation of Mail.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in versions 3.0 and 3.0b of
+Microsoft Mail for Windows. This problem was corrected in version 3.2 of
+Microsoft Mail for Windows.
+
+
+Additional query words: 3.00 3.00b general protection fault gpfault gpf
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

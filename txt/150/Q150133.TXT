@@ -1,0 +1,97 @@
+DOCUMENT:Q150133  03-NOV-1999  [fortran]
+TITLE   :BUG: WRITE Fails with Preconnected Unit=5 in Console Program
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a console application, when you open and close a file with the preconnected
+unit=5 and perform a WRITE of a character string to the display, the written
+string is not terminated with a carriage return or with linefeed characters.
+
+RESOLUTION
+==========
+
+Use any file unit number other than 5 when performing file I/O.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following code samples illustrate the problem and the workaround:
+
+Sample Code #1
+--------------
+
+   ! Compile options needed: none
+
+         do i=1,2
+             write(*,*) 'Testing'
+             open(unit=5,file='test.out')
+             write(5,*) 'test'
+             close(5)
+         end do
+         end
+
+Output
+------
+
+TestingTesting
+
+Sample Code #2
+--------------
+
+   ! Compile options needed: none
+
+         do i=1,2
+             write(*,*) 'Testing'
+             open(unit=2,file='test.out')
+             write(2,*) 'test'
+             close(2)
+         end do
+         end
+
+Output
+------
+
+Testing Testing
+
+Additional query words: 1.00 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT kbFORTRANPower400NT
+Version           : :1.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

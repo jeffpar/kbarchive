@@ -1,0 +1,71 @@
+DOCUMENT:Q167704  09-AUG-2001  [winnt]
+TITLE   :Explanation of Windows NT 4.0 WINS Consistency Checking
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.00
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Consistency checking was added to the Windows Internet Name Service (WINS)
+server in Windows NT 4.0 to aid in maintaining database integrity among WINS
+servers in a large network.
+
+When consistency checking is enabled on a WINS server, the server pulls all of
+the records directly from each owner server in its database, which includes
+servers that the WINS server has records from that are not among its replication
+partners.
+
+NOTE: If a WINS database is extremely large, the consistency checking process may
+be network intensive.
+
+All records are compared from the local and remote databases.
+
+ - If the record in the local database is identical to the record pulled from
+   the owner database, its timestamp is updated.
+
+ - If the record in the local database has a lower version ID than the record
+   pulled from the owner database, the pulled record is added to the local
+   database and the original local record is marked for deletion.
+
+ - If the records have the same version ID but a different name, the local
+   record will be marked deleted and the pulled record will replace it.
+
+Consistency checking is enabled through registry changes. It can also be
+triggered using the WINSCL utility available as part of the Windows NT 4.0
+Server Resource Kit.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   ARTICLE-ID: Q154410
+   TITLE : New WINS Registry Entries
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.00
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

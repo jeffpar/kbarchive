@@ -1,0 +1,69 @@
+DOCUMENT:Q183740  08-MAY-1999  [iis]
+TITLE   :Key Manager Started from MMC Does Not Return Focus
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you display the properties of a Web site in the Microsoft Management
+Console (MMC) and select the Directory Security, Secure Communications option,
+you see a button labeled Key Manager or Edit, depending on whether you have
+configured security previously. If you click the Key Manager or Edit button, the
+Key Manager application starts. Focus will not be returned to the MMC unless you
+first close Key Manager.
+
+CAUSE
+=====
+
+This behavior occurs because Key Manager is being started as a child window of
+the Properties dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0.
+
+WORKAROUND
+==========
+
+If you need to have Key Manager displayed while editing the properties of a Web
+site, first close the Web site's Properties dialog box, and then click the Key
+Manager icon on the MMC toolbar. This starts Key Manager as a separate
+application. After it starts, you can bring up the Properties dialog box for the
+Web site in the MMC.
+
+Additional query words: launch
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

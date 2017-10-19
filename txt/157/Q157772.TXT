@@ -1,0 +1,75 @@
+DOCUMENT:Q157772  14-NOV-2000  [word97]
+TITLE   :WD97: Bitmap Icon Is Lost After Saving to RTF
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbole
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a Word 97 document that contains a linked bitmap object in the
+Rich Text Format (RTF), the Display As Icon property for the bitmap object is
+lost.
+
+CAUSE
+=====
+
+This problem occurs when the following conditions are met:
+
+ - On the Insert menu, you click Object, and click the Create From File tab.
+
+   -and-
+
+ - You select the Link To File check box and click OK.
+
+WORKAROUND
+==========
+
+To work around this problem and retain the icon when you convert the document to
+RTF, do the following:
+
+1. On the Insert menu, click Object, and select the Create From File tab.
+
+2. Clear the Link To File check box.
+
+3. Type the path and name of the object in the File Name box and click OK. Or,
+   click Browse, select the file you want, and click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 8.0 word8 word97 convert convtext
+
+======================================================================
+Keywords          : kbole 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

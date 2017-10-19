@@ -1,0 +1,68 @@
+DOCUMENT:Q124724  26-MAY-2001  [homekids]
+TITLE   :Encarta 1994: Distorted Images Printed to HP LaserJet 4M/4ML
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print images from Microsoft Encarta to a Hewlett-Packard (HP) LaserJet
+4M or 4ML printer, the printed output is distorted or garbled. The printed image
+is the right size and shape, but is not recognizable.
+
+CAUSE
+=====
+
+This problem occurs if you are using version 3.57 or earlier of the HP 4M/4ML
+(PostScript) printer driver.
+
+RESOLUTION
+==========
+
+To correct this problem, use any one of the following methods:
+
+ - Upgrade to version 4.0 or later of the HP LaserJet 4M/4ML printer driver. You
+   can obtain the latest version of this driver as a self- extracting file
+   called HPCL5E.EXE on the Hewlett-Packard forum (GO HPPER) on CompuServe, or
+   contact Hewlett-Packard.
+
+ - Use the HP LaserJet III printer driver instead of the 4M/4ML printer driver.
+
+ - Copy the image from Encarta and paste it into another program (such as Write
+   or Paintbrush). Print the image from the second program.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 1994 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

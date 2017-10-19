@@ -1,0 +1,75 @@
+DOCUMENT:Q198046  01-MAR-2002  [winnt]
+TITLE   :Change in Time Zone Behavior for Israel with Service Pack 4
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT 4.0 Service Pack 4, the "Automatically adjust clock
+for daylight saving changes" check box is unavailable on the Time Zone tab in
+the Date/Time tool in Control Panel if the time zone is set for Israel.
+
+This check box is available for Israel before you install Service Pack 4.
+
+CAUSE
+=====
+
+The country of Israel participates in daylight savings time, but the dates on
+which it starts and ends may vary. Because the start and end dates may vary,
+automatic adjustment is unavailable.
+
+RESOLUTION
+==========
+
+To work around this behavior, use any of the following methods:
+
+ - Change the time manually on the affected computer(s) by double-clicking
+   Date/Time in Control Panel and then adjusting the hour value on the Date
+   & Time tab.
+
+ - Use the Tzedit program from the Windows NT 4.0 Resource Kit. You can use this
+   program to change the affected time zones to start and end daylight savings
+   time on the appropriate date.
+
+ - If it is available, use Microsoft Systems Management Server to make the
+   modifications on a network.
+
+STATUS
+======
+
+This behavior is by design after installation of Service Pack 4.
+
+
+Additional query words: gray grayed grey greyed dimmed out
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

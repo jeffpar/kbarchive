@@ -1,0 +1,64 @@
+DOCUMENT:Q256215  03-MAY-2000  [sms]
+TITLE   :SMS: Client Reports Advertisement Status Messages to Wrong Sites
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbAdvertisement
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under certain circumstances, a Systems Management Server (SMS) 2.0 client that
+is running on a laptop computer may report advertisement status messages to
+sites to which it is incorrectly assigned, along with the site to which it is
+correctly assigned.
+
+When a client receives and runs an advertisement, "Program Started" and "Program
+Completed" messages appear to be reported to each site to which the client
+thinks it is assigned and installed. This results in a skewed number of status
+messages for the program status for the client.
+
+CAUSE
+=====
+
+The conditions that can result in this behavior are documented in the following
+Microsoft Knowledge Base article:
+
+   Q247543 SMS: Clients Incorrectly Assigned to Multiple Sites
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms docking station multiple IP address Cliex32
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbAdvertisement 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

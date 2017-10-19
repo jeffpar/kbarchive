@@ -1,0 +1,62 @@
+DOCUMENT:Q118767  11-JAN-2001  [vbwin]
+TITLE   :PRB: Custom Control or Library Not Working with VB 4.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is possible that a custom control or dynamic link library that used
+undocumented features of Visual Basic version 3.0 will not work correctly in
+Visual Basic version 4.0.
+
+CAUSE
+=====
+
+Visual Basic version 4.0 is designed to be backward compatible. However, some
+third-party companies have based custom controls and routines on undocumented
+features in Visual Basic version 3.0. The internal structure of Visual Basic has
+changed significantly for version 4.0. Therefore, controls and libraries based
+on undocumented features or undocumented internal structures may no longer work.
+
+RESOLUTION
+==========
+
+If you find that your third-party custom control or library that worked in
+Visual Basic version 3.0 is not working correctly in Visual Basic version 4.0,
+please contact the third-party add-on manufacturer. The company may have an
+updated version designed to work with Visual Basic version 4.0.
+
+
+Additional query words: 4.00 vbx incompatible incompatibility vb4all vb4win
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB400Search kbVB400
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

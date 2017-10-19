@@ -1,0 +1,106 @@
+DOCUMENT:Q139317  13-JUN-2001  [homemm]
+TITLE   :Encarta 1996: MSETUP.TXT Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:3.x
+OPER/SYS:
+KEYWORDS:kbmm kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+ - the operating system: Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains a copy of the complete text of the Msetup.txt
+file located on the Microsoft Encarta 1996 Encyclopedia compact disc.
+
+The article explains how to perform a manual installation of Encarta 96 on a
+system running Microsoft Windows version 3.1x and Microsoft Windows for
+Workgroups version 3.x.
+
+Manual96.bat will copy or recopy the appropriate files onto your system, and then
+you can run Encarta's Setup program to complete the installation.
+
+NOTE: This article does not apply to Windows 95 or Windows NT.
+
+
+MORE INFORMATION
+================
+
+ENCARTA 96 ENCYCLOPEDIA MANUAL INSTALLATION INSTRUCTIONS
+--------------------------------------------------------
+
+If you encounter difficulties in setting up Encarta Encyclopedia on Windows 3.1x
+with the SETUP program, you will still be able to fully install and use Encarta
+Encyclopedia by using a manual installation and MANUAL96.BAT, a batch file that
+will copy files from the CD to your hard disk.
+
+Once the copying is completed, it may be necessary to run Setup.exe from the CD
+as specified in the Encarta 96 Encyclopedia installation instructions.
+
+Running MANUAL96.BAT
+--------------------
+
+It is recommended that you exit Windows before running MANUAL96.BAT to prevent
+possible difficulties with replacement of some system files.
+
+The MANUAL96.BAT file is located in the x:\AAMSSTP\MANUAL directory of your
+Encarta Encyclopedia CD (where 'x' is the drive corresponding to your CD-ROM
+drive). The CD-ROM drive will be referred to as [source] later in these
+instructions.
+
+To run MANUAL96.BAT, change to the x:\AAMSSTP\MANUAL directory and type the
+following at the MS-DOS prompt:
+
+   "MANUAL96 [windows dir] [dest]" (without the quotation marks)
+
+where [windows dir] is the path to your Windows directory (usually C:\WINDOWS)
+
+[dest] is the path and directory to which you want to install Encarta
+Encyclopedia (usually C:\Encarta)
+
+For example:
+
+   MANUAL96 C:\WINDOWS C:\ENCARTA
+
+installs Encarta 96 Encyclopedia to your C drive in the ENCARTA directory and
+tells the batch file that Windows is located on your C drive in the WINDOWS
+directory.
+
+Important: Running Setup.exe
+----------------------------
+
+If you have not previously run Setup.exe from the Encarta 96 Encyclopedia disk,
+you should do so after running the MANUAL96.BAT file.
+
+Once the above instructions have been completed, Encarta will be successfully
+installed.
+
+
+Additional query words: kbhowto 1996 96 multi media multimedia multi- mmtitles kbmm
+
+======================================================================
+Keywords          : kbmm kbprb 
+Technology        : kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbZNotKeyword6 kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbOSWin310 kbOSWin311 kbOSWin300 kbOSWin300a
+Version           : WINDOWS:3.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

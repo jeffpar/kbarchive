@@ -1,0 +1,60 @@
+DOCUMENT:Q128636  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Set Up SourceSafe for Replication Under Windows NT
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+ - Microsoft SourceSafe for Windows NT, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can set up Visual SourceSafe for replication under Windows NT to allow a
+database to be mirrored on a backup server, and thus increase network
+reliability. This article explains how to do it for SourceSafe.
+
+MORE INFORMATION
+================
+
+1. Follow the directions for setting up a replication directory as presented in
+   the following article in the Microsoft Knowledge Base:
+
+   Q101602 Configuring Windows NT for Replication
+
+2. Set up the permissions for SourceSafe, which can be a bit tricky. There are
+   two sets of permissions that must be reviewed: Share permissions and
+   Directory permissions. The directory permissions override the settings of the
+   share permissions. Because of this, setting up a share in this directory is a
+   two-step process; you must set both sets of permissions. After setting up the
+   share in the normal fashion, the NT administrator must also change the
+   Security..Permissions to include SS users.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe310NT
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

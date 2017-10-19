@@ -1,0 +1,93 @@
+DOCUMENT:Q177673  19-MAR-1999  [exchange]
+TITLE   :XADM: Incoming PF Replication Message Causes Events in App Log
+PRODUCT :Microsoft Exchange
+PROD/VER:Windows:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ 
+
+SYMPTOMS
+========
+
+When an Exchange Server participating in Public Folder replication receives an
+incoming replication message, the following errors may be written in the
+application event log:
+
+  Event ID: 3027
+   Source: MSExchangeIS
+   Type: Informational
+   Description: An incoming replication message was processed.
+
+   Type: 0x10
+   Message ID: 1-24687
+   Folder(s): (44-64981) IPM_SUBTREE\<PublicFolder>\<Subfolder>
+
+   Server: /O=<org name>/OU=<site name>/CN=CONFIGURATION
+   /CN=SERVERS/CN=<server name>/CN=MICROSOFT PUBLIC MDB
+
+   Event ID: 3089
+   Source: MSExchangeIS
+   Type: Warning
+   Description: Error 0x80004005 occurred while processing an
+   incoming replication message.
+
+   Event ID: 3079
+   Source: MSExchangeIS
+   Type: Error
+   Description: Unexpected replication thread error 0x80004005.
+
+   EcLoadBinary
+   EcCmpPropCnsetSeen
+   EcUnpackStatus
+   EcReplMessageUnpack
+   FReplRcvAgent
+
+
+CAUSE
+=====
+
+Each public information store periodically constructs a status message to send
+to other public information stores with which it is participating in public
+folder replication. This status message is sent when replica changes are sent by
+any public folder. If an information store does not send any changes, this
+process will occur once per day.
+
+RESOLUTION
+==========
+
+The events stem from the source server, not the server receiving the incoming
+public folder replication message. No action is required because they are
+harmless.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : Windows:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

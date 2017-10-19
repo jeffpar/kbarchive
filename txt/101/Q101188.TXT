@@ -1,0 +1,54 @@
+DOCUMENT:Q101188  26-JUL-2001  [visualc]
+TITLE   :Order of Object Initialization Across Translation Units
+PRODUCT :Microsoft C Compiler
+PROD/VER:MS-DOS:7.0; :1.0,1.5,2.0,4.0
+OPER/SYS:
+KEYWORDS:kbLangCPP kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ for MS-DOS, version 7.0 
+ - Microsoft Visual C++, versions 1.0, 1.5 
+ - Microsoft Visual C++, versions 2.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The order of initialization of global objects is undefined across translation
+units. For example, if your application consists of three C++ modules and each
+module declares an object of xyz class, there is no guarantee during program
+initialization which of these objects will be constructed first.
+
+In addition to not relying on the order of initialization, you should not use one
+object's address in another object's initialization when the two objects are
+contained in different translation units.
+
+AT&T 2.1 does not define the order of initialization for global objects
+across translation units. The order of initialization is
+implementation-dependent.
+
+Additional query words: kbinf 7.00 1.00 1.50 2.00 4.00
+
+======================================================================
+Keywords          : kbLangCPP kbVC 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbZNotKeyword3 kbCVC700DOS kbVC200
+Version           : MS-DOS:7.0; :1.0,1.5,2.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

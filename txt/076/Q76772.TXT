@@ -1,0 +1,61 @@
+DOCUMENT:Q76772  23-OCT-1999  [win3x]
+TITLE   :README.TXT: Giving Maximum Priority to an Application
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Windows with Multimedia Extensions
+version 1.0 README.TXT file. The Setup program copies this file to the Windows
+with Multimedia Extensions directory.
+
+This information does not apply to later versions of Windows.
+
+GIVING MAXIMUM PRIORITY TO AN APPLICATION
+=========================================
+
+Windows lets you set the specific amount of processing time your
+applications will receive relative to other applications that are
+running.
+
+To ensure that a particular application receives all the processing
+time it needs without interruption, set its Priority Foreground option
+to 10000. With this setting, no background applications will be
+allowed to run unless the foreground application is idle.
+
+See the section entitled "Background and Foreground Priority," in the
+HyperGuide PIF Editor Options for more information about this setting.
+The PIF Editor is part of the Accessories Group in HyperGuide.
+
+Additional query words: MMWIN kbmm 1.00 readme
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

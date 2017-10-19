@@ -1,0 +1,59 @@
+DOCUMENT:Q176033  13-MAR-1999  [exchange]
+TITLE   :XADM: Cannot Stop MS Mail (PC) or cc:MAIL Address Generation
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You cannot stop cc:Mail or MS Mail (PC) proxy address generation on a Microsoft
+Exchange 4.0 server if a Microsoft Exchange 5.5 server is in the same site. You
+can disable cc:Mail or MS Mail (PC) address types from being generated via
+Configuration, Site Addressing, Site Addressing tab on the Exchange 5.5 server.
+This will remove the cc:Mail or MS Mail (PC) addresses from all users in the
+site. However, when you create new users in the Exchange 4.0 server, cc:Mail or
+MS Mail (PC) address types will continue to be generated. Creating new users in
+the Exchange 5.5 server will not generate cc:Mail or MS Mail (PC) address types.
+
+CAUSE
+=====
+
+This is by design, because Exchange 4.0 does not support a new property of the
+Exchange 5.5 directory schema. When you disable the cc:Mail or MS Mail (PC)
+address type, an attribute called Disabled-Gateway-Proxy is added to the
+Exchange directory schema. This attribute lists the proxy addresses that are
+disabled. On the Exchange 4.0 server, this attribute is added, but the list of
+disabled addresses is blank.
+
+Additional query word: RAW
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.5
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

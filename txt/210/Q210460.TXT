@@ -1,0 +1,88 @@
+DOCUMENT:Q210460  07-MAY-2001  [visualc]
+TITLE   :PRB: Data Truncated Error With CRecordset
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbMFC kbODBC kbOracle kbSQLServ kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to move to record in a wizard-generated recordset, the following
+error can occur:
+
+   Data truncated.
+
+You may also see the following TRACE message in the debug output window:
+
+   Error: field data truncated during data fetch.
+
+CAUSE
+=====
+
+This error occurs when you are trying to access data in a text field that
+contains more than 255 characters. If you use the AppWizard or ClassWizard to
+generate your recordset class, the wizard creates a call to the function
+RFX_Text to transfer data between the database and your member variable. The
+fourth parameter of this function specifies the maximum allowed length of the
+data being transferred and the default value of this parameter is 255.
+
+RESOLUTION
+==========
+
+For each call to RFX_Text where the field can contain more than 255 characters,
+add a fourth parameter that is equal to the maximum length of that field.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Use the AppWizard to create a new MFC project with database support. Use an ODBC
+data source that contains one or more text fields with data longer than 255
+characters.
+
+NOTE: When you build the project and run it, you may see the above error when you
+try to move to a record that contains long data in the text field. You can see
+it as soon as the recordset opens, if the first record meets this criteria.
+
+REFERENCES
+==========
+
+See the documentation for RFX_Text for more information on this function.
+
+Additional query words: kbDSupport truncation rfxtext
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbOracle kbSQLServ kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

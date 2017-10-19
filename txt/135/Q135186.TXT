@@ -1,0 +1,60 @@
+DOCUMENT:Q135186  17-DEC-2000  [win95x]
+TITLE   :Open Dialog Box Does Not Work After Using Long Filename
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Open dialog box in some programs does not work after you open a file with a
+long filename. VistaPro version 3.0 is one such program.
+
+CAUSE
+=====
+
+The Open dialog box in these programs does not support long filenames and may be
+corrupted by the use of a long filename. If you open a file with a long
+filename, some of the filename characters may appear in the Open dialog box the
+next time you use it.
+
+RESOLUTION
+==========
+
+To make the Open dialog box work correctly again, quit and then restart the
+program.
+
+MORE INFORMATION
+================
+
+Windows 95 assumes that all 32-bit programs support long filenames. However,
+some programs may not handle long filenames correctly.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,124 @@
+DOCUMENT:Q233082  11-JUN-2002  [winnt]
+TITLE   :Windows Terminal Server Clients May Randomly Hang for 35 Seconds
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+Terminal Server clients may experience an intermittant loss of responsiveness or
+the client may appear to stop responding (hang) while running programs on the
+Terminal Server computer. This problem only occurs if one or more users try to
+gain access to files on other file servers on the network. When the client
+hangs, all user sessions connected to the Terminal Server computer are affected
+and the lack of responsiveness may last for 35 seconds or more.
+
+CAUSE
+=====
+
+This problem occurs because each Terminal Server client is typically allowed to
+have one outstanding command, such as a file open or read request to each remote
+server at a time. When a file operation, such as file open, is sent to a server
+for a file that is currently in use, the server may send a break oplock request
+to the client that has the file open. This allows the client owning the locked
+file a chance to flush any buffered changes before shared use is allowed.
+
+In the case where the client issues a new file open request for a file it already
+has open, the redirector may temporarily deadlock when the break oplock is
+received from the server. After sending the oplock break request, the server
+gives the client 35 seconds, which is the default setting to respond. When the
+timeout occurs, the server responds to the new file request, breaking the
+deadlock.
+
+RESOLUTION
+==========
+
+To resolve this problem, install Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4 (SP4). Service Pack 4 provides an option that forces each client
+to negotiate a session with all remote servers to which it is connected. The
+negotiation allows the server to specify the number of commands the client may
+have outstanding at a time, which by default, is 50.
+
+MORE INFORMATION
+================
+
+On the Terminal Server computer, disabling the redirector parameter
+MultipleUsersOnConnection increases the number of outstanding commands from 1 to
+whatever number the server is able to support. Disabling this option also
+corrects problems in installations where Terminal Server clients run programs
+that open a large number of files or gain access to shared files, such as
+databases. The impact of this option is that additional memory is used by the
+redirector on the Terminal Server computer and on any servers to which the
+client is connected. The amount of memory used varies based on configuration and
+usage. Additionally, when a client first connects to a remote server, the client
+sends one or more negotiate commands and then connects to the resource. If the
+option is left at the default setting, only the first client connecting to a
+remote server goes through the negotiate process, all other clients immediately
+attempt to connect to the resource.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+   Q190162 Terminal Server and the 2048 Open File Limitation
+   Q231798 Access Database with Multiple Users Slow on Terminal Server
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To enable the new functionality, perform following steps:
+
+1. Ensure that the server is running SP4 or later.
+
+2. Start Registry Editor (Regedt32.exe).
+
+3. Locate the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\\SYSTEM\CurrentControlSet\Services\Rdr\Parameters
+
+4. On the Edit menu, click Add Value, and then add the following registry value:
+
+   Value Name: MultipleUsersOnConnection
+   Data Type:  REG_DWORD
+   Value:      0
+
+5. Quit Registry Editor.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

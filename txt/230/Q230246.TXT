@@ -1,0 +1,63 @@
+DOCUMENT:Q230246  05-MAY-2000  [sms]
+TITLE   :16-Bit MS-DOS-Based Programs Not Supported for Software Metering
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Most 16-bit and 32-bit Windows-based programs are supported for Software
+Metering. However, Software Metering cannot track or meter 16-bit MS-DOS-based
+programs on Microsoft Windows NT Software Metering clients.
+
+MORE INFORMATION
+================
+
+In Windows NT, MS-DOS-based programs are started in a virtual MS-DOS window
+(Ntvdm.exe). Software Metering registers programs in the same way that Task
+Manager recognizes running processes. MS-DOS-based or 16-bit Windows-based
+programs that are listed as Ntvdm.exe or Ntvdm\Wowexec.exe are not displayed
+because they are included in the default list of excluded programs in Software
+Metering.
+
+To verify if your program can be tracked by Software Metering:
+
+1. Start the program.
+
+2. Start Task Manager, and then click the Processes tab.
+
+3. If the program file or registerable file (.exe, .dll, .scr, .mod, .tsk, or
+   .bin file) is listed, it can be tracked by Software Metering.
+
+Additional query words: prodsms swmeter legacy
+
+======================================================================
+Keywords          : kbsms200 kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,49 @@
+DOCUMENT:Q97977  30-JUL-2001  [lanman]
+TITLE   :RAS and Telebit PEP
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+It is recommended that you do not use Telebit's proprietary PEP compression
+method with Microsoft Remote Access Service (RAS). It will actually slow down
+data throughput rates with RAS.
+
+MORE INFORMATION
+================
+
+PEP is a method implemented in some Telebit modems to get higher data throughput
+over slower DCE rate. Using a normal terminal for file transfer over a 9600 bps
+PEP connection, you may actually get DTE throughput closer to 19,200 bps. RAS is
+more of an interactive application that both sends and receives smaller packets
+of data. A PEP connection with RAS is actually much slower than a non-PEP
+connection at the same DCE bps. The reason is that PEP holds back small packets
+of data to compress them when more packets of data come from the system. This
+has the effect of holding back NBFs\AsyBEUIs acknowledgment frames. Hence,
+frames are resent, timeouts occur, and in general things slow down. A straight
+9600 bps connection without PEP is actually faster for RAS.
+
+Additional query words: 2.20 v.42bis mnp 5 1.1 1.0 3.1 error correction data compression.
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q141737  10-FEB-2000  [foxpro]
+TITLE   :BUG: Invalid Page Fault When Form Released in Error Event
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A formset contains a command that releases the form in the form's error event.
+If the formset is run multiple times and released due to errors, Visual FoxPro
+will cause an Illegal Operation under Windows 95 and exit to the operating
+system.
+
+WORKAROUND
+==========
+
+Place RELEASE THISFORMSET in the Error Event of the form instead of using
+RELEASE THISFORM. Then the form will run successfully.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a Formset containing one form.
+
+2. In the Activate Event of the form enter the following lines of code:
+
+      ERROR(1705)
+      ERROR(1705)
+
+3. Add a command button, and add the following command to its Click event:
+
+      THISFORM.RELEASE
+
+4. In the Forms Error event, enter the following code:
+
+      ? nerror,MESSAGE()
+      WAIT
+      RELEASE THISFORM
+
+5. Run the form two or three times. Visual FoxPro will return an Invalid Page
+   Fault error and exit to the operating system.
+
+Additional query words: VFoxWin page fault buglist3.00 kbvfp300 kbvfp300b kbvfp500 buglist3.00b
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500
+Version           : WINDOWS:3.0,3.0b,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,78 @@
+DOCUMENT:Q217258  14-NOV-2000  [word97]
+TITLE   :WD97: Graphic Colors Display Incorrectly in Word and IE 5
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbwdinternet wd2000
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Internet Explorer 5 to view a document or Web page
+created in Word, and the document or Web page contains a graphic, the graphic's
+colors may not be displayed correctly.
+
+CAUSE
+=====
+
+This problem can occur if you are running Microsoft Internet Explorer 5 and your
+screen is set to display 256 colors.
+
+
+
+RESOLUTION
+==========
+
+To resolve this problem, change your screen settings to a higher color setting,
+for example, True Color (24 bit).
+
+To change the number of colors your monitor displays:
+
+1. On the Windows Start menu, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. On the Settings tab, in Colors, click the number of colors that you want your
+   monitor to display.
+
+NOTE: Your monitor and display adapter determine the maximum number of colors
+that can appear on your monitor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta kbwdinternet wd2000 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

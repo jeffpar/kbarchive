@@ -1,0 +1,83 @@
+DOCUMENT:Q275921  06-AUG-2002  [exchange]
+TITLE   :XCLN: How to View Private Messages in an Additional Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Outlook 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you add another user's mailbox to your Microsoft Outlook profile, when you
+open this other mailbox, you are not able to view messages that are marked as
+Private.
+
+CAUSE
+=====
+
+The Microsoft Outlook client is designed to filter messages marked as Private so
+that only the intended recipient is able to view the message in their Inbox.
+This filtering process prevents delegates from viewing the contents of private
+messages that were intended for the original recipient only.
+
+RESOLUTION
+==========
+
+To enable delegates to see messages marked as Private, follow these steps:
+
+1. Create an Outlook profile and log on to the <Resource1> mailbox.
+
+2. On the Tools menu, click Options, and then click the Delegates tab.
+
+3. Click Permissions and assign Reviewer permissions (or higher) to the Inbox.
+
+4. Click to select the "Delegate can see my private items" check box.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When you are unable to view private messages, the Inbox for this additional
+mailbox may indicate that you have an unread message (even though you cannot see
+it).
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q171636 HOWTO: Adding a Delegate to Exchange Server Messaging Service
+
+Additional query words: xadm, unread items
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook2000Search kbZNotKeyword3
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,61 @@
+DOCUMENT:Q157491  10-AUG-2001  [iis]
+TITLE   :IIS Key Manager Only Allows 512-Bit Size Key
+PRODUCT :Internet Information Server
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Internet Information Server 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Key Manager in Internet Information Server (IIS) to create a key,
+512 bits is the only size allowed.
+
+CAUSE
+=====
+
+The 1381 build (not golden) of Windows NT Server 4.0 is installed.
+
+RESOLUTION
+==========
+
+Install the golden, or retail, build (1381). of Windows NT Server 4.0.
+
+MORE INFORMATION
+================
+
+To verify the build installed, check the build number shown during boot. If the
+build number is (1381) with no dot, the prerelease build of Windows NT 4.0 is
+installed and needs to be upgraded to the United States/Canada domestic release
+version.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbiisSearch kbiis200
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q165897  16-APR-2000  [powerpt]
+TITLE   :PPT: Versions of Internet Assistant
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:4.0; WINDOWS:4.0,7.0
+OPER/SYS:
+KEYWORDS:kbdta kbhtml kbAddin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Macintosh, version 4.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the versions of the Internet Assistant for Microsoft
+PowerPoint that are currently available.
+
+The Internet Assistant for PowerPoint is an add-in that allows you to convert a
+PowerPoint presentation to a series of HTML documents which you can view in an
+Internet browser, such as Microsoft Internet Explorer.
+
+MORE INFORMATION
+================
+
+Microsoft PowerPoint 7.0 for Windows 95
+---------------------------------------
+
+The Internet Assistant for PowerPoint 7.0 is available as a PowerPoint add-in.
+There are versions available for the following languages:
+
+ - English (also works with any language that uses ANSI characters.)
+
+ - Japanese
+
+ - Korean
+
+ - Traditional Chinese
+
+For more information about obtaining this add-in, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q129386 Internet Assistant for PowerPoint Available on Online Services
+
+For information about which files the PowerPoint Internet Assistant includes,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q147893 PPT7: Files Included with PowerPoint Internet Assistant
+
+Microsoft PowerPoint 4.0 for Macintosh and Windows
+--------------------------------------------------
+
+There is currently no Internet Assistant available for these versions of
+PowerPoint.
+
+NOTE: The Internet Assiatant features are built into PowerPoint 97 for Windows
+and PowerPoint 98 Macintosh Edition.
+
+Additional query words: 97 PPTIA Internet Assistant IA PowerPoint hypertext markup language WWW world-wide web worldwide
+
+======================================================================
+Keywords          : kbdta kbhtml kbAddin 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt700Search kbPowerPt400 kbPowerPt400Mac
+Version           : MACINTOSH:4.0; WINDOWS:4.0,7.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

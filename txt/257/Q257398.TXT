@@ -1,0 +1,70 @@
+DOCUMENT:Q257398  10-AUG-2001  [winnt]
+TITLE   :SFU: Cannot Use ALT+CONTROL Keys from Within a Telnet Session
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Telnet clients may be unable to use ALT+CONTROL key combinations in advanced
+character-mode programs (such as Edit.com) from within a Telnet session to a
+Windows NT Services for UNIX-based Telnet server.
+
+CAUSE
+=====
+
+The Telnet client is not using VTNT emulation mode. VTNT emulation is the
+preferred emulation type for using the Windows NT command shell (Cmd.exe) from
+within a Telnet session. VTNT emulation is the only emulation type that provides
+the full functionality of advanced character-mode programs such as Edit.com.
+
+RESOLUTION
+==========
+
+Install the Telnet client that is included on the Microsoft Windows NT Services
+for UNIX CD-ROM on the client workstation. To set the terminal emulation type to
+VTNT, start a Telnet session and type "SET TERM VTNT" (without the quotation
+marks) at the Microsoft Telnet prompt. You can then open a connection to the
+Telnet server as usual.
+
+MORE INFORMATION
+================
+
+Presently, VTNT emulation is only available with the Telnet client and server
+components included on the Microsoft Windows NT Services for UNIX add-on pack.
+It is not included with the GUI-based Telnet client program that is included
+with Windows NT, Microsoft Windows 95, and Microsoft Windows 98.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

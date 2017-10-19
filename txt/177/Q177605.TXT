@@ -1,0 +1,92 @@
+DOCUMENT:Q177605  08-NOV-2001  [homekids]
+TITLE   :MSB Dinos: Sound Distorted or Fuzzy when Ms. Frizzle Is Talking
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbmm kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores in the Age of Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+*********************************************************************
+**                           - WARNING -                           **
+**     THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN       **
+**     CONFIRMED, EDITED, OR TESTED BY MICROSOFT. USE ONLY         **
+**     WITH DISCRETION.                                            **
+*********************************************************************
+
+SYMPTOMS
+========
+
+When you run Scholastic's Magic School Bus: Explores in the Age of Dinosaurs,
+sound playback may be distorted or fuzzy when Ms. Frizzle speaks.
+
+CAUSE
+=====
+
+This behavior can occur if you use an Ensoniq AudioPCI sound card with outdated
+sound drivers.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following steps:
+
+1. Verify that the speaker volume on the audio card is not set to full volume,
+   and that the sound card is configured to use Single-Mode Direct Memory Access
+   (DMA).
+
+   For additional information about how to adjust speaker volume and how to
+   configure the audio card to use Single-Mode DMA, please see the following
+   article in the Microsoft Knowledge Base:
+
+   Q137451 Sound Distortion with Multimedia Programs
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Multimedia.
+
+4. Click the Audio tab.
+
+5. Under Playback, in the Preferred Device box, click Game Compatible Device. If
+   this device is not available, proceed to the next step.
+
+6. Verify that the Use Preferred Devices Only check box is selected. If this
+   check box is cleared, click it to select it.
+
+7. Click OK.
+
+8. Close Control Panel, and then restart the computer.
+
+MORE INFORMATION
+================
+
+The Game Compatible Device is installed by some data/fax/voice modems.
+
+Additional query words: kids mskids msb multi-media multi media msbdino msbdinos msbearth distort muffled garbled audio pci
+
+======================================================================
+Keywords          : kbenv kbmm kbsound kbimu 
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticDinosaurs kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

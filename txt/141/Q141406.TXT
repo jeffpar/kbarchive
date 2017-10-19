@@ -1,0 +1,73 @@
+DOCUMENT:Q141406  08-NOV-2001  [homemm]
+TITLE   :Dangerous Creatures: WindowShade Causes Screen Redraw Problem
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select Jump Text in Dangerous Creatures, and then hide the resulting
+pop-up window using WindowShade, when you select another Jump Text item the
+screen redraws incorrectly when the new window opens.
+
+For example, parts of the screen seems to be missing.
+
+CAUSE
+=====
+
+The problem occurs if you use WindowShade to hide a pop-up window and then open
+another pop-up window while the first pop-up window is currently hidden.
+
+RESOLUTION
+==========
+
+Do not use WindowShade to hide the pop-up window.
+
+To force the screen to redraw properly without quitting Dangerous Creatures, do
+the following:
+
+1. Click the application menu located in the upper-right corner of the screen.
+   Select Hide Microsoft Dangerous Creatures.
+
+2. Click the application menu again, and select Microsoft Dangerous Creatures.
+
+MORE INFORMATION
+================
+
+This problem might not occur on all Macintosh models.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbDangerousCreaturesMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

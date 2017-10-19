@@ -1,0 +1,83 @@
+DOCUMENT:Q161917  21-FEB-2002  [winnt]
+TITLE   :Printing Italics to a LexMark Printer Produces Incorrect Output
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When printing italicized text using the 12 point Times New Roman font on an IBM
+or LexMark PostScript printer, incorrect output may result. The italicized
+letters overwrite the preceding space. Increasing the number of different fonts
+and point sizes, or including graphics makes the problem more pronounced.
+
+CAUSE
+=====
+
+This problem occurs because Windows NT substitutes the TrueType font for a
+PostScript font that resides on the printer to help speed printing. The drivers
+use the metrics from the substituted PostScript font instead of the TrueType
+font when placing the characters.
+
+RESOLUTION
+==========
+
+There are two workarounds to this issue:
+
+1. In the Printers folder, select the printer then click Document Defaults from
+   the File menu.
+
+2. Find the TrueType Font option on the Advanced tab.
+
+3. Change it to Download As Soft Font.
+
+- or -
+
+1. In the Printers folder, select the printer and then click Properties from the
+   File menu.
+
+2. Find the Font Substitution option on the Device Settings tab.
+
+3. Change it to Slow but More Accurate.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: spacing true type truetype
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

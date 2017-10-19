@@ -1,0 +1,77 @@
+DOCUMENT:Q199169  19-MAR-1999  [sms]
+TITLE   :SMS: Secondary Site Has Status Messages From NetWare Components
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbBindery kbNDS kbOSNovell kbSiteComp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A secondary site may be showing system status messages for NetWare components
+unable to start due to the Intranetware Client not being installed on the
+server.
+
+CAUSE
+=====
+
+During a secondary site install from a Primary site server that contains NetWare
+components, the NetWare options are transferred to the secondary site and the
+threads for NetWare are automatically started. This is a problem if that
+secondary site was never meant to work with any NetWare servers.
+
+WORKAROUND
+==========
+
+If the secondary site will have NetWare resources configured as system roles,
+then applying the Intranetware client to the server should stop the system
+status messages from being created.
+
+If the NetWare components are not needed on this secondary site, then uninstall
+the secondary site and reinstall using the CD Installation method. This method
+allows you to not select the NetWare components during the reinstallation.
+
+NOTE: Running the setup program at the secondary site that is producing the
+status messages shows you the checkboxes for the NetWare components. However,
+these components are unable to be deselected and removed as they are dimmed and
+unavailable. Uninstallation and reinstallation of the secondary site through the
+CD method without enabling the NetWare components is the recommended method to
+unable them.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: NDS Bindery prodsms nwroles
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbBindery kbNDS kbOSNovell kbSiteComp 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

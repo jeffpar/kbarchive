@@ -1,0 +1,70 @@
+DOCUMENT:Q164184  30-DEC-1999  [iis]
+TITLE   :Associating Index Server File Types for Filtering
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.1; :
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 1.1 
+ - Indexing Service 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you issue a query, the abstract shows HTML code instead of useful data.
+
+CAUSE
+=====
+
+If an HTML file is filtered, but it does not have an .html, .htm, .asp, .htx
+file extension, then the file will not be filtered with the HTML file filter.
+
+WORKAROUND
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+NOTE: These registry entries are ONLY FOR HTML files.
+
+Using the registry editor, create a file association for the file type under
+HKEY_CLASSES_ROOT. Create a key for the file extension, and place the following
+values in the key.
+
+Name: (Default) <-- Note that this entry is blank
+String Value = "htmlfile"
+
+Name: Content Type
+String Value = "text/html"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ110
+Version           : winnt:1.1; :
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

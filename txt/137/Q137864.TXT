@@ -1,0 +1,57 @@
+DOCUMENT:Q137864  11-NOV-1999  [pcmail]
+TITLE   :PC NTMMTA: Err Msg: A Failure Occurred Attempting to Read...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Mail Multitasking MTA for Windows NT (NT MMTA), start a
+service, and try to monitor it, you may get the following error:
+
+   Error: A Failure Occurred Attempting to Read or Write to the Registry
+
+CAUSE
+=====
+
+You selected to monitor an instance that is local to the Microsoft Windows NT
+machine; however, the Service Location selected is set to Remote Server in the
+Microsoft Mail Service Manager.
+
+RESOLUTION
+==========
+
+In the Microsoft Mail Service Manager, verify Service Location is set to Local.
+
+
+Additional query words: 3.50 MTA
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

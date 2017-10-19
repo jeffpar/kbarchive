@@ -1,0 +1,55 @@
+DOCUMENT:Q151827  10-MAR-2000  [mastering]
+TITLE   :BUG: Mastering VC++: Print Topic Doesn't Print Topic Title
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:kbmm kbnokeywordkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual C++ ISBN 1-55615-914-5, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a topic from Mastering Visual C++, the topic's title is not
+printed.
+
+RESOLUTION
+==========
+
+There is no resolution to this problem at this time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed above. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 1.00 1.00a multi media multimedia multi-media mmtitles view
+
+======================================================================
+Keywords          : kbmm kbnokeyword kbbuglist
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :1.0,1.0a
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

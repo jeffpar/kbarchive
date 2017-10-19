@@ -1,0 +1,81 @@
+DOCUMENT:Q231455  11-JAN-2001  [mspress]
+TITLE   :Internet Explorer 5 At a Glance Corrections and Comments
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Internet Explorer 5 At a Glance ISBN 1-57231-964-X 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book "Internet Explorer 5 At A Glance," ISBN
+1-57231-964-X.
+
+The following topics are covered:
+
+ - Page 33: Button name in Step 5 is incorrect
+
+ - Page 133: Junk E-Mail procedure should be deleted
+
+ - Page 234: Web URL incorrect
+
+MORE INFORMATION
+================
+
+Page 33: Button name in Step 5 is incorrect
+-------------------------------------------
+
+In step 5, the button name should be "click OK" instead of "click Update".
+
+
+Page 133: Junk E-Mail Procedure should Be Deleted
+-------------------------------------------------
+
+The top procedure, "Set Rules for Detecting Junk E-mail," will not work because
+this feature was removed from the final version of Microsoft Internet Explorer
+5. This procedure should be deleted.
+
+
+Page 234: Web URL Incorrect
+---------------------------
+
+On page 234, step 1, change the URL.
+
+Change:
+http://www.microsoft.com/sbnmember/levels/getielogo.asp
+
+To:
+http://msdn.microsoft.com/osig/ie/usage.asp
+
+
+Additional query words: mspress 1-57231-964-x
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

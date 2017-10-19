@@ -1,0 +1,67 @@
+DOCUMENT:Q175082  08-APR-1999  [homemm]
+TITLE   :Bookshelf: Cannot Use ALT+F4 to Quit Program
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+ - Microsoft Bookshelf 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be unable to quit Microsoft Bookshelf using the ALT+F4 key combination
+if the mouse pointer is located over a button or tab in Bookshelf 98, or if you
+expand the Pinpointer menu in Bookshelf 99.
+
+NOTE: To expand the Pinpointer menu in Bookshelf 99, click the arrow located
+above the list of articles.
+
+RESOLUTION
+==========
+
+To quit Bookshelf, click Exit on the File menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem does not occur in Bookshelf 98 if you are using Microsoft Internet
+Explorer version 4.0. However, even if you are using Internet Explorer 4.0, the
+Bookshelf Daily window in Bookshelf does not close when you press ALT+F4 if the
+mouse pointer is located over one of the buttons in this window.
+
+Additional query words: multi multi-media media mm kbimu
+
+======================================================================
+Keywords          : kbui kbimu kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998 kbBookShelf1999
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

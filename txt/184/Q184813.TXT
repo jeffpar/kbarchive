@@ -1,0 +1,67 @@
+DOCUMENT:Q184813  09-AUG-2001  [winnt]
+TITLE   :BUG: Windows 95 Clients Cannot View Server Using Net View
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0,4.0a
+OPER/SYS:
+KEYWORDS:sbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a Microsoft BackOffice Small Business Server or
+Windows NT Server from a Windows 95 client using Net View \\<servername>,
+the following error occurs:
+
+   Error 234: Additional Data is available.
+
+CAUSE
+=====
+
+This error occurs if there are any share names on the server that are 13 or more
+characters in length and whether the client is connected on the LAN or through
+RAS.
+
+RESOLUTION
+==========
+
+Delete any shares with names of 13 or more characters and recreate them with
+less than 13 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : sbs 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : WinNT:4.0,4.0a
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q151505  08-AUG-2001  [winnt]
+TITLE   :Unable to Display The Find Tab (177)
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Find tab in Windows NT Help on the Start menu you may receive
+the following error message:
+
+   Unable to display the find tab.(177)
+
+CAUSE
+=====
+
+This error message may occur if you use an OEM (original equipment manufacturer)
+version of Windows NT 4.0 Workstation or Server.
+
+RESOLUTION
+==========
+
+To work around this problem, rename the Supp_ed.cnt and Supp_ed.hlp files in the
+%SYSTEMROOT%\Help folder. For more information, please contact the OEM.
+
+MORE INFORMATION
+================
+
+For additional information on this issue, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q224832 Error Message: Unable to Display Find Tab (177)
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

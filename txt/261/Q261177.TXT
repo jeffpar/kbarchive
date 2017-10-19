@@ -1,0 +1,48 @@
+DOCUMENT:Q261177  31-JAN-2002  [exchange]
+TITLE   :XADM: Adminpak Needed for Installing Exchange System Manager
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To install Microsoft Exchange System Management Tools on a workstation running
+Microsoft Windows 2000 Professional, you must first install the Microsoft
+Windows 2000 Adminpak (Adminpak.msi) on the workstation.
+
+The Adminpak.msi file can be found on the Microsoft Windows 2000 Server CD in the
+I386 folder.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Component         : Admin
+Technology        : kbExchangeSearch kbExchange2000Search kbExchange2000Serv
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

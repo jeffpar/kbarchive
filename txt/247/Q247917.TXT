@@ -1,0 +1,65 @@
+DOCUMENT:Q247917  10-AUG-2001  [winnt]
+TITLE   :Hewlett-Packard JetDirect Ports Missing on Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a computer running Microsoft Windows NT Server 4.0 or Microsoft Windows NT
+Workstation 4.0, you may notice that the Hewlett-Packard (HP) JetDirect ports
+are missing without your having deleted any ports.
+
+CAUSE
+=====
+
+This issue can occur because HP JetDirect ports in HP JetAdmin version 3.3 can
+cause corruption in certain Windows NT registry entries. The resulting loss of
+Internet Protocol (IP) address information and local area network (LAN) hardware
+information causes the ports to disappear.
+
+RESOLUTION
+==========
+
+To resolve this issue (if your copy of the HP JetAdmin program is earlier than
+version 3.4), remove HP JetAdmin and all the existing HP JetDirect ports.
+Install HP JetAdmin version 3.4 or later, and then recreate the HP JetDirect
+ports.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

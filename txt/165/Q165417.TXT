@@ -1,0 +1,57 @@
+DOCUMENT:Q165417  01-MAY-2001  [ssafe]
+TITLE   :DOC: Toolbar_Size Not Implemented in VSS 5
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbSSafe500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under the topic Toolbar_Size, the online documentation for Visual SourceSafe 5.0
+for Windows incorrectly states that users can set the size of the toolbar
+command buttons in the Visual SourceSafe Explorer by manipulating the
+Toolbar_Size initialization variable in a user[ASCII 146]s Ss.ini.
+
+MORE INFORMATION
+================
+
+Each user has an Ss.ini. For example, if you edit the Ss.ini in the
+<VSS_SERV>/users/guest directory (where VSS_SERV is the directory path of
+the Visual SourceSafe server installation) you will see various settings used by
+Visual SourceSafe to customize that user[ASCII 146]s Visual SourceSafe Explorer.
+In version 4.0x, the adjustment of the Toolbar_Size initialization variable (for
+example, Toolbar_Size = 24) changes the size of the command buttons to large or
+small. This functionality was removed in version 5.0, but the documentation was
+not updated to reflect this. Changing the Toolbar_Size initialization variable
+in Visual SourceSafe 5.0 has no effect.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbSSafe500 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe500
+Version           : WINDOWS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

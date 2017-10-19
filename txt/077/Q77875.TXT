@@ -1,0 +1,60 @@
+DOCUMENT:Q77875  14-DEC-1999  [win95x]
+TITLE   :Blank Window Title in PIF Editor Defaults to PIF Name
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Pages 451 and 459 of the "Microsoft Windows User's Guide" for version 3.0
+incorrectly state that when creating a program information file (PIF) and
+leaving the Window Title text box blank, the icon title, when minimized, will
+contain the application's filename without the extension.
+
+This information does not apply to later versions of Windows.
+
+MORE INFORMATION
+================
+
+If you leave the Window Title text box blank while in real, standard, or 386
+enhanced mode, the icon title does not assume the application's filename without
+the extension. Rather, the icon title assumes the name of the application's PIF
+without the .PIF extension.
+
+Note: This also holds true for the title that appears in the Task List when you
+press CTRL+ESC. While the manual is incorrect, the on-screen Help program that
+appears when you place the cursor in the Window Title text box and press F1
+correctly states that the title bar will display the name of the PIF without the
+.PIF extension.
+
+Additional query words: 3.00 3.0 documentation error 3.00a docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

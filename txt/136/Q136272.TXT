@@ -1,0 +1,71 @@
+DOCUMENT:Q136272  17-DEC-2000  [win95x]
+TITLE   :Cannot Connect to Windows NT 3.1 Computer with IPX/SPX
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using only the IPX/SPX-compatible network protocol in Windows 95,
+you find that you can connect to Microsoft Windows NT 3.5 servers and
+workstations, but not to Windows NT 3.1 servers or workstations running only the
+IPX/SPX-compatible protocol.
+
+CAUSE
+=====
+
+This problem can occur if you do not have NetBIOS support enabled.
+
+RESOLUTION
+==========
+
+To enable NetBIOS support with the IPX/SPX-compatible protocol, follow these
+steps:
+
+1. Use the right mouse button to click Network Neighborhood, and then click
+   Properties on the menu that appears.
+
+2. On the Configuration tab, double-click the IPX/SPX-compatible protocol.
+
+3. On the NetBIOS tab, click the "I want to enable NetBIOS over IPX/SPX" check
+   box to select it.
+
+4. Click OK, and then click OK again.
+
+5. When you are prompted to restart your computer, do so.
+
+REFERENCES
+==========
+
+Microsoft Windows 95 "Resource Kit," pages 430-431
+
+Additional query words: novell netware
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

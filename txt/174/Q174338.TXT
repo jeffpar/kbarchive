@@ -1,0 +1,82 @@
+DOCUMENT:Q174338  10-AUG-2001  [winnt]
+TITLE   :Dial-Up Connection Disconnects After Downloading Messages
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Internet Mail information service in Windows Messaging, your
+dial-up connection to the Internet may disconnect after your messages have been
+downloaded, even if your connection is established before you start Windows
+Messaging.
+
+CAUSE
+=====
+
+This behavior occurs when the Internet Mail information service is configured to
+connect using your modem.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure the Internet Mail information service to
+connect using your existing connection to the network. To do so, follow these
+steps:
+
+1. Quit Windows Messaging if it is running.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Mail.
+
+4. Click Internet Mail, and then click Properties.
+
+5. Click the Connection tab, click Connect Using The Network, click OK, and then
+   click OK again.
+
+MORE INFORMATION
+================
+
+If you configure the Internet Mail information service to connect using the
+network and you have a network adapter installed, you must connect to the
+Internet before you start Windows Messaging. Otherwise, you receive the
+following error message:
+
+   You could not be logged on to mail server: <Mail Server>
+
+   Be sure your account information for this server is accurate.
+   If this problem persists, contact your Internet Service Provider.
+
+Additional query words: smtp pop3 server dun ras terminate
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

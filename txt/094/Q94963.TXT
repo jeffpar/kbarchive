@@ -1,0 +1,54 @@
+DOCUMENT:Q94963  11-OCT-1999  [win95x]
+TITLE   :File Manager Formats 512 Bytes Per Sector Geometry Only
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+File Manager can format a hard disk drive partition only if the hard disk drive
+geometry supports 512 bytes per sector. You cannot use File Manager to format
+other hard disk drive metrics (such as 1024 bytes per sector).
+
+MORE INFORMATION
+================
+
+If you are unsure what your hard disk drive geometry is, you can find out by
+using the Microsoft Diagnostics (MSD) utility, which ships with Windows. To do
+this, type "msd" (without the quotation marks) at the command prompt and then
+choose Disk Drives from the Main menu.
+
+NOTE: File Manager does not rely on the MS-DOS FORMAT command to perform its disk
+formats. (It does not rely on any MS-DOS command to perform disk functions.)
+
+Additional query words: 3.00 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

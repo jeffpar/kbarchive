@@ -1,0 +1,91 @@
+DOCUMENT:Q102913  10-DEC-1999  [homemm]
+TITLE   :Scenes 1.0: Adding Pictures to Default PICSETS
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can add a picture from one set of Microsoft Scenes pictures (picset) to
+another.
+
+MORE INFORMATION
+================
+
+To add a picture, do the following:
+
+1. Copy the picture to the appropriate directory (for example, from
+   C:\Scenes\Space to C:\Scenes\Impress).
+
+2. Edit the Picset.ini file in the directory in which you just copied the
+   picture(s). For more information about how to perform this task in Windows,
+   see your Windows printed documentation or online Help.
+
+3. Change the PICTURECOUNT line to read 48 plus the number of pictures you are
+   adding to the PICSET. For example, if you are adding one picture, change the
+   PICTURECOUNT line to 49.
+
+4. Add the name of the picture(s) that you are adding to the end of the
+   Picset.ini file. The lines should be similar to the following:
+
+         [49]
+         Action=1
+         1.Input=<picset>\*.jpg
+
+   The <picset> is set to the default picset directory.
+
+5. Continue adding the other pictures following the lines above, but
+   incrementing the number in brackets.
+
+6. Edit the Enu.ini file in the original PICSET directory. Look for the number
+   that corresponds to the first two numbers of the file(s) you copied over.
+   Write this information down, then delete the lines that correspond to the
+   pictures you copied.
+
+7. Go to the new directory and edit the Enu.ini file. Locate the
+   "48=<description>" line, then add the following information for each
+   picture you copied:
+
+   "49=<description>
+   50=<description> " (without the quotation marks)
+
+   where <description> is the same description used in step 6.
+
+8. Save all files and then exit Scenes.
+
+9. Restart Scenes to enable the changes.
+
+NOTE: When you change the wallpaper in Scenes, the new picture(s) do not appear.
+These pictures are stored in .cat files and cannot be changed.
+
+Additional query words: msscenes screen saver screensaver wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

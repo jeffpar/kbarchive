@@ -1,0 +1,102 @@
+DOCUMENT:Q65267  11-OCT-1999  [win95x]
+TITLE   :Setting the Default Directory for Windows Applications
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows applications normally start in the directory in which the program files
+are located. You may want to have a Windows application start in a different
+directory when running under Microsoft Windows version 3.0. To have a Windows
+application start up in a different directory, do the following:
+
+1. Verify that the application's directory is listed in the DOS path statement.
+
+2. Verify that an icon exists for this application and that clicking the icon
+   runs the application.
+
+3. Highlight the icon and from the Program Manager File menu, choose Properties.
+
+4. Type the path of the new default directory in the command line of the Program
+   Item Properties dialog box. For example, type "C:\XLDATA\EXCEL.EXE" (without
+   the quotation marks) to have Excel start in the XLDATA directory.
+
+5. At this point, you will get the error message The specified path is invalid."
+   Click OK to bypass this message.
+
+MORE INFORMATION
+================
+
+The Program Manager will search for the executable file in the directory
+specified in the Command Line entry of the Program Item Properties dialog box.
+If the file is not found in that directory, the Program Manager will search the
+DOS path, leaving the specified directory as the default.
+
+There are two problems with this technique. First, when the Command Line is
+originally entered in the Program Item Properties dialog box, the error message
+
+   The specified path is invalid
+
+will appear. This indicates that Windows cannot find the executable file in the
+path specified. This does not prohibit Windows from accepting the entry, and
+Windows will add the program item to the group once OK is chosen.
+
+The second drawback is that Windows will use the default application program item
+icon instead of the program's actual icon when displaying the program item in
+its group within the Program Manager. To correct this behavior, do the
+following:
+
+1. Select the icon in Program Manager.
+
+2. From the File menu, choose Properties.
+
+3. Select Change Icon.
+
+4. Type the path to the executable file and press the ENTER key.
+
+Pages 89-91 of the "Microsoft Windows User's Guide" for Windows version 3.0 has
+more information about using Windows applications with the Program Manager.
+
+You may also have non-Windows applications start in different directories. The
+best method of doing this is to specify the directory you want the application
+to start in at the Start-Up Directory box within the PIF file for that
+application.
+
+REFERENCES
+==========
+
+For more information on this subject, refer to Page 451 of the "Microsoft
+Windows User's Guide."
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

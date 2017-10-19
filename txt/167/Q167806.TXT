@@ -1,0 +1,115 @@
+DOCUMENT:Q167806  09-AUG-2001  [winnt]
+TITLE   :Explanation of Advanced Options in WINS Manager
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are several advanced options and preferences that can be configured in the
+Windows Internet Name Service (WINS) Manager that affect the way the WINS server
+performs and displays data.
+
+MORE INFORMATION
+================
+
+In WINS Manager, on the Server menu, click Configuration, and then click
+Advanced to access the following settings:
+
+Logging Enabled - when enabled, WINS will log all changes to the Jet.log file in
+the path specified by the following registry key:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wins\ 
+Parameters\LogFilePath
+
+By default, this is set to %SystemRoot%\System32\WINS.
+
+Log Detailed Events - when enabled, WINS event log entries will have detailed
+information, but may affect performance since it is very resource intensive.
+
+Replicate Only With Partners - this option specifies that the WINS server should
+only replicate with Push or Pull partners. Without this option selected, an
+administrator can request replication with a WINS server that is not a Push or
+Pull partner.
+
+Backup On Termination - this option automatically performs a backup of the WINS
+database when the WINS Service is stopped, but not when the system is shut
+down.
+
+Migrate On/Off - when enabled, static records are treated as dynamic when they
+conflict with a new registration or replication. This means that if the static
+entry is no longer valid, the new record will overwrite it. Select this option
+if you are upgrading non-WINS clients to become WINS clients.
+
+Starting Version Count - set this value to a number higher than the version
+number that appears for replication of this WINS server's records on its remote
+partners, if this server has to restart. This will force the remote partners to
+replicate the new records.
+
+Database Backup Path - specifies the location for the backup of the WINS
+database. If you specify a path, WINS automatically performs a full backup of
+its database to the Wins_bak folder within this folder every 24 hours. Do not
+specify a network drive. WINS uses this location to automatically restore the
+database in the event that the database is found to be corrupted when WINS is
+started.
+
+NOTE: The Database Backup Path option will not automatically back up your WINS
+database every 24 hours until the WINS service has been stopped and started.
+
+Click Options and select Preferences to access the following settings:
+----------------------------------------------------------------------
+
+Address Display - this setting specifies how the mappings will be displayed in
+the database window.
+
+Server Statistics - this setting specifies how often to update the server
+statistics.
+
+Computer Names - When selected, the mappings in the database window will display
+the 16th character (1B, 1C, 1E, etc) of each record.
+
+Validate Cache Of Known WINS Servers At Startup Time - this setting causes WINS
+to query the list of servers to find available servers when the service starts.
+
+Confirm Deletion of Static Mappings And Cached WINS Servers - this setting
+specifies whether to generate a warning message when deleting a static mapping
+or a cached WINS server.
+
+New Pull Partner Default Configuration - these settings specify the default
+settings for new Pull partners.
+
+New Push Partner Default Configuration - these settings specify the default
+settings for new Push partners. The default Update Count is 20.
+
+Additional query words: nttcp
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

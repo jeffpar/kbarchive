@@ -1,0 +1,57 @@
+DOCUMENT:Q209158  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: Stuka Dive Bomber Classified as Fighter
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Ju 87 Stuka aircraft is classified as a fighter in Combat Flight Simulator
+missions, even though it is actually a dive-bomber, because the flight model of
+the Ju 87 Stuka more closely resembles that of a fighter than that of a bomber.
+
+MORE INFORMATION
+================
+
+In Combat Flight Simulator, a computer-piloted Ju 87 Stuka aircraft selects a
+ground target, dives on the target, and bombs it. After the Ju 87 Stuka has
+destroyed the first target, it selects a new target.
+
+A Ju 87 Stuka drops one bomb per pass, and then uses guns to continue attacking
+ground targets. After a Stuka destroys all available ground targets, it engages
+any available air targets.
+
+The Ju 87 Stuka can also take evasive action when it is under fire.
+
+Additional query words: 1.00 msgame combatfs cfs ju87
+
+======================================================================
+Keywords          : kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

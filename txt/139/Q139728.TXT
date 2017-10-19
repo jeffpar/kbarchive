@@ -1,0 +1,76 @@
+DOCUMENT:Q139728  17-DEC-2000  [win95x]
+TITLE   :Err Msg: EMM386 Has Detected Error #06 in...Address 00B8:0B53
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows 95, you may receive the following error message the
+first time you restart your computer after running Setup:
+
+   EMM386 has detected error #06 in application memory address 00B8:0B53. To
+   minimize the chance of data loss, EMM386 has halted your computer. For more
+   information, see the Readme.txt file. To restart you computer, press Enter.
+
+When you press ENTER, the computer does not restart.
+
+CAUSE
+=====
+
+This problem may occur on the following computers:
+
+ - ALR Evolution 5ST P90
+
+ - ALR Evolution 5X P90
+
+RESOLUTION
+==========
+
+To resolve this problem, turn the computer off and leave it off for
+approximately 5 to 10 seconds, and then turn it on again. Setup should continue
+normally.
+
+ALR Technical Support suggests updating the BIOS on Evolution-series computers to
+the latest BIOS revision. For information about BIOS updates, please see ALR's
+World Wide Web page at:
+
+   www.alr.com
+
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

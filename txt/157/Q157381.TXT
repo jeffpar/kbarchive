@@ -1,0 +1,147 @@
+DOCUMENT:Q157381  14-NOV-2000  [word97]
+TITLE   :WD97: Problems with Letter Wizard Contemporary Page Design
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Letter Wizard to create a letter with the Contemporary Letter
+template, the following problems may occur:
+
+ - The letter date is displayed and printed with a vertical dotted line.
+
+   -or-
+
+ - No company name appears at the top of the letter.
+
+   -or-
+
+ - No text appears in the gray horizontal bar at the bottom of the letter.
+
+WORKAROUND
+==========
+
+Use the appropriate method for your situation.
+
+NOTE: Before using any of these methods, first click Page Layout on the View
+menu. This is important because objects in the drawing layer of the document
+(the gray horizontal bar and the vertical dotted line) are not visible in normal
+view.
+
+Letter Date Is Displayed and Printed with a Vertical Dotted Line
+----------------------------------------------------------------
+
+To work around this problem, use any of the following methods.
+
+Method 1: Move the Letter Date Down Using Extra Blank Lines
+
+1. Move the insertion point to the left of the letter date.
+
+2. Press ENTER several times to move the date below the gray horizontal bar at
+   the top of the letter. This step moves the entire letter down, and places
+   several blank lines at the top of the letter.
+
+Method 2: Move the Letter Date Down Using Paragraph Spacing
+
+1. Move the insertion point to the left of the letter date.
+
+2. On the Format menu, click Paragraph.
+
+3. Under Spacing, change the Before box to 1" (or 72 pt), and click OK.
+
+Method 3: Use Pre-Printed Letterhead Option in Letter Wizard
+
+1. Create a new letter by clicking Letter Wizard on the Tools menu.
+
+2. On the Letter Format tab, click to select the Pre-printed Letterhead check
+   box.
+
+3. In the "How much space does the letterhead need?" box, increase the default
+   value (for example, increase the value from 1" to 2.3"). This step moves the
+   entire letter below the gray horizontal bar at the top of the letter.
+
+No Company Name Appears at the Top of the Letter
+------------------------------------------------
+
+First, use one of the methods in the "Letter Date Is Displayed and Printed with a
+Vertical Dotted Line" section to move the date down from the top of the letter.
+Then follow these steps to add a company name:
+
+1. On the View menu, click Header and Footer.
+
+2. Right-click the gray horizontal bar, and then click Add Text on the shortcut
+   menu.
+
+3. Type your company name or other text as appropriate.
+
+4. Select the text you just typed. On the Format menu, click Font. In the Color
+   list, click White or the color of your choice. Make any other formatting
+   changes as appropriate (for example, change Size to 14), and then click OK.
+
+5. On the Header and Footer toolbar, click Close.
+
+No Text Appears in the Gray Horizontal Bar at the Bottom of the Letter
+----------------------------------------------------------------------
+
+You can add text that you want to stand out to the gray horizontal bar at the
+bottom of your letter. For example, to add the word "Confidential" to this bar,
+follow these steps:
+
+1. On the View menu, click Header and Footer.
+
+2. On the Header and Footer toolbar, click the "Switch Between Header and
+   Footer" button to switch to the footer.
+
+3. Right-click the gray horizontal bar, and then click Add Text on the shortcut
+   menu.
+
+4. Type "Confidential" (without the quotation marks), or other text as
+   appropriate.
+
+5. Select the text you just typed. On the Format menu, click Font. In the Color
+   list, click White or the color of your choice. Make any other formatting
+   changes as appropriate (for example, change Size to 14), and then click OK.
+
+6. On the Header and Footer toolbar, click Close.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article.
+
+
+Additional query words: 8.0 8.00 letter wizard.wiz letter.wiz
+
+======================================================================
+Keywords          : kbualink97 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

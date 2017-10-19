@@ -1,0 +1,91 @@
+DOCUMENT:Q243542  27-OCT-1999  [foxpro]
+TITLE   :PRB: File() Function Ignores Path if Given in Parameter
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbvfp600 kbXBase kbGrpDSFox kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The File() function documentation states that you can include a path with the
+file name to search for a file in a directory or on a drive other than the
+current directory or drive. Under certain conditions the File() function can
+return .t. even though the file does not exist in the path given in the
+parameter.
+
+CAUSE
+=====
+
+If the file exists along the Visual FoxPro path, the function returns .t..
+
+RESOLUTION
+==========
+
+Use the Adir() function. Supply the file name you are checking for as the second
+parameter in the Adir() function. The Adir() function returns 1 if the file is
+found.
+
+   nFilesFound=adir(atemp,"C:\temp.txt")
+   IF nFilesFound=1
+        && Do processing on file
+   ELSE
+        && File does not exist
+   ENDIF
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Copy the following code into a file and run the program:
+
+   CLEAR
+   SET PATH TO
+   SET DEFAULT TO C:\ 
+   fh=FCREATE('C:\program files\testf.prg')
+   =FCLOSE(fh)
+   ? FILE('C:\program files\testf.prg')
+   CD..
+   SET PATH TO 'program files'
+   ? "Path="+SET('path')
+   ? "default directory="+CURDIR()
+   ? FILE('c:\testf.prg')
+   SET PATH TO
+   ? FILE('C:\program files\testf.prg')
+   ? FILE('C:\testf.prg')
+   DELETE FILE 'C:\program files\testf.prg'
+   ? FILE('C:\testf.prg')
+
+Additional query words: KBDSE
+
+======================================================================
+Keywords          : kbvfp600 kbXBase kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

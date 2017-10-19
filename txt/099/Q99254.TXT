@@ -1,0 +1,47 @@
+DOCUMENT:Q99254  30-JUL-2001  [lanman]
+TITLE   :Problems with Compaq 486/C LTEs and Megahertz 14.4k Modems
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Megahertz 14.4-kb modems in the new Compaq 486/C LTEs operate correctly only
+when in the docking station. When in the expansion base, they do not respond to
+any commands during battery or AC adapter operation, not to any commands from
+RAS, Windows Terminal or MS-DOS- based terminal packages, regardless of the
+power source. They work properly only when in the docking station.
+
+Originally, this appeared to be related to power conservation, because CMOS setup
+showed the modem state as OFF. However, using Powercon from MS-DOS and setting
+the modem to ON did not fix the problem.
+
+This is caused by BIOS v1.06--a bad BIOS revision on the modem itself. BIOS v1.09
+CURES the problem.
+
+You can determine the modem's BIOS revision by typing "AT %V" (without the
+quotation marks) from a terminal program.
+
+Additional query words: 2.20 megahertz modem compaq
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

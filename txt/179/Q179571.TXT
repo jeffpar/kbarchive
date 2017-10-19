@@ -1,0 +1,73 @@
+DOCUMENT:Q179571  25-FEB-2000  [mspress]
+TITLE   :MS Internet Information Server Training Comments & Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Internet Information Server Training Kit ISBN 1-57231-731-0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Microsoft Internet Information Server
+Training," ISBN 1-57231-425-7.
+
+Contents:
+
+ - Page 258: Test Steps Incorrectly Refer to CD-ROM File
+
+MORE INFORMATION
+================
+
+Page 258: Test Steps Incorrectly Refer to CD-ROM File
+-----------------------------------------------------
+
+Page 258, step 2:
+Change:
+Enter the full address to the location of Nwind.htm on the compact disc, and then
+press ENTER.
+\Labs\Lab14\Nwind.htm
+
+To:
+Enter the full address to the location of Nwind.htm on the Web server, and then
+press ENTER.
+
+   http://computername/Nwind.htm
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of the book, it may already
+contain the above corrections.
+
+Additional query words: press ms_press bookbug 1-57231-425-7
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

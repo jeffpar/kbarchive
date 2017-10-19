@@ -1,0 +1,79 @@
+DOCUMENT:Q194422  22-FEB-1999  [winnt]
+TITLE   :How to Extract Service Pack 3 Files
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to extract files from the Nt4sp3_i.exe or
+Nt4sp3_a.exe file. The Nt4sp3_i.exe file contains Service Pack 3 for the Intel
+platform; the Nt4sp3_a.exe file contains Service Pack 3 for the Alpha platform.
+
+MORE INFORMATION
+================
+
+To extract the Service Pack 3 files, download the Nt4sp3_i.exe or Nt4sp3_a.exe
+file. You can download Service Pack 3 from the following Microsoft Web site:
+
+   http://www.microsoft.com/ntserver
+
+NOTE: If you double-click the Nt4sp3_i.exe or Nt4sp3_a.exe file after you
+download it, Setup begins the Service Pack installation. If you want only to
+extract the files, do not double-click the Service Pack file after you download
+it.
+
+To extract the Service Pack files without starting the installation program:
+
+1. Type "nt4sp3_i /x" or "ntsp3_a /x" (without quotation marks) at a command
+   prompt.
+
+2. In the Choose Directory For Extracted Files box, type the full path of the
+   folder into which you want to extract the files.
+
+   NOTE: Do not extract the files into the %SystemRoot% or %SystemRoot%\System32
+   folder.
+
+3. Click OK, and then click OK.
+
+Note that the extracted files require substantial disk space:
+
+   File           Required space
+   -------------------------------
+   Nt4sp3_i.exe   56,441,868 bytes
+   Nt4sp4_a.exe   84,701,624 bytes
+
+Additional query words: expand sp3 single
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400
+Version           : WINNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

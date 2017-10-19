@@ -1,0 +1,220 @@
+DOCUMENT:Q235991  24-DEC-1999  [sms]
+TITLE   :SMS: Systems Management Server 2.0 Service Pack 1 Fixlist
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200sp1fixkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following table lists article identification numbers (Q numbers) and article
+titles that document corrected problems in Systems Management Server version 2.0
+U.S. Service Pack 1. For more information about each corrected problem in
+Systems Management Server version 2.0 U.S. Service Pack 1, either click on the
+link or use the Qxxxxxx number to query for the article in the Microsoft
+Knowledge Base.
+
+To download the service pack, see the following article in the Microsoft
+Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+Summary List for Systems Management Server 2.0 U.S. Service Pack 1
+------------------------------------------------------------------
+
+Q198710 SMSINST: Edit .ini File May Produce Unexpected Results
+Q198900 SMSINST: Access Violation Opening Script from Newer Version
+Q199664 SMSINST: Cannot Remove More Than Two Sections in .ini File
+Q213097 SMSINST: Create Shortcut Command Truncates Source Path Directory Name to
+8 Characters
+Q214979 SMS: Service Manager Does Not Connect to Secondary Site Servers
+Q215018 SMS: Cannot Add Local Groups in Manage User Wizard
+Q215059 SMS: Error "Violation of PRIMARY KEY constraint" When Status Manager
+Writes To Database
+Q215123 SMS: SMS_LOGON_SERVER_MANAGER Fails to Enumerate Shares
+Q216744 SMS: APM Detects Non-Zero Exit Code as a Failed Advertisement
+Q216855 SMS: Password Uniqueness Disables SMS 2.0 Server Client Install
+Q218474 SMS: UNC Package Source Cannot Contain Space Characters
+Q219931 SMS: CCIM Fails to Make a Connection to APM
+Q221218 SMS: Restrictive WinNT Account Policies Prevent DC Installation
+Q221481 SMS: WMI Fails to Install on Windows NT 4.0 SP 5
+Q221947 DOC: Forcing Software Inventory Incorrectly Documented in Administrator's
+Guide
+Q221951 SMS: RAS Sender Over SNA Link: Error 53 During WNetAddConnection2()
+Q223044 SMS: Remote Control Agent Not Found
+Q223138 SMS: Client Service Error 1314: Fails to Start SMSAPM32
+Q223755 SMS: SMS Executive Crashes When Enumerating Non-Microsoft Server
+Q224574 SMS: Remote Control Installation Fails to Recognize LANDesk 6.x
+Q225507 SMS: Windows Management Service Keeps High Processor Utilization
+Q225514 SMS: WinNT Logon Server Manager Replicates Files When It Should Not
+Q225530 SMS: Resource Explorer Returns "File Not Found" Error
+Q226114 SMS: Advertisement Fails When Sent to Win95 & Win98 Users in More
+Than 10 Groups
+Q226115 SMS: Preferred Distribution Point Selection Requires Full Path to
+Package
+Q226368 SMS: NAL May Search Mapped Drives for Network DLLs
+Q226504 SMS: APM Does Not Execute the Correct Number of Advertisements
+Q226877 SMS: 2.0 CD Key Format Differs From SQL 6.5 CD Key Format
+Q226888 SMS: Component Status Times Are Listed Ahead Of Local Time in GMT Locale
+Q226908 SMS: Distribute Software Wizard May GPF if Collection Table Has Invalid
+Name for Custom Collection
+Q227010 SMS: Site Component Manager Fails to Install/Uninstall Component:
+SrvBoot.Exe
+Q227021 SMS: Scheduler Creates Zero Byte Instruction Files for PSUEDO MiniJobs
+Q227028 SMS: Logon Server Manager Fails to Update the PDC in a Large Domain with
+Multiple Sites
+Q228276 SMS: Software Inventory Processing Degrades Foreground Performance on
+Win95 & Win98 Clients
+Q228324 SMS: Delete File(s) "Remove Dir. Containing Files" Option Fails
+Q228532 SMS: French Conv20.exe Fails to Convert SMS 1.2 Database When SQL 6.5 Is
+Set to Character Set 850
+Q229018 SMS: APM Re-executes Some Advertisements
+Q229113 SMS: APM32 Doesn't Display the Reboot Countdown Dialog Box
+Q229950 SMS: Provider Deletes Collection When Computer Name Starts With Number
+Q230128 SMS: SQL Monitor Reports "Cannot Connect to Site Server Registry"
+Q230640 SMS: Setup Sets 'Restrict filegrowth' on SQL Server 7.0 Databases
+Q231209 SMS: 'Update distribution points on a schedule' Option Cannot Be Cleared
+Q231250 SMS: Trying to Delete Collection May Fail and Cause Collection Status to
+Remain Busy
+Q231399 SMS: SMSCliToknAcct& and/or SMSCliSvcAcct Accounts Locked Out on Site
+Systems or Domain
+Q232240 SMS: Specifying Long File Name for Status MIF Causes Error
+Q232508 SMSINST: Dialog Boxes Are Incorrectly Drawn and Colored When Compiled in
+32-Bit Mode
+Q233292 SMS: Remote Control Applet Does Not Repair Component After LanDesk Tool
+is Removed
+Q233395 SMS: SNMP Access Violation After Installing Windows NT 4.0 Service Pack
+4
+Q234257 SMS: Secondary Site Server Processor Utilization Always High
+Q234850 SMS: Packages Are Advertised to the Wrong Collections
+Q234912 SMS: Y2K Queries Use Large Amounts of Tempdb & Fail to Complete
+Q234916 SMS: Internal Error in Admin Console When Refreshing Pkg. Status
+Q235139 SMS: Y2K Software Compliance Query May Display Incorrect File Names
+Q235169 SMS: How To Reduce SMS Accounts Required for Installation on Large
+Windows NT Domains
+Q235184 SMS: Registry Change Turns Off Package Target Deletion During
+Distribution Point Update
+Q235190 SMS: Advertisements Created By the Distribute Software Wizard Are
+Immediately Locked and Cannot Be Modified
+Q235724 SMSINST: Working With Complex Expressions and Operators
+Q235725 SMSINST: Sleep Functionality Now Built Into SMS Installer
+Q235726 SMS: How To Specify Senior Site for WinNT Logon Point Management in a
+Single Domain with Multiple Sites
+Q235727 SMSINST: Repackage Does Not Detect Deleted Registry Keys and Values
+Q235728 SMS: Edit .ini File Fails If Compiled On Win95 With 'True 32 Compile'
+Selected
+Q235729 SMS: Silent Unattended Setup for SMS 2.0 Service Packs
+Q235730 SMS: Remote Control Fails on Win95 Client with Nitro 3D STB Vision Video
+Card
+Q235731 SMS: Remote Control Cannot Connect to Child Site Client Via RAS
+Q235733 SMS: Cannot Retrieve IP Address of DOS or Win31 + MS Network Client 3.0
+Client
+Q235735 SMS: Site Backup Only Occurs Once a Week and Does Not Adhere to Schedule
+Q235737 SMS: Group/User Data From Trusted Domain Not Available in SMS Manage
+Users Security Wizard
+Q235738 SMS: Restart Option Fails When Logged On User Doesn't Have Shutdown
+Privilege
+Q235739 SMS: Intel P3 CPU Name Incorrectly Reported
+Q235740 SMS: ODP Incorrectly Identifies User Name for Advertisements Targeted to
+Users
+Q235741 SMSINST: Installer Script Calls CTL3DV2.DLL on NTW When 'Silent Install'
+and 'Use 3D' Are Unchecked
+Q235742 SMS: Hardware Inventory Agent Raises Exception When Processing Class:
+Win32_DisplayControllerConfiguration
+Q235743 SMS: Predefined Queries for Product Compliance Return Incorrect Results
+Q235745 SMS: Setup Does Not Create "SMS Admins" Group When Installing SMS on a
+Backup Domain Controller
+Q235746 SMS: URLs Listed in Product Compliance Database Are Incorrect
+Q235747 DOC: Software Metering Troubleshooting Tips in Resource Guide Reference
+Nonexistent Check Boxes
+Q235748 SMSINST: Remove Directory Containing Files Option in "Delete Files"
+Script Item Not Functioning Properly
+Q235751 SMS: Distribute Software Wizard May Generate Internal Error if Site Has
+Large Number of Packages
+Q235752 SMS: Prompted Queries May Return Bad Data and Hang MMC
+Q235753 SMS: Specifying \\servername in Sender Address May Cause Sender
+Connection Failure
+Q235754 SMS: MMC Exception Error May Refer To Build 1239 Beta
+Q235755 SMS: SNMP Agent May Leak Memory When Queried
+Q235760 SMS: Queries Fail to Execute when Alias is Specified and Collection
+Limiting is Used
+Q235761 SMS: SMS 2.0 Parent Site Foreign Package Information Not Available to SMS
+1.2 Primary Child Site
+Q235762 SMS: NT_Logon_Server_Manager Enumerates All Shares on Domain Controllers
+During Maintenance Cycle
+Q235765 SMS: Local Groups Cannot Write Queries Even With Full Rights
+Q235766 SMS: Admin Console Installation From \sms\bin\i386 Subdirectory Causes
+Dr. Watson
+Q235767 SMS: Programs Can't Be Run From a Package Subdirectory with Spaces in the
+Name
+Q235768 SMS: Using /Upgrade Switch with Command Line Setup Causes Error "Setup
+cannot upgrade the SMS database" and Disables SMS 1.2 Site
+Q235769 DOC: SMS Admin Guide Talks About Inboxes on WinNT Logon Points
+Q235770 SMS: Win95 Client Software Causes Unexpected Login Failure: Status 8890
+Q235771 SMS: Rchelp.Sys Can Cause CHKDSK to Run Continuously
+Q235772 SMS: If DHCP Server Has "Unlimited" Leases NetDisc Fails to Retrieve
+Client Information Within That Scope
+Q235774 SMS: Hierarchy is Unsynchronized After Package Deletion
+Q235775 SMS: Network Discovery Using SNMP May Fail to Discover Device
+Q235777 SMS: SMSAPM32 Performs Slow Link Detection on All Mandatory Assignments
+Q235778 SMS: CCM Fails to Install SMS Client on WinNT Version 3.51
+Q235779 SMS: SMSMAN Does Not Automatically Detect Server if Logon Discovery Is
+Disabled
+Q235782 SMSINST: REG_MULTI_SZ Entries Repackaged by Installer Are Not Recreated
+with Terminating Double Nulls
+Q235786 SMS: Failed Connection To Software Metering Server Does Not Differentiate
+Between Online and Offline Clients
+Q235788 SMS: Distribution Manager Fails to Process PKG File and Update
+Distribution Point
+Q235792 SMSINST: Long File Name File Installed With Version Checking Gets
+Truncated at Destination
+Q235801 SMS: ODPSYS Refreshes Every 60 Minutes Regardless of Specified Interval
+Q235805 SMS: Package Job Status Not Reported From SMS 1.2 Child Site to SMS 2.0
+Parent Site
+Q235811 SMS: Selecting Windows NT Client Software Installation Account Does Not
+Provide Local Administrative Rights
+Q235812 SMS: DDM Fails to Process DDR with Assigned Sites Property Set to
+<Unknown>
+Q235818 SMS: Network Discovery May Time Out on Slow Network
+Q235834 SMS: Read Instance on a Collection Fails to Produce Collection List
+Q235835 SMS: Users With Restricted Collection Viewing Rights May See All
+Resources
+
+
+Q236035 SMSINST: SMS Installer Cannot Directly Call Windows APIs
+Q236036 SMS: NetDisc Fails to Discover Static IP Addresses Reserved and Assigned
+by DHCP
+Q236061 SMS: Zero Byte DDR May Cause High CPU Utilization by Discovery Data
+Manager
+
+Additional query words: prodsms sp1 sp fix list bug Servpack smsfaqtop
+
+======================================================================
+Keywords          : kbsms200 kbsms200sp1fix kbfixlist
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

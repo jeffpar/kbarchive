@@ -1,0 +1,103 @@
+DOCUMENT:Q221744  26-MAY-1999  [foxpro]
+TITLE   :FIX: C0000005 Fatal Error During Build w/ Invalid Preprocessors
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbHWMAC kbProjManager kbvfp300bBUG kbvfp500aBUG kbvfp600 kbvfp600bug kbXBase kbVS600sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Building a project that contains an invalid preprocessor directive causes an
+error. Depending on the version of Visual FoxPro being used, one of the
+following error messages appears:
+
+Visual FoxPro 3.x for Windows displays a message box with the following message:
+
+   Internal Consistency Error
+
+Visual FoxPro 3.0b for Macintosh displays a message box with the following
+message:
+
+   The application "Microsoft Visual FoxPro" has unexpectedly quit, because an
+   error of type 2 occurred.
+
+Depending on the version of Windows, Visual FoxPro 5.x and Visual FoxPro 6.0
+display one of the following messages:
+
+Under Windows 9x:
+
+   This program has performed an illegal operation and will be shut down.
+
+Under Windows NT 4.0:
+
+   An application error has occurred and an application errorlog is being
+   generated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+This behavior occurs when a preprocessor directive references an object that is
+read-only.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project.
+
+2. Add a new main prg using the following code:
+
+   #UNDEF _DEBUG
+   #IF Application.ActiveProject.Debug
+      #DEFINE _DEBUG
+   #ENDIF
+
+3. Build an application from the project.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbProjManager kbvfp300bBUG kbvfp500aBUG kbvfp600 kbvfp600bug kbXBase kbVS600sp3fix kbGrpDSFox 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

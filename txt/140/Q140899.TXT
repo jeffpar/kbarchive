@@ -1,0 +1,108 @@
+DOCUMENT:Q140899  11-JAN-2001  [vbwin]
+TITLE   :BUG: GPF When RecordSource Property is Blank at Design-Time
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A data control causes an application error at runtime if the data control
+contains with a blank RecordSource property at design time and the
+UpdateControls method is executed. The application error ends Visual Basic.
+
+WORKAROUND
+==========
+
+To work around this bug, at design time, set the data control's DatabaseName
+property to a database and the RecordSource property to a table in the database.
+Other controls that are bound to the data control, such as a text box, should
+also have a value in the control's DataSource property
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Visual Basic 4.0, or if it is already running, click New Project on the
+   File menu.
+
+2. Add a data control to the Form1 form but don't set any of the data control's
+   properties.
+
+3. Copy the following code sample to the Form1 code window:
+
+         Private Sub Form_Click()
+            Data1.updatecontrols
+         End Sub
+
+4. Press the F5 key or click Start on the Run menu to start the program.
+
+5. Click on the form. The application error occurs with one of the following
+   error messages and Visual Basic ends.
+
+
+   32-bit edition of Visual Basic 4.0:
+
+   
+
+   
+
+      Windows NT: An application error has occurred and an application
+                  error log is being generated. VB32.exe, Exception: Access
+                  violation (0xc0000005), Address: 0x0047929e
+
+   
+
+      Windows 95: VB32 caused an invalid page fault in module VB32.EXE at
+                  0137:0047929e.
+
+   
+
+      16-bit edition of Visual Basic 4.0 in all operation systems:
+                  VB caused a general protection fault in module VB.EXE at
+                  0028:000026b9.
+
+Additional query words: kbVBp400bug kbDSupport
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

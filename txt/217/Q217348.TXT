@@ -1,0 +1,79 @@
+DOCUMENT:Q217348  07-MAY-2002  [homegame]
+TITLE   :Combat FS: Game Is Not Displayed Properly in Full Screen Mode
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kberrmsg kbimu msgame KbDirectX
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Combat Flight Simulator in Full Screen mode, the game
+screen may not occupy the full viewable area of your monitor.
+
+In addition, when you play Combat Flight Simulator in Full Screen mode, the game
+screen may not be centered on your monitor or you may receive an error message
+stating that the refresh rate is too high.
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft DirectX sets a refresh rate that is higher
+than the refresh rate your monitor supports.
+
+RESOLUTION
+==========
+
+To resolve this issue, override the refresh rate set by DirectX. To do this,
+follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+   OK.
+
+3. On the More Help tab, click Override.
+
+4. Click the Override Value option.
+
+5. In the Override Value box, type "72" (without the quotation marks).
+
+6. Click OK, and then click Exit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Combat Flight
+Simulator: WWII Europe Series, version 1.0.
+
+Additional query words: 1.00 msgame direct-x combatfs cfs off-center skewed
+
+======================================================================
+Keywords          : kbdisplay kbenv kberrmsg kbimu msgame KbDirectX 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

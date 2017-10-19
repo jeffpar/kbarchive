@@ -1,0 +1,62 @@
+DOCUMENT:Q155958  16-APR-2000  [powerpt]
+TITLE   :PPT7: Saving Version 7.0 File in 4.0 Format Changes Slide Setup
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbinterop kbdta kbconversion
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you choose a custom Slide Setup for a PowerPoint 95 presentation and then
+save it in PowerPoint 4.0 format, the Slide Setup settings does not match the
+actual slide size if you reopen the presentation.
+
+If you reopen the presentation in PowerPoint 95, the slide size appears not to
+have changed. However, if you click Slide Setup on the File menu, it indicates
+the slide size has returned to the default (10" wide by 7.5" tall). When you
+close the Slide Setup dialog box, your slides change to that default size.
+
+MORE INFORMATION
+================
+
+This effect does not occur if you open the presentation in PowerPoint 4.0.
+
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 7.00 Win95 view same different PowerPoint incorrect PPT7 PPT4 PPT95
+
+======================================================================
+Keywords          : kbinterop kbdta kbconversion 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

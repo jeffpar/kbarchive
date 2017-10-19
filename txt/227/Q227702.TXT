@@ -1,0 +1,87 @@
+DOCUMENT:Q227702  08-MAY-2002  [iis]
+TITLE   :Queries Work Incorrectly with Mixed-Language Documents
+PRODUCT :Internet Information Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Text (.txt) documents containing mixed languages may be returned incorrectly by
+queries against Index Server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 2000.
+
+MORE INFORMATION
+================
+
+When you create a text document (.txt file) on a system, that document should be
+indexed as if it is in the same language as the default system language, and not
+based on the language of the content of the document. This is because a .txt
+document contains no method for specifying what language it contains, so the
+program assigns the local system default language.
+
+For example, .txt documents created on a system that has the default system
+locale set to Russian should be indexed as Russian documents by the Index and
+should only be returned as the result of searches run against the Index engine
+by a Russian client. Instead, the document is returned regardless of the client
+settings if the user types in a word that actually exists in the document.
+
+Steps to Reproduce this Behavior
+--------------------------------
+
+NOTE: This problem may occur with any language not supported by Index Server.
+This example uses Russian.
+
+To reproduce this problem, both user locale and system locale should be set to
+Russian.
+
+1. Create a text file that includes some English words and then save it to a
+   folder that will be included in the system catalog.
+
+2. Wait for the text file to be indexed.
+
+3. Using an ASP query from the Index Server Microsoft Management Console (MMC)
+   snap-in, search for a word that you included in the text file.
+
+   Result: The text file you created is found.
+
+Index Server does not recognize that the language of the text file is not the
+same as system default language. It should not return the document as a result
+of the search.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : :2.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

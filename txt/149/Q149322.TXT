@@ -1,0 +1,84 @@
+DOCUMENT:Q149322  11-JAN-2001  [vbwin]
+TITLE   :FIX: Tag Changed Incorrectly After Linking to Invalid ImageList
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbVBp400bug kbVBp600fix kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting the Icons property of a ListView control to an invalid ImageList control
+will correctly result in error '35613 - Uninitialized ImageList'. However, if
+the Listview.Icons.Tag property is examined after this aborted attempt has been
+made, it will have been set to the tag of the ImageList control. It should be
+blank after an unsuccessful attempt to link to an ImageList control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic 4.0. Form1 is created by default.
+
+2. Add an ImageList control, a command button, and a ListView control to Form1.
+
+3. Add this code to the form:
+
+         Private Sub Command1_Click()
+            On Error Resume Next
+
+            ListView1.Icons = ImageList1
+            MsgBox "Tag after linking to invalid imagelist: " & _
+               ListView1.Icons.Tag
+         End Sub
+
+         Private Sub Form_Load()
+            ImageList1.Tag = "ImageList1"
+         End Sub
+
+4. Press F5 or select Start from the Run menu to run the application. Click the
+   command button. The message box that is displayed will indicate that the tag
+   for the ImageList linked to the ListView control is 'ImageList1'; it should
+   be blank.
+
+Additional query words: kbVBp400bug kbVBp600fix kbVBp kbdsd kbDSupport kbCtrl
+
+======================================================================
+Keywords          : kbVBp400bug kbVBp600fix kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,109 @@
+DOCUMENT:Q276453  11-JUN-2002  [sna]
+TITLE   :Dynamically Defined Dependent LU Support for Printer LUs
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+Microsoft SNA Server versions 2.11 and later provide support for Dynamically
+Defined Dependent Logical Units (DDDLUs) for 3270 display LUs. DDDLU support for
+LUA LUs was first added in SNA Server 3.0 Service Pack 1 (SP1). However, DDDLU
+support for 3270 Printer LUs is not provided in SNA Server.
+
+For additional information about support for DDDLUs in Microsoft SNA Server,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+   Q161492 LU Session Activation Using Dynamically Defined Dependent LUs
+
+   Q164592 Dynamically Defined Dependent LU Support for LUA LUs
+
+For additional information about the latest service pack for SNA Server 4.0,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+MORE INFORMATION
+================
+
+DDDLU support for 3270 Printer LUs is available after you apply the update to
+SNA Server 4.0. By default, DDDLU support for 3270 Printer LUs is disabled. To
+enable this support, the following registry entry must be set to specify the
+model name that is sent to the host in an Network Management Vector Table (NMVT)
+request, in order to solicit an Activate LU (ACTLU) or Deactivate LU (DACTLU)
+for 3270 Printer LUs.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaServr\Parameters
+
+   NOTE: The above registry key is one path; it has been wrapped for readability.
+
+3. On the Edit menu, click Add Value, and then add the following registry value:
+
+   Value Name: PrinterDDDLUModel
+   Data Type: REG_SZ
+   Value: <Model Name>
+
+4. Quit Registry Editor.
+
+Model Name needs to be replaced with the model name of the printer LU that SNA
+Server will send to the host in the NMVT request to activate/deactivate the
+printer LU. These values are defined on the host. Typical values may be 3270SCS
+for LU1 printers or 3270DSC for LU3 printers. The model name string can be up to
+seven characters long. The SNA Server pads any strings that are less than seven
+characters with spaces, or truncates any strings that are longer than seven
+characters to ensure that only seven characters are sent to the host as part of
+the NMVT requests.
+
+NOTE: This support for DDDLUs is limited to either LU1 printer LUs or LU3 printer
+LUs because the PrinterDDDLUModel registry entry is global in nature and applies
+to all dynamically created 3270 printer LUs.
+
+
+
+Additional query words: Snaservr sp1 sp2 sp3 sp4
+
+======================================================================
+Keywords          : kbDSupport kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

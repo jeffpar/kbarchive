@@ -1,0 +1,62 @@
+DOCUMENT:Q171296  17-DEC-2000  [win95x]
+TITLE   :Description of the Undo Command in Windows Explorer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Undo command in Windows Explorer to undo recently performed
+Windows Explorer operations.
+
+MORE INFORMATION
+================
+
+To undo a recent operation in Windows Explorer, you can click the Undo command
+on the Edit menu, or you can click Undo on the toolbar. You can undo the
+following types of operation:
+
+ - Deleting a file, folder, or shortcut.
+
+   NOTE: You can undo a delete operation only if the deleted item is in the
+   Recycle Bin. If you delete an item using the SHIFT+DELETE method, the item
+   you are deleting is not placed in the Recycle Bin.
+
+ - Moving a file, folder, or shortcut.
+
+ - Pasting a file, folder, or shortcut.
+
+Windows Explorer can undo only the last 10 operations. Note that when you undo an
+operation, the most recent operation is undone. For example, to undo the second
+operation out of the last three operations, you must undo the third operation
+first.
+
+======================================================================
+Keywords          : kbui win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

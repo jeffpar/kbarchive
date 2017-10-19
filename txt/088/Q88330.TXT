@@ -1,0 +1,90 @@
+DOCUMENT:Q88330  07-NOV-1999  [win95x]
+TITLE   :Unrecoverable Application Error with hDC Express
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may receive an Unrecoverable Application Error (UAE) when using hDC's
+Express program with Microsoft Windows. This error occurs when you use the
+Express program as the Windows shell and when the Auto-Maximize feature in hDC
+Express is turned on.
+
+MORE INFORMATION
+================
+
+The default setting in the Express Preferences is for Windows Express to
+maximize automatically. This maximizing action may causes UAEs when hDC is used
+as the default Windows shell. To alleviate this problem, use one of the
+following workarounds.
+
+Workaround 1
+------------
+
+Turn off the auto-maximize feature in Windows Express:
+
+1. From the Express window menu, choose Special Preferences.
+
+2. Clear the Maximize Automatically check box.
+
+3. Choose the Permanent button.
+
+   -or-
+
+Workaround 2
+------------
+
+Do not load Windows Express as the shell, instead load it from the "run=" line of
+the WIN.INI file:
+
+1. Edit the WIN.INI file with a text editor such and Notepad.
+
+2. The shell= line in the [boot] section of the SYSTEM.INI file will read:
+
+         shell=<path>express.exe
+
+   Add the <path>express.exe portion of that line to the run= line in the
+   [boot] section.
+
+3. Change the shell=<path>express.exe line to:
+
+         shell=progman.exe
+
+4. Exit and restart Windows.
+
+The product included here, hDC Express, is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: 3rdparty 3.00 3.0 3.00a 3.0a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

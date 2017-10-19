@@ -1,0 +1,786 @@
+DOCUMENT:Q85418  05-FEB-2002  [win3x]
+TITLE   :PACKING.LST: Microsoft Windows & MS-DOS 5 for IBM PS/2
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::3.1,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the Windows & MS-DOS 5 for IBM PS/2
+PACKING.LST file.
+
+MORE INFORMATION
+================
+
+Microsoft Windows 3.1 and MS-DOS 5.0
+------------------------------------
+
+Packing List for 1.44 MB floppy disks:
+
+This file lists the contents of each of the eight Setup disks and also the
+contents of the three disks generated if a MS-DOS floppy disk installation is
+performed.
+
+Many of the files on the eight Setup disks are compressed. The left column lists
+the file name as it appears on the disk. The right column lists the file name
+after it has been expanded. In some cases, the names are the same because some
+files are not compressed on the Setup disks. (For example this file,
+PACKING.LST, is not compressed).
+
+Any file which is compressed needs to be expanded before it can be used. All
+compressed files have a name in the left column which ends with the underscore
+("_") character. To expand a file, you can use the EXPAND utility. This utility
+is on Setup Disk #1 (in an uncompressed form so you can use it), and is also
+copied by Setup to both the MS-DOS and Windows directories on your hard disk.
+(Note: To expand files before running Setup, you must first copy EXPAND.EXE from
+Setup Disk #1 to the DOS directory on your hard disk.)
+
+For example, to expand the file 8514.VI_ from Setup Disk #1 in drive A, to the
+DOS directory on drive C, follow these steps:
+
+ - Make sure Setup Disk #1 is in drive A
+
+ - Type the following command at the MS-DOS command prompt:
+
+   " EXPAND A:\8514.VI_ C:\DOS\8514.VID" (without the quotation marks)
+
+The MS-DOS documentation has more information about using the EXPAND utility.
+
+Setup Disk #1:
+
+8514.VI_                 8514.VID
+ANSI.SY_                 ANSI.SYS
+AUTOEXEC.BAT             AUTOEXEC.BAT
+CGA.GR_                  CGA.GRB
+CGA.IN_                  CGA.INI
+CGA.VI_                  CGA.VID
+COMMAND.COM              COMMAND.COM
+CONFIG.SYS               CONFIG.SYS
+COUNTRY.SYS              COUNTRY.SYS
+DEBUG.EXE                DEBUG.EXE
+DISK1                    DISK1
+DOSSETUP.EX_             DOSSETUP.EXE
+DOSSETUP.HL_             DOSSETUP.HLP
+DOSSETUP.INI             DOSSETUP.INI
+DOSSHELL.CO_             DOSSHELL.COM
+DOSSHELL.EX_             DOSSHELL.EXE
+DOSSWAP.EX_              DOSSWAP.EXE
+EDLIN.EXE                EDLIN.EXE
+EGA.CP_                  EGA.CPI
+EGA.GR_                  EGA.GRB
+EGA.IN_                  EGA.INI
+EGA.SY_                  EGA.SYS
+EGA.VI_                  EGA.VID
+EGAMONO.GR_              EGAMONO.GRB
+EXPAND.EXE               EXPAND.EXE
+FDISK.EXE                FDISK.EXE
+FORMAT.COM               FORMAT.COM
+HDBKUP.EXE               HDBKUP.EXE
+HDRSTORE.EXE             HDRSTORE.EXE
+HERC.GR_                 HERC.GRB
+HERC.VI_                 HERC.VID
+HIMEM.SY_                HIMEM.SYS
+IO.SYS                   IO.SYS
+KEYB.COM                 KEYB.COM
+KEYBOARD.SYS             KEYBOARD.SYS
+MONO.GR_                 MONO.GRB
+MONO.IN_                 MONO.INI
+MSDOS.SYS                MSDOS.SYS
+NETBEUI.DO_              NETBEUI.DOS
+NLSFUNC.EXE              NLSFUNC.EXE
+NUSETUP.EXE              NUSETUP.EXE
+PACKING.LST              PACKING.LST
+README.1ST               README.1ST
+SETUP.EXE                SETUP.EXE
+SYS.COM                  SYS.COM
+UNDELETE.EX_             UNDELETE.EXE
+UNFORMAT.COM             UNFORMAT.COM
+UNINSTAL.EX_             UNINSTAL.EXE
+VGA.GR_                  VGA.GRB
+VGA.VI_                  VGA.VID
+VGAMONO.GR_              VGAMONO.GRB
+
+Setup Disk #2:
+
+4201.CP_                 4201.CPI
+4208.CP_                 4208.CPI
+5202.CP_                 5202.CPI
+APPEND.EX_               APPEND.EXE
+APPNOTES.TXT             APPNOTES.TXT
+ASSIGN.CO_               ASSIGN.COM
+ATTRIB.EX_               ATTRIB.EXE
+BACKUP.EX_               BACKUP.EXE
+CHKDSK.EX_               CHKDSK.EXE
+COMP.EX_                 COMP.EXE
+CV.COM                   CV.COM
+DELOLDOS.EX_             DELOLDOS.EXE
+DISK2                    DISK2
+DISKCOMP.CO_             DISKCOMP.COM
+DISKCOPY.CO_             DISKCOPY.COM
+DISPLAY.SY_              DISPLAY.SYS
+DMDRVR.BI_               DMDRVR.BIN
+DOSHELP.HL_              DOSHELP.HLP
+DOSKEY.CO_               DOSKEY.COM
+DOSSHELL.HL_             DOSSHELL.HLP
+DRIVER.SY_               DRIVER.SYS
+EDIT.COM                 EDIT.COM
+EDIT.HL_                 EDIT.HLP
+EXE2BIN.EX_              EXE2BIN.EXE
+FASTOPEN.EX_             FASTOPEN.EXE
+FC.EX_                   FC.EXE
+FIND.EX_                 FIND.EXE
+GORILLA.BA_              GORILLA.BAS
+GRAFTABL.CO_             GRAFTABL.COM
+GRAPHICS.CO_             GRAPHICS.COM
+GRAPHICS.PR_             GRAPHICS.PRO
+HELP.EX_                 HELP.EXE
+JOIN.EX_                 JOIN.EXE
+LABEL.EX_                LABEL.EXE
+LCD.CP_                  LCD.CPI
+LOADFIX.CO_              LOADFIX.COM
+MEM.EX_                  MEM.EXE
+MIRROR.CO_               MIRROR.COM
+MODE.CO_                 MODE.COM
+MONEY.BA_                MONEY.BAS
+MORE.CO_                 MORE.COM
+MSHERC.CO_               MSHERC.COM
+NET.EX_                  NET.EXE
+NETWKSTA.1X_             NETWKSTA.1XE
+NETWKSTA.2X_             NETWKSTA.2XE
+NETWORKS.TXT             NETWORKS.TXT
+NIBBLES.BA_              NIBBLES.BAS
+PRINT.EX_                PRINT.EXE
+PRINTER.SY_              PRINTER.SYS
+PRINTFIX.COM             PRINTFIX.COM
+QBASIC.EX_               QBASIC.EXE
+QBASIC.HL_               QBASIC.HLP
+README.TXT               README.TXT
+RECOVER.EX_              RECOVER.EXE
+REDIR.1X_                REDIR.1XE
+REDIR.2X_                REDIR.2XE
+REMLINE.BA_              REMLINE.BAS
+REPLACE.EX_              REPLACE.EXE
+RESTORE.EX_              RESTORE.EXE
+SETNAME.EX_              SETNAME.EXE
+SETVER.EX_               SETVER.EXE
+SHARE.EX_                SHARE.EXE
+SORT.EX_                 SORT.EXE
+SSTOR.SY_                SSTOR.SYS
+SUBST.EX_                SUBST.EXE
+TREE.CO_                 TREE.COM
+XBIOS.OV_                XBIOS.OVL
+XCOPY.EX_                XCOPY.EXE
+
+Setup Disk #3:
+
+8514.DR_                 8514.DRV
+8514SYS.FO_              8514SYS.FON
+APP850.FO_               APP850.FON
+COMM.DR_                 COMM.DRV
+CPWIN386.CP_             CPWIN386.CPI
+DISK3                    DISK3
+EGA.3G_                  EGA.3GR
+EGA.DR_                  EGA.DRV
+EGACOLOR.2G_             EGACOLOR.2GR
+EGAFIX.FO_               EGAFIX.FON
+EGALOGO.LG_              EGALOGO.LGO
+EGALOGO.RL_              EGALOGO.RLE
+EGAOEM.FO_               EGAOEM.FON
+EGASYS.FO_               EGASYS.FON
+GDI.EX_                  GDI.EXE
+HERCLOGO.RL_             HERCLOGO.RLE
+HERCULES.2G_             HERCULES.2GR
+HPEBIOS.38_              HPEBIOS.386
+KBDHP.DR_                KBDHP.DRV
+MMSOUND.DR_              MMSOUND.DRV
+MSCVMD.38_               MSCVMD.386
+MSNET.DR_                MSNET.DRV
+OLIGRAB.2G_              OLIGRAB.2GR
+PMSPL20.DL_              PMSPL20.DLL
+SETUP.HL_                SETUP.HLP
+SETUP.INF                SETUP.INF
+SETUP.SHH                SETUP.SHH
+SETUP.TXT                SETUP.TXT
+SYSTEM.DR_               SYSTEM.DRV
+SYSTEM.SR_               SYSTEM.SRC
+TIGA.DR_                 TIGA.DRV
+V7VDD.38_                V7VDD.386
+VDD8514.38_              VDD8514.386
+VDDCT441.38_             VDDCT441.386
+VDDEGA.38_               VDDEGA.386
+VDDTIGA.38_              VDDTIGA.386
+VDDVGA30.38_             VDDVGA30.386
+VDDXGA.38_               VDDXGA.386
+VGA.3G_                  VGA.3GR
+VGASYS.FO_               VGASYS.FON
+WIN.CN_                  WIN.CNF
+WIN.SR_                  WIN.SRC
+WINHELP.EX_              WINHELP.EXE
+WINSETUP.EXE             WINSETUP.EXE
+XGA.DR_                  XGA.DRV
+XMSMMGR.EXE              XMSMMGR.EXE
+
+Setup Disk #4:
+
+386MAX.VX_               386MAX.VXD
+8514FIX.FO_              8514FIX.FON
+8514OEM.FO_              8514OEM.FON
+BANINST.38_              BANINST.386
+BLUEMAX.VX_              BLUEMAX.VXD
+CGA.2G_                  CGA.2GR
+CGA40850.FO_             CGA40850.FON
+CGA40WOA.FO_             CGA40WOA.FON
+CGA80850.FO_             CGA80850.FON
+CGA80WOA.FO_             CGA80WOA.FON
+CGALOGO.LG_              CGALOGO.LGO
+CGALOGO.RL_              CGALOGO.RLE
+CONTROL.HL_              CONTROL.HLP
+DECNB.38_                DECNB.386
+DECNET.38_               DECNET.386
+DISK4                    DISK4
+DOSAPP.FO_               DOSAPP.FON
+DOSX.EX_                 DOSX.EXE
+EGA.SY_                  EGA.SYS
+EGA40850.FO_             EGA40850.FON
+EGA40WOA.FO_             EGA40WOA.FON
+EGA80850.FO_             EGA80850.FON
+EGA80WOA.FO_             EGA80WOA.FON
+EGAHIBW.DR_              EGAHIBW.DRV
+EGAMONO.2G_              EGAMONO.2GR
+EGAMONO.DR_              EGAMONO.DRV
+EGAMONO.LG_              EGAMONO.LGO
+EGAMONO.RL_              EGAMONO.RLE
+HERC.3G_                 HERC.3GR
+HERC850.FO_              HERC850.FON
+HERCLOGO.LG_             HERCLOGO.LGO
+HERCWOA.FO_              HERCWOA.FON
+HPMOUSE.DR_              HPMOUSE.DRV
+HPSYSTEM.DR_             HPSYSTEM.DRV
+IPX.OB_                  IPX.OBJ
+IPXODI.CO_               IPXODI.COM
+KBDBE.DL_                KBDBE.DLL
+KBDCA.DL_                KBDCA.DLL
+KBDDA.DL_                KBDDA.DLL
+KBDDV.DL_                KBDDV.DLL
+KBDFC.DL_                KBDFC.DLL
+KBDFI.DL_                KBDFI.DLL
+KBDFR.DL_                KBDFR.DLL
+KBDGR.DL_                KBDGR.DLL
+KBDIC.DL_                KBDIC.DLL
+KBDIT.DL_                KBDIT.DLL
+KBDLA.DL_                KBDLA.DLL
+KBDMOUSE.DR_             KBDMOUSE.DRV
+KBDNE.DL_                KBDNE.DLL
+KBDNO.DL_                KBDNO.DLL
+KBDPO.DL_                KBDPO.DLL
+KBDSF.DL_                KBDSF.DLL
+KBDSG.DL_                KBDSG.DLL
+KBDSP.DL_                KBDSP.DLL
+KBDSW.DL_                KBDSW.DLL
+KBDUK.DL_                KBDUK.DLL
+KBDUS.DL_                KBDUS.DLL
+KBDUSX.DL_               KBDUSX.DLL
+KEYBOARD.DR_             KEYBOARD.DRV
+KRNL286.EX_              KRNL286.EXE
+KRNL386.EX_              KRNL386.EXE
+LANGDUT.DL_              LANGDUT.DLL
+LANGENG.DL_              LANGENG.DLL
+LANGFRN.DL_              LANGFRN.DLL
+LANGGER.DL_              LANGGER.DLL
+LANGSCA.DL_              LANGSCA.DLL
+LANGSPA.DL_              LANGSPA.DLL
+LANMAN.DR_               LANMAN.DRV
+LANMAN.HL_               LANMAN.HLP
+LANMAN10.38_             LANMAN10.386
+LMOUSE.CO_               LMOUSE.COM
+LMOUSE.DR_               LMOUSE.DRV
+LSL.CO_                  LSL.COM
+LVMD.38_                 LVMD.386
+LZEXPAND.DL_             LZEXPAND.DLL
+MOUSE.DR_                MOUSE.DRV
+MSC3BC2.DR_              MSC3BC2.DRV
+MSCMOUSE.DR_             MSCMOUSE.DRV
+NETAPI20.DL_             NETAPI20.DLL
+NETWARE.DR_              NETWARE.DRV
+NETWARE.HL_              NETWARE.HLP
+NETX.CO_                 NETX.COM
+NOMOUSE.DR_              NOMOUSE.DRV
+NWPOPUP.EX_              NWPOPUP.EXE
+OLIBW.DR_                OLIBW.DRV
+PCSA.DR_                 PCSA.DRV
+PLASMA.3G_               PLASMA.3GR
+PLASMA.DR_               PLASMA.DRV
+POWER.DR_                POWER.DRV
+POWER.HL_                POWER.HLP
+SL.DL_                   SL.DLL
+SL.HL_                   SL.HLP
+SUPERVGA.DR_             SUPERVGA.DRV
+TBMI2.CO_                TBMI2.COM
+TIGAWIN.RL_              TIGAWIN.RLM
+USER.EX_                 USER.EXE
+V7VGA.3G_                V7VGA.3GR
+V7VGA.DR_                V7VGA.DRV
+VDDCGA.38_               VDDCGA.386
+VDDHERC.38_              VDDHERC.386
+VER.DL_                  VER.DLL
+VGA.DR_                  VGA.DRV
+VGA30.3G_                VGA30.3GR
+VGA850.FO_               VGA850.FON
+VGA860.FO_               VGA860.FON
+VGA861.FO_               VGA861.FON
+VGA863.FO_               VGA863.FON
+VGA865.FO_               VGA865.FON
+VGACOLOR.2G_             VGACOLOR.2GR
+VGADIB.3G_               VGADIB.3GR
+VGAFIX.FO_               VGAFIX.FON
+VGALOGO.LG_              VGALOGO.LGO
+VGALOGO.RL_              VGALOGO.RLE
+VGAMONO.2G_              VGAMONO.2GR
+VGAMONO.DR_              VGAMONO.DRV
+VGAOEM.FO_               VGAOEM.FON
+VIPX.38_                 VIPX.386
+VNETWARE.38_             VNETWARE.386
+VPOWERD.38_              VPOWERD.386
+WINDOWS.LO_              WINDOWS.LOD
+WINPOPUP.EX_             WINPOPUP.EXE
+WINPOPUP.HL_             WINPOPUP.HLP
+XLAT850.BI_              XLAT850.BIN
+XLAT860.BI_              XLAT860.BIN
+XLAT861.BI_              XLAT861.BIN
+XLAT863.BI_              XLAT863.BIN
+XLAT865.BI_              XLAT865.BIN
+
+Setup Disk #5:
+
+256COLOR.BM_             256COLOR.BMP
+APPS.HL_                 APPS.HLP
+ARGYLE.BM_               ARGYLE.BMP
+CALC.EX_                 CALC.EXE
+CALC.HL_                 CALC.HLP
+CALENDAR.EX_             CALENDAR.EXE
+CALENDAR.HL_             CALENDAR.HLP
+CANYON.MI_               CANYON.MID
+CARDFILE.EX_             CARDFILE.EXE
+CHARMAP.EX_              CHARMAP.EXE
+CHIMES.WA_               CHIMES.WAV
+CHORD.WA_                CHORD.WAV
+CLOCK.EX_                CLOCK.EXE
+DISK5                    DISK5
+EGYPT.BM_                EGYPT.BMP
+EXPAND.EXE               EXPAND.EXE
+FLOCK.BM_                FLOCK.BMP
+GLOSSARY.HL_             GLOSSARY.HLP
+HERCULES.DR_             HERCULES.DRV
+MORICONS.DL_             MORICONS.DLL
+MPLAYER.EX_              MPLAYER.EXE
+MPLAYER.HL_              MPLAYER.HLP
+MSADLIB.DR_              MSADLIB.DRV
+NETWORKS.WR_             NETWORKS.WRI
+NOTEPAD.EX_              NOTEPAD.EXE
+PACKAGER.EX_             PACKAGER.EXE
+PACKAGER.HL_             PACKAGER.HLP
+PBRUSH.DL_               PBRUSH.DLL
+PBRUSH.EX_               PBRUSH.EXE
+PBRUSH.HL_               PBRUSH.HLP
+PIFEDIT.HL_              PIFEDIT.HLP
+PRINTERS.WR_             PRINTERS.WRI
+PRINTMAN.HL_             PRINTMAN.HLP
+README.WR_               README.WRI
+RECORDER.DL_             RECORDER.DLL
+RECORDER.EX_             RECORDER.EXE
+SCRNSAVE.SC_             SCRNSAVE.SCR
+SETUP.INI                SETUP.INI
+SNDBLST.DR_              SNDBLST.DRV
+SNDBLST2.DR_             SNDBLST2.DRV
+SOL.EX_                  SOL.EXE
+SOL.HL_                  SOL.HLP
+SOUNDREC.EX_             SOUNDREC.EXE
+SOUNDREC.HL_             SOUNDREC.HLP
+SSFLYWIN.SC_             SSFLYWIN.SCR
+SSMARQUE.SC_             SSMARQUE.SCR
+SSMYST.SC_               SSMYST.SCR
+SYSINI.WR_               SYSINI.WRI
+TADA.WA_                 TADA.WAV
+TERMINAL.HL_             TERMINAL.HLP
+THATCH.BM_               THATCH.BMP
+TIMER.DR_                TIMER.DRV
+VADLIBD.38_              VADLIBD.386
+VSBD.38_                 VSBD.386
+VTDAPI.38_               VTDAPI.386
+WINFILE.EX_              WINFILE.EXE
+WINHELP.HL_              WINHELP.HLP
+WININI.WR_               WININI.WRI
+WINMINE.EX_              WINMINE.EXE
+WINTUTOR.DA_             WINTUTOR.DAT
+WINTUTOR.EX_             WINTUTOR.EXE
+WRITE.EX_                WRITE.EXE
+WRITE.HL_                WRITE.HLP
+
+Setup Disk #6:
+
+APPS.IN_                 APPS.INF
+ARCADE.BM_               ARCADE.BMP
+ARCHES.BM_               ARCHES.BMP
+CARDFILE.HL_             CARDFILE.HLP
+CARS.BM_                 CARS.BMP
+CASTLE.BM_               CASTLE.BMP
+CHARMAP.HL_              CHARMAP.HLP
+CHITZ.BM_                CHITZ.BMP
+CLIPBRD.HL_              CLIPBRD.HLP
+COMMDLG.DL_              COMMDLG.DLL
+DDEML.DL_                DDEML.DLL
+DISK6                    DISK6
+DRIVERS.CP_              DRIVERS.CPI
+DRWATSON.EX_             DRWATSON.EXE
+DSWAP.EX_                DSWAP.EXE
+EMM386.EX_               EMM386.EXE
+HONEY.BM_                HONEY.BMP
+LEAVES.BM_               LEAVES.BMP
+MAIN.CP_                 MAIN.CPL
+MARBLE.BM_               MARBLE.BMP
+MCICDA.DR_               MCICDA.DRV
+MCISEQ.DR_               MCISEQ.DRV
+MCIWAVE.DR_              MCIWAVE.DRV
+MIDIMAP.CF_              MIDIMAP.CFG
+MIDIMAP.DR_              MIDIMAP.DRV
+MMSYSTEM.DL_             MMSYSTEM.DLL
+MONOUMB2.38_             MONOUMB2.386
+MOUSE.CO_                MOUSE.COM
+MOUSE.SY_                MOUSE.SYS
+MOUSEHP.CO_              MOUSEHP.COM
+MOUSEHP.SY_              MOUSEHP.SYS
+MPU401.DR_               MPU401.DRV
+MSD.EXE                  MSD.EXE
+NOTEPAD.HL_              NOTEPAD.HLP
+OLESVR.DL_               OLESVR.DLL
+PRINTMAN.EX_             PRINTMAN.EXE
+PROGMAN.EX_              PROGMAN.EXE
+RAMDRIVE.SY_             RAMDRIVE.SYS
+RECORDER.HL_             RECORDER.HLP
+REDBRICK.BM_             REDBRICK.BMP
+REGEDIT.EX_              REGEDIT.EXE
+REGEDIT.HL_              REGEDIT.HLP
+RIVETS.BM_               RIVETS.BMP
+SHELL.DL_                SHELL.DLL
+SMARTDRV.EX_             SMARTDRV.EXE
+SND.CP_                  SND.CPI
+SQUARES.BM_              SQUARES.BMP
+SSSTARS.SC_              SSSTARS.SCR
+TARTAN.BM_               TARTAN.BMP
+TERMINAL.EX_             TERMINAL.EXE
+WIN386.EX_               WIN386.EXE
+WIN87EM.DL_              WIN87EM.DLL
+WINFILE.HL_              WINFILE.HLP
+WINLOGO.BM_              WINLOGO.BMP
+WINMINE.HL_              WINMINE.HLP
+WINOA386.MO_             WINOA386.MOD
+ZIGZAG.BM_               ZIGZAG.BMP
+
+Setup Disk #7:
+
+ARIAL.FO_                ARIAL.FOT
+ARIAL.TT_                ARIAL.TTF
+ARIALB.FO_               ARIALB.FOT
+ARIALBD.FO_              ARIALBD.FOT
+ARIALBD.TT_              ARIALBD.TTF
+ARIALBI.FO_              ARIALBI.FOT
+ARIALBI.TT_              ARIALBI.TTF
+ARIALI.FO_               ARIALI.FOT
+ARIALI.TT_               ARIALI.TTF
+CLIPBRD.EX_              CLIPBRD.EXE
+CONTROL.EX_              CONTROL.EXE
+CONTROL.INF              CONTROL.INF
+CONTROL.SR_              CONTROL.SRC
+COUR.FO_                 COUR.FOT
+COUR.TT_                 COUR.TTF
+COURB.FO_                COURB.FON
+COURBD.FO_               COURBD.FOT
+COURBD.TT_               COURBD.TTF
+COURBI.TT_               COURBI.TTF
+COURE.FO_                COURE.FON
+COURF.FO_                COURF.FON
+COURI.FO_                COURI.FOT
+COURI.TT_                COURI.TTF
+DING.WA_                 DING.WAV
+DISK7                    DISK7
+HIMEM.SY_                HIMEM.SYS
+MMTASK.TS_               MMTASK.TSK
+MODERN.FO_               MODERN.FON
+MSD.IN_                  MSD.INI
+OLECLI.DL_               OLECLI.DLL
+PIFEDIT.EX_              PIFEDIT.EXE
+PROGMAN.HL_              PROGMAN.HLP
+REGEDITV.HL_             REGEDITV.HLP
+ROMAN.FO_                ROMAN.FON
+SCRIPT.FO_               SCRIPT.FON
+SERIFB.FO_               SERIFB.FON
+SERIFE.FO_               SERIFE.FON
+SERIFF.FO_               SERIFF.FON
+SETUP.RE_                SETUP.REG
+SMALLB.FO_               SMALLB.FON
+SMALLE.FO_               SMALLE.FON
+SMALLF.FO_               SMALLF.FON
+SSERIFB.FO_              SSERIFB.FON
+SSERIFE.FO_              SSERIFE.FON
+SSERIFF.FO_              SSERIFF.FON
+SYMBOLB.FO_              SYMBOLB.FON
+SYMBOLE.FO_              SYMBOLE.FON
+SYMBOLF.FO_              SYMBOLF.FON
+SYSEDIT.EX_              SYSEDIT.EXE
+TASKMAN.EX_              TASKMAN.EXE
+TIMES.FO_                TIMES.FOT
+TIMES.TT_                TIMES.TTF
+TIMESB.FO_               TIMESB.FON
+TIMESBD.FO_              TIMESBD.FOT
+TIMESBD.TT_              TIMESBD.TTF
+TIMESBI.FO_              TIMESBI.FOT
+TIMESBI.TT_              TIMESBI.TTF
+TIMESI.FO_               TIMESI.FOT
+TIMESI.TT_               TIMESI.TTF
+TOOLHELP.DL_             TOOLHELP.DLL
+WIN386.PS_               WIN386.PS2
+WINOLDAP.MO_             WINOLDAP.MOD
+WINVER._                 WINVER
+WSWAP.EX_                WSWAP.EXE
+
+Setup Disk #8:
+
+40291730.WP_             40291730.WPD
+40293930.WP_             40293930.WPD
+CANON10E.DR_             CANON10E.DRV
+CANON130.DR_             CANON130.DRV
+CANON330.DR_             CANON330.DRV
+CAN_ADF.EX_              CAN_ADF.EXE
+CIT24US.DR_              CIT24US.DRV
+CIT9US.DR_               CIT9US.DRV
+CITOH.DR_                CITOH.DRV
+COURBI.FO_               COURBI.FOT
+DEC1150.WP_              DEC1150.WPD
+DEC2150.WP_              DEC2150.WPD
+DEC2250.WP_              DEC2250.WPD
+DEC3250.WP_              DEC3250.WPD
+DECCOLOR.WP_             DECCOLOR.WPD
+DECLPS20.WP_             DECLPS20.WPD
+DICONIX.DR_              DICONIX.DRV
+DISK8                    DISK8
+DM309.DR_                DM309.DRV
+DMCOLOR.DL_              DMCOLOR.DLL
+EPL75523.WP_             EPL75523.WPD
+EPSON24.DR_              EPSON24.DRV
+EPSON9.DR_               EPSON9.DRV
+ESCP2.DR_                ESCP2.DRV
+EXECJET.DR_              EXECJET.DRV
+FINSTALL.DL_             FINSTALL.DLL
+FINSTALL.HL_             FINSTALL.HLP
+FUJI24.DR_               FUJI24.DRV
+FUJI9.DR_                FUJI9.DRV
+GENDRV.DL_               GENDRV.DLL
+HERMES_1.WP_             HERMES_1.WPD
+HERMES_2.WP_             HERMES_2.WPD
+HPDSKJET.DR_             HPDSKJET.DRV
+HPELI523.WP_             HPELI523.WPD
+HPIID522.WP_             HPIID522.WPD
+HPIII522.WP_             HPIII522.WPD
+HPIIP522.WP_             HPIIP522.WPD
+HPPCL.DR_                HPPCL.DRV
+HPPCL5A.DR_              HPPCL5A.DRV
+HPPCL5A.HL_              HPPCL5A.HLP
+HPPCL5OP.HL_             HPPCL5OP.HLP
+HPPLOT.DR_               HPPLOT.DRV
+HP_3D522.WP_             HP_3D522.WPD
+HP_3P522.WP_             HP_3P522.WPD
+IBM17521.WP_             IBM17521.WPD
+IBM39521.WP_             IBM39521.WPD
+IBM4019.DR_              IBM4019.DRV
+IBM5204.DR_              IBM5204.DRV
+IBMCOLOR.DR_             IBMCOLOR.DRV
+L200230&.WP_             L200230&.WPD
+L330_52&.WP_            L330_52&.WPD
+L530_52&.WP_             L530_52&.WPD
+L630_52&.WP_             L630_52&.WPD
+LBPII.DR_                LBPII.DRV
+LBPIII.DR_               LBPIII.DRV
+MT_TI101.WP_             MT_TI101.WPD
+N2090522.WP_             N2090522.WPD
+N2290520.WP_             N2290520.WPD
+N2990523.WP_             N2990523.WPD
+N890X505.WP_             N890X505.WPD
+N890_470.WP_             N890_470.WPD
+NCM40519.WP_             NCM40519.WPD
+NCM80519.WP_             NCM80519.WPD
+NEC24PIN.DR_             NEC24PIN.DRV
+O5241503.WP_             O5241503.WPD
+O5242503.WP_             O5242503.WPD
+OKI24.DR_                OKI24.DRV
+OKI9.DR_                 OKI9.DRV
+OKI9IBM.DR_              OKI9IBM.DRV
+OL840518.WP_             OL840518.WPD
+OLIVETI1.WP_             OLIVETI1.WPD
+OLIVETI2.WP_             OLIVETI2.WPD
+P4455514.WP_             P4455514.WPD
+PAINTJET.DR_             PAINTJET.DRV
+PANSON24.DR_             PANSON24.DRV
+PANSON9.DR_              PANSON9.DRV
+PG306.DR_                PG306.DRV
+PHIIPX.WP_               PHIIPX.WPD
+PROPRINT.DR_             PROPRINT.DRV
+PROPRN24.DR_             PROPRN24.DRV
+PRTUPD.INF               PRTUPD.INF
+PS1.DR_                  PS1.DRV
+PSCRIPT.DR_              PSCRIPT.DRV
+PSCRIPT.HL_              PSCRIPT.HLP
+Q2200510.WP_             Q2200510.WPD
+Q820_517.WP_             Q820_517.WPD
+QWIII.DR_                QWIII.DRV
+SEIKO_04.WP_             SEIKO_04.WPD
+SEIKO_14.WP_             SEIKO_14.WPD
+SF4019.EX_               SF4019.EXE
+SFINST.EX_               SFINST.EXE
+SYMBOL.FO_               SYMBOL.FOT
+SYMBOL.TT_               SYMBOL.TTF
+TESTPS.TX_               TESTPS.TXT
+THINKJET.DR_             THINKJET.DRV
+TI850.DR_                TI850.DRV
+TIM17521.WP_             TIM17521.WPD
+TIM35521.WP_             TIM35521.WPD
+TKPHZR21.WP_             TKPHZR21.WPD
+TKPHZR31.WP_             TKPHZR31.WPD
+TOSHIBA.DR_              TOSHIBA.DRV
+TRIUMPH1.WP_             TRIUMPH1.WPD
+TRIUMPH3.WP_             TRIUMPH3.WPD
+TTY.DR_                  TTY.DRV
+TTY.HL_                  TTY.HLP
+U9415470.WP_             U9415470.WPD
+UNIDRV.DL_               UNIDRV.DLL
+UNIDRV.HL_               UNIDRV.HLP
+WINGDING.FO_             WINGDING.FOT
+WINGDING.TT_             WINGDING.TTF
+ 
+===========================================================
+
+List of files on each of the floppy disks created when you choose to do a MS-DOS
+floppy disk install:
+
+STARTUP/SUPPORT
+ 
+ansi.sys
+autoexec.bat
+command.com
+config.sys
+country.sys
+debug.exe
+display.sys
+dosshell.com
+dosshell.exe
+dosshell.grb
+dosshell.ini
+dosshell.vid
+dosswap.exe
+edlin.exe
+ega.cpi
+ega.sys
+expand.exe
+fastopen.exe
+fdisk.exe
+format.com
+himem.sys
+io.sys
+keyb.com
+keyboard.sys
+mem.exe
+mirror.com
+mode.com
+msdos.sys
+nlsfunc.exe
+print.exe
+setver.exe
+share.exe
+sys.com
+undelete.exe
+unformat.com
+xcopy.exe
+ 
+HELP/BASIC/EDIT/UTILITY
+ 
+4201.cpi
+4208.cpi
+5202.cpi
+append.exe
+assign.com
+attrib.exe
+backup.exe
+chkdsk.exe
+comp.exe
+diskcomp.com
+diskcopy.com
+doshelp.hlp
+dosshell.hlp
+driver.sys
+edit.com
+edit.hlp
+fc.exe
+find.exe
+gorilla.bas
+graftabl.com
+graphics.com
+graphics.pro
+help.exe
+label.exe
+money.bas
+more.com
+msherc.com
+nibbles.bas
+qbasic.exe
+qbasic.hlp
+recover.exe
+remline.bas
+restore.exe
+sort.exe
+ 
+ 
+SUPPLEMENTAL
+ 
+appnotes.txt
+doskey.com
+exe2bin.exe
+join.exe
+lcd.cpi
+loadfix.com
+printer.sys
+readme.txt
+replace.exe
+subst.exe
+tree.com
+
+Additional query words: 3.10 3.1 5.00a 5.0a packlist noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+Version           : :3.1,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

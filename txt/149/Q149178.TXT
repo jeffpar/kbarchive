@@ -1,0 +1,77 @@
+DOCUMENT:Q149178  27-JUL-2001  [sms]
+TITLE   :SMS: Upgrading SQL Server Used for an SMS Database
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,4.21a,6.0
+OPER/SYS:
+KEYWORDS:kbother smsgeneral smshowto kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Systems Management Server uses a SQL Server database to store its
+system information and computer inventory. When you upgrade the SQL Server
+computer that contains the database for a Systems Management Server version 1.0
+or 1.1 site, additional procedures are required to re-create some of the stored
+procedures for the Systems Management Server database.
+
+MORE INFORMATION
+================
+
+If the stored procedures are not restored, the Systems Management Server
+Scheduler is unable to activate jobs that use the Include Subsites option. Jobs
+will remain in a Pending state and will never be activated.
+
+To re-create the stored procedures for a Systems Management Server database, use
+the following steps:
+
+1. Run the SQL script Sp_site.sql against the SQL Server that contains the
+   Systems Management Server database. When you run the script, make sure that
+   the Systems Management Server database is the active database. The
+   Sp_site.sql script is located in the
+   <Smsdrive>:\<Smsdirectory>\<Site>.srv\<Platform>.bin
+   directory of the Systems Management Server site server.
+
+2. You can use ISQL/w to run the script file. To use ISQL/w to run the script,
+   start ISQL/w, connect to the SQL Server computer that contains the Systems
+   Management Server database. Select the Systems Management Server database in
+   the Database box, open the Sp_site.sql script that is located on the site
+   server, and run the script. If the script has run successfully, only the
+   following text is returned in the Results tab:
+
+   This command did not return data, and it did not return any rows
+
+3. If the Results tab displays "Invalid Object Name errors," you have run the
+   script against a non-Systems Management Server database.
+
+NOTE: You do not need to manually run the Sp_site.sql script for Systems
+Management Server version 1.2 databases.
+
+Additional query words: prodsms prodsql
+
+======================================================================
+Keywords          : kbother smsgeneral smshowto kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1,4.21a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

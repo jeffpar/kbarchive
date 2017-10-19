@@ -1,0 +1,62 @@
+DOCUMENT:Q135769  30-JUL-2001  [sms]
+TITLE   :SMS: Error 313 SCHEDULER Reports Out of Sync on Slow Link
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbScheduler smsscheduler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you use System Management Server, Scheduler may incorrectly generate a pair
+of event 313 messages when you make changes to site properties of a site that is
+located over slow link (SNA/RAS). The changes are processed successfully on the
+second attempt.
+
+CAUSE
+=====
+
+System Management Server is designed to recover if a process fails. These errors
+are benign and will self correct. However, the pair of Scheduler events may
+appear in the event log each time property changes are made and saved for
+execution.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbScheduler smsscheduler 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

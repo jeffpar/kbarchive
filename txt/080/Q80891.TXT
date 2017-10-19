@@ -1,0 +1,47 @@
+DOCUMENT:Q80891  19-OCT-2000  [schedplus]
+TITLE   :Mac MSPlus: Values Entered in Distribution Settings Truncated
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 1.0, on platform(s):
+    - the operating system: Mac OS (ALL) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Schedule+ for the Apple Macintosh truncates any values greater than
+9999 that are entered into the "Every X Hours" setting in the Distribution
+Settings dialog box. The first four digits entered will be retained and any
+additional digits will be truncated.
+
+The Distribution Settings dialog box is only accessible to the Network Manager.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

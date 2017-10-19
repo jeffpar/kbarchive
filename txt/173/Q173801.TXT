@@ -1,0 +1,69 @@
+DOCUMENT:Q173801  14-NOV-2000  [word97]
+TITLE   :WD97: Word Count Is Zero When Object Is Selected
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbproof winword word97
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word, all values in the Word Count dialog box except Pages and
+Lines may equal zero, regardless of the content of the document.
+
+CAUSE
+=====
+
+This behavior occurs if you only have an object (such as a picture) selected
+when you click Word Count on the Tools menu.
+
+RESOLUTION
+==========
+
+Cancel the selection of any object before you click Word Count on the Tools
+menu. To do this, click anywhere in the text of the document.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The Word Count feature returns the number of words and characters in the current
+selection. If nothing is selected, values are returned for the entire document.
+However, if a non-text object like a picture is selected, the Word Count returns
+zero.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbproof winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

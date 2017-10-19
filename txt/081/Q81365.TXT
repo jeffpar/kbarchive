@@ -1,0 +1,70 @@
+DOCUMENT:Q81365  04-FEB-2002  [utilities]
+TITLE   :FIX: PWB Incorrectly Handles Select in Saved Macros
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Programmer's WorkBench (PWB) versions 1.0 and 1.1, you can save
+macros in the TOOLS.INI file. However, when the following macro is saved in
+TOOLS.INI, PWB will not correctly evaluate the macro commands.
+
+      mytab:= begline select endline delete tab paste
+      mytab: Alt+K
+
+CAUSE
+=====
+
+When using the select function in macros, PWB sometimes gives unexpected
+results.
+
+RESOLUTION
+==========
+
+When recording the above macro through the Record On option under the PWB Edit
+menu, the macro will work as expected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PWB versions 1.0 and 1.1. This
+problem was corrected in PWB version 2.0.
+
+REFERENCES
+==========
+
+"Microsoft C Reference," versions 6.x, pages 55-76
+
+Additional query words: 1.00 1.10 buglist1.00 buglist1.10 fixlist2.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS
+Version           : :1.0,1.1
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

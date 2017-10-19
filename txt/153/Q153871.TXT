@@ -1,0 +1,180 @@
+DOCUMENT:Q153871  04-MAY-2001  [ssafe]
+TITLE   :FIX: How to Install When Setup Fails on Novell
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup kbSSafe400bug kbSSafe500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When installing Visual SourceSafe 4.0 from a Windows 95 computer, the following
+message is displayed:
+
+   "The specified volume does not support long file names. You must select a
+   destination that supports long file names, or force the use of short file
+   names. To force short file names, exit now and restart Setup using the /F
+   command line option."
+
+When Setup /F is run from a Windows 95 computer, the following message is
+displayed:
+
+   "Setup Error 997"
+   "Object 90"
+
+   "Your Setup files may be damaged. Try restarting the Setup program."
+
+When the OK button is pressed, a similar dialog box with another Object number is
+displayed.
+
+
+After clicking the OK box a number of times, the following message will display:
+
+   "Microsoft Visual SourceSafe 4.0 Setup was not completed successfully."
+
+CAUSE
+=====
+
+By default, Novell NetWare servers can not handle long file names. The Visual
+SourceSafe setup routine, when run on a Windows 95 computer, assumes that the
+location of the install will be able to handle long file names. This same
+behavior will happen if you attempt to install to a location that is not Novell
+NetWare but can't handle long file name either.
+
+WORKAROUND
+==========
+
+There are two workarounds to this problem:
+
+1. Install from a non-Windows 95 computer, such as Windows 3.1, Windows for
+   Workgroups 3.11, or Win NT 3.51.
+
+2. If Windows 95 computers are the only ones available, you can install the
+   server copy locally and then copy those files to the Novell NetWare server.
+   See detailed instructions in the More Information section of this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been fixed in Visual SourceSafe 5.0.
+
+MORE INFORMATION
+================
+
+You can install Visual SourceSafe to a Novell NetWare server from a Windows 95
+computer by following the steps outlined below. This procedure consists of
+installing to a local machine, copying the local installation to the server, and
+then deleting the local installation.
+
+Step-by-Step Example
+--------------------
+
+1. Run Setup.exe, without the "/F" switch, from the compact disc or floppy
+   disks, and choose the Server button to install a server copy of Visual
+   SourceSafe. When prompted for a location to install, point to a location on
+   the local computer.
+
+2. Xcopy the local installation to a new location on the server.
+
+NOTE: If there is an existing SourceSafe 3.x or earlier installation, do not copy
+the new installation to the old directory because the copy procedure overwrites
+the old data directory: this would result in a loss of all information in
+SourceSafe. The copy procedure should be to a new directory and the directions
+in the section below entitled Extra Steps if an Older Version of SourceSafe
+Exists should be followed.
+
+1. Check this installation by running the appropriate SSEXP.exe file. If you are
+   on Windows 3.1 or Windows For Workgroups 3.11, run VSS\WIN\SSEXP.exe. If you
+   are on Windows 95 or Windows NT 3.51, run VSS\WIN32\SSEXP.exe.
+
+2. If you would like a client installation of Visual SourceSafe, run Netsetup
+   from the server. This will also register it with Visual Basic 4.0, Visual C++
+   4.x or other products that integrated with Visual SourceSafe. Even though a
+   server copy of Visual SourceSafe has been installed to the Windows 95
+   computer, a client installation will still have to be performed to integrate
+   with Visual Basic 4.0, Visual C++ 4.x or other products that integrated with
+   Visual SourceSafe.
+
+Extra Steps if an Older Version of SourceSafe Exists
+----------------------------------------------------
+
+If you have an older version of SourceSafe on your server, and are installing
+from a Windows 95 computer, perform the directions above and then do the
+following:
+
+1. Xcopy the DATA directory from the 3.x installation to the 4.0 installation.
+   This will overwrite the 4.0 DATA directory. Doing this will bring your source
+   code from the 3.x installation to the 4.0 file structure.
+
+2. Xcopy the USERS directory from the 3.x installation to the 4.0 installation.
+   This will overwrite the 4.0 USERS directory.
+
+3. Copy the 'users.txt' and the 'srcsafe.ini' files from the SS directory to the
+   VSS directory, overwriting the 4.0 copies.
+
+4. Run ddconv on the DATA directory. If you are on Windows 3.1 or Windows for
+   Workgroups 3.11, use VSS\WIN\ddconv.exe. If you are on Windows 95 or Windows
+   NT 3.51, use VSS\WIN32\ddconv.exe. Run this from a Command prompt with the
+   following syntax:
+
+         ddconv <Path to DATA directory>
+
+5. If possible, run the ddconv that is in the analyze4.exe. This is available
+   for free from download sites. For more information, please see the following
+   article in the Microsoft Knowledge Base:
+
+   Q190881 SAMPLE: Analyze6.exe Utility for Visual SourceSafe
+
+Notes About Upgrading
+---------------------
+
+Back up your SourceSafe database before upgrading. The installation process
+converts your existing database to a new format. If there are problems during
+conversion, you will need a backup to return to your previous database.
+
+Make sure all users exit SourceSafe before installing a new version. However,
+users can have files checked out.
+
+If users have copies of the SourceSafe 3.x executables on their computer hard
+disks, they need to run the netsetup.exe from the server installation of Visual
+SourceSafe.
+
+The SourceSafe directory structure and file names have changed for Visual
+SourceSafe 4.0, so the icons in your Windows Program Manager for SourceSafe 3.X
+will not work with Visual SourceSafe 4.0. New icons are installed during the
+client setup process using netsetup.exe. These icons will point to the correct
+new program locations.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbsetup kbSSafe400bug kbSSafe500fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

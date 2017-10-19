@@ -1,0 +1,62 @@
+DOCUMENT:Q147107  15-OCT-1999  [exchange]
+TITLE   :XADM: Installing Dynamic RAS Connector without RAS Installed
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbsetup kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install a Microsoft Exchange Dynamic Remote Access Service (RAS)
+Connector on an Microsoft Exchange Server that does not have Windows NT RAS
+installed, the required Microsoft Exchange RAS Message Transport Agent (MTA)
+Transport stack will not install. This will prevent the installation of the
+Dynamic RAS Connector.
+
+MORE INFORMATION
+================
+
+The Dynamic RAS Connector is dependent upon Windows NT RAS. When this service is
+not installed, the Dynamic RAS connector will not function.
+
+To install the Dynamic RAS connector, Windows NT RAS will need to be installed
+from the Windows NT Control Panel by starting the Network applet, choosing Add
+Software, and choosing Remote Access Service.
+
+If the Dynamic RAS Connector is going to be scheduled as Remote Initiated, the
+Windows NT RAS can be set to Receive Calls Only.
+
+If the Dynamic RAS Connector is going to scheduled as Always or Scheduled times,
+but will never receive a call, the Windows NT RAS can be set to Dial Out Only.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

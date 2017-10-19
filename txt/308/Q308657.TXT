@@ -1,0 +1,78 @@
+DOCUMENT:Q308657  15-FEB-2002  [mspress]
+TITLE   :MCSE Training Kit Designing Highly Available Web Solutions with
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book MCSE Training Kit Designing Highly
+Available Web Solutions with Microsoft Windows 2000 Server Technologies, ISBN
+0-7356-1425-3.
+
+The following topics are covered:
+
+ - Page xxii: Incorrect Step 2
+
+ - Page 20: Incorrect URL
+
+MORE INFORMATION
+================
+
+Page xxii: Incorrect Step 2
+---------------------------
+
+On page xxii, under "To install Application Center 2000 Evaluation Edition",
+
+Change:
+"2. Select Run from the Start menu on your desktop, and type D:\Setup.exe..."
+
+To:
+"2. Select Run from the Start menu on your desktop, and type
+D:\AC2000EVL\Setup.exe..."
+
+
+Page 20: Incorrect URL
+----------------------
+
+On page 20,
+
+Change:
+
+   http://www.microsoft.com/technet/ecommerce/ecseries.asp
+
+To:
+
+   http://www.microsoft.com/traincert/default.asp
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1425-3 TKBOOK
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

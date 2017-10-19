@@ -1,0 +1,89 @@
+DOCUMENT:Q293098  22-JUN-2001  [exchange]
+TITLE   :XWEB: HTTP 404 "Page Cannot Be Found" Accessing OWA Behind Proxy
+PRODUCT :Microsoft Exchange
+PROD/VER::2.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Proxy Server version 2.0 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error when you are trying to access the Outlook
+Web Access (OWA) logon page from a location that is external to your Proxy
+server:
+
+   HTTP 404 Page Cannot Be Found
+
+You are also unable to log on to OWA from inside your network to bypass the Proxy
+server.
+
+CAUSE
+=====
+
+This behavior occurs because OWA and Proxy Server are running on separate
+computers, and you did not configure Web Publishing to send requests to another
+Web server in Proxy Server.
+
+RESOLUTION
+==========
+
+To resolve this behavior, enable Web Publishing to send requests to another Web
+server:
+
+1. Start Internet Service Manager (ISM), which starts the Microsoft Management
+   Console (MMC) Internet Information Server (IIS) snap-in .
+
+2. On the Action menu, click Web Proxy, and then click Properties.
+
+3. On the Publishing tab, click to select the Enable Web Publishing check box.
+
+4. Click "Sent to another web server".
+
+5. Type the internal IP address or the NetBIOS name of the OWA server. You can
+   also use the fully qualified domain name as long as the name can be resolved.
+
+Note: If more than one Web server exists, refer to the articles that are listed
+in the "More Information" section in this article.
+
+MORE INFORMATION
+================
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q207655 XWEB: Setting Up Web Publishing and OWA Access Through a Proxy
+
+   Q198509 XWEB: 'Unable to Get Your Inbox' Using OWA via Proxy Server
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbAudDeveloper kbExchangeSearch kbExchange550 kbZNotKeyword2 kbProxyServSearch kbOWASearch kbOWA550 kbProxyServ200
+Version           : :2.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

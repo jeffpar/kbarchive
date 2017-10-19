@@ -1,0 +1,83 @@
+DOCUMENT:Q176015  09-AUG-2001  [winnt]
+TITLE   :PRB: Running Sysdiff with Multiple Partitions
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Sysdiff utility, all partitions have to be set up on the hard
+drive prior to taking a snapshot of the system. If one partition is present when
+the initial snapshot is taken, then the user adds a second partition using Disk
+Administrator and installs applications to the added partition, the difference
+file will not contain the new partition or application information.
+
+In the above scenario, the difference file will only contain the changes that
+were made to the registry as a result of creating a new partition and whatever
+changes were made by installing the application(s). The application files that
+were installed on the new partition will not be contained in the difference
+file.
+
+CAUSE
+=====
+
+When the snapshot of the system is taken, it only incorporates the information
+on existing partitions. So when the difference file is created, the partitions
+added after the snapshot was taken are ignored. Sysdiff is not designed to
+capture system changes, that is, partition changes. Sysdiff is designed to snap
+the system, install applications, then do a diff to capture which applications
+were installed.
+
+
+RESOLUTION
+==========
+
+To capture the necessary information when you use the Sysdiff utility on a
+computer with multiple partitions, perform the following steps:
+
+1. Setup all partitions through Disk Administrator prior to issuing the "sysdiff
+   /snap c:\<image file>" command.
+
+2. Follow all procedures outlined in the Windows NT Deployment Guide to create
+   the difference package to be used to install applications to other systems.
+   Steps are also outlined above.
+
+If there are problems with drive space limitations when applying the difference
+package to the installation share, see the following Microsoft Knowledge Base
+article for further information:
+
+Q173825 Not Enough Space for Files During an Unattended Setup
+
+Additional query words: unattended multiple SBK OPK Setup
+
+======================================================================
+Keywords          : kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

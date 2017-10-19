@@ -1,0 +1,311 @@
+DOCUMENT:Q273772  23-AUG-2001  [odbc]
+TITLE   :FIX: Memory Leak in Jet ODBC Driver with Numeric or Binary Data
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.5,2.5 SP1,4.0
+OPER/SYS:
+KEYWORDS:kbJET kbMDAC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbMDAC250bug kbWin2000PreSP2Fix kbMDAC250SP
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for Access, version 4.0 
+ - Microsoft Data Access Components versions 2.5, 2.5 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call the SQLBindParameter function in the Jet ODBC driver, and when you
+bind to a SQL data type of SQL_NUMERIC or when you bind SQL_C_BINARY to
+SQL_WCHAR, a memory leak occurs.
+
+If you use the Performance Monitor (PerfMon) to watch the Private Bytes for the
+process, you see a gradual but steady memory increase, and the memory is not
+freed when the statements or connections close.
+
+CAUSE
+=====
+
+Buffers are used within the Jet ODBC driver to help convert the ODBC parameter
+data types to native data types for the Jet database engine. These buffers are
+referenced through pointers maintained on the statement handle, as part of the
+parameter descriptors (IPDs).
+
+Normally, the code checks to see if the pointer already references a valid memory
+buffer, and then reuses the buffer if it exists. However, when binding a
+SQL_NUMERIC datatype, or when binding SQL_C_BINARY to SQL_WCHAR, new memory is
+allocated and assigned to the pointer without checking it first, and the
+previous value is overwritten.
+
+RESOLUTION
+==========
+
+This problem is fixed in the latest service packs for Windows 2000 and MDAC
+2.5.
+
+ - To resolve this problem, obtain the latest service pack for Windows 2000. For
+   additional information, please see the following article in the Microsoft
+   Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+ - To resolve this problem, obtain the latest service pack for Microsoft Data
+   Access Components 2.5. For additional information, please see the following
+   article in the Microsoft Knowledge Base:
+
+   Q293312 INFO: How to Obtain the Latest MDAC 2.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        Version       Size              File name    
+   ---------------------------------------------------------------------
+   09/13/00    4.0.5708.0    270,608 bytes    Odbcjt32.dll
+   09/14/00    1.10.101.0    295,696 bytes    Q273772_W2K_SP2_x86_en.EXE
+
+NOTE: This hotfix requires Microsoft Data Access Components (MDAC) 2.5 Service
+Pack 1 (SP1) or later because of dependencies on other files introduced with
+MDAC 2.5 SP1. There is no fix available that you can apply directly to MDAC
+2.5.
+
+
+To install this hotfix on a Microsoft Windows 2000 platform, run the hotfix
+installer package (Q273772_W2K_SP2_x86_en.EXE). Although the hotfix itself is
+not platform-dependent, the hotfix installer package is designed to run only on
+Windows 2000 platforms, and will not run on Microsoft Windows NT 4.0, Microsoft
+Windows 95 or Microsoft Windows 98 platforms. MDAC contains system file
+protected files and you can only replace those files by a digitally signed
+hotfix installer on Windows 2000. The standalone hotfix file is provided as well
+so that you can copy that file directly to Windows NT 4.0, Windows 95 or Windows
+98 platforms.
+
+
+WORKAROUND
+----------
+
+There is no workaround for this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Microsoft Data Access Components 2.5 Service Pack 2 and Microsoft Windows 2000
+Service Pack 2.
+
+MORE INFORMATION
+================
+
+
+If you examine the memory for the process periodically while the process runs,
+you see an increasing number of 0x100000 (1048576) byte allocations. If the
+process continues to run, the process eventually runs out of memory and stops
+responding (hangs) or fails.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the code that follows into a Microsoft Visual C++ console application,
+   and then compile the code. Please note that you may need to change the
+   datasource name, user id and password.
+
+   #include <windows.h>
+   #include <sql.h>
+   #include <sqlext.h>
+   #include <tchar.h>
+   #include <stdlib.h>
+   #include <stdio.h>
+
+   #define LEAK_NUMERIC 1		//Use this to determine NUMERIC or BINARY leak
+
+   void HandleError(SQLHANDLE	hHandle, SQLSMALLINT hType, RETCODE RetCode)
+   {
+   	SQLSMALLINT	iRec = 0;
+   	SQLINTEGER	iError;
+   	TCHAR		szMessage[1000];
+   	TCHAR		szState[SQL_SQLSTATE_SIZE];
+
+   	if (RetCode == SQL_INVALID_HANDLE)
+   	{
+   		fprintf(stderr,"Invalid handle!\n");
+   		return;
+   	}
+
+   	while (SQLGetDiagRec(hType,
+   			 hHandle,
+   			 ++iRec,
+   			 (SQLCHAR *)szState,
+   			 &iError,
+   			 (SQLCHAR *)szMessage,
+   			 (SQLSMALLINT)(sizeof(szMessage) / sizeof(TCHAR)),
+   			 (SQLSMALLINT *)NULL) == SQL_SUCCESS)
+   	{
+   		fprintf(stderr,TEXT("[%5.5s] %s (%d)\n"),szState,szMessage,iError);
+   	}
+
+   }
+
+   char* szConnStringIn = "Driver={Microsoft Access Driver (*.mdb)};DBQ=E:\\JetLeak\\TestDatabase.mdb";
+   char* szDropTable = "DROP TABLE LeakTable";
+   //char* szInsertStatement = "INSERT INTO LeakTable VALUES (?)";
+   char* szSelectStatement = "SELECT * FROM LeakTable WHERE val1 = ?";
+   const int nParamCount = 1; 
+
+   #if LEAK_NUMERIC
+   char* szCreateTable = "CREATE TABLE LeakTable (val1 long)";
+   #else
+   char* szCreateTable = "CREATE TABLE LeakTable (val1 varchar(10))";
+   #endif
+
+   void main(int argc, char* argv[])
+   {
+   	SQLHENV henv;
+   	SQLHDBC hdbc;
+   	SQLHSTMT hstmt;
+   	SQLRETURN nstatus;
+
+   	char szConnStringOut[1024];
+   	SQLSMALLINT cbConnOut;
+   	SQLINTEGER status[nParamCount];
+
+   #if LEAK_NUMERIC
+   	SQLCHAR szParam[nParamCount][10] = {"12345"};
+   #else
+   	BYTE szParam[nParamCount][10] = {0x31,0x33,0x34,0x39};
+   #endif
+       
+   	//Not checking the return codes in some cases for clarity.
+   	
+   	nstatus = SQLAllocHandle(SQL_HANDLE_ENV,NULL,&henv);
+   	nstatus = SQLSetEnvAttr(henv,SQL_ATTR_ODBC_VERSION,(SQLPOINTER) SQL_OV_ODBC3,0);
+   	nstatus = SQLAllocHandle(SQL_HANDLE_DBC,henv,&hdbc);
+
+   	nstatus = SQLDriverConnect(hdbc,
+   			NULL,
+   			(SQLCHAR*) szConnStringIn,
+   			SQL_NTS,
+   			(SQLCHAR*) szConnStringOut,
+   			sizeof (szConnStringOut),
+   			&cbConnOut,
+   			SQL_DRIVER_COMPLETE);
+   							
+   	if (nstatus != SQL_SUCCESS && nstatus != SQL_SUCCESS_WITH_INFO)
+   	{
+   		HandleError(hdbc,SQL_HANDLE_DBC,nstatus);
+   		return;
+   	}
+
+   	nstatus = SQLAllocHandle(SQL_HANDLE_STMT,hdbc,&hstmt);	
+
+   	nstatus = SQLExecDirect(hstmt, (SQLCHAR*) szDropTable, SQL_NTS);
+   	nstatus = SQLExecDirect(hstmt, (SQLCHAR*) szCreateTable, SQL_NTS);
+
+   	if (!SQL_SUCCEEDED(nstatus))
+   	{
+   		HandleError(hstmt,SQL_HANDLE_STMT,nstatus);
+   	}
+
+   	int i;
+   	//only one parameter in this case
+   	for (i=0; i < nParamCount; i++)
+   	{
+   		status[i] = SQL_NTS;
+
+   #if LEAK_NUMERIC
+   		nstatus = SQLBindParameter(hstmt,
+   			i+1,
+   			SQL_PARAM_INPUT,
+   			SQL_C_CHAR,	
+   			SQL_NUMERIC, 
+   			10, 
+   			0,
+   			szParam[i],
+   			10,
+   			&status[i]);
+   #else
+
+   		nstatus = SQLBindParameter(hstmt,
+   			i+1,
+   			SQL_PARAM_INPUT,
+   			SQL_C_BINARY,	
+   			SQL_WCHAR,
+   			10, 
+   			0,
+   			szParam[i],
+   			10,
+   			&status[i]);
+   #endif
+   	
+   	
+   	}
+
+   	nstatus = SQLPrepare(hstmt,(SQLCHAR*) szSelectStatement, SQL_NTS);
+   	if (nstatus != SQL_SUCCESS)
+   	{
+   		HandleError(hstmt,SQL_HANDLE_STMT,nstatus);
+   	}
+
+   	for (i=0; i < 100000; i++)
+   	{
+   		if (i % 100 == 0)
+   		{
+   			printf("Selected %d times\n", i);
+   			//printf("Inserted %d records\n", i);
+   			Sleep(100);
+   		}
+   		nstatus = SQLExecute(hstmt);
+   		if (nstatus != SQL_SUCCESS)
+   		{
+   			HandleError(hstmt,SQL_HANDLE_STMT,nstatus);
+   		}
+
+   		SQLFreeStmt(hstmt, SQL_CLOSE);
+   	}
+
+   	nstatus = SQLExecDirect(hstmt, (SQLCHAR*) "DELETE FROM LeakTable", SQL_NTS);
+   	if (nstatus != SQL_SUCCESS)
+   	{
+   		HandleError(hstmt,SQL_HANDLE_STMT,nstatus);
+   	}
+
+   	SQLFreeStmt(hstmt, SQL_CLOSE);
+   	SQLDisconnect(hdbc);
+
+   }
+
+   NOTE: You can use the LEAK_NUMERIC constant to demonstrate either the
+   SQL_NUMERIC or SQL_C_BINARY leak.
+
+2. Create a new blank Microsoft Access database as specified by the location in
+   your connection string.
+
+3. Start running the code, and then use Performance Monitor to watch the Private
+   Bytes counter for the process.
+
+   Note that the Private Bytes counter rises steadily while the code is running.
+
+Additional query words: jet odbc driver odbcjt32.dll memory leak sql_numeric sql_c_binary sqlbindparameter parameters
+
+======================================================================
+Keywords          : kbJET kbMDAC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbMDAC250bug kbWin2000PreSP2Fix kbMDAC250SP1bug kbWin2000SP2Fix kbMDAC250SP2fix 
+Technology        : kbAudDeveloper kbAccessSearch kbODBCSearch kbMDACSearch kbMDAC250SP1 kbMDAC250 kbODBCAccess400
+Version           : :2.5,2.5 SP1,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

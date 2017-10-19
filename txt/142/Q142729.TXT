@@ -1,0 +1,65 @@
+DOCUMENT:Q142729  17-DEC-2000  [win95x]
+TITLE   :Distorted Sound with Media Vision 3D or Pro 3D Sound Card
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Sounds played on a Media Vision Premium 3D or Pro 3D sound card may be
+distorted.
+
+CAUSE
+=====
+
+The Sound Retrieval System (SRS) 3D sound support circuitry has been enabled on
+the sound card, but the right and left audio channels are not balanced in Volume
+Control.
+
+When the right and left audio channels are not balanced, the SRS 3D sound support
+circuitry cannot compensate for the imbalanced audio signal sent to the two
+channels, causing distortion.
+
+RESOLUTION
+==========
+
+Balance the right and left audio channels for all sound files and sound sources
+in Volume Control. To do so, follow these steps:
+
+1. Click the Start button, point to Programs, point to Accessories, point to
+   Multimedia, and then click Volume Control.
+
+2. Move all the Balance sliders to the center.
+
+3. On the Options menu, click Exit.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

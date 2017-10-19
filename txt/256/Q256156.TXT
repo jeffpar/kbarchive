@@ -1,0 +1,146 @@
+DOCUMENT:Q256156  14-MAR-2000  [foxpro]
+TITLE   :PRB: Report Transported from DOS Causes Problems in Visual FoxPr
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbReportWriter kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A report is originally created in FoxPro for MS-DOS and is transported to
+Microsoft Visual FoxPro. The report is problematic, possibly causing Visual
+FoxPro to crash or the system performance to degrade when it is run.
+
+CAUSE
+=====
+
+The report writer in Microsoft FoxPro for MS-DOS contains an interface that
+allows the developer to select a style for printing a selected field. The
+interface inputs values in a memo field of the report (.frx) called "style."
+Values that the interface can input are:
+
+ - B - for Bold print
+ - I - for Italic print
+ - U - for Underlined print
+ - R - for Raised face (Superscript) print
+ - L - for Lowered face (Subscript) print
+ - J - for right Justified print alignment
+ - C - for Centered print alignment
+
+In the event that a report .frx file contains any style code or codes other than
+those listed above, the report can cause system problems when it is transported
+to Microsoft Windows and edited within or run from Visual FoxPro.
+
+RESOLUTION
+==========
+
+Any style codes other than those listed in the "Cause" section of this article
+should be removed.
+
+STATUS
+======
+
+Visual FoxPro for Windows adds additional fields to a report .frx file that
+store font and formatting information. For this reason, the report writer of
+Visual FoxPro does not utilize the style field of the report .frx file. However,
+the style field is present for backward compatibility and Visual FoxPro does
+read the style field (and all the .frx file information) when:
+
+ - Saving a modified report
+ - Closing a report in design mode
+ - Rendering a report at run time
+
+One particular activity that demonstrates the adverse impact of the unexpected
+style information is to copy objects (copying to and pasting from the clipboard)
+from one report to another. After this is done, close one report and then the
+other. This step might need to be repeated two or three times and then the
+following error can occur:
+
+   The instruction at "memory address" referenced memory at "memory address".
+   The memory could not be "written".
+
+After this message is displayed, Visual FoxPro shuts down.
+
+A number of third-party products are available as extensions to the FoxPro for
+MS-DOS report writer. These usually come with PDSETUP (Printer Driver Setup)
+information that allows for printing special character sets (such as bar codes,
+and so forth) in MS-DOS. These can input values in the style field of the report
+.frx file that are not listed in the "Cause" section of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+It is important that the following steps not be performed in a session of Visual
+FoxPro where important information has not been saved and closed. It is best to
+perform this in a newly started session of Visual FoxPro.
+
+To reproduce this behavior, perform the following:
+
+1. Within Microsoft Visual FoxPro, open a sample table. Do not use a working
+   table.
+
+2. From the File menu, select New, select the Report button, and click the New
+   File button.
+
+3. Within the report writer, click the Report menu, and then select Quick
+   Report. Deselect Add table to data environment, choose the vertical Field
+   Layout, and then click OK.
+
+4. Close and save the report as Test1.
+
+5. In the Command window, do the following to add a "T" to the style field for
+   the top-most two report objects:
+
+   USE test1.frx
+   REPLACE style WITH "T" FOR RECNO() > 4 AND RECNO() < 7
+   USE && closes the test1.frx
+   CREATE REPORT test2.frx &&for the copy and paste operation
+
+6. While the test2 report is still open, open the test1 report.
+
+7. Select a number of objects in the test1 report, ensure that the top-most two
+   objects are among them, and copy them to the clipboard.
+
+8. Now select the test2 report and paste the objects into it.
+
+9. Close and save the test2 report.
+
+10. Close the test1 report.
+
+Repeat items 6 through 10 (if necessary) and note that an error occurs and Visual
+FoxPro shuts down.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbReportWriter kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

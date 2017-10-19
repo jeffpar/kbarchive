@@ -1,0 +1,80 @@
+DOCUMENT:Q133449  10-AUG-1999  [foxpro]
+TITLE   :PRB: ESL File Not Automatically Included w/ Visual FoxPro EXE
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 5.00 | 3.00b
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A set of application distribution disks created with the Visual FoxPro Setup
+Wizard does not contain the run-time file necessary to run the application. In
+Visual FoxPro for Windows version 3.0, the run-time file is VFP300.ESL. In
+Visual FoxPro for Macintosh, the set of disks does not contain the support
+library for the PPC or the 68K Support Library. The run- time file for Visual
+FoxPro for Windows version 5.0 is Vfp500.dll.
+
+CAUSE
+=====
+
+In step 2 of the Setup Wizard, the Visual FoxPro Run-time check box was not
+selected.
+
+STATUS
+======
+
+This is by design. The Setup Wizard was enhanced in version 3.0 to allow the
+developer to choose whether or not to include the VFP300.ESL file, which is 3.5
+MB, with the distribution disks. The Support Library PPC is 5 MB, and the
+Support Library 68K is 4.2 MB. The support library for Visual FoxPro 5.0 is 3.5
+MB.
+
+RESOLUTION
+==========
+
+Rerun the Setup Wizard. In Step 2, under Optional Components, select the Visual
+FoxPro 3.0 Runtime check box.
+
+MORE INFORMATION
+================
+
+The Setup Wizard requires a .EXE file in order to build a set of distribution
+disks. This means that the .ESL file or the support libraries for 68K or PPC,
+can only be distributed as part of a complete application. You cannot distribute
+the .ESL by itself.
+
+NOTE: Chapter 9 of the Professional Features Guide, Visual Foxpro for Windows,
+lists this check box as appearing during step 3 of the Setup Wizard; this is
+incorrect.
+
+Additional query words: vFoxMac VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP500 kbVFP600
+Version           : 3.00 5.00 | 3.00b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

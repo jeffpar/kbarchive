@@ -1,0 +1,59 @@
+DOCUMENT:Q140711  16-JUN-2001  [msnetwork]
+TITLE   :Error Messages Indicate Modem When Connected to MSN Using LAN
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6,95,98,98 Second Edition
+OPER/SYS:
+KEYWORDS:kberrmsg kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3, 2.0, 2.5, 2.51, 2.52, 2.6 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are connected to MSN, The Microsoft Network, using a local area network
+(LAN), you may receive messages that indicate a modem connection, such as:
+
+   The modem connection has been lost.
+
+CAUSE
+=====
+
+MSN does not support LAN connections. All messages were originally written
+assuming use of a modem when connecting to MSN.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 2.00 2.50 2.60
+
+======================================================================
+Keywords          : kberrmsg kbmsn 
+Technology        : kbOSWin98 kbOSWin95 kbOSWin98SE kbOSWinSearch kbMSNSearch kbMSN200 kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN250 kbMSN120
+Version           : WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6,95,98,98 Second Edition
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q141984  12-MAR-1999  [exchange]
+TITLE   :XCLN: Location of User Profiles
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about the registry. Before you
+edit the registry, you should first make a backup copy of the registry
+files (System.dat and User.dat). Both are hidden files in the Windows
+folder.
+
+SUMMARY
+=======
+
+This article describes the location of Microsoft Exchange, version 4.0, client
+User Profiles.
+
+MORE INFORMATION
+================
+
+
+When using the Microsoft Exchange client for Windows 95, the user profiles are
+saved in the Registry under the following key:
+
+HKEY_CURRENT_USER\SOFTWARE\MICROSOFT\WINDOWS MESSAGING SUBSYSTEM\PROFILES
+
+
+NOTE: The Microsoft Exchange user profiles contain binary information and should
+not be modified in the registry. Editing the profiles this way can cause
+irreparable damage to the profile. It will then have to be deleted and
+recreated, resulting in the loss of all settings.
+
+
+Additional query words: user profiles
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

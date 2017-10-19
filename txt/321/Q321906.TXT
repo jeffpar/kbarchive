@@ -1,0 +1,95 @@
+DOCUMENT:Q321906  03-JUL-2002  [sna]
+TITLE   :FIX: OLE DB Provider Does Not Return Result Sets for Stored Proc
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhis2000 kbhis2000bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The OLE DB provider for DB2, which is included with Host Integration Server
+2000, supports calls to DB2 stored procedures. However, the OLE DB provider for
+DB2 does not support the return of single or multiple result sets when calling
+stored procedures.
+
+MORE INFORMATION
+================
+
+The OLE DB provider for DB2 has been updated to support the return of single
+result sets when calling DB2 stored procedures. The return of multiple result
+sets is not yet supported.
+
+Additionally, the following is a list of some other limitations of using the OLE
+DB provider for DB2 to call stored procedures:
+
+ - Binding output parameters of type REAL or DOUBLE is not supported.
+ - Calling stored procedures when the parameter values contain CHAR Mixed or
+   GRAPHIC (DBCS) data types is not supported.
+ - Calling a non-existent procedure causes an error.
+
+These are listed in the Host Integration Server 2000 Online Developer's Guide.
+
+A supported feature that modifies the product's default behavior is now available
+from Microsoft, but it is only intended to modify the behavior that is described
+in this article. Apply it only to systems that specifically need it. This
+feature may receive additional testing. Therefore, if your system is not
+severely affected by the lack of this feature, Microsoft recommends that you
+wait for the next Microsoft Host Integration Server 2000 service pack that
+contains this feature.
+
+To obtain this feature immediately, contact Microsoft Product Support Services.
+For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, visit the following Microsoft Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
+   Date         Time   Version      Size     File name
+   ---------------------------------------------------
+   03-Jun-2002  08:35  5.0.0.836    307,472  Crtpkg.dll
+   03-Jun-2002  08:34  5.0.0.836    663,824  Db2oledb.dll
+   03-Jun-2002  08:35  5.0.0.836    880,912  Mseidb2d.dll
+   03-Jun-2002  08:35  5.0.0.836    262,416  Mseidrda.dll
+   03-Jun-2002  08:35  5.0.0.836     65,808  Crtpkg.exe
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhis2000 kbhis2000bug 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

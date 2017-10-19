@@ -1,0 +1,51 @@
+DOCUMENT:Q139859  18-DEC-2000  [win95x]
+TITLE   :Video for Windows Screen Capture Displays Wrong Mouse Pointer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1.1,95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Video for Windows, version 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Screen Capture tool included with Video for Windows on a
+computer running Windows 95, captured mouse pointers are recorded and displayed
+as an hourglass instead of the mouse pointer being used by Windows 95.
+
+CAUSE
+=====
+
+The Screen Capture tool detects the Windows cursor type and then tries to match
+it to an internal generic cursor. Earlier versions of the 16-bit driver
+(Scrncap.drv) do not perform this function correctly.
+
+Additional query words: vfw
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbVideoSearch kbZNotKeyword3 kbVideo110
+Version           : :1.1,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

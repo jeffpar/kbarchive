@@ -1,0 +1,83 @@
+DOCUMENT:Q248421  09-NOV-2001  [homegame]
+TITLE   :Fighter Ace II: Textures Are Translucent and Appear Blue
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Fighter Ace II, the textures in the game may be
+translucent and appear blue on the screen.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A 3Dfx Velocity 100 video adapter is installed in the computer.
+
+ - Fighter Ace II is configured to use the Glide display setting.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure Fighter Ace II to use the Direct3D display
+setting:
+
+1. Start Fighter Ace II.
+
+2. On the startup screen, click the Settings tab.
+
+3. Under Display, click Direct 3D.
+
+If the issue continues to occur, configure Fighter Ace II to use software
+rendering:
+
+1. Start Fighter Ace II.
+
+2. On the startup screen, click the Settings tab.
+
+3. Under Display, click Software.
+
+MORE INFORMATION
+================
+
+The 3Dfx Velocity 100 video adapter does not properly support the Glide display
+setting.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 2.00 msgame fa msngz igz transparent chipset
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

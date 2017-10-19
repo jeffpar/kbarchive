@@ -1,0 +1,52 @@
+DOCUMENT:Q96349  03-FEB-2000  [foxpro]
+TITLE   :Errors in HELP Command Documentation
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+ - Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page L3-559 of the "Language Reference" incorrectly states that the FoxPro for
+Windows-style Help file can be placed in a user-defined window or the main
+FoxPro window. This is true only if the .DBF-style Help file, not the
+Windows-style Help file, is being used. The manual incorrectly implies that the
+Windows-style Help file can be placed in a user-defined window or the FoxPro for
+Windows main screen with the IN WINDOW SCREEN or IN SCREEN option.
+
+In addition, the NOWAIT option works only with the .DBF-style Help file. The
+manual incorrectly indicates that the NOWAIT option will work with the
+Windows-style Help file.
+
+Additional query words: VFoxWin FoxWin FoxDos 2.50 2.50a 2.50b 2.60 2.60a docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbVFP300
+Version           : MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

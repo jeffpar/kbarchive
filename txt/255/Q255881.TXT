@@ -1,0 +1,68 @@
+DOCUMENT:Q255881  12-NOV-2001  [homegame]
+TITLE   :Allegiance: Game Hangs When You Attempt to Launch a Ship
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Allegiance, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Allegiance, the game may stop responding (hang) when you
+attempt to launch a ship.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A video adapter based on the Permedia3 chip set is installed in the computer.
+
+ - Allegiance is configured to use hardware rendering.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure Allegiance to run in software mode.
+
+To do this, click Start, point to Programs, point to Microsoft Games, point to
+Allegiance, point to Trouble Shooting, and then click Run Allegiance In Software
+Mode.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame igz msngz troubleshoot t-shoot
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbAllegianceSearch kbAllegiance
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

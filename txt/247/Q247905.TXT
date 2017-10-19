@@ -1,0 +1,75 @@
+DOCUMENT:Q247905  25-JUL-2001  [homemm]
+TITLE   :Bookshelf 98 Mac: Hangs When Click Bookshelf Icon on Menu Bar
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:
+OPER/SYS:
+KEYWORDS:kbhw kbui kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Bookshelf icon on the menu bar to start Microsoft Bookshelf
+98 for Macintosh, your computer may appear to stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if you run Bookshelf 98 on a blue and white Apple Power
+Macintosh G3.
+
+NOTE: This issue does not occur when you run Bookshelf 98 on an Apple Power
+Macintosh G4.
+
+RESOLUTION
+==========
+
+To work around this issue, use one of the following methods to start Bookshelf
+98.
+
+Method 1
+--------
+
+Double-click the Bookshelf 98 program icon on your hard disk.
+
+Method 2
+--------
+
+Make an alias of the Bookshelf 98 icon, drag it to the desktop, and then
+double-click this Bookshelf 98 alias icon to start the program.
+
+Method 3
+--------
+
+Click the Bookshelf 98 icon on the menu bar, and then wait until the Bookshelf 98
+window is displayed. This process may take two to three minutes.
+
+Additional query words: multi multi-media media mm bs98 freezes
+
+======================================================================
+Keywords          : kbhw kbui kbimu kbHardware 
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1998Mac
+Version           : MACINTOSH:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,78 @@
+DOCUMENT:Q274845  06-AUG-2002  [homegame]
+TITLE   :Crimson Skies: How to Manually Back Up Saved Games
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to manually back up saved games in Microsoft Crimson
+Skies.
+
+MORE INFORMATION
+================
+
+To manually back up your saved games in Crimson Skies:
+
+1. Quit Crimson Skies.
+
+2. Right-click the Start button, and then click Explore.
+
+3. Open the following default Crimson Skies installation folder
+
+   <drive>:\Program Files\Microsoft Games\Crimson Skies
+
+   where <drive> is the letter of the hard disk on which Crimson Skies is
+   installed.
+
+NOTE: If you installed Crimson Skies to an alternate folder, browse to that
+folder.
+4. In the Crimson Skies folder, right-click the SavedGames folder, and then
+   click Copy.
+
+5. Right-click a folder in which you want to back up the SavedGames folder, and
+   then click Paste.
+
+   For example, you may want to paste the folder in the My Documents folder, the
+   Desktop folder, or the "Documents and Settings" folder.
+
+To restore the saved games that you copy to another folder, copy the SavedGames
+folder from the location that you copied it to, back to the Crimson Skies
+folder.
+
+NOTE: When you copy the SavedGames folder back into the Crimson Skies folder, you
+overwrite all the files in the SavedGames folder and any missions that you saved
+after you copied the folder to the backup location.
+
+Additional query words: msgame crimsonskies
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

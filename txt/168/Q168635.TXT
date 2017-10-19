@@ -1,0 +1,100 @@
+DOCUMENT:Q168635  04-MAY-2001  [ssafe]
+TITLE   :INFO: Explanation of Diff_Ignore
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Diff_Ignore entry controls the factors that are considered or ignored when
+you use the Show Differences (File) command on the Tools menu.
+
+MORE INFORMATION
+================
+
+The Visual SourceSafe Show Differences (File) command is used to display all the
+relevant changes to a file. The Diff_Ignore variable defines what is a relevant
+change. You can control the following four issues in this variable:
+
+   C - case sensitivity
+   E - end-of-line characters
+   S - small differences* (See explanation of the "S" switch below)
+   W - white-space changes
+
+The arguments for the Diff_Ignore variable contain a list of these four letters
+with a dash after any variable that you don't want ignored. In the following
+example (also the default), E is the only letter that does not have a dash after
+it. As a result, end-of-line characters are the only items that will be ignored
+when two files are compared.
+
+The following example ignores end-of-line differences, and displays all others:
+
+   Diff_Ignore = c-es-w-
+
+If you change the Diff_Ignore variable, as in the following example, then any
+differences in white space would be ignored and any differences in the
+end-of-line characters would not be ignored.
+
+The following example ignores white space differences, and displays all others:
+
+   Diff_Ignore = c-e-s-w
+
+* Explanation of the "S" switch: The small differences switch "S" is misnamed.
+This option affects small similarities between files, not small differences.
+
+When you run a Show Differences (File) on two files, the diff algorithm tries to
+match up everything it can. Therefore, if you have two files with a lot of
+differences and a few similarities (both have some blank lines, or lines with
+curly braces only, etc.), performing a Show Difference (File) produces a diff
+file that shows a number of matching items amidst a larger set of differences.
+However, all you really have is a few random matches amidst a larger set of
+differences.
+
+Setting the Small Differences switch with a dash after it (Diff_Ignore=c-es- w)
+should cause the Show Differences (File) operation to ignore the spurious
+similarities between the files.
+
+The Small Differences switch doesn't really affect the output of the Show
+Differences (File) when you use the 'Visual' option, but it can make a huge
+difference when you are using the 'Unix' option.
+
+REFERENCES
+==========
+
+Visual SourceSafe Help: Diff_Ignore
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

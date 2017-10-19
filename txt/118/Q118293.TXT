@@ -1,0 +1,58 @@
+DOCUMENT:Q118293  24-MAY-2001  [homemm]
+TITLE   :MAC Encarta: Hang in MindMaze or Dictionary with CacheOut
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Encarta may stop responding (hang) if you are using the CacheOut control panel.
+This problem occurs when trying to open, run, or close MindMaze, the dictionary,
+animations, and the orbit simulator.
+
+This problem is due to a conflict between CacheOut and Encarta. For more
+information, refer to the Encarta 1994 readme file.
+
+RESOLUTION
+==========
+
+To avoid this problem, disable CacheOut before using Encarta.
+
+MORE INFORMATION
+================
+
+CacheOut is a control panel for 68040 Macintoshes that lets you select specific
+applications that have the 68040 cache enabled. If this control panel is
+installed and enabled, and the Background option is selected, Encarta may hang.
+
+Additional query words: 1994 multi media multimedia multi-media encarta mac lock crash up reboot mini app applications utility freeze lockup
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q191192  28-JUL-2001  [win95x]
+TITLE   :Cannot Change Password with DUN 1.2b and 128-Bit Encryption
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:kberrmsg dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a new account logs on using the Point-to-Point Tunneling protocol (PPTP) and
+the Change Password On First Logon option is enabled, the user is prompted to
+change the password. During the password change, however, error message -629 is
+generated and the PPTP connection is dropped.
+
+The following entry appears in the system log on the PPTP server:
+
+   Error 741: The local computer does not support the required encryption type.
+
+Note that this behavior occurs only if 128-bit encryption is being used.
+
+CAUSE
+=====
+
+This behavior occurs because the Dial-Up Networking (DUN) 1.2b client does not
+use the correct hashing to encrypt the password.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Dial-Up Networking
+1.2b client. To resolve this issue, upgrade to DUN 1.3.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

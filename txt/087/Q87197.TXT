@@ -1,0 +1,69 @@
+DOCUMENT:Q87197  15-NOV-1999  [pcmail]
+TITLE   :PROFS: Steps That Must Be Completed to Install PROFS Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The main steps involved in setting up and running the PROFS gateway are
+documented in the "Microsoft Mail Gateway to IBM PROFS and OfficeVision LAN
+Administrator's Guide."
+
+Follow these steps:
+
+1. Install the gateway on your LAN server.
+
+2. Specify the PROFS nodes with which you will communicate. (Optional)
+
+3. Specify the user IDs on those nodes with which you want to communicate.
+   (Optional)
+
+4. Specify the network(s) that will be indirect through the gateway (for
+   example, Hub mail). (Optional)
+
+5. Export your local postoffice user list. (Optional)
+
+6. Import user lists from the mainframe system. (Optional)
+
+7. Run the gateway program on the gateway PC to exchange mail with the
+   mainframe.
+
+REFERENCES
+==========
+
+"Microsoft Mail Gateway to IBM PROFS and OfficeVision LAN Administrator's
+Guide"
+
+
+Additional query words: 3.00 pcmail profslan
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q217906  25-OCT-2000  [winnt]
+TITLE   :Foreign Language Error Messages on Intranet Starter Site
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5, on platform(s):
+    - the hardware: DEC Alpha 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click "Submit a Helpdesk Ticket" or "Browse current help tickets" from
+the Intranet Starter Site, you may receive the following error message:
+
+   Fehler 'ASP 0113'
+   Zeitlimit fur Skript wurde erreicht
+
+   /inetkit/helpdesk/posthelp.asp
+
+   Das Zeitlimit zum Ausfuhren eines Skripts wurde uberschritten. Sie konnen das
+   Zeitlimit andern, indem Sie einen neuen Wert fur die Eigenschaft
+   Server.ScriptTimeOut festlegen oder den Wert fur ScriptTimeout im
+   Verwaltungsprogramm von IIS andern.
+
+CAUSE
+=====
+
+This issue can occur if you try to use these features with a localized (German
+language) version of BackOffice Server for the Alpha platform when you do not
+have a localized e-mail client that works on the Alpha platform.
+
+RESOLUTION
+==========
+
+To work around this issue, obtain and install a localized e-mail client that
+works on the Alpha platform, or use these features with the English language
+version of BackOffice Server.
+
+Additional query words: 4.50
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbui 
+Technology        : kbAudDeveloper kbBackOfficeSearch
+Version           : winnt:4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,81 @@
+DOCUMENT:Q185258  11-DEC-1999  [foxpro]
+TITLE   :PRB: Increment Decimal Value Works Incorrectly in Spinner
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbnokeyword
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The spinner control in Visual FoxPro 3.x and 5.x works incorrectly when the
+increment value is a decimal value.
+
+RESOLUTION
+==========
+
+Place the following code in the INIT event of the spinner control:
+
+      This.value = This.value * 1.00
+
+Multiplying the value by 1 with 2 decimal places is very crucial. Using the
+integer 1 without the 2 decimal places causes the value to increase incorrectly
+in a spinner control.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form.
+
+2. Add a spinner control to the form and name the control spinner1.
+
+3. Change the following properties for the spinner1 control:
+
+   InputMask = 999.99
+   Increment = .25
+
+4. Save and run the form.
+
+Use the mouse to click on the spinner's up arrow. After two clicks you are
+incremented to 1.00, then after four clicks to 2.00, and so on.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

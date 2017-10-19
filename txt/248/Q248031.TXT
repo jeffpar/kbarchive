@@ -1,0 +1,79 @@
+DOCUMENT:Q248031  31-JUL-2001  [iis]
+TITLE   :Err Msg: HTTP 403.17 - Forbidden: Client Certificate Has Expired
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp40317 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to an Internet Information Services (IIS) 5.0 computer, you may
+receive the following error message:
+
+   HTTP 403.17 - Forbidden: Client certificate has expired or is not yet valid
+   The page requires a valid client certificate
+
+CAUSE
+=====
+
+The page you are trying to view requires the use of a valid client certificate.
+Your client certificate has expired or is not yet valid. The client certificate
+is used for identifying you as a valid user of the resource.
+
+Generic 403 errors are returned when access to content has been forbidden. The
+server is refusing to fulfill the request for content. This is generally not
+related to NTFS permissions.
+
+RESOLUTION
+==========
+
+To resolve this, do the following:
+
+ - Check the Effective Date on the client certificate.
+
+ - Ensure that the certificate is valid.
+
+ - Check the Expiration Date on the client certificate.
+
+ - Ensure that the certificate has not expired.
+
+ - Verify that the Certificate Authority has not expired your certificate.
+
+ - Request a new certificate from the Certificate Authority.
+
+For additional information on requesting a new certificate, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q186812 Error: 403.7 Forbidden: Client Certificate Required
+
+Additional query words: IIS 5
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp40317 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

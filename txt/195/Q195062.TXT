@@ -1,0 +1,70 @@
+DOCUMENT:Q195062  25-JUL-2001  [homegame]
+TITLE   :MCM: Game Attempts to Read CD-ROM and Removable Media Drives
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhw kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Motocross Madness, the game may attempt to read from any
+CD-ROM drives, floppy drives, and other removable media drives installed in the
+computer when the following screens are displayed:
+
+ - The initial loading screen
+ - The Garage screen
+ - The Options screen
+
+This behavior can delay the game until Motocross Madness is finished attempting
+to read from these drives.
+
+CAUSE
+=====
+
+This behavior can occur because Motocross Madness searches for game files on all
+of the floppy disk drives, hard disks, and removable media drives installed in
+or connected to the computer. This process can take a long time if no game files
+are present on any of these devices. The process can take even more time if no
+valid media are inserted in any of the removable media or floppy disk drives.
+
+RESOLUTION
+==========
+
+To resolve this issue, insert the Motocross Madness CD-ROM into the CD-ROM drive
+when you play the game.
+
+If the issue continues to occur, insert a formatted disk in each removable media
+drive.
+
+
+Additional query words: 1.00 msgame motorcross motorcycle hangs slowing
+
+======================================================================
+Keywords          : kbhw kbimu msgame kbHardware 
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

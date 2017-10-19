@@ -1,0 +1,50 @@
+DOCUMENT:Q109615  30-OCT-1999  [pcmail]
+TITLE   :SMTP: Return-Receipt-To Field Is Nonstandard
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:2.1,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+The Microsoft Mail Gateway to SMTP receives messages from the SMTP world
+for delivery to Microsoft Mail users. Some incoming messages may specify a
+field in the RFC 822 headers called "Return Receipt To". This field is NOT
+a part of the standard (RFC 822), and is an innovation of some versions of
+the Sendmail program.
+
+Although this field is not part of the RFC, it is supported by the SMTP
+gateway.
+
+The Sendmail program is the mailer program commonly used on UNIX TCP/IP
+hosts. Other mailer programs include PMDF, and MMDF. Some mailer programs
+use "Rr" instead of the field name "Return Receipt To" to perform the
+same function.
+
+Additional query words: 2.10 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300 kbMailGateSMTP210
+Version           : MS-DOS:2.1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

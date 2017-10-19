@@ -1,0 +1,78 @@
+DOCUMENT:Q123657  27-JUL-2001  [odbc]
+TITLE   :BUG: 16-bit ODBC Driver Setup Fails Due to Missing ODBC32.DLL
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+2.00.1912
+
+WINDOWS
+
+kbbug2.00.1912 kbsetup
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# ADDON_BUGS: 10688 (2.00.1912)
+
+SYMPTOMS
+========
+
+On a machine with the components from Microsoft Windows 32-bit Software
+Development Kit (WIN32S) installed, the version 4.21a ODBC/SQL Server 16- bit
+driver installation will fail because the 32-bit Thunking Driver Manager is not
+present on the installation diskette but is indicated as one of the files to be
+installed in ODBC.INF. This needs to be included on the installation diskette
+for ODBC setup to properly complete.
+
+CAUSE
+=====
+
+The 32-bit Thunking Driver Manager needs to be included on the 4.21a ODBC
+installation diskette for ODBC setup to complete properly.
+
+WORKAROUND
+==========
+
+Obtain the 32-bit Thunking Driver Manager (ODBC32.DLL) from the ODBC Software
+Development Kit (SDK) version 2.01a available from the MSDN Level 2 CD and in
+the \ODBCSDK\REDIST6 directory of the installed SDK. Copy this ODBC32.DLL on to
+your installation diskette, and then run the ODBC installation again. This
+should allow the ODBC installation to complete.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC SQL Server driver
+version 2.00.1912, included with SQL Server version 4.21a. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+Additional query words: 4.21a 2.00.1912
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q121797  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus:  Standard Response Buttons Unavailable
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+ - Microsoft Mail for Windows, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a meeting request is received and the header of the message is incomplete or
+is missing, any or all of the standard response buttons listed in the [Custom
+Messages] section of the MSMAIL.INI file may not be complete.
+
+CAUSE
+=====
+
+When Schedule+ version 1.0 is installed, it writes the following lines into the
+[Custom Messages] section of the MSMAIL.INI:
+
+     IPM.Microsoft Schedule.MtgReq=3.0 ;;;;SchedMsg.DLL;;1111100000000000;;;;
+
+     IPM.Microsoft Schedule.MtgRespP=3.0;;;;SchedMsg.DLL;;1100100000000000;;;;
+
+     IPM.Microsoft Schedule.MtgRespN=3.0;;;;SchedMsg.DLL;;1100100000000000;;;;
+
+     IPM.Microsoft Schedule.MtgRespA=3.0;;;;SchedMsg.DLL;;1100100000000000;;;;
+
+     IPM.Microsoft Schedule.MtgCncl=3.0 ;;;;SchedMsg.DLL;;1100100000000000;;;;
+
+If these lines are not in the recipient's MSMAIL.INI file, the header information
+and the buttons will not be available. If the lines are in the MSMAIL.INI file
+and are later removed, any undeleted meeting request messages will still be
+present and uncorrupted, but the header information and buttons will be
+unavailable.
+
+RESOLUTION
+==========
+
+Check the MSMAIL.INI file on the recipient's computer. If the above lines are
+missing, add them to the MSMAIL.INI file. If this is unsuccessful, it is
+possible that the SCHEDMSG.DLL file in the Windows subdirectory has been
+corrupted.
+
+Additional query words: schedule plus 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbZNotKeyword3 kbSchedule100 kbMail320 kbMail320a
+Version           : WINDOWS:1.0,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

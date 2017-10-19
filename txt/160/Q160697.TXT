@@ -1,0 +1,80 @@
+DOCUMENT:Q160697  14-NOV-2000  [word97]
+TITLE   :WD97: Macro Name Truncated in Customize Dialog Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbmacro word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you view the Commands list in the Customize dialog box, the right-most
+characters in the command or macro names are truncated.
+
+NOTE: When you select a Word command instead of a macro, you can click the
+Description button to view the full command name. This option is not available
+when you select a macro.
+
+CAUSE
+=====
+
+This problem occurs when the command name or macro name that you select is so
+long that it is not fully visible in the Commands list.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Microsoft Word appends additional information to the macro name to better define
+the macro. For example, Word might append a macro called "InsertMergeFields"
+with "Normal.NewMacros." so that when it appears in the Commands list it
+resembles the following:
+
+   Normal.NewMacros.InsertMergeFields
+
+Or, Word might append a macro called "DoubleSpacingMacro" with
+"TemplateProject.NewMacros." so that when it appears in the Commands list it
+resembles the following:
+
+   TemplateProject.NewMacros.DoubleSpacingMacro
+
+The full macro name appears when you add the macro to a menu or a toolbar button.
+
+Additional query words: 8.0 word97 chopped clipped missing truncated gone incomplete wrong
+
+======================================================================
+Keywords          : kbmacro word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,67 @@
+DOCUMENT:Q239037  13-MAY-2000  [iis]
+TITLE   :Bandwidth Throttling May Not Appear to Function in Some Cases
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbInternet kbDSupport kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use bandwidth throttling in Internet Information Services (IIS) 5.0,
+although you are throttling to a very small amount of bandwidth, IIS may
+transfer a larger amount. This only occurs in some fringe cases.
+
+CAUSE
+=====
+
+The bandwidth throttler keeps a histogram that tracks transfers during the last
+six ten-second intervals. Bandwidth information is updated every ten seconds.
+When the measured bandwidth starts at zero, it stays there for the first ten
+seconds of activity.
+
+During that interval, a larger amount of bandwidth can be consumed. If you
+transfer large files, and have a low bandwidth limit, you will exceed the limit
+in one interval. At this point, the server blocks all transmissions for the next
+60 seconds, as the interval moves across the histogram. After 60 seconds, the
+interval, where all transmissions occurred, drops off the histogram. At this
+point, measured bandwidth is zero, and another 10 seconds of unrestricted
+transmission occurs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+5.0.
+
+Additional query words: IIS ntop IIS5 bandwidth throttling transfer
+
+======================================================================
+Keywords          : kbInternet kbDSupport kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

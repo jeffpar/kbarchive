@@ -1,0 +1,72 @@
+DOCUMENT:Q170118  04-MAY-2001  [visualc]
+TITLE   :PRB: "Couldn't Find Installable ISAM" with Excel 97 Data
+PRODUCT :Microsoft C Compiler
+PROD/VER::2000,5.0,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbDAOsearch kbDatabase kbExcel kbMFC kbOSWin2000 kbVC kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 5.0, 6.0, used with:
+    - the hardware: Intel x86 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to use the Excel 97 ISAM included with DAO 3.5, a DAO 3170 error
+occurs with the text "Couldn't find Installable ISAM". When using the MFC DAO
+classes with DB Tracing enabled, the error may look something like the following
+text:
+
+   
+
+   DAO Call Failed.
+   pDAOTableDefs->Append(m_pDAOTableDef)
+   In file daocore.cpp on line 2075
+   scode = 800A0C62
+
+   Error Code = 3170
+   Source = DAO.TableDef
+
+CAUSE
+=====
+
+The documentation from the DAO 3.5 SDK that comes with Visual C++ incorrectly
+shows the connect string information for Excel 97. The information for the
+Connect property shows that the connect string for Excel 97 is "Excel 97". This
+is not correct.
+
+RESOLUTION
+==========
+
+The correct string is "Excel 8.0".
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbDAOsearch kbDatabase kbExcel kbMFC kbOSWin2000 kbVC kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : :2000,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

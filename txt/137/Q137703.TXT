@@ -1,0 +1,54 @@
+DOCUMENT:Q137703  09-NOV-1999  [pcmail]
+TITLE   :PC WFW: WFWs MSMAIL.EXE Disables Retail Mail's Spell Checking
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you upgrade an existing Microsoft Windows for Workgroups postoffice (WGPO)
+to the retail version of Microsoft Mail for PC Networks, the MSMAIL.EXE file is
+modified to enable spell checking. If the original MSMAIL.EXE is restored or
+copied from another location, the spell check option be will disabled.
+
+
+MORE INFORMATION
+================
+
+When you lose the ability to spell check, check the MSMAIL.INI file entries and
+that the *.DLL files are installed.
+
+You may also want to ensure that the MSMAIL.EXE file was not unintentionally
+copied or restored from a location other than the updated \MAILEXE directory.
+
+Additional query words: 3.00 3.20 3.50 3.x wfw client spelling
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN350
+Version           : WINDOWS:3.0,3.2,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

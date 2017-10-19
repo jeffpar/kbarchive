@@ -1,0 +1,74 @@
+DOCUMENT:Q135185  17-DEC-2000  [win95x]
+TITLE   :Cannot View NetWare Server Files with Arcada Backup Exec 3.58
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Backup Exec Windows Workstation Edition 3.58 by Arcada
+Software on a computer running the Microsoft Client for NetWare Networks to
+browse a NetWare server, you may not be able to view files that exist in
+directories that also contain subdirectories.
+
+If you select such a directory for backing up, the files in the directory are
+backed up correctly, but you receive an error message for each file in the
+directory.
+
+You can view files in directories that contain no subdirectories normally.
+
+CAUSE
+=====
+
+This problem occurs because of differences between the Microsoft Client for
+NetWare Networks and the Novell NETX and VLM clients. Backup Exec relies on
+behavior that is changed under the new client redirector.
+
+RESOLUTION
+==========
+
+To view files in directories that contain subdirectories using Backup Exec, use
+Novell's NETX or VLM client instead of the Microsoft Client for NetWare
+Networks.
+
+You may want to contact Arcada Software to inquire about possible updates to the
+Backup Exec program.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

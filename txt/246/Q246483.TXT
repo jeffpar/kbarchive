@@ -1,0 +1,75 @@
+DOCUMENT:Q246483  08-AUG-2001  [winnt]
+TITLE   :Installation Unsuccessful for 3Com 3C575-TX CardBus Network Card
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install a 3Com 3C575-TX network adapter, the installation
+may stop, and you may receive this error message:
+
+   Missing Oemnt.inf or Oemsetup.inf file
+
+CAUSE
+=====
+
+This behavior can occur if you try to install a 3Com 3C575-TX network adapter on
+a computer running Microsoft Windows NT 4.0.
+
+You can install this 3Com network adapter only on a computer that supports the
+CardBus specification. The CardBus specification implements a 32-bit
+architecture and allows operation at speeds up to 33 MHz. This specification
+requires drivers beyond the scope of the PC Card 2.1 specifications that Windows
+NT 4.0 supports.
+
+RESOLUTION
+==========
+
+To work around this issue, install the 3Com 3C574-TX network adapter.
+
+MORE INFORMATION
+================
+
+For additional information and support for 3Com network adapters, visit the
+following 3Com web site:
+
+   http://support.3com.com
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: setup cardbus pccard
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

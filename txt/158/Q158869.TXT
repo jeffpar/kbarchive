@@ -1,0 +1,53 @@
+DOCUMENT:Q158869  28-JUL-2001  [win95x]
+TITLE   :ScanDisk May Not Fix the Media Descriptor Byte
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1,6.22
+OPER/SYS:
+KEYWORDS:osr2 diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+ - Microsoft Windows 95 
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ScanDisk may not fix the media descriptor byte when it says that it will.
+
+MORE INFORMATION
+================
+
+
+There are two structures that are labeled "media descriptor." One is located in
+the boot sector and the other is located in the FAT entry for cluster 0.
+ScanDisk and ScanDisk for Windows check only the media descriptor located in the
+FAT entry, not the media descriptor located in the boot sector.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : osr2 diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR210 kbMSDOSSearch kbMSDOS622
+Version           : :2,2.1,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

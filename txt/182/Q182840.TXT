@@ -1,0 +1,87 @@
+DOCUMENT:Q182840  09-AUG-2001  [winnt]
+TITLE   :Net Localgroup Access Violates
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you issue the following net command from a Windows NT MS-DOS command
+prompt, "NET LOCALGROUP", the computer will display the following Dr. Watson
+error message:
+
+   An application error has occurred
+   and an application error log is being generated.
+
+   NET1.exe
+   Exception: access violation (0xc00000005), Address: 0x7780158b
+
+**Note that the address reported may differ from the one above.
+
+The net localgroup command is designed to display a list of local groups on the
+computer that you are running the command against.
+
+CAUSE
+=====
+
+This is caused by having more than 500 local groups defined in the security
+account manager (SAM) database of the target computer, whether that is the
+primary domain controller (PDC) or a member server or workstation.
+
+RESOLUTION
+==========
+
+As a workaround, if a list needs to be generated of all the local groups that
+are defined in the SAM database, the Windows NT Server Resource Kit utility,
+Addusers.exe will accomplish this. Addusers.exe has been tested and confirmed to
+be a suitable workaround for this issue. For more information on the Addusers
+utility, see the documentation in the Resource Kit or use the /? switch on the
+command line, (that is, addusers.exe /?).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+
+
+Additional query words: drwtsn32.log user.dmp debug
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : ALPHA MIPS x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

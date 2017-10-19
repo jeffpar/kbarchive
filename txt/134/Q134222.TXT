@@ -1,0 +1,56 @@
+DOCUMENT:Q134222  17-DEC-2000  [win95x]
+TITLE   :No Warning Deleting .Exe or .Com Files from Recycle Bin
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you empty the Recycle Bin, you are not prompted for confirmation before
+files with .exe or .com extensions are removed. You are prompted for
+confirmation before other types of files are removed.
+
+When you empty the Recycle Bin, and only one file with a .exe or .com extension
+is in the wastebasket, you are not prompted for confirmation before the file is
+removed; however, if more than one file with a .exe or .com extension exists,
+you are prompted. You are prompted for confirmation before other types of files
+are removed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95.
+
+This issue does not occur in Microsoft Windows 98.
+
+Additional query words: del dataloss
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

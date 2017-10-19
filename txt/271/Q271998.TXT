@@ -1,0 +1,81 @@
+DOCUMENT:Q271998  30-JUL-2001  [winnt]
+TITLE   :DOM:Event 5718 on the BDC
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+During replication between the Primary Domain Controller (PDC) and Backup Domain
+Controllers (BDCs), Event Viewer may record the following error message:
+
+   Event ID: 5718
+   Description: Full synchronization of xxx database for the Domain Controller
+   \\(server name) failed
+
+CAUSE
+=====
+
+This behavior can occur when the Netlogon.chg file or the Security Accounts
+Manager (SAM) has become corrupt on the BDC.
+
+RESOLUTION
+==========
+
+To resolve this behavior, reset the Netlogon.chg file by deleting it and
+restarting the system. If necessary, also obtain a fresh copy of the Security
+Accounts Manager from the PDC.
+
+MORE INFORMATION
+================
+
+To delete (reset) Netlogon.chg on an NTFS file system partition from the BDC,
+use the following steps:
+
+1. Set the permissions so that the %SystemRoot%\Netlogon.chg file has No Access
+   for the System account.
+
+2. Restart the computer, and then delete the file.
+
+3. Restart the computer again. The system recreates the file at startup.
+
+To delete (reset) Netlogon.chg on a file allocation table (FAT) partition, use
+the following steps:
+
+1. Start the computer, using MS-DOS, and then delete the
+   %SystemRoot%\Netlogon.chg file.
+
+2. Restart the computer, using Windows NT. The system recreates the file at
+   startup.
+
+For more information, refer to the following articles in the Microsoft Knowledge
+Base:
+
+   Q190449 Corrupted SAM Hangs Windows NT Server
+
+   Q173882 Netlogon Synchronization Errors
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

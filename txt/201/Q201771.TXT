@@ -1,0 +1,85 @@
+DOCUMENT:Q201771  29-OCT-2001  [iis]
+TITLE   :How To Set Up an FTP Site So That Users Log Onto Their Folders
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbhowto kbiis400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to set up an FTP site so that when users log on with
+their user name and password, they are logged onto their respective subfolders
+by default. Although they can navigate to the root folder, they cannot see the
+contents of the other users folders.
+
+When anonymous users view the FTP site, they can only view the contents of the
+root folder. Although they will see the names of the users' subfolders, however,
+they cannot examine their contents.
+
+MORE INFORMATION
+================
+
+To set up the FTP site, perform the following:
+
+1. In User Manager, create a user account for each of your users.
+
+   NOTE: These users need to have the local log on permission. By default, new
+   users belong to the built-in Users group, which has local log on permission.
+
+2. Using the Windows NT Explorer, on a partition formatted with NTFS, give the
+   FTP site's root folder the following security access types:
+
+    - Administrators: Full Control
+    - Everyone: Read
+    - System: Read
+
+3. Create a subfolder for each user. (These subfolders will inherit the root
+   folder's security settings). Make the following security changes:
+
+    - Remove the Everyone group.
+    - Change the System account's folder's access to Full Control (instead of
+      Read).
+    - Add the user who will use that folder, and give that user Full Control
+      access.
+
+   For additional information, please see the following article(s) in the
+   Microsoft Knowledge Base:
+
+   Q240727 Overview of How to Use the FTP Utility in a Typical Session
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: vdir directory virtual howto kbhowto username pw pass word personal private individual akz
+
+======================================================================
+Keywords          : kbhowto kbiis400 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

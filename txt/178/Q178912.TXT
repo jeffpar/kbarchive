@@ -1,0 +1,73 @@
+DOCUMENT:Q178912  07-MAY-2002  [homegame]
+TITLE   :FS98: Cannot Resize Radio Stack in Boeing 737-400
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbgraphic fsim fs98 kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you resize the radio stack panel for the Boeing 737-400 in Flight Simulator
+98 to increase its width, you may be unable to further resize the radio stack
+panel.
+
+CAUSE
+=====
+
+This behavior can occur if you stretch the width of the the radio stack panel to
+478 pixels or more.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps to reset the size of the radio stack
+panel:
+
+1. On the Aircraft menu, click Select Aircraft.
+
+2. In the Aircraft box, click a different aircraft, and then click OK.
+
+3. On the Aircraft menu, click Select Aircraft.
+
+4. In the Aircraft box, click Boeing 737-400, and then click OK.
+
+5. On the aircraft control panel, click the Master Avionics Switch to display
+   the radio stack panel in its original size.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Flight Simulator 98.
+
+Additional query words: fs98 flightsim fltsim flt sim msgame
+
+======================================================================
+Keywords          : kbgraphic fsim fs98 kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,77 @@
+DOCUMENT:Q166441  05-MAY-1999  [iis]
+TITLE   :HOWTO: Getting IIS to work with Informix ODBC
+PRODUCT :Internet Information Server
+PROD/VER:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes some registry changes that need to be made to get
+Informix CLI 32 ODBC drivers to work with Windows NT 4.0 and Internet
+Information Server (IIS).
+
+MORE INFORMATION
+================
+
+WARNING: Using the Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+The Informix drivers install only under the current user name of the person that
+is logged on to the system. In order to get general access to the drivers for
+all users, the registry entries that Informix installed under the logged on
+user's account must be copied to the generic users area. Here's how to do this:
+
+1. Using Regedit, search the registry for the word "INFORMIXSERVER" (without the
+   quotes).
+
+2. This value and several others resides in a key called "ENVIRONMENT," which is
+   a subkey of "INFORMIX."
+
+3. Make a note of all of the values in the key and what they are equal to.
+
+4. Go to HKEY_USERS\DEFAULT\Software and create a new key called "INFORMIX"
+   (without the quotes).
+
+5. Create a key under that called "ENVIRONMENT" (without the quotes).
+
+6. Create each of the values and assign them the appropriate information, so
+   that the new key looks identical to the old key.
+
+Restart the server for the changes to take effect.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft. We make no warranty, implied or otherwise, regarding performance
+or reliability of these products.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis300
+Version           : 3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

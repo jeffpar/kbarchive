@@ -1,0 +1,66 @@
+DOCUMENT:Q234220  10-AUG-2001  [crossnet]
+TITLE   :Cannot Dual Boot Windows 95/98 and Windows NT on HP 6330
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:win95 win98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT in a dual-boot configuration on a Hewlett-Packard
+(HP) Pavilion 6330, selecting "Previous operating system" or "Windows" on the
+Windows NT Boot menu may cause the computer to stop responding (hang).
+
+Using the SYS command to restore Windows 95/98 boot functionality and then using
+the Windows NT boot disks to restore dual booting does not resolve the issue.
+
+CAUSE
+=====
+
+This behavior can occur if your HP 6330 computer uses an older BIOS version.
+BIOS version 1.05 is confirmed to cause this issue.
+
+RESOLUTION
+==========
+
+To resolve this issue, upgrade the computer's BIOS. BIOS version 1.08 dated
+11/18/98 has been tested and resolves this issue.
+
+To obtain information about updating your computer's BIOS, please contact
+Hewlett-Packard.
+
+
+
+Additional query words: pavilion ntldr multi
+
+======================================================================
+Keywords          : win95 win98 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

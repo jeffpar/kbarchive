@@ -1,0 +1,108 @@
+DOCUMENT:Q231953  10-AUG-2001  [winnt]
+TITLE   :How to Restrict Permissions for Telnet Users w/Services for UNIX
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, used with:
+    - Microsoft Windows NT Services for UNIX Add-On Pack 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to restrict permissions for Telnet users with
+Services for UNIX Telnet Server.
+
+MORE INFORMATION
+================
+
+Telnet allows users to gain access to resources on your Telnet servers. It is
+important to review your security policy and implement appropriate protection.
+
+NOTE: Microsoft recommends using the NTFS file system when you use Telnet with
+Services for UNIX. The file allocation table (FAT) file system provides no
+file-level security and may present serious security risks.
+
+To restrict permissions to certain files or folders:
+
+1. Create a local group and name it TelnetUsers.
+
+2. Give the TelnetUsers group No Access permissions for all files and folders on
+   drives C and F. (The Windows NT folder (%SystemRoot%) is located on drive C,
+   and the TelnetUsers Home folders are located on drive F.)
+
+3. Give the TelnetUsers group Read and Add permissions to the %SystemRoot%
+   folder. Set these permissions only to the folder, not to any files or
+   subfolders.
+
+4. Give the TelnetUsers group Read permissions to the following files in the
+   %SystemRoot%\System32 folder:
+
+    - Rpcltc1.dll
+
+    - Cmd.exe
+
+    - Expand.exe
+
+    - Help.exe
+
+    - Pax.exe
+
+    - More.exe
+
+    - Ntlanman.dll
+
+5. Give the TelnetUsers group List permissions to the %SystemRoot%\System32
+   folder.
+
+6. For each user in the TelnetUsers group, specify a home folder of
+   F:\Home\%Username%. Give each individual Full Control to his or her own
+   folder and remove permissions for anyone else.
+
+7. Assign the TelnetUsers group List permissions to drive F.
+
+8. Connect to the Telnet server as a user to ensure everything functions
+   properly. Run Cmd.exe from the shell prompt and see if you can change
+   directories to the F:\Home folder or above. Change to the C drive and try to
+   delete anything or read anything to which you do not explicitly have
+   permissions.
+
+If you need to track the files your users are touching or if you receive error
+messages after using the previously outlined steps, enable Security Auditing
+through "User Manager/Policies/Audit/File and Object Access both success and
+failure."
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q157238 How to Activate Security Event Logging in Windows NT 4.0
+
+Additional query words: telnetd SFU
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

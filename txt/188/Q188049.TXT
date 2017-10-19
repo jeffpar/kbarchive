@@ -1,0 +1,85 @@
+DOCUMENT:Q188049  31-JUL-2001  [sms]
+TITLE   :SMS: Acctchg.exe Syntax and Description
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsmsUtil smsutil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Account Changer utility (Acctchg.exe) changes the information that Systems
+Management Server services use to access the SQL Server database. Acctchg.exe,
+included in the BackOffice Resource Kit, affects only the services on the
+specified site server. Account Changer does not make any changes to SQL Server
+itself; this must be done manually while running Account Changer.
+
+MORE INFORMATION
+================
+
+To change the Systems Management Server account information, perform the
+following steps:
+
+1. Run Acctchg.exe and specify a site server. ACCTCHG shuts down that site and
+   waits.
+
+2. Use SQL Server tools to make whatever changes you need. For example, change
+   the SQL Server account and password, rename the Systems Management Server
+   database, or move the database to another SQL Server computer.
+
+3. Resume ACCTCHG by returning focus to the window that is running ACCTCHG and
+   press any key.
+
+4. ACCTCHG prompts you for the following information to be used from now on by
+   the Systems Management Server services in the specified site:
+
+    - SQL Server name
+
+    - SQL Server database name
+
+    - SQL Server account
+
+    - SQL Server password
+
+5. ACCTCHG restarts the site.
+
+Acctchg.exe runs on: Alpha, MIPS, x86.
+
+Syntax
+------
+
+      acctchg  site_server  [/v]
+      site_server - The name of the site server whose Systems Management
+      Server services will be affected.
+      /v - Verbose mode. More output is displayed on the screen.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsmsUtil smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

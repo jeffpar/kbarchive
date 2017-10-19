@@ -1,0 +1,59 @@
+DOCUMENT:Q237723  25-JUL-2001  [homegame]
+TITLE   :NFL Fever 2000: Poor Graphics Performance with ATI Rage IIc AGP
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbhw kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft NFL Fever 2000, you may experience poor graphics
+performance and a slow video frame rate in the game.
+
+CAUSE
+=====
+
+This behavior can occur if an ATI Rage IIc AGP video adapter is installed in
+your computer.
+
+MORE INFORMATION
+================
+
+Microsoft recommends that you do not run NFL Fever 2000 if an ATI Rage IIc AGP
+video adapter is installed in your computer.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 nflfever nfl2k football degraded slow sluggish
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbhw kbimu msgame kbHardware 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

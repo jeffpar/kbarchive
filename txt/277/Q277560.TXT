@@ -1,0 +1,76 @@
+DOCUMENT:Q277560  05-NOV-2000  [iis]
+TITLE   :Queries on the Contents Property Do Not return Hits for MSG File
+PRODUCT :Internet Information Server
+PROD/VER::2000,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Indexing Service 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you index .msg files by using Indexing Service and query the files by using
+the contents property, you may not receive any hits in the result.
+
+CAUSE
+=====
+
+MSG files are binary files, which are associated with the binary Null IFilter in
+Indexing Service. The Null IFilter is not able to extract the textual
+information out of the .msg file. As a result, you do not get any results if you
+query the contents property.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In Windows NT Server 4.0, .msg files are processed by default with the Default
+IFilter if the Filter Files with unknown extensions option is configured in
+Index Server 2.0.
+
+The Default IFilter extracts textual contents out of the .msg files. In this
+case, you get .msg files in your query results.
+
+For Indexing Service, Microsoft recommends that you write a custom IFilter for
+.msg files. To do this, refer to the following section in the MSDN Library:
+
+   Platform SDK\Base Services\Indexing Service\Using Custom Filters with
+   Indexing Service
+
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbiisSearch kbIdxServSearch kbAudDeveloper kbiis500 kbIdxServ100
+Version           : :2000,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

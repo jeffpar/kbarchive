@@ -1,0 +1,73 @@
+DOCUMENT:Q145952  14-FEB-2002  [winnt]
+TITLE   :Event ID 26 Appears If Large File Transfer Fails
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to transfer large amounts of data or install a disk I/O
+intensive application through the network, the following system event appears in
+the Event Viewer:
+
+   Event ID: 26
+   Description: System Process - Lost Delayed-Write Data : The system was
+   attempting to transfer file data from buffers to <file path>.
+
+CAUSE
+=====
+
+This problem occurs due to a defective network hardware, such as a hub or cable.
+
+RESOLUTION
+==========
+
+To troubleshoot this behavior:
+
+1. Copy another file through the network (preferably between two computers in
+   close proximity) and check the Event Viewer.
+
+2. Connect the two computers to the same hub. Copy the file again.
+
+3. If you have enough hard disk space, install the disk I/O intensive
+   application directly on the Windows NT Server, instead of over the network.
+
+4. Disable any "filter" drivers, such as quota management, anti-virus, or
+   open-file software.
+
+If Event ID 26 appears again in step 1 and the file transfer fails in step 2 and
+the installation in step 3 completes successfully, replace the hub and cable,
+and repeat the steps above.
+
+
+Additional query words: tp
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

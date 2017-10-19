@@ -1,0 +1,402 @@
+DOCUMENT:Q172180  14-NOV-2000  [word97]
+TITLE   :WD97: General Information About Headers and Footers
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97 kblayout
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes information about headers or footers. It addresses what
+headers and footers are, how they affect margin settings, how to position them,
+how to create them, and what different types of headers and footers exist.
+
+MORE INFORMATION
+================
+
+What Are Headers and Footers?
+-----------------------------
+
+A header or footer is text or graphics that is usually printed at the top or
+bottom of every page in a document. A header is printed in the top margin; a
+footer is printed in the bottom margin.
+
+Headers and footers can be as simple as the document title and a page number, but
+you can create headers and footers that contain graphics, multiple paragraphs,
+and fields. You can specify a different header or footer for odd and even pages
+or use a different header or footer for the first page of a section or document.
+If you divide a document into sections, you can use different headers and
+footers in each section. For example, you might want the header for each section
+to reflect the title of that section.
+
+Adding or Removing Headers and Footers
+--------------------------------------
+
+To create a header or footer, follow these steps:
+
+1. On the View menu, click Header and Footer. Word displays the Header and
+   Footer toolbar and switches to page layout view.
+
+2. To switch between the header and footer, click the "Switch Between Header and
+   Footer" icon on the Header and Footer toolbar.
+
+A non-printing dashed line encloses the header and footer areas. Text and
+graphics in the document are visible but dimmed. To display or hide the document
+text, click the Show/Hide Document Text icon on the Header and Footer toolbar.
+
+You can type and format text in the header or footer area the same way you do in
+the main document. After you have created your header or footer, click Close on
+the Header and Footer toolbar to return to the main part of the document. In
+page layout view, the headers and footers are visible but appear dimmed.
+
+To edit an existing header or footer, either click Header and Footer on the View
+menu, or in page layout view, double-click a dimmed header or footer to switch
+quickly to the header or footer.
+
+To delete a header or footer, follow these steps:
+
+1. Position the insertion point somewhere in the main text area of the document.
+
+2. On the View menu, click Header and Footer.
+
+3. Select the header or footer information you want to delete, and then press
+   DELETE or BACKSPACE on the keyboard.
+
+4. To return to the document, click Close on the Header and Footer toolbar, or
+   double-click in the main text area of the document.
+
+How Headers and Footers Affect Margin Settings
+----------------------------------------------
+
+Word prints headers and footers in the top and bottom margins. If the header or
+footer is too large to fit in the margin, Word adjusts the top and bottom margin
+to accommodate the header or footer. That is, if the header or footer becomes
+too large to fit in the margin, it will start expanding downward (for the
+header) and upward (for the footer), reducing the amount of document text that
+can be displayed in the document window.
+
+To prevent Word from moving the main document text (downward or upward) when the
+header or footer gets too large to fit in the margin, follow these steps:
+
+1. On the File menu, click Page Setup.
+
+2. Click the Margins tab.
+
+3. Type a hyphen (-) before the Top or Bottom margin setting.
+
+NOTE: If the header or footer is too large, it may overwrite (superimpose) the
+main document text.
+
+Positioning Headers and Footers
+-------------------------------
+
+You may want to change the position of headers and footers. You can change the
+horizontal position by doing the following:
+
+ - Center the header or footer between the left and right margins.
+
+ - Align it with the left or right margin.
+
+ - Run the header or footer text into the left or right margin.
+
+The header and footer areas have two preset tab stops: centered between the
+default left and right margins (3 inches), and right-aligned at the default
+right margin (6 inches). These tab stops make it easy to center a chapter title
+or place the page number flush with the right margin. If you change the margins,
+you may want to adjust these tab stops.
+
+To adjust the horizontal position of information inside a header or footer,
+follow these steps:
+
+1. On the View menu, click Header and Footer.
+
+2. On the Header and Footer toolbar, click the Show Next and Show Previous
+   buttons to find the header or footer that you want to adjust.
+
+3. To position the header or footer, do one or more of the following:
+
+    - To create left-aligned text in a header or footer, type the text. The
+      starting position for the insertion point is left-aligned with the left
+      margin of the document.
+
+    - To create center-aligned text in a header or footer, press the TAB key
+      once to advance the insertion point to the center-aligned tab and type the
+      text. The text you type will be centered on the tab.
+
+    - To create right-aligned text in a header or footer, press the TAB key one
+      more time to advance the insertion point to the right-aligned tab and type
+      the text.
+
+    - To create a header or footer that runs into the left or right margins, you
+      can set negative indents as follows:
+
+      a. On the Format menu, click Paragraph.
+
+      b. Click the Indents and Spacing tab.
+
+      c. Type a negative number for the left and/or right indentation. For
+         example, if you want the left-aligned text in the header to start 0.5
+         inches into the left margin, type "-.5" (without the quotation marks)
+         for the left indentation. A negative left indentation moves text into
+         the left margin, and a negative right indentation moves text to the
+         right, into the right margin.
+
+    - To make additional adjustments to the alignment, use the alignment buttons
+      on the Formatting toolbar, set different tab stops on the ruler, or drag
+      the indent markers on the ruler.
+
+You can change the vertical position by adjusting the header or footer starting
+distance from the top or bottom edge of the page. You can also adjust the amount
+of space between the header or footer and the text in the main document. To
+perform these adjustments, follow these steps:
+
+1. Position the insertion point in the specific area in the document that
+   contains the header or footer that you want to adjust.
+
+2. On the File menu, click Page Setup and then click the Margins tab.
+
+    - To change the distance from the edge of page to the header or footer,
+      change the From Edge setting. The default setting is 0.5 inch. Increasing
+      the setting moves the entire header or footer closer to the center of the
+      document. Decreasing the setting moves the entire header or footer closer
+      to the edge of the page.
+
+    - To change the distance between the document text and a header or footer,
+      change the Top and Bottom margin settings. Increasing the top margin moves
+      the document text farther down on the page and leaves the header in the
+      same location. Decreasing the top margin moves the text of the document
+      father up on the page and leaves the header in the same location. The same
+      is true for the bottom margin and the footer.
+
+3. To return to the document, click OK.
+
+Different Types of Headers and Footers
+--------------------------------------
+
+First Page Headers and Footers::
+
+To create a different header or footer for the first page of a document or
+section, follow these steps:
+
+1. Position the insertion point on the first page of the document or section,
+   and then click Header and Footer on the View menu.
+
+2. On the Header and Footer toolbar, click Page Setup.
+
+3. Click the Layout tab.
+
+4. Under Headers and footers, select the Different first page check box, and
+   then click OK.
+
+5. If necessary, click Show Next or Show Previous to move to the first page
+   header or first page footer in the document or section. The words "First Page
+   Header" or "First Page Footer" appear in the upper left of the dotted Header
+   or Footer box.
+
+6. Create the header or footer you want to appear on the first page. If you do
+   not want a header or footer to appear on the first page, leave the header or
+   footer area blank.
+
+7. Click Show Next to move to the (non-first page) header or footer in the
+   document or section. The word "Header" or "Footer" appears in the upper left
+   of the dotted Header or Footer box.
+
+8. Create the header or footer that you want to appear in the rest of the
+   document or section. If you do not want a header or footer to appear in the
+   rest of the document or section, leave the header or footer area blank.
+
+9. To return to the document, click Close on the Header and Footer toolbar.
+
+Odd and Even Headers and Footers::
+
+To create different headers and footers on odd and even pages, follow these
+steps:
+
+1. On the View menu, click Header and Footer.
+
+2. On the Header and Footer toolbar, click Page Setup.
+
+3. Click the Layout tab.
+
+4. Under Headers and footers, select the Different odd and even check box, and
+   click OK. Word applies the option to the entire document.
+
+5. If necessary, click Show Next or Show Previous to move to an even page header
+   or footer. The words "Even Page Header" appear in the upper left of the
+   dotted Header or Footer box.
+
+6. Create the header or footer that you want to appear in the even pages of the
+   document or section. If you do not want a header or footer to appear in the
+   even pages of the document or section, leave the header or footer area blank.
+
+7. Click Show Next or Show Previous to move to an odd header or footer. The
+   words "Odd Page Header" appear in the upper left of the dotted Header or
+   Footer box.
+
+8. Create the header or footer that you want to appear in the odd pages of the
+   document or section. If you do not want a header or footer to appear in the
+   odd pages of the document or section, leave the header or footer area blank.
+
+9. To return to the document, click Close on the Header and Footer toolbar.
+
+For additional information about setting up different headers and footers for
+even or odd pages in Microsoft Word, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q88404 WD: Setting Up Different First Header/Footer for Even/Odd Pages
+
+Different Headers and Footers for Sections of a Document
+--------------------------------------------------------
+
+When you divide a document into sections, Word uses the headers and footers in
+the first section as the default for every subsequent section. All headers in
+the document and all footers in the document are initially connected so that
+their contents are identical. If you change the header in the third section of
+the document, for example, Word changes all headers in the entire document to
+match. When headers and footers in the section that contains the insertion point
+are connected to the previous section, the Same As Previous button on the Header
+and Footer toolbar is pushed in, and the words "Same As Previous" appear in the
+upper right of the dotted Header or Footer box.
+
+If you want to create a different header or footer in one section, you must break
+the connection with the preceding header or footer by clicking the Same As
+Previous button on the Header and Footer toolbar. Word then uses the header or
+footer you create in the current section for all subsequent sections. If you
+decide that you want to re-establish the connection between the header or footer
+in the current section and the preceding headers or footers, click the Same As
+Previous button again. Word replaces the information contained in the current
+header or footer with the information in the previous header or footer.
+
+Headers and footers from one section are automatically connected to headers and
+footers from the previous section until you click the Same As Previous button on
+the Header and Footer toolbar to turn the setting off. For example, headers are
+connected to only the type of header called Header; they are not connected to
+the type of header called First Page Header. First Page Header is connected only
+to First Page Header.
+
+The following are the different types of connections between headers and footers
+in a document:
+
+ - Headers are connected to Headers.
+
+ - Footers are connected to Footers.
+
+ - First Page Headers are connected to First Page Headers.
+
+ - First Page Footers are connected to First Page Footers.
+
+ - Odd Headers are connected to Odd Headers.
+
+ - Odd Footers are connected to Odd Footers.
+
+ - Even Headers are connected to Even Headers.
+
+ - Even Footers are connected to Even Footers.
+
+For additional information about how to add section breaks in Microsoft Word,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q195331 WD97: General Information About Section Breaks
+
+To create a different header or footer for each section in a document, follow
+these steps:
+
+1. Position the insertion point in the section with the header or footer that
+   you want to change (disconnect from the previous header or footer).
+
+2. On the View menu, click Header and Footer.
+
+3. Click Same As Previous on the Header and Footer toolbar to disconnect headers
+   and footers in the current section from the previous section. The words "Same
+   As Previous" disappear from the upper-right corner of the Header or Footer
+   box.
+
+4. Create the header and footer that you want for the current section.
+
+   NOTE: Word also inserts the header and footer in all sections following the
+   current one. To create a different header or footer in the following
+   sections, repeat steps 3 through 4 in each section.
+
+5. To return to the document, click Close on the Header and Footer toolbar.
+
+To reconnect a header or footer with the preceding header or footer, follow these
+steps:
+
+1. Position the insertion point in the section with the header or footer that
+   you want to connect to the preceding header or footer.
+
+2. On the View menu, click Header and Footer.
+
+3. On the Header and Footer toolbar, click Same As previous.
+
+   NOTE: When Word asks you to confirm that you want to delete the current header
+   or footer and connect to the preceding header or footer, click Yes. The
+   preceding header or footer is repeated in the current section.
+
+4. To return to the document, click Close on the Header and Footer toolbar.
+
+For additional information about how to create templates with different types of
+headers or footers in Microsoft Word, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q197214 WD97: Creating Template with First Page or Odd/Even Header/Footer
+
+For more information about headers and footers, click the Office Assistant, type
+"header" (without the quotation marks), click Search, and then click to view
+"Headers and footers."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+REFERENCES
+==========
+
+For additional information about headers and footers, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q85392 WD: Blank Page After Odd Page or Even Page Section Break
+
+   Q196951 WD97: Using Headers and Footers with Master Documents
+
+   Q68618 No Header or Footer on Even Page
+
+   Q88404 WD: Setting Up Different First Header/Footer for Even/Odd Pages
+
+   Q159678 WD97: Incorrect SectionPages or NumPages When Printed
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

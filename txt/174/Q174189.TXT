@@ -1,0 +1,404 @@
+DOCUMENT:Q174189  05-FEB-2000  [exchange]
+TITLE   :XGEN: List of Bugs Fixed in Exchange Server 4.0 SP 3, 4, 5
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is a current listing of the article numbers for bugs that are fixed
+in Microsoft Exchange Server version 4.0 Service Pack 5. Use the Qxxxxxx number
+that precedes the title of the bug fix to query the Microsoft Knowledge Base to
+find an article about that bug.
+
+MORE INFORMATION
+================
+
+Exchange Server 4.0 Service Pack 5 is a cumulative build of all fixes to
+Microsoft Exchange Server version 4.0. The bug fixes in this article are listed
+according to the Exchange Server 4.0 service pack in which they were first
+included.
+
+Service Pack 5
+--------------
+
+   Q145976: XCON: GWART Is Incorrect Due to Latency in Directory Replication
+   Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang
+   Q146143: XCON: DeferredDeliveryTime Echoed Within DeliveryReportEnvelope
+   Q146681: XFOR: DXA Improperly Appending 001 to Friendly Names in the GAL
+   Q146929: XCON: ORName Not Included in Reported IPMessageId
+   Q146993: XFOR: Quoted-Printable Encoded Messages Stay in IMC
+   Q147454: XFOR: PC MTA Message Tracking Does Not Log Message Size
+   Q149387: XFOR: MSMI Terminating with Memory Access Violation, Event ID 23
+   Q151249: XFOR: Contents of Attachments Swapped via MS Mail Connector
+   Q151373: XCON: DBCS Chars in Subject of Embedded Message not Converted
+   Q151395: XCON: MTA Terminates After Receiving Mail from Zoomit Gateway
+   Q151413: XCON: ContentReturn Requested by Default
+   Q151417: XCON: Latin-1 X.400 Bodypart Encoding Causes NDR
+   Q151431: XFOR: MSMI Stops Without Error
+   Q151473: XFOR: MSMI Crashes Starting a New Thread, Reads a Null Pointer
+   Q151669: XFOR: MSMI Stops Processing Mail
+   Q151700: XADM: 4.0 Proxy Address Generator and Scandinavian Characters
+   Q151782: XFOR: Dirsync Modifies Causing Names to Disappear from Exchange
+   Q151785: XCON: MTA Queue Blocked by NDR or Delivery Receipts
+   Q151788: XADM: "Reps-From" USN Too High for One Server
+   Q151791: XFOR: MSMI Stops Processing When Submitting Bad Address
+   Q151978: XADM: EcPropSize-MAPI_E_NOT_ENOUGH_MEMORY Reported by ISINTEG
+   Q151992: XADM: Simultaneous Move User Operations Freeze
+   Q152449: XADM: Directory Import Fails When Import File Includes DBCS
+   Q152529: XADM: Crash in Srvrmax.exe (RtlQueryInformationAcl) During Setup
+   Q153464: XFOR: Unexpected Text Attachment in Mail Received from Internet
+   Q159166: XCON: MTA Stops Responding; Event ID 2110
+   Q159188: XADM: Content Conversion Errors with Large Recipient Lists
+   Q160850: XADM: DS_E_BUSY After Directory Service Restore
+   Q161839: XFOR: IMC May Incorrectly Set Time Zone Information
+   Q166026: XADM: Malformed Message Causes AV in Information Store
+   Q166152: XFOR: Extended Chars in Attached Filenames Not Preserved on Mac
+   Q166162: XFOR: MACGATE Access Violation During Generation of Admin Msg
+   Q166165: XFOR: ISOCOR MTA May Drop Messages Sent from Exchange Server
+   Q166402: XCON: MTA Terminates Unexpectedly With 2110 and 9405 Event IDs
+   Q166540: XFOR: IMC Appears Hung with Improper DN Format
+   Q166541: XADM: Random Access Violation in Store.exe (Edb.dll)
+   Q166544: XADM: DS Terminates Unexpectedly w/ Event IDs 1186, 1129, 1171
+   Q166567: XCON: How to Enable Lowest Cost Routes Only
+   Q166586: XCON: Incoming Attachments Lost from Wang X.400 Connector
+   Q166589: XFOR: Microsoft Mail Connector Fails When Sending an Attachment
+   Q166594: XCON: Messages not Being Delivered Over the First Association
+   Q166596: XADM: Starting Information Store Generates Dr. Watson Error
+   Q166597: XFOR: Outlook Chinese SFS Client Receives NDRs on Replies
+   Q166600: XCON: Message Subject Lost When Sending to SP3 Exchange Server
+   Q166602: XCON: MTA Only AllowS 64 TCP/IP or TP4 Connections
+   Q166603: XFOR: Messages Rejected by X400 System
+   Q166604: XFOR: IMS Behind Firewall Does Not Use Second MX Record
+   Q166609: XFOR: Unprotected Global Variables in MSMI
+   Q166611: XCON: No Rerouting Needed When OU Field is Empty
+   Q166619: XCON: DR Contains only DN in Non-Replicated Exchange Environment
+   Q167132: XADM: Access Violation in Store.exe After Upgrading to SP4
+   Q168140: XCON: NDR "Invalid Parameters"
+   Q168188: XADM: Possible Loss of Mail with Move Mailbox
+   Q168189: XADM: Unable to Extract Windows NT Account List
+   Q168738: XCON: HP Openmail Users Cannot Reply to SMTP Mail
+   Q169656: XCON: MTA Fails to Start and Logs Event ID 2143
+   Q169663: XADM: User Manager for Domains Hangs During Shutdown of Server
+   Q169670: XCON: Incoming Messages from HP OpenMail Include Winmail.dat
+   Q169671: XFOR: MSMI Terminates on Bad SMTP Address
+   Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB
+   Q169682: XFOR: MS Mail Connector Interchange Rejects Outlook Msgs
+   Q169688: XADM: Admin Unescapes Invalid X.400 Characters in DDA Fields
+   Q169689: XADM: Store.exe May Access Violate While Replicating PFs
+   Q169690: XCON: MTA Terminates with 2191, 2198, 2197, and 9405 Events
+   Q169691: XCON: MTA Slow to X.400 Links
+   Q169692: XADM: Exchange PAB Allows Invalid X.400 Characters In DDA Fields
+   Q169693: XADM: Private Byte Memory Leak in Store.exe
+   Q169694: XCON: Content Conversion Fails When MDBEF Formatting Disabled
+   Q169695: XCON: Invalid Originator Address When Sending to X.400
+   Q169701: XCON: MTA Terminates Unexpectedly with Event ID 2143
+   Q174036: XFOR: Exchange 5.0 IMS Won't Deliver Messages from 4.0 Server
+   Q174039: XCON: Read or Delivery Reports Show OU2 and OU3 Values
+   Q174895: XCON: Messages Are Lost When MTA Size Limit Is Exceeded
+   Q175220: XADM: MAPI Calls Fail with MAPI_E_NOT_ENOUGH_MEMORY
+   Q175235: XFOR: Greek Outlook Client Cannot Send Message to MS Mail User
+   Q175254: XFOR: Messages Misrouted Due to Directory Replication Latency
+   Q175545: XADM: Directory Replication Occurs Five Minutes After Startup
+   Q175578: XCON: Autoforwarded Messages Not Handled Correctly
+   Q175708: XCON: Gateway Address Routing Table Not Recalculated Correctly
+   Q175958: XFOR: NDR When You Send Msg over MS MAIL Connector
+   Q175964: XCON: MTA Stops Processing Messages and Generates Event ID 210
+   Q176045: XCON: Linear Whitespaces Removed When Unfolding MIME Headers
+   Q176132: XCON: Signed Message in DMS MTA Not Converted
+   Q176396: XCON: Long Lines of Text Cause Content Conversion Error
+   Q176440: XCON: Exchange Server MTA Blocked by Very Large Message
+   Q176518: XCON: Recalculating Routing does not Remove Deleted Routes
+   Q176622: XADM: User and Group Permissions Granted Automatically
+   Q176682: XADM: System Attendant Uses Unusually Large Amount of Memory
+   Q177251: XADM: Disabling PF Replication Status Messages on IS Startup
+   Q177308: XADM: Slow Client Logon Due to Missing Addressing Template
+   Q177464: XADM: Information Store Stops in EcCreateP1 When Starting MTA
+   Q177710: XADM: Store Stops Referencing Parent Attachment Pointer
+   Q177782: XADM: Home Server Not Updated After a Move Mailbox
+   Q177820: XCON: MTA Stops Unexpectedly When Accessing Memory
+   Q177821: XCON: Message Transfer Agent Stops Unexpectedly
+   Q177823: XADM: Incorrect RPC Operations Cause Information Store to Fail
+   Q177836: XCON: Delivery Receipts Display Fields as UNKNOWN
+   Q177862: XCON: Messages Fail Downgrade, Bounce Between X.400 Connectors
+   Q177867: XCON: NDR Not Received When Sending to Bad PAB Entry
+   Q178365: XCON: Exchange Logs Content Conversion Error 4096 or 4097
+   Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox
+   Q178699: XADM: Delegates Unable to View New Messages After Move Mailbox
+   Q178709: XFOR: Internet Mail Service Is Not Properly Encoding Messages
+   Q178821: XCON: Content Conversion Failure 4096
+   Q179049: XADM: DSAMain Stops on DSAMAIN!PutDistName
+   Q179056: XADM: Store Stops While Processing Rule for Client
+   Q179623: XADM: Store Terminates Unexpectedly in CbBinlen
+   Q179739: XCON: T.61 Body Part of Incoming Messages Not Handled Correctly
+   Q180730: XCON: Erroneous Deletion of SMTP & SNADS Routes During Routing
+   Q182478: XADM: Information Store Crashes Attempting to Deliver Message
+   Q182797: XADM: Directory Replication Stops in Low Memory Condition
+   Q182798: XADM: Routing Calculation Fails Across Entire Organization
+   Q183014: XCON: MTA Event 2050 with Badly Encoded X.400 Message
+   Q183065: XADM: Running Far East 4.0 Client and English Exchange Server
+   Q183517: XADM: Unable to Display Outlook Calendar After Move Mailbox
+   Q183604: XCON: MTA Stops Unexpectedly Shortly After You Restart It
+   Q184244: XADM: Inbound Intersite Replication Fails With No Errors Logged
+
+
+
+Service Pack 4
+--------------
+
+   Q146681: XADM: DXA Improperly Appending 001 to Friendly Names in the GAL
+   Q152938: XADM: Checking Knowledge Consistency Msg Freezes at 33 Percent
+   Q152949: XFOR: Read Receipt is Received Instead of Return Receipt
+   Q154719: XCON: MTA: Line Wrap When Using ISO 6937 Bodypart
+   Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer
+   Q155379: XADM: Unable to Match Custom Recipient Due to RFC1327 Conversion
+   Q155592: XFOR: MSMI Message Tracking Does Not Log Message Size
+   Q155727: XFOR: DirSync Deletes and Modifies not Being Processed by DXA
+   Q155765: XADM: Store Crashes in Ecreleaselogonop
+   Q155790: XFOR: MT Rejects Reply From CHT Outlook Client on MS Mail PO
+   Q155896: XFOR: MTA Causes Application Exception in Oxpufret
+   Q156355: XADM: IS Incorrectly Handles a Forward Slash in DDA Value
+   Q156369: XCON: MTA Doesn't Accept IA5 in General Text Body Part
+   Q156387: XADM: JET Asserts in ISINTEG During a Check on Database
+   Q156399: XADM: JET Asserts on Heavily Used Multi-valued Columns in the DS
+   Q156415: XADM: Information Store Fails to Start with JET Error -327
+   Q156474: XADM: ISINTEG Reports Errors on Replicated NNTP News Folders
+   Q156713: XADM: KM Server Crashes Intermittently on Alpha Servers
+   Q156722: XADM: Invalid Parameters When Using X.121 Field in X.400 Address
+   Q156796: XADM: Forward Rule Causes MTA to NDR When Submitting Msg to IS
+   Q156844: XCON: Subject Line of Message is Truncated to 40 Characters
+   Q157043: XADM: Message Rerouted Between Servers and Disappears
+   Q157058: XADM: Exchange MTA Restart Fails and Logs Error 2051
+   Q157068: XADM: MTA Server Work Queue Increases Perfmon Unrealistically
+   Q157235: XCON: MTA Terminates When Receiving Mail from HP X.400 MTA
+   Q157689: XFOR: Importing Large Numbers of MHS Addresses is Very Slow
+   Q157701: XCON: MTA: Dr. Watson Report with Exception e0020002
+   Q157707: XFOR: The IMC Does Not Dial on Weekends
+   Q157994: XADM: DS Stops While Calculating the Hierarchy Table
+   Q158151: XFOR: ErrMsg: Event ID 1035 - Unable to Open or Read a Message
+   Q158379: XFOR: MSExchangeMSMI Reports Event IDs 2380 and 2446/2447
+   Q158590: XCON: Delivery Restrictions Max CPU and Slow Down Msg Delivery
+   Q158901: XADM: MDB Event 2079: Unable to Submit, Send, or Transfer Msgs
+   Q159170: XADM: Calling HRBackupGetDatabaseNames Returns Invalid Parameter
+   Q159171: XADM: Mailboxes Show Multiple Instances in Admin Resources Page
+   Q159172: XCON: Attachments from Wang Office Are Losing Filenames
+   Q159174: XADM: MTA Terminates Unexpectedly with Events 251 and 9405
+   Q159175: XFOR: Inbound Mail Failures on BinHex 4.0 Attachments
+   Q159179: XCON: Message Body Truncated
+   Q159180: XCON: Japanese Subject Is Replaced w/ Question Mark
+   Q159182: XCON: MTAs Unable to Establish X.400 Connection
+   Q159183: XADM: Err Msgs About Previously Deleted Msgs in Sync Log
+   Q159184: XADM: MTA Does Not Deliver Messages with High Directory Service
+   Activity
+   Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route
+   Q159187: XADM: French Extended Chars in Read Receipts Convert Incorrectly
+   Q159189: XFOR: DXA Drops Transaction if X400 DDA Value Contains a Slash
+   Q159192: XCON: MTA Shows High CPU Usage and Messages Not Delivered
+   Q159193: XCON: MTA Terminates Unexpectedly with Event ID 9405
+   Q159194: XCON: MTA Terminates Unexpectedly with Event ID 9405
+   Q159195: XCON: MTA Terminates Unexpectedly with Event ID 9405
+   Q159198: XFOR: Event ID 246 Attempt to Read Beyond End of Object
+   Q159285: XFOR: Japanese Text in NDR from MS-Mail Is Replaced with ?
+   Q159286: XCON: Messages Sent w/AppleSingle File Attachments Get Stuck
+   Q159290: XFOR: Data Truncated in SMTP Protocol Log
+   Q159292: XADM: $ in DDA Value Migrated Incorrectly in X.400 PAB Entry
+   Q159294: XFOR: Extra Carriage Return in Dir-Sync Message
+   Q159295: XFOR: Exchange Dir-Sync Failing with Event ID 134
+   Q159296: XADM: MTA May Log Event ID 2187 for Specific DAT Files
+   Q159299: XFOR: IMC Unable to Resolve Host Addr. Using Raptor Firewall
+   Q159300: XFOR: PCMTA Fails to Respond to NetBIOS Notification
+   Q159301: XADM: Messages Sent Over X.400 Connector Should NDR First
+   Q159303: XCON: Message Sent Without Message Body Text is not Delivered
+   Q159305: XFOR: MSMI Terminates Unexpectedly with Event ID 2335 and 2560
+   Q159307: XCON: MTA Stopping with Event ID 2143: Unrecoverable Error
+   Q159308: XFOR: DirSync Names Disappearing
+   Q159566: XCON: MTA Error 209: Submitting Domain is Inconsistent
+   Q159876: XADM: Permissions Lost During Move Mailbox Operation
+   Q160153: XGEN: Directory Import Generates Unusable Random Password
+   Q161711: XCON: Messages NDR Rather Than Being Queued for Later Delivery
+   Q161813: XFOR: SMTP Headers Visible in MSMail Clients After SP3 Install
+   Q161839: XFOR: IMC May Incorrectly Set Time Zone Information
+   Q161931: XCON: Configuring MTA TCP/IP Port # for X.400 and RPC Listens
+   Q161932: XFOR: MtaCheck Causes Access Violation Exception Error
+   Q161933: XFOR: MSMI Message Sent Time Stamp is Incorrect
+   Q161936: XCON: Wrong Mapping of Msg Priority Between MSMAIL and Exchange
+   Q161937: XCON: IMC Stops Processing Mail on Alpha Platform
+   Q161939: XFOR: Outbound Msgs not Delivered by IMC Until Queue Refresh
+   Q161940: XFOR: Message Appears Without Subject Line in All-in-One Client
+   Q161941: XADM: Corrupt Page Causes Edbutil to Access Violate
+   Q161942: XADM: Setup or Update Failing to Upgrade Admin-only Machine
+   Q161943: XFOR: RFC822 Header Includes BCC Recipients Fields
+   Q161944: XCON: Outlook Users Can't Access/Update Public Free/Busy Data
+   Q161945: XCON: MSMail Shows Blank Icon for File Attachments from Internet
+   Q161946: XCON: Free Form Name Attribute not Handled by Sprint
+   Q161947: XCON: MTA: Address Space Replication with LOCAL Address Spaces
+   Q161948: XCON: MTA NDRs Messages with Headers in P2 Part of Message
+   Q161949: XCON: MTA Unable to Start on Invalid Object
+   Q161951: XADM: WinDbg Hits Breakpoint During DN Conversion
+   Q161952: XFOR: Msgs Sent with MSMI are Malformed
+   Q161953: XFOR: Unable to Forward Schedule+ Messages
+   Q161954: XFOR: When Field Not Printed
+   Q162017: XFOR: Messages Not Being Delivered to X.400 Recipients
+   Q162680: XCON: SMTP Messages Contain Encapsulated X.400 Addresses
+   Q162841: XFOR: MSMI NDRs Dir-Sync Messages Under Certain Circumstances
+   Q163376: XADM: Invalid Message Embedded in Internet Message Causes NDR
+   Q163377: XADM: Msgs Forwarded from All-In-One have Incorrect Sent Date
+   Q163445: XADM: NDR when Forwarding Message from Dec All-In-One
+   Q163608: XADM: SQL MS Mail Messaging Breaks After Upgrading Windows NT
+   Q163689: XCON: MTA: Content Conversion Error 210
+   Q163690: XCON: MTA: Content Conversion Error 210 with ISO 6937 Bodypart
+   Q164049: XCON: MTA: Remote X.400 MTA Fails to Decode NDR from Exchange
+   Q164136: XCON: MSMail Read Receipts Missing Subject: and To: Information
+   Q164340: XADM: Importing CSV to Directory Causes GPF in MAD
+   Q164457: XFOR: IMC Returns NDR When Sending to Specified By Email Domain
+   Q164468: XFOR: Hebrew/Arabic MS Mail Message Body Corrupted
+   Q164469: XFOR: Scheduled X.400 Connector Doesn't Initiate Connection
+   Q164697: XCON: EDK Gateway Gets Directory Name Instead of Email Address
+   Q164768: XADM: DL Delivery Restriction Fails Without Name Resolution
+   Q164833: XADM: EDBUTIL and ISINTEG Fail to Complete on Corrupted Store
+   Q164834: XADM: Empty Notification-Requests Bitstring Causes Error
+   Q164835: XCON: RETIX Message Does Not Trigger Read Receipt
+   Q164836: XCON: Conditional Reroute on Single Link Bounces Back
+   Q164838: XCON: MTA Looping Between HP MTA and Exchange MTA
+   Q164841: XCON: Messages Stuck in MTA Queues
+   Q164842: XCON: Enhanced Diagnostics in MTA
+   Q164843: XADM: Enhancement to Separate Reply Address from E-mail Address
+   Q164847: XCON: Win95 Client w/Mail Service Won't Prompt for RAS Callback
+   Q164851: XFOR: Embedded Message Wrapping Incorrect With DEC All-In-One
+   Q164852: XCON: Attachments from HP OpenDesk May not Open
+   Q164853: XADM: Incorrect Spanish on Exchange Server
+   Q164854: XADM: Cannot Remotely Administer IMC or MSMCON on NT 4.0
+   Q164855: XCON: Japanese Exchange May Exhibit Subject Line of ????????
+   Q164856: XCON: MTA Fails to Pick Up DN of Servers with Similar Site Names
+   Q164858: XCON: Quarterdeck Mail Gateway May Crash or Rename Directory
+   Q164859: XFOR: Mac Attachments Over IMC are Named Message.txt
+   Q164860: XFOR: Garbled attachments between Exchange 4.0 and 5.0 IMCs
+   Q164861: XFOR: Cannot Configure French AT Server as Directory Requestor
+   Q164862: XCON: MTA Raises Exception on X.25 Connections
+   Q165093: XCON: MTA: Content Conversion Error 260 (Event ID 210)
+   Q165522: XCON: MTA Crashes Generating Event ID's 2187, 9405, 9402, 9996
+
+Service Pack 3
+--------------
+
+   Q146293: XADM: Auto-naming Feature Doesn't Work with Directory Import
+   Q147362: XADM: Event ID: 1016 Logged Incorrectly in Application Event Log
+   Q149847: XADM: Isinteg Reports IPM Subtree Missing From IMC Mailbox
+   Q152845: XFOR: Moving Messages Between Folders Fails to Delete Original
+   Q152903: XFOR: Mail Connector Dispatch Fails Against Postoffice on Unix
+   Q152911: XADM: FAX Cover Sheet Does Not List Recipients
+   Q152915: XFOR: Messages Inbound from IMC Include Body as Attachment
+   Q152918: XCON: MTA: Mail Delivery Slow and Disk Space Consumed
+   Q152919: XFOR: SMTP CRs Routed to Home Site Before Going Out IMC
+   Q152921: XCON: IMC May Cause WorldTalk SMTP/MIME Gateway to Stop
+   Q152922: XGEN: SMTP Addresses Don't Extract from MAC Mail to Exchange PAB
+   Q152924: XFOR: DXA Sends Invalid Replace (R) Transactions
+   Q152927: XADM: Event ID 136 Created When Importing Duplicate Alias
+   Q152928: XFOR: MTA does not Generate Requested Delivery Report
+   Q152930: XCON: IMC Might Stop if RFC 821 From Address is > 64 Characters
+   Q152939: XADM: Meeting Requests Written to Assistant's Calendar
+   Q152942: XADM: Slow Intra-site Directory Replication Between Servers
+   Q152944: XFOR: IMC Not Receiving Inbound Mail from UNIX Hosts
+   Q152945: XCON: Microsoft Exchange Server MTA Not Responding
+   Q152946: XADM: Exchange Store Stops Due to Data Corruption
+   Q152947: XCON: Err Msg: Suspected Deadlock
+   Q152948: XADM: IS Won't Stop and PerfMon Shows No Processing
+   Q152951: XCON: MTA Heap Corruption with Misconfigured TP4/TCP Connection
+   Q152952: XCON: No Read/Delivery Receipts Sending X.400 Messages
+   Q152953: XADM: SMTP Proxy Generation Fails After 21st Address
+   Q152955: XCON: MTA Prematurely Returns Messages w/NDR
+   Q152957: XADM: Non-Delivery Reports Incorrectly Returned in German
+   Q154099: XFOR: cc:Mail Migration Wizard Adds Quotes in User.pri
+   Q154301: XCON: MTA X.400 Connector Problems on Slow Links
+   Q154426: XEXT: EFD Cannot Display Initial Subject Text in Reply Item
+   Q154686: XADM: Options in Admin or User Manager May Be Overwritten
+   Q154798: XFOR: SMTP Mail Attachments not Visible in PC Mail 3.x Clients
+   Q155137: XFOR: Messages Not Deleted from IMC Inbound Queue
+   Q155522: XADM: SP2 or SP3 Server Upgrade Fails with 281 and 1171 Errors
+   Q155682: XADM: Info Store Won't transfer Some X.400 Messages to Gateway
+   Q155683: XFOR: Verification of FROM Address in SMTP Messages
+   Q155684: XFOR: IMC Support for VRFY Command
+   Q155695: XCON: Replication Over X.400 Backbone Might Fail
+   Q155812: XADM: NDR from Japanese Microsoft Exchange Server is Corrupt
+   Q155813: XADM: Simplified Chinese MS Mail Connector Corrupts Messages
+   Q155817: XADM: Chinese MIME-encoded Attachments Corrupted by IMC
+   Q155819: XADM: IMC Can't Decode Mail That Uses the EUC-KR Charset
+   Q155839: XFOR: IMC has Problems with Mail Sent from Eudora
+   Q156703: XADM: Space Character not supported for SMTP Custom Recipients
+   Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed
+   Q156706: XCON: Messages Forwarded from DEC ALL IN ONE User Missing Date
+   Q156707: XADM: NDR's Due to Non-Printable Characters in the DDA Value
+   Q156708: XADM: Rule Forces CPU Usage Above 90%, Stops Message Delivery
+   Q156710: XFOR: Incoming SMTP Messages NDR with Invalid Argument
+   Q156711: XADM: Exchange Win95 Client with DNS Polls for New Mail
+   Q156714: XFOR: Dir-Sync Requestor Updates Not Being Updated Properly
+   Q156715: XADM: Unable to Back Up Exchange on Remote Server from NT 4.0
+   Q156716: XCON: Foreign MTA Rejects X.400 Messages
+   Q156724: XCON: Messages Cannot Be Sent to Remote MTA, Repeated Err 2171
+   Q156725: XFOR: MS Mail X.400 Gateways and Exchange X.121 Addresses
+   Q156726: XFOR: DXA does not Import X.121 Addresses Correctly
+   Q156727: XCON: WAN Drive Functionality of PC Connector and ISDN Lines
+   Q156728: XFOR: MSMI Mistakenly Returns NDR Instead of DR
+   Q156729: XFOR: Malformed Dir-Sync Transactions Cause DXA to Stop
+   Q156730: XADM: CSI Type Addresses Show Up in Exchange GAL
+   Q156963: XFOR: Korean Characters Are Corrupted by the MS Mail Connector
+   Q156996: XFOR: Postoffice Lists Disappearing from GAL
+   Q156998: XADM: To: Recipients Shown Half-size if Client is on Server
+   Q156999: XFOR: SMTP Headers Lost for DOS MS Mail Client
+   Q157000: XFOR: Korean UUENCODED Attachments Corrupted
+   Q157007: XADM: Secondary Proxy Address Replaces Target Address of CR
+   Q157008: XCON: IMC Might Use the Wrong Code Page
+   Q157010: XADM: Exception In Dsamain.exe After Network Error
+   Q157012: XFOR: Corrupted Message When Using Hebrew or Arabic
+   Q157013: XADM: MTA Terminates Unexpectedly with Event 3080 and 9405
+   Q157014: XFOR: IMC Deletes Mail in MTS-OUT if no Code Page on MIME Tab
+   Q157015: XCON: MTA Outbound Connection Refused by X.400 Host
+   Q157017: XADM: Attempting to Open Public Folder Might Return Error
+   Q157019: XADM: Changing X400 Country Code Toggles Between SE and SG
+   Q157175: XCON: MTA Service Terminates Unexpectedly
+   Q157358: XCON: Per-Domain-Bilateral-Information and Third Party Systems
+   Q157565: XCON: MTA Terminates Without Logging Event in Application Log
+   Q157684: XFOR: IMC Might Lose Inbound and Outbound Messages
+   Q157686: XCON: MTA Crashes When Logging Event 321
+   Q157691: XADM: TNS Resolution Causes Buffer Overflow
+   Q157693: XFOR: IMC Might Lose Messages if Code Pages are not Installed
+   Q157694: XFOR: Exchange Corrupts FIPS Header with MCI Mail
+   Q157695: XFOR: MTA can't Communicate with Another MTA via French X.25
+   Q157698: XCON: Exchange Fails to Allow an Incoming X.25 Connection
+   Q157699: XCON: Messages Sent to Wang Via X.400 Do Not Return Receipts
+   Q157702: XCON: MTA Stopping with Event ID 2143: Unrecoverable Error
+   Q157703: XFOR: NDRs Sending Mail Using Email.dot
+   Q157941: XFOR: Attachment Moved When Sent Over MS Mail Connector
+
+Additional query words: servpack sp3 sp4 sp5 bug fix qfe compact disc
+
+======================================================================
+Keywords          : exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

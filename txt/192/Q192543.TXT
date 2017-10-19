@@ -1,0 +1,119 @@
+DOCUMENT:Q192543  07-OCT-1999  [msnetwork]
+TITLE   :Err Msg: Error 629  When You Attempt to Connect to MSN
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.52,2.6
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to MSN, The Microsoft Network, using an MSN Dial-Up
+Networking connection, you may receive the following error message:
+
+   Error 629: Remote server disconnect port.
+
+You may also receive other error messages when you double-click the MSN icon on
+the desktop.
+
+CAUSE
+=====
+
+This behavior can occur if MSN or Microsoft Windows 98 is not properly installed
+on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps to remove and reinstall MSN based on
+the MSN version you are using. To check the version you are using, click the
+Quick View icon, select MSN Options, and then click About MSN.
+
+Unistall MSN
+------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click Connection Manager, and then click Add/Remove.
+
+4. Click MSN v2.5 or MSN v2.6 click Add/Remove, and then click Yes.
+
+5. Click OK, and then click OK again.
+
+6. Close Control Panel, and then restart the computer.
+
+Reinstall The Microsoft Network by following the appropriate steps.
+
+-------------------------------------------------------------------
+
+Microsoft Network version 2.52
+
+1. Insert the Windows 98 CD-ROM into the CD-ROM drive. Press and hold the Shift
+   key to prevent the CD-ROM from starting automatically.
+
+2. Click Start, point to Find, and then click "Files Or Folders".
+
+3. In the Named box, change to the drive which contains the Windows 98 CD-ROM.
+
+4. In the Named box, type msnstart.exe, and then click Find Now.
+
+5. In the list of found files, double-click the Msnstart.exe file.
+
+6. Follow the instructions on the screen to reinstall MSN.
+
+7. Close the Find: Files Named Msnstart.exe window.
+
+8. Double-click the MSN icon on the desktop to connect to MSN.
+
+Microsoft Network version 2.6
+
+1. Insert The Microsoft Network version 2.6 CD-ROM into the CD-ROM drive. Press
+   and hold the Shift key to prevent the CD-ROM from starting automatically.
+
+2. Click Start, point to Find, and then click "Files Or Folders".
+
+3. In the Look In box, change to the drive which contains The Microsoft Network
+   2.6 CD-ROM.
+
+4. In the Named box, type setup.exe, and then click Find Now.
+
+5. In the list of found files, double click on the file setup.exe.
+
+6. Follow the instructions on the screen to reinstall MSN.
+
+7. Close the Find: Files Named Msnstart.exe window.
+
+8. Double-click the MSN icon on the desktop to connect to MSN.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n. phonebook 2.50 2.60
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbmsn 
+Technology        : kbMSNSearch kbMSN252 kbMSN260
+Version           : WINDOWS:2.52,2.6
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

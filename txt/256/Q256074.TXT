@@ -1,0 +1,67 @@
+DOCUMENT:Q256074  03-MAY-2000  [sms]
+TITLE   :Crystal Reports Selection Formula Reappears After Being Deleted
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove the selection formula for a report and reschedule it to run,
+the report may continue to run with the removed selection formula.
+
+CAUSE
+=====
+
+The selection formula is not removed from the report even though the Selection
+Formula box has been cleared. Replacing the formula with a new formula works.
+
+WORKAROUND
+==========
+
+Make a new report object and run the report with the new object:
+
+1. Right-click the report, point to All Tasks, and then click Schedule Report.
+
+2. Under Report Properties, you see Report File. Write down the file path in
+   this box.
+
+3. Click Cancel.
+
+4. Right-click the report folder in which you want to create the new report
+   object, point to New, and then click Report Object.
+
+5. Under Report Properties, add the path you wrote down in the Report File box.
+   Provide a title for the new object, and a description if appropriate.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

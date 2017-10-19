@@ -1,0 +1,81 @@
+DOCUMENT:Q233463  27-JUN-1999  [homemm]
+TITLE   :MSBP: Unexpected Behavior When You Press and Hold Down CTRL+C
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press and hold down the CTRL+C key combination for longer than 30
+seconds in Microsoft Business Planner, you may experience one or more of the
+following symptoms:
+
+ - Text may be truncated or be displayed in an unexpected font.
+
+ - Text or graphic elements may not be displayed on the screen.
+
+ - Commands may not be displayed on menus.
+
+ - A blank dialog box that contains only an OK button may appear on the screen.
+
+ - You may receive an error message on a blue screen.
+
+CAUSE
+=====
+
+This behavior can occur if you press and hold down CTRL+C on a page that
+contains bitmap data. This operation drains system resources.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit and then restart Business Planner.
+
+To prevent this issue from occurring, press but do not hold down CTRL+C when you
+want to copy text or graphics to the clipboard.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+MORE INFORMATION
+================
+
+When you press and hold down CTRL+C on a page that contains bitmap data, you
+continue to drain system resources. If you press and hold down CTRL+C for more
+than 30 seconds, you can reduce system resources to 0%.
+
+Additional query words: msbp empty cut off disappears missing
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

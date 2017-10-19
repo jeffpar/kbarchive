@@ -1,0 +1,84 @@
+DOCUMENT:Q172770  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Cannot Connect to MAPI Server. Invalid MAPI Server...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95, you may receive the following error message:
+
+   Cannot Connect to MAPI Server. Invalid MAPI Server Present. Cannot Provide
+   MAPI Services.
+
+CAUSE
+=====
+
+One of the following files may be damaged or missing:
+
+ - Mapi32.dll
+
+ - Mapisp32.exe
+
+RESOLUTION
+==========
+
+To resolve this issue, extract a new copy of the Mapi32.dll and Mapisp32.exe
+files to the Windows\System folder.
+
+The Mapi32.dll file can be found in the following locations:
+
+ - Win95_06.cab cabinet file on the Windows 95 CD-ROM
+
+ - Win95_09.cab cabinet file on the Windows 95 OEM Service Release 2 (OSR2)
+   CD-ROM
+
+ - Win95_07.cab cabinet file on the original Windows 95 DMF disks
+
+ - Win95_10.cab cabinet file on the original Windows 95 non-DMF disks
+
+The Mapisp32.exe file can be found in the following locations:
+
+ - Win95_07.cab cabinet file on the Windows 95 CD-ROM
+
+ - Win95_10.cab cabinet file on the Windows 95 OEM Service Release 2 (OSR2)
+   CD-ROM
+
+ - Win95_07.cab cabinet file on the original Windows 95 DMF disks
+
+ - Win95_11.cab cabinet file on the original Windows 95 non-DMF disks
+
+For information about using the Extract tool, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+======================================================================
+Keywords          : kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

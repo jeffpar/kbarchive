@@ -1,0 +1,140 @@
+DOCUMENT:Q184719  10-APR-1999  [exchange]
+TITLE   :XADM: Msg: The Description for Event ID Could Not Be Found
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the application event log on the computer running Microsoft
+Exchange Server from a remote computer, all the data in the event log is not
+available.
+
+The event viewer displays the following entry:
+
+   The description for Event ID (<Event ID>) in Source (<Component name>)
+   could not be found. It contains the following insertion string(s):
+   <Component Specific Data>.
+
+For example, the following entry will be displayed:
+
+   The description for Event ID (8) in Source (EDB) could not be found. It
+   contains the following insertion string(s): MSExchangeIS, (186), 04,
+   993, 0000.
+
+Instead of displaying:
+
+   MSExchangeIS ((186)) The database engine 04.993.0000 started
+
+CAUSE
+=====
+
+Windows NT provides the means of reading remote event logs, however, each
+application that writes entries to the event log updates the registry with
+information that helps the event viewer application interpret the information in
+the event log. These registry keys are found under the following subkey:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services
+   \EventLog\Application
+
+NOTE: The above registry key is one path; it has been wrapped for readability.
+
+For example, when the Exchange Server components are installed on a computer
+running Windows NT Server, they write keys to the registry in Windows NT Server
+under the following subkey:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services
+   \EventLog\Application
+
+NOTE: The above registry key is one path; it has been wrapped for readability.
+
+When you view the event log on a computer running Exchange Server from a remote
+computer, if the required registry keys (and referenced files) are not present
+on the remote computer, the event viewer is unable to format the data; hence it
+displays the data in a generic format.
+
+WORKAROUND
+==========
+
+To resolve this problem, the required registry entries and DLL files must be
+copied to the remote computer on which the event viewer application is being
+run.
+
+The Initlog.exe utility, in the "BackOffice Resource Kit, Second Edition," can be
+used to copy the required registry entries from the Exchange Server computer to
+the remote computer. This utility can also copy the required DLL files if you
+are logged on to Windows NT with an account that has Administrator privilege on
+the Exchange Server computer.
+
+WARNING: Because the Initlog.exe program modifies the registry on the remote
+computer, please back up the registry before running this program.
+
+NOTE: The DLLs used are service-pack specific, so you may need to run the program
+again on the remote computer after installing a service pack on the Exchange
+Server computer.
+
+MORE INFORMATION
+================
+
+The Microsoft Event Log Initialization Program, Initlog.exe, is a program to
+help Administrators remotely view the Windows NT Event Log for their computers
+running Windows NT Server.
+
+Initlog.exe prompts the Administrator for the name of a server on which the
+required registry keys are present. The utility then prompts the user to select
+the registry keys to be copied from the server specified to the local computer.
+The program then automatically copies the specified registry keys from the
+remote server to the registry on the local computer.
+
+Associated with the registry keys copied to the local computer are files that
+also need to be copied. If a currently logged-on Windows NT user account has
+Administrative rights on the remote server, the program can be asked to
+automatically copy the required files to the local computer. If the current
+Windows NT account does not have Administrative rights on the remote server, a
+list of files to be copied is written out to a file,
+EventLogFilesToBeCopied.Txt, that can then be used to manually copy the required
+files to the local computer. This file is saved in a directory that the user
+selects.
+
+To run this program, double-click on the InitLog.exe program from the Windows NT
+File Manager, or Windows Explorer.
+
+For more information about how these registry keys are used, please see the
+following Microsoft Knowledge Base article:
+
+   Q137209 Remotely Viewing SMS Event Logs Using Windows NT Event Viewer
+
+
+This article refers to Microsoft Systems Management Server, but the same concept
+applies to Exchange Server.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q129826  11-DEC-1999  [homemm]
+TITLE   :Baseball 1995: Team Season Schedules Are Setup Incorrectly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball Guide for Windows, 1995 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you either display or print a Team Season Schedule, the calendar day of the
+week goes from Sunday to Saturday.
+
+As a general rule, professional baseball calendars start with Monday and go
+through Sunday.
+
+MORE INFORMATION
+================
+
+Baseball calendars begin on Monday and end on Sunday because teams are scheduled
+to play in a city either 2, 3, or 4 days in a row.
+
+Professional baseball takes advantage of the Monday through Sunday schedule so
+one team can play another team in what is called a weekend series. The weekend
+series is a set of games always scheduled on Friday, Saturday, and Sunday and is
+always played against the same team.
+
+The Sunday game is usually a day game, so teams can travel to the next city on
+the same day, if necessary. If possible, Monday is scheduled as a day off and is
+considered an off day where no game is scheduled.
+
+Additional query words: kbhowto 1.0multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          : win31 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1995
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

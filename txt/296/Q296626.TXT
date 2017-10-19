@@ -1,0 +1,81 @@
+DOCUMENT:Q296626  01-JUN-2001  [iis]
+TITLE   :ASP0201: Invalid Default Script Language
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you browse to an Active Server pages (ASP) page, you receive one of the
+following error messages:
+
+   ASP0201:
+   Invalid Default Script Language
+
+-or-
+
+   HTTP/1.1 Invalid Default Script Language
+
+CAUSE
+=====
+
+The default script language in your Web application settings lists a language
+that is not supported by the server.
+
+RESOLUTION
+==========
+
+1. In the Internet Services Manager, right-click the Web site or virtual folder
+   that is exhibiting these problems, and then click Properties.
+
+2. Click the Home Directory tab, and then click Configuration (located towards
+   the lower right corner of the dialog box).
+
+3. Click the App Options tab. Enter a valid script language in the Default ASP
+   Language text box.
+
+4. Click OK to close the Application Configuration dialog box, and click OK
+   again to close the Web site or virtual folder dialog box.
+
+MORE INFORMATION
+================
+
+For additional information on ASP error codes, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q294271 INFO: ASP Error Codes
+
+Additional query words: iis 4 5 kbiisSearch
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,102 @@
+DOCUMENT:Q163600  13-MAY-2001  [word97]
+TITLE   :WD97: Unable to Connect to Web with Browse Web Art Command
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a new blank Web page, if you choose to browse the Web art page,
+you will not be connected to the Internet Web Art Resources Page.
+
+CAUSE
+=====
+
+This problem occurs if you are using Netscape Navigator 3.0 or Internet Explorer
+2.0.
+
+This problem occurs because Word 97 sends a command to your Internet browser that
+is dependant on a shell extension that understands that a file that starts with
+"http" should be routed to the browser. Neither Netscape Navigator 3.0 nor
+Internet Explorer 2.0 install this shell extension.
+
+WORKAROUND
+==========
+
+To work around this problem, use either the following steps:
+
+ - Install Internet Explorer 3.0 or later (available at
+   http://www.microsoft.com/ie/default.asp)
+
+   -or-
+
+ - Type the following address directly in your browser:
+
+   "http://office.microsoft.com/downloads/9798/wd97au.aspx " (without the
+   quotation marks)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+The Web Art Resources Page can be accessed from within Word 97 by pointing to
+Picture on the Insert menu and clicking Browse Web Art Page. This should start
+the Internet browser and connect to the Web site.
+
+If Internet Explorer 3.0 has been installed, Word 97 will correctly connect to
+the Internet Web Art Resources Page even if Internet Explorer 3.0 is not your
+default browser. Internet Explorer correctly adds the necessary file extension
+information during Setup.
+
+You must be connected to the Html.dot Web template for the Web art feature to be
+available.
+
+REFERENCES
+==========
+
+For more information about Web page resources, click the Office Assistant, type
+"Web page resources" (without the quotation marks), click Search, and then click
+to view "Learn about more Web page authoring resources."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

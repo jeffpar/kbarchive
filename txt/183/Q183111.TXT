@@ -1,0 +1,83 @@
+DOCUMENT:Q183111  08-MAY-1999  [iis]
+TITLE   :IFilter SDK Sample Doesn't Build Under Visual C 5 SP3
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The IFilter SDK sample does not build under Visual C++ version 5.0 Service Pack
+3 and reports the following error message:
+
+   .\global.hxx(40) : error C2433: '_CRTAPI1' : 'inline' not permitted on
+   data declarations
+
+CAUSE
+=====
+
+The definition for _CRTAPI1 has been removed from the Windows header files in
+Service Pack 3.
+
+RESOLUTION
+==========
+
+Add the definition of _CRTAPI to the Pch.cxx file as follows:
+
+   // 
+   //  Copyright (C) Microsoft Corporation, 1992 - 1996
+   // 
+   //  File:       pch.cxx
+   // 
+   //  Contents:   Pre-compiled header
+   // 
+
+    #include <windows.h>
+
+    #ifndef _CRTAPI1
+    #if _MSC_VER >= 800 && _M_IX86 >= 300
+    #define _CRTAPI1 __cdecl
+    #else  /* _MSC_VER >= 800 && _M_IX86 >= 300 */ 
+    #define _CRTAPI1
+    #endif  /* _MSC_VER >= 800 && _M_IX86 >= 300 */ 
+    #endif  /* _CRTAPI1 */ 
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 4.0. Microsoft is researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: kbdsi
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

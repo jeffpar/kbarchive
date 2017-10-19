@@ -1,0 +1,74 @@
+DOCUMENT:Q287143  16-MAY-2002  [homegame]
+TITLE   :MechWarrior 4: Improve Performance with DMA
+PRODUCT :Microsoft Home Games
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MechWarrior 4: Vengeance, version 4.0 
+ - Microsoft MechWarrior 4: Black Knight 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If DMA is installed on a computer running Microsoft Windows 98 or Microsoft
+Windows Millennium Edition (Me), make sure DMA is enabled.
+
+When you enable DMA on your computer, you improve the game performance and
+stability.
+
+MORE INFORMATION
+================
+
+To enable DMA:
+
+1. Close all programs that are running on your computer.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click System.
+
+4. Click the Device Manager tab.
+
+5. Click the PLUS SIGN (+) next to Disk Drives.
+
+6. Click IDE/Disk (hard drive), and then click Properties.
+
+7. On the Settings tab, click to select the DMA check box.
+
+8. Click OK, and then click OK again.
+
+9. Restart the computer.
+
+NOTE: When you enable DMA, you increase the access speed to the CD-ROM drive and
+the hard disk. Some drivers do not support DMA access. If the DMA check box
+remains selected after you restart your computer, DMA access is supported.
+
+Additional query words: msgame mech4 noise skip chop slow pause characters run faster slower speed
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbGamesSearch kbMechWarrior4
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

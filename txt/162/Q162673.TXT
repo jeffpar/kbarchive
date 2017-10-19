@@ -1,0 +1,75 @@
+DOCUMENT:Q162673  05-FEB-2000  [foxpro]
+TITLE   :FIX: ASCAN() Fails to Find Integer Value when Called in a Loop
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp500aFIX kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ASCAN() function may sometimes fail to find an integer value that is present
+in the searched array when values within the searched array are changed in an
+iterative loop.
+
+RESOLUTION
+==========
+
+As a workaround, you can convert a value in the scanned array to a character
+string, then back to a numeric data type, before issuing the ASCAN() function.
+
+      laarraysearched[1] = STR(laarraysearched[1])
+      laarraysearched[1] = INT(VAL(laarraysearched[1]))
+
+This must be done in two separate program lines, not all in a single line as in
+the following:
+
+      laarraysearched[1] = INT(VAL(STR(laarraysearched[1])))
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been fixed in Visual FoxPro 5.0a.
+
+MORE INFORMATION
+================
+
+The ASCAN() function should return an element number if the value scanned for is
+contained in the scanned array. Under specific circumstances, ASCAN() may return
+a 0 (that is, the value is not found) when seeking an integer value if the
+searched array has been repeatedly repopulated within an iterative loop. Under
+these circumstances, ASCAN() functions properly in Visual FoxPro 3.0b.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

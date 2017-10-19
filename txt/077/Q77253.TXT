@@ -1,0 +1,69 @@
+DOCUMENT:Q77253  29-OCT-1999  [win95x]
+TITLE   :Unable to Access Output Device in Lotus 1-2-3 for Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to print from Lotus 1-2-3 for Windows, you may receive the
+following error message:
+
+   Unable to access output device
+
+MORE INFORMATION
+================
+
+The following conditions may cause this error:
+
+ - The printer you selected is not connected to a port. In the Windows Control
+   Panel, choose the Printers icon to assign the printer to a valid output port,
+   or make the printer active on an output port.
+
+ - There are not enough Windows system resources to print. Close one or more of
+   your applications and try to print again. If you are using a high-end video
+   drivers (1280 x 1024 resolution or 250,000 colors) try using the standard
+   Windows VGA video driver.
+
+The Lotus product included here is manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+For more information, contac Lotus Technical Support.
+
+REFERENCES
+==========
+
+Lotus 1-2-3 for Windows Help Index.
+
+Additional query words: 3.00 3.00a 3.10 123W 3rdparty 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

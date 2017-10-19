@@ -1,0 +1,41 @@
+DOCUMENT:Q68917  30-JUL-2001  [homegame]
+TITLE   :ASD: Some Aircraft Features Cannot Be Modified
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Aircraft & Scenery Designer offers an enhanced aircraft designer. Although
+all aircraft can be modified, only the experimental aircraft can be fully
+modified. Aircraft that cannot be fully modified display the message "PARTIAL
+DESIGN ONLY" at the top of the designer menu.
+
+Features not available for a particular plane will generally not be shown. For
+example, option B, Color and Visual Design, is only available for the Cessna,
+Cessna Seaplane, and the experimental aircraft. It is not possible to change the
+color of the other planes (for example, the 747-400).
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

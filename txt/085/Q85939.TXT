@@ -1,0 +1,52 @@
+DOCUMENT:Q85939  07-DEC-1999  [win95x]
+TITLE   :HP LaserJet II Is Limited to 32 Permanent Soft Fonts
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+When using Hewlett-Packard (HP) soft fonts with an HP LaserJet Series II printer,
+you are limited to having only 32 downloadable soft fonts installed (permanent
+or temporary) in Microsoft Windows version 3.1. If you attempt to have more than
+32 soft fonts, then you may receive a general protection (GP) fault in
+UNIDRV.DLL.
+
+The HP LaserJet is also limited to 16 soft fonts per page. These limitations are
+the result of the printer's design.
+
+The HP LaserJet Series II uses the HPPCL.DRV driver version 1.1.
+
+
+Additional query words: gpf 3.10 sf pcm pfm softfont
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

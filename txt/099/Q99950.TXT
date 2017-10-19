@@ -1,0 +1,64 @@
+DOCUMENT:Q99950  29-OCT-1999  [utilities]
+TITLE   :QH.EXE Does Not Support Most Cross-Reference Commands
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.7,1.83; OS/2:1.7
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft QuickHelp for MS-DOS, versions 1.7, 1.83 
+ - Microsoft QuickHelp for OS/2, version 1.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "Microsoft Professional Advisor Library Reference Manual" documents many
+cross-reference commands that the QuickHelp utility (QH.EXE) does not support.
+To use these commands in your help file, you must develop a help viewer
+application using the functions that the Microsoft Professional Advisor Library
+provides.
+
+MORE INFORMATION
+================
+
+Cross-reference commands direct the host application to perform an action when
+the user selects a hotspot. The Reference manual discusses these commands on
+page 19-21.
+
+QuickHelp, distributed with most Microsoft programming language products, can
+view help files, but is supports only a small subset of the cross-reference
+commands. The supported commands are as follows:
+
+   !B Back
+   !P Position
+   !M Mark
+
+To use any other cross-reference command in your help file, you must develop a
+help file viewing application using the Microsoft Advisor Library help engine.
+
+Additional query words: kbinf 1.70 1.83 helpmake rtf
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbQBASICSearch kbQuickHelpSearch kbQuickHelp170DOS kbQuickHelp183DOS kbQuickHelp170OS2
+Version           : MS-DOS:1.7,1.83; OS/2:1.7
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

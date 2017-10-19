@@ -1,0 +1,61 @@
+DOCUMENT:Q173962  16-JUL-2001  [iis]
+TITLE   :Anonymous Acct. Not Created When Windows NT 4.0 & IIS Are on BDC
+PRODUCT :Internet Information Server
+PROD/VER:WinNT:1.0,2.0,3.0
+OPER/SYS:
+KEYWORDS:kbinterop kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Active Server Pages 
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you setup Active Server Pages (ASP) on a backup domain controller (BDC),
+you will get an error message that the IUSR account is improperly setup.
+
+CAUSE
+=====
+
+During the setup of Microsoft Windows NT Server version 4.0 and Internet
+Information Server (IIS), the IUSR account cannot be created because the Windows
+NT installation does not have network connectivity to create the IUSR account in
+the domain account database.
+
+WORKAROUND
+==========
+
+Uninstall and re-setup IIS on the BDC. Then set up ASP.
+
+MORE INFORMATION
+================
+
+This is referenced in the Readme.txt that comes with ASP.
+
+======================================================================
+Keywords          : kbinterop kbsetup 
+Technology        : kbiisSearch kbAudDeveloper kbASPsearch kbiis300 kbiis200
+Version           : WinNT:1.0,2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

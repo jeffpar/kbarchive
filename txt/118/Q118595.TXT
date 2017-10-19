@@ -1,0 +1,67 @@
+DOCUMENT:Q118595  05-NOV-1999  [pcmail]
+TITLE   :SMTP: Gateway Tries to UUDECODE Text That is not UUENCODED
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail Gateway to SMTP attempts to uudecode an incoming message (or
+attachment) that is not uuencoded.
+
+CAUSE
+=====
+
+To determine the presence of uuencoded text the Gateway parses the message and
+looks for the word BEGIN at the far left of a new line, followed by a blank, and
+END at the far left of a subsequent line. Uuencoded text is marked at the
+beginning with the phrase BEGIN UUENCODE and at the end with END.
+
+The word END can actually be a part of another word, such as ENDEAVOR, and if the
+Gateway finds BEGIN at the start of a new line, followed by a blank, then END at
+the start of another line, it considers the text in between to be uuencoded and
+tries to uudecode it.
+
+RESOLUTION
+==========
+
+None.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Mail Gateway to
+SMTP, version 3.0. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.00 smtp uudecode uuencode
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

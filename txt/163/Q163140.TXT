@@ -1,0 +1,70 @@
+DOCUMENT:Q163140  19-DEC-1999  [schedplus]
+TITLE   :XCLN: Schedule+ Calendar Not Synchronized If Not Logged Off
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:4.0,7.0; Win95:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+7.00
+WINDOWS
+KBBUG kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.0 
+ - Microsoft Exchange Client for Windows 95, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you shut down Microsoft Windows 95 or Microsoft Windows NT without logging
+off Microsoft Schedule+, the local Microsoft Schedule+ calendar is not
+synchronized with the server-based calendar.
+
+CAUSE
+=====
+
+This problem occurs because Windows 95 and Windows NT disconnect all user-
+established network connections before Microsoft Schedule+ can synchronize the
+local calendar with the server-based calendar.
+
+RESOLUTION
+==========
+
+To avoid this problem, log off Microsoft Schedule+ before you shut down Windows.
+To do this, click Exit And Log Off on the File menu in Microsoft Schedule+.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q155510 XCLN: Empty the 'Deleted Items' Folder Option doesn't Work
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbZNotKeyword3 kbExchange400NT
+Version           : WINDOWS:4.0,7.0; Win95:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

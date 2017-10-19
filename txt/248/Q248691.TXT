@@ -1,0 +1,65 @@
+DOCUMENT:Q248691  01-MAY-2001  [ssafe]
+TITLE   :INFO: DDUPD Takes Data Folder Rather Than Srcsafe.ini on Command
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:_IK kbSSafe500 kbSSafe600 _IK kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The DDUPD utility in Visual SourceSafe 6.0 requires the user to provide the path
+to the data folder, not the path to the Srcsafe.ini file.
+
+MORE INFORMATION
+================
+
+The DDCONV utility can take as an argument either the path to the data folder
+or, by using the -m switch, the path to the Srcsafe.ini file:
+
+   " DDCONV ..\data
+
+   DDCONV C:\Program Files\Microsoft Visual Studio\Common\VSS\Data
+
+   DDCONV -m ..\SrcSafe.ini
+
+   DDCONV -m C:\Program Files\Microsoft Visual Studio\Common\VSS\SrcSafe.ini "
+   (without the quotation marks)
+
+The DDUPD utility can only take the path to the data folder:
+
+   " DDUPD ..\data
+
+   DDUPD C:\Program Files\Microsoft Visual Studio\Common\VSS\Data " (without the
+   quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbSSafe500 kbSSafe600 _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

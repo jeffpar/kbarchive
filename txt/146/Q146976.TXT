@@ -1,0 +1,64 @@
+DOCUMENT:Q146976  21-MAY-2001  [schedplus]
+TITLE   :XCLN: Deleted Appointments are Downloaded to Intellilink
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you download a recurring appointment to Intellilink, instances of the
+appointment that have been deleted in Microsoft Schedule+ will still appear in
+Intellilink.
+
+MORE INFORMATION
+================
+
+The latest importers can be obtained through Microsoft Sales by ordering the
+Microsoft Schedule+ 7.0 Import Converters, part number 061-00001.
+
+These converters can also be downloaded with no charge at
+http://www.microsoft.com/msscheduleplus/fs_sch.htm in the free software section
+of the Microsoft Schedule+ page. Instructions for downloading are on the page.
+Import converters include Lotus Organizer, ACT, and ECCO Pro.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 7.0 of Microsoft
+Schedule+. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0; Win95:7.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

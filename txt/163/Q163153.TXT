@@ -1,0 +1,98 @@
+DOCUMENT:Q163153  14-NOV-2000  [word97]
+TITLE   :WD97: "Suggest" Button Missing from Spelling Checker
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 kbproof word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Suggest button is missing from the Spelling dialog box.
+
+CAUSE
+=====
+
+Microsoft Word 97 for Windows uses a different Spelling dialog box than the
+other Microsoft Office 97 programs.
+
+This is because Word includes a grammar checking tool, as well as a spelling
+checker. These two tools are available from the same dialog box. By default,
+Word suggests corrections for words and grammatical errors.
+
+The Suggestions list is unavailable if you have cleared the "Always suggest
+corrections" check box on the "Spelling & Grammar" tab of the Options dialog
+box.
+
+WORKAROUND
+==========
+
+To set or clear the "Always Suggest Corrections" check box, use either of the
+following methods.
+
+Method 1: If the Spelling Checker Is Not Running
+------------------------------------------------
+
+1. On the Tools menu, click Options.
+
+2. Click the Spelling & Grammar tab.
+
+3. Under Spelling, select or clear the "Always Suggest Corrections" check box.
+
+Method 2: If the Spelling Checker Is Running
+--------------------------------------------
+
+1. On the Tools menu, click Spelling & Grammar (Spelling).
+
+2. Click Options.
+
+3. On the Spelling & Grammar tab, under Spelling, select or clear the
+   "Always Suggest Corrections" check box.
+
+MORE INFORMATION
+================
+
+For spelling errors, Word lists suggested replacement words from the main
+dictionary and open custom dictionaries. For grammar errors, Word lists
+suggested corrections based on the current grammar style and grammar settings.
+
+Previous versions of Word allowed you to use wild card characters in a text
+string and click Suggest to get additional words from the dictionary. For
+example, typing "d*g" and clicking on Suggest gave you a list of all words that
+began with the letter "d" and ended with letter "g".
+
+To accomplish this task in Microsoft Word 97, type "d*g" in the Not In Dictionary
+box, and click Change. The word will change in your document, but Word will also
+list all of the alternative suggestions from the dictionary. You can then click
+on the suggestion you want and it will change the word in your document.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbualink97 kbproof word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

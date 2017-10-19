@@ -1,0 +1,53 @@
+DOCUMENT:Q104504  30-JUL-2001  [lanman]
+TITLE   :WFWG Asynchronous Close Leads to Freeze of OS/2 LAN Man Server
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+An OS/2 LAN Manager server can freeze or stop responding during high stress
+situations if it receives an asynchronous "close" request from a Windows for
+Workgroups workstation immediately followed by another request on the same file
+from the same machine. All network activity can cease as well as all
+keyboard/mouse access to the console.
+
+CAUSE
+=====
+
+In certain instances Windows for Workgroups does not wait for a response from an
+SMBClose request to the server. This normally is not a problem, but if the Close
+has not finished and another operation (open, delete or rename) is requested on
+the same file, the OS/2 LAN Manager server may freeze as it attempts to perform
+both operations on the file "at the same time."
+
+RESOLUTION
+==========
+
+Windows for Workgroups version 3.11 addresses this issue. The Windows for
+Workgroups development team has also created a site specific fix to version 3.1
+for those sites where upgrading is not an option.
+
+Additional query words: wfw wfwg 2.20 snoball vredir 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,107 @@
+DOCUMENT:Q194526  26-MAY-2002  [homegame]
+TITLE   :FS/Combat FS: How to Disable the Opening Movie
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Flight Simulator 98 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2002 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to disable the opening video in Microsoft flight
+simulators.
+
+MORE INFORMATION
+================
+
+To disable the opening video in flight Simulators, follow these steps:
+
+1. Quit any programs that are running including the simulator.
+
+2. Click Start, and then click Find or Search.
+
+   If you are using Windows 98, click Files or Folders and if you are using
+   Windows XP, click "All files and folders".
+
+3. In the Named or "All or part of the file name" box, type the appropriate file
+   name for your version of Flight Simulator or Combat Flight Simulator.
+
+Combat Flight Simulator 2:
+
+   cfs2,cfg
+
+Combat Flight Simulator:
+
+   Combatfs,cfg
+
+Flight Simulator 98:
+
+   fltsim98.cfg
+
+Flight Simulator 2000:
+
+   fs2000.cfg
+
+Flight Simulator 2002:
+
+   fs2002.cfg
+
+4. In the Look In box, click My Computer.
+
+5. Click Find Now or Search.
+
+6. Double-click the .cfg file that was found.
+
+7. In the "Choose the program you want to use" box, click Notepad.
+
+8. Clear the "Always use this program to open this file" check box, and then
+   click OK.
+
+9. On the Search menu, click Find.
+
+10. Type "[MAIN]" (without the quotation marks) and then click Find Next.
+
+11. When you locate the [MAIN] section, click Cancel, and then change the number
+   at the end of the following line to 0:
+
+   ShowLogo=1
+
+12. On the File menu, click Exit. When you are prompted to save the changes,
+   click Yes.
+
+13. Restart the flight simulator you are using.
+
+Additional query words: 1.00 msgame combatfs cfs cfs2
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu msgame kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbFlightSim2002 kbSimSearch
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

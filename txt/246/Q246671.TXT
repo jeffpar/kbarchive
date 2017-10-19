@@ -1,0 +1,68 @@
+DOCUMENT:Q246671  14-SEP-2001  [automap]
+TITLE   :MapPoint: Helpful Web Sites for Creating Maps
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kburl kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following Internet Web sites may be helpful when you create a map in
+Microsoft MapPoint.
+
+List of Counties
+----------------
+
+You can view a list of all of the counties in the United States at the following
+government census Web site:
+
+   http://www.census.gov/datamap/fipslist/AllSt.txt
+
+List of Abbreviations for States
+--------------------------------
+
+You can view a list of official abbreviations for each state and territory at the
+following United States Post Office (USPS) Web site:
+
+   http://www.usps.gov/ncsc/lookups/usps_abbreviations.htm
+
+Search by Zip Code
+------------------
+
+You can search for the city or state within which a certain zip code is located
+at the following USPS Web site:
+
+   http://www.usps.gov/ncsc/lookups/lookup_ctystzip.html
+
+Additional query words: mp2000 mp2001 searching resources
+
+======================================================================
+Keywords          : kburl kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000 kbMapPoint2001
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q131126  11-DEC-1999  [homemm]
+TITLE   :Wine Guide: Cannot Print More Than 99 Copies of Wine Selector
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0,1.0a,2.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Wine Guide for Windows, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print more than 99 copies of the current Wine Selector wine list
+to a LaserJet printer, only one copy prints.
+
+RESOLUTION
+==========
+
+To print more than 99 copies of the selected list of wines, you need to print
+the copies in two or more batches.
+
+For example, if you want to print 100 copies, you can print two batches
+containing 50 copies each.
+
+MORE INFORMATION
+================
+
+PCL (Printer Control Language) is used in the LaserJet printer technology. PCL
+is designed to print 1 to 99 copies even though higher numbers can be entered in
+the Copies box. Other printer technologies are not affected by this problem
+(i.e. inkjet).
+
+
+Additional query words: mmtitles kbmm selection sets documentation selecter prints
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbWine100 kbWine100a kbWine200
+Version           : WINDOWS:1.0,1.0a,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

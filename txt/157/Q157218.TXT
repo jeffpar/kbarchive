@@ -1,0 +1,83 @@
+DOCUMENT:Q157218  13-JUN-2001  [sna]
+TITLE   :Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you transfer a large amount of data using the Microsoft SNA Server Windows
+95 client configured to use TCP/IP sockets to communicate with the server, some
+data bytes (15-20 bytes) may be corrupt when passed to the Win32 application. No
+APPC or CPIC errors will occur, though some data bytes received by the
+application may be corrupt.
+
+This problem has been observed in the following configuration:
+
+ - SNA Server Windows 95 client software (from 2.11.sp1) configured to use
+   TCP/IP sockets.
+
+ - Using a 32-bit Windows application that reads or receives large messages and
+   simultaneously sends data.
+
+Applications that have encountered data corruption include:
+
+ - IBM Client Access/95, after retrieving a PTF download from the AS/400, which
+   is unable to run due to random DLL errors when starting.
+
+ - Win32 APPC/CPIC database applications that receive large data messages. Part
+   of the received data may be corrupt (or include "garbage" characters).
+
+CAUSE
+=====
+
+The SNA Server Windows 95 TCP/IP client transport was not properly receiving
+large TCP/IP data messages for a Win32 application, when the same application
+was simultaneously trying to send data. In one case, data corruption occurred.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft SNA Server Windows
+95 client included in SNA Server 2.11 Service Pack 1. This problem was corrected
+in the latest Microsoft SNA Server 2.11 U.S. Service Pack. For information on
+obtaining the service pack, query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: sp1 prodsna
+
+======================================================================
+Keywords          : kb3rdparty kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

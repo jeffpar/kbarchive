@@ -1,0 +1,68 @@
+DOCUMENT:Q156448  04-MAY-2001  [ssafe]
+TITLE   :INFO: Some Files and Projects are Upper Case after Upgrade
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,4.0a
+OPER/SYS:
+KEYWORDS:kbSSafe400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you upgrade from SourceSafe 3.x to Visual SourceSafe 4.0, all of the 8.3
+files that were in mixed case are now in upper case. The case of long file names
+are preserved.
+
+MORE INFORMATION
+================
+
+If you noticed this change right after the upgrade, then running the 32-bit
+Ddconv.exe utility dated 1/9/96 or later may resolve the problem. The Ddconv.exe
+utility is available from most Microsoft download sites. It is included with the
+Analyze.exe utility.
+
+If you noticed this change some time after the upgrade, the newer Ddconv.exe may
+or may not work. If it does not work, the only option is to rename the files in
+Visual SourceSafe. To do this, access the File Menu and choose the Rename...
+option.
+
+REFERENCES
+==========
+
+The analyze utility can be obtained with directions in the following Microsoft
+Knowledge Base article:
+
+   Q190881 SAMPLE: Analyze6.exe Utility for Visual SourceSafe
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,4.0a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q74984  17-DEC-2000  [msdos]
+TITLE   :EMM386.EXE Hangs Machine with Adaptec Controller
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using Microsoft MS-DOS 5.0 EMM386.EXE with an Adaptec host adapter,
+some of your device drivers and terminate-and-stay-resident (TSR) programs may
+not load or your system may stop responding (hang).
+
+WORKAROUND
+==========
+
+To work around this problem, you must obtain the current ASPI (Advance SCSI
+Programming Interface) device drivers from Adaptec. The ASPI device drivers are
+included with new Adaptec EZ-SCSI software. You can purchase the Adaptec EZ-SCSI
+software by calling Adaptec.
+
+If you already have an ASW-1410 or ASW-1210 controller card, you can upgrade to
+the current ASPI version by downloading it from the Adaptec bulletin board
+service.
+
+If you already have ASPI drivers, you should move the command for those drivers
+to the first line of your CONFIG.SYS file.
+
+For more information, please contact Adaptec Technical Support.
+
+The products included here are manufactured by Adaptec, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 5.00 3rdparty third-party third party
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

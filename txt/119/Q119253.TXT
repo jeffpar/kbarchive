@@ -1,0 +1,47 @@
+DOCUMENT:Q119253  03-MAR-2001  [pcmail]
+TITLE   :ATT: ADPROC.EXE Allows AT&Tand SMTP Gateways to Coexist
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0,1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to AT T, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+Version 1.0 of the Microsoft Mail Gateway to AT&T Mail cannot operate if
+the Microsoft Mail Gateway to SMTP is installed on the same postoffice.
+
+Version 1.1 of the Microsoft Mail Gateway to AT&T Mail, however, can
+coexist with the Microsoft Mail Gateway to SMTP on the same physical
+Microsoft Mail shared file system postoffice, if you use ADPROC.EXE--the
+SMTP address preprocessor executable provided by AT&T. This takes the
+place of SMTPGET.EXE for both the AT&T and the SMTP gateways.
+
+AT&T supports ADPROC.EXE. Their support center number is 1-800-624-5672.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateATT110 kbMailGateATT100
+Version           : :1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

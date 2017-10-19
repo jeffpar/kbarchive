@@ -1,0 +1,76 @@
+DOCUMENT:Q252605  24-OCT-2000  [winnt]
+TITLE   :PRB: AutoCAD Lt 2000 Uninstall Does Not Work from Start Menu
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to uninstall AutoCAD Lt 2000 from the Start menu (by clicking
+Start, pointing to Programs, and selecting AutoCAD Lt 2000 Uninstall and then
+Uninstall AutoCAD LT 2000) a dialog box appears with the message, "The filename,
+directory name, or volume label syntax is incorrect."
+
+After you click ok, another message appears announcing that Windows is searching
+for the Unaclt.dll file.
+
+CAUSE
+=====
+
+The installation program does not understand long path names.
+
+RESOLUTION
+==========
+
+To work around this issue, remove the program using the Add/Remove Programs
+utility in Control Panel.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install AutoCAD Lt 2000.
+
+2. Click Start, point to Programs, and select AutoCAD Lt 2000 Uninstall.
+
+3. Remove AutoCAD Lt 2000 by clicking on Uninstall AutoCAD Lt 2000.
+
+The installation program cannot handle the long path name, so the link fails.
+However, you can uninstall the program using Control Panel.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

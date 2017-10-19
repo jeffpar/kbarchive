@@ -1,0 +1,57 @@
+DOCUMENT:Q160130  09-MAY-2002  [homegame]
+TITLE   :Hellbender: Hat View When Pressing SideWinder Buttons
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0,1.0a,1.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.0 1.0a 1.0b
+WINDOWS
+kbother
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Hellbender for Windows, versions 1.0, 1.0a, 1.0b 
+ - Microsoft SideWinder 3D Pro, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Hellbender with the Microsoft SideWinder 3D Pro joystick, your
+view may change to one of the hat views when multiple buttons are pressed
+simultaneously.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. Currently there is no resolution to
+this problem.
+
+Additional query words: 1.0 change joystick 3D Pro two look 3-d joy stick hardware
+
+======================================================================
+Keywords          :  
+Technology        : kbMSHardwareSearch kbGamesSearch kbZNotKeyword kbHellBender kbSideWinder3DPro kbSidewinderSearch
+Version           : WINDOWS:1.0,1.0a,1.0b
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

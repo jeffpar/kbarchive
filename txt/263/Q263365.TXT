@@ -1,0 +1,74 @@
+DOCUMENT:Q263365  04-JUL-2001  [sms]
+TITLE   :SMS: Remote Control Not Removed if Terminal Services Is Enabled
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200bug kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Microsoft Systems Management Server client is installed on a Microsoft
+Windows 2000 Server computer on which the Terminal Services program is not
+available, Remote Tools are automatically installed and function normally. If
+Terminal Services is subsequently made available, Remote Tools are not
+automatically removed.
+
+CAUSE
+=====
+
+This issue occurs because the Remote Tools Client Agent is not installed if
+Terminal Services is enabled in Application mode on the Terminal Services
+Server.
+
+WORKAROUND
+==========
+
+To remove Remote Tools from Terminal Services on the Windows 2000 Server
+computer, remove the Systems Management Server client, and then re-install the
+client while Terminal Services is running. The Systems Management Server client
+then recognizes that Terminal Services is running on the Windows 2000 Server
+computer and does not install Remote Tools.
+
+NOTE: Remote Tools are not supported on computers running Terminal Services
+Server and SMS 2.0 with SP 2 or earlier. This has been resolved in the latest
+Service Pack (SP3).
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsms200bug kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP2
+Version           : :2.0,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

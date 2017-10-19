@@ -1,0 +1,65 @@
+DOCUMENT:Q321105  09-MAY-2002  [ssafe]
+TITLE   :How to Obtain Visual SourceSafe 6.0c
+PRODUCT :Microsoft SourceSafe
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe 6.0c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual SourceSafe provides robust versioning and configuration
+management functionality and security and audit trail capabilities.
+
+Visual SourceSafe 6.0c is included with the following Microsoft Visual Studio
+.NET editions:
+
+ - Visual Studio .NET Enterprise Architect
+
+ - Visual Studio .NET Enterprise Developer
+
+You can also obtain Visual SourceSafe 6.0c with an MSDN Universal Subscriptions
+or Academic Alliance Subscription.
+
+MORE INFORMATION
+================
+
+For more information about the different versions of Visual Studio .NET and how
+to obtain a MSDN subscription, see the following Microsoft Web sites:
+
+Visual Studio .NET Feature Comparison
+(http://msdn.microsoft.com/vstudio/howtobuy/choosing.asp)
+
+MSDN Subscriptions Overview
+(http://msdn.microsoft.com/subscriptions/prodinfo/overview.asp)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600C
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

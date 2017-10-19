@@ -1,0 +1,248 @@
+DOCUMENT:Q242997  21-NOV-1999  [sna]
+TITLE   :How To Manually Uninstall Microsoft SNA Server Client 4.0
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IMPORTANT: This article contains information about editing the registry. Before
+you edit the registry, make sure you understand how to restore it if a problem
+occurs. For information about how to do this, view the "Restoring the Registry"
+Help topic in Regedit.exe or the "restoring a Registry Key" Help topic in
+Regedt32.exe.
+
+Microsoft recommends using the SNA client Setup program to remove the client
+software. However, if this is not possible, the following procedures document
+how to manually remove either the SNA Windows 9x client or SNA Windows NT client
+included with SNA Server 4.0.
+
+MORE INFORMATION
+================
+
+Steps to Manually Uninstall SNA Server Client 4.0
+-------------------------------------------------
+
+Manually removing the SNA Windows 95 Client on Windows 9x and Windows NT:
+
+1. Click Start, Run, and in the Open box type "Explorer" (without the quotation
+   marks).
+
+2. Locate the folder in which SNA Server 4.0 Client for Windows 95 was
+   installed. The default is C:\Sna95.
+
+   NOTE: If Service Pack 2 was included in the version of SNA Server Client 4.0,
+   the default folder will be C:\Program Files\SNA95.
+
+3. Rename the folder to Old_Sna95. For information about how to rename a folder,
+   click Start, click Help, click the Index tab, type "renaming" (without the
+   quotation marks), and then select the Renaming folders topic.
+
+4. Remove the following folder:
+
+   Windows 9x - Windows\Start Menu\Programs\Microsoft SNA Server Client
+   Windows NT - WINNT\Profiles\%User%\Start Menu\Programs\Microsoft SNA Server Client
+
+5. Start a command prompt by following the steps for each operating system:
+   Windows 9x
+   1. Click Start, click Programs, and then select MS-DOS Prompt.
+
+   2. At the command prompt, type the following and press
+      Enter:
+
+      " cd\windows\system" (without the quotation marks)
+
+   Windows NT
+   1. Click Start, click Programs, and then select Command Prompt.
+
+   2. At the command prompt, type the following and press Enter:
+
+      " cd\winnt\system32" (without the quotation marks)
+
+   At the command prompt, type the following and press Enter after each line:
+
+   " REN ADLOC.DLL ADLOC.OLD
+   REN APPCST32.DLL APPCST32.OLD
+   REN BVNSST.DLL BVNSST.OLD
+   REN DBGTRACE.DLL DBGTRACE.OLD
+   REN FMISTR32.DLL FMISTR32.OLD
+   REN IPBCAST.DLL IPBCAST.OLD
+   REN CSVSTR32.DLL CSVSTR32.OLD
+   REN DMODAPPC.DLL DMODAPPC.OLD
+   REN LMBCAST.DLL LMBCAST.OLD
+   REN LUASTR32.DLL LUASTR32.OLD
+   REN SNASAP32.DLL SNASAP32.OLD
+   REN SNANDS32.DLL SNANDS32.OLD
+   REN SNACIP.DLL SNACIP.OLD
+   REN SNACBV.DLL SNACBV.OLD
+   REN VSTAPI.DLL VSTAPI.OLD
+   REN SNACLM.DLL SNACLM.OLD
+   REN SNACNW.DLL SNACNW.OLD
+   REN SNADMOD.DLL SNADMOD.OLD
+   REN SNADUMP.DLL SNADUMP.OLD
+   REN SNAKRNL.DLL SNAKRNL.OLD
+   REN SNANLS.DLL SNANLS.OLD
+   REN SNANCP.DLL SNANCP.OLD
+   REN SNAREG.DLL SNAREG.OLD
+   REN SNATRC.DLL SNATRC.OLD
+   REN SNATRCSN.DLL SNATRCSN.OLD
+   REN TRNSDT.DLL TRNSDT.OLD
+   REN TRNSDTS.DLL TRNSDTS.OLD
+   REN TRNSDTJ.DLL TRNSDTJ.OLD
+   REN TRNSDTK.DLL TRNSDTK.OLD
+   REN TRNSDTT.DLL TRNSDTT.OLD
+   REN WAPPC32.DLL WAPPC32.OLD
+   REN WCPIC32.DLL WCPIC32.OLD
+   REN WINAPPC .DLL WINAPPC .OLD
+   REN WINCPIC.DLL WINCPIC.OLD
+   REN WINCSV .DLL WINCSV .OLD
+   REN WINCSV32.DLL WINCSV32.OLD
+   REN WINMGT32.DLL WINMGT32.OLD
+   REN WINRUI.DLL WINRUI.OLD
+   REN WINRUI32.DLL WINRUI32.OLD
+   REN WINSLI.DLL WINSLI.OLD
+   REN WINSLI32.DLL WINSLI32.OLD
+   REN LTYPE.TTF LTYPE.OLD
+   REN CP_1047.NLS CP_1047.OLD
+   REN CP_1140.NLS CP_1140.OLD
+   REN CP_1141.NLS CP_1141.OLD
+   REN CP_1142 .NLS CP_1142 .OLD
+   REN CP_1143.NLS CP_1143.OLD
+   REN CP_1144.NLS CP_1144.OLD
+   REN CP_1145.NLS CP_1145.OLD
+   REN CP_1146.NLS CP_1146.OLD
+   REN CP_1147.NLS CP_1147.OLD
+   REN CP_1148.NLS CP_1148.OLD
+   REN CP_1149.NLS CP_1149.OLD
+   REN CP_20924.NLS CP_20924.OLD
+   REN CP_28605.NLS CP_28605.OLD
+   REN CP_858.NLS CP_858.OLD
+   REN MSDB2BAS.DLL MSDB2BAS.OLD
+   REN MSDB2OLE.DLL MSDB2OLE.OLD
+   REN MSDB2UTL.DLL MSDB2UTL.OLD
+   REN MSDB2OLE.HLP MSDB2OLE.PLH
+   " (without the quotation marks)WARNING: Using Registry Editor incorrectly can
+   cause serious problems that may require you to reinstall your operating
+   system. Microsoft cannot guarantee that problems resulting from the incorrect
+   use of Registry Editor can be solved. Use Registry Editor at your own risk.
+
+6. Using Registry Editor, remove the following keys:
+
+   NOTE: Depending on what components were chosen during setup, some keys listed
+   here may not exist.
+
+   HKEY_CLASSES_ROOT\tn3270
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SNA OLE DB
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SNA Server
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SNABase
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SNADB2
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\SnaClient
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Help\Readme.hlp
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Help\SnaBase.hlp
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Help\SnaTrace.hlp
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Help\Win3270.hlp
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Help\Win5250.hlp
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA 3270 Emulator
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA 5250 Emulator
+   HKEY_USERS\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder\Start Menu\Programs\Microsoft SNA Server
+
+7. Restart the computer by clicking Start, Shutdown, and Restart the computer.
+
+8. Once back at the Desktop, all files renamed with the *.OLD extension may be
+   deleted to gain disk space.
+
+Manually removing the SNA Windows NT Client on Windows NT
+---------------------------------------------------------
+
+1. Click Start, Run, and in the Open box type "Explorer" (without the quotation
+   marks).
+
+2. Locate the folder in which SNA Server 4.0 Client for Windows NT was
+   installed. The default is C:\Sna.
+   NOTE: If Service Pack 2 was included in the version of SNA Server Client 4.0,
+   the default folder will be C:\Program Files\SNA.
+
+3. Rename the folder to Old_Sna. For information about how to rename a folder,
+   click Start, click Help, and then select Index tab, type "renaming" (without
+   the quotation marks), and then select the Renaming folders topic.
+
+4. Remove the following folder:
+
+   Windows NT - WINNT\Profiles\All Users\Start Menu\Programs\Microsoft SNA Server Client
+
+   WARNING: Using Registry Editor incorrectly can cause serious problems that may
+   require you to reinstall your operating system. Microsoft cannot guarantee
+   that problems resulting from the incorrect use of Registry Editor can be
+   solved. Use Registry Editor at your own risk.
+
+5. Using Registry Editor, remove the following keys:
+
+   NOTE: Depending on what components were chosen during setup, some keys listed
+   here may not exist.
+
+   HKEY_CLASSES_ROOT\tn3270
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SNA OLE DB
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SNA Server
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\COMTI
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\COMTI Admin
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\COMTI Resync TP
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\COMTI Snap-In
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA 3270 Emulator
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA 5250 Emulator
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA AFTP Client
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA APPC Application
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA Base Service
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA CPI-C Application
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA CSV Application
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA DDM Service
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA Host Security
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA NetMn Service
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA NetView Alerter
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA NetView RunCmd
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA RAS Service
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA RUI Application
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA Server<BR/>
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\Application\SNA SLI Application
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NVAlert
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SnaBase
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SnaDdm
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UN2
+
+6. Restart the machine by clicking Start, clicking Shutdown, and then Restart
+   the computer.
+
+7. Once back at the Desktop, all files renamed with the *.OLD extension may be
+   deleted to gain disk space.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

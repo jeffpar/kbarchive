@@ -1,0 +1,74 @@
+DOCUMENT:Q260985  23-OCT-2000  [exchange]
+TITLE   :XIMS: Minimum NTFS Permissions Required to Use CDONTS
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:1.1,1.2,2.0; winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Internet Information Server versions 4.0, 5.0 
+ - Collaboration Data Objects (CDO) for NTS, versions 1.1, 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the minimum NTFS permissions that are required to use
+Collaboration Data Objects for Windows NT Servers (CDONTS) in conjunction with
+either the Internet Information Server (IIS) SMTP service or the Exchange Server
+Internet Mail Service.
+
+MORE INFORMATION
+================
+
+If you are using CDONTS with the Option Pack SMTP service, the following minimum
+NTFS permissions are required:
+
+ - The IUSR account must have Add rights to the Mailroot\Pickup folder.
+
+ - If you are running CDONTS out of process, the IWAM account must have Add
+   rights to the Mailroot\Pickup folder.
+
+ - The System account must have Full Control rights to the entire Mailroot
+   folder structure.
+
+ - The default location for the Mailroot folder is Inetpub\Mailroot.
+
+If you are using CDONTS with Exchange Server, the following minimum NTFS
+permissions are required:
+
+ - The IUSR account must have Add rights to the Exchsrvr\Imcdata\Pickup folder.
+
+ - If you are running CDONTS out of process, the IWAM account must have Add
+   rights to the Exchsrvr\Imcdata\Pickup folder.
+
+ - The Exchange Server service account must have Full Control rights to the
+   entire Exchsrvr\Imcdata folder structure.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbiisSearch kbAudDeveloper kbCDOsearch kbExchangeSearch kbExchange550 kbiis500 kbiis400 kbZNotKeyword2 kbCDO110NTS kbCDO120NTS kbCDO200NTS
+Version           : WINDOWS:1.1,1.2,2.0; winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

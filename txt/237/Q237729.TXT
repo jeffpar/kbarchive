@@ -1,0 +1,67 @@
+DOCUMENT:Q237729  14-OCT-1999  [homegame]
+TITLE   :NFL Fever: Only One of Two Installed Video Adapters Is Listed
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If two video adapters are installed in your computer, only one of the video
+adapters may appear in the list of drivers on the Display Options screen in
+Microsoft NFL Fever 2000.
+
+CAUSE
+=====
+
+This behavior can occur if two 3D video adapters are installed in your
+computer.
+
+This behavior does not occur if you use a 3D accelerator card to display 3D
+graphics.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, disable one of the video adapters
+installed in your computer. To do this, consult the printed documentation
+provided with the video adapter that you want to disable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft NFL Fever 2000,
+version 1.0.
+
+Additional query words: 1.00 msgame nflfever nfl2k football missing
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

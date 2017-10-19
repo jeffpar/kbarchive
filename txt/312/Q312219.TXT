@@ -1,0 +1,71 @@
+DOCUMENT:Q312219  13-NOV-2001  [mspress]
+TITLE   :MCSE Training Kit: Microsoft Internet Security and Acceleration
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS MCSE Training Kit Microsoft Internet Security And Acceleration Server 2000 ISBN 0-7356-1347-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book MCSE Training Kit: Microsoft Internet
+Security and Acceleration Server 2000, ISBN 0-7356-1347-8.
+
+The following topics are covered:
+
+ - Page 68: CD Key Not Located On The Back Of The CD Case
+
+MORE INFORMATION
+================
+
+Page 68: CD Key Not Located On The Back Of The CD Case
+------------------------------------------------------
+
+On page 68, step 1 reads:
+
+"1. CD Key. This is the 10-digit number located on back of the ISA Server CD-ROM
+case."
+
+This is incorrect. The CD Key is not located on the back of the ISA Server CD-ROM
+case; it is located on page 74 in step 3:
+
+"3. For the ISA Server CD key, type the product identification number listed here
+(880-4486616)..."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1347-8 TKBOOK MACKIN
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,61 @@
+DOCUMENT:Q244211  06-AUG-2002  [winnt]
+TITLE   :Cannot Save Office 97 Files to Terminal Server ICA Client
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP4
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to save a Microsoft Office 97 file to a client computer that is
+using the Citrix Metaframe Independent Computing Architecture (ICA) client by
+using the Save As command and browsing through Network Neighborhood back to your
+client computer, you receive the following error message:
+
+   You do not have access to the client folder.
+
+RESOLUTION
+==========
+
+To work around this behavior so that you can save an Office 97 file to a local
+drive or share on your Terminal Server client computer (that is using the
+Metaframe ICA client), use the mapped drive letters that are created by default
+during the Terminal Server logon process:
+
+1. When you are ready to save an Office 97 file, click Save As on the File menu.
+
+2. In the Save In box, click a locally mapped drive to which you want to save
+   the file. The locally mapped drives have a <driveletter>$ designation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServSearch
+Version           : winnt:4.0,4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

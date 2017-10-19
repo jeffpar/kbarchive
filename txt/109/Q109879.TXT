@@ -1,0 +1,71 @@
+DOCUMENT:Q109879  02-NOV-1999  [fortran]
+TITLE   :BUG: Inline Comment with "!" Can Act Like a C String
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A program containing "!" (to denote an inline comment) directly following a
+string constant interprets the "!" as the letter "C" and appends a null
+character to the string.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+32 version 1.0. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+String values in the C language are terminated with null characters. This type
+of string is specified in Microsoft FORTRAN by using a standard string constant
+followed by the character C. The code sample below shows how unwanted null
+characters are appended to string constants with "!" directly following.
+
+Sample Code
+-----------
+
+           OPEN (1, FILE='TEST')
+         WRITE(1, '(A)') 'Normal string'      ! This is a normal FORTRAN
+   c     string
+         WRITE(1, '(A)') 'Normal C string'C   ! The C following the string
+   c     constants indicates a C string
+         WRITE(1, '(A)')  'Extra null char'!  ! The "!" treats this
+   c     string as a C string
+         CLOSE (1)
+         END
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q240291  30-MAY-2002  [homegame]
+TITLE   :Zone Err Msg: Could Not Load the Plug-in...
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you load an Zone Web page, you may receive the following error message:
+
+   Could not load the plug-in 'Zone.com Plugin' for the MIME type
+   'application/x-MSNZoneHeartbeat'.
+
+   Make sure enough memory is available and that the plug-in is installed
+   correctly.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - You are using a Microsoft Windows 95-based computer.
+ - The Distributed Component Object Model (DCOM) is not installed on the
+   computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install DCOM95 for Windows 95 from the
+following Microsoft Web site:
+
+   http://www.microsoft.com/com/dcom/dcom95/dcom1_3.asp
+
+Additional query words: msgame igz msngz
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

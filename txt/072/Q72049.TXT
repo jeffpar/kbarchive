@@ -1,0 +1,68 @@
+DOCUMENT:Q72049  26-OCT-1999  [win95x]
+TITLE   :Windows Causes Reboot on Everex 386/25 AGI 3900A
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Windows 3.0 on an Everex 386/25 AGI 3900A, the system
+reboots. This happens at 25 megahertz (MHz), but not at the slower speed of 12
+MHz.
+
+RESOLUTION
+==========
+
+For Windows to run at 25 MHz, the caching on the motherboard needs to be
+disabled:
+
+1. Press the DEL key when you turn on the Everex 386/25 AGI 3900A computer.
+
+2. You are given a choice of going to the CMOS setup or to the EEPROM setup.
+   Choose the EEPROM setup.
+
+3. Move down through the selections until you come to the Caching option. Using
+   the LEFT or RIGHT ARROW key, choose Disable.
+
+4. Press the ESC key to save and reboot.
+
+MORE INFORMATION
+================
+
+For more information, contact Everex technical support.
+
+The Everex product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding the product's
+performance or reliability.
+
+Additional query words: 3.00 win30 3.00a 3rdparty KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

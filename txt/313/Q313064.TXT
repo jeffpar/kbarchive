@@ -1,0 +1,262 @@
+DOCUMENT:Q313064  06-AUG-2002  [iis]
+TITLE   :HOW TO: Monitor Web Server Performance by Using Counter Logs
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbenv kbAudITPro kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - How to Create a Counter Log
+ - How to Configure a Counter Log
+ - How to Choose Counters
+
+ - REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to create and configure counter logs in
+System Monitor so that you can monitor Web server performance.
+
+In System Monitor, you can create logs to automatically collect server activity
+data at specified intervals. You can then use this data to help you identify the
+cause of delays, and to tune your server for optimal performance.
+
+System Monitor uses counters to track the activity of specific objects (services
+or mechanisms that control server resources). In addition to the objects and
+counters that are included with Microsoft Windows 2000 Server, Internet
+Information Services (IIS) 5.0 installs counters that monitor Web server
+performance. These counters include global IIS counters, Web service counters,
+File Transfer Protocol (FTP) service counters, and Active Server Pages (ASP)
+program counters. Global IIS counters monitor the activity of all IIS services,
+such as bandwidth usage and caching. Web service, FTP service, and ASP program
+counters monitor connection activity.
+
+How to Create a Counter Log
+---------------------------
+
+To create a counter log:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Performance.
+
+2. Double-click "Performance Logs and Alerts" in the console tree, and then
+   click Counter Logs.
+
+3. Right-click an empty area in the right details pane.
+
+4. Type a name for the log in the New Log Settings dialog box, and then click
+   OK.
+
+5. Click the General tab, and then click Add.
+
+6. Click the object that you want to monitor (for example, click Web Service) in
+   the "Performance object" box, click either "All counters" or "Select counters
+   from list", and then click the counter or counters that you want to log.
+
+   NOTE: To view a description of a counter, click the counter, and then click
+   Explain.
+
+7. To monitor all instances of the selected counter, click "All instances". To
+   monitor specific instances of the selected counters, click "Select instances
+   from list", and then click the instances that you want to monitor.
+
+8. Click Add.
+
+9. Repeat step 6 through step 8 to add the counters that you want to log. When
+   you are finished, click Close.
+
+10. Specify the value that you want in the Interval box, and then click the unit
+   of time that you want in the Unit box.
+
+11. Click OK.
+
+How to Configure a Counter Log
+------------------------------
+
+To configure a counter log:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Performance.
+
+2. Double-click "Performance Logs and Alerts" in the console tree, and then
+   click Counter Logs.
+
+3. Double-click the log that you want to configure in the right details pane.
+
+4. Click the Log Files tab, and then specify the options that you want by
+   performing any of the following steps:
+
+    - Accept the default location or specify the location that you want for the
+      log file in the "Log file name" box, and then specify the log file name
+      options that you want.
+
+    - Specify the format that you want for the log file in the "Log file type"
+      box. For example, "Binary File".
+
+    - Specify whether you want to limit the size of the log file in the "Log
+      file size" box.
+
+5. Click the Schedule tab, and then use the following steps:
+
+   a. To configure logging in the "Start log" box:
+
+       - To configure the logging to start manually, click "Manually (using the
+         shortcut menu)".
+
+         -or-
+
+       - To configure the logging to start at a specified time and date, click
+         At, and then specify the time and date that you want the logging to
+         start.
+
+   b. Use the following steps to configure the information in the "Stop log"
+      box:
+
+       - Click "Manually (using the shortcut menu)" to manually stop the
+         logging.
+
+         -or-
+
+       - Click After, and then specify a period of time after which the logging
+         automatically stops.
+
+         -or-
+
+       - Click At, and then specify the time and date that you want the logging
+         to stop.
+
+         -or-
+
+       - Click "When the <size> log file is full", where <size> is
+         the log file size limit that you set on the Log Files tab. This option
+         is available only if you specify a log file size limit in the "Limit
+         of" box on the Log Files tab.
+
+   c. Specify the option that you want (if any) in the "When a log file closes"
+      box.
+
+6. Click OK.
+
+How to Choose Counters
+----------------------
+
+There are hundreds of counters from which you can choose to monitor server
+activity. The following list describes the counters that are useful for
+monitoring the load on your Web server, and provides ideal values for each.
+
++------------------------------------------------------------------------------------------------------------------+
+| Object or counter                                             | Ideal value                                      | 
++------------------------------------------------------------------------------------------------------------------+
+| Memory or pages per second                                    | Zero to 20 (indicates trouble if over 80)        | 
++------------------------------------------------------------------------------------------------------------------+
+| Memory or available bytes                                     | At least 4 megabytes (MB)                        | 
++------------------------------------------------------------------------------------------------------------------+
+| Memory or committed bytes                                     | Not more than 75 percent of physical memory size | 
++------------------------------------------------------------------------------------------------------------------+
+| Memory or pool nongpaged bytes                                | Steady (a slow rise may indicate a memory leak)  | 
++------------------------------------------------------------------------------------------------------------------+
+| Processor or percent of processor time                        | Less than 75 percent                             | 
++------------------------------------------------------------------------------------------------------------------+
+| Processor or system processor queue length                    | Less than 2                                      | 
++------------------------------------------------------------------------------------------------------------------+
+| Disk (logical or physical) or percent disk time               | As low as possible                               | 
++------------------------------------------------------------------------------------------------------------------+
+| Disk (logical or physical) or queue length                    | Less than 2                                      | 
++------------------------------------------------------------------------------------------------------------------+
+| Disk (logical or physical) or average disk bytes per transfer | As high as possible                              | 
++------------------------------------------------------------------------------------------------------------------+
+| IIS global or cache hits percent                              | As high as possible                              | 
++------------------------------------------------------------------------------------------------------------------+
+| Web service or bytes total per second                         | As high as possible                              | 
++------------------------------------------------------------------------------------------------------------------+
+| ASP or request wait time                                      | As low as possible                               | 
++------------------------------------------------------------------------------------------------------------------+
+| ASP or requests queued                                        | Zero                                             | 
++------------------------------------------------------------------------------------------------------------------+
+| ASP or transactions per second                                | As high as possible                              | 
++------------------------------------------------------------------------------------------------------------------+
+
+
+REFERENCES
+==========
+
+For additional information about how to create and use counter logs in which to
+monitor server performance, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q248345 How to Create a Log Using System Monitor in Windows 2000
+
+   Q302521 HOW TO: Manage Performance Monitor Counters
+
+   Q243423 How to View a System Monitor Log
+
+   Q238145 How to Monitor Bandwidth Throttling
+
+For additional information about how to enable IIS logging, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q300390 HOW TO: Enable IIS Logging Site Activity
+
+For additional information about how to optimize IIS, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q308186 HOW TO: Optimize Web Server Performance
+
+   Q305313 Optimizing Internet Information Services 5.0
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q323312 HOW TO: Create an IIS Baseline by Using Log Analysis
+
+For additional information about how to gather individual baseline information,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+   Q323314 HOW TO: Create an IIS Baseline by Using the Memory Object
+
+   Q323315 HOW TO: Create an IIS Baseline by Using the Processor Object
+
+   Q323316 HOW TO: Create an IIS Baseline by Using the Active Server Pages
+   Object
+
+   Q323317 HOW TO: Create an IIS Baseline by Using the Web Service Object
+
+   Q323701 HOW TO: Create an IIS Baseline by Using the Process Object
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

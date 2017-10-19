@@ -1,0 +1,67 @@
+DOCUMENT:Q134542  17-DEC-2000  [win95x]
+TITLE   :Extended video (VESA) Programs Display Incorrectly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On some Cirrus Logic-based laptops, Extended Video (VESA) programs may not
+display correctly.
+
+RESOLUTION
+==========
+
+To eliminate the display problems, run the VESA programs in Single MS-DOS
+Application Mode. To do so, follow these steps:
+
+1. Click the Start button, point to Programs, and then click MS-DOS Prompt on
+   the menu that appears.
+
+2. In the MS-DOS Prompt dialog box, click the Properties button.
+
+3. In the MS-DOS Prompt Properties dialog box, click the Program tab, and then
+   click the Advanced button.
+
+4. In the Advanced Program Settings dialog box, make sure the MS-DOS Mode box is
+   checked, and then click the OK button.
+
+MORE INFORMATION
+================
+
+Typically, a VESA program is displayed only on the top half of the screen,
+overlapping itself. The program generally remains functional, and you are able
+to quit the program properly.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

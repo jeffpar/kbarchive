@@ -1,0 +1,61 @@
+DOCUMENT:Q140769  13-JUN-2001  [homekids]
+TITLE   :Writer/Artist: Mouse Doesn't Work
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1 
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your mouse pointer may not be available in the Creative Writer Writing Studio or
+Fine Artist Painting Studio in Windows if more than one mouse driver is loading.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the extra mouse driver. To do this, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System, and then click the Device Manager tab.
+
+3. Double-click the Mouse branch to expand it.
+
+4. Click the incorrect or unused driver below Mouse, and then click Remove.
+
+5. Click OK, and then close Control Panel.
+
+Additional query words: kids mskids artist maggie max mczee writer mouse driver hangs Windows95 win95 cursor does not appear display cannot see invisible
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeProdSearch kbZNotKeyword2 kbCreativeWriter100 kbCreativeWriter110 kbFineArtist100 kbFineArtist110
+Version           : WINDOWS:1.0,1.1,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

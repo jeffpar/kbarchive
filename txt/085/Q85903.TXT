@@ -1,0 +1,78 @@
+DOCUMENT:Q85903  30-OCT-1999  [win95x]
+TITLE   :CodeView Err Msg: Attempted to Run Protected Mode...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Microsoft CodeView under Windows 3.0 in a 386 enhanced mode
+MS-DOS session, the following error message is displayed:
+
+   You have attempted to run a protected-mode application under 386 enhanced
+   mode. To run the application, exit and run Windows using either the WIN /s or
+   the WIN /r command.
+
+However, using WIN with the /s or /r option is unnecessary. To avoid the error
+message, start CodeView with the /e option, as follows, to tell CodeView that
+expanded memory is available:
+
+   cv /e
+
+This information applies to Microsoft CodeView versions 2.35, 3.0, 3.1, 3.11, and
+3.14 for MS-DOS, and to Windows version 3.0.
+
+MORE INFORMATION
+================
+
+If, after you receive the error message, you return to the MS-DOS session and
+wait a few seconds, CodeView may start. To avoid the error message, start
+CodeView as follows with the expanded memory (/E) option (where
+<FILENAME.EXE> is the name of the program you want to open):
+
+   cv /e <filename.exe>
+
+To increase the size of programs that can be loaded into CodeView in conjunction
+with the /e switch, create a PIF (program information file) for CodeView, and
+specify -1 for the expanded memory KB limit. This will instruct Windows to give
+the program all the EMS that it needs.
+
+CodeView will run without the above error message in a Windows 3.0 MS-DOS session
+in standard mode with the WIN /S option.
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+   memory and requirements and real-mode and codeview and cv.exe
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

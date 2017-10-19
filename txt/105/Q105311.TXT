@@ -1,0 +1,53 @@
+DOCUMENT:Q105311  16-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Default Reminder Poll Time in Schedule+
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Versions 1.0 and 1.0a of Microsoft Schedule+ for Windows allows you to change
+the time interval in which Schedule+ polls your calendar file on the server by
+adding the following line to the SCHDPLUS.INI file
+
+   ReminderPollTime=X
+
+where X is the number of minutes the user's workstation polls the server calendar
+file for an appointment.
+
+By default, Schedule+ Reminders polls your calendar file on the server every 1
+minute. If you are connecting to your postoffice via a Remote Access Service
+(RAS), setting this parameter to 60 minutes or more will speed up Schedule+'s
+performance by only reminding you of appointments every 60 minutes.
+
+Additional query words: schedule plus 1.00 1.00a default
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

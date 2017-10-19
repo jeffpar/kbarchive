@@ -1,0 +1,63 @@
+DOCUMENT:Q146989  21-MAR-1999  [exchange]
+TITLE   :XCLN: Views: Group By and Sort Have Same Property Values
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating a new view for a folder, Exchange will not allow you to create a
+Sort By criteria on a column already defined in the Group By dialog box.
+Attempting to do so returns the following error:
+
+   The grouping you specified is not valid. You cannot sort on a property that
+   you are using to group by.
+
+Completely removing the column that is currently defined by a valid Sort By
+criteria causes the Sort By dialog box to be populated with another column
+defined in your Group By dialog box. This, in effect, contradicts the previous
+error message because it defines a Sort By property that you are using to group
+by. No error message is returned.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange version
+4.0 Windows 3.x, Windows 95, and Windows NT clients. We are researching this
+problem and will post new information here in the Microsoft Knowledge Base as it
+becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

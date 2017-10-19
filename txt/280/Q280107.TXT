@@ -1,0 +1,63 @@
+DOCUMENT:Q280107  21-DEC-2000  [iis]
+TITLE   :MMC Shows "Unknown" Status When You Load Multiple ISAPI Filters
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbDSupport kbiis400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A global Internet Server Application Programming Interface (ISAPI) filter is
+loaded at the server level in the Internet Information Server (IIS) Snap-in.
+Although a global ISAPI filter can only be loaded once, it performs its intended
+function on every site that the server hosts.
+
+Alternately, ISAPI filters can be loaded for each site individually. Although
+this method is discouraged, it can be accomplished and function without any
+problems except that the IIS 4.0 Snap-in does not display the correct status in
+the Microsoft Management Console (MMC). After the ISAPI filter is loaded for the
+first Web site, the status of the ISAPI filter is displayed as "Unknown" for
+each subsequent load, even though the filter functions for every site that it is
+loaded for.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in IIS 5.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbiis400 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,82 @@
+DOCUMENT:Q302967  09-MAY-2002  [sms]
+TITLE   :SMS: Black Screen May Appear Instead of the Windows Logon Screen
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbsms120 kbsms120bug kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Remote Control feature of Systems Management Server (SMS)
+2.0 and you connect a second time to remotely control a computer that is running
+Windows 2000 Service Pack 2, a blank screen may appear in place of the Windows
+Logon screen. This issue occurs if the user has logged off or locked the
+remotely viewed workstation between Remote Control sessions.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Log on without viewing the Windows Logon screen. Although you cannot see it,
+   mouse and keyboard activity is being passed to the other computer. Click the
+   Gold Key button, type your credentials, and then press ENTER. The default
+   desktop appears after you have logged on.
+
+ - Stop and restart the SMS Remote Control agent service on the desktop after
+   each remote control session in which you have logged off or locked the
+   workstation. The Windows Logon screen appears as expected on the next remote
+   control attempt.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms120 kbsms120bug kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200SP2 kbSMS200SP3
+Version           : :2.0 SP2,2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

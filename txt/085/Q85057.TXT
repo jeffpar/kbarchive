@@ -1,0 +1,76 @@
+DOCUMENT:Q85057  16-NOV-1999  [pcmail]
+TITLE   :FFAPI: Summary of Changes
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a brief summary of the changes made to the File Format
+Application Programming Interface (FFAPI) between versions 2.1c and 3.0.
+
+MORE INFORMATION
+================
+
+1. Full drive path support in -d parameter, if path longer than one character.
+
+2. -k support in courput and courget.
+
+3. Allow native transport of FROM addresses in the SNADS (System Network
+   Architecture Distributed Services) mapping.
+
+4. Added truncation of subject line.
+
+5. Support for SNADS names with spaces.
+
+6. Enable PAT deletion in Remote FFAPI. Delete .PAT files associated with
+   attachments once the attachments have been processed correctly.
+
+7. Disabled address checking in remote client. Do not validate addresses when
+   FFAPI courput is running on a remote postoffice where there is insufficient
+   information to validate addresses.
+
+8. Change *GET.EXE so the TIME and DATE fields reflect the time and date at
+   which the message was submitted to the message system rather than the time
+   and date at which the message was extracted by courget.
+
+9. Auto version and file delete on error. Correct the output file delete
+   characteristics so the output file is deleted if both of the following cases
+   are met:
+
+    - courget created the file.
+
+    - No messages were written to the file.
+
+
+Additional query words: 3.00 pcmail 2.1d
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

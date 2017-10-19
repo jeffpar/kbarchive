@@ -1,0 +1,91 @@
+DOCUMENT:Q165566  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Use "What's This?" in Text Boxes
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You cannot use the "What's This?" feature in a text box.
+
+NOTE: This behavior is different from Microsoft Word 6.x and 7.x for Windows 95.
+
+WORKAROUND
+==========
+
+To work around this problem, convert your text box to a frame, and then use the
+"What's This?" feature.
+
+To convert a text box to a frame:
+
+1. Click the text box to show the handles around the edges of the text box.
+
+2. On the Format menu, click Text Box.
+
+3. On the Text Box tab, click "Convert to Frame."
+
+NOTE: After you convert your text box to a frame, you can't convert the frame
+back to a text box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Word displays text as it will look when printed and doesn't use formatting codes
+to indicate formatting. To easily check document formatting, Word provides a
+tool for viewing how text is formatted, called "What's This?"
+
+To check the formats of a particular character or paragraph, click "What's This?"
+on the Help menu (or press SHIFT+F1). When the insertion point becomes a
+question mark, click the text you want to check. When you finish checking your
+text, press ESC.
+
+For more information about "What's This?", click the Office Assistant, type "How
+do I check format settings," click Search, and then click to view "About viewing
+format settings."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Microsoft Help is not installed on your computer, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

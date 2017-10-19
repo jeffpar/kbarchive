@@ -1,0 +1,101 @@
+DOCUMENT:Q215415  26-FEB-2002  [vbwin]
+TITLE   :BUG: Access Key Works When UseMnemonic is Set to False
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,2.0,2.11,3.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600 kbOSWinCEsearch kbOSWinCE100bug kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+ - Microsoft eMbedded Visual Basic, version 3.0, on platform(s):
+    - Microsoft Windows CE versions 2.0, 2.11 for the Handheld PC 
+    - Microsoft Windows CE version 2.11 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the UseMnemonic property of a Label is set to False, the interface of the
+Label control displays any ampersand (&) appearing in the text of the
+Caption property as an ampersand. The character following the ampersand should
+not act as an access key.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE HPC Project in Visual Basic. Form1 is created by
+   default.
+
+2. In the Project Properties dialog box, select Handheld PC (Default Device) as
+   the target.
+
+3. Place two label controls and two command buttons on Form1.
+
+4. Make sure that the following properties are set at design time:
+
++--------------------------------+
+| Control  | Property    | Value | 
++--------------------------------+
+| Label1   | TabIndex    | 0     | 
++--------------------------------+
+| Label1   | Caption     | "&F"  | 
++--------------------------------+
+| Label1   | UseMnemonic | False | 
++--------------------------------+
+| Command1 | TabIndex    | 1     | 
++--------------------------------+
+| Label2   | TabIndex    | 2     | 
++--------------------------------+
+| Label2   | Caption     | "&T"  | 
++--------------------------------+
+| Command2 | TabIndex    | 3     | 
++--------------------------------+
+
+5. Run the project.
+
+6. Press the ALT+T key combination and note that Command2 gets the focus. Click
+   the ALT+F keys and note that Command1 gets the focus. Because Label1 has its
+   UseMnemonic property set to False, you do not expect that clicking the ALT+F
+   keys would have an affect on the application.
+
+REFERENCES
+==========
+
+Windows CE Toolkit Help
+
+Additional query words: vbce vbce6 wce wince
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCEsearch kbOSWinCE100bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch
+Version           : :1.0,2.0,2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,77 @@
+DOCUMENT:Q131655  08-NOV-2001  [homemm]
+TITLE   :Mac Wine Guide, Ancient Lands: Play Button Sounds Don't Work
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Ancient Lands for the Macintosh, version 1.0 
+ - Microsoft Wine Guide for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a Play button in one of the programs listed at the top of this
+article, you don't hear sounds.
+
+CAUSE
+=====
+
+Your computer probably has file sharing enabled.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in Microsoft Wine Guide for the
+Macintosh, version 1.0. This problem was corrected in product name version
+1.0a.
+
+To correct this in Microsoft Ancient Lands for the Macintosh or Microsoft Wine
+Guide version 1.0, use the steps below to stop file sharing and restore Play
+button functionality.
+
+1. Open the Control Panels.
+
+2. Select Sharing Setup.
+
+3. In the File Sharing section, click Stop.
+
+4. Close the Sharing Setup dialog box.
+
+5. Play your sound.
+
+MORE INFORMATION
+================
+
+Sounds produced using Play buttons are in compressed format. Other sounds you
+hear throughout the applications are generated using a different technology.
+Although you can hear the narration, with file sharing on you cannot hear any
+Play button sounds.
+
+Additional query words: mac multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbAncientLandsMac kbWine100Mac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

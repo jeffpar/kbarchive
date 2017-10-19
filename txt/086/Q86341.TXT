@@ -1,0 +1,61 @@
+DOCUMENT:Q86341  15-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Setup Error #S020. Setup Is Unable...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While running Setup for Windows version 3.1, you may receive the following error
+message if the WIN.INI file in the WINDOWS directory has a file size of zero
+bytes:
+
+   Setup Error #S020. Setup is unable to make changes to the Windows
+   configuration file, SYSTEM.INI. This may be due to one or both of the
+   following reasons.
+
+ - Your system does not have the minimum conventional memory required to set up
+   Windows. (See your Setup documentation for memory requirements.)
+
+ - Your SYSTEM.INI file is unusually large (above 32K)
+
+   Setup cannot continue. You must quit Setup, free some memory, and then run
+   Setup again.
+
+RESOLUTION
+==========
+
+Delete or rename the WIN.INI file in the Windows directory and run Windows Setup
+again.
+
+Additional query words: 3.10 3.11 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

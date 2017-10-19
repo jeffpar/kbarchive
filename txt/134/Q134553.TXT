@@ -1,0 +1,81 @@
+DOCUMENT:Q134553  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Hangs During First Reboot After Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your computer stops responding (hangs) during the first reboot after you run
+Setup, while the "Windows 95 is now setting up your hardware and any Plug and
+Play devices you may have" screen is displayed.
+
+CAUSE
+=====
+
+This problem can be caused by a damaged .inf file. The computer hangs when
+Windows 95 tries to index the contents of all the .inf files.
+
+RESOLUTION
+==========
+
+If you know which .inf file is damaged, remove it and then run Setup again with
+the Verify Files option. If you do not know which file is damaged, remove all
+the .inf files in the hidden Windows\INF folder, and then run Setup again with
+the Verify Files option.
+
+This problem can occur if you have installed a device that installs an Oem.inf
+file. You may want to try removing all the .inf files whose name begins with
+"Oem."
+
+To remove all the files in the hidden Windows\INF folder, follow these steps:
+
+1. At an MS-DOS prompt, type the following line and then press ENTER:
+
+   " attrib -h c:\windows\inf " (without the quotation marks)
+
+2. Type the following line, and then press ENTER:
+
+   " cd c:\windows\inf " (without the quotation marks)
+
+3. Type the following line, and then press ENTER:
+
+   " ren *.inf *.old " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+When this problem occurs, the last lines in the Setuplog.txt file are:
+
+   [First Process Tree]
+   [Build Driver Index File]
+   Start
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

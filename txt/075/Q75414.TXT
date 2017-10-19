@@ -1,0 +1,52 @@
+DOCUMENT:Q75414  17-DEC-2000  [msdos]
+TITLE   :Explanation of SPECIAL=DEFAULT in DOSSHELL.INI
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SPECIAL=DEFAULT in the DOSSHELL.INI file specifies which program item or group
+item within MS-DOS Shell Program Manager will be selected (highlighted) at
+startup. Note that there should be only one such line within DOSSHELL.INI.
+
+The group or program item that was last specified within Shell when Shell was
+exited will be tagged within DOSSHELL.INI with the SPECIAL=DEFAULT line.
+Therefore, after exiting Shell completely, the last program or group item is
+still tagged.
+
+To find more information on the DOSSHELL.INI file, query on the following words:
+
+   " MS-DOS and DOSSHELL " (without the quotation marks)
+
+Additional query words: 5.00 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,69 @@
+DOCUMENT:Q161207  09-NOV-2001  [exchange]
+TITLE   :Mastering Series Err Msg: Runtime Error 48
+PRODUCT :Microsoft Exchange
+PROD/VER::3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Exchange Development ISBN 1-57231-337-4 
+ - the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run Mastering Exchange Development, you receive the following
+error message:
+
+   Mastering Microsoft Exchange Development Run-time error 48 Error in loading
+   DLL
+
+CAUSE
+=====
+
+The version of Winmm.dll is incorrect.
+
+RESOLUTION
+==========
+
+The version of Winmm.dll that ships with Microsoft Windows NT 3.51 is dated
+05/26/95 with a size of 120,912 bytes. This file is labeled as version 3.51.
+
+To resolve this problem, copy Winmm.dll from the Windows NT 3.51 disc to the
+System32 folder on you hard disk.
+
+MORE INFORMATION
+================
+
+Winmm.dll is a system file installed during the Setup of Windows NT 3.51. If
+Mastering Exchange Development does not find Winmm.dll during Setup, it copies
+the file from the CD-ROM to the hard disk. However, the version of Winmm.dll
+copied to the hard disk by Mastering Exchange is version 4.0.950. This version
+of Winmm.dll is not compatible with Windows NT 3.51
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm err msg run time error message
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbOSWinSearch kbOSWinNT351 kbZNotKeyword2 kbOSWinNTSearch
+Version           : :3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

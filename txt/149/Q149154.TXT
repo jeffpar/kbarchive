@@ -1,0 +1,76 @@
+DOCUMENT:Q149154  02-NOV-1999  [fortran]
+TITLE   :BUG: Memory Leak Caused by Formatted Internal WRITE
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Performing a formatted internal WRITE causes a memory leak. A memory leak is
+caused by a program not releasing the memory it allocates.
+
+RESOLUTION
+==========
+
+Use list-directed I/O with an internal WRITE.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In the following sample code, the memory storage area associated with the
+character string "LLINE" is not released after each internal WRITE.
+Consequently, additional memory must be allocated for each subsequent internal
+WRITE utimately causing all physical and virtual memory to be exhausted.
+
+Sample Code to Illustrate Problem and Workaround
+------------------------------------------------
+
+   ! Compile options needed: none
+
+         PROGRAM TEST
+         INTEGER I
+         CHARACTER LLINE*32
+         DO I=1,1000000
+             WRITE(LLINE, '(I10,E20.5)') I, REAL(I) ! Memory leak here
+   !          WRITE(LLINE, *) I, REAL(I) ! Uncomment this line for workaround
+         END DO
+         END
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

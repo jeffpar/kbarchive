@@ -1,0 +1,84 @@
+DOCUMENT:Q194814  11-JUL-1999  [exchange]
+TITLE   :XADM: Server Missing Public IS after Move Server Wizard
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run the Exchange Server Move Server wizard to join an existing site,
+you may be missing the public information store after the move.
+
+MORE INFORMATION
+================
+
+When you run the Exchange Server Move Server wizard on a server that contains
+public folders, you get a warning to re-home the public folders before you
+continue. If you choose to Ignore and Continue, your public folders are not
+moved, and whether you are creating a new site or joining an existing site
+determines whether the wizard creates a blank public information store in the
+destination site.
+
+Creating a New Site
+-------------------
+
+The wizard creates a blank public store in the destination site. The public store
+is created the same way that it is created during Microsoft Exchange Server
+Setup.
+
+Joining an Existing Site
+------------------------
+
+The wizard does not create a public store, and points the private information
+store to the server specified on the Select Move Method window.
+
+To view which server you point to as your public information store server:
+
+1. Open the Private Information Store Properties on your server.
+
+2. Select the General tab, and view the "Public folder server" entry.
+
+Creating a Public Information Store on Your Server
+--------------------------------------------------
+
+1. On the File menu, click New Other, and then click Information Store.
+
+2. Under "Type of information store", select Public.
+
+3. Select your server, and click OK.
+
+IMPORTANT: After you click OK, carefully read the informational message that
+appears and follow the steps it outlines.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

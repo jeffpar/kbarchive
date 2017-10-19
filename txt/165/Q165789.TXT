@@ -1,0 +1,52 @@
+DOCUMENT:Q165789  31-JUL-2001  [visualc]
+TITLE   :DOC: Tab Text is too Small to Read
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbVC500 kbVC600 kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The text in the tabs for debug windows, such as the Output and Locals windows,
+is too small to read.
+
+MORE INFORMATION
+================
+
+The tab size is controlled by the desktop's scrollbar size. To change the
+scrollbar size, right-click the desktop and choose properties, or from the
+Taskbar click Start, Settings, Control Panel, and double-click the Display icon.
+Choose the Appearance tab and then change the Item selection to Scrollbar.
+
+Additional query words: unreadable
+
+======================================================================
+Keywords          : kbdocerr kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

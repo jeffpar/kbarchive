@@ -1,0 +1,67 @@
+DOCUMENT:Q98846  30-JUL-2001  [lanman]
+TITLE   :Netwkstasetuid2 (Return 5) Error Means Privilege Problem
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+The undocumented error
+
+   Netwkstasetuid2 (return 5)
+
+occurs when a user tries to log on.
+
+CAUSE
+=====
+
+Netwkstasetuid2 is a net API call that logs a user on or off from the network
+and runs the logon script. Error # 5 means that access is denied because the
+user has insufficient privileges.
+
+Possible reasons:
+
+ - corrupt user password
+
+ - corrupt user account database or file permissions
+
+ - many users logged on at once
+
+RESOLUTION
+==========
+
+If too many users logged on at once and initiated the error, have users who
+received the error log on again after some time. This often is enough to clear
+the problem.
+
+Otherwise, investigate the password, user account database or file permissions
+and correct any problems you find.
+
+REFERENCES
+==========
+
+"Microsoft LAN Manager Programmer's Reference," page 677
+
+Additional query words: 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q243641  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Unable to Accept Item from Computer Character
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your inventory is full and you attempt to exchange an item in your inventory
+for an item belonging to a computer character in Asheron's Call, the computer
+character may take your inventory item, but you may be unable to accept the item
+from the computer character.
+
+CAUSE
+=====
+
+This behavior occurs, because the computer character still sees your inventory
+as being full.
+
+RESOLUTION
+==========
+
+To work around this problem, make sure there is sufficient room in your
+inventory before you attempt to exchange an inventory item with a computer
+character.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Asheron's Call version
+1.0 for Zone.com.
+
+Additional query words: 1.00 ac msngz accept receive gives takes asherons
+
+======================================================================
+Keywords          : kbui igz kbimu msgame kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

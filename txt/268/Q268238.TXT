@@ -1,0 +1,197 @@
+DOCUMENT:Q268238  06-AUG-2002  [sms]
+TITLE   :SMS: Err Msg: Fatal Error. Setup Cannot Upgrade the SQL Database
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade to Systems Management Server (SMS) 2.0 Service Pack 2 (SP2),
+the Setup procedure may stop halfway through the upgrade process, and you may
+receive the following error message:
+
+   Fatal error. Setup cannot upgrade the SQL database. Contact your SQL
+   Administrator.
+
+When this behavior occurs, the following error message is placed in the
+Smssetup.log file:
+
+   <07-13-1999 17:40:49> FAILED Sql Script: Creating indexes on
+   StatusMessages
+   <07-13-1999 17:40:49> SQL error <>
+
+CAUSE
+=====
+
+The status message tables within the Microsoft SQL Server database may be too
+large.
+
+WORKAROUND
+==========
+
+Perform the following query in SQL Query Analyzer, focused on the SMS database,
+to verify that the database has not been upgraded:
+
+   "select SMSBuildNumber from smsdata"
+
+If previous upgrade attempts did not complete the upgrade procedure for the
+database, the output shows version 1380, which is the Service Pack 1 (SP1) build
+number.
+
+If you want to keep all of the existing status messages, use the steps in the
+following sections. If you do not want to keep any of the existing status
+messages, follow the steps in the "Truncate the Affected Tables so the Upgrade
+Procedure Can Proceed" section.
+
+How to Export Tables to an Alternate Database
+---------------------------------------------
+
+1. Quit all SMS services, and then quit and disable the Microsoft Windows
+   Management service on the site server.
+
+2. In SQL Enterprise Manager, click the SMS database, and then click the "Tables
+   and Indexes" tab in the right pane in Microsoft Management Console (MMC).
+
+3. Verify the number of rows and the table size for the StatusMessageAttributes,
+   StatusMessageInsStrs, and StatusMessages tables.
+
+   If there is an excessive number of rows in any of these three tables, start
+   the SQL Enterprise Manager MMC snap-in.
+
+4. Double-click the server name, double-click Databases, and then open the SMS
+   database.
+
+5. Click Tables, and then right-click the StatusMessageAttributes table.
+
+6. Click All Tasks, click Export Data, and then click Next when the Data
+   Transformation Services Export Wizard starts.
+
+7. In the "Choose a Data Source" dialog box, click Next, and then click New in
+   the Database list in the "Choose a Destination" dialog box.
+
+8. In the Name box, type a temporary name, click OK, and then click Next.
+
+9. In the "Specify Table Copy or Query" dialog box, click Next.
+
+10. In the Select Source Tables dialog box, click to select the check boxes for
+   the following tables, and then click Next:
+
+   [<SMS database name>].[dbo].[StatusMessageAttributes]
+   [<SMS database name>].[dbo].[StatusMessageInsStrs]
+   [<SMS database name>].[dbo].[StatusMessages]
+
+11. In the "Save, Schedule and Replicate Package" dialog box, verify that the
+   "Run immediately" check box is selected, and then click Next.
+
+12. In the "Completing the DTS Wizard" dialog box, click Next, and then click OK
+   when the table-copying procedure is finished.
+
+13. In the Executing DTS Package dialog box, click Done.
+
+Truncate the Affected Tables so the Upgrade Procedure Can Proceed
+-----------------------------------------------------------------
+
+1. In SQL Enterprise Manager, click the SMS database, and then click the "Tables
+   and Indexes" tab in the right pane in MMC.
+
+2. Verify the number of rows and the table size for the StatusMessageAttributes,
+   StatusMessageInsStrs, and StatusMessages tables.
+
+   If there is an excessive number of rows in any of these three tables, run the
+   following queries in SQL Query Analyzer, focused on the SMS database:
+
+   "TRUNCATE TABLE StatusMessageAttributes"
+   "TRUNCATE TABLE StatusMessageInsStrs"
+   "TRUNCATE TABLE StatusMessages"
+
+You can now restart the SMS 2.0 Service Pack 2 (SP2) upgrade.
+To verify the progress of the installation procedure, use the smstracer command
+to monitor the Smssetup.log file.
+
+When the installation procedure is finished, start the SMS Administrator console
+to verify connectivity to the database.
+
+Restore the Status Message Tables After the Upgrade Procedure
+-------------------------------------------------------------
+
+1. Quit all SMS services, and then stop and disable the Windows Management
+   service on the site server.
+
+2. In SQL Enterprise Manager, click the SMS database, and then click the "Tables
+   and Indexes" tab in the right pane in MMC.
+
+3. Verify the number of rows and the table size for the StatusMessageAttributes,
+   StatusMessageInsStrs, and StatusMessages tables.
+
+   If there is an excessive number of rows in any of these three tables, start
+   the SQL Enterprise Manager MMC snap-in.
+
+4. Double-click the server name, double-click Databases, and then open the SMS
+   database.
+
+5. Click Tables, and then right-click the StatusMessageAttributes table.
+
+6. Click All Tasks, click Import Data, and then click Next when the Data
+   Transformation Services Import Wizard starts.
+
+7. In the Database box, click the database name that you created in the "How to
+   Export Tables to an Alternate Database" section of this article, and then
+   click Next.
+
+8. In the "Choose a Destination" dialog box, click Next, and then click Next in
+   the "Specify Table Copy or Query" dialog box.
+
+9. In the Select Source Tables dialog box, click Select All, and then click
+   Next.
+
+10. In the "Save, Schedule and Replicate Package" dialog box, verify that the
+   "Run immediately" check box is selected, and then click Next.
+
+11. In the "Completing the DTS Wizard" dialog box, click Finish.
+
+12. When the table-copying procedure is finished, click OK, and then click Done
+   in the Executing DTS Package dialog box.
+
+You can now view status messages in the SMS Administrator console.
+
+NOTE: If you want to permanently remove the status messages before you upgrade to
+SMS 2.0 SP2, any status messages that had previously existed are removed from
+the database tables and are not displayed in the SMS Administrator console. If
+you click to select the Component Status check box, you can view all of the
+status messages that are now removed. Because you did not change the
+Summarizer_ComponentTallys table, the counts for error, information, and
+warnings for the component remain. These counts are reset to the current
+summarization tallies at the next 12:00 A.M. tally reset.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,59 @@
+DOCUMENT:Q138091  08-NOV-2001  [miscsdk]
+TITLE   :FIX: Internal Error When Add New Telephony Location
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Telephony Software Development Kit (SDK), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the International Control Panel Applet (CPL), if the current country is set
+to Canada, then the Telephony CPL will display the following error when a new
+location is added:
+
+   Internal Application error; please shut down and restart this application.
+
+WORKAROUND
+==========
+
+The only workaround is to use the International CPL to change the location to
+something other than Canada (United States is a logical choice), add the new
+Telephony location, and then change the location back to Canada.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Windows 95.
+
+Additional query words: 1.00 1.30 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper _IKkbbogus kbSDKSearch kbWinSDKTelephony kbWinSDKSearch
+Version           : :1.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

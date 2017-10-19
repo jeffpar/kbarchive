@@ -1,0 +1,110 @@
+DOCUMENT:Q317556  24-MAY-2002  [mspress]
+TITLE   :Coding Techniques for Microsoft Visual Basic .NET Comments And C
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Coding Techniques for Microsoft Visual Basic.NET ISBN 0-7356-1254-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Coding Techniques for Microsoft Visual
+Basic .NET, ISBN 0-7356-1254-4.
+
+The following topics are covered:
+
+ - Page 260: CRL Should Be CLR
+
+ - Page 267: "Option Explicit" Should Be "Option Strict"
+
+ - Page 319: MenuItem5_Click Should Be MenuItem4_Click
+
+ - Page 319: Form1_Load Should Be AssemblySpyForm_Load
+
+MORE INFORMATION
+================
+
+Page 260: CRL Should Be CLR
+---------------------------
+
+On page 260, in the table,
+
+Change:
+"(5) The CRL looks back up the stack to find the exception..."
+
+To:
+"(5) The CLR looks back up the stack to find the exception..."
+
+
+Page 267: "Option Explicit" Should Be "Option Strict"
+-----------------------------------------------------
+
+There is an error in the "A Structured Exception Gotcha" box on page 267.
+
+Change:
+"and report "Option Explicit disallows implicit conversions"
+
+To:
+"and report "Option Strict disallows implicit conversions"
+
+
+Page 319: MenuItem5 Should Be MenuItem4
+---------------------------------------
+
+On page 319, in the code sample,
+
+Change:
+"Private Sub MenuItem5_Click ..."
+
+To:
+"Private Sub MenuItem4_Click ..."
+
+
+Page 319: Form1_Load Should Be AssemblySpyForm_Load
+---------------------------------------------------
+
+On page 319, in the code sample,
+
+Change:
+"Private Sub Form1_Load ..."
+
+To:
+"Private Sub AssemblySpyForm_Load ..."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1254-4 DEVBOOK CONNELL
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

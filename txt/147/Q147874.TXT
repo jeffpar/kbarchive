@@ -1,0 +1,71 @@
+DOCUMENT:Q147874  25-MAR-2002  [win95x]
+TITLE   :Slow Performance Across Token Ring Source Routers with NetBEUI
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1,2,2.1
+OPER/SYS:
+KEYWORDS:kbnetwork osr1 osr2 win95kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Network performance may be slow when you are using programs that repeatedly
+connect and disconnect from servers across a source routing bridge in a Token
+Ring environment.
+
+CAUSE
+=====
+
+When you are using the NetBEUI protocol on a Token Ring network, a NameQuery
+packet is broadcast several times without the source routing field set. If there
+is no response to half the possible name query requests, remaining requests are
+resubmitted with the source routing field set. This behavior was designed to
+reduce network traffic on the LAN. If a program repeatedly establishes
+connections and disconnects from servers across a source routing bridge, network
+performance is greatly reduced.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words: router bridge wan netbios
+
+======================================================================
+Keywords          : kbnetwork osr1 osr2 win95 kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR1 kbWin95OPKOSR210
+Version           : :1,2,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

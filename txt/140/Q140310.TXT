@@ -1,0 +1,69 @@
+DOCUMENT:Q140310  11-JAN-2001  [vbwin]
+TITLE   :FIX: Holding Down the F1 Key a Long Time Crashes Windows Help
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbVBp kbVBp400bug kbOSWin98fix kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Visual Basic 4.0 on Windows 95 or Windows NT version 3.51, holding
+down the F1 key for a long time causes an application error in Winhlp32.exe.
+However, the Help file still displays after you clear out the error message.
+
+RESOLUTION
+==========
+
+When pressing the F1 key, do not hold down the key for a long time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the Microsoft products listed
+above. This problem has been fixed in Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Start Visual Basic.
+
+2. Press and hold down the F1 key. The result is an application error in
+   Winhlp32.exe.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp400bug kbOSWin98fix kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

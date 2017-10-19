@@ -1,0 +1,364 @@
+DOCUMENT:Q242902  06-AUG-2002  [homegame]
+TITLE   :AoE II Err Msg: Could Not Initialize Graphics System...
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+ - Microsoft Age of Empires II Expansion: The Conquerors 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Age of Empires II: The Age of Kings or
+Microsoft Age of Empires II Expansion: The Conquerors, you may receive the
+following error message:
+
+   Could not initialize graphics system. Make sure that your video card and
+   driver are compatible with DirectDraw.
+
+CAUSE
+=====
+
+This behavior can occur if any of the following conditions are true:
+
+ - The Age of Empires shortcut is damaged or missing information.
+
+ - Your video adapter or monitor is incapable of achieving a screen resolution
+   needed to play your Age of Empires game.
+
+   NOTE: Age of Empires II requires a minimum screen resolution of 800 x 600
+   Pixels at 16 bit high color.
+
+ - Your video adapter does not meet the minimum system requirements needed to
+   run your Age of Empires game.
+
+ - Microsoft NetMeeting is running on your computer.
+
+ - A Terminate-and-Stay-Resident program (TSR) that is running is incompatible
+   with the game is running.
+
+ - Your monitor is not configured properly.
+
+ - Your system's refresh rate is not compatible with the game.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Verify the Shortcut Contains Accurate Information
+-------------------------------------------------
+
+If you are running Age of Kings II or Conquerors, follow the steps below:
+
+To resolve this issue, verify that the Age of Empires II shortcut contains
+accurate and complete information to start Age of Empires II:
+
+1. On the Desktop, right-click the "Age of Empires II" shortcut, and then click
+   Properties.
+
+   NOTE: If the Age of Empires II or Conquerors shortcuts are not on the Desktop,
+   open Start menu folder. To do so:
+
+   a. Right-click Start, and then click "Open" or "Open All Users".
+
+   b. Double-click the Programs folder.
+
+   c. Double-click the Microsoft Games folder.
+
+   d. Double-click the "Age Of Empires II" or "Age of Empires II - The
+      Conquerors Expansion" folder.
+
+2. In the "Start in" box, type the following line, and then click OK:
+
+    - Age of Kings:
+
+   "<drive>:\Program Files\Microsoft Games\Age of Empires II" (including
+   the quotation marks)
+
+    - Age of Conquerors:
+
+   "<drive>:\Program Files\Microsoft Games\Age of Empires II/age2_x1"
+   (including the quotation marks)
+
+      If you are running Windows 2000 or XP, the path should look like this:
+
+   "<drive>:\Documents and Settings\<user name>\Desktop" (including
+   the quotation marks)
+
+      where <drive> is the drive letter of the hard disk on which Age of
+      Empires II or Conquerors are installed.
+
+If the issue continues to occur, create a new shortcut.
+
+Create New Shortcut
+-------------------
+
+1. Right-click the "Age of Empires II" or "Conquerors" shortcut, and then click
+   Delete.
+
+   If you are prompted to confirm the deletion, click Yes.
+
+2. Click Start, point to "Find" or "Search", and then click "Files or Folders"
+   or "For Files or Folders".
+
+3. In the Named or Search for files or Folders named box, if you are runing Age
+   of Kings type "empires2.exe" (without the quotation marks); and if you are
+   running Age of Conquerors type "age2_x1.exe" (without the quotation marks).
+
+4. In the "Look in" box, click My Computer.
+
+   NOTE: For Windows 98, make sure that the "Include subfolders" check box is
+   selected, and then click Find Now.
+
+5. In the list of found files, right-click the "Empires2.exe" or "Age2_x1.exe"
+   file, and then click Create Shortcut.
+
+6. When you are prompted to create the shortcut on the desktop, click Yes.
+
+7. Close all the windows.
+
+8. Right-click the newly-created shortcut, and then click Rename.
+
+9. Type "Age of Empires II" (without the quotation marks) or "Age of Conquerors"
+   (without the quotation marks), and then press ENTER.
+
+If the problem continues to occur, proceed to the next step.
+
+Verify Video Adapter Meets Minimum System Requirements
+------------------------------------------------------
+
+Verify that your video adapter meets the minimum system requirements needed to
+play your Microsoft Age of Empires game. If your video adapter does not meet the
+minimum video memory requirement needed to play Age of Empires, you must install
+additional video memory on your video adapter, or install a video adapter with
+more video memory.
+
+For additional information about system requirements for Age of Kings and Age of
+Conquerors, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q266620 Age of Empires II: The Age of Kings: Minimum System Requirements
+
+   Q273811 AoE II Expansion: The Conquerors: Minimum System Requirements
+
+To use the DirectX Diagnostic Tool to determine the amount of video memory
+installed on your video adapter:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the following line (including the quotation marks), and
+   then click OK:
+
+   "dxdiag" (without the quotation marks)
+
+3. Click the "Display" or "Display 1" tab.
+
+4. Note the amount of video memory on the Approx. Total Memory line under
+   Device, and then click Exit.
+
+   NOTE: The DirectX Diagnostic Tool is installed with newer versions of DirectX.
+
+For additional information about how to install the latest version of DirectX,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q179113 How to Download and Install DirectX
+
+Turn Off NetMeeting
+-------------------
+
+If you are running NetMeeting on your system, quit NetMeeting before you start
+the game. To do so:
+
+1. Right-click the NetMeeting icon on the Windows taskbar.
+
+2. Click "Stop NetMeeting" or "Exit".
+
+NetMeeting prevents DirectX from dynamically changing your screen resolution when
+you start the game.
+
+If the problem continues to occur, proceed to the next method.
+
+Clean Boot the Computer
+-----------------------
+
+These articles describe how to disable common startup programs, settings, and
+drivers to troubleshoot issues. This procedure is known as "clean booting."
+Programs that run in the background in memory are called
+terminate-and-stay-resident programs (TSR's). For example, these programs may be
+virus protection software, utility programs, print manager programs, or screen
+savers.
+
+To clean boot your computer, use the appropriate method for your version of
+Windows.
+
+For additional information about how to clean boot your computer, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+   Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+   Q281770 How to Perform Clean-Boot Troubleshooting for Windows 2000
+
+   Q310353 How to Perform a Clean Boot in Windows XP
+
+If the problem continues to occur, proceed to the next step.
+
+Make Sure the Best Monitor Driver Is Installed
+----------------------------------------------
+
+1. Click Start, and then for Windows 98, click Settings.
+
+2. Click Control Panel.
+
+3. Double-click Display.
+
+4. Follow the appropriate steps for your version of Microsoft Windows:
+
+    - Microsoft Windows 98:
+
+      a. Click to select the "Automatically detect Plug & Play monitors"
+         check box.
+
+      b. Note the manufacturer and model of your current monitor, and then click
+         Change.
+
+      c. Click Next.
+
+      d. Click "Display a list of all the drivers in a specific location, so you
+         can select the driver you want", and then click Next.
+
+      e. Click "Show all hardware".
+
+    - Windows XP:
+
+      a. Click Properties.
+
+      b. Click the Driver tab.
+
+      c. Click Update Driver.
+
+      d. Click "Install from a list or specific location (Advanced)", and then
+         click Next.
+
+      e. Click "Don't search. I will choose the driver to install".
+
+      f. Remove the check from the box to the left of "Show compatible
+         hardware".
+
+5. In the Manufacturers box, click the manufacturer of your monitor.
+
+6. In the Model box, click the model of your monitor or select a default monitor
+   driver.
+
+   To select a default monitor driver:
+
+   a. In the Manufacturers box, click "(Standard monitor types)".
+
+   b. In the Model box, click "Plug and Play Monitor".
+
+7. Click Next, and then follow the on-screen prompts to complete the driver
+   installation. If you are prompted to verify that you want to change the
+   monitor, click Yes.
+
+Install Updated Video Driver
+----------------------------
+
+To identify the manufacturer and the model of your video adapter:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. If you are using a Microsoft Windows 98-based computer, click the Device
+   Manager tab.
+
+   If you are using a Microsoft Windows 2000-based or Microsoft Windows XP-based
+   computer, click the Hardware tab, and then click Device Manager.
+
+4. Expand the "Display adapters" branch.
+
+5. Under the "Display adapters" branch, note the manufacturer and the model of
+   your video adapter, and then click OK.
+
+6. Close all of the open windows on the desktop.
+
+For additional information about how to identify the driver version of your video
+adapter, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q159487 Games: How to Determine the Version of Installed Video Driver
+
+Contact your hardware manufacturer to inquire about how to obtain and install the
+latest version of the video driver for your video adapter. For information about
+how to contact , click the appropriate article number in the following list to
+view the article in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Set Refresh Rate to Adapter Default
+-----------------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. Click Advanced.
+
+5. On the Adapter tab, under "Refresh rate", click to select "Adapter default".
+
+6. Click OK, and then click OK again.
+
+MORE INFORMATION
+================
+
+For additional information about this error message, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q179920 AOE: Error Message: Could Not Initialize Graphics System
+
+   Q198610 Age of Empires 1.0: Error Message 'Could Not Initialize Graphics
+   System' on ViewSonic VPA150 Monitor
+
+   Q199047 'Failed to Initialize Graphics System' Error Message When NetMeeting
+   Is Running
+
+Additional query words: 2.00 aoe2 aok msgame fail failure
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOE2ExpConquerors kbAOE2Kings
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

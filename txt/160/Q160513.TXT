@@ -1,0 +1,218 @@
+DOCUMENT:Q160513  09-AUG-2001  [winnt]
+TITLE   :Alternatives to the Directory Replicator Service
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows NT provides a service that is designed to replicate logon
+scripts between domain controllers in a domain. Logon scripts were first
+introduced with the Microsoft LAN Manager product, and, although Windows NT
+provides peer-level server capabilities and user profiles that provide far more
+configurability of the desktop and user settings, logon script replication is
+still supported for command-line execution and down-level clients.
+
+The alternatives mentioned in this article resolve several issues with the
+Replicator service, such as:
+
+ - An arbitrary number of parent directories can be exported.
+
+ - Very large file and directory synchronizations can be replicated, which may
+   have overwhelmed the directory replicator service.
+
+ - Exclusive access is not needed to the entire directory so a process such as
+   File Manager or Explorer will not interfere with replication simply by having
+   a window open in the Export directory.
+
+MORE INFORMATION
+================
+
+The Microsoft Resource Kit provides a robust copy utility called Robocopy.exe.
+This utility can be used for very large transfers and synchronizations with
+large amounts of data and individual files. This command can be launched in
+several ways, and below are some methods that can be used as alternatives to the
+Replicator service.
+
+For more information on the Robocopy.exe command, see the online help (type
+"robocopy /?") and the Robocopy.wri file included in the Resource Kit. Below is
+a summary of the syntax used in this document.
+
+ROBOCOPY v 1.54  :  Robust File Copy for Windows NT
+---------------------------------------------------
+
+Usage : ROBOCOPY source destination [file [file]...] [options]
+source : Source Directory (drive:\path or \\server\share\path).
+destination : Destination Dir (drive:\path or \\server\share\path).
+file : File(s) to copy (names/wildcards - default is "*.*").
+/S : copy Subdirectories, but not empty ones.
+/E : copy subdirectories, including Empty ones.
+/R:n : number of Retries on failed copies - default is 1 million.
+/W:n : Wait time between retries - default is 30 seconds.
+/REG : Save /R:n and /W:n in the Registry as default settings.
+/X : report all eXtra files, not just those selected.
+/V : produce Verbose output, showing skipped files.
+/L : List only - don't copy, timestamp or delete any files.
+/ETA : show Estimated Time of Arrival of copied files.
+/MOVE : Move files and dirs (delete from source after copying).
+/PURGE : delete dest files/dirs that no longer exist in source.
+
+Method 1
+--------
+
+A batch file can be created and simply run when changes have been made to the
+source files and synchronization is needed between the domain controllers. An
+example of such a batch file is below. Because of word- wrap, each grouping of
+lines is actually one line in the ASCII BAT file.
+
+   robocopy \\<computer1>\admin$\system32\repl\export\ 
+   \\<computer1>\admin$\system32\repl\import /s /v /r:1 /w:1 /eta
+
+   robocopy \\<computer1>\admin$\system32\repl\export\ 
+   \\<computer2>\admin$\system32\repl\import /s /v /r:1 /w:1 /eta
+
+NOTE: <computer1> and <computer2> are the names of the computers
+being synchronized.
+
+Method 2
+--------
+
+The above BAT file can be made to run in a loop, pausing for a specified amount
+of time between each copy. Another Resource Kit utility called Sleep.exe can be
+used to specify the number of seconds for the delay between synchronizations.
+This BAT file could be placed in the Startup group, always run, and minimized on
+the desktop. To ensure access to each remote domain controller, Sleep.exe should
+be run under the user context of an administrator. Below is an example of such a
+BAT file. Because of word- wrap, each grouping of lines is actually one line in
+the ASCII BAT file.
+
+   :loop
+
+   robocopy \\<computer1>\admin$\system32\repl\export
+   \\<computer1>\admin$\system32\repl\import /s /v /r:1 /w:1 /eta
+
+   robocopy \\<computer1>\admin$\system32\repl\export
+   \\<computer2>\admin$\system32\repl\import /s /v /r:1 /w:1 /eta
+
+   sleep 1800
+
+   goto loop
+
+NOTE: <computer1> and <computer2> are the names of the computers
+being synchronized.
+
+If file permissions must be maintained on the files, use SCOPY, another resource
+kit utility. As Robocopy is more robust, Scopy could be used for the initial
+replication of NTFS permissions, and then Robocopy can be used for the regular
+replication, if the permissions are not changed on a regular basis and the
+directory tree structure is fairly static.
+
+If less granular permissions are acceptable, move away from NTFS file security
+and towards the lower granular security implemented with share permissions. This
+may reduce the amount of administration required and eliminate the need for
+replicating file permissions.
+
+Method 3
+--------
+
+Another method to maintain directory structures remotely can be to schedule a
+batch file using the Scheduler service. Services provide the benefit of allowing
+for synchronization independent to the user logged on, and when a user is logged
+on, there is no minimized icon that could be accidentally terminated. As with
+any access to a remote machine over the network, the user-context of the process
+must have the necessary read or write permissions. To do this, the Scheduler
+service needs to be started with a user account instead of the local system
+account. If more than one synchronization is desired each day, each occurrence
+requires a separate statement. The BAT file presented in Method 1 above can be
+used as an example, and the following statements can be used to configure the
+Scheduler service to establish synchronization at the desired intervals.
+
+   AT 12:00AM /every:m,t,w,th,f,sa,su c:\bin\replicate.bat
+   AT 08:00AM /every:m,t,w,th,f,sa,su c:\bin\replicate.bat
+   AT 12:00PM /every:m,t,w,th,f,sa,su c:\bin\replicate.bat
+   AT 08:00PM /every:m,t,w,th,f,sa,su c:\bin\replicate.bat
+
+With the /every switch, the Scheduler service records the frequency and initiates
+the jobs with no more administrator intervention.
+
+To verify the status of the Scheduler service, type AT at the command prompt.
+
+To test the BAT file with the Scheduler service, the /interactive switch can be
+use to see output from Robocopy, or the output can be redirected to a file as
+mentioned below.
+
+Method 4
+--------
+
+In the interest of completeness, one final method can be discussed. The BAT file
+displayed in Method 2 above, which uses the SLEEP command to regulate the
+synchronization interval, can be launched as a user created service. This
+provides the usual benefits of running as a service, and also the benefit of
+there being a single thread of execution with the single BAT file. Although
+unlikely, if the Scheduler service were used to regulate the interval instead of
+the SOON command, and if Robocopy were to fail during the file synchronization,
+launched processes could accumulate without completing, as the Scheduler service
+does not track launched processes after they are run. The BAT file in Method 2
+could be used along with the Instsrv.exe command to create the registry entries
+for the Srvany.exe service from the Resource Kit. See online help and the
+Resource Kit Help file for the particular syntax and instruction.
+
+Robocopy Notes
+--------------
+
+ - The /purge command can be used to delete files on the destination server that
+   have been deleted from the source server. This is the behavior of the
+   replicator service. Use this switch with caution because it deletes data.
+
+ - If the destination files you are trying to replicate are often in an open
+   state, you may want to limit the default number of retires Robocopy will try
+   when copying these files. Using the switches "/R:5 /W:5" will timeout more
+   quickly.
+
+ - Robocopy displays very detailed output that administrators may find useful
+   and want to save to a file. This output can be redirected to a file by
+   appending the following symbolic path to each ROBOCOPY statement:
+   ">>drive:\directory\filename.txt." In a relatively short time, this may
+   create a very large file. Even if few changes occur on the source server and
+   synchronization checks occur every 30 minutes, this file can grow to an
+   estimated size of about 4.5 MB in only a month. This assumes that 3 KB of
+   information is written for each replication attempt, and the verbose switch
+   is not used.
+
+ - Unlike the Replicator service, Robocopy does not have to run on the server
+   where the source files are located.
+
+ - If absolute symmetry is needed between the source and destination directory
+   structure, the /purge, /e, /t, and event /is switches can be used. This level
+   of duplication is probably not necessary. See the online help and the
+   Robocopy.wri file for more details.
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

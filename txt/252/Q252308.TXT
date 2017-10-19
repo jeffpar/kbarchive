@@ -1,0 +1,66 @@
+DOCUMENT:Q252308  07-MAY-2002  [homegame]
+TITLE   :FS2000: Tutorials 12 and 13 Are Missing from Available Flights
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui fsim kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to select a tutorial flight in Microsoft Flight Simulator 2000,
+Tutorials 12 and 13 are missing from the list.
+
+CAUSE
+=====
+
+This behavior occurs because Tutorials 12 and 13 are not available in Flight
+Simulator 2000.
+
+MORE INFORMATION
+================
+
+To run a tutorial in Flight Simulator 2000:
+
+1. Start Flight Simulator 2000.
+
+2. Click Fly Now!
+
+3. On the Flights menu, click Select Flight.
+
+4. Scroll down the list of available flights to the list of tutorial flights,
+   and then click the tutorial flight that you want.
+
+   Note that in the list of available flights, Tutorials 12 and 13 are missing.
+
+Additional query words: msgame flightsim fltsim fs2k lessons unavailable
+
+======================================================================
+Keywords          : kbui fsim kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

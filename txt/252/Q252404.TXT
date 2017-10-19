@@ -1,0 +1,82 @@
+DOCUMENT:Q252404  25-JUL-2001  [homegame]
+TITLE   :Baseball 2000: Game Quits or You Receive Error Message
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kberrmsg kbhw kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Baseball 2000, you may experience either of the
+following symptoms:
+
+ - Baseball 2000 quits, and you are returned to the desktop.
+
+ - You receive the following error message:
+
+   Baseball 2000 caused an invalid page fault in module Graphics.dll.
+
+CAUSE
+=====
+
+This behavior can occur if an nVIDIA GeForce 256 video adapter is installed in
+your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable Direct3D support in the DirectX Diagnostic Tool:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+   OK.
+
+3. Click the Display tab.
+
+4. Click Disable under DirectX Features (next to Direct3D Acceleration).
+
+5. When you receive the following warning, click OK:
+
+   This will disable hardware acceleration of Direct3D for ALL display devices
+   on your system.
+
+6. Click Exit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Baseball 2000.
+
+Additional query words: msgame 1.00 bb2k bball2k gpf ipf
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kberrmsg kbhw kbimu msgame kbHardware 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

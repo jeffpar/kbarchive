@@ -1,0 +1,78 @@
+DOCUMENT:Q128154  26-AUG-1999  [foxpro]
+TITLE   :How Toolbars Differ from Forms
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Visual FoxPro for Windows, you can create and customize toolbars. They may
+contain any type of control. Although toolbars appear in a window and can be
+included in form sets, they are different objects from forms. This article lists
+the properties, events, and methods that highlight the differences between
+toolbars and forms.
+
+MORE INFORMATION
+================
+
+The main characteristics of a toolbar is that it is dockable, has a half height
+title bar, and is always on top. When you build a toolbar, you may consider
+using the properties, events, and methods discussed in this article.
+
+Closable Property
+-----------------
+
+The CLOSABLE property is not a property of the toolbar. Toolbars can be closed by
+clicking the Close box. Set the CONTROLBOX property to .F. to specify that a
+toolbar cannot be closed. Note that the ControlBox property has no effect in
+Visual FoxPro for the Macintosh.
+
+GetFocus and SetFocus Methods
+-----------------------------
+
+A toolbar never receives the focus, and there is no GETFOCUS or SETFOCUS event
+handler for the toolbar object. However text box, list box, and edit box
+controls placed on a toolbar can receive the focus.
+
+Activate event
+--------------
+
+The ACTIVATE event occurs when a toolbar object is shown. The toolbar object does
+not receive the ACTIVATE event when it is clicked.
+
+Deactivate event
+----------------
+
+The DEACTIVATE event occurs when the toolbar is closed or hidden.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

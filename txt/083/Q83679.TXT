@@ -1,0 +1,208 @@
+DOCUMENT:Q83679  04-OCT-1999  [win95x]
+TITLE   :Manual and Network Install of the TrueType Font Pack
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the following options for installing the Microsoft
+TrueType Font Pack into Microsoft Windows 3.1:
+
+ - Normal installation
+
+ - Manual installation because of error
+
+ - OLE Drag and Drop installation
+
+ - Network installation
+
+MORE INFORMATION
+================
+
+Normal Installation
+-------------------
+
+1. Close any open applications, so only Windows 3.1 is running.
+
+2. Insert the Microsoft TrueType Font Pack into drive A.
+
+3. In Windows Program Manager, choose Run from the File menu.
+
+4. In the Command Line box, type
+
+   a:\setup
+
+   and choose the OK button.
+
+5. Follow the online instructions.
+
+Manual Installation Because of Error
+------------------------------------
+
+When attempting to install the TrueType Font Pack, you may encounter the
+following error message:
+
+   DSHELL.DLL caused a General Protection Fault in module USER.EXE at segment
+   XXXX:xxxx
+
+To work around this error, the Font Pack can be installed manually:
+
+1. Copy the EXPAND.EXE file from the Windows disk 3 (1.44MB and 1.2MB) into the
+   WINDOWS directory.
+
+2. Expand all the *.TT_ files into the WINDOWS\SYSTEM directory from the
+   original Windows disk 1 by typing the following:
+
+   c:\windows\expand a:*.tt_ c:\windows\system
+
+   Repeat for disk 2.
+
+3. Rename all the *.TT_ files in the WINDOWS\SYSTEM directory to *.TTF by typing
+   the following:
+
+   rename *.tt_ *.ttf
+
+4. Start Windows and run the Control Panel.
+
+5. Choose Fonts and then the Add button.
+
+6. Change to the WINDOWS\SYSTEM directory.
+
+7. Choose the Select All button and then choose OK.
+
+OLE Drag and Drop Installation
+------------------------------
+
+1. From File Manager double click the subdirectory that contains the .TTF or
+   .TT_ files.
+
+2. From Control Panel, run Fonts.
+
+3. Return to File Manager and highlight the fonts you want to install.
+
+4. Drag and drop the font selection on the Fonts dialog.
+
+The files will be added and uncompressed if necessary.
+
+Network Installation
+--------------------
+
+There are two ways to do a network install:
+
+ - Allow all workstations access.
+
+   -or-
+
+ - Allow only one or more workstations to access the fonts.
+
+All Workstations Have Access
+
+NOTE: Make sure you are using a network license pack if multiple users will have
+access to the TrueType Font Pack. Pricing and availability information is
+available at the Microsoft Sales Information Center (MSIC) by calling (800)
+426-9400.
+
+1. From one workstation, start Windows.
+
+2. From the File menu, choose Run.
+
+3. Type the following and press ENTER:
+
+   a:setup
+
+4. The Setup program expands all the files into the Windows shared directory on
+   the server and updates the workstation's WIN.INI file for the fonts.
+
+5. For other workstations to have access to these fonts, each user should do the
+   following from his/her workstation:
+
+   a. Run Control Panel, and choose the Fonts icon.
+
+   b. Choose the Add button and select the Windows shared directory.
+
+   c. Choose the Select All button, and then the OK button.
+
+Note the following:
+
+ - You may want to clear the Copy To The Windows Directory check box to have the
+   *.TTF files remain on the server. Regardless of the box, the *.FOT files are
+   copied into the user directory.
+
+ - If you receive the following error messages, then you do not have full rights
+   to the directory that contains the fonts:
+
+   Cannot Change properties of the file named ".
+
+   Setup program file has been modified or corrupted.
+
+ - The following warning message is normal when using TrueType fonts from a
+   network drive:
+
+   The specified path points to a font file that may not be available during
+   later Windows sessions.
+
+One or More Workstations Have Access
+
+1. Use Windows 3.1's EXPAND.EXE to decompress all the .TT_ files into a TTFONTS
+   directory. (EXPAND.EXE is on disk 3 for 3.5-inch 1.44 MB and 5.25-inch 1.2 MB
+   disks. The fonts are on disks 4 and 5 of the 3.5-inch 1.44 MB disks, and on
+   disks 5 and 6 of the 5.25-inch 1.2 MB disks.)
+
+   Type the following:
+
+   c:\windows\expand a:\*.tt_ x:\ttfonts
+
+2. Change to the X:\TTFONTS directory and rename all the *.TT_ files to *.TTF.
+
+   rename *.tt_ *.ttf
+
+3. Run Windows on the workstation.
+
+4. Run Control Panel, and choose the Fonts icon.
+
+5. Choose the Add button and select the TTFONTS directory.
+
+6. Clear the Copy To Windows Directory check box.
+
+7. Choose the Select All button, and then the OK button.
+
+8. Repeat for other workstations that are licensed to use these fonts.
+
+If you want to control access to the fonts, change the network rights needed to
+get to the TTFONTS directory. Consult your network manual for the procedure.
+
+You can also substitute your user directory or local hard drive instead of the
+TTFONTS directory on the server.
+
+Additional query words: 3.10 DSHELL.DLL rights true type gpf gp
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

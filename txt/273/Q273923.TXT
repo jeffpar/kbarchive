@@ -1,0 +1,69 @@
+DOCUMENT:Q273923  18-JAN-2001  [homegame]
+TITLE   :Crimson Skies: Cannot Start Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Crimson Skies, the program may not start.
+
+CAUSE
+=====
+
+This behavior can occur if your computer is configured to use 32-bit colors or
+256 colors.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure the display settings on your computer to use
+the "800 by 600 pixels" and the "High Color (16 bit)" settings:
+
+1. Click Start, point to Settings, then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab. Write down your Colors and "Screen area" settings.
+
+4. Under Colors, click "High Color (16 bit)".
+
+5. Under "Screen area", move the "Screen area" slider to the "800 by 600 pixels"
+   position.
+
+6. Click OK.
+
+7. If you are prompted to restart the computer, click Yes.
+
+Additional query words: msgame crimsonskies display launch
+
+======================================================================
+Keywords          : kbdisplay kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

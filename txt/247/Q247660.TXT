@@ -1,0 +1,80 @@
+DOCUMENT:Q247660  06-AUG-2002  [winnt]
+TITLE   :Error When Saving Routing & Remote Access Service Configuration
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to save your configuration in Routing and Remote Access Service
+(RRAS) Administrator, you may receive the following error message:
+
+   An error occurred while backing up the configuration: The network name cannot
+   be found.
+
+   If you are saving the configuration of a remote computer, then the directory
+   and drive in which you are saving the configuration must exist on both the
+   local and remote computers.
+
+CAUSE
+=====
+
+This behavior occurs if the ADMIN$ administrative network share is not present
+on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, re-share the %SystemRoot% folder (by default, the Winnt
+folder) and name the share ADMIN$.
+
+MORE INFORMATION
+================
+
+The ADMIN$ administrative network share is created by default in all Microsoft
+Windows NT installations.
+
+To save the configuration, RRAS Administrator creates the following files:
+
+   <Save_filename>Interfaces
+   <Save_filename>Parameters
+   <Save_filename>RouterManagers
+   <Save_filename>Phonebook
+   <Save_filename>.mpr
+
+In the situation described in this article, only the first three files are
+created.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

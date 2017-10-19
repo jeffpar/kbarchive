@@ -1,0 +1,218 @@
+DOCUMENT:Q104235  08-AUG-2001  [winnt]
+TITLE   :Operating the HP ScanJet IIC/P with Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+WARNING: Using Registry Editor incorrectly can cause serious,
+system-wide problems that may require you to reinstall Windows NT to
+correct them. Microsoft cannot guarantee that any problems resulting
+from the use of Registry Editor can be solved. Use this tool at your
+own risk.
+
+SUMMARY
+=======
+
+Windows NT supports the use of the Hewlett-Packard (HP) ScanJet IIc color
+scanner if you use it with the DeskScan II software supplied by Hewlett-Packard.
+In order to ensure that the scanner runs correctly under Windows NT, you must
+carefully observe the following:
+
+NOTE: Much of the information in this article also applies to the HP ScanJet IIp
+scanner.
+
+ - The scanner must be connected and turned on before you start the computer.
+
+ - The scanner must be unlocked.
+
+ - The Microsoft-provided driver, HPSCAN16.SYS, must be loaded through a device=
+   line in the CONFIG.NT file.
+
+ - The HP-provided 25-pin terminator must be connected to the 25-pin Macintosh
+   SCSI-out connection.
+
+ - A supported SCSI Host Adapter must be used.
+
+ - The cables must be SCSI I or SCSI II specification.
+
+ - Install the most current version of DeskScan II software. (The latest version
+   is available on the CompuServe HP Peripherals Forum or by calling HP at (800)
+   227-8164.)
+
+ - The proprietary HP scanner interface card which ships with the scanner is not
+   supported under Windows NT.
+
+MORE INFORMATION
+================
+
+The following operational notes discuss each of the essential elements for
+correct operation of the HP ScanJet IIc. Troubleshooting tips and hints for more
+effective operation of the HP ScanJet IIc with Windows NT version 3.1 follow the
+operational notes.
+
+Operational Notes:
+
+1. The scanner needs to be connected to the SCSI Host Adapter in the computer,
+   turned on, and unlocked before you start the computer. Otherwise, the
+   computer will not recognize the scanner. Unlike some versions of the Windows
+   NT Beta, the scanner does not have to be installed, unlocked, and turned on
+   when installing the released version of Windows NT.
+
+2. Edit the CONFIG.NT file so that it contains a line which loads the
+   HPSCAN16.SYS driver. Use a text editor, such as Notepad, to add the following
+   line to the CONFIG.NT file:
+
+   DEVICE=%SYSTEMROOT%\SYSTEM32\DRIVERS\HPSCAN16.SYS
+
+   The CONFIG.NT file can be found in the SYSTEM32 subdirectory. Setup copies the
+   files HPSCAN16.SYS, HPSCAN32.DLL, and SCSISCAN.SYS to the hard disk when you
+   install Windows NT.
+
+3. The Hewlett-Packard provided in-line terminator must be connected to the
+   25-pin Macintosh SCSI-out port. The scanner may not be recognized by the
+   system or the DeskScan II software may fail to work if the SCSI bus is
+   incorrectly terminated. Usually, a SCSI bus is terminated at both ends, but
+   not in the middle. Therefore, if the scanner is the last device on the bus,
+   the end of the bus will be at the 25-pin Macintosh SCSI-out port. Do not
+   place an in-line terminator at the 50-pin SCSI-in connection. The scanner may
+   not work properly if the HP provided terminator is replaced with a terminated
+   cable or other SCSI device connected to the 25-pin SCSI- out port.
+
+4. Microsoft has tested all of the SCSI Host Adapters listed in the Windows NT
+   version 3.1 Hardware Compatibility List (HCL) with the HP ScanJet IIc.
+   However, as stated in the HCL, not all of the SCSI Host Adapters listed will
+   work correctly with the HP ScanJet IIc. The following SCSI Host Adapters on
+   the HCL will not work correctly with the HP ScanJet IIc:
+
+      Maynard 16-bit SCSI Adapter  (ISA)
+      Data Technology Corp. 3292   (EISA Adapter)
+      Olivetti ESC-1               (EISA Adapter)
+
+   The Maynard 16-bit and DTC 3292 SCSI Adapters are appropriately footnoted in
+   the HCL as not working with scanners, but the HCL documentation does not
+   mention that the Olivetti ESC-1 adapter will not work with the HP ScanJet
+   IIc.
+
+5. The HP ScanJet IIc is very sensitive to incorrect cabling. In order for the
+   scanner to work, the cables must be of high quality and meet the SCSI I or
+   SCSI II specification where appropriate (SCSI II Host Adapters require SCSI
+   II cabling). You must ensure that all connections are firm, with all
+   connector pins in solid contact. Shorter cables have a greater chance of
+   success than longer cables. Be certain that the cables are in very good
+   condition.
+
+6. Use the most current version of the HP DeskScan II software. Presently, the
+   most current version is 1.62. Versions earlier than 1.61 may not function
+   properly under Windows NT.
+
+7. Do not attempt to use the proprietary HP-provided scanner interface card with
+   Windows NT. The supported SCSI Host Adapter takes the place of this card.
+   However, HP has developed a driver that allows you to use the scanner with a
+   SCSI adapter in the MS-DOS and Windows 3.0 or 3.1 environments. The name of
+   this driver is SJIIIx.SYS and it is available by calling HP or from the HP
+   forum on CompuServe.
+
+Troubleshooting Hints and Tips:
+
+If the scanner does not function or you get error messages from the DeskScan II
+software advising you that the scanner cannot be found, then try the following
+steps:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. To check if Windows NT has recognized the scanner hardware, start the
+   Registry Editor (REGEDT32.EXE) and choose the HKEY_LOCAL_MACHINE key. Select
+   the following subkey
+
+   \HARDWARE\DEVICEMAP\Scsi\Scsi Port 0\Scsi Bus 0\Target Idx \logical Unit Id 0
+
+   where x represents the SCSI ID number for the scanning device. Examine the
+   entry at the SCSI ID number of the scanner. This entry should have a value of
+   HP C1750 A.
+
+2. In the Control Panel window, choose Devices to see if the 32-bit driver
+   SCSISCAN.SYS was started. If it has not started, attempt to start it by
+   choosing the Start button. Do not attempt to change the method by which it
+   starts by using the Startup button. The default setting in the Startup dialog
+   box is System. If you try to change this setting to Boot or some other
+   setting, you may lock your Windows NT installation. If this happens, you will
+   have to disconnect the scanner, start MS-DOS, and disable HPSCAN16.SYS in the
+   CONFIG.NT before returning to Windows NT.
+
+3. If HPSCAN16.SYS is loaded as a device driver in the CONFIG.NT file, but you
+   do not have the HP ScanJet IIc connected to the SCSI Host Adapter, then your
+   Windows NT will hang when started. The computer will need to be restarted. To
+   recover, either turn the machine off and reconnect the scanner, or use the
+   "dual boot" functionality of Windows NT by starting the MS-DOS environment
+   and editing the CONFIG.NT to disable the HPSCAN16.SYS device line.
+
+4. The DeskScan II software installation program will create a group called
+   Scanner in the Program Manager. In this group, you will see an icon of a
+   scanner with the icon title of DeskScan II. You may also see icons titled
+   Scanner Test and SCSI Addresses, however, these two applications are not
+   compatible with Windows NT. No resolution or workaround to this problem
+   exists at this time.
+
+5. Be sure that the SCSI ID number set for the scanner does not conflict with
+   the SCSI ID number for any other device on the SCSI bus. SCSI addresses 0
+   through 7 are displayed on a small, circular SCSI address indicator located
+   between the 50-pin SCSI-in and the 25-pin Macintosh SCSI-out ports at the
+   back of the scanner. In the middle of the indicator dial is a small, narrow
+   slot which can be turned with a tiny flat-bladed screwdriver. Once you change
+   the SCSI ID to a non-conflicting SCSI address, the new SCSI ID will be
+   recognized at system startup and will be written into the Windows NT
+   Registry.
+
+6. To determine whether the HP ScanJet is locked or unlocked, look for a
+   rectangular opening at the back of the scanner just above the 50-pin SCSI
+   port. If there is a half-height black plastic block in the opening, then the
+   scanner is unlocked. To lock the scanner, you must press down firmly on the
+   plastic block. When the block is in the depressed position, a black bar will
+   appear in the rectangular opening. To unlock the scanner, push the horizontal
+   black bar back up to the top of the rectangular opening.
+
+
+The central technical support number for Hewlett-Packard (HP) is (208) 323-2551.
+
+
+The Hewlett-Packard products included here are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 3.10 prodnt hewlett packard scan jet iicx
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

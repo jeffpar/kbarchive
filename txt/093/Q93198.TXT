@@ -1,0 +1,82 @@
+DOCUMENT:Q93198  20-FEB-2002  [win3x]
+TITLE   :Windows for Workgroups NET START Error 5736
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message after the NET START command in the
+AUTOEXEC.BAT file is processed:
+
+   hardware failure error 5736
+
+CAUSE
+=====
+
+This error can occur if one of the following conditions exists:
+
+ - You are using an IBM Token Ring network interface card (NIC) and there is a
+   memory conflict caused by a non-standard ROM address.
+
+ - You have an Intel EtherExpress 16 network interface card (NIC) and your AMI
+   Plug and Play BIOS "Interrupts from Available" CMOS entry is set to something
+   other than "Used by ISA Slot."
+
+
+ - You are using an IBM Token Ring PCMCIA network adapter and the IBMTOKCS.DOS
+   driver written specifically for it.
+
+ - You are using an Intel EtherExpress 16 network adapter and another device in
+   your computer (such as a SCSI controller) is using base address 0x300.
+
+RESOLUTION
+==========
+
+Use any one of the following methods to work around this problem:
+
+ - Add the following line to PROTOCOL.INI file in the [MS$IBMTR1] section:
+
+   RAM=0xD800
+
+   NOTE: This section can also be named [MS$IBMTR2], [MS$IBMTR3], or [MS$IBMTR4].
+
+ - Set your AMI Plug and Play BIOS "Interrupts from Available" CMOS entry to
+   "Used by ISA Slot."
+
+ - Change the default RAM address for your IBM Token Ring PCMCIA network adapter
+   from D800 to D400, and change the IRQ from 10 to 5.
+
+ - Configure the Intel EtherExpress 16 card to use a different base address.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

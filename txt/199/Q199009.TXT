@@ -1,0 +1,82 @@
+DOCUMENT:Q199009  31-JAN-1999  [homemm]
+TITLE   :EVG99: Video Playback Is Choppy or Quits Before Clip Is Finished
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+ - Microsoft Encarta Reference Suite 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a video clip in Microsoft Encarta Virtual Globe 99 on a Microsoft
+Windows 95-based computer, the video playback may be broken up or choppy, or may
+quit before the video clip is finished playing.
+
+CAUSE
+=====
+
+This behavior can occur if an ATI Rage Pro video card is installed in your
+computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest video driver for the ATI
+Rage Pro video card from the following ATI Web site:
+
+   http://www.atitech.com
+
+If the issue continues to occur, download and install the latest Intel Indeo
+video codec from the following Intel Web site:
+
+   http://www.intel.com/ial/indeo/video/driver.htm
+
+MORE INFORMATION
+================
+
+For information about problems playing video clips in Microsoft Encarta
+Encyclopedia, please see the following article in the Microsoft Knowledge Base:
+
+   Q197041 Encarta Encyclopedia 99: Video Clips Are Not Played Smoothly
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 multi multi-media media mm world atlas evg movie stops
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference99 kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

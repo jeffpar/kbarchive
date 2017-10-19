@@ -1,0 +1,81 @@
+DOCUMENT:Q174232  10-AUG-2001  [winnt]
+TITLE   :Stop 0x0000000A in Atapi.sys (Post SP2) with DMA Enabled
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use DMA Bus-Mastering on a PCI IDE controller using Atapi.sys (Service
+Pack 2 or later) you may experience the following blue screen error message:
+
+   Stop 0x0000000A (0x00830830, 0x0000000d, 0x00000001 0x800059f0)
+   IRQL_NOT_LESS_OR_EQUAL
+   Address 800059f0 has base at 80005000 - ATAPI.SYS
+
+NOTE: The first parameter will vary and the fourth parameter will always fall in
+the range of Atapi.sys.
+
+CAUSE
+=====
+
+This is caused when the buffer provided to Atapi is in user-mode and the driver
+not running in the same context, accesses the buffer. This happens specifically
+with the inquiry command using pass-through-direct mode.
+
+WORKAROUND
+==========
+
+Disable DMA Bus-Mastering for Atapi or contact the manufacture of the
+application for an update or rewrite the application to use
+IOCTL_SCSI_PASS_THROUGH.
+
+For more information on DMA Bus-Mastering, please refer to the following
+Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q158873
+TITLE : How to Enable IDE DMA Bus-Mastering using SP2 ATAPI.SYS
+
+
+
+MORE INFORMATION
+================
+
+This is a design problem that has been seen with applications that use the
+SCSIOP_INQUIRY commands to the miniport through the
+IOCTL_SCSI_PASS_THROUGH_DIRECT interface. In order to send
+IOCTL_SCSI_PASS_THROUGH_DIRECT you must be an administrator. This IOCTL should
+not be used to send a SCSIOP_INQUIRY.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

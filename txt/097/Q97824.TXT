@@ -1,0 +1,56 @@
+DOCUMENT:Q97824  13-JUN-2001  [winmisc]
+TITLE   :Embedding Sound Files in Excel 3.x
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.x of Microsoft Excel for Windows is one of the first applications to
+use OLE. It predates much of the OLE functionality described in the current
+specifications used by Microsoft Windows operating system version 3.1.
+
+Because Excel 3.x is older than the current OLE specification, it behaves
+differently than other, more recent, OLE client applications.
+
+In Excel 3.x, you cannot play embedded objects; you can only edit them. Multiverb
+objects, such as Sound or Note-It objects, cannot be played or run. If you try
+to play an embedded object by double-clicking it, the respective editing program
+comes up instead.
+
+For example, if you run Quick Recorder and embed a .WAV file, the icon will be
+displayed. However, when you double-click to play the file, the Quick Recorder
+will run instead.
+
+Excel 4.0 fully implements the OLE 1.0 specification.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

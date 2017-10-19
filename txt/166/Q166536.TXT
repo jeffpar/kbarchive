@@ -1,0 +1,67 @@
+DOCUMENT:Q166536  08-MAY-1999  [exchange]
+TITLE   :XCON: MTA Generates Event ID 2187 on Deferred Delivery Message
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a message designated for deferred delivery, the message transfer
+agent (MTA) may generate an error message resembling the following:
+
+   MSExchangeMTA
+   Event ID: 2187
+   MSExchangeMTA event ID: 2187
+   An MTA database server error was encountered while attempting to unlock
+   an object which is not locked. Called from MTA. Procedure XX. Object at
+   fault: XXXXXXXX.
+
+CAUSE
+=====
+
+The source object for a deferred delivery message is locked twice and then
+unlocked once. The first unlock leaves the object in an unlocked state. When a
+second unlock attempt is made, the error message appears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem was corrected in the latest Microsoft Exchange Server
+5.0 U.S. Service Pack. For information on obtaining the service pack, query on
+the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

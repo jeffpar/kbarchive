@@ -1,0 +1,117 @@
+DOCUMENT:Q170823  17-JUL-2001  [visualc]
+TITLE   :PRB: CDBException Thrown Opening Recordset on Stored Procedure
+PRODUCT :Microsoft C Compiler
+PROD/VER:2.0 2.1 2.2 4.0 4.0a 4.1 4.2 4.2
+OPER/SYS:
+KEYWORDS:kbDatabase kbMFC kbODBC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.0a, 4.1, 4.2b 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++ for Windows, 16-bit edition, version 1.52 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the "Call" syntax to invoke a stored procedure when opening a
+recordset, an exception might be thrown. Depending upon the version of Visual
+C++, whether or not you have DB Tracing enabled and the DBMS in use, you might
+see one of the following errors:
+
+   
+
+   Version:        4.X
+   Message Box:    <See below for DBMS specific error message>
+   Output Window:  <See below for DBMS specific error message>
+                State:37000,Native:<DBMS specific>,Origin:[<vendor>]
+                  [<driver name/version>][<DBMS--optional>]
+                Error: ODBC failure on SQLPrepare->
+
+   
+
+   Version:        2.X
+   Message Box:    Internal application error.
+   Output Window:  <See below for DBMS specific error message>
+                State:37000,Native:<DBMS specific>,Origin:[<vendor>]
+                  [<driver name/version>][<DBMS--optional>]
+                Error: ODBC failure on SQLPrepare.
+
+   
+
+   Version:        1.5X
+   Message Box:    Internal application error.
+   Output Window:  <See below for DBMS specific error message>
+                State:37000[<vendor>][<driver name/version>]
+                [<DBMS--optional>]
+
+DBMS specific error information:
+
+DBMS                 Error String                   Native Code
+------------------------------------------------------------------
+SQL Server:  Incorrect syntax near the keyword 'EXEC'.     156
+
+Access:      Syntax error in FROM clause.                -3506
+(and other
+ desktop
+ drivers)
+
+
+NOTE: If you are using Visual C++ 1.5X and connecting to a 16-bit SQL Server
+datasource, an exception may not be thrown but the desired result set is not
+returned.
+
+CAUSE
+=====
+
+While this line of code may appear to be a perfectly valid way to invoke a
+stored procedure, there is a small error:
+
+   m_pSet->Open(CRecordset::snapshot, "{ Call szCallTest}");
+
+The space between the "{" and the "C" cause MFC to misinterpret the Call
+statement as the name of a table. MFC makes a case insensitive comparison
+between any SQL provided in the Open() call and the literal constant szCall,
+which is defined as _T("{call "). If the comparison fails, the provided SQL is
+incorrectly incorporated into a SELECT statement that is executed instead of the
+stored procedure call.
+
+RESOLUTION
+==========
+
+Make sure that there are no extra spaces between the first curly brace and the
+"Call" key word.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbAudDeveloper kbMFC
+Version           : 2.0 2.1 2.2 4.0 4.0a 4.1 4.2 4.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

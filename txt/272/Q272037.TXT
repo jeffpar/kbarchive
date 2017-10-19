@@ -1,0 +1,66 @@
+DOCUMENT:Q272037  07-JAN-2001  [homemm]
+TITLE   :Encarta 2001 Err Msg: ENC2001 Caused an Invalid Page Fault...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Register Online Now to attempt to register Microsoft Encarta
+after you install the program, you may receive the following error message:
+
+   ENC2001 caused an invalid page fault in module ENC2001.EXE.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - You click Register Online Now the first time that you start Encarta after you
+   install it.
+
+ - The Encarta CD-ROM is not inserted in the CD-ROM drive.
+
+RESOLUTION
+==========
+
+To resolve this issue, insert the Encarta CD-ROM into the CD-ROM drive, and then
+follow the instructions on the screen to complete Online Registration.
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm encarta2001
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

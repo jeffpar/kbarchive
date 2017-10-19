@@ -1,0 +1,74 @@
+DOCUMENT:Q108465  08-AUG-2001  [winnt]
+TITLE   :Saving Changes to a File on an SFM Volume Fails
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This problem may occur in other applications in addition to those tested. Adobe
+Illustrator, Aldus Freehand, and Microsoft Powerpoint were tested. When you try
+to save a file from a Windows NT server (running Services for Macintosh) to a
+Macintosh computer, error -123 appears.
+
+NOTE: In Aldus Freehand, the error message states that a disk write failed.
+
+You can use the Save As option under the File menu, and the first time you save a
+file, the save is successful. The error only occurs when saving to an existing
+file.
+
+CAUSE
+=====
+
+This problem is caused by the failure of Services for Macintosh to support the
+Macintosh API command FpExchangeFiles.
+
+WORKAROUND
+==========
+
+To work around this problem, copy the file to the hard disk on the Macintosh,
+edit the file and save changes, then copy the updated file back to the SFM
+volume of the Windows NT Advanced Server computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. This problem was corrected in the latest U.S.
+Service Pack for Windows NT and Windows NT Advanced Server version 3.1. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

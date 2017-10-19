@@ -1,0 +1,72 @@
+DOCUMENT:Q235494  24-JUN-2000  [exchange]
+TITLE   :XFOR: Certain Exchange Recipients Don't Display Properly in GW
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a Novell GroupWise user receives a message sent by means of the Microsoft
+Connector for Novell GroupWise, certain Microsoft Exchange Server recipients may
+not be displayed correctly in the GroupWise client. This occurs for Exchange
+Server users who have the parenthesis character (())in their display name, for
+example:
+
+   John Smith (Exchange)
+
+Only the word "Exchange" is displayed representing the user. This does not affect
+the ability to reply to mail between GroupWise and Exchange Server.
+
+CAUSE
+=====
+
+This behavior is caused by the way the GroupWise client displays message header
+information.
+
+WORKAROUND
+==========
+
+Change the display name of Exchange Server users or other custom recipients such
+that their display names do not contain the parenthesis characters; for example,
+use a square bracket ([]) instead.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: gwise
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

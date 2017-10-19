@@ -1,0 +1,67 @@
+DOCUMENT:Q156485  14-NOV-2000  [word97]
+TITLE   :WD97: Form Field Command No Longer on the Insert Menu
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Form Field command is no longer on the Insert menu.
+
+MORE INFORMATION
+================
+
+The Form Field menu selection has been removed from the Insert menu in Microsoft
+Word 97 for Windows. Form fields are inserted into a Word document, by default,
+from the Forms Toolbar.
+
+To activate the Forms Toolbar, point to Toolbars on the View menu, and then click
+Forms.
+
+To add the Form Field command to the Insert menu, do the following:
+
+1. On the Tools menu, click Customize.
+
+2. Click the Commands tab.
+
+3. In the Categories list box, select All Commands.
+
+4. In the Commands list box, click InsertFormField.
+
+5. Drag InsertFormField to the Insert menu. Release the mouse button when you
+   see a horizontal bar indicating the location on the menu where the command
+   will be inserted.
+
+6. Click Close.
+
+Additional query words: gone deleted 8.0 word8 word97
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

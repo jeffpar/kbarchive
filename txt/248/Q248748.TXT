@@ -1,0 +1,83 @@
+DOCUMENT:Q248748  09-NOV-2001  [homegame]
+TITLE   :Fighter Ace II: Error Messages When You Attempt to Start Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kberrmsg kbtool igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Fighter Ace II, you may receive the
+following series of error messages:
+
+    - Error
+
+    - The game has been terminated. Video mode error
+   Can't set video mode 640x480x16
+
+    - Runtime Error!
+
+   Program: C:\Program Files\Microsoft Games\Fighter
+   Ace II\FAII.Exe
+
+   Abnormal Program Termination
+
+CAUSE
+=====
+
+This behavior can occur if the graphics hardware acceleration setting on your
+computer is set too low.
+
+RESOLUTION
+==========
+
+To resolve this issue, increase the graphics hardware acceleration setting:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Performance tab, and then click Graphics.
+
+4. Move the "Hardware acceleration" slider all the way to Full (the "All
+   accelerator functions" setting).
+
+5. Click OK, and then click OK again.
+
+6. When you are prompted to restart the computer, do so.
+
+If the issue continues to occur, repeat these steps to move the "Hardware
+acceleration" slider one notch to the left of Full (the "Most accelerator
+functions" setting).
+
+Additional query words: 2.00 msgame fa msngz igz
+
+======================================================================
+Keywords          : kbdisplay kberrmsg kbtool igz kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

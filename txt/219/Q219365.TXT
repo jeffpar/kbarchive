@@ -1,0 +1,83 @@
+DOCUMENT:Q219365  16-MAY-2002  [winnt]
+TITLE   :Free Disk Space Error When Attempting to Install SP4
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP4
+OPER/SYS:
+KEYWORDS:kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Windows NT 4.0 Service Pack 4 (SP4), the following
+error message may be displayed:
+
+   Service Pack Setup Error
+   You do not have enough free disk space to install the Service Pack. The
+   Service Pack requires 40 MB, or 80 MB if you choose to also backup files for
+   uninstall.
+
+This error message may be displayed even though the computer has the amount of
+free space on its boot partition that the message indicates is not present.
+
+CAUSE
+=====
+
+This behavior occurs because SP4 may require up to 60 MB of free disk space, or
+120 MB if you choose to also backup files for uninstallation.
+
+RESOLUTION
+==========
+
+To resolve this problem, increase the amount of free disk space in the partition
+where Windows NT is installed to at least 60 MB (if you do not want to create an
+uninstallation folder), or to 120 MB (if you want to create an uninstallation
+folder).
+
+
+This problem does not occur in Windows NT 4.0 Service Pack 5.
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+4.0 SP4. This problem was first corrected in Windows NT 4.0 Service Pack 5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0,4.0 SP4
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

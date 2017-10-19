@@ -1,0 +1,1610 @@
+DOCUMENT:Q83433  30-JUL-2001  [win3x]
+TITLE   :Windows 3.1 Resource Kit WIN.INI Section Settings
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10 3.11
+WINDOWS
+kbref kbdisplay kbsound
+
+SUMMARY
+=======
+
+The information contained in this article is contained in the WININI.WRI file in
+the Microsoft Windows Resource Kit for the Microsoft Windows operating system
+version 3.1. The WININI.WRI file may be viewed within the Windows Write utility
+in the Windows Accessories Group.
+
+The WININI.WRI file contains specific information about the entries.
+
+MORE INFORMATION
+================
+
+WIN.INI File Settings
+---------------------
+
+Windows initialization files contain information that defines your
+Windows environment. Windows and Windows applications can use the
+information stored in these files to configure themselves to meet your
+needs and preferences.
+
+There are two standard Windows initialization files:
+
+1. WIN.INI, which primarily contains settings that you can use to
+   customize your Windows environment according to your preferences.
+
+2. SYSTEM.INI, which primarily contains settings that you can use to
+   customize Windows to meet your system's hardware needs.
+
+Caution: Changing settings can lead to undesirable results when you
+run Windows. Before changing any setting, read "Changing Settings"
+later in this document.
+
+Format of the WIN.INI File
+--------------------------
+
+The WIN.INI file contains several sections, each of which consists of
+a group of related settings. The sections and settings are listed in
+the WIN.INI file in the following format:
+
+  [section name]
+  keyname=value
+
+In this example, [section name] is the name of a section. The
+enclosing brackets ([]) are required, and the left bracket must be in
+the leftmost column on the screen.
+
+The keyname=value statement defines the value of each setting. A
+keyname is the name of a setting. It can consist of any combination of
+letters and digits, and must be followed immediately by an equal sign
+(=). The value can be an integer, a string, or a quoted string,
+depending on the setting.
+
+You can include comments in initialization files. You must begin each
+line of  a comment with a semicolon (;).
+
+Sections in the WIN.INI File
+----------------------------
+
+The sections described in the list below most often appear in the
+WIN.INI file. Your WIN.INI file might not have all of these sections,
+or it might have additional sections, depending on your system's
+hardware and software requirements and configuration. For example, if
+you install a printer or set up applications, additional sections and
+settings might be inserted by your applications or the software that
+controls your printer. Refer to your application's documentation for
+information on those sections and settings.
+
+The following sections appear in WIN.INI and in this document in the
+following order (however, the order of these sections is not
+important):
+
+Section         Does
+-------         ----
+
+[windows]       Affects several elements of your Windows environment.
+
+[desktop]       Controls the appearance of the screen background
+                (desktop) and the positioning of windows and icons.
+
+[extensions]    Associates specified types of files with corresponding
+                applications.
+
+[intl]          Describes how to display items for different countries
+                and languages.
+
+[ports]         Lists all available output ports.
+
+[fonts]         Lists the font files that are loaded by Windows.
+
+[FontSubstitutes]
+                Lists the fonts that Windows uses in place of
+                other fonts, only if the other fonts are not installed on
+                your system.
+
+[TrueType]      Describes options for using and displaying TrueType
+                fonts.
+
+[mci extensions]
+                Associates specified types of files with Media
+                Control Interface devices.
+
+[network]       Describes network settings and previous network
+                connections.
+
+[embedding]     Lists the server objects used in OLE.
+
+[Windows Help]  Lists settings used to specify the default size,
+                placement, and text colors of the Help window and dialog
+                boxes.
+
+[sounds]        Lists sound files assigned to system and application
+                events.
+
+[PrinterPorts]  Lists installed printers that Windows can access.
+
+[devices]       Lists installed printers that provide compatibility with
+                Windows versions 2.x.
+
+[programs]      Lists additional paths that Windows will search to find a
+                program file when you try to open an associated data
+                file.
+
+[colors]        Defines colors for parts of the Windows display.
+
+Updating WIN.INI from Previous Versions of Windows
+--------------------------------------------------
+
+If you update your system to Windows version 3.1 from Windows version
+3.0, Setup automatically updates your WIN.INI file by making the
+following changes:
+
+In the [windows] section, Setup adds three new settings:
+
+KeyboardDelay=
+ScreenSaverTimeout=
+DosPrint=
+
+If the following settings are already present in the 3.0 version of
+the WIN.INI file, Setup will not change them. If they are not present,
+Setup will add them:
+
+Device=
+Documents=
+Programs=com exe bat pif
+
+In the [extensions] section, Setup adds one new setting:
+
+bmp=pbrush.exe ^.bmp
+
+Setup adds two new settings, if they are not already present in the
+3.0 version of the WIN.INI file:
+
+pcx=pbrush.exe ^.pcx
+rec=recorder.exe ^.rec
+
+In the [ports] section, Setup adds:
+
+LPT1.DOS
+LPT2.DOS
+
+Setup adds three additional settings, if they are not already present
+in the 3.0 version of WIN.INI:
+
+FILE:
+COM3:=9600,n,8,1,x
+COM4:=9600,n,8,1,x
+
+Setup adds the following section and settings to support TrueType
+fonts:
+
+[FontSubstitutes]
+Helv=MS Sans Serif
+Tms Rmn=MS Serif
+Times=Times New Roman
+Helvetica=Arial
+
+Setup adds the following sections and settings to support multimedia:
+
+[mci extensions]
+wav=waveaudio
+mid=sequencer
+rmi=sequencer
+
+Setup adds the following sections and settings to support sound:
+
+[sounds]
+SystemDefault=ding.wav, Default Beep
+SystemExclamation=chord.wav, Exclamation
+SystemStart=tada.wav, Windows Start
+SystemExit=chimes.wav, Windows Exit
+SystemHand=chord.wav, Critical Stop
+SystemQuestion=chord.wav, Question
+SystemAsterisk=chord.wav, Asterisk
+
+Setup adds the following section and settings to support OLE:
+
+[embedding]
+SoundRec=Sound,Sound,SoundRec.exe,picture
+Package=Package,Package,packager.exe,picture
+PBrush=Paintbrush Picture,Paintbrush Picture,pbrush.exe,picture
+
+Setup also makes additional changed, depending on the applications and
+devices installed on your system.
+
+How to Read this Document
+-------------------------
+
+In this document, WIN.INI settings are listed alphabetically within
+sections. However, the settings do not appear alphabetically in the
+WIN.INI file. If you want to change a setting, you will have to search
+for it within the appropriate section.
+
+This document lists the syntax, purpose, and recommended method for
+changing each setting using the following format:
+
+SettingName=<value-type>
+
+Default:        This is Windows' built-in value for this setting.
+Purpose:        This paragraph briefly describes the function of the
+setting
+                and its default value (if applicable).
+To change:      This sentence states the recommended method for changing
+                the value of this setting.
+
+The <value-type> indicates whether the value should be a number, a
+letter, a range of numbers, or something else.
+
+Changing Settings
+-----------------
+
+When the Setup program created the WIN.INI, file it assigned default
+values to the settings. Some settings that are listed in this
+document, may not appear in your WIN.INI file. These settings have the
+default value. You might want to change one or more of these values to
+change the appearance or performance of Windows to suit your needs.
+
+<B>Caution</B>:  Always back up your WIN.INI file before you make changes so that you can restore the original file in cause you accidentally damage
+the WIN.INI file or make changes that cause problems when running
+Windows.
+
+There are two ways to change WIN.INI settings:
+
+By using Control Panel to change most settings. This is the safest
+and most recommended way because there is no need to open the
+WIN.INI file, where it is easier to make mistakes. For more
+information on Control Panel, see Chapter 5, "Control Panel," in the
+Windows User's Guide.
+
+By using a text editor, such as Notepad, to edit the WIN.INI file
+directly. (Don't use a formatting editor; it can corrupt your
+WIN.INI file.) This is the method you must use to change the
+settings that cannot be changed with Control Panel. After you have
+edited the WIN.INI file, you must restart Windows for the settings
+to take affect. For more information on how to use Notepad, see
+Chapter 12, "Additional Accessories," in the Windows User's Guide.
+
+Caution:  Be extra careful when using a text editor to edit the
+WIN.INI file. Incorrect changes to WIN.INI can cause unexpected
+results when you run Windows. In addition, some editors can damage
+certain characters  (those with ANSI values of greater than 127). It
+is recommended that you use Notepad to change the settings that cannot
+be changed with Control Panel. The listings in this document indicate
+which settings you can change with Control Panel.
+
+[windows] Section Settings
+--------------------------
+
+The [windows] section contains settings that affect the following
+parts of your Windows environment:
+
+  Applications that start when you start Windows
+  Warning beep
+  Printing
+  Window border width
+  Keyboard speed
+  Mouse settings
+  Definition of files as documents or programs
+
+The [windows] section can contain the following settings:
+
+Beep=<yes-or-no>
+
+Default:        Yes
+Purpose:        If this setting is enabled, Windows sounds a warning
+                beep when you  attempt to do something that is not
+                allowed.
+To change:      Choose the Sound icon from the Control Panel window.
+
+BorderWidth=<number>
+
+Default:        3
+Purpose:        Sets the width of the borders around all the windows on
+                your desktop except those that have a fixed size. The
+                allowed range is 1 (narrowest) to 49 (widest).
+To change:      Choose the Desktop icon from the Control Panel window.
+
+CoolSwitch=<0-or-1>
+
+Default:        1
+Purpose:        Turns fast task switching on or off. A value of 1 turns
+                this feature on. A value of 0 turns it off.
+To change:      Choose the Desktop icon in the Control Panel window and
+                select or clear the Fast "Alt+TAB" Switching check box.
+____________________________________________________________
+CursorBlinkRate=<milliseconds>
+
+Default:        530
+Purpose:        Indicates how many milliseconds elapse between each blink
+of
+                the selection cursor.
+To change:      Choose the Desktop icon from the Control Panel window.
+_____________________________________________________________
+Device=<output-device-name>, <device-driver>, <port-connection>
+
+Default:        None
+Purpose:        Defines the default printer. The <output-device-name> value
+                can be any device name given in the [devices] section. An
+                explicit port and driver must be assigned to the device.
+The
+                <device-driver> value is the filename (without the
+extension)
+                of the device-driver file. The <port-connection> value is
+any
+                portname given in the [ports] section.
+To change:      Choose the Printers icon from the Control Panel window or
+                the Printer Setup command from the Print Manager Options
+                menu.
+_____________________________________________________________
+DefaultQueueSize=<number>
+
+Default:        8
+Purpose:        Specifies the number of messages an application's message
+                queue can hold.
+To change:      Use Notepad to edit the WIN.INI file. (You should never
+                need to change this setting.)
+____________________________________________________________
+DeviceNotSelectedTimeout=<seconds>
+
+Default:        15
+Purpose:        Specifies the default number of seconds for Windows to wait
+                for a device to be switched on. A value is saved for each
+                printer listed in the [PrinterPorts] section. If the device
+                is not turned on during this time, Windows won't print to
+the
+                device. Note that for some devices, Windows immediately
+                displays an error message if the device is not already
+turned
+                on.
+To change:      Use Notepad to edit the WIN.INI file. This setting serves
+                only as the system default value. To change the value for a
+                particular printer, choose the Printers icon from the
+Control
+                Panel window or the Printer Setup command from the Print
+                Manager Options menu. This changes the corresponding value
+                only in the [PrinterPorts] section.
+____________________________________________________________
+Documents=<extensions>
+
+Default:        None
+Purpose:        Defines files that are considered "documents" by Windows
+                File Manager. The listings in the [extensions] section also
+                determine which files File Manager recognizes as document
+                files, and associates them with a particular application.
+The
+                extensions listed here are not associated with any
+                application. Use this setting to define only document file
+                extensions that are not in the [extensions] section.
+Separate
+                extension names with a space, and do not include the
+                preceding periods.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+DosPrint=<yes-or-no>
+
+Default:        No
+Purpose:        Specifies whether Windows should use MS-DOS interrupts
+                when printing. When this setting is yes, MS-DOS interrupts
+                are used. When this setting is no, printing output is sent
+                directly to the port that the printer is assigned to.
+To change:      Choose the Printers icon from the Control Panel window or
+                the Printer Setup command from the Print Manager Options
+                menu, and then clear the Fast Printing Direct to Port check
+                box in the Connect dialog box.
+____________________________________________________________
+DoubleClickHeight=<pixels>
+
+Default:        4
+Purpose:        Specifies the height (in pixels) that the mouse pointer can
+                move between clicks in a double-click. If the mouse pointer
+                is moved further up or down,  the two clicks will be
+treated
+                as separate single clicks. For example, if
+                DoubleClickHeight=10, the mouse pointer cannot move
+                vertically more than 5 pixels between clicks for the two
+                clicks to be recognized as a double-click. If you enter an
+                odd number, it is rounded up to the nearest even number.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+DoubleClickSpeed=<milliseconds>
+
+Default:        452
+Purpose:        Establishes the maximum amount of time between clicks of
+                the mouse button that the system will permit for one double-
+                click. The lower the value, the less time you have to click
+                twice in order to effect a double-click.
+To change:      Choose the Mouse icon from the Control Panel window.
+____________________________________________________________
+DoubleClickWidth=<pixels>
+
+Default:        4
+Purpose:        Specifies the width (in pixels) that the mouse pointer can
+                move between clicks in a double-click. If the mouse pointer
+                is moved further right or left, the two clicks will be
+                treated as separate single clicks. For example, if
+                DoubleClickWIDTH=10, the mouse pointer cannot move
+                horizontally more than 5 pixels between clicks for the two
+                clicks to be recognized as a double-click. If you enter an
+                odd number, it is rounded up to the nearest even number.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+KeyboardDelay=<milliseconds>
+
+Default:        2
+Purpose:        Establishes how much time elapses after you hold down a key
+                before the key starts to repeat.
+To change:      Choose the Keyboard icon from the Control Panel window.
+____________________________________________________________
+KeyboardSpeed=<milliseconds>
+
+Default:        31
+Purpose:        Establishes how much time elapses between repetitions of a
+                character on the display when you hold down a keyboard key.
+                This setting does not  work for all keyboards. If you
+delete
+                this setting from WIN.INI, Windows Setup will not set this
+                speed, but the speed will still be set if you choose the
+                Keyboard icon in Control Panel (even if you cancel out of
+                it).
+To change:      Choose the Keyboard icon from the Control Panel window.
+____________________________________________________________
+Load=<filename(s)>
+
+Default:        none
+Purpose:        Specifies one or more applications that will run as icons
+                when Windows is started. This value is a list of one or
+more
+                program filenames for applications, or documents that are
+                associated with an application, each separated by a space.
+                Make sure you specify the complete path if the application
+or
+                document is not located in the Windows directory.
+To change:      Add the application to the Startup group in Program
+                Manager and then, select the Minimize on Use check box in
+the
+                Properties dialog box.
+____________________________________________________________
+MenuDropAlignment=<0-or-1>
+
+Default:        0
+Purpose:        Specifies whether menus open so that they are right aligned
+                or left aligned with the menu title. If this setting is 0,
+                menus open so that they are left aligned. If it is 1, menus
+                open so that they are right aligned.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+MenuShowDelay=<milliseconds>
+
+Default:        0 for 386 computers; 400 for 286 computers
+Purpose:        Specifies how long to wait before displaying a cascading
+                menu.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+MouseSpeed=<0-or-1-or-2>
+
+Default:        1
+Purpose:        Establishes the relationship between mouse movement and
+                cursor movement when the value of either MouseThreshold1 or
+                MouseThreshold2 is exceeded. When this occurs, Windows
+causes
+                cursor movement to accelerate according to the value of
+                MouseSpeed. If it is 0,  there is no acceleration. If it is
+                1, the cursor is moved twice the normal speed when mouse
+                movement exceeds the value of MouseThreshold1. If  it is 2,
+                the cursor is moved twice the normal speed when mouse
+                movement exceeds the value of MouseThreshold1 or four times
+                the normal speed if mouse movement exceeds MouseThreshold2.
+To change:      Choose the Mouse icon from the Control Panel window.
+____________________________________________________________
+MouseThreshold1=<pixels>
+
+Default:        5
+Purpose:        Establishes the maximum number of pixels that the mouse can
+                move between mouse interrupts before Windows alters the
+                relationship between mouse movement and cursor movement. If
+                the mouse movement exceeds this threshold and MouseSpeed is
+                greater than zero, Windows moves the cursor at twice the
+                normal speed.
+To change:      Choose the Mouse icon from the Control Panel window.
+____________________________________________________________
+MouseThreshold2=<pixels>
+
+Default:        10
+Purpose:        Establishes the maximum number of pixels that the mouse can
+                move between mouse interrupts before Windows alters the
+                relationship between mouse movement and cursor movement. If
+                the mouse movement exceeds this threshold and MouseSpeed is
+                equal to 2, Windows moves the cursor at four times the
+normal
+                speed.
+To change:      Choose the Mouse icon from the Control Panel window.
+____________________________________________________________
+MouseTrails=<number>
+
+Default:        None
+Purpose:        Specifies the number of pointers shown on the screen when
+the
+                MouseTrails option is selected. You can specify a number
+                between 1 and 7. Note: This setting is supported only if
+you
+                are using an EGA, VGA or SuperVGA display driver.
+To change:      Choose the Mouse icon from the Control Panel window or,
+                if the Mouse dialog box in Control Panel does not include
+                the MouseTrails option, use Notepad to edit the WIN.INI
+file.
+____________________________________________________________
+NetWarn=<0-or-1>
+
+Default:        1
+Purpose:        Specifies whether Windows should display a warning message
+if
+                your system is configured to run a network and the network
+is
+                not running or the wrong network is running. All Windows
+                network-related options will be disabled if the network is
+                disabled or incorrect. Setting this value to 0 will disable
+                the warning message.
+To change:      Choose the Network icon from the Control Panel window.
+____________________________________________________________
+NullPort=<string>
+
+Default:        "None"
+Purpose:        Specifies the name used for a null port. This name appears
+in
+                the Printers-Connect dialog box when a device is installed
+                (that is, the device driver is present) but is not
+connected
+                to any port. This value also appears for such a device in
+the
+                [devices] section of  WIN.INI.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+Programs=<extensions>
+
+Default:        com exe bat pif
+Purpose:        Defines which files Windows regards as applications.
+                Extension names  are separated by a space and do not
+include
+                the preceding periods.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+Run=<filename(s)>
+
+Default:        None
+Purpose:        Causes Windows to run one or more specified applications
+when
+                Windows is started. The value is a list of one or more
+                filenames of applications, or documents associated with
+                applications, each separated by a space. Make sure you
+                specify the complete path if the application or document is
+                not located in the Windows directory.
+To change:      Add the application to the Startup group in Program
+                Manager.
+____________________________________________________________
+ScreenSaveActive=<0-or-1>
+
+Default:        0
+Purposes:       Specifies whether a screen saver should be displayed if
+                Windows is not actively being used. Setting this value to
+1,
+                enables a screen saver. Setting this value to 0 disables a
+                screen saver.
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+ScreenSaveTimeOut=<seconds>
+
+Default:        120
+Purpose:        Specifies the amount of time that Windows must be idle
+before
+                the screen saver appears.
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+Spooler=<yes-or-no>
+
+Default:        Yes
+Purpose:        Specifies whether or not to send output to the printer
+                through Print Manager. Changing this value to no disables
+                Print Manager.
+To change:      Choose the Printers icon from the Control Panel window
+                and select or clear the Use Print Manager check box.
+____________________________________________________________
+SwapMouseButtons=<0-or-1>
+
+Default:        0
+Purpose:        Specifies whether or not to swap the right and left mouse
+                buttons. If the value is 1, the buttons are swapped.
+To change:      Choose the Mouse icon from the Control Panel window.
+____________________________________________________________
+TransmissionRetryTimeout=<seconds>
+
+Default:        90 for PostScript printers; 45 for all other printers.
+Purpose:        Specifies the default amount of time to give Windows for
+                attempted transmission retries. A value is saved for each
+                printer in the [PrinterPorts] section. If a successful
+                transmission does not occur during this time, Windows Print
+                Manager displays a message stating that the printer is not
+                receiving characters.
+To change:      Use Notepad to edit the WIN.INI file. This setting serves
+                only as the system default value. To change the value for a
+                particular printer, choose the Printers icon from the
+Control
+                Panel window or choose the Printer Setup command from the
+                Print Manager Options menu. Changing this setting by using
+                Control Panel or Print Manager changes the corresponding
+                value only in the [PrinterPorts] section.
+____________________________________________________________
+
+[desktop] Section Settings
+
+The [desktop] section contains optional settings that control the
+appearance of the screen background (desktop) and the positioning of
+windows and icons on the screen.
+
+The [desktop] section can contain the following settings:
+____________________________________________________________
+GridGranularity=<number>
+
+Default:        0
+Purpose:        Specifies the size (in units of eight pixels) of the grid
+                that Windows uses to position windows on the screen. You
+can
+                specify a number between 0 and 49.
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+IconSpacing=<pixels>
+
+Default:        77
+Purpose:        Specifies the number of pixels that will appear
+horizontally
+                between icons. Increasing this number increases the amount
+of
+                horizontal space between icons.
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+IconTitleFaceName=<fontname>
+
+Default:        MS Sans Serif
+Purpose:        Specifies the font used for displaying icon titles. Change
+                this value if the icon title is difficult to read.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+IconTitleSize=<number>
+
+Default:        8
+Purpose:        Specifies the size of the font used for displaying icon
+                titles. Change this value if the icon title is difficult to
+                read.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+IconTitleStyle=<0-or-1>
+
+Default:        0
+Purpose:        Specifies whether the icon title text should be bold. When
+                the value is set to 1, the icon title text is bold. When
+the
+                value is set to 0, the icon title appears in regular text.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+IconTitleWrap=<0-or-1>
+
+Default:        1
+Purpose:        Specifies whether or not to wrap icon titles. A value of 1
+                enables icon title wrapping and increases icon vertical
+                spacing by 3 lines. A value of 0 disables icon title
+wrapping
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+IconVerticalSpacing=<pixels>
+
+Default:        Windows determines the default value based on the icon
+title
+                font and the display you are using.
+Purpose:        Specifies the number of pixels that will appear vertically
+                between icons. Increasing this number increases the amount
+of
+                vertical space between icons.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+Pattern=<b1 b2 b3 b4 b5 b6 b7 b8>
+
+Default:        "(None)"  (This string appears when no pattern is
+specified).
+Purpose:        Specifies a pattern that is used to paint the screen
+                background. The eight numeric values define a bitmap eight
+                pixels wide and eight pixels high. Each decimal value
+                represents a byte, and each byte represents a row of eight
+                pixels. The following shows the effect of setting a bit:
+
+   Setting      Effect
+   0            Sets the corresponding pixel to the
+                background color specified by the Background
+                setting in the [colors] section).
+
+   1            Sets the corresponding pixel to the foreground
+                color (specified the WindowText setting in the
+                [colors] section).
+
+For example, if you set the <b1> value to the decimal value
+175, the top row of pixels in the bitmap will appear as the
+binary equivalent (10101111) according to the preceding
+table.
+
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+TileWallpaper=<0-or-1>
+
+Default:        0
+Purpose:        Specifies whether to center the desktop wallpaper or tile
+it
+                across the screen. When this setting is 0 the wallpaper is
+                centered. When this value to 1 the wallpaper is tiled.
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+Wallpaper=<bitmap-filename>
+
+Default:        "(None)"  (This string appears when no pattern is
+specified)
+Purpose:        Supplies the name of a bitmap file. This bitmap appears on
+                the screen background. You need to include the full
+pathname
+                of the file if it is not in  the Windows or system
+directory.
+To change:      Choose the Desktop icon from the Control Panel window.
+____________________________________________________________
+
+[extensions] Section Settings
+
+The [extensions] section contains settings that link groups of
+document files with an application so that opening one of the document
+files automatically starts the application.
+
+The [extensions] section can contain settings of the following type:
+____________________________________________________________
+<extension>=<command-line>
+
+Purpose:        Contains a list of filename extensions that identify
+                documents, and corresponding command lines that are invoked
+                when you choose a file that has  the associated extensions.
+
+                The <extension> keyname is an extension of one to three
+                characters. The <command-line> value is an ordinary DOS
+                command line. The command line always begins with an
+                application filename (with the .EXE extension). This can be
+                followed by any command parameters the application needs,
+                usually including the document filename. The caret (^)
+                character can be used when the original document filename
+is
+                needed in the command line; the caret is replaced by the
+                document filename without any extension. The most typical
+                <extension> entries list the application name and the
+                document name; for example:
+
+                cal=calendar.exe ^.cal
+
+                If you run a file called MYFILE.CAL after this association
+                has been made, the Calendar progam will start and
+                automatically open the file named MYFILE.
+
+To change:      Choose Associate from the File menu in File Manager.
+____________________________________________________________
+
+[intl] Section Settings
+
+The [intl] section describes how to display dates, times, currency
+amounts, and other items for countries other than the United States.
+The default values reflect U.S. options.
+
+To change any setting in this section, choose the International icon
+from the Control Panel window.
+
+The [intl] section can contain the following settings:
+____________________________________________________________
+iCountry=<country-code>
+
+Default:        1
+Purpose:        Specifies the country code. This number matches the
+country's
+                international telephone code, except for Canada, which is
+2.
+____________________________________________________________
+iCurrDigits=<number>
+
+Default:        2
+Purpose:        Specifies the number of digits to put after the decimal
+                separator in currency.
+____________________________________________________________
+iCurrency=<number>
+
+Default:        0
+Purpose:        Specifies a currency format according to the following:
+
+                        Value           Format
+__________________________________________________
+0               $2
+1               2$
+2               $ 2
+3               2
+
+The actual currency symbol is specified by the sCurrency
+value.
+____________________________________________________________
+iDate=<number>
+
+Default:        0
+Purpose:        Specifies a numerical date format according to the
+following:
+
+Value           Format
+___________________________________________________
+0               12/31/90
+1               31/12/90
+2               90/12/31
+
+The actual date divider is specified by the sShortDate value.
+
+This setting is not used by Windows 3.x and exists only for
+compatibility with Windows 2.x.
+____________________________________________________________
+iDigits=<number>
+
+Default:        2
+Purpose:        Specifies the number of digits to display after the decimal
+                separator in numbers.
+____________________________________________________________
+iLZero=<0-or-1>
+
+Default:        0
+Purpose:        Specifies whether to put leading zeros in decimal numbers
+                according to the following:
+
+Value           Format
+____________________________________________________
+0               .7
+1               0.7
+
+The actual decimal separator is specified by the sDecimal
+setting.
+____________________________________________________________
+iMeasure=<0-or-1>
+
+Default:        1
+Purpose:        Specifies the measurement system according to the
+following:
+
+Value           System
+___________________________________________________
+0               Metric
+1               English
+____________________________________________________________
+iNegCurr=<number>
+
+Default:        0
+Purpose:        Specifies a negative number format according to the
+following:
+
+Value           Format
+____________________________________________________
+0               ($1)
+1               -$1
+2               $-1
+3               $1-
+4               (1$)
+5               -1$
+6               1-$
+7               1$-
+8               -1 $
+9               -$ 1
+0               $ 1-
+
+The actual currency symbol is specified by the sCurrency
+setting.
+____________________________________________________________
+iTime=<number>
+
+Default:        0
+Purpose:        Specifies whether to format time using a 12-hour clock or a
+24-hour clock.
+
+Value           Format          Meaning
+0                       1:00                    12-hour clock
+1                       13:00           24-hour clock
+
+The actual time separator is specified by the sTime setting.
+____________________________________________________________
+iTLZero=<number>
+
+Default:        0
+Purpose:        Specifies whether to put leading zeros in time according to
+                the following:
+
+Value           Format
+__________________________________________________
+0               9:15
+1               09:15
+
+The actual time separator is specified by the sTime setting.
+____________________________________________________________
+s1159=<string>
+
+Default:        AM
+Purpose:        Specifies the string that follows times before noon in the
+                12-hour time format.
+____________________________________________________________
+s2359=<string>
+
+Default:        PM
+Purpose:        Specifies the string that follows times after noon in the
+12-
+                hour format or that follows all times in the 24-hour format
+                (for example, GMT).
+____________________________________________________________
+sCountry=<string>
+
+Default:        United States
+Purpose:        Specifies the name of the country whose standard setting
+you
+                want to use.
+____________________________________________________________
+sCurrency=<string>
+
+Default:        $
+Purpose:        Specifies the currency symbol you want to use.
+____________________________________________________________
+sDecimal=<string>
+Default:        .
+Purpose:        Specifies the punctuation used to separate the fractional
+                part of a decimal number from the whole number part.
+____________________________________________________________
+sLanguage=<string>
+
+Default:        enu
+Purpose:        Specifies the language you want to work in. Windows
+                applications that provide language-specific tasks, such as
+                sorting or spell-checking, use this setting. The following
+                are the standard values:
+
+Value           Language
+dan             Danish
+deu             German
+eng             International English
+enu             U.S. English
+esn             Modern Spanish
+esp             Castilian Spanish
+fin             Finnish
+fra             French
+frc             French Canadian
+isl             Icelandic
+ita             Italian
+nld             Dutch
+nor             Norwegian
+ptg             Portuguese
+sve             Swedish
+____________________________________________________________
+sList=<string>
+Default:        ,
+Purpose:        Specifies the character used to separate items in a list.
+In
+                U.S. English, the most common separator is a comma.
+____________________________________________________________
+sLongDate=<date-picture>
+
+Default:        dddd, MMMM dd, yyyy (e.g., Friday, June 1, 1990)
+Purpose:        Specifies your choice for the long date format, including
+                abbreviations for the words and different separators,
+                according to the following:
+
+Date Picture    Item            Format
+M                       Month   1-12
+MM                      Month   01-12
+MMM                     Month   Jan-Dec
+MMMM                    Month   January-December
+d                       Day             1-31
+dd                      Day             01-31
+ddd                     Day             Mon-Sun
+dddd                    Day             Monday-Sunday
+yy                      Year            00-99
+yyyy                    Year            1900-2040
+
+If you want to include the letters d, y, or m in the separator strings, you
+must enclose the separator strings in single quotation marks, if you are
+editing the WIN.INI file directly. Control Panel will automatically insert
+single quotation marks in the correct places. In addition, Control Panel
+will accept only certain date-picture combinations. Therefore, you should
+use Control Panel to change this setting.
+____________________________________________________________
+sShortDate=<date-picture>
+
+Default:        M/d/yy (e.g., 6/1/90)
+Purpose:        Specifies your choice for the short date format, including
+                abbreviations for the words and different separators,
+                according to the list described above in the sLongDate
+                listing. Control Panel will accept only certain date-
+picture
+                combinations. Therefore, you should use Control Panel to
+                change this setting.
+____________________________________________________________
+sThousand=<string>
+
+Default  ,
+Purpose:        Specifies the symbol used to separate thousands in a number
+                with more than three digits. An example, if the value is a
+                comma (,), is 3,000.
+____________________________________________________________
+sTime=<string>
+
+Default:        :
+Purpose:        Specifies the character used to separate the hours,
+minutes,
+                and seconds in time. An example, if the value is a colon
+(:),
+                is 15:29:31.
+____________________________________________________________
+
+[ports] Section
+
+The [ports] section lists all available communications and printer
+ports, and defines default values; it also lists files to which
+printer output can be sent.
+
+The [ports] section can contain up to 10 occurrences of the following
+setting. Any additional occurrences are ignored by Windows.
+____________________________________________________________
+<portname>:=<baud-rate>,<parity>,<word-length>,<stop-bits>[[,p]]
+
+Purpose:        Specifies an available output port. You can specify no more
+                than 10 ports.
+
+                The <portname> keyname must be the name of an output port
+as
+                it is recognized by MS-DOS. This keyname can be COMx:
+(serial
+                port, where x represents the port number), LPTx: (a
+parallel
+                port, where x represents the port number), EPT: (used for a
+                specific IBM printer), LPTx.DOS (a parallel port used to
+                bypass Windows printing and print directly to a port, where
+x
+                represents the port number), FILE:, or a filename.
+
+                For COM ports, the <baud-rate> value specifies the port's
+                baud rate; the <word-length> value gives the length of a
+word
+                (in bits); the <stop-bits> value gives the number of stop
+                bits to be used; and the [[,p]] option specifies that
+                hardware handshaking is in effect.
+
+                LPT (parallel), EPT, FILE, and LPTx.DOSports do not take
+any
+                parameters.
+
+                The LPTx.DOS ports are used (instead of the corresponding
+LPT
+                port) to print directly to the port and bypass the Windows'
+                special output handling. This port is provides compatiblity
+                with Windows version 3.0.
+
+                Specifying a filename for the <portname> will direct output
+                to that file. A filename, unlike the other port names, must
+                not be followed by a colon (:).
+
+                By using FILE:=, Windows will prompt you to specify a
+                filename for the print file when you print.
+
+To change COM port settings: Choose the Ports icon from the Control Panel
+                window. To change or add other ports:  Use Notepad to edit
+                the WIN.INI file.
+____________________________________________________________
+LPT1.DOS=<pathname>
+LPT2.DOS=<pathname>
+LPT3.DOS=<pathname>
+LPT4.DOS=<pathname>
+
+Default:        None
+Purpose:        Enables printing directly to a parallel port. Use these
+                settings to bypass Windows' special parallel port output
+                handling when printing.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+
+[fonts] Section Settings
+
+The [fonts] section describes one or more font files that are loaded
+when Windows is started.
+
+The [fonts] section can contain one or more occurrences of the
+following setting:
+____________________________________________________________
+<font-name>=<font-file>
+
+Purpose:        Specifies a font file. The <font-name> keyname is the
+                descriptive name of a font. The <font-file> value is the
+                filename of a file that contains font resources.
+ To change:     Choose the Fonts icon from the Control Panel window.
+____________________________________________________________
+
+[FontSubstitutes] Section Settings
+
+The [FontSubstitutes] section describes fonts which are recognized by
+Windows as the same typeface. This is useful if you want to work on
+documents created using Windows 3.0 that include fonts whose names
+have changed in Windows 3.1.
+
+The [FontSubstitutes] section contains one or more occurrences of the
+following setting:
+____________________________________________________________
+<font-name>=<font-name>
+
+Default:        Helv=MS Sans Serif
+                Tms Rmn=MS Serif
+                Times=Times New Roman
+                Helvetica=Arial
+Purpose:        Specifies the font that Windows will use in place of
+                another font, only if that font is not installed on your
+                system. For example, if you are viewing a document that is
+                formatted in Helvetica, but Helvetica is not installed on
+                your system, Windows will use Arial to display the
+document.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+
+[TrueType] Section Settings
+
+The [TrueType] section describes options that affect the use and
+display of TrueType fonts in your Windows applications.
+
+The [TrueType] section can contain the following settings:
+____________________________________________________________
+OutlineThreshold=<number-of-pels-per-em>
+
+Default:        256
+Purpose:        Specifies the number of pels-per-em at which Windows will
+                render TrueType fonts as outline fonts instead of as bitmap
+                fonts. Using bitmap fonts is faster, but requires more
+                memory. If you are low on memory, decrease this value. Do
+not
+                specify a value over 300. If you do, you might encounter
+                problems using  TrueType fonts.
+ To change:     Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+TTEnable=<0-or-1>
+
+Default:        1
+Purpose:        Enables or disables TrueType fonts. Setting this value to 1
+                enables TrueType fonts so that they are available in your
+                Windows applications. Setting this value to 0 disables
+                TrueType fonts. In this case, TrueType fonts are not
+                available in your applications.
+To change:      Choose the Fonts icon from the Control Panel window.
+____________________________________________________________
+TTIfCollisions=<0-or-1>
+
+Default:        0
+Purpose:        Specifies whether or not to use TrueType fonts in place of
+                other fonts if both types of fonts are installed on your
+                system and have the same font name. If this value is set to
+                1, the TrueType font will be used. For example, Windows
+                provides both a bitmap and a TrueType version of the Symbol
+                font. If you set this value to 0, Windows will use the
+                TrueType version.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+TTOnly=<0-or-1>
+
+Default:        0
+Purpose:        Specifies whether or not to list only TrueType fonts in the
+                fonts dialog box in Windows applications. If this value is
+                set to 1, only TrueType fonts are listed. If this value is
+                set to 0, all fonts installed on your system are listed.
+To change:      Choose the Fonts icon from the Control Panel window.
+____________________________________________________________
+
+[mci extensions] Section Settings
+
+The [mci extensions] section contains settings that associate
+different types of media files with different Media Control Interface
+device drivers. Whenever a media file is selected, Windows will use
+the associated driver to play it.
+
+The [mci extensions] section can contain one or more occurrences of
+the following setting:
+____________________________________________________________
+<extension>=<mci-device-type>
+
+Purpose:        Associates files that have the specified extension with the
+                specified MCI device driver. Windows uses the specified
+                driver to play the media file associated with it.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+
+[network] Section Settings
+
+The [network] section describes network settings and previous network
+connections.
+
+The [network] can contain the following settings:
+____________________________________________________________
+<drive>=<network server and share>
+
+Purpose:        Shows the network connections that are restored each time
+                Windows is started.
+To change:      Choose the Network Connections command from the Disk menu
+                in File Manager.
+____________________________________________________________
+InRestoreNetConnect
+____________________________________________________________
+Restore=<0-or-1>
+
+Default:        1
+Purpose:        Specifies whether or not to reconnect to the network
+servers
+                you were connected to in your previous Windows session.
+This
+                setting works for MSNet, Lan Manager Basic, and Lan Manager
+                2.0. If this value is set to 1, you will be reconnected to
+                the network servers each time you start Windows. If this
+                value is set to 0, you will not be reconnected.
+To change:      Choose the Networks option from the Control Panel window,
+                or if the Network dialog box for your network does not
+                include a reconnect option, use Notepad to edit the WIN.INI
+                file.
+____________________________________________________________
+<port>=<network printer path>
+
+Purpose:        Shows the path for a network printer and the port the
+printer
+                is assigned to. This connection is restored each time
+Windows
+                is started.
+To change:      Choose the Printers option from the Control Panel window,
+                or the  Network Connections command from the Options menu
+in
+                Print Manager.
+____________________________________________________________
+
+[embedding] Section Settings
+
+The [embedding] section lists the OLE objects, their description, the
+program that is used to create them, and their file format. This
+information also appears in the Registration Info Editor. It is recommended
+that you use the Registration Info Editor to register applications or edit
+application information for OLE. The [embedding] section is included in the
+WIN.INI file only to maintain compatibility with Windows 3.0 and 3.0
+applications.
+
+The [embedding] section can contain one or more occurrences of the
+following setting:
+____________________________________________________________
+<object>=<description>,<description>,<program file>,<format>
+
+Purpose:        Specifies the objects used as servers for OLE. The <object>
+                keyname specifies the name of the server object.
+
+                The <description> keynames provide a description of the
+                server object. The second description appears in the list
+of
+                registered file types in the Registration Info Editor.
+
+                The <program file> keyname identifies the path and name of
+                the executable file for the application that is used to
+                create the object.
+
+                The <format> keyname identifies the format of the file. The
+                value for this setting is most often "picture", which is
+                metafile format.
+
+To change:      Run the Registration Info Editor (REGEDIT.EXE) from File
+                Manager or from Program Manager.
+____________________________________________________________
+
+[Windows Help] Section Settings
+
+The [Windows Help] section includes settings that specify the size and
+placement of the Help window and dialog boxes, as well as the color of
+text that, when chosen, displays a macro, pop-up window, or new panel.
+
+The [Windows Help] section can include the following settings:
+____________________________________________________________
+M_WindowPosition=<number>,<number>, <number>,<number>,<number>
+H_WindowPosition=<number>,<number>, <number>,<number>,<number>
+A_WindowPosition=<number>,<number>, <number>,<number>,<number>
+C_WindowPosition=<number>,<number>, <number>,<number>,<number>
+
+Purpose:        Defines the default size and position of the main Help
+                window, and the History, Annotate, and Copy dialog boxes.
+
+                The first <number> defines the x coordinate of the upper-
+left
+                corner. The second <number> defines the y coordinate of the
+                upper-left corner. Both these numbers define the default
+                position of the main Help window, and the History,
+Annotate,
+                and Copy dialog boxes.
+
+                The third <number> defines the default width of the Help
+                window and dialog boxes. The fourth <number> defines the
+                default height of the Help window and dialog boxes. Both
+                height and width are measured in pixels.
+
+                The fifth <number> specifies whether or not the main Help
+                window is maximized. A value of 1 indicates that it is
+                maximized. A value of 0 indicates that the main window is
+the
+                default height and width. Changing this value has no effect
+                on the size of the dialog boxes, since they cannot be
+                maximized.
+
+To change:      Move or size the main Help window, or the History,
+                Annotate, or Copy dialog boxes. The values are updated in
+the
+                WIN.IN file automatically.
+____________________________________________________________
+JumpColor=<red-value> <green-value> <blue-value>
+
+Purpose:        Specifies the color of text that, when chosen, leads to a
+new
+                panel of help information. For example, entering 000 000
+000
+                as values results in black text on a white background.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+PopupColor=<red-value> <green-value> <blue-value>
+
+Purpose:        Specifies the color of text that, when chosen, displays a
+                pop-up panel (the type of panel used for glossary
+                definitions). For example, entering 000 000 000 as values
+                results in black text on a white background.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+MacroColor=<red-value> <green-value> <blue-value>
+
+Purpose:        Specifies the color of text that, when chosen, runs a Help
+                macro.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+IFJumpColor=<red-value> <green-value> <blue-value>
+
+Purpose:        Specifies the color of text that, when chosen, leads to a
+new
+                panel of help information, located in a different help
+file.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+IFPopupColor=<red-value> <green-value> <blue-value>
+
+Purpose:        Specifies the color of text that, when chosen, displays a
+                pop-up panel (the type of panel used for glossary
+                definitions), located in a different help file.
+To change:      Use Notepad to edit the WIN.INI file.
+____________________________________________________________
+
+[sounds] Section Settings
+
+The [sounds] section lists the system events that support sound and
+the sound files that are assigned to each event.
+
+The [sounds] section can contain one or more occurrences of the
+following setting:
+____________________________________________________________
+<system event>=<filename>,<description>
+
+Purpose:        Specifies the sound file assigned to and a description of a
+                system event. The <filename> is the name of the sound file.
+                The <description>  is a text string that describes the
+system
+                or application event.
+
+To change:      Choose the Sound icon in the Control Panel window.
+____________________________________________________________
+
+[PrinterPorts] Section Settings
+
+The [PrinterPorts] section lists the printers Windows can use and the
+printer driver, port assignment, and timeout values for each printer.
+
+The [PrinterPorts] section can contain one or more occurrences of the
+following setting:
+
+----------------------------------------------------------------------
+<device-name>=<driver-name>, <port-name>,
+<DeviceNotSelectedTimeout>,<TransmissionRetryTimeout>
+[[,<port-name>,<DeviceNotSelectedTimeout>,
+<TransmissionRetryTimeout>,...]]
+
+Purpose:        Specifies driver, port, and timeout information for a
+                printer.
+
+                The <device-name> keyname is the name of the printer. The
+                <driver-name>  value is the printer driver filename.
+
+                The <port-name> value is the name of the port assigned to
+the
+                printer. If a printer is not assigned to a port the
+                <port-name> value is the string specified in the NullPort
+                setting (in the [windows] section).
+
+                The <TransmissionRetryTimeout> value determines the amount
+of
+                time (in  seconds) allowed for attempted transmission
+                retries.
+
+                The <DeviceNotSelectedTimeout> value determines the number
+of
+                seconds Print Manager will wait for the device to be
+switched
+                on.
+
+                If the timeout values are not specified for a particular
+                port, Windows uses the default settings listed in the
+                [windows] section for that port.
+
+Caution: When changing a setting in this section, be sure it does not
+conflict with a corresponding setting in the [devices] section. Problems
+may occur if an installed printer does not appear in the [PrinterPorts]
+section.
+
+To change:      Choose the Printers icon from the Control Panel window or
+                choose the Printer Setup command from the Print Manager
+                Options menu.
+____________________________________________________________
+
+[devices] Section Settings
+
+The [devices] section lists the installed printers. The settings in
+this section match those in the [PrinterPorts] section, without the
+timeout values. This section is necessary only for Windows version 2.x
+applications, which look to the [devices] section for this
+information.
+
+The [devices] section can contain one or more occurrences of the
+following setting:
+____________________________________________________________
+<device-name>=<driver-name>, <port-name> [[,<port-name>,...]]
+
+  Purpose:      Specifies an installed printer.
+
+                The <device-name> keyname is the name of the printer. The
+                <driver-name> value is the printer driver filename. The
+                <port-name> value specifies the port that is assigned to
+the
+                printer. If the printer is not currently assigned to a
+port,
+                the <port-name> value is the string specified in the
+NullPort
+                setting (in the [windows] section).
+
+Caution: When changing a setting in this section, be sure it does not
+conflict with a corresponding setting in the [PrinterPorts] section.
+Problems may occur if an installed printer does not appear in the
+[PrinterPorts] section.
+
+To change:      Choose the Printers icon from the Control Panel window or
+                choose the Printer Setup command from the Print Manager
+                Options menu.
+____________________________________________________________
+
+[Programs] Section Settings
+
+If you use File Manager or Program Manager to open a document file
+that is associated with a file type in the Registration Database, and
+File Manager or Program Manager cannot find the program file that
+starts the application specified by the file type, Program Manager or
+File Manager will look in the [Programs] section ot the WIN.INI file
+for the path to the program file. If the path is not in the [Programs]
+section, Program Manager or File Manager will display a dialog box in
+which you can specify the path. The path you specify is then added to
+the [Program] section.
+
+The [Program] section can contain one or more occurrences of the
+following settings:
+____________________________________________________________
+<program file>=<drive>:<directory>\<program file>
+
+Purpose:        Specifies the drive, directory, and executable program file
+                needed to start an application.
+
+                The <program file> keyname specifies the name of the
+program
+                file that Windows was searching for when you tried to open
+                the associated data file.
+
+                The <drive> keyname specifies the drive on which the
+program
+                file is located. The <directory> keyname specifies the
+                directory in which the program file is located. The second
+                <program file> keyname specifies the name of the executable
+                program file, located in the specified drive and directory,
+                needed to start the associated application.
+____________________________________________________________
+
+[colors] Section Settings
+
+The [colors] section defines the colors for components of the Windows
+display.
+
+The colors section can contain settings of the following type:
+____________________________________________________________
+<component>=<red-value> <green-value> <blue-value>
+
+Purpose:        The <red-value>, <green-value>, and <blue-value> values are
+                integers  that specify the relative intensities of red,
+blue,
+                and green, respectively. These settings can range from 0
+                (minimum intensity) to 255 (maximum intensity).
+
+                The <component> keyname can be any one of the following:
+
+Keyname             Refers to
+ActiveBorder        Border of the active window
+
+ActiveTitle         Active title bar
+
+AppWorkspace        Application workspace for Windows
+applications
+
+Background          Screen background (desktop)
+
+ButtonFace          Button face
+
+ButtonHilight       Highlight around the top and left
+side of buttons
+
+ButtonShadow        Button shadow
+
+ButtonText          Button text
+
+GrayText            Text that is dimmed (as in an unavailable
+                    command name)
+
+Hilight             Background of highlighted text
+
+HilightText         Highlighted text
+
+InactiveBorder      Border of the inactive window
+
+InactiveTitle       Inactive title bar
+
+InactiveTitleText   Inactive title-bar text
+
+Menu                Menu background
+
+MenuText            Menu text
+
+Scrollbar           Scroll bar
+
+TitleText           Title-bar text
+
+Window              Window workspace
+
+WindowFrame         Window frame
+
+WindowText          Window text
+
+To change:      Choose the Color icon from the Control Panel window.
+
+Reference(s):
+
+Microsoft Windows Resource Kit 3.1, "WININI.WRI".
+
+Additional query words: 3.1 3.10 win31
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

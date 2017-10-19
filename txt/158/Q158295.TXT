@@ -1,0 +1,86 @@
+DOCUMENT:Q158295  11-APR-1999  [exchange]
+TITLE   :XCLN: Remote Mail: The Mail Headers Could Not Be Displayed
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you click Remote Mail on the Tools menu in Microsoft Exchange Server, you
+may receive one of the following error messages:
+
+   The mail headers could not be displayed. Internal MAPI error while
+   establishing remote interface MAPI 1.0 - 839 - [80004005]
+
+OR
+
+   Microsoft Exchange
+   The mail headers could not be displayed. Internal mapi error : there is a
+   communication problem between this application and the service provider.
+   Restart the application.
+
+OR
+
+   The item could not be displayed. The action could not be completed. Microsoft
+   Exchange Client - 9997 - [80070005]
+
+NOTE: "Sync all folders" appears to function properly. Connecting with Windows 95
+dial-up networking (DUN) first and then starting Microsoft Exchange Server
+online also works correctly.
+
+CAUSE
+=====
+
+These errors can occur if your computer name contains the "at sign" (@). The
+first error message listed above occurs when you try to use the Remote Mail
+feature in Microsoft Exchange. The second error message occurs when you send a
+message with The Microsoft Network Online Service information service installed
+in your default profile.
+
+RESOLUTION
+==========
+
+Remove the at sign from your computer name. To do so, follow these steps:
+
+1. In Control Panel, double-click Network.
+
+2. Click the Identification tab.
+
+3. Change the computer name so that it does not contain the "@" character, and
+   then click OK.
+
+4. When you are prompted to restart your computer, do so.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

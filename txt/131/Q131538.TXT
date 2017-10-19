@@ -1,0 +1,154 @@
+DOCUMENT:Q131538  26-MAY-2001  [homemm]
+TITLE   :Macintosh Encarta 1995: Error Type 28 Occurs
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Encarta 1995, you may receive the following error
+message:
+
+   Encarta can't find the files needed to start. Either the CD is not inserted,
+   or the path to the files is incorrect. To correct this, insert the CD or run
+   Installer again"
+
+After you press OK, another error message appears:
+
+   Application "unknown" has unexpectedly quit because an error of type 28
+   occurred
+
+RESOLUTION
+==========
+
+Try one of the following resolutions.
+
+Resolution 1
+------------
+
+If you installed Encarta 1995 to a disk drive other than the drive that has your
+system folder, restarting your computer should remove the source of the error
+messages. If you installed Encarta to the drive with the system folder on it,
+delete the Encarta 1994 and 1995 preference files from the System:Preference
+Folder and restart Encarta.
+
+-or-
+
+Resolution 2
+------------
+
+The Macintosh has a limit of 128 font suitcases. If Encarta is installed on a
+Macintosh that already has 128 suitcases, the Encarta fonts will not be
+installed; however, no warning will be given. If you then try to run Encarta,
+you get the same error message described above.
+
+To correct this problem, reduce the number of font suitcases and reinstall
+Encarta.
+
+MORE INFORMATION
+================
+
+The correct procedure for installing Encarta 1995, according to Section 6 of the
+Encarta 1995 ReadMe file is included below. Consult your Encarta ReadMe file
+fore information.
+
+ReadMe File Section 6: Where Encarta Installer Puts Files
+---------------------------------------------------------
+
+The Encarta Installer program creates folders and copies files to several
+locations. When you install Encarta '95, the Installer program:
+
+ - Creates a folder on your hard disk called "Encarta '95" and copies the
+   following to it:
+
+   Microsoft Encarta '95 - the main Encarta application.
+
+   Encarta '95 Read Me - the document you are reading now.
+
+   Encarta & Memory - a Read Me document explaining memory issues and
+   troubleshooting.
+
+   Animation Launcher - used to run animations in low memory situations.
+
+   Animation - a file used by Encarta in playing of animations.
+
+   Encarta Projector - Macromedia application that plays Director movies.
+
+   SimpleText - a text editor that allows you to view the ReadMe files.
+
+   Data Files - folder that contains data files needed by Encarta.
+
+   Microsoft System Information - folder with applications that may be required
+   if you need product support from Microsoft.
+
+   InterActivities - a folder containing aliases to the InterActivities and
+   MindMaze
+
+ - Creates a folder called "Encarta '95 Preferences" in your System:Preferences
+   folder
+
+ - Creates a folder called "Encarta '94 Preferences" in your System:Preferences
+   folder, this is created to enable Microsoft Works 4.0 to work together with
+   Encarta '95. This folder will not be created if Encarta '94 is already
+   installed on your system.
+
+ - Copies QuickTime Powerplug to your System:Extensions folder. This is only
+   necessary for PowerMac systems; it can be removed from other systems.
+
+ - Copies QuickTime 2.0, QuickTime Musical Instruments, and Sound Manager to the
+   System:Extensions folder (if needed). These are necessary to play video and
+   sound.
+
+ - Copies FIF Component to the System:Extensions folder. This is necessary to
+   load images from the CD.
+
+ - Copies Apple Multimedia Tuner to the System:Extensions folder. This allows
+   the multimedia in Encarta to run properly.
+
+ - Copies Sound Manager Sound control panel to the System:Control Panels folder
+   (if needed).
+
+ - Copies Times, Arial, MS Reference, and Symbol fonts to System folder.
+
+On System 7.0 and 7.0.1, these fonts are copied to the System suitcase. On System
+7.1 or higher these fonts are copied to the Fonts folder.
+
+If you choose to switch disks before installing (to a hard disk that is not your
+startup volume) you MUST RESTART YOUR MACINTOSH before Encarta will run
+correctly. On System 7.0 and 7.0.1, installing to a non-boot drive will not
+properly install the necessary fonts. It is also possible that the installer
+will not install the program to a non-boot drive on some systems. To resolve
+these problems, try installing to your boot drive, then drag the Encarta '95
+folder to the desired drive.
+
+Additional query words: mac 1995 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

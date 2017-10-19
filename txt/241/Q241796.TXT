@@ -1,0 +1,74 @@
+DOCUMENT:Q241796  10-AUG-2001  [winnt]
+TITLE   :Local Groups and Microsoft Cluster Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use local groups to assign resource permissions in Microsoft Windows
+NT-based domains. This strategy does not work well with Cluster Server because
+resources may fail over but local groups may not. The Cluster Administrator
+tool, by design, prevents you from assigning local groups in most cases, and
+displays the following error message when you attempt to do so:
+
+   Cluster Administrator Standard Extension
+   Access to a cluster file share can be granted/denied only to domain users and
+   groups. Please remove any local users or groups from the permissions dialog
+   box.
+
+After you receive this error message, you must remove the permission line that
+caused the error message before you can continue.
+
+MORE INFORMATION
+================
+
+Keep the following items in mind when you are implementing Cluster Server:
+
+ - Avoid installing Cluster Server on domain controllers if performance is an
+   issue.
+
+ - Do not attempt to use local groups to assign permissions, even though the
+   local groups are shared between domain controllers.
+
+ - Use global groups only, and only from the master domain in a multiple-domain
+   scenario.
+
+In Microsoft Windows 2000, you can use domain local groups on member servers. If
+both nodes of the cluster are members of the same domain, you can use domain
+local groups to grant access to cluster resources.
+
+
+Additional query words: mscs
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

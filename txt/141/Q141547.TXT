@@ -1,0 +1,66 @@
+DOCUMENT:Q141547  03-JUN-2002  [ssafe]
+TITLE   :FIX: Visual SourceSafe Help System Searches for Wrong HLP File
+PRODUCT :Microsoft SourceSafe
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbSSafe400bug kbSSafe500bug kbSSafe600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Visual SourceSafe is started and an invalid user name is entered, the "User
+not found" dialog box appears. If you click the Help button or press the F1 key,
+the appropriate Visual SourceSafe Help file is not called.
+
+When Help is invoked from the User Not Found dialog box, one of the following
+occurs:
+
+ - You are prompted with this question:
+
+   Cannot find the ...\SSEXP.HLP file. Do you want to try to find this file
+   yourself?
+
+   NOTE: This file is not installed with Visual SourceSafe 4.0.
+
+ - The following error message appears and a blank Windows Help screen appears.
+
+   Cannot find Help file
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual SourceSafe
+version 6.0 for Windows.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500bug kbSSafe600fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe500
+Version           : :4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

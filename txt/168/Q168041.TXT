@@ -1,0 +1,73 @@
+DOCUMENT:Q168041  17-JUL-2001  [visualc]
+TITLE   :PRB: Can't Export All Subprojects Into a Single Makefile
+PRODUCT :Microsoft C Compiler
+PROD/VER:5.0, 6.0
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC500 kbVC600 kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you export a makefile in Visual C++ 5.0, each project is written to a
+separate makefile. This means that subprojects of a project are built using
+separate makefiles.
+
+RESOLUTION
+==========
+
+This should not negatively impact builds. The makefile for the parent project
+invokes NMAKE to build the subprojects. There is no way to force Developer
+Studio to write a single makefile for all projects in the build.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In Visual C++ 4.x, a parent project and its subprojects were written to the same
+makefile. In Visual C++ 5.0, you must manually export a makefile and each
+project is written to a separate makefile. The only way this should impact
+builds is that you are responsible for exporting all makefiles needed for a
+build. The makefile for a parent project contains commands to invoke NMAKE to
+build its subprojects. If all of the makefiles needed are present, the build
+executes as expected.
+
+You do not need to change how you invoke NMAKE, nor do you need to invoke NMAKE
+separately for the subprojects. The parent project should invoke NMAKE for any
+subprojects that need to be built.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVC kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : 5.0, 6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

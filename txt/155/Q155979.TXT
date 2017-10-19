@@ -1,0 +1,64 @@
+DOCUMENT:Q155979  25-OCT-2001  [winnt]
+TITLE   :Windows NT/2000 Backup Does Not Recognize Windows 95/98 Backup
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000
+OPER/SYS:
+KEYWORDS:kbtool kbOSWinNT400 kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server 
+ - Microsoft Windows NT Workstation 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to use the Backup tool in Windows NT 4.0 or Windows 2000 to
+restore data from a backup tape created with Microsoft Windows 95 or Microsoft
+Windows 98, you receive the following error message:
+
+   Foreign Tape
+   The tape in the drive must be erased before it can be used.
+
+   Unreconized Media
+   The backup file us unusable. You must erase it, or choose another file.
+
+CAUSE
+=====
+
+The Backup tool in Windows NT and Windows 2000 uses a different format for tapes
+and files than the Backup tool in Windows 95/98. The two formats are not
+interchangeable.
+
+RESOLUTION
+==========
+
+You must restore the data from the tape or file using the Backup tool on a
+computer running Windows 95/98.
+
+Additional query words: prodnt qic compatible ntbackup win9x win98 win95 ntrelease
+
+======================================================================
+Keywords          : kbtool kbOSWinNT400 kbOSWin2000 
+Technology        : kbWinNTsearch kbWinNTWsearch kbwin2000Serv kbWinNTSsearch kbwin2000ServSearch kbwin2000Search
+Version           : :2000
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

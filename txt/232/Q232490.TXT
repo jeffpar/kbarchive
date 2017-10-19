@@ -1,0 +1,72 @@
+DOCUMENT:Q232490  06-AUG-2002  [win95x]
+TITLE   :Quick View Cannot Open File Names with Euro Currency Symbol
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use Quick View to open a file with the euro symbol in its
+file name, you may receive the following error message:
+
+   The file <filename> can not be opened for Quick View. It may be open or
+   locked by another application or you may not have access to it.
+
+CAUSE
+=====
+
+This behavior occurs because Quick View cannot use high ANSI characters.
+
+RESOLUTION
+==========
+
+To work around this issue, rename the file if you want to be able to open it
+with Quick View.
+
+STATUS
+======
+
+This issue is fixed in Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+Quick View is included in the CD-ROM version of Windows 95, but not in the
+floppy disk version. If you are using the floppy disk version of Windows 95 and
+want to use Quick View, please see the following article in the Microsoft
+Knowledge Base for information about the availability of Quick View:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

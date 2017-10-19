@@ -1,0 +1,65 @@
+DOCUMENT:Q87023  05-NOV-1999  [pcmail]
+TITLE   :SMTP: TCP/IP Stacks Supported by the Mail Gateway to SMTP
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.0 of the Microsoft Mail Gateway to SMTP supports five TCP/IP stacks.
+These are:
+
+ - Microsoft LAN Manager TCP/IP, versions 1.0 and later
+
+ - FTP Software, Inc. PC/TCP Kernel, version 2.05
+
+ - Novell LAN Workplace for DOS, version 4.0
+
+ - Wollongong Group, Inc. WIN/TCP for DOS Run Time, version 4.1
+
+ - Excelan LAN WorkPlace Network Software, version 3.4
+
+Notes:
+
+ - The gateway will not run on Microsoft Windows NT, Microsoft Windows 95, or
+   Microsoft Windows 3.x; it can only be run under MS-DOS or LAN Workplace for
+   MS-DOS version 5.0.
+
+ - Microsoft LAN Manager can be broken down into MSCLIENT version 3.0 and LAN
+   Manager version 2.2c.
+
+For more information, see page 2 of Chapter 1, "A Brief Introduction," in the
+"Microsoft Mail Gateway to SMTP Administrator's Guide."
+
+
+Additional query words: pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

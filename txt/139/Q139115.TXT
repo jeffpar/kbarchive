@@ -1,0 +1,70 @@
+DOCUMENT:Q139115  13-JUN-2001  [sna]
+TITLE   :SNA Server Support for FNA and HNA
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork sna4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server version 2.11 supports the "Fujitsu Network Architecture" (FNA) and
+"Hitachi Network Architecture" (HNA) variants to IBM SNA. Support for these
+alternate SNA protocols is enabled adding the following registry keys:
+
+   HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/SnaServr/Parameters
+
+      FNA_SUPPORT: REG_SZ: <value>   (to enable FNA)
+
+   -or-
+
+      HNA_SUPPORT: REG_SZ: <value>   (to enable HNA)
+
+where <value> can be set to anything. The presence of this registry key
+enables this support.
+
+MORE INFORMATION
+================
+
+If SNA Server is communicating to a host system which is running Fujitsu Network
+Architecture (FNA) protocol, the following sense code errors may occur if
+FNA_SUPPORT is not enabled:
+
+   80050001: No session: SNA Server received a request other than
+   session control request when no LU-LU session was active
+
+If SNA Server is communicating to a host system which is running Hitachi Network
+Architecture (HNA) protocol and HNA_SUPPORT is not enabled, an out- of-chain
+CANCEL message sent to a type 3 Printer LU will be rejected by SNA Server rather
+than being sent to the printer application.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbenv kbnetwork sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400
+Version           : WINDOWS:2.11,3.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

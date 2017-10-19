@@ -1,0 +1,169 @@
+DOCUMENT:Q240626  07-MAY-2001  [visualc]
+TITLE   :BUG: Extra Lines are Generated in Assembly when Using #line
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbCodeGen kbCompiler kbDebug kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While using #line digit-sequence "filename" with Visual C++ 6.0, extra lines may
+be generated in assembly code. Hence, you may need to press F10 multiple times
+while debugging to go to the next executable line.
+
+CAUSE
+=====
+
+Extra lines are generated for the #line directive.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Compile Main.cpp:
+
+   /*******************************************
+      Main.cpp file
+      Uses #line directives. 
+      
+     ******************************************/ 
+
+   #include <stdio.h>
+   #line 1 "thetestfile"
+   void main() {
+   #line 1 "thetestfile"
+   int xx = 1;
+   #line 1 "thetestfile"
+
+   #line 1 "thetestfile"
+   if (xx == 1) {
+   #line 1 "thetestfile"
+   	printf("hello1\n");
+   #line 1 "thetestfile"
+   	++xx;
+   #line 1 "thetestfile"
+   }
+   #line 1 "thetestfile"
+
+   if (xx == 2) {
+   #line 2 "thetestfile"	
+   	int r = 0;
+   #line 2 "thetestfile"
+   	printf("hello2\n");
+   #line 2 "thetestfile"
+   }
+   #line 2 "thetestfile"
+
+   #line 3 "thetestfile"
+   if (xx == 2) {
+   #line 3 "thetestfile"	
+   	int r = 0;
+   #line 3 "thetestfile"
+   	printf("hello3\n");
+   #line 3 "thetestfile"
+   }
+   #line 3 "thetestfile"
+
+   }
+
+Create a text file named thetestfile, and add the following lines to the file:
+
+   line 1 : Write hello1 on console
+   line 2 : Write hello2 on console
+   line 3 : Write hello3 on console
+
+The following is the generated assembly code:
+
+   1:    line 1 : Write hello1 on console
+   00401010   push        ebp
+   00401011   mov         ebp,esp
+   00401013   sub         esp,4Ch
+   00401016   push        ebx
+   00401017   push        esi
+   00401018   push        edi
+   00401019   lea         edi,[ebp-4Ch]
+   0040101C   mov         ecx,13h
+   00401021   mov         eax,0CCCCCCCCh
+   00401026   rep stos    dword ptr [edi]
+   00401028   mov         dword ptr [ebp-4],1
+   0040102F   cmp         dword ptr [ebp-4],1
+   00401033   jne         main+3Bh (0040104b)
+   00401035   push        offset string "hello1\n" (00420034)
+   0040103A   call        printf (004010b0)
+   0040103F   add         esp,4
+   00401042   mov         eax,dword ptr [ebp-4]
+   00401045   add         eax,1
+   00401048   mov         dword ptr [ebp-4],eax
+   3:    line 3 : Write hello3 on console
+   0040104B   cmp         dword ptr [ebp-4],2
+   0040104F   jne         main+55h (00401065)
+   2:    line 2 : Write hello2 on console
+   00401051   mov         dword ptr [r],0
+   2:    line 2 : Write hello2 on console
+   00401058   push        offset string "hello2\n" (00420028)
+   0040105D   call        printf (004010b0)
+   00401062   add         esp,4
+   3:    line 3 : Write hello3 on console
+   00401065   cmp         dword ptr [ebp-4],2
+   00401069   jne         main+6Fh (0040107f)
+   3:    line 3 : Write hello3 on console
+   0040106B   mov         dword ptr [r],0
+   3:    line 3 : Write hello3 on console
+   00401072   push        offset string "hello3\n" (0042001c)
+   00401077   call        printf (004010b0)
+   0040107C   add         esp,4
+   4:
+   0040107F   pop         edi
+   00401080   pop         esi
+   00401081   pop         ebx
+   00401082   add         esp,4Ch
+   00401085   cmp         ebp,esp
+   00401087   call        __chkesp (00401130)
+   0040108C   mov         esp,ebp
+   0040108E   pop         ebp
+   0040108F   ret
+
+Extra lines are generated for line 2 and line 3 directives. As a result, you need
+to press F10 multiple times for line 2 and line 3 while debugging.
+
+Additional query words: #line directive extra line F10
+
+======================================================================
+Keywords          : kbCodeGen kbCompiler kbDebug kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

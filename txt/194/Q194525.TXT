@@ -1,0 +1,211 @@
+DOCUMENT:Q194525  06-AUG-2002  [exchange]
+TITLE   :XWEB: VBScript Runtime Error '800A01A8' with OWA
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you try to access a client mailbox using Outlook Web Access (OWA), the
+following error message may appear:
+
+   VBScript Runtime Error '800A01A8' Object Required: 'Application (...)'
+   \exchange\USA\logon.asp, Line 12
+
+CAUSE
+=====
+
+The error in the "Symptoms" section can be caused by incorrect permissions on
+required files for the OWA client, registry changes, or damaged files. This
+article covers these areas and lists ways to correct the above error.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+When you attempt to resolve this problem, check the following items:
+
+1. Verify that permissions on Cdohtml.dll are correct. Users must have READ
+   permissions to this .dll. This file is responsible for doing all the
+   rendering of the ASP pages with OWA. To check the permissions:
+
+   a. Right-click on the filename, and click Properties.
+
+   b. Click the Security tab, and then click Permissions. Cdohtml.dll should be
+      located in the Exchsrvr\Bin directory. Ensure that all users have at least
+      READ permissions to this directory.
+
+2. Check the registry. It is possible you have a problem with a registry key
+   value for:
+
+OWA 5.5 and OWA 5.5 SP1:
+
+   HKEY_CLASSES_ROOT\TypeLib\{BC00F700-31AC-11D0-B5F1-00AA00BF3382}
+
+-and-
+
+OWA 5.5 SP2:
+
+   HKEY_CLASSES_ROOT\CLSID\{bc00f780-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\CLSID\{bc00f781-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\CLSID\{bc00f782-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\TypeLib\{BC00F700-31AC-11D0-B5F1-00AA00BF3382}
+
+This is the key for Cdohtml.dll. You can export this key, and then run
+Regsvr32.exe on the .dll to register the key back correctly into the registry.
+The following steps describe how to export and remove the registry value.
+
+   a. Click Start , click Run, type "regedit " (without the quotation marks) to
+      start the Registry Editor, and then Click OK.
+
+   b. In the Registry Editor, select the key you want to back up.
+
+   c. From the Registry menu, choose Export Registry File.
+
+   d. In the Save In list, select the folder where you want to save the backup.
+
+   e. In the File Name box, type a name for your backup file, such as"Options"
+      or "Backup."
+
+   f. In the Export Range check box, ensure that "Selected branch" is selected.
+
+   g. Click Save. The file is saved with a .reg extension.
+
+   h. Select the key you want to remove:
+
+OWA 5.5 and OWA 5.5 SP1:
+
+   HKEY_CLASSES_ROOT\TypeLib\{BC00F700-31AC-11D0-B5F1-00AA00BF3382}
+
+-and-
+
+OWA 5.5 SP2:
+
+   HKEY_CLASSES_ROOT\CLSID\{bc00f780-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\CLSID\{bc00f781-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\CLSID\{bc00f782-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\TypeLib\{BC00F700-31AC-11D0-B5F1-00AA00BF3382}
+
+   i. Press the DELETE key, or click the right mouse button, and then click
+      Delete.
+
+   j. Exit Registry Editor.
+
+      After this has been completed, stop the WWW service either through Control
+      Panel, Services, or through the Internet Information Service (IIS)
+      manager. Reregister Cdohtml.dll by typing the following syntax at a
+      command prompt, or by clicking Start, Run, and typing the following
+      command in the text box:
+
+   " regsvr32 c:\exchsrvr\bin\cdohtml.dll " (without the quotation marks)
+
+   k. After you re-register the Cdohtml.dll file, it may be necessary to verify
+      the permissions on the registry entries. To verify the permissions,
+      perform the following steps, in the order in which they appear:
+
+       - Open regedt32.
+
+       - Locate the following registry keys:
+
+   HKEY_CLASSES_ROOT\CLSID\{bc00f780-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\CLSID\{bc00f781-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\CLSID\{bc00f782-31ac-11d0-b5f1-00aa00bf3382}
+   HKEY_CLASSES_ROOT\TypeLib\{BC00F700-31AC-11D0-B5F1-00AA00BF3382}
+
+       - Highlight each key, click Security and then click Permissions.
+
+       - Assign the Everyone group Full Control of the registry keys.
+
+       - Assign the IUSR_<ServerName> account Full Control of the registry
+         keys.
+
+   l. Restart the WWW service.
+
+3. An apostrophe in the directory name into which OWA has been installed can
+   cause the error message in the "Symptoms" section to appear. If this is the
+   case, remove the OWA component and reinstall to a different directory.
+
+4. If you still have problems after following steps one, two, and three earlier,
+   it may be necessary to remove and reinstall the OWA component by using
+   Exchange Server Setup. The following steps describe removal and
+   reinstallation of the OWA component.
+
+   a. Start the Exchange Server Setup program from the Exchange Server CD-ROM.
+
+   b. Select Add/Remove from the Installation screen.
+
+   c. From the next Setup screen, click to clear the checkbox for Outlook Web
+      Access. Continue with the Setup program to enable OWA to be removed.
+
+   d. To reinstall the components, start the Exchange Server Setup program
+      again.
+
+   e. Select Add/Remove from the Installation screen.
+
+   f. From the next setup screen, click to select the Outlook Web Access check
+      box, and continue with the installation.
+
+   NOTE: Occasionally when you try to remove the Outlook Web Access component
+   from the Exchange Server Setup Add/Remove selection, the check box for this
+   option cannot be cleared. You may not be able to remove only the OWA
+   component option by using Add/Remove. Removing the related registry key
+   enables the OWA component to be reinstalled. To do so, follow these steps:
+
+   a. Run the Registry Editor (Regedit or Regedt32.exe).
+
+   b. Select the following registry key:
+
+   \HKEY_LOCAL_MACHINE\Software\Microsoft\Exchange\Setup
+
+   c. Remove the string value "Web Connector" from this key. This clears the OWA
+      component check box option from the Exchange Server CD-ROM Setup program.
+
+   d. Close the Registry Editor, and reinstall the OWA component using the
+      Exchange Server Setup program.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,70 @@
+DOCUMENT:Q140577  10-FEB-2000  [foxpro]
+TITLE   :PRB: Visual FoxPro Laptop Install Doesn't Provide Uninstall
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install a Laptop (Minimum) installation of Visual FoxPro 3.0 on a
+computer running Windows 95, Visual FoxPro isn't listed as one of the registered
+applications for Uninstall.
+
+CAUSE
+=====
+
+Laptop installations don't install the Setup Utility.
+
+WORKAROUND
+==========
+
+If you want the Install/Uninstall option, run Visual FoxPro setup again:
+
+1. Run Setup.exe from floppy disk 1 or from the compact disc.
+
+2. Select custom installation, and clear the selection from all options.
+
+3. Choose Microsoft Tools from the list, and click Change Options.
+
+4. From the list of options, choose Microsoft Visual FoxPro Setup, and click OK.
+
+5. Click Continue, and proceed with the installation.
+
+STATUS
+======
+
+This behavior is by design. A minimal installation will install only components
+that are needed to run the application. The Setup icon does not affect Visual
+FoxPro, so it is not installed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

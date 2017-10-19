@@ -1,0 +1,60 @@
+DOCUMENT:Q38936  06-MAY-2001  [masm]
+TITLE   :DOCERR: [bx].month Example Incorrect in MASM Programmer's Guide
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.0,5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.0, 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The code fragment in section 7.1.3 on Page 147 of the "Microsoft Macro Assembler
+Programmer's Guide" causes a warning A4031: "Operand types must match." There is
+an error in the example.
+
+Change the line below
+
+   mov ax, [bx].month
+
+to the following:
+
+   " mov ah, [bx].month " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+Because the structure field month is defined as a byte, the assignment to a word
+register generates the operand-mismatch warning message. The change to a byte
+register resolves the warning. The following is also acceptable:
+
+   " mov ax, word ptr [bx].month " (without the quotation marks)
+
+Additional query words: 5.00 5.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM500
+Version           : :5.0,5.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

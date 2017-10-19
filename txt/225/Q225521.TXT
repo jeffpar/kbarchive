@@ -1,0 +1,61 @@
+DOCUMENT:Q225521  10-AUG-2001  [winnt]
+TITLE   :Y2K.TXT Information No Longer Valid
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 SP4 
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+ - Microsoft Windows NT Server version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you install Windows NT Server or Workstation version 4.0 Service Pack 4
+(SP4), the installation program automatically launches NotePad and displays the
+Y2k.txt file. The information displayed in the Y2k.txt file, particularly that
+involving the Y2ksetup.exe program, is no longer valid.
+
+MORE INFORMATION
+================
+
+To simplify the upgrade process and provide more flexibility to customers, the
+Y2ksetup.exe composite patch has been removed from the recommended upgrade path.
+Y2ksetup.exe was used to install Microsoft Internet Explorer 4.01 Service Pack
+1, Microsoft MDAC 2.0 Service Pack 1, and Microsoft Site Server Express 3.0.
+Microsoft now recommends that you install these components individually.
+
+Please view the updated Y2K information at the following Microsoft Web site:
+
+   http://www.microsoft.com/technet/year2k/product/user_view67961EN.htm
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp4 kbWinNTS400sp4 kbWinNTS400search
+Version           : winnt:4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

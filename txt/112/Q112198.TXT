@@ -1,0 +1,77 @@
+DOCUMENT:Q112198  26-SEP-1999  [win3x]
+TITLE   :WinPopup Sends Multiple Messages to a Workgroup
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a WinPopup message is sent to a workgroup, everyone in that workgroup may
+receive the message multiple times. The number of times the message is received
+is dependent on what protocol(s) the sending machine is using.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows for Workgroups
+version 3.11. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following behavior has been reported:
+
+ - If you use only the NetBEUI protocol on the sending workstation, members of
+   the workgroup receive one message.
+
+ - If you use only the IPX/SPX Compatible Transport on the sending workstation,
+   members of the workgroup receive one message.
+
+ - If you use only the IPX/SPX Compatible Transport with NetBIOS on the sending
+   computer, members of the workgroup receive two messages.
+
+ - If you use the NetBEUI protocol and the IPX/SPX Compatible Transport on the
+   sending machine, members of the workgroup receive two messages.
+
+ - If you use the NetBEUI protocol and the IPX/SPX Compatible Transport with
+   NetBIOS on the sending workstation, members of the workgroup receive three
+   messages.
+
+ - If you use the NetBEUI protocol and TCP/IP on the sending machine, members of
+   the workgroup receive three messages.
+
+ - If you use the NetBEUI, IPX/SPX Compatible Transport, and TCP/IP on the
+   sending workstation, members of the workgroup receive four messages.
+
+Additional query words: 3.11 popup winpopup.exe broadcast datagram several lots more than one
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

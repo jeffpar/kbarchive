@@ -1,0 +1,79 @@
+DOCUMENT:Q57888  25-JUL-2001  [visualc]
+TITLE   :INFO: Return Value for getch() on Extended Characters
+PRODUCT :Microsoft C Compiler
+PROD/VER:MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbcode kbCRT kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft C, when reading extended characters you must make two calls to
+getch() because the first call returns a value indicating that the key is an
+extended character. The second call returns the actual key code.
+
+MORE INFORMATION
+================
+
+When you are reading an extended character, the first return value will be
+either 0xE0 or 0x00, depending on which extended key is pressed.
+
+Sample Code
+-----------
+
+   #include <stdio.h>
+   #include <conio.h>
+
+   void main(void)
+   {
+       int ch, scan;
+
+       do {
+           ch = getch();    /* 1st getch() gets ASCII code */ 
+           printf("Character is %d\n", ch);
+              if (ch == 0x00 || ch == 0XE0)  { /* if extended key */ 
+               scan = getch();  /* 2nd getch() gets "scan code" */ 
+               printf("\tExtended character:  scan is %d\n", scan);
+           }
+       }  while (ch != 27);    /* exit loop on ESC */ 
+   }
+
+For a discussion of keystrokes and scan codes, refer to "The New Peter Norton
+Programmer's Guide to the IBM PC & PS/2," by Peter Norton and Richard
+Wilton.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbCRT kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

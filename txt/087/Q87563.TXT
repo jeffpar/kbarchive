@@ -1,0 +1,68 @@
+DOCUMENT:Q87563  15-FEB-2002  [powerpt]
+TITLE   :PPT: Non-PowerPoint Objects Have No Selection Box
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::4.0,7.0
+OPER/SYS:
+KEYWORDS:kbdraw
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft PowerPoint for Macintosh, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If you select a two-dimensional (non-line) object in Microsoft PowerPoint, the
+selected object is surrounded by a fuzzy gray rectangle. This is called a
+selection box. The corners of the selection box are resize handles. You can use
+these handles to stretch, shrink, or reproportion the object.
+
+MORE INFORMATION
+================
+
+If the selected object is not a PowerPoint object or group, it will not be
+surrounded by a selection box. This is a visual indication that the object is
+not a PowerPoint object or group.
+
+Objects that are not PowerPoint objects or groups include the following:
+
+ - Embedded or linked objects (such as charts, movies, and so on)
+
+
+ - Imported graphics (using the Insert Picture, Paste, or Paste Special
+   commands)
+
+An item created with the tools on the tool palette (with the exception of
+Microsoft Graph objects) is a PowerPoint object. Also, any collection of objects
+that has been grouped together using the Group command is considered a
+PowerPoint group, and will be surrounded by a selection box.
+
+Additional query words: grey gray select highlight fuzz macppt msgraph OLE ppt powerpt
+
+======================================================================
+Keywords          : kbdraw 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt95Search kbPowerPt400 kbPowerPt400Mac
+Version           : :4.0,7.0
+Hardware          : MAC x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

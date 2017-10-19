@@ -1,0 +1,59 @@
+DOCUMENT:Q59371  19-NOV-1999  [lanman]
+TITLE   :"Name Not Found" Error Sending Messages to Busy DOS WS
+PRODUCT :Microsoft LAN Manager
+PROD/VER::2.0,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LAN Manager, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an MS-DOS workstation receives a second message while the first message
+pop-up is still displayed on the screen, the sender receives a confusing set of
+error messages:
+
+   NET3722:An error occurred while sending a message to USERNAME.
+   NET2273:The message alias cannot be found on the local area network.
+
+MORE INFORMATION
+================
+
+These messages do not accurately describe the problem, which is that the
+workstation is busy displaying a pop-up and there is no way to get a message
+through to an MS-DOS workstation at this point. MS-DOS is not a multitasking
+operating system, and its single thread of execution is busy waiting for either
+keyboard input or a time-out to exit the netpopup program.
+
+Microsoft has confirmed this to be a problem in MS-DOS LAN Manager versions 1.0,
+1.01, 2.0, and 2.1. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 1.01 2.00 2.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbLanManSearch kbLanMan200 kbLanMan210
+Version           : :2.0,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q177247  07-MAY-2002  [homegame]
+TITLE   :FS98: Engine Noise Continues After You Switch to Map View
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsound kbui fsim fs98 kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you switch from Spot Plane view to Map view in Flight Simulator 98, the
+engine noise sound playback may continue.
+
+CAUSE
+=====
+
+This behavior can occur if the Spot Plane view is still running in the
+background.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. On the Views menu, click Close View.
+
+2. On the Views menu, point to New View, and then click Map.
+
+Additional query words: flightsim fltsim flt sim fs98 sound msgame
+
+======================================================================
+Keywords          : kbsound kbui fsim fs98 kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,79 @@
+DOCUMENT:Q98201  07-MAY-2001  [visualc]
+TITLE   :HOWTO: Change Dialog Box Background Color in MFC 2.0 or Later
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,2.2,4.0
+OPER/SYS:
+KEYWORDS:kbDlg kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An application developed with the Microsoft Foundation Classes (MFC) version 2.0
+or later can change the background color of its dialog boxes by calling the
+SetDialogBkColor() member function in the CWinApp class.
+
+MORE INFORMATION
+================
+
+SetDialogBkColor() requires two COLORREF values as parameters. The first
+parameter specifies the dialog box background color; the second specifies the
+text color for a control in a dialog box. The application calls
+SetDialogBkColor() in the InitInstance() member function of the CWinApp class.
+For more information on the SetDialogBkColor() function, please refer to the
+"Class Library Reference Guide, Volume 1," or to the online Help file.
+
+The application can use the RGB macro to supply the requested colors. The
+following sample code demonstrates this technique:
+
+      BOOL CTheApp::InitInstance()
+      {
+         TRACE("HELLO WORLD\n");
+
+         // Change colors to red and green.
+         SetDialogBkColor(RGB(192, 0, 19), RGB(19, 192, 0));
+
+         m_pMainWnd = new CMainWindow();
+         m_pMainWnd->ShowWindow(m_nCmdShow);
+         m_pMainWnd->UpdateWindow();
+
+         return TRUE;
+      }
+
+The SetDialogBkColor() function changes the colors of all dialog boxes in an
+application. If each dialog box requires a different background color, process
+the WM_CTLCOLOR message and return a brush that Windows can use to paint the
+dialog box background.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDlg kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,2.2,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

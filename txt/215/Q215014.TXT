@@ -1,0 +1,65 @@
+DOCUMENT:Q215014  21-FEB-1999  [sms]
+TITLE   :SMS: APM16 Does Not Run Batch File Without Extension in Cmd Line
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using a 16-bit operating system, such as Microsoft Windows for Workgroups
+3.11, the Advertised Program Monitor (APM) will not be able to run a batch
+command correctly unless an extension (.bat) is added to the command line. This
+happens with both Windows NT 16-bit clients and Novell NetWare 16-bit clients.
+
+CAUSE
+=====
+
+APM16svc.dll does the actual work of running an application selected by the
+Advertised Programs Monitor Wizard. After you select the application to run, it
+checks to see if the first token in the command line has an extension of ".bat";
+if it does, it always maps the path to a temporary drive letter and builds a new
+command line by prepending the original command line with "c:\command.com /c"
+(wherever Command.com is). The command line fails because the temporary drive
+mapping is not passed to the MS-DOS Command.com environment.
+
+MORE INFORMATION
+================
+
+This is by design. By default, Systems Management Server 2.0 handles the .exe
+type of file; there is no way to handle both .exe and .bat by default in the a
+16-bit operating system environment. To make sure that everything works
+correctly, file extensions should be placed on all package command lines,
+regardless of type, for both 16-bit and 32-bit clients.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

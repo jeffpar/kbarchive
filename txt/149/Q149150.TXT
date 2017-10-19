@@ -1,0 +1,87 @@
+DOCUMENT:Q149150  02-NOV-1999  [fortran]
+TITLE   :BUG: GETENV() Fails If Input Variable Has Trailing Spaces
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using an input variable containing trailing blank spaces in the GETENV() Portlib
+subroutine causes the call to the GETENV() subroutine to fail.
+
+Under Windows 95, blank spaces are returned to the output variable(evalue), and
+under Windows NT 3.51, random characters are returned to the output
+variable(evalue).
+
+RESOLUTION
+==========
+
+Do one of the following:
+
+ - Use an input character variable that has a length identical to that of the
+   environment variable.
+
+-or-
+
+ - Use TRIM() to truncate any trailing blank spaces from the input variable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Demonstrate Problem
+----------------------------------
+
+   ! Compile options needed: none
+
+         use portlib
+   ! Comment the following line for the first workaround:
+         character*10 :: ename = 'PATH'
+   ! Uncomment the following line for the first workaround:
+   !      character*4 :: ename = 'PATH'
+         character*100 :: evalue = 'nothing'
+
+         CALL GETENV( ename, evalue )   ! GETENV fails to return information
+
+   ! Uncomment the following line for the second workaround:
+   !      CALL GETENV( trim(ename), evalue )
+         print *, ename, " uses ", evalue
+         end
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

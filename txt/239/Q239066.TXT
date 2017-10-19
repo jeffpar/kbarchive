@@ -1,0 +1,64 @@
+DOCUMENT:Q239066  24-SEP-1999  [exchange]
+TITLE   :XADM: Exchange Mailbox Manager Error Message: Setup Has Failed
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run Microsoft Exchange Mailbox Manager Setup and click Install or
+Remove, you may receive the following error message:
+
+   Setup has failed. You can run the setup program at a later time to install
+   the application again.
+
+CAUSE
+=====
+
+The system attendant service has been stopped.
+
+RESOLUTION
+==========
+
+Start the Exchange Server services before running Mailbox Manager Setup.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server 5.5
+Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

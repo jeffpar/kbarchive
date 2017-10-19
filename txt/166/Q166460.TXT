@@ -1,0 +1,74 @@
+DOCUMENT:Q166460  07-SEP-2001  [win95x]
+TITLE   :Unwanted Banner Page Printed from MS-DOS-Based Program
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbnetwork kbprint 3rdpartynet msnets win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you turn off banner pages, printing from MS-DOS-based programs may still
+print banner pages.
+
+CAUSE
+=====
+
+The program is printing to a UNC printer name instead of to a port.
+
+RESOLUTION
+==========
+
+Capture the printer port. To do so, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Use the right mouse button to click the printer you want to use, then click
+   Properties on the menu that appears.
+
+3. Click the Details tab, and then click the Capture Printer Port button.
+
+4. Click the port to be captured (such as LPT2) and the path to the network
+   printer (such as \\ServerName\PrinterShare).
+
+   NOTE: To make this connection available every time Windows 95 is started,
+   click the Reconnect At Logon check box to select it.
+
+5. In the printer's properties, in the box that shows the print server and share
+   name, look for the entry that shows "LPT<x>," where <x> is the
+   port you have captured.
+
+6. Click LPT<x> (\\<Server>\<Printqueue>), and then click
+   Apply.
+
+7. Click the Capture tab, disable the banner page setting, and then click OK.
+
+Additional query words: novell netware form feed separator
+
+======================================================================
+Keywords          : kbnetwork kbprint 3rdpartynet msnets win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

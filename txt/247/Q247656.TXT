@@ -1,0 +1,118 @@
+DOCUMENT:Q247656  16-JAN-2000  [exchange]
+TITLE   :XADM: How to Locate the Source of a Rogue Server Monitor
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One of the features of Exchange Server is server monitors. One of the key
+features of a server monitor is time synchronization between Exchange Server
+computers. However, server monitors can change the Exchange Server computer's
+time to an unwanted value, and it can be difficult to track the source of this
+server monitor. This article explains how to find the rogue server monitor.
+
+MORE INFORMATION
+================
+
+You can locate the IP address of the rogue monitor by using Network Monitor.
+
+NOTE: If you need the full Microsoft Systems Management Server version of
+Netmon.exe, contact Microsoft Product Support Services (PSS) to request a trial
+version.
+
+1. Set the Exchange Server computer to the correct time.
+
+2. Using Network Monitor, capture all traffic inbound to and outbound from the
+   Exchange Server computer that is experiencing the time changes.
+
+3. Observe the time on the Exchange Server computer. As soon as the time is
+   changed, stop the Network Monitor trace.
+
+4. In Network Monitor, click Display Captured Data on the Capture menu (or press
+   F12) to display the captured data.
+
+Next, filter for the MSRPC traffic:
+
+1. On the toolbar, click the Edit Display Filter icon (funnel).
+
+2. In the Display Filter dialog box, double-click Protocol==Any.
+
+3. Click Disable All.
+
+4. In the Disabled Protocols list, click MSRPC, and then click Enable.
+
+5. Click OK to clear the Expression window, and then click OK to clear the
+   Display Filter window.
+
+You now have MSRPC traffic.
+
+Next, locate the Admin universally unique identifier (UUID) that indicates that a
+server monitor is connecting to this server:
+
+1. On the toolbar, click the Find icon (binoculars) to open the Find Frame
+   Expression window.
+
+2. In the Protocol:Property list, click MSRPC, and then click the plus sign (+)
+   to expand the RPC options.
+
+3. Just below MSRPC, click Abstract Interface UUID, and paste the following UUID
+   in the Value (Array of Bytes) field:
+
+       F0 2B D7 83 89 0D CE 11 B1 3F 00 AA 00 3B AC 6C
+
+4. Click OK. This will take you to the frame where the Admin program is
+   connecting to this server.
+
+5. Continue to click the Find Next icon until you locate a frame that contains
+   an opnum of 0x3. This opnum indicates that you are setting the remote system
+   time.
+
+6. Double-click on this frame and expand the frame information. Scroll up to
+   display the IP header.
+
+7. Expand the IP header, and scroll down to the IP: Source Address. This is the
+   IP address of the rogue server monitor.
+
+For additional information about capturing and interpreting network traffic with
+Network Monitor, click the article numbers below to view the articles in the
+Microsoft Knowledge Base:
+
+   Q148942 How to Capture Network Traffic with Network Monitor
+
+   Q159298 Analyzing Exchange RPC Traffic Over TCP/IP
+
+   Q169292 The Basics of Reading TCP/IP Traces
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

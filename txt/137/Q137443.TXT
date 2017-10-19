@@ -1,0 +1,67 @@
+DOCUMENT:Q137443  13-DEC-1999  [foxpro]
+TITLE   :Size and Nesting Level Limitations of Classes
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro 3.0 allows you to subclass any of the base classes provided by
+Visual FoxPro. When subclassing, you are free to add your own properties and
+methods to the predefined properties and methods for a base class. This article
+explains some of the considerations in defining and using classes.
+
+MORE INFORMATION
+================
+
+In general, there are no limits to the size of a class definition.
+Theoretically, a class is capable of having four billion members (properties and
+methods). However, every member definition does use a small amount of memory.
+The amount of memory depends on the member name and member value.
+
+Class nesting levels are limited by the following two factors:
+
+ - File handles: For each class that is subclassed, the file that contains the
+   class definition must be opened. It is possible to combine class definitions
+   in class files (.vcx or .prg files) to avoid running into this limitation.
+
+ - Stack space: When creating instances of objects that are either subclassed or
+   contain objects that are subclassed, Visual FoxPro recursively reads in class
+   definitions for subclasses. This can lead to an "Insufficient Stack Space"
+   situation.
+
+NOTE: As a general rule, well-designed applications should usually have no more
+than five or six levels of subclassing.
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

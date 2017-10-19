@@ -1,0 +1,59 @@
+DOCUMENT:Q178020  11-JAN-2001  [vbwin]
+TITLE   :FILE: WIN32API.EXE Updated Version of Win32api32.txt for VB 5.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbfile kbVBp500 kbDSupport kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WIN32API.EXE is a self-extracting program that installs an updated version of
+the Win32 API Declarations text file for Visual Basic 5.0, Win32api.txt. The
+updated version corrects incomplete or wrong declare statements shown in the
+version that ships with Visual Basic.
+
+You can download the file from the Visual Basic Owner's site:
+
+   http://premium.microsoft.com/download/vbasic/win32api.exe
+
+Only registered users of Visual Basic can access this site.
+
+
+MORE INFORMATION
+================
+
+ 
+
+Additional query words: api text viewer
+
+======================================================================
+Keywords          : kbfile kbVBp500 kbDSupport kbhowto 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

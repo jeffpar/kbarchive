@@ -1,0 +1,102 @@
+DOCUMENT:Q162984  14-NOV-2000  [word97]
+TITLE   :WD97: Error Inserting Video Clip In HTML Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to insert a video clip that is stored on a different network
+path than your document, you get the following error message:
+
+   ..\..\..\..\<server>\<share>\<path to video clip>
+   The file could not be found.
+
+   The correct path should be:
+   \\<server>\<share>\<path to video clip>
+
+CAUSE
+=====
+
+An incorrect path to the video clip is created. This problem occurs when all of
+the following are true:
+
+ - Your HTML document is saved to a network server.
+
+ - The video clip file is saved to a different network server than the HTML
+   document.
+
+ - You selected the Use Relative Path check box in the Video Clip dialog box
+   (Insert menu).
+
+ - You specified a Universal Naming Convention (UNC) path when you inserted the
+   video clip.
+
+WORKAROUND
+==========
+
+To work around this problem, choose one of the following methods:
+
+Method 1
+--------
+
+Map the network drive where your video clip file is located to a drive letter.
+
+Method 2
+--------
+
+After you receive the error message described in the "Symptoms" section, click
+Change, and then correct the path to the video clip.
+
+Method 3
+--------
+
+Save the HTML document or the video clip to your local hard disk before you
+insert the video clip.
+
+Method 4
+--------
+
+Place the HTML document and the video clip on the same network drive.
+
+Method 5
+--------
+
+Do not select the Use Relative Path check box in the Video Clip dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word version 97.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

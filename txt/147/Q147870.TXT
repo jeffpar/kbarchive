@@ -1,0 +1,75 @@
+DOCUMENT:Q147870  08-NOV-2001  [homekids]
+TITLE   :3D Movie Maker: Program Hangs When Playing MIDI
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are working in 3D Movie Maker, the program may stop responding (hang)
+with a sound card that is not configured to use an FM Synthesis MIDI driver.
+
+RESOLUTION
+==========
+
+Switch the configuration of the MIDI driver to use the FM Synthesis or OPL2/OPL3
+driver (or equivalent) by following the steps below:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia, then click the MIDI tab.
+
+3. Make sure Single Instrument is selected and it references MIDI for Internal
+   FM Synthesizer (or equivalent).
+
+4. Click OK to exit Multimedia.
+
+5. Run 3D Movie Maker.
+
+The program should run successfully after following these steps.
+
+MORE INFORMATION
+================
+
+Some sound cards may attempt to use a MIDI driver to play MIDI in a manner that
+is incompatible with the way that 3D Movie Maker plays MIDI.
+
+
+For information on a related issue, please see the following article in the
+Microsoft Knowledge Base
+
+   Q143232 3D Movie Maker: MIDI Does Not Work Properly with SB AWE 32
+
+
+Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional 3d 3dmm freeze hangs 1.00
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q167699  10-AUG-2001  [winnt]
+TITLE   :Underlining of Hyperlinks Unavailable in Windows Messaging
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,95
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a hyperlink (such as http://www.microsoft.com) to a mail message,
+the link is not underlined and you cannot click the link to go to the site that
+is referenced.
+
+CAUSE
+=====
+
+Windows Messaging does not include the ability to automatically underline
+hyperlinks. Windows Messaging is a basic mail client included with Windows 95
+and Windows NT 4.0 without the full feature set available in other products.
+
+RESOLUTION
+==========
+
+Update Windows Messaging with Microsoft Outlook or Microsoft Exchange, or use
+Microsoft Outlook Express, for the automatic underlining of links and the
+ability to click a link to go to the site.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWin95search kbOPKSearch kbZNotKeyword3
+Version           : :4.0,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

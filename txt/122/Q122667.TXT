@@ -1,0 +1,58 @@
+DOCUMENT:Q122667  27-NOV-1999  [homekids]
+TITLE   :Writer: Card Borders Print Solid Green on HP DeskJet
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Creative Writer, when you print a card to a Hewlett Packard (HP) DeskJet 500C
+or 550C printer, colored borders may appear as solid green, with the actual
+border shapes appearing very faintly underneath the solid green border.
+
+CAUSE
+=====
+
+This behavior occurs when you use version 3.0 of the HP DeskJet driver.
+
+RESOLUTION
+==========
+
+To correct this problem, upgrade to version 3.1 or later of the HP DeskJet 500C
+or 550C driver.
+
+The HP DeskJet 500C and 550C drivers are manufactured by Hewlett Packard, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: 1.00 1.10 green ugly solid desk jet border mskids win kids 1.1 3.10 dj hpdj hpdeskjet mczee printout output 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a
+Version           : WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

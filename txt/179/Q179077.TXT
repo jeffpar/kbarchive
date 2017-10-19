@@ -1,0 +1,85 @@
+DOCUMENT:Q179077  14-NOV-2000  [word97]
+TITLE   :WD97: Creating a Hyperlink to a Microsoft Access Table or Query
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop kbdta word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to insert a hyperlink that opens a Microsoft Access
+97 database table or query. Before you begin, you will need to know the
+following:
+
+ - The file name of the database
+
+ - The name of the table or query
+
+Inserting a Hyperlink to a Microsoft Access Database or Query
+-------------------------------------------------------------
+
+To insert a hyperlink that links to a Microsoft Access database table or query,
+follow these steps:
+
+1. Open Word.
+
+2. On the Insert menu, click Hyperlink.
+
+3. Under "Link to file or URL," click Browse, select the database, and then
+   click OK.
+
+4. Under "Named location in file (optional)," type one of the following:
+
+    - The word "table" (without the quotation marks), followed by a space and
+      the name of the table you want to use.
+
+   -or-
+
+    - The word "query" (without the quotation marks), followed by a space and
+      the name of the query you want to use.
+
+5. Click OK.
+
+MORE INFORMATION
+================
+
+For additional information about hyperlinks, please see the following articles
+in the Microsoft Knowledge Base:
+
+   Q159940 WD97: General Information About Hyperlinks
+
+   Q157763 OFF97: Memory Problems When Hyperlinking Between Programs
+
+   Q167722 WD97: How to Format a Hyperlinked Object in an HTML Document
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbdta word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

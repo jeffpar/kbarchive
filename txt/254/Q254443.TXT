@@ -1,0 +1,75 @@
+DOCUMENT:Q254443  06-AUG-2002  [automap]
+TITLE   :MapPoint 2001: "Error 1305" When You Install Program
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2002 
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft MapPoint 2001, you may receive the
+following error message:
+
+   Error 1305: Error reading from file
+   \\<sharename>\msmap\pfiles\msmap\data\usa_cd.mad. Verify that this file
+   exists and that you can access it.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - You install MapPoint 2001 from a shared CD-ROM drive.
+
+ - You select the Full installation option.
+
+RESOLUTION
+==========
+
+To resolve this issue, insert the Run CD-ROM into the shared CD-ROM drive, and
+then click Retry.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft MapPoint 2001.
+
+MORE INFORMATION
+================
+
+In the error message mentioned in the "Symptoms" section of this article,
+<sharename> is the name of the shared CD-ROM drive.
+
+Additional query words: mp2001 map point network setup
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2001 kbMapPoint2002
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

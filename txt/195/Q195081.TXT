@@ -1,0 +1,159 @@
+DOCUMENT:Q195081  26-JUN-2002  [visualc]
+TITLE   :Fix2lBar.exe Fixes Spacing Errors in MFC's CToolBar
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbfile kbMFC kbToolbar KbUIDesign kbVC600 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ .NET (2002) supports both the managed code model that is provided by the Microsoft .NET Framework and the unmanaged native Microsoft Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+Fix2lBar.exe is a sample that show how to correct CToolBar's behavior. The
+original CToolBar, relying only on early releases of the common controls, does
+not behave intuitively whenever it contains two or more consecutive separators
+and it has vertical orientation. This behavior is even more striking when the
+toolbar has the new TBSTYLE_FLAT style.
+
+This sample provides a CToolBar-derived class that takes advantage of the new
+common controls features, in particular, of the CCS_VERT style, now available
+for control bars. Building on the new features of the toolbar control, the new
+class overrides the necessary functions to provide the correct behavior. The
+class requires ComCtl32.DLL versions 4.72 or greater.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Visual C++ .NET:
+
+   DownloadDownload Fix21bar.exe now
+   (http://download.microsoft.com/download/vc60pro/Patch1/1/NT4/EN-US/Fix2lBar.exe)
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+Visual C++ .NET:
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Fix21barvcnet.exe now
+   (http://download.microsoft.com/download/VisualStudioNET/sample/1.7/WIN98MeXP/EN-US/Fix2lbarvcnet.exe)
+
+Release Date: June 25, 2002
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+
+   File Name          Size
+   ---------------------------------------------------------
+
+   FixToolBar.h,      The new CFixToolBar class that overrides
+   FixToolBar.cpp     necessary methods in CtoolBar.
+   FixTBar.dsp        The project file.
+   FixTBar.h          The main header file for the application.
+   FixTBar.cpp        The main application source file (CFixTBarApp).
+   FixTBar.rc         Listing of all Windows resources used.
+   res\FixTBar.ico    Icon file, which is used as the application's icon.
+   res\FixTBar.rc2    Resources that are not edited by Visual C++ IDE.
+   MainFrm.h,
+   MainFrm.cpp        Contain the frame class CMainFrame.
+   res\Toolbar.bmp    Used to create tiled images for the toolbar.
+   FixTBarDoc.h,
+   FixTBarDoc.cpp     The document CFixTBar class.
+   FixTBarView.h
+   FixTBarView.cpp    The view of the document CFixTBarView class.
+   StdAfx.h
+   StdAfx.cpp         Used to build a precompiled header (PCH) file.
+   Resource.h         Defines new resource IDs.
+
+The sample contains an AppWizard-generated SDI application, and implements a
+CToolBar-derived class that implements the necessary fixes. The solution relies
+basically on adding the new style CCS_VERT to the toolbar when it must display
+more than just one row of buttons. In addition, the CalcSize() and WrapToolBar()
+functions must be overridden. However, because these two functions are not
+virtual, all CToolBar members that call these two functions need to be copied
+and pasted in the new class, up to and including the virtual functions
+CalcFixedLayout() and CalcDynamicLayout().
+
+To illustrate the problem, the resource file has been edited to define the
+toolbar as:
+
+      IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+      BEGIN
+          BUTTON      ID_FILE_NEW
+          BUTTON      ID_FILE_OPEN
+          BUTTON      ID_FILE_SAVE
+              SEPARATOR
+              SEPARATOR
+          BUTTON      ID_EDIT_CUT
+          BUTTON      ID_EDIT_COPY
+          BUTTON      ID_EDIT_PASTE
+              SEPARATOR
+          BUTTON      ID_FILE_PRINT
+              SEPARATOR
+          BUTTON      ID_APP_ABOUT
+      END
+
+You can experiment with both flat style toolbars and old style toolbars. To do
+this, comment in and out the corresponding toolbar creation code in
+CMainFrame::OnCreate().
+
+NOTE: To use this fix on a Visual C++ 5.0 system, you need to add the two files,
+FixToolBar.h and FixToolBar.cpp, to a Visual C++ 5.0-generated project. Make
+sure you have the new common controls dll; add the corresponding new header
+(Commctrl.h and Commctrl.rh in DevStudio\VC\include directory) and lib files
+(Comctl32.lib in DevStudio\VC\lib) to your Visual C++ 5.0 installation.
+
+Additional query words: Fix2lbar Fix2lbarvcnet
+
+======================================================================
+Keywords          : kbfile kbMFC kbToolbar KbUIDesign kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+Version           : :6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,53 @@
+DOCUMENT:Q292740  14-MAR-2001  [mspress]
+TITLE   :BackOffice Resource Kit, Second Edition Setup Does Not Recognize
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft BackOffice Resource Kit, Second Edition ISBN 1-57231-632-2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have Internet Explorer 5.0 or later on your system, when you attempt to
+install the BackOffice Resource Kit 2nd Edition software, the installation will
+require you to install Internet Explorer 4.01 or the legacy version of the
+BackOffice Resource Kit software.
+
+MORE INFORMATION
+================
+
+If you run SLOADER.EXE instead of SETUP.EXE, the setup code will run while
+bypassing the code that checks to see what version of Internet Explorer is
+installed.
+
+
+Additional query words: reskit ITBook 1-57231-632-2
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

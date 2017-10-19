@@ -1,0 +1,65 @@
+DOCUMENT:Q138667  14-FEB-2002  [win95x]
+TITLE   :New Video Card Not Detected After Replacing Trident Card
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove a video card with a Trident chip set (which uses the standard
+Super VGA driver provided with Windows 95) and add a video card compatible with
+the standard Super VGA video driver, the Add New Hardware Wizard does not detect
+the presence of the new video card and does not detect that the video card with
+the Trident chip set has been removed.
+
+CAUSE
+=====
+
+Windows 95 does not properly handle the response to the BIOS checksum it
+performs on video cards with some Trident chip sets. Therefore, Windows 95
+assumes the Trident card is still installed.
+
+
+RESOLUTION
+==========
+
+Remove the Trident Super VGA driver in Device Manager, and then use the Add New
+Hardware tool in Control Panel to manually add the proper display driver or have
+the new video card detected automatically.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

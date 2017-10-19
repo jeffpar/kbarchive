@@ -1,0 +1,135 @@
+DOCUMENT:Q192142  01-MAR-2002  [vbwin]
+TITLE   :PRB: Update After AddNew Using Oracle Driver Generates an Error
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,5.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft ODBC Driver for Oracle (Build 2.06325), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using Remote Data Objects (RDO) ADDNEW and UPDATE method to create and commit
+new records with the Microsoft Oracle ODBC driver may result in the following
+error:
+
+   Run-time error '40002':
+   S1C00: [Microsoft][ODBC driver for Oracle]Driver not capable.
+
+CAUSE
+=====
+
+Microsoft Oracle ODBC Driver version 2.00.06325 does not support this
+functionality in conjunction with certain CursorDrivers.
+
+RESOLUTION
+==========
+
+Choose a CURSORDRIVER of either rdUseClientBatch or rdUseODBC if Microsoft
+Oracle ODBC Driver version 2.00.06325 is used.
+
+Otherwise, obtain the latest version of Microsoft ODBC driver for Oracle that is
+shipped with Microsoft Data Access Components (MDAC) 1.5c or MDAC 2.0. The
+current version of the Oracle ODBC driver is 2.573.2927 and it supports this
+functionality.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic 5.0 Enterprise Edition.
+
+2. Create a new Standard EXE. Form1 is created by default.
+
+3. Add "Microsoft Remote Data Objects 2.0" to the Project References.
+
+4. Add the following code to the new form's Load method:
+
+         Dim rs As rdoResultset
+         Dim cn As New rdoConnection
+         cn.CursorDriver = rdUseClientBatch
+         cn.Connect = "dsn=<dsn>;uid=<uid>;pwd=<pwd>"
+         cn.EstablishConnection
+         cn.Execute "CREATE TABLE temp1 (id int, name char(20))"
+         cn.Execute "CREATE UNIQUE INDEX temp1_id on temp1 (id)"
+         cn.Execute "GRANT ALL ON temp1 TO PUBLIC"
+         cn.Close
+
+         On Error GoTo Erh
+
+         For i = rdUseIfNeeded To rdUseClientBatch
+            cn.CursorDriver = i
+            cn.EstablishConnection
+            Set rs = cn.OpenResultset("select * from temp1", rdOpenKeyset, _
+            rdConcurRowVer)
+            rs.AddNew
+            rs(0) = i
+            rs(1) = "Also works fine"
+            rs.Update   '<-- Errors occur here
+            cn.Close
+         Next
+            cn.EstablishConnection
+            cn.Execute "DROP TABLE temp1"
+         End
+
+         Erh:
+            sterr = Error & Chr(13) & "With CursorDriver "
+            Select Case cn.CursorDriver
+               Case rdUseServer
+                  sterr = sterr & "rdUseServer"
+               Case rdUseOdbc
+                  sterr = sterr & "rdUseOdbc"
+               Case rdUseNone
+                  sterr = sterr & "rdUseNone"
+               Case rdUseIfNeeded
+                  sterr = sterr & "rdUseIfNeeded"
+               Case rdUseClientBatch
+                  sterr = sterr & "rdUseClientBatch"
+               Case Else
+            End Select
+            MsgBox sterr
+            Resume Next
+         End Sub
+
+5. Run the Project and note that the Update fails with the error mentioned
+   earlier.
+
+Additional query words: kbVBp500 kbOracle kbODBC kbRDO kbdse kbDSupport KbVBp kbDatabase kbDriver
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword kbZNotKeyword2 kbVB500Search kbODBCSearch kbVB500 kbODBCOracle206325 kbODBCOracle100Search
+Version           : :1.0,5.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

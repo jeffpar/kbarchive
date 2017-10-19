@@ -1,0 +1,54 @@
+DOCUMENT:Q95204  19-NOV-1999  [msdos]
+TITLE   :MS-DOS 6.x ANSI.SYS Turns Off Menu Colors
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are loading the ANSI.SYS driver, MS-DOS multiple configuration colors set
+with the menucolor= setting are reset to the default colors.
+
+MORE INFORMATION
+================
+
+The menucolor= setting in the CONFIG.SYS file allows you to define your menu
+colors. When ANSI.SYS is loaded through one of the menu blocks, the screen
+colors are reset. This occurs because ANSI.SYS is a block device for the console
+(CON). ANSI.SYS takes over all output to the console and manipulates the data in
+an ANSI (American National Standards Institute) format.
+
+ANSI.SYS turns off the menu colors because it does not detect the previous state
+of the CON device.
+
+Additional query words: 6.22 6.00 multiconfig multi-config 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

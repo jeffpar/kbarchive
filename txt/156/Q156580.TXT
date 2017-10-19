@@ -1,0 +1,152 @@
+DOCUMENT:Q156580  14-DEC-1999  [foxpro]
+TITLE   :INFO: SetAll('Value') Works for Text Boxes in Grids in VFP
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbnokeyword kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual FoxPro 3.0 or 3.0b, issuing the following sets the value for any text
+box on a form, but not text boxes contained in grids on that form:
+
+      <form>.Setall('value', '', 'textbox')
+
+However, issuing the following sets properties for all text boxes, even those
+contained in grids:
+
+      <form>.Setall(<other property besides value>, ;
+         <property value>, 'textbox')
+
+In Visual FoxPro 5.0 and 6.0, the following works for all text boxes, even those
+contained in grids within <form>:
+
+      <form>.Setall('value', '', 'textbox')
+
+MORE INFORMATION
+================
+
+This change was made because the behavior of SetAll() is not consistent across
+all properties in Visual FoxPro 3.0.
+
+Use the following steps to reproduce this behavior.
+
+1. Run the following code from a program (.prg) file:
+
+      * Start of code example
+      *
+      PUBLIC oform
+      LOCAL lnI
+      CREATE TABLE table_1 (field1 C(10), field2 C(10))
+      FOR lnI=1 TO 3
+         INSERT INTO table_1 VALUES ('xx','yy')
+      ENDFOR
+      GO TOP
+
+      oform=CREATEOBJECT("grid_form")
+      oform.SHOW()
+
+      DEFINE CLASS grid_form AS FORM
+
+         AUTOCENTER = .T.
+
+         ADD OBJECT grid1 AS GRID WITH ;
+            Top = 10, ;
+            Left = 30, ;
+            RecordSource = 'Table_1', ;
+            ColumnCount = 2, ;
+            Name = "Grid1", ;
+            Column1.Sparse=.F., ;
+            Column2.Sparse=.F.
+
+         ADD OBJECT Text1 AS TEXTBOX WITH ;
+            Top = 220, ;
+            Left = 45, ;
+            Height = 23, ;
+            Width = 95, ;
+            Value = "zz", ;
+            Name = "Text1"
+
+         ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+            Top = 218, ;
+            Left = 145, ;
+            Height = 27, ;
+            Width = 95, ;
+            Caption = "Set Values", ;
+            Name = "Command1"
+
+         ADD OBJECT command2 AS COMMANDBUTTON WITH ;
+            Top = 218, ;
+            Left = 245, ;
+            Height = 27, ;
+            Width = 95, ;
+            Caption = "Set FontSize", ;
+            Name = "Command2"
+
+         PROCEDURE DESTROY
+            USE
+         ENDPROC
+
+         PROCEDURE Command1.Click
+            THISFORM.SetAll('Value', '', 'TextBox')
+            * The above works for text boxes in grid columns
+            * under Visual FoxPro 5.0 only
+            THISFORM.Grid1.SetFocus()
+         ENDPROC
+
+         PROCEDURE Command2.Click
+            THISFORM.SetAll('FontSize', 12, 'textbox')
+            * The above works for text boxes in grid columns
+            * under Visual FoxPro 3.x and 5.0.
+            THISFORM.Grid1.SetFocus()
+         ENDPROC
+
+      ENDDEFINE
+      *
+      * End of code example
+
+2. Click on the Set FontSize command button. In both Visual FoxPro 3.0 and 5.0,
+   the FontSize changes for all text boxes, even those within the grid. Because
+   the Sparse property is set to .F., the FontSize appears for all cells within
+   the grid, rather than the selected cell.
+
+3. Click on the Set Value command button. In both Visual FoxPro 3.0 and 5.0, the
+   Value changes for the text box on the form. In Visual FoxPro 5.0 and 6.0, the
+   values also changes for all text boxes within the current record in the grid.
+
+REFERENCES
+==========
+
+Visual FoxPro 5.0 Help
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbnokeyword kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

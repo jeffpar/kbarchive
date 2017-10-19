@@ -1,0 +1,61 @@
+DOCUMENT:Q255146  12-NOV-2001  [automap]
+TITLE   :MapPoint 2001: How to Layer Objects By Using the Draw Menu
+PRODUCT :Microsoft Automap
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2002 
+ - Microsoft MapPoint 2001 
+ - Microsoft Streets & Trips 2002, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use the Draw tool to draw a new draw object on top of an existing draw
+object, you create a stack of draw objects. You can overlap as many draw objects
+as you want to, and then rearrange the stack of layered draw objects by using
+the commands on the Draw menu.
+
+To display the Draw menu, click Draw on the Drawing toolbar at the bottom of the
+screen in Microsoft MapPoint 2001.
+
+The following commands are available on the Draw menu:
+
+1. Click "Bring to Front" or "Send to Back" to move a draw object to the front
+   or send it to the back of a stack of layered draw objects.
+
+2. Click Bring Forward or Send Backward to move a draw object forward or
+   backward by one level within a stack of layered draw objects.
+
+3. Click "Bring in Front of Roads" or Send Behind Roads to move a draw object in
+   front of or behind the roads that are displayed on the map.
+
+Additional query words: mp2001 shapes overlapped stacked
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbExpediaSearch kbMapptSearch kbMapPoint2001 kbExpediaStreets2002 kbMapPoint2002
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

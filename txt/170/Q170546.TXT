@@ -1,0 +1,61 @@
+DOCUMENT:Q170546  08-NOV-2001  [frontpg]
+TITLE   :FP: Blank Line Remains after Deleting Single Line Selection
+PRODUCT :Word Front Page
+PROD/VER::; MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194330.
+
+SYMPTOMS
+========
+
+In FrontPage Editor, when you select a single line and then press DELETE, the
+text is deleted, but a blank line remains. In contrast, if you select two or
+more lines and press DELETE, both the text and the line space are deleted.
+
+CAUSE
+=====
+
+This behavior occurs because a single-line selection does not include the
+formatting character at the end of the line. When you have multiple lines
+selected, the selection contains the formatting character at the end of the
+line.
+
+RESOLUTION
+==========
+
+To remove the blank line, press DELETE again.
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : :; MACINTOSH:1.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

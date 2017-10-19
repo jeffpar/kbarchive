@@ -1,0 +1,71 @@
+DOCUMENT:Q190553  22-APR-2001  [vbwin]
+TITLE   :INFO: Do Not Use VB Color Constants in DHTML Page Designer
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbDHTML kbInternet kbPageDesigner kbVBp kbVBp600 kbWebClasses kbGrpDSASP kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Explorer and Visual Basic use different formats for Color literals.
+Internet Explorer's Object model uses a format of RRGGBB whereas Visual Basic
+uses the format BBGGRR. When attempting to chance colors of Dynamic HTML
+elements in your DHTML Page Designer project, use the RRGGBB format. Do not use
+Visual Basic color constants such as vbRed and vbBlue.
+
+MORE INFORMATION
+================
+
+You will not be able to use Visual Basic's constants vbRed and vbBlue when
+programming for the Internet Explorer's object model. Following are examples of
+problems you will see when writing code in Visual Basic 6.0 DHTML Page Designer
+object using these constants:
+
+   
+
+   field1.style.color=vbRed    'Will cause the text to be Blue
+   field1.style.color=vbBlue   'Will cause the text to be Red
+   field1.style.color=vbGreen  'Will cause the text to be Green
+
+You will not be able to use the RGB function such as Hex(RGB(0, 0, 255)) to
+specify colors for Dynamic HTML elements.
+
+To change the color of the Dynamic HTML elements in your DHTML Page Designer
+project, use the RRGGBB (where R=Red, G=Green, and B=Blue) color constants.
+
+The same applies to creating color constants for use in WebClasses in Visual
+Basic 6.0 IIS Applications. Use the RRGGBB format color constants.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDHTML kbInternet kbPageDesigner kbVBp kbVBp600 kbWebClasses kbGrpDSASP kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

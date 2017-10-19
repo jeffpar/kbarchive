@@ -1,0 +1,69 @@
+DOCUMENT:Q124019  13-JUN-2001  [homemm]
+TITLE   :Basketball and Encarta: GPF in WSSSBPRO.DRV
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994-1995 edition,1995 edition,2.0,2.0a; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete NBA Basketball for Windows 1994-1995 edition 
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+ - Microsoft Windows Sound System, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Sound Blaster Pro card with the Microsoft Windows Sound
+System versions 2.0 or 2.0a, you may be unable to play certain sounds while
+using Basketball or Encarta.
+
+If you are using the Microsoft Windows 3.x operating system, you may get the
+following general protection fault:
+
+   Application Error - <filename> caused a General Protection Fault in
+   module WSSSBPRO.DRV
+
+If you are using Windows 95, the Play button may be unavailable (greyed out)
+beneath affected sound files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Windows Sound System
+versions 2.0 and 2.0a. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+To hear sounds correctly in the above applications, uninstall the Windows Sound
+System drivers, and install the Sound Blaster Pro drivers provided by Creative
+Labs.
+
+Additional query words: 1994 1995 1996 multi media multimedia multi-media mmtitles gpf gen protect err msg error message gray grayed
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbGamesSearch kbEncartaEncycSearch kbWinSoundSysSearch kbWinSoundSys200 kbWinSoundSys200a kbCompleteBasketballSearch kbCompleteNBABasketball kbCompleteNBABasketball1994 kbEncartaEnCyc1996 kbEncartaEnCyc1995Mac
+Version           : :1994-1995 edition,1995 edition,2.0,2.0a; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

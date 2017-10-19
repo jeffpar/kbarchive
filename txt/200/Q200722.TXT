@@ -1,0 +1,60 @@
+DOCUMENT:Q200722  26-SEP-2001  [frontpg]
+TITLE   :FP: Unable to Create CGI-BIN Folder When Publishing Web
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you publish your web to a remote server, you may receive an error message
+that states: "Unable to create cgi-bin folder."
+
+MORE INFORMATION
+================
+
+Many servers have a directory called "cgi-bin" that contains various scripts
+that can be used by all users of that server. This is often a "virtual"
+directory that exists in separate locations on the server. Because it is a
+"virtual" directory, it acts as if it is a part of each user's directory.
+
+To work around this issue, rename the "cgi-bin" folder in your web. To do so,
+follow these steps:
+
+1. In FrontPage Explorer, click Folders on the View menu.
+
+2. Right-click the cgi-bin folder, and then click Rename on the shortcut menu.
+
+3. Rename the folder. For example, rename it scripts.
+
+Additional query words: 97 cgi-bin create folder
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

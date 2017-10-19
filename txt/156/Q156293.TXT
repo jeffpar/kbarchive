@@ -1,0 +1,74 @@
+DOCUMENT:Q156293  04-APR-1999  [exchange]
+TITLE   :XCLN: Macintosh Spelling Checker Could Not Be Started Error
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the spelling checker in the Microsoft Exchange Macintosh client,
+the following error message appears:
+
+   The spelling operation could not be completed. The spelling checker could not
+   be started. Some components are either missing or incorrectly configured in
+   your Win.ini file. See your administrator.
+
+CAUSE
+=====
+
+The Setup program for the Microsoft Exchange Macintosh client does not correctly
+install the English and Custom dictionaries when more than one hard disk is
+present.
+
+RESOLUTION
+==========
+
+Copy both the English and Custom Dictionary files from the Microsoft folder to
+the Microsoft Exchange folder.
+
+MORE INFORMATION
+================
+
+If the Macintosh has more than one hard disk drive and it also has a Microsoft
+application (such as Office) with a spelling checker feature that is not
+installed on the startup drive, the Exchange client installs OK but the problem
+occurs during spelling check operations.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 4.0, of Microsoft
+Exchange. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 4.0
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange400Mac
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

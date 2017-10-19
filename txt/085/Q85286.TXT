@@ -1,0 +1,257 @@
+DOCUMENT:Q85286  27-NOV-1999  [win95x]
+TITLE   :Checklist for Troubleshooting TrueType Font Problems
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+This article describes common causes of display and/or printing problems you may
+encounter when using TrueType fonts with Microsoft Windows version 3.1. The
+article is designed to be a troubleshooting checklist to assist you in
+diagnosing and resolving these problems.
+
+MORE INFORMATION
+================
+
+Earlier Printer Drivers
+-----------------------
+
+Printer drivers written for versions of Microsoft Windows earlier than version
+3.1 were not designed to work with TrueType font technology. If you are using
+one of these earlier printer drivers, TrueType fonts usually will not appear on
+a font list in an application. Check the version number of your printer driver
+(usually by choosing the About button in the printer driver's dialog box). If
+you are using an earlier driver, switch to a different printer driver to see if
+the TrueType font problems are eliminated, or update the earlier printer driver
+to the most recent Windows version 3.1 release of the driver.
+
+NOTE: Some applications do not query the printer driver for the list of available
+fonts (Microsoft Excel for Windows is one such example), which causes the
+application to show the TrueType fonts as available when they are not.
+
+If TrueType fonts display properly in Windows Paintbrush, Windows Character Map,
+and Microsoft Excel but not in Windows Write and Microsoft Word for Windows, you
+may be using the HPPCL.DRV, HPPCL5A.DRV, or DESKJET.DRV driver from an earlier
+version of Windows. These drivers may be identified by file dates prior to
+3/10/92.
+
+To Correct the Problem
+----------------------
+
+1. Delete the driver from the WINDOWS\SYSTEM directory.
+
+2. Install the new driver from the Windows 3.1 disks. Note that DESKJET.DRV is
+   now HPDSKJET.DRV.
+
+3. Make the printer your default printer.
+
+Enabling TrueType Settings
+--------------------------
+
+Make sure that TrueType is turned on (or off) as required by your printer. To do
+this, run Control Panel, and choose the Fonts icon. Choose the TrueType button,
+select the desired options, and choose the OK button.
+
+Printing TrueType As Graphics
+-----------------------------
+
+If you print a document that is formatted for a TrueType font using the HP
+LaserJet Series II printer driver and the printer form feeds after it prints a
+line of text, you may need to select the Print TrueType As Graphics option in
+the Printer Setup dialog box.
+
+The following list describes the download capabilities of each HP LaserJet
+printer model. It also describes how Windows version 3.1 handles the downloading
+of TrueType fonts by default.
+
+ - HP LaserJet, LaserJet Plus, and LaserJet 500 (all PCL III)
+
+   When these models are selected, TrueType fonts are always printed as graphics,
+   and are only available when the printer resolution is set at 300 dots per
+   inch (dpi).
+
+ - HP LaserJet Series II, IIP, IID (all PCL IV)
+
+   TrueType fonts are downloaded. If you want to print more than 16 fonts on a
+   page, select the Print TrueType As Graphics option.
+
+ - HP LaserJet Series III family (all PCL V)
+
+   TrueType fonts are downloaded. If you want to print more than 16 fonts on a
+   page, you must switch to the graphics band.
+
+NOTE: In general, if you choose the Print TrueType As Graphics option, printing
+speed will decrease.
+
+PostScript: TrueType Settings in Driver
+---------------------------------------
+
+If you are using a PostScript printer, there are TrueType options in the printer
+driver that determine whether TrueType fonts are downloaded. In the printer
+driver's Setup dialog box, choose the Options button. Choose the Advanced
+button; the settings in this dialog box determine whether the printer uses
+printer fonts or TrueType fonts and the type of download font (that is, Type 1
+or Type 3). The fastest settings are generally the default settings for this
+driver, as follows:
+
+   Send To Printer As: Adobe Type 1
+   Use Printer Fonts For All TrueType Fonts: not selected
+   Use Substitution Table: selected
+
+                 Substitution Table
+                 ------------------
+
+        Arial                         Helvetica
+        Times New Roman                   Times
+        Courier New                     Courier
+        Symbol                           Symbol
+        Wingdings         Download As Soft Font
+
+LaserJet: Printer Settings in Driver
+------------------------------------
+
+On earlier models of the Hewlett-Packard (HP) LaserJet printers (original, Plus,
+and 500), the printer resolution should be set to 300 dpi. This is because
+TrueType fonts on these printers are not available at lower resolutions.
+
+On later models, there is an option to print TrueType fonts as graphics. This is
+used to override the downloading of PCL fonts. It is useful in cases where the
+limitations of PCL fonts need to be overridden by the graphics device interface
+(GDI) to create special effects. (For example, PCL IV printers cannot print
+white text on a black background. However, printing TrueType fonts as graphics
+enables this.) If the printer resolution is set below 300 dpi, the Print
+TrueType As Graphics check box is grayed.
+
+Canon Printers
+--------------
+
+The Canon laser printer drivers that ship with Windows version 3.1 require that
+the resolution of the driver be set to at least 300 dpi.
+
+Incorrect Printer Model Selected for HP LaserJet Printers
+---------------------------------------------------------
+
+TrueType prints differently to different models of the HP LaserJet family. On
+earlier LaserJet printers (original, Plus, and 500) TrueType ALWAYS prints
+TrueType fonts as graphics because these older printers do not support the
+downloaded PCL fonts TrueType creates. Series II printers have a soft font page
+limit of 16 fonts per page. Later models do not have these limitations.
+Mismatching the model will cause TrueType to attempt to optimize for the wrong
+type of printer, causing either incorrect output (pages only partially filled,
+wrong fonts printing, text overprinting, and so on), or needlessly slow output.
+
+"Bad" Fonts
+-----------
+
+A "bad" or incompatible font can cause a wide variety of problems, including (but
+not limited to) the following:
+
+ - Error messages (for example, "Invalid TrueType Font Detected," "Divide By
+   Zero")
+
+ - Blank text on screen
+
+ - Incorrect line spacing
+
+ - Corrupt output
+
+ - System crashes
+
+NOTE: The "bad" font does not have to be in use to cause problems; it merely
+needs to be installed. To troubleshoot the problem, remove the font. If the
+behavior does not persist, the font is the cause of the problem.
+
+Another cause of the problems listed above is a bad .FOT file, which must be
+rebuilt. You can usually resolve this problem by reinstalling the font using the
+Windows Control Panel or the installation program that came with your soft font
+package.
+
+For more information on installing fonts using the Windows Control Panel, see
+pages 164-168 of the "Microsoft Windows User's Guide" for version 3.1.
+
+Old Video Drivers
+-----------------
+
+Old video drivers cause some of the same problems as those caused by old printer
+drivers. To determine whether your video driver is causing problems with
+TrueType fonts, switch to a standard Windows version 3.1 video driver (for
+example, VGA).
+
+For more information on changing video drivers, see page 82 of the "Microsoft
+Windows User's Guide" for version 3.1.
+
+Missing Font Files
+------------------
+
+The font files for TrueType fonts are referenced in the [fonts] section of the
+Windows WIN.INI file. For example:
+
+   [fonts]
+   Arial (TrueType)=ARIAL.FOT
+   Arial Bold (TrueType)=ARIALBD.FOT
+   Arial Bold Italic (TrueType)=ARIALBI.FOT
+   Arial Italic (TrueType)=ARIALI.FOT
+   Courier New (TrueType)=COUR.FOT
+   (and so on)
+
+The .FOT file is used by Windows to reference the .TTF file, which is the actual
+TrueType font file. If either of these files is missing, Windows will behave
+unpredictably. Typical behavior includes error messages, blank text, screen
+failing to redraw properly, and incorrect font mapping. Always verify that an
+.FOT file and a corresponding .TTF file exist for each entry in the [fonts]
+section of the WIN.INI file.
+
+Incorrect Printer Driver Memory Settings
+----------------------------------------
+
+Windows uses the printer driver memory setting to determine the best way to print
+TrueType fonts. This is a dynamic process; if the memory setting does not match
+the exact amount of memory available on the printer, TrueType may not print
+correctly.
+
+White on Black
+--------------
+
+If you are using white TrueType text on a black background, the type does not
+show up.
+
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," version 3.1, pages 82, 164-168
+
+
+Additional query words: 3.10 tshoot w4wfont ttf w4wprint unavailable dimmed refresh repaint update true type lock hang freeze up stop
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

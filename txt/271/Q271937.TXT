@@ -1,0 +1,59 @@
+DOCUMENT:Q271937  22-OCT-2000  [sms]
+TITLE   :SMS: Systems Management Server 2.0 Support of SQL Server 2000
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2
+OPER/SYS:
+KEYWORDS:kbenv kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes Microsoft SQL Server 2000 support in Microsoft Systems
+Management Server 2.0.
+
+MORE INFORMATION
+================
+
+SQL Server 2000 is fully supported in Systems Management Server 2.0 Service Pack
+2 (SP2) with the following limitations:
+
+ - Only the default SQL Server instance is supported for use as Systems
+   Management Server site databases. Additional instances can be used for other
+   applications that support instancing.
+
+ - Mixed-mode security is required on the SQL server for the software metering
+   database to function properly. NT Only mode causes an error during the
+   configuration of software metering tables.
+
+
+Additional query words: sql2000
+
+======================================================================
+Keywords          : kbenv kbinterop 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

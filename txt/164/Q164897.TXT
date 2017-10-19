@@ -1,0 +1,73 @@
+DOCUMENT:Q164897  30-MAY-2002  [homegame]
+TITLE   :Zone: Description and Policies of the Web site
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kburl igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a brief description of the Zone.com Web Site and
+information regarding its polices.
+
+MORE INFORMATION
+================
+
+Description:
+
+Zone.com is an Internet web site where you can play classic, retail, and premium
+games with other players. The Zone also provides forums where individuals can
+chat and find other people interested in playing a wide variety of computer
+games. The Zone is located at:
+
+   http://zone.msn.com
+
+Terms of Use:
+
+To view the Terms of Use for the Zone, please see the following MSN Web site:
+
+   http://www.msn.com/help/legal/terms.htm
+
+Privacy:
+
+To view the Privacy policy for the Zone, please see the following MSN Web site:
+
+   http://www.msn.com/help/legal/privacy.htm
+
+Code of Conduct:
+
+To view the Code of Conduct for the Zone, please see the following MSN Web site:
+
+   http://zone.msn.com/zzzz/help/zonehelpcodeofconduct.asp
+
+Additional query words: msngz igz new kbfaq msgame
+
+======================================================================
+Keywords          : kburl igz kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

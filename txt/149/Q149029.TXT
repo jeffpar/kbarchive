@@ -1,0 +1,55 @@
+DOCUMENT:Q149029  19-DEC-1999  [exchange]
+TITLE   :XFOR: IMC Re-Maps Return-Receipts-To Header to Delivery Receipt
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbenv exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the Internet Mail Connector (IMC) receives mail containing a "Return
+Receipt To" header, the IMC re-maps this header in MAPI to a "Delivery Receipt"
+header.
+
+MORE INFORMATION
+================
+
+In addition, when the IMC is used to route mail from the Internet to Microsoft
+Mail for PC Networks users, the converted Delivery Receipts will not get to the
+Microsoft Mail for PC Networks users. In summary, the delivery receipts will not
+be sent from Microsoft Exchange over the Microsoft Mail for PC Networks
+Connector Interchange. For additional information, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q140963 XADM: Error When Deleting a Public Folder Container
+
+Additional query words: IMC
+
+======================================================================
+Keywords          : kbenv exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

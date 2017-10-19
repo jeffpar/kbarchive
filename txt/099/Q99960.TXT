@@ -1,0 +1,65 @@
+DOCUMENT:Q99960  30-JUL-2001  [lanman]
+TITLE   :Fault Tolerance Allows FDISKPM to Delete Mirror Partition
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+
+FTSETUP shows other mirrors as being orphaned. FTAdmin shows all drives being
+cracked with critical errors.
+
+CAUSE
+=====
+
+FDISKPM does not label partitions as being mirrors, prevent you from deleting
+mirror partitions, or warn you if you select a mirror partition for deletion.
+
+RESOLUTION
+==========
+
+When you use fault tolerance, document carefully which partitions fault
+tolerance chooses to be mirrors: mirror one partition at a time and make note of
+which physical drive is becoming the mirror. To do this you may have to remove
+the machine's case and watch the disk activity indicator.
+
+Once a mirror is established, use FDISKPM to determine which logical drive now
+has the mirror partition so that you can correlate physical devices and FDISK
+drive numbers. Here is how to determine which drive has a mirror:
+
+1. In FDISKPM select a drive which has a partition but no logical drives
+   assigned.
+
+2. Note the partition size.
+
+3. From the Options menu, select Create Logical Drive.
+
+4. When the "Create Logical" dialog box appears, note the maximum size available
+   to the new drive. If this space is significantly less than the partition size
+   you just recorded, then the difference has been used by the mirror and should
+   be very close, if not identical, to the mirror partition size.
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

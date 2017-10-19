@@ -1,0 +1,54 @@
+DOCUMENT:Q225409  30-APR-1999  [winnt]
+TITLE   :SBS: Microsoft Exchange Licensing in Small Business Server 4.5
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+BackOffice Small Business Server (SBS) version 4.5 includes Microsoft Exchange
+version 5.5 instead of Exchange version 5.0. The licensing in Exchange 5.5 is
+different from Exchange 5.0.
+
+MORE INFORMATION
+================
+
+With Exchange 5.5, each computer must have a Client license to use the Exchange
+server. If a user wants to open his or her mailbox from multiple computers, a
+Client license is required for each workstation that will use the mailbox.
+
+This differs from Exchange 5.0, in which only one Client license is required to
+use the mailbox.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

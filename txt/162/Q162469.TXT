@@ -1,0 +1,69 @@
+DOCUMENT:Q162469  09-AUG-2001  [winnt]
+TITLE   :Windows NT 4.0 SP3 Overwrites HyperTerminal Private Edition
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP3
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 SP3 
+ - Microsoft Windows NT Server version 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Service Pack 3 contains an updated version of the HyperTerminal
+product included with Windows NT. If you installed Hilgraeve's Private Edition,
+you may need to reinstall this application after you install Service Pack 3.
+
+MORE INFORMATION
+================
+
+HyperTerminal Private Edition is an enhanced version of the HyperTerminal
+application provided with Windows NT.
+
+The default installation behavior of HyperTerminal Private Edition is to "Install
+where HyperTerminal is normally located (This will overwrite HyperTerminal.)"
+However, Service Pack 3 overwrites HyperTerminal Private Edition version 3.0
+without warning. HyperTerminal provided with Windows NT 4.0 is identified as
+version 4.0 (version of the operating system). The update supplied with Service
+Pack 3 is considered more recent.
+
+To work around this issue, you must reinstall HyperTerminal Private Edition after
+Service Pack 3 has been applied.
+
+If "Specify a new directory and Start menu location (This will leave
+HyperTerminal intact.)" is selected during the installation of HyperTerminal
+Private Edition, Service Pack 3 does not overwrite HyperTerminal Private Edition
+and reinstallation is not necessary.
+
+The Hyperterminal product discussed here is manufactured by Hilgraeve Inc. a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: prodnt 4.00 SP3
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp3 kbWinNTSsearch kbWinNTS400sp3 kbWinNTS400search
+Version           : :4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

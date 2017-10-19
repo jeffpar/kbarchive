@@ -1,0 +1,63 @@
+DOCUMENT:Q149948  20-FEB-2002  [winnt]
+TITLE   :Changing Properties for Many Users Resets Logon Password Flag
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51,4.0
+OPER/SYS:
+KEYWORDS:kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+It is possible under User Manager to select multiple users and to change their
+common properties (all properties but the user name.) When you change the
+properties for multiple users and one user has the flag "User Must Change
+Password at Next Logon" enabled and another user does not, then changing any
+other property of the users resets this flag for all users.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT versions
+3.51 and 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+For more information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+Q150995How to set User Manager Settings for Multiple Users
+
+Additional query words: 4.00 prodnt
+
+======================================================================
+Keywords          : kbtool kbui 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

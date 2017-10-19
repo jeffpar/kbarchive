@@ -1,0 +1,63 @@
+DOCUMENT:Q156784  30-JUL-2001  [sms]
+TITLE   :SMS: Appstart Corrupts New Process Environment on Windows NT
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPGC smspgc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+A Systems Management Server shared application started with Appstart.exe
+(Appsta32.exe) may have problems where dependencies exist on environment
+variables within the new process. If the current environment variable size is
+greater than 1,146 bytes, the environment variables of the new process can
+become corrupt. This can cause problems for applications that depend on the
+environment variables.
+
+CAUSE
+=====
+
+A problem exists in the 32-bit APPSTART component of SMS which causes the new
+environment passed to a new PGC application process to be corrupted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Systems Management Server version 1.2. For information on obtaining
+the Service Pack, query on the following word in the Microsoft Knowledge Base:
+
+   " SERVPACK" (without the quotation marks)
+
+Additional query words: prodsms appsta32 appstart
+
+======================================================================
+Keywords          : kbnetwork kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,91 @@
+DOCUMENT:Q253638  05-MAR-2000  [exchange]
+TITLE   :XADM: Mailbox Manager Does Not Install, (80004005)
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Microsoft Exchange Server Mailbox Manager, you may receive the
+following error message:
+
+   Unable to Install Mailbox Agent,(80004005)
+
+The following event ID may be logged in the application event log:
+
+   Event ID:2037
+   Source: MSExchangeSA
+   Category: General
+   Type: Error
+   Description: The File Version of "\address\GWISE\i386\gwxpxgen.dll" on the
+   local server is not current. Unable to Locate a correct version on any server
+   in the site.
+
+CAUSE
+=====
+
+The proxy address generator may not properly generate a GroupWise address for
+the mailbox agent.
+
+WORKAROUND
+==========
+
+To work around this problem, use the following steps to install Mailbox
+Manager:
+
+1. Start the Exchange Server Administrator program.
+
+2. Click to expand the Site object, click Configuration, click Site Addressing,
+   and then click Properties.
+
+3. Click the Site Addressing tab.
+
+4. Click to clear the "GroupWise e-mail address" check box, and then click
+   Apply.
+
+5. IMPORTANT STEP: When you are prompted to "Remove this address from all
+   existing recipients," click No.
+
+6. Run Setup for Mailbox Manager.
+
+7. Click to expand the Site object, click Configuration, click Site Addressing,
+   and then click Properties.
+
+8. Click to select the "GroupWise e-mail address" check box, and then click
+   Apply.
+
+9. IMPORTANT STEP: When you are prompted to "Add this address to all existing
+   recipients," click No.
+
+Additional query words: MBClean Mailbox Agent Addins
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,83 @@
+DOCUMENT:Q135236  13-JUN-2001  [sna]
+TITLE   :COM.CFG Does Not Shrink When Configuration Items are Removed
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The file size of the SNA Server configuration file (COM.CFG) does not decrease
+when configuration information is removed from the configuration.
+
+The size of the COM.CFG file depends upon the number of SNA servers in the
+domain, as well as the number of SNA connections, LUs, LU Pools, and SNA Server
+user/groups that are defined in that domain. When the COM.CFG files gets large,
+it takes longer for the SNA Server Admin to open the file when trying to
+administer an SNA Server domain. This is more readily apparent if you are trying
+to administer an SNA Server domain that is on the other side of a slow WAN link
+from the system running SNA Server Admin. For this reason, the COM.CFG file
+should get smaller as information is removed from the configuration.
+
+WORKAROUND
+==========
+
+To shrink the COM.CFG file after removing information from the configuration:
+
+1. Use SNA Server Admin to open the COM.CFG file for the SNA Server domain to be
+   modified.
+
+2. Make any configuration changes that are needed.
+
+3. Save the configuration by selecting Save Configuration from the File menu in
+   SNA Server Admin.
+
+4. Backup the configuration file by selecting Backup from the File menu. For
+   more information on how to backup and restore the COM.CFG file in SNA Server
+   Admin, please see the following article in the Microsoft Knowledge Base:
+
+   Q112636 Backup and Restore of COM.CFG
+
+5. Restore the newly backed up configuration file by selecting Restore from the
+   File menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+and 2.11. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsna 2.00 2.10 2.11 snaadmin administrator
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

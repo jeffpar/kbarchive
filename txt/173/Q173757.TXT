@@ -1,0 +1,52 @@
+DOCUMENT:Q173757  06-FEB-2001  [foxpro]
+TITLE   :FAQ: Do I Have Visual FoxPro 5.0 or 5.0a
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0a
+OPER/SYS:
+KEYWORDS:kbvfp kbDSupportkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Q: Do I have Visual FoxPro 5.0 or 5.0a?
+
+A. From the Visual FoxPro Help menu, select About, and you'll see version 5.0a.
+The VERSION() function returns the following string in Visual FoxPro 5.0a:
+
+      Visual FoxPro 05.00.00.0402 for Windows
+
+MORE INFORMATION
+================
+
+ 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbDSupport kbfaq
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500a
+Version           : :5.0a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

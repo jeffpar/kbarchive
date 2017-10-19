@@ -1,0 +1,68 @@
+DOCUMENT:Q123078  17-DEC-2000  [win95x]
+TITLE   :IDE E-Z Raid-1 Driver Doesn't Load; Uses Real-Mode Drivers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you check the status of your hard disk controller in Device Manager, you
+may see a red circle with a slash mark through it to the left of the controller.
+In addition, the Animated Cursors may be disabled. (To locate Device Manager,
+double-click the System icon in Control Panel and then click the Device Manager
+tab.)
+
+CAUSE
+=====
+
+These problems occur when you have an E-Z Raid-1 controller card installed. The
+E-Z Raid-1 controller card comes with Win32 drivers for Windows 3.1. The Windows
+95 drivers are incompatible with this card, forcing paging to take place through
+real mode.
+
+RESOLUTION
+==========
+
+To correct these problems, run the setup program for the E-Z Raid controller
+card (from the original disk), and install the Windows 3.1 drivers.
+
+MORE INFORMATION
+================
+
+After you install the E-Z Raid drivers and restart Windows 95, you receive an
+error message that reads "Device conflict. Drivers detected that conflict with
+the generic ESDI controller. This device will be disabled." You do not receive
+this error message the next time you start Windows 95. The drivers added by the
+E-Z Raid setup program are TRMINT13.386 and WDCTRL32.386
+
+
+Additional query words: 3rdparty wdctrl int13
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

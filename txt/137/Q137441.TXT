@@ -1,0 +1,62 @@
+DOCUMENT:Q137441  13-DEC-1999  [foxpro]
+TITLE   :Why the UIEnable Event Does Not Exist for All Controls
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The UIEnable event does not occur for the Column, Custom, Form, Header,
+OptionButton, Page, _SCREEN, Timer, and ToolBar objects.
+
+MORE INFORMATION
+================
+
+You can use the UIEnable event to specify user interface actions that should
+occur for an object or control when the Page control that contains it is
+activated or deactivated. There are three reasons a class of object does not
+contain this event:
+
+ - The class of object depends on its container object. This is the case with
+   Column, Header, OptionButton, and Page controls, which are dependent,
+   respectively, on the Grid, Column, OptionGroup, and PageFrame controls. The
+   UIEnable event goes to the container for these objects.
+
+ - The class of object has no user interface. This is the case with the Custom
+   and Timer objects. They have no user interface, so they do not receive
+   UIEnable event notification.
+
+ - The class of object can not be contained within a page. This is the case with
+   Form, _SCREEN, and Toolbar objects.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

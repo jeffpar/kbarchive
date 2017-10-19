@@ -1,0 +1,69 @@
+DOCUMENT:Q153267  09-DEC-2000  [homegame]
+TITLE   :Deadly Tide Trial Version: Minimum Requirements for Windows
+PRODUCT :Microsoft Home Games
+PROD/VER::Trial Version
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.0
+WINDOWS
+kbenv kbusage kbfaq kbfasttip
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Deadly Tide for Windows Trial Version 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the minimum system requirements to successfully run Microsoft
+Deadly Tide for Windows, Trial Version:
+
+ - Personal computer with a Pentium 75 MHz or higher processor.
+
+ - 8 MB RAM memory (16 MB RAM recommended).
+
+ - 25 MB of available hard disk space.
+
+ - 4X CD-ROM drive or faster.
+
+ - PCI SVGA video with 1 MB of memory.
+
+ - 256-color display.
+
+ - Microsoft Windows 95 operating system.
+
+ - Mouse or other pointing device.
+
+ - Joystick or other flight control device recommended.
+
+ - Sound card.
+
+ - Speakers or headphones.
+
+Additional query words: 1.00 setup set up
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDeadlyTide
+Version           : :Trial Version
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

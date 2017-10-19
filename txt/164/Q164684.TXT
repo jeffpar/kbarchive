@@ -1,0 +1,149 @@
+DOCUMENT:Q164684  07-MAY-2001  [ssafe]
+TITLE   :PRB: VFP/VSS File Could Not Be Mapped to SourceSafe Project
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe500 kbVBp400 kbVBp500 kbVC400 kbVC410 kbVC420 kbVC500 kbvfp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual C++, versions 4.0, 4.0a, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a project or a file to Visual SourceSafe from one of the
+applications that Visual SourceSafe integrates with, the following error message
+appears:
+
+   File <filename> could not be mapped to the SourceSafe project
+   <projectname>
+
+CAUSE
+=====
+
+The Visual SourceSafe project structure does not match the directory structure
+on the drive that contains the application project.
+
+RESOLUTION
+==========
+
+Create a Visual SourceSafe project structure that mirrors your application
+project structure.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual SourceSafe
+version 6.0 for Windows.
+
+MORE INFORMATION
+================
+
+To distinguish between the Visual SourceSafe project (for example,
+$/develop/newproj) and the "project" concept in an integrated application (that
+is, .pjx in Visual FoxPro, .mdp in Visual C++, .vbp in Visual Basic), the
+"project concept" is referred to as the "application project" in this article.
+The directory that contains the application project file (that is, .pjx, .mdp,
+.vbp, and so forth) is the "home" directory.
+
+When you add an application project to Visual SourceSafe, you are prompted to
+specify the Visual SourceSafe project where you want to store your files. This
+is referred to as the "parent" project. The working folder of the parent project
+is set to the home directory. When you add a file from the application project
+to Visual SourceSafe, the integration looks at the relative path of that file to
+the home directory and attempts to add it to a Visual SourceSafe project that
+has the same relative path to the parent project.
+
+To illustrate this, assume that you have the following directory structure:
+
+   C:
+      \Develop
+          \Greatapp
+               Greatproj.vbp (file)
+               \Forms
+                  Greatform.frm
+
+           \Badapp
+                Module3.bas  (file)
+
+The application project Greatproj contains the files Greatform.frm and
+Module3.bas. You add Greatproj to Visual SourceSafe, in a project named
+$/Apps/Greatapp.
+
+In this example, the home directory is C:\Develop\Greatapp and the parent project
+is $/Apps/Greatapp.
+
+Consider how the Visual SourceSafe integration attempts to store the three
+files.
+
+Greatproj.vbp is stored in $/Apps/Greatapp.
+
+Greatform.frm is stored in $/Apps/Greatapp/Forms.
+
+NOTE: If the /Forms subproject does not exist, it should be created
+programmatically by the integration when you first add Greatproj.vbp to Visual
+SourceSafe. However, if project security is enabled, you will receive the "File
+or Project not Found" error due to a bug in the integration. Either disable
+project security prior to adding the application project under Visual
+SourceSafe, or create the subproject manually and add the missing files.
+
+
+Module3.bas - The integration looks for a sibling project to $/Apps/Greatapp
+named $/Apps/Badapp. The relative path from Greatproj.vbp to Module3.bas in the
+directory structure is "up one level then down one level into badapp." The
+integration attempts to map this relative path accordingly. If $/Apps/Badapps
+does not exist, the error message appears. This is correct behavior because the
+integration only creates subprojects of the parent project.
+
+Take into account that subprojects of the parent are only created by the
+integration when the application project is first added to Visual SourceSafe.
+For example, after adding Greatproj to Visual SourceSafe you create a new
+subdirectory (C:\develop\greatapp\modules), save Module4.bas in that
+subdirectory, and add Module4.bas to the application project. When you attempt
+to add Module4.bas to Visual SourceSafe, the error message appears because the
+integration is looking for the following subproject:
+
+      $/Apps/Greatapp/Modules.
+
+Again the relative path from Greatproj.vbp to Module4.bas is "down one level into
+modules", and fails if there is no matching subproject.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe500 kbVBp400 kbVBp500 kbVC400 kbVC410 kbVC420 kbVC500 kbvfp500 
+Technology        : kbVCsearch kbVC400 kbVFPsearch kbVBSearch kbSSafeSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVB500 kbVB400Search kbVB400 kbZNotKeyword3 kbVC410 kbVB16bitSearch kbVC420 kbVC500 kbVC32bitSearch kbVC400a kbVFP500 kbVFP500a kbSSafe500 kbVC500Search
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,162 @@
+DOCUMENT:Q162256  24-MAR-2000  [foxpro]
+TITLE   :FIX: TextBox Value in Grid Column Using Numeric ControlSource
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 3.00b
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfp kbvfp300bBUGkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enter numeric data of a number greater than 10 into a text box within a
+grid on a FoxPro form, it is correctly entered into the table. However, if the
+Grid1.Column1.Text1 value is referenced, it appears as zero. This behavior only
+occurs in version 3.0b.
+
+RESOLUTION
+==========
+
+Set each Grid TextBox InputMask property as follows:
+
+     Grid1.TextBox1.InputMask = 9999.99
+     Grid1.TextBox2.InputMask = 9999.99
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in FoxPro 5.0 for
+Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Copy the following code to a test program and run it to create a Test.dbf
+   that contains two sample records:
+
+         ***** Table setup for TEST *****
+         CREATE TABLE 'test.dbf' ;
+            (DISCOUNT N(10, 2) NOT NULL, ;
+            AMOUNT N(10, 2) NOT NULL, ;
+            OTHER N(10, 2) NOT NULL)
+
+         ***** Add two records for testing *****
+         INSERT INTO test (DISCOUNT, AMOUNT, OTHER) ;
+            VALUES (7.00, 4.00, 0.00)
+         INSERT INTO test (DISCOUNT, AMOUNT, OTHER) ;
+            VALUES (9.00, 15.00, 10.00)
+
+2. Create a new form, and add the Test table to the data environment.
+
+3. Drag the Test table from the data environment to the form to create a grid.
+
+4. Set the following grid properties:
+
+         Grid1.ColumnCount = 2
+         Column1.ControlSource = test.discount
+         Header1.Caption = "Discount" (without the quotes)
+         Column2.ControlSource = test.amount
+         Column2.Header1.Caption = "Amount" (without the quotes)
+
+5. On the Form Controls toolbar, click Label and place three Label controls on
+   the form to the right of the grid.
+
+6. Set the following Caption properties on the three Labels (without the
+   quotes):
+
+         Label1.Caption = "Value"
+         Label2.Caption = "IsZero?"
+         Label3.Caption = "Field"
+
+7. On the Form Controls toolbar, click TextBox and place three TextBoxes on the
+   form, one to the right of each label.
+
+8. Set the following Name properties on the three TextBoxes:
+
+         Text1.Name = txtNewValue
+         Text2.Name = txtZero
+         Text3.Name = txtNewField
+
+9. Enter the following code in the LostFocus event of the (Discount column)
+   Grid1.Column1.Header1.Text1:
+
+         THISFORM.txtNewvalue.Value = THIS.Value
+         IF THIS.Value = 0
+            THISFORM.txtZero.Value = "Yes"
+         ELSE
+            THISFORM.txtZero.Value = "No"
+         ENDIF
+         THISFORM.txtNewField.Value = test.discount
+
+10. Enter the following code in the LostFocus event of the (Amount column)
+   Grid1.Column2.Header1.Text1:
+
+          THISFORM.txtNewvalue.Value = THIS.Value
+          IF THIS.Value = 0
+             THISFORM.txtZero.Value = "Yes"
+          ELSE
+             THISFORM.txtZero.Value = "No"
+          ENDIF
+          THISFORM.txtNewField.Value = test.amount
+
+11. Run the form.
+
+12. Enter a new number in the first record of the form's Discount column and
+   notice that if the number entered is less than 10 that the number is
+   displayed correctly in the TextBox beside "Value" and the answer displayed
+   in the TextBox beside "IsZero?" is correct.
+
+13. Repeat step 12 for the first record of the Amount column.
+
+14. Enter a new number that is greater than 10 in the first record of the
+   Discount column. Notice that the number displayed in the "Value" TextBox is
+   "0" and the answer displayed in the "IsZero?" TextBox is incorrect.
+
+15. Repeat step 14 for the first record of the Amount column.
+
+REFERENCES
+==========
+
+If you are not familiar with creating forms, or using the grid control, please
+see:
+
+Visual FoxPro Developer's Guide, chapters 9 and 11
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Perry Newton, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp300bBUG kbbuglist kbfixlist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b
+Version           : 3.00 3.00b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,82 @@
+DOCUMENT:Q139212  13-JUN-2001  [sna]
+TITLE   :Memory Leak in TN3270 Server if RU Sizes Exceed TN3270 Defaults
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the TN3270 server runs for many days or weeks, server performance becomes
+sluggish and Windows NT eventually runs out of virtual memory. Also, Windows NT
+performance monitor shows paged pool bytes to be steadily increasing for the
+TN3SERVR process.
+
+CAUSE
+=====
+
+The TN3270 server initially allocates inbound and outbound buffers when a TN3270
+client connects to the server, using the inbound and outbound "Default RU sizes"
+configured in the TN3270 Admin Options dialog.
+
+However, if the TN3270 client's BIND request negotiates to larger RU sizes than
+these defaults, the TN3270 server allocates new inbound and outbound buffers
+though never frees the previously acquired buffers.
+
+
+RESOLUTION
+==========
+
+To workaround this problem, increase the Inbound and/or Outbound default RU
+sizes within the TN3270 Server Admin Options dialog to accommodate the largest
+RU sizes that will be requested by the TN3270 client users.
+
+To correct this problem, install the update to the SNA Server 2.11 TN3270 service
+mentioned below. Microsoft has updated the file <ntroot>\TN3SERVR.EXE to
+correct this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 3.50 3.51
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

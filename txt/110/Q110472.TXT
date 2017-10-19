@@ -1,0 +1,72 @@
+DOCUMENT:Q110472  29-DEC-1999  [odbc]
+TITLE   :INF: How to Differentiate Multiple SQLAllocEnv() Calls
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In version 1.0 of Open Database Connectivity (ODBC), every time an application
+calls SQLConnect(), the Driver Manager calls the Driver's SQLAllocEnv(),
+SQLAllocConnect(), and SQLConnect() functions in succession. This means that an
+ODBC driver can be called to allocate multiple environments for the same
+application.
+
+Since a driver must allocate only one environment per application, it must be
+able to distinguish between the first call to SQLAllocEnv from an application
+and subsequent calls to SQLAllocEnv()
+
+MORE INFORMATION
+================
+
+Since only one environment should be allocated for an ODBC application by the
+driver, even though multiple calls to SQLAllocEnv are made from the Driver
+Manager, a driver can use the Windows function GetCurrentTask() to determine
+whether an environment has already been allocated for the calling application
+(task).
+
+Typically, a driver can build a list of tasks that currently have the
+environments allocated, and on every call to SQLAllocEnv(), the driver can use
+this list to determine if the current task has an allocated environment. If the
+task is found in this list, the driver can return the previously allocated
+environment associated with that task, without having to allocate a new
+environment.
+
+Drivers written to the ODBC version 2.0 specification need not use the above
+mechanism because the 2.0 Driver Manager does not call SQLAllocEnv() in the
+Driver on every SQLConnect(). Thus, an ODBC 2.0 driver is assured that its
+SQLAllocEnv() will be called only once on the first SQLConnect() from the
+application. Subsequent SQLConnect() calls in the application to that driver
+will not result in SQLAllocEnv() calls into the driver.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

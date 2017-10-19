@@ -1,0 +1,53 @@
+DOCUMENT:Q293112  02-MAY-2001  [msnetwork]
+TITLE   :MSN Accounts Created After 12/15/2000 No Longer Able To Use Thir
+PRODUCT :The Microsoft Network
+PROD/VER::5.0,5.1,5.2,5.3,6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 5.0, 5.1, 5.2, 5.3, 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may connect to the Internet through MSN Internet Access dial-up service and
+want to access another e-mail account (for example, an account from work) while
+you are connected.
+
+Previously, you could set up additional e-mail accounts in Outlook or Outlook
+Express. However, if you created your MSN account after 12/15/2000, you will not
+be able to send e-mail from an additional account while connected to MSN. You
+can only send email from your MSN e-mail account while connected to MSN.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610 kbMSN520 kbMSN530 kbMSN510 kbMSN500
+Version           : :5.0,5.1,5.2,5.3,6.0,6.1
+Issue type        : kbhowto kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

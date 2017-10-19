@@ -1,0 +1,61 @@
+DOCUMENT:Q77931  06-NOV-1999  [win16sdk]
+TITLE   :Sample Help File Demonstrates Win 3.1 Help Macros
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows 3.1, there are a number of macros available that can be used by the
+writer of help systems to enhance an application's help files. MACROHLP was
+written to demonstrate each of the macros that can be used by the person writing
+help files. The RTF source files are also included in MACROHLP as examples for
+the person authoring help files to follow.
+
+MACROHLP is one of the Advanced Samples provided with the Windows Software
+Development Kit (SDK), version 3.1.
+
+The following file is available for download from the Microsoft Software
+Library:
+
+   Macrohlp.exe
+   (http://support.microsoft.com/download/support/mslfiles/Macrohlp.exe)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+
+Additional query words: softlib MACROHLP.EXE
+
+======================================================================
+Keywords          : kbfile 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

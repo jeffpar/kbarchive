@@ -1,0 +1,56 @@
+DOCUMENT:Q307780  23-OCT-2001  [ssafe]
+TITLE   :INFO: Administrator Changes Not Reflected Until App Restarted
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSExplorer kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you change settings that affect the Visual SourceSafe Explorer in the
+Administrator tool, those changes are not reflected until you quit and restart
+the Visual SourceSafe Explorer application. For example, a shadow folder is not
+updated in response to check-ins unless the Visual SourceSafe Explorer is closed
+and reopened after you create the shadow folder.
+
+MORE INFORMATION
+================
+
+The Visual SourceSafe Explorer only "reads" the configuration file (SRCSAFE.ini)
+when the application is started. If you make changes in the Administrator tool
+or to the configuration file itself, the Visual SourceSafe Explorer will not be
+aware of these changes until it is restarted and reads the new configuration
+file. Some of the functions and settings affected include: shadow folder
+settings, allow multiple checkouts, keyword expansion, journaling, Web project
+settings, Web settings, and file types.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSExplorer kbDSupport kbGrpDSSSafe 
+Version           : :5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

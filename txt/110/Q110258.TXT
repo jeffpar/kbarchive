@@ -1,0 +1,58 @@
+DOCUMENT:Q110258  07-MAY-2002  [homegame]
+TITLE   :Changing Dynamic Scenery Options Has No Effect
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Changing dynamic scenery options from the Scenery menu may not affect the active
+scenery area.
+
+MORE INFORMATION
+================
+
+Not all scenery areas in Flight Simulator 5.0 have dynamic scenery elements.
+Changing dynamic scenery preferences will not affect those areas that do not
+include dynamic scenery. By default, Flight Simulator 5.0 ships with dynamic
+scenery elements for the following areas:
+
+   USA Chicago, Meigs Field
+   USA Chicago, O'Hare International
+   USA San Francisco, San Francisco International
+   USA San Francisco, Oakland International
+
+Additional query words: 5.00 5.00a flightsim fltsim dos fs5
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

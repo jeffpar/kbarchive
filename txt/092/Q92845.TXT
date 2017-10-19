@@ -1,0 +1,50 @@
+DOCUMENT:Q92845  11-AUG-1999  [homemm]
+TITLE   :SoundBits: How to Reset the Sound Scheme to Windows Default
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SoundBits, Hanna-Barbera 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Selecting the Windows Default scheme from the Sound dialog box in Control Panel
+does not correctly reset the sound scheme. To reset the sound scheme to Windows
+Default, you first have to select the <None> scheme and then go back and
+select the Windows Default scheme.
+
+MORE INFORMATION
+================
+
+SoundBits adds a new Sound .CPL file (SND.CPL) that allows you to create sound
+schemes similar to the way you can create color schemes by using the Colors
+dialog box in the Control Panel window.
+
+Additional query words: Hanna-Barbera classic hollywood movies mgm Sound Bits musical instruments world
+
+======================================================================
+Keywords          :  
+Technology        : kbSoundBitsSearch
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

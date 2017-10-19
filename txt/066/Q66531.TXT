@@ -1,0 +1,76 @@
+DOCUMENT:Q66531  21-NOV-1999  [msdos]
+TITLE   :Copying from CON to a Subdirectory Doesn't Result in Error
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a directory called C:\TEMP and you try to create a file called TEMP
+using the COPY CON command as follows
+
+   C:\>copy con temp
+   hello
+   ^Z
+
+instead of creating a file called TEMP, MS-DOS echoes "hello" and "1 file copied"
+on the screen as follows:
+
+   C:\>copy con temp
+   hello
+   ^Z
+   hello
+          1 file(s) copied
+
+No error message is displayed.
+
+CAUSE
+=====
+
+This is expected MS-DOS behavior. When C:\TEMP is a directory, the command
+
+   C:\>copy con temp
+
+is the same as
+
+   C:\>copy con C:\temp\*.*
+
+-or-
+
+   C:\>copy con C:\temp\con
+
+CON is short for console and consists of the keyboard (input) and the display
+(output). It always exists, even in subdirectories. Therefore, this command
+copies input from CON (keyboard) to CON (display).
+
+Additional query words: 6.22 3.20 3.30 3.30a 4.00 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch
+Version           : MS-DOS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

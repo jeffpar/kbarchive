@@ -1,0 +1,109 @@
+DOCUMENT:Q113006  31-DEC-1999  [foxpro]
+TITLE   :BUG: "Code Page Not Found" Caused by SET CPCOMPILE to 0
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,5.0,5.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500aBUG kbvfp500bug kbvfp260bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+ - Microsoft FoxPro for UNIX, version 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a SET CPCOMPILE TO 0 command is issued, the following error message
+occurs:
+
+   Code page not found
+
+In Visual FoxPro 5.0, the following error message appears:
+
+   Code Page number is invalid
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Add the following line to CONFIG.FP or CONFIG.FPW: CODEPAGE=AUTO
+
+2. In the Command window, type "SET CPCOMPILE TO 0" (without the quotation
+   marks). The following error message occurs. Code page not found
+
+3. In the Command window, type "COMPILE <Program> AS 0" (without the
+   quotation marks).
+
+Note that this works. An error message should be returned.
+
+The SET CPCOMPILE command is new to FoxPro 2.6. This command specifies the code
+page for compiled programs.
+
+Use SET CPCOMPILE to compile programs for a specific code page. The code page you
+specify with SET CPCOMPILE is used for programs compiled automatically by
+FoxPro, programs compiled using the Compile dialog box, and programs compiled
+with the COMPILE command. To override the code page you specified with SET
+CPCOMPILE, you can include the AS clause in the COMPILE command. For more
+information about COMPILE AS, see the FoxPro online Help.
+
+The valid code pages that can be used with the SET CPCOMPILE TO command are
+listed below:
+
+   Options     Language(s)                  Code pages
+   -----------------------------------------------------------------------
+
+   CZECH     Czech                          852, 895, 1250, 10029
+   DUTCH     Dutch                          437, 850, 1252, 10000
+   GENERAL   English, French, German,
+
+   Modern Spanish, Portuguese and other Western European languages 437, 620,
+   850, 852, 857, 861, 865, 895, 1250, 1252, 1254, 10000, 10029
+
+   GREEK     Greek                          737, 1253, 10006
+   HUNGARY   Hungarian                      852, 1250
+   ICELAND   Icelandic                      437, 850, 861, 1252,
+   NORDAN    Norwegian, Danish              437, 850, 865, 1252, 10000
+   POLISH    Polish                         620, 852, 1250, 10029
+   RUSSIAN   Russian                        866, 1251, 10007
+   SLOVAK    Slovak                         852, 895, 1250, 10029
+   SPANISH   *Traditional Spanish           437, 850, 1252, 10000
+   SWEFIN    Swedish, Finnish               437, 850, 865, 1252, 10000
+   TURKISH   Turkish                        857, 1254
+   UNIQWT    Unique Weight                  437, 850, 1252, 10000
+
+Additional query words: codepage kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbvfp kbvfp500aBUG kbvfp500bug kbvfp260bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260UNIX kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+Version           : MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

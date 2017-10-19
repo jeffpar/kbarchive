@@ -1,0 +1,67 @@
+DOCUMENT:Q76833  04-JAN-2000  [homemm]
+TITLE   :Changing the Focus from the Search Window in Bookshelf
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition,1992 edition,1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows versions 1991 edition, 1992 edition, 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Once the Search Results window has the focus in any book of Bookshelf for
+Windows, there are no keyboard interface to switch the focus back to the parent
+book window. This feature is under review and will be considered for inclusion
+in a future release.
+
+
+Alternate techniques for switching the focus, which overcome this limitation, are
+as follows:
+
+1. Press ALT+SPACEBAR to access the system menu of the search window and close
+   it.
+
+   -or-
+
+2. Press ALT+SPACEBAR to access the system menu of the search window and
+   minimize it. This is not recommended, however, because once the search window
+   has been minimized, it relinquishes the focus to the parent book window, but
+   there is no way for the search window to regain the focus by using the
+   keyboard.
+
+MORE INFORMATION
+================
+
+The History window has a similar problem. The focus can be switched from this
+window to the parent book window with the ALT+TAB key combination, but doing so
+will force the history window to become invisible as it will be positioned
+behind the parent book window.
+
+Additional query words: Usage Viewer 1.0 1991 1992 1993
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991 kbBookShelf1992 kbBookShelf1993
+Version           : :1991 edition,1992 edition,1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

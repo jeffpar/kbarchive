@@ -1,0 +1,52 @@
+DOCUMENT:Q159262  23-OCT-1999  [homekids]
+TITLE   :Nick 3DMM: Compatability Between 3DMM and Nick 3DMM
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Nickelodeon 3D Movie Maker files are incompatible with Microsoft 3D Movie Maker
+files. Files are not intended to be shared due to licensing restrictions of the
+Nickelodeon characters.
+
+MORE INFORMATION
+================
+
+Nickelodeon 3D Movie Maker is intended to be a companion product to 3D Movie
+Maker and not an upgrade. The user interface is virtually identical, and the
+Nickelodeon characters reflect the only significant change in the product.
+
+
+Additional query words: nickmm kids mczee kbmm director animated movies melanie 3-d three dimensional 3d 3dmm
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbKidsSearch
+Version           : 1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

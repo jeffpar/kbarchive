@@ -1,0 +1,77 @@
+DOCUMENT:Q274670  07-MAY-2002  [homegame]
+TITLE   :CFS2: Cannot Configure the Amount of Fuel and Ammunition
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you move the "Initial fuel level" or the "Initial ammo level" slider in the
+Player Aircraft dialog box, you may not change the actual amount of fuel or
+ammunition that is loaded on your aircraft when you fly the mission.
+
+CAUSE
+=====
+
+This behavior can occur if the Unlimited Fuel or Unlimited Ammo check boxes are
+selected in the game settings.
+
+RESOLUTION
+==========
+
+To resolve this issue, turn off the Unlimited Fuel and Unlimited Ammo features
+in the game:
+
+1. Start Combat Flight Simulator 2.
+
+2. Click Settings.
+
+3. Click Realism Settings.
+
+4. Click to clear the Unlimited Fuel and the Unlimited Ammo check boxes.
+
+5. Click OK, and then OK again.
+
+MORE INFORMATION
+================
+
+In addition, you cannot adjust the "Initial fuel level" or the "Initial ammo
+level" slider when you play one of the following game types:
+
+ - Free Flight
+ - Quick Combat
+ - Single Missions
+ - Multiplayer
+
+Additional query words: msgame combatfs cfs2
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

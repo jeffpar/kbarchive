@@ -1,0 +1,81 @@
+DOCUMENT:Q124486  08-NOV-1999  [pcmail]
+TITLE   :PC Win: Month Displays as "MM" in Received Date
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 3.2 of Microsoft Mail for Windows, the received date field may
+display the month as "MM." For example, the date may display as
+
+   MM/14/94
+
+instead of:
+
+   12/14/94
+
+RESOLUTION
+==========
+
+Check the following settings:
+
+1. Run Windows Control Panel and choose the Date/Time icon. Make sure the date
+   and time are correct.
+
+2. Run Windows Control Panel and choose International. Make sure the settings
+   are correct for your situation. For example:
+
+   Country: United States
+   Language: English (American)
+   Keyboard Layout: US
+   Measurement: English
+   List Separator: ,
+
+   Check the International Date and Time formats, as well as the Long Date
+   Format, making sure the order is correct (in this example, MDY).
+
+3. In the WIN.INI file, check the international ([intl]) section. It should have
+   the following two entries.
+
+   [intl]
+   sShortDate=M/d/yy
+   sLongDate=dddd, MMMM dd, yyyy
+
+The settings should match the ones above. If they have extra characters or if
+they contain the wrong separator character, the problem described above may
+occur. If you are unsure about the format of the lines in the [intl] section,
+try comparing yours to the [intl] section of another installation that is not
+experiencing the problem.
+
+Additional query words: 3.20 3.20a date format receive
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

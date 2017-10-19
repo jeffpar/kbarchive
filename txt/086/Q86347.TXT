@@ -1,0 +1,76 @@
+DOCUMENT:Q86347  01-NOV-1999  [win95x]
+TITLE   :Thomas Conrad Network Cards May Need BUFFER.COM
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use an earlier Thomas Conrad token ring network card with Microsoft
+Windows version 3.1, you may receive the following error message when you start
+Windows 3.1 in 386 enhanced mode:
+
+   Error loading [display].DRV
+
+where [display] is the video driver being used by Windows.
+
+The system may also stop or return to an MS-DOS command prompt without an error
+message.
+
+NOTE: Windows runs correctly in standard mode.
+
+WORKAROUND
+==========
+
+Loading the BUFFER.COM program provided by Thomas Conrad may correct this
+problem. Some earlier Thomas Conrad token ring cards require that the BUFFER.COM
+file be loaded in the AUTOEXEC.BAT file before running Windows 3.1 in 386
+enhanced mode. This file is necessary to allow the network driver to co-exist
+with the HIMEM.SYS memory manager. The BUFFER.COM file can be found on Disk #1
+of the Thomas Conrad Network Drivers disks in the NW_WKSTN directory.
+
+Another alternative is to download the TOKIPX.EXE file from the Thomas Conrad
+bulletin board service (BBS). This is a self-extracting file containing the
+necessary updates to allow the Network card to work successfully with HIMEM.SYS.
+After you update these files, you won't need BUFFER.COM.
+
+MORE INFORMATION
+================
+
+For further information, contact Thomas Conrad technical support.
+
+The Thomas Conrad products included here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.10 3.11 3rdparty VGA EGA older hang err msg crash TC-4035
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

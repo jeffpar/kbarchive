@@ -1,0 +1,116 @@
+DOCUMENT:Q90210  22-SEP-1999  [win3x]
+TITLE   :Contents of CONNECT.DAT, <USERNAME>.PWL, and SHARES.PWL Files
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10 3.11
+
+WINDOWS
+
+kbsetup kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The first time you run Windows for Workgroups after running the Setup program,
+the application creates three binary files in your Windows directory:
+
+ - CONNECT.DAT
+
+ - USERNAME.PWL (where USERNAME is your logon name)
+
+ - SHARES.PWL
+
+This article describes the purpose of these files.
+
+MORE INFORMATION
+================
+
+CONNECT.DAT
+-----------
+
+CONNECT.DAT lists the connections that Windows for Workgroups automatically makes
+for you when you log on. When you make a new connection and select the Reconnect
+At Startup option, Windows for Workgroups adds that connection to CONNECT.DAT.
+When you disconnect from a share, Windows for Workgroups deletes that connection
+from CONNECT.DAT. The NET USE command, which you type at an MS-DOS command
+prompt, also manipulates CONNECT.DAT.
+
+CONNECT.DAT uses a simple encryption scheme to prevent users from editing the
+file with a text editor. If you edit the file with a text editor, you receive
+the following error messages when Windows for Workgroups attempts to restore
+network connections:
+
+   An error occurred while trying to reconnect (local identifier) to (shared
+   resource) SYSXXXX.
+
+If you delete CONNECT.DAT, your automatic connections will not be restored the
+next time you log on. You must manually reconnect to each share.
+
+USERNAME.PWL
+------------
+
+USERNAME.PWL (where USERNAME is your logon name) is a password list file (PWL).
+It records passwords to resources on the network and uses them to reconnect to
+those resources so you don't have to type the password again. Whenever Windows
+for Workgroups prompts you for a password (except for your logon password, which
+secures the PWL file itself), the resource name and password are saved in your
+PWL file for future use. Windows for Workgroups stores passwords for shares on
+share-level security servers (including Windows for Workgroups machines);
+passwords for user-level security LAN Manager servers; and LAN Manager domain
+passwords (used if your logon is validated on a LAN Manager domain).
+
+Because these passwords are sensitive information, the file is securely
+encrypted. If you delete this file, you must type the password for each
+password-protected resource next time you connect to it.
+
+SHARES.PWL
+----------
+
+SHARES.PWL is similar to other PWL files in internal file format. It contains
+information about all shares for which you select the Reshare At Startup option.
+SHARES.PWL contains the share names, the names of the shared directories, share
+comments, and share passwords. This file is securely encrypted, using the same
+top-level encryption method used to secure other PWL files.
+
+If you delete SHARES.PWL, you must manually re-establish all your shares or
+restore SHARES.PWL from a backup copy of the file. Windows for Workgroups does
+no default sharing, so if you don't explicitly share a resource, nobody can
+access it on your machine). This means that no security breaches occur if you
+delete SHARES.PWL.
+
+There is no limit to the number of shares you create, but SHARES.PWL is limited
+to a file size of 64K bytes. If you reach this limit, you cannot share any more
+printers or directories.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

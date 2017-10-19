@@ -1,0 +1,70 @@
+DOCUMENT:Q138836  18-DEC-2000  [win95x]
+TITLE   :Flying Fonts Screen Saver Leaves Afterimages on Screen
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Flying Font screen saver included with the Microsoft TrueType Font Pack
+version 2.0 may leave "ghost" afterimages of the font on the screen.
+
+CAUSE
+=====
+
+Microsoft Plus! includes a feature called Font Smoothing that causes the
+TrueType fonts included with the TrueType Font Pack 2.0 to leave afterimages
+when you use the Flying Fonts screen saver.
+
+RESOLUTION
+==========
+
+To work around this problem, disable the Font Smoothing feature in Microsoft
+Plus!. To do so, follow these steps:
+
+1. In Control Panel, double-click the Display icon.
+
+2. On the Plus! tab, click the Smooth Edges Of Screen Fonts check box to clear
+   it.
+
+3. Click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! for Windows 95.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: echo
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

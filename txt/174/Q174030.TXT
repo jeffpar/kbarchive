@@ -1,0 +1,63 @@
+DOCUMENT:Q174030  16-DEC-1999  [exchange]
+TITLE   :XWEB: Outlook Web Access Client Fails if JavaScript Disabled
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+When you attempt to open a Microsoft Exchange Mailbox using Outlook Web Access
+(OWA), the mailbox may appear frozen or hung without displaying any error
+messages. The mailbox itself is viewable, but no functions can be performed.
+
+CAUSE
+=====
+
+JavaScript may be disabled in your Internet browser. This will allow the mailbox
+to be opened, but because the functions are dependent upon JavaScript, nothing
+can be done. The Microsoft Exchange Server knows nothing about the client
+configuration so there are no error messages displayed to warn the user that no
+functionality is available.
+
+RESOLUTION
+==========
+
+Enable JavaScript in the browser and reopen the mailbox or refresh the browser.
+This will allow the changes to take effect and the client will function
+properly.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

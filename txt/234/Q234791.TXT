@@ -1,0 +1,84 @@
+DOCUMENT:Q234791  14-JUL-1999  [iis]
+TITLE   :Using Index Server to Achieve Hit Highlighting in Site Server Se
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Site Server version 3.0 
+ - Microsoft Site Server version 3.0, Commerce Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Site Server Search does not provide hit-highlighting capabilities. If you desire
+this functionality and you meet at least the following requirements, you can use
+Index Server to implement this functionality:
+
+    - You are performing a file crawl on local documents.
+
+ - You have IIS installed and running on the document server.
+
+ - You are already familiar with coding Search Server ASP and Index Server HTW
+   pages.
+
+MORE INFORMATION
+================
+
+To enable hit-highlighting, do the following:
+
+1. Create a new Web site on the document server that points to the document
+   data.
+
+2. Create an HTW file as a template for your hit highlighting and place this
+   file in a directory on your document server. Grant this file Script
+   permissions.
+
+3. Modify your search results page to reference the HTW file on the document
+   server, passing in at least the following parameters: CiWebHitsFile,
+   CiRestriction, CiHiliteType, CiBeginHilite, CiEndHilite.
+
+At this point, clients can perform a search using the Search Server search and
+results pages. When they click on a result, they can forward to the
+hit-highlighted version of the document as constructed by the HTW page.
+
+NOTES:
+
+ - No catalogs need to be generated in Index Server. You are only using the
+   hit-highlighting functionality.
+
+ - No additional security problems should arise because the Web sites introduced
+   do not have default pages or directory browsing. Additionally, they will be
+   protected by using NTCR. No additional configuration is needed for this
+   beyond the initial creation of the Web site.
+
+ - The document server may reside on the Search server itself.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSiteServSearch kbAudDeveloper kbSiteServ300 kbSiteServ300Search
+Version           : winnt:3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

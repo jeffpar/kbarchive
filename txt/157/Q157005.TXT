@@ -1,0 +1,70 @@
+DOCUMENT:Q157005  15-JAN-2000  [exchange]
+TITLE   :XCLN: Invalid Page Fault in Mapi32.dll
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0; :4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange for Windows 95, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Simple MAPI function MAPISendMail(), its data structure
+contains a Cc: recipient, the MAPI_DIALOG flag is set, and the simple SendNote
+UI is turned ON, the client or application calling this function might generate
+an invalid page fault or general protection fault in module Mapi32.dll.
+
+CAUSE
+=====
+
+A parameter that is passed into the function that displays the Send Note UI is
+incorrectly set to NULL and this causes the fault in Mapi32.dll
+
+
+WORKAROUND
+==========
+
+Do not set the MAPISendMail() MAPI_DIALOG flag, do not turn on the simple
+SendNote UI flag, or do not include a Cc: recipient.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange clients,
+version 4.0, listed at the beginning of this article. This problem was corrected
+in Microsoft Exchange Server 4.0 U.S. Service Pack 4. For information on
+obtaining the service pack, query on the following word in the Microsoft
+Knowledge Base:
+
+   " SERVPACK" (without the quotation marks)
+
+Additional query words: Access95 Access 7.00
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbZNotKeyword8 kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0; :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

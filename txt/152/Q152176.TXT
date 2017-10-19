@@ -1,0 +1,88 @@
+DOCUMENT:Q152176  19-FEB-2002  [homekids]
+TITLE   :Explorapedia: Audio Codecs Used to Play Compressed Audio
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+ - Microsoft Explorapedia series: World of People for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Explorapedia: The World of Nature and Explorapedia: The World of People use
+Audio Compression-Decompression routines (Codecs) to decompress the sound files
+stored on the compact disc. Each program uses certain decompression routines to
+play compressed sound files.
+
+Explorapedia uses the following decompression Codecs to play certain kinds of
+sound:
+
+   Microsoft ADPCM
+   Microsoft PCM Converter
+
+MORE INFORMATION
+================
+
+The Explorapedia series programs use the following Codecs to play the sounds in
+the contexts indicated.
+
+Microsoft ADPCM:
+----------------
+
+ - Kids talking in the topics screens
+
+ - Songs in Explorapedia: The World of People
+
+Microsoft PCM Converter:
+------------------------
+
+ - Tad's voice
+
+ - Sound for some of the animations
+
+ - Menu items in Explorapedia: The World of People (in Windows 3.x),
+   Explorapedia: The World of Nature (in Windows 3.x), and Explorapedia: The
+   World of Nature 1.2 (in Windows 95)
+
+
+To conserve space on the compact disc, many of the sound files may be compressed,
+so that they take up less disk space.
+
+For more information or troubleshooting tips, please see the following article(s)
+in the Microsoft Knowledge Base:
+
+   Q125957 Explorapedia: Cannot Hear Tad's Narration
+
+   Q130648 Explorapedia People: .WAV Files for Testing Included on CD
+
+   Q121132 MSACM 2.0: Compressed Audio Will Not Play
+
+Additional query words: mskids kids tad series explore kbmm world people nature multimedia multi-media multi compress de-compress co-dec kbtshoot
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbZNotKeyword2 kbExplorapediaNature100 kbExplorapediaPeople100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

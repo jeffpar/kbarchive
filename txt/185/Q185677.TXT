@@ -1,0 +1,85 @@
+DOCUMENT:Q185677  28-JUN-2001  [visualc]
+TITLE   :FIX: ATL Service with Space in Name Is Not Registered Correctly
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:2.0,2.1
+OPER/SYS:
+KEYWORDS:kbwizard kbActiveX kbATL200bug kbATL210bug kbCOMt kbRegistry kbVC420bug kbVC500bug kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL), versions 2.0, 2.1, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create an ATL service exposing a COM object, with a space in the name,
+such as "A Service," you may see multiple instances of the executable. If you do
+not have the HKCR\CLSID\{CLSID}\LocalServer32 key for the COM object, then you
+may get an HRESULT of 0x80040154 (class not registered).
+
+CAUSE
+=====
+
+This is a bug in the ATL wizard-generated code when you create an ATL NT-
+service project with an embedded space in the service name. For example, if you
+create "A Service," the wizard generated code installs "AService" as the service
+name with the Service Controller Manager database, but registers "A Service"
+under HKCR\AppID\{APPID}\LocalService.
+
+When a client tries to create the COM object exposed by the service, COM attempts
+to start "A Service," fails and starts .exe under the LocalServer32 entry
+instead. As a result, you see multiple instances (one was a service that you
+started manually from the Services application; the other a regular win32
+process started by COM from the LocalServer32 entry). When the LocalServer32 key
+is not present, you get an HRESULT of 0x80040154.
+
+RESOLUTION
+==========
+
+In the resource editor, modify the string resource "IDS_SERVICENAME" to put the
+spaces back into the service name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Chuck Bell,
+Microsoft Corporation
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Chuck Bell, Microsoft Corporation
+
+
+Additional query words: kbatliss kbatlservice
+
+======================================================================
+Keywords          : kbwizard kbActiveX kbATL200bug kbATL210bug kbCOMt kbRegistry kbVC420bug kbVC500bug kbVC600fix kbATL300fix kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : WINDOWS:2.0,2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

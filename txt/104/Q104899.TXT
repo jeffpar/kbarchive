@@ -1,0 +1,92 @@
+DOCUMENT:Q104899  24-MAR-2000  [fortran]
+TITLE   :FIX: String Comparison Stops at Char(0) (NUL)
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The string comparison operators stop the comparison operation at the occurrence
+of the first NUL character. The rest of the string after the first NUL character
+is not compared.
+
+RESOLUTION
+==========
+
+Use the string termination character only at the end of the string.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation for MS-DOS,
+version 1.0. This problem has been resolved with FORTRAN PowerStation
+maintenance release version 1.0a for MS-DOS.
+
+FORTRAN PowerStation version 1.0 can be differentiated from the maintenance
+release version 1.0a by invoking the linker. Typing "link32 | more" (without the
+quotation marks) from \F32\BIN directory will show version 2.8 for FORTRAN
+PowerStation version 1.0, and it will show version 1.0f for the maintenance
+release version 1.0a.
+
+MORE INFORMATION
+================
+
+The string comparison operation works correctly in Microsoft FORTRAN version
+5.1. Compiling and executing the following code with PowerStation will
+demonstrate the problem.
+
+Sample Code
+-----------
+
+   C No compiler options required
+          character*10 a,b
+
+          a = "1234567890"
+          b = "123456789A"
+
+          a(5:5) = char(0)
+          b(5:5) = char(0)
+
+          print *, "Should be: F T T T F F"
+          print "(' Result:   ',L2,\)", ( a .eq. b )
+          print '(L2,\)', ( a .ne. b )
+          print '(L2,\)', ( a .lt. b )
+          print '(L2,\)', ( b .gt. a )
+          print '(L2,\)', ( b .le. a )
+          print '(L2)', ( a .ge. b )
+
+          end
+
+Additional query words: 1.00 5.10 buglist1.00 fixlist1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

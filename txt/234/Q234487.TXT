@@ -1,0 +1,91 @@
+DOCUMENT:Q234487  22-JUN-2001  [exchange]
+TITLE   :XCLN: Send To Mail Recipient Opens an Outlook Plain Text Message
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:2000
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you right-click a file, click Send To, and then click Mail Recipient, an
+Outlook plain text message opens.
+
+CAUSE
+=====
+
+This issue can occur because when you right-click a file, click Send To, and
+then click Mail Recipient, you are using the simple Messaging Application
+Programming Interface (MAPI) function MAPISendMail(), which does not use the
+Outlook default message format.
+
+WORKAROUND
+==========
+
+To work around this issue, change the Sendto function to use the Outlook default
+message format, for example, Rich Text Format (RTF) or Hypertext Markup Language
+(HTML). (To set the Outlook default message format, click Options on the Tools
+menu, click Mail Format, and in the Send in this message format list, click the
+format that you want to use.)
+
+To change the Sendto function to use the Outlook default message format, you need
+to create a shortcut in the Send To folder that calls an Outlook formatted
+message window:
+
+1. In Microsoft Windows Explorer, double-click to open the Windows\SendTo
+   folder.
+
+2. Right-click the background of the Contents pane (the large pane on the
+   right), point to New on the shortcut menu, and then click Shortcut.
+
+3. Type the path to the Outlook.exe file, or click Browse and to browse to the
+   Outlook.exe file.
+
+4. Type a space followed by "/c ipm.note" (without the quotation marks)
+   following the last character on the command line, for example:
+
+   "C:\Program Files\Microsoft Office\Office\Outlook.exe" /c ipm.note
+
+   Note that the "/c" switch is outside the command line quotation marks.
+
+5. Click Next.
+
+6. Type "Mail Recipient Using Outlook" (without the quotation marks) in the
+   "Select a name for the shortcut" box, and then click Finish.
+
+To test to see if the Sendto function uses the Outlook default message format,
+right-click a file on the Windows desktop, point to Send To on the shortcut
+menu, and then click Mail Recipient Using Outlook. An Outlook e-mail form should
+open that contains only the file as an attachment.
+
+Additional query words: Send To Mail Recipient OL2000
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbZNotKeyword3
+Version           : WINDOWS:2000
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

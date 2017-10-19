@@ -1,0 +1,75 @@
+DOCUMENT:Q245068  08-AUG-2001  [winnt]
+TITLE   :Err Msg: Access Is Denied. You Don't Have Permissions Or...
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to delete a file, you may receive the following error message:
+
+   Access is denied. You don't have permissions or the file is in use.
+
+CAUSE
+=====
+
+This behavior can occur if the file you are deleting is in use or damaged, or if
+you do not have permission to change the file.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Make sure you have the necessary NTFS file system permissions:
+
+   a. In Windows NT Explorer, right-click the file, and then click Properties.
+
+   b. On the Security tab, click Permissions.
+
+   c. In the Type Of Access box, click Change.
+
+2. If your permissions are correct but you still cannot gain access to the file,
+   use Systems Internals' Handle utility to troubleshoot the issue with this
+   file. The Handles utility lists information about open handles and files. To
+   obtain this utility, download it from the following Systems Internals Web
+   site:
+
+   http://www.sysinternals.com/nthandle.htm
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: handles ntfs permissions
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

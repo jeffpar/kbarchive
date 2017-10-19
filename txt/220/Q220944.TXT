@@ -1,0 +1,87 @@
+DOCUMENT:Q220944  06-AUG-2002  [sms]
+TITLE   :SMS: Error Message When Using Healthmon on a Secondary Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbMMC kbSecurity kbServer kbsms200 kbsms200bug kbNetMon kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the Healthmon tool that is installed on a Microsoft
+Systems Management Server 2.0-based secondary site, the following error message
+may be displayed:
+
+   Unable to detect (Please refer to the release notes): SMS_SQL_Monitor
+
+Although the release notes state that the SMS_SQL_Monitor service must be
+installed, this does not apply to secondary sites. Secondary sites do not own
+their own database, so the SMS_SQL_Monitor service is not installed.
+
+CAUSE
+=====
+
+This behavior occurs because the Healthmon tool does not distinguish between
+Systems Management Server 2.0 primary and secondary sites.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+You can find the console or agent for the Healthmon tool in the following folder
+on the Systems Management Server 2.0 CD-ROM:
+
+   <drive>\Healthmon\<platform>\00000409
+
+where <drive> is the drive letter and <platform> is the platform type
+of your computer.
+
+Computers that have been upgraded to Windows Management Instrumentation (WMI) 1.5
+or Microsoft Windows 2000-based computers do not have the WMI 1.1 tool
+(Wbemperm.exe).
+
+NOTE: Windows NT 4.0 users which have WMI 1.5 installed, also need to install the
+Microsoft Security Configuration Editor (SCE), included on the Windows NT 4.0
+Service Pack 4 (SP4) (and later) CD-ROM. On Windows NT-based computers, the tool
+is Wbemcntl.exe. The Microsoft SCE is required to edit the Access Control Lists
+(ACLs) on the Windows Installer (WI) namespaces.
+
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbMMC kbSecurity kbServer kbsms200 kbsms200bug kbNetMon kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

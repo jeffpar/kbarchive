@@ -1,0 +1,77 @@
+DOCUMENT:Q159788  10-APR-1999  [exchange]
+TITLE   :XADM: SP3 Update Fails on Admin Only Server
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error when attempting to run the Microsoft Exchange
+Server Service Pack 3 (SP3) Update program:
+
+   This version of Exchange setup is older than the one you previously used. Use
+   a newer version of the Server Setup Program.
+
+This occurs with a computer that is running only the Microsoft Exchange Server
+Administrator program.
+
+CAUSE
+=====
+
+The NewestBuild registry value has a higher setting than expected.
+
+RESOLUTION
+==========
+
+To resolve this problem, modify the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Under the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+
+      SOFTWARE/Microsoft/Exchange/Setup
+
+3. Change the NewestBuild value. This should be a REG_DWORD. Enter the data
+   "3e1" in hexadecimal.
+
+   The full entry in the registry should look like this:
+
+     NewestBuild : REG_DWORD : 0x3e1
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

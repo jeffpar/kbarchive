@@ -1,0 +1,80 @@
+DOCUMENT:Q150644  01-MAY-2001  [ssafe]
+TITLE   :INFO: Quotes Required in Command Line for Names with Spaces
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,4.0a,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using SourceSafe Command Line commands, such as SS CD or SS CP, to set the
+current project, you need to use quotation marks (" ") around a project name
+that contains a space. The quotation marks must surround the entire project path
+name or switch.
+
+MORE INFORMATION
+================
+
+Failure to enclose the project name in quotation marks results in the following
+error message:
+
+   You may only specify one project for this command
+
+Follow this example for any SourceSafe command line command that contains a
+space.
+
+Step-by-Step Example
+--------------------
+
+From the Command prompt or MS-DOS session:
+
+1. Change to the Root ($/) project:
+
+   SS CP $/
+
+   NOTE: SourceSafe returns: Current Project is $/.
+
+2. Create a project named First Project from the Root:
+
+   SS CREATE "First Project"
+
+   (Note the quotation marks around the project name.)
+
+   NOTE: This command without the quotes, that is SS CREATE First Project, will
+   create two projects, one named First and the other Projects.
+
+3. Change to the new project:
+
+   SS CP "$/First Project"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

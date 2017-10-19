@@ -1,0 +1,82 @@
+DOCUMENT:Q140927  27-JUL-2001  [sms]
+TITLE   :L2GETNET Causes Access Violation Error on Windows 95 Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+L2GETNET causes an access violation or sharing violation error on Windows 95
+clients.
+
+CAUSE
+=====
+
+L2GETNET.EXE determines the IP address of a Windows 95 client by calling
+WINIPCFG.EXE in batch mode and redirects the output to a temporary file
+(IPCONFIG.SMS). This file is then scanned for IP parameters like IP Address,
+Subnet Mask and Default Gateway. On some computers, especially slower ones, an
+access violation might occur, as it is possible that WINIPCFG.EXE hasn't
+finished storing data in IPCONFIG.SMS. So while WINIPCFG.EXE is in progress of
+writing it's data, L2GETNET.EXE attempts to read the file which results in the
+error.
+
+RESOLUTION
+==========
+
+Microsoft has modified the files, L2GETNET.EXE, WINIP95.EXE, and GETTCPIP.EXE,
+to correct this problem. INVDOS.EXE and START.EXE are also included with the
+fix. To apply the fix:
+
+1. Copy L2GETNET.EXE, INVDOS.EXE and GETTCPIP.EXE to the
+   <sms>\SITE.SRV\MAINCFG.BOX\CLIENT.SRC\X86.BIN directory. From there it
+   is distributed to all logon servers.
+
+2. Copy START.EXE and WINIP95.EXE to the client's \ms\sms\bin directory.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. A supported fix is now available, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Product Support Services for more information.
+
+This problem has been corrected in Systems Management Server version 1.2.
+
+
+Additional query words: prodsms sms TCP/IP
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

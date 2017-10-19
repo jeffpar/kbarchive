@@ -1,0 +1,76 @@
+DOCUMENT:Q198576  07-MAY-2002  [homegame]
+TITLE   :Combat FS: Polygons Are Visible When You Fly Through Fog
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Combat Flight Simulator, you may see the edges or
+outlines of polygons when you fly through fog.
+
+CAUSE
+=====
+
+This behavior can occur if a display adapter based on the PowerVR PCX2 chipset
+is installed in your computer.
+
+NOTE: For technical information about the PowerVR PCX2 chipset, please visit the
+following PowerVR Web site:
+
+   http://www.powervr.com
+
+RESOLUTION
+==========
+
+To work around this issue, disable hardware rendering in Combat Flight
+Simulator. To do this, follow these steps:
+
+1. On the Combat Flight Simulator startup screen, click Settings.
+
+2. Click to clear the Enable Hardware Acceleration check box, and then click OK.
+
+MORE INFORMATION
+================
+
+This behavior has been reported with the following display adapter:
+
+ - Grafixstar Apocalypse 5D
+
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame combatfs cfs shapes geometric video card
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

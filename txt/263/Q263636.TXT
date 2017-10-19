@@ -1,0 +1,80 @@
+DOCUMENT:Q263636  06-AUG-2002  [winnt]
+TITLE   :Unable to Promote BDC to PDC Event ID 5516 and 3096
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your computer system's backup domain controller cannot be promoted to a primary
+domain controller through the server manager and the domain is unavailable to
+manage. Your computer system's event log contains the following error messages:
+
+   Event ID 3096 The Windows NT domain controller for this domain could not be
+   located.
+
+   Event ID 5516 The computer or domain <computername> trusts domain
+   <domainname>. This may be an indirect trust. However,
+   <computername> and <domainname> have the same security
+   identifier. NT should be reinstalled on <domainname> or
+   <computername>.
+
+CAUSE
+=====
+
+A trust relationship is configured from the backup domain controller to the
+domain to which the backup domain controller is a member.
+
+RESOLUTION
+==========
+
+To resolve this behavior, you must delete the trust relationship between the
+backup domain controller and the domain by performing the following steps:
+
+1. Start User Manager for Domains.
+
+2. Click Policies, and then click Trust Relationships.
+
+3. Remove Trust Relationships for the domain.
+
+4. Start Server Manager.
+
+   The domain should be available.
+
+5. Select the backup domain controller to be promoted.
+
+6. Click Computer, and then click "Promote to Primary Domain Controller".
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,59 @@
+DOCUMENT:Q96133  22-NOV-1999  [msdos]
+TITLE   :DoubleSpace Err Msg: 'Your Computer Might Be Running...'
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to install DoubleSpace while running a version of SMARTDrive from a
+version of MS-DOS earlier than 6.0, the following dialog box appears:
+
+   Your computer might be running software that is incompatible with
+   DoubleSpace.
+
+   CAUTION: If you run DoubleSpace now, you could lose some or all of the files
+   on your computer.
+
+   Do not continue DoubleSpace until you have read the README.TXT file.
+
+WORKAROUND
+==========
+
+To install DoubleSpace and avoid this error message, make sure you are loading
+MS-DOS 6.0 SMARTDrive. The SMARTDrive command line in AUTOEXEC.BAT should look
+similar to the following:
+
+      c:\dos\smartdrv.exe
+
+Additional query words: 6.00 dblspace
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

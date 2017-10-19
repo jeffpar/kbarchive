@@ -1,0 +1,59 @@
+DOCUMENT:Q256236  30-JUL-2001  [mspress]
+TITLE   :SYSDIFF.INF: Not Included With Resource Kit
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When using the SYSDIFF.EXE utility you may receive the following error message:
+
+   Unable to load sysdiff.inf C:\Program Files\Resource Kit\sysdiff.inf.
+
+   This file is required in SNAP and DIFF modes. Consult the Windows 2000 OEM
+   Preinstall Kit documentation for more information.
+
+CAUSE
+=====
+
+The SYSDIFF.EXE utility requires the SYSDIFF.INF file to utilize the /SNAP or
+/DIFF modes. SYSDIFF.INF was not included on the Windows 2000 Resource Kit.
+
+RESOLUTION
+==========
+
+The SYSDIFF.INF file is included in SYSDIFF.ZIP, which is available for download
+at the following ftp site:
+
+ftp://ftp.microsoft.com/reskit/win2000/
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: RESKIT RESOURCE KIT RKBOOK WIN2000 TOOLS
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

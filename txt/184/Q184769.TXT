@@ -1,0 +1,53 @@
+DOCUMENT:Q184769  23-APR-1999  [homegame]
+TITLE   :Outwars: Disconnected from Multiplayer Game if Game Is Minimized
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outwars, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If another program minimizes Outwars while you are playing with other players,
+you must switch back to the game within two minutes. If you do not switch back
+to the game within two minutes, you are disconnected from the game. This is a
+standard function of DirectPlay.
+
+MORE INFORMATION
+================
+
+In most Outwars screens, you cannot switch from an Outwars multiplayer game to
+another program by pressing ALT+TAB. In the Outwars chat window, you can press
+ALT+TAB to switch to another program, but doing so may cause the game to stop
+responding (hang).
+
+Additional query words: 1.00 msgame outwar out wars multi player dropped
+
+======================================================================
+Keywords          : kbimu msgame kbfaq
+Technology        : kbGamesSearch kbOutwarsSearch kbOutwars kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

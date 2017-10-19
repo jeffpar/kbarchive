@@ -1,0 +1,81 @@
+DOCUMENT:Q170466  14-NOV-2000  [word97]
+TITLE   :WD97: Inline Picture Becomes Red X in Word 6.0/95 Format
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbgraphic kbinterop kbui word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you open a Microsoft Word for the Macintosh document (versions 6.0 or 6.0.1)
+in Word 97, and then save the document in Word 6.0/95 format, any inline
+pictures in the document become a large red X containing the following message:
+
+   Use Word 6.0c or later to view Macintosh picture.
+
+NOTE: This error message occurs when you reopen the document in Word 97.
+
+RESOLUTION
+==========
+
+To correct this problem, install Microsoft Word 97 Service Release 1 (SR- 1).
+The picture may not always appear, but it will print correctly.
+
+To work around this problem, use any of the following methods:
+
+ - After opening the document in Word 97, first save the document in Word 97
+   format, and then save the document in Word 6.0/95 format.
+
+   -or-
+
+ - Change the inline picture to a framed picture in Word for the Macintosh,
+   before opening the document in Word 97.
+
+   -or-
+
+ - After opening the document in Word 97, save the document in Rich Text Format
+   (RTF). Both Word 97 for Windows and Word 6.0 for the Macintosh can read this
+   file format.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+This problem was corrected in Microsoft Word 97 SR-1.
+
+For additional information about SR-1, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q172475 OFF97: How to Obtain and Install MS Office 97 SR-1
+
+Additional query words: sr1 release1 8.0 8.00 mac
+
+======================================================================
+Keywords          : kbgraphic kbinterop kbui word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

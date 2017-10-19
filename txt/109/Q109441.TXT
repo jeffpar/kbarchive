@@ -1,0 +1,49 @@
+DOCUMENT:Q109441  15-DEC-2000  [winnt]
+TITLE   :Windows NT Resource Kit Includes Incorrect Definition of LSN
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.1 
+-------------------------------------------------------------------------------
+
+Page 633 of the Windows NT Resource Guide (volume 1 of the Microsoft
+Windows NT Resource Kit) states:
+
+   "When two computers establish a session via NBF, there is an exchange of
+   Least Significant Numbers (LSN)."
+
+This is incorrect.
+
+LSN stands for Local Session Number. This is a one byte number (0-255),
+which is part of Network Control Block structure. It indicates the session
+number the user[redirector] has with another name on the network, and is a
+key variable in the 254-session limit of the NetBIOS architecture.
+
+Additional query words: prodnt NCB doc err documentation error
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,75 @@
+DOCUMENT:Q226869  22-OCT-2000  [sms]
+TITLE   :SMS: Cannot License Programs That Specify ANY for Language/Time
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a program is licensed and ANY is specified in either the time zone or
+language categories, the record becomes mutually exclusive. This means that any
+other instance of the same product cannot be tracked for another time zone or
+language.
+
+WORKAROUND
+==========
+
+To work around this issue, explicitly enter each combination of time zone and
+language.
+
+For example:
+
++-------------------------------------------+
+| Program  | Version | Language | Time Zone | 
++-------------------------------------------+
+| Calc.exe | 4.00    | English  | Eastern   | 
++-------------------------------------------+
+| Calc.exe | 4.00    | German   | Pacific   | 
++-------------------------------------------+
+| Calc.exe | 4.00    | German   | Eastern   | 
++-------------------------------------------+
+|          |         |          |           | 
++-------------------------------------------+
+|          |         |          |           | 
++-------------------------------------------+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

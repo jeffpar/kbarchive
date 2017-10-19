@@ -1,0 +1,56 @@
+DOCUMENT:Q135768  30-JUL-2001  [sms]
+TITLE   :SMS: ResultSharePoint Entry Incorrectly Documented
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbPCM smsdocerr smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+The "System Management Server Administrator's Guide" incorrectly states the
+following in Appendix C in the "Detecting Status for Run Command On Workstation
+Jobs" section, paragraph one:
+
+   The Package Command Manager places the file in the DESPOOLER.BOX directory
+   specified by the 'ResultsSharePoint' entry in the Logon server's SMS.INI
+   file.
+
+There is no SMS.INI file on the logon server. The file name should be DOMAIN.INI.
+The entry should be ResultSharePoint not ResultsSharePoint. Inventory Agent or
+Client Setup copies the ResultSharePoint from the Systems Management Server
+section in DOMAIN.INI file to the ResultSharePoint in the "Package Command
+Manager" section in the SMS.INI file. PCM reads the local SMS.INI file to
+determine where to write the .SNI file.
+
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbdocerr kbPCM smsdocerr smspcm 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

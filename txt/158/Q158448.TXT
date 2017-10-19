@@ -1,0 +1,68 @@
+DOCUMENT:Q158448  10-APR-1999  [exchange]
+TITLE   :XGEN: Exchange SP3 May Install on Servers Without SP2
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange Server version 4.0 Service Pack 3 (SP3) may not correctly
+detect whether or not the server it is being applied to has already had Service
+Pack 2 (SP2) applied to it. The SP3 Update.exe proceeds with the installation,
+without issuing a warning message that SP2 has not been correctly applied.
+
+CAUSE
+=====
+
+If SP2 is removed from a Microsoft Exchange Server computer by clicking Remove
+All from within the Microsoft Exchange Server Setup program, not all registry
+keys associated with this installation are removed. Specifically, the key that
+stores the currently installed server and SP version information remains. If a
+fresh copy of Microsoft Exchange Server is then installed on this Windows NT
+Server, the SP3 Update.exe will not detect that this server has not had SP2
+correctly applied to it, and the SP3 Update.exe proceeds without warning.
+
+WORKAROUND
+==========
+
+If the server you are upgrading had an SP2 installation removed, make sure you
+re-apply SP2 before applying SP3.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

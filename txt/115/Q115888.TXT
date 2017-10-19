@@ -1,0 +1,66 @@
+DOCUMENT:Q115888  04-AUG-2000  [foxpro]
+TITLE   :How to Force a Hung Macintosh Application to Quit
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To force FoxPro for Macintosh to quit, press the key combination
+COMMAND+OPTION+ESC.
+
+CAUTION: Unsaved changes will be lost.
+
+MORE INFORMATION
+================
+
+This is not the recommended way to quit from an application, and should only be
+used when FoxPro or a FoxPro program or application has hung (stopped
+responding).
+
+Pressing COMMAND+OPTION+ESC causes the following Macintosh dialog box to
+display:
+
+   Force "Microsoft FoxPro" to quit?
+   Unsaved changes will be lost.
+
+The choices in the dialog box are "Force Quit" and "Cancel."
+
+NOTE: This technique can be used with any Macintosh application.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxMac FoxMac froze freeze hangs kill abort execution halted terminate stop cancel interrupt lock up frozen hang akz
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

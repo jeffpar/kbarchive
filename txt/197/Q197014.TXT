@@ -1,0 +1,93 @@
+DOCUMENT:Q197014  14-NOV-2000  [word97]
+TITLE   :WD97: Unable to Edit Earlier Versions of WordArt Objects
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg kbdta kbconversion
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to edit a WordArt object, you may receive the following error
+message:
+
+   Word cannot edit the Microsoft WordArt 2.0.
+
+
+   -or-
+
+   Word cannot edit the object.
+
+CAUSE
+=====
+
+The WordArt object was created in an earlier version of WordArt.
+
+
+WORKAROUND
+==========
+
+To work around this behavior, use one of the following methods.
+
+Method 1
+--------
+
+Remove and re-create the WordArt object. To do so, follow these steps:
+
+1. Delete the existing WordArt object.
+
+2. On the Drawing toolbar, click the Insert WordArt button, select a new object,
+   and then click OK.
+
+Method 2
+--------
+
+Install the earlier version of WordArt. To do so, follow these steps:
+
+1. Start the Setup program for one of the following programs:
+
+    - Microsoft Works for Windows version 3.0
+    - Microsoft Word for Windows versions 6.0, 6.0a, 6.0c
+    - Microsoft Publisher version 2.0
+    - Microsoft PowerPoint version 4.0
+    - Microsoft Office versions 4.0, 4.2, 4.3
+
+2. Click Custom Installation.
+
+3. Click to clear the check marks from all check boxes except the WordArt check
+   box.
+
+4. Complete the installation. You should now be able to edit the WordArt object.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbdta kbconversion 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

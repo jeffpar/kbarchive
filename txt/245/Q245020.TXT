@@ -1,0 +1,95 @@
+DOCUMENT:Q245020  03-AUG-2000  [foxpro]
+TITLE   :BUG: Bus Error When Copying and Pasting In Browse Window
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbvfp300b kbXBase KbDBFDBC kbGrpDSFox
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro for Macintosh quits with a type 2 error, or the Macintosh computer
+stops responding, reporting a bus error in some cases, when copying and pasting
+in a Browse window. An error of type 11 may also appear.
+
+CAUSE
+=====
+
+This is known to happen when the field that is the copy source and copy
+destination is defined as eight characters wide. Microsoft has tested this on
+Macintosh operating systems 7.5.3, OS 8.1, OS 8.5, OS 8.5.1 and OS 9. We presume
+the problem happens on other Macintosh operating systems as well.
+
+RESOLUTION
+==========
+
+If it is possible, do not use character fields with a width of eight to copy and
+paste into.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code to create a new table, add two records and browse it:
+
+   CREATE TABLE test (test1 c(8), test2 c(10))
+   INSERT INTO test (test1,test2) VALUES ("Hello","Goodbye")
+   APPEND BLANK
+   BROWSE
+
+2. The test1 field is a character field that is eight characters wide. Copy the
+   data in it with either CMD+C or with the Copy command on the Edit menu.
+
+3. Move to the second record in the test1 field by using the down arrow key.
+
+4. Paste the data into the second record with either CMD+V or the Paste command
+   on the Edit menu.
+
+5. If the Macintosh computer does not stop responding or if Visual FoxPro does
+   not quit with an error of type 2, continue copying and pasting in the test1
+   field.
+
+Cutting and pasting also causes the computer to quit. Copy or cut and then
+pasting in a character field wider or narrower than eight characters has not
+been reported to be a problem.
+
+Additional query words: lock lockup freeze hang kbDSE
+
+======================================================================
+Keywords          : kbvfp300b kbXBase KbDBFDBC kbGrpDSFox 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

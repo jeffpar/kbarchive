@@ -1,0 +1,74 @@
+DOCUMENT:Q123095  17-DEC-2000  [win3x]
+TITLE   :Windows Err Msg: Invalid VxD... Device # 0484, Service 800D...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message may occur when you start Windows for Workgroups
+version 3.11:
+
+   Invalid VxD dynamic link call to device # 0484, service 800D. Your Windows
+   configuration is invalid. Run the Windows Setup program again to correct this
+   problem.
+
+After receiving this message, you cannot enter Windows.
+
+CAUSE
+=====
+
+This error message is caused by either a corrupted IFSMGR.386 file, or a missing
+device line in the [386Enh] section of the SYSTEM.INI file.
+
+RESOLUTION
+==========
+
+To correct this error, verify that the device line exists in the SYSTEM.INI
+file. If necessary, edit the SYSTEM.INI file with a text editor, such as Windows
+Notepad or MS-DOS Editor, and add the following line to the [386Enh] section:
+
+   device=ifsmgr.386
+
+Then, expand the file from your original Windows for Workgroups 3.11 disk set to
+your Windows SYSTEM subdirectory. For example, if your hard disk is drive C and
+your Windows directory is called WINDOWS, type the following command:
+
+   c:\windows\expand a:\ifsmgr.38_ c:\windows\system\ifsmgr.386
+
+NOTE: The file IFSMGR.38_ is located on Disk 4 of the 3.5-inch disk set and Disk
+5 of the 5.25-inch disk set.
+
+For more information about using the EXPAND command, type "EXPAND /?" (without
+the quotation marks) at an MS-DOS command prompt.
+
+Additional query words: 3.11 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

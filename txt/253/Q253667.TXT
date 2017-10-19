@@ -1,0 +1,85 @@
+DOCUMENT:Q253667  31-JUL-2001  [iis]
+TITLE   :Err Msg: HTTP 401.2 - Unauthorized: Logon Failed Due to...
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbDSupport kbiis500 kbiis500prod2web kbhttp4012 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are attempting to browse a Web page, the following error is displayed:
+
+   You are not authorized to view this page
+   You do not have permission to view this directory or page using the
+   credentials you supplied.
+
+   HTTP 401.2 - Unauthorized: Logon failed due to server configuration
+   Internet Information Services
+
+CAUSE
+=====
+
+The authentication methods that were tried are either disabled, or you are
+attempting to use NTLM through a proxy server.
+
+RESOLUTION
+==========
+
+To resolve this problem, turn at least one authentication method on. To do this,
+perform the following:
+
+1. From the Start menu, point to Programs, point to Administrative Tools, and
+   then click Internet Services Manager.
+
+2. Under the Tree pane, browse to the desired Web site.
+
+3. Right-click the Web site, and then click Properties.
+
+4. On the Directory Security tab, under Anonymous access and authentication
+   control, click Edit.
+
+5. Select (and implement) at least one type of authentication method.
+
+MORE INFORMATION
+================
+
+For more information about using authentication, refer to the following
+(assuming that the IIS product documentation is installed on your computer):
+
+   http://localhost/iishelp/iis/misc/default.asp?jumpurl=../htm/core/iiabasc.htm
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: IIS 5 401-2 akz
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbiis500 kbiis500prod2web kbhttp4012 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,61 @@
+DOCUMENT:Q154797  08-AUG-2001  [winnt]
+TITLE   :SP5 Adds Code Pages for Central European Language Support
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Two Central European code pages, cpid1250 and ISO8859-2, are supported in
+Windows NT 3.51 through the installation of Service Pack 5, which is slated for
+release in autumn 1996. These code pages are installed so that the language
+support needed to do character translations is supported on Exchange server.
+
+The new files are c_1250.nls and c_208592.nls.
+
+STATUS
+======
+
+
+This added feature is slated for inclusion in Windows NT Service Pack 5. This
+feature is in development, but has not been fully regression-tested and should
+be applied only to systems experiencing this specific problem. Unless you are
+severely impacted by this specific problem, Microsoft recommends that you wait
+for the next Service Pack that contains this update. Contact Microsoft Product
+Support Services for more information.
+
+
+
+Additional query words: 3.51 prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

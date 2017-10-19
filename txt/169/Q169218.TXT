@@ -1,0 +1,73 @@
+DOCUMENT:Q169218  27-AUG-1999  [odbc]
+TITLE   :FIX: "Invalid Argument Value" Error with SQLSetConnectOption
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+BUG #: 4622 (ODBC30)
+
+SYMPTOMS
+========
+
+When SQL_ODBC_CURSORS is set to SQL_CUR_USE_ODBC using the SQLSetConnectOption
+and a connection to a data source is made, the next call to SQLSetConnectOption
+to set the SQL_CURRENT_QUALIFIER or SQL_ATTR_CURRENT_CATALOG fails with the
+following message:
+
+   szSqlState = "S1009", *pfNativeError = 0, *pcbErrorMsg = 55
+   szErrorMsg = "[Microsoft][ODBC Driver Manager] Invalid argument value"
+
+WORKAROUND
+==========
+
+To work around this problem, use SQLSetConnectOption to set the SQL_ODBC_CURSORS
+to SQL_CUR_USE_IF_NEEDED or SQL_CUR_USE_DRIVER. The ODBC Cursor Library version
+3.00.2822 resolves this issue.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Open Database
+Connectivity version 3.0. This problem has been corrected in U.S. Service Pack 1
+for Microsoft Open Database Connectivity, version 3.0. For more information,
+contact your primary support provider.
+
+
+MORE INFORMATION
+================
+
+This behavior is only seen with ODBC 2.X applications using a Driver Manager 3.0
+and a 2.X ODBC driver.
+
+Additional query words: DM Cursorlibrary
+
+======================================================================
+Keywords          : kbprogramming 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

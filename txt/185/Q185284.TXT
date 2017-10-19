@@ -1,0 +1,88 @@
+DOCUMENT:Q185284  17-JUL-2001  [visualc]
+TITLE   :FIX: #import Does not Correctly Handle GUID Parameters
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbVC600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the #import directive on a type library with a method containing a
+GUID as a parameter, or methods containing a structure that contains a GUID as a
+parameter, you might encounter one of the following error messages:
+
+   C2664: 'Method1' : cannot convert parameter 1 from 'struct _GUID *' to
+   'struct GUID *'
+
+   C2664: 'raw_Method2' : cannot convert parameter 1 from 'struct GUID' to
+   'struct GUID'
+
+   C2079: 'm_guid' uses undefined struct 'GUID'
+
+You might also encounter one of these error messages when you use parameters of
+type IID, CLSID, FMTID, UUID, CATID, and references to these types (REFGUID,
+REFIID, etc.).
+
+CAUSE
+=====
+
+The #import statement incorrectly interprets struct _GUID as struct GUID. GUID
+is only a typedef for struct _GUID.
+
+RESOLUTION
+==========
+
+Use the "rename" attribute with #import to replace the string GUID with _GUID.
+For example:
+
+      #import "myproject.tlb" rename("GUID", "_GUID")
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Microsoft Visual C++,
+version 6.0.
+
+REFERENCES
+==========
+
+Microsoft Visual C++ Help: search on "#import"
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jaganathan
+Thangavelu, Microsoft Corporation
+
+
+Additional query words: kbVC500bug kbCompiler kbCOMt kbDSupport kbdsd
+
+======================================================================
+Keywords          : kberrmsg kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : WINNT:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

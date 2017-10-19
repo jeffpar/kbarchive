@@ -1,0 +1,71 @@
+DOCUMENT:Q263835  20-OCT-2000  [exchange]
+TITLE   :XCON: MTA Stops (Event ID 9411), Free Disk Space More Than 10 MB
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) service stops responding and
+reports Event ID 9411 in the application event log:
+
+   Event 9411
+   The MTA is terminating because the disk where MTADATA is located has less than
+   10 MB of space, or an error occurred while trying to check for free space on
+   the disk. If disk space is low, free up some disk space and restart the MTA.
+
+When you check the amount of free hard disk space, it far exceeds the 10
+megabytes (MB) of space that the MTA requires to function properly.
+
+CAUSE
+=====
+
+The page file, Mtadata, is located on a disk that has little remaining free
+space but the amount of free disk space is being reported as more than 10 MB.
+
+RESOLUTION
+==========
+
+Move the page file to a drive with a larger quantity of free space.
+
+MORE INFORMATION
+================
+
+For additional information about MTA errors, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q173458 XCON: Event ID 9406 Occurs When Memory or Free Disk Space is Low
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Component         : MTA
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

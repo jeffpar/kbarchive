@@ -1,0 +1,64 @@
+DOCUMENT:Q123501  05-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Can Not Create User or Can Not Delete User
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Microsoft Mail for PC Networks administrator's may receive the one of the
+following error messages when creating (adding) or deleting gateway addresses
+from the gateway lists using the Mail Administrator program (ADMIN.EXE):
+
+   Can not create user
+
+   -or-
+
+   Can not delete user
+
+CAUSE
+=====
+
+The gateway address list is too large for ADMIN.EXE. These errors will happen
+when the number of gateway addresses exceeds approximately 32,500 users.
+However, this will depend on the amount of conventional memory on the
+workstation running ADMIN.EXE and/or the length of the gateway names.
+
+RESOLUTION
+==========
+
+To resolve this problem use IMPORT.EXE to add or delete users from the gateway
+lists (refer to Appendix A in the Microsoft Mail "Administrator's Guide" for
+more information about the Import utility).
+
+Additional query words: 3.00 3.00a 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a
+Version           : WINDOWS:3.0,3.0a,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

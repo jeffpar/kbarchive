@@ -1,0 +1,59 @@
+DOCUMENT:Q167601  07-SEP-2001  [winnt]
+TITLE   :Micrografx Designer 6.0 Cannot Print A0
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a U.S. version of Windows NT Server 4.0 with a shared Hewlett-
+Packard DesignJet 650c printer driver and a shared installation of Micrografx
+Designer 6.0 (US), a German version of Windows NT Workstation 4.0 running
+Designer may not be able to select the master page paper sizes A0 and A1 in the
+printer settings. If you printout A0, the plotter may print six pages in A4 or
+six Pages in letter format.
+
+RESOLUTION
+==========
+
+To work around this problem, use one or more of the following options:
+
+ - Install the HP DesignJet 650c driver locally on the German version of Windows
+   NT Workstation 4.0.
+
+ - Give Everyone Full Control for the HP DesignJet 650c.
+
+ - Install the U.S. version of Windows Workstation NT 4.0 on the client.
+
+Additional query words: print settings properties
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

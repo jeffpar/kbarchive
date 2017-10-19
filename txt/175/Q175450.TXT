@@ -1,0 +1,276 @@
+DOCUMENT:Q175450  18-JUL-2001  [vbwin]
+TITLE   :INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 3
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbVS97sp1fix kbVS97sp2fix kbFAQ kbhowto kbvbp500sp1fix kbvbp500sp2fix kbvbp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual Studio 97 Service Pack 3 contains several fixes for Visual
+Basic 5.0. This article lists all of the Microsoft Knowledge Base articles
+documenting bug fixes that affect Visual Basic 5.0.
+
+MORE INFORMATION
+================
+
+The following list contains the updated components and the bugs that were fixed
+for Visual Basic 5.0 in the Visual Studio 97 Service Pack 3. You can find all
+these articles quickly in the Microsoft Knowledge Base by searching on
+VB5FixlistSP3. If you are only interested in a specific article below, you can
+find it in the Microsoft Knowledge Base by searching on the article ID (for
+instance, Q171546.)
+
+Service Pack 3 Fixes
+--------------------
+
+Q171546   FIX: VB4 Apps with Unbound DBGrid Fail with VB5 DBGrid
+Q171547   FIX: New DBGrid32.OCX Breaks VB4 Apps that Use VB4 Version
+Q174835   FIX: Internet Transfer Control Using Username and Password
+Q174836   FIX: Problems Shutting Down When Using the Inet Control
+Q171550   FIX: Recompiling with SP2 Breaks Binary Compatibility
+Q171548   FIX: Binary Compatible Server Causes VB to Hang in the IDE
+Q171551   FIX: 32-Bit DBList, DBCombo May Exhibit Problems When Locked
+
+Service Pack 2 Fixes in Service Pack 3
+--------------------------------------
+
+Q166908   BUG: ScaleMode for Printer Object Can't Create Custom Scale
+Q167107   BUG: Missing Controls on the SSTAB Control Tabs
+Q167165   BUG: Too Many Controls on a Form May Crash Visual Basic IDE
+Q167213   BUG: Invalid Page Fault When Shutting Down Visual Basic 5.0
+Q167346   BUG: GPF Occurs When Starting Visual Basic 5.0
+
+Q167706   BUG: Internet Transfer Control 5.0 "POST" Request Doesn't Work
+Q167735   BUG: Setting Printer to Item in the Printers Collection Fails
+Q168290   BUG: GPF When Setting Font of Multi-selected Controls
+Q168744   PRB: Printer May Lose Font Attributes
+Q168766   BUG: Internet Transfer Control Fails on Case-Sensitive Server
+
+Q168792   BUG: Statusbar Time Panel May Not Update Properly
+Q171470   FIX: Resize Event Not Fired When UserControl Copied & Pasted
+Q171471   FIX: VB-Created Controls Fail to Print w/UserControl_Paint
+Q171472   FIX: Toggling PortOpen w/MSCOMM32.OCX Leaks Memory on Win95
+Q171473   FIX: MCI32.OCX Does Not Save Recorded .WAV Files
+
+Q171474   FIX: Path Problems Using Project on Network Server
+Q171475   FIX: RichTextBox Cleared When BorderStyle Changes at Run-Time
+Q171476   FIX: Masked Edit Control Right-Aligned with NT 4.0 SP3
+Q171477   FIX: Format Menu Options Can Crash Visual Basic 5.0
+Q171478   FIX: Cannot Set Width/Height of UserControl in Resize Event
+
+Q171479   FIX: Mod 0 Causes an IPF or Access Violation
+Q171480   FIX: Setting SelAlignment Property Does Not Affect RichTextBox
+Q171481   FIX: Cannot Set the Enabled Property of an UpDown Control
+Q171482   FIX: Crash When Enum Name Referred to Incorrectly
+Q171483   FIX: Crash When Rebuilding EXE Containing UserControl
+
+Q171484   FIX: Code Module Window Displayed Transparently in SDI
+Q171485   FIX: Visual Basic 5.0 Title Bar Paints Incorrectly
+Q171486   FIX: Crash Sometimes Occurs with Cursor over Toolbox
+Q171487   FIX: Crash When Assigning Uninitialized Object to Tag
+Q171488   FIX: Val Function Recognizes System Decimal Symbol
+
+Q171489   FIX: Use of Implements and Public Constants Crashes Compiler
+Q171490   FIX: Crash After Toggling Folders in ActiveX EXE Project
+Q171491   FIX: Mouse Button Value Is Always 4 in MouseUp Event of SSTab
+Q171492   FIX: ActiveX Control Incorrectly Reports ScaleWidth/ScaleHeight
+Q171493   FIX: Viewing Property Pages and Exiting Causes Memory Leak
+
+Q171494   FIX: MouseUp Event Not Triggered in DblClick w/Comctl32
+Q171495   FIX: Get Statement Not Working Correctly with Large UDT
+Q171496   FIX: Bad Filename or Number with Get of UDT
+Q171497   FIX: ListView in PictureBox on Tabbed Dialog Disappears
+Q171498   FIX: Screen Turns Black When Compiling
+
+Q171499   FIX: IDE Doesn't Show Topics of OCX Help Files Correctly
+Q171500   FIX: ATL Controls Without IPropertyNotifySink Cause IPF in VB5
+Q171501   FIX: User Control Moves When Width/Height Is Set in Container
+Q171502   FIX: Crash with Watch on UserControl When Stop is Encountered
+
+Q171504   FIX: Problems Setting PropertyPage Caption Property
+Q171505   FIX: VB5 IDE Disappears or IPFs When "End" Button Is Pressed
+Q171506   FIX: OLE Drag/Drop of ListView Control Fails
+Q171507   FIX: VB GPFs When Selecting Align/Lefts from the Format Menu
+Q171508   FIX: Add-ins May Cause Menu Corruption When Exiting Visual Basic
+
+Q171509   FIX: Access Violation on NT4.0 on Multi-line Textbox
+Q171510   FIX: Setting Font Property Causes Error 438 with RichTextBox
+Q171511   FIX: Controls in Frame/PictureBox Do Not Repaint in Design Mode
+Q171512   FIX: UserControls on Property Pages Do Not Trigger Focus Events
+Q171513   FIX: Cannot Drag a Nested UserControl with Automatic DragMode
+
+Q171514   FIX: Visual Basic 5.0 Crashes When Shutting Down Forms
+Q171515   FIX: Crash on Customization of Design Environment Menus
+Q171516   FIX: ActiveX Document DLL Causes GPF When Unloading Modal Form
+Q171517   FIX: Animation Control Prints Incorrectly at Design-Time
+Q171518   FIX: Controls May Not Print When Printing Form at Design Time
+
+Q171519   FIX: Removing Function Causes Binary Compatibility Error
+Q171520   FIX: Unable to Set Binary Compatibility with Class Module
+Q171521   FIX: Non-Creatable Class Causes Loss of Binary Compatibility
+Q171522   FIX: Enums in Public Procedures Cause Binary Compatibility Error
+Q171523   FIX: Reference to Missing Member in Enum Definition Causes Crash
+
+Q171524   FIX: Ambiguous Names Generate Incorrect Error Message
+Q171525   FIX: ListView Causes IPF When Accessing ColumnHeaders Property
+Q171526   FIX: Setting Enabled=False for TreeView Causes Paint Problems
+Q171527   FIX: Causing a ListView Control to Paint Causes an IPF
+Q171528   FIX: Using "Unload Me" in a Listbox Causes Crash
+
+Q171529   FIX: Can't Open a Project Group from the Root Directory
+Q171530   FIX: Crash on Data Tip After Enum Name Changed
+Q171531   FIX: IPF When Changing Project Name With Binary Compatibility
+Q171532   FIX: Crash Stepping Thru Code After Using Locals/Watch Window
+Q171533   FIX: ActiveX EXE Crashes VB5 When Set to Binary Compatibility
+
+Q171555   FIX: More Than One Sub Main May Cause EXE to Crash
+Q171556   FIX: VB5 IDE Causes Exception Violation During Unload of Form
+Q171557   FIX: Compiling VB5 Applications with Large UDTs May Crash
+Q171575   FIX: RISC: CByte Doesn't Fail on Negative Values on Native Exe
+Q171576   FIX: RISC: AddressOf Doesn't Behave Properly in IDE/PCode Exe
+
+Q171577   FIX: Using Set for ListItem's SubItem Results in GPF
+Q171795   FIX: RDC Error Calling UpdateRow After Resultset.AddNew
+Q171796   FIX: Problems When Running Asynchronous Queries with RDO 2.0
+Q171797   FIX: VB5 DBCombo May Display Wrong Column for RDC 1.0
+Q171798   FIX: DBCombo Click Event Fires During Form Load
+
+
+Q171801   FIX: Bound Controls Built in VB5 Do Not Work in VB4 IDE
+Q171802   FIX: Problems Updating Using DBCombo When ListField = DataField
+Q171803   FIX: Problems Retrieving VB 5.0 Projects from Visual SourceSafe
+Q171804   FIX: Change Event Not Fired When Selecting an Item in DBCombo
+
+Q171805   FIX: Problems Binding Controls To Nonexistent Data Control
+Q171806   FIX: Memory Leak When RDC Bound to OLE Container Control
+Q171807   FIX: Selected Tab Changes After Removing Tab in Tabstrip
+Q171808   FIX: MDI Child Form Does Not Become Active
+Q171809   FIX: Memory Leak When Setting the ForeColor of a VB5 Object
+
+Q171810   FIX: Invoking the Visual Component Manager asserts in Exutil
+Q171811   FIX: Cannot see relationship collection on an interface with Tab
+Q171812   FIX: Run-Time Error When DataObject Passed As Object
+Q171813   FIX: IPF in MSO97RT.DLL When Starting Visual Basic
+Q171814   FIX: System Menu Appears When MouseDown Event Invokes a Drag
+
+Q171815   FIX: Printer.TextWidth Returning Inconsistent Results in IDE
+Q171816   FIX: IPF Opening or Saving Form with Tab Control
+
+
+Q171818   FIX: IDE Crashes When Repeatedly Placing a Control on a Form
+Q171819   FIX: Invalid Enum Value Causes Incompatible Binary Compatible
+
+Q171820   FIX: ListView/ListItems Don't Refresh When ColumnHeaders Cleared
+
+
+Q171822   FIX: Adding a Routine to UserControl in Break Mode Causes Crash
+Q171823   FIX: Application Error When Using Implements on Hyperlink Object
+Q171824   FIX: Crash in INET Control Downloading Page Multiple Times
+Q171825   FIX: Tabbing Problems Using ActiveX Document in a Frame
+
+Q171826   FIX: Tabbing Problems with Controls Contained with Controls
+Q171827   FIX: Printing userdrawn usercontrol in IE Doesn't Work
+Q171828   FIX: Using OpenURL Doesn't Download Complete Files
+Q171829   FIX: GetChunk Freezes Unless Other Events Happening
+Q171830   FIX: ActiveX Document Menu Changing Places
+
+Q171831   FIX: IObjectSafety Implemented in Toolbar and CmDialog Controls
+Q171832   FIX: Statement Builder Can Cause the Object Browser to Crash
+Q171833   FIX: Statement Builder Crashes Referencing GlobalMultiUse Server
+Q171834   FIX: Crash When UserControl Accesses Members of ParentControls
+Q171835   FIX: Crash When Viewing Data Tips on ParamArray
+
+Q171836   FIX: Crash When Viewing API Properties in Object Browser
+Q171837   FIX: Run-time Error 6 "Overflow When Compiled to Native Code"
+Q171838   FIX: Crash Compiling Native Code for Assignment of Variant Array
+Q171839   FIX: Crash When Compiling a Call to a UserControl Function
+Q171840   FIX: Corrupt Project Error Opening One Project After Another
+
+Q171841   FIX: Dragging Multiple Controls on a Form May Cause Crash
+Q171842   FIX: GetSetting Function Is Leaking Handles
+Q171843   FIX: Winsock Control Leaks Memory When Unloaded
+
+Service Pack 1 Fixes in Service Pack 3
+--------------------------------------
+
+Q167122   FIX: FindItem Method of ListView Incorrectly Returns an Error
+Q167123   FIX: COMctl32.ocx Is Binary Incompatible with Previous Version
+Q167947   FIX: ODBC CAB File Does Not Install 16-bit ODBC Files
+Q167948   FIX: Internet Component Download Fails After Using Setup Toolkit
+Q167950   FIX: DAO Internet Component Download Fails to Install
+
+Q167951   FIX: Autmgr32.exe Fails After Component Download
+Q168153   FIX: DBGrid Bound to RDC Displays a Single Row After MoveLast
+Q168155   FIX: Crash When Resizing Column of Split DBGrid
+Q168156   FIX: DBGrid Bound to RDC Displays Small ResultSets Incorrectly
+Q168157   FIX: Problems Binding Multiple Controls to RDC 2.0
+
+Q168158   FIX: Can't Close Resultset if DBGrid Bound to RDC
+Q168159   FIX: DBCombo Updates Incorrectly When Using RDC Bound ListSource
+Q168160   FIX: Error on Update After AddNew With RDC and Bound Controls
+Q168161   FIX: Distributed Transaction Fails On Subsequent Runs
+Q168162   FIX: RDO Move 0 Fails to Refresh Record
+Q168163   FIX: Memory Leak When Calling UserConnection Query Event
+
+Repository Fixes in the full SP1/SP2/SP3 (not in the stand-alone VB5 SP2
+download)
+----------------------------------------------------------------------------------
+
+Q169302   FIX: Get_Item() Does Not Return Error When Property Not Found
+Q169303   FIX: Get_Item() Doesn't Find Property Defined on Ancestor Iface
+Q169304   FIX: Errors Occur When Getting Property of VB Project: Crashes
+Q169305   FIX: Repository Error after Halting Execution in Break-mode Edit
+Q169306   FIX: ReComputeRepository GPFs if Passed Non-existent DB Name
+
+Q169307   FIX: RepUtil:CompactJetRepository Doesn't Work with DSN Name
+Q169308   FIX: CompactJetRepository Only Recognizes Lowercase Jet db Names
+Q169309   FIX: Adding ActiveX Designer/Userconnection Results in Shutdown
+Q169331   FIX: RecomputeRepos: Won't Work with Database Created by UML.DLL
+Q169332   FIX: Changing Obj Name Before Saving Results in Repository Error
+
+Q169333   FIX: Engine: Collection Not Updated After Removing an Item
+Q169334   FIX: IRepos::Get_Name() Returns Error if Called on a Property
+Q169335   FIX: CDatabase::InsRelshipRow Does Not Release Collection Obj
+Q169336   FIX: Engine Item Method Takes Parameter Type of IntID
+Q169337   FIX: Unable To Remove a Relationship from Collection with OBJID
+Q169339   FIX: RepUtil.DLL Doesn't Contain Version or Copyright Info
+
+Q171544   FIX: Engine: Collection Object Does Not Access Correctly by Name
+Q171545   FIX: Error 438 When Using CreateInterface's Optional Default Flag
+Q171549   FIX: Cached Class Factorys Can Get Released by Illegal Thread
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp500 kbVS97sp1fix kbVS97sp2fix kbFAQ kbhowto kbvbp500sp1fix kbvbp500sp2fix kbvbp500sp3fix kbVBP500FAQ 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : WINDOWS:5.0
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

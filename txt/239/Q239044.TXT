@@ -1,0 +1,76 @@
+DOCUMENT:Q239044  04-FEB-2000  [iis]
+TITLE   :Removing Application Settings from IISADMIN Causes Error
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Administration Web Site (IISADMIN) properties, if you remove the
+Application Settings (on the Home Directory tab), the site will break and you
+will receive a 500 Server Error.
+
+CAUSE
+=====
+
+The Administration Web Site requires an application to be created.
+
+RESOLUTION
+==========
+
+To correct this problem, perform the following steps:
+
+1. Open the Internet Services Manager (or custom snap-in) and navigate to the
+   Administration Web Site.
+
+2. Right-click the Administration Web Site and then click Properties.
+
+3. Click the Home Directory tab.
+
+4. Under Application Settings, click the Create button.
+
+5. You have now created an application for the site.
+
+6. Click OK.
+
+Be sure to test the site to ensure that it is working correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+version 5.0.
+
+Additional query words: iis Administration Web Site Application 500
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

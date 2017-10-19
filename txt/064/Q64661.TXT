@@ -1,0 +1,72 @@
+DOCUMENT:Q64661  12-DEC-1999  [win95x]
+TITLE   :Write Randomly Selects Keys or Windows Hangs on Sperry 286
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using an 84-key keyboard on a Sperry 286 computer, Windows Write may
+randomly select characters as you type, or may hang your computer.
+
+CAUSE
+=====
+
+Unisys has confirmed this to be a problem with the computer.
+
+WORKAROUND
+==========
+
+The only workaround is to use a 101- or 102-key enhanced keyboard.
+
+MORE INFORMATION
+================
+
+Other problems reported by Unisys when using an 84-key keyboard include the
+following:
+
+1. Microsoft Windows version 3.0 stops (hangs) during setup when you insert Disk
+   2.
+
+2. Windows 3.0 hangs during installation (when the real mode is running).
+
+3. Windows 3.0 hangs at the logo screen unless win/r is typed.
+
+The problem is not correctable with a BIOS upgrade; Unisys stated that the latest
+BIOS for the Sperry 286 is Sperry BIOS version 1.58f.
+
+The products included here are manufactured by Unisys, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3.00, 3.0, 3.0a, 3.00a KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

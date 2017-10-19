@@ -1,0 +1,61 @@
+DOCUMENT:Q171082  08-NOV-2001  [odbc]
+TITLE   :BUG: SQLTables w/ Table Type of 'VIEW' Return 'SYS' and 'SYSTEM'
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0,2.5,3.0
+OPER/SYS:
+KEYWORDS:kbProgramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, versions 2.5, 3.0 
+ - Microsoft ODBC Driver for Oracle (Build 2.06325), version 1.0 
+-------------------------------------------------------------------------------
+
+BUG #: 484 (Oracle)
+
+SYMPTOMS
+========
+
+The Microsoft Oracle Driver version 2.00.00.6325 may return views that belong to
+'SYS' and 'SYSTEM' users for SQLTables with the 'VIEW' table type specified. The
+'SYS' and 'SYSTEM' views are returned even if the user does not have permission
+to the system views.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Oracle Driver
+version 02.00.00.6325.
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+Additional query words: view system sql server
+
+======================================================================
+Keywords          : kbProgramming 
+Technology        : kbAudDeveloper kbZNotKeyword kbODBCSearch kbODBCOracle206325 kbODBC300 kbODBC250 kbODBCOracle100Search
+Version           : WINDOWS:1.0,2.5,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

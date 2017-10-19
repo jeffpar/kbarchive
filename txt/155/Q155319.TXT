@@ -1,0 +1,82 @@
+DOCUMENT:Q155319  08-AUG-2001  [winnt]
+TITLE   :Cannot Install Modem After Removing and Reinstalling RAS
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove and reinstall the remote access service (RAS) in Windows NT
+4.0, the Install New Modem Wizard may be unable to detect your modem.
+
+CAUSE
+=====
+
+Removing and reinstalling RAS in Windows NT 4.0 causes the Modem.inf file to be
+overwritten. Any changes or modifications made to the previous Modem.inf file
+are lost.
+
+NOTE: The Modem.inf file is not overwritten during the normal Setup process.
+During Setup, the current versions of the Modem.inf, Switch.inf, and Pad.inf
+files are not altered, and new versions of these files are saved as Modem.new,
+Switch.new, and Pad.new.
+
+RESOLUTION
+==========
+
+If your modem is not on the Windows NT 4.0 Hardware Compatibility List (HCL),
+use one of the following procedures to install your modem:
+
+ - Obtain an .inf file that is designed for Windows NT 4.0 from the modem
+   manufacturer. Follow the manufacturer's instructions for installing the modem
+   in Windows NT 4.0. Contact the modem manufacturer for assistance with this
+   procedure.
+
+ - Install your modem as a standard modem using the following steps:
+
+   1. In Control Panel, double-click Modems.
+
+   2. The Install New Modem Wizard starts automatically if you have not
+      installed a modem before. If the wizard does not start automatically, you
+      have installed a modem previously and you should click Add to start the
+      wizard.
+
+   3. Click "Don't detect my modem; I will select it from a list," and then
+      click Next.
+
+   4. In the Manufacturers box, click Standard Modem Types. In the Models box,
+      click a model that corresponds to the speed of your modem, and then follow
+      the instructions in the Install New Modem Wizard.
+
+Additional query words: prodnt dial-up networking DUN
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

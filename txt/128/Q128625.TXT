@@ -1,0 +1,57 @@
+DOCUMENT:Q128625  31-OCT-2000  [msnetwork]
+TITLE   :Information About The Microsoft Network Icon
+PRODUCT :The Microsoft Network
+PROD/VER::2.6,5.0,5.1,5.2
+OPER/SYS:
+KEYWORDS:kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.6, 5.0, 5.1, 5.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Network icon that appears on your computer's desktop does not
+appear in the Desktop folder in Windows Explorer.
+
+The Microsoft Network icon is not in the Desktop folder because the icon is
+created using a registry key, not a file. This is similar to the method used to
+create the My Computer, Network Neighborhood, and Recycle Bin icons, which also
+do not appear in the Desktop folder.
+
+MORE INFORMATION
+================
+
+The properties for The Microsoft Network icon shows the type as a long string of
+numbers. This behavior is by design. The Microsoft Network icon is a specific
+type registered with Windows 95/98. The type is shown in the way that Windows
+95/98 displays file properties.
+
+
+Additional query words: msn kbimu
+
+======================================================================
+Keywords          : kbenv kbmsn 
+Technology        : kbMSNSearch kbMSN520 kbMSN510 kbMSN500 kbMSN260
+Version           : :2.6,5.0,5.1,5.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

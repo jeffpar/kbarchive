@@ -1,0 +1,76 @@
+DOCUMENT:Q136154  24-MAR-2000  [foxpro]
+TITLE   :FIX: Text Box Does Not Respond to DblClick Event
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Format property of a text box residing on a form is set to M, the
+DblClick event is not executed when the form is run. Setting the Format property
+to M allows for multiple preset input masks to be used in the text box.
+
+For more information on this setting, please see the "Format Property" topic in
+the Visual FoxPro Help file.
+
+WORKAROUND
+==========
+
+Execute the code during a Click event, or use a combo box in place of the text
+box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open or switch to Visual FoxPro, and create a new form.
+
+2. Add a text box (Text1) to the form, and set its Format property to M.
+
+3. Add a WAIT WINDOW command to the Text1 DblClick event procedure.
+
+4. Run the form, and double-click the Text1 box. The Wait Window fails to
+   appear.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q129221  10-MAR-1999  [exchange]
+TITLE   :XCLN: Can't Print by Dragging Message to Printer
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to drag a message from Microsoft Exchange to a printer, the mouse
+pointer changes to the "Unavailable" pointer while it is on top of the printer,
+and you cannot print the message.
+
+CAUSE
+=====
+
+The Microsoft Exchange message document type is not supported for direct drag
+and drop printing in Windows 95.
+
+WORKAROUND
+==========
+
+To print the message, use the Print option on the File menu, or save the message
+to the desktop and drag it to the printer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange version
+4.0 Windows 95 client. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: faq
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

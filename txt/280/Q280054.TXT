@@ -1,0 +1,60 @@
+DOCUMENT:Q280054  27-JUL-2001  [sms]
+TITLE   :SMS: Remote Session Disconnects If Second User Tries to Connect
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbtool kbClient kbMMC kbRemote kbSecurity kbsms200 kbsms200bug kbHelpDesk kbsmsAdmin kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a target computer is being remote controlled by one Systems Management
+Server (SMS) administrator, and a second SMS administrator ignores the response
+message that reports that the computer is already being remote controlled by
+another viewer, and repeatedly attempts to remote control the computer, the
+first session may be disconnected unexpectedly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+When this problem occurs, users who are not on the Permitted Viewers list are
+unable to access the computer.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbClient kbMMC kbRemote kbSecurity kbsms200 kbsms200bug kbHelpDesk kbsmsAdmin kbsmsUtil kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

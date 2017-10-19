@@ -1,0 +1,63 @@
+DOCUMENT:Q299788  29-AUG-2001  [foxpro]
+TITLE   :FIX: Setting SelStart = 0 in EditBox Causes Fatal Exception
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbContainer kbCtrl kbvfp kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500bug kbvfp600 kbvfp600b
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set the SelStart property of an EditBox control to 0, Visual FoxPro may
+exit with the following error message:
+
+   Fatal Error: Exception Code = C0000005
+
+STATUS
+======
+
+This problem was corrected in Microsoft Visual FoxPro version 7.0 for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code in the Command window:
+
+   *!* Q299788 FIX: Setting SelStart = 0 In EditBox Causes Fatal Exception
+   loDemo = CreateObject('EditBox')
+   loDemo.SelStart=0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500bug kbvfp600 kbvfp600bug kbGrpDSFox kbCodeSnippet kbvfp700fix kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

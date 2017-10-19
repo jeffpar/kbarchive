@@ -1,0 +1,49 @@
+DOCUMENT:Q122550  14-OCT-1999  [winnt]
+TITLE   :How to Disable Persistent Connections for Network Client 3.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+To disable persistent connections for Microsoft Network Client version 3.0
+for MS-DOS, do the following before you log on:
+
+1. Using a text editor, change the RECONNECT entry in the [Network] section of
+   SYSTEM.INI to the following:
+
+   " RECONNECT=NO" (without the quotation marks)
+
+2. Rename or delete the CONNECT.DAT file.
+
+NOTE: Both SYSTEM.INI and CONNECT.DAT are located in the Network Client
+directory, which is usually called C:\NET.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : winnt:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

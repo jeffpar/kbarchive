@@ -1,0 +1,72 @@
+DOCUMENT:Q195284  08-JAN-2000  [mspress]
+TITLE   :Running Microsoft Outlook 98 Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Running Microsoft Outlook 98 ISBN 1-57231-840-6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Running Microsoft Outlook 98, ISBN
+1-57231-840-6.
+
+The following topics are covered:
+
+ - Page 135-136: Mail format Must Be Set To HTML
+
+MORE INFORMATION
+================
+
+Page 135-136: Mail format Must Be Set To HTML
+---------------------------------------------
+
+Page 135-136, "Sending a URL in a Message"
+
+The dialog box on page 135 and steps 1 - 5 on the following page do not match
+what you see on your screen unless your Outlook mail format is set to HTML.
+
+To set the mail format to HTML, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. On the Mail Format tab, click HTML from the "Send in this message format"
+   list.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ms_press 1-57231-927-5 1-57231-840-6
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,76 @@
+DOCUMENT:Q172778  28-JUL-2001  [win95x]
+TITLE   :Cannot Connect to a Dell Dial-Up Networking Server
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbtool dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a Dell computer that is running Dial-Up
+Networking Server and is equipped with a US Robotics Sportster 33.6 Plug and
+Play modem, the Dell computer may close the dial-up connection before your user
+name and password can be verified. The Dell computer models affected are:
+
+ - Dimension Pxxxa/Mxxxa
+
+ - Dimension XPS Hxxx
+
+ - Dimension XPS Mxxxs
+
+ - Dimension XPS Proxxxn
+
+ - Dimension XPS Pxxxs
+
+
+CAUSE
+=====
+
+This problem is caused by a configuration file for the US Robotics modem that is
+included with the Dell computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain the Mdmusrvi.exe file from Dell Technical Support
+or from the Dell Web site. This file is a self-extracting compressed file
+containing a replacement Mdmusrvi.inf file for the modem.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: USR
+
+======================================================================
+Keywords          : kbtool dun win95 kbDialUp 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

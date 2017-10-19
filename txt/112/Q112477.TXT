@@ -1,0 +1,66 @@
+DOCUMENT:Q112477  08-FEB-2000  [foxpro]
+TITLE   :_PDRIVER Incorrectly Documented in FoxPro 1.02
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:1.02
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for MS-DOS, version 1.02 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documented functionality of the _PDRIVER variable on page C5-21 in the
+"Commands & Functions" manual is incorrect. Microsoft FoxPro version 1.02
+does not use any printer drivers; therefore, the _PDRIVER variable is
+meaningless to the program.
+
+MORE INFORMATION
+================
+
+The second paragraph on page C5-21 states:
+
+   _PDRIVER contains a character value that determines which printer driver will
+   be used when printing. The default value contained in this variable is the
+   default printer driver specified when FoxPro was installed.
+
+   <expC> MUST contain the name of one of the printer drivers supplied with
+   FoxPro (see the Appendix for a complete list). The printer driver file name
+   that you provide must be valid and must contain a path of the requested
+   driver is not in the current default directory.
+
+This text contains several inaccuracies. First, the Appendix does not contain a
+list of printer drivers. Second, FoxPro 1.02 does not prompt you for a specific
+printer during installation; therefore, no value is stored to the _PDRIVER
+variable. Finally, FoxPro 1.02 does not ship with any printer drivers.
+
+The _PDRIVER variable was originally supposed to contain a printer driver.
+However, printer drivers were never shipped for FoxPro 1.02.
+
+Additional query words: FoxDos docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbZNotKeyword3
+Version           : MS-DOS:1.02
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

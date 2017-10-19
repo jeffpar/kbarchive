@@ -1,0 +1,90 @@
+DOCUMENT:Q243176  24-OCT-2000  [winnt]
+TITLE   :Foreign Performance Counters Do Not Load
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbKernBase kbOSWin2000 kbPerfMon kbDSupport kbGrpDSKernBase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Performance Monitor in Windows 2000 is used to select performance
+objects and counters of a foreign machine, instead of selecting and displaying
+the counters, the following error message is displayed:
+
+   Machine Not Found
+
+CAUSE
+=====
+
+The Performance Monitor cannot select counters through a foreign counter
+performance extension because of a problem in the Performance Data Helper,
+Pdh.dll, library.
+
+RESOLUTION
+==========
+
+If it is necessary to view performance counters from a foreign system on Windows
+2000, use the Performance Monitor, Perfmon.exe, from Windows NT 4.0, which is
+available in the Windows 2000 resource kit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Foreign counters are those that are exposed from a non-Windows NT system (for
+example, Unix) to be viewed through the Windows NT or Windows 2000 Performance
+Monitor. A third party supplies the foreign counter performance monitor
+extension that works similarly to the regular performance monitor extension. The
+foreign performance monitor extension is loaded when a machine name or IP
+address of a machine not running Windows NT or Windows 2000 is selected in
+Performance Monitor.
+
+The new Windows 2000 Performance Monitor uses Pdh.dll to access performance
+counter data. The Pdh.dll file cannot access counters through a foreign counter
+extension.
+
+REFERENCES
+==========
+
+Please see the Platform SDK documentation; Base Services; Performance
+Monitoring; Performance Data; Adding Performance Counters
+
+Additional query words:
+
+======================================================================
+Keywords          : kbKernBase kbOSWin2000 kbPerfMon kbDSupport kbGrpDSKernBase 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

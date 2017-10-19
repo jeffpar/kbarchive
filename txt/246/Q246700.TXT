@@ -1,0 +1,125 @@
+DOCUMENT:Q246700  08-MAY-2002  [exchange]
+TITLE   :XFOR: Dirsync: Export Containers Empty After Applying 5.5 SP3
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Directory synchronization (dirsync) appears not to work after you apply
+Microsoft Exchange Server version 5.5 Service Pack 3 (SP3) to an Exchange Server
+computer that is running as a dirsync requestor to a Microsoft Mail (MS Mail)
+postoffice.
+
+The Exchange Server computer appears to receive updates from the MS Mail
+postoffices and the dirsync server, but only the mailboxes found in the default
+Recipients container are sent to the MS Mail postoffices.
+
+When you open the properties of the dirsync requestor object in the Microsoft
+Exchange Server Administrator program, the Export Containers window is empty.
+
+NOTE: In most cases, re-adding the Recipients containers to the Export Containers
+window does not change the outcome.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Exchange Server version 5.5 service pack that contains
+this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Exchange Server Administrator Program
+
++-------------------------+
+| File name | Version     | 
++-------------------------+
+| Admin.exe | 5.5.2651.75 | 
++-------------------------+
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, restore the Dxa.exe file from the Microsoft
+Exchange Server version 5.5 Service Pack 2 (SP2) CD:
+
+1. In Control Panel, double-click Services, and stop the Microsoft Exchange
+   Directory Synchronization service.
+
+2. Rename the %SystemRoot%\Exchsrvr\Bin\Dxa.exe file to *.old.
+
+3. Copy the Dxa.exe file from the Exchange Server SP2 CD to the
+   %SystemRoot%\Exchsrvr\Bin folder.
+
+4. Add the Recipients containers that you want to export to the Export These
+   Recipients list on the Export Containers tab of the DXA Requestor object.
+
+5. Run a manual dirsync in accordance with the procedure outlined in the
+   following Microsoft Knowledge Base article
+
+   Q148309 XFOR: Manual Dir-Sync with Exchange as Dir-Sync Requestor
+
+   or wait for the next dirsync cycle.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 SP3.
+
+
+Additional query words: dir-sync dxa working pcmail stop not
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

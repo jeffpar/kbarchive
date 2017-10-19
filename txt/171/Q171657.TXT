@@ -1,0 +1,60 @@
+DOCUMENT:Q171657  08-JAN-2000  [mspress]
+TITLE   :Hardcore VB 2ed: Goodies CD-ROM Directory Missing
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Hardcore Visual Basic, Second Edition ISBN 1-57231-422-2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the first printing of "Hardcore Visual Basic, Second Edition," the Goodies
+directory is missing from the companion CD-ROM.
+
+RESOLUTION
+==========
+
+The files from this directory can be obtained from the author's Web site at the
+following address:
+
+   http://www.pobox.com/HardcoreVB
+
+MORE INFORMATION
+================
+
+If you have any comments regarding the missing Goodies directory that are not
+addressed by the information and Web addresses provided in the "Resolutions"
+section, please e-mail the Microsoft Press Input alias at:
+
+   MSPINPUT@MICROSOFT.COM
+
+Additional query words: 1-57231-422-2 DEVBOOK VB50
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

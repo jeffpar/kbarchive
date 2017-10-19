@@ -1,0 +1,113 @@
+DOCUMENT:Q194385  20-MAY-2002  [pcmail]
+TITLE   :X400: Message Not Delivered and Screen Becomes Corrupted
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to send a message using X.25 from a foreign system to Microsoft
+Mail for PC Networks through the Microsoft Mail Gateway to X.400, the message
+may not be delivered successfully, the screen on the Microsoft Mail Gateway to
+X.400 computer may become corrupted, and the X.400 log file may contain entries
+similar to the following:
+
+ - 09:40:06 Message file name: 00002523
+
+ - 09:40:09 ERROR 3 (RTS): Association aborted
+
+ - 09:40:09 Outgoing AB SPDU on connection 0: xm[ 5] 19031101 03
+
+ - 09:40:09 Incoming AE SPDU on connection 0: rv[ 5] 29032A01 31
+
+ - 09:40:09 ERROR 1 (RTS): protocol error occurred in state 8
+
+ - 09:40:09 ERROR 3 (RTS): Association aborted
+
+ - 09:40:13 Outgoing AB SPDU on Connection 0: xm[ 12] 190A1101 03C10531 03800104
+
+CAUSE
+=====
+
+This problem can occur when a single transport service data unit (TSDU) contains
+a category 0 session protocol data unit (SPDU) and a category 2 SPDU that are
+not in the same transport protocol data unit (TPDU), and the second SPDU is the
+data SPDU (DT SPDU). Under these conditions, the remainder of the message may be
+processed before a TPDU with the EOT flag set is encountered. This may cause the
+Microsoft Mail Gateway to X.400 to overwrite a portion of the buffer that is
+used to combine the SPDUs. Then, when the Microsoft Mail Gateway to X.400
+attempts to decode the buffer, it is unable to do so and therefore is unable to
+send the message.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+   File Name      Version
+   ----------------------
+   X400gate.exe   3.2.20
+
+This hotfix has been posted to the following Internet location as X400gy2k.exe:
+
+   ftp://ftp.microsoft.com/bussys/mail/gateways-public/All-Y2K/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail Gateway to X.400
+version 3.2.
+
+MORE INFORMATION
+================
+
+Category 0 SPDUs include "give token" and "please token." Category 2 SPDUs
+include "activity end" and "activity end acknowledge (AEA)."
+
+Additional query words: openpath
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

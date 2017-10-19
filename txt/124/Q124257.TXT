@@ -1,0 +1,57 @@
+DOCUMENT:Q124257  07-MAY-2002  [homegame]
+TITLE   :Disk Contents of Japan Scenery (3.5 Inch, 1.44 MB)
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the disk contents of the Japan scenery add-on for Flight
+Simulator 5.0:
+
+Volume in drive A is DISK1
+ Volume Serial Number is 441E-180C
+ Directory of A:\ 
+
+DISK1    EXE     1,283,485 10-05-94  12:00p
+DISK1A   EXE         7,217 10-05-94  12:00p
+FSOG3D   EXE       109,473 10-05-94  12:00p
+README   JPN        12,360 10-05-94  12:00p
+SETUP    EXE        26,200 10-05-94  12:00p
+SETUP    FS5           198 10-05-94  12:00p
+
+        6 file(s)      1,438,933 bytes
+                          16,896 bytes free
+
+Additional query words: 1.00 flightsim fltsim dos d_fltsim
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

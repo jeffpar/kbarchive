@@ -1,0 +1,70 @@
+DOCUMENT:Q69568  14-NOV-1999  [win95x]
+TITLE   :Disabling Shadow RAM on Leading Technology 386-16SX
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Leading Technology's 386-16SX does not work in enhanced mode with Microsoft
+Windows version 3.0 if the ROM BIOS or VIDEO BIOS is being shadowed. To disable
+this shadowing, do the following:
+
+1. Boot the PC.
+
+2. At the DOS prompt, press CTRL+ALT+S.
+
+3. Press PGUP.
+
+4. Highlight the Shadow BIOS option using the vertical arrow keys.
+
+5. Press either the RIGHT or LEFT ARROW key to toggle between enable and
+   disable. Choose Disable.
+
+6. Highlight the Shadow RAM option using the UP and DOWN ARROW keys.
+
+7. Press either the RIGHT or LEFT ARROW key to toggle between Enable and
+   Disable. Choose Disable.
+
+8. Press ESC.
+
+MORE INFORMATION
+================
+
+For more information, contact Leading Technology.
+
+The product included here is manufactured by Leading Technology, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30 KBHW 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

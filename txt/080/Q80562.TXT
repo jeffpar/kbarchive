@@ -1,0 +1,156 @@
+DOCUMENT:Q80562  30-JUL-2001  [lanman]
+TITLE   :MTTOOL Test Miscellaneous Information
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The following are questions and answers related to MTTOOL, the test utility
+provided in the Microsoft LAN Manager Network Device Driver Kit.
+
+MORE INFORMATION
+================
+
+1. Q. The test script CLRST001.3 clears statistics and then checks the date and
+   time in the Service Specific Status Table. A note in the NDIS 2.0.1 states
+   this variable should be "0xffffffff" if date and time are not kept. However,
+   after clearing the statistics, the script expects and checks for an entry in
+   the date/time field. On receiving "0xffffffff" in the date/time field, the
+   test believes it has encountered an error. Is this consistent behavior
+   between the NDIS specification and the test?
+
+   A. This is a discrepancy between the script, MAC implementation, the
+   ClearStatistics primitive, and the definition of NOT_SUPPORTED in the Service
+   Specific Status Table.
+
+   The simplest method of verifying proper operation of ClearStatistics is the
+   following:
+
+   1. Enter the MTTOOL interactive mode.
+
+   2. Type "stat" (without the quotation marks) at the prompt. This should give
+      a list of the current statistics.
+
+   3. Identify the current values.
+
+   4. Type "clrstat" (without the quotation marks).
+
+   5. Type "+" (without the quotation marks). Examine the log and verify that
+      ClearStatistics returned SUCCESS.
+
+   6. Press ENTER to return to the MTTOOL prompt.
+
+   7. Type "stat" (without the quotation marks) at the prompt.
+
+   8. Identify the statistics and verify that all the statistics that should
+      have been reset were, and those that should not have been reset weren't.
+
+2. Q. In the test script SLOOK001.6, the LookAhead length has been set to 256.
+   We then transmit a packet of 512 bytes in length. The packet is received and
+   echoed back. We then receive this packet through ReceiveLookAhead. The
+   BytesAvail are 256 and the FrameSize is 512. Why does the test still complain
+   although everything is supposedly in order? What is the minimum size of the
+   buffer a MAC must have for LookAhead?
+
+   A. The maximum size SetLookAhead can be called with is 256 bytes. This,
+   however, does NOT imply that the MAC buffer set aside for LookAhead must to
+   be restricted to 256. You can still set the LookAhead size to a value greater
+   than 256 and return success. For example, some MACs START their LookAhead
+   size from 256. This error usually occurs in the test because MTTOOL is
+   expecting some other packet (this is a timing issue). The best way to work
+   around this test to establish the validity of the test itself is to use the
+   interactive MTTOOL and hand check it.
+
+3. Q. Is the data_check option of BESTRES used during certification?
+
+   A. Yes, always. It makes no sense to run a stress test and not check the
+   integrity of the test data. If the data_check parameter is not specified, no
+   checking of the frames passed to the protocol is performed. INT 3s are
+   generated only if the data_check parameter is specified. Without the
+   data_check parameter, pancake will accept whatever the MAC passes up the
+   stack and disregard its correctness. Understandably, this is the most
+   difficult part of the test to pass/master/debug. This is also the most
+   critical part of testing. BESTRES and DOSTRES represent the most
+   stress/network traffic that can be placed on a driver and card.
+
+4. Q. Does an INT 3 represent anything besides data corruption?
+
+   A. The business of stress testing and pancake is a very time-critical one. The
+   INT 3 report may represent an as yet unencountered timing condition.
+
+5. Q. How does MTTOOL check for data corruption?
+
+   A. Pancake checks the frames sent to it from the MAC. This check first gets
+   the length of the frame from the word at offset 0C in the frame. Pancake then
+   proceeds to check the frame's data against its internal counter. Each byte is
+   an AND of 0xff of its position within the frame. Therefore, the data should
+   be as follows:
+
+            0E 0F 10 ... (Frame_Length & 0xff)
+
+   IMPORTANT NOTE: Pancake builds one packet of max_length in memory. For the
+   Ethernet, that is a packet of size 1514. Into this packet, pancake sets the
+   packet length at 0C 0D and then sends it to the MAC. In other words, only the
+   packet length changes the packet data. This makes it impossible for pancake
+   to build a bad packet because the data is set before testing begins.
+
+6. Q. The following errors occur when running tests from slow to fast machines:
+
+   MACTB001.12 FAIL
+   MACTB001.14 FAIL
+   MACTB004.4 FAIL
+   RESET001.6 FAIL
+   SETPF001.15 FAIL
+   SETPF001.19 FAIL
+
+   The MACTB00x.x errors seem to be due to the use of MRECV with zero delay. This
+   causes packets to be lost when the master machine is slower than the slave.
+   Isn't this acceptable driver behavior, which should not report an error?
+
+   A. This behavior is to be expected and even anticipated when a faster machine
+   is pushing a slower one. Some percentage of packets sent from a fast machine
+   to a slower will be lost. There are provisions in place to handle this
+   situation. If the MAC supports the discarded frame's statistic, it should
+   keep the value current.
+
+   This condition would be very hard to check automatically because the DWORD in
+   the Service Specific Status Table, which represents the total frames
+   discarded, is not mandatory. To check this, MTTOOL would have to add the
+   total frames received to the total frames discarded, then check that value
+   against what it expected. Most MACs don't keep this statistic, which does not
+   make this an attractive solution. Again, the only good way to check this is
+   by hand.
+
+7. Q. I call ReceiveLookAhead during my IndicationComplete routine. This is
+   something the NDIS 2.0.1 encourages MAC developers to do. This sometimes
+   leads to traps. Can I remove this feature?
+
+   A. Microsoft is currently investigating the issue of IndicationComplete
+   re-entrancy and will post new information here as it becomes available.
+   Currently, however, all MAC drivers must provide for IndicationComplete
+   re-entrancy.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

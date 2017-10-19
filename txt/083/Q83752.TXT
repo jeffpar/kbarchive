@@ -1,0 +1,68 @@
+DOCUMENT:Q83752  17-OCT-1999  [win95x]
+TITLE   :Advanced Button Not Available in Ports Option in Control Panel
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under Microsoft Windows operating system version 3.1, if the Windows 3.1
+COMM.DRV driver is not installed correctly, the button for the advanced section
+of Ports in Control Panel is unavailable (dimmed). The correct entry for the
+Windows 3.1 COM driver in the SYSTEM.INI file is:
+
+      [Boot]
+      COMM.DRV=COMM.DRV
+
+MORE INFORMATION
+================
+
+Windows 3.1 Setup does not upgrade third-party device drivers. Because there is
+no guarantee that the third-party device drivers are not required to run your
+installation of Windows, Setup may not be able to complete the installation of
+Windows 3.1 if the drivers are removed.
+
+If the Communications port driver entry is not correct, do the following:
+
+1. Edit the SYSTEM.INI file with a text editor and change the COMM.DRV entry as
+   shown above.
+
+2. Using the EXPAND command (EXPAND.EXE), expand COMM.DRV from the original
+   Windows 3.1 disks by typing the following:
+
+   EXPAND A:COMM.DR_ C:\WINDOWS\SYSTEM\COMM.DRV
+
+NOTE: The COMM.DR_ file is located on Disk 1 of the 1.44 MB (3.5-inch) disk set;
+and Disk 2 of the 1.2 MB (5.25-inch) and 720K (3.5-inch) disk sets.
+
+Additional query words: 3.10 grey gray
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

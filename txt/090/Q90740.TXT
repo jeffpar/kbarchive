@@ -1,0 +1,95 @@
+DOCUMENT:Q90740  21-SEP-1999  [win95x]
+TITLE   :Color Values for MessageBackColor and MessageTextColor Setting
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10 3.11
+
+WINDOWS
+
+kbreadme kbdisplay
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SYSINI.WRI, which is included with Windows 3.1, contains the following
+descriptions of the [386Enh] entries for MessageBackColor and MessageColorText:
+
+ - 
+
+   MessageBackColor=<vga-color-attribute>
+
+   Default:  1 (for blue)
+   Purpose:  Specifies the background color of message screens,
+             such as the screen that appears when you press
+             CTRL+ALT+DEL.
+
+   To change:  Use Notepad to edit the SYSTEM.INI file.
+
+ - 
+
+   MessageTextColor=<vga-color-attribute>
+
+   Default:  F (for white)
+   Purpose:  Specifies the color used to display text in
+             message screens, such as the screen that appears
+             when you press CTRL+ALT+DEL.
+   To change:  Use Notepad to edit the SYSTEM.INI file.
+
+MORE INFORMATION
+================
+
+The values that can be used for these settings to change the colors are not
+included in the SYSINI.WRI or with the Windows Resource Kit, they are as
+follows:
+
+   0 - Black                 8 - Gray
+
+   1 - Blue                  9 - Bright Blue
+
+   2 - Green                 A - Bright Green
+
+   3 - Cyan                  B - Bright Cyan
+
+   4 - Red                   C - Bright Red
+
+   5 - Magenta               D - Bright Magenta
+
+   6 - Yellow/Brown          E - Bright Yellow
+
+   7 - White                 F - Bright White
+
+Once you change the values in the SYSTEM.INI file, you must save changes to the
+file, exit Windows and restart Windows for the changes to take effect.
+
+Additional query words: 3.10 color control alternate delete window
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

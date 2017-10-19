@@ -1,0 +1,113 @@
+DOCUMENT:Q76803  17-DEC-2000  [msdos]
+TITLE   :Novell Causes "Cannot Load COMMAND.COM" After Upgrading MS-DOS
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade a Novell workstation to a later version of MS-DOS, the
+following error message may be displayed after you start or exit an
+application:
+
+   Cannot Load COMMAND.COM
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+ - Verify that the SHELL statement is present in the CONFIG.SYS file and remove
+   the Novell COMSPEC definition (the COMMAND.COM location) from the personal
+   login script.
+
+   NOTE: You need supervisor privileges to modify the COMSPEC setting in the
+   system login script.
+
+-or-
+
+ - If COMSPEC is set in the system login script, you can change your personal
+   login script to set COMSPEC to the new COMMAND.COM. For example:
+
+   comspec=c:\dos\
+
+-or-
+
+ - Copy the COMMAND.COM file from the root directory to the Windows directory.
+   (This is a temporary workaround only and should not be used as a final
+   solution.)
+
+MORE INFORMATION
+================
+
+The Novell COMSPEC variable is contained in the network login script and can be
+defined by a two-line entry similar the following:
+
+   MAP S2:=SYS:PUBLIC\%MACHINE_TYPE\%OS\%OS_VERSION
+   COMSPEC=S2:COMMAND.COM
+
+In this example, the %MACHINE_TYPE variable is set by the SHELL.CFG file and the
+%OS_VERSION and %OS variables are set by the Novell Shell (based on the version
+of MS-DOS used to boot the workstation). A search drive (which is the same as
+having it in the path) then maps to this directory. If a workstation is booted
+from an MS-DOS 5.0 workstation, the mapping may look like this:
+
+   SEARCH DRIVE S2=Y:\PUBLIC\IBM_PC\MSDOS\V5.00
+
+In this case, using the SET command at the MS-DOS command prompt would result in
+the following:
+
+   COMSPEC=Y:\COMMAND.COM
+
+The "Cannot Load COMMAND.COM" error message occurs when you exit an application
+as control is returned to MS-DOS and the COMMAND.COM file cannot be located.
+
+To correct the problem, make sure that the CONFIG.SYS file contains the following
+line
+
+   shell=<drive>\<dir>\command.com <drive>\<dir>\ /p
+
+where <drive> is the drive that contains the MS-DOS directory and files or
+the drive that contains COMMAND.COM and <dir> is the appropriate MS-DOS
+directory that contains COMMAND.COM.
+
+Remove the three COMSPEC-related entries from the login script, reboot the
+computer, and log back on to the network. For the procedure to modify the Novell
+login script, consult your Novell documentation, the network administrator, or
+Novell Technical Support.
+
+The products included here are manufactured by Novell, Inc., a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 3rdparty login
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

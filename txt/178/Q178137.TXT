@@ -1,0 +1,55 @@
+DOCUMENT:Q178137  04-SEP-1999  [sms]
+TITLE   :SMSINST: Compiling SMS Installer Scripts from the Command Line
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0; winnt:1.2
+OPER/SYS:
+KEYWORDS:smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+A Microsoft Systems Management Server Installer script file (.ipf) can be
+compiled from the command line using either Smsinstl.exe (a 16-bit
+Installer executable) or Smsinst32.exe (a 32-bit Installer executable).
+
+To compile the script file at the command line, use the syntax appropriate
+for the client you are using.
+
+16-bit Windows Clients
+----------------------
+
+      smsinstl /c myscript.ipf
+
+32-bit Windows Clients
+----------------------
+
+     smsinst32 /c myscript.ipf
+
+Additional query words: prodsms compile compilation
+
+======================================================================
+Keywords          : smsinst 
+Technology        : kbSMSSearch kbSMS120 kbSMSI100
+Version           : WINDOWS:1.0; winnt:1.2
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,100 @@
+DOCUMENT:Q236099  11-FEB-2002  [visualc]
+TITLE   :FIX: C1001: Internal Compiler Error in Template.cpp, Line 6514
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC600bug kbDSupport kbGrpDSVCCompiler kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling code that uses templates and contains a mismatched number of
+parameters between the declaration and implementation of the template classes,
+the compiler may give the following error:
+
+   fatal error C1001: INTERNAL COMPILER ERROR (compiler file '.\template.cpp',
+   line 6514)
+
+The line number is 6529 if you have installed Visual Studio 6.0 Service Pack 3
+(SP3).
+
+CAUSE
+=====
+
+The compiler failed to correctly parse the code and was unable to generate a
+syntax error message.
+
+RESOLUTION
+==========
+
+Check the number of parameters in the declaration and implementation of the
+template classes. Correct the code so that the parameters match.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The following code demonstrates the bug:
+
+   template <class T, bool bArray = false>
+   class Test
+   {
+   public:
+      Test(T *p);
+      T* _p;
+   };
+
+   template <class T>                // Comment this line and uncomment 
+                                     // the next line for fix.
+   //template <class T, bool bArray>
+
+   inline Test<T>::Test<T>(T *p)
+   {
+      _p = p;
+   }
+
+   void main()
+   {
+      Test<int, false> pInt = new int;
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbVC600bug kbDSupport kbGrpDSVCCompiler kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

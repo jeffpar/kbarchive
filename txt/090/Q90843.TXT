@@ -1,0 +1,220 @@
+DOCUMENT:Q90843  05-NOV-1999  [win16sdk]
+TITLE   :Packing List: Windows 3.1 SDK-Part 2 (3.5-Inch Disks)
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the second part of the packing list for the Microsoft Windows
+Software Development Kit version 3.1:
+
+   Disk 4
+   ------
+   BITMAP.DIB           Setup Toolkit Sample Bitmap
+   BLDVER.H             Setup Toolkit Build Version Include File
+   CUI.H                Setup Toolkit Custom Interface Include File
+   CUISTF.LNK           Setup Toolkit Nondebugging Linker File
+   CUISTFD.LNK          Setup Toolkit Debug Linker Response File
+   DIALOGS.DLG          Setup Toolkit Dialog Template File
+   DIALOGS.H            Setup Toolkit Dialog Control ID Include File
+   DIALOGS.RC           Setup Toolkit Dialog Resource Compiler File
+   DIALOGS.RES          Setup Toolkit Dialog Resource File
+   MAKEFILE             Setup Toolkit DLL Project Make File
+   MSCOMSTF.LIB         Setup Toolkit Common Static Library
+   MSCUISTF.DEF         Setup Toolkit Project Definitions File
+   MSSHLSTF.LIB         Setup Toolkit Static Shell Library
+   MSUILSTF.LIB         Setup Toolkit Static User Interface Library
+   SETUP.ICO            Setup Toolkit Icon
+   COLORLST.VBX         Setup Toolkit Visual Basic Colors File
+   DSKLAYT.EXE          Setup Toolkit Disk Layout Program for Windows
+   DSKLAYT2.EXE         Setup Toolkit Disk Layout Program for MS-DOS
+   VBRUN100.DLL         Setup Toolkit Disk Layout DLL
+   GAUGE.DLG            Setup Toolkit Installation Percentage Gauge
+   GAUGE.H              Setup Toolkit Installation Control ID
+   IDS.H                Setup Toolkit Message ID Numbers
+   IDS_INST.H           Setup Toolkit Additional Message ID Numbers
+   LOGIDS.H             Setup Toolkit Function ID Numbers
+   MSCOMSTF.DLL         Setup Toolkit Common Dynamic Link Library
+   MSCOMSTF.RC          Setup Toolkit Common Library Resource File
+   MSDETSTF.DLL         Setup Toolkit Detection Dynamic Link Library
+   MSDETSTF.RC          Setup Toolkit Detection Library Resource File
+   MSINSSTF.DLL         Setup Toolkit Install Dynamic Link Library
+   MSINSSTF.RC          Setup Toolkit Install Library Resource File
+   MSSHLSTF.DLL         Setup Toolkit Shell Dynamic Link Library
+   MSSHLSTF.RC          Setup Toolkit Shell Library Resource File
+   MSUILSTF.DLL         Setup Toolkit User Interface Dynamic Link Library
+   MSUILSTF.RC          Setup Toolkit User Interface Library Resource File
+   FILEDESC.WRI         Setup Toolkit File Listings and Descriptions
+   MSCUISTF.DLL         Setup Toolkit Custom User Interface DLL
+   MSDETECT.INC         Setup Toolkit Detection API Include File
+   MSDETSTF.DLL         Setup Toolkit Detection Dynamic Link Library
+   MSINSSTF.DLL         Setup Toolkit Install Dynamic Link Library
+   MSREGDB.INC          Setup Toolkit Registration Database Include File
+   MSSHARED.INC         Setup Toolkit Shared Files API Include File
+   README.WRI           Setup Toolkit Readme
+   SAMPLE1.INF          Setup Toolkit Sample 1 File Information
+   SAMPLE1.MST          Setup Toolkit Sample 1 Instruction File
+   SAMPLE2.INF          Setup Toolkit Sample 2 File Information
+   SAMPLE2.MST          Setup Toolkit Sample 2 Instruction File
+   SAMPLE3.INF          Setup Toolkit Sample 3 File Information
+   SAMPLE3.MST          Setup Toolkit Sample 3 Instruction File
+   SETUP.EXE            Setup Toolkit Bootstrapper Program
+   SETUP.LST            Setup Toolkit Temporary Directory File List
+   SETUPAPI.INC         Setup Toolkit Common API Include File
+   TESTDRVR.HLP         Microsoft Test Driver API Help File
+   _MSSETUP.EXE         Setup Toolkit System File Update Program for MS-DOS
+   _MSTEST.EXE          Microsoft Test Installation Script Interpreter
+   MARS.DLL             Pen Windows Recognizer Dynamic Link Library
+   MARS.MOB             Pen Windows Recognizer Database
+   MSMOUSE.DRV          Pen Windows Tablet Simulator Mouse Driver
+   PENWIN.INI           Pen Windows Default Initialization File
+   README.TXT           Pen Windows Programming Information File
+   VGAP.DRV             Pen Windows Ink Video Driver (VGA)
+   YESMOUSE.DRV         Pen Windows Stub Mouse Driver
+   WINHELP.HLP          Help File on Using Windows Help
+   CLIDEMO.C            Object Linking and Embedding Client Sample Code
+   CLIDEMO.DEF          OLE Client Sample Program Definition File
+   CLIDEMO.H            OLE Client Sample Program Include File
+   CLIDEMO.ICO          OLE Client Sample Program Icon
+   CLIDEMO.RC           OLE Client Sample Program Resource File
+   CLIVER.RCV           OLE Client Sample Program Constant File
+   DEMORC.H             OLE Demo Resource Compiler Include File
+   DIALOG.C             OLE Demo Common Dialog Box Code
+   DIALOG.H             OLE Demo Common Dialog Include File
+   GLOBAL.H             OLE Demo Global Variable Include File
+   MAKEFILE             OLE Client Demo Program Make File
+   OBJECT.C             OLE Client Demo Object Source File
+   OBJECT.H             OLE Client Demo Object Include File
+   REGISTER.C           OLE Client Demo Windows Registration Source File
+   REGISTER.H           OLE Client Demo Windows Registration Include File
+   STREAM.C             OLE Client Demo IO Stream Control Source File
+   STREAM.H             OLE Client Demo IO Stream Control Include File
+   UTILITY.C            OLE Client Demo General Utilities Source File
+   UTILITY.H            OLE Client Demo General Utilities Include File
+   CROPDIB.C            Bitmap Multimedia Color Demo Source File
+   CROPDIB.DEF          Bitmap Multimedia Color Demo Definition File
+   CROPDIB.H            Bitmap Multimedia Color Demo Include File
+   CROPDIB.ICO          Bitmap Multimedia Color Demo Icon
+   CROPDIB.RC           Bitmap Multimedia Color Demo Resource File
+   DIB.C                Device Independent Bitmap Manipulation Source File
+   DIB.H                Device Independent Bitmap Manipulation Include File
+   MAKEFILE             Bitmap Multimedia Color Demo Make File
+   MAKEFILE             Dynamic Data Exchange Client Make File
+   CLINIT.C             DDE Client Initialization Source File
+   DDE.C                DDE Demo Source File
+   DDEMLCL.C            DDEML Library Demo Source File
+   DIALOG.C             DDEML Client Demo Dialog Source File
+   HUGE.C               DDEML Client Demo Large Data Block Source File
+   INFOCTRL.C           DDEML Client Demo Information Control Source File
+   MEM.C                DDEML Client Demo Memory Allocation Source File
+   TRACK.C              DDEML Client Demo Generic Tracking Source File
+   DDEMLCL.DEF          DDEML Client Demo Definition File
+   DDEMLCL.DLL          DDEML Client Demo Dynamic Link Library
+   DDEMLCL.H            DDEML Client Demo Function Prototype File
+   DIALOG.H             DDEML Client Demo Dialog Include File
+   HUGE.H               DDEML Client Demo Large Data Block Include File
+   INFOCTRL.H           DDEML Client Demo Information Control Include File
+   TRACK.H              DDEML Client Demo Generic Tracking Source File
+   CONV.ICO             DDEML Client Demo Convert Icon
+   DDEMLCL.ICO          DDEML Client Demo Icon
+   LIST.ICO             DDEML Client Demo List Icon
+   DDEMLCL.RC           DDEML Client Demo Resource Compiler File
+   MAKEFILE             DDEML Clock Demo Make File
+   CLOCKDAT.ASM         DDEML Clock Demo Hardware Independent Variables
+   GETTIME.ASM          DDEML Clock Demo Time Retrieval Program
+   CLOCKDAT.BIN         DDEML Clock Demo Binary File
+   DDEMLCLK.C           DDEML Clock Demo Source File
+   WRAPPER.C            DDEML Clock Demo Standard Callback Function
+   DDEMLCLK.DEF         DDEML Clock Demo Definition File
+   DDEMLCLK.DLL         DDEML Clock Demo Dynamic Link Library
+   DDEMLCLK.H           DDEML Clock Demo Include File
+   WRAPPER.H            WRAPPER.C Prototype File
+   DDEMLCLK.ICO         DDEML Clock Demo Icon
+   GETTIME.OBJ          GETTIME.ASM Object Module
+   DDEMLCLK.RC          DDEML Clock Demo Resource Compiler File
+   MAKEFILE             DDEML Server Demo Make File
+   DDE.C                DDE Demo Source File
+   DDEMLSV.C            DDEML Server Demo Source File
+   DIALOG.C             DDEML Server Demo Dialog Source File
+   HUGE.C               DDEML Server Demo Large Data Block Source File
+   DDEMLSV.DEF          DDEML Server Demo Definition File
+   DDEMLSV.DLL          DDEML Server Demo Dynamic Link Library
+   DDEMLSV.H            DDEML Server Demo Include File
+   DIALOG.H             DIALOG.C Include File
+   HUGE.H               HUGE.C Include File
+   DDEMLSV.ICO          DDEML Server Demo Icon
+   DDEMLSV.RC           DDEML Server Demo Resource Compiler File
+   MAKEFILE             HELPEX Demo Make File
+   BULLET.BMP           Bullet Bitmap Image
+   CHKBOFF.BMP          Check Box Off Bitmap Image
+   CHKBON.BMP           Check Box On Bitmap Image
+   CODEC.BMP            Rich Text Format Example Bitmap
+   CONTINUE.BMP         Continue Push Button Bitmap Image
+   DONE.BMP             Done Push Button Bitmap Image
+   HELPICON.BMP         Help Cursor Bitmap Image
+   MAX2ICON.BMP         Maximize Button Bitmap Image
+   MOUSE.BMP            Mouse Bitmap Image
+   WINWORD.BMP          Microsoft Word for Windows Icon Image
+   HELPEX.C             HELPEX Sample Program for Using WinHelp
+   HELP.CUR             HELPEX Sample Program Cursor
+   HELPEX.DEF           HELPEX Sample Program Definition File
+   HELPEX.DLL           HELPEX Sample Program Dynamic Link Library
+   HELPEX.H             HELPEX Sample Program Include File
+   HELPIDS.H            HELPEX Sample Program ID Numbers File
+   HELPEX.RC            HELPEX Sample Program Resource Compiler File
+   HELPEX.RTF           HELPEX Sample Program Rich Text Format File
+   KEYS.RTF             HELPEX Sample Program RTF File Number 2
+   TERMS.RTF            HELPEX Sample Program RTF File Number 3
+   MAKEFILE             INSTVER Sample Program Make File
+   DLLENTRY.ASM         Dynamic Link Library Assembler Entry Code
+   DOS.ASM              File I/O Utilities Assembler Source Code
+   INSTVER.C            INSTVER Sample Program Source Code
+   INSTVER.DEF          INSTVER Sample Program Definition File
+   INSTPRIV.H           INSTVER Sample Program Include File (MS-DOS only)
+   INSTVER.H            INSTVER Sample Program Include File (Windows)
+   DLLENTRY.OBJ         Dynamic Link Library Entry Code Object Module
+   DOS.OBJ              File I/O Utilities Object Module
+   MAKEFILE             MEMORY Sample Program Make File
+   MEMORY1.C            MEMORY Sample Program Message Loop
+   MEMORY2.C            MEMORY Sample Program Window Registration Code
+   MEMORY3.C            MEMORY Sample Program Window Procedure
+   MEMORY4.C            MEMORY Sample Program Dialog Procedure
+   MEMORY.DEF           MEMORY Sample Program Definition File
+   MEM.H                MEMORY Sample Program Include File
+   MEMORY.RC            MEMORY Sample Program Resource Compiler File
+
+NOTE: Disk 4 Information will be continued in Part 3 of the Packing List for
+Microsoft Windows Software Development Kit 3.10
+
+Additional query words: packing.lst setup.exe 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

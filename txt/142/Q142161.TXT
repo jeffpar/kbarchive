@@ -1,0 +1,59 @@
+DOCUMENT:Q142161  08-AUG-2001  [winnt]
+TITLE   :LAN Manager Toolbar Hangs When Accessing Windows NT Computer
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2x,3.5,3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - Microsoft LAN Manager, version 2.2x 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Toolbar utility in the LAN Manager Resource Kit and attempt to
+access any application on a Windows NT computer, the LAN Manager client computer
+stops responding (hangs).
+
+WORKAROUND
+==========
+
+To work around this problem, remove the Toolbar utility from the LAN Manager
+client computer.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Toolbar for LAN Manager. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 2.20 2.2b 2.2c lanman
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbLanManSearch kbLanMan220xSearch
+Version           : :2.2x,3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,53 @@
+DOCUMENT:Q70363  09-OCT-1999  [utilities]
+TITLE   :FIX: /PAGESIZE Option Not Supported in LIB 3.10
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LIB for MS-DOS, version 3.1 
+ - Microsoft LIB for OS/2, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Library Manager utility (LIB) version 3.10 (that shipped with MASM
+5.10) does not support the /PAGESIZE option. Regardless of the value specified
+with this option, LIB 3.10 returns the following error:
+
+   LIB : warning U4153: PAGESIZE:x : page size invalid; ignored
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in LIB version 3.1. This problem
+was corrected in LIB version 3.11.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbLibSearch kbZNotKeyword3 kbLibMan310DOS kbLibMan311OS2
+Version           : :3.1
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,87 @@
+DOCUMENT:Q309277  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call Dark Majesty: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements needed to play Microsoft
+Asheron's Call Dark Majesty.
+
+MORE INFORMATION
+================
+
+To play Asheron's Call Dark Majesty, you need:
+
+ - Internet connectivity and an active Zone.com membership are required to set
+   your Asheron's Call account. A monthly service charge is applicable after
+   your trial period ends. Zone membership is subject to the terms of the Zone
+   license agreement.
+
+ - Internet access (you are responsible for all charges related to your Internet
+   access. Connect time charges may apply).
+
+ - Multimedia PC with Pentium 333 MHz or higher processor.
+
+ - Microsoft Windows 98, Microsoft Windows 2000, Microsoft Windows Millennium
+   Edition (Me), or Microsoft Windows XP operating system.
+
+ - DirectX 6.1 API.
+
+ - 64 megabytes (MB) RAM.
+
+ - Microsoft Internet Explorer version 4.0 or later browser software, or
+   Netscape 4.0x.
+
+ - 300 MB available hard disk space for typical install, 100 MB of hard disk
+   space for swap file.
+
+ - Quad-speed CD-ROM drive or faster.
+
+ - Super VGA (800 x 600) monitor.
+
+ - Super VGA (800 x 600) video card supporting 16-bit color.
+
+ - Microsoft Mouse or compatible pointing device.
+
+ - 28.8 Kbps modem.
+
+ - Sound card.
+
+Optional
+
+ - 3D accelerator card (8 MB or more memory recommended).
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbAsheronSearch kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,98 @@
+DOCUMENT:Q278609  06-JAN-2001  [sms]
+TITLE   :SMS: Can't Modify Distribution Points for Packages from Parent
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to modify the Distribution Points for a Systems Management
+Server (SMS) package created at a parent site, the Package Creation Wizard may
+not function as expected. By clicking More Information, you may receive the
+following error messages:
+
+   An error occurred during the operation of this wizard.
+
+   Description: An error occurred during the operation of this wizard.
+   HRESULT : 0xEEEF0001
+   File : E:\OPALSP2\mmcadminui\Support\SMS_NBAS\NBAS_ErrorHelper.cpp
+   Line: 54
+
+   Description: Wizard internal error: invalid WBEM Get or Put result.
+   Please exit the Wizard.
+   HRESULT : 0x80041001
+   File : E:\OPALSP2\mmcadmpages\Advertwiz\DisWzFinish1.cpp
+   Line: 467
+
+   Description: DISTSRC_ACCESS_DENIED: Update to a package that's not created at
+   this site is not allowed.
+   Error : WBEM_E_FAILED
+   Operation: DeleteInstance
+   ParameterInfo:
+   SMS_DistributionPoint.PackageID="xxxxxxxx",ServerNALPath="[\"Display=\\\ADDCPA01M\\\"]MSWNET:[\"SMS_SITE=XXX\"]\\\\ADDCPA01M\\",SiteCode="XXX"
+
+   Wbem error object:
+
+   instance of SMS_ExtendedStatus
+   {
+   CauseInfo = "4";
+
+   Description = "DISTSRC_ACCESS_DENIED: Update to a package that's not created
+   at this site is not allowed. ";
+   ErrorCode = 2152073733;
+   File = "E:\\OPALSP2\\sdk_provider\\nt\\smsprov\\SspPkgServer.cpp";
+   Line = 287;
+   Operation = "DeleteInstance";
+   ParameterInfo =
+   "SMS_DistributionPoint.PackageID=\"xxxxxxxx\",ServerNALPath=\"[\\\"Displ
+   ay=\\\\\\\\ADDCPA01M\\\\\\\"]MSWNET:[\\\"SMS_SITE=XXX\\\"]\\\\\\\\ADDCPA
+   01M\\\\\",SiteCode=\"XXX\"";
+   ProviderName = "ExtnProv";
+   StatusCode = 2147749889;
+   };
+
+   MMF Build Info : SMS 2.0 SP2 (1493)
+
+MORE INFORMATION
+================
+
+This behavior can occur when you attempt to modify the properties of a package
+created at a higher-level site in your hierarchy. Because the package was
+created at a parent site, it is locked to prevent the child site from modifying
+any of its properties. The solution is to define the Distribution Points at the
+Parent site in which the package was created. When the clients attempt to run
+the advertised package, they will access it from a distribution point for their
+respective sites.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

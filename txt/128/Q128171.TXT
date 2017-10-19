@@ -1,0 +1,77 @@
+DOCUMENT:Q128171  30-OCT-1999  [pcmail]
+TITLE   :PC MAPI: MAPI Messages w/ Space in Message Type Fail to Print
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a custom message using the Messaging Application Program
+Interface (MAPI), you may not be able to print or save the message to a text
+file.
+
+WORKAROUND
+==========
+
+The MapiMessage MessageType should not contain any space characters in the
+string, or keep the message type letters the same case.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.0 and 3.2 of Microsoft
+Mail for PC Networks. We are researching the problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This happens when the developer constructs the MapiMessage structure and defines
+the MessageType string. The MessageType is in the form:
+
+   IPM.VendorName.subclass
+
+If a white space character is used in the VendorName field of the MapiMessage
+MessageType, the message may not print or save correctly. For example,
+
+   IPM.Test Message.Note
+
+Also, if you leave all the characters lowercase, the problem does not occur. It
+is only when using the space in conjunction with the leading capital letters.
+
+This problem can occur when you use one of the following versions of MAPI.DLL:
+
+   MAPI.DLL 11-1-93 53,536 (Windows for Workgroups version)
+   MAPI.DLL 3-9-93 54,384 (Update from MAPIUPD.EXE on the MSL)
+
+Additional query words: 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,71 @@
+DOCUMENT:Q120078  03-OCT-1999  [win3x]
+TITLE   :Cannot Connect to WGPO with Full-Access Password
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you set up and share a workgroup post office (WGPO) with full access and a
+full-access password on a Windows for Workgroups network, you can connect to the
+WGPO only one time on a client machine that has the Reconnect At Startup and
+Ghosted Connections options selected. Subsequent attempts to connect to the WGPO
+after exiting and signing out of Mail and quitting and restarting Windows
+generate the following error message:
+
+   Cannot Connect to Workgroup Postoffice
+
+CAUSE
+=====
+
+When you are connected to the remote WGPO in File Manager with a password and
+the Reconnect At Startup and Ghosted Connections options selected, no physical
+connection to the WGPO is established. The Mail client cannot locate the Mail
+server, and you receive the above error message.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. In File Manager on the client, disconnect from the WGPO located on the mail
+   server.
+
+2. Delete or rename the MSMAIL.INI file on the local machine. Start Microsoft
+   Mail and connect to an existing post office. Enter the WGPO password when
+   prompted.
+
+These steps correct the serverpath= setting in the MSMAIL.INI file, allowing you
+to connect to the WGPO normally.
+
+Additional query words: 3.11 msmail password
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

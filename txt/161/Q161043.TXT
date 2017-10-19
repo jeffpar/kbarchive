@@ -1,0 +1,88 @@
+DOCUMENT:Q161043  31-JUL-2001  [sms]
+TITLE   :SMS: Despooler Error: 'WIN32 ERROR = 32'
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbtool kbusage kbDespooler smsdespoolerkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A single job may cause the distribution process to stop responding. The job in
+question will report the following error in the Despooler log file:
+
+   found ready instruction file for 1000tS01.ins
+   failed to open <path to INS file in Despoolr> WIN32 ERROR = 32
+   Cannot decompress instruction file
+
+The status of all new jobs created after this process will remain Pending, and
+the original job will not complete until either Despooler or Smsexec are stopped
+and restarted.
+
+CAUSE
+=====
+
+Despooler attempts to read the INS file passed to it by Lansend before Lansend
+has released its file lock. Consequently, Despooler cannot access the INS file.
+Despooler should try to read the INS file again at the next polling cycle, but
+is not doing so.
+
+WORKAROUND
+==========
+
+To work around this problem, manually stop and restart the Sms_executive
+service. Use the following AT scheduling commands to stop and restart the
+service on a daily or weekly basis.
+
+      at \\anfield 21:00 /every:m,t,w,th,f,s,su "c:\winnt\stop.bat"
+
+      Stop.bat = net stop sms_executive
+
+      at \\anfield 21:20 /every:m,t,w,th,f,s,su "c:\winnt\start.bat"
+
+      Start.bat = net start sms_executive
+
+NOTE: Start the scheduler service on the site server as an administrator user.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem was corrected in the latest Microsoft Systems
+Management Server version 1.2 U.S. Service Pack. For information on obtaining
+the service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: Despool Error32 32 share
+
+======================================================================
+Keywords          : kbtool kbusage kbDespooler smsdespooler kbfixlist
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

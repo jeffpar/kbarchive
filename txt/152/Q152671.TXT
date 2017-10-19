@@ -1,0 +1,63 @@
+DOCUMENT:Q152671  28-MAR-1999  [exchange]
+TITLE   :XADM: Can't Create/Open the LoadSim Performance Registry Key
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error might be generated when you start the LoadSim application:
+
+   WARNING: Can't create/open the LoadSim Performance Registry Key.
+
+CAUSE
+=====
+
+This error will be generated if you are not logged in to the Windows NT Domain
+as a member of the Microsoft Exchange Server Administrator's group.
+
+RESOLUTION
+==========
+
+Run LoadSim when you are logged into the Windows NT Domain as a member of the
+Microsoft Exchange Server Administrator's group.
+
+MORE INFORMATION
+================
+
+The error has also been reported if you are logged in as a member of the Doman
+Admins group when Microsoft Exchange Server is running on a Windows NT Primary
+Domain Controller (PDC). You must at least belong to the Microsoft Exchange
+Server Administrator's group to successfully run Loadsim.
+
+Additional query words: LoadSim XSRVAdm Warning
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

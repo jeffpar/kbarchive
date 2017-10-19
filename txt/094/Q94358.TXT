@@ -1,0 +1,59 @@
+DOCUMENT:Q94358  23-NOV-1999  [msdos]
+TITLE   :MemMaker Err Msg with QEMM: 'Bad Command or Filename'
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using QEMM to load your files into upper memory and the FILES command
+has a plus (+) sign for a delimiter (for example, C:\QEMM\LOADHI /R:1 FILES+30),
+you will receive the following error message:
+
+   Bad Command or Filename
+
+CAUSE
+=====
+
+Using a plus sign as a delimiter is not standard for MS-DOS. If your QEMM
+command contains "FILES+nn", MemMaker returns the error message noted above.
+
+WORKAROUND
+==========
+
+To work around the problem, remove the QEMM "FILES+nn" command from your
+AUTOEXEC.BAT file and use the "files=" setting in your CONFIG.SYS file to
+specify the number of open files. Run MemMaker again to ensure that you have the
+optimal memory configuration.
+
+Additional query words: 6.22 6.00 handles 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

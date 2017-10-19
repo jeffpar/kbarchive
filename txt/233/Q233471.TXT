@@ -1,0 +1,66 @@
+DOCUMENT:Q233471  06-AUG-2002  [homemm]
+TITLE   :Business Planner: Excel Template Always Prompts to Save Changes
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you close a Microsoft Excel template opened by an Excel wizard link in
+Microsoft Business Planner without making changes to the template, you receive
+the following message:
+
+   Do you want to save the changes you made to <filename>? Microsoft Excel
+   recalculates formulas when opening files last saved by an earlier version of
+   Excel.
+
+CAUSE
+=====
+
+This behavior occurs because the Excel templates created for Business Planner
+were created prior to the release of Microsoft Excel 2000.
+
+MORE INFORMATION
+================
+
+All versions of Excel prior to Excel 2000 prompt you with the following message
+
+   Do you want to save the changes you made to <filename>? Microsoft Excel
+   recalculates formulas when opening files last saved by an earlier version of
+   Excel.
+
+when you close an Excel workbook without making changes to the file.
+
+Additional query words: msbp xl2000 xlt
+
+======================================================================
+Keywords          : kbinterop kbtool kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,62 @@
+DOCUMENT:Q299819  07-MAY-2002  [homegame]
+TITLE   :Train Simulator: Switch Does Not Function as Expected
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press SHIFT+G to operate a switch in Microsoft Train Simulator, the
+switch may not move as expected.
+
+CAUSE
+=====
+
+This behavior can occur if the train is positioned either on top of or too close
+to the switch for the switch to be moved.
+
+RESOLUTION
+==========
+
+To resolve this issue, back the train up to clear the switch, and then try
+moving the switch again.
+
+MORE INFORMATION
+================
+
+A switching operation can be performed either in front of or behind the train.
+However, switching cannot be performed if the train is too close to, or directly
+on top of, the switch itself.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbTrainSim
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

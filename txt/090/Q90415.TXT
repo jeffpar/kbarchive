@@ -1,0 +1,62 @@
+DOCUMENT:Q90415  02-FEB-2000  [foxpro]
+TITLE   :Suppressing the "Invalid Input" Error Message in FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Microsoft FoxPro evaluates a user-defined function (UDF) that returns the
+Boolean value .F., FoxPro displays the message "Invalid Input (press space)" and
+halts execution until you press the SPACEBAR. To suppress this error message,
+return the value 0 when the condition is not met.
+
+The code example below accepts input for a screen variable called "mystate". The
+code calls a UDF to evaluate mystate, and displays a customized error message
+when the state is not equal to "WA".
+
+      mystate=SPACE(2)
+      @ 2,2 GET mystate VALID checkit()
+      READ
+    
+      PROCEDURE checkit
+      IF UPPER(mystate)<>"WA"
+         WAIT WINDOW "MYSTATE must be equal to WA" NOWAIT
+         RETURN 0
+      ENDIF
+      RETURN
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin prompt
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

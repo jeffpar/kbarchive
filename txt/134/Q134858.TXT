@@ -1,0 +1,47 @@
+DOCUMENT:Q134858  24-OCT-1999  [crossnet]
+TITLE   :Removing NetBIOS from Above TCP/IP-32 for Windows for Workgroups
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11,3.11a,3.11b; WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+To remove the NetBIOS support layer that is above TCP/IP-32 for Windows for
+Workgroups 3.11, remove the file name VNBT.386 from the transport line in
+the [386Enh] section of your SYSTEM.INI file:
+
+   transport=....,vnbt.386
+
+NetBIOS applications and NetBIOS browsing and name resolution do not work
+after this change, however, the Sockets application interface is still
+available for applications like FTP and Telnet.
+
+Additional query words: wfw wfwg 3.11 3.11a 3.11b
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b; WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

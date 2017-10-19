@@ -1,0 +1,48 @@
+DOCUMENT:Q120815  07-FEB-2002  [winmisc]
+TITLE   :Modified Windows Sound System Setup with Adaptec 1570 & 1572
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows Sound System software found on Adaptec 1570 and 1572 audio
+cards has been modified by Adaptec.
+
+The Adaptec SCSI 1570 and 1572 integrated audio cards use the Windows Sound
+System software version 2.0. According to Adaptec, the Setup process has been
+modified for these particular cards. Therefore, Setup issues on these cards are
+handled by Adaptec. Usability issues are supported by Microsoft.
+
+Additional query words: 2.00 scsi scisi adptec 157 adaptc
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

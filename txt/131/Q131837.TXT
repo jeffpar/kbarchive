@@ -1,0 +1,65 @@
+DOCUMENT:Q131837  15-FEB-2000  [foxpro]
+TITLE   :How to Return from an Event or Method
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes, it may be necessary to exit or return from an event or method. This
+article documents how to do this.
+
+MORE INFORMATION
+================
+
+For this article, assume you have created a form that requires at least one
+parameter. When the form is run without being passed a parameter, you'd like to
+cancel the form and issue an error message.
+
+In version 2.x, you could do this with the RETURN command. In Visual FoxPro, the
+process is similar but somewhat different because you must return a value of
+false from the INIT method. The following code shows how to handle this type of
+a situation in the INIT code of a form.
+
+     PARAMETER tnMyParm
+     IF PARAMETERS() < 1 OR EMPTY(tnMyParm)
+          * Display a message
+          * Release the form
+          RETURN .F.
+     ENDIF
+     More init code ...
+
+Returning a value of false (.F.) prevents the creation the object (a form in this
+case).
+
+Additional query words: VFoxWin cancel event
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,92 @@
+DOCUMENT:Q125378  24-AUG-1999  [foxpro]
+TITLE   :FoxPro Advisor Magazine Articles June 1994
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.60a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+ - Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+-------------------------------------------------------------------------------
+
+NOTE: The "FoxPro Advisor" is published by Data Based Solutions, Inc., a
+publisher independent of Microsoft; we make no warranty or endorsement,
+implied or otherwise, regarding the accuracy or reliability of information
+published in the "FoxPro Advisor." Please contact Data Based Solutions if
+you have questions or want to order the "FoxPro Advisor".
+
+SUMMARY
+=======
+
+Below is the table of contents of the June 1994 "FoxPro Advisor," a magazine
+published by Data Based Solutions, Inc., 4010 Morena Blvd., Suite 200, San
+Diego, CA 92117. For more information, please call Data Based Solutions at
+619-483-6400, or to place an order, please call them at 800-336-6060.
+
+MORE INFORMATION
+================
+
+FoxPro Fundamentals, page 10. Strategies for Using Indexes. By Miriam Liskin.
+Learning how to use the right type of index for a situation is the key to
+getting the best performance from FoxPro. This article explains what structural,
+compound, compact, and standalone indexes are all about. CDX, complex key
+expressions, optimize, TRIM,
+
+Functional FoxPro, page 16. Getting Exclusive Use. By Malcolm C. Rubel. The
+problem we face and the reason we want a function to help us is that we have no
+way of knowing if the .DBF file we want is in use elsewhere on the network. USE
+EXCLUSIVE, SET EXCLUSIVE, UNIQUE(), DESCEND(), FOR(), TAGNO(), PACK, INDEX,
+MODIFY STRUCTURE, ZAP, SYS(2011), FLOCK()
+
+Data Dictionary, page 20. The Caveman Data Dictionary Evolves! By Jay Rubin. Here
+are some improvements on last year's Data Dictionary. Control table.
+
+FoxPro Tip, page 26. When PgUp Doesn't in a Multiple-Screen Set. By Drew Speedie.
+Problem: You've created a multiple-screen set, and sometimes when you press
+PgUp, control doesn't go back to the previous screen as it should. Cause: Use of
+a WHEN clause which evaluates .F. Solution: use SHOW GET DISABLE ENABLE
+instead.
+
+Report Viewer, page 28. A Report Viewer for DOS, Windows, and Mac. By Menachem
+Bazian. ON THE COVER. As good as FoxPro's reports can be, they are designed to
+be printed. Yet users often want to view reports on the screen. This issue
+presents a comprehensive solution that works in all version of FoxPro and gives
+the user control over the display. Scrolling the report, creating mouse objects,
+printing a report to a file.
+
+Browse, page 40. Browse as a READ Object. By David Bower. Everyone wants to do
+it, but how? Here's another way, possibly the best of all, to integrate BROWSE
+and READ. Trick: Using BROWSE NOCLEAR in WHEN of an invisible button.
+#ITSEXPRESSION, #WNAME, SCHEME(), SHOW GETS.
+
+Q&A, page 50. Answers to Readers' Questions about FoxPro. By Steve Freides
+and Tamar E. Granor. SELECT SQL, ORDER BY, SYS(3), Aliases, Report Writer UDF's,
+UPDATED().
+
+Additional query words: FoxWin FoxDos FoxMac 2.50, 2.50a 2.50b 2.50c dba fpa
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro260a
+Version           : 2.60a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

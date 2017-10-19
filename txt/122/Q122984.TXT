@@ -1,0 +1,57 @@
+DOCUMENT:Q122984  09-JUN-1999  [homegame]
+TITLE   :Golf Err Msg: Could Not Find Directory
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbother kbprb kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you install one of the championship golf courses (that is, Banff Springs,
+Mauna Kea, or Pinehurst), without having installed the actual Microsoft Golf
+game, you will receive the following error message:
+
+   Setup could not find Microsoft Golf in the specified destination path. If you
+   wish to select another destination path, choose Retry or choose Cancel Setup
+   to exit.
+
+The setup routine allows you to change to directories other than the default, but
+Microsoft Golf must be installed onto your computer prior to installing one of
+the courses.
+
+Once the game Microsoft Golf has been installed, the championship courses should
+install with no further problem.
+
+Additional query words: 1.00 Setup Banff Mauna Pinehurst Courses Course
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

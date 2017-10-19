@@ -1,0 +1,53 @@
+DOCUMENT:Q113835  21-NOV-1999  [msdos]
+TITLE   :MS-DOS Setup Patch Gauge Hangs at 99 Percent
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.21
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.21 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install MS-DOS 6.21, Setup attempts to patch your existing DoubleSpace
+files to update them for 6.21 and yet still retain the DoubleSpace
+functionality.
+
+If the patch contains a valid header signature (FXPF) but the rest of the patch
+file is damaged, the system may stop responding (hang) with the patch gauge at
+99 percent.
+
+WORKAROUND
+==========
+
+To work around this problem, reboot the system, run uninstall, and obtain
+replacement MS-DOS 6.21 disks.
+
+Additional query words: 6.22 6.20 hung frozen locked up lock freeze upgrade DBLSPACE.EX# 99%
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621
+Version           : MS-DOS:6.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

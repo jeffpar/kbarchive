@@ -1,0 +1,68 @@
+DOCUMENT:Q129330  29-JUL-2001  [visualc]
+TITLE   :FIX: Installing CDK Appears to Corrupt Visual C++ Help Index
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbole kbCtrlkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft OLE Control Developer's Kit (CDK) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing the 32-bit CDK, you may find that some keyword searches in the
+Help menu bring up references to a non-existent help file ("Miscellaneous Tools
+Quick Reference" - TOOLS20.HLP) or don't find anything at all (OLE API
+functions).
+
+CAUSE
+=====
+
+The 32-bit CDK installation copies its own help files into the \MSVC20\HELP
+directory. It replaces the default Visual C++ version 2.0 index file
+(MSVC20.IDX) with its own copy. The MSVC20.IDX that comes with the CDK does not
+include all the correct indexes to the correct help files.
+
+RESOLUTION
+==========
+
+Reinstalling the help files for Visual C++ version 2.0 will restore the original
+MSVC20.IDX index file. To access the CDK help files, you will need to open them
+separately, using WINHLP32.EXE.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Microsoft OLE Control
+Developer's Kit (CDK), version 1.1.
+
+Additional query words: 1.00 1.10 setup
+
+======================================================================
+Keywords          : kbole kbCtrl kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbOLESearch
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

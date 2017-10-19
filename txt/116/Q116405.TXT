@@ -1,0 +1,73 @@
+DOCUMENT:Q116405  08-AUG-2001  [winnt]
+TITLE   :STOP Message: 0xC000021A During Logon Because of Bad PATH
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your AUTOEXEC.BAT file contains a PATH statement with unmatched percent
+characters ("%"), for example:
+
+   PATH C:\;%PATH
+
+when you log on, WINLOGON.EXE will terminate with an access violation and this
+STOP message will appear:
+
+   STOP: 0xC000021A {Fatal System Error}
+   The Windows Logon Process system process terminated unexpectedly with a status
+   of 0xC0000005. The system has been shutdown.
+
+CAUSE
+=====
+
+Windows NT fails to detect a NULL pointer and subsequently, incorrectly de-
+references that pointer causing an access violation.
+
+WORKAROUND
+==========
+
+To regain access your computer, connect to it remotely over the network and edit
+or rename the AUTOEXEC.BAT file. Alternately, if the file system is formatted as
+FAT, start MS-DOS and edit or rename your AUTOEXEC.BAT file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. This problem has been corrected in Windows NT
+Workstation and Windows NT Server version 3.5.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

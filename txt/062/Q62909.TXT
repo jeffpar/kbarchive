@@ -1,0 +1,59 @@
+DOCUMENT:Q62909  18-DEC-2000  [win95x]
+TITLE   :How to Disable QEMM.SYS Version 5.0 in Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:2.x,3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+There are three methods to disable QEMM.SYS version 5.0 from loading:
+
+1. Boot clean or from an MS-DOS disk that does not contain QEMM.SYS.
+
+2. Manually remove the device line from the CONFIG.SYS file
+   (device=<path>QEMM.SYS [parameters]). This can be done by without
+   erasing the user's configuration of QEMM.SYS by placing REM before the
+   device= line (this will cause MS-DOS versions earlier than 4.0 to give an
+
+   invalid line in CONFIG.SYS error
+
+   which will cause no harm to your system).
+
+3. Reboot or reset the computer.
+
+   a. After the initial computer beep, press the ALT key.
+
+   b. When the message "QEMM; Press any key to continue. ESC to abort" appears,
+      press ESC to disable QEMM.SYS.
+
+The third method also disables any LoadHi commands in the CONFIG.SYS or
+AUTOEXEC.BAT file.
+
+Additional query words: 3.0 3.0a 3.00 3.00a 3rdparty WIN286 WIN386
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a
+Version           : WINDOWS:2.x,3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

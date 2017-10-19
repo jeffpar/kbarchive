@@ -1,0 +1,313 @@
+DOCUMENT:Q297989  25-JUL-2002  [iis]
+TITLE   :PRB: Configured Identity Is Incorrect for IWAM Account
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbServer kbVisID600 kbWebServer kbGrpDSASP kbDSupport kbSysAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you browse to an existing Active Server Pages (ASP) page, the browser may
+return the "HTTP 500 - Internal server error" or "Server Application Error"
+error message. If you review the server's System Event Log after you receive the
+error message, two entries appear:
+
+   Source: W3SVC
+   Error: Configured identity is incorrect
+
+   -and-
+
+   Source: DCOM
+   Error: Unable to logon IWAM_ComputerName
+
+If you enable only Basic Authentication for the application and set the
+Application Protection to Low, the application starts to work again as expected.
+In addition, if you create a new ASP application after you receive this error,
+you can browse to it without any errors.
+
+Related Error Messages:
+
+You may also receive the following error messages:
+
+In your browser:
+
+   HTTP 500 - Internal server error
+
+   -or-
+
+   Server Application Error
+   The server has encountered an error while loading an application during the
+   processing of your request. Please refer to the event log for more detail
+   information. Please contact the server administrator for assistance.
+
+In the System Event Log:
+
+   Source: DCOM
+   Error: DCOM got error "Logon Failure: unknown username or bad password" Unable
+   to logon .\IWAM_SERVERNAME in order to run the server.
+
+   -and-
+
+   Source: W3SVC
+   Error: "The server failed to load application '/LM/W3SVC/1/Root/op.' The error
+   was 'The serverprocess could not be started because the configured identity
+   is incorrect. Check the username and password.
+
+   -or-
+
+   Source: W3SVC Error: "The server failed to load application
+   '/LM/W3SVC/4/Root'. The error was 'c000003b'."
+
+   -and-
+
+   Source: W3SVC Error: "The COM Application
+   '{3D14228D-FBE1-11d0-995D-00C04FD919C1}' at '/LM/W3SVC/4/Root' failed to
+   activate out of process."
+
+CAUSE
+=====
+
+User names and passwords for the IUSR_ComputerName and IWAM_ComputerName
+accounts are stored in three locations:
+
+ - Internet Information Server (IIS) metabase
+ - User Manager for Domains (Windows NT) or Local Users and Groups (Windows
+   2000)
+ - Microsoft Transaction Server (Windows NT) or Component Services (Windows
+   2000)
+
+If the user names and/or passwords are not synchronized among these three
+locations, you receive the above-mentioned error messages.
+
+RESOLUTION
+==========
+
+To resolve this problem, you must make sure that the passwords for the IUSR and
+IWAM accounts are synchronized in all three of the above-mentioned locations.
+There are two ways to achieve this: you can set the password for IWAM and IUSR
+accounts in User Manager (Windows NT) or Users and Groups (Windows 2000) and
+change the passwords in IIS metabase to reflect the same password, or vice
+versa. Use one of the following methods to synchronize the passwords.
+
+NOTE: Please refer to the "More Information" section for instructions on how to
+use the Administration Script Utility (Adsutil.vbs) and how to change the
+password in Microsoft Transaction Server (MTS) or Component Services.
+
+Method 1: Change the Passwords in User Manager or Users and Groups to Match the IIS Metabase Password:
+
+1. In the Command window, locate the folder that contains the Adsutil.vbs file.
+   Use the Adsutil.vbs tool to obtain the passwords for the IWAM and IUSR
+   accounts from the IIS metabase.
+
+2. To change the IUSR and/or IWAM passwords in Windows NT, follow these steps:
+
+   a. From the Start menu, point to Programs point to Administrative Tools, and
+      then click User Manager for Domains. In User Manager for Domains, you can
+      change the account information for all Windows NT user accounts and
+      groups.
+
+   b. Double-click the IUSR_ComputerName and/or IWAM_ComputerName users, and
+      modify the passwords so that they reflect the IIS metabase password that
+      you obtained in step 1.
+
+   To change the IUSR and/or IWAM passwords in Windows 2000, follow these steps:
+
+   a. From the Start menu, point to Programs, point to Administrative Tools, and
+      then click Computer Management.
+
+   b. Under the System Tools node, click to expand the "Local Users and Groups"
+      and "Users" nodes. In the User node, you can change the account
+      information for all Windows 2000 user accounts and groups.
+
+   c. Right-click the IUSR_ComputerName and/or IWAM_ComputerName accounts, and
+      then click Set Password.
+
+   d. Modify the passwords so that they reflect the IIS metabase password that
+      you obtained in step 1.
+
+3. Browse to the ASP page that returned the error message to check if the
+   problem has been resolved.
+
+Method 2: Change the IIS Metabase to Match the IUSR and/or IWAM Passwords:
+
+1. To change the IUSR and/or IWAM password in Windows NT, follow these steps:
+
+   a. From the Start menu, point to Programs, point to Administrative Tools, and
+      then click User Manager for Domains. In User Manager for Domains, you can
+      change the account information for all Windows NT user accounts and
+      groups.
+
+   b. Double-click the IUSR_ComputerName and/or IWAM_ComputerName accounts, and
+      type new passwords.
+
+   To change the IUSR and/or IWAM password in Windows 2000, follow these steps:
+
+   a. From the Start menu, point to Programs, point to Administrative Tools, and
+      then click Computer Management.
+
+   b. Under the System Tools node, click to expand the "Local Users and Groups"
+      and "Users" nodes. In the User node, you can change the account
+      information for all Windows 2000 user accounts and groups.
+
+   c. Right-click the IUSR_ComputerName and/or IWAM_ComputerName accounts, and
+      then click Set Password. Type new passwords.
+
+2. In the Command window, locate the folder that contains the Adsutil.vbs file.
+   Use the Adsutil.vbs utility to set the passwords for the IWAM and IUSR
+   accounts in the IIS metabase.
+
+3. Browse to the ASP page that returned the error message to check if the
+   problem has been resolved.
+
+NOTE: Although the passwords in Microsoft Transaction Server (Windows NT) and
+Component Services (Windows 2000) usually match the IIS metabase, update the
+IWAM password in Microsoft Transaction Server (MTS) or Component Services if the
+problem still occurs. For more information, see the "How to Change the Password
+in MTS or Component Services" portion of the "More Information" section.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+How to Use Adsutil.vbs
+----------------------
+
+IIS provides a script file named Adsutil.vbs that you can use to obtain or set
+the passwords of the IUSR and IWAM accounts to or from the IIS metabase. In
+Windows NT 4.0, Adsutil.vbs is usually located in the
+<Drive>\WINNT\System32\Inetsrv\Adminsamples folder. In Windows 2000,
+Adsutil.vbs is located in the <Drive>\Inetpub\Adminscripts folder.
+
+The following table lists the syntax for different functions of the Adsutil.vbs
+utility:
+
++---------------------------------------------------------------------------------------------------+
+| Function                         | Syntax                                                         | 
++---------------------------------------------------------------------------------------------------+
+| Obtain the IUSR account password | cscript.exe adsutil get w3svc/anonymoususerpass                | 
++---------------------------------------------------------------------------------------------------+
+| Obtain the IWAM account password | cscript.exe adsutil get w3svc/wamuserpass                      | 
++---------------------------------------------------------------------------------------------------+
+| Set the IUSR account password    | cscript.exe adsutil.vbs set w3svc/anonymoususerpass "password" | 
++---------------------------------------------------------------------------------------------------+
+| Set the IWAM account password    | cscript.exe adsutil.vbs set w3svc/wamuserpass "password"       | 
++---------------------------------------------------------------------------------------------------+
+
+NOTE: When you try to obtain the password in Windows NT 4.0, the password appears
+as clear text; however, the password appears as asterisks in Windows 2000. To
+obtain the password in clear text in Windows 2000, you must modify Adsutil.vbs
+so that it displays the unmasked password. To do this, follow these steps:
+
+1. In Notepad, open Adsutil.vbs.
+
+2. On the Edit menu, click Find, type "IsSecureProperty = True" (without the
+   quotation marks), and then click Find Next.
+
+3. Change "IsSecureProperty = True" to "IsSecureProperty = False".
+
+4. Save the changes to Adsutil.vbs, and then close Notepad.
+
+How to Change the Password in MTS or Component Services
+-------------------------------------------------------
+
+Windows 2000:
+
+IIS 5.0 provides the Synciwam.vbs file to update the starting identity of all IIS
+COM+ application packages that run out-of-process. The Synciwam.vbs script is
+located in the <Drive>\Inetpub\AdminScripts folder. You can use CScript or
+WScript to run Synciwam.vbs.
+
+To use Synciwam.vbs, type the following command at a command prompt:
+
+   "cscript.exe synciwam.vbs -v" (without the quotation marks)
+
+You may need to restart IIS for all changes to take effect. To restart IIS, from
+the Start menu, click Run, type "iisreset" (without the quotation marks), and
+then click OK.
+
+NOTE: Using Synciwam.vbs resets all out-of-process applications (Medium and High
+isolation) to IWAM_ComputerName.
+
+Windows NT 4.0:
+
+IIS 4.0 does not supply any tools such as Synciwam.vbs script. You must use MTS
+Explorer to manually change the IWAM password for each of your applications that
+are running in Separate Memory Process. To do this, follow these steps:
+
+1. From the Windows Start menu, point to Programs, point to Windows NT Option
+   Pack 4, click Microsoft Transaction Server, and then click Transaction Server
+   Explorer.
+
+2. In the Transaction Server Explorer, click to expand the Microsoft Transaction
+   Server, Computers, My Computer, and Packages Installed nodes.
+
+3. Right-click one of the installed packages, and then click Properties.
+
+4. On the Identity tab, if the package is running under the IWAM_ComputerName
+   User identity, type the password to match the IIS metabase, and then click
+   OK.
+
+5. Repeat steps 3 and 4 for each of the packages installed.
+
+6. Restart IIS for these changes to take effect. To do this, follow these steps:
+
+   a. From the Windows Start menu, click Run, type "cmd" (without the quotation
+      marks), and then click OK.
+
+   b. At a command prompt, type the following commands sequentially:
+
+       - net stop iisadmin /y
+       - net start w3svc
+       - net start msftpsvc (Use this command if you are running FTP Server)
+       - net start smtpsvc (Use this command if you are running SMTP Server)
+       - net start cisvc (Use this command if you are running Index Server)
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q255770 PRB: Logon Failure: Unknown User Name or Bad Password When You Run
+   Out-Of-Process Webs
+
+   Q240225 Description of Adsutil and MetaEdit Utilities Used to Modify the
+   Metabase
+
+   Q240941 An Introduction to the IIS Metabase
+
+Additional query words: out of synch sync
+
+======================================================================
+Keywords          : kbSecurity kbServer kbVisID600 kbWebServer kbGrpDSASP kbDSupport kbSysAdmin 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

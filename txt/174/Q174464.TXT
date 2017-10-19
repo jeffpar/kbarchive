@@ -1,0 +1,65 @@
+DOCUMENT:Q174464  09-AUG-2001  [crossnet]
+TITLE   :Windows 95 RAS Client Cannot Ping Remote Network
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WinNT:4.0;Windows:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbnetwork win95 _IK12469 kbSDKPlatform kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you dial into a Windows NT 4.0 Remote Access Service (RAS) server using a
+Windows 95 RAS client with the TCP/IP protocol, you are unable to ping any hosts
+on the remote network, including the RAS server's IP addresses, and you may
+receive the following error message:
+
+   No domain server was available to validate your password. You may not be able
+   to gain access to some network resources.
+
+NOTE: This problem does not occur when dialing with a Windows NT 4.0 RAS client.
+
+
+CAUSE
+=====
+
+One or more services have been added or changed on the RAS server without
+reapplying the Microsoft Windows NT Service Pack 3 (SP3).
+
+
+
+RESOLUTION
+==========
+
+Reapply SP3 to the RAS server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbnetwork win95 _IK12469 kbSDKPlatform kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : WinNT:4.0;Windows:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,100 @@
+DOCUMENT:Q198425  11-DEC-1999  [foxpro]
+TITLE   :PRB: GetLineFromChar Method Does Not Function in VFP 5.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbActiveX kbContainer kbCtrl kbvfp500 kbvfp500a
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The GetLineFromChar method of the Richtx32.ocx control returns erroneous values
+in Visual FoxPro 5.0x. This behavior happens with version 5.01.4316 and version
+6.00.8169 of the Richtx32.ocx.
+
+RESOLUTION
+==========
+
+Turn off the ActiveX control dual interface (VTABLE binding) by adding the
+following line to the Load event of the form:
+
+      =SYS(2333,0)
+
+MORE INFORMATION
+================
+
+The GetLineFromChar method should return the line number containing a specified
+character position. This method returns valid values when running under Visual
+FoxPro 3.0b and 6.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add a rich text control to the form.
+
+2. In the Init method of the form, place the following code:
+
+         Thisform.Olecontrol1.text=REPLICATE("a",200)
+
+3. Add a text box to the form and name it Text1.
+
+4. Add a command button that contains the following code:
+
+         CLEAR
+         foundline=THISFORM.olecontrol1.getlinefromchar(THISFORM.text1.VALUE)
+         ?foundline
+         THISFORM.REFRESH
+
+5. Run the form. In the text box, type the following values, and pressing the
+   command button after each number:
+
+   " 10
+   100
+   150
+   15
+   250" (without the quotation marks)
+
+Instead of returning a valid line number you may see values in scientific
+notation, date time values, the word .NULL., a blank value, or a memory
+protection error may occur. The memory protection errors seem to occur mostly
+under Windows NT, but they can occur under Windows 95 or Windows 98.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q158765 INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbContainer kbCtrl kbvfp500 kbvfp500a 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

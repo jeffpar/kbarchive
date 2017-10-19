@@ -1,0 +1,66 @@
+DOCUMENT:Q163048  10-AUG-2001  [winnt]
+TITLE   :Doc Err: Readme.txt on WinNT 4.0 CD Points to Invalid Entries
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT Server 4.0 compact disc Readme.txt file points to directories
+that do not exist on the CD.
+
+MORE INFORMATION
+================
+
+The following is an excerpt from the Clients\Msclient\Netsetup\Readme.txt file
+on the Windows NT 4.0 compact disc:
+
+   27. These drivers are located in update directory.. (under wdl)
+   ------------------------------------------------------------------
+
+   PCNet Ethernet Adapter v 1.1       \clients\wdl\update\pcnet
+   Proteon 1346/47 v 1.0              \clients\wdl\update\protat
+   Intel EtherExpress Pro             \clients\wdl\update\EPRO
+   Novell/National/Eagle NE2000 plus  \clients\wdl\update\NE2000p
+   SMC Ethercard 8216 series          \clients\wdl\update\smc8000
+   Dec Etherworks 3                   \clients\wdl\update\ewrk3
+   3COM Token Link III                \clients\wdl\update\tlnk3
+   SMC Toekncard Plus (SMC8115T)      \clients\wdl\update\smc8100
+   Racore 16/4,                       \clients\wdl\update\racore
+   IBM Token Ring II                  \clients\wdl\update\ibmtok
+   Madge 16/4 Smard Ringnode          \clients\wdl\update\madge
+
+However, there is no Clients\Wdl directory on the Windows NT Server 4.0 compact
+disc.
+
+Additional query words: prodnt CD-ROM
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : WINNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

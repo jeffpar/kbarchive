@@ -1,0 +1,67 @@
+DOCUMENT:Q191696  02-OCT-1999  [sna]
+TITLE   :Upgrading Host Security Files May Cause Corrupted Database
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP1
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Upgrading SNA Server 4.0 Service Pack 1 Host Security files (from the HOSTSEC
+directory) may cause corruption to the Host Account Database (DBase.dbs). When
+the database becomes corrupted, it may prevent users from using the Single
+Sign-On (SSO) feature, also known as automatic logon. Other symptoms may be that
+the Host Account Cache service (SNADATABASE) stops responding to RPC requests.
+
+The application log of the event viewer shows the following two events coming
+from source SNA Host Security, after SP1 is upgraded.
+
+   Event ID 1247 - Unable to decrypt data Supplied code 0x80090005
+
+   Event ID 1283 - Database has been corrupted - contact system support
+   Supplied code 0x1
+
+CAUSE
+=====
+
+The cause is not currently known but is under investigation.
+
+WORKAROUND
+==========
+
+To work around this problem, you can remove and reinstall the Host Security
+components. Because a removal is required, the Host Security Database must be
+repopulated again, either by using the Host Account Manager (UDConfig.exe) or by
+using the command-line utility SNACFG.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP1
+Version           : WINDOWS:4.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

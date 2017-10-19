@@ -1,0 +1,83 @@
+DOCUMENT:Q134226  31-OCT-1999  [pcmail]
+TITLE   :PC DirSync: Purpose and Results of Choosing Global-List Option
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the purpose and results if you choose or enable the
+Global-List option in the Administrator's program (ADMIN.EXE).
+
+MORE INFORMATION
+================
+
+The option to enable the Global-List is described on pages 73-74 of version 3.2
+and 3.5 of Microsoft Mail for PC Network "Administrator's Guide." This guide
+states:
+
+   If you do not enable the Global Address List, users need to select external
+   addresses from network and gateway lists unless you add the external
+   addresses to the Postoffice Address List (POL).
+
+Likewise, the ADMIN.EXE program itself provides on-line help that describes this
+option:
+
+   Global-List allows you to configure whether or not your postoffice is to use
+   the global address list.
+
+Both sources imply that unless the Global-List option is enabled, the postoffice
+mail users will not be able to use the Global Address List (GAL) to address
+mail. This is true; however, the administrator should be aware of the following
+issues:
+
+ - Even though the Global-List option is set to NO, the postoffice may still
+   participate in Directory Synchronization (Dir-Sync). If this postoffice is
+   set up as a Dir-Sync requester and is included in the DISPATCH.EXE process,
+   the postoffice will participate in Dir-Sync, and the GAL will be built.
+
+ - Whenever REBUILD.EXE is run against any postoffice, the Global-List option is
+   automatically set to YES. This means an administrator must log into a
+   postoffice after REBUILD.EXE runs against it and change the value back to NO
+   if they do not want the users to be able to select addresses from the GAL.
+
+ - Neither Microsoft Mail for Windows nor Microsoft Mail for PC Networks, MS-DOS
+   workstation users will be able to select addresses from the GAL if this
+   option is set to NO in the ADMIN.EXE.
+
+   The MS-DOS client users will not even see that a GAL is available, and the
+   Windows client users will see an empty GAL. In both cases, the proper GAL
+   files may be available on the postoffice. This option simply disables the
+   clients from being able to use the GAL.
+
+Additional query words: 3.00 3.20 3.20a 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN350
+Version           : WINDOWS:3.0,3.2,3.2a,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

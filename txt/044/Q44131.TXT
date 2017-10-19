@@ -1,0 +1,77 @@
+DOCUMENT:Q44131  08-OCT-1999  [utilities]
+TITLE   :Specifying a Path in an NMAKE Inference Rule
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NMAKE Utility for MS-DOS 
+ - Microsoft NMAKE Utility for OS/2 
+ - Microsoft NMAKE Utility for Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In an NMAKE makefile, you can specify a path in an inference rule. The syntax of
+an inference rule without a path is as follows:
+
+   .<from extension>.<to extension >:
+
+This syntax is somewhat limited because both the "from file" and "to file" are
+evaluated as if each exists in the current directory. In NMAKE, you can add a
+path specifier to an inference rule by using the following syntax:
+
+   {frompath}.<from extension>{topath}.<to extension>:
+
+Note: If you specify a path for one element of an inference rule, you must
+specify a path for both rules. For example, to compare a C source code file in
+the current directory with its corresponding object file in the C:\OBJECTS
+directory, use an inference rule like the following:
+
+   {}.c{c:\objects}.obj:
+   cl /c $<;
+
+MORE INFORMATION
+================
+
+When NMAKE encounters a target and dependency line that is not followed by any
+commands, NMAKE searches the makefile for an inference rule to use. During the
+process of searching for a match, NMAKE uses the directories of the target and
+the dependent. In other words, the following target and dependency line does not
+use the inference rule defined above because the object file path does not match
+the path specified in the inference rule:
+
+   test.obj : test.c
+
+This line would invoke the predefined .c.obj: inference rule. To invoke the above
+inference rule, modify the line to the following:
+
+   c:\objects\test.obj : test.c
+
+Additional query words: kbinf 1.20 1.30 1.40 1.50
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,62 @@
+DOCUMENT:Q83301  06-NOV-1999  [win16sdk]
+TITLE   :Retrieving Application Exit Code in MS-DOS Window
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under Windows version 3.1, the value returned by an MS-DOS-based application is
+available to other applications in the system. Under Windows version 3.0,
+however, this value is not available; the exit code returned is always zero.
+
+MORE INFORMATION
+================
+
+Windows supports an MS-DOS window in which to run MS-DOS (non-Windows)
+applications. The WINOLDAP module serves as an interface for the application and
+the remainder of the Windows environment. When the MS-DOS-based application
+terminates, WINOLDAP retrieves the application's exit code. Then WINOLDAP itself
+terminates, using the retrieved exit code as its own exit code.
+
+An application developed for the Windows environment can retrieve the exit code
+from WINOLDAP. The application defines a call-back function and calls the
+NotifyRegister function in the tool helper library (TOOLHELP.DLL). The call-back
+function will receive an NFY_EXITTASK message containing the exit code each time
+a task terminates.
+
+The Windows 3.1 WINOLDAP module can return a number of error codes which are
+listed and explained in the "Microsoft Windows Software Development Kit
+Programmer's Reference Volume 1," page 277.
+
+Additional query words: no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

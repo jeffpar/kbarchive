@@ -1,0 +1,60 @@
+DOCUMENT:Q71409  09-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Removing an Enclosure Before Sending a Message
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Mail Software Development Kit (SDK) for HyperCard, the
+following function removes the enclosure, specified by the value of "index",
+from the message in "messageRef":
+
+      msmail(removeEnclosure, messageRef, index)
+
+If index has a value of negative one (-1), all enclosures are removed.
+
+This call should be used only for messages that have not yet been sent. Removing
+an enclosure from a sent message will not remove the enclosure from the server.
+
+For example, to forward a message, but not the enclosures, use the following
+commands:
+
+      put msmail (getMessage, messageType, messageID) into messageRef
+      put msmail (createForward, messageRef) into forwardMessage
+      get msmail (removeEnclosure, forwardMessage, -1)
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q199989  11-JUN-2002  [exchange]
+TITLE   :XFOR: Completely Removing LinkAge V3.2 Connector Software
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:3.2; winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+ - LinkAge Message Exchange, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IMPORTANT: This article contains information about modifying the registry.
+Before you modify the registry, make sure to back it up and make sure that you
+understand how to restore the registry if a problem occurs. For information
+about how to back up, restore, and edit the registry, click the following
+article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+This article will describe the steps required to completely remove the LinkAge
+Software programs from a server.
+
+MORE INFORMATION
+================
+
+In order to completely remove the LinkAge product, follow these steps:
+
+1. Run LinkAge Setup, and select Uninstall LinkAge Software.
+
+2. Manually delete the LinkAge directory (either using Windows Explorer or from
+   a command prompt).
+
+3. In the registry, remove the LinkAge entries from these hives:
+
+   WARNING: If you use Registry Editor incorrectly, you may cause serious
+   problems that may require you to reinstall your operating system. Microsoft
+   cannot guarantee that you can solve problems that result from using Registry
+   Editor incorrectly. Use Registry Editor at your own risk.
+
+    - HKEY_LOCAL_MACHINE\Software\Linkage
+    - HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LME-*
+    - HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LDE
+    - HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LSIControl
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+Version           : WINDOWS:3.2; winnt:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

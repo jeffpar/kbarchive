@@ -1,0 +1,60 @@
+DOCUMENT:Q312438  09-JAN-2002  [exchange]
+TITLE   :Older Versions of Profgen.exe and Newprof.exe Fail on Win2000
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbsetup kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Profgen.exe version 1.5, along with a copy of Newprof.exe that has
+a datestamp from 1997, to automatically create profiles for users who log on to
+Microsoft Windows 2000 desktops, either the programs may not create the
+profiles, or the profiles that the programs create may be assigned to the wrong
+users.
+
+CAUSE
+=====
+
+This behavior can occur if you use older versions of the Profgen.exe and
+Newprof.exe programs.
+
+RESOLUTION
+==========
+
+To resolve this behavior, obtain the newest versions of the Profgen.exe and
+Newprof.exe programs. The Microsoft Exchange Server Resource Kit contains
+Profgen.exe, and the Microsoft Outlook client installation CD-ROM contains
+Newprof.exe.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbtool 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,98 @@
+DOCUMENT:Q163705  12-JUL-2002  [ssafe]
+TITLE   :ACC97: Error "Invalid DOS 8.3 Name" Adding DB to SourceSafe
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,4.0a,5.0,97
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access 97 
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multi-user skills.
+
+SYMPTOMS
+========
+
+When you add a database to Microsoft Visual SourceSafe, you may receive the
+following error:
+
+   <File Name> is an invalid DOS 8.3 name
+
+This article assumes that you are familiar with using the client and server side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or the Help topics
+available from the Visual SourceSafe Help menu.
+
+CAUSE
+=====
+
+Microsoft Visual SourceSafe is configured to use MS-DOS format file names.
+
+RESOLUTION
+==========
+
+Start Microsoft Visual SourceSafe Explorer and turn off the MS-DOS file name
+option. To do so, follow these steps:
+
+1. Start Microsoft Visual SourceSafe Explorer.
+
+2. On the Tools menu, click Options.
+
+3. Click the View tab.
+
+4. Click to clear the "Always use MS-DOS format filenames" check box.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Repeat steps 1-3 in the "Resolution" section.
+
+2. Click to select the "Always use MS-DOS format filenames" box.
+
+3. Quit Microsoft Visual SourceSafe Explorer.
+
+4. Start Microsoft Access and create a new database called "This is a long file
+   name.mdb" (without the quotation marks).
+
+5. Add the new database to SourceSafe control. Note that you receive the error
+   message:
+
+   This is a long file name.ACB is an invalid DOS 8.3 name.
+
+Additional query words: ACCSCC VSS SCC source safe
+
+======================================================================
+Keywords          : kberrmsg kbinterop 
+Technology        : kbSSafeSearch kbAudDeveloper kbAccessSearch kbAccess97 kbAccess97Search kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

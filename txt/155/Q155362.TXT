@@ -1,0 +1,64 @@
+DOCUMENT:Q155362  13-JUN-2001  [win95x]
+TITLE   :Problems Viewing Driver Information in OSR2 Device Manager
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the Drivers tab for devices listed in Device Manager in Windows 95
+OEM Service Release 2 (OSR2), you may see the following status:
+
+   No driver files are required or have been loaded for this device
+
+In addition, no information may be available in the Provider and Version
+listings.
+
+RESOLUTION
+==========
+
+Use the updated Hardware Diagnostics tool (Hwdiag.exe) located on the OSR2
+CD-ROM in the Other\Misc\Hwtrack folder.
+
+This tool includes the same functionality as Device Manager as well as several
+other options for viewing information. To view a report about all the devices in
+your system, run Hwdiag.exe and click All Devices on the View menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 OSR2. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbOPKSearch kbWin95
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

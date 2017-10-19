@@ -1,0 +1,70 @@
+DOCUMENT:Q238042  26-MAY-2001  [homemm]
+TITLE   :Research Organizer: Program Is Listed Twice in Control Panel
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 99 
+ - Microsoft Encarta Reference Suite 2000 
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to remove Microsoft Encarta Research Organizer, the program may
+be listed twice in the list of installed programs in the Add/Remove Programs
+tool in Control Panel.
+
+CAUSE
+=====
+
+This behavior can occur if both Microsoft Encarta Reference Suite 99 and
+Microsoft Encarta Reference Suite 2000 are installed on your computer.
+
+RESOLUTION
+==========
+
+To work around this issue, remove Encarta Reference Suite 99.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+To prevent this issue from occurring, remove Encarta Reference Suite 99 before
+you install Encarta Reference Suite 2000.
+
+Additional query words: multi multi-media media mm ers99 ers2k ero duplicate uninstall
+
+======================================================================
+Keywords          : kbenv kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference99 kbEncartaReference2000 kbEncartaReference2001
+Version           : WINDOWS:; :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

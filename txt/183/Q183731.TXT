@@ -1,0 +1,84 @@
+DOCUMENT:Q183731  31-DEC-1999  [iis]
+TITLE   :How to Index and Create a Catalog for a New Web Site
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+ - Indexing Service 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create a new Web site, the site is not automatically marked as indexed
+when you create a catalog for it.
+
+MORE INFORMATION
+================
+
+To correctly index a new Web site, follow these steps:
+
+For Index Server 2.0
+
+1. Make sure that the Web site has been created in the Internet Information
+   Server snap-in.
+
+2. In the Index Server snap-in, create a new catalog. After the catalog has been
+   created, view the properties for it. On the Web tab, select the Web site that
+   you want to index, and click OK.
+
+3. Go back to the Internet Information Server snap-in, and select Properties on
+   the Web site you are indexing.
+
+4. On the Home Directory tab, select the Index This Directory check box, and
+   click OK.
+
+5. Stop the Index server, and then restart it. The new catalog should come
+   online and begin indexing the new Web site.
+
+For Windows 2000 Indexing Service
+
+1. Make sure that the Web site has been created in the Internet Information
+   Server snap-in.
+
+2. In the Index Server snap-in, create a new catalog. After the catalog has been
+   created, view the properties for it. On the Tracking tab, select the Web site
+   that you want to index from the WWW Server pull-down menu, and then click OK.
+
+3. Go back to the Internet Information Server snap-in, and select Properties on
+   the Web site you are indexing.
+
+4. On the Home Directory tab, select the Index This Resource check box, and
+   click OK.
+
+5. Stop the Index Service, and then restart it. The new catalog should come
+   online and begin indexing the new Web site. In Windows 2000, Indexing Service
+   does not need to be restarted. Stopping and restarting the catalog is enough.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ200
+Version           : WINNT:2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

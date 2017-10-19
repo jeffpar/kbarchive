@@ -1,0 +1,53 @@
+DOCUMENT:Q89436  30-JUL-2001  [lanman]
+TITLE   :Changing Computer's Role Causes Workstation to Not Start
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+If you change a server's role from backup or primary to standalone and back
+again (as when you synchronize the user accounts database) services such as the
+Remote Access Service (RAS) no longer start.
+
+CAUSE
+=====
+
+When a server's role is changed to standalone, the Netlogon Service is removed.
+(You can confirm this by looking at the srvservices line in the LANMAN.INI
+file.) When the role is changed to backup or primary, the Netlogon service is
+added, but it is added to the end of the srvservices line in the LANMAN.INI
+file, so all services before Netlogon are started first. Some services such as
+the Remote Access Service require Netlogon to be running before they can start,
+so they fail to start, preventing the workstation from starting.
+
+RESOLUTION
+==========
+
+After switching roles on a server (for example, backup -> standalone ->
+backup), examine the LANMAN.INI file and make sure that the Netlogon service is
+listed before any other service, such as RAS.
+
+Additional query words: 2.1 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

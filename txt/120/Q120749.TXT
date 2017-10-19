@@ -1,0 +1,68 @@
+DOCUMENT:Q120749  08-AUG-2001  [winnt]
+TITLE   :Mitsumi CD-ROM Disrupts Video/Audio Playback
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.50
+
+WINDOWS
+
+kb3rdparty
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT Workstation or Server computer with a Mitsumi CD-ROM exhibits
+disruptions in video playback: images stop moving, sounds repeat or have gaps.
+Files can still be read from the drive as normal.
+
+CAUSE
+=====
+
+The Mitsumi CD-ROM driver spends up to a third of a second at the DPC level,
+where it has complete control of the computer and locks out all other programs.
+This freezes video and fragments audio. When sounds clips are playing and the
+hardware does not receive the data for the next part of the clip, the system can
+neither complete nor stop the sound, so the drive just repeats the last data it
+received.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information in the
+Microsoft Knowledge Base as it becomes available.
+
+The CD-ROM mentioned here is manufactured by Mitsumi, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

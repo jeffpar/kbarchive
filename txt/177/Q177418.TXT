@@ -1,0 +1,75 @@
+DOCUMENT:Q177418  19-DEC-1999  [exchange]
+TITLE   :XFOR: Migrating Data Containing DBCS Characters to Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When migrating data containing double-byte character set (DBCS) characters to
+Microsoft Exchange Server, the DBCS characters may be illegible after the
+migration is complete. The characters appear correct in the migration files, but
+when the message is opened, the characters are not legible.
+
+MORE INFORMATION
+================
+
+To migrate data in different languages to Microsoft Exchange Server, run the
+Migration Wizard once for each language. It is easiest if the Microsoft Exchange
+Server computer that is used to perform the migration uses the same code page as
+the language used in the data to be migrated. For example, if migrating Japanese
+data, the server should be a Japanese language server. Microsoft Exchange Server
+uses the code page for the language that is used for the Microsoft Windows NT
+Server software installed on the server.
+
+If the correct code page is not installed on the Microsoft Exchange Server
+computer, the import file created during migration can be modified to specify
+the correct code page. The following steps detail how to do this:
+
+1. Run the Migration Wizard and perform the first step in a two-step migration
+   to create an import file. This will create a .pkl file. Complete step 2
+   before running the second part of the migration.
+
+2. Using a text editor, edit the .pkl file to specify the code page for the
+   language that you are migrating. For example, if you are migrating Japanese
+   data, the following entry for the Japanese code page should be entered at the
+   beginning of the import file:
+
+         ! CodePage
+         932
+
+3. Complete the migration by running the Migration Wizard and performing the
+   second step in the two-step migration.
+
+Additional query words: MIGRATION DBCS MAC CODEPAGES
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

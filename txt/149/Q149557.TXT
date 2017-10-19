@@ -1,0 +1,59 @@
+DOCUMENT:Q149557  09-AUG-2001  [winnt]
+TITLE   :16 Bit Windows Applications Only Scheduled Under System
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51
+OPER/SYS:
+KEYWORDS:kbenv kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you start the AT Scheduler with an account other than the default system
+account, 16-bit Windows applications do not run when scheduled.
+
+CAUSE
+=====
+
+You can schedule a 16-bit Windows application to start interactively if you
+start the AT scheduler with the default system account.
+
+If you do not start the Windows on Windows (WOW) subsystem interactively,
+requests for required resources by the 16-bit Windows application are not
+granted and the application does not start.
+
+RESOLUTION
+==========
+
+To get the application to run under the Scheduler service you must reconfigure
+the Scheduler service to run using the system user account and specify that the
+application is to be run interactively.
+
+Additional query words: AT win16
+======================================================================
+Keywords          : kbenv kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

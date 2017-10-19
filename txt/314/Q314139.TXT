@@ -1,0 +1,69 @@
+DOCUMENT:Q314139  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 2002: Cannot Use the Mouse as Flight Yoke
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2002 Professional Edition 
+ - Microsoft Flight Simulator 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the mouse as a flight yoke while you play Microsoft
+Flight Simulator 2002, you are unable to do so. The aircraft does not respond to
+mouse movements during the game.
+
+CAUSE
+=====
+
+This behavior occurs because the mouse is not supported as a flight yoke in this
+version of Microsoft Flight Simulator.
+
+RESOLUTION
+==========
+
+To resolve this issue, use keyboard commands to fly the aircraft, or install a
+supported game controller.
+
+MORE INFORMATION
+================
+
+Earlier versions of Microsoft Flight Simulator supported the use of a mouse as
+the flight yoke during the game. In Flight Simulator 2002, you can use a game
+controller or keyboard commands to control the flight of the aircraft.
+
+For additional help and support for Microsoft games, see the following Microsoft
+Web site:
+
+   http://support.microsoft.com/default.aspx?PR=gms
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

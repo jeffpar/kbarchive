@@ -1,0 +1,70 @@
+DOCUMENT:Q246921  04-FEB-2000  [iis]
+TITLE   :HTTP 204 Response Returns Message-Body to Client
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you browse an empty Active Server Pages (ASP) page, a message body is
+returned in addition to a 204 response.
+
+CAUSE
+=====
+
+This is by design. IIS usually returns "friendly" HTTP responses with error
+codes. However, in the case of a "204 No Content" error message, this is
+different from the HTTP/1.1 specification detailed in the Request For Comment
+(RFC) number 2616 as follows:
+
+   "The 204 response MUST NOT include a message-body, and thus is always
+   terminated by the first empty line after the header fields."
+
+WORKAROUND
+==========
+
+When an empty page needs to be returned to client, use an empty text or HTML
+file (for example Empty.txt, Empty.htm, and so on).
+
+MORE INFORMATION
+================
+
+For more information on this topic, please see section 10.2.5 of the HTTP/1.1
+specification in RFC 2616 at the following URL:
+
+   http://www.w3.org/Protocols/rfc2616/rfc2616.html
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

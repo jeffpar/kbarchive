@@ -1,0 +1,77 @@
+DOCUMENT:Q164474  25-MAR-2002  [win95x]
+TITLE   :0E Exception in NWLINK Sending Message from Microsoft Exchange
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork win95kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send a message in Microsoft Exchange or Windows Messaging using
+SPX over a dialup connection, you may receive the following error message:
+
+   An exception 0E has occurred at 0028:c00175e6 in VxD NWLINK(01) + 0000438A.
+   This was called from 0028:c0017014 in VxD NWLINK(01) + 00003db8. It may be
+   possible to continue normally.
+
+This problem occurs only when you start Microsoft Exchange or Windows Messaging
+offline and then use the Deliver Now command to deliver messages using a dialup
+connection.
+
+CAUSE
+=====
+
+Nwlink.vxd is accepting packets larger than the maximum frame size.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+For information about configuring the maximum IPX packet size, see the following
+article in the Microsoft Knowledge Base:
+
+   Q166321 Configuring Maximum IPX Packet Size in Windows 95
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork win95 kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3
+Version           : :2.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

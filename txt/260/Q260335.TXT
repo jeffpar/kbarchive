@@ -1,0 +1,64 @@
+DOCUMENT:Q260335  08-MAY-2002  [sms]
+TITLE   :SMS: SQL Provider May Fail to Install on Remote SQL Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Systems Management Server version 2.0 on a server and use a
+remote server as the SQL Server computer, the Systems Management Server setup
+fails.
+
+CAUSE
+=====
+
+If NetWare's Client Redirector version 4.7 or earlier is installed, and a drive
+is mapped to a NetWare share/volume, the provider on the SQL Server computer
+fails to connect back to Systems Management Server.
+
+WORKAROUND
+==========
+
+Remove any mapped drives to NetWare shares and/or volumes, and then attempt to
+install Systems Management Server.
+
+MORE INFORMATION
+================
+
+You may find error 487 (Attempt to Access Invalid Address) located on the root
+of the drive in the Systems Management Server Setup.log file where Systems
+Management Server is being installed.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

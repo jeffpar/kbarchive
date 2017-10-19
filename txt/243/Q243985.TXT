@@ -1,0 +1,103 @@
+DOCUMENT:Q243985  07-MAY-2002  [homegame]
+TITLE   :FS2000: Introductory Video Is Played but Program Does Not Start
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+ - Microsoft Flight Simulator 98 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start any of the programs listed at the beginning of this
+article, the program may not start after the opening video clip is played.
+
+CAUSE
+=====
+
+This behavior can occur if you install Flight Simulator for Windows 95 or Flight
+Simulator 98 to the folder in which Flight Simulator 2000 is installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove both versions of Flight Simulator, delete the
+Flight Simulator folder, and then install both programs into separate folders:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click Microsoft Flight Simulator 2000, and then
+   click Add/Remove.
+
+4. When you are prompted to confirm the removal of Flight Simulator 2000, click
+   OK.
+
+5. On the Install/Uninstall tab, click Microsoft Flight Simulator 98 or
+   Microsoft Flight Simulator for Windows 95, and then click Add/Remove.
+
+6. Click OK or Remove All, and then follow the instructions on the screen to
+   remove the program.
+
+7. Delete the Flight Simulator folder. By default, Flight Simulator 2000 is
+   located in the following folder:
+
+   C:\Program Files\Microsoft Games\FS2000
+
+   For information about how to delete folders in Microsoft Windows, click Start,
+   click Help, click the Index tab, type "deleting files, folders" (without the
+   quotation marks), and then click Display.
+
+8. Install each version of Flight Simulator to a separate folder. To do this,
+   insert the Flight Simulator CD-ROM into the CD-ROM drive.
+
+   If the installation program does not start automatically:
+
+   a. Click Start, point to Settings, and then click Control Panel.
+
+   b. Double-click Add/Remove Programs.
+
+   c. On the Install/Uninstall tab, click Install, and then click Finish.
+
+   d. Follow the instructions on the screen to install Flight Simulator.
+
+   Repeat this step to install each version of Flight Simulator into a separate
+   folder.
+
+   NOTE: When you are prompted to choose a location for the second version of
+   Flight Simulator, choose a different folder than you selected in the first
+   installation.
+
+Additional query words: 1.00 msgame flightsim fsim fs95 fs98 fs2k animation movie
+
+======================================================================
+Keywords          : kbsetup kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbFlightSim98 kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

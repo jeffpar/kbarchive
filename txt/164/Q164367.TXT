@@ -1,0 +1,76 @@
+DOCUMENT:Q164367  04-FEB-2000  [foxpro]
+TITLE   :BUG: Report Writer Selects Objects After Printing in Designer
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When printing a report from the Report Writer Designer, the report is sent to
+the printer as expected. All of the objects in the report, however, are selected
+in the Report Writer Designer.
+
+RESOLUTION
+==========
+
+Any actions to refresh the Report Writer Designer such as minimizing the report,
+minimizing Visual FoxPro, or bringing up another window in another application
+restore the report objects' correct, visual state.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The visual state of the objects "selected" status is now reversed; those objects
+that appear to be "selected" are not. If you "deselect" an object, you are
+actually "selecting" it in a functional way, although you are not getting the
+correct visual cue.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a quick report using the Employee table in the \Vfp\Samples\Data
+   folder.
+
+2. Click Print on the Report Writer Designer toolbar.
+
+NOTE: The report is sent to the printer. All of the objects in the Report Writer
+Designer, however, will be "selected."
+
+Additional query words: kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

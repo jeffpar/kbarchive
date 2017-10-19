@@ -1,0 +1,89 @@
+DOCUMENT:Q244595  27-NOV-1999  [exchange]
+TITLE   :XADM: How to Create Mailboxes by Means of a .csv File
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use the Bulk Import functionality of the Exchange
+Server Administrator program to create mailboxes.
+
+MORE INFORMATION
+================
+
+To create a mailbox for an Exchange Server user by means of a .csv file, perform
+the following steps:
+
+1. Create a .csv file with the following heading:
+
+   Obj-Class,
+   Delivery-Mechanism,
+   Directory Name,
+   Alias Name,
+   Home-Server,
+   Primary Windows NT Account,
+   First Name,
+   Last name,
+   Display Name,
+   Obj-Container
+
+2. Populate the columns with the appropriate information, for example:
+
+   Mailbox,
+   0,
+   JohnD,
+   JohnD,
+   TESTSERVER,
+   TESTSERVERDOM\JohnD,
+   John,
+   Doe,
+   JohnDoe,
+   /o=Organization/ou=TestSite1/cn=Recipients
+
+   NOTE: The Obj-Class value must be Mailbox and the Delivery-Mechanism value
+   must be 0 to create the mailboxes.
+
+3. Perform a directory import to import the .csv file into the directory. (If
+   you are creating the Windows NT account when you perform this import, under
+   Account Creation, click to select the "Create Windows NT Account" check box.)
+
+For additional information about performing a directory import, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q146304 XADM: Directory Import File Format
+
+   Q155414 XADM: Bulk Import/Export FAQ
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

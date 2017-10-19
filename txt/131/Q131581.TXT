@@ -1,0 +1,70 @@
+DOCUMENT:Q131581  17-DEC-2000  [win95x]
+TITLE   :Aborted File Transfer Deletes File on Remote Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are copying a file over the network to a directory containing a file
+with the same name, if the file transfer process is canceled or fails, the file
+being replaced is deleted.
+
+This behavior also occurs when you are using Dial-Up Networking.
+
+CAUSE
+=====
+
+During the file transfer process, the destination file (the file that is to be
+replaced) is deleted after you confirm that you want to replace a file. If the
+file transfer process is canceled or fails, the deleted destination file cannot
+be restored. The file is not moved to the Recycle Bin and cannot be recovered.
+
+RESOLUTION
+==========
+
+If the file transfer process is canceled or fails, repeat the transfer.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The Recycle Bin tracks only files deleted locally using Windows Explorer, My
+Computer, or a Windows 95-compatible shell program.
+
+A file that is deleted as part of a file transfer process between two computers
+is not moved to the Recycle Bin.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

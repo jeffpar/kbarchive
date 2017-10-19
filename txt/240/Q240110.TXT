@@ -1,0 +1,74 @@
+DOCUMENT:Q240110  03-SEP-1999  [homegame]
+TITLE   :NBA Inside Drive 2000: Game Commentary Stops Unexpectedly
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsound kbui kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft NBA Inside Drive 2000, the game commentary may stop
+unexpectedly.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Press ESC to pause the game.
+
+2. In the upper-right corner of the game window, click Options, and then click
+   the Sound tab.
+
+3. Drag the Commentary slider all the way to the left, and then click OK.
+
+4. Press ENTER to resume the game.
+
+5. Press ESC to pause the game.
+
+6. In the upper-right corner of the game window, click Options, and then click
+   the Sound tab.
+
+7. Drag the Commentary slider to set the volume level you want to use, and then
+   click OK.
+
+8. Press ENTER to resume the game.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft NBA Inside Drive 2000,
+version 1.0.
+
+Additional query words: 1.00 msgame nba2k nba2000 basketball voice announcer
+
+======================================================================
+Keywords          : kbsound kbui kbimu msgame kbfaq
+Technology        : kbGamesSearch kbNBAInsideDrive2000
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

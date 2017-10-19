@@ -1,0 +1,107 @@
+DOCUMENT:Q183372  16-DEC-1999  [mspress]
+TITLE   :Running Microsoft FrontPage 98 Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Running Microsoft FrontPage 98 ISBN 1-57231-645-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Running Microsoft FrontPage 98," ISBN
+1-57231-645-4.
+
+Contents:
+
+ - Typo on page xxviii of introduction
+
+ - Typo on page xxxi of introduction
+
+ - Typo on page 649 (index)
+
+ - Typo in Readme.txt
+
+MORE INFORMATION
+================
+
+Typo on Page xxviii of Introduction
+-----------------------------------
+
+Page xxviii, Step 2:
+
+Change DOS command:
+
+ atttrib -r c:hello\*.* /s
+
+To:
+
+ attrib -r c:hello\*.* /s
+
+
+Typo on Page xxxi of Introduction
+---------------------------------
+
+Page xxxi, paragraph 2, sentence 5:
+Change: "...is one or their perks."
+To: "...is one of their perks." (without the quotation marks)
+
+
+Typo on Page 649 (index)
+------------------------
+
+Page 649:
+Change: "Lobby compression"
+To: "Lossy compression" (without the quotation marks)
+
+
+Typo in Readme.txt
+------------------
+
+In the Readme.txt file under "Using the companion CD", Step 2, attrib is
+misspelled.
+
+Change DOS command:
+
+ atttrib -r c:hello\*.* /s
+
+To:
+
+ attrib -r c:hello\*.* /s
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of the book, it may already
+contain the above corrections.
+
+Additional query words: press ms_press bookbug 1-57231-645-4
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

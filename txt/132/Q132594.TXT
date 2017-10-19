@@ -1,0 +1,63 @@
+DOCUMENT:Q132594  17-DEC-2000  [win95x]
+TITLE   :Signature Font Printed Incorrectly to PostScript Printer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print text with a personalized font created by Signature Software, text
+formatted with a "running-hand" font may not be printed as it should be.
+"Running-hand" fonts are designed to resemble your handwriting.
+
+CAUSE
+=====
+
+Signature Software ships a TrueType version as well as a PostScript version of
+these personalized fonts. However, they specify different character sets for
+these fonts. The TrueType version is marked ANSI and the PostScript version is
+marked Symbol. The PostScript font mapper chooses the TrueType version for
+printing.
+
+RESOLUTION
+==========
+
+If the program from which you are printing is character set-aware, specify the
+Symbol character set for the font before printing.
+
+If the program is not character set-aware, remove the TrueType font in the Fonts
+folder. This causes the fonts displayed on the screen to be in the Symbol
+character set. You can use a different font while you are typing the text and
+then change the font before you print the document.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

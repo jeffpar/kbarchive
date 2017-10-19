@@ -1,0 +1,75 @@
+DOCUMENT:Q84999  07-DEC-1999  [win95x]
+TITLE   :How to Print TrueType Fonts in Reverse Video
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.1 may not print TrueType fonts in reverse video
+(white on black background) unless they are printed as graphics.
+
+MORE INFORMATION
+================
+
+Windows may only print a TrueType font in reverse video if the TrueType font is
+printed as a graphic.
+
+To print TrueType fonts as graphics:
+
+1. Select the Printers icon in the Control Panel.
+
+2. Choose the Setup button for the appropriate printer.
+
+3. Choose the Options button.
+
+4. Select the Print TrueType as Graphics box.
+
+For Postscript printers:
+
+1. Select the Printers icon in the Control Panel.
+
+2. Choose the Setup button for the appropriate printer.
+
+3. Choose the Options button.
+
+4. Choose the Advanced button.
+
+5. In the "Send to Printer as: box, select Bitmap (Type3).
+
+Printing TrueType fonts as graphics reduces the printing speed, so only use this
+method when a reverse video print option from an application is needed.
+
+
+Additional query words: 3.10 Pagemaker text WIN31 slow 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

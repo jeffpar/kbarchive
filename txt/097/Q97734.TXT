@@ -1,0 +1,61 @@
+DOCUMENT:Q97734  08-NOV-1999  [pcmail]
+TITLE   :PC Win: Network Error Using Mail Conversion Program
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use version 3.0 of the Microsoft Mail Conversion Program to convert
+Mail 2.x folders to Mail 3.0 or 3.2, CONVERT.EXE may report a network error and
+then exit.
+
+CAUSE
+=====
+
+The CONVERT.EXE program assumes the owner field in the .IDX file is in all
+uppercase letters and does not know how to handle hexadecimal numbers in
+lowercase letters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0b, and 3.2 of
+Microsoft Mail for Windows. This problem was corrected in version 3.2a.
+
+For information on obtaining this update, query on the following word in the
+Microsoft Knowledge Base:
+
+   mailupd
+
+Additional query words: 3.00 3.00a 3.00b 3.20 kbbug3.00a kbbug3.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

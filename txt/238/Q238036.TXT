@@ -1,0 +1,70 @@
+DOCUMENT:Q238036  25-JUN-2000  [homemm]
+TITLE   :Encarta Reference Suite 2000: Cannot Install Individual Program
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install a program included in Encarta Reference Suite 2000,
+you may be prompted to choose between the following options:
+
+ - Remove All
+
+ - Exit Setup
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - Encarta Reference Suite 2000 is installed on your computer.
+
+ - You previously removed the program you want to install.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Reference
+Suite 2000.
+
+MORE INFORMATION
+================
+
+You cannot reinstall an individual program included in Encarta Reference Suite
+2000 without first removing all of the programs included in Encarta Reference
+Suite 2000.
+
+Additional query words: multi multi-media media mm ers2k uninstall single
+
+======================================================================
+Keywords          : kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

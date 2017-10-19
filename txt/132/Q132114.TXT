@@ -1,0 +1,67 @@
+DOCUMENT:Q132114  17-DEC-2000  [win95x]
+TITLE   :Sound Blaster 16 Incorrectly Detected After Being Removed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you remove the Creative Labs Sound Blaster 16 sound card in Device Manager,
+and then use the Add New Hardware Wizard to detect and re-install it, the sound
+card may be incorrectly detected as an Ad Lib Gold Compatible (OPL3) sound card.
+
+CAUSE
+=====
+
+Removing the Sound Blaster 16 sound card in Device Manager leaves the device in
+an unrecoverable state. As a result, the Add New Hardware Wizard cannot reliably
+detect the card.
+
+RESOLUTION
+==========
+
+To work around this problem, turn your computer off and then back on before you
+run the Add New Hardware Wizard. If you have already run the Add New Hardware
+Wizard, use the following steps to remove the incorrectly detected sound card:
+
+1. Use the right mouse button to click My Computer, then click Properties on the
+   menu that appears.
+
+2. Click the Device Manager tab.
+
+3. Double-click the Sound, Video, And Game Controllers branch to expand it.
+
+4. Click the Ad Lib Gold Compatible (OPL3) sound card.
+
+5. Click Remove.
+
+6. Click OK.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

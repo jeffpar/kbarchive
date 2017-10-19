@@ -1,0 +1,71 @@
+DOCUMENT:Q189802  09-AUG-2001  [winnt]
+TITLE   :DocErr: Perfmon Command Line Options Are Incorrect in Reskit
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Chapter 10 of the Windows NT Workstation 4.0 Resource Kit, on page 296, in
+the "Starting and Setting up Performance Monitor" section, it states:
+
+   You can also specify a computer name in addition to, or instead of, a
+   settings file. For example:
+
+   C:\> perfmon \\paris1
+
+   -Or-
+
+   C:\> perfmon settings.pmw \\issaquah
+
+The above syntax is incorrect.
+
+CAUSE
+=====
+
+To specify a computer name from a command line, a -c switch must precede the
+\\<computer name>. Furthermore, the -c switch negates the other command
+option that specifies a settings file. Therefore, you cannot specify both a
+computer name and a settings file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Windows NT Workstation 4.0
+Resource Kit.
+
+
+Additional query words: perfmon workspace chart log report alert view
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

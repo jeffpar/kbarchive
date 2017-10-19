@@ -1,0 +1,72 @@
+DOCUMENT:Q156021  14-DEC-1999  [foxpro]
+TITLE   :HOWTO: Use the FillColor vs. BackColor Properties of a Shape
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FillColor and BackColor properties provide control over the colors of an
+object. The FillColor property controls the pen color that fills an object and
+works in conjunction with the FillStyle property. Because the FillStyle property
+is transparent by default, the effects of changing the FillColor property may
+not appear immediately. By changing the FillStyle property to Solid or to
+another fill pattern, the effects of the FillColor property become apparent.
+
+The BackColor property colors areas of the shape that the FillColor property
+leaves unchanged. For example, if the FillColor property is set to blue and the
+FillStyle property is set to 3 - Vertical Lines, the BackColor property fills in
+areas between the vertical blue lines. However, if the BackStyle property is set
+to Transparent, the BackColor property is ignored.
+
+MORE INFORMATION
+================
+
+To specify a shape with a blue background and red stripes, perform the following
+steps:
+
+1. Create a form.
+
+2. Place a shape on the form using the Form Controls toolbar.
+
+3. Set the following properties of the shape:
+
+   BackColor = 0,0,255
+   BackStyle = 1 - Opaque (Default)
+   FillColor = 255,0,0
+   FillStyle = 3 - Vertical Line
+
+4. Run the form.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

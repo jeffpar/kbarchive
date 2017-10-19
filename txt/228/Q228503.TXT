@@ -1,0 +1,92 @@
+DOCUMENT:Q228503  08-MAY-2002  [sna]
+TITLE   :Err 1215 When IMS Transaction Program Name is All Numeric Chars.
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP2,4.0SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 4.0 SP2 
+ - Microsoft SNA Server, version 4.0SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+COM Transaction Integrator returns a runtime error (1215) to the client
+application and writes the following entry to the application event log.
+
+   Event ID: 102
+   Source: COMTI
+   Type: Error
+   Category: General
+
+   (102) COM Transaction Integrator reported the following exception to the
+   client:
+
+   Component: LLLLLLLL.IIIIIIII.1
+   Method: MMMMMMMM
+
+   Exception description:
+   (1215) The COM Transaction Integrator component library property 22 is missing
+   or corrupted. Use Component Builder to create a new copy of the component
+   library.
+
+In the above event log data, LLLLLLLL is the component library name, IIIIIIII is
+the interface name, and MMMMMMMM is the method name.
+
+CAUSE
+=====
+
+The Transaction Program name, as defined using the COMTI Component Builder, is
+specified with all numeric characters.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+WORKAROUND
+==========
+
+Place one or more alphabetic characters in the Transaction Program name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in COM Transaction Integrator for
+CICS and IMS, version 4.0 SP2. This problem was first corrected in SNA Server
+version 4.0 Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp3fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI400SP2
+Version           : WINDOWS:4.0 SP2,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

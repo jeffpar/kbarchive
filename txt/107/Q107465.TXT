@@ -1,0 +1,88 @@
+DOCUMENT:Q107465  26-JUL-2001  [visualc]
+TITLE   :FIX: ClassWizard Floating-Point Parsing Errors
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0
+OPER/SYS:
+KEYWORDS:kbwizard kbMFC kbVCkbbuglist kbfixlist
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 1.5 
+ - Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ClassWizard cannot parse floating-point numbers written in scientific
+floating-point notation, such as 1.e+006. If a number formatted in this manner
+is in the lines of code that ClassWizard must parse, the following error is
+generated:
+
+   Parsing error: Expected ")".
+   Input Line: "DDV_MinMaxFloat(pDX, m_Var, 0., 1.e+006);"
+
+The follow sequence of steps causes the code generator of ClassWizard to generate
+floating-point numbers in scientific notation:
+
+1. Add an edit control to a dialog box in App Studio.
+
+2. Add a float or double member variable to class of the previously added edit
+   control.
+
+3. In the range validation fields, add a floating-point number that fits one of
+   the following criteria, for member variable of type float:
+
+   a. It has seven digits or more to the left of the decimal point.
+
+   b. It has one or more zeros to the right of the decimal point, between the
+      decimal point and the first nonzero number.
+
+   Or the range validation fields contain a floating-pointer number that fits one
+   of the following criteria, for a member variable of type double:
+
+   a. It has 16 digits or more to the left of the decimal point.
+
+   b. It has one or more zeros to the right of the decimal point, between the
+      decimal point and the first nonzero number.
+
+RESOLUTION
+==========
+
+The only work around is to modify the code by hand and convert it back to the
+original notation. Be aware, however, that if you edit the variables for that
+class again, the numbers will be converted back to scientific notation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual C++ 2.1.
+
+Additional query words: 1.00 1.50
+
+======================================================================
+Keywords          : kbwizard kbMFC kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbvc150 kbvc100 kbVC200
+Version           : :1.0,1.5,2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

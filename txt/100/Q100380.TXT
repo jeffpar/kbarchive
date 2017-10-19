@@ -1,0 +1,48 @@
+DOCUMENT:Q100380  11-JUN-1999  [homegame]
+TITLE   :Pictures with More than 16 Colors Look Bad in JigSawed
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Entertainment Pack, volume 2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Pictures with more than 16 colors will not display properly when used in the
+JigSawed game that ships with Microsoft Entertainment Pack volume 2. JigSawed is
+a 16-color application. Consequently, images used in JigSawed should have equal
+to or less than 16 colors. Pictures with 256 colors or more will look
+unpleasant.
+
+Additional query words: 1.00 ugly 256 bad poor jig saw sawed jigsaw WEP3
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbWinEntPkSearch kbWinEntPk200
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

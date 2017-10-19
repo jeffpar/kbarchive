@@ -1,0 +1,90 @@
+DOCUMENT:Q196636  02-MAY-1999  [exchange]
+TITLE   :XADM: RPC Server Unavailable Error During Setup On Cluster
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following errors may be seen when you install Microsoft Exchange Server 5.5
+on a Windows NT Cluster Server:
+
+   While attempting to stop the Exchange ATMTA service, the
+   following error was encountered:
+
+   The RPC server is unavailable.
+
+   Microsoft Windows NT
+   ID no: 0xc00206ba
+
+   and
+
+   "Processing file '\Server\Setup\i386\msmcon.uns', at or near
+   line 12
+
+   The RPC server is unavailable.
+
+   Microsoft Windows NT
+   ID no: 0xc00206ba"
+
+CAUSE
+=====
+
+The Windows NT cluster resource group created for Exchange Server is not online.
+
+WORKAROUND
+==========
+
+Bring the cluster resource group for Exchange Server online, then run setup for
+Microsoft Exchange Server 5.5.
+
+MORE INFORMATION
+================
+
+Before Exchange Server 5.5 can be installed on a Windows NT Cluster Server
+computer, the administrator must first create a resource group for Exchange
+Server that contains a disk resource or resources, an IP address resource, and a
+network name resource. The administrator must then bring this group online by
+performing the following steps:
+
+1. Open the Cluster Administrator program.
+
+2. Highlight the resource group that was created for Exchange Server.
+
+3. On the File menu, click Bring Online.
+
+For further information regarding clustering Microsoft Exchange Servers, please
+refer to the Cluster.doc file on the Exchange Server 5.5 CD-ROM.
+
+Additional query words: mscs
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

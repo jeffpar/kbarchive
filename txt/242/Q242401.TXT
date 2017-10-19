@@ -1,0 +1,124 @@
+DOCUMENT:Q242401  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Use a Timer With A Visual Basic SnapIn Project
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:1.1,1.2,6.0
+OPER/SYS:
+KEYWORDS:kbMMC kbVBp600 kbGrpDSPlatform kbDSupport kbSnapIn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Management Console, versions 1.1, 1.2 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use a Timer object in a SnapIn project
+developed with the MMC Snap-in Designer For Visual Basic.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Sample
+-------------------------
+
+1. Start Visual Basic and create a new SnapIn project from the New Project
+   dialog box.
+
+2. Open the SnapIn1 Designer and add a new URLView Result View to the Static
+   Node. By default the new URLView is named URLView1.
+
+3. View the properties of the URLView and set it's URL property to a valid
+   website (http://example.microsoft.com) and click Ok.
+
+4. View the SnapIn1 Designer properties, and set the Default Result View
+   property to URLView1 and click Ok.
+
+5. Open the SnapIn1 Designer code window and paste in the following code:
+
+   Private Sub ResultViews_Deactivate(ByVal ResultView As SnapInLib.ResultView, Keep As Boolean)
+
+       ' stop the timer object
+       If (ResultView.Tag) Then
+       
+           Call KillTimer(0, ResultView.Tag)
+           
+       End If
+       
+   End Sub
+
+   Private Sub ResultViews_Initialize(ByVal ResultView As SnapInLib.ResultView)
+       
+       ' start the timer object
+       ResultView.Tag = SetTimer(0, 0, 1000, AddressOf TestTmrProc)
+       
+       ' if timer object failed, present a dialog to the user
+       If (ResultView.Tag = 0) Then
+       
+           SnapIn.ConsoleMsgBox "Error Creating Timer Object", vbOKOnly + vbCritical, "Timer Object Error"
+           
+       End If
+       
+   End Sub
+
+6. Add a new Module to the project. By default this new module is named Module1.
+
+7. Open the Module1 code window and past in the following code:
+
+   Option Explicit
+
+   Public Declare Function SetTimer Lib "user32" (ByVal hwnd As Long, ByVal nIDEvent As Long, ByVal uElapse As Long, ByVal lpTimerFunc As Long) As Long
+   Public Declare Function KillTimer Lib "user32" (ByVal hwnd As Long, ByVal nIDEvent As Long) As Long
+   Public Declare Function Beep Lib "kernel32" (ByVal dwFreq As Long, ByVal dwDuration As Long) As Long
+
+   Public Sub TestTmrProc(ByVal hwnd As Long, ByVal uMsg As Long, ByVal iEvent As Long, ByVal iTime As Long)
+
+       ' enable error handling here.  this is important : any error which
+       ' is not handled in the module may cause the Snapin to stop
+       ' responding
+       On Error Resume Next
+       
+       ' print current time information to debug window 
+       Debug.Print Now
+       
+   End Sub
+
+8. Press F5 to run the SnapIn project from within the IDE. When the debugging
+   dialog box appears, select the Start Program option and type MMC into the
+   text field and click ok.
+
+9. When MMC loads, load the test SnapIn into the console.
+
+10. Select the SnapIn1 ScopePaneItem.
+
+11. Switch to the Visual Basic IDE, and examine the Immediate Window. The
+   current time is printed once a second until another ScopeItem is selected or
+   MMC is closed.
+
+Additional query words: snapin designer mmc
+
+======================================================================
+Keywords          : kbMMC kbVBp600 kbGrpDSPlatform kbDSupport kbSnapIn 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbMMCSearch kbMMC110 kbMMC120
+Version           : WINDOWS:1.1,1.2,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

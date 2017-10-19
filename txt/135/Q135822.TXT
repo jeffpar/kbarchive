@@ -1,0 +1,73 @@
+DOCUMENT:Q135822  16-APR-2000  [powerpt]
+TITLE   :PPT7: Write-up Fails If "Show Field Codes" Turned On in Word
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbinterop kbole kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft Word for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Write-up feature in PowerPoint for Windows 95, version 7.0, while
+the Show Field Codes option is active in Word for Windows, version 7.0, you may
+encounter the following:
+
+ - Your presentation is not transferred as text to Word as expected.
+
+ - The insertion point does not move, though the menus may be available.
+
+ - The program appears to have stopped responding.
+
+This problem does not occur if you use PowerPoint 97 for Windows and Word 97 for
+Windows.
+
+RESOLUTION
+==========
+
+You must hide field codes in Word 7.0 before using Write-up. To do this:
+
+1. In Word for Windows, click Options on the Tools menu.
+
+2. Click the View tab.
+
+3. Clear the Show Field Codes check box.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: 7.00 ppt95 word6 word95 hung frozen w_word powerpnt ppt7 word7 note pages thumbnails tables three 3 macppt winppt
+
+======================================================================
+Keywords          : kbinterop kbole kbdta 
+Technology        : kbWordSearch kbPowerPtSearch kbWord700Search kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbWord700
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

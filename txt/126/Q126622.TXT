@@ -1,0 +1,327 @@
+DOCUMENT:Q126622  08-DEC-2000  [automap]
+TITLE   :Automap Streets: Overview Window Missing on Toolbar
+PRODUCT :Microsoft Automap
+PROD/VER::1.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 1.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Automap Streets, some of the wide area maps are missing the Overview Window
+Toolbar option button.
+
+RESOLUTION
+==========
+
+There is currently no resolution to this limitation.
+
+MORE INFORMATION
+================
+
+The following lists all maps packaged with Automap Streets and identifies if
+they have an Overview Window option available.
+
+Overview Window  Directory    Map Name
+---------------------------------------------------
+
+no               ABD_SD       Aberdeen  (SD)
+yes              ABE_PA       Allentown / Bethlehem  (PA / NJ)
+yes              ABI_TX       Abilene  (TX)
+yes              ABQ_NM       Albuquerque  (NM)
+yes              ABY_GA       Albany  (GA)
+yes              AKR_OH       Akron / Canton  (OH)
+no               ALB_NY       Albany / Schenectady / Troy  (NY / VT)
+yes              ALT_PA       Altoona / Johnstown  (PA)
+no               ALX_LA       Alexandria  (LA)
+yes              AMA_TX       Amarillo  (TX)
+yes              AND_IN       Anderson / Muncie  (IN)
+yes              AND_SC       Anderson  (SC)
+yes              ANN_AL       Anniston / Gadsen  (AL)
+yes              APL_WI       Appleton / Oshkosh / Fond du Lac  (WI)
+no               ASH_NC       Asheville  (NC)
+yes              ATC_NJ       Atlantic City  (NJ)
+yes              ATH_GA       Athens  (GA)
+yes              ATL_GA       Atlanta  (GA)
+no               AUG_GA       Augusta  (GA / SC)
+yes              AUS_TX       Austin  (TX)
+yes              BAL_MD       Baltimore  (MD / VA)
+no               BAT_MI       Battle Creek / Kalamazoo  (MI)
+yes              BFL_CA       Bakersfield  (CA)
+yes              BGH_MS       Biloxi / Gulfport / Hattiesburg  (MS)
+no               BGM_NY       Binghamton / Elmira  (NY)
+no               BGR_ME       Bangor  (ME)
+no               BHM_AL       Birmingham  (AL)
+yes              BIL_MT       Billings  (MT / WY)
+no               BIS_ND       Bismark  (ND)
+yes              BLI_WA       Bellingham  (WA)
+no               BLM_IN       Bloomington  (IN)
+yes              BOI_ID       Boise  (ID / OR)
+no               BPA_TX       Beaumont / Port Arthur  (TX)
+yes              BRM_WA       Bremerton  (WA)
+no               BRN_TX       Brownsville / McAllen  (TX)
+no               BRY_TX       Bryan / College Station  (TX)
+yes              BSN_MA       Boston / Lowell / Lawrence  (MA)
+yes              BTR_LA       Baton Rouge  (LA)
+no               BTV_VT       Burlington  (VT / NH)
+yes              BUF_NY       Buffalo  (NY)
+no               BUR_NC       Burlington  (NC)
+no               CAE_SC       Columbia  (SC)
+yes              CED_IA       Cedar Rapids  (IA)
+yes              CH2_IL       Chicago  (IL / IN / WI)
+no               CHA_TN       Chattanooga  (TN / GA / AL)
+yes              CHO_VA       Charlottesville  (VA)
+no               CHS_SC       Charleston  (SC)
+yes              CHY_WY       Cheyenne  (WY / CO)
+no               CIC_CA       Chico  (CA)
+yes              CLT_NC       Charlotte / Gastonia / Concord  (NC)
+no               CLV_OH       Cleveland  (OH)
+no               CMB_OH       Columbus  (OH)
+no               CMI_IL       Champaign / Urbana / Danville  (IL)
+no               CNC_OH       Cincinnatti  (OH)
+no               COL_GA       Columbus / Auburn / Opelika  (GA / AL)
+no               COL_MO       Columbia  (MO)
+no               COR_TX       Corpus Christi  (TX)
+yes              COS_CO       Colorado Springs / Pueblo  (CO)
+yes              CPR_WY       Casper  (WY)
+no               CRW_WV       Charleston / Beckley  (WV)
+no               CUM_MD       Cumberland  (MD / WV)
+no               DAN_VA       Danville  (VA)
+no               DAV_IA       Davenport  (IA)
+yes              DAY_OH       Dayton / Springfield  (OH)
+no               DBQ_IA       Dubuque  (IA / IL / WI)
+no               DEC_AL       Decatur  (AL)
+yes              DFW_TX       Dallas / Fort Worth  (TX)
+yes              DNV_CO       Denver  (CO)
+no               DOT_AL       Dothan  (AL)
+yes              DSM_IA       Des Moines / Ames  (IA)
+yes              DTT_MI       Detroit / Ann Arbor / Flint  (MI)
+no               DUL_MN       Duluth / Superior  (MN / WI / MI)
+yes              DVL_CA       Death Valley  (CA)
+no               EAU_WI       Eau Claire  (WI)
+yes              ELP_TX       El Paso  (TX)
+yes              ERE_PA       Erie  (PA)
+no               EUG_OR       Eugene / Springfield  (OR)
+no               EUR_CA       Eureka  (CA)
+no               EVV_IN       Evansville / Owensboro  (IN / KY / IL)
+no               FAR_ND       Fargo / Moorhead  (ND / MN)
+no               FAY_AR       Fayetteville / Springdale  (AR)
+no               FAY_NC       Fayetteville  (NC)
+no               FLO_AL       Florence  (AL)
+no               FLO_SC       Florence / Myrtle Beach  (SC)
+no               FRE_CA       Fresno  (CA)
+no               FSM_AR       Fort Smith  (AR / OK)
+no               FTC_CO       Fort Collins / Greeley  (CO)
+no               FTD_IA       Fort Dodge  (IA)
+no               FTM_FL       Fort Myers  (FL)
+no               FTP_FL       Fort Pierce  (FL)
+no               FTW_IN       Fort Wayne  (IN / OH)
+no               FWB_FL       Fort Walton Beach  (FL)
+yes              GAI_FL       Gainesville  (FL)
+no               GJT_CO       Grand Junction  (CO / UT)
+no               GRB_WI       Green Bay / Manitowoc  (WI / MI)
+no               GRF_ND       Grand Forks  (ND / MN)
+no               GRI_NE       Grand Island  (NE)
+no               GRO_NC       Goldsboro / Rocky Mount / Wilson  (NC)
+yes              GRR_MI       Grand Rapids
+no               GSO_NC       Greensboro / Winston-Salem / High Point
+                              (NC)
+no               GSP_SC       Greenville / Spartanburg  (SC / NC)
+no               GTF_MT       Great Falls  (MT)
+no               HAR_CT       Hartford / Bristol / New Britain  (CT)
+no               HBG_PA       Harrisburg  (PA)
+no               HIC_NC       Hickory  (NC)
+no               HMA_LA       Houma / Thibodaux  (LA)
+yes              HNL_HI       Honolulu  (HI)
+yes              HOU_TX       Houston  (TX)
+no               HSV_AL       Hunstville  (AL / TN)
+no               HUN_WV       Huntington / Ashland  (WV / OH / KY)
+no               AC_IA        Iowa City  (IA)
+yes              ND_IN        Indianapolis  (IN)
+no               JAN_MS       Jackson  (MS)
+yes              JAX_FL       Jacksonville  (FL / GA)
+no               JKB_TN       Johnson City / Bristol  (TN / VA / WV)
+no               JLN_MO       Joplin  (MO / KS / OK)
+no               JNS_WI       Janesville / Beloit  (WI)
+yes              KCI_MO       Kansas City  (MO / KS)
+no               KKE_IL       Kankakee  (IL)
+no               KNX_TN       Knoxville  (TN)
+yes              LA2_CA       Los Angeles / Long Beach  (CA)
+no               LAF_IN       Lafayette  (IN)
+yes              LAF_LA       Lafayette  (LA)
+no               LAK_FL       Lakeland / Winter Haven  (FL)
+no               LAN_MI       Lansing / Jackson  (MI)
+yes              LAN_PA       Lancaster  (PA)
+no               LAR_TX       Laredo  (TX)
+yes              LAS_NV       Las Vegas  (NV / UT)
+no               LAW_OK       Lawton  (OK)
+no               LBR_NJ       Long Beach / Asbury Park  (NJ)
+yes              LEX_KY       Lexington / Fayette  (KY)
+yes              LIT_AR       Little Rock  (AR)
+no               LKC_LA       Lake Charles  (LA)
+no               LMA_OH       Lima  (OH)
+yes              LNC_NE       Lincoln  (NE)
+no               LNG_WA       Longview  (WA / OR)
+no               LOU_KY       Louisville  (KY / IN)
+no               LSC_NM       Las Cruces  (NM)
+no               LSE_WI       La Crosse  (WI / MN)
+yes              LUB_TX       Lubbock  (TX / NM)
+no               LWR_KS       Lawrence  (KS)
+yes              LYH_VA       Lynchburg  (VA)
+no               MAC_GA       Macon / Warner Robins  (GA)
+yes              MEM_TN       Memphis (TN / AR / MO / MS)
+no               MFR_OR       Medford  (OR)
+no               MGM_AL       Montgomery  (AL)
+no               MGW_WV       Morgantown / Fairmont  (WV)
+no               MHT_NH       Manchester / Nashua / Portsmouth  (NH)
+no               MIA_FL       Miami / Fort Lauderdale  (FL)
+no               MID_TX       Midland / Odessa  (TX)
+no               MKE_WI       Milwaukee / Rcine / Sheboygen  (WI)
+no               MNS_OH       Mansfield  (OH)
+no               MNT_ND       Minot  (ND / MT)
+yes              MOB_AL       Mobile  (AL)
+no               MOD_CA       Modesto / Merced  (CA)
+no               MON_LA       Monroe  (LA)
+no               MRY_CA       Salinas / Seaside / Monterey  (CA)
+yes              MSN_WI       Madison  (WI)
+no               MSO_MT       Missoula  (MT)
+no               MSP_MN       Minneapolis / St Paul  (MN / WI)
+no               NBF_MA       New Bedford / Brockton / Fall  (MA)
+no               NHN_CT       New Haven / Waterbury / Meriden  (CT)
+no               NLN_CT       New London / Middleton  (CT)
+no               NOL_LA       New Orleans  (LA)
+no               NOR_VA       Norfolk / Newport  (VA / NC)
+no               NSF_NY       Nassau / Suffolk  (NY)
+yes              NSH_TN       Nashville / Clarksville  (TN / KY)
+yes              NY2_NY       New York / Northern NJ  (NY / NJ / CY)
+no               OCA_FL       Ocala  (FL)
+no               OKC_OK       Oklahoma City / Enid  (OK)
+yes              OLY_WA       Olympia  (WA)
+no               OMA_NE       Omaha (NE / IA)
+yes              ORL_FL       Orlando / Melbourne / Daytona  (FL)
+no               PAH_KY       Paducah  (KY / IL)
+no               PAN_FL       Panama City  (FL)
+no               PAR_WV       Parkersburg / Marietta  (WV / OH)
+no               PAS_MS       Pascagoula  (MS)
+no               PDX_OR       Portland  (OR / WA)
+yes              PHI_PA       Philadelphia / Trenton  (PA / NJ)
+yes              PHX_AZ       Pheonix  (AZ)
+no               PIA_IL       Peoria / Bloomington / Normal  (IL)
+yes              PIT_PA       Pittsburgh  (PA)
+no               PLA_ME       Portland / Lewiston / Auburn  (ME)
+yes              PNS_FL       Pensacola  (FL)
+no               POC_ID       Pocatello  (ID / WY)
+yes              POU_NY       Poughkeepsie / Newburgh  (NY / PA)
+no               PRO_UT       Provo / Orem  (UT)
+no               PTS_MA       Pittsfield  (MA)
+yes              PVD_RI       Providence / Newport  (RI)
+no               QCY_IL       Quincy  (IL / MO)
+no               RAP_SD       Rapid City  (SD / WY)
+no               RCH_MN       Rochester  (MN)
+no               RDD_CA       Redding  (CA)
+no               RDU_NC       Raleigh / Durham  (NC)
+no               REA_PA       Reading  (PA)
+no               RFD_IL       Rockford  (IL)
+no               RIC_VA       Richmond / Petersburg  (VA)
+no               RKH_SC       Rock Hill  (SC)
+no               RKP_WA       Richland / Kennewick / Pasco  (WA / OR)
+no               RNO_NV       Reno  (NV)
+no               ROA_VA       Roanoke  (VA)
+no               ROC_NY       Rochester  (NY)
+no               SAG_MI       Saginaw / Bay City / Midland  (MI)
+no               SAL_KS       Salina  (KS)
+no               SAL_OR       Salem  (OR)
+yes              SAN_CA       San Diego  (CA)
+no               SAO_TX       San Angelo  (TX)
+no               SAR_FL       Sarasota / Brandenton  (FL)
+no               SAT_TX       San Antonio  (TX)
+no               SAV_GA       Savannah  (GA)
+yes              SBA_CA       Santa Barbara / Lompoc  (CA)
+no               SBD_IN       South Bend  (IN / MI)
+no               SCB_NE       Scottsbluff  (NE / WY)
+no               SCK_CA       Stockton  (CA)
+yes              SEA_WA       Seattle / Tacoma  (WA)
+yes              SF2_CA       San Francisco  (CA)
+no               SHD_TX       Sherman / Denison  (TX / OK)
+no               SHV_LA       Shreveport  (LA)
+no               SLC_UT       Salt Lake City  (UT / ID / WY)
+no               SMF_CA       Sacramento  (CA)
+no               SOU_SD       Sioux Falls  (SD / MN / IA)
+yes              SPO_WA       Spokane  (WA)
+no               SPR_IL       Springfield / Decatur  (IL)
+no               SPR_MA       Springfield  (MA /NH /VT)
+no               SPR_M0       Springfield  (MO)
+no               STB_OH       Steubenville / Weirton  (OH / WV)
+no               STC_CA       Santa Cruz (CA)
+no               STC_MN       St. Cloud  (MN)
+no               STJ_MO       St. Joseph  (MN / KS)
+no               STL_MO       St. Louis  (MO / IL)
+no               SUX_IA       Sioux City  (IA / NE / SD)
+no               SWB_PA       Scranton / Wilkes Barre  (PA)
+no               SYR_NY       Syracuse / Utica / Rome  (NY)
+no               TAM_FL       Tampa / St. Petersburg  (FL)
+no               TER_IN       Terre Haute  (IN / IL)
+no               TEX_TX       Texarkana  (TX / AR)
+no               TLH_FL       Tallahassee  (FL)
+no               TOL_OH       Toledo  (OH / MI)
+no               TPK_KS       Topeka  (KS)
+no               TSL_AL       Tuscaloosa  (AL)
+no               TUL_OK       Tulsa  (OK)
+no               TUS_AZ       Tucson  (AZ)
+no               TYL_TX       Tyler / Longview / Marshall  (TX)
+no               VIC_TX       Victoria  (TX)
+no               VMB_NJ       Vineland / Millville / Bridgeton  (NJ)
+no               VTP_CA       Visalia / Tulare / Porterville  (CA)
+no               WAC_TX       Waco / Killeen / Temple  (TX)
+no               WAT_IA       Waterloo / Cedar Falls  (IA)
+no               WAU_WI       Wausau  (WI)
+no               WCT_KS       Wichita  (KS)
+no               WHL_WV       Wheeling  (WV / OH)
+no               WIC_TX       Wichita Falls  (TX)
+no               WIL_DE       Wilmington  (DE)
+no               WIL_NC       Willmington / Jacksonville  (NC)
+no               WOR_MA       Worchester / Fitchburg  (MA)
+no               WPT_PA       Williamsport / State College  (PA)
+yes              WSH_DC       Washington  (DC / MD / VA / WV)
+no               YKM_WA       Yakima  (WA)
+no               YRK_PA       York  (PA)
+no               YTN_OH       Youngstown / Warren  (OH / PA)
+no               YUB_CA       Yuba City  (CA)
+no               YUM_AZ       Yuma  (AZ)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Automap Streets version 1.01. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: auto auto-map automap reference streets
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets101
+Version           : :1.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

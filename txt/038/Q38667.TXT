@@ -1,0 +1,70 @@
+DOCUMENT:Q38667  07-NOV-1999  [macmail]
+TITLE   :Mac DOS: Using Microsoft Mail with Windows/286
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::1.37,2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, MS-DOS workstation, versions 1.37, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To run Microsoft Mail under Windows/286, do the following:
+
+1. Start AppleTalk by running the AppleTalk network device driver that came with
+   your network card.
+
+2. Start the Notifier and sign in to Microsoft Mail.
+
+3. Start Windows.
+
+4. In the MS-DOS Executive window, choose MAIL286.PIF. This file is
+   automatically copied to your Mail directory by the Setup program.
+
+5. When you've finished with your mailbox, choose Exit from the File menu to
+   return to the MS-DOS Executive window but remain signed on to the Mail
+   system.
+
+MORE INFORMATION
+================
+
+As you work with applications in Windows, you can check your mailbox by
+switching from the application's window to the MS-DOS Executive window and
+running MAIL286.PIF.
+
+While working with an application in Windows/286, the Notifier alert window won't
+appear when you receive a new message if the application is displaying in
+graphics mode. However, you will hear a chime if you've chosen that option from
+the Preferences dialog box (on the Mail menu).
+
+For more information about running Mail with Windows/286, see Appendix C, "Using
+Mail with Microsoft Windows," in the "Microsoft Mail User's Guide."
+
+Additional query words: 1.37 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailATN137DOS kbMailATN200DOS kbMailATN300DOS
+Version           : :1.37,2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

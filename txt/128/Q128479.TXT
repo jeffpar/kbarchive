@@ -1,0 +1,69 @@
+DOCUMENT:Q128479  11-DEC-1999  [homemm]
+TITLE   :Baseball 1995: No International Characters in Daily Sign-Up
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball for Windows, version 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enter data in the Daily Sign-Up section, you cannot insert
+International characters. International characters are necessary for typing
+foreign names and addresses.
+
+RESOLUTION
+==========
+
+To insert foreign characters into the Daily Sign-Up fields, use ASCII extended
+characters:
+
+1. Make sure the NUMLOCK key is on.
+
+2. Hold down the ALT key and press the number keys on the numeric keypad that
+   represent the desired character. For example, to enter an "E" with an umlaut
+   placed above it, press ALT+0203 on the numeric keypad. This keystroke enters
+   an ASCII extended character code.
+
+The codes for the ASCII extended characters can be found in the lower-right
+corner of the Character Map accessory screen.
+
+MORE INFORMATION
+================
+
+The Microsoft Windows Character Map accessory provides you with extended
+characters and special characters in symbol fonts that you can insert into other
+applications.
+
+For more information about Character Map usage, see your Windows printed
+documentation or online Help.
+
+Additional query words: 1995multi media multimedia multi-media mmtitles kbmm dots above ascii binary european charactersnon-English periods on top
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1995
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

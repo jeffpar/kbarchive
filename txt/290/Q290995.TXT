@@ -1,0 +1,74 @@
+DOCUMENT:Q290995  16-JUL-2001  [sms]
+TITLE   :SMS: Problems Updating Off-Line License Metering Logs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbtool kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running Microsoft Windows 2000 Professional, you may be unable to
+update the log files that are used by License Metering in off-line mode. Because
+of this, the amount of program usage that is reported is inaccurate.
+
+CAUSE
+=====
+
+By default, Windows 2000 Professional "ordinary users" have insufficient
+privileges to the <systemroot>\ms\sms\clicomp\licmtr\i386 folder that is
+used by License Metering as a repository for the off-line logs. Because of this,
+the log cannot be updated by the logged-on user.
+
+WORKAROUND
+==========
+
+Extend folder permissions to include "Write" permission for any account (or
+group of accounts) that log onto the workstation for the
+<systemroot>\MS\SMS\clicomp\licmtr\i386 folder.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+If you view the SMS License Metering client component log file (Liccli.log), you
+may see the following entry:
+
+   Off-line licensing log error: access to the log file has been denied.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

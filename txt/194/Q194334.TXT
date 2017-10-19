@@ -1,0 +1,106 @@
+DOCUMENT:Q194334  11-JUN-2002  [winnt]
+TITLE   :SP4 Installation Does Not Delete Reference to Previous Hotfixes
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbFEA kbWinNT400sp4fea
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing Windows NT 4.0 Service Pack 4, running hotfix -l will still
+show any pre-Service Pack 4 hotfixes as being installed on the computer using
+Hotfix.exe. It will also allow you to still remove the hotfix, which will return
+the hotfixed files to the files before the installation of the hotfix.
+
+This can cause reduced functionality or system failures.
+
+To retain a record of what hotfixes were installed on the system before
+installing Service Pack 4, run Srvinfo.exe or Hotfix -l and save this
+information to a text file on the computer.
+
+RESOLUTION
+==========
+
+When you perform this procedure, the computer will not retain the record of
+hotfixes installed previous to the SP4 installation if you run the uninstall
+procedure by running Spuninst.exe from the $NtServicePackUninstall$\spuninst\
+folder or you remove it through the Add/Remove Programs tool in Control Panel.
+To retain a record of what hotfixes were installed on the system before
+installing Service Pack 4, run Srvinfo.exe or Hotfix -l and save this
+information to a text file on the computer.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+To remove the reference to these hotfixes, delete the following keys that
+reference pre-SP4 fixes:
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT
+\CurrentVersion\Hotfix\<KBArticleNumber>
+
+where <KBArticleNumber> is the Q number of a Microsoft Knowledge Base
+article associated with a particular hotfix.
+
+Also delete the folders under the %systemroot%\ folder that begin with
+$NtUninstall<KBArticleNumber>$ and that matches the registry key deleted.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+MORE INFORMATION
+================
+
+The Windows NT 4.0 Service Pack 4 installation will replace any pre-Service Pack
+4 hotfix files on the system but it does not delete the registry reference or
+the uninstall folder created by running Hotfix.exe.
+
+For additional information about Hotfix.exe, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q184305 How to Install and Remove Hotfixes with HOTFIX.EXE
+
+Additional query words:
+
+======================================================================
+Keywords          : kbFEA kbWinNT400sp4fea 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

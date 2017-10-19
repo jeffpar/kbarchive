@@ -1,0 +1,87 @@
+DOCUMENT:Q157238  08-AUG-2001  [winnt]
+TITLE   :How to Activate Security Event Logging in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to activate security event logging in Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+To activate security event logging, follow these steps:
+
+1. Log on as the administrator of the local workstation.
+
+2. Click the Start button, point to Programs, point to Administrative Tools, and
+   then click User Manager.
+
+3. On the Policies menu, click Audit.
+
+4. Click the Audit These Events option.
+
+5. Enable the options you want to use. The following options are available:
+
+    - Logon/Logoff: Logs both local and remote resource logins.
+
+    - File And Object Access: File, directory, and printer access.
+
+      Note: Files and folders must reside on an NTFS partition for security
+      logging to be enabled. Once the auditing of file and object access has
+      been enabled, use Windows NT Explorer to select auditing for individual
+      files and folders.
+
+    - Use Of User Rights: Access to anything requiring user rights.
+
+    - User And Group Management: Any user accounts or groups created, changed,
+      or deleted. Any user accounts that are renamed, disabled, or enabled. Any
+      passwords set or changed.
+
+    - Security Policy Changes: Any changes to user rights or audit policies.
+
+    - Restart, Shutdown, And System: Logs shutdowns and restarts for the local
+      workstation.
+
+    - Process Tracking: Tracks program activation, handle duplication, indirect
+      object access, and process exit.
+
+6. Click the Success check box to enable logging for successful operations, and
+   the Failure check box to enable logging for unsuccessful operations.
+
+7. Click OK.
+
+Additional query words: registry
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

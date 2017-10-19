@@ -1,0 +1,77 @@
+DOCUMENT:Q249137  24-NOV-2000  [sms]
+TITLE   :SMS: Invalid Results Are Received When Querying a Component
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbDatabase kbMMC kbsms200 kbsms200bug kbQuery kbReport kbsmsAdmin kbStatSum
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you query a Systems Management Server (SMS) component, you receive
+inaccurate results.
+
+CAUSE
+=====
+
+This issue occurs if either of the following options are disabled:
+
+ - "Resolve description strings"
+
+ - "Resolve property strings"
+
+If these options are disabled, the Status Message Viewer does not restrict query
+results to the current SMS component that is being queried.
+
+WORKAROUND
+==========
+
+To work around this issue, ensure that the "Resolve description strings" option
+and "Resolve property strings" option are enabled. To configure these options:
+
+1. Right-click any package or component, click Show Messages, and then click
+   All.
+
+2. Click Options on the View menu.
+
+3. Click the General tab and click to select the "Resolve description strings"
+   check box and the "Resolve property strings" check box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbMMC kbsms200 kbsms200bug kbQuery kbReport kbsmsAdmin kbStatSum 
+Technology        : kbSMSSearch kbSMS200SP1 kbSMS200SP2
+Version           : :2.0 SP1,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,54 @@
+DOCUMENT:Q99098  30-JUL-2001  [lanman]
+TITLE   :Erratic Printing with HP IIIsi PostScript and LMSFM
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When Macintosh clients use the MACPRINT service to send PostScript jobs to a
+PC-attached HP IIIsi, some jobs may print partially, and some jobs may not be
+printed at all.
+
+CAUSE
+=====
+
+There is a problem with the PostScript implementation contained in the HP IIIsi.
+Testing at Microsoft determined that the problem occurred with printers that
+have a firmware datecode of V5.1, an internal font datecode of V2.14, and a
+PostScript device specific revision of 213. The problem did not occur on
+printers with a firmware datecode of V6.4R, an internal font datecode of V3.01,
+and a PostScript device specific revision of 300.
+
+RESOLUTION
+==========
+
+Obtain updated printer firmware from HP.
+
+To print out your version numbers from the HP IIIsi test page, take the printer
+offline, then press and hold the button marked "test" until the LCD indicates
+the test page is being printed.
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

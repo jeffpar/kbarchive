@@ -1,0 +1,55 @@
+DOCUMENT:Q60507  08-NOV-2001  [lanman]
+TITLE   :HLLAPI SEND KEY Function 3: TAB and BACKTAB
+PRODUCT :Microsoft LAN Manager
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - DCA/Microsoft Communications Server, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you send the TAB (@A@y) and BACKTAB (@A@z) keys to the 3270 presentation
+space using the SEND KEY function, the cursor location doesn't return to the
+expected position. These keystrokes are WORD TAB and WORD BACKTAB, which are
+special IBM OS/2 Extended Edition Communication Manager compatible HLLAPI
+keystrokes. These commands are intended to move the cursor to the next word,
+independent of field positioning.
+
+The OS/2 keyboard mnemonics that should be used to TAB and BACKTAB between
+unprotected fields are:
+
+   Tab      @T
+   Backtab  @B
+
+A complete list of valid OS/2 keyboard mnemonics for HLLAPI SEND KEY (Function 3)
+can be found in the "DCA/Microsoft Select HLLAPI Programmer's Guide."
+
+Additional query words: 1.00 prodcs
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbSNAServSearch kbDCAMSCommServ
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

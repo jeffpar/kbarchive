@@ -1,0 +1,76 @@
+DOCUMENT:Q50505  04-MAY-2001  [fortran]
+TITLE   :IBM SAA Extensions Available in Microsoft FORTRAN 5.1
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::5.0,5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN compiler for OS/2, versions 5.0, 5.1 
+ - Microsoft FORTRAN Compiler for MS-DOS, versions 5.0, 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft FORTRAN versions 5.0 and 5.1 include all of the Systems Applications
+Architecture (SAA) extensions defined by IBM. The extensions are listed on pages
+330-331 of the Microsoft FORTRAN "Reference" manual for versions 5.0 and 5.1 and
+in the text below.
+
+Microsoft FORTRAN supports the following IBM SAA extensions.
+
+ - 31 character names
+
+ - Bit manipulation intrinsic function
+
+ - Case insensitive source
+
+ - COMMON allows character and noncharacter data in same block
+
+ - CONJG, HFIX, IMAG intrinsic functions
+
+ - Data initialization in type statements
+
+ - EQUIVALENCE allows associating character and noncharacter data
+
+ - Functions IOR, IAND, NOT IEOR, ISHFT, BTEST, IBSET, and IBCLR
+
+ - IMPLICIT NONE
+
+ - INCLUDE compiler directive
+
+ - INTEGER*2, COMPLEX*16, and LOGICAL*1 data types
+
+ - Optional length specifications in INTEGER, REAL, COMPLEX, and LOGICAL type
+   statements
+
+ - Using the underscore (_) in names
+
+ - Z edit descriptor
+
+Additional query words: kbinf nofps 5.00 5.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRAN510DOS kbFORTRAN500DOS kbFORTRAN500OS2 kbFORTRAN510OS2
+Version           : :5.0,5.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

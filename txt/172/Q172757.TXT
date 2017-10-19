@@ -1,0 +1,70 @@
+DOCUMENT:Q172757  18-DEC-1999  [mspress]
+TITLE   :Several NT 4.0 Resource Kit Utilities Missing
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Server 4.0 Resource Kit ISBN 1-57231-344-7 
+ - MSPRESS Microsoft Windows NT Workstation 4.0 Resource Kit ISBN 1-57231-343-9 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following Resource Kit utilities are mentioned in the RKTools.hlp file, but
+are not present on the Microsoft Windows NT 4.0 Resource Kit CD-ROM:
+
+ - Global.exe
+
+ - Local.exe
+
+ - Grpcpy.exe
+
+ - Showmbrs.exe
+
+MORE INFORMATION
+================
+
+These utilities were planned for release with the Microsoft Windows NT 4.0
+Resource Kit, but were either incomplete or not stable when the Resource Kit was
+released.
+
+All of these utilities are available on the Microsoft Windows NT 4.0 Resource Kit
+Supplement One and Supplement Two CD-ROMs. For more information on the Microsoft
+Windows NT 4.0 Supplements, please check the Microsoft Press Web site at:
+
+   http://mspress.microsoft.com/
+
+Intel versions of Global.exe, Local.exe, and Showmbrs.exe are available at the
+following FTP address:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/reskit/nt40/
+
+Additional query words: mspress ms_press press ntrk ntreskit 1-57231-344-7 1-57231-343-9
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword3
+Version           : :
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

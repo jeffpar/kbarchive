@@ -1,0 +1,123 @@
+DOCUMENT:Q182289  18-MAY-2001  [vbwin]
+TITLE   :PRB: DBGRID Can Cause VB to Crash When Scrolling Horizontally
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVBDB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the Remote Data Control and DBGrid can cause Visual Basic to crash when
+scrolling horizontally in the DBGrid (dbgrid32.ocx).
+
+RESOLUTION
+==========
+
+Either size the grid so there is no need to scroll horizontally or implement the
+FlexGrid control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem occurs in Microsoft Windows 95 and Microsoft Windows 98. The sample
+code works fine in Microsoft Windows Me and Visual Basic 6.0 Service Pack 4.
+
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following SQL Server script file on SQL Server:
+
+         if exists (select * from sysobjects
+           where id = object_id('dbo.test') and sysstat & 0xf = 3)
+          drop table dbo.test
+         GO
+
+         CREATE TABLE dbo.test
+         ( id int NOT NULL , a char (255) NULL , b char (255) NULL ,
+         c char (255) NULL , d char (255) NULL )
+         GO
+
+   NOTE: Please make sure to choose an appropriate database, such as pubs, in
+   which to create this Table.
+
+2. Create a new project in Visual Basic. Form1 is created by default.
+
+3. Under Components on the Project menu, check the Microsoft Remote Data Control
+   and Microsoft Data Bound Grid. Add a Remote Data Control, a DBGrid, and a
+   CommandButton to Form1. Under Project References select Remote Data Object
+   2.0.
+
+4. Set the appropriate properties for the Remote Data Control to connect with
+   the Server. Create a DSN for the Master database and place the name of the
+   dsn in the datasource name property of the Remote Data Control In the SQL
+   property enter "Select * from test" without the quotes.
+
+5. Set the following properties for the DBGrid control accordingly:
+
+         DataSource = MSRDC1
+
+6. Add the following code to the CommandButton's Click method:
+
+         Dim con As rdoConnection
+         Dim rs As rdoResultset
+         Set con = rdoEngine(0).OpenConnection("", _
+            rdDriverNoPrompt, _
+            false, _
+            "DRIVER={SQL Server};" _
+            & "SERVER=<server_name>;" _
+            & "UID=<userID>;" _
+            & "PWD=<password>;" _
+            & "DATABASE=<databasename>")"
+         For i = 1 To 30
+          Set rs = con.OpenResultset("INSERT INTO test (id,a,b,c)" _
+           & " VALUES (" & i & " ,'" & CStr(i) _
+           & "','2222222222222222222222222','3333333333333333333333333')")"
+          Debug.Print i
+         Next i
+
+7. Save the Project and run it.
+
+8. When the form is loaded, press the CommandButton to populate the table,
+   MSRDC, and grid. Close the form and run it again.
+
+9. When the grid is populated, scroll down using the mouse and the DOWN ARROW
+   button on the grid, and then try scrolling to the right.
+
+Additional query words: gpf
+
+======================================================================
+Keywords          : kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

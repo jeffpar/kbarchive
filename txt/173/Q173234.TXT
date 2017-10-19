@@ -1,0 +1,63 @@
+DOCUMENT:Q173234  08-NOV-2001  [homegame]
+TITLE   :Troubleshooting: End All Tasks
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbtshoot kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for Windows, version 2.0 
+ - Microsoft Deadly Tide for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are having problems when you run a particular game, it may help if you
+shut down all other programs before you start the game. This is a good
+troubleshooting step if you are receiving system error messages, your computer
+hangs or freezes, or other unusual problems occur.
+
+MORE INFORMATION
+================
+
+Use the following steps to shut down all running programs:
+
+1. Close all the programs that you can see are open.
+
+2. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+3. Click a program or task and then click End Task.
+
+4. Repeat steps 2-3 until all programs are shut down EXCEPT Explorer and Systray
+   (these are components of Windows and should not be shut down).
+
+5. After you close all running programs, try to run the game again.
+
+
+Additional query words: 1.00 2.00 imuwr shutdown shut-down hang freeze locks lock up
+
+======================================================================
+Keywords          : kbtshoot kbusage 
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcade kbDeadlyTide
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,79 @@
+DOCUMENT:Q130238  10-FEB-2000  [foxpro]
+TITLE   :PRB: Macro Substitution Won't Work in Expression Builder
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to add a macro-substituted memory variable in the Expression
+Builder, you receive a "Syntax Error."
+
+CAUSE
+=====
+
+Macro substitution is used with command syntax. It is not permitted in the User
+Interface.
+
+WORKAROUND
+==========
+
+Use EVALUATE() or a named expression that is expressed as "(<variable
+name>)".
+
+See the FoxPro "Language Reference" or Help file for more information on how to
+use the EVALUATE function, named expressions, or macro substitution.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Command window type the following two lines of code:
+
+      cVarName = "Hello"
+      cFilter = 'cVarName'
+
+2. Type the following line of code:
+
+      GETEXPR TO cX
+
+3. In the Expression Builder, type &cFilter, and click OK or Verify.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

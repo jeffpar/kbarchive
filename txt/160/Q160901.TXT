@@ -1,0 +1,73 @@
+DOCUMENT:Q160901  27-JUL-2001  [sms]
+TITLE   :SMS: Delete Special Doesn't Remove Entries from Machine Groups
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage kbsmsAdmin smsadmin smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A delete special based on "Machines with last activity" from the Sites window
+will remove inactive computers from the Sites window, but will not remove any
+static Machine groups that included those computers. In their place, there will
+be a blank line with a machine icon at the beginning.
+
+In Systems Management Server, version 1.1 only, this can result in an Dr. Watson
+error if a package is dropped on a machine group where old deleted machines
+remain. For example:
+
+An application error has occurred and an application error log is being
+generated.
+
+   SMSEXEC.exe
+   Exception: access violation (0xc0000005), address 0x1f0f1dd4
+
+WORKAROUND
+==========
+
+To work around this problem, do either of the following:
+
+ - Manually delete the inactive computer from the machine group.
+
+-or-
+
+ - Manually delete the computer from the Sites window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1 and 1.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: blank admin
+
+======================================================================
+Keywords          : kbnetwork kbusage kbsmsAdmin smsadmin smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

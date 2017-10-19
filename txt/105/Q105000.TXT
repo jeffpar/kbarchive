@@ -1,0 +1,51 @@
+DOCUMENT:Q105000  30-JUL-2001  [lanman]
+TITLE   :RESTACC Fails with "SYS0111 File Name Too Long" Error
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+SYMPTOMS
+========
+
+When restoring file system access control lists, RESTACC fails and returns the
+error message "SYS0111 File Name Too Long."
+
+CAUSE
+=====
+
+The calculation of the memory required to store LAN Manager extended attributes
+was performed incorrectly for directories with only these access control/audit
+entries set:
+
+NET ACCESS some-directory /ADD /FAILURE:ALL /SUCCESS:anything
+
+NET ACCESS some-directory /ADD /FAILURE:anything /SUCCESS:ALL
+
+RESOLUTION
+==========
+
+A corrected calculation algorithm is in LAN Manager 2.2 Patch A.
+
+Additional query words: 2.20 netapi restacc 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

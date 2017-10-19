@@ -1,0 +1,52 @@
+DOCUMENT:Q74560  06-NOV-1999  [win16sdk]
+TITLE   :Charts and Graphs for Windows-Based Applications
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Chapter 11 of the book "Microsoft C Advanced Programming Techniques," included
+with the Microsoft C Compiler version 6.0 discusses creating charts and graphs
+in MS-DOS using the C presentation graphics library PGCHART.LIB.
+
+Windows does not include a presentation graphics library as such, but the Windows
+graphics functions can be used to draw graphs and charts. PGCHART.LIB is only
+for use with MS-DOS-based applications.
+
+Page 570 of Charles Petzold's "Programming Windows" (Second Edition) includes an
+example of using the Windows Pie() function to draw a pie chart. Similarly,
+other GDI functions, such as Rectangle(), Polygon(), or LineTo(), could be used
+to draw charts or graphs.
+
+Additional query words: 3.00 no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

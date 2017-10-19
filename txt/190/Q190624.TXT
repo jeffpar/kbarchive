@@ -1,0 +1,117 @@
+DOCUMENT:Q190624  11-DEC-1999  [foxpro]
+TITLE   :PRB: SYS(2018) May Return More Than the Message Parameter
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a table is created programmatically, the Check clause can be used to
+perform field level validations. When a field level error occurs, either the
+SYS(2018) or the AERRORS function can be used to display the source of the
+error. In Visual FoxPro 3.0, the error message parameter that was involved in
+the generated error was returned. This behavior is different in Visual FoxPro
+5.0 and 6.0. In the latter versions of Visual FoxPro, the entire error message
+is returned by default.
+
+RESOLUTION
+==========
+
+To work around this behavior use the Error cause in the CREATE TABLE, Check
+statement, as shown in the MORE INFORMATION section.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code to see the behavior. When the code executes, the
+   program continues when an error occurs and the error is displayed using
+   SYS(2018) and the AERRORs array. Run the code and first do not select the
+   work around and you will see the default error message parameter. If you want
+   to see the work around, the CREATE TABLE with the ERROR clause is used.
+
+   Sample Code
+   -----------
+
+         *-- Code begins here.
+         CLEAR
+         ON ERROR *
+         IF ADIR(myTestFiles, "sys2018*.dbc") > 0
+             nErase=MESSAGEBOX("Erase SYS(2018) Files?",4)
+         ENDIF
+         IF nErase = 6
+             CLOSE DATA
+             ERASE sys2018.*
+             CREATE DATA sys2018
+             OPEN DATA sys2018
+             nError = MESSAGEBOX("Workaround?",4)
+             IF nError = 6
+                 CREATE TABLE sys2018 (NAME c(10) CHECK NAME="Moe" ;
+                 ERROR "NAME")
+             ELSE
+                 CREATE TABLE sys2018 (NAME c(10) CHECK NAME="Moe")
+             ENDIF
+         ENDIF
+
+         INSERT INTO sys2018 VALUES ("NotMoe")
+
+         &&This causes a validation error.
+         ?"SYS(2018) = " + SYS(2018)
+         ?
+         ?
+         =AERROR(aTest)
+         DISPLAY MEMO LIKE aTest
+         CLOSE DATA ALL
+         ON ERROR
+      *-- Code ends here.
+
+After the preceding program is finished, the files created can be deleted by
+issuing the following command:
+
+      ERASE SYS2018.*
+
+REFERENCES
+==========
+
+Visual FoxPro Help; search on: "SYS(2018)" (without the quotation marks);
+"AERROR" (without the quotation marks)
+
+Additional query words: kbADO150 kbADO200 kbCtrl kbDatabase kbDataBinding kbvfp600 kbActiveX
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

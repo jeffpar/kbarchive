@@ -1,0 +1,65 @@
+DOCUMENT:Q188445  19-JUN-2001  [mastering]
+TITLE   :PRB: Marisa.dll Causes Movie Clip Errors in Mastering Series
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Products, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run movie clips from Mastering Series software, one of the
+following errors occurs:
+
+   Method of object failed, mod function "view_marissa"
+
+   -or-
+
+   Runtime error 6 Overflow
+
+CAUSE
+=====
+
+These errors are caused by an old version of Marissa.dll.
+
+RESOLUTION
+==========
+
+The current version of Marissa.dll file is available as part of an .exe file
+from the following Microsoft Web site:
+
+   http://www.microsoft.com/downloads/release.asp?ReleaseID=30288
+
+After you have downloaded and expanded this file, copy Marissa.dll to the
+Windows\System or WinNT\System32 directory on your hard disk.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbMSPressSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

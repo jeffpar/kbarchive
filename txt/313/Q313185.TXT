@@ -1,0 +1,56 @@
+DOCUMENT:Q313185  03-JUN-2002  [odbc]
+TITLE   :INFO: SQL Server Driver for JDBC Does Not Support HTTP Tunneling
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbJDBC kbDSupport kbSQLServ2000 kbSQLServSearch kbAudDeveloper kbSystemData
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SQL Server 2000 Driver for JDBC 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SQL Server 2000 Driver for JDBC cannot support HTTP tunneling because
+it does not use the HTTP protocol. There is no way for the Microsoft SQL Server
+2000 Driver for JDBC to connect to the standard HTTP port 80 and be redirected
+to the database host and port.
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For more information about Microsoft SQL Server 2000 Driver for JDBC, see the
+Microsoft SQL Server 2000 Driver for JDBC HTML Help or Online Guide.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbJDBC kbDSupport kbSQLServ2000 kbSQLServSearch kbAudDeveloper kbSystemData 
+Technology        : kbAudDeveloper kbSQLServ2000Search kbSQLServJDBC
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

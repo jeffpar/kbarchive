@@ -1,0 +1,62 @@
+DOCUMENT:Q146463  16-MAR-1999  [exchange]
+TITLE   :XGEN: KMS Cannot Write Certificate Revocation List
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Key Management (KM) Server is unable to write the certificate revocation
+list, the following events are logged:
+
+   MSExchange KMS 3013: Unable to get the Microsoft Exchange Key Management
+   Server Site Entry ID when writing the Certificate Revocation List. The error
+   code returned is 8004010f.
+
+   MSExchange KMS 3147: Writing of Certificate Revocation List to the Microsoft
+   Exchange Directory while saving the revocation list failed.
+
+CAUSE
+=====
+
+This problem occurs if the KM Server service account is not configured
+correctly.
+
+RESOLUTION
+==========
+
+To correct this problem, make sure that the service account for the KM Server is
+the Exchange service account.
+
+
+Additional query words: security viewer
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

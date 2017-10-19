@@ -1,0 +1,72 @@
+DOCUMENT:Q258870  06-JUN-2000  [winnt]
+TITLE   :How to Use TAMA Agent to Add Resources to Directory Objects
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Metadirectory Services (MMS) 2.1, you can use a Together
+Administration Management Agent (TAMA) to add resources to directory objects
+with dynamic rather than static processes.
+
+In a static configuration, when the TAMA resource is attached to a particular
+object in the metaverse, it applies to all subordinate objects.
+
+As an alternative, the dynamic configuration does not attach the resource to any
+point in the tree. Instead, you configure the rules on the Rules form. To use
+this form, click "Operate the Together Administration MA", click Configuration
+Settings, and then click the Rules form. These rules allow multiple conditions
+to be evaluated against each metaverse entry, resulting in the possibility of
+coincident multiple resource assignments. This is the add or hire scenario. The
+opposite is the remove or fire scenario.
+
+You cannot implement the remove or fire scenario with these resource assignments
+by using the -= scripting language operator in the Rules template.
+
+The target attribute, zcTaAccountResourceDNs, is multi-valued, therefore the -=
+operator is normally required. However, if the operator is used, the user
+typically receives the following results:
+
+ - An error (14014) if the zcTaAccountResourceDNs attribute contains no values.
+
+ - The object is not deleted in the connected directory.
+
+MORE INFORMATION
+================
+
+MMS version 2.1 does not support fire abilities in the hire-fire scenario.
+
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

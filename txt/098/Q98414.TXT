@@ -1,0 +1,67 @@
+DOCUMENT:Q98414  25-OCT-2001  [homemm]
+TITLE   :Using IBM M-Audio Sound Card to Play MIDI Sounds
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+ - Microsoft Multimedia Beethoven for Windows, version 1.0 
+ - Microsoft MediaView Software and Title Development Kit, version 1.0 
+ - Microsoft Multimedia Viewer 
+ - Microsoft Windows 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MIDI sound will not play through the PC speaker if you are using the IBM M-
+Audio sound card. Wave sound will play from the PC speaker.
+
+MORE INFORMATION
+================
+
+The IBM M-Audio sound card can play sound through the internal PC speaker. MIDI
+sound cannot play through the PC speaker. The PC speaker is only capable of
+playing wave sounds. A set of external speakers (or headphones) plugged into the
+card (bottom two jacks) provide MIDI capabilities.
+
+To set the option to use the PC speaker, start Control Panel, click Drivers,
+select "IBM M-Audio sound driver", and click Setup.
+
+If you still can't play MIDI sound, do the following in Windows 3.x:
+
+1. Download the latest drivers from the Microsoft Download Service (IBM.EXE).
+   There is just one driver to install in Control Panel Drivers for all types of
+   sound (unlike some that may require multiple drivers).
+
+2. In the MIDI Mapper set 1 through 12 in the port column to the IBM choice and
+   13 through 16 on none.
+
+
+Additional query words: kbhowto kbmm multi media multi-media multimedia .wav .mid canyon.mid midimapper sound
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbHomeProdSearch kbWin3xSearch kbHomeMMsearch kbSDKSearch kbBookshelfSearch kbZNotKeyword3 kbWin311 kbSDKMediaView100 kbMMBeethoven100
+Version           : :1.0,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

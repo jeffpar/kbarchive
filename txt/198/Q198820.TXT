@@ -1,0 +1,64 @@
+DOCUMENT:Q198820  09-APR-2000  [exchange]
+TITLE   :XIMS: Incorrectly Formatted Channel Names Will Not Be Transcribe
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When attempting to transcribe new dynamic channels in the Microsoft Chat Service
+MMC, the users who join channels with the incorrectly formatted names (%#[ASCII
+255], %#[ASCII 251]) see abnormal behavior. When the user sends private
+messages, the first channel will create a transcript file with the name %#, and
+the first user will receive a message indicating the channel message is being
+transcribed.
+
+No other log files will be created for the channels, and any private messages
+will be placed in the log files.
+
+RESOLUTION
+==========
+
+If a channel with a normal name is created, it will transcribe normally while
+these two channels will not be transcribed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Chat Service included
+with Exchange Server 5.5 Service Pack 1.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1
+Version           : winnt:5.5 SP1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,150 @@
+DOCUMENT:Q157630  13-JAN-2000  [exchange]
+TITLE   :XCON: Adjustment of Connection Retry Values on Override Tab
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In network environments where connectivity is inconsistent and/or unreliable,
+the MSExchangeMTA may routinely log X.400 Service errors in the Windows NT Event
+Viewer Application log if mail is queued up to an X.400 Connector that cannot
+successfully connect to the computer specified on the X.400 Connector's Stack
+tab in the Microsoft Exchange Administrator program.
+
+If the Microsoft Exchange Message Transfer Agent (MTA) is unable to make the
+connection to the remote computer due to network problems, it is designed to
+continue to retry every 600 seconds, by default, until a specified number of
+retries has been reached (144, by default). Eventually, the MTA will generate a
+Non-Delivery Report (NDR) to the originator of the message and cease attempts to
+deliver to the remote computer.
+
+Based on the Microsoft Exchange administrator's needs, these defaults may be set
+differently on each X.400 Connector, depending on the reliability of the network
+link between the local and remote computers.
+
+MORE INFORMATION
+================
+
+The following series of Event Viewer errors may indicate that networking
+problems are contributing to the MTA's inability to deliver mail across the
+X.400 Connector:
+
+   Warning Event ID 1294 Source: MSExchangeMTA Category: X.400 Service:
+
+   An association with entity
+   /O=orgname/OU=site/CN=Configuration/CN=Connections/CN=X400ConnectorName ended
+   abnormally.
+
+   Warning Event ID 4284 Source: MSExchangeMTA Category: X.400 Service:
+
+   An error occurred during connection/disconnection. Error code: 8511.
+
+   Warning Event ID 289 Source: MSExchangeMTA Category: X.400 Service:
+
+   A connection to
+   /O=orgname/OU=site/CN=Configuration/CN=Connections/CN=X400ConnectorName could
+   not be opened.
+
+   Information Event ID 301 Source: MSExchangeMTA Category: X.400 Service:
+
+   An open retry delay timer started on the association to
+   /O=orgname/OU=site/CN=Configuration/CN=Connections/CN=X400ConnectorName on
+   control block <##>. Another attempt to reopen the association will be
+   made in 600 seconds."
+
+Also, the NDR that is generated may appear as follows:
+
+   >----------
+   >From:   System Administrator
+   >Sent:   Friday, September 27, 1996 12:53 PM
+   >Subject:   Undeliverable: Exchange 4.5
+   >
+   >Your message did not reach some or all of the intended recipients.
+   >
+   >      Subject:   Exchange 4.5
+   >      Sent:   9/27/96 12:51:32 PM
+   >
+   >The following recipient(s) could not be reached:
+   >
+   >      David Honis on 9/27/96 12:53:24 PM
+   >            The recipient could not be processed due to congestion in
+   >            the message transfer service
+   >*  MSEXCH:MSExchangeMTA:SiteName:ServerName
+
+The administrator can change the Connection Retry options (these definitions are
+taken from the Online Help, F1, on the Override tab) on the Override tab of the
+affected X.400 Connector:
+
+1. Max Open Retries controls the maximum number of times that the system
+   attempts to open a connection before it sends a NDR (default is 144).
+   Increasing this value will allow NDRs to be delayed (total time delay in sec
+   = Max Open Retries X Open Interval) when there are known network problems
+   that will be corrected.
+
+2. Max Transfer Retries controls the number of times that the system tries to
+   transfer a message across an open connection (default is 2). Increasing this
+   value will also delay the amount of time before the MTA gives up on delivery
+   and generates an NDR.
+
+3. Open Interval (sec) controls the amount of time to wait before attempting to
+   reopen a connection after an error (default is 600).
+
+4. Transfer Interval (sec) controls the amount of time to wait before resending
+   a message across an open connection after a previous attempt failed (default
+   is 120).
+
+An Example Showing How All Of These Settings May Be Used
+--------------------------------------------------------
+
+1. Assume MTA1Machine successfully makes connection to MTA2Machine after mail is
+   queued up to the X.400 Connector going to MTA2 on MTA2Machine.
+
+2. MTA1 unsuccessfully attempts to send the message over the open connection
+   every Transfer Interval seconds until Max Transfer Retries is reached.
+
+3. MTA1Machine waits Open Interval seconds before re-attempting to open the
+   connection and fails to make the connection.
+
+4. The MTA1Machine continues to wait Open Interval seconds between attempts to
+   reconnect and finally generates an NDR after Max Open Retries attempts.
+
+As can be seen from the above example, the amount of time before an NDR is
+generated is dependent on all of these variables. With the default values on the
+MTA, an NDR will be generated after 24 hours (144 attempts times 600 seconds is
+86,400 seconds, which is 24 hours) assuming the connection failed 144 times. If
+the connections are intermittently dropping, this calculation becomes less
+predictable.
+
+Additional query words: Override
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

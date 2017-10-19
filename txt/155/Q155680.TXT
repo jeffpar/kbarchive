@@ -1,0 +1,82 @@
+DOCUMENT:Q155680  31-JUL-2001  [sms]
+TITLE   :SMS: Windows NT Remote Control Registry Parameters Not Updated
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbtshoot kbsmsAdmin smsadmin smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the Site Properties are updated to allow a user group (such as Help Desk)
+or a user to do remote troubleshooting, Systems Management Server 1.2 will
+update the registry on new Windows NT clients, but not on existing clients.
+
+WORKAROUND
+==========
+
+Run Upgrade.bat from a Systems Management Server logon server to update the
+remote control registry parameters on existing Windows NT clients. Doing this
+will cause the Client Configuration Manager to reconfigure the Windows NT client
+with the correct registry entries.
+
+STATUS
+======
+
+This is by design.
+
+MORE INFORMATION
+================
+
+By default in Systems Management Server 1.2, only the members of the local
+Administrators group are allowed to take remote control of a computer running
+Windows NT. From the Systems Management Server Administrator utility, it is
+possible to give additional user groups or users the permission to do remote
+control.
+
+To do this, click the Clients button on the Site Properties window. The Options
+button adjacent to the Remote Troubleshooting options will allow you to add or
+remove group and user names.
+
+After a change has been made to this list, the changes are written to the site
+control file and the Systems Management Server database. However, the changes
+will not be written to the following registry location:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Client Services\Remote
+   Control\Parameters\PermittedViewers
+
+Client Configuration Manager will update the registry during the setup of new
+Windows NT clients, or during a Systems Management Server client software
+upgrade. Once the registry has been updated, the users defined will be able to
+take remote control of the computer running Windows NT.
+
+Additional query words: prodsms security context
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbtshoot kbsmsAdmin smsadmin smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q141396  10-FEB-2000  [foxpro]
+TITLE   :How to Place FoxPro's Desktop Accessory Items on the Menu
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FoxPro desktop accessory items include the calculator, calendar/diary,
+filer, and puzzle. These items are still available and can be placed on the menu
+at startup.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+1. Open the program Vfpstart.prg in the Visual FoxPro directory.
+
+2. After " *Startup program for Visual FoxPro:" type the following:
+
+      DEFINE BAR _mst_calcu OF _msystem PROMPT "Ca\<lculator" ;
+         MESSAGE "Perform calculations"
+      DEFINE BAR _mst_diary OF _msystem PROMPT "Calendar/D\<iary" ;
+         MESSAGE "Check dates and keep track of appointments"
+      DEFINE BAR _mst_filer OF _msystem PROMPT "\<Filer" ;
+         MESSAGE "Manage files and directories"
+      DEFINE BAR _mst_puzzl OF _msystem PROMPT "Pu\<zzle" ;
+         MESSAGE "Solve a puzzle"
+
+3. Exit Visual FoxPro.
+
+4. Load Visual FoxPro.
+
+5. The Desktop menu items are now available on the Help menu.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

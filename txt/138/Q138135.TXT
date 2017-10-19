@@ -1,0 +1,86 @@
+DOCUMENT:Q138135  17-DEC-2000  [win95x]
+TITLE   :Restoring Backups Created with Earlier Versions of MS-DOS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbtool kbusage win95kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Backup program included with Windows 95 cannot restore files that were
+backed up with an earlier version of Backup (such as the versions of Backup
+included with MS-DOS versions 5.0 and 6.x). To restore backups created with
+earlier versions of Backup, you must use the Restore.exe or Msbackup.exe program
+located on the Windows 95 CD-ROM.
+
+MORE INFORMATION
+================
+
+NOTE: Before you use the Restore.exe or Msbackup.exe program on the Windows 95
+CD-ROM, please read the Lfnbk.txt file in the Admin\ Apptools\Lfnback folder on
+the Windows 95 CD-ROM, or see the following article in the Microsoft Knowledge
+Base:
+
+   Q120442 Using Hard Disk Utilities with Windows 95
+
+Backups Made Using MS-DOS 5.0
+-----------------------------
+
+To restore a backup created with the Backup program included with MS-DOS 5.0, use
+the Restore.exe program located in the Other\Oldmsdos folder on the Windows 95
+CD-ROM. To run this program, copy it to a folder on your hard disk, and then run
+it from a command prompt, making sure to use the appropriate syntax. For
+information about the syntax for the Restore.exe program, type the following
+line:
+
+   " restore /? " (without the quotation marks)
+
+If you receive the error message "Incorrect DOS version" when you try to run
+Restore.exe, type the following line to modify the version table:
+
+   " setver restore.exe 6.22 " (without the quotation marks)
+
+After you type this line, restart your computer, and then try to run Restore.exe
+again.
+
+Backups Made Using MS-DOS 6.x
+-----------------------------
+
+To restore a backup created with the backup programs included with MS-DOS 6.x,
+use the Msbackup.exe program located in the Other\Oldmsdos\Msbackup folder on
+the Windows 95 CD-ROM. To run this program, copy all the files from the folder
+on the Windows 95 CD-ROM to a folder on your hard disk. Double-click the
+Msbackup.exe file in Windows Explorer to start it. For information about using
+the Msbackup.exe program, start the program, and then click Restore on the Help
+menu.
+
+
+======================================================================
+Keywords          : kbtool kbusage win95 kbfaq
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

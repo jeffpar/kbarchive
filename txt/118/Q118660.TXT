@@ -1,0 +1,75 @@
+DOCUMENT:Q118660  08-AUG-2001  [winnt]
+TITLE   :RAS: ClientsPerProcess Registry Entry
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Workstation and Windows NT Server version 3.5 have a new registry
+entry, ClientsPerProcess, that describes how many NetBIOS names are added to a
+Remote Access Service (RAS) server before a new process is spawned.
+
+MORE INFORMATION
+================
+
+When RAS clients connect to the Windows NT version 3.5 RAS server, the client's
+NetBIOS names are added to the server. A RAS client will have a NetBIOS Name for
+each local area network (LAN) the gateway is active on (by default, all of
+them). The average client will have 6 or more, NetBIOS names. Windows NT Server
+version 3.5 supports 255 RAS clients, which translates to 1500 or more, NetBIOS
+names. However, NetBIOS only supports 254 names for any given process.
+
+To solve this problem, Windows NT version 3.5 starts a new process for every "x"
+NetBIOS clients (x being the value of ClientsPerProcess). Therefore, when the
+RAS server service starts, it has one process that will handle x NetBIOS
+clients. When the x+1 client calls in, Windows NT starts a new process to handle
+the next x clients.
+
+NOTE: This does not apply to IP- or IPX-only clients. The default for this
+parameter is 32, which means that a new process starts when the 33rd RAS client
+connects. The key is located in the Registry as follows:
+
+   WARNING:
+   Using Registry Editor incorrectly can cause serious, system-wide problems that
+   may require you to reinstall Windows NT to correct them. Microsoft cannot
+   guarantee that any problems resulting from the use of Registry Editor can be
+   solved. Use this tool at your own risk.
+
+          \HKEY_LOCAL_MACHINE\SYSTEM
+                     \CurrentControlSet
+                              \Services
+                                      \RemoteAccess
+                                             \ClientsPerProcess
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

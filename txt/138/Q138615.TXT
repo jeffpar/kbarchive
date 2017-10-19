@@ -1,0 +1,80 @@
+DOCUMENT:Q138615  11-FEB-2000  [foxpro]
+TITLE   :PRB: Formset Forms Don't Switch If Chosen in Properties Window
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+At design time, you may switch between objects in the Form Designer by using the
+Object list located at the top of the Properties window. However, selecting a
+different form in a formset from this list does not make the selected form the
+topmost window in the Form Designer.
+
+WORKAROUND
+==========
+
+ - Switch between Forms by using the Form list located in the lower-left corner
+   of the Form Designer.
+
+-or-
+ - If a portion of the form is visible in the Form Designer, click the exposed
+   portion to bring it to the front.
+
+-or-
+
+ - If you have only one formset open, press CTRL+F6 to cycle through the forms
+   in the Form Designer.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open or switch to Microsoft Visual FoxPro and create a formset that consists
+   of two or more forms.
+
+2. Right-click the Form, and open the Properties window.
+
+3. Using the Object list located in the Properties window, attempt to change the
+   focus from one form to another. Note that regardless of the form selected,
+   the topmost form in the Form Designer does not change.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

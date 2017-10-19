@@ -1,0 +1,77 @@
+DOCUMENT:Q161099  25-MAR-2002  [win95x]
+TITLE   :Secured Web Pages Not Loaded with Netscape Navigator 1.x
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork osr2 win95kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Netscape Navigator version 1.x is used to access secured Web pages, the
+background may be loaded, but individual graphic items linked to the page are
+not loaded. The browser seems to continue to work, but never finishes the
+loading of the page.
+
+CAUSE
+=====
+
+This behavior can occur with Netscape Navigator version 1.x when you are using
+the Microsoft TCP/IP protocol stack.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following methods:
+
+ - Upgrade Netscape Navigator to version 2.x or later.
+
+ - Use a TCP/IP protocol stack from another vendor.
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or other- wise, regarding
+this product's performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork osr2 win95 kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

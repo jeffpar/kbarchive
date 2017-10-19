@@ -1,0 +1,74 @@
+DOCUMENT:Q170870  24-DEC-1999  [iis]
+TITLE   :Err Msg: Query Is Too Expensive
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.1,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you issue a query to the Index Server, your browser will return the
+following error message:
+
+   Query is too expensive.
+
+CAUSE
+=====
+
+If the content index is out of date, and you are executing queries that must be
+enumerated, you will get the above error message.
+
+WORKAROUND
+==========
+
+Wait until the index is up to date.
+
+Place CiForceUseCi=FALSE in the .idq file for the query. The default value is
+TRUE.
+
+You may also need to increase the following values:
+
+hklm\system\currentcontrolset\control\contentindex\MaxQueryExecutionTime
+
+hklm\system\currentcontrolset\control\contentindex\MaxRestrictionNodes
+
+MORE INFORMATION
+================
+
+NOTE: If the query is being executed through ADO and IXSSO, changing
+MaxQueryExecutionTime haS no effect, because ADO sets a time-out of 30 seconds
+that can not be changed.
+
+
+Additional query words: expansive
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ110 kbIdxServ200
+Version           : winnt:1.1,2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

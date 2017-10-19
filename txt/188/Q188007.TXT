@@ -1,0 +1,209 @@
+DOCUMENT:Q188007  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Simulate Visual Basic 6.0 String Functions in VB5
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic version 6.0 introduces a number of new string functions to simplify
+string manipulation in your code. This article describes how the same
+functionality can be used with earlier versions of Visual Basic.
+
+MORE INFORMATION
+================
+
+The following additional string functions are present in Visual Basic 6.0:
+
+Function      Description
+--------      -----------
+Join          Used to join arrays elements.
+
+Split         Split a string into a variant array.
+
+InStrRev      Similar to InStr but searches from end of string.
+
+Replace       To find a particular string and replace it.
+
+Reverse       To reverse a string.
+
+If these functions are coded and added in a module, all the above functions can
+be used in the project as if they are intrinsic functions.
+
+1. Start a new project. Form1 is created by default.
+
+2. Add a new module to the project and add the following code to the module:
+
+         Option Explicit
+
+         Public Function Join(source() As String, Optional _
+               sDelim As String = " ") As String
+         Dim sOut As String, iC As Integer
+         On Error GoTo errh:
+             For iC = LBound(source) To UBound(source) - 1
+                 sOut = sOut & source(iC) & sDelim
+             Next
+             sOut = sOut & source(iC)
+             Join = sOut
+             Exit Function
+         errh:
+             Err.Raise Err.Number
+         End Function
+
+         Public Function Split(ByVal sIn As String, Optional sDelim As _
+               String, Optional nLimit As Long = -1, Optional bCompare As _
+                VbCompareMethod = vbBinaryCompare) As Variant
+             Dim sRead As String, sOut() As String, nC As Integer
+             If sDelim = "" Then
+                 Split = sIn
+             End If
+             sRead = ReadUntil(sIn, sDelim, bCompare)
+             Do
+                 ReDim Preserve sOut(nC)
+                 sOut(nC) = sRead
+                 nC = nC + 1
+                 If nLimit <> -1 And nC >= nLimit Then Exit Do
+                 sRead = ReadUntil(sIn, sDelim)
+             Loop While sRead <> ""
+             ReDim Preserve sOut(nC)
+             sOut(nC) = sIn
+             Split = sOut
+         End Function
+
+         Public Function ReadUntil(ByRef sIn As String, _
+               sDelim As String, Optional bCompare As VbCompareMethod _
+             = vbBinaryCompare) As String
+             Dim nPos As String
+             nPos = InStr(1, sIn, sDelim, bCompare)
+             If nPos > 0 Then
+                 ReadUntil = Left(sIn, nPos - 1)
+                 sIn = Mid(sIn, nPos + Len(sDelim))
+             End If
+         End Function
+
+         Public Function StrReverse(ByVal sIn As String) As String
+             Dim nC As Integer, sOut As String
+             For nC = Len(sIn) To 1 Step -1
+             sOut = sOut & Mid(sIn, nC, 1)
+             Next
+             StrReverse = sOut
+         End Function
+
+         Public Function InStrRev(ByVal sIn As String, sFind As String, _
+          Optional nStart As Long = 1, Optional bCompare As _
+               VbCompareMethod = vbBinaryCompare) As Long
+             Dim nPos As Long
+             sIn = StrReverse(sIn)
+             sFind = StrReverse(sFind)
+             nPos = InStr(nStart, sIn, sFind, bCompare)
+             If nPos = 0 Then
+                 InStrRev = 0
+             Else
+                 InStrRev = Len(sIn) - nPos - Len(sFind) + 2
+             End If
+         End Function
+
+         Public Function Replace(sIn As String, sFind As String, _
+               sReplace As String, Optional nStart As Long = 1, _
+               Optional nCount As Long = -1, Optional bCompare As _
+               VbCompareMethod = vbBinaryCompare) As String
+
+             Dim nC As Long, nPos As Integer, sOut As String
+             sOut = sIn
+             nPos = InStr(nStart, sOut, sFind, bCompare)
+             If nPos = 0 Then GoTo EndFn:
+             Do
+                 nC = nC + 1
+                 sOut = Left(sOut, nPos - 1) & sReplace & _
+                    Mid(sOut, nPos + Len(sFind))
+                 If nCount <> -1 And nC >= nCount Then Exit Do
+                 nPos = InStr(nStart, sOut, sFind, bCompare)
+             Loop While nPos > 0
+         EndFn:
+             Replace = sOut
+         End Function
+
+3. Add two CommandButtons to Form1. Add the following code to the General
+   Declaration section of Form1:
+
+         Option Explicit
+
+         Dim MyArray(2) As String, MyStr As String, MyVar As Variant
+
+         Private Sub Command1_Click()
+             MyArray(0) = "item1"
+             MyArray(1) = "item2"
+             MyArray(2) = "item3"
+             MyStr = Join(MyArray, ";")
+             Debug.Print MyStr
+         End Sub
+
+         Private Sub Command2_Click()
+             Dim i As Integer
+             MyVar = Split(MyStr, ";")
+             For i = LBound(MyVar) To UBound(MyVar)
+             Debug.Print MyVar(i)
+             Next
+         End Sub
+
+         Private Sub Form_Load()
+             Command1.Caption = "Join"
+             Command2.Caption = "Split"
+         End Sub
+
+4. Press the F5 key to run the project. Click on Join, and note in the debug
+   window that the array elements are joined. Click on Split to split a string
+   into a variant array.
+
+5. Pause the project by pressing the CTRL+BREAK key combination or clicking the
+   Pause button on the toolbar. Test the remaining functions by typing the
+   following lines in the immediate window and verifying the results:
+
+   ?instrrev("//drive/dir","/")
+   8
+
+   ?strreverse("input string")
+   gnirts tupni
+
+   ?replace("input string"," ", "-",4,1)
+   input-string
+
+   NOTE: The errors generated may not exactly coincide with those generated by
+   the Visual Basic 6.0 intrinsic string functions.
+
+Additional query words: kbDSupport kbDSD beta99 kbVBp kbVBp400 kbVBp500 kbVBp600 kbVBA
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

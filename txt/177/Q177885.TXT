@@ -1,0 +1,64 @@
+DOCUMENT:Q177885  19-MAR-1999  [exchange]
+TITLE   :XADM: ISINTEG -FIX With -PUB or -PRI No Longer Works in 5.5
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run the Microsoft Exchange Server 5.5 ISINTEG -FIX with
+either the -PUB or -PRI option, the utility displays the command help syntax.
+
+CAUSE
+=====
+
+The version of ISINTEG that ships with Exchange Server 5.5 requires the user to
+define the specific test(s) that need to be run.
+
+WORKAROUND
+==========
+
+To execute an equivalent command to ISINTEG -FIX -PRI, enter the following
+syntax:
+
+ISINTEG -FIX -PRI -TEST ALLTESTS
+
+When you execute this command, ISINTEG will verify that this is the correct
+operation. Type 'y' and press Enter to continue.
+
+For more information on ISINTEG and the different tests available, please refer
+to the Isinteg.Rtf document located on the Microsoft Exchange Server 5.5 compact
+disc in the \\<CD Root>\Server\Support\Utils\ directory.
+
+Additional query words: Integrity tools
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

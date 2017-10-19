@@ -1,0 +1,115 @@
+DOCUMENT:Q191326  11-DEC-1999  [foxpro]
+TITLE   :PRB: JAWS Software Cannot Read Some of FoxPro Menus
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenable kbEnableSight
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+WARNING: The information in this article has not been confirmed or tested by
+Microsoft. Some or all of the information in this article has been taken from
+unconfirmed customer reports. ANY USE BY YOU OF THE INFORMATION PROVIDED IN THIS
+ARTICLE IS AT YOUR OWN RISK. Microsoft provides this information "as is" without
+warranty of any kind, either expressed or implied, including but not limited to
+the implied warranties of merchantability and/or fitness for a particular
+purpose.
+
+When using the Jaws for Windows software to read the Visual FoxPro menus, the
+software is not able to read some of the menus. For example, here is a listing
+for some of the menus that cannot be read:
+
+ - File / New
+
+ - View / Toolbars
+
+ - Tools / Options
+
+Any of the menus that are called through the Windows API, such as, File - Open,
+File - Print, or Format - Font, can be read properly by the Jaws software.
+
+JAWS for Windows is manufactured by Henter-Joyce, Inc., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+CAUSE
+=====
+
+The Visual FoxPro menus have not been designed to expose their objects.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Jaws for Windows is a software product that runs in the background, allowing
+blind users to use other software while Jaws talks to them and "speaks" what
+object is on the screen they are accessing with the mouse or keyboard. Visual
+FoxPro's menus are written in such a way that the objects are not exposed at
+run-time. Some of the menus that can be read by Jaws are menus that are called
+through the Windows API. These menus have been designed to expose their objects,
+therefore, Jaws can read the objects and can "speak" those objects to the user.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Jaws for windows software, start Visual FoxPro for Windows, and
+   from the File menu, choose New. As you tab through the menu, Jaws is not able
+   to read the objects. However, accessing the File - Open menu allows Jaws to
+   read the objects.
+
+2. If Jaws for Windows is not available, start Visual FoxPro, and from the File
+   menu, choose Open.
+
+3. Open Microsoft Spy++ that comes with Microsoft C++ and select the Spy [ASCII
+   150] Windows menu. Scroll down the list and find the "Open" #32770 (Dialog)
+   entry. Note that there are items listed under this entry that describe the
+   objects in the Open dialog box.
+
+4. Now, go back to Visual FoxPro and select from the File menu, choose New.
+   Switch back to Spy++ and press the F5 key to refresh the window. Scroll down
+   the list and find the "New" Fox_4000002 entry or "New" VFP664000002 if using
+   Visual FoxPro 6.0. Note that there are no objects listed under this entry.
+
+REFERENCES
+==========
+
+For more information, please see the following World Wide Web URL:
+
+   http://www.hj.com/
+
+Additional query words: kbVFp300b kbVFp500a kbVFp500 kbVFp600 kb3rdParty
+
+======================================================================
+Keywords          : kb3rdparty kbenable kbEnableSight 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q129080  06-NOV-1999  [win16sdk]
+TITLE   :HOWTO: Have Accelerator Keys Support Japanese and US Keyboards
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbIntlDev
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Japanese characters (Hiragana and Katakana characters) can be used as
+accelerators under Japanese Windows when a Japanese keyboard is present.
+
+To support a Hiragana or Katakana accelerator as well as the usual English
+character accelerator in an Windows application, use the flags \36 and \37 in
+the RC file. Place the \36 flag in front of the English character, and place the
+\37 flag in front of the Hiragana or Katakana character.
+
+For example, say you want the accelerator key for "File(&F)" to be 'F' on the
+101 keyboard and to be the Katakana 'FU' ( 0x8374), which is the first Katakana
+character of "file" in Japanese, on the Japanese keyboard. To do this, include
+the following in the RC file:
+
+      POPUP "File(\36F\37FU)"
+      BEGIN
+      ...
+      END
+
+Please note that 'FU' is one Katakana character.
+
+Additional query words: shortcut Kanji 106
+
+======================================================================
+Keywords          : kbIntlDev 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,57 @@
+DOCUMENT:Q103819  18-NOV-1999  [msdos]
+TITLE   :ScanDisk Fails to Remount DoubleSpace-Compressed Drive
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ScanDisk may report an error when mounting a compressed drive and leave the
+compressed drive unmounted after ScanDisk completes its repairs.
+
+CAUSE
+=====
+
+This problem occurs when both the compressed drive and its host drive contain
+errors, and the errors on the compressed drive prevent it from being mounted.
+ScanDisk unmounts the compressed drive when it repairs the host but is unable to
+remount the drive after fixing the host. When mounting the compressed drive
+fails, ScanDisk checks and repairs the DBLSPACE.<nnn> file. However,
+ScanDisk does not mount the DBLSPACE.<nnn> file after scanning it.
+
+RESOLUTION
+==========
+
+To work around this problem, reboot your computer.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

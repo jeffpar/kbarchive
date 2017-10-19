@@ -1,0 +1,92 @@
+DOCUMENT:Q78789  02-NOV-1999  [win95x]
+TITLE   :Windows Err Msg: Could Not Print Page <x>
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive a printing error message when you try to print from a Windows
+application under Windows 3.0 or 3.0a. For example, you may receive the
+following error message in the Write:
+
+   Could not print page - Error:-1.
+
+This problem does not occur with later versions of Windows.
+
+CAUSE
+=====
+
+This may be caused by the file DOSSHELL.SWP being in the directory pointed to by
+the SET TEMP= setting in the AUTOEXEC.BAT file. The DOSSHELL.SWP file is created
+in this directory if the following statements are both true:
+
+ - DOSSHELL has been executed and then shelled out by pressing SHIFT+F9.
+
+ - Multiple instances of the DOSSHELL program have been entered and are running.
+
+RESOLUTION
+==========
+
+If multiple instances of DOSSHELL are started while Windows is running, use the
+following procedure to close the multiple instances of DOSSHELL to remove the
+DOSSHELL.SWP file from the temporary directory:
+
+1. Close Windows.
+
+2. At the command prompt, type
+
+   exit
+
+   to go into the DOSSHELL program.
+
+3. Close the DOSSHELL by pressing ALT+F to open the File menu, and press X to
+   exit.
+
+4. Repeat steps 2 and 3 above until you do not go into the DOSSHELL program when
+   you type:
+
+   exit
+
+This should remove the DOSSHELL.SWP file from the temporary directory.
+
+NOTE: If the computer has been turned off while the DOSSHELL.SWP file was in the
+temporary directory, the above procedure may not remove the file.
+
+The DOSSHELL.SWP file is created with a read-only attribute. The file can not be
+deleted until you clear the read-only attribute. The following command can be
+used to clear the read-only attribute of the file so that it can be deleted:
+
+   Attrib -r dosshell.swp
+
+Additional query words: shell Dos 5.0 Windows 3.00 3.00a dosshell err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

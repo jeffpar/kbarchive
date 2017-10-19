@@ -1,0 +1,62 @@
+DOCUMENT:Q60878  05-NOV-1999  [win95x]
+TITLE   :/y Parameter Added to MOUSE.SYS During Windows 3.00 Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows version 3.0 Setup program adds a /y parameter to an
+existing MOUSE.SYS line (in the CONFIG.SYS file) in the event that a Video Seven
+graphics card is installed in the machine. With this parameter, the mouse cursor
+appears as a block in MS-DOS-based applications. If the parameter is removed,
+the cursor becomes a "sprite" or graphics-oriented cursor.
+
+If the parameter is removed and you press ALT+TAB to exit an MS-DOS application,
+there will be two mice cursors, one frozen and one active, when you return to
+the MS-DOS application. By design, the /y parameter prevents this problem from
+occurring and maintains a block cursor.
+
+MORE INFORMATION
+================
+
+Using the /y switch with the Microsoft Mouse driver version 7.04 may prevent the
+following error message from appearing when starting a non-Windows application
+in a window:
+
+   You cannot run this Application while other high-resolution Graphical
+   Applications are running full screen. The Application will be suspended until
+   a low-resolution or text application is running full screen. Check the PIF
+   settings to ensure they are correct.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

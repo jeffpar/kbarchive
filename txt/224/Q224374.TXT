@@ -1,0 +1,94 @@
+DOCUMENT:Q224374  25-JUL-2001  [homemm]
+TITLE   :Program Starts Slowly and Media Clips Are Played Slowly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbhw kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 99 
+ - Microsoft Encarta Reference Suite 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Encarta Encyclopedia 99, you may encounter the following
+symptoms:
+
+ - Encarta Encyclopedia 99 may start more slowly than you expect.
+
+ - Media clips may be played very slowly.
+
+CAUSE
+=====
+
+This behavior can occur if a CD-ROM changer is installed in your computer and
+you insert both Encarta Encyclopedia 99 Disc 1 and Disc 2 into the CD-ROM
+changer at the same time.
+
+
+RESOLUTION
+==========
+
+To work around these issues, use either of the following methods:
+
+ - Insert only one of the Encarta 99 discs in the CD-ROM changer at any given
+   time. When you are prompted to insert the other Encarta Encyclopedia CD-ROM,
+   remove the disc that is currently in the CD-ROM changer before you insert the
+   other Encarta CD-ROM.
+
+ - Disable the display of the Home screen when you start Encarta Encyclopedia
+   99. To do this, follow these steps:
+
+   1. Start Encarta Encyclopedia 99.
+
+   2. Click Options, and then click Settings.
+
+   3. Click to clear the "Display Home screen when I start Encarta Encyclopedia"
+      check box.
+
+   4. Quit and then restart Encarta Encyclopedia 99.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information about issues you may encounter when you start Encarta
+Encyclopedia 99, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q203695 Encarta 99: Home Screen Introductory Audio Broken Up or Choppy
+
+Additional query words: multi multi-media media mm jukebox tray drags skips poor performance
+
+======================================================================
+Keywords          : kbdisplay kbenv kbhw kbimu kbHardware 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaReference99
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

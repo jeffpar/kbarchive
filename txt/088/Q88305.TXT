@@ -1,0 +1,65 @@
+DOCUMENT:Q88305  08-OCT-1999  [win95x]
+TITLE   :Windows Resource Kit (7/6/92) Disk Directory (3.5 Inch)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory of the Microsoft Windows Resource Kit for
+operating system version 3.1 (3.5-inch):
+
+MORE INFORMATION
+================
+
+   Volume in drive B is WRK_V31
+   Volume Serial Number is 11DE-2E32
+   Directory of B:\
+
+DRIVERS      <DIR>     07-06-92  10:27a
+IPX          <DIR>     07-06-92  10:27a
+README       <DIR>     07-06-92  10:27a
+UTIL         <DIR>     07-06-92  10:28a
+WHITEPPR     <DIR>     07-06-92  10:28a
+OEMSETUP INF      1099 03-13-92   1:05p
+SETUP    EXE     13888 02-07-92  12:18p
+SETUP    LST        14 06-03-92   3:18p
+SETUP1   EXE     46854 07-06-92   9:41a
+SETUPKIT DL_      7008 02-07-92  12:18p
+VBRUN100 DL_    271264 11-25-91  12:00a
+VER      DL_      8736 02-07-92  12:18p
+
+       12 file(s)     348863 bytes
+                      272896 bytes free
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

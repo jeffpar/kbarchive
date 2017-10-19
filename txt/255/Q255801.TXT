@@ -1,0 +1,82 @@
+DOCUMENT:Q255801  06-AUG-2002  [iis]
+TITLE   :How to Determine if HTTP Compression Is in Use
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order for a file to be transmitted using HTTP compression, the following two
+conditions must be true:
+
+ - The client must support a compression scheme used by IIS.
+ - IIS must have already compressed the file, which will be stored in a
+   temporary folder.
+
+MORE INFORMATION
+================
+
+How to Determine if the Client Supports Compression:
+
+View the client's HTTP GET Request to see if it specifies a compression value in
+the Accept-Encoding header that IIS supports. For example, Internet Explorer 5.0
+sends the following header:
+
+   Accept-Encoding: gzip, deflate
+
+Note: Both the Gzip and Deflate compression schemes are supported by IIS.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q252876 How to View HTTP Data Frames Using Network Monitor
+
+How to Determine if the File Is Compressed:
+
+Open the temporary folder that stores the compressed version of files
+(C:\WINNT\IIS Temporary Compressed Files by default). In order to avoid
+duplicate file names, each file that is compressed, is renamed by appending
+characters to the beginning of the file name.
+
+If a compressed, renamed version of the file in question exists, then it is sent
+to clients that support the compression scheme.
+
+Note: The temporary folder is specified on the Service tab in the "WWW Service
+Master Properties for <ComputerName>" dialog box in the IIS snap-in.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: iis 5 method temporary directory algorithm akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

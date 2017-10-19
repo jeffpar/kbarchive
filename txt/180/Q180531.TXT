@@ -1,0 +1,68 @@
+DOCUMENT:Q180531  01-FEB-1999  [winnt]
+TITLE   :Error Message Removing Microsoft Exchange or Proxy Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0,4.0a
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to remove Proxy Server or Microsoft Exchange using the Add/Remove
+Programs tool in Control Panel, you may receive one of the following error
+messages:
+
+    - An error occurred while trying to remove Microsoft Exchange. Uninstallation
+   has been canceled.
+
+ - An error occurred while trying to remove Proxy Server. Uninstallation has
+   been canceled.
+
+CAUSE
+=====
+
+This behavior can occur if Small Business Server CD-ROM 1 is not inserted in the
+CD-ROM drive. The Add/Remove Programs tool calls the Setup program on the
+CD-ROM. If the CD-ROM is not inserted, you receive the error message.
+
+RESOLUTION
+==========
+
+Insert Small Business Server CD-ROM 1 and try to remove the program again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in BackOffice Small Business Server
+versions 4.0 and 4.0a.
+
+Additional query words: un-install
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : WinNT:4.0,4.0a
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

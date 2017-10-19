@@ -1,0 +1,62 @@
+DOCUMENT:Q172576  10-AUG-2001  [winnt]
+TITLE   :Changing PW on FPNW Prompts for Fully Qualified NDS User Name
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft File and Print Services for NetWare versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your password has expired and you try to change it when logging on to your
+computer, you could be prompted for a NetWare Directory Service (NDS)
+fully-qualified user name. You will not be prompted for this name if you are
+already logged on and it is not obvious what this name should be.
+
+CAUSE
+=====
+
+When you change the password on a Windows NT computer using NDS, Windows NT will
+search for the NDS information in the registry using the security ID (SID). If
+you have not completed the logon process, the SID is not known and this
+information has to be obtained from the user.
+
+RESOLUTION
+==========
+
+When you are prompted for this information you can click Cancel and then proceed
+to change the password once you've logged on to the computer. You can then use
+the SID of the current user to query the registry.
+
+Additional query words: prodnt novel ipx
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbServicesNetwareSearch kbFPNW351 kbFPNW400
+Version           : WinNT:3.5,3.51,4.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

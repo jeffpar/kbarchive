@@ -1,0 +1,83 @@
+DOCUMENT:Q110892  07-FEB-1999  [homemm]
+TITLE   :Scenes Err Msg: Please Report File "Common\List1.C",Line="1007"
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Scenes 1.0, you may receive the following
+error message:
+
+   Setup has encountered a problem.
+
+   Please report File="COMMON\LIST1.C",Line="1007" to Microsoft Product Support
+   Services.
+
+When you press ENTER or click OK, you receive the following error message:
+
+   FADDSECTIONFILESTOCOPYLIST() FAILED.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions are true:
+
+ - The path for the first installed picture set in the SCENES.INI file contains
+   less than three folder levels. For example:
+
+   [Picture Sets]
+   C:\Scenes\Sierra
+
+ - A third-party terminate-and-stay-resident (TSR) program or memory manager is
+   interfering with the Scenes installation program.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Clean boot the computer to an MS-DOS prompt. For additional information about
+   how to clean boot Microsoft Windows 3.1, please see the following article in
+   the Microsoft Knowledge Base:
+
+   Q87290 What Is a Clean Boot for Windows 3.1?
+
+2. Start Windows in Standard mode. To do this, type "win /s" (without the
+   quotation marks) at the command prompt, and then press ENTER.
+
+3. Install Scenes, select the Custom Installation mode, and then follow the
+   instructions on the screen to install Scenes.
+
+Additional query words: 1.00 msscenes screen saver screensaver multi media multi-media mm mmtitles
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu 
+Technology        : kbScenesSearch kbScenes100
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

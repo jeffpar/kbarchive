@@ -1,0 +1,61 @@
+DOCUMENT:Q135151  17-DEC-2000  [win95x]
+TITLE   :PCMCIA Devices Not Activated When Resuming Dell Latitude XP
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Suspend command on a Dell Latitude XP laptop computer connected
+to a port replicator, PCMCIA devices may not reactivate when you resume the
+system.
+
+CAUSE
+=====
+
+This problem can occur if the computer contains a BIOS version of A05 or
+earlier. BIOS versions A05 and earlier do not send an Advanced Power Management
+(APM) resume event to reenumerate PCMCIA devices when the computer is connected
+to a port replicator.
+
+RESOLUTION
+==========
+
+To avoid this problem, do not use the Suspend command when the computer is
+connected to a port replicator.
+
+To resolve the problem, please contact Dell Technical Support to inquire about
+obtaining an updated BIOS.
+
+
+Additional query words: docking
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

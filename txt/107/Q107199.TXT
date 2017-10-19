@@ -1,0 +1,115 @@
+DOCUMENT:Q107199  09-OCT-1999  [win95x]
+TITLE   :Windows Help Does Not Save Maximized Window Position
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows Help does not retain its maximized window position when you restart it.
+
+CAUSE
+=====
+
+Windows Help screens save their settings on closing by writing their window
+positions to the [Windows Help] section of the WIN.INI file. Help screens that
+you have maximized do not retain a maximized window position when you restart
+Help. The screens open up in a large framed window rather than full screen and
+shift to the right on the desktop.
+
+WORKAROUND
+==========
+
+NOTE: The following workarounds require that the Help screens remain in a window
+and are not maximized.
+
+ - Use the mouse to drag the borders of the Help window to the desired size,
+   then close the window.
+
+   -or-
+
+ - Edit the [Help] section of the WIN.INI file with the following statements for
+   your video mode:
+
+   1024 x 768 SVGA:
+
+      [Windows Help]
+      H_WindowPosition=[266,200,266,200,0]
+      M_WindowPosition=[0,0,1024,768,0]
+
+   800 x 600 SVGA:
+
+      [Windows Help]
+      H_WindowPosition=[266,200,266,200,0]
+      M_WindowPosition=[0,0,800,600,0]
+
+   640 x 480 VGA:
+
+      [Windows Help]
+      H_WindowPosition=[266,200,266,200,0]
+      M_WindowPosition=[0,0,640,480,0]
+
+   640 x 350 EGA:
+
+      [Windows Help]
+      H_WindowPosition=[266,200,266,200,0]
+      M_WindowPosition=[0,0,640,350,0]
+
+Any attempt to maximize the Help screen by using the maximize button or by
+double-clicking the title bar overwrites the changes in the WIN.INI file. Window
+placement must then be changed with the mouse or by editing the WIN.INI file. A
+comment or REM line containing the proper values can be added to the WIN.INI so
+that these values are readily available if the Help window is accidentally
+maximized. For example:
+
+      [Windows Help]
+
+      H_WindowPosition=[266,200,266,200,0]
+      ;H_WindowPosition=[266,200,266,200,0]
+      M_WindowPosition=[0,0,1024,768,0]
+      ;M_WindowPosition=[0,0,1024,768,0]
+
+NOTE: To achieve the exact size and position of the desktop for the Help window,
+the WIN.INI file must be edited. Using the mouse for placement leaves a slight
+border of the desktop outside the Help window or places the Help window border
+slightly off the desktop.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in the products at the beginning of
+this article. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.10 3.11 Help WIN.INI maximize
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

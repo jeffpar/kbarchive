@@ -1,0 +1,68 @@
+DOCUMENT:Q176748  08-NOV-2001  [homegame]
+TITLE   :CART Precision Racing: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetupkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CART Precision Racing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the minimum system requirements to successfully run Microsoft
+CART Precision Racing.
+
+ - Multimedia PC with a Pentium 60 or higher processor; Pentium 166 recommended.
+ - Microsoft Windows 95 operating system or Windows NT Workstation operating
+   system version 4.0 with Service Pack 3.
+ - 16 MB of RAM; 32 MB recommended.
+ - 30 MB of available hard disk space; 100 MB recommended.
+ - Quad-speed CD-ROM drive; 6X recommended.
+ - Super VGA, 16-bit color monitor.
+ - Microsoft Mouse or compatible pointing device; joystick or race car
+   controller recommended.
+
+Optional
+--------
+
+ - Audio board with speakers or headphones.
+ - Windows 95-compatible 28,800 or higher-baud modem for head-to-head play.
+ - Graphics accelerator card compatible with Microsoft Direct3D (for Windows
+   95).
+
+Compatibles
+-----------
+
+ - Supports force-feedback hardware compatible with Microsoft DirectInput (for
+   Windows 95).
+ - Supports MMX technology.
+
+Additional query words: 1.00 requires needs set up install
+
+======================================================================
+Keywords          : kbsetup kbfaq
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbCARTRacingSearch kbCARTRacing
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

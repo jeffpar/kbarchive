@@ -1,0 +1,85 @@
+DOCUMENT:Q170984  01-JUL-2002  [ssafe]
+TITLE   :ACC97: Results Dialog Box Remains After First Check Out
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,4.0a,5.0,97
+OPER/SYS:
+KEYWORDS:kbui kbAccess kbSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access 97 
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+When using Microsoft Access 97 to check out an object, the Source Code Control
+Results dialog box remains open after the check out.
+
+This behavior does not occur in other applications.
+
+CAUSE
+=====
+
+This behavior occurs the first time you check out an object in Microsoft Access
+97. Each time the object is checked out thereafter, the Source Code Control
+(SCC) result dialog box will close automatically.
+
+RESOLUTION
+==========
+
+You will need to manually close the SCC result window after checking out an
+object for the first time.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Microsoft Access 97.
+
+2. Open a database that is already under Source Code Control.
+
+3. Check out an object. Note that the Result window remains open.
+
+REFERENCES
+==========
+
+For more information about using Source Code Control, search the Help Index for
+"Source Code Control," or ask the Microsoft Access 97 Office Assistant.
+
+Additional query words: 4.00 4.0a 5.0
+
+======================================================================
+Keywords          : kbui kbAccess kbSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbAccessSearch kbAccess97 kbAccess97Search kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

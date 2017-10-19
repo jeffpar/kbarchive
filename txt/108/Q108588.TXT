@@ -1,0 +1,83 @@
+DOCUMENT:Q108588  26-JUL-2001  [visualc]
+TITLE   :FIX: ID_APP_EXIT Used for a Button Will Exit App Studio
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbResourceEd kbVC kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200fix kbGrpDSToolskb
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The App Studio, used with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ for Windows* use 1699 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If ID_APP_EXIT is used as the resource identifier for a button control in a
+dialog box, it will exit App Studio when the dialog box is tested. In App Studio
+for Windows NT, if the dialog box is tested, it will exit and cause an
+application exception in App Studio.
+
+Some other resource identifiers that may cause side effects while being tested
+inside App Studio are:
+
+   ID_WINDOW_NEW
+   ID_WINDOW_CASCADE
+   ID_WINDOW_TILE_HORZ
+   ID_WINDOW_TILE_VERT
+   ID_HELP_INDEX
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article.
+
+This problem was corrected in Visual C++ version 2.0, which includes MFC version
+3.0. However, the problem still exists in the 16-bit product line.
+
+MORE INFORMATION
+================
+
+Steps to reproduce the problem:
+
+1. Open App Studio.
+
+2. Open an existing .RC file (use any of Scribble's resource scripts).
+
+3. Open the About dialog box.
+
+4. Add a button.
+
+5. Change the button's ID to ID_APP_EXIT.
+
+6. Test the dialog box and choose the new button.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbResourceEd kbVC kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200fix kbGrpDSTools kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

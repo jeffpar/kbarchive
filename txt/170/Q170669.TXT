@@ -1,0 +1,93 @@
+DOCUMENT:Q170669  09-AUG-2001  [winnt]
+TITLE   :Creating C:\Program Folder Causes Add/Remove Program to Fail
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a folder called C:\Program, if you then go to Control Panel,
+double-click Add/Remove Programs, and select an installed program to remove or
+update, you get the following error message:
+
+   An error occurred while trying to remove "program_name"
+   Uninstallation has been cancelled
+
+If you rename the folder called Program to, for example, Program2, you see the
+following message:
+
+   This change may impact one or more registered programs. Do you want to
+   continue?
+
+CAUSE
+=====
+
+In the registry under
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
+   \...
+
+any programs whose uninstall string value starts with C:\Progra~1 or "C:\Program
+Files\..." will fail to be removed if a C:\Program folder exists.
+
+These examples will fail:
+
+   UninstallString:reg_sz:c:\Program Files\My_program\setup setup
+
+   UninstallString:reg_sz:"c:\Program Files\My_program\setup" setup
+
+   UninstallString:reg_sz:c:\Progra~1\My_program\setup setup
+
+RESOLUTION
+==========
+
+Perform the following steps to remove the desired application:
+
+1. Rename the C:\Program folder.
+
+2. Click the Start button, point to Settings, click Control Panel, and then
+   double-click Add/Remove Programs.
+
+3. Click the application you want to remove, and then click Remove.
+
+4. Click OK.
+
+5. Rename the folder in step 1 back to its original name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

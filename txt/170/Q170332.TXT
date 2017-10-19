@@ -1,0 +1,63 @@
+DOCUMENT:Q170332  21-FEB-1999  [winnt]
+TITLE   :Windows NT Workstation Banner on Start Menu Is Truncated
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Start button on a Windows NT-based computer configured as a
+Zero Administration Kit (ZAK) Appstation, the vertical "Windows NT Workstation"
+banner on the Start menu may be truncated.
+
+CAUSE
+=====
+
+Because of the small number of items present on the Start menu, there is not
+enough space for the entire "Windows NT Workstation" title to be displayed.
+
+RESOLUTION
+==========
+
+To disable the "Windows NT Workstation" banner, use the following steps.
+
+NOTE: Depending on the configuration of your ZAK Appstation, you may be required
+to log on with administrative privledges to perform these steps.
+
+1. Click the Start button, point to Settings, and then click Taskbar.
+
+2. Click the "Show small icons in Start menu" check box to select it.
+
+3. Click OK.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

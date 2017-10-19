@@ -1,0 +1,64 @@
+DOCUMENT:Q149549  14-OCT-1999  [msnetwork]
+TITLE   :Signing Out During Phonebook Update Hangs Guide and Moscp
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 1.3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After signing out of MSN, The Microsoft Network, the MSN icon may remain on the
+taskbar and you may be unable to sign in to MSN again.
+
+CAUSE
+=====
+
+These symptoms can occur if you sign out of MSN while your phonebook is being
+updated, because Guide.exe and Moscp.exe are left running. The phonebook update
+is an invisible process that you do not see.
+
+RESOLUTION
+==========
+
+To sign in to MSN again, follow these steps:
+
+1. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+2. Click Moscp and then click End Task.
+
+3. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+4. Click Guide and then click End Task.
+
+5. Sign in to MSN.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130
+Version           : WINDOWS:1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

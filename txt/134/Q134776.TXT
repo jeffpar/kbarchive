@@ -1,0 +1,65 @@
+DOCUMENT:Q134776  17-DEC-2000  [win95x]
+TITLE   :QAPlus for Windows Does Not Detect Network Properly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Diagsoft's QAPlus for Windows, a diagnostic program, reports that the NETX shell
+is not detected when it performs a network test on a computer running the
+Microsoft Client for NetWare Networks. The follow message is displayed:
+
+   No network shell found (NETx)
+
+CAUSE
+=====
+
+QAPlus for Windows checks for the presence of Novell's NETX shell. It is not
+able to detect the Microsoft Client for NetWare Networks and displays the error
+message stated above.
+
+RESOLUTION
+==========
+
+QAPlus can detect only real-mode NetWare components in Windows 95. For
+additional information, please contact Diagsoft Technical Support.
+
+STATUS
+======
+
+This situation is caused by design changes in Windows 95. Microsoft has
+confirmed that it is not caused by a problem in Windows 95.
+
+
+Additional query words: qaplusw.exe lan button
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

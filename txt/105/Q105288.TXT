@@ -1,0 +1,56 @@
+DOCUMENT:Q105288  04-NOV-1999  [pcmail]
+TITLE   :SMTP: Gateway Cannot Run Under Windows NT TCP/IP
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail Gateway to SMTP version cannot run on Microsoft's TCP/IP for
+Windows NT, which uses the Winsock API: the SMTP Gateway was not developed to
+interact with this.
+
+The SMTP Gateway does run on top of two Microsoft TCP/IP products that use the
+Microsoft LAN Manager APIs:
+
+ - LAN Manager TCP/IP
+
+ - Windows for Workgroups TCP/IP (must use the MS-DOS redirector)
+
+The software must be loaded in the correct order. Start TCP/IP (for LAN Manager
+or Windows for Workgroups) first with the "load tcpip" command. Then start the
+TCP/IP application interface, called SOCKET, by typing "SOCKETS". When these
+have been started, you can start the SMTP Gateway software with the "smtpgate"
+command.
+
+Additional query words: 3.00 3.0
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

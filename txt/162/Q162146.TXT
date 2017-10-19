@@ -1,0 +1,59 @@
+DOCUMENT:Q162146  03-OCT-2001  [frontpg]
+TITLE   :FP: Checked Out Files Aren't Published to Server
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbinterop kbdtakbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to publish a FrontPage Web to a server, files that are checked
+out are not published to the server.
+
+CAUSE
+=====
+
+FrontPage Explorer does not publish files that are checked out to the
+destination server.
+
+RESOLUTION
+==========
+
+Use FrontPage Explorer or the Visual Source Safe client to check in the files
+before you publish your FrontPage Web.
+
+NOTE: Use the Visual Source Safe Client if you have multiple files to check in.
+The FrontPage Explorer does not have batch check-in capability.
+
+Additional query words: 97 98 front page
+
+======================================================================
+Keywords          : kbinterop kbdta kbbuglist
+Technology        : kbFrontPageSearch kbFrontPage97Search kbZNotKeyword3
+Version           : :
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

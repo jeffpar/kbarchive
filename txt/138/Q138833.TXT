@@ -1,0 +1,65 @@
+DOCUMENT:Q138833  13-JUN-2001  [sna]
+TITLE   :SNA Admin Loads Faster with Improvements in SNACFG.DLL
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following changes have been made to the configuration interface (SNACFG.DLL)
+so that the SNA Server Administration program loads faster:
+
+1. When the SNA Server configuration file (COM.CFG) is loaded, SNA Server no
+   longer verifies that all SNA Server users and 3270 LUs/pools are uniquely
+   defined in the configuration file.
+
+2. The handling of SNA Server user record entries has been improved to speed up
+   retrieval of user records, when requested by a 3270 emulation program.
+
+STATUS
+======
+
+Obtaining the Updated SNACFG.DLL
+--------------------------------
+
+This feature is included in the latest U.S. Service Pack for SNA Server for
+Windows NT, version 2.11. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,95 @@
+DOCUMENT:Q215492  13-APR-2000  [exchange]
+TITLE   :XFOR: Message Flow Through the Notes Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the flow of messages through the Microsoft Connector for
+Lotus Notes (MSNC).
+
+MORE INFORMATION
+================
+
+Message sent from Exchange to Lotus Notes:
+
+1. The message will be routed by the Message Transfer Agent (MTA) to the
+   Exchange Server computer with the Notes Connector. There will be four MAPI
+   folders that reside within the Information Store: MTS-OUT, READYOUT, MTS-IN,
+   and READYIN. For a message outbound from Exchange Server, it will be placed
+   in the MTS-OUT folder of the Notes Connector.
+
+2. The Lsmexout.exe process will then pick up the message from this MTS-OUT
+   folder, look up the directory (DIR) for the target recipients before placing
+   the message into the READYOUT folder.
+
+   This process is listed in the Exchange Connectivity Administrator's Process
+   Manager as "Transfer from Exchange to Notes," or "LME-NOTES-MEXOUT" process.
+   In the Queues tab of the Notes Connector property page, the MTS-OUT folder
+   and READYOUT folder map to "Outbound from Exchange" and "Outbound to Notes"
+   respectively.
+
+3. The next Notes Connector process then converts the message into a Notes mail
+   format and deposits it into the Notes mailbox router (Mail.box).
+
+   The Lsmexnts.exe process is listed in the Exchange Connectivity
+   Administrator's Process Manager as "Convert Exchange to Notes," or
+   "LME-NOTES-MEXNTS."
+
+Message sent from Notes to Exchange Server:
+
+1. The Notes Connector will poll the Notes outbound mail router (Exchange.box)
+   and pick up any mail deposited there. This process will also convert the
+   message into MAPI format and deposit it into the READYIN folder on the
+   Exchange Server computer with the Notes Connector.
+
+   This process is Lsntsmex.exe. The Lsntsmex.exe process is listed in the
+   Exchange Connectivity Administrator's Process Manager as "Convert Notes to
+   Exchange," or "LME-NOTES-NTSMEX." In the Queues tab of the Notes Connector
+   property page, the READYIN and MTS-IN folder map to "Inbound from Notes" and
+   "Inbound to Exchange" respectively.
+
+2. The next process, Lsmexin.exe then looks up and confirms the directory
+   entries for the recipients, and moves the message from the READYIN folder
+   into the MTS-IN MAPI folder.
+
+   This process is listed in the Exchange Connectivity Administrator's Process
+   Manager as "Transfer to Exchange for Notes," or "LME-NOTES-MEXIN."
+
+3. The Information Store then decides whether the recipients are local or
+   require further work by the MTA to hand the message off to remote Exchange
+   Server computers.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

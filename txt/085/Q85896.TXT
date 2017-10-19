@@ -1,0 +1,56 @@
+DOCUMENT:Q85896  20-FEB-2000  [win16sdk]
+TITLE   :BUG: Input Focus Lost When Control Returns From Windows Help
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbGrpDSUser kbOSWin310bug kbWndw
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an application calls the WinHelp function and specifies HELP_CONTEXTPOPUP
+as the value for the fuCommand parameter, the input focus disappears. When the
+user presses the ALT key, the system menu appears for a hidden copy of the
+Windows Help application.
+
+CAUSE
+=====
+
+The Windows Help application does not properly restore the focus to the calling
+application when the pop-up window is destroyed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug with Windows Help version 3.1.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly kbGrpDSUser kbOSWin310bug kbWndw 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

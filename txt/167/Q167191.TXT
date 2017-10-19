@@ -1,0 +1,98 @@
+DOCUMENT:Q167191  11-DEC-1999  [foxpro]
+TITLE   :PRB: "Variable 'X' not found" in a Visual FoxPro Menu
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbtshoot kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp600kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running a menu that uses a constant defined in a header file, the error
+message "Variable 'x' not found" is returned if the #include statement is in a
+program that calls the menu.
+
+CAUSE
+=====
+
+The constant must be available at menu generation time.
+
+RESOLUTION
+==========
+
+The following steps demonstrate adding a #include statement to the menu setup
+code:
+
+1. Open your "Menu.mnx" file in design mode, where "Menu.mnx" is the name of
+   your menu file.
+
+2. Select "General Options" from the View menu.
+
+3. Select the "Setup" check box.
+
+4. Click OK.
+
+5. Add your #include statement to the setup code area, for example:
+
+         #INCLUDE "C:\VFP\Foxpro.h"
+
+6. Close the Setup Code window.
+
+7. Your variables will be available to the menu after you generate and run your
+   menu file.
+
+The above steps resolve the "Variable 'X' not found" error message described
+above.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use any constant, such as Color_Dark_Red from the "Foxpro.h" header file, in
+   your menu.
+
+2. Generate your menu.
+
+Even if header is defined correctly in your main program, you will receive
+"Variable 'Color_Dark_Red' not found" when the menu is generated.
+
+REFERENCES
+==========
+
+For more information about "Variable not found," please see the following
+article in the Microsoft Knowledge Base:
+
+   Q156672 PRB: "Variable <variable> is not found" Using #INCLUDE Files
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbtshoot kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp600 kbfaq
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,3.0b,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

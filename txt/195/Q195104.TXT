@@ -1,0 +1,137 @@
+DOCUMENT:Q195104  21-OCT-2000  [exchange]
+TITLE   :XADM: Configuring an LDAP Referral Server in 5.5
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Exchange Server, version 5.5 has the ability to set up to 350 multiple
+Lightweight Directory Access protocol (LDAP) Referral servers for LDAP clients.
+
+This ability can be useful if you have other organizations or foreign systems
+that you wish LDAP clients to be able to search for information on and can be
+centrally controlled on one server through the Admin.exe program in Exchange
+Server 5.5.
+
+MORE INFORMATION
+================
+
+If an LDAP client requests information, the Microsoft Exchange Server computer
+returns the referrals to other servers that are within the scope of the search,
+in addition to any entries that match the information requested.
+
+For example, if a client searches on server A for the phone number for John
+Baker, but John Baker is in server B of another organization, server A queries
+the referral server server B to retrieve the information for the client.
+
+You can use the Referrals property page to specify the server outside of your
+organization that an LDAP client connects to for information.
+
+To set up a LDAP Referral Server, perform the following steps:
+
+1. Start Admin.exe and connect to the Server that LDAP Clients will connect to.
+
+   Example: Server1.Org1.com or Server1
+
+2. Go to the Protocols object beneath the configuration container and select the
+   LDAP(Directory) Site Defaults.
+
+3. In properties, select the Referrals Tab and click on New.
+
+4. In the Server Name put the DNS Entry for the referral server.
+
+   For Example: Server2.Org2.com
+
+5. In the Directory Name put the base directory name(Specified in RFC1779) of
+   the referral.
+
+   For Example: ou=Site2,o=Org2,c=us
+
+6. Leave the Port at 389 for LDAP
+
+   NOTE: This port should be open if a firewall or proxy is used to connect to
+   the other server.
+
+7. Leave the SSL Box unchecked unless your connection to the other server occurs
+   using a Secure Sockets Layer(SSL) port.
+
+8. You can add up to 350 Referral Servers in the list.
+
+9. Highlight the Referral Server you want be the default and click on the
+   Default Referral Button
+
+After the steps above have been completed, configure an LDAP client by performing
+the following steps:
+
+1. Start Outlook Express and configure a Directory Service. On the Tools menu,
+   click Accounts, click Directory Service, click Add, and then click Directory
+   Service.
+
+2. In the Internet Directory (LDAP) server, put the name of the server that
+   clients will access.
+
+   For Example (from step 1 above), Server1.Org1.com or Server1
+
+   NOTE: The client should be able to ping the local server above before they can
+   connect and referred to another server. For Example, Ping Server1.
+
+3. If Anonymous access is enabled on the LDAP Protocol, then make sure the "My
+   LDAP server requires me to log on" option is not selected.
+
+4. Click Next, and say click "yes" to check e-mail addresses using this
+   directory service.
+
+5. Click Next, and choose a Friendly name for this directory service name.
+
+   For Example: Exchange Organization
+
+6. After this has been completed, click on Address Book, and then click Find.
+
+7. To search for users on the referral server(s), select the Exchange
+   Organization from the Drop Down list, and type their name or wildcard.
+
+For Example: Typing the beginning of a name or letter such as "J" or "Jo" without
+the quotes will display all the names in the Referral Server(s) that begin with
+"J" or "Jo" such as Joe, Joan, John, and so forth.
+
+For additional information on setting up Outlook 98 clients to use LDAP, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q184212 OL98: (CW) How to Install and Use the LDAP Service
+
+NOTE: Outlook Express may also be used as an LDAP Client to search referral
+servers.
+
+Additional query words: Query multiple organizations other
+
+======================================================================
+Keywords          : exc55 kbfaq
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

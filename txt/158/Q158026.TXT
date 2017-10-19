@@ -1,0 +1,74 @@
+DOCUMENT:Q158026  18-FEB-2002  [homegame]
+TITLE   :GEX: How to Play Using a Keyboard
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft GEX, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to play GEX with a keyboard.
+
+KEY CONTROLS
+------------
+
+To progress through the game, GEX must collect the remote control in each level
+to continue to the next level. The following describes which keys cause each
+action.
+
+Key      Action
+
+X        Jump/Enter TV
+Z        Tail whip/Remote bar
+C        Tongue lash
+V        Run
+F1       Help
+F2       Start a new game
+F3/PAUSE Pause
+F4       Toggle between full screen and window
+F5       320 x 224 window
+F6       640 x 448 window
+ESC      Exit the game
+
+IF GEX KEYBOARD CONTROLS DON'T WORK
+-----------------------------------
+
+If GEX keyboard controls don't work, make sure all connections between your
+keyboard and computer are properly secured.
+
+NOTE: Certain key configurations will not allow three simultaneous key presses,
+which often results in not being able to perform certain game actions
+simultaneously. You will hear a keyboard "tick" from the PC speaker when this
+happens.
+
+Additional query words: 1.00 err msg
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbGEX
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

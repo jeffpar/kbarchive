@@ -1,0 +1,350 @@
+DOCUMENT:Q137646  20-JUN-1999  [win95x]
+TITLE   :Microsoft Plus! DMF Floppy Disk Directory Listing (1 of 2)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the directory contents of the Microsoft Plus! for Windows 95
+DMF-format 3.5-inch disks 1-3 and the contents of the cabinet files on the
+disks.
+
+MORE INFORMATION
+================
+
+Disk 1
+------
+
+setup    exe        72,992  07-14-1995  4:40:00a
+setup    ini           149  07-14-1995  4:40:00a
+setup    lst           642  07-14-1995  4:40:00a
+extract  exe        46,656  07-14-1995  4:40:00a
+setup    tdf            84  07-14-1995  4:40:00a
+readme   txt        21,044  07-14-1995  4:40:00a
+plus_1   cab     1,071,104  07-14-1995  4:40:00a
+plus     inf        55,083  07-14-1995  4:40:00a
+pluslayt inf        15,667  07-14-1995  4:40:00a
+9 files, 1,283,421 bytes
+
+Contents of the Plus_1.cab File:
+
+acmsetup.exe       330,752  07-14-1995  4:40:00a
+acmsetup.hlp        18,397  07-14-1995  4:40:00a
+mssetup.dll        249,344  07-14-1995  4:40:00a
+dskapi16.dll       194,876  07-14-1995  4:40:00a
+dskapi32.dll        21,504  07-14-1995  4:40:00a
+plus.dll           126,464  07-14-1995  4:40:00a
+plus.stf           121,222  07-14-1995  4:40:00a
+support.txt         24,628  07-14-1995  4:40:00a
+drvspace.txt        13,654  07-14-1995  4:40:00a
+drvplus.bin         64,135  07-14-1995  4:40:00a
+drvspace.sys         1,895  07-14-1995  4:40:00a
+drvspacx.vxd        61,719  07-14-1995  4:40:00a
+mrci2.vxd           53,394  07-14-1995  4:40:00a
+drvspace.exe       385,344  07-14-1995  4:40:00a
+plusspac.hlp        59,017  07-14-1995  4:40:00a
+plusspac.cnt         1,203  07-14-1995  4:40:00a
+mini.cab           441,926  07-14-1995  4:40:00a
+cmpagent.exe       237,456  07-14-1995  4:40:00a
+18 files, 2,406,930 bytes
+
+Disk 2
+------
+
+Contents of the Plus_2.cab File:
+
+mini.cab: Starts in cabinet plus_1.cab on disk 'Microsoft Plus! Disk 1'
+cmpagent.exe: Starts in cabinet plus_1.cab on disk 'Microsoft Plus! Disk 1'
+upgrdalm.exe        43,520  07-14-1995  4:40:00a
+compext.dll        123,904  07-14-1995  4:40:00a
+nocomp.exe          71,904  07-14-1995  4:40:00a
+nocomp.inf           4,615  07-14-1995  4:40:00a
+drvspace.dat         1,386  07-14-1995  4:40:00a
+dskmaint.dll       189,696  07-14-1995  4:40:00a
+scanplus.exe       137,836  07-14-1995  4:40:00a
+scandskw.exe         4,896  07-14-1995  4:40:00a
+sysagent.exe       126,464  07-14-1995  4:40:00a
+sage.exe            32,768  07-14-1995  4:40:00a
+sage.dll            71,680  07-14-1995  4:40:00a
+sage.dat             6,858  07-14-1995  4:40:00a
+ds3upgrd.dat         8,226  07-14-1995  4:40:00a
+sage24.dat           6,858  07-14-1995  4:40:00a
+ds3upg24.dat         8,226  07-14-1995  4:40:00a
+sage.vxd             6,171  07-14-1995  4:40:00a
+sysagent.hlp        48,621  07-14-1995  4:40:00a
+sysagent.cnt           591  07-14-1995  4:40:00a
+diskalm.exe         53,760  07-14-1995  4:40:00a
+rnaserv.dll         21,504  07-14-1995  4:40:00a
+font.dat             3,947  07-14-1995  4:40:00a
+pinball.dat        928,700  07-14-1995  4:40:00a
+pinball.exe        351,744  07-14-1995  4:40:00a
+wmconfig.exe       285,184  07-14-1995  4:40:00a
+wavemix.inf         16,563  07-14-1995  4:40:00a
+pinball.mid        108,607  07-14-1995  4:40:00a
+pinball2.mid        28,888  07-14-1995  4:40:00a
+pinball.doc         42,496  07-14-1995  4:40:00a
+table.bmp          339,178  07-14-1995  4:40:00a
+sound1.wav          55,490  07-14-1995  4:40:00a
+sound104.wav         1,226  07-14-1995  4:40:00a
+sound105.wav         1,968  07-14-1995  4:40:00a
+sound108.wav         7,754  07-14-1995  4:40:00a
+sound12.wav          4,296  07-14-1995  4:40:00a
+sound131.wav         1,290  07-14-1995  4:40:00a
+sound14.wav          3,002  07-14-1995  4:40:00a
+sound16.wav          1,046  07-14-1995  4:40:00a
+sound17.wav          2,090  07-14-1995  4:40:00a
+sound18.wav          3,986  07-14-1995  4:40:00a
+sound19.wav          5,230  07-14-1995  4:40:00a
+sound20.wav          8,650  07-14-1995  4:40:00a
+sound21.wav          9,194  07-14-1995  4:40:00a
+sound22.wav          7,376  07-14-1995  4:40:00a
+sound24.wav         12,106  07-14-1995  4:40:00a
+sound25.wav         25,704  07-14-1995  4:40:00a
+sound26.wav          7,306  07-14-1995  4:40:00a
+sound27.wav         20,242  07-14-1995  4:40:00a
+sound28.wav          8,650  07-14-1995  4:40:00a
+sound29.wav         10,364  07-14-1995  4:40:00a
+sound3.wav          22,858  07-14-1995  4:40:00a
+sound30.wav         22,570  07-14-1995  4:40:00a
+sound34.wav          1,520  07-14-1995  4:40:00a
+sound35.wav         19,498  07-14-1995  4:40:00a
+sound36.wav         33,848  07-14-1995  4:40:00a
+sound38.wav         13,024  07-14-1995  4:40:00a
+sound39.wav         28,282  07-14-1995  4:40:00a
+sound4.wav          16,626  07-14-1995  4:40:00a
+sound42.wav         29,140  07-14-1995  4:40:00a
+sound43.wav         22,796  07-14-1995  4:40:00a
+sound45.wav          9,770  07-14-1995  4:40:00a
+sound49.wav          1,876  07-14-1995  4:40:00a
+sound49d.wav         3,330  07-14-1995  4:40:00a
+sound5.wav           3,180  07-14-1995  4:40:00a
+sound50.wav         12,074  07-14-1995  4:40:00a
+sound54.wav         18,250  07-14-1995  4:40:00a
+sound55.wav         21,890  07-14-1995  4:40:00a
+sound57.wav         30,502  07-14-1995  4:40:00a
+sound58.wav          3,408  07-14-1995  4:40:00a
+sound7.wav          26,442  07-14-1995  4:40:00a
+sound8.wav           2,102  07-14-1995  4:40:00a
+sound9.wav          20,098  07-14-1995  4:40:00a
+pinball.hlp          9,606  07-14-1995  4:40:00a
+72 files, 3,644,451 bytes
+
+Disk 3
+------
+
+Contents of the Plus_3.cab File:
+
+sound7.wav: Starts in cabinet plus_2.cab on disk 'Microsoft Plus! Disk 2'
+sound8.wav: Starts in cabinet plus_2.cab on disk 'Microsoft Plus! Disk 2'
+sound9.wav: Starts in cabinet plus_2.cab on disk 'Microsoft Plus! Disk 2'
+pinball.hlp: Starts in cabinet plus_2.cab on disk 'Microsoft Plus! Disk 2'
+pinball.cnt            131  07-14-1995  4:40:00a
+lucon.ttf          107,820  07-14-1995  4:40:00a
+apple.ani            3,236  07-14-1995  4:40:00a
+banana.ani          11,904  07-14-1995  4:40:00a
+coin.ani             7,114  07-14-1995  4:40:00a
+dinosaur.ani         4,804  07-14-1995  4:40:00a
+fillitup.ani        14,936  07-14-1995  4:40:00a
+hand.ani             3,292  07-14-1995  4:40:00a
+horse.ani           18,722  07-14-1995  4:40:00a
+piano.ani            4,784  07-14-1995  4:40:00a
+coffee.ani          15,644  07-14-1995  4:40:00a
+sizenesw.ani           818  07-14-1995  4:40:00a
+sizens.ani             818  07-14-1995  4:40:00a
+sizenwse.ani           818  07-14-1995  4:40:00a
+sizewe.ani             818  07-14-1995  4:40:00a
+tv.ani              11,040  07-14-1995  4:40:00a
+winflag.ani          3,254  07-14-1995  4:40:00a
+cool.dll           373,536  07-14-1995  4:40:00a
+logo.sys           129,078  07-14-1995  4:40:00a
+msplus.cnt           1,729  07-14-1995  4:40:00a
+plus!.hlp          146,321  07-14-1995  4:40:00a
+plustab.dll         37,888  07-14-1995  4:40:00a
+themes.exe          86,016  07-14-1995  4:40:00a
+themes.cpl          15,360  07-14-1995  4:40:00a
+default.thm          4,189  07-14-1995  4:40:00a
+restore.reg          4,293  07-14-1995  4:40:00a
+wildlb32.dll         7,680  07-14-1995  4:40:00a
+wl32dll.dll        148,480  07-14-1995  4:40:00a
+wl32scr.exe         38,400  07-14-1995  4:40:00a
+msjpeg32.dll       104,448  07-14-1995  4:40:00a
+jpegim32.Flt        26,624  07-14-1995  4:40:00a
+win95.thm            5,115  07-14-1995  4:40:00a
+wi_wall.jpg         42,497  07-14-1995  4:40:00a
+wi_wall.pal          1,048  07-14-1995  4:40:00a
+wi_comp.ico          2,734  07-14-1995  4:40:00a
+wi_net.ico           2,734  07-14-1995  4:40:00a
+wi_recye.ico         2,734  07-14-1995  4:40:00a
+wi_recyf.ico         2,734  07-14-1995  4:40:00a
+wi_busy.ani         13,278  07-14-1995  4:40:00a
+wi_wait.ani         13,310  07-14-1995  4:40:00a
+wi_arrow.cur           766  07-14-1995  4:40:00a
+wi_beam.cur            766  07-14-1995  4:40:00a
+wi_cross.cur           766  07-14-1995  4:40:00a
+wi_help.cur            766  07-14-1995  4:40:00a
+wi_move.cur            766  07-14-1995  4:40:00a
+wi_nesw.cur            766  07-14-1995  4:40:00a
+wi_no.cur              766  07-14-1995  4:40:00a
+wi_ns.cur              766  07-14-1995  4:40:00a
+wi_nwse.cur            766  07-14-1995  4:40:00a
+wi_pen.cur             766  07-14-1995  4:40:00a
+wi_up.cur              766  07-14-1995  4:40:00a
+wi_we.cur              766  07-14-1995  4:40:00a
+blocks.scr         102,912  07-14-1995  4:40:00a
+nwgthc.ttf          66,052  07-14-1995  4:40:00a
+nwgthcb.ttf         66,512  07-14-1995  4:40:00a
+nwgthci.ttf         61,280  07-14-1995  4:40:00a
+wi_astrx.wa8         7,066  07-14-1995  4:40:00a
+wi_beep.wa8         15,652  07-14-1995  4:40:00a
+wi_defau.wa8        16,160  07-14-1995  4:40:00a
+wi_empty.wa8        17,100  07-14-1995  4:40:00a
+wi_error.wa8        18,428  07-14-1995  4:40:00a
+wi_excla.wa8         8,152  07-14-1995  4:40:00a
+wi_exit.wa8         68,890  07-14-1995  4:40:00a
+wi_max.wa8           6,856  07-14-1995  4:40:00a
+wi_menu.wa8          4,330  07-14-1995  4:40:00a
+wi_menuc.wa8         6,180  07-14-1995  4:40:00a
+wi_min.wa8           7,002  07-14-1995  4:40:00a
+wi_quest.wa8         8,336  07-14-1995  4:40:00a
+wi_restd.wa8         8,024  07-14-1995  4:40:00a
+wi_restu.wa8         6,188  07-14-1995  4:40:00a
+wi_stop.wa8         31,318  07-14-1995  4:40:00a
+sixties.thm          5,198  07-14-1995  4:40:00a
+sx_wall.jpg         94,322  07-14-1995  4:40:00a
+sx_wall.pal          1,048  07-14-1995  4:40:00a
+sx_comp.ico          2,734  07-14-1995  4:40:00a
+sx_net.ico           2,734  07-14-1995  4:40:00a
+sx_recye.ico         2,734  07-14-1995  4:40:00a
+sx_recyf.ico         2,734  07-14-1995  4:40:00a
+sx_busy.ani          7,860  07-14-1995  4:40:00a
+sx_wait.ani          4,762  07-14-1995  4:40:00a
+sx_arrow.cur           766  07-14-1995  4:40:00a
+sx_beam.cur            766  07-14-1995  4:40:00a
+sx_cross.cur           766  07-14-1995  4:40:00a
+sx_help.cur            766  07-14-1995  4:40:00a
+sx_move.cur            766  07-14-1995  4:40:00a
+sx_nesw.cur            766  07-14-1995  4:40:00a
+sx_no.cur              766  07-14-1995  4:40:00a
+sx_ns.cur              766  07-14-1995  4:40:00a
+sx_nwse.cur            766  07-14-1995  4:40:00a
+sx_pen.cur             766  07-14-1995  4:40:00a
+sx_up.cur              766  07-14-1995  4:40:00a
+sx_we.cur              766  07-14-1995  4:40:00a
+lhandw.ttf          56,560  07-14-1995  4:40:00a
+lsansi.ttf          59,636  07-14-1995  4:40:00a
+sx_astrx.wa8        13,170  07-14-1995  4:40:00a
+sx_beep.wa8          6,682  07-14-1995  4:40:00a
+sx_defau.wa8         5,024  07-14-1995  4:40:00a
+sx_empty.wa8        16,870  07-14-1995  4:40:00a
+sx_error.wa8        11,474  07-14-1995  4:40:00a
+sx_excla.wa8        13,524  07-14-1995  4:40:00a
+sx_exit.wa8         21,526  07-14-1995  4:40:00a
+sx_max.wa8           6,274  07-14-1995  4:40:00a
+sx_menu.wa8          3,354  07-14-1995  4:40:00a
+sx_menuc.wa8         3,280  07-14-1995  4:40:00a
+sx_min.wa8           6,274  07-14-1995  4:40:00a
+sx_quest.wa8        11,456  07-14-1995  4:40:00a
+sx_restd.wa8         6,314  07-14-1995  4:40:00a
+sx_restu.wa8         6,780  07-14-1995  4:40:00a
+sx_start.wa8        34,520  07-14-1995  4:40:00a
+sx_stop.wa8          5,934  07-14-1995  4:40:00a
+science.thm          5,047  07-14-1995  4:40:00a
+sc_wall.jpg        107,669  07-14-1995  4:40:00a
+sc_wall.pal          1,048  07-14-1995  4:40:00a
+sc_comp.ico          2,734  07-14-1995  4:40:00a
+sc_net.ico           2,734  07-14-1995  4:40:00a
+sc_recye.ico         2,734  07-14-1995  4:40:00a
+sc_recyf.ico         2,734  07-14-1995  4:40:00a
+sc_busy.ani          7,808  07-14-1995  4:40:00a
+sc_wait.ani          7,856  07-14-1995  4:40:00a
+sc_arrow.cur           766  07-14-1995  4:40:00a
+sc_beam.cur            766  07-14-1995  4:40:00a
+sc_cross.cur           766  07-14-1995  4:40:00a
+sc_help.cur            766  07-14-1995  4:40:00a
+sc_move.cur            766  07-14-1995  4:40:00a
+sc_nesw.cur            766  07-14-1995  4:40:00a
+sc_no.cur              766  07-14-1995  4:40:00a
+sc_ns.cur              766  07-14-1995  4:40:00a
+sc_nwse.cur            766  07-14-1995  4:40:00a
+sc_pen.cur             766  07-14-1995  4:40:00a
+sc_up.cur              766  07-14-1995  4:40:00a
+sc_we.cur              766  07-14-1995  4:40:00a
+lens.scr           101,888  07-14-1995  4:40:00a
+lsansuni.ttf       304,932  07-14-1995  4:40:00a
+sc_astrx.wa8         9,046  07-14-1995  4:40:00a
+sc_beep.wa8          8,944  07-14-1995  4:40:00a
+sc_defau.wa8         7,522  07-14-1995  4:40:00a
+sc_empty.wa8         7,252  07-14-1995  4:40:00a
+sc_error.wa8         6,632  07-14-1995  4:40:00a
+sc_excla.wa8        16,452  07-14-1995  4:40:00a
+sc_exit.wa8         17,562  07-14-1995  4:40:00a
+sc_max.wa8           5,912  07-14-1995  4:40:00a
+sc_menu.wa8          4,850  07-14-1995  4:40:00a
+sc_menuc.wa8         4,822  07-14-1995  4:40:00a
+sc_min.wa8           5,850  07-14-1995  4:40:00a
+sc_quest.wa8        29,952  07-14-1995  4:40:00a
+sc_restd.wa8         6,536  07-14-1995  4:40:00a
+sc_restu.wa8         6,562  07-14-1995  4:40:00a
+sc_start.wa8        11,110  07-14-1995  4:40:00a
+sc_stop.wa8         10,012  07-14-1995  4:40:00a
+danger~1.thm         5,419  07-14-1995  4:40:00a
+da_wall.jpg         99,357  07-14-1995  4:40:00a
+da_wall.pal          1,048  07-14-1995  4:40:00a
+da_comp.ico          2,734  07-14-1995  4:40:00a
+da_net.ico           2,734  07-14-1995  4:40:00a
+da_recye.ico         2,734  07-14-1995  4:40:00a
+da_recyf.ico         2,734  07-14-1995  4:40:00a
+da_busy.ani          4,744  07-14-1995  4:40:00a
+da_wait.ani          4,712  07-14-1995  4:40:00a
+da_arrow.cur           766  07-14-1995  4:40:00a
+da_beam.cur            766  07-14-1995  4:40:00a
+da_cross.cur           766  07-14-1995  4:40:00a
+da_help.cur            766  07-14-1995  4:40:00a
+da_move.cur            766  07-14-1995  4:40:00a
+da_nesw.cur            766  07-14-1995  4:40:00a
+da_no.cur              766  07-14-1995  4:40:00a
+da_ns.cur              766  07-14-1995  4:40:00a
+da_nwse.cur            766  07-14-1995  4:40:00a
+da_pen.cur             766  07-14-1995  4:40:00a
+da_up.cur              766  07-14-1995  4:40:00a
+da_we.cur              766  07-14-1995  4:40:00a
+dangerou.dll       279,040  07-14-1995  4:40:00a
+da_astrx.wa8         5,982  07-14-1995  4:40:00a
+da_beep.wa8          3,464  07-14-1995  4:40:00a
+da_defau.wa8         9,450  07-14-1995  4:40:00a
+da_empty.wa8        10,328  07-14-1995  4:40:00a
+da_error.wa8         8,548  07-14-1995  4:40:00a
+176 files, 3,545,391 bytes
+
+Additional query words: extract dirwin dirwin95 dmf 1.44
+
+======================================================================
+Keywords          : win95 
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

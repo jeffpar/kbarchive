@@ -1,0 +1,75 @@
+DOCUMENT:Q65664  09-OCT-1999  [win95x]
+TITLE   :Replace Novell 3.01 or Later Capture With 2.12 Capture
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The new CAPTURE.EXE file shipped with the MS-DOS Windows SHELL Kit version 3.01
+or later is known to cause extreme delays and corrupted print jobs when it is
+used with a Novell 2.12 dedicated or non-dedicated server.
+
+If you experience printing problems when you use Novell NetWare version 2.12 with
+Microsoft Windows version 3.00, you may need to replace the CAPTURE.EXE file.
+The CAPTURE.EXE file shipped with the MS-DOS Windows SHELL Kit version 3.01 or
+later should be replaced with the CAPTURE.EXE shipped with Novell NetWare
+version 2.12. The CAPTURE.EXE file is normally located in the Z:\PUBLIC
+directory.
+
+MORE INFORMATION
+================
+
+Follow the steps below to replace this file:
+
+1. Exit Windows.
+
+2. Change to the Z:\PUBLIC directory where the Novell utilities are kept.
+
+3. Type "FLAG CAPTURE.EXE SRW" (without the quotation marks). Note that you may
+   have to be logged in as a supervisor to do this.
+
+4. Place the Novell PUBLIC2 disk in drive A.
+
+5. Type "COPY A:CAPTURE.EXE (3/1/89) Z:\PUBLIC" (without the quotation marks) .
+
+6. Type "FLAG CAPTURE.EXE SRO" (without the quotation marks).
+
+7. Log out and then reboot.
+
+8. Restart your network session.
+
+The Novell NetWare 2.12 version of CAPTURE.EXE (dated: 3/01/89) is located on the
+PUBLIC2 disk. For more information, please call Novell Technical Support.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

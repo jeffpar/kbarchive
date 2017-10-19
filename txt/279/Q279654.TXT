@@ -1,0 +1,50 @@
+DOCUMENT:Q279654  16-NOV-2000  [homegame]
+TITLE   :Metal Gear Solid: Character Name Missing from User's Guide
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metal Gear Solid 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The characters that appear in Microsoft Metal Gear Solid are displayed on pages
+43 through 50 of the Metal Gear Solid user's guide. However, the final character
+displayed on page 46 is unnamed.
+
+MORE INFORMATION
+================
+
+The name of this character is Decoy Octopus. Decoy Octopus is a member of
+Foxhound, and unfortunately very little is known about him.
+
+Additional query words: 1.00 msgame mgs manual missing name
+
+======================================================================
+Keywords          : kbdocerr kbimu msgame 
+Technology        : kbGamesSearch kbMetalGearSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

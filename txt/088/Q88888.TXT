@@ -1,0 +1,50 @@
+DOCUMENT:Q88888  23-OCT-1999  [foxmisc]
+TITLE   :SET SCOREBOARD and SET STATUS Commands in FoxBASE+
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MS-DOS:1.21,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for MS-DOS, versions 1.21, 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SET SCOREBOARD command is used in conjunction with the SET STATUS command to
+determine where information messages are displayed on the screen.
+
+MORE INFORMATION
+================
+
+If SCOREBOARD is ON and STATUS is OFF, information will display on line 0. If
+STATUS is ON, information will display on line 22 regardless of the SCOREBOARD
+setting. In FoxBASE+, SET SCOREBOARD, SET STATUS OFF, and SET STATUS ON commands
+clear the screen.
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxBASE210DOS kbFoxBASE121DOS kbFoxBASESearch
+Version           : MS-DOS:1.21,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,107 @@
+DOCUMENT:Q165282  26-JAN-2001  [win95x]
+TITLE   :Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup osr1 osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Setup for a Windows-based program, you may receive the following
+error message:
+
+   This version of MSVCRT40.DLL is intended for Win32s only.
+
+Setup then quits and the program does not run. Or, you may receive the error
+message after you upgrade from Windows 3.x to Windows 95.
+
+CAUSE
+=====
+
+The Msvcrt40.dll file in the Windows\System folder is not the version required
+by the program.
+
+RESOLUTION
+==========
+
+If you receive this message when you are installing Microsoft Publisher 97, see
+the following article in the Microsoft Knowledge Base:
+
+   Q165642 PUB97: Publisher Setup Quits after Msvcrt40.dll Error Message
+
+Otherwise, you need to find and rename all occurrences of the Msvcrt40.dll file
+by following these steps:
+
+1. Click the Start button, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "msvcrt40.dll" (without the quotation marks).
+
+3. Select the Include Subfolders check box, and then click Find Now. At least
+   one copy of the Msvcrt40.dll file should be found in the Windows\System
+   folder. There may be other copies of the file.
+
+4. Click the copy of the Msvcrt40.dll file in the Windows\System folder, and
+   then click Rename on the File menu.
+
+5. Type a new name (such as Msvcrt40.old).
+
+6. Repeat steps 4-5 for each copy of the file found.
+
+7. On the File menu, click Close.
+
+8. Run the program's Setup program again. This should restore the correct file.
+
+   NOTE: If you are using Microsoft Internet Explorer version 4.0, or 4.01 you
+   may now need to extract the Msvcrt40.dll file from the Ie4mfc40.cab file. For
+   information about using the Extract command, please see the following article
+   in the Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+Note that if any of the Msvcrt40.dll files are in use by Windows, it may be
+necessary to restart the computer to an MS-DOS prompt to rename the file. To do
+so, follow these steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+   F8, and then select "Safe Mode Command Prompt Only".
+
+2. Rename all copies of the Msvcrt40.dll file to Msvcrt40.old.
+
+3. Restart your computer normally.
+
+NOTE: This error does not occur if you are running Microsoft Windows NT
+Workstation version 4.0. If you have Windows NT 4.0, do not replace
+Msvcrt40.dll.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup osr1 osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q247943  31-AUG-2001  [exchange]
+TITLE   :XCLN: Err Mssg: Outlook Could Not Update Your Local Calendar
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:2000; winnt:5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Outlook and connect to an Exchange Server computer, you may receive
+the following error message:
+
+   Outlook could not update your local calendar.
+
+NOTE: This problem can only be reproduced when you run Outlook on the same
+Exchange Server computer that Outlook is connecting to, and when offline folders
+(.ost) are configured.
+
+CAUSE
+=====
+
+The problem is caused by incompatibilities between the Emsmdb32.dll file on the
+Exchange Server computer, and the Outlook 2000 Emsmdb32.dll file.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+ - Run the Outlook client from a different computer.
+
+   -or-
+
+ - Install Outlook on the server only when all Exchange Server services have
+   stopped.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server 5.5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook2000Search kbZNotKeyword3
+Version           : WINDOWS:2000; winnt:5.5
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

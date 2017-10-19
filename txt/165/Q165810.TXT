@@ -1,0 +1,65 @@
+DOCUMENT:Q165810  14-NOV-2000  [word97]
+TITLE   :WD97: ? E-mail Address Using Web Wizard Submit Button
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbother kbtool kbusage kbtemplate word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+MORE INFORMATION
+================
+
+To obtain more information on the scripting functionality and scripting
+languages available to you, please contact your Internet Service Provider.
+
+SYMPTOMS
+========
+
+The Web Page Wizard includes three forms (Feedback, Registration, and Survey)
+for submitting responses. When you set the Action for the Submit button to an
+e-mail address, a question mark is included in your e-mail address. For example,
+if the action you specified for the Submit control is:
+
+   Mail To: YourE-mailName
+
+the following will appear in the To box of the e-mail message when you click the
+Submit button:
+
+   YourE-mailName?
+
+CAUSE
+=====
+
+The question mark signifies that the control does not know what to do with the
+value submitted. The Submit button requires a scripting language such as CGI or
+VBScript. In addition, the scripting language you are able to use (CGI, Perl, or
+VBScript) is dependent upon your Internet Service Provider.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother kbtool kbusage kbtemplate word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

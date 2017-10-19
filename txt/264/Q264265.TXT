@@ -1,0 +1,58 @@
+DOCUMENT:Q264265  14-JUN-2000  [pcmail]
+TITLE   :SMTP: Access Component Determines SMTP Gateway Already Installed
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0,3.x; WINDOWS:3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+ - Microsoft Mail Gateway to SMTP, versions 3.0, 3.x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After a user runs the install -r command on an MS Mail postoffice from the SMTP
+access component disk or the SMTP gateway disk to remove the access component or
+gateway, if the user attempts to reinstall the access component or gateway, the
+installation process may determine (incorrectly) that the access component or
+gateway is already installed.
+
+RESOLUTION
+==========
+
+When a user runs the install -r command, two files are modified on the MS Mail
+postoffice: the Master.glb and Network.glb files. The install -r command may not
+remove the access component or gateway completely. The user must send the Glb
+folder to Microsoft Product Support Services (PSS) so that PSS can modify the
+Glb folder.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350 kbMailGateSMTP3xSearch kbMailGateSMTP300
+Version           : MS-DOS:3.0,3.x; WINDOWS:3.2,3.2a,3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

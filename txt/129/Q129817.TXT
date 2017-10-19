@@ -1,0 +1,75 @@
+DOCUMENT:Q129817  17-DEC-2000  [win95x]
+TITLE   :Creating Personal Distribution Lists in Microsoft Exchange
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create a personal distribution list (or personal
+group) in Microsoft Exchange in Windows 95. Using a personal distribution list
+can simplify sending mail to multiple people or groups.
+
+MORE INFORMATION
+================
+
+To create a personal distribution list, follow these steps:
+
+1. Open Microsoft Exchange.
+
+2. On the Tools menu, click Address Book.
+
+3. On the File menu, click New Entry.
+
+4. In the Create What Kind Of Entry box, click Personal Distribution List, and
+   then click OK.
+
+5. In the Name box, enter a name for this personal distribution list.
+
+6. Click the Add/Remove Members button.
+
+7. In the Show Names From The box, click the address book containing the members
+   you want to add to the personal distribution list. Then, double-click members
+   in the box on the left to add them to the Personal Distribution List box.
+
+8. After you have added all the members you want to the personal distribution
+   list, click OK.
+
+To view the members of a personal distribution list, follow these steps:
+
+1. Open Microsoft Exchange.
+
+2. On the Tools menu, click Address Book.
+
+3. In the Show Names From The box, click Personal Address Book.
+
+4. Double-click the personal distribution list whose members you want to view.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

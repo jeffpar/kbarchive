@@ -1,0 +1,69 @@
+DOCUMENT:Q164959  16-MAY-1999  [exchange]
+TITLE   :XADM: Encryption Does Not Work in Public Folders
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use Advanced Security in Microsoft Exchange Server, you can encrypt a
+message and send it to a public folder, but no mailboxes, other than the
+originating mailbox, can open the message.
+
+MORE INFORMATION
+================
+
+To be able to send a message to a public folder, the public folder must have the
+Hide from Address Book check box in the Advanced tab cleared for that public
+folder's property page in the Microsoft Exchange Administrator program or you
+must know the one-off address. After this is done, the users can select the
+public folder as a recipient from the global address list.
+
+If users have Advanced Security enabled, they can send an encrypted message to a
+public folder. If they do, then only the mailbox that originally sent the
+message can open that encrypted message.
+
+No warning dialog box appears when sending an encrypted message to a public
+folder and other mailboxes that try to open the encrypted message receive the
+following error message:
+
+   This item has been encrypted. You do not have the security key necessary to
+   unencrypt this item.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+versions 4.0 and 5.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

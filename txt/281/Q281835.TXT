@@ -1,0 +1,67 @@
+DOCUMENT:Q281835  10-FEB-2001  [exchange]
+TITLE   :XFOR: Setting "Message Text Word Wrap" to "Never" Does Not Work
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On the Internet Mail tab of the Internet Mail Service properties, if you click
+to select the MIME and Plain Text check boxes under Message Content and
+"Attachments (outbound)", click Advanced Options, and then set Message Text Word
+Wrap to Never, the Internet Mail Service may still wrap text for URLs at 76
+characters.
+
+WORKAROUND
+==========
+
+To work around this issue:
+
+1. Open the Internet Mail Service properties, click the Internet Mail tab, and
+   then click Advanced Options. Change the Message Text Word Wrap setting from
+   Never to At Column with a value of 300, and then click OK twice to accept the
+   change.
+
+2. Restart the Internet Mail Service.
+
+3. Open the Internet Mail Service properties, click the Internet Mail tab, and
+   then click Advanced Options. Change the Message Text Word Wrap setting back
+   to Never. Click OK twice to accept the change.
+
+4. Restart the Internet Mail Service.
+
+After you perform these steps, the Internet Mail Service does not wrap text.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

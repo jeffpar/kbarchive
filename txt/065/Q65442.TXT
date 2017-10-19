@@ -1,0 +1,95 @@
+DOCUMENT:Q65442  05-OCT-1999  [win95x]
+TITLE   :ATI-VIP and ATI EGA Wonder Cards Switch Settings for Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The EGA and VIP Wonder cards are compatible with Microsoft Windows. However, you
+should set dip switch #8 on the card to OFF to ensure compatibility with the
+Windows VGA driver. To verify that switch #8 is OFF, make sure that the switch
+is pointing towards the left, away from #8. For the VIP Wonder card, verify that
+you are using the "QUADVGA, ATI VIP VGA, 82C441 VGA's" as the Windows Display
+driver.
+
+MORE INFORMATION
+================
+
+Dip switch #8 enables or disables the enhanced features for both the VIP and the
+EGA Wonder cards.
+
+The following occurs when switch #8 is set to ON for analog monitors:
+
+1. VIP becomes compatible with the IBM Display Adapter (VGA); the IBM EGA, CGA,
+   and Monochrome Adapter; and the Hercules Graphics Card.
+
+2. High-resolution 800 x 560 color/graphics and 132 columns are available on
+   MultiSync monitors.
+
+3. Softsense Automatic Mode Switching is enabled.
+
+4. Low-resolution 8 x 8 text of CGA software is converted into high-resolution 8
+   x 16 VGA quality text.
+
+The following occurs when switch #8 is set to ON for digital monitors:
+
+1. VIP becomes compatible to the IBM EGA, CGA, and Monochrome Adapter, and the
+   Hercules Graphics Card.
+
+2. VIP can run EGA, CGA, MDA and Hercules software on EGA, RGB, Composite, TTL
+   Monochrome, and COMPAQ portable monitors. (COMPAQ monitors run via the
+   optional COMPAQ Expansion Module.)
+
+3. 132 columns are available.
+
+4. VIP maximizes the monitor's display quality.
+
+5. Softsense Automatic Mode Switching is enabled.
+
+Switch #8 Set to OFF for Analog and Digital Monitors
+----------------------------------------------------
+
+All enhanced features listed above are disabled. For analog monitors connected to
+the 15-pin connector, the VIP becomes compatible to the IBM Display Adapter
+(VGA). On digital monitors connected to the 9-pin connector, the VIP becomes
+identical to the IBM EGA.
+
+VIP has an automatic SafetySwitch that prevents accidental damage to the monitor
+when switch #8 is set to OFF.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: wondercard 3.00 3.0 3.0a 3.00a 3.1 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

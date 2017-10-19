@@ -1,0 +1,67 @@
+DOCUMENT:Q185618  24-JUL-2001  [iis]
+TITLE   :Schannel.dll and Schnl128.dll Updates in Windows NT 4.0 SP4
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbFEA kbWinNT400sp4fea
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The new Schannel.dll and Schnl128.dll files in Windows NT 4.0 Service Pack 4
+have been modified to address the issues listed below.
+
+MORE INFORMATION
+================
+
+The changes made to the above listed files include:
+
+ - Cache access has been unserialized to improve performance on the server side.
+
+ - The cache automatically grows itself, for improved memory usage. (the server
+   had been blocking connections under heavy load).
+
+ - DES, 3DES, and DHE ciphers have been added (for compatibility with other
+   implementations).
+
+ - Fortezza has been added (a government cipher).
+
+ - New APIs were added to the SSPI interface.
+
+ - RPC fixes were made. Some bugs were fixed, allowing connection mode usage of
+   schannel.
+
+To obtain the latest service pack for Windows NT version 4.0, please see the
+following article in the Microsoft Knowledge Base.
+
+   Q152734 : How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+======================================================================
+Keywords          : kbFEA kbWinNT400sp4fea 
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

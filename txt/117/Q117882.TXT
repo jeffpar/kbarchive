@@ -1,0 +1,92 @@
+DOCUMENT:Q117882  17-DEC-2000  [win95x]
+TITLE   :Baskerville Old Face & New Caledonia Are Not Spaced Correctly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Printing a document using the Baskerville Old Face font or the New Caledonia
+TrueType font results in too many spaces between words.
+
+CAUSE
+=====
+
+This behavior is reported to occur when you print to a Hewlett-Packard (HP)
+LaserJet 4Si.
+
+NOTE: Both the HP LaserJet IIISi and Okidata OL-810 printers print the above
+fonts properly.
+
+WORKAROUND
+==========
+
+You can work around this problem by printing TrueType fonts as graphics or by
+downloading TrueType fonts as bitmaps.
+
+To Print TrueType Fonts as Graphics
+-----------------------------------
+
+1. Click the Start button on the taskbar.
+
+2. On the Settings menu, click Printers.
+
+3. Click the appropriate printer icon with the right (secondary) mouse button,
+   then click Properties.
+
+4. Click the Fonts tab.
+
+5. Click Print TrueType As Graphics.
+
+To Download TrueType Fonts as Bitmaps
+-------------------------------------
+
+1. Click the Start button on the taskbar.
+
+2. On the Settings menu, click Printers.
+
+3. Click the appropriate printer icon with the right (secondary) mouse button,
+   then click Properties.
+
+4. Click the Fonts tab.
+
+5. Click Download TrueType As Bitmap Soft Fonts.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Baskerville Old Face and the
+New Caledonia TrueType fonts from the Microsoft TrueType Font Pack II. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: true type laser jet ttf incorrect wrong 3rdparty winttf
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

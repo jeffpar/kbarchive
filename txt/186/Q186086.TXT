@@ -1,0 +1,80 @@
+DOCUMENT:Q186086  22-FEB-2000  [foxpro]
+TITLE   :HOWTO: Get a File DSN in the Connection Designer
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,6.0
+OPER/SYS:
+KEYWORDS:kbvfp kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how you can use the Visual FoxPro Connection Designer
+to visually setup an ODBC File (data source name) DSN.
+
+MORE INFORMATION
+================
+
+With the previous versions of FoxPro, there was not a way to select an ODBC File
+DSN, visually, from the Connection Designer. The steps below illustrate how you
+can select an ODBC File DSN from the Visual FoxPro Connection Designer:
+
+1. Use the ODBC Manager to create a "File DSN" Data Source.
+
+2. Run Visual FoxPro and open a database.
+
+3. From the File menu, select New. In the New dialog box, select Connection and
+   then choose New File. This opens the Connection Designer.
+
+4. In the Connection Designer, under the "Specify Data Source" section, select
+   the Connection string option button.
+
+5. Blank out the contents of the Connect string.
+
+6. Select the "Verify Connection..." button or click the ellipses (...) button
+   to the right of the Connectstring text box. This opens the "Select Data
+   Source" ODBC dialog box. The ODBC dialog box has the following two tabs:
+
+      File Data Source (File DSN's)
+      Machine Data Source (System DSN's)
+
+7. Select a File DSN from the "File Data Source" tab.
+
+8. After you select the OK button, a dialog may appear asking for login
+   information or a message may appear stating the connection succeeded.
+
+9. The Connection string from the File DSN is entered into the Connect string of
+   the Connection Designer.
+
+10. Save the connection and close the Connection Designer.
+
+Additional query words: vfoxwin FxtoolDbtabledes kbvfp600
+
+======================================================================
+Keywords          : kbvfp kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP600
+Version           : WINDOWS:2.5,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

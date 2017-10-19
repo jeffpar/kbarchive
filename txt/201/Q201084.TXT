@@ -1,0 +1,65 @@
+DOCUMENT:Q201084  28-APR-1999  [exchange]
+TITLE   :XFOR: Error 'C1030B35' Configuring Exchange as DirSync Requestor
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set up an Exchange Server computer to act as a directory
+synchronization (dirsync) requestor, you may receive the following error
+message:
+
+   Error occurred while processing email address C1030B35. See the event log for
+   more details.
+
+No errors are reported in the application event log.
+
+CAUSE
+=====
+
+There is already an Exchange Server computer in another site configured to act
+as a dirsync requestor against the Microsoft Mail dirsync server. That site is
+within the same Organization, and is replicating with your current site. Because
+of this replication, the dirsync address (Network\Po\$system) for the dirsync
+server that was to be created already exists within the Organization.
+
+RESOLUTION
+==========
+
+It is recommended that you have only one dirsync requestor to the same dirsync
+server in an Organization. The replication connector will migrate those MS Mail
+user names to the global address list in all other connected sites.
+
+Additional query words: Dir Sync Synch GAL DSS DSR
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

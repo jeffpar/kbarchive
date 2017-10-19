@@ -1,0 +1,66 @@
+DOCUMENT:Q246620  07-SEP-2001  [automap]
+TITLE   :Est2000: Runtime Error When You Print a Map to a Lexmark Printer
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbprint kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to print a map in Microsoft Streets and Trips 2000, you may
+receive the following error message:
+
+   Runtime Error!
+
+   Program ...ES\Microsoft Expedia Streets & Trips \System\Autmap71.exe
+
+   abnormal program termination
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - The Lexmark SC1275 or the Lexmark 4039 Plus is your default printer.
+
+ - The printer driver installed on your computer is outdated.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest Lexmark printer driver
+from the following Lexmark Web site:
+
+   http://drivers.lexmark.com/drivers.nsf/printer+driver/FB6BC62D895725A185256221006F7F50?OpenDocument
+
+Additional query words: multi multi-media media mm auto-map amap printing
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbprint kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

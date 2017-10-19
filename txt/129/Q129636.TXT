@@ -1,0 +1,77 @@
+DOCUMENT:Q129636  15-MAY-2001  [vbwin]
+TITLE   :PRB: "Ambiguous name detected" Compile-Time Error in VB 4.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Better type checking in Microsoft Visual Basic version 4.0 causes it to return a
+compile-time error message when you declare two functions (or subroutines) with
+the same name in the same module or form. This is a change in behavior from
+Microsoft Visual Basic version 3.0.
+
+The error message returned is:
+
+   Ambiguous name detected: <function or sub name>
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add the following code to the general declarations section of Form1:
+
+      Private Declare Function GetSystemDirectory Lib "Kernel" _
+         (ByVal strBuffer As String, ByVal intSize As Integer) As Integer
+      Private Declare Function GetSystemDirectory% Lib "Kernel" _
+         (ByVal lpBuffer$, ByVal nSize%)
+
+3. Attempt to run the application by pressing the F5 key. Visual Basic will not
+   run the application. Instead you will get this error message:
+
+   Ambiguous name detected: GetSystemDirectory
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

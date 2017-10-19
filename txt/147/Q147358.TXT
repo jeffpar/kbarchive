@@ -1,0 +1,63 @@
+DOCUMENT:Q147358  21-MAY-2001  [schedplus]
+TITLE   :Translators Available in Schedule+
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:3.x,4.0,7.0,95
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 95, 7.0, 3.x 
+ - Microsoft Schedule+ for Windows NT, version 7.0 
+ - Microsoft Exchange MS-DOS client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Schedule+ for Windows, version 7.0, uses translators provided by
+IntelliLink Corporation to exchange data with other systems or applications.
+
+Microsoft Schedule+ ships with translators that will Export data to handheld
+computers or applications including: HP 95LX, HP 95LX Local Files, Sharp
+5000/7400 series, Sharp 5500, Sharp 6500/9000 series, Sharp 7600 series, Sharp
+8000/8200 series, and Sharp 8600/YO-600 Series.
+
+Microsoft Schedule+, as shipped with Microsoft Exchange Server and Microsoft
+Exchange client for Windows NT also ships with translators that will Import data
+from the handheld computers listed above and from the following applications:
+ACT! for Windows 1.1 and 1.2, ECCO, Lotus Organizer 1.0/1.1, PackRat 4.1+, and
+Windows Cardfile/Calendar. These translators were not included with released
+versions of Office for Windows95.
+
+Note: The Help Files included with Microsoft Schedule+ 7.0 and Office 7.0x offer
+information regarding these translators even though they are not included with
+these products.
+
+For information about ordering additional translators from Intellilink
+Corporation, please call (603) 888-0666.
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbOfficeSearch kbExchangeSearch kbExchange400 kbExchangeClientSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3 kbWordPad95 kbMailATN30xSearch
+Version           : WINDOWS:3.x,4.0,7.0,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

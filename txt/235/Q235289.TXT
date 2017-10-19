@@ -1,0 +1,79 @@
+DOCUMENT:Q235289  06-AUG-2002  [winnt]
+TITLE   :DNS Server Delegations Disappear on Secondary Name Servers
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a Domain Name System (DNS) server hosting secondary zones for parent
+and child domains, deleting the child domain removes the delegation for the
+child domain from the the parent or <root> domain.
+
+For example, if your DNS server hosts the following secondary zones
+
+ - domain.net (root domain)
+
+ - child.domain.net (child domain)
+
+and you delete child.domain.net from the secondary server, the NS delegation for
+child.domain.net is deleted from the domain.net zone.
+
+CAUSE
+=====
+
+This behavior occurs because the copy of the zone is running in memory.
+
+NOTE: This is not written back to the zone file.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the following syntax at a command line:
+
+net stop dns
+
+net start dns
+
+Using this syntax stops and starts the DNS service, which reloads the parent or
+<root> zone, and the NS delegation record reappears.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Windows NT 4.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

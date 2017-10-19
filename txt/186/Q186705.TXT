@@ -1,0 +1,65 @@
+DOCUMENT:Q186705  10-JUL-2002  [exchange]
+TITLE   :XCLN: Explore Web Page Fails Opening FTP Address
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+In Microsoft Outlook, you can open a contact's Web page by clicking Explore Web
+Page from the Actions menu, or by clicking on the address in the Web Page
+Address box.
+
+However, if you try to do the same thing in Outlook Web Access and the specified
+address begins with "ftp," Outlook Web Access attempts to open the address with
+"http://" instead. This may cause the operation to either attempt to open a
+different Web address than the one specified, or fail if that address does not
+exist.
+
+CAUSE
+=====
+
+If Outlook Web Access does not see a protocol specifier (a colon) on the Uniform
+Resource Locator (URL) listed in the Web Page Address box, it defaults to use
+"http://".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Outlook Web Access
+version 5.5 Service Pack 1.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550SP1
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

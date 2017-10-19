@@ -1,0 +1,89 @@
+DOCUMENT:Q182386  17-JUL-2001  [visualc]
+TITLE   :PRB: Varchar Output Parameter Causes "Data Truncated" Error
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbMFC kbODBC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using MFC ODBC to call a Microsoft SQL Server stored procedure that returns
+a CHAR or VARCHAR output parameter, the buffer intended to hold the data
+returned will be Null and ODBC will return the error:
+
+   
+
+   Warning: ODBC Success With Info, Data truncated
+   State:01004,Native:0,Origin:[Microsoft][ODBC SQL Server Driver]
+
+CAUSE
+=====
+
+This problem is caused by the way that parameters are bound in the RFX_Text
+function. The call to SQLBindParameter appears as follows:
+
+      AFX_SQL_SYNC(::SQLBindParameter(pFX->m_hstmt, (UWORD)nField,
+       (SWORD)pFX->m_nFieldType, SQL_C_CHAR, (SWORD)nColumnType,
+       nMaxLength, nScale, pvParam, 0, plLength));
+
+The problem is the next to the last parameter, the cbValueMax argument, which is
+hard coded to 0 (zero). The cbValueMax argument specifies the length of the
+buffer; it applies only to character data, not to numerics. If the number of
+bytes available to return is greater than or equal to this number, then the
+driver truncates it to cbValueMax-1 and null terminates it (and throws the error
+above). Because the parameter is hard coded to 0, the error will always be
+returned.
+
+RESOLUTION
+==========
+
+The resolution is to copy the RFX_Text function from Dbrfx.cpp and paste it into
+your project. Give it a name, such as RFX_TextOut, and then locate the
+SQLBindParameter call in question (right below the first UNICODE section).
+Change the SQLBindParameter call to the following:
+
+      AFX_SQL_SYNC(::SQLBindParameter(pFX->m_hstmt, (UWORD)nField,
+      (SWORD)pFX->m_nFieldType, SQL_C_CHAR, (SWORD)nColumnType,
+      nMaxLength, nScale, pvParam, nMaxLength, plLength));
+
+By using the nMaxLength input parameter, the new RFX_Text function allows the
+driver to set up a buffer of the correct size for the text Output parameter.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : WINNT:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

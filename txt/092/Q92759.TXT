@@ -1,0 +1,68 @@
+DOCUMENT:Q92759  11-SEP-1999  [winmisc]
+TITLE   :Video Err Msg: Undefined Dynalink
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When attempting to open an AVI file in VidEdit from Microsoft Video for Windows
+1.0, you may receive the following error message:
+
+   Undefined Dynalink
+
+This message occurs when an older copy of a dynamic link library file
+(<filename>.DLL) is accessed in place of the DLL that shipped with
+Microsoft Video for Windows 1.0.
+
+MORE INFORMATION
+================
+
+Some third-party multimedia applications may install all or part of their
+dynamic link library files directly to the Windows Directory. If this occurs,
+Microsoft Video for Windows 1.0 will not properly overwrite/replace these files
+during installation. This may result in Microsoft Video for Windows accessing
+these older DLL's during the operation of the application resulting in the
+"Undefined Dynalink" error. One of the more common files exhibiting this
+characteristic is WINCOM.DLL. To check for duplicate DLL files, run a search of
+the WINDOWS directory and all subdirectories from File Manager. The DLL files
+that ship with Microsoft Video for Windows 1.0 are:
+
+   MCIOLE.DLL
+   DISPDIB.DLL
+   MSVIDEO.DLL
+   MEDIAMAN.DLL
+   WINCOM.DLL
+   WRKBENCH.DLL
+   PCVIDEO.DLL (When installing Video Blaster driver)
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

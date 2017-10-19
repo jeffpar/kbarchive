@@ -1,0 +1,59 @@
+DOCUMENT:Q82415  06-NOV-1999  [win95x]
+TITLE   :Banyan VINES Overwrites CMOS Settings
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:MS-DOS:6.0,6.2,6.21; WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If there is not enough free upper memory block (UMB) space for Banyan VINES
+network software, it may overwrite the current CMOS settings. To work around
+this problem, free up additional UMB space.
+
+MORE INFORMATION
+================
+
+For example, if SMARTDrive (SMARTDRV.EXE) is loaded in upper memory, there may
+not be enough UMB space for Banyan VINES. To work around this problem and avoid
+Banyan VINES overwriting the CMOS settings, free up additional UMB space or load
+Banyan VINES in conventional memory and use MS-DOS MemMaker to optimize the UMB
+space.
+
+For additional information, contact Banyan VINES.
+
+Banyan VINES is manufactured by Banyan Systems, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 6.00 6.20 loadhigh load high lh uma area dos winfest
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311 kbMSDOSSearch kbMSDOS621 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21; WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

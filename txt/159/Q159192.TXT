@@ -1,0 +1,85 @@
+DOCUMENT:Q159192  09-APR-1999  [exchange]
+TITLE   :XCON: MTA Shows High CPU Usage and Messages Not Delivered
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange message transfer agent (MTA) shows very high CPU usage
+and messages do not move from their queues. This high CPU usage (near 100
+percent) persists for extended periods of time and is viewable using Performance
+Monitor. The computer running Windows NT Server and Microsoft Exchange Server
+may perform slowly.
+
+To observe the MTA CPU Usage using Performance Monitor:
+
+1. Start Performance Monitor
+
+2. On the Edit menu, click Add to Chart.
+
+3. For the Object, select Process.
+
+4. For the Instance, select emsmta.
+
+5. For the Counter, select "% Processor Time."
+
+6. Click Add.
+
+You should view the CPU usage over time to see if it persists at a high value
+(close to 100 percent). It can be quite normal for the MTA to run with high CPU
+usage, but it should not persist indefinitely. (You should analyze your systems
+using this technique to establish a baseline for comparison purposes.)
+
+CAUSE
+=====
+
+In rare cases of message corruption, the Microsoft MTA can incur high CPU
+overhead while processing messages with Distribution Lists. The most likely
+cause of this corruption is improper shutdown of the computer running Microsoft
+Exchange Server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+This problem was corrected in the latest Microsoft Exchange 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: hung cpu bound pegging 100% percent
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

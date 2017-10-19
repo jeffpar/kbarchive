@@ -1,0 +1,50 @@
+DOCUMENT:Q288120  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: No Bombs or Rockets in Multiplayer Mode
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a multiplayer game of Microsoft Combat Flight Simulator, the
+bombs and the rockets options are unavailable when you configure your aircraft.
+
+CAUSE
+=====
+
+This behavior occurs because bombs and rockets are intended for air-to-ground
+targets and ground structures and those objects are not present in multiplayer
+mode.
+
+Additional query words: msgame bomb rocket multi mulitplayer cfs combatfs 1.00
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

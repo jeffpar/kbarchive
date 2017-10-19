@@ -1,0 +1,100 @@
+DOCUMENT:Q246313  24-OCT-2000  [foxpro]
+TITLE   :BUG: Certain Icons May Cause Error with FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300bBUG kbvfp500aBUG kbvfp600bug kbXBase kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a, 6.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Icon files (*.ICO) usually have two or more resources contained within them.
+Each resource can be built with a different number of colors. Viewing an icon
+file that has a 32x32 resource that was built with greater than 256 colors
+causes the Visual FoxPro (VFP) versions mentioned above to exit. This occurs
+when Visual FoxPro is running on Microsoft Windows NT.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+From Visual FoxPro, you can get a dialog to view an icon in a number of ways:
+assigning an .ico to a project, through the PICTURE property of an image
+control, and so forth. The easiest way to reproduce this, however, is with
+GETPIC().
+
+1. Using Impact Software's Microangelo (information available on their Web site
+   at: http://www.impactsoft.com/muangelo/muangelo.html), or some other icon
+   editor, create an icon. Include a 32x32 resource with more than 256 colors.
+
+2. Open one of the Visual FoxPro versions listed above and execute the following
+   command from the Command window:
+
+   ? GETPIC()
+
+3. When the dialog box appears, locate the icon created in step 1. Select the
+   icon and PREVIEW it (using either the preview checkbox or button).
+
+Using Visual FoxPro 6.0 (no service pack), the following error might occur and
+then Visual FoxPro exits:
+
+   Fatal error: Exception code=C0000005
+
+Using Visual FoxPro 5.0x and Visual FoxPro 6.0 SP3, the following error might
+occur and FoxPro exits or VFP shuts down without reporting an error:
+
+   APPLICATION ERROR. The instruction at <memory address> referenced
+   memory at <memory address>. The memory could not be "read".
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Trevor
+Hancock, Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300bBUG kbvfp500aBUG kbvfp600bug kbXBase kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : WINDOWS:3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

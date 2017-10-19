@@ -1,0 +1,58 @@
+DOCUMENT:Q76878  05-NOV-1999  [winmisc]
+TITLE   :Setup Detects an Installed Copy of Windows on Hard Drive
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Setup program for Windows with Multimedia Extensions detects a installed
+version of Windows on your hard drive if one exists. You then have the option of
+updating that version of Windows to include the Windows with Multimedia
+Extensions or create a new directory to install both Windows version 3.0 and the
+Multimedia Extensions.
+
+This information does not apply to later versions of Windows.
+
+MORE INFORMATION
+================
+
+If Setup detects a current Windows directory, it will display the directory
+name. If you want to update that version of Windows to include the Multimedia
+Extensions, then continue with the Setup routine.
+
+If you want to install a separate copy of Windows with the Multimedia Extensions,
+then use the BACKSPACE key to delete the current path and type a new directory
+for Windows with Multimedia Extensions.
+
+Additional query words: MMWIN 3.00 WIN30
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

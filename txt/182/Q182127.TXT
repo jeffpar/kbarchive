@@ -1,0 +1,85 @@
+DOCUMENT:Q182127  06-MAR-2002  [win95x]
+TITLE   :Computer Hangs With VoiceView Modem
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbsetup win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When your computer restarts for the first time after you install Windows 95,
+your computer may seem to stop responding (hang).
+
+CAUSE
+=====
+
+This issue can occur if your computer has a VoiceView modem installed. The files
+needed to install this modem may cause multiple instances of the Grpconv.exe
+program to start, which may make your computer appear to hang.
+
+RESOLUTION
+==========
+
+To work around this issue, use the appropriate method:
+
+Allow Setup to Finish
+---------------------
+
+Although your computer may seem to be hung, it is not, and you should allow Setup
+to continue until it is finished. Note that you may experience a longer than
+normal installation time.
+
+Edit the Mdmvv.inf File
+-----------------------
+
+Microsoft does not encourage or support changes to .inf files; therefore,
+Microsoft Technical Support does not support the procedure in this article.
+Although we have tested the following procedure and it appears to function as
+described, make a backup copy of your .inf file before you proceed.
+
+If you are a System Administrator who wants to run an unattended Setup, you can
+edit the Mdmvv.inf file, and then run Setup again. To do so, use the following
+steps:
+
+1. Right-click the Mdmvv.inf file, and then click Open.
+
+2. In the [VoiceView_Modem] section, place a semi-colon in front of the
+   following line:
+
+   HKR,, Runonce,,"grpconv /o" line.
+
+3. On the File menu, click Save, quit the program you used to edit the Mdmvv.inf
+   file, and then run Setup again.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbsetup win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

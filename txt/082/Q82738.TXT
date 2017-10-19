@@ -1,0 +1,74 @@
+DOCUMENT:Q82738  25-OCT-1999  [win95x]
+TITLE   :Using Central Point Backup with Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you run Central Point Backup version 7.0 or 7.1 for MS-DOS under Windows
+version 3.1, DMA buffer size may be too small. To increase the DMA buffer size,
+add the following line to the SYSTEM.INI file under the [386Enh] section:
+
+      DMABUFFERSIZE=18
+
+You may need to experiment to find a value that works on your machine. A value in
+the range of 18 to 64 should work correctly.
+
+If you have problems running Central Point Backup when TrueType fonts are
+enabled, increase the BUFFERS setting in the CONFIG.SYS file to at least 30.
+
+MORE INFORMATION
+================
+
+Some tape backup systems require that DMABUFFERSIZE be set to 64, which is what
+Central Point recommends. The disadvantage of increasing the buffer size is that
+increasing the DMA buffer size uses up conventional memory for all applications
+running under Windows.
+
+The Windows version of Central Point Backup does not require the increase in DMA
+buffer size. If you are going to use a backup program under Windows, Microsoft
+recommends you use a Windows backup program, such as the one that comes with PC
+Tools.
+
+Some tape backup systems may run successfully no matter what setting is used for
+the DMA buffer size. Resetting the DMA buffer size will not enhance performance
+on such systems, even though the DMA buffer message is displayed. For more
+information about using Central Point Backup with such systems, contact Central
+Point Software.
+
+The Central Point Backup product included here is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

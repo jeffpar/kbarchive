@@ -1,0 +1,68 @@
+DOCUMENT:Q130533  17-DEC-2000  [win95x]
+TITLE   :Using Previous Windows Communications Switches in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists COM port switches that are used in the [386Enh] section of
+the SYSTEM.INI file for previous versions of Windows and how those switches can
+be used in Windows 95.
+
+MORE INFORMATION
+================
+
+The following table lists the COM port switches, valid values for those
+switches, and where the switches can be used in Windows 95:
+
+   Switch           Value                Windows 95 Location
+   --------------------------------------------------------
+   COMxAutoAssign   Number or seconds    SYSTEM.INI
+   COMxBase         I/O address          Registry
+   ComxBuffer       number of characters SYSTEM.INI
+   COMMDrv30        True or false        Registry
+   COMxFIFO         True or false        SYSTEM.INI
+   COMxIRQ          IRQ number           Registry
+   COMIRQSharing    True or false        Registry
+   COMxProtocol     XOFF or blank        SYSTEM.INI
+
+
+If the Windows 95 location in the table above is SYSTEM.INI, you can use the
+setting in the [386Enh] section of the SYSTEM.INI file in Windows 95. The
+setting will affect only MS-DOS-based programs.
+
+If the Windows 95 location in the table above is Registry, the setting can be
+modified using the Windows 95 graphical user interface (GUI). The setting will
+affect only Windows-based programs. If you place the setting in the SYSTEM.INI
+file it will be ignored.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,71 @@
+DOCUMENT:Q247378  31-JUL-2001  [iis]
+TITLE   :HTTP/1.1 Error 403 - Access Forbidden
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp403 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Following the submission of a GET request to a Web server, the Web server
+responds by sending the following error message to the client browser:
+
+   HTTP/1.1 Error 403 - Access Forbidden
+
+CAUSE
+=====
+
+The AccessPerm key for the object being requested exists in the metabase, but
+not in the file system. Presently there is no synchronization between the file
+system and properties in the metabase.
+
+RESOLUTION
+==========
+
+You must manually synchronize the various properties in the metabase and File
+System. To do this, follow the instructions below.
+
+Option 1
+
+1. Re-create the object in the file system.
+
+2. Open the MMC and delete the object.
+
+3. Open Windows Explorer and delete the object from the file system.
+
+Option 2
+
+Use Adsutil.vbs to delete the metabase entry for the object in question.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp403 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

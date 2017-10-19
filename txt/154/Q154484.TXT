@@ -1,0 +1,64 @@
+DOCUMENT:Q154484  09-AUG-2001  [winnt]
+TITLE   :Stop 0xA in Afd.sys
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI kbSDKPlatform kbWinsock kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following Stop 0xA message may be received when a server/client application
+uses TCP/IP sockets to transfer data:
+
+   Stop 0xA in Afd.sys (0x0000000c,0x00000002,0x00000000,0xfa13f0b6)
+
+CAUSE
+=====
+
+The stop error occurs because a packet has been received and indicated up the
+stack after the connection has been aborted. Under certain undefined
+circumstances, Windows NT tries to use the connection after it has been
+dereferenced.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A fix
+to this problem is in development, but has not been regression-tested and may be
+destabilizing in production environments. Microsoft does not recommend
+implementing this fix at this time. Contact Microsoft Product Support Services
+for more information on the availability of this fix.
+
+
+
+Additional query words: prodnt winsock ntblue
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbSDKPlatform kbWinsock kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

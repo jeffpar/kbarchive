@@ -1,0 +1,77 @@
+DOCUMENT:Q151387  13-FEB-2002  [crossnet]
+TITLE   :WFWG 3.11 DHCP Client Does Not Release IP Address
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+ - Microsoft TCP/IP-32 for Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows for Workgroups 3.11 DHCP client running TCP/IP-32 does not release and
+unbind its IP address from the Network Interface Card (NIC) even after the lease
+has expired until the user acknowledges the pop-up message that is displayed on
+the screen indicating that the lease has expired.
+
+CAUSE
+=====
+
+This particular situation can arise when a Dynamic Host Configuration Protocol
+(DHCP) server is not available on the network to renew the client lease at the
+time of expiration. The client, after repeated attempts to renew the current
+lease, will try to obtain a new lease thereafter. If it fails to get a new lease
+as well, it should relinquish the current lease and release the IP address it is
+currently using.
+
+This can also create duplicate addresses on the network, when the DHCP server
+reuses the address and leases it to another client because the earlier lease had
+expired.
+
+RESOLUTION
+==========
+
+The module Vdhcp.386 was changed to release the IP address before displaying the
+dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP32. A fix to this problem
+is in development, but has not been regression tested and may be destabilizing
+in production environments. Microsoft does not recommend implementing this fix
+at this time. Contact Microsoft Product Support Services for more information on
+the availability of this fix.
+
+
+Additional query words: WFW 3.11 TCP32 DHCP lease expired
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

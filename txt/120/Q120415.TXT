@@ -1,0 +1,83 @@
+DOCUMENT:Q120415  03-NOV-1999  [win3x]
+TITLE   :Net SatisFAXtion Version 2.5 and Windows for Workgroups 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Intel Corporation, if you are running the NET SatisFAXtion software
+version 2.5 with Windows for Workgroups version 3.11, you must remove the
+IPX/SPX Compatible Transport for proper operation of the FAXNODE software. The
+Windows CAS manager in NET SatisFAXtion is designed to work with Novell NetWare
+and does not support use on a Windows for Workgroups network. The FAXNODE
+software is designed to operate with a Novell file called NWIPXSPX.DLL, which
+conflicts with the Windows for Workgroups 32-bit version of the IPX/SPX
+compatible transport.
+
+MORE INFORMATION
+================
+
+NOTE: The configuration below should not be used if you need to run the Windows
+for Workgroups network in conjunction with Novell NetWare or if you need to
+communicate with other Windows for Workgroups or Windows NT machines across a
+router. (NetBEUI is not a routable protocol where IPX/SPX is a routable
+protocol.)
+
+To work around this problem, Intel suggests removing IPX/SPX Compatible Transport
+with NetBIOS in Network Setup. To do this, use the following steps:
+
+1. In Program Manager, open the Networks group and double-click the Network
+   Setup icon.
+
+2. Choose the Drivers button and select IPX/SPX Compatible Transport with
+   NetBIOS.
+
+3. Choose the Remove button. Choose Yes when you are prompted for confirmation
+   of this action.
+
+4. Choose Close and then OK. Windows for Workgroups generates a message
+   indicating that it has modified your .INI files and you should restart
+   Windows to make the changes take effect.
+
+5. Choose Restart Windows.
+
+For more information about this issue and using other versions of NET
+SatisFAXtion software with Windows for Workgroups, call the Intel FaxBack
+service at either (503) 629-7576 or (800) 525-3019 and request fax #6120.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.11 communicating applications specification
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,56 @@
+DOCUMENT:Q244759  21-DEC-2001  [word97]
+TITLE   :WD97: Microsoft Word 97 Equivalents to WordPerfect White Paper
+PRODUCT :Word 97 for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbfile kbdta
+
+======================================================================
+SUMMARY
+=======
+
+When making the transition from WordPerfect, it helps to understand the
+different functionality in Word that will help get your job done without "reveal
+codes."
+
+This Word 97 document reviews the formatting tools used in Microsoft Word and
+discusses features that help WordPerfect users do what they used to do with
+"reveal codes."
+
+The following file is available for download from the Microsoft Download Center:
+
+   Revcodes.exe
+   (http://download.microsoft.com/download/word97win/white1/1/WIN98/EN-US/Revcodes.exe)
+
+Release Date: Feb-13-1997
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbdta 
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

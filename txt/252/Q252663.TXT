@@ -1,0 +1,62 @@
+DOCUMENT:Q252663  10-AUG-2001  [winnt]
+TITLE   :WritePrinter() API Call Does Not Work Printin to an LPR Printer
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print to an LPR printer, the WritePrinter() application
+programming interface (API) may not work when the program you are using calls
+the API. The GetLastError() API may return the following error message:
+
+   ERROR_INSUFFICIENT_BUFFER
+
+CAUSE
+=====
+
+This issue can occur if the status of the print job changes between the time the
+WritePrinter() API requests the size needed for the status and the time the
+WritePrinter() API requests the status from the spooler.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the printer settings from the "Start print
+immediately" option to the "Start printing after the last page is spooled"
+option.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400search kbWinNTS400 kbWinNTW400sp6 kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : winnt:4.0,4.0 SP6,4.0 SP6a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

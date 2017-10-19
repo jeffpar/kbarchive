@@ -1,0 +1,108 @@
+DOCUMENT:Q216661  28-JUL-2002  [winnt]
+TITLE   :How to Implement a Policy to Set the Date Format
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+OPER/SYS:
+KEYWORDS:kbenv kbYear2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+ - Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4 
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article describes how to determine the date format that is displayed to
+users when they log on to a computer.
+
+MORE INFORMATION
+================
+
+A user can configure the date format using the Regional Settings tool in Control
+Panel.
+
+You can apply a policy to a computer to control the date format that is displayed
+to the user (for example, MM/dd/yy or MM/dd/yyyy). The following registry key
+controls the date format:
+
+   Path: HKEY_CURRENT_USER\Control Panel\International
+   Name: sShortDate
+   Type: REG_SZ
+   Default value for U.S. English: MM/dd/yy
+
+The following example shows the different values you can use for this registry
+key, and how the date is displayed for a specified value:
+
+Value          Result
+MM/dd/yy       03/08/98
+M/d/yy         3/8/98
+M/d/yyyy       3/8/1998
+MM/dd/yyyy     03/08/1998
+yy/MM/dd       98/03/08
+dd-MMM-yy      03-Mar-98
+
+Through the use of policies in Windows NT 4.0, you can write a custom .adm file
+and incorporate it into the policy file. For additional information about policy
+files and custom .adm templates, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q185589 Guide To Windows NT 4.0 Profiles and Policies (Part 4 of 6)
+
+You can cut and paste the following information into a file and save it as a
+custom .adm file. After the .adm file is incorporated into the policy, you can
+configure the date format for users.
+
+----------Start of Date Format ADM----------
+CLASS USER
+
+CATEGORY !!DATE
+	KEYNAME "Control Panel\International"
+	
+	POLICY !!ShortDateFormat
+		PART !!DateFormatDesc         EDITTEXT REQUIRED
+		VALUENAME sShortDate
+		END PART
+	END POLICY
+END CATEGORY	; Date
+
+[strings]
+Date="Date"
+ShortDateFormat="Short Date Format"
+DateFormatDesc="Please enter the date mask. For example MM/dd/yyyy"
+----------End of Date Format ADM----------
+
+Additional query words: year y2k hoax user profile
+
+======================================================================
+Keywords          : kbenv kbYear2000 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

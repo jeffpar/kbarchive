@@ -1,0 +1,59 @@
+DOCUMENT:Q103545  22-NOV-1999  [msdos]
+TITLE   :Cannot Choose Create New for Removable Media
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for
+commands and file names.
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+Due to the design of DoubleSpace, you cannot create new compressed
+drives on removable media such as floppy disks, optical drives with
+removable disks (called floptical drives), and Bernoulli disks.
+
+If you try to create a new compressed drive on a removable medium, you
+receive the following error message:
+
+   Drive <drive letter> is removable, so you cannot create a compressed
+   drive on it.
+
+You can, however, compress the existing data by running the
+DoubleSpace maintenance program and choosing Existing Drive from the
+Compress menu. You can also type "dblspace /compress <drive letter>" (without the quotation marks)
+at the MS-DOS command prompt and then
+press ENTER.
+
+MS-DOS 6.0 DoubleSpace incorrectly allows you to create new compressed
+drives on Bernoulli disks. This problem was corrected in MS-DOS 6.2.
+
+Additional query words: 6.20 6.2 6.22 diskette iomega
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

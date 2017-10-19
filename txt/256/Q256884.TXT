@@ -1,0 +1,93 @@
+DOCUMENT:Q256884  05-AUG-2002  [sms]
+TITLE   :TCP and UDP Ports Used by Remote Control Have Changed in SP2
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ports utilized by Remote Control have changed in Systems Management Server
+(SMS) 2.0 Service Pack 2 (SP2).
+
+MORE INFORMATION
+================
+
+Systems Management Server 2.0 Service Pack 2 Remote Tools utilize the
+following:
+
++------------------------------------------------+
+| Process     | Port | Protocol | Feature        | 
++------------------------------------------------+
+| sms-rcinfo  | 2701 | TCP      | RCINFO         | 
++------------------------------------------------+
+| sms-rcinfo  | 2701 | UDP      | RCINFO         | 
++------------------------------------------------+
+| sms-remctrl | 2702 | TCP      | Remote Control | 
++------------------------------------------------+
+| sms-remctrl | 2702 | UDP      | Remote Control | 
++------------------------------------------------+
+| sms-chat    | 2703 | TCP      | Chat           | 
++------------------------------------------------+
+| sms-chat    | 2703 | UDP      | Chat           | 
++------------------------------------------------+
+| sms-xfer    | 2704 | TCP      | File Transfer  | 
++------------------------------------------------+
+| sms-xfer    | 2704 | UDP      | File Transfer  | 
++------------------------------------------------+
+
+The remote tools have the following functions:
+
++------------------------------------------+
+| Port | Function                          | 
++------------------------------------------+
+| 2701 | Used for session setup and verify | 
++------------------------------------------+
+| 2702 | Used for actual remote control    | 
++------------------------------------------+
+| 2703 | Used for remote chat              | 
++------------------------------------------+
+| 2704 | Used for remote file transfer     | 
++------------------------------------------+
+
+Before SMS 2.0 SP2, ports used for remote tools were the same in both SMS 2.0 and
+SMServer 1.2.
+
+For additional information about network ports used by remote helpdesk functions,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q167128 Network Ports Used by Remote Helpdesk Functions
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,86 @@
+DOCUMENT:Q166080  30-JUL-2000  [exchange]
+TITLE   :XFOR: Access Violation During Internet Mail Wizard
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbsetup kbusage exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you (the administrator) set up the Microsoft Exchange Server Internet Mail
+Service (IMS) with the Internet Mail Wizard, you may get an access violation
+upon starting services. Subsequently, the IMS is not created. When you look at
+the Drwtsn32.log, it should show an entry similar to the following:
+
+   Application exception occurred:
+   App: MSEXCIMC.dbg (pidA9)
+   When: D/MM/YYYY @ hh:mm: s.sss
+   Exception number: c0000005 (access violation)
+
+The Event Viewer Application log should reveal the following event:
+
+   Event ID: 4097
+   Source: DrWatson
+   Category: None
+   Description: The application; MSEXCIMC.dbg; generated an application
+   error The error occurred on D/MM/YYYY @ hh:mm: s.sss The exception
+   generated was c0000005 at address 0042db78 ().
+
+CAUSE
+=====
+
+The IMS Administrator mailbox selected during the IMS Setup Wizard process is
+missing its X.400 address space.
+
+RESOLUTION
+==========
+
+To resolve this problem, choose one the of the following options:
+
+1. Select a different mailbox or distribution list as the IMS administrator
+   mailbox using the Internet Mail Wizard.
+
+2. Select the Create/Use the Mailbox Called Administrator option as the IMS
+   administrator mailbox using the Internet Mail Wizard.
+
+3. Recreate the X.400 E-mail address space for the IMS Administrator mailbox and
+   run through the Internet Mail Wizard again.
+
+MORE INFORMATION
+================
+
+For more information on the IMS, please refer to Books Online included with
+Microsoft Exchange Server.
+
+
+Additional query words: 0x00446d8f Msexcimc.exe
+
+======================================================================
+Keywords          : kbsetup kbusage exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

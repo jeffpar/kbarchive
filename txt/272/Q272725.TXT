@@ -1,0 +1,71 @@
+DOCUMENT:Q272725  20-OCT-2001  [win95x]
+TITLE   :BUG: Playing WMF with a Palette into Another WMF Leaks a Palette
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbGDI kbMetafile kbPalettes kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDSGDI
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+ - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Windows Metafile (WMF) is created that contains a palette record, and
+that WMF is playing into another WMF, a palette resource is leaked.
+
+RESOLUTION
+==========
+
+To work around this bug, do not play a WMF that contains a palette into another
+WMF. Instead, for example, play the WMF into a bitmap (DIB) and then put the
+bitmap in the target WMF. Note that this method results in a loss of
+scalability.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce this bug, create a WMF with a SelectPalette call in it. Then play
+that WMF into another WMF DC. A palette resource is leaked even if the WMFs are
+deleted afterwards. The resource is regained when the application exits.
+
+Additional query words: palette selectpalette createpalette LOGPALETTE leak resource system GDI
+
+======================================================================
+Keywords          : kbGDI kbMetafile kbPalettes kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDSGDI 
+Technology        : kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

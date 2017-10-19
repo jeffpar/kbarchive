@@ -1,0 +1,88 @@
+DOCUMENT:Q165606  04-AUG-2001  [visualc]
+TITLE   :PRB: CRecordset::Move(0) Asserts with skipDeletedRecords Option
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,4.2b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbusage kbDatabase kbMFC kbODBC kbVC kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a CRecordset with the skipDeletedRecords option set, it's Move()
+member function asserts if the nRows parameter is 0.
+
+CAUSE
+=====
+
+The reason for this behavior is to prevent the refresh of rows that are deleted
+by other client applications using the same data. Since no scroll direction is
+specified by a Move(0) call, it is not possible to determine which record to
+skip to if the current record was deleted. A Move(0) on a deleted row would have
+an ambiguous outcome. To prevent the possibility of doing a Move() to a deleted
+record, Move(0) is not allowed when the skipDeletedRecords option is set.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code reproduces this:
+
+      CMyRecordset  RSet ;
+      RSet.Open (AFX_DB_USE_DEFAULT_TYPE, NULL,
+         CRecordset::skipDeletedRecords) ;
+      RSet.Move (0) ;
+
+The Move(0) call results in an assertion.
+
+Move(0) refreshes the recordset data for the current row from the open database
+cursor. This is useful in a multi-user environment when the recordset is opened
+using the dyanset or dynamic open types. Other users may change the database
+after the current row has been retrieved. Move(0) refreshes the recordset row
+data so that it reflects the current contents of the database. If it is
+necessary to use Move (0), open the recordset without the skipDeletedRecords
+option.
+
+Another effect of the Move() function is that it switches out of Edit/Add New
+mode. To prevent this from happening, use the CancelUpdate() member function.
+This refreshes the row data from the local cache without hitting the database
+cursor.
+
+Additional query words: kbvc420 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbusage kbDatabase kbMFC kbODBC kbVC kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC420b kbVC500Search
+Version           : winnt:4.2,4.2b,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q86328  10-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: The New Folder Could Not Be Created
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 3.0 of Microsoft Mail for Windows, the following error message may be
+displayed if the maximum number of folders has been reached:
+
+   The New Folder Could Not Be Created
+
+CAUSE
+=====
+
+Several conditions determine the maximum number of folders that can be created,
+but the average is around 5,000. Therefore, it is highly unlikely that this
+error message is being displayed because of the maximum being reached.
+
+The following are two possible causes of this error:
+
+ - The Mail Message File (MMF) is set to read-only.
+
+ - The FOLDROOT.IDX file is marked read-only or, if you are on a Novell network,
+   the FOLDROOT.IDX file is ownerless.
+
+
+Additional query words: 3.00 err msg errmsg alert
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

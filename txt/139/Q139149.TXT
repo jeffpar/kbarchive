@@ -1,0 +1,81 @@
+DOCUMENT:Q139149  16-APR-2000  [powerpt]
+TITLE   :PPT7: Troubleshooting Video Driver UMA Conflicts
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbenv kbgraphic
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your system may stop responding when you open or view a presentation containing
+imported graphics.
+
+CAUSE
+=====
+
+This behavior is caused by the expanded memory manager scanning too aggressively
+and setting up upper memory blocks (UMBs) that conflict with the video adapter.
+
+RESOLUTION
+==========
+
+To troubleshoot this problem, try the following:
+
+1. Open your Config.sys file.
+
+2. Locate the line similar to:
+
+   device=emm386.exe noems
+
+   Add the following to the end of this line:
+
+   "x=a000-c7ff" (without the quotation marks)
+
+   This line should now be similar to:
+
+   device=emm386.exe noems x=a000-c7ff
+
+3. Save the file and restart your computer.
+
+MORE INFORMATION
+================
+
+Windows 95 uses the MS-DOS expanded memory emulation driver, Emm386.exe, to
+provide expanded memory services (EMS) for MS-DOS applications that need it. If
+you load Emm386.exe with an x=<range> parameter, Windows 95 doesn't try to
+put an EMS pageframe in that range of memory addresses.
+
+A standard VGA card requires memory ranges A000-AFFF and B800-BFFF. Some VESA
+Local Bus and PCI cards use the entire range A000-C7FF.
+
+Additional query words: 7.00 97 ppt95 pp7 ppt7 ppt97 multi media diamond ati mach vram multimedia w_powerpt hang freeze lock up
+
+======================================================================
+Keywords          : kbenv kbgraphic 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

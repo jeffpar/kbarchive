@@ -1,0 +1,69 @@
+DOCUMENT:Q132388  11-DEC-1999  [homemm]
+TITLE   :Dogs: Can't Stop Dog Piano Movie After it Starts
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The movie feature of the Dog Piano starts when the mouse cursor is positioned
+over the paw picture above the piano keyboard. Once you start the movie you
+cannot stop it by clicking your mouse.
+
+Note: This also occurs in the following interactivities; "Did You Know?", "What's
+My Line" and "Weird Relatives".
+
+RESOLUTION
+==========
+
+To stop the movie, try one of the following methods:
+
+Method 1
+--------
+
+Move the mouse cursor until it turns into a paw, then press the left mouse
+button.
+
+-or-
+
+Method 2
+--------
+
+Press the ESC (escape) keyboard key.
+
+MORE INFORMATION
+================
+
+The methods used to stop the movie are by design.
+
+Additional query words: continues locks stuck paws movies clips mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDogs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,72 @@
+DOCUMENT:Q104901  04-NOV-1999  [fortran]
+TITLE   :BUG: Anti-Virus TSRs May Prevent Builds from VWB
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Visual Workbench (VWB) may hang during the link phase of a build if any
+active anti-virus protection terminate-and-stay resident (TSR) program is
+enabled.
+
+CAUSE
+=====
+
+Central Point anti-virus (CPAV) and many others provide active anti-virus
+protection that traps all attempts to modify an executable. The program then
+asks the user for confirmation before allowing the modification to proceed, and
+nothing else can happen until the request is either granted or denied. In the
+Visual Workbench, this request is made in a wintee window, and the user has no
+way to answer it if that window is invisible.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation for MS-DOS,
+versions 1.0 and 1.0a.
+
+This is not a problem in FORTRAN PowerStation 32.
+
+RESOLUTION
+==========
+
+The request for confirmation from the anti-virus software can be seen if wintee
+is made visible when the Visual Workbench is started. Add the /v option to the
+command line in the Program Item Properties for the Visual Workbench icon to
+make wintee visible. This also helps in diagnosing other VWB related problems.
+
+Turning off all the active anti-virus protection software when building programs
+is another solution.
+
+Additional query words: 1.00 1.00a MSAV nofpsnt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

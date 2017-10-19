@@ -1,0 +1,89 @@
+DOCUMENT:Q74887  06-NOV-1999  [win16sdk]
+TITLE   :How to Start a Windows-Based App Directly from MS-DOS
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to create a Windows-based application that can be started
+directly from the MS-DOS prompt. For example, the KILLERAP application may be
+written so that when "KILLERAP" (without the quotation marks) is typed at the
+MS-DOS prompt, Windows is loaded and KILLERAP run.
+
+However, some specific programming is required to perform this task. Otherwise,
+enhanced mode Windows will produce a "Memory Segmented" error message. This
+article discusses the techniques required.
+
+MORE INFORMATION
+================
+
+The "Memory Segmented" error message is caused by the fact that the application
+that spawns Windows remains in memory when Windows loads.
+
+There is a straightforward way to work around this complication. Replace the
+standard WINSTUB.EXE program, provided with the Windows Software Development
+Kit, with a custom program tailored to the application.
+
+The following sample WINSTUB program loads the string "win notepad" into the
+keyboard key buffer. Then the program terminates and is removed from memory. The
+keystrokes in the key buffer are played back by the hardware to MS-DOS. This
+starts Windows and runs the program.
+
+This sample code requires Microsoft C version 6.0 or later to compile because it
+uses inline assembly code. A similar program may be written with the Microsoft
+Macro Assembler (MASM) version 5.1 or later.
+
+Sample Code
+-----------
+
+   void main(void)
+   {
+     char szExecLine[] = "win notepad\r";
+     int  iIndex;
+     char cChar;
+
+     for (iIndex = 0; iIndex < sizeof(szExecLine); iIndex++)
+       {
+       cChar = szExecLine[iIndex];
+       _asm
+          {
+          mov        ah, 05h
+          mov        ch, 0
+          mov        cl, cChar
+          int        16h
+          }
+       }
+   }
+
+Additional query words: 3.00 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

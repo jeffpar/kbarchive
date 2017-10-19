@@ -1,0 +1,95 @@
+DOCUMENT:Q168081  10-FEB-2002  [visualc]
+TITLE   :FIX: Wrong Column Jumped to for Macro Syntax Error
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAutomation kbVC500bug kbVC600bug kbVS kbGrpDSTools kbNoUpdatekbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to load a macro that contains a syntax error in Developer
+Studio, an error message similar to the following appears:
+
+   c:\program files\devstudio\sharedide\macros\mymacro.dsm This macro file
+   contained the following error and will be unloaded Line 6: Expected ')' if
+   (ActiveDocument.selection.FindText"CWnd") then Would you like to edit the
+   file?
+
+If you choose to edit the file, the cursor is not placed in the column where the
+error occurred. However, the cursor is placed on the correct row.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. From the Tools menu, select Macro
+
+2. Enter "finder" as the Macro Name (excluding the quotes).
+
+3. Click Edit.
+
+4. In the Add Macro dialog box, click OK.
+
+5. Insert the following code into the body of the finder() subroutine:
+
+      if (ActiveDocument.selection.FindText "CWnd") then
+         msgbox "Found!"
+      end if
+
+   The finder() subroutine should look like this:
+
+      Sub finder()
+      'DESCRIPTION: A description was not provided.
+         if (ActiveDocument.selection.FindText "CWnd") then
+            msgbox "Found!"
+         end if
+         'TODO: Put macro code here
+      End Sub
+
+6. From the macro editor's context menu, select Reload Macro File to reproduce
+   the error message.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbVC500bug kbVC600bug kbVS kbGrpDSTools kbNoUpdate kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,66 @@
+DOCUMENT:Q100943  06-NOV-1999  [win95x]
+TITLE   :Modifying WIN.INI to Print to the Same File Each Time
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you want to always print to the same file in Microsoft Windows or Microsoft
+Windows for Workgroups, you can place an entry for that particular filename in
+the [Ports] section of the WIN.INI file.
+
+MORE INFORMATION
+================
+
+The new entry appears in the Printer Setup dialog box of Windows-based
+applications or in the Connect dialog box of Control Panel. The following is an
+example of the [Ports] section of the WIN.INI file:
+
+      [Ports]
+      ; A line with [filename].PRN followed by an equal sign causes
+      ; [filename] to appear in the Control Panel's Printer Configuration
+      ; box. Printers connected to [filename] direct output to this file.
+      LPT1:=
+      COM1:=2400,n,8,1,x
+      EPT:=
+      FILE:=
+      LPT1.DOS=
+      LPT2.DOS=
+      C:\MY.TXT=
+
+The example above includes the new entry for the filename MY.TXT at the root
+directory of drive C.
+
+Additional query words: 3.10 3.11 every time
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

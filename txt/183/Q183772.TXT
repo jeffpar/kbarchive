@@ -1,0 +1,62 @@
+DOCUMENT:Q183772  08-APR-1999  [exchange]
+TITLE   :XCLN: Unable To Connect To Server With Underscore in Name Using
+PRODUCT :Microsoft Exchange
+PROD/VER:MACINTOSH:4.0,5.0,8.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a computer running Microsoft Exchange Server
+version 5.x using the Microsoft Exchange or Outlook client for Macintosh
+configured with Mac TCP/IP version 2.06, the following error appears if the
+Exchange Server name contains an underscore:
+
+   Microsoft Exchange could not be started. Network problems are preventing
+   connections to Microsoft Exchange Server computer. Contact your system
+   administrator if this condition persists.
+
+CAUSE
+=====
+
+Per article number 16922, "MacTCP 2.0.6: Invalid Domain Name, Syntax Error," in
+Apple's Technical Information Library (TIL) this is a known issue when using Mac
+TCP/Ip 2.06. For more information concerning specific troubleshooting, see the
+TIL at www.apple.com.
+
+WORKAROUND
+==========
+
+Installation of Open Transport version 1.1.1 or higher resolves this issue.
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbOutlookMacSearch kbExchange500Mac kbExchange400Mac kbOutlook800Mac
+Version           : MACINTOSH:4.0,5.0,8.0
+Hardware          : MAC
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

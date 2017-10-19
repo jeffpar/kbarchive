@@ -1,0 +1,85 @@
+DOCUMENT:Q262635  31-JUL-2001  [iis]
+TITLE   :Err: HTTP 403.9 - Access Forbidden: Too Many Users Are Connected
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp4039 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to browse an Internet Information Services (IIS) 5.0 Web site
+that is running on Windows 2000 Professional, the following error message is
+displayed at the top of the browser:
+
+   The page cannot be displayed
+   There are too many people accessing the Web site at this time.
+
+The following error message is also displayed further down in the browser:
+
+   HTTP 403.9 - Access Forbidden: Too many users are connected
+   Internet Information Services
+
+CAUSE
+=====
+
+The error messages occur when more than ten users are attempting to connect to
+IIS 5.0. The version of IIS 5.0 that is included in Windows 2000 Professional is
+limited to ten connections.
+
+RESOLUTION
+==========
+
+If more than ten connections are needed, use the version of IIS 5.0 that is
+included in Windows 2000 Server.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+For additional information about running IIS 5.0 on Windows 2000 Professional,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q262632 PWS Does Not Run on Windows 2000 Professional
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: iis 5 Personal Web Server Peer Services win2kpro w2kpro 4039 403-9 403;9 akz
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp4039 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

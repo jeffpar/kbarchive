@@ -1,0 +1,593 @@
+DOCUMENT:Q243195  06-AUG-2002  [winnt]
+TITLE   :Event ID 1034 for MSCS Shared Disk After Disk Replacement
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbClustServSearch kbClustServ100fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+After you replace a failed hard disk, or change drives (different SCSI ID or
+physical location in a SCSI rack) for the shared disk resource, the Cluster
+service may not start. Also, the following error message may be displayed in the
+Event log:
+
+   Event ID: 1034
+   Source: ClusDisk
+   Description: The disk associated with cluster disk resource
+   <DriveLetter> could not be found. The expected signature of the disk
+   was <DiskSignature>.
+
+CAUSE
+=====
+
+This issue can occur because the Microsoft Cluster Server (MSCS) server relies
+on disk signatures to identify and mount volumes. If a hard disk is replaced or
+the bus is re-enumerated, MSCS may not find the disk signatures that it is
+expecting, and consequently may fail to mount the disk.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+To resolve this issue:
+
+1. Backup the Servers Configuration:
+
+    - Update your Emergency Repair disk (ERD) on each node. To do so, click
+      Start, click Run, type "RDISK" (without the quotation marks), and then
+      click OK.
+
+2. Disable the Cluster Service on both Nodes:
+
+   a. On BOTH nodes change the Startup value to Manual for the following items:
+
+       - Clusdisk (by using the Devices tool in Control Panel)
+       - Cluster Service (by using the Services tool in Control Panel)
+
+NOTE: Do not attempt to stop the Clusdisk resource. If you do, you receive the
+following error message:
+
+   Error 2191: The requested pause or stop is not valid for this service
+
+   b. Restart node 2.
+
+       - At the OS Loader Boot menu, press SPACEBAR to pause the boot process
+         and prevent Windows NT from loading.
+
+      NOTE: This is necessary to maintain termination on the shared SCSI bus on
+      some hardware configurations.
+
+   c. Restart node 1 (and allow it to boot completely).
+
+      NOTE: It is assumed at this point that you have replaced the failed hard
+      disk in the shared resource. It is also assumed that you have followed the
+      necessary steps to configure the hard disk to permit Windows NT to
+      recognize it upon restarting.
+
+3. Configure the New Disk:
+
+   a. Start Disk Administrator (Windisk.exe) on node 1.
+
+   b. Partition the new drive.
+
+   c. Format the partition with the NTFS file system.
+
+   d. Assign a drive letter and label to the partition.
+
+4. Gather Information about your Disks:
+
+   a. Start FTEdit.exe (included in the Microsoft Windows NT or 2000 Resource
+      Kit).
+
+   b. Obtain the disk signature information for all the hard disks.
+
+   c. Document which disk signature belongs to each partition label.
+
+      NOTE: At this point, there are probably 2 disk signatures for the hard disk
+      that you are replacing. For example, if you are replacing disk W:, you see
+      two separate entries in Ftedit for disk W:, each with its own disk
+      signature. One signature is the original disk, the second signature is the
+      new replacement.
+
+For additional information about the Ftedit.exe tool, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q149927 FTedit.exe: What You Can and Can't Use It For
+
+5. Gather Information about your Disk Resources:
+
+   a. Start the Registry Editor (Regedt32.exe).
+
+   b. Open the HKEY_LOCAL_MACHINE hive, and then click on the root
+      (HKEY_LOCAL_MACHINE) to select it.
+
+   c. On the Registry menu, click Load Hive.
+
+   d. Locate the %SystemRoot%\Cluster folder, and then click CLUSDB. When you
+      are prompted for a key name, type "Cluster" (without the quotation marks).
+
+   e. Locate the following registry key:
+
+   HKEY_LOCAL_MACHINE\Cluster\Resources\<GUID>\Parameters\Signature
+
+       - Under each GUID, look for a TYPE value that is Physical Disk. After you
+         identify all the physical disks, verify the Name key. It should have a
+         value of "Disk <DriveLetter>". This is how you can identify which
+         GUID belongs to which physical disk resource.
+
+      NOTE: Each resource is listed by its Globally Unique Identifier (GUID). The
+      GUID has 32 alpha numeric values with the following format:
+      "x11xx1x1-x11x-11x1-xxx1-11111xxx111x".
+
+   f. Document which disk signature belongs to each physical disk resource.
+
+6. Update the Disk information in the Cluster Registry:
+
+   a. Compare the disk signatures for each hard disk that you observed using the
+      FTEdit.exe tool (step 4) with the disk resource signature values in the
+      Cluster registry (step 5).
+
+   b. The disk signature from FTEdit that is not the same as the one listed in
+      the Signature key is the correct new disk signature.
+
+   c. Document the correct disk signature for each disk.
+
+   d. Replace the information in the Signature key in the Cluster registry with
+      the correct disk signature value for the new disk. Make sure to make the
+      changes in Hex.
+
+   e. Locate the following registry key for the disk that is being replaced:
+
+   HKEY_LOCAL_MACHINE\Cluster\Resources\<GUID>\Parameters\DiskInfo
+
+      NOTE: The data type for the DiskInfo key should be REG_BINARY, and should
+      be located directly above the Signatures key that was modified earlier in
+      this article.
+
+   f. Delete the DiskInfo registry key.
+
+      NOTE: Make sure to delete the entire key, and not just the value for the
+      key. This key is dynamically re-created the next time the Cluster service
+      is started.
+
+   g. Select the Cluster hive, then on the Registry menu, click Unload Hive.
+
+7. Remove the Disk Signature Information for the Cluster Disk driver:
+
+   a. Locate and delete the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Clusdisk\Parameters\Signatures
+
+      NOTE: There are several registry keys under the Signatures key. They are
+      disk signatures for drives on the shared resource. This key and all
+      subkeys are re-created the next time the Cluster service bring that disk
+      resource online on that node.
+
+   b. Quit Regedt32.exe.
+
+8. Remove the Duplicate entry in the Disk Key:
+
+   a. Start FTEdit.exe again.
+
+   b. Locate and then click the disk signature for the old disk (determined in
+      step 6).
+
+   c. Click Edit, and then click Delete Drive.
+
+   d. Quit Ftedit.exe, and then click Yes to save changes.
+
+9. Create a Copy of the Cluster Registry:
+
+    - Copy the Clusdb file located in the %SystemRoot%\Cluster folder to a
+      floppy disk.
+
+10. Remove the Cluster Registry on the Quorum drive:
+
+    - Start Windows Explorer, go to the MSCS folder on the quorum drive and
+      delete the Quolog.log file and all the "Chk<xxx>.tmp" files.
+
+      NOTE: The Cluster registry is dynamically re-created on the Quorum drive
+      when the Cluster Service starts.
+
+11. Start the Cluster Service on Node 1:
+
+   a. Change the following Startup values back to:
+
+       - System for Clusdisk (by using the Devices tool in Control Panel)
+       - Automatic for the Cluster Service (by using the Services tool in
+         Control Panel)
+
+   b. Manually start the Clusdisk driver.
+
+   c. Manually start the Cluster service.
+
+IMPORTANT: If the quorum drive is the drive that failed, you may need to start
+the Cluster service by using the -FIXQUORUM switch and temporarily change the
+drive that is the quorum drive.
+
+   d. Verify on node 1 that Clusdisk and the Cluster service started correctly.
+      Start Cluster Administrator and verify that all physical disk resources
+      are online and that there is one for each volume on the shared disk.
+
+12. Boot Node 2:
+
+    - Keep node 1 on, and then start node 2.
+
+      Reminder: Node 2 will fail to join the cluster because the Cluster Service
+      is disabled.
+
+13. Manually Synchronize the Cluster Registries:
+
+    - Replace the %SystemRoot%\Cluster\Clusdb file on node 2 with the Clusdb
+      file that you copied to the floppy from node 1.
+
+      IMPORTANT: After the cluster service starts on node 1, it is impossible to
+      copy this file without stopping the Cluster service and unloading it from
+      the registry.
+
+14. Remove the Disk Signature Information for the Cluster Disk driver on node 2:
+
+    - Locate and delete the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Clusdisk\Parameters\Signatures
+
+15. Remove the Duplicate entry in the Disk Key:
+
+   a. Start FTEdit.exe again.
+
+   b. Locate and then click the disk signature for the old disk (determined in
+      step 6).
+
+   c. Click Edit, and then click Delete Drive.
+
+   d. Quit Ftedit.exe, and then click Yes to save changes.
+
+16. Start the Cluster Service on Node 2:
+
+   a. Change the following Startup values back to:
+
+       - System for Clusdisk (by using the Devices tool in Control Panel)
+       - Automatic for the Cluster service (by using the Services tool in
+         Control Panel)
+
+   b. Manually start the Clusdisk driver.
+
+   c. Manually start the Cluster service.
+
+   d. Verify that node 2 successfully joined the cluster by using Cluster
+      Administrator. Verify that you are able to manually move the new hard disk
+      resource back and forth between the two nodes. To do so, right-click the
+      resource group the disk is in and then click Move Group. This option
+      changes ownership of the resource group and all its contents to the other
+      node.
+
+Perform the Following Steps if the Previous Steps Did Not Resolve the Issue
+---------------------------------------------------------------------------
+
+In the event that the steps listed earlier in this article do not resolve your
+issue, you may have corruption in the Disk key and it may be necessary to delete
+it from the registry. The Disk key is dynamically re-created when Disk
+Administrator is launched for the first time. The following procedure outlines
+the steps you need to perform in addition to the previous steps.
+
+NOTE: This process can take a significant amount of time and should only be used
+if the previous procedure does not resolve your issue.
+
+WARNING: Verify that there is no software fault tolerance on the systems.
+Deleting the Disk key from the registry destroys all software fault-tolerant
+sets, and all data on them is lost! Software fault tolerance includes disk
+mirroring, disk duplexing, stripe sets with parity, and stripe sets without
+parity. Any software fault tolerance on the system is local to the nodes in
+addition software fault tolerance is not supported on cluster shared drives.
+
+1. Backup your Configuration on Both Nodes:
+
+   a. Start Disk Administrator (Windisk.exe), and save a copy of the disk
+      configuration information for disaster recovery. To do so, click
+      Configuration Save in the Partition drop-down list, and then quit Disk
+      Administrator.
+
+   b. Update your Emergency Repair disk (ERD). To do so, click Start, click Run,
+      type "RDISK" (without the quotation marks), and then click OK.
+
+2. Disable the Cluster Service on both Nodes:
+
+   a. On BOTH nodes change the Startup value to Manual for the following items:
+
+       - Clusdisk (by using the Devices tool in Control Panel)
+       - Cluster Service (by using the Services tool in Control Panel)
+
+      NOTE: Do not attempt to stop the Clusdisk resource. If you do, you receive
+      the following error message:
+
+   Error 2191: The requested pause or stop is not valid for this service
+
+   b. Restart node 2:
+
+      At the OS Loader Boot menu, press the SPACEBAR to pause the boot process
+      and prevent Windows NT from loading.
+
+      NOTE: This is necessary to maintain termination on the shared SCSI bus on
+      some hardware configurations).
+
+   c. Restart node 1 (and allow it to boot completely).
+
+NOTE: It is assumed at this point that you have replaced the failed hard disk in
+the shared resource. It is also assumed that you have followed the necessary
+steps to configure the hard disk to permit Windows NT to recognize it upon
+restarting.
+
+3. Label all Partitions:
+
+   a. Start Windows Explorer.
+
+   b. Right-click on the drive and click Properties.
+
+   c. Type the partition drive letter in the Disk Label field under the General
+      tab, and then click OK.
+
+      NOTE: Label all hard disks with their current drive letters. For example,
+      if disk R: is labeled "SQL Data", change the label so that disk R: is
+      labeled "Disk R". This prevents confusion later after deleting the Disk
+      key.
+
+4. Re-create your Disk Configuration:
+
+   a. Start the Registry Editor (Regedt32.exe).
+
+   b. Locate and then delete the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\Disk
+
+   c. Reboot node 1.
+
+   d. Start Disk Administrator. You may receive a warning message that Disk
+      Administrator is being run for the first time on this computer, and this
+      message is expected.
+
+   e. Change all partitions so that their drive letters match their labels.
+
+      NOTE: It may be necessary to restart the computer several times in order to
+      get all the drive letters changed back to the way they were.
+
+   f. Partition and format the new disk and assign the same drive letter to it
+      that the previous (failed) hard disk had.
+
+   g. After all drive letters are correct, quit Disk Administrator.
+
+5. Gather Information about your disks:
+
+   a. Start Ftedit.exe.
+
+   b. Document all of the disk signatures and their corresponding drive letters.
+
+   c. Quit FTEdit.exe.
+
+6. Update the Disk information in the Cluster Registry:
+
+   a. Start the Registry Editor (Regedt32.exe).
+
+   b. Open the HKEY_LOCAL_MACHINE hive, and then click on the root
+      (HKEY_LOCAL_MACHINE) to select it.
+
+   c. On the Registry menu, click Load Hive.
+
+   d. Locate the %SystemRoot%\Cluster folder, and then click CLUSDB. When you
+      are prompted for a key name, type "Cluster" (without the quotation marks).
+
+   e. Locate the following registry key:
+
+   HKEY_LOCAL_MACHINE\Cluster\Resources\<GUID>\Parameters\Signature
+
+       - Under each GUID, look for a TYPE key that has a Physical Disk value.
+         After you identify all the physical disks, verify the Name key. It
+         should have a value of "Disk <DriveLetter>". This is how you can
+         identify which GUID belongs to which physical disk resource.
+
+      NOTE: Each resource is listed by its Globally Unique Identifier (GUID). The
+      GUID has 32 alpha numeric values and will follow this format:
+      x11xx1x1-x11x-11x1-xxx1-11111xxx111x.
+
+   f. Compare the disk signatures for each disk that you observed by using the
+      Ftedit.exe tool with the Signature values in the Cluster registry. When
+      you locate the hard disk that you are replacing, make a note of the old
+      signature value (you will need it later). Replace the disk signature
+      information with the new hard disk's signature that you obtained from
+      Ftedit.exe.
+
+   g. Locate the following registry key for the hard disk that you replaced:
+
+   HKEY_LOCAL_MACHINE\Cluster\Resources\<GUID>\Parameters\DiskInfo
+
+       - The data type for the DiskInfo key is REG_BINARY. This key should be
+         directly above the Parameters key that you modified earlier in this
+         article.
+
+   h. Delete the DiskInfo key. This key is dynamically re-created the next time
+      the cluster service is started.
+
+   i. Select the Cluster hive, then on the Registry menu, click Unload Hive.
+
+7. Remove the Disk Signature Information for the Cluster Disk driver:
+
+   a. Locate and delete the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Clusdisk\Parameters\Signatures
+
+      NOTE: There are several registry keys under the Signatures key. They are
+      disk signatures for drives on the shared resource. This key and all
+      subkeys are re-created the next time the Cluster service bring that disk
+      resource online on that node.
+
+   b. Quit Regedt32.exe.
+
+8. Remove the Cluster Registry on the Quorum drive:
+
+    - Start Windows Explorer, go to the MSCS folder on the quorum drive and
+      delete the Quolog.log file and all the Chk<xxx>.tmp files.
+
+NOTE: The Cluster registry will be dynamically re-created on the Quorum drive
+when the Cluster Service starts. For additional information, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q280353 How to Change Quorum Disk Designation
+
+9. Create a Copy of the Cluster Registry:
+
+    - Copy the Clusdb file located in the %SystemRoot%\Cluster folder to a
+      floppy disk.
+
+10. Start the Cluster Service on Node 1:
+
+   a. Change the following Startup values back to:
+
+       - System for Clusdisk (by using the Devices tool in Control Panel).
+       - Automatic for the Cluster Service (by using the Services tool in
+         Control Panel).
+
+   b. Manually start the Clusdisk driver.
+
+   c. Manually start the Cluster service.
+
+IMPORTANT: If the quorum drive is the drive that failed, you may need to start
+the Cluster service by using the -FIXQUORUM switch and temporarily change the
+drive that is the quorum drive. For additional information, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q280353 How to Change Quorum Disk Designation
+
+   d. Verify on node 1 that Clusdisk and the Cluster service started correctly.
+      Start Cluster Administrator and verify that all physical hard disk
+      resources are online and that there is one for each volume on the shared
+      disk.
+
+11. Boot Node 2:
+
+   a. Restart node 1. At the OS Loader Boot menu, press SPACEBAR.
+
+   b. On node 2, select the OS from Boot Menu and allow it to boot.
+
+12. Re-create your Disk Configuration:
+
+   a. Start the Registry Editor (Regedt32.exe).
+
+   b. locate and then delete the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\Disk
+
+   c. Reboot node 2.
+
+   d. Start Disk Administrator. You may receive a warning message that Disk
+      Administrator is being run for the first time on this computer, and this
+      message is expected.
+
+   e. Change all partitions so that their drive letters match their labels.
+
+      NOTE: It may be necessary to restart the computer several times in order to
+      get all the drive letters changed back to the way they were.
+
+   f. Partition and format the new disk and assign the same drive letter to it
+      that the previous (failed) hard disk had.
+
+   g. After all drive letters are correct, quit Disk Administrator.
+
+13. Manually Synchronize the Cluster Registries:
+
+    - Replace the %SystemRoot%\Cluster\Clusdb file on node 2 with the Clusdb
+      file that you copied to the floppy from node 1.
+
+IMPORTANT: After the cluster service starts on node 1, it is impossible to copy
+this file without stopping the Cluster service and unloading it from the
+registry.
+
+14. Remove the Disk Signature Information for the Cluster Disk driver:
+
+    - Start Regedt32.exe, locate and then delete the following registry key:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Clusdisk\Parameters\Signatures
+
+15. Start the Cluster Service on Node 2:
+
+   a. Change the following Startup values back to:
+
+       - System for Clusdisk (in the Devices tool in Control Panel)
+       - Automatic for the Cluster service (in the Services tool in Control
+         Panel)
+
+   b. Manually start the Clusdisk driver.
+
+   c. Manually start the Cluster service.
+
+IMPORTANT: If the quorum drive is the drive that failed, you may need to start
+the Cluster service by using the -FIXQUORUM switch and temporarily change the
+drive that is the quorum drive. For additional information, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q243195 How to Change Quorum Disk Designation
+
+   d. Verify on node 2 that Clusdisk and the Cluster service started correctly.
+      Start Cluster Administrator and verify that all physical hard disk
+      resources are online and that there is one for each volume on the shared
+      disk.
+
+16. Start Node 1 and allow it to join the Cluster:
+
+   a. Select the OS from Boot Menu and allow node 1 to boot.
+
+   b. Verify that node 1 successfully joined the cluster by using Cluster
+      Administrator. Verify that you can manually move the replaced hard disk
+      resource back and forth between the nodes. To do so, right-click on a
+      resource group and then select the Move Group.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q243195 Event ID 1034 for MSCS Shared Disk After Disk Replacement
+
+   Q171052 Software FT Sets Are Not Supported in Microsoft Cluster Server
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbClustServSearch kbClustServ100fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

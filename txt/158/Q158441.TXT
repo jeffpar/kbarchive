@@ -1,0 +1,108 @@
+DOCUMENT:Q158441  15-SEP-1999  [iis]
+TITLE   :Cannot Connect to Dial-Up Networking Server with Local User List
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:mspwsw95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Personal Web Server versions 1.0, 1.0a for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure Personal Web Server to use a local user list for security,
+users may not be able to connect to the Dial-Up Networking server.
+
+CAUSE
+=====
+
+When a local user list is used for security with Personal Web Server, the
+Dial-Up Networking server may be disabled.
+
+RESOLUTION
+==========
+
+To use both Personal Web Server and the Dial-Up Networking server, configure
+Personal Web Server to use share-level or user-level security. To do this, use
+the appropriate method:
+
+Enable Share-Level Security
+---------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Network.
+
+3. On the Configuration tab, click File And Print Sharing.
+
+4. Click the "I want to be able to give others access to my files" check box to
+   select it.
+
+5. Click the "I want to be able to allow others to print to my printer(s)" check
+   box to select it.
+
+6. Click the Access Control tab, and then click the Share-Level Access Control
+   check box to select it.
+
+7. Click OK until all dialog boxes are closed, and then restart your computer.
+
+Enable User-Level Security
+--------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Network.
+
+3. On the Configuration tab, click File And Print Sharing.
+
+4. Click the "I want to be able to give others access to my files" check box to
+   select it.
+
+5. Click the "I want to be able to allow others to print to my printer(s)" check
+   box to select it.
+
+6. Click the Access Control tab, and then click the User-Level Access Control
+   check box to select it.
+
+   NOTE: If you use user-level access control you must also type the name of the
+   Windows NT domain, Windows NT-based computer, or Novell NetWare server used
+   to provide pass-through validation in the "Obtain list of users and groups
+   from" box.
+
+7. Click OK until all dialog boxes are closed, and then restart your computer.
+
+MORE INFORMATION
+================
+
+When the behavior described in this article occurs, you can choose from the list
+of users entered in the local user list in Dial-Up Networking. However, when a
+user dials into the Dial-Up Networking server, the server answers but does not
+establish a connection.
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          : mspwsw95 
+Technology        : kbPersWebServSearch kbZNotKeyword3 kbPersWebServ100Win95 kbPersWebServ100aWin95
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

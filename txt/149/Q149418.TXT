@@ -1,0 +1,102 @@
+DOCUMENT:Q149418  12-JAN-2001  [win95x]
+TITLE   :Problems with HP "Fonts for the Family" Font Package
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Hewlett-Packard (HP) included a TrueType font package called "Fonts for the
+Family" with some HP printers. Several of the fonts in this package have proved
+to be incompatible with Microsoft Windows 95 or Windows 98. When you are using
+these incompatible fonts in any program in Windows 95/98, your computer may stop
+responding (hang). When this occurs, pressing CTRL+ALT+DELETE has no effect. You
+must shut down and restart your computer.
+
+MORE INFORMATION
+================
+
+The following fonts have been confirmed by HP to be incompatible with Windows
+95/98:
+
+ - Artistik
+
+ - Ashley Inline
+
+ - Boxed In
+
+ - Broadway
+
+ - Creepy
+
+ - Challenge Extrabold
+
+ - Eclipse
+
+ - Gallia
+
+ - Stencil Sans
+
+ - Harlow
+
+ - Holidays
+
+ - Kidprint
+
+ - Old English
+
+ - Party
+
+ - ITC Pioneer
+
+ - Snowdrift
+
+ - Thunderbird
+
+ - Torino Outline
+
+ - Traffic
+
+ - Yearbook Outline
+
+
+Fonts for the Family was included with the HP DeskJet 600 and 600c printers, but
+has been discontinued by Hewlett-Packard. For additional information, please
+contact Hewlett-Packard Technical Support.
+
+Fonts for the Family is manufactured by Hewlett-Packard, a manufacturer
+independent of Microsoft. We make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q67017  10-DEC-1999  [win95x]
+TITLE   :Fontware Installation Kit Did Not Complete All Phases
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you make fonts with the Bitstream Fontware Installation Kit, not all the
+phases may be completed.
+
+You may have run out of memory. Check the Fontware error log for this "make
+fonts" session to see if this is the case. If it is, you may have memory
+resident programs or device drivers loaded in your system that can be removed
+temporarily. Make backup copies of your CONFIG.SYS and AUTOEXEC.BAT files; edit
+the original files, increase the amount of free memory, and reboot the computer
+under this new configuration.
+
+MORE INFORMATION
+================
+
+A Bitstream Fontware Installation Kit is available through a fulfillment coupon
+included with the retail version of Microsoft PowerPoint for Windows. This
+starter kit will install fonts for Windows applications only; however, the kit
+can be merged with other starter kits to provide support for multiple
+applications.
+
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

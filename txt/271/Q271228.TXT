@@ -1,0 +1,182 @@
+DOCUMENT:Q271228  19-JUL-2001  [iis]
+TITLE   :IIS 5.0: Can't Get Data from Access Database on Netware 5 Server
+PRODUCT :Internet Information Server
+PROD/VER::2.0,2000,2000, Service Release 1 (SR-1),4.0,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft OLE DB Provider for Jet, version 4.0 
+ - Microsoft Access 2.0 
+ - Microsoft Access 2000 Service Release 1 (SR-1) 
+ - Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An Access database exists on a Netware 5 Server volume that is running only the
+TCP/IP protocol. When you use either Open Database Connectivity (ODBC) or OLE
+Provider for Jet, a error message appears that states that the file cannot be
+found. There are no errors in the event logs and the ODBC connection tests
+successfully.
+
+If you are using ODBC for access, the error message is:
+
+   Microsoft OLE DB Provider for ODBC Drivers error '80004005'
+
+   [Microsoft][ODBC Microsoft Access Driver] '(unknown)' is not a valid path.
+   Make sure that the path name is spelled correctly and that you are connected
+   to the server on which the file resides.
+
+If you are using OLE DB Provider for Jet, the error message is:
+
+   Microsoft JET Database Engine error '80004005'
+
+   'UNC Path Name will be here' is not a valid path. Make sure that the path name
+   is spelled correctly and that you are connected to the server on which the
+   file resides.
+
+CAUSE
+=====
+
+For access to be granted to the Netware File System, credentials must be passed
+that have the appropriate rights to the databases you are attempting to access.
+By default, the IIS server attempts to pass credentials for the
+IUSER_MachineName account.
+
+NOTE: The IWAM_Machine Name account is the account that appears as though it is
+being used by IIS 5.0 sites that are being run out-of-process. However, the
+IWAM_Machine Name account impersonates the IUSER_Machine Name account.
+Therefore, the IUSER account is the only account you are concerned with in this
+solution.
+
+Netware uses the Netware Directory Service to authenticate users to its servers.
+In order to access any file systems, a legitimate account for the credentials
+being passed must exist on the Netware server.
+
+RESOLUTION
+==========
+
+To properly communicate with Microsoft Access Databases on a Netware 5 server
+running only TCP/IP, please follow these steps exactly:
+
+1. On the IIS server that you want have communicate with Access, install Novell
+   Netware Client for Windows NT (Required). During setup, choose a Custom
+   Installation, choose to install into a NDS system, and then choose only ip
+   for the protocol.
+
+   IMPORTANT NOTE: Do not install Workstation Manager.
+
+2. On the Microsoft Windows 2000 IIS computer:
+
+   a. Under Administrative Tools, open the Computer Management Snap-in.
+
+   b. Under Local Users, select the IUSER_Machine Name account. Right-click and
+      choose Set Password.
+
+   c. Change the password, save it, and then close the MMC.
+
+3. In the Internet Services Manager, do the following:
+
+   a. Right-click the server name (for example, MYWEB01) under Internet
+      Information Services.
+
+   b. Click the Edit button next to WWW to open the master properties.
+
+   c. On the Directory Security tab, click the Edit button next to Anonymous and
+      Authentication methods.
+
+   d. On the Authentication Methods tab, click Edit under the Anonymous section
+      to open the Anonymous User properties.
+
+   e. Click to uncheck the option for IIS to control the password, and then
+      enter the password that you changed in step 2.
+
+4. Create the ODBC System DSN by using the Microsoft Access Database driver:
+
+    - Under Database, click Select, and then enter the path using Universal
+      Naming Convention (UNC) in the database name field to give the DSN a Name.
+
+   -or-
+
+    - Add a OLE DB Provider for Jet Connection String to the asp page that is
+      failing. An example of a Access Connection String is:
+
+   set conn = server.CreateObject("ADODB.Connection")
+   conn.open "Provider=Microsoft.Jet.OLEDB.4.0;Data Source='UNC Path to Netware 5 Goes Here';Persist Security Info=False"
+
+ - Open the Netware Administrator found on the sys: volume under Public\WIN32
+   folder of the Netware 5 server. In the root of the container at which the
+   server exists, create a IUSR_Machine Name account identical to the one that
+   is on the NT Server. On the properties of that user, click Password
+   Restrictions, and choose to have Require password checked. Click the Set
+   Password button, and then set the password to that of the NT account.
+
+   IMPORTANT NOTE: Do not require passwords to be changed on the Netware system.
+   This is the most crucial step to the entire process.
+
+5. In Netware Administrator, under the newly created IUSR properties, choose the
+   Rights to files and directories tab, and then add the appropriate rights to
+   the database files that need to accessed. At the least, READ permissions need
+   to be given, unless changes are made through the Internet that require all
+   permissions except supervisor and access control.
+
+
+   Test your application and you should see the data that you are attempting to
+   access.
+
+WORKAROUND
+==========
+
+If the preceding resolution is not satisfactory, a workaround can be produced
+that is typically used in older Netware versions. By using GSNW, a connection to
+the Netware 5 server could be established using the IPX/SPX protocol. However,
+please note that this requires that IPX be added to the Netware 5 Server as well
+as the NT Server.
+
+
+For installation instructions for the GSNW, please refer to the Windows 2000
+End-User Manual.
+
+MORE INFORMATION
+================
+
+For additional information regarding these procedures using IIS 4.0, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q271228 Unable to Extract Data from Access Database on Netware 5 Server -
+   Error Message: File Not Found
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: iis 80004005
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbAudDeveloper kbAccessSearch kbAccess200 kbAccess2000 kbAccess97 kbiis500 kbAccess2000Search kbOLEDBSearch kbAccess97Search kbAccess2000SR1 kbOLEDBProvJet400 kbOLEDBProvSearch
+Version           : :2.0,2000,2000, Service Release 1 (SR-1),4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q234760  17-JUL-1999  [winnt]
+TITLE   :Cannot Telnet into a Sun Solaris or HP-UX Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, used with:
+    - Microsoft Windows NT Services for UNIX Add-On Pack 
+ - Microsoft Windows NT Workstation version 4.0, used with:
+    - Microsoft Windows NT Services for UNIX Add-On Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to Telnet to a Sun Solaris or Hewlett-Packard HP-UX server
+using the Microsoft Services for Unix console client with the preferred terminal
+type configured as VTNT, you are unable to initiate a communication session
+between the client and host computers.
+
+CAUSE
+=====
+
+The problem occurs during the negotiation of the terminal type between the
+Telnet client and the Solaris or HP-UX server. Both Solaris and HP-UX accept the
+VTNT terminal type, but cannot send VTNT information back to the client during
+the negotiation phase, which results in an incomplete connection attempt.
+
+RESOLUTION
+==========
+
+In resolve this problem, set the preferred terminal type on the Telnet client to
+either ANSI or VT100.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT Services
+for Unix Add-On Pack.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

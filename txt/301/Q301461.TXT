@@ -1,0 +1,56 @@
+DOCUMENT:Q301461  21-AUG-2001  [msnetwork]
+TITLE   :Ad Rotator Does Not Connect Through a Proxy
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Ad Rotator in the bottom left hand corner of the screen does not link you to
+the correct site.
+
+CAUSE
+=====
+
+This happens when you access the Internet through a broadband connection. The Ad
+Server uses the IP address of the proxy server, so you see the last
+advertisement sent through the proxy server, which is usually different.
+
+RESOLUTION
+==========
+
+This issue only affects those users who access the Internet through a proxy
+server. This is a known issue and there is no resolution at the present time.
+
+Additional query words: kbimu, MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

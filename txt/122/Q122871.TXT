@@ -1,0 +1,59 @@
+DOCUMENT:Q122871  17-DEC-2000  [win95x]
+TITLE   :Unable to Bind Network Services to Protocols
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Network Services are not available options on the Bindings sheet of network
+protocol properties. For example, when you click the Bindings tab in the
+properties for Microsoft NetBEUI protocol, there is no option for file and print
+sharing for Microsoft Networks (VSERVER). Or, when you click the Bindings tab in
+the properties for IPX/SPX-compatible protocol for Windows, there is no option
+for file and print sharing for NetWare Networks (NWSERVER).
+
+CAUSE
+=====
+
+In Windows 95, Network Services are dependent on, and bind to, the network
+redirector, not a protocol. This is necessary to enable the Plug and Play
+features of Windows 95.
+
+RESOLUTION
+==========
+
+To run Network Services on a network protocol, bind the protocol to the Network
+client that you want to use.
+
+Additional query words: vserver nwserver server w95cn
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

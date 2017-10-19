@@ -1,0 +1,78 @@
+DOCUMENT:Q104559  08-AUG-2001  [winnt]
+TITLE   :Attachmate Extra Card not Supported in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to attach to an IBM mainframe from a VDM under Windows NT using
+Attachmate Extra for MS-DOS v2.23, you receive the following error message and
+are returned to the COMMAND prompt:
+
+   Configuration Error
+   Error Detected
+   Press any Key to continue
+
+When you try to attach to an IBM mainframe from Windows NT using Attachmate Extra
+for Windows v3.3, 3.4 or 3.5, you receive the following error message:
+
+   Cannot connect to mainframe.
+   Try again with more memory.
+
+   NTVDM CPU has encountered an illegal instruction
+   CS:007a IP:0058 OP:f0 53 ff 00
+   Choose CLOSE to terminate application.
+
+CAUSE
+=====
+
+There are no Windows NT drivers for the Attachmate Extra card at this time.
+
+RESOLUTION
+==========
+
+There is no resolution at this time. To be notified as soon as drivers are
+available, please call Attachmate technical support at (425) 644-4010.
+
+Steps to work around this problem:
+
+There are Windows NT network drivers for the NetBIOS and TCP/IP Connections. For
+more information, query on the following words in the Microsoft Knowledge Base:
+
+   Windows NT and dlc and attachmate
+
+
+Additional query words: prodnt Coax 3270
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

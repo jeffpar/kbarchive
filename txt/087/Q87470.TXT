@@ -1,0 +1,55 @@
+DOCUMENT:Q87470  09-NOV-1999  [macmail]
+TITLE   :Mac Srv: Version 3.0 Enhancements from Version 3.1 Servers
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.1 of Microsoft Mail for AppleTalk Networks server software allows
+version 3.0 workstations to access regular mail services. When a version 3.0
+client accesses a version 3.1 server, certain resources that are offered by the
+server become available to the client. Most of these differences are aesthetic;
+however, a few are functional. The enhancements available to a version 3.0
+client are listed below.
+
+ - New icons appear in the message summary screen, the Personal Group window,
+   and the Preferences window. These icons are in black and white, where the
+   version 3.1 client shows the same icons in color.
+
+ - The message summary screen can be resized.
+
+ - During the creation of a new folder, the option to store date on the local
+   workstation is viewable but not available.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

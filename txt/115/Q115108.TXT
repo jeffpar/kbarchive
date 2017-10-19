@@ -1,0 +1,74 @@
+DOCUMENT:Q115108  10-FEB-2000  [foxpro]
+TITLE   :Cursor Name Must Be Alias, Not .DBF Name
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following commands will cause a syntax error:
+
+      CREATE CURSOR 'new cursor' (name c(20))
+      SELECT * FROM tutorial\customer INTO CURSOR 'new cursor'
+
+CAUSE
+=====
+
+The cursor name specified is a valid .DBF name for FoxPro for Macintosh, but is
+not a valid alias name. The cursor name must be a valid alias name.
+
+The documentation for the CREATE CURSOR command on page 282 in the "Language
+Reference" and in the online Help file shows the following syntax:
+
+      CREATE CURSOR <dbf_name>
+
+This syntax is incorrect. It should say "<alias_name>" instead of
+"<dbf_name>". The SELECT - SQL command does not specify whether a .DBF or
+alias name must be used when the output is selected into a cursor. If the query
+is directed into a cursor, a valid alias name must be used. If the query is
+directed into a table, a valid table name must be used. Selecting into a table
+instead of a cursor allows the use of spaces within a table name.
+
+RESOLUTION
+==========
+
+To avoid this problem, do the following:
+
+ - Use a valid alias name. A valid alias name can contain up to 10 letters,
+   digits, or underscores, and must begin with a letter or an underscore.
+
+ - If the output filename must contain spaces, use the CREATE TABLE or SELECT
+   ... INTO TABLE commands.
+
+Additional query words: VFoxMac FoxMac docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

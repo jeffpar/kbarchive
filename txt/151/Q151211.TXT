@@ -1,0 +1,94 @@
+DOCUMENT:Q151211  09-AUG-2001  [winnt]
+TITLE   :Nested Batch Files in Logon Script Hangs at Execution
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51 WFW:3.11 Win95
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A DOS window appears on a client computer and shows the logon script executing.
+The logon script finishes, but the Windows NT logon script (in Windows 95) or
+the Lan Manager logon script (in Windows for Workgroups) dialog box appears and
+displays the following message:
+
+   Please wait while your logon script executes...
+
+The client computer stops responding until you click Cancel.
+
+CAUSE
+=====
+
+The Windows NT logon script contains a nested batch file and the current
+directory is changed in the nested batch file as shown in the following logon
+script example. Assume Test1.bat and test2.bat are located in the
+Repl\Imports\Scripts directory and Gandalf is a Windows NT Server 3.51 Primary
+Domain Controller (PDC) with no service packs installed.
+
+The logon script contains only one line:
+
+   test1.bat
+
+Test1.bat contains the following lines:
+
+NET USE K: \\Gandalf\Netlogon k:\test2.bat
+
+Test2.bat contains the following lines:
+
+   net use P: \\Gandalf\Sms_shr
+   net use y: \\Gandalf\Sms_pkgd
+   P:
+   CD\            <---- line causing the logon script dialog box to hang
+                  until you click Cancel
+
+   COPY CL_Dos.txt C:\Temp
+
+WORKAROUND
+==========
+
+To work around this problem, change the nested batch file code for Test2.bat so
+that it avoids using the Change Directory (Cd) command:
+
+   net use P: \\Gandalf\Sms_shr
+   net use y: \\Gandalf\Sms_pkgd
+   COPY p:\CL_Dos.txt C:\Temp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt login scripts nested batch file logon scripts
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW311
+Version           : WinNT:3.5,3.51 WFW:3.11 Win95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

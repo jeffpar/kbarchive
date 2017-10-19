@@ -1,0 +1,71 @@
+DOCUMENT:Q142056  07-SEP-2001  [winnt]
+TITLE   :Slow Performance with FPNW and More than 60 Printers
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft File and Print Services for NetWare version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you add more than 60 printers using Print Manager on a Windows NT Server
+running File and Print Services for NetWare (FPNW), server performance quickly
+degrades. Performance Monitor shows processor utilization at a constant 100%,
+while the user mode service portion of FPNW (NWSSVC.EXE) and the Windows NT
+spooler (SPOOLSS.EXE) shows between 45% and 55% of the processor utilization.
+Acceptable performance levels are returned if the number of printers defined is
+reduced to 60 or less.
+
+CAUSE
+=====
+
+The FPNW printing component does not scale well to large numbers of printers
+(greater than 60) due to its current program design.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Windows NT Server version 4.0.
+
+The program design for the FPNW printing component has been changed for the next
+release of Windows NT, removing the scaling problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in Windows NT Server version 4.0.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

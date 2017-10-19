@@ -1,0 +1,78 @@
+DOCUMENT:Q85253  05-NOV-1999  [win95x]
+TITLE   :Radius Video Driver May Cause Incorrect Line Wrapping
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using a Radius Full Page Pivot monitor with a Radius MultiView SVGA
+video adapter, your output may have incorrect line wrapping when printing
+TrueType fonts.
+
+RESOLUTION
+==========
+
+To correct this problem, you need to update your Radius video drivers. Contact
+Radius for driver information.
+
+NOTE: This problem only occurs with TrueType fonts, so a temporary workaround is
+to use non-TrueType fonts.
+
+MORE INFORMATION
+================
+
+When TrueType text is formatted in Write (or another word processor) and extends
+to the end of a line so that the last word wraps to the next line, the text may
+print incorrectly. The last word may appear at the beginning of the line,
+overwriting the first word.
+
+For example, if your screen displayed the text below in Example A, the text would
+print as in Example B.
+
+Example A
+---------
+
+   This is a test of word
+   wrapping.
+
+Example B
+---------
+
+   wrapping a test of word wrapping.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.1 3.11 3.10 video display True Type TT wordwrap
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

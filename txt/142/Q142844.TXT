@@ -1,0 +1,41 @@
+DOCUMENT:Q142844  02-JAN-2000  [iis]
+TITLE   :Location of Stored Favorite Web Pages in Internet Explorer
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+The hot list links saved by Internet Explorer are stored in a file named
+HOTLIST.HTM. This file is an actual html file and can be edited or opened
+by Internet Explorer. The HOTLIST.HTM file can be found in the Windows NT
+&SYSTEMROOT% directory. For example, "C:\WINNT\HOTLIST.HTM".
+
+Additional query words: prodiis1 hotlist favorites history
+
+======================================================================
+Keywords          : kbnetwork kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

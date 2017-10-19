@@ -1,0 +1,64 @@
+DOCUMENT:Q280814  18-JUN-2001  [sms]
+TITLE   :SMS: SMS_LOGON_DISCOVERY_AGENT Does Not Start on Windows 2000
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbSecurity kbsms200 kbDiscovery
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SMS_LOGON_DISCOVERY_AGENT does not start on a Microsoft Windows 2000-based
+domain controller if the default domain controller policy is disabled and
+replaced by a different policy.
+
+Although the service is installed, it cannot be started. The Nt_logon.log file
+contains an entry that indicates that the service did not start because of error
+1069. Manually trying to start the service from Control Panel does not work.
+
+CAUSE
+=====
+
+SMS_NT_LOGON_SERVER_MANGER, which is responsible for the
+SMS_LOGON_DISCOVERY_AGENT service installation, creates the SMS Remote Service
+account (SMSLogonSvc) and attempts to add the "Logon on as a service" user right
+for the account only to the domain controller's default policy object. However,
+in this case, this is not the active policy. Therefore, the account lacks the
+appropriate rights and cannot log on.
+
+WORKAROUND
+==========
+
+To work around this issue, manually add the "Logon on as a service" user right
+to the domain controller's currently active policy.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbSecurity kbsms200 kbDiscovery 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

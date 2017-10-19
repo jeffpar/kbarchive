@@ -1,0 +1,115 @@
+DOCUMENT:Q243444  07-MAY-2001  [visualc]
+TITLE   :BUG: <CSTDLIB> Does Not Define the Namespace "STD"
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC600bug kbDSupport kbGrpDSVCCompilerkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to reference a function from the STD C++ library header
+<cstdlib> using the namespace STD (for example, std::exit(0)) causes the
+compiler to emit a C2653 or a C2039 (depending upon whether or not namespace
+"STD" is defined at the point where the error is emitted).
+
+CAUSE
+=====
+
+<cstdlib> does not define the namespace "STD". This is contrary to the
+VC++ documentation, which says:
+
+   "Include the standard header <cstdlib> to effectively include the
+   standard header <stdlib.h> within the std namespace."
+
+RESOLUTION
+==========
+
+To work around the problem, place the "#include <cstdlib>" in the
+namespace "STD".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Attempting to compile the following will cause the compiler to display the
+following error:
+
+   "error C2653: 'std' : is not a class or namespace name"
+
+   // Compile Options:  /GX
+   #include <cstdlib>
+
+   void main()
+   {
+        std::exit(0);
+   }
+
+However, attempting to compile the following causes the compiler to display the
+following error:
+
+   "error C2039: 'exit' : is not a member of 'std'"
+
+   // Compile Options:  /GX
+   #include <vector>
+   #include <cstdlib>
+
+   void main()
+   {
+        std::exit(0);
+   }
+
+In the first case, the C2653 is displayed, because the namespace "STD" has not
+been defined. In the second case, the C2039 is displayed, because the namespace
+"STD" has been defined (in the header <vector>), but the function exit is
+not part of that namespace. To work around the problem in either case, simply
+enclose the "#include <cstdlib>" in the namespace "STD", as follows:
+
+   // Compile Options:  /GX
+   namespace std {
+   #include <cstdlib>
+   };
+
+   void main()
+   {
+        std::exit(0);
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC600bug kbDSupport kbGrpDSVCCompiler kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

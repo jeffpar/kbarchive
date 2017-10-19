@@ -1,0 +1,84 @@
+DOCUMENT:Q131958  08-AUG-2001  [winnt]
+TITLE   :Access Denied for Account Operators in User Manager for Domains
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.11,3.5,3.51,4.0,95
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on as an Account Operator using User Manager for Domains on a
+computer running Windows 3.1, Windows for Workgroups 3.11 or Windows 95 the
+following message appears when you attempt to create or change the password of
+any user in the Windows NT domain:
+
+   Administrative Password Verification
+
+   The operation you have initiated requires an
+   administrative password for the server listed
+   below. Please enter that password now.
+
+   Server Name: <Servername>
+   Password: <Enter password>
+
+After you enter the administrative password for the server, the following error
+message appears:
+
+   Access is denied.
+
+CAUSE
+=====
+
+This problem occurs when the user's password restriction of Minimum Password Age
+is set to Allow Changes in x Days, where x represents any number of days (limit
+of 999). By default, the Minimum Password Age for any user is set to Allow
+Changes Immediately.
+
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Log on as one of the Windows NT domain administrators.
+
+2. In User Manager for Domains, select the user.
+
+3. From the Policies menu, choose Account.
+
+4. For Minimum Password Age, choose Allow Changes Immediately.
+
+
+Additional query words: prodnt wfw wfwg srvtools usrmgr win95 win95x
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW311
+Version           : :3.11,3.5,3.51,4.0,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

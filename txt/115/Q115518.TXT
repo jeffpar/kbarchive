@@ -1,0 +1,73 @@
+DOCUMENT:Q115518  20-NOV-1999  [pcmail]
+TITLE   :FFAPI: Memory Usage for MS-DOS Get and Put Executable Files
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::2.1,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to FFAPI, versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail File Format Application Programming Interface (FFAPI) runs in
+conventional memory. Since MS-DOS and network drivers also run in the same
+memory, sometimes you may not be able to load or run FFAPI.
+
+FFAPI loads the following files into memory:
+
+   GLB\NETWORK.GLB
+   XTN\*.XTN
+   GLB\GROUP.GLB
+   GLB\ACCESS2.GLB
+
+As more postoffice users are added, memory available to process messages
+decreases.
+
+MORE INFORMATION
+================
+
+Approximate memory usage breakdown:
+
+1. Locally defined users take 35 bytes each.
+
+2. Locally defined groups take 31 bytes each.
+
+3. Each local user defined as a remote call requesters take an additional 36
+   bytes each.
+
+4. Any gateway access component takes 90 bytes each.
+
+5. Directly defined and indirectly defined postoffices each take 100.5 bytes.
+
+6. Any of those defined postoffices that are connected by Modem or X.25 take an
+   additional 48.6 bytes.
+
+
+Additional query words: 2.10 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFFAPI300 kbMailGateFFAPI210
+Version           : :2.1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

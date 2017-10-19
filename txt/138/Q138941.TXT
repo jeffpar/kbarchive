@@ -1,0 +1,57 @@
+DOCUMENT:Q138941  23-JUL-1999  [win95x]
+TITLE   :Microsoft Plus! Incorrectly Allows Setup to Network Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Plus! Setup, or add a Microsoft Plus! component, on a
+computer with mapped network drives, the network drives are available for
+installing Microsoft Plus! components. However, installing Microsoft Plus! over
+a network or to an existing mapped network drive is not a supported option.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! for Windows 95,
+version 1.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Many of the Microsoft Plus! components are dependent on the computer's physical
+working directory. These components include Dial-Up Networking Server, The
+Microsoft Network version 1.05, and Compression Agent.
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

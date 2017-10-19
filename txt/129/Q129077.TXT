@@ -1,0 +1,109 @@
+DOCUMENT:Q129077  12-FEB-2000  [foxpro]
+TITLE   :How to Use the NODATA and NOREQUERY Clauses of USE
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The NOQUERY and NODATA clauses of the USE command are used with local and remote
+views. A view is an updatable set of records that is stored in a database. Once
+a view is created, you can open it with the USE command. This article provides
+an example that illustrates the use of the NODATA and NOQUERY clauses.
+
+MORE INFORMATION
+================
+
+The NOQUERY and NODATA clauses allow you to open a query without [ downloading
+the data. They can be useful when you have a large set of records, and you want
+to verify the structure of the result set before you download the data. The
+NOREQUERY clause is used in conjunction with the USE <view> AGAIN command.
+It prevents FoxPro from re-querying the data if you open the view in another
+work area. Use the REQUERY() function when you need to retrieve the data.
+
+The following example illustrates how to use the NODATA and NOREQUERY clauses on
+a local view. A parameterized view is created with the CREATE SQL VIEW command
+and opened with a USE...NODATA command. No records are displayed. Then the same
+view is opened in another work area with the USE.. AGAIN NOREQUERY command. Note
+that it is not updated until the REQUERY() function is executed. To run this
+example, copy and paste the following code into a program file, and then run
+it.
+
+      LOCAL nViews, cCity
+
+      OPEN DATA SYS(2004) + 'samples\data\testdata'
+      * Creates an array that holds the names of all the views in the database
+      nViews = ADBOBJECTS(a_View, 'VIEW')
+      IF nViews > 0
+         IF ASCAN(a_View, 'COMPANY_VIEW') > 0
+            DELETE VIEW Company_view
+         ENDIF
+      ENDIF
+
+      cCity = 'London'
+      CREATE SQL VIEW Company_view AS ;
+         SELECT cust_id, company, city ;
+         FROM customer ;
+         WHERE city = ?cCity
+
+      IF USED('Company_view')
+         USE IN Company_view
+      ENDIF
+
+      * Open the view without downloading the data:
+      SELECT 0
+      USE Company_view NODATA
+      BROWSE NOWAIT
+      =MESSAGEBOX(IIF(RECCOUNT() = 0, 'No data yet.', 'Now we have data'))
+
+      * Download the data:
+      ?REQUERY()
+      SHOW WINDOW Company_View REFRESH
+      =MESSAGEBOX(IIF(RECCOUNT() = 0, 'No data yet.', 'Now we have data'))
+
+      * Modify the value of the parameter:
+      cCity="Paris"
+      SELECT 0
+      USE Company_view AGAIN NOREQUERY
+      BROWSE NOWAIT
+      =MESSAGEBOX("City is "+cCity+chr(13)+"Query is not updated")
+      ?REQUERY()
+      =MESSAGEBOX("City is "+cCity+chr(13)+"Query is updated")
+
+REFERENCES
+==========
+
+Visual FoxPro for Windows "Developer's Guide," version 3.0, Chapter 8, "Creating
+Multi-Table Views."
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,81 @@
+DOCUMENT:Q143298  08-FEB-2000  [foxpro]
+TITLE   :How to Use Indirect Referencing of Objects Creatively
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro allows indirect referencing of objects with THIS, THISFORM,
+THISFORMSET, and object.PARENT. With a little code, you can expand this list to
+include THISPAGEFRAME and THISPAGE. The example in this article will not work
+with the Init event of an object, however it can be used elsewhere.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Create a new form, and place a pageframe on the form.
+
+2. Add the following code to the Page1.Activate event:
+
+       ********* Begin Page1.Activate *********
+       PUBLIC THISPAGEFRAME, THISPAGE
+       THISPAGEFRAME=THIS.PARENT
+       THISPAGE=THIS
+       ********* End Page1.Activate ***********
+
+3. Add the following code to the Page1.Deactivate event:
+
+       ********* Begin Page1.Deactivate *********
+       RELEASE THISPAGEFRAME, THISPAGE
+       ********* End Page1.Deactivate
+
+4. Repeat steps 2 and 3 for Page2 using the exact same code.
+
+5. Add a command button to Page1, and place the following code in the Click
+   event for the command button:
+
+      *********** Begin CommandButton.Click ***************
+      THISPAGE.Caption="Visual FoxPro"
+      *********** End CommandButton.Click *****************
+
+6. Run the form. Click the command button. Note the Caption of page1 changes to
+   Visual FoxPro.
+
+   NOTE: The INIT event of the objects would not recognize THISPAGEFRAME and
+   THISPAGE.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

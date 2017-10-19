@@ -1,0 +1,67 @@
+DOCUMENT:Q111018  13-JUN-2001  [winmisc]
+TITLE   :Adding the Proof Menu Item to the Excel 5.0 Menu Bar
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows Sound System Setup does not add a Proof menu to the Excel 5.0 for
+Windows menu bar.
+
+RESOLUTION
+==========
+
+To add a Proof menu, do the following:
+
+1. Verify that the PROOF.XLA file is in the EXCEL\LIBRARY directory. This file
+   is added by Windows Sound System Setup.
+
+2. Run Excel 5.0.
+
+3. From the Tools menu, choose Add-Ins.
+
+4. In the Add-Ins dialog box, choose the Browse button.
+
+5. Double-click the LIBRARY directory.
+
+6. The file PROOF.XLA appears in the filenames list box on the left. Select the
+   file and choose OK.
+
+7. If the message "Replace existing 'PROOF.XLA'?" appears, choose Yes.
+
+8. Choose OK in the Add-Ins dialog box to close it.
+
+After a short period of time, the Excel menu bar will redraw and add a Proof
+menu.
+
+Additional query words: 2.00 2 1 1a 5 proofreader read reader install xl5
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

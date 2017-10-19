@@ -1,0 +1,89 @@
+DOCUMENT:Q92732  26-JUN-2001  [utilities]
+TITLE   :FIX: System Errors or Crash Debugging Large App in CodeView
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS 
+ - Microsoft CodeView for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When debugging a very large application with versions 4.0, 4.01, or 4.05 of the
+Microsoft CodeView debugger, stepping into, tracing into, or running an
+application can cause various errors which can cause the system to hang. The
+exact error depends on the environment in which CodeView is running.
+
+CAUSE
+=====
+
+CodeView versions 4.0, 4.01, and 4.05 do not determine the amount of available
+memory before loading an application.
+
+RESOLUTION
+==========
+
+Verify that memory is available through DPMI, XMS, or VCPI to load the CodeView
+application and the symbolic information for the application being debugged into
+extended memory. A minimum of 2048K extended memory is required.
+
+Remove any unnecessary device drivers or memory-resident applications to increase
+the amount of available conventional memory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in CodeView versions 4.0, 4.01, and
+4.05. This problem was corrected in CodeView version 4.1.
+
+MORE INFORMATION
+================
+
+When CodeView is running in an MS-DOS window in the Microsoft Windows
+environment, stepping into the application may generate the following error
+message:
+
+   This application has violated system integrity due to an invalid fault and
+   will be terminated.
+
+When CodeView is run directly from MS-DOS and the HIMEM.SYS memory manager is
+installed, stepping into the application may generate the following error
+message:
+
+   run-time error R6915
+   - DOSX16 : Unhandled exception
+
+When CodeView is run directly from MS-DOS and the 386MAX memory manager is
+installed, stepping into the application may hang the system.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3
+Version           : :
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

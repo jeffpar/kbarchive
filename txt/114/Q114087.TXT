@@ -1,0 +1,66 @@
+DOCUMENT:Q114087  07-FEB-2002  [winnt]
+TITLE   :Installing NT on a Ultrastor 22CA ESDI Controller
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT on some machines with an UltraStor 22CA ESDI caching
+controller, the emergency repair disk is not created and you receive the error
+"Unable to provide floppy support." If you continue, you may or not be able to
+get the system to boot. Booting from the 5.25" disk and then using the 3.5"
+disks to install fails with the same message. Disabling disk caching and
+1024-cylinder truncation does not help. This problem was reported with the ALR
+486/33. The UltraStor 22CA ESDI caching controller installed and worked
+correctly on a Compaq, however.
+
+CAUSE
+=====
+
+Only ESDI cards that are Western Digital 1003 compatible are supported. Since
+each vendor implements caching differently, there is no way to write a generic
+hardware abstraction layer to handle ESDI controllers from all vendors.
+
+RESOLUTION
+==========
+
+Install an ESDI card that is compatible with the Western Digital 1003.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

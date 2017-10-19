@@ -1,0 +1,76 @@
+DOCUMENT:Q296664  25-APR-2001  [mspress]
+TITLE   :Microsoft Visual InterDev 6.0 Web Technologies Reference Comment
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Visual InterDev 6.0 Web Technologies Reference ISBN 1-57231-871-6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Visual InterDev 6.0 Web
+Technologies Reference, ISBN 1-57231-871-6.
+
+The following topics are covered:
+
+ - Pages 134-135: NAME Parameter Incorrectly Defined
+
+MORE INFORMATION
+================
+
+Pages 134-135: Name Parameter Incorrectly Defined
+-------------------------------------------------
+
+On pages 134 and 135 the NAME parameter and the description of the NAME parameter
+are incorrect.
+
+Change:
+"NAME=window_name|_blank|_parent|_self|_top"
+
+To:
+"NAME=frame_name"
+
+On page 135 the description for the NAME parameter should also be changed.
+
+Change the description to:
+"Sets or retrieves the window or frame name. The name property identifies which
+frame displays the content of a linked document. To access a window's name
+property, use the "window" keyword."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: DEVBOOK VSTUDIO INTERDEV 1-57231-871-6
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,89 @@
+DOCUMENT:Q153795  10-APR-2001  [homemm]
+TITLE   :Encarta 97 Encyclopedia: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:kbmm kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article lists the minimum system requirements, as printed on the
+product package, for running the 1997 edition of Microsoft Encarta Encyclopedia
+for Windows.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Encarta 97 Encyclopedia are:
+
+ - A Multimedia PC with a 486/33 DX or higher microprocessor
+
+ - 8 MB of RAM for Windows or 12 MB of RAM for Windows NT Workstation
+
+ - CD-ROM drive (Double-speed CD-ROM drive recommended)
+
+ - Sound card
+
+ - SVGA 256-color monitor
+
+ - Microsoft Mouse or compatible pointing device
+
+ - Headphones or speakers
+
+Hard-disk space:
+
+ - Windows 95, 9 MB (2 MB minimum)
+
+ - Windows 3.1, 11 MB (4.5 MB minimum)
+
+Operating System:
+
+ - MS-DOS operating system version 3.1 or later with Microsoft Windows operating
+   system version 3.1 or later, OR
+
+ - Windows 95, OR
+
+ - Windows NT Workstation operating system version 3.51 or later
+
+   NOTE: Encarta 97 Encyclopedia is not intended for use on non-Intel based CPU's
+
+To use Encarta Yearbook Builder, you need the following:
+
+ - A modem
+
+ - Access to the Microsoft World Wide Web page on the Internet or a user account
+   on The Microsoft Network
+
+ - 7.5 MB hard-disk space for a year's worth of Yearbook Builder files
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm requires
+
+======================================================================
+Keywords          : kbmm kbsetup 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1997
+Version           : :1997 edition
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

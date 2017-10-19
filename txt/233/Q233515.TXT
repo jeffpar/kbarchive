@@ -1,0 +1,179 @@
+DOCUMENT:Q233515  07-MAY-2001  [vbwin]
+TITLE   :PRB: Error "String Literal Too Long" w/ Update/Insert on Oracle
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbATM kbDriver kbODBC kbOLEDB kbOracle kbVBp500 kbVBp600 kbVC500 kbVC600 kbGrpDSVBDB kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the "Microsoft OLE DB Provider for Oracle" to Execute an action query
+(Update or Insert) on a connection opened to an Oracle 7 or 8 server and a table
+that has LONG datatype field, you might receive the following error message:
+
+   ORA-01704: String literal too long
+
+If using the "Microsoft OLE DB Provider for ODBC Drivers," the error message
+might look like:
+
+   [Microsoft][ODBC driver for Oracle][Oracle] ORA-01704: String literal too
+   long.
+
+CAUSE
+=====
+
+There is an Oracle limitation of 2000 characters for literal strings on all
+flavors of Oracle 7 and 4000 characters on Oracle 8.
+
+RESOLUTION
+==========
+
+Use a string literal of up to 2000 or 4000 characters only. Longer values might
+only be entered using straight code to edit or add new records.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This limitation is an Oracle limitation and the error might occur using any Data
+Access method including DAO/RDO and ADO. Also, it is independent of the type of
+Provider or the ODBC driver used.
+
+For more information on this error, please refer to Oracle Documentation.
+
+The following sample code demonstrates how to reproduce this error and how to
+avoid it using Visual Basic and ADO using the OLEDB provider for Oracle. It
+assumes that the user is familiar with Oracle servers and has fair knowledge of
+ADO.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an Oracle table using the following script:
+
+            CREATE TABLE Account (
+                  AccountNo    NUMBER(3) PRIMARY KEY,
+                  TestStr      LONG);
+
+2. Start a new project in Visual Basic and add a Reference to the "Microsoft
+   ActiveX Data Objects library" 1.5, 2.0, or 2.1, depending on the installed
+   version.
+
+3. Place two CommandButtons on the form:
+
+  Control       Name       Caption
+ --------------------------------------
+
+  Button1      cmdAction   Action Query
+   
+  Button2      cmdCode     ADO Code
+
+4. Paste the following code into your code window:
+
+      Private Sub cmdAction_Click()
+         Dim cn As New ADODB.Connection
+         Dim str As String
+         Dim i As integer
+
+         cn.CursorLocation = adUseClient
+         cn.Open "Provider=MSDAORA.1;Password=demo;User ID=demo;Data Source=dseoracle;Persist Security Info=True"
+
+         str = ""
+         For i = 1 To 2001
+           str = str + "A"
+         Next
+
+         ' Uncomment the next line to use Update and comment the one after
+         ' cn.Execute "Update Account set TestStr = '" & str & "' where AccountNo=1"
+         cn.Execute "Insert into Account(AccountNo, TestStr) values(5,'" & str & "')"
+         MsgBox "successful Operation"
+         cn.close
+         set cn = Nothing 
+      End Sub
+
+      Private Sub cmdCode_Click()
+         Dim cn As New ADODB.Connection
+         Dim rs As New ADODB.Recordset
+         Dim str As String
+
+         cn.CursorLocation = adUseClient
+         cn.Open "Provider=MSDAORA.1;Password=demo;User ID=demo;Data Source=dseoracle;Persist Security Info=True"
+
+         str = ""
+         For i = 1 To 2001
+            str = str + "A"
+         Next
+
+         rs.Open "select * from Account", cn, adOpenStatic, adLockBatchOptimistic
+
+         rs.AddNew
+         rs("AccountNo") = 8
+         rs("TestStr") = str
+
+         rs.UpdateBatch
+
+         MsgBox "successful Operation"
+         cn.close
+         set cn = Nothing 
+      End Sub
+
+5. Run the project and click on any CommandButton.
+
+If you click on "Action Query" button, you will get the error message. However,
+if you click on "ADO Code" no error occurs.
+
+REFERENCES
+==========
+
+For additional information about LONG character datatypes and how to deal with
+them using Visual Basic, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q178875 FILE: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes
+
+For additional information about on how to use ADO with Oracle, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q176936 INFO: Visual Basic 5.0 Accessing an Oracle Database Using ADO
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Hussein Abuthuraya, Microsoft Corporation
+
+
+Additional query words: oracle long raw
+
+======================================================================
+Keywords          : kbATM kbDriver kbODBC kbOLEDB kbOracle kbVBp500 kbVBp600 kbVC500 kbVC600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

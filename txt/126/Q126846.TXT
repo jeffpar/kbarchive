@@ -1,0 +1,73 @@
+DOCUMENT:Q126846  12-JUN-2001  [homegame]
+TITLE   :Golf 2.0: Some Links Courses Not Recognized
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+2.00
+WINDOWS
+kb3rdparty kbprb kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Golf 2.0 does not recognize some of the Links championship courses provided by
+Access Software Inc., even though the Links course has been converted
+successfully through the conversion tool.
+
+For the course to be used, it will need to be reinstalled from the original Links
+disks using the Links 386Pro option during setup.
+
+Once installation is complete, the course can then be copied into the MSGOLF
+directory to be used by Golf 2.0.
+
+For more information about how to copy files in Windows, see your Windows printed
+documentation or online Help.
+
+MORE INFORMATION
+================
+
+Microsoft Golf 2.0 uses the hi-res (*.CRH) course instead of the low-res (*.CRS)
+course used by Microsoft Golf 1.0 and Access Links. To use an existing low-res
+course, Golf 2.0 provides a conversion tool allowing the low-res course to be
+converted.
+
+However, the newer courses and some of the older courses manufactured by Access
+Software will not be recognized by Golf even after being converted. These
+courses need to be installed using the original disk as a Links 386Pro course.
+
+Access Software should be contacted at (801) 359-2900 if problems arise during
+the installation procedure.
+
+
+Additional query words: 2.00 kbhowto Links 386Pro Conversion Convert courses faq
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,169 @@
+DOCUMENT:Q192883  07-MAY-2001  [visualc]
+TITLE   :HOWTO: Modify the VC++ COMPLEXDB Sample to Work on a Web Page
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbtemplate kbDatabase kbInternet kbVC600 kbATL300 kbGrpDSVCDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual C++, version 6.0 contains a sample called COMPLEXDB that demonstrates how
+to use the Active Template Library (ATL) to write a complex data bound control.
+While the control works when placed into an MFC dialog as the sample
+demonstrates, additional work needs to be done to use the control from a Web
+page. This article details those steps.
+
+MORE INFORMATION
+================
+
+Perform the following steps to get the COMPLEXDB sample to work on a Web page.
+
+1. Create a CDataSourceListener class that is derived from DataSourceListener
+   (DataSourceListener is described in the ActiveX Control Writer's Kit).
+
+2. Add the following code to the end of the ComplexCtl.cpp:
+
+         class CDataSourceListener : public DataSourceListener
+         {
+            public:
+              ULONG m_ulRefCount;
+         CComplexCtl * m_pControl;
+
+              CDataSourceListener(CComplexCtl * pControl):m_ulRefCount(0),
+                 m_pControl(pControl){}
+
+              STDMETHOD(QueryInterface)(REFIID iid, LPVOID * ppvObject)
+              {
+                if (IsEqualIID(__uuidof(IUnknown), iid) ||
+                    IsEqualIID(__uuidof(DataSourceListener), iid))
+                {
+                    *ppvObject = this;
+                    AddRef();
+                    return S_OK;
+                }
+                else
+                    return E_NOINTERFACE;
+              }
+
+         STDMETHOD_(ULONG, AddRef)()
+         {
+                return m_ulRefCount++;
+         }
+
+              STDMETHOD_(ULONG, Release)()
+              {
+                if (--m_ulRefCount == 0)
+                {
+                   delete this;
+                   return 0;
+                }
+                else
+                   return m_ulRefCount;
+         }
+
+              STDMETHOD(dataMemberChanged)(DataMember bstrDM)
+              {
+                m_pControl->UpdateControl();
+                return S_OK;
+              };
+
+              STDMETHOD(dataMemberAdded)(DataMember bstrDM){return S_OK;};
+
+              STDMETHOD(dataMemberRemoved)(DataMember bstrDM){return S_OK;};
+
+         };
+
+3. Modify the CComplexCtl::putref_DataSource() method in CComplexCtl.cpp file to
+   the following:
+
+         STDMETHODIMP CComplexCtl::putref_DataSource(DataSource* pDataSource)
+         {
+            m_spDataSource = pDataSource;
+            CDataSourceListener * pListener = new CDataSourceListener(this);
+            // Listener object is deleted when it is released.
+            m_spDataSource->addDataSourceListener(pListener);
+         }
+
+4. Create the Web page to bind the data source object to the COMPLEXDB control.
+   The following example uses the RDS.DataControl control to bind data to the
+   COMPLEXDB control:
+
+        <HTML>
+         <HEAD>
+         <TITLE>Sample Query Page</TITLE>
+         </HEAD>
+         <BODY>
+         <CENTER>
+         <H1>Sample Query Page</H1>
+         <BR>
+
+         <OBJECT ID="COMPLEXDB" WIDTH=600 HEIGHT=200
+          CLASSID="CLSID:392BBDF0-06E1-11D1-8F8F-000000000000">
+            <PARAM NAME=DataSource DATASRC=#ADC>
+            <PARAM NAME=FieldName  VALUE="ProductName">
+         </OBJECT>
+
+         <BR>
+         <OBJECT classid="clsid:BD96C556-65A3-11D0-983A-00C04FC29E33"
+          ID=ADC HEIGHT=1 WIDTH = 1>
+            <PARAM NAME="Server"   VALUE="http://myIISServer">
+            <PARAM NAME="Connect"     VALUE="DSN=DataTables">
+            <PARAM NAME="SQL"         VALUE="Select * from Products">
+         </OBJECT>
+         </BODY>
+         </HTML>
+
+   NOTE: The Internet Client SDK documentation shows that you can use the
+   following syntax:
+
+         <OBJECT ID="COMPLEXDB" WIDTH=600 HEIGHT=200 Datasrc="#ADC"
+           CLASSID="CLSID:392BBDF0-06E1-11D1-8F8F-000000000000">
+
+   These lines are supposed to connect the data source object with the particular
+   object. This doesn't work with Internet Explorer 4.x and OLE DB data bound
+   controls. You must set the data source by using the PARAM tag shown
+   previously.
+
+REFERENCES
+==========
+
+For more information about writing OLE DB data bound controls like the COMPLEXDB
+sample, see the ActiveX Control Writer's Kit included with Visual C++, version
+6.0:
+
+   Platform SDK: Database and Messaging; Microsoft Data Access SDK; OLE DB;
+   ActiveX Control Writer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtemplate kbDatabase kbInternet kbVC600 kbATL300 kbGrpDSVCDB 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

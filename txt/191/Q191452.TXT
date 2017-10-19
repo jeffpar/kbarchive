@@ -1,0 +1,52 @@
+DOCUMENT:Q191452  19-JUL-2001  [sna]
+TITLE   :INF: “Key Not Found” Accessing VSAM KSDS on IBM OS/390
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft OLE DB Provider for AS/400 and VSAM, version 1.0, included with:
+    - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+HRESULT 80004005, (Key not found.) is returned to a consumer program attempting
+to open a VSAM KSDS on an OS/390 mainframe.
+
+RESOLUTION
+==========
+
+To prevent this problem, be sure to define the entire VSAM record key in the
+Host Column Definition file (HCD). Naturally, this means that all the VSAM
+record fields that precede the key in the VSAM file record layout must also be
+defined in the HCD file.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvSearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

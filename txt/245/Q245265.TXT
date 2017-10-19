@@ -1,0 +1,84 @@
+DOCUMENT:Q245265  11-JUN-2002  [winnt]
+TITLE   :Documentation Error: Disabling the OS/2 Subsystem
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The Microsoft Windows NT 4.0 Workstation Resource Kit describes a way to disable
+the OS/2 subsystem that does not work.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+The "To Disable the OS/2 Subsystem in Windows NT" topic (on page 910) in the
+Windows NT 4.0 Workstation Resource Kit contains the following information:
+
+   In Registry Editor, change the value of GlobalFlag to 20100000 in the
+   following registry path:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SessionManager
+
+This information is not correct. In versions of Windows NT up to version 3.51,
+you can use the GlobalFlag value as described above to disable the OS/2
+subsystem in the following key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager
+
+Note the difference between "SessionManager" and "Session Manager."
+
+To disable any subsystem other than Win32 (for example, OS/2 or POSIX) in Windows
+NT 4.0, you can use the "dosonly" command in the Config.nt file in the
+%SystemRoot%\System32 folder. The comment area of the Config.nt file contains
+these instructions:
+
+   DOSONLY
+   By default, you can start any type of application when running Command.com. If
+   you start an application other than an MS-DOS-based application, any running
+   TSR may be disrupted. To ensure that only MS-DOS-based applications can be
+   started, add the command dosonly to Config.nt or other startup file.
+
+Additional query words: os2
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

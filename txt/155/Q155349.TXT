@@ -1,0 +1,71 @@
+DOCUMENT:Q155349  27-JUL-2001  [win95x]
+TITLE   :"Invalid Media" Error Message Formatting FAT32 Partition
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to format a FAT32 file system partition larger than 8025 MB from
+within Windows 95, you may receive the following error message
+
+   Verifying <xxx.xx>M
+   Invalid media or track 0 bad-disk unusable
+   Format terminated
+
+where <xxx.xx> is the size of the partition.
+
+CAUSE
+=====
+
+This error occurs if there is a non-DOS partition preceding the extended DOS
+partition and the primary DOS partition has been formatted using the real-mode
+FORMAT.EXE command.
+
+RESOLUTION
+==========
+
+To resolve this issue, format the volume using the following steps:
+
+1. Click the Start button, click Shut Down, click Restart The Computer In MS-DOS
+   Mode, and then click Yes.
+
+2. Type the following command and then press ENTER
+
+   " format <drive>: " (without the quotation marks)
+
+   where <drive> is the drive letter for the partition you want to format.
+
+3. When the partition is formatted, type "exit" (without the quotation marks) to
+   restart Windows 95.
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q218829  28-JUN-2001  [visualc]
+TITLE   :FIX: CComEnumImpl<>::Skip() Doesn't Handle Overflow Correctly
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbVC600bug kbATL300bug kbVS600sp2bug kbVS600sp3fix kbVS600SP1bug kbGrpDSM
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL) 3.0, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an argument passed into CComEnumImpl<>::Skip() is a negative number,
+then the pointer to the current enumeration may not be set correctly.
+
+CAUSE
+=====
+
+Following is the implementation of CComEnumImpl<>::Skip():
+
+   template <class Base, const IID* piid, class T, class Copy>
+   STDMETHODIMP CComEnumImpl<Base, piid, T, Copy>::Skip(ULONG celt)
+   {
+   	m_iter += celt;
+   	if (m_iter <= m_end)
+   		return S_OK;
+   	m_iter = m_end;
+   	return S_FALSE;
+   }
+
+M_iter points to the current enumeration. If celt is a negative number, Skip() is
+supposed to set m_iter back "celt" items. If "m_iter + celt" results in a value
+that is less than m_begin, then this case is not handled and m_iter is set to an
+invalid pointer.
+
+RESOLUTION
+==========
+
+This bug has been fixed in Visual Studio 6.0 Service Pack 3.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbVC600bug kbATL300bug kbVS600sp2bug kbVS600sp3fix kbVS600SP1bug kbGrpDSMFCATL kbCollectionClass 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

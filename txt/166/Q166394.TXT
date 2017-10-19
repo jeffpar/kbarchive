@@ -1,0 +1,173 @@
+DOCUMENT:Q166394  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Implement a Linked List in Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The linked list, which is a classical data structure with widespread
+applicability in C++, can also be implemented in Visual Basic with the use of
+Classes.
+
+A linked list is a set of items organized sequentially, just like an array. In an
+array, the sequential organization is provided implicitly (by position in the
+array); in a linked list, you use an explicit arrangement in which each item is
+part of a "node" that also contains a "link" to the next node.
+
+The primary advantage of linked lists over arrays is that linked lists can grow
+and shrink in size during their lifetimes. In particular, their maximum size
+need not be known in advance. A secondary advantage is that they provide
+flexibility in allowing the items to be rearranged efficiently without actually
+moving any data contained in the list.
+
+A disadvantage of a linked list is that operations such as referencing a specific
+element in the list require you to walk the entire list from head to tail. In an
+array, this could simply be done by accessing an (n). Another operation that
+does not work with a linked list is finding an item before a given item. To get
+around these limitations, you can build a doubly-linked list in which two links
+for each node are maintained, one to the item before and one to the item after.
+The cost of providing this extra capability is doubling the number of link
+manipulations per basic operation. This article will only demonstrate a simple
+linked list, not a doubly-linked list.
+
+MORE INFORMATION
+================
+
+Sample Program
+--------------
+
+The following example creates a linked list of 20 nodes, and then reverses it
+using a function named ReverseList. Each node in the list is actually an
+instance of a Visual Basic Class created with the New keyword.
+
+1. Start a new project in Visual Basic and choose "Standard EXE." Form1 is
+   created by default.
+
+2. From the Project menu, choose Add Class Module, Class1 is created by default.
+   In the Properties window of the new class module, change the name from Class1
+   to "Node," then Paste the following code into the General Declarations
+   section of Node:
+
+         Public key As Integer          'var to hold some data
+         Public pnext As node           'pointer to next node in list
+
+3. Add a Command button, Command1, to Form1.
+
+4. Paste the following code into the General Declarations section of Form1:
+
+         Dim head As node               'object pointer to head of list
+         Private Sub Form_Load()
+           Dim curr As node             'object pointer to current pos in
+           Dim i As Integer             'list used in For loop
+
+           'CREATE LIST
+           Set head = New node          'object pointer to new node
+           head.Key = 0                 'dummy head
+           Set curr = head              'keep head pointer here
+           For i = 1 To 20              'iterate n times to fill list
+             Set curr.pnext = New node  'insert new node after current
+             Set curr = curr.pnext      'set current one = new node
+             curr.Key = i               'set new node key value
+           Next i
+           Set curr.pnext = New node    'dummy tail
+           Set curr = curr.pnext        'move current to dummy tail
+           curr.Key = 0                 'set value of dummy tail
+           Set curr.pnext = curr        'points to itself to identify end
+
+           Debug.Print "before: " & DumpList(head) 'print list
+         End Sub
+
+         Private Sub Command1_click()
+           'RERVERSE LIST
+           ReverseList head             'pass in head to ReverseList
+           Debug.Print "after: " & DumpList(head)  'print reversed list
+         End Sub
+
+         Private Sub ReverseList(ByRef head As node)
+           'reverse entire list including dummy head and tail
+           'Note: head becomes tail, tail becomes head
+           Dim curr As node             'object pointer to current node
+           Dim nexx As node             'object pointer to next node
+           Set curr = head.pnext        'current to node after head
+           Set head.pnext = head        'turn head into tail
+           While Not curr.pnext Is curr 'walk entire list
+             Set nexx = curr.pnext      'pointer to node after current
+             Set curr.pnext = head      'current points back to head
+             Set head = curr            'move head to current
+             Set curr = nexx            'set current = next node
+           Wend
+           Set curr.pnext = head        'point new head to first node
+           Set head = curr              'return head to first position
+         End Sub
+
+         Private Function DumpList(ByRef head As node) As String
+           'walk list and dump to debug window
+           Dim strOut As String         'temp var to hold string
+           Dim curr As node             'object pointer to current node
+           Set curr = head.pnext        'skip dummy head
+           While Not curr.pnext Is curr 'walk rest of list to end
+             strOut = strOut & " " & CStr(curr.Key)
+             Set curr = curr.pnext      'current pointer to next node
+           Wend
+           DumpList = strOut            'return string
+         End Function
+
+5. Start the program or press the F5 key. A linked list of 20 nodes will be
+   created.
+
+6. Click the Command1 button to Reverse the list and print the results to the
+   debug window.
+
+REFERENCES
+==========
+
+In Visual Basic Books Online see:
+  Programmer's Guide (All Editions)
+    Part 2: What Can You Do With Visual Basic
+      Programming With Objects
+        Creating Your Own Classes
+
+Algoriths in C++, Robert Sedegwick, ISBN 0-201-51059-6
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Jon Fowler,
+Microsoft Corporation
+
+
+Additional query words: kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

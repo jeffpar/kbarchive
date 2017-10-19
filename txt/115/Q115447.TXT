@@ -1,0 +1,59 @@
+DOCUMENT:Q115447  18-NOV-1999  [pcmail]
+TITLE   :X400: Corrupt .XTN File for Network Postoffice Stops Install
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you enter the network name of a postoffice when you are installing the access
+component of the X.400 gateway, a corrupt .XTN file for that network (for
+example: invalid length) causes the install program to exit, and returns you to
+an MS-DOS prompt.
+
+CAUSE
+=====
+
+Because the .XTN file contains the postoffice definitions for an external
+network, a corrupt one has system consequences so severe that Install simply
+exits. The gateway does not report the exact condition leading to the Install
+failure.
+
+
+RESOLUTION
+==========
+
+Contact Microsoft Product Support Services.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q157125  04-AUG-2001  [visualc]
+TITLE   :FIX: Setup Does Not Copy Visigenic's VSDRVM32.DLL File
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbusage kbDatabase kbMFC kbODBC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install the Visigenics ODBC driver for Oracle from Visual C++ 4.2
+Professional Edition, the setup program fails to copy the file VSDRVM32.DLL that
+is used by the driver.
+
+CAUSE
+=====
+
+The setup program uses the information in VCODBC.INF file that does not list
+this additional DLL (VSDRVM32.DLL).
+
+RESOLUTION
+==========
+
+Copy VSDRVM32.DLL from the MSDEV\REDIST subdirectory on the Visual C++ CD-ROM to
+your Windows\system or Winnt\system32 directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. The VCODBC.INF file was corrected in Visual C++
+version 4.2 Enterprise Edition.
+
+Additional query words: kbVC420bug
+
+======================================================================
+Keywords          : kb3rdparty kbusage kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : winnt:4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

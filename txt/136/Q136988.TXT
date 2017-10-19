@@ -1,0 +1,67 @@
+DOCUMENT:Q136988  13-DEC-1999  [homemm]
+TITLE   :Bookshelf 1995: Some Animations Do Not Have Audio
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some of the animations in the Encyclopedia's Gallery Animation & Video
+section are missing audio.
+
+The files missing audio are:
+
+ - Chromosome(first animation)
+
+ - Meiosis
+
+ - Solar system
+
+
+NOTE: The Meiosis animation is the first animation on the Chromosome screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the 1995 edition of Bookshelf
+for Windows. This problem has been resolved in Microsoft Bookshelf '96-'97 for
+Windows.
+
+MORE INFORMATION
+================
+
+Animations that contain audio have a sound icon (a picture of a speaker). The
+above animations contain the speaker icon, but no audio is heard during
+playback.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles quiet missing nothing silence avi .avi
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

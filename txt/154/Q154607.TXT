@@ -1,0 +1,82 @@
+DOCUMENT:Q154607  04-APR-1999  [exchange]
+TITLE   :XCLN: Folder Deleted From Offline Store Removes Online Folder
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you configure the Microsoft Exchange client for offline synchronization,
+the complete mailbox hierarchy is replicated to the offline folder file (OST),
+even though some of the folders are not configured for offline use. This makes
+it possible for you to delete a non- replicated folder while working offline.
+When you start to work online again and synchronization takes place, the
+non-replicated folder and its contents are deleted from the mailbox.
+
+MORE INFORMATION
+================
+
+This behavior is by product design.
+
+Steps to reproduce:
+-------------------
+
+1. Start Microsoft Exchange client configured for local replication and choose
+   Connect when prompted for a connection type.
+
+2. Create a folder called Test and copy several items to it. Make sure this
+   folder is not configured as an offline folder.
+
+3. Quit Exchange.
+
+4. Start Exchange Client and choose Work Offline when prompted for a connection
+   type. Notice the Test folder appears to be empty, although it is not.
+
+5. Delete the Test folder. No error message results. However, the folder is
+   moved to the Deleted Items folder.
+
+6. Quit Exchange. By default, this will purge the Deleted Items folder and
+   delete the Test folder from the Exchange hierarchy.
+
+7. Start Microsoft Exchange client and choose Connect when prompted for a
+   connection type.
+
+Results:
+The folder hierarchy is automatically synchronized, removing the Test folder and
+its contents.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange500Mac kbExchange400Mac kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,83 @@
+DOCUMENT:Q171549  18-JUN-2001  [vbwin]
+TITLE   :FIX: Cached Class Factorys Get Released by Illegal Thread
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,97
+OPER/SYS:
+KEYWORDS:kbVBp500 kbVS97sp2fix kbGrpDSVBDB kbvbp500sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Cached Class Factorys can get released by illegal thread.
+
+CAUSE
+=====
+
+The repository maintains a cache of class factorys. If a class factory has not
+been accessed for a short period of time, the reference to the class factory
+will get released. However, the reference is released from a different thread
+than the one that initially obtained the reference.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+Service Pack 3, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q175450 INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 3
+
+MORE INFORMATION
+================
+
+The behavior above violates the apartment-threading model, and can cause a
+crash.
+
+This behavior is evident when a repository object is implemented in Visual Basic.
+This only occurs in Visual Basic where a class is defined as the class that is
+the implementation of the generic repository class. This behavior occurs when
+the ClassID for the Visual Basic class matches the repository classdef's
+ClassID. It crashes when the client creates an instance before the cache is
+released. When the engine releases the class factory cache, the crash occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp500 kbVS97sp2fix kbGrpDSVBDB kbvbp500sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : WINDOWS:5.0,97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

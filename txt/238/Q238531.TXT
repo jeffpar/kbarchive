@@ -1,0 +1,62 @@
+DOCUMENT:Q238531  07-MAY-2000  [sms]
+TITLE   :SMSINST: Cannot Extract More Than 1,024 Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsmsInst smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the /x option to extract files from a compiled Systems Management
+Server Installer program file, no more than 1,024 files are extracted.
+
+WORKAROUND
+==========
+
+Use more than one program file to compile 1,024 or more files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 2.0.91.00.
+
+MORE INFORMATION
+================
+
+For more information about the built-in Systems Management Server Installer
+command-line switches, see the following Microsoft Knowledge Base article:
+
+   Q164353 SMSINST: Command Line Parameter Order for Installer Executables
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsmsInst smsinst 
+Technology        : kbSMSSearch kbSMSI200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

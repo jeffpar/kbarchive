@@ -1,0 +1,68 @@
+DOCUMENT:Q132202  17-DEC-2000  [win95x]
+TITLE   :Audio CD Incorrectly Identified as Program CD-ROM
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Media Pilot CD Sound System software installed on a
+Compaq Presario computer with Windows 95, audio CDs are incorrectly identified
+as program CD-ROMs and the Media Pilot software does not automatically advance
+to the first track on the CD.
+
+CAUSE
+=====
+
+The Media Pilot CD Sound System software is not using the appropriate method for
+determining if a disc that has been inserted into the CD-ROM drive is an audio
+CD or a program CD-ROM. Although previous versions of MS- DOS and Microsoft
+Windows return an error code when an audio CD is inserted, Windows 95 returns a
+success code and provides information about the tracks on the CD-ROM.
+Applications written for previous versions of MS- DOS and Windows that expect an
+error code to be returned when an audio CD is inserted may not be able to
+accurately detect whether or not an inserted disc is an audio CD.
+
+
+RESOLUTION
+==========
+
+To play an audio CD using the Media Pilot CD Sound System software in Windows
+95, manually advance to the track you want, then click the Play button.
+
+For additional information about this problem, please contact Compaq.
+
+STATUS
+======
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that it is not caused by a problem in Windows 95.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,72 @@
+DOCUMENT:Q99712  06-DEC-1999  [win95x]
+TITLE   :Err Msg: Cannot Find UNIDRV.DLL When Printing to DeskJet 500C
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to the Hewlett-Packard (HP) DeskJet 500C from Windows 3.1, the
+following error message may appear:
+
+   Cannot find UNIDRV.DLL
+
+CAUSE
+=====
+
+When you install the HP DeskJet 500C printer, Windows 3.1 asks for an unlisted,
+updated, or vendor-provided printer driver.
+
+If the Windows 3.1 Disk 6 (3.5-inch) or Disk 7 (5.25-inch) is inserted instead,
+Windows copies and expands the HP DeskJet family drivers (HPDSKJET.DR_ and
+UNIDRV.DL_) to the Windows\SYSTEM subdirectory but does not rename them to .DRV
+and .DLL, respectively.
+
+RESOLUTION
+==========
+
+If you receive this error, check the Windows\SYSTEM subdirectory for the files
+HPDSKJET.DR_ and UNIDRVR.DL_. If these files are present, rename HPDESKJET.DR_
+and UNIDRV.DL_ to HPDESKJET.DRV and UNIDRV.DLL, respectively.
+
+MORE INFORMATION
+================
+
+These drivers do not support color printing and may not interpret more than 16
+colors when converting to gray scale while printing graphics.
+
+We recommend that you obtain the correct printer driver for the DeskJet 500C
+(DJ500C.DRV) by calling the HP Fulfillment Center.
+
+
+Additional query words: 3rdparty desk jet 500 c HP hewlett packard
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

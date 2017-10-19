@@ -1,0 +1,51 @@
+DOCUMENT:Q76856  03-OCT-1999  [win3x]
+TITLE   :Multimedia Windows Requires Updated IBM CD-ROM Driver
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+Some of the CD-ROM drives provided with IBM PS/2s are supplied with
+the IBMCDROM.SYS driver dated 2-7-90. This driver does not work
+correctly with Windows with Multimedia Extensions and the MSCDEX.EXE
+file provided with Windows with Multimedia Extensions. An updated
+IBMCDROM.SYS dated 6-1-90 corrects these problems. This driver can be
+obtained from your IBM dealer or field representative.
+
+Please note that MSCDEX.EXE version 2.2 or later provided with Windows
+with Multimedia Extensions must be used to run Windows with Multimedia
+Extensions.
+
+The IBM products included here are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+Additional query words: MMWIN KBHW 3rdparty win3 3.0 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

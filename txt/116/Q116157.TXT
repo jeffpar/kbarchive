@@ -1,0 +1,72 @@
+DOCUMENT:Q116157  15-OCT-1999  [win3x]
+TITLE   :TRXNET.COM ODI Driver Needs Update with SMC ArcNet PC130
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Windows for Workgroups 3.11 and the ODI driver TRXNET.COM with the
+Standard Micro Systems (SMC) ArcNet PC130 network card, you receive one of the
+following error messages:
+
+   Invalid DOS Function
+
+   -or-
+
+   Cannot Read From Device Network
+
+   -or-
+
+   This application has been stopped by DOSMGR device. Quit all applications,
+   Quit Windows, and restart the computer.
+
+CAUSE
+=====
+
+TRXNET.COM ODI is a generic Turbo ArcNet ODI driver supplied by Novell. This
+driver is designed to be used with Novell and ArcNet cards running under ODI.
+The SMC ArcNet PC130 generates this error when copying files in Windows for
+Workgroups 3.11 from the Novell server. (Accessing the Novell server at MS-DOS
+generates no errors.)
+
+RESOLUTION
+==========
+
+SMC has an updated driver that corrects this problem (SMCARWS.COM) available on
+its bulletin board service (BBS) at (516) 434-3162. Download ARC320.EXE, which
+is a self-extracting file that contains SMCARWS.COM. For more information,
+contact SMC Technical Support by phone or through the SMC CompuServe support
+forum (type GO SMC7 at the $ prompt).
+
+Additional query words: 3.11 IPXODI NetWare arc32.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

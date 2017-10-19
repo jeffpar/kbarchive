@@ -1,0 +1,62 @@
+DOCUMENT:Q287148  12-NOV-2001  [homegame]
+TITLE   :Age of Empires: Scenario Editor Only Places Default Units on Map
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+ - Microsoft Age of Empires II Expansion: The Conquerors 
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+ - Microsoft Age of Empires, Gold Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Scenario Editor to create a scenario in any of the games listed at
+the beginning of this article, you may only be able to place default units on
+the map.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When you save and start the game, the units correspond to the correct
+civilization.
+
+Each player has a different civilization default unit that helps with setting up
+the landscape.
+
+Additional query words: msgame aoe aok aoe2
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbAOE kbGamesSearch kbZNotKeyword kbAOESearch kbAOEExpRome kbAOE2ExpConquerors kbAOE2Kings
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

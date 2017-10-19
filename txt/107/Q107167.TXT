@@ -1,0 +1,50 @@
+DOCUMENT:Q107167  14-NOV-1999  [miscsdk]
+TITLE   :Using Tabs in Windows Help or Viewer Titles
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::2.0,2.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer Publishing Toolkit, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+To change the default tab stops used by Viewer or Windows Help, the
+new tab stop positions must be explicitly set in Word for Windows.
+Word's default tab stops are not supported by Viewer.
+
+Word for Windows uses the RTF token \deftabN to save its default tab
+stops, where N is the size of the default tabs. Viewer doesn't support
+this RTF token, and when it sees tabs within the RTF file, Viewer it
+uses its own default tab stops, which are at .5 inches.
+
+If tab stop positions are explicitly set in Word, Word will write \txN
+tokens to the RTF file, where N is the position of the tab stop.
+Viewer does support the \tx token, and therefore the tabs will show up
+correctly in the Viewer title.
+
+Additional query words: 2.00 2.00a tabstop winword winhelp
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200 kbMMViewer200a
+Version           : :2.0,2.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

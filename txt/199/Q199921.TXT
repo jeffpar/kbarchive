@@ -1,0 +1,62 @@
+DOCUMENT:Q199921  31-JUL-2001  [sms]
+TITLE   :SMS: Disk Serial Number Inventories as FFFF-FFFF
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase kbInventory smsinv smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some Microsoft Windows NT client NTFS hard drive partitions may have their
+Serial Number property incorrectly inventoried as FFFF-FFFF. This can happen if
+the user account does not have at least List permissions to the partition. This
+can also occur on Microsoft Windows NT clients if the Systems Management Server
+Inventory Agent service account does not have at least List permissions to the
+NTFS partition.
+
+CAUSE
+=====
+
+The problem occurs because the user context under which the Inventory Agent is
+running does not have adequate permissions to gather the Serial Number
+properties of the hard drive partition.
+
+WORKAROUND
+==========
+
+Ensure that the user account and Systems Management Server Service Account have
+at least List permissions to all NTFS partitions that need to have Serial Number
+information included in inventory.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbInventory smsinv smsdatabase 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

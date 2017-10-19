@@ -1,0 +1,63 @@
+DOCUMENT:Q177774  19-MAR-1999  [exchange]
+TITLE   :XADM: Event ID 1171 Occurs When Diagnostics Logging Is Set Too H
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+ 
+
+SYMPTOMS
+========
+
+In the Microsoft Exchange Administrator program, if you turn up the diagnostics
+logging level for the Internal Processing category for MSExchangeDS, you may see
+the following exception error logged:
+
+   Event ID: 1171
+   Source: MSExchangeDS
+   Description: Exception e0010006 has occurred with parameters 11 and 1
+   (internal ID 405007f). Contact Microsoft Technical Support for
+   assistance.
+
+If you change the logging level to none, these events will not be logged.
+
+CAUSE
+=====
+
+If logging is set to anything other than none, all internal exceptions are
+logged as errors.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

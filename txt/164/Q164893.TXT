@@ -1,0 +1,87 @@
+DOCUMENT:Q164893  12-JUN-2001  [sna]
+TITLE   :SNA Server Client Can Overwrite SNA Server Installation
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0; winnt:2.0,2.1,2.11,3.0
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0 
+ - Microsoft SNA Workstation, versions 2.0, 2.1, 2.11, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you install Windows NT or Windows 95 SNA Server Client on a system that has
+SNA Server or SNA Workstation installed, Setup may overwrite existing SNA Server
+files and registry parameters, and cause both applications to fail.
+
+CAUSE
+=====
+
+The Setup program for the Windows NT and Windows 95 SNA Server client does not
+check for the existence of SNA Server or SNA Workstation during the installation
+process.
+
+The SNA Server software and the Windows NT and Windows 95 SNA Server client use
+the same file names and several of the same registry entries. The Windows NT SNA
+Server client and SNA Server also use the same default installation path
+(C:\Sna). The default installation path for the Windows 95 SNA Server client is
+C:\Sna95.
+
+RESOLUTION
+==========
+
+To easily work around this problem, do not install the Windows NT or Windows 95
+SNA Server clients on the same system as SNA Server or SNA Workstation.
+
+The Setup programs for Windows NT and Windows 95 SNA Server 3.0 clients have been
+updated to check for a previous installation of SNA Server or SNA Workstation
+prior to beginning the installation process. Setup will fail if either SNA
+Server or SNA Workstation is detected.
+
+The updated modules are:
+
+   \<snaroot>\Snasetup.dll
+   \<snaroot>\Setup\Client\Snasetup.dll
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11. and 3.0.
+This problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna snawinnt snawin95 snasetup sna30
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAW210 kbSNAW211 kbSNAW300 kbSNAW200 kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0; winnt:2.0,2.1,2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

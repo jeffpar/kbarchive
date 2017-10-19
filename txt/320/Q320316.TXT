@@ -1,0 +1,67 @@
+DOCUMENT:Q320316  26-MAR-2002  [msnetwork]
+TITLE   :MSN Explorer Sign In Screen Activates Unexpectedly
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network Version 7.0 
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MSN Explorer sign-in screen continues to activate while while you may be
+doing other tasks that do not require MSN Explorer to connect.
+
+CAUSE
+=====
+
+You have MSN Explorer connection settings set to Always dial my default
+connection.
+
+RESOLUTION
+==========
+
+Change connection settings to Dial whenever a network connection is not
+present.
+
+To change connection settings to Dial whenever a network connection is not
+present
+
+1. Click Start, click Settings, and then click Control Panel.
+   Note: In Microsoft Windows XP click Start, and then click Control Panel.
+
+2. Double-click Internet Options, and then click the Connections tab.
+
+3. Select Dial whenever a network connection is not present, click Apply, and
+   then click OK.
+
+Additional query words: kbimu msn explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610 kbMSN700
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

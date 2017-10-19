@@ -1,0 +1,62 @@
+DOCUMENT:Q278665  12-NOV-2001  [msnetwork]
+TITLE   :How to change text size in MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The text, or fonts, on MSN Companion can be adjusted to suit the preference of
+the user.
+
+MORE INFORMATION
+================
+
+If the text is either too big or too small, you can adjust the settings to match
+your needs. To adjust the text size:
+
+1. On the start page click settings.
+
+2. Click text size.
+
+3. Select the size of the text you would like to have; regular, large, or
+   extra-large.
+
+4. Click done.
+
+Note: this setting will apply to most web pages, but there are still a few pages
+that will have fixed text sizes. This setting will not affect the size of
+pictures.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,54 @@
+DOCUMENT:Q260743  27-APR-2000  [homegame]
+TITLE   :Baseball 2001: You Can Substitute Designated Hitter at Any Time
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Major League Baseball rules state:
+
+   The designated hitter named in the starting lineup must come to bat at least
+   one time, unless the opposing club changes pitchers.
+
+In Microsoft Baseball 2001, you are able to substitute the designated hitter at
+any time, even if he has not had a plate appearance, or the opposing club has
+not brought in a relief pitcher.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Baseball 2001.
+
+Additional query words: 1.00 msgame bb2001 bball substitution illegal
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

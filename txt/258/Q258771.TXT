@@ -1,0 +1,81 @@
+DOCUMENT:Q258771  10-AUG-2001  [winnt]
+TITLE   :Cannot Connect to Virtual IP Address by UNC Without NetBIOS
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to a virtual IP address by using a NetBIOS call (such as
+the netview or nbtstat -a command, or a Universal Naming Convention [UNC]
+connection), your network client may receive a system error 53 "The network path
+was not found" or "Host not found" error message. However, you can connect to
+the node's IP address, the node name, or the network name that is dependent on
+the virtual IP address. You can also ping the the IP address.
+
+CAUSE
+=====
+
+This behavior can occur if the NetBIOS interface is not running on the cluster
+node that currently owns the IP address resource. A virtual IP address in the
+cluster relies on the the NetBIOS interface exclusively for NetBIOS name
+resolution.
+
+RESOLUTION
+==========
+
+In the Devices tool in Control Panel, verify that the NetBIOS interface is set
+to Manual (this is the default) and that the Messenger service is set to
+Automatic (this is the default). The NetBIOS interface should be started by the
+Messenger service because the Messenger service depends on the NetBIOS
+interface.
+
+WORKAROUND
+==========
+
+If the the NetBIOS interface and the Messenger service are both set correctly
+but the NetBIOS interface still does not work, set the NetBIOS interface to
+Automatic, and then reboot the system.
+
+MORE INFORMATION
+================
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q195462 WINS Registration and IP Address Behavior for MSCS 1.0
+
+   Q248605 Cluster IP Address Resource Fails with Many IP Address Resources
+
+Additional query words: mscs
+
+======================================================================
+Keywords          : kbenv kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

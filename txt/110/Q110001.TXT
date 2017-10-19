@@ -1,0 +1,99 @@
+DOCUMENT:Q110001  04-NOV-1999  [fortran]
+TITLE   :BUG: WRITE Statement Not Shifting Window Focus
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a FORTRAN PowerStation QuickWin application, if a WRITE statement outputs to
+a child window that does not have the focus but that has IOFOCUS set to .TRUE.,
+then that window is not given the focus.
+
+CAUSE
+=====
+
+The READ/WRITE routines in the standard FORTRAN libraries are supposed to give
+the graphics and the Windows focus to a child window during I/O if its IOFOCUS
+is TRUE. Instead, the READ/WRITE routines are giving the focus only to the
+graphics focus.
+
+RESOLUTION
+==========
+
+Switch focus to a particular child window by explicitly calling FocusQQ.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation 32 for
+Windows NT, version 1.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following code reproduces the problem (the last write fails to bring Unit 1
+to the foreground):
+
+Sample Code
+-----------
+
+   C Compile options needed: -MW
+   C
+         include 'flib.fi'
+         include 'fgraph.fi'
+         include 'flib.fd'
+         include 'fgraph.fd'
+
+         integer*2 grstat
+         call outtext('This is the default (*) window\n'c)
+         open (1,file='USER')
+         call outtext('This should be in Unit 1\n'c)
+         grstat=incharqq()
+
+         write (*,*) 'This should NOT bring the * unit to the '
+        +   //'foreground.'
+         call outtext('This should still be in Unit 1.\n'c)
+         grstat=incharqq()
+
+         open (2,file='USER')
+         call outtext('This should be in Unit 2\n'c)
+         grstat=incharqq()
+
+         write (1,*) 'This should have brought Unit 1 to the '
+        +   //'foreground.'
+         call outtext('This should be in Unit 1.\n'c)
+         end
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

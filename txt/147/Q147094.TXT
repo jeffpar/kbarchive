@@ -1,0 +1,63 @@
+DOCUMENT:Q147094  20-MAR-1999  [exchange]
+TITLE   :XCLN: View/Group By Changes Column Order, Column Size
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you click Group By on the View menu in the Microsoft Exchange Client and
+select Group items by (None) or Clear All, message columns and the column order
+do not appear as originally configured.
+
+CAUSE
+=====
+
+When you choose Group By, the column order is changed to properly group the
+messages. MicrosoftExchange does not maintain the original order or size of the
+columns, and therefore cannot restore these settings.
+
+Selecting Group items by (None) or Clear All might cause the message column order
+to be rearranged. Some column sizes might also be set to 1 character wide,
+preventing the columns from being viewed properly. Any columns that were
+selected as part of the Group By criteria will be set to a length of 1 if Group
+items by (None) or Clear All is selected.
+
+RESOLUTION
+==========
+
+Select one of the predefined personal views by clicking Personal Views on the
+View menu to reset the view you desire.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

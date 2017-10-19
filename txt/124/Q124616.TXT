@@ -1,0 +1,66 @@
+DOCUMENT:Q124616  13-OCT-1999  [msnetwork]
+TITLE   :Single Window Resizes When Returning to MSN Central
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.0,1.05,1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.0, 1.05, 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use a single window to browse folders in MSN, The Microsoft Network and
+change the size of the window, the window returns to its original size when you
+return to MSN Central.
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+You can browse folders in The Microsoft Network using either separate windows
+for each folder or a single window that changes as you open each folder. To set
+this option, follow these steps:
+
+1. On the View menu, click Options.
+
+2. Click the Folder tab.
+
+3. Click the browsing option you want, and then click OK.
+
+If you use a single window to browse folders and change the window's size, the
+window will return to its original size when you return to MSN Central. Note
+that clicking the window's Close button does not return you to MSN Central, but
+closes the window. You must then double-click the MSN icon to open MSN Central.
+To return directly to MSN Central, click The Microsoft Network in the Go To A
+Different Folder box on the toolbar. To display the toolbar, click Toolbar on
+the View menu.
+
+Additional query words: msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN105 kbMSN120
+Version           : WINDOWS:1.0,1.05,1.2,1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

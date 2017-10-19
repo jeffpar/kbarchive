@@ -1,0 +1,192 @@
+DOCUMENT:Q86445  15-APR-2000  [powerpt]
+TITLE   :PPT: Equivalent Values for Genigraphics Colors: CMYK
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:2.0,2.01,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
+OPER/SYS:
+KEYWORDS:kbgraphic
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, versions 2.0, 3.0, 4.0, 4.0a, 4.0c 
+ - Microsoft PowerPoint for Macintosh, versions 2.0, 2.01, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft PowerPoint, versions 4.0 and earlier, include a table of predefined
+colors called the Genigraphics color palette. These colors are the ones most
+commonly used in PowerPoint. Like all colors in PowerPoint, they are represented
+internally by RGB (red, green, blue) values that can range from zero through
+65,535.
+
+Some applications represent their colors using CMYK (cyan, magenta, yellow,
+black) values. These values are typically represented as percentages. The
+following table provides the approximate conversion of the PowerPoint RGB values
+to the CMYK percentages. The table includes all the predefined Genigraphics
+colors as well as the standard VGA pure colors.
+
+NOTE: PowerPoint 7.0 does not use the same color naming scheme as PowerPoint
+versions 4.0 and earlier do. In addition, PowerPoint 7.0 uses a scale of 0-255
+instead of 0-65,535 for representing RGB values.
+
+MORE INFORMATION
+================
+
+PowerPoint 7.0
+--------------
+
+PowerPoint is abbreviated as PPT in the following tables.
+
+   VGA      PPT     PPT    PPT      %        %       %      %
+   Colors   Red   Green   Blue   Cyan  Magenta  Yellow  Black
+   ----------------------------------------------------------
+   WT       256     256    256      0        0       0      0
+   BK         0       0      0      0        0       0    100
+   R        256       0      0      0      100     100      0
+   G          0     256      0    100        0     100      0
+   B          0       0    256    100      100       0      0
+   C          0     256    256    100        0       0      0
+   M        256       0    256      0      100       0      0
+   Y        256     256      0      0        0     100      0
+              0       0      0      0        0       0      0
+   Dk Gray  128     128    128      0        0       0     50
+   Lt Gray  192     192    192      0        0       0     25
+   Dk Red   128       0      0      0       50      50     50
+   Dk Green   0     128      0     50        0      50     50
+   Dk Blue    0       0    128     50       50       0     50
+   Teal       0     128    128     50        0       0     50
+   Purple   128       0    128      0       50       0     50
+   Tan      128     128      0      0        0      50     50
+
+   Geni.    PPT     PPT    PPT      %        %       %      %
+   Colors   Red   Green   Blue   Cyan  Magenta  Yellow  Black
+   ----------------------------------------------------------
+   GY8       66      66     66      0       0       0      74
+   GY7      218     218    218      0       0       0      14
+   GY6      207     207    207      0       0       0      19
+   GY5      145     145    145      0       0       0      43
+   GY4      103     103    103      0       0       0      59
+   GY3       72      72     72      0       0       0      72
+   GY2       51      51     51      0       0       0      80
+   GY1       36      36     36      0       0       0      86
+
+   RD8      253       1     41      0      98      83       1
+   RD7      256     198    208      0      22      18       0
+   RD6      254     165    181      0      34      28       0
+   RD5      248     102    129      0      56      46       0
+   RD4      229      65     93      0      64      53      10
+   RD3      208      14     48      0      75      62      18
+   RD2      122       0     22      0      47      39      52
+   RD1       63       0     11      0      24      20      75
+
+   OR8      256      81      8      0      68      96       0
+   OR7      253     210    194      0      16      23       1
+   OR6      256     163    125      0      36      51       0
+   OR5      246     124     74      0      47      67       3
+   OR4      244      91     28      0      59      84       4
+   OR3      188      55      0      0      52      73      26
+   OR2      114      33      0      0      31      44      55
+   OR1       62      20      3      0      16      23      75
+
+   YO8      255     156      3      0      38      98       0
+   YO7      254     227    186      0      10      26       0
+   YO6      247     191    105      0      21      55       3
+   YO5      240     145      0      0      36      93       6
+   YO4      173     105      0      0      26      67      32
+   YO3      114      69      0      0      17      44      55
+   YO2       77      46      0      0      11      29      70
+   YO1       55      33      0      0       9      21      78
+
+   YW8      251     254      0      1       0      99       0
+   YW7      253     255    185      0       0      27       0
+   YW6      234     237     94      0       0      55       7
+   YW5      179     185      0      2       0      72      27
+   YW4      119     122      0      1       0      47      52
+   YW3       79      80      0      0       0      30      69
+   YW2       58      60      0      0       0      23      76
+   YW1       41      42      0      0       0      16      83
+
+   YG8      128     256      0     50       0     100       0
+   YG7      219     256    184     14       0      27       0
+   YG6      164     243     95     30       0      57       5
+   YG5       96     202      0     41       0      78      21
+   YG4       68     142      0     29       0      55      44
+   YG3       49     101      1     20       0      39      60
+   YG2       32      68      0     14       0      26      73
+   YG1       25      52      0     10       0      20      79
+
+   GN8        0     256      0    100       0     100       0
+   GN7      201     255    201     21       0      21       0
+   GN6      163     256    164     36       0      36       0
+   GN5       82     220      0     54       0      86      13
+   GN4        0     174      0     68       0      68      31
+   GN3        3     125      3     47       0      47      51
+   GN2        0      85      0     32       0      32      67
+   GN1        0      62      0     24       0      24      75
+
+   BG8        0     223    203     87       0       8      12
+   BG7      193     255    250     24       0       1       0
+   BG6      140     245    234     40       0       3       4
+   BG5        0     183    166     71       0       7      28
+   BG4        0     151    136     58       0       5      41
+   BG3        0     108     97     41       0       3      58
+   BG2        0      79     72     30       0       2      69
+   BG1        0      53     48     20       0       1      79
+
+   BU8       17      80    252     91      67       0       1
+   BU7      194     207    256     24      19       0       0
+   BU6      163     194    255     36      23       0       0
+   BU5       97     143    254     61      43       0       0
+   BU4       51     101    252     78      58       0       1
+   BU3        6      61    232     88      67       0       9
+   BU2        0      40    160     62      47       0      37
+   BU1        8      30     88     31      23       0      65
+
+   VT8      137       1    244     41      94       0       4
+   VT7      227     190    256     10      25       0       0
+   VT6      213     160    256     16      37       0       0
+   VT5      183      96    250     25      60       0       2
+   VT4      146      52    219     28      65       0      14
+   VT3      124       0    228     41      89       0      10
+   VT2       81       0    147     26      57       0      42
+   VT1       41       0     74     12      28       0      71
+
+   RV8      220       0    129      0      86      35      13
+   RV7      254     193    229      0      23       9       0
+   RV6      244     160    210      0      32      13       4
+   RV5      250      90    183      0      62      25       2
+   RV4      217      49    146      0      65      27      14
+   RV3      181       0    105      0      70      29      29
+   RV2      111       0     68      0      43      16      56
+   RV1       60       0     36      0      23       9      76
+
+Additional query words: 2.00 2.01 3.00 4.00 4.00a 4.00c 7.00 ppt95 winppt macppt mac_ppt power point mac
+
+======================================================================
+Keywords          : kbgraphic 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt700Search kbPowerPt400 kbPowerPt200Mac kbPowerPt300Mac kbPowerPt201Mac kbPowerPt400Mac kbPowerPt200 kbPowerPt300 kbPowerPt400c kbPowerPt400a
+Version           : MACINTOSH:2.0,2.01,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

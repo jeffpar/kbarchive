@@ -1,0 +1,64 @@
+DOCUMENT:Q260562  02-JUL-2002  [exchange]
+TITLE   :XIMS: Routing Restrictions: "and" or "or" Options
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you click the Routing tab and then click Routing Restrictions to configure
+the Microsoft Exchange Server Internet Mail Service, the following three check
+boxes are displayed:
+
+ - "Hosts and Clients that can successfully authenticate"
+
+ - "Hosts and Clients with these IP addresses"
+
+ - "Hosts and Clients connecting to these internal addresses"
+
+If any of the preceding check boxes are selected and the host or client meets any
+of the selected criteria, the message is allowed for relay. For example, if you
+click to select two of the three check boxes, the message does not have to meet
+the criteria for both selected check boxes; the message only has to meet the
+criteria for one of the selected check boxes. Therefore, these check boxes
+reflect "or" requirements, not "and" requirements.
+
+If you do set the IMS to use Routing Restrictions you must choose one of the
+options available in Routing Restrictions. If none of the options is selected
+the server becomes an open relay.
+
+In terms of Boolean operators we do use the "or" (union) but if there is no value
+specified we use the set of everyone which turns the server into an open relay.
+
+Additional query words: IMS
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

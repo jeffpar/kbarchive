@@ -1,0 +1,272 @@
+DOCUMENT:Q162602  14-NOV-2000  [word97]
+TITLE   :WD97: Questions About Saving in the Word 6.0/95 File Format
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 kbusage kbconversion word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains answers to questions about the following:
+
+ - Using the Word 6.0/95 converter
+
+   -or-
+
+ - Saving and opening a Word 97 document in Word 6.0 or Word 7.0
+
+This article applies to Microsoft Word 97. It does not apply to Microsoft Word 97
+for Windows, Service Release 1 (SR-1).
+
+For information about saving in Word 6.0 or 7.0 format from Microsoft Word 97
+SR-1, please see the following article in the Microsoft Knowledge Base:
+
+   Q171684 WD97: Differences Between Binary and RTF Export Converters
+
+MORE INFORMATION
+================
+
+1. Q. What is the best method to use to share documents between Word 97 and Word
+   6.0 or 7.0?
+
+   A. The best method is to use the Word 97 import converter for Word 6.0 and
+   7.0. When you use the Word 97 import converter, Word 6.0 and Word 95 can read
+   Word 97 documents directly. There are several advantages to this method:
+
+    - The file size does not increase. That is, the file will be no larger than
+      when you saved it from Word 6.0, Word 7.0, or Word 97.
+
+    - You will not have to remember to use the Save As command to save the file
+      in a different format. You just save the document as a Word Document. With
+      the converter, you can use Word 97 to open Word 6.0 and Word 7.0 documents
+      easily, and you can use Word 6.0 or Word 7.0 to open the Word 97 documents
+      easily. Because you won't have to save the document in a different format,
+      you will also avoid the prompts that ask you if you want to overwrite the
+      existing format with a new format.
+    - Using the Word 97 import converter is the best way to preserve formatting
+      from Word 97 documents. This will give you the best results when you move
+      documents from Word 97 to an earlier version of Word.
+
+2. Q. Where can I get the Word 97 import converter?
+
+   A. The converter is available in the "wrd97cnv.exe" file. This file, a
+   self-extracting executable file, automatically installs the converter on your
+   computer.
+
+   For additional information about how to obtain the Word 97 converter, please
+   see the following article in the Microsoft Knowledge Base:
+
+   Q162214 How to Obtain the Word 97 Converter
+
+3. Q. How does the Word 97 import converter work?
+
+   A. You can work on a document in Word 97 and save it as a "Word Document"
+   (Word 97 native format). You can then take this document to another computer
+   running an earlier version of Word with the Word 97 import converter
+   installed. You can open the Word 97 document in the earlier version of Word
+   directly. You can work on it, and when you save the document, save it as a
+   "Word Document" (Word 6.0 or Word 7.0 native format). Because Word 97 can
+   read Word 6.0 and Word 7.0 files without a converter, you can then take the
+   document back to the computer running Word 97, open the document, work on it,
+   and once again save the document as a "Word Document" (Word 97 native
+   format). On both computers, you will be saving in native Word Document
+   format, without having to change the file type.
+
+4. Q. When I double-click Wrd97cnv.exe, a Setup program is run. What files does
+   this Setup program install?
+
+   A. Depending on the version of Word you're using, Word installs either the
+   Mswrd832.cnv file (32-bit version of the converter for people running Word
+   7.0) or the Ms.cnv file (the 16-bit version of the converter for people
+   running Word 6.0). This Setup program also installs a Readme file called
+   "Wrd97cnv.doc " and it updates the necessary registry settings. For more
+   information, see the Readme (Wrd97cnv.doc) file installed with the Word 97
+   converter.
+
+5. Q. In Word 97 I can use the Save As command and save a file in the Word
+   6.0/95 format. When is this a good method to use?
+
+   A. This is a good method to use if you do not have the Word 97 import
+   converter installed on the computers running the earlier versions of Word.
+   Some disadvantages to this method are that
+
+    - The document generated when you save a Word 97 document using the Save As
+      Word 6.0/95 option can have a significantly larger file size than the
+      original Word 97 document.
+
+    - The Word 6.0/95 export converter generates a Rich Text Format document
+      with a .doc file extension. This file extension may cause confusion when
+      you exchange files because Word will prompt you with questions about
+      overwriting one file format with another.
+
+6. Q. Why is the Word 6.0/95 file larger than the original file?
+
+   A. When you save a document from Microsoft Word 97 for Windows to Word 6.0/95
+   format, you generate a Rich Text Format (RTF) file. RTF is a text
+   representation of a binary file. It is the format that most converters are
+   based on. Because of its nature, RTF inherently generates a larger file than
+   the original binary file when the document includes a great deal of
+   formatting, pictures, or other objects.
+
+   Relatively small documents containing little formatting and few objects may
+   actually be smaller in Rich Text Format than in the native Word Document
+   format.
+
+   An updated version of the Word 6.0/95 export converter is now available. This
+   converter will allow you to save from Microsoft Word 97 into a true Word 6.0
+   or 7.0 binary format.
+
+   To obtain the updated export converter, do one of the following:
+
+Install Office 97 Service Release 2
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q151261 OFF97: How to Obtain and Install MS Office 97 SR-2
+
+Obtain the Office Converter Pack
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q212265 WD: Additional Text Converters and Image Filters Available in
+   Microsoft Office Converter Pack
+
+7. Q. What is RTF (Rich Text Format)?
+
+   A. The Rich Text Format (RTF) standard is a method of encoding formatted text
+   and graphics for easy transfer between MS-DOS, Windows, Windows 95, OS/2, and
+   Apple Macintosh applications.
+
+   The RTF standard provides a format for text and graphics interchange that can
+   be used with different output devices, operating environments, and operating
+   systems. RTF uses the ANSI, PC-8, Macintosh, or IBM PC character set to
+   control the representation and formatting of a document, both on the screen
+   and in print. With the RTF standard, you can transfer documents created under
+   different operating systems and with different software.
+
+8. Q. What happens when I save a document as Word 6.0/95 from Word 97 and what
+   types of problems will I see?
+
+   A. If you are working on a document in Word 97 and then decide to save the
+   file in Word 6.0/95 format, you save the file as a modified RTF document with
+   a .doc extension. If you then open this document in Word 6.0 or Word 7.0, you
+   may notice the following behaviors:
+
+    - If the "Confirm Conversions" option is enabled, a dialog box will appear
+      asking you to convert from Rich Text Format rather than the Word Document
+      format you may expect. This occurs because Word can detect that the
+      document is actually an RTF file even though it has a .doc extension.
+
+    - If the "Confirm Conversions" option is not enabled, you may notice a
+      message on the status bar stating that Word is converting the document.
+      Because the document is an RTF file, a conversion is needed to convert it
+      to the Word 6.0 or Word 7.0 format even though the file has a .doc
+      extension.
+    - If you click the Save As option on the File menu, you may notice that Word
+      is proposing a file type of Rich Text Format (.rtf) and is suggesting a
+      new file name with an .rtf extension. You have a few options at this
+      point:
+
+   Option 1: Change the "Save file as type" option to "Word Document (.doc)."
+
+   This change will save the new version of your document over your previous
+   version and change the file format to Word 6.0 or Word 7.0 format. Because
+   Word 97 has a built in converter that allows it to read Word 6.0 and Word 7.0
+   files , this is the best solution in most situations.
+
+   Option 2: Choose OK.
+
+   The updated version of your document will be saved with the new file name with
+   an .rtf extension. You can save your work to this file and continue to use
+   this file with the .rtf extension.
+
+   NOTE: By default, Word only lists files with a .doc extension in the Open
+   dialog box. You must change the "List files of type" option to "Rich Text
+   Format (.rtf)" to see .rtf documents.
+
+9. Q. Why can't I just save my file in Rich Text Format?
+
+   A. There are several advantages to saving in Word 6.0/95 format over saving in
+   Rich Text Format:
+
+    - The Word 6.0/95 export converter preserves more formatting than the
+      standard RTF export converter. To preserve the most formatting possible,
+      use the Word 97 import converter with Word 6.0 or Word 7.0.
+
+    - The Word 6.0/95 RTF file that is generated is actually smaller than the
+      RTF file that is generated by the standard Rich Text Format export
+      converter.
+
+10. Q. Where can I find more information about the Word 6.0/95 Save option and
+   the Word 97 converter?
+
+   A. Additional information about file converters is available from the
+   following sources:
+
+    - The Microsoft Office 97 Resource Kit (ORK). The ORK is available on the
+      Microsoft Web site at:
+
+   http://www.microsoft.com/office/ork/
+
+      For more information about how to obtain the Office Resource Kit (ISBN:
+      1-57231-329-3), call (800) MS-PRESS in the United States or (800) 667-1115
+      in Canada.
+
+    - The WDREAD8.TXT readme file. This file is installed in the \Program
+      Files\Microsoft Office\Office folder when you run the Office 97 Setup
+      program.
+
+11. Q. Where can I find more information about formatting that is retained
+   through the conversion process?
+
+   A. Click the Office Assistant, type "Save as Word 7.0" click Search, and then
+   click to view "Results of saving Word 97 documents in other formats."
+
+   NOTE: If the Assistant is hidden, click the Office Assistant button on the
+   Standard toolbar. If Word Help is not installed on your computer, please see
+   the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+   Chapter 15 of the Office Resource Kit also contains information about
+   formatting that is retained through the conversion process. The ORK is
+   available on the Microsoft Web site at:
+
+   http://www.microsoft.com/office/ork/
+
+   For more information about how to obtain the Office Resource Kit (ISBN:
+   1-57231-329-3), call (800) MS-PRESS in the United States or (800) 667-1115
+   in Canada.
+
+Additional query words: convert read
+
+======================================================================
+Keywords          : kbualink97 kbusage kbconversion word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

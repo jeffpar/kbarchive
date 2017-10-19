@@ -1,0 +1,70 @@
+DOCUMENT:Q146681  16-MAR-1999  [exchange]
+TITLE   :XFOR: DXA Improperly Appending 001 to Friendly Names in the GAL
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you run Directory Synchronization (DirSync) between Microsoft Exchange
+Server and Microsoft Mail (MSMail) Postoffices, with the Microsoft Exchange
+Server as the DirSync Server, certain friendly names in the Global Address List
+(GAL) on the MSMail side may have a 001 or 002 appended. These names are not
+located on the local MSMail Postoffice. Though this is by design in the case of
+duplicate mailbox or friendly names, which is explained in article Q146676, it
+is not normal behavior in most other circumstance.
+
+CAUSE
+=====
+
+The cause is in the logic behind determining when to add this appendage. There
+are times when this appendage is necessary. Again, please reference article
+Q146676.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 4.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words: post35fix
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

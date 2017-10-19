@@ -1,0 +1,60 @@
+DOCUMENT:Q271490  18-APR-2001  [mspress]
+TITLE   :NETSET.EXE Cannot Change Machine Name And Join Domain Simultaneo
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows 2000 Server Resource Kit ISBN 1-57231-805-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use the Windows 2000 Server Resource Kit utility NETSET.EXE to change an
+individual computer name and, at the same time, add the computer to a domain,
+you will not be able to log into the domain with the new name.
+
+MORE INFORMATION
+================
+
+You will not receive an error message after you add the appropriate entries to
+the unattend.txt file and run NETSET.EXE. However, you will not be able to log
+into the domain because the computer joined the domain before the name was
+changed.
+
+To work around this, you will need to perform these two operations separately.
+The first procedure requires changing the individual computer name and rebooting
+the client. You will then need to add the computer to the domain and reboot the
+client a second time.
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: RKBOOK RESKIT WIN2000 1-57231-805-8 TOOLS WIN2K W2K SERVER
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

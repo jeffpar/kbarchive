@@ -1,0 +1,59 @@
+DOCUMENT:Q113116  22-JUL-2001  [visualc]
+TITLE   :DOC: Undocumented Fatal Error C1053
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ERRORS.HLP file does not document fatal error C1053, "function too large for
+global optimizations." This error can occur on very large blocks of code.
+
+CAUSE
+=====
+
+The compiler has a limited amount of space available for storing temporary
+variables that it uses to track code within a function or code block.
+
+RESOLUTION
+==========
+
+The compiler could not handle the size of the specified function. You can
+compile without the /Og switch (this includes the /Ox and /O2 switches) or split
+up your code to reduce the size of the function. Note that a function which
+calls inline routines can grow very large.
+
+This was corrected in Microsoft Visual C++, version 2.0
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

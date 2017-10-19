@@ -1,0 +1,82 @@
+DOCUMENT:Q199729  21-MAR-1999  [sms]
+TITLE   :SMS: Missing Records in WorkstationStatus Table Generate Badmif
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase kbsms120bug kbDataLoader
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If, for an undetermined reason, there is no existing record in the
+WorkstationStatus table when dataloader attempts to load a MIF, the MIF will be
+moved to the Badmifs directory. The following appears in the datalodr.log: (This
+example shows SQL tracing enabled.)
+
+> Updating No-History group: MICROSOFT|WORKSTATION_STATUS|1.0... >
+SMS_INVENTORY_DATA_LOADER 12/23/98 1:03:02 PM 126 > SQL>>> select
+'X' from WorkstationStatus where datakey = 47471 > SMS_INVENTORY_DATA_LOADER
+12/23/98 1:03:02 PM 126 > SQL>>>>> Done.
+SMS_INVENTORY_DATA_LOADER 12/23/98 1:03:02 PM > 126 > QL>>>
+insert into WorkstationStatus (Files_Not_Installed0, >
+System_Files_Not_Modified0, LastHWScan, LastSWScan, >
+Failed_Hardware_Checks0, Standalone_Workstation0, datakey, ComponentName) >
+values ("None", "None", "19981223 12:50:37", "19981223 12:50:38", "None", >
+"No", 47471, "Workstation") SMS_INVENTORY_DATA_LOADER 12/23/98 > 1:03:02 PM
+126 > SQL>>>>> Done. SMS_INVENTORY_DATA_LOADER 12/23/98
+1:03:02 PM > 126 > CMachineDataTable::AddToMachineDataTable - entry
+already in table > SMS_INVENTORY_DATA_LOADER 12/23/98 1:03:02 PM 126 >
+CGroup::ProcessNoHistoryGroup - couldn't insert new group data >
+SMS_INVENTORY_DATA_LOADER 12/23/98 1:03:02 PM 126 > finished processing
+current machine. SMS_INVENTORY_DATA_LOADER > 12/23/98 1:03:02 PM 126 >
+Cannot process MIF X00000007.MIF, moving it to BADMIFS >
+SMS_INVENTORY_DATA_LOADER 12/23/98 1:03:02 PM
+
+WORKAROUND
+==========
+
+Two options are available to work around this problem:
+
+ - The badmifs exhibiting this particular problem can be moved back to the
+   process directory. Dataloader will process them correctly the second time.
+
+ - The badmifs exhibiting this particular behavior could be deleted (the
+   information will be lost), and the next inventory cycle should process
+   properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms hinv32 smssql
+
+======================================================================
+Keywords          : kbDatabase kbsms120bug kbDataLoader 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

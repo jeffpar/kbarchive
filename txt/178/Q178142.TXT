@@ -1,0 +1,68 @@
+DOCUMENT:Q178142  07-MAY-2002  [homegame]
+TITLE   :FS95: File Available to Correct Third-Party Scenery Problems
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbfile kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A self-extracting, self-installing file designed to correct certain problems
+caused by the use of third-party scenery packages with Microsoft Flight
+Simulator 95 is available from the Microsoft Download Center.
+
+The Fepatch.exe file corrects the problems of missing ILS transmitters and
+incorrect ATIS messages in third-party scenery packages that overlay the default
+scenery in Flight Simulator 95.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   Fepatch.exe
+   (http://download.microsoft.com/download/fsim95/Patch/1/WIN98/EN-US/Fepatch.exe)
+
+Release Date: Sep-04-1997
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+Additional query words: 1.00 fs95 flightsim fltsim flt sim update correction
+
+======================================================================
+Keywords          : kb3rdparty kbfile kbusage 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

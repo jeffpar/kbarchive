@@ -1,0 +1,59 @@
+DOCUMENT:Q98863  07-MAY-2001  [visualc]
+TITLE   :DOC: SB_ENDSCROLL Code Missing from OnHScroll() Documentation
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbdocfix kbMFC kbScrollBar KbUIDesign kbVC100
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows 
+    - Microsoft Visual C++ 32-bit Edition 
+-------------------------------------------------------------------------------
+
+The SB_ENDSCROLL scroll bar notification code, which indicates that the
+user has released the mouse button after scrolling, is missing from the
+documentation for the CWnd::OnHScroll() function. One use of the
+SB_ENDSCROLL message defers time-consuming drawing until the user stops
+scrolling.
+
+The SB_ENDSCROLL code is included in the documentation for the
+CWnd::OnVScroll() function and in the WM_HSCROLL message documentation in
+the Windows Software Development Kit (SDK) "Programmer's Reference, Volume
+3: Messages, Structures, and Macros" manual. The scroll bar notification
+codes are also listed in the Windows header file WINDOWS.H and in the
+Windows NT header file WINUSER.H.
+
+The documentation has been corrected in later versions.
+
+SUMMARY
+=======
+
+ 
+
+Additional query words: 2.00 2.10
+
+======================================================================
+Keywords          : kbdocfix kbMFC kbScrollBar KbUIDesign kbVC100 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

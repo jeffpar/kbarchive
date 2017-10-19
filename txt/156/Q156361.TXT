@@ -1,0 +1,61 @@
+DOCUMENT:Q156361  09-AUG-2001  [winnt]
+TITLE   :Names Disappear from Name List in Directory Auditing Window
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the File Auditing or Directory Auditing window of File Manager, a list of
+users or groups is added to the Name window. One or more items in the Events to
+Audit window are selected for success or failure. When you click OK, security is
+applied to the selected objects and the Auditing window closes. Upon reentering
+the Auditing window, only one or some of the users or groups on the Names list
+are retained. The rest have disappeared from the list.
+
+CAUSE
+=====
+
+Each name entered on the Names list must be selected individually, and one or
+more events to be audited must be selected for that entry. Repeat this procedure
+for each listed name. Names for which no events have been selected will
+disappear when you click the OK button to exit the Directory Auditing window.
+This is expected behavior.
+
+RESOLUTION
+==========
+
+Select each name in the Name window individually and select at least one event
+to audit for success or failure.
+
+Additional query words: audit prodnt
+
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q255647  08-AUG-2001  [winnt]
+TITLE   :Resource Monitor Problem Results in Event 1116
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP5
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 SP5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a Resource Monitor process experiences a problem and quits, the Cluster
+service initiates another Resource Monitor process to control the resources of
+the previous process. When this occurs, the following system event is logged:
+
+   Event: 1116
+   Source: Clussvc
+   Description: The Cluster Resource Monitor died unexpectedly, an attempt will
+   be made to restart it.
+
+MORE INFORMATION
+================
+
+With Windows NT 4.0 Service Pack 4 and earlier, a Resource Monitor process
+problem results in an entry in the Cluster Diagnostic log file, but no entry in
+the System event log. With Service Pack 5 or later, the event is logged in the
+System event log. Such a problem is rare, and may indicate problems within a
+third-party resource dynamic-link library (DLL).
+
+If a Resource Monitor quits, regardless of which service pack is installed, the
+following error message appears in the Cluster Diagnostic log file (if logging
+is enabled) and a new Resource Monitor is created to replace it:
+
+   [FM] Resource monitor terminated!
+
+Additional query words: mscs fail failure
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp5 kbWinNTS400search
+Version           : winnt:4.0 SP5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

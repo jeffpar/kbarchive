@@ -1,0 +1,68 @@
+DOCUMENT:Q242115  10-AUG-2001  [winnt]
+TITLE   :Computer Is Slow Locally But Is Normal Over Remote Connection
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use your Microsoft Windows NT 4.0-based computer locally, it may
+respond slowly. For example, Windows NT Explorer, Control Panel, Network
+Neighborhood, and so on, may take several minutes to start. However, your
+computer may respond normally over a remote connection.
+
+CAUSE
+=====
+
+This behavior can occur if the Remote Procedure Call (RPC) service is not
+running.
+
+RESOLUTION
+==========
+
+To resolve this issue, set the RPC service to Automatic, and then start the
+service:
+
+1. In Control Panel, double-click Services.
+
+2. In the Service box, click Remote Procedure Call (RPC) Service, and then click
+   Startup.
+
+3. Click Automatic, and then click OK.
+
+4. Click Start.
+
+5. Click Close to close the Services dialog box.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

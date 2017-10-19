@@ -1,0 +1,68 @@
+DOCUMENT:Q190003  04-AUG-2000  [iis]
+TITLE   :Error -1073741670(0xC0000098) Using the HTML Administrator
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to use the HTML version of the Internet Service Manager (also
+known as the HTML Administration, or HTMLA) one of the following errors is
+displayed in Internet Explorer:
+
+   -1073741670(0xC0000098)
+   -1073741670 (0xc000009a)
+
+CAUSE
+=====
+
+Windows is unable to contact the domain controller in order to validate your
+user session. This usually occurs when the connection to the domain controller
+is lost.
+
+WORKAROUND
+==========
+
+To work around this problem, reestablish the connection to the domain
+controller.
+
+MORE INFORMATION
+================
+
+Although you can log on to Windows NT using cached permissions, Internet
+Information Server (IIS) does not use them. IIS must communicate with the domain
+controller in order to validate the account.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,108 @@
+DOCUMENT:Q245062  25-APR-2000  [foxpro]
+TITLE   :PRB: OptionButtons Do Not Hold Logical Values
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbCtrl kbDesigner kbvfp500 kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 5, it was possible to set OptionButtons to have logical values
+instead of numeric. However, in Visual FoxPro 6, this behavior changed. While
+the buttons can be set to logical values, clicking on a button will cause the
+button's value property to be reset to numeric.
+
+CAUSE
+=====
+
+OptionButtons should only have numeric values, even if the interface allows them
+to be set differently.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code in Visual FoxPro 6.0:
+
+   PUBLIC loForm
+
+   loForm = CREATEOBJECT("form")
+   WITH loForm
+      .AddObject('opgTest', 'optiongroup')
+      WITH .opgTest
+         .ButtonCount = 3
+
+         .Option1.Value = .T.
+         .Option2.Value = .F.
+         .Option3.Value = .F.
+
+         .Visible = .T.
+         .AutoSize = .T.
+      ENDwith
+      .Visible = .T.
+   ENDwith
+
+2. Open the debugger, and put the following values in the Watch window:
+
+   loForm.opgTest.option1.value
+   loForm.opgTest.option2.value
+   loForm.opgTest.option3.value
+
+3. Click the buttons and watch the debugger.
+
+    - When first run:
+
+   .T.
+   .F.
+   .F.
+
+    - Click Option2:
+
+   0
+   1
+   .F.
+
+    - Click Option3:
+
+   0
+   0
+   1
+
+Additional query words: kbDSE
+
+======================================================================
+Keywords          : kbCtrl kbDesigner kbvfp500 kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,88 @@
+DOCUMENT:Q260345  29-OCT-2000  [winnt]
+TITLE   :BUG: Channel Screen Saver in Brazillian Windows 2000 OPK Fails
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbOSWin2000bug kbDSupport kbGrpDSOPK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you perform an installation of Microsoft Windows 2000 Professional with the
+Brazillian OEM Preinstall Kit (OPK), the channel screen saver does not work.
+
+RESOLUTION
+==========
+
+As a temporary workaround you can:
+
+1. Start the screen saver. When the computer stops responding (hangs), press
+   CTRL+ALT+DEL to open the Task Manager.
+
+2. In the Windows Task Manager dialog box, click the Processes tab. Locate the
+   exact screen saver file that is being run for the channel saver (it is
+   PROTEI~1.SCR).
+
+3. Find that .scr file and rename it to a different name.
+
+Note that now the name in the drop-down combo box of the Screen Saver tab has
+also changed. The screen saver will now work correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+After a complete installation of Microsoft Windows 2000 Professional (Brazilian)
+OPK:
+
+1. Select the Screen Saver tab in the Display Applet of Control Panel.
+
+2. In the drop-down combo box for selecting the screen saver, choose "Proteo de
+   tela do canal". This is the default Microsoft Internet Explorer channel
+   screen saver.
+
+3. Click Visualizar or the Preview button.
+
+The cursor flickers but the screen saver never starts.
+
+Additional query words: brazilian, channel screen saver,
+
+======================================================================
+Keywords          : kbOSWin2000 kbOSWin2000bug kbDSupport kbGrpDSOPK 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

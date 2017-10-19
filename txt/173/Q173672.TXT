@@ -1,0 +1,60 @@
+DOCUMENT:Q173672  21-DEC-1999  [mspress]
+TITLE   :TCP/IP Training Kit Does Not Include CD-Key
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP Training 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Microsoft Windows NT Server version 4.0 Evaluation Edition,
+the Setup program asks you for a CD-key and explains that this key may be found
+on the back of your CD-ROM jewel case. There is no CD-key on the back of the
+disc sleeve included in this kit.
+
+RESOLUTION
+==========
+
+When prompted, enter the following CD-key:
+
+   " 040-0048126 " (without the quotation marks)
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the "Microsoft TCP/IP Training"
+kit.
+
+Additional query words: press ms_press bookbug prodnt eval evaluation 1- 57231-623-3
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

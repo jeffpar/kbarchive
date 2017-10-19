@@ -1,0 +1,87 @@
+DOCUMENT:Q64506  08-OCT-1999  [win95x]
+TITLE   :Mouse Systems Bus Mouse and Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When running under Windows, the Mouse Systems Bus Mouse should be set to an
+interrupt level (IRQ) of 2 to 7. You may experience erratic operation if the bus
+card is set for an IRQ higher than IRQ 7, or for an IRQ that the system is
+already using. (According to Mouse Systems technical support, the bus mouse can
+be configured for IRQ 2 to 15.)
+
+In addition, to ensure compatibility with Windows, be sure that your Mouse
+Systems MS-DOS mouse driver is version 7.0 or later.
+
+MORE INFORMATION
+================
+
+The following is a list of devices and the IRQ numbers that they commonly use.
+Be sure that your mouse setting does not conflict with any other devices you may
+be using:
+
+   Device                           IRQ
+   ------------------------------------
+
+   AT/386 hard disk controller       2
+   COM2 (serial port 2)              3
+   COM1 (serial port 1)              4
+   PC/XT hard disk controller        5
+   LPT2 (parallel port 2)
+   LPT1 (parallel port 1)            7
+
+Update Your Mouse Systems Driver for Windows 3.0, 3.0a
+------------------------------------------------------
+
+You may need to update your Mouse Systems mouse drivers to run Windows 3.0 or
+3.0a successfully. Mouse Systems provides an application on its bulletin board
+(BBS) called WIN3DRV.EXE, which is a self-extracting file that copies all the
+files you need to drive A.
+
+After you download the WIN3DRV.EXE file from the BBS:
+
+1. Run Setup from the WINDOWS directory, and choose Other for the mouse section
+   of Setup.
+
+2. Follow the directions on the screen to load the correct Windows 3.0 mouse
+   driver.
+
+For further information, please call Mouse Systems technical support.
+
+The Mouse Systems products included here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3.1 3.10 3.11 isv
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

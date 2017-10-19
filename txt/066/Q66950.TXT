@@ -1,0 +1,75 @@
+DOCUMENT:Q66950  06-NOV-1999  [win16sdk]
+TITLE   :Playing a Metafile into Another Metafile in Windows
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Unlike Windows versions 2.x, versions 3.0 and 3.1 of Microsoft Windows permit an
+application to play a metafile into another metafile. Under Windows 3.0, the
+destination metafile must be a disk-based metafile. This restriction has been
+removed from Windows 3.1.
+
+MORE INFORMATION
+================
+
+Under Windows 3.0, playing a metafile into a new memory metafile fails. The
+following is a code fragment that demonstrates the correct procedure for
+successfully playing a metafile into a new, disk-based metafile that is
+compatible with both Windows 3.0 and 3.1.
+
+   / declare variables
+      HANDLE hDestDC, hSrcHmf;
+
+   // get a handle to the source metafile
+      hSrcHmf = GetMetaFile((LPSTR)"SOURCE.WMF");
+
+   // create a disk-based destination metafile
+   // NOTE: The parameter cannot be NULL.
+   //       That would create a memory metafile.
+      hDestDC = CreateMetaFile((LPSTR)"DEST.WMF");
+
+   // play the source metafile into the newly created metafile
+      PlayMetaFile(hDestDC, hSrcHmf) ;
+
+   // get rid of the source metafile
+      DeleteMetaFile(hSrcHmf) ;
+
+   // close the destination metafile
+      hSrcHmf = CloseMetaFile(hDestDC) ;
+
+At this point, the handle to the destination metafile can be used, or it can be
+deleted and retrieved later when it is needed.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

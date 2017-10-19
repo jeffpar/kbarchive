@@ -1,0 +1,58 @@
+DOCUMENT:Q169399  17-DEC-2000  [win95x]
+TITLE   :High-Color Icons Displayed in 256-Color Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbdisplay kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows 95 is running in a video resolution with 256 colors, high- color
+icons may be displayed instead of the 256-color icons. These icons may look
+distorted or washed out because of the lack of colors available to display them
+with.
+
+CAUSE
+=====
+
+The video resolution in Windows 95 was changed from a high-color resolution to a
+256-color resolution using the QuickRes program.
+
+RESOLUTION
+==========
+
+Restart the computer to cause Windows 95 to use the correct icons for the
+current video color depth.
+
+Note that the opposite behavior occurs if the color depth is changed from 256
+colors to high color. This causes the 256-color icons to be used instead of the
+high-color icons.
+
+======================================================================
+Keywords          : kbdisplay kbui win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

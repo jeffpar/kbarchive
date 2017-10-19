@@ -1,0 +1,76 @@
+DOCUMENT:Q276054  11-JAN-2001  [sms]
+TITLE   :SMS: Unable to Remote Control Computers at Remote Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+As a Systems Management Server (SMS) administrator, when you attempt to initiate
+a remote control session on a client workstation that is located at a remote
+site on a different physical network, the session is not successful, and you
+receive the error message "Remote Control Agent not found." Although the
+workstations client components include the Remote Control component, and it
+displays a status of installed, you may still be unable to initiate the remote
+control session.
+
+If you first establish a remote control session with the remote site server, and
+then you attempt the remote control session to the client, this method will be
+successful. In addition, attempts to establish a remote control session by using
+a command line such as "remote.exe 2 192.168.32.55" might not succeed. After you
+successfully establish a connection with the computer, subsequent connections to
+that computer are successful.
+
+MORE INFORMATION
+================
+
+This issue may be the result of NetBIOS name resolution issues. When SMS
+attempts to initiate a remote control session, it first attempts to resolve the
+hostname to IP address. If name resolution is not possible, you receive the
+error message "Remote Control Agent not found." NetBIOS name resolution problems
+can include any of the following possible causes:
+
+ - There is corruption in the Windows Internet Naming Service (WINS) database
+   that is preventing SMS Remote Control from correctly resolving the computer.
+
+ - An improperly configured Lmhosts file exists.
+
+ - There are workstations that are not configured to reference the WINS servers
+   for the local and remote location.
+
+In addition, if the local router is not configured with a static route to the
+remote subnet, the local SMS site server may not be able to determine a route to
+the remote client.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

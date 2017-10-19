@@ -1,0 +1,97 @@
+DOCUMENT:Q68989  31-OCT-1999  [utilities]
+TITLE   :FIX: HELPMAKE Decodes Help Database Incorrectly
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.03,1.05,1.06,1.07
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft HELPMAKE Utility for MS-DOS and OS/2, versions 1.03, 1.05, 1.06, 1.07 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a concatenated help database is decoded with either "Decode" (/D) or "Decode
+Unformatted" (/DU), HELPMAKE may be caught in an infinite loop that will
+eventually fill the hard disk.
+
+RESOLUTION
+==========
+
+When using HELPMAKE.EXE to decode concatenated help databases, you must use the
+"Decode Split" option (/DS).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with HELPMAKE for MS-DOS and OS/2.
+This problem was corrected in HELPMAKE version 1.08.
+
+MORE INFORMATION
+================
+
+If OS2.HLP is decoded with
+
+   helpmake /D /Ooutfile OS2.HLP
+
+HELPMAKE will decompress the first database in OS2.HLP over and over until either
+the disk fills up or you stop the program (with a CTRL+BREAK, for example).
+
+If OS2.HLP is decoded with
+
+   helpmake /DS OS2.HLP
+
+it is broken into STRUCT.HLP, MACROS.HLP, and TABLES.HLP. These help files can
+then be decoded properly with the /D or /DU option.
+
+If you don't know how a help file is assembled, the following are the steps to
+take to decompress it:
+
+1. Save a backup copy of the help file in case of problems.
+
+2. Rename the help file to "TEMP.HLP".
+
+3. Split the file as follows:
+
+   HELPMAKE /DS TEMP.HLP
+
+   If the file is not a concatenated database, you will get a single file with
+   the name of the help database as it was originally built (the internal
+   database name).
+
+   If the file is a concatenated database, you will get individual help files
+   with the internal database names. For OS2.HLP, these are STRUCT.HLP,
+   MACROS.HLP, and TABLES.HLP.
+
+4. Decode the resulting files as follows:
+
+   HELPMAKE /D TEMP1.HLP /OTEMP1.SRC
+   HELPMAKE /D TEMP2.HLP /OTEMP2.SRC
+
+Additional query words: 1.03 1.05 1.06 1.07
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword2 kbHELPMAKE kbZNotKeyword3 kbHELPMAKE106DOS
+Version           : MS-DOS:1.03,1.05,1.06,1.07
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

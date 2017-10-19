@@ -1,0 +1,59 @@
+DOCUMENT:Q136659  17-DEC-2000  [win95x]
+TITLE   :Iomega Zip Drive Appears Twice in My Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open My Computer, an Iomega Zip Drive connected to a parallel port may
+appear twice, once as a floppy disk drive, and once as a removable media drive.
+Both icons provide access to the Iomega Zip Drive.
+
+CAUSE
+=====
+
+Both the real- and protected-mode drivers for the drive are loaded.
+
+RESOLUTION
+==========
+
+Disable the real-mode driver for the Iomega Zip Drive. For information about how
+to do so, please consult the drive's documentation or manufacturer.
+
+MORE INFORMATION
+================
+
+The Iomega Zip Drive is a removable media drive that connects to an external
+SCSI port or a parallel port.
+
+Additional query words: guest
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

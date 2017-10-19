@@ -1,0 +1,760 @@
+DOCUMENT:Q124617  08-AUG-2001  [winnt]
+TITLE   :Jetpack.exe Error Codes and Messages for Windows NT 3.5
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the error codes and messages used by Jetpack.exe (the
+Microsoft Windows NT Server utility that can be used to compact a WINS or DHCP
+database).
+
+MORE INFORMATION
+================
+
+Success
+-------
+
+   0   Successful Operation
+
+Errors
+------
+
+   1   Function Not Yet Implemented
+
+System Errors
+-------------
+
+   100   JET_errRfsFailure
+   101   JET_errRfsFailure
+   102   Could not close DOS file
+   103   Could not start thread
+   104   Fail to get computername
+   105   System busy due to too many IOs
+
+Buffer Manager Errors
+---------------------
+
+   200   Buffer page evicted
+   201   Page not found
+   202   Cannot abandon buffer
+
+Directory Manager Errors
+------------------------
+
+   300   Out of page space
+   301   Itag too big
+   302   Record deleted
+   303   Tags used up
+   304   Conflict in BM Clean up
+   305   No Short Circuit Avail
+   306   Cannot horizontally split FDP
+   307   Cannot go up
+   308   On an FDP Node
+   309   May have left critical section
+   310   Moved through empty page
+   311   Device extent being extended
+   312   Found Less
+   313   Found Greater
+   314   Son out of range
+   315   Item out of range
+   316   Greater than all items
+   317   Last node of item list
+   318   First node of item list
+   319   Duplicated Item
+   320   Item not there
+   321   Some versions couldn't be cleaned
+   322   Version already existed
+   323   Reached Page Boundary
+   324   Reached Key Boundary
+   325   SridFather in page to free
+
+Record Manager Errors
+---------------------
+
+   400   Key too big (truncated it)
+   401   Too many key segments
+   402   Key is entirely NULL
+   403   No more keys to extract
+   404   Null segment in key
+   405   Separated long field
+
+Logging Recovery Errors
+-----------------------
+
+   500   Restore failed
+   501   Log file is corrupt
+   502   Last log record read
+   503   No backup directory given
+   504   The backup directory is not empty
+   505   Backup is active already
+   506   Fail to restore (copy) database
+   507   No databases for restore found
+   508   jet.log for restore is missing
+   509   Missing the log file for check point
+   510   Fail when writing to log file
+   511   Fail to incremental backup for non-contiguous generation number
+   512   Fail to make a temp directory
+   513   Fail to clean up temp directory
+   514   Version of log file is not compatible with Jet version
+   515   Version of next log file is not compatible with current one
+   516   Log is not active
+   517   Log buffer is too small for recovery
+   518   Retry to LGLogRec
+
+   1001   API not supported
+   1002   Invalid name
+   1003   Invalid API parameter
+   1004   Column is NULL-valued
+   1005   No such reference
+   1006   Buf too short, data truncated
+   1007   Database is already attached
+   1008   On end point
+   1009   Sort does not fit in memory
+   1010   Invalid database id
+   1011   Out of Memory
+   1012   Couldn't allocate a page
+   1013   Max # of cursors allocated
+   1014   JET_errOutOfBuffers
+   1015   Too many indexes
+   1016   Too many columns in an index
+   1017   Record has been deleted
+   1018   Read verification error
+   1019   Obsolete database format
+   1020   No more file handles
+   1021   Disk not ready
+   1022   JET_errDiskIO
+   1023   JET_errInvalidPath
+   1024   JET_errFileShareViolation
+   1025   JET_errFileLockViolation
+   1026   JET_errRecordTooBig
+   1027   Database limit reached
+   1028   This isn't a database
+   1029   JetInit not yet called
+   1030   JetInit already called
+   1031   JET_errFileLockingUnavailable
+   1032   JET_errFileAccessDenied
+   1033   OS sharing buffer exceeded
+   1034   Query support unavailable
+   1035   SQL Link support unavailable
+   1036   Too many client tasks
+   1037   Unsupported OS version
+   1038   Buffer is too small
+   1039   SeekLE or SeekGE didn't find exact match
+   1040   Too many columns defined
+   1041   Too many fixed columns defined
+   1042   Too many variable columns defined
+   1043   Container is not empty
+   1044   Filename is invalid
+   1045   Invalid bookmark
+   1046   Column used in an index
+   1047   Data buffer doesn't match column size
+   1048   Can't set column value
+   1049   Commit did not flush to disk
+   1050   Forced Salvager abort
+   1051   Index is in use
+   1052   Link support unavailable
+   1053   Null keys are disallowed on index
+   1054   JET_errNotInTransaction
+   1055   No extended error information
+   1056   Installable ISAM not found
+   1057   Operation canceled by client
+   1058   No idle activity occurred
+   1059   Too many active database users
+   1060   Cannot append long value
+   1061   Invalid or unknown country code
+   1062   Invalid or unknown language id
+   1063   Invalid or unknown code page
+   1064   Can't build key for this sort order.
+   1065   Re-entrancy on same cursor family
+   1066   Can't create relationship
+   1067   No write lock at transaction level 0
+   1067   API not supported using old database format*
+
+   1101   Cannot BeginSession
+   1102   Write lock failed due to outstanding write lock
+   1103   Xactions nested too deeply
+   1104   Invalid session handle
+   1105   Commit lock failed due to outstanding read lock
+   1106   Read lock failed due to outstanding commit lock
+   1107   Another session has private version of page
+   1108   Operation not allowed within a transaction
+
+   1201   Database already exists
+   1202   Database in use
+   1203   No such database
+   1204   Invalid database name
+   1205   Invalid number of pages
+   1206   Non-db file or corrupted db
+   1207   Database exclusively locked
+   1208   Database is encrypted
+
+   1301   Open an empty table
+   1302   Table is exclusively locked
+   1303   Table already exists
+   1304   Table is in use, cannot lock
+   1305   No such table or object
+   1306   Cannot rename temporary file
+   1307   Bad fiindex density
+   1308   Cannot define clustered index
+   1309   No DDLo exclusive lock
+   1310   Invalid table id
+   1311   Cannot open any more tables
+   1312   Oper. not supported on table
+   1313   Query Execution segment is released
+   1314   Table or object name in use
+   1315   Rules loaded, can't define more
+   1316   Object is invalid for operation
+
+   1401   Cannot build clustered index
+   1402   Primary index already defined
+   1403   Index is already defined
+   1404   No such index
+   1405   Cannot delete clustered index
+   1406   Illegal index definition
+   1407   RefereReferenced index is the same
+   1408   Clustered index already defined
+
+   1501   Column value is long
+   1502   No such chunk in field
+   1503   Field will not fit in record
+   1504   Null not valid
+   1505   Column indexed, cannot delete
+   1506   Field length is > maximum
+   1507   No such column
+   1508   Field is already defined
+   1509   No defaults on tagged fields
+   1510   Second autoinc or version column
+   1511   Invalid column data type
+   1512   Max length too big, truncated
+   1513   Cannot index Bit,LongText,LongBinary
+   1514   No non-NULL tagged fields
+   1515   Invalio a current index
+   1516   The key is completely made
+   1517   Column Id Incorrect
+   1518   Bad itagSequence for tagged column
+   1519   Cannot delete, column participates in relationship
+   1520   Single instance column bursted
+   1521   AutoIncrement and Version cannot be tagged
+
+   1601   The key was not found
+   1602   No working buffer
+   1603   Currency not on a record
+   1604   Primary key may not change
+   1605   Illegal duplicate key
+   1606   Cannot insert before current
+   1607   Alreadclear current
+   1608   No call to JetMakeKey
+   1609   No call to JetPrepareUpdate
+   1610   Data has changed
+   1611   Data has changed; operation aborted
+   1612   References to key exist
+   1613   No referenced key exists
+   1614   Repaint whole datasheet
+   1615   Master key does not match lookup key
+   1618   Moved to new key
+   1699   CONSIDER: QJET INTERNAL
+   1698   CONSIDER: QJET INTERNAL(jpbulk.c)*
+
+   1701   Too many sort processes
+   1702   Invalid operation on Sort
+
+   1801   Config. file can't be opened
+   1802   System db could not be opened
+   1803   Temp file could not be opened
+   1804   Database file can't be opened
+   1805   Too many open databases
+   1806   Db file could not be closed
+   1807   Too many files open
+   1808   No space left on disk
+   1809   Permission denied
+   1810   Could not open sort file
+   1811   File not found
+   1812   No space left on disk
+   1813   Database file is read only
+
+   1850   Cannot Restore after init.
+   1851   New log generation id too big
+   1852   Logs could not be interpreted
+
+   1901   Failed sysdb on beginsession
+   1902   Invalid logon at beginsession
+   1903   Invalid account name
+   1904   Invalid SID
+   1905   Invalid password
+   1906   Invalid operation
+   1907   Access denied
+   1908   Can't open MSysAccounts
+   1909   Can't open MSysGroups
+   1910   Invalid pin
+
+   2001   RMT: ODBC call failed
+   2006   RMT: Can't load ODBC DLL
+   2007   RMT: Insert statement failed
+   2008   RMT: Delete statement failed
+   2009   RMT: Update statement failed
+   2010   RMT: data truncated
+   2011   RMT: Can't create JET type on server
+   2012   RMT: Create table stmt failed
+   2014   RMT: Function not legal for rdb
+   2020   RMT: Data value out of range
+   2021   RMT INTERNAL: SQL_STILL_EXECUTING
+   2022   RMT: Server Not Responding
+   2023   RMT: Internal only - need Lv data
+   2024   Fat cursor has no effect ***
+   2025   RMT: INTERNAL: wrong SProc ver ***
+   2026   RMT: the def for the rmt tbl has changed
+   2027   RMT: Can't open DenyWrite
+   2029   RMT: INTERNAL: driver cannot convert
+   2030   RMT: Table ambiguous: must specify owner
+   2031   RMT: SPT: Bad connect string
+
+   3001   Invalid query attribute
+   3002   Only 1 such row allowed
+   3003   Missing value in row
+   3004   Invalid value in Flag field
+   3005   Cycle in query definition
+   3006   Invalid table in join
+   3007   Ambiguous column reference
+   3008   Cannot bind name
+   3009   Parm redefined with different type
+   3010   Too few parameters supplied
+   3011   Invalid query output
+   3012   HAVING clause without aggregation
+   3013   Duplicate output alias
+   3014   Cannot input from MGB
+   3015   Invalid ORDER BY expression
+   3016   Too many levels on MGB
+   3017   Missing intermediate MGB level
+   3018   Aggregates not allowed
+   3019   Duplicate destination output
+   3020   Grbit should be set for Bulk Operation
+   3021   Query is not a Bulk Operation
+   3022   No inconsistent updates on outer joins
+   3023   Column must be NULL
+   3024   Query must have an output
+   3025   Query must have an input
+   3026   Query is not updatable (but IS RVT)
+   3027   Bogus character in alias name
+   3028   Cannot input from bulk operation
+   3029   T.   must use direct child
+   3030   Expression evaluation error
+   3031   Query does not return rows
+   3032   Can't create RVT, query is static
+   3033   Wrong parameter type given
+   3034   Query Objects are being updated
+   3035   Operation must use an updatable query
+   3036   Missing destination column
+   3037   Repeated table name in FROM list
+   3038   Query is an MGB
+   3039   CannotMGB
+   3040   DISTINCT not allowed for MGB
+   3041   DISTINCTROW not allowed for MGB
+   3045   Dest DB for VT parm not allowed
+   3047   Duplicated Fixed Value
+   3048   Must specify tables to delete from
+   3049   Cannot delete from specified tables
+   3050   Too many GROUP BY expressions
+   3051   Too many ORDER BY expressions
+   3052   Too many DISTINCT output expressions
+   3053   Malformed value list in Transform
+   3054   Connect string too long
+   3055   Invalid Parmeter Name (>64 char)
+   3056   Can't get parameters with Db Parm
+   3057   Illegally Upward ref'ed
+   3058   Joins in a QO are ambiguous
+   3059   Not a DDL Operation
+   3060   No database in connect string
+   3061   Not row returning
+   3062   RVT already has a find session open
+   3063   At most one record with one column can be returned from a scalar
+          subquery
+   3064   Union Query: number of columns in children do not match
+   3065   Top not allowed for MGB
+   3066   Must set JET_bitTableDDL
+   3067   Query is Corrupt
+   3068   INTERNAL only
+   3069   SPT marked as RowReturning did not return a table
+
+   3100   Syntax error in expression
+   3101   Illegal type in expression
+   3102   Unknown function in expression
+
+   3500   Bogus SQL statement type
+   3501   Parameter clause syntax error
+   3502   INSERT clause syntax error
+   3503   UPDATE clause syntax error
+   3504   SELECT clause syntax error
+   3505   Expected 'FROM' after 'DELETE'
+   3506   FROM clause syntax error
+   3507   GROUP BY clause syntax error
+   3508   ORDER BY clause syntax error
+   3509   LEVEL syntax error
+   3510   JOIN syntax error
+   3511   TRANSFORM syntax error
+   3512   HAVING clause syntax error
+   3513   WHERE clause syntax error
+   3514   Expected query name after 'PROCEDURE'
+   3515   Buffer too small for SQL string
+   3516   Missing ; at end of SQL statement
+   3517   Characters after end of SQL statement
+   3518   OWNERACCESS OPTION syntax error
+   3519   Not supported in V11
+   3520   Can be present in V10 format only
+   3521   UNION query syntax error
+   3523   Pass Through query Disallowed
+   3524   Pass Through query involved
+
+   3550   Constraint syntax error
+   3551   Create table syntax error
+   3552   Create index syntax error
+   3553   Column def syntax error
+   3554   Alter table syntax error
+   3555   Drop index syntax error
+   3556   Drop vprocedure syntax error
+   3557   Create view syntax error
+
+   3600   Property was not found
+   3601   Small Property larger than 2K
+   3602   No JPM for V1.x databases
+   3603   Property already exists
+   3604   DeleteOnly called with non-zero cbData
+
+   3700   Cursor wrapped during fast find
+          TLVs can only be placed on native user tables columns
+   3701   This field cannot be null
+   3702   This column cannot be blank
+   3703   This validation rule must be met
+   3704   This TLV property cannot be placed on this column
+   3705   Expression evaluation error
+   3706   Unknown function in TLV expression
+   3707   Syntax error in TLV expression
+          CONSIDER: Remove the following error.
+
+   5001   I-ISAM: assert failure
+   5002   I-ISAM: record locked
+   5003   I-ISAM: data truncated
+   5004   I-ISAM: table is not open
+   5005   I-ISAM: incorrect password
+   5007   I-ISAMlast
+   5008   I-ISAM: invalid date
+   5011   I-ISAM: options were ignored
+   5012   I-ISAM: incomplete table definition
+   5013   I-ISAM: illegal network option
+   5014   I-ISAM: illegal timeout option
+   5015   I-ISAM: invalid file format
+   5016   I-ISAM: unexpected engine error code
+   5017   I-ISAM: can't convert to native type
+
+   5020   Paradox: no primary index
+   5021   Paradox: sort order mismatch
+   5023   Paradox: net path or user name missing
+   5024   Paradox: bad Paradox net path
+   5025   Paradox: obsolete lock file
+   5026   Paradox: invalid sort sequence
+   5027   Paradox: wrong sort sequence
+   5028   Paradox: can't open unkeyed table
+
+   5101   dBase: invalid .INF file
+   5102   dBase: can't open .INF file
+   5103   dBase: unmaintainable index
+   5104   dBase: missing memo file
+   5105   dBase: Illegal century option
+   5106   dBase: Illegal deleted option
+   5107   dBase: Illegal statistics option
+   5108   dBase: Illegal date option
+   5109   dBase: Illegal mark option
+   5110   dBase: duplicate indexes in INF file
+   5111   dBase: missing index in INF file
+   5112   dBase: wrong memo file type
+   5113   dBase: Illegal exact option
+
+   5200   Btrieve: more than one memo field
+   5201   Btrieve: wbtrcall.dll missing
+   5202   Btrieve: win.ini [btrieve] options wrong
+   5203   Btrieve: need to GetIndexInfo
+   5204   Btrieve: can't modify record column
+   5205   Btrieve: out of resources
+   5206   Btrieve: locking deadlock
+   5207   Btrieve: Btrieve DLL failure
+   5208   Btrieve: data dictionary corrupted
+   5209   Btrieve: too many tasks
+   5210   Btrieve: Illegal IndexDDF option
+   5211   Btrieve: Illeagl DataCodePage option
+   5212   Btrieve: Xtrieve INI options bad
+   5213   Btrieve: Missing field.ddf
+   5214   Btrieve: Illeagl IndexRenumber option
+          Extended error codes must be in the following range.
+          Major error codes may not be in this range.
+
+   8000
+   8999
+
+   8001   Syntax error in FastFind expression
+   8002   Syntax error in QBE expression
+   8003   Non-existant object in FROM list
+   8004   Syntax error in some query expression
+   8005   Syntax error in expression column
+   8006   Expected alias after 'AS' in FROM list
+   8007   Expected 'BY' after 'GROUP'
+   8008   Expected 'BY' after 'ORDER'
+   8009   Expected ')' after column list
+   8010   Expected column name after 'PIVOT'
+   8011   Expected database name after 'IN'
+   8012   Expected datatype after parameter name
+   8013   Expected '=' after update column name
+   8014   Expected join expression after 'ON'
+   8015   Expected expression after 'TRANSFORM'
+   8016   Expected expression after 'WHERE'
+   8017   Transform expects GROUP BY clause
+   8018   Expected grouping expression
+   8019   Expected HAVING expression
+   8020   Expected 'INTO' after 'INSERT'
+   8021   ExpectLEFT   RIGHT
+   8022   Expected LEVEL after select list
+   8023   Expected number after 'LEVEL'
+   8024   Expected 'ON' after right join table
+   8025   Expected ordering expression
+   8026   Expected output alias after 'AS'
+   8027   Expected output expression
+   8028   Expected 'PIVOT' after SELECT statement
+   8029   Expected right join table after 'JOIN'
+   8030   Expected 'SELECT' after INSERT clause
+   8031   Expected 'SELECT' after Transform fact
+   8032   Expected 'SET' after table name
+   8033   Expected ';' after level number
+   8034   Expected ';' after parameter list
+   8035   Expected ';' after PIVOT clause
+   8036   Expected ';' at end of SQL statement
+   8037   Expected table name
+   8038   Expected table name after 'INTO'
+   8039   Expected update expression after '='
+   8040   Expected update column name
+   8041   Bogus token after FROM list
+   8042   Bogus token after GROUP BY list
+   8043   Bogus token after HAVING clause
+   8044   Bogus token after ORDER BY clause
+   8045   Bogus token after SELECT clause
+   8046   Bogus token after WHERE clause
+   8047   Number after 'LEVEL' too big
+   8048   LEVEL allowed only in MGB
+   8049   Not group key or agg, but not MGB detail
+   8050   Agg. arg. uses outputs from > 1 level
+   8051   Agg. ohigher level
+   8052   Cannot set column in join key to NULL
+   8053   Join is broken by column value(s)
+   8054   INSERT INTO unknown column name
+   8055   No dest. col. name in SELECT INTO stmt
+   8056   No dest. col. name in INSERT stmt
+   8057   Join expr refers to non-join table
+   8058   Aggregate in JOIN clause
+   8059   Aggregate in WHERE clause
+   8060   Aggregate in ORDER BY clause
+   8061   Aggregate in GROUP BY clause
+   8062   Aggregate in argument expression
+   8063   HAVING clause on TRANSFORM query
+   8064   HAVINGo groupiaggregation
+   8065   HAVING clause on MGB query
+   8066   Cycle in SELECT list (via aliases)
+   8067   'T.*' with grouping, but not MGB level 0
+   8068   '*' with grouping, but not MGB detail
+   8069   Cycle in tree of query objects
+   8072   Table appears twice in FROM list
+   8073   Level > 2 in TRANSFORM query
+   8074   Too many levels in MGB
+   8075   No dest. column name in UPDATE stmt
+   8076   Join table not in FROM list
+   8077   Join tables have same name
+   8078   Output level > 1+max group level
+   8079   ORDER BY conflicts with GROUP BY
+   8080   ORDER BY conflicts with DISTINCT
+   8082   Expected '('
+   8083   Expected ')'
+   8084   EB   ES error evaluating expression
+   8085   Unmatched quote for database name
+   8086   Parameter type should be database
+   8087   Parameter type should be tableid
+   8088   Expected identifier
+   8089   Expected query name after PROCEDURE
+   8090   Unknown function in expression
+   8091   Ambiguous column reference
+   8092   Bad bracketing of identifier
+   8093   Invalid name in QODEF row
+   8094   Column not updatable (bulk op)
+   8095   DISTINCT not allowed for MGB
+   8096   Duplicate output alias
+   8097   Duplicate destination output
+   8098   Duplicated Fixed Value
+   8099   No inconsistent updates on outer joins
+   8100   Missing value in row
+   8101   Invalid query attribute
+   8102   Cannot input from bulk operation
+   8103   Invalid value in Flag field
+   8104   Cannot input from MGB
+   8105   Illegal long value in aggregate
+   8106   Illegal long value in DISTINCT
+   8107   Illegal long value in GROUP BY
+   8108   Illegal long value in HAVING
+   8109   Illegal long value in JOIN
+   8110   Illegal long value in ORDER BY
+   8111   Missing intermediate MGB level
+   8112   Too few parameters supplied
+   8113   Dest DB for VT parm not allowed
+   8114   No delquery
+   8115   Query must have an input
+   8116   No insquery
+   8117   Query must have an output
+   8118   No permission to read query definition
+   8119   No reaquery
+   8120   No repquery
+   8121   No CreateTable permission (bulk op)
+   8122   T.   must use direct child
+   8123   Column must be NULL
+   8124   Only 1 such row allowed
+   8125   Query output column not updatable
+   8126   Parm redefined with different type
+   8127   Wrong parameter type given
+   8128   Cannot bind name
+   8129   RMT: Connection attempt failed
+   8130   RMT: Delete statement failed
+   8131   RMT: Insert statement failed
+   8132   RMT: Can't load ODBC DLL
+   8133   RMT: ODBC call failed
+   8134   RMT: Update statement failed
+   8135   Expected 'FROM' after 'DELETE'
+   8136   Bogus SQL statement type
+   8137   Characters after end of SQL statement
+   8138   '*' illegal above level 0
+   8139   Parameter type not allowed for expression
+   8142   Too many destination column specified
+   8143   No dest. col. name in INSERT stmt
+   8144   RMT: link not found
+   8145   RMT: Too many columns on Select Into
+   8146   Write lock failed due to outstanding write lock
+   8147   Commit lock failed due to outstanding read lock
+   8148   Read lock failed due to outstanding commit lock
+   8149   Table is exclusively locked
+   8150   Table is in use, cannot lock
+   8151   Too many cross table column headers
+   8152   Non-existent table in Insert Into
+   8153   Table is exclusively locked
+   8154   Table is in use, cannot lock
+   8155   Table is exclusively locked
+   8156   Table is in use, cannot lock
+   8157   Invalid Parameter Name (>64 char)
+   8158   File not found
+   8159   File sharing violation
+   8160   Access denied
+   8161   Invalid Path
+   8162   Table already exists
+   8163   Illegally Upward ref'ed
+   8164   References to key exist
+   8165   No referenced key exists
+   8166   Unexpected 'with' in this place
+   8167   Owner Access Option is defined Twice
+   8168   Owner Access Option Syntax Error
+   8169   Owner Access Option is defined more than once
+   8170   Generic Access Denied
+   8171   I-ISAM: unexpected engine error code
+   8172   Top not allowed for MGB
+   8173   Bogus token after table clause
+   8174   Unexpected tokens after a closing paren
+   8175   Malformed value list in Transform
+   8176   Query is Corrupt
+   8177   Select Top argument is invalid
+   8178   Query is a snapshot
+   8179   Output is a calculated column
+   8180   Column comes from read-only table
+   8181   Column comes from deleted row
+   8182   Column comes from locked row
+   8183   Would row-fixup away from pending changes
+   8184   Fill-in-the-blank only on most-many
+   8185   Would orphan joined records
+   8186   Must match join key in lookup table
+   8187   Illegal long value in subquery
+   8188   Unrecognized database format
+   8189   You can only order by an outputted column in a union
+   8190   Unknown token in TLV expression
+   8191   Unknown
+   8192   Primary key not output
+   8193   Join key not output
+   8194   Conflict with exclusive user
+   8195   No F.I.T.B. insert if no joined record
+   8196   Illegal long value in set operation
+   8197   Unknown function in TLV expression
+   8198   Invalid name
+
+   8200   Expect column name
+   8201   Expect '('
+   8202   Expect ')'
+   8203   Expect INDEX
+   8204   Expect index name
+   8205   Expect ON
+   8206   Expect KEY
+   8207   Expect REFERENCES
+   8208   Expect table name
+   8209   Expect FULL or PARTIAL
+   8210   Expect CASCADE or SET
+   8211   Expect NULL
+   8212   Expect UPDATE or DELETE
+   8213   Expect constraint name
+   8214   Expect FOREIGN
+   8215   Expect data type
+   8216   Expect index options
+   8217   Expect WITH
+   8218   Expect TABLE
+   8219   Expect End Of String
+   8220   Expect ADD or Drop
+   8221   Create view not supported
+   8222   Create proc not supported
+   8223   Expect object name
+   8224   Expect COLUMN
+
+   8250   Referenced table not in join clause
+   8251   Exactly two tables should be referenced in join
+   8252   All tables come from one side of input
+   8253   Join clause is ambiguous when stored in V1 format
+
+   8260   Syntax error in TLV expression
+   8261   This field cannot be null
+   8262   This column cannot be blank
+   8263   This validation rule must be met
+   8264   Create view syntax error
+
+The following error code ranges are reserved for external use. As is true for Jet
+error codes, these ranges cover the negative as well as positive form of the
+numbers in the range.
+
+30000 through 30999 for use by Vt Object as defined in JETEB.H
+32000 through 32767 for use by Import
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : WinNT:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

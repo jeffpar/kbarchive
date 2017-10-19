@@ -1,0 +1,65 @@
+DOCUMENT:Q162430  26-APR-2000  [exchange]
+TITLE   :XCON: Exchange Content Type Encoding
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbother exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of Exchange Server content types and their
+corresponding object identifier encoding.
+
+MORE INFORMATION
+================
+
+The following is a list of Exchange Server content types and their corresponding
+object identifier encoding. These object identifiers are used in the Microsoft
+Exchange Server Administrator program as well as the Windows NT Event Logs and
+can be used to determine what type of content conversion was being attempted.
+
+   Content Type      Object Identifier Encoding
+   --------------------------------------------
+   undefined         0x56030300
+   P2-84             0x56010A00
+   P22-88            0x56010A01
+   P772              0x2B1A00A236000401
+   P42               0x60864801650201022A
+   P48               0x608648016502010230
+   EDI               0x56070A00
+   Voice             0x56080800
+   MDBEF             0x2A864886F7140501
+   TNEF              0x2A864886F7140502
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

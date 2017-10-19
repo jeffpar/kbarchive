@@ -1,0 +1,77 @@
+DOCUMENT:Q171906  16-JUN-2001  [msnetwork]
+TITLE   :MSN Program Viewer Does Not Display Pictures on Web Pages
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5,95
+OPER/SYS:
+KEYWORDS:kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows 95 
+ - The Microsoft Network versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Program Viewer to view pages on the World Wide Web, the pictures on
+Web pages may not be displayed.
+
+CAUSE
+=====
+
+Program Viewer may not be configured to display pictures.
+
+RESOLUTION
+==========
+
+Follow these steps for your version of MSN to configure Program Viewer to
+display pictures:
+
+MSN 2.0
+-------
+
+1. Right-click the MSN icon on the desktop, and then click Properties.
+
+2. On the General tab, under Multimedia, click the Show Pictures check box to
+   select it.
+
+3. Click OK.
+
+MSN 2.5
+-------
+
+1. Right-click the MSN icon on the desktop, and then click Properties.
+
+2. Click the Advanced tab, and then scroll down to Multimedia.
+
+3. Under Multimedia, click the Show Pictures check box to select it.
+
+4. Click OK.
+
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbenv kbmsn 
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

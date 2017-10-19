@@ -1,0 +1,59 @@
+DOCUMENT:Q120735  10-JUN-1999  [homegame]
+TITLE   :Space Simulator Err Msg: Violated System Integrity in Windows
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Space Simulator from Microsoft Windows, you may encounter one of the
+following error message when switching between Windows and Space Simulator.
+
+ - This application has violated system integrity due to an invalid page fault
+   and will be terminated. Quit all applications, quit Windows, and then restart
+   your computer.
+
+ - Can't allocate A.R. in non-current window.
+
+RESOLUTION
+==========
+
+In addition, the Space Simulator display may be corrupted when you return to the
+application from Windows. This can be corrected by pressing W on the keyboard
+twice to switch to and from full-screen view.
+
+Space Simulator is not designed to operate from Windows. For optimal performance,
+run Space Simulator from MS-DOS.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q156403  25-JUL-2001  [sms]
+TITLE   :SMS: Invmac Doesn't Report Mac or IP Address with Open Transport
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Macintosh inventory records do not display the network adapter card hardware
+address or IP address of a Macintosh client running Macintosh operating system
+version 7.5.3 with Macintosh Open Transport 1.0 or 1.1.
+
+CAUSE
+=====
+
+Macintosh Open Transport is installed on Apple Power Macintoshes to support PCI
+network adapters and to support streams-based protocols such as Macintosh
+TCP/IP. With the introduction of Macintosh Open Transport, the method the
+Systems Management Server InvMac component uses to determine the network adapter
+card address and the TCP/IP address is no longer available.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. A supported fix is now available for SMS 1.2, but
+has not been fully regression-tested and should be applied only to systems
+experiencing this specific problem. Unless you are severely impacted by this
+specific problem, Microsoft recommends that you wait for the next Service Pack
+that contains this fix. Contact Microsoft Technical Support for more
+information.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

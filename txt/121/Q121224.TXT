@@ -1,0 +1,70 @@
+DOCUMENT:Q121224  25-NOV-1999  [msdos]
+TITLE   :DRVSPACE: DBLSPACE Files NOT Updated on Uncompressed Drive
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade to MS-DOS 6.22 from MS-DOS 6.0 on an uncompressed system, the
+DBLSPACE.BIN file in the root directory is not updated. The files DBLSPACE.EXE,
+DBLSPACE.HLP, and DBLSPACE.SYS located in the DOS directory are also not
+updated.
+
+CAUSE
+=====
+
+This occurs because the DBLSPACE.BIN file is in the root directory rather than
+the DOS directory.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+ - Re-expand DBLSPACE.BIN to the DOS directory.
+
+-or-
+
+ - Transfer the system files back to drive C by using the MS-DOS 6.0 boot disk
+   and typing "sys a: c:" (without the quotation marks). Copy the DBLSPACE.BIN
+   file to the DOS directory and then upgrade to MS-DOS 6.22.
+
+MORE INFORMATION
+================
+
+This problem does not occur if DBLSPACE.BIN is NOT in the DOS directory on a
+drive compressed using Compress In Place or Create New Drive.
+
+
+Additional query words: 6.22 6.00 patched double space non-compressed host
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

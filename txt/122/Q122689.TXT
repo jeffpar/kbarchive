@@ -1,0 +1,66 @@
+DOCUMENT:Q122689  09-NOV-1999  [pcmail]
+TITLE   :PC DirSync: IMPORT.EXE Hangs When Processing Corrupt RESYNC.GLB
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Import program (IMPORT.EXE) may stop responding (hang) when it tries to
+process a RESYNC.GLB file that contains invalid entries and may report the
+following error
+
+   Error [ 081] Error Message #81 is not defined <NAME>
+   <NET>/<PO>
+
+where <NAME> is the friendly name of the group, <NET> is the network
+name and <PO> is the name of the postoffice.
+
+IMPORT.EXE may hang when it attempts to process several such errors in the
+RESYNC.GLB file.
+
+CAUSE
+=====
+
+In the GROUP.GLB file, a TID value for a group that points to an invalid entry
+in the ADMIN.NME will cause IMPORT.EXE to generate the above error, or may lock
+the computer running IMPORT.EXE, requiring the PC to be rebooted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of Microsoft Mail
+for PC Networks. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.20 freeze
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

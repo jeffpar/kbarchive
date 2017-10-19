@@ -1,0 +1,62 @@
+DOCUMENT:Q275931  16-NOV-2000  [exchange]
+TITLE   :XCON: DNS Errors When Installing IMS on Top of Cluster Server
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Exchange Internet Mail Service on an Exchange 5.5 server on
+top of a Windows 2000 cluster node, you receive the following error message:
+
+   The Internet Mail Service requires DNS domain name to be configured on
+   [SERVERNAME]. To configure domain name use network control panel on
+   [SERVERNAME] or select another server.
+
+CAUSE
+=====
+
+In a normal installation, this error is sufficient for most users to correct the
+problem. In a cluster environment, the [SERVERNAME] actually refers to the
+Virtual Server name of the cluster.
+
+RESOLUTION
+==========
+
+To correct this behavior in a cluster environment, you need to configure the DNS
+host name on all cluster nodes before you can install IMS. The DNS name on each
+cluster needs to be unique. Entering the cluster virtual server name on each
+machine does not work.
+
+Additional query words: IMS
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

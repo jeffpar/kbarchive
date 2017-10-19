@@ -1,0 +1,92 @@
+DOCUMENT:Q151386  08-NOV-2001  [homegame]
+TITLE   :Fury3 AVI Play Black When Only 8MB RAM and Only 10 MB Swapfile
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fury 3 for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Microsoft Fury3 version 1.0 is run on a machine that only has 8 megabytes of
+RAM, and swapfile that is 10 MB or smaller, then AVI files will play with a
+completely black screen, and the introduction AVI files will play black, and
+without sound as well.
+
+RESOLUTION
+==========
+
+Add memory, or increase the swapfile size.
+
+MORE INFORMATION
+================
+
+To add memory to a computer, consult the owners manual.
+
+To increase the swapfile size, perform the following steps:
+
+Windows 95/98
+-------------
+
+1. Click Start, and point to Settings.
+
+2. Click Control Panel, and double-click the System icon.
+
+3. Click the Performance tab at the top of the window.
+
+4. Click Virtual Memory.
+
+5. Click the "Let Windows manage my virtual memory (recommended)" option.
+
+6. Click OK. Click OK again.
+
+7. Close the Control Panel.
+
+Windows 3.1
+-----------
+
+1. Double-click the Control Panel icon (usually found in the Main group).
+
+2. Double-click the 386 Enhanced icon.
+
+3. Click Virtual Memory, and click Change.
+
+4. Increase the swapfile size to larger than 10 megabytes.
+
+5. Close the virtual memory window.
+
+6. Close the Enhanced window.
+
+7. Close the Control Panel, and click OK when asked if you want to restart
+   Windows.
+
+Additional query words: 1.00 fury memory low
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbFury3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

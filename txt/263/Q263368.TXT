@@ -1,0 +1,80 @@
+DOCUMENT:Q263368  21-JUL-2000  [sms]
+TITLE   :Membership of User and User Group Collections Is Not Updated
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbsms200 kbCollections kbDiscovery kbQuery kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to update collection membership, newly created users and groups do
+not appear in the user and user group collections.
+
+CAUSE
+=====
+
+This behavior can occur because these two collections differ from the others in
+Systems Management Server (SMS) because their membership is controlled by
+settings in discovery methods.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Activate Windows NT User Account Discovery and Windows NT Group Discovery,
+   but do not change the polling interval. You should receive a list of both the
+   users and user groups in your domain within their respective collections.
+
+2. Create some new users and global user groups.
+
+3. Right-click either of the collections, point to All Tasks, and then click
+   Update Collection Membership. Although you may expect that the newly created
+   users and groups appear as members of these collections after the update,
+   this does not occur.
+
+Nothing occurs as a result of this action because the membership update only
+re-queries the database and only returns the data that exists therein.
+
+However, after the next discovery cycle has completed (default is one day), the
+new users and groups populate the database. Subsequently pointing to All Tasks,
+and then clicking Update Collection Membership displays the new entries.
+
+The discovery methods are responsible for collecting the data for users and user
+groups. The new data only appears in the database after the next discovery cycle
+completes. Subsequently, updating the collection membership reflects the new
+users and groups.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbsms200 kbCollections kbDiscovery kbQuery kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

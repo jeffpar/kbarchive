@@ -1,0 +1,81 @@
+DOCUMENT:Q157915  31-JUL-2001  [sms]
+TITLE   :SMS: Network Monitor Save As Only Saves One Frame
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsmsAdmin smsadmin smsnetmon
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Network Monitor to perform a network sniff of a particular Systems
+Management Server (SMS) client and you click Save As on the File menu, the range
+offered is only from 1 to 1. Therefore, the resulting save will only include the
+first frame of the capture.
+
+If you try to increase the To range, a dialog box will appear with the following
+message:
+
+   The To field is not in the valid range.
+
+WORKAROUND
+==========
+
+This problem does not occur if Network Monitor was started directly from Program
+Manager or Explorer. It also does not occur if a second instance of Network
+Monitor was started directly from Program Manager or Explorer.
+
+1. From Program Manager or Explorer, start Network Monitor.
+
+2. Start the Systems Management Server Administrator.
+
+3. Go into a client's Personal Computer Properties.
+
+4. Select the Network Monitor icon.
+
+5. Click Start Network Monitor.
+
+6. When Network Monitor loads, click Start Capture Toolbar.
+
+7. Stop the capture.
+
+8. On the File menu, click Save As. The range will be displayed properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms NM Netmon
+
+======================================================================
+Keywords          : kbnetwork kbsmsAdmin smsadmin smsnetmon 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

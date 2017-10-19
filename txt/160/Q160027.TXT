@@ -1,0 +1,67 @@
+DOCUMENT:Q160027  13-APR-1999  [exchange]
+TITLE   :XCLN: Folder Icon Does Not Change To Briefcase
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select a folder created on the Microsoft Exchange Server store for
+online and offline synchronization, the folder icon may not change to the
+Briefcase icon in the left pane of the Exchange Client. In the right pane, the
+icon for the folder to be synchronized appears as the Briefcase, indicating this
+folder is set up for online/offline synchronization. This can be confusing
+because the left pane does not display the Briefcase icon, and you may think the
+folder will not be synchronized, even though the folder has synchronization
+enabled.
+
+WORKAROUND
+==========
+
+To work around this problem, either move, copy, or delete a message to the
+folder where synchronization is enabled, or exit and re-start the Exchange
+Client. Performing any of these steps causes the folder icon to update to the
+Briefcase icon. At this point, the left and right panes will both show the
+correct Briefcase icon for the folder to be synchronized.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in of Microsoft Exchange Client
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

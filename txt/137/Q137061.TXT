@@ -1,0 +1,57 @@
+DOCUMENT:Q137061  12-FEB-2000  [foxpro]
+TITLE   :DOCERR: DO FORM LINKED Clause Does Not Require a Variable
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Visual FoxPro Help file, and the Language Reference, page 345,
+incorrectly document the DO FORM command's LINKED clause.
+
+When the LINKED clause is used, no memory variable name (MemVarName) is needed
+after the keyword LINKED. Adding a MemVarName after linked will produce a
+"Command contains unrecognized phrase/keyword" error.
+
+NOTE: This was corrected in the Visual FoxPro 3.0b for Windows documentation.
+
+MORE INFORMATION
+================
+
+The LINKED clause stands by itself. Visual FoxPro always creates a MemVar when a
+DO FORM command is used. The MemVarName is either derived from the .scx file
+name or specified by the user when the optional NAME < MemVarName > clause
+is used. All the LINKED clause does is tell Visual FoxPro that the form should
+be destroyed when the MemVarName is released.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

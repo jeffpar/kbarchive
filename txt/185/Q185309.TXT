@@ -1,0 +1,90 @@
+DOCUMENT:Q185309  06-DEC-2000  [word97]
+TITLE   :WD97: Fatal Exception Connecting to a Novell Drive in Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows, used with:
+    - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+*********************************************************************
+**                           - WARNING -                           **
+**     THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN       **
+**     CONFIRMED OR TESTED BY MICROSOFT. USE ONLY                  **
+**     WITH DISCRETION.                                            **
+*********************************************************************
+
+
+SYMPTOMS
+========
+
+In Microsoft Word when you click Open on the File menu and click a drive in the
+Look-In list that has been mapped to a Novell server under Microsoft Windows 95
+you may receive the following error:
+
+   Fatal Exception 06 Has occurred at: 17E7:<Address>
+
+CAUSE
+=====
+
+You are using the real-mode Ipxodi.com network client under Microsoft Windows 95
+and the Config.sys file has the "files =" line set to less than 60.
+
+WORKAROUND
+==========
+
+To prevent this error from occurring, set the "files =" line equal to at least
+60 in the Config.sys file. To do this, follow these steps:
+
+1. Close all programs.
+
+2. Click Start and then Run.
+
+3. In the Open box, type sysedit and click OK.
+
+4. Click Config.sys.
+
+5. Look for a line that reads FILES=. If it is less than 60, change it to 60.
+
+6. Save the Config.sys file and then close the System Configuration Editor.
+
+7. Restart Windows.
+
+MORE INFORMATION
+================
+
+For additional information network system requirements for the Config.sys file,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q109501 NETWORKS.WRI from Windows for Workgroups 3.11 (Part 2 of 4)
+
+
+Additional query words: word97
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

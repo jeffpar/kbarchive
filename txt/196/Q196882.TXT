@@ -1,0 +1,63 @@
+DOCUMENT:Q196882  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Turn Field Codes On or Off in Protected Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfield winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When your document is protected for forms or comments (annotations in some
+versions of Word):
+
+ - The Field Codes command is not available (dimmed) on the View tab and you
+   cannot toggle field codes on or off. (To locate the View tab, click Options
+   on the Tools menu.)
+
+ - You cannot toggle field codes using the shortcut keys.
+
+ - Your fields are not updated.
+
+CAUSE
+=====
+
+By design, if your document is protected for Comments/Annotations or Forms, you
+are unable to toggle or update field codes.
+
+RESOLUTION
+==========
+
+To view toggle or update field codes, unprotect the form.
+
+Additional query words: winword field codes toggle dim grey gray greyed grayed unavailable update word97
+
+======================================================================
+Keywords          : kbfield winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

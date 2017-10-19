@@ -1,0 +1,65 @@
+DOCUMENT:Q166458  27-AUG-1999  [odbc]
+TITLE   :BUG: "One-time Only" Tracing Option Does Not Stop Automatically
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+BUG #: 4559 (odbc3)
+
+SYMPTOMS
+========
+
+One of the ODBC Driver Manager 3.0 tracing options, One-time Only, does not
+automatically stop tracing after the first traced ODBC application is
+disconnected from the database or shut down. The ODBC tracing utility keeps
+tracing for any subsequent ODBC applications.
+
+WORKAROUND
+==========
+
+After the traced ODBC application stops, the button in the ODBC Administrator
+changes from Stop Tracing Now to Start Tracing Now, and the option changes from
+One-time Only to Don't Trace under the When to Trace group.
+
+You need to click Start Tracing Now and click the Stop Tracing Now button again
+to actually stop the tracing.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Open Database
+Connectivity version 3.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: viper
+
+======================================================================
+Keywords          : kbprogramming kbusage 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

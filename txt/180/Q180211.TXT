@@ -1,0 +1,63 @@
+DOCUMENT:Q180211  11-SEP-2001  [odbc]
+TITLE   :BUG: Synonyms Do Not Work with Oracle Stored Procedures
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Bu
+OPER/SYS:
+KEYWORDS:kbDatabase kbDriver kbODBC kbOracle kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC210SP2 kbM
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC for Oracle version 2.0 Build 2.73.7269 
+ - Microsoft ODBC for Oracle version 2.5, versions Build 2.573.2927, Build 2.573.3513, Build 2.573.3711, Build 2.573.4202 
+ - Microsoft Data Access Components versions 2.1, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Oracle ODBC Driver versions 2.0 and 2.5 do not support synonyms
+for Oracle stored procedures.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft Oracle ODBC Driver
+versions 2.0 and 2.5. We are researching this bug and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+
+This only occurs when calling Oracle stored procedures. Synonyms work as expected
+when used with other Oracle database objects such as tables.
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Sam Carpenter, Microsoft Corporation
+
+
+Additional query words: oracle stored procedure synonym
+
+======================================================================
+Keywords          : kbDatabase kbDriver kbODBC kbOracle kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC210SP2 kbMDAC260 kbmdac270 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC210 kbMDAC250 kbMDAC260 kbODBCOracle2737269 kbODBCOracle25732927 kbODBCOracle25733513 kbODBCOracle25733711 kbODBCOracle25734202 kbMDAC270 kbODBCOracle200Search kbODBCOracle250Search
+Version           : :2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.73.7269
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

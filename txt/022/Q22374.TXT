@@ -1,0 +1,69 @@
+DOCUMENT:Q22374  06-NOV-1999  [win16sdk]
+TITLE   :How a DLL Can Display a Message Using MessageBox()
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Windows graphical environment, it may be necessary for a
+function in a dynamic-link library (DLL) to communicate some information to the
+user. The MessageBox() API is available for this purpose.
+
+MORE INFORMATION
+================
+
+If a function exported from a DLL displays a message box, one of the parameters
+to the function should be the handle to a window in the application that acts as
+the parent window for the message box. While the message box is displayed, if
+Task Manager closes the parent application for the message box, the message box
+is destroyed.
+
+When a function in a DLL displays a message only in response to an error
+condition, specify NULL as the value of the hWndParent parameter, as follows:
+
+      MessageBox(NULL, "Hi there!", "DEMO", MB_OK);
+
+After the user dismisses the dialog box, the focus returns to the window that
+previously had the focus, as above. However, because the message box has no
+parent window, closing one or more applications with the Task Manager does not
+destroy the message box.
+
+Note that the hWndParent parameter must not specify a child window, such as a
+control in a dialog box. If an appropriate window handle is not readily
+available, specify NULL for the value of hWndParent and specify the MB_TASKMODAL
+flag in the wType (fourth) parameter. This prevents the user from interacting
+with any windows of the current application without suspending other
+applications.
+
+Additional query words: 3.00 no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

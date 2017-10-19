@@ -1,0 +1,63 @@
+DOCUMENT:Q174164  11-NOV-1999  [pcmail]
+TITLE   :MTG: PC DIRSYNC
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTONS
+========
+
+After running import during a manual dirsync, the program fails with an error
+message that may appear in the Dirsync.log file:
+
+   ERROR [13] Dirsync import error accessing srvtrans.glb
+
+CAUSE
+=====
+
+This problem occurs when import attempts to read the Srvtrans.glb file and the
+file is either locked open or corrupted.
+
+RESOLUTION
+==========
+
+To resolve this problem, do one of the following:
+
+ - If the file is locked open, remove the lock and try import again. It may be
+   necessary to complete another full dirsync cycle.
+
+ - If the file is larger than zero bytes or corrupted, rename the Srvtrans.glb
+   file and create a new one using TYPE NUL > SRVTRANS.GLB and complete
+   another dirsync cycle:
+
+Additional query words: error13
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320a kbMailPCN350
+Version           : WINDOWS:3.2a,3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

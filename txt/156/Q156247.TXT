@@ -1,0 +1,66 @@
+DOCUMENT:Q156247  08-NOV-2001  [homegame]
+TITLE   :Hellbender: How to Play a One Player Network Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhowto
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbnetwork
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article gives instructions on how to play one player network games
+in Microsoft Hellbender.
+
+MORE INFORMATION
+================
+
+Use the following steps to play a one player network game:
+
+1. Start Hellbender.
+
+2. Click Multiplayer.
+
+3. Click OK.
+
+4. Click Create Game.
+
+5. Decrease the Number of Players to 1 and press ENTER.
+
+6. Click Next.
+
+7. Click Play Game.
+
+Additional query words: 1.00 Hellbender network one player hell-bender hell bender
+
+======================================================================
+Keywords          : kbhowto 
+Technology        : kbGamesSearch kbZNotKeyword kbHellBender
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

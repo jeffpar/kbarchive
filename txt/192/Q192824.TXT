@@ -1,0 +1,76 @@
+DOCUMENT:Q192824  27-JUL-2001  [sms]
+TITLE   :SMS: WinNT Clients Not Supported Under NetWare Logon Servers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbConfig smssetup smsconfig
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Systems Management Server version 1.2, Windows NT clients must report by
+means of Windows NT logon servers. Windows NT-based clients depend on Windows NT
+logon servers to receive the Windows NT and Systems Management Server client
+component services.
+
+MORE INFORMATION
+================
+
+Windows NT logon servers have the SMS_CLIENT_CONFIG_MANAGER service installed.
+This service is responsible for remotely installing and configuring the Windows
+NT client-side services on Systems Management Server client computers running
+Windows NT. The SMS_CLIENT_CONFIG_MANAGER service on each Windows NT logon
+server writes a log of this activity to the SMS\Logs\Clicfg.log file on the
+Windows NT logon server.
+
+Because Novell NetWare is not service-based, this service cannot be installed on
+logon servers running Novell NetWare. Therefore, NetWare logon servers cannot
+properly configure Windows NT clients for Systems Management Server operation.
+
+For more information on Windows NT client installation, see chapter 3 of the SMS
+Resource Guide, Back Office Resource Kit Part I page, 98-100.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+REFERENCES
+==========
+
+For additional information, see the following:
+
+ - SMS Getting Started book P. 197
+
+ - SMS Resource Guide, Back Office Resource Kit Part I, page 98-100
+
+
+Additional query words: prodsms bindery NDS smsls novel
+
+======================================================================
+Keywords          : kbsetup kbConfig smssetup smsconfig 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

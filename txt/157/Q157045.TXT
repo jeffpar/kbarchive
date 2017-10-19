@@ -1,0 +1,55 @@
+DOCUMENT:Q157045  11-DEC-1999  [foxpro]
+TITLE   :INFO: Read-Only Control Takes on DisabledBackColor
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbOOP kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual FoxPro 5.0 and 6.0 for Windows, several read-only controls take on the
+DisabledBackColor property. The ListBox and ComboBox controls display that color
+at all times, while the TextBox control displays the DisabledBackColor when
+focus is moved to it. Regardless of the settings of the DisabledBackColor and
+ReadOnly properties, a TextBox control within a column of a Grid does not assume
+the DisabledBackColor. An EditBox displays the DisabledBackColor unless the
+EditBox also has a BackStyle property of Transparent, in which case it shows the
+colors of the Windows Display 3D Object setting of Windows Control Panel.
+
+This behavior is in contrast to the colors displayed in Visual FoxPro for Windows
+3.0 and 3.0b, where the colors of the controls are not affected by the settings
+of the ReadOnly property.
+
+This change is in accord with the standards established with Windows 95.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

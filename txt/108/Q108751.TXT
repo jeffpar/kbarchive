@@ -1,0 +1,73 @@
+DOCUMENT:Q108751  10-DEC-1999  [homemm]
+TITLE   :Scenes 1.0: Invalid Parameter (Toshiba T4500, T4600, T6600)
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use version 1.0 of Microsoft Scenes for Windows on a Toshiba T4500,
+T4600, or T6600 laptop computer, you may receive the following error message:
+
+   MS Scenes Error: Invalid parameter
+
+CAUSE
+=====
+
+This error message is misleading. It is caused by the Toshiba 256 color VGA
+video driver, version 4.7.
+
+WORKAROUND
+==========
+
+To fix this problem, Toshiba suggests that you do either of the following:
+
+ - Exclude memory range B000-B7FF in the SYSTEM.INI file.
+
+
+   -or-
+
+ - Download version 3.1 of the Toshiba video driver from the Toshiba bulletin
+   board service (BBS).
+
+MORE INFORMATION
+================
+
+
+For additional information, contact Toshiba technical support.
+
+The T4500 and T4600 laptop computers are manufactured by Toshiba, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: lap lap-top msscenes screen saver screensaver 3rdparty top
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbScenesSearch kbScenes100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

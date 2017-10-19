@@ -1,0 +1,207 @@
+DOCUMENT:Q186714  06-AUG-2002  [exchange]
+TITLE   :XCON: Cannot Configure MTA to Provide Adequate Message Control
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Exchange Server does not support the following features:
+
+ - You cannot configure the message transfer agent (MTA) so that all messages
+   with a given importance level time out after a certain period of time.
+
+ - You cannot configure a given connection so that messages sent through the
+   connection are stored in the outbound message queue until a certain number of
+   messages have been stored in the queue, or until the entire queue has reached
+   a certain size.
+
+ - You cannot configure a given connection so that certain types of messages
+   cannot be sent through the connection. For example, system messages,
+   non-system messages, or messages sent with urgent, normal, or low importance.
+
+MORE INFORMATION
+================
+
+Microsoft recognizes the need for the features described above. We have modified
+the Exchange Server 5.5 MTA so that the following features are supported.
+
+NOTE: The override changes mentioned in this article affect the Site and X.400
+Connectors using the MTA as their transport.
+
+Priority Time-Outs
+------------------
+
+After you obtain this feature, you can configure the MTA so that all messages
+with a given importance level time out after a certain period of time. When you
+obtain the feature, three new registry values are created under the following
+key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeMTA
+   \Parameters
+
+The following registry values are created:
+
+   Value Name: Message timeout (urgent)
+   Data Type: REG_DWORD
+   Description: Messages with high importance should time out after the specified
+   number of minutes.
+
+   Value Name: Message timeout (normal)
+   Data Type: REG_DWORD
+   Description: Messages with normal importance should time out after the
+   specified number of minutes.
+
+   Value Name: Message timeout (non-urgent)
+   Data Type: REG_DWORD
+   Description: Messages with low importance should time out after the specified
+   number of minutes.
+
+If one of the above values is set to 0 (zero), messages with the associated
+importance level are never sent. In addition, note that these values do not
+apply to system messages.
+
+Threshold Limits
+----------------
+
+After you obtain this feature, you can configure a connection so that messages
+sent through the connection are stored in the outbound message queue until a
+certain number of messages have been stored in the queue, or until the entire
+queue has reached a certain size. You can also specify that messages with high
+importance should be sent immediately, even if the queue's threshold has not
+been reached. When you obtain the feature, three new registry values are created
+under the following key
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeMTA
+   \Parameters\<connection>
+
+where <connection> is the associated connection.
+
+   Value Name: Content Length Threshold
+   Data Type: REG_DWORD
+   Description: Messages are stored in the outbound message queue until the total
+   size of all the messages reaches the specified number of kilobytes (KB).
+
+   Value Name: Queue Length Threshold
+   Data Type: REG_DWORD
+   Description: Messages are stored in the outbound message queue until the
+   specified number of messages is stored in the queue.
+
+   Value Name: Urgent Overrides Thresholds
+   Data Type: REG_DWORD
+   Description: If this value is set to 1, messages with high importance are sent
+   immediately, even if the above thresholds have not been reached. If this
+   value is set to 0, messages with high importance are not sent until the
+   threshold is reached.
+
+If the Content Length Threshold or Queue Length Threshold registry value is set
+to 0 (zero), the value is ignored. If both registry values are set to a value
+other than 0, messages are stored in the queue until either of the specified
+thresholds is reached.
+
+Message Type and Priority Restrictions
+--------------------------------------
+
+This feature enables you to specify which messages can use a particular connector
+based on message type or priority. For each connector you can prohibit system,
+non-system, urgent (high importance), normal, or non-urgent (low importance)
+messages. You can also specify that urgent messages override the schedule for a
+connector and are sent immediately; other messages remain in the queue until the
+next scheduled time.
+
+The per-connector message limits are set on each connector object by editing the
+raw properties of the connector. The limits are set using the Heuristics
+attribute. The value of the Heuristics attribute is the decimal integer sum of
+the following values for each limit you want to set:
+
+   Attribute: Disallow system
+   Description: If this value is set to 4096, system messages cannot be sent
+   through the connection.
+
+   Attribute: Disallow non-system
+   Description: If this value is set to 8192, non-system messages cannot be sent
+   through the connection.
+
+   Attribute: Disallow Urgent
+   Description: If this value is set to 16384, messages with high importance
+   cannot be sent through the connection.
+
+   Attribute: Disallow Normal
+   Description: If this value is set to 32768, messages with normal importance
+   cannot be sent through the connection.
+
+   Attribute: Disallow Low
+   Description: If this value is set to 65536, messages with low importance
+   cannot be sent through the connection.
+
+   Attribute: Urgent ignore schedule
+   Description: If this value is set to 131072, messages with high priority are
+   sent immediately, even if the connection's schedule indicates that the
+   message should not be sent immediately.
+
+To set these per-connector limits:
+
+WARNING: If you use the raw mode of the Exchange Server Administrator program
+(admin /r) incorrectly, serious problems may occur that may require you to
+reinstall Microsoft Windows NT Server, Microsoft Exchange Server, or both.
+Microsoft cannot guarantee that problems that result from using raw mode
+incorrectly can be solved. Use raw mode at your own risk.
+
+1. Start the Microsoft Exchange Server Administrator program in raw mode by
+   typing the following at a command prompt:
+
+   "c:\exchsrvr\bin\admin /r" (without the quotation marks)
+
+2. In the appropriate site Connections container, click the <connector>
+   object.
+
+3. On the File menu, click Raw Properties.
+
+4. In the "List attributes of type" box, click All.
+
+5. In the "Objects attributes" list, click Heuristics.
+
+6. In the "Edit value" list, type the value (or sum of the values, if you wish
+   to implement more than one type of restriction) for the limits you want to
+   set, and then click Set.
+
+These features are included in the latest Microsoft Exchange Server version 5.5
+U.S. Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: connector heuristic admin administrator program raw mode
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

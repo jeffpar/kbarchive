@@ -1,0 +1,52 @@
+DOCUMENT:Q149515  30-JUL-2001  [visualc]
+TITLE   :DOC: GetProcAddress Does Not Support Ordinal Symbols
+PRODUCT :Microsoft C Compiler
+PROD/VER:MACINTOSH:4.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr kbHWMAC kbMFC kbVC400bug kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, Macintosh Cross-Development Addon, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+GetProcAddress() returns NULL when passing a valid ordinal value for a DLL's
+exported function. The Macintosh Windows Portability Layer implementation of
+GetProcAddress() does not support obtaining exported function addresses by the
+function's ordinal value.
+
+MORE INFORMATION
+================
+
+DLLs on the Macintosh are implemented using Code Fragment Libraries (CFM) on
+Power Macintoshes. Apple's implementation of CFMs only allows symbols to be
+exported by name. Therefore, you must use the exported function name to obtain
+the function address.
+
+Additional query words: 4.00 WLM CFM DLL ASLM AFXDLL mac vcmac
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbHWMAC kbMFC kbVC400bug kbGrpDSMFCATL 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400Mac
+Version           : MACINTOSH:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

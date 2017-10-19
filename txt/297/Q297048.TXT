@@ -1,0 +1,77 @@
+DOCUMENT:Q297048  27-JUL-2001  [sms]
+TITLE   :SMS: Programs That You Start When You Log On Lose Focus
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbinterop kbClient kbRemote kbsms200 kbsms200bug kbAppMan kbHelpDesk kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to a computer, various other user-mode programs may continue to
+load, including Systems Management Server (SMS). If you start a program before
+SMS finishes loading (particularly Wuser32.exe and Smsapm32.exe), the program
+that you started loses the focus in preference to the SMS program because the
+SMS program is loaded after your program.
+
+CAUSE
+=====
+
+This behavior can occur after you log on if various programs (including SMS 2.0)
+continue to load components while you begin work. Programs that load as you log
+on can be specified in various locations, including the System.ini or Win.ini
+files, or in the registry under the following key:
+
+   HKEY_LOCAL_MACHINE/SOFTWARE/MICROSOFT/WINDOWS/CURRENTVERSION/RUN
+
+SMS components load from the registry at this location.
+
+This behavior occurs on Microsoft Windows 95, Microsoft Windows 98, Microsoft
+Windows 98 Second Edition, and Microsoft Windows Millennium Edition (Me)
+clients. This behavior does not occur on a Microsoft Windows NT or Microsoft
+Windows 2000 client because SMS programs are loaded as services.
+
+WORKAROUND
+==========
+
+To work around this behavior, click the program window of the program that you
+want to use to return the focus to that program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbRemote kbsms200 kbsms200bug kbAppMan kbHelpDesk kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

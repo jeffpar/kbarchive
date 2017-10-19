@@ -1,0 +1,88 @@
+DOCUMENT:Q176275  22-SEP-1999  [msnetwork]
+TITLE   :How to Find MSN Support on the World Wide Web
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5,2.51,2.52,2.6,5.0
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5, 2.51, 2.52, 2.6, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to find Web-based support for MSN, The Microsoft
+Network.
+
+MORE INFORMATION
+================
+
+Computing Central
+
+To find MSN support on the World Wide Web, start MSN using the
+http://msnmembers.msn.com, or click Computing & the Web, this will take you
+to Computing Central, or you can go directly to the Computing Central Web site
+at http://computingcentral.msn.com.
+
+Computing Central has the following support features:
+
+   - File libraries for downloading software
+   - Technical support chat sessions
+   - Online computer radio shows
+   - Computing news
+   - Commentaries
+
+Or, to go directly to the MSN Members Newsgroup, go to the following link to get
+started:
+
+   http://computingcentral.msn.com/topics/msn/newsgroups.asp
+
+Member Services
+
+Member Services has lot's of information for MSN members. The Member Services
+Home Page is located at the following Web address:
+
+   http://memberservices.msn.com
+
+Or, go directly to their Help & Support Section and search the Frequently
+Asked Questions (FAQs) at:
+
+   http://memberservices.msn.com/us/default_help.asp
+
+Additional KBs on Chat or Newsgroup
+
+   
+
+   Q175065 Frequently Asked Questions About Using Chat on MSN
+
+   Q137107 Questions and Answers About Newsgroups on MSN
+
+   Q174138 Frequently Asked Questions About Newsgroups on MSN
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN500 kbMSN200 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.0,2.5,2.51,2.52,2.6,5.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

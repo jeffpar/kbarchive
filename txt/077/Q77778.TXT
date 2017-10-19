@@ -1,0 +1,59 @@
+DOCUMENT:Q77778  21-NOV-1999  [msdos]
+TITLE   :BTRIEVE Versions 5.1 and Later Compatible with MS-DOS 5.x/6.x
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Novell has confirmed that BTRIEVE.EXE versions earlier than 5.1 are not
+compatible with MS-DOS 5.x. 6.x, or 6.2. Incompatible versions of BTRIEVE.EXE
+may cause an MS-DOS 5.0 system to stop responding (hang or lock up) when you try
+to run the utility. Incompatible versions of BTRIEVE.EXE may cause an MS-DOS 6.x
+system to stop responding upon exiting BTRIEVE.EXE.
+
+MORE INFORMATION
+================
+
+The Novell utility BTRIEVE.EXE is a self-contained executable program that
+performs as a record management system. For more information on the Novell
+BTRIEVE utility, query on the following in the Microsoft Knowledge Base or
+contact Novell technical support:
+
+   BTRIEVE and MS-DOS
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 6.22 5.00 5.00a 5.10 6.00 6.20 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch
+Version           : MS-DOS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,82 @@
+DOCUMENT:Q135966  18-DEC-2000  [win95x]
+TITLE   :"A DLL Initialization Routine Failed" Setting Up MS Plus!
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Microsoft Plus! for Windows 95 Setup, you may receive the
+following error message after you choose the installation folder:
+
+   Custom Action Error
+   A Dynamic Link Library (DLL) initialization routine failed.
+
+CAUSE
+=====
+
+Setup could not load either the Dskapi16.dll or Dskapi32.dll file. This can
+occur if the files are mismatched, or if one of them is zero bytes in size.
+
+RESOLUTION
+==========
+
+Method 1
+--------
+
+Delete or rename both of these files in the Windows\System folder and then run
+Microsoft Plus! Setup again. If you cannot rename or delete the files, restart
+Windows 95 and then try again.
+
+Method 2
+--------
+
+Delete or rename both of these files in the Windows\System folder and then
+extract a new copy of the Dskapi16.dll and Dskapi32.dll files. To do so, type
+the following command at a command prompt
+
+   " extract /a <sdrive>:\plus_1.cab dskapi*.dll /l
+   <hdrive>:\<windir>\system " (without the quotation marks)
+
+where <sdrive> is the drive containing the Microsoft Plus! CD-ROM or floppy
+disk, <hdrive> is the drive containing Windows 95, and <windir> is
+the Windows folder.
+
+For additional information about using the Extract tool, type "extract" (without
+quotation marks) at a command prompt, or see the following article in the
+Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

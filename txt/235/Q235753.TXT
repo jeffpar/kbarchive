@@ -1,0 +1,83 @@
+DOCUMENT:Q235753  11-JUL-1999  [sms]
+TITLE   :SMS: Specifying \\servername Send Address May Cause Failure
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you specify a servername prefixed by "\\", and the sender tries to connect to
+the computer using \\\\servername, the connection may fail. Specify the server
+name without the two backslashes in front for the Sender address box.
+
+CAUSE
+=====
+
+Sender prepends "\\" to the server name specified in the Sender address. The
+sender log displays the following information:
+
+      Created sending thread (Thread ID = 205)
+      Trying the No. 1 address (out of 1)
+      Error during WNetAddConnection2 to \\\\DSSMS\SMS_SITE (67).
+      No (more) send requests found to process.
+      There is no existing connection, Win32 error = 0
+      Operation is retryable.
+
+      Cannot connect to server \\DSSMS at remote site MS1, won't try send    
+      requests going to site MS1 for an hour or until there are no active      
+      send requests. 
+
+      Could not establish connection.
+      Attempt to connect failed.
+      There is no existing connection, Win32 error = 0
+      No need to disconnect
+      Restart time = 03/17/99 10:47:16 Eastern Standard Time
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 2.0. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+This has been fixed in Systems Management Server 2.0 Service Pack 1. Even if
+\\servername is specified in the Sender address box, Lan Sender parses the name
+correctly.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

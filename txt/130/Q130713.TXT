@@ -1,0 +1,85 @@
+DOCUMENT:Q130713  11-FEB-2000  [foxpro]
+TITLE   :How to Use Collection Array Property for Object Container
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual FoxPro, all the object containers in a form have a collection property
+associated with them. The collection property is an array that references each
+container object. You can reference properties and methods by using the
+collection array property rather than a specific object name.
+
+For example, the collection array property for a CommandGroup button is
+buttons(). The following example changes the caption of the first command button
+in the CommandGroup named CommandGroupName:
+
+       CommandGroupName.Buttons(1).Caption = "New"
+
+MORE INFORMATION
+================
+
+The following table lists the object containers that create an array property
+when the object containers are created.
+
+   Object Container       Collection Property
+   ------------------------------------------
+   Formsets               Forms
+   Forms                  Controls
+   PageFrame              Pages
+   Page                   Controls
+   CommandGroup           Buttons
+   OptionGroup            Buttons
+   Grid                   Controls
+   Column                 Controls
+
+For more information on the collection property, search the Help file for
+'Collection Properties'.
+
+Sample Code
+-----------
+
+The following example toggles the enabled property of all text boxes on a form to
+the inverse of the value of its current enabled property. In other words, if the
+text box enabled property is equal to true (.T.), the code set it to false
+(.F.):
+
+      FOR icount = 1 TO Thisform.controlcount
+         IF UPPER(Thisform.Controls(icount).Class) = "TEXTBOX"
+            Thisform.Controls(icount).Enabled = ;
+               !Thisform.Controls(icount).Enabled
+         ENDIF
+      ENDFOR
+
+Additional query words: VFoxWin kbfest
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

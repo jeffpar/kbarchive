@@ -1,0 +1,63 @@
+DOCUMENT:Q60509  08-NOV-2001  [lanman]
+TITLE   :Number of Named Pipes Used Between MS-DOS Client and Server
+PRODUCT :Microsoft LAN Manager
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - DCA/Microsoft Communications Server, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DCA/Microsoft Communications Server requires Microsoft LAN Manager version 2.00
+or later to operate. The Communications Server MS-DOS and OS/2 clients use named
+pipe connections to communicate with OS/2-based Communications Server computers.
+These named pipe connections are handled transparently to the user as well as to
+the HLLAPI or APPC application programmer.
+
+The following information describes how many named pipes are used by
+Communications Server clients when communicating to a server:
+
+1. All 3270 traffic that flows between a client computer and a server is
+   multiplexed through one named pipe connection.
+
+2. All APPC traffic that flows between a client computer and a server is
+   multiplexed through one named pipe connection.
+
+3. If 3270 and APPC traffic is occurring between one client computer and one
+   server, two named pipes are used (one for 3270 traffic and one for APPC
+   traffic).
+
+4. If a client computer has 3270 sessions active with two different servers, two
+   named pipes are used (one named pipe for each server). This is also true for
+   APPC. Please note that 3270 and APPC traffic is never multiplexed through the
+   same named pipe to a server.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbSNAServSearch kbDCAMSCommServ
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,56 @@
+DOCUMENT:Q120076  20-MAY-2002  [accother]
+TITLE   :Incorrect PSS Phone Number for Workgroup Add-On for MS-DOS
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:MS-DOS:3.11
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+On page x at the front of the Workgroup Add-On for MS-DOS "User's Guide,"
+the telephone number (425) 646-5104 is incorrectly listed as the technical
+support number for Workgroup Add-On for MS-DOS. (425) 646-5104 is actually
+the technical support number for MS-DOS. The correct support number for
+Workgroup Add-On for MS-DOS is (425) 637-7098.
+
+
+REFERENCES
+==========
+
+Microsoft Workgroup Add-On for MS-DOS "User's Guide," page x, "Standard Support"
+section
+
+Microsoft Workgroup Add-On for Windows "User's Guide," page 156, "Standard
+Support" section
+
+For additional information, please see the following Microsoft Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+Additional query words: wgao 3.11 doc err DocErr
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : MS-DOS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

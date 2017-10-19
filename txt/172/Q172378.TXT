@@ -1,0 +1,62 @@
+DOCUMENT:Q172378  17-DEC-2000  [win95x]
+TITLE   :Error Message: Error Loading. You Must Reinstall Windows.
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer, you may receive the following error message:
+
+   Error loading. You must reinstall Windows.
+
+CAUSE
+=====
+
+This error message can occur if the "shell=" line in the System.ini file is
+missing the reference to the Explorer.exe file.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Use any text editor (such as Notepad) to open the System.ini file in the
+   Windows folder.
+
+2. Modify the "shell=" line so that it reads:
+
+   " shell=explorer.exe " (without the quotation marks)
+
+3. Save and then close the System.ini file, and then restart Windows 95.
+
+======================================================================
+Keywords          : kbenv kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,55 @@
+DOCUMENT:Q97081  05-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Mail Remote for Windows Cannot Receive Incoming Calls
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.2 of Microsoft Mail Remote for Windows does not support listening in
+the background for incoming telephone calls as version 3.0 of Microsoft Mail
+Remote for MS-DOS does. This behavior reflects a Mail Remote for Windows design
+limitation.
+
+Mail Remote for Windows does not support multitasking, switching tasks, or
+background processing while the modem is active. Mail Remote for Windows
+supports using the modem only to call the postoffice to send and receive mail
+messages.
+
+If you need to contact your postoffice frequently, you can use the Session Setup
+command on the Mail menu to schedule connection times.
+
+Mail Remote for Windows does not support the LISTEN function that Mail Remote for
+MS-DOS provides.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

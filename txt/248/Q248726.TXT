@@ -1,0 +1,72 @@
+DOCUMENT:Q248726  07-MAY-2002  [exchange]
+TITLE   :XADM: Installing Exchange 5.5 on Windows 2000 Causes Error Msg.
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run the Setup program for Exchange Server version 5.5 on a computer
+running Microsoft Windows 2000 Server, the following error message may be
+displayed:
+
+   This program does not run correctly on this version of Windows. To continue,
+   click Run Program. To exit, click Cancel. For more information, click
+   Details.
+
+You can ignore this error message. Click "Run program" to proceed. To avoid
+receiving this error message, run the Setup program from a command prompt.
+
+MORE INFORMATION
+================
+
+If you click Details, a Microsoft Windows 2000 Web page is displayed that lists
+Microsoft BackOffice products that have compatibility issues with Windows 2000
+Server.
+
+Exchange Server 5.5 is not compatible with Windows 2000 Server. To make Exchange
+Server compatible with Windows 2000 Server, you must install Exchange Server 5.5
+Service Pack 3. To do this correctly, first install Exchange Server 5.5, and
+after that installation is complete, install Exchange Server 5.5 Service Pack
+3.
+
+For additional information about how to install Exchange Server 5.5 on Windows
+2000 Server, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q248725 XADM: Installing Exchange 5.5 on Windows 2000 may fail with error
+   c1031668
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbOSWin2000 kbOSWinSearch kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

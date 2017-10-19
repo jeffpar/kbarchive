@@ -1,0 +1,257 @@
+DOCUMENT:Q238962  06-AUG-2002  [winnt]
+TITLE   :Configuring SFU to Run on Proxy Server 2.0 and Proxy Clients
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows NT Services for UNIX Add-On Pack 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to set up Proxy Server 2.0 and Winsock Proxy clients
+to run Microsoft Services for UNIX (SFU) more efficiently.
+
+MORE INFORMATION
+================
+
+Running SFU on a WinSock Proxy Client
+-------------------------------------
+
+After installing SFU on a client computer that already has the Winsock Proxy
+client installed, SFU should run normally with no additional configuration
+required on the client or the Proxy server. The user must have appropriate
+access if Access Control is enabled.
+
+Running SFU on the Proxy Server
+-------------------------------
+
+After you install SFU on the Proxy server, additional configuration is required
+to ensure connectivity to external UNIX hosts. Internal UNIX host connectivity
+should not be affected if the local address table (LAT) is configured correctly.
+The following two methods describe how to configure SFU to run on a Proxy
+server:
+
+Method 1: Create a Custom Filter to Distinguish by Host Address:
+
+1. Right-click any Proxy service (Socks, Web, or Winsock Proxy), and then click
+   Properties.
+
+2. On the Services tab, click Security.
+
+3. On the Packet Filters tab, click to select the "Enable Packet filtering on
+   the External Interface" and "Enable dynamic packet filtering of Microsoft
+   Proxy Server packets" check boxes.
+
+4. Click Add to configure a custom filter.
+
+5. Create a custom Transmission Control Protocol (TCP) and User Datagram
+   Protocol (UDP) filter with the following settings:
+
+    - Protocol ID: (TCP or UDP depending on which one you are configuring)
+
+    - Direction: Both
+
+    - Local Port: Any
+
+    - Remote Port: Any
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Single Host (IP address of remote UNIX host)
+
+6. Click OK, click OK, and then click Apply.
+
+At this point, all TCP and UDP traffic is enabled between the Proxy server and
+the UNIX host specified in the custom filter. You should create a custom filter
+for each UNIX host to which Windows needs to connect using SFU.
+
+Method 2: Custom Filters to Support UNIX Services:
+
+The primary UNIX services that need to be considered include (note that a Solaris
+2.6 NIS server is used in this example): Rpcbind, Ypserv, Network File System
+(NFS), and Mountd. To determine on which ports these services are running, type
+"rpcinfo -p localhost" (without the quotation marks) on the UNIX host. As an
+example, the following custom filters support the required services to connect
+to a Solaris 2.6 NIS server.
+
+1. Filter to support Rpcbind (TCP/UDP port 111)
+
+    - Protocol ID: TCP/UDP
+
+    - Direction: Both
+
+    - Local Host: any
+
+    - Remote Port: Fixed Port: 111
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Any host
+
+2. Filter to support Ypserv (TCP/UDP ports 715/716)
+
+    - Protocol ID: TCP/UDP
+
+    - Direction: Both
+
+    - Local Host: any
+
+    - Remote Port: Fixed port: 715/716 (one for each)
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Any host
+
+    - Protocol ID: UDP
+
+    - Direction: Both
+
+    - Local Host: any
+
+    - Remote Port: Fixed port: 32771
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Any host
+
+3. Filter to support NFS (UDP port 2049)
+
+    - Protocol ID: UDP
+
+    - Direction: Both
+
+    - Local Host: any
+
+    - Remote port: Fixed port: 2049
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Any host
+
+4. Filter to support Lockd (TCP/UDP port 4045)
+
+    - Protocol ID: TCP/UDP
+
+    - Direction: Both
+
+    - Local Host: any
+
+    - Remote Port: Fixed Port: 4045
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Any host
+
+5. Filter to Support Mountd (TCP port 32839 and UDP port 32821)
+
+    - Protocol ID: TCP
+
+    - Direction: Both
+
+    - Local Host: any
+
+    - Remote Port: Fixed Port: 32839
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Any host
+
+    - Protocol ID: UDP
+
+    - Direction: Both
+
+    - Local Host: any
+
+    - Remote Port: Fixed Port: 32821
+
+    - Local Host: Default Proxy external IP address
+
+    - Remote Host: Any host
+
+You may also require a custom filter to support Telnet from the Proxy server
+itself. To accomplish this, add a custom filter as follows to support Telnet on
+port 23:
+
+ - Protocol ID: TCP/UDP
+
+ - Direction: Both
+
+ - Local Host: any
+
+ - Remote port: Fixed port: 23
+
+ - Local Host: Default Proxy external IP address
+
+ - Remote Host: Any host
+
+Once you have added the appropriate custom filters to the Proxy server, normal
+functionality within SFU should be present. If not, the best method for
+troubleshooting connectivity issues is to disable packet filtering on the Proxy
+server external interface and take a trace using the Network Monitor tool to
+determine which ports are being requested on the client and UNIX server side.
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q148942 How to Capture Network Traffic with Network Monitor
+
+For more information about SFU, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/ntserver/nts/exec/overview/sfu.asp
+
+For more information about Proxy Server, visit the following Microsoft Web site:
+
+   http://go.microsoft.com/fwlink/?LinkID=661
+
+Notes
+-----
+
+ - Ports opened by the NFS and NIS services may vary with the type of UNIX being
+   used. You must verify the actual ports opened to support NFS and NIS using
+   the procedure outlined in method 2, and then you can design the custom
+   filters.
+
+ - Method 2 is more secure than method 1 but may require detailed analysis using
+   tools such as Network Monitor and Rpcinfo to determine exact port usage.
+
+ - WebNFS is a product and proposed standard protocol from Sun Microsystems that
+   extends its NFS. SFU does not support WebNFS. However, if a browser is used
+   to connect to a WebNFS server through a Proxy server using an address such as
+   "nfs://<computer.site.com>/<filedirectory>/<file>," a
+   custom filter supporting NFS and using TCP port 2049 is required on the Proxy
+   server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch kbWinNTServicesUnix
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

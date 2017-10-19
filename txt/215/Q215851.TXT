@@ -1,0 +1,89 @@
+DOCUMENT:Q215851  02-DEC-2000  [exchange]
+TITLE   :XADM: Send Options in PAB Entry is Ignored
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have a custom recipient for the Microsoft Internet Mail Connector with the
+Allow Rich Text in Messages Option selected and on the client side, a Personal
+Address Book entry with identical information, but with the Allow Rich Text in
+the messages check box cleared.
+
+When you compose a message to that recipient and you explicitly choose the
+Personal Address Book entry that has the Allow rich text in the messages check
+box cleared, the mail message arrives with rich text overriding the Personal
+Address Book options.
+
+CAUSE
+=====
+
+Microsoft Outlook requires Messaging Application Program Interface (MAPI) to
+resolve the name against the Global Address Book even though the Personal
+Address Book has higher priority. This causes the server-side options to take
+precedence over client-side options.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: MAPI
+
++---------------------------+
+| File name    | Version    | 
++---------------------------+
+| Emsabp32.dll | 5.5.2543.0 | 
++---------------------------+
+| Mapi32.dll   | 5.5.2543.0 | 
++---------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 3.
+
+Additional query words: ims internet mail service
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

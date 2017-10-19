@@ -1,0 +1,145 @@
+DOCUMENT:Q231995  11-FEB-2002  [visualc]
+TITLE   :FIX: Error C2664 and C2582 While Using CArray Class
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCPPonly kbVC500bug kbVC600bug kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user-defined class contains a CArray and the same user-defined class is
+nested in another class, you may get the following errors if no copy constructor
+and assignment operator are provided for the class:
+
+   main.cpp(52): error C2664: 'Add' : cannot convert parameter 1 from 'class B'
+   to 'class B' No copy constructor available for class 'B'
+
+After adding a copy constructor, you get the following error message:
+
+   afxtempl.h(443): error C2582:'B' : 'operator =' function is unavailable
+   afxtempl.h(1566):while compiling class-template member function 'void
+   __thiscall CArray<class B,class B>::SetAtGrow(int,class B)'
+
+CAUSE
+=====
+
+If the class that contains a CArray is nested in another class, then its objects
+must be copied.
+
+The compiler does not construct an implicit copy constructor and copy assignment
+operator because the class in question has CArray as a member, which does not
+have a copy constructor and copy assignment operator, and CArray inherits from
+CObject, which has a protected copy construtor and a copy assignment operator.
+The compiler tries to generate the implicit ones, but that generates a call to
+CObject's version of them. Because they are protected, the above errors are
+generated.
+
+RESOLUTION
+==========
+
+You need to provide a copy constructor and an assignment operator for the class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The following example shows the correct use of the CArray class:
+
+   // No compiler option needed.
+   #include <afxtempl.h>
+
+   struct A
+   {
+    int i;
+    int j;
+   };
+
+   class B
+   {
+
+   	public:
+   		B();
+   		~B();
+
+    // Need to define copy ctor and assignment operator.
+
+   	B(const B& b){
+   	// Your copy ctor body goes here.		
+   	}
+    
+   	/* const B& */ void operator= (const B& b) { 
+   	// Your assignment operator body goes here.
+   	}
+
+   	protected:
+   		CArray<A, A> arrayA;
+   };
+
+   B::B(){}
+   B::~B(){}
+
+   class C
+   {
+
+   	public:
+   		C();
+   		~C();
+   		void addElement();
+
+   	protected:
+   		CArray<B, B> arrayB;
+   };
+
+   C::C(){}
+   C::~C(){}
+   void C::addElement()
+   {
+   	B temp;
+   	arrayB.Add(temp);
+   }
+
+   void main()
+   {
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCPPonly kbVC500bug kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,53 @@
+DOCUMENT:Q195877  19-DEC-1999  [homemm]
+TITLE   :Virtual Globe 99: Program Window Is Not Resized Correctly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you change the screen resolution while you are running Microsoft Encarta
+Virtual Globe 99, the main program window may not be resized correctly.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit and then restart Encarta Virtual Globe. To do this,
+follow these steps:
+
+1. Right-click Encarta Virtual Globe 99 on the taskbar, and then click Close.
+
+2. Restart Encarta Virtual Globe.
+
+Additional query words: multi multi-media media mm world atlas evg
+
+======================================================================
+Keywords          : kbdisplay kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

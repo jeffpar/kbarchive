@@ -1,0 +1,121 @@
+DOCUMENT:Q185446  22-SEP-1999  [sna]
+TITLE   :TN3270 Server LUA Pool Use Should Load Balance Across Servers
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+If an LUA Pool is defined with LUA LUs owned by more than one SNA Server, and
+that LUA Pool is assigned to an SNA Server TN3270 Service, the TN3270 Service
+will exhaust all sessions owned by the local SNA Server before attempting to
+open LUs owned by other SNA Servers.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0. However,
+an update to SNA Server 4.0 is available to allow load balancing of TN3270
+sessions across available SNA Server computers. This problem has been corrected
+in the latest U.S. Service Pack for SNA Server version 4.0. For information on
+obtaining the Service Pack, query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Although this behavior is by design, there have been requests to support an
+option for TN3270 that allocates LUA sessions across SNA Servers which own LUs
+from the pool, so that load balancing of session use across multiple SNA Server
+computers can occur.
+
+Note that this feature does not provide TN3270 client load balancing across more
+than one TN3270 server. That function must be provided by the TN3270 client or
+possibly the TCP/IP name service being used. If this functionality is needed,
+SNA Server provides transparent client load balancing across SNA Server
+computers using its native 3270 interface. For additional information about SNA
+Server load balancing, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q128244 SNA Server Load Balancing and Hot Backup
+
+For additional information about shared LUA pool use by more than one TN3270
+server, please see the following article in the Microsoft Knowledge Base:
+
+   Q182139 LUA Pool Cannot Be Assigned to Two TN3270 Servers
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+After this update is applied to the SNA Server where the TN3270 Service is
+running, the following registry entry must be set to enable TN3270 load
+balancing behavior:
+
+   KEY_LOCAL_MACHINE\System\CurrentControlSet\Services
+   \TN3270\Parameters ReslocFlags: REG_DWORD: 1
+
+   1 = "load balance" across SNA Server computers
+   0 = default if not defined (old behavior - try local server first)
+
+If the ResLocFlags registry entry is set to 0x01, TN3270 will alternate between
+SNA Server computers when attempting to open an LUA pool. This will cause the
+session load to be shared among SNA Server computers who own LUs from this LUA
+pool.
+
+After this update is applied and the ResLocFlags entry is set, the SnaBase
+service and TN3270 service must be restarted for the change to take effect.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

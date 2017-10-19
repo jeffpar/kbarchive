@@ -1,0 +1,56 @@
+DOCUMENT:Q128774  08-DEC-2000  [automap]
+TITLE   :Time Zones Not Calculated in Time of Arrival
+PRODUCT :Microsoft Automap
+PROD/VER::3.0,3.02,3.03,3.04,3.05,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusagekbfaq
+
+======================================================================
+WINDOWS 
+kbprb kbusage kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Road Atlas for Windows, versions 3.0, 3.02, 3.03, 3.04, 3.05, 4.0 
+ - Microsoft Automap Trip Planner for Windows, version 5.0 
+ - Microsoft Expedia Trip Planner 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you calculate a route across a time zone in Automap, the Time of Arrival
+function does not take into consideration the time change.
+
+MORE INFORMATION
+================
+
+Automap was designed to calculate the total and daily driving time rather than
+automatically update for time zones. The final arrival time is used for the Time
+of Arrival. The only option is to manually apply the time zone difference to the
+final calculated time.
+
+Additional query words: 1.03 1.06 1.08 1.09 2.01 2.02 2.04 3.0 4.0 5.0 kbhowto auto auto-map automap reference clock inaccurate ETA multi multi-media media mm
+
+======================================================================
+Keywords          : kbusage kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbAutomapSearch kbExpediaSearch kbAutomapRoadAtlas300 kbAutomapRoadAtlas302 kbAutomapRoadAtlas303 kbAutomapRoadAtlas304 kbAutomapRoadAtlas305 kbAutomapRoadAtlas400 kbAutomapTripPlanner500
+Version           : :3.0,3.02,3.03,3.04,3.05,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,62 @@
+DOCUMENT:Q170668  30-APR-1999  [iis]
+TITLE   :Inetinfo.exe Access Violation When Querying DB2 Using SNA Server
+PRODUCT :Internet Information Server
+PROD/VER:WinNT:2.0,3.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft SNA Server version 3.0 to connect to a host computer to
+perform queries using IDC or ASP, Inetinfo.exe may stop with a Dr. Watson
+message.
+
+You may also get the following Microsoft Active Server Pages (ASP) error message
+in the browser from an ASP page that uses an ActiveX Data Object (ADO).
+
+   ASP 0115 Error
+
+CAUSE
+=====
+
+To perform database queries against DB2, Internet Information Server (IIS) must
+call the ODBC driver then it must call Wappc32.dll from SNA Server. This rapid
+loading and unloading of the DLL file causes IIS to fail with the symptoms
+described above.
+
+WORKAROUND
+==========
+
+Upgrade the IIS computer to Microsoft SNA Server 3.0 Service Pack 1 (SP1) to
+correct this problem.
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : WinNT:2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,50 @@
+DOCUMENT:Q80525  30-JUL-2001  [homegame]
+TITLE   :FltSim: Using System Time Causes Night Flight
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+During the months of October, November, and December 21-31, using the system
+time with Microsoft Flight Simulator for the Macintosh version 4.0 will cause
+Flight Simulator to always fly at night.
+
+MORE INFORMATION
+================
+
+To correct this problem, do the following:
+
+1. From the World menu, choose Set Time and Season.
+
+2. Note that the Season option is blank. Choose a season from the list of
+   Seasons and click OK.
+
+Flight Simulator will now operate correctly.
+
+Microsoft has confirmed this to be a problem in Flight Simulator for the
+Macintosh version 4.0. This problem was corrected in version 4.0a.
+
+Additional query words: 4.00 season October November December
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

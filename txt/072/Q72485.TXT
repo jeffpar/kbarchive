@@ -1,0 +1,51 @@
+DOCUMENT:Q72485  30-JUL-2001  [homegame]
+TITLE   :Error Copying Files During Entertainment Pack Setup
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+When running Setup for the Windows Entertainment Pack (WEP), you may receive the
+following error message:
+
+   There was an error copying files to your <WINDOWS DIR> subdirectory.
+   Please correct the problem and run Setup again.
+
+This error message normally occurs if there is not enough free disk space to
+install the Windows Entertainment Pack. However, you may receive this error if
+there is ample disk space for Setup.
+
+MORE INFORMATION
+================
+
+If you have ample disk space for Setup, a workaround is to create a new
+directory and to copy the files from the Entertainment Pack disk(s) into this
+new directory. Then run the Entertainment Pack Setup directly from the hard
+drive.
+
+For more information, query on Entertainment Pack and Error.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

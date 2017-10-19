@@ -1,0 +1,59 @@
+DOCUMENT:Q94475  11-SEP-1999  [winmisc]
+TITLE   :Error When Playing Sample .AVI Files on CD-ROM
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to play back Audio-Video Interleaved (.AVI) files from the
+Microsoft Video for Windows CD-ROM, the error message
+
+   Can't Read From Drive <CD ROM Drive>
+
+may appear (where <CD ROM Drive> represents the drive letter assigned to
+the CD-ROM drive).
+
+This message may appear if the wrong version of the MSCDEX CD-ROM extender is in
+use. MSCDEX (usually supplied by the CD-ROM manufacturer) is the file that
+allows MS-DOS to access the CD-ROM drive. If the incorrect version of this file
+is being used, data transferred from the CD-ROM may be corrupted. If you are
+receiving the above error message (or one of a similar nature), try to play the
+sample file WINDSURF.AVI (installed during the setup of Video for Windows) from
+the hard drive. If this file plays back correctly, contact your CD-ROM drive
+manufacturer for help in installing the correct MSCDEX version.
+
+NOTE: In most cases, you will not be able to successfully copy the .AVI file from
+the CD-ROM to the local hard drive because the data transferred from the CD-ROM
+will be corrupted during this process as well.
+
+Additional query words: 1.00 audio video
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

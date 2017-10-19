@@ -1,0 +1,67 @@
+DOCUMENT:Q264331  20-OCT-2000  [pcmail]
+TITLE   :PC Ext: PC Mail Error Message: [001] Unable to Deliver
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.x,PO2PO
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.x, PO2PO 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error message:
+
+   [001] unable to deliver.
+   Missing mailbag when sending to ffapi PO from XCHG
+
+CAUSE
+=====
+
+There is a corrupted Inqueue3 mailbag on the receiving hub post office. External
+is unable to open or write to the inbound mailbag on the hub post office. This
+problem can also be caused by a missing or corrupted outbound mailbag for the
+ffapi post office on the hub Microsoft Mail post office.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. Stop all message transfer agents (MTAs) that are running against the affected
+   post office.
+
+2. Use the steps in the following Microsoft Knowledge Base article to reset the
+   inqueue3 key and mbg pair. These files are found in the Mbg and Key
+   subfolders of the Maildata folder and must be reset together.
+
+   Q104279 Creating or Resetting a .KEY and .MBG Pair
+
+Additional query words: mail flow
+
+======================================================================
+Keywords          :  
+Technology        : kbPTProdChange kbMailSearch kbZNotKeyword3 kbMailPCN3xSearch
+Version           : WINDOWS:3.x,PO2PO
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

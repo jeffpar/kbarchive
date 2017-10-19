@@ -1,0 +1,64 @@
+DOCUMENT:Q86874  18-FEB-2000  [vbwin]
+TITLE   :BUG: PrintForm() Does Not Print Ink from Control
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an application developed using the Visual Basic controls provided in
+version 1.0 of Microsoft Windows for Pen Computing calls the Visual Basic
+PrintForm() function, ink entered into the control does not print.
+
+CAUSE
+=====
+
+The control is set for delayed recognition. The Visual Basic controls provided
+with version 1.0 of Windows for Pen Computing do not support printing ink when
+the control is in delayed recognition mode.
+
+RESOLUTION
+==========
+
+To work around this problem, modify the application to remove delayed
+recognition mode.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows for Pen Computing version
+1.0. We are researching this problem and will post new information here as it
+becomes available.
+
+Additional query words: buglist1.00 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,85 @@
+DOCUMENT:Q275926  31-JUL-2001  [ssafe]
+TITLE   :FIX: Analyze -F Overwrites Analyze.Log File if Folder Not Empty
+PRODUCT :Microsoft SourceSafe
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbSSafe600 kbSSafe600fix kbAnalyze kbDSupport kbGrpDSSSafe kbVS600sp5fix kbSSafeAnalyze
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Analyze -F, the Analyze.log file is replaced in the \data\backup
+folder and the following warning message appears:
+
+   The backup folder \data\backup, is not empty.
+   Before an autofix rebuild is run the backup folder needs to be emptied.
+
+However, the analyze.log is replaced.
+
+CAUSE
+=====
+
+The backup directory needs to be empty before running Analyze -F.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the next service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+   Visual Studio Product Updates
+   (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run Analyze -F ../data, and note that a backup directory containing
+   Analyze.log is created.
+
+2. Run Analyze -F ../data again without renaming the backup directory.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe600 kbSSafe600fix kbAnalyze kbDSupport kbGrpDSSSafe kbVS600sp5fix kbSSafeAnalyze 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

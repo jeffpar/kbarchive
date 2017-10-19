@@ -1,0 +1,99 @@
+DOCUMENT:Q164621  16-JUN-2001  [msnetwork]
+TITLE   :MSN Err Msg: Video Not Available VIDS:IV32 Decompressor
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5,95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install MSN, The Microsoft Network, you may receive an error
+message similar to the following error message:
+
+   Video not available 'VIDS:IV32' decompressor.
+
+The exact text of the error message may vary depending on the type of compression
+that was used to compress the file. Specifically, the "IV32" portion of the
+error message may be replaced by "CVID."
+
+CAUSE
+=====
+
+Windows 95 Video Compression is not installed or is installed improperly.
+
+RESOLUTION
+==========
+
+To resolve this problem, install or reinstall the Windows Video Compression
+tool. To do so, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Windows Setup tab, click Multimedia, and then click Details.
+
+4. Click the Video Compression check box to select it.
+
+   NOTE: If the Video Compression check box is already selected, follow These
+   steps:
+   a. Click the Video Compression check box to clear it.
+
+   b. Click OK.
+
+   c. Click Apply, and then click OK.
+
+   d. Follow steps 1-4.
+
+5. Click OK.
+
+6. Click Apply.
+
+7. If you are prompted to insert the Windows 95 disks or CD-ROM, do so.
+
+8. If you are prompted to restart the computer, click Yes.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q138261 Error Message: Video Not Available, Cannot Find Decompressor
+
+   Q142179 Troubleshooting .avi File Playback Problems in Windows 95
+
+   Q142946 Troubleshooting Video Codecs in Windows 95
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbenv kberrmsg kbmsn 
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,125 @@
+DOCUMENT:Q93362  26-NOV-2001  [winnt]
+TITLE   :C2 Evaluation and Certification for Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+C2 refers to a set of security policies that define how a secure system
+operates. The C2 evaluation process is separate from the C2 certification
+process. As of August 1995, National Security Agency (NSA) granted the C2
+security rating for Windows NT Server and Workstation version 3.5. As a result
+these operating systems are on the Evaluated Products List (EPL).
+
+Windows NT Server and Workstation version 3.51 has been granted the security
+rating of E3/F-C2 though a similar evaluation process in the UK.
+
+For security evaluation for Windows 2000 and beyond, see the following Microsoft
+Web site:
+
+   http://www.microsoft.com/technet/security/prodtech/secureev.asp
+
+
+NOTE: This does not mean that Windows NT is C2 certified (no operating system is
+ever C2 certified). Certification applies to a particular installation,
+including hardware, software, and the environment that the system is in. It is
+up to an individual site to become C2 certified.
+
+MORE INFORMATION
+================
+
+The requirements for A-, B-, C-, and D-level secure products are outlined in the
+Trusted Computer System Evaluation Criteria (TCSEC) published by the National
+Computer Security Center (NCSC). This publication is referred to as the "Orange
+Book," and is part of NSA's security "rainbow series." Security level
+requirements are open to interpretations that change over time. When undergoing
+evaluation, each vendor negotiates with the NSA about whether or not the details
+of its particular system implementation conform with the abstract security
+policy concepts in the NSA's books. The vendor must provide evidence that the
+requirements are being met.
+
+Microsoft has opted not to include certain components of Windows NT in the
+evaluation process, not because they would not pass the evaluation, but to save
+time by reducing the load on the NSA. Additionally, the MS-DOS/Windows on
+Windows (WOW) system may be treated as a Win32 application and would therefore
+not need to be evaluated as part of the Trusted Computer Base (TCB). Networking
+on NT may not have to go through the "Red Book," or "Trusted Network
+Interpretation." It may be enough to consider networking to be another
+subsystem, and therefore only the Orange Book would apply. New or modified
+components and other hardware platforms can go through a "RAMP" process to be
+included in the evaluation at a later time.
+
+C2 Overview
+-----------
+
+The security policy in C2 is known as Discretionary Access Control (DAC). In the
+Windows NT implementation, the basic idea is that users of the system:
+
+ - Own objects
+
+ - Have control over the protection of the objects they own
+
+ - Are accountable for all their access-related actions
+
+C2 classification does not define a substantive security system in the sense of
+classified or unclassified data. (B-level security assumes the existence of an
+independent security classification system and enforces that system, but does
+not specify the substance of the classification system.)
+
+For example, in Windows NT, every object (file, Clipboard, window, and so on) has
+an owner; any owner can give or not give other users access to its objects. The
+system tracks (audits) your actions for the administrators (that is, the system
+administrator can track the objects you accessed, both successes and failures).
+
+The key distinction between C-level and B-level security is in the notion of
+access control. In a C2 (DAC) system, owners have absolute discretion about
+whether or not others have access to their objects. In a B-level, or Mandatory
+Access Control (MAC) system, objects have a security level defined independently
+from the owner's discretion. For example, if you receive a copy of an object
+marketed "secret," you can't give permission to other users to see this object
+unless they have "secret" clearance. This is defined by the system independent
+of your discretion. MAC involves the concept of "data labeling," which is the
+creation and maintenance by the system of security "labels" on data objects,
+unalterable by users (except in certain cases under system control and
+auditing). An administrator can get access to anyone's objects, although it may
+require some programming to do so (that is, the user interface won't expose this
+power).
+
+You can obtain more information on this process, including frequently asked
+questions, a copy of the evaluated products list, and copies of TCSEC and other
+documentation at the NCSC's web site at http://www.radium.ncsc.mil.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

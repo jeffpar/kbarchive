@@ -1,0 +1,60 @@
+DOCUMENT:Q112210  05-NOV-1999  [pcmail]
+TITLE   :PC Win: Check MMF Utility Repeatedly Asks to Check MMF
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Versions 3.0b and later of Microsoft Mail for Windows includes a built-in
+utility to check and rebuild Mail message files (MMFs). To start the utility,
+you hold down the SHIFT key when you start Mail. After a few seconds a dialog
+box appears that asks you to confirm your desire to check the integrity of your
+MMF file.
+
+If you continue to hold down the SHIFT key while you request the utility to check
+the MMF file (by selecting the Check File button), you are repeatedly asked if
+you want to check your MMF file. After the tenth dialog box is cleared, you
+receive the following error:
+
+   Application Error
+   Stack overflow
+
+RESOLUTION
+==========
+
+After the dialog box appears that asks whether you want to rebuild the MMF file,
+release the SHIFT key before you select the Check File button. The Check MMF
+utility will launch normally.
+
+Additional query words: 3.00b 3.20 rebuild
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail300b
+Version           : WINDOWS:3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

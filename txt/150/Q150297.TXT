@@ -1,0 +1,82 @@
+DOCUMENT:Q150297  09-AUG-2001  [winnt]
+TITLE   :Directory Replication Stop Messages
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click OK in the Directory Replication dialog box, one of the following
+STOP messages appears:
+
+   The system cannot find the file specified.
+
+   The device or directory does not exist.
+
+CAUSE
+=====
+
+The first error can occur if the registry parameters ExportPath and/or
+ImportPath contain an invalid path entry, for instance a nonexistent directory.
+
+The second error can occur if the registry parameters ExportPath and/or
+ImportPath contain an invalid drive entry.
+
+An invalid ExportPath can cause the error even if the computer is not configured
+as an export computer.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+Edit the following HKEY_LOCAL_MACHINE subtree registry entries:
+
+   SYSTEM\CurrentControlSet\Services\Replicator\Parameters
+       \ExportPath
+
+   SYSTEM\CurrentControlSet\Services\Replicator\Parameters
+       \ImportPath
+
+Make sure that ExportPath and ImportPath point to valid drives and directories.
+
+Close the Registry Editor and restart the computer.
+
+For additional information on corrupted directory replicator registry entries,
+please see the following article in the Microsoft Knowledge Base:
+
+Q133475Corrupted Directory Replicator Registry Entries
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

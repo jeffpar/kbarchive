@@ -1,0 +1,61 @@
+DOCUMENT:Q93255  11-SEP-1999  [winmisc]
+TITLE   :VidCap: Err Msg: Cannot Initialize Capture Driver - Indeo
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you install Microsoft Video for Windows 1.0 on a machine equipped with the
+Action Media II capture card and you run the VidCap utility that is included
+with Video, you may receive the following initialization error:
+
+   VidCap could not initialize the capture device. Capture driver is not
+   installed properly.
+
+MORE INFORMATION
+================
+
+Indeo (TM) Video driver is installed for software only compression and
+decompression when Microsoft Video for Windows is installed. No further setup is
+required for software only operation. If you have an Action Media II capture
+card in your computer, you will need to re-install the capture driver to get
+hardware assisted playback and to capture video with the VidCap utility included
+with Microsoft Video for Windows.
+
+To install, remove, or configure a capture driver you need to use the Drivers
+option in the Control Panel.
+
+For more information on installing device drivers, refer to your Windows 3.1
+manual.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

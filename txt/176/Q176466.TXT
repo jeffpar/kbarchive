@@ -1,0 +1,308 @@
+DOCUMENT:Q176466  22-FEB-2002  [exchange]
+TITLE   :XGEN: TCP Ports and Microsoft Exchange: In-depth Discussion
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In troubleshooting communication between computers running Exchange Server and
+between computers running Exchange Server and Exchange Client, you often face
+the issue of the use of packet filtering (firewall), which can result in an
+inability to communicate. In certain situations, you may need to monitor traffic
+on your network before introducing Exchange in your network infrastructure, to
+ensure that communication can occur among the various Exchange components. This
+article addresses the frequently asked questions of what ports need to be open
+when firewalls are used and what ports need to be monitored in the Microsoft
+Exchange organization.
+
+MORE INFORMATION
+================
+
+In discussing network traffic associated with Exchange, there are six
+scenarios:
+
+1. Communication between POP3 clients and Exchange Server computers. Two
+   conditions exist:
+
+    - Downloading and retrieving messages
+
+    - Sending messages
+
+2. Communication between IMAP4 clients and Exchange Server computers. Two
+   conditions exist:
+
+    - Downloading and retrieving messages
+
+    - Sending messages
+
+3. Communication between Exchange Server computers and LDAP (Lightweight
+   Directory Access Protocol) clients.
+
+4. Communication between Exchange Client computers and Exchange Server
+   computers.
+
+5. Communication between two Exchange Server computers in the same site
+   (intrasite communication).
+
+6. Communication between two Exchange Server computers in different sites
+   (intersite communication). This communication has two further distinctions:
+
+    - Intersite link uses site connector (RPC).
+
+    - Intersite link is an X.400 connector.
+
+NOTE: The terms "same site" and "different site" are used here in an Exchange
+infrastructure design context and do not have any bearing on location.
+Consequently, two Exchange Server computers in the same site could be located in
+two different places connected via a WAN link with routers and firewalls in
+between.
+
+TERMINOLOGY: When discussing ports, two terms are often used: "well-known" and
+"ephemeral." "Well-known" represents ports below the 1024 range that are used
+regularly and have in most cases a standardized assignment for certain types of
+network service. "Ephemeral" represents all ports inclusive of and above the
+1024 range.
+
+An in-depth discussion follows of issues for each of the six scenarios presented
+above.
+
+Communication between POP3 clients and Exchange Server computers
+----------------------------------------------------------------
+
+Exchange 5.0 supports POP3, a protocol used to retrieve messages from a mail
+server. In addition to POP3 mail clients like Internet Mail and News, Windows CE
+Inbox, and Internet Mail Service for Windows, clients such as Pegasus and Eudora
+Pro are often used to send and retrieve messages from the Exchange Server
+computer. This introduces a new angle to the discussion of the availability of
+TCP port access.
+
+- Downloading and retrieving messages:
+
+POP3 client access to messages on an Exchange Server computer is regulated by the
+authentication method used. There are three such authentication methods. If
+Basic or Windows NT Challenge/Response authentication (Windows NTLM
+authentication) is used, downloading and retrieval of messages using a POP3
+client requires access to TCP port 110. Exchange Server listens on port 110 for
+any incoming connection requests from POP3 clients for message download. If the
+SSL (Secure Sockets Layer) authentication method is used, the Exchange Server
+computer listens on port 995. Therefore, if you are designing the packet
+filtering requirements of a network that includes an Exchange installation, keep
+in mind the access to either TCP port 110 or TCP port 995 if POP3 is a supported
+protocol.
+
+- Sending messages:
+
+When POP3 clients send messages, the Exchange Server computer is communicating
+with an SMTP (Simple Mail Transfer Protocol) host. This requires access to TCP
+port 25. The Internet Mail Connector and the Internet Mail Service use TCP port
+25 for inbound SMTP messages as defined by RFC-821. For inbound SMTP messages,
+the Internet Mail Connector and Internet Mail Service monitor port 25 for
+incoming connections from other SMTP hosts. Microsoft Exchange Server supports
+POP3 as defined in the RFC- 1734 and RFC- 1957 specifications.
+
+Communication between IMAP4 clients and Exchange Server computers
+-----------------------------------------------------------------
+
+Exchange version 5.5 supports IMAP4, the Internet Message Access Protocol. IMAP4
+is a superset of POP3 and therefore supports all its features and some
+additional ones. An example of an IMAP4 enhancement over POP3 is the ability to
+search messages for key words while the messages are still on the mail server.
+Users can then choose which messages to download to their local computer. IMAP4
+also allows access to public folders and personal folders.
+
+- Downloading and retrieving messages:
+
+The ports that IMAP4 clients use when accessing messages on an Exchange Server
+computer depend on the authentication method in use. With Basic or NTLM
+authentication and TCP, the IMAP4 server listens on TCP port 143 for any
+incoming connection requests from IMAP4 clients for message download and
+retrieval. If SSL authentication is used, however, the port on which the
+Exchange Server computer listens is TCP port 993. Router and firewall setups
+should therefore take into consideration the access to TCP port 143 or TCP port
+993 when this protocol is a supported feature for messaging.
+
+- Sending messages:
+
+As discussed above for POP3 clients sending messages, when IMAP4 clients send
+messages, the Exchange Server computer is communicating with an SMTP host. This
+requires access to TCP port 25. The Internet Mail Connector and Internet Mail
+Service use TCP port 25 for inbound SMTP messages as defined by RFC-821. For
+inbound SMTP messages, the Internet Mail Connector and Internet Mail Service
+monitor port 25 for incoming connections from other SMTP hosts. Microsoft
+Exchange Server supports IMAP4 as defined in the RFC-2060 and RFC- 2061.
+
+Communication between Exchange Server computers and LDAP clients
+----------------------------------------------------------------
+
+LDAP (Lightweight Directory Access Protocol) is a specification for client access
+to the Exchange Server directory service to provide address book functionality.
+It allows the client to connect to the directory and allows information
+retrieval, addition, and modification. LDAP was introduced in Exchange version
+5.0.
+
+For the LDAP client to connect to the Exchange Server computer, the ports that
+need to be configured on the firewall are based purely on the authentication
+method in use. With Basic authentication, the Exchange Server computer listens
+on port 389. For SSL authentication, the port that the Exchange Server computer
+listens on is 636. Microsoft Exchange Server supports LDAP as defined in
+RFC-1777.
+
+Communication between Exchange Server computers and NNTP clients
+----------------------------------------------------------------
+
+The Network News Transport Protocol (NNTP) is widely used to post, distribute,
+and retrieve USENET messages. Clients can access these newsgroups as Exchange
+public folders. NNTP clients need to connect to the Exchange Server computer via
+port 119. The proxy software or firewall should take this into consideration
+when NNTP is supported. Microsoft Exchange Server supports NNTP as defined in
+RFC-977.
+
+Communication between Exchange Client computers and Exchange Server3 computers
+------------------------------------------------------------------------------
+
+An Exchange Client computer on a LAN or WAN link uses remote procedure call (RPC)
+to communicate with an Exchange Server computer. The Exchange Server computer,
+an RPC- based application, uses TCP port 135, also referred to as the location
+service that helps RPC applications to query for the port number of a service.
+
+The Exchange Server computer monitors port 135 for client connections to the RPC
+endpoint mapper service. After a client connects to a socket, the Exchange
+Server computer allocates the client two random ports to use to communicate with
+the directory and the information store. The client does not communicate with
+other components of the Exchange Server computer.
+
+If security concerns for a network infrastructure require blocking of any ports
+other than the ones used, then the random assignment of ports for communication
+with the directory and the information store can become a roadblock. To avoid
+this, Exchange Server versions 4.0 and later allow you to statically allocate
+these ports.
+
+For more information on the process of static allocation of ports for the
+directory and the information store, please see Microsoft Knowledge Base article
+Q155831 "XADM: Setting TCP/IP Ports for Exchange and Outlook Client Connections
+Through a Firewall."
+
+At this juncture, for successful communication between client and server, the
+firewall needs to be configured to allow TCP connections to port 135 and all
+statically allocated ports. If you need to monitor traffic for analysis, these
+are the ports to monitor.
+
+Communication between two Exchange Server computers in the same site
+--------------------------------------------------------------------
+
+All intrasite communication between Exchange Server computers uses RPC.
+Consequently, access to TCP port 135 becomes an important variable in the
+ability of Exchange Server computers to communicate if they are separated using
+routers and firewalls.
+
+Communication between two Exchange Server computers within a site is between the
+two message transfer agents (MTAs) and the two directory services. No other
+components of the Exchange Server computers communicate directly.
+
+As discussed above in client to server communication, an Exchange Server computer
+monitors port 135 for connections to the RPC endpoint mapper service. When an
+initiating Exchange Server computer connects to a socket, the receiving Exchange
+Server computer assigns two random ports to use to communicate with the
+directory and the MTA.
+
+Already discussed above was the possibility of static allocation of a TCP port
+for the directory to listen and communicate on a specific port number. With the
+release of Exchange Server 4.0 Service Pack 4 and all releases of Exchange
+Server 5.0, a similar adjustment can be made for the MTA. The endpoint mapper
+will then relay the appropriate port number, so that further communication can
+be achieved by going to the port number specified. For establishing a static
+allocation of port for the MTA, refer to the latter part of Knowledge Base
+article Q161931, "XCON: Configuring MTA TCP/IP Port # for X.400 and RPC
+Listens." This explains the use of the registry value "TCP/IP port for RPC
+listens".
+
+Consequently, for successful communication between two servers, the firewall
+needs to be configured to allow TCP connections to port 135 and all statically
+allocated ports. If you need to monitor traffic for analysis, these are the
+ports to monitor.
+
+For more information about the ramifications and guidelines for static port
+assignment of Exchange services, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q180795 XADM: Intrasite Directory Replication Fails with Error 1720
+
+Communication between two Exchange Server computers in different sites
+----------------------------------------------------------------------
+
+- Intersite link uses site connector (RPC):
+
+Most of the discussion on intersite communication via site connectors mirrors the
+situation of intrasite communication between Exchange Server computers. The only
+difference is that communication between Exchange Server computers installed in
+two different sites is only via the corresponding message transfer agents
+(MTAs).
+
+Although you continue to need the services of the RPC locator service and thereby
+port 135, the only adjustment you may need for static allocation of a port would
+be for the MTA. Again, refer to Knowledge Base article Q161931, "XCON:
+Configuring MTA TCP/IP Port # for X.400 and RPC Listens." This article discusses
+the use of the registry value "TCP/IP port for RPC listens". This feature is
+available with Exchange Server Service Pack 4 and all releases of Exchange
+Server 5.0.
+
+- Intersite link is an X.400 connector:
+
+If the intersite link is an X.400 connector, then the communication between the
+two Exchange Server computers continues to be between corresponding MTAs only.
+However, RPC is not the means of such communication. Communication between the
+MTAs follows the RFC1006: ISO over TCP/IP. Consequently Exchange Server
+computers, by default, use TCP port 102 for all such communication between the
+MTAs. There is no need for TCP port 135 as far the Exchange communication is
+concerned, because no RPC traffic is involved.
+
+Exchange Server Service Pack 4 and all releases of Exchange Server 5.0 provide
+the ability to change this default port assignment of port 102. Article Q161931,
+referred to above, discusses the use of the registry value "RFC1006 Port
+Number".
+
+In this setting, for successful communication between two servers, the firewall
+must be configured to allow TCP connections to TCP port 102 or the manually
+assigned replacement port. If you need to monitor traffic for analysis, these
+are the ports to monitor.
+
+IMPORTANT: If the port number for RFC1006 is changed from the default value of
+102 on one server, then it is absolutely essential that all servers
+communicating via the X.400 connector incorporate this change. All MTAs must use
+the same port number.
+
+Finally, as you analyze your specific situation, keep in mind that several
+combinations of the above situations can exist in an Exchange infrastructure.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

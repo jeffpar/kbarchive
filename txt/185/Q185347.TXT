@@ -1,0 +1,71 @@
+DOCUMENT:Q185347  09-SEP-1999  [sms]
+TITLE   :SMS: PCM Error: Unable to Connect to \\Server\Share(s)
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+MORE INFORMATION
+================
+
+This error can also be caused by other conditions. For more information, refer
+to the following articles in the Microsoft Knowledge Base::
+
+   Q150727 PCM Error: Unable to Connect. <errcode> -\\Server\Share
+
+   Q156402 SMS: PCM Looks in Wrong Path for Default Distribution Server
+
+   Q128456 PCM and PGC Fail to Execute Package from Servers with Long Name
+
+SYMPTOMS
+========
+
+If the Systems Management Server client computer does not have an available
+drive to map a network connection, Package Command Manager (PCM) generates the
+following error message in its log file, Pcmwin.log, when attempting to connect
+to its distribution server:
+
+   Unable to connect to \\server\share(s)
+   '\\<ServerName>\SMS_PKG(x)\Package ID
+   '\\<ServerName>\SMS_PKG(x)\Package ID
+   '\\<ServerName>\SMS_PKG(x)\Package ID'.
+   This could be caused by a variety of conditions.
+   Ensure Windows networking drivers are loaded.
+   The Microsoft Network client does not have Windows drivers.
+
+WORKAROUND
+==========
+
+To work around this problem, disconnect some network drives and send the package
+again.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

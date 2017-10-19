@@ -1,0 +1,63 @@
+DOCUMENT:Q198990  04-APR-1999  [sms]
+TITLE   :SMSINST: Cannot View Large Script Completely in 16-bit Installer
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0,2.0; winnt:2.0
+OPER/SYS:
+KEYWORDS:kbui kbClient kbOSWin310 kbsms200 kbsms120 kbProdComp kbsmsInst smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer versions 2.0, 1.0 
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to edit a large script using the 16-bit version of Systems
+Management Server Installer that is running under Windows for Workgroups, you
+may be unable to view the entire script using the Script Editor view.
+
+CAUSE
+=====
+
+Many 16-bit operating systems such as Windows for Workgroups have a limitation
+on how much can be displayed in the Script Editor view.
+
+WORKAROUND
+==========
+
+It will be necessary to use Systems Management Server Installer on computers
+running Windows 95/98 or Windows NT. These operating systems do not have this
+limitation.
+
+MORE INFORMATION
+================
+
+
+Additional query words: prodsms load loading open opening
+
+======================================================================
+Keywords          : kbui kbClient kbOSWin310 kbsms200 kbsms120 kbProdComp kbsmsInst smsinst 
+Technology        : kbSMSSearch kbSMS200 kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0; winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

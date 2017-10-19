@@ -1,0 +1,73 @@
+DOCUMENT:Q119803  23-SEP-1999  [win3x]
+TITLE   :Windows for Workgroups: Error 58 on Protocol 0 - (Non-ODI)
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows for Workgroups, you receive one of the following error
+messages:
+
+   The following error occurred while loading protocol number 0.
+   Error 58: The network responded incorrectly.
+
+-or-
+
+   Hardware failure error 5736
+
+CAUSE
+=====
+
+The RAMBIOS.SYS device driver in the CONFIG.SYS file can cause this error.
+RAMBIOS.SYS is an older driver used by video cards to control Flashc cards and
+allow for video RAM shadowing. It is not necessary on most 386 and higher
+computers.
+
+Some network cards use the same RAM address as RAMBIOS.SYS, which causes the
+network card to fail when binding.
+
+NOTE: You can also receive the above error message if you are using the HP Jet
+Direct Card and the device=HPVNPD.386 is removed or remarked out of the [386enh]
+section of the SYSTEM.INI file. For information on resolving this issue, contact
+Hewlett Packard (HP).
+
+RESOLUTION
+==========
+
+Open the CONFIG.SYS file in a text editor (such as the MS-DOS Editor) and remove
+the following line:
+
+        device=c:\rambios.sys
+
+Additional query words: rambios 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

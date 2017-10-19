@@ -1,0 +1,61 @@
+DOCUMENT:Q104361  16-NOV-1999  [pcmail]
+TITLE   :PC Forms: Attach Defaults to WINDOWS\SYSTEM Directory
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attach a file to the routing form included with version 1.0 of
+Microsoft Electronic Forms Designer, the directory listed in the Attach File to
+Be Routed dialog box is the WINDOWS\SYSTEM directory. This may be inconsistent
+with other Windows applications, which default to the WINDOWS directory.
+
+CAUSE
+=====
+
+When you launch a custom form, the MEFLIB.DLL file is activated and the current
+directory is set to MEFLIB.DLL's location: WINDOWS\SYSTEM. When you select the
+Attach File to Be Reviewed button, the resulting dialog box defaults to this
+current directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 1.0 of Microsoft
+Electronic Forms Designer. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,47 @@
+DOCUMENT:Q77989  04-DEC-1999  [homemm]
+TITLE   :Cannot Access Bookmarks from Main Tutorial Screen
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1991 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Tutorial in Bookshelf for Windows was created with two books: the first is
+the main Tutorial screen and the second is the book that contains all of the
+lessons. By design, the range of a bookmark is limited to one book. As a result,
+although defined bookmarks for the lessons may appear in the bookmark menu of
+the main screen, they cannot access anything beyond that main screen book. To
+access these bookmarks, go to any lesson in the Tutorial and then choose the
+desired bookmark from the menu.
+
+Additional query words: Viewer 1.00 1.0 Usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991
+Version           : :1991 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

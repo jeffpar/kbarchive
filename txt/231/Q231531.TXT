@@ -1,0 +1,65 @@
+DOCUMENT:Q231531  14-SEP-2001  [automap]
+TITLE   :MapPoint: Cannot Save Map as Web Page to Network Server
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork kbimu kbMDACNoSweep
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to save a Microsoft MapPoint mao as a Web page to a network
+server, you may receive the following error message:
+
+   You don't have permission to save files in this location. If you are
+   attempting to save to a floppy disk, verify that the disk is not
+   write-protected.
+
+NOTE: Because you can save a folder in MapPoint to the server without receiving
+this error message, you do have permission to save files and folders to the
+server.
+
+CAUSE
+=====
+
+This behavior can occur if your network operating system does not support long
+file names.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: mp2000 mp2001 novell netware permissions rights
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbimu kbMDACNoSweep 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000 kbMapPoint2001
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q201560  21-OCT-2001  [automap]
+TITLE   :Streets 98: Cannot Start or Export Yellow Pages USA Addresses
+PRODUCT :Microsoft Automap
+PROD/VER::1.0,98
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets 98, version 98 
+ - Microsoft Expedia Streets 98 Deluxe, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Expedia Streets 98 and click the Yellow Pages link, you
+may encounter either of the following symptoms:
+
+ - Yellow Pages USA may not start.
+
+ - You may be unable to export addresses from Yellow Pages USA.
+
+CAUSE
+=====
+
+This behavior can occur if the version of Yellow Pages USA installed on your
+computer is incompatible with Expedia Streets 98.
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain and install Microsoft Expedia Streets 98 Deluxe,
+version 1.0. This version of Expedia Streets 98 includes a compatible version of
+Yellow Pages USA.
+
+
+Additional query words: 1998 1.00 auto-map amap multi multi-media media mm yp import pushpins
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets98 kbExpediaStreets98del
+Version           : :1.0,98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

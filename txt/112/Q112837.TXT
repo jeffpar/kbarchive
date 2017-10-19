@@ -1,0 +1,104 @@
+DOCUMENT:Q112837  08-FEB-2000  [foxpro]
+TITLE   :PRB: "SQL Column '<Memvar>' Not Found" and Empty RQBE Window
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are opening or modifying a previously saved query, the error message
+"SQL Column '<variable name>' Not Found" appears. After the error message
+is displayed, the query will open, but everything except the table(s) used will
+be lost (including selected fields and WHERE conditions).
+
+CAUSE
+=====
+
+This behavior is caused by referring to a variable in a query and then opening
+or modifying the query when the variable is not in memory.
+
+RESOLUTION
+==========
+
+Make sure the variable is defined in memory before opening or modifying the
+query. Make sure not to save the changes to the query after it opens up empty.
+The error message will indicate the variable that needs to be in memory.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type "x="CA"" (without the quotation marks) in the FoxPro command window.
+
+2. USE the SALESMAN database found in the TUTORIAL subdirectory.
+
+3. Create a new query using the RQBE window.
+
+4. Set up the Selection Criteria as follows:
+
+   Field Name: Salesman.state
+   Operator: LIKE (the default)
+   Example: x
+
+5. Run the query to make sure it works. It should select four records if the
+   SALESMAN database has not been modified since installation.
+
+6. Save and close the query.
+
+7. In the command window, type "RELEASE x" (without the quotation marks).
+
+8. Open or modify the query. The error message "SQL column 'x' not found" will
+   be displayed.
+
+   Clicking the error message will clear the message and the query will open with
+   only the table(s) used remaining. The information under Selection Criteria,
+   Selected Fields, Order By, Group By, and Having will be cleared.
+
+9. Don't save the empty query. If you do, the missing information will be
+   permanently lost.
+
+If the variable or variables used in the query are restored, the query will open
+correctly.
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin missing errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

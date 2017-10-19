@@ -1,0 +1,68 @@
+DOCUMENT:Q105179  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Invoking System Information Window
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The System Information window for versions 3.0 and 3.1 of Microsoft Mail for
+AppleTalk Networks is invoked by holding down the Command, Option, and ? keys
+while logged into mail. The Command+Option+? keystroke will display a window
+with information similar to the following:
+
+              3.1 System Information
+
+    Desk Accessory:
+       Version Number              31001
+
+    Device Driver:
+       Version Number              31001
+       Serial Number        00-067-0311-00000000
+
+    Mail Server:
+       Version Number              3100
+       Serial Number               46100544
+
+    Server Name:
+       Marketing
+
+This information can be helpful when troubleshooting problems stemming from
+mismatched workstation and server mail versions. The above example shows that
+the Microsoft Mail desk accessory and MS Mail chooser extension are both version
+3.1a. The user is currently logged into a version 3.1 mail server called
+"Marketing". If the user had been using version 3.0 workstation software, the
+version number would have been 3000X where X=0 implies that it is version 3.0
+and X=1 implies that it is version 3.0a.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

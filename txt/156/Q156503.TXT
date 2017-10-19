@@ -1,0 +1,88 @@
+DOCUMENT:Q156503  31-JUL-2001  [visualc]
+TITLE   :BUG: Error When Deleting a Record Using the Apex Grid Control
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.20
+OPER/SYS:
+KEYWORDS:kbVC kbHWx86kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When deleting a record in the data-bound Apex Grid Control (DBGRID32.OCX), the
+following error appears in a message box:
+
+   
+
+   37000: [Microsoft][ODBC Microsoft Access 7.0 Driver]
+       Syntax error in query expression 'current of SQL_CUR12522868X'
+
+The actual cursor name may vary, so instead of "SQL_CUR12522868X," you may see
+"SQL_CURXXXXXXXXX" where the X can be any value.
+
+CAUSE
+=====
+
+This is a problem in the Apex Grid control.
+
+RESOLUTION
+==========
+
+To work around the problem, set the CursorDriver property of the Remote Data
+Control (RDC) to one of the following:
+
+ - ODBC Cursor
+
+ - Server-side cursor
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Apex Grid Control issues positioned deletes of the form:
+
+      DELETE FROM <table> WHERE CURRENT OF <cursor name>
+
+Most ODBC drivers need the cursor library to support such statements. If the
+CursorDriver property is set to 0, the cursor library does not get loaded and
+the positioned delete statement causes the error mentioned above. Setting this
+property to 1 (ODBC Cursors) forces the cursor library to be used.
+
+Setting CursorDriver to 2 (Server-side cursors) causes the Apex Grid control to
+delete records using keyset cursors (SQLSetPos) and the problem is resolved.
+
+Additional query words: 4.20 kbdsd DBGRID
+
+======================================================================
+Keywords          : kbVC kbHWx86 kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch kbVC420b
+Version           : 4.20
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

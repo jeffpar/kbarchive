@@ -1,0 +1,79 @@
+DOCUMENT:Q320018  12-APR-2002  [homegame]
+TITLE   :Dungeon Siege: Minimum System Requirements for Version 1.0
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dungeon Siege, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the minimum system requirements that you need to
+play Microsoft Dungeon Siege, version 1.0.
+
+MORE INFORMATION
+================
+
+To play this game, you need the following:
+
+ - One of the following operating systems:
+
+    - Microsoft Windows 98
+
+    - Microsoft Windows Millennium Edition (Me)
+
+    - Microsoft Windows 2000
+
+    - Microsoft Windows XP
+
+      NOTE: Microsoft Windows 95 or Windows NT are not supported.
+
+ - 128 megabytes (MB) of RAM.
+
+ - Approximately 1,000 MB of available hard-disk space. (An additional 200 MB of
+   available hard-disk space is required for the swap file.)
+
+ - DirectX 8.0-compatible 3-D video accelerator card with 8 MB of RAM.
+
+ - DirectX 8.0-compatible sound card with speakers or headphones.
+
+ - Multimedia PC with Pentium 333 megahertz (MHz)-or-higher processor.
+
+The following hardware is optional:
+
+ - A 56-kilobits-per-second (kbps) modem for multiplayer games with one to four
+   players.
+
+ - Broadband or local area network (LAN) for multiplayer games with five or more
+   players.
+
+Additional query words: msgame Dungeon Seige Requirements Minimum
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,106 @@
+DOCUMENT:Q177352  17-JUL-2001  [visualc]
+TITLE   :HOWTO: Work with Invalid Rectangle When Window Is Resized
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbMFC kbResourceEd KbUIDesign kbVC kbVC152 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++ for Windows, 16-bit edition, version 1.52 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to work with the invalidated rectangle that is
+created when a window is resized.
+
+MORE INFORMATION
+================
+
+To optimize painting in an MFC program, you can usually call GetClipBox() in
+your view's OnDraw() function to get the invalid rectangle and paint only in
+this area. However, if the user resizes the window, GetClipBox() l always
+returns the whole client area. This happens because the "window class" used for
+CView and CFrameWnd has the styles CS_VREDRAW and CS_HREDRAW. These styles cause
+the whole window to be invalidated whenever the window is resized. To work
+around this problem, you have to register your own window class for the view and
+the frame which do not have the class styles of CS_VREDRAW and CS_HREDRAW. You
+can register the class name in InitApplication() and use the class name in
+PreCreateWindow().
+
+Sample Code
+-----------
+
+      class CTestApp : public CWinApp
+      {
+      public:
+         CString m_strMyClassName;
+      ...
+      }
+
+      BOOL CTestApp::InitApplication()
+      {
+      // Register our own class with the same attributes as AfxFrameOrView"
+      // refer to MFC Tech Note 1: Window Class Registration for more
+      // information.
+            m_strMyClassName = AfxRegisterWndClass (0, ::LoadCursor (NULL,
+                               IDC_ARROW), (HBRUSH)(COLOR_WINDOW+1),
+                               LoadIcon(AFX_IDI_STD_FRAME));
+
+            return CWinApp::InitApplication();
+      }
+
+      BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
+      {
+            CTestApp* pApp = (CTestApp*)AfxGetApp ();
+            //  Change the class name to our own name.
+            cs.lpszClass = (const char *)(pApp->m_strMyClassName);
+
+            return CFrameWnd::PreCreateWindow(cs);
+      }
+
+      BOOL CTestView::PreCreateWindow(CREATESTRUCT& cs)
+      {
+            CTestApp* pApp = (CTestApp*)AfxGetApp ();
+            //  Change the class name to our own name.
+            cs.lpszClass = (const char *)(pApp->m_strMyClassName);
+
+            return CView::PreCreateWindow(cs);
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMFC kbResourceEd KbUIDesign kbVC kbVC152 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

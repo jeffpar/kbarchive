@@ -1,0 +1,55 @@
+DOCUMENT:Q137974  20-FEB-2002  [win95x]
+TITLE   :How to Set Up User Profiles with the Microsoft Service for NDS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To set up roving user profiles using the Microsoft Service for NetWare Directory
+Services (NDS), you must set up home directories with full permissions for each
+user.
+
+You can use Nwadmin.exe or Netadmin.exe to edit the properties for each user so
+that there is a home directory set under Environment. For example:
+
+   Volume:testserver_sys.company
+   Path:home\username
+
+When you are using only the Microsoft Client for NetWare Networks, profiles are
+typically saved in the Mail directory. Mail directories are not available with
+Novell NetWare 4.x (unless they are left from a previous version of NetWare).
+Therefore, the Microsoft Service for NetWare Directory Services (NDS) uses the
+home directory instead.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,70 @@
+DOCUMENT:Q152208  08-NOV-2001  [homemm]
+TITLE   :Julia Child Err Msg: Insufficient Memory to Function
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbmmkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click any of the buttons at the bottom of the main screen (Contents,
+Chefs, Recipes, Lessons, Julia's Kitchen, Index, Back, or Options) in Julia
+Child , you receive the following error message:
+
+   Insufficient memory to function properly. Please close other applications or
+   documents.
+
+CAUSE
+=====
+
+The error message may be caused by a missing entry in the [mci extensions]
+section of the Win.ini file.
+
+RESOLUTION
+==========
+
+Verify that an [MCI Extensions] section exists in the Win.ini file. Then make
+sure the section contains the correct entries. For example, the following
+entries are required for Julia Child to run properly:
+
+       [MCI Extensions]
+       avi=AVIVideo
+       wav=waveaudio
+
+If the above entries do not exist or are incorrect, make the necessary changes
+using a text editor such as Microsoft Notepad.
+
+For more information about how to accomplish these tasks in Windows, see your
+Windows printed documentation or online Help.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm launch launching start error win31
+
+======================================================================
+Keywords          : kbenv kberrmsg kbmm kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbJuliaChild
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

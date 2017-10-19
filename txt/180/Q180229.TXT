@@ -1,0 +1,69 @@
+DOCUMENT:Q180229  14-MAR-2000  [sna]
+TITLE   :Calling CONVERT Before RECEIVE_ALLOCATE May Lead to Event 60
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If WinAPPCStartup() is not included at the beginning of a Windows-based
+invokable transaction program, and if the TP first calls the CONVERT API, the
+TP's call to RECEIVE_ALLOCATE may subsequently stop (hang) and not complete.
+
+CAUSE
+=====
+
+By first calling the CONVERT API prior to calling RECEIVE_ALLOCATE, the SNA
+client APPC interface was being confused, causing it to fail to properly match
+the incoming attach request to the application's RECEIVE_ALLOCATE call. If a
+Windows-based transaction program does not begin with WinAPPCStartup(), SNA
+Server automatically calls WinAPPCStartup() when the application calls the first
+APPC function. However, if this call is preceded by a Common Service Verb
+function (such as CONVERT), this can confuse the APPC interface.
+
+WORKAROUND
+==========
+
+The application can work around this problem by explicitly calling
+WinAPPCStartup prior to calling any Common Service Verb functions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: APPC invokable TP WinAPPCStartup
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

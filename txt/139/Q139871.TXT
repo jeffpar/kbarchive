@@ -1,0 +1,90 @@
+DOCUMENT:Q139871  31-JUL-2001  [visualc]
+TITLE   :FIX: Error C2371 on Struct Typedef that Does Not Have a Tag
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,2.2,4.0,4.1,4.2
+OPER/SYS:
+KEYWORDS:kbLangCPP kbVC kbVC400bug kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0, 4.1, 4.2, used with:
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a typedef for a structure that doesn't have a tag, you may receive
+the following error when you compile the code:
+
+   Error C2371: '<typedef tag>' : redefinition; different basic types
+
+RESOLUTION
+==========
+
+Include a tag for the structure.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+      /* Compile options needed: none
+      */ 
+
+      class A
+      {
+        public:
+          const A& operator=(const A&);
+      };
+
+      typedef struct  // add tag here
+      {
+         A a;
+      } B;
+
+      B t1, t2;
+
+      void f()
+      {
+        t2 = t1;
+      }
+
+      void main()
+      {
+         f();
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbLangCPP kbVC kbVC400bug kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper
+Version           : :2.0,2.1,2.2,4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

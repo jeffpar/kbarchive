@@ -1,0 +1,82 @@
+DOCUMENT:Q167705  25-JUL-2001  [win95x]
+TITLE   :Talking Loudly into Microphone May Cause Disconnect
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbenv kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you are connected to the Internet, talking loudly into the microphone may
+cause you to lose your connection.
+
+CAUSE
+=====
+
+This behavior has been seen with modems that integrate sound card functions with
+the modem. This appears to be a limitation of this type of modem working with
+either Microsoft NetMeeting or the Microsoft Sound Recorder program.
+
+RESOLUTION
+==========
+
+1. Restart your computer and re-establish your Internet connection.
+
+2. If the problem persists, do not talk continuously at high volumes into the
+   microphone.
+
+3. Reduce the sensitivity of your microphone. To do so, follow these steps:
+
+   a. Double-click the Speaker icon on the taskbar.
+
+   b. On the Options menu, click Properties.
+
+   c. In the Show The Following Volume Controls area, click the Microphone check
+      box to select it.
+
+   d. Click OK.
+
+   e. Lower the microphone setting by moving the Microphone slider.
+
+NOTE: Not all sound cards include drivers that allow adjustment of the microphone
+volume. If this option is not available with the sound card you are using,
+contact the manufacturer of the sound card to determine whether an updated
+Windows 95 driver is available.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: talk talking
+
+======================================================================
+Keywords          : kbenv kbhw win95 kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

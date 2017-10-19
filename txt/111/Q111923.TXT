@@ -1,0 +1,80 @@
+DOCUMENT:Q111923  07-MAY-2001  [visualc]
+TITLE   :HOWTO: Compare a CString to the Empty String
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbMFC kbString kbVC kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The correct way to test a CString to see whether it is empty (or not empty) is
+to use the IsEmpty() member function as shown below:
+
+      CString x = "This is a sample CString";
+      if (x.IsEmpty())
+         AfxMessageBox("The CString is EMPTY");
+      else
+         AfxMessageBox("The CString is not EMPTY");
+
+MORE INFORMATION
+================
+
+The CString member function IsEmpty() tests a CString for the empty condition.
+The function returns nonzero if the string has zero length.
+
+If the CString equality operators (==, !=) are used in an attempt to test whether
+a CString is NULL, a general protection (GP) fault may occur. The following code
+fragment demonstrates this:
+
+      CString x = "This is a sample CString";
+      if (x != NULL)  // GP Fault for (x == NULL) condition, as well
+         AfxMessageBox("The CString is not EMPTY");
+      else
+         AfxMessageBox("The CString is EMPTY");
+
+Because x is a CString object, not a pointer, it is inappropriate to compare x to
+a null pointer.
+
+Testing a CString against the empty string, as shown below, is allowed. Because a
+temporary CString object is constructed, this method is less efficient than
+calling IsEmpty():
+
+      CString x = "This is a sample CString";
+      if (x != "")
+         AfxMessageBox("The CString is not EMPTY");
+      else
+         AfxMessageBox("The CString is EMPTY");
+
+Additional query words: CString inequality 2.50 2.51 2.52 3.00 3.10 gpf NULL gp-fault
+
+======================================================================
+Keywords          : kbMFC kbString kbVC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

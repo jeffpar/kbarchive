@@ -1,0 +1,101 @@
+DOCUMENT:Q181357  09-AUG-2001  [winnt]
+TITLE   :PRB: Editing the Windows NT 4.0 Unattended Setup Script To Inser
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Following the instructions from "Deployment Guide: Automating Windows NT Setup,"
+a user who wishes to replace settings that are unique to the computer such as
+computername, can interrupt the unattended installation after character mode
+setup is completed. The user can start the computer in MS-DOS mode, and edit the
+file, C:\$WIN_NT$.~BT\WINNT.SIF. When the user restarts the computer in the
+Windows NT GUI mode setup, the unattended installation completes. However, the
+modifications introduced into Winnt.sif do not take effect. The defaults from
+the original Unattend.txt take precedence.
+
+CAUSE
+=====
+
+The wrong file, Winnt.sif, is being edited.
+
+MORE INFORMATION
+================
+
+In an unattended installation over a network, the Windows NT files are copied
+from the network share point into two temporary directories on the computer
+being installed. The directories are:
+
+C:\$WIN_NT$.~LS (system files) and C:\$WIN_NT$.BT
+
+After the files are copied, the computer restarts and uses the files from
+$WIN_NT$.~BT to boot and to direct the character mode installation process. The
+character mode setup phase uses data from WINNT.SIF to install some device
+drivers and to copy files to the correct subdirectory of %windir%.
+
+At the end of character mode phase, Setup copies data needed for the GUI phase
+from WINNT.SIF into the file, %windir%\SYSTEM32\$WINNT$.INF. The data copied
+includes computername, network adapter settings, domain/machine account
+configuration settings, and other information necessary to build the registry.
+
+The administrator should therefore edit the following file:
+
+   %windir%\SYSTEM32\$WINNT$.INF
+
+before restarting in GUI mode setup.
+
+Where disk duplication is being used to replicate the character mode setup image,
+inserting the unique settings in each computer's $WINNT$.INF results in a usable
+installation of Windows NT, when the computers on which the installation is
+taking place have identical drive subsystems. If they do not, the restart into
+GUI setup will fail with a stop code of 0x0000007B because of incorrect disk
+drivers. Where the drive subsystems are different, the C:\$WIN_NT$.BT\WINNT.SIF
+should be edited prior to any startup into Windows NT setup.
+
+When an administrator performs an unattended install over a network on each
+computer, it may be easier to use a Uniqueness Database File (UDF) in
+conjunction with UNATTEND.TXT to give the unique data for each computer because
+no manual intervention is required. See the Windows NT Deployment Guide For
+further information, available at:
+
+   http://www.microsoft.com/ntworkstation/info/deployguide.htm.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q156876 Using UDF Files with Windows NT 4.0 Unattended Setup
+
+Additional query words: Unattended Setup Install
+
+======================================================================
+Keywords          : kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

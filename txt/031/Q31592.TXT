@@ -1,0 +1,84 @@
+DOCUMENT:Q31592  30-JUL-2001  [homegame]
+TITLE   :Flight Simulator: Adjusting the Radios
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The ADF (Automatic Direction Finder) tunes into NDBs (Non Directional Beacons).
+The OBIs (Omni Bearing Indicators) tune into VORs (Very high frequency
+Omnidirectional Ranges) through the NAV radios.
+
+MORE INFORMATION
+================
+
+ADF
+---
+
+Adjusting the ADF is identical to adjusting NAV2 except that you press NNN2 to
+adjust the third digit. When the ADF gauge is activated, it takes the place of
+NAV2. You can also adjust the ADF through the menu you activate by pressing "5
+E" from the main screen.
+
+NAV1
+----
+
+To adjust numbers to the left of the decimal point, press the "N" key, then the
+"1" key (not on the keypad) then use the PLUS (+) and MINUS (-) keys (not on the
+keypad) to change the frequency. To adjust numbers to the right of the decimal
+point, press the "N" key twice, then the "1" key (not on the keypad). Then use
+the PLUS (+) and MINUS (-) keys (not on the keypad) to change the frequency. You
+can also adjust NAV1 through the menu obtainable by pressing "5 B" from the main
+screen.
+
+NAV2
+----
+
+To adjust numbers to the left of the decimal point, press the "N" key, then press
+the "2" key (not on the keypad); then, use the PLUS (+) and MINUS (-) keys (not
+on the keypad) to change the frequency. To adjust numbers to the right of the
+decimal point, press the "N" key twice, then the "2" key (not on the keypad);
+then, use the PLUS (+) and MINUS (-) keys (not on the keypad) to change the
+frequency. You can also adjust NAV2 through the menu obtainable by pressing "5
+B" from the main screen.
+
+OBI 1
+-----
+
+To adjust the numbers, press the "V" key, then the "1" key (not on the keypad);
+then, use the PLUS (+) and MINUS (-) keys (not on the keypad) to change the
+numbers. You can also adjust OBI 1 through the menu obtainable by pressing "5 B"
+from the main screen.
+
+OBI 2
+-----
+
+To adjust the numbers, press the "V" key, then the "2" key (not on the keypad);
+then, use the PLUS (+) and MINUS (-) keys (not on the keypad) to change the
+numbers. You can also adjust OBI 2 through the menu obtainable by pressing "5 B"
+from the main screen.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

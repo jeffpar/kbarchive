@@ -1,0 +1,61 @@
+DOCUMENT:Q240632  23-OCT-2000  [homemm]
+TITLE   :World Atlas 2000: Hangs When You Disconnect from the Internet
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+ - Microsoft Encarta Interactive World Atlas 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you disconnect from the Internet while you are running Microsoft Encarta
+World Atlas 2000 or Encarta Interactive World Atlas 2001, you may receive a
+warning message stating that you are no longer connected to the Internet.
+
+When you click OK, Encarta World Atlas stops responding for several minutes, and
+then you receive the following error message:
+
+   The page cannot be displayed.
+
+   The page you are looking for is currently unavailable. The Web site might be
+   experiencing technical difficulties, or you may need to adjust your browser
+   settings.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm ewa2k
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2001 kbEncartaWorldAtlas2000
+Version           : WINDOWS:; :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

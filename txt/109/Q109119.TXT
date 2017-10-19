@@ -1,0 +1,87 @@
+DOCUMENT:Q109119  08-AUG-2001  [winnt]
+TITLE   :Large File Copy Failures Using File Manager
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you transfer files 20 megabytes (MB) or larger through File Manager, the
+transfer takes a long time, and in some cases the transfer fails.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Use stripe sets across multiple physical drivers, with NTFS on all drives, to the
+following:
+
+1. Create a share on the first stripe set (drive E) and name it TEST. Include a
+   28 MB text file called TEST.TXT.
+
+2. On the second drive (drive F), create a share called PUBLIC.
+
+3. Use the NET USE command to connect to both shares.
+
+4. From File Manager, select drive E, and then select the TEST.TXT file.
+
+5. From the File menu, choose Copy.
+
+6. In the Copy dialog box, enter "F:\" (without the quotation marks) in the To
+   field.
+
+7. From the server, open a command prompt and do a Dir on drive F. The TEST.TXT
+   file is in this directory with a size of 0 bytes.
+
+8. Open a second window on Server Manager. From the Properties menu, choose
+   Server, and then select In Use. The following four sessions are open between
+   the workstation and the server:
+
+   - A read from drive E
+   - A read from drive F
+   - A read from drive E
+   - A write to drive F
+
+It appears the Copy command is being carried out at this time. Disk activity
+stops on the server after approximately four minutes. The sessions are closed,
+if you quickly do a Dir from the command prompt, the file appears in the drive F
+directory, and the size is correct. Do a Dir again and the file is gone. On the
+workstation, from File Manager, a STOP sign appears, with the message saying the
+session was closed, and the copy command could not be carried out. If the same
+command is done from the command line, it is carried out fine:
+
+   C:\copy e:\test.txt f:\ 
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,78 @@
+DOCUMENT:Q156726  05-APR-1999  [exchange]
+TITLE   :XFOR: DXA does not Import X.121 Addresses Correctly
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange Directory Synchronization (DXA) will not allow X.400
+addresses to be imported if part of the address contains X121=. Note that X121
+does not have a period between the X and the 1.
+
+The errors seen in the event log are as follows:
+
+   Source: X400Proxy
+   Type: Warning
+   Description:
+   X400 address failure. An illegal type name was specified at character position
+   21 of X400:x121=1234567890;a=admd;p=prmd;c=gb;'
+
+   Source: MSExchangeDX
+   Type: Error
+   Description:
+   The email address of the following transaction is not a valid format. See
+   previous events logged by Microsoft Exchange System Attendant component for
+   details. The transaction is a X121 test without a dot
+   X400:c=gb;a=admd;p=prmd;x121=1234567890;
+
+CAUSE
+=====
+
+The X400 gateway will only support X.121 address using the syntax of X121= with
+no period between the X and the 1. When you attempt to DirSync such addresses to
+Microsoft Exchange, they will fail because Microsoft Exchange requires the
+period. This conforms to X400 standards.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

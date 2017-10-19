@@ -1,0 +1,151 @@
+DOCUMENT:Q130148  08-DEC-2000  [accother]
+TITLE   :ODE97: Using the Data Outline ActiveX Control Version 1.2
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+SUMMARY
+=======
+
+The Data Outline control included with the Microsoft Access Developer's Toolkit
+version 2.0 and 7.0 is not included with the Microsoft Office 97 Developer
+Edition Tools. However, you can obtain version 1.2 of the Data Outline ActiveX
+control for Microsoft Access 97 free from Microsoft's download services.
+
+This article discusses the following topics related to using version 1.2 of the
+Data Outline control:
+
+ - When to Use the Data Outline Control
+ - Getting help with the Data Outline Control
+ - Distributing the Data Outline Control with Run-Time Applications
+
+For information about obtaining version 1.2 of the Data Outline ActiveX control,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q162359 ACC97: Access 97 Data Outline ActiveX Control Available in Download
+   Center
+
+MORE INFORMATION
+================
+
+When to Use the Data Outline Control
+------------------------------------
+
+Version 1.2 of the Data Outline control is the same as version 1.1 of the Data
+Outline control, which is included with the Microsoft Access Developer's Toolkit
+version 7.0. The only difference between the two controls is that version 1.2
+has been modified for use in a Microsoft Access 97 database. There are no
+feature enhancements or fixes included with the new control.
+
+Version 1.2 of the Data Outline control was created to make it easier for you to
+upgrade databases in Microsoft Access 97 that contain the Data Outline control.
+Although you can add the new Data Outline control to a form in Microsoft Access
+97, consider using another control, such as the TreeView control, for any new
+development. Microsoft Access will not provide an updated Data Outline control
+for future releases.
+
+For information about migrating to the TreeView control from the Data Outline
+control, please see the following article in the Microsoft Knowledge Base:
+
+   Q162523 ACC97: Migrating from Data Outline Control to TreeView Control
+
+Getting Help With the Data Outline Control
+------------------------------------------
+
+Version 1.2 of the Data Outline ActiveX control is provided, as is, from
+Microsoft's download services; Microsoft Product Support Services does not
+provide assistance beyond helping you to install the updated control. However,
+there are other sources of help for using the Data Outline control:
+
+ - The Msdboutl.hlp Help file included with the Microsoft Access Developer's
+   Toolkit version 7.0 contains information about version 1.1 of the Data
+   Outline control, its properties and methods. Because version 1.2 of the Data
+   Outline Control is the same control updated for Microsoft Access 97, the
+   Msdboutl.hlp Help file applies to it as well.
+
+ - When you download the new control, it includes a sample database called
+   Outlin97.mdb. This is a Microsoft Access 97 database containing sample forms
+   that use version 1.2 of the Data Outline Control in different ways. You can
+   study the design of those forms to see how to use the control in your
+   database.
+
+   NOTE: Outlin97.mdb contains tables linked to the Northwind sample database.
+   You must have Northwind.mdb on your hard drive to use Outlin97.mdb. If
+   Northwind.mdb is in a folder other than the default Samples folder on your
+   computer, you may receive the following error when you open Outlin97.mdb:
+
+   You can't run Outline.MDB until you locate Northwind.mdb
+
+   If that happens, open the database again while holding down the SHIFT key to
+   disable the AutoExec macro. Delete the following linked tables, and manually
+   link them with the tables in your Microsoft Access 97 copy of the Northwind
+   sample database:
+
+      Customers
+      Employees
+      Order Details
+      Orders
+      Products
+      Shippers
+      Suppliers
+
+ - If you have the Control Wizards button clicked on the toolbar when you add
+   the new Data Outline Control to a form in Design view, the Data Outline
+   Control Wizard helps to guide you through creating the levels in the control.
+
+Distributing the Data Outline Control with Run-Time Applications
+----------------------------------------------------------------
+
+When you download version 1.2 of the Data Outline control, the compressed file
+contains updated support files that you need to include when you distribute a
+run-time application using the Microsoft Office 97 Developer Edition (ODE).
+
+When you add version 1.2 of the Data Outline control (Msdbout2.ocx) to the List
+of Files box in the ODE Setup Wizard, you receive the following message:
+
+   The Setup Wizard could not find the Dependency (.DEP) file for the
+   ActiveX control 'msdbout2.ocx'. If this control requires additional
+   files to be installed, the control may not register or function
+   properly.
+
+Be sure you also add the following support files to the List Of Files box to
+distribute with your run-time application:
+
+   Mfc40.dll
+   Msvcirt.dll
+   Msvcrt40.dll
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

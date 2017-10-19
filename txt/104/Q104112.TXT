@@ -1,0 +1,59 @@
+DOCUMENT:Q104112  18-MAY-2001  [pcmail]
+TITLE   :FAX: Error Message: Could Not Find Setup File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0a; winnt:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, version 3.0a 
+ - the operating system: Microsoft Windows NT 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the Microsoft Mail Fax printer driver within the
+Windows NT Control Panel, this error may occur:
+
+   Could not find Setup File <path> PRINTER.INF
+
+CAUSE
+=====
+
+Windows NT does not use the OEMSETUP.INF file like other versions of Windows.
+Windows NT looks for a PRINTER.INF file, which is not on the installation disk.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.0a of the Microsoft
+Mail Gateway to Fax and Microsoft Windows NT. We are researching this problem
+and will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 3.00a ErrMsg
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch kbMailSearch kbMailGateSearch kbZNotKeyword3 kbSSafe310UNIX kbMailATN300a
+Version           : MS-DOS:3.0a; winnt:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

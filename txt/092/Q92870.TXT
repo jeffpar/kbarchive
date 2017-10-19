@@ -1,0 +1,78 @@
+DOCUMENT:Q92870  04-NOV-1999  [win3x]
+TITLE   :WFWG: NETX.COM Err Msg: File Server Not Found
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft Windows for Workgroups with Novell NetWare support
+on an Ethernet II cabling system, you may be unable to see any NetWare file
+servers. Also, you may receive the following error messages when NETX.COM
+starts:
+
+   File server not found
+
+CAUSE
+=====
+
+This error may be caused by a conflict in data frame formats. An Ethernet II
+system uses its own frame format, while the default frame format for Novell
+support follows the IEEE 802.3 standard.
+
+WORKAROUND
+==========
+
+To enable your Windows for Workgroups workstation to communicate correctly on an
+Ethernet II system with Novell NetWare support, you must change the frame format
+used by the IPX protocol to Ethernet II. To do this, use the following steps:
+
+1. In the Control Panel window, choose the Network icon.
+
+2. Choose the Adapters button.
+
+3. Select the adapter that is configured for NetWare.
+
+4. Choose the Setup button, then choose the Protocols button.
+
+5. From the Protocols In Use list, select Novell IPX.
+
+6. Choose the Settings button.
+
+7. Select Ethernet II (DIX) instead of the default Novell/Ethernet setting, then
+   choose the OK button.
+
+After you accept the changes and reboot your machine, you should be able to see
+NetWare servers on the Ethernet II system.
+
+Additional query words: 3.10 wfwfest econfig
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q153139  08-AUG-2001  [winnt]
+TITLE   :Removing Deleted or Renamed Servers from License Manager
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Domain controllers that have been renamed or removed from Server manager still
+appear in the Server Browser of License Manager, even though you expect these
+domain controllers to disappear from the list.
+
+CAUSE
+=====
+
+This information is replicated from the domain controllers to the primary domain
+controller or Enterprise server.
+
+RESOLUTION
+==========
+
+Stop the License Logging service, delete or rename the Llsuser.lls file in the
+%Systemroot%\System32\Lls directory, and then restart the License Logging
+service.
+
+This procedure will clear all the entries for domain controllers and users that
+have connected to the server. It will not reset your purchase history or any
+license groups you have created.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

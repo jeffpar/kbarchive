@@ -1,0 +1,57 @@
+DOCUMENT:Q90228  07-OCT-1999  [win3x]
+TITLE   :Primary File Server Suggested MS-DOS Configuration Changes
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you dedicate a machine in a work group as a file or resource server, there
+are two MS-DOS settings you should change:
+
+ - The Files= statement should be increased to 255 on a primary file server. If
+   the machine is used less, 128 may be a good value. Some adjustment may be
+   necessary.
+
+ - The FCBS= statement should be added with a value of 28.
+
+MORE INFORMATION
+================
+
+Some problems may occur if the Files= statement is too low. You may receive
+error messages stating that a particular file is not available.
+
+If you are not using VSHARE.386 then you should significantly increase the number
+of handles and the buffer size of SHARE.EXE.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

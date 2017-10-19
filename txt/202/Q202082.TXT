@@ -1,0 +1,74 @@
+DOCUMENT:Q202082  19-MAR-1999  [sms]
+TITLE   :SMS: Software Inventory Does Not List Individual Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server (SMS) 2.0 Software Inventory reporting detail can be
+configured to report just the application, but not the files associated with the
+application. This is configurable in the Software Inventory Agent configuration
+screen under the Inventory Collection tab in the SMS Administrator console.
+
+MORE INFORMATION
+================
+
+The options are listed under "Reporting Detail." From there, you can specify the
+level of inventory file information that you want reported. For SMS to report
+information on inventoried files, you must select at least one check box:
+
+Product version information:
+----------------------------
+
+Information about "known" products (products that have company name, product
+name, version, and language) is inventoried and displayed per manufacturer in
+Resource Explorer. By default, this check box is selected.
+
+Files associated with known products:
+-------------------------------------
+
+Resource Explorer lists files associated with the inventoried products. For
+example, Resource Explorer would associate Wwintl32.dll with Microsoft Word.
+This check box is available only when Product version information is selected.
+By default, this check box is cleared.
+
+Files not associated with known products:
+-----------------------------------------
+
+Files that do not include company and product information are inventoried and
+displayed in the Resource Explorer Unknown list. By default, this check box is
+selected.
+
+Additional query words: prodsms sinv32 sms20
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

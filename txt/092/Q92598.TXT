@@ -1,0 +1,68 @@
+DOCUMENT:Q92598  02-OCT-1999  [win3x]
+TITLE   :WFWG: Server Responds Slowly After RAS Connection is Made
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may notice a general slowdown of your Windows for Workgroups server machine
+if another user has connected to it using Microsoft Remote Access Services (RAS)
+version 1.0. RAS version 1.1 does not exhibit this behavior.
+
+WORKAROUND
+==========
+
+To avoid this problem, add the following statement to the [network] section of
+the SYSTEM.INI file on the remote computer:
+
+   MaintainServerList=no
+
+NOTE: The "Microsoft Windows for Workgroups Resource Kit" manual for version 3.1
+incorrectly states on page E-10 that the MaintainServerList=No line should be
+added to the [386enh] section.
+
+MORE INFORMATION
+================
+
+After the computer with RAS 1.0 has connected to the server workstation, the
+network adapter on the server constantly sends broadcast messages or packets.
+This is known as a "broadcast storm." Until you restart the server machine, the
+"storm" continues.
+
+The nature of this problem often makes it difficult to detect. You may notice a
+sluggish keyboard response or experience slow network operations. If you have a
+CPU meter on the server machine, it registers 100% CPU usage when this problem
+occurs.
+
+Additional query words: lanman docerr wfwgrk 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

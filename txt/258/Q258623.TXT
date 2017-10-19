@@ -1,0 +1,69 @@
+DOCUMENT:Q258623  31-MAR-2000  [homegame]
+TITLE   :Baseball 2001: Textures Turn White After You Change Resolution
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you play Microsoft Baseball 2001, graphic textures in the game may turn
+white.
+
+CAUSE
+=====
+
+This behavior can occur if you change display resolution during the game.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, select the display resolution that you
+want to use before you start the game.
+
+MORE INFORMATION
+================
+
+You may be able to work around this issue by configuring Baseball 2001 to run in
+a lower display resolution:
+
+1. Start Baseball 2001.
+
+2. On the Home Plate screen, click Options.
+
+3. Click the Graphics tab.
+
+4. Under Available Resolutions, click a lower display resolution, and then click
+   OK.
+
+Additional query words: 1.00 msgame bb2001 bball graphics color changes
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

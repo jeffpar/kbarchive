@@ -1,0 +1,64 @@
+DOCUMENT:Q152360  13-OCT-1999  [msnetwork]
+TITLE   :Error Message: Cannot Find Ccdialer.exe
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a service on MSN, The Microsoft Network, you may
+receive the following error message:
+
+   - Cannot find Ccdialer.exe.
+
+CAUSE
+=====
+
+This message can occur if there is not enough free space on the hard disk.
+
+RESOLUTION
+==========
+
+Make additional free space available on the hard disk. At least 40 MB of free
+space is recommended. These are some possible ways to free space on the hard
+disk:
+
+ - Empty the cache for Microsoft Internet Explorer. In Internet Explorer, click
+   Options on the View menu, and then click the Advanced tab. Under Temporary
+   Internet Files, click Settings, and then click Empty Folder.
+
+ - Delete files from the Windows\Temp folder.
+
+ - Delete any other unneeded files.
+
+Additional query words: msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN120
+Version           : WINDOWS:1.2,1.3,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

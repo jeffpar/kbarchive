@@ -1,0 +1,54 @@
+DOCUMENT:Q77094  22-NOV-1999  [msdos]
+TITLE   :Orchid PC Turbo 286 E Board Incompatible with MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Orchid, the PC Turbo 286 E board is not compatible with MS-DOS 5.0.
+The software that accompanies the board allows you to use the computer's default
+mode or turbo mode. The default mode usually runs the computer as an 8086 or
+8088 processor. In turbo mode, the software runs the machine as an 80286
+processor.
+
+If you enter turbo mode under MS-DOS 5.0, the machine will hang.
+
+MORE INFORMATION
+================
+
+For more information about the Orchid PC Turbo 286 E board, please contact
+Orchid technical support.
+
+
+Additional query words: 5.00 5.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

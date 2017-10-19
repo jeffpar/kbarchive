@@ -1,0 +1,55 @@
+DOCUMENT:Q172968  09-AUG-2001  [winnt]
+TITLE   :Disk Subsystem Recovery Documentation Error
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Cluster Server (MSCS) Administrator's Guide contains a section
+that discusses recovery from disk subsystem failures. The information contained
+in the section may not pertain to version 1.0 of the product.
+
+MORE INFORMATION
+================
+
+Chapter 4, "Managing MSCS," in the MSCS Administrator's Guide contains a section
+called "Recovering Disk-Subsystem Failures." Because MSCS version 1.0 does not
+support software RAID, this section may not apply.
+
+Recovery procedures for hardware RAID may be specific to the RAID implementation.
+For these procedures, consult the documentation provided with your hardware, or
+consult with the hardware vendor.
+
+Additional query words: cluster disk failure doc error MSCS
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

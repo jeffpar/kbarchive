@@ -1,0 +1,63 @@
+DOCUMENT:Q72023  23-JUL-2001  [win16sdk]
+TITLE   :SAMPLE: Verify.exe - Data Input Verification for Edit Controls
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbCtrl kbDlg kbEditCtrl kbSDKPlatform kbGrpDSUser kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is a file in the Microsoft Download Center called VERIFY.EXE that contains
+sample code demonstrating the verification of the contents of a dialog box edit
+control. The code reads and verifies the edit control string as each character
+is entered by the user.
+
+The contents of the edit control are verified to be legal for a specified data
+type. If an illegal character is encountered, the character is removed from the
+edit control and a message beep is generated. The code will verify the input of
+WORD, DWORD, or FLOAT values.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Verify.exe
+   (http://download.microsoft.com/download/platformsdk/sample86/3.1/W31/EN-US/Verify.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbCtrl kbDlg kbEditCtrl kbSDKPlatform kbGrpDSUser kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

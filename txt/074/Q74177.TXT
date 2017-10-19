@@ -1,0 +1,112 @@
+DOCUMENT:Q74177  17-DEC-2000  [msdos]
+TITLE   :Troubleshooting Problems with MS-DOS Shell
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+You may experience the following problems when running the MS-DOS Shell under
+MS-DOS version 5.0 or versions 6.0 and later:
+
+ - Shell stops responding (hangs) at startup or after the first screen.
+
+ - Various Shell display problems, such as compressed screen fonts and no color
+   display, may occur.
+
+MORE INFORMATION
+================
+
+When trouble-shooting these problems, consider the following:
+
+1. Determine if an incorrect or old version of the mouse driver, or the wrong
+   device driver, is installed in CONFIG.SYS and/or in AUTOEXEC.BAT. An older
+   mouse driver may cause video disruption even though the mouse functions
+   normally.
+
+2. Try to run Shell with one of the following switches:
+
+      dosshell /b   (to start Shell in black and white color)
+
+   -or-
+
+      dosshell /t   (to start Shell in text mode)
+
+3. Rename DOSSHELL.VID.
+
+   Run Shell without DOSSHELL.VID in text mode. If this works, the video driver
+   must be changed by expanding another file from the original disks.
+
+   For more information on the Shell video driver, query on the following words:
+
+   " 5.0 and video and Shell " (without the quotation marks)
+
+4. Check the DOSSHELL.GRB file. If you have a video problem while running Task
+   Swapper, most likely the .GRB file is corrupted or not installed properly.
+   The .GRB file is responsible for retaining the video display during the
+   swapping (that is, it grabs the video display for a later display).
+
+   If you encounter a problem with task switching graphic applications, make sure
+   graphics mode is selected instead of text mode in the advanced section of the
+   application properties. For example, Microsoft Word 5.5, when running in
+   graphics mode, requires that Video Mode - Graphics be selected in the
+   advanced section of the Program Item Properties dialog box.
+
+5. Remove any terminate-and-stay-resident (TSR) programs or other drivers in the
+   CONFIG.SYS and/or AUTOEXEC.BAT files, then rerun Shell.
+
+6. Make sure DOSSHELL and corresponding video drivers run from the workstation
+   if you are connected to a network. Run Shell from the DOS directory. Check to
+   make sure "VIDEODIR=[DRIVE:][PATH]" in the DOSSHELL.INI has the proper
+   location of the video drivers.
+
+7. For testing purposes, do not load device drivers high. Change any DEVICEHIGH
+   in CONFIG.SYS to read DEVICE and remove the LOADHIGH or LH statement in
+   AUTOEXEC.BAT.
+
+8. If you get the message
+
+   Unable to load MS-DOS Shell, retry (y/n)?
+
+   check whether DOSSHELL.EXE is in the DOS directory. If it is, it is possible
+   that DOSSHELL.EXE has been corrupted. You need to expand the DOSSHELL.EXE
+   from disk 3 (5.25-inch disks) or disk 2 (3.5-inch disks) of the Microsoft
+   MS-DOS 5 Upgrade.
+
+REFERENCES
+==========
+
+"Getting Started with MS-DOS" manual for version 5.0, page 52, 130
+
+Additional query words: tshoot 5.00 5.00a 6.00 6.20 6.21, 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

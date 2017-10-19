@@ -1,0 +1,67 @@
+DOCUMENT:Q168977  17-DEC-2000  [win95x]
+TITLE   :Time Suffix Appears Distorted in Windows 95 Clock
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbtool kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the Windows 95 clock, or view files with the time stamp displayed,
+you may see characters other than AM or PM. For example, the clock may look like
+this:
+
+   8:30 yiu
+
+If you view a file with the time stamp displayed, the file may look like this:
+
+   Morning.txt     123k    9:00 yiu
+
+CAUSE
+=====
+
+The regional settings have been changed or become damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Regional Settings, and then click the Time tab.
+
+3. In the AM Symbol box, type "AM" (without the quotation marks).
+
+4. In the PM Symbol box, type "PM" (without the quotation marks).
+
+5. Click OK.
+
+======================================================================
+Keywords          : kbtool kbui win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q149082  08-NOV-2001  [homekids]
+TITLE   :3D Movie Maker: Recorded Sound Is Distorted or Poor Quality
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbsoundkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Sounds that you record in 3D Movie Maker may be distorted or of poor quality.
+The same recordings may sound better if they are recorded in the Windows Sound
+Recorder accessory. These two programs record sounds differently.
+
+WORKAROUND
+==========
+
+Use the Windows Sound Recorder accessory to record the sounds, then import them
+into 3D Movie Maker. For information about how to record sounds in the Windows
+Sound Recorder, see your Windows 95 or Windows 98 online Help.
+
+MORE INFORMATION
+================
+
+Using the Windows Sound Recorder to record your sounds has several advantages
+over recording them in 3D Movie Maker.
+
+ - There is a 10-second limit in 3D Movie Maker but not in Sound Recorder.
+
+ - Sounds recorded in 3D Movie Maker movies are more difficult to move to other
+   movies.
+
+ - Sound Recorder (and other sound utilities) have capabilities to manipulate
+   the sounds that are not included with 3D Movie Maker.
+
+Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional 3d 3dmm kbinterop recording best way homekid homekids bad record new
+
+======================================================================
+Keywords          : kbsound kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+Version           : 1.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

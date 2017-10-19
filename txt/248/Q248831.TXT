@@ -1,0 +1,86 @@
+DOCUMENT:Q248831  24-OCT-2000  [winnt]
+TITLE   :BUG: Incorrect Symbols for Kerberos DLLs on Windows 2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbKernBase kbSecurity kbDSupport kbGrpDSKernBase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using symbols of Kerberos DLLs on Windows 2000, the debugger reports a
+warning that there is a mismatch in the checksums between the symbol and the
+corresponding executable image.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The symbol files of some Kerberos DLLs on Windows 2000 have incorrect checksums
+in the headers. The following are the binaries which checksums are incorrect in
+the corresponding symbol files.
+
+ - Rsabase.dll
+
+ - Dssbase.dll
+
+ - Rsaenh.dll
+
+ - Dssenh.dll
+
+ - Gpkcsp.dll
+
+ - Slbcsp.dll
+
+ - Schannel.dll
+
+ - Msv1_0.dll
+
+ - Kerberos.dll
+
+Even though the symbol file checksums are incorrect, the symbol information is
+valid and can be used for debugging.
+
+Also, the symbols of Kerberos.dll require the symbol path (sympath) to be set to
+the DLL directory containing the symbol file. Usually the sympath will be set to
+the symbols directory and the debuggers will look in the corresponding child
+directories to find the symbol file. But in this situation only Kerberos.dll
+requires the symbol path to point to the DLL directory.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbKernBase kbSecurity kbDSupport kbGrpDSKernBase 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

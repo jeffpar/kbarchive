@@ -1,0 +1,75 @@
+DOCUMENT:Q156077  02-SEP-1999  [exchange]
+TITLE   :XADM: How to Specify Where New Public Folders Are Stored
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using the Microsoft Exchange Server Administrator program, you can specify the
+recipients container in which you want to store new public folders on a
+Microsoft Exchange Server computer.
+
+MORE INFORMATION
+================
+
+The Public Folder Container option is available on the General page of the
+Information Store Site Configuration object's Properties dialog box. This option
+lets you choose the recipients container where all new public folders created in
+this site appear. For example, you may want to group all public folders in a
+recipients container called Public Folders. Grouping public folders in this
+manner makes it easier to locate a specific public folder from the address book
+and from the Administrator window.
+
+Changing the public folder container changes the location where all new public
+folders are stored. This does not affect the public folders that have already
+been created. If no container is specified, the default is the recipients
+container for the site.
+
+To specify the location on the Microsoft Exchange Server computer to store new
+public folders, follow these steps:
+
+1. Start the Microsoft Exchange Server Administrator program.
+
+2. Select the Information Store Site Configuration object located in the
+   Configuration container.
+
+3. On the File Menu, click Properties.
+
+4. In the Properties dialog box, select General, then select Modify.
+
+5. In the Public Folder Container dialog box, select a recipients container
+   where all new public folders are stored.
+
+Additional query words: storage move
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

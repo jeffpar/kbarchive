@@ -1,0 +1,100 @@
+DOCUMENT:Q167963  17-DEC-2000  [win95x]
+TITLE   :Installing Program Requiring Specific Drive Letter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install a program that is designed to run from a
+network server using a specific mapped drive letter on a local drive instead of
+a network server.
+
+MORE INFORMATION
+================
+
+To install the program locally, use one of the following methods:
+
+Method 1
+--------
+
+NOTE: This method uses DriveSpace and does not work on drives using the FAT32
+file system. For additional information, see the following article in the
+Microsoft Knowledge Base:
+
+   Q150579 DriveSpace Is Not Supported with FAT32 Drives
+
+1. Click the Start button, point to Programs, point to Accessories, point to
+   System Tools, and then click DriveSpace.
+
+2. On Advanced menu, click Create Empty.
+
+3. In the Create New Compressed Drive dialog box, assign the drive letter
+   required by the program in the Create A New Drive Named box.
+
+4. Click Start.
+
+5. Click Close.
+
+6. Install the program to the new compressed drive.
+
+Method 2
+--------
+
+Use the SUBST command to associate the required drive letter with the program's
+installation folder. For example, use
+
+   subst <drive>: <C:\dir>
+
+where <drive> is the drive the program requires to be mapped to, and
+<C:\dir> is the folder in which the program resides.
+
+NOTE: You should install Windows 95 Service Pack 1 if you are using the SUBST
+command and you have the retail release of Windows 95. If you have an OEM
+release of Windows 95, this update may already be included in your version of
+Windows 95. For information about obtaining Service Pack 1, see the following
+article in the Microsoft Knowledge Base:
+
+   Q142794 Availability of Microsoft Windows 95 Service Pack 1
+
+For additional information about issues that can occur when you use the SUBST
+command, see the following articles in the Microsoft Knowledge Base:
+
+   Q137529 Cannot Use DriveSpace to Compress a Substituted Drive
+
+   Q117390 SUBST Fails on Removable Media
+
+   Q135948 System Agent Reports Error After Running ScanDisk
+
+   Q151805 Files Appear Twice in the Recycle Bin
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

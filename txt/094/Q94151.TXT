@@ -1,0 +1,67 @@
+DOCUMENT:Q94151  07-DEC-1999  [win95x]
+TITLE   :HPPCL5E: Incorrect Output with Adobe Type Manager
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you use the printer driver for the Hewlett-Packard (HP) LaserJet 4/4M
+(HPPCL5E.DRV) version 1.03 or 1.04 and Adobe Type Manager (ATM) versions earlier
+than 2.5, text formatted for ATM fonts may not be aligned correctly. The text
+may not print in the font for which it was formatted and gray bands may also
+appear behind the text.
+
+This problem has been reported to Hewlett-Packard for all version of ATM earlier
+than 2.5. Upgrading to ATM 2.5 seems to correct the problem.
+
+MORE INFORMATION
+================
+
+This information was provided by Hewlett-Packard and has not been confirmed for
+Microsoft by Adobe. For more information on Adobe Type Manager 2.5, contact
+Adobe Systems.
+
+To obtain the phone numbers for Adobe, query on the following words in the
+Microsoft Knowledge Base:
+
+   "Adobe" (without the quotation marks) and "phonebook" (without the quotation
+   marks) and "pss" (without the quotation marks)
+
+The ATM and HP products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+
+Additional query words: win31 PostScript 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

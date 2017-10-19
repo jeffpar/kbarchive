@@ -1,0 +1,70 @@
+DOCUMENT:Q161411  20-FEB-2002  [sms]
+TITLE   :SMS: Client Error: "Cannot Load C:\Windows\Vuser.386"
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbnetwork kbsetup kbtshoot smsremtshoot smssetup kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When starting Windows after having installed the Systems Management Server
+client on a computer running Windows for Workgroups or Windows 95, the following
+errors may appear:
+
+   Cannot load C:\Windows\Vuser.386
+   User.com running version 5 should be version 4
+
+Further investigation may reveal the following:
+
+ - Vuser.386 exists in the Windows\System directory.
+
+ - There are two entries for Vuser in the System.ini file.
+
+ - Wuser is in the Startup group.
+
+
+MORE INFORMATION
+----------------
+
+The Intel LANDesk(R) Management Suite Remote Control is installed, either fully
+or in part, on the client. LANDesk installs Vuser.386 in the Windows\System
+directory. Systems Management Server installs Vuser.386 in the Windows
+directory. The client cannot run both versions of Vuser.386 at the same time.
+
+WORKAROUND
+==========
+
+To work around this problem, remove the LANDesk client, as described in the
+LANDesk documentation.
+
+Additional query words: prodsms LAN desk
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbnetwork kbsetup kbtshoot smsremtshoot smssetup kbRemoteProg 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : :1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

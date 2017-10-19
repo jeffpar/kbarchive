@@ -1,0 +1,63 @@
+DOCUMENT:Q73416  17-DEC-2000  [msdos]
+TITLE   :Uninstall Disk Must Be the Same Media as Drive A
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the Uninstall disk you create (labeled "Uninstall Disk") is not the same
+media (density) as drive A, you receive the following error message:
+
+   error reading or writing to drive a:
+
+MORE INFORMATION
+================
+
+Because Uninstall Disk 1 must be a bootable disk, it must be the same density as
+drive A. For example, if drive A is a 1.2-megabyte floppy disk drive, only a
+high-density 1.2-megabyte disk should be used for the Uninstall Disk 1.
+
+The ROM bootstrap routine is executed when the computer is booted. It checks to
+see if a disk is in drive A; if there is no disk in drive A, it checks the
+active partition on the hard disk drive. Note that it never checks drive B;
+therefore, it is not possible to boot from drive B.
+
+This behavior is a function of the BIOS, not MS-DOS.
+
+For more information on the ROM bootstrap routine, query on the following word in
+the Microsoft Knowledge Base:
+
+   " bootstrap " (without the quotation marks)
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 low density, double "Uninstall Disk 1" 2" 720K, 360K, error reading or writing to drive a:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

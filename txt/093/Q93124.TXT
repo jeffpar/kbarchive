@@ -1,0 +1,67 @@
+DOCUMENT:Q93124  30-JUL-2001  [lanman]
+TITLE   :Setting up WfW with TCP Manually: Resource Kit Manual Error
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+SUMMARY
+=======
+
+On page E-5 of the Microsoft Windows for Workgroups "Resource Kit" version 3.1
+manual, the device driver name in the [ms$tcp] section of the PROTOCOL.INI file
+is incorrectly shown in lowercase letters:
+
+   [ms$tcp]
+   drivername=TCPIP$ (not tcpip$ as shown in the guide)
+
+SYMPTOMS
+========
+
+If the drivername is lowercase, TCPDRV.DOS fails to initialize in the CONFIG.SYS
+file, and this error message is displayed:
+
+   DOS TCP/IP Resident Driver Initialzation failed
+
+(with "initialization" misspelled as shown).
+
+CAUSE
+=====
+
+Initialization fails because the drivername contains lowercase letters.
+
+RESOLUTION
+==========
+
+Use uppercase letters for the drivername.
+
+LAN Manager 2.2 includes a protocol disk in Windows for Workgroups format, so you
+can ignore the NDIS transport protocol integration procedure described in the
+"Resource Kit."
+
+REFERENCES
+==========
+
+Microsoft Windows for Workgroups "Resource Kit," Appendix E, p. E-5.
+
+Additional query words: wfw wfwg 2.2 2.20 failed ntdocerr doc err
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

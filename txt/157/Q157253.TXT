@@ -1,0 +1,83 @@
+DOCUMENT:Q157253  23-MAR-2000  [foxpro]
+TITLE   :FIX: Copying Tables Between Databases Changes Index Type
+PRODUCT :Microsoft FoxPro
+PROD/VER:5.0 5.0a
+OPER/SYS:
+KEYWORDS:kbtool kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Copying a table from one database to another changes the index type of the table
+from Primary to Candidate.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a database that has a table and a Primary key as following:
+
+         CREATE DATABASE Test
+         CREATE TABLE Tst1T1 (Fld1 c(5), Fld2 c(5))
+         ALTER TABLE Tst1T1 ALTER Fld1 c(5) Primary Key
+
+2. Open the table Tst1T1 and modify it. Select the Indexes tab in the Table
+   Designer and verify that a Primary Index has been created on the first field,
+   Fld1. Close the Table Designer and leave the table open in the current work
+   area.
+
+3. Create another database Test2 using "CREATE DATABASE Test2" command.
+
+4. Issue the following commands to copy Tst1T1 table from Test1 database to
+   Test2 as Tst2T1:
+
+         SET DATABASE TO Test2
+         SELECT Tst1T1
+         COPY TO Tst2T1 PRODUCTION DATABASE Test2
+
+5. When you get the "Invalid File Descriptor" error, click OK.
+
+6. After the table Tst1T1 is copied to Test2 database as Tst2T1, open and then
+   modify the Tst2T1 table in the Test2 database. When in the Table Designer,
+   select the Indexes tab. Notice that the Index type has changed from Primary
+   to Candidate.
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : 5.0 5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,80 @@
+DOCUMENT:Q215533  30-SEP-1999  [exchange]
+TITLE   :XADM: Directory Export Sends OBJ-DIST-NAME Instead of Directory
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Directory Export sometimes does not use the directory name object attribute as
+the directory name when performing a directory export. Instead, Directory Export
+may construct the directory name from the OBJ-DIST-NAME object attribute using
+the last common name field as the directory. Normally this would be fine, as the
+last common name and the directory name are usually the same. But if a customer
+deletes and recreates a mailbox changing the case of the directory name, then
+the directory name object attribute and the last common name of the
+OBJ-DIST-NAME will be different. This can cause problems when performing a
+dirsync operation with third-party e-mail servers.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Administrator Program
+
++------------------------+
+| File name | Version    | 
++------------------------+
+| Dapi.dll  | 5.5.2541.0 | 
++------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

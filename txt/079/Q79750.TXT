@@ -1,0 +1,71 @@
+DOCUMENT:Q79750  14-NOV-2000  [word97]
+TITLE   :WD97: Using Bookmarks in a Table of Contents
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbfield winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Word for Windows, you can use a bookmark as the text argument in a
+table of contents entry (TC) field; this causes the bookmark to become part of
+the table of contents.
+
+MORE INFORMATION
+================
+
+NOTE: You cannot insert the bookmark field by pressing CTRL+F9 in the Field Code
+box of the Insert Field command; therefore, the following procedure is more
+efficient than using the Insert Field command for entering a table of contents
+entry that references a bookmark.
+
+To display a bookmark in a table of contents, follow these steps:
+
+1. Press CTRL+F9 to insert field braces at the location in the document where
+   you want the table of contents entry to appear.
+
+   NOTE: If the bookmark is in the header or footer of the document, the TC field
+   must be entered in the main body of the document.
+
+2. Type "TC " (without the quotation marks). Be sure to press the SPACEBAR to
+   create a space after TC.
+
+3. Press CTRL+F9 to insert a second set of field braces, and then type the
+   bookmark name. The resulting TC field should appear as follows:
+
+   {TC {bookmark_name}}
+
+4. Add any additional TC field switches or instructions after the bookmark
+   field.
+
+Additional query words: TOC
+
+======================================================================
+Keywords          : kbdta kbfield winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

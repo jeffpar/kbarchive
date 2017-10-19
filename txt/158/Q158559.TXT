@@ -1,0 +1,58 @@
+DOCUMENT:Q158559  22-DEC-1999  [exchange]
+TITLE   :How to Change Your Name in Microsoft Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you change your name (for example, because you get married) and you want to
+change your name accordingly in Microsoft Exchange, follow the procedure in this
+article.
+
+MORE INFORMATION
+================
+
+To change your alias and mailbox name:
+
+1. Select the appropriate recipients container, select your mailbox and select
+   File-Properties.
+
+2. On the General property page change the First, Last, Display, and or Alias
+   fields as appropriate.
+
+3. Make the appropriate changes to the E-mail Addresses tab for X400, MS, and
+   SMTP addresses. The mailbox name for the client profile will also need to be
+   changed to reflect any changes made to the display name.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

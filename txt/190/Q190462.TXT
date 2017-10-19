@@ -1,0 +1,220 @@
+DOCUMENT:Q190462  04-AUG-1999  [foxpro]
+TITLE   :PRB: Insufficient Memory Message Running a FoxPro EXE
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an executable created with Visual FoxPro from within Visual FoxPro,
+the following error message occurs:
+
+   VFP cannot start--insufficient memory free up memory and try again.
+
+This message may also occur when you attempt to run multiple sessions of Visual
+FoxPro while system resources are low.
+
+RESOLUTION
+==========
+
+Use the DO command to launch an executable, created with Visual FoxPro, from
+within a Visual FoxPro application or executable.
+
+MORE INFORMATION
+================
+
+Launching an application uses available system resources, and launching multiple
+instances of an application can severely reduce the system resources available.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a .prg file named Waitwins.prg, using the following code:
+
+   
+
+         SET EXCL OFF
+         ox=CREATEOBJECT('TEST')
+         ox.INIT
+         RELEASE ox
+
+         DEFINE CLASS test AS CUSTOM OLEPUBLIC
+            NAME = "TEST"
+
+            PROCEDURE INIT
+               set excl off
+               IF !FILE('TESTDBF.DBF')
+                  CREATE TABLE testdbf (testflda T)
+               ENDIF
+               INSERT INTO testdbf (testflda) VALUES (DATETIME())
+            ENDPROC
+         ENDDEFINE
+
+2. Create a new project called WAITWINS and ADD the Waitwins.prg.
+
+3. Click the Build button in the Project Manager dialog box and select the Build
+   Executable option.
+
+4. Create a .prg file named Memtest.prg, using the following code:
+
+   
+
+         DO WHILE .T.
+            IF LASTKEY()=27
+               EXIT
+            ENDIF
+            RUN /N waitwins
+            =memcheck()
+            SELECT testmem
+            GO BOTT
+            =INKEY(10)
+         ENDDO
+
+         PROCEDURE memcheck
+            * Check available memory
+            m.os_is=OS()
+            m.curtime=DATETIME()
+            m.func_pos="FORM TEST"
+            IF !FILE('testmem.dbf')
+               CREATE TABLE testmem (os_is c(15), func_pos c(15), ;
+                  CURTIME T, tphys N(15,0), availphys N(15,0), ;
+                  tpagefile N(15,0), apagefile N(15,0), ;
+                  tvirtual N(15,0), avirtual N(15,0), runapps m)
+            ENDIF
+            DECLARE GlobalMemoryStatus IN win32api STRING @MemStat
+            m.stru = longtostr(32) + REPLICATE(CHR(0), 28)
+            =GlobalMemoryStatus(@m.stru)
+            m.tphys = strtolong(SUBSTR(m.stru, 9, 4))
+            m.availphys = strtolong(SUBSTR(m.stru, 13, 4))
+            m.tpagefile = strtolong(SUBSTR(m.stru, 17, 4))
+            m.apagefile = strtolong(SUBSTR(m.stru, 21, 4))
+            m.tvirtual = strtolong(SUBSTR(m.stru, 25, 4))
+            m.avirtual = strtolong(SUBSTR(m.stru, 29, 4))
+            m.runapps=runapps()
+            INSERT INTO testmem FROM MEMVAR
+
+         PROCEDURE runapps
+            LOCAL awin_apps, vfp_handle, ln_current_window,ln_window_count
+            * Determine what other applications are running
+            DIMENSION awin_apps[1]
+            vfp_handle=0
+            DECLARE INTEGER FindWindow ;
+               IN win32api ;
+               INTEGER nullpointer, ;
+               STRING cwindow_name
+            DECLARE INTEGER GetWindow ;
+               IN win32api ;
+               INTEGER ncurr_window_handle, ;
+               INTEGER ndirection
+            DECLARE INTEGER GetWindowText ;
+               IN win32api ;
+               INTEGER n_win_handle, ;
+               STRING @ cwindow_title, ;
+               INTEGER ntitle_length
+            vfp_handle=FindWindow(0,_SCREEN.CAPTION)
+            ln_current_window=vfp_handle
+            ln_window_count=0
+            DO WHILE ln_current_window>0
+               lc_window_title=SPACE(255)
+               ln_length=GetWindowText(ln_current_window, ;
+                  @lc_window_title,LEN(lc_window_title))
+               IF ln_length>0
+                  lc_window_title=STRTRAN(TRIM(lc_window_title),CHR(0),"")
+               ELSE
+                  lc_window_title=""
+               ENDIF
+               IF ln_current_window>0 .AND. !EMPTY(lc_window_title)
+                  ln_window_count=ln_window_count+1
+                  DIMENSION awin_apps(ln_window_count,2)
+                  awin_apps[ln_Window_Count,1]=lc_window_title
+                  awin_apps[ln_Window_Count,2]=ln_current_window
+               ENDIF
+               ln_current_window=GetWindow(ln_current_window,2)
+            ENDDO
+            retval=""
+            IF !EMPTY(awin_apps[1])
+               IF ALEN(awin_apps,1)>0
+                  FOR i=1 TO ALEN(awin_apps,1)
+                     retval=retval+awin_apps[i,1]+CHR(13)
+                  NEXT
+               ENDIF
+            ENDIF
+            CLEAR DLLS
+            RETURN retval
+
+         FUNCTION longtostr
+            PARAMETERS lnlongval
+            PRIVATE i, lcretstr
+            lcretstr = ""
+            FOR i = 24 TO 0 STEP -8
+               lcretstr = CHR(INT(lnlongval/(2^i))) + lcretstr
+               lnlongval = MOD(lnlongval, (2^i))
+            NEXT
+            RETURN lcretstr
+
+         FUNCTION strtolong
+            PARAMETERS lclongstr
+            PRIVATE i, lnretval
+            lnretval = 0
+            FOR i = 0 TO 24 STEP 8
+               lnretval = lnretval + (ASC(lclongstr) * (2^i))
+               lclongstr = RIGHT(lclongstr, LEN(lclongstr) - 1)
+            NEXT
+            RETURN lnretval
+
+5. In the Command window type the following command:
+
+   
+
+         DO MEMTEST
+
+Depending on the available system resources, it may take several hours for the
+error message to appear.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q181289 HOWTO: Pass Structures to a DLL
+
+   Q188404 HOWTO: Use API Calls to Detect Other Running Applications
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation
+
+
+Additional query words: kbVFp300b kbVFp500 kbVFp500a kbMAC kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,125 @@
+DOCUMENT:Q176952  15-MAR-1999  [exchange]
+TITLE   :XFOR: Store Fails to Deliver Auto-Generated Messages
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0 5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Automatically generated messages from an Australian X.400 ADMD are not delivered
+correctly to Microsoft Exchange Server. The messages are received by the
+Microsoft Exchange Message Transfer Agent (MTA) but are not received by the end
+user. The following Event IDs will be logged in the Windows NT Server Event
+Viewer Application log:
+
+   Event ID:    296
+   Source:      MSExchangeMTA
+   Type:        Information
+   Category:    X.400 Service
+   Description: The message C=au;A=otc;P=;L=97082616584041+20201E53 (object
+   ID: 06000058) has been successfully converted from content type 56010A00
+   to content type 2A864886F7140501. [MTA DISP:FANOUT 11 112] (10)
+
+   Event ID:    2025
+   Source:      MSExchangeIS Private
+   Type:        Information
+   Category:    Transport Delivering
+   Description: The delivery of a message failed due to error 00000BB8. A
+   non- delivery report is being sent to the message's originator.
+
+   Event ID:    270
+   Source:      MSExchangeMTA
+   Type:        Information
+   Category:    X.400 Service
+   Description: A permanent error has occurred with Entity
+   /O=ORG/OU=ORGUNIT/CN=CONFIGURATION/CN=SERVERS/CN=SERVERNAME/CN=MICROSOFT
+   PRIVATE MDB.  Entity is a Message  Object is a Normal Priority Message.
+   Object: 06000058. Message ID: C=au;A=otc;P=;L=97082616584041+20201E53
+   Content length: 500, External Trace information (first 100 bytes) =
+   3029630F610413026175620513036F74631300311680113937303832363136353834302B
+   3130
+   30308201003080638061801302415500006280130874656C656D656D6F00001308626870
+   6D65 6C30340000318080113937303832363138303033392B3130, PDU dump
+   reference 3839 [MTA SUBMIT 16 74] (14)
+
+   Event ID:    290
+   Source:      MSExchangeMTA
+   Type:        Warning
+   Category:    X.400 Service
+   Description: A non-delivery report (reason code transfer-failure and
+   diagnostic code invalid-arguments) is being generated for message
+   C=au;A=otc;P=;L=97082616584041+20201E53. It was originally destined for
+   DN:/o=ORG/ou=ORGUNIT/cn=RECIPIENTS/cn=WDCOOB§C=AU;A=TELEMEMO;P=PRMD;O=OR
+   G; S=Surname;G=GivenName;I=Init; (recipient number 1), and was to be
+   redirected to . [MTA DISP:RESULT 21 136] (12)
+
+CAUSE
+=====
+
+These messages are rejected by the Exchange Server because the transmitting
+system is including a null PRMD entry in the MTSID field of the message. If a
+PRMD field is present, this field should between 1 and 16 characters, not null.
+Since the PRMD specified by Telstra does not confirm to this, the message
+results in an NDR.
+
+MORE INFORMATION
+================
+
+The X.400 ADMD in this case is TELEMEMO (or OTC) in Australia. Messages sent
+to:
+
+   C=AU;A=OTC;P=ENHANCED;O=Operations;S=AutoReply
+
+should result in a message being returned to the original sender from the Auto
+Reply account. Similar automatically generated messages should result when
+sending a Telex message through this ADMD's system. Neither of these messages
+are delivered to an Exchange user.
+
+STATUS
+======
+
+While Microsoft believes this to be a conformance issue with the X.400 Service
+provider, a workaround has been made available for Exchange Server versions 5.0
+and 5.5
+
+This problem has been corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 5.5. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words: 5.00 SP1 X.400 Telstra OTC STORE MTA AUTO REPLY
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : 5.0 5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

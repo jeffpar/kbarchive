@@ -1,0 +1,67 @@
+DOCUMENT:Q101933  05-NOV-1999  [pcmail]
+TITLE   :PC DirSync: Import Accepts All External Address Lists
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Import Utility accepts all external postoffice lists for inclusion in the
+Postoffice Address List and the Global Address List.
+
+MORE INFORMATION
+================
+
+The Import utility will include any address list that is sent to it by any
+postoffice on the network. It will then include those addresses in the
+Postoffice Address List as an External Postoffice and into the Global Address
+List. This could be an administration problem if some Mail Administrators do not
+want certain postoffices included in its lists.
+
+If this is the case, Mail administrators should not choose Export, and then
+choose All from the External-Admin menu when exporting address lists. A way to
+delete the names from a postoffice that has an undesired External Postoffice
+Address List, the Mail Administrator would use the Import utility and use the -x
+parameter, the -g parameter specifying the offending postoffice (example
+-gPCM:networkname\postofficename), and the -f filename parameter to create a
+text file with the user names of the offending postoffice. The text file can
+then be modified to change the "A" for add user to a "D" for delete user. Then
+the text file can be used with the Import utility using the -a parameter and the
+user names that belong to the offending postoffice will be deleted from the
+postoffice.
+
+Another way is to go to the postoffice you wish to remove undesired external
+postoffice addressee from, run the Admin utility on it by selecting
+External-admin, List, Delete, and select the name or names you want to remove.
+
+Additional query words: 3.00 3.0a 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a
+Version           : WINDOWS:3.0,3.0a,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

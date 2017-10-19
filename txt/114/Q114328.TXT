@@ -1,0 +1,724 @@
+DOCUMENT:Q114328  07-MAY-2002  [homegame]
+TITLE   :Files Installed by Flight Simulator 5.0
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the files that are installed during the Flight Simulator 5.0
+installation (including subdirectories and their contents):
+
+ Directory of C:\FLTSIM5
+ 
+.            <DIR>         04-27-94   6:02p
+..           <DIR>         04-27-94   6:02p
+PILOTS       <DIR>         04-27-94   6:02p
+SETUP    EXE         1,195 09-07-93  12:00a
+SETUP    OVL        24,486 09-07-93  12:00a
+README   DOC         9,731 09-07-93  12:00a
+APL001   FSO        25,245 09-07-93   5:00a
+ASDPLAY  FSO           992 09-07-93   5:00a
+BGLFE    FSO        10,624 09-07-93   5:00a
+EGA      GRA        40,638 09-07-93   5:00a
+FORN-000 FRN        31,419 09-07-93   5:00a
+FORN-001 FRN         6,681 09-07-93   5:00a
+FORN-003 FRN         1,620 09-07-93   5:00a
+FORN-004 FRN         2,194 09-07-93   5:00a
+FORN-005 FRN        23,916 09-07-93   5:00a
+FS5      EXE         1,211 09-07-93   5:00a
+FS5      OVL        28,265 09-07-93   5:00a
+FSD001   FSO        87,634 09-07-93   5:00a
+FSD002   FSO         5,086 09-07-93   5:00a
+FSD004   FSO         2,650 09-07-93   5:00a
+FSO001   FSO       104,723 09-07-93   5:00a
+FSOG3D   FSO       117,062 09-07-93   5:00a
+KBD1     FSO           541 09-07-93   5:00a
+KBD2     FSO           615 09-07-93   5:00a
+LESLIB   FLB        19,604 09-07-93   5:00a
+LESSONS  FSO         3,435 09-07-93   5:00a
+SIM001   FSO        39,734 09-07-93   5:00a
+SVGA     GRA        45,716 09-07-93   5:00a
+U2D      FSO         3,446 09-07-93   5:00a
+UTIL     FSO         8,025 09-07-93   5:00a
+VGB      GRA        57,742 09-07-93   5:00a
+WEATHER  FSO        12,354 09-07-93   5:00a
+FS       BAT             9 09-07-93   5:00a
+FS5      PIF           545 09-07-93   5:00a
+PANELS       <DIR>         04-27-94   6:03p
+ICONS        <DIR>         04-27-94   6:04p
+TEXTURE      <DIR>         04-27-94   6:04p
+SCENERY      <DIR>         04-27-94   6:06p
+SIM          <DIR>         04-27-94   6:07p
+SITUATIO     <DIR>         04-27-94   6:07p
+SOUND        <DIR>         04-27-94   6:07p
+VIDEOS       <DIR>         04-27-94   6:07p
+FS5      INI         1,575 04-27-94   6:18p
+<BLOCKQUOTE>
+       43 file(s)        718,713 bytes
+</BLOCKQUOTE>
+ 
+ Directory of C:\FLTSIM5\PILOTS
+ 
+.            <DIR>         04-27-94   6:02p
+..           <DIR>         04-27-94   6:02p
+LOGBOOK  LOG           191 09-07-93   5:00a
+<BLOCKQUOTE>
+        3 file(s)            191 bytes
+</BLOCKQUOTE>
+ 
+ 
+ Directory of C:\FLTSIM5\PANELS
+ 
+.            <DIR>         04-27-94   6:03p
+..           <DIR>         04-27-94   6:03p
+CESN_E   PNL           858 09-07-93   5:00a
+CESN_PAL PCX           901 09-07-93   5:00a
+CESN_S   PNL           812 09-07-93   5:00a
+CESN_V   PNL           874 09-07-93   5:00a
+EADF     GAU           488 09-07-93   5:00a
+EADF     PIX        12,166 09-07-93   5:00a
+EADF2    GAU           748 09-07-93   5:00a
+EADF2    PIX        13,768 09-07-93   5:00a
+EALTIM   GAU         1,502 09-07-93   5:00a
+EALTIM   PIX        13,088 09-07-93   5:00a
+EALTIM1  GAU         1,733 09-07-93   5:00a
+EALTIM1  PIX        22,931 09-07-93   5:00a
+EALTIM2  GAU         1,090 09-07-93   5:00a
+EALTIM2  ICN            94 09-07-93   5:00a
+EALTIM2  PIX        17,412 09-07-93   5:00a
+EALTIM3  GAU           499 09-07-93   5:00a
+EALTIM3  PIX         9,198 09-07-93   5:00a
+EASPD    GAU           517 09-07-93   5:00a
+EASPD    PIX        13,088 09-07-93   5:00a
+EASPD1   GAU           508 09-07-93   5:00a
+EASPD1   PIX        21,181 09-07-93   5:00a
+EASPD2   GAU           675 09-07-93   5:00a
+EASPD2   PIX        13,872 09-07-93   5:00a
+EASPD3   GAU           504 09-07-93   5:00a
+EASPD3   PIX        19,984 09-07-93   5:00a
+EATTIT   GAU         3,875 09-07-93   5:00a
+EATTIT   PIX        13,276 09-07-93   5:00a
+EATTIT2  GAU         4,020 09-07-93   5:00a
+EATTIT2  PIX        18,002 09-07-93   5:00a
+EBOUND   BIN           770 09-07-93   5:00a
+EBOUND1  BIN           714 09-07-93   5:00a
+EBOUND2  BIN           870 09-07-93   5:00a
+EBOUND3  BIN           522 09-07-93   5:00a
+EBOUND4  BIN           738 09-07-93   5:00a
+ECOMP3   GAU           447 09-07-93   5:00a
+ECOMP3   PIX        18,402 09-07-93   5:00a
+EENGINE  GAU         2,440 09-07-93   5:00a
+EENGINE  ICN         4,586 09-07-93   5:00a
+EENGINE  PIX        21,846 09-07-93   5:00a
+EENGINE2 GAU         3,189 09-07-93   5:00a
+EENGINE2 ICN           200 09-07-93   5:00a
+EENGINE2 PIX        37,910 09-07-93   5:00a
+EFUEL3   GAU           525 09-07-93   5:00a
+EFUEL3   PIX        14,454 09-07-93   5:00a
+EGHEAD   GAU         2,221 09-07-93   5:00a
+EGHEAD   PIX        12,611 09-07-93   5:00a
+EGHEAD2  GAU           628 09-07-93   5:00a
+EGHEAD2  PIX        10,653 09-07-93   5:00a
+EHSI2    PIX        10,653 09-07-93   5:00a
+EMAGNET3 GAU           470 09-07-93   5:00a
+EMAGNET3 ICN         3,212 09-07-93   5:00a
+EMAGNET3 PIX        15,030 09-07-93   5:00a
+EMASTER1 GAU           111 09-07-93   5:00a
+EMASTER1 PIX        22,581 09-07-93   5:00a
+EMCMP2   GAU           443 09-07-93   5:00a
+EMCMP2   PIX        10,016 09-07-93   5:00a
+ENDL0    BIN         7,138 09-07-93   5:00a
+ENDL1    BIN         6,724 09-07-93   5:00a
+ENDL10   BIN         3,243 09-07-93   5:00a
+ENDL11   BIN         3,963 09-07-93   5:00a
+ENDL2    BIN         4,376 09-07-93   5:00a
+ENDL3    BIN         5,224 09-07-93   5:00a
+ENDL4    BIN         6,075 09-07-93   5:00a
+ENDL5    BIN         6,071 09-07-93   5:00a
+ENDL6    BIN         5,781 09-07-93   5:00a
+ENDL7    BIN        11,676 09-07-93   5:00a
+ENDL8    BIN         4,968 09-07-93   5:00a
+ENDL9    BIN         5,234 09-07-93   5:00a
+EOBI     ICN           554 09-07-93   5:00a
+EOBI1    GAU         1,399 09-07-93   5:00a
+EOBI1    PIX        12,806 09-07-93   5:00a
+EOBI2    GAU         1,136 09-07-93   5:00a
+EOBI2    PIX        12,166 09-07-93   5:00a
+ERADIOS  GAU         4,341 09-07-93   5:00a
+ERADIOS  ICN         4,684 09-07-93   5:00a
+ERADIOS  PIX        21,846 09-07-93   5:00a
+ERADIOS1 GAU           707 09-07-93   5:00a
+ERADIOS1 PIX        20,131 09-07-93   5:00a
+ERADIOS2 GAU         3,408 09-07-93   5:00a
+ERADIOS2 ICN         3,346 09-07-93   5:00a
+ERADIOS2 PIX        37,910 09-07-93   5:00a
+ERPM3    GAU           441 09-07-93   5:00a
+ERPM3    PIX        21,001 09-07-93   5:00a
+ESLIDER  GAU           463 09-07-93   5:00a
+ESLIDER  PIX         2,784 09-07-93   5:00a
+ESLIDER2 PIX         2,334 09-07-93   5:00a
+ESPL     ICN           224 09-07-93   5:00a
+ETIME2   GAU           763 09-07-93   5:00a
+ETIME2   PIX        13,340 09-07-93   5:00a
+ETURNC   GAU           538 09-07-93   5:00a
+ETURNC   ICN        18,038 09-07-93   5:00a
+ETURNC   PIX        12,433 09-07-93   5:00a
+EVOR     ICN         1,470 09-07-93   5:00a
+EVOR1    GAU         1,506 09-07-93   5:00a
+EVOR1    PIX        13,768 09-07-93   5:00a
+EVOR2    GAU         1,270 09-07-93   5:00a
+EVOR2    PIX        13,768 09-07-93   5:00a
+EVSPD    GAU           533 09-07-93   5:00a
+EVSPD    PIX        12,433 09-07-93   5:00a
+EVSPD1   GAU           454 09-07-93   5:00a
+EVSPD1   PIX        25,906 09-07-93   5:00a
+EVSPD2   GAU           605 09-07-93   5:00a
+EVSPD2   PIX        13,323 09-07-93   5:00a
+FS5PAL   PCX           901 09-07-93   5:00a
+LEAR_E   PNL           968 09-07-93   5:00a
+LEAR_PAL PCX           901 09-07-93   5:00a
+LEAR_S   PNL           985 09-07-93   5:00a
+LEAR_V   PNL           975 09-07-93   5:00a
+LR_GHEAD PIV        35,606 09-07-93   5:00a
+LR_GHEAD PIX        36,118 09-07-93   5:00a
+PANELSET FS5         1,289 09-07-93   5:00a
+PNL6PAL  PCX           901 09-07-93   5:00a
+R_ATTIT  PIV         9,031 09-07-93   5:00a
+R_ATTIT  PIX         9,031 09-07-93   5:00a
+R_ATTIT2 PIV         4,495 09-07-93   5:00a
+R_ATTIT2 PIX         5,263 09-07-93   5:00a
+R_EATIT2 PIX         5,263 09-07-93   5:00a
+R_EATTIT PIX         7,750 09-07-93   5:00a
+R_EGHEAD PIX        35,350 09-07-93   5:00a
+R_GHEAD  PIV         8,655 09-07-93   5:00a
+R_SATTIT PIX         8,170 09-07-93   5:00a
+SADF     GAU           483 09-07-93   5:00a
+SADF     PIX        12,630 09-07-93   5:00a
+SADF2    GAU           748 09-07-93   5:00a
+SADF2    PIX        14,856 09-07-93   5:00a
+SALTIM   GAU         1,522 09-07-93   5:00a
+SALTIM   PIX        13,479 09-07-93   5:00a
+SALTIM1  GAU         1,956 09-07-93   5:00a
+SALTIM1  PIX        27,374 09-07-93   5:00a
+SALTIM2  GAU         1,086 09-07-93   5:00a
+SALTIM2  ICN           104 09-07-93   5:00a
+SALTIM2  PIX        18,638 09-07-93   5:00a
+SALTIM3  GAU           499 09-07-93   5:00a
+SALTIM3  PIX         9,444 09-07-93   5:00a
+SASPD    GAU           515 09-07-93   5:00a
+SASPD    PIX        14,459 09-07-93   5:00a
+SASPD1   GAU           506 09-07-93   5:00a
+SASPD1   PIX        27,374 09-07-93   5:00a
+SASPD2   GAU           677 09-07-93   5:00a
+SASPD2   PIX        15,213 09-07-93   5:00a
+SASPD3   GAU           506 09-07-93   5:00a
+SASPD3   PIX        21,254 09-07-93   5:00a
+SATTIT   GAU         3,951 09-07-93   5:00a
+SATTIT   PIX        14,689 09-07-93   5:00a
+SATTIT2  GAU         4,147 09-07-93   5:00a
+SATTIT2  PIX        20,556 09-07-93   5:00a
+SBOUND   BIN           874 09-07-93   5:00a
+SBOUND1  BIN           806 09-07-93   5:00a
+SBOUND2  BIN           946 09-07-93   5:00a
+SBOUND3  BIN           606 09-07-93   5:00a
+SBOUND4  BIN           822 09-07-93   5:00a
+SCHW_E   PNL           509 09-07-93   5:00a
+SCHW_PAL PCX           901 09-07-93   5:00a
+SCHW_S   PNL           521 09-07-93   5:00a
+SCHW_S_P PCX           901 09-07-93   5:00a
+SCHW_V   PNL           532 09-07-93   5:00a
+SCOMP3   GAU           443 09-07-93   5:00a
+SCOMP3   PIX        19,334 09-07-93   5:00a
+SEGHEAD  PIX        12,611 09-07-93   5:00a
+SENGINE  ICN         3,383 09-07-93   5:00a
+SENGINE  PIX        24,314 09-07-93   5:00a
+SENGINE2 GAU         3,184 09-07-93   5:00a
+SENGINE2 ICN           231 09-07-93   5:00a
+SENGINE2 PIX        43,502 09-07-93   5:00a
+SFUEL3   GAU           550 09-07-93   5:00a
+SFUEL3   PIX        14,046 09-07-93   5:00a
+SGHEAD   GAU         2,189 09-07-93   5:00a
+SGHEAD   PIX        12,148 09-07-93   5:00a
+SGHEAD2  GAU           628 09-07-93   5:00a
+SGHEAD2  PIX        10,995 09-07-93   5:00a
+SHSI2    PIX        10,995 09-07-93   5:00a
+SMAGNET3 GAU           468 09-07-93   5:00a
+SMAGNET3 ICN         4,135 09-07-93   5:00a
+SMAGNET3 PIX        14,904 09-07-93   5:00a
+SMASTER1 GAU           111 09-07-93   5:00a
+SMASTER1 PIX        25,774 09-07-93   5:00a
+SMCMP2   GAU           432 09-07-93   5:00a
+SMCMP2   PIX        11,784 09-07-93   5:00a
+SNDL0    BIN         7,479 09-07-93   5:00a
+SNDL1    BIN         6,700 09-07-93   5:00a
+SNDL10   BIN         3,528 09-07-93   5:00a
+SNDL11   BIN         4,256 09-07-93   5:00a
+SNDL2    BIN         4,167 09-07-93   5:00a
+SNDL3    BIN         4,836 09-07-93   5:00a
+SNDL4    BIN         4,319 09-07-93   5:00a
+SNDL5    BIN         4,458 09-07-93   5:00a
+SNDL6    BIN         7,052 09-07-93   5:00a
+SNDL7    BIN        14,796 09-07-93   5:00a
+SNDL8    BIN         6,207 09-07-93   5:00a
+SNDL9    BIN         6,421 09-07-93   5:00a
+SOBI     ICN           623 09-07-93   5:00a
+SOBI1    GAU         1,401 09-07-93   5:00a
+SOBI1    PIX        12,744 09-07-93   5:00a
+SOBI2    GAU         1,118 09-07-93   5:00a
+SOBI2    PIX        12,630 09-07-93   5:00a
+SOPW     PCX           901 09-07-93   5:00a
+SOPW_E   PNL           562 09-07-93   5:00a
+SOPW_PAL PCX           901 09-07-93   5:00a
+SOPW_S   PNL           575 09-07-93   5:00a
+SOPW_V   PNL           584 09-07-93   5:00a
+SRADIOS  GAU         5,796 09-07-93   5:00a
+SRADIOS  ICN         9,792 09-07-93   5:00a
+SRADIOS  PIX        35,718 09-07-93   5:00a
+SRADIOS1 GAU           716 09-07-93   5:00a
+SRADIOS1 PIX        21,374 09-07-93   5:00a
+SRADIOS2 GAU         3,433 09-07-93   5:00a
+SRADIOS2 ICN         4,884 09-07-93   5:00a
+SRADIOS2 PIX        43,502 09-07-93   5:00a
+SRPM3    GAU           443 09-07-93   5:00a
+SRPM3    PIX        22,406 09-07-93   5:00a
+SSGHEAD  PIX        12,148 09-07-93   5:00a
+SSLIDER  PIX         2,784 09-07-93   5:00a
+SSLIDER2 GAU           475 09-07-93   5:00a
+SSLIDER2 PIX         2,334 09-07-93   5:00a
+SSLIDERS GAU           478 09-07-93   5:00a
+SSLIDERS PIX         3,240 09-07-93   5:00a
+SSPL     ICN           201 09-07-93   5:00a
+STIME2   GAU           758 09-07-93   5:00a
+STIME2   PIX        14,576 09-07-93   5:00a
+STURNC   GAU           542 09-07-93   5:00a
+STURNC   ICN        15,128 09-07-93   5:00a
+STURNC   PIX        11,960 09-07-93   5:00a
+SVALTIM  PIV         7,134 09-07-93   5:00a
+SVASPD   PIV         7,134 09-07-93   5:00a
+SVGHEAD  PIV         6,773 09-07-93   5:00a
+SVOR     ICN         1,547 09-07-93   5:00a
+SVOR1    GAU         1,501 09-07-93   5:00a
+SVOR1    PIX        14,856 09-07-93   5:00a
+SVOR2    GAU         1,270 09-07-93   5:00a
+SVOR2    PIX        14,856 09-07-93   5:00a
+SVSPD    GAU           540 09-07-93   5:00a
+SVSPD    PIX        13,358 09-07-93   5:00a
+SVSPD1   GAU           454 09-07-93   5:00a
+SVSPD1   PIX        30,774 09-07-93   5:00a
+SVSPD2   GAU           605 09-07-93   5:00a
+SVSPD2   PIX        13,470 09-07-93   5:00a
+SVVSPD   PIV         6,672 09-07-93   5:00a
+T_ATTIT  PIV        48,662 09-07-93   5:00a
+T_ATTIT  PIX        49,174 09-07-93   5:00a
+T_ATTIT2 PIV        48,662 09-07-93   5:00a
+T_ATTIT2 PIX        66,310 09-07-93   5:00a
+T_EATIT2 PIX        49,174 09-07-93   5:00a
+T_EATTIT PIX        49,174 09-07-93   5:00a
+TRUNC    PIX         7,209 09-07-93   5:00a
+VADF     GAU           483 09-07-93   5:00a
+VADF     PIV         6,470 09-07-93   5:00a
+VADF2    GAU           751 09-07-93   5:00a
+VADF2    PIV         7,554 09-07-93   5:00a
+VALTIM   GAU         1,294 09-07-93   5:00a
+VALTIM   PIV         7,134 09-07-93   5:00a
+VALTIM1  GAU         1,724 09-07-93   5:00a
+VALTIM1  PIV        13,206 09-07-93   5:00a
+VALTIM2  GAU         1,083 09-07-93   5:00a
+VALTIM2  ICN            64 09-07-93   5:00a
+VALTIM2  PIV         9,736 09-07-93   5:00a
+VALTIM3  GAU           502 09-07-93   5:00a
+VALTIM3  PIV         4,530 09-07-93   5:00a
+VASPD    GAU           522 09-07-93   5:00a
+VASPD    PIV         7,134 09-07-93   5:00a
+VASPD1   GAU           502 09-07-93   5:00a
+VASPD1   PIV        12,206 09-07-93   5:00a
+VASPD2   GAU           677 09-07-93   5:00a
+VASPD2   PIV         7,986 09-07-93   5:00a
+VASPD3   GAU           502 09-07-93   5:00a
+VASPD3   PIV        10,630 09-07-93   5:00a
+VATTIT   GAU         3,434 09-07-93   5:00a
+VATTIT   PIV         7,242 09-07-93   5:00a
+VATTIT2  GAU         3,798 09-07-93   5:00a
+VATTIT2  PIV         9,922 09-07-93   5:00a
+VBOUND   BIN           874 09-07-93   5:00a
+VBOUND1  BIN           814 09-07-93   5:00a
+VBOUND2  BIN           954 09-07-93   5:00a
+VBOUND3  BIN         1,022 09-07-93   5:00a
+VBOUND4  BIN           822 09-07-93   5:00a
+VCOMP3   GAU           447 09-07-93   5:00a
+VCOMP3   PIV         9,734 09-07-93   5:00a
+VCRT2    PIV         7,554 09-07-93   5:00a
+VENGINE  GAU         2,491 09-07-93   5:00a
+VENGINE  ICN         3,616 09-07-93   5:00a
+VENGINE  PIV        12,486 09-07-93   5:00a
+VENGINE2 GAU         3,182 09-07-93   5:00a
+VENGINE2 ICN           129 09-07-93   5:00a
+VENGINE2 PIV        21,626 09-07-93   5:00a
+VFUEL3   GAU           531 09-07-93   5:00a
+VFUEL3   PIV         7,182 09-07-93   5:00a
+VGHEAD   GAU         1,925 09-07-93   5:00a
+VGHEAD   PIV         6,773 09-07-93   5:00a
+VGHEAD2  GAU           628 09-07-93   5:00a
+VGHEAD2  PIV         5,478 09-07-93   5:00a
+VMAGNET3 GAU           463 09-07-93   5:00a
+VMAGNET3 ICN         3,390 09-07-93   5:00a
+VMAGNET3 PIV         7,572 09-07-93   5:00a
+VMASTER1 GAU           111 09-07-93   5:00a
+VMASTER1 PIV        12,006 09-07-93   5:00a
+VMCMP2   GAU           443 09-07-93   5:00a
+VMCMP2   PIV         5,895 09-07-93   5:00a
+VNDL0    BIN         5,503 09-07-93   5:00a
+VNDL1    BIN         5,195 09-07-93   5:00a
+VNDL10   BIN         2,475 09-07-93   5:00a
+VNDL11   BIN         2,615 09-07-93   5:00a
+VNDL2    BIN         3,191 09-07-93   5:00a
+VNDL3    BIN         4,346 09-07-93   5:00a
+VNDL4    BIN         4,095 09-07-93   5:00a
+VNDL5    BIN         4,093 09-07-93   5:00a
+VNDL6    BIN         4,384 09-07-93   5:00a
+VNDL7    BIN         7,936 09-07-93   5:00a
+VNDL8    BIN         3,464 09-07-93   5:00a
+VNDL9    BIN         3,660 09-07-93   5:00a
+VOBI     ICN           441 09-07-93   5:00a
+VOBI1    GAU         1,423 09-07-93   5:00a
+VOBI1    PIV         6,918 09-07-93   5:00a
+VOBI2    GAU         1,135 09-07-93   5:00a
+VOBI2    PIV         6,470 09-07-93   5:00a
+VRADIOS  GAU         4,292 09-07-93   5:00a
+VRADIOS  ICN         3,374 09-07-93   5:00a
+VRADIOS  PIV        12,486 09-07-93   5:00a
+VRADIOS1 GAU           705 09-07-93   5:00a
+VRADIOS1 PIV        12,206 09-07-93   5:00a
+VRADIOS2 GAU         3,442 09-07-93   5:00a
+VRADIOS2 ICN         2,688 09-07-93   5:00a
+VRADIOS2 PIV        21,626 09-07-93   5:00a
+VRMI2    PIV         5,478 09-07-93   5:00a
+VRPM3    GAU           441 09-07-93   5:00a
+VRPM3    PIV        11,270 09-07-93   5:00a
+VSALTIM  PIV         7,216 09-07-93   5:00a
+VSLIDER  GAU           475 09-07-93   5:00a
+VSLIDER  PIV         1,623 09-07-93   5:00a
+VSLIDER2 GAU           478 09-07-93   5:00a
+VSLIDER2 PIV         1,215 09-07-93   5:00a
+VSPL     ICN           111 09-07-93   5:00a
+VTIME2   GAU           770 09-07-93   5:00a
+VTIME2   PIV         7,056 09-07-93   5:00a
+VTURNC   GAU           533 09-07-93   5:00a
+VTURNC   ICN         9,191 09-07-93   5:00a
+VTURNC   PIV         6,672 09-07-93   5:00a
+VVOR     ICN           953 09-07-93   5:00a
+VVOR1    GAU         1,504 09-07-93   5:00a
+VVOR1    PIV         7,554 09-07-93   5:00a
+VVOR2    GAU         1,270 09-07-93   5:00a
+VVOR2    PIV         7,554 09-07-93   5:00a
+VVSPD    GAU           578 09-07-93   5:00a
+VVSPD    PIV         6,672 09-07-93   5:00a
+VVSPD1   GAU           452 09-07-93   5:00a
+VVSPD1   PIV        15,206 09-07-93   5:00a
+VVSPD2   GAU           603 09-07-93   5:00a
+VVSPD2   PIV         6,796 09-07-93   5:00a
+
+      348 file(s)      2,603,428 bytes
+
+ 
+ Directory of C:\FLTSIM5\ICONS
+ 
+.            <DIR>         04-27-94   6:04p
+..           <DIR>         04-27-94   6:04p
+CPW      PIX         3,959 09-07-93   5:00a
+DIGITS   PIX         1,082 09-07-93   5:00a
+SPLASH2  PIX       102,690 09-07-93   5:00a
+SPLPAL   PCX           909 09-07-93   5:00a
+
+        6 file(s)        108,640 bytes
+
+ 
+ Directory of C:\FLTSIM5\TEXTURE
+ 
+.            <DIR>         04-27-94   6:04p
+..           <DIR>         04-27-94   6:04p
+ARID     R8         40,723 04-27-94   6:05p
+BROAD    R8         47,144 04-27-94   6:05p
+BURB     R8         11,754 04-27-94   6:05p
+BURB2    R8         15,268 04-27-94   6:05p
+BURB3    R8         14,042 04-27-94   6:05p
+CAMEL    PAN        35,271 04-27-94   6:05p
+CESSNA   PAN        21,141 04-27-94   6:05p
+CFRONTR  R8          2,415 04-27-94   6:05p
+CITY     R8         15,693 04-27-94   6:05p
+CLOUD1   R8         65,536 04-27-94   6:18p
+CLOUDS   R8         65,536 09-07-93   5:00a
+COAST0   0             345 04-27-94   6:05p
+COAST1   0           4,323 04-27-94   6:05p
+COAST2   0           4,129 04-27-94   6:05p
+COAST3   0           7,142 04-27-94   6:05p
+COAST4   0           4,235 04-27-94   6:05p
+COAST5   0           8,873 04-27-94   6:05p
+COAST6   0           6,228 04-27-94   6:05p
+COAST7   0           8,780 04-27-94   6:05p
+COAST8   0           4,120 04-27-94   6:05p
+COAST9   0           7,353 04-27-94   6:05p
+COASTA   0           7,359 04-27-94   6:05p
+COASTB   0           8,455 04-27-94   6:05p
+COASTC   0           7,778 04-27-94   6:05p
+COASTD   0           9,515 04-27-94   6:05p
+COASTE   0          11,340 04-27-94   6:05p
+COASTF   0           8,980 04-27-94   6:05p
+COASTI0  0           6,701 04-27-94   6:05p
+COASTI1  0           6,872 04-27-94   6:05p
+COASTI2  0           6,720 04-27-94   6:06p
+COASTI3  0           6,615 04-27-94   6:06p
+CREARL   R8          2,014 04-27-94   6:06p
+CREARR   R8          2,025 04-27-94   6:06p
+CROPS    R8         10,128 04-27-94   6:06p
+DESERT   R8         29,547 04-27-94   6:06p
+FARM     R8          4,962 04-27-94   6:06p
+FS5      PAL           768 09-07-93   5:00a
+FS5WORLD R81        26,530 04-27-94   6:06p
+FS5WORLD R82        18,636 04-27-94   6:06p
+GRANT    R8          4,309 04-27-94   6:06p
+HIRISE   R8         14,988 04-27-94   6:06p
+ICE      R8         39,944 04-27-94   6:06p
+LAKE     R8          3,258 04-27-94   6:06p
+LEAR     PAN        42,597 04-27-94   6:06p
+CLOUD2   R8         65,536 09-07-93   5:00a
+MEDCITY  R8         12,144 04-27-94   6:06p
+MEDRISE  R8         10,389 04-27-94   6:06p
+MEIGS    PAL           768 09-07-93   5:00a
+MEIGSBOT R8         40,041 04-27-94   6:06p
+MEIGSRUN R8         43,317 04-27-94   6:06p
+MEIGSTOP R8         36,869 04-27-94   6:06p
+MUNICH   R8         10,877 04-27-94   6:06p
+NCALL    R8          6,588 04-27-94   6:06p
+NEEDLE   R8         47,556 04-27-94   6:06p
+PARIS    R8         11,567 04-27-94   6:06p
+PARK     R8          5,441 04-27-94   6:06p
+PRARIE   R8          4,962 04-27-94   6:06p
+PRUDNTL  R8          3,139 04-27-94   6:06p
+RANIER   R8         45,815 04-27-94   6:06p
+RED      R8         15,073 04-27-94   6:06p
+RUNWAY01 R8         23,503 04-27-94   6:06p
+RUNWAY02 R8         24,826 04-27-94   6:06p
+SG232    PAN        18,646 04-27-94   6:06p
+SIDE     R8         29,628 04-27-94   6:06p
+SIDE2    R8         29,682 04-27-94   6:06p
+SIDE3    R8         29,613 04-27-94   6:06p
+SIDE4    R8         28,821 04-27-94   6:06p
+SIDE5    R8         28,634 04-27-94   6:06p
+SIDE6    R8         13,613 04-27-94   6:06p
+SIDE7    R8         13,626 04-27-94   6:06p
+SIDE8    R8         28,571 04-27-94   6:06p
+SOLDIER  R8         54,907 04-27-94   6:05p
+STORMY   R8         20,786 04-27-94   6:06p
+SWAMP    R8         46,744 04-27-94   6:06p
+TROP     R8         45,635 04-27-94   6:06p
+TUNDRA   R8         48,422 04-27-94   6:06p
+URBAN    R8          5,814 04-27-94   6:06p
+URBBURB  R8         47,333 04-27-94   6:06p
+COASTFE  R8         22,777 09-07-93   5:00a
+COASTFF  R8         53,192 04-27-94   6:05p
+FS4      PAL           768 09-07-93   5:00a
+COAST0   1             345 04-27-94   6:05p
+COAST1   1           4,332 04-27-94   6:05p
+COAST2   1           4,129 04-27-94   6:05p
+COAST3   1           7,155 04-27-94   6:05p
+COAST4   1           4,235 04-27-94   6:05p
+COAST5   1           8,873 04-27-94   6:05p
+COAST6   1           6,231 04-27-94   6:05p
+COAST7   1           8,782 04-27-94   6:05p
+COAST8   1           4,120 04-27-94   6:05p
+COAST9   1           7,369 04-27-94   6:05p
+COASTA   1           7,359 04-27-94   6:05p
+COASTB   1           8,484 04-27-94   6:05p
+COASTC   1           7,766 04-27-94   6:05p
+COASTD   1           9,526 04-27-94   6:05p
+COASTE   1          11,340 04-27-94   6:05p
+COASTF   1           8,982 04-27-94   6:05p
+COASTI0  1           6,701 04-27-94   6:05p
+COASTI1  1           6,882 04-27-94   6:05p
+COASTI2  1           6,720 04-27-94   6:06p
+COASTI3  1           6,647 04-27-94   6:06p
+RUNWAY03 R8         27,997 04-27-94   6:06p
+RUNWAY00 R8         27,997 04-27-94   6:06p
+
+      105 file(s)      1,837,687 bytes
+
+ 
+ Directory of C:\FLTSIM5\SCENERY
+ 
+.            <DIR>         04-27-94   6:06p
+..           <DIR>         04-27-94   6:06p
+WORLD1   BGL       958,620 09-07-93   5:00a
+WORLD3   BGL       289,576 09-07-93   5:00a
+WORLD4   BGL        17,261 09-07-93   5:00a
+WORLD5   BGL        10,927 09-07-93   5:00a
+WORLD    VIS           345 09-07-93   5:00a
+CROPW    VIS           341 09-07-93   5:00a
+STARS    FS5         5,506 09-07-93   5:00a
+SAIL     SCN        54,426 09-07-93   5:00a
+
+       10 file(s)      1,337,002 bytes
+
+ 
+ Directory of C:\FLTSIM5\SIM
+ 
+.            <DIR>         04-27-94   6:07p
+..           <DIR>         04-27-94   6:07p
+SIM1     AIR        59,567 09-07-93   5:00a
+SIM2     AIR        16,665 09-07-93   5:00a
+SIM3     AIR         7,720 09-07-93   5:00a
+SIM4     AIR        14,754 09-07-93   5:00a
+
+        6 file(s)         98,706 bytes
+
+ 
+ Directory of C:\FLTSIM5\SITUATIO
+ 
+.            <DIR>         04-27-94   6:07p
+..           <DIR>         04-27-94   6:07p
+_LA1     STN         1,957 09-07-93   5:00a
+_LA2     STN         1,957 09-07-93   5:00a
+_LA3     STN         1,957 09-07-93   5:00a
+_LA4     STN         1,957 09-07-93   5:00a
+_LA5     STN         1,957 09-07-93   5:00a
+_LA6     STN         1,957 09-07-93   5:00a
+_LA7     STN         1,957 09-07-93   5:00a
+_LA8     STN         1,957 09-07-93   5:00a
+_LB1     STN         1,957 09-07-93   5:00a
+_LB2     STN         1,957 09-07-93   5:00a
+_LB3     STN         1,957 09-07-93   5:00a
+_LB4     STN         1,957 09-07-93   5:00a
+_LB5     STN         1,957 09-07-93   5:00a
+_LB6     STN         1,957 09-07-93   5:00a
+_LB7     STN         1,957 09-07-93   5:00a
+_LB8     STN         1,957 09-07-93   5:00a
+_LB9     STN         1,957 09-07-93   5:00a
+_LBA     STN         1,957 09-07-93   5:00a
+_LE1     STN         1,957 09-07-93   5:00a
+_LE2     STN         1,957 09-07-93   5:00a
+_LE3     STN         1,957 09-07-93   5:00a
+_LE4     STN         1,957 09-07-93   5:00a
+_LE5     STN         1,957 09-07-93   5:00a
+_LE6     STN         1,957 09-07-93   5:00a
+_LE7     STN         1,957 09-07-93   5:00a
+_LQ1     STN         1,957 09-07-93   5:00a
+_LQ2     STN         1,957 09-07-93   5:00a
+_LQ3     STN         1,957 09-07-93   5:00a
+_LQ4     STN         1,957 09-07-93   5:00a
+CROPDUST STN         2,008 09-07-93   5:00a
+EFIS1    STN         1,952 09-07-93   5:00a
+EFIS2    STN         1,952 09-07-93   5:00a
+EFIS3    STN         2,023 09-07-93   5:00a
+EFIS4    STN         1,952 09-07-93   5:00a
+EFIS5    STN         1,941 09-07-93   5:00a
+EFIS6    STN         1,952 09-07-93   5:00a
+EFIS7    STN         1,952 09-07-93   5:00a
+FORM1    STN         1,982 09-07-93   5:00a
+FORM2    STN         1,981 09-07-93   5:00a
+FORM3    STN         1,981 09-07-93   5:00a
+FORM4    STN         1,982 09-07-93   5:00a
+FORM5    STN         1,982 09-07-93   5:00a
+FORM6    STN         1,981 09-07-93   5:00a
+FORM7    STN         1,981 09-07-93   5:00a
+FS5      STN         1,982 09-07-93   5:00a
+MUNICH   STN         1,982 09-07-93   5:00a
+PARIS    STN         1,982 09-07-93   5:00a
+SAIL1    STN         1,969 09-07-93   5:00a
+SAIL2    STN         1,969 09-07-93   5:00a
+SYNTH    STN         1,982 09-07-93   5:00a
+MODE2    STN         1,982 09-07-93   5:00a
+MODE4    STN         1,982 09-07-93   5:00a
+FINAL    STN         1,982 09-07-93   5:00a
+
+       55 file(s)        104,167 bytes
+
+ 
+ Directory of C:\FLTSIM5\SOUND
+ 
+.            <DIR>         04-27-94   6:07p
+..           <DIR>         04-27-94   6:07p
+CRASH    WAV        19,603 09-07-93   5:00a
+GEAR_DN  WAV        31,639 09-07-93   5:00a
+GEAR_UP  WAV        33,235 09-07-93   5:00a
+JET1     WAV        23,278 09-07-93   5:00a
+PROP     WAV        32,278 09-07-93   5:00a
+SCREETCH WAV         1,425 09-07-93   5:00a
+SPLASH   WAV        13,249 09-07-93   5:00a
+
+        9 file(s)        154,707 bytes
+
+ 
+ Directory of C:\FLTSIM5\VIDEOS
+ 
+.            <DIR>         04-27-94   6:07p
+..           <DIR>         04-27-94   6:07p
+_LA1     VID           831 09-07-93   5:00a
+_LA2     VID           712 09-07-93   5:00a
+_LA3     VID         1,300 09-07-93   5:00a
+_LA4     VID         1,931 09-07-93   5:00a
+_LA5     VID         3,439 09-07-93   5:00a
+_LA6     VID         1,701 09-07-93   5:00a
+_LA7     VID         6,921 09-07-93   5:00a
+_LA8     VID         3,451 09-07-93   5:00a
+_LB1     VID         1,111 09-07-93   5:00a
+_LB2     VID         8,853 09-07-93   5:00a
+_LB3     VID           868 09-07-93   5:00a
+_LB4     VID         2,546 09-07-93   5:00a
+_LB5     VID           728 09-07-93   5:00a
+_LB6     VID         1,275 09-07-93   5:00a
+_LB7     VID         3,347 09-07-93   5:00a
+_LB8     VID         1,208 09-07-93   5:00a
+_LB9     VID         1,339 09-07-93   5:00a
+_LBA     VID         2,470 09-07-93   5:00a
+_LE1     VID         1,326 09-07-93   5:00a
+_LE2     VID         1,012 09-07-93   5:00a
+_LE3     VID           620 09-07-93   5:00a
+_LE4     VID           751 09-07-93   5:00a
+_LE5     VID           979 09-07-93   5:00a
+_LE6     VID         1,217 09-07-93   5:00a
+_LE7     VID         1,549 09-07-93   5:00a
+FORM1    VID         8,027 09-07-93   5:00a
+FORM2    VID         2,151 09-07-93   5:00a
+FORM3    VID         4,127 09-07-93   5:00a
+FORM4    VID         1,279 09-07-93   5:00a
+FORM5    VID         1,925 09-07-93   5:00a
+FORM6    VID         1,113 09-07-93   5:00a
+FORM7    VID         2,677 09-07-93   5:00a
+FS5      VID        18,115 09-07-93   5:00a
+SOARING  VID         6,425 09-07-93   5:00a
+
+       36 file(s)         97,324 bytes
+
+Additional query words: 5.00 flightsim fltsim dos FS5
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

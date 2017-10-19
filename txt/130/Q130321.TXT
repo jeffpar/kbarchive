@@ -1,0 +1,66 @@
+DOCUMENT:Q130321  30-OCT-1999  [pcmail]
+TITLE   :PC MAPI: Attachment Name Must Retain 3 Letter File Extension
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail for PC Networks attachments that are sent from simple Messaging
+Application Program Interface (MAPI) applications should retain the three letter
+file name extension as described in the Microsoft Windows 3.x registry database.
+If the three letter file name extension is not maintained, the application will
+not be launched correctly by accessing the icon associated with the object in
+the Microsoft Mail for Windows. Examples of these extensions include .DOC (Word
+documents), .WKS (Excel worksheet), and .WRI (Write document).
+
+MORE INFORMATION
+================
+
+If the three letter file name extension is not maintained in the code for the
+MapiFile.FileName field (for Microsoft Visual Basic) in the MapiFile structure,
+the following error will be returned from the Windows client:
+
+   No application is associated with the attached file FILENAME.EXT.
+   Use the File Manager to create an association.
+
+This error will occur even if Mail appears to display the application's icon that
+the file belongs to correctly. This information will appear correctly because
+the information for the icon object is in the system attachment WINMAIL.DAT.
+However, Mail does not use WINMAIL.DAT to launch the application associated with
+the file. Instead, Mail uses the standard associations found in the Windows 3.x
+registry database.
+
+NOTE: MapiFileDesc is the equivalence of MapiFile in C.
+
+Additional query words: 3.00 3.20 file extension
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

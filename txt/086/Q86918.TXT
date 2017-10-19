@@ -1,0 +1,58 @@
+DOCUMENT:Q86918  23-OCT-1999  [foxmisc]
+TITLE   :Nondedicated Novell Server Hangs After Printing
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MS-DOS:2.17
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for MS-DOS, version 2.17 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the CAPTURE application provided with Microsoft FoxBASE+ is used to reroute
+printing from one nondedicated server to another nondedicated server, any
+subsequent printing requests hang a Novell ELS I, ELS II, or Advanced Network
+server.
+
+CAUSE
+=====
+
+The server acts as if it has control of the remote printer as a local device.
+
+RESOLUTION
+==========
+
+Obtain the PRFIX file from Novell Technical Support.
+
+The Novell products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 1.00 plus nondedicated redirect redirector
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxBASE217DOS kbFoxBASESearch
+Version           : MS-DOS:2.17
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

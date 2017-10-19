@@ -1,0 +1,45 @@
+DOCUMENT:Q77102  10-NOV-1999  [pcmail]
+TITLE   :PC Rmt: COM3 and COM4 Not Available on MCA Machines
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:2.1,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for MS-DOS, versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mail Administrator program and Remote client software do not work with COM3
+or COM4 on IBM computers using Micro Channel Architecture (MCA).
+
+IBM MCA machines use different serial addresses for COM3 and COM4 than Industry
+Standard Architecture (ISA) or Enhanced Industry Standard Architecture (EISA).
+
+Additional query words: 2.10 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailRemote300DOS kbMailRemote210DOS
+Version           : MS-DOS:2.1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

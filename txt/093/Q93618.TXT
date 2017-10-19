@@ -1,0 +1,56 @@
+DOCUMENT:Q93618  23-OCT-1999  [foxmisc]
+TITLE   :Using FoxBASE+/Mac .DBF Files with Microsoft Excel 4.0
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To use a FoxBASE+/Mac database file in Microsoft Excel 4.0 for the Macintosh,
+place the database file in the Excel Startup Folder. When Microsoft Excel
+starts, it automatically opens the database file.
+
+CAUTION: If the database file has a memo field, Microsoft Excel cannot open the
+memo file. If you use Microsoft Excel to modify the contents of a database file
+that has a memo field, and then open the file in FoxBASE+, the memo field will
+be changed to a character field. Even if the field is changed back to a memo
+field, you cannot access the memo file.
+
+MORE INFORMATION
+================
+
+On a machine running Apple System 6, the Excel Startup Folder is in the System
+Folder. On a machine running Apple System 7, the Excel Startup Folder is in the
+Preferences Folder in the System Folder.
+
+Additional query words: 2.01
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

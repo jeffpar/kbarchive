@@ -1,0 +1,85 @@
+DOCUMENT:Q139335  11-FEB-2000  [foxpro]
+TITLE   :PRB: Import Wizard Shows the First 50 Records Only
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While running the Import Wizard, you can only see the first 50 records in any of
+the wizard windows. If you click the Options button in the second Import Wizard
+window and select the Scan All Records check box in the Import Wizard Options
+window, you can still see only the first 50 records. If you click the Options
+button in the second Import Wizard window, you'll see that the Scan All Records
+check box is cleared, as if you never selected it.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The wizard only displays the first 50 records from the data source regardless of
+whether if you select the Scan All Records check box or not. The wizard does not
+retain the Scan All Records check box state (selected or cleared).
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the Customer table which ships with Visual FoxPro.
+
+2. Type the following command in the Command window:
+
+      COPY TO test.txt TYPE DELIMITED
+
+3. On the Tools menu, click Wizards.
+
+4. On the Wizards list, click Import.
+
+5. Select your text file (Test.txt) as the source file, and click Next. Scroll
+   to the bottom of the list of records, and note that only the first 50 are
+   displayed.
+
+6. Click Options, and then select the Scan All Records check box. Click OK.
+   Scroll to the bottom of the list of records, and note only the first 50
+   records are displayed.
+
+7. Click Options, and note that the Scan All Records check box is clear. Select
+   the Scan All Records check box again, and click OK.
+
+8. Finish the wizard, and note the total number of imported records matches the
+   number of records in the Customer table.
+
+Additional query words: VFoxWin vfp
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

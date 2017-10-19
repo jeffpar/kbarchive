@@ -1,0 +1,114 @@
+DOCUMENT:Q147132  28-JUL-2001  [win95x]
+TITLE   :How to Prevent DoubleSpace or DriveSpace Drivers from Loading
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to prevent the DoubleSpace or DriveSpace driver from
+being loaded into memory.
+
+MORE INFORMATION
+================
+
+The DoubleSpace or DriveSpace driver is loaded under either of the following
+conditions:
+
+ - There is a Dblspace.ini or Drvspace.ini file present on the host drive on the
+   boot disk. This is usually drive H, but it can be drive C if the boot disk is
+   not compressed.
+
+ - There are lines in the Msdos.sys file calling the driver.
+
+Temporarily Disabling the Driver
+--------------------------------
+
+To temporarily bypass the loading of the Dblspace.bin or Drvspace.bin driver,
+restart your computer, and then press CTRL+F5 when you see the "Starting Windows
+95" message.
+
+Permanently Disabling the Driver
+--------------------------------
+
+To permanently disable the Dblspace.bin or Drvspace.bin driver, follow these
+steps:
+
+1. Make sure Windows 95 is configured so you can view hidden and system files.
+   For additional information, please see the following article in the Microsoft
+   Knowledge Base:
+
+   Q141276 How to View System and Hidden Files in Windows 95
+
+2. Click the Start button, point to Find, and then click Files Or Folders.
+
+3. In the Named box, type "dblspace.ini" (without the quotation marks). Click
+   the Include Subfolders check box to clear it, and then click Find Now.
+
+4. If a Dblspace.ini file is found, use the right mouse button to click the
+   file, click Rename on the menu that appears, and then rename the file to
+   Dblspace.sav.
+
+5. In the Named box, type "drvspace.ini" (without the quotation marks), and then
+   click Find Now.
+
+6. If a Drvspace.ini file is found, use the right mouse button to click the
+   file, click Rename on the menu that appears, and then rename the file to
+   Drvspace.sav.
+
+If the DoubleSpace or DriveSpace driver is still loaded when you restart the
+computer, follow these steps:
+
+1. Start an MS-DOS session.
+
+2. At the command prompt, type the following lines. Press ENTER after each
+   line:
+
+   " cd\
+   attrib -s -h -r msdos.sys
+   edit msdos.sys " (without the quotation marks)
+
+3. In the [Options] section of the file, search for the following lines:
+
+   " Dblspace=0
+   Drvspace=0 " (without the quotation marks)
+
+   If these lines do not exist, add them to the [Options] section.
+
+4. Save the Msdos.sys file and then quit the editor.
+
+5. Type "attrib +s +h +r msdos.sys" (without the quotation marks), and then
+   press ENTER.
+
+6. Restart the computer. The DoubleSpace or DriveSpace driver should not be
+   loaded.
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

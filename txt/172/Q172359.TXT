@@ -1,0 +1,89 @@
+DOCUMENT:Q172359  17-OCT-2001  [powerpt]
+TITLE   :PPT7: Error Editing Graph in PowerPoint 95 & 97 Dual Format File
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbgraph
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint 97 for Windows Service Release 1 (SR-1) 
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you save a PowerPoint 97 SR-1 presentation with an embedded graph in the
+PowerPoint 95 & 97 dual file format, open the presentation in Microsoft
+PowerPoint, version 7.0, and then double-click the graph object, you may receive
+the following error message:
+
+   The server application, source file, or item cannot be found. Make sure the
+   application is properly installed, and that it has not been deleted, moved,
+   or renamed.
+
+CAUSE
+=====
+
+This error occurs when you save a presentation in the PowerPoint 95 & 97
+dual format. PowerPoint 97 SR-1 contains a new feature that converts Graph 97
+objects to the Graph 5.0 format. However, you cannot use this feature with the
+PowerPoint 95 & 97 dual format. Because you cannot use Graph 5.0 to edit
+Graph 97 objects, you receive this error message. (Graph 5.0 is included with
+PowerPoint versions 4.0 and 7.0.)
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. In PowerPoint 97 SR-1, click Save As on the File menu.
+
+2. In the Save As Type list, select one of the following file formats:
+
+   PowerPoint 4.0 with Graph 5.0 (*.ppt)
+   PowerPoint 95 with Graph 5.0 (*.ppt)
+
+3. Type a new file name.
+
+4. Click Save.
+
+NOTE: If you edit any of the graphs using Graph 5.0, and then reopen the
+presentation in PowerPoint 97 SR-1, PowerPoint automatically converts the
+objects to Graph 97 format. Repeat steps 1 through 4 when you save the
+presentation again.
+
+STATUS
+======
+
+This feature is under review and will be considered for inclusion in a future
+release.
+
+Additional query words: graph97 graph8 crossprod 8.00 msgraph downrev drs previous version chart cannot open fails error
+
+======================================================================
+Keywords          : kbgraph 
+Technology        : kbPowerPtSearch kbPowerPt95 kbPowerPt97 kbZNotKeyword2 kbPowerPt97Search kbPowerPt95Search kbPowerPt97SR1
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbinfo
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

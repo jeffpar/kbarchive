@@ -1,0 +1,72 @@
+DOCUMENT:Q123423  02-OCT-1999  [crossnet]
+TITLE   :Err Msg: No Domain Server Was Available to Validate Your...
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+When you try to log on to a Microsoft Windows NT or Microsoft LAN Manager
+domain through Microsoft Windows for Workgroups, the following error
+message appears:
+
+   No domain server was available to validate your password. You were logged on
+   without password validation.
+
+This error can occur if the domain name specified in the Domain Name field
+of the Startup Settings dialog box is invalid (that is, no Windows NT or
+LAN Manager domain by that name exists). To check this setting, use the
+following procedure:
+
+1. From Control Panel, choose Network.
+
+2. In the Microsoft Windows Network dialog box, choose the Startup icon.
+
+3. Verify the domain name listed in the Domain Name field of the Startup
+   Settings dialog box and make sure Log On to Windows NT or LAN Manager Domain
+   is selected.
+
+You can also find the domain name on the LogonDomain line in the [Network]
+section of the SYSTEM.INI file.
+
+Note that even though you may be able to browse the domain and connect to
+network shares, you still need to be validated when logging on if you have
+a logon script that needs to run.
+
+NOTE: A common problem is putting a space in the computername. This is an
+invalid computername.
+
+This is only one reason why you may not be validated. For additional
+information on logon validation and other reasons for the above error,
+search for the following keywords in the Microsoft Knowledge Base.
+
+   password and validation and server
+
+Additional query words: 3.11 wfw wfwg lanman winnt authentication
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

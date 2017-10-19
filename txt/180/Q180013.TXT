@@ -1,0 +1,84 @@
+DOCUMENT:Q180013  11-JUN-2002  [exchange]
+TITLE   :XADM: Determining Which Windows NT Account Is the Service Accoun
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article describes how to determine which Microsoft Windows NT account was
+chosen as the Exchange service account during Setup.
+
+MORE INFORMATION
+================
+
+If the Exchange Server computer is running:
+
+1. Start the Exchange Administrator program.
+
+2. Expand the Site container, and then click the Configuration container.
+
+3. From the File menu, click Properties.
+
+4. Click the Service Account Password tab. The Account Name box displays the
+   service account information.
+
+If the Exchange Server computer is down, you cannot start the Exchange
+Administrator program to find the Windows account. Therefore, you must perform
+the following steps:
+
+NOTE: This is for viewing the information only; changing this value is not
+supported.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start the Microsoft Windows NT registry editor (Regedt32.exe).
+
+2. Select the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+
+3. Click MSExchangeSA.
+
+The ObjectName value in the right pane gives the domain name and the Windows NT
+account name of the Exchange service account.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

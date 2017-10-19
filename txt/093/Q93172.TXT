@@ -1,0 +1,49 @@
+DOCUMENT:Q93172  12-JUN-2001  [utilities]
+TITLE   :CURRENT.STS Stored According to USER Environment Variable
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1,2.0,2.1.49
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1, 2.0, 2.1.49 
+-------------------------------------------------------------------------------
+
+When a system does not have any value assigned to the INIT environment
+variable, Programmer's Workbench uses the value of the USER
+environment variable to determine where to store the CURRENT.STS file.
+
+For example, the USER environment variable is set with the following
+MS-DOS command in the AUTOEXEC.BAT file or at the MS-DOS prompt:
+
+   SET USER=username
+
+If the current directory is C:\TEST and the INIT environment variable
+does not exist, PWB attempts to create the CURRENT.STS file in the
+C:\TEST\username directory.
+
+Additional query words: kbinf 1.00 1.10 2.00 2.1.49 novell PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB200DOS kbPWB2149DOS
+Version           : MS-DOS:1.0,1.1,2.0,2.1.49
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

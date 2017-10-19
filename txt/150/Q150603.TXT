@@ -1,0 +1,53 @@
+DOCUMENT:Q150603  07-JAN-2000  [iis]
+TITLE   :Doc Error: IIS Download Version Readme File Is Incorrect
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The download version of Internet Information Server (IIS) has a Readme.txt file
+that incorrectly refers to running Setup from the Admin directory to installing
+Internet Service Manager on a computer to administer an IIS over a network
+connection.
+
+MORE INFORMATION
+================
+
+The compact disc has an Admin directory but the downloadable version does not.
+
+You can run the IIS Setup on the NTS or NTW and select Internet Service Manager.
+On NTW, it will be the only installation module option.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbiisSearch kbiis100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

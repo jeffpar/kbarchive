@@ -1,0 +1,53 @@
+DOCUMENT:Q99176  08-DEC-1999  [homemm]
+TITLE   :Bookshelf: Encyclopedia Index Lists Incomplete Names
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1993 edition,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1993 edition 
+ - Microsoft Multimedia Viewer, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Bookshelf, the index to the Concise Columbia Encyclopedia lists some names
+incompletely.
+
+For example, quotations by Francois Duc de La Rochefoucauld are listed in the
+index as being by "Francois." Quotations by Henri Comte de Toulouse-Lautrec are
+listed in the index as being by "Henri." This problem also occurs with other
+names, including the following: "Honore," "Hugh," "Joachim," "John," "Luc," and
+"Ouida."
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+
+Additional query words: multimedia multi media multi-media CCQ CCE usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbBookshelfSearch kbBookShelf1993 kbMMViewer200
+Version           : :1993 edition,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

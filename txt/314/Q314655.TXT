@@ -1,0 +1,99 @@
+DOCUMENT:Q314655  11-FEB-2002  [foxpro]
+TITLE   :FIX: "Cannot update the cursor" Error Indexing a View
+PRODUCT :Microsoft FoxPro
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700fix kbvfp700 _IK283
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to create an index on a view that is part of a database, and the
+database is read-only or has been opened with the NOUPDATE clause, you may
+receive the following error message:
+
+   Cannot update the cursor.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Visual FoxPro for
+Windows 7.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q316964 How to Obtain the Latest Visual FoxPro for Windows 7.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Visual FoxPro for Windows 7.0 Service Pack 1.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce the problem, run the following code from a program (.prg) file:
+
+   * This code demonstrates the problem using the NOUPDATE clause.
+   * The problem will also occur if the database is read-only.
+   #define DBCNAME   'testdb'
+   #define TABNAME   'testtab1'
+
+   CLEAR 	
+   CLOSE DATABASES ALL
+   DELETE FILE DBCNAME + '.dbc'
+   DELETE FILE DBCNAME + '.dc?'
+
+   DELETE FILE TABNAME+'.dbf'
+   DELETE FILE TABNAME+'.cdx'
+
+   CREATE TABLE TABNAME (F1 C(10), F2 C(10) ) 
+   INSERT INTO TABNAME VALUES ('xxx','yyy')
+
+   CLOSE TABLES 
+
+   CREATE DATABASE DBCNAME
+   CREATE SQL VIEW v1 AS Select * From TABNAME
+   CLOSE DATABASES ALL 
+
+   OPEN DATABASE DBCNAME NOUPDATE
+
+   USE testdb!v1
+   INDEX ON f1 TAG f1
+   RETURN 
+
+Additional query words: kbVFP700sp1fix
+
+======================================================================
+Keywords          : kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700fix kbvfp700 _IK283 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

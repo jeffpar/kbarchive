@@ -1,0 +1,86 @@
+DOCUMENT:Q115889  04-AUG-2000  [foxpro]
+TITLE   :CONFIG.FPM Settings for Behavior Similar to Fox/Windows
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To cause FoxPro for Macintosh to behave as similarly as possible to FoxPro for
+Windows, place KEYCOMP, VOLUME, and MACDESKTOP lines in the CONFIG.FPM
+configuration file.
+
+MORE INFORMATION
+================
+
+Create a CONFIG.FPM file containing the following lines:
+
+      VOLUME C: = "<volume_name>"  && Enables MS-DOS-style paths
+      KEYCOMP = WINDOWS          && Enables menu shortcut keys
+      MACDESKTOP = OFF           && FoxPro windows display in main windoww
+
+For information about setting a drive letter to the volume name, please see the
+following article(s) in the Microsoft Knowledge Base:
+
+   Q115482 SET VOLUME Provides Support for MS-DOS-Style Paths
+
+NOTE: You may also want to include a "DEFAULT" line to set the default directory
+to a working directory. If the "DEFAULT" line uses an MS-DOS- style path
+(instead of a Macintosh-style path), be sure to place it below the "VOLUME" line
+in the CONFIG.FPM.
+
+Creating the CONFIG.FPM File
+----------------------------
+
+1. Verify that the default directory (folder) is the main FoxPro directory. Type
+   "?SYS(2004)" (without the quotation marks) to determine the main FoxPro
+   directory, and "?CURDIR()" (without the quotation marks) to determine the
+   current directory. If necessary, use the SET DEFAULT command to change the
+   default directory.
+
+2. Type "MODIFY FILE CONFIG.FPM" (without the quotation marks) to create the
+   configuration file.
+
+3. Type the appropriate VOLUME, KEYCOMP, and MACDESKTOP lines in the CONFIG.FPM
+   window.
+
+4. Close the CONFIG.FPM window, saving the changes.
+
+The next time FoxPro starts, it will use these settings in the CONFIG.FPM.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxMac FoxMac pathing behaviour behavior compatibility shortcut short cut access hotkey hot disk akz
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

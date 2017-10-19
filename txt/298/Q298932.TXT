@@ -1,0 +1,67 @@
+DOCUMENT:Q298932  28-AUG-2001  [sms]
+TITLE   :"Connection Test Failed" Error with SMS Web Reports Installation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install SMS Web Reports, you may receive the following error
+message:
+
+   Connection test failed! Please verify you have entered the connection
+   information correctly.
+
+CAUSE
+=====
+
+The SMS Web Reports require the use of standard security for the connection to
+the SQL server. This error can occur if standard security is not enabled on the
+SQL server. The following requirements must be met so you can install SMS Web
+Reports:
+
+ - Installation requires Mixed or Standard SQL Security mode, and will not work
+   with Integrated Security mode.
+
+ - When you install the SMS Web Reporting tool, you must type the password for
+   the SA user account on the SQL server.
+
+MORE INFORMATION
+================
+
+When you install SMS Web Reports, Setup must be able to grant READ access to the
+SQL view objects. This requires the use of the SA account to obtain DBO rights
+to the SQL view objects.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

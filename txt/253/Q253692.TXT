@@ -1,0 +1,63 @@
+DOCUMENT:Q253692  12-NOV-2001  [homekids]
+TITLE   :Kids Products Troubleshooter Available
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0,1.1,2.0
+OPER/SYS:
+KEYWORDS:mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Creative Writer for Windows, versions 1.0, 2.0 
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1 
+ - Microsoft My Personal Tutor: Alphabet Playhouse, version 1.0 
+ - Microsoft My Personal Tutor: Mathopolis, version 1.0 
+ - Microsoft My Personal Tutor: Reader Railway, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the World of Animals for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the availability of the Microsoft Kids Products
+troubleshooter.
+
+The Microsoft Kids Products troubleshooter provides step-by-step instructions to
+help you resolve common issues with Microsoft Kids products.
+
+MORE INFORMATION
+================
+
+The Microsoft Kids Products troubleshooter is available at the following
+Microsoft Web site:
+
+   http://support.microsoft.com/support/tshoot/kids.asp
+
+Additional query words: 1.00 2.00 mskids t-shoot ts trouble shoot
+
+======================================================================
+Keywords          : mskids kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbZNotKeyword kbZNotKeyword2 kbKidsSearch kbCreativeWriter100 kbCreativeWriter200 kbFineArtist100 kbFineArtist110 kbMPTAlphabet kbMPTMathopolis kbMPTReader kb3dMovieMaker kbScholasticHuman kbScholasticOcean kbScholasticSolar kbScholasticAnimals kbMSBSearch
+Version           : :1.0,1.1,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

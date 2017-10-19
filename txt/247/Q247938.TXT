@@ -1,0 +1,48 @@
+DOCUMENT:Q247938  18-MAY-2001  [sms]
+TITLE   :SMS 2.0 and SMS Service Pack 1 Are Not Supported on Windows 2000
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:2000; winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbsms200 kbGrpDSW2KISV
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server (SMS) 2.0 and SMS 2.0 Service Pack 1 (SP1) are not
+supported on Window 2000.
+
+MORE INFORMATION
+================
+
+Windows 2000 support for SMS will be released in SMS 2.0 Service Pack 2 (SP2).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbsms200 kbGrpDSW2KISV 
+Technology        : kbwin2000AdvServSearch kbwin2000Ssearch kbSMSSearch kbPictureIt2000 kbWinAdvServSearch kbSMS200SP1 kbFunImagination200
+Version           : WINDOWS:2000; winnt:2.0,2.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

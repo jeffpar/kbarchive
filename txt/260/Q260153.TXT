@@ -1,0 +1,66 @@
+DOCUMENT:Q260153  22-JUN-2001  [exchange]
+TITLE   :XCLN: Deleted Items Folder Is Emptied When Installing a Form
+PRODUCT :Microsoft Exchange
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install forms that you create by using Microfot Exchange Forms Designer
+in a public folder, Outlook folder, Personal Forms Library, or Organizational
+Forms Library, your Deleted Items folder is emptied.
+
+WORKAROUND
+==========
+
+If the Deleted Item Recovery feature is active, you can recover the deleted
+items. For additional information about recovering deleted items, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q228934 XCLN: Understanding Deleted Item Recovery
+
+
+MORE INFORMATION
+================
+
+For additional information about installing forms that you create with EFD,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q146253 XCLN: How to Install a Form Created with EFD
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : :; WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

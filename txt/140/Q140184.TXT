@@ -1,0 +1,71 @@
+DOCUMENT:Q140184  18-FEB-2002  [exchange]
+TITLE   :XFOR: How to Get the IMC to Use an Internet Provider
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Server version 4.0 Internet Mail Connector (IMC) cannot
+dial-up and send or receive mail itself. The IMC expects to be able to connect
+to other SMTP hosts already available. However, there is a way to accomplish the
+same thing using the AT command in Windows NT.
+
+MORE INFORMATION
+================
+
+You will need to make arrangements with the Internet Provider to hold mail
+delivery until pre-defined times. At these pre- defined times, you will want to
+have a batch file that is called by the AT command that initiates a RAS session
+using RASDIAL, and then starts the IMC. Because the IMC can accept multiple
+simultaneous connections, it can send mail and receive mail from the Internet
+Provider at the same time. Lastly, you would also want to have a batch file
+scheduled to stop the IMC and disconnect the RAS session.
+
+The following are some sample batch files:
+
+IMCSTART.BAT
+------------
+
+   rasdial <name of Internet Provider's phone book entry>
+   net start msexchangeimc
+
+IMCSTOP.BAT
+-----------
+
+   net stop msexchangeimc
+   rasdial /disconnect
+
+
+Additional query words: isp simulataneous dial exfaqcon
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

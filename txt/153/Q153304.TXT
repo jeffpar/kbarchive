@@ -1,0 +1,74 @@
+DOCUMENT:Q153304  24-JUL-2001  [sms]
+TITLE   :USERTSR and USERIPX Options in Documentation Incorrect
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbdocerr smsdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The documentation for the USERTSR and USERIPX options section in the "SMS
+Administrator's Guide" is incorrect concerning /v and /y.
+
+Page 389 states the following:
+
+"/vflag" should read: "/v flag" -- the space is required
+
+example:    usetsr /vVIEW       should be   usertsr /v VIEW
+            usertsr /vNOVIEW    should be   usertsr /v NOVIEW
+
+"/yflag" should read "/V flag" -- it is a capital V instead of y and a
+space is required
+
+example:    usertsr /yAUDIBLE   should be   usertsr /V AUDIBLE
+            usertsr /yNOVIEW    should be   usertsr /V NOAUDIBLE
+
+example:    usertsr /l2 /vVIEW /yNOAUDIBLE   should be   usertsr /l2 /v
+VIEW /V NOAUDIBLE
+
+The following line:
+
+   Note that remote access and local flags (/v and /y options) can be set . . .
+
+should read:
+
+   Note that remote access and local flags (/v and /V options) can be set . . .
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. This problem has been corrected in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbdocerr smsdocerr 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

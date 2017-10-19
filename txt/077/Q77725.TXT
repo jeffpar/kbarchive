@@ -1,0 +1,48 @@
+DOCUMENT:Q77725  14-DEC-1999  [winmisc]
+TITLE   :Must Exit and Reenter Windows to Update Sound Driver
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::1.0; WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+You must exit Windows version 3.0 and 3.0a and run Windows with
+Multimedia Extensions again after adding a new Multimedia driver
+within the Driver option in the Control Panel. This is so that the
+changes can take effect.
+
+This information does not apply to later versions of Windows.
+
+When adding a new driver, the SYSTEM.INI file gets updated but not
+reinitialized. This can only be done when first starting Windows with
+Multimedia Extensions.
+
+Additional query words: 1.00 1.0 MMWIN
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWinMultiXSearch kbWin300 kbWin300a kbWinMultiX100
+Version           : :1.0; WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

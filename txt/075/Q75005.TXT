@@ -1,0 +1,54 @@
+DOCUMENT:Q75005  03-NOV-1999  [win16ddk]
+TITLE   :Handling NULL lpDrawMode in a Display Driver
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.0,3.1; WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Windows graphical environment, the graphics device interface
+(GDI) should never pass a NULL lpDrawMode to a display driver. However, when a
+printer driver uses the brute interface to call the BitBlt routine in the
+display driver, the calling printer driver provides the parameters, including
+lpDrawMode, to the display driver. In this case, GDI cannot prevent the driver
+from sending incorrect parameters.
+
+For this reason, a display driver must be robust and must not crash when it
+receives incorrect arguments.
+
+The source code for the 8514/A display driver, included with the Microsoft
+Windows Device Development Kit (DDK), provides a good example of how to handle
+operations with a NULL lpDrawMode parameter.
+
+Additional query words: 3.00 3.10 3.11 DDKDISPLAY
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWFWSearch kbWinDDK300 kbWinDDK310 kbWFW311
+Version           : :3.0,3.1; WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

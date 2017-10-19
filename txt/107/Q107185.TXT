@@ -1,0 +1,665 @@
+DOCUMENT:Q107185  19-SEP-1999  [winmisc]
+TITLE   :Contents of the Windows Sound System 1.0a README.TXT
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the complete text of the README.TXT file for Windows Sound
+System 1.0a. This file is contained on disk 1 of Windows Sound System 1.0a.
+
+======================================================================
+MICROSOFT WINDOWS SOUND SYSTEM (Version 1.0a)
+Copyright (C) 1991-1993 Microsoft Corporation
+
+This document contains information that supplements the "Microsoft
+Windows Sound System User's Guide" and accompanying software.
+
+CONTENTS
+
+I.    Before you run Microsoft Windows Sound System (WSS) Setup
+
+       1. Other sound boards
+       2. Switching to Windows Program Manager
+
+II.   Troubleshooting
+
+III.  Voice Pilot
+
+IV.   ProofReader
+
+       1. Versions supported
+       2. Multiple instances
+       3. Installation sequence
+       4. Removing or reinstalling ProofReader
+       5. ProofReader dictionary for some non-U.S.
+          English-speaking countries
+
+V.     Windows NT
+
+VI.    Compatibility issues
+
+       1. WSS and other boards
+       2. WSS and MIDI sequencing software
+
+VII.   Modifications to information in the "Windows Sound System
+       User's Guide"
+
+VIII.  Removing WSS from your computer
+
+IX.    MS-DOS Games Compatibility Utility
+
+       1. General information
+       2. Creating a system startup disk
+       3. Creating a new CONFIG.SYS file for the system
+          startup disk
+       4. Creating a new AUTOEXEC.BAT file for the system
+          startup disk
+       5. Adding GAMES.PIF to your Windows Sound System
+          program group
+       6. Running the Games Compatibility utility
+       7. Controlling the digitized sound volume from games
+
+I. Before you run Microsoft Windows Sound System Setup
+
+1. Other sound boards
+
+Before installing the Microsoft Windows Sound System, open
+the Windows Control Panel and double-click the Drivers icon.
+If the list of installed drivers includes the Ad Lib, Sound
+Blaster, or Pro Audio Spectrum drivers, we suggest that you
+remove them by selecting the driver and clicking the Remove
+button.
+
+2. Switching to Windows Program Manager
+
+If you run out of disk space during Setup and need to delete
+some files, you can switch to Windows Program Manager without
+exiting Setup in one of two ways:
+
+a.) Press Alt+Tab, and choose the Windows Program Manager icon.
+
+    -or-
+
+b.) Press Ctrl+Esc, select Program Manager from the task list,
+and click the Switch To button.
+
+Perform step a or b again to switch from Program Manager to
+Setup.
+
+II. Troubleshooting
+
+1. If you run Setup before installing the Windows Sound System
+board and restart Windows, Setup should restart automatically.
+If this does not happen, rerun Setup either by double-clicking
+its icon in the Program Manager StartUp group or by running
+Setup from your WSS Disk #1.
+
+2. If a sound is repeated over and over when you choose the
+Check option and click the Sound Check button in Setup, one
+of two things could be wrong:
+
+a.) You did not remove the Ad Lib driver as described in
+section I.1 above.
+
+b.) You have one or more conflicting interrupts (IRQ). From
+Setup, choose the Board option and change the IRQ value for
+your board.
+
+3. If you do not hear any sound in Sound Finder or in the
+Guided Tour, or if Music Box does not find your CD-ROM drive,
+be sure you have the following entries or files:
+
+a.) In the WIN.INI file in your Windows 3.1 directory:
+
+    [MCI extensions]
+    wav=waveaudio
+    mid=sequencer
+    rmi=sequencer
+
+b.) In the SYSTEM.INI file in your Windows 3.1 directory:
+
+    [MCI]
+    CDAudio=mcicda.drv
+    WaveAudio=mciwave.drv
+    Sequencer=mciseq.drv
+
+c.) In your Windows 3.1 system directory:
+
+    MCICDA.DRV
+    MCIWAVE.DRV
+    MCISEQ.DRV
+
+4. If you're running a shared installation of Windows over
+a network, you cannot play MIDI files.
+
+5. If Music Box does not work with a Future Domain SCSI card,
+be sure that you have the latest version of the CD-ROM driver
+FDCD.SYS (version 2.23 as of December 21, 1992). Version 2.13
+of FDCD.SYS is known to have problems.
+
+6. Recording at high sampling rates with Quick Recorder
+
+Quick Recorder can have problems recording reliably at high sampl-
+ing rates on certain computers. This is most likely to occur on a
+computer with a 386 25 megahertz (MHz) or lower CPU. A few possible
+solutions are:
+
+a.) Record the sound at a sampling rate lower than CD quality (44
+kHz). This reduces the processing your computer has to perform.
+
+b.) Close other applications, especially those that are computation
+intensive such as Music Box or Voice Pilot.
+
+c.) If you must record CD-quality sounds, keep them as short
+as possible.
+
+7. Certain system sounds can interfere with sounds playing during
+the Guided Tour. For example, if you have Microsoft SoundBits in-
+stalled and a sound mapped to the system event, Application Close,
+you will hear this sound every time an application closes in the
+Guided Tour. To avoid this distraction, remove any sounds you've
+assigned to system events in Sound Control Panel before starting
+the Guided Tour.
+
+III. Voice Pilot
+
+You can improve recognition results by changing the record-
+ing level in the Windows Sound System Recording Control
+application.  If the level is too high, recognition is poor.
+The level should register in the yellow range when you speak.
+To open Recording Control, choose the Input Level button in
+the Options dialog box.
+
+You can also improve recognition by varying the microphone
+distance. The closer the microphone is to your mouth, the
+better the recognition. However, if you move the microphone
+closer to your mouth, you may have to adjust the gain (re-
+cording level).
+
+As a keyboard alternative to clicking the Microphone button,
+press Ctrl+Alt.
+
+If stray noises are often recognized as words, try increasing
+the recognition threshold using the Sounds Must Match Words
+slider in the Options dialog box.
+
+Train words that Voice Pilot has trouble recognizing or words
+it frequently recognizes incorrectly. If you continue having
+problems, you should train the entire vocabulary.
+
+As a shortcut for training, editing, or deleting an item,
+click the item in the Active Words list, and then choose
+a command from the pop-up menu.
+
+To move quickly to a word in the list in the Vocabulary dialog
+box, first click the list, and then type the first letter of
+the word.  Continue typing the same letter until the highlight
+reaches the desired word.
+
+Voice Pilot can have difficulty recognizing shorter words, even
+after training. If this happens, you can add longer words or
+phrases to the vocabulary to perform the same actions. In gen-
+eral, replace words that never seem to be understood. For example,
+if "Cut" is never recognized, try replacing it with "Remove,"
+"Delete," or "Cut out" and train the new item.
+
+The fewer the number of active words in your vocabulary, the better
+the recognition. Remove words from the vocabulary that you never use.
+
+IV. ProofReader
+
+1. Versions supported
+
+ProofReader is supported only in Microsoft Excel version 3.0 or
+higher and Lotus 1-2-3 for Windows versions 1.0, 1.0a, and 1.1.01.
+
+2. Multiple instances
+
+If you run more than one instance of Microsoft Excel or Lotus 1-2-3
+for Windows, only the first instance contains ProofReader.
+
+3. Installation sequence
+
+You must install your Windows spreadsheet package before running
+the WSS Setup program to install ProofReader.
+
+4. Removing or reinstalling ProofReader
+
+To remove or reinstall ProofReader For Excel, see your Microsoft
+Excel documentation on how to remove or install an add-in.
+
+To remove or reinstall ProofReader for Lotus 1-2-3 for Windows
+(123RDR), see your Lotus 1-2-3 for Windows documentation on how
+to remove or install an add-in.
+
+5. ProofReader dictionary for some non-U.S. English-speaking
+countries
+
+A special ProofReader dictionary (NON-US.DCT) is provided
+to accommodate the spoken differences between U.S. English
+and some other English-speaking countries. To enable these
+differences, add this dictionary to the list of active
+dictionaries ProofReader uses.
+
+a) From the Microsoft Excel or Lotus 1-2-3 for Windows
+   Proof menu, choose Options.
+
+   The Options dialog box appears.
+
+b) In the Category box, choose Dictionary.
+
+   The Dictionary dialog box appears.
+
+c) In the Dictionary dialog box, choose Add.
+
+   The Add Dictionary dialog box appears.
+
+d) In the Directories box, choose the Windows Sound
+   System directory (C:\SNDSYS by default).
+
+   Note: If you installed Windows Sound System
+         in a directory other than C:\SNDSYS,
+         choose the proper directory name.
+
+   The list of available dictionaries (*.DCT files)
+   appears in the File Name box.
+
+e) In the File Name box, select NON-US.DCT.
+
+f) Choose OK.
+
+g) Choose Done.
+
+V. Windows NT
+
+Windows Sound System version 1.0 software does not operate with
+Windows NT because Windows NT is not yet available for retail
+sale. However, future versions of Windows Sound System software
+that are released after Windows NT is available will operate with
+Windows 3.1 or higher as well as with Windows NT.
+
+The Windows Sound System audio hardware can be used in ISA/EISA
+computers running Windows NT. Sound applications that are shipped
+with Windows NT will play sounds through the WSS audio hardware
+using an audio driver shipped with Windows NT. Any Windows NT
+application that uses the Windows 3.1 Sound Application Programming
+Interfaces (APIs) should operate properly with the WSS audio hardware.
+
+VI. Compatibility issues
+
+1. WSS and other boards
+
+The Microsoft Windows Sound System board may not work with other
+sound boards. We recommend that you remove all other sound drivers
+from the Windows Control Panel Drivers application and remove other
+sound boards from your machine.
+
+The synthesis chip on the WSS board can conflict with those on other
+sound boards.
+
+If you use multiple sound boards and drivers, you can encounter
+interrupt (IRQ), I/O address, and/or DMA channel conflicts that
+can cause your system to hang or repeat sounds.
+
+2. WSS and MIDI sequencing software
+
+There are some known incompatibilities with certain Musical
+Instrument Digital Interface (MIDI) sequencing software packages.
+
+The WSS Sound Finder application cannot play a file with an
+.MID or .RMI extension while a sequencing program is open,
+regardless of whether a file is actually loaded into the
+sequencer. However, you can play the file through the Windows
+Sound System board using either your sequencing program or
+Sound Finder. If you want to use Sound Finder to browse MIDI
+files and additional file types as well, close your sequencer
+before using Sound Finder. You should find that Sound Finder
+plays MIDI files without a problem.
+
+Finale 2.2 for Windows from Coda Music Technology is compatible
+with the Windows Sound System board and software once you make
+some changes to your WIN.INI file. For more information on using
+Finale for Windows or MusicProse for Windows with WSS hardware,
+contact Coda Music Technology at (612) 937-9611.
+
+If you experience difficulties using your MIDI sequencer with
+your WSS board:
+
+a.)  Consult the WSS documentation to ensure you have installed
+and configured both the board and the software properly.
+
+b.)  Consult your sequencer's documentation for additional
+assistance.
+
+c.)  If you are still experiencing problems, contact Microsoft
+Product Support Services.
+
+VII. Modifications to information in the "Windows Sound System
+     User's Guide"
+
+1. When you double-click a wave file in Windows File Manager,
+the file is not loaded into Sound Finder. Instead, the file is
+loaded into Quick Recorder.
+
+2. After performing a Paste Mix command in Quick Recorder, the
+Undo command works correctly.
+
+VIII. Removing WSS from your computer
+
+If you want to remove everything associated with the Windows
+Sound System from your computer, a file called DEINSTAL.TXT
+in your WSS directory (C:\SNDSYS by default) describes every
+file installed, its location, and how to remove it from your
+computer.
+
+IX. MS-DOS Games Compatibility Utility
+
+1. General information
+
+The Microsoft Windows Sound System operates with most
+games that support audio.  Many game developers have
+recently added support for the Windows Sound System.
+Other developers plan to add support in the near
+future.  For those who do not directly support the
+Windows Sound System board, there are several options
+available to provide adequate audio output from your
+games using the Windows Sound System board.
+
+For more information on the game's recommended system
+requirements and helpful tips about running the game,
+see your game's documentation. We recommend that you do
+not simultaneously run more than one MS-DOS application
+requiring sound because only one application at a time
+can access the sound hardware.
+
+Windows Games
+
+Games with audio capabilities developed for Windows
+work with the Windows Sound System board without any
+special configuration.
+
+MS-DOS Games
+
+Games with audio capabilities developed for MS-DOS work
+with the Windows Sound System board after you have booted
+your system with a special system startup disk. The purpose
+of this disk is to free up more conventional memory. For
+more information on commands to check for available mem-
+ory (mem and chkdsk), see your MS-DOS documentation.
+
+Windows Sound System
+
+Games supporting the Windows Sound System board should
+operate correctly without any special configuration.
+See your game documentation to determine if it supports
+the Windows Sound System board.  Older games may not
+contain support for the Windows Sound System board, but
+the developer may have an update available.  Contact your
+game developer about the availability of support for the
+Windows Sound System board.
+
+Ad Lib
+
+Games that support the Ad Lib card should operate
+properly with the Windows Sound System board.
+
+Sound Blaster
+
+Games supporting the Sound Blaster card should
+operate with the Windows Sound System board when
+run from an MS-DOS session with Windows in 386
+Enhanced Mode.  However, some modification to the
+Windows Sound System configuration is required to
+operate a game in Sound Blaster mode.  We have
+provided a configuration program to simplify this
+task.  The Windows Sound System program group con-
+tains a Games Configuration icon.  This application
+allows you to enable the games compatibility option.
+You must restart Windows after enabling games com-
+patibility for these changes to take effect.
+
+2. Creating a system startup disk
+
+These instructions assume MS-DOS 5.0 is installed on your
+computer.  It is also assumed that Windows 3.1 is installed
+in C:\WINDOWS and MS-DOS 5.0 is installed in C:\DOS. There
+is no provsion for third-party shell programs.
+
+Note: Check your existing AUTOEXEC.BAT file and/or CONFIG.SYS
+      file for the location and type of mouse driver you are
+      using.  If you want mouse support while running games,
+      be sure to include the mouse driver statement as found
+      in your existing AUTOEXEC.BAT or CONFIG.SYS. Additional
+      memory can be made available for running games by loading
+      your mouse driver into high memory. For more information
+      on loading your mouse driver into high memory, see your
+      MS-DOS documentation.
+
+a) Insert a new disk into drive A.
+
+b) From the MS-DOS prompt, type:
+
+   format a: /u /s
+
+c) When prompted for the volume name, type:
+
+   Game Config
+
+d) When the format is complete, and MS-DOS asks if
+   you want to format another disk, type:
+
+   N
+
+e) Label the outside of this disk with a new label:
+
+   Games Configuration
+
+3. Creating a new CONFIG.SYS file for the system
+   startup disk.
+
+a) From the MS-DOS prompt, type:
+
+   edit a:config.sys
+
+b) You are prompted to create a new file. Choose Yes.
+
+c) In the MS-DOS Editor, type the following lines:
+
+   dos=high,umb
+   files=30
+   buffers=20
+   device=c:\windows\himem.sys
+   device=c:\windows\emm386.exe 512 RAM
+
+   Note: You may need to include any device
+         drivers for your CD-ROM, hardcard
+         drives, or hard disk compression
+         if you must access these devices
+         while running games.
+
+d) From the File menu, choose Save.
+
+   Note: Do not quit the MS-DOS Editor.
+
+4. Creating a new AUTOEXEC.BAT file for the system
+   startup disk.
+
+a) From the File menu, choose New.
+
+b) Type the following lines:
+
+   path c:\windows;c:\dos
+   prompt $p$g
+
+c) From the File menu, choose Save As.
+
+   The Save As dialog box appears.
+
+d) In the File Name box, type:
+
+   a:autoexec.bat
+
+e) Choose OK.
+
+f) From the File menu, choose Exit.
+
+5. Adding GAMES.PIF to your Windows Sound System program group
+
+We have provided you with a default PIF file (GAMES.PIF)
+that provides adequate performance for most MS-DOS games
+while Windows is running in 386 Enhanced Mode. GAMES.PIF
+is installed in your SNDSYS directory when you run Setup.
+
+For information on optimizing GAMES.PIF and using the
+PIF Editor, see your Microsoft Windows documentation.
+
+a) In Program Manager, open the Windows Sound System
+   group.
+
+b) From the Program Manager File menu, choose New.
+
+   The New Program Object dialog box appears.
+
+c) Choose OK.
+
+   The Program Item Properties dialog box appears.
+
+d) In the Description box, type an identifier.
+
+   This becomes the label that appears under the icon
+   in the group window.
+
+e) In the Command Line box, type:
+
+   c:\sndsys\games.pif.
+
+   Note:  This assumes that you have installed Windows
+          Sound System in the C:\SNDSYS directory. If
+          it is installed in another directory, sub-
+          stitute that directory name for SNDSYS in
+          the line above.
+
+f) Choose OK.
+
+   The Program Item Properties dialog box returns with the
+   Command Line information filled in.
+
+g) Choose OK.
+
+   You return to Program Manager, and the Games program item
+   appears in the Windows Sound System program group.
+
+For more information on adding a new program item to a
+program group, see your Microsoft Windows documentation.
+
+6. Running the Games Compatibility utility
+
+The MS-DOS Games Compatibility utility is installed
+in the Windows Sound System group window when you
+run Windows Sound System Setup.
+
+To run the MS-DOS Compatibility utility:
+
+a) In the Windows Sound System program group, double-
+   click the Games Configuration icon.
+
+   The MS-DOS Games Compatibility dialog box appears.
+
+   If your audio hardware does not support AutoSelect and
+   is not configured to IRQ 7 or IRQ 9 and DMA channel 1,
+   the following message appears:
+
+     To run this utility, you must reconfigure your
+     audio hardware to use IRQ 7 or IRQ 9 and DMA
+     channel 1.  Consult your hardware documentation
+     for information on reconfiguring your IRQ and
+     DMA settings.
+
+b) Select the Enable Digitized Sound Support For Older
+   MS-DOS Games check box to enable digitized sound
+   translations for MS-DOS applications.
+
+   The default settings are: I/O Address: 220h and
+   IRQ 7.
+
+   The I/O address and IRQ settings should remain at
+   the defaults unless you have a conflict at these
+   settings.
+
+c) Change the I/O address if a conflict occurs.
+
+   Click the arrow in the I/O Address box, and
+   select the appropriate address from the list.
+
+d) Set the IRQ.
+
+   Either IRQ 7 or IRQ 9 must be enabled. However,
+   IRQ 7 is preferred because some MS-DOS games are
+   known to cause errors operating with IRQ 9.
+
+   For more information on resolving hardware conflicts,
+   see Appendix A, "Troubleshooting," in the "Microsoft
+   Windows Sound System User's Guide."
+
+e) Choose OK.
+
+   The new settings, as well as your previous settings,
+   are saved to your SYSTEM.INI file.  If you encounter
+   any problems or conflicts with the new settings, you
+   can restore your prior settings by running this utility
+   again and clearing the Enable Digitized Sound Support
+   For Older MS-DOS Games check box.
+
+   Note:  The following message appears if you do not
+          have IRQ 7 or IRQ 9 or DMA channel 1 set prior
+          to running this program:
+
+     Choosing OK, modifies your SYSTEM.INI file and the
+     changes may cause hardware conflicts. If Windows
+     fails to restart, reconfigure your audio hardware
+     by running Windows Sound System Setup from the MS-DOS
+     prompt at your SNDSYS directory.
+
+f) The Windows Sound System Notification box appears.
+
+   Choose the Restart Now button for your changes to take
+   effect.
+
+7. Controlling the digitized sound volume from games
+
+While running games, you can adjust the volume for digitized sounds by
+pressing Ctrl+Alt+Page Up to raise the volume or Ctrl+Alt+Page Down to
+lower the volume.
+
+Additional query words: 1.00a wss read me text file
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

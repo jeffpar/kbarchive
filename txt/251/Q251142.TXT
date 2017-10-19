@@ -1,0 +1,65 @@
+DOCUMENT:Q251142  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 2000: Unable to Send ATC Text Message
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui fsim kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run one of the programs listed at the beginning of this article, you
+may experience the following symptoms:
+
+ - When you press the PLUS SIGN (+) key on the number keypad, air traffic
+   control (ATC) chatter does not start scrolling across the screen.
+
+ - When you press a key or a button to which you have assigned the "Send ATC
+   text message" command, ATC chatter does not start scrolling across the
+   screen.
+
+CAUSE
+=====
+
+This behavior occurs because the "Send ATC text message" command is not
+available in the programs listed at the beginning of this article, even though
+this command is still listed under the "Assignment list" in the Controls
+Assignments dialog box.
+
+MORE INFORMATION
+================
+
+The "Send ATC text message" command is available in previous versions of
+Microsoft Flight Simulator.
+
+Additional query words: msgame flightsim fltsim fs2k communications missing broken nothing happens
+
+======================================================================
+Keywords          : kbdisplay kbui fsim kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,83 @@
+DOCUMENT:Q158056  14-NOV-2000  [word97]
+TITLE   :WD97: Quick View Doesn't Convert Word 97 Documents
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use Quick View to read a Microsoft Word 97 document, the
+title bar reflects the name of the document, but the Quick View window does not
+show the contents of the document.
+
+CAUSE
+=====
+
+Quick View uses a text converter that cannot read Word 97 documents.
+
+WORKAROUND
+==========
+
+To work around this problem in Quick View, on the File menu, click Open File for
+Editing. The file should now open in Microsoft Word 97 for Windows.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. This
+problem was corrected in Microsoft Windows 98.
+
+
+MORE INFORMATION
+================
+
+Quick View, which is installed by Microsoft Windows 95, allows you to view
+documents that are created by Windows-based programs without starting the
+program. If Quick View is not available on the shortcut menu, either the program
+that created your file does not support Quick View, or Quick View is not
+installed on your computer. Please see your Windows 95 documentation for
+information about how to install Quick View on your computer.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q154907 How to Enable or Disable Quick View
+
+
+   Q158748 OFF97: Unable to Preview File Using Quick View
+
+
+   Q186014 WD97: Setting Up QuickView to Preview Word Files w/ Word Viewer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

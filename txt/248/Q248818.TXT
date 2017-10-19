@@ -1,0 +1,86 @@
+DOCUMENT:Q248818  09-NOV-2001  [homegame]
+TITLE   :Fighter Ace II: Computer Hangs After You Click "Fly Now"
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play Microsoft Fighter Ace II, the computer may stop
+responding (hang) after you click Fly Now. The "Loading" screen is displayed,
+but the game does not start.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A 3D accelerator card based on the 3Dfx Voodoo chip set is installed in your
+   computer in addition to a primary video adapter.
+
+ - The 3D accelerator card is disabled in Device Manager.
+
+RESOLUTION
+==========
+
+To resolve this issue, enable the 3D accelerator card in Device Manager:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Device Manager tab.
+
+4. Click the PLUS SIGN (+) next to Display Adapters to expand the branch.
+
+5. View the devices that are listed in the Display Adapters branch of Device
+   Manager.
+
+6. Click the device that appears with a red "X" through the device icon, and
+   then click Properties.
+
+7. Click to clear the "Disable in this hardware profile" check box.
+
+8. Click OK, and then click Close.
+
+9. Close Control Panel, and then restart the computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Fighter Ace version
+2.0 for MSN Gaming Zone.
+
+Additional query words: 2.00 msgame fa msngz igz chipset crash hangs freeze lock
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

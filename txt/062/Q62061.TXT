@@ -1,0 +1,63 @@
+DOCUMENT:Q62061  30-JUL-2001  [lanman]
+TITLE   :Format of Import Network Drivers Disk in OS/2 LAN Man 2.0
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+To support the "Import network drivers" option of the OS/2 LAN Manager versions
+2.0, 2.1, 2.1a, and 2.2 Setup program, you must have a floppy disk with the
+following directory setup (it must be exact, or OS/2 LAN Manager will
+GP-fault):
+
+   A: ---
+        |  (or MSLANMAN.DOS)
+        |--MSLANMAN.OS2 --
+                         |
+                         |--DRIVERS --
+                                     |
+                                     |--NIF
+                                     |--<Your driver name>
+
+Within the \NIF subdirectory, there must be a file for every configuration you
+plan to offer the user. Within those files, the following format must be
+observed (use the OS/2 UB Drivers disk, UB8.NIF file, as an example):
+
+   Model = <Name to appear as user option>
+   Path = <Pathname, in relation to A:\MSLANMAN.OS2\DRIVERS directory
+           for location of drivers (for example, UB)>
+   DeviceDriver = <Name of DEVICE as it should appear in CONFIG.SYS>000
+   DeviceName = <Name of protocol (for example, netbeui$ or ubxns$)>
+   Type = <Driver type (for example, MONO - monolithic, NDIS - MAC
+           driver)>
+
+All of the files referenced by the .NIF files should be placed within the
+"<Your driver name>" subdirectory.
+
+This is the format that should be followed by all third-party driver vendors when
+constructing a disk to include with OS/2 LAN Manager version 2.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

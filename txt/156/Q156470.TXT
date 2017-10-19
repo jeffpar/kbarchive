@@ -1,0 +1,76 @@
+DOCUMENT:Q156470  08-NOV-2001  [homekids]
+TITLE   :Kids: Summary of Audio Used in Kids Titles
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a,1.1b,1.1c,2.0; :1.0
+OPER/SYS:
+KEYWORDS:kbsound
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Creative Writer for Windows, versions 1.1, 1.1a, 1.1b, 1.1c, 2.0 
+ - Microsoft Explorapedia series: World of People for Windows, version 1.0 
+ - Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+ - Microsoft Fine Artist for Windows, versions 1.1, 1.1a, 1.1b, 1.1c 
+ - Microsoft P.J.'s Reading Adventures: Microsoft Koi and the Kola Nuts, version 1.0 
+ - Microsoft P.J.'s Reading Adventures: Microsoft Paul Bunyan, version 1.0 
+ - Microsoft How the Leopard Got His Spots, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Rainforest for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores in the Age of Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a listing of the type of audio used in the existing Kids
+products:
+
+Products                 Type of Audio
+--------                 -------------
+
+Magic School Bus:
+ MSB Human Body          WAV, compressed WAV, MIDI
+ MSB Solar               WAV only
+ MSB Earth               WAV, compressed WAV, CD Audio
+ MSB Ocean               WAV, compressed WAV, CD Audio
+ MSB Dinosaurs           WAV, compressed WAV only
+ MSB Rainforest          WAV, compressed WAV only
+
+3D Movie Maker           WAV, compressed WAV, MIDI
+Creative Writer/ 
+Fine Artist 1.x          Compressed WAV
+Creative Writer 2        WAV (uses SoundMan), MIDI
+
+Explorapedia             WAV, compressed WAV
+
+P.J.'s Reading
+Adventures               WAV, compressed WAV
+
+Additional query words: msbrain rain forest rainforest kids mskids artist maggie max writer cw2 cw2.0 wave sound rabbit ears
+
+======================================================================
+Keywords          : kbsound 
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbZNotKeyword kbZNotKeyword2 kbKidsSearch kbCreativeWriter200 kbPJPaulBunyan kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110b kbCreativeWriter110c kbExplorapediaNature100 kbExplorapediaPeople100 kbFineArtist110 kbFineArtist110a kbFineArtist110b kbFineArtist110c kb3dMovieMaker kbPJLeopard kbPJKoi kbScholasticHuman kbScholasticOcean kbScholasticSolar kbScholasticDinosaurs kbScholasticEarth kbScholasticRainForest kbMSBSearch
+Version           : WINDOWS:1.0,1.1,1.1a,1.1b,1.1c,2.0; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

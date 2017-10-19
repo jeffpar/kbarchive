@@ -1,0 +1,62 @@
+DOCUMENT:Q75235  21-NOV-1999  [msdos]
+TITLE   :F-15 Strike Eagle II Requires LOADFIX to Run
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+F-15 Strike Eagle II by Microprose needs LOADFIX to run. To run the program,
+issue the following command:
+
+   LOADFIX F15.COM
+
+MORE INFORMATION
+================
+
+This game has an installation program that creates a batch file to execute the
+game. If the installation program is used, the batch file must be modified to
+include LOADFIX before the executable file, as shown above.
+
+F-15 Strike Eagle II is copy protected. The files can be installed on a hard
+disk, but whenever the game is started, the game requires the program disk to be
+in the drive. This disk acts as a "key" disk.
+
+This information came directly from Microprose Technical Support.
+
+
+The product included here is manufactured by Microprose, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 5.00 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

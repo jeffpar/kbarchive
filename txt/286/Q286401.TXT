@@ -1,0 +1,62 @@
+DOCUMENT:Q286401  27-JUL-2001  [iis]
+TITLE   :UNCAuthenticationPassThrough Support Limitation in IIS 5.0
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbArtTypeISS kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you consult a page that is physically located on a remote virtual
+directory, the UNCAuthenticationPassthrough metabase property allows Internet
+Information Server 5.0 to access remote files using client (browser)
+credentials. However, this option is not currently supported, although this
+feature is documented in the IIS Resource Guide.
+
+MORE INFORMATION
+================
+
+This feature has not been extensively tested by the IIS team with the current
+version of this product. This scenario also increases the number of server
+message block (SMB) sessions between the redirector on IIS servers and the
+remote SMB server, and requires more resources on the SMB servers.
+
+Even if you do not use the UNCAuthenticationPassthrough feature, Microsoft
+recommends that you replicate contents locally to the IIS server rather than
+access file resources on network servers. This approach enables your Web sites
+to scale up and down, and to avoid access to the centralized file server (which
+may become a performance bottleneck). The Site Server Content Replication
+Service may help you to set up your replication environment.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbArtTypeISS kbISS 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

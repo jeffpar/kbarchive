@@ -1,0 +1,61 @@
+DOCUMENT:Q113193  08-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Notice 158 Folder in Use... Not Compressed
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Microsoft Mail Administrator program (ADMIN.EXE) and you select
+Admin, Folder, Compress to compress folders, the following error message may
+appear:
+
+   Notice 158 : Folder in use, they were not compressed.
+   Run Foldcomp -s if this persists.
+
+CAUSE
+=====
+
+This problem is caused by a semaphore lock on a folder file.
+
+RESOLUTION
+==========
+
+The folder that remains on the screen when the Mail Administrator program
+displays the Notice 158 error is not necessarily the subdirectory in which the
+FOLDCOMP -S command needs to be performed.
+
+If the error persists after you run FOLDCOMP -S on the subdirectory displayed,
+run the FOLDCOMP -S command on all folder subdirectories.
+
+Additional query words: 3.00 3.00b 3.20 Admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

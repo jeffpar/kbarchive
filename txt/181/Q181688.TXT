@@ -1,0 +1,77 @@
+DOCUMENT:Q181688  19-OCT-2000  [mspress]
+TITLE   :Developing for MS Agent: Examples Folder Cannot Be Read
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Developing for Microsoft Agent ISBN 1-57231-720-5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to view the Examples folder or any of its subfolders, you may
+receive an error message similar to the following:
+
+   "D:\Examples\c is not accessible. The disk structure is corrupt and
+   non-readable."
+
+   - or -
+
+   "D:\Examples\c is not accessible. This folder was moved or removed."
+
+CAUSE
+=====
+
+The cause of this problem is not known at this time.
+
+
+RESOLUTION
+==========
+
+In the United States, you can call 1-800-MS-PRESS to obtain a replacement CD-ROM
+that will resolve this problem.
+
+Outside the United States, please return your book and disc to the point of
+purchase, or contact your local Microsoft Press distributor for further
+information. A list of Microsoft Press distributors worldwide is available at
+the following World Wide Web address:
+
+http://mspress.microsoft.com/worldwide/
+
+STATUS
+======
+
+Microsoft Press has confirmed this to be a problem in "Developing for Microsoft
+Agent."
+
+
+Additional query words: press ms_press 1-57231-720-5 DEVBook Agent
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,59 @@
+DOCUMENT:Q201858  14-MAR-1999  [sms]
+TITLE   :SMS: IP Address Cannot Be Used as SQL Server Name During Setup
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When installing Systems Management Server 2.0 on the same computer as Microsoft
+SQL Server, typing the IP address of that computer into the SQL Server Name
+field in Systems Management Server setup causes an error.
+
+CAUSE
+=====
+
+If you type an IP address instead of a server name in the SQL Server Name field,
+Systems Management Server setup considers the SQL Server to be remote, even if
+it is the local computer, and returns an error message indicating that the
+database devices must be created manually.
+
+
+WORKAROUND
+==========
+
+Make sure you use the server name (not the IP address) in the SQL Server name
+field during Systems Management Server setup.
+
+Additional query words: prodsms sms20 setup smssetup
+
+======================================================================
+Keywords          : kbsetup kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

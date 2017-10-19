@@ -1,0 +1,56 @@
+DOCUMENT:Q135103  17-DEC-2000  [win95x]
+TITLE   :Description of "*DisplayFallback=" Entry in System.ini File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 95 Setup adds the following line to the [boot] section of the System.ini
+file:
+
+   *DisplayFallback=0
+
+This line allows Windows 95 to use the standard VGA driver if the preferred video
+driver fails to load during the setup process.
+
+MORE INFORMATION
+================
+
+User.exe adds this line to the System.ini file just before loading a display
+driver. If the specified driver fails to load, the value of the line is changed
+to 1, the computer is restarted, and the standard VGA driver is loaded.
+
+Note that the DisplayFallback feature does not work properly with video drivers
+written for earlier versions of Windows.
+
+Additional query words: safe mode
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

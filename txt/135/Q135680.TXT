@@ -1,0 +1,77 @@
+DOCUMENT:Q135680  08-AUG-2001  [winnt]
+TITLE   :RAS Err Msg: Unable to Connect. No More Connections can be...
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Windows NT Remote Access Service (RAS) client to connect to a
+Windows NT 3.51 or 4.0 RAS server, the following error appears:
+
+   RAS: Unable to connect. No more connections can be made to this remote
+   computer because the computer has exceeded its client license limit.
+
+The following error appears in the event log on the RAS server:
+
+   Error: 20101
+   Source: Remote Access
+   Description: Unable to connect to com5. No more connections can be made to
+   this remote computer because the computer has exceeded its client license
+   limit.
+
+When you use a Windows 3.x RAS client, the connection drops without error
+notification. LAN clients can still access the server.
+
+CAUSE
+=====
+
+The licensing service is not releasing the licenses for RAS users after they
+hang up. Over time, depending on the number of licenses you have defined on the
+server, all of the licenses will be taken.
+
+RESOLUTION
+==========
+
+To correct this problem, change the licensing from "Per Server" to "Per Seat."
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 3.51. We are
+researching this problem and will post new information here as it becomes
+available.
+
+Additional query words: 3.51 prodnt license service dropped connection lost wfw wfwg win95
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

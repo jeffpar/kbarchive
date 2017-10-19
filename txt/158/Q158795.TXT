@@ -1,0 +1,78 @@
+DOCUMENT:Q158795  08-AUG-2001  [winnt]
+TITLE   :Win95 Client Cannot Rename Directory on Korean WinNT 3.5 Share
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:kbother kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+ - Microsoft Windows NT Workstation version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Windows 95 client tries to rename a shared directory on a computer
+running Korean Windows NT Server or Workstation version 3.5, the client may
+receive one of the following error messages:
+
+   Cannot rename 'directory_name'. Access is denied. Make sure that the disk is
+   not full or that the file is not read-only.
+
+-or-
+
+   Cannot rename 'directory_name'. The file with the same name already exists.
+   Specify different filename.
+
+-or-
+
+   Cannot rename 'directory_name'. The file cannot be found. Make sure you
+   specify the correct path and filename.
+
+The directories whose names start with one of the following Korean characters are
+known to have this problem:
+
+   Korean character            English keyboard equivalents
+   -------------------------   ----------------------------
+   jeon                        w-j-s
+   wee                         d-n-l
+
+WORKAROUND
+==========
+
+No workaround is available at this time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Korean Microsoft Windows NT
+version 3.5. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: rename hangul DBCS 3.50 KBKOREA
+
+======================================================================
+Keywords          : kbother kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,57 @@
+DOCUMENT:Q121317  17-DEC-2000  [crossnet]
+TITLE   :TCP/IP-32 Version 3.11 Does Not Include Terminal Font
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Beta versions of Microsoft TCP/IP-32 included a font named "Terminal" in the
+Telnet application. This font is not included in the released version 3.11 of
+the TCP/IP-32 Telnet application.
+
+
+RESOLUTION
+==========
+
+A new version of TELNET.EXE is available that includes the Terminal Font.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32. This problem has been
+corrected in an updated TCP/IP-32 version 3.11a. For information on the
+availability of TCP/IP-32 3.11a, see article Q122544 in the Microsoft Knowledge
+Base.
+
+Additional query words: wfw wfwg prodtcp32 1.00 3.11 3.11a tcpip
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

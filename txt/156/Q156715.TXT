@@ -1,0 +1,74 @@
+DOCUMENT:Q156715  12-FEB-2000  [exchange]
+TITLE   :XADM: Unable to Back Up Exchange on Remote Server from NT 4.0
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Ntbackup utility on a Windows NT 4.0 computer and you try to
+back up a remote Microsoft Exchange server, the backup fails with abnormal
+termination while backing up the files. It always fails on the second file while
+backing up either the directory or the Information Store (IS).
+
+CAUSE
+=====
+
+The end point mapper for the Remote Procedure Call (RPC) connection to the
+remote server was not validated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base:
+
+   " SERVPACK" (without the quotation marks)
+
+NOTE: This fix is included in SP5 for Windows NT 4.0.
+
+
+MORE INFORMATION
+================
+
+An error is generated in the Event Log Viewer under the Application log. the
+event ID is 8010 and the description is as follows:
+
+   The Microsoft Exchange services returned 102 from a call to BackupRead()
+   data.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,76 @@
+DOCUMENT:Q136693  24-AUG-1999  [foxpro]
+TITLE   :How To Build Distribution Disks for Different Op Systems
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 |3.00b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Setup Wizard to build distribution disks
+for different operating systems.
+
+MORE INFORMATION
+================
+
+The Setup Wizard can create a setup routine that includes all necessary system
+files for the operating system you specify. If you are using Visual FoxPro
+version 3.0 for Windows, you can distribute your application for:
+
+ - Win32s (Windows, version 3.1 and 3.11)
+
+ - Windows 95
+
+ - Windows NT
+
+If you are using Visual FoxPro 3.0 for Macintosh, you can distribute your
+application for:
+
+ - PowerMac applications
+
+ - Macintosh applications ( 68k )
+
+To create distribution disks for different operating systems:
+
+1. Start Visual FoxPro.
+
+2. On the Tools menu, click Wizards, and then click Setup.
+
+3. In the first screen of the wizard enter the path of the distribution tree,
+   and click Next.
+
+4. In the second screen of the wizard, specify which operating system you are
+   distributing your files to, and the Setup Wizard will include all needed
+   system files.
+
+Additional query words: vFoxMac VFoxWin DK
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300
+Version           : 3.00 |3.00b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

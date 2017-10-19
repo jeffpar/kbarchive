@@ -1,0 +1,98 @@
+DOCUMENT:Q318848  06-AUG-2002  [homegame]
+TITLE   :Flight Simulator 2002: How to Find the Handbooks
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2002 Professional Edition 
+ - Microsoft Flight Simulator 2002 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Flight Simulator box contains the pamphlet "Microsoft Flight Simulator 2002
+Before You Fly," which provides just enough information for you to install
+Flight Simulator and get started. This article tells you how to find the other
+Flight Simulator manuals.
+
+MORE INFORMATION
+================
+
+Flight Simulator 2002 includes the following handbooks in Adobe Acrobat PDF
+format:
+
+ - Quick Reference Guide
+
+ - Aircraft Handbook
+
+ - Air Traffic Control Handbook
+
+ - Floatplane Handbook
+
+ - Rod Machado's Ground School
+
+ - Getting More from Flight Simulator 2002
+
+To view the handbooks, follow these steps:
+
+1. Start Flight Simulator.
+
+2. Click Library/Help.
+
+3. Click a handbook, and then click Open Handbook.
+
+   NOTE: If you do not have Adobe Acrobat Reader installed, you receive an error
+   message that directs you to install the Acrobat Reader. For more information,
+   see the "References" section of this article.
+
+To open Flight Simulator 2002 manuals, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the following line, and then click OK:
+
+   <drive>:\Program Files\Microsoft Games\FS2002\HELP
+
+   where <drive> is the drive letter of the hard disk on which Flight
+   Simulator 2002 is installed.
+
+3. Click OK.
+
+REFERENCES
+==========
+
+For additional information about the handbooks, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+   Q318850 FS2002: Error Message Appears When You Try to Read a Library/Help
+   Handbook
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

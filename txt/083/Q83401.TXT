@@ -1,0 +1,157 @@
+DOCUMENT:Q83401  06-NOV-1999  [win95x]
+TITLE   :Using Windows 3.1 with Qualitas 386MAX or BlueMAX
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows version 3.1 works correctly with Qualitas 386MAX or BlueMAX memory
+managers version 5.1 and later.
+
+Behavior of Windows Setup
+-------------------------
+
+Windows Setup should detect 386MAX or BlueMAX if they are running when you
+install Windows, and Setup should take appropriate action. If you are running
+386MAX or BlueMAX versions 5.1, 5.11, or 5.12, Setup upgrades several files in
+your 386MAX or BlueMAX directory. These files are only used for supporting
+Windows. The files are 386MAX.VXD, BLUEMAX.VXD, and WINDOWS.LOD.
+
+The .VXD files are loaded automatically by 386MAX or BlueMAX when Windows starts
+in 386 enhanced mode; they are not needed if Windows is run in standard mode.
+
+Windows Setup automatically creates or modifies a 386MAX.PRO file in your memory
+manager directory, and makes sure this file instructs the memory manager to load
+the WINDOWS.LOD file when the memory manager is started. It does so by including
+the line
+
+      LOAD=<path>WINDOWS.LOD"
+
+[Bin the profile file. It also makes sure the profile is being used by ensuring
+that the line
+
+      PRO=<path>\386MAX.PRO
+
+is included on the line in CONFIG.SYS, which starts the memory manager.
+
+The following sections describe known problems that may occur.
+
+386MAX or BlueMAX Not Configured for Windows
+--------------------------------------------
+
+When you install 386MAX or BlueMAX, the installation program asks you whether or
+not you intend to use Windows. If you answer No, then the program disables all
+Windows support features by inserting the NOWIN3 keyword in the 386MAX.PRO file
+or on the command line in CONFIG.SYS.
+
+If you later install Windows, you must remove this keyword in order to let the
+two programs run at the same time.
+
+Software Loaded High
+--------------------
+
+Windows Setup may not be able to detect memory-resident software that is loaded
+into upper memory blocks using the Qualitas 386LOAD utility.
+
+Upgrading from to 386MAX or BlueMax 6.0 or Later
+------------------------------------------------
+
+If you have installed Windows for use with 386MAX or BlueMAX versions below 6.0,
+and later upgrade to version 6.0, your memory manager profile file (normally
+386MAX.PRO or BLUEMAX.PRO) still contains the line to load WINDOWS.LOD at boot
+time. This is no longer required and can be removed to free up a small amount of
+additional memory.
+
+Qualitas Installation May Install QCACHE Along with SMARTDRV.EXE
+----------------------------------------------------------------
+
+Older versions of the 386MAX or BlueMAX installation programs recommend
+installing the QCACHE disk cache even if SMARTDRV.EXE version 4.0 is already
+installed. You should never attempt to run two disk cache utilities at the same
+time. Disable QCACHE.
+
+Running ASQ Utility Under Windows
+---------------------------------
+
+The Qualitas ASQ utility (similar to Microsoft Diagnostics) is not compatible
+with Windows and should not be run while Windows is running. Doing so may cause
+your workstation to hang.
+
+Using the VGASWAP Option with 386 Enhanced Mode
+-----------------------------------------------
+
+Windows 386 enhanced mode should work correctly when 386MAX or BlueMAX VGASWAP
+options are enabled, provided that you do not set the UseRomFonts=1 switch in
+the [386enh] section of SYSTEM.INI. Using that setting in conjunction with
+VGASWAP may cause some full-screen messages to be drawn incorrectly and be
+difficult to read.
+
+Windows May Use B000-B7FF
+-------------------------
+
+By default, Windows 3.1 uses the UMA addresses B000-B7FF. Many loadhigh managers
+attempt to also use this area, causing a conflict with Windows. There are two
+solutions to this problem:
+
+1. Exclude the range B000-B7FF with the memory manager.
+
+   -or-
+
+2. Install MONOUMB2.386.
+
+   a. Copy and expand the MONOUMB2.38_ file that is on your Windows disk to your
+      Windows SYSTEM directory by typing the following at the MS-DOS command
+      prompt:
+
+   expand monoumb2.38_ c:\windows\system
+
+   b. Add the following setting to the [386Enh] section in the SYSTEM.INI file:
+
+   device=monoumb2.386
+
+386MAX Parameter EXT=0 Not Recommended
+--------------------------------------
+
+Qualitas 386MAX program has a parameter EXT=0 that may cause problems with
+Windows version 3.1. Qualitas does not recommend using this setting; Windows 3.1
+does not support it. Do NOT use this setting.
+
+If you use this setting, Windows 3.1 fails during Setup and may hang in standard
+mode when you exit.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

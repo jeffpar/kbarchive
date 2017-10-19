@@ -1,0 +1,77 @@
+DOCUMENT:Q149591  21-MAY-2001  [powerpt]
+TITLE   :PPT7: PowerPoint 7.0a Stops Responding When Switching Views
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0a; Win95:7.0a
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you repeatedly switch between Outline view and Slide view, PowerPoint 7.0a
+may stop responding. When this happens, you must force PowerPoint to quit, and
+all unsaved work will be lost.
+
+CAUSE
+=====
+
+This is caused by a screen redraw problem in PowerPoint 95a that causes
+PowerPoint not to release GDI resources. If you exit and restart PowerPoint
+before it stops responding, all the GDI resources are released.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft
+PowerPoint for Windows 95, version 7.0b.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain Office for Windows 95 version 7.0b.
+
+If you have PowerPoint for Windows 95, version 7.0a, you can obtain a patch to
+correct this problem. For information about how to obtain this patch, please see
+the following article(s) in the Microsoft Knowledge Base:
+
+   Q136603 PPT7: Patch to Correct PowerPoint 7.0a Screen Redraw Problem
+
+MORE INFORMATION
+================
+
+The only way to obtain PowerPoint 95a is as part of Microsoft Office for Windows
+95, version 7.0a. Only a few copies of this product were released.
+
+Additional query words: 7.00 crash hangs hanging lost not responding dies dead stop break ppt powerpt powerpnt pp7 ppt7 pp95 ppt95
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbOfficeSearch kbPowerPtSearch kbZNotKeyword2 kbOffice95Search kbZNotKeyword3 kbPowerPt700Search kbPowerPt700a
+Version           : WINDOWS:7.0a; Win95:7.0a
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

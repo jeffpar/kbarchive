@@ -1,0 +1,88 @@
+DOCUMENT:Q157762  11-DEC-1999  [foxpro]
+TITLE   :FIX: Invalid Page Fault After Summing Currency Field of Cursor
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After using the CALCULATE command to SUM the contents of a currency field in a
+cursor file, and storing that sum in a variable, the resulting variable may
+cause system errors in subsequent operations. For example, one error is as
+follows:
+
+   Vfp.exe caused an Invalid Page Fault
+
+WORKAROUND
+==========
+
+Do one of the following:
+
+1. Use the SET TALK ON command.
+
+-or-
+
+2. Change the field type to something other than currency.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sequence of commands result in the error described above:
+
+      SET TALK OFF
+      CREATE CURSOR test (nAmount Y)
+      CALCULATE ALL SUM(nAmount) TO nTotal
+      ? nTotal # 0
+
+Make one of the changes below to work around the problem:
+
+1. Change the line "SET TALK OFF" to "SET TALK ON."
+
+-or-
+
+2. Change the field type in the CREATE CURSOR command to something other than
+   currency (Y).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

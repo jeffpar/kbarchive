@@ -1,0 +1,76 @@
+DOCUMENT:Q183548  27-JUL-2001  [sna]
+TITLE   :Update to Diag. Capture Remote Environment Not Recognized
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Operation of COMTI's Diaganostic Capture mechanism requires the cooperation of
+two Remote Environments (RE). One is the "real" RE, which is handling traffic
+to-and-from the main frame. The other is the "capture" RE which is recording
+this traffic in a recording file.
+
+Changes made to the "real" RE while capture is in progress are ignored.
+
+WORKAROUND
+==========
+
+Start the Microsoft Transaction Server Explorer and perform a shut down of
+server processes. Subsequently, the changes to the "real" RE will be in effect.
+
+1. Start Microsoft Management Console with the Transaction Server Explorer
+   snap-in.
+
+2. In the left pane, click on 'Microsoft Transaction Server'.
+
+3. In the right pane, double-click on the 'Computers' folder.
+
+4. In the right pane, right-click on the 'My Computer' icon.
+
+5. Select 'Shut Down Server Processes'.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in COM Transaction Integrator for
+CICS and IMS version 1.0. This problem was corrected in the latest SNA Server
+version 4.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   " S E R V P A C K " (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbCOMTISearch kbCOMTI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

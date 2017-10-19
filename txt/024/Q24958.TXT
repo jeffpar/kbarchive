@@ -1,0 +1,64 @@
+DOCUMENT:Q24958  06-MAY-2001  [masm]
+TITLE   :Hexadecimal Numbers Must Begin With a Digit Between 0 and 9
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.0,5.1,6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With the Microsoft Macro Assembler, a hexadecimal number must begin with a digit
+between zero and nine. This is so that the assembler can distinguish between
+something that should be a number and something that should be a label.
+
+MORE INFORMATION
+================
+
+Assembling the following code will result in the following errors, since the
+assembler will assume that ABh is a label
+
+   MASM 5.0, 5.1: error A2009: Symbol not defined: ABh
+   MASM 6.0: error A2006: undefined symbol: ABh
+
+Sample Code
+-----------
+
+   ;Assemble options needed: none
+
+      .model small
+      .code
+
+         mov ax, ABh
+
+       end
+
+Additional query words: kbinf 5.00 5.10 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM500 kbMASM600a kbMASM600b
+Version           : :5.0,5.1,6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q197762  20-MAY-2002  [winnt]
+TITLE   :Windows NT ResKit WebAdmin Tool Cannot Change Password from BDC
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Server 4.0 Resource Kit, Supplement Three 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows NT 4.0 Resource Kit WebAdmin tool fails to change user passwords
+when installed on a backup domain controller (BDC).
+
+CAUSE
+=====
+
+The WebAdmin tool does not properly detect the primary domain controller (PDC)
+to forward password change requests.
+
+RESOLUTION
+==========
+
+The WebAdmin tool was updated to properly detect the primary domain controller
+for a domain and forward the password change requests.
+
+A supported fix that corrects this problem is now available from Microsoft. If
+you are not severely affected by this specific problem, Microsoft recommends
+that you wait for the next Windows NT Resource Kit Update.
+
+To resolve this problem immediately, download the fix as described below. For a
+complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date      Time                 Size    File Name     Platform
+   -------------------------------------------------------------
+   11/17/98  12:29p               224,016 Ntadmin.dll   (x86)
+
+This hotfix has been posted to the following Internet location as Webad20.exe:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/reskit/nt40/webadmin/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Resource kit version
+4.0.
+
+Additional query words: 4.00 rkit
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : :
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

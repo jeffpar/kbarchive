@@ -1,0 +1,71 @@
+DOCUMENT:Q194816  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: Description of the Auto-Rudder Feature
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui kbdocerr kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the functionality of the Auto-Rudder feature in Combat
+Flight Simulator and in Combat Flight Simulator 2.
+
+Because the functionality of the Auto-Rudder feature in Combat Flight Simulator
+was improved after the Combat Flight Simulator Pilot's Manual went to press, the
+description of the Auto-Rudder feature on pages 30 and 33-34 in the Combat
+Flight Simulator Pilot's Manual is no longer accurate.
+
+MORE INFORMATION
+================
+
+The Auto-Rudder feature in Combat Flight Simulator and in Combat Flight
+Simulator 2 is designed to make your airplane easier to fly if your joystick
+does not have a rudder axis or rudder pedals. When the Auto-Rudder feature is
+enabled, it moves the rudder automatically when you move the ailerons.
+
+Combat Flight Simulator and Combat Flight Simulator 2 automatically detect if
+your joystick has a rudder axis or rudder pedals. If your joystick has a rudder
+axis or rudder pedals, the game disables the Auto-Rudder feature. If your
+joystick does not have a rudder axis or rudder pedals, the game enables the
+Auto-Rudder feature.
+
+Some air combat maneuvers may be easier to execute if you disable the Auto-Rudder
+feature. To enable or disable the Auto-Rudder feature:
+
+1. On the Combat Flight Simulator startup screen, click Settings.
+
+2. Under Controls, click to select or clear the Enable Auto-Rudder check box,
+   and then click OK.
+
+Additional query words: 1.00 msgame combatfs cfs cfs2 cfsii kbfaq
+
+======================================================================
+Keywords          : kbui kbdocerr kbimu msgame kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

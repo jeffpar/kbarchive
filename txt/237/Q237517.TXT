@@ -1,0 +1,81 @@
+DOCUMENT:Q237517  25-JUN-2000  [homemm]
+TITLE   :Err Msg: Enc2000 Caused a Stack Fault in Module Kernel32.dll
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you restart your computer in MS-DOS mode while you are running Microsoft
+Encarta Encyclopedia 2000, you may receive the following error message:
+
+   The program has performed an illegal operation and will be shut down.
+
+   If the problem persists, contact the program vendor.
+
+If you click Details, you receive the following error message:
+
+   Enc2000 caused a stack fault in module Kernel32.dll.
+
+RESOLUTION
+==========
+
+To resolve this issue, restart the computer. If you continue to receive the
+error message, remove and reinstall Encarta Encyclopedia 2000:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. In the the list of installed programs, click Microsoft Encarta Encyclopedia
+   2000, and then click Add/Remove.
+
+4. When you are prompted to confirm the removal of Encarta Encyclopedia 2000,
+   click Yes.
+
+5. Reinstall Encarta Encyclopedia.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+MORE INFORMATION
+================
+
+This issue does not occur on Microsoft Windows NT-based computers.
+
+Additional query words: multi multi-media media mm ee2k
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

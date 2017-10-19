@@ -1,0 +1,89 @@
+DOCUMENT:Q172379  07-SEP-2001  [word97]
+TITLE   :WD97: Unexpected Results When Printing in Master Document View
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprint kbdta winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print a master document from master document view, Microsoft Word will
+not print as expected, for example:
+
+ - Word will not print objects set as Float over text that have been inserted
+   into subdocuments.
+
+   -or-
+
+ - Word may not print the entire document.
+
+CAUSE
+=====
+
+Master document view is not designed to print your entire document. It is
+designed for you to control the amount of detail you want to print.
+
+WORKAROUND
+==========
+
+Switch to either normal or page layout view, and then print the document.
+
+MORE INFORMATION
+================
+
+Master document view helps you organize and maintain a long document, such as a
+book or a multi-part report, that is divided into several smaller documents
+called "subdocuments." In master document view, you can work in a single
+document window and still see the overall organization of the subdocuments. This
+view is not designed to print your entire document. Master document view is
+designed for you to control the amount of detail you want to print. For example,
+when you want to print just an outline, collapse the information to show only
+what you want to print, and then when you print from master document view, it
+will only print what is shown on the screen.
+
+NOTE: Word will not print objects that have the Float over text option applied.
+
+REFERENCES
+==========
+
+For more information about printing master documents, click Contents And Index
+on the Help menu, click the Index tab in Word Help, type the following text
+
+   master documents, printing
+
+and then double-click the selected text to go to the "Print a master document"
+topic. If you are unable to find the information you need, ask the Office
+Assistant.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbprint kbdta winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

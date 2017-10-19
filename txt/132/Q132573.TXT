@@ -1,0 +1,69 @@
+DOCUMENT:Q132573  17-DEC-2000  [win95x]
+TITLE   :Fleet Defender F14 Does Not Run When MIDI Is Already in Use
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microprose Fleet Defender F14 Simulation in Windows
+95, you may receive the following error message if another program is already
+using MIDI:
+
+   This program has performed an illegal operation and will be terminated. Quit
+   all programs, and then restart your computer.
+
+CAUSE
+=====
+
+When it starts, Fleet Defender F14 Simulation attempts to acquire the system's
+internal MIDI hardware that is virtualized in Windows 95. The above error
+message is caused by a conflict between the hardware detection routine initiated
+by Fleet Defender F14 Simulation and the virtualization algorithm used by
+Windows 95.
+
+
+RESOLUTION
+==========
+
+Before you start Fleet Defender F14 Simulation, make sure that no other programs
+are using MIDI.
+
+MORE INFORMATION
+================
+
+Fleet Defender F14 Simulation is manufactured by Microprose, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

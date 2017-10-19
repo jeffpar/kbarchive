@@ -1,0 +1,63 @@
+DOCUMENT:Q166296  05-MAY-1999  [exchange]
+TITLE   :XCON: MTA Stops Responding; Access Violation
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbtshoot kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Server message transfer agent (MTA) stops responding and
+the following is reported in the Dr. Watson log:
+
+   Application exception occurred:
+      App: emsmta.DBG (pid=275)
+      When: 3/11/1997 @ 9:16:16.178
+      Exception number: c0000005 (access violation)
+
+CAUSE
+=====
+
+This is a client/server issue; the wrong data is being picked up from the X.400
+API (XAPI) call. This causes the MTA to stop responding.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+This problem does not occur in Microsoft Exchange Server version 5.0.
+
+
+Additional query words: hang crash access violation 275
+======================================================================
+Keywords          : kbtshoot kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

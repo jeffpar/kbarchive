@@ -1,0 +1,80 @@
+DOCUMENT:Q136550  17-DEC-2000  [win95x]
+TITLE   :Using the Xerox 4700II Printer with Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ - When you try to print in landscape mode on the Xerox 4700II color printer,
+   you receive portrait output.
+
+   -or-
+
+ - You receive the following error message when you print to the Xerox 4700II
+   color printer:
+
+   ERROR: undefined
+   OFFENDING COMMAND:
+   STACK:
+
+CAUSE
+=====
+
+Windows 95 does not support the Xerox 4700II color printer.
+
+The error message stated above occurs if you use the QMS 100 model 30 printer
+driver with this Xerox printer.
+
+RESOLUTION
+==========
+
+Xerox provides drivers for this printer for previous versions of Windows, but
+these drivers must be updated to be compatible with Windows 95. You may want to
+contact Xerox to inquire about the possibility of obtaining updated drivers.
+
+MORE INFORMATION
+================
+
+The following table lists the Xerox 4700II color printer drivers:
+
+   Language     Driver Name    Size      Date      Version
+   -------------------------------------------------------
+   PCL-5        4700pcl5.drv   185,867   9/29/93   1.1.0
+   PostScript   X4700ii.drv    246,032   6/8/94    3.56.5
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: wwt
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

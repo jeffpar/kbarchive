@@ -1,0 +1,62 @@
+DOCUMENT:Q133468  08-NOV-2001  [homemm]
+TITLE   :Julia Child: Find Dialog Box Remains in Foreground
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Index option Find feature to search on Topics in Julia Child,
+the Find dialog box remains in the foreground on all of the Topics except for
+Tips, Ingredients and Cookware. But when you close a Tip, Ingredient, or
+Cookware screen, the Find dialog box reappears.
+
+The find dialog box does not reappear with Chefs, Recipes, Lessons or Julia's
+Kitchen.
+
+RESOLUTION
+==========
+
+To return to the Find feature for Chefs, Recipes, Lessons or Julia's Kitchen,
+you must close the Find dialog box, then press and hold down the CTRL key while
+you press the F key.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Julia Child: Home Cooking with
+the Master Chef's version 1.0 for Windows. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbJuliaChild
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

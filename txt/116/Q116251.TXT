@@ -1,0 +1,66 @@
+DOCUMENT:Q116251  17-DEC-2000  [win95x]
+TITLE   :PC2X 8-Bit Bernoulli Controller May Cause System to Hang
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your computer stops responding (hangs) while you are using an Iomega PC2X 8-Bit
+Bernoulli Controller card.
+
+CAUSE
+=====
+
+Iomega Technical Support has confirmed that the Iomega PC2X 8-Bit Bernoulli
+Controller card may not function properly on 486/33 megahertz (MHz) and faster
+computers.
+
+For setup purposes, you may need to run Setup with the ignore hardware detection
+parameter, /I, (use the command SETUP /I).
+
+WORKAROUND
+==========
+
+To work around this problem, use a slower computer or a different Bernoulli
+controller card.
+
+
+MORE INFORMATION
+================
+
+The PC2X 8-Bit Bernoulli Controller card is manufactured by Iomega Corporation,
+a vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+For more information about the Iomega PC2X Bernoulli controller card, contact
+Iomega Technical Support.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

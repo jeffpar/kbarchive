@@ -1,0 +1,53 @@
+DOCUMENT:Q122434  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Does Not Have Drivers for RGDI, DGIS, TIGA Adapters
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+Windows 95 does not provide specific drivers for the following display
+adapters:
+
+ - RGDI (Renaissance Graphics Device Interface)
+
+ - DGIS (Direct Graphics Interface Standard)
+
+ - TIGA
+
+When Setup is detecting the installed hardware, it detects these cards as
+VGA. If you were using a video driver for one of these cards in a previous
+version of Windows and you are performing an upgrade, Setup keeps the video
+driver you were using. If you are performing a new installation, Setup
+installs the standard VGA driver.
+
+Windows 95 can use the standard VGA driver or the Windows 3.1 drivers for
+these display adapters.
+
+Additional query words: windrvr
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

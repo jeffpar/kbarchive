@@ -1,0 +1,66 @@
+DOCUMENT:Q174032  22-JUN-2001  [exchange]
+TITLE   :XWEB: Recurrence Tab not Available for Non-Recurring Appointment
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you connect to a Microsoft Exchange Server using Outlook Web Access (OWA)
+and open a saved, non-recurring appointment, the Recurrence tab is not available
+and it not possible to change the frequency/recurrence of the appointment.
+
+CAUSE
+=====
+
+This is by design. Once a non-recurring appointment is saved, the recurrence
+option cannot be changed.
+
+WORKAROUND
+==========
+
+Delete the non-recurring appointment and create a new recurring appointment.
+Select the Recurrence pattern desired before saving the appointment to the
+calendar.
+
+MORE INFORMATION
+================
+
+It is possible to change the recurrence pattern of a recurring appointment. This
+can be done by opening the recurring appointment and selecting the Edit Series
+button at the top of the appointment window.
+
+Additional query words: XCLN
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

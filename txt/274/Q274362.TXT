@@ -1,0 +1,68 @@
+DOCUMENT:Q274362  15-JUN-2001  [msnetwork]
+TITLE   :MSN Explorer Performance Problem With Cheyenne AntiVirus For Win
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+ - the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The user is using Cheyenne AntiVirus software for Windows 9x on Windows Me. When
+installing MSN Explorer for the first time the user clicks a left navigation bar
+item. After one click MSN Explorer appears to stop responding. After 2 to 10
+minutes the page finally loads.
+
+CAUSE
+=====
+
+The Cheyenne AntiVirus for Windows 9x software running on Windows Me does not
+recognize a protocol introduced in MSN Explorer a secure protocol.
+
+RESOLUTION
+==========
+
+Upgrade to a newer version of InoculateIT such as InoculateIT Personal Edition.
+Go to:
+http://antivirus.cai.com/
+
+   Note: This link is not to a Microsoft Web site and the software available
+   from this site is manufactured by vendors independent of Microsoft. We make
+   no warranty, implied or otherwise, regarding these products' performance or
+   reliability
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu, Cheyenne AntiVirus, MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWinME kbOSWinSearch kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

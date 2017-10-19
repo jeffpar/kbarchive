@@ -1,0 +1,65 @@
+DOCUMENT:Q227204  15-APR-1999  [homegame]
+TITLE   :Baseball 2000: Graphics Are Distorted When You Switch to Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you switch to another program running on your computer while you are playing
+Microsoft Baseball 2000, the game graphics may not be displayed correctly when
+you switch back to Baseball 2000.
+
+CAUSE
+=====
+
+The behavior can occur if you use ALT+TAB to switch between Baseball 2000 and
+the other program.
+
+RESOLUTION
+==========
+
+To resolve this issue, press CTRL+F5 to refresh the game graphics in Baseball
+2000.
+
+To prevent this issue from occurring, save your game and quit Baseball 2000
+before you switch to the other program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Baseball 2000, version
+1.0.
+
+Additional query words: 1.00 bball2000 bball2k corrupt damaged
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

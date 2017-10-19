@@ -1,0 +1,77 @@
+DOCUMENT:Q169122  25-FEB-2002  [winnt]
+TITLE   :Non-rfc Compliant DHCP Server Does Not Send DHCPNAK to Client
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Windows NT DHCP client is moved to another subnet (without issuing the
+ipconfig/release command before moving), the client will request its previous IP
+address. Usually this IP address is not valid for usage on the new subnet.
+
+When a DHCP server detects that the client requests an IP address that does not
+fit for the current subnet, the DHCP server must send a DHCPNAK to the client
+(according to RFC1541).
+
+Some non-rfc compliant DHCP servers do not send this DHCPNAK. Because of this,
+the client does not attempt to lease a new IP address on the new subnet and
+tries to use its old IP address (see the frame information later in this
+article).
+
+This problem has been experienced only when using a third-party DHCP server. The
+Microsoft Windows NT DHCP server does not experience this behavior.
+
+MORE INFORMATION
+================
+
+Per RFC1541, a DHCP server sends a DHCPNAK to a client that requests an IP
+address but is not located on the current subnet. According to RFC1541 (page
+28):
+
+   In particular, if the previously allocated network address in the ciaddr
+   field from the client does not match the network address recorded by the
+   server for that client, the server sends a DHCPNAK to the client.
+
+After receiving a DHCPNAK, the DHCP client will restart the DHCP lease process by
+sending DHCPDISCOVER.
+
+
+RESOLUTION
+==========
+
+Contact the non-rfc compliant DHCP server vendor for assistance or use the
+Microsoft Windows NT DHCP server.
+
+Additional query words: SRD970304000093
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

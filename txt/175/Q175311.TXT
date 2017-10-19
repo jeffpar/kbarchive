@@ -1,0 +1,86 @@
+DOCUMENT:Q175311  07-SEP-2001  [homemm]
+TITLE   :Bookshelf 98: Copyright Information Not Printed with Articles
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbmm kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print an article from Bookshelf 98, the copyright information that is
+usually printed after the end of the article may not be printed or may be
+printed incompletely.
+
+CAUSE
+=====
+
+This problem occurs when the final page of the printout contains only a single
+line of article text.
+
+RESOLUTION
+==========
+
+To work around this problem, change the size of the article text before you
+print the article. To do so, use the following steps:
+
+1. On the Tools menu, click Options.
+
+2. Under Text Size, click a different size than the text size currently
+   selected, and then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf 98. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem may occur when you print the Encyclopedia articles titled "Leonardo
+da Vinci" and "Skiing" to the following printers:
+
+ - Epson Stylus Color ESC/P 2
+
+ - HP DeskJet 500
+
+ - HP DeskJet 510
+
+ - HP DeskJet 540
+
+ - HP DeskJet 550C
+
+ - HP DeskJet 560C
+
+
+Additional query words: multi media multimedia multi-media mmtitles hp
+
+======================================================================
+Keywords          : kbmm kbprint 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

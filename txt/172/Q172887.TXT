@@ -1,0 +1,64 @@
+DOCUMENT:Q172887  06-MAY-2001  [visualc]
+TITLE   :FIX: Debugger Cannot Safely Change Current Location
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbDebug kbide kbVC500bug kbVC600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Integrated Debugger, included with:
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0, used with:
+       - the hardware: DEC Alpha 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The debugger cannot safely change the current location of a stopped program (for
+example, using the Set-Next-Statement function) from inside a catch handler to
+the body of the program.
+
+CAUSE
+=====
+
+This problem is related to the difference between Intel and Alpha exception
+handling. The catch handler on the Alpha architecture is effectively a separate
+function that allows clean handling of exceptions that are raised within the
+exception handler. Any change of the current location from the handler to the
+body of the program would bypass the handler epilogue and result in incorrect
+values in the registers, and an incorrect stack frame.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+Additional query words: IP instruction
+
+======================================================================
+Keywords          : kbDebug kbide kbVC500bug kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q88577  17-NOV-1999  [win95x]
+TITLE   :Windows 3.0 Setup Fails on Bondwell Laptops
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Setup program included with Microsoft Windows version 3.0 fails on the
+following Bondwell laptop models:
+
+ - Bondwell 3219 Plus
+
+ - Bondwell B310
+
+MORE INFORMATION
+================
+
+Bondwell 3210 Plus
+------------------
+
+If the 3210 Plus is not set up for CGA, Setup stops when disk 2 is inserted. The
+detection part of Setup incorrectly thinks the screen is VGA.
+
+Bondwell B310
+-------------
+
+Windows Setup may detect an incorrect keyboard on a Bondwell B310 laptop.
+According to Bondwell, the correct choice should be 101- or 102-key keyboard. If
+another keyboard choice is selected, then Setup may fail or some standard
+keyboard operations may not work properly. The Bondwell B310 Laptop has an
+84-key keyboard.
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3rdparty 3.0 3.00 3.00a 3.0a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

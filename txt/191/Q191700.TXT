@@ -1,0 +1,82 @@
+DOCUMENT:Q191700  09-AUG-1999  [foxpro]
+TITLE   :PRB: Cannot Change Visual FoxPro Installation Directory
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Visual FoxPro 6.0 on a computer that currently has Visual
+FoxPro version 5.0a installed, you are presented with an option to uninstall the
+existing Visual Studio '97 products with the updated 6.0 versions. Choosing
+Visual FoxPro during this step of the Install Wizard does not allow you to
+change the location for Visual FoxPro 6.0.
+
+CAUSE
+=====
+
+You chose to replace your existing Visual FoxPro 5.0a installation with Visual
+FoxPro 6.0. The setup program installs Visual FoxPro 6.0 in your old Visual
+FoxPro 5.0a directory.
+
+RESOLUTION
+==========
+
+Do not select Visual FoxPro in the dialog box when asked which Visual Studio
+products to uninstall.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Visual FoxPro 5.0a
+
+2. Start the Visual FoxPro 6.0 installation.
+
+3. When you see the prompt for which products you wish to uninstall, choose
+   Visual FoxPro.
+
+4. Try and change the location for the Visual FoxPro 6.0 installation.
+
+You cannot change the directory because Visual FoxPro 6.0 will be installed in
+your existing Visual FoxPro 5.0a directory.
+
+Additional query words: kbVFp600 kbSetup
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

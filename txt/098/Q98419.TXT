@@ -1,0 +1,50 @@
+DOCUMENT:Q98419  30-JUL-2001  [lanman]
+TITLE   :Parity Errors Often Not Due to "Usual" Causes
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Parity errors (for example, OS/2 = Trap 0002, Windows NT = F002) are often
+blamed on bad machine memory when they actually are caused by other factors.
+
+Many machines showing parity errors don't have bad (as in damaged) memory chips
+in them; instead, they have memory that is being overspeeded, and if you replace
+the suspected chips with chips of the same memory type, the problem is not
+solved. Overspeeded memory becomes unreliable if it is not rated to handle the
+CPU speed that the CPU and system clock are trying to run.
+
+Parity errors also can result from a number of motherboard designs with bus
+controllers that are defective as shipped from the factory. This problem is
+generally limited to the "cheap off-brand clone" motherboards. That's one reason
+they are so cheap: they don't work properly.
+
+Loose-fitting SIMMS can also cause parity errors.
+
+Before setting off on complicated and unnecessary substitutions or repairs, make
+sure you find the true cause of a parity error.
+
+Additional query words: 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

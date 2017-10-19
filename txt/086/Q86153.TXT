@@ -1,0 +1,66 @@
+DOCUMENT:Q86153  11-NOV-1999  [pcmail]
+TITLE   :PROFS: Why 3270 File Transfer Should Be Tested First
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The local-area network (LAN) side of the Microsoft Mail gateway (HostDisp) uses
+3270 file transfer programs to exchange mail with the VM side (Host Access).
+Therefore, this must be tested and working before running the gateway programs.
+
+On the host, the IBM file transfer program (IND$FILE) will work with the 3270
+emulator's SEND and RECEIVE programs to upload and download files. To test this
+program, do the following:
+
+1. Using the Gateway PC, log on to the gateway VM ID. After you see the
+   PROFS:IDLE or PROFS:READY prompt, type HX to return to CMS. Hot key back to
+   MS-DOS and type:
+
+   "SEND C:\AUTOEXEC.BAT AUTOEXEC BAT F (ASCII CRLF RECFM V LRECL 256" (without
+   the quotation marks)
+
+   This command will transfer the AUTOEXEC.BAT file from the MS Mail Gateway PC
+   to the gateway VM ID's 193 F disk.
+
+2. Download the same file by using the following command:
+
+   "RECEIVE AUTOEXEC BAT F C:\AUTOEXEC.BAT (ASCII CRLF" (without the quotation
+   marks)
+
+The gateway does not function properly until these two tests are successfully
+executed.
+
+
+Additional query words: 3.20 pcmail profsvm SEND RECEIVE IND$FILE
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

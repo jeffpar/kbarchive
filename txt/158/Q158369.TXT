@@ -1,0 +1,63 @@
+DOCUMENT:Q158369  07-MAY-2002  [homegame]
+TITLE   :How to Change the Startup Situation in Flight Simulator 95
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Startup Situation in Flight Simulator for Windows 95 is Meigs Field.
+
+To change the Startup Situation, do the following:
+
+1. On the Options menu, click Preferences.
+
+2. On the General tab, click the Select Flight button.
+
+The flight you select from this box becomes the default and Startup Situation.
+
+MORE INFORMATION
+================
+
+The Select Flight option is available from the Flights menu and by clicking
+Preferences from the Options menu, and clicking Display. Clicking Select Flight
+from Flights menu does not reset the default Startup Situation. It must be
+selected using the steps described in the Resolution section to affect the
+Startup Situation.
+
+Flights are not limited to what comes with Flight Simulator for Windows 95. You
+can create your own flights by clicking Create A Flight from the Flights menu.
+Saving this flight adds it to the Select A Flight dialog box.
+
+Additional query words: flightsim fltsim95 situation startup fs95 fs6
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

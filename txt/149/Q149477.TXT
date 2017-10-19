@@ -1,0 +1,108 @@
+DOCUMENT:Q149477  30-OCT-1999  [fortran]
+TITLE   :BUG: Run-Time Error F6511 - Variable Name Not Found
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbcode kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When reading a file using namelist directed input, you may get the following
+error:
+
+   run-time error F6511
+   - variable name not found
+
+CAUSE
+=====
+
+The file wasn't opened with the DELIM="{QUOTE|APOSTROPHE}" option in the Fortran
+OPEN statement used to open the file for writing.
+
+Microsoft Fortran PowerStation 4.0 requires the DELIM="{QUOTE|APOSTROPHE}" option
+if you are opening a file that is to be written with delimiters. However, when
+opening and using the file for a namelist directed I/O operation, the DELIM=
+option is not needed. Previous versions of Fortran did not include this option
+and character variables were always written with delimiting apostrophe's.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem and Workaround
+------------------------------------------------
+
+   ! Compile options needed: none
+
+         PROGRAM ChangeInBehavior
+
+         CHARACTER*20 CHA
+         INTEGER IA
+         REAL RA
+
+         DATA CHA /'Character A'/ 
+         DATA IA /1000/ 
+         DATA RA /100.0/ 
+
+         NAMELIST /TheNameList/ CHA,IA,RA
+
+   !     Uncomment the following line to get proper behavior
+   !      OPEN(UNIT=1,FILE='TEMP.DAT',STATUS='UNKNOWN',DELIM='APOSTROPHE')
+
+   !     Comment out the following line to get proper behavior
+         OPEN( UNIT=1, FILE='TEMP.DAT', STATUS='UNKNOWN')
+
+         WRITE ( 1, TheNameList )
+         CLOSE( 1 )
+
+         OPEN( UNIT=1, FILE='TEMP.DAT', STATUS='UNKNOWN' )
+
+         READ( 1, TheNameList )
+         CLOSE ( 1 )
+
+         WRITE ( *, TheNameList )
+
+         END
+
+REFERENCES
+==========
+
+Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0, FPS
+4.0 Books Online.
+
+Additional query words: 4.00 kbinf
+
+======================================================================
+Keywords          : kbcode kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

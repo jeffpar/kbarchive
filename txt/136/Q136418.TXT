@@ -1,0 +1,92 @@
+DOCUMENT:Q136418  21-DEC-2001  [win3x]
+TITLE   :Updated Vserver.386 File for Windows for Workgroups
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbfile 3rdpartynet msnets kbgraphxlinkcritical kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you share a folder on a Windows for Workgroups 3.11-based computer, users
+on UNIX-based computers running the SMBCLIENT Samba network client who connect
+to the shared folder may have access to the entire drive on which the shared
+folder is located.
+
+CAUSE
+=====
+
+This problem can occur when all of the following conditions exist:
+
+ - You use the Vserver.386 file included with Windows for Workgroups 3.11.
+
+ - You use the TCP/IP network protocol.
+
+ - There are UNIX-based computers on the network.
+
+
+RESOLUTION
+==========
+
+To resolve this problem in Windows for Workgroups 3.11, follow these steps:
+
+1. Download the Wfwvsrvr.exe file from one of the online services listed below
+   to an empty directory.
+
+2. In File Manager, double-click the Wfwvsrvr.exe file to expand the Vserver.386
+   file it contains.
+
+3. Quit Windows for Workgroups.
+
+4. Copy the new Vserver.386 file to the Windows\System directory, overwriting
+   the existing version of the file.
+
+5. Restart your computer.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   DownloadDownload Wfwvsrvr.exe now
+   (http://download.microsoft.com/download/wfw311/NetFile/1/WFW/EN-US/wfwvsrvr.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: 3.11 msnWFWmisc
+
+======================================================================
+Keywords          : kbfile 3rdpartynet msnets kbgraphxlinkcritical kb3rdPartyNetClient 
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

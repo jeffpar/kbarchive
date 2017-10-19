@@ -1,0 +1,58 @@
+DOCUMENT:Q70005  10-JUN-1999  [win16sdk]
+TITLE   :DOC: LB_GETCURSEL Function Documentation Incorrect
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbCtrl kbListBox kbSDKPlatform
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for the LB_GETCURSEL function on page 6-36 of the "Microsoft
+Windows Software Development Kit Reference Volume 1" for versions 3.0, and on
+page 68 of the "Microsoft Windows Software Development Kit Programmer's
+Reference, Volume 3: Messages, Structures, and Macros" for version 3.1 is
+incorrect. Listed below is the corrected information for the "Return Value"
+section of the document:
+
+Return Value   The return value is the index of the currently
+                selected item. It is LB_ERR if no item is selected.
+
+Add the following information as a comment:
+
+Comment        Do not send this message to a multiple selection
+               list box.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbCtrl kbListBox kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q111592  07-NOV-1999  [win16sdk]
+TITLE   :BUG: DeleteObject() Generates Debug Errors in WEP
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Freeing GDI objects in the Windows Exit Procedure (WEP) of a dynamic-link
+library (DLL) will generate errors from the debug version of Windows 3.1. The
+errors are incorrectly generated if the application has an implicit link to the
+DLL and the application is terminating.
+
+CAUSE
+=====
+
+The debug version of Windows reports errors that a task has exited but has not
+freed any GDI resources allocated by the task. Windows calls the WEP of an
+implicitly linked DLL when the DLL is unloaded from memory but after the
+application using the DLL has already exited. Debug Windows interprets this
+situation as an error and gives debug messages in DBWIN or the debug terminal.
+
+RESOLUTION
+==========
+
+Although debug Windows reports the GDI objects are not freed, The WEP is still
+called and the objects are still freed regardless of the messages displayed by
+debug Windows. There is no need to call DeleteObject(). These messages can be
+ignored.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows version 3.1. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: buglist3.10 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,124 @@
+DOCUMENT:Q94012  08-NOV-2001  [vbwin]
+TITLE   :Visual Basic MCI Control TimeFormat Property Information
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Professional Toolkit for Microsoft Visual Basic programming system for Windows, version 1.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Multimedia Device Control (MCI.VBX) TimeFormat property does not support all
+format settings with all device types. When you assign a value to TimeFormat
+that is not supported by the device, the TimeFormat retains its previous
+setting.
+
+This article also describes MCI_FORMAT_MSF (2) and shows how to separate the four
+bytes of a time value.
+
+MORE INFORMATION
+================
+
+To determine if the current device supports a particular TimeFormat setting,
+assign the value to TimeFormat. Then check TimeFormat to see if it returns the
+value assigned. For example:
+
+      For i = 0 To 10
+         MMControl1.TimeFormat = i
+         If MMControl1.TimeFormat = i Then
+            MsgBox Format$(i) + " supported"
+         Else
+            MsgBox Format$(i) + " not supported"
+         End If
+      Next
+
+Some of the time formats, such as MCI_FORMAT_TMSF, provide four separate byte
+size numbers packed into one four byte long integer. The following sample
+statements show how you can extract the four bytes into separate variables:
+
+      byte1 =  MMControl1.Position And       &HFF&
+      byte2 = (MMControl1.Position And     &HFF00&) \     &H100
+      byte3 = (MMControl1.Position And   &HFF0000)  \   &H10000
+      byte4 = (MMControl1.Position And &H7F000000)  \ &H1000000
+      If (MMControl1.Position And &H80000000) <> 0 Then
+         ' put sign bit back into byte4
+         byte4 = byte4 + &H80
+      End If
+
+The least significant byte is stored in byte1 and the most significant byte is
+stored in byte4.
+
+The following list shows all possible settings for TimeFormat:
+
+   0 MCI_FORMAT_MILLISECONDS
+   1 MCI_FORMAT_HMS
+   2 MCI_FORMAT_MSF
+   3 MCI_FORMAT_FRAMES
+   4 MCI_FORMAT_SMPTE_24
+   5 MCI_FORMAT_SMPTE_25
+   6 MCI_FORMAT_SMPTE_30
+   7 MCI_FORMAT_SMPTE_30DROP
+   8 MCI_FORMAT_BYTES
+   9 MCI_FORMAT_SAMPLES
+   10 MCI_FORMAT_TMSF
+
+The TimeFormat setting MCI_FORMAT_MSF is described in the README.TXT file but is
+missing from the "Microsoft Visual Basic Professional Features Custom Control
+Reference" for version 2.0. The following description of MCI_FORMAT_MSF appears
+in the README.TXT file:
+
+   2 MCI_FORMAT_MSF Minutes, seconds, and frames are packed into a
+   four-byte integer. From least significant byte to
+   most significant byte, the individual data values
+   follow:
+
+   Minutes (least significant byte)
+   Seconds
+   Frames
+   Unused (most significant byte)
+
+The TimeFormat property affects the following properties.
+
+   Position
+   From
+   To
+   Start
+   Length
+   TrackLength
+   TrackPosition
+
+Microsoft has confirmed that this information should be included in the
+"Microsoft Visual Basic Professional Features Custom Control Reference" for
+version 2.0. We will post new information here when the documentation has been
+updated with this additional information.
+
+Additional query words: 1.00 2.00 kbdocerr
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper _IKkbbogus kbZNotKeyword6 kbZNotKeyword2 kbVBPTK kbVB200
+Version           : :1.0,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

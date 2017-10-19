@@ -1,0 +1,175 @@
+DOCUMENT:Q209679  14-NOV-2000  [word97]
+TITLE   :WD97: Font Colors Change Opening a Word 2000 Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word8 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Word 97 to open a Microsoft Word 2000 document [or a version of the
+document that has been saved in Rich Text Format (*.rtf)] that contains
+different font colors, the font colors do not appear as expected.
+
+
+CAUSE
+=====
+
+This behavior occurs because of the different way that each program handles
+color palettes. Word 2000 supports 24-bit RGB color, but Word 97 supports 16-bit
+color and has a limit of 50 RGB colors. Thus, colors that are similar to each
+other in Word 2000 are translated to a single color in Word 97.
+
+For example, the font color Dark Green is translated to Green when a Word 2000
+document is opened in Word 97. However, when a Rich Text Format version of the
+same Word 2000 document is opened in Word 97, the Dark Green font color is
+translated to Black.
+
+WORKAROUND
+==========
+
+If you are sharing your documents with Word 97 users, try using primary colors.
+
+MORE INFORMATION
+================
+
+When you open a Word 2000 document containing text formatted with different
+font colors in Microsoft Word 97 for Windows, the font colors may change
+unexpectedly, as shown in the following table.
+
+   Font color in Word 2000          Converts to this font color in Word 97
+   -----------------------------------------------------------------------
+
+   Black                            Retained as Black
+   Brown                            Converts to Dark Red
+   Olive Green                      Converts to Dark Yellow
+   Dark Green                       Converts to Green
+   Dark Teal                        Converts to Teal
+   Dark Blue                        Retained as Dark Blue
+   Indigo                           Converts to Gray - 50%
+   Gray - 80%                       Converts to Black
+   Dark Red                         Retained as Dark Red
+   Orange                           Converts to Red
+   Dark Yellow                      Retained as Dark Yellow
+   Green                            Retained as Green
+   Teal                             Retained as Teal
+   Blue                             Retained as Blue
+   Blue - Gray                      Converts to Gray - 50%
+   Gray - 50%                       Retained as Gray - 50%
+   Red                              Retained as Red
+   Light Orange                     Converts to Yellow
+   Lime                             Converts to Yellow
+   Sea Green                        Converts to Bright Green
+   Aqua                             Converts to Turquoise
+   Light Blue                       Converts to Blue
+   Violet                           Retained as Violet
+   Gray - 40%                       Converts to Gray - 50%
+   Pink                             Retained as Pink
+   Gold                             Converts to Yellow
+   Yellow                           Retained as Yellow
+   Bright Green                     Retained as Bright Green
+   Turquoise                        Retained as Turquoise
+   Sky Blue                         Converts to Turquoise
+   Plum                             Converts to Pink
+   Gray - 25%                       Retained as Gray - 25%
+   Rose                             Converts to Pink
+   Tan                              Converts to Yellow
+   Light Yellow                     Converts to Yellow
+   Light Green                      Converts to Bright Green
+   Light Turquoise                  Converts to Turquoise
+   Pale Blue                        Converts to Turquoise
+   Lavender                         Converts to Pink
+   White                            Retained as White
+
+When you use Microsoft Word 97 for Windows to open a Word 2000 document saved as Rich Text Format (*.rtf) and containing text formatted with different font colors, the font colors may change unexpectedly, as shown in the
+following table.
+
+   Font color in Word 2000          Converts to this font color in Word 97
+   -----------------------------------------------------------------------
+
+   Black                            Retained as Black
+   Brown                            Converts to Dark Red
+   Olive Green                      Converts to Black
+   Dark Green                       Converts to Black
+   Dark Teal                        Converts to Dark Blue
+   Dark Blue                        Retained as Dark Blue
+   Indigo                           Converts to Dark Blue
+   Gray - 80%                       Converts to Black
+   Dark Red                         Retained as Dark Red
+   Orange                           Converts to Red
+   Dark Yellow                      Retained as Dark Yellow
+   Green                            Retained as Green
+   Teal                             Retained as Teal
+   Blue                             Retained as Blue
+   Blue - Gray                      Converts to Gray - 50%
+   Gray - 50%                       Retained as Gray - 50%
+   Red                              Retained as Red
+   Light Orange                     Converts to Yellow
+   Lime                             Converts to Dark Yellow
+   Sea Green                        Converts to Teal
+   Aqua                             Converts to Turquoise
+   Light Blue                       Converts to Blue
+   Violet                           Retained as Violet
+   Gray - 40%                       Converts to Gray - 50%
+   Pink                             Retained as Pink
+   Gold                             Converts to Yellow
+   Yellow                           Retained as Yellow
+   Bright Green                     Retained as Bright Green
+   Turquoise                        Retained as Turquoise
+   Sky Blue                         Converts to Turquoise
+   Plum                             Converts to Violet
+   Gray - 25%                       Retained as Gray - 25%
+   Rose                             Converts to Gray - 25%
+   Tan                              Converts to Gray - 25%
+   Light Yellow                     Converts to Gray - 25%
+   Light Green                      Converts to Gray - 25%
+   Light Turquoise                  Converts to White
+   Pale Blue                        Converts to Gray - 25%
+   Lavender                         Converts to Gray - 25%
+   White                            Retained as White
+
+REFERENCES
+==========
+
+For additional information about how Word 2000 shading properties appear in Word
+97, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q209677 WD97: Shading Changes Opening a Word 2000 Document
+
+For additional information about font colors in Word 2000, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q224776 WD2000: How to Find and Replace Font Color Formatting
+
+Additional query words: white gray grey black shades grayscale greyscale 16-bit 16 bit 24 24-bit fill pattern shading
+
+======================================================================
+Keywords          : word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

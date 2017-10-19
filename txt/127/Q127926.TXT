@@ -1,0 +1,56 @@
+DOCUMENT:Q127926  08-AUG-2001  [winnt]
+TITLE   :Updated Proteon P1392 Token Ring Adapter Available
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+The Proteon P1392 Token Ring network adapter is supported in Windows NT
+version 3.5. Although the P1392 network driver is included with the Windows
+NT Server version 3.5 CD, an updated P1392 network adapter driver is
+available and can be downloaded from Proteon's Bulletin Board Service (BBS)
+at (508) 366-7827. The file is called 39NT35.EXE and must be extracted
+with the -D switch as follows:
+
+   39NT35.EXE -D
+
+A WINNT35 directory is created on the destination disk, which includes the
+following files:
+
+   OEMSETUP.INF
+   P139XDLG.DLL
+   PRORAPM.DWN
+   PTONNT35.SYS
+
+The P1392 network card is manufactured by Proteon, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this
+products' performance or reliability.
+
+Additional query words: nic mac 139x prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

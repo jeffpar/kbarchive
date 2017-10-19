@@ -1,0 +1,61 @@
+DOCUMENT:Q112281  07-NOV-1999  [pcmail]
+TITLE   :PC Ext: /ClockRollOver May Be Needed When BIOS Not Detected
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The system clock or Timestamp of the machine running the EXTERNAL.EXE program,
+MS-DOS Message Transfer Agent (MTA), included with version 3.2 of Microsoft Mail
+for PC Networks, may be incorrectly incremented by 24 hours, if the BIOS type
+cannot be detected properly.
+
+MORE INFORMATION
+================
+
+The ClockRollOver switch may need to be added to EXTERNAL.INI or to the command
+line, /ClockRollOver, of EXTERNAL.EXE, if difficulty is encountered in
+recognizing the BIOS type and date of the machine it is running on. In version
+3.2, this is set to a value of 1 (ON), by default. Setting this to a value of 0
+(OFF) will keep External from touching the system BIOS and should resolve the
+problem.
+
+A way to check if you will encounter this problem is by running MSD.EXE,
+Microsoft System Diagnostic utility, on the MTA machine. This can be
+accomplished by selecting the option Computer from the main menu after the
+utility is started. If it recognizes the BIOS, you probably do not have a
+problem, but if it does not then mail administrators should be aware of a
+possible need to include this switch at startup.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,85 @@
+DOCUMENT:Q121016  11-FEB-2002  [visualc]
+TITLE   :FIX: Long Query Name in Browser Causes Application Error
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,4.0,4.1,5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbide kbVC kbVC500bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using Visual C++ version 2.x, after you enter a very long string in the
+Browser's Query on Name field, you may receive an error message with the
+following information:
+
+   MSVC.EXE - Application Error The instruction at "<hex_address1>"
+   referenced memory at "<hex_address2>". The memory could not be "read".
+
+Using Visual C++ version 4.x and later, you may receive an error message with the
+following information:
+
+   MSDEV.EXE - Application Error The instruction at "<hex_address1>"
+   referenced memory at "<hex_address2>". The memory could not be "read".
+
+CAUSE
+=====
+
+Strings entered in the Browser's Query on Name field that exceeds 253 characters
+in Visual C++ version 2.x or 2876 characters in Visual C++ version 4.0 and later
+causes this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was corrected in Microsoft Visual C++, version
+6.0.
+
+MORE INFORMATION
+================
+
+Depending on the video mode, errors resulting from long strings may be displayed
+in an error notification box that is partially off the screen. It may be unclear
+what action to take. Press ENTER to clear the box.
+
+Visual C++ 5.0 and later do not have a specific Query on Name field. To use this
+feature, click Source Browser from the Tools menu. In Visual C++ 5.0 the problem
+occurs when you enter the long string into the Identifier edit box.
+
+Visual C++ 6.0 limits the amount of text that it accepts to approximately 900
+characters. More than that will be truncated, but it will not generate an
+application error.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbide kbVC kbVC500bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC500 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :2.0,2.1,4.0,4.1,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

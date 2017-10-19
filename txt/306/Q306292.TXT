@@ -1,0 +1,73 @@
+DOCUMENT:Q306292  28-AUG-2001  [mspress]
+TITLE   :Microsoft PowerPoint Version 2002 Step by Step Comments and Corr
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft PowerPoint Version 2002 Step by Step ISBN 0-7356-1297-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft PowerPoint Version 2002 Step by
+Step, ISBN 0-7356-1297-8.
+
+The following topics are covered:
+
+ - Page 222: Change Text Of Objective
+
+MORE INFORMATION
+================
+
+Page 222: Change Text Of Objective
+----------------------------------
+
+On page 222, under "Playing Sounds and Movies in a Slide Show," the objective
+should be changed from:
+
+"In this exercise, you add sound to a slide transition, insert a sound into a
+slide, insert and play a movie, and change the movie effect options and actions
+settings."
+
+To:
+
+"In this exercise, you modify the animation or action settings, adjust the play
+options, and change the animation order."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1297-8 EUBOOK EUSBS PPT PEDICINI BATISTACK DILLE
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

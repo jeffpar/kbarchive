@@ -1,0 +1,67 @@
+DOCUMENT:Q267251  08-MAY-2002  [sna]
+TITLE   :COMTI Test Console Fails When You Use an Array of UDTs
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP2,4.0 SP3; :
+OPER/SYS:
+KEYWORDS:kbsna400sp2 kbsna400sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0 SP2, 4.0 SP3 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNA Server and Host Integration Server 2000 both support using a Diagnostic
+Capture Remote Environment with the COM Transaction Integrator (COMTI) Test
+Console to allow a user to interactively test a COMTI component. When the COMTI
+component calls into the Remote Environment, the Test Console is started and a
+user can dynamically update data values, and then return those values back to
+the calling component.
+
+When a COMTI component that contains an array of user-defined types (UDTs) is
+used in this situation, the Test Console properly recognizes the array of UDTs
+and allows the user to update the data values contained in the array. However,
+the following error message occurs when you attempt to return the data values
+from the Test Console to the calling component:
+
+   0x800706BE
+   Automation Error - The remote procedure call failed.
+
+This error message occurs when you click OK on the Terminate menu in the Test
+Console.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+SP2 and SP3, and Microsoft Host Integration Server 2000.
+
+Additional query words: 0x800706BE
+
+======================================================================
+Keywords          : kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0 SP2,4.0 SP3; :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

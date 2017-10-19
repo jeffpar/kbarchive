@@ -1,0 +1,63 @@
+DOCUMENT:Q100035  10-NOV-1999  [macmail]
+TITLE   :Mac Srv: Name of Mail Server Does Not Appear in Chooser
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On an AppleTalk network with more than one AppleTalk zone, the Mail server may
+be visible in the Chooser on some workstations, but not on others.
+
+CAUSE
+=====
+
+There may be a problem on the AppleTalk network or there may be a problem with
+the workstation itself. The names shown by the Chooser are found by the Chooser
+software, not Mail software.
+
+RESOLUTION
+==========
+
+Check the network router or bridge, INITs (extensions), network card, System,
+and so forth.
+
+From the server machine, check if you can see the name of the server in the
+Chooser. If you can see the name on the server machine itself, the server is
+operating correctly.
+
+Names of Mail servers, AppleShare servers, network printers and other network
+devices are stored by each router on the network. Programs can query the
+network/router to gain information about the status of the network.
+
+Additional query words: 2.00 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310 kbMailATN200
+Version           : WINDOWS:2.0,3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

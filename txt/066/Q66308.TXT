@@ -1,0 +1,49 @@
+DOCUMENT:Q66308  31-OCT-1999  [utilities]
+TITLE   :PWB's Use of Expanded Memory
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+The MS-DOS version of the Programmer's WorkBench (PWB) will utilize
+expanded memory to swap its own segment overlays if it detects that
+expanded memory is available in the system. When PWB needs a new
+overlay, the existing overlay in memory is first copied into expanded
+memory. If there is not enough room in expanded memory to copy the
+overlay, the least recently used overlay is discarded to make room for
+it. This scheme allows most overlays to be read from expanded memory
+instead of from disk.
+
+Note that this is the only method by which PWB will take advantage of
+available expanded memory, and that PWB versions 1.0 and 1.1 have no
+internal provisions to make use of extended memory in any way.
+
+Additional query words: kbinf 1.00 1.10 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS
+Version           : MS-DOS:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,211 @@
+DOCUMENT:Q146887  14-FEB-2002  [winnt]
+TITLE   :Repairing Windows NT After the Application of Service Pack 3
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are recommended recovery options for Windows NT 4.0 computers with
+Service Pack 3 installed:
+
+ - Run an Emergency Repair with an Emergency Repair Disk that was created after
+   installing Service Pack 3
+
+ - Use the Uninstall feature available in the Update.exe in the Service Pack
+
+ - Run an Emergency Repair with the Repair folder on the boot drive
+
+The following methods can be modified to repair an installation:
+
+ - Upgrade of Windows NT 4.0 over Windows NT 4.0 with Service Pack 3 installed.
+   For example, when the system restarts after the text-mode portion of Setup is
+   complete, choose the Upgrade option rather than the New or Repair options.
+
+ - Emergency Repair using an Emergency Repair Disk created prior to Service Pack
+   3.
+
+Due to changes in the Registry Security Hive, the Samsrv.dll, Samlib.dll, and
+Winlogon.exe have changed and previous versions of these files cannot access
+Windows NT system security information. If pre-Service Pack 3 versions of these
+files are present, you receive a stop screen with the stop code 0xC00000DF. (IE:
+The specified domain name does not exist)
+
+MORE INFORMATION
+================
+
+Using an ERD Created After Installing the Service Pack
+------------------------------------------------------
+
+Windows NT 4.0 Service Pack 3 contains a modified Setup.log file that lets you
+recover a Windows NT Server or Workstation installation after software failure.
+If the system is in an unbootable state, you must use an Emergency Repair Disk
+created after installing Service Pack 3 with the RDISK command. For more
+information, please see the following article(s) in the Microsoft Knowledge
+Base:
+
+   ARTICLE-ID: Q156328
+   TITLE : Description of Windows NT Emergency Repair Disk
+
+NOTE: To use the Emergency Repair Disk utility, you must have the updated version
+of Setupdd.sys. The updated version is contained in Service Pack 2 (as well as
+this Service Pack.) To update your version of Setupdd.sys, you must copy
+Setupdd.sys from the Service Pack to your installation disk 2. This replaces the
+previous version of Setupdd.sys with the updated version. For more information,
+please see the following article(s) in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q168015
+   TITLE : Files Not Replaced When Running Emergency Repair
+
+Repairing the Windows NT installation using this disk recovers the system to a NO
+SERVICE PACK installation.
+
+This ensures recoverability for users where the system has become unstable after
+the application of the Service Pack. If a Service Pack is required, it must be
+reapplied when the Emergency Repair is completed and the system has rebooted.
+
+This method should only be used if the system is in an unbootable state. The
+following Service Pack 3 files remain after the system has been returned to a
+basic Windows NT 4.0 state so that Windows NT can read and utilize the new
+Security hives:
+
+   Samlib.dll
+   Samsrv.dll
+   Winlogon.exe
+
+Uninstalling the Service Pack
+-----------------------------
+
+If an administrator can log onto the computer and run an application, then rerun
+the Service Pack Update utility and uninstall the Service Pack. This is always
+the preferred method of recovery. When using the uninstall feature, the computer
+is restored to the system configuration as it was directly before applying the
+Service Pack. If the computer hangs during startup, this is not a viable
+option.
+
+Repairing the System Files and the System and Security Hives
+------------------------------------------------------------
+
+If the computer is unbootable and there is a pre-Service Pack 3 Emergency Repair
+Disk, you must choose to repair the system files and the System and Security
+hives. An alternative method is to use the Repair folder by running Emergency
+Repair and selecting the option for no Emergency Repair Disk. If RDISK has not
+been run after the application of Service Pack 3, you must choose to repair the
+System and Security hives or follow the procedure outlined below in order to
+alter the Setup.log file:
+
+Modify the contents of the Emergency Repair Disk (ERD) by doing the following:
+
+1. Remove the attributes from the Setup.log file by typing the following at the
+   command prompt:
+
+   "attrib -r -h -s a:\SETUP.LOG" (without the quotation marks)
+
+2. Add the following lines under the [Files.WinNt] section of the Setup.log
+   file:
+
+   \Winnt\System32\Samsrv.dll = "samsrv.dll","30fde","\","nt40 repair
+   disk","samsrv.dll"
+   \Winnt\System32\Samlib.dll = "samlib.dll","18010","\","nt40 repair
+   disk","samlib.dll"
+   \Winnt\System32\Winlogon.exe = "winlogon.exe","2d0bb","\","nt40 repair
+   disk","winlogon.exe"
+
+   NOTE: \Winnt represents the folder where Windows NT is installed.
+
+3. Copy Samsrv.dll, Samlib.dll, and Winlogon.exe from the Windows NT 4.0 Service
+   Pack 3 media to the root folder of the Emergency Repair Disk.
+
+4. Restart your computer with the three Windows NT 4.0 Setup disks.
+
+5. Select "R" to Repair your Windows NT installation.
+
+6. Select "Verify Windows NT System Files" and continue.
+
+7. If prompted to insert Windows NT setup disk 4, press ESC to continue with the
+   Repair process.
+
+8. After you replace Samsrv.dll, Samlib.dll, and Winlogon.exe with the files
+   from Windows NT 4.0 Service Pack 3, press F3 to exit Repair.
+
+9. Reboot the computer and restart Windows NT.
+
+"Upgrading" Windows NT 4.0 Over Windows NT 4.0 with Service Pack
+----------------------------------------------------------------
+
+If the computer is unable to boot and the repair process fails or you do not have
+an Emergency Repair Disk or a CD-ROM drive, you must perform an upgrade of
+Windows NT 4.0 over Windows NT 4.0 Service Pack 3. Please follow these steps to
+do this:
+
+1. Copy the i386 folder from the original Windows NT 4.0 CD-ROM to the hard disk
+   of the target system if FAT, or to a network share if NTFS. In this folder,
+   rename the following files. Copy these same three files to the I386 directory
+   from the Service Pack 3 source. The goal is for the upgrade to be done using
+   these 3 files from Service Pack 3.
+
+   Samsrv.dl_ to Samsrv.org
+   Samlib.dl_ to Samlib.org
+   Winlogon.ex_ to Winlogon.org
+
+2. Choose the correct procedure below based on your file system:
+
+    - If the file system is FAT and the i386 folder is on the local hard disk,
+      perform the following steps:
+
+      a. Boot to MS-DOS and run WINNT /B from the i386 folder.
+
+      b. Choose the Upgrade option during the on the first boot into GUI mode.
+
+    - If the install source location is remote and the local file system is FAT,
+      you must either install Windows with networking enabled, or create an
+      installation boot disk off the Windows NT Server CD-ROM, connect to the
+      modified i386 folder, and then run WINNT /B.
+
+    - If the file system is NTFS, you must create a parallel install in a new
+      folder and then run WINNT32 /B from the modified i386 folder.
+
+When the Samsrv.dll, Samlib.dll, and Winlogon.exe files do not match during
+logon, users receive a stop screen with the stop code 0xC00000DF. This can be
+seen after you upgrade Windows NT 4.0 over Windows NT 4.0 Service Pack 3 or if
+the System and Security hives were not repaired when using an Emergency Repair
+Disk created prior to the application of Service Pack 3. In order to repair
+installations in this state, please see the following article(s) in the
+Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q164471
+   TITLE : Replacing System Files Using a Modified Emergency Repair Disk
+
+Additional query words: prodnt recovery trap C00000DF ntfaqset
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

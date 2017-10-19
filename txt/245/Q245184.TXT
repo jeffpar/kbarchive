@@ -1,0 +1,68 @@
+DOCUMENT:Q245184  10-AUG-2001  [winnt]
+TITLE   :Cannot Run 16-Bit Programs on a Windows NT 4.0-Based Computer.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run a 16-bit program on a computer running Microsoft Windows
+NT 4.0 Service Pack 3, the program may quit immediately, or you may receive the
+following error message:
+
+   Hidden Console of WOW VDM
+   The NTVDM CPU has encountered an illegal instruction.
+   CS: 04c3 IP:3937 OP:c71c 9d 37 00
+   Choose Close to terminate the application.
+
+When you click Close, you may receive several similar error messages.
+
+CAUSE
+=====
+
+This behavior can occur if you use an incorrect version of the Command.com file.
+For example, this issue is known to occur if you use a Command.com file included
+in Microsoft Windows 95, dated 7/11/95.
+
+RESOLUTION
+==========
+
+To resolve this issue, replace the Command.com file in the Winnt\System32 folder
+with the same file from another computer that is running Windows NT Workstation
+4.0 or Windows NT Server 4.0, and then make sure that there are no Command.com
+files dated 7/11/95 on the computer. You can also replace the Command.com file
+on the computer with the same file on the Windows NT installation CD-ROM.
+
+Additional query words: NT simulate emulate 95
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

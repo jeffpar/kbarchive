@@ -1,0 +1,87 @@
+DOCUMENT:Q175499  23-JAN-2001  [exchange]
+TITLE   :XCON: NDR When Replying to Another Exchange Organization
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you reply to a message sent from another Microsoft Exchange Organization or
+from another Site within the same Organization, you may immediately receive the
+following Non-Delivery Report (NDR) by the local Message Transfer Agent (MTA):
+
+   Your message did not reach some or all the intended recipients.
+   Subject:
+   Sent: (Date/Time>
+   The following recipient(s) could not be reached:
+   '' on date / time
+   The recipient name is not recognized
+   MSEXCH:MTA::
+
+CAUSE
+=====
+
+This behavior occurs when the two Microsoft Exchange Organizations are connected
+via the X.400 Connector, or when two Sites are connected via the X.400 Connector
+with the Address Space Tab configured, and have the Allow MSExchange Contents
+setting enabled.
+
+When a computer running Microsoft Exchange Server sends a message to another
+Exchange Server computer, the P1 for that message contains only the X500
+Distinguished Name (DN) for the recipient's address. When the recipient replies
+to the message, they reply to the DN of the message originator. However, in
+seperate Exchange Organizations, as well as two Sites configured with the
+Address Space Tab, this fails because the DN is only comprised of the
+Organization and Site names.
+
+WORKAROUND
+==========
+
+To work around this behavior, the administrator needs to go to the properties
+page for the X.400 connector that connects the two Exchange Organizations or
+Sites and do the following:
+
+1. Click the Advanced tab.
+
+2. Under X400 Link options, click to clear the Allow MSExchange Contents
+   setting.
+
+3. Restart the MTA Service.
+
+Now when messages are sent to the other Exchange Organization or Site, a content
+conversion occurs and the message P1 changes to a true X.400 O/R address that is
+properly handled by the other Exchange Organization or Site.
+
+Additional query words: metamorf allow ms exchange content conv p22 rtf mapi 290
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

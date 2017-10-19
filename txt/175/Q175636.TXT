@@ -1,0 +1,62 @@
+DOCUMENT:Q175636  06-DEC-2000  [exchange]
+TITLE   :XCLN: Thank You Mood Stamp is not Displayed in Exchange Clients
+PRODUCT :Microsoft Exchange
+PROD/VER:MACINTOSH:8.0; WINDOWS:4.0,5.0,8.0; winnt:5.5; :8.0,8.01,8.02,8.03
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0 
+ - Microsoft Outlook, Exchange Server Edition, version 8.0, used with:
+    - the operating system: Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you send a message from a Notes client with a Mood Stamp of Thank You to a
+Microsoft Exchange or Outlook Client, the sensitivity icon or description of the
+sensitivity is not displayed. However, sending a Mood Stamp of Personal,
+Private, or Confidential is displayed properly.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange and Outlook Clients do not support the Thank You sensitivity.
+Mood Stamp is the Lotus Notes equivalent to Microsoft Exchange and Outlook
+sensitivity options.
+
+This is by product design.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbOutlookMacSearch
+Version           : MACINTOSH:8.0; WINDOWS:4.0,5.0,8.0; winnt:5.5; :8.0,8.01,8.02,8.03
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

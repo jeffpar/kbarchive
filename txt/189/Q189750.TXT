@@ -1,0 +1,76 @@
+DOCUMENT:Q189750  27-JUL-2001  [win95x]
+TITLE   :Error Message: Bad Resource Data Checksum Error
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95, you may receive the following error message:
+
+   Bad resource data checksum error
+
+CAUSE
+=====
+
+This error message can occur if you have a Creative Labs AWE64 or AWE64 Gold
+sound card installed and you are using an older version of the Creative Labs
+Configuration Manager program.
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain a newer version of Configuration Manager from the
+Creative Labs Web site. To obtain the latest version, download the Ctcmbbs.exe
+file from the following Creative Labs Web site:
+
+   http://www.creativelabs.com/
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+MORE INFORMATION
+================
+
+The newer version of Configuration Manager does not try to read Plug and Play
+sound cards with a bad checksum and can test interrupt request lines (IRQs)
+other than the standard 2, 5, 7, and 10.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: cheksum
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbhw win95 kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

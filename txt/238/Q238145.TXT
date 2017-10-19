@@ -1,0 +1,88 @@
+DOCUMENT:Q238145  04-FEB-2000  [iis]
+TITLE   :How to Monitor Bandwidth Throttling
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you enable bandwidth throttling, Internet Information Services (IIS)
+activates a set of counters to monitor it in System Monitor (SysMon). These
+counters can be identified by "Async I/O" in the counter name. These counters
+are active only when bandwidth throttling is enabled. (If bandwidth throttling
+is not enabled, the counters appear in SysMon, but they always have a value of
+zero.)
+
+MORE INFORMATION
+================
+
+The Async I/O counters are part of the Internet Information Services Global
+performance object. They represent totals for all of the IIS services. Bandwidth
+is not measured for each service. The following table lists and describes the
+Async I/O counters.
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Counter                                                                         | Indicates                                                                                                                                                       | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Internet Information Services Global: Current Blocked Async I/O Requests        | The number of requests blocked (that is, held in a buffer until bandwidth is available) by bandwidth throttling as reported during the most recent observation. | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Internet Information Services Global: Total Allowed Async I/O Requests          | The number of requests allowed by bandwidth throttling since the service was last started.                                                                      | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Internet Information Services Global: Total Blocked Async I/O Requests          | The number of requests blocked (that is, held in a buffer until bandwidth is available) by bandwidth throttling since the service was last started.             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Internet Information Services Global: Total Rejected Async I/O Requests         | The number of requests rejected by bandwidth throttling since the service was last started.                                                                     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Internet Information Services Global: Measured Async I/O Bandwidth Usage/Minute | The number of bytes sent per minute as indicated by a sample taken by bandwidth throttling.                                                                     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+The bandwidth setting determines whether IIS accepts or rejects a request for a
+static HTML page, based on periodic samples of the rate at which bytes are sent
+on the server.
+
+If the bandwidth used (as indicated by the sample) approaches the maximum set by
+the user, bandwidth throttling blocks read requests, but allows write requests
+and transmission requests. Read requests are blocked first, because they are
+likely to result in further requests.
+
+If the bandwidth used exceeds the maximum set by the user, bandwidth throttling
+rejects read requests, blocks large write requests and transmission requests,
+and allows small write requests and transmission requests.
+
+To determine how many requests are being blocked and rejected, monitor the Async
+I/O counters. These counters display cumulative totals, so it's best to use the
+SysMon log to log the counter values. A spreadsheet can also be used to
+calculate the rate over time. SysMon can be used to notify administrators when
+the number of blocked or rejected requests exceeds a threshold.
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

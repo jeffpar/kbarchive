@@ -1,0 +1,83 @@
+DOCUMENT:Q174860  08-NOV-2001  [homegame]
+TITLE   :No Sound in Windows After Installing Close Combat
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Close Combat, you no longer hear any sound in Windows.
+
+This behavior has been reported to occur on some HP Pavilion computers using
+Crystal sound cards.
+
+CAUSE
+=====
+
+This occurs if an installation of DirectX replaced the Crystal sound card
+driver.
+
+RESOLUTION
+==========
+
+Use the following steps to resolve the problem:
+
+NOTE: You should follow this procedure each time DirectX replaces the Crystal
+sound card driver. In the future, if you are prompted to update your sound card
+driver during a DirectX installation, click No.
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Device Manager tab.
+
+4. Double click Sound, Video, And Game Controllers to expand the branch.
+
+5. Click the entry for MS Sound Driver to select it.
+
+6. Click Remove, and then click OK to confirm the removal.
+
+7. Click OK.
+
+8. Restart Windows. After restarting, you will notice that Crystal 4232 Plug and
+   Play Audio Hardware appears under Sound, Video, And Game Controllers.
+
+MORE INFORMATION
+================
+
+Removing the wrongly detected sound card driver from Device Manager and allowing
+Windows to re-detect the Crystal hardware corrects the sound problem in Windows.
+
+Additional query words: 1.00 closecombat cc hewlett packard pnp
+
+======================================================================
+Keywords          : kbenv kbsound kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbCloseCombatSearch kbCloseCombat
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

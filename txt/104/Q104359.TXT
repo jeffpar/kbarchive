@@ -1,0 +1,142 @@
+DOCUMENT:Q104359  29-OCT-1999  [pcmail]
+TITLE   :PC Win: Sharing PAB with Other Users
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes a method for versions 3.0b and 3.2 of Microsoft Mail for
+Windows that does the following:
+
+ - Allows individual users to share their own Personal Address Books (PABs),
+   along with any custom groups or addresses they may have set up, with other
+   users on their postoffice.
+
+ - Allows administrators to set up one or more Mail message files (MMFs) to be
+   used as templates for setting up or replacing users' PABs with ones
+   containing custom groups and/or addresses that the administrator does not
+   want available to everyone on the postoffice.
+
+MORE INFORMATION
+================
+
+Whenever you run the File Export Folder command from the Windows client, a copy
+of your current PAB is written to the MMF being created or updated (even if you
+export zero messages). Therefore, if you know a user's password and the full
+path and filename of his or her .MMF file, you can replace that user's PAB with
+the one from the .MMF file you have loaded.
+
+WARNING: The user's old PAB is REPLACED with the new PAB. The old PAB is lost,
+along with all information it contained.
+
+NOTE: When you run the File Import Folder command, only the messages you select
+are transferred; your current PAB is left unchanged.
+
+To replace a user's PAB
+-----------------------
+
+1. Start the Windows client, using the MMF from which you want to copy the PAB.
+
+2. From the File menu, choose Export Folder.
+
+3. Provide the full drive, path name, filename, and extension to the MMF file
+   you want to update. Choose the OK button.
+
+   NOTE: If neither you nor the user know his or her .MMF filename and location,
+   the user can temporarily move his or her .MMF file by performing the
+   following steps:
+
+   a. From the Mail menu, choose Options.
+
+   b. Choose the Server button.
+
+   c. Choose Local, then provide a drive, path name, and filename (with .MMF
+      extension) that is in a location where both of you have access.
+
+   When you finish updating the PAB, you should move the MMF back to its previous
+   location by repeating steps a and b above, then selecting Postoffice (instead
+   of Local).
+
+4. If you are prompted for one, enter the password for the .MMF file you want to
+   update.
+
+   Make sure the Selected Folders option is selected in the Export Folders list
+   box that appears.
+
+5. Select a folder with zero (0) messages in it (an empty Wastebasket is a good
+   choice).
+
+   NOTE: If you select a folder that does not exist in the destination .MMF file,
+   that folder will be created.
+
+6. Choose Copy. A Duplicate Folder Name message box will appear.
+
+7. Choose OK.
+
+8. You should briefly see a box that says Copying. When that box disappears,
+   choose the Close button in the Export Folders list box. The PAB in the other
+   .MMF file should now be updated.
+
+To set up template MMFs
+-----------------------
+
+Administrators can set up one or more .MMF files to be used as templates for
+setting up or replacing users' PABs with ones containing custom groups and/or
+addresses that the administrator does not want available to everyone on the
+postoffice.
+
+To set up templates, provide a new filename in step 3 above for your template
+file. Then, when you want to replace a user's PAB with the one for which you
+created the template, load the template MMF by doing one of the following:
+
+ - Double-click the filename in Windows File Manager. For this method to work,
+   the [Extensions] section of your WIN.INI file must contain the following
+   line:
+
+   mmf=c:\msmail\msmail.exe /f ^.mmf
+
+-or-
+
+ - Use the /F parameter on the command line when you run MSMAIL.EXE. Versions
+   3.0b and later of Mail for Windows support a command-line option that allows
+   you to specify a particular MMF to use when you start Mail in forced off-line
+   mode. The following is a command-line example:
+
+   c:\msmail\msmail.exe /fg:\msmail\template\salesgrp.mmf
+
+NOTE: Any template MMF will only have addresses as current as when the MMF was
+created (or last updated). If there are extensive changes on your postoffice,
+you may not want to use this method.
+
+Additional query words: 3.00b 3.20 PO
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail300b
+Version           : WINDOWS:3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

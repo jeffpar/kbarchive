@@ -1,0 +1,82 @@
+DOCUMENT:Q185280  10-MAY-2001  [visualc]
+TITLE   :FIX: Printf Gives Unexpected Results for Doubles on WinCE
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows CE, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use any of the printf C run-time routines (printf, _vstprintf,
+_stprintf, and so on) with the "%f" format specifier, you get unexpected
+results. The printf C run-time routines return the floating-point format
+specifier without the leading '%' instead of the text representation of the
+number. For example, the following code gives the result "f" instead of
+"1.23456789":
+
+      _stprintf(pBuffer, TEXT("%f"), 1.23456789);
+
+CAUSE
+=====
+
+This is a bug in the printf C run-time routines. The printf routines for Windows
+CE do not support floating-point numbers.
+
+RESOLUTION
+==========
+
+This has been fixed in version 2.0 of Visual C++ for Windows CE. To work around
+this problem in version 1.0, you must manually convert the floating- point
+number. You can use the _gcvt function to convert the floating-point number to
+an ANSI string, and then use the "%S" format specifier in a printf routine to
+convert the ANSI string to UNICODE.
+
+For example, replace the following code:
+
+      _stprintf(pBuffer, TEXT("%f"), 1.23456789);
+
+with:
+
+      char pTemp[256];
+      _gcvt(1.23456789,9,pTemp);
+      _stprintf(pBuffer, TEXT("%S"), pTemp);
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual C++ for Windows
+CE, 2.0.
+
+Additional query words: kbnokeyword kbwince100fix
+
+======================================================================
+Keywords          : kbfix 
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword3 kbVC100WinCE
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

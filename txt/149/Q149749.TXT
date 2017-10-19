@@ -1,0 +1,84 @@
+DOCUMENT:Q149749  02-NOV-1999  [fortran]
+TITLE   :PRB: DIM() Intrinsic Function does not Support Complex Numbers
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to use complex numbers as DIM() input arguments results in the
+following compilation error:
+
+   error FOR2325: wrong data type for argument number of intrinsic procedure DIM
+
+The DIM() intrinsic function returns the difference between two input arguments
+if their difference is positive, or it returns zero otherwise. The DIM()
+intrinsic function no longer supports the use of complex numbers as input
+arguments. Note only the real part of the complex numbers is used to calculate
+the difference between the two input arguments.
+
+RESOLUTION
+==========
+
+Obtain the real part of the complex number, and use it as the DIM() intrinsic
+function input argument.
+
+-or-
+
+Compile the source file using the /4fps1 compiler option.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem and Resolution
+------------------------------------------------
+
+   ! Compile options needed: none
+
+         real*8 d
+         complex c1, c2
+         c1 = (4.0, -1.0)
+         c2 = (1.0, 4.2E3)
+   ! comment the following line for first resolution
+         d = DIM( c1, c2 )
+   ! uncomment the following line for second resolution
+   !      d = DIM( real(c1), real(c2) )
+         print *, d
+         end
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

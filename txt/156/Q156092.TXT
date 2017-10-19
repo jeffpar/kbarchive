@@ -1,0 +1,72 @@
+DOCUMENT:Q156092  08-AUG-2001  [winnt]
+TITLE   :How to Make Program Manager the Shell in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 ships with a new shell, Explorer.exe. This can be changed to
+Program Manager by modifying a registry setting.
+
+MORE INFORMATION
+================
+
+To change the shell from Explorer to Program Manager, modify the following
+registry key:
+
+WARNING: Using Registry Editor can cause serious, system-wide errors that may
+require you to reinstall Windows NT. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Under the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+
+   \Software\Microsoft\WindowsNT\CurrentVersion\Winlogon\Shell
+   (currently Explorer.exe).
+
+3. Change Explorer.exe to Progman.exe.
+
+4. Quit Registry Editor; shut down and restart the system.
+
+If this is a new setup of Windows NT 4.0 you will have to create all Program
+Manager groups because Windows NT 4.0 setup does not create any Program Manager
+groups. If this is an upgrade from a previous version of Windows NT, you will
+have to create program groups for any applications you installed after
+installing Windows NT 4.0, because Explorer does not use program group files.
+Program groups will be created for any applications you install after changing
+your shell to Program Manager.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

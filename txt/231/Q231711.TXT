@@ -1,0 +1,70 @@
+DOCUMENT:Q231711  11-DEC-2001  [winnt]
+TITLE   :Access Violation in Explorer During Session Logon
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you type your logon credentials, and then click OK, you may receive a
+memory reference or access violation error message or the computer may stop
+responding (hang).
+
+CAUSE
+=====
+
+This issue can occur if the permissions for the %SystemRoot%\Profiles profile is
+not set to the default value.
+
+RESOLUTION
+==========
+
+To resolve this issue, ensure the permissions of the %SystemRoot%\Profiles
+profile is set to the default value. The default value for %SystemRoot%\Profiles
+is in the following list:
+
+ - Local Administrator Group = Full Control
+ - Creator/Owner = Full Control
+ - Everyone = Read
+ - System = Full Control
+
+If you have logged on before and are currently experiencing this issue, make sure
+the folder with your user name contained in the %SystemRoot%\Profiles folder has
+the following permissions:
+
+   %User%=Full Control; Local Administrators Group=Full Control; System=Full
+   Control
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

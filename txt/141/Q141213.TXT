@@ -1,0 +1,71 @@
+DOCUMENT:Q141213  17-DEC-2000  [win95x]
+TITLE   :How to Add Desktop and Start Menu Folder to the Start Menu
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to add shortcuts to the contents of the desktop and a
+Windows Explorer view of the Start menu to the Start menu.
+
+MORE INFORMATION
+================
+
+To add a shortcut to the contents of the desktop to the Start menu, follow these
+steps:
+
+1. Use the right mouse button to click the Start button, and then click Explore
+   on the menu that appears.
+
+2. In the All Folders pane, click Start Menu.
+
+3. On the File menu, point to New, and then click Shortcut.
+
+4. Type the following line in the Command Line box, and then click Next:
+
+   " c:\windows\desktop " (without the quotation marks)
+
+5. Click Finish.
+
+6. Close Windows Explorer.
+
+To add a shortcut to a Windows Explorer view of the Start menu to the Start menu,
+follow these steps:
+
+1. Use the right mouse button to click the Start button, and then click Explore
+   on the menu that appears.
+
+2. Drag the Start Menu folder to the Start button.
+
+3. Close Windows Explorer.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

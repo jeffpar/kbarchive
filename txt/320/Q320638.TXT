@@ -1,0 +1,72 @@
+DOCUMENT:Q320638  06-AUG-2002  [sms]
+TITLE   :SMS: Job Files May Back Up in the Scheduler.box Folder
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Job files may back up in the SMS\Inboxes\Scheduler.box and the
+Inboxes\Replmgr.box\Ready folders on Systems Management Server (SMS) 2.0 parent
+and child sites. When this occurs, the Sched.log file may contain an entry that
+is similar to:
+
+   <JOB JYF3B7Z>~ Updating status of minijob "Inter Site Replication".~
+   Need to generate send request for minijob.~ Skipping minijob. Could not
+   retrieve the request ID
+
+CAUSE
+=====
+
+This behavior can occur if the required .req and .job token files are deleted
+from the SMS\Inboxes\Scheduler.box\UID folder on the SMS site server.
+
+You must not rename, modify, or delete these token files. SMS does not delete
+these files under typical circumstances.
+
+WORKAROUND
+==========
+
+To work around this behavior:
+
+1. Use a text editor to create new token .req and .job files.
+
+2. Use a text editor to create two empty text files named <nnnnnnnn>.job
+   and <nnnnnnnn>.req, where <nnnnnnnn> is a number that is higher
+   than the highest number in the file name of any files that are located in the
+   SMS\Inboxes\Schedule.box folder.
+
+3. Place these files in the SMS\Inboxes\Scheduler.box\UID folder.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

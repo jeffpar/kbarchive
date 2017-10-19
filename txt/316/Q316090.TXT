@@ -1,0 +1,92 @@
+DOCUMENT:Q316090  23-JUL-2002  [visualc]
+TITLE   :BUG: Fatal Error C1001 When You Compile with Global Optimizer
+PRODUCT :Microsoft C Compiler
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbCompilerkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile a program with global optimizer, you receive the following
+error message:
+
+   "fatal error C1001: INTERNAL COMPILER ERROR (compiler file
+   'f:\vs70builds\9466\vc\Compiler\Utc\src\P2\emit.c', line 937)
+   Please choose the Technical Support command on the Visual Help menu, or open
+   the Technical Support help file for more information."
+
+CAUSE
+=====
+
+The behavior occurs because optimizer puts too many instructions in the function
+prolog for a particular optimization (frame pointer omission).
+
+RESOLUTION
+==========
+
+To work around the problem, you must prevent instructions from being scheduled
+in the prolog. To do this, do one of the following:
+
+ - Make a function call to an external function that is contained in another
+   object file (may not work when "Whole program optimization" (/GL) is enabled)
+   or DLL.
+
+   -or-
+
+ - Use the undocumented _ReadWriteBarrier() intrinsic at the beginning of the
+   affected function. This intrinsic does not generate any code but prevents
+   optimizations across the intrinsic. To do this, add the following declaration
+   to the file:
+
+   void _ReadWriteBarrier();
+   #pragma intrinsic(_ReadWriteBarrier) 
+
+Add the following code at the beginning of the function that causes the C1001
+error:
+
+   #if _MSC_VER==1300
+     _ReadWriteBarrier();
+   #endif
+
+NOTE: The use of undocumented intrinsics is not guaranteed to work in future
+versions of the compiler.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: Og ICE KbCpp KbNative
+
+======================================================================
+Keywords          : kbCompiler kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

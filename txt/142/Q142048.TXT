@@ -1,0 +1,66 @@
+DOCUMENT:Q142048  08-AUG-2001  [winnt]
+TITLE   :WinNT 3.51 SP2 Increases Performance and Resolves SQL Slowdowns
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article points out the importance of Windows NT version 3.51 Service Pack 2
+(or greater) and it's impact upon SQL Server versions 4.21a SQL 6.0.
+
+MORE INFORMATION
+================
+
+The addition of Service Pack 2 (or greater) to Servers running Windows NT
+version 3.51 with Service Pack 1 dramatically improves SQL Server performance in
+several documented cases. Service Pack 2 contains a change to the Windows NT
+Kernel (for both single and multiprocessor computers) that resolves a temporary
+freeze condition that could have significant impact on SQL Server performance.
+Due to the resolution of this problem, it is very important that SP2 or higher
+be installed on computers running SQL Server.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in the latest U.S. Service Pack for Windows NT Server
+version 3.51. For information on obtaining this update, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

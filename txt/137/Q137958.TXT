@@ -1,0 +1,57 @@
+DOCUMENT:Q137958  13-DEC-1999  [homemm]
+TITLE   :Bookshelf '95 editions: Daily Dialog Settings are Saved on ESC
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1995 edition 
+ - Microsoft Bookshelf '95 for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press the ESC key to close Bookshelf Daily, the Bookshelf Daily dialog
+setting changes are saved as you last had them, rather than in the default
+settings.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Bookshelf editions listed at
+the top of this article. This problem has been resolved in Microsoft Bookshelf
+'96-'97 for Windows.
+
+WORKAROUND
+==========
+
+Undo any unwanted changes before you press the ESC key to exit Bookshelf Daily.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles kbmm bs defaults different changes new
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995
+Version           : :1995 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

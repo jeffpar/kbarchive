@@ -1,0 +1,75 @@
+DOCUMENT:Q87467  04-NOV-1999  [pcmail]
+TITLE   :PC DB: What the NETWORK.GLB File Is Used For
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1e, 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail NETWORK.GLB file is used to define any external postoffices
+or gateways that this postoffice can address mail to.
+
+
+NOTE: Gateway names are defined and added to this file when the gateway is
+installed.
+
+MORE INFORMATION
+================
+
+All gateways that use the three-part hierarchy format Network/Postoffice/Mailbox
+(SNADS, PROFS, and OfficeVision) will also have an associated .XTN file created.
+The .XTN file, in this case, will contain either DGN or node names defined at
+that gateway.
+
+The Mail client, Admin, External, and Import programs will require reading this
+file to determine the gateways and external postoffices that are accessible by
+this postoffice. Only the Admin and Import programs are able to create records
+in this file.
+
+If the NETWORK.GLB file is missing, an appropriate error message will be
+displayed.
+
+The Mail client and External program will not be able to resolve names using the
+postoffice network list.
+
+The Admin program will not be able to create or modify names in the postoffice
+network list.
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+   "pc" (without the quotation marks) and "db" (without the quotation marks) and
+   "xtn" (without the quotation marks) and "dtime" (without the quotation marks)
+
+
+Additional query words: 2.10e 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN210e
+Version           : WINDOWS:2.1e,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q135948  31-JUL-2001  [win95x]
+TITLE   :System Agent Reports Error After Running ScanDisk
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:scandisk win95 kbScanDisk
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following message after System Agent runs ScanDisk:
+
+   Result: One or more drives could not be checked (249)
+
+CAUSE
+=====
+
+This message indicates that a drive could not be checked by ScanDisk because it
+was locked by another program, or because it was created using the SUBST
+command.
+
+RESOLUTION
+==========
+
+Make sure that no drive is locked by another program, and then run ScanDisk
+again.
+
+Note that ScanDisk cannot check drives created using the SUBST command.
+
+MORE INFORMATION
+================
+
+The behavior described in this article can also occur if you have scheduled both
+ScanDisk and Disk Defragmenter to start when you start Windows 95. Both programs
+try to lock the drive at the same time instead of one program running after
+another. Schedule ScanDisk and Disk Defragmenter to run at different times.
+
+Additional query words: scandskw SAGE
+
+======================================================================
+Keywords          : scandisk win95 kbScanDisk 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

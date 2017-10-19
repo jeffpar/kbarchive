@@ -1,0 +1,70 @@
+DOCUMENT:Q177447  07-SEP-2001  [winnt]
+TITLE   :Cannot Change Printer Ports on a Printer
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Attempts to change the currently selected printer port on Windows NT 4.0 are
+ignored. Although the ports seem available, there appears to be no response by
+clicking the newly selected port with the mouse or with the keyboard.
+
+Other symptoms may be that the when the port tab is selected, no ports appear at
+all.
+
+MORE INFORMATION
+================
+
+Check the icon of the printer you have selected. If the printer icon shows a
+wire below the printer, the printer was created by selecting the Add Printer
+Wizard "Network Printer Server" option.
+
+The Network Printer Server option is selected to connect to a printer already
+shared by another computer on a Microsoft network. When the properties of this
+type of printer are selected, the settings viewed are those of the remote
+computer. Changes made will actually result in changes on the remote computer.
+If attempts to change the settings appear to be ignored, that is because the
+user attempting to make the changes does not have sufficient user rights on the
+remote computer.
+
+If you have no permissions reconnecting to a printer to which you previously had
+access, the following message may occur when viewing details in the printers
+folder:
+
+   <Access denied, unable to connect>
+
+The minimum permissions to at least see the printer ports are the Print
+permissions.
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : ALPHA PPC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,71 @@
+DOCUMENT:Q108154  08-JAN-2000  [win3x]
+TITLE   :Problems Accessing B&W NFS Mounted Drives in WFWG 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Beame and Whiteside's network file system (BW-NFS) for Lan Workplace
+on open datalink interface (ODI) with Windows for Workgroups 3.11 and you set an
+NFS file system as a mounted drive, the drive is visible but not accessible in
+Windows. (It appears as a blank disk.)
+
+CAUSE
+=====
+
+This behavior is caused by a problem with the Beame and Whiteside NFS
+redirector.
+
+RESOLUTION
+==========
+
+Although the directory appears empty, the files can be accessed if you know the
+name of the file. Beame and Whiteside is aware of this problem.
+
+STATUS
+======
+
+Beame and Whiteside has developed new drivers to make Windows for Workgroups
+3.11 work with its product and the ODI stack. The problem in the redirector will
+be addressed in a future release. For more information, contact Beame and
+Whiteside at (905) 765-0822 (phone)or (905) 765-0815 (fax).
+
+MORE INFORMATION
+================
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.11 B&W Beam NFS 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

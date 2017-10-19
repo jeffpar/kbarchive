@@ -1,0 +1,262 @@
+DOCUMENT:Q317364  06-MAR-2002  [foxpro]
+TITLE   :FIX: A Second TABLEUPDATE After Failure May Corrupt Index
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0,7.0
+OPER/SYS:
+KEYWORDS:kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you perform a TABLEUPDATE that results in a "Uniqueness of index violated"
+error message, if you do not correct the problem before you perform a second
+TABLEUPDATE, the index on the table may become corrupted.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Visual FoxPro for
+Windows 7.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q316964 How to Obtain the Latest Visual FoxPro for Windows 7.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Visual FoxPro for
+Windows 7.0. This problem was first corrected in Visual FoxPro for Windows 7.0
+Service Pack 1.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Behavior
+---------------------------
+
+1. Create a new, clean directory on your hard disk.
+
+2. Use either Visual FoxPro 6.0 or Visual FoxPro 7.0 to create two program
+   (.prg) files, named Testxxx1.prg and Testxxx2.prg, that contain the following
+   code. Save the new programs to the new directory that you created in step 1.
+
+   CLOSE DATABASES ALL 
+   _screen.caption = VERSION()
+   OPEN DATA testdb SHARED
+
+   PUBLIC oform1
+   oform1=CREATEOBJECT("form1")
+   _screen.Width = oform1.width + 50
+   _screen.height = oform1.height
+   oform1.autocenter = .t.
+   oform1.windowstate = 2
+   oform1.show
+
+   DEFINE CLASS form1 AS form
+      DataSession = 2
+      Height = 250
+      Width = 374
+      AutoCenter = .T.
+      Caption = "Form1"
+      Name = "Form1"
+
+     ADD OBJECT txtidcode AS textbox WITH ;
+      ControlSource = "testtab1.idcode", ;
+      Left = 188, ;
+      Top = 128, ;
+      Width = 39
+
+     ADD OBJECT lblidcode AS label WITH ;
+      AutoSize = .T., ;
+      WordWrap = .T., ;
+      BackStyle = 0, ;
+      Caption = "Idcode", ;
+      Left = 143, ;
+      Top = 133, ;
+      Width = 37, ;
+      TabIndex = 1
+
+      ADD OBJECT grid1 AS grid WITH ;
+       ColumnCount = 1, ;
+       DeleteMark = .F., ;
+       Height = 111, ;
+       Left = 78, ;
+       ReadOnly = .T., ;
+       RecordSource = "testtab1", ;
+       RecordSourceType = 1, ;
+       ScrollBars = 2, ;
+       Top = 6, ;
+       Width = 262, ;
+       Name = "Grid1", ;
+       Column1.ControlSource = "testtab1.idcode", ;
+       Column1.ReadOnly = .T.
+
+      ADD OBJECT command1 AS commandbutton WITH ;
+       Top = 192, ;
+       Left = 20, ;
+       Height = 27, ;
+       Width = 84, ;
+       Caption = "New"
+
+      ADD OBJECT command2 AS commandbutton WITH ;
+       Top = 192, ;
+       Left = 147, ;
+       Height = 27, ;
+       Width = 84, ;
+       Caption = "Save"
+
+      ADD OBJECT command3 AS commandbutton WITH ;
+       Top = 192, ;
+       Left = 268, ;
+       Height = 27, ;
+       Width = 84, ;
+       Caption = "Revert"
+
+      PROCEDURE load
+         SET MULTILOCKS ON 
+         USE testtab1 SHARED ORDER 1 
+         =CURSORSETPROP("Buffering",3)
+      ENDPROC 
+   	 
+      PROCEDURE command1.Click
+         SELECT testtab1
+         APPEND BLANK
+         ThisForm.Refresh()
+         ThisForm.txtidcode.SetFocus()
+      ENDPROC
+
+      PROCEDURE command2.Click
+         LOCAL x
+         BEGIN TRANSACTION
+            x = TABLEUPDATE(.T.,.F.,"testtab1")
+   	 IF x = .T.
+   	    WAIT WINDOW "RETURNED .T." TIMEOUT 1.5
+   	 ELSE
+   	    WAIT WINDOW "RETURNED .F." TIMEOUT 1.5
+   	 ENDIF
+   	 IF x = .T.
+         END TRANSACTION
+     	 ELSE
+         ROLLBACK
+   	    =AERROR(mverror)
+   	    IF TYPE("mverror")<>"U"
+   	       WAIT WINDOW STR(mverror[1,1])  + " "+ STR(RECCOUNT()) + ;
+   		    " " + STR(RECNO()) TIMEOUT 1.5
+   	     ENDIF
+   	  ENDIF
+        THISFORM.REFRESH()
+      ENDPROC
+
+      PROCEDURE command3.Click
+         =TABLEREVERT(.T.,"testtab1")
+         ThisForm.Refresh()
+         ThisForm.txtidcode.SetFocus()
+      ENDPROC
+
+   ENDDEFINE
+
+3. Create a third program named Runtest.prg that contains the following code.
+
+   NOTE: When you run this program, two instances of Visual FoxPro open
+   automatically. To specify which version of Visual FoxPro (6.0 or 7.0) you
+   want to use, adjust the number in the CREATEOBJECT calls. If you do not have
+   Visual FoxPro 6.0 installed and you run this code as-is, you may receive the
+   following error message:
+
+   Class definition VISUALFOXPRO.APPLICATION.6 is not found.
+
+   Save the program in the new directory created in step 1.
+
+   CD JUSTPATH(SYS(16))
+   SET SAFETY OFF 
+   CLEAR ALL 
+   CLOSE DATABASES ALL 
+   DELETE FILE testdb.d??
+   DELETE FILE testtab1.*
+   CREATE DATABASE testdb
+   CREATE TABLE testtab1 (idcode n(3,0))
+   INSERT INTO testtab1 VALUES (1)
+   INDEX ON idcode TAG idcode candidate
+   CLOSE DATABASES ALL 
+
+   PUBLIC oVFP1, ;
+       oVFP2
+   oVFP1 = CREATEOBJECT('visualfoxpro.application.6')
+   oVFP1.visible = .t.
+   oVFP1.DefaultFilePath = SET('default') + CURDIR()
+   oVFP1.DoCmd('do testxxx1.prg')
+   oVFP1.Caption = oVFP1.Caption + " - Instance 1"
+
+   oVFP2 = CREATEOBJECT('visualfoxpro.application.6')
+   oVFP2.visible = .t.
+   oVFP2.DefaultFilePath = SET('default') + CURDIR()
+   oVFP2.DoCmd('do testxxx2.prg')
+   oVFP2.Caption = oVFP2.Caption + " - Instance 2"
+
+   RETURN 
+
+4. Run the Runtest.prg program. Two instances of Visual FoxPro should appear.
+
+5. Arrange both instances of Visual FoxPro so that you can see them at the same
+   time.
+
+6. Click anywhere on the form in instance 1, and then click New. Type "2"
+   (without the quotation marks) in the text box.
+
+7. Click anywhere on the form in instance 2, and then click New. Type "2"
+   (without the quotation marks) in the text box.
+
+8. Click anywhere on the form in instance 1, and then click Save. The Wait
+   window returns .T. to indicate that the record was saved.
+
+9. Click anywhere on the form in instance 2, and then click Save. The Wait
+   window returns .F. to indicate that the record was not saved. The error
+   message is 1884 "Uniqueness of index is violated"
+
+10. Click Save in instance 2 again. The Wait window returns .T. but the record
+   was not saved. The record also appears in the grid. This indicates that the
+   index is corrupted.
+
+To view the index corruption, exit both forms, and then run the following code to
+open the TESTTAB1 table:
+
+   USE TESTTAB1 ORDER idcode
+   BROWSE NOWAIT
+
+This command opens a Browse window that displays three records. However, you
+cannot use the arrow keys or the mouse to move to the third record, and the
+record count in the status bar indicates that only two records exist. Also,
+there are two instances of the number 2 in the table, which is illegal for the
+type of index in effect (candidate).
+
+Additional query words: kbVFP700sp1fix
+
+======================================================================
+Keywords          : kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600 kbVFP700
+Version           : :6.0,7.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

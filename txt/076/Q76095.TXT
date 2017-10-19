@@ -1,0 +1,57 @@
+DOCUMENT:Q76095  10-NOV-1999  [macmail]
+TITLE   :CONN: -N or /N Allows Use of Different .INI Filename
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection Gateway, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start MSGATE.EXE, Mail Connection, by default, always looks for the
+file M:MSGATE\INI\MSGATE.INI. You can use the -N or /N command-line parameter to
+specify a different, eight-character .INI filename (this example assumes that
+the current directory of drive M is the root of the Microsoft Mail for PC
+Networks postoffice):
+
+1. Change to the MSGATE\INI directory on the gateway postoffice.
+
+2. Copy the MSGATE.INI file to a new file called TEMP.INI.
+
+3. Start the MSGATE.EXE program with the following command line:
+
+   msgate -ntemp'
+
+   When the gateway starts, the following extra line appears:
+
+   Instance: TEMP
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailConn100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

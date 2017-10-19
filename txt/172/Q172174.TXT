@@ -1,0 +1,76 @@
+DOCUMENT:Q172174  09-AUG-2000  [msnetwork]
+TITLE   :MSN Sign In Screen Continues to Appear
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3,2.0,2.5,2.6
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3, 2.0, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to MSN, The Microsoft Network, the MSN Sign In
+screen may continue to appear until the MSN Troubleshooting page appears.
+
+CAUSE
+=====
+
+The Msncall.exe file may be damaged or missing.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click Start, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "msncall.exe" (without the quotation marks), and then
+   click Find Now.
+
+3. Right-click the Msncall.exe file in the list of found files, and then click
+   Delete.
+
+4. Insert the MSN CD-ROM into the CD-ROM drive. If the Auto Insert Notification
+   option is turned on, close the Welcome To MSN window that opens on the
+   desktop.
+
+5. Double-click My Computer.
+
+6. Right-click the CD-ROM drive icon, and then click Explore.
+
+7. Double-click the Msnsetup folder.
+
+8. Double-click the Compnts folder.
+
+9. Double-click the Msn13.exe file.
+
+10. When you are prompted to restart the computer, click Yes.
+
+Additional query words: popup, pop up, pop-up, pop-ups, looping sign-in screen
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN260 kbMSN250 kbMSN120
+Version           : WINDOWS:1.2,1.3,2.0,2.5,2.6
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

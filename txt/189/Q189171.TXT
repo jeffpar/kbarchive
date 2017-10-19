@@ -1,0 +1,85 @@
+DOCUMENT:Q189171  09-AUG-2001  [winnt]
+TITLE   :WinSock Applications May Fail or Stop Responding
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbWinNT400sp4fix kbAPI kbSDKPlatform kbWinsock kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a WinSock application on a Windows NT computer, one or more of the
+following symptoms may occur:
+
+ - If a WinSock 1.1 application sets the SO_OPENTYPE sockopt, or a WinSock 2.0
+   application does not specify WSA_FLAG_OVERLAPPED to WSASocket(), the socket
+   handle returned by WSPSocket() is supposed to be non-overlapped, and usable
+   by ReadFile/Writefile etc. If a layered service provider (LSP) is installed,
+   the non-overlapped flag is ignored and all sockets created are overlapped.
+   This causes any application that uses file I/O calls to hang or fail.
+
+ - When sending a 4 KB packet over NetBEUI followed by a receive packet, the 4
+   KB send returns success, but does not make it to the remote end and the
+   subsequent receive fails with c000013b or error code 1726
+   (RPC_S_CALL_FAILED). This happens with or without security, and only with
+   buffers greater than or equal to 4 KB.
+
+ - When running a script with the WinSock function AfdAllocateMdlChain, when
+   WSASend bufferPointer is set to NULL and/or bufferLength is set to zero (0),
+   WSARecv and WSARecvFrom return SUCCESS but report that they transferred zero
+   bytes even though there is data available to be received. This call should
+   not succeed with the amount of data available to be transferred. WSASend and
+   WSASendTo return WSAEFAULT, which is correct behavior.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+Additional query words: hung hangs crash fails unresponsive
+
+======================================================================
+Keywords          : kbnetwork kbWinNT400sp4fix kbAPI kbSDKPlatform kbWinsock kbGrpDSNet 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WINNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

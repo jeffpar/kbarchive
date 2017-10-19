@@ -1,0 +1,72 @@
+DOCUMENT:Q235661  14-NOV-2000  [word97]
+TITLE   :WD97: Error Msg: "Word cannot edit the Microsoft Excel Chart"
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbdtacode KbVBA
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you insert a Microsoft Excel Chart object into a Word 97 document and
+group it with an object such as a text box, the following error messages appear
+when you run a Visual Basic for Applications macro that uses the DoVerb method
+to open the Excel chart:
+
+   Word cannot edit the Microsoft Excel Chart
+
+   Run-time error "16389" Internal Error
+
+WORKAROUND
+==========
+
+Use the Open method instead of the DoVerb method to open the Excel object. For
+example, change the following code:
+
+   ActiveDocument.Shapes(1).GroupItems(1).OleFormat.DoVerb 2
+
+to
+
+   ActiveDocument.Shapes(1).GroupItems(1).OleFormat.Open
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+
+Additional query words: vba word97 wd97 oleformat doverb open object excel97 xl97
+
+======================================================================
+Keywords          : kbdta kbdtacode KbVBA 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

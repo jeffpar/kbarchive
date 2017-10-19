@@ -1,0 +1,69 @@
+DOCUMENT:Q146106  17-DEC-2000  [crossnet]
+TITLE   :Using IBMTOK.DOS on Fast Computers Results In Error 36
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LAN Manager, version 2.2c 
+ - Microsoft Network Client for MS-DOS version 3.0 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you load a real-mode protocol, such as MS-DLC, TCP/IP or NetBEUI, on a LAN
+Manager 2.2c, a Network Client 3.0 for MS-DOS or a Windows for Workgroups 3.11
+computer using IBMTOK.DOS for a token ring adapter, the following error message
+appears:
+
+   Error 36: Unable to bind. Hardware failure.
+
+CAUSE
+=====
+
+This problem occurs on any computer running at a CPU speed greater than 60 Mhz.
+The IBMTOK.DOS driver does not work properly at CPU speeds greater than 60 Mhz.
+
+RESOLUTION
+==========
+
+To correct this problem, download IBMTOKR.EXE, a self-extracting file that
+includes the new IBMTOK.DOS driver (dated 10/18/94), from the following
+service:
+
+ - Internet (anonymous FTP) ftp ftp.microsoft.com Change to the Softlib/Mslfiles
+   folder. Get IBMTOKR.EXE
+
+
+For additional information about , please see the following article(s) in the
+Microsoft Knowledge Base:
+
+   Q119591 How to Download Microsoft Support Files from Online Services
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbLanManSearch kbWFWSearch kbNetworkClientSearch kbWFW311 kbLanMan220c kbNetworkClient300DOS
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

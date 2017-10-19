@@ -1,0 +1,74 @@
+DOCUMENT:Q151870  27-JUL-2001  [mastering]
+TITLE   :BUG: Mastering Exchange: Help Option Doesn't Work During Setup
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm kbsetup kbnokeyword kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Exchange Development ISBN 1-57231-337-4, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Help option does not function in the Setup error dialog you receive when
+your hard drive is too full.
+
+RESOLUTION
+==========
+
+There is no resolution to this problem.
+
+MORE INFORMATION
+================
+
+When you install Mastering Exchange Development to a hard drive that does not
+have enough space available, you get the following message:
+
+   There does not appear to be sufficient disk space available on drive c to
+   install Mastering Microsoft Exchange Development.
+
+with the option to click OK or Cancel. If you click OK, the program will try to
+continue with the installation and you will receive the following error
+message:
+
+   Cannot install files from <filename>.
+
+This dialog gives you the option to click Continue Operation (the default),
+Cancel Operation, Help, or More. If you click Help. nothing happens.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed above. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm kbsetup kbnokeyword kbBug kbISS 
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

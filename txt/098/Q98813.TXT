@@ -1,0 +1,56 @@
+DOCUMENT:Q98813  20-NOV-1999  [pcmail]
+TITLE   :PROFS: 3.0 Gateway Disk 1 [5.25, 1.2 MB]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Here is the directory listing of the version 3.0 Microsoft Mail PROFS Gateway
+Gateway Disk 1 in 5.25-inch format.
+
+ Volume in drive A is PRGWY1DSK30
+ Volume Serial Number is 2E70-16DD
+ Directory of A:\ 
+ 
+IBM_HIGH EXE    274669 09-18-92  12:00p
+INSTALL  EXE     27570 09-18-92  12:00p
+REMOVE   EXE     26468 09-18-92  12:00p
+UPDATE   EXE     27344 09-18-92  12:00p
+VMGATE   HLP     19774 09-18-92  12:00p
+ 
+        5 file(s)     375825 bytes
+                      837120 bytes free
+
+
+Additional query words: 3.00 dirgtway
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,96 @@
+DOCUMENT:Q201830  03-MAY-2001  [visualc]
+TITLE   :BUG: Error C2011 When Reusing Nested Structure Tag Names
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbConly kbVC200 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the same tag name is used to declare nested structures inside different
+base structure declarations, the follow error is generated:
+
+   error C2011: '<identifier>' : '<type>' type redefinition
+
+NOTE: The C++ compiler does not generate this error.
+
+RESOLUTION
+==========
+
+To work around this problem, either don't use tag names for nested structures,
+or use unique tag names for all structures.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The following code fails to compile with the C compiler. Error C2011 is reported
+at the second use of "tag_LEVEL2" and "tag_LEVEL3". This error does not occur
+using the C++ compiler.
+
+   /* Defining "A" structure */ 
+   struct tag_STRUCTA {
+
+      struct tag_LEVEL2 {
+         int   member_a2;
+
+         struct tag_LEVEL3 {
+            int member_a3;
+         };
+      };
+   };
+
+   /* Defining "B" structure */ 
+   struct tag_STRUCTB {
+
+      struct tag_LEVEL2 {
+         int   member_b2;
+      };
+      struct tag_LEVEL3 {
+         int member_b3;
+      };
+   };
+
+Additional query words:
+
+======================================================================
+Keywords          : kbConly kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:2.0,4.0,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

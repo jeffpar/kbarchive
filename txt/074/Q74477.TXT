@@ -1,0 +1,55 @@
+DOCUMENT:Q74477  05-NOV-1999  [win16sdk]
+TITLE   :"Profiler VM Terminated Abnormally" Message Causes
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The VPROD.386 device driver displays the message "Profiler VM terminated
+abnormally" whenever the virtual machine (VM) being profiled is terminated
+(crashed) while profiling is still under way. Some circumstances under which
+virtual machines are terminated are: when a bad instruction is executed, when an
+attempt is made to program virtualized hardware in a manner incompatible with
+the virtualizing virtual device (VxD), or when the user selects "Terminate" in
+the Settings dialog box. In any of these situations, the VPROD device driver
+cannot flush its queued profile data and clean up after itself.
+
+The message is displayed when VPROD can no longer simulate MS-DOS calls into the
+terminated VM. The message warns that it is highly likely that profiling data
+has been lost.
+
+For more information on the Profiler, see chapter 13 of the "Microsoft Software
+Development Kit Tools" manual.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

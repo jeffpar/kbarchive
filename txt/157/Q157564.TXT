@@ -1,0 +1,76 @@
+DOCUMENT:Q157564  20-FEB-2002  [winnt]
+TITLE   :STOP: c0000263 on Upgrade from WinNT 4.0 to WinNT 3.51
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51,4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to install Windows NT 3.51 as an upgrade over Windows NT 4.0
+(released build or beta), the following error message occurs:
+
+   STOP: c0000263 {Driver Entry Point Not Found}
+   The \SystemRoot\system32\drivers\Scsiscan.SYS device driver could not locate
+   the entry point ObfReferenceObject in driver ntoskrnl.exe?.
+
+CAUSE
+=====
+
+Windows NT 3.51 was not designed to upgrade versions of Windows NT later than
+itself. In fact, you will not have the option to upgrade Windows NT 4.0 with
+Windows NT 3.51. If you attempt to install Windows NT 3.51 over an existing
+Windows NT 4.0 installation, you will be prompted that the pre- existing files
+will be replaced.
+
+The Windows NT 3.51 setup process will fail just after the first reboot.
+
+RESOLUTION
+==========
+
+After the attempted installation of Windows NT 3.51 over Windows NT 4.0, Windows
+NT 4.0 will no longer be functional. The resolution will be to attempt to
+either:
+
+ - Perform a new installation of Windows NT 3.51 by deleting the existing,
+   corrupted version during the Windows NT 3.51 setup process.
+
+   -or-
+
+ - If data/application and registry settings need to be recovered, install
+   Windows NT 3.51 into another subdirectory, delete the corrupt version of
+   Windows NT, and then restore a complete backup tape to the drive, including
+   the registry.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

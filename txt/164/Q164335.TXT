@@ -1,0 +1,65 @@
+DOCUMENT:Q164335  14-NOV-2000  [word97]
+TITLE   :WD97: "Change Text Direction" Button Shows Incorrect Direction
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbualink97 kbui kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you change the text direction in a text box or table cell, the Change Text
+Direction button shows the text direction incorrectly.
+
+CAUSE
+=====
+
+The purpose of the button face is to show the position of the text after you
+click the button. This functionality is by design in Word.
+
+MORE INFORMATION
+================
+
+In Word, you can rotate text in a text box or table cell without having to use
+WordArt (as you did in previous versions of Word).
+
+On either the Tables and Borders toolbar or the Text Box toolbar, Word provides a
+Change Text Direction button. The purpose of this button is to rotate the text
+into one of three predefined directions, and the button reflects the next
+direction of the text if you were to click the button again.
+
+NOTE: The Change Text Direction button does not indicate the current direction of
+text, nor can you add a different text direction for use with the Change Text
+Direction button.
+
+Additional query words: 97 8.0 word8 word97
+
+======================================================================
+Keywords          : kbualink97 kbui kbusage 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

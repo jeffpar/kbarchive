@@ -1,0 +1,69 @@
+DOCUMENT:Q118813  15-NOV-1999  [pcmail]
+TITLE   :PC Ext: Script File Order of Precedence
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 377 of version 3.2 Microsoft Mail for PC Networks and on page 237 of
+version 3.5 "Administrator's Guide," under the section heading "Specifying a
+File with the Administrator Program," the following incorrect statement
+appears:
+
+   NOTE: A Script file specified in the External-Admin Setup screen Phone number
+   field overrides both the default script file and a script file specified in
+   the External program .INI file with the CommScript option or the -tname
+   command line option.
+
+The correct order of precedence is listed on page 237. The command-line option
+takes precedence over the .INI entry that takes precedence over the Admin
+program script file setting.
+
+External will run the commands it finds last. It checks the following locations
+in this order:
+
+1. The Administrator program
+
+2. The Dynamic Drive Administration program
+
+3. The global section in the .INI file
+
+4. The instance specific section in the .INI file
+
+5. The command-line option
+
+6. Modem script file
+
+
+Additional query words: 3.20 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN350
+Version           : WINDOWS:3.2,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

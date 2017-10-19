@@ -1,0 +1,81 @@
+DOCUMENT:Q191669  21-JUL-2001  [visualc]
+TITLE   :PRB: LNK2001: Unresolved External Symbol __chkesp
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCRT kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a project with Visual C++ 6.0, you may get the following linker
+error:
+
+   error LNK2001: unresolved external symbol __chkesp
+
+CAUSE
+=====
+
+The new compiler stack-checking feature requires you to link with the C run-
+time library.
+
+RESOLUTION
+==========
+
+Either link with one of the C run-time libraries or disable the compiler stack
+checking feature (remove /GZ from the compiler switches).
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Sample Code
+-----------
+
+      // test.cpp
+      // compile with: cl /GZ t.cpp /link /nod
+      void f() {}
+      int main ()
+      {
+         f();
+         return 0;
+      }
+
+======================================================================
+Keywords          : kbCompiler kbCRT kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : WINNT:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

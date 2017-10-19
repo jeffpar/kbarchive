@@ -1,0 +1,89 @@
+DOCUMENT:Q258791  12-APR-2000  [winnt]
+TITLE   :"LdapErr"When Connecting to MMS Configured with Compass
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message may be displayed when you are trying to log on to
+Microsoft Metadirectory Services (MMS) running on Microsoft Windows 2000 by
+using the Compass client:
+
+   80090308: LdapErr: DSID-0C090290, comment: AcceptSecurityContext error, data
+   525, v893
+
+CAUSE
+=====
+
+You are attempting to connect to an MMS server running on a Windows 2000-based
+domain controller using Lightweight Directory Access Protocol (LDAP) port 390.
+However, the Compass client is connecting using LDAP port 389.
+
+RESOLUTION
+==========
+
+To configure Compass for port 390:
+
+1. Start Compass.
+
+2. Log on with the administrator ID and password.
+
+3. When the Server dialog box appears, click Configure.
+
+4. Click New.
+
+5. In the Name box, type the name of the MMS server.
+
+6. In the Host Name Or Address box, type the name or the IP address of the MMS
+   server.
+
+7. In the Port, type "390" (without the quotation marks) instead of the default
+   389.
+
+8. Click Apply.
+
+9. In the Server box, click the name of the server.
+
+10. Click OK.
+
+11. Click OK.
+
+MORE INFORMATION
+================
+
+Microsoft Active Directory uses LDAP port 389.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,89 @@
+DOCUMENT:Q174129  14-JUN-2001  [msnetwork]
+TITLE   :Visual Basic Script Error Messages When Connected to MSN
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5 (OEM Release),3.01,3.02,95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbinterop kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 (OEM Release) 
+ - Microsoft Internet Explorer versions 3.01, 3.02 for Windows 95 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to MSN, The Microsoft Network, you may receive Visual Basic
+script error messages and you may not be able to access On Stage or other MSN
+sites.
+
+CAUSE
+=====
+
+Your MSN security settings may need to be changed.
+
+RESOLUTION
+==========
+
+To resolve this issue, correct your MSN security settings. To do so, follow
+these steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Internet.
+
+2. Click the Security tab.
+
+3. Under Active Content, click all of the check boxes to select them.
+
+4. Click Safety Level, click High, and then click OK.
+
+5. Click the Advanced Tab.
+
+6. Under Warnings, click all of the check boxes to select them, and then click
+   OK.
+
+7. Restart the computer.
+
+8. Test to determine if the issue is resolved by connecting to MSN. If the issue
+   still occurs, continue to the next step. If the issue is resolved, skip the
+   remaining steps.
+
+9. Click Start, point to Find, and then click Files Or Folders.
+
+10. In the named box, type "mailctl.ocx" (without quotation marks), and then
+   click Find Now. When the file is found, right-click the file, and then click
+   Rename. Rename the file to Mailctl.old.
+
+11. In the named box, type "postman.exe" (without quotation marks), and then
+   click Find Now. When the file is found, right-click the file, and then click
+   Rename. Rename the file to Postman.old.
+
+12. Restart the computer.
+
+Additional query words: 2.00 2.50 msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbenv kberrmsg kbinterop kbmsn 
+Technology        : kbIEsearch kbWin95search kbMSNSearch kbIE95Search kbZNotKeyword3 kbWin95 kbIE301Win95 kbIE302Win95 kbMSN200 kbMSN250OEM
+Version           : WINDOWS:2.0,2.5 (OEM Release),3.01,3.02,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

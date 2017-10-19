@@ -1,0 +1,59 @@
+DOCUMENT:Q94558  24-OCT-1999  [win95x]
+TITLE   :TOSHIBA.DRV Causes GP Fault
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Toshiba P1351 printer driver (TOSHIBA.DRV), may cause a general protection
+(GP) fault in COMMDLG.DLL when you first run or print from the Windows Write
+application.
+
+To correct this problem, use the TOSHIBA.DRV file included with Microsoft Windows
+and Windows for Workgroups (WFWG) version 3.1.
+
+MORE INFORMATION
+================
+
+The following is a list of TOSHIBA.DRV versions and dates:
+
+Filename                      Version   Date
+------------------------------------------------
+
+TOSHIBA.DRV                   3.0       10-31-90
+TOSHIBA.DRV (Windows 3.1)     1.1       3-10-92
+TOSHIBA.DRV (WFWG)            1.1       10-1-92
+
+Additional query words: 3.10 tosh24.exe toshiba.drv works 2.0
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

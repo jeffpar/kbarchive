@@ -1,0 +1,179 @@
+DOCUMENT:Q139626  17-AUG-1999  [foxpro]
+TITLE   :HOWTO: Drag and Drop Between Two Containers
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbcode kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to drag objects between containers. This
+example uses a custom container class and drags a bitmap image between the
+containers. This example also shows how to drag an image within the control.
+However, this example does not cover all the possible variations of dragging and
+dropping objects; it is intended to demonstrate only the basic principles and
+code necessary to implement drag and drop. You should be prepared to modify the
+sample code given here to meet the needs of your situation.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Create a new class (on the File menu, click New, and then click Class).
+
+2. In the New Class dialog box, name the class Containerx, select Container from
+   the Based On combo box, and select a class library in which to store the
+   class.
+
+3. In the Class Designer, resize the container to make it perhaps one inch wide
+   by two inches high. Accept the remaining defaults. Exit the Class Designer,
+   and save your changes.
+
+4. Create a new form, making it big enough to hold two containers.
+
+5. Click the View Classes button on the Forms Control toolbar. Click Add, and
+   select the library in which you stored the container class. Locate the button
+   for the container class you created (Containerx), click it, and add it to the
+   form. Repeat this step so that you have two containers (Containerx1 and
+   Containerx2).
+
+6. Add an image (Image1) to Containerx1. To do this:
+
+   a. Select the Containerx1 container.
+
+   b. Right-click the container, and then click Edit.
+
+   c. Add the image (Image1) to the Containerx1 container.
+
+      NOTE: Adding the image in this manner ensures that the image is added to
+      the container, rather than simply floating on top of it.
+
+7. Select the Image1 control. Set its DragDrop property to 1 (automatic), and
+   set its Picture property to a bitmap image. The Fox.bmp in the Vfp directory
+   is a good choice.
+
+   NOTE: Because the DragMode property is set to automatic for the image, you do
+   not need to code any events for the image. If the DragMode property were 0
+   (manual), you would have to code the MouseDown and MouseUp events to call the
+   Drag method.
+
+8. To allow the image to be dragged or moved between containers, you need to
+   provide a way to check and see if an image already exists in the container.
+   Two custom properties can be added to help. On the Form menu, click New
+   Property. Name the first property Container1pict and the second
+   Container2pict. Click the Other tab of the Property sheet. Locate the
+   Container1pict property, and set it to True (.T.). Keep the default value of
+   False (.F.) for the second property (Container2pict).
+
+9. Add code to the DragDrop event of both containers. This code executes when
+   the object is released (dropped).
+
+   a. Enter the following code in the DragDrop event of Containerx2:
+
+            * The first line is already there.
+            * oSource is a reference to the object being dragged.
+            * nXcoord and nYcoord are the coordinates of the mouse pointer
+            * within the target form. Their coordinates are taken from the
+            * position of the tip of the mouse pointer.
+
+         LPARAMETERS oSource, nXCoord, nYCoord
+
+         oName = oSource.name
+         * The IF test checks the Container1pict property. It it is true (.T),
+         * the object already exists and you are moving it, so you can skip
+         * the addobject procedures. If it is false (.F.), you need to run the
+         * addobject procedures
+
+         IF thisform.container1pict = .T.
+
+         * Addobject adds an object of the type specified by oSource.class to
+         * the container and gives it the name referenced by the oName
+         * variable.
+            this.addobject(oName,oSource.class)
+            oRef=eval('this.'+oName)
+            oRef.picture = oSource.picture
+
+         * nXcoord and nYcoord are absolute form coordinates.
+         * They need to be recalculated relative to the container.
+           oRef.top = (nYcoord -(oRef.height/2))- this.top
+           oRef.left = (nXcoord-(oRef.width/2)) - this.left
+
+         * Addobject always sets the visible property to false (.F.).
+         * This property must be reset when you are ready to display it.
+           oRef.visible = .t.
+
+         * You want only one copy or instance of the object:
+           thisform.containerx1.removeobject(oName)
+           oRef.dragmode = 1
+           thisform.refresh
+           thisform.container1pict = .f.
+           thisform.container2pict = .t.
+
+         ELSE
+
+         * If the object already exists, you are moving it within the
+         * container nXcoord and nYcoord are recalculated differently and
+         * the move event is called.
+         nXcoord = nXcoord - this.left
+         nYcoord = nYcoord - this.top
+         oSource.move((nXcoord-oSource.width/2),(nYcoord-oSource.height/2))
+         oSource.visible = .t.
+
+         ENDIF
+
+   b. Enter the same code in DragDrop event the for Containerx1. Then edit the
+      following lines of code in the DragDrop event of Containerx1:
+
+         Containerx1 should read:
+            IF thisform.container2pict = .T.
+         Containerx2 should read:
+            IF thisform.container1pict = .T.
+
+         Containerx1 should read:
+            thisform.containerx2.removeobject(oName)
+         Containerx2 should read:
+            thisform.containerx1.removeobject(oName)
+
+         Containerx1 should read:
+            thisform.container1pict = .t.
+            thisform.container2pict = .f.
+         Containerx2 should read:
+            thisform.container1pict = .f.
+            thisform.container2pict = .t.
+
+10. Run the form. You should be able to drag the image from Containerx1 to
+   Containerx2. The image should disappear from Containerx1. You should Then be
+   able to move the image within Containerx2, or drag it back to Containerx1.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

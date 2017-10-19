@@ -1,0 +1,60 @@
+DOCUMENT:Q276345  12-NOV-2001  [homegame]
+TITLE   :Microsoft Casino: How to Improve Game Performance
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbsound kbimu msgame kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Casino, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to improve game performance in Microsoft Casino.
+
+MORE INFORMATION
+================
+
+To improve game performance, turn off Game Sound Volume, Dealer Speech Volume,
+and Game Animation on the Game Options screen:
+
+1. On the Casino startup screen, click Options.
+
+   From any other game screen, press the F8 key.
+
+2. Move the Game Sound Volume slider all the way to the left (the zero setting).
+
+3. Move the Dealer Speech Volume slider all the way to the left (the zero
+   setting).
+
+4. Click to clear the Game Animation check box, and then click OK ([GRAPHIC:the
+   star and circle with the green check mark]).
+
+Additional query words: 1.00 msgame mscasino speed increase faster
+
+======================================================================
+Keywords          : kbdisplay kbsound kbimu msgame kbgraphxlinkcritical 
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbCasino
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

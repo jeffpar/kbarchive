@@ -1,0 +1,149 @@
+DOCUMENT:Q232391  30-SEP-1999  [exchange]
+TITLE   :XADM: Duplicate Messages Received When Message Sent to Large DL
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a user sends a message to a large distribution list (DL), it is possible
+for some recipients to receive the message multiple times. For this to happen,
+most of the recipients in the DL must be over their mailbox quota and not
+allowed to receive new mail. Also, the message must originate from outside the
+server so that the message is delivered by the Message Transfer Agent (MTA).
+Users who are not over their quota and are a member of the DL will receive the
+message once an hour.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Information Store
+
++-------------------------+
+| File name  | Version    | 
++-------------------------+
+| Store.exe  | 5.5.2621.0 | 
++-------------------------+
+| Mdbmsg.dll | 5.5.2621.0 | 
++-------------------------+
+| Gapi32.dll | 5.5.2621.0 | 
++-------------------------+
+| Netif.dll  | 5.5.2621.0 | 
++-------------------------+
+
+Component: MTA
+
++---------------------------+
+| File name    | Version    | 
++---------------------------+
+| Dbserver.sch | 5.5.2621.0 | 
++---------------------------+
+| Dcprods.cat  | 5.5.2621.0 | 
++---------------------------+
+| Ems_rid.dll  | 5.5.2621.0 | 
++---------------------------+
+| Emsmta.exe   | 5.5.2621.0 | 
++---------------------------+
+| Info4log.cfg | 5.5.2621.0 | 
++---------------------------+
+| Infoblog.cfg | 5.5.2621.0 | 
++---------------------------+
+| Infodlog.cfg | 5.5.2621.0 | 
++---------------------------+
+| Infollog.cfg | 5.5.2621.0 | 
++---------------------------+
+| Infoplog.cfg | 5.5.2621.0 | 
++---------------------------+
+| Infotlog.cfg | 5.5.2621.0 | 
++---------------------------+
+| Mtacheck.exe | 5.5.2621.0 | 
++---------------------------+
+| Mtamsg.dll   | 5.5.2621.0 | 
++---------------------------+
+| P2.xv2       | 5.5.2621.0 | 
++---------------------------+
+| X400om.dll   | 5.5.2621.0 | 
++---------------------------+
+| X400omv1.dll | 5.5.2621.0 | 
++---------------------------+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 3.
+
+MORE INFORMATION
+================
+
+When the Exchange Server information store is attempting to deliver the message,
+it will log the following error:
+
+   Event ID: 2025
+   Category: Transport Delivering
+   Source: MSExchangePrivate
+   Type: Information
+   Description:
+   The delivery of a message failed due to error 000004DD. A non-delivery report
+   is being sent to the message's originator.
+
+At this point, the store builds a list of users who cannot take delivery of the
+message. After this is completed, the store sends the MTA the object with the
+list. When the MTA sees this large object, the MTA responds with an "out of
+resources" error. When this occurs, the message does not get purged from the
+queue, but rather remains in the queue. By default, the store tracks duplicate
+message delivery for one hour. When the message remains in the queue for over an
+hour, the store will again try to deliver this message. The users that can
+accept delivery of the message will get a second copy. Users will continue to
+get a copy of the message every hour until the message is manually removed from
+the queue.
+
+To resolve this problem, both the MTA and the store had to be modified to work
+together. Both components are required for this to work correctly.
+
+Additional query words: restriction lockout quota exceed over
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

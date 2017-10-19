@@ -1,0 +1,44 @@
+DOCUMENT:Q66884  30-JUL-2001  [homegame]
+TITLE   :ASD: Using SubLogic Scenery
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+SubLogic makes scenery disks that may be used in place of the default Flight
+Simulator scenery. These scenery disks can be used with Aircraft & Scenery
+Designer (ASD) version 4.00 without any adverse effects. It is therefore
+possible to add scenery to existing SubLogic scenery.
+
+Note that each SubLogic scenery disk varies in its representation of the world.
+This may cause the location of ASD scenery to vary depending on which SubLogic
+scenery is being used.
+
+To avoid discrepancies, load the Scenery disk first, then create custom scenery.
+Use custom scenery only in conjunction with the SubLogic disk it was created
+for.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

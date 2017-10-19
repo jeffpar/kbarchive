@@ -1,0 +1,69 @@
+DOCUMENT:Q191206  11-JAN-2001  [vbwin]
+TITLE   :PRB: Compiler Error Overriding VBA Conversion Functions
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbCompiler kbVBp500 kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You might receive the following Visual Basic Compiler Error Message when you try
+to override a VBA Conversion function such as Cdate:
+
+   Expected Identifier
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create the following function in Visual Basic:
+
+         Public Function CDate(vExp) as Date
+            MsgBox "Won't Compile"
+         End Function
+
+2. Select "Start With Full Compile" from the Run menu.
+
+RESULTS: The compile error "Expected: Identifier" appears. In Visual Basic 6.0,
+you can override the CVDate function.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbCompiler kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

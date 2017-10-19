@@ -1,0 +1,62 @@
+DOCUMENT:Q247908  08-AUG-2001  [winnt]
+TITLE   :STOP 0x0000001e Error in Ntoskrnl.exe at Blue Build Screen
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you turn on a computer running Microsoft Windows NT 4.0 Server Service Pack
+4, you may receive the following STOP error at the blue screen that identifies
+the Windows NT build:
+
+   STOP 0x0000001e (0xc0000005, 0x801a8a83, 0x00000000, 0x005c0069)
+   KMODE_EXCEPTION_NOT_HANDLED Address 801a8a83 has base at 80100000 -
+   ntoskrnl.exe
+
+Using the Emergency Repair Disk does not fix the problem, and your attempts to
+replace registry hives from a parallel installation do not succeed.
+
+CAUSE
+=====
+
+This behavior can occur when the SOFTWARE hive of the registry is corrupted.
+
+RESOLUTION
+==========
+
+To resolve this issue, restore the SOFTWARE registry hive from a current tape
+backup.
+
+Additional query words: blue screen crash fatal 0x01E
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

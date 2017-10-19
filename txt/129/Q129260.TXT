@@ -1,0 +1,571 @@
+DOCUMENT:Q129260  02-FEB-2002  [win95x]
+TITLE   :Windows 95 Setup: Description and Troubleshooting Steps
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:kbsetup win95kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+This article describes troubleshooting steps that may help you solve
+problems installing Windows 95. This information is also available in our
+Windows 95 Setup Troubleshooting Wizard. We recommend using this wizard,
+but we have also created this text-based article for your convenience. The
+Windows 95 Setup Troubleshooting Wizard is located on:
+
+   http://support.microsoft.com/support/tshoot/default.asp
+
+SUMMARY
+=======
+
+This article lists steps to troubleshoot Setup problems and describes the
+Windows 95 Setup process for a typical upgrade from an earlier version of
+Windows.
+
+MORE INFORMATION
+================
+
+Troubleshooting Setup
+---------------------
+
+Before you try any of the following steps, create a boot disk for your current
+operating system. Copy any files you need to start your computer (including the
+Autoexec.bat and Config.sys files) to the boot disk. Make sure to include any
+necessary device driver files (such as a device driver that gives you access to
+the hard disk). For instructions about how to create a boot disk, please consult
+your operating system's documentation.
+
+Clean Boot
+----------
+
+If you have problems installing Windows 95, you should first try a clean boot. If
+no disk-compression software, disk partitioning software, or other third-party
+driver is necessary to start your computer, follow these steps to try a clean
+boot:
+
+1. Rename the Config.sys file to Config.xxx. To do so, type the following line
+   at a command prompt:
+
+   "ren c:\config.sys config.xxx" (without the quotation marks)
+
+2. Rename the Autoexec.bat file to Autoexec.xxx. To do so, type the following
+   line at a command prompt:
+
+   "ren c:\autoexec.bat autoexec.xxx" (without the quotation marks)
+
+3. Restart your computer and run Setup again.
+
+Setup from MS-DOS:
+
+If disk partitioning, disk compression, or other third-party software is required
+to start your computer, the Autoexec.bat and Config.sys files should appear as
+follows:
+
+   Config.sys
+   --------------------------------------
+   <Third-party disk partitioner>
+   <Third-party disk compression driver>
+   <Other required third-party driver>
+   shell=c:\<dir>\command.com  /E:1024 /P
+   files=45
+   buffers=20
+
+   Autoexec.bat
+   ---------------
+   prompt $p$g
+   path=c:\DOS;c:\ 
+
+Setup from Windows:
+
+If disk partitioning, disk compression, or other third-party software is required
+to start your computer, the Autoexec.bat and Config.sys files should appear as
+follows:
+
+   Config.sys
+   -------------------------------------
+   device=c:\<dir>\himem.sys
+   device=c:\<dir>\emm386.exe x=a000-f7ff nohi noems novcpi nomovexbda notr
+   <Third-party disk partitioner>
+   <Third-party disk compression driver>
+   <Other third-party drivers>
+   stacks=9,256
+   shell=c:\<dir>\command.com  /E:1024 /P
+   files=45
+   buffers=20
+
+   Autoexec.bat
+   --------------------------
+   prompt $p$g
+   path=c:\Windows;c:\DOS;c:\ 
+   set temp=c:\<dir>
+
+Close all running Windows-based programs (except Program Manager) and disable
+32-bit file and disk access before you run Setup again.
+
+NOTE: These examples assume you are not running Setup from a network. If you are
+running Setup from a network, please consult your network administrator for
+information about using a minimal boot.
+
+ScanDisk Stops Responding (Hangs)
+---------------------------------
+
+If your computer hangs while ScanDisk is checking the hard disk for problems,
+Setup should return control of the computer to you after three minutes of
+inactivity. If Setup does not return control to you, run ScanDisk from the
+command prompt, and then run Setup again. If Setup continues to hang, run Setup
+with the /IS switch to prevent ScanDisk from running. When you do this, Setup
+runs Chkdsk.exe to check for cross-linked files.
+
+Setup Hangs
+-----------
+
+The most common causes for Setup to hang are viruses and anti-virus software. If
+Setup hangs, first run an anti-virus program. If no viruses are found, check to
+see if an anti-virus program is resident in memory.
+
+Some computers include an anti-virus feature that prevents programs from writing
+to the boot sector of the hard disk. Such features may be set in your computer's
+CMOS settings. If anti-virus protection is running, Setup cannot finish the
+installation, or Windows 95 does not load properly.
+
+To work around this problem, disable the anti-virus feature in your computer's
+CMOS settings and then run Setup again. Once you have successfully completed
+Setup you can re-enable the anti-virus feature. For information about how to
+change CMOS settings on your computer, please contact your computer
+manufacturer.
+
+
+Setup may also hang if the full (OEM) version of Windows 95 is being installed
+onto a clean, bootable SCSI hard disk (for example, the boot disk that ships
+with the product is not used. Instead Io.sys, Msdos.sys, and Command.com are
+copied to the hard disk).
+
+During Setup, SMARTDrive is automatically loaded but double-buffering is not
+enabled. If Windows 95 is being installed onto a SCSI hard disk that requires
+double-buffering, Setup may hang while temporary files are being copied to the
+hard disk.
+
+To work around this problem, run Setup with the /C switch to prevent SMARTDrive
+from loading.
+
+Setup Hangs on Disk 2
+---------------------
+
+This problem can be caused by either of the following situations:
+
+ - Change-line support is not working properly.
+
+   If Setup cannot read disk 2 after it reads disk 1, try the following steps:
+
+   1. Add the appropriate line to the Config.sys file:
+
+      For a 1.44-MB drive A:
+
+         drivparm=/d:0 /f:7
+
+      For a 1.44-MB drive B:
+
+         drivparm=/d:1 /f:7
+
+      NOTE: Because the /C switch is not included in these lines, MS-DOS does not
+      depend on change-line support. If the Config.sys file contains a
+      Driver.sys line, disable it by placing the REM command at the beginning of
+      the line.
+
+   2. Restart the computer and then run Setup again.
+
+      If Setup works correctly, change-line support is not functioning properly.
+      Leave the Drivparm statement in the Config.sys file.
+
+      If Setup still does not work correctly, remove the Drivparm statement from
+      the Config.sys file and consult the computer's manufacturer to make sure
+      that the computer's CMOS settings are correct.
+
+ - You may have bad Setup disks.
+
+   Disks 2-13 are Distribution Media Format (DMF) disks rather than standard
+   MS-DOS-formatted disks. DMF disks can store more information than standard
+   MS-DOS-formatted disks. However, some computers may have trouble reading DMF
+   disks. If you have a computer that does not read DMF disks properly, Setup
+   may not work properly.
+
+   You can use the following steps to troubleshoot DMF disk issues:
+
+   1. Copy the Extract.exe file from disk 1 to the root folder of drive C. To do
+      so, type the following line at the command prompt:
+
+   "copy a:\extract.exe c:\" (without the quotation marks)
+
+   2. Create a temporary folder on your hard disk by typing the following line
+      at the command prompt:
+
+   "md c:\win95tmp" (without the quotation marks)
+
+   3. With disk 2 in drive A, extract the Precopy2.cab and Win95_02.cab files to
+      the folder you created in step 2. To do so, type the following commands:
+
+   "extract /e a:\precopy2.cab /l c:\win95tmp extract /e a:\win95_02.cab /l
+   c:\win95tmp" (without the quotation marks)
+
+      NOTE: You must use the Extract command with all disks (except disk 1)
+      because they are DMF disks.
+
+      For additional information about using the Extract command, please see the
+      following article in the Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+   If you cannot extract these files from disk 2, try to extract a different .cab
+   file from a different disk. If you cannot extract any .cab file, your
+   computer hardware may not be functioning correctly, or your computer may be
+   infected with a computer virus.
+
+   You should run current virus detection software to determine if your computer
+   is infected with a virus. If a virus is detected, remove the virus from the
+   computer, and then try to extract the files again.
+
+   NOTE: If a virus has infected a Setup disk, the disk cannot be used. You will
+   need replacement disks.
+
+   If you are still unable to extract the files after verifying that your
+   computer is not infected with a virus, try extracting the files using another
+   computer. If you are able to extract the files using another computer, you
+   should contact your hardware manufacturer for assistance with properly
+   configuring or replacing your malfunctioning computer hardware.
+
+   If you encounter problems only when you try to extract certain .cab files but
+   you can extract other .cab files, you may need replacement disks. Please call
+   (800) 360-7561 or Microsoft Technical Support for replacement disks.
+
+Setup Hangs During Hardware Detection
+-------------------------------------
+
+If Setup hangs while it is detecting hardware in your computer, try the following
+steps:
+
+1. Turn your computer off, wait a few seconds, then turn it back on.
+
+   NOTE: Do not use the reset button or press CTRL+ALT+DELETE to restart your
+   computer.
+
+2. Run Setup again and choose Smart Recovery when you are prompted.
+
+If Setup continues to hang at the same place during hardware detection, follow
+these steps:
+
+1. Run Setup.
+
+2. Click the Custom Setup option button when you are prompted.
+
+3. When you are prompted "Do you want Setup to look for all hardware devices?"
+   click "No, I want to modify the hardware list."
+
+4. In the Hardware Types list, click only the following types:
+
+      Display
+      Floppy Disk Controller
+      Hard Disk Controller
+      Keyboard
+      Mouse
+
+5. If Setup continues to hang during hardware detection, run Setup again and
+   select different combinations of hardware types. For example, select only
+   Display, Floppy Disk Controller, Keyboard, and Mouse.
+
+Setup Hangs While Creating the Startup Disk
+-------------------------------------------
+
+Setup may hang or generate a general protection (GP) fault error message when it
+tries to create the Startup Disk. This problem may be due to the presence of a
+virtual device driver (VxD) from Norton Utilities. To work around this problem,
+use either of the following methods:
+
+ - Start Setup again. When you are prompted whether you want to create a Startup
+   Disk, click No.
+
+ - Remove the "device=symevnt.386" line from the [386Enh] section of the
+   System.ini file and then run Setup again. Use any text editor (such as
+   Notepad or Edit.com) to edit the System.ini file and remove this line.
+
+If you choose not to create a Startup Disk during Setup, you can create one after
+Setup is finished. To do so, follow these steps in Windows 95:
+
+1. Click the Start button, point to Settings, then click Control Panel.
+
+2. Double-click the Add/Remove Programs icon, then click the Startup Disk tab.
+
+3. Click the Create Disk button to create a Startup Disk.
+
+Setup Hangs After the First Reboot
+----------------------------------
+
+Setup may hang after the first reboot for one of the following reasons:
+
+ - There is a video driver conflict, or an incompatible real-mode hard disk
+   driver. Try to start Windows 95 in Safe Mode by following these steps:
+
+   1. Restart Windows 95. Press the F8 key when you see the "Starting Windows
+      95" message.
+
+   2. Choose Safe Mode from the Microsoft Windows 95 Startup menu.
+
+   If Windows 95 starts, change the video driver to the standard VGA driver by
+   following these steps:
+
+   1. Click the Start button, point to Settings, then click Control Panel.
+
+   2. Double-click the Display icon.
+
+   3. Click the Settings tab, then click the Change Display Type button.
+
+   4. Click the Change button in the Adapter Type section, then click the Show
+      All Devices option button.
+
+   5. Click "(Standard Display Types)" then double-click Standard Display
+      Adapter (VGA). Click OK.
+
+   6. Restart Windows 95 normally.
+
+   For additional information about troubleshooting video problems in Windows 95,
+   please see the following articles in the Microsoft Knowledge Base:
+
+   Q127139 Troubleshooting Video Problems in Windows 95
+
+ - There may be a damaged Windows 3.1 group (.grp) file. To correct this
+   problem, turn your computer off, wait a few seconds, then turn it back on.
+   Run the Group Converter tool (Grpconv.exe) to rebuild each .grp file
+   individually.
+
+"Incorrect System Disk" or "Invalid System Disk" Error Message
+--------------------------------------------------------------
+
+
+CAUTION: If you are using Disk Manager or any other disk drive overlay program on
+a hard disk, make sure that the overlay driver is loaded before you use the SYS
+command on that hard disk. If the overlay driver is not loaded and you use the
+SYS command on the hard disk, the drive may not be recognized as being
+partitioned by the disk drive overlay program and you could experience a data
+loss or inability to boot from the drive.
+
+You can work around this problem by manually installing the Windows 95 system
+files on the hard disk. To do so, follow these steps:
+
+1. Start your computer with the Startup Disk created during Setup.
+
+2. Make a backup copy of the current Msdos.sys file by typing the following
+   lines at the command prompt:
+
+      c:
+      cd\windows\command
+      attrib c:\msdos.sys -r -s -h
+      ren c:\msdos.sys c:\msdos.xxx
+
+3. Use the Sys.com command from the Startup Disk to transfer the system files to
+   the hard disk by typing the following lines at the command prompt:
+
+      a:
+      sys c:
+
+4. Replace the new Msdos.sys file with the backup copy by typing the following
+   lines at the command prompt:
+
+      c:
+      cd\windows\command
+      attrib c:\msdos.sys -r -s -h
+      del c:\msdos.sys
+      ren c:\msdos.xxx msdos.sys
+      attrib c:\msdos.sys +r +s +h
+
+Setup Hangs on the Second Reboot
+--------------------------------
+
+For information about troubleshooting this and other problems in Windows 95,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q119941 How to Rebuild, Convert, Troubleshoot Folders in Windows 95
+
+Starting Setup
+--------------
+
+Microsoft Windows 95 can upgrade Windows version 3.0 and higher and Windows for
+Workgroups version 3.1 and higher. If you are using Windows 3.0, you must run
+Setup from MS-DOS. If you are using Windows 3.1 or Windows for Workgroups 3.1 or
+higher, you can run Setup from MS-DOS or Windows.
+
+Windows 95 can upgrade MS-DOS, PC-DOS, or OEM-DOS version 3.2 and higher.
+
+Setup Step-by-Step
+------------------
+
+Understanding the steps that Setup performs may help you to troubleshoot problems
+you encounter during the Setup process. Setup performs the following steps:
+
+Step 1 - Initializing Setup
+---------------------------
+
+In this step, Windows 95 prepares your computer for installation by performing
+the following functions:
+
+ - If you run Setup from MS-DOS, Windows 95 searches the local hard disk for a
+   previous version of Windows 3.1 or later. If a previous version is found,
+   Setup recommends that you quit Setup and then run Setup again from inside the
+   existing Windows version.
+
+ - Setup checks for the minimum system configuration.
+
+ - Setup checks for an extended memory manager (such as Himem.sys) and a disk
+   cache program (such as Smartdrv.exe). If either is not found, Setup loads
+   one.
+
+ - Setup checks for the presence of "dirty" or "deadly" terminate-and-
+   stay-resident programs (TSRs) that are known to cause problems with Windows
+   95 Setup. Use Setup /IT to ignore this TSR check.
+
+ - If you run Setup from MS-DOS, Setup installs the necessary components for
+   mini-Windows. Setup stores these files in a temporary directory it creates
+   called Wininst0.400.
+
+ - Setup runs Scandisk /ALL /NOTEXT to check the hard disk for any problems. Use
+   Setup /IS to not run ScanDisk during Setup.
+
+ - Setup starts the graphical user interface (GUI) and displays the "Welcome to
+   Setup" message. At this point, Setup switches the processor into protected
+   mode and makes extended memory available.
+
+ - If Setup finds an OLD_DOS.X directory, it asks you if you want to delete this
+   information to free hard disk space.
+
+   An OLD_DOS.X directory is created when you install the MS-DOS 6.x Upgrade or
+   Step-Up. This directory is used if you decide to remove the upgrade and
+   return to your earlier version of MS-DOS. If you did not install the MS-DOS
+   6.x Upgrade or Step-Up, you do not have an OLD_DOS.X directory.
+
+Step 2 - Preparation for Smart Recovery
+---------------------------------------
+
+If for any reason Setup does not finish and the computer needs to be restarted,
+the following lines in the Autoexec.bat file prompt you to run Setup again and
+choose the Smart Recovery option:
+
+   @if exist c:\wininst0.400\suwarn.bat call c:\wininst0.400\suwarn.bat
+   @if exist c:\wininst0.400\suwarn.bat del c:\wininst0.400\suwarn.bat
+
+Step 3 - Read the Setuplog.txt File
+-----------------------------------
+
+Setup reads the Setuplog.txt file to see if Setup failed previously. If Setup did
+fail previously, Setup prompts you to run Smart Recovery or to continue using
+the Full Install option.
+
+If the Setuplog.txt file is complete and you run Setup from the same version of
+Windows, Setup provides a Verify option. Using this option causes Setup to check
+the Windows 95 file sizes and dates. If a file is damaged, Setup re-installs
+it.
+
+Step 4 - Gathering Information
+------------------------------
+
+Setup collects information from you (such as your name and the directory in which
+to install Windows 95) and writes that information to the Setuplog.txt file for
+use when copying files.
+
+Step 5 - Hardware Detection
+---------------------------
+
+Hardware detection is the most intense portion of Setup. Windows 95 maintains a
+database of known legacy (non-Plug and Play) devices and the resources that they
+use. Setup polls all of these resources (I/O ports, IRQs, DMA channels, memory
+addresses, and so on) and looks for responses to determine what device is using
+each resource. If Setup detects a Plug and Play device, it adds that device's
+configuration information to the registry.
+
+Setup creates the registry and puts the System.new, User.new, and Detlog.txt
+files in the root directory of drive C. To help speed the process of searching
+through the extensive .inf files, Setup uses two indexing files, Drvidx.bin and
+Drvdata.bin, from the temporary directory (Wininst0.400).
+
+Step 6 - Windows Components
+---------------------------
+
+When you select the components to install (or accept the default components),
+Setup writes them to the Setuplog.txt file with the other Setup information.
+
+Step 7 - Preparing to Copy Files
+--------------------------------
+
+Setup uses the Setupx.dll file to create a list of files to copy based on the
+components you selected.
+
+Step 8 - Copying Files
+----------------------
+
+If you chose to create a Startup Disk, Setup copies the Startup Disk files now.
+Next, Setup copies the files prepared in step 7 to the hard disk.
+
+Step 9 - Finishing Setup
+------------------------
+
+After copying all the necessary files, Setup upgrades the existing copy of
+Windows and replaces the existing MS-DOS version with the Windows 95 operating
+system. After Setup reaches 100% complete, it writes information to the hard
+disk's master boot record (MBR) and renames the Io.sys and Msdos.sys files to
+Io.dos and Msdos.dos. At this point you are prompted to click the Finish button
+so that Setup can restart your computer and complete the installation.
+
+Step 10 - Configuring Hardware
+------------------------------
+
+Setup updates the configuration files by running Winint.exe to process the
+options in the Wininit.ini file. The Wininit.ini file tells Setup to create the
+Vmm32.vxd file and to rename the files that were used by Setup initially but are
+no longer needed.
+
+Step 11 - Run-Once
+------------------
+
+Setup runs the Run-Once module. This module is specified in the registry and
+installs certain device configurations and printers, converts .grp files to
+Windows 95 format, sets the time and date, and sets up the Help system for
+Windows 95.
+
+Step 12 - Second Reboot
+-----------------------
+
+This step does not occur on all computers. Setup may restart your computer a
+second time so that it can finalize the hardware settings. This extra step lets
+Setup detect hardware that could not be detected during the original hardware
+detection.
+
+For example, if your computer contains a sound card with a built-in SCSI
+controller, Setup detects the sound card and SCSI controller during the initial
+hardware detection phase. Setup restarts your computer a second time so that it
+can load the SCSI enumerator and detect whatever is attached to the SCSI
+controller (such as a CD-ROM drive).
+
+Additional query words: w95setfaq
+
+======================================================================
+Keywords          : kbsetup win95 kbfaq
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

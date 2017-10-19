@@ -1,0 +1,111 @@
+DOCUMENT:Q173857  07-SEP-2001  [winnt]
+TITLE   :Using Microsoft Windows 95 Drivers for Point and Print on WinNT
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0:Win95
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows 95 drivers for point and print on a Windows NT 4.0
+print server, some printer models are not listed in either the Msprint.inf or
+Msprint2.inf files.
+
+CAUSE
+=====
+
+Some printer models, including the HP LaserJet 5Si printer, are not available on
+the Windows 95 CD-ROM.
+
+RESOLUTION
+==========
+
+Use one of the following methods to work around this problem:
+
+Method 1
+--------
+
+Substitute the printer driver on the Windows NT 4.0 server with another
+compatible printer driver. For example, when creating the HP LaserJet 5Si
+printer, choose HP for Manufacturer and HP LaserJet 4Si for the Printer Model.
+Use the following list as a possible substitution table:
+
++----------------------------------+
+| Printer Type | Driver to Install | 
++----------------------------------+
+| HP 5Si       | HP 4Si            | 
++----------------------------------+
+| HP 5Si MX    | HP 4Si MX         | 
++----------------------------------+
+| HP 5Si MX PS | HP 4Si MX PS      | 
++----------------------------------+
+
+The only functionality that may be lost when using the HP LaserJet 4Si driver for
+a HP LaserJet 5Si printer is the add-on options such as envelope feeder, duplex
+printing, and any other options that are not considered standard.
+
+Method 2
+--------
+
+Use a third-party printer driver that complies with the Windows95 and Windows NT
+4.0 specification for .inf files.
+
+MORE INFORMATION
+================
+
+The basic design for a Printer.inf file can be found in the Windows Device
+Driver Kit (DDK) and Microsoft Windows 95 Resource Kit Appendix C, ISBN 1-
+55615-678-2. Please contact the manufacturer. In addition, the Readme.txt file
+supplied with the third-party driver may also contain information on whether or
+not that driver is supported for Point and Print.
+
+For additional information about installing Windows 95 print drivers for Windows
+NT point and print, please see the following Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q154291
+TITLE : Installing Cross Platform Print Drivers in Windows NT 4.0
+
+For information on using third-party Windows 95 print drivers for Windows NT
+point and print, please see the following Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q172289
+TITLE : Using Third-Party Windows 95 Drivers for Point and Print
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: hplj5si hplj 5Si HP5si win95 hewlett-packard 3rdparty ntfaqmax
+
+======================================================================
+Keywords          : kb3rdparty kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : WinNT:4.0:Win95
+Hardware          : ALPHA MIPS x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q215004  02-JUL-2001  [sms]
+TITLE   :Hardware Inventory Fails When Windows Management Is Removed
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbClient kbWBEM kbsms200 kbsms200bug kbCAP kbInventory smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Windows Management component is removed from a Windows 95, Windows 98, or
+Windows NT client, hardware inventory fails on that client. is necessary to
+reinstall the component to allow hardware inventory to complete.
+
+RESOLUTION
+==========
+
+To reinstall the Windows Management component, connect to a Client Access
+Point(CAP) and run the following:
+
+CAP_<sitecode>\clicomp.box\wbem\<platform>\wbemsdk.exe.
+
+After the Windows Management component has been restored, the next hardware
+inventory for the client will be successful.
+
+MORE INFORMATION
+================
+
+The Client Component Installation Manager (CCIM) detects and restores missing
+client components periodically. (This occurs every 24 hours by default and may
+be referred to as the Heartbeat Interval).
+
+Additional query words: prodsms wbem wmi
+
+======================================================================
+Keywords          : kbClient kbWBEM kbsms200 kbsms200bug kbCAP kbInventory smsinst 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

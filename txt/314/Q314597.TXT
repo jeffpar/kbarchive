@@ -1,0 +1,79 @@
+DOCUMENT:Q314597  29-JAN-2002  [automap]
+TITLE   :Streets & Trips 2002: Msg About Office XP During Installation
+PRODUCT :Microsoft Automap
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Streets & Trips 2002, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Streets & Trips, you may receive a message
+similar to the following:
+
+   Install Windows and Office Component Updates
+
+   Microsoft Office XP requires newer Windows system components not detected on
+   your computer.
+
+   To install Office, setup must update your system to the minimum required level
+   of functionality, including:
+
+ - Core System and Data Access components
+
+ - Web Browsing Support
+
+   After installing this update, setup will automatically resume with Office
+   installation.
+
+CAUSE
+=====
+
+This issue is caused by the use of the Microsoft Office XP system update
+software to upgrade Microsoft Windows system components. Streets & Trips
+requires the Windows system component upgrade.
+
+RESOLUTION
+==========
+
+To complete the installation of Streets & Trips, follow these steps:
+
+1. When you receive the message described in the "Symptoms" section of this
+   article, click Next, and then follow the instructions onscreen to complete
+   the upgrade of Windows system components.
+
+2. After installation is complete, restart the computer.
+
+3. When the computer restarts, if the Streets & Trips Setup program does not
+   start, remove and then reinsert the CD-ROM in the CD-ROM drive.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbExpediaSearch kbExpediaStreets2002
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

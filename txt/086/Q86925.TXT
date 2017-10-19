@@ -1,0 +1,73 @@
+DOCUMENT:Q86925  18-JUN-1999  [win16sdk]
+TITLE   :DOC: Region Functions Documented Incorrectly
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbtool kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows graphics device interface (GDI) uses two major categories
+of coordinates units: device units and logical units. The documentation of many
+GDI functions in the "Microsoft Windows Software Development Kit: Programmer's
+Reference, Volume 2: Functions" manual is inconsistent with regard to type of
+coordinates required by the functions that specify positions. This article lists
+these functions and the units they use.
+
+MORE INFORMATION
+================
+
+The documentation for the CreateEllipticRgn (page 97), CreateEllipticRgnIndirect
+(pages 97 and 98), CreateRectRgn (pages 122 and 123), CreateRectRgnIndirect
+(pages 123 and 124), and CreateRoundRectRgn (pages 124 and 125) functions states
+that the parameters to each function are in logical coordinates. However,
+because none of these functions takes a Device Context (DC) as a parameter, the
+parameters have no units. The units are provided by the function that uses the
+region created.
+
+The documentation for CreatePolygonRgn (pages 118 and 119) and
+CreatePolyPolygonRgn (pages 119 through 121) do not mention units; these
+functions are also unitless.
+
+The documentation for the FillRgn (page 302), FrameRgn (pages 314 and 315),
+InvertRgn (pages 544 and 545), and PaintRgn (pages 735 and 736) functions state
+that the functions require device coordinates. However, these functions use
+logical coordinates.
+
+The coordinates for a region used with the SelectClipRgn function must be in
+device units as stated in its documentation (pages 808 and 809).
+
+Additional query words: 3.10 docerr
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

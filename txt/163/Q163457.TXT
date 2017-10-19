@@ -1,0 +1,93 @@
+DOCUMENT:Q163457  14-NOV-2000  [word97]
+TITLE   :WD97: Customized Toolbar Button Reappears After Removing Button
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop kbtemplate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When modifying a Word 7.0 template in Word 97, a custom toolbar button that is
+assigned to a macro will reappear after the toolbar button is removed and the
+template is saved as a Word 97 template.
+
+WORKAROUND
+==========
+
+Use the following procedure to remove your custom toolbar buttons and then
+re-create the desired buttons in Word 97:
+
+1. Open the Word 7.0 template in Word 97.
+
+2. On the Tools menu, click Customize.
+
+3. Under Toolbars, click the toolbar that contains the custom toolbar button,
+   and then click Reset.
+
+   Word will present the Reset Toolbar dialog box, prompting you to:
+
+   Reset changes made to <toolbar name> toolbar for: <macro name>
+
+   Click OK. The custom toolbar button will be deleted, and the macro will be
+   retained.
+
+   NOTE: This procedure will reset all custom toolbar buttons on the specified
+   toolbar.
+
+4. Re-create any toolbar buttons you may want assigned to your macros.
+
+5. Save and close your template after making your changes.
+
+   Word will prompt you with the following message when you save your Word 7.0
+   template in Word 97:
+
+   The template <file name> and its macros will be converted to Word 97
+   format when this template is saved. Do you want to save the converted
+   template to a new file, or overwrite <file name>?
+
+   Do one of the following:
+    - Click "New File" to save your Word 7.0 template to a new Word 97 template
+      name.
+
+      NOTE: You will now have two versions of the template on your system. One
+      template in Word 7.0 format and one template in Word 97 format.
+
+      -or-
+
+    - Click "Overwrite" to save your Word 7.0 template to a Word 97 template
+      using the same template name.
+
+      NOTE: Your Word 7.0 template will not exist anymore. It will be converted
+      to a Word 97 template. You will no longer be able to use the template in
+      Word 7.0.
+
+Additional query words: 97 8.0 word8 word97 cannot remove delete
+
+======================================================================
+Keywords          : kbinterop kbtemplate 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

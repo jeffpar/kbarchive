@@ -1,0 +1,71 @@
+DOCUMENT:Q167599  08-NOV-2001  [win95x]
+TITLE   :8 x 16 TrueType Font for MS-DOS Not Available
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+ - Microsoft Plus! 98, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft Plus!, the 8 x 16 TrueType font may no longer be
+available in the Font box when you run an MS-DOS-based program.
+
+CAUSE
+=====
+
+The font list built from the [TTFontDimenCache] section in the System.ini file
+has been changed.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Use any text editor (such as Notepad) to open the System.ini file in the
+   Windows\System folder.
+
+2. Add the following line to the [TTFontDimenCache] section of the file:
+
+   0 15=8 16
+
+3. Change the line numbering for the existing lines 0 15 and 0 16 to 0 16 and 0
+   17.
+
+4. Save and then close the System.ini file, and then restart Windows 95.
+
+MORE INFORMATION
+================
+
+Installing Microsoft Plus! installs the Lucida Console TrueType font, which
+changes the font dimension settings, overwriting the default settings.
+
+======================================================================
+Keywords          : kbui win95 
+Technology        : kbWin95search _IKkbbogus kbGamesSearch kbPlus98 kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

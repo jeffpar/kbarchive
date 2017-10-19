@@ -1,0 +1,57 @@
+DOCUMENT:Q173986  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 98/2000: Product Identification (PID) Location
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbusage kbtlc fs98 kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to locate the Product Identification Number (PID) in
+Microsoft Flight Simulator 98 and Microsoft Flight Simulator 2000.
+
+MORE INFORMATION
+================
+
+To locate the PID number in Flight Simulator 98 or Flight Simulator 2000:
+
+1. On the Help menu in Flight Simulator 98 or Flight Simulator 2000, click About
+   Microsoft Flight Simulator.
+
+2. In the Product ID box or on the Product ID line, note the PID number.
+
+3. Click Close.
+
+Additional query words: flightsim fs98 PID Help About fs2000 fs2k
+
+======================================================================
+Keywords          : kbusage kbtlc fs98 kbimu msgame kbfaq
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

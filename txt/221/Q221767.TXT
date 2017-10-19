@@ -1,0 +1,53 @@
+DOCUMENT:Q221767  08-NOV-1999  [exchange]
+TITLE   :XADM: PF InterOrg Replication Does Not Work with Different Lang
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP2
+OPER/SYS:
+KEYWORDS:exc55sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP2 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Public Folders InterOrg Replication tool does not work between servers using
+different languages.
+
+MORE INFORMATION
+================
+
+The InterOrg Replication only supports replication between servers using the
+same language (for example, English-to-English or French-to-French).
+
+For more information on this tool, please see the Microsoft Exchange Server 5.5
+Service Pack 2 Readme file.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp2 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP2
+Version           : winnt:5.5 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

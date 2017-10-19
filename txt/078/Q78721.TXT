@@ -1,0 +1,58 @@
+DOCUMENT:Q78721  17-DEC-2000  [msdos]
+TITLE   :MS-DOS Editor Can Edit Lines Greater than 256 Characters
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A file created with or modified by an editor that allows the creation of lines
+longer than 256 characters may be edited with MS-DOS Editor up to the length of
+the longest line in that file (if the longest line is longer than 256
+characters).
+
+MORE INFORMATION
+================
+
+Page 211 of the version 5.0 "Microsoft MS-DOS User's Guide and Reference" states
+that MS-DOS Editor can create lines up to 256 characters long. This applies only
+to files created with MS-DOS Editor.
+
+If a file has been created or modified with another editor that can create lines
+longer than 256 characters, the MS-DOS Editor will be able to edit that file and
+create lines up to the length of the longest line in that file.
+
+If you shorten the longest line, the file may be edited only up to the new length
+of the longest line or 256 characters, whichever is greater.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

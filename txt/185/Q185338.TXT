@@ -1,0 +1,63 @@
+DOCUMENT:Q185338  15-JAN-2000  [sms]
+TITLE   :SMS: PCM as a Service and Security Context
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsms120 kbsms120bug kbPCM
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Package Command Manager (PCM) as a service, the registry key
+HKEY_CURRENT_USER, is not updated under the context of the profile of the user
+who is logged on.
+
+CAUSE
+=====
+
+The HKEY_CURRENT_USER registry key is updated in the context of the account that
+is making the changes. Thus when you use PCM as a service, the context is that
+of the Systems Management Server or PCM Service account.
+
+WORKAROUND
+==========
+
+You can mount the user's hive with Reg.exe and then place the keys into the
+User's context.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms120 kbsms120bug kbPCM 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q122293  17-DEC-2000  [crossnet]
+TITLE   :LMHOSTS Lookup Can Cause Intermittent System Pauses
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Your computer running Windows for Workgroups version 3.11 with TCP/IP-32
+intermittently stops responding (hangs) for about 20 seconds at a time.
+
+This occurs if TCP/IP-32 is installed as a non-default network protocol and the
+Enable LMHOSTS Lookup option in Network Setup is checked.
+
+WORKAROUND
+==========
+
+If you do not need to access network servers over a router, you can work around
+this problem by clearing the Enable LMHOSTS Lookup check box in Network Setup.
+
+RESOLUTION
+==========
+
+Microsoft has released a new version of VNBT.386 corrects this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32. This problem has been
+corrected in an updated TCP/IP-32 version 3.11a. For information on the
+availability of TCP/IP-32 3.11a, see article Q122544 in the Microsoft Knowledge
+Base.
+
+Additional query words: wfw wfwg prodtcp32 1.00 3.11 3.11a tcpip
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbZNotKeyword3 kbTCPIP311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

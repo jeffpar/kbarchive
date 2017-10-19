@@ -1,0 +1,93 @@
+DOCUMENT:Q171548  18-JUN-2001  [vbwin]
+TITLE   :FIX: Binary-Compatible Server Causes VB to Hang in IDE
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0; WINNT:97,97sp2
+OPER/SYS:
+KEYWORDS:kbVBp500 kbVS97sp2fix kbvbp500sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After adding functionality and re-compiling a server application (EXE, DLL, or
+OCX) with Binary compatibility set several times with Visual Studio 97 Service
+Pack 2, the Visual Basic IDE could hang.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 : INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+Service Pack 3, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q175450 : INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 3
+
+MORE INFORMATION
+================
+
+If you have an ActiveX project built with binary compatibility set, you may
+experience some problems. The problems caused by this bug are difficult to
+reproduce consistently. This article offers just one way to reproduce this
+behavior, so be aware that the IDE may hang under other conditions when your
+project is using in Binary compatibility switch.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ActiveX project with two classes and add some methods to both
+   classes. Compile this ActiveX project.
+
+2. Add a method to Class1(the first class listed in .VBP file).
+
+3. Set binary compatibility to the ActiveX project you just generated. Compile
+   this ActiveX project again.
+
+4. Set binary compatibility to this new generated ActiveX project.
+
+5. Press the F5 key to run the project and note that the IDE hangs.
+
+REFERENCES
+==========
+
+   Q171550 : FIX: Recompiling With SP2 Breaks Binary Compatibility
+
+======================================================================
+Keywords          : kbVBp500 kbVS97sp2fix kbvbp500sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0; WINNT:97,97sp2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

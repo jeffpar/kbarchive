@@ -1,0 +1,87 @@
+DOCUMENT:Q161187  10-FEB-2000  [foxpro]
+TITLE   :FIX: Forms Collection Exposes Memo and General Windows
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Count property of the Forms collection incorrectly sees open memo and
+general edit windows as members of the Forms collection. The Forms collection is
+a property of the _VFP system variable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+According to the Help topic on the _VFP system variable, the Forms property is:
+
+   "An array to access individual forms in a form set."
+
+Therefore, the open memo and general field edit windows should not appear to this
+property as members of the forms collection. The example below illustrates this
+behavior.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open the Employee table located in the \Samples\data folder.
+
+2. Browse the table and double-click on the Photo and Notes fields to open these
+   fields in their own windows.
+
+3. Type the following command in the Command window:
+
+      "WAIT WINDOW STR(_VFP.Forms.Count):
+
+   Notice that the number two (2) appears in the wait window.
+
+   Note that this behavior does not exhibit itself when the edit windows are
+   invoked in the following manner:
+
+      USE HOME()+"\samples\data\employee"
+      MODIFY GENERAL photo
+      MODIFY MEMO notes
+      WAIT WINDOW STR(_VFP.Forms.Count)
+
+   Note that the number zero (0) appears in the wait window.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

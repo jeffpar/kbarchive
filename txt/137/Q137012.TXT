@@ -1,0 +1,63 @@
+DOCUMENT:Q137012  17-DEC-2000  [win95x]
+TITLE   :CD-ROM Drive Not Recognized with BusLogic 946C SCSI Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows 95 on a computer with a BusLogic 946C SCSI controller,
+you may experience either of the following problems:
+
+ - The SCSI controller is not recognized by Windows 95.
+
+ - Hard disks on the SCSI chain are recognized, but a CD-ROM drive on the chain
+   is not recognized.
+
+RESOLUTION
+==========
+
+To resolve this problem, update the SCSI controller to firmware revision 4.22
+and BIOS revision 4.86 or later. Please contact BusLogic for information about
+obtaining these upgrades.
+
+MORE INFORMATION
+================
+
+You can use the BusLogic AutoSCSI tool included with the SCSI controller to
+determine the controller's version information. For information about this tool,
+please consult the controller's documentation.
+
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,238 @@
+DOCUMENT:Q194576  10-AUG-1999  [foxpro]
+TITLE   :HOWTO: Obtain Time Zone Information in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Use the GetTimeZoneInformation API call to obtain information about the time
+zone, including the date and time when Daylight Savings Time and Standard Time
+take effect, the "bias," or time difference between the current time zone and
+the Coordinated Universal Time, and the current Daylight Savings Time status.
+
+MORE INFORMATION
+================
+
+When the following program is executed, it displays two message boxes. The first
+displays the current Daylight Savings Time status, either TIME_ZONE_ID_STANDARD
+if Standard Time is in effect, or TIME_ZONE_ID_DAYLIGHT if Daylight Savings Time
+is in effect.
+
+When you click OK, the second message box is displayed and includes the following
+seven items:
+
+1. The bias, in minutes, from Coordinated Universal Time (UTC). For the "Eastern
+   Time (US & Canada)" time zone, this will be 300. All translations between
+   UTC and local time are based on the following formula:
+
+         UTC = local time + bias
+
+2. The string description of Standard Time in the current time zone. For
+   example, in the eastern time zone, this string is "Eastern Standard Time."
+
+3. The month, day, and time when Standard Time goes into effect. The year
+   portion of the date appears to be blank in all cases. The time portion is
+   expressed as a military time.
+
+4. The bias, in minutes, to be used during local time translations that occur
+   during Standard Time. For most time zones, this value is 0.
+
+5. The string description of Daylight Savings Time in the current time zone. For
+   example, in the eastern time zone, this string is "Eastern Daylight Time."
+
+6. The month, day and time when Daylight Savings Time goes into effect. As
+   above, the year portion of the date appears to be blank in all cases.
+
+7. The Daylight Savings Time bias, in minutes, used during local time
+   translations that occur during daylight time. For most time zones, this value
+   is -60.
+
+Save and execute the following program:
+
+      #DEFINE ID_INVALID -1
+      #DEFINE ID_UNKNOWN 0
+      #DEFINE ID_STANDARD 1
+      #DEFINE ID_DAYLIGHT 2
+      #DEFINE CR CHR(13)
+
+      * the definition for TIME_ZONE_INFORMATION is:
+      *
+      *typedef struct _TIME_ZONE_INFORMATION { // tzi
+      *    LONG       Bias;
+      *    WCHAR      StandardName[ 32 ];
+      *    SYSTEMTIME StandardDate;
+      *    LONG       StandardBias;
+      *    WCHAR      DaylightName[ 32 ];
+      *    SYSTEMTIME DaylightDate;
+      *    LONG       DaylightBias;
+      *} TIME_ZONE_INFORMATION;
+
+      * buffer to receive TIME_ZONE_INFORMATION
+      TZInfo = SPACE(172)
+
+      DECLARE INTEGER GetTimeZoneInformation IN kernel32 STRING @TZInfo
+      liRetCode = GetTimeZoneInformation(@TZInfo)
+      DO CASE
+         CASE liRetCode = ID_UNKNOWN
+            =MESSAGEBOX ("TIME_ZONE_ID_UNKNOWN")
+         CASE liRetCode = ID_STANDARD
+            =MESSAGEBOX ("TIME_ZONE_ID_STANDARD")
+         CASE liRetCode = ID_DAYLIGHT
+            =MESSAGEBOX ("TIME_ZONE_ID_DAYLIGHT")
+      ENDCASE
+
+      * now, parse the returned structure
+      liBias = StrToLong(SUBSTR(TZInfo, 1, 4))
+
+      * lcStandardName is a Unicode string - strip out chr(0)s for
+      * US/English
+      lcStandardName = SUBSTR(TZInfo, 5, 64)
+      lcStandardName = STRTRAN(lcStandardName, CHR(0), "")
+
+      * lcStandardDate is a SYSTEMTIME structure, defined as follows:
+      *
+      *typedef struct _SYSTEMTIME {  // st
+      *    WORD wYear;
+      *    WORD wMonth;
+      *    WORD wDayOfWeek;
+      *    WORD wDay;
+      *    WORD wHour;
+      *    WORD wMinute;
+      *    WORD wSecond;
+      *    WORD wMilliseconds;
+      *} SYSTEMTIME;
+
+      * this SYSTEMTIME struct must be parsed again
+      lcStandardDate = SUBSTR(TZInfo, 69, 16)
+      lcSDYear = Str2Word(SUBSTR(lcStandardDate, 1, 2))
+      lcSDMonth = Str2Word(SUBSTR(lcStandardDate, 3, 2))
+      lcSDDayofWeek = Str2Word(SUBSTR(lcStandardDate, 5, 2))
+      lcSDDay = Str2Word(SUBSTR(lcStandardDate, 7, 2))
+      lcSDHour = Str2Word(SUBSTR(lcStandardDate, 9, 2))
+      lcSDMinute = Str2Word(SUBSTR(lcStandardDate, 11, 2))
+      lcSDSecond = Str2Word(SUBSTR(lcStandardDate, 13, 2))
+      lcSDMSec = Str2Word(SUBSTR(lcStandardDate, 15, 2))
+
+   * format the standard time date for display
+      lcStandardDate = PADL(LTRIM(STR(lcSDMonth, 2, 0)), 2,  "0") + "/" + ;
+         PADL(LTRIM(STR(lcSDDay, 2, 0)), 2,  "0") + "/" + ;
+         PADL(LTRIM(STR(lcSDYear, 2, 0)), 2, "0") + ;
+         "   " + ;
+         PADL(LTRIM(STR(lcSDHour, 2, 0)), 2, "0") + ":" + ;
+         PADL(LTRIM(STR(lcSDMinute, 2, 0)), 2, "0") + ":" + ;
+         PADL(LTRIM(STR(lcSDSecond, 2, 0)), 2, "0") + "." + ;
+         PADL(LTRIM(STR(lcSDMSec, 3, 0)), 3, "0")
+
+      liStandardBias = StrToLong(SUBSTR(TZInfo, 85, 4))
+
+      * lcDaylightname is also a Unicode string
+      lcDaylightName = SUBSTR(TZInfo, 89, 64)
+      lcDaylightName = STRTRAN(lcDaylightName, CHR(0), "")
+
+      * this SYSTEMTIME struct must be parsed again, same as above
+      lcDaylightDate = SUBSTR(TZInfo, 153, 16)
+      lcDDYear = Str2Word(SUBSTR(lcDaylightDate, 1, 2))
+      lcDDMonth = Str2Word(SUBSTR(lcDaylightDate, 3, 2))
+      lcDDDayofWeek = Str2Word(SUBSTR(lcDaylightDate, 5, 2))
+      lcDDDay = Str2Word(SUBSTR(lcDaylightDate, 7, 2))
+      lcDDHour = Str2Word(SUBSTR(lcDaylightDate, 9, 2))
+      lcDDMinute = Str2Word(SUBSTR(lcDaylightDate, 11, 2))
+      lcDDSecond = Str2Word(SUBSTR(lcDaylightDate, 13, 2))
+      lcDDMSec = Str2Word(SUBSTR(lcDaylightDate, 15, 2))
+
+      * format the daylight date for display
+      lcDaylightDate = PADL(LTRIM(STR(lcDDMonth, 2, 0)), 2, "0") + "/" + ;
+         PADL(LTRIM(STR(lcDDDay, 2, 0)), 2, "0") + "/" + ;
+         PADL(LTRIM(STR(lcDDYear, 2, 0)), 2, "0") + ;
+         "  " + ;
+         PADL(LTRIM(STR(lcDDHour, 2, 0)), 2, "0") + ":" + ;
+         PADL(LTRIM(STR(lcDDMinute, 2, 0)), 2, "0") + ":" + ;
+         PADL(LTRIM(STR(lcDDSecond, 2, 0)), 2, "0") + "." + ;
+         PADL(LTRIM(STR(lcDDMSec, 3, 0)), 3, "0")
+
+      * Daylight savings time bias is a negative value
+      * stored in 2s complement, so subtract 2^32 to obtain a decimal value
+      liDaylightBias = StrToLong(SUBSTR(TZInfo, 169, 4)) - 2 ^ 32
+
+      =MESSAGEBOX("Bias: " + LTRIM(STR(liBias)) + CR + ;
+         "Standard name: " + lcStandardName + CR + ;
+         "Standard date: " + lcStandardDate + CR + ;
+         "Standard bias: " + LTRIM(STR(liStandardBias)) + CR + ;
+         "Daylight name: " + lcDaylightName + CR + ;
+         "Daylight date: " + lcDaylightDate + CR + ;
+         "Daylight bias: " + LTRIM(STR(liDaylightBias)))
+
+      RETURN
+
+      ******************
+      FUNCTION StrToLong
+      ******************
+      * Passed:  4-byte character string (lcLongstr) in low-high ASCII format
+      * Returns:  long integer value
+      * Example:
+      * m.longstr = "1111"
+      * m.longval = strtolong(m.longstr)
+
+      PARAMETERS lcLongstr
+
+      PRIVATE i, lnRetval
+
+      lnRetval = 0
+      FOR i = 0 TO 24 STEP 8
+         lnRetval = lnRetval + (ASC(lcLongstr) * (2^i))
+         lcLongstr = RIGHT(lcLongstr, LEN(lcLongstr) - 1)
+      NEXT
+      RETURN lnRetval
+
+      **********************
+      FUNCTION Str2Word
+
+      PARAMETERS m.wordstr
+
+      PRIVATE i, m.retval
+
+      m.retval = 0
+      FOR i = 0 TO 8 STEP 8
+         m.retval = m.retval + (ASC(m.wordstr) * (2^i))
+         m.wordstr = RIGHT(m.wordstr, LEN(m.wordstr) - 1)
+      NEXT
+      RETURN m.retval
+
+REFERENCES
+==========
+
+Win32 API Helpfile
+
+Additional query words: kbVFP600 kbvfp300b kbvfp500a
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

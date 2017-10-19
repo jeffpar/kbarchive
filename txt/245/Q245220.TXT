@@ -1,0 +1,75 @@
+DOCUMENT:Q245220  07-JAN-2000  [winnt]
+TITLE   :Novell Management Agent Does Not Run with CSNW
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Microsoft Client Services for Netware to work with the
+Novell Netware Management Agent (MA), the MA is unable to discover the Netware
+server and organizations, and the following error message is generated:
+
+   ********************************************************************
+   Start of the LDAP discovery process
+   DNS problem: 'servername' not reachable - Error code = 11001
+   LDAP discovery process failed
+   ********************************************************************
+   ** Discovery of organizations failed
+   ** Ensure that the server is currently in operation and check
+   ** configuration parameters such as the host name and the
+   ** host port number
+   *********************************************************************
+
+CAUSE
+=====
+
+This issue occurs because Netware Management Agents only work with the
+Intranetware client.
+
+
+RESOLUTION
+==========
+
+To work around this issue and permit this MA to run, install the Novell
+Intranetware client.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

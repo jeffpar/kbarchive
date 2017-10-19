@@ -1,0 +1,79 @@
+DOCUMENT:Q271456  08-MAY-2002  [iis]
+TITLE   :IIS 4.0 Causes Heap Corruption in CGI Application
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400PreSP7Fix kbWin2000SP2Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you execute a CGI application in Microsoft Internet Information Server
+(IIS) 4.0, the HTTP data returned by the CGI application may get corrupted. An
+Access Violation error message may occur in the WWW Service or in the W3Svc.dll.
+This can occur when the CGI application adds additional HTTP headers to return
+to the client.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date       Time    Version      Size    File name
+   ------------------------------------------------
+   10/04/2000 12:03a  4.02.0752    214,544 Adsiis.dll
+   10/04/2000 12:03a  4.02.0752    330,080 Asp.dll
+   10/04/2000 12:02a  4.02.0752    55,904  Httpodbc.dll
+   10/04/2000 12:03a  4.02.0752    98,912  Iischema.dll
+   10/04/2000 11:13p  4.02.0752    28,851  Iiscnfg.h
+   10/04/2000 12:01a  4.02.0752    185,792 Infocomm.dll
+   10/04/2000 12:02a  4.02.0752    38,256  Ssinc.dll
+   10/04/2000 12:02a  4.02.0752    25,360  Sspifilt.dll
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+4.0.
+
+
+Additional query words: IIS hotfix hot fix qfe quick engineering patch
+
+======================================================================
+Keywords          : kbWinNT400PreSP7Fix kbWin2000SP2Fix 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

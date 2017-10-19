@@ -1,0 +1,94 @@
+DOCUMENT:Q305286  28-JUN-2002  [homemm]
+TITLE   :ENC: You Hear No Audio When You Play Sound Files
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia Standard 2003 
+ - Microsoft Encarta Encyclopedia Deluxe 2003 
+ - Microsoft Encarta Reference Library 2003, version 1.0 
+ - Microsoft Encarta Reference Library 2003 - DVD Edition 
+ - Microsoft Encarta Encyclopedia Standard 2002, version 1.0 
+ - Microsoft Encarta Encyclopedia Deluxe 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002 - DVD Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play sound files in any of the Microsoft Encarta programs listed at the
+beginning of this article, you may not hear any audio.
+
+CAUSE
+=====
+
+This behavior can occur if there are programs running in the background, which
+are using system resources.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit these background programs to free up your system
+resources. To do this, follow these steps, as appropriate to your version of
+Microsoft Windows.
+
+Microsoft Windows 98 and Microsoft Windows Millennium Edition (Me)
+------------------------------------------------------------------
+
+Quit all running programs that are displayed on your taskbar. To do this, follow
+these steps:
+
+1. Press CTRL+ALT+DELETE.
+
+2. In the Close Program dialog box, select each program (one at a time) that you
+   want to quit.
+
+3. Click End Task to quit the selected program. Do not select and quit Windows
+   Explorer and Systray (which are components of Windows).
+
+4. Repeat steps 2 and 3 until you have quit all unnecessary tasks and programs.
+
+NOTE: Any task that you quit is automatically restarted when you restart the
+computer.
+
+Microsoft Windows 2000, Microsoft Windows XP Home Edition, and Microsoft Windows XP Professional Edition
+--------------------------------------------------------------------------------------------------------
+
+1. Press CTRL+ALT+DELETE, and then click Task Manager.
+
+2. On the Applications tab, select each program that you want to quit.
+
+3. Click End Task to quit each program or task.
+
+4. Repeat steps 2 and 3 until you have quit all unnecessary tasks and programs.
+
+
+Additional query words: multi multi-media media mm ERS ERL
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbEncartaSearch kbMMSearch kbEncartaRef2002 kbEncartaEncyc2002 kbEncartaEnCyc2002Del kbEncartaRef2002DVD
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

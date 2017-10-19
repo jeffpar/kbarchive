@@ -1,0 +1,64 @@
+DOCUMENT:Q170299  18-DEC-1999  [mastering]
+TITLE   :Mastering: No Access to Favorites List in Internet Explorer
+PRODUCT :Microsoft Mastering Series
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Web Site Development, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use an Internet Jump from Mastering Web Development to start Internet
+Explorer, you will not have access to your saved favorites list.
+
+WORKAROUND
+==========
+
+Start Internet Explorer from outside the Mastering Web Development application
+to gain access to the favorites list.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mastering Web
+Development version 1.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem occurs only if you start Internet Explorer from one of the internet
+jumps. If Internet Explorer is already running when you use a jump, you will
+have access to the saved favorites.
+
+Additional query words: shortcut link history
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbMSPressSearch
+Version           : WINDOWS:1.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

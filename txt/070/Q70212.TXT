@@ -1,0 +1,81 @@
+DOCUMENT:Q70212  26-OCT-1999  [win95x]
+TITLE   :Novell MAP ROOT and File Copy Errors
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using the SETUP /N command to set up Microsoft Windows or Windows for Workgroups
+on a Novell NetWare workstation may fail if the Setup program is directed to an
+existing directory that has been mapped with the MAP command instead of using
+the MAP ROOT command.
+
+When the ROOT MAP command is not used, the following error message is displayed:
+
+   ERROR #110 Cannot write to WIN.INI...
+
+MORE INFORMATION
+================
+
+If the pre-existing directory is made a "mapped" drive under a directory where
+the user has no rights, Setup may:
+
+1. Return an
+
+   unknown file copy error
+
+   message.
+
+2. Attempt to create a "standalone" installation, replete with a system
+   subdirectory.
+
+3. Stop responding (hang) when shifting to the graphics mode.
+
+If the user has no rights in the subdirectory above the destination directory,
+the MAP ROOT command must be used.
+
+The proper syntax is the same as used with the MAP command.
+
+Example
+-------
+
+   MAP ROOT H:=SERVER1\SYS:USER\JIM
+
+REFERENCES
+==========
+
+"NetWare DOS/Windows Workstation Update" booklet.
+
+Additional query words: 3.0 3.00 win30 wfwg 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

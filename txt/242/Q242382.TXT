@@ -1,0 +1,60 @@
+DOCUMENT:Q242382  28-OCT-1999  [exchange]
+TITLE   :XADM: Installing Internet Explorer 4.0 After Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you need to run Microsoft Internet Explorer 4.0 and Exchange Server on the
+same computer, install Internet Explorer 4.0 before you install Exchange Server.
+If you install Internet Explorer 4.0 after you install Exchange Server, Internet
+Explorer modifies the MIME registry database, which causes problems for
+international mail, especially mail with double-byte character set (DBCS)
+content. If you have installed Internet Explorer 4.0 after installing Exchange
+Server, complete the procedure in the "More Information" section to correct this
+problem. You can perform the procedure without stopping any Exchange Server
+services.
+
+NOTE: This procedure is not required if you are installing Internet Explorer 4.0
+before you install Exchange Server.
+
+MORE INFORMATION
+================
+
+Copy the Reset.inf file in the Server\Support\Mimedb folder from the Exchange
+Server compact disc to a local hard disk. Right-click on the file, and click
+Install.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

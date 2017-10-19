@@ -1,0 +1,60 @@
+DOCUMENT:Q154445  27-JUL-2001  [sms]
+TITLE   :A Different OS was Detected...While Upgrading SMS Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To successfully upgrade the client files from Windows for Workgroups to Windows
+95, use the appropriate Package Definition Files (PDF) when you attempt to send
+a upgrade package.
+
+If you perform a non-PDF upgrade, run UPGRADE.BAT or change your logon script to
+call UPGRADE.BAT.
+
+MORE INFORMATION
+================
+
+The PDF shipped with Systems Management Server 1.1 and 1.2 allows you to
+properly upgrade the operating systems by changing the "OS=" line in the SMS.INI
+file and the client files in the \MS\SMS directory. If you do not use the PDF,
+the client files are not upgraded and the following error message appears:
+
+   A different OS was detected than that under which Systems Management Server
+   was installed.
+
+However, if you run UPGRADE.BAT, your SMS client files will be successfully
+upgraded.
+
+Additional query words: prodsms win95
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

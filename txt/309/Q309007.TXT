@@ -1,0 +1,104 @@
+DOCUMENT:Q309007  08-MAY-2002  [iis]
+TITLE   :HOW TO: Create an FTP Site in Internet Information Manager
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool kbAudITPro kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - Create a FTP Site
+ - Troubleshooting
+
+ - REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes the process of creating an FTP Site in the
+Internet Information Manager Snap-in that is running on a Windows 2000-based
+server. A member of the administrators group performs all of the procedures.
+
+Create an FTP Site
+------------------
+
+The following procedures start in the Internet Information Manager snap-in.
+
+NOTE: In order for these steps to work, FTP must be installed on your system.
+
+To start the snap-in and create ftp site:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Internet Information Manager.
+
+2. In the Internet Information Services snap-in, right click your server object,
+   point to New, and then click FTP Site.
+
+3. When the FTP Site Creation Wizard starts, click Next.
+
+4. On the FTP Site Description page, type your FTP site description in the
+   Description box, and then click Next.
+
+5. On the IP Address and Port Settings page, select the IP address that you are
+   using, type the TCP port you are using (if it is different than the default),
+   and then click Next.
+
+6. On the FTP Site Home Directory page, type the path to your home directory in
+   the Path box, and then click Next.
+
+7. On the FTP Site Access Permissions page, check the desired Read and/or Write
+   permissions, and then click Next.
+
+8. Click Finish, and then verify the creation of your FTP Site in the console
+   tree.
+
+Troubleshooting
+---------------
+
+ - If the newly-created FTP Site does not appear in the console tree, click
+   Refresh on the Action menu.
+
+REFERENCES
+==========
+
+   Q308981 HOW TO: Administer IIS 5.0 by Using the Internet Information Manager
+   Snap-In
+
+   Q308995 HOW TO: Create a NNTP Virtual Server in the Internet Information
+   Services Snap-in
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbtool kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

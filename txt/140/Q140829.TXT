@@ -1,0 +1,117 @@
+DOCUMENT:Q140829  06-FEB-2002  [sna]
+TITLE   :TN3270 Clients Do Not Accept "Do TN3270E"
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.11
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+"Do TN3270E" is a command sent from the TN3270E Server Service to the TN3270
+emulator during session initialization. It asks the TN3270 emulator whether it
+can support the TN3270E protocol. Some TN3270 clients do not accept the "Do
+TN3270E" message from the TN3270E server. This prevents session establishment
+between the TN3270 client and TN3270E Server Service. Sending the "Do TN3270E"
+command is a legal command according to RFC 1647."
+
+RFC 1647 states the Following:
+
+"Telnet clients and servers would be free to negotiate support of the TN3270E
+option or not. If either side does not support TN3270E, traditional TN3270 can
+be used; otherwise, a sub-negotiation will occur to determine what subset of
+TN3270E will be used on the session. It is anticipated that a client or server
+capable of both types of 3270 emulation would attempt to negotiate TN3270E
+first, and only negotiate traditional tn3270 if the other side refuses
+TN3270E."
+
+SAMPLE TRACE
+------------
+
+>12/08 11:18:16.828 (+ smidgen )  Event=TEV_Started
+
+>12/08 11:18:30.217 (+ 13 secs )  Event=TEV_DataToClient
+ Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+ DO TN3270E
+ Number of bytes = 3
+
+>12/08 11:18:30.217 (+ smidgen )  Event=TEV_TCPSendIssued
+ Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+ Number of bytes = 3
+ 000000  fffd 28                                  !..(             !
+
+>12/08 11:18:30.257 (+ 40 msecs)  Event=TEV_TCPRecvIssued
+ Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+
+>12/08 11:18:30.277 (+ 20 msecs)  Event=TEV_TCPSendCompleted
+ Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+ Bytes transferred = 3
+
+>12/08 11:19:09.403 (+ 39 secs )  Event=TEV_TCPRecvCompleted
+ Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+ Bytes returned = 0
+
+>12/08 11:19:09.423 (+ 20 msecs)  Event=TEV_SessionTerminationScheduled
+ Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+ NormalTermination
+
+>12/08 11:19:09.463 (+ 40 msecs)  Event=TEV_SessionTermination
+ Thread = 0x0000005E  Session = 0x0007A718  Socket = 0x000001B4
+ Session terminated
+
+RESOLUTION
+==========
+
+The TN3270E Server has a new registry entry that can be used to turn off TN3270E
+support:
+
+   Subtree:   HKEY_LOCAL_MACHINE
+   Key:       \currentcontrolset\services\tn3270\parameters\NoTN3270E
+   Type:      REG_EXPAND_SZ
+   Value:     ON
+
+When this value is set to ON, the server reverts to being a TN3270 Server. This
+registry setting effects all sessions; not just ones from TN3270 emulators.
+
+STATUS
+======
+
+This feature is included in the latest U.S. Service Pack for SNA Server for
+Windows NT, version 2.11. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : :2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

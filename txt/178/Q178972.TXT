@@ -1,0 +1,163 @@
+DOCUMENT:Q178972  17-DEC-2000  [win95x]
+TITLE   :Description of Windows 95 OEM Service Release 2.5
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:osr2 dtssb win95 kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes Windows 95 OEM Service Release 2.5 (OSR2.5)
+
+MORE INFORMATION
+================
+
+OSR2.5 is version 950C of Windows 95. An Original Equipment Manufacturer (OEM)
+Service Release is an updated version of a product for personal computer (PC)
+manufacturers to preinstall on new PCs.
+
+OSR2.5 is Windows 95 OEM Service Release 2 with integrated Microsoft Internet
+Explorer 4.01 Setup, and updated online services clients. The purpose of OSR2.5
+is to allow PC manufacturers to install an integrated Windows 95 product that
+contains the latest available individual updates.
+
+NOTE: You cannot upgrade earlier versions of Windows 95 or Windows 3.1 with
+Windows 95 OSR2.5.
+
+Internet Explorer version 4.01 and the individual updates that are widely
+applicable to a general audience are available for free download from Microsoft.
+The updated online services clients are available from the respective online
+service provider.
+
+Microsoft reserves the right to revise and change these plans without notice.
+
+Support Boundaries
+------------------
+
+Windows 95 OSR2.5 is a product preinstalled on OEM computers. The OEM is the
+primary support provider for this product and any warranty support for it will
+be handled by their support organizations and governed by the OEMs support
+policies. Microsoft will provide fee-based support. Any issues with this product
+concerning Y2K will be handled free of charge by Microsoft.
+
+Any modifications made to OSR2.5 by the OEM will not be supported by Microsoft.
+
+Microsoft Technical Support Desktop Systems does not support OEMs, or OEM
+Preinstallation Kit (OPK) issues. OEMs are supported at an OEM account level
+only.
+
+
+Microsoft Premier Desktop Systems supports the full functionality and usability
+of OSR2.5 as shipped by Microsoft to the OEM. Any modifications made to Windows
+95 OSR2.5 by the OEM will be supported by the OEM. Installation of OSR2.5 is
+supported by Microsoft OEM support at an OEM level. On a reasonable-effort
+basis, Premier Desktop Systems supports the installation of OSR2.5 as a
+troubleshooting step. Batch installations and network installation are not
+supported by OSR2.5 and are not supported by Premier Desktop Systems Technical
+Support.
+
+Enhancements
+------------
+
+This release contains updated components such as Internet Explorer, the online
+services, and some updates that have been released since OEM Service Release 2
+(OSR2) was released.
+
+This release contains all of the updated components of Windows 95 OEM Service
+Release 2.1 (OSR2.1), and the following additions:
+
+Internet:
+
+ - Internet Explorer 4.01 browser
+
+ - Internet Explorer 4.01 shell
+
+ - Microsoft Virtual Machine (VM) for Java
+
+ - Microsoft Wallet
+
+ - Microsoft NetShow
+
+ - Microsoft FrontPage Express
+
+ - Microsoft Web Publishing Wizard
+
+ - Microsoft Chat
+
+ - Microsoft Outlook Express
+
+ - Internet Connection Wizard
+
+ - Microsoft NetMeeting 2.1
+
+Updated Online Services:
+
+ - America Online
+
+ - AT&T
+
+ - CompuServe
+
+ - The Microsoft Network
+
+ - Prodigy
+
+ - and several international clients
+
+DirectX:
+
+ - DirectX 5 OPK, which can be optionally preinstalled by the OEM.
+
+Universal Serial Bus (USB) Supplement (also known as OSR2.1):
+
+ - The USB Supplement can be optionally preinstalled by the OEM.
+
+Updates:
+
+ - One core file update for Intel Pentium II processors (CPUs)
+
+ - International-specific updates
+
+For more information about the core file update, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q179897 Memory Management Problems on Computers with Pentium Processors
+
+
+For additional information about Internet Explorer 4.01, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q177485 Microsoft Internet Explorer 4.01 Available
+
+
+Additional query words: SBK OPK
+
+======================================================================
+Keywords          : osr2 dtssb win95 kbOPK kbSBK 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

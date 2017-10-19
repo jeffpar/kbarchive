@@ -1,0 +1,61 @@
+DOCUMENT:Q61636  31-OCT-1999  [utilities]
+TITLE   :Saving Compiler Results File in the PWB
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1; OS/2:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+ - Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+The Programmer's WorkBench (PWB) deletes the compiler results file
+upon exiting the PWB. In DOS or OS/2, the file can be saved if the
+compiler results window is made current and the File.Save As menu
+option is selected.
+
+The compiler results file will appear similar to the following:
+
+   +++ PWB  [E:\] Rebuild
+           NMAKE  /z /a /f E:\pwb.mak
+        cl /c /W4 /Fm /Ot /FoGLOBL.obj GLOBL.C
+   Microsoft (R) C Optimizing Compiler Version 6.00
+   Copyright (c) Microsoft Corp 1984-1990. All rights reserved.
+
+   GLOBL.C
+        echo @GLOBL.lrf > NUL
+        link @GLOBL.lrf
+
+   Microsoft (R) Segmented-Executable Linker  Version 5.10
+   Copyright (C) Microsoft Corp 1984-1990.  All rights
+   reserved.
+
+   Object Modules [.OBJ]: GLOBL.obj,GLOBL.exe,NUL, /NOD:SLIBCE
+   SLIBCEP , /NOI /BATCH /EXE /FAR /PACKC;
+
+Additional query words: kbinf 1.00 1.10 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,76 @@
+DOCUMENT:Q249818  08-AUG-2001  [winnt]
+TITLE   :"Protected Storage" Error with Windows 2000 Roaming Profiles
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to log on to a computer that is running Windows NT 4.0 and then
+use Microsoft Internet Explorer to complete a form, you may receive the
+following error message:
+
+   Protected Storage
+
+   Protected Storage uses your Windows password to protect your personal data.
+
+   Protected Storage has detected data created with a previous version. To
+   continue to use this data, enter your Windows password below.
+
+CAUSE
+=====
+
+This error message occurs if you are using roaming profiles from a Microsoft
+Windows 2000-based computer and you have logged on to a computer that is running
+Windows NT 4.0 with the Internet Explorer AutoComplete feature enabled.
+
+RESOLUTION
+==========
+
+To work around this issue, disable the AutoComplete feature for forms on your
+computer:
+
+1. Start Internet Explorer.
+
+2. On the Tools menu, click Internet Options.
+
+3. Click the Content tab, and then click AutoComplete.
+
+4. Click Forms, click OK, and then click OK.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

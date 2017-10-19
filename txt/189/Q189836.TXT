@@ -1,0 +1,82 @@
+DOCUMENT:Q189836  22-JAN-2000  [exchange]
+TITLE   :Outlook Web Access Error: HTTP/1.0 403 Access Forbidden
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0; winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to access the Microsoft Exchange Outlook Web Access logon
+screen via a browser by typing the new alias name such as
+http://servername/exchange2, one of the following errors may be displayed:
+
+   HTTP/1.0 403 Access Forbidden
+   (IIS 3.0 Error Message)
+
+   -or-
+
+   Directory Listing Denied
+   This Virtual Directory does not allow contents to be listed.
+   (IIS 4.0 Error Message)
+
+CAUSE
+=====
+
+The error can occur if the Exchange alias name has been changed to something
+other than /Exchange in the IIS WWW Service properties.
+
+WORKAROUND
+==========
+
+If you change the alias name back to /Exchange and restart the World Wide Web
+Publishing service, you should be able to access the Microsoft Exchange Outlook
+Web Access logon screen. However, if other aspects of the OWA configuration have
+also changed, it may be necessary to remove and reinstall the OWA components
+from the Microsoft Exchange Server compact disc.
+
+STATUS
+======
+
+ 
+
+MORE INFORMATION
+================
+
+For additional information about this issue, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q189653 : XWEB: Exchange Virtual Directory Cannot Be IIS Home Directory
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0; winnt:5.0,5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

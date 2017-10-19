@@ -1,0 +1,74 @@
+DOCUMENT:Q236007  04-FEB-2000  [iis]
+TITLE   :DC Demotion Causes Out-of-Process Applications to Fail
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you demote a domain controller that is being used as an Internet
+Information Services (IIS) 5.0 computer, all applications marked with
+Application Protection: High (isolated) will fail. The following is an example
+of an error message that may occur in the Event Viewer's application log:
+
+   DCOM got error "Logon failure: the user has not been granted the requested
+   logon type at this computer. " and was unable to logon .\IWAM_servername in
+   order to run the server:
+   {3D14228D-FBE1-11D0-995D-00C04FD919C1}
+
+CAUSE
+=====
+
+The IWAM_servername is removed and recreated when the server's demotion occurs.
+The passwords for the COM+ packages are no longer synchronized with the password
+for the IWAM_server account.
+
+RESOLUTION
+==========
+
+To resolve this issue, open a command prompt and go to the \Inetpub\Adminscripts
+directory. Run the Synciwam.vbs script.
+
+Example:
+
+   cscript synciwam.vbs
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Services version 5.0.
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

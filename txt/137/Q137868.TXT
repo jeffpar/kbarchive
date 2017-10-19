@@ -1,0 +1,70 @@
+DOCUMENT:Q137868  28-JUL-2001  [win95x]
+TITLE   :Changing Modem for DUN Connectoid Restores Default Settings
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the modem that a Dial-Up Networking connectoid is configured to
+use, the settings for that connectoid return to their default values. These
+settings include modem-specific settings such as speaker volume and maximum
+speed, and also include settings such as the type of Dial-Up server you are
+connecting to and the TCP/IP settings to use (if you use TCP/IP). If you change
+back to the modem the connectoid was originally configured to use, the settings
+are not restored.
+
+CAUSE
+=====
+
+In a Dial-Up Networking connectoid, all settings except the phone number are
+associated with a specific modem. If you change the modem a connectoid is
+configured to use, the settings are returned to their default values.
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+ - If you need to use two different modems with a Dial-Up Networking connectoid,
+   create two connectoids, each of which is configured to use one of the modems.
+
+ - Install the Dial-Up Networking 1.3 Upgrade. For information about the Dial-Up
+   Networking 1.3 Upgrade, please see the following article in the Microsoft
+   Knowledge Base:
+
+   Q191494 Dial-Up Networking 1.3 Upgrade Available
+
+
+Additional query words: dun
+
+======================================================================
+Keywords          : dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q255192  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Client Cannot Perform Send To/Mail Recipient
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows NT 4.0 
+ - Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a Terminal Server client, when you try to send a file from Windows Explorer
+as an attachment to an e-mail message by right-clicking the file, clicking Send
+To, and then clicking Mail Recipient, Outlook may not start and you may receive
+the following error message:
+
+   The object could not be found
+
+When you start Outlook manually before you use the Send To option, the process
+works properly.
+
+RESOLUTION
+==========
+
+To work around this behavior, use one of the following procedures:
+
+ - Copy the Frmcache.dat file from the C:\Windows\Forms folder to the user's
+   %SystemRoot%\Profiles\%username%\Windows\Forms folder.
+
+   -or-
+
+ - Delete or rename the Home Directory Forms folder.
+
+MORE INFORMATION
+================
+
+To prevent this behavior in the future, run the Windows Messaging compatibility
+script.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOSWinSearch kbOSWinNT400 kbOutlook98Search kbZNotKeyword3 kbOSWinNTSearch
+Version           : WINDOWS:; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

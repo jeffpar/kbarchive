@@ -1,0 +1,68 @@
+DOCUMENT:Q216081  11-DEC-2001  [winnt]
+TITLE   :Installing C2 Security Configuration Manager on Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install the C2 Security Configuration Manager on Windows
+Terminal Server, you may encounter one of the following error messages:
+
+   ERROR: Couldn't find file: c2ntflow.inf Exiting.
+
+   ERROR: Couldn't find file: c2ntfmed.inf Exiting.
+
+   ERROR: Couldn't find file: c2ntfhi.inf Exiting.
+
+RESOLUTION
+==========
+
+To install the C2 Security Configuration Manager on Windows Terminal Server,
+perform the following steps:
+
+1. Copy all files from the Support\Sectool\I386 or ALPHA directory from the
+   Terminal Server compact disc to the %SystemRoot%\System32 directory on the
+   Terminal Server computer.
+
+2. Select all C2*.* files in the System32 folder, right-click the selected
+   files, click Properties, click to remove the Read Only attribute, and then
+   click OK.
+
+3. Right-click the C2config.inf file and click Edit. Change [C2 Security Items]
+   to [Security Items] and save the file.
+
+C2 Security Configuration Manager should now run successfully.
+
+Additional query words: terminsrv C2 install
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

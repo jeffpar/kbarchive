@@ -1,0 +1,72 @@
+DOCUMENT:Q48038  07-NOV-1999  [macmail]
+TITLE   :Mac Adm: Special/Reserved Keys for User Names
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.0a, 3.0b, 3.1, 3.1a, 3.1c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Mail, you cannot use some of the keys on your keyboard to type a
+user name. These keys and combinations of keys are interpreted by Mail as
+commands to do some specific action.
+
+For example, the ESC key in the upper-left corner of your keyboard closes most of
+the windows in Mail.
+
+The following characters/keys are not allowed as part of a user name:
+
+   ESC
+   CLEAR
+   COMMAND
+   OPTION
+   SHIFT
+   CTRL
+   DELETE on the regular keyboard
+   TAB
+   Direction arrows
+
+The following characters/keys are allowed as part of a user name:
+
+   Function keys F1 - F15
+   PGUP
+   PGDN
+   HOME
+   END
+   DEL (located between the regular keyboard and numeric keypad on an extended
+   keyboard)
+
+Note that many of these keys are available only on the standard and extended
+Macintosh keyboards.
+
+
+Additional query words: 3.00 3.00a 3.00b 3.10 3.10a 3.10c
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN300a kbMailATN300b kbMailATN310 kbMailATN310a kbMailATN310c
+Version           : WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

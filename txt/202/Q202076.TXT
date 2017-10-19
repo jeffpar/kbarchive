@@ -1,0 +1,74 @@
+DOCUMENT:Q202076  08-MAR-1999  [sms]
+TITLE   :SMS: Query Value Operators for SMS 2.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server (SMS) 2.0 provides Query functionality from the
+Microsoft Management Console (MMC) SMS Administrator. The WBEM Query language
+supports the following value operators:
+
+ - IN ([value1], [value2], [value . . .])
+
+ - IN (subselect)
+
+ - BETWEEN ([value1] AND [value2])
+   For example, t1.SiteCode BETWEEN 'aaa' AND 'ccc'
+
+ - NOT IN ([value1], [value2], [value . . .])
+
+ - NOT IN (subselect)
+
+ - UPPER ([expr])
+
+ - LOWER ([expr])
+
+ - NULL ([expr] is NULL)
+
+ - NOT NULL ([expr] is not NULL)
+
+ - DATEPART ([part], [date 1]) (part =
+   "mm","dd","yy","hour","minute","second","ms") = (equal) < > or != (not
+   equal) < (greater than) > (less than)
+
+REFERENCES
+==========
+
+For a complete reference of the WQL that the SMS Provider supports, refer to the
+"Using WBEM Query Language with Systems Management Server" section in the SMS
+Toolkit.
+
+Additional query words: prodsms sms20 queries
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,117 @@
+DOCUMENT:Q176320  10-AUG-2001  [winnt]
+TITLE   :Impact of Network Adapter Failure in a Cluster
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information regarding network adapter failure within a
+cluster and different ways the condition may be handled.
+
+MORE INFORMATION
+================
+
+The impact of network adapter failure may vary depending on hardware
+configuration and the number of network adapters installed. With many different
+possible network configurations, this article covers the three most common
+configurations.
+
+Configuration 1
+---------------
+
+Private Network, Client Network Configured for All Communications:
+
+The Administrator's guide for Microsoft Cluster Server (MSCS) suggests using an
+isolated network for cluster communications and one adapter for the client
+network (configured for both client and cluster communications). With this
+configuration, if the adapter fails for the private network that the cluster
+nodes use, the nodes may use the client network for their communications and
+still communicate.
+
+If the client network adapter fails, the IP address resources bound for that
+adapter will also fail. If the resources cannot be brought online, the group
+will failover to a surviving node in the cluster. Simply removing the network
+cable from the client network adapter does not constitute an adapter failure.
+
+If both adapters fail to the point that the cluster nodes cannot communicate, the
+arbitration process begins for access to the quorum disk. The winner of the
+process takes control of the cluster and its groups. The loser withdraws from
+the cluster by shutting down its Cluster service.
+
+Configuration 2
+---------------
+
+Private Network, Client Network Configured for Clients Only:
+
+MSCS handles this configuration very similarly to configuration 1 noted above.
+However, if an adapter on the private network fails, there is no other network
+configured to allow for cluster communications. As a result, the cluster nodes
+will arbitrate for the quorum disk and the winner will take control of all
+groups. The loser of the arbitration process will withdraw from the cluster by
+shutting down its Cluster service.
+
+Configuration 3
+---------------
+
+No Private Network for Cluster Communications:
+
+While this configuration works, it is further limited. If the adapter fails in
+one of the nodes, with no other adapter to use as an alternate for cluster
+communications, the nodes immediately arbitrate for the quorum disk. The winner
+of the arbitration process takes control of all cluster groups and the losing
+node shuts down its Cluster service. With no way for the two nodes to
+communicate, there is a possibility that the winning node may not have access to
+the client network, but won the arbitration process anyway. Because of the
+obvious limitation of this configuration, this method is not recommended or a
+supported configuration.
+
+NOTE: This is not a supported cluster configuration. As per the Microsoft Cluster
+Server Hardware Compatibility List (HCL), at least two network adapters must be
+present in each cluster node. One of those network adapters must be configured
+for private cluster communications exclusively. See the following Web site for
+more details:
+
+   http://www.microsoft.com/HWTEST/sysdocs/mscs2000.htm
+
+Microsoft recommends configurations similar to configuration 1 and 2 above.
+Configuration 2 is more desirable with an extra private network in addition to
+the one mentioned in the example. This allows for two private networks for
+cluster communications and provides the ability to keep all cluster
+communications isolated. Private networks may be accomplished by the use of a
+crossover cable between nodes or by the use of isolated hubs. Configuration 3
+may work but is not a supported HCL configuration.
+
+Additional query words: MSCS
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q233352  03-JUL-1999  [homemm]
+TITLE   :Mac Encarta 98: AppleScript Is Not Loaded on Mac OS 8.5 or Later
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Encarta 98 on a Macintosh computer running Mac OS
+System 8.5 or later, a duplicate AppleScript extension appears when you restart
+the computer. This extension is superimposed by a red "X" and is not loaded.
+
+CAUSE
+=====
+
+This behavior occurs because both Encarta 98 and the Macintosh operating system
+install an extension named AppleScript.
+
+Although the extension installed by Encarta is trademarked, the Macintosh
+operating system does not recognize that the two extensions are identical. As a
+result, the computer attempts to load both AppleScript extensions at startup,
+causing the conflict described in the "Symptoms" section of this article.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable the trademarked AppleScript extension that is
+installed by Encarta. To do this:
+
+1. Click the Apple menu, point to Control Panels, and then click Extensions
+   Manager.
+
+2. Under Extensions, click to clear the check box next to the trademarked
+   AppleScript extension.
+
+   NOTE: The version of the trademarked AppleScript extension that is installed
+   by Encarta is 1.1.
+
+3. Click Restart.
+
+Additional query words: multi multi-media media mm ee98 macos
+
+======================================================================
+Keywords          : kbenv kbtool kbimu 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998Mac
+Version           : MACINTOSH:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

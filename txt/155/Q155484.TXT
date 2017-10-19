@@ -1,0 +1,68 @@
+DOCUMENT:Q155484  16-APR-2000  [powerpt]
+TITLE   :PowerPoint Custom Object Fills and Word's Picture Editor
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbinterop kbole
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft Word for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Word's picture editor to edit a non-rectangular object created in
+PowerPoint for Windows 95, version 7.0 that contains one of PowerPoint's custom
+fills, the fill takes on a rectangular shape outside of the original object's
+boundaries.
+
+CAUSE
+=====
+
+This happens to non-rectangular PowerPoint 7.0 objects when they contain fills
+that are not solid colors or patterns. This happens when the PowerPoint 7.0
+object is copied and pasted, or dragged and dropped into a Word 7.0 document.
+The picture editor in Word does not correctly process the custom fills created
+by PowerPoint tools.
+
+RESOLUTION
+==========
+
+If you need to edit a non-rectangular PowerPoint drawing object, copy and paste
+it into PowerPoint. Edit the object in PowerPoint, then copy and paste it back
+into your Word document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word for Windows 95,
+version 7.0. This problem was corrected in Microsoft Word 97 for Windows.
+
+Additional query words: w_word w_powerpt ppt7 ppt95 word7 word95
+
+======================================================================
+Keywords          : kbgraphic kbinterop kbole 
+Technology        : kbWordSearch kbPowerPtSearch kbWord700Search kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbWord700
+Version           : WINDOWS:7.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

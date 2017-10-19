@@ -1,0 +1,63 @@
+DOCUMENT:Q129206  12-FEB-2000  [foxpro]
+TITLE   :PRB: Running .EXE Gives "Can't Find FOXUT16.DLL" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running an executable created in Visual FoxPro results in the error "Cannot Find
+FOXUT16.DLL" followed by "FOXUT16.DLL is missing or invalid." This error occurs
+only under Windows or Windows for Workgroups versions 3.x.
+
+CAUSE
+=====
+
+FOXUT16.DLL is the universal thunking DLL required by Visual FoxPro and
+executables created in Visual FoxPro when using the Win32s subsystem. This error
+will not occur when the executable is run under Windows NT.
+
+
+RESOLUTION
+==========
+
+For an executable created in Visual FoxPro to run under Win32s, you must include
+the FOXUT16.DLL file in the same directory as the executable or in a directory
+included in the MS-DOS path.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

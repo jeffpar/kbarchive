@@ -1,0 +1,70 @@
+DOCUMENT:Q148189  17-DEC-1999  [schedplus]
+TITLE   :Free/Busy Time Planner Doesn't Translate Time Zones
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Free and Busy time is not translated to or from other time zones, which makes it
+difficult to schedule appointments across time zones. Data is always assumed to
+be in the local time zone. The expected behavior would be to show appointments
+in the originator's time zone values no matter what time zone the invitees are
+in. However, this is not what happens.
+
+RESOLUTION
+==========
+
+Once an appointment is scheduled, the time zones are managed properly. To find a
+free time for your invitee, you must make a mental time conversion, but once you
+find a free time that works, the actual appointment can be scheduled in your
+time and will show up correctly on your invitee's calendar in their time.
+
+For example, say User1 is located in the Pacific time zone using the Windows 95
+Exchange client and User2 is located in Eastern time zone using the Windows 95
+Exchange client. If User1 creates an appointment for 12:00 - 15:00 PST and
+invites User2 by using the Planner, User1 sees the appointment in Pacific time
+and User2 sees same appointment in Eastern time. If User2 creates appointment
+for 11:00 - 14:00 EST and invites User1 by using the Planner, User2 sees the
+appointment correctly in Pacific time and User1 sees the appointment correctly
+in Eastern time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Schedule+ version 7.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 7.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

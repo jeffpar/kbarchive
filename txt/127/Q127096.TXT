@@ -1,0 +1,96 @@
+DOCUMENT:Q127096  12-JUN-2001  [odbc]
+TITLE   :INF: Implementation of Searched Updates in the Access Driver
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how the Microsoft Access ODBC driver implements the SQL
+UPDATE statement and the implications of this in a concurrent multi- user
+situation.
+
+MORE INFORMATION
+================
+
+The Microsoft Access ODBC driver relies on the Jet engine for data processing.
+Jet is Microsoft's relational database engine that handles the database
+processing for Microsoft Access and Microsoft Visual Basic.
+
+A lost update is a typical concurrency problem and can occur when two processes
+read the same data from the database, and try to update the data based on what
+they read before either of the updates succeeds. With the Access ODBC driver
+(Jet), there is no guaranteed way of preventing lost updates. This is primarily
+because the Jet engine does not support a Read or Intent-to-Update type lock. It
+only supports Write locks, which conflict only with the other writers.
+
+To understand why a lost update happens, you need to know how the following SQL
+statement is executed:
+
+   Update <table name> Set <column values> Where
+   <searchcondition>
+
+Even though this is a single SQL statement, it is implemented in roughly two
+steps:
+
+1. Get a bookmark for all rows in the table that match the WHERE clause. A
+   bookmark is the unique key value of a row.
+
+2. For each bookmarked row, update it with the new values in the SET clause.
+
+Now, consider two instances of an application running simultaneously. There are
+several combinations of possible executions in the two processor update case. If
+both processors attempt to do step 2 at the same time, one processor would get a
+lock conflict error. The lock conflict error tells you that the record is locked
+by another user on another machine.
+
+If both processors do step 1 at the same time and processor #1 completes
+(finishes and releases the lock) the update before processor #2 attempts the
+update, processor #1's update will be lost. No error will be generated. This is
+a classic lost update problem without transactions.
+
+Transactions can help. A transaction ensures that the write lock obtained by the
+first processor is held, which would mean that the second processor would notice
+the lock. However, through the Jet driver, there is no way to ensure that at any
+given time some other processor is not in the step 1 phase of the update. Hence,
+even with transactions, a lost update might occur in a multi-machine update
+scenario.
+
+The same reasoning applies to the combination of the DELETE and UPDATE statements
+in a multi-user situation. You should note that this problem is encountered very
+rarely.
+
+Also, using the SQLSetPos, an ODBC API call, to do the UPDATEs or DELETEs is
+faster and minimizes the chance of any lost updates or deletes.
+
+Additional query words: 2.00.2317 concurrency locking VISUAL C++
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

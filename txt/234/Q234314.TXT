@@ -1,0 +1,65 @@
+DOCUMENT:Q234314  23-AUG-1999  [visualc]
+TITLE   :BUG: "This Stub Requires an Updated Version of <Rpcndr.h>" Error
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbCOMt kbVC kbOSWinCEsearch kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++ 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling a Windows CE project may generate the following compiler error:
+
+   fatal error C1189: #error : this stub requires an updated version of
+   <rpcndr.h>
+
+CAUSE
+=====
+
+You'll get this error if you include a MIDL-generated header file. These header
+files use newer macros, like MIDL_INTERFACE(), which is only defined in later
+versions of Rpcndr.h.
+
+RESOLUTION
+==========
+
+You can #include <wceatl.h> before #including any MIDL-generated header
+files. Wceatl.h contains a definition for MIDL_INTERFACE() and works around the
+compiler error by #defining __RPCNDR_H_VERSION__.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbVC kbOSWinCEsearch kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCETK600VC
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

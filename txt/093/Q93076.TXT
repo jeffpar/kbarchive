@@ -1,0 +1,61 @@
+DOCUMENT:Q93076  05-NOV-1999  [pcmail]
+TITLE   :PC Adm: Deleting Users Does Not Delete Users from Groups
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Deleting a local user from a postoffice in version 3.0 or 3.0a of Microsoft Mail
+for PC Networks does not remove the user's name from any group listings.
+
+CAUSE
+=====
+
+The Mail Administrator program (ADMIN.EXE) does not search through all groups to
+delete a user's name.
+
+RESOLUTION
+==========
+
+You can leave the user's name in group lists--Mail will not send mail to an
+invalid user name. If you want to remove the name anyway, edit the group list by
+selecting Groups from the Local-Admin menu in ADMIN.EXE.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0 and 3.0a of
+Microsoft Mail for PC Networks. This problem was corrected in version 3.2.
+
+Additional query words: 3.00 3.00a 3.20 Admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300 kbMailPCN300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

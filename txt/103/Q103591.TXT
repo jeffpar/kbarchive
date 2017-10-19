@@ -1,0 +1,50 @@
+DOCUMENT:Q103591  11-FEB-2000  [foxpro]
+TITLE   :How to Use _GetNewItemId() API Function
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0; :2.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro Library Construction Kit for Windows, version 2.5 
+ - Microsoft FoxPro Library Construction Kit for MS-DOS, version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After calling _GetNewItemId(), add the item to the menu before calling
+_GetNewItemId() again. If the item is not added to the menu, subsequent calls to
+_GetNewItemId() return the same item ID.
+
+REFERENCES
+==========
+
+"Developer's Guide," version 2.5, pages 178-179
+
+Additional query words: VFoxWin FoxWin FoxDos 2.50 LCK API menu
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxProLibCK250DOS kbFoxProLibCK250 kbVFP300
+Version           : WINDOWS:3.0; :2.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

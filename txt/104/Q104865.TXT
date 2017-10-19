@@ -1,0 +1,64 @@
+DOCUMENT:Q104865  05-FEB-2000  [foxpro]
+TITLE   :PRB: "Report File Invalid" or "Memo File Missing/Invalid"
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are attempting to modify a report, the error message "Report File
+Invalid" or "Memo File Missing/Invalid" appears.
+
+CAUSE
+=====
+
+The error message occurs because the .FRT file is not present along with the
+.FRX file, the .FRX file has become corrupted, or the .FRT file has been moved
+or deleted.
+
+RESOLUTION
+==========
+
+To resolve this problem, check the following:
+
+1. Make sure the .FRT file is in same directory as the .FRX file.
+
+2. Make sure the .FRT or .FRX file has not been deleted or become corrupted; if
+   it has, re-create the report, or try to correct the file using a third-party
+   utility designed to fix database headers or memo files.
+
+3. Make sure you are not trying to use a 2.5 file under 2.0.
+
+Additional query words: VFoxWin FoxDos FoxWin errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

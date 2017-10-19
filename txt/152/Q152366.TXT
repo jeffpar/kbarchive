@@ -1,0 +1,64 @@
+DOCUMENT:Q152366  15-DEC-1999  [foxpro]
+TITLE   :How To Add Calculator, Calendar, Puzzle, Filer to System Menu
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FoxPro applets, Calculator, Calendar, Filer, and Puzzle, are not included on
+any menu. The code below demonstrates how to add these items to the menu.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      DEFINE BAR 9 OF _mwindow PROMPT "\-"
+         DEFINE BAR 10 OF _mwindow PROMPT "Ca\<lculator" ;
+              MESSAGE "Perform calculations"
+         ON SELECTION BAR 10 OF _mwindow ACTIVATE WINDOW CALCULATOR
+         DEFINE BAR 11 OF _mwindow PROMPT "Calendar/D\<iary" ;
+              MESSAGE "Check dates and keep track of appointments"
+         ON SELECTION BAR 11 OF _mwindow ACTIVATE WINDOW CALENDAR
+         DEFINE BAR 12 OF _mwindow PROMPT "\<Filer" ;
+              MESSAGE "Manage files and directories"
+         ON SELECTION BAR 12 OF _mwindow ACTIVATE WINDOW FILER
+         DEFINE BAR 13 OF _mwindow PROMPT "Pu\<zzle" ;
+              MESSAGE "Solve a puzzle"
+         ON SELECTION BAR 13 OF _mwindow ACTIVATE WINDOW PUZZLE
+         SET SYSMENU SAVE
+
+Additional query words: VFoxWin VFoxMac
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

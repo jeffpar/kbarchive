@@ -1,0 +1,70 @@
+DOCUMENT:Q93923  23-NOV-1999  [msdos]
+TITLE   :Error Using LOADHIGH (LH) With Third-Party Shell
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+If you use the new MS-DOS 6.0 and later LOADHIGH (LH) parameters (/L or /S) with
+a third-party command interpreter (sometimes called a shell), such as NDOS or
+4DOS, you receive the following error message:
+
+   Error: Unknown Command "/l:<region1>;<region2>"
+
+CAUSE
+=====
+
+MS-DOS 6.0 and 6.2 COMMAND.COM supports two memory specific parameters: /L and
+/S, which are determined by MemMaker. For example, "LOADHIGH /L:0;1 MOUSE.COM"
+is a valid command in MS-DOS 6.0 and 6.2.
+
+Third-party command interpreters such as 4DOS and NDOS are designed to replace
+COMMAND.COM. These command interpreters have to be updated to work correctly
+with the new /L and /S parameters.
+
+WORKAROUND
+==========
+
+To work around the problem, either use COMMAND.COM for your command interpreter
+or remove the /L and /S parameters from your LOADHIGH (LH) commands.
+
+For more information or to obtain an update to your third-party command
+interpreters, please contact your command interpreter vendor.
+
+The 4DOS and NDOS products included here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 6.22 6.0 6.20 3rd party 3rdparty replacement shell shell= four dos 4 third
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

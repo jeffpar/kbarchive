@@ -1,0 +1,90 @@
+DOCUMENT:Q163837  09-AUG-2001  [winnt]
+TITLE   :SNMP Query to Windows NT Returns Same Value for NTS and NTW
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbSDKPlatform kbSNMP kbGrpDSNetkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an SNMP utility to obtain the system type from a computer running
+Windows NT, the value returned is the same for both Windows NT Server and
+Windows NT Workstation. The system types appear to be identical.
+
+Because Windows NT workstations and servers have different capabilities, it is
+necessary to differentiate between these versions of Windows NT, especially when
+managing a large network. In addition, it is necessary to differentiate between
+Windows NT Servers and Domain Controllers, since they also have different roles
+in the domain model.
+
+CAUSE
+=====
+
+The SysObjectID field (1.3.6.1.4.1.311.1.1.3.1) returned by the computer running
+Windows NT is the same if the computer is running Windows NT Server or Windows
+NT Workstation.
+
+RESOLUTION
+==========
+
+A change was made in Windows NT 4.0 Service Pack 2 (SP2) and Windows NT 3.51
+post-SP5 to the SNMP components so that the different system types are now
+reported as follows:
+
+   1.3.6.1.4.1.311.1.1.3.1.1 for Windows NT Workstation
+   1.3.6.1.4.1.311.1.1.3.1.2 for Windows NT Servers
+   1.3.6.1.4.1.311.1.1.3.1.3 for Windows NT Domain Controllers
+
+This enables the user of the SNMP utility to more precisely identify the type of
+Windows NT system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT version
+4.0. This problem was corrected in the latest Microsoft Windows NT 4.0 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A
+supported fix is now available, but is not fully regression-tested and should be
+applied only to systems experiencing this specific problem. Unless you are
+severely impacted by this specific problem, Microsoft recommends that you wait
+for the next Service Pack that contains this fix. Contact Microsoft Product
+Support Services for more information.
+
+
+Additional query words: prodnt manager intel landesk hp openview insight insite OID
+
+======================================================================
+Keywords          : kbnetwork kbSDKPlatform kbSNMP kbGrpDSNet kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

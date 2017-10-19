@@ -1,0 +1,60 @@
+DOCUMENT:Q135940  18-DEC-2000  [win95x]
+TITLE   :Large Files Left on Host After Compressing with DriveSpace
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use DriveSpace (DRVSPACE.EXE) to compress a drive, you may receive the
+following error message:
+
+   There was not enough free space on drive C: to complete this task. Some files
+   have been left uncompressed on drive h: If you want to compress these files,
+   you must delete unwanted files from drive C: and then try again.
+
+   ID Number: Drvspace000
+
+CAUSE
+=====
+
+When it compresses files, DriveSpace makes a second copy of the files on the
+compressed drive before it deletes the duplicated files on the host drive. If
+the compressed drive does not have enough free space to store a copy of the
+larger files, it leaves the larger files on the host drive.
+
+RESOLUTION
+==========
+
+When you use DriveSpace in Windows 95, free some space on the compressed drive,
+and then copy the files from the host drive to the compressed drive.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

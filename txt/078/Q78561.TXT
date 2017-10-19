@@ -1,0 +1,61 @@
+DOCUMENT:Q78561  08-NOV-2001  [homemm]
+TITLE   :Incorrect Settings in SYSTEM.INI for Sound Blaster Pro
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Beethoven for Windows, versions 1.0, 1.0A 
+ - Microsoft Multimedia Mozart for Windows, version 1.0 
+ - Microsoft Multimedia Schubert for Windows, version 1.0 
+ - Microsoft Multimedia Stravinsky for Windows, version 1.0 
+ - Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+ - Microsoft Musical Instruments for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Early version of the Creative Labs' Multimedia Extensions to Windows Setup
+program does not add certain entries to the SYSTEM.INI, which are necessary for
+the Sound Blaster Pro audio card to work properly. Because of this error,
+Bookshelf for Windows may not play MIDI audio files correctly.
+
+MORE INFORMATION
+================
+
+To correct the problem, add the following lines to the SYSTEM.INI. The
+individual parameters will be dependent upon the actual settings on the board.
+The factory default settings are listed below:
+
+   [SoundBlaster]
+   port=220
+   int=7
+   dma=1
+
+Additional query words: Viewer 1.0 2.0 2.00kbmm Sound Tbook MediaView VB C run
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbZNotKeyword kbBookshelfSearch kbEncartaEncycSearch kbMMSchubert kbMMStravinsky kbMMMozart100 kbMMBeethoven100 kbMMBeethoven100a kbMusicalInst kbEncartaEnCyc1994
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

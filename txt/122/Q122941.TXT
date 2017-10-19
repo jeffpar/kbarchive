@@ -1,0 +1,63 @@
+DOCUMENT:Q122941  13-JUN-2001  [winmisc]
+TITLE   :Invalid Voice Pilot Macro Hangs System
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:2.00 2.00a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use a Switch To macro created with the Voice Pilot feature of
+the Windows Sound System, your system may stop responding (hang).
+
+CAUSE
+=====
+
+This problem occurs when the name of the application that the macro is to switch
+to is placed outside the square brackets surrounding the words "Switch To" as in
+the following example:
+
+   [Switch To]
+   Notepad
+
+This frequently occurs when "Switch To" is selected from the Special Command
+menu, rather than being typed in manually.
+
+RESOLUTION
+==========
+
+To correct this problem, place the name of the application inside the square
+brackets as follows:
+
+   [Switch To Notepad]
+
+Additional query words: 2.00 2.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200 kbWinSoundSys200a
+Version           : 2.00 2.00a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

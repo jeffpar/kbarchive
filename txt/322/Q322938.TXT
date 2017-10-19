@@ -1,0 +1,63 @@
+DOCUMENT:Q322938  12-AUG-2002  [iis]
+TITLE   :PRB: Cannot Specify Country When You Create an SSL Certificate
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to create a Secure Sockets Layer (SSL) request by using the Web
+Server Certificate Wizard in Internet Information Services (IIS) 5.0, some
+countries may be missing, and there is no option to add a new one.
+
+RESOLUTION
+==========
+
+Submit the certificate request by using the Certificate Services Web form. When
+you do this, you can specify the country code during the creation of the
+request. For additional information about how to create a request by using a
+form, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q248107 Creating Server Certificates Using Certificate Services Web Form
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q180342 Country/State Code Validity Not Checked Via Certificate Request
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,79 @@
+DOCUMENT:Q131522  17-DEC-1999  [schedplus]
+TITLE   :PC WSPLUS: Schedule+ Dynamic Connections Not Work w/Novell NDS
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00 1.00a
+WINDOWS
+kb3rdparty kbnetwork
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use versions 1.0 and 1.0a of Microsoft Schedule+ for Windows, and you
+attempt to access a .CAL file on another postoffice with only Novell NetWare
+Directory Services (NDS) enabled, you may experience the following error
+message:
+
+   The Schedule file could not be opened. You may not have the necessary access
+   privileges or the file may be unavailable.
+
+Schedule+ Dynamic Connections will fail and cannot connect to the server.
+
+CAUSE
+=====
+
+Schedule+ will not work with NDS alone. The NetWare API calls made by Schedule+
+expect a bindery user or bindery type of log in.
+
+NOTE: Bindery in Novell is the name of the security files used in NetWare 2.x and
+3.x servers.
+
+RESOLUTION
+==========
+
+Enable Bindery Emulation on all servers and workstations participating in
+Schedule+ Dynamic Connections.
+
+MORE INFORMATION
+================
+
+Schedule+ Schedule Distribution also requires that Bindery Emulation be
+enabled.
+
+You can use either the VLM or NETX to attach to a version 3.11 or 4.x server with
+Bindery Emulation. NETX will not work against a 4.x server without Bindery
+Emulation.
+
+
+Additional query words: schedule plus 1.00 1.00a Novell file cannot be opened
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

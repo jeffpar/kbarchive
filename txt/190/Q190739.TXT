@@ -1,0 +1,81 @@
+DOCUMENT:Q190739  07-OCT-1999  [sna]
+TITLE   :Print Session Does Not Prompt for Filter DLL
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Filter check box is selected in the Print Session properties, and no DLL
+file is specified by the user, there is no error indicating that the DLL needs
+to be entered when the user clicks OK to apply the configuration.
+
+CAUSE
+=====
+
+The print session does not verify that a filter DLL is specified if the user
+selects the Filter check box.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+Service Pack 1, 3.0 Service Pack 2, 3.0 Service Pack 3, 4.0, and 4.0 Service
+Pack 1. We are researching this problem in the SNA Server versions 2.X and 3.0,
+and will post more information here in the Microsoft Knowledge Base as it
+becomes available.
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The problem is corrected by having the print session validate that the filter
+DLL name is not empty. The following error message is displayed if the DLL is
+not specified:
+
+   "Print filtering is selected, but the filter DLL name is blank."
+
+The following files have been updated:
+
+   <snaroot>\system\snacfg.dll
+   <snaroot>\system\snaadmin.dll
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

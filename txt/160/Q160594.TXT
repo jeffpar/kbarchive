@@ -1,0 +1,73 @@
+DOCUMENT:Q160594  11-SEP-2001  [foxpro]
+TITLE   :HOWTO: Use Report File Units
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
+OPER/SYS:
+KEYWORDS:kbprint kbHWMAC kbPrinting kbReportWriter kbvfp300 kbvfp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In creating a report programmatically, you can use the following formula to
+determine the width for objects on the report:
+
+   625/6 report units per pixel
+
+MORE INFORMATION
+================
+
+The FONTMETRIC function returns return various attributes of a specified font.
+For example, FONTMETRIC(6) returns the average character width in pixels of the
+current font.
+
+So, to calculate the average width needed in a report for a five-character field,
+you could use the following formula:
+
+      reportwidth = 625/6 * ;
+         (FONTMETRIC(6, <cFontName>, <nFontSize>, <cFontStyle>) * ;
+         nNumCharacters)
+
+nNumCharacters specifies the number of characters for which you need to allow
+room.
+
+The following line of code would store the average width needed in a report for a
+five-character field in the font "Times New Roman," size 12, style Normal.
+
+      reportwidth = 625/6 * (FONTMETRIC(6, "Times New Roman", 12, "N") * 5)
+
+REFERENCES
+==========
+
+Visual FoxPro Help; search on "FONTMETRIC()"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbHWMAC kbPrinting kbReportWriter kbvfp300 kbvfp500 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,54 @@
+DOCUMENT:Q76846  23-NOV-1999  [msdos]
+TITLE   :CHKDSK *.* Hangs on 1.44 MB Disk with Zero Byte File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CHKDSK *.* command, when executed on 3.5-inch 1.44 MB media containing a
+zero-byte file, stops (hangs) the system.
+
+WORKAROUND
+==========
+
+Deleting the zero-length file from the disk allows CHKDSK to run properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with MS-DOS version 5.0. We are
+researching this problem and and will post new information here as it becomes
+available.
+
+Additional query words: 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

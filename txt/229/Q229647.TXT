@@ -1,0 +1,109 @@
+DOCUMENT:Q229647  16-MAY-2002  [winnt]
+TITLE   :RPC, RAS, PPTP (40-bit) Encryption Added to Windows NT 4.0 Frenc
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp5fix kbWinNT4sp6fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+NOTE: The information in this article applies to the 
+French version(s) of Windows NT 4.0.
+
+SYMPTOMS
+========
+
+Prior to Windows NT 4.0 Service Pack 5, the French versions of the following
+products did not support encryption:
+
+ - Microsoft Windows NT Server 4.0 with Remote Access Service (RAS and PPTP)
+
+ - Microsoft Systems Management Server Remote Control (Remote Procedure Call
+   (RPC))
+
+ - Microsoft SQL Server (RPC)
+
+ - Microsoft Exchange Server (RPC)
+
+CAUSE
+=====
+
+French law prohibits the supply of products containing encryption capabilities
+without prior authorization. Microsoft has been granted the right to supply
+40-bit encryption for RAS, RPC, and PPTP in Windows NT 4.0.
+
+
+The following are the binary files affected:
+
+ - Ntlms128.dll
+
+ - Ntlmssps.dll
+
+ - Secur128.dll
+
+ - Security.dll
+
+RESOLUTION
+==========
+
+Windows NT Server or Workstation 4.0
+------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT Server
+4.0, Terminal Server Edition. For additional information, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT Server version 4.0, Terminal Server Edition Service Pack 6.
+
+
+Additional query words: sp5 france
+
+======================================================================
+Keywords          : kbWinNT400sp5fix kbWinNT4sp6fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

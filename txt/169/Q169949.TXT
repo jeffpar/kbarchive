@@ -1,0 +1,65 @@
+DOCUMENT:Q169949  18-DEC-1999  [homemm]
+TITLE   :Mastering: Website Added to Notebook Instead of Content Page
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Products, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the NOTEBOOK, if you add a bookmark to the Notebook immediately after
+starting an Internet Jump, the Website address is added to the bookmark list and
+not the intended content page.
+
+WORKAROUND
+==========
+
+To add a bookmark to the content page in the Notebook, follow these steps:
+
+1. Close Internet Explorer.
+
+2. Close the Mastering product.
+
+3. Open the Mastering product to the page you want to bookmark.
+
+4. Add it to the Notebook.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Mastering Series products
+version 1.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbMSPressSearch
+Version           : WINDOWS:1.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

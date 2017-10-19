@@ -1,0 +1,80 @@
+DOCUMENT:Q137064  08-AUG-2001  [winnt]
+TITLE   :Unable to Read Error 52225 During Windows NT Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT Server or Workstation, the following error appears
+during the text mode portion of Setup:
+
+   UNABLE TO READ
+   Error 52225 line 1933
+   D:\winnt\private\ntos\boot\setup\setup.c
+
+   -or-
+
+   ERROR
+   Unexpected error [769] occured at
+   Line 1933 in d:\nt\private\ntos\boot\setup.c
+   Press any key to continue
+
+   -or -
+
+The error during Windows NT V4.0 setup is as follows:
+
+Unexpected error (256) occurred at
+Line 2180 in d:\nt\private\ntos\boot\setup\setup.c
+
+Setup cannot configure your computer to start windows NT. This may indicate a
+problem with the hard disk containing your C: drive or C: may be severely
+corrupt. Setup cannot continue.
+
+Press F3 to exit.
+
+CAUSE
+=====
+
+The error occurs because Setup cannot write the disk signature. Some computers
+have a BIOS option to enable protection of the master boot record (MBR) and/or
+boot sector. If this option is turned on, Setup is not able to write the disk
+signature or create/delete partitions during Setup.
+
+RESOLUTION
+==========
+
+Disable the CMOS option to protect the MBR and boot sector.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

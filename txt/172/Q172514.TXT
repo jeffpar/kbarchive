@@ -1,0 +1,69 @@
+DOCUMENT:Q172514  09-AUG-2001  [winnt]
+TITLE   :Silent RIP for IP Available for Windows NT Workstation
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP4
+OPER/SYS:
+KEYWORDS:kbFEA kbWinNT400sp4fea
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Service Pack 4 (SP4) adds support to Windows NT Workstation 4.0
+for the following feature:
+
+ - Silent Routing Information Protocol (RIP)
+
+MORE INFORMATION
+================
+
+RIP is a routing protocol that allows routers to exchange route tables so
+clients can use the best possible route to transfer data to servers on different
+subnets. Silent RIP is the passive mode of this protocol whereby a router will
+listen to advertised routes from other routers, but does not actively advertise
+its own routes.
+
+Previous to SP4, Microsoft has provided no support for RIP in Windows NT
+Workstation, only in Windows NT Server. This new feature will only be of value
+when local routers are using RIP version 1 broadcasts.
+
+
+
+For more information on Service Pack 4, please see the following article in the
+Microsoft Knowledge Base.
+
+   Q152734 How To Obtain the Latest Windows NT 4.0 Service Pack
+
+
+
+Additional query words: nt4sp4fea
+
+======================================================================
+Keywords          : kbFEA kbWinNT400sp4fea 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp4
+Version           : :4.0,4.0 SP4
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

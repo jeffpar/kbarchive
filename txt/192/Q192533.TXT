@@ -1,0 +1,93 @@
+DOCUMENT:Q192533  21-APR-2000  [exchange]
+TITLE   :XCLN: MAPI Spooler Sends NDRs During Folder Synchronization
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:; winnt:4.0,5.0,5.5; :8.0,8.01,8.02,8.03
+OPER/SYS:
+KEYWORDS:exc55sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+ - Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If an application posts a message to the user's outbox during the time the
+application is synchronizing the user's outbox, the MAPI spooler sends a
+non-delivery report (NDR) on this newly submitted message with the following
+error message:
+
+   Your message did not reach some or all of the intended recipients.
+
+      Subject: Extended MAPI message 11001.
+      Sent: 11/24/97 4:44:59 PM
+
+   The following recipient(s) could not be reached:
+
+      <RECIPIENT NAME>
+      No transport provider was available for delivery to this recipient.
+
+CAUSE
+=====
+
+This problem is caused by a logic error in the way the emsmdb32 provider handles
+messages posted during synchronization.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Component: Provider
+
+   File Name      Version
+   ----------------------
+   Emsui32.dll    2326.0
+   Mspst32.dll    2326.0
+   Emsmdb32.dll   2326.0
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 4.0, 5.0, and 5.5.
+
+Additional query words: 8.5
+
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbOutlook97 kbZNotKeyword2 kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : WINDOWS:; winnt:4.0,5.0,5.5; :8.0,8.01,8.02,8.03
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

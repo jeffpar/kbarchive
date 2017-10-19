@@ -1,0 +1,82 @@
+DOCUMENT:Q130996  15-FEB-2000  [foxpro]
+TITLE   :PRB: "Save As" Directory Isn't the Same as Default Directory
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After choosing Save As from the File menu, the current directory listed in the
+Save As dialog box is not the same as the directory set previously by the SET
+DEFAULT command.
+
+CAUSE
+=====
+
+Visual FoxPro uses the current directory, not the default directory as its
+default for system-level functionality such as opening or saving files.
+
+The SET DEFAULT command sets the directory that Visual FoxPro uses to look for
+data. It does not effect system-level functionality.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a directory off the root of drive C: called TEMP.
+
+2. Start Visual FoxPro.
+
+3. Enter the following commands, one at a time, in the Command window:
+
+      SET DEFAULT TO C:\ 
+      CD \TEMP
+      MODIFY COMMAND test.prg
+
+4. In the empty window that comes up for TEST.PRG type:
+
+   " This is a test. " (without the quotation marks)
+
+5. From the File Menu, choose Save As.
+
+6. Note that the currently selected "Save As" directory is C:\TEMP, not C:\ as
+   set by the SET DEFAULT command.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

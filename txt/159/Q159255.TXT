@@ -1,0 +1,51 @@
+DOCUMENT:Q159255  08-NOV-2001  [homekids]
+TITLE   :Spike's World: How Do I Send Spike E-Mail?
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Spike's World, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Spike's World has several links so that you can send e-mail (suggestions and
+comments) to the Spike's World product team. Some comments and interesting facts
+will be posted on the site for everyone to see.
+
+MORE INFORMATION
+================
+
+To send mail, just find a place somewhere on a page where the e-mail link is
+located, and click on it. You'll get an e-mail form to send your thoughts and
+comments.
+
+Additional query words: kids spikes spikeswld email send mail give feedback
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbSpikesWorld
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

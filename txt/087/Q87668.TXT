@@ -1,0 +1,117 @@
+DOCUMENT:Q87668  21-OCT-1999  [foxmisc]
+TITLE   :FoxBASE+ Error Messages: A - E
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MS-DOS:2.17
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for MS-DOS, version 2.17 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article reproduces a partial list of FoxBASE+ error messages, from A to E.
+
+
+MORE INFORMATION
+================
+
+Attempt to use more than 256 names
+----------------------------------
+
+As a program was being opened, the 256 variable names limit was exceeded. To
+correct this, divide the program into smaller modules.
+
+Available only under DOS 2.00 +
+-------------------------------
+
+(MS-DOS only) The QUIT TO command is not supported under the version of MS-DOS
+being used.
+
+Bad report specification
+------------------------
+
+A report description contains an error. An example would be an invalid field
+reference or variable.
+
+Beyond string
+-------------
+
+An attempt was made to access characters beyond the last character in the memory
+variable or database field.
+
+Cannot create file
+------------------
+
+The operating system has returned an error to FoxBASE+ indicating that the new
+file cannot be created. The inability to create a new file is usually the result
+of a full disk or directory, entry of an invalid filename, or not having the
+proper rights to a directory.
+
+Cannot open file
+----------------
+
+The operating system has returned an error to FoxBASE+ indicating that the file
+cannot be opened. The inability to open a file is usually the result of
+attempting to open a file which does not exist or is marked read-only, entry of
+an invalid filename, or not having the proper rights needed to access the file.
+
+Checksum error
+--------------
+
+(MS-DOS only) The file accessed by the LOAD command contains a line which has an
+incorrect checksum.
+
+Database in use is not indexed
+------------------------------
+
+An index for the database was not selected when an UPDATE command, using the
+RANDOM option, was encountered.
+
+Database record is trashed
+--------------------------
+
+A numeric field in the current record contains invalid characters.
+
+Division by 0
+-------------
+
+An attempt was made to divide by zero.
+
+Do nesting too deep
+-------------------
+
+The maximum DO program nesting of 15 levels has been exceeded.
+
+Endtext without text
+--------------------
+
+An ENDTEXT statement is missing a corresponding TEXT statement.
+
+Additional query words: Fox Base plus error message
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxBASE217DOS kbFoxBASESearch
+Version           : MS-DOS:2.17
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

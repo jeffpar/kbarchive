@@ -1,0 +1,82 @@
+DOCUMENT:Q281313  08-MAY-2002  [winnt]
+TITLE   :Server for NFS Does Not Recognize Group Membership Changes
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool w2000sfu kbUNIXService
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 2.0, used with:
+    - the operating system: Microsoft Windows 2000 
+    - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows Services for UNIX includes a Server for NFS component. If a group
+membership change is implemented by the administrator, the Server for NFS
+component does not recognize the change immediately. This could allow a user to
+gain access to files to which that user no longer has rights.
+
+For example, assume that User1 is a member of the UnixGrp1 and UnixGrp2 groups.
+Only members of the UnixGrp2 group are allowed access to the Test.txt file.
+User1 can access the file. if the administrator removes User1 from the UnixGrp2
+group, User1 should no longer have access to the Test.txt file. However, Server
+for NFS does not immediately recognize the group membership change and allows
+User1 to access the Test.txt file.
+
+CAUSE
+=====
+
+This behavior occurs because group membership information is cached by the
+Server for NFS component.
+
+RESOLUTION
+==========
+
+To work around the problem, you can use either of the following methods after
+group membership has been changed:
+
+ - Stop and restart the NFS server.
+
+ - Stop and restart the mapping service.
+
+NOTE: If you use the second method, the changes in group membership are
+recognized at the next refresh interval.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT 4.0 and
+Microsoft Windows 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool w2000sfu kbUNIXService 
+Technology        : kbWinServiceUNIXSearch
+Version           : :2.0,4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,68 @@
+DOCUMENT:Q146074  12-SEP-1999  [schedplus]
+TITLE   :XCLN: Restored Schedule+ File Not Synchronized w/ Server File
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+7.00
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are a Delegate Owner and you restore the backup copy of another user's
+Microsoft Schedule+ file, the local file is not synchronized with the file on
+the Microsoft Exchange server.
+
+CAUSE
+=====
+
+Normally, when you log on to Microsoft Schedule+, the local file is synchronized
+with the server file. If you restore another user's file from the server, the
+link between the user's local copy and the server copy is broken and
+synchronization is disabled.
+
+
+RESOLUTION
+==========
+
+To correct this problem, force synchronization using the following steps:
+
+1. On the Tools menu, click Options, and then click the Synchronize tab.
+
+2. Click Synchronize Now.
+
+3. Click OK.
+
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

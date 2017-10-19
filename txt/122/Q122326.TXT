@@ -1,0 +1,62 @@
+DOCUMENT:Q122326  22-JUL-2001  [visualc]
+TITLE   :BUG: Win32s Setup May Fail if BUFFERS or FILES Set Too Small
+PRODUCT :Microsoft C Compiler
+PROD/VER:2.00 2.10 4.00 4.10
+OPER/SYS:
+KEYWORDS:kbsetup kbOSWin32s
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Visual C++ Win32s Setup program may fail if BUFFERS or FILE settings in your
+CONFIG.SYS file are set too low. Setup requires that the number of files
+specified be at least 50 and the number of buffers specified be at least 30.
+
+RESOLUTION
+==========
+
+Make sure your CONFIG.SYS file contains the following lines:
+
+      BUFFERS=30
+      FILES=50
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 1.20 2.00 2.10 4.00 4.10 4.20 uae failure vcbuglist40
+
+======================================================================
+Keywords          : kbsetup kbOSWin32s 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC200 kbVC210 kbVC32bitSearch
+Version           : 2.00 2.10 4.00 4.10
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

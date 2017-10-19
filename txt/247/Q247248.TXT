@@ -1,0 +1,81 @@
+DOCUMENT:Q247248  24-DEC-1999  [foxpro]
+TITLE   :PRB: BuffDirty and the Class Browser
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbMiscTools kbvfp300b kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When accessing the Class Browser, Visual FoxPro may return the following error:
+
+   Invalid buffdirty call
+
+And then Visual FoxPro quits.
+
+CAUSE
+=====
+
+Possible causes of this problem are a corrupted Browser.dbf file resulting from
+an abnormal termination of Visual FoxPro from a power outage, a computer lockup
+or restart, and turning the computer off without properly shutting it down.
+
+RESOLUTION
+==========
+
+There are two ways to resolve the problem.
+
+ - Delete the two files, Browser.dbf and Browser.fpt.
+
+   CD (HOME())
+   ERASE browser.dbf
+   ERASE browser.fpt
+
+   NOTE: these two files are created if they do not exist when the Class Browser
+   is run.
+
+ - Zap the Browser table.
+
+   USE (HOME() + "browser") EXCLUSIVE
+   ZAP
+   USE
+
+   This clears any corrupted records in the table and prepares it for initial use
+   again.
+
+MORE INFORMATION
+================
+
+The Invalid buffdirty call is not limited to the Class Browser.
+
+Additional query words: Class Browser, GPF, buffdirty
+
+======================================================================
+Keywords          : kbMiscTools kbvfp300b kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

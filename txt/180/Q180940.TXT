@@ -1,0 +1,64 @@
+DOCUMENT:Q180940  07-SEP-2001  [sna]
+TITLE   :Unable to Use Host Print Transform After Applying SP2
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP2
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The 5250 print server Host Print Transform option does not work correctly after
+you apply SNA Server 3.0 Service Pack 2.
+
+CAUSE
+=====
+
+The new PRINTSESSIONAPPC record written when the Host Print Transform is enabled
+is not properly setting the PAEXTRA_EXTENDED bit in the dwExtra flag. Therefore,
+the 5250 print service creates a 5224 device instead of a 3812 device on the
+AS/400.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0.
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP2
+Version           : WINDOWS:3.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

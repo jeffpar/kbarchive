@@ -1,0 +1,69 @@
+DOCUMENT:Q276531  06-AUG-2002  [sms]
+TITLE   :Mobile Client Computer Is Assigned to Every Site It Visits
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbClient kbConfig kbServer kbsms200 kbsms200bug kbDiscovery kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you disable the traveling mode option on a client computer, you may notice
+that the mobile client computer has been assigned to all of the sites that it
+has visited.
+
+CAUSE
+=====
+
+When you enable the traveling mode option on a mobile client, the Smsasign.ini
+file (located at <Windir>\Ms\Sms\Core\Data\) is modified to indicate
+"CLIENT_ASSIGNED." This setting prevents the mobile client from being added
+automatically to sites that it visits. However, if you disable the traveling
+mode option, the Systems Management Server (SMS)-based client is automatically
+assigned to that site.
+
+WORKAROUND
+==========
+
+When the traveling mode option is enabled, do not turn it off. This workaround
+may be easier to implement if you use the Clitrvl.exe tool that is included with
+Systems Management Server 2.0 Service Pack 2 (SP2).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms travel mode
+
+======================================================================
+Keywords          : kbsetup kbClient kbConfig kbServer kbsms200 kbsms200bug kbDiscovery kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

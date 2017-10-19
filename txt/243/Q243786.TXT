@@ -1,0 +1,61 @@
+DOCUMENT:Q243786  22-NOV-1999  [exchange]
+TITLE   :XADM: Directory Exception e0010006 with Parameters 4 and 1
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The directory service may log an Event ID 1171 if internal processing diagnostic
+logging is turned up on the directory. The following error message is
+displayed:
+
+   Exception e0010006 has occurred with parameters 4 and 1 (internal ID
+   4070357). Contact Microsoft Technical Support for assistance.
+
+CAUSE
+=====
+
+This error message results from a Lightweight Directory Access Protocol (LDAP)
+search that returns more results than the maximum number of results specified in
+the LDAP properties of the server that reports the error.
+
+RESOLUTION
+==========
+
+This setting is 100 by default. You can change the setting by using the Exchange
+Server Administrator program. Click the Protocols container, click LDAP Site
+Properties, and then click Search.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,53 @@
+DOCUMENT:Q102800  30-JUL-2001  [lanman]
+TITLE   :Cannot Access IBM LAN Server NET.ACC from LAN Man System
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+If you try to access an IBM LAN Server 1.3 NET.ACC that you have directly copied
+onto a LAN Manager 2.1, 2.1a or 2.2 system, or if you attempt to use the PORTACC
+utility, you receive an error message:
+
+   NET3882 error: The file NET.ACC is not a valid LAN Manager accounts file.
+
+CAUSE
+=====
+
+The NET.ACC from one system is not compatible with the other.
+
+RESOLUTION
+==========
+
+Use the MERGEACC utility, part of the LAN Manager Resource Kit, to transfer the
+user database.
+
+For more information on the IBM LAN Server to Microsoft LAN Manager upgrade, see
+the white paper "Migrating from IBM LAN Server to Microsoft LAN Manager,"
+098-37238, available from Microsoft Inside Sales.
+
+
+Additional query words: 2.10 2.10a 2.20 2.1 2.1a 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

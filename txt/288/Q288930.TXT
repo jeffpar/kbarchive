@@ -1,0 +1,119 @@
+DOCUMENT:Q288930  26-MAY-2001  [vbwin]
+TITLE   :PRB: PDW Raises Error "Filename Must Contain Text"
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbAddin kbwizard kbAppSetup kbDeployment kbVBp kbVBp600 kbIDEProject kbGrpDSVB kbDSuppo
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the Package and Deployment Wizard (PDW) to generate a setup
+package, you may receive the following error message:
+
+   Filename must contain text
+
+CAUSE
+=====
+
+This problem can occur when a semicolon (;) is missing at the end of the Object
+lines in the project (.vbp) file.
+
+RESOLUTION
+==========
+
+To resolve this problem, open the project file in a text editor such as Notepad,
+manually add a semicolon to the end of the Object line, and save the file.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+   default.
+
+2. From the Project menu, click Components. On the Insertable Objects tab,
+   select the "Microsoft Clip Gallery" check box, and then click OK.
+
+3. Save the project, and then exit Visual Basic. (Note: You must exit Visual
+   Basic to reproduce the problem.)
+
+4. Open the project again.
+
+5. From the Project menu, click Components. On the Insertable Objects tab,
+   select the "Microsoft Word Document" check box, and then click OK.
+
+6. From the File menu, click Make Project1.exe.
+
+7. From the File menu, save the project, and then close Visual Basic.
+
+8. Open the project again.
+
+9. Click the Add-Ins menu. If the Package and Deployment Wizard is not listed,
+   click Add-In Manager, click "Package and Deployment Wizard", select the
+   "Loaded/Unloaded" check box, and then click OK.
+
+10. From the Add-Ins menu, click "Package and Deployment Wizard", and then click
+   Package. Notice that you receive the above-mentioned error message.
+
+Steps to Resolve Problem
+------------------------
+
+1. In Notepad, open the .vbp file. Locate the following line:
+
+   
+
+   Object=MS_ClipArt_Gallery.5
+
+2. Add a semicolon (;) to the end of the line as follows:
+
+   
+
+   Object=MS_ClipArt_Gallery.5;
+
+3. Save the file.
+
+4. Run the PDW, and click Package. Notice that you no longer receive the error
+   message.
+
+REFERENCES
+==========
+
+For additional information about another cause for this error, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q193174 PRB: Filename Must Contain Text Error Message When Packaging Project
+
+Additional query words: PDW
+
+======================================================================
+Keywords          : kbAddin kbwizard kbAppSetup kbDeployment kbVBp kbVBp600 kbIDEProject kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

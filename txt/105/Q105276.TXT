@@ -1,0 +1,58 @@
+DOCUMENT:Q105276  12-OCT-1999  [win3x]
+TITLE   :Differences Between LAN Manager and WFWG WinPopup
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the differences between Microsoft LAN Manager versions
+2.1 and 2.2 WinPopup and Windows for Workgroups version 3.11 WinPopup.
+
+MORE INFORMATION
+================
+
+LAN Manager 2.1 and 2.2
+-----------------------
+
+LAN Manager WinPopup can store five messages at a time. When more than five
+messages are in the queue, the oldest message is stored in a MESSAGES.LOG file.
+
+Windows for Workgroups 3.11
+---------------------------
+
+Windows for Workgroups WinPopup can store up to 15 messages and does not use a
+message log. Windows for Workgroups WinPopup also has scrolling ability to allow
+you to view previous messages or jump ahead in the message list.
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

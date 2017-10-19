@@ -1,0 +1,67 @@
+DOCUMENT:Q102915  10-DEC-1999  [homemm]
+TITLE   :Scenes 1.0: Scenes Must Have Control of Palette
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running Microsoft Scenes with Berkeley's After Dark screen saver or
+Star Trek screen saver, you may receive the following error message:
+
+   MultiModule: Impressionist: Scenes must have control of the palette
+
+This error occurs when you are running the MultiModule portion of After Dark and
+mixing After Dark modules with Scenes modules.
+
+WORKAROUND
+==========
+
+1. Choose the After Dark icon on the bottom of the screen. Or, If you have the
+   icon hidden, choose the icon in the After Dark group in Program Manager.
+
+2. Choose MultiModule.
+
+3. Chose EDIT.
+
+4. Select one of the Scenes modules (for example, Outer Space, Impressionists,
+   or Sierra) or the After Dark module and then remove.
+
+NOTE: You can run only the After Dark modules or one Microsoft Scenes module
+under After Dark.
+
+The After Dark Screen Saver and Star Trek Screen Saver are manufactured by
+Berkeley Systems, a vendor independent of Microsoft; we make no warranty,
+implied or otherwise, regarding these products' performance or reliability.
+
+Additional query words: msscenes screen saver screensaver
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

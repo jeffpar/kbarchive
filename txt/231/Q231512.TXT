@@ -1,0 +1,81 @@
+DOCUMENT:Q231512  14-SEP-2001  [automap]
+TITLE   :MapPoint 2000: Data Import Wizard Assigns ZIP Heading to Column
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Data Import wizard in Microsoft MapPoint 2000 may incorrectly assign the ZIP
+heading to a column that does not contain zip codes.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions are true:
+
+ - The imported data includes only one column of all five-digit numbers, and
+   this column does not contain zip codes.
+
+ - The imported data includes more than one column of all five-digit numbers,
+   and the first such column does not contain zip codes.
+
+NOTE: MapPoint 2000 automatically assigns the ZIP heading to the first column of
+data that contains all five-digit numbers.
+
+RESOLUTION
+==========
+
+To work around this issue, manually change the column heading in the Data Import
+wizard. To do this:
+
+1. On the File menu, click Import Data.
+
+2. Click to select the document you want, and then click Open.
+
+   NOTE: If the document you want to open is a Microsoft Excel workbook, click
+   the worksheet containing the data you want to import, and then click Next.
+
+3. Click a pre-defined heading in the heading box, or type the heading you want
+   in the heading box.
+
+4. Click Finish.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft MapPoint 2000.
+
+Additional query words: mp2000 wrong header zipcode 5-digit
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

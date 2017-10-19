@@ -1,0 +1,74 @@
+DOCUMENT:Q81817  19-NOV-1999  [msdos]
+TITLE   :SuperStor Changes RAMDrive Letter
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When AddStor's SuperStor program is installed and the MS-DOS device driver
+RAMDRIVE.SYS or DRIVER.SYS is loaded, the reported drive letter from
+RAMDRIVE.SYS is off by one drive letter.
+
+CAUSE
+=====
+
+SuperStor loads a device driver called SSTORDRV.SYS that uses the next available
+drive letter for its own use. When RAMDRIVE.SYS is loaded after SuperStor is
+loaded, RAMDRIVE.SYS reports that it is set up as drive Z, when it is really
+drive Y.
+
+For example, if your system has one physical hard drive (drive C) when SuperStor
+loads, SuperStor uses drive D. When RAMDRIVE.SYS loads, it uses drive letter E.
+However, RAMDRIVE.SYS reports that it is set up as drive F, even though it is
+really drive E.
+
+Add Stor is aware of this problem. There are no adverse effects from the missing
+drive letter, other than confusion it may cause you.
+
+WORKAROUND
+==========
+
+To work around this problem, load RAMDRIVE.SYS before the SuperStor driver
+(SSTORDRV.SYS).
+
+If you load RAMDRIVE.SYS before the SSTORDRV.SYS driver, the SuperStor drive
+letter is then off by one rather than RAMDrive. But because you don't need to
+access the SuperStor drive, it should pose no problems.
+
+MORE INFORMATION
+================
+
+SuperStor is a disk storage maximizer similar to Stacker.
+
+Additional query words: 5.00 5.00a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,74 @@
+DOCUMENT:Q90238  29-OCT-1999  [win3x]
+TITLE   :WFWG System Hangs After Running Central Point Backup
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your machine may stop responding (hang) after running Central Point version 7.1
+Backup.
+
+CAUSE
+=====
+
+The virtual direct memory addressing (DMA) driver may not be configured properly
+or you may be using the driver supplied with Microsoft Windows version 3.1. With
+Windows for Workgroups and Central Point Backup, the Windows 3.1 virtual DMA
+driver should not be used.
+
+WORKAROUND
+==========
+
+If you are using the Windows 3.1 driver, replace it with the one supplied with
+Windows for Workgroups version 3.1. Install the file VDMAD.386 in the SYSTEM.INI
+file in the [386Enh] section. It should look like this:
+
+      device=vdmad.386
+
+Another possible solution is to increase the DMABufferSize= line in the
+SYSTEM.INI file in the [386Enh] section to 17 or more. For example:
+
+      DMABufferSize=17
+
+MORE INFORMATION
+================
+
+When Central Point's PC Tools installs, it checks to see if the Windows 3.1 is
+installed. If it is, PC Tools does not install its version of the virtual DMA
+driver. If PC Tools detects another virtual DMA driver installed already
+(VDMAD.386), it replaces it with the default virtual DMA driver (*VDMAD). Since
+Windows for Workgroups replaces *VDMAD, PC Tools incorrectly returns the system
+to the old setting.
+
+Additional query words: 3.10 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

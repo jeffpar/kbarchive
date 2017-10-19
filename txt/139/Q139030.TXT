@@ -1,0 +1,77 @@
+DOCUMENT:Q139030  03-AUG-2001  [visualc]
+TITLE   :HOWTO: Edit Resources in Executables with Visual C++
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:_IK920 kbVC kbVC400 kbVC500 kbVC600 kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Resource Editor, included with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT and Windows 2000 provide APIs that allow you to modify resources in
+an executable or DLL. When the resource is opened, Developer Studio checks to
+ensure that it can write to the file. If not, you will be warned.
+
+Windows 95, Windows 98, and Windows Millennium Edition (Me) do not support the
+APIs necessary to do this. When the resource is loaded, the following warning
+appears:
+
+   Microsoft Developer Studio cannot save the modified resources back to this
+   executable. The executable may be in use, or this version of Windows may not
+   support updating resources in executables.
+
+In Visual C++, version 4.0, the executable can not be modified. Beginning with
+Visual C++, version 5.0, the resources within the executable can be modified and
+saved. To modify resources within Visual C++, version 5.0 or later, use the
+following steps:
+
+1. On the File menu, click Open.
+
+2. Locate an executable or Dll containing resources.
+
+3. In the Open dialog, select Resources in the Open As list.
+
+4. Click OK.
+
+5. The resources for the selected binary file should appear.
+
+At this point, the resources can be modified as they would from the ResourceView
+in a Visual C++ project. Saving the binary file makes those changes permanent.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK920 kbVC kbVC400 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch kbResourceEd
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

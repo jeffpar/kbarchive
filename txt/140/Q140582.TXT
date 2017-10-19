@@ -1,0 +1,66 @@
+DOCUMENT:Q140582  14-DEC-1999  [homemm]
+TITLE   :Encarta 96: How to Download Updates from AOL
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article tells how to download the Microsoft Encarta Encyclopedia for
+Windows monthly update files from America Online (AOL).
+
+MORE INFORMATION
+================
+
+To download the Encyclopedia update files from AOL, do the following:
+
+1. Connect to AOL.
+
+2. At the AOL home screen, click Internet Connection.
+
+3. Click the FTP option (located in the upper-left corner of the window).
+
+4. Click Go TO FTP (located in the lower-right corner of the window).
+
+5. Click Other Site.
+
+6. Type the following FTP path information:
+
+   ftp://ftp.microsoft.com/deskapps/mmapps/public/encarta
+
+   and click Connect.
+
+7. Click the Encyclopedia update file, and then click DownLoad Now.
+
+
+Additional query words: kbhowto 1996 multi media multimedia multi-media mmtitles kbmm a.o.l. f.t.p.
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

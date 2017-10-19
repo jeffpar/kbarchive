@@ -1,0 +1,125 @@
+DOCUMENT:Q131194  16-JUN-2001  [msnetwork]
+TITLE   :MSN E-mail Is Not Delivered
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.3,2.0,2.5,95
+OPER/SYS:
+KEYWORDS:kbenv kbtlc kbmsnkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.3, 2.0, 2.5 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you sign in to MSN, The Microsoft Network, you may receive a notice stating
+that you have e-mail waiting. However, when you click Deliver Now on the Tools
+menu, no mail may be delivered.
+
+CAUSE
+=====
+
+This behavior can occur if your mailbox is blocked by a damaged message.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate message for your e-mail program.
+
+Microsoft Exchange
+------------------
+
+1. Sign in to MSN, and then start Microsoft Exchange.
+
+2. On the Tools menu, click Remote Mail.
+
+3. On the Tools menu, click Update Headers.
+
+4. Click the first message (the oldest message is most likely the damaged
+   message).
+
+5. On the Edit menu, click Mark To Retrieve.
+
+6. On the Tools menu, click Transfer Mail.
+
+7. Return to the Inbox.
+
+8. On the Tools menu, click Deliver Now to download the remaining messages.
+
+9. If this does not correct the problem, click the first message.
+
+10. On the File menu, click Delete.
+
+Microsoft Outlook 97
+--------------------
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the following line, and then click OK:
+
+   http://fdl.msn.com/public/setup/components/outlimep.exe
+
+3. Follow the instructions on the screen to download and install the
+   Outlimep.exe file.
+
+4. Restart the computer.
+
+5. Right-click the Inbox icon on your desktop, and then click Properties.
+
+6. Verify that the Internet E-mail information service is installed. If the
+   Internet E-mail information service is installed, click OK, and then skip to
+   step 9. If the Internet E-mail information service is not installed, continue
+   to the next step.
+
+7. Click Add, click Internet E-mail, and then click OK.
+
+8. Configure the Internet E-mail information service for your account, click OK,
+   and then click OK again.
+
+   For additional information about how to configure the Internet E-mail
+   information service, please see the following article in the Microsoft
+   Knowledge Base:
+
+   Q165228 Configuring the Internet Mail Information Service
+
+9. Click Start, point to Programs, and then click Microsoft Outlook.
+
+10. On the Tools menu, click Remote Mail, and then click Connect.
+
+11. Click The Microsoft Network, click "Retrieve new message headers via The
+   Microsoft Network," and then click Finish.
+
+12. Click the first message (the oldest message is most likely the damaged
+   message), click Remote Mail on the Tools menu, and then click Delete.
+
+13. On the Tools menu, click Remote Mail, and then click Connect.
+
+14. Quit Outlook 97.
+
+Additional query words: 1.30 2.00 2.50 msn email
+
+======================================================================
+Keywords          : kbenv kbtlc kbmsn kbfaq
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN200 kbMSN130 kbMSN250
+Version           : WINDOWS:1.3,2.0,2.5,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

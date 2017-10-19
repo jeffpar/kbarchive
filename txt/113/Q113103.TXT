@@ -1,0 +1,56 @@
+DOCUMENT:Q113103  09-DEC-1999  [homemm]
+TITLE   :Bookshelf: Animation Resets Too Quickly to Read Last Screen
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1994 edition 
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may find that when animation sequences reach the last frame, they reset to
+the beginning before you have had an opportunity to read the final screen.
+
+Microsoft has confirmed this to be a problem in the versions of Bookshelf listed
+at the top of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To avoid this problem, progress through the animation manually, using the slide
+controller.
+
+NOTE: This problem does not occur in Windows 95.
+
+
+Additional query words: 1994 multi media multimedia multi-media
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1994 kbBookShelf1996 kbBookShelf1997
+Version           : :1994 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

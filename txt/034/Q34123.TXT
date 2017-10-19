@@ -1,0 +1,49 @@
+DOCUMENT:Q34123  30-JUL-2001  [homegame]
+TITLE   :Definition of the Localizer in Flight Simulator
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Localizer is used in ILS landings. It is a sort of VOR that can be used only
+on one radial, which is lined up with the runway. You tune it in on your NAV
+radio like a normal VOR station, but you do not set the OBI to a radial
+direction, because the direction is set automatically. Needle movement is four
+times as sensitive as a normal VOR station, so you can hold your horizontal
+course very precisely.
+
+You can lock on the Localizer frequency by tuning in to the ATIS for the six
+airports that have the ILS landing capabilities. The following six airports will
+give you a localizer frequency.
+
+   Martha's Vineyard
+   Champaign, Illinois
+   Snohomish County (Paine field)
+   Van Nuys, California
+   Metro Oakland International
+   Chicago-O'Hare International (Runway 27R)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

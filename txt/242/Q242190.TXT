@@ -1,0 +1,89 @@
+DOCUMENT:Q242190  03-MAY-2001  [visualc]
+TITLE   :BUG: Full Koenig Lookup Works Only for Operators
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbLangCPP kbVC kbVC500 kbVC500bug kbVC600 kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Argument-dependent name lookup, also known as Koenig lookup, works only for
+operators and not regular functions in a namespace.
+
+CAUSE
+=====
+
+The compiler does not fully support argument-dependent name lookup as specified
+in the C++ Standard. Please refer to the C++ Standard, section 3.4.2, for
+information on argument-dependent name lookup.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior:
+
+The following code example demonstrates the error:
+
+   //test.cpp
+   // compiler option needed:/GX  
+   #include <iostream>
+   namespace N1 {
+   	struct T1 {
+   	};
+   	void g(T1) {
+   	}
+    	T1 operator+( T1 x, T1 y) {
+   		std::cout<< "In N1::+" <<std::endl;
+   		return y;
+   	}
+   }
+
+   int main() {
+   	N1::T1 t1 ,t2;
+   	g(t1);	// error C2065: 'g' : undeclared identifier
+   	t1 + t2; // works fine calls N1::operator+
+   	return 0;
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbLangCPP kbVC kbVC500 kbVC500bug kbVC600 kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

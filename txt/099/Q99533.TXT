@@ -1,0 +1,54 @@
+DOCUMENT:Q99533  30-JUL-2001  [lanman]
+TITLE   :DIRECTORY Command Returns Incorrect 0 Bytes Free Message
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+
+For high performance file system (HPFS) drives with partitions larger than 2 GB,
+the MS-DOS Directory command sometimes shows 0 bytes free even if plenty of free
+space is left. You can read, write, restore, and backup, but some applications
+that write automatically to the hard disk crash if there is no free space.
+
+CAUSE
+=====
+
+This problem is not completely understood, but possible causes are:
+
+ - MS-DOS may simply return a zero because it is incapable of dealing with
+   numbers larger than the 2 GB its local partitions are limited to.
+
+ - The program may miscalculate the free disk space from the numbers provided by
+   MS-DOS; this is a very common problem.
+
+RESOLUTION
+==========
+
+If the problem persists, try to get a register dump of the MS-DOS function Int
+21h, AH=36h, DL=drive (1 based), and contact Microsoft.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

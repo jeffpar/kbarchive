@@ -1,0 +1,1051 @@
+DOCUMENT:Q142639  13-FEB-2002  [winnt]
+TITLE   :Windows NT 4.0 Readme.wri File (Part 1 of 5)
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the information in the Readme.wri file included
+in Windows NT version 4.0. Setup copies this file to the System32 folder.
+
+MORE INFORMATION
+================
+
+Additional Notes About Windows NT
+---------------------------------
+
+Table of Contents:
+
+   Using WordPad to View This Document
+   Before you call for support on a domain issue
+   Before you call for support on a file system or fault tolerance issue
+   Before you call for support on a Blue STOP Screen Issue
+   Microsoft Press
+   New and Improved Accessories
+   Microsoft WordPad
+   Microsoft Paint
+   New and Improved Control Panel
+   Microsoft Internet Explorer version 2.0
+   Advanced Users
+   HTML-Based Internet Service Manager
+   Using Internet Explorer 2.0 for MSN Authentication
+   Microsoft Peer Web Services
+   Installing Peer Web Services on Windows NT Workstation Version 4.0
+   Where Is the Product Documentation?
+   Removing TCP/IP
+   Support for Private Communication Technology (PCT)
+   Changes to User Configuration
+   Product Home Page
+   Publishing from Network Drives
+   Choosing a Logon Method
+   Setting the Log File Size
+   Internet Information Server Setup May Be Disabled After Installing ODBC 3.0
+   Peer Web Services Default File is Changed to Default.htm
+   FAQ and Mailing List for IIS Developers
+   Windows Messaging
+   Upgrading from Windows NT 4.0 Beta 1 or Beta 2
+   Using Windows Messaging with Microsoft Schedule+ 1.0
+   Using Windows Messaging with Microsoft Schedule+ 7.0
+   Using Windows Messaging with Microsoft Mail
+   Using Windows Messaging with Microsoft Mail and Remote Access Service (RAS)
+   Internet Mail & MIME Handling
+   Printers Folder
+   Finding Files
+   3D Pinball
+   AutoRun
+   Windows NT version 4.0 NTFS Compatibility with Windows NT version 3.51 NTFS
+   486 Emulator
+   Hardware Profiles
+   Setting Up a Hardware Profile
+   Activating a Hardware Profile
+   Hardware Profiles and Boot Devices
+   NDS-Aware Client/Gateway Services for NetWare
+   Client Licenses
+   Dynamic Display Properties
+   Windows NT Server Version 4.0
+   Microsoft FrontPage (TM)
+   Microsoft Internet Information Server
+   Installing Internet Information Server on Windows NT Version 4.0
+   Where Is the Product Documentation?
+   Upgrading IIS 1.0 to IIS 2.0
+   Anonymous User Account
+   Removing TCP/IP
+   Support for Private Communication Technology (PCT)
+   Changes to User Configuration
+   Default File-Extension Mappings
+   Product Home Page
+   Publishing from Network Drives
+   Choosing a Logon Method
+   Setting the Log File Size
+   Securely Generating SSL Key Pairs
+   Opening Certificates Using Key Manager - Standard File Extensions
+   FAQ and Mailing List for IIS Developers
+   Upgrading the Windows NT 3.51 FTP Server Service
+   ODBC 3.X Windows NT 4.0 Upgrade or Internet Information Server 2.0 Setup
+   Internet Information Server Setup May Be Disabled After Installing ODBC 3.0
+   Internet Information Server Default File is Changed to Default.htm on Upgrade
+   Account Lockout
+   Installing Client-Based Network Administration Tools on a Computer Running
+   Windows NT Workstation (Running Setup.bat)
+   Remote Administration from Windows 95
+   Remote Administration Tools and FPNW/DSMN
+   Remote Booting of Windows 95 Clients
+   Roaming User Profiles
+   Documentation Updates
+   Character Limitations on Volume Labels
+   Performance Monitor
+   Installing Client-Based Network Administrative Tools on Windows NT
+   Workstation
+   System Policy
+   Testing Your Newly Created Recovery Disk
+   User Manager
+   How to Recover a Server
+   Windows NT Server Books Online
+   Personal and Common Groups
+   Using Disk and File Maintenance Tools with Windows NT
+   Assigning Drive Letters using Disk Administrator
+   Registry Editors
+   Command Extensions
+   Hardware Notes
+   ATAPI and PCI
+   Caching Disk Controllers and Drives
+   CD-ROM Changers
+   Compaq LS-120
+   Creative Labs Sound Blaster on RISC Platforms
+   Device Driver Load Order
+   DPT Configuration Tool for MIPS and PowerPC Machines
+   El Torito (no emulation) Bootable CD-ROM Format
+   ESDI Disk Drives with More Than 1024 Cylinders
+   External Cache Option
+   IDE Devices in Control Panel SCSI Devices
+   Intel EtherExpress 16 LAN Adapter
+   Interrupt Conflicts
+   Installing Mwave Drivers for the IBM Thinkpad
+   Installing IBM Thinkpad Utilities for Windows NT
+   PCMCIA Cards
+   PCMCIA Notes
+   PCI Notebook Computers and PCMCIA Hard Disks
+   Plug and Play ISA Device Installation and PNPISA.SYS
+   PnP ISA SCSI
+   ROM Shadowing on Multiprocessor Systems
+   Running Windows NT version 4.0 on PCI Bus Systems
+   Windows NT SCSI Driver Changes
+   SCSI Device Interrogation Tool (SCSItool)
+   Video Notes
+   Cirrus Logic
+   Direct Draw
+   S3
+   S15
+   Matrox
+   VDM (Virtual DOS Machine)
+   Weitek
+   Multimedia Hardware Notes
+   Installing Joystick Drivers
+   Plug and Play Sound Blaster Support
+   Sound Blaster/ATAPI Problems
+   Sound Blaster/SCSI Problems
+   Distorted Sound Using Toshiba Laptop with Integrated Sound Card
+   Sound Blaster Pro 2 CT1600 Using Motorola Powerstack PPC
+   Determining if your system is capable of utilizing ESS audio support in
+   Windows NT version 4.0
+   Application Notes
+   Long Printer Names
+   Screen Appearance
+   Windows 95 Applications and Microsoft Foundation Class Libraries
+   Opening Files Created in Windows NT by Using Windows version 3.x
+   Connecting to the Internet by Using MSN
+   Running Serial Communications Applications
+   Multimedia Applications
+   Disk Compression Programs
+   MS-DOS Issues
+   Running Applications that Attempt to Directly Access the Hardware
+   Specific Applications
+
+This document contains information not available in the Microsoft[ASCII 174]
+Windows NT[ASCII 174] documentation set or in Help, as well as information on
+changes that occurred after publication.
+
+Additional information is available in the Setup.txt, Printer.wri, and
+Network.wri files. Setup.txt contains important pre-installation information.
+Printer.wri contains information related to printing, including information on
+specific printers. Network.wri contains information related to networks,
+including information on network adapter cards, network services, and
+interoperability.
+
+Using WordPad to View This Document
+-----------------------------------
+
+If you enlarge the WordPad window to its maximum size, this document will be
+easier to read. To do so, click the Maximize button in the upper-right corner of
+the window. Or open the Control menu in the upper-left corner of the WordPad
+window (press ALT+SPACEBAR), and then click Maximize.
+
+To move through the document, press PAGE UP or PAGE DOWN. Or click the arrows at
+the top and bottom of the scroll bar along the right side of the WordPad
+window.
+
+To have the words wrap to the screen size or the ruler:
+
+1. On the View menu, click Options.
+
+2. Click either Wrap to window or Wrap to ruler and then click OK.
+
+To print the document:
+
+1. On the File menu, click Print.
+
+2. Select the printer, and then click OK.
+
+Before you call for support on a domain issue
+---------------------------------------------
+
+First, gather the following information:
+
+ - Version of Windows NT on affected machines
+
+ - Service Packs and hotfixes applied
+
+ - Exact error messages displayed on screen and in Event Viewer
+
+ - Protocols used on affected machines (in order of lana# preferred)
+
+ - What troubleshooting has already been done
+
+ - Is the problem intermittent?
+
+If the issue is specific to an area below, make sure you have available the
+following information:
+
+WAN specific
+
+ - Intermediate devices (bridges, routers, switches)
+
+ - If TCP/IP, NetBIOS name resolution specifics (WINS, LMHOSTS (#PRE, #DOM))
+
+Trusts
+
+ - SID for Administrator account on ALL domain controllers (GETSID)
+
+ - Protocol order on PDCs for worstation and server bindings
+
+Browsing
+
+ - Has it ever worked?
+
+ - What protocols are in use?
+
+ - Intermediate devices (bridges, routers, switches)
+
+ - Be prepared to use ResKit utils (browstat, browmon)
+
+Clients / Security / User Profiles / Logon Scripts
+
+ - Does the problem occur on all clients?
+
+ - Does the problem occur for all user accounts?
+
+License Manager
+
+ - Have licenses been added for the offending server?
+
+ - Has the PDC changed?
+
+ - Does the problem exist when using an administrative account?
+
+Before you call for support on a file system or fault tolerance issue
+---------------------------------------------------------------------
+
+First, gather the following information. All of the information below may not be
+needed for each case. The more information you have ready to provide to support
+personnel, the quicker the resolution to your problem will be.
+
+ - Version of Windows NT
+
+ - Service Packs, hotfixes, and third-party drivers applied
+
+ - Exact error messages displayed on screen and in Event Viewer
+
+ - Computer make/model
+
+ - Disk controller(s) in use
+
+ - Has CHKDSK been run? If so, what was the result?
+
+ - Is an Emergency Repair Disk available?
+
+ - Have recent backups been made?
+
+ - Are low-level disk editing programs available for use?
+
+Disk information:
+
+ - Number of disks in the system
+
+ - Size of each disk
+
+ - Partition layout of each disk
+
+ - File format used on each disk
+
+ - SCSI ID of each disk if applicable
+
+ - How are the disks displayed in Disk Administrator?
+
+For fault tolerance set issues:
+
+ - Fault tolerance set in use (volume set, stripe set, stripe set with parity,
+   mirror set)
+
+ - Is fault tolerance done at the hardware or software level?
+
+For file system performance problems:
+
+ - Are long file names in use?
+
+ - Directory structure (number of files and directories)
+
+For backup issues:
+
+ - Tape drive make/model
+
+ - Adapter that tape drive is connected to
+
+ - Firmware version of tape unit
+
+ - SCSI ID and placement in chain (if applicable)
+
+ - Was a new blank tape tried?
+
+Before you call for support on a Blue STOP Screen Issue
+-------------------------------------------------------
+
+First, gather the following information:
+
+ - Version of Windows NT
+
+ - Service Packs and hotfixes applied
+
+ - Top four lines of the blue screen
+
+ - How does the trap occur, and to what frequency
+
+ - Third-party drivers/services installed
+
+ - Detailed hardware list, including configuration information:
+
+ - Computer make/model
+
+ - Disk/type/size
+
+ - Disk controllers
+
+ - Memory
+
+ - Tape/model
+
+ - CD-ROM/model
+
+ - Network adapter
+
+ - Serial ports
+
+ - Other adapters
+
+Microsoft Press
+---------------
+
+Microsoft Press is the source for up-to-date, technically accurate books and
+training materials about Microsoft products and related technologies. Titles
+range from self-paced tutorials for the first-time computer users to advanced
+technical reference and programming guides.
+
+Microsoft Press[ASCII 174] products are available worldwide wherever quality
+computer books are sold. For more information contact your book retailer,
+computer reseller, or local Microsoft Sales Office.
+
+To locate your nearest source for Microsoft Press products, reach us at:
+
+   www.microsoft.com/mspress/
+   1-800-MSPRESS in the U.S. (In Canada: 1-800-667-1115 or 416-293-8464)
+
+To order Microsoft Press products contact:
+
+   1-800-MSPRESS in the U.S. (In Canada: 1-800-667-1115 or 416-293-8464)
+   Compuserve's Electronic Mall at GO MSP
+
+Prices and availability dates are subject to change.
+
+New and Improved Accessories
+----------------------------
+
+Microsoft WordPad:
+
+This release of WordPad cannot process Unicode characters, so it is not possible
+to edit some ranges of characters in the WordPad editing window. Both .doc and
+.wri files can be opened and edited by using WordPad.
+
+When you upgrade a previous version of Windows NT Workstation or Windows NT
+Server to Windows NT Workstation or Windows NT Server version 4.0, WordPad is
+not added to the Start menu. Also, Write is not removed from the Start menu.
+When you click Start, point to Programs, point to Accessories, and click Write,
+WordPad starts.
+
+Microsoft Paint:
+
+Microsoft Paintbrush has been replaced by MS Paint.
+
+New and Improved Control Panel
+------------------------------
+
+The Control Panel folder includes new and updated programs to control settings
+and hardware.
+
+New Control Panel items include:
+
+   PC Card (PCMCIA) Telephony Add/Remove Programs Multimedia Tape Devices Modems
+   SCSI Adapters Display
+
+Improved Control Panel items include:
+
+   Mouse Sounds (replaces Sound Mapper) Network Fonts Regional Settings
+   (replaces International) Keyboard
+
+To access the Control Panel folder:
+
+On the Start menu, point to Settings, and then click Control Panel.
+
+Microsoft Internet Explorer version 2.0
+---------------------------------------
+
+This release of Windows NT Workstation and Windows NT Server includes Microsoft
+Internet Explorer, which is installed by default when you install Windows NT.
+
+NOTE: You must have TCP/IP installed and establish a connection to the Internet
+(directly or through RAS).
+
+Advanced Users:
+
+To setup the proxy
+
+1. Right-click the Internet icon on your desktop, and then click Properties.
+
+2. Click Use Proxy Server, and enter the name of your proxy server.
+
+You may place a list of URLs to bypass the proxy on in Bypass proxy on. Type
+<local> to bypass the proxy server for intranet access.
+
+HTML-Based Internet Service Manager:
+
+If Internet Explorer 2.0 is running on your desktop, you will be unable to
+activate the HTML-based Internet Service Manager. Close all sessions of Internet
+Explorer 2.0 and rerun HTML Internet Service Manager.
+
+Using Internet Explorer 2.0 for MSN Authentication:
+
+To access a site that requires MSN authentication, an administrator on the local
+machine must have connected to any Web site using IE 2.0 at least once
+previously. Otherwise, the error "Internet Explorer: This page cannot be opened
+without authentication. Internet Explorer is not set up to use the required
+method of authentication." will be displayed. If you receive this error, contact
+your network administrator to do one of the following:
+
+ - Obtain administrative rights to your local machine. Log on as an
+   administrator and then use IE 2.0 to access any Web site.
+
+   -or-
+
+ - Ask the administrator of the local machine to run IE 2.0 once to connect to a
+   Web site.
+
+Microsoft Peer Web Services
+---------------------------
+
+Installing Peer Web Services on Windows NT Workstation Version 4.0:
+
+Microsoft Peer Web services is a personal Web server that has been optimized to
+run on Windows NT Workstation version 4.0. With Peer Web Services, you can
+create a personal Internet server, which is ideal for development, testing, and
+peer-to-peer publishing. As with Internet Information Server, Peer Web Services
+supports all ISAPI extensions and filters. For more information about Internet
+Information Server, see "Microsoft Internet Information Server" later in this
+document.
+
+After you have you installed Windows NT Workstation, you can install Peer Web
+Services using the Network icon in Control Panel. If you already have the
+necessary Internet or intranet connection, you can accept all of the default
+settings during Setup and then add your Hypertext Markup Language (HTML) content
+files to the \Wwwroot directory. Your files will be immediately available to
+users. The default Setup configurations are suitable for many publishing
+scenarios without further modifications.
+
+To install Peer Web Services:
+
+1. Insert the Windows NT Workstation version 4.0 compact disc into the CD- ROM
+   drive.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click the Network icon and then click the Services tab.
+
+4. Click Add.
+
+5. From the list of services, select Microsoft Peer Web Services, and then click
+   OK.
+
+6. Type the drive letter for the compact disc.
+
+7. Follow the instructions on the screen.
+
+For help with any Setup dialog box, click the Help button.
+
+For more information about installation, see the Start Here book provided with
+Windows NT Workstation version 4.0.
+
+Where Is the Product Documentation?:
+
+Documentation for Microsoft Peer Web Services is installed with the product and
+is available online. After installing the product, you can open its Installation
+And Administration Guide by clicking the Product Documentation icon in the
+Microsoft Internet Server program group, or by running Internet Service Manager
+and clicking Topics on the Help menu. You can also review the product
+documentation before you install Peer Web Services by using a Web browser (such
+as Microsoft Internet Explorer) to open the files directly from the Windows NT
+Workstation compact disc.
+
+To read the documentation, open the following file on the compact disc:
+
+   \<platform>\Inetsrv\Htmldocs\Inetdocs.htm
+
+where <platform> is Alpha, I386, Mips, or Ppc.
+
+You must have a Web browser (such as Microsoft Internet Explorer) to view this
+documentation. You can print chapters by using your Internet browser's Print
+command. You will obtain the best printing results by using your browser's
+default font size for text; for example, Medium in Internet Explorer and 12
+points in Netscape Navigator.
+
+Information about Peer Web Services is included in the Start Here book provided
+with Windows NT Workstation version 4.0.
+
+Removing TCP/IP:
+
+If you remove the TCP/IP protocol, Peer Web Services cannot be removed by using
+the Peer Web Services Setup icon To work around the problem and remove Peer Web
+services, reinstall the TCP/IP protocol, and then remove Peer Web Services.
+
+Support for Private Communication Technology (PCT):
+
+Peer Web Services supports the PCT 2.0 specification, which is designed to secure
+general-purpose business and personal communications on the Internet and
+includes features such as privacy, authentication, and mutual identification.
+PCT enhances Secure Sockets Layer (SSL) with technology developed for Secure
+Transaction Technology (STT), particularly in authentication and protocol
+efficiency. By separating authentication from encryption, PCT enables
+applications to use authentication that is significantly stronger than the
+40-bit key limit for encryption allowed by the U.S. government for export.
+Microsoft's implementation of PCT is backward compatible with SSL.
+
+Changes to User Configuration:
+
+If changes to user configurations (such as adding or removing users from a group,
+changing passwords, or changing NTFS permissions) do not take affect
+immediately, try stopping and restarting the Internet services (WWW, FTP, and
+gopher). Peer Web Services caches security tokens for all users. Changes to user
+configurations will not appear until the security-token cache is cleared and the
+new tokens are cached. The default caching interval is 15 minutes.
+
+Product Home Page:
+
+The HTML samples include a product home page (Default.htm) for Peer Web Services
+that contains links to the product documentation, the Web-based server
+administration tool, and to the Microsoft Web site.
+
+If you already have a file named Default.htm in the Wwwroot directory, the setup
+program will not replace your file with the product's default home page. You can
+view the product home page by typing the following URL:
+
+   http://<computername>/Samples/Default.htm
+
+If you do not have a file named Default.htm in the Wwwroot directory, Setup
+copies the file to the Wwwroot directory.
+
+Publishing from Network Drives:
+
+The FTP, gopher, and WWW services cannot publish from redirected network drives
+(that is, from drive letters assigned to network shared folders).
+
+To use network drives, you must use the server and share name (for example,
+\\<Computername>\<Sharename>\Wwwfiles). If you require a user name
+and password to connect to a network drive, all requests from remote users to
+access that drive must be made with the user name and password you specified,
+not the anonymous IUSR_<computername> account or another account you may
+have specified.
+
+Choosing a Logon Method:
+
+This release of Peer Web Services provides three logon methods for the WWW, FTP,
+and gopher services.
+
+ - "Local" means that the user is logged on as though he or she had actually
+   walked up to the computer and logged on interactively. The user must have the
+   Log On Locally access right set in User Manager.
+
+ - "Batch" means the user is logged on locally (as with the Local logon method)
+   but must have the Log On As A Batch Job access right set in User Manager.
+   This logon method enables the user to access the server from a Web browser
+   but does not give the user the right to log on locally.
+
+ - "Network" means the user is logged on as a remote network user. The user must
+   have the Access This Computer From Network access right set in User Manager.
+   This logon method enables the user to access the server from a Web browser
+   but does not give the user the right to log on locally. Users logged on with
+   this logon method cannot access remote, authenticated resources, such as a
+   SQL server using integrated security.
+
+Generally, you should configure the default logon method for FTP and gopher users
+as Network. You should configure the default logon for WWW service users as
+Network unless users need to access remote, authenticated resources.
+
+The default logon method is Local. To change the logon method, set the registry
+entry LogonMethod as described in Chapter 10, "Configuring Registry Entries," in
+"Internet Information Server Installation and Administration Guide".
+
+For the WWW service, if the user's browser supports Basic authentication, the
+user is logged on using the logon method set in the LogonMethod registry entry.
+If the user's browser supports Windows NT Challenge/Response authentication, the
+user is always logged on using the Network logon method.
+
+Note that Basic authentication sends user names and passwords over the network in
+clear text (unencrypted text). Challenge/Response authentication is more secure
+because it sends passwords in encrypted text. Currently, only Internet Explorer
+2.0 or later supports Windows NT Challenge/Response authentication. For more
+information on security, see Chapter 5, "Securing Your Site Against Intruders,"
+in the "Peer Web Services Installation and Administration Guide".
+
+Setting the Log File Size:
+
+You cannot set the maximum size of the logging file by using the Web-based
+version of Internet Service Manager. You must use Internet Service Manager to
+set this option, which is located in the Logging Properties panel.
+
+Internet Information Server Setup May Be Disabled After Installing ODBC 3.0:
+
+If you installed Internet Information Server 2.0 and start the Internet
+Information Server 2.0 setup program from the start menu item, it may display a
+message which says that the SqlInstallODBC entry point is missing. To work
+around this problem, run the IIS setup program again. The program must be run
+from platform\inetsrv\inetstp.exe on the Windows NT compact disc.
+
+To run inetstp.exe for Peer Web Services:
+
+1. Insert the Windows NT Workstation compact disc in the drive.
+
+2. Type d: and then press ENTER.
+
+3. Type cd \<platform>\inetsrv and then press ENTER.
+
+4. Type inetstp.exe and then press ENTER.
+
+Peer Web Services Default File is Changed to Default.htm:
+
+Upon installation of Peer Web Services, the Default Document for the WWW Service
+will be set to Default.htm. If you previously had a different default document,
+you need to change it in the Microsoft Internet Service Manager. Go to the start
+menu and click on Programs/Peer Web Services/Internet Service Manager. This will
+start the Microsoft Internet Service Manager. Double click on the WWW line in
+the display. Click on the Directories tab and edit the Default Document edit
+box. Click OK.
+
+FAQ and Mailing List for IIS Developers:
+
+Stephen Genusa's IIS FAQ answers questions about Internet Information Server and
+is a good source of additional information about developing applications for
+IIS. To read the FAQ, visit http://rampages.onramp.net/~steveg/iis.html.
+
+There are many mailing lists and newsgroups that cover the broad range of
+Microsoft Internet technologies and related tools. Being a member of these lists
+will allow you to tap into the latest information about these tools and
+technologies, and will provide you with an open forum for asking questions and
+exchanging ideas with other developers. The ISAPI-L mailing list covers
+information on developing Internet Information Server API applications. For
+information on subscribing to the ISAPI-L mailing list and for information on
+other mailing lists, visit http://www.microsoft.com/workshop/resource/mail.htm.
+
+Windows Messaging
+-----------------
+
+Windows Messaging is installed during Windows NT Setup. You can choose Internet
+Mail, Microsoft Mail, or both.
+
+When you install Windows NT or use Windows Messaging for the first time by
+double-clicking the Inbox icon on the desktop, the Windows Messaging Setup
+Wizard will be run. You can then select the information services that you would
+like to use with Windows Messaging. The Wizard is also run each time you add a
+new profile by using the Mail option in Control Panel.
+
+Upgrading from Windows NT 4.0 Beta 1 or Beta 2:
+
+Note: The following information does not apply if you are running the Exchange
+Client for Microsoft Exchange Server.
+
+If you are currently running Windows NT version 4.0 Beta 1 or Beta 2 and using
+the Exchange Client, use the following procedure to remove Microsoft Exchange
+before upgrading to Windows NT version 4.0.
+
+To remove Microsoft Exchange and then install Windows NT version 4.0:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Windows NT Setup tab, clear the Microsoft Exchange check box, and then
+   click OK.
+
+4. After Microsoft Exchange has been removed, start Windows NT version 4.0
+   Setup.
+
+5. When prompted to select the type of installation, click Custom Setup.
+
+6. On the Select Components page, select Windows Messaging (new name for
+   Exchange in Windows NT 4.0).
+
+If you are a Windows NT 4.0 Beta Exchange Client user and you have already
+installed Windows NT version 4.0 (final), you need to remove Exchange and
+reinstall Windows Messaging to ensure proper operation of the Messaging Client.
+
+To remove Microsoft Exchange and install Windows Messaging after upgrading from
+Windows NT version 4.0 Beta 1 or Beta 2 to Windows NT version 4.0 (final):
+
+1. Right-click the Taskbar, and click Properties.
+
+2. On the Start Menu Programs tab, click Remove.
+
+3. Select Microsoft Exchange from the list, and then click Remove.
+
+4. Click Close, and then click OK.
+
+5. Click Start, point to Settings, and then click Control Panel.
+
+6. Double-click Add/Remove Programs.
+
+7. On the Windows NT Setup tab, clear the Windows Messaging check box, and then
+   click OK.
+
+Using Windows Messaging with Microsoft Schedule+ 1.0:
+
+Windows Messaging is designed to work with Microsoft Schedule+ version 7.0. When
+Windows Messaging is installed, you can still use Schedule+ 1.0 in standalone
+mode, but you will not be able to send or receive meeting requests. You will see
+an error message when starting Schedule+ 1.0 that notifies you the mail spooler
+cannot be started. Click Yes to continue. You are eligible for a free upgrade to
+Schedule+ 7.0. In the U.S., call 1- 800-360-7561; in Canada call,
+1-800-933-4750. Outside the U.S. and Canada, contact your local dealer.
+
+Using Windows Messaging with Microsoft Schedule+ 7.0:
+
+Schedule+ 7.0 may not run properly after you upgrade to Windows NT version 4.0.
+You can work around this problem by prepending the Schedule+ 7.0 directory to
+your system path. For example, if Schedule+ 7.0 is installed in c:\exchange, and
+your current system path is:
+
+   %SystemRoot%\system32;%SystemRoot%
+
+change the path to
+
+   c:\exchange;%SystemRoot%\system32;%SystemRoot%
+
+To edit your path:
+
+1. Run Control Panel and double-click System.
+
+2. On the Environment page, click Path in System Variables.
+
+3. Add the Schedule+ path to the front of the directories listed in Value.
+
+4. Click Set.
+
+Using Windows Messaging with Microsoft Mail:
+
+Windows Messaging is designed to replace the Microsoft Mail program that comes
+with Windows NT and Microsoft Mail version 3.x. After installing Windows
+Messaging, you will no longer be able to run the older Microsoft mail program,
+but you will be able to use Windows Messaging to send and receive messages.
+
+Using Windows Messaging with Microsoft Mail and Remote Access Service (RAS):
+
+Before configuring the Microsoft Mail Service for remote usage, you need to
+install the Remote Access Service (RAS) and create a RAS phonebook entry by
+using the Dial-Up Networking icon. If a RAS phonebook entry has not been
+created, the remote configuration tabs (Remote Configuration, Remote Session,
+& Dial-Up Networking) will not be available when configuring the Microsoft
+Mail Service in Windows Messaging.
+
+RAS can be installed during Windows NT Setup or from the Services tab in the
+Network icon in Control Panel. The Dial-Up Networking icon is found either on
+the desktop in My Computer or on the Start menu under Programs/Accesories.
+
+Internet Mail & MIME Handling:
+
+This version of Windows NT does not support MIME mappings to filename extensions
+if Internet Explorer is not installed. Messages (containing attachments) sent in
+MIME format will be sent as application/octet-stream rather than specific MIME
+types. A filename will be included on outbound messages.
+
+Printers Folder
+---------------
+
+Printers are now set up and accessed from the new Printers folder.
+
+To view the Printers folder, click Start, point to Settings, then click
+Printers.
+
+To add a new printer, in the Printers folder, click the Add Printer wizard.
+
+Finding Files
+-------------
+
+With Windows NT version 4.0, you have easy access to programs and files:
+
+ - To find files on your computer, open the My Computer icon on your desktop.
+
+ - To find a specific file, click the Start menu, point to Find, then click
+   Files or Folders.
+
+ - On the Start menu, point to Programs, then click Windows NT Explorer.
+
+3D Pinball
+----------
+
+3D Pinball for Windows NT, a high-tech version of the classic arcade game,
+provides state-of-the-art graphics and sound. For information about how to use
+this game, click the Help menu in 3D Pinball. 3D Pinball is automatically
+installed by Windows NT Setup. To run it, click the Start menu, point to
+Programs, point to Accessories, point to Games, and then click 3D Pinball.
+
+To play MIDI music and display the 3D Pinball Help file:
+
+1. Right-click Start, and then click Open.
+
+2. Open the Programs folder.
+
+3. Open the Accessories folder.
+
+4. Open the Games folder.
+
+5. Right-click the Pinball shortcut, and then click Properties.
+
+6. Click the Shortcut tab.
+
+7. In the Start In box, type <drive letter>:\Program Files\Windows
+   NT\Pinball.
+
+AutoRun
+-------
+
+AutoRun allows music and computer compact discs to start automatically after they
+are inserted in the drive.
+
+For this release, AutoRun is enabled by default. To disable AutoRun, set the
+following key in the registry:
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CdRom\Autorun,<BR/>
+REG_DWORD == 0x0
+
+When the CD Player accessory is running, other files on the compact disc cannot
+be accessed. CD Player will return the message "Device Busy".
+
+NOTE: If you disabled AutoRun under Windows NT version 4.0 Beta 1 or Beta 2 and
+upgrade to the final version of Windows NT version 4.0, it will remain
+disabled.
+
+Windows NT version 4.0 NTFS Compatibility with Windows NT version 3.51 NTFS
+---------------------------------------------------------------------------
+
+The Windows NT File System (NTFS) file system supports clusters up to 64K.
+However, the file record size is always 1K regardless of the cluster size. The
+File Allocation Table (FAT) file system supports clusters up to 256K.
+
+Due to the cluster size change, formatting a volume with 2K or larger clusters
+with NTFS can generate a volume that is not usable by Windows NT version 3.51.
+File record sizes that are smaller than the cluster size is not supported by
+Windows NT version 3.51. However, you can ensure backwards compatibility by
+running format from the command line and specifying the /a parameter. This
+parameter is used to override the default disk allocation unit size.
+
+Default settings are strongly recommended for general use.
+NTFS supports 512 bytes, 1K, 2K, 4K, 8K, 16K, 32K, 64K.
+FAT supports 8K, 16K, 32K, 64K, 128K, 256K.
+NTFS compression is not supported for allocation unit sizes above 4K.
+
+486 Emulator
+------------
+
+The 486 emulator allows RISC-based systems to run Windows-based and MS-DOS[ASCII
+174] applications that require 386 enhanced mode support or look for a 486
+processor. For example, the 486 Emulator allows you to now use Visual Basic 4.0
+on RISC-based hardware platforms, such as the Digital Alpha.
+
+Hardware Profiles
+-----------------
+
+Before you can work with a hardware profile, you must set it up and activate it.
+
+Setting Up a Hardware Profile:
+
+There are two ways to access the Hardware Profiles icon. You can use either My
+Computer or the Control Panel.
+
+Using My Computer:
+Using the right mouse button, click My Computer, then select Properties.
+
+Using Control Panel:
+
+1. On the Start menu, point to Settings, and then click Control Panel.
+
+2. Double-click the System icon.
+
+3. Click the Hardware Profiles tab.
+
+4. The Available Hardware Profiles box displays existing hardware profiles.
+
+One hardware profile is listed. This profile was created automatically when you
+installed Windows NT.
+
+To create a new profile, click Copy and type a new hardware profile name.
+
+The order of your hardware profiles in the listbox is important because it
+determines a default order at startup. You can use the up and down arrow buttons
+to place the hardware profile that you would like as a default at the top of the
+list.
+
+Activating a Hardware Profile:
+
+Select a configuration from a list that appears at startup. Startup will not
+continue until you have selected a hardware profile.
+
+You can have your computer activate one hardware profile by default when you
+start your computer. From the Hardware Profiles box, enter 0 as the timeout
+value. If you decide later to select a different hardware profile, press the
+spacebar at startup and choose a hardware profile from your list.
+
+You can specify an amount of time that you would like your computer to wait
+before defaulting to the first selection on your highest-order preference.
+During the waiting period, you can use the cursor keys to select an alternate
+profile.
+
+Hardware Profiles and Boot Devices:
+
+When using hardware profiles, be careful not to disable one of your boot devices.
+If you disable a required boot device, Windows NT might not start. Microsoft
+recommends that you make a copy of your default profile and then make changes to
+the new profile so you can restore the default profile if something unexpected
+occurs.
+
+NDS-Aware Client/Gateway Services for NetWare
+---------------------------------------------
+
+The Windows NT version 4.0 includes an NDS-aware version of the Microsoft Windows
+NT Client/Gateway Services for NetWare (CSNW/GSNW).
+
+This version enables users running the Windows NT platform to access Novell[ASCII
+174] NetWare[ASCII 174] 4.x servers running NetWare Directory Services (NDS).
+With NDS, shared objects on participating NetWare servers are organized into a
+hierarchical tree.
+
+This updated version of Client/Gateway Services for NetWare includes all the
+functionality of previous versions, in addition to NDS compatibility.
+
+Creating Print Gateways to Print Queues on NDS Servers:
+
+When you create a print gateway to a print queue on an NDS-authenticated server,
+you must also create a file gateway from the gateway server to a file share on
+the same NDS-authenticated server for the print gateway to work.
+
+Using the Dir Command on NDS Trees:
+
+To use the dir command to see the directory contents of a remote NDS directory,
+put the directory path in quote marks. For example, the following command works
+successfully:
+
+dir "\\nds-tree\cn=volume.ou=unit.o=group"
+
+Creating a Gateway to an NDS Volume:
+
+To create a gateway to an NDS volume, type the complete NDS volume name (such as
+cn=volume.ou=unit.o=group) in Network Path in the New Share dialog box after
+clicking the Gateway button. For this to work, the NTGATEWAY group must exist in
+the organizational unit (ou) where the volume is created, and the gateway
+account must be a member of the NTGATEWAY group on that ou.
+
+Client Licenses
+---------------
+
+Occasionally, client licenses are held after a user logs off. The problem can
+appear on the client workstation from one of the following areas that may cause
+this problem on the client workstation:
+
+ - Print event logging. The license can be held between print messages that are
+   logged in Event Viewer. To resolve this problem, disable logging on the
+   client workstation.
+
+To disable print event logging:
+
+   1. Click Start, point to Settings, and then click Printers.
+
+   2. On the File menu, click Server Properties.
+
+   3. Click the Advanced tab and then clear the Log spooler error events, Log
+      spooler warning events, and Log spooler information events check boxes.
+
+   4. Shutdown and restart your computer.
+
+ - RAS Service. The license may be held by the RAS service when no one is logged
+   in. As soon as someone (either the same or different user) logs into the
+   client workstation, the license will be released.
+
+Dynamic Display Properties
+--------------------------
+
+Windows NT Workstation and Windows NT Server version 4.0 allow you to change your
+display properties without rebooting your computer. To change display
+properties, right click on the desktop and choose Properties.
+
+Some applications may freeze or close abruptly if you change display properties
+while the program is running, resulting in the loss of unsaved data. You should
+close terminal emulators, remote control hosts and clients, and other similar
+applications before changing anything on the Appearance, Plus!, or Settings tabs
+of the Display Properties dialog box.
+
+Additional query words: read-me
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

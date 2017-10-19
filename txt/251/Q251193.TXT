@@ -1,0 +1,87 @@
+DOCUMENT:Q251193  07-MAY-2002  [homegame]
+TITLE   :FS2000: How to Print a Navigation Log
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbprint kbui fsim kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to print the navigation log for a flight in Microsoft
+Flight Simulator 2000.
+
+MORE INFORMATION
+================
+
+How to Print a Navigation Log
+-----------------------------
+
+To print a navigation log:
+
+1. On the Flights menu in Flight Simulator 2000, click Flight Planner.
+
+2. Under "Departure airport", click Select.
+
+3. Under "Search results", click to select your departure airport.
+
+4. Click the green check mark to save your selection.
+
+5. Under "Destination airport", click Select.
+
+6. Under "Search results", click to select your destination airport.
+
+7. Click the green check mark to confirm your selection.
+
+8. Under "Auto routing", click "Find route".
+
+9. Click NavLog.
+
+10. Click Print.
+
+NOTE: If the Print button is not present near the bottom of the NavLog dialog
+box, the Flight Simulator 2000 Update may not be installed.
+
+Download and Install the Flight Simulator 2000 Update
+-----------------------------------------------------
+
+To print the navigation log for a flight in Microsoft Flight Simulator 2000, you
+must first install the appropriate Flight Simulator 2000 Update for your version
+of Flight Simulator 2000.
+
+To download and install the Flight Simulator 2000 Update for your version of
+Flight Simulator 2000, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/games/fs2000/downloads_fs2000update.asp
+
+Additional query words: 1.00 msgame flightsim fltsim fs2k fs2000 navigating prints
+
+======================================================================
+Keywords          : kbprint kbui fsim kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

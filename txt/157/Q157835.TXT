@@ -1,0 +1,74 @@
+DOCUMENT:Q157835  08-AUG-2001  [winnt]
+TITLE   :English Excel Worksheet Used Instead of German
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+NOTE: The information in this article applies to the 
+German version(s) of Windows NT 4.0.
+
+SYMPTOMS
+========
+
+When you open a Microsoft Excel workbook by right-clicking the desktop, pointing
+to New, and then clicking Microsoft Excel Workbook, an English Excel workbook is
+opened instead of a German Excel Workbook.
+
+CAUSE
+=====
+
+This problem occurs because Windows NT copies an English Excel.xls file in the
+%SystemRoot%\ShellNew folder. The files in this folder are used when you
+right-click a document and then click New.
+
+RESOLUTION
+==========
+
+To resolve this problem, complete the steps below. You must be a local
+administrator to perform these steps:
+
+1. Start Excel from the Start menu. This will open a German Excel workbook.
+
+2. Save this workbook as Excel.xls and close Excel.
+
+3. In Windows Explorer, copy the file to the %SystemRoot%\ShellNew folder.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

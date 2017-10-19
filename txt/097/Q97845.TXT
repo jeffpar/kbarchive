@@ -1,0 +1,74 @@
+DOCUMENT:Q97845  19-FEB-2002  [homemm]
+TITLE   :Text Copied from Bookshelf to Word Formatted Incorrectly
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,1991 edition,1992 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows versions 1991 edition, 1992 edition 
+ - Microsoft Multimedia Viewer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you copy a list of author names from Bartlett's Familiar Quotations into
+Word for Windows, the first line of text is incorrectly formatted. The first
+line is bold and underlined in 12 point Arial. The rest of the text is formatted
+for Times New Roman 10 point. All the text should be formatted for Times New
+Roman 10 point, and none of it should be bold or underlined.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To avoid this problem, copy the text by selecting Copy from the Edit menu rather
+than using the Send button.
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Open Bartlett's Familiar Quotations.
+
+2. Click one of the alphabet buttons. This produces a list of author names, each
+   followed by birth and death dates.
+
+3. Click Send.
+
+4. Switch to Word for Windows and look at the copied text.
+
+The text is incorrectly formatted, as described above.
+
+This problem occurs in Windows 95.
+
+Additional query words: 3.00 multimedia multi media multi-media bfq paste kbmm win95
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbBookshelfSearch kbBookShelf1991 kbBookShelf1992 kbMMViewer100
+Version           : :1.0,1991 edition,1992 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

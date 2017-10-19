@@ -1,0 +1,69 @@
+DOCUMENT:Q254447  14-SEP-2001  [automap]
+TITLE   :MapPoint: Imported Access Data Is Displayed as Numeric Values
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kbdisplay kbinterop kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+ - Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you import Yes/No, True/False, or On/Off data types from Microsoft Access
+into Microsoft MapPoint, the data is displayed as numeric values.
+
+MORE INFORMATION
+================
+
+Access internally stores Yes/No, True/False, and On/Off data types as the
+numeric values listed in the following table.
+
++---------------------------+
+| Data type | Numeric value | 
++---------------------------+
+| Yes       | -1            | 
++---------------------------+
+| No        | 0             | 
++---------------------------+
+| True      | -1            | 
++---------------------------+
+| False     | 0             | 
++---------------------------+
+| On        | -1            | 
++---------------------------+
+| Off       | 0             | 
++---------------------------+
+
+MapPoint displays the internally stored numeric values rather than the formatted
+text equivalent that is used in Access tables.
+
+Additional query words: mp2000 mp2001 map point database numbers zero minus one
+
+======================================================================
+Keywords          : kbdisplay kbinterop kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000 kbMapPoint2001
+Version           : WINDOWS:; :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,96 @@
+DOCUMENT:Q173836  08-MAY-2001  [mspress]
+TITLE   :Learn VB Now Hangs With IE 4.0 Platform Preview
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows 
+-------------------------------------------------------------------------------
+
+********************************************************************
+     BETA INFORMATION  BETA INFORMATION  BETA INFORMATION  BETA
+
+     This article discusses a Beta release of a Microsoft
+     product. The information in this article is provided as is
+     and is subject to change without notice.
+
+     No formal product support is available from Microsoft for
+     this Beta product. For information about obtaining support
+     for a Beta release, please see the documentation included
+     with the Beta product files, or check the Web location
+     from which you downloaded the release.
+
+     BETA INFORMATION  BETA INFORMATION  BETA INFORMATION  BETA
+********************************************************************
+
+SYMPTOMS
+========
+
+When you attempt to run "Learn Visual Basic Now" on a computer with Microsoft
+Internet Explorer 4.0 Platform Preview installed, you may encounter the
+following error:
+
+   Access Violation.
+
+"Learn Visual Basic Now" will then close.
+
+CAUSE
+=====
+
+This error message is caused by a problem in the Platform Preview of Microsoft
+Internet Explorer 4.0. This problem has been corrected in later builds of
+Internet Explorer 4.0.
+
+
+WORKAROUND
+==========
+
+To use "Learn Visual Basic Now," uninstall the Platform Preview of Microsoft
+Internet Explorer 4.0 by using the following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click to select the first "Internet Explorer 4.0" option and click
+   Add/Remove.
+
+4. Repeat for each Internet Explorer 4.0 option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft product listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: mspress ms_press press bookbug 1-57231-551-2
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

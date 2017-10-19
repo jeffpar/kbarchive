@@ -1,0 +1,72 @@
+DOCUMENT:Q302541  30-JUL-2001  [msnetwork]
+TITLE   :In-Box Protector For E-mail
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+You would like to filter bulk e-mail and junk e-mail.
+
+MORE INFORMATION
+================
+
+To filter bulk e-mail and junk e-mail
+
+1. From the mail page, click mail settings.
+
+2. Click inbox protector.
+
+3. Select one of the following options:
+    - Typical - Incoming e-mail will be directed to your Inbox if:
+       - Your e-mail address appears on the "TO:" or "CC:" line.
+
+       - The sender's address appears in your Hotmail Address Book.
+
+       - The user in the msn.com or msn.com domain.
+
+       - The message is from Hotmail WebCourier or Special Offers Subscription;
+         Hotmail Member Letter; or is from Microsoft, MSN, or a Microsoft
+         Passport partner site.
+
+    - Custom - For advanced users. Select the boxes to indicate which e-mail
+      message should be delivered to your inbox:
+       - Your address appears on the "TO:" or "CC:" line.
+
+       - The sender's address is in your Hotmail Address Book.
+
+       - The sender's address is in the msn.com domain.
+
+4. After you have selected one of the above options, select one of the following
+   to specify how you would like to discard unwanted e-mail:
+    - Bulk Mail Folder - Messages are deleted after 14 Days of receipt.
+
+    - Trash Can - This is emptied several times a week.
+
+5. Use the Safe List to specify what domains, if any, you would like to receive
+   e-mail from.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,71 @@
+DOCUMENT:Q173929  14-NOV-2000  [word97]
+TITLE   :WD97: Frame Converted from Text Box Is Gray When Header Is Open
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbframe kblayout
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word 97, if you convert a text box to a frame, the frame has a gray
+background while the header is open.
+
+CAUSE
+=====
+
+This behavior is by design of Microsoft Word 97. The gray background indicates
+that the text box has a default fill color (white). In Microsoft Word for
+Windows 95, version 7.0, frames were clear by default.
+
+
+WORKAROUND
+==========
+
+To work around this problem, format the text box color to No Fill before you
+convert it to a frame. To do this, follow these steps:
+
+1. Click to select the text box.
+
+2. On the Format menu, click Text Box.
+
+3. In the Color list (under Fill), click No Fill.
+
+REFERENCES
+==========
+
+For additional information about text boxes and frames, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q159942 General Information About Text Boxes and Frames in Word97
+
+Additional query words: frames text document creation convert 8.0 8.00
+
+======================================================================
+Keywords          : kbframe kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

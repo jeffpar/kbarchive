@@ -1,0 +1,47 @@
+DOCUMENT:Q66846  30-JUL-2001  [homegame]
+TITLE   :ASD: Wind/Speed Indicator on 747 Enhanced Panel
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+In Microsoft Flight Simulator, the 747 enhanced panel has a wind speed and
+direction indicator appearing on the lower left portion of the Navigation
+Display. If you have set values in the Winds menu, a wind direction and velocity
+indicator will appear. The top digits display the wind direction at your current
+altitude, and the bottom digits display the wind velocity. The arrow points in
+the direction of the wind relative to the heading of the aircraft.
+
+The system can detect different levels of wind. For example, if you have winds
+set at surface level and between 5,000 and 8,000 feet, the arrow and
+corresponding speed/direction values would be displayed while you are on the
+runway, then disappear while you are above the surface level's Depth value, then
+reappear when you are between 5,000 and 8,000 feet, then disappear when you are
+above 8000 feet. This behavior is entirely dependent on the Winds menu values.
+
+This feature is documented in Aircraft & Scenery Designer's README.AD1 file.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

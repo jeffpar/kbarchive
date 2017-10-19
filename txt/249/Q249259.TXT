@@ -1,0 +1,94 @@
+DOCUMENT:Q249259  07-MAY-2001  [visualc]
+TITLE   :BUG: ATL OLE DB Provider not Working with OLE DB Services
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbATL kbDTL kbProvider kbVC kbVS600bug kbGrpDSVCDB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An ATL-wizard generated OLE DB provider does not work with OLE DB Services such
+as resource pooling, transaction enlistment, or cursor services.
+
+CAUSE
+=====
+
+The ATL OLE DB Provider wizard incorrectly creates the OLEDB_SERVICES registry
+entry as a subkey instead of a DWORD value under the CLSID of the Provider.
+
+This registry setting is checked by the OLE DB services to determine if a
+provider supports use with its services.
+
+RESOLUTION
+==========
+
+The provider's OLEDB_SERVICES registry key needs to be set to 0xffffffff (Hex)
+or 4294967295 (Decimal) to let the services know that the provider can be used
+with any of the OLE DB services. For other possible values for the registry
+setting, see the Microsoft Developer Network (MSDN) documentation. Specifically,
+search on "Resource pooling".
+
+To fix the registry script file (.rgs) so that it properly registers the OLE DB
+provider for use with the OLE DB services, replace this line of code:
+
+    OLEDB_SERVICES = d '4294967295'
+
+with this:
+
+    val OLEDB_SERVICES = d '4294967295'
+
+Then compile and register the provider.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ATL COM AppWizard project.
+
+2. Insert an ATL OLEDB Provider object.
+
+3. View the registry script file (.rgs).
+
+4. The OLEDB_SERVICES key is created as a subkey under the provider's CLSID.
+
+    OLEDB_SERVICES = d '4294967295'
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbDTL kbProvider kbVC kbVS600bug kbGrpDSVCDB kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

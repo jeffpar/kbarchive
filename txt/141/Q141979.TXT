@@ -1,0 +1,71 @@
+DOCUMENT:Q141979  31-DEC-2000  [win3x]
+TITLE   :Cannot Print to Legal Paper on HP LJ IIP/IIIP with PostScript
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11,95
+OPER/SYS:
+KEYWORDS:win31 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to legal-size paper on a Hewlett-Packard (HP) LaserJet IIP or
+IIIP printer with a PostScript cartridge, you may experience one or more of the
+following problems:
+
+ - The document is not printed.
+
+ - The top portion of the page is not printed.
+
+RESOLUTION
+==========
+
+To print to legal-size paper on an HP LaserJet IIP or IIIP printer with a
+PostScript cartridge, follow these steps:
+
+1. Format the document for legal-size paper and select the Manual Feed paper
+   source. Do not use the Auto Select Tray paper source. This source defaults to
+   the size of paper in the standard paper tray.
+
+2. Print the document.
+
+3. When you see the message "MF FEED LEGAL" in the printer's display window,
+   make sure that legal-size paper is loaded in the MP tray and then press the
+   ONLINE button on the printer once. Do not press ALT+CONTINUE. Pressing
+   ALT+CONTINUE informs the printer that you do not have the requested paper
+   size and to use the default paper.
+
+NOTE: The above steps have been tested with an HP PostScript cartridge. These
+steps may or may not work with third-party PostScript cartridges.
+
+
+Additional query words: word winword excel lj
+
+======================================================================
+Keywords          : win31 win95 
+Technology        : kbAudDeveloper kbWin3xSearch kbWin95search kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,65 @@
+DOCUMENT:Q110884  08-NOV-2001  [homegame]
+TITLE   :Arcade for Windows: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the minimum system requirements to run Microsoft Arcade
+for Windows, version 1.0.
+
+MORE INFORMATION
+================
+
+The minimum system requirements for Microsoft Arcade for Windows are:
+
+ - MS-DOS operating system version 3.2 or later.
+
+ - Microsoft Windows version 3.1 or later.
+
+ - A 386-SX/20 or faster processor.
+
+ - 2 megabytes (MB) of random access memory (RAM).
+
+ - A high-density floppy disk drive.
+
+ - A VGA or higher resolution video adapter and monitor.
+
+ - A Microsoft mouse or compatible pointing device.
+
+ - A Sound card plus speakers or headphones required to hear sounds
+   (recommended).
+
+Additional query words: 1.00 w_arcade msgame sysreq kbfaq
+
+======================================================================
+Keywords          : kbsetup kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcade
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

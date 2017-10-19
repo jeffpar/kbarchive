@@ -1,0 +1,50 @@
+DOCUMENT:Q134374  14-OCT-1999  [msnetwork]
+TITLE   :Misleading Message for Properties in Favorite Places
+PRODUCT :The Microsoft Network
+PROD/VER:1.00 1.05 1.2 1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.0, 1.05, 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Properties on the File menu in Favorite Places, you may receive
+the following error message:
+
+   This task cannot be completed at this time. Please try later.
+
+CAUSE
+=====
+
+The Properties command does not function in Favorite Places if you do not have
+an item selected.
+
+Additional query words: 1.2 msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN105 kbMSN120
+Version           : 1.00 1.05 1.2 1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

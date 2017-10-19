@@ -1,0 +1,102 @@
+DOCUMENT:Q303249  06-AUG-2002  [exchange]
+TITLE   :XADM: Export of DLs or Custom Recipients May Fail
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to export distribution lists (DLs) or custom recipients with
+the Command Line Directory Export Utility by using a Directory Export Options
+file, the export may be unsuccessful and you may receive a .csv file that
+contains only header information.
+
+In the Application event log, the following event may be logged:
+
+   Event ID: 302
+   Event Type: Warning
+   Event Source: MSExchangeDSExp
+   Event Category: None
+   Description: No entries had been found for the specified object class DL.
+
+   (When you want to export distribution lists.)
+
+-or-
+
+   Event ID: 302
+   Event Type: Warning
+   Event Source: MSExchangeDSExp
+   Event Category: None
+   Description: No entries had been found for the specified object class remote.
+
+   (When you want to export custom recipients.)
+
+NOTE: Directory Export in the Exchange Admin tool functions properly.
+
+CAUSE
+=====
+
+This behavior can occur because a "HomeServer=<Servername>" line had been
+added (with the "Servername" entered into this line) to the Directory Export
+Options file.
+
+RESOLUTION
+==========
+
+To resolve this behavior, ensure that the entry for the HomeServer attribute is
+blank, similar to the following example:
+
+   HomeServer=
+
+Or, delete the entire line with the HomeServer attribute in the Directory Export
+Options file.
+
+MORE INFORMATION
+================
+
+Neither DLs nor custom recipients have a HomeServer attribute. If a HomeServer
+attribute is entered in the Export Options file, the Admin.exe program searches
+unsuccessfully for any objects with this HomeServer attribute.
+
+The event that is described in the Symptoms section of this article can be logged
+if the "InformationLevel=" entry is set to Full.
+
+For additional information about command-line export, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q184766 XADM: Command-Line Export Fails on Custom Recipients
+
+   Q160602 XADM: Exporting from Command Line Produces Only Mailboxes
+
+Additional query words: exch2kp2w
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

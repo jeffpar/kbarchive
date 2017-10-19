@@ -1,0 +1,74 @@
+DOCUMENT:Q76068  18-FEB-2000  [vbwin]
+TITLE   :PRB: Pen Cursor Does Not Appear When Tablet Used
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing Microsoft Windows for Pen Computing, no mouse cursor appears on
+the screen.
+
+CAUSE
+=====
+
+The tablet drivers supplied with Windows for Pen Computing are not mouse
+drivers. The mouse cursor is displayed only if a mouse driver detects the
+presence of mouse hardware on the system.
+
+RESOLUTION
+==========
+
+To ensure that the mouse cursor is shown, you must either load a mouse driver or
+load the YESMOUSE.DRV file in place of a mouse driver. Mouse hardware is
+required to use a mouse driver; mouse hardware is not required to use the
+YESMOUSE driver.
+
+MORE INFORMATION
+================
+
+When the Pen Windows system queries the hardware to determine whether a mouse is
+installed, the YESMOUSE driver acts as the mouse hardware. Therefore, Pen
+Windows acts as if a mouse is installed.
+
+To install the YESMOUSE driver, modify the "mouse.drv" line in the [boot] section
+of the SYSTEM.INI file as follows:
+
+      [boot]
+      mouse.drv=yesmouse.drv
+
+If the YESMOUSE.DRV file is not in the Windows system directory, in the
+SYSTEM.INI file, specify the complete path to the YESMOUSE.DRV file.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

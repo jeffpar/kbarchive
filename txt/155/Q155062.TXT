@@ -1,0 +1,55 @@
+DOCUMENT:Q155062  16-APR-2000  [powerpt]
+TITLE   :PPT7: Information About Compadre for PowerPoint 95
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+Compadre for PowerPoint 95 is a collection of graphics and animations
+for PowerPoint 95. It is not a Microsoft product, and is not supported by
+Microsoft. To obtain support for this product, please contact ThreeD
+Graphics.
+
+   Three D Graphics
+   1801 Avenue of the Stars, #600
+   Los Angeles, CA 90067
+
+   Telephone: (310) 553-3313, (800) 913-0008 (U.S. only)
+   FAX: (310) 788-8975
+
+The third-party contact information included in this article is provided to
+help you find the technical support you need. This contact information is
+subject to change without notice. Microsoft in no way guarantees the
+accuracy of this third-party contact information.
+
+Additional query words: templates buttons background color powerpt powerpnt ppt
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

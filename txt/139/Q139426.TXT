@@ -1,0 +1,68 @@
+DOCUMENT:Q139426  03-JUN-2001  [win95x]
+TITLE   :Cabinet Files Not Recognized as Data Source
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 may be unable to access files stored in cabinet (.cab) files. For
+example, when you are trying to install a Windows 95 component using the
+Add/Remove Programs tool, the component may not be installed and you may not
+receive any error message.
+
+CAUSE
+=====
+
+This problem can occur if Windows 95 Setup does not create a Layout.inf file
+when you originally install Windows 95 from a flat folder of expanded files.
+
+RESOLUTION
+==========
+
+Extract the Layout.inf file from the Precopy2.cab cabinet file on the Windows 95
+CD-ROM or on Setup Disk 2 to the Windows\Inf folder, and then try to install the
+component again.
+
+For information about the Extract tool, type "extract" (without quotation marks)
+at a command prompt, or see the following article in the Microsoft Knowledge
+Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+MORE INFORMATION
+================
+
+Information about cabinet files is stored in the Layout.inf file. Cabinet files
+are compressed distribution files containing Windows 95 installation files.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

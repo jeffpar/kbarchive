@@ -1,0 +1,64 @@
+DOCUMENT:Q216803  31-JUL-2001  [iis]
+TITLE   :IIS Hidden Static Files Return HTTP 404 or Access Denied Errors
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbiis500prod2web kbhttp404 kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Static files that have the hidden attribute set may return an HTTP 404 or an
+Access Denied error when browsed, while dynamic files can still be browsed.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+RESOLUTION
+==========
+
+Configuring access control for all Web files should always be implemented
+through NTFS permissions.
+
+MORE INFORMATION
+================
+
+Dynamic files such as Active Server Pages (ASP) or Server-Side Includes (SSI)
+are implemented through script-mapped ISAPI extensions, in this case the Asp.dll
+and Ssiinc.dll files respectively. These extensions preprocess the executable
+code in the files being requested and can therefore read hidden files and return
+the expected HTML output to a client. Direct Web browsing of hidden static files
+results in a "File not Found" or an "Access Denied" error message.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp404 kbProd2Web 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : winnt:3.0,4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

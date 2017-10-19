@@ -1,0 +1,55 @@
+DOCUMENT:Q274788  26-MAY-2001  [homemm]
+TITLE   :Encarta 2001: Find Box Is Not Displayed on Home Screen
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The "Using the Special Features of the DVD-ROM version" section of the Microsoft
+Encarta Reference Suite 2001 "Getting Started" manual contains a screen shot
+that displays a Find box on the left margin of the Encarta Reference Suite 2001
+home screen.
+
+However, a Find box is not displayed on the Encarta Reference Suite 2001 home
+screen.
+
+RESOLUTION
+==========
+
+To resolve this issue, start one of the Encarta Reference Suite 2001 programs.
+The Find box (and the Pinpointer) are displayed on the left margin of the screen
+as expected.
+
+Additional query words: multi multi-media media mm ers startup search
+
+======================================================================
+Keywords          : kbdocerr kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

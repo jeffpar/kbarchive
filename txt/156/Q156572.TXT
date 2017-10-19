@@ -1,0 +1,81 @@
+DOCUMENT:Q156572  10-AUG-2001  [iis]
+TITLE   :How to Install the FTP Server Service in Windows NT 4.0
+PRODUCT :Internet Information Server
+PROD/VER:2.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install the FTP Server Service for Windows NT
+version 4.0. In previous versions of Windows NT, the FTP Server Service is
+installed as a component of the TCP/IP protocol. In Windows NT version 4.0, the
+FTP Server Service is included as a component of the Peer Web Services in
+Windows NT Workstation and a component of Internet Information Server in Windows
+NT Server.
+
+
+MORE INFORMATION
+================
+
+To install the FTP Server Service in Windows NT 4.0, follow these steps:
+
+1. In Control Panel, double-click Network.
+
+2. Click the Protocols tab, and then click the TCP/IP protocol.
+
+   NOTE: If the TCP/IP protocol is not installed, click Add, click TCP/IP
+   Protocol and then click OK.
+
+3. Click Services, click Add, and then click Microsoft Peer Web Services.
+
+   NOTE: For Windows NT Server 4.0, click Microsoft Internet Information Server
+   2.0 instead of Microsoft Peer Web Services.
+
+4. Click OK, and then type the path for the Windows NT source files. For
+   example, if you are using the Windows NT CD-ROM in drive D, type the
+   following line:
+
+      d:\i386
+
+5. Click OK to start the Microsoft Peer Web Services Setup.
+
+6. The FTP Service is selected by default, but you may want to clear the check
+   boxes for options you do not want to install.
+
+   NOTE: The FTP Service, along with other Peer Web Service components, can be
+   configured by using the Internet Service Manager tool.
+
+Additional query words: prodnt utilities
+
+======================================================================
+Keywords          : kbnetwork kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbiisSearch kbiis300 kbiis200
+Version           : 2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

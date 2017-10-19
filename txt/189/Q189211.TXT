@@ -1,0 +1,58 @@
+DOCUMENT:Q189211  25-NOV-1999  [mspress]
+TITLE   :Computer User's Dictionary: Web Address for Updates Is Incorrect
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Press Computer User's Dictionary ISBN 1-57231-862-7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the first printing of "Microsoft Press Computer User's Dictionary", page viii
+includes an incorrect Web address for downloading dictionary updates.
+
+RESOLUTION
+==========
+
+The correct Web address is:
+
+   http://mspress.microsoft.com/mspress/products/1031/
+
+MORE INFORMATION
+================
+
+The Web address is printed correctly on the back cover of the first printing.
+Later printings of this book will include the correction to page viii but will
+not include the Web address on the back cover.
+
+Additional query words: ms_press 1-57231-862-7
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

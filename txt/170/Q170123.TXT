@@ -1,0 +1,61 @@
+DOCUMENT:Q170123  08-NOV-2001  [frontpg]
+TITLE   :FP: Clicking "Preview In Browser" Saves Work in Progress
+PRODUCT :Word Front Page
+PROD/VER:windows:97; macintosh:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the versions of FrontPage Editor listed at the beginning of this article,
+when you click the Preview In Browser button on the Standard toolbar, your page
+is saved to a Web without warning. In contrast, due to a design change in
+FrontPage 98, you must select the Automatically Save Page option in the Preview
+In Browser dialog box (File menu) to automatically save the page to a Web.
+
+CAUSE
+=====
+
+FrontPage cannot preview the page unless it is first saved to a Web.
+
+WORKAROUND
+==========
+
+To work around this behavior and retain the original version of the web page,
+make a copy of your file and edit the copy. When you click Preview In Browser,
+changes will be saved to the copy of your file. When you are finished making all
+the changes you want, save the file using the original file name.
+
+Additional query words: preview browser save file
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : windows:97; macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

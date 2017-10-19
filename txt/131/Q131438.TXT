@@ -1,0 +1,488 @@
+DOCUMENT:Q131438  26-MAY-2001  [homemm]
+TITLE   :Mac Encarta 95: Read Me Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the complete text of the ReadMe file that comes with Microsoft
+Encarta 1995.
+
+MORE INFORMATION
+================
+
+Microsoft Encarta for Macintosh, 1995 Edition ReadMe File
+---------------------------------------------------------
+
+This ReadMe file contains information on the following topics:
+
+1. SYSTEM REQUIREMENTS FOR RUNNING ENCARTA '95
+
+   - What you need to run Encarta
+
+2. MEMORY USE
+
+   - Encarta memory usage
+
+3. PERFORMANCE
+
+   - Tips on how to increase Encarta's speed
+
+4. COLOR CONFIGURATION AND SCREEN SIZES
+
+   - What makes Encarta look best
+
+5. SOUND PROBLEMS
+
+   - Common problems playing sounds and how to fix them
+
+6. WHERE ENCARTA PUTS FILES
+
+   - What folders are created and which files are copied by the
+     Installer
+7. CUSTOM INSTALLATION
+
+   - Other options for installing Encarta
+
+8. PRINTING FROM ENCARTA
+
+   - Possible printing problems and suggestions for printing
+
+9. KNOWN PROBLEMS
+
+   - Known problems and suggestions to help you work around them
+
+-------------------------------------------------
+1. SYSTEM REQUIREMENTS FOR RUNNING ENCARTA '95
+-------------------------------------------------
+
+To install and run Encarta '95 you will need at least the following
+minimum configuration:
+
+  A 68030 based Apple Macintosh Computer that supports a 13-inch
+  640x480 pixels) or larger  monitor that can display 256 or more
+  colors
+
+  System 7.0 or later
+
+  At least 5 MB of random-access memory (RAM) with 4 MB available
+
+  At least 5 MB of available hard disk space
+
+  A CD-ROM drive
+
+NOTE:  It is highly recommended you run Encarta '95 on a Macintosh with
+at least 8 MB of physical RAM. It is also recommended that you have at
+least 16 MB free on your hard drive for Encarta's installation. If you
+are running Encarta with only 5 MB of physical RAM, you will need to
+turn on Virtual Memory. Refer to the Encarta & Memory ReadMe for more
+information about using Virtual Memory.
+
+In order to use Encarta '95, you must install the application and its
+supporting files on your hard disk. The Installer program on the
+CD-ROM installs the Encarta program to a new folder and adds any
+necessary files and resources to the System folder on your hard disk.
+
+NOTE: The installation process may require more than 5 MB hard disk
+space on machines running System 7.0 or 7.0.1. This space is required
+only during installation: after you restart, Encarta '95 will take as
+little as 5 MB on your hard disk, depending on the installation option
+you have selected. Under System 7 or 7.0.1, the installation program
+must make a copy of your System file in order to install the fonts
+required for Encarta '95. The extra copy of the System file is removed
+when you restart your computer. If you encounter problems with this
+installation, see section 7, CUSTOM INSTALLATION.
+
+-------------
+2. MEMORY USE
+-------------
+
+Encarta '95 needs a relatively large amount of your computer's system
+memory (RAM) to display pictures and play sounds. It should run on
+systems with 5 MB (5,120K) of RAM and at least 3.5 MB (3,584K)
+available for Encarta. The InterActivities require 3,000 - 4,000 K
+of available memory to run. You will need to have Virtual Memory
+turned on to run Encarta on a machine with only 5MB of RAM. Refer
+to the "Encarta & Memory ReadMe" document for advice about memory
+usage.
+
+---------------
+3. PERFORMANCE
+---------------
+
+If Encarta '95 seems to run slowly, interrupts sounds or film clips,
+does not play sounds at all, does not allow you to enlarge images, or
+is using incorrect fonts for text, here are the main things to check:
+
+- If you are running on a Macintosh with low memory you may experience
+performance problems refer to the document "Encarta & Memory ReadMe" for
+advice about memory usage.
+
+- If your Macintosh is using Virtual Memory, you may find that Encarta
+'95 runs slowly. For best performance on machines with over 8 MB of
+physical RAM, turn off Virtual Memory. To do this, open the Memory
+control panel, choose the Virtual Memory Off option, and then restart
+your computer. However, it is possible that you will require Virtual
+Memory to run Encarta and one of the mini-applications together.  See
+the document "Encarta & Memory ReadMe" for more advice about Virtual
+Memory.
+
+- If you are using a slow CD-ROM drive, it may not be able to supply
+information to the Macintosh at the speed required by the software.
+There is no workaround for this problem. If you suspect a problem with
+your CD drive, ensure that it is properly terminated and that its
+software is properly installed. For more information on SCSI
+termination, read your Macintosh or CD-ROM drive documentation, or ask
+your Apple dealer.
+
+- Encarta may run a bit faster if your machine is set to thousands of
+colors (instead of 256 or millions).  However, this will require more
+memory than 256 colors.  You can try setting your machine to thousands,
+and see whether you experience any memory problems.  To change your
+color setting, select the Control Panels folder under the apple icon,
+double-click the Monitors control panel and select the desired number of
+colors.
+
+- You can increase the performance of the InterActivities by copying the
+applications from your Encarta CD to your hard drive.  The applications
+will run faster from your hard drive than they do from your CD.  This
+will, however, use more hard disk space than running them from the CD.
+The InterActivities are located on the CD within the Programs folder
+which is in the Encarta Files folder.  When running InterActivities in
+this fashion, the CD must be mounted.
+
+---------------------------------------
+4. COLOR CONFIGURATION AND SCREEN SIZES
+---------------------------------------
+
+Encarta '95 requires that your monitor display 256 more colors.
+
+Encarta '95 will run in 16-bit mode (thousands of colors) and 24-bit
+mode (millions of colors). These video modes improve the appearance
+of Encarta's photos and film clips; however, using 16-bit or 24-bit
+video may alter Encarta's performance or reduce the amount of memory
+available to Encarta. If you see low memory messages when running in
+thousands or millions of colors, you can increase the memory
+available to Encarta. Refer to the "Encarta & Memory ReadMe" document
+for more details.
+
+-----------------
+5. SOUND PROBLEMS
+-----------------
+
+If there is no sound at all, first make sure that the sound level on
+your Macintosh is set correctly. To set the sound level, use the
+Sound Control Panel and experiment with the speaker volume setting
+until you get a comfortable sound level. If you set the sound level
+to maximum, you may hear sound distortion.
+
+If your Macintosh is using Virtual Memory, you may find that sounds
+are interrupted. When Virtual Memory is turned on, sounds are
+sometimes placed on the hard disk rather than in RAM. For best sound
+performance, turn off Virtual Memory. To do this, open the Memory
+Control Panel, choose the Virtual Memory Off option, and then restart
+the computer. It is possible however, that you will require Virtual
+Memory to run Encarta or one of the mini-applications.  See the
+document "Encarta & Memory ReadMe" for more advice about Virtual
+Memory.
+
+In low memory situations, you may find that sounds will not load or
+play.  If you cannot get a sound to play and are sure that your sound
+control panel is set correctly, or you are receiving error messages
+when attempting to play sounds, please refer to the document
+"Encarta & Memory ReadMe" for instructions on how to allocate more
+memory for Encarta.
+
+The sounds used in Encarta '95 are stored on the CD-ROM in a
+compressed format. In order to be played, the sound must be read from
+disk and decompressed. Older or slower Macintoshes such as the
+Macintosh LCIII or the earlier Performa models may experience
+interruptions in audio playback.
+
+The slider on the audio controller is not updated as often while the
+sound is playing on lower performance machines as it is on higher
+performance machines.  This will give the slider's movement a "choppy"
+effect, and it may not reach the end of the bar by the time the sound
+finishes.
+
+Macintosh computers have built-in speakers. These speakers vary in
+quality and loudness depending on which Macintosh you have. The
+speaker quality has generally improved in later models.
+
+-------------------------------------
+6. WHERE ENCARTA INSTALLER PUTS FILES
+-------------------------------------
+
+The Encarta Installer program creates folders and copies files to
+several locations. When you install Encarta '95, the Installer program:
+
+- Creates a folder on your hard disk called "Encarta '95" and copies the
+following to it:
+
+  Microsoft Encarta '95 - the main Encarta application.
+
+  Encarta '95 Read Me - the document you are reading now.
+
+  Encarta & Memory - a Read Me document explaining memory issues
+  and troubleshooting.
+
+  Animation Launcher - used to run animations in low memory
+  situations.
+
+  Animation - a file used by Encarta in playing of animations.
+
+  Encarta Projector - Macromedia application that plays Director
+  movies.
+
+  SimpleText - a text editor that allows you to view the readme files.
+
+  Data Files - folder that contains data files needed by Encarta.
+
+  Microsoft System Information - folder with applications that may be
+  required if you need product support from Microsoft.
+
+  InterActivities - a folder containing aliases to the InterActivities
+  and MindMaze
+
+- Creates a folder called "Encarta '95 Preferences" in your
+ System:Preferences folder
+
+- Creates a folder called "Encarta '94 Preferences" in your
+System:Preferences folder, this is created to enable Microsoft Works 4.0
+to work together with Encarta '95.  This folder will not be created if
+Encarta '94 is already installed on your system.
+
+- Copies QuickTime Powerplug to your System:Extensions folder, this is
+only necessary for PowerMac systems, it can be removed from other
+systems.
+
+- Copies QuickTime 2.0, QuickTime Musical Instruments, and Sound Manager
+to the System:Extensions folder (if needed), these are necessary to play
+video and sound.
+
+- Copies FIF Component to the System:Extensions folder, this is
+necessary to load images from the CD
+
+- Copies Apple Multimedia Tuner to the System:Extensions folder, this
+allows the multimedia in Encarta to run properly.
+
+- Copies Sound Manager Sound control panel to the System:Control Panels
+folder (if needed).
+
+- Copies Times, Arial, MS Reference, and Symbol fonts to System folder.
+On System 7.0 and 7.0.1, these fonts are copied to the System suitcase.
+On System 7.1 or higher these fonts are copied to the Fonts folder.
+
+If you choose to switch disks before installing (to a hard disk that
+is not your startup volume) you MUST RESTART YOUR MACINTOSH before
+Encarta will run correctly. On System 7.0 and 7.0.1, installing to a
+non-boot drive will not properly install the necessary fonts.  It is
+also possible that the installer will not install the program to a
+non-boot drive on some systems.  To resolve these problems, try
+installing to your boot drive, then drag the Encarta '95 folder to
+the desired drive.
+
+----------------------
+7. CUSTOM INSTALLATION
+----------------------
+
+For the majority of users, using the Easy Install provided in the
+Installer program is the best way to install Encarta '95.
+
+You may wish to perform a custom installation if you are running
+System 7.0 or 7.0.1 and don't have the extra hard disk space needed
+for installation. (See Section 1 for details.) You may also choose
+custom install if you would like to save hard disk space, though this
+will decrease Encarta's performance.
+
+Custom installation allows you to a different option than the one
+chosen by the installer as optimal for your system.  You may also
+choose custom install if you would like to save hard disk space.
+To perform a custom installation of Encarta '95:
+
+- Double-click the "Installer" icon on the Encarta '95 CD-ROM.
+
+- Click the Customize button in the Installer dialog box.
+
+- Choose an install option. You must know which system version you are
+running, and choose the appropriate system option. If Easy Install
+recommends Faster Encarta, you can save disk space by choosing either
+Slower Encarta or CD-based Encarta. If Easy Install recommends Slower
+Encarta, you do not have enough disk space available for Faster Install,
+and can only choose Slower Encarta or CD-Based  Encarta. If easy install
+recommends CD-based Encarta, that is the only option that you can choose
+without removing some files from your hard disk to provide more space.
+Slower Encarta will provide slower performance than Faster Install, and
+
+CD-based Encarta will provide the slowest performance of the three
+options.  The custom install section lists the disk space required for
+each option.
+
+------------------------
+8. PRINTING FROM ENCARTA
+------------------------
+
+Encarta '95 does not offer an Advanced Printer Driver Options dialog.
+If you have a printer that requires this dialog to change settings
+(e.g. to change color or resolution settings), you must run another
+application such as SimpleText and use that application's Page Setup
+dialog to access the Advanced Printer Driver Options dialog.
+
+Encarta '95 does not always print properly with Laserwriter version
+7.x drivers. Problems you may see when printing with these driver
+versions include:
+
+  a) Media items print in black and white instead of grayscale despite
+proper printer settings.
+
+  b) Sections of text overlap other sections of text, and images within
+the article text have black bars printed on the right side.
+
+To solve these problems, we have provided a LaserWriter version 8.2.2
+driver on the Encarta '95 CD.  To install this driver on your system,
+you must open your System Folder and open your Extensions folder. Open
+the Installer Files folder on the Encarta '95 CD-ROM and open the
+Laserwriter 8.2.2 folder.  Drag the "LaserWriter 8" file into your
+Extensions folder. Then drag the "Printer Descriptions" folder into your
+extensions folder. If this folder already exists on your hard drive,
+drag the contents of the Printer Descriptions folder from the CD into
+the Printer Descriptions folder on your hard drive. Once you have copied
+these files, select Chooser from the Apple menu. Locate and select the
+Laserwriter 8 item in the upper left box within the Chooser. You may
+need to scroll down to find this item. Select your printer in the
+printer list box. Select Setup.
+
+-----------------
+9. KNOWN PROBLEMS
+-----------------
+
+- Encarta '95 may not launch on machines running QuickDraw GX version
+1.0.1.  If you are running system 7.5 with QuickDraw GX 1.0.1 and
+experience problems launching Encarta, you will need to remove this
+extension from the Extensions folder in your System folder or turn it
+off with Extensions Manager before launching Encarta '95. An alternative
+solution is to get the latest QuickDraw GX update from Apple and replace
+version 1.0.1 with the new version.
+
+- Virus protection software issues warnings during Encarta installation.
+Some virus protection software may confuse the Installer program's
+necessary actions with behaviors associated with a virus, possibly
+disrupting the installation process. It is recommended that you disable
+any virus protection software before installing Encarta, then re-enable
+it after the installation.
+
+- Screen saver software may conflict with installation. Some screen
+savers, such as After Dark, are known to conflict with the installer.
+Turn off your screen saver using the control panel before installing
+Encarta.
+
+- Non-Encarta disks don't eject.  On some systems, when you launch
+Encarta '95 with a non-Encarta '95 disc in the CD-ROM drive, the drive
+will not eject that disc. To get around this problem: (1) Eject the disc
+from the Finder by dragging it to the Trash, (2) Insert the Encarta '95
+disc into the CD-ROM drive.
+
+- Restarting from the Installer program may hang on some Macintosh
+Performa models. This is a known problem with System 7.1P5 and earlier.
+Apple recommends upgrading to 7.1P6 or later. To work around this
+problem: (1) Turn your computer off by its power switch and wait 10 to
+15 seconds, (2) Restart your computer.
+
+- Dialog box warns you have an incorrect version of QuickTime or Sound
+Manager installed.  During installation, the Installer program checks
+the versions of QuickTime and Sound Manager present on your machine and,
+if necessary, replaces them with newer versions. However, the Installer
+cannot remove older versions if you have renamed them.  For example, if
+you renamed an older version of QuickTime "My QuickTime," the Encarta
+Installer would install a newer version of QuickTime, but would fail to
+remove the older version. To fix this problem, manually remove the
+renamed version(s) of these system components and restart your
+Macintosh.
+
+- Special or international characters are copied incorrectly to the
+Clipboard.  As a custom bitmap font, the MS Reference fonts do not map
+special or international characters correctly to the Macintosh character
+set. These characters appear as inappropriate or non-printing characters
+when copied to an application such as SimpleText.
+
+  NOTE: Special characters appear and print correctly in MS Reference
+  fonts when printed from Encarta.
+
+- PopChar control panel feature conflicts while running Encarta '95.
+There is a conflict between G?nther Blaschek's PopChar control panel
+(versions 2.3 through 2.6.2) and Encarta '95 that can lead to the
+machine crashing when you select characters in the "More..." feature of
+PopChar while Encarta is running. We recommend you avoid this feature of
+PopChar while using Encarta.
+
+- Microsoft Works may not properly launch or connect to Encarta. There
+are a few possible solutions here. If Works launches Encarta, but
+Encarta goes to the "title screen" rather than the correct article, you
+need to go to "settings" under Encarta's "i" flyout menu, and remove the
+checkmark from "Display Title screen when I start up Encarta". If Works
+does not provide an option "Look up Reference..." in the "edit" menu
+that connects you to Encarta, you need to re-install Encarta, which will
+
+create an Encarta '94 Preferences folder. Works looks for this folder to
+determine whether Encarta is present on your system.
+
+- QuickKeys conflicts while running Encarta '95. The QuickKeys scrolling
+macros that are installed by default by QuickKeys do not work correctly
+within Encarta. In order for pressing {Home}, {End}, {Page Up}, or {Page
+Down} to work correctly within Encarta, these QuickKeys macros will have
+to be disabled or removed.
+
+- Orbit, MindMaze, and animations crash using CacheOut control panel.
+In these mini-applications, using the CacheOut control panel will result
+in a system crash when running or quitting. We recommend you disable or
+remove the CacheOut.
+
+- If you have both Encarta '94 and Encarta '95 installed on your system,
+you may experience a problem when running the animation launcher. If
+while running the animation launcher, you select "Return to Encarta"
+with the Encarta '95 CD in your drive, you will receive the error
+message: "There is a problem starting Encarta: The Files cannot be
+located. Make sure the Encarta CD-ROM disc is in the drive. If you still
+have a problem, run the Installer again from the CD-ROM". This message
+is being displayed by Encarta '94. The resolution for this problem is to
+remove Encarta '94 from your hard drive. If you are also using Microsoft
+Works, however, do not remove the Encarta '94 preferences folder from
+your drive.
+
+- If, when trying to launch one of the InterActivities or MindMaze you
+get an error message that begins "There is not enough memory to start
+this program", you should refer to the Encarta and Memory Readme for
+advice on handling low memory situations.
+
+Additional query words: kbhowto 1995 multi media multimedia multi-media readme.txt mac mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

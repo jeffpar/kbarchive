@@ -1,0 +1,71 @@
+DOCUMENT:Q59923  10-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Addressing Messages to Specified Recipient
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The msmail function parameter "addRecipients" adds the users whose names are
+passed in "users" to the list of recipients for the message "messageRef". The
+syntax of the command is as follows:
+
+      msmail(AddRecipients, messageRef, users) => unknownUsers
+
+There are two valid formats for a user name in "users", as follows:
+
+   Unique Mail name:          Jane User
+   Fully extended name:       Jane User@Accounting Server
+
+In both cases, the components of the name must be given in full. Thus even if
+"Jane User" were the only person whose name began with "Jane," "Jane" would fail
+to match it, and "Jane User@Accounting" would fail to match the above fully
+extended name. To add a recipient from an address book in Microsoft Mail version
+3.00, put a double "@" sign after the name, as follows:
+
+      put msmail(AddRecipients, messRef, "Carpool@@") into Unknown
+
+You can add carbon copy or blind carbon copy recipients by prepending "Cc:" or
+"Bcc:" onto the recipient names. Therefore, adding "Cc:Jane User" adds this user
+as a carbon-copy recipient.
+
+"messageRef" is a reference to a selected message obtained by making a call to
+the msmail function using a parameter that returns a message reference.
+
+Any users who cannot be found will be returned in the list "unknownUsers". This
+list is delimited by returns with one user name on each line.
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q82292  13-JUN-2001  [utilities]
+TITLE   :Example PWB Macro That Works Similar to QuickC DEL Key
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1, 2.0 
+ - Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+The Programmer's WorkBench (PWB), which ships with many Microsoft
+languages, has the ability to use user defined macros. This feature
+allows it to emulate some of the keystrokes of other editors.
+
+The following sample macro and key assignment for PWB to emulate the QuickC
+editor's DEL key. If the DEL key is pressed when the cursor is at the end
+of a line, the following line will be moved to the current line.
+
+Place the following macro after the [PWB] tag in the TOOLS.INI file.
+
+Sample Macro
+------------
+
+   ;Macro to delete like QC
+
+   QCdelete:= savecur -> endline meta begline ->nextline restcur left   \ 
+              ->noleft right ->nextline :>noleft delete => :>nextline   \ 
+              down meta begline emacscdel
+
+   QCdelete:del
+
+Additional query words: kbinf 1.00 1.10 2.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB200DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

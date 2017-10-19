@@ -1,0 +1,62 @@
+DOCUMENT:Q155301  08-NOV-2001  [homegame]
+TITLE   :Screen Goes Blank During Online Game When Host Disconnects
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbmm kbusagekbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbfaq kbhowto
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness, version 1.0 
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The games listed at the top of this article may cause your machine to stop
+responding (hang) when you are playing a multiplayer game if the host
+disconnects.
+
+RESOLUTION
+==========
+
+There is no resolution to this problem.
+
+MORE INFORMATION
+================
+
+In any product using Direct Play 2.0, the host machine maintains the connection.
+All TCP, IPX and TCP/IP information and initializations are maintained by the
+host machine. When the connection is terminated, the session is terminated for
+all members of the session. This is as expected.
+
+Additional query words: 1.00 MTM Monster Truck Madness ONLINE terminate Multiplayer hangs black screen
+
+======================================================================
+Keywords          : kbmm kbusage kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM kbHellBender
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

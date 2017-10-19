@@ -1,0 +1,154 @@
+DOCUMENT:Q129882  11-JAN-2001  [vbwin]
+TITLE   :How to Optimize SQL Queries in Visual Basic 3.0 and 4.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0,4.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic allows you to retrieve data from various databases by using
+Structured Query Language (SQL). These query operations can be made more
+efficient by implementing some of the suggestions in this article.
+
+MORE INFORMATION
+================
+
+Here are some tips for optimizing your SQL queries:
+
+ - Compact your database. To do this, use the CompactDatabase statement as in
+   this code:
+
+         DBEngine.CompactDatabase "C:\VB\BIBLIO.MDB","C:\VB\BIBLIO2.MDB"
+         ' Do other things here ...
+         Kill "C:\VB\BIBLIO.BAK"
+         Name "C:\VB\BIBLIO.MDB" As "C:\VB\BIBLIO.BAK"
+         Name "C:\VB\BIBLIO2.MDB" As "C:\VB\BIBLIO.MDB"
+    
+
+   This speeds up queries because it writes all the data in a table into
+   contiguous pages on the hard disk. Scanning sequential pages is much faster
+   than scanning fragmented pages.
+
+ - Avoid expressions in query output. Exressions in query output can cause query
+   optimization problems if that query is later used as the input to another
+   query. In the following example, the Query1 query is used as input for a
+   second query:
+
+         Dim DB As Database
+         Dim RS As RecordSet
+         Set DB = DBEngine.Workspaces(0).Opendatabase("Biblio.MDB")
+         DB.CreateQueryDef("Query1", "SELECT IIF([Au_ID]=1,"Hello","Goodbye")_
+            AS X FROM Authors")
+         Set RS = DB.OpenRecordSet("SELECT * FROM Query1 WHERE X='Hello'")
+    
+
+   Because the IIF() expression in Query1 cannot be optimized, the query in the
+   OpenRecordSet also cannot be optimized. If an expression gets buried deeply
+   enough in a query tree, you can forget that it is there. As a result, your
+   entire string of queries cannot be optimized.
+
+   Here's a better way to write the second query:
+
+         Set RS = DB.OpenRecordSet("SELECT * FROM Authors WHERE [Au_ID]=1")
+
+ - Place GROUP BY clauses in the same table as aggregates. This is an issue when
+   you are joining two tables. For example, if you join two tables on the
+   Customer Name field, and then run a query that performs a GROUP BY operation
+   on the Customer Name field, make sure that both the GROUP BY field (Customer
+   Name) and the field that is in the aggregate (Sum, Count, and so on) come
+   from the same table.
+
+ - When you create a "totals" query, use the GROUP BY clause on as few fields as
+   possible. The more fields in the GROUP BY clause, the longer the query takes
+   to execute.
+
+ - If possible, place a GROUP BY clause on a table before joining it to another
+   table, rather than joining the two tables and doing the GROUP BY in the same
+   query as the join. For example, instead of this query:
+
+         SELECT Orders.[Company ID], Count(Orders.[Order ID]) AS
+            [CountOfOrder ID] FROM Customers INNER JOIN Orders ON
+            Customers.[Customer ID] = Orders.[Customer ID] GROUP BY
+            Orders.[Company Name];
+
+   Break the query into two separate queries, such as these:
+
+         SELECT Customers.[Company ID] FROM Customers GROUP BY
+            Customers.[Company ID];
+
+         SELECT Orders.[Customer ID], Count(Orders.[Order ID]) AS
+            [CountOfOrder ID] FROM Q1 INNER JOIN Orders ON Q1.[Customer ID] =
+            Orders.[Customer ID] GROUP BY Orders.[Customer ID];
+
+ - When joining tables, try to index the fields on both sides of a join. This
+   can speed query execution by allowing the query optimizer to use more
+   sophisticated internal join strategy.
+
+ - Index fields as much as possible. If a database is not updated frequently,
+   place an index on all fields that are used in a join or in a restriction.
+   With the use of Rushmore query optimization technology in Microsoft Access
+   version 2.0, the Microsoft Jet database engine is able to take advantage of
+   multiple indexes on a single table, which makes indexing multiple fields
+   advantageous.
+
+ - Try to construct your queries so that Rushmore technology can be used to help
+   optimize them. Rushmore is a data-access technology that permits sets of
+   records to be queried very efficiently. With Rushmore, when you use certain
+   types of expressions in query criteria, your query will run much faster.
+
+   Rushmore does not automatically speed up all your queries. You must construct
+   your queries in a certain way for Rushmore to be able to improve them.
+
+ - Use COUNT(*) rather than COUNT([Column Name]) to determine the number of
+   records in a table. This is faster because there are special optimizations in
+   the Microsoft Jet database engine that allow COUNT(*) to be executed much
+   faster than COUNT([Column Name]).
+
+REFERENCES
+==========
+
+For more information about how to optimize queries with Rushmore technology,
+search for "Rushmore technology" then "Optimizing Queries with Rushmore
+Technology" using the Microsoft Visual Basic Help menu. Or see the following
+topics in the Microsoft Access 2.0 Help file:
+
+ - Optimizing Queries with Rushmore Technology.
+
+ - Combining Optimizable Expressions for Rushmore.
+
+Additional query words: 3.00 4.00 speedier quicker optimum vb4win vb4all
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB400Search kbVB300Search kbVB400 kbVB300 kbVB16bitSearch
+Version           : :3.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

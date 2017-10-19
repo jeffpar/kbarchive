@@ -1,0 +1,109 @@
+DOCUMENT:Q106564  24-MAR-2000  [fortran]
+TITLE   :FIX: Debugger Error EE0044 for Arrays If Lower Bound Not 1
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Locals and the Watch windows show error EE0044 instead of the values in an
+array declared with lower bounds other than 1.
+
+RESOLUTION
+==========
+
+If possible, EQUIVALENCE the array with lower bounds other than 1 with a
+same-sized array with lower bounds of 1. Then view the elements in the array
+with the lower bounds of 1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation version 1.0
+for MS-DOS. This problem has been resolved with FORTRAN PowerStation maintenance
+release version 1.0a for MS-DOS.
+
+MORE INFORMATION
+================
+
+FORTRAN PowerStation version 1.0 can be differentiated from the maintenance
+release version 1.0a by invoking the linker. Typing "link32 | more" (without the
+quotation marks) from \F32\BIN directory will show version 2.8 for FORTRAN
+PowerStation version 1.0, and it will show version 1.0f for the maintenance
+release version 1.0a.
+
+Neither the Locals nor the Watch window can display the values in an array
+declared with lower bounds other than 1. For example a(10) and b(1:20) work but
+c(-1:5), d(0:34), and e(4:8) do not work.
+
+Regardless of the actual declared lower bound, if it is not 1, then the debugger
+will attempt to display the array as if the lower bound were 0 (zero). For
+example, with A declared as A(2:4), the debugger will display five elements:
+A(0) to A(4).
+
+To demonstrate the problems:
+
+1. Build the sample code with the project in debug mode.
+
+2. Step to the print statement. At this point all three elements of ARR are
+   100.3.
+
+3. In the Watch window, enter "ARR" (without the quotation marks) and "ARR(2)"
+   (without the quotation marks).
+
+4. Click "+ARR = {...}" to display the full array. At this point the Watch
+   window will show:
+
+         -ARR
+            (ARR)(0) = EE0044 Error: Type error.
+            (ARR)(1) = EE0044 Error: Type error.
+            (ARR)(2) = EE0044 Error: Type error.
+            (ARR)(3) = EE0044 Error: Type error.
+            (ARR)(4) = EE0044 Error: Type error.
+          ARR(2) = EE0044 Error: Type error.
+
+5. Open the Locals window. ARR will be displayed the same way.
+
+Sample Code
+-----------
+
+   C Project options needed: Debug mode
+
+         real arr(2:4)
+         arr = 100.3
+         print*, arr(2)
+         end
+
+Additional query words: 1.00 buglist1.00 fixlist1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

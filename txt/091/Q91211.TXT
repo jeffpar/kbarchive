@@ -1,0 +1,69 @@
+DOCUMENT:Q91211  30-JUL-2001  [lanman]
+TITLE   :How to Change LAN Server Interface to 802.3
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+IBM LAN Server 1.3 and Microsoft LAN Manager must be running the same interface
+in order to communicate. Because LAN Manager uses NetBIOS and IBM LAN Server
+uses IEEE 802.2 as default, an adjustment must be made to the Communications
+Manager configuration file to change the interface to NetBIOS.
+
+MORE INFORMATION
+================
+
+The installation process for IBM OS/2 1.3 Communications Manager creates a
+configuration file that contains selected Communications Manager features. This
+configuration file is called in the following lines in CONFIG.SYS:
+
+   device = c:\cmlib\etherdd.sys cfg=c:\cmlib\lclansrv.cfg
+
+-or-
+
+   device = c:\cmlib\trnetdd.sys cfg=c:\cmlib\lclansrv.cfg
+
+-or-
+
+   device = c:\cmlib\netbdd.sys cfg=c:\cmlib\lclansrv.cfg
+
+To change the interface from 802.2 to NetBIOS, do the following from the GROUP
+MAIN screen:
+
+1. Choose Communications Manager.
+
+2. Select Advanced Options-Configuration.
+
+3. Specify the configuration filename (for example, LCLANSRV.CFG).
+
+4. Go to the LAN feature profiles section of configuration file.
+
+5. CHANGE the interface from IEEE 802.2 to NetBIOS.
+
+This will write the changes back to the *.CFG file. Stop the server and
+workstation and reboot the server for the changes to take effect.
+
+Additional query words: 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

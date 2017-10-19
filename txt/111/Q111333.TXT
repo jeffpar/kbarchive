@@ -1,0 +1,69 @@
+DOCUMENT:Q111333  05-NOV-1999  [win3x]
+TITLE   :Errors on Token Ring Network with Banyan Vines 5.52 and WFWG
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows for Workgroups adds NDISBAN.COM to your AUTOEXEC.BAT file. If you have a
+token ring configuration, this entry causes the following errors to occur when
+you start your system:
+
+ - Vines NDIS interface error 1010- NDISBAN.DOC
+
+   -and-
+
+ - Error 5739 the Protocol Manager has reported an incompatible MAC driver
+
+CAUSE
+=====
+
+Banyan VINES version 5.52 (rev.5) uses NDTOKBAN.COM instead of NDISBAN.COM for
+NDIS token ring support. If you have the wrong file (NDISBAN.COM) in your
+AUTOEXEC.BAT file, the errors occur. The errors also occur if you have both
+files in your AUTOEXEC.BAT file.
+
+RESOLUTION
+==========
+
+To work around this problem, remove NDISBAN.COM from your AUTOEXEC.BAT file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.11. We are researching this problem and will post new information here as it
+becomes available.
+
+Additional query words: 3.11 5.52 (5) 5.52.5 err msg 3rdparty revision
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

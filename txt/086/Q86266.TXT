@@ -1,0 +1,69 @@
+DOCUMENT:Q86266  11-JUN-1999  [win16sdk]
+TITLE   :DOC: Overview Manual Documents PostAppMessage Incorrectly
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbSDKPlatform kbWndw kbWndwMsg
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Section 1.1.4 (page 10) of the "Microsoft Windows Software Development Kit:
+Programmer's Reference, Volume 1: Overview" manual for version 3.1 documents
+that the PostAppMessage function posts a message to an application using its
+module handle. This statement is incorrect; PostAppMessage posts a message to an
+application using its task handle.
+
+MORE INFORMATION
+================
+
+Microsoft Windows makes a very important distinction between a task handle and a
+module handle. Each instance of an application has exactly one task, which
+consists of a stack, a message queue, and an execution state (CPU registers).
+However, all instances of an application share the same module, which consists
+of the application's executable code and resources.
+
+One cannot post a message to a module for two reasons:
+
+ - A module does not have a message queue; therefore, it cannot process a
+   message.
+
+ - Potentially, several application instances (tasks) share a module; therefore,
+   a module handle does not identify a unique task to receive the message.
+
+By posting a message to a task handle, the message is sent to only one instance
+of an application.
+
+Additional query words: 3.10 SDK docerr
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbSDKPlatform kbWndw kbWndwMsg 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

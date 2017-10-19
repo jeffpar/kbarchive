@@ -1,0 +1,95 @@
+DOCUMENT:Q190789  11-DEC-1999  [foxpro]
+TITLE   :PRB: Access Method Fires for Properties that Do Not Exist
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Accessing a property that does not exist in a class still fires the Access
+method.
+
+CAUSE
+=====
+
+This behavior permits the design of classes that support the addition of custom
+properties at run-time using the AddProperty method. For example, the following
+class definition adds a new property to the class at run-time when a
+non-existent property is accessed:
+
+      x = NewObject("myclass")
+
+      ?x.NewProp  && New Property will be added to class.
+
+      ?x.NewProp  && Note new property value.
+
+      x.NewProp="Hello"  && Value assigned since property already exists.
+
+      ?x.newprop
+
+      DEFINE Class myclass as Custom
+         PROCEDURE this_access(tcMember)
+            IF ! PEMStatus(this,tcMember,5)
+               this.AddProperty(tcMember)
+            ENDIF
+            RETURN this
+         ENDPROC
+      ENDDEFINE
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code:
+
+      x = NewObject('myclass')
+      ?x.BogusProperty
+
+      DEFINE class myclass as custom
+         PROCEDURE this_access(tcMember)
+            WAIT WINDOW tcMember
+            RETURN this
+         ENDPROC
+      ENDDEFINE
+
+The Access method fires before you receive the invalid property error.
+
+Additional query words: kbVFp600 kbOOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q169559  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Control Agent Shows Memory Leak with 3Com NIC
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Systems Management Server Remote Control agent (Wuser32.exe) shows a memory
+leak on systems using a 3COM 3C590 or 3C905 network adapter card with bus
+mastering enabled. A large number of page file bytes are consumed and not
+released, which eventually results in virtual memory errors, and may cause the
+system to stop responding. The problem does not occur if bus mastering is
+disabled on the 3C590 adapter. However, there is no option to disable bus
+mastering on the 3C905 adapter.
+
+WORKAROUND
+==========
+
+To work around this problem, do any of the following:
+
+ - Disable bus mastering if possible. For more information on how to do this,
+   see the following article in the Microsoft Knowledge Base:
+
+   Q141299 Disabling Bus Mastering On 3Com 3C590 PCI Network Cards
+
+ - Disable the Systems Management Server Remote Control service on the Windows
+   NT client computer.
+
+ - Use a different network adapter card.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms wuser32 sms interface
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

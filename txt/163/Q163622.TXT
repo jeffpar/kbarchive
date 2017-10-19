@@ -1,0 +1,72 @@
+DOCUMENT:Q163622  28-JUL-2001  [win95x]
+TITLE   :No Sound Dialing with Apex Data Mobile Plus Modem
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun osr2 win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using an Apex Data Mobile Plus cellular V.34 PCMCIA modem on a
+portable computer with Windows 95, you may not hear an audible tone through the
+speaker when the modem is dialing or negotiating a connection.
+
+CAUSE
+=====
+
+This problem can occur with some early versions of the Apex Data Mobile Plus
+cellular V.34 PCMCIA modem using the Rockwell chip set that use the PC speaker
+for sound during dialing and answering. On some portable computers, these modems
+may not correctly send an audible tone through the PC speaker during the dialing
+or negotiation phases.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods:
+
+ - If the portable computer is equipped with a sound card, verify that the sound
+   playback option is enabled. To do so, follow these steps:
+
+   1. In Control Panel, double-click Multimedia.
+
+   2. On the Audio tab, verify that the sound card is selected as the preferred
+      device in the Playback area.
+
+   3. Adjust the Playback Volume control to High.
+
+   4. Click OK.
+
+ - Contact Apex Data for help with determining the card's chip set version and
+   for more information about this problem and possible solutions.
+
+Additional query words: pc-card pccard pc card
+
+======================================================================
+Keywords          : dun osr2 win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

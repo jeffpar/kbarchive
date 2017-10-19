@@ -1,0 +1,71 @@
+DOCUMENT:Q138374  11-FEB-2000  [foxpro]
+TITLE   :PRB: Can't Undo After Dragging from One Window to Another
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After dragging from one window to another, if you click Undo on the Edit menu,
+only the action of the active window is affected.
+
+CAUSE
+=====
+
+The buffers for each window are separate. Therefore, the buffer of a window that
+is not active is not affected by Undo. Undo works if the non-active window is
+selected, then Undo affects the desired buffer.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a text file in Visual FoxPro's text editor.
+
+2. Select some text with the mouse.
+
+3. Drag that text into the Command window.
+
+4. On the Edit menu, click Undo. The text that was dropped into the Command
+   window disappears, but it does not reappear in the window containing the
+   original text.
+
+5. Click the window containing the original text.
+
+6. On the Edit menu, click Undo. The text that was originally selected and
+   dragged to the Command window reappears in the window containing the original
+   text.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

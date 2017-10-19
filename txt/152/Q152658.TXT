@@ -1,0 +1,57 @@
+DOCUMENT:Q152658  28-MAR-1999  [exchange]
+TITLE   :XCLN: Sort Button Behaves Unexpectedly on Forms
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Electronic Forms Designer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can set the List Values parameters on the Initial Value tab for a Listbox
+object in the Microsoft Exchange Electronic Forms Designer. However, the Sort
+button may not work as expected if duplicate List Values are created with only a
+difference in the case of the letters. If the Sort button is pressed more than
+once, the duplicate values might be sorted in a different order each time.
+
+MORE INFORMATION
+================
+
+For example, "Computer", "COMPUTER", "CoMpUtEr", "Apple", and "Dog" are added as
+List Values and you press the Sort button numerous times. All of the computer
+entries will appear between "Apple" and "Dog" but they will be sorted randomly.
+
+This issue should not impact very many users because Listboxes are generally used
+to list an array of different values. Where duplicate values are necessary, you
+have complete control over the listing of the values by using the Move buttons
+in the Initial Value dialog.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbZNotKeyword kbExchangeEForms kbExchangeEForms100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

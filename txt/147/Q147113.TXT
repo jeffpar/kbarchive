@@ -1,0 +1,66 @@
+DOCUMENT:Q147113  15-OCT-1999  [exchange]
+TITLE   :XADM: Spaces Not Allowed in Some X.400 Entry Fields
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating a custom X.400 recipient, the following fields on the advanced
+property page of the X.400 addressing page allow only for numerals 0 - 9. No
+alphanumeric characters or spaces are allowed. The fields that are thus limited
+are as follows:
+
+   User Agent numeric ID (n-id)
+   X.121 (x.121)
+   Terminal Type (t-ty)
+
+WORKAROUND
+==========
+
+The workaround is to remove the space from the desired user on the above fields
+so that they match the Exchange format.
+
+MORE INFORMATION
+================
+
+The X.400 specification allows for spaces in the above types, however, the
+Microsoft Exchange addressing scheme (Address.dll) does not support spaces in
+those three fields.
+
+This can become a problem when creating custom recipients to X.400 system
+recipients who follow this addressing scheme; it could result in a non- delivery
+report (NDR) to such a user.
+
+Additional query words: x400 bluebook redbook x121 1988 1984
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

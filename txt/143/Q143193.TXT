@@ -1,0 +1,59 @@
+DOCUMENT:Q143193  20-FEB-2002  [iis]
+TITLE   :Internet Explorer Name Resolution
+PRODUCT :Internet Information Server
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Most World Wide Web (WWW) Browsers running on non-Microsoft network operation
+systems rely on a Domain Name Server (DNS) and a Hosts file to resolve Host
+names to IP addresses, even if the Web client and the Web server are on the same
+subnet.
+
+However, Microsoft Internet Explorer, does not only use the DNS and HOSTS file,
+but uses Windows Internet Name Service (WINS), the LMHOSTS file, and NetBIOS
+broadcasts for name resolution when it is running on Microsoft network operating
+systems such as Windows NT, Windows 95, Windows for Workgroups with Microsoft
+TCP/IP stacks installed. However, a NetBIOS broadcast resolves the name only if
+the WWW server is running on Windows NT and both WWW Server and WWW client is on
+the same subnet.
+
+For additional information on name resolution, please see the following articles
+in the Microsoft Knowledge Base:
+
+   Q108295 : TCP/IP Name Resolution
+
+   Q138086 : Windows NT 3.51: Reverse Name Resolution for WINS Clients
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

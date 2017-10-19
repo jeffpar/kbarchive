@@ -1,0 +1,75 @@
+DOCUMENT:Q68068  03-NOV-1999  [win16ddk]
+TITLE   :Development Environment Required to Use Windows DDK
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The tools and documentation in the Microsoft Windows Software Development Kit
+(SDK) version 3.0 or 3.1 are required to develop a device driver or a virtual
+device (including a 386 enhanced-mode virtual device). The documentation for the
+Microsoft Windows DDK includes several references to the SDK documentation. The
+SDK documentation contains detailed information on the new features supported by
+Windows.
+
+For technical assistance while developing a driver or virtual device, contact
+Microsoft Product Support Services regarding its Support Premier or Support
+Professional services.
+
+MORE INFORMATION
+================
+
+The following languages, tools, and software are necessary to produce a device
+driver or a virtual device for Microsoft Windows version 3.0 or 3.1:
+
+1. Microsoft Macro Assembler (MASM) version 5.1 or higher (for all drivers).
+
+2. Microsoft C Compiler version 6.0 or higher (generally used for printer
+   drivers).
+
+3. Version 3.0 of the DDK supports the Microsoft C Compiler version 5.1 for
+   those developers who have not upgraded to a later version of the compiler or
+   who desire to confirm successful DDK installation by building a driver and
+   performing a binary comparison with the corresponding driver included in the
+   DDK. Version 5.1 of the Microsoft C Compiler is no longer commercially
+   available.
+
+4. The tools and files included with the Microsoft Windows DDK and the Microsoft
+   Software SDK.
+
+5. The Windows retail product and various applications (for debugging and
+   testing). Version 3.1 of the Windows DDK includes display, printer and
+   network compatibility tests to assist in debugging a driver.
+
+Additional query words: 3.00 3.10 DDKMISC
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

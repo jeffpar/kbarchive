@@ -1,0 +1,260 @@
+DOCUMENT:Q216073  21-DEC-2001  [visualc]
+TITLE   :SAMPLE: 4thScrpt.exe Demos Active Debug in ATL ActiveX Script
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbSample kbATL kbAXScript kbVC500 kbVC600 kbGrpDSO kbActiveXScript
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The 4thScrpt.exe sample demonstrates how to implement Active Debugging in an
+ActiveX Script Engine built with Active Template Library (ATL). The sample is
+designed to supplement the Active Debugging documentation available on the
+Microsoft Developer Network (MSDN).
+
+This sample demonstrates how to add Active Debugging support to an ActiveX Script
+Engine. Active Debugging builds on Active Scripting and enables debugger host
+applications, such as Microsoft Script Debugger, to provide comprehensive,
+language-independent testing, and error correcting capabilities. Functionality,
+such as breakpoints, expression evaluation, and data monitoring, are all
+possible through the Active Debugging interfaces. Active Debugging also makes it
+possible to debug multiple scripts in different languages concurrently, making
+cross-language issues easier to locate and correct.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   4thScrpt.exe
+
+Release Date: Jan. 20, 2000
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
++-----------------------------------+
+| 4thScrpt.exe             | 185 KB | 
++-----------------------------------+
+| DebugExpression.cpp      | 8 KB   | 
++-----------------------------------+
+| DebugExpression.h        | 3 KB   | 
++-----------------------------------+
+| DebugSourceCodeBlock.cpp | 15 KB  | 
++-----------------------------------+
+| DebugSourceCodeBlock.h   | 6 KB   | 
++-----------------------------------+
+| DebugStackFrame.cpp      | 5 KB   | 
++-----------------------------------+
+| DebugStackFrame.h        | 2 KB   | 
++-----------------------------------+
+| DebugToken.cpp           | 4 KB   | 
++-----------------------------------+
+| DebugToken.h             | 3 KB   | 
++-----------------------------------+
+| DForthScriptEngine.cpp   | 26 KB  | 
++-----------------------------------+
+| DForthScriptEngine.h     | 6 KB   | 
++-----------------------------------+
+| DOleScript.cpp           | 4 KB   | 
++-----------------------------------+
+| DOleScript.h             | 2 KB   | 
++-----------------------------------+
+| DScriptRuntime.cpp       | 6 KB   | 
++-----------------------------------+
+| DScriptRuntime.h         | 3 KB   | 
++-----------------------------------+
+| events.cpp               | 9 KB   | 
++-----------------------------------+
+| Events.h                 | 5 KB   | 
++-----------------------------------+
+| ForthScriptEngine.cpp    | 26 KB  | 
++-----------------------------------+
+| ForthScriptEngine.h      | 4 KB   | 
++-----------------------------------+
+| OleScript.cpp            | 45 KB  | 
++-----------------------------------+
+| OleScript.h              | 8 KB   | 
++-----------------------------------+
+| OleScript.rgs            | 1 KB   | 
++-----------------------------------+
+| ScriptDispatch.cpp       | 8 KB   | 
++-----------------------------------+
+| ScriptRuntime.cpp        | 9 KB   | 
++-----------------------------------+
+| ScriptRuntime.h          | 7 KB   | 
++-----------------------------------+
+| dlldata.c                | 1 KB   | 
++-----------------------------------+
+| Forth.cpp                | 5 KB   | 
++-----------------------------------+
+| Forth.def                | 1 KB   | 
++-----------------------------------+
+| Readme.txt               | 3 KB   | 
++-----------------------------------+
+| Forth.dsp                | 19 KB  | 
++-----------------------------------+
+| Forth.dsw                | 1 KB   | 
++-----------------------------------+
+| Forth.idl                | 9 KB   | 
++-----------------------------------+
+| Forth.opt                | 54 KB  | 
++-----------------------------------+
+| Forth.plg                | 6 KB   | 
++-----------------------------------+
+| Forth.rc                 | 4 KB   | 
++-----------------------------------+
+| ForthError.cpp           | 2 KB   | 
++-----------------------------------+
+| ForthError.h             | 5 KB   | 
++-----------------------------------+
+| ForthError.rgs           | 1 KB   | 
++-----------------------------------+
+| ForthScript.txt          | 4 KB   | 
++-----------------------------------+
+| Forth.mak                | 38 KB  | 
++-----------------------------------+
+| Forth_p.c                | 86 KB  | 
++-----------------------------------+
+| guids.cpp                | 1 KB   | 
++-----------------------------------+
+| Interpreter.cpp          | 28 KB  | 
++-----------------------------------+
+| Interpreter.h            | 4 KB   | 
++-----------------------------------+
+| Interpreter.rgs          | 1 KB   | 
++-----------------------------------+
+| resource.h               | 1 KB   | 
++-----------------------------------+
+| SourceCodeBlock.h        | 3 KB   | 
++-----------------------------------+
+| StackFrame.cpp           | 2 KB   | 
++-----------------------------------+
+| StackFrame.h             | 3 KB   | 
++-----------------------------------+
+| StackFrame.rgs           | 1 KB   | 
++-----------------------------------+
+| StdAfx.cpp               | 1 KB   | 
++-----------------------------------+
+| StdAfx.h                 | 4 KB   | 
++-----------------------------------+
+| excel.4ths               | 1 KB   | 
++-----------------------------------+
+| forth.asp                | 1 KB   | 
++-----------------------------------+
+| forth.html               | 2 KB   | 
++-----------------------------------+
+| testForth.py             | 3 KB   | 
++-----------------------------------+
+| Token.cpp                | 2 KB   | 
++-----------------------------------+
+| Token.h                  | 2 KB   | 
++-----------------------------------+
+| Token.rgs                | 1 KB   | 
++-----------------------------------+
+| ad1.lib                  | 19 KB  | 
++-----------------------------------+
+| activdbg.h               | 323 KB | 
++-----------------------------------+
+| activscp.h               | 67 KB  | 
++-----------------------------------+
+| ad1ex.h                  | 39 KB  | 
++-----------------------------------+
+| dbgprop.h                | 50 KB  | 
++-----------------------------------+
+| MULTINFO.H               | 8 KB   | 
++-----------------------------------+
+| DISPEX.H                 | 31 KB  | 
++-----------------------------------+
+
+To Compile the 4thScrpt.exe File
+--------------------------------
+
+1. In Visual C++, add a new include directory by clicking Options in the Tools
+   menu. Select the Directories tab, and show directories for Include files.
+   Click in the Directories window, and then add a path to the Scripting folder
+   of this sample. Drag this path to the top of the list so that it is checked
+   first.
+
+2. On the Directories tab, show directories for Library files. Click in the
+   Directories window and add a path to the Scripting folder of this sample.
+   Drag this path to the top of the list so that it is checked first. This
+   folder contains headers and libraries needed to compile Active Scripting and
+   Active Debugging projects.
+
+3. On the Project menu, click Settings and then click the Link tab. In the
+   Object/Library modules, make sure that the Ad1.lib file is referenced. This
+   file contains GUIDs necessary for Active Debugging.
+
+4. Build the project. You need to modify the Objsafe.h file in the Visual C++
+   Include directory if you get the following error messages:
+
+   error C2065: 'INTERFACE_USES_DISPEX' : undeclared identifier
+
+   error C2065: 'INTERFACE_USES_SECURITY_MANAGER' : undeclared identifier
+
+   Find the definitions for the Option bits for IObjectSafety, and add
+   definitions for INTERFACE_USES_DISPEX and INTERFACE_USES_SECURITY_MANAGER, as
+   shown below. These bits are required by Internet Explorer.
+
+      // Option bit definitions for IObjectSafety:
+      #define	INTERFACESAFE_FOR_UNTRUSTED_CALLER	0x00000001
+         // Caller of interface may be untrusted
+      #define	INTERFACESAFE_FOR_UNTRUSTED_DATA	0x00000002
+         // Data may be untrusted
+      #define	INTERFACE_USES_DISPEX	            0x00000004
+         // Object knows to use IDispatchEx
+      #define	INTERFACE_USES_SECURITY_MANAGER	    0x00000008
+         // Object knows to use IInternetHostSecurityManager
+
+Once the project has compiled, the engine registers itself. Please see the
+ForthScript.txt file for more information about this sample.
+
+REFERENCES
+==========
+
+For additional information about Active Debugging, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q216271 SAMPLE: SamScrpt.exe Demonstrates Active Debugging in C++ ActiveX
+   Script Engine
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbSample kbATL kbAXScript kbVC500 kbVC600 kbGrpDSO kbActiveXScript 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,76 @@
+DOCUMENT:Q105040  24-OCT-1999  [win3x]
+TITLE   :WFWG Err: ODINSUP Requires BUFFERED Switch in NET.CFG File
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Microsoft Windows for Workgroups version 3.1 with Novell
+NetWare ODI connectivity, you may receive the following message:
+
+   ODINSUP requires the switch BUFFERED in NET.CFG file to function correctly.
+   Press any key to continue.
+
+You may receive this message even if you include the BUFFERED line in your
+NET.CFG file.
+
+CAUSE
+=====
+
+If the BUFFERED line in the NET.CFG file is not indented under the PROTOCOL
+ODINSUP section, it is not processed correctly, resulting in the above error
+message.
+
+RESOLUTION
+==========
+
+The PROTOCOL ODINSUP section of the NET.CFG file should read as follows:
+
+      PROTOCOL ODINSUP
+             BIND <NE2000> (where <NE2000> is the network adapter ODI driver)
+             BUFFERED
+
+MORE INFORMATION
+================
+
+Novell NetWare version 4.0 requires the Novell ODI drivers to function
+properly.
+
+For more information concerning ODI support under Microsoft Windows for
+Workgroups version 3.1, query on the following words in the Microsoft Knowledge
+Base:
+
+   buffered and faxme
+
+Additional query words: NETWARE 4.0
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q151727  28-JUL-2001  [mastering]
+TITLE   :BUG: Mastering Exchange: Add/Remove Does not Remove all Files
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0; WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbmm kbsetup kbnokeyword kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Exchange Development ISBN 1-57231-337-4, version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Add/Remove Programs tool in Windows 95 to remove a Complete
+installation of Mastering Microsoft Exchange Development, not everything
+installed by setup is removed. Add/Remove Programs does not remove the Med
+directory or the directories below it including the Labs directory, the Lab
+subdirectories, and the Lists directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed above. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+If you did a Complete installation, you can manually delete the Med directory
+and the directories below it by using the following steps:
+
+1. Click Start, point to Find, and click Files or Folders.
+
+2. Type the name of the directory you want to remove. For example, type "Med"
+   (without the quotation marks) in the Named field.
+
+3. Click Find Now.
+
+4. Right-click on the "Med" folder, and then click Delete.
+
+NOTE: If you worked on any of the labs or annotated any topics, the information
+is saved in the Lists and Labs directories. If you remove these directories, the
+information will be lost.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm kbsetup kbnokeyword kbBug kbISS 
+Technology        : kbMSPressSearch kbOSWin95 kbOSWinSearch kbZNotKeyword2
+Version           : :1.0; WINDOWS:95
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

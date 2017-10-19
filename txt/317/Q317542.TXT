@@ -1,0 +1,98 @@
+DOCUMENT:Q317542  17-APR-2002  [ssafe]
+TITLE   :BUG: Cannot Unbind a Deleted and Destroyed VSS Project
+PRODUCT :Microsoft SourceSafe
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe 6.0c, used with:
+    - Microsoft Visual Studio.NET (2002), Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an integrated source control project is deleted and destroyed from a Visual
+SourceSafe database, if you open the solution in the Visual Studio .NET
+integrated development environment (IDE), you cannot unbind from the Visual
+SourceSafe database.
+
+RESOLUTION
+==========
+
+To unbind the project, follow these steps:
+
+1. In the Change Source Control dialog box, click Work Disconnected.
+
+2. On the File menu in Visual SourceSafe Explorer, point to Source Control, and
+   then click Change Source Control.
+
+3. Click Unbind.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Create a new project in Microsoft Visual Basic .NET.
+
+2. On the File menu, point to Source Control, and then click "Add to Source
+   Control" to add the solution to source control.
+
+3. Close the solution.
+
+4. In Visual SourceSafe Explorer, delete and destroy the project.
+
+5. Open the solution again in the Visual Studio .NET IDE.
+
+6. When you are prompted to search for the project, click No.
+
+7. Click Unbind.
+
+8. Open the solution again. Notice that the solution still appears to be
+   connected to the Visual SourceSafe database.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q305106 HOWTO: SSAFE - Reconnect a Project to Source Control in Visual Studio
+   .NET
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600C
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

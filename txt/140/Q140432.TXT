@@ -1,0 +1,184 @@
+DOCUMENT:Q140432  17-DEC-2000  [win95x]
+TITLE   :Problems Sending Fax from MAPI-Aware Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Send command in a MAPI-aware program to send a fax with
+Microsoft Exchange, you may receive one of the following error messages:
+
+ - Word couldn't send mail because of MAPI failure: (0x00000002/0x00000000).
+
+ - The item could not be sent. A default set of folders could not be found. Your
+   active profile must include such a set, such as a personal folder file.
+   Microsoft Exchange Client - 9995 - [8100270B]
+
+When you try to send a fax by printing to the Microsoft Fax service from a
+MAPI-aware program, you may receive the following error message:
+
+   General Error!
+
+CAUSE
+=====
+
+These errors occur when the Microsoft Exchange profile you are using to send
+faxes is not configured properly. To send faxes using Microsoft Fax, your
+profile must include the following information services:
+
+ - Microsoft Fax
+
+ - Personal Address Book
+
+ - Personal Folders
+
+A "General Error!" message can occur when the Subject field in any cover page,
+including custom cover pages, includes text.
+
+RESOLUTION
+==========
+
+To correct this problem, use the appropriate method:
+
+Method 1
+--------
+
+Make sure the correct information services are included in your Microsoft
+Exchange profile. To do so, follow these steps:
+
+1. If Microsoft Exchange is running, click Exit And Log Off on the File menu.
+
+2. In Control Panel, double-click the Mail And Fax icon.
+
+3. Click Show Profiles, click the profile you want to use to send faxes, and
+   then click Properties.
+
+4. Click the Services tab.
+
+5. If the Personal Address Book service is not listed in the "The following
+   information services are set up in this profile" box, click Add, click
+   Personal Address Book, click OK, and then click OK.
+
+6. If the Personal Folders service or a Personal Information Store is not listed
+   in the "The following information services are set up in this profile" box,
+   click Add, click Personal Folders, click OK, type a name for the personal
+   folders, click Open, and then click OK.
+
+7. Click OK, and then click Close.
+
+Method 2
+--------
+
+To prevent "General Error!" messages, leave the Subject line in the fax blank.
+
+Method 3
+--------
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Add\Remove Programs.
+
+2. Click the Windows Setup tab and then click the Microsoft Exchange (or Windows
+   Messaging) check box to clear it. If you are prompted to remove Microsoft Fax
+   also, do so.
+
+3. Click Accessories, and then click Details.
+
+4. Click the Wordpad check box to clear it, click OK and then click OK again.
+
+5. Restart Windows 95, press the F8 key when you see the "Starting Windows 95"
+   message, and then choose Safe Mode Command Prompt Only from the Startup menu.
+
+6. At the command prompt, type the following commands. Press ENTER after each
+   line.
+
+   " cd\windows
+   deltree forms " (without the quotation marks)
+
+   When you are prompted to delete the folder, press Y.
+
+7. Restart Windows 95 normally.
+
+8. Click Start, point to Settings, click Control Panel, and then double-click
+   Add\Remove Programs.
+
+9. Click the Windows Setup tab, click the Microsoft Exchange (or Windows
+   Messaging) check box to select it, and then click the Microsoft Fax check box
+   to select it.
+
+10. Click Accessories, and then click Details.
+
+11. Click the Wordpad check box to select it, click OK and then click OK again.
+   Restart your computer when you are prompted.
+
+12. Click Start, point to Programs, and then click Windows Explorer.
+
+13. Verify that your computer is configured to view hidden files. For
+   information about how to view hidden files, please see the following article
+   in the Microsoft Knowledge Base:
+
+   Q141276 How to View System and Hidden Files in Windows 95
+
+14. Verify the following files exist in the c:\Programs Files\Exchange folder:
+
+   Mlset32.exe
+   Mlshext.dll
+
+MORE INFORMATION
+================
+
+The Personal Folders information service contains your mail folders (in a .pst
+file). When you send a fax, the Personal Folders service is required for the
+following reasons:
+
+ - The .pst file is used as a temporary store while you are composing a fax.
+   When you send the fax, it is stored in the Outbox mail folder until it is
+   sent, and it is stored in the Sent Items folder after it is sent.
+
+ - If there is a problem sending the fax, a mail message from the System
+   Administrator describing the problem is delivered to the Inbox folder.
+
+Notes
+-----
+
+ - Note that similar problems can also occur after you install Windows
+   Messaging. To resolve this issue, uninstall Windows Messaging and use the
+   Microsoft Exchange client instead. This should allow you to send faxes with
+   text in the Subject line.
+
+ - A similar problem can also occur if the computer name contains the "@"
+   character (and possibly other special characters). To check the computer
+   name, double-click Network in Control Panel, and then click the
+   Identification tab.
+
+Additional query words: at work fax winword
+
+======================================================================
+Keywords          : kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

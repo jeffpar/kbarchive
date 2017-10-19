@@ -1,0 +1,54 @@
+DOCUMENT:Q94852  12-JUN-1999  [homegame]
+TITLE   :Pipe Dream Displays Incorrectly on EGA Systems
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbbuglist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Entertainment Pack, volume 2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you reach level 5 in Pipe Dream, the playing field has blocks or areas that
+are raised above the playing field to show that you cannot use them. On an EGA
+system these raised areas of the blocks are not visible. This can make it very
+difficult to play levels beyond level 5.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Pipe Dream in the Windows
+Entertainment Pack Volume 2.
+
+Additional query words: 1.00 pipedream
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbWinEntPkSearch kbWinEntPk200
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,120 @@
+DOCUMENT:Q157600  19-FEB-2002  [homegame]
+TITLE   :Golf: Installation Troubleshooting
+PRODUCT :Microsoft Home Games
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses Golf version 3.0 installation troubleshooting steps. This
+article is organized into the following sections:
+
+ - Troubleshooting Microsoft Golf 3.0 Setup
+ - Installation and CD-ROM Drives
+ - Installing Microsoft Golf 3.0 on Windows NT
+ - Starting Microsoft Golf 3.0 If You Are Using the PC Tools Desktop
+
+TROUBLESHOOTING MICROSOFT GOLF 3.0 SETUP
+----------------------------------------
+
+Below are the four most common issues encountered while installing Golf. Follow
+the instructions for each issue you encounter, and then run Setup again.
+
+An Intel 486 or Higher Processor:
+
+You must either upgrade to an Intel 486 or higher processor, or switch to a
+computer with an Intel 486 or higher processor.
+
+Windows 95/98 or Windows NT 3.51 or Later:
+
+You must install Microsoft Windows 95/98 or Windows NT 3.51 or later. To purchase
+a Windows upgrade, see your local retailer.
+
+A 256-Color Video Driver (Minimum 640 x 480 Display Resolution):
+
+Microsoft Golf high-resolution golf courses require a 256-color video display. In
+most cases, you need only install a 256-color video driver to correct the
+problem.
+
+To change the palette to 256 colors in Windows 95/98:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click the Display icon.
+
+3. Click the Settings tab.
+
+4. In the Color Palette or Colors box, click 256 color.
+
+5. Click OK.
+
+6. Reinstall Golf.
+
+NOTE: If you don't have the necessary 256-color driver, or if you aren't sure
+that your video card supports 256 colors, contact your video-card manufacturer.
+
+To obtain Super VGA drivers:
+
+Install the Super VGA (256 colors) drivers. These drivers are included with
+version 3.11 of Microsoft Windows and Microsoft Windows for Workgroups, and they
+work correctly on many video cards.
+
+INSTALLATION AND CD-ROM DRIVES
+------------------------------
+
+If you are using a 2x CD-ROM drive, you should do a Typical or Custom
+installation for better performance.
+
+If you are using 16-bit CD-ROM drivers for your CD-ROM, Autorun may not work
+properly. To manually run Setup, double-click on the Setup icon in the Golf 3.0
+CD in your CD-ROM drive to start installation.
+
+INSTALLING MICROSOFT GOLF 3.0 ON WINDOWS NT
+-------------------------------------------
+
+ - You must have Windows NT 3.51 or higher to install Golf. If you are using
+   Windows NT 3.5, contact your retailer for an upgrade.
+ - If you are running Windows NT 4.0, a desktop shortcut will not be created
+   during setup.
+
+STARTING MICROSOFT GOLF 3.0 IF YOU ARE USING THE PC TOOLS DESKTOP
+-----------------------------------------------------------------
+
+If you are using PC Tools Desktop as your Windows shell, you will need to restart
+Windows manually after installing Golf. Just exit Windows and type the following
+at the prompt:
+
+   win
+
+Additional query words: 1.00 3.00 golf set up install
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300
+Version           : :3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

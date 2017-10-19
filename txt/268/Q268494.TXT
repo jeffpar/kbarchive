@@ -1,0 +1,98 @@
+DOCUMENT:Q268494  18-JUL-2001  [exchange]
+TITLE   :XFOR: Messages Stuck in Outbound Waiting Delivery Queue in IMS
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running two Exchange Server 5.0 Service Pack 1 (SP1) computers on
+the same subnet in the same Exchange site, you may experience a problem if you
+have the Internet Mail Service installed on both servers.
+
+If both servers are connected to an Internet service provider over a T1 line, and
+Server A is designated for inbound and outbound messages while Server B is set
+for outbound messages only, Internet messages may stop in the outbound waiting
+delivery queue in the Internet Mail Service (IMS) on Server B.
+
+CAUSE
+=====
+
+This behavior can occur when the routing table for the site has not been
+updated.
+
+RESOLUTION
+==========
+
+To resolve this behavior, update the routing table in the MTA on the server set
+for outbound messages (Server B):
+
+1. In Control Panel, double-click Services, and then stop the Internet Mail
+   Service.
+
+2. Start the Exchange Administrator program, expand the Configuration container,
+   expand the Servers container, and then click Server B.
+
+3. Open the Message Transfer Agent properties page, click the General tab, and
+   then click Recalculate Routing.
+
+4. Back up the Imcdata\Out directory, which is located in
+   <DRIVE>:\Exchsrvr\Imcdata. Then delete all files in the Imcdata\Out
+   directory.
+
+5. In <DRIVE>:Exchsrvr\Imcdata\, delete the Queue.dat file.
+
+6. In Control Panel, double-click Services, and then start the Internet Mail
+   Service.
+
+7. Send a test message to make sure that the message is delivered.
+
+8. To recover messages, repeat Steps 3 through 5.
+
+MORE INFORMATION
+================
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q197792 XFOR: General Troubleshooting for Stuck Messages in Internet Mail
+   Service
+
+   Q234065 XGEN: Troubleshooting the MTA Queue to Internet Mail Service
+
+   Q165505 XFOR: How to View/Delete Messages in MTS-IN and MTS-OUT Queues
+
+   Q247133 XCON: List of KB Articles on MTA Concepts and Troubleshooting
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange500SP1
+Version           : :5.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

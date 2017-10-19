@@ -1,0 +1,403 @@
+DOCUMENT:Q109502  22-SEP-1999  [win3x]
+TITLE   :README.WRI from Windows for Workgroups 3.11 (Part 1 of 4)
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.11
+
+WINDOWS
+
+kbref kbdisplay kbsound
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the Microsoft Windows for Workgroups
+version 3.11 README.WRI file.
+
+Note that this article reflects the text of a static document. Therefore, some of
+the information in this article may be outdated. For example, as of May 20,
+1996, Microsoft no longer maintains support forums on CompuServe.
+
+MORE INFORMATION
+================
+
+More Information About Microsoft Windows for Workgroups Version 3.11
+____________________________________________________________________
+
+This document contains important information not available in the
+printed documentation or in online Help.  For additional information
+about Microsoft Windows for Workgroups, see "Other Online Documents"
+at the end of this document.
+
+Note: If you plan to use a terminate-and-stay-resident (TSR) program with
+Windows for Workgroups, please read the SETUP.TXT online document first. It
+contains important information about running TSR programs with Windows for
+Workgroups and the Setup program.
+
+Contents
+
+This document contains information about the following topics:
+
+1.0  Running Windows for Workgroups with an Operating System Other
+     Than the Microsoft MS-DOS Operating System
+
+2.0  Preventing Stack Overflow
+
+3.0  Using 32-Bit Disk Access and File Access
+3.1  Using 32-Bit Disk Access with Portable Computers
+3.2  Using 32-Bit File Access with DoubleSpace
+3.3  Networks You Cannot Use 32-Bit File Access With
+
+4.0  Using Memory Managers and Vshare
+4.1  Using 386MAX
+4.2  Turning On Sharing Popup with Vshare
+4.3  If EMM386 Detects an Error in an Application
+
+5.0  Using Advanced Power Management (APM)
+
+6.0  Using SMARTDrive Version 5.0
+6.1  Accessing Floppy Disk Drives on Older COMPAQ
+     DESKPROS
+6.2  Using SMARTDrive with Double Buffering
+6.3  Using SMARTDrive with Norton Utilities Version 6.0 Disk Monitor
+6.4  Using SMARTDrive with SuperStor Disk-Compression Utility
+6.5  Using SMARTDrive with Copy-Protected Games and Applications
+
+7.0  Using Multimedia Extensions Version 1.0 with Windows for Workgroups
+7.1  Upgrading to Windows for Workgroups
+7.2  Configuring MIDI Setups
+7.3  Configuring Your Display
+7.4  Sample MIDI File
+7.5  Using HyperGuide
+7.6  Using Music Box
+7.7  Using Alarm Clock
+
+8.0  Running Specific MS-DOS-based Applications
+8.1  Creative Labs JukeBox
+8.2  Games or Timing-Sensitive Applications
+8.3  Third-Party Expanded-Memory Emulators with MS-DOS Version 5.0 or 6.0
+8.4  PC Tools Applications
+8.5  WordPerfect Version 5.1
+8.6  3270-Emulation Applications
+8.7  C/C++ Version 7.0
+
+9.0  Running Communications Applications
+9.1  Guidelines
+9.2  Using Intel CAS Modems with 32-Bit File Access
+
+10.0  Using Specific Display Adapters with Windows for Workgroups
+10.1  Installing Display Adapters by Following the Manufacturer's
+      Instructions
+10.2  Upgrading Display Drivers When Using Soft-Font Packages
+10.3  Using Self-Configuring Display Adapters
+10.4  LCD
+10.5  Super VGA
+10.6  Third-Party Display Drivers: Running MS-DOS-based Applications
+10.7  VGA-Compatible
+10.8  Video Seven: Using 256-Color Support
+10.9  WinSpeed
+10.10 IBM XGA: Configuring Color and Resolution
+10.11 IBM XGA: Using EMM386
+
+11.0  Using Specific Mice with Windows for Workgroups
+11.1  Microsoft Mouse
+11.2  Genius Mouse
+11.3  Logitech Mouse
+11.4  Logitech Cordless Mouse
+11.5  Logitech or Microsoft BallPoint Mouse on a Toshiba T2200SX
+11.6  Mouse Systems Mouse on PS/2 Ports
+
+12.0  Using Additional Hardware Configurations with Windows for Workgroups
+12.1  CD-ROM Drives
+12.2  EISA Systems with More Than 16 Megabytes of Extended Memory
+12.3  Epson Screen Savers
+12.4  NCR 925 with EMM386.EXE
+12.5  Non-US Keyboard Layouts: Using Application Shortcut Keys
+12.6  Plus Hardcard
+12.7  SCSI Hard Disk Using DMA
+12.8  Columbia Data Products SCSI Hard-Disk Controller
+12.9  Sound Blaster Audio Card
+12.10  Tandy 2500 XL with MS-DOS in ROM
+12.11  Wyse Computers
+
+13.0  Using Microsoft At Work PC Fax
+13.1  Sending Faxes From Applications
+13.2  Cancelling a Fax
+13.3  Different Fax Appearance
+13.4  Use Correct Image Quality When Sending Faxes
+13.5  Working Offline When Fax Transport Can't Be Started
+13.6  CPU-Intensive Operations Can Cause Transmission Errors
+13.7  Binary File Transfers
+13.8  Fax Modem Information
+
+14.0  Security
+
+15.0  Using the Real-Mode Redirector
+
+16.0  Quitting Windows for Workgroups When Microsoft Mail is Still Running
+
+17.0  Other Online Documents
+
+18.0  Ordering the Resource Kits
+
+19.0  Getting Drivers from the Windows Driver Library
+
+Microsoft and MS-DOS are registered trademarks and Windows is a
+trademark of Microsoft Corporation.
+
+SuperStor is a trademark of AddStor, Inc.
+Bitstream is a registered trademark and FaceLift is a trademark of
+Bitstream, Inc.
+PC Tools is a trademark of Central Point Software, Inc.
+CompuServe is a registered trademark of CompuServe, Inc.
+COMPAQ DESKPRO 386/20 is a registered trademark of Compaq Computer
+Corporation.
+Sound Blaster is a trademark of Creative Technology Ltd.
+Hewlett-Packard is a registered trademark of Hewlett-Packard Company.
+Intel is a registered trademark of Intel Corporation.
+PS/2 and XGA are registered trademarks of International Business
+Machines Corporation.
+Toshiba is a registered trademark of Kabushiki Kaisha Toshiba.
+Logitech  is a trademark of Logitech, Inc.
+Pocket Modem is a registered trademark of Migent, Inc.
+NEC is a registered trademark of NEC Corporation.
+Norton Utilities is a registered trademark of Peter Norton Computing
+Hardcard is a trademark of Plus Development Corporation.
+386MAX is a registered trademark of Qualitas, Inc.
+Qemm is a trademark of Quarterdeck Office Systems.
+SCSI is a registered trademark of Security Control Systems, Inc.
+Epson is a registered trademark of Seiko Epson Corporation, Inc.
+Tandy is a registered trademark of Tandy Corporation.
+UNIX is a registered trademark of UNIX Systems Laboratories.
+WordPerfect is a registered trademark of WordPerfect Corporation.
+Wyse is a registered trademark of Wyse Technology.
+Zenith is a registered trademark of Zenith Electronics Corporation.
+
+1.0  Running Windows for Workgroups with an Operating System Other
+Than the Microsoft MS-DOS Operating System
+
+Microsoft Windows for Workgroups and MS-DOS work together as an
+integrated system. They were designed together and extensively tested
+together on a wide variety of computers and hardware configurations.
+Running Windows for Workgroups with an operating system other than
+MS-DOS could cause unexpected results or poor performance, and is not
+supported by Microsoft.
+
+2.0  Preventing Stack Overflow
+
+Stacks are temporary data structures that MS-DOS and applications use
+for processing hardware events. If, while setting up Windows for
+Workgroups, the Setup program detects hardware or software that
+requires a certain stack size, Setup places the following command
+line in your CONFIG.SYS file:
+
+stacks=9,256
+
+This should be sufficient most of the time. However, if you receive
+the "Internal Stack Overflow" message, first try increasing the
+second number on the stacks= command line. If that doesn't work, try
+increasing the first number. For more information about the stacks
+setting and modifying the CONFIG.SYS file, see your MS-DOS
+documentation.
+
+3.0  Using 32-Bit Disk Access and File Access
+
+This section includes information about using 32-bit disk access and
+file access with portable computers, DoubleSpace,
+and networks.
+
+3.1  Using 32-Bit Disk Access with Portable Computers
+
+By default, 32-bit disk access is turned off to prevent disk errors
+on some battery-powered portable computers. However, 32-bit disk
+access may run correctly with some battery-powered portable
+computers, such as the Zenith MasterSport SL. If you want to try
+using 32-bit disk access, select the Use 32-bit Disk Access check box
+in the expanded Virtual Memory dialog box (choose the Enhanced option
+in Control Panel). For more information, see Chapter 8, "Customizing
+Network Settings and Improving Performance," in the Microsoft
+Workgroup Add-On "User's Guide."
+
+Caution: Before you use 32-bit disk access on a battery-powered
+portable computer, it is highly recommended that you back up your
+hard disk. Because 32-bit disk access has not been fully tested on
+all battery-powered systems, you may receive disk errors while using
+it.
+
+3.2  Using 32-Bit File Access with DoubleSpace
+
+You cannot use 32-bit file access with MS-DOS version 6.0 if you have
+DoubleSpace enabled. To use 32-bit file access with DoubleSpace, use
+MS-DOS version 6.2.
+
+3.3  Networks You Cannot Use 32-Bit File Access With
+
+A driver that is necessary for 32-bit file access is incompatible
+with some networks, including Artisoft LANtastic and Microsoft LAN
+Manager.
+
+If you are running one of these networks with Windows for Workgroups
+instead of the Microsoft Windows Network, remove the
+device=c:\windows\ifshlp.sys line from your CONFIG.SYS file. Then
+turn off 32-bit file access by using the Enhanced icon in Control
+Panel.
+
+If you remove the IFSHLP.SYS device driver line from CONFIG.SYS, you
+will not be able to share files or printers. You may also not be able
+to use 32-bit disk access.
+
+4.0  Using Memory Managers and Vshare
+
+This section describes problems you may encounter while using memory
+managers and the VSHARE.386 file-sharing/file-locking program with
+Windows for Workgroups.
+
+4.1  Using 386MAX
+
+If you are running 386MAX with Windows for Workgroups, note the following:
+
+ - Do not use options that limit the EMS swap region in the upper
+   memory area. If you include exclude= options on the 386max or bluemax
+   command line or in the .PRO file (usually called 386MAX.PRO), make
+   sure that the address range specified does not extend beyond A000. If
+   the address range extends beyond A000, Windows for Workgroups may not
+   run properly.
+
+   For example, the command exclude=1800-A000 is acceptable, but the
+   command exclude=1800-B800 is not. If you must exclude an address
+   range above A000, use the RAM= option instead. For more information
+   about this and other options, see your 386MAX documentation.
+
+ - Do not load SMARTDrive when QCache is running.
+
+   Note: The 386MAX setup program does not detect SMARTDrive version 5.0
+   and may recommend that you install QCache.
+
+ - If you update an earlier version of 386MAX to version 6.0, the
+   386MAX version 6.0 setup program may not remove the load=windows.lod
+   line from your .PRO file. You can remove this line manually. It is
+   not needed, and removing it will free a small amount of memory.
+
+ - If you remove the net start command line from your AUTOEXEC.BAT
+   file, Windows may lock up during startup.
+
+4.2  Turning On Sharing Popup with Vshare
+
+VSHARE.386 is a file-sharing and file-locking program that is used
+when running Windows for Workgroups with file or print sharing
+enabled. With VSHARE, when a file-sharing violation occurs, you see
+an "Access denied" message, instead of the "Sharing violation on
+drive..." message used when file and print sharing are not enabled.
+
+Some MS-DOS-based applications may need the sharing-violation
+message. If you need to turn on this message, add the following line
+to the [386Enh] section of your SYSTEM.INI file:
+
+EnableSharingPopups=TRUE
+
+For more information about modifying the SYSTEM.INI file, see the
+SYSINI.WRI online document.
+
+4.3  If EMM386 Detects an Error in an Application
+
+If EMM386 displays a message such as "EMM386 has detected error #12
+in an application," this indicates that the processor has reported an
+exception error to EMM386. An exception error typically occurs when
+an application gives the processor an instruction under invalid or
+unexpected conditions. In most cases, these errors are related to a
+specific program. If you are receiving an error that does not occur
+with any particular application, the error might be caused by a
+device driver or a memory-resident (terminate-and-stay-resident)
+program.
+
+To avoid these errors:
+
+ - Try to identify the program involved. One way to do this is to see
+   if the error occurs when the program is not running.  If you suspect
+   a memory-resident program or device driver, try bypassing it when
+   your computer starts.
+
+ - Try disabling EMM386. If a particular application is to blame,
+   disabling EMM386 might allow that application to generate an error
+   message. Disabling EMM386 might also change your memory configuration
+   so that the error no longer occurs.
+
+   Since most of Windows for Workgroups version 3.11 and most Windows
+   applications use protected-mode memory, and EMM386 manages
+   conventional memory, EMM386 may not save any memory.
+
+ - Try changing the order in which you load device drivers and
+   memory-resident programs. This might help because some errors occur
+   only under specific memory conditions.
+
+ - If error 12 is occurring, this indicates that a stack is being used
+   incorrectly. Try adding the following command to your CONFIG.SYS
+   file:
+
+      STACKS=18,512
+
+ - If error 13 is occurring, the program may be trying to use
+   protected mode without cooperating with EMM386. You may need to
+   obtain a VCPI-compliant version of the program, or not load EMM386
+   when using this application.
+
+5.0  Using Advanced Power Management (APM)
+
+Windows for Workgroups includes support for Advanced Power Management
+(APM). This enables Windows to extend battery life, display
+power-status information, and work with the suspend features of
+battery-powered personal computers. To find out if your computer
+supports APM, contact your computer manufacturer.
+
+To install APM on your system:
+
+1. Quit Windows for Workgroups.
+
+2. Run Windows for Workgroups Setup and select one of the following
+   system types:
+
+   - MS-DOS System with APM
+   - Intel 386SL Based System with APM (if your computer has an Intel
+     386SL processor and supports the SL Enhanced Options for APM)
+
+3. Restart Windows for Workgroups.
+
+   A Power icon appears in the Control Panel window.
+
+4. Choose the Power icon to configure power-management settings.
+
+For more information about the settings, choose the Help button or
+press F1 while using the Power Management dialog box.
+
+Additional query words: dblspace awfax wfw wfwg 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

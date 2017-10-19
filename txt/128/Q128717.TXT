@@ -1,0 +1,64 @@
+DOCUMENT:Q128717  11-NOV-1999  [pcmail]
+TITLE   :MHS: Err Msg: Inpost: General File I/O Error
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MHS, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message may appear when Microsoft Mail Gateway to MHS is
+spawned by GWDEAMON.EXE (Netware Global Messaging's Deamon):
+
+   Inpost: General file I/O error
+
+CAUSE
+=====
+
+Two MS-DOS environment variables (USR and MV) need to be set on the computer
+running GWDEAMON. Page 17 of the Microsoft Mail Gateway to MHS "Administrator's
+Guide" details these variables as follows:
+
+   Set USR=ADMIN
+   Set MV=server/volume:
+   Set MV=F:\
+
+where F:\ is a drive letter that has been mapped to the root of the volume with
+the MHS gateway installed on it.
+
+MORE INFORMATION
+================
+
+GWDEAMON requires these variables similarly to MHS 1.5.
+
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

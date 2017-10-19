@@ -1,0 +1,67 @@
+DOCUMENT:Q168533  23-DEC-1999  [exchange]
+TITLE   :XFOR: Tabs Translated to Brackets
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When messages sent from Microsoft Mail client include tabs, Microsoft Exchange
+Client may receive them with the tabs changed to two facing brackets:
+
+   [ ]
+
+CAUSE
+=====
+
+This may be due to insufficient compatibly between Microsoft Exchange Server and
+Microsoft Mail.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. Open the Microsoft Exchange Server Administrator program
+   Configuration\Connections and double-click the Microsoft Mail connector.
+
+2. Click the Interchange tab and then select the "Maximize MS Mail 3.x
+   Compatibility" check box.
+
+3. Stop and restart the MS Mail Connector Interchange and PCTMA services.
+
+4. Send another message to confirm that the tabs are received as spaces or
+   blanks, not as brackets
+
+Additional query words: square blocks.
+
+======================================================================
+Keywords          : kbnetwork kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

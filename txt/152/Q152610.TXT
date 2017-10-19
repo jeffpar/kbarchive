@@ -1,0 +1,78 @@
+DOCUMENT:Q152610  13-JUN-2001  [win95x]
+TITLE   :Compression Agent Restarts Continuously on PCMCIA Drives
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Compression Agent with a removable PCMCIA hard disk, Compression
+Agent may restart continuously at 10 percent finished.
+
+CAUSE
+=====
+
+This behavior can occur if the drive is marked as removable in Device Manager.
+
+RESOLUTION
+==========
+
+To work around this behavior, follow these steps:
+
+1. In Control Panel, double-click the System icon.
+
+2. Click the Device Manager tab, and then double-click Disk Drives.
+
+3. Double-click the appropriate drive to display its properties.
+
+4. Click the Settings tab, and then click the Removable check box to clear it.
+
+5. Click OK, and then click OK.
+
+6. When you are prompted to restart your computer, do so.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem is specific to PCMCIA drives and does not affect other removable
+drives such as floppy disk drives.
+
+Additional query words: osr2
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbOPKSearch kbWin95 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

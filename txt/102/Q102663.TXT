@@ -1,0 +1,63 @@
+DOCUMENT:Q102663  30-JUL-2001  [lanman]
+TITLE   :NCB and SESS Reversed in Installation/Configuaration Guides
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Pages 160-161 in the "LAN Manager Installation and Configuration Guide" version
+2.2, reverses the correct positions of the NCB and SESSIONS parameters.
+
+On page 160, in the list of parameters that can follow the netn= entry in the
+[networks] section of the LANMAN.INI file, Number of Sessions should be the
+fourth parameter and Number of NCBs should be the fifth. Here is the proper
+order:
+
+   Devicename
+
+   LANA number
+
+   Type
+
+   Number of sessions
+
+   Number of NCBs
+
+   Number of names
+
+On page 161, the example entry should read as follows:
+
+  net2 = netbeui$, 0, lm10, 15, 30, 6
+
+This entry tells NetBEUI to reserve 15 sessions, 30 NCBs, and 6 names for LAN
+Manager. This leaves 25 sessions, 55 NCBs, and 11 names for NetBIOS 3.0
+applications.
+
+The correct format is shown on page 234 in the "Microsoft LAN Manager
+Administrator's Reference" version 2.2. Also see page 9-14 in the "3+Open LAN
+Manager Technical Reference."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,90 @@
+DOCUMENT:Q108151  04-OCT-1999  [win95x]
+TITLE   :IBM ValuePoint with BIOS Date 4/29/93 Hangs at Logo Screen
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Microsoft Windows for Workgroups stops responding (hangs) at the logo screen
+during startup on an IBM ValuePoint personal computer.
+
+
+CAUSE
+=====
+
+The Windows keyboard driver (VKD) times out on IBM ValuePoint computers with a
+BIOS date of 4/29/93 or earlier, or with an EPROM Flash Revision Level of 5.1 to
+5.3. This behavior also occurs on IBM ValuePoint SI computers that are Type
+6381.
+
+To determine the EPROM Flash Revision level, press the F1 key when a box appears
+in the upper-left portion of the screen as the computer is booting. This takes
+you into the Configuration Utilities Screen. The EPROM Revision Level is listed
+at the bottom of this screen.
+
+To determine if you have a Type 6381 ValuePoint, look at a label on the back of
+the computer.
+
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+ - Contact IBM Technical Support at (800) 772-2227 to receive a patch to the
+   VKD.
+
+   -or-
+
+ - Contact the IBM bulletin board service at (919) 517-0001 and download the
+   necessary files for your computer:
+
+   IBMKBFIX.EXE (the VKD replacement for the ValuePoint PC)
+   VP2FLxxx.DSK (Flash ROM, where xxx is the latest version number)
+
+   6381WG31.ZIP (the VKD replacement for the ValuePoint SI PC)
+   VPSIFL31.DSK (Flash ROM for the ValuePoint SI PCs)
+
+   LDF.COM (used to uncompress the above files)
+
+MORE INFORMATION
+================
+
+The IBM products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3rdparty 3.11 incompatible version lock locks hang value point 4/5/94 flash l6et61aus type 6384x00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

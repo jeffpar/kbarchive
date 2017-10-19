@@ -1,0 +1,59 @@
+DOCUMENT:Q196167  22-DEC-1999  [exchange]
+TITLE   :XADM: Unable to Initialize Extension Data Attributes
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mailbox Cleanup Agent (MBClean) version 1.8 does not support remote
+administration. If the Microsoft Exchange Server Administrator program is used
+on a different server than the MBClean install server, you will receive the
+following two errors trying to run MBClean.
+
+   Unable to initialize Extension Data Attributes!
+
+   An exception has occurred in an extension .DLL file. Contact your
+   extension supplier. Microsoft Exchange Administrator ID no: c10312fb
+
+MORE INFORMATION
+================
+
+MBClean version 1.8 does not support remote administration. Therefore, the
+Exchange Server Administrator program must be connected to the same server that
+MBClean is installed on to make any changes to its configuration. Although
+MBClean can only be administrated from the install server, it will still clean
+mailboxes on any server in the site.
+
+Additional query words: MCA
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q180331  17-DEC-2000  [win95x]
+TITLE   :Cannot Redirect with Long Folder Name in MS-DOS Prompt Session
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you change folders to a folder with a long file name using quotation marks
+(") to specify the long file name in an MS-DOS prompt session and then attempt
+to redirect (>) a file in that folder to the printer port (LPT1), you may
+receive the following error message:
+
+   File Creation Error
+
+RESOLUTION
+==========
+
+To work around this behavior, change folders to the folder with the long file
+name by using the folder's short file name alias. For example, to change to the
+C:\My Long File Folder folder, use the following command:
+
+   cd mylong~1
+
+Then, use the redirect command. For example:
+
+   type myfile.fil > lpt1
+
+Additional query words: send copy
+
+======================================================================
+Keywords          : kbenv kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

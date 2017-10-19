@@ -1,0 +1,83 @@
+DOCUMENT:Q158050  08-AUG-2001  [winnt]
+TITLE   :Windows NT Does Not Load AHA-3940W SCSI Driver
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your computer is configured with an Adaptec AHA-394x adapter on a secondary
+PCI bus, you may experience either of the following symptoms:
+
+ - Windows NT version 4.0 does not detect the Adaptec AHA-3940W adapter.
+
+ - If you attempt to add the driver using the SCSI Adapters tool in Control
+   Panel, the driver seems to be installed correctly, but is not loaded when you
+   restart the computer.
+
+Any SCSI devices connected to the adapter do not function.
+
+CAUSE
+=====
+
+The Adaptec AHA-3940 and AHA-3940W adapters require a motherboard that is PCI
+2.0 compliant and that supports PCI-to-PCI bridge chips. The AHA-394x adapters
+use bridge chips to function as multiple-channel adapters.
+
+RESOLUTION
+==========
+
+Install the AHA-394X adapter on the primary PCI bus and then install the driver.
+To install the driver, follow these steps:
+
+1. In Control Panel, double-click SCSI Adapters.
+
+2. Click the Drivers tab, and then click Add.
+
+3. In the Manufacturers box, click Adaptec.
+
+4. In the SCSI Adapter box, click "Adaptec AHA-294X/AHA-394X or AIC-78XX PCI
+   SCSI Controller," and then click OK.
+
+5. When you are prompted to restart your computer, click Yes.
+
+MORE INFORMATION
+================
+
+This behavior occurs only when the adapter is installed in a slot that is on a
+secondary PCI bus (or, in other words, when the SCSI chips are behind two
+PCI-to-PCI bridges, one on the motherboard and one on the adapter).
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

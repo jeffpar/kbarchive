@@ -1,0 +1,63 @@
+DOCUMENT:Q93562  05-NOV-1999  [pcmail]
+TITLE   :PC Win: New Mail Notification -- Sound Chime & Flash Envelope
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Mail for Windows, version 3.0, has three ways of notifying you that
+new mail has arrived:
+
+ - The mouse arrow turns into an envelope. For example, if you are in a Windows
+   application and new mail arrives, you'll see the arrow momentarily change to
+   an envelope, then back to an arrow. In other words, the envelope flashes.
+
+ - When Mail is minimized and new mail arrives, you will notice letters sticking
+   out of the slot of the Mail icon. If the slot is empty, no new mail has
+   arrived.
+
+ - You can choose to have your computer sound a chime when new mail arrives. To
+   do this, choose Options from the Mail menu, then select Sound Chime. If you
+   have a sound board, you can choose the Sound icon from the Windows Control
+   Panel. You will see an options for New Mail Notification where you can assign
+   a .WAV sound file. Then your computer will play the .WAV file when new mail
+   arrives.
+
+NOTE: Independent shareware developers have developed other methods of mail
+notification. More information on this topic may be available from Microsoft
+Information Services. Microsoft Information Services are available on the World
+Wide Web by connecting to http://www.microsoft.com. The FTP site is located at
+ftp.microsoft.com.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

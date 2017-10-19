@@ -1,0 +1,134 @@
+DOCUMENT:Q157785  17-DEC-2000  [win95x]
+TITLE   :Msbatch.inf Parameters: Installing MSNDS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install the Microsoft Service for NetWare
+Directory Services (MSNDS) using the Msbatch.inf file for batch installations of
+Windows 95.
+
+MORE INFORMATION
+================
+
+Microsoft does not encourage or support changes to .inf files; therefore,
+Microsoft Technical Support does not support the procedure in this article.
+Although we have tested the following procedure and it appears to function as
+described, make a backup copy of your .inf file before you proceed.
+
+To install MSNDS using the Msbatch.inf file for batch installations of Windows
+95, follow these steps:
+
+1. Create a network installation of Windows 95.
+
+2. Create a new folder on the same drive that contains the network installation
+   of Windows 95 and then copy all the files for MSNDS to the new folder. The
+   files for MSNDS are available as a downloadable file named Msnds.exe. For
+   information about obtaining the Msnds.exe file, please see the following
+   article in the Microsoft Knowledge Base:
+
+   Q138709 Microsoft Service for NetWare Directory Services Available
+
+3. In the new folder, rename the Ndscli.inf file to Ndscli.old and then rename
+   the Ndscli.sbs file to Ndscli.inf.
+
+4. Use the Microsoft INF Installation Tool for Windows 95 (Infinst.exe) to
+   integrate the contents of the Ndscli.inf file into the network installation
+   of Windows 95.
+
+   NOTE: The INF Installation Tool for Windows 95 is included in the CD-ROM
+   version of Windows 95 and the Microsoft Windows 95 Resource Kit, but not in
+   the floppy disk version of Windows 95. To use the INF Installation Tool for
+   Windows 95, you must own the CD-ROM version of Windows 95 or the Microsoft
+   Windows 95 Resource Kit.
+
+5. Create an [Install] section in the Msbatch.inf file, if the section does not
+   already exist, and then add the following line to the section:
+
+   AddReg=NDSPP.ADD
+
+6. Create an [NDSPP.ADD] section in the Msbatch.inf file, if the section does
+   not already exist, and then add the following lines to the section.
+
+   NOTE: Some of the following lines have been wrapped in this article. These
+   lines should be entered as one continuous line in the Msbatch.inf file.
+
+     HKLM,"System\CurrentControlSet\Control\Print\Providers\Microsoft
+        Print Provider for NetWare",Name,,"ndspp.dll"
+     HKCR,CLSID\{E6EF27C0-7984-11CE-BA00-00AA001F3DC4},,,"Netware objects"
+     HKCR,CLSID\{E6EF27C0-7984-11CE-BA00-00AA001F3DC4}\InProcServer32,,,
+        "ndspp.dll"
+     HKCR,CLSID\{E6EF27C0-7984-11CE-BA00-00AA001F3DC4}\InProcServer32,
+        ThreadingModel,,"Apartment"
+     HKCR,Printers\shellex\PropertySheetHandlers\CaptureConfig,,,
+        "{971A71A0-449B-101B-A9B9-4AF3EEDDA3E3}"
+     HKCR,CLSID\{971A71A0-449B-101B-A9B9-4AF3EEDDA3E3},,,"Capture
+        Settings"
+     HKCR,CLSID\{971A71A0-449B-101B-A9B9-4AF3EEDDA3E3}\InProcServer32,,,
+        "ndspp.dll"
+     HKCR,CLSID\{971A71A0-449B-101B-A9B9-4AF3EEDDA3E3}\InProcServer32,
+        ThreadingModel,,"Apartment"
+
+7. Create a [Network] section in the Msbatch.inf file, if the section does not
+   already exist, and then add the following lines to the section:
+
+   Clients=NWREDIR
+   Services=NWREDIR4
+
+8. If you want to set the preferred tree and default context in the Msbatch.inf
+   file, create an [NWRedir4] section in the file, if the section does not
+   already exist, and then add the following lines to the section:
+
+   PreferredTree = <tree>
+   NameContext = <context>
+
+If you are attempting to create a shared installation of Windows 95 that uses
+MSNDS from a network installation of Windows 95 located on a NetWare server, the
+shared Windows folder should be located on a network server that is part of the
+NDS tree you log on to. You must also set bindery emulation for the container in
+which user accounts reside.
+
+When you are using a shared installation of Windows 95 with a shared Windows
+folder located on a NetWare server, Windows 95 uses a real-mode NetWare client
+to connect to the NetWare server. If bindery emulation is not properly set, the
+real-mode client is unable to connect to the NetWare server. When you log on to
+the server using the real-mode client, you should use the user name and password
+that you normally use to log on to the NDS tree. If you have not specified a
+preferred tree and default context, the following error message may be displayed
+when you attempt to log on:
+
+   You are not logged into the NDS tree. Make sure your default context is set
+   properly. To check the default context, click the network icon in Control
+   Panel.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q197005  12-AUG-1999  [homemm]
+TITLE   :Encarta 99 Standard Edition: Article Is Not Read Aloud
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you right-click inside an article or media page in Microsoft Encarta
+Encyclopedia 99 Standard Edition, and then click Read Aloud, the article or
+media page is not read aloud.
+
+CAUSE
+=====
+
+This behavior occurs when the Microsoft Text-to-Speech Engine is installed on
+your computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+99 Standard Edition.
+
+MORE INFORMATION
+================
+
+Read Aloud functionality is not included in Encarta Encyclopedia Standard
+Edition and the Read Aloud command does not appear on the Options menu in this
+edition of Encarta. However, when the Microsoft Text-to-Speech Engine is
+installed on the computer, Read Aloud does appear on the shortcut menu although
+the command does not function in this edition of Encarta.
+
+Additional query words: multi multi-media media mm enc99 tts
+
+======================================================================
+Keywords          : kbinterop kbtool kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

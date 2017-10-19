@@ -1,0 +1,88 @@
+DOCUMENT:Q250338  11-NOV-2000  [exchange]
+TITLE   :XADM: Mdbvu32 Enhancements for Viewing/Managing Rules Messages
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55 kbExchange550preSP4fix kbExchange550sp4Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Mdbvu32.exe is a MAPI utility designed to view MAPI messages and folders and
+their properties. These messages can be stored in various MAPI store providers
+(such as Microsoft Exchange Server). Mdbvu32.exe does not have features to view
+rules messages easily (such as those rules produced by Inbox Assistant and the
+Rules Wizard). Specifically, the following minor issues are present:
+
+ - Rules are saved as associated messages in a folder (such as the Inbox). Rules
+   do not typically have a PR_SUBJECT property, and Mdbvu32 displays the Entry
+   ID in a format that resembles the following:
+
+   cb: 40|*pb: EF 00 00 00 00 19 82, and so on
+
+   It is difficult to find a rule when they are listed this way.
+
+ - After you delete a message, focus is reset to the first item in the Messages
+   in Folder and Associated Messages in Folder list boxes. If you are deleting
+   many rules, it can be time consuming to find the location of your last
+   deletion to continue searching for the next rule to delete.
+
+ - When you attempt to delete a rule (or any message that has no PR_SUBJECT
+   property), a confirmation dialog box appears with a pull-down list of
+   messages to be deleted, and the list is empty. Having no items in the
+   confirmation list makes it easier to accidentally delete other messages
+   unintentionally.
+
+ - Many MAPI properties are not recognized by Mdbuv32 and are displayed without
+   their textual names.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 4.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,63 @@
+DOCUMENT:Q137457  13-DEC-1999  [foxpro]
+TITLE   :How to Move to the Next Column in a Grid When Using Check Box
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how, when using a check box in a column on a grid, you can
+move to the next column immediately on clicking the check box. The default
+behavior is to remain in the current column.
+
+MORE INFORMATION
+================
+
+By placing code in the Valid event procedure of the check box object, you can
+programmatically determine the current column and then move to the next column
+using the SetFocus method. The following code illustrates one way to do this.
+
+   FOR myctlcntr=1 TO this.parent.parent.columncount && cycle through columns
+      IF THIS.PARENT.PARENT.COLUMNS(myctlcntr).CONTROLS(2).NAME = THIS.NAME
+
+         * In the next line columns(myctlcntr+1) comes beforem controls(2)
+         * because the column header is the first control and data is the
+         * second control.
+
+         THIS.PARENT.PARENT.COLUMNS(myctlcntr+1).CONTROLS(2).SETFOCUS
+         EXIT
+
+      ENDIF
+   ENDFOR
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

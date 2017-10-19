@@ -1,0 +1,70 @@
+DOCUMENT:Q115452  31-OCT-1999  [pcmail]
+TITLE   :SMTP: Date and Time Stamps Different in Inbox and Message
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you view messages received from SMTP through the Microsoft Mail Gateway to
+SMTP, the date and time stamps in the Inbox sometimes are different than those
+embedded in the message itself.
+
+MORE INFORMATION
+================
+
+The date and time fields in the Inbox and those in the message are stamped by
+different hosts, in accordance with RFC 822.
+
+For Incoming Messages
+---------------------
+
+The SMTP gateway stamps the date that you see in the "Date" column of the Inbox.
+The gateway computer uses the TZ variable to adjust the time for the set time
+zone. The date field you see when you open the message is stamped by the
+sender's mail client. The other RFC 822 header fields that include dates in them
+are stamped by the SMTP hosts that relay the message along to its destination.
+
+For Outgoing Messages
+---------------------
+
+The date field you see when you open the message is stamped by the sender's mail
+client with the client's local date and time. In this case, the client uses the
+TZ variable to adjust for the time zone.
+
+The SMTP gateway stamps the date that it gets from the gateway computer in an RFC
+822 header field and passes the message on to the mail routing host. Again, all
+other RFC 822 header fields with dates in them are stamped by the SMTP hosts who
+relay the message along to its destination.
+
+Additional query words: SMTP DATE TIME
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,83 @@
+DOCUMENT:Q141356  24-MAR-2000  [foxpro]
+TITLE   :FIX: PageFrame Refresh Fails with Stacked Pages
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During design mode in the Form Designer when all of the following conditions are
+true, the display will not refresh properly unless you press ALT+TAB to move
+away from Visual FoxPro and come back to it again:
+
+ - A PageFrame on the form
+
+ - The TabStretch property set to 0 (Stack).
+
+ - You have several rows of pages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in FoxPro 3.0b for
+Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In the Command window, type the following command:
+
+   " CREATE FORM myform" (without the quotation marks)
+
+2. Add a PageFrame object to the form, and set the following properties:
+
+   PageCount = 5
+   TabStretch = 0 - Stack
+
+3. Edit the PageFrame object, and decrease its horizontal width so that there
+   are three rows of pages.
+
+4. Change the Caption property of each page to be just the page number (1, 2, 3,
+   and so on).
+
+At the point at which the pages fit back into a single row, the refresh is
+incomplete. To refresh the form, press ALT+TAB to move away from Visual FoxPro
+and then return to it.
+
+Additional query words: VFoxWin buglist3.00 fixlist3.00b frame
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

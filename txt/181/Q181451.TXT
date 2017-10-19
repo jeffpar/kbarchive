@@ -1,0 +1,90 @@
+DOCUMENT:Q181451  12-MAY-1999  [exchange]
+TITLE   :XADM: Setting Diagnostics Logging Levels in the Registry
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a
+Registry Key" Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+This article describes how to set the diagnostics logging levels for a Microsoft
+Exchange component without using the Microsoft Exchange Administrator program.
+
+MORE INFORMATION
+================
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+The diagnostics logging information for each Microsoft Exchange Server component
+is saved in the Windows NT registry in the components key under
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
+
+Each component has a sub-key named "Diagnostics" that holds the diagnostics
+logging information.
+
+For example, the Microsoft Exchange Directory Service diagnostics logging
+information is saved under
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+   \MSMExchangeDS\Diagnostics
+
+The Diagnostics sub-key contains values for each of the logging categories. Each
+of these values has data of type REG_DWORD. Following are the possible data
+values for each category:
+
+   0   - None
+   1   - Minimum Logging
+   3   - Medium Logging
+   5   - Maximum Logging
+
+For example, to set the logging level for the knowledge consistency checker
+category of the directory service to medium, you must set the data for the
+registry value "1 Knowledge Consistency Checker" under
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services \MSMExchangeDS\Diagnostics,
+to 3.
+
+Additional query words: diagnostic logging
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

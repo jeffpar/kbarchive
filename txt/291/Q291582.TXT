@@ -1,0 +1,79 @@
+DOCUMENT:Q291582  28-MAR-2001  [homegame]
+TITLE   :Games Err Msg: Version Testing Date has Expired
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MechWarrior 4: Vengeance 
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start one of the games listed at the beginning of this
+article, you may receive the following error message:
+
+   Version testing date has expired.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+ - You have outdated video codecs installed on your computer.
+
+   -or-
+
+ - You are using third-party digital video disc (DVD) software that controls
+   MPEG playback, such as WinDVD.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the method appropriate for your situation.
+
+If the video codecs are outdated
+--------------------------------
+
+Update the Indeo video playback codecs to the latest version. For the latest
+updated codecs, visit the following Web site:
+
+   http://www.ligos.com/index.phtml?pi=103
+   (http://www.ligos.com/index.phtml?pi=103)
+
+If you have third-party DVD software controlling MPEG playback
+--------------------------------------------------------------
+
+Remove the third-party DVD software controlling MPEG playback. For more
+information about how to do this, contact the manufacturer of your DVD software
+or refer to the program documentation.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

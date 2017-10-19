@@ -1,0 +1,79 @@
+DOCUMENT:Q185163  11-JAN-2001  [vbwin]
+TITLE   :PRB: Operation Stopped: Data Has Changed
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the datacontrol to connect to SQL Server 6.5 via ODBC, when an update is
+attempted after editing a record, the following error may occur:
+
+   3197 "Operation stopped - data has changed" occurs.
+
+CAUSE
+=====
+
+The behavior occurs if an SQL field data type is set to Float and the table does
+not contain a TimeStamp field, or when an SQL indexed field data type is set to
+either Date/Time or Float.
+
+
+RESOLUTION
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q96897 : ACC: Operation Stops When Editing Attached SQL Tables
+
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+Microsoft Jet Database Engine Programmer's Guide, First and Second Editions.
+
+Additional query words: kbDSupport kbdse
+
+======================================================================
+Keywords          : kbnokeyword kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

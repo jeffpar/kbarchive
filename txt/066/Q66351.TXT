@@ -1,0 +1,42 @@
+DOCUMENT:Q66351  30-JUL-2001  [homegame]
+TITLE   :Description of Pegged in Windows Entertainment Pack
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Windows Entertainment Pack volume 1 game Pegged is played by moving a peg
+across any adjacent peg, and placing it into an open space on the other side.
+Only horizontal and vertical jumps are allowed; no diagonal jumps are permitted.
+The peg that has been jumped over is automatically removed from the board. The
+object of the game is to jump all the other pegs so there is only one remaining
+at the end.
+
+Pegged offers seven different patterns from which to choose, with Cross being the
+easiest and Solitaire being the most difficult. Pegged gives you the option of
+retracing your steps by pressing the BACKSPACE key.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

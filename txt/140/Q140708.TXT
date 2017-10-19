@@ -1,0 +1,73 @@
+DOCUMENT:Q140708  17-DEC-2000  [win95x]
+TITLE   :Error Message: Cannot Display This Help File. Try Opening...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to open a Windows Help file on a full-access network share, you may
+receive the following error message:
+
+   Cannot display this Help file. Try opening the Help file again, and if you
+   still get this message, copy the Help file to a different drive, and try
+   again. (136)
+
+CAUSE
+=====
+
+This behavior can occur if the Help file you are trying to open is currently
+open on a computer running Microsoft Windows NT.
+
+RESOLUTION
+==========
+
+To work around this behavior, use any one of the following methods:
+
+ - Copy the Help file to a different name or location.
+
+ - Close the Help file on the computer running Windows NT.
+
+ - Change the access type for the network share to read-only.
+
+ - Add a second network protocol in Network properties.
+
+MORE INFORMATION
+================
+
+This behavior occurs only if you try to open a Help file on a Windows 95- based
+computer and the Help file is currently open on a Windows NT-based computer.
+Other computers running Windows NT 3.x, Windows 3.1x, or Windows for Workgroups
+3.1x can open the Help file while it is open on a Windows NT-based computer.
+
+Additional query words: error 136
+
+======================================================================
+Keywords          : kbnetwork win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

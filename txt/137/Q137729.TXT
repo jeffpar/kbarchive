@@ -1,0 +1,127 @@
+DOCUMENT:Q137729  11-JAN-2001  [vbwin]
+TITLE   :INFO: LenB Returns in-Memory Size of User-Defined Type
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbprogramming kbVBp400 kb32bitOnly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+LenB function returns the in-memory size of a user-defined type (UDT).
+
+MORE INFORMATION
+================
+
+Visual Basic 32-bit structures are DWORD aligned (four bytes) when stored in
+memory. Fixed-length strings use two bytes for every character to account for
+UNICODE. String descriptors use four bytes each. Integers use two bytes. Please
+refer to the Visual Basic Help file for the lengths of all the other data
+types.
+
+Example One
+-----------
+
+Consider this example UDT:
+
+        Type Generic
+        FirstName as String * 5
+        LastName as String
+        ChildrenAges (1 to 5) as Byte
+      End Type
+
+This UDT requires the following number of bytes:
+
+ - FirstName uses 10 bytes (UNICODE).
+
+ - LastName uses 4 bytes (String descriptor).
+
+ - ChildrenAges uses 5 bytes (5-element byte array).
+
+Applying DWORD alignment gives a total of 21 bytes as follows:
+
+ - 8 bytes for the first 8 bytes of FirstName.
+
+ - 8 bytes for the last 2 bytes of FirstName, 2 bytes of padding, 4 bytes for
+   LastName.
+
+ - 5 bytes for the 5 bytes needed for ChildrenAges.
+
+Therefore:
+
+      LenB(Generic) = 21
+      Len (Generic) = 14
+
+Example Two
+-----------
+
+Consider this example UDT:
+
+         Type Generic
+        FirstName as String * 7
+        LastName as String * 6
+        ChildrenAges (1 to 5)  as Byte
+        Address * String
+      End Type
+
+This UDT requires the following number of bytes:
+
+ - FirstName uses 14 bytes (UNICODE).
+
+ - LastName uses 12 bytes (UNICODE).
+
+ - ChildrenAges uses 5 bytes (5-element byte array).
+
+ - Address uses 4 bytes (string descriptor)
+
+Applying DWORD alignment gives a total of 36 bytes as follows:
+
+ - 8 bytes for the first 8 bytes of FirstName.
+
+ - 8 bytes for the last 6 bytes of FirstName, 2 bytes of padding, 2 bytes for
+   LastName.
+
+ - 8 bytes for the next 8 bytes of LastName.
+
+ - 8 bytes for the last 2 bytes of LastName, 5 bytes for ChildrenAges, and 1
+   byte of padding.
+
+ - 4 bytes for Address for the string descriptor.
+
+Therefore:
+
+      LenB(Generic) = 36
+      Len (Generic) = 22
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbprogramming kbVBp400 kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

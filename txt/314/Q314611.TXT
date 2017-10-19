@@ -1,0 +1,71 @@
+DOCUMENT:Q314611  08-JUL-2002  [sms]
+TITLE   :Error Message: HTTP Error 500-12 (Application Restarting)
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run reports on the Web Reporting tool or use any function that requires
+multiple frames, you may receive the following error message:
+
+   HTTP Error 500-12 (Application Restarting)
+
+CAUSE
+=====
+
+This problem may be caused if antivirus software is running on the IIS
+subfolders.
+
+RESOLUTION
+==========
+
+To work around this problem, stop the virus-scanning program, or configure the
+program to ignore the IIS folder. By default, the IIS folder is \Inetpub.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+For additional information about related topics, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+   Q248013 Err Msg: HTTP Error 500-12 Application Restarting
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

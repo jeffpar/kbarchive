@@ -1,0 +1,70 @@
+DOCUMENT:Q74810  03-NOV-1999  [win16ddk]
+TITLE   :Calling Windows Functions from a Device Driver
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbDDK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some device drivers need to call functions provided by the user dynamic- link
+library (DLL) of Microsoft Windows. The MessageBox() function is an example of
+one of these functions. However, a driver cannot implicitly link to the user
+DLL. If a driver attempts to implicitly link to user, it will fail to load and
+Windows will not run. The load fails because the drivers are loaded before user
+(user requires the drivers). An implicit link to user forces the kernel to load
+the user module when the driver is loaded; which Windows cannot do. Therefore,
+the driver must establish the link at a later time. This article explains how
+this is accomplished.
+
+MORE INFORMATION
+================
+
+An example of a driver calling a function in user is the communications driver
+(COMM.DRV) which displays a message box to resolve contention on the serial and
+parallel ports.
+
+The source code for COMM.DRV is included in the Windows Device Development Kit
+(DDK). The driver's Contention_Dlg function displays dynamically links to user
+and displays the message box. For Windows 3.1, the Contention_Dlg function is in
+the IBMSETUP.ASM file; for Windows 3.0 this function is in the IBMCOM.ASM file.
+
+There are two steps required:
+
+1. Use GetModuleHandle("user") to retrieve the module handle to user.
+
+2. Call GetProcAddress(hUserModule, "MESSAGEBOX") to retrieve the FAR procedure
+   address of the MessageBox function.
+
+Use this procedure address to call the function from the driver.
+
+Additional query words: 3.00 3.10 DDKMISC
+
+======================================================================
+Keywords          : kb16bitonly kbDDK 
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

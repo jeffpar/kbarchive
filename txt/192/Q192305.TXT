@@ -1,0 +1,72 @@
+DOCUMENT:Q192305  19-AUG-1999  [foxpro]
+TITLE   :PRB: Separate Instance of HTML Help Used With Certain Objects
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbHTMLHelp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Accessing help on an object (such as an ActiveX control) after another HTML help
+window is already open, opens a second instance of a HTML help window instead of
+using the current instance of the HTML help window. Both windows appear
+together, one behind the other, and you may have difficulty switching between
+them using the Taskbar or the Task Manager.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When you access help on a Visual FoxPro object and leave that HTML help window
+open, accessing help on another Visual FoxPro object uses the same HTML window.
+This behavior is correct. When opening an HTML help window from Visual FoxPro
+and then opening help on another object that is not native to Visual FoxPro, a
+separate HTML help window opens. This behavior is also correct.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and place an ActiveX control on the form.
+
+2. Press the F1 key to open the help window for the ActiveX control.
+
+3. Switch back to Visual FoxPro, click the open form and then press the F1 key.
+
+4. Note that both HTML help windows open, one behind the other, and that
+   accessing them from the Taskbar or through the Task Manager is not possible.
+
+Additional query words: kbVFp600 kbDocs
+
+======================================================================
+Keywords          : kbHTMLHelp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

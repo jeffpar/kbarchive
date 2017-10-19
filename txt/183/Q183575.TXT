@@ -1,0 +1,100 @@
+DOCUMENT:Q183575  21-JUL-2001  [sna]
+TITLE   :IDBSchemaRowset::GetSchemas Returns Inaccurate Information
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft OLE DB Provider for AS/400 and VSAM, version 1.0, used with:
+    - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the Rowset Viewer sample of the OLE DB 1.5 Solution Developer Kit,
+select IDBSchemaRowset::GetSchemas, and then select the drop-down list box for
+the different schemas, you can see that the unsupported restrictions are dimmed.
+Some of the unavailable restrictions are, in fact, supported. Only one,
+TABLE_CATALOG, is unsupported and should be dimmed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft OLE DB Provider for
+AS/400 and VSAM version 1.0, included with Microsoft SNA Server version 4.0.
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The schemas should return the following restrictions:
+
+Schema Columns
+
+   Supports:
+      TABLE_SCHEMA
+      TABLE_NAME
+      COLUMN_NAME
+   Not supported:
+      TABLE_CATALOG
+
+Schema Indexes
+
+   Supports:
+      TABLE_SCHEMA
+      INDEX_NAME
+      TYPE
+      TABLE_NAME
+   Not supported:
+      TABLE_CATALOG
+
+Schema Provider Types
+
+   Supports:
+      DATA_TYPE
+      BEST_MATCH
+
+Schema Tables
+
+   Supports:
+      TABLE_SCHEMA
+      TABLE_NAME
+      TABLE_TYPE
+   Not supported:
+      TABLE_CATALOG
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvSearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

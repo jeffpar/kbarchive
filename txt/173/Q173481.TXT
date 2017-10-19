@@ -1,0 +1,69 @@
+DOCUMENT:Q173481  07-JAN-2000  [exchange]
+TITLE   :XADM: PerfWiz Reports Multiple Errors when Moving Files
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+When you run the Microsoft Exchange Performance Optimizer (PerfWiz) and attempt
+to move databases to a drive that does not have adequate disk space, PerfWiz
+will generate an error for every database database that it attempts to move. The
+following error will be displayed:
+
+   A file or group of files could not be moved to the destination disk X:
+   because it is full - [800FF329]
+
+and this will be followed by error messages similar to the following, one for
+each database that it attempts to move:
+
+   The destination directory X:\exchsrvr\ did not exist and could not be
+   created - [800FF333]
+
+This is by product design.
+
+MORE INFORMATION
+================
+
+Part of the functionality of PerfWiz is to analyze the disk subsystem on the
+Microsoft Exchange Server. During this process, you can intervene and select the
+drives that the Databases will be moved to. Part of the functionality of PerfWiz
+is to verify that on each of the hard disk drivess that are selected, there is
+adequate disk space before it moves the databases files. If PerWiz detects
+inadequate disk space, it will generate one error per database being moved. This
+functionality may appear to be excessive, but it is designed to cover the cases
+where these databases are being moved to different drives and, therefore, all
+drives need to be checked separately.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

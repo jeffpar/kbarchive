@@ -1,0 +1,63 @@
+DOCUMENT:Q291942  08-MAY-2002  [sna]
+TITLE   :Simultaneous Queries with WMI SNA Provider May Cause "Hang"
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport kbhis2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Applications that use the Host Integration Server WMI (Windows Management
+Instrumentation) SNA status provider (Wmisnastatus.dll) to determine the status
+of logical units (LUs) may cause the system to stop responding ("hang") if
+multiple simultaneous queries are performed. Access violations may also occur
+when an application issues multiple WMI queries to check LU status. The specific
+access violations may vary but you can capture them by attaching a debugger to
+the Windows Management Instrumentation (Winmgmt.exe) service.
+
+CAUSE
+=====
+
+The WMI SNA status provider doesn't properly synchronize requests when the
+provider accesses the shared memory that stores all the management data when
+multiple simultaneous WMI queries are issued.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbhis2000 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

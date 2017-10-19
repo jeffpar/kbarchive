@@ -1,0 +1,193 @@
+DOCUMENT:Q309051  14-AUG-2002  [iis]
+TITLE   :HOW TO: Troubleshoot ASP in IIS 5.0
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbAudITPro kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0, used with:
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - How to Troubleshoot ASP in IIS 5.0
+
+SUMMARY
+=======
+
+This step-by-step article describes the troubleshooting steps to take if ASP
+(Active Server Pages) stops responding on an Internet Information Services (IIS)
+5.0 Web server. The platform may be any version of Windows 2000.
+
+ How to Troubleshoot ASP in IIS 5.0
+----------------------------------
+
+NOTE: Before you begin, ensure that .html or .htm files open on the Web server in
+question. If these files do not open, this is not an ASP issue.
+
+1. If a Global.asa file exists in the root of your Web site, rename it as
+   Global.old, stop and restart the Web services, and then create a test ASP
+   page in Notepad with the following code:
+
+   <%
+   Response.Write "This is a test ASP page."
+   %>
+
+Save this file as Test.asp in the root of your Web site, and try to open the file
+on the Web server.
+
+If ASP pages load in your Web browser after you have performed this step, the
+problem is with the Global.asa file. If ASP pages still do not load, proceed to
+step 2.
+
+For additional information on troubleshooting the Global.asa file, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q288245 PRB: Global.asa Does Not Fire from Personal Web Server on Windows 98
+
+   Q265275 FP2000: Global.asa Does Not Run in FrontPage Web
+
+   Q173742 FIX: Global.asa Is Not Executed If Restricting Web Access
+
+2. Set the application protection for the Web site to Low and stop and restart
+   the IISAdmin service. If ASP pages load in your Web browser after you have
+   performed this step, the issue is with the IWAM account, and you can proceed
+   to step 3. If ASP pages still do not load, check Component Services in
+   Administrative Tools to ensure that you can view the IIS packages. This
+   ensures that Component Services is not failing. Make sure the following users
+   exist in the local Users group:
+
+    - NT AUTHORITY\Authenticated Users
+
+    - NT AUTHORITY\INTERACTIVE
+
+For more information on troubleshooting the Component Services snap-in, see the
+following Knowledge Base article:
+
+   Q301919 PRB: Cannot Expand 'My Computer' in Component Services MMC Snap-In
+
+3. If ASP pages load in your Web browser after you have performed step 2, set
+   the site back to Medium or High application protection, and add the IWAM
+   account to the local Administrators group. If ASP pages load in your Web
+   browser after you have performed this step, a permissions issue involving the
+   IWAM account exists, and you can proceed to step 4. If ASP pages still do not
+   load, run the Synciwam.vbs utility from a command line. To do this, open a
+   command prompt and type " C:\Inetpub\adminscripts>cscript synciwam.vbs"
+   (without the quotation marks).
+
+For additional information on situations in which the IWAM user account causes
+ASP to fail, see the following Knowledge Base articles:
+
+   Q308622 HOW TO: Perform Administration Tasks in IIS from a Command Prompt
+
+   Q297989 PRB: Configured Identity Is Incorrect for IWAM Account
+
+   Q255770 PRB: Logon Failure: Unknown User Name or Bad Password When You Run
+   Out-of-Process Webs
+
+   Q236007 Domain Controller Demotion Causes Out-of-Process Applications to Fail
+
+4. To resolve permissions issues with the IWAM account, use the Regmon and
+   Filemon third-party products for Windows 2000. To download these these
+   utilities, see the following Web site:
+
+   http://www.sysinternals.com
+
+   Run these utilities while you make a request for an ASP page, then search for
+   "ACCDENIED" in Regmon and "FAILURE" in Filemon for the Dllhost.exe process.
+
+   NOTE: Do not be alarmed if you see "access denied" for the Iexplore.exe
+   (Microsoft Internet Explorer) process. This is common behavior.
+
+   For more information on the minimum permissions that are required for IIS to
+   function properly, see the following Knowledge Base article:
+
+   Q271071 Minimum NTFS Permissions Required for IIS 5.0 to Work
+
+   After you have identified "access denied" error messages for the Dllhost.exe
+   process, use Regedt32 to make any necessary modifications to NTFS permissions
+   in the registry.
+
+5. In the system event log, look for the following events:
+
+   Source: DCOM Event ID: 10010 User: NT AUTHORITY\SYSTEM Description: The
+   server {3D14228D-FBE1-11D0-995D-00C04FD919C1} did not register with DCOM
+   within the required timeout.
+
+This error message is followed in the event log by a warning message like the
+following:
+
+   Source: W3SVC Event ID: 36 User: N/A Description: The server failed to load
+   application 'AppPath'. The error was 'Server execution failed'.
+
+You may also see entries like the following in your %SystemRoot%\Iis5.log file:
+
+   OC_ABOUT_TO_COMMIT_QUEUE:Unreg iis_core:FindModules: FindProcessByNameW
+   failed!
+
+If you receive these error messages, the NT AUTHORITY\Authenticated Users or NT
+AUTHORITY\INTERACTIVE entry has been removed from the Users group. To resolve
+the problem, make sure that Authenticated Users and INTERACTIVE are members of
+the Users Group for that computer.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q327153 PRB: ASP Pages Do Not Process and DCOM Event 10010 Appears in System
+   Log
+
+6. As a last resort, you can re-create the IIS packages. To do this, follow
+   these steps:
+
+   a. Browse to Component Services and delete the following packages:
+
+       - IIS In-Process Applications
+
+       - IIS Out-of-Process Pooled Applications
+
+       - IIS Utilities
+
+   b. Open a command prompt and switch to the following folder:
+
+   %windir%\system32\inetsrv rundll32 wamreg.dll, CreateIISPackage
+
+NOTE: CreateIISPackage must be typed exactly; it is case-sensitive.
+
+   c. Close and reopen Component Services. You should see all three IIS COM+
+      applications that have been recreated.
+
+   d. Run IISRESET from a command line and test any ASP page that previously did
+      not load correctly.
+
+Additional query words: iwam ID 36 10010 500 59 C000003b
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

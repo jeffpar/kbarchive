@@ -1,0 +1,82 @@
+DOCUMENT:Q177682  10-AUG-2001  [winnt]
+TITLE   :Images Not Displayed Correctly After Installing Service Pack 3
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Windows NT 4.0 Service Pack 3 on a computer with a Matrox
+Millennium video adapter, bitmaps may be drawn outside of your program's client
+area, and the image may be upside down and mirrored.
+
+CAUSE
+=====
+
+This behavior can occur when you are using the Matrox Millennium video adapter
+driver included with Windows NT.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain and install the latest driver for you video
+adapter from Matrox. To obtain this driver, contact Matrox or visit the
+following Matrox Web site:
+
+http://www.matrox.com
+
+For information about how to contact Matrox, see the following article in the
+Microsoft Knowledge Base:
+
+ARTICLE-ID: Q60781
+TITLE : Hardware and Software Third-Party Vendor Contact List, L-P
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+
+MORE INFORMATION
+================
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: redraw draw
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,102 @@
+DOCUMENT:Q43703  29-NOV-2001  [visualc]
+TITLE   :INFO: Casting a Pointer to Type Equivalent to Multidimensional
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbLangC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C for MS-DOS 
+ - Microsoft C/C++ for MS-DOS 
+ - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52, 2.0, 2.1, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some situations you may need to cast a pointer or an address to a type that
+is equivalent to a multidimensional array. The following example demonstrates
+such a situation:
+
+   typedef char Arr2Dim [][20] ;
+   void myfunc (Arr2Dim) ;
+   char * ptr ;
+   ...
+   void main (void)
+   {
+       ...
+       myfunc ( (Arr2Dim) ptr ) ;  /* illegal */ 
+       ...
+   }
+
+Casting the variable "ptr" to the array type "Arr2Dim" is not correct. The
+Microsoft C Compiler displays the following error message:
+
+   error C2067: cast to array type is illegal
+
+The correct procedure is to cast the pointer "ptr" to a pointer type equivalent
+to the array type Arr2Dim. This pointer type can be defined as follows:
+
+      typedef char (*Ptr2Dim) [20] ;
+
+Casting "ptr" to the type of "Ptr2Dim", as follows, is correct and produces no
+warning messages when compiled at warning level 3:
+
+      myfunc ( (Ptr2Dim) ptr ) ;
+
+The address (or pointer) passed to the function is used correctly.
+
+MORE INFORMATION
+================
+
+A similar solution may be applied to the problem of dynamically allocating a
+multidimensional array. For example, the following code fragment allocates a
+memory block, which can be used as a 10 x 20 x 30 three- dimensional array:
+
+   #include <malloc.h>
+
+   typedef char (*Ptr3Dim) [20][30] ;
+   Ptr3Dim ptr3arr ;
+   ...
+   void main (void)
+   {
+       ...
+       ptr3arr = (Ptr3Dim) malloc (10 * sizeof(char) * 20 * 30) ;
+       ...
+   }
+
+After the allocation, "ptr3arr" can be used as a three-dimensional array, as
+follows, provided i, j, and k are integers within the proper range:
+
+      ptr3arr [i][j][k] = 'a' ;
+
+Additional query words:
+
+======================================================================
+Keywords          : kbLangC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbVC500 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC152 kbVC500Search
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

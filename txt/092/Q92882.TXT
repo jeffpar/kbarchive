@@ -1,0 +1,71 @@
+DOCUMENT:Q92882  30-SEP-1999  [win3x]
+TITLE   :WFWG Real Mode Redirector Error Messages Caused by Low Memory
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NET.EXE may display one of the following messages if your computer is running
+low on memory.
+
+If you have under 102 kilobytes (K) memory:
+
+   Cannot execute C:\SLALOM\NET.EXE
+
+If you have between 102K and 160K memory:
+
+   Error 8: There is not enough memory available
+
+If you have between 160K and 180K memory:
+
+   MS-DOS error SYS0008 occured trying to load "C:\DOS\NET.EXE"
+
+If you have between 180K and 212K memory:
+
+   MS-DOS error SYS0008 occured trying to load "C:\DOS\NET.EXE"
+   MS-DOS error SYS000 occurred trying to allocate a [size] MCB
+
+MORE INFORMATION
+================
+
+NET.EXE provides various error messages in these different low memory conditions
+because it loads the other network components. If you have more than 160K free
+memory, NET.EXE loads successfully but provides an error message if it runs out
+of memory when trying to load other components, such as NetBEUI and
+redirectors.
+
+NOTE: The values for conventional memory vary because NET.EXE can load programs
+into high memory or upper memory block (UMB) space if it is available.
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

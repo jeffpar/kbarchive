@@ -1,0 +1,58 @@
+DOCUMENT:Q50259  09-NOV-1999  [macmail]
+TITLE   :Mac Form: RETURN Key Not Advance to New Line in Custom Form
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you create a custom form and the Auto Tab option is set in a field, the
+RETURN key has no effect on that field once the form is installed in Mail. This
+limitation is necessary for fields such as the Subject, which are only one-line
+text fields.
+
+MORE INFORMATION
+================
+
+If the RETURN key does not advance to a new line in a scrollable field, do the
+following:
+
+1. Open the form in the Forms Designer.
+
+2. Select the field tool and double-click on the field in question.
+
+3. Make sure that the Auto Tab option is not selected.
+
+4. Compile and reinstall the form.
+
+Additional query words: 2.00 2.00a 2.00b 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

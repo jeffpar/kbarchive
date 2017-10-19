@@ -1,0 +1,63 @@
+DOCUMENT:Q152623  28-MAR-1999  [exchange]
+TITLE   :XCLN: The Setup Editor is Language Specific
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Setup Editor can only be used to customized a Microsoft
+Exchange client installation point that uses the same language as the Setup
+Editor itself. The Microsoft Exchange Setup Editor is available in 4 languages;
+English, French, Japanese, and German.
+
+If you run the Setup Editor for one language against a client installation point
+for another language (for example, using a French Setup Editor against a Spanish
+client installation point), you will receive the following error:
+
+   The STF in the specified directory is not a MS Exchange Client STF file.
+   Check the value of the "Frame Caption" Header entry.
+
+MORE INFORMATION
+================
+
+The English, French, German, and Japanese Setup Editors do not support localized
+STF files in other languages, hence the 'Frame Caption' error. This is by
+product design.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q147352 XCLN: Creating Default User Profiles
+
+Additional query words: french german japanese
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q274911  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator 2 Quits Unexpectedly
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a flight or select an aircraft in Microsoft Combat Flight
+Simulator 2: WWII Pacific Theater, the game may quit unexpectedly.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - You have copied aircraft from either Microsoft Combat Flight Simulator: WWII
+   Europe Series or Microsoft Flight Simulator 98 into the Combat Flight
+   Simulator 2 Aircraft folder.
+
+ - You have not restarted the game.
+
+RESOLUTION
+==========
+
+To resolve this issue, restart the game.
+
+Additional query words: msgame exits closes fs98 cfs airplanes combatfs cfs2
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

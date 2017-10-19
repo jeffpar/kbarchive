@@ -1,0 +1,87 @@
+DOCUMENT:Q30412  04-MAY-2001  [masm]
+TITLE   :FIX: Omitting Range Keyword After LABEL Directive Causes Error
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a LABEL directive is used without a type specifier, it will cause the
+error:
+
+   error A2003: Unknown type specifier
+
+This error will correctly occur if the LABEL directive is the first statement in
+the segment. However, if you also have executable statements prior to the LABEL
+directive in the code segment, error messages, such as:
+
+   error A2009: Symbol not defined: AX
+   error A2006: Phase error between passes
+
+will incorrectly occur on every statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 5.1. This problem
+was corrected in MASM 5.1a.
+
+MORE INFORMATION
+================
+
+The following program demonstrates the problem. The "mov ax, 1" statement will
+incorrectly generate the error message:
+
+   error A2009: Symbol not defined: AX
+
+The statement "pt1 LABEL" will generate an:
+
+   error A2003: Unknown type specifier
+
+as expected.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   .MODEL small
+   .CODE
+   main PROC
+       mov ax, 1
+       pt1 LABEL   ; This line is incorrect and should generate an error
+   main ENDP
+   END main
+
+Additional query words: 5.10 5.10a 6.00 buglist5.10 fixlist5.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510
+Version           : :5.1
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

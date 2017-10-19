@@ -1,0 +1,61 @@
+DOCUMENT:Q129390  17-DEC-2000  [win95x]
+TITLE   :Toshiba T3100 Screen Is Black After Video Resolution Change
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you change the video resolution on a Toshiba T3100 computer to a
+resolution higher than 256 colors, the screen may go black when you restart
+Windows 95.
+
+CAUSE
+=====
+
+The built-in screen on the Toshiba T3100 computer does not support more than 256
+colors. This computer does support 64,000 (16-bit) colors when you use an
+external monitor.
+
+RESOLUTION
+==========
+
+To correct the problem, follow these steps:
+
+1. Restart the computer.
+
+2. When you see the "Starting Windows 95" message, press the F5 key to start
+   Windows 95 in Safe mode.
+
+3. Change the video resolution to 256 colors or less.
+
+4. Restart Windows 95 normally.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

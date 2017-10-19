@@ -1,0 +1,86 @@
+DOCUMENT:Q87549  26-JUN-2001  [utilities]
+TITLE   :FIX: ESP Not Updated Correctly After PUSHFD, POPFD
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS 
+ - Microsoft CodeView for OS/2 
+ - Microsoft CodeView for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When single-stepping through a PUSHFD or a POPFD in Microsoft CodeView versions
+3.0, 3.11, 3.12, 3.14, 3.5, 4.0, 4.01, and 4.05 the ESP register is changed by
+only 2 bytes rather than 4 bytes.
+
+RESOLUTION
+==========
+
+The problem only occurs when single-stepping. Placing the cursor on the next
+instruction and pressing F7 will result in CodeView correctly updating the ESP
+register. If you use this workaround, make sure the next instruction does not
+modify the stack pointer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in CodeView versions 3.0, 3.11,
+3.12, 3.14, 3.5, 4.0, 4.01, and 4.05. This problem was corrected in CodeView
+version 4.1.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem. Single-step over the
+instructions to see ESP change by only 2 bytes. Restart and run to the first NOP
+and then the second to see that ESP is then correctly updated.
+
+Sample Code
+-----------
+
+   ; Assembly options needed: /Zi
+
+   _text segment word public 'code'
+      ASSUME cs:_text, ds:_text
+   .386
+      PUSHFD
+      NOP
+      POPFD
+      NOP
+
+      MOV ah, 4ch
+      INT 21h
+   _text ENDS
+      END
+
+Additional query words: 3.00 3.50 4.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3
+Version           : :
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

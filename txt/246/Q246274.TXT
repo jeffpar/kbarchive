@@ -1,0 +1,72 @@
+DOCUMENT:Q246274  22-NOV-1999  [exchange]
+TITLE   :XCLN: The Originator Does Not Have Permission to Submit Message
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send an e-mail message through a Microsoft Exchange or Microsoft
+Outlook client of Microsoft Exchange Server 5.0, you may receive the following
+non-delivery report (NDR) even though the Delivery Restrictions-Accept From list
+correctly lists your mailbox:
+
+   Your message did not reach some or all of the intended recipients.
+
+   Subject: test
+   Sent: 9/30/99 1:01:20 PM
+
+   The following recipient(s) could not be reached:
+   Doe, Jane on 9/30/99 1:01:22 PM
+
+   The originator does not have permission to submit message
+   MSEXCH:MSExchangeIS:Machine200:ServerName
+
+Such NDRs may appear randomly, originating from the information store, from the
+Internet Mail Service, or from other Microsoft Exchange Server components.
+
+CAUSE
+=====
+
+If the intended destination of the message is a .pst file instead of an inbox,
+this behavior can occur when the .pst file is corrupted.
+
+RESOLUTION
+==========
+
+To resolve this problem, at the client, reconfigure the account to deliver mail
+to an Inbox instead of a personal folder. You can also run the Inbox Repair tool
+to attempt to fix the .pst file.
+
+Additional query words: corruption
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

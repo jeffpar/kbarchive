@@ -1,0 +1,215 @@
+DOCUMENT:Q167248  09-AUG-2001  [winnt]
+TITLE   :How to Demote to BDC When Two PDCs Present
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a primary domain controller (PDC) is unavailable or needs to be taken
+offline, a backup domain controller (BDC) can be promoted in its place. This
+should only be done when the PDC is expected to be down for a long period of
+time because the automatic demotion of the original PDC to BDC will not occur.
+In many circumstances, it is fine to be without a PDC for a short time. However,
+if User Manager is needed, or if a user needs to change his or her password,
+there must be a PDC present.
+
+MORE INFORMATION
+================
+
+Promote BDC to PDC
+------------------
+
+With the primary domain controller offline or gracefully shut down and turned
+off, in Server Manager, promote one of the backup domain controllers. Because
+the primary domain controller is offline, you will receive the following
+warning:
+
+   Server Manager cannot find the Primary Domain Controller for
+   <DomainName>. You may administer the domain, but certain domain-wide
+   operations will be disabled.
+
+The second PDC to be started may report the following errors in the Event log:
+
+   Event 3097 Source Netlogon A primary domain controller is already running in
+   this domain.
+
+   Event 7024 Source Service Control Manager The Net Logon service terminated
+   with service-specific error 3097.
+
+To see a list of the backup domain controllers in your domain, verify that the
+check box is cleared next to the entry "Show Domain Members only" under the View
+menu. With this check box cleared, the list presented in Server Manager is
+provided by the browser service. When the check box is selected, the PDC's user
+account database (SAM) is queried for all Windows NT-based workstations,
+servers, and domain controllers that have a computer account in that domain. The
+following key in the registry is parsed:
+
+HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account\Users\Names\<ComputerName$>
+
+Select the backup domain controller you want to promote, and under the View menu,
+select Promote to Primary Domain Controller.
+
+Demote PDC to BDC
+-----------------
+
+Whenever domain administration tools are used, the changes or additions occur at
+the PDC. When domain synchronization occurs, these changes or deltas are sent
+from the PDC to the BDC using this one-way replication.
+
+Because a "stand-in" PDC was necessary while the "original" PDC was offline,
+changes have probably been made to the database on the stand-in computer; it
+will be important for it to remain the PDC while the original PDC is demoted.
+Successfully demoting the original PDC will also cause a synchronization with
+the stand-in PDC, giving it the recent changes done during its absence. Later,
+the original PDC can once again resume the role of PDC for the domain by simply
+promoting it in Server Manager.
+
+To demote the original PDC just brought back online, use Server Manager. Under
+the View menu, clear the check box next to "Show domain members only." This
+allows a browse list to inform Server Manager that the computer is configured as
+a PDC, and will allow it to be demoted. Select the original PDC, and select
+"Demote to backup domain controller" under the Computer menu.
+
+The following is further explanation of the browser information in Server
+Manager:
+
+Check mark next to "Show domain Members Only" (no browser information):
+
+   COMPUTER                              TYPE
+
+   PDC icon (available)     Stand-In       Windows NT Primary
+   BDC icon (dimmed)        Original       Windows NT Backup
+
+No check mark next to "Show domain Members Only" (with browser information):
+
+   COMPUTER                              TYPE
+
+   PDC icon (available)     Stand-In       Windows NT <version> Primary
+   PDC icon (dimmed)        Original       Windows NT <version> Primary
+
+With the browser information, Server Manager allows the original PDC to be
+selected and demoted by choosing "Demote to Backup Domain Controller." Without
+the browser information, Server Manager is just looking at the current PDC's
+registry, and there is no option to demote the PDC. It is considered a backup
+because the registry does not contain the role of all other domain controllers
+in the domain. Only its own role is maintained.
+
+The icon and type conventions in Server Manager when browsing information is
+introduced are altered when two PDCs are in one domain.
+
+With no browser information, all of the icons are dimmed except for the PDC,
+because that is the only computer Server Manager knows is up and running. Also
+note that the original PDC has the icon of a BDC, and the Type is Backup. With
+no other information other than the SAM on the PDC, all other domain controllers
+are BDCs in a usual environment.
+
+When browser information is integrated into the domain list in Server Manager,
+the icons can be available because there is a mechanism to determine if the
+computers are currently running in the domain. In addition, Windows NT version
+information can be included. Also, Windows for Workgroups computers that have
+their workgroup name set to that of the domain name will appear in the list.
+Notice that the original PDC's icon is dimmed and the Type has changed from
+Backup to Primary. This is because having more than one PDC in a domain violates
+domain rules, and now the browser information is parsed, and the intended role
+of the computer can be determined.
+
+Two PDCs Active at the Same Time
+--------------------------------
+
+It may be possible for more than one PDC to be active in a domain at the same
+time. This may cause serious problems, but can be the result of several things.
+If a network connection such as a router or cable fails, and during this failure
+a BDC was promoted, when the failure is resolved, two PDCs will be active in the
+domain. Because both are already running, the Netlogon service does not have the
+chance of detecting another PDC at startup time and fails to start. Some other
+reasons for having more than one PDC active would be because there is a very
+slow WAN link, the WINS databases are out of sync, not configured as push or
+pull partners, or replicating too slowly.
+
+When there are two PDCs active at the same time, when it comes time to resolving
+the situation, a decision must be made as to which changes that potentially were
+made to each User Account database using the Administrator tools must be lost.
+Because domain synchronization is a one- way replication from the PDC to BDC,
+there is no merging or time-stamp method for resolving the differences.
+
+In addition to running User Manager on each PDC to determine what accounts it
+has, you can type NET USER at the command prompt.
+
+You can choose whichever PDC to demote by having its Netlogon service "collide"
+with the other PDC's Netlogon service. The first computer to successfully start
+the Netlogon service and browser service, will remain the PDC. The second PDC
+that starts and has its Netlogon service fail to start can be demoted.
+
+Use NET ACCOUNTS to Verify Domain Controller Role
+-------------------------------------------------
+
+At a command prompt, Cmd.exe, enter the following to determine the current role
+of a domain controller:
+
+   <DriveLetter>\NET ACCOUNTS
+
+Below is a sample of the output:
+
+   c:\>NET ACCOUNTS
+   Force user logoff how long after time expires?:       Never
+   Minimum password age (days):                          0
+   Maximum password age (days):                          42
+   Minimum password length:                              0
+   Length of password history maintained:                None
+   Lockout threshold:                                    Never
+   Lockout duration (minutes):                           30
+   Lockout observation window (minutes):                 30
+   Computer role:                                        PRIMARY
+   The command completed successfully.
+
+The last line indicates the present role of the Domain Controller.
+
+
+Two PDCs Active at the Same Time
+--------------------------------
+
+If two PDCs are active at the same time, you may receive event ID 5512:
+
+   Component:NET
+   Event ID:5512Log: System
+   Source:NetLogonType: Error
+
+Explanation: Each domain should have only one PDC. Two PDCs exist in the domain
+because one of the PDCs stopped working for an extended period. A backup domain
+controller (BDC) was then promoted to PDC. Now the original PDC is working
+again.
+
+Additional query words: Srvmgr.exe Usrmgr.exe Musrmgr.exe ntfaqdom win2000hotds
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

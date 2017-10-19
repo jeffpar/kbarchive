@@ -1,0 +1,65 @@
+DOCUMENT:Q114559  07-SEP-2001  [winnt]
+TITLE   :Print to Encapsulated PostScript File Option Disabled
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+
+
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT PostScript printer driver user interface has an option to force
+all jobs sent to a particular PostScript printer to be converted to an
+encapsulated PostScript (EPS) file instead of being sent to the print device.
+This option is disabled (grayed out) and cannot be enabled.
+
+MORE INFORMATION
+================
+
+To view this option, create a PostScript printer in Print Manager, select this
+printer, and choose the Properties option from the Printer menu. Next, select
+the Details button, then select the Job Defaults button, then select the Options
+button. In the Print To dialog box, the option that indicates a choice of
+printing to Printer or Encapsulated PostScript File is permanently set to
+Printer; the Encapsulated PostScript File option is unavailable.
+
+This option was built into previous Windows PostScript drivers to let people
+generate EPS graphics from any application, including applications like Notepad
+that do not natively have code to create EPS graphics. This was an important
+feature in earlier versions of Windows, when few applications could create EPS
+graphics natively. Today, most people who want to generate EPS graphics use more
+sophisticated applications that can generate these graphics by themselves.
+
+
+Additional query words: prodnt grey dimmed dim
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

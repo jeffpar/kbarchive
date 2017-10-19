@@ -1,0 +1,60 @@
+DOCUMENT:Q259145  12-NOV-2001  [homegame]
+TITLE   :Allegiance: Ship Stops Responding to Keyboard Controls
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Allegiance, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the keyboard to pilot a ship in Microsoft Allegiance, the ship may
+stop responding to the controls.
+
+CAUSE
+=====
+
+This behavior can occur if you press more than one key at a time.
+
+RESOLUTION
+==========
+
+To resolve this issue, press the ESC key.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Allegiance, version
+1.0.
+
+Additional query words: 1.00 msgame igz msngz locked lost control autopilot
+
+======================================================================
+Keywords          : kbui igz kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbAllegianceSearch kbAllegiance
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

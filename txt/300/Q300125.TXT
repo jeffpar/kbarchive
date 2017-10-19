@@ -1,0 +1,70 @@
+DOCUMENT:Q300125  04-JUN-2001  [msdn]
+TITLE   :Using Passport Manager Verbose Mode
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Passport Manager object supports a verbose mode, which can be used for
+debugging and troubleshooting.
+
+MORE INFORMATION
+================
+
+When verbose mode is enabled, many of the internal Passport events, methods,
+variables, and properties are written to a text log file. The log can then be
+viewed to retrace the path of success that the object has completed. Check this
+path of success against your code to help you in finding the part of the process
+that is not functioning completely.
+
+You can enable verbose mode by running the Passport Manager Administration
+utility and selecting the Verbose Mode check box. View the Passport Manager
+verbose mode log to trace the methods and properties that are called and set
+during Passport Manager object operations.
+
+Methods of a Passport Manager object log an "enter" event. The logged event
+includes the values that are passed to the method in the log. When the internal
+method finishes, an "exit" event is logged and includes the results of the
+method call in the log as well.
+
+Property calls of a Passport Manager object log the event with the property call
+result.
+
+For more information, see the following Passport SDK Web site:
+
+   Verbose Mode
+   http://www.passport.com/sdkdocuments/sdk14/Reference/Operations/verbosemode.htm
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

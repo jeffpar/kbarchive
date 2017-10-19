@@ -1,0 +1,67 @@
+DOCUMENT:Q145718  23-JAN-2000  [pcmail]
+TITLE   :PC Gen: Err Msg: Error Copying... when Running MMFCLEAN.EXE
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the MMFClean utility, MMFCLEAN.EXE, is used against a mail message file
+(.MMF) with a hexadecimal identifier (hex-id) of more than three significant
+digits, MMFCLEAN.EXE will not affect the file.
+
+You may also get an error message in the MMFCLEAN.LOG file:
+
+   Error copying <drive>:\MAILDATA\MMF\<hex-id>.MMF
+
+where "drive" is the drive the postoffice is mapped to, and the "hex-id" is for
+the .MMF file that could not be cleaned.
+
+CAUSE
+=====
+
+MMFCLEAN.EXE will only effectively operate on the three digits left of the
+decimal point. For example, the MMFCLEAN.LOG indicates the following error when
+executed against MMF filename 00001234.MMF:
+
+   User1 00000234
+   Error copying M:\MMF\00000234.MMF to M:\MMF\~~MMFCCN.TMP
+
+RESOLUTION
+==========
+
+This problem has been resolved in version 3.5.4096 of MMFCLEAN.EXE. Please
+contact Microsoft Product Support Services in order to obtain the latest
+revision of MMFCLEAN.EXE.
+
+Additional query words: 3.50 mmfclean 3
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

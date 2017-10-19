@@ -1,0 +1,273 @@
+DOCUMENT:Q173384  09-AUG-2001  [winnt]
+TITLE   :HOWTO: Recover from Deleting the Repair Directory and Setup.log
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Deleting the %SystemRoot%\Repair folder from a Windows NT 3.51 or 4.0 Server or
+Workstation installation produces the following problems:
+
+ - You cannot install a Windows NT Service Pack.
+
+   When you run the Update program from the Windows NT service pack you receive
+   the following error message:
+
+   Service Pack Setup could not find the Setup.log file in your repair
+   directory.
+
+   The Update program will not continue.
+
+ - You cannot create an Emergency Repair Disk. When you run Rdisk to update and
+   create an Emergency Repair Disk, it fails with the following error message:
+
+   Repair Disk Utility could not copy all files to the Emergency Repair Disk.
+   One or more files were not found.
+
+   This error occurs after the update option has finished copying the following
+   files to the newly created repair folder:
+
+      Autoexec.nt
+      Config.nt
+      ntuser.da_ New user profile (V4.0 only)
+      Software._ Software Registry hive
+      System._   System Registry hive
+
+The following files are missing from the repair folder and are necessary for a
+good Emergency Repair Disk.
+
+     Sam._      Sam Registry hive
+     Security._ Security hive
+     Default._  Default user profile
+     SETUP.LOG file
+
+MORE INFORMATION
+================
+
+Windows NT 4.0
+--------------
+
+To fix both problems, you can do an in-place upgrade of Windows NT 4.0. If your
+computer is running Windows NT 4.0 Service Pack 2 or earlier and is formatted as
+NTFS or FAT, perform the following steps:
+
+1. Start the system from Setup Disk One of the three Windows NT setup disks.
+   After you insert the second setup disk, select "To setup Windows NT now,
+   Press ENTER".
+
+2. Select a mass storage device, and then insert Setup Disk Three.
+
+3. Select "To upgrade Windows NT in the directory above, press ENTER." Verify
+   that the folder is the one you want to upgrade and press Enter. Press Esc to
+   bypass exhaustive examination.
+
+   Windows NT Setup now performs an in-place upgrade, and creates a new
+   %SystemRoot%\Repair folder and Setup.log file. You are also asked to create
+   an Emergency Repair Disk. Click Yes, and create an Emergency Repair Disk.
+
+NOTE: An upgraded installation of Windows NT 4.0 over an installation with
+Service Pack 2 or later can result in an unstable or unbootable system. Backup
+the system before proceeding and be sure to reinstall the latest Service Pack
+after the upgrade installation.
+
+Windows NT 4.0 Service Pack 3 NTFS Format:
+------------------------------------------
+
+If your computer is running Windows NT 4.0 Service Pack 3 and is NTFS, perform
+the following steps:
+
+1. Do a parallel installation of Windows NT 4.0.
+
+   Make sure you have 160 MB of free disk space on your computer, then insert
+   Setup Disk One of the Windows NT Setup disks and install Windows NT into a
+   new folder called NTFIX.
+
+2. Apply the latest Service Pack to this installation.
+
+3. Perform in-place upgrade of the original installation.
+
+4. When the system restarts, select the parallel installation to boot from. (The
+   first menu item in the Boot.ini display)
+
+5. Copy the following 3 files from the NTFIX\System32 folder to the original
+   folder (the .dll files are hidden):
+
+   Samlib.dll
+   Samsrv.dll
+   Winlogon.exe
+
+   If you are running Windows NT 4.0 Service Pack 4 (SP4, copy these additional
+   files from the NTFIX\System32 folder to the original folder:
+
+   Lsasrv.dll
+   Services.exe
+   Msv1_0.dll
+
+6. Shutdown and boot into the original installation, (the third menu item in the
+   Boot.ini display). Reapply the latest Service Pack.
+
+7. After the system begins booting into the original installation, remove the
+   read-only attribute from the Boot.ini file, click Boot.ini, and then delete
+   all references to the NTFIX folder. Make sure to change the Default line in
+   the Boot.ini file to point to the original folder.
+   (default=multi(0)disk(0)rdisk(0)partition(1)\"original directory")
+
+8. Delete the NTFIX folder.
+
+Windows NT 4.0 Service Pack 3 FAT Format:
+-----------------------------------------
+
+If your computer is running Windows NT 4.0 Service Pack 3 and is FAT, follow
+these steps:
+
+1. Copy the following files 3 files from the Winnt_Root\System32 folder to a
+   temporary location: (The .dll files are hidden)
+
+      Samlib.dll
+      Samsrv.dll
+      Winlogon.exe
+
+   If you are running Windows NT 4.0 Service Pack 4, copy these additional files
+   to the original folder:
+
+   Lsasrv.dll
+   Services.exe
+   Msv1_0.dll
+
+2. Start the system from Setup Disk One of the three Windows NT Setup disks.
+   After you insert the second setup disk, select "To setup Windows NT now,
+   Press ENTER".
+
+3. Select a mass storage device, and then insert Setup Disk three.
+
+4. Select "To upgrade Windows NT in the directory above, press ENTER." Verify
+   that the folder is the one you want to upgrade and press Enter. Press Esc to
+   bypass exhaustive examination.
+
+   Windows NT Setup performs an in-place Upgrade, and creates a new
+   Winnt_Root\Repair folder and Setup.log file. You are also asked to create an
+   Emergency Repair Disk. Click Yes to create an Emergency Repair Disk.
+
+5. Boot your system to DOS. Copy the three saved files from step 1 above to the
+   Winnt_Root\System32 folder.
+
+6. Restart your system and apply the latest Service Pack.
+
+Windows NT 3.51
+---------------
+
+To fix both problems, you can do an in-place upgrade of Windows NT 3.51. If your
+computer is running Windows NT 3.51 Service Pack 3 or earlier and formatted as
+NTFS or FAT, follow these steps:
+
+1. Start the system from Setup Disk One of the three Windows NT Setup disks.
+   After you insert the second setup disk choose "To setup Windows NT now, Press
+   ENTER".
+
+2. Select a mass storage device, and then insert Setup Disk Three.
+
+3. Select "To upgrade Windows NT in the directory above, press ENTER." Verify
+   that the folder is the one you want to upgrade and press Enter. Press Esc to
+   bypass exhaustive examination.
+
+   Windows NT Setup performs an in-place upgrade, and creates a new
+   %SystemRoot%\Repair folder and Setup.log file. You are also asked to create
+   an Emergency Repair Disk. Click Yes and create an Emergency Repair Disk.
+
+Windows NT 3.51 Service Pack 4 or 5 FAT Format:
+-----------------------------------------------
+
+If your computer is running Windows NT 3.51 Service Pack 4 or 5 and is FAT
+format, follow these steps:
+
+1. Copy Samsrv.dll from the Winnt_Root\system32 folder to a temporary location.
+
+2. Start the system from Setup Disk One of the three Windows NT Setup disks.
+   After inserting the second setup disk choose "To setup Windows NT now, Press
+   ENTER".
+
+3. Select a mass storage device, and then insert Setup Disk Three.
+
+4. Select "To upgrade Windows NT in the directory above, press ENTER." Verify
+   that the folder is the one you want to upgrade, and then press Enter. Press
+   Esc to bypass exhaustive examination.
+
+   Windows NT Setup performs an in-place upgrade, and creates a new
+   Winnt_Root\Repair folder and Setup.log file. You are also asked to create an
+   Emergency Repair Disk. Click Yes and create an Emergency Repair Disk.
+
+5. Boot your system to DOS. Copy Samsrv.dll from step 1 above to the
+   Winnt_Root\System32 folder.
+
+6. Restart your system and re-apply the latest Service Pack.
+
+Windows NT 3.51 Service Pack 4 or 5 NTFS Format:
+------------------------------------------------
+
+If your computer is running Windows NT 3.51 Service Pack 4 or 5 and is NTFS
+format, follow these steps:
+
+1. Do a parallel installation of Windows NT 3.51.
+
+   Make sure you have 100 MB of free disk space on your computer, then insert
+   Setup Disk 1 of the Windows NT setup disks. Install Windows NT into a new
+   folder called NTFIX.
+
+2. Apply the latest Service Pack to this installation.
+
+3. Perform an in-place upgrade of the original installation.
+
+4. When the system restarts, select the parallel installation to boot from (the
+   first menu item in the Boot.ini display). Copy Samsrv.dll from the
+   NTFIX\System32 folder to the Winnt_Root\System32 folder (the original
+   installation).
+
+5. Shutdown and boot into the original installation (the third menu item in the
+   Boot.ini display). Reapply the latest Service Pack.
+
+6. After the system begins booting into the original installation, remove the
+   read-only attribute from the Boot.ini file, click on it and delete all
+   references to the NTFIX folder. Make sure to change the Default line in the
+   Boot.ini to point to the original folder.
+   (default=multi(0)disk(0)rdisk(0)partition(1)\"original directory")
+
+7. Delete the NTFIX folder.
+
+Now that you have a valid repair folder and Setup.log file, you can install a
+Windows NT Service Pack and update the Emergency Repair Disk information without
+errors.
+
+Additional query words: repair setup.log
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

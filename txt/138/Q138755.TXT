@@ -1,0 +1,78 @@
+DOCUMENT:Q138755  09-MAY-2001  [visualc]
+TITLE   :FIX: GPF When Drag-Drop Resources Between Two Resource Scripts
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbui _IK920 kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you drag-and-drop resources between two Resource Scripts and then try to
+undo the drag-and-drop, Visual C++ terminates the action with an Application
+Error (general protection (GP) fault). This happens only when you try to undo it
+while the resource that was dragged and dropped is left open.
+
+RESOLUTION
+==========
+
+Without opening the resource kit that was dragged and dropped select Undo.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+version 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open or create a resource script that contains at least one resource (for
+   example, a Dialog resource).
+
+2. Open or create another Resource Script. Drop the dialog resource into this
+   file, and open it.
+
+3. With this dialog resource open, shift the focus back to the first resource
+   script file.
+
+4. Select Undo the Drag-and-Drop. At this point, an application error appears.
+
+Additional query words: gpf
+
+======================================================================
+Keywords          : kbui _IK920 kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q77195  02-NOV-1999  [win95x]
+TITLE   :Modified Hardware Description Text in Windows Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When running Windows Setup, you may find the text for the hardware descriptions
+listing specific .DRV files or other nonstandard hardware descriptions.
+
+MORE INFORMATION
+================
+
+When running Windows Setup for the first time, the hardware descriptions are
+read from the SETUP.INF file. The chosen configuration is then written to the
+SYSTEM.INI's [boot.description] section. Thereafter, when running the Windows
+Setup to make modifications to an existing installation of Windows, Windows
+reads from the [boot.description] section of the SYSTEM.INI for the text
+descriptions of the current configuration.
+
+Possible causes for these changes include:
+
+1. Modification of the SETUP.INF by you or by a third-party device driver
+   installation
+
+2. Modification of the SYSTEM.INI's [boot.description] section by you or by
+   third-party device driver installation
+
+3. OEM versions of SETUP.INF that do not have the standard description text
+
+Note that there might be multiple SETUP.INF and/or SYSTEM.INI files on the
+system. The Search command in the File menu in File Manager may help you locate
+these files. If you are running Windows on a network, search both local and
+network Windows directories.
+
+Additional query words: 3.0 3.00 3.0a 3.00a 3.1 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

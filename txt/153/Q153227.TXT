@@ -1,0 +1,78 @@
+DOCUMENT:Q153227  30-JUL-2001  [sms]
+TITLE   :SMS: PCM Requires Restart After Running a Package
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run a "Run Command on Workstation" job, the following message appears
+on Windows clients:
+
+   Reboot to Complete Installation
+
+   Please close all running applications. The system must be rebooted to complete
+   installation. Press ENTER to reboot.
+
+This message appears even though a restart is not required.
+
+CAUSE
+=====
+
+The following two files may exist in the Windows directory: _Mssetup.bat and
+_Msrstrt.exe. Package Command Manager (PCM) looks for these two files to
+determine whether a restart is required. Many setup programs use these files in
+the installation process. It is possible that a setup program left them behind.
+
+MORE INFORMATION
+================
+
+Setup programs may construct a batch file containing operations that must be
+performed during a restart, by using ExitWindowsExec, and then restarting
+Windows. In order to set up multiple programs before a restart, PCM prevents the
+restart by displaying the message mentioned above, and then performs an
+ExitWindowsExec when the user elects to restart. This also gives the user a
+chance to save any work.
+
+To copy system files that may be in use, or to coordinate multiple or unattended
+setups, the batch file of each setup program can be concatenated to the
+_Mssetup.bat file. If _Mssetup.bat does not exist, then the batch file of the
+first setup program is renamed to _Mssetup.bat. The _Msrstrt.exe program is
+called by ExitWindowsExec and runs the batch file _Mssetup.bat. It then deletes
+both the batch file and _Msrstrt.exe.
+
+For more information on creating Package Definition Files (PDFs), please refer to
+the Microsoft BackOffice SDK.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

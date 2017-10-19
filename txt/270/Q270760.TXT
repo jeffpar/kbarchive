@@ -1,0 +1,64 @@
+DOCUMENT:Q270760  23-OCT-2000  [homemm]
+TITLE   :ELL: Program Hangs When You Record in Virtual Challenge
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Language Learning French 
+ - Microsoft Encarta Language Learning French Deluxe 
+ - Microsoft Encarta Language Learning Spanish 
+ - Microsoft Encarta Language Learning Spanish Deluxe 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you record in the Virtual Challenge feature included in any of the
+Microsoft Encarta Language Learning programs listed at the beginning of this
+article, the program may stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if you do not use proper pronunciation or the correct
+words in the Virtual Challenge.
+
+RESOLUTION
+==========
+
+To resolve this issue, restart the Encarta Language Learning program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm ellf ells crash lock freeze
+
+======================================================================
+Keywords          : kbenv kbsound kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbHLangSpanish kbHLangFrench
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

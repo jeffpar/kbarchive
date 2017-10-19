@@ -1,0 +1,68 @@
+DOCUMENT:Q226297  10-JUL-1999  [sms]
+TITLE   :SMS: How Remote Tools Locates a Client and Establishes a Session
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbenv kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how Systems Management Server 2.0 establishes a
+connection with a client computer.
+
+MORE INFORMATION
+================
+
+When you attempt to establish a remote tools session with a Systems Management
+Server client computer, the Systems Management Server Administrator console uses
+a specific order to establish the session. The following list outlines this
+order:
+
+1. The Systems Management Server Administrator console uses the name of the
+   client stored in the site database. This method is dependant on network-level
+   name resolution.
+
+2. The Systems Management Server Administrator console uses all IP and IPX
+   addresses for the resource from the site database.
+
+3. The Systems Management Server Administrator console connects using the
+   NetBIOS base's LANA numbers.
+
+The Systems Management Server Administrator console attempts name resolution
+first to account for clients who have recently been assigned a new IP address.
+The time delay to update the routers and name servers in your environment is
+dependant upon your network topology and configuration. The next client
+discovery cycle updates the IP, IPX, and NetBIOS names and addresses
+automatically in the Systems Management Server database.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q145588  27-JUL-2001  [sms]
+TITLE   :SMS Client Group and Icons Not Created for RAS Client
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you execute the Systems Management Server (SMS) Client Setup from a Windows
+for Workgroups or Windows 95 client via Remote Access Service (RAS), the SMS
+Client Group and Icons are not created.
+
+CAUSE
+=====
+
+After the first phase of Client Setup completes, you are instructed to restart
+the system to allow changes to take affect. Since Windows for Workgroups and
+Windows 95 RAS clients do not have a network connection when they are started,
+the SMSRUN16.EXE file, called from the load= line in the WIN.INI, does not
+execute properly. The SMS Client Group and Icons are not created. This also
+prevents any autostart components such as PGC and PCM from starting at bootup.
+
+WORKAROUND
+==========
+
+After the system has started, make a RAS connection to your network and the
+manually execute SMSRUN16.EXE located in the \MS\SMS\BIN directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.1. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

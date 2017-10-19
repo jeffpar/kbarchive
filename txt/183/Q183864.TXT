@@ -1,0 +1,133 @@
+DOCUMENT:Q183864  09-AUG-2001  [winnt]
+TITLE   :Windows NT 4.0 Resource Kit Perfm.bat Error
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running the Perfm.bat batch file from the Windows NT resource kit to
+install SNMP Performance Monitor Agent Extensions, you may receive the error:
+
+   Unable to open 'C:\NTRESKIT\LMMIB2MIB'
+
+Also, the Mib.bin file created by this batch file is incorrectly only 23 bytes
+and Snmputil.exe queries may not work properly.
+
+CAUSE
+=====
+
+The batch Perfm.bat file supplied with the Windows NT resource kit to
+automatically install SNMP Performance Monitor Agent Extensions has various
+typos and errors that cause it to fail.
+
+RESOLUTION
+==========
+
+The following batch file, if run from the NTReskit directory at an MS-DOS prompt
+inside of Windows NT, should create the correct Mib.bin file and add the
+Performance Counter Agent Extensions correctly:
+
+      @echo off
+      echo "Creating perfmib....."
+      @echo on
+      perf2mib perfmib.mib perfmib.ini memory 1 memory processor 2 CPU
+      "Network   Segment" 3 net PhysicalDisk 4 disk
+      @echo off
+      echo "Compiling perfmib"
+      @echo on
+      mibcc -omib.bin -n -t -w2 SMI.MIB LMMIB2.MIB mib_ii.mib perfmib.mib
+
+      @echo off
+      echo "Stopping snmp service"
+      @echo on
+      net stop snmp
+
+      @echo off
+      echo "Saving old mib to mib.old...."
+      @echo on
+      move %systemroot%\system32\mib.bin %systemroot%\system32\mib.old
+
+      @echo off
+      echo "Copying perfmib files from NTResKit to system32"
+      @echo on
+      copy perfmib.dll %systemroot%\system32\perfmib.dll
+      copy perfmib.ini %systemroot%\system32\perfmib.ini
+      copy mib.bin %systemroot%\system32\mib.bin
+
+      @echo off
+      echo "Registering new Mibs"
+      @echo on
+      regini perfmib.reg
+
+      @echo off
+      echo "Restarting SNMP Service"
+      @echo on
+      net start snmp
+
+NOTE: If the SNMP Service causes an access violation when it restarts, restart
+the computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the resource kits for Microsoft
+NT Server 4.0 and Workstation 4.0. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+To test the results of the batch file above, try the following command using the
+Snmputil.exe utility from the Windows NT resource kit:
+
+SNMPUTIL get <agent> <community>
+
+.iso.org.dod.internet.private.enterprises.microsoft.software.1.3.1.1.1.1.0
+
+The results should look similar to the following:
+
+>snmputil get <agent / computernmae> <communtiy>
+
+.iso.org.dod.internet.private.enterprises.microsoft.software.1.3.1.1.1.1.0
+
+   Variable =
+
+.iso.org.dod.internet.private.enterprises.microsoft.software.1.3.1.1.1.1.0
+
+   Value    = INTEGER - 757760
+
+The above example is the "memory free" OID.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

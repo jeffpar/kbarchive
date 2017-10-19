@@ -1,0 +1,144 @@
+DOCUMENT:Q174004  11-JAN-2001  [vbwin]
+TITLE   :FIX: Cannot Change Variant Array in Class Module
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual Basic 4.0, an array stored in a variant class variable could be
+changed from code external to the class. In Visual Basic 5.0, changing values in
+the array will have no effect.
+
+CAUSE
+=====
+
+The behavior of Visual Basic 4.0 was incorrect. This has been corrected in
+Visual Basic 5.0. In Visual Basic 4.0, storing an array in a variant variable
+was commonly used as a workaround for the fact that arrays cannot be declared as
+Public members of a class. However, this workaround is neither necessary nor
+recommended. If the approach outlined in the next section had been used, this
+problem would not have occurred regardless of the version of Visual Basic in
+use.
+
+RESOLUTION
+==========
+
+Arrays cannot be declared as Public members of a class. The recommended method
+of implementing an array as a member of a class is to declare the array as
+Private, and create Property Let and Get methods to manage the array. For
+example:
+
+      Private myarray() as String
+
+      Public Property Get marray(ByVal subscript As Integer) As String
+      marray = myarray(subscript)
+      End Property
+
+      Public Property Let marray(ByVal subscript As Integer, _
+         ByVal vNewValue As String)
+      On Error GoTo err_Array_Not_Initialized
+      If subscript > UBound(myarray) Then
+         ReDim Preserve myarray(subscript)
+      End If
+      myarray(subscript) = vNewValue
+      Exit Property
+
+      err_Array_Not_Initialized:
+      If Err.Number = 9 Then
+         ReDim myarray(1)
+         Resume
+      End If
+      End Property
+
+STATUS
+======
+
+This problem has been corrected in Visual Basic 5.0.
+
+MORE INFORMATION
+================
+
+Microsoft has acknowledged that this change in behavior may be an issue for some
+developers porting Visual Basic 4.0 code to Visual Basic 5.0. Code that relies
+on the functionality shown below, and acceptable in Visual Basic 4.0, will need
+to be modified.
+
+Steps to Reproduce Behavior That Was Previously Acceptable
+----------------------------------------------------------
+
+1. Create a new "Standard EXE" project in Visual Basic 5.0.
+
+2. Add a Class Module to the project.
+
+3. Add the following code to Class1:
+
+         Public aVariant As Variant
+
+         Private Sub Class_Initialize()
+         Dim anArray(2)
+            anArray(1) = "Hello"
+            anArray(2) = "World"
+            aVariant = anArray
+         End Sub
+
+4. Add the following code to the Click event of Form1:
+
+         Private Sub Form_Click()
+         Dim obj As New Class1
+            With obj
+               .aVariant(1) = "Goodbye"
+               .aVariant(2) = "Everyone"
+               Debug.Print .aVariant(1)
+               Debug.Print .aVariant(2)
+            End With
+            Set obj = Nothing
+         End Sub
+
+5. Run the project and click on Form1. Note that the values displayed in the
+   immediate window are "Hello" and "World", which are the original values
+   assigned to the array during the class initialization event.
+
+6. If desired, repeat steps 1 through 5 in Visual Basic 4.0. Note that the
+   values displayed in the immediate window are "Goodbye" and "Everyone."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400 kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

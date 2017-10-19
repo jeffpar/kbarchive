@@ -1,0 +1,58 @@
+DOCUMENT:Q121558  08-NOV-2001  [homemm]
+TITLE   :Art Gallery Fonts Distorted, Colored, or Covered by Rectangles
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbfile kbgraphic kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Art Gallery for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Art Gallery on an Apple Power Macintosh, the Art Gallery
+text may appear distorted, may be the wrong color, or may be covered in dark
+rectangles. This problem occurs most frequently in the See Also dialog boxes and
+with the word "Animation" on the Animation button in the guided tours.
+
+CAUSE
+=====
+
+This is a problem with the Apple Power Macintosh systems earlier than version
+7.5.1. This problem appears to be caused by the Power Macintosh 680x0 chip
+emulation, or by the native version of QuickDraw on the Power Macintosh.
+
+RESOLUTION
+==========
+
+This problem is corrected with System 7.5.1 and higher for the Macintosh. To
+correct this problem, obtain the version 7.5.1 update from Apple.
+
+Additional query words: multi media multimedia multi-media mmtitles homemm artgallery font fuzzy unclear box black boxes squares over on top blurry blurred mac
+
+======================================================================
+Keywords          : kbfile kbgraphic kbmm 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbArtGalleryMac
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

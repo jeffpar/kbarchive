@@ -1,0 +1,66 @@
+DOCUMENT:Q165530  14-NOV-2000  [word97]
+TITLE   :WD97: ODMA TeamLinks: Cannot Open Reserved File
+PRODUCT :Word 97 for Windows
+PROD/VER::97
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbusage winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to open a TeamLinks document that is already open by another user,
+you will receive the following message:
+
+   "<filename>". The object is already reserved by <username>. You
+   may open the file, but you cannot save changes back to the original.
+
+When you click OK, the document doesn't open.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Microsoft Word won't open a TeamLinks document as read-only if the document is
+reserved by another user.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q159963 Word 97 Supports ODMA
+
+Additional query words: OFF97
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbusage winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

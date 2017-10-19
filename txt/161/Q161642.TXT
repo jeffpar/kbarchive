@@ -1,0 +1,134 @@
+DOCUMENT:Q161642  08-MAY-2002  [win95x]
+TITLE   :Auto Insert Notification May Prevent Automatic Suspend
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardware kbgraphxlinkcriticalkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some computers are equipped with power management features that place the
+computer in a suspended power state after a certain period of inactivity. If the
+Auto Insert Notification option is enabled for IDE CD-ROM drives on such a
+computer, the computer may not be suspended automatically.
+
+CAUSE
+=====
+
+Some IDE CD-ROM drives support a polling method that the power-management
+components detect as drive activity. It seems that the drive is still in use,
+preventing the computer from being suspended.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem immediately, download the fix as instructed below or
+contact Microsoft Product Support Services to obtain the fix. For a complete
+list of Microsoft Product Support Services phone numbers and information on
+support costs, please go to the following address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Download Remideup.exe now
+   (http://download.microsoft.com/download/win95upg/update2/1/w95/en-us/remideup.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The following files are installed by Remideup.exe:
+
+   File name     Version    Date/Time       Size   Destination folder
+   -----------------------------------------------------------------------
+   Esdi_506.pdr  4.00.1116  8/25/97 11:16a  24,426 Windows\System\Iosubsys
+   Voltrack.vxd  4.00.954   3/6/96 9:54a    18,518 Windows\System\Iosubsys
+
+NOTE: The Voltrack.vxd file is installed on Windows 95 computers only. This file
+is not installed on computers running OSR2.
+
+
+This issue is resolved in Microsoft Windows 98.
+
+You can work around this issue by disabling the Auto Insert Notification option
+for affected drives. For information about how to do so, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q126025 How to Disable Automatic CD-ROM Running and Audio CD Playing
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This issue affects IDE CD-ROM drives that support the ATA GET MEDIA STATUS
+command for polling for drive status as defined in Media Status Notification
+Specification v.1.03.
+
+For additional information about issues resolved by updates to this component,
+please see the following articles in the Microsoft Knowledge Base:
+
+   Q171353 Computer with Ultra DMA IDE Controller May Hang
+
+   Q160800 "Fatal Exception Error" with Iomega IDE Zip Drives
+
+   Q154976 Error Message Running Jet Database Engine Stress Test
+
+   Q154436 Errors Accessing Hard Disk with Spin-Down Enabled
+
+   Q154435 Windows 95 IDE Support for SMART, DMA, and ATAPI Tape Drives
+
+   Q153471 Problems with Removable IDE Drives in Windows 95
+
+
+Additional query words: 95
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware kbgraphxlinkcritical kbfixlist
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

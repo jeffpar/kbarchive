@@ -1,0 +1,75 @@
+DOCUMENT:Q122932  25-JUL-2001  [visualc]
+TITLE   :FIX: Special Characters in Path May Prevent File Access
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbide kbVC kbVC200bug kbVC400fix kbGrpDSToolskbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Visual C++ fails to open files that have .BSC or .RC extensions when
+there are special characters (shown below) in the path. The editor will return
+to the main window without posting a warning or error.
+
+CAUSE
+=====
+
+The space character and the following characters cause this problem:
+
+   $  %  @  #  !  ^  (  )  {  }  [  ]
+
+All of these characters should work; they are all acceptable.
+
+RESOLUTION
+==========
+
+To work around this problem, avoid using any of the special characters listed
+above.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+version 4.0.
+
+REFERENCES
+==========
+
+For information about related problems with NMake, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q121018 BUG: Special Characters in Path Cause NMake Error U1007
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVC kbVC200bug kbVC400fix kbGrpDSTools kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbVC200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

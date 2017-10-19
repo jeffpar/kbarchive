@@ -1,0 +1,65 @@
+DOCUMENT:Q185366  09-MAY-2002  [homegame]
+TITLE   :Return of Arcade: Exception 10H When You Calibrate Joystick
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Return of Arcade for Windows, version 1.0 
+ - Microsoft SideWinder Force Feedback Pro, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to calibrate a SideWinder Force Feedback Pro joystick from inside
+any of the games included in Return of Arcade, you receive the following error
+message when you click Properties in the Game Controllers tool in Control
+Panel:
+
+   <filename> caused an exception 10H in module Sw3dpffs.dll.
+
+RESOLUTION
+==========
+
+As the SideWinder Force Feedback Pro joystick is a digital device, you do not
+need to calibrate it.
+
+To prevent this problem from occurring, do not attempt to calibrate the
+SideWinder Force Feedback Pro joystick from inside any of the games included in
+Return of Arcade.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Return of Arcade for
+Windows, version 1.0.
+
+Additional query words: 1.00 roa msgame side winder
+
+======================================================================
+Keywords          : kberrmsg kbtool kbimu msgame 
+Technology        : kbMSHardwareSearch kbGamesSearch kbArcadeRet kbZNotKeyword kbArcadeSearch kbZNotKeyword3 kbSideWinderFFPro kbSidewinderSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

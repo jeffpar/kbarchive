@@ -1,0 +1,128 @@
+DOCUMENT:Q189729  21-DEC-2001  [exchange]
+TITLE   :XCLN: How to Remove Outlook Express Icon Using ODK
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Explorer for Windows 95 
+ - Microsoft Outlook 98, on platform(s):
+    - Microsoft Windows 95 
+    - the operating system: Microsoft Windows NT 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the Outlook Deployment Kit (ODK) to install Outlook 98,
+administrators may want to keep the Outlook Express icon from showing on the
+users' desktops. This article provides instructions for using the Ol98qfe2.exe
+utility to remove the OE icon to help administrators who have not used the
+custom components feature before.
+
+MORE INFORMATION
+================
+
+An executable utility, Ol98qfe2.exe, can be packaged in the ODK build process
+that will keep the icon for Outlook Express (OE) from being created. The
+executable needs to be packaged in the ODK build and it will run silently during
+the setup process.
+
+NOTE: If Internet Explorer 4.01 Service Pack 1 is already installed, you cannot
+use the Ol98qfe2.exe utility to remove the OE icon. It will not remove the icon
+if it already exists.
+
+What It Will Do
+---------------
+
+If Internet Explorer is not installed before running the ODK Setup, then the OE
+icon will never be created. If Internet Explorer has been installed before
+setup, and you have deleted the OE icon from your users' desktops, the icon will
+not appear. If Internet Explorer has been installed, and the OE icon is on the
+desktop, this utility will remove the icon.
+
+There is one command-line option, the /Q switch, which allows the utility to run
+silently. If the switch is not used, the utility will prompt for confirmation to
+keep the icon from being created.
+
+The following steps must be followed to add the utility to your ODK
+installation:
+
+1. Begin the installation process following the steps in the wizard. The seventh
+   screen, entitled "Specify Custom Active Setup Components," will appear.
+
+2. Click the Add button. The Component field will be populated with New Custom
+   Component #1. Change the package title in the Component field, for example,
+   Outlook Express Icon Tool.
+
+3. Click the Browse button, and select Ol98qfe2.exe from the appropriate
+   directory. If you want the utility to install silently, put a /Q in the
+   Parameters field.
+
+4. Follow the wizard steps to the thirteenth screen in the ODK build process,
+   entitled Select Installation Options. In the left pane, you will see the
+   Components Available window. In this window, the last entry will be the name
+   of your custom component. Our example was Outlook Express Icon Tool.
+
+5. Select this entry, and click the Next button so that this component will be
+   installed during Setup. This is the final step to install the utility
+   automatically during an ODK installation.
+
+There are many other options for adding custom components that are documented in
+the ODK, such as using the IExpress tool to create a custom package that
+contains many different components in one single package, signing the package,
+and so on. For more information about using the Outlook Deployment Kit, see the
+following article in the Microsoft Knowledge Base:
+
+   Q184550 XCLN: Outlook Deployment Kit (ODK) Availability
+
+Or consult the information available on the Microsoft Web site at:
+
+   http://office.microsoft.com/assistance/9798/outlook98fact.aspx
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Ol98qfe2.exe now
+   (http://download.microsoft.com/download/ie4095/utility3/1/WIN98/EN-US/OL98QFE2.EXE)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Full Outlook Deployment Kit documentation is available at:
+
+   http://www.microsoft.com/office/
+
+Additional query words: ODK OE 8.5
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbOutlookSearch kbIEsearch kbOutlook98Search kbIE95Search kbZNotKeyword3
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

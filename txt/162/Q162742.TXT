@@ -1,0 +1,62 @@
+DOCUMENT:Q162742  11-JAN-2001  [vbwin]
+TITLE   :BUG: Setup Fails When Directory Named is >237 Characters
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool kbVBp500 kbVBp500bug kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a Setup program that is created with Microsoft Visual Basic Setup
+Wizard and install to an directory that has a path and name greater than 237
+characters, the following error message appears at the end of the installation:
+
+   Cannot create uninstall icon, destination Path too long.
+
+The Setup program then removes the entire installation.
+
+WORKAROUND
+==========
+
+To work around this behavior, select a directory that has a shorter combined
+name and path.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbtool kbVBp500 kbVBp500bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper
+Version           : :5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

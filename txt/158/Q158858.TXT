@@ -1,0 +1,55 @@
+DOCUMENT:Q158858  05-JAN-2000  [iis]
+TITLE   :Cannot Rename Users and Groups in Personal Web Server
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:mspwsw95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Personal Web Server versions 1.0, 1.0a for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot rename users and groups, or you may be unable to create groups, using
+Microsoft Personal Web Server version 1.0 for Windows 95.
+
+CAUSE
+=====
+
+Personal Web Server does not support the renaming of users and groups, or the
+nesting of groups (the creation of one group inside of another).
+
+RESOLUTION
+==========
+
+To resolve this issue, create a new user or group account and then delete the
+old one.
+
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          : mspwsw95 
+Technology        : kbPersWebServSearch kbZNotKeyword3 kbPersWebServ100Win95 kbPersWebServ100aWin95
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,81 @@
+DOCUMENT:Q130351  11-FEB-2000  [foxpro]
+TITLE   :PRB: Movable Property in Effect at Design Time
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Movable Property of a form is set to False (.F.) in design mode, the
+form cannot be moved from its current location.
+
+CAUSE
+=====
+
+While you are creating a form with the Form Designer, the form is considered
+"live." This means that visual and behavioral changes are reflected immediately
+in the design mode of the form as well as during run time.
+
+WORKAROUND
+==========
+
+Add all the controls for the form first before setting the properties that will
+control the behavior of the form.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following steps illustrate the effects of setting the Movable property for
+the form in design mode.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form.
+
+2. Set the Movable property to .F..
+
+3. Try to move the form while in design mode.
+
+REFERENCES
+==========
+
+For more information on form properties and behavior, please see the "Form
+Behavior, Defining" topic in the Visual FoxPro Help menu.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

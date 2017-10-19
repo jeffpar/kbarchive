@@ -1,0 +1,212 @@
+DOCUMENT:Q165490  11-JAN-2001  [vbwin]
+TITLE   :VB4 16-Bit OLE Clients Receive Error -2147319784
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbfile kbpatch kbprogramming kbtool kbVBp400 kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using an existing 16-bit application compiled with Microsoft Visual Basic
+version 4.0, the following error message may be displayed if you are working
+with a Visual Basic 4.0 16-bit-built OLE client:
+
+   OLE Automation Error. -2147319784 (80028018)
+
+During the installation of Microsoft Office 97 and Microsoft Visual Basic 5.0,
+updated components and registrations entries may cause the above error message
+only if you are using early binding and passing Collections from a Visual Basic
+4.0 16-bit Automation client to a Visual Basic 4.0 Automation server. The server
+can be either 16-bit or 32-bit.
+
+This applies to any combination of 16-bit / 32-bit collection interaction. This
+means that the same problem will occur if the collection originates and is
+passed from a 32-bit application to a 16-bit server as well. There are two ways
+to work around this behavior:
+
+Workaround 1 - When Source Code is Available (Best Solution)
+------------------------------------------------------------
+
+To work around this behavior when you have the source code available, you can
+re-write portions of the client that deal with collections to use late binding
+rather of early binding. For example, a change you would make to the Automation
+Client is:
+
+instead of:
+
+         Dim X as Collection
+
+use:
+
+         Dim X as Object
+         Set X = VBA.Collection
+
+Workaround 2 - Existing Applications and No Access to Source Code
+-----------------------------------------------------------------
+
+To work around this behavior in the situation where an existing, compiled
+application is affected, certain changes must be made to the Registration
+Database. These changes force TYPELIB.DLL to use the earlier versions of the
+type libraries that released with Microsoft Visual Basic 4.0. A registry file
+has been created by Microsoft that will change the registration automatically.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   Vb416fix.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Updating an Individual System
+-----------------------------
+
+To update any single system, do the following:
+
+1. Copy the VB416FIX.EXE to a directory on the target system. C:\TEMP works
+   well.
+
+2. Double-click on VB416FIX.EXE to extract the file VB416FIX.REG.
+
+3. Double-click on the VB416FIX.REG.
+
+   The following message should be displayed:
+
+   "Information in <filename> has been successfully entered into the
+   registry."
+
+Including the VB416FIX.REG File in New Setups
+---------------------------------------------
+
+To include the VB416FIX.REG file with the other components of a Visual Basic 4.0
+16-bit application, you must use the Application Setup Wizard to build the
+distribution diskettes. Use the following steps:
+
+1. Run the Application Setup Wizard for Microsoft Visual Basic 4.0 (16-bit).
+
+2. Proceed through step 6 in the Setup Wizard as you normally would.
+
+3. In step 7 in the Setup Wizard, click Add Files.
+
+4. Select the VB416FIX.REG file from the folder or diskette where it is stored.
+
+5. Click OK, and then click Finish.
+
+   The Setup Wizard will generate the compressed files for all of your
+   components, including the VB416FIX.REG file you included. When Setup Wizard
+   is complete, you must alter the SETUP.LST file.
+
+6. Edit SETUP.LST in a text editor such as NotePad.
+
+7. In the section labeled [Files], you will find a line that lists the
+   VB416FIX.REG file The line will look similar to the following sample:
+
+      File2=1,,VB416FIX.RE_,VB416FIX.REG,$(AppPath),,,3/6/1997,247
+
+8. Edit the sixth (6) field to include the name of the .REG file. The line
+   should look like the following:
+
+   File2=1,,VB416FIX.RE_,VB416FIX.REG,$(AppPath),VB416FIX.REG,,3/6/1997,247
+
+9. Save the SETUP.LST file.
+
+   When a user runs the SETUP.EXE, the VB416FIX.REG file will be registered
+   automatically on the user's system.
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+During the installation of Microsoft Office 97 and Microsoft Visual Basic 5.0,
+updated components and registrations entries may cause the above error message
+only if you are using early binding and passing Collections from a Visual Basic
+4.0 16-bit Automation client to a Visual Basic 4.0 Automation server. The server
+can be either 16-bit or 32-bit. This is limited to Visual Basic 4.0 16-bit built
+clients that use early binding and pass a Collection to an Automation server.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project in Visual Basic 4.0 16-bit:
+
+   (ProjectName="TestServer", StartMode= OLE Server)
+
+2. Add a Class module:
+
+   (Instancing = Multi-Use, Name = "Class1", Public = True)
+
+3. Add the following code to Class1:
+
+           Private gTstCol as New Collection
+
+           Public Function fTstCol(ByRef ParCol As Collection) As Long
+              Set ParCol = gTstCol 'Return some global collection object
+              fTstCol = 0  'just return 0, nothing special.
+           End Function
+
+4. Run Project.
+
+5. Start another instance of Visual Basic 4.0 16-bit.
+
+6. Add a reference to TestServer to the project.
+
+7. Add the following code to the project:
+
+           Sub Form_Load ()
+              Dim gTstObj As TestServer.Class1
+              Dim Res As Long
+              Dim tmpCol As Collection
+              Set gTstObj =  new "TESTSERVER.CLASS1"
+              Res = gTstObj.fTstCol(tmpCol)
+             'The Automation Error message is displayed in the line above.
+           End Sub
+
+8. Run the Project.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbpatch kbprogramming kbtool kbVBp400 kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

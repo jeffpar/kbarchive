@@ -1,0 +1,57 @@
+DOCUMENT:Q109481  05-FEB-2000  [foxpro]
+TITLE   :How to Strip Linefeeds from Exported (.TXT) Files
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you have exported information from a FoxPro for Macintosh database, there
+may be linefeeds in the file. To remove these linefeeds, use the FxStripLF()
+function found in FOXTOOLS.MLB.
+
+For example, the following code will remove the linefeeds from a dummy file
+called TEST.TXT located on the desktop:
+
+      SET LIBRARY TO FOXTOOLS
+      * Use the following line with Visual FoxPro for Macintosh
+      * SET LIBRARY TO FOXTOOLS.CFM
+      =FxStripLF( "Macintosh HD:Desktop Folder:Test.Txt" )
+
+REFERENCES
+==========
+
+FoxTools Readme file in FoxPro:Goodies:Misc folder
+
+Additional query words: vFoxMac FoxMac 2.50b lf line feeds
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbVFP300bMac
+Version           : MACINTOSH:2.5,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

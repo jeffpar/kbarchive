@@ -1,0 +1,60 @@
+DOCUMENT:Q232650  13-JUL-1999  [foxpro]
+TITLE   :HOWTO: Store, Display, and Print JPG Images in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbole kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to display and print JPG images that are stored in Visual FoxPro
+general fields, there must be an OLE server for JPG files installed on that
+computer.
+
+MORE INFORMATION
+================
+
+To display any file type in a general field, and be able to view and print it,
+the object type must have a OLE Server associated. This OLE server provides
+information about the file being linked or embedded. This information tells
+FoxPro how to display and print the file.
+
+One example of an OLE server for JPG files is the Microsoft Image Editor, which
+is included in the Microsoft Office CD's.
+
+If a JPG file is embedded or linked in a Visual FoxPro general field before the
+OLE server is installed, that object (the JPG file) will need to be re-added to
+the project. You must perform this step because the OLE server adds a lot of
+information to the file that tells Visual FoxPro how to reference the file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

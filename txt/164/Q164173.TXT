@@ -1,0 +1,63 @@
+DOCUMENT:Q164173  26-AUG-1999  [odbc]
+TITLE   :PRB: No Information Returned for SQLSTATE IM006 from Driver
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.00
+
+WINDOWS
+
+kbprg kbinterop kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the database driver's SQLSetConnectAttr function call fails during a
+SQLConnect or a SQLDriverConnect function call, the driver manager returns
+SQL_SUCCESS_WITH_INFO and SQLSTATE IM006. However, no information from the
+database driver is returned on why SQLSetConnectAttr failed. In contrast,
+SQLBrowseConnect returns SQLError along with the error message from the driver.
+
+MORE INFORMATION
+================
+
+When SQLConnect or SQLDriverConnect is called and the database driver has not
+been loaded, the Driver Manager loads the driver and calls SQLAllocHandle. If
+connection attributes were specified, the driver manager then calls
+SQLSetConnectAttr in the driver. However, if the driver's SQLSetConnectAttr
+function fails, the Driver Manager returns SQL_SUCCESS_WITH_INFO and SQLSTATE
+IM006 for the connection function, while the error message from the driver is
+lost.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

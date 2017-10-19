@@ -1,0 +1,69 @@
+DOCUMENT:Q160567  30-JUL-2001  [sms]
+TITLE   :SMS: Updating Package Contents Requires Job
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbusage kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If changes are made to the properties of a package, the message, "Systems
+Management Server will update this package at all sites," appears. However, if
+changes were made to the package source, these changes are not updated at all
+sites.
+
+CAUSE
+=====
+
+This message can be construed to mean that any changes to the contents of the
+source directory of the package will be updated in both the master copy and on
+the master copies on each site. However, no changes to the contents of the
+source directory are actually made until a job is sent with the send phase
+selecting "even if previously sent." The update to the package refers to the
+properties of the package, such as command line changes.
+
+RESOLUTION
+==========
+
+To update the contents of a distributed package (for example, to add files to or
+update files in a package), modify the source directory as appropriate, create a
+new job for the package, and select the "even if previously sent" option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: manager pcm
+
+======================================================================
+Keywords          : kbusage kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

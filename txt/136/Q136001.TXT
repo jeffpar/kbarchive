@@ -1,0 +1,48 @@
+DOCUMENT:Q136001  29-NOV-1999  [homekids]
+TITLE   :Explorapedia: Nature: Tad's Mouth Doesn't Move
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Explorapedia, World of Nature, Tad (the frog who serves as the
+guide) does not move his mouth when he speaks.
+
+MORE INFORMATION
+================
+
+In the CD-ROM title, Microsoft Explorapedia, World of People, Tad does move his
+mouth when he speaks; this is a feature new to World of People.
+
+Additional query words: kbhowto 1.00 mskids kids tad series explore kbmm world people nature speak talk multimedia multi-media multi media
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbZNotKeyword2 kbExplorapediaNature100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,78 @@
+DOCUMENT:Q272529  26-JUL-2002  [msnetwork]
+TITLE   :How to frame a picture on the MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbFAQ kbhowto kbPubTypeMSN
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MSN Companion is designed to remain on all the time. However, when it is not
+in use, it can be "put to sleep."
+
+When the MSN Companion unit is asleep, the unit will display a picture instead of
+just a blank screen. This gives the unit the look of a framed picture instead of
+a computer screen.
+
+You may select the picture you want to display, or you may have no picture when
+the machine is off.
+
+MORE INFORMATION
+================
+
+To select a picture from the MSN Companion gallery
+
+1. On the MSN Companion Start page, click Change Settings.
+
+2. Click frame a picture and then click pick a new picture.
+
+3. Click any picture you choose.
+
+4. When the picture has fully appeared, click page options, and then click frame
+   a picture from this page.
+
+5. Click frame this picture and then click close.
+
+To select a picture from the MSN Companion gallery
+
+1. When looking at a Web page that contains a pitute you want to frame, click
+   page options, and then click frame a picture from this page.
+
+2. Next to the picture you have chosen, click frame this picture and then click
+   close.
+
+NOTE: If a picture does not show when you click frame a picture from this page,
+it is probably too big or too small. A picture that is bigger than 800x600
+pixels, smaller than 50x50 pixels, or larger than 600K will not display.
+
+Additional query words: kbimu msn frame picture web companion
+
+======================================================================
+Keywords          : kbFAQ kbhowto kbPubTypeMSN 
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

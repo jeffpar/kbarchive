@@ -1,0 +1,65 @@
+DOCUMENT:Q152527  07-MAY-1999  [iis]
+TITLE   :Err Msg: Keycheck Failed 0x8009030e
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install an SSL certificate on an IIS server using Setkey.exe, you may
+get the following error message:
+
+   Error: keycheck failed 0x8009030e
+
+CAUSE
+=====
+
+There are two possible causes for this error:
+
+ - The Keypair file or the certificate file used with setkey is not valid or is
+   corrupt.
+
+ - The certificate file (the text message sent to you by the Certificate
+   Authority containing the SSL certificate) was saved in Unicode format.
+
+RESOLUTION
+==========
+
+Make sure the certificate was not saved in Unicode format. Open the certificate
+using Notepad.exe and select Save As. Make sure that Save File as Type is set to
+Text Files (*.txt) not Unicode Files.
+
+If the file was saved in Unicode format, click Save As on the File menu and
+re-save it as text.
+
+If the above resolution does not fix the problem, the certificate may need to be
+re-generated and resubmitted to the Certificate Authority.
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q135321  15-APR-2000  [powerpt]
+TITLE   :PPT7: Changing the Working Directory in PowerPoint
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes steps to change the default working directory in
+PowerPoint for Windows 95, version 7.0. By default, PowerPoint will open
+presentations from and save presentations to the My Documents folder.
+
+MORE INFORMATION
+================
+
+To change the working directory:
+
+1. Open a presentation in PowerPoint.
+
+2. Click Options on the Tools menu.
+
+3. Click the Advanced tab.
+
+4. In the Default File Location box, type the name of the folder in which you
+   would like to open presentations from and save them to by default. You must
+   enter the entire path including the drive letter. For example, type:
+
+   "c:\msoffice\powerpnt\files\save" (without the quotation marks)
+
+5. Click OK.
+
+Additional query words: Win95 pp95 power point winppt macppt 7.0
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

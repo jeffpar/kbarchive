@@ -1,0 +1,71 @@
+DOCUMENT:Q32931  23-JUL-2001  [win16sdk]
+TITLE   :Maze.exe Demonstrates DDE
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbDDE
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MAZE is a file in the Microsoft Download Cetner that contains the source code to
+an application that demonstrates how to use dynamic data exchange (DDE) in a
+Windows-based application.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   Maze.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+When multiple instances of the MAZE application are started, MAZE draws a
+bouncing ball in the client area of one of its instances. MAZE creates a DDE
+communications link between instances of the MAZE application and uses this link
+to pass the ball to other instances at random. MAZE also creates a DDE
+conversation with Excel and passes statistical information about the ball to
+Excel.
+
+MAZE demonstrates how to use DDE to pass information between applications and how
+to use PeekMessage to allow other applications to run simultaneously with a
+process-intensive task.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbDDE 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

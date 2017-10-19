@@ -1,0 +1,80 @@
+DOCUMENT:Q163213  10-AUG-2001  [winnt]
+TITLE   :WebSTONE Benchmark of IIS May Show Poor Results for MP Systems
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Internet Information Server (IIS) performance drops dramatically on
+multiprocessor systems when you test with WebSTONE, a popular web benchmark,
+which uses a non-abortive (graceful) close method for TCP sessions.
+
+SPECWEB is another benchmark tool that has shown similar results.
+
+NOTE: This problem does not occur when using regular real-world browsers such as
+Internet Explorer or Netscape Navigator.
+
+CAUSE
+=====
+
+There was a high rate of contention for a TCP resource, which lead to poor
+performance.
+
+
+RESOLUTION
+==========
+
+Microsoft has updated Tcpip.sys to correct the problem. Instructions for
+installing it are available from Microsoft support channels, or directly from
+the following Internet location:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP2/TCPIP-fix
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 and 4.0.
+A supported fix is now available, but is not fully regression-tested and should
+be applied only to systems experiencing this specific problem. Unless you are
+severely impacted by this specific problem, Microsoft recommends that you wait
+for the next Service Pack that contains this fix. Contact Microsoft Technical
+Support for more information.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

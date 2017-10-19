@@ -1,0 +1,323 @@
+DOCUMENT:Q134318  08-NOV-2001  [homemm]
+TITLE   :Oceans: Opthelp.txt Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Oceans for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article includes the contents of the Opthelp.txt file located in
+the root directory of the Microsoft Oceans for Windows CD:
+
+MORE INFORMATION
+================
+
+============================================
+Copying Pictures to the Clipboard or Desktop
+============================================
+
+You can copy a variety of pictures from Microsoft Oceans to the
+Windows Clipboard or use them as your Windows Wallpaper.  If you copy
+to the Clipboard, you can paste the picture into another Windows
+program.  If you make wallpaper, the picture will appear on your
+desktop behind the windows on your screen.  To use a Microsoft Oceans
+picture as wallpaper, the picture file must be copied to your Windows
+directory.
+
+To copy a picture:
+
+1.  Click the Options button to display the list of choices.
+
+2.  Click Picture Gallery.
+
+3.  Display the picture you want by clicking the arrow keys or
+    scrolling through the Gallery List.
+
+4.  Either click Copy Picture to copy the picture to the Clipboard, or
+    click Make Wallpaper to use the picture as the Windows wallpaper.
+
+You can also change your Windows wallpaper by using the Windows
+Control Panel.  In Windows 3.1, open the Desktop dialog box.  In
+Windows 95 or later, open the Display dialog box.  For more
+information on changing your Windows wallpaper, see your Windows
+documentation.
+
+====================================================
+Adding the Oceans Collection to Microsoft Scenes 2.0
+====================================================
+
+If you have Microsoft Scenes 2.0 installed on your computer, you can
+add a new collection of 40 Microsoft Oceans pictures to your current
+installation of Scenes.
+
+To add Microsoft Oceans pictures to Scenes:
+
+1.  Click the Options button to display the list of choices.
+
+2.  Click Picture Gallery.
+
+3.  Click the Add To Scenes button.  A dialog will appear telling you
+    that the pictures will be copied to your hard drive.
+
+4.  Click YES.
+
+5.  Another dialog will appear asking you if you want to edit your
+    screen saver settings.  If you click YES, you will be able to
+    change the delay, the transition effects, and other settings
+    available through Microsoft Scenes 2.0.
+
+6.  When you have finished editing your screen saver settings, click
+OK.
+
+After following these steps, the Oceans Scenes Collection will be
+completely installed on your computer.  You can go back and edit your
+screen saver settings at any time with the Microsoft Scenes program or
+by using the Windows Control Panel.
+
+If Scenes Installation Fails
+----------------------------
+
+If you follow the steps above to install the Oceans Scenes Collection
+and you get a message that says "Installation failed", you should try
+doing the following:
+
+    * Re-install Microsoft Scenes 2.0 to replace files which may be
+      missing from your current Scenes installation.
+
+    * Check to make sure you have enough space on your hard drive for
+      the 40 new images (approximately 2.5 MB).
+
+    * Make sure your scenes2.ini and system.ini files are not read-
+      only.  You can find these files in your Windows directory, and
+      you can determine if they're read-only by selecting properties
+      from the File menu within File Manager.
+
+========
+Printing
+========
+
+You can print any article screen or popup window in Microsoft Oceans.
+Both pictures and words on the screen will be printed, so printing may
+take a few minutes.  The Quality setting in the Print dialog box
+affects the time it takes to print.  High quality takes longer to
+print; low quality takes less time to print.
+
+To print:
+
+1.  Display the image you want to print on the screen.
+
+2.  Click the Options button to display a list of choices.
+
+3.  Click Print to display the Print dialog box.
+
+4.  Under Quality, click High/Slower (slower printing) or Low/Faster
+    (faster printing).
+
+5.  Under Page Orientation, you can select how you want your picture
+    to print. Click Portrait/Tall to print a picture that is taller
+    than it is wide.  Click Landscape/Wide to print a picture that is
+    wider than it is tall.
+
+6. Click OK to begin printing.
+
+===================
+Using Screen Savers
+===================
+
+Microsoft Oceans comes with a screen saver option that will display a
+slide show of pictures from Microsoft Oceans.  You can choose between
+two different picture sets:  Ships and Landscapes or Marine Animals.
+
+If you have Microsoft Scenes 2.0 installed on your computer, you can
+also choose to add a new collection of 40 Microsoft Oceans pictures to
+your current Scenes installation.  For more information on this
+option, see the "Adding the Oceans Collection to Microsoft Scenes 2.0"
+section above.
+
+The Microsoft Oceans screen savers go into effect after the keyboard
+and mouse have been idle for a certain amount of time.  To change the
+delay time or to choose other options that affect the screen saver,
+use the Windows Control Panel.
+
+Testing and Turning On Screen Savers
+------------------------------------
+
+When you choose a screen saver, the program copies a picture file to
+your hard drive.
+
+To test or turn on a screen saver:
+
+1.  Click the Options button to display a list of choices.
+
+2.  Click Screen Savers to display the Screen Savers dialog box.
+
+3.  Click the screen saver you want.
+
+4.  If you want to test the screen saver before you turn it on, click
+    the Test button.  The screen saver will appear on your screen.  To
+    return to the dialog box, click the mouse button or move the
+    mouse.
+
+5.  To turn on the screen saver, click OK.  If this is the first time
+    you've selected the screen saver, a dialog box appears to tell you
+    that it will copy a file onto your hard drive.
+
+If you want to switch from one screen saver to another, just select
+the new screen saver.
+
+Turning Off and Removing Screen Savers
+--------------------------------------
+
+You can turn off a Microsoft Oceans screen saver at any time.  You can
+also choose to remove the screen saver file from your hard drive to
+free up space.
+
+To turn off your screen saver:
+
+1.  In the Screen Savers dialog box, click None.
+
+2.  Click OK.
+
+To remove a screen saver file from your hard drive:
+
+1.  In the Screen Savers dialog box, click the screen saver you want
+    to remove.
+
+2.  Click Remove.  A message box will appear asking you if you want to
+    remove the screen saver file from your hard drive.
+
+3.  Click OK.
+
+Viewing Screen Saver options
+----------------------------
+
+In Windows 3.1:
+
+1.  Open the Desktop dialog box.  The Screen Saver section contains a
+    few options.
+
+2. Click the Setup button to see more.
+
+In Windows 95:
+
+1.  Open the Display dialog box.  The Screen Saver section contains a
+    few options.
+
+2.  Click the Settings button to see more.
+
+(For information about the Control Panel, see your Windows
+documentation.)
+
+=================================
+CONTROLLING SOUNDS AND ANIMATIONS
+=================================
+
+Microsoft Oceans has two kinds of sounds: background sound effects and
+narrations.  To control either of these:
+
+1.  Click the Options button to display a list of choices.
+
+2.  Click Audio/Video to display the Audio/Video dialog box.
+
+3.  Do one or both of the following:
+
+    * To control the narrations, choose On or Off under Narrations.
+
+    * To control the background sound effects, choose On or Off under
+      Sound Effects/Animations.
+
+4. Click OK.
+
+Some sounds like guide, video, and glossary audio will always play
+when selected.
+
+You can also use this dialog to control the animations that play
+randomly while you're using Microsoft Oceans (like the fish that swim
+across your screen).  If you choose to turn the background Sound
+Effects/Animations Off, the animations and their associated sounds
+will stop playing.
+
+===================
+RUNNING FULL SCREEN
+===================
+
+If you are using Windows 95 or later and your screen resolution is
+higher than 640x480, Microsoft Oceans allows you to choose between
+full screen mode (640x480) and your current screen resolution.
+
+To control the way Oceans displays on your computer:
+
+1.  Click the Options button to display a list of choices.
+
+2.  Click Audio/Video to display the Audio/Video dialog box.
+
+3.  Choose On or Off under Run Full Screen.
+
+4. Click OK.
+
+============
+RANDOM JUMPS
+============
+
+You can set up Microsoft Oceans so that the program displays articles
+randomly on the screen.  It's a great way to find out what's in
+Microsoft Oceans.
+
+To start random mode:
+
+1.  Click the Options button to display a list of choices.
+
+2. Click Random Jumps.
+
+Random Jumps starts automatically, displaying screen after screen of
+Microsoft Oceans.  To stop Random Jumps, just click anywhere on the
+screen.
+
+========================
+EXITING MICROSOFT OCEANS
+========================
+
+To exit Microsoft Oceans from within Windows 3.1, do one of the
+following:
+
+    * Click the Control-menu box in the upper-left corner of the
+      window, and then click Close.
+
+    * Double-click the Control-menu box in the upper-left corner of
+      the window.
+
+To exit Microsoft Oceans from within Windows 95 or later:
+
+    * Click the Close button in the upper-right corner of the window.
+
+Additional query words: kbhowto 1995 multi media multimedia multi-media mmtitles msscenes
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword kbKidsSearch kbOceans
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

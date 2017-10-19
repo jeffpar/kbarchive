@@ -1,0 +1,57 @@
+DOCUMENT:Q150783  25-AUG-1999  [odbc]
+TITLE   :INF: Testing ODBC Connectivity to Oracle 7.x
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+2.00 2.50
+
+WINDOWS
+
+kb3rdparty kbinterop
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When troubleshooting ODBC access to Oracle 7.x RDBMS servers, it may be
+necessary to verify that the underlying SQL*Net and Oracle Protocol Adapters are
+correctly installed. To do this you can use the Oracle supplied utility
+NETTEST.EXE found in the ORAWIN\BIN directory.
+
+Nettest is a simple utility that attempts to only login to the selected server
+using the installed SQL*Net software that is part of the Oracle client. The
+utility will ask for a login name, password, and TNS connect string. If the
+Oracle client is correctly installed, the utility will simply display "Ping
+Successful." If the login was not successful, the user will need to consult with
+their database administrator.
+
+Additional query words: Oracle ping SQLNet
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

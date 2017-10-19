@@ -1,0 +1,52 @@
+DOCUMENT:Q95119  03-NOV-1999  [win3x]
+TITLE   :WindowMagic May Not Operate Correctly with WFWG
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+WindowMagic is a Windows utility that allows icons to be easily
+assigned to any of the Program Manager's Groups or application icons.
+When using the WindowMagic application version 1.0b with Windows for
+Workgroups, application icons may not be able to change.
+
+When WindowMagic loads, it expects Program Manager to be the first
+application to be loaded. With Windows for Workgroups, the Clipboard
+Server (CLIPSRV.EXE) and NetDDE (NETDDE.EXE) applications load before
+Program Manager, which prevents WindowMagic from assigning the icons.
+
+For additional information, contact WinWear Corporation.
+
+WindowMagic is manufactured by WinWear, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this
+products' performance or reliability.
+
+Additional query words: 3.10 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

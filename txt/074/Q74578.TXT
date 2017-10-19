@@ -1,0 +1,84 @@
+DOCUMENT:Q74578  17-DEC-2000  [msdos]
+TITLE   :Using ANSI.SYS to Disable CTRL+C Key Combination
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the ANSI.SYS device driver to disable the CTRL+C key combination.
+This is done by assigning the CTRL+C key combination to NULL.
+
+NOTE: ANSI.SYS must be loaded in the CONFIG.SYS file to enable ANSI escape
+sequences.
+
+MORE INFORMATION
+================
+
+To disable the CTRL+C key combination, create a file using the following steps:
+
+1. Run MS-DOS Editor.
+
+2. Type the following on the same line with no spaces between:
+
+   " CTRL+P 027 " (without the quotation marks)
+
+   To type this line, hold down the CTRL and P keys simultaneously and then
+   release them. Then hold down the ALT key while you press the 0, 2, and 7 keys
+   on the numeric keypad.
+
+   These key combinations produce the left arrow that symbolizes the start of the
+   ANSI escape sequence.
+
+3. On the same line, leaving no spaces, type:
+
+   " [3;0;p " (without the quotation marks)
+
+4. Save this file as a batch file (for example, FILE.BAT).
+
+5. Exit MS-DOS Editor.
+
+Type the following at the MS-DOS command prompt to disable CTRL+C:
+
+   " type file.bat " (without the quotation marks)
+
+To enable the CTRL+C key combination, replace step 3 above with the following
+
+   " [3;3p " (without the quotation marks)
+
+and save the file under a different name.
+
+By adding the TYPE command and the name of the file to the AUTOEXEC.BAT file, you
+can disable or enable the CTRL+C key combination when the machine starts up.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 nul
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

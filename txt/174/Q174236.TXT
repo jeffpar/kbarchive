@@ -1,0 +1,68 @@
+DOCUMENT:Q174236  17-DEC-1999  [exchange]
+TITLE   :XGEN: MBCLEAN Deletes Messages with Blank Received Times
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The Mailbox Cleanup Agent deletes messages that have a blank Received Time.
+
+MORE INFORMATION
+================
+
+Mailbox Cleanup Agent is a server-based Exchange Utility in the "Microsoft
+BackOffice Resource Kit" and the "Microsoft Exchange Resource Kit" that can be
+used to delete older e-mail messages. It uses the MAPI property
+PR_MESSAGE_DELIVERY_TIME or "Received Time" to determine whether a message meets
+the criteria for deletion. Messages that do not contain this property or have an
+invalid value for this property are deleted.
+
+Note that Microsoft Exchange Client and Microsoft Outlook assign a blank Received
+Time to mail messages in the Sent Items folder that are composed while you are
+working offline.
+
+STATUS
+======
+
+This has been fixed in Mailbox Cleanup Agent, Mbclean.exe, version 1.8. It has
+been updated so that messages which have a blank or invalid Received Time are
+not deleted. The latest versions of the "Microsoft Exchange Resource Kit"
+Utilities can be downloaded from the following Microsoft Web site:
+
+   http://www.microsoft.com/exchange/reskit.htm
+
+Additional query words: MCA
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

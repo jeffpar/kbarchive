@@ -1,0 +1,60 @@
+DOCUMENT:Q170362  18-DEC-1999  [mastering]
+TITLE   :Mastering:Internet Jumps Open Two Instances of Internet Explorer
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Visual Basic 5.0 Fundamentals, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use multiple Internet Jumps from Mastering Microsoft Visual Basic 5.0
+Fundamentals, the first instance of Microsoft Internet Explorer isn't recognized
+and a second instance will be opened.
+
+WORKAROUND
+==========
+
+When the second instance of Internet Explorer is opened from an Internet Jump,
+close the first instance of Internet Explorer. If you continue to use Internet
+Jumps from Mastering Microsoft Visual Basic 5.0 Fundamentals, it will use the
+running instance of Internet Explorer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Mastering Microsoft Visual Basic
+5.0 Fundamentals version 1.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: close ie
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbMSPressSearch
+Version           : :1.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

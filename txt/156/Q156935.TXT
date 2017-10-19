@@ -1,0 +1,71 @@
+DOCUMENT:Q156935  12-JUN-2001  [homekids]
+TITLE   :Writer 2: Email Packages Contain Creative Writer 2 Viewer
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+2.00
+WINDOWS
+kbusage kbhowto kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create an email package in Creative Writer 2, the program packages your
+Creative Writer 2 document with a Creative Writer 2 Viewer (Mscwview.exe) so
+that recipients without Creative Writer 2 can access the document.
+
+MORE INFORMATION
+================
+
+The Creative Writer 2 email package ends up as a self-extracting .exe file. When
+the file is extracted, it installs the following files into the \Program
+Files\Microsoft Kids\Creative Writer folder:
+
+ - mscwview.exe
+
+ - qd96.dll
+
+ - qrt96.dll
+
+The Creative Writer Viewer is 100K in size. After you receive and double- click
+the package in an email client that accepts attachments, you are alerted that
+the Creative Writer Viewer will be installed with an option to deny. Once the
+Viewer is installed, you can view Creative Writer 2 documents on a machine that
+does not have Creative Writer 2 installed.
+
+NOTE: Many email clients will not process an attachment that is in excess of 1
+MB. Because the Creative Writer 2 Viewer is 100KB, documents larger than 924 KB
+could possibly be returned.
+
+Additional query words: 2.00 kids mskids artist maggie max writer cw2 cw2.0
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbCreativeWriter200
+Version           : WINDOWS:2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

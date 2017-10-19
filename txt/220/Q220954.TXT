@@ -1,0 +1,92 @@
+DOCUMENT:Q220954  10-AUG-2001  [winnt]
+TITLE   :Event ID:20073 Attempting RADIUS Authentication on RRAS Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4, used with:
+    - Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you dial into a computer running Windows NT Server and Routing and Remote
+Access Service (RRAS), the following error message may be displayed on your RAS
+client computer:
+
+   Error 629: You have been disconnected from the computer you dialed.
+
+Additionally, the following error is logged in the Event Viewer of the Windows NT
+4.0 RRAS server (after every attempted incoming call):
+
+   Event ID: 20073
+   Source: Router
+   Type: Error
+   Description: The following error occurred in the Point to Point Protocol
+   module on port %port%. There are no authentication protocols available for
+   use.
+
+Incoming calls to the Windows NT RRAS server are not able to connect.
+
+CAUSE
+=====
+
+This problem occurs because your Windows NT RRAS server's authentication and
+encryption settings are set to require Microsoft encrypted authentication and
+you are using Remote Authentication Dial-In User Service (RADIUS) as your
+authentication provider.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform one of the following:
+
+ - Set Authentication and Encryption settings to Require encrypted
+   authentication or Allow any authentication including clear text.
+
+   -or-
+
+ - Leave Authentication and Encryption settings set to Require Microsoft
+   encrypted authentication and set OfferMSCHAP to 1 in the registry. For
+   additional information, click the article number below to view the article in
+   the Microsoft Knowledge Base:
+
+   Q219283 How to enable MS-CHAP with Radius authentication
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT Server
+version 4.0 with Routing and Remote Access Update.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : :4.0,4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

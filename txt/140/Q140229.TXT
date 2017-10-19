@@ -1,0 +1,88 @@
+DOCUMENT:Q140229  30-JUL-2001  [visualc]
+TITLE   :PRB: C2027 When Using MFC Templated Collection Classes
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kberrmsg kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use MFC templated collection classes such as CArray, CList, and CMap to
+store elements of type HTREEITEM or HIMAGELIST, the compiler generates the
+following compiler error:
+
+   afxtempl.h(73) : error C2027: use of undefined type '_TREEITEM'
+
+   - or -
+
+   afxtempl.h(73) : error C2027: use of undefined type '_TREEITEM'
+
+CAUSE
+=====
+
+HTREEITEM is type-defined (typedef) as struct _TREEITEM, and HIMAGELIST is
+type-defined (typedef) as struct _IMAGELIST in header file Commctrl.h located in
+the \Msdev\Include directory. Structures _TREEITEM and IMAGELIST are not defined
+in any header files or source files.
+
+However, the template collection class helper function DestructElements in Visual
+C++ version 4.0 calls the destructor of the stored elements. In this case, the
+destructor of structure _TREEITEM or _IMAGELIST. Hence, the compiler error.
+
+RESOLUTION
+==========
+
+Define a dummy structure for _TREEITEM or _IMAGELIST in global scope. For
+example, the following code should compile cleanly:
+
+   // Other includes.
+
+   #include <afxtempl.h>
+
+   struct _TREEITEM {};
+   struct _IMAGELIST {};
+
+   void TestFunction()
+   {
+     // will now not generate the compiler error
+     CArray< HTREEITEM, HTREEITEM >  MyArray1;
+     CArray< HIMAGELIST, HIMAGELIST > MyArray2;
+   }
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kberrmsg kbprb 
+Technology        : kbAudDeveloper kbMFC
+Version           : 4.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

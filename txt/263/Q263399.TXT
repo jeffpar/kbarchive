@@ -1,0 +1,84 @@
+DOCUMENT:Q263399  04-AUG-2000  [sms]
+TITLE   :SMS: Repackager Stops Responding During Visio 2000 Compilation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbtool kbsms200 kbsms200bug kbPackage kbsmsInst kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to repackage Visio 2000 by using the Systems Management Server
+(SMS) installer utility, the repackage function may stop responding (hang) or
+generate a Dr. Watson error message.
+
+CAUSE
+=====
+
+This problem can occur because Visio 2000 does not support a silent installation
+by using the SMS installer. For Visio 2000, setup technologies shifted from
+InstallShield to the Microsoft Installer (MSI). Unanticipated complications in
+integrating the new MSI technology precluded the inclusion of the silent
+installation feature in Visio 2000.
+
+WORKAROUND
+==========
+
+To work around this problem, corporate deployment of Visio 2000 provides three
+alternatives to silent installation for large organizations:
+
+ - Publish by using Windows 2000 Active Directory.
+
+ - Use a Windows Terminal Server installation.
+
+ - Use a network installation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+For more information about this topic, please view the following Microsoft Web
+site:
+
+   http://www.microsoft.com/office/visio/
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kb3rdparty kbtool kbsms200 kbsms200bug kbPackage kbsmsInst kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

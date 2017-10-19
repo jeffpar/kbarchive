@@ -1,0 +1,69 @@
+DOCUMENT:Q92938  02-OCT-1999  [win95x]
+TITLE   :Packard Bell Packmate Requires HIMEM.SYS /m:1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+To ensure proper operation with Windows 3.1, If you are using Microsoft Windows
+on a Packard Bell Packmate 300 SX, 386/33 or 486/33 DX computer, you may
+experience general protection faults and memory parity errors in both
+Windows-based and MS-DOS-based applications running under Windows.
+
+CAUSE
+=====
+
+To ensure proper operation with Windows 3.1, the Packard Bell Packmate 386/33
+and 486/33 DX computers require that the A20 handler number 1 is installed. If
+the /M:1 parameter is not included on the HIMEM.SYS line in the CONFIG.SYS file,
+A20 handler number 3 may be incorrectly installed, which can cause the symptoms
+above.
+
+WORKAROUND
+==========
+
+To correct this problem, change the following line in the CONFIG.SYS file
+
+        DEVICE=<drive><path>HIMEM.SYS
+
+-to-
+
+        DEVICE=<drive><path>HIMEM.SYS /M:1
+
+
+The Packmate 486/33 DX is manufactured by Packard Bell, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: gpf 3.10 PB 3rdparty 486 386 300sx PACK MATE
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

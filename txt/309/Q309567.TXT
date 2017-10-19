@@ -1,0 +1,77 @@
+DOCUMENT:Q309567  15-AUG-2002  [iis]
+TITLE   :Query Returns Empty Results with IS NULL Test Condition
+PRODUCT :Internet Information Server
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbCOMIS kbWin2000sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a query contains a test condition with an IS NULL predicate for a particular
+property, the query may not return any results.
+
+CAUSE
+=====
+
+The query optimizer builds a range of empty to empty for IS NULL predicates. The
+restriction is sent to the engine, which returns a null cursor, and the query
+fails.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date         Time   Version        Size       File name     
+   -------------------------------------------------------
+   10-Nov-2001  00:19  5.0.2195.4620  1,422,608  Query.dll
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 3.
+
+
+Additional query words: kbIISCom
+
+======================================================================
+Keywords          : kbCOMIS kbWin2000sp3fix 
+Technology        : kbIdxServSearch kbAudDeveloper
+Version           : :3.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

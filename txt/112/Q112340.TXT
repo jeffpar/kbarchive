@@ -1,0 +1,47 @@
+DOCUMENT:Q112340  03-NOV-1999  [fortran]
+TITLE   :DOC: QuickWin Does Not Support Run Time in a DLL (/MD)
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 23 of the Microsoft FORTRAN PowerStation 32 for Windows NT "Programmer's
+Guide" incorrectly states that a QuickWin application can be built with the run
+time in a dynamic-link library (DLL). Both the README.TXT and QUICKWIN.TXT files
+correctly state that QuickWin applications cannot be compiled to use the
+run-time library in a DLL (using /MD).
+
+This was corrected in Fortran PowerStation 4.0, per the manual page 346.
+
+Additional query words: 1.00 4.00 docerr
+
+======================================================================
+Keywords          : kbdocfix kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

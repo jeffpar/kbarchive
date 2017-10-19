@@ -1,0 +1,65 @@
+DOCUMENT:Q156141  31-JUL-2001  [visualc]
+TITLE   :PRB: Default Values Not Shown in Input Parameters Dialog Box
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbProgramming kbDatabase kbDebug kbEEdition kbMFC kbSQL kbVC420 kbVC500 kbVC600 kbGrpDS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.2 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you execute or debug any stored procedure with default value parameters,
+the Execute Stored Procedure dialog box does not show the default values.
+
+CAUSE
+=====
+
+Open Database Connectivity (ODBC) and SQL Server do not provide any means to
+retrieve the default values for a stored procedure.
+
+RESOLUTION
+==========
+
+The default values are correctly passed to the stored procedure when you do not
+enter explicit values inside the Execute Stored Procedure dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbDatabase kbDebug kbEEdition kbMFC kbSQL kbVC420 kbVC500 kbVC600 kbGrpDSODBC kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

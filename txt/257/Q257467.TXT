@@ -1,0 +1,110 @@
+DOCUMENT:Q257467  26-JUN-2001  [visualc]
+TITLE   :HOWTO: Remove FTM Code Added by ATL Object Wizard
+PRODUCT :Microsoft C Compiler
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbATL kbCOMt kbDSupport kbGrpDSMFCATLkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL) 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to remove the Free Threaded Marshaler support from
+an Active Template Library (ATL) component.
+
+MORE INFORMATION
+================
+
+When you create an ATL component using the New ATL Object option from the Insert
+menu, then the Free Threaded Marshaler option can be selected by the user in the
+Attributes tab. To remove this Free Threaded Marshaler support from an ATL
+component after the fact, add the following code sample. Note that all of these
+changes go in to the component's header file and the lines need to be commented
+as shown below, that is marked with // **.
+
+   class ATL_NO_VTABLE CIFTMTEst2 : 
+   	public CComObjectRootEx<CComSingleThreadModel>,
+   	public CComCoClass<CIFTMTEst2, &CLSID_IFTMTEst2>,
+   	public IDispatchImpl<IIFTMTEst2, &IID_IIFTMTEst2, &LIBID_SHAYLib>
+   {
+   public:
+   	CIFTMTEst2()
+   	{
+   // ** Because you don't need this variable, then you don't need to initialize it.
+   // **		m_pUnkMarshaler = NULL;
+   	}
+
+   DECLARE_REGISTRY_RESOURCEID(IDR_IFTMTEST2)
+   DECLARE_GET_CONTROLLING_UNKNOWN()
+
+   DECLARE_PROTECT_FINAL_CONSTRUCT()
+
+   BEGIN_COM_MAP(CIFTMTEst2)
+   	COM_INTERFACE_ENTRY(IIFTMTEst2)
+   	COM_INTERFACE_ENTRY(IDispatch)
+   // ** Remove the entry for IMarshal, because it was only there for the Free Threaded
+   // ** Marshaler.
+   // ** COM_INTERFACE_ENTRY_AGGREGATE(IID_IMarshal, m_pUnkMarshaler.p)
+   END_COM_MAP()
+   	HRESULT FinalConstruct()
+   	{
+   // ** Comment out the Free Threaded Marshaler creation.
+   // **        return CoCreateFreeThreadedMarshaler(
+   // **			GetControllingUnknown(), &m_pUnkMarshaler.p);
+
+   // ** Replace with a standard HRESULT, S_OK, or return an appropriate 
+   // ** HRESULT depending on any other calls that you make in 
+   // ** FinalConstruct().
+                return S_OK;
+   	}
+
+   	void FinalRelease()
+   	{
+   // ** Comment out the Release of the Free Threaded Marshaler.
+   // **		m_pUnkMarshaler.Release();
+   	}
+    
+   // ** You don't need this variable holding the Free Threaded Marshaler
+   // ** reference:
+   // **	CComPtr<IUnknown> m_pUnkMarshaler;
+
+REFERENCES
+==========
+
+ - For additional information, click the article number below to view the
+   article in the Microsoft Knowledge Base:
+
+   Q256217 INFO: FTM usage
+
+ - ActiveX Q&A Microsoft Systems Journal September, 1997 - Apartment
+   Neutrality: The Free Threaded Marshaler and the Global Interface Table
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbCOMt kbDSupport kbGrpDSMFCATL kbfaq
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL300
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q81668  02-NOV-1999  [win95x]
+TITLE   :LANTASTI.386 Must Be On PATH= Environment
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Windows in enhanced mode with Artisoft LANtastic 4.x,
+Windows stops responding (hangs) after displaying the Windows logo.
+
+CAUSE
+=====
+
+When you run Windows in enhanced mode with LANtastic 4.x, the LANTASTI.386 file
+must be located in a directory that is included in the MS-DOS PATH= environment
+variable. If it is not, Windows cannot load properly.
+
+The problem does not occur if the network software has not been started before
+running Windows, or if you are running Windows in another mode.
+
+RESOLUTION
+==========
+
+At the MS-DOS command prompt, type
+
+   path
+
+to display the current value of PATH. PATH is usually set in the AUTOEXEC.BAT
+file. If LANTASTI.386 is not in a directory on the PATH= line, either copy it to
+a directory that is in the PATH= or add its directory to the PATH.
+
+MORE INFORMATION
+================
+
+For more information on using LANtastic 4.x and Windows 3.0, query on:
+
+   LANtastic and 4 and Windows
+
+The Artisoft product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.00 3.00a 3.10 3.11 lan tastic
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,81 @@
+DOCUMENT:Q312603  07-MAY-2002  [homegame]
+TITLE   :FS2000: Err Msg During Installation Loading Language Resources
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Flight Simulator 2000, you may receive an
+error message similar to the following:
+
+   FS5WTEST.exe couldn't load language resources dll error
+   C:\Program Files\Microsoft Games\fs2000\English.fll
+   Error Code 0x485 (1157)
+
+CAUSE
+=====
+
+This error can occur when there is a corrupted file in the Temporary folder.
+
+RESOLUTION
+==========
+
+To resolve this behavior, clean boot your computer, and then empty the Temporary
+folder. To do this, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msconfig" (without the quotation marks), and then
+   click OK.
+
+3. On the General tab, click "Selective startup", and then click to clear each
+   check box.
+
+4. Click Apply, and then click OK.
+
+5. Restart your computer.
+
+6. Start Windows Explorer.
+
+7. Browse to C:\WINDOWS\Temp.
+
+8. On the Edit menu, click Select All, and then press DELETE.
+
+   When you receive the confirmation message, click Yes.
+
+9. Install Flight Simulator 2000.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

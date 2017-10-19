@@ -1,0 +1,75 @@
+DOCUMENT:Q142005  14-FEB-2002  [win95x]
+TITLE   :Setting the Correct ICM Profile
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you enable Image Color Matching (ICM) in the properties for your printer,
+ICM may not be properly configured.
+
+CAUSE
+=====
+
+Even if you select a supported ICM monitor, ICM may not use the proper monitor
+profile.
+
+RESOLUTION
+==========
+
+Follow these steps to set the proper ICM profile:
+
+1. Determine the proper profile to use for the monitor from one of the following
+   sources:
+
+    - The monitor manufacturer.
+
+    - The following article in the Microsoft Knowledge Base:
+
+   Q140902 ICM Profile Settings for Supported Monitors
+
+2. In the Windows\System\Color folder, use the right mouse button to click the
+   proper ICM profile, and then click Set As Default on the menu that appears.
+
+Note that your monitor must use the factory default color and gamma settings.
+
+MORE INFORMATION
+================
+
+ICM-capable printers have property settings that you must enable. The following
+article in the Microsoft Knowledge Base lists the ICM-capable printers supported
+in Windows 95:
+
+   Q122050 ICM Printers Supported in Windows 95
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

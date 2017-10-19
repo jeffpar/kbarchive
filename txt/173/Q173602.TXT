@@ -1,0 +1,158 @@
+DOCUMENT:Q173602  08-NOV-2001  [homekids]
+TITLE   :MSB Rainforest: How to Play the Games
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Rainforest for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article describes how to play the games included with Scholastic's
+Magic School Bus Explores the Rainforest.
+
+GAME DESCRIPTIONS
+
+Night Stratification Game
+-------------------------
+
+Location: Canopy - From outside the bus in the Canopy area, click the Howler
+monkey (upper right), and then click the Sun.
+
+Description: You are given a group of animals to put into the environment. When
+you place an animal in the right location (high canopy, leafy middle, or
+understory), an animation will play to show that the animal belongs there. If
+the animal is put in the wrong location an animation will play to show that this
+is not the correct place for that animal. Next, another animal comes out and
+scares the current animal away, allowing you to try again. As you play this game
+the sun will slowly rise, serving as the game's time limit.
+
+Hide and Species Puzzle
+-----------------------
+
+Location: Left Understory - From outside the bus in the Understory area, move the
+mouse cursor about one inch along the left edge of screen until it turns into a
+large arrow pointing to the left (over a frog on a silvery log). Click on the
+animal tracks (three-toed bird) to the right of the tree trunk, and then click
+on the brown leaf mimic on the lower right.
+
+Description: In this game you are to place animals in their appropriate "hidden"
+positions in the environment. Once the animal is in its correct position their
+"song" or animation will be activated. Drag the puzzle pieces to the correct
+location. If you are stuck on a piece, click one of the arrows to choose another
+piece.
+
+Ant Antics Game
+---------------
+
+Location: Left Understory - From outside the bus in the Understory area, move the
+mouse cursor about one inch along the left edge of screen until it turns into a
+large arrow pointing to the left (over a frog on a silvery log). Click on the
+leaf over the lizard (left side), and then click on the ants.
+
+Description: You control a group of ants moving over leafy terrain. The ants need
+to collect food for their queen while making their way through the maze of
+obstacles that obstruct their path. Use the arrow keys to move your group of
+ants along the dots (not between). When a crown appears, grab it, and then go to
+the large ant waving the flag.
+
+Escaping Monkey Game
+--------------------
+
+Location: Canopy - From outside the bus in the Canopy area, click on the Howler
+monkey (upper right) then click on the Spider monkey.
+
+Description: This is an arcade style game where you control a monkey that is
+trying to get from tree to tree in order to get out of danger from the harpy
+eagle flying above. You must guide the monkey over branches and vines in order
+to reach safety. Watch out for the snakes and broken limbs during the game.
+Point to the bullseye, which indicates your next jump. Hold your mouse button
+down for the desired jump strength (indicated by the red "power" bar). When you
+think you have enough jump strength, release the mouse button.
+
+Helicopter Damselfly Game (Heli-Fly)
+------------------------------------
+
+Location: Canopy - From outside the bus in the Canopy area, click on the iguana
+then click on the damselfly.
+
+Description: This is an arcade style game where you control the flying damselfly
+as it moves left to right catching insects for food and power while dropping its
+eggs into bromeliads for extra points. You must watch out for the damselfly's
+enemy or the game can end. Use the space bar to drop eggs on open flowers to
+color all their leaves green. Don't let the spiders get away, or you'll fall.
+
+Birdfood Game
+-------------
+
+Location: Canopy - From outside the bus in the Canopy area, click on the iguana
+then click on the jacamar (middle right).
+
+Description: This is an arcade style game where you try to catch palatable
+butterflies for the Roufus tailed jacamar and avoid eating too many poisonous
+ones. A hawk predator is pursuing the jacamar. You must try to eat a healthy
+diet, without becoming a healthy meal for the jacamar's enemy! Click the mouse
+where you would like Jackie to fly.
+
+Rain Game
+---------
+
+Location: Canopy - From outside the bus in the Canopy area, click on the Howler
+monkey (upper right) then click on the beetle.
+
+Description: This is an arcade style game where you control a beetle high in the
+canopy, as it tries to avoid being hit by raindrops. Move left or right or one
+step up with the arrow keys to catch the falling treasures.
+
+Mites Travel Game
+-----------------
+
+Location: Treefall Gap - From outside the bus in the Treefall Gap area, click the
+piper plant (lower left) then click on the hummingbird.
+
+Description: This is a game where you must work quickly to get as many mites
+inside the nose of a hummingbird, before it flies away. The mites are inside a
+flower when the large head of a hummingbird pops in. You must control the mites,
+picking them up and putting them inside the nose of the bird before it leaves.
+Once a certain number of mites have successfully entered the nose of the bird,
+the bird will fly off to another flower moving you to new level. You will see
+the view of the bird's flight through the small holes in the bird's beak.
+
+REFERENCES
+==========
+
+For information about how to navigate through the scenes, see the following
+article in the Microsoft Knowledge Base:
+
+   Q170260 MSB Rainforest: Areas to Click in Each Scene and Where You Go
+
+Additional query words: 1.00 msbrain rain forest game games play playing
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticRainForest kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

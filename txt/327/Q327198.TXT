@@ -1,0 +1,78 @@
+DOCUMENT:Q327198  07-AUG-2002  [iis]
+TITLE   :INFO: Platform Support for ASP.NET Applications
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft ASP.NET (included with the.NET Framework) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article outlines platform support for ASP.NET applications.
+
+MORE INFORMATION
+================
+
+ASP.NET is only supported on the following platforms:
+
+ - Microsoft Windows 2000 Professional (Microsoft recommends Service Pack 2)
+
+ - Microsoft Windows 2000 Server (Microsoft recommends Service Pack 2)
+
+ - Microsoft Windows XP Professional
+
+ - Microsoft Windows .NET Server family
+
+You can develop ASP.NET applications by running Visual Studio .NET on a Windows
+NT client platform. However, this scenario requires access to a Web server that
+is running Internet Information Services (IIS) 5.0 or later.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q320451 PRB: Remote ASP.NET Projects Require IIS on the Client Computer or
+   FrontPage Server Extensions on the Server Computer
+
+REFERENCES
+==========
+
+For more information, see the Visual Studio .NET Release Notes. The notes are
+located at Readme.htm or at Setup\Webserver.htm on CD 1 or the DVD.
+
+For more information, visit the following Microsoft Web site:
+
+   Microsoft .NET Framework Redistributable
+   http://msdn.microsoft.com/downloads/default.asp?url=/downloads/sample.asp?url=/msdn-files/027/001/829/msdncompositedoc.xml
+
+Additional query words: ASP.NET IIS 4.0 .NET Framework Support kbiis kbconfig kbaspnet aspnet
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbAudDeveloper kbASPsearch kbiis500 kbiis400 kbiis300 kbASPNet
+Version           : :3.0,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

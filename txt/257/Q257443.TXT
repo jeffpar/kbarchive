@@ -1,0 +1,60 @@
+DOCUMENT:Q257443  27-JUL-2001  [win95x]
+TITLE   :Config.sys Not Processed When Booting from Floppy Disk Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kbhw win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer from a Windows 95 (retail version) boot disk, the
+Config.sys file may not be processed.
+
+CAUSE
+=====
+
+This behavior may occur on IBM Netfinity 5000 and 5500 servers that use an IBM
+ServeRaid controller with firmware revisions 3.50 and 3.60.
+
+This behavior does not occur with an MS-DOS 5.x or 6.x, Microsoft Windows 95B, or
+Microsoft Windows 98 boot disk.
+
+WORKAROUND
+==========
+
+To work around this behavior if you need to start the computer from a bootable
+floppy disk, use an MS-DOS 5.x or 6.x, Microsoft Windows 95B, or Microsoft
+Windows 98 boot disk.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbhw win95 kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q187021  11-DEC-2001  [winnt]
+TITLE   :Client Reconnects to Non-Responding Application
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+MORE INFORMATION
+================
+
+If a user disconnects, either by choice or otherwise, the processes and all
+virtual memory space remain mapped to that users session ID. When the user logs
+back on, his or her domain/username is associated with the original session ID,
+which reconnects the user to his or her existing session, no matter what state
+that session was in when he or she disconnected.
+
+For the user to establish a new session ID, log on to the Terminal Server as an
+Administrator and open the Terminal Server Administration console. Right-click
+that user's RPD-TCP connection and select Reset. This will force the client to
+be disconnected from the Terminal Server. After the client logs back on, he or
+she will have a new session established, which does not contain the application
+that is not responding.
+
+SYMPTOMS
+========
+
+If you are in remote session running a single application, the application stops
+responding (hangs), and the client is disconnected, when the client reconnects,
+it will go right back to the session that was not responding.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

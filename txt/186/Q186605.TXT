@@ -1,0 +1,69 @@
+DOCUMENT:Q186605  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Client Error: Not a Valid Windows NT Application
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A non-administrator user tries to launch an applications and receives the
+following error:
+
+   <application> is not a valid Windows NT application.
+
+The error may also occur if the system tried to start an application (such as
+Systray.exe on startup). Also, the system may not be able to determine what
+application is failing. In this case, the error message will appear but the
+<application> area may be blank.
+
+CAUSE
+=====
+
+The most likely cause is that the administrator has turned on the administrator
+utility Application Security, but has not added the failing application to the
+list of allowed applications.
+
+RESOLUTION
+==========
+
+At the Terminal Server, the administrator can add the failing application to the
+list of authorized applications. To do this,
+
+1. Run the Application Security application and click ADD.
+
+2. Browse for the application or enter the path. If the error message does not
+   list the application, the administrator may need to run file auditing to
+   determine what is failing.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

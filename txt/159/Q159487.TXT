@@ -1,0 +1,113 @@
+DOCUMENT:Q159487  07-JUL-2002  [homegame]
+TITLE   :Games: How to Determine the Version of Installed Video Driver
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,3.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbtlc kbimu KbDirectXkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+ - Microsoft Close Combat for Windows 1.0 
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Deadly Tide for Windows 1.0 
+ - Microsoft Dungeon Siege, version 1.0 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 98 
+ - Microsoft Flight Simulator for Windows 95 
+ - Microsoft GEX, version 1.0 
+ - Microsoft Golf for Windows, version 3.0 
+ - Microsoft Hellbender for Windows, version 1.0 
+ - Microsoft Monster Truck Madness, version 1.0 
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+ - Microsoft Soccer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to determine the version number of the video driver
+installed on your computer and the version(s) of Microsoft DirectX that it is
+compatible with.
+
+MORE INFORMATION
+================
+
+To determine the version number of the video driver installed on your computer,
+use the DirectX Diagnostic Tool to determine the version number of the video
+driver installed on your computer. To do so:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+   OK.
+
+3. Click the Display or Display 1 tab.
+
+4. Under Drivers, note the version number on the Version line.
+
+5. If multiple video adapters are installed in your computer, repeat steps 3-4
+   to determine the version number of the video driver for eachadditional video
+   adapter installed in your computer.
+
+6. When you have noted the version numbers for all of the video drivers
+   installed on your computer, click Exit.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q190900 DirectX: Description of the DirectX Diagnostic Tool
+
+To determine what version(s) of DirectX the video driver is compatible with,
+check the DDI (DirectDraw Interface) version:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+   OK.
+
+3. Click Save All Information to save a Dxdiag.txt report.
+
+4. Click Desktop, and then click Save.
+
+5. Open the DxDiag.txt file on your desktop.
+
+6. Under the Display Devices section, find the line marked DDI Version. This is
+   the version of DirectX that the video driver is compatible with.
+
+REFERENCES
+==========
+
+The DirectX Diagnostic Tool is included in the most recent versions of DirectX.
+For additional information about installing DirectX, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Additional query words: 3.00 cc fs95 flightsim fltsim hell bender mtm kbimu
+
+======================================================================
+Keywords          : kbdisplay kbtlc kbimu KbDirectX kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbFlightSimSearch kbZNotKeyword kbGolfSearch kbMSNSearch _IK kbAsheronSearch kbCloseCombatSearch kbMonsterTMSearch kbGEX kbDungeonSiege kbMonsterTM kbHellBender kbAsheron100 kbAsheronDarkMaj kbCloseCombat kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbFlightSim95 kbSoccer kbDeadlyTide kbNBAFullCourtPress kbGolf300 kbSimSearch
+Version           : :1.0,3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

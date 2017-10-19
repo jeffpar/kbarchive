@@ -1,0 +1,90 @@
+DOCUMENT:Q234395  06-FEB-2000  [exchange]
+TITLE   :XADM: Folder with Slash Mark (/) Cannot Be Seen By IMAP4 Clients
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use an IMAP4 e-mail client, not all of the public folders are displayed
+in the list of public folders.
+
+CAUSE
+=====
+
+The public folders that aren't visible contain a slash mark (/) in the public
+folder name. The slash mark is designed as hierarchy delimiter in IMAP and is
+used to delimit levels of hierarchy in a mailbox name.
+
+RESOLUTION
+==========
+
+Change the folder name to eliminate the slash mark. The following characters are
+valid in public folder names:
+
+   Tilde ~
+   Exclamation point !
+   At sign @
+   Number sign #
+   Dollar sign $
+   Percent %
+   Caret ^
+   Ampersand &
+   Asterisk *
+   Parentheses ()
+   Braces {}
+   Brackets []
+   Apostrophe '
+   Underscore _
+   Hyphen -
+   Equal sign =
+   Plus sign +
+   Vertical bar |
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Create a public folder whose name contains the slash mark.
+
+2. Use an IMAP client or telnet command to download the folder list.
+
+3. Log on to a MAPI e-mail client and view the folder list.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Component         : OE
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

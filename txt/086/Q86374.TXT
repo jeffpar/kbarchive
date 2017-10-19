@@ -1,0 +1,66 @@
+DOCUMENT:Q86374  19-OCT-2000  [pcmail]
+TITLE   :PC DOS Mac: Running 3.0 Clients Against Older Postoffices
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0a, on platform(s):
+    - the operating system: MS-DOS 
+    - the operating system: Mac OS 9.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+All Microsoft Mail for PC Networks clients are compatible with version 2.x
+postoffices; however, the clients are not compatible with version 1.x
+postoffices. If the Macintosh or MS-DOS client is run against a version 2.x
+postoffice, the client will issue a warning message on startup and then proceeds
+to the login display.
+
+For the Macintosh client, the message is:
+
+   The version of your postoffice is older than the Macintosh client you are
+   running. Please notify your administrator.
+
+For the MS-DOS client, the message is:
+
+   Postoffice version is older than this program version. Notify administrator.
+
+NOTE: If the version 3.0 Mail program is run against a version 2.x postoffice
+without the version 3.0 MS-DOS client Install program being run on that
+postoffice, the following error message is displayed:
+
+   Cannot access server error file: ENGMAI.GLB
+
+This message means that the MS-DOS version 3.0 error file is not installed on
+that postoffice.
+
+
+Additional query words: 3.00 3.00a postoffice
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,75 @@
+DOCUMENT:Q141642  08-NOV-2001  [homemm]
+TITLE   :Mac Dangerous Creatures: No Help Window Opens; Computer Beeps
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Help menu to open a window, no window is displayed. All
+subsequent attempts to open a window cause the computer to beep.
+
+CAUSE
+=====
+
+Dangerous Creatures was designed to center certain windows on the main window.
+This can be a problem when the main window is off the screen because the
+centered windows are also off the screen.
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. Press RETURN.
+
+2. Move the window back to a normal on-screen position.
+
+MORE INFORMATION
+================
+
+The window centered off the screen, along with the main window, contains an OK
+button. You can't perform any function until the OK button clicked and the
+Troubleshooting window closes.
+
+When you press the RETURN key, the program interprets the action the same way it
+would if you clicked. The Troubleshooting window closes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Dangerous Creatures version 1.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm mac helps buzz bleep beeps freezes nothing locks
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbDangerousCreaturesMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

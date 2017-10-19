@@ -1,0 +1,58 @@
+DOCUMENT:Q84124  01-NOV-1999  [win95x]
+TITLE   :Panasonic KX-P1180 Driver with WordPerfect for Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Panasonic KX-P1180 driver for Windows 3.1 does not properly generate lines
+and other graphics when used with WordPerfect for Windows. Although lines and
+graphics display correctly using the Print Preview command, output to the
+printer is not correct.
+
+The KX-P1180 printer driver generates correct graphics when used with other
+applications, such as Paintbrush.
+
+
+The WordPerfect product included here is manufactured by WordPerfect Corporation,
+a vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+For additional information about WordPerfect, please contact WordPerfect
+Corporation technical support at (800) 228-1029.
+
+KBCategory: kbprint kbdisplay kb3rdparty
+KBSubcategory: windrvr win31
+
+Additional query words: 3.10 3.11 WP KX-P1180 Panasonic word perfect
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

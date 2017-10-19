@@ -1,0 +1,69 @@
+DOCUMENT:Q101291  05-FEB-2000  [foxpro]
+TITLE   :"Invalid Function" with CallFn() from FoxTools
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FOXTOOLS.FLL library is used to call Windows API functions from within
+FoxPro. However, FOXTOOLS.FLL cannot call a .DLL that requires more than nine
+parameters. If an attempt is made to call a .DLL with more than nine parameters,
+FoxPro will return the "Invalid Function, Argument, Type or Count" error
+message.
+
+The following example demonstrates this problem. It calls a function named "Beep"
+in a .DLL named "Mydll.dll" with ten parameters. When the CallFn() function that
+is part of FOXTOOLS.FLL is issued, FoxPro returns the error message described
+above:
+
+
+      SET LIBRARY TO SYS(2004)+"FOXTOOLS.FLL"t!
+      test='TEST'
+      handle=REGFN("beep", "CCCCCCCCCC", "", "c:\msvc\example\dlls\mydll.dll")
+      test=CALLFN(handle,test,test,test,test,test,test,test,test,test,test)
+      SET LIBRARY TO
+
+
+MORE INFORMATION
+================
+
+The functionality of Microsoft FoxPro for Windows can be enhanced by calling a
+Windows .DLL within FoxPro. FoxPro for Windows comes with a FoxPro application
+programming interface (API) library that allows FoxPro programs to call Windows
+DLL functions that meet the criteria as described in the FOXTOOLS.WRI file in
+the FOXPROW\GOODIES\FOXTOOLS directory. A large number of Windows API functions
+meet these criteria.
+
+Additional query words: VFoxWin FoxWin 2.50 FOXTOOLS Callfn error
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbVFP300
+Version           : WINDOWS:2.5,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

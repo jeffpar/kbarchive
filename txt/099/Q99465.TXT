@@ -1,0 +1,523 @@
+DOCUMENT:Q99465  07-JUL-2000  [macmail]
+TITLE   :Mac RSC: MM0741: Configuring the Remote Server Connection
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for the Macintosh, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Application Note titled "Configuring the Remote Server Connection," MM0741,
+describes how to configure the Microsoft Mail Remote Server Connection to
+automatically connect and exchange information between two servers. The Remote
+Server Connection requires AppleTalk Remote Access to establish communications
+through modems and phone lines.
+
+To obtain this Application Note, contact Microsoft Product Support Services.
+
+You can find MM0741.EXE, a self-extracting file, on the following services:
+
+ - Microsoft's World Wide Web Site on the Internet
+   On the www.microsoft.com home page, click the Support icon.
+   Click Knowledge Base, and select the product.
+   Enter kbfile MM0741.EXE, and click GO!
+   Open the article, and click the button to download the file.
+
+ - Internet (anonymous FTP)
+   ftp ftp.microsoft.com
+   Change to the Softlib/Mslfiles folder.
+   Get MM0741.EXE
+
+ - The Microsoft Network
+   On the Edit menu, click Go To, and then click Other Location.
+   Type "mssupport" (without the quotation marks).
+   Double-click the MS Software Library icon.
+   Find the appropriate product area.
+   Locate and Download MM0741.EXE.
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+MORE INFORMATION
+================
+
+The following is the text of the Application Note.
+
+NOTE: The printed Application Note contains graphics to help you understand many
+of the concepts discussed below.
+
+======================================================================
+  Microsoft(R) Product Support Services Application Note (Text File)
+           MM0741: CONFIGURING THE REMOTE SERVER CONNECTION
+======================================================================
+                                                   Revision Date: 4/93
+                                                      No Disk Included
+
+The following information applies to Microsoft Mail for Macintosh,
+version 3.1.
+
+ --------------------------------------------------------------------
+| INFORMATION PROVIDED IN THIS DOCUMENT AND ANY SOFTWARE THAT MAY    |
+| ACCOMPANY THIS DOCUMENT (collectively referred to as an            |
+| Application Note) IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY      |
+| KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO    |
+| THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A     |
+| PARTICULAR PURPOSE. The user assumes the entire risk as to the     |
+| accuracy and the use of this Application Note. This Application    |
+| Note may be copied and distributed subject to the following        |
+| conditions: 1) All text must be copied without modification and    |
+| all pages must be included; 2) If software is included, all files  |
+| on the disk(s) must be copied without modification [the MS-DOS(R)  |
+| utility DISKCOPY is appropriate for this purpose]; 3) All          |
+| components of this Application Note must be distributed together;  |
+| and 4) This Application Note may not be distributed for profit.    |
+|                                                                    |
+| Copyright 1993 Microsoft Corporation. All Rights Reserved.         |
+| Microsoft and MS-DOS are registered trademarks and Windows         |
+| is a trademark of Microsoft Corporation.                           |
+ --------------------------------------------------------------------
+
+INTRODUCTION
+============
+
+This document describes how to configure the Microsoft Mail Remote
+Server Connection to automatically connect and exchange information
+between two servers. The Remote Server Connection requires
+AppleTalk(R) Remote Access to establish communications through modems
+and phone lines. At each specified connect time, the Remote Server
+Connection initiates a remote connection between the two servers via
+AppleTalk Remote Access. Once a connection is made, mail and other
+server data are transferred between the servers based on the message
+routing configuration. Therefore, to successfully use the Remote
+Server Connection program, you must first configure AppleTalk Remote
+Access and message routing.
+
+PLANNING ROUTING
+================
+
+To configure the Remote Server Connection, you must first plan routing
+and set site names. To create a bridge between two sites, you must
+designate a bridge server at each site. Because the server you select
+will carry additional network traffic and will have AppleTalk Remote
+Access installed on it, you may want to choose a faster server or a
+server with fewer mail users. You also need to determine which server
+will be the "calling server" and which will act as the "answering
+server". To configure the servers to dial each other, each server will
+act as both a calling server and an answering server.
+
+As an example, all the servers in Seattle could be in a distinct mail
+site named "Seattle," while the servers in Minneapolis could be in a
+site named "Minneapolis." Servers that share the same site name and
+same site password will automatically exchange user lists, mail, and
+general server messages. For two site names to communicate, message
+routing must be configured between the two sites.
+
+To place these servers in their logical site names, perform the
+following steps:
+
+1. From any Microsoft Mail workstation, sign in as the network manager
+   to the server you are adding to a site.
+
+2. Run the Mail Network Admin program.
+
+3. From the Admin menu, choose Set Site Name. A dialog box will
+   appear.
+
+4. In the Site Name box, type the name for the site.
+
+5. In the Password box, type the password to be used by all the
+   servers in the site. This step is optional.
+
+6. Choose the Update button.
+
+7. Repeat steps 3-6 for each server you want to include in the site.
+
+  Important: All servers in a particular site must have the same site
+  name and password.
+
+DESIGNATING BRIDGEHEAD AND COMMUNICATION SERVERS
+================================================
+
+When communicating between two mail sites, one server from each site
+will be responsible for all modem communication and message routing.
+This designated server is known as a "bridgehead" server and is
+responsible for passing all messages from one site to another. You
+should choose a server that has more processing power available or
+fewer users defined to compensate for the additional processing the
+server will need to do.
+
+The server you select will be responsible for both message routing and
+communications using the Remote Server Connection program. After you
+configure message routing (as discussed in a later section), all other
+servers will automatically be configured to send information to the
+bridgehead for processing.
+
+As an example, the MIS server can act as the bridgehead for the
+Seattle site, and the Field Sales server can act as the bridgehead for
+the Minneapolis site. These two mail servers will have AppleTalk
+Remote Access and Remote Server Connection installed on them.
+
+Because both the MIS server and the Field Sales server are
+bridgeheads, they will pass any data from other servers in their
+common site to the bridgehead at the other site. That is, both the
+Corporate Marketing server and the R & D server will pass all
+information destined for servers at the Minneapolis site to the MIS
+server. The MIS server will then route all information over the
+asynchronous connection to the Field Sales server. The Field Sales
+will, in-turn, pass any information to the Field Marketing server.
+
+Message routing configuration will be covered later in this document.
+To correctly configure routing, the two servers must exchange some
+basic information. The following section explains how to enable this
+exchange to take place.
+
+INSTALLING APPLETALK REMOTE ACCESS
+==================================
+
+The Remote Server Connection relies on AppleTalk Remote Access (ARA)
+to establish a remote AppleTalk connection. Pages 4 and 5 of the
+"AppleTalk Remote Access User's Guide" outline how to install ARA. You
+must install the ARA software on both the calling server and the
+answering server.
+
+Setting Up Remote Access to Answer Calls (Answering Server)
+-----------------------------------------------------------
+
+Before your Macintosh can answer calls, you need to connect your
+computer to an appropriate modem. For more information on modems, see
+Appendix A of the "AppleTalk Remote Access User's Guide". Once you've
+properly connected the modem and installed the Remote Access software,
+configure the software to answer calls:
+
+1. Run the Remote Access program.
+
+2. From the Setup menu, choose Remote Access Setup. This opens the
+   Remote Access Setup control panel.
+
+3. From the Modem pop-up menu, choose your modem type.
+
+4. From the Port pop-up menu, choose the port to which your modem is
+   connected.
+
+5. Select the Answer Calls check box.
+
+6. The Remote Server Connection will only stay connected as long as is
+   necessary to transfer mail and other information; therefore, you do
+   not need to set a time in the Maximum Connection Time: Minutes box.
+
+7. In the Allow Access To field, select This Macintosh Only. This is
+   the recommended setting.
+
+Setting Up Remote Access to Make Calls (Calling Server)
+-------------------------------------------------------
+
+Before you can make a call with Remote Access, you need to do the
+following:
+
+1. Install the Remote Access software. Follow the installation
+   procedures in the "Introduction" section of the "AppleTalk Remote
+   Access User's Guide".
+
+2. Connect a modem to your Macintosh and configure ARA for your
+   machine. Refer to steps 1-4 in the "Setting Up Remote Access to
+   Answer Calls" section above.
+
+3. The Macintosh you are calling must have your name and password
+   configured in order to answer your call. Ensure that an account was
+   set correctly by the computer's owner and that you enter matching
+   information when you call. To answer your call, the Macintosh you
+   are calling does not need the Remote Access program open; however,
+   the other Macintosh and its modem must be turned on.
+
+4. Obtain the telephone number of the modem connected to the Macintosh
+   you want to call.
+
+5. Create a connection document, following the instructions in the
+   "Creating a Connection Document" section below.
+
+Creating a Connection Document
+------------------------------
+
+The information ARA and the Remote Server Connection need to access
+another Macintosh is stored in a "connection document".
+
+1. Run the Remote Server Connection program. After the program has
+   loaded, choose Quit from the File menu. This step creates a default
+   folder that will be used later.
+
+2. Run the Remote Access program. A new untitled connection document
+   appears. You can also create a new untitled connection document by
+   choosing New from the File menu if the program is running already.
+
+3. Under Connect As, select the Registered User option.
+
+4. Type in the name and password of a user who has been defined on the
+   answering server. (To register a user on the answering server,
+   choose Users & Groups from the Remote Access Setup menu.)
+
+5. Type the phone number of the answering server. A comma designates a
+   pause. You can use dashes for readability, but the program doesn't
+   require them.
+
+6. Select the Save My Password check box.
+
+7. From the File menu, choose Save to save the connection document.
+
+    Important: The name of your connection document must be identical
+    to the Mail site you are calling, NOT the Mail server you are
+    connecting to.
+
+8. Save the connection document in System Folder:Preferences:MS Mail
+   Remote Sites.
+
+ESTABLISHING COMMUNICATION BETWEEN THE PAIR OF SERVERS
+======================================================
+
+Once you have created and saved your connection document, select the
+Connect button to establish communication between the two servers.
+Depending on the size of the two networks, it may take at least
+fifteen minutes before the two servers "discover" each other. Once the
+servers are communicating, create a routing bridge so the servers can
+exchange information.
+
+CONFIGURING MESSAGE ROUTING
+===========================
+
+For servers in different sites to communicate, it is necessary to
+configure routing. A routing bridge is bi-directional: a bridge does
+not exist until each site has configured a Mail server as a bridge
+server to a Mail server at the other site. To configure routing
+between the two remote servers, perform the following steps:
+
+  1. From any Microsoft Mail workstation, sign in as the network
+     manager to the server you are adding the bridge to.
+
+  2. Run the Mail Network Admin program.
+
+  3. From the Admin menu, choose Configure Routing. The Site-To-
+     Site Routing dialog box appears.
+
+     The From field displays the name of the server you are signed in to
+     and its site name.
+
+     The To list contains the names of the sites the server can be
+     bridged to. The list includes all the sites it has detected
+     directly and all the sites it can bridge to indirectly through
+     another site. If the remote site and server name do not appear in
+     this list, leave the remote connection up for a few more minutes
+     for the site to be "discovered."
+
+  4. From the To list, select the name of the site you want to
+     bridge the server to.
+
+  5. Choose the Bridged To Server pop-up menu to display a list of
+     servers in the site you have selected.
+
+  6. From the Bridged To Server list, choose the server at the
+     other site that your server will bridge to.
+
+  7. Select the desired options for importing and exporting user
+     lists.
+
+  8. Choose the Update button.
+
+  9. To complete the bridge, the network manager for the other
+     site should follow these steps to establish routing to your site.
+     If you know the network manager's name and password, you can sign
+     in to the remote server while ARA is still connected.
+
+ 10. Return to the ARA program and disconnect from the remote site.
+
+RUNNING THE REMOTE SERVER CONNECTION
+====================================
+
+After you use ARA to configure the remote connection and you establish
+a routing bridge, use the Remote Server Connection software to
+schedule and automate the connection times.
+
+With the Remote Server Connection program, you can choose what hours
+and days of the week to connect, or you can choose to connect whenever
+there is urgent or outgoing mail. You can also temporarily disable the
+connection settings without erasing any of the previously scheduled
+times and days.
+
+  Important: To communicate with another server, you must first run
+  the Remote Server Connection program on the calling server. To make
+  sure the Remote Server Connection is running every time you start
+  the calling server, create an alias for the Remote Server Connection
+  program and place it in the Start Up Items folder in the calling
+  server's System Folder.
+
+CONFIGURING THE REMOTE SERVER CONNECTION PROGRAM
+================================================
+
+1. Copy the Remote Server Connection program from the Microsoft Mail
+   Extras disk to the server Macintosh.
+
+2. On the server, run the Remote Server Connection program. Microsoft
+   Mail displays the Remote Server Connection dialog box, which lists
+   connection details and call status.
+
+Next Connection Shows when and where the server will make its next
+scheduled remote connection.
+
+Current Connection Displays information about a remote connection
+during the connection; when the remote connection is disconnected,
+the information is cleared from this box.
+
+Status Log Displays messages that record the activity of the remote
+server connection. You can cut, copy, and paste messages from the
+Status Log box into a document and view them in a word processor.
+
+The status messages are also automatically copied and appended to
+the MS Mail Call Log file in the MS Mail Remote Sites folder. This
+log file can be opened and printed using any word processing
+program.
+
+To set Remote Server Connection times
+
+1. On the calling server, log in as the network manager.
+
+2. Run the Remote Server Connection program.
+
+3. From the Administration menu, choose Connection Times.  You can
+   also set connection times with the Network Administrator
+   application, by choosing the Connection Times command from the
+   Admin menu.
+
+  Important: If the Connection Times menu option is unavailable, the
+  account you are signed into is not the network manager's.
+
+4. In the Connection Documents list, select the name of the Mail site
+   you want to call.
+
+5. Select the boxes and options that correspond to the times or
+   conditions when you want to make the remote access connection:
+
+   - Selecting "If There Is Urgent Mail" makes the connection if any
+    outgoing mail marked as Urgent is received by the server.
+
+   - Selecting "If There Is Outgoing Mail" makes the connection if any
+    outgoing mail is received by the server.
+
+6. Choose the Update button.
+
+The Remote Server Connection has now been configured and your mail
+servers will connect and exchange information at the times specified.
+
+COMMON PROBLEMS AND SOLUTIONS
+=============================
+
+The following describes specific problems, possible causes, and
+their solutions.
+
+ - "Time out value exceeded" error in Session Log.
+
+       Possible Cause: ARA on the answering server has been configured
+       to allow access to the entire network.
+
+       Open the Remote Access Setup Control Panel and change the
+       setting to Allow Access To This Macintosh Only. For more
+       information, see the "Setting Up Remote Access to Answer Calls"
+       section above.
+
+ - "Can't find site <site name>" error in Session Log.
+
+       Below is an example of the Session Log when this error occurs:
+
+            Connected to zone ZONE A
+            Scanning for site A
+            Transferring data to site A
+            Can't find site A
+            Performing full zone scan
+            ...
+
+       Possible Cause: The ARA connection document has been named
+       after the server you are calling. However, the document should
+       correspond to the mail site.
+
+       Rename the connection document in System Folder:Preferences:MS
+       Mail Remote Sites. For more information, see the "Creating a
+       Connection Document" section above.
+
+       When the entry "Transferring data to site A" appears in the
+       log, it means that the Remote Server Connection has told the
+       local server to begin transferring mail to the other site. If
+       the local server can't find the bridge server on the other
+       site, it returns the "Can't find site A" error to the Remote
+       Server Connection.
+
+       Additional Possible Cause: The AppleTalk network is poorly
+       terminated.
+
+       Check both sides of the LocalTalk network for correct
+       termination.
+
+ - Mail servers connect but no mail or data is transferred, although
+   the status window reflects that data was transferred.
+
+       Possible Cause: You are using Microsoft Mail Server version
+       3.1.
+
+       There are some problems with the original Mail 3.1 release
+       where remote servers connect but do not exchange any data. This
+       problem is corrected in the 3.1a release of the Microsoft Mail
+       Server. To obtain the latest version of the mail server,
+       contact Microsoft Inside Sales at (800) 227-4679.
+
+ - Mail server dials continuously.
+
+       Possible Cause: Urgent mail has been sent and you are using
+       Microsoft Mail Server version 3.1.
+
+       There are some problems with the original Mail 3.1 release
+       where remote servers attempt to process urgent mail and dial
+       continuously. The servers connect, but the message is not
+       transmitted due to the problem explained above. Mail therefore
+       continues to attempt to send the message. This is corrected in
+       the 3.1a release of the Microsoft Mail Server. To obtain the
+       latest version of the mail server, contact Microsoft Inside
+       Sales at (800) 227-4679.
+
+ - There are no connection documents listed in the configuration
+   dialog box of the Remote Server Connection (RSC).
+
+       Possible Cause: The RSC program has not been quit from since
+       the ARA document was saved to the MS Mail Remote sites folder.
+
+       Quit the RSC program and re-open.
+
+Additional query words: 3.10 wga appnotes Appnote SoftLib
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbMailSearch kbZNotKeyword3 kbMail310Mac
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

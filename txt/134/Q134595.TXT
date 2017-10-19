@@ -1,0 +1,75 @@
+DOCUMENT:Q134595  28-JUL-2001  [win95x]
+TITLE   :NET START WORKSTATION Command Loads Incorrect Redirector
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet msnets win95 win98 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Windows real-mode networking services, the commands NET LOGON
+or NET START WORKSTATION load the incorrect network redirector.
+
+CAUSE
+=====
+
+The Net.exe file contains two redirectors (VREDIR for the Microsoft Client, and
+NWREDIR for the Netware Client). Windows determines which redirector to load by
+checking the Preferredredir key in the registry. If this key is not set, VREDIR
+is loaded by default.
+
+RESOLUTION
+==========
+
+Check the Primary Network Logon setting to ensure that the desired client is
+selected. To check the Primary Network Logon setting, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Network.
+
+3. In the Network dialog box, under Primary Network Logon, select the desired
+   client, and then click OK.
+
+This setting automatically makes the appropriate changes to the registry.
+
+MORE INFORMATION
+================
+
+Note that the NET LOGON command does not work with NWREDIR. The NET LOGON
+command is not supported with NetWare NCP servers. If you use this command with
+NWREDIR, you receive the following error message:
+
+   Error 50:You attempted an operation that cannot be performed from your
+   computer or that is not supported on the specified server...
+
+======================================================================
+Keywords          : 3rdpartynet msnets win95 win98 kb3rdPartyNetClient 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

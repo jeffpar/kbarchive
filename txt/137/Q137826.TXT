@@ -1,0 +1,75 @@
+DOCUMENT:Q137826  06-FEB-2002  [win95x]
+TITLE   :Disabling Password Caching and Changing Passwords
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+ - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use different passwords for Microsoft Windows products and Windows NT,
+attempting to change a password may result in not having the option to change
+the password and you can receive an error message in Windows NT. When you
+restart your computer, the password is changed, even though you received an
+error message in Windows NT when you tried to change it. The error message you
+may receive is:
+
+   The password you typed for Microsoft Networking is not correct. Please type
+   the old password.
+
+CAUSE
+=====
+
+This behavior occurs when the Disable Password Caching policy has been set, or
+if the Windows products and Windows NT passwords are different.
+
+RESOLUTION
+==========
+
+Use the same password for Windows products and Windows NT, or have your network
+administrator enable password caching.
+
+MORE INFORMATION
+================
+
+Password caching is enabled or disabled using the Policy Editor tool
+(Poledit.exe) to change the following value:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Network\DisablePwdCaching
+
+NOTE: This registry entry does not exist by default.
+
+
+Additional query words: Windows NT
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbtool win95 
+Technology        : kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

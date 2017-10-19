@@ -1,0 +1,107 @@
+DOCUMENT:Q149152  03-NOV-1999  [fortran]
+TITLE   :BUG: !MS$ATTRIBUTES in Interface Fails with Free-Form Source
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you assign an attribute to multiple variables with the same !ms$attributes
+metacommand in an interface block of a free-form source code file, only the
+first variable is given the attribute.
+
+RESOLUTION
+==========
+
+Do one of the following to work around the problem:
+
+ - Specify the !ms$nofreeform metacommand for the interface block.
+
+-or-
+
+ - Use one !ms$attribute metacommand for each variable.
+
+-or-
+
+ - Use a fixed-form source code file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In the following sample code, when the compiler parses the line containing the
+!ms$attributes metacommand in the interface block, only the variable "i" is
+correctly assigned the value attribute. The variable "j" is not processed and
+therefore retains the default Fortran reference attribute.
+
+Sample Code to Demonstrate Problem and Workarounds
+--------------------------------------------------
+
+   ! Compile options needed: none
+   ! required extension: .F90
+         program test
+
+   ! uncomment the following line for the first workaround:
+   !!ms$nofreeform
+             interface
+                 subroutine thesub(i, j)
+                     integer i, j
+   ! comment the following line for the second workaround:
+                      !ms$attributes value :: i, j
+   ! uncomment the following two lines for the second workaround:
+   !                   !ms$attributes value :: i
+   !                   !ms$attributes value :: j
+                 end subroutine
+             end interface
+   ! uncomment the following line for the first workaround:
+   !!ms$freeform
+
+             integer i, j
+             i = 1
+             j = 2
+             call thesub(i, j)
+         end
+
+         subroutine thesub(i, j)
+             integer i, j
+             !ms$attributes value :: i, j
+             print *, i, j         ! should print "1 2"
+         end subroutine
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

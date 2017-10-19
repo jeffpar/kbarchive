@@ -1,0 +1,177 @@
+DOCUMENT:Q157972  27-MAR-2002  [visualc]
+TITLE   :STL Sample for the basic_string::append Functions
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Standard C++ Library, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the basic_string::append STL
+functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     <xstring>
+
+Prototypes
+----------
+
+      basic_string& append(const basic_string& _X);
+
+      basic_string& append(const basic_string& _X, size_type pos,
+
+                           size_type count);
+
+      basic_string& append(const element_type *_S, size_type count);
+
+      basic_string& append(const element_type *_S);
+
+      basic_string& append(size_type count, element_type _C);
+
+      basic_string& append(Iterator first, Iterator last);
+
+NOTE: The class/parameter names in the prototypes may not match the version in
+the header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The append member functions of the basic_string append elements to the end of the
+string. The different forms of the function provide alternate ways to specify
+the source of the elements that will be appended.
+
+The append functions return a reference to the string to which the elements were
+appended.
+
+Sample Code
+-----------
+
+   ////////////////////////////////////////////////////////////////////// 
+   // 
+   // Compile options needed: /GX
+   // 
+   // bsappend.cpp : Illustrates how to use the basic_string append member
+   //                function.
+   // 
+   // Functions:
+   // 
+   //    basic_string::append - appends a sequence of elements to the
+   //                           current string.
+   // 
+   // Written by Michael Reeves
+   // of Microsoft Product Support Services,
+   // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+   ////////////////////////////////////////////////////////////////////// 
+
+   #include <xstring>
+   #include <iostream>
+   using namespace std;
+
+   #if _MSC_VER > 1020   // if VC++ version is > 4.2
+      using namespace std;  // std c++ libs implemented in std
+      #endif
+
+   typedef basic_string<char, char_traits<char>,
+
+                        allocator<char> > test_string;
+
+   void main()
+
+   {
+
+       test_string str1("012");
+       test_string str2("345");
+
+       cout << "str1 = " << str1.c_str() << endl;
+
+       // append str2 to str1
+       str1.append(str2);
+
+       cout << "str1 = " << str1.c_str() << endl;
+
+       // append the last 2 items in str2 to str1
+       str2 = "567";
+       str1.append(str2, 1, 2);    // begin at pos 1, append 2 elements
+
+       cout << "str1 = " << str1.c_str() << endl;
+
+       // append the first 2 items from an array of the element type
+       char achTest[] = {'8', '9', 'A'};
+       str1.append(achTest, 2);
+
+       cout << "str1 = " << str1.c_str() << endl;
+
+       // append all of a string literal to str1
+       char szTest[] = "ABC";
+       str1.append(szTest);
+
+       cout << "str1 = " << str1.c_str() << endl;
+
+       // append one item of the element type
+       str1.append(1, 'D');
+
+       cout << "str1 = " << str1.c_str() << endl;
+
+       // append str2 to str1 using iterators
+       str2 = "EF";
+       str1.append (str2.begin(), str2.end());
+
+       cout << "str1 = " << str1.c_str() << endl;
+
+   }
+
+Program Output is:
+
+   str1 = 012
+   str1 = 012345
+   str1 = 01234567
+   str1 = 0123456789
+   str1 = 0123456789ABC
+   str1 = 0123456789ABCD
+   str1 = 0123456789ABCDEF
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample basic_string::append
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

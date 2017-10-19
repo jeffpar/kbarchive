@@ -1,0 +1,108 @@
+DOCUMENT:Q134872  05-NOV-2000  [powerpt]
+TITLE   :PPT7: Error While Saving in PowerPoint 4.0 Format
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to save a PowerPoint for Windows 95 presentation as a PowerPoint 4.0
+presentation, you might see the following error message:
+
+   Sorry, either the filename is too long or PowerPoint cannot find or run the
+   Viewer, which it needs to save in PowerPoint 4.0 format. If the filename is
+   correct, you should run Setup, and re-install to get the Viewer.
+
+Under certain conditions, the error message above may be preceded by this message
+from Viewer:
+
+   The path or filename is invalid.
+
+This message occurs after you successfully import a PowerPoint version 4.0 for
+the Macintosh file into PowerPoint for Windows 95, version 7.0, save it as a
+PowerPoint 7.0 file, and then try to resave the file as a PowerPoint 4.0 file.
+
+Also, this error message can occur when you import a PowerPoint for the Macintosh
+file that contains unsupported objects into PowerPoint 7.0.
+
+CAUSE
+=====
+
+There are three possible causes for these error messages:
+
+ - PowerPoint Viewer is not installed.
+
+ - PowerPoint Viewer is currently in use.
+
+ - The path (including the filename) is larger than 256 characters.
+
+The PowerPoint Viewer is required by PowerPoint 7.0 to save a presentation to
+PowerPoint 4.0 format. If the PowerPoint Viewer is not installed or is currently
+in use, PowerPoint 7.0 cannot save the file.
+
+RESOLUTION
+==========
+
+1. Check the Windows taskbar to see if PowerPoint Viewer is running. If it is
+   running, close it, and then try to save again.
+
+2. If Viewer is not currently running, check to see if Viewer is installed:
+   a. Click the Windows Start button, point to Find, and then click Files Or
+      Folders.
+
+   b. Click the Name & Location tab.
+
+   c. In the Named box, type "pptview.exe" (without the quotation marks).
+
+   d. In the Look In box, change to the drive where PowerPoint is installed.
+
+   e. Click Find Now.
+
+   If the search results produce no files, PowerPoint Viewer is not currently
+   installed. To install Viewer, you must rerun PowerPoint Setup (or Office
+   Setup).
+
+3. If you still can't save the file, count the characters in the full path
+   (including the filename) you are trying to use. If the path contains more
+   than 256 characters, try giving the presentation a shorter name or saving it
+   to another folder that has a shorter name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PowerPoint for Windows 95,
+version 7.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 7.00 7 ppt95 ppt7 4 0
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : :7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

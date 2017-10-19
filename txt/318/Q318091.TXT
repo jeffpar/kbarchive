@@ -1,0 +1,144 @@
+DOCUMENT:Q318091  15-AUG-2002  [iis]
+TITLE   :MS02-018: Patch for Buffer Overrun in HTR ISAPI Extension
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbCOMIS kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbWin2000sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A buffer overrun vulnerability exists in Internet Information Server (IIS) 4.0
+and Internet Information Services (IIS) 5.0. By sending a specially chosen
+request to an affected Web server, an attacker can cause the server to
+temporarily stop providing Web services or, in very unusual cases, the attacker
+can gain control of the server.
+
+A number of factors, including the following, tend to reduce the severity of this
+vulnerability:
+
+ - It is extremely hard to inject code by exploiting this vulnerability because
+   the overrun is not on the stack and is only a single byte over the allocated
+   buffer.
+
+ - By default, the IIS Lockdown Tool removes the component that contains the
+   vulnerability.
+
+ - The default configuration of the URLScan tool prevents the vulnerability from
+   being exploited.
+
+CAUSE
+=====
+
+This vulnerability occurs because the Internet Server Application Programming
+Interface (ISAPI) extension that implements HTR scripting contains an off-by-one
+error when it calculates the size of a buffer for storing an input value. If a
+request for an HTR script is malformed in a particular way, it is possible to
+abuse the miscalculation and conduct a buffer overrun attack. In the least
+serious case, this can result in the failure of the IIS service; in the most
+serious case (which is very hard to exploit), it can allow code to be run on the
+server.
+
+RESOLUTION
+==========
+
+ - Internet Information Services 5.0
+ - Internet Information Server 4.0
+
+Internet Information Services 5.0
+---------------------------------
+
+The update for this problem is included in the "MS02-018: April 2002 Cumulative
+Patch for Internet Information Services". For additional information about how
+to obtain this patch, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q319733 MS02-018: April 2002 Cumulative Patch for Internet Information
+   Services
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+Internet Information Server 4.0
+-------------------------------
+
+The update for this problem is included in the "MS02-018: April 2002 Cumulative
+Patch for Internet Information Services". For additional information about how
+to obtain this patch, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q319733 MS02-018: April 2002 Cumulative Patch for Internet Information
+   Services
+
+STATUS
+======
+
+Internet Information Services 5.0
+---------------------------------
+
+Microsoft has confirmed that this problem may cause a degree of security
+vulnerability in Microsoft Internet Information Services 5.0. This problem was
+first corrected in Windows 2000 Service Pack 3.
+
+Internet Information Server 4.0
+-------------------------------
+
+Microsoft has confirmed that this problem may cause a degree of security
+vulnerability in Microsoft Internet Information Server 4.0.
+
+MORE INFORMATION
+================
+
+For more information on these vulnerabilities, see the following Microsoft Web
+site:
+
+   http://www.microsoft.com/technet/security/bulletin/MS02-018.asp
+
+For additional information about how to obtain a hotfix for Windows 2000
+Datacenter Server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q265173 Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information on how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+Additional query words: kbIISCom kbIIS400500510April2002Rollup security_patch
+
+======================================================================
+Keywords          : kbSecurity kbCOMIS kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

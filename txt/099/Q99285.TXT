@@ -1,0 +1,57 @@
+DOCUMENT:Q99285  20-SEP-1999  [winmisc]
+TITLE   :Extract From VidEdit Supports 8-Bit Color Only
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Extracting frames from the VidEdit utility that ships with Microsoft Video for
+Windows results in bitmap images at a color depth of 8 bit only. This occurs
+even if the current AVI sequence is captured at a color depth of 16 or 24 bit.
+This is by design.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In VidEdit, open an AVI sequence that uses a 16- or 24-bit color depth.
+
+2. From the File menu, choose Extract.
+
+3. From the List Of Files Type list box, choose Microsoft Windows DIB.
+
+4. Type a valid filename with a DIB extension into the File Name text box and
+   choose OK.
+
+5. The resulting file (FILENAME.DIB) will be at an 8-bit color depth.
+
+Additional query words: 1.00 8 16 24
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

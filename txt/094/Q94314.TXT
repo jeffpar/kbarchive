@@ -1,0 +1,150 @@
+DOCUMENT:Q94314  04-MAY-2001  [masm]
+TITLE   :32-Bit Flat Memory Model MASM Code for Windows NT
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.00a,6.00b,6.10,6.10a,6.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.00a, 6.00b, 6.10, 6.10a, 6.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Macro Assembler (MASM) versions 6.0a and later support generating
+32-bit flat memory model code through the .MODEL flat directive. When combined
+with the CVTOMF and LINK32 utilities and the KERNEL32.LIB library distributed
+with the Windows NT software development kit (SDK) or the LINK utility and the
+KERNEL32.LIB library distributed with Microsoft Visual C++ for Windows NT, MASM
+can generate a 32-bit flat memory model application for the Windows NT
+environment.
+
+Because MASM version 6.0 does not properly support the _stdcall convention, it
+cannot be used to generate applications for the Windows NT environment.
+
+MORE INFORMATION
+================
+
+Given some MASM code in a file named FLAT32.ASM where its entry point is _start,
+to assemble this code into a 32-bit flat memory model application for the
+Windows NT environment, perform the following four steps:
+
+1. Place the .386 or .486 directive in the code prior to the .MODEL flat,
+   stdcall directive to ensure that the code and data segments are correctly
+   initialized for a 32-bit flat memory model application.
+
+2. Assemble the source code using the following command:
+
+   ML /c flat32.asm.
+
+   The /c assembler option prevents the MASM from invoking the 16-bit linker
+   provided with MASM.
+
+3. For MASM 6.0a or 6.0b, use the CVTOMF utility provided with the Windows NT
+   SDK to convert the generated object files from OMF format to COFF format. The
+   command is as follows:
+
+   cvtomf flat32.obj
+
+   This step is unnecessary with MASM version 6.1 and later if you use the /coff
+   switch because it will produce a COFF format object file.
+
+4. Use the LINK32 utility provided with the Windows NT SDK or LINK utility
+   provided with Visual C++ for Windows NT to link the object modules. Specify a
+   path to KERNEL32.LIB. The command line is as follows:
+
+   link32 -subsystem:console -entry:_start -out:flat32.exe flat32.obj
+   kernel32.lib
+
+   To create an executable module that contains symbolic debugging information,
+   add the -Zi switch to the assembler options (Step 2) and add the following
+   switches to the linker command line: -debug:full -debugtype:cv.
+
+If you are using LINK32 from the Windows NT SDK, do not use the INCLUDELIB
+directive and do not place the starting label after the END directive in the
+MASM code. The LINK32 utility provided with the Windows NT SDK ignores the
+default library names in object files and requires the -entry switch on the
+linker command line to specify the starting address.
+
+Windows NT does not support the MLX driver provided with MASM versions 6.0a and
+6.0b. Also, Windows NT does not support the MS-DOS-extender used by MASM
+versions 6.1 and 6.1a. Therefore, it may be necessary to perform the assembly
+step on a machine running MS-DOS while the other steps run on a machine running
+Windows NT. Another option is to upgrade to MASM version 6.11.
+
+The code below is a "Hello, world" application developed in assembler to use the
+32-bit flat memory model of Windows NT.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: /c
+
+   .386
+   .MODEL flat, stdcall
+
+   STD_OUTPUT_HANDLE EQU -11
+
+   GetStdHandle PROTO NEAR32 stdcall,
+       nStdHandle:DWORD
+
+   WriteFile PROTO NEAR32 stdcall,
+       hFile:DWORD, lpBuffer:NEAR32, nNumberOfBytesToWrite:DWORD,
+       lpNumberOfBytesWritten:NEAR32, lpOverlapped:NEAR32
+
+   ExitProcess PROTO NEAR32 stdcall,
+       dwExitCode:DWORD
+
+   .STACK 4096
+
+   .DATA
+
+   msg DB "Hello, world.", 13, 10
+   written DW 0
+   hStdOut DD 0
+
+   .CODE
+   _start:
+       INVOKE  GetStdHandle,
+           STD_OUTPUT_HANDLE      ; Standard output handle
+       mov hStdOut, eax
+
+       INVOKE  WriteFile,
+           hStdOut,               ; File handle for screen
+           NEAR32 PTR msg,        ; Address of string
+           LENGTHOF msg,          ; Length of string
+           NEAR32 PTR written,    ; Bytes written
+           0                      ; Overlapped mode
+
+       INVOKE  ExitProcess,
+           0                      ; Result code for parent process
+
+   PUBLIC _start
+   END
+
+Additional query words: kbinf 6.00a 6.00b 6.10 p_w32dev
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM611
+Version           : :6.00a,6.00b,6.10,6.10a,6.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

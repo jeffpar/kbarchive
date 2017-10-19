@@ -1,0 +1,64 @@
+DOCUMENT:Q146128  23-OCT-1999  [exchange]
+TITLE   :XADM: Cannot Disable Proxy Address Generators
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbusage exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Exchange version 4.0 Administrator program, there are three
+default e-mail proxy addresses installed by default: MSMail, X400, and SMTP.
+These addresses are an integral part of the program and cannot be disabled.
+
+MORE INFORMATION
+================
+
+You cannot control the generation of proxy addresses for imported recipients or
+newly created recipients. For example, when you create or import users, the
+Microsoft Exchange Administrator program automatically generates an X.400, a
+Microsoft Mail, and an SMTP proxy address for each mailbox. You cannot force
+Exchange Server to generate only one or two of the proxy addresses. The
+Administrator program generates all three proxy addresses.
+
+This behavior is by product design.
+
+To find these addresses, click the Configuration container, open the Site
+Addressing Container properties, and then click the Site Addressing tab. The
+Remove button on this page can be used to remove a specific address type from
+all existing mailboxes, but Exchange Server will generate all types of address
+for new or imported mailboxes.
+
+
+
+Additional query words: FAQ
+
+======================================================================
+Keywords          : kbsetup kbusage exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q99034  30-JUL-2001  [lanman]
+TITLE   :SONET Signal Rates
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+This is the list of some common sonet signal rates:
+
+                      SONET line rates
+---------------------------------------------------------------
+Electrical Optical                      Equivalent   Equivalent
+signal     equivalent  Line rate        DS1s         DS3s
+---------------------------------------------------------------
+
+ STS1      OC1         51.840 Mbps       28           1
+---------------------------------------------------------------
+ STS3      OC3         155.520 Mbps      84           3
+---------------------------------------------------------------
+           OC9         466.560 Mbps      252          9
+---------------------------------------------------------------
+           OC12        622.080 Mbps      356          12
+---------------------------------------------------------------
+           OC18        933.120 Mbps      504          18
+---------------------------------------------------------------
+           OC24        1.244 Gbps        572          24
+---------------------------------------------------------------
+           OC36        1.866 Gbps        1008         36
+---------------------------------------------------------------
+           OC48        2.488 Gbps        1344         48
+---------------------------------------------------------------
+STS: Synchronous Transport Signal
+OC:  Optical Carrier
+
+Additional query words: prodlm
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q226480  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Profile Path Changes to Windows NT Profile
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install a Windows NT Server, Terminal Server Edition-based computer on
+a domain where the primary domain controller is running File and Printer Sharing
+for NetWare, the Terminal Server profile path in User Manager may appear to
+change to Windows NT Profile.
+
+CAUSE
+=====
+
+This problem can occur because of a problem in User Manager.
+
+RESOLUTION
+==========
+
+To work around this problem, you can safely ignore this behavior because the
+Windows NT Profile path remains the Terminal Server profile path.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version Terminal
+Server Edition for 4.00.
+
+NOTE: It should be noted that if FPNW is removed, the behavior may still exist.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbnetwork kbtool kbui 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

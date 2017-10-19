@@ -1,0 +1,82 @@
+DOCUMENT:Q243458  11-JUN-2002  [visualc]
+TITLE   :PRB: Err Msg: Fatal Error LNK1104 Cannot Open File "Nafxcwd.lib"
+PRODUCT :Microsoft C Compiler
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbLinker kbMFC kbSEdition kbDSupport kbgrpdsvc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ Standard Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build a program that uses the Visual C++ Microsoft Foundation Classes
+(MFC), the following error occurs:
+
+   LINK : fatal error LNK1104: cannot open file "nafxcwd.lib"
+
+CAUSE
+=====
+
+This can happen if the project settings are set to Use MFC in a Static Library.
+Microsoft Visual C++ 6.0 Standard Edition does not support statically linking
+with the MFC libraries.
+
+RESOLUTION
+==========
+
+To resolve this problem, dynamically link your application to the MFC libraries.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+To change your MFC project setting to link dynamically to the MFC libraries,
+perform the following steps:
+
+1. Open your MFC project.
+
+2. From the Project menu, click Settings.
+
+3. In the Settings For combo box, select All Configurations.
+
+4. Click the General tab. If it is not visible, use the tab scroll buttons to
+   scroll to the left.
+
+5. In the Microsoft Foundation Classes combo box, select Use MFC in a Shared
+   DLL.
+
+6. Click OK to save the changes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbLinker kbMFC kbSEdition kbDSupport kbgrpdsvc 
+Technology        : kbVCsearch kbAudDeveloper kbVC600
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

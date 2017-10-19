@@ -1,0 +1,71 @@
+DOCUMENT:Q223052  10-AUG-2001  [winnt]
+TITLE   :Cannot Set Custom Form As Default Paper Size
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP4
+OPER/SYS:
+KEYWORDS:kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4 
+ - Microsoft Windows NT Workstation version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After Windows NT 4.0 Service Pack 4 is installed on Far East versions of Windows
+NT, custom forms cannot be used. The custom form can be created and selected as
+the default paper size; however, when you try to use it through WordPad or
+Microsoft Word, it is not selected as the default.
+
+CAUSE
+=====
+
+This problem does not occur on the English version of Windows NT. Localization
+of Rasdd.dll and Rasddui.dll may have left default document settings
+uninitialized.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Microsoft Windows NT
+version 4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0. This problem was
+first corrected in Windows NT 4.0 Service Pack 5.
+
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search
+Version           : winnt:4.0 SP4
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

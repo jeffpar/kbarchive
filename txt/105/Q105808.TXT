@@ -1,0 +1,78 @@
+DOCUMENT:Q105808  11-JAN-2001  [vbwin]
+TITLE   :FIX: Overflow in VB version 3.0 ICONWRKS Sample Program
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ICONWRKS (Icon Works) sample program that shipped with Visual Basic version
+3.0 can fail with an "Overflow" error when you attempt to do a File+Open from
+the Editor form, on some high-resolution monitors. ICONWRKS is installed by
+default under the subdirectory \SAMPLES\ICONWRKS.
+
+CAUSE
+=====
+
+ICONWRKS fails with "Overflow" in the Extract_Image_And_Mask procedure in
+ICONWRKS.BAS on the following line:
+
+   R = SetBitmapBits(editor.Pic_Image.Image, ImageSize, Lpicon + 12 + 128)
+
+The statement DEFINT A-Z at the top of the module makes the variable R an
+integer. However, the API function SetBitmapBits returns a Long Integer when run
+on some high-resolution monitors.
+
+NOTE: This problem may also occur on other lines with other API calls.
+
+This sample program was developed under Visual Basic version 1.0 and was not
+updated for 3.0.
+
+RESOLUTION
+==========
+
+To correct the problem, add the following statement to ICONWRKS.GBL:
+
+      Global R As Long
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been corrected in Visual Basic
+version 4.0.
+
+Additional query words: buglist3.00 3.00 fixlist4.00
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

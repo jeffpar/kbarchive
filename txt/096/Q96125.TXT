@@ -1,0 +1,76 @@
+DOCUMENT:Q96125  15-NOV-1999  [pcmail]
+TITLE   :3COM: Conversion to Mail 3.0 Windows Client Fails
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to 3Com 3+Mail, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to use the Conversion Utility from 3Com 3+Mail for Microsoft Mail for
+PC Networks version 3.0 with Microsoft Mail for Windows version 3.0 does not
+work properly. Messages are missing and folders are incomplete.
+
+CAUSE
+=====
+
+The Conversion Utility was written for version 2.1 of the Microsoft Mail
+database architecture. It does not place the folders into the Windows client
+Mail Message File (.MMF).
+
+RESOLUTION
+==========
+
+Use the MS-DOS client to determine if the folders have been converted. The
+Conversion Utility can convert the folders correctly but has not placed the
+folders into the Windows client .MMF file.
+
+If this is the case, use the Windows-based CONVERT.EXE program, provided with
+Microsoft Mail version 3.0, to convert the MS-DOS client folders into Windows
+folders.
+
+After you run CONVERT.EXE, if the folders do not appear in the Windows client,
+perform the following five steps to regenerate the folders in the MS-DOS
+client:
+
+1. Archive the folders
+
+2. Delete the folders
+
+3. Recreate the folders
+
+4. Restore the archive
+
+5. Use the CONVERT.EXE program to move the folders into the .MMF file
+
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGate3COM3Plus300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

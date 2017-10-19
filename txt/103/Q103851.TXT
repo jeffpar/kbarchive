@@ -1,0 +1,80 @@
+DOCUMENT:Q103851  09-NOV-1999  [pcmail]
+TITLE   :PC WRmt Ext: Telebit Err Msg: Failure to Reinitialize Modem
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1, 3.0, 3.2 
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the version 3.2 Microsoft Mail Remote for Windows or versions 2.1,
+3.0, or 3.2 Microsoft Mail for PC Networks EXTERNAL.EXE program with the Telebit
+script, sometimes the following display appears when you reset the modem after a
+successful transmission:
+
+   Failure to initialize modem
+
+CAUSE
+=====
+
+This problem occurs if the response code stored in the response buffer contains
+two zeros. The modem was reset correctly; however, the script did not recognize
+the two zeros as being acceptable--the script was looking for only one zero to
+be returned.
+
+This error will not be consistent because sometimes the response codes are placed
+separately into the response buffer. This problem is timing dependent.
+
+RESOLUTION
+==========
+
+The lines in the script from the RESET section are:
+
+      clearrsp          ; Clear out any ring signals
+      sendln "ATV0"     ; Numeric result codes
+      sendln "ATE0"     ; Suppress command local echo
+      sendln "ATZ"      ; Reset modem to default settings
+      waitrsp 1
+
+To resolve this problem, place the waitrsp command after "ATE0", so that the
+multiple response codes from the different sendln commands do not get included
+together. The corrected RESET section should look like the following:
+
+      clearrsp          ; Clear out any ring signals
+      sendln "ATV0"     ; Numeric result codes
+      sendln "ATE0"     ; Suppress command local echo
+      waitrsp 1
+      sendln "ATZ"      ; Reset modem to default settings
+      waitrsp 1
+
+Additional query words: 2.10 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN210 kbMailRemote320
+Version           : WINDOWS:2.1,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

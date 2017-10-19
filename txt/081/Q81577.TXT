@@ -1,0 +1,86 @@
+DOCUMENT:Q81577  06-NOV-1999  [win16sdk]
+TITLE   :Limits on the Number of Open Files
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Because an application developed for the Windows graphical environment runs only
+within the MS-DOS environment, the number of files that the application can open
+is subject to two distinct limits imposed by MS-DOS. This article discusses
+these limits.
+
+MORE INFORMATION
+================
+
+The first limit on the number of open files is imposed by a table of SFT data
+structures (System File Tables) within MS-DOS. The initial number of SFTs is
+specified in the FILES= line of the CONFIG.SYS file. MS-DOS version 5.0 does not
+provide a function to change the number of SFTs in the table. However, some
+applications, including Windows, contain the information necessary to change the
+size of the table.
+
+The SFT table is global, that is, it is shared by all applications or tasks that
+are active in the system. (Each task is represented by a PSP or program segment
+prefix.) The exception to the global nature of the SFT table, and the associated
+limit on the number of open files, in introduced by Windows. Different groupings
+of applications, called virtual machines (or VMs), have a "per VM" address
+space. This allows a virtual machine to have a local portion of the SFT table,
+which exists only in that VM. Because all graphical applications in the Windows
+environment run in a single VM, only the MS-DOS (not graphical) applications run
+in separate VMs.
+
+MS-DOS does not support more than 255 SFTs. Therefore, it does not support more
+than 255 open files at any time in any specific VM. The SHARE utility, which
+extends MS-DOS core functionality, does not support the ability to increase the
+size of the SFT table on a "per VM" basis under Windows, because SHARE must, at
+any time, in any VM, be able to enumerate all open SFTs in the entire system.
+
+The second limit on the number of open files involves a "per application" table,
+called the JFN table, which is stored in each task's PSP. By default, the JFN in
+the PSP has room for 20 entries, which limits each application to 20 open files.
+An application running on MS-DOS version 3.3 and subsequent versions can change
+the size of the JFN by calling MS-DOS INT 21h function 67h. This call allocates
+a new JFN table and modifies values in the PSP to indicate the larger size of
+the JFN table. This allows the application corresponding to a particular PSP to
+open more than 20 files, provided that the global SFT table, shared by all
+applications, has available SFTs.
+
+The two limits work together as follows. First, to open a file, the application
+must have a place available in its JFN table. Second, MS-DOS must have an
+available SFT in its internal SFT table. Note that if either of these
+requirements is not met, the OPEN (or CREATE) INT 21h call will fail with error
+4.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

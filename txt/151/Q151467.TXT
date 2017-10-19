@@ -1,0 +1,58 @@
+DOCUMENT:Q151467  22-OCT-1999  [mastering]
+TITLE   :Mastering Visual Basic: Setup Does Not Complete
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual Basic 4.0 ISBN 1-55615-913-7, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Mastering Microsoft Visual Basic 4.0 setup does not complete.
+
+CAUSE
+=====
+
+Microsoft Visual Basic is running during the Mastering Setup procedure.
+
+RESOLUTION
+==========
+
+Quit Microsoft Visual Basic and then run setup again.
+
+MORE INFORMATION
+================
+
+If you run setup while Microsoft Visual Basic is running, Setup does not
+complete successfully. However, there is no message requesting you to close the
+running application.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles v-b vb mastering
+
+======================================================================
+Keywords          : kbmm kbsetup 
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

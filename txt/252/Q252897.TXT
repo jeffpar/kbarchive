@@ -1,0 +1,72 @@
+DOCUMENT:Q252897  02-JUN-2000  [winnt]
+TITLE   :TAMA Does Not Run Update Script for Management Agent
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Together Administration Management Agent (TAMA) in Microsoft Metadirectory
+Services (MMS) 2.1 creates connector space objects and the Export.ta file, and
+then optionally runs a TAMA script. However, after you run TAMA, the connector
+name space objects and Export.ta file are successfully created but the TAMA
+control script may not run. If the TAMA script does not run, the associated
+management agent contains the correct connector space objects but the connected
+directory is not updated. In addition, the operator's log does not report the
+failure to update the connected directory.
+
+CAUSE
+=====
+
+This behavior occurs if the distinguished name (DN) of the management agent
+contains spaces.
+
+RESOLUTION
+==========
+
+To work around this issue, do not use spaces in the DN when you create
+management agents. For existing management agents, create a replacement
+management agent and delete the agent that contains spaces in its name.
+
+NOTE: Renaming management agents is not supported.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Metadirectory Services
+2.1.
+
+
+Additional query words: prb zoomit via ma zscript genlogs fail fails execute
+
+======================================================================
+Keywords          : kbenv kbdta 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

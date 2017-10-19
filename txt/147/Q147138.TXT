@@ -1,0 +1,388 @@
+DOCUMENT:Q147138  24-MAY-2001  [homemm]
+TITLE   :Mac Encarta 96 Encyclopedia: Memory ReadMe Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1996 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains a complete copy of the Encarta 1996 Encyclopedia
+Memory ReadMe file included on the Encarta Encyclopedia compact disc.
+
+MORE INFORMATION
+================
+
+---------------------------------------------------------------------
+
+Memory Issues with Microsoft Encarta 96 Encyclopedia for the Macintosh:
+
+---------------------------------------------------------------------
+
+This document contains information on the following topics:
+
+1) GENERAL MEMORY ISSUES WITH ENCARTA 96 ENCYCLOPEDIA
+   a. How Encarta 96 Encyclopedia uses memory
+   b. Increasing the amount of memory available to Encarta 96
+      Encyclopedia
+
+2) ADVICE FOR COMMON CONFIGURATIONS
+   a. If you have exactly 8 MB of memory
+   b. If you have more than 8 MB of memory
+
+3) LOW MEMORY SYMPTOMS AND SOLUTIONS
+   a. Error message on Encarta 96 Encyclopedia  startup:
+      "You are low on free system memory"
+   b. Problems enlarging images
+   c. Problems printing topics
+   d. Problems printing images
+   e. Sounds do not play
+   f. Incorrect characters displayed
+
+-----------------------------------------------------
+1) GENERAL MEMORY ISSUES WITH ENCARTA 96 ENCYCLOPEDIA
+-----------------------------------------------------
+
+1a. How Encarta uses memory
+
+Encarta 96 Encyclopedia lets you explore a tremendous amount of
+information and media. You can read articles, see color photos, listen
+to high quality audio, or watch animations and videos. All this
+multimedia can use a large amount of your computer's memory (RAM). We
+put this document together to help you understand how to best manage
+your computer's memory and get the most out of Encarta 96's features.
+
+1b. Increasing the amount of memory available to Encarta 96
+    Encyclopedia
+
+Turn on Virtual Memory - Virtual memory allows you to increase the
+amount of available memory by using space on your hard disk to
+simulate physical memory. Although using virtual memory will slow down
+performance slightly, the extra available memory can make applications
+like Encarta 96 Encyclopedia run more effectively. To turn on Virtual
+Memory, open the Memory control panels from the Apple menu on the
+system toolbar, and choose the Virtual Memory On option. Using the up
+and down arrows, adjust the "After restart" value. We recommend
+setting the "After restart" value to 1.5 times the "Available built-in
+memory." For example, if you have 8 MB of "Available built-in memory,"
+change the "After restart" value to 12MB.
+
+Run only one application at a time - If other applications are
+running, close them before launching Encarta 96 Encyclopedia.
+
+Reduce the size of the Disk Cache - To make the greatest amount of
+memory available, open the Memory Control Panel and set the cache to
+32K
+
+NOTE: On systems earlier than 7.5, if your cache is set to higher than
+32K for every 1MB of physical RAM in your system, or set any higher
+than 512K, you will experience degraded performance while running
+Encarta 96 Encyclopedia. For system 7.5 or greater, a larger cache can
+improve Encarta 96 Encyclopedia's performance.
+
+Remove unused fonts and sounds - Fonts and sounds consume system
+memory, even when not being used. Removing those you don't need will
+make more memory available. Be careful when removing fonts however, as
+some applications (like Encarta 96 Encyclopedia) may not work properly
+if the correct fonts are not available. Remove only what you are
+certain is not needed. Encarta 96 Encyclopedia requires the following
+fonts:  Arial, Chicago, Times New Roman, Symbol, MS Reference, Times
+New Roman Special G1, and Times New Roman Special G2. If you use
+System 7.5 or above you can use the Extension Manager to disable fonts
+and sounds.
+
+Remove or disable system extensions - Third party system extensions
+such as screen savers, fax software, desktop pictures, menu-modifying
+utilities and other system enhancements increase the amount of memory
+consumed by your system. Removing some or all of these extensions will
+increase the amount of memory available to applications. Be sure that
+you save anything you remove from your System Folder in a separate
+folder on your hard disk so that you can replace it later. If you use
+System 7.5 or above you can use the Extensions Manager to disable any
+extensions.
+
+NOTE: Be sure to restart your Macintosh after making any of the above
+changes to your system. To restart your Macintosh, choose Restart from
+the Special menu on your system toolbar.
+
+-----------------------------------
+2) ADVICE FOR COMMON CONFIGURATIONS
+-----------------------------------
+
+Encarta is designed to work best with the most common multimedia
+Macintosh computers  sold today. These machines have 8 to 16 MB of
+memory, a double-speed CD-ROM drive, and a 640 x 480 monitor which can
+display thousands of colors. Encarta 96 Encyclopedia has been tailored
+to work best with that configuration. However, we know that not all
+monitors can display more than 256 colors. Many machines are
+configured with more than 16 MB of RAM,  larger monitors and the
+ability to display millions of colors. The following sections show how
+you can get the most from Encarta 96 Encyclopedia with your computer's
+configuration.
+
+2a. If you have 8 MB of memory
+
+      Typical System:
+      Quadra 800 or Power Mac 7100/80
+      double speed CD ROM
+      14-inch monitor running in thousands of colors
+
+Depending upon how your computer is configured, its operating system
+can use from 2.5 to 5.5 MB of RAM. Therefore, if your machine has 8 MB
+of RAM, there may not be sufficient memory left over for additional
+operations. This may result in frequent alert messages from the
+Finder, or the inability to launch Encarta 96 Encyclopedia. If Encarta
+96 Encyclopedia will not run, or you wish to avoid seeing alert
+messages, increase the amount of memory available to Encarta 96
+Encyclopedia. [See section 1b. "Increasing the amount of memory
+available to Encarta 96 Encyclopedia."]
+
+2b. If you have more than 8 MB of memory
+
+      Typical System:
+      Macintosh Quadra 950 or PowerMac 7200/90
+      16 MB of RAM
+      16-inch monitor running in Millions of colors.
+
+Here are some tips to enhance performance on this type of
+configuration:
+
+Increase the "Preferred Memory" for Encarta 96 Encyclopedia - Only
+make these changes on a system with more than 8 MB of memory. The
+minimum amount of memory Encarta 96 Encyclopedia requires to run is
+4000K. Encarta 96 Encyclopedia will run with this amount of memory,
+however performance will be degraded. To set aside more memory for
+Encarta 96 Encyclopedia  to use, quit Encarta 96 Encyclopedia if it is
+running, click the Encarta 96 Encyclopedia application icon then
+choose "Get Info" from the File system menu, and change the Preferred
+size from 6000K to 8000K. Close the window to apply these changes.
+
+Increase the size of the Disk Cache - In the Memory control panel, you
+can set aside a portion of your RAM to store recently used information
+read from your CD-ROM drive or hard disk. A larger cache can improve
+performance considerably because RAM is much faster than CD-ROMs and
+hard disks. For a system with more than 8 MB of RAM, you should set
+the cache size to be 256K or 512K. On systems earlier than 7.5, if
+your cache is set to higher than 32K for every 1MB of physical RAM in
+your system, or set any higher than 512K, you will experience degraded
+performance while running Encarta 96 Encyclopedia. For system 7.5 or
+greater, a larger cache can improve Encarta 96 Encyclopedia's
+performance.
+
+------------------------------------
+3) LOW MEMORY SYMPTOMS AND SOLUTIONS
+------------------------------------
+
+The following are examples of some typical low memory symptoms and
+possible solutions to these problems:
+
+3a. Symptom: Error message on Encarta 96 Encyclopedia startup:
+
+      "You are low on free system memory"
+
+When starting Encarta 96 Encyclopedia, the "You are low on free system
+memory" error message appears. While running Encarta 96 Encyclopedia,
+sounds don't play, images don't load or fonts display incorrectly.
+
+Reason:
+Some of the multimedia aspects of Encarta 96 Encyclopedia require
+"free system memory."  This is the amount of free memory left
+available by your system, Encarta 96 Encyclopedia, and any other
+applications you may be running. This "free system memory" can be used
+by QuickTime and certain other multimedia aspects of Encarta 96
+Encyclopedia. Encarta 96 Encyclopedia may require as much as 400K of
+free system memory, depending upon your system configuration and your
+use of Encarta 96 Encyclopedia. You can determine the amount of free
+system memory available while running Encarta 96 Encyclopedia by
+switching to the Finder and selecting the "About this Macintosh" item
+under the Apple menu. "Largest Unused Block" tells you how much memory
+is free for the system's use.
+
+Solution:
+Close other open applications, if they are running.
+
+Decrease the "Preferred Memory" for Encarta 96 Encyclopedia. To change
+this program setting, Quit Encarta 96 Encyclopedia if it is running,
+single-click the Encarta 96 Encyclopedia application icon then choose
+"Get Info" from the File menu. In the section titled "Memory
+Requirements", change the Preferred size from 6000K to 4000K. You
+should only make this change if you are sure you are not running other
+applications when you get the error message.
+
+Increase the amount of memory available to Encarta 96 Encyclopedia.
+[Refer to section 1b. "Increasing the amount of memory available to
+Encarta 96 Encyclopedia"]
+
+Restart your machine.
+
+3b. Symptom: Problems enlarging images
+
+When enlarging an image, I get an empty box or an error message
+saying: "Unable to Load Image".
+
+Reason:
+A single image needs up to 300K of memory to display in 256 color mode
+and 900K in Thousands of colors. If the enlarged image also has sound
+that plays with it, even more memory is required.
+
+Solution:
+Close any list boxes you may have open (such as Related Articles,
+Outline, Pinpointer).
+
+Switch to 256 Colors if you are running in Thousands or Millions.
+
+Restart Encarta 96 Encyclopedia.
+
+Increase the amount of memory available to Encarta 96 Encyclopedia.
+[Refer to section 1b. "Increasing the amount of memory available to
+Encarta 96 Encyclopedia"]
+
+3c. Symptom: Problems printing topics
+
+When printing topics, pages are blank or not all of the topic is
+printed.
+
+Reason:
+Printing topics requires creating a duplicate layout for the printer
+since it has different margins than the screen. Some of the articles
+in Encarta 96 Encyclopedia are thousands of words long and having two
+copies of a long article in memory at the same time can use up all of
+the available memory.
+
+Solution:
+Close any list boxes you may have open (such as Related Articles,
+Outline, Pinpointer).
+
+Switch to 256 Colors if you are running in Thousands or Millions.
+
+Copy the topic to your word-processing program and print it from
+there.
+
+Restart Encarta 96 Encyclopedia  and try to print again.
+
+Install LaserWriter 8.2.2. See the Encarta 96 Encyclopedia  ReadMe
+document section on printing problems for instructions on how to
+install this from your Encarta 96 Encyclopedia  96 CD.
+
+Increase the amount of memory available to Encarta 96 Encyclopedia.
+[Refer to section 1b. "Increasing the amount of memory available to
+Encarta 96 Encyclopedia"]
+
+3d. Symptom: Problems printing images
+
+When printing photos, the output is garbled.
+
+Reason:
+As with printing topics, printing a photo requires creating a
+duplicate copy of the image on the screen. Two versions of a large
+photo can consume all of the available memory.
+
+Solution:
+Close other open applications, if they are running.
+
+Close any list boxes you may have open (such as Related Articles,
+Outline, Pinpointer).
+
+Switch to 256 Colors if you are running in Thousands or Millions of
+colors.
+
+Copy the topic to a paint or word-processing program and print it from
+there.
+
+Restart Encarta 96 Encyclopedia  and try to print again.
+
+Install LaserWriter 8.2.2. See the "Printing From Encarta 96
+Encyclopedia" section in the "Encyclopedia General ReadMe" document
+for instructions on how to install this from your Encarta 96
+Encyclopedia CD.
+
+Increase the amount of memory available to Encarta 96 Encyclopedia.
+[Refer to section 1b. "Increasing the amount of memory available to
+Encarta 96 Encyclopedia"]
+
+3e. Symptom: Sounds do not play
+
+Reason 1:
+Your Sound Control Panel is set incorrectly
+
+Solution:
+Adjust your Sound Control Panel. See your Macintosh User's Guide for
+instructions on how to correctly adjust your Sound Control Panel.
+
+Reason 2:
+It is possible you do not have enough memory for sounds to load.
+
+Solution:
+Close any list boxes you may have open (such as Related Articles,
+Outline, Pinpointer).
+
+Switch to 256 Colors if you are running in Thousands or Millions.
+
+Restart Encarta 96 Encyclopedia.
+
+Try re-installing the QuickTime and Sound Manager extensions. Use the
+customize option in the installer on your CD to install individual
+components.
+
+Increase the amount of memory available to Encarta 96 Encyclopedia.
+[Refer to section 1b. "Increasing the amount of memory available to
+Encarta 96 Encyclopedia"]
+
+3f. Symptom: Incorrect or oddly-sized characters displayed in article
+    text.
+
+Reason:
+Encarta 96 Encyclopedia  uses a variety of fonts to display special
+characters within article text. If there is not enough memory to load
+one of these fonts, the Macintosh uses "font substitution" to attempt
+a "best fit" from a font that is already available in memory. Encarta
+96 Encyclopedia  requires the following fonts:  Arial, Chicago, Times
+New Roman, Symbol, MS Reference, Times New Roman Special G1, and Times
+New Roman Special G2
+
+Solution:
+Close any list boxes you may have open (such as Related Articles,
+Outline, Pinpointer).
+
+Switch to 256 Colors if you are running in Thousands or Millions.
+
+Restart Encarta 96 Encyclopedia.
+
+Check to see if the correct fonts are located in your system folder.
+If they are missing, use the customize option in the installer to re-
+install them.
+
+Increase the amount of memory available to Encarta 96 Encyclopedia.
+[Refer to section 1b. "Increasing the amount of memory available to
+Encarta 96 Encyclopedia"]
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm read me mac_mm cd-rom cd-disc disk read-me
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1996Mac
+Version           : :1996 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

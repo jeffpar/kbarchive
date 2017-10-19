@@ -1,0 +1,331 @@
+DOCUMENT:Q122296  11-FEB-2002  [visualc]
+TITLE   :INFO: List of Books About C++ Programming
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,2.0,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbLangCPP kbVC100 kbVC150 kbVC151 kbVC200 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 2.0, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Below is a list of books about programming in C++. The list includes the last
+name of the author, the ISBN for the book, the publisher, and the title of the
+book.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Author         ISBN           Publisher  Title
+-------------------------------------------------------------------------
+
+Adams          0-8306-3813-X  McGraw     Windows Visualization
+                                         Programming with C/C++
+Adamson        0-02-300821-0  Macmill    Programming with C++
+Ammeraal       0-471-93011-3  Wiley      C++ for Programmers
+Ananthaswamy   0-07-911857-7  McGraw     Data Communications using
+                                         OOD and C++
+Anderson       0-13-118266-8  Prentice   C++ Programming and
+                                         Fundamental Concepts
+Anderson       0-13-532748-2  Prentice   Moving to C++
+Andrews        1-55828-300-5  MIS        Programming Windows NT with
+                                         C/C++
+Andrews        0-672-30150-4  Prentice   Visual C/C++ Object-Oriented
+                                         Programming
+Ayer           0-07-002861-3  McGraw     OO Client/Server Application
+                                         Development using Object Pal
+                                         and C++
+Barkakati      0-672-22800-9  Sams       Object-Oriented Programming
+                                         in C++
+Barton         0-201-53393-6  Addison    Scientific and Engineering
+                                         C++
+Berry          0-672-22619    Sams       The Waite Group's C++
+                                         Programming
+Blum                          Wiley      Neural networks in C++ an OO
+                                         Framework
+Brain          0-13-097833-7  Prentice   Windows NT Programming An
+                                         Introduction Using C++
+Brumbaugh      0-471-58371-5  Wiley      OOD: Building Case Tools
+                                         with C++
+Budd           0-201-50889-3  Addison    Classic Data Structures in
+                                         C++
+Buzzi-Ferraris 0-201-63192-X  Addison    Scientific C++
+Callan         1-56252-264-7  Comp       Building Object-Oriented
+                                         Systems, Applications in C++
+Campbell       0-13-097833-7  Prentice   Windows NT Programming An
+                                         Introduction Using C++
+Capper         0-387-19847-4  Springr    The C++ Programming Language
+                                         for Scientists and Engineers
+Cargill        0-201-56365-7  Addison    C++ Programming Style
+Carroll        0-201-51284-X  Addison    Designing and Implementing
+                                         Reusable C++
+Christian      1-55615-394-5  MSPress    The Microsoft Guide to C++
+                                         Programming
+Christian      1-55615-803-3  MSPress    Microsoft Visual C++ Runtime
+                                         Library
+Cline          0-201-58958-3  Addison    C++ FAQs
+Cogswell       1-878739-44-1  Waite      Simple C++ Featuring Rododog
+Cooper         0-471-03171-2  Wiley      A Jump Start Course in C++
+                                         Programming
+Coplien        0-201-54855-0  Addison    Advanced C++ Programming
+                                         Styles and Idioms
+Davis          0-201-60829-4  Addison    C++ Programmer's Companion
+Deltel         0-13-117334-0  Prentice   C++ How to Program
+Dewhurst       0-13-723156-3  Prentice   Programming in C++
+DiLascia       0-201-60891-X  Addison    Windows++ Write Reuse Code
+                                         C++
+Duntemann      0-553-37126-6  Bantam     PC Techniques C/C++ power
+                                         tools
+Eckel          0-07-881522-3  McGraw     Using C++
+Eckel          0-07-881522-3  McGraw     C++ Inside and Out
+Eckel          1-55851-334-5  M&T        Black Belt C++
+Ege            0-12-232930-9  Acedemc    Programming in an OO
+                                         Environment
+Ege            0-12-232932-5  Academic   Object-Oriented Programming
+                                         with C++
+Ellis          0-201-51284-X  Addison    Designing and Implementing
+                                         Reusable C++
+Ellis          0-201-51459-1  Addison    The Annotated C++ Reference
+                                         Manual
+Flamig         0-471-00955-5  Wiley      Practical Algorithms in C++
+Flamig         0-12-742686-8  Acedemc    The Complete C++ Primer 2nd
+                                         Ed
+Gerard         0-471-59243-9  Wiley      C++ Math Class Library
+Goodwin        1-55828-023-5  MIS        User Interfaces in C++ and
+                                         OOP
+Goodwin        1-55828-032-4  MIS        Graphical Interfaces in C++
+Gorlen         0-471-52257-0  Wiley      Data Abstraction and OOP in
+                                         C++
+Graham         0-07-023983-5  McGraw     Learning C++
+Gurewich       0-672-30532-1  Sams       Master Visual C++ 2.0
+Gurewich       0-7821-1419-9  Sybex      From C to C++ in Two Weeks
+Gurganus       0-12-308650-7  Academic   Microsoft Visual C++ Windows
+                                         Primer
+Hansen         0-302-11497-6  Addison    The C++ Answer Book
+Heinze                        Prentice   C++ Programming and
+                                         Fundamental Concepts
+Hekmetpour                    Prentice   C++ A Guide for C
+                                         Programmers
+Hekmetpour     0-13-174129-2  Prentice   C++ A Book and Disk for C
+                                         Programmers
+Heller         0-12-339095-8  Academic   Efficient C/C++ Programming
+Henderson      0-07-707585-4  McGraw     Object-Oriented Design and
+                                         Analysis with C++
+Hipson         0-672-30493-7  Sams       What Every C++ Programmer
+                                         Should Know
+Holub          0-07-029662-6  McGraw     C + C++ Prog with Objects in
+                                         C and C++
+Holzner        1-56686-005-9  Brady      Microsoft C/C++ Programming
+Holzner        1-56686-142-X  Brady      Visual C++ Programming
+Holzner        1-56686-195-0  Brady      Visual C++ 2.0 Programming
+Holzner        1-56884-196-5  Brady      Heavy Metal C++ Programming
+Horstmann      0-471-52257-0  Wiley      Mastering C++ An
+                                         Introduction for C and
+                                         Pascal Programmers
+Hu             0-943518-86-5  MIS        C/C++ Expert Systems
+Jaeschke                      CBM        C++ An Intro for Experienced
+                                         C Programmers
+Johnsonbaugh   0-02-360682-7  Macmill    Object-Oriented Programming
+                                         in C++
+JPAM                                     C++ at Work '89 Conference
+                                         Proceedings
+JPAM                                     C++ at Work '90 Conference
+                                         Proceedings
+Kalin          0-02-360682-7  Macmill    Object-Oriented Programming
+                                         in C++
+Kruglinski     1-55615-511-5  MSPress    Inside Visual C++
+Kruglinski     1-55615-661-8  MSPress    Inside Visual C++ An
+                                         Insider's Perspective
+Ladd           1-558-51076-1  M&T        C++ Techniques and
+                                         Applications
+Ladd           1-55851-262-4  M&T        Applying C++
+Ladd           0-471-00777-3  Wiley      Visual C++ X Insider
+Lafore         1-878739-08-5  Waite      OOP in Microsoft C++
+Lakos          0-201-63362-0  Addison    Large-Scale Software
+                                         Development in C++
+Lam            0-471-03171-2  Wiley      A Jump Start Course in C++
+                                         Programming
+Levine         0-471-59857-7  Wiley      Programming for Graphics
+                                         Files In C and C++
+Lippman        0-201-54848-8  Addison    C++ Primer 2nd Ed
+Lomow          0-201-58958-3  Addison    C++ FAQs
+Long           0-672-27390-X  Sams       Do-It-Yourself Microsoft
+                                         C/C++
+Lucas          0-13-118233-1  Prentice   The C++ Programmer's
+                                         Handbook
+Mark           0-201-62204-1  Addison    Learn C++ on the Macintosh
+Mercer         0-938661-72-8  Franklin   Computing Fundamentals with
+                                         C++
+Meyers         0-201-56364-9  Addison    Effective C++
+Meyers         0-201-63371-X  Addison    Effective C++ Plus
+Model          0-13-088782-X  Prentice   Data Structures, Data
+                                         Abstractions
+MSPress        1-55615-382-1  MSPress    Microsoft C/C++ Runtime
+                                         Reference
+MSPress        1-55615-559-X  MSPress    Microsoft Visual C++ Run-
+                                         time Library
+Mullin         0-201-51722-1  Addison    Object-Oriented Program
+                                         Design C++
+Murray         0-201-56382-7  Addison    C++ Strategies and Tactics
+Nackman        0-201-53393-6  Addison    Scientific and Engineering
+                                         C++
+Neibauer       0-7821-1414-8  Sybex      Your First C/C++ Program
+Nicolaison     1-56604-079-5  Ventana    The Visual Guide to Visual
+                                         C++
+Nielsen        0-12-518420-4  Academic   Software Development with
+                                         C++
+North          0-471-01675-6  Wiley      Windows Multi-DBMS
+                                         Programming Using C++
+Nyhoff         0-02-369402-5  Macmill    C++ An Introduction to
+                                         Computing
+O'Brien        1-55851-391-4  M&T        Exploring Artificial Life in
+                                         C++
+OpenInventr    0-201-62491-5  Addison    OpenInventor C++ Reference
+                                         Manual
+Orlow          0-471-52257-0  Wiley      Data Abstraction and OOP in
+                                         C++
+Palmer         0-679-79136-1  Random     Programming with Microsoft
+                                         Visual C++ 1.5
+Pappas         0-07-882056-1  McGraw     Visual C++ Handbook
+Perry          1-56529-038-0  Que        C++ By Example
+Perry          0-672-30487-2  Sams       Teach Yourself Object
+                                         Oriented Programming with
+                                         Visual C++
+Perry          1-55828-360-9  MIS        Teach Yourself Visual C++
+Perry          1-56529-687-7  Que        Visual C++ by Example
+Perry          1-56529-810-1  Que        Using Visual C++
+Pinson         0-201-15413-7  Addison    An Introduction to Object
+                                         Oriented Programming and C++
+Pinson         0-201-50930-X  Addison    The C++ WorkBook
+Plexico        0-471-52257-0  Wiley      Data Abstraction and Object-
+                                         Oriented Programming in C++
+Plum           0-911-537-10-4 PlumHall   C++ Programming Guidelines
+Pohl           0-8053-3158-1  Addison    C++ for Pascal Programmers
+                                         2nd Ed
+Pohl           0-8053-3159-X  Benjamin   C++ for C Programmers 2nd Ed
+Pohl           0-8053-3164-6  Benjamin   Easy Reference Guide to C++
+Pokorny        0-938661-55-8  Franklin   Computer Graphics Using C++
+Porter         0-07-881820-6  Osborne    The Best C/C++ Tips Ever
+Prata          1-878739-02-6  Waite      C++ Primer+
+Ranade         0-07-051487-9  McGraw     C++ Primer for C Programmers
+Rao            0-07-051140-3  McGraw     C++ and the OOP Paradigm
+Reverchon      0-471-93792-4  Wiley      Mathematical Software Tools
+                                         in C++
+Ross           1-56529-806-3  Que        Creating Visual C++
+                                         Applications
+Rudd           0-471-06565-X  Wiley      Mastering C++
+Saks           0-911-537-10-4 PlumHall   C++ Programming Guidelines
+Savitch        0-8053-7440-X  Benjamin   An Introduction to Computer
+                                         Science in C++
+Schildt        0-07-881760-9  McGraw     Teach Yourself C++
+Schildt        0-07-882025-1  McGraw     Teach Yourself C++
+Sedgewick      0-201-51059-6  Addison    Algorithms in C++
+Sessions       0-13-630104-5  Prentice   Class Construction in C and
+                                         C++
+Shammas        0-672-30489-9  Sams       Teach Yourself Visual C++
+                                         1.5 in 21 Days
+Shammas        0-672-30534-8  Sams       Teach Yourself Visual C++ 2
+Shapiro        0-13-127663-8  Prentice   A C++ Toolkit
+Shaw           0-201-62662-4  Addison    Visual Programming++
+Smith          0-07-039010-X  McGraw     C++ Applications Guide
+Smith          0-07-059180-6  McGraw     C++ for Scientists and
+                                         Engineers
+Smith          0-471-52411-5  Wiley      Reusability and Software
+                                         Construction in C and C++
+Soukup         0-201-52826-6  Addison    Taming C++
+Spuler         0-13-096595-2  Prentice   C++ and C Efficiency
+Stark          0-13-723156-3  Prentice   Programming in C++
+Stevens        1-558-28027-8  MIS        Teach Yourself C++
+Stevens        1-55851-134-2  M&T        Fractal Programming and Ray
+                                         Tracing with C++
+Stevens        1-55828-357-9  MIS        C++ Database Development
+Stroustrup     0-201-51459-1  Addison    The Annotated C++ Reference
+                                         Manual
+Stroustrup     0-201-53992-6  Addison    The C++ Programming Language
+                                         2nd Ed
+Stroustrup     0-201-54330-3  Addison    The Design and Evolution of
+                                         C++
+Swan           0-672-30188-1  Sams       Tom Swan's C++ Primer
+Teale          0-201-59641-5  Addison    C++ IOStreams Handbook
+Thielen        0-201-60890-1  Addison    No Bugs! Delivering Error-
+                                         Free Code in C and C++
+Traister       0-12-697415-2  Academic   ObjectWindows for C++
+Traister       0-12-697420-9  Academic   Conquering C++ Pointers
+Traister       0-12-697421-7  Academic   Leaping from BASIC to C++
+Traister       0-12-697422-5  Academic   CBreeze C++ BASIC to C++
+                                         Translator
+Tsvi           0-13-630260-2  Prentice   Object Oriented Design for
+                                         C++
+Usenix                                   Usenix C++ Conference
+                                         Proceedings 1988
+Usenix                                   Usenix C++ Conference
+                                         Proceedings 1990
+Usenix                                   Usenix C++ Conference
+                                         Proceedings 1991
+Usenix                                   Usenix C++ Workshop
+                                         Proceedings 1987
+Vernick                                  C++ Database Applications
+Waldo          0-262-73107-X  MIT        The Evolution of C++
+                                         Language Design in the
+                                         Marketplace
+Watson         0-07-911787-2  McGraw     C++ Power Paradigms
+Weiner         0-201-15413-7  Addison    An Introduction to Object
+                                         Oriented Programming and C++
+Weiner         0-201-50930-X  Addison    The C++ Workbook
+Weiskamp       0-12-742686-8  Acedemc    The Complete C++ Primer 2nd
+                                         Ed
+Weiss          0-8053-5443-3  Addison    Data Structures and
+                                         Algorithm Analysis in C++
+Welstead       0-471-30975-3  Wiley      Neural Network and Fuzzy
+                                         Logic Applications in C/C++
+Weston         0-201-55025-3  Addison    Elements of C++ Macintosh
+                                         Programming
+Wiener         0-201-15413-7  Addison    An Introduction to Object
+                                         Oriented Programming and C++
+Wiener         0-201-50930-X  Addison    The C++ WorkBook
+Wilson         0-201-57020-3  Addison    C++ Programming with MacApp
+Winder         0-471-92384-2  Wiley      Developing C++ Software
+Winder         0-471-92384-2  Wiley      Developing C++ Software
+Winston        0-201-58043-8  Addison    On to C++
+Woollard       1-878739-07-7  Waite      Master C++
+Young          0-13-630252-1  Prentice   OOP with C++ and OSF/MOTIF
+Young          0-7821-1147-5  Sybex      Windows Prog'ing with
+                                         Microsoft C++
+Young          0-12-773750-2  Academic   Windows Animation
+                                         Programming in C++
+Young          0-7821-1286-2  Sybex      Mastering Windows Utilities
+                                         Programming in C++
+
+Additional query words: publications publication program
+
+======================================================================
+Keywords          : kb3rdparty kbLangCPP kbVC100 kbVC150 kbVC151 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC500 kbVC600 kbVC151 kbVC200 kbVC32bitSearch kbVC500Search
+Version           : :1.0,1.5,1.51,2.0,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

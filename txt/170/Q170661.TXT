@@ -1,0 +1,78 @@
+DOCUMENT:Q170661  13-JUN-2001  [sna]
+TITLE   :TN3270E Printer Can't Connect; LUSessionStateConfused
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you upgrade from SNA Server 2.11 Service Pack 1 (SP1) to SP2 (or SNA 3.0
+or 3.0 SP1), a TN3270E printer emulator may be unable to get a printer session
+through the TN3270 server. The TN3270 server reports Event 902 to the Windows NT
+application event log, indicating an LUSessionStateConfused error in the
+InboundLULUData function.
+
+CAUSE
+=====
+
+The TN3270 server is expecting 3270 data by checking for DT_3270_DATA (screen
+data) but is ignoring valid DT_SCS_DATA (print data).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11 Service
+Pack 2 (SP2) and 3.0 SP1. This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+A TN3270 internal trace will indicate the following entries:
+
+   >05/01 18:50:30.582 (+ smidgen )  Event=TEV_LogicError InboundLULUData
+   LUSessionStateConfused
+
+   >05/01 18:50:30.582 (+ smidgen )  Event=TEV_SessionTerminationScheduled
+   Thread = 0x00000056  Session = 0x00264278  Socket = 0x000001A8
+   InternalError
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211
+Version           : WINDOWS:2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

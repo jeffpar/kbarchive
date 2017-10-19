@@ -1,0 +1,64 @@
+DOCUMENT:Q131870  13-DEC-1999  [homemm]
+TITLE   :Scenes 2.0: More Memory Is Needed To Run Transition Effects
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to start Scenes when your computer has low memory or limited
+available system resources, you receive the following error message:
+
+   More memory is needed to run transition effects
+
+RESOLUTION
+==========
+
+To resolve this problem, try the following:
+
+ - Close other programs you are running and restart Scenes.
+
+   NOTE: You must close and restart Scenes to enable the program to recover from
+   the error.
+
+ - If you are using Windows 3.1, make sure the system is running with a swapfile
+   (virtual memory). You can check the swapfile settings in the Control Panel by
+   clicking the Enhanced icon.
+
+   For more information about how to perform this task in Windows, see your
+   Windows printed documentation or online Help.
+
+ - Upgrade to Windows 95. Windows 95 does not suffer from resource limitations
+   like Windows 3.x did.
+
+Additional query words: GDI msscenes screen saver screensaver
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

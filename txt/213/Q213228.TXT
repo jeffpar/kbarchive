@@ -1,0 +1,55 @@
+DOCUMENT:Q213228  27-OCT-2000  [sms]
+TITLE   :SMS: Cannot Delete Proddbrs.dll When Uninstalling Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms kbsms200 kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot delete Proddbrs.dll during the uninstallation of a Systems Management
+Server site.
+
+When you are removing the Systems Management Server site, before you uninstall
+the software metering servers, you receive the following error message:
+
+   Cannot delete proddbrs.dll
+
+WORKAROUND
+==========
+
+To work around this problem, you can uninstall the software metering servers
+before you uninstall the Systems Management Server site.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms kbsms200 kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : winnt:2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,102 @@
+DOCUMENT:Q104096  05-DEC-1999  [win16sdk]
+TITLE   :IniHeadr.exe Reads Section Headers from .INI Files
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsample kbOSWin311 kbOSWin300 kbGrpDSUser kbfile kb16bitonly kbSysSettings kbOSWin310
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Iniheadr.exe sample defines a function called GetPrivateProfileSections(),
+which parses a given .INI file and returns a buffer containing the section
+headers separated by NULLs and terminated by a double NULL. SECTION.C contains
+the function and a necessary helper function. The sample allows the user to
+choose an .INI file using the Open common dialog box. The section headings are
+then placed in a list box.
+
+The Windows SDK does not define a function to read all of the section headers
+from a profile (.INI) file. An application must read the entire .INI file and
+parse it to obtain the section headers.
+
+NOTE: Microsoft recommends using Windows's application programming interfaces
+(APIs) to read .INI files. The method described below is not guaranteed to work
+on future releases, especially for system .INI files such as WINFILE.INI,
+WIN.INI, SYSTEM.INI, CONTROL.INI, and so forth.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Iniheadr.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+A profile file (WIN.INI) or a private profile (such as CLOCK.INI) must have the
+following form:
+
+   [section heading]
+   entry=value
+
+      .
+      .
+      .
+
+For example, given a profile containing the following section headings
+
+   [windows]
+      .
+      .
+      .
+
+   [Desktop]
+
+      .
+      .
+      .
+   [Extensions]
+
+GetPrivateProfileSections() parses the profile file and places the following in a
+buffer:
+
+    windows<NULL>Desktop<NULL>Extensions<NULL><NULL>
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsample kbOSWin311 kbOSWin300 kbGrpDSUser kbfile kb16bitonly kbSysSettings kbOSWin310 
+Technology        : kbAudDeveloper kbSDKSearch kbWinSDKSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,91 @@
+DOCUMENT:Q136032  31-JUL-2001  [sms]
+TITLE   :Systems Management Server Sender Packet Size Computation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork smssenders kbSMSSender
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Sender is designed to dynamically compute a packet size based on link speed
+when sending packages. It begins with a 1024 byte packet and records the time to
+transmit. Based on this time, the sender increases or decreases the packet size
+as necessary within the range of 1024 to 262144 bytes.
+
+However, there is a range of speeds where the Sender does not adjust packet size
+correctly, forcing the maximum packet size on a link that is too slow.
+
+CAUSE
+=====
+
+The Sender incorrectly computes the packet size.
+
+
+NOTE: In many WAN environments 56k bit to 256k bit links are common. Some WANs
+have links below 38k bits per second, such as when using modems for a RAS Sender
+address.
+
+The following table lists link speed and the corresponding packet size:
+
+   Link Speed   Byte Buffer
+   (bits/sec)   Packet Size
+   ----------   -----------
+   262144       262144
+   6552         245700
+   6112         229200
+   5672         212700
+   5232         196200
+   4792         179700
+   4352         163200
+   3912         146700
+   3472         130200
+   3032         113700
+   2592         97200
+   2152         80700
+   1712         64200
+   1272         47700
+   832          31200
+   424          15900
+   216          8100
+   104          3900
+   48           1800
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. This problem has been corrected in Systems Management
+Server version 1.2.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork smssenders kbSMSSender 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

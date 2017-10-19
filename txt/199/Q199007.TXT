@@ -1,0 +1,64 @@
+DOCUMENT:Q199007  25-JAN-1999  [homemm]
+TITLE   :EVG99: Different Graph Scale Displayed When Statistic Map Opened
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a statistic map from the Statistics Center to the Favorites menu in
+Microsoft Encarta Virtual Globe 99, a different graph scale may be displayed
+when you open the map from the Favorites menu.
+
+CAUSE
+=====
+
+This behavior can occur because Encarta Virtual Globe 99 does not save the graph
+scale information with the statistic map when you add the map to the Favorites
+menu from the Statistics Center.
+
+RESOLUTION
+==========
+
+To work around this issue, click the icon next to Linear By Rank or Logarithmic
+By Rank to toggle between the available graph scales.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Virtual Globe
+99, version 1.0.
+
+Additional query words: 1.00 multi multi-media media mm world atlas evg
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

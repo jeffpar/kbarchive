@@ -1,0 +1,84 @@
+DOCUMENT:Q157000  05-APR-1999  [exchange]
+TITLE   :XFOR: Korean UUENCODED Attachments Corrupted
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Outgoing messages with UUENCODED attachments from the Microsoft Exchange
+Internet Mail Connector (IMC) in the Korean language might have corrupt
+attachments, and the receiving SMTP host might not be able to uudecode the
+attachments correctly. This can occur if a message is sent with an attachment
+with a Korean file name, or a message with a Korean body followed by an
+attachment with a Korean file name.
+
+CAUSE
+=====
+
+In the first case, the X-MS-Attachment header line has the Korean Escape
+sequence, which adds a carriage-return line-feed (CRLF) sequence that corrupts
+the header. It will look like this:
+
+   X-MS-Attachment: $)C
+   E8@O.bmp 0 00-00-1980 00:00
+
+In addition, the Begin line of the UUENCODEd data is incorrect. It will look like
+this:
+
+   begin 600 $)C
+   E8@O.bmp
+   M0DU"`@```````$(````H````( ```" ````!``0````````"```3"P``$PL`
+
+In the second message example, a Korean body with an attachment that has a Korean
+file name, you will see the same issues as with the first message, and also an
+Escape sequence in the message body. It will look like this:
+
+                        $)C
+   0!3*4Y
+
+   begin 600 $)C
+   E8@O.bmp
+   M0DU"`@```````$(````H````( ```" ````!``0````````"```3"P``$PL`
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,89 @@
+DOCUMENT:Q115854  12-FEB-2002  [visualc]
+TITLE   :FIX: Cannot Access Private Member from Friend Class
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+    - Microsoft Visual C++, 32-bit Editions, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling the code below, the C/C++ compiler will incorrectly report the
+following error:
+
+   C2248: 'ptr' : cannot access private member declared in class 'X'
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was corrected in Visual C++ version 2.0.
+
+MORE INFORMATION
+================
+
+The following sample can be used to demonstrate this problem.
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+
+   #include <iostream.h>
+   class C
+   {
+      class X;
+      class Y;
+
+      class X
+      {
+         X* ptr;
+         friend Y;
+      };
+
+      class Y
+      {
+         X* x;
+       public:
+         X* lookat() { return x->ptr; }           /* Error: C2248 */ 
+      };
+   };
+   void main( void )
+   {
+      cout << "PASSED" << endl;
+   }
+
+Additional query words: 1.00 1.50 7.00 8.00 8.00c
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,64 @@
+DOCUMENT:Q115732  10-FEB-2000  [foxpro]
+TITLE   :PRB: FoxPro for Macintosh Changes Database's Icon After PACK
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Users can change the icon associated with a FoxPro database from the standard
+FoxPro icon to one of their preference by choosing Get Info from the File menu;
+this opens a dialog box where the icon can be selected and then copied or
+pasted. However, if a record in the database is marked for deletion and a PACK
+command is issued, the icon changes from the users' icon to the FoxPro default
+icon.
+
+RESOLUTION
+==========
+
+Instead of issuing a PACK command, use the code below as a workaround.
+
+In the following example, CUSTOMER is the database that contains the record that
+has been marked for deletion and TEMP is a temporary database:
+
+      USE customer
+      COPY TO temp.dbf FOR NOT DELETED()
+      USE temp
+      SET SAFETY OFF
+      COPY TO customer.dbf
+      SET SAFETY ON
+      USE
+      DELETE FILE temp.dbf
+
+Additional query words: vFoxMac FoxMac
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

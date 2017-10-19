@@ -1,0 +1,81 @@
+DOCUMENT:Q129795  11-JAN-2001  [vbwin]
+TITLE   :PRB: Excel Doesn't Use Container's Name for Embedded Objects
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbVBp400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Excel 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Excel does not display the name specified in the HostName property of
+the OLE control in its worksheet when an embedded worksheet object is opened.
+This behavior is exhibited by both the 16-bit and 32-bit versions of Microsoft
+Excel version 5.0.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following is from the Remarks section of the HostName topic in the Visual
+Basic help file:
+
+   "When editing an object, the HostName property setting may be displayed in
+   the object's window title. However, some applications that provide objects
+   don't display HostName."
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add an OLE Client control to Form1. When the Insert Object dialog box
+   appears, select Microsoft Excel 5.0 WorkSheet.
+
+3. Select the HostName property of the OLE control and set it to "My Server."
+
+4. Press the F5 key to Run the program.
+
+5. Right-click the OLE Client control, and choose Open.
+
+The worksheet in Microsoft Excel displays "Book1" rather than "My Server."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbVBp400 
+Technology        : kbVBSearch kbExcelSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

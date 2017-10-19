@@ -1,0 +1,73 @@
+DOCUMENT:Q130010  02-FEB-2002  [win95x]
+TITLE   :File Manager: Windows NT Server Tools Security Menu Missing
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.11; Win2000:3.1; winnt:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOM
+-------
+
+After you install Windows NT Server Tools on your computer running Windows
+3.1 or Windows for Workgroups 3.11, and reboot the computer, File Manager
+does not display the expected Security menu and toolbar icon with the
+Windows NT Server managing tools.
+
+NOTE: Windows NT Server Tools are available on the Windows NT Server CD in
+the CLIENTS\SRVTOOLS\WINDOWS directory.
+
+CAUSE
+=====
+
+Windows cannot find the necessary tools because the installation does not
+automatically modify the AUTOEXEC.BAT and CONFIG.SYS files. Instead it saves the
+necessary changes in the following two files in the directory where the tools
+are installed:
+
+   NEW-VARS.BAT
+   NEW-CONF.SYS
+
+RESOLUTION
+==========
+
+To correct this situation:
+
+1. Back up your AUTOEXEC.BAT and CONFIG.SYS files.
+
+2. Use a text editor to modify the original AUTOEXEC.BAT and CONFIG.SYS files to
+   include the information in NEW-VARS.BAT and NEW-CONF.SYS files, respectively.
+
+3. Reboot your computer running Windows or Windows for Workgroups for the
+   changes to take effect.
+
+Additional query words: prodnt 3.10 3,50 3.11 wfwg wfw
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWFW311
+Version           : WINDOWS:3.11; Win2000:3.1; winnt:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

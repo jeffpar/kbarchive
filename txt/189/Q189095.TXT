@@ -1,0 +1,77 @@
+DOCUMENT:Q189095  04-JUN-1999  [exchange]
+TITLE   :XFOR: Messages Not Delivered Due to IMS Size Restrictions
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are setting one of two Internet Mail Services to restrict messages
+based on size, the following events may appear in the application log of the
+event viewer if the Internet Mail Service Message Archival is set to maximum:
+
+   Event ID: 4115
+   Type: Error
+   Source: MSExchangeIMC
+   Description:
+   The message from the spool file <&%$#> seems to be looping through
+   the routing extension for the Internet Mail Service. Please check that the
+   routing DLL is configured properly.
+
+   Event ID: 4132
+   Type: Error
+   Source: MSExchangeIMC
+   Description:
+   The Internet Mail Service has failed attempting to deliver a system message.
+   It will be moved from the queue into the ARCHIVE directory. The spool file
+   name can be found in the Data section of this event.
+
+Some system messages (replication, status, notifications, and so on) are not
+being delivered.
+
+CAUSE
+=====
+
+These event messages are due to the level of logging and are not harmful.
+Internet Mail Service operation is not affected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words: IMC SITE CONNECTOR
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

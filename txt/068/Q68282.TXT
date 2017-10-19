@@ -1,0 +1,64 @@
+DOCUMENT:Q68282  02-NOV-1999  [win95x]
+TITLE   :Zenith Windows 3.0 OEM Version and Zenith Portables
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Zenith has released a modified version of Microsoft Windows version 3.0 to run
+on its laptop computers. This version of Windows contains the following
+modifications:
+
+ - Zenith logo screen (instead of the Microsoft logo)
+
+ - Additional video drivers to support the LCD display found on some of its
+   laptops
+
+ - Its own SWAPFILE utility
+
+MORE INFORMATION
+================
+
+Only the Zenith laptops (such as the TurbosPort 386, SupersPort 386e, and
+MinisPort) require the Zenith version of Windows 3.0.
+
+When you install Zenith's version of Windows on the TurbosPort 386, it may stop
+responding (hang) when you insert Disk 2 if you have selected the incorrect
+display. The TurbosPort 386 has a CGA display rather than an LCD display.
+
+The Zenith products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3rdparty WIN30 3.0 3.0a 3.00a oem lap top
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

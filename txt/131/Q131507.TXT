@@ -1,0 +1,53 @@
+DOCUMENT:Q131507  19-OCT-2000  [pcmail]
+TITLE   :PC Mac: Routing Slip and Send Option Unavailable in Word 6.0
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0, on platform(s):
+    - the operating system: Mac OS (ALL) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use version 3.0 of Microsoft Mail for PC Networks, Macintosh
+workstation, you will be unable to utilize the Routing Slip or Send option from
+the File menu in Microsoft Word version 6.0 for the Macintosh.
+
+MORE INFORMATION
+================
+
+Word 6.0 for the Macintosh will only automatically enable the Routing Slip and
+Send options from the File menu if Microsoft Mail for AppleTalk Networks or
+PowerTalk Mail is installed. These options are not available if the Macintosh
+client for PC Networks is the active mail client for the system.
+
+
+Additional query words: 3.00 macword pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

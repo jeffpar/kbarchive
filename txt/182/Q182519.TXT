@@ -1,0 +1,61 @@
+DOCUMENT:Q182519  22-DEC-1999  [exchange]
+TITLE   :XADM: cc:Mail Addresses Not Created for 4.0 Site Recipients
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to get an Exchange Server 4.0 site to use an Exchange Server 5.0
+site's Exchange Connector for Lotus cc:Mail, the cc:Mail addresses are not
+automatically created for Exchange Server 4.0 site recipients.
+
+CAUSE
+=====
+
+The Microsoft Exchange Connector for Lotus cc:Mail does not have an address
+generator for Exchange Server 4.0 computers. Also, the cc:Mail address generator
+that is included in Exchange Server 5.0 is not backward- compatible with
+Exchange Server 4.0 and cannot be copied or placed on an Exchange Server 4.0
+computer.
+
+WORKAROUND
+==========
+
+To enable Exchange Server 4.0 sites to use the cc:Mail address generator, place
+an Exchange Server 5.0 computer with a cc:Mail connector in the Exchange Server
+4.0 site. Note that the Exchange Server 4.0 site must have Version 4.0 Service
+Pack 2 loaded.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

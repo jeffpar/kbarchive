@@ -1,0 +1,95 @@
+DOCUMENT:Q207559  09-MAY-1999  [homegame]
+TITLE   :Games: Game or Computer Hangs When Using Matrox Mystique 220
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+ - Microsoft Pinball Arcade, version 1.0 
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+ - Microsoft Baseball 3D, version 1.0 
+ - Microsoft Motocross Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start any of the games listed at the beginning of this
+article, you may experience either of the following symptoms:
+
+ - The game may stop responding (hang).
+
+ - The computer may stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if all of the following conditions are true:
+
+ - You are using a Microsoft Windows 98-based computer.
+
+ - A Matrox Mystique 220 video adapter is installed in the computer.
+
+ - You are using version 4.12 of the Matrox Mystique 220 video driver.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install version 4.11 of the Matrox Mystique
+220 video driver from the following Matrox Web site:
+
+http://www.matrox.com/mga/drivers/unified_drivers/ftp_2nd_w9x.htm
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+You can also resolve this issue by installing the Matrox Mystique video driver
+included with Windows 98. However, the Windows 98 version of the video driver
+does not include the additional features available with version 4.11 of the
+Matrox Mystique 220 video driver.
+
+For information about how to change a video driver in Windows, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q131806 Windows 95/98: How to Install or Change a Display Driver
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: kbDSupport kbimu homegame msgame card 1.00
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kbimu 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbPinballArc kbArcadeSearch kbMotocrossSearch kbBaseballSearch kbAOESearch kbAOEExpRome kbMotocrossM kbBaseBall3D
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

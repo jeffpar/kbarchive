@@ -1,0 +1,123 @@
+DOCUMENT:Q249641  06-AUG-2002  [exchange]
+TITLE   :XADM: Exchange Admin Cannot Display Over 65535 Public Folders
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55 kbExchange550preSP4fix kbExchange550sp4Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+
+SYMPTOMS
+========
+
+If you examine the Instances tab in the properties of the public information
+store and there are over 65,535 public folders, the following error message may
+be displayed:
+
+   An unexpected unknown error has occurred. MAPI or an unspecified service
+   provider. ID no: 80040403-0000-00000000
+
+CAUSE
+=====
+
+This issue can occur because the Exchange Server Administrator program relies on
+MAPI to retrieve information about public folders. MAPI architecture only allows
+65,535 rows in a table. If more than 65,535 public folders exist, the table is
+unable to hold all of the entries and the error message in the "Symptoms"
+section of this article may be displayed.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, click the following article number to view the
+article in the Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 4.
+
+MORE INFORMATION
+================
+
+After this fix is applied, the Exchange Server Administrator program generates a
+dialog box that informs you that more than 65,535 public folders exist but only
+the first 65,535 are displayed. The following is sample text from the dialog
+box:
+
+   Public Folder Instances
+   Exchange is unable to display more than 64K of public folders.
+   Folders 1 to 65,535 out of a total of 80,004 are displayed. To change the
+   range of folders displayed you must set a key in the registry.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To add the registry key mentioned in the dialog box:
+
+1. Start the Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+   HKEY_Current_User\Software\Microsoft\Exchange\MSExchAdminCommon
+
+3. On the Edit menu, click Add Value, and then add the following registry
+   value:
+
+   Value Name: Public Folder Skip Count
+   Data Type: REG_DWORD
+   Value: <number of folders to skip>
+
+   This registry value sets the number of public folder entries to skip from the
+   beginning of the list. For example, if the dialog box text indicates a total
+   of 80,004 entries, to display the additional entries set the value to 14469
+   (80,004 total entries - 65,535 base entries). This allows public folder
+   entries 14,469 through 80,004 to be displayed.
+
+4. Quit the Registry Editor.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

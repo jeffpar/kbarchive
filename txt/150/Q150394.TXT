@@ -1,0 +1,65 @@
+DOCUMENT:Q150394  20-FEB-2002  [winnt]
+TITLE   :No Domain Validation with EtherExpres Pro and Docking Station II
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use an IBM Docking Station II and an Intel EtherExpress Pro Ethernet
+network card, computers running Microsoft Windows 95 cannot log on to the
+network and be validated by a domain controller. Running SoftSet, its diagnostic
+and setup program, the Loopback test will fail.
+
+CAUSE
+=====
+
+The problem is with the amount of electromagnetic interference (EMI) inside the
+Docking Station II. Under these conditions, the EtherExpress Pro will fail to
+operate correctly.
+
+RESOLUTION
+==========
+
+To work around this problem, change the setting, Force 8 Bit Operation, to True.
+This slows the card down by making it use 8-bit data transfers instead of
+16-bit. This slower transmission rate is sustainable even with the high amounts
+of EMI. In addition, IBM has released a driver which alters the bus timing and
+is reported to help ISA cards work in these docking stations.
+
+Microsoft has not tested this driver and makes no claims about its
+effectiveness.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,80 @@
+DOCUMENT:Q276364  12-JUN-2001  [sna]
+TITLE   :LU-LU Test Fails with Active AS/400 Connection
+PRODUCT :Microsoft SNA Server
+PROD/VER::4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Microsoft SNA Server operator has an active connection to an AS/400 and
+then attempts to verify LU 6.2 session availability for a given Advanced
+Program-to-Program Communications (APPC) triplet (for example local LU, remote
+LU, and mode name) by using the APPC Session Viewer utility, and the test fails,
+look for the following event in the Microsoft Windows NT Application Event log:
+
+   event id 18
+
+   APPC session activation failure: BIND negative response or UNBIND request
+   received
+
+   Sense data = 80040000 (NOTE: 0032xxxx indicates UNBIND received)
+   Connection = connection
+   LU alias = lu alias
+   PLU alias = plu alias
+   Mode name = mode name
+
+CAUSE
+=====
+
+SNA Server sent a BIND request to start an LU version 6.2 session with the
+remote system, but the remote system rejected the request for the reason
+indicated in the sense data error. This error is usually caused by a mismatch
+between the SNA Server configuration and the configuration of the remote system
+(for example, the Local APPC LU name, Remote APPC LU name or mode name specified
+in the SNA BIND request may not be configured on the host).
+
+RESOLUTION
+==========
+
+Make certain that the "Remote APPC LU" name that is created on the SNA server
+matches the "Local Control Point Name" on the AS/400.
+
+For additional information and configuration examples that show how SNA Server
+can be configured to communicate with an AS/400, click the article numbers below
+to view the articles in the Microsoft Knowledge Base:
+
+   Q112158 Configuring SNA Server to Talk to AS/400 Over 802.2
+
+   Q112159 Configuring SNA Server to Talk to AS/400 Over SDLC
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q169280  09-AUG-2001  [winnt]
+TITLE   :Cannot Size Pre-Dial and After Dial Terminal Screen
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenable kbui kbEnableSight kbEnableLearn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to change the screen size, the screen font size, or the colors
+for the Pre-Dial Terminal Screen and After Dial Terminal windows in Dial-Up
+Networking.
+
+CAUSE
+=====
+
+The Pre-Dial Terminal Screen and After Dial Terminal windows are hard-coded for
+their appearance, including the screen size, screen font size, and colors.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods:
+
+ - Use a logon script, if possible, for your Dial-Up Networking connection so
+   that the terminal window is not required. For more information, see the
+   Generic logon script, found in the Switch.inf file located in the
+   %SystemRoot%\System32\Ras directory.
+
+ - Temporarily change the display resolution to 640x480 (standard VGA) when
+   dialing any Dial-Up Networking connection that requires a Pre-Dial Terminal
+   Screen or an After Dial Terminal.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: ras rasdial small characters
+
+======================================================================
+Keywords          : kbenable kbui kbEnableSight kbEnableLearn 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

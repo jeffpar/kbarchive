@@ -1,0 +1,64 @@
+DOCUMENT:Q199203  13-FEB-1999  [exchange]
+TITLE   :XFOR:Problems Rescheduling Meetings Between Exchange and Notes
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Exchange Notes Connector (Web Drop 2) does not currently send rescheduled
+meeting requests from Exchange Server to Lotus Notes properly. This results in
+an error in the Notes client.
+
+CAUSE
+=====
+
+This is because of a conflict with duplicate meeting IDs in Notes. Although
+meetings can be rescheduled in Outlook, the changes are not correctly propagated
+to Notes, resulting in a matching ID error at each Notes recipient.
+
+RESOLUTION
+==========
+
+The Notes Connector will be redesigned to take this conflict into account.
+
+STATUS
+======
+
+Microsoft confirms this to be a problem in Microsoft Exchange Server version
+5.5.
+
+Additional query words: reschedule, meetings, error, matching ID
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbpending kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

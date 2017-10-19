@@ -1,0 +1,81 @@
+DOCUMENT:Q112367  13-OCT-1999  [win3x]
+TITLE   :Deleted MSMAIL.INI Creates Embedded WGPO Directory
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be unable to send or receive mail after you delete the MSMAIL.INI file
+and re-create a local post office. Also, address books may appear to be empty.
+
+CAUSE
+=====
+
+The first time you set up Windows for Workgroups Mail with the "Create a New
+Post Office" option, Mail creates a workgroup post office (WGPO) directory
+within the Windows directory and creates the MSMAIL.INI file in the Windows
+directory.
+
+Deleting the MSMAIL.INI file causes Mail Setup to prompt you to either connect to
+an existing post office or create a new workgroup post office. If you choose to
+create a new post office, a WGPO directory is created in
+<drive>:\<Windows directory>\WGPO.
+
+In Setup, you cannot select the Windows directory as the parent of the WGPO
+directory, and there is no option to use the previously created post office.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Open the MSMAIL.INI file located in the Windows directory with an ASCII text
+   editor, such as Windows Notepad.
+
+2. Change the ServerPath= entry in the [Microsoft Mail] section to indicate the
+   first WGPO directory. For example
+
+   change
+
+      [Microsoft Mail]
+      ServerPath=C:\WINDOWS\WGPO\WGPO\ 
+
+   to:
+
+      [Microsoft Mail]
+      ServerPath=C:\WINDOWS\WGPO\ 
+
+3. Delete the C:\WINDOWS\WGPO\WGPO directory.
+
+Additional query words: 3.11 postoffice po
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

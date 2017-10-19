@@ -1,0 +1,70 @@
+DOCUMENT:Q270953  26-MAY-2001  [homemm]
+TITLE   :EWA2001 Err Msg: Unable to Run Encarta with Low System Resources
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2001 
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view a Dynamic Map and you click the Back button, you may receive the
+following error message:
+
+   Encarta Interactive World Atlas is unable to continue running. The problem
+   may be the result of low system resources such as memory or disk space. Try
+   closing other running applications or freeing up disk space before restarting
+   Encarta Interactive World Atlas.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+    - To open the Dynamic Map you clicked the "Dynamic Map" link from within an
+   article.
+
+ - You are running Microsoft Windows NT 4.0.
+
+RESOLUTION
+==========
+
+To work around this issue, click the Map button in the left column.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Encarta Interactive World Atlas
+2001.
+
+Additional query words: eiwa2001 ers2001
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2001 kbEncartaWorldAtlas2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

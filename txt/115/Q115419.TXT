@@ -1,0 +1,62 @@
+DOCUMENT:Q115419  23-OCT-1999  [foxmisc]
+TITLE   :PRB: REPORT FORM Filter Syntax Incorrect on Date Field
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MS-DOS:2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for MS-DOS, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are building a REPORT FORM command that is filtered on a date field by
+using the FoxCentral menu, the output does not reflect the filter condition.
+FoxCentral does not produce the correct syntax for a REPORT FORM statement that
+is filtered on a date field.
+
+CAUSE
+=====
+
+Earlier versions of FoxCentral incorrectly construct the REPORT FORM statement
+when the output is filtered on a date field. FoxCentral places two CTOD()
+functions within the REPORT FORM command. Frequently, FoxBASE+ does not produce
+an error when the statement is executed. However, the resulting output is
+incorrect.
+
+RESOLUTION
+==========
+
+This problem was corrected in the latest version of FoxCentral. The most current
+version is available as a file called FOXCEN.EXE. For more information about
+this file, please see the following article in the Microsoft Knowledge Base:
+
+   Q93319 PATCH: Foxcen.exe FoxCentral Update for FoxBase+ for MS-DOS
+
+Additional query words: assist report
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxBASE210DOS kbFoxBASESearch
+Version           : MS-DOS:2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

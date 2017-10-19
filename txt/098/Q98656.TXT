@@ -1,0 +1,304 @@
+DOCUMENT:Q98656  07-MAY-2001  [visualc]
+TITLE   :INFO: Creating a Browser Library for the Foundation Classes
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,4.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbCompiler kbMFC kbMiscTools kbVC kbVC100 kbVC150 kbVC400
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Visual C++ products include the source code for the Microsoft
+Foundation Class (MFC) Library. Because it is important to understand the
+implementation of the Foundation Classes when overriding or using member
+functions, developers are encouraged to construct a Browser database for the
+Microsoft Foundation Classes source code. Once a Browser database (.BSC file) is
+created, it can be loaded into the Visual Workbench by choosing File.Open.
+
+This article discusses the following:
+
+ - Modifying the MFC source makefile to create a Browser database without
+   re-building the Foundation Classes Library.
+
+ - Modifying the MFC source makefile to create a Browser database while
+   re-building the library.
+
+ - Integrating the Foundation Classes Browser information into your project.
+
+For more information about the Browser tool, see chapter 7 in the Visual
+Workbench User's Guide.
+
+NOTE: The distribution CD for Microsoft Visual C++ 32-bit Edition, versions 2.x
+and 4.0, contains a pre-built browser database for the 32-bit edition of MFC,
+versions 3.x and 4.0, respectively. This browser database can be found in the
+MFC source code directory as \MSVC20\MFC\SRC\MFC.BSC for Visual C++ 2.x and as
+\MSDEV\MFC\SRC\MFC.BSC for Visual C++ 4.0. Although Visual C++ 1.5x is included
+on the Visual C++ 2.x CD, this CD does not contain a pre-built browser database
+for the 16-bit version of MFC. Nevertheless, one can be built following the
+instructions below.
+
+MORE INFORMATION
+================
+
+Modifying the 'makefile' File to Add Rules for Building the .bsc File
+---------------------------------------------------------------------
+
+Make the following additions to the file called MAKEFILE in the \MSVC\MFC\SRC
+directory:
+
+1. You'll see the lines:
+
+         ###############################################################
+         # Set CPPFLAGS for use with .cpp.obj and .c.obj rules
+         # Define rule for use with OBJ directory
+         # C++ uses a PCH file
+
+   On the next line after this, include the text:
+
+         # define compiler options for building just the .BSC file
+         # BSC=1 means browser database only
+         # BSC=2 means browser database with library rebuild
+         !if "$(BSC)"=="1"
+         OPT=$(OPT) /FR$D\ /Zn /Zs
+         !else if "$(BSC)"=="2"
+         OPT=$(OPT) /FR$D\ /Zn
+         !endif
+
+2. You also see the lines:
+
+         ###############################################################
+         # Goals to build
+
+         goal: create.dir ..\lib\$(GOAL).lib
+
+   Change this to:
+
+         ##############################################################
+         # Goals to build
+
+         !if "$(BSC)"!="1"
+         goal: create.dir ..\lib\$(GOAL).lib bsc
+         !endif
+
+         !if "$(BSC)"=="1" || "$(BSC)"=="2"
+         #Build .BSC file
+         bsc: create.dir $(OBJS)
+            cd $D
+            bscmake /Iu /o $(GOAL).bsc *.sbr
+            del *.sbr
+
+         !else
+         bsc:
+
+         !endif
+
+These changes will allow you to use the MAKEFILE NMAKE file to create a Browser
+database for the Microsoft Foundation Classes. You will run the makefile the
+same as that which is described in the README.TXT file located in the
+\MSVC\MFC\SRC directory. The only difference is that you can specify whether you
+want a .BSC file created for the project. Be sure that you understand the
+information in the README.TXT file before reading further.
+
+See NMAKE.WRI in the \MSVC\MFC\HELP directory for more information about using
+NMAKE and creating NMAKE files.
+
+Creating a Browser Database without Re-building OBJs or the Library
+-------------------------------------------------------------------
+
+After you have made the modifications to the MAKEFILE file described above,
+perform the following steps to create the Browser file (.BSC file) for the
+Foundation Class Library:
+
+1. If you have previously built the library and OBJs already exist in the
+   destination directory (i.e. $MWD), delete the .PCH and OBJs in that
+   directory. You can do this by following the directions in section 3 for the
+   \MSVC\MFC\SRC\README.TXT file.
+
+2. Make sure you have you have the system environment variables configured
+   correctly (by running MSVCVARS.BAT or VCVARS32.BAT) and invoke the NMAKE
+   command line specifying "BSC=1". "BSC=1" means that just the browser database
+   (.BSC) will be built. The OBJs and Library will not be built. Here is an
+   example of a command line you might specify:
+
+         NMAKE MODEL=M TARGET=W DEBUG=1 DLL=0 BSC=1
+
+   This will build a file called MAFXCWD.BSC in the $MWD subdirectory under the
+   \MSVC\MFC\SRC directory. See the \MSVC\MFC\SRC\README.TXT file for more
+   information about the NMAKE parameters shown above.
+
+To use the Browser file, start VC++ and select "Open" from the file menu. Choose
+the .BSC file which you created. The Browser window will appear and you can then
+look up any of the MFC functions or data variables.
+
+You may want to delete the .PCH file that is located in the same directory as the
+.BSC file you created.
+
+Creating a Browser Database when Re-building the Library
+--------------------------------------------------------
+
+To create a .BSC file for the Foundation Classes when rebuilding the MFC library,
+first you must make the modifications shown above to the MAKEFILE file. Next,
+perform the following steps:
+
+1. If you have previously built the library and OBJS already exist in the
+   destination directory (i.e. $MWD), delete the .PCH and OBJs in that
+   directory. You can do this by following the directions in section 3 for the
+   \MSVC\MFC\SRC\README.TXT file.
+
+2. Make sure you have you have the system environment variables configured
+   correctly (by running MSVCVARS.BAT or VCVARS32.BAT) and invoke the NMAKE
+   command line specifying "BSC=2". The OBJs and Library will not be built. Here
+   is an example of a command line you might specify:
+
+         NMAKE MODEL=M TARGET=W DEBUG=1 DLL=0 CODEVIEW=1 BSC=2
+
+   This NMAKE command line will build the medium model, Windows, debug, MFC
+   library and place it in the $MWD subdirectory. It will also build a Browser
+   database for the library. The file will be called MAFXCWD.BSC.
+
+   See the \MSVC\MFC\SRC\README.TXT file for more information about the NMAKE
+   parameters shown above.
+
+To use the Browser file, start Visual C++ and select "Open" from the file menu.
+Choose the .BSC file which you created. The Browser window will appear and you
+can then look up any of the MFC functions or data variables.
+
+Integrating the Class Library Browser Information into Your Project
+-------------------------------------------------------------------
+
+The text below presents the three steps required to integrate the MFC Library
+browser information (.SBR files) into your project browser database.
+
+1. Create browser information files (.SBR) for the appropriate MFC library.
+
+   To create the SBR files, follow the directions above except don't add the
+   makefile line "del *.sbr". Also, place a "/n" on the BSCMAKE command line.
+   This will prevent the .SBR files from getting truncated to zero when the .BSC
+   file is created. After building the browser database for the MFC library, you
+   will be left with .SBR files as well.
+
+2. Load your project in Visual C++ and modify the compiler options as follows to
+   place the .SBR files for your project into the current directory.
+
+   a. Choose Project from the Options menu.
+
+   b. Choose Compiler in the Customize Build Options group.
+
+   c. Choose Listing Files in the Category group.
+
+   d. Clear the Browser Information check box.
+
+   e. Choose Custom Options in the Category group.
+
+   f. At the beginning of the Other Options field enter "/Fr.\" (without the
+      quotation marks).
+
+   g. Choose OK.
+
+   (You must disable browser information for your project to prevent Visual C++
+   from calling BSCMAKE. If Visual C++ calls BSCMAKE, the browser database
+   includes only .SBR files for files in the project; the MFC Library files are
+   not included.)
+
+3. In Visual Workbench, add an option on the Tools menu to call BSCMAKE, as
+   follows:
+
+   a. Choose Tools from the Options menu.
+
+   b. Choose Add.
+
+   c. In the Add Tool dialog box, specify the path to BSCMAKE in the File Name
+      field (by default C:\MSVC\BIN\BSCMAKE under Windows and
+      C:\MSVCNT\BIN\BSCMAKE under Windows NT).
+
+   d. Modify the contents of the Menu Text field to read something like "BSCMAKE
+      with MAFXCWD" (without the quotation marks).
+
+   e. Specify the the following in the Arguments field:
+
+            /o$PROJ /n *.SBR <sbrdirectory>\*.sbr
+
+      where <sbrdirectory> is the directory where the SBR files are
+      located. For example, if you followed the directions in step 1 and created
+      the .SBR files for the medium model, debug, Windows, MFC library, you're
+      SBR files will be located in the \MSVC\MFC\SRC\$MWD.
+
+   f. Choose OK.
+
+   NOTE: The BSCMAKE command line includes the /n option switch. As the
+   documentation describes, this switch prevents BSCMAKE from performing an
+   incremental build that truncates all .SBR files to zero bytes. The /n option
+   slows the .BSC build; however, it preserves the .SBR files for other projects
+   to use. To speed performance, you may want to make a backup copy of the MFC
+   Library .SBR files for repeated use and edit the Arguments field to remove
+   the /n option switch to enable incremental builds.
+
+   You may want to modify the Arguments field to include the /Iu option switch.
+   The /Iu switch instructs BSCMAKE to include all information that the source
+   code defines but does not reference. By default, BSCMAKE does not include any
+   symbols that are not referenced. Unfortunately, if you specify the /Zn
+   compiler option in the Visual Workbench, VWB sets the Browser Information
+   check box (and invokes BSCMAKE without specifying the MFC Library .SBR
+   files). In Visual C++ version 1.0, the ability to browse MFC Library files
+   and to browse symbols that are defined but not referenced are mutually
+   exclusive.
+
+   To build the .BSC file for your project, build the project, then run BSCMAKE
+   from the newly created option on the Tools menu.
+
+   IMPORTANT: You must close the browser window before you run BSCMAKE. BSCMAKE
+   cannot create a new browser file unless the .BSC file is closed.
+
+Important Notes
+---------------
+
+ - If you are running Windows with the Win32s DLLs, you will not be able to run
+   BSCMAKE from the Tools menu. You must run it from the MS-DOS command line.
+
+ - The .BSC file you create must not be moved to another directory otherwise the
+   browser will not be able to find the source files.
+
+ - Do not specify /A on the NMAKE command line if you don't have Microsoft Macro
+   Assembler 6.1 or greater in your PATH. The /A option will do a "rebuild all"
+   and will cause some assembler files (.ASM files) to be re-assembled. Of
+   course, if you don't have the assembler, the makefile will fail.
+
+ - For more information about BSCMAKE, view the BSCMAKE.WRI file located in the
+   MSVC\HELP directory.
+
+ - For more information about NMAKE, view the NMAKE.WRI file located in the
+   MSVC\HELP directory.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbCompiler kbMFC kbMiscTools kbVC kbVC100 kbVC150 kbVC400 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

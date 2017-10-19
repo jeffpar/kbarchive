@@ -1,0 +1,64 @@
+DOCUMENT:Q118931  27-NOV-1999  [homekids]
+TITLE   :Writer: Pattern-Filled Word Shapes Don't Print
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to a STAR NX 2420 Rainbow printer, solid-color fills in spletters
+print correctly. (Spletters are word shapes created using the Word Shape tool.
+This is similar to WordArt in other Microsoft applications.) However, if you
+apply a pattern to the fill, the letter outlines print, but there is no color or
+pattern. Letters appear transparent so that an applied shadow will show through
+the letters when printed.
+
+CAUSE
+=====
+
+This problem occurs using the STAR driver version 1.2, or an Epson LQ-860
+emulation using driver version 2.11. There is no known resolution to this
+problem.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Creative Writer version 1.0, 1.1
+and 1.1a for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Pattern-filled spletters print properly from Microsoft Fine Artist to the STAR NX
+2420 Rainbow. Pattern-filled WordArt objects print correctly from other
+Microsoft applications to the STAR NX 2420 Rainbow.
+
+Additional query words: 1.00 mskids win Word Art blank empty 1.10 NX-2420 LQ 860 spletter graphic graphics mczee kids 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a
+Version           : WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

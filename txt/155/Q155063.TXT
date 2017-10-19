@@ -1,0 +1,59 @@
+DOCUMENT:Q155063  07-SEP-2001  [powerpt]
+TITLE   :Pure Black and White Add-in Not Installed on Workstation
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbprint kbsetup kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the PowerPoint Pure Black And White add-in to a
+network or shared (workstation) installation of PowerPoint 95, the add-in will
+appear to be installed correctly, but the "Print Pure Black And White" command
+will not appear on the File menu.
+
+CAUSE
+=====
+
+The Pure Black and White add-in is designed to work only with a local
+installation of PowerPoint for Windows 95.
+
+RESOLUTION
+==========
+
+The functionality of the Pure Black and White add-in has been added to the
+version of PowerPoint that ships with Microsoft Office for Windows 95, version
+7.0b.
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          : kbnetwork kbprint kbsetup kbPrinting 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

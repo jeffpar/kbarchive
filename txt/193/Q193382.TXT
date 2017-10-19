@@ -1,0 +1,57 @@
+DOCUMENT:Q193382  12-AUG-1999  [homemm]
+TITLE   :Virtual Globe 99: Lunar Map Links to Earth-Related Content
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the lunar surface in Encarta Virtual Globe 99 and click on or near
+the Moon's North or South pole, the program displays a menu that contains links
+to content describing the Earth's poles.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Virtual Globe
+99, version 1.0.
+
+MORE INFORMATION
+================
+
+Encarta Virtual Globe 99 does not contain associated content specific to the
+Moon. The map of the lunar surface displayed in Encarta Virtual Globe does not
+link to any articles or other content.
+
+Additional query words: multi multi-media media mm world atlas evg
+
+======================================================================
+Keywords          : kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

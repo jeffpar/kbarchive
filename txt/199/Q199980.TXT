@@ -1,0 +1,76 @@
+DOCUMENT:Q199980  05-FEB-1999  [exchange]
+TITLE   :XFOR: Err Msg: Could not Migrate MMF File for Account
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Exchange Server administrator may receive the following error message when
+attempting to migrate a user from Microsoft Mail to Exchange Server:
+
+   Could not migrate MMF file for account.
+
+In the Event Viewer, the administrator may see the following events:
+
+   Event ID: 151 Source: MSExchangeMig Description: "Could not migrate MMF file
+   for account. " "UserId : <username>"
+
+   "Mmfpath: <path>"
+
+   -or-
+
+   ID: 135 Source: MSExchangeMig Description: "Could not migrate MMF file for
+   account. " "UserId : <username>" "Mmfpath: <path>"
+
+CAUSE
+=====
+
+The mail message file (MMF) is either locked open or is in an unstable
+condition.
+
+WORKAROUND
+==========
+
+To work around this problem, the administrator should follow these steps:
+
+1. Recover the user's MMF password.
+
+2. Logon as that user, and then log off.
+
+3. Rerun the migration utility for this user.
+
+The user should now be migrated without a problem.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

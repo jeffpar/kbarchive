@@ -1,0 +1,105 @@
+DOCUMENT:Q132373  29-NOV-1999  [homekids]
+TITLE   :Writer: Adjust Margins to Fix Truncated Borders
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Creative Writer, if you create a document with a border around it, the border
+may be cut off when you view the document on the screen, and also when you print
+the document.
+
+CAUSE
+=====
+
+This problem commonly occurs when the margins selected for the current document
+are smaller than the margins defined in the printer setup.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the following steps to increase the margins in your
+document:
+
+Creative Writer 2.0
+-------------------
+
+1. Click the Page menu, then click the Margins tool. You have the following
+   choices for margin widths (as displayed from the top to bottom): 0.188 inch,
+   0.375 inch, 0.625 inch, .938 inch, and 1.125 inches).
+
+2. Click a margin setting larger than the current setting.
+
+3. If the border of your document is still cut off, select an even larger margin
+   setting.
+
+Creative Writer 1.0
+-------------------
+
+1. In the Writing Studio, click the Page Stuff tool (the book with the ruler),
+   click the Margins tool, and select a margin option.
+
+   You have the following choices for margin widths (as displayed from top to
+   bottom): 0.5 inch, 0.75 inch, 1 inch, 1.25 inches, and 1.5 inches. Note that
+   the current margin setting is indicated with a check mark.
+
+2. Click a margin setting larger than the current setting.
+
+3. If the border of your document is still cut off, select an even larger margin
+   setting.
+
+MORE INFORMATION
+================
+
+Creative Writer 1.0 allows you to create documents on 8.5-by-11-inch paper only.
+To make sure that your printer is configured for 8.5-by-11-inch paper (Letter
+size), use the following steps:
+
+1. In Creative Writer 1.0, press "CTRL+SHIFT+A" (without the quotation marks).
+
+2. Click OK.
+
+3. On the File menu, click Printing Options.
+
+4. Click Set Local, then click Setup.
+
+5. Make sure that Paper Size is set to 8.5 by 11 inches (Letter).
+
+6. Click OK to close the open dialog boxes until you return to the Creative
+   Writer Control Room window.
+
+7. On the File menu, click Return To Creative Writer.
+
+
+Additional query words: 1.00 1.10 kids mskids boarder max writer adult mode cut cutoff not all there can't cant see monitor align center bottom
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a
+Version           : WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q240636  27-OCT-2000  [homemm]
+TITLE   :World Atlas: Find Box Is Invisible in High Contrast Color Scheme
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+ - Microsoft Encarta Interactive World Atlas 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Encarta World Atlas 2000, the Find box in the
+Pinpointer may not be visible.
+
+CAUSE
+=====
+
+This behavior can occur if you select a high contrast color scheme that sets the
+window background color to black.
+
+RESOLUTION
+==========
+
+To resolve this issue, select a different color scheme:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Click the Appearance tab.
+
+3. In the Scheme box, click a color scheme that is not a high contrast color
+   scheme that sets the window background color to black.
+
+4. Click OK.
+
+5. Close Control Panel.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta World Atlas
+2000.
+
+Additional query words: multi multi-media media mm ewa2k
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2001 kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

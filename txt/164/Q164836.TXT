@@ -1,0 +1,66 @@
+DOCUMENT:Q164836  08-JAN-2000  [exchange]
+TITLE   :XCON: Conditional Reroute on Single Link Bounces Back
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When messages are received from foreign X.400 systems, sometimes the messages
+cannot be resolved against the Directory Service (DS). These messages are marked
+as rerouted and sent back to the foreign X.400 system.
+
+This then starts a ping-pong effect between the two systems.
+
+CAUSE
+=====
+
+Some X.400 systems cannot handle the fact that the message is marked as REROUTED
+up the same link as the message was sent. Because they cannot loop detect the
+message, they consequently resend the message back to Microsoft Exchange,
+starting the ping-pong effect.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+This problem was corrected in the latest Microsoft Exchange 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base:
+
+   " SERVPACK " (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

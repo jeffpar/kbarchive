@@ -1,0 +1,50 @@
+DOCUMENT:Q264156  30-JUL-2001  [visualc]
+TITLE   :INFO: Including RC File in Another RC File w/ Different CodePage
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbNLS kbOSWinNT400 kbOSWin2000 kbResource kbVC kbOSWin95 kbOSWin98 kbLocalization kbGrp
+
+======================================================================
+SUMMARY
+=======
+
+Including a .rc file within another .rc file may cause problems when the
+codepages in the two .rc files do not match. For example, if you include a
+Chinese resource file, Chsres.rc, in an English resource file, the combined
+resource file may not compile correctly (unless the resource file is on a
+Chinese platform). In the .rc file, if you do not provide a language and a
+#pragma statement, the system default is always used.
+
+MORE INFORMATION
+================
+
+To avoid the problem, you must set the language and #pragma statement correctly
+before you include another .rc file. For example, in the English .rc file, add
+the following lines before you include the Chinese resource file:
+
+   LANGUAGE 04, 02
+   #pragma code_page(936)
+   #include "chsres.rc"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbNLS kbOSWinNT400 kbOSWin2000 kbResource kbVC kbOSWin95 kbOSWin98 kbLocalization kbGrpDSIntl kbDSupport 
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

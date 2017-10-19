@@ -1,0 +1,65 @@
+DOCUMENT:Q93003  26-JUN-2001  [utilities]
+TITLE   :FIX: CVW3.EXE Displays No Text Cursor on Some Mono Video Cards
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::3.07
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for Windows, version 3.07 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the CodeView for Windows debugger (CVW3.EXE) version 3.07 provided with
+version 3.1 of the Microsoft Windows Software Development Kit (SDK), no text
+cursor is displayed.
+
+CAUSE
+=====
+
+The system has one of the following video cards installed:
+
+   IBM Printer Card with MGA output
+   Hercules Plus
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in CodeView for Windows, version
+3.07. This problem was corrected in CodeView for Windows, version 4.0.
+
+MORE INFORMATION
+================
+
+When the CodeView screen appears, the mouse cursor appears normally while the
+text cursor is displayed in the upper left hand corner of the screen. However,
+the CodeView application works correctly.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbCodeView307
+Version           : :3.07
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,96 @@
+DOCUMENT:Q313263  15-MAR-2002  [homekids]
+TITLE   :MSB: Sound Stops Working After You Enter the Schoolroom
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores in the Age of Dinosaurs for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you enter the schoolroom, the sound may stop working.
+
+CAUSE
+=====
+
+In the Device Manager, under "Sound, video, and game controllers", the Unimodem
+Half-Duplex Audio Device is enabled.
+
+RESOLUTION
+==========
+
+Disable the Unimodem Half-Duplex Audio Device. To do this, follow these steps.
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please consult your product
+documentation to complete these steps.
+
+1. On the taskbar, click Start, point to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click System.
+
+3. In the System Properties dialog box, click the Device Manager tab.
+
+4. Click the plus sign (+) to the left of "Sound, video, and game controllers"
+   to expand the directory tree.
+
+5. Under "Sound, video, and game controllers", click Unimodem Half-Duplex Audio
+   Device, and then click Properties.
+
+6. In the "Unimodem Half-Duplex Audio Device Properties" dialog box, click to
+   select the "Disable in this hardware profile" check box, and then click OK
+   twice.
+
+For Windows 2000:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click System.
+
+3. In the System Properties dialog box, on the Hardware tab, then click Device
+   Manager.
+
+4. In the window that opens, click the plus sign (+) to expand the left of
+   "Sound, video, and game controllers" directory tree.
+
+5. Click "Unimodem Half-Duplex Audio Device", and then click Properties. If not
+   found, Cancel or Close the dialogues and windows you have opened and skip
+   ahead to the next article.
+
+6. In the "Unimodem Half-Duplex Audio Device Properties" dialog box, click to
+   select the "Disable in this hardware profile" check box, and then click OK
+   twice.
+
+The sound now works in both versions of the Magic School Bus.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticDinosaurs kbScholasticEarth kbMSBSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

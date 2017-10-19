@@ -1,0 +1,66 @@
+DOCUMENT:Q150144  09-AUG-2001  [winnt]
+TITLE   :Multihomed Client Fails to Refresh Registration with WINS
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A multihomed WINS client may fail to refresh its registration with a WINS server
+if the client is configured to register with the same WINS server for each
+network adapter card.
+
+MORE INFORMATION
+================
+
+A multihomed computer is one with multiple network cards and/or IP addresses
+bound to NetBIOS over TCP/IP. A multihomed WINS client with multiple IP
+addresses can register one or more addresses by sending one address at a time in
+a multihomed registration packet. A multihomed name in a WINS database can have
+one or more addresses.
+
+If a multihomed client is configured to register with the same WINS server for
+each network adapter card, the client may fail to send a name-refresh request to
+the WINS server asking to renew its registration. Eventually, the WINS server
+will time out the multihomed name and scavenge it from the WINS database.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: 3.50 multihome renew refresh
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

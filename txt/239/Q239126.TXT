@@ -1,0 +1,59 @@
+DOCUMENT:Q239126  01-NOV-2000  [sms]
+TITLE   :SMS: Output Corrupted When You Print IPF Files in Windows 95
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Systems Management Server (SMS) Installer on a Microsoft
+Windows 95-based computer, and you attempt to print an IPF script file, both the
+Print Preview and actual printed output are corrupted. This behavior does not
+occur on Microsoft Windows 98 or Microsoft Windows NT-based computers.
+
+
+WORKAROUND
+==========
+
+To work around this issue, open the IPF file in Notepad or move the file to a
+Windows NT-based computer for printing or viewing in Print Preview.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server Installer.
+
+Additional query words: prodsms win95 win9x
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMSI200
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

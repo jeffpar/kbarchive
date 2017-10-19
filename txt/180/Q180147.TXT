@@ -1,0 +1,56 @@
+DOCUMENT:Q180147  02-APR-2000  [sna]
+TITLE   :TPSTART Not Needed With SNA Windows 95 Client
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SNA Server APPC Programmer's Guide incorrectly states that the TPSTART
+program must be running on an SNA Server Windows 95 client before an automated
+startup of invokable transaction programs can be started as an application.
+However, TPSTART is not necessary in a Windows 95 environment.
+
+NOTE: The TPSTART program is only required on SNA Server Windows NT clients to
+support automated startup of invokable transaction programs, which are written
+as a Win32 application (as opposed to a Windows NT service).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the documentation for SNA Server
+version 3.0. It will be corrected in subsequent versions of the documentation.
+
+Additional query words: TPSTART invokable TP Win95
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

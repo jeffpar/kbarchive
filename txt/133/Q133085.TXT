@@ -1,0 +1,74 @@
+DOCUMENT:Q133085  07-SEP-2001  [powerpt]
+TITLE   :EPS Picture Appears Transparent on PCL Printers
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print an Encapsulated PostScript (EPS) graphic from PowerPoint 7.0 for
+Windows 95 to a black-and-white PCL printer, parts or all of the EPS graphic may
+appear to be transparent.
+
+A PCL printer is a printer that uses the Hewlett-Packard Printer Control
+Language. PCL printers include all HP LaserJet printers and LaserJet- compatible
+printers.
+
+CAUSE
+=====
+
+This is a bug in PCL banding printer drivers. The drivers do not preserve the
+z-order, or "layering" of the objects in the EPS file, which in turn causes them
+to appear as transparent.
+
+NOTE: EPS graphics are designed to print well to printers that use the PostScript
+page description language and not to printers that use other printer languages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PowerPoint version 7.0 for
+Windows 95. We are researching this problem and will post new information here
+as it becomes available.
+
+WORKAROUND
+==========
+
+Convert the EPS graphic to another one of the supported graphic file formats
+that PowerPoint is able to use, and then import the new version of the graphic
+to your presentation. Many commercially available graphics and drawing software
+packages can convert EPS graphics to other file formats.
+
+Additional query words: 7.00 ppt95 WIN95 LaserJet II Plus III IIIsi IIIp 4 4m 4mplus 4mvplus 5m 4si
+
+======================================================================
+Keywords          : kbgraphic kbprint kbPrinting 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

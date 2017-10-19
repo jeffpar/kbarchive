@@ -1,0 +1,89 @@
+DOCUMENT:Q81645  11-OCT-1999  [win95x]
+TITLE   :BlueMAX Install May Hang System with Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install BlueMAX, your system may stop responding (hang) or you may
+experience data corruption. The following error message may be displayed:
+
+   Divide overflow
+   Memory allocation error
+   Cannot load COMMAND, system halted
+
+CAUSE
+=====
+
+These problems are caused by changes to the CONFIG.SYS file made by the BlueMAX
+installation program. BlueMAX does not detect the presence of SMARTDRV.EXE, and
+installs ts own disk cache called Qcache. Then, the BlueMAX installation
+attempts to load the double buffering option of SMARTDRV.EXE high if a device
+line for device portion of SMARTDRV.EXE exists in the CONFIG.SYS file.
+
+MORE INFORMATION
+================
+
+There are two basic problems caused by the BlueMAX installation program.
+
+ - Using more than one disk cache can cause data corruption and system hangs.
+   Microsoft recommends that SMARTDRV.EXE version 4.0 be used with Microsoft
+   Windows.
+
+ - In addition to installing its own disk cache, BlueMAX attempts to load the
+   double buffering portion of SMARTDRV.EXE high if a device line for
+   SMARTDRV.EXE exists in the CONFIG.SYS file. The following is an example of
+   the double buffering driver being loaded low, into conventional memory:
+
+   DEVICE=C:\WINDOWS\SMARTDRV.EXE /DOUBLE_BUFFER
+
+The device portion of SMARTDRV.EXE loaded in the CONFIG.SYS file allows
+SMARTDRV.EXE to function correctly with basic input/output systems (BIOS) older
+than three years. SMARTDRV.EXE displays an error message if it is loaded high
+and the /DOUBLE_BUFFER switch is used. The BlueMAX load high driver cannot
+correctly handle SMARTDRV.EXE's error message and may display the error message
+noted above.
+
+NOTE: This message can also be caused by too little hard disk space. This can
+occur when exiting Windows or an application, such as Microsoft Excel. If you
+are using a permanent swap file, you need to have a minimum of 4 MB of available
+disk space; if you are using a temporary swap file, you need to have a minimum
+of 9 MB of available disk space. Also, be sure that you have a valid TEMP
+directory.
+
+The BlueMAX product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 3rdParty 386max to-the-max qemm 3.1 win31 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

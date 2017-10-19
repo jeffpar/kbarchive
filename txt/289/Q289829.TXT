@@ -1,0 +1,63 @@
+DOCUMENT:Q289829  31-JUL-2001  [winnt]
+TITLE   :Blank Spaces in Folder Name Aliases Become Underscore Characters
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:w2000sfu kbUNIXService
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you mount a folder from a UNIX client to a server that is running the
+Server for NFS service in Services for UNIX, spaces in folders or file names are
+automatically converted to an underscore character (_).
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If you start Microsoft Windows Explorer, and you try to map a network drive to
+point to C:\Program Files, the default alias is "Program Files". This alias does
+not pass the NFS aliasing requirements. Currently, the default alias that is
+used is "Program_Files"; this alias satisfies the aliasing requirement.
+
+When you create an NFS share on a computer that is running Windows 2000 with
+Services for UNIX 2.0, an underscore character replaces all the blank spaces.
+When you connect to the NFS share from an NFS client, type an underscore
+character in place of the blank spaces when you access the share.
+
+Additional query words: sfu solar coaster solarcoaster
+
+======================================================================
+Keywords          : w2000sfu kbUNIXService 
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

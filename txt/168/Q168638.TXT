@@ -1,0 +1,86 @@
+DOCUMENT:Q168638  16-APR-2000  [powerpt]
+TITLE   :PPT7: No Action or Interactive Settings for Grouped Shapes
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbdraw
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you group several objects together, the Action Settings command on the Slide
+Show menu is unavailable (dimmed). If you right-click a group of objects, the
+Action Settings command is unavailable on the menu that appears.
+
+In addition, if you group an object that has an action setting or interactive
+setting property with other objects, PowerPoint ignores those settings until you
+ungroup the object.
+
+CAUSE
+=====
+
+Although multiple objects that have been grouped together behave as though they
+are a single object with respect to being moved, sized, or copied, PowerPoint
+remembers that the group is made up of multiple objects. PowerPoint cannot apply
+or activate action settings or interactive settings to multiple objects
+simultaneously, so it disables these commands when you select a grouped object
+or multiple objects.
+
+RESOLUTION
+==========
+
+To apply action settings or interactive settings to a group of objects, first
+convert the group of objects to a single picture. To do this, follow these
+steps:
+
+1. Select the group of objects.
+
+2. On the Edit menu, click Cut.
+
+3. On the Edit menu, click Paste Special.
+
+4. In the Paste Special dialog box, click Picture or click Picture (Enhanced
+   Metafile).
+
+5. Click OK.
+
+You can now apply action settings or interactive settings to the picture.
+
+STATUS
+======
+
+This feature is under review and will be considered for inclusion in a future
+release.
+
+Additional query words: ppt95 grouped grayed out missing
+
+======================================================================
+Keywords          : kbgraphic kbdraw 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

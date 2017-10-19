@@ -1,0 +1,66 @@
+DOCUMENT:Q136105  17-DEC-2000  [win95x]
+TITLE   :No Network Access After First Boot on EISA Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows 95 on a computer with an EISA motherboard and an EISA
+network adapter, you cannot access the network after the computer is restarted
+the first time. Network access works correctly after all subsequent restarts.
+
+CAUSE
+=====
+
+The network adapter is not yet completely configured in the registry the first
+time the computer is restarted.
+
+RESOLUTION
+==========
+
+Continue setting up your computer. Setup will require you to restart the
+computer again, after which you will be able to access the network.
+
+If Setup requires additional files from a network resource, use the original
+installation disks instead, or copy the appropriate files to a floppy disk.
+
+MORE INFORMATION
+================
+
+The first time Windows 95 starts, the registry configures all the connected
+hardware devices. At this point, the network adapter is recognized but it is not
+enabled until the EISA enumerator is built. You cannot access the network until
+the slot configuration for the network adapter is determined and enabled.
+
+Note that turning the computer off and back on is not a workaround for this
+behavior. The network adapter is not enabled until Setup is finished.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

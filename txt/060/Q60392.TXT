@@ -1,0 +1,77 @@
+DOCUMENT:Q60392  30-OCT-1999  [utilities]
+TITLE   :FIX: [PWB] Tag Missing in PWB 1.0 Sample Init File, TOOLS.PRE
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0; OS/2:1.0
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, version 1.0 
+ - Microsoft Programmer's Workbench for OS/2, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+TOOLS.PRE is a sample Programmer's WorkBench (PWB) initialization file that is
+installed (and modified) when C 6.0 is installed by running the Setup program.
+On pages 19 and 20 of "Microsoft C: Installing and Using the Professional
+Development System," it states that the contents of TOOLS.PRE can be merged with
+an existing TOOLS.INI file, if one exists, or it can be renamed to TOOLS.INI, if
+there isn't one. To work correctly, you must make sure that the contents of this
+file are preceded by a PWB tag (for example, [PWB]) because the supplied
+TOOLS.PRE lacks this tag.
+
+RESOLUTION
+==========
+
+When merging the PWB 1.0 TOOLS.PRE file into an existing TOOLS.INI file, a [PWB]
+tag should be added just above the area where the file is merged. For example:
+
+[PWB]
+  .
+  .
+  .
+  (TOOLS.PRE contents)
+  .
+  .
+  .
+
+[NEXT-TAG]
+
+If TOOLS.PRE is being renamed to TOOLS.INI, the tag should be added as the first
+line in the file. In either case, failure to add the tag will result in PWB
+ignoring the initialization information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in PWB version 1.0. This problem
+was corrected in PWB version 1.1.
+
+Additional query words: 1.00 buglist1.00 fixlist1.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB100OS2
+Version           : MS-DOS:1.0; OS/2:1.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

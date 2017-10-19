@@ -1,0 +1,89 @@
+DOCUMENT:Q175477  09-AUG-2001  [winnt]
+TITLE   :Batch Files Run from Within Other Folders May Fail
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a batch file from a different folder that contains non- alphabetic
+characters, you will receive the following error message:
+
+   The name specified is not recognized as an internal or external command,
+   operable program or batch file.
+
+Steps to reproduce the problem:
+
+1. Create a folder named test(2) off your root directory.
+
+2. Create a batch file in the test(2) folder called test.bat.
+
+3. Insert the following lines in test.bat:
+
+         echo off
+         pause
+
+4. Save test.bat.
+
+5. From the root directory at a command prompt, run the batch file with the
+   following line:
+
+   \test(2)\test.bat
+
+Notice the error message received:
+
+   The name specified is not recognized as an internal or external command,
+   operable program or batch file.
+
+WORKAROUND
+==========
+
+Although the batch file does not run from the root directory, the command will
+run if you enclose the command line within quotes. For example, for the above
+situation, a user should enter the following line in a command prompt:
+
+   "\test(2)\test.bat"
+
+This command will run the batch file normally.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: program
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : ALPHA PPC x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

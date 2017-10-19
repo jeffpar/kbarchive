@@ -1,0 +1,96 @@
+DOCUMENT:Q235046  09-DEC-2000  [mspress]
+TITLE   :Microsoft Publisher 2000 Step by Step Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Publisher 2000 Step by Step ISBN 1-57231-987-9 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Publisher 2000 Step by Step, ISBN
+1-57231-987-9.
+
+The following topics are covered:
+
+ - Page 193: Orphan And Widow Definitions Not Entirely Accurate
+
+ - Last Page: Software Not Included With Book
+
+MORE INFORMATION
+================
+
+Page 193: Orphan And Widow Definitions Not Entirely Accurate
+------------------------------------------------------------
+
+On page 193 the definition of Widow and Orphan are not entirely accurate. The
+Computer Dictionary contains the more accurate definitions below.
+
+Widow: A last line of a paragraph, shorter than a full line, appearing at the top
+of a page.
+
+Orphan: The first line of a paragraph printed alone at the bottom of a page or
+column of text, or the last line of a paragraph printed alone at the top of a
+page or column.
+
+The definition of Orphan can be changed to reflect this additional information.
+
+Change:
+"The first line of a paragraph appears on its own at the bottom of a column or
+page. Can be corrected by adjusting character, line, or paragraph spacing."
+
+To:
+"The first line of a paragraph appears on its own at the bottom of a column or
+page, or the last line of a paragraph appears alone at the top of a page or
+column. Can be corrected by adjusting character, line, or paragraph spacing."
+
+
+Last Page: Software Not Included With Book
+------------------------------------------
+
+The Microsoft Publisher 2000 software is not included with the title "Microsoft
+Publisher 2000 Step by Step."
+
+Please change the first paragraph on the last page to read:
+
+"The enclosed CD-ROM contains ready-to-use practice files that complement the
+lessons in this book. To use the CD, you'll need either the Windows 95, Windows
+98, or the Windows NT version 4 operating system. You will also need to be
+running Microsoft Publisher 2000."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: EUBOOK EUSBS PUB2000
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

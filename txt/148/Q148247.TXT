@@ -1,0 +1,61 @@
+DOCUMENT:Q148247  13-OCT-1999  [msnetwork]
+TITLE   :V-Chat Environment Installation Cannot Find File Specified
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install a V-Chat environment on MSN, The Microsoft Network,
+you may receive the following error message:
+
+   C:\progra~1\themic~1\Custom Applications\MCAST_BB.exe/i 71246:arches.inf
+   The system cannot find the file specified
+
+   MSN Custom Application Loader&Launcher
+   Error! Unable to launch Program/Setup
+
+CAUSE
+=====
+
+The Mcast_bb.exe file is not installed and registered properly. This file is
+used to set up V-Chat environments for the first time.
+
+RESOLUTION
+==========
+
+A fix for this problem is located in the V-Chat forum on MSN (the Go word is
+"v-chat"). See the V-Chat Frequently Asked Questions document or the First Time
+User Guide for a shortcut to the fix.
+
+Additional query words: msn vchat
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN120
+Version           : WINDOWS:1.2,1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,109 @@
+DOCUMENT:Q134888  03-AUG-1999  [foxpro]
+TITLE   :BUG: GDI Memory Not Released in Windows 95 After Memory Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbenv kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running a program that uses up all GDI memory in Windows 95 causes this error:
+
+   Not enough memory to complete this operation
+
+After the error message is closed, GDI memory is still not released. Running the
+program a second time causes Visual FoxPro to quit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run the following program. You will get the error "Not enough memory to
+   complete this operation." All GDI has been used and will not be released.
+
+      *Attempt to create and release 2500 windows
+
+      PRIVATE ALL EXCEPT g_*
+
+      cOldPrint = SET('PRINT',1)
+      SET PRINT OFF
+      SET PRINT TO
+
+      nMaxRows = 25
+      nMaxCols = 100
+
+      nBeforeHandles = SYS(1011)
+
+      WAIT WINDOW 'Patience ... may look dead, check system clock' NOWAIT
+
+      FOR i = -1 TO nMaxRows
+         FOR j = -1 to nMaxCols
+            cWindowName = 'Win'+ALLTRIM(STR(ABS(i)))+'_'+ALLTRIM(STR(ABS(j)))
+            DEFINE WINDOW (cWindowName);
+               FROM i,j TO i+10,j+10 ;
+               TITLE (cWindowName)
+            ACTIVATE WINDOW (cWindowName)
+         ENDFOR
+      ENDFOR
+      FOR i = -1 TO nMaxRows
+         FOR j = -1 to nMaxCols
+            RELEASE WINDOW
+         ENDFOR
+      ENDFOR
+
+      SET PRINT TO &cOldPrint
+      SET PRINT ON
+
+      nAfterHandles = SYS(1011)
+      nDiff = VAL(nAfterHandles) - VAL(nBeforeHandles)
+      ?IIF(nDiff > 50,'FAIL','PASS')
+
+      * Clean up and exit
+
+      WAIT CLEAR
+
+      RELEASE ALL EXCEPT g_*
+      RETURN
+
+2. Run the program again and Visual FoxPro will quit. Then GDI is released.
+
+Additional query words: hang stop dump crash kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbenv kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

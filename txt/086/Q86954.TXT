@@ -1,0 +1,70 @@
+DOCUMENT:Q86954  18-NOV-1999  [pcmail]
+TITLE   :3COM: Floppy Disk Layouts for MS Mail Gateway to 3Com 3+Mail
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to 3Com 3+Mail, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the floppy disk layout for the Microsoft Mail Gateway to 3Com
+3+Mail:
+
+Access Component
+----------------
+
+INSTALL.EXE
+SMTP.HLP
+SMTP.TPL
+SMTPABT.TPL
+SMTPCFG.TPL
+SMTPSTD.TPL
+
+Gateway Component
+-----------------
+
+ADDR_MAP.CFG
+LOCAL.CFG
+ACCINST.EXE
+COURGET.EXE
+COURPUT.EXE
+GATEWAY.EXE
+GTWYINST.EXE
+INSTALL.EXE
+SMTP.HLP
+SMTPABT.TPL
+SMTPCFG.TPL
+SMTPSTD.TPL
+README.TXT
+
+
+Additional query words: 3.00 pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGate3COM3Plus300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

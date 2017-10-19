@@ -1,0 +1,75 @@
+DOCUMENT:Q84647  07-SEP-2001  [word97]
+TITLE   :WD97: "Margins Set Outside Printable Area of Page"
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg kbprint kbualink97 kbPrintingkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you set your document margins closer to the edge of the paper than your
+printer is capable of printing, Microsoft Word for Windows returns the following
+warning message for each copy you send to the printer:
+
+   One or more margins are set outside the printable area of the page. Choose
+   the Fix button to increase the appropriate margins.
+
+CAUSE
+=====
+
+Most laser printers, such as the Hewlett-Packard (HP) LaserJet, cannot print
+closer to the edge of the paper than 0.25 inch. Some laser printers, such as the
+HP LaserJet Series II, require 0.5-inch margins. Most PostScript and dot-matrix
+printers have their own internal printer driver setting for margins.
+
+WORKAROUND
+==========
+
+When you receive the warning message, clicking the Fix button increases any
+margin in the unprintable region to the minimum margin setting.
+
+MORE INFORMATION
+================
+
+To determine what the document margins can be set to, start WordPad in Windows
+from the Accessories group.
+
+1. On the File menu, click Page Setup.
+
+2. Set one of the margins to zero (0) and click OK.
+
+3. On the File menu, click Page Setup, and the margin that you set to zero(0)
+   will display the minimum margin setting.
+
+Additional query words: errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg kbprint kbualink97 kbPrinting kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

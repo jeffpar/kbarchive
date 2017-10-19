@@ -1,0 +1,86 @@
+DOCUMENT:Q258258  16-APR-2000  [exchange]
+TITLE   :XADM: Exchange 5.5 SP3 Mailbox Manager conflicts with Site Serve
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open Mailbox Manager properties and click the Server Selections tab,
+the following error message may be displayed:
+
+   LDAP: Protocol error
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft Site Server is installed on the computer
+from the Microsoft Windows NT Option Pack. Site Server installs the Microsoft
+Lightweight Directory Access Protocol (LDAP) service and causes a conflict with
+Mailbox Manager, which uses LDAP to query the directory.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use the following steps:
+
+1. If you are not using Site Server, either stop and set the LDAP Service to
+   manual in Control Panel Services or uninstall Site Server.
+
+2. If you are using the Site Server LDAP service, you need to change the LDAP
+   Port number in Exchange Server. To do this, use the following steps:
+
+   a. Start Exchange Server Administrator.
+
+   b. Click Site Container, click Configuration, and then click Protocols.
+
+3. When the LDAP Directory Site Defaults properties page is displayed, change
+   the port number to a different number (for example, 390).
+
+   NOTE: For additional information, click the article number below to view the
+   article in the Microsoft Knowledge Base:
+
+   Q224447 How To Change LDAP Port Assignments in Exchange Server
+
+4. Click the Authentication tab.
+
+5. Make sure the Windows NT Challenge/Response check box is selected. No other
+   options are required to be selected.
+
+6. Stop the Directory service, and then restart the Exchange Server services for
+   the new port number to take effect.
+
+7. Ensure Mailbox Manager is working and no error messages are displayed.
+
+Additional query words: SiteServer
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

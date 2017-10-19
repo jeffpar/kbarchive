@@ -1,0 +1,94 @@
+DOCUMENT:Q169445  09-JAN-2000  [vbwin]
+TITLE   :PRB: VisData Returns Incorrect Number of Records
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When entering SQL statements in Visual Basic 5.0 Visual Data Manager (VisData),
+the record count may be incorrect. The same SQL statement entered in Visual
+Basic 4.0 Data Manager will return the correct number of records.
+
+CAUSE
+=====
+
+All records do appear in some circumstances, such as with the DBGrid control,
+Data Manager, etc., because in these circumstances all records need to be
+retrieved to be displayed to the user, in which case there is no need to
+explicitly call MoveLast.
+
+RESOLUTION
+==========
+
+Always go the last record in VisData or issue a MoveLast of a recordset variable
+in order to get the correct record count using the DBGrid.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Within VisData:
+
+1. Open Nwind.mdb.
+
+2. Enter the following SQL statement:
+
+        select * from customers where customers.customerid like "*"
+
+3. Execute the statement and note that VisData will report two records being
+   returned.
+
+In Visual Basic 4.0 Data Manager:
+
+1. Open Nwind.mdb.
+
+2. Enter the same SQL Statement and note that Data Manager returns 91 records.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q109053 PRB: Using RecordCount with VB Dynasets, Snapshots, and Tables
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp500 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : 5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

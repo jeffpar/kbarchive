@@ -1,0 +1,60 @@
+DOCUMENT:Q78946  07-MAY-2002  [homegame]
+TITLE   :Flight Sim: Turning System Sound Off Doesn't Turn Off FS Sound
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for the Macintosh, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Flight Simulator for the Macintosh, you cannot turn the sound off
+by setting the volume control in the Sound control panel to zero.
+
+To completely turn off the sound in Flight Simulator, use one of the following
+methods:
+
+ - Press the Q key.
+
+   -or-
+
+ - Press COMMAND+U.
+
+   -or-
+
+ - From the Options menu, clear the Sound option.
+
+Alternatively, choose Preferences from the Edit menu, and set Sounds to an option
+other than All Sounds (for example, select Cockpit).
+
+In Flight Simulator versions 1.0 and 1.2, you can turn off the sound by choosing
+Sound from the Sim menu.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbGamesSearch kbFlightSimSearch kbFlightSim400Mac kbSimSearch
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

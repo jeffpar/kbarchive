@@ -1,0 +1,71 @@
+DOCUMENT:Q233464  04-JUL-1999  [homemm]
+TITLE   :Business Planner: Keyboard Commands Do Not Function
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you open Personal Interviewer in Microsoft Business Planner while Personal
+Interviewer is already open, certain keyboard commands may no longer function in
+Personal Interviewer.
+
+In addition, if you open an Action Plan page while an Action Plan page is already
+open, you can no longer use the TAB key to move through the list of articles.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Click Exit on the Wizard toolbar.
+
+2. Click Personal Interviewer on the Go menu.
+
+   -or-
+
+   Click Action Plan on the Business Plan Outlines or Marketing Outlines menu
+   from within a Business Planner wizard.
+
+To prevent this issue from occurring, do not open Personal Interviewer while
+Personal Interviewer is already open, or an Action Plan while an Action Plan is
+already open.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+Additional query words: msbp keys shortcuts scroll
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

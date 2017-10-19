@@ -1,0 +1,70 @@
+DOCUMENT:Q247725  24-DEC-1999  [iis]
+TITLE   :SP3 Required During Installation of Windows NT 4.0 Enterprise Ed
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to install the Windows NT Option Pack (NTOP) on a computer
+running Windows NT Server 4.0 Enterprise Edition, the NTOP installation may fail
+with a Dr. Watson error for Inetinfo.dbg at approximately 90 percent complete.
+The error typically occurs during the portion of the installation when you
+configure the default FTP site. The installation may complete. However, when you
+restart the computer, which is a required step when installing the NTOP, the
+Inetinfo.exe process causes an Access Violation error.
+
+MORE INFORMATION
+================
+
+The Windows NT 4.0 Enterprise Edition configuration is accomplished without
+installing SP3. The system is configured by directly installing SP5 after
+completing the CD installation procedure. Per the following information in the
+Windows NT 4.0 Enterprise Edition Readme file, Service Pack 3 is required prior
+to installing the NTOP:
+
+   New Windows NT Server/E Installations
+
+   Installing a new copy of Windows NT Server/E is a two step process:
+
+·  First, install Windows NT Server/E in the same way that you install Windows NT Server.
+
+·  After you install Windows NT Server/E, install Service Pack 3. (A prompt reminds you to do this each time you log in, until you have done so.)
+
+   Both steps are required to have a functioning Windows NT Server, Enterprise Edition system.
+
+After you install the NTOP, then SP5 or later can be installed.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

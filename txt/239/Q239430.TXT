@@ -1,0 +1,111 @@
+DOCUMENT:Q239430  21-AUG-1999  [homemm]
+TITLE   :Bookshelf 98: How to Use Command-Line Switches
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The table below describes the command line switches you may use to start
+Microsoft Bookshelf 98 for Windows.
+
++------------------------------------------------------------------+
+| Switch   | Functionality                                         | 
++------------------------------------------------------------------+
+| /i       | Index lookup                                          | 
++------------------------------------------------------------------+
+| /i<book> | Starts Bookshelf in a specified book                  | 
++------------------------------------------------------------------+
+| /k       | QuickQuote                                            | 
++------------------------------------------------------------------+
+| /d       | QuickDefine                                           | 
++------------------------------------------------------------------+
+| /h       | Starts the program minimized                          | 
++------------------------------------------------------------------+
+| /r       | Jump to a random topic                                | 
++------------------------------------------------------------------+
+| /f       | Full text search                                      | 
++------------------------------------------------------------------+
+| /o       | Daily                                                 | 
++------------------------------------------------------------------+
+| /m       | Specifies content location for a network installation | 
++------------------------------------------------------------------+
+
+NOTE: If a switch does not perform as expected, include the /h switch in the
+command line.
+
+How to Use the /i<book> Switch
+------------------------------
+
+To start Bookshelf in a specified book, use the following command-line switches:
+
++----------------------------------+
+| Switch     | Book specified      | 
++----------------------------------+
+| /i<bshelf> | All Books           | 
++----------------------------------+
+| /i<atlas>  | Atlas               | 
++----------------------------------+
+| /i<chron>  | Chronology          | 
++----------------------------------+
+| /i<cquote> | Quotations          | 
++----------------------------------+
+| /i<dict>   | Dictionary          | 
++----------------------------------+
+| /i<encyc>  | Encyclopedia        | 
++----------------------------------+
+| /i<roget>  | Thesaurus           | 
++----------------------------------+
+| /i<alman>  | Almanac             | 
++----------------------------------+
+| /i<inet>   | Internet Dictionary | 
++----------------------------------+
+
+MORE INFORMATION
+================
+
+To use these command line switches, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type the path to the executable file of the program,
+   followed by the switch or switches you want to use, and the word or words you
+   want to search for.
+
+   NOTE: If you want to search for two or more words, you must enclose the words
+   within quotation marks.
+
+3. Click OK.
+
+Additional query words: kbimu multi multi-media media mm bs98
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

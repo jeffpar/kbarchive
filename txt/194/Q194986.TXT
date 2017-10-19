@@ -1,0 +1,102 @@
+DOCUMENT:Q194986  10-AUG-2001  [winnt]
+TITLE   :PRB: File Copy Error Messages Using Update.exe with Service Pack
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT 4.0 Service Pack 4 using a Cmdlines.txt file and
+Update.exe, you may receive file copy error messages for the following files:
+
+   Appserver.class
+   Context.class
+   Imtxas.class
+   Objectcontent.class
+   Securityproperty.class
+
+CAUSE
+=====
+
+Only files with 8.3 file names can be copied using a Cmdlines.txt file and
+Update.exe.
+
+RESOLUTION
+==========
+
+To work around this problem, use the compressed Sp4i386.exe file from the
+Service Pack 4 CD-ROM, or SP4I386.EXE from the standard download from the
+Microsoft Web site with the Setup options you want. For information about
+obtaining the service pack files, see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How To Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+To create an unattended installation of Service Pack 4:
+
+1. In the $OEM$ folder, create an SP4 folder.
+
+2. Copy the Sp4i386.exe to the SP4 folder.
+
+3. In your Unattend.txt file, make sure you have the following lines:
+
+         [Unattended]
+         OemPreinstall = yes
+
+4. Create a Cmdlines.txt file in your $OEM$ folder that contains the following
+   lines:
+
+         [Commands]
+         ".\sp4\sp4i386.exe -z -u"
+
+For additional information, see the following articles in the Microsoft Knowledge
+Base:
+
+   Q163303 Sysdiff Cannot Be Used to Apply Service Pack
+
+   Q168814 Installing WinNT 4.0 Service Packs During Unattended Install
+
+Additional query words: sp4 Unattended Setup Install
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

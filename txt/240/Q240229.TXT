@@ -1,0 +1,101 @@
+DOCUMENT:Q240229  13-JAN-2001  [vbwin]
+TITLE   :PRB: Treeview Control NodeClick Event Not Raised
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0,6.0 SP3
+OPER/SYS:
+KEYWORDS:kbActivexEvents kbCmnCtrls kbTreeView kbVBp600 kbVS600sp3bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Studio 6.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After setting the SingleSel property of the Treeview control to True, the
+NodeClick event for this control is not always raised. This only occurs with the
+version of Mscomctl.ocx that is included in Visual Basic 6.0 Service Pack 3.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Visual Basic 6.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Confirm that Visual Basic 6.0 Service Pack 3 installed.
+
+2. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+3. From the Project menu select Components. In the Components dialog box, select
+   "Microsoft Windows Common Controls 6.0 (SP3)", and then click OK.
+
+4. Add a Treeview control to Form1.
+
+5. Add the following code to the General Declarations section of Form1:
+
+   Private Sub Form_Load()
+      Dim nodx As Node  ' Declare Node variable.
+
+      TreeView1.SingleSel = True
+
+      ' Add Node objects.
+      Set nodx = TreeView1.Nodes.Add(, , "r", "Root1")
+
+         Set nodx = TreeView1.Nodes.Add("r", tvwChild, "child1a", "Child1")
+         Set nodx = TreeView1.Nodes.Add("r", tvwChild, "child1b", "Child2")
+
+      Set nodx = TreeView1.Nodes.Add(, tvwChild, "r2", "Root2")
+
+         Set nodx = TreeView1.Nodes.Add("r2", tvwChild, "child2a", "Child1")
+         Set nodx = TreeView1.Nodes.Add("r2", tvwChild, "child2b", "Child2")
+         Set nodx = TreeView1.Nodes.Add("r2", tvwChild, "child2c", "Child3")
+
+      Set nodx = TreeView1.Nodes.Add(, tvwChild, "r3", "Root3")
+
+         Set nodx = TreeView1.Nodes.Add("r3", tvwChild, "child3a", "Child1")
+         Set nodx = TreeView1.Nodes.Add("r3", tvwChild, "child3b", "Child2")
+           
+      Set nodx = TreeView1.Nodes.Add(, tvwChild, "r4", "Root4")
+   End Sub
+
+   Private Sub TreeView1_NodeClick(ByVal Node As MSComctlLib.Node)
+      MsgBox Node.Text
+   End Sub
+
+6. Run the project. Root1 will be selected. Click on Root2. No message box
+   displays, indicating that the NodeClick event was not raised.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActivexEvents kbCmnCtrls kbTreeView kbVBp600 kbVS600sp3bug 
+Technology        : kbVSsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVS600SP3 kbVS600Search
+Version           : WINDOWS:6.0,6.0 SP3
+Issue type        : kbbug kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

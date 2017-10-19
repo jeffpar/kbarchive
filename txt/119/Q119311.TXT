@@ -1,0 +1,77 @@
+DOCUMENT:Q119311  17-DEC-2000  [win95x]
+TITLE   :CA-dBFast Installation Fails to Create Group Folder
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the installation of Computer Associates CA-dBFast, the installation
+program pauses while attempting to create the program group and displays the
+following error:
+
+   Installation program cannot communicate with Program Manager. <OK>
+
+Clicking OK results in an "installation successful" dialog box. CA-dBFast does
+function correctly; however, the program group folder is not created.
+
+CAUSE
+=====
+
+The CA-dBFast version 1.7c and 2.0 installation programs do not issue the
+correct instructions for Windows 95 to create the group folder and icons.
+
+RESOLUTION
+==========
+
+Run CA-dBFast from My Computer or Windows Explorer, or manually create a
+shortcut icon for CA-dBFast. To create a shortcut icon for CA-dBFast on the
+desktop, do the following:
+
+1. Click the Start button, point to Find, click File Or Folders.
+
+2. Search for files named "dbfast" (without the quotation marks).
+
+3. In the search list, use the right (secondary) mouse button to click the
+   dbfast folder.
+
+4. Click Create Shortcut.
+
+MORE INFORMATION
+================
+
+CA-dBFast is manufactured by Computer Associates, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: err msg 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

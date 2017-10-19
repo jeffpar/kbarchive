@@ -1,0 +1,75 @@
+DOCUMENT:Q250063  10-MAY-2000  [sms]
+TITLE   :Duplicates in Inventory After Site Inventory Synchronization
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase kbServer kbsms120 kbsms120bug kbDataLoader kbInventory kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a site is attached to another site, the inventory is replicated to the
+parent site in a process called inventory synchronization. You can also initiate
+this process by using the "preinst /syncparent" command as outlined in the
+Microsoft Systems Management Server Resource Guide.
+
+In some cases, this process can introduce duplicate records into the inventory
+groups within the site database. This can cause unpredictable results when you
+attempt to build reports or use the Administrator console to view computer data.
+
+CAUSE
+=====
+
+This behavior occurs when data is partially inserted before the error condition.
+The problem causes the SMS_INVENTORY_DATALOADER thread to continue as if the
+site synchronization for the group had never taken place. When this occurs, the
+next rows added for the group can have the same data key value as the partially
+synchronized data.
+
+WORKAROUND
+==========
+
+Use the utilities discussed in the following Microsoft Knowledge Base article to
+remove any duplicate data from the database and allow the normal inventory cycle
+to repopulate the data:
+
+   Q192859 SMS: SMS 1.2 SP4 Includes SMSIDDUP, DATDUPC, and DATDUPCL
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbServer kbsms120 kbsms120bug kbDataLoader kbInventory kbsmsUtil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

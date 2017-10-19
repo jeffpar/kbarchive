@@ -1,0 +1,125 @@
+DOCUMENT:Q193836  09-AUG-2001  [winnt]
+TITLE   :NET USE Attempt Across Domains Fails Without Name Resolution
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use either Net.exe USE or Net.exe VIEW from a client in a
+trusted domain to a domain controller in a trusting domain, you receive the
+following error:
+
+   Event ID: 1311
+   Source: NetLogon
+   Type: Error
+   Description: There are currently no logon servers available to service
+                the logon request.
+
+This error may occur in environments where Windows Internet Name Service (WINS)
+is being used or where one or more LMHOSTS files are maintained on the clients
+and servers. Communications utilities such as Ping.exe and Tracert.exe will show
+that the interdomain communications are working properly and that name
+resolution activity from the client is performing as expected.
+
+CAUSE
+=====
+
+When a NET command to a remote system on another domain is initiated, the
+current credentials (user name, password, domain) are passed as part of the
+request. If the client is logged on to the trusted domain, those credentials are
+used in the pass-through authentication process from the domain controller in
+the trusting domain.
+
+The domain controller in the trusting domain should be able to locate a domain
+controller in the trusted domain through some type of name resolution, normally
+from WINS or an LMHOSTS file. The failure in this instance is that the domain
+controller receiving the NET command cannot use pass-through authentication with
+the credentials provided to locate and authenticate the client back to the
+trusted domain. The above error will occur when one or more of the following
+conditions have been met:
+
+ - 00 (domain name), 1C, and 1B entries for the trusted domain are not properly
+   replicated from a WINS server in the trusted domain to a WINS server used by
+   the domain controller performing the pass-through authentication.
+
+ - 00 (domain name), 1C, and 1B entries for the trusted domain have been removed
+   from, or are corrupted, in the WINS server database in the trusting domain.
+
+ - If WINS is not used and an LMHOSTS file is present on the domain controller
+   performing the pass-through authentication, the necessary 00, 1C, and 1B
+   entries are missing or are incorrectly entered in the file.
+
+ - If WINS is not used and an LMHOSTS file is NOT present on the domain
+   controller performing the pass-through authentication, the authentication
+   process will fail.
+
+RESOLUTION
+==========
+
+To allow cross-domain authentication, one or more domain controllers in the
+trusting domain must be able to locate a domain controller in the trusted
+domain. This capability can be provided by ensuring that the trusting domain
+controllers have access to some type of NetBIOS name resolution process that
+maintains the proper records (00 for domain name, 1B for domain master browser,
+and 1C for multiple domain controllers).
+
+When using WINS in this instance, it will be necessary to verify that the domain
+controller or controllers in the trusting domain point to a WINS server that
+maintains the correct entries for the trusted domain that the client is logged
+on to. WINS replication between the two domains will be required to populate the
+requisite WINS database on the trusting domain from a WINS server in the trusted
+domain. If this replication cannot occur, or the entries in the trusting
+domain's WINS server are corrupted and name resolution is failing, the
+above-mentioned error will occur.
+
+If WINS in not in use in the environment, an LMHOSTS file will be required and
+should be located in %Winnt_Root%\System32\Drivers\Etc.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q150800 Domain Browsing with TCP/IP and LMHOSTS Files
+
+   Q185786 Recommended Practices for WINS
+
+   File Name: WINSWP.DOC
+   Location : ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/
+   Title : "Windows Internet Naming Service (WINS)" (Page 24)
+
+Additional query words: wins lmhosts browsing netlogon domains trusts
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

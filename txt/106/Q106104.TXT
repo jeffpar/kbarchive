@@ -1,0 +1,63 @@
+DOCUMENT:Q106104  08-AUG-2001  [win95x]
+TITLE   :Cannot Create Icons for Executables in Long Directories
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1; :3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Normally you should be able to drag and drop any program (executable file) from
+File Manager to an active program group in Program Manager in order to create a
+new icon in that group. If the directory in which the file resides has a 245
+character-long name, the following error message appears:
+
+   Invalid Path: The Path is Invalid
+
+The icon is created, but the path is truncated. If you try to start the program
+by double-clicking the icon, the following error message appears:
+
+   Application Execution Error: Cannot find file <drive><long-
+   directory><file name> (or one of its components): check to ensure
+   that the path and file name are correct and that all required libraries are
+   available.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT. We are researching
+this problem and will post new information here as it becomes available.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWin3xSearch kbWinNT310Search kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1; :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

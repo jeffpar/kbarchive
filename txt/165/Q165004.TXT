@@ -1,0 +1,91 @@
+DOCUMENT:Q165004  10-AUG-2001  [winnt]
+TITLE   :NTVDM Support for Compaq Financial Keyboard Scan Codes
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardwarekbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Some of the scan codes on the Compaq financial keyboard do not work in a Windows
+NT virtual machine.
+
+CAUSE
+=====
+
+The numeric keypad of the Compaq financial keyboard is different than the keypad
+on a typical 101 or 102 key enhanced keyboard. For example, the scan code 0x7c
+cannot be used from a terminate and stay resident (TSR) application via
+Interrupt 9. This is because of the way the scan code sets were defined in a
+Windows NT virtual machine.
+
+RESOLUTION
+==========
+
+Obtain the hotfix mentioned below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+   Typical Keypad      Compaq Financial
+   -----------------   --------------------
+   NL  /   *   -       NL   /   *     -
+   7   8   9   +       7    8   9     +
+   4   5   6   +       4    5   6     Nul
+   1   2   3   Enter   1    2   3     Enter
+   0   0   .   Enter   0    00  000   Enter
+
+The differences are:
+
+   Normal Keypad   Compaq Financial   Changes
+   -------------   ----------------   -------
+   "+"             "+"                dimensions
+                   "Nul"              scancode 0x7e
+                   "0"                scancode 0x7c
+   "0/Insert"      "00"               label and dimensions
+   "./Suppr"       "000"              label only
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbHardware kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

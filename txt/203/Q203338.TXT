@@ -1,0 +1,78 @@
+DOCUMENT:Q203338  10-AUG-2001  [winnt]
+TITLE   :16-Bit Apps Fail if Names Longer Than 8.3 Naming Convention
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Client Services for NetWare (CSNW) or the IntranetWare Client with
+Microsoft Windows NT Workstation 4.0, and you attempt to access 16-bit
+applications on a NetWare Server in Bindery mode, the applications fail to
+start. This behavior occurs if the path to the executable file from the drive
+mapping contains folder names that are longer than allowed by the 8.3 naming
+convention.
+
+For example, the following path fails
+
+   \\Server\Exchange5.0\Windowsnt\Setup.exe
+
+while this path succeeds:
+
+   \\Server\Exch5.0\Winnt\Setup.exe
+
+With CSNW, when the path is too long, you receive the following error message:
+
+   Path not found
+
+With the IntranetWare Client, you receive this error message:
+
+   Invalid path
+
+
+WORKAROUND
+==========
+
+To work around this behavior, rename the folders on the server to conform to the
+8.3 naming convention, or map the drive to the application so that file names
+longer than allowed by the 8.3 naming convention are not in the path.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT Workstation
+version 4.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

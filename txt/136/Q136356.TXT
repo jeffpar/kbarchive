@@ -1,0 +1,64 @@
+DOCUMENT:Q136356  08-NOV-2001  [homegame]
+TITLE   :Pressing F4 and Dragging Mouse Causes Screen Corruption
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fury 3 for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+*********************************************************************
+**                           - WARNING -                           **
+**     THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN       **
+**     CONFIRMED OR TESTED BY MICROSOFT. USE ONLY                  **
+**     WITH DISCRETION.                                            **
+*********************************************************************
+
+SYMPTOMS
+========
+
+Dragging the mouse across the screen after pressing the F4 key causes screen
+corruption. This behavior has been noticed while using the Hercules Dynamite P
+video card.
+
+RESOLUTION
+==========
+
+Exit and restart Windows.
+
+Testing has confirmed that this conflict only occurs when running Fury3 in
+Windows 3.x. It is primarily an issue with Win32S, and is resolved in Windows
+95.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 fury 3 fury-3 Fury3 multi media multi-media
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbFury3
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

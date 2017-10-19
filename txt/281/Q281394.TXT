@@ -1,0 +1,129 @@
+DOCUMENT:Q281394  08-MAY-2002  [iis]
+TITLE   :ASP Parses Request Collection Name Incorrectly
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ASP parses the Request collection name incorrectly if the name contains 
+lowercase extended ASCII characters, such as "o" (with umlaut).
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Windows NT service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        Time      Version         Size   File name     Platform
+   -------------------------------------------------------------------
+   02/08/2001  02:49p    4.2.758.1    214,544   Adsiis.dll     x86
+   02/08/2001  02:49p    4.2.758.1    330,672   Asp.dll        x86
+   02/08/2001  02:48p    4.2.758.1     55,904   Httpodbc.dll   x86
+   02/08/2001  02:49p    4.2.758.1     98,912   Iischema.dll   x86
+   02/08/2001  02:47p    4.2.758.1     63,472   Iislog.dll     x86
+   02/08/2001  02:47p    4.2.758.1    185,792   Infocomm.dll   x86
+   02/08/2001  02:47p    4.2.758.1     29,520   Iscomlog.dll   x86
+   02/08/2001  02:48p    4.2.758.1     38,256   Ssinc.dll      x86
+   02/08/2001  02:48p    4.2.758.1     25,360   Sspifilt.dll   x86
+   02/08/2001  02:48p    4.2.758.1    229,024   W3svc.dll      x86
+   02/08/2001  02:48p    4.2.758.1     88,032   Wam.dll        x86
+
+   02/08/2001  02:50p    4.2.758.1    307,984   Adsiis.dll     Alpha
+   02/08/2001  02:50p    4.2.758.1    552,720   Asp.dll        Alpha
+   02/08/2001  02:49p    4.2.758.1     89,872   Httpodbc.dll   Alpha
+   02/08/2001  02:50p    4.2.758.1    107,280   Iischema.dll   Alpha
+   02/08/2001  02:48p    4.2.758.1    112,912   Iislog.dll     Alpha
+   02/08/2001  02:48p    4.2.758.1    305,424   Infocomm.dll   Alpha
+   02/08/2001  02:48p    4.2.758.1     46,352   Iscomlog.dll   Alpha
+   02/08/2001  02:49p    4.2.758.1     60,688   Ssinc.dll      Alpha
+   02/08/2001  02:49p    4.2.758.1     39,696   Sspifilt.dll   Alpha
+   02/08/2001  02:49p    4.2.758.1    384,784   W3svc.dll      Alpha
+   02/08/2001  02:49p    4.2.758.1    150,288   Wam.dll        Alpha
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+4.0.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior:
+
+1. Paste the following ASP script into an ASP file and name it Post.asp:
+   <%
+    for each Item in Request.Form
+      Response.Write("Name: " & Item & " -- ")
+      Response.Write("Value: " & Request.Form(Item))
+      Response.Write("<br>")
+    Next
+   %>
+   <FORM METHOD="POST" ACTION="post.asp" id=form1 name=form1>
+    <INPUT type="submit" value="Submit" id=submit1 name=submit1>
+    <INPUT type="text" id=CBGero (with umlaut) name=CBGero (with umlaut) value=192>
+   </FORM>
+
+2. Browse to the page, type "195" (without the quotation marks) in the text box
+   to the right of the Submit button, and then click Submit.
+
+The return is "Name: CBGero (with umlaut) -- Value:" instead of "Name: CBGero (with umlaut) -- Value: 195".
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

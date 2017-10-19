@@ -1,0 +1,56 @@
+DOCUMENT:Q103955  30-JUL-2001  [crossnet]
+TITLE   :Overview: SMB Structure is Standard Vehicle for Requests
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+The redirector's primary function is to format remote requests so that
+they can be understood by a remote station (such as a file server) and
+send them on their way through the network.
+
+The redirector uses the server message block (SMB) structure as the
+standard vehicle for sending these requests. The SMB is also the
+vehicle by which the remote station returns responses to redirector
+requests.
+
+Each SMB contains a header consisting of the command code (which
+specifies the task that the redirector wants the remote station to
+perform) and several environment and parameter fields (which specify
+how the command is to be carried out).
+
+In addition to the SMB header, the last field in the SMB may contain
+up to 64K of data to be sent to the remote station.
+
+SMB structure, environment, commands and associated protocols are
+documented in the publications below.
+
+REFERENCES
+==========
+
+Microsoft Networks/OpenNET File Sharing Protocol, V 1.9
+Microsoft Networks SMB File Sharing Protocol Extensions, V 2.0
+Microsoft Networks SMB File Sharing Protocol Extensions, V 3.0
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

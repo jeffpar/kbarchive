@@ -1,0 +1,58 @@
+DOCUMENT:Q74047  23-NOV-1999  [msdos]
+TITLE   :How to Boot a PS/1 from a Floppy or Fixed Disk
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:4.0,4.01,4.01a,5.0,5.0a,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 4.0, 4.01, 4.01a, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If your IBM PS/1 machine is configured to boot from the ROM, you can reconfigure
+the machine to boot from the floppy or fixed disk by following the procedure in
+this article.
+
+MORE INFORMATION
+================
+
+While cold booting the computer, hold down both buttons of the mouse until the
+computer reads the floppy disk drive. If the mouse is disabled, use the
+ALT+PRINT SCREEN key combination while starting the computer until you see the
+floppy disk drive light up.
+
+If ALT+PRINT SCREEN doesn't work, try CTRL+PRINT SCREEN.
+
+NOTE: Some PS/1 machines will still run the IBM Shell when you boot.
+
+For more information, see pages 80-82 in the "IBM PS/1 User's Guide," page 203 of
+the "MS-DOS 6.0 User's Guide," or page 183 of the "MS-DOS 6.22 User's Guide."
+
+Additional query words: 6.22 4.00 5.00 5.00a 6.00 6.20 Users 3.0
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:4.0,4.01,4.01a,5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

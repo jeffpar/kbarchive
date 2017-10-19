@@ -1,0 +1,110 @@
+DOCUMENT:Q237716  19-NOV-1999  [homegame]
+TITLE   :NFL Fever 2000: User Interface Text Is Illegible
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NFL Fever 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft NFL Fever 2000, the user interface text may be
+illegible.
+
+CAUSE
+=====
+
+This behavior can occur if the fonts used in the NFL Fever 2000 user interface
+are not installed properly during Setup.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Quit NFL Fever 2000.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Fonts.
+
+4. Right-click Trebuchet MS, click Delete, and then click Yes.
+
+5. Repeat step 4 for each of the following fonts:
+
+    - Trebuchet MS Bold
+    - Trebuchet MS Bold Italic
+    - Trebuchet MS Italic
+
+6. Close the Fonts window, and then close Control Panel.
+
+7. Insert the NFL Fever 2000 CD-ROM into your CD-ROM drive. Press and hold down
+   the SHIFT key as you insert the CD-ROM to prevent NFL Fever 2000 from
+   starting automatically.
+
+8. Double-click the My Computer icon on the desktop.
+
+9. Right-click the Football (CD-ROM drive) icon, and then click Explore.
+
+10. Double-click the Game folder.
+
+11. In the right pane, click to select the Trebuc.ttf font file.
+
+12. Press and hold down the CTRL key as you click to select each of the
+   following font files:
+
+    - Trebucbd.ttf
+    - Trebucbi.ttf
+    - Trebucit.ttf
+
+13. On the Edit menu, click Copy.
+
+14. Close all open windows on the desktop.
+
+15. Click Start, point to Settings, and then click Control Panel.
+
+16. Double-click Fonts.
+
+17. On the Edit menu, click Paste.
+
+18. Close the Fonts window, and then close Control Panel.
+
+19. Restart the computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft NFL Fever 2000,
+version 1.0.
+
+Additional query words: 1.00 msgame nflfever nfl2k football cannot read unreadable corrupt damaged
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame 
+Technology        : kbGamesSearch kbNFLFever2000 kbNFLSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

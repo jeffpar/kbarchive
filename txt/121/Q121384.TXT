@@ -1,0 +1,73 @@
+DOCUMENT:Q121384  27-JUL-2001  [sms]
+TITLE   :Eight or More Clauses Causes Query Execution Error
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In Systems Management Server version 1.0, when you attempt to run a query
+consisting of eight or more clauses, the following error message appears in the
+Query Results dialog box:
+
+   Query Execution Error
+
+In Systems Management Server version 1.2, the following error message may
+appear:
+
+   The specified query is too complex. This query exceeds SQL Server's 8 table
+   limit. You might be to simplify this query by removing AND clauses.
+
+CAUSE
+=====
+
+This problem occurs because of the 16-table limit from SQL Server. Querying
+eight or more clauses calls eight references to the particular table as well as
+eight instances of the machine data table, thus reaching the 16- table limit.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 1.0.
+
+This problem was corrected in Systems Management Server version 1.1.
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 1.2.
+
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbnetwork smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS120
+Version           : winnt:1.0,1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q134706  17-DEC-2000  [win95x]
+TITLE   :Error Message: The Font File May Be Damaged
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are adding TrueType fonts to Windows 95, you may receive the following
+error message:
+
+   Unable to install the <fontname> (TrueType) font. The font file may be
+   damaged.
+
+   Check with your font vendor about obtaining a new file.
+
+CAUSE
+=====
+
+This error can occur if the TrueType font file is damaged, or if you have
+reached the maximum number of TrueType fonts that can be installed in Windows
+95.
+
+RESOLUTION
+==========
+
+Replace the damaged font file, or remove one or more installed TrueType fonts.
+
+MORE INFORMATION
+================
+
+You can install a maximum of approximately 1000 TrueType fonts in Windows 95.
+For additional information about the maximum number of TrueType fonts in Windows
+95, please see the following article in the Microsoft Knowledge Base:
+
+   Q131943 TrueType Font Limits in Windows 95
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

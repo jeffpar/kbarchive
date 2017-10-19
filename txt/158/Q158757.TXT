@@ -1,0 +1,101 @@
+DOCUMENT:Q158757  24-MAR-2000  [foxpro]
+TITLE   :FIX: TabPicture Property of SSTab Control Gives an OLE Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbActiveX kbvfp500bug kbvfp600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the TabPicture property of the SSTab control, the following error
+message appears:
+
+   OLE error code 0x8002000e: Invalid number of parameters
+
+The TabPicture property set the bitmap or icon so that it appears on the
+specified tab of an SSTab control.
+
+WORKAROUND
+==========
+
+Use the Tab property to set the current tab. Use the Picture property to set the
+graphic you want to display:
+
+   ThisForm.Olecontrol1.Object.Tab = 1
+      ThisForm.Olecontrol1.Object.Picture = LoadPicture(Home()+"fox.bmp")
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in FoxPro 5.0a and 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Place an OLE Container Control on the form.
+
+3. From the Insert Object dialog box, click Insert Control.
+
+4. From the Object Type list, select SSTab Object. (If you have Visual Basic
+   installed, you may see it listed as Sheridan Tabbed Dialog Control.)
+
+5. Place a command button on the form.
+
+6. Add the following code to the click event of the command button:
+
+   ThisForm.Olecontrol1.Object.TabPicture(1) = ;
+            LoadPicture(Home()+"fox.bmp")
+
+7. Save and run the form.
+
+8. Click the command button.
+
+   If you want to use the workaround, replace the code in step 6 with the example
+   code in the WORKAROUND section.
+
+REFERENCES
+==========
+
+Visual FoxPro 5.0 Help file, version 4.005.000; Search on: "SSTab Control,"
+Topic: "ActiveX Controls Overview."
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbActiveX kbvfp500bug kbvfp600fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

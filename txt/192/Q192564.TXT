@@ -1,0 +1,68 @@
+DOCUMENT:Q192564  01-MAR-2002  [vbwin]
+TITLE   :INFO: Set Winsock Control RemoteHost and RemotePort for UDP
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a UDP message is received by a Winsock control, the RemoteHostIP property
+is set to the IP address of the remote machine, and the RemotePort property is
+set to the IP port of the remote UDP application. The previous properties values
+are overwritten.
+
+This could create a problem if the user was not expecting data on that port from
+a different RemoteHostIP. Attempts to call the SendData method without setting
+these two properties to the appropriate values might send the data to an
+unplanned recipient.
+
+Whenever a UDP socket is being used, you should always reset the RemoteHostIP and
+RemotePort properties to your own known values before calling the SendData
+method.
+
+MORE INFORMATION
+================
+
+This is by design. At the Winsock layer, the sendto API requires a sockaddr
+structure of the remote UDP peer to send the message to, and the recvfrom API
+always gets a sockaddr structure for the remote UDP peer. The Winsock control
+internally uses the same sockaddr structure in both sendto and recvfrom API. As
+UDP is a connectionless protocol, it is possible that one UDP peer could receive
+a UDP message from a third machine unexpectedly. Therefore, it is important to
+reset the RemoteHostIP and RemotePort properties to your own known values before
+calling the SendData method.
+
+Additional query words: kbVBp500 kbCtrl kbNetGrp kbNetwork kbWinsock kbNTOS400 kbWinOS95 kbWinOS98 kbAPI kbdss kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : :5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

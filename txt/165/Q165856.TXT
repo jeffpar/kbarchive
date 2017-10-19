@@ -1,0 +1,67 @@
+DOCUMENT:Q165856  27-OCT-2000  [exchange]
+TITLE   :XCLN: Messages Dragged from Client to Desktop Overlap
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,8.01; Win95:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Client for Windows 95, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Outlook 97, version 8.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you move multiple messages from Microsoft Exchange Client or Outlook to the
+Windows NT or Windows 95 desktop using a drag-and-drop operation, the moved or
+copied messages appear on top of one another on the desktop. Also, during the
+copy operation, while the cursor is over the Exchange Client window, it appears
+as the "normal select" cursor and not a "busy" or "working in background"
+cursor.
+
+RESOLUTION
+==========
+
+There is currently no means of changing the behavior of the cursor during the
+copy/move operation. To prevent copied messages from overlapping on the
+desktop:
+
+ - Using a drag-and-drop operation, manually arrange the messages.
+
+-OR-
+
+ - Have Windows NT or Windows 95 arrange the messages for you; right-click the
+   open desktop, select Arrange Icons, and then select one of the available
+   commands (by Name, by Type, Auto Arrange, and so on).
+
+NOTE: This problem does not occur when you move messages to a folder on the
+desktop. In this case, the folder arranges the messages according to whatever
+properties have been set on the folder.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3 kbOutlook801 kbExchange400NT kbExchange500NT
+Version           : WINDOWS:4.0,5.0,8.01; Win95:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

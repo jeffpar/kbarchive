@@ -1,0 +1,68 @@
+DOCUMENT:Q182065  14-MAR-2000  [sna]
+TITLE   :SNA Client Traps When MMC Snap-in Is Chosen During Installation
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows NT client for SNA Server traps when you open Microsoft Management
+Console (MMC). This problem occurs when the SNA MMC Snap-in is the only option
+chosen during SNA client installation.
+
+CAUSE
+=====
+
+SNA Server Manager was not chosen during SNA client installation, causing the
+trap to occur when you open the Microsoft Management Console window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0. This
+problem was corrected in the latest SNA Server version 4.0 U.S. Service Pack.
+For information on obtaining this Service Pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+The SNA Setup has been modified to check whether SNA Manager will be installed.
+If MMC will be installed and SNA Manager has not been selected, the user will be
+returned to the Options dialog box.
+
+Additional query words: snammc
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

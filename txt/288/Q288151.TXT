@@ -1,0 +1,71 @@
+DOCUMENT:Q288151  08-AUG-2001  [winnt]
+TITLE   :Shortcuts in Startup Group Do Not Run in Windows NT Workstation
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to a domain where you are not a domain administrator or a member
+of the Administrator group, you may find that the shortcuts in the Startup group
+do not work. The following error message may appear when you type a password:
+
+   Incorrect password or unknown user name for \\LocalComputerName\c$
+
+CAUSE
+=====
+
+This behavior can occur if an administrator creates shortcuts and places them in
+the Default User profile and All Users profile folders.
+
+RESOLUTION
+==========
+
+To resolve this behavior, log on as a domain user or local user, and then delete
+and recreate the shortcuts in the Startup group.
+
+WORKAROUND
+==========
+
+To work around this behavior, log on to the group by using the username and
+password for the domain administrator or local administrators account.
+
+MORE INFORMATION
+================
+
+If you start Task Manager from the %Windir%\System32 folder, no error message
+appears. You also can start other Windows programs directly from their
+executable files.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

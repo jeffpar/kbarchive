@@ -1,0 +1,73 @@
+DOCUMENT:Q156497  25-MAR-2002  [win95x]
+TITLE   :Duplicate Print Output on PC-LAN Server from Windows 95 Client
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork kbpolicy kbprint win95 kbPrintingkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print from a Windows 95 workstation to a shared printer on an IBM
+PC-LAN (PCLP) peer print server, print jobs may randomly be printed twice.
+
+CAUSE
+=====
+
+When you print to SMB-based servers that use the Core SMB dialect, the Microsoft
+Client for Microsoft Networks (VRedir) does not correctly initialize the Spool
+Header Size and Spool Mode fields in the Open Spool File SMB command. Although
+other networking products (including Microsoft's) ignore these fields, the IBM
+PC-LAN peer print server uses the values in these fields as described in the SMB
+specifications. When these fields are not correctly initialized, the PC-LAN
+print server may randomly print the submitted job twice.
+
+This symptom does not occur when you print from Windows NT workstations, or when
+you are using the Windows 95 real-mode client (Net.exe) to connect to the PC-LAN
+peer print server.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbpolicy kbprint win95 kbPrinting kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

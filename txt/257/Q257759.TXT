@@ -1,0 +1,100 @@
+DOCUMENT:Q257759  13-JUN-2001  [sna]
+TITLE   :TN5250 Service Ends Unexpectedly When Client Disconnects
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbSNA400sp4fix kbSNA400PreSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TN5250 Service may end unexpectedly when a TN5250 client disconnects. This
+problem occurs when you use the WRQ Reflections TN5250 client, although it can
+also occur with other client emulators.
+
+When the failure occurs, a Ddrwtsn32.log file indicates that a hard-coded
+breakpoint occurred. For example:
+
+   Application exception occurred:
+   App: obj\i386\tn5250.exe (pid)
+   When: (date) (time)
+   Exception number: 80000003 (hardcoded breakpoint)
+
+   [...]
+
+   State Dump for Thread Id 0x1b9
+
+   eax=00000000 ebx=0110fc74 ecx=00000085 edx=0110fbe8 esi=78022b9a edi=0110fbea
+   eip=77f762e8 esp=0110fb14 ebp=0023c951 iopl=0 nv up ei pl nz ac po nc
+   cs=001b ss=0023 ds=0023 es=0023 fs=003b gs=0000 efl=00000216
+
+   [...]
+   function: DbgBreakPoint
+   FAULT ->77f762e8 cc int 3
+   77f762e9 c3 ret
+   77f762ea 8bc0 mov eax,eax
+
+   *--- Stack Back Trace ----*
+
+   FramePtr ReturnAd Param#1 Param#2 Param#3 Param#4 Function Name
+   0023c951 00000000 00000000 00000000 00000000 00000000 ntdll!DbgBreakPoint
+   00000000 00000000 00000000 00000000 00000000 00000000 tn5250!nosymbols
+
+CAUSE
+=====
+
+A timing window can occur during client shutdown processing when an outstanding
+TEST_RTS_AND_POST verb is cancelled and TP_ENDED is called twice in error. When
+the second TP_ENDED returns an error, the TN5250 Service may force a hard-coded
+breakpoint, causing the process to end.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft SNA Server version
+4.0, 4.0 SP1, 4.0 SP2 and 4.0 SP3.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

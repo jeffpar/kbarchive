@@ -1,0 +1,71 @@
+DOCUMENT:Q85182  25-OCT-1999  [win95x]
+TITLE   :Bridged Novell Idle-Time Disconnect Hangs Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are running Windows, and are connected to a bridged Novell network,
+leaving the machine idle may result in the following error message:
+
+   Error reading from network
+
+At this point the machine will probably be locked up, and you will have to reboot
+the computer. If you encounter this error message outside of Windows, you will
+likely be able to choose Abort from the error message options, save your work,
+and reconnect to the network. This is not possible when the network disconnects
+when Windows 3.1 is running.
+
+This problem is likely caused by using Watchdog, provided with Novell NetWare
+version 3.11.
+
+MORE INFORMATION
+================
+
+If you are using a bridged network and leave the system inactive for longer than
+15 to 20 minutes, Watchdog will disconnect the bridge. When this happens,
+Windows 3.1 will hang.
+
+There is no way to turn watchdog off. The only solution is to set all of
+Watchdogs time-out settings to their maximum. This should allow the machine to
+sit idle for 15 hours before disconnecting from the network.
+
+For more information on configuring Watchdog, please contact Novell.
+
+The Watchdog product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 3.11 err msg 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

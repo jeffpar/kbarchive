@@ -1,0 +1,66 @@
+DOCUMENT:Q133731  17-DEC-2000  [win95x]
+TITLE   :Error Message: Cannot Run This Version of Windows...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Windows 95, you receive either of the following error
+message:
+
+   This version of Windows does not run on MS-DOS 6.x or earlier.
+
+   This version of Windows cannot run in MS-DOS version 7.0
+
+CAUSE
+=====
+
+Win.com has been added to the Setver table with a version parameter of less than
+7.00.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+   the F8 key, and then choose Command Prompt Only from the Startup menu.
+
+2. Type the following command, and then press ENTER:
+
+   setver win.com /d
+
+3. Restart your computer normally.
+
+
+======================================================================
+Keywords          : kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

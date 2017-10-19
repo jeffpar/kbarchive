@@ -1,0 +1,78 @@
+DOCUMENT:Q150917  27-JUL-2001  [sms]
+TITLE   :ODI Client Hangs on Client Setup
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The NetWare ODI SMS client stops responding on install. If the client is run in
+verbose mode (CLI_DOS /V), the client will stop at:
+
+    Setup Phase
+   SMS Network Type=6
+  ...
+   <<READING CONFIGURATION INFORMATION>>
+  ...
+   Novell
+   NetBios
+   NovellInfo
+
+
+CAUSE
+=====
+
+Interrupt 7a is disabled in the Net.cfg. By default INT7a is on, which allows
+applications to use interrupt 7Ah to access IPX services and to maintain
+compatibility with Netware v2.0a.
+
+Invdos.exe requires INT7a to be on.
+
+RESOLUTION
+==========
+
+Remove the following line from the client's Net.cfg file:
+
+   INT7a OFF
+
+Without that line, INT7a is set to ON.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

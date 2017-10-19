@@ -1,0 +1,109 @@
+DOCUMENT:Q172273  11-JAN-2001  [vbwin]
+TITLE   :HOWTO:Constants in OpenProcess API dsDesiredAccess Parameter
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0, 5.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The API text viewer included with Visual Basic 4.0 does not define the constants
+used in the OpenProcess API. The OpenProcess API is used to get a handle to a
+running process from a process ID. The existing samples in the Microsoft
+Knowledge Base define one of the possible constants, SYNCHRONIZE, but the other
+values may be of use in special situations.
+
+MORE INFORMATION
+================
+
+The constants are:
+
+PROCESS_ALL_ACCESS   =&H1F0FFF Specifies all possible access flags for
+            the process object.
+
+PROCESS_CREATE_THREAD   =&H2  Enables using the process handle in the
+            CreateRemoteThread function to create a thread in the process.
+
+PROCESS_DUP_HANDLE   =&H40 Enables using the process handle as either
+            the source or target process in the DuplicateHandle function to
+            duplicate a handle.
+
+PROCESS_QUERY_INFORMATION =&H400 Enables using the process handle in the
+            GetExitCodeProcess and GetPriorityClass functions to read
+            information from the process object.
+
+PROCESS_SET_INFORMATION =&H200   Enables using the process handle in the
+            SetPriorityClass function to set the priority class of the
+            process.
+
+PROCESS_TERMINATE =&H1  Enables using the process handle in the
+            TerminateProcess function to terminate the process.
+
+PROCESS_VM_OPERATION =&H8  Enables using the process handle in the
+            VirtualProtectEx and WriteProcessMemory functions to modify the
+            virtual memory of the process.
+
+PROCESS_VM_READ      =&H10 Enables using the process handle in the
+            ReadProcessMemory function to read from the virtual memory of
+            the process.
+
+PROCESS_VM_WRITE  =&H20 Enables using the process handle in the
+            WriteProcessMemory function to write to the virtual memory of
+            the process.
+
+SYNCHRONIZE    =&H100000 Enables using the process handle in any of the
+            wait functions to wait for the process to terminate.
+
+If you need to create a handle that is to be used for more than one type of
+access, you should add the desired access type parameters together. For example,
+to get a handle to use with WaitForSingleObject and GetExitCodeProcess, you
+would use:
+
+      hProcess = OpenProcess(PROCESS_QUERY_INFORMATION+SYNCHRONIZE,FALSE,pid)
+
+REFERENCES
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q129797 : HOWTO: Launch a Win32 Application from Visual Basic
+
+   Q150767 : HOWTO: Redirect Standard I/O of a Console Application
+
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400
+Version           : WINDOWS:4.0, 5.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

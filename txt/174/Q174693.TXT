@@ -1,0 +1,66 @@
+DOCUMENT:Q174693  22-DEC-1999  [exchange]
+TITLE   :XADM: Exchange Organization Name Is Case Sensitive
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Exchange organization name is case sensitive when you reinstall Exchange
+Server during disaster recovery, but is not case sensitive with regard to
+directory replication addressing.
+
+MORE INFORMATION
+================
+
+When viewing information about the organization name and directory replication,
+case sensitivity of the organization name is unimportant.
+
+If the only difference between the organization names is the case- sensitivity,
+all parts of directory service replication will work correctly. If a replication
+problem occurs because the case of the organization or site name differs, it is
+a bug and should be treated as such. Case sensitivity of the organization name,
+regarding directory service replication, is not an issue. However, it is an
+issue regarding disaster recovery or restoring. For example, a server in an
+organization named Dynasty fails and must be restored, if Microsoft Exchange
+Server is reinstalled and the organization is named DYNASTY (uppercase), the
+store does start because of the mismatch (Dynasty versus DYNASTY).
+
+This is a constraint of the X.500 nomenclature in the information store. This can
+be avoided by reinstalling Exchange Server with the original organization name,
+Dynasty, for that restoration of that server. More information regarding
+disaster recovery can be found at the Microsoft World Wide Web site at
+http://www.microsoft.com/exchange/evalgd.htm.
+
+Additional query words: Organization case-sensitivity replication crash
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

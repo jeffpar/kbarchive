@@ -1,0 +1,56 @@
+DOCUMENT:Q107376  30-OCT-1999  [win3x]
+TITLE   :Intel SatisFAXtion 100 & 400E Are Class 1 and CAS Compatible
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Intel SatisFAXtion 100 fax modem as either a Class 1 or CAS
+modem type with Microsoft At Work PC Fax.
+
+MORE INFORMATION
+================
+
+The Intel SatisFAXtion 100 and 400E fax modems are CAS only when either
+CASMGR.EXE or CASMODEM.EXE (provided by Intel) is installed in the AUTOEXEC.BAT
+file. If neither driver is installed, the fax modem becomes Class 1 compatible,
+which is the desired configuration for use with Microsoft At Work PC Fax.
+
+The advantage to Class 1 is that Microsoft At Work PC Fax can control more
+aspects of the fax modem and allow binary file transfer.
+
+CASMGR is a driver supplied by Intel for communicating between MS-DOS and the CAS
+hardware on the fax modem.
+
+Additional query words: 3.11 CLASS1 100 EFAX satisfaction 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

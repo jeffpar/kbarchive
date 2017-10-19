@@ -1,0 +1,60 @@
+DOCUMENT:Q308953  29-JAN-2002  [frontpg]
+TITLE   :FP: Hover Buttons Appear Dimmed on Web Pages
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 2000 
+ - Microsoft FrontPage 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft FrontPage, when you preview a Web page that contains hover buttons,
+one or more of the hover buttons may appear dimmed and may not link as
+expected.
+
+NOTE:These symptoms also occur if you view the Web page in a browser.
+
+CAUSE
+=====
+
+This behavior can occur if the Fphover.class file points to an invalid
+directory.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the HTML code to reflect the correct Fphover.class
+path.
+
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage2002 kbFrontPage2000Search kbFrontPage2002Search kbZNotKeyword5
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

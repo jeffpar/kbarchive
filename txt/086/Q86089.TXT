@@ -1,0 +1,51 @@
+DOCUMENT:Q86089  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Add Gateway Brings Up All Gateways
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+In the Microsoft Schedule+ for Windows Administration program, bringing up
+the Add Gateways window from the Distribution Settings window will show all
+the gateways installed in the postoffice even if there are no compatible
+scheduling programs on the other side of these gateways. Distribution
+Settings can be chosen from the Administration menu. Adding any of these
+gateways will enable SCHDIST to begin sending updates that the gateway does
+not understand. This may cause the gateway to start displaying error
+messages.
+
+This feature allows for future compatibility with foreign scheduling
+systems such as IBM PROFS without requiring an update of the Schedule+
+Administration program. To determine if there is compatibility, check with
+the maker of the foreign scheduling system or with a Microsoft Messaging
+Specialist.
+
+Additional query words: 1.00 SCHDADMIN Fax PROFS SMTP X400 MCI AT&T Connection schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

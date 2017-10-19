@@ -1,0 +1,56 @@
+DOCUMENT:Q163797  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Lock a SourceSafe Database
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe 5.0 allows the SourceSafe Administrator to lock the database
+so that no other users can login. This does not affect users who are already
+logged in. This article explains how an Administrator can lock out users.
+
+MORE INFORMATION
+================
+
+To lock a Visual SourceSafe 5.0 database perform the following steps from the
+Visual SourceSafe Admin tool.
+
+On the Tools menu, click Lock SourceSafe database.
+
+A dialog box warns you that there are users currently logged in. Once the
+SourceSafe database is locked, only users who try to login after the database
+has been locked are affected. Users who are currently logged in are not logged
+out.
+
+Additional query words: Admin Lock Login Logged
+
+======================================================================
+Keywords          : kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,49 @@
+DOCUMENT:Q71616  30-JUL-2001  [homegame]
+TITLE   :Windows Entertainment Pack 1 Will Not Set Up
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If you are experiencing problems setting up the Windows Entertainment Pack 1
+(WEP 1), check the following:
+
+1. Boot the system clean (boot with your DOS system floppy disk). The WEP does
+   not require Windows to be in protected mode (standard or enhanced). As a
+   result, by simply booting with a DOS floppy disk, you will eliminate any TSR
+   or memory-resident utilities that load on boot.
+
+2. Check for available disk space. The WEP requires 70K of hard disk space to
+   load. Also, the WEP copies two files, WINBINXZ.EXE and WEPSETUP.INF to the
+   WINDOWS directory to run the Setup program. These files are deleted after
+   Setup is completed, but the Windows directory needs enough disk space to hold
+   these two files.
+
+3. If all else fails, decompress the WEP files using the Expand utility
+   (EXPAND.EXE) found on Disk 2 of your Windows 3.00 disks, onto your hard drive
+   and build your own program group and icons.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

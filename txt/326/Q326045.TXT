@@ -1,0 +1,74 @@
+DOCUMENT:Q326045  07-AUG-2002  [sms]
+TITLE   :SMS: Distribution Mgr. Does Not Correctly Discover Package Size
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP3,2.0 SP4
+OPER/SYS:
+KEYWORDS:kbtool kbsms200 kbSoftwareDist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP3, 2.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you change the standard "Location of stored packages" property to a
+specific drive letter, Systems Management Server (SMS) Distribution Manager does
+not correctly discover the package size. The package size has a value of 1
+kilobyte (KB).
+
+Excerpt from Distmgr.log File
+-----------------------------
+
+Start adding package SR30002F...  
+Package SR30002F uses the compressed copy of the source directory.  
+Package SR30002F doesn't have a compressed copy of the source directory, starting the compression.  
+The size of package SR30002F is 1 KBytes  
+...
+The compressed size of package SR30002F is 19821 KBytes  
+
+Run the following query, and then check the SourceSize and SourceCompSize values
+for the package:
+
+   select PkgID, SourceSize, SourceCompSize from SMSPackages
+
+PkgID    SourceSize  SourceCompSize 
+-------- ----------- -------------- 
+SR30002F 1           19821          
+
+The same values appear in the package status node of the SMS Administrator
+Console.
+
+MORE INFORMATION
+================
+
+You can change the standard "Location of stored packages" property under the
+System Management Server\Site Database\Site Code\Site Settings\Component
+Configuration\Software Distribution branch.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbsms200 kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP3 kbSMS200SP4
+Version           : :2.0,2.0 SP3,2.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

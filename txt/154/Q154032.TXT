@@ -1,0 +1,79 @@
+DOCUMENT:Q154032  01-APR-1999  [exchange]
+TITLE   :XADM: Error 1105 - EcBadVersion Occurs When Restoring Offline St
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you restore an offline store from a Microsoft Exchange Server 4.0 computer,
+with or without Microsoft Exchange Server Service Pack 1 (SP1) installed, onto a
+Microsoft Exchange Server 4.0 computer with Microsoft Exchange Service Pack 2
+(SP2) installed, you will receive the following error:
+
+   1087 The information store was restored from an offline backup. Run ISINTEG
+   -patch before starting the information store.
+
+   1005 Unable to start the Microsoft Exchange Information store. Error 1011
+
+When you run ISINTEG -patch, you will receive an EcBadVersion error.
+
+If the store was recovered from an online backup, the following events will be
+logged:
+
+   Unable to recover the database because error 0x00000451 occurred after a
+   restore operation.
+
+   Unable to initialize the Microsoft Exchange Information Store service. Error
+   1105.
+
+MORE INFORMATION
+================
+
+This is because a new version of Mdbrest.dll was provided with SP2. To
+workaround this problem, follow these steps:
+
+1. Rename Mdbrest.dll in the Exchsrvr\bin directory to Mdbrest.new.
+
+2. Copy Mdbrest.dll from a Microsoft Exchange Server version 4.0 with or without
+   SP1 (there was no change to this file in SP1) to the Exchsrvr\bin directory.
+
+3. If the store was recovered from an off-line backup you must run ISINTEG
+   -PATCH. This will update the store.
+
+4. Delete Mdbrest.dll and rename Mdbrest.new to Mdbrest.dll.
+
+5. Start the Microsoft Exchange Information Store.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

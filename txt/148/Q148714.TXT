@@ -1,0 +1,73 @@
+DOCUMENT:Q148714  20-FEB-2002  [winnt]
+TITLE   :Dr. Watson Error Installing Internet Information Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::1.0,3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 1.0 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you install the Internet Information Server on a Windows NT Server that has
+the Banyan Vines Client for NT installed, a Dr. Watson Exception error message
+appears.
+
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Remove the Banyon Vines client software. Use the command "setup/uninstall"
+   (without quotes) from the Banyan Vines Client for NT distribution media.
+
+2. Restart Windows NT Server.
+
+3. Install the TCP/IP protocol in Control Panel Network.
+
+4. Restart Windows NT Server.
+
+5. Make sure that the TCP/IP protocol is working properly. Use the TCP/IP
+   connectivity utilties, such as Ping, FTP and Telnet.
+
+6. If the TCP/IP protocol is working properly, install the Internet Information
+   Server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt 1.00 3.51 winnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbiisSearch kbiis100
+Version           : :1.0,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

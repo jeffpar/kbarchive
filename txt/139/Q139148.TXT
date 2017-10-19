@@ -1,0 +1,67 @@
+DOCUMENT:Q139148  08-NOV-2001  [homemm]
+TITLE   :Julia Child: How To Add Cookware To Shopping List
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The To Recipe section of Julia Child has two tabbed sections: Ingredients and
+Cookware. On the Ingredients tab, you can add recipe ingredients to the Shopping
+List by clicking Shopping List. However, on the Cookware tab, if you click
+Shopping List, the recipe ingredients are added to the list, but the Cookware is
+not.
+
+
+STATUS
+======
+
+Cookware information is not added to the Shopping List by design of the program.
+The Shopping List is designed to be accessed from the Ingredients tab and the
+Cookware tab, but clicking the Shopping List only adds Ingredients.
+
+WORKAROUND
+==========
+
+To add a Cookware item to the Shopping List, do the following:
+
+1. Go to the recipe and click Shopping List. This adds the recipe Ingredients to
+   the Shopping List and opens up the Shopping List.
+
+2. At the Shopping List window, click on Add Item.
+
+This opens a text box that allows you to enter cookware items and add them to
+that specific recipe, or add them to a Miscellaneous section in the Shopping
+List.
+
+Additional query words: kbhowto multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbJuliaChild
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

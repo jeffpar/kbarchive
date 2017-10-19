@@ -1,0 +1,67 @@
+DOCUMENT:Q159045  08-AUG-2001  [winnt]
+TITLE   :Error Message: Tape Drive Error Detected
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT and start Windows NT Backup, you may receive the
+following error message:
+
+   Tape Drive Error Detected
+   A SCSI tape device has been detected, but the tape driver has either not been
+   installed, or failed to start. Make sure that the appropriate driver has been
+   installed using the Tape Devices option in Control Panel.
+
+CAUSE
+=====
+
+Windows NT 4.0 cannot install SCSI tape drivers during Setup.
+
+RESOLUTION
+==========
+
+To install the tape driver, follow these steps:
+
+1. In Control Panel, double-click Tape Devices.
+
+2. Click OK in the New SCSI Tape Device Found dialog box.
+
+3. Click OK to close the Tape Devices dialog box.
+
+4. Restart Backup.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,75 @@
+DOCUMENT:Q71428  25-OCT-1999  [win95x]
+TITLE   :Network Pop-Up Message Hangs Standard, Real Mode Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Microsoft Windows 3.0 on a Microsoft LAN Manager 2.0 Enhanced (or
+100-percent compatible) network, it is possible to receive pop-up messages in
+the WinPopup display panel. However, if you run Windows in real or standard mode
+and close WinPopup, Windows stops responding (hangs) and the screen becomes
+corrupted if a network pop-up message is received.
+
+NOTE: This does not occur if you run Windows in 386 enhanced mode.
+
+CAUSE
+=====
+
+This problem occurs because NetPopup (the network message handler) attempted to
+display the message without being able to queue the message through WinPopup
+(the Windows message handler).
+
+WORKAROUND
+==========
+
+Reboot the computer and restart Windows, but do not close WinPopup if you are
+running in real or standard mode.
+
+MORE INFORMATION
+================
+
+If you attempt to create a permanent swapfile by running Windows in real mode
+and closing WinPopup, your system will hang if a pop-up message is received by
+the workstation. To avoid problems during the rare times you are creating or
+modifying a permanent swapfile, do not start the network.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows version 3.0.
+We are researching this problem and will post new information here as it becomes
+available.
+
+Additional query words: 3.0 3.00 win30 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

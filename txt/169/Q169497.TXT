@@ -1,0 +1,91 @@
+DOCUMENT:Q169497  17-JUL-2001  [visualc]
+TITLE   :PRB: "Another Application is Currently Using JET File..."
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.0 4.1 4.2 5.0 6.0
+OPER/SYS:
+KEYWORDS:kbDAOsearch kbDatabase kbMFC kbODBC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install DAO components, the following error message may appear:
+
+   Another application is currently using JET file, close all applications and
+   continue.
+
+CAUSE
+=====
+
+This error message can have one of following causes:
+
+ - Another application has opened one of the DAO/Jet DLL's. When a DLL is loaded
+   in memory, Windows treats the file on the disk it was loaded from as
+   read-only. This is by design.
+
+ - The read-only attribute of the file that is being updated has been turned on.
+
+RESOLUTION
+==========
+
+To resolve the first problem, if one of the DLL's that DAO is trying to update
+is loaded in memory, then shut down all of your applications and tell the setup
+program to continue. It is a good idea to perform a setup with all applications
+shut down for this very reason.
+
+The second problem is not as obvious because the setup program cannot distinguish
+between a file with a read-only attribute set and a file that is currently
+loaded into memory. The setup program will not identify the specific file(s)
+that have read-only turned on.
+
+Having the read-only flag set for DLL's is usually used as a low-level virus
+protection, but it can also hamper the operation of programs using those DLL's
+or attempting to upgrade them. From a DOS command prompt, go to the Windows
+directory and type:
+
+      attrib -r *.* /s
+
+You may encounter some files that cannot be set as read-only. As long as they are
+not EXE's or DLL's, it is not a problem.
+
+You may also want to go to the \Program Files\Common Files directory and perform
+the same procedure because DAO/Jet and other shared components are often
+installed there as well.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: kbvc400 kbvc410 kbvc420 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbDAOsearch kbDatabase kbMFC kbODBC kbVC 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : 4.0 4.1 4.2 5.0 6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

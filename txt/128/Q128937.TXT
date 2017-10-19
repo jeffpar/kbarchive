@@ -1,0 +1,81 @@
+DOCUMENT:Q128937  14-DEC-1999  [win95x]
+TITLE   :Printing Seems Slow on LANtastic-Shared Printer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are printing from a Windows-based application to a locally connected
+printer on a system running Artisoft LANtastic version 6.0, it may take a long
+time for the print job to finish.
+
+RESOLUTION
+==========
+
+Increase the Characters Per Second setting in the Resources section of
+LANtastic's Network Manager to print from a Windows-based application more
+quickly.
+
+To make changes to LANtastic's configuration, please refer to your LANtastic
+documentation or contact Artisoft Technical Support.
+
+
+MORE INFORMATION
+================
+
+When you print to a locally connected printer from a Windows-based application
+on a system running LANtastic version 6.0, all printing is carried out through
+the networking software. Print jobs are not sent directly to the printer port.
+This applies to Windows and Windows for Workgroups versions 3.1 and 3.11 running
+without Windows for Workgroups peer network functionality.
+
+You can configure LANtastic to specify how much relative CPU time is dedicated to
+non-server and server-related activities. This option is specified in the
+Characters Per Second parameter. LANtastic attempts to dedicate the necessary
+CPU resources to a particular print job to sustain the characters per second
+specified. When this setting is low (such as the default setting of 0) any
+application activity on the server will slow the printing process considerably.
+
+LANtastic is manufactured by Artisoft Inc., a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+REFERENCES
+==========
+
+LANtastic "Installation and Management Guide," pages 207-208 and pages 239-240
+
+
+Additional query words: 3.10 3.11 sluggish paused delayed
+
+======================================================================
+Keywords          : win31 
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

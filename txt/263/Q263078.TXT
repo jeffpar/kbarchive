@@ -1,0 +1,73 @@
+DOCUMENT:Q263078  06-AUG-2002  [winnt]
+TITLE   :DB5_setSingleValuedAttribute() Returns "Invalid Encoding (0)"
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool metadirectory MMS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following warning message may appear in the Genlogs file:
+
+   WRN_00 01a2 00/03/15 16:54:10.686 (DB5_setSingleValuedAttribute) Invalid
+   encoding (0) specified for attribute <XXXXXXX>, dn (null).
+
+CAUSE
+=====
+
+At some point in the past, the database contained an error (probably a syntactic
+error) in the schema definitions as defined in either the Db5attr.oid or
+Custom.oid file. An indeterminate number of records that contain these specific,
+malformed attributes were written into the directory. Subsequently, the server
+that is running Microsoft Metadirectory Services (in builds after build 261)
+caught these errors when the records were being rewritten, and performed the
+lookupFromOID process to determine the correct attribute encoding.
+
+RESOLUTION
+==========
+
+The warning message means that schema definition errors are being corrected as
+records are being rewritten. As a precaution, run the Chkoids.exe program to
+verify that the directory-based object identification (OID) definitions are
+correct.
+
+
+MORE INFORMATION
+================
+
+In Microsoft Metadirectory Services (MMS) 2.2, OID definitions are inspected and
+verified as they are accepted into the directory; incomplete or illegal
+definitions are immediately rejected. This enhanced checking should prevent
+"Invalid encoding" messages from appearing in MMS 2.2.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool metadirectory MMS 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

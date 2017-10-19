@@ -1,0 +1,85 @@
+DOCUMENT:Q247934  06-JAN-2000  [exchange]
+TITLE   :XADM: Events 1000 and 4096 Starting InterOrg Sync Tool
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Inter-organization synchronization does not occur and the following errors are
+written to the application Event Log when the Microsoft Exchange InterOrg Sync
+tool is started:
+
+   Event Type: Error
+   Event Source: Userenv
+   Event Category: None
+   Event ID: 1000
+   Date: 11/24/1999
+   Time: 11:51:52 AM
+   User: N/A
+   Computer: Computername
+   Description: Your profile was not successfully loaded, but you have been
+   logged on with
+   the default system profile. Please correct the problem and log off. (5)
+
+   Event Type: Warning
+   Event Source: _Exchange Inter-Org Synch
+   Event Category: None
+   Event ID: 4096
+   Date: 11/24/1999
+   Time: 11:51:55 AM
+   User: N/A
+   Computer: Computername
+   Description:
+   InterOrg: CConfigData::Initialize DAPIStart Alias/Display Name Generation
+   disabled. 80001010
+
+CAUSE
+=====
+
+The service is not starting with the Exchange Server service account.
+
+RESOLUTION
+==========
+
+Change the startup parameter of the Microsoft Exchange InterOrg Sync Tool
+service:
+
+1. In Control Panel, double-click Services, and then click the Microsoft
+   Exchange InterOrg Sync Tool service.
+
+2. Click Startup, change the Log On As option to This Account, and then specify
+   the Exchange Server service account and password.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

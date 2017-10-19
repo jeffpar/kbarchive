@@ -1,0 +1,87 @@
+DOCUMENT:Q130538  15-DEC-2000  [crossnet]
+TITLE   :DHCP-Enabled MS-DOS Clients Do Not Resolve Host Names
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LAN Manager, version 2.2c 
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you ping a host name from a Dynamic Host Configuration Protocol (DHCP)
+enabled LAN Manager for MS-DOS version 2.2c or Network Client for MS-DOS version
+3.0 client computer, the following error message may appear:
+
+   DGN0217: Remote name cannot be resolved
+
+NOTE: IPCONFIG returns the current configuration including the WINS server. If
+you ping a valid IP address, or use the NET VIEW or NET USE command, the
+operation is successful.
+
+CAUSE
+=====
+
+This problem occurs if the entry for the host name does not exist in the HOSTS
+file. LAN Manager for MS-DOS version 2.2c client and Network Client for MS-DOS
+version 3.0 can be WINS-enabled. When you ping a host name from a DHCP-enabled
+client, the order of name resolution should be as follows:
+
+1. Local host name
+
+2. HOSTS file
+
+3. DNS
+
+4. Local NetBIOS cache
+
+5. WINS server
+
+6. Broadcast
+
+However, NMTSR.EXE, which handles ping requests, is only using the HOSTS file. It
+does not check the local host name. A protocol trace may reveal that nothing was
+sent out on the network.
+
+WORKAROUND
+==========
+
+To work around this problem, enter the host names, including the local host
+name, in the HOSTS file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in LAN Manager for MS-DOS version
+2.2c and Network Client version 3.0 for MS-DOS.
+
+Additional query words: prodlm 2.20
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbLanManSearch kbNetworkClientSearch kbLanMan220c kbNetworkClient300DOS
+Version           : winnt:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

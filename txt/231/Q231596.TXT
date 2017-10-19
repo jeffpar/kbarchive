@@ -1,0 +1,72 @@
+DOCUMENT:Q231596  25-JUL-2001  [homegame]
+TITLE   :Midtown Madness: Game Controller Stops Functioning During Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhw kbui kbimu msgame kbFAQ kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Midtown Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Midtown Madness, your game controller may unexpectedly
+stop functioning.
+
+CAUSE
+=====
+
+This behavior can occur if your sound card does not support the audio options
+selected in the game.
+
+RESOLUTION
+==========
+
+To resolve this issue, reduce the sound quality in the game. To do this, follow
+these steps:
+
+1. On the Midtown Madness startup screen, click Options.
+
+2. Click Audio Options.
+
+3. Under Stereo Fx, click Mono.
+
+4. Under Sound Quality, click Low.
+
+5. Click Done.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Midtown Madness,
+version 1.0.
+
+Additional query words: 1.00 msgame joystick gaming device
+
+======================================================================
+Keywords          : kbhw kbui kbimu msgame kbFAQ kbHardware 
+Technology        : kbHomeProdSearch kbGamesSearch kbMidtownMadSearch kbMidtownMadness
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

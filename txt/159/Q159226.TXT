@@ -1,0 +1,71 @@
+DOCUMENT:Q159226  14-NOV-2000  [word97]
+TITLE   :WD:97 Ami Pro 3.x Style Sheets Open Blank in Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop kbualink97 kbtemplatekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Microsoft Word does not recognize Ami Pro style sheet files (.sty) as Ami Pro
+documents. For example, when you attempt to convert a style sheet and select the
+Ami Pro 3.0 converter in the Convert File dialog box, default (boilerplate) text
+contained in the style sheet is not converted and Word opens a blank document.
+
+CAUSE
+=====
+
+Ami Pro uses style sheet files to create new documents, similar to how Microsoft
+Word uses templates. Unlike Microsoft Word templates, however, the Ami Pro style
+sheet files are text-only files which contain instructions in a format similar
+to an .ini file. Because these files are not formatted as Ami Pro documents, the
+Ami Pro 3.0 converter opens a blank document.
+
+WORKAROUND
+==========
+
+To use the style sheet in Word, first create a document in Ami Pro based on the
+style sheet, save it as an Ami Pro document (.sam) and then open this document
+in Word.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q212265 WD: Additional Text Converters and Image Filters Available in
+   Microsoft Office Converter Pack
+
+Ami Pro is manufactured by Lotus, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: AmiPro conversion convert boilerplate default envelope letter memo template 8.0 word8 word97 converting translate translating transferring transfering textconv
+
+======================================================================
+Keywords          : kbinterop kbualink97 kbtemplate kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

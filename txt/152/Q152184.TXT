@@ -1,0 +1,127 @@
+DOCUMENT:Q152184  21-MAR-2001  [msnetwork]
+TITLE   :Connecting To MSN Questions & Answers
+PRODUCT :The Microsoft Network
+PROD/VER::2.6,5.0,5.1,5.2
+OPER/SYS:
+KEYWORDS:kbrefkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.6, 5.0, 5.1, 5.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the FAQs about connecting to MSN Internet Access.
+
+For more information, go to
+    http://supportservices.msn.com
+
+MORE INFORMATION
+================
+
+Q. What modem speed can I use when connecting to MSN?
+
+A. MSN dial-up access supports modem speeds from 28.8 to 56k BPS.
+
+In addition MSN has high speed access offerings. For more information go to
+    http://essentials.msn.com/access/. In the future, MSN will be accessible by
+satellite connection as well.
+
+Q. How can I tell at what speed I'm connected?
+
+A. After you connect, double-click the modem icon that is on the right side of
+your taskbar. This brings up a window that contains the Connection speed. If you
+are using OSR2, double click on the linked computer icon.
+
+Q. What is a roaming fee?
+
+A. During signup for MSN, you specified your home country. When you connect to
+MSN or the Internet in your home country, you are charged a standard connection
+fee based on your membership plan. If you travel outside of your home country
+and use an MSN supplied phone number to connect to MSN or the Internet in
+another country, you will be charged a roaming fee instead of the standard
+connection fee.
+
+Q. Why does my modem often drop its connection?
+
+A. If your modem often drops its connection, check your Modem Settings, Port
+Settings, and UART. For step-by-step instructions, please refer to the next
+three questions and answers.
+
+Q. How do I check my dial-up modem settings?
+
+A. To check your dial-up modem settings, follow these steps:
+
+   1. Double-click MY Computer icon on your desktop.
+   2. Double-click Dial Up Networking Right, click MSN Connection and click
+   Properties.
+   3. Click Configure.
+   4. Select the Connection tab.
+   5. Click Advanced.
+   6. Clear the Error Control check box.
+   7. Set Flow Control to Hardware.
+   8. Set Modulation Type should be set to Standard.
+
+Q. How do I check my dial-up modem port settings?
+
+A. To check your dial-up modem port settings, follow these steps:
+
+   1. Click Start, point to Settings, and then click Control Panel.
+   2. Double-click the System icon.
+   3. Select the Device Manager tab.
+   4. Open Ports on the list.
+   5. Double-click the Port your modem is on.
+   6. The Bits per Second should be set to 38400 if you have a 28800 modem and
+   115200 if you have a 56k modem.
+   7. Flow Control should be set to Hardware.
+
+Q. How do I check my UART?
+
+A. To check your UART, follow these steps:
+
+   1. Click Start, point to Settings, and then click Control Panel.
+   2. Double-click the Modems icon.
+   3. Click the Diagnostics tab.
+   4. Select the port your modem is on by clicking it.
+   5. Click More Information.
+   6. Here you will see the UART.
+
+The preferred UART is a 16550, because it handles higher speeds. If your UART is
+8250, make sure all modem settings are set to 9600, even if your modem is
+faster.
+
+Q. Can I force MSN to dial without stopping at the Sign In screen?
+
+A. It is not possible to avoid the Sign In screen when connecting to MSN.
+
+Q. How can I tell how long I have been connected?
+
+A. Double-click the modem icon that is on the right side of your taskbar.
+
+Additional query words: msn ivrfax fast tips kbimu
+
+======================================================================
+Keywords          : kbref kbfaq
+Technology        : kbMSNSearch kbMSN520 kbMSN510 kbMSN500 kbMSN260
+Version           : :2.6,5.0,5.1,5.2
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

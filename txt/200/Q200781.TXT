@@ -1,0 +1,68 @@
+DOCUMENT:Q200781  26-SEP-2001  [frontpg]
+TITLE   :FP: Save Results File Name Is Accessible from HTML Source
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you create a Web page that uses the FrontPage Save Results component to
+save the information from a form to a file on the server, it is possible to
+determine the name of the file by reading the HTML source and then opening the
+file remotely via the Web browser.
+
+MORE INFORMATION
+================
+
+All of the configuration information that FrontPage uses in the Save Results
+component is encoded directly into the HTML file, as opposed to a separate
+configuration file. Anyone viewing the HTML document with a browser capable of
+viewing the HTML source can read the configuration parameters of the Save
+Results component.
+
+As a result, when you create a Save Results component in an HTML file,
+unauthorized browsers can read the file name of the file containing your
+results.
+
+When you use a Save Results component to store sensitive information from a
+publicly viewable Web page, Microsoft recommends storing the results file in a
+hidden directory. Although storing files in the _private folder does not make
+them inaccessible, it prevents these pages or their contents from being found
+using search capabilities in FrontPage.
+
+Hidden directories are directories that begin with an underscore "_" character.
+These directories can be named anything such as "_vbscript", "_sample",
+"_hidden", and so on.
+
+Additional query words: 97 save results bot component file view
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

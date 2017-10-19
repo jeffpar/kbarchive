@@ -1,0 +1,79 @@
+DOCUMENT:Q129639  08-NOV-2001  [homekids]
+TITLE   :Kids: ErrMsg: Insufficient Resources to Run...
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbenv kberrmsgkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 1.1 
+ - Microsoft Fine Artist for Windows, version 1.1 
+ - Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+ - Microsoft Explorapedia series: World of People for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run one of the programs listed at the top of this article on a
+computer with 4 MB of installed RAM, the program's logo appears and then you may
+receive the following error message:
+
+   Insufficient resources to run Magic School Bus. Please quit one or more
+   Windows applications and try again. If problem persists, restart Windows and
+   try again.
+
+RESOLUTION
+==========
+
+To resolve this problem, disable Shadow RAM on your computer. For more
+information about how to disable shadow RAM, refer to your computer's user's
+guide, or contact your dealer.
+
+MORE INFORMATION
+================
+
+Additonal troubleshooting steps for Windows 3.x:
+
+1. Open Control Panel (usually located in the Main group).
+
+2. Double-click 386 Enhanced.
+
+3. Click Virtual Memory.
+
+4. Verify that there is a swapfile of at least 6,000 KB. If there is no swapfile
+   or a swapfile less than 6,000 KB, a larger swapfile will need to be created.
+
+   NOTE: For better performance, a permanent swapfile should be created.
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+Additional query words: 1.00 1.10 mskids msb msbss frizz avi doesn't run start splash msb-ss hang hung freeze crash frizzle magicbus magic_bus schoolbus random access memory shadowing insufficient resource win31 errmsg tad wm_writer wm_artist msbhb msb-hb liz can't play xplora mczee maggie max winmsbhuman msbhuman winmsbsolar msbsolar
+
+======================================================================
+Keywords          : kbenv kberrmsg kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbZNotKeyword2 kbKidsSearch kbCreativeWriter110 kbExplorapediaNature100 kbExplorapediaPeople100 kbFineArtist110 kbScholasticHuman kbScholasticSolar kbMSBSearch
+Version           : WINDOWS:1.0,1.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

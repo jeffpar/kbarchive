@@ -1,0 +1,130 @@
+DOCUMENT:Q74666  06-MAY-2001  [masm]
+TITLE   :BUG: A2154 If Structure Member in Control-Flow Directive
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0,6.0a,6.0b,6.1,6.10a,6.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b, 6.1, 6.10a, 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Macro Assembler (MASM) versions 6.0 and later provide several
+Control-Flow directives such as the .WHILE, .REPEAT, and .IF constructs. When
+structure members are accessed inside of these constructs, MASM may incorrectly
+generate the following error:
+
+   error A2154: syntax error on control-flow directive
+
+RESOLUTION
+==========
+
+The sample program below illustrates this problem. As a workaround, a register
+or a temporary variable may be used to hold the structure member, as
+demonstrated below in Sample Code 2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 6.0, 6.0a, 6.0b,
+6.1, 6.1a, and 6.11. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Sample Code 1
+-------------
+
+   ; Assemble options needed: none
+
+   .MODEL small, C
+
+   STRUCT1 STRUCT
+   SMember SWORD 0
+   STRUCT1 ENDS
+
+   .STACK 4096
+
+   .DATA
+   var1 STRUCT1 <0>
+
+   .CODE
+      .startup
+      mov bx, OFFSET var1
+
+      .WHILE ((STRUCT1 PTR [bx]).SMember != 1000)
+      inc (STRUCT1 PTR [bx]).SMember
+      .ENDW
+
+      .REPEAT
+      dec (STRUCT1 PTR [bx]).SMember
+      .UNTIL ((STRUCT1 PTR [bx]).SMember == 0)
+
+      .IF ((STRUCT1 PTR [bx]).SMember == 0)
+      nop
+      .ENDIF
+
+      .exit 0
+   END
+
+Sample Code 2
+-------------
+
+   ; Assemble options needed: none
+
+   .MODEL small, C
+
+   STRUCT1 STRUCT
+   SMember SWORD 0
+   STRUCT1 ENDS
+
+   .STACK 4096
+
+   .DATA
+   var1 STRUCT1 <0>
+
+   .CODE
+      .statup
+      mov bx, OFFSET var1.SMember
+
+      .WHILE (SWORD PTR [bx] != 1000)
+      inc SWORD PTR [bx]
+      .ENDW
+
+      .REPEAT
+      dec SWORD PTR [bx]
+      .UNTIL (SWORD PTR [bx] == 0)
+
+      .IF (SWORD PTR [bx] == 0)
+      nop
+      .ENDIF
+
+      .exit 0
+   END
+
+Additional query words: 6.00 6.00a 6.00b 6.10 6.10a buglist6.00a buglist6.00b buglist6.10 buglist6.10a buglist6.11
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610 kbMASM611 kbMASM600a kbMASM600b
+Version           : MS-DOS:6.0,6.0a,6.0b,6.1,6.10a,6.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

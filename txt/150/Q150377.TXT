@@ -1,0 +1,87 @@
+DOCUMENT:Q150377  08-NOV-2001  [homegame]
+TITLE   :After You Run Arcade, Quitting Norton Desktop Hangs Computer
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run and then quit Arcade, and then quit Norton Desktop version 2.2, the
+computer may stop responding (hang).
+
+RESOLUTION
+==========
+
+To resolve this issue, disable Norton Desktop. To do this, follow these steps:
+
+1. Quit Windows, and then press CTRL+ALT+DELETE to restart the computer. If you
+   cannot quit Windows, press CTRL+ALT+DELETE twice to restart the computer.
+
+2. On the File menu, click Run.
+
+3. In the Command Line box, type "sysedit" (without the quotation marks), and
+   then click OK.
+
+4. On the Window menu, click C:\WINDOWS\SYSTEM.INI.
+
+5. In the [boot] section of the System.ini file, change the "shell=" line to
+   match the following line:
+
+   shell=progman.exe
+
+6. On the File menu, click Exit. When you are prompted to save the changes,
+   click Yes.
+
+7. Quit Windows, and then press CTRL+ALT+DELETE to restart the computer.
+
+STATUS
+======
+
+This problem occurs when you use Microsoft Arcade for Windows version 1.0 and
+Norton Desktop version 2.2.
+
+MORE INFORMATION
+================
+
+For additional information about Norton Desktop, contact Symantec Corporation.
+For additional information about how to do this, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.0 w_arcade lock freeze msgame kbfaq
+
+======================================================================
+Keywords          : kbenv kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcade
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

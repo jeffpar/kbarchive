@@ -1,0 +1,72 @@
+DOCUMENT:Q197511  10-AUG-2001  [winnt]
+TITLE   :UDP Broadcast Issues with Service Pack 4
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you apply Service Pack 4 for Windows NT version 4.0, TCP/IP, Windows
+Sockets, and Simple TCP/IP services are modified to be resistant to attack. This
+modification may cause a loss of functionality in programs that use User
+Datagram Protocol (UDP) broadcasts.
+
+
+MORE INFORMATION
+================
+
+Because of the security issues fixed in Service Pack 4, the default behavior of
+Winsock sockets has been changed. Sockets now receive broadcast datagrams such
+as UDP broadcasts only if they have been explicitly set to do so. Prior to these
+fixes, any program that issued a Recvfrom() call would receive broadcast
+datagrams.
+
+Programs affected by this change should be modified to operate as expected with
+Windows NT 4.0 Service Pack 4 or later.
+
+
+REFERENCES
+==========
+
+Winsock supports a socket option (SO_BROADCAST) that can be set to allow the
+Recvfrom() call to pass broadcast datagrams to the program. The default setting
+for this option is "Off." More information about the SO_BROADCAST option and the
+functions used to set socket options is documented in the Platform Software
+Development Kit (SDK), which is available online at the following Microsoft Web
+site:
+
+   http://msdn.microsoft.com.
+
+Additional query words: simptcp
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

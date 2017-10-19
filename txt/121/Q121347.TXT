@@ -1,0 +1,112 @@
+DOCUMENT:Q121347  25-JUL-2001  [visualc]
+TITLE   :FIX: Unable to Set Breakpoint on Label in Constructor
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Workbench for Windows, version 1.0, used with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The debugger is unable to set the breakpoint and no warning or error messages
+are given when you set the following breakpoint:
+
+      {SimpleClass::SimpleClass}MyLabel
+
+Here SimpleClass is a class and MyLabel is a label inside the constructor. Using
+the full context below does not work either:
+
+      {SimpleClass::SimpleClass(int)}MyLabel
+
+CAUSE
+=====
+
+There are two constructors SimpleClass::SimpleClass and the label happens to be
+in the second of the two constructors as shown in the sample code listed in the
+More Information section below. The expression evaluator searches only the first
+of the contexts specified by the context operator for the label.
+
+RESOLUTION
+==========
+
+Reverse the order of the definitions of the constructors to set the breakpoint
+correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was not reproducible in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem. The debugger does not set a
+breakpoint on {SimpleClass::SimpleClass}MyLabel.
+
+Sample Code
+-----------
+
+   #include <stdio.h>
+
+   class SimpleClass
+   {
+    public:
+      int initval;
+
+      SimpleClass( void );
+      SimpleClass( int );
+   };
+
+   SimpleClass::SimpleClass()
+   {
+      initval = 0;
+   }
+
+   SimpleClass::SimpleClass( int val )
+   {
+      initval = val;
+   MyLabel:
+      ;
+   }
+
+   void main( )
+   {
+      SimpleClass SCOne(10);
+
+      printf( "%d\n", SCOne.initval );
+   }
+
+Additional query words: 1.00 2.00 buglist1.00 buglist2.00
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVSsearch kbAudDeveloper
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

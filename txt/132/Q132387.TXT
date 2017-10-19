@@ -1,0 +1,59 @@
+DOCUMENT:Q132387  08-NOV-2001  [homemm]
+TITLE   :Sound Settings Are Not Saved
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft World of Flight for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the applications listed above, sound effects and
+narrations function, even though you turned them off the last time you used the
+program.
+
+STATUS
+======
+
+This feature is part of the program design.
+
+MORE INFORMATION
+================
+
+Microsoft Dogs, Microsoft Oceans and Microsoft World of Flight do not restore
+sound settings from previous sessions when you start the program. If narrations
+and/or sound effects are turned off during a session, the next time you start
+the application, the sounds play.
+
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm enabled disabled turn-on turn-off stopped saved saving
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbDogs100 kbWorldofFlight kbOceans
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

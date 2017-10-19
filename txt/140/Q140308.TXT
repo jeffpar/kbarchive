@@ -1,0 +1,77 @@
+DOCUMENT:Q140308  14-DEC-1999  [homemm]
+TITLE   :Cinemania 95: Error "Cannot Find One of the Required Fonts..."
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run Cinemania 1995, you receive the following error
+message:
+
+   Cinemania cannot find one or more of the required fonts (Arial, MSReference1,
+   MSReference2). To reinstall the required fonts, please run setup again.
+
+This occurs when the following fonts are not installed:
+
+ - Arial
+
+ - MSReference1
+
+ - MSReference2
+
+RESOLUTION
+==========
+
+Remove and then reinstall Cinemania using the steps below:
+
+1. Run the Cinemania Setup program.
+
+2. Click Remove All.
+
+3. Run Setup again to reinstall Cinemania.
+
+MORE INFORMATION
+================
+
+During Setup, Cinemania 1995 installs the following fonts to your system:
+
+   Arial             (TrueType)
+   MS Reference 1    (TrueType)
+   MS Reference 2    (TrueType)
+
+When you remove Cinemania 95 before reinstalling, Setup is forced to check the
+system files. Any missing system files on the Cinemania disc, including fonts
+needed to run the program correctly, are reinstalled.
+
+Additional query words: 1995multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1995
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

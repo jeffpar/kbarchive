@@ -1,0 +1,145 @@
+DOCUMENT:Q275292  18-OCT-2001  [exchange]
+TITLE   :XCON: How to Remove Q251137 Fixes from Exchange Server 5.5 SP3
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install the message transfer agent (MTA) fixes from the following
+Microsoft Knowledge Base article, a backup folder, called Q251137, is created in
+the Exchange Server 5.5 Exchsrvr folder:
+
+   Q251137 XADM: Exchange Server 5.5 Post-SP3 Message Transfer Agent Fixes
+   Available
+
+This backup folder contains the original files that the fixes replace. If you
+need to remove the Q251137 fixes, this article provides the correct way to
+restore the MTA to the point before you applied the fixes.
+
+MORE INFORMATION
+================
+
+1. Open Microsoft Windows NT Explorer.
+
+2. Browse the drive that Exchange Server is install on, and then expand the
+   Exchsrvr folder.
+
+3. Locate and expand the Q251137 folder.
+
+4. Open the Install.txt file with a text editor such as Notepad, or WordPad.
+
+   This text file contains the original file locations and names that the
+   hotfixes in Q251137engi.exe replaced during installation. When they are moved
+   into the same folder, duplicate files are renamed so that two files with the
+   same name can be moved into the Q251137 folder. These must be renamed after
+   you restore them to their previous location. Copy the "old" file from the
+   Q251137 folder, and place it in the location described in the text file.
+
+   An example of an installation file follows these steps. However, based on
+   hardware, performance optimization, or personal choice, this file maybe
+   different for every Exchange Server organization.
+
+   The second example shows two sample restore steps.
+
+A sample installation file:
+
+   *** Installation Started 10/2/00 10:39:21 ***
+   Title: Service Update
+   Source: C:\TEMP\GLB27.tmp
+   Made Dir: C:\EXCHSRVR\Q251137
+   File Overwrite: C:\EXCHSRVR\bin\emsmta.exe
+   Backup Copy: C:\EXCHSRVR\Q251137\emsmta.exe
+   File Overwrite: C:\EXCHSRVR\bin\x400om.dll
+   Backup Copy: C:\EXCHSRVR\Q251137\x400om.dll
+   File Overwrite: C:\EXCHSRVR\mtadata\p2.xv2
+   Backup Copy: C:\EXCHSRVR\Q251137\p2.xv2
+   File Overwrite: C:\EXCHSRVR\bin\p2.xv2
+   Backup Copy: C:\EXCHSRVR\Q251137\p2.001
+   File Overwrite: C:\EXCHSRVR\mtadata\p42.tpl
+   Backup Copy: C:\EXCHSRVR\Q251137\p42.tpl
+   File Overwrite: C:\EXCHSRVR\mtadata\p772.tpl
+   Backup Copy: C:\EXCHSRVR\Q251137\p772.tpl
+   File Overwrite: C:\EXCHSRVR\mtadata\dbserver.sch
+   Backup Copy: C:\EXCHSRVR\Q251137\dbserver.sch
+   File Overwrite: C:\EXCHSRVR\mtadata\infoplog.cfg
+   Backup Copy: C:\EXCHSRVR\Q251137\infoplog.cfg
+   File Overwrite: C:\EXCHSRVR\mtadata\dcprods.cat
+   Backup Copy: C:\EXCHSRVR\Q251137\dcprods.cat
+   File Overwrite: C:\EXCHSRVR\bin\dcprods.cat
+   Backup Copy: C:\EXCHSRVR\Q251137\dcprods.001
+   File Overwrite: C:\EXCHSRVR\res\mtamsg.dll
+   File Overwrite: C:\EXCHSRVR\bin\mtaperf.dll
+   Backup Copy: C:\EXCHSRVR\Q251137\mtaperf.dll
+   Made Dir: C:\WINNT\symbols
+   Made Dir: C:\WINNT\symbols\exe
+   File Copy: C:\WINNT\symbols\exe\emsmta.dbg
+   Made Dir: C:\WINNT\symbols\dll
+   File Copy: C:\WINNT\symbols\dll\x400om.dbg
+   File Copy: C:\WINNT\symbols\dll\mtamsg.dbg
+   File Copy: C:\WINNT\symbols\dll\mtaperf.dbg
+   User Rights: Admin
+
+A sample restore:
+
+1. To restore the Emsmta.exe file, copy or move the Emsmta.exe file from the
+   C:\Exchsrvr\Q251137\ folder, and then overwrite the file in the path
+   C:\Exchsrvr\Bin\ folder.
+
+2. When prompted, select Yes to overwrite the existing file.
+
+A sample of a duplicate file restore:
+
+1. To restore the P2.xv2 file, copy or move the P2.xv2 file from the
+   C:\Exchsrvr\Q251137\ folder, and then overwrite the file in the path
+   C:\Exchsrvr\Mtadata\ folder.
+
+2. To restore the second P2.xv2 file, copy or move the P2.001 file from the
+   C:\Exchsrvr\Q251137\ folder to the C:\Exchsrvr\Bin\ folder.
+
+3. Remove the P2.xv2 file that is located in the C:\Exchsrvr\Bin\ folder.
+
+4. Rename the P2.001 file to P2.xv2.
+
+5. After all files have been placed in the correct locations, restart the
+   server. The MTA comes back up restored to the point before you applied the
+   fix.
+
+For additional information about this fix, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q251137 XADM: Exchange Server 5.5 Post-SP3 Message Transfer Agent Fixes
+   Available
+
+Additional query words: Q251137
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : :5.5 SP3
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

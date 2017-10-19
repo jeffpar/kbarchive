@@ -1,0 +1,81 @@
+DOCUMENT:Q108360  21-NOV-1999  [msdos]
+TITLE   :Stacker Conversion Error Msg When Path Is Longer Than 127
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your path is longer than 127 characters, the Stacker conversion program
+cannot run. The error message you receive depends on the location of your
+Stacker files.
+
+If your Stacker files are in the C:\STACKER directory and your path is too long,
+you receive the following error message:
+
+   The MS-DOS Stacker conversion program cannot continue because it could not
+   find your copy of the DBLSPACE.EXE file. The DBLSPACE.EXE should be located
+   in the directory that contains your MS-DOS files.
+
+   Add your MS-DOS directory to your search path, and then run CONVERT again.
+   (For information about changing your search path, type "HELP PATH" (without
+   the quotation marks) at the command prompt.)
+
+If the Stacker files are not located in a C:\STACKER directory and your path is
+too long, you receive the following error message:
+
+   The MS-DOS Stacker conversion program cannot continue because it cannot find
+   the Stacker CHECK.EXE or SCHECK.EXE programs.
+
+   Add the directory that contains your Stacker files to your search path, and
+   then run CONVERT again. Either the CHECK.EXE or the SCHECK.EXE file must be
+   in your Stacker directory when you run CONVERT. (For information about
+   changing your search path, type "HELP PATH" (without the quotation marks) at
+   the command prompt.)
+
+RESOLUTION
+==========
+
+To work around this problem, set the path to your Stacker and MS-DOS directories
+and then run the Stacker conversion. For example, type "set
+path=c:\dos;c:\stacker" (without the quotation marks) at the MS-DOS command
+prompt and then press ENTER.
+
+MORE INFORMATION
+================
+
+Stacker is manufactured by STAC Electronics, a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

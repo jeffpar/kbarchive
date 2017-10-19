@@ -1,0 +1,70 @@
+DOCUMENT:Q134967  31-JUL-2001  [sms]
+TITLE   :SMS: Audit Package Fails to Report MIF to Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbAudit smsauditkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Audited software property does not show up in the Systems Management Server
+Personal Computer Properties after you run an audit package on a Windows for
+Workgroups client that is part of a Windows NT domain within a Systems
+Management Server site.
+
+On Windows for Workgroups clients that are members of a Windows NT Systems
+Management Server domain and have both Microsoft and NetWare ODI networking
+protocols installed, the audit package fails when run from Package Command
+Manager. The following error is logged in the AUDIT16.LOG file on the client:
+
+      Job Status MIF not created.
+      Reading packages             [Done]
+      Scanning local drives        [Done]
+      Scanning packages            [Done]
+      Writing results              [Done]
+
+      A File error occurred:  File create error in MIF output file on network.
+      Job Status MIF not created.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. This problem was corrected in the latest Systems
+Management Server version 1.1 Service Pack. For information on obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbAudit smsaudit kbfaq
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

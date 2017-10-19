@@ -1,0 +1,71 @@
+DOCUMENT:Q139382  28-JUL-2001  [win95x]
+TITLE   :Cannot Install CorelDraw 3.0 Revision B with DriveSpace 3
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install CorelDraw version 3.0 revision B on a Windows 95-based
+computer that is running DriveSpace 3, your computer may seem to stop responding
+(hang) after you receive the following message from CorelDraw Setup:
+
+   CorelDraw is checking for space available on your drives
+
+To close the hung Setup program, you must press CTRL+ALT+DELETE and use the Close
+Program dialog box.
+
+CAUSE
+=====
+
+DriveSpace 3 uses 32K clusters on the hard disk. CorelDraw 3.0 revision B cannot
+be installed on drives with 32K clusters.
+
+Earlier versions of DoubleSpace and DriveSpace do not use 32K clusters for disk
+compression.
+
+RESOLUTION
+==========
+
+Corel Corporation has released an update (called Instfx.exe) that resolves this
+problem. Please contact Corel Corporation to obtain this update.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

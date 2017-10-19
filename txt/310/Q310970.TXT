@@ -1,0 +1,91 @@
+DOCUMENT:Q310970  13-NOV-2001  [foxpro]
+TITLE   :PRB: Some Intellisense Settings Do Not Persist Between Sessions
+PRODUCT :Microsoft FoxPro
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbvfp kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set the _VFP.EditorOptions property, either in code or through the
+Intellisense Manager, and then quit Visual FoxPro 7, the value is not saved when
+you start Visual FoxPro again.
+
+RESOLUTION
+==========
+
+Use a configuration file (usually Config.fpw) to persist the setting.
+
+   MODIFY FILE HOME() + "config.fpw"
+
+Add the following line, modifying as appropriate:
+
+   COMMAND=_VFP.EditorOptions = "lqkT"
+
+See the "EditorOptions" Help topic for the options you can set here.
+
+You can only have one COMMAND line in your Config.fpw file. If you need more than
+one, create a .prg file in the home directory and call that in the COMMAND line
+instead.
+
+   COMMAND=DO vfpStart.prg
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Command window, type the following:
+
+   " _VFP.EditorOptions = "" " (without the quotation marks)
+
+2. Quit and then restart Visual FoxPro 7.
+
+3. In the Command window, type the following:
+
+   " ? _VFP.EditorOptions " (without the quotation marks)
+
+Note that EditorOptions has been restored to the default.
+
+REFERENCES
+==========
+
+Visual FoxPro 7.0 Help; search on "EditorOptions"
+
+Additional query words: turn off disable Intellisense
+
+======================================================================
+Keywords          : kbvfp kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

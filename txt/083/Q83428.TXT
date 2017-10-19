@@ -1,0 +1,57 @@
+DOCUMENT:Q83428  03-OCT-1999  [win95x]
+TITLE   :Doc Err: Location of EXPAND.EXE for Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+EXPAND.EXE can be found on Disk 3 of both the 3.5-inch, 1.44 MB, and the
+5.25-inch, 1.2 MB, Windows 3.1 disk sets.
+
+MORE INFORMATION
+================
+
+Chapter 4 of "Getting Started with Microsoft Windows" discusses the process of
+expanding and copying files from Windows disks to a hard drive. On page 61, the
+following is written:
+
+To copy Windows files to your system and expand them:
+
+1. Copy EXPAND.EXE from Windows Disk 2 to your hard disk.
+
+The step should state:
+
+1. Copy EXPAND.EXE from Windows Disk 3 to your hard disk.
+
+Additional query words: document error
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

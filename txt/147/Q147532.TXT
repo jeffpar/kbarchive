@@ -1,0 +1,68 @@
+DOCUMENT:Q147532  06-FEB-2002  [iis]
+TITLE   :Access Denied and Login Failed on Internet Information Server
+PRODUCT :Internet Information Server
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to access an HTML page on an Internet Information Server, the
+following error message appears:
+
+   Error: Access is denied.
+
+When you attempt to access the FTP server on an Internet Information Server, the
+following error message appears:
+
+   Login failed.
+
+CAUSE
+=====
+
+This problem occurs if there is a password mismatch of IUSR_<server name>
+user name between Internet Information Server and User Manager. This user name
+is created by default during the installation of Internet Information Server.
+
+NOTE: This problem can also occur if the Internet Information Server is a primary
+or backup domain controller. By default, Everyone is not allowed to log on
+locally.
+
+RESOLUTION
+==========
+
+To correct this problem, make sure that the password of IUSR_<server name>
+matches among the FTP Server and Web Server of Internet Information Server and
+User Manager.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

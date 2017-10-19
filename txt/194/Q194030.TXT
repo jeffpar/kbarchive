@@ -1,0 +1,62 @@
+DOCUMENT:Q194030  19-JUN-2000  [exchange]
+TITLE   :XCLN: MS Exchange Server 5.5 Service Pack 1 Incorrect CD Key
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CD key on the compact disc (CD) provided with Microsoft Exchange Server
+version 5.5 Service Pack 1 (SP1) does not work correctly during Setup of
+Microsoft Outlook 98.
+
+WORKAROUND
+==========
+
+Please call a Microsoft Customer Service Representative for a new CD key. The
+telephone number to call is 800-936-5900. Wait for the automated answering
+system to complete its offerings without pressing any numbers on your phone, and
+a representative will answer your call.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange Server 5.5 Service Pack 1 Package includes:
+
+Microsoft Exchange Server 5.5 Service Pack 1
+Microsoft Outlook CD (Part Number X03-68288)
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1
+Version           : winnt:5.5 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

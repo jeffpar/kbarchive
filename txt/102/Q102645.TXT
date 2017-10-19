@@ -1,0 +1,64 @@
+DOCUMENT:Q102645  09-JUN-1999  [win16sdk]
+TITLE   :PRB: Min/Max Boxes Do Not Work with DS_MODALFRAME
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:kb16bitonly kbDlg kbSDKPlatform kbWndwProp
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When I use the WS_MIMIMIZEBOX or WS_MAXIMIZEBOX styles in a dialog box with a
+DS_MODALFRAME style, the up/down arrows are offset up and to the right when I
+click them with the mouse.
+
+CAUSE
+=====
+
+The WS_MINIMIZEBOX and WS_MAXIMIZEBOX styles cannot be used with the
+DS_MODALFRAME frame style. (Menus are also incompatible with this frame style.
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+   ARTICLE-ID: Q71499 TITLE : Menus Supported in Dialog Boxes w/o DS MODALFRAME
+   Style
+
+RESOLUTION
+==========
+
+Use a different frame style, such as WS_BORDER.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbDlg kbSDKPlatform kbWndwProp 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310 kbWinSDK311
+Version           : WINDOWS:3.1,3.11
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

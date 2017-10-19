@@ -1,0 +1,72 @@
+DOCUMENT:Q93019  13-OCT-1999  [win3x]
+TITLE   :No Drop Cables Allowed from Thin Ethernet T-Connector to NIC
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following configuration is not supported by 802.3 10BASE2 (Thin Ethernet)
+cable:
+
+    tT ----RG58/u (Main Cable)-------------Tt
+     |            |
+     |<---RG58/u (Drop Cable) |
+     |            |
+    NIC               NIC
+
+Key
+
+t = terminator
+T = T-connector
+NIC = network interface card
+
+The additional drop cable depicted in the above diagram should not be used. The
+T-connector should be connected directly to the network interface card.
+
+MORE INFORMATION
+================
+
+Because Thin Ethernet network interface cards are not impedance matched, some of
+the signal coming off the main cable reflects off the network interface card and
+back on to the main cable.
+
+If the distance is short (less than one to two inches), the echo lands right on
+top of the main signal and no distortion occurs.
+
+If the distance is long (more than one to two inches), the time taken for the
+signal to travel down the drop cable, bounce off the card, and come back, is
+significant and can make the echo land on top of the next pulse, which can
+result in scrambled signals.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

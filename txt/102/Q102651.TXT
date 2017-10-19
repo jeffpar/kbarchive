@@ -1,0 +1,68 @@
+DOCUMENT:Q102651  08-AUG-2001  [winnt]
+TITLE   :Required Settings for Adaptec 1510 SCSI Host Adapter
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Adaptec 1510 SCSI host adapter must be configured in the following manner in
+order for it to work under Windows NT:
+
+   SCSI Disconnection        Enabled
+   SCSI Address              7
+   SCSI Parity               Enabled
+   Synchronous Negotiation   Enabled
+   Interrupt Channel (IRQ)   11
+   I/O Port Address          340h
+
+
+MORE INFORMATION
+================
+
+The Windows NT device driver for the Adaptec 1510 adapter is SPARROW.SYS. The
+driver is hard-coded for the parameters listed above. Although MS-DOS device
+drivers, by the use of switches, can specify adapter-related parameters, such as
+IRQ and parity, this cannot be done under Windows NT. Make sure you attach only
+SCSI targets to the Adaptec 1510 adapter that support the settings listed above.
+Note that since the adapter always uses IRQ 11 and does not report this fact,
+conflicts with other devices using the same IRQ may occur.
+
+NOTE: The driver for the Adaptec 1520 SCSI host adapter does not have this
+limitation.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

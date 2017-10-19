@@ -1,0 +1,105 @@
+DOCUMENT:Q235977  08-MAY-2002  [sna]
+TITLE   :Windows NT Machine Accounts Added to Host Account Cache
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4,4.0,4.0SP1,4.0SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna40
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 3.0SP4, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Host Account Cache database used to associate Windows NT Domain User
+Accounts with Host User Accounts when using SNA Server's Host Security feature
+may contain Windows NT Machine Accounts in addition to User Accounts.
+
+When you use Snacfg.exe (SNA Server's command line configuration utility) to view
+the accounts contained in the Host Account Cache database, you may see results
+similar to the following:
+
+   
+
+   HSMAPPING NTDOMAIN\NTWRKSTN-3$ /ADD /HSDOMAIN:HOSTDOM /HSUSER:?UNINITIALIZED?
+   HSMAPPING NTDOMAIN\hostsec1 /ADD /HSDOMAIN:HOSTDOM /HSUSER:?UNINITIALIZED?
+   HSMAPPING NTDOMAIN\hostsec2 /ADD /HSDOMAIN:HOSTDOM /HSUSER:?UNINITIALIZED?
+   HSMAPPING NTDOMAIN\hostsec3 /ADD /HSDOMAIN:HOSTDOM /HSUSER:?UNINITIALIZED?
+   HSMAPPING NTDOMAIN\NTWRKSTN-4$ /ADD /HSDOMAIN:HOSTDOM /HSUSER:?UNINITIALIZED? 
+
+The entries that end with a dollar sign ($) are Windows NT Machine Accounts.
+
+CAUSE
+=====
+
+The Host Security Domain Wizard used to create Host Security Domains adds the
+Windows NT Domain Users group to the host security domain group that the wizard
+creates in User Manager for Domains. When a new user is added to the Windows NT
+domain, the user is automatically added to the Domain Users group and is also
+added to the Host Account Cache database. Windows NT Machine accounts are also
+members of the Domain Users group, therefore, the SNA Host Account Cache service
+(Snaudb.exe) adds new Windows NT Machine accounts to the Host Account Cache
+database.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2. This problem was
+first corrected in SNA Server version 4.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+After you apply the update, the SNA Host Account Cache service checks to see if
+the new account is a Windows NT Machine account before adding it to the Host
+Account Cache database. If the account is a Windows NT Machine account, it will
+not be added to the Host Account Cache database.
+
+The following is an example of a Snacfg command you can use to display the all of
+the account contained in the Host Account Cache database:
+
+   snacfg hsmapping *\* /print
+
+Please refer to the SNA Server 4.0 online documentation for more details on the
+Snacfg utility.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4,4.0,4.0SP1,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

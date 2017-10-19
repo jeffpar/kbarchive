@@ -1,0 +1,72 @@
+DOCUMENT:Q84245  06-DEC-1999  [win95x]
+TITLE   :Greek Symbols Appear Instead of Selected Fonts in Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Fonts display as Greek symbols in Microsoft Windows version 3.1.
+
+This font-mapping problem may occur only in certain applications or after
+choosing certain options within an application.
+
+RESOLUTION
+==========
+
+The fonts in the [fonts] section of the WIN.INI file may need to be reordered.
+
+This problem occurs most commonly with the Symbol font. To correct this problem,
+edit the WIN.INI file and move the SYMBOLx.FON line (where "x" represents a
+letter A-F) to end of the [fonts] section.
+
+MORE INFORMATION
+================
+
+When this problem occurs, the application is requesting a font by font family
+rather than by font name. In this case, Windows provides the first font in that
+family from the [fonts] section of the WIN.INI file. When you upgrade to Windows
+3.1, Setup upgrades the [fonts] section and deletes all Windows 3.0 fonts that
+no longer apply. This can cause font display problems for applications that ask
+for raster fonts by family rather than by name.
+
+Moving fonts in the list can cause different font-mapping problems with other
+fonts if you order the fonts incorrectly. When you move fonts, make sure that
+the plain text or "normal" version of a font appears first in the list. If you
+position italic or bold first, an application may incorrectly map to the italic
+or bold font instead of the plain text font. Many applications request the font
+name when they want the "normal" version of that font.
+
+
+Additional query words: 3.10 Aldus PageMaker Storybook Story Book regular windrvr 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

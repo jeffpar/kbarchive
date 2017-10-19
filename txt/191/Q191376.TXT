@@ -1,0 +1,73 @@
+DOCUMENT:Q191376  14-NOV-2000  [word97]
+TITLE   :WD97: Tabs Button Doesn't Work with Envelopes and Labels
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Envelopes And Labels dialog box (on the Tools menu, click Envelopes And
+Labels), when you click the Tabs button on the Indents and Spacing tab
+(right-click in the Address box on the Labels tab, and then click Paragraph on
+the shortcut menu), Word returns to the Labels tab and the Tabs dialog box is
+not displayed.
+
+NOTE: The Tabs dialog box is displayed after you click Print, New Document, or
+Cancel in the Envelopes And Labels dialog box.
+
+WORKAROUND
+==========
+
+Click Cancel to close the Tabs dialog box.
+
+NOTE: If you set a tab in the Tabs dialog box, the tab will be set at the
+insertion point of the active document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+MORE INFORMATION
+================
+
+In Microsoft Word 97 for Windows, when you are using paragraph formatting in the
+Address box on the Labels tab, the Tabs button on the Indents and Spacing tab
+should be unavailable as in earlier versions of Microsoft Word for Windows.
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbdta winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

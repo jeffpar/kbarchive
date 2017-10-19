@@ -1,0 +1,73 @@
+DOCUMENT:Q320266  20-JUN-2002  [foxpro]
+TITLE   :HOWTO: Convert a Visual FoxPro 7.0 Menu to a Visual FoxPro 6.0 F
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0,7.0
+OPER/SYS:
+KEYWORDS:kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you open a menu that was created in Visual FoxPro 6.0 in Visual FoxPro 7.0,
+try to convert it to the Visual FoxPro 7.0 format, and try to run the menu in
+Visual FoxPro 6.0, you receive the following error message:
+
+   Menu file is invalid.
+
+This article describes how you can convert the menu back to the Visual FoxPro 6.0
+format.
+
+NOTE: Visual FoxPro 7.0 allows you to have pictures on the menu. Visual FoxPro
+6.0 did not have this feature; as a result, if you convert the menu back to
+Visual FoxPro 6.0 format, any picture information will be lost.
+
+MORE INFORMATION
+================
+
+1. Start Visual FoxPro, and then set the default directory to the directory that
+   contains the menu that you want to convert.
+
+2. Create a program from the following code, and then run it from a command
+   window.
+
+NOTE: Change any instances of YourMenu in the following code to reflect the name
+of the menu that you want to convert.
+
+   * Save a copy of the menu before converting to VFP 6 format.
+   COPY FILE YourMenu.* TO YourMenuSave.*
+   * Delete the fields that VFP 7 adds to the menu.
+   ALTER TABLE YourMenu.mnx DROP COLUMN SYSRES DROP COLUMN RESNAME
+   USE
+
+3. You can now use this menu in Visual FoxPro 6.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600 kbVFP700
+Version           : :6.0,7.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

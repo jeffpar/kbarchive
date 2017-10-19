@@ -1,0 +1,71 @@
+DOCUMENT:Q261186  31-JAN-2002  [crossnet]
+TITLE   :Computer Randomly Plays Classical Music
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbhw win95 win98 win98se kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During normal operation or in Safe mode, your computer may play "Fur Elise" or
+"It's a Small, Small World" seemingly at random. This is an indication sent to
+the PC speaker from the computer's BIOS that the CPU fan is failing or has
+failed, or that the power supply voltages have drifted out of tolerance. This is
+a design feature of a detection circuit and system BIOSes developed by
+Award/Unicore from 1997 on.
+
+MORE INFORMATION
+================
+
+Although these symptoms may appear to be virus-like, they are the result of an
+electronic hardware monitoring component of the motherboard and BIOS. You may
+want to have your computer checked or serviced.
+
+For aditional related information, please see the following DFI Technologies Web
+site:
+
+   http://www.dfiusa.com/support/tech-support.html
+   (http://www.dfiusa.com/support/tech-support.html)
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+
+Additional query words: beethoven
+
+======================================================================
+Keywords          : kbhw win95 win98 win98se kbHardware 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

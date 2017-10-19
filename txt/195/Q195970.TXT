@@ -1,0 +1,152 @@
+DOCUMENT:Q195970  08-MAY-2002  [exchange]
+TITLE   :XADM: STORE Loops While Processing Same DBCS Attachment Files
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55 EXC55SP3Fix kbExchange500preSP3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange information store may loop if a message contains multiple
+attachments with the same double-byte character set (DBCS) file name. This
+happens when you select the "Always send to this recipients in Microsoft Outlook
+rich-text format" option and the message is encoded with UUENCODE.
+
+CAUSE
+=====
+
+When the message contains multiple attachments with the same file name, the
+information store tries to make the name of the attachment unique by replacing
+the last byte with 0..9, A..Z. For example, name.txt, nam0.txt, .. nam9.txt,
+namA.txt, .. namZ.txt. If the last character of the attachment file name is an
+DBCS, only the trailing byte of it is replaced and this behavior causes the
+problem above.
+
+RESOLUTION
+==========
+
+Exchange Server 5.5
+-------------------
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Component: Information Store
+
+Version 5.5
+   File Name    Version
+   ------------------------
+   Gapi32.dll   5.5.2505.00
+   Mdbmsg.dll   5.5.2505.00
+   Store.exe    5.5.2505.00
+
+
+Exchange Server 5.0
+-------------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Exchange Server 5.0 that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Component: Information Store
+
+   Version  5.0
+   File Name    Version
+   ------------------------
+   Mdbmsg.dll   5.0.1461.76
+   Store.exe    5.0.1461.76
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0 and 5.5. This problem was first corrected in Exchange Server 5.5
+Service Pack 3.
+
+MORE INFORMATION
+================
+
+When the information store is looping, the stack back trace will be similar to
+the following:
+
+FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+1296f454  7002d3ac  00142c90 00000000 0148f654 KERNEL32!SpecialMBToWC+0x201
+1296f480  7002c38e  00142c90 00000000 0148f654
+KERNEL32!NlsAnsiToUnicode+0xa3
+1296f6c4  70012827  00000411 40000001 0148f654
+KERNEL32!CompareStringA+0x1a5
+1296f6ec  0063369b  0148f654 13cb770c 13cb7714 KERNEL32!lstrcmpiA+0x22
+1296f70c  00633742  13cb770c 13c442bc 13cb770c STORE!CAttachList::
+IsUniqueFileName+0x33
+1296f728  00560eb0  00000008 13c442bc 001851a8 STORE!CAttachList::
+hrMungeFileName+0x7b
+1296f768  00536f23  13cb789c 13c45414 00000400 STORE!CmcvtrBptRFC1154::
+hrEmitAttach+0x15c
+1296f78c  0043cb9e  13cb7a0c 13c45414 00000400 STORE!CmcvtrBptRFC1154::
+hrEmit+0x19c
+1296f7b4  0043cadd  13c82b26 00002000 1296f840 STORE!CINETemtr::hrEmit+0x82
+1296f7d4  00405c68  014bd898 13c51dc4 1296f81c
+STORE!CConvertStream::Read+0x5b
+1296f800  004ae291  13c8f6a4 13c82b26 00002000 STORE!MDB::PunkFromHsot+0x7e
+1296f81c  004ae204  00002000 13c82b26 1296f840 STORE!EcReadStreamOp+0x4f
+1296f840  00405521  00000000 0000004a 00143b94 STORE!EcReadStream+0x5e
+0000004a  00000000  00000000 00000000 00000000 STORE!EcRpc+0x773
+
+Additional query words: QFE CPU 100% 100 percent
+======================================================================
+Keywords          : exc5 exc55 EXC55SP3Fix kbExchange500preSP3fix 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

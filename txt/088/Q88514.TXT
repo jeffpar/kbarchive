@@ -1,0 +1,44 @@
+DOCUMENT:Q88514  30-JUL-2001  [homegame]
+TITLE   :Swing Stalls When Sounds Play in Golf
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Your swing may stall when playing Microsoft Golf for Windows. This typically
+occurs if you are using a nonmultimedia driver. If there is not enough memory,
+or your machine is slow (80286/12 MHz or less), the sound causes Microsoft Golf
+to stop temporarily.
+
+To test whether this is the source of your problem, turn off the sound effects by
+choosing Sound from the Options menu and clearing the check boxes before
+starting a round. If Microsoft Golf runs more smoothly, you'll know that the
+sound effects are causing the problem. The virtual real sound driver shipped
+with Golf and some earlier Windows 3.0 drivers may also cause this problem. Make
+sure you have the latest version of the sound driver. For information about the
+most recent sound driver for your system, contact your sound card manufacturer.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

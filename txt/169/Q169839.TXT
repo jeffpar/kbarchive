@@ -1,0 +1,68 @@
+DOCUMENT:Q169839  13-JUN-2001  [crossnet]
+TITLE   :XFOR: Cannot Enable (Appletalk) MTA Service NT SP3
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+ - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you enable the Microsoft Mail Connector (Appletalk) MTA, the following
+error might be reported when you attempt to apply the settings on the Microsoft
+Mail Connector Properties page:
+
+   Microsoft Mail Connector (Appletalk) MTA service was not created because the
+   counters for the Performance Monitor could not be installed.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has been confirmed this to be a problem in Microsoft Windows NT 4.0
+Service Pack 3. This problem was first corrected in Windows NT 4.0 Service Pack
+4.0 and Windows NT Server 4.0, Terminal Server Edition Service Pack 4.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbOSWinSearch kbOSWinNT400 kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2 kbOSWinNTSearch
+Version           : winnt:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

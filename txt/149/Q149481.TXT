@@ -1,0 +1,75 @@
+DOCUMENT:Q149481  02-NOV-1999  [fortran]
+TITLE   :PRB: Debugging Past END Statement Puts You in Disassembly Mode
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Debugging source code and stepping past the main program END statement causes
+the debugger to shift into disassembly mode, placing the cursor at the beginning
+of the source code's corresponding assembly code listing.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In previous versions of Microsoft FORTRAN, when you stepped past the main
+program END statement, the debugger generated the message "There is no source
+line debugging information" and stopped the debugger.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Build the sample code provided in Developer Studio.
+
+2. Start a debugging session by selecting Debug from the Build menu and then
+   choosing Step Into.
+
+3. Step past the END statement to cause the debugger to shift into disassembly
+   mode and place the cursor at the beginning of the assembly code listing
+   mainCRTStartup() procedure.
+
+Sample Code
+-----------
+
+   C Compile options needed: /Zi
+
+         print *, 'Hello, World!'
+         end
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

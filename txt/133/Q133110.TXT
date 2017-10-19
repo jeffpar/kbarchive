@@ -1,0 +1,84 @@
+DOCUMENT:Q133110  08-AUG-2001  [winnt]
+TITLE   :Error Message: Volume "Sys" Does Not Exist
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you log on to a Novell NetWare server and your login script runs, you may
+receive the following error message:
+
+   Volume "SYS" does not exist
+
+CAUSE
+=====
+
+This error message may occur because a directory, and not the volume, referenced
+in the login script does not exist.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform one of the following:
+
+ - Update your login script to reference a valid directory.
+
+   -or-
+
+ - Create the directory on the NetWare server.
+
+MORE INFORMATION
+================
+
+This is most commonly seen when using the following command where Windows NT
+incorrectly reports V5.00 for the %OS_VERSION variable and that directory does
+not exist on the Novell server:
+
+   Map root <drive>:=<server>\sys:public\msdos\%OS_VERSION
+
+Running the same login script from Windows 95 produces the following error
+message:
+
+   Path is invalid in map command
+   "Y:SYS:PUBLIC\MSDOS\V5.00".
+
+Running the same login script from MS-DOS, using the ODI/VLM stack and NetWare's
+Login.exe produces the following error message:
+
+   LOGIN-4.084-915: The specified volume does not exist
+   [ROOT S4:=SYS:PUBLIC\MSDOS\V5.00]
+
+Additional query words: 5.0 mapping connect connecting attach attaching
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

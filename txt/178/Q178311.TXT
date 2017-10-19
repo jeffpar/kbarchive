@@ -1,0 +1,63 @@
+DOCUMENT:Q178311  06-AUG-2002  [exchange]
+TITLE   :XADM: Error Running ISINTEG on a Cluster Server
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Isinteg -patch on a Microsoft Cluster Server, you may receive the
+following error message:
+
+   The private store could not be updated
+   Reason: JET_errKeyDuplicate
+
+WORKAROUND
+==========
+
+Before you run the Isinteg -patch command on a Microsoft Exchange Server
+computer that is running on a Microsoft Cluster Server, you must set the
+environment variable _CLUSTER_NETWORK_NAME_ to the Exchange Resource Group
+network name. For example, if your Exchange Resource Group network name is
+EXCLUSTER, type the following at the command prompt (all uppercase)
+
+   SET _CLUSTER_NETWORK_NAME_=<IP ADDRESS NAME>
+
+where <IP ADDRESS NAME> is the name assigned to the IP Address resource in
+the Exchange Resource Group. This is essentially the NetBIOS name of the
+Exchange Server computer. It is found using Cluster Admin\Exchange Resource
+Group\Exchange Cluster Network Name\Properties\Parameters.
+
+
+Additional query words: Wolfpack node
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,119 @@
+DOCUMENT:Q137454  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Cannot Find a Device File...Vnetsup.vxd
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+When you start Windows 95, you may receive the following error message:
+
+   Cannot find a device file that may be needed to run Windows or a Windows
+   application.
+
+   The Windows registry or System.ini file refers to this device file, but the
+   device file no longer exists.
+
+   If you deleted this file on purpose, try uninstalling the associated
+   application using its uninstall program or setup program.
+
+   If you still want to use the application associated with this device file, try
+   reinstalling that application to replace the missing file.
+
+   Vnetsup.vxd
+
+   -or-
+
+   Dfs.vxd
+
+CAUSE
+=====
+
+This problem can occur if you remove the Microsoft Network components in Network
+properties. When you do so, a reference to the Vnetsup.vxd or Dfs.vxd file is
+not removed from the registry.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+To work around this problem, use either of the following methods:
+
+ - Use Registry Editor to delete the StaticVxD value in the Vnetsup subkey under
+   the following registry entry:
+
+      HKEY_LOCAL_MACHINE\System\CurrentControlset\Services\VxD\vnetsup
+
+   -or-
+
+   Use Registry Editor to delete the StaticVxD value in the DFS subkey under the
+   following registry entry:
+
+      HKEY_LOCAL_MACHINE\System\CurrentControlset\Services\VxD\dfs
+
+ - Install and remove network components. To do so, follow these steps:
+
+   1. In Control Panel, double-click Network.
+
+   2. Click Add, click Adapter, and then click Add.
+
+   3. In the Manufacturers box, click Detected Network Driver. In the Network
+      Adapters box, click Existing NDIS2 Driver, and then click OK.
+
+   4. If you have not entered a workgroup name and a computer name previously,
+      you are prompted to do so. If you are prompted, fill in the appropriate
+      fields on the Identification tab.
+
+   5. Click OK or Close until you return to Control Panel. When you are prompted
+      to restart your computer, do so.
+
+   6. In Control Panel, double-click Network.
+
+   7. Click the network adapter, and then click Remove.
+
+   8. Click OK. When you are prompted to restart your computer, do so.
+
+======================================================================
+Keywords          : win95 kbfaq
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

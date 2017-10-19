@@ -1,0 +1,69 @@
+DOCUMENT:Q249679  22-JUN-2001  [exchange]
+TITLE   :XCLN: Word Document Becomes Mail Message in Outlook 2000
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:2000
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Outlook 2000 is open and you send a Microsoft Word document to a mail recipient
+using the Send To and Mail Recipient options on the Word File menu. If you
+cancel the process and decide to save the document, that document becomes a mail
+message.
+
+CAUSE
+=====
+
+This occurs as the file is saved, the message header is added to it.
+
+RESOLUTION
+==========
+
+To avoid the behavior described in the "Symptoms" section, when you are prompted
+to save the document, choose not to. However, if you have already chosen to save
+the file, when you open it again, it looks like a mail message. You can return
+the mail message to a Word document format by using either of the two following
+methods:
+
+ - On the File menu, click Save As, and save the file in Rich Text Format. Then
+   reopen the file, and save it as a Word document.
+
+-or-
+
+ - On the File menu, click Send To, click Mail Recipient, click File, click
+   Close, and then click Yes.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbZNotKeyword3
+Version           : WINDOWS:2000
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

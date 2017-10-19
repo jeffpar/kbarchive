@@ -1,0 +1,71 @@
+DOCUMENT:Q309810  19-OCT-2001  [homemm]
+TITLE   :MS Reader: Err Msg When Highlighting Text, Moving Mouse Over It
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader version 2.0, used with:
+    - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select text to highlight it or you move your mouse over text in
+Microsoft Reader, the program may stop responding (hang) or you may receive an
+error message similar to the following:
+
+   An application error has occurred and an application error log is being
+   generated.
+
+   msreader.exe
+   Exception: Access violation (Oxc0000005), Address: 0x77f6754b
+
+CAUSE
+=====
+
+This behavior can occur if your computer's sound card drivers are outdated.
+
+RESOLUTION
+==========
+
+To resolve this issue, update your sound card drivers.
+
+For information about how to contact sound card manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbReaderSearch kbReader200
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,71 @@
+DOCUMENT:Q168136  15-MAY-1999  [exchange]
+TITLE   :XCON: X.400 Exchange Interop with Foreign MTA Causing NDR
+PRODUCT :Microsoft Exchange
+PROD/VER:Platform:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When sending messages using an X.400 Connector from a foreign message transfer
+agent (MTA) to an Exchange Server MTA with an ADMD= " " (Space), a non-delivery
+report (NDR) will be generated which refers to invalid parameters.
+
+CAUSE
+=====
+
+This problem occurs because of the way Exchange Server MTA handles numeric ADMD
+(Administrative management domain name).
+
+MORE INFORMATION
+================
+
+Exchange Server supports this properly in all originator/recipient address
+fields but not in other parts of the envelope (for example, MTSID,
+Bilateral-Info, External, and Internal-Trace- Info).
+
+WORKAROUND
+==========
+
+To work around this issue, do not use a space or numeric name for the Exchange
+Server MTA when connecting with foreign MTAs.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Exchange Server 4.0.
+
+This bug was corrected in Exchange Server 5.0.
+
+Additional query words: Interop ISOCORE
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : Platform:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q118469  08-AUG-2001  [winnt]
+TITLE   :GSNW Gateway Requires NTGATEWAY group
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,3.1,4.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.1, 4.0 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+Microsoft has NetWare client software available for Windows NT to permit
+access to Novell NetWare servers and NetWare resources. This software
+installs as either Client Services for NetWare (CSNW) or Gateway services
+for NetWare (GSNW), depending on whether you install on Windows NT or
+Windows NT Advanced Server.
+
+GSNW includes a gateway feature that allows Microsoft networking clients to
+access files through the Windows NT Advanced Server computer that reside on
+NetWare servers without having to load additional NetWare connectivity
+components on the client.
+
+The file gateway uses a NetWare account to create an authenticated
+connection to the NetWare server from the Windows NT gateway computer. All
+file access will be done in the context of this connection. The NetWare
+account MUST be a member of the NetWare NTGATEWAY group. This group must
+first be created on the NetWare server and the gateway account added to
+this group before trying to establish the file gateway.
+
+It is not necessary for the gateway account or the NTGATEWAY group to have
+supervisor rights.
+
+The NetWare product discussed here is manufactured by Novell, Inc., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: prodnt 3rdparty NWCS
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbwin2000ServSearch kbwin2000Search kbWinNTS310search kbWinNT310Search kbWinNTW310Search kbWinAdvServSearch
+Version           : :2000,3.1,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

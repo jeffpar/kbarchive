@@ -1,0 +1,63 @@
+DOCUMENT:Q302689  06-JUL-2001  [iis]
+TITLE   :PRB: Webfolders Does Not Work if Content (UNC) Stored On Novell
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use WebFolders to connect to an Internet Information Services (IIS)
+computer that has content that is mapped to a Novell server by using Universal
+Naming Convention (UNC), you may receive the following error message:
+
+   Internet Explorer could not open http://WebSiteName as a Web Folder.
+
+CAUSE
+=====
+
+WebFolders was not designed to work when content is stored on UNC.
+
+RESOLUTION
+==========
+
+Store files locally on the IIS Web server if you want to use Web Distributed
+Authoring and Versioning (WebDAV) or WebFolders.
+
+
+STATUS
+======
+
+This is a known limitation with WebFolders.
+
+Additional query words: web folders novell dav iis fpse
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

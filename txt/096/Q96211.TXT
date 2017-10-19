@@ -1,0 +1,57 @@
+DOCUMENT:Q96211  26-MAY-2001  [homemm]
+TITLE   :Encarta Hangs with Orchid Farenheit Card in 800 x 800 Mode
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1993 editions
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 92 Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Encarta hangs on a system with the Orchid Farenheit VA card using the
+ORCHIDV.DRV driver (122,752 bytes and dated 01/11/93) in the 800 x 800 mode
+(64K).
+
+MORE INFORMATION
+================
+
+Using the 16-million-color mode or 256-color mode on this card allows Encarta to
+work properly. There is no 32K color driver available, but these alternate modes
+use different drivers that do not exhibit this problem.
+
+If you experience this problem, contact Orchid Technology technical support at
+(510) 683-0300 for more information.
+
+The Fahrenheit VA is manufactured by a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 1.00 lock up multi media multi-media multimedia hang crash freeze 800x800 16 million 256 color video
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncarta1992
+Version           : :1993 editions
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

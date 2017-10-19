@@ -1,0 +1,86 @@
+DOCUMENT:Q193341  11-JAN-2001  [vbwin]
+TITLE   :BUG: Circular Dependency Error With Embedded UserControls
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have a User Control acting as a container of another User Control, an
+error in the embedded control could generate an invalid "Circular dependencies
+between modules" error when the program is run.
+
+If you attempt to save the project, you may encounter another error while saving
+the container UserControl:
+
+   Error loading c:\windows\temp\vbXXXX.tmp. A control could not be loaded due
+   to load error. Continue?
+
+If you click Yes, an Invalid Page Fault may occur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX Control project in Visual Basic. UserControl1 is created
+   by default.
+
+2. Add two new User Controls (UserControl2 and UserControl3) to the project.
+
+3. Close the design windows of UserControl2 and UserControl3.
+
+4. From the control toolbox, add an instance of UserControl2 and UserControl3 to
+   UserControl1.
+
+5. Close the design window of UserControl1.
+
+6. Paste the following code into UserControl2's code window:
+
+         Private Test As MyTest
+
+7. Press the F5 key to run the program. An error "Circular dependencies between
+   modules" occurs. The expected error message should read:
+
+   "User-defined type not defined".
+
+Additional query words: kbdss kbDSupport kbVBp kbCtrl kbVBp600bug kbCtrlCreate kbCompiler kberrmsg
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

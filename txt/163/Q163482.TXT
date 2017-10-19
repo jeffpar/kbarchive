@@ -1,0 +1,63 @@
+DOCUMENT:Q163482  22-DEC-1999  [exchange]
+TITLE   :XCLN: Exchange and Schedule+ Options Not Available On Start
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The Start menu only displays the options for Microsoft Exchange and Schedule+ if
+you are currently logged on as the Windows NT account user who installed the
+Microsoft Exchange client. If you go to the Start menu and click Programs, and
+you do not see the Exchange and Schedule+ options under Microsoft Exchange, then
+your current Windows NT account may not have been used to install the Microsoft
+Exchange client.
+
+WORKAROUND
+==========
+
+You can force the options for Exchange and Schedule+ to appear on the Start menu
+by doing the following:
+
+1. Open the <winnt>\Profiles\<user who did install>\Start Menu\
+   directory for Schedule+ and Exchange.
+
+2. Copy the icons listed in the directory.
+
+3. Paste them into the <winnt>\Profiles\All Users\Start Menu\ directory.
+
+The icons will now be in the bottom half of the Start menu for all users.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q121876  08-AUG-2001  [winnt]
+TITLE   :Reliable, Slow Links over WANs Using RAS
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.5
+
+WINDOWS
+
+kbnetwork
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+To ensure a reliable Remote Access Service (RAS) connection when using a
+wide area network (WAN) connection (for example, a communications or X.25
+port) the speed of the link may require that you load less protocols.
+
+At lower speed links (2400 through 9600 bps) only one LAN protocol should
+be used. IP, IPX, and NetBEUI can run simultaneously with RAS. All three
+protocols are supported at all speeds and can be activated; however, using
+all three protocols at the same time at low speeds is not recommended. One
+protocol will remain active, but the others may fail. The RAS connection
+will remain, but only the most robust protocol will continue to operate.
+
+IP is the most robust network protocol for WAN links, followed by IPX and
+NetBEUI.
+
+On higher speeds links (56 through 64 Kbps and up) two or three transport
+protocols can be supported simultaneously without difficulty.
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,81 @@
+DOCUMENT:Q135628  15-FEB-2000  [foxpro]
+TITLE   :PRB: Disabled Grid Column Allows Focus with Mouse Click
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Enabled property of a grid column is set to False (.F.), the insertion
+point is not allowed to enter the column if accessed from the keyboard. However,
+clicking the column moves the insertion point to the cell beneath the mouse
+pointer. Even though no changes can be made, this behavior may be perceived as
+confusing, and is inconsistent with other controls.
+
+WORKAROUND
+==========
+
+To prevent the mouse click from activating a disabled column, check for the
+nColIndex in the AfterRowColChange event to determine if the column is one which
+should reject focus. If it is, reset focus back to the current cell by calling
+the ActivateCell method.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+To determine the last active cell, you need to ensure that the row and column
+values are stored as a property of the form. Create two new properties named
+OldRow and OldCol. To set the values, add the following lines of code to the
+GotFocus event for each object in the grid that should receive focus:
+
+      * code in Grid1.Column<n>.<Object>.GotFocus
+      THISFORM.OldRow = THIS.PARENT.PARENT.ActiveRow
+      THISFORM.OldCol = THIS.PARENT.PARENT.ActiveColumn
+
+In the following example, the second column is disabled:
+
+      * code in Grid1.AfterRowColChange event
+      LPARAMETERS nColIndex      && supplied by method
+      IF nColIndex = 2
+          THIS.ActivateCell( THISFORM.OldRow, THISFORM.OldCol )
+      ENDIF
+
+Now when clicked, the disabled column will flash briefly. Then focus will return
+to the last active cell selected.
+
+Additional query words: VFoxWin browse
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

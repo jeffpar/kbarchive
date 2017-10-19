@@ -1,0 +1,62 @@
+DOCUMENT:Q141986  14-MAR-1999  [exchange]
+TITLE   :XCLN: Status Bar Indicator Does Not Update in Filter View
+PRODUCT :Microsoft Exchange
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you apply a filter to a Microsoft Exchange Windows client via the Filter
+option from the View menu, the status bar indicator that shows the number of
+items and unread messages does not adjust to the correct values. It still shows
+the total number of items and unread messages in that folder before the filter
+was applied.
+
+CAUSE
+=====
+
+This is by product design.
+
+MORE INFORMATION
+================
+
+You can determine whether a filter is active by looking at the status bar
+located at the bottom of the client screen. If the status bar is not visible,
+choose Status Bar from the View menu. Then, you will see a status bar indicating
+the number of items and unread items. If a filter is active, you will also see a
+Funnel icon on the status bar.
+
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

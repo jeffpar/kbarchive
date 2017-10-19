@@ -1,0 +1,54 @@
+DOCUMENT:Q219274  09-MAY-1999  [homegame]
+TITLE   :Rise of Rome Trial Edition: Cannot Export Punic War Campaign
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:aoe kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot export the campaign "The First Punic War" from the trial version of
+Rise of Rome into the full retail version of Microsoft Age of Empires Expansion:
+The Rise of Rome.
+
+MORE INFORMATION
+================
+
+This behavior is designed to reduce the size and download time of the trial
+version of Rise of Rome.
+
+Although the file "The First Punic War.cpx" appears to be a valid Rise of Rome
+campaign file, it does not contain all of the data required for game play in the
+full retail version of the Age of Empires Expansion: The Rise of Rome software.
+
+Additional query words: 1.00 msgame aoe ageofempires ages
+
+======================================================================
+Keywords          : aoe kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOEExpRome
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

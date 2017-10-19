@@ -1,0 +1,80 @@
+DOCUMENT:Q107995  24-SEP-1999  [win3x]
+TITLE   :NDIS2 Drivers Load but NDIS3 Drivers Don't--Errors 6200 & 58
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows for Workgroups, you may receive one of the following
+error messages:
+
+   Error 6200: Adapter <adapter-name> not found
+
+   -or-
+
+   Error 58: The network has responded incorrectly
+
+NOTE: These errors usually occur in protected mode; real-mode networking usually
+loads correctly.
+
+CAUSE
+=====
+
+The above error messages may be caused by an incorrect I/O base address, an
+incorrect RAM address, or an improper IRQ setting in the PROTOCOL.INI file.
+
+These errors may be generated if the Transport= line in the [386Enh] section of
+the SYSTEM.INI contains protocols that are not in use. For example, if the
+Transport= line contains the following
+
+        Transport=netbeui.386,nwlink.386,nwnblink.386
+
+but the only protocol in use is NetBeui, the errors may occur.
+
+RESOLUTION
+==========
+
+Correct the invalid setting.
+
+If the Transport= line contains invalid references, remove them (that is, remove
+the references to nwlink.386, nwnblink.386, and IPX/SPX compatible transport).
+
+MORE INFORMATION
+================
+
+The NDIS2 network interface card (NIC) driver may not rely on the PROTOCOL.INI
+settings; however, the NDIS3 NIC driver relies almost exclusively on these
+settings.
+
+Additional query words: 3.11 error message err msg enhanced mode protect NDIS tshoot
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

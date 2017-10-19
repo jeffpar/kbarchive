@@ -1,0 +1,70 @@
+DOCUMENT:Q155295  08-NOV-2001  [homegame]
+TITLE   :Games: Machine Hangs While Changing Resolution
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kberrmsg kbmmkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness, version 1.0 
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your computer may stop responding (hang) if you attempt to change the display
+resolution while running one of the games listed at the top of this article. If
+you are running one of the games listed at the top of this article in less than
+256 colors or greater than 256 colors, you may receive an error message similar
+to the following:
+
+   Monsterx has caused an invalid page fault in Monsterx.exe at xxxx:xxxx
+
+After the error message appears, the computer hangs.
+
+CAUSE
+=====
+
+This problem can occur if you attempt to change the number of colors by pressing
+ALT+TAB to switch to the Display Options while one of the games listed at the
+top of this article is running.
+
+You may also receive this error message when you attempt to use QuickRes to
+change the color palette display setting while the game is running.
+
+RESOLUTION
+==========
+
+Do not attempt to change the color palette setting in Windows while the game is
+running.
+
+Quit the game before you change the color setting, restart the computer, and then
+restart the game.
+
+Additional query words: 1.00 MTM Monster Truck Madness QuickRes hell-bender hell bender colors 256 Display
+
+======================================================================
+Keywords          : kbdisplay kberrmsg kbmm kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM kbHellBender
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

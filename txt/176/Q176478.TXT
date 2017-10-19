@@ -1,0 +1,94 @@
+DOCUMENT:Q176478  14-NOV-2000  [word97]
+TITLE   :WD97: TimeOut Argument Ignored by Some Dialog Boxes
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbdtacode word8 kbwordvba word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the TimeOut argument of the Display or Show methods for built-in
+Word dialog boxes, some built-in dialog boxes do not respond to the value set
+for the TimeOut argument.
+
+CAUSE
+=====
+
+By design, the following dialog boxes do not respond to the TimeOut argument.
+
+   Built-In Dialog Box            Related VBA Dialog Constant
+   ----------------------------------------------------------
+
+   File                           wdDialogFileNew
+
+   Tools Customize                wdDialogToolsCustomize
+
+   Tools Customize Menus          wdDialogToolsCustomizeMenus
+
+   Find In Field                  wdDialogMailMergeFindRecord
+
+   Manage Fields                  wdDialogToolsManageFields
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+For more information about the Display method, from the Visual Basic Editor,
+click the Office Assistant, type "Display" (without the quotation marks), click
+Search, and then click to view "Display Method."
+
+For more information about the Show method, from the Visual Basic Editor, click
+the Office Assistant, type "Show" (without the quotation marks), click Search,
+and then click to view "Show Method (Word 97)."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If the Assistant is not able to answer your query, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q176476 OFF: Office Assistant Not Answering Visual Basic Questions
+
+REFERENCES
+==========
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: wordcon vb vba vbe
+
+======================================================================
+Keywords          : kbdta kbdtacode word8 kbwordvba word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

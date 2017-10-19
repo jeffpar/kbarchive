@@ -1,0 +1,636 @@
+DOCUMENT:Q142643  06-AUG-2002  [winnt]
+TITLE   :Windows NT 4.0 Driver Library
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbprint kbPrinting kbHardware kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NOTE: The drivers listed in this article have been tested and certified only
+with Windows NT version 4.0.
+
+Microsoft provides the files in the Microsoft Windows NT Driver Library (WNTDL).
+Files in the WNTDL support many printers, displays, sound cards, and network
+card adapters that the Windows NT version 4.0 release does not support directly.
+If you have a modem, the drivers are available at no charge.
+
+The Microsoft Windows Driver Library (WDL) is available through online services.
+For additional information about the WDL, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q135314 Windows 95 Driver Library
+
+Please note that standard connect-time fees and long-distance telephone charges,
+if any, apply when you download files.
+
+MORE INFORMATION
+================
+
+Windows NT Driver Library
+-------------------------
+
+The Microsoft Windows NT Driver Library (WNTDL) contains device drivers for
+printers, displays, audio devices, storage devices, and network card adapters.
+These drivers enable these devices to run with the Microsoft Windows NT
+operating system.
+
+As new and updated drivers become available, they are added to the WNTDL.
+
+NOTE: All of the drivers in this list are intended for use with Windows NT
+version 4.0.
+
+Files Available from Online Services
+------------------------------------
+
+Printers:
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Brother HL-730 and MFC:
+
+   DownloadDownload Nt4bro.exe now
+
+Item ID   Filename       Description
+
+S20306   Nt4bro.exe      Brother HL-730
+S20306   Nt4bro.exe      Brother MFC-5000
+S20306   Nt4bro.exe      Brother MFC-6000
+S20306   Nt4bro.exe      Brother MFC-5500
+S20306   Nt4bro.exe      Brother MFC-5550
+S20306   Nt4bro.exe      Brother MFC-4000
+S20306   Nt4bro.exe      Brother MFC-4400
+S20306   Nt4bro.exe      Brother MFC-4500
+S20306   Nt4bro.exe      Brother MFC-3900
+
+Brother HL-760, -1060, -1260e, and -1660:
+
+   DownloadDownload Nt4bro2.exe now
+
+Item ID   Filename       Description
+
+S20417   Nt4bro2.exe     Brother HL-760
+S20417   Nt4bro2.exe     Brother HL-1060
+S20417   Nt4bro2.exe     Brother HL-1260e
+S20417   Nt4bro2.exe     Brother HL-1660
+
+Bull Compuprint Signum 2043:
+
+   DownloadDownload Nt4bul9.exe now
+
+Item ID   Filename       Description
+
+S20308   Nt4bul9.exe     Bull Compuprint Signum 2043
+
+Bull Compuprint Signum 2048 and 2078:
+
+   DownloadDownload Nt4bul24.exe now
+
+Item ID   Filename       Description
+
+S20307   Nt4bul24.exe    Bull Compuprint Signum 2048
+S20307   Nt4bul24.exe    Bull Compuprint Signum 2078
+
+Bull Compuprint PageMaster:
+
+   DownloadDownload Nt4bulls.exe now
+
+Item ID   Filename       Description
+
+S20309   Nt4bulls.exe    Bull Compuprint PageMaster 1035e
+S20309   Nt4bulls.exe    Bull Compuprint PageMaster 1225
+S20309   Nt4bulls.exe    Bull Compuprint PageMaster 1435e
+S20309   Nt4bulls.exe    Bull Compuprint PageMaster 1625
+S20309   Nt4bulls.exe    Bull Compuprint PageMaster 1645e
+
+Bull Compuprint Signum 2076:
+
+   DownloadDownload Nt4bull2.exe now
+
+Item ID   Filename       Description
+
+S20419   Nt4bull2.exe    Bull Compuprint Signum 2076
+
+Canon Bubble-Jet BJ-100 and -200, and BJC-210:
+
+   DownloadDownload Nt4bjc.exe now
+
+Item ID   Filename       Description
+
+S20305   Nt4bjc.exe      Canon Bubble-Jet BJ-100
+S20305   Nt4bjc.exe      Canon Bubble-Jet BJ-200
+S20305   Nt4bjc.exe      Canon Bubble-Jet BJC-210
+
+Canon Bubble-Jet BJC-80, -250, -4300, and -4650:
+
+   DownloadDownload Nt4canbj.exe now
+
+Item ID   Filename       Description
+
+S21061   Nt4canbj.exe    Canon Bubble-Jet BJC-80
+S21061   Nt4canbj.exe    Canon Bubble-Jet BJC-250
+S21061   Nt4canbj.exe    Canon Bubble-Jet BJC-4300
+S21061   Nt4canbj.exe    Canon Bubble-Jet BJC-4650
+
+Canon Bubble-Jet BJC-240, -610, -620, -4200, and -4550:
+
+   DownloadDownload Nt4canbj.exe now
+
+Item ID   Filename       Description
+
+S20533   Nt4bjc2.exe     Canon Bubble-Jet BJC-240
+S20533   Nt4bjc2.exe     Canon Bubble-Jet BJC-610
+S20533   Nt4bjc2.exe     Canon Bubble-Jet BJC-620
+S20533   Nt4bjc2.exe     Canon Bubble-Jet BJC-4200
+S20533   Nt4bjc2.exe     Canon Bubble-Jet BJC-4550
+
+Canon LBP-430W:
+
+   DownloadDownload Nt4cnls.exe now
+
+Item ID   Filename       Description
+
+S20310   Nt4cnls.exe     Canon LBP-430W
+
+Canon LBP-1260C PCL:
+
+   DownloadDownload Nt4lbp.exe now
+
+Item ID   Filename       Description
+
+S20534   Nt4lbp.exe      Canon LBP-1260C PCL
+
+Canon LBP-2460:
+
+   DownloadDownload Nt4c2460.exe now
+
+Item ID   Filename       Description
+
+S21079   Nt4c2460.exe    Canon LBP-2460
+
+Dataproducts DPC Typhoon:
+
+   DownloadDownload Nt4dpc.exe now
+
+Item ID   Filename       Description
+
+S20311   Nt4dpc.exe      DPC Typhoon 8
+S20311   Nt4dpc.exe      DPC Typhoon 16
+S20311   Nt4dpc.exe      DPC Typhoon 20
+S20311   Nt4dpc.exe      DPC Typhoon 30
+S20311   Nt4dpc.exe      DPC Typhoon 40
+S20311   Nt4dpc.exe      DPC Typhoon 60
+
+DEC Digital LA400 MultiPrinter:
+
+   DownloadDownload Nt4decla.exe now
+
+Item ID   Filename       Description
+
+S20809   Nt4decla.exe    Digital LA400 MultiPrinter
+
+Epson DFX, FX, and LX-300:
+
+   DownloadDownload Nt4eps9.exe now
+
+Item ID   Filename       Description
+
+S20315   Nt4eps9.exe     Epson DFX-5000+
+S20315   Nt4eps9.exe     Epson DFX-8000
+S20315   Nt4eps9.exe     Epson FX-1170
+S20315   Nt4eps9.exe     Epson FX-870
+S20315   Nt4eps9.exe     Epson FX-2170
+S20315   Nt4eps9.exe     Epson LX-300
+
+Epson LQ-860+:
+
+   DownloadDownload Nt4eps24.exe now
+
+Item ID   Filename       Description
+
+S20314   Nt4eps24.exe    Epson LQ-860+
+
+Epson ActionLaser and EPL:
+
+   DownloadDownload Nt4epsls.exe now
+
+Item ID   Filename       Description
+
+S20316   Nt4epsls.exe    Epson ActionLaser 1000
+S20316   Nt4epsls.exe    Epson EPL-4100
+S20316   Nt4epsls.exe    Epson EPL-5000
+S20316   Nt4epsls.exe    Epson EPL-7100
+
+Epson LQ-1060+:
+
+   DownloadDownload Nt4eps2.exe now
+
+Item ID   Filename       Description
+
+S20535   Nt4eps2.exe     Epson LQ-1060+
+
+Epson LX-100 and AP-2250:
+
+   DownloadDownload Nt4eps92.exe now
+
+Item ID   Filename       Description
+
+S20536   Nt4eps92.exe    Epson LX-100
+S20536   Nt4eps92.exe    Epson AP-2250
+
+Epson AP-3300 and LQ-300, -2070, -2170:
+
+   DownloadDownload Nt4lq2.exe now
+
+Item ID   Filename       Description
+
+S20537   Nt4lq2.exe      Epson AP-3300 ESC/P 2
+S20537   Nt4lq2.exe      Epson LQ-300 ESC/P 2
+S20537   Nt4lq2.exe      Epson LQ-2070 ESC/P 2
+S20537   Nt4lq2.exe      Epson LQ-2170 ESC/P 2
+
+Epson EPL-5500:
+
+   DownloadDownload Nt4epl2.exe now
+
+Item ID   Filename       Description
+
+S20538   Nt4epl2.exe     Epson EPL-5500
+
+Epson EPL-N1200 and -N2000:
+
+   DownloadDownload Nt4epl3.exe now
+
+Item ID   Filename       Description
+
+S20539   Nt4epl3.exe     Epson EPL-N1200
+S20539   Nt4epl3.exe     Epson EPL-N2000
+
+Generic:
+
+   DownloadDownload Nt4gener.exe now
+
+Item ID   Filename       Description
+
+S20317   Nt4gener.exe    Generic / Text Only
+
+HP DeskJet 400 through 694C and HP OfficeJet and OfficeJet LX:
+
+   DownloadDownload Nt4dsk1.exe now
+
+Item ID   Filename       Description
+
+S20312   Nt4dsk1.exe     HP DeskJet 400 (Monochrome)
+S20312   Nt4dsk1.exe     HP DeskJet 400
+S20312   Nt4dsk1.exe     HP DeskJet 680C
+S20312   Nt4dsk1.exe     HP DeskJet 682C
+S20312   Nt4dsk1.exe     HP DeskJet 690C
+S20312   Nt4dsk1.exe     HP DeskJet 692C
+S20312   Nt4dsk1.exe     HP DeskJet 693C
+S20312   Nt4dsk1.exe     HP DeskJet 694C
+S20312   Nt4dsk1.exe     HP OfficeJet
+S20312   Nt4dsk1.exe     HP OfficeJet LX
+
+HP DeskJet 850C through 870Cxi and HP PaintJet XL 300:
+
+   DownloadDownload Nt4dsk2.exe now
+
+Item ID   Filename       Description
+
+S20313   Nt4dsk2.exe     HP DeskJet 850C
+S20313   Nt4dsk2.exe     HP DeskJet 855C
+S20313   Nt4dsk2.exe     HP DeskJet 855Cse
+S20313   Nt4dsk2.exe     HP DeskJet 855Cxi
+S20313   Nt4dsk2.exe     HP DeskJet 870C
+S20313   Nt4dsk2.exe     HP DeskJet 870Cse
+S20313   Nt4dsk2.exe     HP DeskJet 870Cxi
+S20313   Nt4dsk2.exe     HP PaintJet XL 300
+
+HP D 640:
+
+   DownloadDownload Nt4d640.exe now
+
+Item ID   Filename       Description
+
+S21063   Nt4d640.exe     HP D 640
+
+HP LaserJet 5Si:
+
+   DownloadDownload Nt4hp2.exe now
+
+Item ID   Filename       Description
+
+S20420   Nt4hp2.exe      HP LaserJet 5Si
+S20420   Nt4hp2.exe      HP LaserJet 5Si MX
+S20420   Nt4hp2.exe      HP LaserJet 5Si Mopier
+
+
+HP LaserJet 6L:
+
+   DownloadDownload Nt4lj6.exe now
+
+Item ID   Filename       Description
+
+S20741   Nt4lj6.exe      HP LaserJet 6L
+
+HP OfficeJet 300, 330, and 350:
+
+   DownloadDownload Nt4hpoj.exe now
+
+Item ID   Filename       Description
+
+S21065   Nt4hpoj.exe     HP OfficeJet 300
+S21065   Nt4hpoj.exe     HP OfficeJet 330
+S21065   Nt4hpoj.exe     HP OfficeJet 350
+
+The following HP Printers are not supported:
+
+   Unsupported Hewlett-Packard Deskjet 820Cxi (Windows PPA)
+   Unsupported Hewlett-Packard Deskjet 820Cse (Windows PPA)
+   Unsupported Hewlett-Packard Deskjet 1000C (Windows PPA)
+   Unsupported Hewlett-Packard Deskjet 720C (Windows PPA/PCL3 emulation)
+
+   - Monolithic driver available with printer and from HP web site
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q153958 No Support for Print Performance Architecture under Windows NT
+
+IBM 2381 Plus and 4226 Model 302:
+
+   DownloadDownload Nt4ibm.exe now
+
+Item ID   Filename       Description
+
+S20318   Nt4ibm.exe      IBM 2381 Plus
+S20318   Nt4ibm.exe      IBM 4226 Model 302
+
+IBM Network Printers:
+
+   DownloadDownload Nt4ibmnp.exe now
+
+Item ID   Filename       Description
+
+S20808   Nt4ibmnp.exe    IBM Network Printer 12
+S20808   Nt4ibmnp.exe    IBM Network Printer 17
+S20808   Nt4ibmnp.exe    IBM Network Printer 24
+
+IBM Network Printers (PCL):
+
+   DownloadDownload Nt4ibm24.exe now
+
+Item ID   Filename       Description
+
+S21076   Nt4ibm24.exe    IBM Network Printer 12 (PCL)
+S21076   Nt4ibm24.exe    IBM Network Printer 17 (PCL)
+S21076   Nt4ibm24.exe    IBM Network Printer 24 (PCL)
+
+Kyocera FS-1700, -3700, -5500:
+
+   DownloadDownload Nt4kyoc.exe now
+
+Item ID   Filename       Description
+
+[Kyocera]
+S20319   Nt4kyoc.exe     Kyocera FS-1700
+S20319   Nt4kyoc.exe     Kyocera FS-3700
+S20319   Nt4kyoc.exe     Kyocera FS-5500 / FS-5500A
+
+
+Lexmark 4226 Model 302:
+
+   DownloadDownload Nt4lexmk.exe now
+
+Item ID   Filename       Description
+
+S20320   Nt4lexmk.exe    Lexmark 4226 Model 302
+
+Lexmark 1020 Color Jetprinter:
+
+   DownloadDownload Nt4lex2.exe now
+
+Item ID   Filename       Description
+
+S20320   Nt4lex2.exe     Lexmark 1020 Color Jetprinter
+S20320   Nt4lex2.exe     Lexmark 1020 Color Jetprinter (Mono)
+
+Lexmark Optra: NOTE: Listings in this section that begin with an * replace S20946
+Nt4lexop.exe:
+
+   DownloadDownload Nt4lexo2.exe now
+
+   DownloadDownload Nt4lexop.exe now
+
+Item ID   Filename       Description
+
+* S21345  Nt4lexo2.exe    Lexmark Optra E+
+* S21345  Nt4lexo2.exe    Lexmark Optra S 1250
+S21345    Nt4lexo2.exe    Lexmark Optra S 1255
+S21345    Nt4lexo2.exe    Lexmark Optra S 1620
+S21345    Nt4lexo2.exe    Lexmark Optra S 1625
+* S21345  Nt4lexo2.exe    Lexmark Optra S 1650
+S21345    Nt4lexo2.exe    Lexmark Optra S 1855
+S21345    Nt4lexo2.exe    Lexmark Optra S 2420
+* S21345  Nt4lexo2.exe    Lexmark Optra S 2450
+S21345    Nt4lexo2.exe    Lexmark Optra S 2455
+* S21345  Nt4lexo2.exe    Lexmark Optra SC 1275
+
+Mannesmann Tally T9108:
+
+   DownloadDownload Nt4mtly1.exe now
+
+Item ID   Filename       Description
+
+S20540   Nt4mtly1.exe    Mannesmann Tally T9108
+
+Mannesmann Tally MT and Mannesmann Tally T2033, T2133, T2045 and T7070:
+
+   DownloadDownload Nt4mtly2.exe now
+
+Item ID   Filename       Description
+
+S20541   Nt4mtly2.exe    Mannesmann Tally MT 83
+S20541   Nt4mtly2.exe    Mannesmann Tally MT 84
+S20541   Nt4mtly2.exe    Mannesmann Tally MT 360-2T
+S20541   Nt4mtly2.exe    Mannesmann Tally T2033
+S20541   Nt4mtly2.exe    Mannesmann Tally T2133
+S20541   Nt4mtly2.exe    Mannesmann Tally T2045
+S20541   Nt4mtly2.exe    Mannesmann Tally T7070
+
+Mannesmann Tally T9012 and T9208:
+
+   DownloadDownload Nt4mtly3.exe now
+
+Item ID   Filename       Description
+
+S20542   Nt4mtly3.exe    Mannesmann Tally T9012
+S20542   Nt4mtly3.exe    Mannesmann Tally T9208
+
+Microsoft:
+
+   DownloadDownload Nt4msppd.exe now
+
+Item ID   Filename       Description
+
+S21077     Nt4msppd.exe    Microsoft Publisher Color Printer (postscript)
+S21077     Nt4msppd.exe    Microsoft Publisher Imagesetter (postscript)
+
+Olivetti:
+
+   DownloadDownload Nt4olive.exe now
+
+Item ID   Filename       Description
+
+S20321   Nt4olive.exe    Olivetti JP 70
+S20321   Nt4olive.exe    Olivetti JP 90 (Color)
+S20321   Nt4olive.exe    Olivetti JP 90 (Monochrome)
+S20321   Nt4olive.exe    Olivetti JP 170 (Color)
+S20321   Nt4olive.exe    Olivetti JP 170 (Monochrome)
+S20321   Nt4olive.exe    Olivetti JP 170 S (Color)
+S20321   Nt4olive.exe    Olivetti JP 170 S (Monochrome)
+S20321   Nt4olive.exe    Olivetti JP 270
+S20321   Nt4olive.exe    Olivetti JP 370 (Color)
+S20321   Nt4olive.exe    Olivetti JP 370 (Monochrome)
+S20321   Nt4olive.exe    Olivetti JP 470 (Color)
+S20321   Nt4olive.exe    Olivetti JP 470 (Monochrome)
+
+OKIDATA:
+
+   DownloadDownload Nt4oki2.exe now
+
+Item ID   Filename       Description
+
+S20422   Nt4oki2.exe     OKIPAGE 16n
+
+Sharp:
+
+   DownloadDownload Sharp1.exe now
+
+Item ID   Filename       Description
+
+S20543   Sharp1.exe      Sharp AO-4100P
+
+Tally:
+
+   DownloadDownload Tally1.exe now
+
+Item ID   Filename       Description
+
+S20544   Tally1.exe      Tally T2060 S20544   Tally1.exe      Tally T2060C
+S20544   Tally1.exe      Tally T2060-2T
+
+XEROX 4220/4230/MRP PCL, 4215/MRP PCL, and 4219/MRP PCL:
+
+   DownloadDownload Xerox2.exe now
+
+Item ID   Filename       Description
+
+S20423   Xerox2.exe      Xerox 4220/4230/MRP PCL
+S20423   Xerox2.exe      Xerox 4215/MRP PCL
+S20423   Xerox2.exe      Xerox 4219/MRP PCL
+
+Xerox DWC Pro 610:
+
+   DownloadDownload Nt4x610.exe now
+
+Item ID   Filename       Description
+
+S21142   Nt4x610.exe     Xerox DWC Pro 610
+
+Xerox 3006:
+
+   DownloadDownload Nt4x3006.exe now
+
+Item ID   Filename       Description
+
+S21143   Nt4x3006.exe    Xerox 3006
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+Instructions for Downloading
+----------------------------
+
+
+To download the files:
+
+1. If you are downloading to a floppy disk, you need to have a formatted, blank
+   disk (copy the files to the root directory of the floppy disk). If you are
+   downloading to your hard disk, create a new subdirectory to place the files
+   in.
+
+   CAUTION: Do not download files directly to your main Windows NT directory.
+   Doing so could overwrite files essential to the proper operation of your
+   system.
+
+2. Follow the download procedure. The file you download is the executable or
+   program (.exe) file that you identified in the "Files Available from Online
+   Services" section of this article. This file contains all of the files that
+   you need to support your device.
+
+   Download the .exe file to your floppy disk or to the new subdirectory that you
+   created on your hard disk.
+
+3. Change to the floppy disk drive (or the subdirectory on your hard disk) that
+   contains the .exe file. At the MS-DOS prompt, type "<filename> -d"
+   (without the quotation marks), and then press the ENTER key.
+
+   When the .exe file finishes running, all of the files that you need to support
+   your device, such as a .drv file and an Oemsetup.inf file, are set up. You
+   are also provided with a .txt file that contains instructions on how to
+   install the device drivers (or other software) and a licensing agreement.
+
+   The -d switch causes the file to recreate any subdirectories in the original
+   files, and is very important when you extract files from executables that
+   contain multiple platform versions.
+
+   If you have problems when you extract the files, try downloading the files
+   again.
+
+The third-party products that are discussed in this article are manufactured by
+companies that are independent of Microsoft. Microsoft makes no warranty,
+implied or otherwise, regarding the performance or reliability of these
+products.
+
+Additional query words: prodnt ntprint print
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbprint kbPrinting kbHardware kbgraphxlinkcritical 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

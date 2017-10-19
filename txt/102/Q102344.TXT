@@ -1,0 +1,100 @@
+DOCUMENT:Q102344  20-MAY-2002  [techinfo]
+TITLE   :Microsoft Product Support Options Q&A
+PRODUCT :Microsoft Product Support Information
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbenable kbEnableHear
+
+======================================================================
+SUMMARY
+=======
+
+
+This article provides answers to frequently asked questions about the support
+options available to customers using Microsoft products.
+
+NOTE: Microsoft support services are subject to Microsoft's prices, terms, and
+conditions that are in place at the time the service is used.
+
+MORE INFORMATION
+================
+
+1. Q. Where can I obtain presale information (such as pricing, upgrade policies,
+   release dates, and so forth) for Microsoft products?
+
+   A. Call Microsoft Consumer Sales at (800) 426-9400. If you are outside the
+   United States, contact the Microsoft subsidiary for your area. To locate your
+   subsidiary, see the Microsoft World Wide Offices Web site at:
+
+   http://www.microsoft.com/worldwide/default.htm
+
+2. Q. How can I get the latest printer driver for my printer?
+
+   A. Check with the manufacturer of the printer driver for the latest version.
+   Other places you can check include the Microsoft Download Center
+   (http://www.microsoft.com/downloads/search.asp) and the Microsoft FTP site
+   (ftp://ftp.microsoft.com/softlib).
+
+3. Q. Where can I go for product support for Microsoft products?
+
+   A. You can get additional product support from the following sources:
+    - Microsoft Product Support Services (PSS). You can reach Microsoft Product
+      Support Services between 6:00 A.M. and 6:00 P.M. Pacific time, Monday
+      through Friday. To obtain the support phone number for your product, refer
+      to your product literature or call (800) 426-9400 and select option 1. You
+      may also get support phone numbers and options information from the
+      following Microsoft web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+4. Q. If I call for support or post a message on the internet, what information
+   should I include?
+
+   A. When you call or post a message, you should be at your computer and have
+   the appropriate product documentation at hand. Be prepared to give the
+   following information:
+    - The version number of Microsoft product you are using.
+
+    - The type of hardware you are using, including network hardware if
+      applicable, and the operating environment that you are using.
+
+    - The contents of your Config.sys and Autoexec.bat files and
+      network-configuration files, if any.
+
+    - The exact wording of any messages that appeared on your screen.
+
+    - A description of what happened and what you were doing when the problem
+      occurred.
+
+    - The smallest number of steps to reproduce the problem.
+
+    - The steps you have already taken to correct the problem.
+
+5. Q. I have a hearing impairment. Where can I get additional product support on
+   Microsoft products?
+
+   A. Microsoft Product Support Services provides support to customers who are
+   deaf or hard of hearing. Using a special TDD/TT modem, call (425) 635-4948
+   between 6:00 A.M. and 6:00 P.M. Pacific time, Monday through Friday.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenable kbEnableHear 
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

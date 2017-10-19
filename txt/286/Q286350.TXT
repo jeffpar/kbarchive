@@ -1,0 +1,1028 @@
+DOCUMENT:Q286350  15-AUG-2002  [iis]
+TITLE   :HOWTO: Use Autodump+ to Troubleshoot "Hangs" and "Crashes"
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbDebug kbWinDNA kbGrpDSSIE kbDSupport kbIIS kbiis300 kbiis400 kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Autodump+ (AD+) is a new tool from Microsoft Product Support Services (PSS) that
+can troubleshoot any process or application that stops responding (hangs) or
+fails (crashes). AD+ (ADPlus.vbs) can often be used as a replacement tool for
+the Microsoft Internet Information Server (IIS) Exception Monitor (6.1/7.1) and
+User Mode Process Dump, which are two separate tools that PSS often uses to
+isolate the causes of crashes and hangs in WinDNA environments.
+
+MORE INFORMATION
+================
+
+What Does AD+ Do?
+-----------------
+
+AD+ is console-based Microsoft Visual Basic script. It automates the Microsoft
+CDB debugger to produce memory dumps and log files that contain debug output
+from one or more processes. Each time AD+ is run, debugging information (memory
+dumps and text files that contain debug information) is placed in a new,
+uniquely named folder (such as
+C:\Temp\Crash_Mode__Date_01-22-2001__Time_09-41-08AM) on the local file system
+or a remote network share. In addition, each file that AD+ creates is also given
+a unique name (such as
+PID-1708__Inetinfo.exe__Date_01-22-2001__Time_09-41-08AM.log) to avoid
+overwriting older files with newer ones.
+
+AD+ works with any user mode process or service such as IIS, Microsoft
+Transaction Server (MTS), or Microsoft COM+ applications.
+
+The following list outlines some of the features of AD+:
+
+ - AD+ uses the latest Microsoft debuggers for improved features, speed, and
+   reliability.
+
+ - When AD+ is dumping memory for multiple processes, it does so asynchronously
+   so that each process is frozen and dumped at the same time, which can provide
+   an effective "snapshot" of the entire application at the time AD+ was run. It
+   is important to capture all of the processes that compose a given application
+   and all the processes that a given application makes use of at the same time
+   so that you can capture the state of the application at the time the problem
+   occurrs. This is especially important for applications that make remote
+   procedure calls to other processes.
+
+ - AD+ has a command-line interface. Because AD+ does not have a graphical user
+   interface, it can be run in "quiet" mode (to suppress dialog boxes) from
+   within a remote command shell (a command shell that is remoted out by using
+   Remote.exe). In quiet mode, errors are displayed in the console and written
+   to the event log. For more information on how to run AD+ from a remote
+   command shell, refer to the "Usage Scenarios" section of this article.
+
+ - When AD+ monitors for crashes, if the '-notify' switch is used, AD+ can alert
+   a user or computer of a crash through the Windows Messenger service if it is
+   started.
+
+ - When AD+ monitors a process in crash mode, if a crash occurs, AD+ sends
+   important information about the type of crash to the event log.
+
+ - AD+ supports XCOPY deployment. If you install the debuggers package that
+   ships with AD+ on a test computer, you can copy the folder to which the
+   debuggers were installed to another computer. In addition, AD+ does not
+   require that you register any custom Component Object Model (COM) components
+   on the system, which makes this tool ideal for use on production servers that
+   have a locked-down software configuration. To remove AD+, simply delete the
+   folder to which it was installed or copied.
+
+When Should You Use AD+?
+------------------------
+
+AD+ is intended to provide Microsoft PSS support professionals with debugging
+information that is needed to isolate the cause of problems that arise in
+complex environments.
+
+You should use AD+ to capture debugging information if you are experiencing the
+following problems:
+
+ - Processes that hang.
+
+ - Processes that consume 100 percent CPU on a single processor computer, 50
+   percent CPU on a dual processor computer, 25 percent CPU on a quad processor
+   computer, and so on.
+
+ - Processes that crash or shut down unexpectedly.
+
+When Should You Not Use AD+?
+----------------------------
+
+You should not use AD+ in the following situations:
+
+ - If you need to troubleshoot a program or process that terminates unexpectedly
+   upon startup. You can only use AD+ with processes that start successfully. If
+   you need to troubleshoot processes that terminate unexpectedly upon startup,
+   User Mode Process Dump may be a better solution. For more information about
+   User Mode Process Dump, see the following article is the Microsoft Knowledge
+   Base:
+
+   Q253066 OEM Support Tools Phase 3 Service Release 2 Availability
+
+   Alternatively, you can use the latest debuggers to manually debug the process.
+   For more information about the latest debuggers, see the following Microsoft
+   Web site:
+
+   http://www.microsoft.com/ddk/debugging/
+
+ - If there is a noticeable performance impact when you use AD+ in crash mode.
+   This is usually caused by dynamic-link libraries (DLLs) or programs that
+   throw a large number of Microsoft Visual C++ EH exceptions (which occur when
+   you use the C++ throw statement or when you use try/catch blocks). Programs
+   that write a large amount of information to the debug output stream can also
+   cause a performance degradation. In the vast majority of cases, AD+ does not
+   impact performance noticeably when it is running in crash mode.
+
+Where Do You Get AD+?
+---------------------
+
+AD+ comes with the latest Microsoft Debugging Tools for Windows, which you can
+download from the following Microsoft Web site:
+
+   http://www.microsoft.com/ddk/debugging/
+
+How Does AD+ Work?
+------------------
+
+AD+ has three modes of operation:
+
+ - "Hang" mode is used to troubleshoot process hangs, 100 percent CPU
+   utilization, and other problems that do not involve a crash. When you use AD+
+   in hang mode, you must wait until the process or processes hang before you
+   run the script (that is, it is not perisistent like crash mode).
+
+ - "Crash" mode is used to troubleshoot crashes that result in Dr. Watson
+   errors, or any other type of error that causes a program or service to
+   terminate unexpectedly. When you use AD+ in crash mode, you must start AD+
+   before the crash occurs. AD+ can be configured to notify an administrator or
+   a computer of a crash through the '-notify' switch.
+
+ - "Quick" mode is a light-weight version of hang mode that produces mini memory
+   dumps of the specified processes and a debug log file with extended debugging
+   information. For processes that consume large amounts of virtual memory,
+   quick mode can be significantly faster than regular hang mode.
+
+Hang Mode:
+
+In this mode, AD+ immediately produces full memory dumps for all of the processes
+that are specified on the command line after the script is finished running.
+Each .dmp file created goes into a folder that contains the date/time stamp when
+AD+ was run, and each file name contains the process name, the process ID, and
+the date/time stamp when AD+ was run. While the process memory is being dumped
+to a file, the process is frozen. After the memory dump is finished, the process
+is resumed by using a non-invasive attach/detach with the CDB debugger.
+
+Usage Tip: You can use AD+ in hang mode in place of Userdump.exe to dump the
+memory for one or more processes. In addition, hang mode works inside a Terminal
+Server session.
+
+Quick Mode:
+
+In this mode, AD+ produces log files from a scripted debug session and mini
+memory dumps, which are usually less than 100 KB in size. This mode is usually
+faster than creating full memory dumps for each process that is specified on the
+command line, and the output can often be zipped and sent in an e-mail message
+(such as to a Microsoft PSS support professional for analysis), as compared with
+having to place the files on an FTP site or some other method of transfer.
+
+Crash Mode:
+
+In this mode, AD+ attaches the CDB debugger to all processes that are specified
+on the command line and automatically configures the debugger to monitor for the
+following kinds of exceptions:
+
+ - Invalid Handle
+ - Illegal Instruction
+ - Integer Divide by Zero
+ - Floating Point Divide by Zero
+ - Integer Overflow
+ - Invalid Lock Sequence
+ - Access Violation
+ - Stack Overflow
+ - C++ EH Exception
+ - Unknown Exception
+
+You can use AD+ in crash mode in place of the IIS Exception Monitor or
+Userdump.exe when you are troubleshooting these kinds of exceptions. Because
+crash mode uses an "invasive" attach through the CDB debugger, it does not work
+inside of a Microsoft Windows NT 4.0 or Windows 2000 Terminal Server session;
+only quick and hang modes work inside of a terminal server session on these
+platforms due to the use of a non-invasive attach. For more information on how
+to invasively and non-invasively attach to a process with the latest debuggers,
+refer to the "Using Debugging Tools for Windows: Attaching to a Running Process
+(User Mode)" section in the debuggers help.
+
+NOTE: Crash mode is supported in a terminal server session on Windows XP and
+Windows .NET Server platforms.
+
+When AD+ is running in crash mode, a debugger remains attached to each process
+that is specified on the command line for the lifetime of that process until a
+fatal exception is trapped and the process crashes, or until a user presses the
+CTRL+C key combination to detach the debugger from that process. To manually
+detach the debugger from the process, you must maximize the debugger window and
+press CTRL+C to break into the debugger. When you press CTRL+C, AD+ traps this
+command, begins to list the stacks for all threads to a log file and then
+produces a mini memory dump of the process before it detaches from the debugger.
+Because crash mode performs an invasive attach, the process is terminated when
+the debugger is detached, and it will have to be restarted. If it is an MTS or
+COM+ process, the process is restarted automatically the next time a call is
+made to a component in that package.
+
+First Chance Exceptions
+
+Each kind of exception (access violation, stack overflow, and so on) can be
+raised to a debugger as either a "first chance" or "second chance" exception.
+First chance exceptions are, by definition, non-fatal unless they are not
+handled properly with an error handler, at which point they are raised again as
+a second chance exception (which only a debugger can handle). If no debugger
+handles a second chance exception, the application is shut down.
+
+For additional information on first and second chance exceptions and the Windows
+NT SEH (structured exception handling), click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q105675 INFO: First and Second Chance Exception Handling
+
+By default, when AD+ detects a first chance (non-fatal) exception for all types
+of exceptions except unknown and EH exceptions, it takes the following actions:
+
+1. Pauses the process to log the date and time that the exception occurred in
+   the log file for the process that is being monitored.
+
+2. Logs the thread ID and call stack for the thread that raised the exception in
+   the log file for the process that is being monitored.
+
+3. Produces a uniquely named mini memory dump (.dump -u /m) of the process at
+   the time the exception occurred and then resumes the process.
+
+NOTE: By default, AD+ does not produce a unique mini memory dump for first chance
+EH and unknown exceptions because it is quite common for a process to encounter
+a significant number of these exceptions, which are usually handled by error
+handling code within a process or DLL. In other words, these exceptions are
+usually handled exceptions, and they do not become second chance (unhandled)
+exceptions, which terminate the process.
+
+However, you can configure AD+ to produce unique mini memory dumps for first
+chance EH and unknown exceptions. To do this, you must set a constant in the
+script.
+
+Second Chance Exceptions
+
+When AD+ detects a second chance (fatal) exception for all types of exceptions
+(including EH and unknown exceptions), it takes the following actions:
+
+1. Pauses the process to log the date and time that the exception occurred in
+   the log file for the process that is being monitored.
+
+2. Logs the thread ID and call stack for the thread that raised the exception in
+   the log file for the process that is being monitored.
+
+3. Produces a full memory dump of the process at the time the fatal exception
+   occurred and then exits the debugger, which destroys the process.
+
+Usage Tip: Although it is usually not necessary in most cases, you can change the
+default behavior of AD+ by using pre-defined constants that are located near the
+beginning of the script. To configure AD+ to do this, edit ADPlus.vbs with a
+text editor and search for the following constants:
+
+   ' Set DEBUGGING = TRUE to turn on verbose debug output, which is useful for troubleshooting
+   ' ADPlus problems.
+   Const DEBUGGING = FALSE
+
+   ' Set Full_Dump_on_CONTRL_C to TRUE if you want to have ADPlus produce a full memory dump
+   ' (as opposed to a mini memory dump) whenever CTRL-C is pressed to stop debugging
+   ' when running in crash mode.
+   ' NOTE: Depending on the number of processes that are being monitored, this could generate
+   ' a signifigant amount of memory dumps.
+   Const Full_Dump_on_CONTRL_C = FALSE
+
+   ' Set Create_Full_Dump_on_1st_Chance_Exception to TRUE if you want ADPlus to produce
+   ' a full memory dump for the process each time it encounters a first chance exception.
+   ' This is disabled by default for performance reasons. This is particularly useful
+   ' if you are troubleshooting MTS or COM+ packages that get shut down after a first chance
+   ' unhandled exception and do not reach a second chance exception state before the process
+   ' is shut down.
+   Const Create_Full_Dump_on_1st_Chance_Exception = FALSE
+
+   ' Set No_Dump_on_1st_Chance_Exception to TRUE if you do not want ADPlus to produce any memory
+   ' dumps when it encounters first chance exceptions. You may want to do this if a very high rate
+   ' of first chance exceptions is encountered (for example, hundreds per minute)
+   ' and if the debugger is spending too much time producing mini memory dumps, which
+   ' cause the process to appear to hang.
+   ' NOTE: You should NOT set this constant to TRUE if
+   ' Create_Full_Dump_on_1st_Chance_Exception (the preceding constant) is ALSO set to TRUE
+   ' because this produces mutually exclusive behavior.
+   Const No_Dump_on_1st_Chance_Exception = FALSE
+
+   ' Set Dump_on_EH_Exceptions to TRUE if you want ADPlus to produce a memory dump each time
+   ' it encounters a C++ EH exception. This is disabled by default for performance reasons.
+   Const Dump_on_EH_Exceptions = FALSE
+
+   ' Set Dump_on_Unknown_Exceptions = TRUE if you want ADPlus to produce a memory dump each time
+   ' it encounters an unknown exception. This is disabled by default for performance reasons.
+   Const Dump_on_Unknown_Exceptions = FALSE
+
+   ' Set Dump_Stack_on_DLL_Load = TRUE if you want ADPlus to dump the stack each time
+   ' a DLL is loaded. This is disabled by default for performance reasons.
+   Const Dump_Stack_on_DLL_Load = FALSE
+
+   ' Set Dump_Stack_on_DLL_Load_Unload = TRUE if you want ADPlus to dump the stack each time
+   ' a DLL is unloaded. This is disabled by default for performance reasons.
+   Const Dump_Stack_on_DLL_UnLoad = FALSE
+
+   ' Set No_CrashMode_Log = TRUE if you do NOT want ADPlus to create a log file in Crash Mode.
+   ' If a process is generating a lot of exceptions, the debug log file that is created
+   ' in crash mode can become quite large.
+   Const No_CrashMode_Log = FALSE
+
+   ' Set No_Free_Space_Checking = TRUE if you do NOT want ADPlus to check for free space
+   ' before running. Certain RAID drivers can cause problems for the free space checking
+   ' routines, and it may be necessary to set this to TRUE to allow ADPlus to run.
+   Const No_Free_Space_Checking = FALSE
+
+   ' Set MAX_APPLICATIONS_TO_DEBUG to whatever upper limit you want to impose on the -IIS switch.
+   ' By default, MAX_APPLICATIONS_TO_DEBUG defaults to 20 to limit the number of MTS
+   ' or COM+ applications ADPlus will dump or monitor.
+   ' NOTE: If there are 30 running MTS or COM+ applications, and MAX_APPLICATIONS_TO_DEBUG
+   ' is set to 20, ADPlus displays an error message that indicates that there are too many
+   ' applications running and then quits.
+   Const MAX_APPLICATIONS_TO_DEBUG = 20
+
+NOTE: For Microsoft PSS support professionals to analyze memory dumps, it may be
+necessary to obtain copies of any custom components or DLLs and their
+corresponding symbol files. For additional information about how to create
+symbol files for your DLLs, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q121366 INFO: PDB and DBG Files - What They Are and How They Work
+
+   Q291585 HOWTO: Create Debug Symbols for a Visual C++ Application
+
+For more information on obtaining symbols for Microsoft products (needed for
+analyzing memory dumps with the debuggers), please refer to the following web
+site: http://www.microsoft.com/ddk/debugging/symbols.asp
+
+AD+ Command Line Switches
+-------------------------
+
+To use AD+, you must specify a series of command line switches or arguments to
+the script. At a minimum, AD+ requires two switches: one that specifies the mode
+of operation, and one that specifies a target process to operate against.
+
+The following list outlines the supported switches:
+
+ - -hang
+
+   This switch configures AD+ to run in hang mode. You must use this switch with
+   the -iis, -pn, or -p switches; you cannot use -hang with the -crash or -quick
+   switches.
+
+   NOTE: When AD+ is running in hang mode, AD+ must be started after the process
+   hangs or is consuming high CPU utilization.
+
+ - -crash
+
+   This switch configures AD+ to run in crash mode. You must use this switch with
+   the -iis, -pn, or -p switches; you cannot use -crash with the -hang or -quick
+   switches.
+
+   NOTE: When AD+ is running in crash mode, AD+ must be started before the
+   process crashes or becomes unstable.
+
+ - -quick
+
+   This switch configures AD+ to run in quick mode. You must use this switch with
+   the -iis, -pn, or -p switches; you cannot use -quick with the -hang or -crash
+   switches.
+
+ - -pn <process name>
+
+   The -pn switch is used to specify a process name that AD+ should analyze. To
+   specify more than one process, use multiple "-pn <process name>"
+   switches. For example:
+
+   "-pn process1.exe -pn process2.exe" (without the quotation marks)
+
+ - -p <process ID>
+
+   The -p switch is used to specify the process ID (PID) of a process that AD+
+   should analyze. To specify more than one process, use multiple -p <PID>
+   switches. For example:
+
+   "-p 1896 -p 1702" (without the quotation marks)
+
+ - -iis
+
+   The -iis switch is used for debugging Internet Information Server (IIS) 4.0 or
+   later servers. When you use AD+ with the -iis switch, AD+ monitors all of the
+   IIS in-process (Inetinfo.exe) and out-of-process (Mtx.exe/Dllhost.exe)
+   applications. The -iis switch can be used in addition to the -pn or -p
+   switches, or it can be used by itself to analyze IIS and all running MTS/COM+
+   applications in either crash, hang, or quick modes.
+
+   If you are trying to analyze an IIS 3.0 (or earlier) server, you should use
+   the -pn switch and specify Inetinfo.exe as the process to monitor.
+
+ - -notify <COMPUTERNAME> or <USERNAME>
+
+   This switch is only valid when AD+ is running in crash mode. This switch tells
+   AD+ to alert the specified user name or computer name of a crash. Thus, a
+   notification is sent to the remote user or computer through the local
+   messenger service if it is started on the computer that is being debugged
+   whenever the debugger detaches from the process due to a second chance
+   exception or a user presses CTRL+C to stop debugging.
+
+ - -quiet
+
+   This switch tells AD+ to suppress all modal dialog boxes. This switch is
+   useful if you are running AD+ from within a remote command shell where modal
+   dialog boxes can cause AD+ to wait indefinitely for a user to press OK. For
+   best results, make sure this is the first switch passed to ADPlus.vbs.
+
+ - -o <output directory>
+
+   This switch tells AD+ where to place the debug output files. Long file names
+   should be placed within double quotation marks. In addition, a UNC path
+   (\\<server>\<share>) can also be used. If a UNC path is used, AD+
+   creates a new folder immediately below the UNC path that is specified with
+   the name of the server on which AD+ is running (for example,
+   \\<server>\<share>\Web1 or \\<server>\<share>\Web2).
+   This switch is useful if AD+ is running on multiple computers in a Web farm
+   that are all placing their output on the same network share.
+
+ - -pageheap
+
+   Only use this switch when you want to produce a full memory dump in response
+   to a debug break (80000003) exception. Debug break exceptions are typically
+   raised in response to some serious error that should be investigated further
+   when you are running under debug builds of a DLL, when you are running a
+   process under a debugger (for example, when AD+ is running in crash mode), or
+   when pageheap-related options are enabled on a process through the Gflags.exe
+   utility. If you specify the -pageheap switch on the command line, AD+ creates
+   a full memory dump, and the debugger quits when a debug break exception is
+   raised. This behavior is identical to what happens when an Administrator
+   presses CTRL+C to stop debugging a process, except the file names are
+   different.
+
+   For additional information on using the pageheap options with Gflags.exe to
+   troubleshoot memory corruption, click the article numbers below to view the
+   articles in the Microsoft Knowledge Base:
+
+   Q268343 Umdhtools.exe: How to Use Umdh.exe to Find Memory Leaks
+
+   Q267802 Page Heap Enhancements Included with Windows 2000 Service Pack 1
+
+Running AD+ for the First Time
+------------------------------
+
+By default, debuggers install to the C:\Program Files\Debugging Tools for Windows
+folder. To change the installation directory, do a custom install when you
+install the debuggers, and specify a different directory. Alternatively, if a
+typical installation was performed, simply copy the contents of the Program
+Files\Debugging Tools for Windows folder to a different directory.
+
+To run AD+, open a command shell, switch to the folder to which the debuggers
+were installed or copied, and type "ADPlus.vbs" (without the quotation marks).
+
+You may be prompted to change your default script interpreter from Wscript.exe to
+Cscript.exe. Microsoft strongly recommends that you allow AD+ to configure
+CSCript as the default script interpreter.
+
+Syntax:
+
+AD+ uses the following syntax:
+
+   ADPlus.vbs <mode of operation> <processes to monitor>
+   <optional switches>
+
+where <mode of operation> is -quick, -hang, or -crash
+where <processes to monitor> is -iis, -pn <process>.exe, or -p
+<PID>
+where <optional switches> is -notify, -o, -quiet, or -pageheap
+
+Preparing the Server for Crash Mode Debugging
+---------------------------------------------
+
+Before you run AD+ in crash mode, you should properly prepare the server to get
+the most information out of the AD+ crash mode debugging sessions.
+
+Steps to Prepare a Windows 2000 Server for Debugging in Crash Mode:
+
+1. Install the Windows 2000 SP1 or SP2 symbols to the C:\WINNT\Symbols folder on
+   your servers. You can download the symbols from the following Microsoft Web
+   sites:
+
+   Windows 2000 SP1
+
+   http://www.microsoft.com/windows2000/downloads/servicepacks/sp1/debug/default.asp
+
+   Windows 2000 SP2
+
+   http://www.microsoft.com/windows2000/downloads/servicepacks/sp2/debug/default.asp
+
+   After you download Sp1sym.exe or Sp2sym.exe, run the file from the designated
+   folder.
+
+2. When you are prompted, extract the files to a new temporary folder, such as
+   C:\Sp1sym or C:\Sp2sym, or to a drive or folder that has enough disk space.
+
+3. Run C:\Sp1sym\Support\Debug\Symbols\i386\Symbolsx.exe or
+   C:\Sp2sym\Support\Debug\Symbols\i386\Symbolsx.exe (where C:\Sp1sym or
+   C:\Sp2sym is the folder to which you extracted the files in the preceding
+   step).
+
+4. When you prompted with the EULA, click Yes.
+
+5. When you are prompted for a directory to which you can extract the files,
+   click C:\WINNT\Symbols, and then click OK. Notice that a new C:\WINNT\Symbols
+   directory appears with various subdirectories named DLL, EXE, and so on.
+
+6. Copy the symbols for your custom DLLs and any post SP1 or SP2 hotfixes to the
+   C:\WINNT\Symbols\Dll folder.
+
+7. Copy the symbols for your custom .exe files to the C:\WINNT\Symbols\Exe
+   folder. In addition, you must obtain any .pdb or .dbg files from your
+   developers and place these files in the C:\WINNT\Symbols\Dll folder.
+
+8. Overwrite any .dbg or .pdb files that already exist in the
+   C:\WINNT\Symbols\Dll directory with versions from your hotfixes.
+
+   NOTE: You can use the latest version of Winzip to open hotfix packages. You
+   can extract the symbols from the \Debug subdirectory, which is contained in
+   each hotfix self-installer.
+
+9. Create an _NT_SYMBOL_PATH environment variable, and set it equal to
+   "C:\WINNT\Symbols". This variable can be either a system or user environment
+   variable.
+
+Steps to Prepare a Windows NT 4.0 Server for Debugging in Crash Mode:
+
+1. Assuming that you are running Windows NT 4.0 Service Pack 6a, install the
+   Windows NT 4.0 SP6a symbols to the C:\WINNT\Symbols folder on your servers.
+   You can download the symbols from the following Microsoft Web site:
+
+   http://www.microsoft.com/ntserver/nts/downloads/recommended/SP6/debug/default.asp
+
+   After you download Sp6symi.exe, run it from the designated folder.
+
+2. When you are prompted, extract the files to the C:\WINNT folder (or
+   substitute the appropriate \WINNT directory if the symbols were not installed
+   to C:\WINNT). Notice that a new C:\WINNT\Symbols folder appears with various
+   subdirectories named DLL, EXE, and so on.
+
+3. Copy the subdirectories from the C:\WINNT\Symbols\IIS4 directory to
+   C:\WINNT\Symbols. When you are prompted to overwrite all the files, click
+   Yes.
+
+4. Copy the symbols for your custom DLLs and any post SP6a hotfixes to the
+   C:\WINNT\Symbols\Dll folder.
+
+5. Copy the symbols for your custom .exe files to the C:\WINNT\Symbols\Exe
+   folder. In addition, you must obtain any .pdb or .dbg files from your
+   developers and place these files in the C:\WINNT\Symbols\Dll directory.
+
+6. Overwrite any .dbg or .pdb files that already exist in the
+   C:\WINNT\Symbols\Dll directory with versions from your hotfixes.
+
+   NOTE: You can use the latest version of Winzip to open hotfix packages. You
+   can extract the symbols from the \Debug subdirectory, which is contained in
+   each hotfix self-installer.
+
+7. Create an _NT_SYMBOL_PATH environment variable, and set it equal to
+   "C:\WINNT\Symbols". This variable can be either a system or user environment
+   variable.
+
+Though it is not required that you download and install symbols on the servers
+that are being debugged, it is highly recommended. When you download and install
+symbols on the server, the output that is captured in the log files is much more
+useful to Microsoft PSS.
+
+For additional information about acquiring Microsoft Debug Symbols, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q268343 Umdhtools.exe: How to Use Umdh.exe to Find Memory Leaks
+
+After you configure your servers, you can run AD+ in crash mode, which is
+detailed in the "Common AD+ Usage Scenarios" section.
+
+Common AD+ Usage Scenarios
+--------------------------
+
+This section outlines some of the more common scenarios in which it may be
+necessary to run AD+.
+
+Process Hangs or Consumes 100 Percent CPU Utilization:
+
+In this scenario, a process may randomly consume 100 percent CPU for sustained
+periods of time or indefinitely. You should run AD+ in hang mode to obtain a
+memory dump of the process or processes that are consuming the CPU after the
+problem occurs. For example, use one of the following command syntaxes:
+
+   "ADPlus -hang -p 1896" (without the quotation marks)
+
+   This command runs AD+ in hang mode and produces a full memory dump of a
+   process with PID 1896.
+
+   "ADPlus -hang -pn myapp.exe" (without the quotation marks)
+
+   This command runs AD+ in hang mode and produces full memory dumps of all
+   processes that are named Myapp.exe.
+
+   "ADPlus -hang -iis -pn myapp.exe -o c:\temp" (without the quotation marks)
+
+   This command runs AD+ in hang mode and produces full memory dumps of IIS, all
+   instances of Mtx.exe or Dllhost.exe, and all processes that are named
+   Myapp.exe. It then places the memory dumps in the C:\Temp folder.
+
+Running AD+ in hang mode during the 100 percent CPU condition produces memory
+dumps of the process or processes that are specified on the command line.
+
+NOTE: In certain rare situations, it may not be possible for the debugger to
+attach to the process after the 100 percent CPU condition or hang has occurred,
+and running AD+ in hang mode after the problem has occurred may not produce
+memory dumps. In these scenarios, it may be best to attach the debugger before
+the problem has occurred. To do this, run AD+ in crash mode as follows:
+
+   "ADPlus -crash -p 1896" (without the quotation marks)
+
+   This command runs AD+ in crash mode for a process with PID 1896 and waits for
+   an exception or a user to press CTRL+C in the minimized debugger window to
+   generate a memory dump and detach the debugger.
+
+   "ADPlus -crash -pn myapp.exe" (without the quotation marks)
+
+   This command runs AD+ in crash mode for the process named Myapp.exe and waits
+   for an exception or a user to press CTRL+C in the minimized debugger window
+   to generate a memory dump and detach the debugger.
+
+   "ADPlus -crash -iis -pn myapp.exe -o c:\temp" (without the quotation marks)
+
+   This command runs AD+ in crash mode for all instances of the process named
+   Myapp.exe, in addition to Inetinfo.exe and all instances of Mtx.exe or
+   Dllhost.exe. The minimized debugger(s) then wait for an exception or a user
+   to press CTRL+C in the minimized debugger window(s) to generate a memory dump
+   and detach the debugger(s). The memory dumps and log files are then placed in
+   the C:\Temp folder.
+
+Then, after the process hangs or is consuming 100 percent CPU utilization, the
+user can press CTRL+C in the minimized debugger window(s) that AD+ generates so
+that the debugger can generate a memory dump for the process(s).
+
+NOTE: By default, AD+ only produces mini memory dumps when the user presses
+CTRL+C to conserve disk space. In this scenario, it may be useful to configure
+AD+ to generate a full memory dump when the user presses CTRL+C. To do this, set
+the Full_Dump_on_CONTRL_C constant to TRUE (for example, Const
+Full_Dump_on_CONTRL_C = TRUE). In addition, it is often helpful to capture a
+performance or system monitor log file for the time period up to and including
+the 100 percent CPU condition. At a minimum, this log file should capture the
+following objects at 1 to 5 second intervals:
+
+ - Memory
+ - Process
+ - Processor
+ - System
+ - Thread
+
+Process Ends Unexpectedly:
+
+In this scenario, a process may randomly crash or shut down unexpectedly. You
+should run AD+ in crash mode to obtain a memory dump of the process or processes
+that are crashing before the problem occurs. For example, use one of the
+following command syntaxes:
+
+   "ADPlus -crash -iis" (without the quotation marks)
+
+   This command runs AD+ in crash mode and causes it to attach the CDB debugger
+   to Inetinfo.exe and all Mtx.exe or Dllhost.exe processes that are running on
+   the computer. AD+ then waits for any first chance and second chance
+   exceptions. Because the -o switch is omitted, AD+ places all files in a
+   subfolder below the installation folder by default.
+
+   "ADPlus -quiet -crash -iis -notify <remote computer> -o c:\temp"
+   (without the quotation marks)
+
+   This command runs AD+ quietly (no pop up dialog boxes, log all output to the
+   event log) in crash mode and causes it to attach the CDB debugger to
+   Inetinfo.exe and all Mtx.exe or Dllhost.exe processes that are running on the
+   computer. Because the -notify switch is used, the debuggers notify all users
+   who are logged on to the computer named <remote computer> whenever a
+   crash is detected or when the process that is being monitored shuts down.
+   Because the -o switch is used, all output is placed in the C:\Temp folder. If
+   the folder does not exist, it is created.
+
+   "ADPlus -crash -iis -o \\<server>\<share>" (without the quotation
+   marks)
+
+   This command is the same as the previous one except that it logs all output to
+   a network server. A new subfolder is created under \\server\share and named
+   after the local computer. Thus, if you are running AD+ in a Web farm, each
+   server in the farm on which AD+ is running logs its own unique folder under
+   \\server\share. (You do not have to create unique folders for each server;
+   this is done automatically.)
+
+NOTE: If you are running AD+ in crash mode from the local console (as opposed to
+a remote command shell, which is described in the next section), you must remain
+logged on to the console for the duration of the debug session.
+
+For example, when AD+ is launched in crash mode, if you use the -iis switch to
+monitor IIS, when the launching user logs out of the console, the copies of
+Cdb.exe that are running on the console will be closed (along with all other
+running applications). As a result, debugging stops, and the process that is
+being monitored is ended.
+
+To avoid this issue, you can lock the console session (press the CTRL+ALT+DEL key
+combination, and then click Lock Computer) or run AD+ inside a remote command
+shell that has been scheduled to run non-interactively (that is, it does not
+require an interactive logon).
+
+For more information on scheduling a remote command shell to run
+non-interactively, refer to the "Common AD+ Usage Scenarios: Running in Crash
+Mode Remotely" section.
+
+MTS or COM+ Server Application Ends Unexpectedly:
+
+Custom Component Object Model (COM) components that run inside of an MTS or COM+
+server application actually run inside of a surrogate process (Mtx.exe or
+Dllhost.exe). These surrogate processes have properties and settings that you
+can configure through the MTS Explorer (for Windows NT 4.0) or the Component
+Services Microsoft Management Console (MMC) snap-in (for Windows 2000, Windows
+XP, and Microsoft .NET Server).
+
+By default, MTS or COM+ server applications are configured to shut down after 3
+minutes of idle time. To ensure that these processes remain running while the
+debugger is attached and monitoring for exceptions, you must configure them to
+"Leave running when idle".
+
+In addition, MTS and COM+ implement a failfast, which is a safeguard that is
+designed to fail (or shut down) MTS/COM+ processes that generate unhandled
+access violations.
+
+Failfast is enabled by default in MTS or COM+ applications that raise unhandled
+access violation exceptions. As a result, a failing MTS/COM+ server application
+never gets a chance to raise a second chance access violation exception (that
+is, it is shut down after the first chance acess violation). By default, AD+ is
+configured to only produce a mini memory dump on first chance exceptions.
+
+The following list outlines the requirements for successfully debugging MTS/COM+
+server applications:
+
+1. Configure the MTS/COM+ server application to "Leave running when idle."
+2. Set the Create_Full_Dump_On_1st_Chance_Exception constant to TRUE in
+   Adplus.vbs.
+3. Run AD+ in crash mode and wait for the application to fail.
+
+NOTE: Because MTS and COM+ shut down a server application, and because the
+process is not given a chance to raise a second chance exception due to the
+failfast policy, you may only be able to obtain a first chance access violation
+memory dump.
+
+Running in Crash Mode Remotely:
+
+There are many occasions when it is necessary to initiate AD+ in crash mode from
+a local client computer to monitor a process that terminates unexpectedly on one
+or more remote servers in a server farm. Typically, on Windows 2000, this is
+done through Windows Terminal Services. However, because it is not possible to
+debug applications that are running in different window stations on Windows NT
+4.0 and Windows 2000, AD+ disables crash mode functionality when it detects that
+it is running inside of a Terminal Services session. The solution is to create a
+batch file that starts a command shell on the remote server, which has been
+shared by using the Remote.exe utility, and then schedule this batch file to run
+on the target server using the 'AT' command (which causes the command shell to
+run non-interactively, similiar to a service). The remote command shell is then
+connected to a local workstation or client computer that uses the same
+Remote.exe utility that was used to start it.
+
+To start a remote command shell on a server by using the 'AT' command, follow
+these steps:
+
+On the remote server (assuming the debuggers are installed to c:\debuggers):
+
+1. Create a new batch filed named Remoteshell.cmd in the C:\Debuggers folder.
+
+2. Add the following line to this batch file:
+
+   " c:\debuggers\remote.exe /s "cmd.exe" remoteshell" (without the quotation
+   marks)
+
+3. At the console on the server or in a Terminal Services session, open a new
+   command shell, and type the following command:
+
+   "AT 15:00 c:\debuggers\remoteshell.cmd" (without the quotation marks)
+
+   where "15:00" is one minute later than the current time. For example, if the
+   current time is 14:59, type 15:00.
+
+4. Wait for the 'AT' command to run.
+
+5. At the command prompt, type "AT" (without the quotation marks) with no
+   parameters to verify that the task has run with no errors.
+
+On the local client:
+
+You should install the debuggers on the local client computer, or, at the very
+least, you should copy the Remote.exe utility locally (it is installed by
+default with the debuggers in the root installation directory).
+
+Assuming that the debuggers and Remote.exe utility are installed to C:\Debuggers,
+follow these steps:
+
+1. At a command prompt, switch to the C:\Debuggers directory.
+
+2. Type the following command:
+
+   "remote.exe /c <remote server> remoteshell" (without the quotation
+   marks)
+
+   where <remote server> is the name of the remote server.
+
+3. Your local command shell is now connected to the remote command shell that is
+   running on the server, and all commands that you type locally will be carried
+   out on the remote server (the "DIR c:\" (without the quotation marks) command
+   lists the contents of the remote server's drive C).
+
+4. In the remote command shell, you can now run AD+ in crash mode as if you were
+   running it locally from the console. However, you must use the -quiet switch
+   to supress all dialog boxes that AD+ displays by default. If you do not use
+   the -quiet switch, the remote command shell will hang after you run AD+ and
+   will not return to a prompt, at which point you must end (or kill) the remote
+   command shell (Cmd.exe) on the server and start a new instance.
+
+5. To send a debug break (CTRL+C) to a process that AD+ is currently debugging
+   remotely through crash mode, you must use the Breakin.exe utility, which is
+   installed by default with the debuggers in the root of the debuggers
+   directory. For example, to stop debugging IIS (Inetinfo.exe) that is running
+   with a process ID of 1975, type the following command in the remote command
+   shell:
+
+   "breakin.exe 1975" (without the quotation marks)
+
+   Alternately, you can use the Kill.exe command (which is also located in the
+   root debuggers directory) to kill any processes that are being debugged.
+
+System Requirements
+-------------------
+
+AD+ has the following minimum requirements:
+
+ - Windows NT 4.0 Service Pack 4 or later
+ - Windows Scripting Host version 2.0 or later
+ - At least 10 MB of free space on the disk or network share where the output
+   files will be placed
+ - Microsoft Debugging Tools for Windows installed
+
+Additional Information and Known Issues
+---------------------------------------
+
+ - How can I determine if AD+ has captured information about a crash or if a
+   process that is being monitored in crash mode has shut down?
+
+   There are several ways to determine this:
+
+    - Use the -notify switch, and ensure that the messenger service is started
+      on the server that is being debugged and on the client computer that will
+      receive notifications.
+
+    - In the output directory, open the .log file for each process in a text
+      editor, and scroll to the end of the file. Look for the following text:
+
+   
+
+   0:070> * -------- AutodumpPlus 4.01 finished running at: --------
+   0:070> .time
+   Debug session time: Mon Aug 06 15:25:15 2001
+   System Uptime: 3 days 17:00:34 
+   Process Uptime: 1 days 3:10:38 
+   0:070> * -------------------------------------------------------
+
+    - In the output directory, look for any .dmp files that contain the phrase
+      "__2nd_chance". If a memory dump is labeled with this phrase, a process
+      has crashed.
+
+    - In the output directory, look for any .dmp files that contain the phrase
+      "__Process_was_shutdown". If a memory dump is labeled with this phrase,
+      the process was killed by an administrator or, if it is an MTS/COM+
+      application, it may have been shut down because the idle limit was
+      reached.
+
+    - In the output directory, look for any .dmp files that contain the phrase
+      "__CTRL-C". If a memory dump is labeled with this phrase, either a debug
+      break exception was thrown from a DLL that was running inside the process
+      or someone pressed CTRL+C from the console (or used Breakin.exe if running
+      remotely) to stop the current debugging session.
+
+ - AD+ may display the following error:
+
+   AutodumpPlus has detected that the following registry value
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\NTFSDisable8Dot3NameCreation
+   is set to 1. AutodumpPlus will not work properly with 8.3 path's disabled.
+   Please set this value to 0 and reboot the server before running AutodumpPlus
+   again.
+
+   For additional information about this registry setting, click the article
+   number below to view the article in the Microsoft Knowledge Base:
+
+   Q121007 How to Disable the 8.3 Name Creation on NTFS Partitions
+
+   NOTE: After you change this value to 0, you may receive the following error
+   message the next time you try to run AD+:
+
+   AutodumpPlus encountered an error trying to get the short path name for the
+   following directory: "C:\Program Files\Debugging Tools for Windows"
+   AutodumpPlus cannot continue.
+
+   Even though 8.3 name creation is now enabled for the NTFS file system, the
+   Debugging Tools for Windows folder was created before 8.3 name creation was
+   allowed; as a result, the file system does not contain a short name
+   representation for this folder. To resolve this issue, create a new folder in
+   anther place on the file system after you enable 8.3 name creation (that is,
+   after you set NTFSDisable8Dot3NameCreation = 0 and reboot the server) and
+   then copy the debuggers to this folder. Then, try to run AD+ again. Please
+   note that this information applies to the given output directory as well as
+   the installation directory. If the output directory that is specified on the
+   command line was created before 8.3 name creation was enabled, it too will
+   cause AD+ to throw this error. To eliminate this error, ensure that the
+   source or installation directory as well as the output directory are created
+   after this value is enabled.
+
+ - AD+ requires that Windows Scripting Host components are installed on the
+   system in order to run. You can download the Windows Scripting Host from the
+   following Microsoft Scripting Web site:
+
+   http://msdn.microsoft.com/scripting
+
+   NOTE: Windows Scripting Host components may already be installed if you have
+   any of the following Microsoft products installed:
+
+   Microsoft Internet Explorer 5
+   Microsoft Office 2000
+   Microsoft Visual InterDev 6.0
+   Microsoft Visual Studio 6.0
+   Microsoft Windows NT Option Pack
+   Microsoft Windows 2000
+
+ - The -iis switch only works if Internet Information Server (IIS) 4.0 or
+   Internet Information Services (IIS) 5.x is installed.
+
+ - When run in quiet mode, AD+ logs information to the event log on systems that
+   are equipped with the Windows Scripting Host version 5.1 or later.
+
+ - If you use the -o switch, the specified path must not contain more than one
+   nonexistent folder. For example, when you specify "-o C:\Temp1\Temp2", if the
+   C:\Temp1 and \Temp2 folders do not exist, AD+ displays an error message,
+   which indicates that the folders do not exist, and AD+ will not create them.
+   If you only specify "-o C:\Temp1", AD+ creates the C:\Temp1 folder if does
+   not exist and places all output files in that folder. If you are specifying
+   multiple subfolders and using the -o switch, ensure that all of the
+   subfolders exist before you run AD+.
+
+ - In COM+, you can configure a server package to launch in the debugger on the
+   Advanced tab in the Properties dialog box of the package. If you enable the
+   Launch in Debugger option, AD+ cannot attach the CDB debugger to a process
+   (by default, only one debugger can be attached to a process at a time).
+
+ - When a remote procedure call (RPC) is made from a process that AD+ is
+   analyzing in crash mode to another process that has failed or has been shut
+   down, the log file that AD+ creates for the process that is being monitored
+   may contain one or more of the following exceptions:
+
+   Unknown exception - code 80010105 (first chance)
+   Unknown exception - code 800706be (first chance)
+   Unknown exception - code 800706ba (first chance)
+
+   These exceptions are normal. RPC raises these exceptions when a call is made
+   from a process that is being monitored to a nonexistent or failed process.
+
+   In addition, if AD+ is monitoring Inetinfo.exe in the AD+ debug log for that
+   process, you may see the following exception:
+
+   Unknown exception - code 800706bf (first chance)
+
+   This exception usually appears after IIS makes a call to an out-of-process
+   (high-isolation) Web site that has failed. It may be followed by two
+   instances of the following exception:
+
+   Unknown exception - code 800706ba (first chance)
+
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q323478 PRB: You Cannot Debug Through a Terminal Server Session
+
+Additional query words: dump autodump troubleshooting 100% execute
+
+======================================================================
+Keywords          : kbDebug kbWinDNA kbGrpDSSIE kbDSupport kbIIS kbiis300 kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : :3.0,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

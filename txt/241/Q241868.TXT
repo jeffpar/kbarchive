@@ -1,0 +1,75 @@
+DOCUMENT:Q241868  30-SEP-1999  [exchange]
+TITLE   :XADM: How to Apply Mailbox Message Size Limits to Mailboxes
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the directory export function in the Microsoft Exchange Server
+Administrator program to limit the amount of storage used by messages sent to or
+from one or more mailboxes.
+
+MORE INFORMATION
+================
+
+To use the directory import function to apply storage limits, you create a Comma
+Separated Values (CSV) file, create new columns in the CSV file, and then import
+the CSV file into the Exchange Server directory. The values you include in the
+new columns are used to create new attributes for the existing mailbox objects
+in the directory.
+
+To apply mailbox message size limits to multiple mailboxes:
+
+1. Export the mailboxes from the directory to a CSV file.
+
+2. Using Microsoft Excel, open the CSV file, and add columns for the Incoming
+   Message Size Limit and Outgoing Message Size Limit, as needed. The titles of
+   the new columns must appear on row 1 of the spreadsheet, and spaces between
+   words in the titles are valid.
+
+3. Enter the values for the Incoming Message Size Limit and Outgoing Message
+   Size Limit in the appropriate cells. Exchange Server interprets the values
+   entered in the message size limit columns as kilobytes (KB). For example, a
+   value of 50 in an Incoming Message Size Limit cell is interpreted as a limit
+   of 50 KB.
+
+4. Save the CSV file.
+
+5. Use directory import to import the CSV file into the directory.
+
+Message limits are now set on the mailboxes, and may be verified on the Limits
+page of the mailbox properties.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

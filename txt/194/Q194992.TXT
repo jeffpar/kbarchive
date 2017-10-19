@@ -1,0 +1,59 @@
+DOCUMENT:Q194992  25-NOV-1999  [powerpt]
+TITLE   :CG3: Clip Gallery Opens Slowly Applying SR-2 Patch
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Clip Gallery 3.0 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Depending on the speed of your computer, Clip Gallery may take as long as half a
+minute to load after you apply the Microsoft Service Release Patch 2 (SR-2) to
+your Microsoft Office 97 or Microsoft PowerPoint 97 installation.
+
+CAUSE
+=====
+
+This problem can occur when you originally installed or updated your Microsoft
+Office 97 installation with the Service Release 1 (SR-1) Enterprise CD, and then
+applied the SR-2 patch.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: ppt97 97 sr1 sr-1 sr 1 sr2 sr-2 2 powerpnt ppt ppt8 8.0 enterprise CDROM update installing setup patching patched patches
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbWordSearch kbFrontPageSearch kbExcelSearch kbPowerPtSearch kbWorksSearch kbPublisherSearch kbClipGallerySearch kbClipGallery300 kbHomePubSearch kbPhotoDrawSearch
+Version           : WINDOWS:3.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

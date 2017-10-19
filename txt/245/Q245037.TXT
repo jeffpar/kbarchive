@@ -1,0 +1,93 @@
+DOCUMENT:Q245037  01-JAN-2000  [winnt]
+TITLE   :Exchange MA May Not Run When Zoomit Starts with Local System
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Zoomit Server service is set to log on as Local System, Exchange (MAPI)
+Management Agent in Microsoft Metadirectory Services (MMS) may not run. In
+addition, the following error message may be displayed:
+
+   ******* "Discovery of Organizations, Sites, and Containers Failed"
+   ******* and " Ensure that your ZOOMIT VIA service has the permissions to
+   ******* read these entries".
+
+CAUSE
+=====
+
+This behavior occurs because the credentials are passed from the Zoomit Server
+service to log on to the Exchange Server computer and pull the information. If
+the Zoomit Server service account does not have the proper credentials on the
+Exchange Server computer, the process is unsuccessful.
+
+RESOLUTION
+==========
+
+To resolve this problem, configure the Zoomit Server service to log on with an
+account that has sufficient permissions to the Exchange Server directory. To
+change the account, use the following steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Services.
+
+2. Locate the Zoomit Server service, and then click Startup.
+
+3. In the Log On As section, click This Account. Use the button to the right of
+   the This Account box to select the domain account with the appropriate
+   permissions.
+
+4. Type and confirm a password for the account, and then click OK.
+
+MORE INFORMATION
+================
+
+The error message is displayed on the screen and is logged in the log files. The
+log files are located in the Zoomserv\Data\Ds\00000001 folder.
+
+NOTE: 00000001 is a number generated for the Management Agent (MA). This number
+may be different, depending on when the MA was installed.
+
+There is a folder for every MA that is created. To find out the location of your
+MA log files:
+
+1. Start Compass, click Bookmarks, and then double-click the Exchange Server MA
+   you created.
+
+2. On the Intermediate Files and Logs tab, click Log Locations.
+
+The log file and location is displayed.
+
+Additional query words: via fail fails
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

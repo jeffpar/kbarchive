@@ -1,0 +1,77 @@
+DOCUMENT:Q141318  11-DEC-1999  [foxpro]
+TITLE   :PRB: "Error #101 in addgraphdata(0)" in Query Designer
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0b,5.0,5.0a
+OPER/SYS:
+KEYWORDS:kberrmsg kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With a laptop installation of Visual FoxPro for Windows, when you try to output
+the results of a query to a graph, the following error message is returned:
+
+   Error #101 in addgraphdata(0): cannot open file fxole30b.dll
+
+CAUSE
+=====
+
+A laptop installation of Visual FoxPro for Windows does not install the
+Fxole30b.dll file.
+
+WORKAROUND
+==========
+
+A complete installation works correctly.
+
+MORE INFORMATION
+================
+
+A complete installation of a previous version of Visual FoxPro will install
+Microsoft Graph. An upgrade of just the laptop version of Visual FoxPro will
+leave the Microsoft Graph files there but will not install the Fxole30b.dll
+file. This allows the Graph button under the Output Settings to be enabled, but
+when you click the button, an error occurs. A complete installation of Visual
+FoxPro installs Fxole30b.dll, so no error is generated.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a query.
+
+2. Choose Graph under the Output Settings.
+
+3. Run Query, and follow steps in Graph Wizard.
+
+4. Click Finish, and the error message appears.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0b,5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

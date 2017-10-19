@@ -1,0 +1,92 @@
+DOCUMENT:Q234805  18-MAY-2001  [exchange]
+TITLE   :XWEB: How to Install OWA and IIS on a Stand-Alone Server
+PRODUCT :Microsoft Exchange
+PROD/VER::2000,3.0,4.0,5.0,5.5,5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP3 
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Internet Information Server versions 3.0, 4.0, 5.0 
+ - the operating system: Microsoft Windows NT 4.0 
+ - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For reasons of scalability, performance, and security, you can install Outlook
+Web Access (OWA) on a server that is not running Microsoft Exchange Server. The
+following article describes how to install OWA in this configuration.
+
+MORE INFORMATION
+================
+
+Before you install Outlook Web Access, ensure that Microsoft Internet
+Information Server (IIS) and Active Server Pages are installed on your Windows
+NT Server. Exchange Server 5.5 can be used with either IIS 4.0 or IIS 3.0;
+Exchange Server 5.5 SP3 is required for proper Exchange 5.5 Server operation on
+Windows 2000 Servers, so its OWA components are needed with IIS 5.0.
+
+NOTE: To sucessfully install OWA components from Exchange Server 5.5, install
+Windows NT 4.0 Service Pack 3 with hotfixes or upgrade your computer to Windows
+NT 4.0 Server SP4. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q179796 Setup Error Installing Exchange 5.5 OWA Components
+
+NOTE: You do not have to install Windows NT 4.0 SP3 to install Active Server
+Pages from the SP3 CD.
+
+1. Run the Exchange Server Setup program.
+
+2. When you select components to install, click to clear all check boxes apart
+   from OWA.
+
+3. Continue with Setup. You are prompted for the name of the Exchange Server
+   computer that OWA will use to look up directory information for mailboxes.
+
+   IMPORTANT: The server that you install OWA on must be able to verify the
+   service account on the Exchange Server computer that you indicated. For this
+   to succeed, the IIS and OWA server must either be in the same Windows NT
+   domain as the Exchange Server computer, or have a trust relationship
+   established with the domain that the Exchange Server computer resides in.
+   Failure to satisfy one of these conditions results in system attendant errors
+   during setup.
+
+In this configuration, the NTLM authentication protocol does not work because
+NTLM only propagates over one network hop (that is, the hop between the browser
+and the IIS/OWA server). Use Basic/Clear Text authentication as an alternative;
+this allows browsers to access all resources regardless of the location of their
+Exchange Server computer.
+
+After Setup is finished, users can log on to their mailbox by using OWA, and the
+requests will be forwarded to the Exchange Server computer appropriately.
+
+Additional query words: SEPERATE DIFFERENT
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbWinNTsearch kbwin2000AdvServSearch kbwin2000DataServSearch kbWinNTSsearch kbwin2000Ssearch kbOutlookSearch kbiisSearch kbExchangeSearch kbExchange550 kbExchange400 kbZNotKeyword2 kbOWASearch kbWinAdvServSearch kbWinDataServSearch kbGraph500
+Version           : :2000,3.0,4.0,5.0,5.5,5.5 SP3
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

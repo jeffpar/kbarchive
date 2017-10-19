@@ -1,0 +1,79 @@
+DOCUMENT:Q138855  13-JUN-2001  [sna]
+TITLE   :SNA Server Incorrectly Flips Sense Code Sent by RUI App.
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Sense codes from a BIND negative response sent by an RUI application are sent
+incorrectly by SNA Server. For example, if an RUI application rejects a BIND
+request with a sense code of 0821000E, a SNA trace shows SNA Server sending a
+sense code of 2108000E instead.
+
+For LUA applications, the primary sense code is flipped and the secondary sense
+code stays in the correct format.
+
+For 3270 Emulator Interface Specification (3270EIS) applications, the primary
+sense code stays in the correct format and the secondary sense code is flipped.
+
+CAUSE
+=====
+
+When an RUI application closes a session with a BIND negative response, or an
+UNBIND request and attaches sense codes, the primary sense code is flipped when
+it is sent out by SNA Server.
+
+
+RESOLUTION
+==========
+
+Microsoft has modified the files, SNASERVR.EXE and WINRUI32.DLL, with the
+updated versions that correct this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

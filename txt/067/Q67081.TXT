@@ -1,0 +1,48 @@
+DOCUMENT:Q67081  31-OCT-1999  [utilities]
+TITLE   :DOCERR: PWB Online Help Lists /D CodeView Option As /O
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1; OS/2:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+ - Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+The online help for the Microsoft Programmer's WorkBench (PWB)
+versions 1.0 and 1.1 contains a minor error in the information
+concerning the setting of the option to have CodeView use disk
+overlays (/D).
+
+From the CodeView Options dialog box in PWB, press F1 for help, choose
+"memory configuration," and then choose "disk overlays." The help
+screen states that this menu item is comparable to the /O command line
+option. The help screen should say it is comparable to the /D command
+line option.
+
+Additional query words: 1.00 1.10 docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,56 @@
+DOCUMENT:Q138986  08-NOV-2001  [homekids]
+TITLE   :3D Movie Maker: Plane/Actor Flips Over When Raising or Lowering
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In 3D Movie Maker, when you record a path using the plane, and use the UP ARROW
+key and DOWN ARROW key to raise and lower the plane's elevation, the plane
+attempts to orient itself, but instead flips over.
+
+The symptoms may also occur if you are moving an actor up or down when performing
+the "At Rest" or "Fly" actions.
+
+STATUS
+======
+
+This is by design.
+
+When the plane or actors follow a recorded path, they attempt to orient
+themselves on three axis. This may occur with At Rest and Fly actions for actors
+and during the plane's "At Rest" action.
+
+Additional query words: 1.00 position 3dmovie three moviemaker mczee melanie upside-down inverts over flops 3dmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

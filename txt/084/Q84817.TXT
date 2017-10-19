@@ -1,0 +1,155 @@
+DOCUMENT:Q84817  26-SEP-1999  [win95x]
+TITLE   :Using the MIDI Mapper
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows MIDI Mapper provides a way for users to customize MIDI setups
+to meet the special needs of their MIDI systems. For proper MIDI file playing,
+you must have the correct MIDI setup selected.
+
+MORE INFORMATION
+================
+
+MIDI files played with the Media Player (MPLAYER.EXE) application supplied with
+Windows 3.1 are played according to the configuration of the current MIDI setup,
+NOT the current value of the patch maps or key maps that appear in the Names
+box.
+
+The patch maps and key maps that are used are specified within each MIDI setup.
+Changing the current patch map setting that is visible from the MIDI Mapper Show
+Patch Maps option in the Name box will not affect the patch map that is used by
+the Media Player unless the current MIDI setup uses that patch map. The same
+functionality applies to the Key Maps setting of the Show option of the MIDI
+Mapper.
+
+If Media Player is not playing MIDI files correctly, the current MIDI setup may
+need to be changed or a custom (new) MIDI setup may need to be created for the
+system.
+
+Use the information below to determine if a suitable MIDI map exists for the
+system, or to create a new MIDI map.
+
+Determining the Current MIDI Setup
+----------------------------------
+
+1. Run Control Panel.
+
+2. Run the MIDI Mapper application. If the MIDI Mapper icon is not present, this
+   indicates that no MIDI-compatible driver is installed. Before proceeding, you
+   must correct this problem by installing a MIDI-compatible driver using the
+   Drivers application within the Control Panel.
+
+3. After the MIDI Mapper starts, change to Show Setups by pressing ALT+S. The
+   current MIDI Mapper setup will be displayed in the Name box.
+
+Components of a MIDI Map
+------------------------
+
+A MIDI map is composed of four components:
+
+1. Dest Chan (Destination Channel): The channel used by the synthesizer to play
+   the sounds on the source channel.
+
+2. Port Name: The MIDI output port that the sounds on the source channel are
+   sent to or played on. A correct value in this box is key to producing desired
+   results. Determining the correct port name is discussed later in this
+   article.
+
+3. Patch Map Name: The name of the patch map to be used with the source channel.
+   Patch maps are used to define which instruments are to be used with the MIDI
+   device. Different patch maps can be assigned for each channel through this
+   field.
+
+4. Active: Determines if MIDI information from the source channel is sent to the
+   port.
+
+Choosing Which Channels to Configure
+------------------------------------
+
+A few general guidelines are offered below. Consult the sound card manufacturer
+to determine which channels the sound card supports if MIDI files do not sound
+correct when used according to the guidelines below.
+
+FM Synthesizers will work best with the last four channels, 13-16. Common sound
+cards in this category are the Media Vision Thunder Board and the Sound Blaster
+I and II cards.
+
+MIDI cards with genuine synthesizers (based on actual sampled sounds) will work
+best with the first ten channels, 1-10. Common sound cards in this category are
+the Roland LAPC-1, Roland Sound Canvas, and Turtle Beach MultiSound card.
+
+Examining MIDI Port Settings of a MIDI Map
+------------------------------------------
+
+The proper port should be verified for each channel supported by the MIDI device.
+If no sounds are played from Media Player with MIDI files, check the port
+settings of the MIDI map very carefully. Many sound cards have multiple ports
+and the correct one should be chosen.
+
+For example, the Media Vision Pro AudioSpectrum card supports two MIDI ports: one
+for connecting an external MIDI connector box through a 15-pin connector, the
+other for an internal FM synthesizer.
+
+When editing a MIDI map, view the port settings supported by the synthesizer by
+highlighting the Port Name box and examining the list box (press ALT+DOWN
+ARROW). This reveals the port options for the Pro AudioSpectrum card:
+
+   Pro Audio MIDI Output
+   Media Vision FM Synth
+
+In this case, the Pro Audio MIDI Output option is the external MIDI port, and the
+Media Vision FM Synth option is for the built-in MIDI synthesizer connected to
+the same speakers that generate output for .WAV files.
+
+If nothing is connected to the external MIDI port, no MIDI sounds will play if
+this port is selected. If .WAV files can play (startup sounds, and so on), then
+an internal synthesizer should be able to be selected if the card supports
+MIDI.
+
+Problems Playing Certain MIDI Files
+-----------------------------------
+
+Not all MIDI files are the same. Depending on how the MIDI file was authored or
+created, the MIDI file might contain MIDI information on channels other than
+those supported by the MIDI device. Usually a MIDI file will contain data on
+channels 1-10 or 13-16. If no output is produced, create a MIDI map that uses
+all channels. (The MIDI file supplied with Windows 3.1, CANYON.MID, contains
+MIDI information on all channels.)
+
+For more information, see pages 185-198 in the "Microsoft Windows User's Guide"
+version 3.1 manual.
+
+Additional query words: 3.10 3.11 3rdparty mediavision proaudio spectrum thunderboard thundercard
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

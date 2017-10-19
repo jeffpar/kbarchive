@@ -1,0 +1,149 @@
+DOCUMENT:Q172416  08-MAY-2002  [iis]
+TITLE   :FTP Clients Cannot Rename Files on Remote FTP Virtual Directory
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you connect to an FTP virtual directory that points to a remote Microsoft
+Windows NT Server (using either an NTFS or FAT partition), you can not rename a
+file that resides in that directory, even if you have full control to the share
+or NTFS permissions. When you try to rename the file, you will get the following
+error message:
+
+   Error 500: Access is denied.
+
+All other actions can be completed as expected (put, get, delete). Also, a file
+located in a local virtual directory may be successfully renamed.
+
+CAUSE
+=====
+
+The FTP protocol has a two step rename process. The first, RNFR (Rename From),
+does not attempt to impersonate the UNC user when checking file attributes.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Windows NT service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Date      Time      Version         Size     File Name     Platform
+-------------------------------------------------------------------
+12/18/98  03:46p    4.2.680.1       27,696   Admwprox.dll    (x86) 
+12/18/98  03:48p    4.2.680.1      327,472   Asp.dll
+12/18/98  03:46p    4.2.680.1       43,456   Coadmin.dll
+12/18/98  03:47p    4.2.680.1       11,168   Ftpctrs2.dll
+12/18/98  03:47p    4.2.680.1       81,376   Ftpsvc2.dll
+12/18/98  03:47p    4.2.680.1       55,392   Httpodbc.dll
+12/18/98  03:46p    4.2.680.1       10,224   Iisfecnv.dll
+12/18/98  03:46p    4.2.680.1       61,920   Iislog.dll
+12/18/98  03:46p    4.2.680.1       16,848   Infoadmn.dll
+12/18/98  03:46p    4.2.680.1      184,208   Infocomm.dll
+12/18/98  03:46p    4.2.680.1        9,584   Infoctrs.dll
+12/18/98  03:46p    4.2.680.1       47,936   Isatq.dll
+12/18/98  03:46p    4.2.680.1       29,520   Iscomlog.dll
+12/18/98  03:47p    4.2.680.1       11,248   Iwrps.dll
+12/18/98  03:46p    4.2.680.1       13,856   Lonsint.dll
+12/18/98  03:46p    4.2.680.1        8,336   Lonsiw95.dll
+12/18/98  03:46p    4.2.680.1       71,232   Metadata.dll
+12/18/98  03:46p    4.2.680.1        7,488   Rpcref.dll
+12/18/98  03:46p    4.2.680.1       12,592   Spud.sys
+12/18/98  03:46p    4.2.680.1       18,032   Svcext.dll
+12/18/98  03:47p    4.2.680.1       14,752   W3ctrs.dll
+12/18/98  03:47p    4.2.680.1      227,424   W3svc.dll
+12/18/98  03:47p    4.2.680.1       87,504   Wam.dll 
+
+12/18/98  03:48p    4.2.680.1       49,424   Admwprox.dll   (Alpha) 
+12/18/98  03:50p    4.2.680.1      548,112   Asp.dll
+12/18/98  03:48p    4.2.680.1       77,072   Coadmin.dll
+12/18/98  03:50p    4.2.680.1       17,168   Ftpctrs2.dll
+12/18/98  03:50p    4.2.680.1      126,224   Ftpsvc2.dll
+12/18/98  03:49p    4.2.680.1       89,360   Httpodbc.dll
+12/18/98  03:49p    4.2.680.1       17,680   Iisfecnv.dll
+12/18/98  03:49p    4.2.680.1      110,864   Iislog.dll
+12/18/98  03:49p    4.2.680.1       25,872   Infoadmn.dll
+12/18/98  03:49p    4.2.680.1      302,864   Infocomm.dll
+12/18/98  03:49p    4.2.680.1       15,120   Infoctrs.dll
+12/18/98  03:48p    4.2.680.1       82,704   Isatq.dll
+12/18/98  03:49p    4.2.680.1       45,840   Iscomlog.dll
+12/18/98  03:48p    4.2.680.1       23,312   Lonsint.dll
+12/18/98  03:48p    4.2.680.1       13,584   Lonsiw95.dll
+12/18/98  03:48p    4.2.680.1      131,856   Metadata.dll
+12/18/98  03:48p    4.2.680.1       12,048   Rpcref.dll
+12/18/98  03:49p    4.2.680.1       20,912   Spud.sys
+12/18/98  03:49p    4.2.680.1       29,456   Svcext.dll
+12/18/98  03:49p    4.2.680.1       21,264   W3ctrs.dll
+12/18/98  03:49p    4.2.680.1      381,712   W3svc.dll
+12/18/98  03:49p    4.2.680.1      149,264   Wam.dll
+
+
+
+WORKAROUND
+==========
+
+Locate a file that needs to be renamed in a local virtual directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 4.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

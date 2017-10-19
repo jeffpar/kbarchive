@@ -1,0 +1,55 @@
+DOCUMENT:Q257834  25-JUL-2001  [win95x]
+TITLE   :CardBus Functionality in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 1.0, 2.0, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some CardBus devices may not work properly on Windows 95. Please consult your
+Original Equipment Manufacturer (OEM) for support options.
+
+MORE INFORMATION
+================
+
+Microsoft is no longer adding CardBus functionality to Windows 95. Devices that
+were introduced after October, 1996, may or may not work with Windows 95. If a
+device does not work because of a problem in Windows 95, we may consider fixing
+the problem until hotfix support for Windows 95 is no longer available. However,
+we will not make architectural changes or add functionality to make them work.
+This also applies to models introduced after October, 1996, of devices
+introduced before October, 1996.
+
+Additional query words: pcmcia osr1 osr2 osr2.1 osr2.5
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,148 @@
+DOCUMENT:Q186913  13-AUG-1999  [foxpro]
+TITLE   :HOWTO: Assign FoxPro Foundation Classes via Field Mapping
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the subclassed Visual FoxPro base classes, contained in My Base
+Classes, found in the Visual Foxpro Foundation Classes library file
+\VFP6\Ffc\_base.vcx, as your default objects when using drag and drop from the
+data environment of a form.
+
+MORE INFORMATION
+================
+
+The following steps show how to change the Visual FoxPro settings for the
+default Class Name objects when you drag and drop them from the data environment
+of the form:
+
+1. From the Tools menu, choose Options.
+
+2. In the Options dialog box, click the Field Mapping tab.
+
+3. In the "Map fields to classes for drag and drop" section, under the Type
+   object heading, select Character and then click Modify.
+
+   This opens the Modify Field Mapping dialog box.
+
+4. In the Modify Field Mapping dialog box, click the Browse button and locate
+   the \Ffc folder under \VFP6 folder on your computer.
+
+5. Select _base.vcx in the Open dialog box, and then click OK.
+
+   This returns you to the Modify Field Mapping Dialog and enters information in
+   the Library text box.
+
+6. Under the Class Information section, in the Name list, select _textbox.
+
+7. Click Apply if you want to continue with other base class object settings or
+   click OK when finished.
+
+The _base.vcx Library contains base class objects for the following:
+
+   _activedoc
+   _checkbox
+   _combobox
+   _commandbutton
+   _commandgroup
+   _container
+   _control
+   _custom
+   _editbox
+   _form
+   _formset
+   _grid
+   _hyperlink
+   _image
+   _label
+   _line
+   _listbox
+   _optionbutton
+   _optiongroup
+   _pageframe
+   _projecthook
+   _separator
+   _shape
+   _spinner
+   _textbox
+   _timer
+   _toolbar
+
+The Tools Options Field Mapping settings are stored in the Registry under the
+following:
+
+   HKEY_CURRENT_USER\Software\Microsoft\VisualFoxPro\6.0\Options\ 
+       IntelliDrop\FieldTypes
+
+Settings are stored for the following:
+
+   Character
+   Character (binary)
+   Currency
+   Date
+   DateTime
+   Double
+   Float
+   General
+   Integer
+   Label
+   Logical
+   Memo
+   Memo (binary)
+   Mulitple
+   Numeric
+
+The Value settings stored for the objects are ClassLocation and ClassName.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Perry
+Newton, Microsoft Corporation
+
+
+Microsoft Visual FoxPro Help; Search on: "tools options settings"
+
+
+For additional information on Tools Options Settings; see Microsoft Visual FoxPro
+Help; Search on: "Configuring Visual FoxPro".
+This is located in On Line Docs: Getting Started With Visual FoxPro, Installation
+Guide, Chapter 3: Configuring Visual FoxPro.
+
+For additional information on Foundation Classes; see Microsoft Visual FoxPro
+Help; Search on: "Foundation Classes".
+
+Additional query words: kbFC kbVFp600 kbCommon
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

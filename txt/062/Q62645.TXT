@@ -1,0 +1,58 @@
+DOCUMENT:Q62645  14-DEC-1999  [win95x]
+TITLE   :Windows 3.0 Enhanced Mode Hangs on a Toshiba 5200
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a Toshiba 5200, Microsoft Windows version 3.0 Setup for a standard VGA may
+run in real mode and standard mode, but it stops responding (hangs) in enhanced
+mode.
+
+RESOLUTION
+==========
+
+Setting EMMEXCLUDE=C000-C7FF in the [386Enh] section of the SYSTEM.INI file
+enables Windows to run in enhanced mode.
+
+This line is automatically added to the SYSTEM.INI file if you choose "Toshiba
+5200" during the initial SETUP or using the maintenance SETUP or Windows SETUP
+icon after having installed Windows. This may be easier than manually editing
+the SYSTEM.INI.
+
+NOTE: The EMMEXCLUDE statement may solve memory address conflicts on the Toshiba
+5200, but removal of TSRs and standard troubleshooting should still be
+performed.
+
+Additional query words: 3.00 win30 3.00a KBHW 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

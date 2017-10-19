@@ -1,0 +1,61 @@
+DOCUMENT:Q132762  17-DEC-2000  [win95x]
+TITLE   :Format Type Options Are Unavailable
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to format a floppy disk, the only available option in the Format
+Type group may be the Full option. The Quick and the Copy System Files Only
+options may be unavailable.
+
+CAUSE
+=====
+
+This problem can occur if a formatting error occurred after you chose the Copy
+System Files Only option and clicked Start.
+
+RESOLUTION
+==========
+
+To correct this problem, follow these steps:
+
+1. Close the Format dialog box and then open it again.
+
+2. Remove the floppy disk from the drive, click the Full option, and then click
+   Start. When you receive an error message, click Cancel.
+
+3. Insert the floppy disk in the drive and format it using the options you want.
+
+
+Additional query words: gray grey
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

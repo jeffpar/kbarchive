@@ -1,0 +1,61 @@
+DOCUMENT:Q165698  22-DEC-1999  [exchange]
+TITLE   :XADM: Corrupt Admin.Ins
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Exchange Server, the following error message may
+appear:
+
+   Processing file "Admin.ins" at or near line 1. The file appears to be
+   corrupted
+   Microsoft Exchange server setup id c103264a
+
+CAUSE
+=====
+
+The Admin.ins file is required for Microsoft Exchange Server Setup to complete.
+Some reasons for the error are:
+
+ - The CDROM is defective The CD is defective or dirty.
+
+ - The Exchange setup files have been copied to a local drive and the Admin.ins
+   file is corrupt.
+
+To verify the integrity of the file, use a text editor such as Edit. The file is
+ASCII.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,50 @@
+DOCUMENT:Q99929  30-JUL-2001  [pcmail]
+TITLE   :PC WRmt: Connection Time-Outs
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If you have many headers in your mailbox, the connection between version 3.2 of
+Microsoft Mail Remote for Windows and your postoffice may time out while
+EXTERNAL.EXE (running at the office from Microsoft Mail for PC Networks)
+prepares to transmit the headers list.
+
+To increase the time-out limit for Mail Remote for Windows, first confirm that
+Mail Remote is the current driver.
+
+Then increase the value for ConnectTimeOut in the [SFSREMOTE] section of your
+MSMAIL.INI file, located in the WINDOWS directory.
+
+This value can be between 60 (the default value) and 999, and represents the
+number of seconds Mail Remote for Windows will wait before reporting a time-out
+error.
+
+Contact your mail administrator if problems continue; they might need to adjust a
+command-line parameter for EXTERNAL.EXE running on your postoffice, setting a -e
+value to match the number you set for ConnectTimeOut.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,84 @@
+DOCUMENT:Q317644  20-MAR-2002  [homegame]
+TITLE   :Pandora's Box: Err Msg: Application Is Not Compatible with...
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pandora's Box, version 1.0, used with:
+    - the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Pandora's Box, you may receive an error message
+similar to one of the following:
+
+   This application is not compatible with Windows XP. Please contact Microsoft
+   for a update.
+
+-or-
+
+   Pandora's Box has a known compatibility issue with this version of Windows.
+   For an update that is compatible with this version of Windows, contact
+   Microsoft.
+
+CAUSE
+=====
+
+This behavior can occur on some Pentium III computers.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the Pandora's Box Update for the
+game's English version (Pandora10a.exe), or for the French version
+(Pandora10a.exe), or for the Japanese version (PandoraJ10a.exe). To do this, see
+the following Microsoft Web site:
+
+   http://www.microsoft.com/games/pandorasbox/downloads.htm
+
+The self-extracting, self-installing files install two modified files: the
+Pandora.exe file and the Langenu.dll file. The combined size of the downloaded
+files is approximately 1 megabyte (MB).
+
+NOTE: Pandora's Box Trial version does not work on Pentium III computers.
+
+MORE INFORMATION
+================
+
+For additional information about errors starting Pandora's Box, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q250527 Pandora's Box Error Message: Unable to Create DirectDraw Surface
+
+   Q303112 Pandora's Box: Run-Time Error When You Attempt to Start Game
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch kbPandoraSearch kbPandorasBox
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

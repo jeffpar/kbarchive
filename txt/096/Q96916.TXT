@@ -1,0 +1,63 @@
+DOCUMENT:Q96916  31-OCT-1999  [pcmail]
+TITLE   :PC WRmt: Problems Regaining Control with Some Screen Savers
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Mail Remote version 3.2 for Windows works as expected with the screen
+saver built into Microsoft Windows version 3.1. However, Mail may not work as
+expected with the IdleWild screen saver provided with the Microsoft Windows
+Entertainment Pack or with other non-standard screen saver applications for
+Windows.
+
+CAUSE
+=====
+
+If some Windows screen savers become active while the Mail Remote for Windows
+connection dialog box is communicating with the modem, the user may be unable to
+regain control of the system until the connection dialog box has completed its
+communication.
+
+If a screen saver follows the published protocol (which IdleWild does not), Mail
+Remote for Windows can process the WM_SYSCOMMAND SC_SCREENSAVE message and
+return a nonzero value to prevent the screen saver from becoming active.
+
+RESOLUTION
+==========
+
+In most screen savers, Mail Remote for Windows regains control if you press the
+ENTER or ESC key or the SPACEBAR, or if you move the mouse.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

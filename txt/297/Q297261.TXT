@@ -1,0 +1,78 @@
+DOCUMENT:Q297261  26-FEB-2002  [iis]
+TITLE   :IIS 5: SMTP/NNTP Virtual Server Missing in ISM
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Simple Mail Transfer Protocol (SMTP) Service and Network News Transport
+Protocol (NNTP) Services are installed to an Internet Information Services (IIS)
+version 5.0 server, but the virtual servers do not appear in the Internet
+Services Manager Microsoft Management Console (MMC). If the services are tested,
+they work properly, but they cannot be configured.
+
+CAUSE
+=====
+
+The File and Printer Sharing for Microsoft Networks service is not installed on
+the Web server. The SMTP and NNTP services are dependent on this service.
+
+RESOLUTION
+==========
+
+To make the virtual servers appear, install the File and Printer Sharing for
+Microsoft Networks service. To do this, follow these steps:
+
+NOTE: For the purpose of this demonstration, it is assumed that one network card
+is installed in the computer and that access to the Windows 2000 CD is
+possible.
+
+1. On the desktop, right-click the My Network Places icon and click Properties.
+   The Network and Dial-up Connections window opens and shows the default
+   connections (such as the Local Area Connection).
+
+2. Right-click Local Area Connection and click Properties.
+
+3. In the Local Area Connection Properties dialog box, click Install.
+
+4. In the Select Network Component Type dialog box, select Service and click
+   Add.
+
+5. In the Select Network Service dialog box, select File and Printer Sharing for
+   Microsoft Networks and click OK.
+
+
+Additional query words: iis 5 snap-in snap in snapin
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,63 @@
+DOCUMENT:Q158482  14-NOV-2000  [word97]
+TITLE   :WD97: Envelopes Printed Upside Down on Hewlett-Packard 5si/5si
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97 kbdta kbenvelope
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print an envelope to a Hewlett-Packard (HP) LaserJet 5si/5si MX PS
+printer, the delivery and return addresses are printed upside down.
+
+This problem occurs regardless of whether the Clockwise Rotation check box is
+selected on the Printing Options tab. (To locate this option, click Envelopes
+And Labels on the Tools menu. On the Envelopes tab, click Options, and then
+click Printing Options.)
+
+
+WORKAROUND
+==========
+
+To work around this problem, feed the envelope as shown on the printer. Do not
+feed the envelope based on what you see in the preset.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: 8.0 word8 word97 laser jet hp5 hp5si postscript post script scrip incorrect wrong rotated
+
+======================================================================
+Keywords          : kbualink97 kbdta kbenvelope 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

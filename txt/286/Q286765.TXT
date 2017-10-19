@@ -1,0 +1,69 @@
+DOCUMENT:Q286765  08-MAR-2001  [sna]
+TITLE   :INFO: Two-Phase Commit is Not Supported over TCP/IP for DB2OLEDB
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbCOMPlus kbDriver kbDTC kbMTS kbODBC kbOLEDB kbProvider kbGrpDSVCDB kbDSupp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft OLE DB Provider for DB2 (DB2OLEDB) and Microsoft ODBC Driver for
+DB2 that ship with Host Integration Server 2000, do not support two-phase commit
+(2PC) distributed transactions over a TCP/IP network connection. Distributed
+transactions are only supported when connecting to DB2 by way of SNA LU 6.2.
+
+MORE INFORMATION
+================
+
+DTC-Driven 2PC Support for DB2 for OS/390 and AS/400 Using LU 6.2:
+
+In Host Integration Server 2000, the OLE DB Provider for DB2 and ODBC Driver for
+DB2 are enhanced to support the DRDA Two-Phase Commit protocols over LU 6.2.
+This enables COM+ applications to participate in a Distributed Transaction
+Coordinator (DTC)-driven, two-phase commit transaction between SQL Server and
+DB2 databases on OS/390 and OS/400. Distributed transactions across an SNA LU
+6.2 network to DB2 UDB for AIX and DB2 UDB for Windows NT are not supported.
+
+Distributed transactions are a new feature of Microsoft Host Integration Server
+2000. The provider and driver that ship with SNA Server 4.0 do not have this
+feature.
+
+Working with Microsoft Transaction Server:
+
+Because Microsoft Transaction Server (MTS) uses DTC, DB2OLEDB and the Microsoft
+ODBC Driver for DB2 cannot be used under MTS transaction when TCP/IP
+connectivity is used. DB2OLEDB and the Microsoft ODBC Driver for DB2 can be used
+under MTS transaction when SNA LU 6.2 connectivity is used.
+
+
+Additional query words: 2PC two phase
+
+======================================================================
+Keywords          : kb3rdparty kbCOMPlus kbDriver kbDTC kbMTS kbODBC kbOLEDB kbProvider kbGrpDSVCDB kbDSupport kbDB2 kbhis2000 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

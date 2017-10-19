@@ -1,0 +1,68 @@
+DOCUMENT:Q101805  05-FEB-2000  [foxpro]
+TITLE   :Using .DBF-Style Help in FoxPro for Windows
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FoxPro for Windows uses the Windows-style Help system by default. However, if
+you prefer, you can use the .DBF-style Help system. To do so, enter the
+following command in the Command window:
+
+   SET HELP TO FOXHELP.DBF
+
+Pressing F1 or choosing Contents from the menu will then open the .DBF-style Help
+system.
+
+To return to the Windows-style Help system, enter the following command in the
+Command window:
+
+   SET HELP TO FOXHELP.HLP
+
+To permanently change to the .DBF-style Help system, add this statement to your
+CONFIG.FPW file:
+
+   HELP=FOXHELP.DBF
+
+REFERENCES
+==========
+
+For more information, see the "SET Commands" section of the "Installation and
+Configuration Guide." There is also a "Customizing Help" chapter in the
+"Developer's Guide" that explains how to create a personalized Help system. The
+FoxPro for Windows Distribution Kit (DK) includes a "Help Compiler Guide" to
+assist you in creating a personalized Windows Help system.
+
+Additional query words: VFoxWin FoxWin 2.50 HELP CONFIG.FPW FOXHELP
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

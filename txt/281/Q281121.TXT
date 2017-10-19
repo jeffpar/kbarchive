@@ -1,0 +1,76 @@
+DOCUMENT:Q281121  08-AUG-2001  [winnt]
+TITLE   :Ps.exe and Top.exe Commands Stop Responding in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The utilities Ps.exe and Top.exe, which are included as third-party demo
+software with Services for UNIX 2.0, hang or stop responding when you run them
+on a Windows NT 4.0-based computer.
+
+CAUSE
+=====
+
+This problem occurs when these utilities make a function call with an argument
+that is not properly handled by Services for UNIX 2.0 that is running on a
+Windows NT 4.0-based computer.
+
+WORKAROUND
+==========
+
+To work around this problem, use the Ps.exe and Top.exe utilities only on a
+computer that is running Services for UNIX 2.0 in conjunction with Windows 2000.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The MKS Toolkit Demo manufacturer maintains a Web site at the following address:
+
+   http://www.mks.com
+
+
+Additional query words: SFU
+
+======================================================================
+Keywords          : kb3rdparty kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : :2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

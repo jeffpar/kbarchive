@@ -1,0 +1,72 @@
+DOCUMENT:Q198383  14-NOV-2000  [word97]
+TITLE   :WD97: Text Fails to Appear in Envelopes/Labels Delivery Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbenvelope word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Address text at the insertion point does not appear in the Delivery Address or
+the Address box of the Envelopes And Labels dialog box.
+
+CAUSE
+=====
+
+Word does not recognize the text as a valid address.
+
+WORKAROUND
+==========
+
+If any line of the address begins with a tab, the address does not appear when
+you display the Envelopes and Labels dialog box.
+
+To work around this problem, do either of the following:
+
+ - Select the address prior to choosing to display the Envelopes And Labels
+   dialog box (on the Tools menu).
+
+   -or-
+
+ - Remove the tabs from the beginning of the address lines in the document.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q142343 WD: Selection with Tab Not Inserted in Delivery Address Box
+
+Additional query words: missing blank nothing nil null empty
+
+======================================================================
+Keywords          : kbenvelope word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

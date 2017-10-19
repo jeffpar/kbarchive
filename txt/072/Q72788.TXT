@@ -1,0 +1,65 @@
+DOCUMENT:Q72788  04-FEB-2002  [win95x]
+TITLE   :Multimedia Personal Computing: The Microsoft View
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.0,3.0a
+OPER/SYS:
+KEYWORDS:kbfile kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+At the Windows World exposition in Atlanta, Georgia in May, 1991, Microsoft
+distributed a document titled "Multimedia Personal Computing: The Microsoft
+View." This document describes multimedia, its application to business and home
+computing and the Microsoft commitment to help fulfill the vision of
+"Information at Your Fingertips"(TM) through multimedia technology.
+
+The text of the document is available in two different formats in the
+Software/Data Library: MMBACKWW.EXE has a copy of the file in Word for Windows
+format and MMBACK.EXE has a copy of the file as plain text.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   Download Mmback.exe now
+
+   Download Mmbackww.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: 3.00 3.00a win30
+
+======================================================================
+Keywords          : kbfile kbgraphxlinkcritical 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : :3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

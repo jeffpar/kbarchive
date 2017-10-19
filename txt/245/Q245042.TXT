@@ -1,0 +1,64 @@
+DOCUMENT:Q245042  06-AUG-2002  [exchange]
+TITLE   :XFOR: Invalid PO Name or Pwd Error Migrating cc:Mail Mobile User
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are migrating a Lotus cc:Mail Mobile (cc:Mobile) user, the Exchange
+Server Migration wizard generates an error that indicates that the post office
+name and/or password is invalid.
+
+RESOLUTION
+==========
+
+If the cc:Mobile user's database has been copied to a network or local drive and
+the Migration wizard is pointed to the correct path of the user's database, then
+you need to type the post office name and password information as follows:
+
+   postoffice name = LOCALPO
+
+   password = <the user's cc:Mobile mailbox password>
+
+MORE INFORMATION
+================
+
+For additional migration strategies, refer to the "Lotus cc:Mail and Exchange
+Server Coexistence and Migration" white paper located at the following Web
+site:
+
+   http://www.microsoft.com/exchange/techinfo/deployment/default.asp
+
+Additional query words: ccmc, cc:Mail, migrate, remote
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

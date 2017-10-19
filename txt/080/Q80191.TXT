@@ -1,0 +1,64 @@
+DOCUMENT:Q80191  19-OCT-2000  [pcmail]
+TITLE   :PC OS2: Err Msg: Mail Database Cannot Be Reached
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1e, 3.0, 3.0b, 3.2, 3.2a, on platform(s):
+    - the operating system: OS/2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Presentation Manager client for Microsoft Mail for PC Networks is a
+recompiled version of the Windows client. It uses the Windows Libraries for OS/2
+(WLO) to provide program functionality.
+
+When the Presentation Manager client for Microsoft Mail for PC Networks is
+started, the program looks for a WIN.INI file in the OS2\DLL directory. If the
+file is not present in that directory, the following error message is
+displayed:
+
+   Mail database cannot be reached
+
+CAUSE
+=====
+
+For Mail to work correctly, it is not necessary to use the WIN.INI settings to
+specify the mail database's drive or path; however, the WIN.INI file must be
+present.
+
+RESOLUTION
+==========
+
+To correct this error, create a text file with the name WIN.INI and save it in
+the OS2/DLL directory.
+
+Additional query words: 2.10e 3.00 3.00b 3.20 3.20a run start windows compatibility libraries
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

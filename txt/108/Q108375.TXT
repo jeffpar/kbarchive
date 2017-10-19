@@ -1,0 +1,64 @@
+DOCUMENT:Q108375  04-NOV-1999  [pcmail]
+TITLE   :SMTP: How to Start SMTPGET
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:2.1,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Versions 2.1 and 3.0 of Microsoft Mail Gateway to SMTP spawns SMTPGET.EXE to
+query the SMTP mailbag on the Microsoft Mail for PC Networks postoffice, and
+then translate it to Microsoft Mail Message Format(MMFF) and deposit it into the
+M:\SMTP\from_nc.api text file.
+
+The MMFF structure is defined in the Microsoft Mail Software Development Kit File
+Format API(FFAPI) manual.
+
+SMTPGET.EXE is started with the following options:
+
+   SMTPGET -d<m> -h -j -n1 m:\smtp\from_nc.api
+
+MORE INFORMATION
+================
+
+This is the same program that the Microsoft Software Development Kit (File
+Format API) uses to get mail from the Mail for PC Networks postoffice The
+options specified are defined in the FFAPI manuals. They mean:
+
+-d<m>                  the drive that contains the MS Mail Post Office
+-h                     use the extended header MMFF format
+-j                     use encapsulation MMFF format
+-n1                    get 1 message at a time from the SMTP mailbag
+m:\smtp\from_nc.api    save the MMFF formatted messages in this file
+
+Additional query words: 2.10 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300 kbMailGateSMTP210
+Version           : MS-DOS:2.1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

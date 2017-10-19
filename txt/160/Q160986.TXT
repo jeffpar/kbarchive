@@ -1,0 +1,79 @@
+DOCUMENT:Q160986  30-JUL-2001  [sms]
+TITLE   :SMS: Dosetup.exe Fails with "Runs with UNC Name" Option Enabled
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPGC smspgc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When Dosetup.exe is used on the Configuration command line of a shared network
+application, it will fail to configure the registry of a computer running
+Windows NT or Windows 95, when the package properties are defined with the
+option "Runs with UNC Name."
+
+CAUSE
+=====
+
+This problem is due to a limitation of all 16-bit applications. Because
+Dosetup.exe is a 16-bit application, it cannot get a current working directory
+of a UNC name.
+
+This limitation is also documented in the Systems Management Server 1.2 Release
+Notes under "Shared Applications and UNC Paths."
+
+WORKAROUND
+==========
+
+To work around this problem, set up the package to either use "Requires Drive
+Letter" or "Requires Specific Drive Letter."
+
+MORE INFORMATION
+================
+
+When the client runs the shared application, the user will receive a message
+stating that a one-time installation is required for this application.
+Continuing, the client will then receive the following message:
+
+   '<your application>' has not been successfully configured.
+
+The Pgg.log file on the client shows the following information:
+
+      [10/26/96 13:04:28] Program Group Control ==> An Application specific
+      error occurred: SMSSETUP - <your application>: Cannot access SETUP.EXE
+      on application server.
+
+      [10/26/96 13:05:16] Program Group Control Start ==> '<your application>'
+      has not been successfully configured.
+
+Additional query words: prodsms win95 app
+
+======================================================================
+Keywords          : kbnetwork kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

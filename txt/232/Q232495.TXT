@@ -1,0 +1,68 @@
+DOCUMENT:Q232495  05-JUN-1999  [exchange]
+TITLE   :XFOR:Important Files When Relocating OV/VM Connector to another
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the important files that are needed when you move the
+OV/VM Connector to another Exchange Server computer.
+
+MORE INFORMATION
+================
+
+When you relocate the OV/VM Connector to another server, it is important to
+backup the following files. These files contain the message correlation tables
+and the SMTP-registration tables that allow host users to successfully reply to
+messages from external users.
+
+The Exchconn.ini file should be backed up, but cannot be copied to the new
+computer. This file will be used as a reference for basic configuration
+information on the new OV/VM Connector and is located in the
+Exchsrvr\Connect\Exchconn directory.
+
+The following files should be backed up, and copied to the new OV/VM Connector:
+
+   Exchsrvr\Connect\Exchconn\Tables\Ovdfile.dat
+   Exchsrvr\Connect\Exchconn\Tables\Route.tbl
+   Exchsrvr\Connect\Exchconn\Tables\PROFSreg.* (only in Exchange Server 5.5
+   Service Pack 2 or later)
+   Exchsrvr\Connect\Exchconn\Tables\Profs.pab
+   Exchsrvr\Connect\Exchconn\Tables\Ct*.*
+   Exchsrvr\Connect\Exchconn\Tables\Cmsxmap.tbl
+   Exchsrvr\Connect\Exchconn\Tables\Dosxmap.tbl
+   Exchsrvr\Connect\Exchconn\Tables\Lmetprox.seq
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

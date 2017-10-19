@@ -1,0 +1,79 @@
+DOCUMENT:Q231529  14-SEP-2001  [automap]
+TITLE   :MapPoint 2000: Unable to Link or Import More than 1000 Records
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to link or import data from a Microsoft Excel workbook to
+Microsoft MapPoint 2000, you may receive the following error message:
+
+   Only 1000 records may be placed at one time using Street Address.
+
+When you click OK, the remaining records in the workbook are not mapped.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - The Excel workbook from which you link or import data contains more than 1000
+   records.
+
+ - The records you link or import include street addresses.
+
+RESOLUTION
+==========
+
+To work around this issue, use either of the following methods:
+
+ - Make sure the workbook from which you link or import data contains a maximum
+   of 1000 records.
+
+ - Do not include street addresses in the records you link or import.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+You can map all records in a workbook that contains over 1000 records by using
+geographic information that is less specific than street addresses, such as ZIP
+codes.
+
+Additional query words: mp2000 many over exceeds limit
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbtool kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

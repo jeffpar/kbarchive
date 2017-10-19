@@ -1,0 +1,115 @@
+DOCUMENT:Q145719  03-AUG-2001  [visualc]
+TITLE   :BUG: DAOENROL - Can't See Added Records in Windows 95
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1; :
+OPER/SYS:
+KEYWORDS:kbother kbDAOsearch kbDatabase kbMFC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Foundation Classes (MFC) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the DAOENROL sample from Visual C++ version 4.0, 4.1, or 4.2 under
+Windows 95 and you add a record, you may not see the record in the result set.
+If you exit the program, restart it and scroll through the records. You will
+then see the added record. The "More Information" section below gives a more
+detailed scenario that shows the problem.
+
+CAUSE
+=====
+
+The CDaoRecordView class keeps track of the first and last record by using
+Microsoft Jet bookmarks. Microsoft Jet bookmarks should not be assumed to be
+valid following a Requery(). DAOENROL does a Requery() following an add and a
+move, but it continues to use the bookmark values it obtained before the
+Requery() was done.
+
+RESOLUTION
+==========
+
+To fix the DAOENROL sample, you must re-initialize the CDaoRecordView bookmark
+members following a Requery(). DAOENROL performs a Requery() in three places:
+
+ - in the CAddForm::OnMove() function in Addform.cpp.
+
+ - in the CSectionForm::OnSelendokCourselist() function in Sectform.cpp.
+
+ - in the CSectionForm::OnMove() function in SectForm.cpp.
+
+In each of these locations, you should add code similar to this:
+
+      m_pSet->Requery();           // here's the existing Requery()
+
+      m_varBookmarkCurrent = 1L;   // add these...
+      m_varBookmarkFirst =         // ...lines of...
+         m_varBookmarkLast = 0L;   // ..code!
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run the DAOENROL sample on Windows 95.
+
+2. Click the Next button to move to the last record.
+
+3. Click the Plus button to add a record.
+
+4. Type a 3 in all blank fields of the new record.
+
+5. Click the Previous button to move off the new record.
+
+6. Click the Next button to scroll through the result set. You will not see the
+   record you just added.
+
+NOTE: If you run DAOENROL under Windows NT, you will see the added record.
+Although the problem is masked in Windows NT, the behavior of bookmarks after a
+Requery() is undefined and may change in future releases of either operating
+system. Any behavior exhibited should not be relied on.
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q145686 PRB: CDaoRecordView Bookmark Members Invalid After Requery()
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbother kbDAOsearch kbDatabase kbMFC kbVC 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbMFC kbVC410
+Version           : winnt:4.0,4.1; :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

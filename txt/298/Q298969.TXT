@@ -1,0 +1,96 @@
+DOCUMENT:Q298969  20-APR-2002  [iis]
+TITLE   :Web Site Operator Capabilities and Limitations
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists basic capabilities and limitations of a Web site operator.
+
+MORE INFORMATION
+================
+
+A Web site operator can act as a Web site administrator and can change or
+reconfigure the Web site.
+
+A Web site operator can set Web site access permissions, enable logging, change
+the default document or footer, set content expiration, and enable content
+ratings features.
+
+A Web site operator is not permitted to change the identification of Web sites,
+configure the anonymous user name or password, throttle bandwidth, create
+virtual directories or change their paths, or change application isolation.
+
+Web site operators have more limited privileges than Web site administrators. Web
+site operators are unable to remotely browse the file system, and therefore
+cannot set properties on directories and files unless a UNC path is used.
+
+To fully administer a Web site, an account must be made an administrator on the
+Microsoft Windows NT or Microsoft Windows 2000 server.
+
+To add an operator to the Web site, follow these steps:
+
+1. In the Internet Information Services snap-in, right-click the Web site and
+   click Properties.
+
+2. On the Operators tab, under Web Site Operator, click Add. This opens the Add
+   Users and Groups window.
+
+3. Either select a user or group from the Names list, or select another name
+   list from the List Names From box.
+
+4. Select a member from a group of users by clicking Members and selecting the
+   member from the window.
+
+5. Search for a user or group on a network by clicking Search.
+
+REFERENCES
+==========
+
+For additional information on Web site operators, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+   Q227611 IIS 5.0 'Site Operators Can Administer This Site Remotely' Option
+
+   Q259076 Cannot Add Users or Groups as Operators in Default FTP and Default
+   Web Sites
+
+   Q263857 Items in the ISM Are Missing or Appear Dimmed on Windows 2000
+   Professional
+
+   Q239770 Metabase Deployment Causes Duplicate Users on Operators Tab
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,88 @@
+DOCUMENT:Q122152  29-OCT-1999  [pcmail]
+TITLE   :PC MTA: Read Error During Data Exchange
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+READ ERROR
+----------
+
+ 
+A read error may appear in the SESSION.LOG file as well as on the screen
+when the Message Transfer Agent (MTA) in version 3.20 of Microsoft Mail for
+PC Networks is started on an X.25 network (COMMTYPE=X25EICON in
+EXTERNAL.INI) with the -l -v -q command line parameters. The read error
+includes three numbers that identify the cause of the error, the diagnostic
+code, and the Eicon network error: 00 00 0A.
+
+The error occurs after a data exchange when the calling MTA issues a clear
+request and then mishandles the following clear confirm response. The error
+causes no problems and can be ignored.
+
+NOTE: The read error may be a real error; if so, it will be followed by a
+specific error which will usually end the data exchange. The cause or
+diagnostic codes may still be set to zero.
+
+MORE INFORMATION
+================
+
+Below are two examples of SESSION.LOG files. The first example shows the minor
+problem detailed above. The second shows a real read error which should be
+further trouble-shooted. The nature of the two read errors can be differentiated
+by the other messages nearby in the SESSION.LOG.
+
+Bogus Read Error
+----------------
+
+cubs  03-06-93 14:51 SOXNET/SOX: Queued 1 item of mail to send.
+cubs  03-06-93 14:51 Calling: SOXNET/SOX
+cubs  03-06-93 14:51 Call Remote DTE
+cubs  03-06-93 14:51 Call Local DTE
+cubs  03-06-93 14:51 Call User Data
+cubs  03-06-93 14:51 Call Facilities
+cubs  03-06-93 14:51 Message transmission start.
+cubs  03-06-93 14:52 Message transmission complete.Bytes transmitted: 669
+cubs  03-06-93 14:52 -- Closing connection  --
+cubs  03-06-93 14:52 Read Error
+cubs  03-06-93 14:52 00 00 0a
+cubs  03-06-93 14:52 Listen Local DTE
+
+Real Read Error
+---------------
+
+sox   05-19-93 17:29 Read Error
+sox   05-19-93 17:29 00 00 0a
+sox   05-19-93 17:29 ? >>> Lost carrier
+sox   05-19-93 17:29 Connection end.Disconnection.
+sox   05-19-93 17:29 -- Closing connection  --
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

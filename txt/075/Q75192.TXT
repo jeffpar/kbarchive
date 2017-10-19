@@ -1,0 +1,70 @@
+DOCUMENT:Q75192  17-DEC-2000  [msdos]
+TITLE   :Zenith Multiboot Option and MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The setup/diagnostic shell built into ROM on Zenith computers normally allows
+you to select several different drives as the boot drive. Under MS-DOS 5.0, the
+only options that will work are the first hard disk (C) and the first floppy
+drive (A).
+
+MORE INFORMATION
+================
+
+The setup/diagnostic shell is invoked on some Zenith computers by pressing the
+CTRL+ALT+INSERT key combination. This shell will accept a number of commands,
+one of them being the command that switches the boot drive. The normal syntax of
+this command is as follows:
+
+   B [{F|W}][{0|1|2|3}][:<partition>]
+
+where
+
+   F = Floppy
+   W = Winchester (hard drive)
+   0 = the first drive
+   1 = the second drive, and so on
+
+For example, BW0 means boot from the first hard disk (C), and BF1 means boot from
+the second floppy (B). By design, MS-DOS 5.0 can only boot from the first hard
+drive (C) and the first floppy drive (A). Consequently, the only valid options
+under MS-DOS 5 are BW0 and BF0.
+
+The product included here is manufactured by vendors independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 5.00 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,68 @@
+DOCUMENT:Q141387  18-DEC-2000  [win95x]
+TITLE   :Ball Hesitates with Flipper Movement Playing 3D Pinball
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play 3D Pinball, the ball may hesitate each time you move a flipper.
+
+CAUSE
+=====
+
+This behavior can be caused by low resources or sound conflicts within 3D
+Pinball.
+
+RESOLUTION
+==========
+
+To resolve this situation, try the following methods:
+
+ - Close any other running program while you play 3D Pinball.
+
+ - Disable sounds in 3D Pinball by clicking Sounds or Music on the Options menu.
+
+ - Adjust the sound by running the Wmconfig tool. For information about using
+   this tool, please see the following article in the Microsoft Knowledge Base:
+
+   Q140081 Purpose of the Wmconfig.exe and Wavemix.inf Files
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! version 1.0 for
+Windows 95. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

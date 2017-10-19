@@ -1,0 +1,80 @@
+DOCUMENT:Q163520  08-AUG-2001  [winnt]
+TITLE   :Real-Mode Windows 95 Error Connecting to Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the NET USE or NET VIEW commands to attempt to establish a session to
+a computer running Windows NT, you may receive the following error from a
+real-mode Windows 95 client:
+
+   Error 58: This operation cannot be performed by the specified server. Make
+   sure that you have specified the correct computer name and command. If the
+   problem persists, contact your network administrator.
+
+If you type NET HELPMSG 58 on a Windows NT computer, you receive the following
+message:
+
+   The specified server cannot perform the requested operation.
+
+CAUSE
+=====
+
+This problem is caused by an expired password on the computer running Windows
+NT. A network trace shows the following error returned by the server:
+
+   SMB: R session setup & X - Server Error, (2242) Password Expired
+      SMB: SMB Status = Server Error, (2242) Password Expired
+         SMB: Error class = Server Error
+         SMB: Server error code = Password Expired
+
+If you type NET HELPMSG 2242 on a Windows NT computer, you receive the following
+message:
+
+   The password of this user has expired.
+
+Therefore, the password has expired. You will not be able to perform any network
+tasks until you change the password.
+
+RESOLUTION
+==========
+
+To resolve this problem, use User Manager to change the password on the Windows
+NT computer.
+
+Additional query words: prodnt usrmgr
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbWin95search kbZNotKeyword3
+Version           : WINDOWS:3.5 3.51 4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

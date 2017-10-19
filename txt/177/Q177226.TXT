@@ -1,0 +1,87 @@
+DOCUMENT:Q177226  02-MAY-1999  [iis]
+TITLE   :Memory Usage Increases When Querying Access 97 DB w/ ASP
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Active Server Pages (ASP) to connect to an Access 97 Datasource,
+memory usage may increase and ASP pages may take a long time to complete
+requests.
+
+The memory usage level may return to normal after the number of connections to
+the ASP pages decreases.
+
+CAUSE
+=====
+
+By default, an Access 97 Datasource has two parameters that affect system
+performance: MaxBufferSize and Threads. The default value for the MaxBufferSize
+parameter is 512 and the default value for Threads parameter is 3.
+
+RESOLUTION
+==========
+
+To improve performance and minimize memory usage, configure these parameters as
+follows:
+
+1. Open the Control Panel (click Start, point to Settings and then click Control
+   Panel.
+
+2. Click the ODBC Control Panel tool.
+
+3. In the ODBC Datasource Administrator, click the "System DSN" tab.
+
+4. Select an Access 97 DSN and click Configure.
+
+5. In the ODBC Microsoft Access 97 Setup dialog box, click Advanced on the right
+   of the screen.
+
+6. In the Set Advanced Options dialog box, select the MaxBufferSize parameter.
+   In the Value of MaxBufferSize box, enter 8192.
+
+7. Select the Threads parameter. In the Value of Threads box, enter 20.
+
+8. Click OK to commit the changes and close the Set Advanced Options dialog box.
+   Click OK to exit the ODBC Microsoft Access 97 Setup dialog box.
+
+9. Quit the ODBC Datasource Administrator.
+
+MORE INFORMATION
+================
+
+The recommended values of MaxBufferSize and Threads (8192 and 20) are resource
+dependent and should work in most cases. If the symptoms do not improve under
+high load, increase the value of these settings to utilize available resources.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : WINNT:2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

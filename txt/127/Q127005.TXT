@@ -1,0 +1,121 @@
+DOCUMENT:Q127005  05-JUN-2002  [foxpro]
+TITLE   :PRB: UP/DOWN Arrow Keys Call Click Event in Form
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Pressing the UP or DOWN arrow in a list box triggers the Click event.
+
+CAUSE
+=====
+
+This behavior is by design. When the arrow keys are pressed to navigate through
+a list, the value associated with the list is modified. This triggers the Click
+event.
+
+RESOLUTION
+==========
+
+If you do not want to execute the code in the Click event handler, you can
+verify the value of the last keypress when the Click event is triggered. If the
+LASTKEY() function returns the value of the UP or DOWN arrow keys, issue a
+RETURN in your routine.
+
+MORE INFORMATION
+================
+
+The Click event handler routine is also executed in the following scenarios:
+
+ - When the Spacebar is pressed on a command button, check box, or option
+   button.
+
+ - When the Enter key is pressed on a command button, check box, text box, or
+   option button.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code will demonstrate that the Click event is triggered when the UP
+or DOWN arrows are pressed in a list box. It also illustrates the alternative of
+verifying the value of the last key pressed.
+
+      ofrm1 = CREATEOBJECT('frm1')
+      ofrm1.show
+      READ EVENTS
+
+      ***********************
+      ** Class definitions **
+      ***********************
+
+      DEFINE CLASS frm1 AS form
+         ScaleMode=3
+         ADD OBJECT lsttest AS lstclick
+         ADD OBJECT cmdtest AS cmdquit
+         Caption = "Press the Up and Down Arrow keys"
+      ENDDEFINE
+
+      DEFINE CLASS lstclick AS listbox
+      * Defines a list with hard coded values
+
+         RowSourceType = 1    && Value
+         RowSource = "1,2,3"  && List of numbers to be displayed
+         Height = 85
+         Left = 84
+         Top = 60
+
+         PROCEDURE Click
+         IF LASTKEY()= 5  OR LASTKEY()=24 &&Traps for the Up or Down arrow
+           RETURN .T.
+         ELSE
+           WAIT WINDOW "Click has been pressed in the list box"
+         ENDIF
+         ENDPROC
+      ENDDEFINE
+
+      * Define a Quit command button that releases the form
+      DEFINE CLASS cmdquit AS Commandbutton
+         Top=150
+         Left=84
+         Caption= "Quit"
+
+         PROCEDURE click
+         RELEASE Thisform
+         CLEAR EVENTS
+         ENDPROC
+      ENDDEFINE
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,99 @@
+DOCUMENT:Q233398  11-JAN-2001  [vbwin]
+TITLE   :PRB: Common Dialog ShowHelp Method does not Work with CHM Files
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbCmnDlg kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to display a Help file using the Microsoft Common Dialog Control
+6.0, the following error message is displayed:
+
+   The filename file is not a Windows Help file, or the file is corrupted.
+
+CAUSE
+=====
+
+The ShowHelp method launches WinHelp32.exe, which does not support HTML based
+help files.
+
+RESOLUTION
+==========
+
+To open an HTML based help file from Visual Basic it is necessary to call the
+HtmlHelp API function.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. From the Project menu, choose Components and then select "Microsoft Common
+   Dialog Control 6.0". Next, click OK.
+
+3. Site a Common Dialog control on Form1.
+
+4. Add the following code to the General Declarations section of Form1:
+
+      Private Sub Form_DblClick()
+         CommonDialog1.HelpFile = "c:\winnt\help\vbsetup.chm"
+         CommonDialog1.HelpCommand = cdlHelpContents
+         CommonDialog1.ShowHelp
+      End Sub
+
+5. Modify the path and file name in the second line of code to point to an
+   existing .chm file on your system.
+
+6. Run the application and double-click Form1. The error message described in
+   the SYMPTOMS section occurs.
+
+REFERENCES
+==========
+
+Visual Basic Online Help; search on: "ShowHelp" For more information, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q183434: HOWTO: Use HTML Help API in a Visual Basic Application
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCmnDlg kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

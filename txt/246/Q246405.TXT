@@ -1,0 +1,49 @@
+DOCUMENT:Q246405  19-NOV-1999  [msnetwork]
+TITLE   :How to Close the MSN Quick View Icon
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.6,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.6, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to close the MSN Quick View icon.
+
+MORE INFORMATION
+================
+
+To close the MSN Quick View icon click the MSN Quick View icon, point to MSN
+Options, and then click Close. The next time you connect to MSN Internet Access,
+the Quick View icon will be restored.
+
+Additional query words: 2.50 2.60 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN500 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.6,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

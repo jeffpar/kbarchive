@@ -1,0 +1,49 @@
+DOCUMENT:Q72486  30-JUL-2001  [homegame]
+TITLE   :Entertainment Pack File Sizes Differ Between Versions
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The following is a list of Windows Entertainment Pack (WEP) files that differ in
+size, after installation, between versions 1.0 and 1.0a:
+
+   Filename        1.00    1.00a
+   --------        -----   -----
+
+   ABOUTTET.DLL    10128   10224
+   IDLEWILD.EXE    12800   12928
+   IWLIB.DLL        7550    7518
+   TETRIS.EXE      62032   64784
+   TIC.EXE         20706   16944
+   WINMINE.EXE     31248   26976
+
+If the original disks are unavailable, the easiest way to distinguish between
+Windows Entertainment Pack versions is to look at the sizes of the files on the
+hard disk. The file dates of these files reflect the system-clock date at the
+time of installation.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

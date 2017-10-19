@@ -1,0 +1,207 @@
+DOCUMENT:Q216285  13-MAY-2002  [frontpg]
+TITLE   :HOW TO: Display a Picture by Using an Access Database in FP2000
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 2000 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2002 version of this article, see Q318813.
+
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - Step 1 - Prerequisites
+ - Step 2 - Create a New Personal Web
+ - Step 3 - Add the Sample Database to the Web
+ - Step 4 - Modify the Employees Table in the Database
+ - Step 5 - Add a Database Results Region
+ - Step 6 - Add the Image Links to the Database Results
+
+ - REFERENCES
+
+SUMMARY
+=======
+
+Use this step-by-step guide to display images on your Web site by using
+information from a Microsoft Access database.
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+   http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+Step 1 - Prerequisites
+----------------------
+
+Install both Microsoft FrontPage and Microsoft Access
+
+The steps in this article requires that you have both Microsoft FrontPage and
+Microsoft Access installed on the client computer.
+
+Instll the Component to Use the ASP Features in FrontPage
+
+Before you can use the ASP features in FrontPage 2000, install the components
+listed in the following Microsoft Knowledge Base article:
+
+   Q312638 FP: What You Need to Use Active Server Pages (ASP) in FrontPage 2000
+
+Step 2 - Create a New Personal Web
+----------------------------------
+
+1. Start FrontPage. On the File menu, point to New, and then click Web.
+
+2. Click the Personal Web template. Type the URL of a new personal Web on a Web
+   server that supports Active Server Pages, for example:
+
+   http://localhost/mypersonalweb/
+
+3. Click OK to create the Web.
+
+Step 3 - Add the Sample Database to the Web
+-------------------------------------------
+
+1. Click the New Page button on the Standard toolbar.
+
+2. On the Insert menu, point to Database, and then click Results.
+
+3. Click "Use a sample database connection (Northwind)", and then click Next.
+
+4. Click Cancel.
+
+Step 4 - Modify the Employees Table in the Database
+---------------------------------------------------
+
+1. On the View menu, click Folders.
+
+2. Double-click the Fpdb folder, and then double-click the Fpnwind.mdb file to
+   open the file in Microsoft Access.
+
+3. In Access, double-click the Employees table to open it.
+
+4. Click Design.
+
+5. Add a new field after the last field. Name this field FavoriteImage and set
+   the data type to Text. Click Save. Click View.
+
+6. Set the FavoriteImage field by using the information in the following table:
+
+   For Employee              Type this in the FavoriteImage field
+   ------------------------------------------------------------------------
+   Nancy Davolio             images/frontpag.gif
+   Andrew Fuller             images/city.gif
+   All remaining employees   images/sunset.gif
+
+7. On the File menu, click Exit to close the database and return to FrontPage.
+
+8. On the View menu, click Refresh.
+
+Step 5 - Add a Database Results Region
+--------------------------------------
+
+1. On the View menu, click Page.
+
+2. On the Insert menu, point to Database, and then click Results.
+
+3. In the list of existing database connections, click Sample. Click Next.
+
+4. For record source, click Employees, and then click Next.
+
+5. Click Edit List.
+
+6. Remove all the fields except for the following:
+
+   LastName
+   FirstName
+   FavoriteImage
+
+   Click OK. Click Next.
+
+7. Click Next again.
+
+8. Click Finish.
+
+9. Save the page and name it "Imagetest.asp" (without the quotation marks).
+
+Step 6 - Add the Image Links to the Database Results
+----------------------------------------------------
+
+1. Locate the database column value named <<FavoriteImage>>, and
+   then delete it.
+
+2. In the table cell where you just removed the column value, insert the
+   City.gif file from your Web.
+
+3. Right-click the image, and then click Picture Properties on the shortcut
+   menu.
+
+4. Click the General tab, and then click Browse.
+
+5. Click Parameters.
+
+6. In the path field, remove the current path. Click Insert Field Parameter, and
+   then click FavoriteImage.
+
+7. Click OK three times.
+
+   You will see a small broken image icon in the table column.
+
+8. Save the page, and then click the Preview in Browser button on the Standard
+   toolbar.
+
+REFERENCES
+==========
+
+For more information about how to work with databases in FrontPage, click
+Microsoft FrontPage Help on the Help menu, type "databases" (without the
+quotation marks) in the Office Assistant or the Answer Wizard, and then click
+Search to view the topic.
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta kbHOWTOmaster 
+Technology        : kbFrontPageSearch kbFrontPage2000Search kbZNotKeyword5
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

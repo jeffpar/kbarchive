@@ -1,0 +1,66 @@
+DOCUMENT:Q176141  17-DEC-2000  [win95x]
+TITLE   :Shortcut Retains Settings When Window Size Is Changed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click a shortcut to an MS-DOS-based program that is set to run
+in a normal window, the program may be maximized when it opens.
+
+CAUSE
+=====
+
+This problem can occur if the program window was maximized and then closed.
+
+RESOLUTION
+==========
+
+To work around this problem, start the MS-DOS-based program, and then press
+ALT+ENTER. This restores the program to a normal window. Note that you can
+toggle between normal window and maximized at any time by pressing ALT+ENTER.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+MORE INFORMATION
+================
+
+Windows-based programs contain program-specific settings which determine the
+window state at startup. The normal window setting for a shortcut to a
+Windows-based program starts the program in it's default window state.
+
+======================================================================
+Keywords          : kbenv kbui win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

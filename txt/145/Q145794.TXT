@@ -1,0 +1,73 @@
+DOCUMENT:Q145794  14-MAR-1999  [exchange]
+TITLE   :XADM: 1993 Private Extension Support on Per-Message Envelope
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a message from a DEC All-in-One mail system to a Microsoft
+Exchange Server with the X.400 Connector, the message may not get to the
+intended Microsoft Exchange Recipient and the original sender may not receive a
+Non-Delivery Report (NDR). No errors will be recorded in the Windows NT Event
+Log.
+
+However, messages sent from Microsoft Exchange to DEC All-In-One recipients flow
+fine. Additionally, messages sent from Microsoft Exchange to DEC with a read
+receipt requested will successfully return the read notification back to the
+Microsoft Exchange sender.
+
+MORE INFORMATION
+================
+
+The 1993 X.400 recommendation supports a per-message envelope Private Extension.
+Digital Equipment's latest version of Mailbus400 MTA (v2.0) implements this
+extension. Microsoft Exchange Server version 4.0 does not support per-message
+envelope Private Extensions. Service Pack 2 (SP2) and Microsoft Exchange Server
+version 4.0a add support for per-message envelope and report content Private
+Extensions.
+
+NOTE: Microsoft Exchange Server does not support per-recipient Private
+Extensions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in Microsoft Exchange Server 4.0 U.S.
+Service Pack 2. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: dec digital mailbus xmr gateway x400
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

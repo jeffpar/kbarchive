@@ -1,0 +1,75 @@
+DOCUMENT:Q164414  04-AUG-2001  [visualc]
+TITLE   :FIX: MSDEV Error: "The Requested Topic Does Not Exist"
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2
+OPER/SYS:
+KEYWORDS:kbVC420bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Visual C++ 4.2 over version 4.1 and then run Developer Studio,
+the following error message may appear:
+
+   The requested topic does not exist. The title is in error.
+
+CAUSE
+=====
+
+This happens because the registry key (should be all on one line):
+
+   HKEY_CURRENT_USER\SoftwareMicrosoftInfoViewer\Titles\VCBKS40.MVB\LastTopic
+
+has the last topic from Visual C++ 4.1 which is invalid in 4.2.
+
+This problem occurs in this release because the same book name is used in both
+Visual C++ 4.2 and 4.1.
+
+RESOLUTION
+==========
+
+ - Use the help system once in Visual C++ 4.2. This overwrites the registry key.
+   Exit and run Developer Studio again. The error does not occur.
+
+-or-
+
+ - The error message is harmless and can be ignored.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. The problem was corrected in Visual C 6.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC420bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : winnt:4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

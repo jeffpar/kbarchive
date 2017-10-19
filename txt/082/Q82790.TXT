@@ -1,0 +1,60 @@
+DOCUMENT:Q82790  26-OCT-1999  [win95x]
+TITLE   :SYSTEM.INI's NetDMASize= Switch and NetBIOS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows operating system version 3.1's SYSTEM.INI switch NetDMASize=
+specifies the DMA buffer size (in kilobytes) for NetBIOS transport software if a
+network has been installed. The entry must appear under the [386ENH] section of
+SYSTEM.INI:
+
+      NetDMASize=<kilobytes>
+
+MORE INFORMATION
+================
+
+This entry affects only the behavior of 386 enhanced mode. Especially on MCA
+machines, many network devices use DMA (Direct Memory Access). On these
+machines, a larger DMA buffer is required only if the network is loaded. This
+value will override the DMABufferSize entry if and only if a NetBIOS network is
+loaded before starting Windows and the size specified is larger than the size
+specified for DMABufferSize (default DMABufferSize is 16K).
+
+For Micro Channel Architecture (MCA) machines (IBM PS/2 or compatible), the
+default NetDMASize is 32K. For non-MCA machines, the default value is 0 because
+most ISA (Industry Standard Architecture) network adapters do not use DMA.
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

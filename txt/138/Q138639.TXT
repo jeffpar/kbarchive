@@ -1,0 +1,73 @@
+DOCUMENT:Q138639  16-APR-2000  [powerpt]
+TITLE   :"Slides From Outline" Command Causes "Currently In Use" Error
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft Word for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In PowerPoint, when you attempt to create a slide from a Word outline by
+clicking Slides From Outline on the Insert menu, you may receive the following
+error message:
+
+   The file <file name> is currently in use. PowerPoint cannot modify it
+   at this time.
+
+CAUSE
+=====
+
+You will receive this error message if the Microsoft Word document outline is
+open in Microsoft Word.
+
+RESOLUTION
+==========
+
+To correct this problem, do either of the following:
+
+ - Close the file in Microsoft Word.
+
+   -or-
+
+ - Save the file with the Rich Text Format (.rtf) format, and then insert the
+   .rtf file into the PowerPoint presentation.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 7.00 text w_powerpt powerpnt import
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbusage 
+Technology        : kbWordSearch kbPowerPtSearch kbWord700Search kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbWord700
+Version           : WINDOWS:7.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

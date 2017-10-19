@@ -1,0 +1,117 @@
+DOCUMENT:Q259244  07-MAY-2001  [visualc]
+TITLE   :BUG: Internal Compiler Error C1001 When You Call __assume()
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbVC600bug kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE) 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a function that expects STL::string as a reference is passed as an input
+argument to the __assume function, you may get the following error message:
+
+   repro.cpp(18): fatal error C1001: INTERNAL COMPILER ERROR
+
+   (compiler file 'E:\8447\vc98\p2\src\P2\main.c', line 494)
+
+   Please choose the Technical Support command on the Visual C++ Help menu, or
+   open the Technical Support help file for more information.
+
+Please refer to the "More Information" section for the sample code that
+reproduces the problem.
+
+RESOLUTION
+==========
+
+Use one of the following two methods to work around this problem:
+
+ - Construct a temporary STL::string object and pass this object as a reference
+   to the function (see workaround 1 in the sample code).
+
+ - Introduce a temporary variable to store the return value of the function,
+   which expects STL::string as reference (see workaround 2 in the sample code).
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code, when compiled, reproduces the problem. Uncomment the
+#define statements depending upon which workaround you choose:
+
+   // repro.cpp
+   // cl /Gx /c repro.cpp
+   #include <string>
+
+   //#define WORK_AROUND_1
+   //#define WORK_AROUND_2
+
+   using namespace std;
+
+   int MyFunc(string &m_str)
+   {
+   	return 1;
+   }
+
+   int main()
+   {
+   	string	str ;
+   	int	temp;
+   	
+   	__assume(MyFunc(string())); // This line generates C1001 error.
+   	
+   	// Workaround 1: Call the function with a temporary STL string object.
+   	#ifdef WORK_AROUND_1 
+   	   __assume(MyFunc(str));
+   	#endif
+       
+   	// Workaround 2: Store the return value of function in a temporary variable
+   	#ifdef WORK_AROUND_2
+   	   temp = MyFunc(string());
+   	   __assume(temp);
+   	#endif
+   	return 1;
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC600bug kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

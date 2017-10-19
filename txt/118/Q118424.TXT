@@ -1,0 +1,75 @@
+DOCUMENT:Q118424  06-OCT-1999  [win3x]
+TITLE   :Schedule+ Err Msg: Mailbox Name or Password Is Incorrect...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you sign in to Schedule+ for Windows for Workgroups, one of the following
+error messages appears even though the mailbox name and password are correctly
+specified in the Mail Sign-In dialog box:
+
+   The mailbox name or password is incorrect.
+
+   -or-
+
+   Your passwords don't match. Type your schedule file password.
+
+CAUSE
+=====
+
+If Schedule+ is started offline the first time the program is run, the following
+message is displayed after the calendar file is created:
+
+                    Microsoft Schedule+
+
+   A new file has been created for you. Your password has been set to
+   'PASSWORD'. You can change it by using the Change Password command.
+
+Schedule+ uses the default password "PASSWORD" (without the quotation marks) to
+access the calendar file. If Schedule+ is started offline the first time the
+program is run, the password is set to the default one regardless of the
+password selected by the user.
+
+RESOLUTION
+==========
+
+After you start Schedule+ by using the default password, you can change the
+password to any one you want. To change the password, choose Change Password
+from the Options menu. The original password is then requested. Type "PASSWORD"
+(without the quotation marks). The old password appears as asterisks as you type
+it. Choose OK. Enter a new password. Confirmation of the new password is then
+requested.
+
+Additional query words: 3.10 3.1 3.11 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

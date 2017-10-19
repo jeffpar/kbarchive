@@ -1,0 +1,119 @@
+DOCUMENT:Q80491  22-NOV-1999  [msdos]
+TITLE   :MS-DOS Upgrade Detects Current MS-DOS in Root Directory
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+During the MS-DOS Upgrade installation, the following message may be displayed:
+
+   Setup detected some of your original DOS files in the root directory of your
+   hard disk. To avoid a version conflict, you should exit Setup and then copy
+   your original DOS files to a subdirectory. Then delete these files from the
+   root directory of your hard disk and restart Setup.
+
+This message indicates that you must remove any MS-DOS files from the root
+directory and place them in a separate subdirectory before the Setup program can
+continue.
+
+MORE INFORMATION
+================
+
+The above error message occurs because MS-DOS 5.0 tries to store the old MS-DOS
+files in an OLD_DOS.X subdirectory (where "X" represents the particular
+installation of MS-DOS 5.0). If the Setup program identifies certain files in
+the root directory, it assumes that MS-DOS was installed in the root.
+
+If Setup determines MS-DOS files are in the root directory, you must create
+another subdirectory (for example, C:\MSDOS) and copy the MS-DOS files from the
+root into this directory. Next, delete the MS-DOS files from the root. Note: The
+following MS-DOS system files should remain in the root:
+
+   PC-DOS          MS-DOS
+   ------          ------
+
+   IBMBIO.COM      IO.SYS
+   IBMDOS.COM      MSDOS.SYS
+   COMMAND.COM     COMMAND.COM
+   *.INI           *.INI
+                   DBLSPACE.BIN        ; MS-DOS 6.0 and 6.2
+
+The following is a possible workaround to the above error message:
+
+1. Have a system/boot disk available.
+
+2. Create a new subdirectory on the hard drive. For example, type the following
+   at a command prompt (from the root C:\> directory):
+
+   "md olddos" (without the quotation marks)
+
+3. Copy all files from the root directory into the new subdirectory. For
+   example, type:
+
+   "copy c:\*.* c:\olddos" (without the quotation marks)
+
+4. Use the ATTRIB command to make COMMAND.COM, CONFIG.SYS, and AUTOEXEC.BAT
+   read-only by typing the following at the command prompt:
+
+   " attrib +r command.com
+   attrib +r config.sys
+   attrib +r autoexec.bat" (without the quotation marks)
+
+5. Check the CONFIG.SYS and AUTOEXEC.BAT files to ensure there are no device
+   drivers or programs being loaded from the root directory that are required to
+   boot the machine (for example, Disk Manager [DMDRVR.BIN] or Speed Store
+   [SSTOR.SYS, HARDDRV.SYS]). If a required device driver or program is
+   identified, use step 3 to make the files read-only.
+
+6. Delete all files from the root directory with the following command:
+
+   " del c:\*.*" (without the quotation marks)
+
+7. Use the ATTRIB command to change the files in the root directory back to
+   normal to allow the MS-DOS 5.0 Setup program to access them. Use the
+   following syntax:
+
+   attrib -r config.sys
+   attrib -r autoexec.bat
+   attrib -r command.com
+
+   Note: Be sure to follow the above syntax to restore any device drivers or
+   programs to normal status.
+
+8. Run the MS-DOS 5 Upgrade Setup program.
+
+Additional query words: 5.00 5.00a 6.00 6.20 6.21 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

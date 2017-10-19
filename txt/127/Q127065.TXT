@@ -1,0 +1,83 @@
+DOCUMENT:Q127065  17-DEC-2000  [win95x]
+TITLE   :Phone Number Does Not Appear in Modem Log File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 msnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you select the Record A Log File check box in your modem's properties, the
+log file (MODEMLOG.TXT) shows the phone number you dialed as "ATDT#######."
+
+CAUSE
+=====
+
+The phone number is shown this way to add security for credit card numbers used
+for long-distance dialing.
+
+WORKAROUND
+==========
+
+NOTE: You should use this workaround for troubleshooting purposes only.
+
+You can work around this behavior by typing "E1" (without the quotation marks) in
+the Extra Settings box in your modem's properties. Adding "E1" causes the phone
+number you dialed to be shown in the MODEMLOG.TXT file.
+
+The following steps demonstrate how to select the Record A Log File check box and
+add the "E1" setting:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the Modems icon.
+
+3. Click the Properties button.
+
+4. Click the Connection tab.
+
+5. Click the Advanced button.
+
+6. Click the Record A Log File check box to select it.
+
+7. In the Extra Settings box, type "E1" (without the quotation marks).
+
+8. Click OK until you return to the Modems Properties dialog box.
+
+9. Click the Close button.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 1.00 telephone
+
+======================================================================
+Keywords          : win95 msnetwork 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

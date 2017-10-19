@@ -1,0 +1,80 @@
+DOCUMENT:Q190070  11-DEC-1999  [foxpro]
+TITLE   :PRB: Old ACCESS/ASSIGN Refs Remain on Property Name Change
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The code in renamed ACCESS and ASSIGN methods still references the original
+property name.
+
+RESOLUTION
+==========
+
+The references must be changed manually by performing a REPLACE on all objects
+of "THIS.old" (where "old" is the original property name), with "THIS.new"
+(where "new" is the revised property name).
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add a new property called "OLD" with ACCESS and ASSIGN
+   methods. Close the New Property dialog box.
+
+2. Change the "Old" property name to "New" via the Edit Property/Method dialog
+   box ([Form][Edit Property/Method]). When prompted, change the "old_access"
+   and "old_assign" method names, as well.
+
+3. Close the Edit Property/Method dialog box and modify the "new_access" and
+   "new_assign" methods.
+
+In the "new_access" method, the original code remains "RETURN THIS.old"; in the
+"new_assign" method the following code remains "THIS.old = m.vNewVal".
+
+For the ACCESS and ASSIGN methods to affect the new property name, the old
+property reference must be updated. As indicated in the RESOLUTION section
+above, the best way of ensuring that all property references are changed is to
+use the Editor and search through all objects.
+
+
+Additional query words: kbDSupport kbDSE kbVFp600 kbOOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

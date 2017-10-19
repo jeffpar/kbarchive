@@ -1,0 +1,82 @@
+DOCUMENT:Q246368  24-OCT-2000  [winnt]
+TITLE   :How to Start Interix Daemons as Services
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to start Interix daemons as services.
+
+MORE INFORMATION
+================
+
+You can start the following Interix daemons as services:
+
+ - Telnetd
+
+ - Inetd
+
+ - Syslogd
+
+ - Cron1
+
+Microsoft recommends that you start Inetd to start Telnetd, rather than
+/bin/telnetd. No other daemon can be started directly as a service, so the
+following from /usr/sbin are started only by Inetd:
+
+ - in.fingerd
+
+ - in.ftpd
+
+ - in.ntalkd
+
+ - in.rexecd
+
+ - in.rlogind
+
+ - in.rshd
+
+ - in.telnetd
+
+ - in.tftpd
+
+For additional information about Interix services, refer to the following Web
+sites:
+
+   http://www.interix.com/NewInterix/technotes/note0008.html
+
+   http://www.interix.com/NewInterix/technotes/note0005.html
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,97 @@
+DOCUMENT:Q260720  30-MAY-2002  [homegame]
+TITLE   :How to Create a Modemlog.txt File
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Allegiance, version 1.0 
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you troubleshoot communication problems in online games, you may need to
+create a Modemlog.txt file. The Modemlog.txt file records a log of your
+communication sessions.
+
+This article describes how to create a Modemlog.txt file.
+
+MORE INFORMATION
+================
+
+NOTE: Because there are several versions of Microsoft Windows, the following
+steps may be different on your computer. If they are, please consult your
+product documentation to complete these steps.
+
+To create a Modemlog.txt file:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Modems.
+
+3. On the General tab, click the modem that you are using.
+
+4. Click Properties.
+
+5. Click the Connection tab.
+
+6. Click Advanced.
+
+7. Click to select the "Record a Log File" check box, and then click OK.
+
+8. Click OK, and then click Close.
+
+9. Close Control Panel.
+
+The Modemlog.txt file is now created when you use your modem in any program that
+relies upon the Windows Telephony Application Programming Interface (TAPI). The
+Modemlog.txt file is located inside the Windows folder.
+
+NOTE: If the "Record a Log File" check box is already selected, you need to
+rename the existing Modemlog.txt file to record a log of only one communication
+session.
+
+To rename the Modemlog.txt file:
+
+1. Click Start, point to Find, and then click "Files or Folders."
+
+2. In the Named box, type "modemlog.txt" (without the quotation marks).
+
+3. In the "Look in" box, click My Computer, and then click Find Now.
+
+4. In the list of found files, right-click the Modemlog.txt file, and then click
+   Rename.
+
+5. Type "modemlog.old" (without the quotation marks), and then press ENTER.
+
+6. Close the Find: Files Named Modemlog.txt window.
+
+Additional query words: 1.00 msgame igz msngz modemlog modem log connection append
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAllegianceSearch kbAsheronSearch kbAllegiance kbAsheron100 kbZone
+Version           : :1.0; WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

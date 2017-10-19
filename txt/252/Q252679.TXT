@@ -1,0 +1,206 @@
+DOCUMENT:Q252679  11-JUN-2002  [winnt]
+TITLE   :INFO: Tips on WMI Driver Testing
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:; winnt:
+OPER/SYS:
+KEYWORDS:kbDDK kbOSWin2000 kbDSupport kbGrpDSNTDDK kbWDM
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Driver Development Kit (DDK) 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article provides troubleshooting tips for developers who are incorporating
+Microsoft(r) Windows(r) Management Instrumentation (WMI) functionality in their
+Windows drivers. For information about implementing WMI in drivers for Windows
+2000 and Windows 98, see "Part 9: Supporting WMI" in the Kernel-Model Drivers
+Design Guide in the Windows 2000 DDK.
+
+MORE INFORMATION
+================
+
+Wmicore.mof defines standard data blocks and GUIDs, where the more useful common
+data blocks are the failure prediction classes. To avoid syntax errors in
+defining structures and GUIDs, use Wmimofck.exe to generate a header file
+(Wmidata.h). This tool can be found at %NTDDK%\Bin\Wmimofck.exe.
+
+The Wmimofck.exe tool can generate a Microsoft Visual Basic Script file that you
+can run to query classes and properties specified in a driver's .mof file. To
+generate a VBscript file, use the following command:
+
+   "wmimofck -tdriver.vbs driver.bmf" (without the quotation marks)
+
+You can then run the resulting script, Driver.vbs, from the command line. When it
+finishes running, examine the Driver.log file for the results.
+
+Any property that does not contain data cannot be queried by WMI. In this case,
+check that the driver's .mof file has been incorporated into the schema. If so,
+check that the driver is receiving WMI I/O Request Packets (IRPs) and completing
+them successfully.
+
+The Wmimofck.exe file can also generate Web pages for querying, setting, and
+executing methods and receiving events. The Web pages generated can be used as a
+template for more sophisticated interactions with devices. To generate Web
+pages, use the command:
+
+   "wmimofck -whtml driver.bmf" (without the quotation marks)
+
+The Web pages are generated under the html directory. Note that your default
+browser security settings might prevent you from loading the pages from a
+network drive.
+
+You can use the tool %Windir%\System32\Wbem\Wbemtest.exe to query individual
+classes, change the values of properties, execute methods, and receive events.
+
+Troubleshooting Tips for Specific Problems
+------------------------------------------
+
+MOF Doesn't Appear in \Root\Wmi Namespace:
+
+1. Run the Wmimofck.exe tool on the binary .mof file to check that the .mof
+   format is correct for WMI. To do this, run the command "wmimofck driver.bmf"
+   (without the quotation marks). %Windir%\System32\Wbem\Logs\Mofcomp.log will
+   show any errors that occur when you try to add the binary .mof file into the
+   schema.
+
+2. The Windows 2000 event log might have a message indicating that the driver
+   returned a badly formed WMIREGINFO data structure and thus could not be
+   registered.
+
+3. Check the registry path and MofResourceName returned by the driver in
+   IRP_MN_REGINFO.
+
+4. Check under the service key to verify that any MofImagePath value that might
+   be specified is correct.
+
+5. If using the binary .mof GUID, check that the driver receives an IRP that
+   queries for the binary .mof data and that the IRP is completed successfully
+   with the correct data and size.
+
+6. Check %windir%\System32\Wbem\Logs\Wmiprov.log for errors.
+
+7. Try to compile the .mof (not .bmf) file manually using Mofcomp. If your .mof
+   file is named Driver.mof, then the command would be "mofcomp -N:root/wmi
+   driver.mof" (without the quotation marks). See if any interesting error
+   messages appear.
+
+8. If Mofcomp succeeds and the .mof file is established in the schema, then most
+   likely there is a problem with the WMIREGINFO data structure. A typical
+   problem is that a class is derived from a base class that does not exist.
+
+   Important: Delete the classes that were added manually by Mofcomp so that you
+   can detect when the .mof file is incorporated in the schema successfully.
+
+Events Are Not Received:
+
+1. Look in the Windows 2000 event log.
+
+2. Look in %Windir%\System32\Wbem\Logs\Wmiprov.log.
+
+3. If the GUID for the event is registered as a static instance name, make sure
+   that the InstanceIndex field and the ProviderId field are filled in
+   correctly. If the GUID for the event is registered as a dynamic instance
+   name, make sure that an instance name is present when the event is fired.
+
+Event References Are Not Received:
+
+1. Look in the Windows 2000 event log.
+
+2. Look in %Windir%\System32\Wbem\Logs\Wmiprov.log.
+
+3. If the driver does not receive IRP_MN_QUERY_SINGLE_INSTANCE immediately after
+   firing the event, then most likely there is a problem with the
+   WNODE_EVENT_REFERENCE. If the driver receives IRP_MN_QUERY_SINGLE_INSTANCE,
+   then the IRP will complete with STATUS_SUCCESS.
+
+4. Check the WNODE_EVENT_REFERENCE structure fired by the driver. The GUID
+   specified in WNODE_HEADER should match the TargetGuid in
+   WNODE_EVENT_REFERENCE.
+
+5. If the GUID was registered with a static instance name, then the
+   WNODE_EVENT_REFERENCE should contain a valid instance index.
+
+6. If the GUID was registered with dynamic instance names, then the
+   WNODE_EVENT_REFERENCE should contain a valid instance name string.
+
+MOF Shows Up but Cannot Access Properties or Methods:
+
+1. Run the Wmimofck.exe tool on the binary .mof file to check that the MOF
+   format is correct for WMI. To do this, run the command "wmimofck driver.bmf"
+   (without the quotation marks).
+
+2. From within Wbemtest, try to query the class. Does the driver receive a WMI
+   IRP? If not, then check that the GUID in the .mof file matches the GUID in
+   the driver. Double-check that the driver receives an IRP_MN_REGINFO IRP, that
+   it succeeds, and that the GUID in question is part of the registration data
+   structures and marked as "enabled".
+
+3. If the driver does receive an IRP, ensure that the IRP is completed
+   successfully and that the data format for the returned WNODE is correct.
+
+4. If Wbemtest returns an error, click More Information and check the
+   Description property for information about the error.
+
+Unregistering in the Context of a WMI IRP:
+
+ - Calling IoWMIRegistrationControl to unregister causes the calling thread to
+   block until all WMI IRPs sent to the device object being unregistered are
+   completed. This means that a driver should not unregister while processing a
+   WMI IRP; it must call to unregister after the IRP has been completed. For
+   Windows 2000, there is a limitation that the driver not call to unregister in
+   the thread context that the IRP was delivered.
+
+Wmiprov.dll Registry Settings that Control Logging:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+ - WDM Provider will take the directory name from
+   HKLM\Software\Microsoft\WBEM\CIMOM\LoggingDirectory.
+
+ - WDM Provider will take maximum file size as specified in
+   HKLM\Software\Microsoft\WBEM\CIMOM\Log File Max Size.
+
+ - WDM Provider will disable logging if "0" is the value in
+   HKLM\Software\Microsoft\WBEM\CIMOM\Logging.
+
+ - WDM Provider will enable logging if "0" is not the value in
+   HKLM\Software\Microsoft\WBEM\CIMOM\Logging.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDDK kbOSWin2000 kbDSupport kbGrpDSNTDDK kbWDM 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbwin2000DDK kbAudDeveloper kbWinDDKSearch kbWinAdvServSearch
+Version           : WINDOWS:; winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

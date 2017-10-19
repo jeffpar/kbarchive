@@ -1,0 +1,60 @@
+DOCUMENT:Q213285  20-MAR-1999  [sms]
+TITLE   :SMS: NetWare Bindery Server Must Be Client's Preferred Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:2.0; winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbOSNovell smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server 2.0 clients authenticate to a NetWare Bindery server.
+The NetWare server must be configured as a Systems Management Server CAP and
+logon point. The client will specify this NetWare server as the preferred server
+when logging on to NetWare in order to correctly report its inventory to the SMS
+site server.
+
+MORE INFORMATION
+================
+
+If the preferred server is anything other than the one defined as the SMS login
+point, then the smsls.scr will not execute because it is appended to the bindery
+system logon script (net$log.dat) on the defined preferred server in the
+following manner:
+
+   "include sys:\smslogon\config\smsls.scr"
+
+The client would be logging on to a bindery server that does not have this
+statement appended to its login script (net$log.dat).
+
+Additional query words: prodsms NW netware prefered server system logon script
+
+======================================================================
+Keywords          : kbsms200 kbOSNovell smsinst 
+Technology        : kbSMSSearch kbSMS200 kbSMSI200
+Version           : WINDOWS:2.0; winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

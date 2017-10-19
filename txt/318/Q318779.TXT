@@ -1,0 +1,143 @@
+DOCUMENT:Q318779  09-MAY-2002  [sms]
+TITLE   :SMS: Programs Run After Applying Software Distribribution Hotfix
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbui kbsms200 kbsms200bug kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After application of a post-Systems Management Server (SMS) 2.0 Service Pack 3
+(SP3) SMSAPM32 hotfix, dependant programs, previously-disabled programs, or
+programs in which the supported platforms have been modified may unexpectedly
+run again. Because this problem was introduced with the hotfix for Q293187, any
+subsequent post-SMS 2.0 SP3 hotfix to client components that is later than
+version 2.00.1493.3194 also has this problem.
+
+CAUSE
+=====
+
+The hotfix for Q293187 implements a change where SMSAPM32 deletes program
+complete files in the %windir%\MS\SMS\Clicompa\APA\Data\Complete folder after
+the program is no longer advertised. This process is intended to delete complete
+files that are genuinely no longer advertised. However, because dependant
+programs, disabled programs, or programs that have platform that is not valid
+are not considered to be advertised by SMSAPM32, SMSAPM32 inadvertently deletes
+job files.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+Examples
+--------
+
+Dependant Program Example:
+
+1. Create package A, create Program 1, and then create Program 2.
+
+2. Make Program 2 dependent on Program 1, and then advertise Program 2.
+
+3. Client receives advertisement for Program 2.
+
+4. Program 1 successfully runs, and Program 2 successfully runs.
+
+5. 46 hours passes, or the client computer is restarted 2 times. By default,
+   SMSAPM32 shuts down and restarts itself every 23 hours. Because of this, job
+   deletion might occur after 2 computer restarts or 46 hours.
+
+6. Program 2 is rescheduled by the advertisement that was created in step 2.
+
+7. Client receives the advertisement, and then starts Program 1 before Program
+   2.
+
+NOTE: In some cases, Program 2 may never run. This could be caused if Program 1
+needs to restart, 46 hours elapse, the Program 1 job file is deleted, the
+computer finally restarts, and then Program 1 (not Program 2) runs because there
+is no history of Program 1 previously running.
+
+Disabled Program Example:
+
+1. Create Package A, create Program 1, and then advertise Program 1.
+
+2. Client receives advertisement, and then successfully runs Program 1.
+
+3. The SMS administrator disables the program in Program 1 properties.
+
+4. 46 hours passes, or the client computer is restarted two times. By default,
+   SMSAPM32 shuts down and restarts itself every 23 hours. Because of this, job
+   deletion might occur after 2 computer restarts or 46 hours.
+
+5. The SMS administration enables the program in Program 1 properties.
+
+6. Client runs Program 1 again.
+
+Platform Support Example:
+
+1. Create Package A, create Program 1, and then advertise Program 1 to a
+   Microsoft Windows NT 4.0 collection.
+
+2. Windows NT 4.0 clients receive the advertisement and successfully run Program
+   1.
+
+3. The SMS administrator changes Program 1 properties for "This program can run
+   only on specified client platforms" to something other than Windows NT 4.0
+   clients.
+
+4. 46 hours passes, or the client computer is restarted two times. By default,
+   SMSAPM32 shuts down and restarts itself every 23 hours. Because of this, job
+   deletion might occur after 2 computer restarts or 46 hours.
+
+5. The SMS administration changes Program 1 properties for "This program can run
+   only on specified client platforms" back to "The program can run on any
+   platform".
+
+6. Client runs Program 1 again.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool kbui kbsms200 kbsms200bug kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

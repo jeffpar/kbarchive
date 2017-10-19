@@ -1,0 +1,90 @@
+DOCUMENT:Q215473  22-APR-1999  [exchange]
+TITLE   :XFOR: Understanding How SNADS Connector Uses LU 6.2
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a brief overview of SNADS, LU6.2, and APPC, and how the
+SNADS Connector uses LU 6.2.
+
+MORE INFORMATION
+================
+
+SNADS (Systems Network Architecture Distribution Services) is a network of
+Distribution Service Units (DSU) that are responsible for transporting
+distributions (messages) from one end-user to another end-user. SNADS (or
+specifically, each DSU) uses LU 6.2 as a transport to send a distribution from
+one DSU to another DSU.
+
+LU 6.2 is a resource on an SNA node that can establish communications with
+another LU 6.2 on another SNA node to pass data. LU 6.2 also exposes a
+programming interface to allow a Transaction Program (TP) to request a
+conversation to another TP through an LU 6.2 - LU 6.2 session.
+
+In analogy to TCP/IP, the LU 6.2 - LU 6.2 session could be compared with a
+three-way TCP/IP handshake, and the TP could be compared with the application
+that is using the TCP/IP session. A DSU can act as multiple TPs just like any
+application can handle multiple incoming TCP/IP ports, or have multiple outgoing
+TCP/IP sessions. A DSU can be analogous to an SMTP mail server.
+
+The TP uses APPC commands to interface with the LU 6.2 to request a conversation,
+send data, and end a conversation with a partner TP on another LU 6.2.
+
+For example, a TP would use the ALLOCATE command to request the LU 6.2 to
+initiate a conversation with a named partner TP at a named partner LU 6.2.
+
+SNADS uses specific TP names to represent the functions of sending and receiving
+SNADS distributions (mail).
+
+   TP name for sending SNADS FS1 distributions: X'21'001
+   TP name for receiving SNADS FS1 distributions: X'21'002
+
+The notation above for the TP names indicates that the TP name begins with the
+(non-printable) character with hexadecimal code 21, and ends with the printable
+characters 001 or 002.
+
+The SNADS connector emulates a DSU in that it implements the X'21'001 and
+X'21'002 Transaction Programs.
+
+The SNADS connector will use the TP_STARTED, ALLOCATE, SEND_DATA, CONFIRM,
+DEALLOCATE, and TP_ENDED commands during the process of starting up, sending a
+message to the Host (or AS/400) system, and shutting down.
+
+The SNADS connector will use the RECEIVE_ALLOCATE, RECEIVE_AND_WAIT, CONFIRMED,
+TP_ENDED commands during the process of starting up, receiving a message from
+the Host (or AS/400) system, and shutting down.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

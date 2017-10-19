@@ -1,0 +1,366 @@
+DOCUMENT:Q130261  14-DEC-1995  [homemm]
+TITLE   :MSDN April 1995:  MANSETUP.TXT Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:WINDOWS
+KEYWORDS:kbmm kbreadme
+
+---------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Developer Network, April 1995
+---------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is the contents of the MANSETUP.TXT file
+located in the root directory of the Microsoft Developer Network
+(MSDN) April 1995 CDROM disc. The information outlines the manual setup
+processand the license agreement for the product.
+
+Microsoft Development Library (CD 11, April 1995)
+LICENSE AGREEMENT AND MANUAL SETUP INSTRUCTIONS
+-------------------------------------------------
+
+Please read the License Agreement below before installing the
+Microsoft Development Library software. If you do not agree with the
+terms of this Agreement, promptly return the Microsoft Development
+Library and accompanying materials to the place you obtained
+them for a full refund.
+
+*****************************
+MICROSOFT DEVELOPMENT LIBRARY
+MICROSOFT LICENSE AGREEMENT
+*****************************
+
+This is a legal agreement between you (either an individual or an
+entity) and Microsoft Corporation. By installing the Development
+Library software, you are agreeing to be bound by the terms of this
+Agreement. If you do not agree to the terms of this Agreement,
+promptly return the disc case(s) and the accompanying items
+(including written materials and binders or other containers) to the
+place you obtained them for a full refund.
+
+MICROSOFT SOFTWARE LICENSE
+--------------------------
+
+1.  GRANT OF LICENSE. Microsoft grants you the right to use the
+enclosed CD-ROM disc(s) ("SOFTWARE") in the manner provided below:
+
+    (a) A single-user license permits you (either an individual, or
+if an entity, one designated individual) to use the program
+designated as the Viewer Application ("APPLICATION") on any computer
+system for the purpose of accessing the SOFTWARE.
+
+    (b) If you have purchased the Single Server-5 Concurrent User or
+Single Server-25 Concurrent User license, you may install one copy of
+the SOFTWARE on one local network server. The APPLICATION may be
+installed by an unlimited number of users, except that no more than
+five (5) [or twenty five (25)] users may concurrently use the
+APPLICATION.
+
+    (c) If the anticipated number of concurrent users of the SOFTWARE
+will exceed the number of applicable licenses, you must have a
+reasonable mechanism in place to ensure that the number of persons
+using the SOFTWARE concurrently does not exceed the number of
+licenses.
+
+    (d) Each licensed user, whether a concurrent user or single user,
+may make an unlimited number of copies of any material from the
+SOFTWARE or from other written materials accompanying the SOFTWARE,
+provided that such copies shall be used only for internal purposes
+and are not to be republished or distributed (either in hardcopy or
+electronic form) beyond the user's premises, except as provided in
+Sections 4 and 5.
+
+    (e) You may purchase additional single-user licenses from
+Microsoft to permit additional individuals to install and use the
+APPLICATION. If additional single-user licenses for the SOFTWARE have
+been purchased, only the individuals for whom the licenses have been
+purchased can use the APPLICATION.
+
+    (f) A single-user license permits you and any additional
+single-user licensee(s) to access the SOFTWARE over a network server;
+however, the SOFTWARE can be accessed on only one network server,
+regardless of the number of additional licenses purchased.
+
+
+2.  COPYRIGHT. The SOFTWARE, including any images, photographs,
+animations, video, audio, music, and text incorporated in the
+SOFTWARE, is owned by Microsoft or its suppliers and is protected by
+United States copyright laws and international treaty provisions. You
+may not reproduce or distribute the SOFTWARE or any written materials
+accompanying the SOFTWARE except as otherwise provided herein.
+
+3.  OTHER RESTRICTIONS. You may not rent or lease the SOFTWARE. You
+may make a permanent transfer of the SOFTWARE by providing Microsoft
+written notice of your name, company, and address and the name,
+company, and address of the person to whom you are transferring the
+rights granted herein. In the event of a transfer, you may not retain
+copies of the SOFTWARE and accompanying written materials, and the
+recipient must agree to the terms of this Agreement. You may not
+reverse-engineer, decompile, or disassemble the SOFTWARE except to
+the extent that such foregoing restriction is expressly prohibited by
+applicable law. If the SOFTWARE is an update or has been updated, any
+transfer of the license to use the SOFTWARE must include the most
+recent update and all prior versions. If a separate license agreement
+for a particular component of the SOFTWARE is included on the CD
+("Component Agreement"), the terms of such Component Agreement will
+control in the event of inconsistencies between this Agreement and
+the Component Agreement.
+
+4.  SAMPLE CODE. Microsoft grants you a royalty-free right to use and
+modify the source code version and to reproduce and distribute the
+object code version of the sample code, icons, cursors, and bitmaps
+provided within the Sample Code bin/folder on the SOFTWARE ("Sample
+Code"), provided that: (a) you distribute the Sample Code only in
+conjunction with and as a part of your software product that adds
+primary and significant functionality to the Sample Code; (b) you do
+not use Microsoft's name, logo, or trademarks to market your software
+product; (c) you agree to indemnify, hold harmless, and defend
+Microsoft and its suppliers from and against any claims or lawsuits,
+including attorneys' fees, that arise or result from your
+distribution of your software product; (d) you include "Copyright
+<year>, Microsoft Systems Journal" in all Microsoft Systems Journal
+(MSJ) code used within your program(s); and (e) you otherwise comply
+with the terms of this license agreement.
+
+5. REDISTRIBUTABLE COMPONENTS. Microsoft grants you a non-exclusive
+royalty-free right to reproduce and distribute the .DLL files
+included as part of the Sample Code provided that: (a) you distribute
+the .DLL files only in conjunction with and as a part of your
+software product that adds primary and significant functionality to
+the Sample Code; (b) you do not use Microsoft's name, logo, or
+trademarks to market your software product; (c) you agree to
+indemnify, hold harmless, and defend Microsoft and its suppliers from
+and against any claims or lawsuits, including attorneys' fees, that
+arise or result from the use or distribution of your software
+product; (d) you include "Copyright <year>, Microsoft Systems
+Journal" in all Microsoft Systems Journal (MSJ) code used within your
+program(s); and (e) you otherwise comply with the terms of this
+license agreement.
+
+6. EXPORT RESTRICTIONS. You agree that neither you nor your customers
+intend to or will, directly or indirectly, export or transmit (a) the
+SOFTWARE or related documentation and technical data or (b) your
+software product as described in Sections 4 and 5 of this Agreement
+(or any part thereof), or process, or service that is the direct
+product of the SOFTWARE to any country to which such export or
+transmission is restricted by any applicable U.S. regulation or
+statute, without the prior written consent, if required, of the
+Bureau of Export Administration of the U.S. Department of Commerce,
+or such other governmental entity as may have jurisdiction over such
+export or transmission.
+
+LIMITED WARRANTY
+----------------
+
+NO WARRANTIES. Microsoft expressly disclaims any warranty for the
+SOFTWARE. The SOFTWARE and any related documentation is provided "as
+is" without warranty of any kind, either express or implied,
+including, without limitation, the implied warranties of
+merchantability or fitness for a particular purpose. The entire risk
+arising out of use or performance of the SOFTWARE remains with you.
+
+CUSTOMER REMEDIES. Microsoft's entire liability and your exclusive
+remedy shall not exceed the price paid for the SOFTWARE.
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES. In no event shall Microsoft
+or its suppliers be liable for any damages whatsoever (including,
+without limitation, damages for loss of business profit, business
+interruption, loss of business information, or any other pecuniary
+loss) arising out of the use or inability to use this Microsoft
+product, even if Microsoft has been advised of the possibility of
+such damages. Because some states/jurisdictions do not allow the
+exclusion or limitation of liability for consequential or incidental
+damages, the above limitation may not apply to you.
+
+U.S. GOVERNMENT RESTRICTED RIGHTS
+---------------------------------
+
+The SOFTWARE and documentation are provided with RESTRICTED RIGHTS.
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of The Right in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of the Commercial Computer
+Software--Restricted Rights 48 CFR 52.227-19, as applicable.
+Manufacturer is Microsoft Corporation/One Microsoft Way/Redmond, WA
+98052-6399.
+
+If you acquired this product in the United States, this Agreement is
+governed by the laws of the State of Washington.
+
+If you acquired this product in Canada, this Agreement is governed by
+the laws of the Province of Ontario, Canada. Each of the parties
+hereto irrevocably attorns to the jurisdiction of the courts of the
+Province of Ontario and further agrees to commence any litigation
+which may arise hereunder in the courts located in the Judicial
+District of York, Province of Ontario.
+
+Should you have any questions concerning this Agreement, or if you
+desire to contact Microsoft for any reason, please contact the
+Microsoft subsidiary serving your country, or write: Microsoft
+Customer Sales and Service/One Microsoft Way/Redmond, WA  98052-6399.
+
+Si vous avez acquis votre produit Microsoft au CANADA, la garantie
+limit e suivante vous concerne:
+
+GARANTIE LIMIT E
+----------------
+
+EXCLUSION DE GARANTIES.  Microsoft renonce enti rement   toute
+garantie pour le LOGICIEL. Le LOGICIEL et toute autre documentation
+s'y rapportant sont fournis  comme tels  sans aucune garantie quelle
+qu'elle soit, expresse ou implicite, y compris, mais ne se limitant
+pas, aux garanties implicites de la qualit  marchande ou un usage
+particulier. Le risque total d coulant de l'utilisation ou de la
+performance du LOGICIEL est entre vos mains.
+
+RECOURS DU CLIENT.  La seule obligation de Microsoft et votre recours
+exclusif n'exc deront pas le prix pay  pour le LOGICIEL.
+
+ABSENCE DE RESPONSABILIT  POUR LES DOMMAGES INDIRECTS.  Microsoft ou
+ses fournisseurs ne pourront  tre tenus responsables en aucune
+circonstance de tout dommage quel qu'il soit (y compris mais non de
+fa on limitative les dommages directs ou indirects caus s par la
+perte de b n fices commerciaux, l'interruption des affaires, la perte
+d'information commerciale, ou toute autre perte p cuniaire) r sultant
+de l'utilisation ou de l'impossibilit  d'utilisation de ce produit,
+et ce, m me si la soci t  Microsoft a  t  avis e de l' ventualit  de
+tels dommages. Certains  tats/juridictions ne permettent pas
+l'exclusion ou la limitation de responsabilit  relative aux dommages
+indirects ou cons cutifs, et la limitation ci-dessus peut ne pas
+s'appliquer   votre  gard.
+
+DROITS LIMIT S DU GOUVERNEMENT AM RICAIN
+----------------------------------------
+
+Le LOGICIEL et la documentation sont offerts avec des DROITS LIMIT S.
+L'utilisation, la reproduction ou la divulgation par le gouvernement
+sont sujettes aux restrictions  nonc es au sous-ali na (c)(1)(ii) de
+The Right in Technical Data and Computer Software, clause au DFARS
+252.227-7013 ou aux sous-ali nas (c)(1) et (2) de Commercial Computer
+Software--Droits limit s au 48 CFR 52.227-19, tel qu'applicable.
+Microsoft Corporation, One Microsoft Way, Redmond, Washington
+98052-6399 est le fabricant.
+
+La pr sente Convention est r gie par les lois de la province
+d'Ontario, Canada. Chacune des parties   la pr sente reconna t
+irr vocablement la comp tence des tribunaux de la province d'Ontario
+et consent   instituer tout litige qui pourrait d couler de la
+pr sente aupr s des tribunaux situ s dans le district judiciaire de
+York, province d'Ontario.
+
+Au cas o  vous auriez des questions concernant cette licence ou que
+vous d siriez vous mettre en rapport avec Microsoft pour quelque
+raison que ce soit, veuillez contacter la succursale Microsoft
+desservant votre pays, dont l'adresse est fournie dans ce produit, ou
+ crire  : Microsoft Customer Sales and Service, One Microsoft Way,
+Redmond, Washington 98052-6399.
+
+09/02/94  LE912540.007 (Microsoft Development Library, April 1995)
+
+**************************
+MANUAL SETUP INSTRUCTIONS
+**************************
+
+Please run the Microsoft Development Library Setup program
+(SETUP.EXE) from the Development Library CD to install the
+Development Library on your system. Follow the manual setup
+instructions below ONLY if the Setup program fails.
+
+The manual setup instructions are equivalent to running Setup with the
+standard installation option. These instructions result in a complete
+installation of the Library with the exception of transferring
+bookmarks and annotations from previous releases. To transfer
+bookmarks and annotations, you must run the Setup program.
+
+Instructions:
+
+1. Create a new installation directory for the Development Library
+(we've assumed C:\MSDNCD in the instructions below).
+
+2. Copy the following files from the Development Library CD to C:\MSDNCD:
+
+    msdn.ico
+    msin.exe
+    msdncd.hlp
+    relnotes.hlp
+
+3. Edit the MSIN.INI file, located in your Windows directory.
+
+If you do not have an MSIN.INI file on your system, you will need to
+create one with the information shown below. If you do have an
+existing MSIN.INI file, add the following sections into the existing
+file. (D: represents your CD drive; please replace this with the
+correct drive letter.)
+
+**************** MSIN.INI**********************
+
+    [MSDN.Settings]
+    licensed.name=<Enter your name here (required)>
+    licensed.organization=<Enter your company name here (optional)>
+    license_version=9/2/94
+    license_last_read=<Enter the current date>
+
+    [series]
+    MSDN=MSDNCD11.MVB
+
+    [all titles]
+    MSDNCD11.MVB=MSDNCD11.MVB
+
+    [MSDNCD11.MVB]
+    title=Microsoft Development Library April 1995
+    installtype=Standard
+    LocalDir=C:\MSDNCD
+    Path=D:\
+
+**********************************************************************
+
+4. In Program Manager, choose the New command from the File menu.
+Choose Program Group from the New Program Object dialog box. In the
+Program Group Properties dialog box, type "MS Developer Network" in
+the Description text field.
+
+5. In Program Manager, choose the New command from the File menu.
+Choose Program Item from the New Program Object dialog box to create
+an icon for the Development Library. In the Program Item Properties
+dialog box, type the following information:
+
+    Description: Development Library April 1995
+    Command Line: C:\MSDNCD\MSIN MSDNCD11
+
+Choose MSDN.ICO from the installation directory as the icon file.
+
+6. In Program Manager, choose the New command again from the File
+menu. Choose Program Item from the New Program Object dialog box to
+create an  icon for the Development Library Release Notes. In the
+Program Item Properties dialog box, type the following information:
+
+    Description: Release Notes
+    Command Line: C:\MSDNCD\RELNOTES.HLP
+    Working Directory: C:\MSDNCD
+
+Installation of the Microsoft Development Library is now complete.
+
+KBCategory: kbmm kbreadme
+KBSubcategory: win31 multi media multimedia multi-media
+
+Additional reference words: kbhowto April 1995 mmtitles
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1995.

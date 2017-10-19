@@ -1,0 +1,98 @@
+DOCUMENT:Q146118  05-FEB-2000  [foxpro]
+TITLE   :PRB: Duplicate Column Appears in Combo or List Box
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting the RowSourceType of a combo box or list box to 6-Fields or 2-Alias and
+then either concatenating the first two fields together or using a function,
+such as UPPER(), on the first field causes the object to duplicate the data from
+the first column into the second column.
+
+WORKAROUND
+==========
+
+Use an SQL-ELECT statement to select the data before placing it in the object
+when you want to concatenate fields or use functions with data. For example, the
+following SQL-SELECT statement places the city and phone fields into the first
+column and the postalcode field into the second column:
+
+      SELECT city+phone,postalcode FROM customer INTO CURSOR TEMP
+
+You need to type this SQL-SELECT statement into the RowSource property, and
+change the RowSourceType to 3-SQL Statement.
+
+You can also place certain functions (such as UPPER, LTRIM, and RTRIM) in a
+SQL-SELECT statement. However, other functions, like SUBSTR(), give an error
+when placed in a SQL-SELECT statement.
+
+Another option is to use an array or the AddItem method to populate the combo box
+or list box. For more information about populating an object by using the
+AddItem method, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q137183 How to Add Items to a Multiple-Column Combo Box
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form called test.
+
+2. Add the Customer table from the TestData database located in the Samples\Data
+   subdirectory under Visual FoxPro to the Data Environment.
+
+3. Place a combo box on the form.
+
+4. In the properties sheet of the Combo box, set the following properties:
+
+   BoundColumn = 2
+   ColumnCount = 2
+   ColumnWidths = 150,150
+   RowSource = city+phone,postalcode
+   RowSourceType = Fields
+
+5. Run the form. The combo box duplicates the data from the first column to the
+   second column in every row. The second field does not appear.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

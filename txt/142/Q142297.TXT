@@ -1,0 +1,93 @@
+DOCUMENT:Q142297  17-DEC-2000  [win95x]
+TITLE   :NetWare Printer Offline Using Microsoft Service for NDS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+Your NetWare network printer may be offline, or you may receive the following
+error message:
+
+   Cannot connect to network printer. Make sure your network is working properly
+   and the network share you are connecting to exists.
+
+CAUSE
+=====
+
+This behavior can occur if the registry entry for the Microsoft Print Provider
+for NetWare is set incorrectly.
+
+RESOLUTION
+==========
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+Use Registry Editor to check the following registry key:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print\Providers\ 
+   Microsoft Print Provider for NetWare
+
+If you have installed the Microsoft Client for NetWare Networks without the
+Microsoft Service for NetWare Directory Services (MSNDS), the Name string value
+should be set to:
+
+   Nwpp32.dll
+
+If you are using the Microsoft Client for NetWare networks with MSNDS, the Name
+string value should be set to:
+
+   Ndspp.dll
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: msnds
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

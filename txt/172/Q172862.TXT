@@ -1,0 +1,69 @@
+DOCUMENT:Q172862  11-JAN-2001  [vbwin]
+TITLE   :DOCFIX: Error in Sample Code for Async Downloading of Property
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual Basic 5.0 Books Online topic entitled "Adding internet features to
+controls" contains an error in the PictureFromURL Property Let procedure.
+
+MORE INFORMATION
+================
+
+If you run the sample code, you may receive the compile error "Variable not
+defined" or run-time error 424 "Object Required".
+
+The compile error results from the following line of code in the PictureFromURL
+Property Let procedure:
+
+      If (AmbientProperties.UserMode = True) _
+            And (NewString <> "") Then
+
+This line of code should read as follows:
+
+      If (UserControl.Ambient.UserMode = True) _
+            And (NewString <> "") Then
+
+The Ambient property of a UserControl returns an AmbientProperties object that
+holds the ambient properties of its container.
+
+STATUS
+======
+
+This documentation error has been fixed in Visual Basic 6.0.
+
+Additional query words: asynchronous kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbdocerr kbdocfix
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

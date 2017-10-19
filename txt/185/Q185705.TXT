@@ -1,0 +1,75 @@
+DOCUMENT:Q185705  22-SEP-1999  [sna]
+TITLE   :TCP/IP Address Changes to NetBIOS Name on Windows 95 SNA Client
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you configure the SNA Server client for Windows 95 with multiple sponsor
+servers, the following may be noticed when viewing the Sponsor Server list at a
+later time:
+
+ - The sponsor server entries have been changed to NetBIOS names even though
+   they were originally entered as IP Addresses.
+
+ - The sponsor server entries may be listed in a different order from the way
+   they were originally listed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+SP1, 3.0 SP2, and 3.0 SP3. We are researching this problem in versions 3.0, 3.0
+SP1, 3.0 SP2, and 3.0 SP3 and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0. This
+problem has been corrected in the latest U.S. Service Pack for SNA Server
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The list of sponsor servers can be viewed using the SNA Client Configuration
+(snabase.exe /config) or by using the registry under the following entry:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SnaBase\Parameters\Sponsor
+
+Additional query words: sponsor client Win95
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,57 @@
+DOCUMENT:Q134457  21-MAR-2001  [powerpt]
+TITLE   :PPT7: Files Saved in Outline View Open in Slide View
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbinterop kbdta kbconversion
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a PowerPoint version 2.0 through 4.0 presentation in PowerPoint
+for Windows 95, version 7.0, it always opens in Slide View. This happens even if
+you were in Slide Sorter, Outline, Handout, or Title (PowerPoint 2.0 only) view
+when you saved the original presentation.
+
+CAUSE
+=====
+
+When you open an earlier version presentation in PowerPoint for Windows 95, it
+is converted to PowerPoint for Windows 95 format. The converter always changes
+the view of the presentation to Slide View. The reverse is also true. When you
+save a presentation from PowerPoint for Windows 95 as a PowerPoint 4.0
+presentation, it opens the PowerPoint 4.0 presentation in Slide View, regardless
+of what view the presentation was saved in.
+
+Additional query words: 7.00 ppt95 95 win95 powerpt winppt
+
+======================================================================
+Keywords          : kbinterop kbdta kbconversion 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

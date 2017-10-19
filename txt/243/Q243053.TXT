@@ -1,0 +1,234 @@
+DOCUMENT:Q243053  27-JUL-2001  [foxpro]
+TITLE   :HOWTO: Create an Application Role on Microsoft SQL Server 7.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbSQL kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnip
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+ - Microsoft SQL Server version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under some conditions, a database administrator may wish to grant users access
+to data in a Microsoft SQL Server database through a specific application while
+restricting direct access to data, using another application (that is, Microsoft
+SQL Server Query Analyzer, Microsoft Excel, and so forth). Microsoft SQL Server
+7.0 accommodates this situation through the use of application roles.
+Application roles may be used to grant specific access to data while preventing
+users from connecting to Microsoft SQL Server using another application.
+
+This article illustrates how to programmatically create and grant privileges to
+an application role on Microsoft SQL Server 7.0 from within Microsoft Visual
+FoxPro.
+
+MORE INFORMATION
+================
+
+The security system in Microsoft SQL Server is implemented at the level of the
+database. This is the best and most robust method for controlling user
+activities regardless of the application used to communicate with SQL Server.
+However, there may be situations requiring custom security controls to
+accommodate the special requirements of an individual application. This is
+especially true when dealing with complex databases and databases with large
+tables.
+
+The fundamental differences between standard and application roles are:
+
+ - Application roles contain no members. Users, Microsoft Windows NT(r) groups,
+   and roles cannot be added to application roles; the permissions of the
+   application role are gained when the application role is activated for the
+   user's connection through a specific application(s). A user's association
+   with an application role is due to being capable of running an application
+   that activates the role, rather than being a member of the role.
+
+ - Application roles are inactive by default and require a password to be
+   activated by using the sp_setapprole system stored procedure. The password
+   can be provided by the user, for example, through an application prompt, but
+   it is more likely that the password is incorporated within the application.
+   The password can be encrypted as it is sent to SQL Server.
+
+ - When an application role is activated for a connection by the application,
+   the connection permanently loses all permissions applied to the login, user
+   account, or other groups or database roles in all databases for the duration
+   of the connection. The connection gains the permissions associated with the
+   application role for the database in which the application role exists.
+   Because application roles are applicable only to the database in which they
+   exist, the connection can gain access to another database only by virtue of
+   permissions granted to the guest user account in the other database.
+   Therefore, if the guest user account does not exist in a database, the
+   connection cannot gain access to that database. If the guest user account
+   does exist in the database but permissions to access an object are not
+   explicitly granted to guest, the connection cannot access that object
+   regardless of who created the object. The permissions the user gained from
+   the application role remain in effect until the connection logs out of SQL
+   Server.
+
+The sp_addapprole system stored procedure is used to implement an application
+role. The Transact SQL syntax for sp_addapprole is:
+
+    sp_addapprole [@rolename =] 'role',
+    [@password =] 'password'
+
+The @rolename argument is a character string for the name of the role. The role
+is a sysname with no default, that must be a valid identifier that does not
+already exist in the database.
+
+@password is a character string password that must be passed to the sp_setapprole
+stored procedure and is required to activate the application role.
+
+Only members of the db_owner and db_securityadmin fixed database roles can
+execute the sp_addapprole system stored procedure.
+
+The application role is activated from an application with the sp_setapprole
+stored procedure. The Transact SQL syntax for sp_setapprole is:
+
+       sp_setapprole [@rolename =] 'role' ,
+       [@password =] {Encrypt N 'password'} | 'password'
+       [,[@encrypt =] 'encrypt_style']
+
+The @rolename argument is the name of the application role that is defined in the
+current database.
+
+The @password argument is the password that is required to activate the
+application role. When using the Encrypt function, the password must be
+converted to a Unicode string by preceding the password with N.
+
+The @encrypt argument specifies the encryption style used by password.
+
+Any user can execute the sp_setapprole system stored procedure by providing the
+correct password for the role.
+
+The following code snippet illustrates how to programmatically create and
+activate an application role from Visual FoxPro:
+
+   PUBL gcSQLServer
+   LOCAL lcSQLDataPath, lcConnStr
+
+   *!* Insert your SQL7 Server name and DATA path here.
+   gcSQLServer = "sphinxsql"
+   lcSQLDataPath = "d:\mssql7\data\"
+
+   lcConnStr = "DRIVER=SQL Server;SERVER=" + gcSQLServer + ";DATABASE=MASTER;uid=sa;pwd="
+   gnConnHandle = SQLSTRINGCONNECT(lcConnStr)
+
+   *!* Select the Master Database.
+   Use_Master=sqlexec(gnConnHandle,'USE MASTER')
+   IF Use_Master>0
+   	*!* Determine whether or not the database exists.
+   	*!* If not, create it.
+   	sqlcommand="SELECT * FROM SYSDATABASES WHERE NAME = 'TESTROLE'"
+   	nCheck_Db=sqlexec(gnConnHandle,sqlcommand,'check_db')
+   	IF RECCOUNT('check_db')<1
+   		*!* Create a 1 MB database with a 1 MB log file.
+   		sqlcommand="create database testrole "+ CHR(13) + ;
+   			"   on primary "+ CHR(13) + ;
+   			"      (name = 'appdata', "+ CHR(13) + ;
+   			"      filename = '" + lcSQLDataPath + "testrole.mdf', "+ CHR(13) + ;
+   			"      size = 1,  "+ CHR(13) + ;
+   			"      maxsize = 2, "+ CHR(13) + ;
+   			"      filegrowth = 512 kb) "+ CHR(13) + ;
+   			"      log on (name = 'applog', "+ CHR(13) + ;
+   			"      filename ='" + lcSQLDataPath + "testrole.ldf', "+ CHR(13) + ;
+   			"      size = 1, "+ CHR(13) + ;
+   			"      maxsize = 3, "+ CHR(13) + ;
+   			"      filegrowth = 512 kb) "
+   		nmake_data_file=sqlexec(gnConnHandle,sqlcommand)
+   	ENDIF
+   	*!* Use the database.
+   	nuse_testrole=sqlexec(gnConnHandle,'USE TESTROLE')
+   	*!* Determine whether or not the testing table exists.
+   	sqlcommand="SELECT * FROM SYSOBJECTS WHERE NAME='TESTING'"
+   	ncheck_tbl=sqlexec(gnConnHandle,sqlcommand,'systables')
+   	IF RECCOUNT('systables')=0
+   		*!* The table doesn't exist, so create it.
+   		sqlcommand="CREATE TABLE TESTING (CHARFLD CHAR(10) NULL) "
+   		nmake_table=sqlexec(gnConnHandle,sqlcommand)
+   	ENDIF
+
+   	*!* Add an application role.
+   	sqlcommand="SELECT * FROM SYSUSERS WHERE NAME = 'APPTEST'"
+   	nCheck_role=sqlexec(gnConnHandle,sqlcommand,'approles')
+   	IF RECCOUNT('approles')=0
+   		c_role_string="sp_addapprole @rolename = 'apptest', "+ CHR(13) + ;
+   			"@password = 'app_pwd'"
+   		check_role=sqlexec(gnConnHandle,c_role_string)
+   	ENDIF
+
+   	*!* Open a new connection to SQL Server and try to insert into the table.
+   	=check_app()
+
+   	*!* Grant All privileges on the testing table to the application role.
+   	c_grant_string="GRANT ALL ON TESTING TO apptest"
+   	check_grant=sqlexec(gnConnHandle,c_grant_string)
+
+   	*!* Open a new connection to SQL Server and try to insert into the table.
+   	=check_app()
+
+   ENDIF
+   =sqldisconn(gnConnHandle)
+
+   PROCEDURE check_app
+   	*!* The application role is only activated in this procedure because
+   	*!* this procedure has a separate connection to the server.
+   	*!* Create a New connection to SQL Server.
+   	lcConnStr = "DRIVER=SQL Server;SERVER=" + gcSQLServer + ";DATABASE=MASTER;uid=sa;pwd="
+   	gnconnhandleb=SQLSTRINGCONNECT(lcConnStr)
+   	*!* Use the database.
+   	gnselectdatabase=sqlexec(gnconnhandleb,'USE TESTROLE')
+   	IF gnselectdatabase>0
+   		*!* Activate the application role.
+   		gnsetrole=sqlexec(gnconnhandleb,"sp_setapprole 'apptest','app_pwd'")
+   		IF gnsetrole>0
+   			*!* Attempt to insert into the testing table.
+   			gninsert=sqlexec(gnconnhandleb,"INSERT INTO TESTING VALUES ('TEST')")
+   			IF gninsert>0
+   				WAIT WINDOW "The application has privileges to insert data into this table."
+   			ELSE
+   				WAIT WINDOW "The application was UNABLE to insert data into this table."
+   			ENDIF
+   		ENDIF
+   	ENDIF
+   	=sqldisconn(gnconnhandleb)
+
+When the code is executed and check_app is called before the application role has
+been granted object permissions on the Testing table, a Wait window with the
+following message displays:
+
+   The application was unable to insert data into this table.
+
+When the check_app procedure is called after the application role has been
+granted object permissions on the Testing table, a Wait window with the
+following message displays:
+
+   The application has privileges to insert data into this table.
+
+Additional query words: KBDSE
+
+======================================================================
+Keywords          : kbDatabase kbSQL kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet kbSQLProg 
+Technology        : kbVFPsearch kbSQLServSearch kbAudDeveloper kbSQLServ700 kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

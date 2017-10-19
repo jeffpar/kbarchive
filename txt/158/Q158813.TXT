@@ -1,0 +1,61 @@
+DOCUMENT:Q158813  15-SEP-1999  [iis]
+TITLE   :Cannot Connect to Personal Web Server from Remote System
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:mspwsw95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Personal Web Server versions 1.0, 1.0a for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After sharing files with Personal Web Server, you may not be able to connect to
+the computer from a remote system.
+
+CAUSE
+=====
+
+This behavior may be caused by a problem with name resolution. When you attempt
+to connect to a remote system using a machine name with the Transmission Control
+Protocol/Internet Protocol (TCP/IP), TCP/IP must first find the Internet
+Protocol (IP) address of the remote system. If the remote machine name is not
+registered with the Domain Name System (DNS) or Windows Internet Name Service
+(WINS) server you are using, or is not listed in your HOSTS file, TCP/IP cannot
+resolve the name.
+
+RESOLUTION
+==========
+
+The user of the remote system should contact the system administrator or
+Internet service provider (ISP) and have the machine registered in the DNS or
+WINS servers on the network. Or, the user of the client system can contact their
+system administrator to add an entry to the HOSTS file for the remote system.
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          : mspwsw95 
+Technology        : kbPersWebServSearch kbZNotKeyword3 kbPersWebServ100Win95 kbPersWebServ100aWin95
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

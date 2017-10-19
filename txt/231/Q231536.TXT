@@ -1,0 +1,70 @@
+DOCUMENT:Q231536  14-SEP-2001  [automap]
+TITLE   :MapPoint 2000: Unable to Save More than One Map to Floppy Disk
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to save a Microsoft MapPoint 2000 map to a floppy disk, you may
+receive the following error message:
+
+   The disk is full. Please delete unneeded files or save your map to another
+   disk or drive.
+
+CAUSE
+=====
+
+This behavior can occur if you attempt to save more than one map as a Web page
+to the same floppy disk.
+
+NOTE: You receive this message even if sufficient space remains on on the floppy
+disk to store the additional map.
+
+RESOLUTION
+==========
+
+To work around this issue, save only one map to a floppy disk when you save a
+map as a Web page.
+
+If you want to save multiple maps to the same floppy disk, you must save the
+additional maps in the MapPoint Map or Map Template formats.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft MapPoint 2000.
+
+Additional query words: mp2000 enough room diskette
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,112 @@
+DOCUMENT:Q279537  06-AUG-2002  [exchange]
+TITLE   :XCON: Post-Service Pack 3 MTA Bindback String Changes
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP4
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP4 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Two message transfer agents (MTAs) may not be able to bind on multihomed
+computers with certain post-Exchange Server 5.5 Service Pack 3 builds of the MTA
+installed on only one Exchange Server 5.5 computer. The following error messages
+may be logged:
+
+   Event ID: 9322
+   Source: MSExchangeMTA
+   Description: An interface error has occurred. An MtaBindBack over RPC has
+   failed. Locality Table (LTAB) index: %1, NT/MTA error code:1722. Comms error
+   %3, Bind error %4,Remote Server Name %5, Protocol String <IP Address of
+   Server>.
+
+   Event ID: 9318
+   Source: MSExchangeMTA - Interface
+   Description: An RPC communications error occurred. Unable to bind over RPC.
+   Locality Table (LTAB) index: 151, NT/MTA error code: 1722. Comms error 1722,
+   Bind error 1722, Remote Server Name SERVERNAME [MAIN BASE 1 500 %10] (14)
+
+CAUSE
+=====
+
+This issue can occur because when two MTAs connect over remote procedure call
+(RPC), the originating MTA sends an MTA bind to the remote end. This MTA bind
+contains a bindback endpoint that the remote end uses to initiate the bindback.
+In earlier builds, this bindback endpoint is an Internet protocol (IP) address
+and a port number. The remote MTA actually ignores this bindback endpoint and
+uses the address that the packet came from. In the latest builds, the bindback
+string contains a name, rather than an IP address. The remote end must be able
+to successfully resolve this name to an IP address to successfully bindback.
+
+A multihomed computer may reach a state where this name resolution does not work;
+for example, if a fully qualified domain name (FQDN) of the first bound card is
+sent but the remote server cannot resolve the FQDN.
+
+RESOLUTION
+==========
+
+To resolve this issue, ensure that the two MTAs both communicate over the
+network interface card (NIC), which is first in the binding order.
+
+WORKAROUND
+==========
+
+To work around this issue, add an FQDN entry to the hosts file on the computer
+that issues the bindback.
+
+MORE INFORMATION
+================
+
+This change in MTA bindback behavior came about because of customer cluster and
+firewall implementations (for example, when only traffic to the cluster virtual
+IP address is allowed through a firewall). In this case, Exchange Server needs
+to send the cluster's IP address and the remote MTA needs to use the information
+that is passed in the bind, instead of just using the source address (which is
+the node address).
+
+Another example is a bridgehead server that has two NICs on different subnets.
+There are mailbox servers on both subnets, so by sending the server name and
+getting the remote MTA to perform a lookup, the servers always use an IP address
+that is appropriate.
+
+For additional information about related issues, click the article numbers below
+to view the articles in the Microsoft Knowledge Base:
+
+   Q279415 XCON: MTA 9321 Error Message Occurs When Attempting to Start the
+   Message Transfer Agent
+
+   Q251318 XCON: Message Transfer Agent Uses Node IP Address Instead of Cluster
+   IP Address
+
+
+Additional query words: fails multi homed bind back
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP4
+Version           : :5.5 SP4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

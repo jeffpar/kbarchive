@@ -1,0 +1,71 @@
+DOCUMENT:Q139319  24-JUL-2001  [homemm]
+TITLE   :Mac Encarta: Animations Play with Faded or Unusual Colors
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994, 1995, 1996, 1997 editions
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbgraphic kbhw kbui kbHardwarekbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+ - Microsoft Encarta 96 Encyclopedia for Macintosh 
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+ - Microsoft Encarta 97 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play an animation in Encarta, the screen colors may appear faded or
+unusual, and the border around the animation may be pink.
+
+CAUSE
+=====
+
+This behavior can occur if Encarta cannot change the display color palette to 16
+colors.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Encarta 1994, 1995, 1996, and
+1997.
+
+MORE INFORMATION
+================
+
+To correctly play an animation, Encarta needs to change the display color
+palette to 16 colors. If Encarta cannot change the display color palette, the
+animation plays with distorted colors.
+
+This issue can occur on certain Power Macintosh computers with high performance
+video cards installed.
+
+Additional query words: 1994 1995 1996 1997 mac multi media multimedia multi-media mmtitles kbmm pallette color pinkish washed fade wash dither dithered
+
+======================================================================
+Keywords          : kbdisplay kbenv kbgraphic kbhw kbui kbHardware kbbuglist
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac kbEncartaEnCyc1996Mac kbEncartaEnCyc1997Mac
+Version           : :1994, 1995, 1996, 1997 editions
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

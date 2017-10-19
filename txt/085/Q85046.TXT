@@ -1,0 +1,75 @@
+DOCUMENT:Q85046  16-NOV-1999  [pcmail]
+TITLE   :FFAPI: Components of the Application FFAPI
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Here is a list of the components of the Application File Format Application
+Programming Interface (FFAPI):
+
+Application FFAPI
+-----------------
+
+   Filename     Description
+   --------     -----------
+
+   APPDIR.EXE   Extracts address list from MS Mail postoffice.
+
+   APPPUT.EXE   Inserts mail items into MS Mail database.
+
+   APPGET.EXE   Extracts mail for specified user from MS Mail
+                database.
+
+Application Remote FFAPI
+------------------------
+
+   Filename     Description
+   --------     -----------
+
+   RMTGET.EXE   Extracts mail items from remote user's outbox.
+
+   RMTPUT.EXE   Inserts mail items into remote user's inbox.
+
+More detailed information on Application FFAPI components can be found in the
+appropriate FFAPI documentation.
+
+REFERENCES
+==========
+
+"Microsoft Mail for PC Networks, Software Development Kit Application File
+Format API"
+
+
+Additional query words: 3.00 2.1a pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

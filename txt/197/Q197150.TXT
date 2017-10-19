@@ -1,0 +1,64 @@
+DOCUMENT:Q197150  14-NOV-2000  [word97]
+TITLE   :WD97: Automatic Captioning Doesn't Label Inserted Files
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbfield word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you configure Microsoft Word to automatically insert captions for Word
+documents, and you then insert documents by clicking File on the Insert menu,
+captions are not automatically added.
+
+CAUSE
+=====
+
+By design, Word adds captions to embedded Word document objects only, which you
+insert by clicking Object on the Insert menu. The AutoCaption feature does not
+apply to Word documents you insert directly as files.
+
+RESOLUTION
+==========
+
+To correctly insert a document and have the caption automatically added, follow
+these steps:
+
+1. On the Insert menu, click Object.
+
+2. On the Create New tab, click to select Microsoft Word Document, or on the
+   Create from File tab, click Browse to select an existing Word document to
+   insert as a Word document object.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbdta kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,113 @@
+DOCUMENT:Q96831  19-NOV-1999  [msdos]
+TITLE   :How to Boot from the Hard Disk on an IBM PS/1
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install MS-DOS, you receive one of the following error messages:
+
+ - 
+
+   Invalid COMMAND.COM
+
+ - 
+
+   Cannot load COMMAND, System halted
+
+ - 
+
+   Incorrect DOS version
+
+CAUSE
+=====
+
+By default, the IBM PS/1 uses system files located on a read-only memory (ROM)
+chip. The setup program for MS-DOS installs MS-DOS files on either a floppy disk
+or a hard disk. Therefore, before installing MS-DOS, you must change your
+default startup procedure so that it uses the system files on the Setup disk
+instead of those on the ROM chip.
+
+WORKAROUND
+==========
+
+Use the following steps to reinstall MS-DOS:
+
+1. Press and hold down both mouse buttons.
+
+2. Start your PS/1. The computer displays the System menu.
+
+3. From the System menu, choose the Your Software icon. A group of folders
+   appears.
+
+4. Choose the DOS folder. A list of files in your DOS folder appears.
+
+5. Double-click the CUSTOMIZ file. The How System Starts screen appears.
+
+6. Use the DOWN ARROW key to select the "Try Diskette First, then Try Fixed
+   Disk" option.
+
+7. Press the SPACEBAR to choose the option.
+
+8. Use the DOWN ARROW key to select the Read CONFIG.SYS option.
+
+9. Use the RIGHT ARROW key to select the From Disk option.
+
+10. Press the SPACEBAR to choose the option.
+
+11. Use the DOWN ARROW key to select the Read AUTOEXEC.BAT option.
+
+12. Use the RIGHT ARROW key to select the From Disk option.
+
+13. Press the SPACEBAR to choose the option.
+
+14. Press ENTER to save the system startup changes.
+
+15. Restart your computer by pressing CTRL+ALT+DEL, and then run the Setup
+   program for MS-DOS again.
+
+NOTE: In some cases, the PS/1 may revert back to default boot settings if the
+computer is restarted while holding down both mouse buttons.
+
+If this procedure does not work, call IBM Product Support Services for
+assistance.
+
+MORE INFORMATION
+================
+
+The IBM product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 6.00 5.00 DOS err msg international business machines 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

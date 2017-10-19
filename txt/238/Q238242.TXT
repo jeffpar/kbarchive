@@ -1,0 +1,96 @@
+DOCUMENT:Q238242  27-JUL-2001  [ssafe]
+TITLE   :BUG: OLE Automation Returns "Element not found" Error
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbAutomation kbSSafe600bug kbDSupport kbBug kbGrpDSSSafe kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to Visual SourceSafe (VSS) using OLE Automation, the following
+error message appears:
+
+   Element not found.
+
+RESOLUTION
+==========
+
+The following two workarounds will resolve the problem described in the SYMPTOMS
+section:
+
+ - Unregister the VSS 5.0 OLE Automation .dll and register the VSS 6.0 OLE
+   Automation .dll using the following commands from a DOS prompt:
+
+      regsvr32 /u <path to 5.0 ssapi.dll>
+      regsvr32 <path to 6.0 ssapi.dll>
+
+ - Use early binding instead of late binding (See the REFERENCES section for
+   more information on early binding).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem can exist in Visual Basic (VB), VBScript, WScript, or VC (if you
+use the Class Wizard to wrap the DLL). The problem only happens on computers
+that previously had SourceSafe 5.0 installed on them and then upgraded to
+SourceSafe 6.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new VB project.
+
+2. Add a button to the form and type the following in the Click event of the
+   button:
+
+      Dim objVSSDatabase
+      Set objVSSDatabase = CreateObject("SourceSafe")
+      objVSSDatabase.Open <"path to SourceSafe srcsafe.ini file\srcsafe.ini">,    <"login">, <"password">
+
+3. Run the program and click the button you just added.
+
+REFERENCES
+==========
+
+A Primer on Early Binding (or How to Make OLE Automation Faster)
+
+   Q161983 ACC: Regsv32a.exe Available on MSL
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbSSafe600bug kbDSupport kbBug kbGrpDSSSafe kbISS 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

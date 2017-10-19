@@ -1,0 +1,106 @@
+DOCUMENT:Q133166  26-MAY-2001  [homekids]
+TITLE   :Encarta '95 Edition: Msetup.txt Contents
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains the text of the Msetup.txt file included with
+Microsoft Encarta. The file is located on the CD-ROM in the \Aamsstp\Manual
+folder.
+
+For additional information about Msetup.txt, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q124942 Encarta 1995: MSETUP.TXT Incorrect
+
+MORE INFORMATION
+================
+
+Encarta Manual Installation Instructions
+----------------------------------------
+
+If you encounter difficulties in setting up Encarta with the Setup program, you
+will still be able to fully install and use Encarta by using a manual
+installation and Manual.bat, a batch file that will copy files from the CD to
+your hard disk.
+
+Once the copying is completed, it may be necessary to run Setup.exe from the CD
+as specified in the Encarta installation instructions.
+
+Running Manual.bat
+------------------
+
+It is recommended that you exit Windows before running Manual.bat to prevent
+possible difficulties with replacement of some system files.
+
+The Manual.bat file is located in the x:\Aamsstp subdirectory of your Encarta CD
+(where 'x' is the drive corresponding to your CD-ROM drive). The CD-ROM drive
+will be referred to as [source] later in these instructions.
+
+To run Manual.bat, change to the x:\amsstp subdirectory and type the following at
+the MS-DOS prompt:
+
+Manual [windows dir] [dest]
+
+Where [windows dir] is the path to your Windows subdirectory (usually
+C:\Windows)
+
+[dest] is the path and directory to which you want to install Encarta (usually
+C:\Encarta)
+
+For example:
+
+Manual C:\Windows C:\Encarta
+
+installs Encarta to your C drive in the Encarta subdirectory and tells the batch
+file that Windows is located on your C drive in the Windows subdirectory.
+
+NOTE: If you do not provide the [windows dir] and the [dest], Manual.bat will
+copy the files into an \Encfiles subdirectory in your Temp subdirectory. For
+example: C:\Temp\Encfiles
+
+The files can then be copied into the \Encarta, \Windows, and \Windows\System
+subdirectories.
+
+Important: Running Setup.exe
+----------------------------
+
+If you have not previously run Setup.exe from the Encarta disk, you should do so
+after running the Manual.bat file.
+
+When the above instructions have been completed, Encarta will be successfully
+installed.
+
+Additional query words: kbhowto 1995 95 install installation errors multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

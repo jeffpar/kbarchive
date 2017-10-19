@@ -1,0 +1,59 @@
+DOCUMENT:Q235204  21-MAR-2001  [sms]
+TITLE   :SMS: %sys% Variable Differs for 16-bit and 32-bit Executables
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbClient kbConfig kbsms200 kbsms200bug kbsmsInst kbSoftwareDist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile a Microsoft Systems Management Server (SMS) Installer script on
+a Microsoft Windows NT 4.0 or Microsoft Windows 2000-based computer, the %sys%
+variable may report different values when run on Win16-based systems than when
+run on Win32-based systems.
+
+For example, when you select "32-bit Windows (32-bit EXE)" as the destination
+platform under the Advanced Configuration settings, the %sys% variable is set to
+%systemroot%\system32. However, when the same script is compiled with the
+destination platform set to "16/32-bit Windows (16-bit EXE)", the variable is
+set to %systemroot%\system.
+
+STATUS
+======
+
+This behavior is by design and is the default behavior of the
+GetSystemDirectory() function.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbConfig kbsms200 kbsms200bug kbsmsInst kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200 kbSMSI200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

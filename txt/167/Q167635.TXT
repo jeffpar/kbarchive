@@ -1,0 +1,73 @@
+DOCUMENT:Q167635  09-AUG-2001  [exchange]
+TITLE   :XADM: Error Msg: <File> In Use By Another Application
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to upgrade to Microsoft Exchange Server version 5.0, you may
+receive the following error message:
+
+   The file C:\EXCHSRVR\CONNECT\MSMCON\BIN\MTPERF.DLL
+   is in use by another application.
+
+You then have the options to Abort, Retry, or Ignore. If you click Ignore, you
+may receive similar error messages, but for different files. Such files may be:
+
+   C:\EXCHSRVR\CONNECT\MSMCON\BIN\XTNPERF.DLL
+   C:\EXCHSRVR\BIN\MDBPERF.DLL
+   C:\EXCHSRVR\BIN\MTAPERF.DLL
+   C:\EXCHSRVR\BIN\GWPERF.DLL
+   C:\EXCHSRVR\BIN\IMCPERF.DLL
+
+CAUSE
+=====
+
+If any of the above files are locked open by other applications, such as virus
+checking programs, Simple Network Management Protocol (SNMP) programs, or
+Performance Monitor (which may be running remotely against the Exchange Server
+computer), then the upgrade process cannot replace these files.
+
+WORKAROUND
+==========
+
+To work around this problem, temporarily stop the program (usually by stopping
+the corresponding service in the Windows NT Control Panel Services applet) that
+may be locking the DLL open. Click the Retry option and continue with setup.
+After setup completes successfully, restart any services you stopped in the
+Windows NT Control Panel Services applet.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,79 @@
+DOCUMENT:Q137752  17-DEC-2000  [win95x]
+TITLE   :Cannot Print to Microsoft Fax Printer Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:; Win2000:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+ - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Even though faxing from Microsoft Exchange may operate normally, you may be
+unable to print to the Microsoft Fax printer driver from compatible programs.
+
+CAUSE
+=====
+
+This behavior can occur if the Microsoft Fax printer driver is missing or
+damaged.
+
+RESOLUTION
+==========
+
+To reinstall the Microsoft Fax printer driver, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Use the right mouse button to click the Microsoft Fax icon in the Printers
+   folder, and then click Delete.
+
+3. Click the Start button, and then click Run.
+
+4. In the Open box, type the following line, and then click OK:
+
+   " awadpr32.exe " (without the quotation marks)
+
+   This command rebuilds and reinstalls the Microsoft Fax printer driver.
+
+MORE INFORMATION
+================
+
+Reinstalling the Microsoft Fax service in a Microsoft Exchange profile does not
+reinstall the Microsoft Fax printer driver. If you remove the Microsoft Fax
+printer driver from the Printers folder, use the method above to reinstall it.
+
+You can also reinstall the Microsoft Fax printer driver by removing and
+reinstalling Microsoft Exchange, but this can be a complicated task.
+
+Additional query words: corrupt msfax ms fax awfax
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE
+Version           : WINDOWS:; Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

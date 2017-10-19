@@ -1,0 +1,76 @@
+DOCUMENT:Q176785  11-DEC-1999  [foxpro]
+TITLE   :PRB: SET MARK TO Does Not Work with "#" and "A"
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use characters like "#", "a", and "A" as date delimiters to enter a
+date value in Visual FoxPro 5.x, the delimiter shifts to the right creating an
+invalid entry.
+
+RESOLUTION
+==========
+
+Use characters other than "#", "a", and "A" as date delimiters.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This problem does not occur in Visual FoxPro version 3.x.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create and run a program (.prg) file with the following code:
+
+          SET MARK TO "#"
+          ldDate = {}
+          @1,1 GET ldDate
+          READ
+
+2. Run the program.
+
+3. Type in the date.
+
+NOTE: The "#" character shifts one space to the right with every character that
+you enter. This eventually results in an invalid date entry.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

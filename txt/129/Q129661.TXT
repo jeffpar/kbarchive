@@ -1,0 +1,54 @@
+DOCUMENT:Q129661  17-DEC-2000  [win95x]
+TITLE   :Fax Cover Page Editor Cannot Undo Multiple Text Entries
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Fax Cover Page Editor has an Undo feature that lets you undo up to
+five tasks. However, you can undo only one task in a text box.
+
+For example, if you type "This is a test" (without the quotation marks) in a text
+box, delete the word "this," delete the word "test," then click Undo, you can
+undo only the last deletion. If you click Undo multiple times, the word "test"
+appears and disappears.
+
+MORE INFORMATION
+================
+
+The Fax Cover Page Editor uses the standard edit controls for text boxes. The
+standard edit controls support only one level of Undo. Other aspects of the Fax
+Cover Page Editor (such as graphic boxes) are not affected by this behavior.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

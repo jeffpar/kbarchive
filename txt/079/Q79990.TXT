@@ -1,0 +1,64 @@
+DOCUMENT:Q79990  30-JUL-2001  [homegame]
+TITLE   :Idlewild Does Not Work with FAXit for Windows
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Idlewild program included with the Windows Entertainment Pack volumes 1, 2,
+and 3 will not work correctly if you have the automatic checking feature of
+FAXit for Windows running on the machine. FAXit's automatic checking program
+will check the hard disk for an incoming fax once every minute. Because of
+FAXit's manipulation of system timers, Idlewild will never time out and blank
+the screen.
+
+MORE INFORMATION
+================
+
+To blank the screen in Idlewild, follow either step 1 or 2 below:
+
+1. Blank the screen manually, as follows:
+   a. From the Options menu, choose Blank Now.
+
+      -or-
+
+   b. Move your mouse to the "sleep now" corner in the upper-right- hand corner
+      of the screen.
+
+      -or-
+
+2. Remove FAXit's fax-checking program (FAXITSCH.EXE) from the WIN.INI load=
+   line and restart Windows.
+
+   Note: If you remove FAXITSCH.EXE, FAXit will not notify you of incoming faxes.
+
+For more information on FAXit for Windows or removing the fax-checking program
+(FAXITSCH.EXE), call Alien Computing at (805) 947-1310.
+
+Additional reference word(s): Alien Computing WEP idle wild set delay auto check
+feature fax checking 1.0 1.0a 1.00 1.00a
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

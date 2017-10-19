@@ -1,0 +1,64 @@
+DOCUMENT:Q186418  31-JUL-2001  [sms]
+TITLE   :SMS: NOAUTOUPGRADE Switch to Prevent Upgrade of Secondary Sites
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbConfig kbsmsAdmin kbsmsUtil smsadmin smssetup smsconfig smsinst smsutil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A modified Setup.exe file, which includes the /SYSMAP and /NOAUTOUPGRADE
+options, is available from both the BackOffice Resource Kit and the Microsoft
+Web site, but is not required for applying Service Pack 3 (SP3) to a Systems
+Management Server 1.2 primary site. However, the modified Setup.exe is required
+for upgrading to Service Pack 1 (SP1) or Service Pack 2 (SP2) if you want to
+prevent automatic upgrades of your secondary sites.
+
+The SP3 version of Setup.cmd is updated and allows the use of the /NOAUTOUPGRADE
+switch without requiring a modified version of the program.
+
+MORE INFORMATION
+================
+
+To apply SP3 and prevent the secondary sites from being upgraded automatically,
+use the Setup.cmd file from the Service Pack 3 CD. Use the following command:
+
+      setup.cmd /noautoupgrade
+
+This simplification is because the NOAUTOUPGRADE option is now supported in the
+Setup.cmd file that is included in SP3.
+
+Do not use the Setup.exe file from either the BackOffice Resource Kit or the
+Microsoft Systems Management Server Web site for Service Pack 3 upgrades.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbConfig kbsmsAdmin kbsmsUtil smsadmin smssetup smsconfig smsinst smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

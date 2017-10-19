@@ -1,0 +1,178 @@
+DOCUMENT:Q232392  30-MAY-2002  [homegame]
+TITLE   :Zone: High Latency in Game Lobbies or When Playing Games
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are in a game lobby or playing a game that is listed on the Zone, you
+may experience slow performance, long pauses, or other indications of high
+Internet latency.
+
+CAUSE
+=====
+
+This behavior can occur if you are using slow network hardware or if your
+Internet connection is slow.
+
+RESOLUTION
+==========
+
+Although Internet latency is often beyond anybody's direct control, there are
+some steps that you can take to minimize its likelihood.
+
+To troubleshoot this issue, use the following methods.
+
+Quit Unnecessary Programs
+-------------------------
+
+Quit any unnecessary programs that are running, especially programs that
+frequently send and receive data over the Internet such as e-mail, chat, and
+streaming media programs.
+
+If the issue continues to occur, proceed to the next method.
+
+Test Your Connection Speed
+--------------------------
+
+To test your connection speed, visit the following MSN Web site:
+
+   http://tech.msn.com/internet/speedtest.asp
+
+This Web site tests and displays your line speed. The Zone requires a minimum
+line speed of 14.4 kilobits per second (Kbps) and recommends a line speed of
+56.0 Kbps.
+
+NOTE: These requirements enable you to connect to the MSN Gaming Zone. Retail
+games that support matchmaking on the Zone may have higher system requirements.
+Check the system requirements for the game that are printed on the product box.
+
+Restart Your Connection to the Internet and the Zone
+----------------------------------------------------
+
+To restart your connection to the Internet and the Zone:
+
+1. Quit your Web browser and any other programs that are running.
+
+2. Right-click the Zone.com icon on the taskbar, and then click Exit.
+
+3. Disconnect from the Internet.
+
+4. Reconnect to the Internet.
+
+5. Connect to the Zone, and then sign in.
+
+If the issue continues to occur, try to connect to the Zone at a later time. If
+the issue continues to occur, proceed to the next method.
+
+Update Your Internet Service Provider (ISP) Software
+----------------------------------------------------
+
+If you use an ISP (such as America Online) that uses proprietary software to
+connect to the Internet, you may be able to obtain and install a patch or
+software update that reduces Internet latency.
+
+Use a Different ISP
+-------------------
+
+If you continue to experience Internet latency problems with your ISP, you may
+want to consider using a different ISP.
+
+Install the Latest Version of Microsoft DirectX
+-----------------------------------------------
+
+The latest version of DirectX includes an updated version of DirectPlay. Many of
+the games on the Zone use DirectPlay to share information with other computers
+during multiplayer games.
+
+To install the latest version of DirectPlay, download and install the latest
+version of DirectX from the following Microsoft Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+Configure TCP/IP to Be Your Default Network Protocol
+----------------------------------------------------
+
+TCP/IP is the standard network protocol used on the Internet. If multiple network
+protocols are installed on your computer, configure TCP/IP to be your default
+network protocol to increase the efficiency of your Internet connection. To do
+this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Network.
+
+3. In the list of installed network components, click the TCP/IP protocol bound
+   to the network adapter you use to connect to the Internet, and then click
+   Properties.
+
+4. Click the Advanced tab.
+
+5. Click to select the "Set this protocol to be the default protocol" check box,
+   click OK, and then click OK again.
+
+6. Restart the computer.
+
+Obtain a Firmware Update for Your Network Hardware
+--------------------------------------------------
+
+Firmware or driver updates are available for network hardware to increase the
+hardware's speed or to correct issues. Contact the manufacturer of your network
+hardware to inquire about how to obtain and install the latest updates.
+
+If no updates are available, you may want to obtain upgraded hardware.
+
+For information about how to contact the manufacturer of your network hardware,
+click the appropriate article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+Use a Bus Mastering PCI Network Interface Card
+----------------------------------------------
+
+If you are using a Network Interface Card to connect to the Internet, use a PCI
+card that supports bus mastering. Transmission of data across the bus is more
+efficient with a PCI card than with an ISA card.
+
+Also, bus mastering enables the card to operate independently from the processor.
+A PCI card that supports bus mastering ensures that your network information is
+readily transmitted and received when the CPU is near its maximum capacity.
+
+Additional query words: msgame igz msngz lag ping
+
+======================================================================
+Keywords          : kbnetwork kbtshoot igz kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

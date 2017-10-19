@@ -1,0 +1,85 @@
+DOCUMENT:Q160251  11-AUG-1999  [foxpro]
+TITLE   :BUG: "Invalid Page Fault" After OLE Automation with WordPerfect
+PRODUCT :Microsoft FoxPro
+PROD/VER:5.0 5.0a
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbinterop kbole kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs after you make an OLE Automation call to Corel
+WordPerfect 7.0:
+
+   VFP.EXE Caused an Invalid Page Fault in module OLEAUT32.DLL
+
+CAUSE
+=====
+
+WordPerfect is attempting to send a return value to Visual FoxPro.
+
+WORKAROUND
+==========
+
+Use an assignment statement to call the object methods.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Corel WordPerfect 7.0 does allow OLE Automation. In Visual FoxPro, you can use
+the CreateObject command to create a reference to a WordPerfect object, but you
+will still get the error when you try to call any of its methods.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Type the following commands in the Visual FoxPro Command window:
+
+      oWP = CREATEOBJECT("WordPerfect.PerfectScript")
+      oWP.FileNew
+
+WordPerfect 7.0 actually creates a new document before Visual FoxPro generates an
+error.
+
+To work around the problem, change the last command to the following:
+
+      result = oWP.FileNew()
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbinterop kbole kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : 5.0 5.0a
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

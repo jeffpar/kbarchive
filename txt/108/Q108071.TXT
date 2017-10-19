@@ -1,0 +1,77 @@
+DOCUMENT:Q108071  13-JUN-2001  [sna]
+TITLE   :WinAPPCCancelAsyncRequest Never Returns WAPPCALREADY (0xF000)
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:kbnetwork kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When an APPC application issues WinAPPCCancelAsyncRequest() after the
+asynchronous routine has completed, WAPPCINVALID (0xF001) is returned instead of
+WAPPCALREADY (0xF000). The SNA Server APPC Programmer's Guide states that
+WAPPCALREADY should be returned in this instance.
+
+CAUSE
+=====
+
+WinAPPCCancelAsyncRequest is not properly returning the WAPPCALREADY error code
+as documented.
+
+RESOLUTION
+==========
+
+An update to SNA Server 2.11 corrects this problem, so that
+WinAPPCCancelAsyncRequest now returns WAPPCALREADY if an asynchronous routine is
+being cancelled has already completed.
+
+Microsoft has updated the following files to correct this problem:
+
+   Windows NT:  <snaroot>\SYSTEM\WAPPC32.DLL
+   Windows 95:  <win95root>\SYSTEM\WAPPC32.DLL
+   Windows 3.x: <winroot>\SYSTEM\WINAPPC.DLL
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,64 @@
+DOCUMENT:Q126660  12-NOV-1999  [pcmail]
+TITLE   :PC Win: Images Pasted into a Mail Message Are Blank
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an image is cut from another application and pasted into a Mail message, it
+may not be visible to the recipients. When the recipient reads the message, the
+space where the image should be will be blank. If the recipient double-clicks
+the blank space, the following error message appears:
+
+   Pictures and bitmaps cannot be activated.
+
+CAUSE
+=====
+
+This is because the Windows Clipboard pastes the image into the message using a
+device-dependent format based on the video driver. Once the message reaches the
+recipient's machine, the image will only be seen if the video driver can
+understand the information from the sender's machine.
+
+RESOLUTION
+==========
+
+The sender should paste the image into Paintbrush, then save it as a bitmap
+(.BMP) file. The sender can attach the .BMP to the Mail message. Because .BMP
+files are device-independent, all recipients will be able to see the image when
+they double-click the Paintbrush icon in the Mail message, assuming they have
+Paintbrush installed.
+
+
+Additional query words: 3.00 3.00b 3.20 3.20a pasted images
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b kbMail320a
+Version           : WINDOWS:3.0,3.0b,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

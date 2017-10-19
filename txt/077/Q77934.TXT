@@ -1,0 +1,59 @@
+DOCUMENT:Q77934  12-NOV-1999  [win16sdk]
+TITLE   :Determining That Display Driver Supports Transparent Mode
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some display drivers compatible with Microsoft Windows, the BitBlt and
+StretchBlt functions support transparent mode. Before using this feature, an
+application must determine whether the display driver supports this mode by
+calling the GetDeviceCaps function.
+
+MORE INFORMATION
+================
+
+Two of the multimedia display drivers, MMV7VGA.DRV and MMWD480.DRV, support
+transparent mode. When using GetDeviceCaps to determine the capabilities of
+these drivers, it is common to use the RASTERCAPS index. However, to determine
+if transparent mode is supported, an application must use the CAPS1 index.
+
+Use the bitwise AND operator with C1_TRANSPARENT mask to determine if the
+appropriate bit is set; if it is, the driver supports transparent mode. The
+following code fragment demonstrates this test:
+
+      bTransSupport = (GetDeviceCaps(hDC, CAPS1) & C1_TRANSPARENT)
+                       ? TRUE : FALSE;
+
+Additional query words: 3.00 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

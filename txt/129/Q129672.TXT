@@ -1,0 +1,71 @@
+DOCUMENT:Q129672  28-JUL-2001  [win95x]
+TITLE   :MS Exchange and Dial-Up Networking Problems with Hayes Adapter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a modem attached to a Hayes ESP/2 Communications Port
+Adapter, and using the third-party drivers for that adapter supplied by Hayes,
+Microsoft Exchange and Dial-Up Networking may not work correctly. In particular,
+you may receive the following error message:
+
+   Exception 0E
+
+CAUSE
+=====
+
+The third-party drivers supplied by Hayes for use with the ESP/2 Communications
+Port Adapter in previous versions of Windows are not fully compatible with
+Windows 95.
+
+RESOLUTION
+==========
+
+Remove the Hayes drivers from the [386Enh] section of the SYSTEM.INI file. For
+more information about how to do this, please contact Hayes.
+
+
+STATUS
+======
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that it is not caused by a problem in Windows 95.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+======================================================================
+Keywords          : dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q108830  12-NOV-1999  [pcmail]
+TITLE   :PC Win: StripGatewayHeaders Limited to 75 Recipients
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.2 of Microsoft Mail for Windows includes in the [Microsoft Mail]
+section of MSMAIL.INI the StripGatewayHeaders switch to remove extra headers
+from foreign systems being displayed in the body of the message. This switch
+does not work for messages with 76 recipients or more.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of Microsoft Mail
+for Windows. We are researching this problem and will post new information here
+in the Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If this entry is 1 (the default), message header text (coming above the dashed
+line) is stripped from Mail messages that arrive through a gateway.
+
+If this entry is 0, you see the extended information supplied by the gateways,
+which typically includes information such as message identifiers specific to the
+foreign mail system.
+
+If this entry is 2, all gateway headers except those from the X.400 Gateway are
+stripped. Message header text supplied by native Mail for PC Networks clients is
+always stripped.
+
+Only the Mail for PC Networks transport supports this entry.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,69 @@
+DOCUMENT:Q100351  30-JUL-2001  [lanman]
+TITLE   :Steps to Complete NPREP on a 3Com 3Server
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+You can install LAN Manager MS-DOS workstations from diskettes or over the
+network (OTN). During OTN installations and upgrades, LAN Manager is copied from
+a network installation share on a LAN Manager server. This sharename and the
+files contained in it are created by the NPREP.EXE program.
+
+This article explains the use of this program in a 3Com 3Server.
+
+MORE INFORMATION
+================
+
+The 3Com 3Server architecture does not allow running the NPREP program, so all
+necessary software (or the normal LAN Manager server software) is installed
+automatically from the tape when you install the LAN Manager software on your
+3Com server.
+
+You must complete some manual steps to put the 3Server in the same state that a
+regular LAN Manager server is in after running NPREP.
+
+1. Create the NINSTALL share.
+
+   From either the command line or from the NETADMIN screen, create a share
+   called NINSTALL that points to <lanroot>\NINSTALL.
+
+2. Assign the permissions to that share.
+
+   From either the command line or from the NETADMIN screen assign USERS and
+   GUESTS, Read and eXecute permissions to the files contained in the previous
+   share.
+
+Once you have done this, you can perform the steps on page 83 of the "Microsoft
+LAN Manager Installation and Configuration Guide" to create your configuration
+templates and network installation disks.
+
+REFERENCES
+==========
+
+"Microsoft LAN Manager Installation and Configuration Guide"
+
+Additional query words: otn netinstall 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

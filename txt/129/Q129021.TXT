@@ -1,0 +1,71 @@
+DOCUMENT:Q129021  11-DEC-1999  [homemm]
+TITLE   :CINEMANIA: The Film Encyclopedia Not Included in Cinemania
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:; :1994 edition,1995, 1996, 1997 editions
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Macintosh, 1994, 1995, 1996, 1997 editions 
+ - Microsoft Cinemania for the Macintosh versions 1994 edition, 1995, 1996, 1997 editions 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The entire contents of Ephraim Katz's "The Film Encyclopedia," are not included
+in Microsoft Cinemania.
+
+MORE INFORMATION
+================
+
+The Cinemania packaging advertises, "More reviews, cinema topics, and a glossary
+of movie terms culled from Ephraim Katz's The Film Encyclopedia... ." This
+statement does not mean the books entire contents is included in Cinemania.
+
+Microsoft's licensing agreement with the encyclopedia's publisher, Harper
+Collins, allows only about 1,000 entries to be included in Microsoft Cinemania.
+These entries are primarily confined to biography and topical filmography.
+
+"The Film Encyclopedia" is a comprehensive one-volume film encyclopedia
+containing more than 7,000 entries on subjects such as:
+
+ - Directors, producers, actors, cinematographers, screenwriters, composers, and
+   art directors.
+
+ - Motion picture studios and film centers.
+
+ - Film related organizations and events.
+
+ - Styles, genres, and schools of film making.
+
+ - Industry jargon and technical terms.
+
+ - Inventions, inventors, and equipment.
+
+
+Additional query words: kbhowto 1994 1995 1996 1997 kbmm mac mmtitles cinema
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994Mac
+Version           : MACINTOSH:; :1994 edition,1995, 1996, 1997 editions
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

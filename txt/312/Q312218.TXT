@@ -1,0 +1,77 @@
+DOCUMENT:Q312218  16-APR-2002  [vbwin]
+TITLE   :BUG: Deadlock in Multithreaded Process Using Declare Statements
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a multithreaded process hosts in-process Visual Basic ActiveX components
+(.dll or .ocx files), the multithreaded process may experience a deadlock or may
+stop responding (hang).
+
+Examples of multithreaded processes include:
+
+ - Microsoft COM+ (Dllhost.exe)
+ - Microsoft Internet Information Server (Inetinfo.exe)
+ - Microsoft Transaction Server (Mtx.exe)
+
+CAUSE
+=====
+
+There are many causes for a deadlock in a multithreaded process. One possible
+cause is the use of Visual Basic 6.0 ActiveX components with Declare statements
+for application programming interfaces (APIs).
+
+RESOLUTION
+==========
+
+To work around this problem, remove the Declare statements in the ActiveX .dll
+or .ocx projects, and use a type library to declare those APIs instead. For
+additional information about how to create and use a type library, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q189133 HOWTO: Make C DLL More Accessible to VB with a Type Library
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+Additional query words: in-proc hang DLL OCX IIS MTS multi-threaded
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

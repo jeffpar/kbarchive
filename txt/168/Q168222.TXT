@@ -1,0 +1,71 @@
+DOCUMENT:Q168222  28-JUL-2001  [win95x]
+TITLE   :Error Message: "Port in Use" or "Port Already Open"
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start a communications program, you may receive one of the
+following error messages:
+
+   Error: port in use
+
+   OpenComm: Port already open
+
+CAUSE
+=====
+
+This behavior can occur if Rnaapp.exe is active in memory.
+
+RESOLUTION
+==========
+
+To work around this issue, follow these steps:
+
+1. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+2. Click Rnaapp to select it, and then click End Task.
+
+3. Start your communications program.
+
+MORE INFORMATION
+================
+
+When you finish using a communications program and close the connection,
+Rnaapp.exe is still running and the port remains unavailable to non-TAPI
+programs.
+
+Rnaapp.exe is left in memory to allow TAPI programs to open faster. Rnaapp.exe is
+eventually unloaded from memory (unless Dial-Up Networking Server is set to
+allow caller access), but it may take 10-15 minutes.
+
+======================================================================
+Keywords          : kberrmsg kbtool dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

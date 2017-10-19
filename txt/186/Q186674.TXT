@@ -1,0 +1,172 @@
+DOCUMENT:Q186674  09-AUG-2001  [winnt]
+TITLE   :STOP: C0000143 or 0x0000001E Caused by Remotely Possible/32
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0a
+OPER/SYS:
+KEYWORDS:sbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have Remotely Possible/32 installed on your computer running Windows NT,
+you may experience one of the following errors when restarting.
+
+   STOP: C0000143 (MISSING SYSTEM FILES)
+   The required system file Display_driver.dll is bad or missing.
+
+-or-
+
+   STOP: 0x0000001E (0xC0000005, 0xA0036FC2, 0x00000000, 0x00000004)
+   KMODE_EXCEPTION_NOT_HANDLED address 0xA0036FC2 in Win32K.sys
+
+NOTE: Actual address may vary for Win32k.sys.
+
+CAUSE
+=====
+
+The STOP C0000143 error can occur if one of the following files is corrupted or
+deleted:
+
+ - Rp32ntvx.dll (where x = 1-6, Rp32ntv1.dll through Rp32ntv6.dll)
+
+ - Vga.dll
+
+The STOP 0x0000001E error can occur if the Remotely Possible/32 Logonrem.dll file
+is corrupted or deleted.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform the following steps:
+
+1. Install Windows NT 4.0 into a parallel installation.
+
+   For information on how to modify the registry of a secondary installation and
+   disable services, refer to the following Microsoft Knowledge Base article:
+
+   Article-ID: Q165748
+   Titled : How to Disable a Service or Device that Prevents NT from Booting
+
+2. Use Regedt32 to change the following registry entries in the failing Windows
+   NT %systemroot%\system32\config\system hive by following these steps:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" online Help topic in Registry Editor (Regedit.exe) or the "Add and
+Delete Information in the Registry" and "Edit Registry Data" online Help topics
+in Regedt32.exe. Note that you should back up the registry before you edit it.
+3. Run Regedt32 and load the System hive from the failing Windows NT
+   installation. NOTE: This key will be called TEST in the steps below.
+
+   ControlsetXXX represents the controlset that your failing computer should boot
+   from then next time it is restarted based on the CURRENT:Reg_Dword:0xY value
+   found in the SELECT key.
+
+   a. In the HKEY_LOCAL_MACHINE\TEST\controlsetXXX\services\RP32Service key,
+      change the value of Start:REG_DWORD: to 0x4.
+
+   b. In the HKEY_LOCAL_MACHINE\TEST\controlsetXXX\services\RP32Spin key, change
+      the value of Start:REG_DWORD: to 0x4.
+
+   c. In the HKEY_LOCAL_MACHINE\TEST\controlsetXXX\services\RP32SWire key,
+      change the value of Start:REG_DWORD: to 0x4.
+
+   d. In HKEY_LOCAL_MACHINE\TEST\controlsetXXX\services\vgasave key, ensure
+      ImagePath reads \Systemroot\system32\drivers\vga.sys.
+
+   e. In the HKEY_LOCAL_MACHINE\TEST\controlsetXXX\services\vgasave \device0
+      key, change InstalledDisplayDrivers from rp32ntv1 to VGA. NOTE: The above
+      registry key is one path; it has been wrapped for readability.
+
+4. Select the TEST hive, and then click Unload Hive from the Registry menu.
+
+5. Load the Software hive from the failing Windows NT
+   %systemroot%\system32\config\ folder.
+
+   NOTE: This key will also be called TEST in the steps below.
+
+   a. Double-click the new TEST key and follow this path:
+
+      Microsoft\Windows NT\Current Version\Winlogon
+
+   b. Modify the entry Ginadll:REG_SZ:logonrem.dll to Msgina.dll
+
+6. Select the TEST hive, click Unload Hive from the Registry menu, and then exit
+   Regedt32.
+
+7. Copy the Vga.sys file (found in %systemroot%\system32\drivers) from your
+   parallel installation to the original installation of Windows NT.
+
+8. Copy the Msgina.dll and Vga.dll files (found in %systemroot%\system32) from
+   the parallel installation to the original installation of Windows NT.
+
+9. Shut down and restart your computer in your original Windows NT installation.
+
+This will allow you to boot back into the operating system, but you will be in
+VGA mode until the entry for the computer's actual video driver XXX name is
+modified if Rp32ntv1 is corrupted or missing:
+
+In the following key, change InstalledDisplayDrivers from rp32ntv1 to vga:
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\services\XXX\device0
+
+MORE INFORMATION
+================
+
+Normally, if a standard Windows NT system file is deleted or corrupted and
+prevents the operating system from restarting, we can perform a system repair
+using an emergency repair disk (ERD).
+
+The ERD contains a file called Setup.log, which has CRC information for each
+Windows NT system file installed. When we choose to "verify Windows NT system
+files" during a repair process, any file that is missing or whose CRC value does
+not match the value stored in the Setup.log file will be replaced from the
+original Windows NT setup compact disc.
+
+Unfortunately, Remotely Possible's setup program does not add entries into the
+Windows NT Setup.log file for a repair process to work, so other means of repair
+are necessary.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+
+Additional query words: c143 0x1e possible32 Rp32 smallbiz
+
+======================================================================
+Keywords          : sbs 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbAudDeveloper kbBackOfficeSearch kbSBServSearch kbBackOfficeServ400 kbSBServ400 kbSBServ400a
+Version           : winnt:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

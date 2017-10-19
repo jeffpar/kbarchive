@@ -1,0 +1,77 @@
+DOCUMENT:Q72163  30-OCT-1999  [win95x]
+TITLE   :Use of Help in Windows File Manager
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the File Manager, if you display a directory of files and use Help when you
+return to the directory window, you cannot use the Print, Search, Move, Copy,
+Delete, Rename, or Change Attributes commands from the File menu.
+
+WORKAROUND
+==========
+
+Close the directory window, then open it again.
+
+MORE INFORMATION
+================
+
+The following are the error messages that occur.
+
+Move, Copy, Delete, and Rename
+------------------------------
+
+   Cannot find file; check to ensure the path and filename are correct.
+
+Print
+-----
+
+   Cannot Print
+
+   The file to be printed cannot be found.
+
+Change Attributes
+-----------------
+
+   File System Error
+
+   Unable to change attributes
+
+Search
+------
+
+   No matching files were found
+
+Additional query words: 3.00 win30 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

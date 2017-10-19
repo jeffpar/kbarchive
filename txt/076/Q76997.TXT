@@ -1,0 +1,58 @@
+DOCUMENT:Q76997  22-NOV-1999  [msdos]
+TITLE   :Turbo Debugger 2.0 and Later with MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Borland's Turbo Debugger versions 2.0 and later are compatible with MS-DOS 5.0
+only if the Loader file is version 3.0 or later.
+
+MORE INFORMATION
+================
+
+According to Borland, using the version 3.0 Loader will make Turbo Debugger 2.0
+or later compatible with MS-DOS 5.0. The Loader is a file (TD386.EXE) that works
+with Turbo Debugger. If the improper Loader file is used, Turbo Debugger will
+not function with MS-DOS 5.0. The version number of the Loader file is found in
+the documentation that comes with the software.
+
+TD386.EXE can be obtained from Borland's bulletin board or by calling Borland
+technical support
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 2.00 3.00 5.00 3rdparty noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

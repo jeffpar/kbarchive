@@ -1,0 +1,49 @@
+DOCUMENT:Q66731  12-NOV-1999  [win95x]
+TITLE   :Windows 3.0 Setup Hangs Disk #2 with Invalid Directory
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+The Microsoft Windows version 3.0 Setup program hangs on Disk 2 if you
+specify an invalid directory.
+
+For example, if you shorten the given directory C:\WINDOWS by typing
+over it and removing the remaining characters with the SPACEBAR, you
+have just entered spaces to a directory name. You must delete the
+remaining characters (use the DEL key).
+
+You must use valid characters when making a directory with MS-DOS, but if
+you use a space within a directory name with Windows 3.0 Setup, Windows
+lets you continue and does not detect that you just made an invalid
+directory. MS-DOS does not let you do this.
+
+Additional query words: 3.00 3.0 3.0a 3.00a \* 31check - Please comment this article if it applies to later versions of Windows. NoWin4
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

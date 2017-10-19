@@ -1,0 +1,48 @@
+DOCUMENT:Q66145  30-JUL-2001  [homegame]
+TITLE   :AutoLoad Feature in IdleWild Causes Multiple WIN.INI Entries
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The AutoLoad feature in the screensaver IdleWild utility included in the
+Microsoft Windows Entertainment Pack writes a line directly to the Load= line of
+the WIN.INI file. This line (usually C:\WEP\IDLEWILD.EXE, depending on path) is
+permanently written to the WIN.INI file. If IdleWild is shut down during a
+Windows session, the AutoLoad feature does not stay checked. As a result, you
+can reselect AutoLoad from the Options menu. This will write a second line to
+the Load= line of the WIN.INI file.
+
+This behavior does not create a problem until the 128 character limit is reached
+on the Load= line. When this limit is reached, you will receive the following
+error message when Windows is started:
+
+   Cannot find file. Check to ensure the path and filename are correct.
+
+To solve the problem, remove all excess entries from the Load= line of the
+WIN.INI file.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

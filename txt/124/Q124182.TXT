@@ -1,0 +1,77 @@
+DOCUMENT:Q124182  30-APR-1999  [homekids]
+TITLE   :Vacuum Tool Hangs Computer with Pro Audio Spectrum
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.00 1.10 1.10a
+WINDOWS
+kb3rdparty kbprb kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Vacuum Tool in Fine Artist, and you have installed the
+MediaVision Pro Audio Spectrum Sound Card, the computer may stop responding
+(hang). (For similar behavior in Creative Writer, see the More Information
+section.)
+
+RESOLUTION
+==========
+
+Contact Media Vision for an updated driver:
+
+   Media Vision, Inc. (510) 770-9905
+
+If you are using a Pro Audio Spectrum driver, but are unsure about which version
+you are using, see your Windows printed documentation or online Help for
+information about how to determine your driver in Windows.
+
+MORE INFORMATION
+================
+
+The Vacuum Tool uses a cyclic sound, rather than a short sound, which, when used
+in conjunction with the Pro Audio Spectrum Sound Card and some versions of the
+Pro Audio sound driver, can cause the computer to hang.
+
+NOTE: If you experience this problem when using Creative Writer with a Sound
+Blaster 16 card, change the HDMA setting to DMA. You can do this by using the SB
+Configuration icon found in the Sound Blaster 16 program group. When you run
+this icon, it displays the DMA and HDMA settings. Change the HDMA setting to
+DMA.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 1.10 1.10a kids mskids mediavision mczee media vision pro audio studio spectrum freeze crash hang erase maggie vacuum vaccuum suck artist lockup lock up creative writer sucker thing paint
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword2 kbFineArtist100 kbFineArtist110 kbFineArtist110a
+Version           : WINDOWS:1.0,1.1,1.1a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

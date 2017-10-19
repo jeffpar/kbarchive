@@ -1,0 +1,105 @@
+DOCUMENT:Q132418  11-DEC-1999  [homemm]
+TITLE   :Dogs: Documented Content Errors
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the known content errors in Microsoft Dogs for
+Windows, version 1.0.
+
+MORE INFORMATION
+================
+
+Article Title                 Change/Addition
+---------------------------------------------------------------------
+
+Bearded Collie                Change Country of Origin: Great Britain
+
+Bulldog                       Change Country of Origin: Great Britain
+                              Change Weight: 40-55 pounds
+
+Bull Terrier                  Change Country of Origin: Great Britain
+
+Collie                        Change Country of Origin: Great Britain
+
+Cocker Spaniel:Owner's Tips   Change Last Sentence to: They may
+                              respond by snapping or biting.
+
+English Springer Spaniel      Change Country of Origin: Great Britain
+                              Change Weight: 49-55 pounds
+
+English Toy Spaniel           Change Country of Origin: Great Britain
+
+Field Spaniel                 Change Country of Origin: Great Britain
+
+Golden Retriever              Change Country of Origin: Great Britain
+
+Irish Setter                  Change Color: Chestnut Red
+
+Jack Russell Terrier          Change Country of Origin: Great Britain
+
+Japanese Chin                 Change Height: to 9 inches
+
+Labrador Retriever            Change Country of Origin: Great Britain
+                              Change Height: 21.5 inches to 24.5 inches
+
+Lhasa Apso                    Change Colors: All dog colors
+
+Manchester Terrier            Change Country of Origin: Great Britain
+
+Old English Sheepdog          Change Weight: 66 pounds or more
+
+Papillon                      Change Weight: up to 10 pounds
+
+Pembroke Welsh Corgi          Change Country of Origin: Great Britain
+
+Pomeranian                    Change Height: to 11 inches
+
+Pug                           Change Colors: Apricot, silver, or fawn
+                              with black mask
+
+Scottish Terrier              Change Country of Origin: Great Britain
+
+Shetland Sheepdog             Change Country of Origin: Great Britain
+
+Smooth Fox Terrier            Change Country of Origin: Great Britain
+
+Vizsla                        Add Other Names: Magyar Vizsla
+
+Welsh Terrier                 Change Country of Origin: Great Britain
+
+Yorkshire Terrier             Change Country of Origin: Great Britain
+
+Additional query words: kbhowto multi media multimedia multi-media mmtitles bugs wrongs doc
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDogs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

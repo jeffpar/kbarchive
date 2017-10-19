@@ -1,0 +1,90 @@
+DOCUMENT:Q176804  11-NOV-2000  [foxpro]
+TITLE   :Getdrive.exe: How To List the Drives on a Win32 System
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbfile kbsample kbnokeyword kbvfp300 kbvfp500 kbvfp600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This code example uses Windows Application Programming Interface (API) functions
+to return information on the drives installed or mapped to the local computer.
+These drives include both CD-ROM devices and network hard drives.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   Getdrive.exe
+   (http://download.microsoft.com/download/vfox60/sample18/1/WIN98/EN-US/Getdrive.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+This code example provides information about the drives installed and mapped to
+a given computer, including CD-ROM drives. The following information about each
+individual drive appears within a window created by the MessageBox() function:
+
+ - Drive letter
+
+ - Drive type
+
+ - Volume name
+
+ - Volume
+
+ - Serial number
+
+ - Maximum file name length
+
+ - File system flags
+
+ - File system name
+
+The program also provides specific physical information about the drive, such as
+sectors/clusters, bytes/sector, free clusters, and total clusters.
+
+To run the program, type the following command in the Visual FoxPro Command
+window:
+
+        DO GetDrive.prg
+
+Additional query words: Getdrive API drives
+
+======================================================================
+Keywords          : kbcode kbfile kbsample kbnokeyword kbvfp300 kbvfp500 kbvfp600 kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

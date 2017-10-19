@@ -1,0 +1,59 @@
+DOCUMENT:Q94763  11-SEP-1999  [winmisc]
+TITLE   :VidEdit: Unnecessary Recompression of .AVI Files
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using VidEdit to combine several files, you can avoid unnecessary
+additional compression by choosing No Change from the Video Compression Method
+under the Compression Option when saving the file, or when setting the
+Compression Options under the Video menu.
+
+MORE INFORMATION
+================
+
+An example of recompression is the combining of two files created using the
+ActionMedia II card and Indeo Compression into a single Indeo file (or even
+after just editing an Indeo file) and choosing Save As from the Edit menu with
+Indeo selected as the compression method. This recompresses the file(s) using
+the Indeo compression again, which in turn can cause a greater degradation of
+the data.
+
+By choosing the No Change option under Video Compression Method, you continue to
+use the compression scheme of the original file loaded without a recompression.
+
+Recompression could also take place when combining two files of one compression
+scheme and saving the file using a different compression scheme.
+
+Additional query words: 1.00 Compression AVI
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

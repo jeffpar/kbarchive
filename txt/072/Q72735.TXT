@@ -1,0 +1,52 @@
+DOCUMENT:Q72735  21-NOV-1999  [msdos]
+TITLE   :Loading SMARTDRV.SYS High with Adaptec Controller Hangs System
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If SMARTDRV.SYS is loaded high on a system with a Micropolis 330 MB hard disk
+model #1578-15 with Adaptec Controller model #1542-B, and it is partitioned into
+a single drive, the system will hang.
+
+Loading SMARTDRV.SYS low before loading anything high solves the problem.
+
+MORE INFORMATION
+================
+
+The disk transfers to the upper memory block (UMB) are not being put at the
+right addresses because the controller is not mapping addresses correctly. The
+only workaround available is to load SMARTDRV.SYS low (in conventional memory).
+
+Additional query words: 5.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch
+Version           : MS-DOS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

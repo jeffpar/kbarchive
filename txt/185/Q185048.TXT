@@ -1,0 +1,68 @@
+DOCUMENT:Q185048  25-JUL-2001  [homegame]
+TITLE   :Outwars: Background Music Echoes or Sounds Distorted
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhw kbsound kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outwars, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Outwars, the music in the game may echo or sound
+distorted, as if two tunes are being played at the same time. In addition, if
+you attempt to play CD audio tracks directly from the Outwars compact disc using
+Media Player, the playback may not be audible.
+
+CAUSE
+=====
+
+This behavior can occur if your CD-ROM drive is not properly connected to your
+sound card.
+
+RESOLUTION
+==========
+
+To resolve this issue, connect your CD-ROM drive to your sound card using a CD
+audio cable.
+
+MORE INFORMATION
+================
+
+The interactive music system used by Outwars combines CD audio and wave audio to
+dynamically match the background music to the action in the game. If CD audio is
+not routed through the sound card, the interactive music system may not function
+properly.
+
+If multiple CD-ROM drives are installed in the computer, you must use CD audio
+cables to connect each CD-ROM drive to the sound card.
+
+Additional query words: 1.00 msgame outwar out wars repeats
+
+======================================================================
+Keywords          : kbhw kbsound kbimu msgame kbHardware 
+Technology        : kbGamesSearch kbOutwarsSearch kbOutwars kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

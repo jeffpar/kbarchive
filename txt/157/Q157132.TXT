@@ -1,0 +1,95 @@
+DOCUMENT:Q157132  17-DEC-2000  [win95x]
+TITLE   :Microsoft Exchange Toolbar Buttons Availability
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange client in Windows 95 can use 25 different buttons for
+customizing the toolbar. This article lists the buttons you can use.
+
+MORE INFORMATION
+================
+
+The Microsoft Exchange client included with Windows 95 contains the following
+toolbar buttons in a default installation:
+
+   Up One Level
+   Show/Hide Folder List
+   New Message
+   Print
+   Move Item
+   Delete
+   Reply To Sender
+   Reply To All
+   Forward
+   Address Book
+   Inbox
+   Help
+
+You can add the following toolbar buttons using the Customize Toolbar command on
+the Tools menu:
+
+   Separator
+   Open
+   Save As
+   Copy
+   New Folder
+   Rename
+   Properties
+   Select All
+   Mark As Read
+   Mark As Unread
+   Find
+   Goes To Outbox
+   Deliver Now
+
+You may see the following buttons on the toolbar. These buttons are not included
+in the version of Microsoft Exchange included with Windows 95 and are not
+supported. These buttons are included with the retail version of Microsoft
+Exchange:
+
+   Add to Favorites
+   New Post In This Folder
+   Post Reply In This Folder
+   Folder Design Cue Cards
+   Remove from Favorites
+
+The following buttons are available only if Microsoft Office for Windows 95 is
+installed:
+
+   Compose Wordmail options
+   Show Schedule
+
+Additional query words: schedule Wordmail
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

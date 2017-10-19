@@ -1,0 +1,57 @@
+DOCUMENT:Q105557  18-NOV-1999  [msdos]
+TITLE   :HIMEM.SYS Verbose and Quiet Switches
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Although it seem contradictory, HIMEM.SYS supports both Quiet (/Q) and Verbose
+(/VERBOSE or /V) switches.
+
+MORE INFORMATION
+================
+
+Without either switch specified on the DEVICE= command in the CONFIG.SYS file,
+HIMEM.SYS displays only one message during system startup (unless an error
+occurs):
+
+   HIMEM is testing extended memory...
+
+If you specify the Quiet switch, no messages are displayed at system startup
+unless an error occurs.
+
+If you specify the Verbose switch, HIMEM.SYS displays all status and error
+messages while loading.
+
+Additional query words: 6.22 6.20 quite
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

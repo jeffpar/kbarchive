@@ -1,0 +1,813 @@
+DOCUMENT:Q186548  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Error Messages: 3900 to 7999
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes Terminal Server error messages 3900 to 7999.
+
+MORE INFORMATION
+================
+
+Error 3900
+----------
+
+   Message from *** to *** on ***
+
+Error 3902
+----------
+
+   **** unexpected end of message ****
+
+Error 3905
+----------
+
+   Press ESC to exit
+
+Error 3910
+----------
+
+   Current time at *** is ***
+
+Error 3911
+----------
+
+   The current local clock is *** Do you want to set the local computer's time
+   to match the time at ***? ***:
+
+Error 3912
+----------
+
+   Could not locate a time-server.
+
+Error 3913
+----------
+
+   Could not find the domain controller for domain ***.
+
+Explanation: Either this domain does not have logon security and therefore does
+not have a domain controller, or its domain controller is unavailable.
+
+Action: If this domain does not have logon security, you cannot use this command.
+Otherwise, retry the command. If the problem persists, ask your network
+administrator if the domain controller is running.
+
+Error 3915
+----------
+
+   The user's home directory could not be determined.
+
+Explanation: The system could not determine your home directory.
+
+Action: Ask your network administrator to add a home directory for you.
+
+Error 3916
+----------
+
+   The user's home directory has not been specified.
+
+Explanation: The system could not determine your home directory.
+
+Action: Ask your network administrator to add a home directory for you.
+
+Error 3917
+----------
+
+   The name specified for the user's home directory (***) is not a universal
+   naming convention (UNC) name.
+
+Explanation: Your home directory is not a network path that can be connected to.
+The directory must specify a full path, including the server and share names.
+
+Action: Ask your network administrator to verify that the home directory path
+specified in the user account is correct.
+
+Error 3918
+----------
+
+   Drive *** is now connected to ***. Your home directory is ***\***.
+
+Error 3919
+----------
+
+   Drive *** is now connected to ***.
+
+Error 3920
+----------
+
+   There are no available drive letters left.
+
+Error 3932
+----------
+
+   *** is not a valid domain or workgroup name.
+
+Explanation: The name you specified is not a valid domain or workgroup name.
+
+Action: Check the spelling of the name. Retype the command with a valid domain or
+workgroup name.
+
+Error 3951
+----------
+
+   You specified too many values for the *** option.
+
+Explanation: You specified too many values for the listed option.
+
+Action: Retype the command with the correct number of values. To see the syntax
+of this command, type:
+
+   "NET HELP command" (without the quotation marks)
+
+Error 3952
+----------
+
+   You entered an invalid value for the *** option.
+
+Explanation: You typed an invalid value for the listed option.
+
+Action: Retype the command with valid values. To see the syntax of this command,
+type:
+
+   "NET HELP command" (without the quotation marks)
+
+Error 3953
+----------
+
+   The syntax is incorrect.
+
+Explanation: You did not use the correct syntax of this command.
+
+Action: To see the syntax of this command, type:
+
+   "NET HELP command" (without the quotation marks)
+
+Error 3960
+----------
+
+   You specified an invalid file number.
+
+Explanation: The file identification number you specified is either outside the
+valid range or is nonnumeric.
+
+Action: Retype the command with a valid file identification number. To see a list
+of the server's open files and their identification numbers, type:
+
+   "NET FILE" (without the quotation marks)
+
+Error 3961
+----------
+
+   You specified an invalid print job number.
+
+Explanation: The print job identification number you specified is either outside
+the valid range or is nonnumeric.
+
+Action: Retype the command with a valid print job identification number. To see a
+list of a server's print jobs, type:
+
+   "NET PRINT \\computername\sharename" (without the quotation marks)
+
+Error 3963
+----------
+
+   The user or group account specified cannot be found.
+
+Explanation: The user or group account you typed does not exist.
+
+Action: Retype the command, specifying an existing account.
+
+Error 3965
+----------
+
+   The user was added but could not be enabled for File and Print Services for
+   NetWare.
+
+Error 3966
+----------
+
+   File and Print Services for NetWare is not installed.
+
+Error 3967
+----------
+
+   Cannot set user properties for File and Print Services for NetWare.
+
+Error 3968
+----------
+
+   Password for *** is: ***
+
+Error 3969
+----------
+
+   NetWare compatible logon
+
+Error 5001
+----------
+
+   The cluster resource cannot be moved to another group because other resources
+   are dependent on it.
+
+Error 5002
+----------
+
+   The cluster resource dependency cannot be found.
+
+Error 5003
+----------
+
+   The cluster resource cannot be made dependent on the specified resource
+   because it is already dependent.
+
+Error 5004
+----------
+
+   The cluster resource is not online.
+
+Error 5005
+----------
+
+   A cluster node is not available for this operation.
+
+Error 5006
+----------
+
+   The cluster resource is not available.
+
+Error 5007
+----------
+
+   The cluster resource could not be found.
+
+Error 5008
+----------
+
+   The cluster is being shut down.
+
+Error 5009
+----------
+
+   A cluster node cannot be evicted from the cluster while it is online.
+
+Error 5010
+----------
+
+   The object already exists.
+
+Error 5011
+----------
+
+   The object is already in the list.
+
+Error 5012
+----------
+
+   The cluster group is not available for any new requests.
+
+Error 5013
+----------
+
+   The cluster group could not be found.
+
+Error 5014
+----------
+
+   The operation could not be completed because the cluster group is not online.
+
+Error 5015
+----------
+
+   The cluster node is not the owner of the resource.
+
+Error 5016
+----------
+
+   The cluster node is not the owner of the group.
+
+Error 5017
+----------
+
+   The cluster resource could not be created in the specified resource monitor.
+
+Error 5018
+----------
+
+   The cluster resource could not be brought online by the resource monitor.
+
+Error 5019
+----------
+
+   The operation could not be completed because the cluster resource is online.
+
+Error 5020
+----------
+
+   The cluster resource could not be deleted or brought offline because it is
+   the quorum resource.
+
+Error 5021
+----------
+
+   The cluster could not make the specified resource a quorum resource because
+   it is not capable of being a quorum resource.
+
+Error 5022
+----------
+
+   The cluster software is shutting down.
+
+Error 5023
+----------
+
+   The group or resource is not in the correct state to perform the requested
+   operation.
+
+Error 5024
+----------
+
+   The properties were stored but not all changes will take effect until the
+   next time the resource is brought online.
+
+Error 5025
+----------
+
+   The cluster could not make the specified resource a quorum resource because
+   it does not belong to a shared storage class.
+
+Error 5026
+----------
+
+   The cluster resource could not be deleted since it is a core resource.
+
+Error 5027
+----------
+
+   The quorum resource failed to come online.
+
+Error 5028
+----------
+
+   The quorum log could not be created or mounted successfully.
+
+Error 5029
+----------
+
+   The cluster log is corrupt.
+
+Error 5030
+----------
+
+   The record could not be written to the cluster log since it exceeds the
+   maximum size.
+
+Error 5031
+----------
+
+   The cluster log exceeds its maximum size.
+
+Error 5032
+----------
+
+   No checkpoint record was found in the cluster log.
+
+Error 5033
+----------
+
+   The minimum required disk space needed for logging is not available.
+
+Error 6118
+----------
+
+   The list of servers for this workgroup is not currently available
+
+Error 7001
+----------
+
+   The specified session name is invalid.
+
+Error 7002
+----------
+
+   The specified protocol driver is invalid.
+
+Error 7003
+----------
+
+   The specified protocol driver was not found in the system path.
+
+Error 7004
+----------
+
+   The specified Terminal Connection driver was not found in the system path.
+
+Error 7005
+----------
+
+   A Registry key could not be created in the Event Log for this session.
+
+Error 7006
+----------
+
+   A service with the same name already exists on the system.
+
+Error 7007
+----------
+
+   A close operation is pending on the session.
+
+Error 7008
+----------
+
+   There are no free output buffers available.
+
+Error 7009
+----------
+
+   The MODEM.INF file was not found.
+
+Error 7010
+----------
+
+   The modem name was not found in MODEM.INF.
+
+Error 7011
+----------
+
+   The modem did not accept the command sent to it. Verify the configured modem
+   name matches the attached modem.
+
+Error 7012
+----------
+
+   The modem did not respond to the command sent to it. Verify the modem is
+   properly cabled and powered on.
+
+Error 7013
+----------
+
+   Carrier detect has failed or carrier has been dropped due to disconnect.
+
+Error 7014
+----------
+
+   Dial tone not detected within required time. Verify phone cable is properly
+   attached and functional.
+
+Error 7015
+----------
+
+   Busy signal detected at remote site on callback.
+
+Error 7016
+----------
+
+   Voice detected at remote site on callback.
+
+Error 7017
+----------
+
+   Transport driver error
+
+Error 7018
+----------
+
+   This program cannot be run in text mode.
+
+Error 7019
+----------
+
+   The system has reached its licensed logon limit. Please try again later.
+
+Error 7020
+----------
+
+   The Terminal Connection you are using is not licensed to use this system.
+   Your logon request is denied.
+
+Error 7021
+----------
+
+   The system license has expired. Your logon request is denied.
+
+Error 7022
+----------
+
+   The specified session cannot be found.
+
+Error 7023
+----------
+
+   The specified session name is already in use.
+
+Error 7024
+----------
+
+   The requested operation cannot be completed because the Terminal Connection
+   is currently busy processing a connect, disconnect, reset, or delete
+   operation.
+
+Error 7025
+----------
+
+   An attempt has been made to connect to a session whose video mode is not
+   supported by the current client.
+
+Error 7026
+----------
+
+   The license diskette has been installed the maximum number of times. Either
+   remove it from another system or purchase another license diskette.
+
+Error 7027
+----------
+
+   The license diskette had an error while installing. Please contact the
+   supplier for further information.
+
+Error 7028
+----------
+
+   The license has already been installed on this system. It cannot be installed
+   more than once on a given system.
+
+Error 7029
+----------
+
+   The license diskette has already been removed the maximum number of times.
+
+Error 7030
+----------
+
+   The license diskette had an error while removing. Please contact the supplier
+   for further information.
+
+Error 7031
+----------
+
+   A Base license is already installed on this machine. Only one Base license
+   can be installed at a time.
+
+Error 7032
+----------
+
+   A Base license is not installed on this machine. A Base license must be
+   installed before any other licenses can be installed.
+
+Error 7033
+----------
+
+   The Base license cannot be removed while other licenses are installed. Please
+   remove all other licenses first.
+
+Error 7034
+----------
+
+   The license cannot be installed because it does not match the Base license
+   OEM ID. Please obtain the correct OEM license to install.
+
+Error 7035
+----------
+
+   The application attempted to enable DOS graphics mode. DOS graphics mode is
+   not supported.
+
+Error 7036
+----------
+
+   The license diskette does not match the license selected for removal. Please
+   verify that the desired license diskette is in the drive.
+
+Error 7037
+----------
+
+   Your interactive logon privilege has been disabled. Please contact your
+   administrator.
+
+Error 7038
+----------
+
+   The requested operation can be performed only on the system console. This is
+   most often the result of a driver or system DLL requiring direct console
+   access.
+
+Error 7039
+----------
+
+   No diskette is in the selected drive or the diskette structure is corrupt and
+   non-readable. Please verify that a valid license diskette is in the drive.
+
+Error 7040
+----------
+
+   The client failed to respond to the server connect message.
+
+Error 7041
+----------
+
+   Disconnecting the console session is not supported.
+
+Error 7042
+----------
+
+   Reconnecting a disconnected session to the console is not supported.
+
+Error 7043
+----------
+
+   The license password is incorrect.
+
+Error 7044
+----------
+
+   The request to shadow another session was denied.
+
+Error 7045
+----------
+
+   The requested session access is denied.
+
+Error 7046
+----------
+
+   The requested service or operation cannot be started. A license is required
+   to enable the requested service or operation. Please contact your supplier
+   for further information.
+
+Error 7047
+----------
+
+   The Domain Controller has been configured, but cannot be started. A license
+   is required to enable the Domain Controller. Please contact your supplier for
+   further information.
+
+Error 7048
+----------
+
+   The license has an incompatible version number.
+
+Error 7049
+----------
+
+   The specified Terminal Connection driver is invalid.
+
+Error 7050
+----------
+
+   The requested session cannot be shadowed. This may be because the session is
+   disconnected or does not currently have a user logged on. Also, you cannot
+   shadow a session from the system console or shadow the system console.
+
+Error 7051
+----------
+
+   The requested session is not configured to allow shadowing.
+
+Error 7052
+----------
+
+   Your request to connect to this WinFrame server has been rejected. Your
+   WinFrame Client license number is currently being used by another user.
+   Please call your system administrator to obtain a new copy of the WinFrame
+   Client with a valid, unique license number. Click OK to continue.
+
+Error 7053
+----------
+
+   Your request to connect to this WinFrame server has been rejected. Your
+   WinFrame Client license number has not been entered for this copy of the
+   WinFrame Client. Please call your system administrator for help in entering a
+   valid, unique license number for this WinFrame Client. Click OK to continue.
+
+Error 7054
+----------
+
+   Logon failed. The NetWare password is valid, however an error occurred when
+   attempting to update your password on this domain. Click OK to continue.
+
+Error 7055
+----------
+
+   The default administrator for NetWare logons is not configured correctly for
+   this domain. Notify your system administrator. Click OK to continue.
+
+Error 7056
+----------
+
+   Required licenses have already been installed. The update license is not
+   required.
+
+Error 7057
+----------
+
+   The upgrade license is for a different WinFrame product. WinFrame upgrades
+   are product specific and can only be applied to the same WinFrame product.
+
+Error 7058
+----------
+
+   The required licenses are not installed. Either a WinFrame Base license or
+   WinFrame Upgrade license needs to be installed to allow more than one logon.
+
+Error 7059
+----------
+
+   The serial number is invalid. A valid serial number must be provided in order
+   to obtain a License Number and continue with the registration process.
+
+Error 7060
+----------
+
+   The product SKU field of the serial number is invalid. The product SKU
+   database does not contain an entry for the given SKU.
+
+Error 7061
+----------
+
+   The license number is invalid. A valid License Number must be provided in
+   order to continue with the registration process.
+
+Error 7062
+----------
+
+   The Activation Code is invalid. A valid Activation Code must be provided in
+   order to complete the registration process.
+
+Error 7063
+----------
+
+   The license is not configured for pooling. Please contact the supplier for
+   further information.
+
+Error 7064
+----------
+
+   The pool count for a license cannot exceed the user count or be less than 0.
+
+Error 7065
+----------
+
+   An error occurred while setting the pool count. Please contact the supplier
+   for further information.
+
+Error 7066
+----------
+
+   The configuration Registry has been tampered with or corrupted in the license
+   area. You must re-install your licenses. Notify your system administrator.
+
+Error 7067
+----------
+
+   The configuration Registry has been tampered with or corrupted in the license
+   area and is missing values. You must re-install your licenses. Notify your
+   system administrator.
+
+Error 7068
+----------
+
+   Security identifiers for the license area of the configuration Registry could
+   not be created. You must re-install your licenses. Notify your system
+   administrator.
+
+Error 7069
+----------
+
+   Security identifiers for the license area of the configuration Registry could
+   not be written. You must re-install your licenses. Notify your system
+   administrator.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

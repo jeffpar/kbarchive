@@ -1,0 +1,92 @@
+DOCUMENT:Q267633  26-JUL-2000  [winnt]
+TITLE   :"Modification Error" Message Displayed When Creating MAs
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to create a management agent in Microsoft Metadirectory
+Services (MMS), you may receive the following error message:
+
+   Modification request returns 32.
+   [Modify error: 18032]
+
+An error message similar to the following text is also generated in the Genlogs
+file:
+
+   DBG_00 00f5 00/06/30 08:36:22.975 (DS_importtMain) Importt invoked: Fri Jun
+   30 08:36:20 2000
+   DBG_00 00f5 00/06/30 08:36:22.976 (DS_openLogFiles) Mini_Reflector MA []
+   DBG_00 00f5 00/06/30 08:36:22.977 (DS_openLogFiles) working on [all objects]
+
+   ERR_00 00f5 00/06/30 08:36:23.037 (DB5_makeDirectoryUnderBase) Failed to make
+   directory: [E:\zoomserv\Data\ds\00000005]
+
+   ERR_00 00f5 00/06/30 08:36:23.194 (DS_close) Process exited 14052 at Fri Jun
+   30 08:36:23 2000
+
+CAUSE
+=====
+
+This behavior can occur if the Fnumber.dat file contains a value that is less
+than the highest management agent working folder number.
+
+RESOLUTION
+==========
+
+To resolve this issue, manually edit the Fnumber.dat file:
+
+1. Open the Zoomserv\Data\Ds folder and look for the largest folder number in
+   the folder (for example, 00000032).
+
+2. In the same folder, look for a file named Fnumber.dat.
+
+3. Open the Fnumber.dat file with any text editor.
+
+4. Change the number to equal the number you found in step 1.
+
+5. Save and close the file.
+
+MORE INFORMATION
+================
+
+The Fnumber.dat file is a text file that contains a numeric value that should
+reflect the number of management agents that have previously been created. The
+contents of the file are incremented each time a management agent is created. If
+the file is restored from a backup or changed improperly to a value that is less
+than the number of the highest management agent working folder, the error
+message is displayed.
+
+Additional query words: via zoomit
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

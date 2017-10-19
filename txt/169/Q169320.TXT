@@ -1,0 +1,68 @@
+DOCUMENT:Q169320  09-AUG-2001  [winnt]
+TITLE   :Connect Using The Modem Option Unavailable in Internet Mail
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to configure the Internet Mail information service for Windows
+Messaging, the Connect Using A Modem option may be unavailable.
+
+CAUSE
+=====
+
+This behavior may occur if:
+
+ - Dial-Up Networking is not installed.
+
+ - You have not created a Dial-Up Networking phone book entry.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Install Dial-Up Networking. If Dial-Up Networking is already installed, skip
+   to the next step.
+
+2. Click Start, point to Programs, point to Accessories, and then click Dial-Up
+   Networking.
+
+3. When you receive the error message "The phonebook is empty," click OK, and
+   then follow the instructions on the screen for creating a new phone book
+   entry.
+
+4. Restart your computer.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

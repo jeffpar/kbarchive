@@ -1,0 +1,95 @@
+DOCUMENT:Q91202  16-NOV-1999  [msdos]
+TITLE   :Multiple Configuration Menu Is Not Displayed
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the MENUDEFAULT command in your CONFIG.SYS file is incorrectly set, the
+time-out value defaults to zero. As a result, the startup menu is not displayed
+when you start your machine.
+
+Common problems with menudefault settings include using the full menu descriptor
+(menu_text) instead of the menu block name and using non-numeric characters.
+
+To determine if your menu default is incorrectly set, restart your computer and
+press the F8 function key when the text "Starting MS-DOS..." is displayed. If
+the time-out is defaulting to zero, the menu is displayed. If the menu is not
+displayed, another problem exists.
+
+MORE INFORMATION
+================
+
+Do not use more than one word for your block name. If you want to use text to
+describe your menu options, use a one-word block name followed by the
+description. For example, consider the following menu items:
+
+   menuitem=dev, Development Configuration
+   menuitem=wfwg, Windows for Workgroups
+   menuitem=games, Games
+   menuitem=files, Files and Buffers Only
+
+   [dev]
+
+   [wfwg]
+
+   [games]
+
+   [files]
+
+For these menu items, the four default menu possibilities are "development,"
+"wfwg," "games," and "files."
+
+When you use the menudefault setting, do not include the descriptor text. For
+example,
+
+   menudefault=wfwg, 30
+
+If you include the descriptor text, it is interpreted as the time-out setting.
+Since it is non-numeric text, the menu is not displayed. For example, the
+following menudefault line is incorrect:
+
+  menudefault=wfwg, Windows for Workgroups, 30
+
+REFERENCES
+==========
+
+For help on using a multiple configuration menu, type "help multiconfig"
+(without the quotation marks) at the MS-DOS command prompt or see chapter 4 of
+"Microsoft MS-DOS User's Guide" for version 6 and 6.2.
+
+For help on using the MENUDEFAULT command in your CONFIG.SYS file, type "help
+menudefault" (without the quotation marks) at the MS-DOS command prompt.
+
+Additional query words: 6.22 6.00 6.20
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q121090  22-OCT-1999  [win3x]
+TITLE   :WIN /D:T Disables Printing and Communications in WFWG 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Windows for Workgroups with the command WIN /D:T and you try to
+print or use a communications (COM) port, you receive the following error
+message:
+
+   LPT1 is being used by another application.
+   When the application is finished with the port, resume printing.
+
+MORE INFORMATION
+================
+
+You may need to start Windows for Workgroups with the /D:T switch as part of
+standard troubleshooting. Doing so disables all printing and communications
+until Windows for Workgroups is restarted normally.
+
+Under normal circumstances, the communications driver (COMM.DRV) calls VCOMM.386
+to determine the appropriate port and parameters to print or communicate to. The
+/D:T switch prevents all *.386 files from loading. Therefore, when COMM.DRV
+attempts to call VCOMM.386 to begin printing, the driver is not loaded into
+memory, further printing and communications port use is impossible, and the
+error message is displayed.
+
+This behavior is by design; the /D:T switch is included for troubleshooting
+purposes only.
+
+
+Additional query words: tshoot 3.11 com1 com2
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,78 @@
+DOCUMENT:Q197876  10-AUG-2001  [winnt]
+TITLE   :Poor Performance with Access MDB Stored on Windows NT Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft BackOffice Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may notice that it takes several seconds longer to open an Access MDB file
+stored on a Windows NT Server computer than if the same MDB is stored on a
+Windows95 or Windows 98 computer.
+
+CAUSE
+=====
+
+This problem occurs because the Windows NT Server computer is not optimized for
+file sharing.
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. Open Control Panel on the Microsoft Windows NT Server.
+
+2. Double-click the Network icon.
+
+3. Click the Services tab.
+
+4. Double-click the Server Service.
+
+5. Click to select the Maximize Throughput For File Sharing radio button.
+
+6. Restart the server.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If the MDB files are stored on a Windows95 or Windows 98 computer, the
+performance returns to normal.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

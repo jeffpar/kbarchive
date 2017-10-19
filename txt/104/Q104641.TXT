@@ -1,0 +1,79 @@
+DOCUMENT:Q104641  22-JUL-2001  [visualc]
+TITLE   :INFO: Using C Run-Time Functions and CreateThread()
+PRODUCT :Microsoft C Compiler
+PROD/VER:1.0 2.0 2.1 2.2 4.0 4.1 4.2 5.0
+OPER/SYS:
+KEYWORDS:kbCRT kbVC100 kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0, 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+All C Run-time functions except the signal() function work correctly when used
+in threads created by the CreateThread() function. However, depending on what
+CRT functions are called, there may be a small memory leak when threads are
+terminated. Calling strlen(), for example, does not trigger the allocation of
+the CRT thread data-block, and calling malloc(), fopen(), _open(), strtok(),
+ctime(), or localtime() causes allocation of a CRT per-thread data-block, which
+may cause a memory leak.
+
+MORE INFORMATION
+================
+
+The "Programming Techniques" manual supplied with Visual C++ 32-bit Edition
+states that using CreateThread() in a program that uses Libcmt.lib causes many
+CRT functions to fail. Actually, the only function that should not be used in a
+thread created with CreateThread() is the signal() function.
+
+There are two ways to create threads. One method involves using the CRT
+_beginthread() or _beginthreadex() (with Visual C++ 2.0 and later); the other
+method involves using the CreateThread() API. All CRT functions other than the
+signal() function work correctly in threads created with either _beginthread()
+or CreateThread(). However, there are some problems involved with using CRT
+functions in threads created with CreateThread().
+
+Threads that are created and terminated with the CreateThread() and ExitThread()
+Win32 API functions do not have memory that is allocated by the CRT for static
+data and static buffers cleaned up when the thread terminates. Some examples of
+this type of memory are static data for errno and _doserrno and the static
+buffers used by functions such as asctime(), ctime(), localtime(), gmtime(), and
+mktime(). Using CreateThread() in a program that uses the CRT (for example,
+links with LIBCMT.LIB) may cause a memory leak of about 70-80 bytes each time a
+thread is terminated.
+
+To guarantee that all static data and static buffers allocated by the CRT are
+cleaned up when the thread terminates, _beginthreadex() and _endthreadex()
+should be used when creating a thread. The _beginthreadex() function includes
+the same parameters and functionality as CreateThread().
+
+NOTE: It is not possible to terminate a thread with _endthreadex() when it was
+created with CreateThread().
+
+======================================================================
+Keywords          : kbCRT kbVC100 kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : 1.0 2.0 2.1 2.2 4.0 4.1 4.2 5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

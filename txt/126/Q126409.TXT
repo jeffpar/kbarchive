@@ -1,0 +1,53 @@
+DOCUMENT:Q126409  21-AUG-1999  [automap]
+TITLE   :Automap Streets: No County Boundaries in Streets
+PRODUCT :Microsoft Automap
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 1.01 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Microsoft Automap Streets version 1.01 is installed as a standalone
+application, or installed with Automap Road Atlas versions 3.0, 3.02, 3.04, and
+3.05 for Windows on the same computer system, the County Boundaries overlay will
+not appear.
+
+The Overlay option on the toolbar will not work and the Data drop down menu
+Overlay selection will not be available.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Automap Streets version 1.01. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: auto auto-map automap reference blank
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets101
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

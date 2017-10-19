@@ -1,0 +1,91 @@
+DOCUMENT:Q155974  08-AUG-2001  [winnt]
+TITLE   :Hardware Profiles Have an Empty Description Line
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to edit your hardware profiles, there is an empty line in your list
+of available profiles.
+
+To see the list of available profiles:
+
+1. Right-click the My Computer icon and click Properties.
+
+2. On the Hardware Profiles tab, there is a list of available profiles.
+
+CAUSE
+=====
+
+There may be a problem in the PreferenceOrder setting of the registry. Look in
+the Registry in the subtree HKEY_LOCAL_MACHINE at the following subkey:
+
+   \SYSTEM\CurrentControlSet\Control IDConfigDB\ 
+   Hardware Profiles\<available profiles>\PreferenceOrder
+
+The PreferenceOrder of all available Profiles should be listed in a sequence. If
+there is a missing line in your list of available Profiles, one PreferenceOrder
+may be out of sequence.
+
+WORKAROUND
+==========
+
+Change the PreferenceOrder setting so that all PreferenceOrder settings are in
+sequence.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (Regedt32.exe) and locate the following Registry subkey
+   in the HKEY_LOCAL_MACHINE subtree:
+
+   \SYSTEM\CurrentControlSet\Control\IDConfigDB\Hardware Profiles\<list of
+   available profiles 000x>
+
+2. Select the profile to edit.
+
+3. Highlight PreferenceOrder (REG_DWORD).
+
+4. On the Edit menu, click Edit - DWORD.
+
+5. Change the data so that all profiles are in sequence.
+
+6. Click OK and quit the Registry Editor.
+
+7. Shut down and restart Windows NT.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

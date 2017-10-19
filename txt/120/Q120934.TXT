@@ -1,0 +1,74 @@
+DOCUMENT:Q120934  23-NOV-1999  [msdos]
+TITLE   :MWBACKUP Can't Back Up More Than 1637 Files from One Dir
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Microsoft Backup for Windows (MWBACKUP.EXE), you receive the
+following error message as Microsoft Backup is reading directories:
+
+   There are too many files in the current directory. Not all the files will be
+   available for backup.
+
+If you choose OK, Backup continues to load; however, some of the files from the
+given directory are not available for backup.
+
+CAUSE
+=====
+
+This error message is displayed if one (or more) of the directories on the drive
+being read contains more than 1637 files.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods:
+
+ - Move some of the files from the original directory into a new directory so
+   that the total number of files in the original directory is not greater than
+   1637.
+
+ - Quit Windows and run Microsoft Backup for MS-DOS (MSBACKUP.EXE) by typing
+   "msbackup" (without the quotation marks) at an MS-DOS command prompt. If
+   MSBACKUP.EXE is not installed, you can install it by running SETUP /E from
+   the MS-DOS Setup Disk 1.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: limit limited 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q77669  19-OCT-2000  [pcmail]
+TITLE   :PC OS2: Install Fails If Windows Ported Application Is Active
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1, 3.0, on platform(s):
+    - the operating system: OS/2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Installation of the Presentation Manager (PM) client software for Microsoft Mail
+for PC Networks can fail if there are other applications active within the OS/2
+environment that use the Windows Libraries for OS/2 (WLO).
+
+CAUSE
+=====
+
+The PM client software requires the WLO libraries in order to operate correctly.
+Updated versions of these libraries are copied to the destination directory
+during installation. If another application is running during installation that
+also uses the WLO libraries, the files cannot be copied and the installation
+will fail.
+
+RESOLUTION
+==========
+
+Shut down OS/2 and restart it without running any other WLO applications. The PM
+client installation will now operate correctly.
+
+Additional query words: 2.10 2.10d 2.10e 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:2.1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,304 @@
+DOCUMENT:Q169933  31-JUL-2001  [word97]
+TITLE   :WD97: Word 97 for Windows 3.5" Disk Contents (Disks 13-18)
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdiskdir winword word97 kbdir
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the file names, file sizes and the files that each of the
+cabinet (.cab) files contains for Microsoft Word 97 for Windows. This article
+lists the contents of disks 13-18 (18 disks total) for the 3.5-inch DMF disks.
+
+You can browse the contents of the cabinet files with the CABFILE Viewer utility,
+which is located on Disk 1.
+
+For more information about the CABFILE Viewer utility, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q163811 OFF97: How to Use the CABFILE Viewer Utility
+
+MORE INFORMATION
+================
+
+Disk 13
+-------
+
+   File Name         File Size      File Date  Time
+   --------------------------------------------------
+   Wrd97_13.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_13.cab
+
+   File Date   Time           File Size File Name
+   ------------------------------------------------------------------------
+   Office\Vbawrd8.hlp : Starts in cabinet Wrd97_12.cab on disk 12
+
+   01-17-1997  10:55:00a ----   94,994  Office\Vbawrd8.cnt
+   01-17-1997  10:54:58a ----  508,710  Office\Vbawrd8.aw
+   01-17-1997   3:42:22a ----  563,200  Office\Html\Html.wll
+   01-17-1997   5:24:06p ----   94,720  Office\Html.dot
+   01-17-1997  10:56:08a ----   36,352  Office\Html\Htmlview.dot
+   01-17-1997   5:36:54p ----   88,064  Template\Webpages\Moreweb.dot
+   01-17-1997   5:18:52p ----   37,888  Template\Webpages\Webpage.wiz
+   01-17-1997  10:56:08a ----    4,018  Office\Html\Wdhtml8.cnt
+   01-17-1997   6:00:26p ----   97,390  Office\Html\Wdhtml8.hlp
+   01-17-1997  10:56:08a ----  156,697  Office\Html\Wdhtml8.aw
+   01-17-1997   5:18:42p ----   26,112  Office\Webtmpl1\Styles\Communty.dot
+   01-17-1997   5:18:42p ----   24,576  Office\Webtmpl\Styles\Contmpry.dot
+   01-17-1997   5:18:42p ----   24,576  Office\Webtmpl\Styles\Elegant.dot
+   01-17-1997   5:18:44p ----   27,648  Office\Webtmpl\Styles\Festive.dot
+   01-17-1997   5:18:44p ----   28,672  Office\Webtmpl\Styles\Harvest.dot
+   01-17-1997   5:18:44p ----   25,088  Office\Webtmpl\Styles\Jazzy.dot
+   01-17-1997   5:18:44p ----   27,648  Office\Webtmpl\Styles\Outdoors.dot
+   01-17-1997   5:18:44p ----   27,136  Office\Webtmpl\Styles\Profesnl.dot
+   01-17-1997   9:52:08p ----   63,488  Office\Webtmpl\Content\Register.doc
+   01-17-1997   9:52:08p ----   51,200  Office\Webtmpl\Content\Survey.doc
+   01-17-1997   9:52:08p ----   49,152  Office\Webtmpl\Content\Feedback.doc
+   01-17-1997   5:18:42p ----   22,016  Office\Webtmpl\Content\Simple.doc
+   01-17-1997   5:18:40p ----   29,184  Office\Webtmpl\Content\Personal.doc
+   01-17-1997   5:18:40p ----   22,016  Office\Webtmpl\Content\Centered.doc
+   01-17-1997   5:18:40p ----   26,624  Office\Webtmpl\Content\2column.doc
+   01-17-1997   5:18:40p ----   22,528  Office\Webtmpl\Content\3column.doc
+   01-17-1997   5:18:40p ----   22,016  Office\Webtmpl\Content\Calendar.doc
+   01-17-1997   5:18:42p ----   22,016  Office\Webtmpl\Content\Toc.doc
+   01-17-1997  10:50:58a ----      122  Office\Html\Dialogs\Bullet1.gif
+   01-17-1997  10:50:58a ----      150  Office\Html\Dialogs\Bullet2.gif
+   01-17-1997  10:50:58a ----      148  Office\Html\Dialogs\Bullet3.gif
+   01-17-1997  10:50:58a ----      880  Office\Html\Dialogs\Bullet4.gif
+   01-17-1997  10:50:58a ----      101  Office\Html\Dialogs\Bullet5.gif
+   01-17-1997  10:50:58a ----       79  Office\Html\Dialogs\Bullet6.gif
+   01-17-1997  10:50:58a ----      140  Office\Html\Dialogs\Bullet7.gif
+   01-17-1997  10:50:58a ----      204  Office\Html\Dialogs\Bullet8.gif
+   01-17-1997  10:50:58a ----      286  Office\Html\Dialogs\Line1.gif
+   01-17-1997  10:50:58a ----      403  Office\Html\Dialogs\Line2.gif
+   01-17-1997  10:50:58a ----    1,636  Office\Html\Dialogs\Line3.gif
+   01-17-1997  10:50:58a ----    2,501  Office\Html\Dialogs\Line4.gif
+   01-17-1997  10:50:58a ----    1,235  Office\Html\Dialogs\Line5.gif
+   01-17-1997  10:50:58a ----      917  Office\Html\Dialogs\Line6.gif
+   01-17-1997  10:50:58a ----      917  Office\Html\Dialogs\Line7.gif
+   01-17-1997  10:50:58a ----    1,504  Office\Html\Dialogs\Line8.gif
+   01-17-1997  10:50:58a ----    1,785  Office\Html\Dialogs\Line9.gif
+   01-17-1997  10:56:46a ----   26,810  Office\Webtmpl\Styles\Commbkgd.gif
+   01-17-1997  10:51:02a ----    7,160  Office\Webtmpl\Styles\Contbkgd.gif
+   01-17-1997  10:51:02a ----    5,166  Office\Webtmpl\Styles\Elegbkgd.gif
+   01-17-1997  10:51:02a ----    3,572  Office\Webtmpl\Styles\Festbkgd.gif
+   01-17-1997  10:51:02a ----      962  Office\Webtmpl\Styles\Harvbkgd.gif
+   01-17-1997  10:51:02a ----    4,127  Office\Webtmpl\Styles\Jazzbkgd.gif
+   01-17-1997  10:51:02a ----   10,362  Office\Webtmpl\Styles\Outdbkgd.gif
+   01-17-1997  10:51:02a ----   23,498  Office\Webtmpl\Styles\Profbkgd.gif
+   01-17-1997  10:50:40a ----      285  Clipart\Bullets\Commbull.gif
+   01-17-1997  10:50:40a ----      591  Clipart\Bullets\Contbull.gif
+   01-17-1997  10:50:40a ----      591  Clipart\Bullets\Elegbull.gif
+   01-17-1997  10:50:40a ----      983  Clipart\Bullets\Festbull.gif
+   01-17-1997  10:50:42a ----      257  Clipart\Bullets\Harvbull.gif
+   01-17-1997  10:50:42a ----      275  Clipart\Bullets\Jazzbull.gif
+   01-17-1997  10:50:42a ----    1,120  Clipart\Bullets\Outdbull.gif
+   01-17-1997  10:50:42a ----      971  Clipart\Bullets\Profbull.gif
+   01-17-1997  10:50:42a ----    2,820  Clipart\Lines\Commline.gif
+   01-17-1997  10:50:42a ----    1,558  Clipart\Lines\Contline.gif
+   01-17-1997  10:50:42a ----      808  Clipart\Lines\Elegline.gif
+   01-17-1997  10:50:42a ----    3,357  Clipart\Lines\Festline.gif
+   01-17-1997  10:50:42a ----    6,677  Clipart\Lines\Harvline.gif
+   01-17-1997  10:50:42a ----    1,692  Clipart\Lines\Jazzline.gif
+   01-17-1997  10:50:42a ----    8,081  Clipart\Lines\Outdline.gif
+   01-17-1997  10:50:42a ----    2,795  Clipart\Lines\Profline.gif
+   01-17-1997   5:29:22p ----   82,944  Office\Html\Htmlmarq.ocx
+   01-17-1997   2:43:48a ----   91,648  Office\Html\Htmlmm.ocx
+   01-17-1997   3:32:54a ----1,597,200  Office\Graph8.exe
+
+                    72 Files 4,123,047 bytes
+
+Disk 14
+-------
+
+   File Name         File Size      File Date  Time
+   --------------------------------------------------
+   Wrd97_14.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_14.cab
+
+   File Date   Time           File Size File Name
+   ------------------------------------------------------------------------
+   Office\Graph8.exe : Starts in cabinet Wrd97_13.cab on disk 13
+
+   01-17-1997   3:32:54a ----  111,104  Office\Graph8.olb
+   01-17-1997   3:32:50a ----    5,120  Office\Gr8409.dll
+   01-17-1997   8:46:30p ----    5,297  Office\Graph8.srg
+   01-17-1997   3:32:54a ----  161,792  Office\Grintl32.dll
+   01-17-1997   5:20:08p ----  186,880  Office\Gr8galry.gra
+   01-17-1997   8:48:40p ----   17,952  Office\Vbagrp8.hlp
+   01-17-1997  11:38:44a ----      198  Office\Vbagrp8.cnt
+   01-17-1997  10:54:40a ----  520,680  Office\Graph8.hlp
+   01-17-1997  10:54:40a ----  296,578  Office\Graph8.aw
+   01-17-1997  10:54:40a ----   16,761  Office\Graph8.cnt
+   01-17-1997   8:22:22p ----   32,528  Os\System\Olepro32.dll
+   01-17-1997   8:49:46p ----  487,184  Office\Mso7enu.dll
+   01-17-1997   3:39:02a ----3,774,224  Office\Mso97.dll
+
+                    13 Files 5,616,298 bytes
+
+Disk 15
+-------
+
+   File Name         File Size      File Date  Time
+   --------------------------------------------------
+   Wrd97_15.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_15.cab
+
+   File Date   Time           File Size File Name
+   ------------------------------------------------------------------------
+   Office\Mso97.dll : Starts in cabinet Wrd97_14.cab on disk 14
+
+   01-17-1997   2:41:44a ----    8,976  Office\Mso97fx.dll
+   01-17-1997  11:10:38a ----   22,016  Os\System\Docobj.dll
+   01-17-1997  11:54:30a ----  179,200  Os\System\Regwiz.exe
+   01-17-1997   2:33:16a ----  119,056  Os\System\Asycfilt.dll
+   01-17-1997   3:31:30a ----1,123,600  Os\System\Fm20.dll
+   01-17-1997   3:35:38a ----   25,872  Os\System\Fm20enu.dll
+   01-17-1997  10:57:42a ----  497,789  Os\Msapps\Msforms\Fm20.hlp
+
+                    7 Files  1,976,509 bytes
+
+Disk 16
+-------
+
+   File Name        File Size       File Date  Time
+   --------------------------------------------------
+   Wrd97_16.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_16.cab
+
+   File Date   Time           File Size File Name
+   ------------------------------------------------------------------------
+   Os\Msapps\Msforms\Fm20.hlp : Starts in cabinet Wrd97_15.cab on disk 15
+
+   01-17-1997  10:57:40a ----   19,691  Os\Msapps\Msforms\Fm20.cnt
+   01-17-1997  10:57:40a ----  197,717  Os\Msapps\Msforms\Fm20.aw
+   01-17-1997   2:42:18a ----   11,776  Os\System\Msothunk.dll
+   01-17-1997   5:28:12p ----   51,984  Office\Osa.exe
+   01-17-1997   2:41:46a ----    5,904  Office\Osaintl.dll
+   01-17-1997   3:31:44a ----   71,440  Os\System\Hlink.dll
+   01-17-1997  11:52:52a ----      457  Office\Hlink.srg
+   01-17-1997  11:54:18a ----   12,288  Os\System\Hlinkprx.dll
+   01-17-1997   2:34:20a ----  291,600  Os\System\Wininet.dll
+   01-17-1997   2:31:24a ----  166,160  Os\System\Urlmon.dll
+   01-17-1997   8:22:58a ----   20,080  Os\System\Winsspi.dll
+   01-17-1997   5:21:30p ----      504  Office\Misc2.srg
+   01-17-1997  11:00:56a ----    1,194  Office\Msoffice.srg
+   01-17-1997   2:48:14a ----    5,438  Office\Misc.srg
+   01-17-1997   2:37:20a ----    3,072  Office\Mso7ftps.exe
+   01-17-1997   2:37:20a ----    3,072  Office\Mso7ftp.exe
+   01-17-1997   2:37:20a ----    3,072  Office\Mso7ftpa.exe
+   01-17-1997   5:27:42p ----   57,344  Os\System\Commtb32.dll
+   01-17-1997   6:02:10p ----  216,064  Os\System\T2embed.dll
+   01-17-1997  10:58:20a ----      856  Os\System\T2embed.srg
+   01-17-1997  11:05:30a ----  138,240  Os\Msapps\Proof\Mssp232.dll
+   01-17-1997  10:51:16a ----  252,801  Os\Msapps\Proof\Mssp2_en.lex
+   01-17-1997  10:51:14a ----  327,823  Os\Msapps\Proof\Mssp2_ea.lex
+   01-17-1997   2:29:34a ----   24,848  Os\System\Vbaen32.olb
+   01-17-1997  10:52:20a ----   16,896  Os\System\Stdole2.tlb
+   01-17-1997  11:31:20a ----  294,672  Os\System\Riched20.dll
+   01-17-1997   3:39:08a ----1,596,688  Os\System\Vba332.dll
+
+                    27 Files 3,791,681 bytes
+
+Disk 17
+-------
+
+   File Name         File Size      File Date  Time
+   --------------------------------------------------
+   Wrd97_17.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_17.cab
+
+   File Date   Time           File Size File Name
+   ------------------------------------------------------------------------
+   Os\System\Vba332.dll : Starts in cabinet Wrd97_16.cab on disk 16
+
+   01-17-1997   3:39:10a ----  368,912  Os\System\Vbar332.dll
+   01-17-1997  11:10:42a ----   15,872  Os\System\Scp32.dll
+   01-17-1997   2:36:02a ----  145,680  Os\System\Vba3en.dll
+   01-17-1997   3:39:12a ----  745,232  Os\System\Vbe.dll
+   01-17-1997   7:02:48a ----   31,744  Os\System\Vbeext1.olb
+   01-17-1997   5:26:36p ----  803,844  Os\Msapps\PhotoEd\Photoed.exe
+   01-17-1997  11:39:40a ----   81,920  Os\Msapps\PhotoEd\ChalkCha.dll
+   01-17-1997  11:39:40a ----   78,848  Os\Msapps\PhotoEd\Emboss.dll
+   01-17-1997  11:39:40a ----   78,848  Os\Msapps\PhotoEd\GraphicP.dll
+   01-17-1997  11:39:40a ----   79,872  Os\Msapps\PhotoEd\NotePape.dll
+   01-17-1997  11:39:42a ----   92,160  Os\Msapps\PhotoEd\StainedG.dll
+   01-17-1997  11:39:42a ----   78,336  Os\Msapps\PhotoEd\Stamp.dll
+   01-17-1997  11:39:44a ----  160,768  Os\Msapps\PhotoEd\Texturiz.dll
+   01-17-1997  11:39:44a ----   87,040  Os\Msapps\PhotoEd\WaterCol.dll
+   01-17-1997   8:17:50p ----    9,902  Os\Msapps\PhotoEd\Photoed.srg
+   01-17-1997  10:57:48a ----   93,529  Os\Msapps\PhotoEd\Photoed.hlp
+   01-17-1997  10:57:48a ----    4,271  Os\Msapps\PhotoEd\Photoed.cnt
+   01-17-1997  11:39:14a ----   87,328  Os\Twain.DLL
+
+                    18 Files 3,044,106 bytes
+
+Disk 18
+-------
+
+   File Name        File Size      File Date   Time
+   --------------------------------------------------
+   Wrd97_18.cab        502,975      01-17-97   4:37am
+
+Contents of Wrd97_18.cab
+
+   File Date   Time           File Size File Name
+   ------------------------------------------------------------------------
+   Os\Msapps\Photoed\Photoed.hlp:Starts in cabinet Wrd97_17.cab on disk 17
+   Os\Msapps\Photoed\Photoed.cnt:Starts in cabinet Wrd97_17.cab on disk 17
+   Os\Twain.dll : Starts in cabinet Wrd97_17.cab on disk 17
+
+   01-17-1997  11:39:14a ----   77,312  Os\Twain_32.dll
+   01-17-1997  11:39:16a ----   48,560  Os\Twunk_16.exe
+   01-17-1997  11:39:16a ----   69,632  Os\Twunk_32.exe
+   01-17-1997  10:54:38a ----       20  Office\Custom.dic
+   01-17-1997  10:55:38a ----  468,266  Office\Actors\Clippit.act
+   01-17-1997  10:55:48a ----  356,778  Office\Actors\Logo.act
+   01-17-1997  11:11:32a ----  160,768  Aamsstp\App\Msreftl.dll
+   01-17-1997  11:38:18a ----   69,120  Office\Bsh32.wll
+
+                    8 Files  1,250,456
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q169930 WD97: Word 97 for Windows 3.5" Disk Contents (Disks 1-6)
+
+   Q169931 WD97: Word 97 for Windows 3.5" Disk Contents (Disks 7-12)
+
+Additional query words: 8.0 diskette floppy floppies 3 1/2 3.5 contents listing directory dir
+
+======================================================================
+Keywords          : kbdiskdir winword word97 kbdir 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

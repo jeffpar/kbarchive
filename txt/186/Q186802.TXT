@@ -1,0 +1,61 @@
+DOCUMENT:Q186802  23-OCT-2000  [iis]
+TITLE   :FIX: Lock Error Occurs When Deleting a File from FTP Directory
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbiis400 kbiis400bug kbiis500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On the computer running Internet Information Server (IIS), attempting to delete
+a file from an FTP site's directory causes a lock error, and the file cannot be
+deleted. To work around this problem, stop and restart the Inetinfo process. To
+do this, use the Internet Service Manager (ISM) to stop and then restart all
+services under Internet Information Server for that computer.
+
+CAUSE
+=====
+
+A client was using FTP to download the file when the download was interrupted.
+As a result, the lock the system placed on the file during the download was
+never removed.
+
+Microsoft has confirmed this to be a problem in Internet Information Server 4.0.
+
+STATUS
+======
+
+This problem was corrected in Internet Information Server 5.0.
+
+Additional query words: mmc remove inetinfo.exe akz
+
+======================================================================
+Keywords          : kbiis400 kbiis400bug kbiis500fix 
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

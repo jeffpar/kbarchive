@@ -1,0 +1,61 @@
+DOCUMENT:Q142364  17-DEC-2000  [win95x]
+TITLE   :How to Obtain an IDF File Editor for Custom MIDI Instruments
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbmm win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to obtain an instrument definition file (IDF) editor
+so you can customize or create an IDF for a MIDI instrument.
+
+MORE INFORMATION
+================
+
+An IDF editor is included with the Microsoft Windows 95 Software Development Kit
+(SDK). For information about obtaining the Windows 95 SDK, please contact the
+Microsoft Sales Information Center (MSIC) at (800) 426-9400
+
+
+Note that this program is provided "as is" and is not supported by Microsoft
+Support Engineers.
+
+IDF files contain information about instrument patch (sound) maps and additional
+instrument-specific information. IDF files are binary files and are not editable
+without the IDF editor.
+
+Windows 95 includes a General.idf file for compatibility with all general MIDI
+instruments. If a MIDI instrument is not general-MIDI-compatible, or has
+capabilities beyond the general MIDI specification, a custom IDF file must be
+created to use the instrument.
+
+======================================================================
+Keywords          : kbmm win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q197443  14-NOV-2000  [word97]
+TITLE   :WD97: Err Message: "Specified Text Is Not a Valid AutoText Name"
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbautotext word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you type the name of an AutoText entry and press F3 or click the Insert
+AutoText button on the toolbar, Word may beep and display the following message
+on the Status Bar:
+
+   The Specified text is not a valid AutoText name. Use Edit AutoText to create
+   AutoText entries.
+
+CAUSE
+=====
+
+This error occurs if you don't separate the AutoText entry name from the
+preceding or succeeding text with a space.
+
+WORKAROUND
+==========
+
+To work around this behavior, type a space before and after the AutoText name
+before pressing F3. For example, consider the AutoText entry named "mine":
+
+   mine|all mine   Pressing F3 with the insertion point in this
+                   position results in an error.
+
+   mine| all mine  Pressing F3 with the insertion point in this
+                   position inserts the AutoText.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbautotext word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

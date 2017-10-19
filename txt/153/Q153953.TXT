@@ -1,0 +1,105 @@
+DOCUMENT:Q153953  15-MAR-2000  [iis]
+TITLE   :Log on Locally Permission Not Required for Client Access
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0,2.0,3.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 1.0, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you configure a Microsoft Windows NT user account to be used by clients
+using HTTP basic authentication, Internet Information Server (IIS) requires that
+the account is granted the Log on Locally right.
+
+If this right is not granted to users who will be accessing IIS services, then
+the following symptoms may be experienced.
+
+When a client tries to access an HTML page on IIS, you will get the following
+error message:
+
+   Error: Access is denied.
+
+When a client tries to access the FTP server on IIS, you will get the following
+error message:
+
+   Login failed.
+
+However, for reasons of security, it may be undesirable for the IIS Administrator
+to grant users the Log on Locally right.
+
+RESOLUTION
+==========
+
+Microsoft has created a patch that enables IIS administrators to choose which
+right needs to be granted to users in order that clients using Basic
+Authentication may access IIS services.
+
+After you apply the patch, the required rights are configurable by the IIS
+administrator by setting the following registry value (where ServiceName is
+either W3SVC for the WWW service, or MSFTPSVC for the FTP service).
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+HKEY_LOCAL_MACHINE\SYSTEM
+ \CurrentControlSet
+  \Services
+   \ServiceName
+    \Parameters
+
+Value Name: LogonMethod
+Value Type: REG_DWORD
+Value Range:   0 or 1
+Default: 0
+
+A value of 0 means users must have the right to Log on Locally to be given access
+to the server. A value of 1 means that users must have the right to Log On as a
+Batch Job.
+
+The Log On as a Batch Job privilege is an advanced user right that may be granted
+in User Manager.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 1.0. This problem was corrected in the latest Windows NT 3.51
+U.S. Service Pack. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbiisSearch kbiis300 kbiis200 kbiis100
+Version           : winnt:1.0,2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

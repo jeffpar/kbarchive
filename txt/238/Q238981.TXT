@@ -1,0 +1,62 @@
+DOCUMENT:Q238981  21-JUN-2001  [visualc]
+TITLE   :HOWTO: Passing Optional Parameters When Calling a Function
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:97; Win95:7.0; winnt:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbVCkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you call a method that has optional parameters from Visual C++, you cannot
+omit the optional parameters. You need to pass a special VARIANT instead.
+
+MORE INFORMATION
+================
+
+Some methods have "optional" parameters. In Visual Basic, you can omit them when
+calling the method. However, when calling with Visual C++, you have to pass a
+special VARIANT whose .vt field has the value VT_ERROR, and .scode field has the
+value DISP_E_PARAMNOTFOUND. That is:
+
+         // VARIANT used in place of optional-parameters.
+         VARIANT varOpt;
+         varOpt.vt = VT_ERROR;
+         varOpt.scode = DISP_E_PARAMNOTFOUND; 
+
+This is what Visual Basic is doing behind-the-scenes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC kbfaq
+Technology        : kbVCsearch kbVC400 kbOutlookSearch kbOfficeSearch kbAudDeveloper kbOffice97Search kbOutlook98Search kbOffice95Search kbOffice95 kbOffice97 kbZNotKeyword3 kbVC32bitSearch kbVCPE500 kbVCPE600 kbVCEE500 kbVCEE600 kbVCLE600
+Version           : WINDOWS:97; Win95:7.0; winnt:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

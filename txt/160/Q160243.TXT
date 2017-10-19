@@ -1,0 +1,80 @@
+DOCUMENT:Q160243  01-NOV-2001  [foxpro]
+TITLE   :HOWTO: Create Log File for Distributed Setup
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Setup.exe can create a log file when you run it. This assists in troubleshooting
+setup problems with distributed applications.
+
+MORE INFORMATION
+================
+
+To tell Setup.exe to create a log file, follow these steps:
+
+1. In a text editor, modify the file Setup.1st.
+
+2. If you are running on Windows 95 go to the [Windows 95 Params] section
+   heading. If you are running on Windows NT 3.51 or higher go to the [NT3.51
+   Intel Params] section.
+
+3. Under your section modify the line:
+
+         CmdLine     = acmsetup /T setup.stf /S %s %s
+
+   To read:
+
+         CmdLine     = acmsetup /T setup.stf /S %s %s /G "LOG.TXT"
+
+   NOTE: In Visual FoxPro 5.0, the Windows NT section already has the /G
+   "LOG.TXT" switch added. However, this not already added in Visual FoxPro 6.0.
+
+4. Save and Close the file.
+
+5. When you run Setup.exe, Log.txt appears in the temp directory. This file
+   contains information about each step of the setup program and tells you
+   whether or not it was successful.
+
+REFERENCES
+==========
+
+For more information about what switches exist for the setup application, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q137391 OFF7: Setup Switches for Office 7.0
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

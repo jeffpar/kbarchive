@@ -1,0 +1,54 @@
+DOCUMENT:Q86554  08-NOV-1999  [pcmail]
+TITLE   :MHS: Requirements for the MHS Host
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MHS, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Message Handling Service (MHS) hosts can be either workstations that are
+standalone or workstations that are connected to a network.
+
+The Standalone Host always requires a modem for communication with other MHS
+hosts. The "MHS" software this host will be running will always have a "P" after
+the version number (for example, 1.5P). The P denotes personal version.
+
+The LAN Host requires access to a local-area-network (LAN) server (for example,
+Novell NetWare or Microsoft LAN Manager). If the host needs to communicate to
+other LAN hosts, the machine will require access to those servers as well. If
+the host needs to communicate to other hosts not directly available through a
+direct LAN connection (for example, over phone lines, and so forth), it requires
+a modem and an outside phone line.
+
+
+Additional query words: pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

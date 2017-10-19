@@ -1,0 +1,123 @@
+DOCUMENT:Q175640  09-AUG-2001  [winnt]
+TITLE   :How To Configure Nwlink LAN-to-LAN Routing Using RRAS
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses information on how to configure a Routing and Remote
+Access Service (RRAS) LAN-to-LAN Routing Dial-on-Demand (DOD) connection over
+Nwlink.
+
+MORE INFORMATION
+================
+
+To configure a RRAS LAN-to-LAN Routing DOD connection over Nwlink, start the
+RRAS Administration utility, and then perform the following steps:
+
+1. Right-click the LAN and Demand Dial Interfaces key, and click Add Interface.
+
+   a. The name to be typed MUST be the name of a valid user account on the
+      Dial-up RRAS server, and then click Next.
+
+   b. Select "Route IPX packets on this interface" only, and then click Next.
+
+   c. Type the telephone number of the Dial-up server, and then click Next.
+
+   d. Type the user name, domain, and password of a valid user account on the
+      Dial-up server, and then click Finish.
+
+   e. Select Enable IPX on this Interface and make sure that both locations are
+      set to use the same Dial In Control Protocol, then click OK.
+
+   f. Make sure that Accept Broadcasts are enabled. If Always is selected, a
+      Demand-Dial connection will be established whenever a Windows NT- based
+      router receives a NetBIOS over IPX broadcast. If Statically Seeded is
+      selected, only broadcast packets that are defined for a statically
+      configured NetBIOS name, configured under the Static NetBIOS Names key,
+      will be propagated. If only When Interface is Up is Selected it will act
+      as if it was configured for Always, but only when the DOD connection is
+      active. Click OK.
+
+   g. Make sure that the Update Mode for RIP for IPX is set to Auto- Static,
+      then click OK.
+
+   h. Make sure that the Update Mode for SAP for IPX is set to Auto- Static,
+      then click OK.
+
+2. Select the NetBIOS Broadcasts key, and make sure that both the Internal and
+   External network interface cards (NICs) are configured to Accept and Deliver
+   NetBIOS Broadcasts. If either NIC is not configured to Accept and Deliver
+   NetBIOS broadcasts, then right-click the NetBIOS Boradcasts key, and then
+   click Configure Interface.
+
+3. Each interface should be set to Accept Broadcasts and Deliver Broadcasts and
+   be set to Always for full LAN-to-LAN connectivity.
+
+4. Select the RIP for IPX key, and make sure that both the Internal and External
+   NICs are configured to perform in a Standard update mode. If either NIC is
+   not configured in this manner, right-click the RIP for IPX key, and then
+   click Configure Interface.
+
+5. Configure each interface to perform in a Standard update mode.
+
+6. Select the SAP for IPX key and make sure that both the Internal and External
+   NICs are configured to perform in a Standard update mode If either NIC is not
+   configured in this manner, right-click the SAP for IPX key, and then click
+   Configure Interface.
+
+7. Make sure that the Update Mode for both the Internal and External NIC is set
+   to Standard.
+
+8. Right-click the Static NetBIOS Names key if you are using a Statically Seeded
+   delivery method for NetBIOS Resolution, and click Add NetBIOS Name.
+
+9. Type the NetBIOS name of the remote computer that you wish to connect to.
+   Leave the Type field blank so it will propagate all computer types associated
+   with the name. Click the DOD connection that will be used to communicate with
+   the other RRAS router.
+
+10. After the steps above have been performed on both RRAS servers, select the
+   IPX Routing Summary key, and click the DOD connection that will be used to
+   communicate with the other RRAS router. Right-click the IPX Routing Summary
+   key, and then click Connect.
+
+11. After you've connected, select IPX Routing Summary key, and then the DOD
+   connection that will be used to communicate with the other Steelhead router.
+
+12. Right-click the IPX Routing Summary key, and then click Update Routes.
+
+At this point, Nwlink LAN-to-LAN routing should be successfully installed, and
+full network connectivity is available.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

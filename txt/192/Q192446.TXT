@@ -1,0 +1,64 @@
+DOCUMENT:Q192446  25-JUL-2001  [msnetwork]
+TITLE   :Cannot Quit Syntplpr When You Install MSN on Laptop Computer
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbmsn kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install MSN, The Microsoft Network on a laptop computer with a
+Synaptics TouchPad pointing device installed, you may not be able to quit the
+Syntplpr terminate-and-stay-resident (TSR) program.
+
+CAUSE
+=====
+
+This behavior occurs because the Syntplpr TSR program must be running for the
+Synaptics TouchPad to function properly.
+
+RESOLUTION
+==========
+
+To resolve this issue, do not attempt to quit the Syntplpr TSR program when you
+install MSN. The Syntplpr TSR program does not interfere with the installation
+of MSN.
+
+MORE INFORMATION
+================
+
+The third-party product discussed here is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: msnet msnetwork notebook compaq gateway 2.00 2.50 2.60
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbmsn kbHardware 
+Technology        : kbMSNSearch kbMSN200 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.0,2.5,2.51,2.52,2.6
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

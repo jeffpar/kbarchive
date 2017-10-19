@@ -1,0 +1,57 @@
+DOCUMENT:Q163382  22-DEC-1999  [schedplus]
+TITLE   :XCLN: Macintosh Schedule+ and Exchange Interoperability
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0; :7.5
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+ - Microsoft Schedule+ for the Apple Macintosh, version 7.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Microsoft Schedule+ files are kept on a Microsoft Exchange server, the
+schedules may be viewed and modified by other Microsoft Schedule+ users on both
+the Windows and the Macintosh platforms, if those users have been granted
+permissions to view or modify the schedules. In contrast, if the Microsoft
+Schedule+ files are stored locally, users on the Macintosh platform cannot view
+or modify the Microsoft Schedule+ files on the Windows-based computer, and vice
+versa.
+
+MORE INFORMATION
+================
+
+The Microsoft Exchange Client for the Macintosh, version 5.0 includes Microsoft
+Schedule+, version 7.5 in the same executable. Microsoft Schedule+ for the
+Macintosh does not support OLE automation or the Timex Data Link watch.
+
+Additional query words: Mac Macintosh XCLNSch
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHWMAC kbOSMAC kbScheduleSearch kbSchedule700 kbSchedule750
+Version           : WINDOWS:7.0; :7.5
+Hardware          : MAC
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

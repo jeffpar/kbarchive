@@ -1,0 +1,75 @@
+DOCUMENT:Q147735  06-MAY-2001  [visualc]
+TITLE   :FIX: ClassWizard Quits If Class Twice Derived from CRecord
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbwizard kbMFC kbVC400bug kbVC410bug kbVC420fix kbGrpDSTools kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ 32-bit Edition, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under circumstances similar to the following, ClassWizard may cause an access
+violation:
+
+ - You derive a class, CMyRecordset1, from CRecordset using ClassWizard.
+
+ - You derive another class, CMyRecordset2, from CRecordset using ClassWizard.
+
+ - You replace all occurrences of CRecordset in the .cpp and .h files for
+   CMyRecordset2 with CMyRecordset1
+
+The result is that CRecordset2 will be derived from CRecordset1. When ClassWizard
+is invoked to view CMyRecordset2, an access violation may occur. This problem
+has been verified with both CRecordset and CDaoRecordset.
+
+RESOLUTION
+==========
+
+Leave occurrences of CRecordset in the ClassWizard comments. Particularly, don't
+change:
+
+      //{{AFX_FIELD(CRecordset2, CRecordset)
+
+to:
+
+      //{{AFX_FIELD(CRecordset2, CRecordset1)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++, 32-bit
+Edition, version 4.2.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbMFC kbVC400bug kbVC410bug kbVC420fix kbGrpDSTools kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

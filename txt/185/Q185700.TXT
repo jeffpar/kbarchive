@@ -1,0 +1,217 @@
+DOCUMENT:Q185700  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Remote User-Defined Types
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbVBp600 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic 6.0 allows you to have a User-defined type (UDT) as an argument or
+return type of public properties and methods in an ActiveX code component. This
+article shows some examples of the different ways you can pass or receive a UDT.
+
+MORE INFORMATION
+================
+
+To pass a UDT as an argument, you must declare the UDT as Public in a Public
+class module. You must also use early binding to the UDT. For additional
+information, please see the article listed in the REFERENCES section.
+
+A UDT can only be passed by reference. However, you can assign a UDT to a variant
+and pass the variant by value. This article shows both approaches to passing a
+UDT and how to check the variant to see if it holds the correct UDT type. You
+can also pass an array of UDT's in an argument.
+
+For more information on passing arrays, please see the article listed in the
+REFERENCES section.
+
+When remoting UDTs on Windows NT 4.0 you will need Service Pack 4 for Windows NT
+4.0 if your ActiveX server is an EXE.
+
+Sample Code
+-----------
+
+1. Create a project group with one Standard EXE and one ActiveX DLL project.
+
+2. Change the names in the ActiveX DLL project to the following:
+
+      Project name:  pjxUdtDll
+      Class name:    clsUdtExample
+
+3. Add the following code to the clsUdtExample Class module:
+
+         Option Explicit
+
+         Public Type udtCustomer
+            CustName As String
+            CustID As Integer
+         End Type
+
+         Public Type udtEmployee
+            EmpName As String
+            EmpID As Integer
+         End Type
+
+         Public Sub PassUdtByRef(ByRef cust As udtCustomer)
+         'Receive the UDT as a specific data type.
+            Static i As Integer
+            i = i + 1
+            cust.CustName = StrReverse(cust.CustName)
+            cust.CustID = i
+
+         End Sub
+
+         Public Function ReturnCustUdt() As udtCustomer
+         'Return a UDT as a specific data type.
+            Dim cust As udtCustomer
+            cust.CustID = 99
+            cust.CustName = "Bill"
+            ReturnCustUdt = cust
+         End Function
+
+         Public Function WhichUdt(ByRef Guess As Variant)
+         'Get a UDT stored in a Variant and then check to
+         'see which UDT was passed.
+            If TypeOf Guess Is udtCustomer Then
+               MsgBox "you passed a Customer type"
+            ElseIf TypeOf Guess Is udtEmployee Then
+               MsgBox "you passed a Employee type"
+            Else
+               MsgBox "don't know what you passed"
+            End If
+         End Function
+
+         Public Sub PassUdtByVal(ByVal Emp As Variant)
+         'If you want to pass a UDT by value you must use
+         'use a Variant data type.
+            Static i As Integer
+            If TypeOf Emp Is udtEmployee Then
+               i = i + 1
+               Emp.EmpID = i
+               Emp.EmpName = StrReverse(Emp.EmpName)
+               MsgBox "Emp value in class: " & Str(Emp.EmpID) _
+                & " " & Emp.EmpName
+            Else
+               MsgBox "Unknow type"
+            End If
+          End Sub
+
+4. In the Standard EXE project, create a reference to the pjxUdtDll project. You
+   can do this by selecting References from the Project menu.
+
+5. In the Standard EXE project, add 4 command buttons and one check box to
+   Form1.
+
+6. Add the following code to Form1 in the Standard EXE project:
+
+         Option Explicit
+         Dim obj As pjxUdtDll.clsUdtExample
+         Dim udtCust As pjxUdtDll.udtCustomer
+         Dim udtEmp As pjxUdtDll.udtEmployee
+
+         Private Sub Command1_Click()
+         'Pass the UDT by reference.
+            udtCust.CustID = 99
+            udtCust.CustName = "Bob"
+            obj.PassUdtByRef udtCust
+            MsgBox "Before: CustID = 99 CustName = Bob" _
+             & vbCrLf & "After: CustID = " & udtCust.CustID _
+             & " CustName = " & udtCust.CustName
+         End Sub
+
+         Private Sub Command2_Click()
+         'Get the value from the class.
+            udtCust = obj.ReturnCustUdt
+            MsgBox "CustID = " & udtCust.CustID _
+             & " CustName = " & udtCust.CustName
+         End Sub
+
+         Private Sub Command3_Click()
+         'Pass the type as a variant.
+            Dim vTemp As Variant
+            If Check1 Then
+               vTemp = udtCust
+            Else
+               vTemp = udtEmp
+            End If
+            obj.WhichUdt vTemp
+         End Sub
+
+         Private Sub Command4_Click()
+         'Pass the type in a variant by value.
+            Dim vTemp As Variant
+            udtEmp.EmpID = 99
+            udtEmp.EmpName = "Bill"
+            vTemp = udtEmp
+            'You can pass the Variant or the UDT to the method.
+            'Because the method takes a Variant as an argument
+            'it will copy the UDT into the Variant.
+            obj.PassUdtByVal udtEmp 'or obj.PassUdtByVal vTemp
+            MsgBox "Emp value in Form: " & Str(udtEmp.EmpID) _
+             & " " & udtEmp.EmpName
+         End Sub
+
+         Private Sub Form_Load()
+            Check1.Caption = "Pass udtCustomer to WhichUdt method"
+            Command1.Caption = "Pass UDT to Method"
+            Command2.Caption = "Receive UDT from Method"
+            Command3.Caption = "Pass UDT in Variant"
+            Command4.Caption = "Pass UDT in Variant ByVal"
+            Set obj = New pjxUdtDll.clsUdtExample
+         End Sub
+
+7. Save and run the project group. Make sure that Project1 is the start up
+   project.
+
+8. Try clicking the different buttons. Also, try selecting and clearing the
+   check box when you click the "Pass UDT in Variant" button.
+
+REFERENCES
+==========
+
+For more information on early binding, please see the following articles in the
+Microsoft Knowledge Base:
+
+   Q184898 : PRB: Can't Use Late Binding When Server Method Uses UDT
+
+   Q186423 : HOWTO: Return and Assign Arrays with Visual Basic 6.0
+
+   Q187922 : PRB: Passing a UDT To Or From an ActiveX EXE may Fail on NT
+
+(c) Microsoft Corporation 1998. All Rights Reserved.
+Contributions by Brian Combs, Microsoft Corporation
+
+
+Additional query words: kbActiveX kbDSupport kbdse kbVBp kbVBp600
+
+======================================================================
+Keywords          : kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

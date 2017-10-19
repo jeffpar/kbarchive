@@ -1,0 +1,227 @@
+DOCUMENT:Q99381  08-NOV-1999  [win95x]
+TITLE   :Trace Access Pack for Windows 3.0 and 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:kbenable win31 kbEnableSight kbEnableMove kbEnableHear kbEnableLearn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+Access Pack for the Microsoft Windows operating system is a software
+utility that provides features which make it easier for users with
+movement or hearing disabilities to use Microsoft Windows.
+
+The latest version of Access Pack for Microsoft Windows replaces the
+version that shipped on the Windows 3.0 Supplemental Driver Library.
+
+This article is divided into the following subsections:
+
+ - Product Overview - Describes Access and its development.
+
+ - Functions - Provides a brief description of each function provided in this
+   package.
+
+ - Access Pack and Government Regulations - Describes the Government regulations
+   that the package meets or exceeds.
+
+ - Specifications - Describes the product contents.
+
+ - System Requirements - Describes the minimum configuration that you need to
+   use this product.
+
+ - Ordering Information - Describes ordering options for Access Pack.
+
+PRODUCT OVERVIEW
+
+The Microsoft Windows family of products is designed to make computers
+easier to use for everyone, including those users with disabilities.
+Access Pack for Microsoft Windows is a set of utilities that make it
+easier for users with motion-related disabilities to use the keyboard
+and mouse. Users who have hearing disabilities can use Access Pack to
+configure their system to provide visual feedback, rather than sounds.
+
+Note: A machine with Access Pack installed can be used by those
+individuals who require its additional features and those who do not.
+
+Access Pack for Microsoft Windows was developed through a cooperative
+effort with the Trace Research and Development (R&D) Center at the
+University of Wisconsin at Madison, with funding from the National
+Institute on Disability and Rehabilitation Research.
+
+FEATURES
+
+Access Pack for Microsoft Windows contains the following features that
+make Windows systems more accessible for those with motion and
+hearing-related disabilities.
+
+These features can be used alone or in combination to best suit your
+needs and environment. The features can also be customized to allow
+you to be most productive. In addition, once the Access Pack has been
+installed, you can access any feature without requiring special
+assistance. When all features are turned off, the computer uses its
+default configuration, and Access Pack is invisible if you do not
+require its functionality.
+
+StickyKeys
+----------
+
+Many software programs require you to press two or three keys
+simultaneously. This is impossible if you type with a headstick or
+mouthstick. StickyKeys allows you to press one key at a time and
+instructs Windows to respond as if the keys had been pressed
+simultaneously.
+
+SlowKeys
+--------
+
+The sensitivity of the keyboard can be a major problem, especially if
+you strike keys accidentally. SlowKeys instructs Windows to disregard
+keystrokes that are not held down for a certain period of time.
+
+RepeatKeys
+----------
+
+Most keyboards allow you to repeat a key just by holding it down. If
+you can't lift your fingers off the keyboard quickly enough, this can
+result in unintentionally repeated characters. RepeatKeys lets you
+adjust the repeat rate or disable it altogether.
+
+BounceKeys
+----------
+
+You may "bounce" keys, resulting in double strokes of the same key or
+other similar errors. BounceKeys instructs Windows to ignore
+unintended keystrokes.
+
+MouseKeys
+---------
+
+This feature lets you use the keyboard to control the cursor as a
+mouse would. You can thus select menus and commands, and perform other
+convenient mouse functions, from the keyboard. MouseKeys also helps to
+give you finer control than can a standard mouse can. Note that a
+mouse is not required for this feature to work.
+
+ToggleKeys
+----------
+
+ToggleKeys provide audio cues (high and low beeps) to tell you whether
+a toggle key is active or inactive. It applies to the CAPS LOCK, NUM
+LOCK and SCROLL LOCK keys.
+
+SerialKeys
+----------
+
+This feature, in conjunction with a communications aid interface
+device, allows you to use alternative input devices to control the
+computer as if you were using a standard keyboard and mouse.
+
+SoundSentry
+-----------
+
+Windows emits a beep when it wants to signal you, but this is not useful
+if
+you have a hearing impairment or you work in a noisy environment.
+SoundSentry tells Windows to send a visual cue, such as a blinking title
+bar or screen flash, in addition to a beep. You can then see the message
+that may not have been heard.
+
+TimeOut
+-------
+
+TimeOut turns off Access Pack's functionality after the system has
+been idle for a certain period of time, and returns the system to its
+default configuration. This feature is useful on machines shared by
+multiple users.
+
+ACCESS PACK AND GOVERNMENT REGULATIONS
+
+With Access Pack for Windows and third-party products that make Windows
+accessible to people with visual impairments and Microsoft's documentation
+in electronic form, Windows meets recommendations in the Government
+Services Administration guidelines relating to software accessibility.
+These guidelines were developed in response to section 508 of the
+Rehabilitation Act. This law was written to ensure accessibility for
+government employees with disabilities.
+
+Access Pack for Windows can also help employers accommodate individuals
+with disabilities, as required under the Americans with Disabilities Act.
+
+SPECIFICATION
+
+Access Pack consists of three keyboard drivers and a mouse driver that
+replace the standard Windows drivers. In addition, the package
+includes the following:
+
+ - The Access Utility (ACCESS.EXE) for controlling and customizing Access Pack
+   functions
+
+ - Online documentation in both Microsoft Windows Write and formatted text file
+   formats
+
+ - Online Help
+
+Access Pack comes with the following files:
+
+   Filename       Contents
+   -----------------------------------------------------------------
+
+   ACCESS.EXE     The Access Utility for customizing settings and
+                  viewing online help
+   ACCESSU.DLL    Access Pack library
+   ACCESS.TXT     Documentation in Windows Write format
+   ACCESS.WRI     Documentation as ASCII text format
+   ACCESS30.HLP   Help file for Windows 3.0
+   ACCESS31.HLP   Help file for Windows 3.1
+   IBMMKEYS.BMP   MouseKeys chart used by online help
+   SKWIN.BMP      SerialKeys chart used by online help
+   AP-KBD.DRV     Access Pack driver for standard keyboards
+   AP-KBDHP.DRV   Access Pack driver for HP keyboards
+   AP-KBDOL.DRV   Access Pack driver for Olivetti keyboards
+   AP-MOU.DRV     Access Pack driver for Microsoft or IBM mouse
+   INSTALL.TXT    Installation instructions
+   OEMSETUP.INF   Used for installing Access Pack
+   LICENSE.TXT    Windows Driver Library license agreement
+
+SYSTEM REQUIREMENTS
+
+The Access Pack software is fully compatible with most Microsoft
+Windows 3.0 or 3.1 systems and with keyboards supported by Windows 3.0
+or 3.1. It can also be used with a Microsoft Mouse, an IBM(R) PS/2(R)
+mouse or no mouse.
+
+ORDERING INFORMATION
+
+Access Pack for Microsoft Windows is available from Microsoft Product
+Support Services (PSS) by calling Microsoft Product Support Services at
+(425) 637-7098. Customers who have hearing disabilities can call the text
+telephone (TTY) number at (425) 635-4948. Customers outside of the United
+States should contact the Microsoft subsidiary in their country.
+
+Additional query words: appnote 3.00 3.00a 3.10 MISC ACCP.EXE deaf handicap disability disabilities accessibility stickeykeys TTY
+
+======================================================================
+Keywords          : kbenable win31 kbEnableSight kbEnableMove kbEnableHear kbEnableLearn 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

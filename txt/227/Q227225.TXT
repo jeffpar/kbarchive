@@ -1,0 +1,81 @@
+DOCUMENT:Q227225  14-NOV-2000  [word97]
+TITLE   :WD97: TOC Shows Backslash Instead of Quotation Marks
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you create a table of contents entry field (that is, a TC field) that
+contains quoted material at the end of the TC field, the table of contents shows
+the entry concluding with a backslash (\) rather than a set of quotation marks
+as its final character.
+
+This behavior occurs when the "Straight quotes" with "smart quotes" option is not
+selected (on the Tools menu, point to AutoCorrect, click the AutoFormat As You
+Type tab, and look under "Replace as you type").
+
+For example, the following item in the document
+
+Use of the Phrase "The quick brown fox jumps over the lazy dog."
+
+appears in the TC field as
+
+{TC "Use of the Phrase \"The quick brown fox jumps over the lazy dog.\" "}
+
+and appears in the table of contents as:
+
+Use of the Phrase "The quick brown fox jumps over the lazy dog.\
+
+WORKAROUND
+==========
+
+Place a period between the final two sets of quotation marks.
+
+{TC "Use of the Phrase \"The quick brown fox jumps over the lazy dog.\"."}
+
+MORE INFORMATION
+================
+
+The backslashes in the field indicate to Word that the quotation marks are to
+appear in the table of contents and that they do not indicate the end of the
+material. If the backslashes are not present, the text that appears in the table
+of contents ends with the second set of quotation marks. In the above example,
+
+Use of the Phrase
+
+would appear in the table of contents.
+
+Additional query words: table of contents entry winword backslash slash missing quotes quotation mark incorrect
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

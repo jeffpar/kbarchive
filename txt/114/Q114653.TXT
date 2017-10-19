@@ -1,0 +1,104 @@
+DOCUMENT:Q114653  24-SEP-1999  [win3x]
+TITLE   :Err Msg: Failure: PROTOCOL.INI Does Not Have a DRIVERNAME=
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the NET START command is executed, you receive one or more of the following
+error messages
+
+   Failure: PROTOCOL.INI does not have a DRIVERNAME=xxx.
+
+   Failure: Protocol Manager did not accept xxx.
+
+   Failure: NDIS environment invalid. Driver not loaded.
+
+   Error loading device driver xxx.
+
+   Error 7306: The driver failed to initialize.
+
+   xxx was not loaded.
+
+   Error 7321: Network card drivers failed to load.
+
+where "xxx" is your network card driver name (for example, EXP16 or EXP16.DOS).
+
+CAUSE
+=====
+
+If you install a second network interface card (NIC) of the same brand and model
+as the original and then load an NDIS 2 (real-mode) driver and protocol for this
+card, you encounter problems if the initial adapter is using an NDIS 3
+(protected-mode) driver and protocol.
+
+Because an NDIS 2 driver must run in real mode, it is initialized before Windows
+for Workgroups 3.11 is loaded. The adapter binding with the NDIS 2 driver
+becomes the first physical adapter. To complete the binding process, the NDIS 2
+driver looks in the PROTOCOL.INI file for a DriverName=FirstDriverInstance$
+setting. Because an NDIS 3 driver was installed first, no such setting exists
+since NDIS 3 drivers do not require this setting.
+
+RESOLUTION
+==========
+
+To avoid the above error messages, perform the following steps:
+
+1. Choose the Network Setup icon in the Network group.
+
+2. Choose the Drivers button.
+
+3. Remove both network card drivers.
+
+4. Choose Close, then choose OK. (Allow Windows to reboot the computer when you
+   are prompted to do so.)
+
+5. Restart Windows.
+
+6. Choose the Network Setup icon in the Network group.
+
+7. Choose the Drivers button.
+
+8. Add the network card driver for your network card.
+
+9. Set up this card with the NDIS 2 driver and protocol.
+
+10. Add the second instance of the network card driver for your network card.
+
+11. Set up this card with the NDIS 3 driver and protocol.
+
+12. Choose Close, then choose OK. (Allow Windows to reboot the computer when you
+   are prompted to do so.)
+
+Additional query words: 3.11 errors ndis2 ndis3
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

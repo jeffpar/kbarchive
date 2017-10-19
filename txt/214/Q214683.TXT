@@ -1,0 +1,80 @@
+DOCUMENT:Q214683  14-NOV-2000  [word97]
+TITLE   :WD97: Duplex Printing Does Not Work with Objects on Page
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document that contains objects on the page and choose duplex
+printing, the document does not duplex print. This happens when you print the
+document to a LaserJet printer in PCL mode.
+
+CAUSE
+=====
+
+When a page contains objects, Word automatically enables the printer's "Print
+TrueType as graphics" option. This change requires a reset of the printer, and
+the reset takes place between pages. Thus it forces the next page onto a new
+sheet of paper, rather than on the back of the first page.
+
+WORKAROUND
+==========
+
+To work around this problem, turn on the printer's "Print TrueType as graphics"
+option. This ensures that this option is always selected; therefore the printer
+does not have to be reset while printing.
+
+To turn on this option, follow these steps:
+
+1. On the Start menu, point to Settings, and then click Printers.
+
+2. Click the appropriate PCL HP LaserJet printer icon.
+
+3. On the File menu, click Properties.
+
+4. In the Properties dialog box, click the Fonts tab.
+
+5. In the Fonts dialog box, under TrueType fonts, select "Print TrueType as
+   graphics" and click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+This problem does not occur in Word 2000.
+
+Additional query words: logo
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

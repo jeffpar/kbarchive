@@ -1,0 +1,105 @@
+DOCUMENT:Q174908  01-JUL-2002  [accother]
+TITLE   :ODE97: Removing MS Office Products May Unregister MS Graph
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+On a Microsoft Windows NT 4.0 workstation, if you run a custom application that
+was created by using the Microsoft Office 97 Developer Edition Tools (ODE) Setup
+wizard and that application includes Microsoft Graph 8.0, when you open a form
+or report containing a graph, you may receive the following error message
+
+   The dynamic link library MSO97.DLL could not be found in the specified path
+   <'Path to Microsoft Office Directory'>; <'Path to Microsoft Windows
+   System Directory'>.
+
+followed by:
+
+   The OLE object isn't registered. The object may be calling an application
+   that isn't installed. To register the application, reinstall it.
+
+CAUSE
+=====
+
+You may have recently removed an application whose Setup program unregistered
+Microsoft Graph 8.0. Running the Remove All command on any of the following
+products may cause this error message:
+
+   Microsoft Access 97
+   Microsoft Excel 97
+   Microsoft PowerPoint 97
+   Microsoft Word 97
+   Microsoft Office 97
+
+RESOLUTION
+==========
+
+Re-install your custom ODE application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 97 Developer
+Edition Tools.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a Microsoft Access database that includes a form that has a Microsoft
+   Graph 8.0 object.
+
+2. Using the Microsoft Office 97 Developer Edition Tools (ODE) Setup wizard,
+   create a custom application that includes the database and Microsoft Graph
+   8.0.
+
+3. On another computer with a clean installation of Microsoft Windows NT
+   Workstation 4.0, do a typical installation of Microsoft Office 97.
+
+4. Install the custom ODE application that you created in Step 2 on the computer
+   that you used in step 3.
+
+5. Run Microsoft Office 97 Setup again and do a Remove All.
+
+6. Open the custom application and view the form containing the graph object.
+
+   Note that you receive the error messages mentioned in the "Symptoms" section.
+
+Additional query words: Chart the dynamic link library mso97 dll could not be found in the specified path
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

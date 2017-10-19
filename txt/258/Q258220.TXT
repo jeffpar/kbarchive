@@ -1,0 +1,59 @@
+DOCUMENT:Q258220  30-APR-2000  [exchange]
+TITLE   :XFOR: Migration Wizard Does Not Support cc:Mail Database 7
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbtool exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Exchange Server Migration Wizard does not support Lotus cc:Mail DB7
+postoffices. Lotus cc:Mail Mobile (cc:Mobile) versions 2.x and 6.x both use this
+database format. As a result, the Migration Wizard cannot import this data into
+the Exchange Server computer or a .pst file.
+
+MORE INFORMATION
+================
+
+ - The DB6 postoffice is used by earlier cc:Mail clients and postoffices.
+
+ - The DB7 postoffice is used exclusively for cc:Mobile postoffices (local
+   copies of a user's mailbox on another postoffice).
+
+ - The DB8 postoffice is the current standard postoffice for cc:Mail version 6
+   and later.
+
+You can copy data from DB7 postoffices back to an existing DB8 postoffice, and
+then migrate from there.
+
+Additional query words: XMRP
+
+======================================================================
+Keywords          : kbtool exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

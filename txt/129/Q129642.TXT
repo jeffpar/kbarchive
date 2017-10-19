@@ -1,0 +1,61 @@
+DOCUMENT:Q129642  10-FEB-2000  [foxpro]
+TITLE   :Buffering Must Be Handled Manually in DBC Rules/Triggers
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you choose to use update, delete, or insert triggers within a Visual FoxPro
+database container (DBC), buffering will not be enabled automatically. You must
+use the =CURSORSETPROP() function to manually enable the type of buffering
+desired.
+
+MORE INFORMATION
+================
+
+This behavior is by design. Because automatic implementation of buffering could
+cause adverse consequences in some situations, buffering will be set to 1 (no
+buffering).
+
+Normally, you would choose to implement row buffering on the parent table, and
+table buffering on the child table involved in the relationship.
+
+REFERENCES
+==========
+
+For more information on database design and buffering, refer to the Microsoft
+Visual FoxPro "Developer's Guide" or to the Microsoft Visual FoxPro
+"Professional Features Guide."
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

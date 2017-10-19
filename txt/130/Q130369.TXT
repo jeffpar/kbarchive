@@ -1,0 +1,66 @@
+DOCUMENT:Q130369  18-DEC-2000  [win95x]
+TITLE   :Cannot See Highlight in Menus After Upgrade
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows 95, you may experience problems with the visibility of
+certain screen elements (such as selected commands on a menu).
+
+CAUSE
+=====
+
+Windows 95 inherits the color scheme from the previous version of Windows.
+However, the default menu color is changed to gray (instead of white). If the
+previous color scheme uses gray as the color for selected menu items, there is
+no difference in appearance between selected and non-selected items on a menu.
+
+RESOLUTION
+==========
+
+To correct this situation, follow these steps:
+
+1. Use the right mouse button to click the desktop and then click Properties on
+   the menu that appears.
+
+2. Click the Appearance tab.
+
+3. Click a scheme in the Color Scheme box, or click Selected Items in the Item
+   box and then click another color.
+
+4. Click OK.
+
+Additional query words: highlight
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

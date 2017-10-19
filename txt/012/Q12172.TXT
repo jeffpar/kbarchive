@@ -1,0 +1,63 @@
+DOCUMENT:Q12172  09-JUN-1999  [win16sdk]
+TITLE   :HOWTO: How to Change a Window's Parent
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbSDKPlatform kbWndw kbWndwProp
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information describes how to change a window's parent in Windows
+versions 2.x and 3.x.
+
+The correct way to do this in Windows versions 2.x is to destroy the child and
+then re-create the child with the proper handle to the parent. The following
+steps can be used to do this:
+
+1. Perform a ShowWindow(hWnd, HIDE_WINDOW) call.
+
+2. Change the handle to the child using the SetWindowWord function.
+
+3. Perform a ShowWindow(hWnd, SHOW_WINDOW) call.
+
+NOTE: Microsoft does not recommend that this method and does not guarantee it to
+work in future releases of Windows.
+
+In Windows versions 3.x, the SetParent function should be used to set the parent
+of a window.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbWndw kbWndwProp 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

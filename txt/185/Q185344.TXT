@@ -1,0 +1,113 @@
+DOCUMENT:Q185344  31-JUL-2001  [sms]
+TITLE   :SMS: Service Pack Upgrades Not Automatic for RAS Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbConfig kbsmsUtil smssetup smsconfig smsutil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 clients that dial in to the network by means of RAS will not upgrade
+to a later Systems Management Server service pack or receive other Systems
+Management Server file updates.
+
+CAUSE
+=====
+
+When a user logs on through RAS, Smsrun16.exe does not connect to a logon server
+during the logon process. This is because SMSRUN16 typically runs from the load
+line of the client's Win.ini file, which starts well before a RAS session is
+established.
+
+When the client uses RAS to dial in and calls the Runsms.bat or Smsls.bat batch
+files from its logon script, RUNSMS and SMSLS alter the Sms.ini file to put the
+client in "Upgrade Mode." However, by the time this occurs, SMSRUN16 has
+finished processing. Therefore, the client will not connect to a logon server to
+perform the upgrade.
+
+WORKAROUND
+==========
+
+To work around this problem, call Smsrun16.exe in the client's logon script
+after the logon process is complete. This restarts Smsrun16.exe, which will then
+parse the Sms.ini, see the UPGRADE flag, and perform the upgrade.
+
+MORE INFORMATION
+================
+
+SMSRUN16 functions in this way to prevent large Systems Management Server client
+file transfers through the RAS session.
+
+Page 95 of the Systems Management Server BackOffice Resource Guide provides
+further information on the functionality of SMSRUN16.
+
+If the need exists to upgrade a client that will never log on locally (as opposed
+to RAS), a convenient workaround is to modify the logon script to perform a
+check for a RAS connection, and, based upon the check, call SMSRUN16 a second
+time to perform the upgrade.
+
+For example, you can check for the existence of a dummy file, or use CHECKRAS
+from the Back Office Resource Kit. For more information on this method, see the
+following article in the Microsoft Knowledge Base:
+
+   Q185346 SMS: Logon Script Takes a Long Time over RAS or Slow Connection
+
+Example Logon Script Addition 1
+-------------------------------
+
+   call %0\..\smsls.bat
+   if exist %windir%\ras.txt goto RAS
+   goto END
+   :RAS
+   c:\ms\sms\bin\smsrun16
+   :END
+
+Example Logon Script Addition 2
+-------------------------------
+
+   echo Checking for existence of Checkras.exe
+   if exist %windir%\checkras.exe goto yes
+   copy \\server\netlogon\checkras.exe %windir%
+   :yes
+   %windir%\checkras
+   if errorlevel 1 goto RAS
+   goto end
+   :RAS
+   c:\ms\sms\bin\smsrun16
+   :END
+
+The modification to the script should only be temporary; in other words, only
+when the RAS clients need to be updated with a service pack, or specific 'fix'
+from the logon server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbConfig kbsmsUtil smssetup smsconfig smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

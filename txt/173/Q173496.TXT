@@ -1,0 +1,73 @@
+DOCUMENT:Q173496  07-JAN-2000  [exchange]
+TITLE   :XFOR: Error 2140 When Starting the Internet Mail Service
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Microsoft Exchange Internet Mail Service (IMS), the following
+error may be displayed:
+
+   Could not start the Microsoft Exchange Internet Mail Service on.
+   Error 2140: An internal Windows NT error occurred.
+
+In the Windows NT Server Event Viewer Application log, you may see the
+following:
+
+   Event id: 4143
+   Source: MSExchangeIMC
+   Type: Error
+   Category: Initialization/Termination
+   Description:
+   The Internet Mail Service service account is not an administrator account. In
+   order to provide SSL support, the service account must be an administrator
+   account.
+
+CAUSE
+=====
+
+The Microsoft Exchange Service Account is not an Administrator or part of the
+Administrator group.
+
+RESOLUTION
+==========
+
+Add the Service Account to the Local or Domain Administrator group.
+
+MORE INFORMATION
+================
+
+This by product design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

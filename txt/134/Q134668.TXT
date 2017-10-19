@@ -1,0 +1,63 @@
+DOCUMENT:Q134668  08-NOV-1999  [pcmail]
+TITLE   :PC NTMMTA: Monitor Option Can Be Called from a Command Line
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Monitor option in the Microsoft Mail Multitasking MTA for Windows NT (NT
+MMTA) can be called from the command line. As a result, several Monitor windows
+can be opened from a batch file.
+
+MORE INFORMATION
+================
+
+Monitor [external/dispatch] <\\computer_name> <instance_name>
+
+where:
+External/Dispatch - The type of service
+\\computer_name - Name of the Windows NT Server running the service
+instance_name - Name of the instance that should be monitored
+
+For example, Monitor external \\machine1 ammta1
+
+Notes:
+
+ - If you want to monitor specific instances regularly, create a batch file
+   containing the preceding command, and place it on your Windows NT desktop or
+   in the Start folder.
+
+ - MONITOR.EXE is located in the \WINNT35 directory, by default.
+
+Additional query words: 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

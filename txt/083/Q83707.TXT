@@ -1,0 +1,72 @@
+DOCUMENT:Q83707  06-DEC-1999  [win95x]
+TITLE   :Running Productivity Pack Version 1.0 in Windows Version 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Productivity Pack version 1.0 was designed specifically for
+Microsoft Windows version 3.0. To run the Productivity Pack with the Microsoft
+Windows operating system version 3.1, you need to obtain the updated version
+designed for Windows 3.1; otherwise, you may experience compatibility problems.
+In addition, much of the information in Learning Windows is irrelevant in
+Windows 3.1 because of the extensive changes in this version of Windows.
+
+For information about obtaining the updated Microsoft Productivity Pack, contact
+your software vendor or call Microsoft Sales Information Center (MSIC) at (800)
+426-9400. If you are outside the United States, contact the Microsoft subsidiary
+for your area.
+
+
+MORE INFORMATION
+================
+
+You may experience the following problems if you run Productivity Pack version
+1.0 in Windows 3.1:
+
+ - Interactive sessions may generate a message that implies you did not follow
+   the steps correctly, even if you follow the steps exactly. The box that
+   contains this message overlaps the OK button; therefore, the only available
+   option is to exit that section by pressing CTRL+F1.
+
+ - When you run lesson 2, "Getting Help," from the Learning Windows portion of
+   Productivity Pack 1.0, the program starts, proceeds through the demonstration
+   of the help system, and generates the following error message:
+
+   Help topic does not exist!
+
+   If you attempt to recover from this message by choosing the OK button and
+   pressing the SPACEBAR to continue, the system hangs.
+
+Additional query words: 3.0 3.00 3.10 wpp3.1 1.00 wpp1.00
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

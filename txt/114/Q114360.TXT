@@ -1,0 +1,67 @@
+DOCUMENT:Q114360  21-NOV-1999  [msdos]
+TITLE   :Modifying Configuration Files When Upgrading from Novell DOS 7
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.21
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.21 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade from Novell DOS 7 (without compression installed) to MS-DOS
+6.21, you receive the following error message at the beginning of Setup:
+
+   Your CONFIG.SYS file contains commands that are not valid MS-DOS commands.
+   You can have Setup create new AUTOEXEC.BAT and CONFIG.SYS files, or you can
+   have Setup disable any invalid commands it finds in your current AUTOEXEC.BAT
+   and CONFIG.SYS files. If you choose to have Setup create new files, your
+   original files will be renamed and stored in the root directory of your
+   startup disk.
+
+You have the following two options:
+
+ - Create New AUTOEXEC.BAT And CONFIG.SYS
+
+ - Modify Original Files
+
+If you choose Modify Original Files, Setup updates the files to load MS-DOS
+device drivers but does not remove all the Novell DOS device drivers. This could
+result in your system trying to load more than one expanded memory manager or
+disk cache.
+
+WORKAROUND
+==========
+
+To work around this problem, choose Create New AUTOEXEC.BAT And CONFIG.SYS when
+you install MS-DOS 6.21 over Novell DOS 7 or manually update your configuration
+files using MS-DOS Editor.
+
+Additional query words: netware 7.0 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621
+Version           : MS-DOS:6.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

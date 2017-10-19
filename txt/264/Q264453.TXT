@@ -1,0 +1,71 @@
+DOCUMENT:Q264453  07-MAY-2002  [homegame]
+TITLE   :FS2000: How to Control One Engine on a Multiple Engine Aircraft
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 Professional Edition, version 1.0 
+ - Microsoft Flight Simulator 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to individually control engines when you use a
+multiple engine aircraft in Microsoft Flight Simulator 2000.
+
+MORE INFORMATION
+================
+
+In Flight Simulator 2000, you control all of the engines on an aircraft by
+default. If you want to control a particular engine, you can give that engine
+the control or focus by pressing the following key combination
+
+   E+x
+
+where x is a number (1 through 4) that indicates the engine that you want to
+control.
+
+If you set the focus to control one engine and you want to control more than one
+engine, press and hold down the E key while you press the number key for each
+engine that you want to control.
+
+For example, if you want to control both engines on a two-engine aircraft, press
+the following key combination:
+
+   E+1,2
+
+NOTE: If you are experiencing engine related issues in Flight Simulator 2000,
+download and install the Flight Simulator 2000 Update from the following
+Microsoft Web site:
+
+   http://www.microsoft.com/games/fs2000/downloads_fsupdate.htm
+
+Additional query words: msgame fltsim2k fsim2k
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim2000
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

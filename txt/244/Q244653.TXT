@@ -1,0 +1,70 @@
+DOCUMENT:Q244653  06-AUG-2002  [sms]
+TITLE   :SMS: License Metering Messages w/Windows 98/95 Client Computers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork kbClient kbsms200 kbsms200bug kbNetMon kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you shut down your -Microsoft Windows 95-based or Microsoft Windows
+98-based computer that has the Systems Management Server (SMS) version 2.0
+License Metering client agent installed, you may receive the following 9202
+status message for the LICENSE_METERING component in the SMS Administrator
+console:
+
+   The software metering client on the computer "computer name" (user "user
+   name") encountered an error and is performing an abnormal shut down.
+
+CAUSE
+=====
+
+This problem can occur on a saturated LAN or WAN, or when the NetBEUI protocol
+is being used. SMS only supports license metering over TCP/IP and IPX/SPX.
+
+WORKAROUND
+==========
+
+To work around this problem, improve network utilization to eliminate saturation
+and verify that the license metering clients have TCP/IP or IPX/SPX installed as
+their default protocol.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbClient kbsms200 kbsms200bug kbNetMon kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

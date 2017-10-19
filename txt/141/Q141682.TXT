@@ -1,0 +1,164 @@
+DOCUMENT:Q141682  22-APR-2001  [macsys]
+TITLE   :How to Change Memory Allocations for Macintosh Programs
+PRODUCT :Microsoft Tips for the Macintosh System
+PROD/VER:MACINTOSH:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Apple Macintosh System Software 
+-------------------------------------------------------------------------------
+
+NOTE: This article applies to Mac OS versions earlier than Mac OS X (Mac OS 9.1 and earlier).
+
+SUMMARY
+=======
+
+On a Macintosh computer, you can manually adjust the amount of memory the system
+allocates to a program. However, the amount of memory that the program actually
+gets depends on several factors. One of these factors is the amount of memory
+available in the largest unused block. If the system is low on memory in the
+largest unused block, the program may not start or it may quickly run out of
+memory when you try to open a file or perform actions such as copying or pasting
+data.
+
+MORE INFORMATION
+================
+
+Programs on a Macintosh have two memory settings that can be adjusted: Minimum
+size and Preferred size.
+
+The Minimum size setting indicates the smallest amount of memory that will be
+requested by the program when it is started. If the largest unused block of free
+System memory is less than the setting for the program's Minimum size, the
+program will not start.
+
+The Preferred size setting indicates the total amount of memory requested by the
+program. The system will give as much of the largest unused block to the program
+as it can, up to the amount specified for the program's Preferred size.
+
+In addition to preferred and minimum memory sizes, programs have a third memory
+requirement called "suggested size." Suggested size is a number that is set by
+the developers of your program and cannot be adjusted. Suggested size is the
+amount of memory that the program developers felt the program would run best
+with: you should always try to set the Preferred size to a number at least as
+large as the suggested size.
+
+To better understand the differences, see the following examples.
+
+   Example 1
+---------
+
+   Minimum size: 2048K
+   Preferred size: 4096K
+   Largest unused block of System memory before starting program: 1800K
+
+   In this case, the program will not start because the largest unused block of
+   free system memory is less than the minimum size for the program.
+
+   Example 2
+---------
+
+   Minimum size: 2048K
+   Preferred size: 4096K
+   Largest unused block of system memory before starting program: 3000K
+
+   In this case, the program should start, but it will only be allocated roughly
+   3000K of memory. It will try to get as much as it can, but it can only get up
+   to the amount in the largest unused block of system memory.
+
+   Example 3
+---------
+
+   Minimum size: 2048K
+   Preferred size: 4096K
+   Largest unused block of System memory before starting program: 8000K
+
+   In this case, the program should start, and it should get all of the 4096K
+   requested of the system. It probably won't be using all of this 4096K,
+   though, as there is usually quite a bit of extra room for your personal data
+   files to be loaded into memory by your program.
+
+Note, in all cases, the largest unused block of system memory may be much lower
+than you think because of memory fragmentation. This article will not discuss
+memory fragmentation. However, note that to clear up most problems with memory
+fragmentation, shut down all running programs and restart your computer.
+
+How to Determine Unused System Memory and Program Memory Requirements
+---------------------------------------------------------------------
+
+In order to configure memory allocations for various Macintosh programs, you must
+know where the memory settings are located.
+
+To determine the largest unused block of system memory, click About This
+Macintosh on the Apple menu.
+
+   NOTE: If you do not see "About This Macintosh", but instead see "About
+   <program name>", then click "Hide <program name>" on the
+   Application menu and then repeat click About this Macintosh on the Apple menu
+   again.
+
+In the About This Macintosh window, you should see the version number of the
+System Software. You should also see the amount of memory taken up by the
+System, a list of currently running programs, the amount of memory allocated to
+each program, and a number for the largest unused block of system memory. If the
+sum of all of these memory amounts is much less than the number that is shown
+for Total Memory, you probably are running into a situation of memory
+fragmentation.
+
+To set the memory requirements for your program, do the following:
+
+1. If your program is running, save any of your files and quit the program.
+
+2. Locate the icon for your program on your hard drive and click once on it to
+   select it.
+
+   NOTE: You must locate the actual program icon rather than an alias for the
+   program (you cannot do the next steps from the icon for the alias).
+
+3. With the program icon selected, click Get Info on the File menu.
+
+4. In the "<program name> Info" window, click the edit box for either the
+   Minimum size or the Preferred size, delete the current number, and enter the
+   new amount.
+
+5. After you have made changes to either the minimum size or the preferred size,
+   or both, close the window and restart your program.
+
+You do not have to restart your computer for the above changes to take effect.
+
+For additional information about Memory Requirements on a Macintosh, please see
+the following article(s) in the Microsoft Knowledge Base:
+
+   Q127084 Power Mac Applications Require Less RAM with Virtual Memory
+
+   Q120506 How Virtual Memory Works on a Power Macintosh
+
+   Q139406 MXL5: Macintosh System Memory Requirements
+
+
+Additional query words: mac powermac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbMSNonProductSearch
+Version           : MACINTOSH:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

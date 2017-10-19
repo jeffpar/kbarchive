@@ -1,0 +1,65 @@
+DOCUMENT:Q124660  17-DEC-2000  [win95x]
+TITLE   :Paradox Err Msg: "The File WINTUTOR.EXE Could Not Be Found"
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the Getting Around In Paradox tutorial in Paradox version
+5.0, you receive the following error message:
+
+   Interactive Tutors. The file Wintutor.exe could not be found.
+
+CAUSE
+=====
+
+The WINTUTOR.EXE tutorial application that is included with Microsoft Windows
+version 3.1 is not included with Microsoft Windows 95. This error should occur
+only on computers that have a clean installation of Windows 95.
+
+RESOLUTION
+==========
+
+Paradox will function correctly with the exception of the tutorial. If you want
+to run the tutorial, contact the program's vendor about receiving an upgrade to
+a newer version.
+
+
+MORE INFORMATION
+================
+
+Paradox is manufactured by Borland International, Inc., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3rdparty err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

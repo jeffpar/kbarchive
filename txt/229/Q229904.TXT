@@ -1,0 +1,104 @@
+DOCUMENT:Q229904  18-JUN-2002  [visualc]
+TITLE   :PRB: CAxWindow Members Can Cause a Memory Leak
+PRODUCT :Microsoft C Compiler
+PROD/VER::3.0,6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbATL kbCOMt kbCtrl kbVC600 kbATL300 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL) 3.0, included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CAxWindow CreateControl() and AttachControl() functions may leak memory if
+not used correctly.
+
+CAUSE
+=====
+
+The following two techniques of creating ActiveX controls on composite controls
+(or any window supporting ATL containment) can result in memory leaks.
+
+   //Intialize ATL control containment.
+   AtlAxWinInit();
+
+   //Create container window.
+   HWND hWndCont = m_ax.Create(m_hWnd, rect, 0, WS_CHILD | WS_VISIBLE);
+
+   //Create & activate ActiveX control
+   HRESULT hr = m_ax.CreateControl("MSCAL.Calendar");
+
+-OR-
+
+   //Intialize ATL control containment.
+   AtlAxWinInit();
+   //Create container window
+   HWND hWndCont = m_ax.Create(m_hWnd, rect, 0, WS_CHILD | WS_VISIBLE);
+
+   // Create ActiveX control.
+   CComPtr<IUnknown> spunk;
+   HRESULT hr = CLSIDFromProgID(OLESTR("MSCAL.Calendar"), &clsid);
+   hr = CoCreateInstance(clsid, NULL, CLSCTX_ALL, IID_IUnknown, (void**)&spunk);
+
+   // Activate ActiveX control.
+   HRESULT hr = m_ax.AttachControl(spunk);
+
+In both techniques, the calls to Create() results in the creation of a
+CAxHostWindow object. The call to CreateControl() or AttachControl() also
+creates another CAxHostWindow Object. Upon destruction, the CAxHostWindow object
+created by Create() is freed.
+
+RESOLUTION
+==========
+
+Use one of the techniques mentioned in article Q218442 to create ActiveX
+controls at run time.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q192560 HOWTO: Adding ATL Control Containment Support to Any Window
+
+   Q218442 HOWTO: Programmatically Add ActiveX Controls to Composite Control
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbATL kbCOMt kbCtrl kbVC600 kbATL300 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,85 @@
+DOCUMENT:Q216765  20-MAY-2002  [winnt]
+TITLE   :TCP/IP Experiences STOP 0x7F Under Heavy Load
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under high load, a server may experience the following STOP error message:
+
+   0x7F (UNEXPECTED_KERNEL_MODE_TRAP): 0x0000007f (0x00000008, 0x00000000,
+   0x00000000, 0x00000000)
+
+The first parameter, 0x08, indicates that this is a double-fault.
+
+CAUSE
+=====
+
+For deferred processing, TCP/IP is calling a function recursively. Under high
+load, this recursion can cause a stack overflow.
+
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem immediately, download the fix as described below. For a
+complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date      Time                 Size    File Name     Platform
+   -------------------------------------------------------------
+   02/04/99  09:52p               124,080 Tcpip.sys     (x86)
+   02/04/99  09:54p               217,328 Tcpip.sys     (Alpha)
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 3.51.
+
+Additional query words: 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

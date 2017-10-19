@@ -1,0 +1,93 @@
+DOCUMENT:Q99499  19-NOV-1999  [msdos]
+TITLE   :DBLSPACE.EXE Modifies the DBLSPACE.INI Settings
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DBLSPACE.EXE may modify the DBLSPACE.INI file when certain DoubleSpace functions
+are called from either the full-screen DoubleSpace maintenance program or the
+command line.
+
+MORE INFORMATION
+================
+
+DBLSPACE.INI is a text file used by DoubleSpace to control memory use, drive
+letter reservation, and DoubleSpace drive mounting. This file is critical for
+proper access and management of DoubleSpace-compressed drives. It is
+automatically created during the initial setup of DoubleSpace and may later be
+modified when certain DoubleSpace functions are used.
+
+WARNING: If you edit the DBLSPACE.INI file with incorrect settings, your system
+may stop responding (hang) when you restart it or you may lose access to your
+compressed drives.
+
+For more information on the DBLSPACE.INI file, query on the following words in
+the Microsoft Knowledge Base:
+
+   " dblspace.ini and file and settings " (without the quotation marks)
+
+The section below describes how the various lines in the DBLSPACE.INI file are
+modified by DBLSPACE.EXE:
+
+MaxRemovableDrives=, FirstDrive=, LastDrive=, MaxFileFragments=
+---------------------------------------------------------------
+
+The first four entries that are typically seen in every DBLSPACE.INI file are
+MaxRemovableDrives=, FirstDrive=, LastDrive=, and MaxFileFragments=. The
+following DoubleSpace functions, called from the command line or from the
+full-screen DoubleSpace maintenance program, cause these entries to be added to
+the DBLSPACE.INI file (if they are not already there):
+
+   DBLSPACE /CHKDSK                          DBLSPACE /FORMAT
+   DBLSPACE /COMPRESS                        DBLSPACE /MOUNT
+   DBLSPACE /CREATE                          DBLSPACE /UNMOUNT
+   DBLSPACE /DEFRAGMENT                      DBLSPACE /RATIO
+   DBLSPACE /DELETE                          DBLSPACE /SIZE
+
+ActivateDrive=
+--------------
+
+The DBLSPACE.INI entry used to mount a compressed volume file (CVF) every time a
+computer boots is the ActivateDrive= <value>. This entry is added to the
+DBLSPACE.INI file when the following DoubleSpace functions are called:
+
+   DBLSPACE /COMPRESS
+   DBLSPACE /CREATE
+   DBLSPACE /MOUNT
+
+In addition, when DBLSPACE /UNMOUNT is called, any ActivateDrive= entry
+corresponding to the drive being unmounted is removed.
+
+Additional query words: 6.00 dblspace doublespace double space
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

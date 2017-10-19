@@ -1,0 +1,79 @@
+DOCUMENT:Q140822  12-JUN-2001  [sna]
+TITLE   :Winlogon Traps Running Performance Monitor Against SNA Server
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run Performance Monitor against an SNA Server, Winlogon traps after
+several hours of operation. The SNA Server services continue to run. However,
+the following symptoms occur:
+
+ - Users are not able to logon locally to the SNA Server.
+
+ - RPC services such as the following do not function:
+
+    - When Performance Monitor gathers details.
+
+    - When you try to view events in the system, security, or application logs.
+
+This symptom occurs sporadically.
+
+CAUSE
+=====
+
+There is a problem in the way the SNA performance DLL is passing information to
+Performance Monitor.
+
+RESOLUTION
+==========
+
+Microsoft has updated the file <snaroot>\SYSTEM\SNAPERF.DLL to correct
+this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.00 2.10 2.11 3.50 3.51 performance monitor winlogon trap
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

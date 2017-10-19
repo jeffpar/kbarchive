@@ -1,0 +1,76 @@
+DOCUMENT:Q224834  10-AUG-2001  [winnt]
+TITLE   :Setting Filter to View Only Browser Frames in Network Monitor
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to set a capture filter to view only browser frames
+in Network Monitor.
+
+MORE INFORMATION
+================
+
+When you are troubleshooting browsing-related problems, a network trace may
+help. Because browser traffic is somewhat infrequent, however, the trace may
+need to run for an extended period of time to gather enough data for analysis.
+Some browser information is sent only every 15 minutes, making it difficult to
+capture those packets. Depending on network usage, a Network Monitor trace can
+quickly become very large (many megabytes).
+
+You can configure Network Monitor to capture only browser frames by using a
+pattern match to identify these frames. This significantly reduces the size of
+the capture. To set a capture filter in Network Monitor to capture only browser
+packets:
+
+1. On the Capture menu, click Filter.
+
+2. Double-click Pattern Matches.
+
+3. In the Offset box, type "cb" (without the quotation marks). Click "From Start
+   of Frame".
+
+4. In the Pattern box, type "4252" (without the quotation marks). Click Hex.
+
+5. Click OK.
+
+6. Click OK.
+
+7. Start the capture.
+
+For more information about using Network Monitor, see the Network Monitor Help
+file in the "Systems Management Server Administrator's Guide."
+
+Additional query words: browse netmon master 8021 8003 8032 event browstat browmon
+
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

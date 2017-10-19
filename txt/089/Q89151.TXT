@@ -1,0 +1,69 @@
+DOCUMENT:Q89151  18-SEP-1999  [homegame]
+TITLE   :Golf: Aiming Marker Not Readjusted after Maximizing Main View
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Do the following to set the aiming marker:
+
+1. Launch Golf.
+
+2. From the Welcome to Microsoft Golf dialog box, choose the Start New Game
+   button.
+
+3. From the new game, choose Continue.
+
+4. In the Player Settings for this Game dialog box, choose OK.
+
+5. Make the main view window smaller by clicking the button in the upper right
+   corner of the window that has an up and down arrow on it.
+
+6. Place the aiming marker for your shot.
+
+7. Maximize the main view by clicking the button in the upper right corner of
+   the window that has an up arrow on it.
+
+8. Click the right mouse button inside the main view to note aiming marker
+   location.
+
+9. The aiming marker will be located in the upper left corner of the window.
+
+Note: If the ball is hit when the main view is maximized, the ball goes
+straight.
+
+If you press the right mouse button in the main view to view the location of the
+aiming marker and then take a shot, the ball goes toward the upper left corner.
+This will be addressed in a future version of Golf.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

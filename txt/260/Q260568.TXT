@@ -1,0 +1,98 @@
+DOCUMENT:Q260568  10-MAY-2001  [visualc]
+TITLE   :BUG: Error: Platform Manager Failed to Queue File Cemon.exe
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbsetup kbDebug kbDSupport kbGrpDSETK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft eMbedded Visual C++ version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the eMbedded Visual C++ debugger on a computer that is running
+Microsoft Windows 98, you may encounter the following error message at the
+beginning of the debug session:
+
+   Error: Platform Manager failed to queue file CEMON.EXE pkg for copying.
+
+RESOLUTION
+==========
+
+Use one of the following workarounds to enable the Cemon.exe download.
+
+Workaround 1
+------------
+
+Reinstall eMbedded Visual Tools Common Components:
+
+1. Start the Add/Remove Programs Control Panel application.
+
+2. Click Microsoft eMbedded Visual Tools.
+
+3. Click Add/Remove.
+
+4. Clear the Common Components check box.
+
+5. Click OK, click Continue, and then click Yes.
+
+6. Click Microsoft eMbedded Visual Tools in the Add/Remove Programs application.
+
+7. Click Add/Remove.
+
+8. Click to select the Common Components check box.
+
+9. Click Continue.
+
+Workaround 2
+------------
+
+Install an SDK before installing eMbedded Visual Tools:
+
+1. Uninstall eMbedded Visual Tools.
+
+2. Install an SDK from eMbedded Visual Tools disk #2.
+
+3. Install eMbedded Visual Tools as usual.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem has been encountered only on computers that are running Windows 98
+Second Edition.
+
+Additional query words: Platform Manager
+
+======================================================================
+Keywords          : kbsetup kbDebug kbDSupport kbGrpDSETK 
+Technology        : kbVCsearch kbAudDeveloper kbVCeMb
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

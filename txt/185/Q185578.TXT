@@ -1,0 +1,70 @@
+DOCUMENT:Q185578  12-APR-1999  [exchange]
+TITLE   :XADM: Error Message "Custom Attribute (N) Is Unknown"
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Microsoft Exchange Administrator program, when you attempt to import a
+Comma Separated Value (CSV) file that contains a Custom Attribute (N) field, the
+error message
+
+   Custom Attribute (N) is Unknown
+
+is returned.
+
+CAUSE
+=====
+
+This problem may occur in some scenarios if you have renamed a custom attribute
+in the Exchange Administrator program and then try to use the new name of the
+field in a CSV file. Using the new name of the attribute in the CSV file will
+return an error referencing this new name.
+
+Renaming the attribute to its original name may not solve the problem, based on
+which version of the Microsoft Exchange Administrator program you are using, and
+the revision level of the directory on the server to which you are importing.
+
+WORKAROUND
+==========
+
+Use the directory name of the custom attribute in your CSV import header instead
+of the display name.
+
+The directory names of custom attributes are of the form
+
+   Extension-Attribute-n
+
+where n is the number of the attribute.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,86 @@
+DOCUMENT:Q185281  17-JUL-2001  [visualc]
+TITLE   :PRB: OnLButtonDblClk() Not Called in Windows CE
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows CE, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Message handlers for the WM_LBUTTONDBLCLK, WM_RBUTTONDBLCLK and WM_MBUTTONDBLCLK
+messages are not called for a Microsoft Foundation Classes (MFC) application
+running in the Windows CE emulation environment or on a handheld PC (H/PC).
+
+CAUSE
+=====
+
+For a window to receive the WM_LBUTTONDBLCLK, WM_RBUTTONDBLCLK, or
+WM_MBUTTONDBLCLK messages, the class definition of the window must include the
+CS_DBLCLKS style. By default, MFC does not add the CS_DBLCLKS style to the class
+definition that it uses for single document interface (SDI) frame windows and
+views on the Windows CE platform.
+
+RESOLUTION
+==========
+
+To work around this problem, register a new class that includes the CS_DBLCLKS
+style and use this new class when you create the window. You can do this in the
+PreCreateWindow() method of the window that handles the double-click messages,
+as in the following code:
+
+Sample Code
+-----------
+
+      BOOL CtestView::PreCreateWindow(CREATESTRUCT& cs)
+      {
+         if (CView::PreCreateWindow(cs))
+         {
+            WNDCLASS wc;
+            // Get the class information for the default MFC view class.
+            ::GetClassInfo(AfxGetInstanceHandle(),cs.lpszClass,&wc);
+
+            // Register a new class using the attributes of the default
+            // view class, and make it the new default class.
+            cs.lpszClass = AfxRegisterWndClass(wc.style | CS_DBLCLKS,
+               wc.hCursor,wc.hbrBackground,wc.hIcon);
+            return TRUE;
+         }
+         return FALSE;
+      }
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: kbwince100 kbwince200 kbVC500 kbnokeyword
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword3 kbVC100WinCE kbVC200WinCE
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

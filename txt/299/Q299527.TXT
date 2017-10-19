@@ -1,0 +1,100 @@
+DOCUMENT:Q299527  01-JUN-2001  [vbwin]
+TITLE   :PRB: "Error in Loading DLL" Error If You Add PDW as VB Component
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbAddin kbwizard kbAppSetup kbDeployment kbide kbVBp kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select the "Package and Deployment Wizard" check box from the Components
+dialog box in a Visual Basic project and then click either OK or Apply, you
+receive the following error message:
+
+   Error in loading DLL
+
+CAUSE
+=====
+
+If you select the "Package and Deployment Wizard" check box in the Components
+dialog box, Visual Basic tries to load the PDWizard.ocx file. However,
+PDWizard.ocx is not intended for use as a component in a Visual Basic project;
+it is designed to be used by the Package and Deployment Wizard (PDW) Add-In.
+
+RESOLUTION
+==========
+
+To work around this problem, load the Package and Deployment Wizard (PDW) as an
+add-in, or start the PDW as a stand-alone program. For step-by-step
+instructions, see the "More Information" section.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic 6.0.
+
+2. From the Project menu, click Components, select the "Package and Deployment
+   Wizard" check box, and then click OK. You receive the above-mentioned error
+   message.
+
+How to Load the PDW as an Add-In
+--------------------------------
+
+1. From the Add-Ins menu in Visual Basic 6.0, click Add-In Manager.
+
+2. In the list, click "Package and Deployment Wizard". Under Load Behavior,
+   select the "Loaded/Unloaded" check box, and then click OK.
+
+3. Save the project.
+
+   NOTE: If you try to load the PDW as an Add-In without first saving the current
+   project, you receive the following error message, and the wizard does not
+   start:
+
+   The active project must be saved before it can be packaged and deployed.
+
+4. From the Add-Ins menu, click "Package and Deployment Wizard" to start the
+   PDW.
+
+How to Start the PDW as a Stand-Alone Program
+---------------------------------------------
+
+To start the PDW outside of Visual Basic, on the Microsoft Windows Start menu,
+point to Programs, point to Microsoft Visual Studio 6.0, point to Microsoft
+Visual Studio 6.0 Tools, and then click Package and Deployment Wizard.
+
+Additional query words: PDW Error loading DLL 48
+
+======================================================================
+Keywords          : kbAddin kbwizard kbAppSetup kbDeployment kbide kbVBp kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

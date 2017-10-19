@@ -1,0 +1,62 @@
+DOCUMENT:Q269771  23-OCT-2000  [exchange]
+TITLE   :XIMS: Configuring the Internet Mail Service to Send an ETRN
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you configure the AlwaysUseETRN registry key, the domain that the Enhanced
+TURN (ETRN) command is sent for varies depending on the configuration of the
+Internet Mail Service.
+
+MORE INFORMATION
+================
+
+When you select the "Do not reroute incoming SMTP mail" option on the Routing
+property page of the Internet Mail Service, an ETRN command is sent for the SMTP
+domain specified on the Site Addressing page in Site Addressing Properties for
+the local site.
+
+When you select the "Reroute incoming SMTP mail" option on the Routing property
+page of the Internet Mail Service, an ETRN command is sent for all the domains
+specified in the routing table on the Routing property page of the Internet Mail
+Service.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q175494 XFOR: Dequeing SMTP Mail Outside of Dialup Connections
+
+Additional query words: ETRN
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

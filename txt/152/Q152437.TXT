@@ -1,0 +1,64 @@
+DOCUMENT:Q152437  30-MAR-1999  [exchange]
+TITLE   :XCLN: Err Msg: Unexpected Error Has Occurred MAPI 1.0
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to synchronize your offline folders, you may receive an error
+that appears as a mail message in your Deleted Items folder. The message has
+following format:
+
+   Subject: Synchronization Log:
+   Priority: High
+
+   9:15:00 Synchronizing Mailbox '<Mailbox Name>'
+   9:15:00 Terminated in error
+   9:15:00 [8004010F-583-0-0]
+   9:15:00 An unexpected error has occurred.
+   9:15:00 MAPI 1.0
+
+   [8004010f-583-0-0] unexpected error has occured MAPI 1.0
+   - synchronization with offline folder file could not be completed.
+
+
+WORKAROUND
+==========
+
+Set the message delivery to the personal folder, login and synchronize, then go
+back and change the delivery to the Microsoft Exchange Server store location.
+
+
+Additional query words: OST Offline folders Win95
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

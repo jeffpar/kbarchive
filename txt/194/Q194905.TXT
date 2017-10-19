@@ -1,0 +1,69 @@
+DOCUMENT:Q194905  08-APR-2000  [exchange]
+TITLE   :XFOR: CCMC: Attachments from cc:Mail Version 7 Appear Corrupt
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open attachments sent from a cc:Mail version 7 client, the
+attachments may appear corrupt. For example, when opening Excel 97 attachments,
+the user may receive the following Excel warning:
+
+   ! This file is not in a recognizable format.
+
+Likewise, when you attempt to open Word 97 documents, the files do not appear to
+be formatted properly and to the user these files appear corrupt.
+
+
+CAUSE
+=====
+
+The attachments are not being converted properly by Export.exe file version
+6.01.00.5 of Lotus cc:Mail.
+
+WORKAROUND
+==========
+
+To work around this problem, upgrade the Lotus cc:Mail Export.exe program used
+on the Exchange Server Connector for Lotus cc:Mail (CCMC) to version 8.01 or
+later.
+
+MORE INFORMATION
+================
+
+For more information on the Lotus cc:Mail Export program, please refer to the
+Lotus cc:Mail Import/Export User's Guide.
+
+Additional query words: bad hosed garbage junk attach file
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,70 @@
+DOCUMENT:Q150630  21-MAY-2001  [schedplus]
+TITLE   :Using the Seven Habits Wizard Generates Bad File Name Error
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Seven Habits Wizard, you may get the following error message:
+
+   Bad File Name.
+
+RESOLUTION
+==========
+
+NOTE: DO NOT INSTALL THIS UPGRADE IF YOU HAVE PURCHASED OR INSTALLED THE SEVEN
+HABITS TOOLS ADD-ON. All changes included in this upgrade are also included in
+the SEVEN HABITS TOOLS ADD-ON.
+
+Call Franklin Covey at 1-800-304-9799 or 1-800-330-8175 and request the file
+7hbtools.zip. Franklin Covey will send this update through email.
+
+7hbtools.zip includes fixes to a number of known bugs, as well as some refinement
+of the features.
+
+
+
+MORE INFORMATION
+================
+
+The product Seven Habits are manufactured by Covey Leadership Center, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+For further information about the Seven Habits Tools Maintenance Release, contact
+Covey Leadership Center at (800) 304-9799.
+
+
+Additional query words: 7.00 schedule plus covey offwin WSPlus XCLNSch
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

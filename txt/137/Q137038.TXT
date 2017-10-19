@@ -1,0 +1,266 @@
+DOCUMENT:Q137038  11-JAN-2001  [vbwin]
+TITLE   :How to Add Menu Controls to a Form from an Add-In
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use the AddMenuTemplate method to Add menu controls
+to a form from an Add-in. It also provides an example demonstrating how the
+method is used.
+
+MORE INFORMATION
+================
+
+The FormTemplate object of the "Visual Basic Design Environment" object model
+provides the AddMenuTemplate method. This method allows an add-in to add menu
+controls to a form. It can add both top-level menus and submenus. The syntax for
+the AddMenuTemplate method is as follows:
+
+   Menu = Form.AddMenuTemplate(Name, Parent)
+
+      Form   - A FormTemplate object
+      Name   - A string specifying the Name property for the new menu
+      Parent - A ControlTemplate object representing the parent menu item
+               that the new menu item become a child of
+      Menu   - A ControlTemplate object that will be set to the new menu
+
+To add a top-level menu to a form, you must specify a Parent object that is set
+to Nothing. The following shows how this is done by passing the keyword Nothing
+as the Parent parameter:
+
+      Set MyMenu = MyForm.AddMenuTemplate("mnuFile", Nothing)
+
+To add a submenu, you must specify an existing menu ControlTemplate as the Parent
+parameter. The syntax is as follows:
+
+      Set MySubMenu = MyForm.AddMenuTemplate("mnuFileOpen", MyMenu)
+
+The AddMenuTemplate method adds the new menus to the end of existing menus. Menus
+can't be inserted between two existing menus.
+
+Once you have added a menu, you can modify its properties to:
+
+ - Change the caption
+
+ - Add a shortcut key
+
+ - Make a menu separator
+
+ - Enable it
+
+ - Hide it
+
+ - Turn it into a control array
+
+ - And more
+
+The object returned by the AddMenuTemplate method is a ControlTemplate object
+that references the newly added menu. The properties of the menu can be set
+through the Properties collection of the ControlTemplate. For example, to change
+the caption, use this:
+
+      MyMenu.Properties("&Caption").Value = "New Caption"
+
+You can add an access key to any menu by placing an ampersand (&) in front of
+the desired access key in the caption. In the preceding example, C would be the
+access key.
+
+You can only add a shortcut key to a submenu. To set a shortcut key, you gain
+access to the Shortcut property in the same manner that you gain access to the
+Caption property. The Shortcut property is an enumerated property. Visual Basic
+defines constants such as vbMenuAccelCtrlO for setting the Shortcut property.
+
+To create a menu separator, first add a submenu. Next, set the Caption property
+to a dash. This indicates to Visual Basic that you want a menu separator instead
+of a submenu.
+
+To hide a menu item, set the Visible property to False. This will not work on a
+submenu if it is the only visible submenu.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new project in Visual Basic.
+
+2. Remove the default form (Form1).
+
+3. Add a new standard module (Module1.bas by default.)
+
+4. Put the following code in the standard module:
+
+      ''' MODULE1.BAS
+      Option Explicit
+
+      #If Win16 Then
+
+         Declare Function WritePrivateProfileString Lib "KERNEL" ( _
+            ByVal AppName As String, ByVal KeyName As String, _
+            ByVal keydefault As String, ByVal FileName As String) As Integer
+         Declare Function GetPrivateProfileString Lib "KERNEL" ( _
+            ByVal AppName As String, ByVal KeyName As String, _
+            ByVal keydefault As String, ByVal ReturnString As String, _
+            ByVal NumBytes As Integer, ByVal FileName As String) As Integer
+
+      #ElseIf Win32 Then
+         Declare Function WritePrivateProfileString Lib "Kernel32" _
+            Alias "WritePrivateProfileStringA" (ByVal AppName As String, _
+            ByVal KeyName As String, ByVal keydefault As String, _
+            ByVal FileName As String) As Long
+         Declare Function GetPrivateProfileString Lib "Kernel32" _
+            Alias "GetPrivateProfileStringA" (ByVal AppName As String, _
+            ByVal KeyName As String, ByVal keydefault As String, _
+            ByVal ReturnString As String, ByVal NumBytes As Long, _
+            ByVal FileName As String) As Long
+      #End If
+
+      Sub Main()
+         #If Win16 Then
+            Const Section = "Add-Ins16"
+         #ElseIf Win32 Then
+            Const Section = "Add-Ins32"
+         #End If
+
+         Const BufSize = 255
+         Dim Ret As Variant
+         Dim RetStr As String
+
+         ' Hide the Addin from the Task Manager
+         App.TaskVisible = False
+
+         ' Check to see if the entry is already in the VB.ini file.
+         ' Add if not.
+         RetStr = Space(BufSize)
+         Ret = GetPrivateProfileString(Section, "AddinExample.MenuControl", _
+            "NotFound", RetStr, BufSize, "VB.INI")
+         RetStr = Left(RetStr, Ret)
+         If RetStr = "NotFound" Then
+            WritePrivateProfileString Section, "AddinExample.MenuControl", _
+               "0", "VB.INI"
+         End If
+      End Sub
+
+5. Add a new class module to the project (Class1.cls by default.)
+
+6. Set the following properties of the class module to the specified values:
+
+   Property        Value
+   ---------------------------------------
+   Instancing      1 - Creatable SingleUse
+   Name            MenuControl
+   Public          True
+
+7. Put the following code in the class module:
+
+      ''' CLASS1.CLS
+      Option Explicit
+
+      Private ThisInstance As Object 'VBIDE.Application
+      Private AddInMenuLine As Object 'VBIDE.SubMenu
+      Private AddInID As Long
+
+      Public Sub ConnectAddIn(VBInstance As Object)
+         Set ThisInstance = VBInstance
+         Set AddInMenuLine = ThisInstance.AddInMenu.MenuItems.Add( _
+            "Menu Control Example")
+         AddInID = AddInMenuLine.ConnectEvents(Me)
+
+      End Sub
+
+      Public Sub DisconnectAddIn(Mode As Integer)
+         AddInMenuLine.DisconnectEvents AddInID
+         ThisInstance.AddInMenu.MenuItems.Remove AddInMenuLine
+      End Sub
+
+      Public Sub AfterClick()
+         Dim CurrentForm As Object 'VBIDE.FormTemplate
+         Dim mnuFile As Object 'VBIDE.ControlTemplate
+         Dim mnuFileOpen As Object 'VBIDE.ControlTemplate
+         Dim mnuFileSeparator As Object 'VBIDE.ControlTemplate
+         Dim mnuFileMRU As Object 'VBIDE.ControlTemplate
+
+         ' Set a reference to the Active Form
+         Set CurrentForm = ThisInstance.ActiveProject.ActiveForm
+
+         ' Create the top-level File menu
+         Set mnuFile = CurrentForm.AddMenuTemplate("mnuFile", Nothing)
+         mnuFile.Properties("Caption").Value = "&File"
+
+         ' Add the Open menu under the File menu
+         Set mnuFileOpen = CurrentForm.AddMenuTemplate("mnuFileOpen", mnuFile)
+         mnuFileOpen.Properties("Caption").Value = "&Open"
+         mnuFileOpen.Properties("Shortcut").Value = vbMenuAccelCtrlO
+
+         ' Add a separator
+         Set mnuFileSeparator = CurrentForm.AddMenuTemplate _
+            ("mnuFileSeparator", mnuFile)
+         mnuFileSeparator.Properties("Caption").Value = "-"
+
+         ' Add MRU under the File menu
+         Set mnuFileMRU = CurrentForm.AddMenuTemplate("mnuFileMRU", mnuFile)
+         mnuFileMRU.Properties("Caption").Value = "MRU"
+         mnuFileMRU.Properties("Visible").Value = False ' Make Invisible
+         mnuFileMRU.Properties("Index").Value = 0  ' Make into control array
+      End Sub
+
+8. Set the following Project Options:
+
+   Option            Value
+   ---------------------------------------
+   Startup Form      Sub Main
+   Project Name      AddinExample
+   StartMode         OLE Server
+   Error Trapping    Break in Class Module
+
+9. Save the project.
+
+10. Run the project.
+
+11. Start a second instance of Visual Basic. Form1 is created by default.
+
+12. Use the Add-In Manager to add the AddinExample.MenuControl Add-In.
+
+13. Set the focus to Form1.
+
+14. On the Add-In menu, click Menu Control Example.
+
+The Add-In should add a File menu to Form1. Under the file menu will be an Open
+submenu. The Open submenu will have CTRL+O as a shortcut key. Below the Open
+submenu will be a menu separator. Below the separator there will be an invisible
+MRU menu control array.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

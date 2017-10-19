@@ -1,0 +1,82 @@
+DOCUMENT:Q248353  24-OCT-2000  [winnt]
+TITLE   :BUG: System Boot Sits at the Blue Blank Screen for ~90 Seconds
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbKernBase kbOSWin2000 kbService kbDSupport kbGrpDSKernBase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have installed an auto-started service configured for a non-localsystem
+account.
+When the system is starting, the system pauses at the blank blue screen for ~90
+seconds and then the logon prompt appears.
+
+RESOLUTION
+==========
+
+Add the NWCWorkstation service as a dependency to your non-localsystem service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Client Services for Netware (CSNW) is installed and the NWCWorkstation
+   service isn't configured to run in a group (default for CSNW).
+
+2. Another auto-start service is installed that runs in a non-LocalSystem
+   account.
+
+3. The Auto-start service from step 2 comes before NWCWorkstation service
+   alphabetically in the registry:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Services
+
+   or it belongs to a service load order group. (Services that belong to a load
+   order group always start before a service that doesn't belong to a load order
+   group.)
+
+4. Restart the computer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbKernBase kbOSWin2000 kbService kbDSupport kbGrpDSKernBase 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

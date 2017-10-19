@@ -1,0 +1,97 @@
+DOCUMENT:Q121259  13-JUN-2001  [winmisc]
+TITLE   :Comparing Features of Windows Sound System 1.0, 1.0a, and 2.0
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists some of the features in Microsoft Windows Sound System
+versions 1.0, 1.0a, and 2.0.
+
+MORE INFORMATION
+================
+
+Version 1.0
+-----------
+
+ - Supported exclusively under Microsoft Windows versions 3.1 and later
+
+ - Supports Windows Sound System sound card only
+
+ - ProofReader supports Microsoft Excel versions 3.0 and later and Lotus
+   versions 1.0, 1.0a, and 1.10.01
+
+Version 1.0a
+------------
+
+ - Supports the Windows Sound System sound card only
+
+ - Introduced single-mode direct memory access (DMA)
+
+ - Corrected problems with the Symphony chip set
+
+ - Compatible with Coda's Finale software version 2.2
+
+ - Supports games in MS-DOS with a special system disk
+
+ - Supports SoundBlaster-compatible games through the Configuration icon
+
+ - Games designed to support the Ad Lib card should run
+
+ - Separate icons for volume control and record control
+
+ - Invalid IRQs can incorrectly be selected.
+
+ - CTRL+ALT+PGUP- and CTRL+ALT+PGDN-controlled volume in MS-DOS-based games
+
+ - Replaces standard Windows 3.1 Audio Compression Manager
+
+ - ProofReader supports Lotus for Windows versions 1.0, 1.0a, and 1.1.01
+
+Version 2.0
+-----------
+
+ - Supports OEM sound cards (Media Vision, Creative Labs, ESS)
+
+ - Controls the sound volume in some MS-DOS-based games
+
+ - Supports MS-DOS-based games in full-screen mode. The Windows Sound System
+   drivers are located in the Drivers area of Control Panel.
+
+ - WSSXLAT requires EMM386.EXE version 4.47 or later. No other memory managers
+   are supported.
+
+ - ProofReader supports Lotus for Windows versions 1.0, 1.0a, 1.1.01, and 4.0
+
+
+Additional query words: 1.00 2.00 3.1 3.5 2.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,193 @@
+DOCUMENT:Q190069  06-AUG-1999  [foxpro]
+TITLE   :HOWTO: Showing Print Preview as MDI Child of Top-Level Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Starting with Visual FoxPro 5.0, you may create top-level forms that do not
+require the Visual FoxPro desktop to display. If you display a report preview
+within a top-level form, you must first display the Visual FoxPro desktop for
+the report preview to be visible.
+
+Visual FoxPro 6.0 has added the capability for displaying report previews within
+top-level forms. This article describes how to display a report preview as a
+multiple document interface (MDI) child window within a top- level form, and
+also shows how to size the preview to the top-level form.
+
+MORE INFORMATION
+================
+
+Below is an example that demonstrates the display of a report preview as an MDI
+child of a top-level form. Through code, we create a table and a report, then
+create and show a top-level form.
+
+Once the form is visible, you can display the report preview by clicking the
+"Report Preview" CommandButton.
+
+The preview can be displayed in one of two ways, either in an MDI child window
+the same size as the top-level form (the default, with the check box selected),
+or in an MDI child window maximized within the top-level form (by clearing the
+check box).
+
+1. Run the following code from a program (.prg) file:
+
+         CLEAR ALL
+         PUBLIC oform
+         LOCAL lnI
+         CLOSE DATA ALL
+         Delete file table_1.dbf
+         CREATE TABLE table_1 (field1 C(10))
+         FOR lnI = 1 TO 3
+            INSERT INTO table_1 VALUES ('xx')
+         ENDFOR
+         Delete file report_1.fr?
+         CREATE REPORT report_1 FROM table_1
+
+         oform=CREATEOBJECT("TL_form")
+         oform.SHOW()
+         READ EVENTS
+         CLOSE TABLES
+
+         DEFINE CLASS TL_form AS FORM
+            BorderStyle = 3
+            ShowWindow = 2
+            AutoCenter = .T.
+            lIsFormUp=.F.
+            Width = 500
+
+            ADD OBJECT commandpreview AS COMMANDBUTTON WITH ;
+               TOP = 180, ;
+               LEFT = 210, ;
+               HEIGHT = 27, ;
+               WIDTH = 95, ;
+               CAPTION = "Report Preview", ;
+               NAME = "Commandpreview"
+
+            PROCEDURE DESTROY
+               Clear EVENTS
+               _SCREEN.VISIBLE=.T.
+               SET SYSMENU TO DEFAULT
+            ENDPROC
+
+            PROCEDURE ACTIVATE
+               IF !THIS.lIsFormUp
+                  _SCREEN.VISIBLE = .f.   && We wait till now to hide desktop
+                                    && to ensure SDI form is active window.
+                  this.lIsFormUp = .T.
+               ENDIF
+            ENDPROC
+
+            ADD object chkType as checkbox with ;
+               top = 20, ;
+               caption = 'Check to preview in window sized to form, ' ;
+               + 'uncheck to maximize in top level form', ;
+               autosize = .t., ;
+               value = .T., ;
+               backstyle = 0, ;
+               left = 30
+
+            PROCEDURE commandpreview.CLICK
+               LOCAL foTemplate, llClosable
+               * Create template form
+               foTemplate = newobj('form')
+               foTemplate.Name = SYS(2015)
+               foTemplate.Caption = "My Report Preview Window"
+               foTemplate.mdiform = .T.
+               foTemplate.top = 0
+               foTemplate.left = 0
+               * Size template form to top level form
+               foTemplate.width = thisform.width - 8  && 8 is fudge for border
+               foTemplate.height = thisform.height ;
+                  - 8 - sysmetric(9) && sysmetric is for TitleBar height
+               IF !thisform.chkType.value
+                  KEYB '{ctrl+f10}'  && Maximize the Preview Window
+               ENDIF
+               llClosable = thisform.closable
+               thisform.closable = .f.  && Make main form not closable
+               REPORT FORM report_1 PREVIEW WINDOW (foTemplate.name)
+               thisform.closable = llClosable   && Restore original setting
+            ENDPROC
+
+            PROC Init
+               DO do_menu WITH THIS,.T.,.T.
+            ENDPROC
+
+         ENDDEFINE
+
+         PROC do_menu  && This is stripped down code from Menu Designer menu
+            LPARAMETERS oFormRef, getMenuName, lUniquePopups
+            LOCAL cMenuName, a_menupops
+
+            m.cMenuName = SYS(2015)
+
+            DIMENSION a_menupops[1]
+            a_menupops[1]="_mfile"
+
+            DEFINE MENU (m.cMenuName) IN (m.oFormRef.Name) BAR
+            DEFINE PAD _msm_file OF (m.cMenuName) PROMPT "\<File"
+            ON PAD _msm_file OF (m.cMenuName) ACTIVATE POPUP (a_menupops[1])
+            DEFINE POPUP (a_menupops[1]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
+            DEFINE BAR 1 OF (a_menupops[1]) PROMPT "C\<lose" ;
+               SKIP FOR WEXIST("My Report Preview Window")
+            ON SELECTION BAR 1 of (a_menupops[1]) _screen.activeform.release()
+            Activate MENU (m.cMenuName) NOWAIT
+         ENDPROC
+
+2. Click Report Preview. Note that the preview may be maximized or minimized
+   within the top-level form. The state of the check box determines whether the
+   preview initially displays maximized or as a child window. When maximized,
+   the preview resizes when the top-level form is resized. Otherwise, the
+   preview can be sized independent of the top-level form.
+
+REFERENCES
+==========
+
+For more information about displaying report previews in top-level forms in
+Visual FoxPro 6.0, and using the new REPORT FORM ... IN WINDOW syntax, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q188887 HOWTO: How to Display Print Preview in a Top-Level Form
+
+For information about using the Visual FoxPro desktop to display report previews
+from top-level forms in Visual FoxPro 5.0, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q156237 PRB: Report Designer/Preview Needs VFP Desktop to Display
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+Additional query words: kbDSupport kbDSE kbVFp600 kbCtrl kbContainer
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

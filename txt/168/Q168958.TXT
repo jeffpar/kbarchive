@@ -1,0 +1,279 @@
+DOCUMENT:Q168958  07-MAY-2001  [visualc]
+TITLE   :HOWTO: Exporting STL Components Inside & Outside of a Class
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to:
+
+ - Export an instantiation of a Standard Template Library (STL) class.
+
+ - Export a class that contains a data member that is an STL object.
+
+Note that you may not export a generalized template. The template must be
+instantiated; that is, all of the template parameters must be supplied and must
+be completely defined types at the point of instantiation. For instance
+"stack<int>;" instantiates the STL stack class. The instantiation forces
+all members of class stack<int> to be generated.
+
+Also note that some STL containers (map, set, queue, list, deque) cannot be
+exported. Please refer to the More Information section to follow for a detailed
+explanation.
+
+MORE INFORMATION
+================
+
+Beginning with Visual C++ 5.0, it is possible to force an instantiation of a
+template class and export the instantiation. To export a template class
+instantiation, use the following syntax:
+
+To Export an STL Class
+----------------------
+
+1. In both the DLL and the .exe file, link with the same DLL version of the C
+   run time. Either link both with Msvcrt.lib (release build) or link both with
+   Msvcrtd.lib (debug build).
+
+2. In the DLL, provide the __declspec specifier in the template instantiation
+   declaration to export the STL class instantiation from the DLL.
+
+3. In the .exe file, provide the extern and __declspec specifiers in the
+   template instantiation declaration to import the class from the DLL. This
+   results in a warning C4231 "nonstandard extension used : 'extern' before
+   template explicit instantiation." You can ignore this warning.
+
+To Export a Class Containing a Data Member that Is an STL Object
+----------------------------------------------------------------
+
+1. In both the DLL and the .exe file, link with the same DLL version of the C
+   run time. Either link both with Msvcrt.lib (release build) or link both with
+   Msvcrtd.lib (debug build).
+
+2. In the DLL, provide the __declspec specifier in the template instantiation
+   declaration to export the STL class instantiation from the DLL.
+
+   NOTE: You cannot skip step 2. You must export the instantiation of the STL
+   class that you use to create the data member.
+
+3. In the DLL, provide the __declspec specifier in the declaration of the class
+   to export the class from the DLL.
+
+4. In the .exe file, provide the __declspec specifier in the declaration of the
+   class to import the class from the DLL.
+
+   If the class you are exporting has one or more base classes, then you must
+   export the base classes as well. If the class you are exporting contains data
+   members that are of class type, then you must export the classes of the data
+   members as well.
+
+NOTE: Some STL classes use other STL classes. These other classes must also be
+exported. The classes that must be exported are listed in compiler warnings if
+you compile with a warning level lower than 1; that is, /W2, /W3, or /W4.
+Warning level 4 generates a lot of warning messages for STL headers and is not
+currently recommended for that reason.
+
+Some STL classes contain nested classes. These classes can not be exported. For
+instance, deque contains a nested class deque::iterator. If you export deque,
+you will get a warning that you must export deque::iterator. If you export
+deque::iterator, you get a warning that you must export deque. This is caused by
+a designed limitation that once a template class is instantiated, it can not be
+re-instantiated and exported. The only STL container that can currently be
+exported is vector. The other containers (that is, map, set, queue, list, deque)
+all contain nested classes and cannot be exported.
+
+When you export an STL container parameterized with a user-defined type (UDT),
+you must define the operators < and == for your UDT. For example, if you
+export vector<MyClass>, you must define MyClass::operator < and MyClass
+operator ==. This is because all STL container classes have member comparison
+operators that require the existence of the operators < and == for the
+contained type. Normally, these are not instantiated because they are not used.
+When you instantiate an instance of a template class, all member functions are
+generated. Because the STL container classes have member functions that use the
+operators < and == for the contained type, you must implement them. If
+comparing objects of your UDT does not make sense, you can define the comparison
+operators to simply return "true."
+
+When the symbol _DLL is defined during compiling (this symbol is implicitly
+defined when compiling with /MD or /MDd to link with the DLL version of the C
+Runtime), the following STL classes, and various global operators and functions
+that operate on these classes, are already exported by the C Runtime DLL.
+Therefore, you cannot export them from your DLL. This should not cause a problem
+for the executable program that imports your class as long as it also uses the
+DLL version of the C run time:
+
+Header      STL template class
+------------------------------
+<IOSFWD>    basic_ios
+<IOSFWD>    <IOSFWD>
+<IOSFWD>    basic_istream
+<IOSFWD>    basic_string (also typedef'd as string and wstring)
+<IOSFWD>    complex
+<LOCALE>    messages
+<XLOCALE>   codecvt
+<XLOCALE>   ctype
+<XLOCMON>   moneypunct
+<XLOCMON>   money_get
+<XLOCMON>   money_put
+<XLOCNUM>   numpunct
+<XLOCTIME>  time_get
+<XLOCTIME>  time_put
+<XSTRING>   basic_string (also typedef'd as string and wstring)
+
+For specific details on which template parameters are used and which global
+functions and operators are declared, please see the relevant header file.
+
+Sample Code
+-----------
+
+      // -------------------------------------------
+      // MYHEADER.H
+      //disable warnings on 255 char debug symbols
+       #pragma warning (disable : 4786)
+      //disable warnings on extern before template instantiation
+       #pragma warning (disable : 4231)
+
+       #include <vector>
+
+       // Provide the storage class specifier (extern for an .exe file, null
+       // for DLL) and the __declspec specifier (dllimport for .an .exe file,
+       // dllexport for DLL).
+       // You must define EXP_STL when compiling the DLL.
+       // You can now use this header file in both the .exe file and DLL - a
+       // much safer means of using common declarations than two different
+       // header files.
+       #ifdef EXP_STL
+       #    define DECLSPECIFIER __declspec(dllexport)
+       #    define EXPIMP_TEMPLATE
+       #else
+       #    define DECLSPECIFIER __declspec(dllimport)
+       #    define EXPIMP_TEMPLATE extern
+       #endif
+
+       // Instantiate classes vector<int> and vector<char>
+       // This does not create an object. It only forces the generation of all
+       // of the members of classes vector<int> and vector<char>. It exports
+       // them from the DLL and imports them into the .exe file.
+       EXPIMP_TEMPLATE template class DECLSPECIFIER std::vector<int>;
+       EXPIMP_TEMPLATE template class DECLSPECIFIER std::vector<char>;
+
+       // Declare/Define a class that contains both a static and non-static
+       // data member of an STL object.
+       // Note that the two template instantiations above are required for
+       // the data members to be accessible. If the instantiations above are
+       // omitted, you may experience an access violation.
+       // Note that since you are exporting a vector of MyClass, you must
+       // provide implementations for the operator < and the operator ==.
+       class DECLSPECIFIER MyClass
+       {
+       public:
+           std::vector<int> VectorOfInts;
+           static std::vector<char> StaticVectorOfChars;
+
+       public:
+           bool operator < (const MyClass > c) const
+           {
+               return VectorOfInts < c. VectorOfInts;
+           }
+           bool operator == (const MyClass > c) const
+           {
+               return VectorOfInts == c. VectorOfInts;
+           }
+       };
+
+       // Instantiate the class vector<MyClass>
+       // This does not create an object. It only forces the generation of
+       // all of the members of the class vector<MyClass>. It exports them
+       // from the DLL and imports them into the .exe file.
+       EXPIMP_TEMPLATE template class DECLSPECIFIER std::vector<MyClass>;
+
+       // -------------------------------------------
+       // Compile options needed: /GX /LDd /MDd /D"EXP_STL"
+       //                     or: /GX /LD  /MD  /D"EXP_STL"
+       // DLL.CPP
+
+       #include "MyHeader.h"
+       std::vector<char> MyClass::StaticVectorOfChars;
+
+       // -------------------------------------------
+       // Compile options needed: /GX /MDd
+       //                     or: /GX /MD
+       // EXE.CPP
+
+       #include <iostream>
+       #include "MyHeader.h"
+
+       int main ()
+       {
+           MyClass x;
+
+           for (int i=0; i<5; i++) x.VectorOfInts.push_back(i);
+           for (char j=0; j<5; j++) x.StaticVectorOfChars.push_back('a' + j);
+
+           std::vector<int>::iterator vii = x.VectorOfInts.begin();
+           while (vii != x.VectorOfInts.end())
+           {
+               std::cout << *vii;
+               std::cout << " displayed from x.VectorOfInts" << std::endl;
+               vii++;
+           }
+           std::vector<char>::iterator vci = x.StaticVectorOfChars.begin();
+           while (vci != x.StaticVectorOfChars.end())
+           {
+               std::cout << *vci;
+               std::cout << " displayed from MyClass::StaticVectorOfChars";
+               std::cout << std::endl;
+               vci++;
+           }
+
+           std::vector<MyClass> vy;
+           for (i=0; i=5; i++) vy.push_back(MyClass());
+
+           return 1;
+       }
+
+REFERENCES
+==========
+
+For additional information, search on the following topics in Visual C++ Help:
+
+   Explicit Instantiation
+   __declspec
+   stack
+   /MD, /ML, /MT, /LD (Use Run-Time Library)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

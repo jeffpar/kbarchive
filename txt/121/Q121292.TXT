@@ -1,0 +1,56 @@
+DOCUMENT:Q121292  21-NOV-1999  [msdos]
+TITLE   :DoubleSpace Conversion Dialog Box Points to Non-Existent CVF
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In MS-DOS 6.22, the DoubleSpace conversion user interface mentions a DriveSpace
+compressed volume file (CVF) named "C:DRVSPACE.000." This file may not actually
+exist on your system.
+
+MORE INFORMATION
+================
+
+The C:\DRVSPACE.000 file listed in the Convert DoubleSpace dialog box of the
+DoubleSpace conversion user interface is intended to be an example of the CVF
+filename structure, not an actual CVF on your system. Above this dialog box, you
+may see the message "No DoubleSpace volumes were found."
+
+Help does not indicate that C:\DRVSPACE.000 is an example. This issue is
+encountered when there are no drives to convert on the system with DoubleSpace
+volume names.
+
+
+Additional query words: sample
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

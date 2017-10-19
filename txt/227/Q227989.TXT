@@ -1,0 +1,100 @@
+DOCUMENT:Q227989  11-JUN-2002  [winnt]
+TITLE   :STOP 0x0000000A Error Message Caused by Fcascsi.sys Driver
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+In Windows NT, you may receive the following error message:
+
+   STOP 0x0000000A (0x<nnnnnnnn>, 0x00000008, 0x00000000, 0x801db9ed)
+
+where <nnnnnnnn> is a random series of numbers.
+
+CAUSE
+=====
+
+This issue can occur if the Fcascsi.sys file is running on your computer.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+To resolve this issue, follow these steps:
+
+1. Create an emergency repair disk. Click Start, click Run, type "rdisk /s"
+   (without the quotation marks) in the Open box, and then click OK.
+
+2. Use the Regedt32.exe program to edit the following registry key
+
+   HKEY_LOCAL_MACHINE/SYSTEM/CURRENT_CONTROL_SET/SERVICES/FCA_SCSI/PARAMETERS/DEVICE<n>
+
+where <n> is number from 0 to 4.
+
+Edit the registry key to contain the following values:
+
+   
+
+   Value                Value Data
+   ---------------------------------------------------------------------- 
+   DriverParameter      SCSI 1 32 4 125 64 LPORT 8 128 1 16 4096 0xFFFFFF
+                     (REG_SZ)
+   MaximumLogicalUnit   0x08 (hex)
+   NumberOfRequests     0x40 (hex)
+
+3. Quit Regedt32.exe, and then restart your computer.
+
+MORE INFORMATION
+================
+
+The Fcascsi.sys drivers modified 12/98 or earlier are known to exhibit this
+behavior. For more information about the Fcascsi.sys driver, contact EMC
+Technical Support. The third-party products discussed in this article are
+manufactured by vendors independent of Microsoft; we make no warranty, implied
+or otherwise, regarding these products' performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Hardware          : x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

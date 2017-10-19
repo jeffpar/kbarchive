@@ -1,0 +1,66 @@
+DOCUMENT:Q151742  27-JUL-2001  [mastering]
+TITLE   :BUG: Mastering Exchange: Setup Dialog Box Appears Too Short
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm kbsetup kbnokeyword kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Exchange Development ISBN 1-57231-337-4, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Mastering Exchange Development, the last two dialog boxes in
+the install process appear slightly too short for the title. Specifically, the
+last "t" in the word Development is partially obscured. The two dialogs are the
+Registering Components Dialog and the Installation complete dialog.
+
+CAUSE
+=====
+
+This occurs when the screen resolution is set to 800x600 or higher.
+
+RESOLUTION
+==========
+
+Changing to a screen resolution of 640x480 corrects this and allows all the text
+to be seen normally.
+
+For more information about how to this task in Windows, see your Windows printed
+documentation or online Help.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed above. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm kbsetup kbnokeyword kbBug kbISS 
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

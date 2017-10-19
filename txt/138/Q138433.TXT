@@ -1,0 +1,86 @@
+DOCUMENT:Q138433  07-DEC-2001  [ssafe]
+TITLE   :PRB: Unable to Open <path Name> When Running Analyze
+PRODUCT :Microsoft SourceSafe
+PROD/VER:3.10 | 3.10 | 3.10
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running Analyze with the path to the data directory produces the following error
+if the path contains a directory name that has an extension:
+
+   Unable to open <Path to Data directory>
+
+CAUSE
+=====
+
+Analyze can not resolve the path to the data directory if any of the directory
+entries have a period (.). You can move the Analyze program beyond the directory
+with the extension, and use a relative path. This does not occur in Visual
+SourceSafe version 4.0
+
+RESOLUTION
+==========
+
+Move Analyze so that you can call it with a relative path to the data
+directory.
+
+-or-
+
+Rename the directory so that it does not contain a period.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a directory that has an extension (for example, Mydir.tst).
+
+2. Move or copy the SourceSafe data directory into the directory you created in
+   step 1.
+
+3. Run Analyze from the SourcSafe Admin directory, supplying a complete path to
+   the data directory as in this example:
+
+   Analyze C:\Mydir.tst\Data
+
+   At this point, Analyze responds with this error:
+
+   Unable to open: C:\Mydir.tst\Data"
+
+Additional query words: ss3 vbwin 3.10
+
+======================================================================
+Keywords          :  
+Version           : 3.10 | 3.10 | 3.10
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

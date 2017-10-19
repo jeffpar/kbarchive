@@ -1,0 +1,64 @@
+DOCUMENT:Q202295  27-MAY-1999  [exchange]
+TITLE   :XIMS: IMS Configuration May Unexpectedly Overwrite Proxy Address
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user sends Internet mail to an Exchange Server proxy address, the user
+may receive a non-delivery report (NDR). This can occur when the Internet Mail
+Service (IMS) has been reconfigured while there is a proxy address in use.
+
+CAUSE
+=====
+
+When the Exchange Server 5.5 IMS is configured, there is a high possibility of
+overwriting existing SMTP proxy addresses that do not match the site addressing
+for SMTP.
+
+The proxy generator module is not being called correctly from within the IMS
+Wizard. Therfore, it is necessary to modify the updated addresses to reflect how
+they should read. In some cases, this may only require importing a Commas
+Separated Format (CSV) file.
+
+WORKAROUND
+==========
+
+When you configure the IMS in this scenario, do not modify the site address
+using the IMS Wizard. If it is necessary to modify the site address, do so
+through the Configuration container: Site Addressing object: Site Addressing
+property page.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

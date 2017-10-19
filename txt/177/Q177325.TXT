@@ -1,0 +1,87 @@
+DOCUMENT:Q177325  18-MAR-1999  [exchange]
+TITLE   :XFOR: LME-PROFS-MEXIN Returns Error Code 80070057 and Exits
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - LinkAge Message Exchange, version 3.2 
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Inbound mail from OV/VM (PROFS) to Microsoft Exchange via the Linkage 3.2 OV/VM
+connector may back up and the Transfer to Exchange for OV/VM process
+(LME-PROFS-MEXIN) may terminate unexpectedly. The Linkage Administrator browse
+log may have the following warning/errors logged:
+
+   LME-PROFS-MEXIN    31200   Microsoft Exchange has returned the
+                              condition: 80070057
+   LME-PROFS-MEXIN    31201   Microsoft Package ID: Win32
+   LME-PROFS-MEXIN    31203   Extended NT Information:  The parameter is
+                              incorrect.
+   LME-PROFS-MEXIN    31042   Cannot save updated (mapped) message
+                              addresses: IPM  Content List
+
+This has also occured with the Linkage SNADS Connector.
+
+CAUSE
+=====
+
+A Non-Delivery Report (NDR) coming from the OV/VM host contained retired
+recipients, the call to resolve the OV/VM recipients failed with and the error
+code was incorrectly interpreted as a mail system failure which caused the
+process to terminate and the message to be left in the READY-IN queue.
+
+
+WORKAROUND
+==========
+
+Manually delete the message using the Queue Viewer extension of the Linkage
+Exchange - Office Vision/VM Connector. The message will be the first in the
+Inbound from Connector queue.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Linkage Message Exchange,
+version 3.2.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Additional query words: LME PROFS hang crash stuck
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

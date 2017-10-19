@@ -1,0 +1,87 @@
+DOCUMENT:Q241856  18-JUN-2002  [visualc]
+TITLE   :PRB: Crash in DllMain After FreeLibrary is Called on a Resource
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDLL kbResource kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive an access violation in DllMain after unloading a DLL using the
+FreeLibrary() API call.
+
+CAUSE
+=====
+
+The DLL was a resource DLL with no entry point. The crash did not occur
+immediately after the FreeLibrary() call, but rather later on. The resource DLL
+was loaded either by LoadLibrary() or with LoadLibraryEx() with the last
+parameter set to 0.
+
+RESOLUTION
+==========
+
+The resource DLL should be loaded with LoadLibraryEx() instead and with the last
+parameter set to LOAD_LIBRARY_AS_DATAFILE.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+A resource DLL does not have an entry point. You can verify that a DLL is
+resource-only by viewing the DLL import headers using the dumpbin utility that
+ships with Visual C++. You can use the following command from a command prompt
+to generate a text file for examination:
+
+   dumpbin /headers mydll.dll > examine.txt
+
+After running the above command, the text file Examine.txt is generated. If you
+open Examine.txt in a text editor, you can verify a DLL is a resource DLL by
+examining the value of RVA of entry point entry under the Optional Header Values
+section. If it is set to zero, then the DLL is a resource-only DLL.
+
+
+REFERENCES
+==========
+
+   Q202197 BUG: Freeing Resource DLLs in ExitInstance Causes Error
+
+Additional query words: Access Violation Win95 localize resources
+
+======================================================================
+Keywords          : kbDLL kbResource kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :4.0,4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

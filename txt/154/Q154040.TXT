@@ -1,0 +1,66 @@
+DOCUMENT:Q154040  22-JUN-1999  [schedplus]
+TITLE   :How To Print Seven Habits Tools Information
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0, 7.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.0, 7.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Seven Habits Help Topics state that to print anything you see in the Seven
+Habits Tools or Seven Habits Tab, and you can select Covey Paper from the Print
+dialog box. This is incorrect, you cannot print this information without
+additional software from Covey Leadership Center.
+
+MORE INFORMATION
+================
+
+The help file states:
+
+   Anything you see in the Seven Habits Tools or in the Seven Habits Tab can be
+   printed by selecting the File menu, Print in Schedule+. Select the Covey
+   Paper Format you wish to use and then specify what information you want
+   printed. Schedule+ prints to all four of Covey Leadership Center's planner
+   sizes.
+
+This is incorrect. The capability to print the information on these tabs is
+available only with the Covey Seven Habits Tools Add-On which will add three
+more tabs to the Seven Habits Tools dialog. One of these tabs is the Print tab.
+
+
+If you are interested in receiving more information about the Seven Habits Tools
+Add-On, please call the Covey Leadership Center at 1-800-304-9799.
+
+If you wish to print the information contained within the Mission or Roles tabs,
+select the text, copy it, and then paste it into a word processor or Notepad.
+
+Additional query words: 7.00 7.00a schedule covey seven habits print permission roles goals wisdom
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch
+Version           : WINDOWS:7.0, 7.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

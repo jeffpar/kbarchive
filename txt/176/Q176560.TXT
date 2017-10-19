@@ -1,0 +1,82 @@
+DOCUMENT:Q176560  21-SEP-1999  [msnetwork]
+TITLE   :How to Create an Inetnews.log File for Outlook Express
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6,4.0,5,5.0
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6, 5.0 
+ - Microsoft Outlook Express versions 4.0, 5 for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create an Inetnews.log file for Microsoft Outlook
+Express 4.0, 5.0.
+
+You can use the Inetnews.log file to troubleshoot problems that may occur when
+you connect to a news server in Outlook Express using the Network News Transport
+Protocol (NNTP).
+
+MORE INFORMATION
+================
+
+Before you begin, first check which version of Outlook Express you are have by
+clicking About Microsoft Outlook Express, on the Help menu. Then, to create an
+Inetnews.log file, use the appropriate method:
+
+Outlook Express 5.0
+-------------------
+
+1. Start Outlook Express.
+
+2. On the Tools menu, click Options.
+
+3. Click the Maintenance tab, under Trouble Shooting, click the News check box
+   to select it. NOTE: You can also create log files for MAIL, IMAP and HTTP
+   this way.
+
+4. Click Apply, and then click OK. If you connect to multiple news servers, an
+   Inetnews.log file is created for each news server.
+
+Outlook Express 4.0
+-------------------
+
+1. Start Outlook Express.
+
+2. On the Tools menu, click Options.
+
+3. On the Advanced tab, under Logging Options, click the News Transport check
+   box to select it.
+
+4. Click Apply, and then click OK. If you connect to multiple news servers, an
+   Inetnews.log file is created for each news server.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n. outexw95
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress95Search kbOutlookExpress500Win95 kbOutlookExpress400Win95 kbMSN500 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6,4.0,5,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

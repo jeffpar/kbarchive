@@ -1,0 +1,76 @@
+DOCUMENT:Q172118  01-APR-2000  [sna]
+TITLE   :Failure to Open Domain Error Displayed Too Soon By Manager
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP1
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When trying to open SNA Server subdomains, SNA Server Manager may display a
+
+   Failed to Open Domain
+
+error message prematurely. The SNAOLE error message pops up stating that the
+domain could not be found but then the domain is opened normally.
+
+CAUSE
+=====
+
+When trying to find the SNA Server configuration file path, a call is made to
+the SNA Server DMOD (SNADMOD.DLL). If the DMOD is locked doing an Open
+connection which times out, the call does not return for a while. This call has
+a timeout of 10 seconds, after which the "Failed to Open Domain" message was
+displayed.
+
+RESOLUTION
+==========
+
+An update has been made that increases the timeout for the call to find the SNA
+Server configuration file path to 60 seconds to reduce the likelihood of this
+problem occurring. During this 60 seconds, SNA Server Manager is unable to
+respond to user input.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server, versions
+3.0 and 3.0 SP1. This problem was corrected in the latest SNA Server version 3.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP1
+Version           : WINDOWS:3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

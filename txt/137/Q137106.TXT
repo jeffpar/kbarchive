@@ -1,0 +1,49 @@
+DOCUMENT:Q137106  06-AUG-1999  [msnetwork]
+TITLE   :Internet Mail Accepts Only Files as Attachments
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.6
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.0, 1.05, 1.2, 1.3, 2.0, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An attachment to an e-mail message you send to the Internet can only be a file,
+not a message or object (such as a shortcut).
+
+MORE INFORMATION
+================
+
+If you insert a message or object into an Internet e-mail message, The Microsoft
+Network removes the inserted message or object before sending the e-mail
+message.
+
+Additional query words: msn 1.00 2.00 2.50 2.60
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN260 kbMSN105 kbMSN250 kbMSN120
+Version           : WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.6
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

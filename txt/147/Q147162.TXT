@@ -1,0 +1,56 @@
+DOCUMENT:Q147162  30-MAR-2000  [winnt]
+TITLE   :SMS File AUDIT.RUL Updated
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The file, AUDIT.RUL, is used by the Systems Management Server (SMS) Audit
+program to audit the software inventory of SMS clients. The AUDIT.RUL file that
+was delivered with SMS 1.1 has been updated with a pre-release version of
+AUDIT.RUL for the next version of SMS.
+
+This file has been updated with new file sizes and additional rules for over 5300
+software packages.
+
+MORE INFORMATION
+================
+
+This file is available for download in the following location:
+
+   FTP://ftp.microsoft.com/bussys/winnt/sms-public/msaudit.zip
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

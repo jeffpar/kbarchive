@@ -1,0 +1,69 @@
+DOCUMENT:Q184737  10-APR-1999  [exchange]
+TITLE   :XADM: Cannot Start Information Store and MTA After Setup /R Usin
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Microsoft Exchange Server using service account "A" and then
+later reinstall the server using a different service account ("B" for example),
+when you start the information store and the message transfer agent (MTA), you
+will receive the following error message:
+
+   The Microsoft Exchange Information Store service returned service
+   specific error 4021" (DS_E_INSUFFICIENT_ACCESS_RIGHTS)
+
+   Could not start the Microsoft Exchange MTA service on \\server name,
+   Error2140: an internal Windows NT error occurred.
+
+CAUSE
+=====
+
+The service account you specified during the reinstall does not have permissions
+in the Exchange Server hierarchy.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps:
+
+1. Perform a Remove All.
+
+2. Reinstall Setup /r using the original service account.
+
+3. Restore data from tape.
+
+All services should now start.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

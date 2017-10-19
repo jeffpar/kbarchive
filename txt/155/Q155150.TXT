@@ -1,0 +1,61 @@
+DOCUMENT:Q155150  12-JUN-2001  [homekids]
+TITLE   :Writer 2: Email Asks for Exchange Profile if Exchange Is Not Run
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:2.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send an e-mail package from Creative Writer when your e-mail program is
+not currently running, you may be asked to choose an e-mail profile even if you
+only have one profile on the machine and/or you have set a default profile using
+the Mail And Fax feature in Control Panel.
+
+NOTE: This behavior has been observed with Microsoft Exchange installed on
+Microsoft Windows 95 and Windows NT 4.0. Microsoft Exchange is a MAPI (Messaging
+Application Programming Interface) compliant e-mail program. Microsoft did not
+test other e-mail programs during the writing of this article.
+
+RESOLUTION
+==========
+
+Make sure your e-mail program is running before you try to send an e-mail
+package from Creative Writer.
+
+MORE INFORMATION
+================
+
+If the e-mail program is open at the time you send the email package, you may
+not be prompted for a profile.
+
+Additional query words: kids mskids max writer CW CW2 profiles
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbCreativeWriter200
+Version           : 2.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

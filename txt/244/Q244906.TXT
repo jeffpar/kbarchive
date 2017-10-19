@@ -1,0 +1,59 @@
+DOCUMENT:Q244906  27-OCT-2000  [sms]
+TITLE   :Deny Access to Programs with Software Metering in Offline Mode
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Microsoft Systems Management Server (SMS) Software Metering
+feature in Offline mode to prevent users from starting programs, such as games
+or a virus program, rather than just enforcing product license limits.
+
+MORE INFORMATION
+================
+
+A list of forbidden programs can be downloaded to the clients on each
+configuration cycle. These programs cannot run even when the client is in
+Offline mode. Also, it is irrelevant as to whether or not the client can connect
+to the license metering server.
+
+To add a product to the list of forbidden programs, license the product, and then
+delete its "Access times" value, so that there is no valid time in which this
+program can run.
+
+After the preceding configuration is downloaded to the client, the product cannot
+start when requested.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : :2.0,2.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

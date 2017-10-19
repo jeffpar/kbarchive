@@ -1,0 +1,126 @@
+DOCUMENT:Q187553  11-JAN-2001  [vbwin]
+TITLE   :BUG: Error 10 Attempting to ReDim or Erase an Array
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using arrays of user-defined types (UDTs) with a With statement inside a
+For loop, Visual Basic will not unlock the array when exiting the loop with an
+Exit For statement. If you attempt to re-dim or erase the array, the following
+run-time error is received:
+
+   Run-time error 10
+   This array is fixed or temporarily locked
+
+RESOLUTION
+==========
+
+Avoid using Exit For inside a With statement. A GoTo statement should be used
+instead.
+
+NOTE: Be sure that the End With statement is executed. If the statement is not
+executed, you will receive the above error message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The array is locked because an array element is being pointed at by the With
+statement. The array is unlocked when you exit the With statement normally at
+End With, but is not unlocked when you exit the With statement early with Exit
+For.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+   default.
+
+2. Place a CommandButton on Form1. Note that you will add code for the button in
+   step 6.
+
+3. Add a new Module (Module1) to the project.
+
+4. In the Module1 code window, define the following user-defined type:
+
+         Type MyType
+           lTest as Long
+         End Type
+
+5. Move to the Form1 code window. In the General Declarations define a dynamic
+   array as follows:
+
+         Dim MyArray() As MyType
+
+6. In the Form1 code window, select the (Command1) object, and enter the code
+   for Command1_Click as follows:
+
+         Private Sub Command1_Click()
+            ReDim MyArray(5)
+            Dim i As Long, k As Long
+
+           For i = 0 To 5
+              With MyArray(i)
+                 .lTest = i
+                 If i = 3 Then Exit For
+              End With
+           Next i
+
+           Erase MyArray
+         End Sub
+
+7. Make the project and then run the EXE. When the form opens, click Command1 to
+   reproduce the error mentioned above.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q176049 : BUG: Run-time Error "This Array is Fixed or Temporarily Locked"
+
+Additional query words: kbDSupport kbdss kbVBp500bug kbNoKeyWord kbVBp600bug
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

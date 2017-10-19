@@ -1,0 +1,73 @@
+DOCUMENT:Q174863  25-MAR-2002  [win95x]
+TITLE   :DNS Name Queries Only Sent Through One Network Adapter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1,2,2.1
+OPER/SYS:
+KEYWORDS:kbnetwork osr1 osr2 win95 kbAPI kbSDKPlatform kbWinsock kbGrpDSNetkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 may be unable to locate and connect to some network resources when
+multiple network adapters are installed on the computer running Windows 95.
+
+For example, if Dial-Up Networking is used in conjunction with a Local Area
+Network (LAN), you may be unable to connect to resources on the LAN while a
+Dial-Up Networking connection is active.
+
+CAUSE
+=====
+
+When Windows 95 attempts to resolve a Transmission Control Protocol/Internet
+Protocol (TCP/IP) Domain Name Service (DNS) network name, only one network
+adapter is used to send the DNS name queries even though there may be more than
+one network adapter installed. Thus, DNS name queries for a resource on one
+network may be sent to the wrong network. The result is that the name is not
+known and cannot be resolved.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork osr1 osr2 win95 kbAPI kbSDKPlatform kbWinsock kbGrpDSNet kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR1 kbWin95OPKOSR210
+Version           : :1,2,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

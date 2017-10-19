@@ -1,0 +1,71 @@
+DOCUMENT:Q74716  02-NOV-1999  [win95x]
+TITLE   :Windows 3.0 File Manager Print Command Can Only Print Text
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By double-clicking an associated file inside of File Manager, you can execute or
+view that file. If, however, you attempt to use File Manager's Print command
+with a file that contains formatting other than text, you may experience
+unreadable text or no printing at all.
+
+This information applies to Microsoft Windows versions 3.0 and 3.0a. This does
+not apply to later versions of Windows.
+
+
+MORE INFORMATION
+================
+
+Most applications have a print command that you can use to print files created
+with the application. You should use that command rather than File Manager's
+Print command whenever possible. Applications usually provides formatting
+capabilities and other options that enhance the appearance of the printed
+material. These formats are not supported by the File Manager Print command.
+
+Only text files will print reliably when using File Manager. (Files created by
+Notepad, for example, are text files.) Text files contain no special formatting
+or characters and are usually identified by a .TXT extension. If you use File
+Manager's Print command to print a file that is not a text file, some unreadable
+characters may appear in the printout, or nothing may print at all.
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide." Version 3.0, page 134.
+
+KBCategory: kbtool KBSubcategory: win30 win31 Additional query words: 3.00 3.0
+3.0a 3.00a win30
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

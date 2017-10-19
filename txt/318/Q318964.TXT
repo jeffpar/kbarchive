@@ -1,0 +1,79 @@
+DOCUMENT:Q318964  12-APR-2002  [msnetwork]
+TITLE   :How To Add An MSN News Server To Microsoft Entourage
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Internet Access for Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to add a MSN News Server account to Macintosh Outlook
+Express
+The information in this article applies to:  - Microsoft Entourage
+
+MORE INFORMATION
+================
+
+To add a POP3 MSN e-mail account to Microsoft Entourage
+
+1. Start Microsoft Entourage.
+
+2. Click Tools, and then click Accounts.
+
+3. In the Accounts window, click the News tab, and then click New.
+
+4. Select Hotmail as the Account Type, and then click OK.
+
+5. On the Edit Account window, configure the account using the following
+   settings:
+   1. Account name: Type a user-friendly name to describe the account.
+      Example: MSN News
+
+   2. E-mail account: Type the name of e-mail account you want to have
+      associated with messages posted to the news server. This is the account
+      name that will appear to others who read your postings.
+      Example: John Doe
+
+   3. Organization: Type an organization. This is an optional field.
+      Example: Microsoft Corporation
+
+   4. News Server: Type netnews.msn.com
+      Select the This server requires me to log on check box.
+
+   5. Account ID: Type your MSN member ID.
+
+   6. Save password: Type your password in this field, and then select the check
+      box if you do not want to be prompted each time you check your e-mail.
+
+6. Click OK to close the Edit Account window.
+
+Additional query words: kbimu Mac MSN OSX OS X ten connect IE internet outlook OLEXP OE
+
+======================================================================
+Keywords          :  
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,63 @@
+DOCUMENT:Q269807  12-NOV-2001  [homekids]
+TITLE   :MSB: Computer Hangs When You Eject The Magic School Bus CD-ROM
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's The Magic School Bus in Concert 
+ - Scholastic's The Magic School Bus Lands on Mars 
+ - Scholastic's The Magic School Bus Discovers Flight, version 1.0 
+ - Scholastic's The Magic School Bus Whales and Dolphins, version 1.0 
+ - Scholastic's Magic School Bus Series: Volcanoes, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you eject the Microsoft Scholastic's The Magic School Bus in Concert CD-ROM
+or the Microsoft Scholastic's The Magic School Bus Lands on Mars CD-ROM while
+the program is running, you may experience any of the following symptoms:
+
+ - You may receive an "Invalid Page Fault" error message.
+
+ - Your computer may stop responding (hang).
+
+ - Your computer may become unstable.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, do not eject the program CD-ROM while the
+program is running.
+
+If you need to eject The Magic School Bus CD-ROM, quit the program, and then
+eject the CD-ROM.
+
+Additional query words: kids msbconcert msbmars cdrom disc disk
+
+======================================================================
+Keywords          : mskids kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticVolcanoes kbScholasticFlight kbScholasticMars kbScholasticWhales kbMSBSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

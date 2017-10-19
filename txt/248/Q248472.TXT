@@ -1,0 +1,63 @@
+DOCUMENT:Q248472  09-NOV-2001  [homegame]
+TITLE   :Training Instructions State That You Are Facing Enemy Planes
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbui igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you crash after you destroy all of the enemy planes during a training mission
+in Microsoft Fighter Ace II, the training instructions may inform you that you
+are facing enemy planes even though no enemy planes remain.
+
+CAUSE
+=====
+
+This behavior can occur because destroyed enemy planes do not respawn when you
+crash in a training mission.
+
+RESOLUTION
+==========
+
+To work around this issue, press ESC, and then click Yes to end the game and
+return to the pre-flight settings screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Fighter Ace version
+2.0 for Zone.com.
+
+Additional query words: 2.00 msngz igz fa regenerate
+
+======================================================================
+Keywords          : kbdisplay kbui igz kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch kbFighterAce2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

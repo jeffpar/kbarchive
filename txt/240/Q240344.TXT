@@ -1,0 +1,69 @@
+DOCUMENT:Q240344  17-MAR-2001  [sms]
+TITLE   :SMS: Clients Do Not Report Advertisement Status
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a new advertisement and verify that it has run on a targeted
+client, the advertisement status may not be updated with Received, Failures,
+Programs Started, Program Errors, or Program Success. All values stay at zero,
+regardless of the advertisements that are running.
+
+CAUSE
+=====
+
+This behavior can occur if Milestone client status messages have been disabled
+and clients are no longer generating the status messages required to update the
+Advertisement Status fields, or if Milestone server component status messages
+are not being reported into the SQL database.
+
+RESOLUTION
+==========
+
+To turn client status messages back on, navigate to Site Database, Site
+Code-Name, Site Settings, Component Configuration, and then Status Reporting
+(properties). Verify that the "Report All Milestones" option is enabled for
+Client Component Status Reporting.
+
+MORE INFORMATION
+================
+
+By default, the Report All Milestones and Report Details On Failure options for
+both Client Component Status Reporting and Server Component Status Reporting are
+enabled.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

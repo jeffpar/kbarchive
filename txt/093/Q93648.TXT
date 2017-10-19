@@ -1,0 +1,67 @@
+DOCUMENT:Q93648  09-OCT-1999  [utilities]
+TITLE   :FIX: Program Hangs at Startup When 109 Segments in Application
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::5.1,5.13,5.15
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 5.1, 5.13, 5.15 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to run an application fails when the computer hangs and stops
+responding. In some cases, the message "illegal instruction" appears before the
+computer hangs.
+
+CAUSE
+=====
+
+The application contains exactly 109 segments.
+
+RESOLUTION
+==========
+
+To work around this problem, modify the application to change the number of
+segments it contains.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in LINK versions 5.1, 5.13, and
+5.15. This problem was corrected in LINK version 5.2.
+
+MORE INFORMATION
+================
+
+To determine the number of segments in an application, include the /INF command
+option switch on the LINK command line.
+
+Additional query words: 5.10 5.13 5.15
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK510DOS kbLINK513DOS kbLINK515DOS
+Version           : :5.1,5.13,5.15
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q110212  15-DEC-2000  [winnt]
+TITLE   :Repair Utility Fails if Computer Name is More Than 8 Characters
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows NT Resource Kit includes a utility, REPAIR.EXE, that lets you create
+a new Emergency Repair Disk from current registry settings. If your computer
+name is longer than eight characters, creating a new Emergency Repair Disk
+fails.
+
+Example
+-------
+
+REPAIR /s /x /nPRODUCT /pA:
+
+This will override the default computer name with the name PRODUCT.
+
+CAUSE
+=====
+
+The utility creates a directory using the computer name. Because the disk is
+formatted as FAT, it does not accept a name longer than eight characters for a
+directory name.
+
+WORKAROUND
+==========
+
+To avoid this problem, use the /n switch and specify an alternate name.
+
+REFERENCES
+==========
+
+Windows NT Resource Kit, Tool Help
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbother 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

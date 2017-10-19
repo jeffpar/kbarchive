@@ -1,0 +1,59 @@
+DOCUMENT:Q176744  15-MAR-1999  [exchange]
+TITLE   :XCLN: Installing Outlook on OWA Server Causes Access Failure
+PRODUCT :Microsoft Exchange
+PROD/VER:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you install a Microsoft Outlook client, version 8.03 on a Microsoft Exchange
+Server computer that has the Outlook Web Access (OWA) component installed, it
+may cause access to calendar information to be unavailable or generate Access
+Denied errors on OWA clients.
+
+CAUSE
+=====
+
+The Outlook Client, version 8.03 installs and registers Active Messaging version
+1.1. This can cause problems with Collaborative Data Objects (CDO) version 1.2
+in the OWA component.
+
+WORKAROUND
+==========
+
+Run the Microsoft Exchange Server Setup program and select reinstall to update
+CDO to version 1.2.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550
+Version           : 5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

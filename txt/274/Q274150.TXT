@@ -1,0 +1,95 @@
+DOCUMENT:Q274150  08-NOV-2000  [iis]
+TITLE   :Web Page Does Not Display Data from Include File
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an HTML or HTM page contains an include file, the data from the include
+file may not display in the browser. A blank space is displayed where the
+include file data should be.
+
+CAUSE
+=====
+
+HTML and HTM files do not interpret include files by default.
+
+RESOLUTION
+==========
+
+Map the .html and .htm extensions to the Ssinc.dll file by performing the
+following steps. Ssinc.dll is the ISAPI filter responsible for parsing
+server-side include files.
+
+1. In the Internet Service Manager, select the virtual directory where the .htm
+   or .html page resides, right-click the directory, and then click Properties.
+   (If the page resides in the root directory of the Web site, right-click the
+   Web site, and then click Properties.)
+
+2. On the Virtual Directory tab, click the Configuration button. If there is no
+   Configuration button available, click Create, and then click Configuration.
+   (If you are viewing the properties of a Web site, the Configuration button is
+   on the Home Directory tab.)
+
+3. On the App Mappings tab, click Add.
+
+4. In the Executable field, browse to Winnt\System32\Inetsrv\Ssinc.dll, and then
+   click Open.
+
+5. In the Extension field, type .html, and then click OK.
+
+6. Repeat steps 3 through 5 to map the .htm extension to Ssinc.dll.
+
+7. Apply the settings, and then click OK twice.
+
+When the client requests the .html or .htm page containing an include file,
+Ssinc.dll will parse the include file.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q246806 Access Denied for the Default Document File Mapped to Ssinc.dll
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

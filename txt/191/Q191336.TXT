@@ -1,0 +1,153 @@
+DOCUMENT:Q191336  31-JUL-2001  [sms]
+TITLE   :SMS: How to Create a Custom Remote Control Group in SMS
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+The information in this article is intended to help set up a group that will be
+primarily responsible for performing the Remote Control functions of a
+production help desk. This article will cover how to set up the IDs in SQL
+Server and Systems Management Server as well as how to update the clients in the
+site so that the newly created group can take remote control of the computers.
+
+MORE INFORMATION
+================
+
+The first task in this process is the creation of the ID in the SQL Enterprise
+Manager. With SQL Server in Standard security, the steps in creating this ID
+are:
+
+1. Open the SQL Enterprise Manager.
+
+2. Open the Databases folder and expand the SMS database so that the folders
+   Groups/Users and Objects appear.
+
+3. Under the SMS database, right-click the Groups/Users folder and then click
+   New Group on the shortcut menu to create a new group for the users that will
+   have the Remote Control responsibilities.
+
+4. Type the name of the group, click Add to create it, and then click Close.
+
+5. Right-click the Logins folder at the bottom of the SQL Server tree and then
+   click New Login on the shortcut menu.
+
+6. Add the name of the login and give it a password. Give this new user the
+   Permit right to the SMS database. Click the Group field for the SMS database
+   to reveal the Group drop-down menu. Specify the group that you created in
+   steps 4 and 5 and then click Add. Repeat steps 5 and 6 for each user you want
+   to create.
+
+7. Open and log in to the SMS Security Manager. This may take a few minutes.
+
+8. In the ID drop down box in the upper left, you should see "dbo" by default.
+   Change this to the new login ID that you just created in the SQL Enterprise
+   Manager. All of the Objects listed should show "NO ACCESS" in both Proposed
+   and Current Rights.
+
+9. Give the following objects these rights:
+
+      Alerts                No Access
+      Architectures         View
+      Diagnostics           Full
+      Events                No Access
+      Helpdesk              Full
+      Jobs                  No Access
+      Machine Groups        No Access
+      Network Monitor       No Access
+      Packages              No Access
+      Program Groups        No Access
+      Queries               No Access
+      Site Groups           View
+      Sites                 View
+      SNMP Traps            No Access
+
+   NOTE: View permissions is the minimum for the Architectures object because
+   this is required to be able to see the Sites window.
+
+10. Click Security at the top menu and then click Save User. Repeat steps 8-10
+   for each user that you had created in SQL Enterprise Manager. Close SMS
+   Security Manager when you are finished.
+
+To notify the clients of this new group, you must perform the steps below. these
+steps involve making a change to the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+1. On the servers that you DO NOT want the help desk group to have access to, go
+   to HKLM\SOFTWARE\MICROSOFT\SMS\CLIENT SERVICE\REMOTE CONTROL and change the
+   Override Site Permitted Viewer List option to 1.
+
+2. In the Systems Management Server Administrator program, open the Site
+   Properties by selecting the site in the Sites window, clicking File menu, and
+   then clicking Properties.
+
+3. Click Clients and select the Proposed Properties radio button, followed by
+   the now-enabled Options button.
+
+4. In the Allow Access For These Users box, add the new Remote Control group to
+   the list.
+
+5. Click OK until you have closed out of the Site Properties. Then click Yes to
+   update the site.
+
+6. Using a text editor such as Notepad, open and save the System.map file
+   WITHOUT making any changes. Doing this causes all clients to begin the
+   Upgrade process upon the next client logon. For more information, see the
+   following article in the Microsoft Knowledge Base:
+
+   Q166771 SMS: How to Force Site-Wide Client Updates
+
+This procedure allows a system administrator to off-load the remote control
+responsibilities to the help desk or other group if the SQL Server is using
+Standard security.
+
+Additional query words: smsremctrl smsrc RC prodsms helpdesk SEM
+
+======================================================================
+Keywords          : kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

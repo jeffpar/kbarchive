@@ -1,0 +1,56 @@
+DOCUMENT:Q179574  10-OCT-1999  [msnetwork]
+TITLE   :How to Update Access Numbers for MSN 2.0
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to update access numbers for MSN, The Microsoft
+Network, version 2.0.
+
+MORE INFORMATION
+================
+
+To update access numbers for MSN 2.0, use the following steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "msn:1:194246:0:0" (without quotation marks), and then
+   click OK.
+
+3. In the MSN Sign-In screen, type your MSN Member ID and password, and then
+   click Connect.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN200
+Version           : WINDOWS:2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

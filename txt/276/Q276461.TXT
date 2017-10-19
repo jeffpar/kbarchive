@@ -1,0 +1,67 @@
+DOCUMENT:Q276461  20-OCT-2000  [msnetwork]
+TITLE   :Idle time settings in MSN 5.3, how to change or remove
+PRODUCT :The Microsoft Network
+PROD/VER::5.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 5.3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MSN version 5.3 has removed the Connection Settings box from the Quick View
+icon. MSN 5.3 depends on the Windows idle time settings feature.
+
+To remove the idle time settings in MSN version 5.3:
+----------------------------------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Internet Options and then click the Connections tab
+
+3. Select MSN (default), click Settings and then click Advanced.
+
+4. If using Internet Explorer 5.x, clear the Disconnect if idle for # minutes
+   checkbox, clear the Disconnect when connection may no longer be needed
+   checkbox, and then click OK.
+
+   -or
+
+   If using Internet Explorer 4.x, clear the Disconnect if idle for # minutes
+   checkbox and then click OK.
+
+5. Click OK, click OK again, and then close the Control Panel.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN530
+Version           : :5.3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

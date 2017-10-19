@@ -1,0 +1,91 @@
+DOCUMENT:Q255757  11-JAN-2001  [vbwin]
+TITLE   :PRB: Circular Dependency Error When UDT Is Not In Base Class Mod
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbCompiler kbCOMt kbCtrlCreate kbInprocSvr kbVBp kbVBp600bug kbGrpDSVB kbDSup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A circular dependency compilation error can occur when a User Defined Type (UDT)
+is defined in a class module that implements another base class interface, and
+the base class module has references to the UDT.
+
+RESOLUTION
+==========
+
+Move the UDT definition to the base class module.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Visual Basic ActiveX DLL project. Class1 is created by default.
+
+2. Add the following code to the General Declarations section of Class1:
+
+   Public Function myFunct() As myUDT
+   End Function
+
+3. On the Project menu, select Add Class Module, and then add Class2 to the
+   project.
+
+4. Add the following code to the General Declarations section of Class2:
+
+   Public Type myUDT
+       iNum As Integer
+   End Type
+
+   Implements Class1
+
+   Private Function Class1_myFunct() As myUDT
+   End Function
+
+5. Run the project. The following error is raised:
+
+   Compile Error:
+   Circular dependencies between modules.
+
+6. To correct the problem, move the definition of myUDT from Class2 to Class1
+   and run the project again. No error occurs.
+
+Additional query words: UDType
+
+======================================================================
+Keywords          : kbActiveX kbCompiler kbCOMt kbCtrlCreate kbInprocSvr kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

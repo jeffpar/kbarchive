@@ -1,0 +1,82 @@
+DOCUMENT:Q316326  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Game Quits or Err Msg: Client Has Encountered...
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Asheron's Call on Microsoft Windows XP, you may receive
+the following error message:
+
+   Client has encountered a problem and needs to close. We are sorry for the
+   inconvenience.
+
+If you click "click here", a dialog box is displayed with the following
+information about the error:
+
+   Error Signature
+   AppName: client.exe AppVer: 1.0.x.0 ModName: <ModName>
+
+where <ModName> is Decal.dll, Inject.dll, Decalnet.dll, or
+fearghalfilters.dll.
+
+If you are not running Microsoft Windows XP, the game may quit, but you do not
+receive an error message.
+
+CAUSE
+=====
+
+This issue can occur when you use a third-party add-in module with Asheron's
+Call. The add-in module interferes with the normal operation of the game.
+
+RESOLUTION
+==========
+
+To resolve the problem, disable the third-party add-in module, or contact its
+manufacturer for an update.
+
+A popular third-party add-in module used with the game is named Decal. To disable
+Decal, right-click the Decal icon in the Windows notification area (looks like a
+silver AC logo), and then click Exit.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

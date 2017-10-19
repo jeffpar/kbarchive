@@ -1,0 +1,89 @@
+DOCUMENT:Q162252  08-DEC-2001  [foxpro]
+TITLE   :BUG: Erroneous "Class Definition is Cyclical" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,6.0,7.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500bug kbvfp600bug kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a container with nested controls to another container in Class
+Designer, the following error message appears:
+
+   Class definition is cyclical
+
+This behavior does not occur in Visual FoxPro 3.0b.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code illustrates the error:
+
+      CLEAR ALL
+      DELETE FILE cyctest.vcx
+      DELETE FILE cyctest.vct
+      KEYBOARD "{y}" CLEAR
+      CREATE CLASS pf AS PAGEFRAME OF cyctest NOWAIT
+      RELEASE WINDOW "Class Designer"
+
+      LOCAL aobj[1], xx
+      CREATE CLASS c1 AS CONTAINER OF cyctest NOWAIT
+      =ASELOBJ(aObj,1)
+      xx=aObj[1]
+      SET CLASSLIB TO cyctest
+
+      xx.ADDOBJECT('pf1','pf')
+      xx.pf1.Page1.ADDOBJECT('pf2','pf')
+
+      KEYBOARD "{y}" CLEAR
+      RELEASE WINDOW "Class Designer"
+
+      CREATE CLASS c2 OF cyctest AS CONTAINER NOWAIT
+      =ASELOBJ(aObj,1)
+      xx=aObj[1]
+      xx.ADDOBJECT('c11','c1')
+
+      SET CLASSLIB TO
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp500bug kbvfp600bug kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : :5.0,6.0,7.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q132884  18-DEC-2000  [win95x]
+TITLE   :Icons Are Not Displayed Correctly with Microsoft Plus!
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a desktop theme in Microsoft Plus! for Windows 95, the
+desktop, taskbar, and Windows Explorer icons may appear distorted.
+
+CAUSE
+=====
+
+This problem can occur if the "mono graphics acceleration" setting is used for
+the video driver. This setting prevents the video driver from displaying the
+icons correctly.
+
+RESOLUTION
+==========
+
+To correct this problem, follow these steps:
+
+1. Click the Start button, point to Settings, then click Control Panel.
+
+2. Double-click the System icon.
+
+3. On the Performance tab, click Graphics.
+
+4. Move the Hardware Acceleration slider all the way to the left.
+
+5. Click OK.
+
+NOTE: If you re-install Windows 95, this setting is returned to its default
+value. You must follow these steps again after re-installing Windows 95.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

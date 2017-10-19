@@ -1,0 +1,116 @@
+DOCUMENT:Q163665  26-SEP-2001  [frontpg]
+TITLE   :FP: General File Transfer Error -3 Installing FrontPage
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbnetwork kbsetup kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft  version of this article, see Q194222.
+
+SYMPTOMS
+========
+
+When you install Microsoft FrontPage on a computer that is running a shared
+network installation of Microsoft Office 7.0, Microsoft Excel 7.0, Microsoft
+Word 7.0, or Microsoft PowerPoint 7.0, you may receive one of the following
+error messages:
+
+   Severe: General File Transfer Error -3.
+   Please check your target location and try again.
+
+
+-or-
+
+   General file transfer error. Please check your target location and try
+   again.
+
+   Error Number: -3
+
+
+CAUSE
+=====
+
+You do not have write privileges to the network share that contains the Office
+95 shared components. Microsoft FrontPage shares text converters and proofing
+tools with Microsoft Office applications. During installation, FrontPage setup
+attempts to upgrade some of these shared components. If the Setup program cannot
+upgrade these components, you will receive the first error message described in
+the "Symptoms" section.
+
+RESOLUTION
+==========
+
+Use one of the following methods to install FrontPage 97.
+
+Case 1: If You Do not Have Write Privileges to the Network Share
+----------------------------------------------------------------
+
+From any workstation that uses the shared components on the network server, grant
+write permissions to the network server, and then run FrontPage Setup one time.
+After the Setup program has completed and the shared components are upgraded,
+you can run subsequent installations without setting write permissions to the
+shared network server.
+
+NOTE: This error does not occur with shared installations of Office 97 because
+the shared components in Office 97 do not need to be upgraded by FrontPage
+Setup.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q160833 FP97: How FrontPage Handles Document Conversion to HTML
+
+   Q160226 FP97: Cannot Use Proofing Tools or Text Converters
+
+
+Case 2: If FrontPage Is Installed in the Root Directory
+-------------------------------------------------------
+
+1. On the Windows Start menu, point to Settings, and then click Control Panel.
+
+2. Double-click the Add/Remove Programs icon.
+
+3. Uninstall FrontPage. From the list of installed programs, select Microsoft
+   FrontPage and click Add/Remove.
+
+4. Start the FrontPage 97 Setup program.
+
+5. Select a destination directory other than the root directory. To do this,
+   click Browse when you are prompted to select the Destination Directory.
+   Select the C:\Program Files\Microsoft FrontPage directory, for example. If
+   you receive a message asking you if you want to create this directory, click
+   Yes.
+
+6. Follow the instructions on your screen.
+
+Additional query words: 97 2.0 NT -3 front page
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbnetwork kbsetup kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

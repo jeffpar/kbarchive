@@ -1,0 +1,231 @@
+DOCUMENT:Q271621  12-OCT-2001  [vbwin]
+TITLE   :HOWTO: Retrieve XML Data with a Template File from a VB Client
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.6,2.7,3.0,4.0,6.0
+OPER/SYS:
+KEYWORDS:kbXML kbGrpDSVBDB kbDSupport kbMDAC260 kbMSXML260 kbMSXML300 kbATM kbmdac270 kbMSXML400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Data Access Components versions 2.6, 2.7 
+ - Microsoft SQL Server 2000 (all editions) 
+ - Microsoft XML, versions 2.6, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This sample in this article demonstrates how to retrieve an XML document from
+SQL Server 2000 by using a template file that contains parameters. More
+specifically, a query is issued against SQL Server 2000 by using an ADO 2.6
+command stream. This query fetches the XML DataStream.
+
+This sample reads the "products.xml" template file from disk, and sets the
+command text for the ADODB.Command for the query to run. Properties to be set
+for the ADODB.Command's Properties collection include:
+
+   Base Path - establishes the location where the template and XSL files
+   resides.
+
+   Output Stream - designates where the resulting XML data stream is piped.
+
+   XSL - transforms the XML document.
+
+NOTE: Output Stream may be any object that supports an IStream or
+ISequentialStream interface. Objects that support the IStream interfaces are the
+ADODB.Stream, IIS5 Response object, and an MSXML DomDocument.
+
+MORE INFORMATION
+================
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+   default.
+
+2. On the Project menu, select Components, and then add a reference to both
+   Microsoft Internet Controls and Microsoft ActiveX Data Objects 2.6.
+
+3. Add a Web browser to the form, name it WebBrowser1, and then size it
+   accordingly.
+
+4. Add a frame to the form and place two option buttons in it. Name the first
+   button optXSLYes with the caption XSL Yes, and name the second button
+   optXSLNo with the caption XSL No.
+
+5. Add two command buttons. Name the first button cmdTestIt with the caption
+   Test, and name the second button cmdExitProgram with the caption Exit.
+
+6. Paste the following Visual Basic code in the code window of the form:
+
+   Option Explicit
+   Const DBGUID_DEFAULT As String = "{C8B521FB-5CF3-11CE-ADE5-00AA0044773D}"
+    
+   Private Sub cmdExitProgram_Click()
+       Unload Me
+       End
+   End Sub
+
+   Private Sub cmdTestIt_Click()
+       Dim cn As New ADODB.Connection
+       Dim cmd As New ADODB.Command
+       Dim cmdStream As New ADODB.Stream
+       Dim cmdOutput As New ADODB.Stream
+       Dim txtOutputFileName As String
+       
+       ' open the database connection 
+       cn.Open "provider=sqloledb;data source=.;initial catalog=northwind;uid=sa;pwd="
+       
+       ' open the command stream that will eventually contain the templated query
+       cmdStream.Open
+       ' set the character set to ascii
+       cmdStream.Charset = "ascii"
+       ' set the command stream type to text, not binary.
+       cmdStream.Type = adTypeText
+       ' read the template file from disk into the command stream to execute
+       cmdStream.LoadFromFile App.Path & "\products.xml"
+       ' set the command connection
+       Set cmd.ActiveConnection = cn
+       ' set the command's command stream to hook the template query to the command you want to run.
+       Set cmd.CommandStream = cmdStream
+       ' set the command dialect
+       cmd.Dialect = DBGUID_DEFAULT
+       ' open the output stream to receive the results for the command execute.
+       cmdOutput.Open
+       ' set the base path for where the template file resides. 
+       ' Currently, this must point to a file on disk. Remote templates via
+       ' http://...template.xml" are not allowed.
+       cmd.Properties("Base Path") = App.Path
+       ' set up the output stream that will receive the output of the command execute.
+       cmd.Properties("Output Stream") = cmdOutput
+       
+       ' set the XSL to process if the user requested the output to be fixed.
+       If optXSLYes Then
+           ' set the file name for the XSL: this inherits the "base path" setting
+           cmd.Properties("XSL") = "products.xsl"
+           ' set the file extension to ".htm", mainly so the Web browser displays
+           ' set the output as a table.   Try with a ".xml" extension... what is displayed?
+           txtOutputFileName = App.Path & "\queryout.htm"
+       Else
+           txtOutputFileName = App.Path & "\queryout.xml"
+       End If
+
+       ' execute the command stream with the settings specified above.
+       cmd.Execute , , adExecuteStream
+       ' position the stream back to the beginning: the "file position" in the 
+       'stream will be at the end of the stream.  Writing to a stream will append
+       'on the end and only while the output from the command execute generates.
+       cmdOutput.Position = 0
+       'save the output to a file, this is only needed to use the navigate on the Web browser control
+       cmdOutput.SaveToFile txtOutputFileName, adSaveCreateOverWrite
+       ' Navigate/display the results of the command executes.
+       WebBrowser1.Navigate txtOutputFileName
+       
+       ' close and clean-up the objects used.
+       cmdOutput.Close
+       cmdStream.Close
+       cn.Close
+       
+       Set cmdOutput = Nothing
+       Set cmdStream = Nothing
+       Set cmd = Nothing
+       Set cn = Nothing
+       
+   End Sub
+
+7. To create a template file, create a new text file, paste the following
+   template into the file, and then save it with a name of products.xml:
+
+   <?xml version='1.0' ?>          
+   <root xmlns:sql="urn:schemas-microsoft-com:xml-sql">
+       <sql:header>
+           <sql:param name="ProdName">%</sql:param>
+       </sql:header>
+       <sql:query>
+           SELECT      *
+           FROM        Products
+           WHERE       ProductName like '%' + @ProdName + '%'
+           ORDER BY    ProductName                     
+           FOR XML AUTO
+       </sql:query>
+   </root> 
+
+8. As an option, create a file named products.xsl with the following code to
+   transform the output:
+
+   <?xml version='1.0' ?>          
+   <xsl:stylesheet xmlns:xsl="http://www.w3.org/TR/WD-xsl">
+       <xsl:template match="/">
+           <html>
+               <head>
+                   <title>MSDN ADO Product Sample with SQL Server 2000 Features</title>
+                   <base href="http://localhost/3tier/" />
+               </head>
+               <body>
+                   <table border="0" cellPadding="1" cellSpacing="1"
+                    width="100%" 
+                    style="COLOR:black;FONT-FAMILY:Arial;FONT-SIZE:12pt.;FONT-WEIGHT:500">
+
+                   <tr bgColor="#336699" align="center">
+                       <TD><P ><STRONG><FONT color="white" size="2">Product ID:</FONT></STRONG></P></TD>
+                       <TD><P ><STRONG><FONT color="white" size="2">Product Name:</FONT></STRONG></P></TD>
+                       <TD><P ><STRONG><FONT color="white" size="2">Unit Price:</FONT></STRONG></P></TD>
+                       <TD><P ><STRONG><FONT color="white" size="2">Units In Stock:</FONT></STRONG></P></TD>
+                       <TD><P ><STRONG><FONT color="white" size="2">Restock Level:</FONT></STRONG></P></TD>
+                       <TD><P ><FONT color="white" size="2"><STRONG>Units On Order:</STRONG></FONT></P></TD>
+                   </tr>
+                                   
+                   <xsl:for-each select="root/Products">
+                       <tr style="COLOR: black; FONT-FAMILY: Arial; FONT-SIZE: 0.8em; FONT-WEIGHT: 500">
+                           <td bgColor="#F0F0F0"><xsl:value-of select="@ProductID"/></td>
+                           <td bgColor="#F0F0F0"><xsl:value-of select="@ProductName"/></td>
+                           <td bgColor="#F0F0F0"><xsl:value-of select="@UnitPrice"/></td>
+                           <td bgColor="#F0F0F0"><xsl:value-of select="@UnitsInStock"/></td>
+                           <td bgColor="#F0F0F0"><xsl:value-of select="@ReorderLevel"/></td>
+                           <td bgColor="#F0F0F0"><xsl:value-of select="@UnitsOnOrder"/></td>
+                       </tr>
+                   </xsl:for-each>
+                   </table>
+               </body>
+            </html>
+       </xsl:template>
+   </xsl:stylesheet>
+
+REFERENCES
+==========
+
+For more information about SQL 2000, see SQL Server Books Online.
+
+For more information on XML, see the following Microsoft Web site at:
+
+   http://www.msdn.microsoft.com/xml/default.asp
+
+or see the following site on the World Wide Web at:
+
+   http://www.w3c.org/xml
+
+Additional query words:
+
+======================================================================
+Keywords          : kbXML kbGrpDSVBDB kbDSupport kbMDAC260 kbMSXML260 kbMSXML300 kbATM kbmdac270 kbMSXML400 
+Technology        : kbVBSearch kbSQLServSearch kbAudDeveloper kbZNotKeyword6 kbMSXMLSearch kbSQLServ2000Search kbZNotKeyword2 kbVB600Search kbVB600 kbMDACSearch kbMDAC260 kbSQLServ2000 kbMSXML260 kbMSXML300 kbMDAC270 kbMSXML400
+Version           : :2.6,2.7,3.0,4.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

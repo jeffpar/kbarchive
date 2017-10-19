@@ -1,0 +1,69 @@
+DOCUMENT:Q147577  21-OCT-2000  [pcmail]
+TITLE   :PC Mac: Inserts Carriage Return Before Last Word of Paragraph
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5, on platform(s):
+    - the operating system: Mac OS (all) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you read a message from either Microsoft Mail for Windows or Microsoft Mail
+for PC Networks, MS-DOS or Macintosh workstations, and the last word of a
+paragraph appears on a line by itself, the message was composed by a Mail for PC
+Networks Macintosh workstation on a Mail for PC Networks postoffice.
+
+CAUSE
+=====
+
+The DELETE key was used in the middle of a line or paragraph in which a RETURN
+or "\0" was not entered at the end. The program will add a return to the end of
+the line or paragraph before the last word causing the last word to appear on a
+line of its own.
+
+RESOLUTION
+==========
+
+Press ENTER after you type the last word of a paragraph before you edit the body
+text of the mail message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.5 of Microsoft Mail
+for PC Networks, Macintosh workstation. We are researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+
+Additional query words: 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

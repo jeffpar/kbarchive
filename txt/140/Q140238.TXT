@@ -1,0 +1,69 @@
+DOCUMENT:Q140238  09-MAR-2000  [mastering]
+TITLE   :PRB: Can't Run Mastering Visual FoxPro with ATI Video Drivers
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual FoxPro 3.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Mastering Visual FoxPro demos and video clips exhibit erratic behavior, or demos
+or expert point of view video clips do not run.
+
+CAUSE
+=====
+
+Mastering Visual FoxPro is incompatible with some features of video cards such
+as the Mach32 chip set running the ATI drivers.
+
+RESOLUTION
+==========
+
+For Mastering Visual FoxPro to run on the ATI driver, set the 256 color palette
+control in the Advanced features of the ATI Control Panel to ON. If you still
+encounter some problems, try installing the Microsoft Super VGA driver.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+See the documentation for your video card for more information on the ATI
+driver. See your Windows documentation for more information on the Microsoft
+Super VGA driver.
+
+Additional query words: 1995multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kb3rdparty kbmm 
+Technology        : kbMSPressSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

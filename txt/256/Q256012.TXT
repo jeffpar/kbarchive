@@ -1,0 +1,58 @@
+DOCUMENT:Q256012  18-MAY-2001  [sms]
+TITLE   :SMS: Crystal Reports Services Installed as Local System Accounts
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,4.0; :
+OPER/SYS:
+KEYWORDS:kbenv kbsms200 kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade from Windows NT 4.0 Service Pack 4 to Windows 2000, all Crystal
+Reports services may be installed as local system accounts. As a result, the
+Crystal Reports service does not start or run the Info Agent, Info APS, and Info
+Sentinel services.
+
+CAUSE
+=====
+
+The Crystal Reports services must run with the SMS Service account.
+
+WORKAROUND
+==========
+
+After you upgrade to Windows 2000 and install SMS 2.0 Service Pack 2, use the
+Services tool in Control Panel to change the Crystal Reports services (Info
+Agent, Info APS, and Info Sentinel) to use the SMS Service account.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbsms200 kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0,4.0; :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

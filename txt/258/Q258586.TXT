@@ -1,0 +1,67 @@
+DOCUMENT:Q258586  31-MAR-2000  [homegame]
+TITLE   :Baseball 2001: Cannot Install on Windows 2000-Based Computer
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenable kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be unable to install Microsoft Baseball 2001 on a Microsoft Windows
+2000-based computer.
+
+CAUSE
+=====
+
+This behavior can occur if you are not logged on to the computer as an
+Administrator.
+
+RESOLUTION
+==========
+
+To resolve this issue, log on to the computer as an Administrator.
+
+MORE INFORMATION
+================
+
+If you experience any display-related issues when you play Baseball 2001 on a
+Windows 2000-based computer, contact the manufacturer of your video adapter to
+obtain the latest Windows 2000-compatible video driver for your video adapter.
+
+For additional information about how to optimize display performance in Baseball
+2001, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q258591 Baseball 2001: How to Troubleshoot Video Problems
+
+Additional query words: 1.00 msgame bb2001 bball graphics log in win2k
+
+======================================================================
+Keywords          : kbenable kbsetup kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

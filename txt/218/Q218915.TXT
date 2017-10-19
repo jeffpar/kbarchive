@@ -1,0 +1,78 @@
+DOCUMENT:Q218915  08-MAY-1999  [automap]
+TITLE   :Err Msg: This Program Cannot Continue Running Because of a...
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:98
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets 98, version 98 
+ - Microsoft Expedia Trip Planner 98, version 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Expedia Streets 98 or Microsoft Expedia Trip Planner
+98, you may receive the following error message:
+
+   This program cannot continue running because of a problem with your pushpins.
+
+CAUSE
+=====
+
+This behavior can occur if a file in the Pushpins folder is missing or damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click the program you want to remove, and then click Add/Remove.
+
+4. If you are prompted to restart Microsoft Windows, do so.
+
+5. Click Start, and then click Run.
+
+6. In the Open box, type the following line, and then click OK
+
+   <drive>:\Program Files\Common Files\Microsoft Shared
+
+where <drive> is the drive letter of the hard disk on which Windows is
+installed.
+
+7. Right-click the Pushpins folder, and then click Delete.
+
+8. Close all open windows on your desktop, and then reinstall Expedia Streets 98
+   or Expedia Trip Planner 98.
+
+Additional query words: multi multi-media media mm auto-map amap
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets98 kbExpediaTripPlanner98
+Version           : WINDOWS:98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

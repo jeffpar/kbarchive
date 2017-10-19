@@ -1,0 +1,71 @@
+DOCUMENT:Q120959  22-JUL-2001  [visualc]
+TITLE   :DOC: Documentation on fmod() Is Incorrect
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbdocfix kbCRT kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The fmod(x,y) function returns the floating point remainder of x/y, where x and
+y are floating point numbers. If y is 0.0, fmod should return a NAN(not a
+number) which it does, but the documentation on fmode says incorrectly that it
+should return 0.
+
+The document has been corrected in Visual C++ 2.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+
+   #include <stdio.h>
+   #include <math.h>
+
+   void main(void)
+   {
+    double x=10.0, y=0.0, z;
+
+    z=fmod(x,y);
+    printf("The remainder of %.2f/%.2f is %f\n", x, y, z);
+   }
+
+
+Output
+------
+
+The remainder of 10.00/0.00 is -1.#IND00 // Correct output
+
+Additional query words: 1.00 2.00 double remainder
+
+======================================================================
+Keywords          : kbdocfix kbCRT kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

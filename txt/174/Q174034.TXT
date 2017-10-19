@@ -1,0 +1,65 @@
+DOCUMENT:Q174034  22-JUN-2001  [exchange]
+TITLE   :XWEB: Cannot Cancel Deletion of Meeting Request in OWA
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Outlook Web Access (OWA), if you choose the Delete button in a Meeting
+Request window, the following message will appear:
+
+   The attendees have not been notified that this meeting has been canceled.
+   Press OK to notify the attendees or Cancel to delete the meeting without
+   notification.
+
+NOTE: There is no way to cancel the operation and keep the meeting in your
+schedule at this point. It will be deleted.
+
+If you select OK, you are presented with a message that can be sent to the
+originator of the meeting request. You can either select the Close button or the
+Send button. Whether or not the message is sent, the meeting is deleted from
+your schedule.
+
+If you select Cancel, the meeting is removed from your schedule, and the
+originator of the meeting request is not notified.
+
+CAUSE
+=====
+
+This behavior is by product design.
+
+
+Additional query words: XCLN
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

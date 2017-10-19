@@ -1,0 +1,109 @@
+DOCUMENT:Q218920  11-JUN-2002  [exchange]
+TITLE   :XADM: How to Prevent Logons During Move Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article explains how to move mailboxes between two Exchange Server
+computers in the same site while preventing users from logging on. This is
+useful in situations where you are approaching a disk space limit or a 16-GB
+database limit in Exchange Server versions 4.x and 5.x.
+
+MORE INFORMATION
+================
+
+To restrict logons to the information store and still allow a move mailbox
+operation to complete, follow these steps:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Stop the Information Store Service on the Exchange Server computer.
+
+2. Run Registry Editor (Regedt32.exe).
+
+3. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+   \SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersSystem
+
+4. On the Edit menu, click Add Value, and type "Logon Only As" (without the
+   quotation marks) in the Value Name text box. Type "REG_MULTI_SZ" (without the
+   quotation marks) in the Data Type text box.
+
+5. Click OK. In the Data text box, type the entire Distinguished Name of both
+   the System Attendant mailbox and the Directory Service mailbox of both the
+   source and target servers on separate lines and then click OK. For example:
+
+   /o=OrgName/ou=Site1/cn=Configuration/cn=Servers/cn=Server1/cn=Microsoft System Attendant
+   /o=OrgName/ou=Site1/cn=Configuration/cn=Servers/cn=Server2/cn=Microsoft System Attendant
+   /o=OrgName/ou=Site1/cn=Configuration/cn=Servers/cn=Server1/cn=Microsoft DSA
+   /o=OrgName/ou=Site1/cn=Configuration/cn=Servers/cn=Server2/cn=Microsoft DSA
+
+   NOTE: To find out the Distinguished Name of the mailbox that you would like to
+   add, you may need to start the Exchange Administrator program in raw mode. To
+   do so, at a command prompt, type "c:\exchsrvr\bin\admin.exe /R" (without the
+   quotation marks), where c: is the drive where the admin.exe file is
+   installed.
+
+   In raw mode, select the mailbox that you wish to allow to log on, and on the
+   File menu, click Raw Properties. In this case, choose the System Attendant
+   mailbox and the Directory Service mailbox. You can see the raw properties of
+   these two mailboxes from Mailbox Resources. Next, look for the Object
+   attribute that says Obj-Dist-Name; this is the entry that goes into the
+   registry as mentioned in step 5. You may need to scroll to get the full path.
+
+6. Click OK.
+
+7. Close the Registry Editor.
+
+8. You will need to restart the Information Store service in order for the
+   change to be activated.
+
+   This entry will only allow the mailboxes that have permission to log on, in
+   this case, the System Attendant and Directory mailboxes. Leaving the Logon
+   Only As value blank will prevent everyone from logging on.
+
+   In order to allow all users to log on again, you must stop the Information
+   Store service, then delete the Logon Only As value from the registry, and
+   restart the Information Store service.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

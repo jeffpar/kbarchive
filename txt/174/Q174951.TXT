@@ -1,0 +1,84 @@
+DOCUMENT:Q174951  09-AUG-2001  [winnt]
+TITLE   :Err Msg: Error Copying File Cannot Copy Config Access Is Denied
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install the Zero Administration Kit for Windows 95, you may
+receive one or more of the following error messages:
+
+    - Error Copying File
+   Cannot copy config: Access is denied
+   Make sure the disk is not full or write-protected and that the file is
+   not currently in use.
+
+ - A failure occurred while copying Zero Administration Kit for Windows 95
+   components from the CD to the location you specified. Please check that
+   you have enough disk space prior to running Setup again.
+
+ - Error Copying File
+   Cannot copy config: cannot create or replace. File does not exist.
+
+CAUSE
+=====
+
+This behavior can occur for either of the following reasons:
+
+ - The account that is logged on and is installing the Zero Administration Kit
+   for Windows 95, has insufficient permissions to the NETLOGON share or the
+   network share location for policy files that you specified during setup.
+
+ - You do not have "full" access to the NETLOGON share folder.
+
+RESOLUTION
+==========
+
+To resolve this issue, add the account or group (with at least change
+permissions) to the NETLOGON share or the network share specified during
+installation. For example, if the domain controller computer name is ALPHA, the
+network share location would be \\ALPHA\NETLOGON. On ALPHA, the default NETLOGON
+share would be located at:
+
+   %systemroot%\system32\repl\import\scripts.
+
+Add the appropriate permissions needed for the user or group installing Zero
+Administration Kit for Windows 95.
+
+NOTE: You can use this method, or you can set the NETLOGON share to "full"
+access.
+
+Additional query words: prodnt zak admin 0
+======================================================================
+Keywords          : kberrmsg kbsetup win95 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 1.00
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

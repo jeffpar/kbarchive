@@ -1,0 +1,66 @@
+DOCUMENT:Q85889  10-MAR-2000  [win16sdk]
+TITLE   :PRB: "Unrecognized Linker Switch /NOP" Linking Setup Toolkit
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Building the Setup Toolkit for Windows provided with version 3.1 of the
+Microsoft Windows Software Development Kit (SDK) causes the following error
+message when the application is linked:
+
+   LINK: Fatal error L1001: NOP : option name ambiguous
+
+   -or-
+
+   Unrecognized Linker Switch /NOP
+
+CAUSE
+=====
+
+The Setup Toolkit is built with the Microsoft C/C++ compiler version 7.0. The
+Setup Toolkit files are designed for use with Microsoft C version 6.0.
+
+RESOLUTION
+==========
+
+Modify the CUISTF.LNK and CUISTFD.LNK files in the Setup Toolkit BLDCUI
+directory (by default, C:\WINDEV\MSSETUP\BLDCUI) to replace the /NOP switch in
+the first line with the /NOPACKC switch. The first line of the corrected files
+is as follows:
+
+   /NOL /NOPACKC /align:16 libentry dlgprocs
+
+Additional query words: 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

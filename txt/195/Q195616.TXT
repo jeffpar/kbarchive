@@ -1,0 +1,85 @@
+DOCUMENT:Q195616  12-JUN-2001  [homekids]
+TITLE   :Writer 2: Creative Writer Couldn't Open a Piece of Art Work
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use a Greeting Card template in Microsoft Creative Writer,
+you may receive the following message when you click one of the available
+templates:
+
+   Creative Writer couldn't open a piece of art work.
+
+   If you're just starting Creative Writer, or trying to play a video:
+
+   Check to make sure the Creative Writer CD is in the CD-ROM drive.
+
+   If you're trying to paste some art or music:
+
+   Make sure the CD is in the CD-ROM drive.
+
+   If you were pasting something that you added to an art or music collection,
+   make sure the file is still on your computer and hasn't been moved to a
+   different folder.
+
+   You can delete "lost" files (that you added) - just click the item in the
+   collection, and press the Delete key.
+
+CAUSE
+=====
+
+This behavior can occur if your computer is using real mode (16-bit) drivers to
+access your CD-ROM drive, or if the CD-ROM drive is operating in MS-DOS
+Compatibility mode.
+
+RESOLUTION
+==========
+
+To resolve this issue, verify that you are using protected mode (32-bit) CD-ROM
+drivers. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Performance tab.
+
+4. Verify that the File System entry is 32-bit. If the File System entry is
+   "Some drives are using MS-DOS compatibility," you may be using real mode
+   (16-bit) CD-ROM drivers. Contact the manufacturer of your CD-ROM drive to
+   obtain protected mode drivers for your CD-ROM drive.
+
+Additional query words: cw2.0 thumbnail thumbnails clipart
+
+======================================================================
+Keywords          : kbenv kberrmsg mskids kbimu 
+Technology        : kbHomeProdSearch kbCreativeWriter200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,56 @@
+DOCUMENT:Q97783  08-NOV-2001  [homemm]
+TITLE   :Graphics in Musical Instruments Print Low Resolution
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Musical Instruments for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you print entries from Musical Instruments, you may find that the graphics
+print at a low resolution. This product was primarily designed to be viewed on
+your screen and not for printing. For more information on printing from Musical
+Instruments, see the program's README.TXT file.
+
+MORE INFORMATION
+================
+
+The pictures in Musical Instruments are anti-aliased. Each picture is composed
+of combinations of black and gray pixels. The pictures were designed to display
+well on the screen. However, because of the anti-aliasing, they do not have a
+high print quality.
+
+You can see the alternated pixels of black and gray if you copy a graphic to a
+utility such as BitEdit or IconEdit, which allows you to view the individual
+pixels of which the picture is made.
+
+Additional query words: multimedia multi media multi-media low res dpi image jagged stairstep grey
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbZNotKeyword kbMusicalInst
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q213334  22-OCT-2000  [sms]
+TITLE   :SMS: "All Systems By System Name" Reports Only One NIC
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbClient kbConfig kbDatabase kbsms200 kbDiscovery kbInventory kbQuery kbRepor
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the results of the All Systems By System Name report, you may
+notice that all computers report only one network adapter even though some of
+the reported computers have more than one network adapter installed. You may
+also note that the Internet Protocol (IP) address reported can be from either
+network adapter rather than consistently coming from one or the other (either
+the first or the second network adapter).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Crystal Reports included with
+Microsoft Systems Management Server 2.0.
+
+MORE INFORMATION
+================
+
+Crystal Reports is offered with Systems Management Server 2.0 to provide a
+method of reporting information regarding the site hierarchy. Crystal Reports
+offers the ability to create your own reports yet also provides many reports by
+default. Crystal Reports is a product offered and supported by Seagate
+Technology.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbConfig kbDatabase kbsms200 kbDiscovery kbInventory kbQuery kbReport kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

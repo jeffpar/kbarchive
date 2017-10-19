@@ -1,0 +1,117 @@
+DOCUMENT:Q113170  12-NOV-2000  [powerpt]
+TITLE   :CG: Refreshing ClipArt Gallery Thumbnail Images
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::1.0,1.1,2.0,2.0a,3.0; WINDOWS:3.0,4.0,7.0,97
+OPER/SYS:
+KEYWORDS:kbole kbtool kbui kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Clip Gallery for Windows 95, version 3.0 
+ - Microsoft ClipArt Gallery for Windows 95, version 2.0 
+ - Microsoft ClipArt Gallery, versions 1.0, 1.1 
+ - Microsoft Publisher 97 
+ - Microsoft Publisher for Windows 95, version 3.0 
+ - Microsoft Publisher for Windows, versions 2.0, 2.0a 
+ - Microsoft PowerPoint 97 for Windows 
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft Works, version 3.0 
+ - Microsoft Works for Windows 95, version 4.0, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install or delete Microsoft products, the thumbnail images in the
+ClipArt Gallery may not accurately represent the picture images on your hard
+drive.
+
+For example, the ClipArt Gallery may display more than one copy of the same
+graphic.
+
+CAUSE
+=====
+
+This behavior can occur if you move graphic files, attempt multiple
+installations, and so on.
+
+RESOLUTION
+==========
+
+You can refresh the thumbnail display images in ClipArt Gallery by doing the
+following:
+
+Microsoft Clip Gallery 3.0
+--------------------------
+
+1. Start Clip Gallery.
+
+2. With the right mouse button, click any thumbnail image.
+
+3. Click Update Clip Previews on the Context menu.
+
+4. Click the Update All button.
+
+Microsoft ClipArt Gallery 2.0
+-----------------------------
+
+1. Start ClipArt Gallery.
+
+2. Click the Organize button.
+
+3. Click the Update Pictures button.
+
+4. Click the Update All button.
+
+Microsoft ClipArt Gallery 1.0 and 1.1
+-------------------------------------
+
+1. Start ClipArt Gallery.
+
+2. Click the Options button.
+
+3. Click the Refresh button.
+
+4. You will be prompted for a drive from which to search for graphic files.
+   Insert a blank, formatted disk in either drive A or B and select the
+   corresponding drive letter from the choices of drives to search. Click OK.
+
+5. When you receive the following message:
+
+   We do not recommend that you add clipart from this drive to the ClipArt
+   Gallery because you will always need to have this disk available to put this
+   clipart into your document. Do you want to add it anyway?
+
+   click Add.
+
+When you select a drive containing no graphic files, ClipArt Gallery refreshes
+the thumbnail images, removes duplicates and thumbnails of graphics that have
+been moved or deleted, and updates the ClipArt Gallery.
+
+Additional query words: power point powerpt cag refresh pub 2.00 2.0a clip art clip-art images pictures objects graphics bitmaps W_Works works pub3 pub4 pub97 pub95 ppt95 ppt97 ppt7 ppt8 works4 works95 duplicate
+
+======================================================================
+Keywords          : kbole kbtool kbui kbusage kbdta 
+Technology        : kbFrontPageSearch kbHomeProdSearch kbPowerPtSearch kbWorksSearch kbPublisherSearch kbWord95Search kbZNotKeyword6 kbPowerPt95 kbPowerPt97 kbZNotKeyword2 kbExcel95Search kbPowerPt97Search kbPublisher97 kbClipArtGallerySearch kbClipArtGallery200 kbClipGallerySearch kbZNotKeyword3 kbPowerPt95Search kbPowerPt400 kbPublisher200 kbPublisher95 kbPublisher200a kbClipGallery300 kbWorks300 kbWorks400 kbClipArtGallery110 kbClipArtGallery100 kbHomePubSearch kbPhotoDrawSearch kbWorks400Search
+Version           : :1.0,1.1,2.0,2.0a,3.0; WINDOWS:3.0,4.0,7.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

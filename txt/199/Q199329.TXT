@@ -1,0 +1,65 @@
+DOCUMENT:Q199329  03-JUN-1999  [sms]
+TITLE   :SMS: "Machine Merge Failed"  when Attempting to Merge History
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase kbsms120 kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to Merge Machine History for selected computers using Systems
+Management Server Database Manager, you may receive the following error after
+executing Display Duplicate Personal Computers from the machine's menu:
+
+   Machine Merge Failed
+
+CAUSE
+=====
+
+This may occur when the Systems Management Server database is very low or out of
+space.
+
+WORKAROUND
+==========
+
+Expand the size of the database to increase the amount of space available.
+
+MORE INFORMATION
+================
+
+Information on how to expand a database can be found in the SQL Server Books
+Online in the section titled "Expanding or Shrinking Databases". This can be
+found in Chapter 6: Managing Databases, under Part 3: Devices, Databases and
+Drives.
+
+Additional query words: prodsms kbsql
+
+======================================================================
+Keywords          : kbDatabase kbsms120 kbsmsUtil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

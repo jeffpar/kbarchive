@@ -1,0 +1,62 @@
+DOCUMENT:Q153630  07-DEC-2001  [frontpg]
+TITLE   :FP: FrontPage Client, Personal Web Server Run Only on i386
+PRODUCT :Word Front Page
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q205671.
+
+For a Microsoft FrontPage 98 version of this article, see Q194236.
+
+SUMMARY
+=======
+
+Microsoft FrontPage client software and the Personal Web Server function only on
+an Intel 386 (i386) platform running Windows 95 or Windows NT 3.51 or later. Any
+other configurations are unsupported.
+
+MORE INFORMATION
+================
+
+The FrontPage client and the Personal Web Server were tested only on the i386
+platform; therefore, it is not supported on RISC-based platforms such as Alpha
+and MIPS. The FrontPage Server Extensions are compatible with many UNIX based
+systems. For more information about FrontPage Server Extensions, see the
+following Microsoft World Wide Web site:
+
+   http://www.microsoft.com/frontpage/fpse
+
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbnetwork kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100
+Version           : :1.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q147838  25-MAR-2002  [win95x]
+TITLE   :Cannot Access Folders with Long File Names on NetWare Servers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork 3rdpartynet win95 kb3rdPartyNetClientkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are browsing a Novell NetWare server from a 16-bit program using the
+Microsoft Client for NetWare Networks, you may not see any files or folders when
+you browse a folder with a long file name.
+
+RESOLUTION
+==========
+
+
+To work around this problem, use any one of the following methods:
+
+ - Type the exact path to the file, using NetWare's short file names for the
+   folders and files.
+
+ - Do not name folders on NetWare servers with long file names. You can still
+   use long file names for files.
+
+ - Use the Novell NetWare Workstation Shell and a real-mode Novell NetWare
+   client instead of the Microsoft Client for NetWare Networks.
+
+   Note that real-mode Novell NetWare clients do not support viewing long file
+   names on NetWare servers from 32-bit Windows 95-based programs.
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words: lfn
+
+======================================================================
+Keywords          : kbnetwork 3rdpartynet win95 kb3rdPartyNetClient kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

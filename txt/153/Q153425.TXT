@@ -1,0 +1,69 @@
+DOCUMENT:Q153425  30-JUL-2001  [visualc]
+TITLE   :FIX: IDE Crashes Undoing Sizing in Dialog Editor
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbtool kbResourceEd kbVC kbVC410bug kbVC420bug kbVC500fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Dialog Editor, included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The IDE crashes without warning or error when you try to undo the sizing of the
+controls inside the Dialog Editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start MSDEV, and create a new default AppWizard MDI application.
+
+2. Open up the About dialog resource.
+
+3. Select all controls.
+
+4. Select Layout: Size_To_Content (F7).
+
+5. Press CTRL+Z to undo the sizing.
+
+6. The IDE will quit.
+
+Additional query words: dialog editor size
+
+======================================================================
+Keywords          : kbtool kbResourceEd kbVC kbVC410bug kbVC420bug kbVC500fix kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword6 kbDialogEd
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

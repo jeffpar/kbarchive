@@ -1,0 +1,103 @@
+DOCUMENT:Q107726  15-JUN-2001  [sna]
+TITLE   :SNA Server Event 553 Running Novell Requestor for Windows NT
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA Server Admin hangs on startup and the SnaBase service encounters the
+following error if Windows NT is installed with the Novell NetWare Requestor for
+Windows NT, version 1.01:
+
+   Event 567:
+   Creation of named pipe failed, rc = 10048
+
+   Event 624:
+   Creating dump file c:\sna\traces\SNADUMP.LOG for SNABASE.EXE
+
+CAUSE
+=====
+
+The SnaBase service attempts to open the same socket number on both IPX and SPX,
+although the Novell IPX/SPX driver for Windows NT does not allow this, returning
+socket error 10048 which means the address is already in use. Event 624 is
+logged to indicate that an unrecoverable error detected by SnaBase.
+
+RESOLUTION
+==========
+
+An update to SNA Server 2.11 corrects this problem by supporting the ability to
+configure the SPX port number used by the SnaBase service.
+
+Microsoft has updated the following files to correct this problem:
+
+   On the server and Windows NT clients:  <snaroot>\SYSTEM\SNANW.DLL
+   Windows 95 clients:                    <win95root>\SYSTEM\SNACNW.DLL
+   Windows 3.x clients:                   <winroot>\SYSTEM\NWCLI.DLL
+
+To configure the SPX port number, install the new file and add the following
+registry value on the server under the HKEY_LOCAL_MACHINE subtree under the
+following subkey:
+
+   /SYSTEM/CurrentControlSet/Services/SnaBase/  Parameters/SnaSpx
+
+Value Name: SnaBasePort
+Data Type:  REG_DWORD
+Data:       <hexadecimal number>
+
+<hexadecimal number> is the port number in hexadecimal. This number must
+not match the default of 0x84C8.
+
+When this parameter is specified the SnaBase uses the new port number for client
+"sponsor" connections over SPX. The default port number (0x84C8, or 33992 in
+decimal) is still used for server to server (IPX) communication. This fix
+requires an update to all clients (except MS-DOS based clients) because the
+clients assume that the SnaBase SPX port is always 0x84C8. However, there is no
+client-side entry required because the server port number is found dynamically
+through the Netware bindery.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

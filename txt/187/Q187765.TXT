@@ -1,0 +1,69 @@
+DOCUMENT:Q187765  14-JUN-2001  [powerpt]
+TITLE   :CG4: Clip Gallery Object Appears as Gray Hashed Box
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbole kbclip
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Clip Gallery 4.0 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run Clip Gallery, Clip Gallery may appear as a gray hashed
+box.
+
+CAUSE
+=====
+
+This behavior appears if you minimize Clip Gallery and then close the program.
+When you do this, Clip Gallery closes in a minimized state. If you then attempt
+to run Clip Gallery, it opens in a minimized state. The minimized Clip Gallery
+window appears on the taskbar and a gray hashed box appears in place of the Clip
+Gallery object in your file.
+
+RESOLUTION
+==========
+
+Click the Microsoft Clip Gallery button on the taskbar, select a clip and insert
+it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+
+Additional query words: diagonal clip gallery lines box ppt pub 98 ppt97 pub98 97 5.0 8.0 pub5 ppt8 powerpoint publisher word word8 word97 excel xl98 inserted clips pictures sounds angled dimmed grey 4
+
+======================================================================
+Keywords          : kbole kbclip 
+Technology        : kbWordSearch kbFrontPageSearch kbExcelSearch kbPowerPtSearch kbWorksSearch kbPublisherSearch kbClipGallerySearch kbClipGallery400 kbHomePubSearch kbPhotoDrawSearch
+Version           : :4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

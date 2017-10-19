@@ -1,0 +1,93 @@
+DOCUMENT:Q141881  11-JAN-2001  [vbwin]
+TITLE   :PRB: VB 4.0 Doesn't Install on Older 32-Bit Operating System
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbVBp kbVBp400 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After starting Setup.exe to install the 16-bit version of Visual Basic 4.0, you
+receive the following message:
+
+   This setup program is not intended to be used with this version of Windows.
+
+After starting Setup.exe to install the 32-bit version of Visual Basic 4.0 you
+receive one of the following messages:
+
+   The 32-bit version of Visual Basic requires the released version of Windows
+   NT 3.51.
+
+-or-
+
+   The 32-bit version of Visual Basic requires the released version of Windows
+   95.
+
+The setup program does not continue past this point.
+
+CAUSE
+=====
+
+Visual Basic 4.0 is designed to run only on the released versions of Windows 95,
+Windows 98, and Windows NT 3.51 (build 1057) or later. Setup.exe gives you the
+preceding message if you try to install Visual Basic 4.0 on an earlier version
+of either operating system.
+
+RESOLUTION
+==========
+
+Upgrade your operating system to the released version of Windows 95, Windows 98,
+Windows NT 3.51 or later.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+On a machine running Windows NT 3.5 or earlier or a beta copy of Windows 95, run
+Setup.exe from the VB 4.0 CD-ROM, or disk 1.
+
+Immediately after starting Setup.exe you will receive one of the error messages
+discussed above.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbVBp kbVBp400 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

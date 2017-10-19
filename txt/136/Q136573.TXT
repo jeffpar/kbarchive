@@ -1,0 +1,74 @@
+DOCUMENT:Q136573  12-JUN-2001  [homegame]
+TITLE   :Win32s Requires Virtual Memory
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+2.00a
+WINDOWS
+kbsetup kbenv
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During Golf Setup you may receive the following error message:
+
+   Win32s Requires Virtual Memory.
+
+You receive this message if you do not have Virtual Memory turned on, regardless
+of the amount of physical RAM that your computer has.
+
+You are able to bypass the error message. However, you then receive the following
+error message:
+
+   Win32s - Error: Improper installation Win32s requires Windows to run with
+   virtual memory enabled. Reinstall Win32s
+
+CAUSE
+=====
+
+This occurs if you try to Start Golf without configuring Virtual Memory.
+
+RESOLUTION
+==========
+
+Properly configure Virtual Memory.
+
+If you have more than 12 MB of RAM, you can create a permanent swap file of at
+least 2048k. If you have less that 12 MB of RAM, you would want to create a
+permanent swap file of at least 4MB in size.
+
+For more information about how to accomplish this task in Windows, see your
+Windows printed documentation or online help.
+
+Additional query words: 2.00a Golf Virtual Memory Swap File Win32s
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

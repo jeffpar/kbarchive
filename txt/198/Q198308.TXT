@@ -1,0 +1,157 @@
+DOCUMENT:Q198308  14-NOV-2000  [word97]
+TITLE   :WD97: New Word Is Not Added to Custom Dictionary
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you check the spelling in your document and click Add to add a word to the
+custom dictionary, the word is not added to the custom dictionary and you do not
+receive any error message.
+
+CAUSE
+=====
+
+This problem occurs when the custom dictionary has reached 64 kilobytes (KB)
+(65,593 bytes) in size.
+
+WORKAROUND
+==========
+
+Method 1: Add Words to the Custom Dictionary Using WordPad
+----------------------------------------------------------
+
+NOTE: Do not use Word to edit your custom dictionary. Word will truncate your
+custom dictionary when the file size exceeds 64 KB.
+
+The custom dictionary files typically are installed in either of the following
+folders on your hard disk:
+
+   <drive>\Program Files\Common Files\Microsoft Shared\Proof
+
+   -or-
+
+   <drive>\<windows folder>\Msapps\Proof
+
+where <drive> is the letter of the hard disk that contains either of these
+folders.
+
+To determine where your custom dictionary is located, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the Spelling & Grammar tab.
+
+3. Click Dictionaries.
+
+4. Select your custom dictionary. The Full Path to your custom dictionary
+   appears under the Language box.
+
+5. Click Cancel and then Close.
+
+To add a word to your custom dictionary, open your custom dictionary into WordPad
+by doing the following:
+
+1. To start WordPad, point to Programs on the Start menu, point to Accessories,
+   and then click WordPad.
+
+2. Add the additional words you want.
+
+3. Save the custom dictionary as a text document.
+
+Method 2: Add A Second Custom Dictionary
+----------------------------------------
+
+1. On the Tools menu, click Options.
+
+2. Click the Spelling & Grammar tab.
+
+3. Click the Dictionaries button.
+
+4. Select your custom dictionary, and then click Remove.
+
+   NOTE: You need to remove your custom dictionary, so the new dictionary you
+   will add in step 5 will appear first in the list of custom dictionaries.
+   Words added to a Custom Dictionary will default to the first Custom
+   Dictionary dialog box.
+
+5. Click New to add a new custom dictionary.
+
+6. Type a name for the new custom dictionary and click Save.
+
+7. Click Add, select the custom dictionary you removed in step 4, and click OK.
+
+   NOTE: The custom dictionary is now the second item in the list.
+
+You can now add words to your new custom dictionary, and Word will use both
+custom dictionaries to check the spelling of your documents.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The following are approximate limitations for a custom dictionary:
+
+   Number of words in custom dictionaries 5,000
+
+   Maximum custom dictionary file size 65,593 bytes (64 KB)
+
+NOTE: The number of words contained in your custom dictionary may vary due to the
+number of characters or the length of each of the words added to your custom
+dictionary.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q142339 WD95: Operating Parameter Limitations and Specifications
+
+   Q159790 WD97: Words Missing from Custom Dictionary After Undo
+
+   Q162970 Installing Project 4.1 Breaks Office 97 Spelling Checker
+
+   Q168804 WD97: Operating Parameter Limitations and Specifications
+
+Additional query words:
+
+======================================================================
+Keywords          : word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

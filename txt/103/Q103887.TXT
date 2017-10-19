@@ -1,0 +1,52 @@
+DOCUMENT:Q103887  27-FEB-2002  [crossnet]
+TITLE   :Password Encryption
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+PASSWORD ENCRYPTION
+-------------------
+
+The only presentation layer functionality currently implemented in Microsoft
+networks is the password encryption function provided by the redirector and
+supported by the server service.
+
+Microsoft network systems provide resource protection by means of an elaborate
+security subsystem. Users must provide identification and receive authentication
+before being granted access to protected resources. An account is created for
+each network user in the server's user accounts database. The administrator
+specifies a password and other logon restrictions, based on security policy, for
+each account created.
+
+In concert with the server service, the redirector's double encryption mechanism
+ensures that whenever password verification is required--at logon and each time
+the user requests a connection to a new server--no actual password information
+is transmitted on the network.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

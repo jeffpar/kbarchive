@@ -1,0 +1,67 @@
+DOCUMENT:Q154528  08-AUG-2001  [winnt]
+TITLE   :How to Change or Disable the Screen Saver Used at Logon
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The screen saver used at the logon screen before pressing CTRL+ALT+DELETE is the
+Logon Screen Saver. If you want to disable or change the screen saver used, you
+must do so through the registry editor.
+
+WARNING: Using the Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of the Registry Editor
+can be solved. Use this tool at your own risk.
+
+1. Run Regedt32.exe
+
+2. Go to the following registry location:
+
+     HKEY_USERS\Default\Control Panel\Desktop
+
+   To disable the screen saver:
+
+      Change the Value of Scrnsave.exe to(None)
+         Example: (Scrnsave.exe:REG_SZ:(None))
+      Change the value of ScreenSaveActive to Zero
+         Example: (ScreenSaveActive:REG_SZ:0)
+
+   To Change the default screen saver used:
+
+      Change the Value to the screen saver file (*.scr).
+         Example: (Scrnsave.exe:REG_SZ:Logon.scr)
+      Change the value of ScreenSaveActive to 1
+         Example: (ScreenSaveActive:REG_SZ:1)
+======================================================================
+Keywords          : kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

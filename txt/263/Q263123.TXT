@@ -1,0 +1,67 @@
+DOCUMENT:Q263123  27-OCT-2000  [winnt]
+TITLE   :BUG: Intermittent Crashes in NdisMWanIndicateReceive on Win2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbDDK kbNDIS kbOSWin2000 kbOSWin2000bug kbDSupport kbGrpDSNTDDKkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Driver Development Kit (DDK), on platform(s):
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Intermittent system halts (crashes) may occur when an network driver interface
+specification (NDIS) Wide Area Networking (WAN) driver calls the
+NdisMWanIndicateReceive function.
+
+CAUSE
+=====
+
+NdisMWanIndicateReceive attempts to read the first byte past the end of the
+packet buffer.
+
+RESOLUTION
+==========
+
+Allocate a buffer for the packet that is at least 4 bytes larger than the actual
+packet size. However, the PacketSize argument in the NdisMWanIndicateReceive
+call should be set to the actual size of the packet buffer. For example, if the
+packet buffer needs to be 100 bytes in size, then allocate at least 104 bytes
+for the buffer (but the PacketSize argument should be equal to 100 bytes).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDDK kbNDIS kbOSWin2000 kbOSWin2000bug kbDSupport kbGrpDSNTDDK kbbuglist
+Technology        : kbwin2000Search kbwin2000DDK kbAudDeveloper kbWinDDKSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

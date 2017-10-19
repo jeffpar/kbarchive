@@ -1,0 +1,64 @@
+DOCUMENT:Q105528  08-DEC-1999  [homemm]
+TITLE   :Mozart: Glossary Is on Top When Mozart Is Restored
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Mozart, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you minimize Mozart while the Glossary is open, the Glossary will be in front
+of the main Mozart window when you restore Mozart. This occurs even if the
+Glossary was behind the main Mozart window when you minimized the application.
+
+Microsoft has confirmed this to be a problem in Mozart version 1.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Press the Glossary button.
+
+2. Click Mozart's main window (the Glossary disappears behind the main window).
+
+3. Press Mozart's minimize button.
+
+4. Double click the minimized Mozart icon to restore the application.
+
+Mozart is restored with the Glossary on top, even though the Glossary was in back
+when the application was minimized.
+
+Additional query words: 1.00 multi media multimedia multi-media layer layered focus on top behind underneath in front Usage VBasic
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMMozart100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

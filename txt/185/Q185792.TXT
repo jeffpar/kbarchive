@@ -1,0 +1,83 @@
+DOCUMENT:Q185792  07-SEP-2001  [winnt]
+TITLE   :Shared Printers Are Unavailable After a Server Restart
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you restart your computer running Windows NT, printer shares on your
+computer may no longer be available to other users. The Event log may contain
+the following event:
+
+   Event ID: 19
+   Source: Print
+   Type: Error
+   Category: None
+   Description: Sharing printer failed, <printer name>\<print share name>.
+
+CAUSE
+=====
+
+This problem can occur if the comment field for a shared printer contains more
+than 256 characters, including 2 characters for each new line.
+
+Note that when you initially set up a shared printer with more than 256
+characters in the comment field, one of the following messages may be
+generated:
+
+ - Printer settings could not be saved. The RPC server is unavailable.
+
+ - Printer settings could not be saved. The data area passed to a system call is
+   too small.
+
+ - Printer settings could not be saved. The parameter is incorrect.
+
+
+RESOLUTION
+==========
+
+To allow the system to properly share a logical printer, make sure that the
+printer Comment field does not have more than 256 characters total. As a test,
+you may want to copy the entire comment field into notepad and save the text as
+a file. Check the size (in bytes) of the file to determine whether you have
+exceeded the 256 character limit.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0
+
+======================================================================
+Keywords          : kbenv kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

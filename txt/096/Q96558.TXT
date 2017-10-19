@@ -1,0 +1,73 @@
+DOCUMENT:Q96558  19-NOV-1999  [msdos]
+TITLE   :MS-DOS Setup Installs 80386- and 80486- Specific Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS Setup installs files that are specific to 80386 and 80486 processors even
+if your processor cannot use these files.
+
+MORE INFORMATION
+================
+
+You can delete the following files if you have an 8088 or 8086:
+
+   File(s)        Requires
+   -------        --------
+
+   HIMEM.SYS      80286 and more than 640 kilobytes (K) of RAM
+   SMARTDRV.EXE   HIMEM.SYS
+   LOADFIX.COM    Useful only if using DOS=HIGH
+   MSTOOLS.DLL    Windows 3.1 (or greater) in standard mode
+   SMARTMON.*     Windows 3.1 (or greater) in standard mode
+   DBLWIN.HLP     Windows 3.1 (or greater) in standard mode
+
+Files you can delete if you have an 8088, 8086, or 80286:
+
+   File(s)        Requires
+   -------        --------
+
+   EMM386.EXE     80386 or greater and HIMEM.SYS
+   MEMMAKER.*     80386 or greater
+   CHKSTATE.SYS   80386 or greater (used by MEMMAKER.EXE)
+   SIZER.EXE      80386 or greater (used by MEMMAKER.EXE)
+   VFINTD.386     Windows 3.0 (or greater) in 386 enhanced mode
+   WINA20.386     Windows 3.0 (or greater) in 386 enhanced mode**
+   MONOUMB.386    Windows 3.0 (or greater) in 386 enhanced mode
+
+** NOTE: WINA20.386 is required in versions of Windows later than 3.0 in enhanced
+mode if you are running any Windows 3.0 device drivers. Remove at your own risk.
+
+Additional query words: 6.22 6.00 sizer 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

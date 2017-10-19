@@ -1,0 +1,227 @@
+DOCUMENT:Q123870  11-FEB-2002  [visualc]
+TITLE   :INFO: Portable DLL Example Using _declspec() and _export
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0,2.1,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbcode kbLangC kbVC kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows what you need to do to create portable code for both 16-bit
+and 32-bit application.
+
+MORE INFORMATION
+================
+
+In Visual C++, 32-bit Edition, _declspec(dllexport) is used to export code and
+data and _declspec(dllimport) is used to import code and data. This is a change
+from Visual C++ for Windows where __export is used to export and import code and
+the .DEF file is used to export and import data.
+
+It is not possible to maintain a single source for 16-bit and 32-bit code by
+simply replacing __export with _declspec() because _declspec() is a storage
+class modifier and __export is a type modifier.
+
+The following sample application shows by example how you can create portable
+code for both 16-bit and 32-bit applications. The sample application exports
+code and data from a DLL. Both the EXE and DLL can be built by using this
+command:
+
+   NMAKE /f declspec.mak [WIN16=1]
+
+By default, the 32-bit version is built. If WIN16 is defined, a 16-bit version is
+built. This requires using 16-bit development tools.
+
+The code uses a single header file in both the EXE and DLL. You do not need
+_declspec(dllimport) for importing code, but it is required for data. Faster
+code is generated when using _declspec(dllimport) with functions.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q107501 TITLE : __declspec(dllexport) Replaces __export in 32-bit Visual C++
+
+Sample Code
+-----------
+
+      #
+      # DECLSPEC.MAK
+      #
+      !IFNDEF WIN16
+      # Win32 build commands:
+
+      all: decldll.dll declexe.exe
+
+      decldll.obj: decldll.c
+
+         cl /c /DWIN32 /DDLL decldll.c
+
+      decldll.dll: decldll.obj
+
+         link /DLL /OUT:decldll.dll decldll.obj kernel32.lib user32.lib \ 
+         gdi32.lib
+
+      declexe.obj: declexe.c
+
+         cl /c /DWIN32 declexe.c
+
+      declexe.exe : declexe.obj decldll.dll
+
+         link /OUT:declexe.exe declexe.obj decldll.lib kernel32.lib \ 
+         user32.lib gdi32.lib
+
+      !ELSE
+      # Win16 build commands:
+
+      all: decldll.dll declexe.exe
+
+      decldll.obj: decldll.c
+
+         cl /c /GD /ALw decldll.c
+
+      decldll.dll: decldll.obj
+
+         link decldll.obj, decldll.dll,,ldllcew.lib libw.lib, decldll.def
+         implib decldll.lib decldll.dll
+
+      declexe.obj: declexe.c
+
+         cl /c /GA /AL /Gx- declexe.c
+
+      declexe.exe : declexe.obj decldll.dll
+
+         link declexe.obj, declexe.exe,,llibcew.lib libw.lib decldll.lib, \ 
+         declexe.def
+
+      !ENDIF
+
+      -----------------------------------------------------------------------
+      /*
+
+       * DECLDLL.H
+       */ 
+
+      #if !defined (_WIN32)
+      #   define EXPORT __export
+      #   define EXPORT32
+      #else
+      #   define EXPORT
+      #   if defined DLL
+      #      define EXPORT32 __declspec(dllexport)
+      #   else
+      #      define EXPORT32 __declspec(dllimport)
+      #   endif
+      #endif
+
+      EXPORT32 void EXPORT dll_func(void);
+      extern EXPORT32 int EXPORT i;
+
+      -----------------------------------------------------------------------
+      /*
+
+       * DECLDLL.C
+       */ 
+
+      #include <windows.h>
+      #include "decldll.h"
+
+      /* Both LibMain(), initialization function for 16-bit DLLs, and
+         DllMain(), initialization function for 32-bit DLLs are optional. */ 
+
+      EXPORT32 void EXPORT dll_func(void)
+      {
+
+         MessageBox(NULL, "We are in the DLL\n", "declspec() example", MB_OK);
+
+      }
+
+      /* In Win16, data must be exported using .DEF */ 
+      EXPORT32 int i = 17;
+
+      -----------------------------------------------------------------------
+      ;
+      ; DECLDLL.DEF - Used only in 16-bit project
+      ;
+      LIBRARY DECLDLL
+
+      EXPORTS
+
+              WEP @1
+              _i
+
+      -----------------------------------------------------------------------
+      /*
+
+       * DECLEXE.C
+       */ 
+
+      #include <windows.h>
+      #include "decldll.h"
+
+      int PASCAL WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
+              LPSTR lpCmdLine, int cCmdShow)
+      {
+         MessageBox(NULL, "We are in the EXE\n", "declspec() sample", MB_OK);
+         dll_func();
+         MessageBox(NULL, "We are in the EXE\n", "declspec() sample", MB_OK);
+         if (i==17)
+            MessageBox(NULL, "Exported Data is OK", "declspec() sample",
+
+   MB_OK);
+
+         else
+            MessageBox(NULL, "Exported Data is NOT OK\n",
+                             "declspec() sample", MB_OK);
+         return 1;
+
+      }
+
+      -----------------------------------------------------------------------
+      ;
+      ; DECLEXE.DEF - Used only in 16-bit version
+      ;
+      NAME Declexe
+
+      EXETYPE WINDOWS
+
+      STACKSIZE 4096
+      -----------------------------------------------------------------------
+
+REFERENCES
+==========
+
+ 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbLangC kbVC kbVC100 kbVC200 kbVC210 kbVC400 kbVC500 kbDSupport 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC500 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :1.0,2.0,2.1,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

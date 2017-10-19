@@ -1,0 +1,67 @@
+DOCUMENT:Q150292  03-AUG-2001  [visualc]
+TITLE   :FIX: Access Violation When Copying Src File Between Projects
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2
+OPER/SYS:
+KEYWORDS:kbui kbide kbVC kbVC500fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to paste a file into a project that was cut or copied from a
+different project in Developer Studio, an access violation occurs:
+
+   Unhandled exception in MSDEV.EXE(MFC40.DLL): 0xC0000005: Access Violation.
+
+RESOLUTION
+==========
+
+Use another method to copy or move a file from one project directory to another,
+such as File Manager, Windows Explorer, or the command line. From the Insert
+menu, select Files into Project, and add the file to the new project. If you are
+moving the file, delete the file from the original project by clicking the file
+and pressing the DELETE key or by choosing Cut from the Edit menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+REFERENCES
+==========
+
+For more information, see "Adding and Removing Files from Projects" in the
+Visual C++ online documentation.
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbui kbide kbVC kbVC500fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420
+Version           : :4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

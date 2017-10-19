@@ -1,0 +1,77 @@
+DOCUMENT:Q118658  14-NOV-1999  [miscsdk]
+TITLE   :PRB: Problem Entering Footnotes in Word 6.0
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer Publishing Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After entering footnotes in Word version 6.0 RTF files with the New Viewer
+Element dialog box, individual characters in the text immediately following the
+footnote symbol are not selectable.
+
+The following Viewer elements are affected:
+
+   (#) Topic
+   (#) Context String
+   ($) Topic Title
+   (!) Topic Entry Command
+   (+) Topic Groups
+   (*) Build Tags
+   (K) Keywords
+
+Other Viewer elements remain unaffected.
+
+RESOLUTION
+==========
+
+You can enter footnotes for Viewer elements by following these steps:
+
+1. From the Insert menu, choose Footnote.
+
+2. Choose Custom Mark.
+
+3. Enter the mark that corresponds to the Viewer element you want to use.
+
+4. Choose OK. (You should now be in the Footnote section of the Word 6.0 main
+   window.)
+
+5. Enter the text that is to be associated with the footnote.
+
+6. Close the Footnote section and resume editing the document.
+
+Using the macro facility in Word 6.0, you can create a macro to automate these
+steps. Please refer to your Word 6.0 documentation for information concerning
+creating and using macros.
+
+Additional query words: 2.00 2.00a 6.00 KBCatetory: kbinterop kbprb
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

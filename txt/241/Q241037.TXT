@@ -1,0 +1,59 @@
+DOCUMENT:Q241037  06-SEP-1999  [exchange]
+TITLE   :XADM: Local.in.txt Is Needed When Using Mixer
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Even after you create the Mcgam.in.txt file, the mixer functionality (support
+for RFC 2156 address mapping) isn't enabled.
+
+The Mappings.out.txt file contains the following (the same as when no mapping is
+configured):
+
+   Revert to old tables.
+
+MORE INFORMATION
+================
+
+When you enable Mixer, the Mcgam.in.txt file is not enough, you must also create
+a file named Local.in.txt (an empty one is enough) in the Exchsrvr\Mtadata (or
+whichever directory is the MTA Run Directory).
+
+This file allows the local administrator to add mapping without modifying the
+Mcgam.in.txt. This way, you can have the same Mcgam.in.txt file throughout your
+organization.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,128 @@
+DOCUMENT:Q134228  30-OCT-1999  [pcmail]
+TITLE   :PC DirSync: Err Msg: Fatal [ 7] Error Renaming File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During a postoffice Directory Synchronization (Dir-Sync), the DIRSYNC.LOG may
+indicate one of the following errors:
+
+   06/12/95 16:52:14 | Status Microsoft (R) Mail Import V3.2a
+   06/12/95 16:52:23 | Fatal [ 7] Error renaming file: M:INF\IMPORT.INF
+
+   or
+
+   06/08/94 02:47:52 | Status Microsoft (R) Mail Import V3.2.6
+   06/08/94 03:13:25 | Fatal [ 7] Error renaming file: M:USR\IMPORT.USR
+
+CAUSE
+=====
+
+In general, IMPORT.EXE generates the above error message when it is unable to
+rename the temporary IMPORT.* file to the appropriate <hexid>.INF or
+<hexid>.USR file.
+
+RESOLUTION
+==========
+
+Generally, this inability to properly rename the files is caused by that
+particular file (INF or USR) being inaccessible for some reason. These reasons
+may include any of the following:
+
+ - The INF is locked open.
+
+ - The user account logged into the network and running the Dir-Sync processes
+   (DISPATCH.EXE) does not have sufficient rights to the postoffice or its
+   subdirectories.
+
+ - Insufficient file handles in the CONFIG.SYS of the MS-DOS machine running the
+   DISPATCH.EXE process.
+
+ - One or more INF (or USR) file in the INF subdirectory is marked as read-only.
+
+ - Anti virus software operating in "real time" on the server.
+
+ - Because of oplocks on the Windows NT server, the reads and writes are cached.
+   Removing Opportunistic Locking on the Windows NT server experiencing the
+   fatal 7 has been known to resolve this issue. To remove Oplocks from the
+   server use REGEDT32.EXE, and change the following key;
+
+   WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+   problems that may require you to reinstall Windows NT to correct them.
+   Microsoft cannot guarantee that any problems resulting from the use of
+   Registry Editor can be solved. Use this tool at your own risk.
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer \Parameters
+
+MORE INFORMATION
+================
+
+Any single postoffice refers to each of the externally defined postoffices by a
+hexadecimal identifier (hex-id). For example, one particular postoffice might
+refer to another postoffice by identifying it with the hex- id of 00000005.
+Therefore, the MBG and KEY files for all outbound mail to this externally
+defined postoffice will be 00000005.MBG and 00000005.KEY. The external user list
+will exist in 00000005.USR, and any template information will exist in
+00000005.TPL and 00000005.INF (the template format and information files,
+respectively). Each of these files will reside in their appropriate
+subdirectories.
+
+When IMPORT.EXE processes during the Dir-Sync cycle, it creates temporary files
+to store the completed updated files; two examples of these temporary files are
+the IMPORT.INF and IMPORT.USR files. Once the process is complete, IMPORT.EXE
+attempts to rename the temporary file to the actual file name. In this case,
+IMPORT.EXE would try to rename IMPORT.INF to 00000005.INF or IMPORT.USR to
+00000005.USR. The previously listed error messages are generated in the
+DIRSYNC.LOG if this renaming process can not be completed.
+
+NOTE: The Fatal 7 error is often followed by several Warning 90 messages.
+
+
+After the Dir-Sync process completes and one of these error messages is
+generated, the IMPORT.INF or IMPORT.USR file may exist in the INF or USR
+subdirectory. The mail administrator may wish to attempt to complete the
+Dir-Sync process manually.
+
+First, ensure that none of the problems listed above exist on this postoffice.
+Next, run a manual Import by typing in the following command against the problem
+postoffice:
+
+   "IMPORT -D<drive> ADMIN -P<password> -Y -Q" (without the
+   quotation marks)
+
+If IMPORT.EXE executes without error, then the problem should be resolved on that
+postoffice.
+
+Additional query words: 3.00 3.20 3.20a 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN350
+Version           : WINDOWS:3.0,3.2,3.2a,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q158090  24-MAY-2001  [homemm]
+TITLE   :Setup Runs Slowly; Virus Extension Loaded
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition; MACINTOSH:
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Macintosh 
+ - Microsoft Encarta 98 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Encarta 97, installation takes a very long time to
+complete, or it does not complete.
+
+CAUSE
+=====
+
+A virus protection program may be running while you are trying to install
+Encarta.
+
+RESOLUTION
+==========
+
+Turn off the virus protection program until you finish the installation.
+
+To turn off virus protection, use the Extension Manager. You can also use a
+similar program that allows you to selectively disable extensions and control
+panels.
+
+MORE INFORMATION
+================
+
+Virus detection programs may report errors when you try to install software
+because they are loaded into memory and they monitor any changes to the system.
+Sometimes the actions of a setup application make the virus detection program
+think the setup application is a virus. For example, this can occur when the
+installation software adds items to the System Folder, or changes preferences.
+
+Additional query words: 1997 1998 multi media multimedia multi-media mmtitles kbmm macmm kbimu mm
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1997Mac kbEncartaEnCyc1998Mac
+Version           : :1997 edition; MACINTOSH:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

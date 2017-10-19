@@ -1,0 +1,85 @@
+DOCUMENT:Q225279  25-APR-1999  [iis]
+TITLE   :Unable to Start Internet Services Manager (HTML) Tool
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to open the Internet Services Manager (HTML), you may receive an
+error message stating that the page cannot be displayed.
+
+CAUSE
+=====
+
+This issue can occur after you edit the bandwidth throttling with the Internet
+Services Manager (HTML) tool by clicking to select the Enable Bandwidth
+Throttling check box, leaving the "Maximum network use" box blank, and then
+clicking OK.
+
+RESOLUTION
+==========
+
+To resolve this issue, reset bandwidth throttling to the default setting:
+
+1. Start Internet Services Manager (Microsoft Management Console).
+
+2. Double-click Internet Information Server, and then click the appropriate
+   server name.
+
+3. On the Action menu, click Properties.
+
+4. Type "1024" (without the quotation marks) in the "Maximum network use" box,
+   and then click Apply.
+
+5. Click to clear the Enable Bandwidth Throttling check box, and then click
+   Apply.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Internet Services Manager (HTML) does not check the "Maximum network use" box
+for a value between 1 and 32,768 when the box is left blank. These values are
+checked when editing this option either by individual Web site (in the
+ISM-HTML), or by server and Web site in the Internet Services Manager (Microsoft
+Management Console).
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbui 
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

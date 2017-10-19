@@ -1,0 +1,83 @@
+DOCUMENT:Q297002  06-AUG-2002  [winnt]
+TITLE   :"The RPC Server Is Unavailable" Err Msg and Events 5718 and 3013
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to synchronize a backup domain controller (BDC) with the primary
+domain controller (PDC) of a domain, the synchronization of the Security
+Accounts Manager (SAM) database may not succeed. You may receive the following
+error message on the BDC:
+
+   The RPC server is unavailable
+
+The System Event Log of the BDC may display the following information:
+
+   Event ID: 5718
+   Event Type: Error
+   Event Source: Netlogon
+   Description: The full synchronization replication of the name database from
+   the primary domain controller <computername> failed with the following
+   error: <text>
+
+   Event ID: 3013
+   Event Type: Error
+   Event Source: Rdr
+   Description: The redirector has timed out a request to <computername>.
+
+CAUSE
+=====
+
+This behavior can occur if the communication link between the BDC and the PDC
+does not support large packet sizes, for example, packets that are more than
+1024 bytes in size.
+
+RESOLUTION
+==========
+
+To resolve the behavior, adjust the communication link to support larger packet
+sizes. This setting is usually adjusted on a router.
+
+MORE INFORMATION
+================
+
+To see whether there is a communication problem between the BDC and the PDC, use
+packets of increasing sizes and try to ping the PDC by IP address. You can use
+the ping command with the -l option. Also, you can use the Tracert.exe utility
+to determine where the packets are being dropped.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

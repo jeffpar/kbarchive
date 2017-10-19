@@ -1,0 +1,100 @@
+DOCUMENT:Q187708  09-AUG-2001  [winnt]
+TITLE   :Cannot Connect to SQL Virtual Server via Sockets in Cluster
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A SQL Server client may not be able to connect to SQL Server in a cluster
+environment using the virtual server network name or IP address by means of
+TCP/IP sockets. A typical client application will return the following error
+message:
+
+   Unable to Connect: SQL Server is unavailable or does not exist. General
+   network error. Check your documentation.
+   Net-Library error 10061: ConnectionOpen (Connect())
+
+However, the same socket client can connect to the SQL Server using the node name
+or address of the computer where SQL Server is physically running. Clients
+running named pipes do not have this problem of connecting to SQL Server through
+the virtual server name.
+
+CAUSE
+=====
+
+There is a known problem with Windows NT 4.0 Enterprise Edition that may return
+an incorrect IP address under certain situations when an application such as SQL
+Server calls socket function gethostbyname() to retrieve the virtual server IP
+address from the local node. When SQL Server is bound to this incorrect IP
+address (node address), a socket client will not be able to connect to the SQL
+Server through the virtual name or IP address, but can connect to it through
+node name or IP address.
+
+MORE INFORMATION
+================
+
+One way to verify whether you have run into this issue is to PING the SQL Server
+virtual server name from the command prompt on the node computer where SQL
+Server is currently running. If PING returns the node IP address rather than the
+SQL Server virtual server IP address, then you have run into this problem. Note
+that if you PING this virtual server name from a separate network client
+computer, it returns the correct IP address.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+You can work around this problem by using named pipes for client connections.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+Additional query words: 4.00 ntee winsock connection refused failed machine mscs
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WINNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

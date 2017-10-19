@@ -1,0 +1,63 @@
+DOCUMENT:Q136176  15-APR-2000  [powerpt]
+TITLE   :PPT7: Windows 95 Taskbar Doesn't Respond During Slide Show
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbenv kbtshoot
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you press CTRL+ESC while running a PowerPoint slide show (to switch to or
+start another application), the taskbar may seem to stop responding. Clicking
+available shortcuts has no effect.
+
+
+CAUSE
+=====
+
+This situation may occur if you release ESC at a particular moment after you
+release the CTRL key. If you release the ESC key first, or if you use the
+Windows key on the Microsoft Natural Keyboard to access the taskbar, the problem
+does not occur.
+
+RESOLUTION
+==========
+
+To regain access to your program icons, press the ESC key again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95.
+
+Additional query words: 7.00 7.0 frozen hung winppt macppt powerpnt slideshow task-switching
+
+======================================================================
+Keywords          : kbenv kbtshoot 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

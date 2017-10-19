@@ -1,0 +1,108 @@
+DOCUMENT:Q255787  06-AUG-2002  [winnt]
+TITLE   :Exchange Discovery Takes a Long Time
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Metadirectory Services (MMS), full discovery of a Microsoft
+Exchange site may take a long time.
+
+CAUSE
+=====
+
+There are two issues that influence the performance characteristics of an
+Exchange discovery:
+
+ - When an Exchange Lightweight Directory Access Protocol (LDAP) discovery
+   encounters distribution lists (DLs) in leaf nodes, the DLs may be
+   dereferenced object by object.
+
+ - Attempts to discover the Microsoft DMD and Configuration containers are
+   unsuccessful and the time-outs introduce a significant delay.
+
+RESOLUTION
+==========
+
+To decrease the time it takes to perform a discovery, make the following
+changes: If the search is a single-level search:
+
+1. In the Action panel, click "Configure the Management Agent".
+
+2. Click the Connected Directory Specifics tab.
+
+3. Click the Advanced tab.
+
+4. Click to clear the "Consider person and list entries as non-leaf nodes" check
+   box.
+
+If the search is a full tree search starting at the root:
+
+1. In the Action panel, click "Configure the Management Agent".
+
+2. Click the Connected Directory Specifics tab.
+
+3. Click the Advanced tab.
+
+4. Click the "DNs to Exclude During the Discovery" tab.
+
+5. Type the distinguished names (DNs) of the Exchange schema extensions
+   objects.
+
+   Typically, these are:
+
+   cn=Microsoft DMD,ou=<sitename>,o=<orgname>
+
+   and
+
+   cn=Configuration,ou=<sitename>,o=<orgname>
+
+
+Please note the following items:
+
+ - The discovery of the Microsoft DMD (Microsoft Directory Management domain)
+   container introduces the most significant delay.
+
+ - The non-leaf setting for users and lists is only effective when you perform
+   single-level searches.
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

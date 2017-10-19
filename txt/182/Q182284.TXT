@@ -1,0 +1,82 @@
+DOCUMENT:Q182284  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Cross-reference to Caption in Text Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdta kbfield word97 kbframe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word, you cannot create a cross-reference to any captions in text
+boxes. These captions are not listed in the Cross-reference dialog box.
+
+CAUSE
+=====
+
+Text boxes, such as captions for "float over text" objects, reside in the
+drawing layer of the document. However, items in the drawing layer are not a
+valid Reference Type in the Cross-reference dialog box.
+
+WORKAROUND
+==========
+
+To reference the caption in the text box, convert the text box to a frame by
+following these steps:
+
+1. Click to select the text box.
+
+2. On the Format menu, click Text Box.
+
+3. Click the Text Box tab.
+
+4. Click Convert to Frame, and then click OK.
+
+MORE INFORMATION
+================
+
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q173404 WD: General Information about Cross-reference Fields
+
+   Q167738 WD97: Can't See or Manipulate Objects (and Other Odd Behavior)
+
+   Q155156 WD: Entries in Text Box or Callout Missing from Table of Content
+
+STATUS
+======
+
+This behavior is by design of Microsoft Word.
+
+Additional query words: sr-1 sr1 textbox crossreference
+
+======================================================================
+Keywords          : kbdta kbfield word97 kbframe 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

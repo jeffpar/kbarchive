@@ -1,0 +1,66 @@
+DOCUMENT:Q166066  19-JUL-2001  [word97]
+TITLE   :WV: RTF Link in Netscape Starts New Instance of Word Viewer
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdta kbviewer word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word Viewer 97-2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you follow a link to an .rtf (Rich Text Format) file from within Netscape
+Navigator, Microsoft Word Viewer 97-2000 starts as a stand-alone application (it
+is not started from within Netscape Navigator).
+
+If you follow an Internet link to a .doc file from inside Netscape Navigator, the
+file starts Word Viewer from within Navigator.
+
+NOTE: Internet links to .rtf and .doc files correctly start Microsoft Word Viewer
+in-place from Microsoft Internet Explorer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+REFERENCES
+==========
+
+For more information about Word Viewer 97-2000, please see the following
+Knowledge Base article:
+
+   
+
+   Q165908 WV: How to Obtain Microsoft Word Viewers
+
+Additional query words: compass in-situ inplace
+
+======================================================================
+Keywords          : kbdta kbviewer word97 
+Technology        : kbWordViewerSearch kbViewerSearch kbWordViewer97
+Version           : WINDOWS:
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

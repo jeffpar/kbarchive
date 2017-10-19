@@ -1,0 +1,249 @@
+DOCUMENT:Q289246  11-JUN-2002  [winnt]
+TITLE   :MS02-001: Forged SID Could Result in Elevated Privileges in Wind
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:kbWinNT400PreSP7Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+ - Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+ - Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+For additional information about this issue in Windows 2000, click the article number below 
+to view the article in the Microsoft Knowledge Base:
+
+   Q289243 MS02-001: Forged SID Could Result in Elevation of Privilege in
+   Windows 2000
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+Microsoft Windows NT 4.0 protects system resources with access control lists
+(ACLs). ACLs are lists of security identifiers (SIDs), and a list of access
+rights or permissions that are granted to that security principal. SIDs are
+relative to a domain. The SID of a user or group from a domain is always based
+on the SID of the domain, and uniquely identifies the user or group. ACLs are
+placed on a resource to indicate which users and groups are permitted to access
+it, and what level of access they are allowed. When a user attempts to access
+the resource, Windows NT compares the list of SIDs in the ACL to the list of
+SIDs that identify the user and his group memberships, and grants or denies
+access as appropriate.
+
+When a user logs on to a domain, the user's account SID and group membership SIDs
+are determined by a domain controller in the user's account domain. The SID of
+the trusted domain, the relative ID (RID) of the user's account, the RID of the
+user's primary group, and the SIDs of all other group memberships are combined
+into an authorization data structure and passed to the requesting computer.
+
+When the computer that is requesting user authentication is in a different domain
+than the user's account, authentication occurs using a trust. Trust is created
+between Windows NT-based or Windows 2000-based domains to simplify the user's
+authentication experience, especially by enabling single sign-on. When one
+domain trusts another, it means that the trusting domain will allow the trusted
+domain to authenticate the users (or computers) whose accounts it manages.
+During authentication, the computer in the trusting domain accepts the
+authorization data provided by the trusted domain controller. There is no way
+for the computer that is requesting authentication to determine the validity of
+the authorization information, so it accepts the data as accurate based on the
+existence of the trust relationship.
+
+A vulnerability exists because the trusting domain does not verify that the
+trusted domain is actually authoritative for all the SIDs in the authorization
+data. If one of the SIDs in the list identifies a user or security group that is
+not in the trusted domain, the trusting domain accepts the information and uses
+it for subsequent access control decisions. If an attacker inserted SIDs into
+the authorization data at the trusted domain, the attacker could elevate his or
+her privileges to those that are associated with any user or group, including
+the domain administrators group for the trusting domain. This would enable the
+attacker to gain full domain administrator access on computers in the trusting
+domain.
+
+It is very hard to exploit this vulnerability. At a minimum, an attacker would
+need administrative privileges on the trusted domain, and the technical
+wherewithal to modify low-level operating system functions and data structures.
+
+To counter these potential attacks, Microsoft has added a feature called SID
+filtering to Windows NT 4.0. With SID filtering, an administrator can cause the
+domain controllers in a given domain to "quarantine" a trusted domain. This
+causes the domain controllers in the trusting domain to remove all SIDs that are
+not relative to the trusted domain from any authorization data that is received
+from that domain. Quarantining is performed from the trusting domain, and is
+done on a per-domain basis.
+
+
+CAUSE
+=====
+
+When a trust relationship exists between two domains, the trusting domain
+accepts the SIDs that are specified within authorization data provided by the
+trusted domain even if the SIDs are from domains other than the trusted one. If
+an attacker in a trusted domain were able to insert SIDs into authorization
+data, the attacker could grant himself or herself the privileges that are
+associated with a user in another domain, including the trusting domain itself.
+
+RESOLUTION
+==========
+
+Windows NT 4.0
+--------------
+
+To resolve this problem, obtain the Windows NT 4.0 Security Rollup Package. For
+additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date      Time    Size     Version        File name     Platform
+   ----------------------------------------------------------------
+   02/22/01  4:19pm  155,920  4.0.1381.7092  Lsasrv.dll    Intel 
+   02/22/01  4:19pm   10,000  4.0.1381.7092  Lsass.exe     Intel 
+   02/22/01  4:18pm   19,216  4.0.1381.7092  Msaudite.dll  Intel 
+   03/13/01  4:59pm  254,736  4.0.1381.7092  Netapi32.dll  Intel 
+   02/22/01  4:19pm  192,784  4.0.1381.7092  Netlogon.dll  Intel 
+   02/22/01  4:15pm  254,224  4.0.1381.7092  Lsasrv.dll    Alpha 
+   02/22/01  4:15pm   16,144  4.0.1381.7092  Lsass.exe     Alpha 
+   02/22/01  4:14pm   23,312  4.0.1381.7092  Msaudite.dll  Alpha 
+   03/13/01  4:55pm  412,432  4.0.1381.7092  Netapi32.dll  Alpha 
+   02/22/01  4:15pm  313,616  4.0.1381.7092  Netlogon.dll  Alpha 
+
+NOTE: Because of file dependencies, this hotfix requires Microsoft Windows NT 4.0
+Service Pack 6a.
+
+
+
+Microsoft Windows NT Server version 4.0, Terminal Server Edition
+----------------------------------------------------------------
+
+To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP). For additional information about the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+   Package
+
+STATUS
+======
+
+Microsoft has confirmed that this problem could result in some degree of
+security vulnerability in Microsoft Windows NT 4.0 and Windows NT Server version
+4.0, Terminal Server Edition.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Applying the Hotfix
+-------------------
+
+Registry Key Modification for the Quarantined Bit:
+
+In addition to applying the hotfix, Windows NT 4.0 requires a modification of a
+registry key to quarantine domains. In addition, you can configure auditing to
+monitor SIDHistory-related security events:
+
+1. Use Regedt32.exe to add a new REG_MULTI_SZ value named QuarantinedDomains to
+   the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters
+
+2. Set the data value of the new QuarantinedDomains value to a sequence of zero,
+   or more, NetBIOS domain names. This new value will be recognized by Netlogon.
+
+NOTES:
+
+ - Use only NetBIOS domain names even if the trusted domain is a Windows
+   2000-based domain.
+
+ - You quarantine a domain by adding its name to the QuarantinedDomains registry
+   value. You cancel quarantine by removing the domain name.
+
+ - There is no error checking or validation of the names that you enter in the
+   QuarantinedDomains registry value to ensure that they correspond to a
+   currently trusted domain. Any legal string value is allowed. However, any
+   value that is not equal to the name of a trusted domain will be ignored. The
+   net effect is that "SIDHistory" quarantine can only be applied by a trusting
+   domain against a trusted domain.
+
+ - You must manually set or rest the registry value on every domain controller
+   in a domain for consistent behavior.
+
+ - After you set the registry key, you must issue "net stop netlogon" and "net
+   start netlogon" commands from a command prompt to make the new registry key
+   values take effect.
+
+Auditing Changes
+----------------
+
+Please refer to the online Help for information about how to configure auditing
+in Windows NT 4.0.
+
+This hotfix introduces a new Security Audit event with event ID 548 during NTLM
+authentication. This is a logon and logoff event that is generated when there is
+a SID History attack on the domain (that is, when the domain SID is spoofed).
+These events are logged on the domain controller that is processing the
+authentication request in the trusting domain. The following events will be
+generated during NTLM authentication:
+
+   
+
+   Event Type:     Failure Audit
+   Event Source:   Security
+   Event Category: Logon/Logoff
+   Event ID:       548
+   Date:           Event date
+   Time:           Event time
+   User:           NT AUTHORITY\SYSTEM
+   Computer:       Name of the computer on which the event is logged
+   Description:
+  Logon Failure.
+  Reason:                 Domain sid inconsistent
+  User Name:              Name of the user being authenticated
+  Domain:                 Name of the Quarantined Domain
+  Logon Type:             Type of logon (3=network)
+  Logon Process:          NtLmSsp
+  Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+  Workstation Name:       Name of the client computer
+
+Additional query words: security_patch kbtsesrp
+
+======================================================================
+Keywords          : kbWinNT400PreSP7Fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServ400sp6 kbNTTermServSearch kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

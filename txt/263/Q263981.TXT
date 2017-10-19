@@ -1,0 +1,58 @@
+DOCUMENT:Q263981  28-OCT-2000  [winnt]
+TITLE   :DOC: Wake Up Pattern OIDs Are Not Correctly Documented
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:; winnt:
+OPER/SYS:
+KEYWORDS:kbdocerr kbDDK kbOSWin2000 kbDSupport kbGrpDSNTDDKkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Driver Development Kit (DDK) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 2000 Device Driver Kit (DDK) documentation incorrectly states the
+following:
+
+ - A protocol driver can send a OID_PNP_ADD_WAKE_UP_PATTERN to a miniport to
+   specify one or more wake-up patterns.
+
+ - A protocol driver can a send a OID_PNP_REMOVE_WAKE_UP_PATTERN to a miniport
+   to delete one or more wake-up patterns.
+
+In fact, a protocol driver can specify only one wake-up pattern to a miniport
+driver by sending the object identifier (OID) OID_PNP_ADD_WAKE_UP_PATTERN.
+Similarly, a protocol driver can delete only one wake-up pattern by sending
+OID_PNP_REMOVE_WAKE_UP_PATTERN to a miniport driver.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbDDK kbOSWin2000 kbDSupport kbGrpDSNTDDK kbbuglist
+Component         : DDK
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbwin2000DDK kbAudDeveloper kbWinDDKSearch kbWinAdvServSearch
+Version           : WINDOWS:; winnt:
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

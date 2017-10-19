@@ -1,0 +1,61 @@
+DOCUMENT:Q149180  09-AUG-2001  [winnt]
+TITLE   :Dualboot of WinNT 3.51 and 4.0 Fails After SP Installation
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0 SUR
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install a service pack on a Windows NT 3.5 or 3.51 computer that also
+has Windows NT 4.0 installed, attempting to start Windows NT 4.0 may result in a
+failure to load the operating system. The failure may trigger a momentary error
+message and cause the system to restart immediately.
+
+CAUSE
+=====
+
+The Ntldr file for Windows NT 3.5x is incompatible with Windows NT 4.0. The
+installation of the service pack may replace the Ntldr file placed on the boot
+drive with a version included with the service pack.
+
+RESOLUTION
+==========
+
+To resolve this condition, manually replace the NTLDR file on the boot drive
+with the file of same name from the Windows NT 4.0 distribution set. This
+version is compatible with both operating systems. If the boot partition is
+NTFS, you may need to obtain access to the partition through the Windows NT 3.5x
+installation in order to replace the file.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0 SUR
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,94 @@
+DOCUMENT:Q117586  24-MAR-2000  [foxpro]
+TITLE   :FIX: "Cannot Activate OLE Server"; Graphic Doesn't Print
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.5x 2.6x
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Report Writer will not print a general field that contains a graphic pasted
+from the Clipboard.
+
+CAUSE
+=====
+
+Since the Report Writer is looking for an OLE server to print the graphic
+contained in the general field and the Clipboard is not an OLE server, the area
+where the graphic should have been printed will be blank.
+
+RESOLUTION
+==========
+
+Paste the graphic into Paintbrush and save it as a bitmap (.BMP) file. Reference
+the .BMP file in the general field of the data file. The Report Writer will use
+Paintbrush as the OLE server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual FoxPro 3.0
+for Windows.
+
+MORE INFORMATION
+================
+
+This behavior usually occurs when the PRINT SCREEN key or the ALT+PRINT SCREEN
+key combination is used to create screen captures.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Capture a screen by pressing PRINT SCREEN or ALT+PRINT SCREEN.
+
+2. Open a general field in one of the data files.
+
+3. Paste the screen capture in the general field.
+
+4. Create a report that prints the general field.
+
+5. From the Report menu, choose Page Preview.
+
+   The screen capture will be displayed.
+
+6. From the Command window, issue REPORT FORM <formname> TO PRINTER.
+
+Nothing is printed in the place where the screen capture should be located.
+Furthermore, if you double-click the screen capture displayed in the data file's
+general field, you will receive the following error message:
+
+   Cannot Activate OLE Server
+
+Additional query words: FoxWin VFoxWin 2.50 2.50a 2.50b 2.60 2.60a fixlist3.00 datafile object linking and embedding screen dump printscreen errmsg err msg
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbAudDeveloper kbFoxproSearch
+Version           : 2.5x 2.6x
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

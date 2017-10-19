@@ -1,0 +1,64 @@
+DOCUMENT:Q269559  08-AUG-2001  [winnt]
+TITLE   :Error Message Occurs When Installing Network Monitor 2.0
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Windows NT Workstation versions 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Windows NT Server, Enterprise Edition versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Network Monitor 2.0 or later, you may receive an error message
+that states Microsoft Internet Explorer 4.0 or later must be installed on the
+computer. The Network Monitor installation process then stops responding.
+
+MORE INFORMATION
+================
+
+To install Network Monitor on Windows NT 4.0, use one of the following methods:
+
+1. Install Internet Explorer 4.0 or later, and then install Network Monitor.
+
+   -or-
+
+2. Copy the following files from a computer that has Internet Explorer 4.0 or
+   later installed to the System32 directory:
+
+   Shdocvw.dll
+   Shlwapi.dll
+
+After you complete one of these steps, the installation process continues until
+Network Monitor is successfully installed.
+
+Additional query words: netmon, bloodhoound, steeleye
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400search kbWinNTW400sp6 kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : :4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

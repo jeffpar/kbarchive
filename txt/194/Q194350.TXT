@@ -1,0 +1,80 @@
+DOCUMENT:Q194350  12-AUG-1999  [homemm]
+TITLE   :Encarta Virtual Globe 99: Incorrect URL in Bibliography
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Bibliography in Encarta Virtual Globe may contain incorrect or outdated
+Universal Resource Locator (URL) links.
+
+This article lists the URLs that are known to have changed.
+
+MORE INFORMATION
+================
+
+The following list contains the changed URLs in Virtual Globe.
+
+ - United States National Aeronautics and Space Administration. Remote Sensing
+   in History.
+
+   Existing URL:
+
+   http://observe.ivv.nasa.gov/observe/exhibit/rem_sen/history /history_2.html
+
+   Changed URL (as of 9/4/98):
+
+   http://observe.ivv.nasa.gov/nasa/exhibits/history/history_0.html
+
+If you find a Web site location that has changed but is not in the list, please
+contact Microsoft using one of the following contact points:
+
+Postal mail:
+
+   Program Manager
+   Encarta Virtual Globe
+   c/o Microsoft
+   One Microsoft Way
+   Redmond, WA 98052-6399
+
+E-mail:
+
+   msgeoweb@microsoft.com
+
+Microsoft Web site:
+
+   http://encarta.msn.com
+
+Additional query words: wrong incorrect error hotlink
+
+======================================================================
+Keywords          : kbref kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

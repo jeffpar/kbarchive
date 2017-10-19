@@ -1,0 +1,68 @@
+DOCUMENT:Q264144  16-AUG-2002  [homegame]
+TITLE   :Starlancer: No Forces on Windows 2000 or Windows XP
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SideWinder Force Feedback Pro, version 1.0 
+ - Microsoft SideWinder Force Feedback 2 
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Starlancer on a Microsoft Windows 2000-based or Windows
+XP-based computer, you may feel no force feedback effects.
+
+WORKAROUND
+----------
+
+There is no workaround for Force Feedback 1.0.
+
+To work around this issue with Force Feedback 2.0, switch to Compatibility mode.
+To do so:
+
+1. On the Windows XP Desktop, right-click the Starlancer shortcut, and then
+   click Properties.
+
+2. Click the Compatibility tab, click to select the "Run this program in
+   compatibility mode for" check box, click to select Windows 2000, and then
+   click OK.
+
+3. Start the game.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: 1.00 msgame star lancer side winder swff joystick forces
+
+======================================================================
+Keywords          : kbenv kbhw kbimu msgame kbHardware 
+Technology        : _IKkbbogus kbMSHardwareSearch kbGamesSearch kbZNotKeyword kbStarlancerSearch kbStarlancer kbSideWinderFF2 kbSideWinderFFPro kbSidewinderSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

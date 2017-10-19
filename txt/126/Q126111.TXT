@@ -1,0 +1,78 @@
+DOCUMENT:Q126111  11-DEC-1999  [homemm]
+TITLE   :Baseball 1994: Boston Team Franchise Dates Not Consistent
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball for Windows, version 1994 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The franchise dates for the Boston Red Sox are different in the Team History and
+the Team Roster screens.
+
+The Team History screen lists the franchise dates as:
+
+   Boston Red Sox 1908-
+   Boston Americans 1901-1907
+
+The Team Rosters screen lists the franchise dates as:
+
+   Boston Americans 1901-1906
+   Boston Red Sox 1907-
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open Microsoft Complete Baseball and from the Main screen, choose Teams.
+
+2. Choose Boston Red Sox as the team to view. Either choose Change Team and type
+   or select the appropriate team and choose OK, or choose the up or down arrow
+   next to Change Team and select Boston Red Sox.
+
+3. Select the Team History option and note the caption:
+
+   Boston Red Sox 1908-
+   Boston Americans 1901-1907
+
+4. Change to the Team Rosters screen and note the date information in the
+   Franchise History section:
+
+   Boston Americans 1901-1906
+   Boston Red Sox 1907-
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1994 kbhowto multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

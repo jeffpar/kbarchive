@@ -1,0 +1,65 @@
+DOCUMENT:Q84218  11-FEB-2002  [win95x]
+TITLE   :File Manager Brings over Wrong Hidden Files
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.1,3.11,5.0,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft MS-DOS operating system versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Windows' File Manager to format a floppy system disk on a computer
+that originally had IBM DOS installed and was upgraded to MS-DOS 5.0 or 6.0, the
+correct MS-DOS COMMAND.COM is copied over, and the incorrect IBMBIO.COM and
+IBMDOS.COM files may be copied to the system disk instead of the MS-DOS 5.0 or
+6.0 files MSDOS.SYS and IO.SYS.
+
+WORKAROUND
+==========
+
+There are two workarounds to this problem:
+
+ - Remove the two hidden IBM files from the root directory of the hard drive.
+
+
+ - Format the system disks outside of Windows. The MS-DOS SYS.COM does not get
+   confused by the hidden files.
+
+MORE INFORMATION
+================
+
+When an IBM DOS system is upgraded to MS-DOS 5.0, the IBM hidden files are left
+on the hard drive because it is difficult to know if these files belong to IBM
+DOS or IBM OS/2. The IBM OS/2 files take up too much space to be copied to the
+MS-DOS 5.0 uninstall disk.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311 kbMSDOSSearch kbMSDOS600 kbMSDOS500
+Version           : :3.1,3.11,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

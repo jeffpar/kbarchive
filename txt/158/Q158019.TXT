@@ -1,0 +1,73 @@
+DOCUMENT:Q158019  31-JUL-2001  [sms]
+TITLE   :SMS: Quick Windows Viewer Unavailable on RC French WinNT Client
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2,1.2 SP1
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbtshoot kbusage smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 1.2 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Quick Windows Viewer remains unavailable when you try to remotely control a
+computer running Windows NT 4.0 (Build 1381, U.S. or French version) that is
+both configured with the French Regional Settings and located in a domain other
+than the one containing the computer running Systems Management Server 1.2 (U.S.
+or French version).
+
+CAUSE
+=====
+
+This problem occurs when all of the following conditions are true:
+
+ - Either the Windows NT 4.0 client or the computer running Systems Management
+   Server on Windows NT 4.0 are configured with the French regional settings.
+
+ - These two computers are located in different domains, without a trust
+   relationship.
+
+ - These two computers attempt to use the same user account with a different
+   password.
+
+WORKAROUND
+==========
+
+To work around this problem, do any of the following:
+
+ - Use the same user account and password.
+
+ - Use the trust relationship (for example, DOMAIN2 trusts DOMAIN1) and include
+   the DOMAIN1\MFST user account to the local administrator's group of DOMAIN2.
+
+ - Use the English regional settings.
+
+
+Additional query words: SP1
+
+======================================================================
+Keywords          : kbenv kbnetwork kbtshoot kbusage smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120 kbSMS120SP1
+Version           : :1.2,1.2 SP1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,170 @@
+DOCUMENT:Q92729  11-SEP-1999  [winmisc]
+TITLE   :Windows Sound System Version 1.0 Disk Directory Listings
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory of the Windows Sound System version 1.0 5.25-inch
+and 3.5-inch Disk 1.
+
+ Volume in drive A is DISK1
+ Volume Serial Number is 1135-12EE
+ Directory of A:\ 
+
+CHK16-44 WA_     98392 09-21-92   1:00a
+CHK4-11  WA_      5863 09-21-92   1:00a
+CHK8-11  WA_      9222 09-21-92   1:00a
+PARTIAL  WA_      4284 09-21-92   1:00a
+WHELP    TX_      8326 09-21-92   1:00a
+DEINSTAL TX_      2147 09-21-92   1:00a
+README   TXT      7498 09-21-92   1:00a
+SNDSCAPE SC_     11717 09-21-92   1:00a
+SNDSYS   PA_      3381 09-21-92   1:00a
+SETUP    IN_      3662 09-21-92   1:00a
+CONTROL  IN_       468 09-21-92   1:00a
+SETUP    INI        70 09-21-92   1:00a
+SNDVOL   HL_     31913 09-21-92   1:00a
+SNDREC   HL_     25580 09-21-92   1:00a
+QRECORD  HL_    141537 09-21-92   1:00a
+SNDFINDR HL_     46547 09-21-92   1:00a
+SNDSCAPE HL_     19036 09-21-92   1:00a
+MUSICBOX HL_     38058 09-21-92   1:00a
+SND      HL_     32763 09-21-92   1:00a
+SNDSYS   HL_     13533 09-21-92   1:00a
+WSSPSS   HL_     16253 09-21-92   1:00a
+WSETUP   EX_    100707 09-21-92   1:00a
+SNDREC   EX_     12538 09-21-92   1:00a
+SNDVOL   EX_     10036 09-21-92   1:00a
+MCIPLAY  EX_      3973 09-21-92   1:00a
+MUSICBOX EX_     22330 09-21-92   1:00a
+QRECORD  EX_     62621 09-21-92   1:00a
+SNDFINDR EX_     21918 09-21-92   1:00a
+SETUP    EXE     62144 09-21-92   1:00a
+MSACM    DR_     18649 09-21-92   1:00a
+SNDSYS   DRV     28080 09-21-92   1:00a
+WCOMMON  DL_     17797 09-21-92   1:00a
+SNDCNTRL DL_     42459 09-21-92   1:00a
+SNDWAVE  DL_     42137 09-21-92   1:00a
+SNDSYSW  CP_      2295 09-21-92   1:00a
+SND      CP_     11300 09-21-92   1:00a
+MIDIMAP  CF_      2470 09-21-92   1:00a
+MSADPCM  AC_     10264 09-21-92   1:00a
+VSNDSYS  38_      3357 09-21-92   1:00a
+SOUNDLIB     <DIR>     09-21-92   1:45p
+       40 file(s)     995325 bytes
+                      254464 bytes free
+
+The following is the directory of the Windows Sound System version 1.0 5.25-inch
+and 3.5-inch Disk 2.
+
+ Volume in drive A is DISK2
+ Volume Serial Number is 1135-12EE
+ Directory of A:\ 
+
+XLRDR    HL_     57247 09-21-92   1:00a
+DATES    DC_    219044 09-21-92   1:00a
+MONEY    DC_    349320 09-21-92   1:00a
+NUMBERS  DC_    264898 09-21-92   1:00a
+OTHER    DC_    317092 09-21-92   1:00a
+USER     DC_        12 09-21-92   1:00a
+        6 file(s)    1207613 bytes
+                      248320 bytes free
+
+The following is the directory of the Windows Sound System version 1.0 5.25-inch
+and 3.5-inch Disk 3.
+
+ Volume in drive A is DISK3
+ Volume Serial Number is 3A33-12F0
+ Directory of A:\ 
+
+SOUNDLIB     <DIR>     09-21-92   1:51p
+SOUNDS       <DIR>     09-21-92   1:51p
+ICONS        <DIR>     09-21-92   1:51p
+        3 file(s)          0 bytes
+                      272896 bytes free
+
+The following is the directory of the Windows Sound System version 1.0 5.25-inch
+and 3.5-inch Disk 4.
+
+ Volume in drive A is DISK4
+ Volume Serial Number is 1F57-12F3
+ Directory of A:\ 
+
+DEMO         <DIR>     09-21-92   1:57p
+        1 file(s)          0 bytes
+                      253952 bytes free
+
+The following is the directory of the Windows Sound System version 1.0 5.25-inch
+and 3.5-inch Disk 5.
+
+ Volume in drive A is DISK5
+ Volume Serial Number is 096F-12F6
+ Directory of A:\ 
+
+PROOF    XL_     32299 09-21-92   1:00a
+ALDUS    VC_     19929 09-21-92   1:00a
+ALL      VC_     46246 09-21-92   1:00a
+DEFAPP   VC_     13043 09-21-92   1:00a
+FILEMGR  VC_     19197 09-21-92   1:00a
+LOTUS123 VC_     24789 09-21-92   1:00a
+MICRGRFX VC_     21244 09-21-92   1:00a
+MSEXCEL  VC_     22905 09-21-92   1:00a
+MSMAIL   VC_     16396 09-21-92   1:00a
+MSMONEY  VC_     16931 09-21-92   1:00a
+MSPROJ   VC_     20730 09-21-92   1:00a
+MSPUB    VC_     17831 09-21-92   1:00a
+MSWORKS  VC_     25514 09-21-92   1:00a
+NDW      VC_     19845 09-21-92   1:00a
+POWERPNT VC_     19916 09-21-92   1:00a
+PROGMAN  VC_     14189 09-21-92   1:00a
+WDPRFWIN VC_     51241 09-21-92   1:00a
+WINWORD  VC_     26848 09-21-92   1:00a
+WRITE    VC_     16954 09-21-92   1:00a
+DEFAULT  US_    118624 09-21-92   1:00a
+VOICEPIL IN_       514 09-21-92   1:00a
+VOICEPIL HL_     90336 09-21-92   1:00a
+VOICEPIL EX_     53156 09-21-92   1:00a
+VLAYER   DL_     24164 09-21-92   1:00a
+VCOLLECT DL_     21334 09-21-92   1:00a
+VPHOOK   DL_      3135 09-21-92   1:00a
+VRECOG   DL_    196792 09-21-92   1:00a
+RDR      DL_     29828 09-21-92   1:00a
+XLATOR   DL_     19244 09-21-92   1:00a
+TTSM     DL_     28467 09-21-92   1:00a
+XLRDR    DL_     19119 09-21-92   1:00a
+123RDR   AD_     19159 09-21-92   1:00a
+       32 file(s)    1069919 bytes
+                      378880 bytes free
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,59 @@
+DOCUMENT:Q119371  17-DEC-2000  [crossnet]
+TITLE   :DEC 205 EtherNet Card and TCP/IP-32
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft TCP/IP-32 does not function properly with a DEC 205 (DE205) EtherNet
+network adapter unless the EtherWorks III driver is version 2.77 or later.
+
+MORE INFORMATION
+================
+
+Using a driver earlier than version 2.77 functions properly with NetBEUI, but no
+connectivity will be possible with TCP/IP-32 except that the system will be able
+to PING other workstations. An updated driver is available on CompuServe in the
+DECPCI forum (GO DECPCI).
+
+For additional information on Digital products, please call Digital at (800)
+344-4825.
+
+The Digital products discussed here are manufactured by Digital Equipment
+Corporation (DEC), a vendor independent of Microsoft; we make no warranty,
+implied or otherwise, regarding these products' performance or reliability.
+
+Additional query words: wfw wfwg prodtcp32 1.00 WFWG
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

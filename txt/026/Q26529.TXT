@@ -1,0 +1,64 @@
+DOCUMENT:Q26529  15-APR-2000  [powerpt]
+TITLE   :PPT: Restoring the Aspect Ratio of an Imported Graphic
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:4.0; WINDOWS:4.0,7.0
+OPER/SYS:
+KEYWORDS:kbgraphic
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft PowerPoint for Macintosh, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to return an imported object to its original state
+after you resized it in Microsoft PowerPoint.
+
+MORE INFORMATION
+================
+
+You can return an object to its original size by following these steps.
+
+1. Select the object.
+
+2. On the Draw menu, click Scale.
+
+3. Click to select the "Relative to Original Picture Size" check box.
+
+4. In the Scale To box, type "100" (without the quotation marks).
+
+5. Click OK.
+
+The object should return to its original size and proportions.
+
+Additional query words: ppt powerpt 4.0 7.0 8.0 macppt resize back
+
+======================================================================
+Keywords          : kbgraphic 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt700Search kbPowerPt400 kbPowerPt400Mac
+Version           : MACINTOSH:4.0; WINDOWS:4.0,7.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

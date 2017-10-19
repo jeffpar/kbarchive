@@ -1,0 +1,80 @@
+DOCUMENT:Q104646  25-NOV-1999  [msdos]
+TITLE   :When Setup Configures SMARTDrive 5.0 for Read-Only Caching
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS Setup adds the SMARTDRV /X command to the AUTOEXEC.BAT file if:
+
+ - The version of SMARTDrive currently in use is earlier than 4.0.
+
+-or-
+
+ - SMARTDrive is not currently loaded in memory and there is no SMARTDRV command
+   line in the AUTOEXEC.BAT file.
+
+MORE INFORMATION
+================
+
+The following is a list of the five scenarios Setup may encounter and whether or
+not Setup modifies your configuration files:
+
+ - A version of SMARTDrive earlier than version 4.0 is loaded in memory.
+
+   Setup removes the SMARTDRV.SYS command from the CONFIG.SYS file and adds
+   SMARTDRV /X to the AUTOEXEC.BAT file.
+
+ - SMARTDrive is not loaded in memory and there is no command for SMARTDRV in
+   the AUTOEXEC.BAT file.
+
+   Setup adds SMARTDRV /X to the AUTOEXEC.BAT file
+
+ - SMARTDrive is not in memory and there is a SMARTDRV command in the
+   AUTOEXEC.BAT file.
+
+   Setup does not change the SMARTDRV command in the AUTOEXEC.BAT file.
+
+ - SMARTDrive is in memory and there is no command for SMARTDRV in the
+   AUTOEXEC.BAT file.
+
+   Setup does not add a SMARTDRV command to the AUTOEXEC.BAT file.
+
+ - SMARTDrive is loaded in memory and there is a command for SMARTDRV in the
+   AUTOEXEC.BAT file.
+
+   Setup leaves the SMARTDRV command in the AUTOEXEC.BAT file unchanged.
+
+
+Additional query words: 6.22 6.20 stepup Upgrade Step-Up
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

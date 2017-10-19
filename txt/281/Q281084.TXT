@@ -1,0 +1,55 @@
+DOCUMENT:Q281084  09-DEC-2000  [homegame]
+TITLE   :Classic Board Games: Cannot Promote Rook in Shogi Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Classic Board Games 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Shogi and you attempt to promote a rook, you may experience one of
+the following symptoms:
+
+ - If you are the player on the bottom of the screen, you may not be prompted to
+   promote the rook.
+
+ - If you are the player on the top of the screen, you may not be able to move
+   the rook after you promote it.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: msgame promotion zone freeze
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbGamesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

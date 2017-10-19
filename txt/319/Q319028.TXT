@@ -1,0 +1,64 @@
+DOCUMENT:Q319028  28-FEB-2002  [msnetwork]
+TITLE   :How To Import Contacts From Netscape Address Book To Microsoft E
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Internet Access for Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to import contacts from Netscape Mail to Microsoft
+Entourage.
+
+The information in this article applies to:
+ - Microsoft Entourage
+
+MORE INFORMATION
+================
+
+To import contacts from Netscape Mail to Microsoft Entourage
+
+1. Start Microsoft Entourage.
+
+2. Click File, and then click Import.
+
+3. In the Import window, select Import information from one of these programs,
+   and then click Netscape Communicator.
+
+4. Click the right arrow to continue.
+
+5. Select Addresses as the data you want to import.
+
+6. Click the right arrow to continue, and then click Finish.
+   Your imported Addresses will now be located in the Address Book folder.
+
+Additional query words: kbimu; MSN; Mac
+
+======================================================================
+Keywords          :  
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

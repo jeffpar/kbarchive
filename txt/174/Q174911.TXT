@@ -1,0 +1,69 @@
+DOCUMENT:Q174911  18-DEC-1999  [homemm]
+TITLE   :AUDIO: Copy To Feature May cause GPF
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you play a Wave (.wav) file, then right-click the article and choose Copy To
+(either Word or PowerPoint), the you receive the error message:
+
+   This program has performed an illegal operation and will be shut down.
+
+If you click the Details button, you see the message:
+
+   BSHELF98 caused an invalid page fault in module Kernel32.DLL
+
+You may be required to shut off the computer with the power switch in order to
+continue.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf 98.
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+WORKAROUND
+==========
+
+You can copy the material and then manually switch to Word or PowerPoint, and
+then paste the material into the document.
+
+MORE INFORMATION
+================
+
+You are unable to copy media from Bookshelf due to legal restrictions.
+
+Additional query words: multi multi-media mm media
+
+======================================================================
+Keywords          : kbmm 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

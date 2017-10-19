@@ -1,0 +1,52 @@
+DOCUMENT:Q98391  12-DEC-1999  [pcmail]
+TITLE   :PC WRmt: 3.2 Mail Remote for Windows Disk 3 [5.25] - U.S.
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory listing of the version 3.2 Microsoft Mail Remote
+for Windows Disk 3 (5.25-inch):
+
+ATTMAIL  HL_    108577 04-06-93  12:00a
+FAXVIEW  HL_     26149 04-06-93  12:00a
+MAILDRV  HL_      8853 04-06-93  12:00a
+MSFAX    DR_     14848 04-06-93  12:00a
+MSMAIL   HL_    183020 04-06-93  12:00a
+MSRMT    HL_     66854 04-06-93  12:00a
+SENDFILE DL_      3495 04-06-93  12:00a
+UNIDRV   DL_     69777 04-06-93  12:00a
+WINHELP  HL_     17855 04-06-93  12:00a
+
+Additional query words: 3.20 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

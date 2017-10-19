@@ -1,0 +1,63 @@
+DOCUMENT:Q143369  08-NOV-2001  [homekids]
+TITLE   :3D Movie Maker: How to Add Frames While Freezing Actor
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may want to add frames and a path to an actor in a certain action pose, (see
+"Using the SHIFT Key" below) or you may want to cycle through the actions
+assigned to an actor to choose a particular pose (see "Using the CTRL Key"
+below).
+
+Using the SHIFT Key
+-------------------
+
+Once you have the actor in the position you want, hold the SHIFT key down on the
+keyboard while continuing the path of the actor.
+
+Using the CTRL Key
+------------------
+
+The control (CTRL) key allows you to cycle through the action sequence `in slow
+motion to set the appropriate action.
+
+MORE INFORMATION
+================
+
+Adding frames with an actor resting, as opposed to moving, can also be
+accomplished by holding down the left mouse button without moving the actor.
+
+Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional freeze add action shortcuts keyboard howto 3dmm shortcut keys short-cut hotkeys homekids homekid longer more frame
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

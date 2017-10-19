@@ -1,0 +1,77 @@
+DOCUMENT:Q231431  08-APR-2000  [sms]
+TITLE   :Raptor CIFS Firewall Disables Access to Network Monitor Agents
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsms120 kbNetMon
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When it is running on Sparc/Solaris, Network Monitor 4.0 cannot connect to a
+remote agent through an agent's Raptor version 5.0.3 firewall.
+
+CAUSE
+=====
+
+Raptor 5 includes a new proxy service called Common Internet File System, or
+CIFS (also known as SMB), to handle NetBIOS traffic. This advanced proxy
+provides fine control to administrators over the kind of NetBIOS traffic that is
+allowed (files, printers, read-only, and so on), and provides better logging.
+
+The CIFS proxy, however, does not understand Network Monitor's remote agent
+connections. Network Monitor stops responding (hangs) when it attempts the
+connection to the remote agent, even though there may be a rule permitting CIFS
+traffic.
+
+WORKAROUND
+==========
+
+To work around this issue, reconfigure the Raptor firewall to use compatible
+proxy services:
+
+1. Disable the new CIFS proxy.
+
+2. Define a generic service proxy (GSP service) on TCP port 139.
+
+3. Use this new service instead of CIFS proxy in your rules.
+
+4. Restart the firewall.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: prodsms netmon bloodhound bh
+
+======================================================================
+Keywords          : kbsms120 kbNetMon 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

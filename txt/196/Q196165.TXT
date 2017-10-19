@@ -1,0 +1,59 @@
+DOCUMENT:Q196165  30-APR-1999  [exchange]
+TITLE   :XADM: "Unable to display folder..." in Outlook 97 After MSW Runs
+PRODUCT :Microsoft Exchange
+PROD/VER:WINNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After using the Microsoft Exchange Server Move Server Wizard to move a server,
+Outlook 97 toolbars don't work correctly. If you click on any of the folders
+displayed in the Outlook bar, the error message below is displayed in a dialog
+box in the client:
+
+   Unable to display folder. Folder no longer exists.
+
+CAUSE
+=====
+
+This is by design in Outlook. If a folder's path changes, Outlook will not be
+able to find it.
+
+WORKAROUND
+==========
+
+Users with this problem will need to recreate their Outlook toolbar.
+
+Additional query words: XCLN
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINNT:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q177941  28-OCT-1999  [pcmail]
+TITLE   :16-bit Windows Mail Client Slow on Windows NT 4.0
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The 16-bit Windows mail client will intermittently perform slowly on Windows NT
+4.0. This slow performance will affect all other 16-bit Windows applications
+running in the WOW. After mail is unloaded, performance will return to normal.
+This behavior does not exist when running the 16-bit Windows mail client on
+Windows NT 3.51.
+
+CAUSE
+=====
+
+This problem happens because the compression routine used by the 16-bit Windows
+Mail client performs slowly on Windows NT 4.0.
+
+WORKAROUND
+==========
+
+To work around this problem, use the Windows Messaging client that is bundled
+with Windows NT 4.0 as the primary Mail Server client on Windows NT 4.0
+computers. Or, disable background compression of the MMF with the following
+entry in the Msmail.ini:
+
+      [Microsoft Mail]
+      No_Compress=1
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail for Windows
+versions 3.2 and 3.5. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail350 kbMail320
+Version           : WINDOWS:3.2,3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

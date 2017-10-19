@@ -1,0 +1,76 @@
+DOCUMENT:Q197330  21-FEB-2002  [exchange]
+TITLE   :XFOR: Configuring LDAP/IMAP Migration Wizard for Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may want to check that the migration wizard is working by testing it against
+your Exchange Server computers. The new Lightweight Directory Access Protocol
+(LDAP)/Internet Messaging Access Protocol (IMAP) migration wizard requires a
+change in the Mlmigad.ini file in order for it to work with Exchange Server
+computers. This article explains how to test the LDAP/IMAP migration wizard.
+
+MORE INFORMATION
+================
+
+To test the LDAP/IMAP migration wizard, perform the following steps:
+
+1. Locate the Mlmigad.ini file in the Exchsrvr\Bin directory.
+
+2. Open the Mlmigad.ini file and locate the following section:
+
+      [OBJECT_MAP]
+      ; ADSI_ObjectClass is used to determine which objects are mail users.
+      ADSI_ObjectClass=inetOrgPerson
+
+3. Change it to the following:
+
+      [OBJECT_MAP]
+      ; ADSI_ObjectClass is used to determine which objects are mail users.
+      ADSI_ObjectClass=organizationalPerson
+
+4. Save and then close the file. When you run the LDAP/IMAP migration wizard,
+   the recipients will show up correctly.
+
+NOTE: The default LDAP schema settings for the LDAP/IMAP migration wizard do not
+work with Exchange Server computers, because the migration wizard was designed
+to migrate other LDAP servers to Exchange Server.
+
+Depending on the LDAP implementation, you will need to customize the various
+schema names in the mlmigad.ini file to match your LDAP server's naming
+convention.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

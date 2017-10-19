@@ -1,0 +1,70 @@
+DOCUMENT:Q169421  13-JUN-2001  [homemm]
+TITLE   :Mastering: Setup: Oleaut32.dll Installs to a Random File Name
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:4.0 1.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Microsoft Visual Basic 5 Fundamentals, version 1.0 
+ - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Mastering Visual Basic 5.0 Fundamentals on a computer running
+Windows NT Workstation 4.0, you may receive the following error message
+
+   A random file will be placed in the Winnt\System32 directory, named
+   <nnnnnnnn>.Dll
+
+where <nnnnnnnn> is 8 random, hexadecimal digits.
+
+RESOLUTION
+==========
+
+To correct this problem, install Internet Explorer from the Mastering CD, or any
+of the Microsoft programming tools used by the labs. This will allow the file to
+be properly replaced and registered.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mastering Visual Basic
+5.0 Fundamentals version 1.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The random file is a copy of System\Oleaut32.dll from the Mastering Visual Basic
+5.0 Fundamentals CD. Although the existing version of Oleaut32.dll should be
+replaced during setup, it remains unchanged even after restarting the computer.
+
+Additional query words: multi multi-media mm media
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbMSPressSearch kbOSWinSearch kbOSWinNT400 kbOSWinNTSearch
+Version           : 4.0 1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

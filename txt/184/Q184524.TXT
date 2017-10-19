@@ -1,0 +1,85 @@
+DOCUMENT:Q184524  10-APR-1999  [exchange]
+TITLE   :XFOR: cc:Mail Connector Sends Messages Twice Under Load
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0 5.5
+OPER/SYS:
+KEYWORDS:kbusage exc55sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Connector for Lotus cc:Mail may send duplicate copies of
+a message from Exchange to cc:Mail during the transmission. The problem depends
+on timing and generates duplicates of a few messages just after the connector
+begins processing the queue.
+
+
+CAUSE
+=====
+
+The connector uses multiple threads to check notification messages for items to
+be added to the queue. There is a small possibility of two threads accessing the
+same notification and adding the message to the queue.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+STATUS
+======
+
+Exchange Server 5.0
+-------------------
+
+Microsoft has confirmed this to be a problem in Exchange Server versions 5.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Microsoft has confirmed this to be a problem in Exchange Server versions 5.5.
+This problem was first corrected in Exchange Server 5.5 Service Pack 2.
+
+
+Additional query words: duplicated twice extra ccmail gateway
+
+======================================================================
+Keywords          : kbusage exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.0 5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

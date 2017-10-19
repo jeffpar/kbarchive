@@ -1,0 +1,83 @@
+DOCUMENT:Q248635  08-AUG-2001  [exchange]
+TITLE   :XADM: Recommended Install Order for Exchange, Cluster, and SP's
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The order that Exchange Server, Windows NT, Cluster Server, and their associated
+service packs are installed in is very important. If you do not install these
+components in the recommended order, your systems may be unable to perform some
+functions.
+
+Following is the recommended order of installation:
+
+1. Install Windows NT version 4.0 on the first node in the cluster.
+
+2. Finish the installation by applying Windows NT Service Pack 3 from the
+   Enterprise Edition CD.
+
+3. Install Windows NT version 4.0 on the second node in the cluster.
+
+4. Finish the installation by applying Windows NT Service Pack 3 from the
+   Enterprise Edition CD.
+
+5. Install Cluster Server from the Windows NT Enterprise Edition CD on both
+   nodes.
+
+6. Apply the current Windows NT service pack to both nodes in the cluster.
+
+NOTE: You must apply a Windows NT service pack that is later than Windows NT
+Service Pack 3. Exchange Server requires a post-Windows NT Service Pack 3
+roll-up fix to work properly.
+
+7. Install Exchange Server version 5.5 on the first node in the cluster.
+
+8. To update the second node in the cluster, insert the Exchange Server 5.5
+   setup CD and select Update Node.
+
+9. Apply the current Exchange Server 5.5 Exchange Service Pack to the first node
+   in the cluster.
+
+10. Update the second node in the cluster by inserting the Exchange Service Pack
+   CD and select Update Node.
+
+If Cluster Server and Exchange Server are already installed and a service pack
+needs to be reapplied, or a newer service pack needs to be installed, apply the
+Windows NT service packs to each node in the cluster before you apply any
+Exchange Server updates to either node.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:4.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

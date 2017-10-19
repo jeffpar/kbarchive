@@ -1,0 +1,74 @@
+DOCUMENT:Q75356  17-DEC-2000  [msdos]
+TITLE   :AT Gigafile Disk Driver Does Not Work with MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are using an AT Gigafile disk driver manufactured by Core Technology on your
+MS-DOS 5.0 system, and your system stops responding (hangs).
+
+CAUSE
+=====
+
+According to Core Technology, the AT Gigafile disk driver does not work with
+MS-DOS version 5.0.
+
+The AT Gigafile disk driver provides disk partitioning to manipulate the 32 MB
+partition limitation under versions of MS-DOS earlier than version 4.01. This
+utility is very similar to the Disk Manager and Speed Store disk-partitioning
+software.
+
+If the Gigafile disk driver is used, the following line is found in CONFIG.SYS:
+
+   device=[drive:][path]GIGAAT.SYS
+
+The system stops (hangs) if this line is present when MS-DOS 5.0 is used.
+
+WORKAROUND
+==========
+
+1. Back up your hard drive.
+
+2. Install MS-DOS 5.0 to floppy disks (that is, use "setup/f").
+
+3. Use FDISK from the MS-DOS 5.0 Support disk (created during setup to floppy).
+
+4. Delete old non-DOS partition information.
+
+5. Create a new MS-DOS partition.
+
+6. Format and Restore your hard drive.
+
+Additional query words: 5.00 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

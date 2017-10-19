@@ -1,0 +1,62 @@
+DOCUMENT:Q195991  14-NOV-2000  [word97]
+TITLE   :WD97: Text Box Resizes When Clipboard Contents Paste
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbole kbdta winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The height of a text box changes when you paste into it an image from the
+Clipboard (such as a ClipArt image or a Microsoft Excel chart).
+
+CAUSE
+=====
+
+When you paste an image from the Clipboard into an empty text box or callout,
+Word adjusts the height of the text box to match the proportions of the
+Clipboard image, while maintaining the text box width.
+
+However, if the text box or callout contains text, the box does not resize.
+Instead, Word attempts to maintain the image's size. This may result in the
+picture not appearing until you resize the box.
+
+WORKAROUND
+==========
+
+To maintain the size of the image, be sure that the text box or callout is large
+enough for the image, and then type text in the box. If the box contains text
+(such as spaces), Word does not resize the image when it pastes it in the box.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbdta winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

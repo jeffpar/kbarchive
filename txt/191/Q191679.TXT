@@ -1,0 +1,89 @@
+DOCUMENT:Q191679  21-JUL-2001  [visualc]
+TITLE   :FIX: Wrong Line Number Information Debugging STL
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0sp3
+OPER/SYS:
+KEYWORDS:kbDebug kbVC500bug kbVC600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Integrated Debugger, included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0sp3 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0sp3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to debug a program that uses STL template classes, the debugger may
+point to the wrong line in the source file.
+
+CAUSE
+=====
+
+The Compiler is generating incorrect line-number information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual C++, version
+6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Sample Code
+-----------
+
+      //test.cpp
+      #include <vector>
+      int main()
+      {
+      int a, b ;
+      a=10;
+      std::vector<int>  v; //Incorrect debug line-number info for this line.
+      b=5;
+      return 0;
+      }
+      //end test.cpp
+
+1. Create a Console Application project and add test.cpp to the project.
+
+2. Make a debug build of the project.
+
+3. Start stepping over each line of code by using F10.
+
+RESULTS: After the "a=10;" line, the cursor points to the last line of test.cpp.
+
+Pressing F10 again takes the cursor back to "b=5;" line.
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbDebug kbVC500bug kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : WINNT:5.0sp3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

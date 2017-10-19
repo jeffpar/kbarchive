@@ -1,0 +1,79 @@
+DOCUMENT:Q244019  18-JUL-2001  [ssafe]
+TITLE   :HOWTO: How to Retrieve Deleted Files in Visual SourceSafe
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,4.0a,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbSsafe600FAQ kbSsafe500FAQkb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to retrieve files in Visual SourceSafe that have been
+deleted but not destroyed.
+
+MORE INFORMATION
+================
+
+When you delete a file from a project in Visual SourceSafe, a dialog box appears
+that gives you the option of either deleting the file or destroying it
+permanently.
+
+If you choose to merely delete the file, the file will be removed from the view
+in the SourceSafe explorer, but the file and all of its history will still exist
+in the SourceSafe database. This gives you the option of recovering the file at
+a later time.
+
+If you elect to destroy a file, the file will not only be removed from the
+SourceSafe explorer view, but it will be gone from the SourceSafe database as
+well. A file that has been destroyed cannot be recovered.
+
+Steps to Retrieve Deleted (Not Destroyed) Files in the Visual SourceSafe Explorer
+---------------------------------------------------------------------------------
+
+1. In the Visual SourceSafe Explorer, select the project folder that contained
+   the deleted file.
+
+2. Click Show Properties, and then select the Deleted Items tab.
+
+3. Select the deleted files and click Recover.
+
+To Retrieve Deleted (Not Destroyed) Files from the Command Line
+---------------------------------------------------------------
+
+ - Use the SS RECOVER command on the parent project of the deleted file.
+
+   For example, this command will recover files that were deleted from the
+   $/MyProj project:
+
+   "SS RECOVER $/MyProj/*.*" (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbSsafe600FAQ kbSsafe500FAQ kbfaq
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

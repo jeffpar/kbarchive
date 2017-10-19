@@ -1,0 +1,70 @@
+DOCUMENT:Q184018  09-AUG-2001  [winnt]
+TITLE   :Novell NDS for WinNT Doesn't Support Restrict Anonymous Security
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A computer running both Windows NT Server and Novell's NDS for Windows NT cannot
+be configured to restrict anonymous connections.
+
+CAUSE
+=====
+
+Windows NT 4.0 Service Pack 3 and a hotfix for Windows NT 3.51 provide a
+mechanism for administrators to restrict the ability for anonymous logon users
+from obtaining system information. These are also known as NULL session
+connections. During the installation of Novell NDS, SamSrv.dll is replaced and
+support for this feature is not included.
+
+STATUS
+======
+
+Novell NDS for Windows NT currently does not include support for restricting
+anonymous connections
+
+For more information regarding Windows NT and anonymous user security, please see
+the following article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q143474
+   TITLE : Restricting Information Available to Anonymous Logon Users
+
+   ARTICLE-ID: Q129457
+   TITLE : Anonymous Connections May Be Able to Obtain the Password Policy
+
+   ARTICLE-ID: Q178640
+   TITLE : Could Not Find Domain Controller When Establishing a Trust
+
+
+Additional query words: nds4nt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q119306  11-NOV-1999  [pcmail]
+TITLE   :PROFS: Host Access INSTALL Failure with CLRSCRN Module
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail Gateway to PROFS/OfficeVision host access component Install
+program may generate an IBM operation exception error similar to this:
+
+   INSTALL
+   DMSACC7241 193 replaces F(193)
+   DMSITP141T Operation exception occurred at 0000E0F0 in routine CLRSCRN
+   CMS
+
+CAUSE
+=====
+
+The Install program did not pick up the CLRSCRN module on the system disks.
+
+RESOLUTION
+==========
+
+If the host access VM ID has the CLRSCRN module on the disks and it merely is
+not being picked up, rename CLRSCRN MODULE F to CLRSCRN BACKUP F. The Install
+program will now be able to pick it up.
+
+Additional query words: 3.20 kberrmsg
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,69 @@
+DOCUMENT:Q99175  11-DEC-2001  [homemm]
+TITLE   :Bookshelf: Message Asks for Encarta CD
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+ - Microsoft Encarta 92 Multimedia Encyclopedia 
+ - Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may receive the following incorrect message when running Bookshelf:
+
+   Please install the Encarta CD.
+
+This message appears when both of the following conditions exist:
+
+ - You installed Encarta after you installed Bookshelf.
+
+-and-
+
+ - Viewer files are damaged or missing.
+
+This problem can occur with any Viewer application.
+
+MORE INFORMATION
+================
+
+This problem occurs because there is a single VIEWER.INI file that contains
+error messages to be generated if Viewer files are damaged or missing. The error
+message entries in this file are overwritten whenever you install a new
+application. If Encarta is installed last, error messages that refer
+specifically to Encarta overwrite previous versions of the error messages. Then,
+if Viewer files are found to be damaged or missing, you will receive
+Encarta-specific error messages regardless of which Viewer application you are
+currently running.
+
+Microsoft is researching this problem and will post new information here as it
+becomes available.
+
+Additional query words: msn_bookshelf multimedia multi media multi- media bad corrupted usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbBookshelfSearch kbCineManiaSearch kbEncarta1992
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,116 @@
+DOCUMENT:Q174244  12-AUG-1999  [foxpro]
+TITLE   :FIX: RESTORE SCREEN Causes Memory Leak in Visual FoxPro 5.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kberrmsg kbvfp kbVS97sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Repeatedly calling the SAVE SCREEN TO <memvar> and RESTORE SCREEN FROM
+<memvar> commands causes the operating system to run low on memory.
+
+In Windows NT 4.0, the following message appears in a window titled "System
+Process-Out of Virtual Memory":
+
+   Your system is running low on virtual memory. Please close some applications.
+   You can then start the System option in the Control Panel and choose the
+   Virtual Memory button to create as additional paging file or to increase the
+   size of your current paging file.
+
+After clicking OK, the following error message appears:
+
+   Program Error There is not enough memory to complete this operation.
+
+In Windows 95, the following error appears:
+
+   Program Error There is not enough memory to complete this operation.
+
+RESOLUTION
+==========
+
+As a workaround, place the following two commands before the RESTORE SCREEN FROM
+command in the code example below:
+
+      ACTIVATE SCREEN
+      CLEAR
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The amount of the memory leak with each iteration of the SAVE and RESTORE
+combination is dependent on screen resolution, size of Visual FoxPro desktop,
+and color depth. Memory leakage will be some multiple of the product of the
+_SCREEN.Width and _SCREEN.Height. This can be on a magnitude of megabytes per
+iteration.
+
+Steps to Reproduce Behavior
+---------------------------
+
+WARNING: Running this code causes a low memory situation on the computer. This
+condition may cause the operating system to become unstable. Close all running
+applications and save your data before following this procedure. To close all
+open applications, press CTRL+ALT+Delete to open the NT Task Manager or the
+Windows 95 Close Program window, and then close all the other applications you
+have running.
+
+1. Create a program containing the following code:
+
+         ON KEY LABEL f12 CANCEL
+         SAVE SCREEN TO s_var
+         Y=1
+         DO WHILE .T.
+         Y=Y+1
+         @ 1,1 SAY Y
+         RESTORE SCREEN FROM s_var
+         ENDDO
+
+2. Run the program.
+
+The error message may take several minutes to appear depending on the amount of
+physical memory and the hard drive space available for the swap file.
+
+Additional query words: memory leak restore from
+
+======================================================================
+Keywords          : kberrmsg kbvfp kbVS97sp2fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

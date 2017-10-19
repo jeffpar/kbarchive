@@ -1,0 +1,76 @@
+DOCUMENT:Q128828  05-NOV-1999  [pcmail]
+TITLE   :PC Ext: DrivesDynamic Problems with Station Restrictions
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When EXTERNAL.EXE is operating with the DrivesDynamic=dd or -Fdd option, and it
+attempts to connect dynamically to a server, the following errors may occur.
+
+The error on remote client is:
+
+   Postoffice has not accepted mail item
+
+The error on the PC running External is:
+
+   Caller: Sign-on ID or password incorrect.
+
+CAUSE
+=====
+
+The Novell Server being dialed has restricted the user to be logged in from a
+specific workstation.
+
+RESOLUTION
+==========
+
+To remove the restriction in Novell, the server supervisor should perform the
+following procedure:
+
+1. In Novell, type the following:
+
+   "syscon" (without the quotation marks)
+
+2. Select User Information.
+
+3. Select Station Restrictions. The Network Address will appear on the screen.
+
+4. Press the INSERT key, and type the address of the machine running External.
+
+Novell NetWare is manufactured by Novell, a vendor independent of Microsoft, we
+make no warranty, implied or otherwise, regarding these products' performance or
+reliability.
+
+Additional query words: 3.00 3.20 3.20a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300
+Version           : WINDOWS:3.0,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

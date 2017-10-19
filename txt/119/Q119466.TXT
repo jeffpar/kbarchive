@@ -1,0 +1,59 @@
+DOCUMENT:Q119466  17-DEC-2000  [crossnet]
+TITLE   :Microsoft TCP/IP-32 and Sockets Support
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The only supported interface for Microsoft TCP/IP-32 for Windows for Workgroups
+version 3.11 is Windows Sockets version 1.1. Support for previous versions of
+the Sockets specification is not provided. In addition, there is no support
+provided for Raw Sockets (SOCK_RAW), DOS Sockets, or vendor-specific socket
+implementations.
+
+MORE INFORMATION
+================
+
+The Windows Sockets application programming interface (API) was developed to
+provide a standard application interface to different vendors protocol
+implementations. The official name for the dynamic-link library (DLL) used for
+Windows Sockets 1.1 support is WINSOCK.DLL. Previous DLL versions that were
+distributed with Microsoft LAN Manager (for example, WIN_SOCK.DLL and
+WSOCKETS.DLL) are not supported by Microsoft TCP/IP-32. In order for a Windows
+Sockets application to function with Microsoft TCP/IP-32, the application must
+support Windows Sockets version 1.1 (WINSOCK.DLL).
+
+Additional query words: wfw wfwg prodtcp32 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

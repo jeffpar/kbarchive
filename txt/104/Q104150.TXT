@@ -1,0 +1,54 @@
+DOCUMENT:Q104150  08-NOV-2001  [homemm]
+TITLE   :Screen Paging Doesn't Keep Up with Music
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Mozart for Windows, version 1.0 
+ - Microsoft Multimedia Schubert for Windows, version 1.0 
+ - Microsoft Multimedia Stravinsky for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may find that the screen paging does not keep up with the music when you
+choose the Play Through button in the section "A Close Reading." This occurs in
+low memory situations, when Schubert, Stravinsky, or Mozart cannot redraw pages
+quickly enough to remain synchronized with the music.
+
+RESOLUTION
+==========
+
+To avoid this problem, maximize available memory and system resources by closing
+any unnecessary applications or utilities. If this does not work, try restarting
+your system and rerunning Windows without any unnecessary
+terminate-and-stay-resident (TSR) or memory-resident utilities running.
+
+Additional query words: multi media multimedia multi-media off unsyncronized visuals sound audio is not out of synch Usage VBasic
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMSchubert kbMMStravinsky kbMMMozart100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

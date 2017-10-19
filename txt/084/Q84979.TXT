@@ -1,0 +1,76 @@
+DOCUMENT:Q84979  09-FEB-2000  [win16sdk]
+TITLE   :SuperMDI.exe Demos Superclassing MDI Client Window
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kb16bitonly kbMDI kbGrpDSUser kbWndw
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SuperMDI.exe is a sample that demonstrates superclassing an MDI client window to
+change its behavior. An application can use superclassing to add new styles and
+functionality to a multiple document interface (MDI) client window.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   SuperMDI.exe
+   (http://download.microsoft.com/download/platformsdk/demo99/3.1/W31/EN-US/SuperMDI.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Under a variety of circumstances an application might be designed to change the
+predefined behavior of an MDI client window. Superclassing provides the easiest
+and cleanest method to change window styles or to handle messages in a unique
+manner.
+
+By default, an MDI client window cannot accept mouse button double-clicks. If an
+application superclasses the client window, the application can change the
+window style of the client window and have it accept double- clicks. An
+application can also use this method to change the MDI client window background
+color.
+
+The SuperMDI sample application demonstrates how to change the color of the MDI
+client window and enable the MDI client to respond to mouse button
+double-clicks.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbMDI kbGrpDSUser kbWndw 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

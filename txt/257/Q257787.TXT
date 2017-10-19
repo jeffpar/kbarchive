@@ -1,0 +1,223 @@
+DOCUMENT:Q257787  27-JUL-2001  [vbwin]
+TITLE   :FIX: Program w/ Usercontrol Causes Access Violation When Exiting
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbCtrl kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an ActiveX control with two UserControl objects is created, one UserControl
+acts as a data source and the other acts as a data consumer (bound to a data
+source.) When another ActiveX control is created that includes the two preceding
+UserControls and binds them together, a client program that uses the last
+UserControl in the compiled program crashes with an Access Violation in
+Msvbvm60.dll when it exits.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in the latest
+service pack for Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the following
+article numbers to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+To download the latest Visual Studio service pack, visit the following Microsoft
+Web site:
+
+   http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a Visual Basic ActiveX Control project. UserControl1 is created by
+   default.
+
+2. On the Project menu, choose References to open the References dialog box,
+   check Microsoft ActiveX Data Objects 2.1 Library, and click OK.
+
+3. Set the DataBindingBehavior property of UserControl1 to 1 - vbSimpleBound.
+
+4. Add a TextBox control on UserControl1. Text1 is created by default.
+
+5. Add the following code to the General Declarations section of UserControl1:
+
+   Option Explicit
+
+   Public Property Get Text() As Variant
+     Text = Text1.Text
+   End Property
+
+   Public Property Let Text(ByVal New_Text As Variant)
+     Text1.Text = New_Text
+     PropertyChanged "Text"
+   End Property
+
+   ' Load property values from storage
+   Private Sub UserControl_ReadProperties(PropBag As PropertyBag)
+     Text1.Text = PropBag.ReadProperty("Text", Text1)
+   End Sub
+
+   ' Write property values to storage
+   Private Sub UserControl_WriteProperties(PropBag As PropertyBag)
+
+     Call PropBag.WriteProperty("Text", Text1.Text, Text1)
+   End Sub
+
+6. On the Tools menu, choose Procedure Attributes.
+
+7. Set the contents of the Name combo box to Text.
+
+8. Click the Advanced button, choose the following items, and click OK:
+
+    - Property is data bound
+
+    - This property binds to DataField
+
+    - Show DataBindings collection at design time
+
+    - Property will call CanPropertyChange before changing
+
+    - Update immediate
+
+9. On the Project menu, select Add User Control. UserControl2 is created by
+   default.
+
+10. Set the DataSourceBehavior Property of UserControl2 to 1 - vbDataSource.
+
+11. Add a Shape control on UserControl2.
+
+12. Add the following code to the General Declarations section of UserControl2.
+
+NOTE: You need to change the path to Biblio.mdb in the UserControl_Initialize
+event procedure if Visual Basic 6.0 is not installed on your C Drive.
+
+   Option Explicit
+   Dim TheConn As New ADODB.Connection
+   Dim rs As ADODB.Recordset
+
+   Private Sub UserControl_GetDataMember(DataMember As String, Data As Object)
+     Set Data = rs
+   End Sub
+
+   Public Property Get Recordset() As Variant
+     Recordset = rs
+   End Property
+
+   Private Sub UserControl_Initialize()
+     Dim tmp As String
+     
+     tmp$ = "Provider=Microsoft.Jet.OLEDB.4.0;"
+     tmp$ = tmp$ & "Data Source=C:\Program Files\Microsoft Visual " _
+          & "Studio\VB98\BIBLIO.MDB;Persist Security Info=False"
+
+     TheConn.ConnectionString = tmp$
+     TheConn.Open
+     Set rs = TheConn.Execute("select * from authors")
+   End Sub
+
+   Private Sub UserControl_Terminate()
+     'On Error Resume Next
+     
+     On Error GoTo errHandler
+     rs.Close
+     TheConn.Close
+     Exit Sub
+
+   errHandler:
+     MsgBox "Error in UserControl_Terminate" & Err.Number & "  " & Err.Description
+   End Sub
+
+   Public Sub MoveNext()
+     If Not rs.EOF Then
+       rs.MoveNext
+     End If
+   End Sub
+
+   Public Sub MovePrevious()
+     If Not rs.BOF Then
+       rs.MovePrevious
+     End If
+   End Sub
+
+   Public Sub MoveFirst()
+     rs.MoveFirst
+   End Sub
+
+   Public Sub MoveLast()
+     rs.MoveLast
+   End Sub
+
+13. On the File menu, choose Make Project1.ocx to compile the project.
+
+14. On the File menu, choose Add Project to create an ActiveX control project.
+   Project2 is added by default.
+
+15. Change the Name property of UserControl1 in Project2 to UserControl3.
+
+16. Add a UserControl1 on UserControl3. UserControl11 is added by default.
+
+17. Place a UserControl2 on UserControl3. UserControl21 is added by default.
+
+18. Set the following properties of UserControl11:
+
+    - Set the DataSource property to UserControl21.
+
+    - Set DataField property to Au_ID.
+
+19. On the File menu, choose Make Project2.ocx to compile Project2.
+
+20. On the File menu, choose Add Project to add a Standard EXE project. Project3
+   is added by default.
+
+21. Add UserControl3 on Form1 of Project3.
+
+22. On the File menu, choose Make Project3.exe to compile the project.
+
+23. Start Microsoft Windows Explorer, double-click Project3.exe, and note that
+   Form1 is displayed.
+
+24. Close Form1, and note that an Access Violation occurs.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbActiveX kbCtrl kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,58 @@
+DOCUMENT:Q200380  19-MAR-1999  [sms]
+TITLE   :SMS: Y2K Testing on SMS Site Server Causes Problems
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsms120
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is not advised to perform Year 2000 (Y2K) testing on a live Systems
+Management Server (SMS) site server, or the SMS's SQL server machine(s), because
+this will break the SMS funtionality.
+
+MORE INFORMATION
+================
+
+Changing the time/date on an SMS site server will be reflected in the site
+control file that is sent to the SQL database. Once this file is written into
+the database, SMS will be unable to process the next site control file.
+
+When the date is changed back to "current" date/time and the site server writes
+that to the database, SQL will not process this site file because the one with
+the Y2K date is "newer." Thus, no information will go current for the site in
+the database.
+
+See Q154577 "Site Properties Cannot Be Changed," for more information.
+
+Additional query words: prodsms smsy2k
+
+======================================================================
+Keywords          : kbsms120 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

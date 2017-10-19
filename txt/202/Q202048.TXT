@@ -1,0 +1,54 @@
+DOCUMENT:Q202048  27-JUL-2001  [sms]
+TITLE   :SMS: File Transfer Sessions Start in Different Directories
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbRemote kbsms200 kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Systems Management Server 2.0, the default directory for the File Transfer
+window has changed. The startup directory for the Administrator console is
+different from the startup directory for the client.
+
+MORE INFORMATION
+================
+
+The File Transfer agent is not intuitive and uses specific directories that it
+knows exist when starting up. In Systems Management Server 1.2, the client's
+default directory for the File Transfer window is \%SystemRoot%. With Systems
+Management Server 2.0, the client default directory for the File Transfer window
+is \%System Root%\MS\SMS\CLICOMP\Remctrl and the Administrator console default
+directory for the File Transfer window is \SMS\BIN\I386.
+
+Additional query words: dir startup folder
+
+======================================================================
+Keywords          : kbRemote kbsms200 kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

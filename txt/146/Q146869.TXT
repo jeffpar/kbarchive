@@ -1,0 +1,77 @@
+DOCUMENT:Q146869  08-AUG-2001  [win95x]
+TITLE   :ALT+F6 Key Combination Does Not Work in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95 4.00
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience any of the following symptoms:
+
+ - You cannot use the ALT+F6 key combination to switch between a program's
+   non-document windows, although other programs seem to have this
+   functionality.
+
+ - You cannot assign the ALT+F6 key combination to a macro in programs that
+   allow a keyboard shortcut to be assigned to a macro.
+
+ - The F16 key on your Wang keyboard does not work.
+
+CAUSE
+=====
+
+The ALT+F6 key combination is reserved for use by Windows 95. Programs that try
+to control this key combination are unable to use it.
+
+On keyboards with 16 function keys (such as the Wang keyboard), keys F13-F16 are
+mapped to other key combinations. The F16 key is mapped to the ALT+F6 key
+combination.
+
+RESOLUTION
+==========
+
+Use the mouse to switch between windows in your program, or assign another key
+combination to the macro in your program.
+
+
+MORE INFORMATION
+================
+
+Reserved key combinations (ALT+TAB, CTRL+ESC, ALT+ESC, and ALT+F6) are captured
+by Windows 95. These key combinations are captured by Windows 95 to prevent
+programs from interfering with task switching, thereby improving overall system
+reliability.
+
+Additional query words: 4.0 hotkey
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 95 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

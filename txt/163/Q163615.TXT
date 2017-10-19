@@ -1,0 +1,72 @@
+DOCUMENT:Q163615  09-AUG-2001  [winnt]
+TITLE   :Unattended Setup Does Not Honor Win31Upgrade=no In Answer File
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You want to run Unattended Setup on a computer that already has Windows 3.x
+installed. But because you do not want to upgrade Windows, you specify
+"Win31Upgrade=no" in your unattended answer file.
+
+Even though you do this, there is a message during text mode setup saying:
+
+   Setup has found a previous version of Microsoft Windows on your hard disk in
+   the directory shown below.
+
+   C:\WINDOWS
+
+   Setup recommends installing Microsoft Windows NT in the same directory.
+
+CAUSE
+=====
+
+When Setup finds Windows, it first checks if there is enough free space on the
+partition containing Windows before it asks for the upgrade. If there is
+insufficient space, Windows NT Setup displays the message above before honoring
+the setting in the unattended answer file.
+
+The drive is too full to hold Windows NT, which requires approximately 122 MB (1
+MB = 1,048,576 bytes) of free disk space.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Windows NT version
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: unattend Unattended Setup
+
+======================================================================
+Keywords          : kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

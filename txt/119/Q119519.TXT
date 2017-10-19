@@ -1,0 +1,92 @@
+DOCUMENT:Q119519  29-JUL-2001  [visualc]
+TITLE   :BUG: Aggregate Initializer Fails In VC++ 32-bit, Ver. 1.0, 2.0
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVCkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If "operator =" is overridden in an aggregate class, you can no longer use an
+initializer list to construct a constant object.
+
+CAUSE
+=====
+
+The assignment operator causes the const object to be place in read only memory
+before it is initialized. Upon initialization of the object, the application
+fails with an access violation.
+
+RESOLUTION
+==========
+
+To work around this problem, create a constructor to initialize the object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. We are researching this bug and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following sample generates an Application Error message box when
+initializing kZeroMLUInt64:
+
+Sample Code
+-----------
+
+   class MLUInt64 {
+   public:
+    // If this following inline method is commented out the correct code
+    // will be generated.
+       const MLUInt64 & operator= (const MLUInt64 &u64)
+                         {fVal[0] = u64.fVal[0];
+                          fVal[1] = u64.fVal[1];
+                          return *this;}
+
+       int    fVal[2];
+   }; // class MLUInt64
+
+   const MLUInt64 kZeroMLUInt64 = {1,1};
+
+   void main(void) {
+
+      MLUInt64 kTempMLUInt64;
+
+      kTempMLUInt64 = kZeroMLUInt64;
+   }
+
+Additional query words: 8.00 9.00 1.00 2.00
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

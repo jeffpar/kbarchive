@@ -1,0 +1,104 @@
+DOCUMENT:Q197126  11-JAN-2001  [vbwin]
+TITLE   :BUG: IPF Referencing Default Property of Nonexistent Image Ctrl
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbCtrl kbVBp600bug kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to access the default property of a nonexistent Image Control in a
+control array in Visual Basic 6.0, an Invalid Page Fault (IPF) or application
+error occurs instead of a run-time error.
+
+RESOLUTION
+==========
+
+Specify the Picture property of the Image1(<index>).Picture explicitly,
+instead of depending on the default property.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE Project. Form1 is created by default.
+
+2. Place an Image Control on Form1.
+
+3. Set the Index Property of the Image Control to "0."
+
+4. Add the following code in the General Declarations section of Form1:
+
+         Private Sub Form_Load()
+            Dim p As StdPicture
+            Set p = Pic()
+         End Sub
+
+         Private Function Pic() As StdPicture
+            Set Pic = Image1(1) ' NOTE THAT IMAGE1(1) DOESN'T EXIST!
+         End Function
+
+5. Press the F8 key to start the project. Press F8 to step through the project.
+
+6. Close Form1.
+
+7. Repeat steps 5 and 6 several times to get the IPF.
+
+8. To avoid the page fault, specify Image1(1).Picture explicitly instead of
+   depending on the default property. So, repeat steps 1 through 4, replacing
+   the Pic Function with the following:
+
+         Private Function Pic() As StdPicture
+            Set Pic = Image1(1).Picture
+         End Function
+
+9. Run the project.
+
+RESULT: Notice that it throws the following error as expected, because the array
+element specified by the index does not exist:
+
+   Run-time Error '340:
+   Control array element '1' doesn't exist
+
+Additional query words: GPF IPF
+
+======================================================================
+Keywords          : kbCtrl kbVBp600bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q94070  19-NOV-1999  [lanman]
+TITLE   :Creating Bound Applications with LAN Man PTK/SDK
+PRODUCT :Microsoft LAN Manager
+PROD/VER::2.0,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LAN Manager Programmer's Toolkit, version 2.0 
+ - Microsoft LAN Manager Software Development Kit, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+PROBLEM ID: BUG# 1913
+
+SYMPTOMS
+========
+
+Bound applications that call LAN Manager APIs will not run correctly under
+MS-DOS. All APIs will return errorcode 3 (path not found) when called under
+MS-DOS.
+
+Applications created solely for MS-DOS or for MS OS/2 will run correctly.
+
+RESOLUTION
+==========
+
+As a workaround, create separate MS-DOS and OS/2 versions of your program. If
+desired, the separate programs can be linked together into one "dual-mode"
+executable. See your compiler documentation for more information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the LAN Manager Programmer's
+Toolkit version 2.0 and in the LAN Manager Software Development Kit version 2.1.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00 2.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSDKSearch kbLanManSearch kbLanManProgTK200 kbSDKLanMan210
+Version           : :2.0,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

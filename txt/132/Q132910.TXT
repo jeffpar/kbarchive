@@ -1,0 +1,192 @@
+DOCUMENT:Q132910  24-MAR-2000  [foxpro]
+TITLE   :FIX: Can't Move Focus from a Toolbar to an Object on a Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempts to use SetFocus to move the focus from an object in a toolbar to an
+object on a form within a formset does not work. The focus never leaves the
+previously active control, which is another object on the form. This problem
+occurs only with formsets.
+
+WORKAROUND
+==========
+
+Step-by-Step Workaround
+-----------------------
+
+Create an instance of the toolbar as a separate object and the form as a separate
+object. Then the code _SCREEN.ActiveForm.Text1.SetFocus in the command button on
+the toolbar works just fine. For example:
+
+1. Use this command:
+
+   MODIFY FORM Myformset
+
+2. Select the ToolBar1 form.
+
+3. On the Form menu, click Remove Form.
+
+4. Press CTRL+W to save your work and exit from the Form Designer.
+
+5. Use this command:
+
+   MODIFY CLASS mytoolbar OF mytestlib
+
+6. Double-click the command button on the Toolbar.
+
+7. Replace this code:
+
+   THISFORMSET.FORM1.Text1.SetFocus
+
+   with this code:
+
+   _SCREEN.ActiveForm.Text1.SetFocus
+
+8. Press CTRL+W to save your work and exit from the Class Designer.
+
+9. Type the following commands in the Command window:
+
+      SET CLASSLIB TO mytestlib.vcx
+      oToolBar = CREATEOBJECT("mytoolbar")
+      oToolBar.SHOW
+      DO FORM myformset.
+
+10. Click the second text box object (the one below) on Form1.
+
+11. Click the New button on the toolbar.
+
+Alternative Step-by-Step Workaround
+-----------------------------------
+
+Another workaround if you must use a formset is to place a timer object on the
+form that uses SetFocus to move the focus to Text1 on the form. For example:
+
+1. Use the following command:
+
+   MODIFY CLASS mytoolbar OF mytestlib.
+
+2. Double-click the command button on the toolbar.
+
+3. Replace this code:
+
+   THISFORMSET.FORM1.Text1.SetFocus
+
+   with this code:
+
+   THISFORMSET.FORM1.Timer1.Enabled = .T.
+
+4. Add a timer object to Form1.
+
+5. Set the timer's Interval property to 10.
+
+6. In the timer's Timer event, add this code:
+
+      THISFORMSET.FORM1.Text1.SetFocus
+      THIS.Enabled=.F.
+
+7. Press CTRL+W to save the formset and exit from the Form Designer.
+
+8. Use this command:
+
+   DO FORM myformset
+
+9. Click the second Text Box object (the one below) on Form1.
+
+10. Click the New button on the toolbar.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Use this command:
+
+   CREATE CLASS mytoolbar OF mytestlib AS TOOLBAR
+
+2. Add a command button to the toolbar.
+
+3. Set the command button's Caption property to New.
+
+4. Type the following code to the command button's Click event:
+
+   THISFORMSET.FORM1.Text1.SetFocus
+
+5. Press CTRL+W to save your work and exit Class Designer.
+
+6. Use this command:
+
+   CREATE FORM myformset.
+
+7. Click the View Classes button, and add MYTESTLIB.VCX.
+
+8. Add mytoolbar to the form. It will display a message box with the following
+   message. Click the Yes button.
+
+   A form set object is required to add a form. Create one?"\
+
+9. Move Form1 to the right so that both forms can be seen.
+
+10. Click the View Classes button, and choose standard.
+
+11. Add two text box objects (one below the other) to Form1.
+
+12. Press CTRL+W to save your work and exit Form Designer.
+
+13. Use this command:
+
+   DO FORM myformset.
+
+14. Click the second Text Box object (the one below) on Form1.
+
+15. Click the New button on the toolbar.
+
+This should set the focus to Text1, the first text box object on Form1. However,
+the focus never leaves the previously active control (Text2), the second text
+box object on Form1. The code executed in the MYTOOLBAR.Command1.Click event to
+shift focus from the previously active control to Text1 does not work.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

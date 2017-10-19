@@ -1,0 +1,84 @@
+DOCUMENT:Q185653  11-DEC-1999  [foxpro]
+TITLE   :FIX: MAPIMessage.Object in Watch Window Causes Program Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Scrolling up and down in the Debug Watch window to see the properties of a
+MAPIMessage.Object causes an Application error and Visual FoxPro is shut down.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Make sure that you have Microsoft Exchange installed on the test computer and
+   have created a valid Exchange Profile.
+
+2. Create a program file and type the following code:
+
+         oleMAPISession = CREATEOBJECT( "MSMAPI.MAPISession" )
+         oleMAPIMessage = CREATEOBJECT( "MSMAPI.MAPIMessages" )
+         WITH oleMAPISession
+            .Signon()
+               IF ( .SessionID > 0 )
+                  oleMAPIMessage.SessionID = .SessionID
+                  ACTIVATE WINDOW watch
+                  oleMAPIMessage.FETCH()
+                  SUSPEND
+               ENDIF
+          ENDWITH
+
+3. Save and run the program.
+
+4. When the Debug window opens (this may take a minute depending the speed of
+   the computer), enter "oleMapiMesssage" (without the quotation marks) in the
+   Watch window.
+
+5. Expand the MAPI control (oleMapiMessage) and scroll down or up in the Watch
+   window.
+
+At this point, you will get an Application error and Visual FoxPro shuts down.
+
+Additional query words: vfoxwin kbDSupport kbdse kbvfp600fix
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

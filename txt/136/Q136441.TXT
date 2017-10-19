@@ -1,0 +1,68 @@
+DOCUMENT:Q136441  08-AUG-2001  [winnt]
+TITLE   :Last Known Good Always Restores Original Boot Settings
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you boot Windows NT and choose to use the Last Known Good configuration,
+the original boot settings are restored. Changes that were made during
+subsequent successful boots are not used.
+
+CAUSE
+=====
+
+Winlogon checks for the value ReportBootOK in the registry. If it is set to 1,
+the Service Controller deletes the Clone key. This results in the current boot
+settings being saved as Last Known Good.
+
+Current boot settings are not written to the Clone key because Winlogon doesn't
+report that the boot was successful, so the Service Controller doesn't delete
+the original Clone Key.
+
+
+RESOLUTION
+==========
+
+Upgrade to the latest U.S. Service Pack for Windows NT.
+
+STATUS
+======
+
+This problem was corrected in the latest U.S. Service Pack for Windows NT
+version 3.51.
+
+
+Additional query words: 3.51 prodnt logon loging winlogin
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

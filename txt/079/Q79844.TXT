@@ -1,0 +1,88 @@
+DOCUMENT:Q79844  06-MAY-2001  [masm]
+TITLE   :Embedding the Assembly Date and Time in a MASM 6.0 Object
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Macro Assembler (MASM) version 6.0, predefined symbols for the
+date and time of assembly were introduced. They are:
+
+   @Date
+   @Time
+
+These symbols can be used to construct strings that contain the date and time.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates two methods of embedding the information
+in a string in the object. Date1 and Time1 are constructed using one method,
+Date2 and Time2 using the other. Assemble with /Fl to get a listing that shows
+the expansion.
+
+Sample Code
+-----------
+
+   /* Assemble options needed: none
+   */ 
+
+   .MODEL small
+   .STACK
+   .DATA
+
+   tmp         equ <>
+   tmp         CatStr <">, @Date, <">
+   Date1       byte tmp
+
+   tmp         equ <>
+   tmp         CatStr <">, @Time, <">
+   Time1       byte tmp
+
+   %Date2      byte "&@Date"
+
+   %Time2      byte "&@Time"
+
+   .CODE
+
+   start:
+       mov ax, @data
+       mov ds, ax
+
+       mov ah, 4ch
+       int 21h
+
+   END start
+
+Additional query words: kbinf 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

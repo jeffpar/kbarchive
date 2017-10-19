@@ -1,0 +1,66 @@
+DOCUMENT:Q158334  08-AUG-2001  [winnt]
+TITLE   :Cannot Install PowerDesk in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot install any eariler version of PowerDesk 2.02/2.04 in Windows NT 4.0.
+When you try to do so, an error message appears, but may vanish before you can
+read it.
+
+CAUSE
+=====
+
+PowerDesk requires the Microsoft Windows 95 Kernel32.dll file. This file is not
+included with Windows NT.
+
+RESOLUTION
+==========
+
+Microhelp does not support PowerDesk in Windows NT Workstation or Windows NT
+Server. The PowerDesk ExplorerPlus tool may run, but some folder and drive names
+are garbled and some functions do not work as expected. Do not use PowerDesk
+with Windows NT.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or other- wise, regarding
+this product's performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kb3rdparty appscomp kbAppCompatibility 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

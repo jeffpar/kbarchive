@@ -1,0 +1,68 @@
+DOCUMENT:Q135225  17-DEC-2000  [win95x]
+TITLE   :Setting Up Gateway 2000 Aztec Sound Card with Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the support software for a Gateway 2000 Aztech sound card, the
+installation program displays a message stating that it is restarting Windows
+95. The installation program then reports that it can be installed only in
+Windows 3.1, and restarts the computer. You may also receive an error message
+concerning the DMA channel used by the sound card.
+
+CAUSE
+=====
+
+The support software for this sound card was designed for Windows 3.1 and fails
+to correctly identify Windows 95.
+
+RESOLUTION
+==========
+
+The drivers for the sound card should be installed correctly, even though you
+received the error message stated above. If you received an error message
+concerning the DMA channel, follow these steps to verify or adjust the DMA
+setting:
+
+1. In Control Panel, double-click the System icon.
+
+2. On the Device Manager tab, double-click the Sound, Video, And Game
+   Controllers branch.
+
+3. Click the Aztech sound card, and then click Properties.
+
+4. On the Resources tab, check the DMA setting. If you think the setting may be
+   incorrect for the sound card, consult the sound card's documentation for the
+   correct setting.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

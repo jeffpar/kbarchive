@@ -1,0 +1,59 @@
+DOCUMENT:Q134224  19-OCT-2000  [pcmail]
+TITLE   :PC MMTA: Err Msg: Drive X: Is Invalid
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA, version 3.2, on platform(s):
+    - the operating system: OS/2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Setup for the Mail Multitasking MTA for OS/2 (MMTA), the following
+error may be displayed:
+
+   Drive X: is invalid
+
+where X is the drive letter.
+
+CAUSE
+=====
+
+The OS/2 MMTA Setup program does not recognize free space over 1 gigabyte in
+size.
+
+RESOLUTION
+==========
+
+Install the OS/2 MMTA on a hard drive that has less than 1 GB in free space.
+Then copy the MMTA files to the other drive.
+
+Additional query words: 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

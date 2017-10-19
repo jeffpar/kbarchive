@@ -1,0 +1,50 @@
+DOCUMENT:Q47259  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Date Inconsistent Between Summary and Read Screen
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In a Microsoft Mail message, the Date field displayed in the Read window
+contains the date and time that the message was sent. This is the date and time
+of the server the message was sent from, that is, the sender's server.
+
+The date and time displayed under the Received heading in the Summary window for
+this same message is the date and time the message arrived at its destination
+server, that is, the recipient's server.
+
+This feature allows users to compare when a message was sent against when it was
+received.
+
+Additional query words: 2.00 2.00a 2.00b 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

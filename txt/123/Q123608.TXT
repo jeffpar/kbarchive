@@ -1,0 +1,76 @@
+DOCUMENT:Q123608  08-AUG-2001  [winnt]
+TITLE   :Olicom NIC Driver Does Not Install Correctly
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the installation of the Olicom 16/4 network interface card (NIC), not all
+the files are copied over and the following error message appears::
+
+   Setup is unable to obtain network adapter information from the associated DLL
+   files. Operation cannot continue.
+
+If you choose to continue it appears as though the installation completes, but
+the NIC never binds and the network services do not start. The error message
+reappears if you attempt to view the configuration of the NIC driver.
+
+CAUSE
+=====
+
+The Olicom 16/4 NIC requires a driver located in the DRVLIB subdirectory of the
+Windows NT CD. The full path is DRVLIB\NETCARD\X86\OCTK16. The OLINCDET.DLL file
+is not copied over during installation. Without this file the adapter
+information cannot be detected.
+
+WORKAROUND
+==========
+
+1. Copy the following files into the SYSTEM32 directory:
+
+      OTCK16.DLL
+      OTCK16.SYS
+      OTCK16.HLP
+      OEMSETUP.INF
+      OLINCDET.DLL
+      OCTKSTAT.EXE
+
+   NOTE: A copy error will occur on the files, as the source and destination are
+   the same, just ignore these errors.
+
+2. Specify SYSTEM32 as the location of the OEMSETUP.INF file.
+
+The NIC will now install and properly bind.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

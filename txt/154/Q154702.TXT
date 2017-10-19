@@ -1,0 +1,63 @@
+DOCUMENT:Q154702  08-AUG-2001  [winnt]
+TITLE   :Cannot Start Directory Service Manager for NetWare (DSMN)
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Windows NT Server fails to start Directory Service Manager for NetWare (DSMN)
+services.
+
+CAUSE
+=====
+
+This is by design.
+
+RESOLUTION
+==========
+
+You can install DSMN on the primary domain controller (PDC) and backup domain
+controller (BDC). However, you can only run DSMN on servers functioning as the
+primary domain controller. In cases where the PDC is not available, you must
+promote the BDC to a PDC before the DSMN service can be started.
+
+MORE INFORMATION
+================
+
+If the PDC fails and you do not have DSMN installed on any BDC, you must promote
+one of the BDCs to be a PDC before installing DSMN on this server. Failure to do
+this will result in an error message stating that the domain controller is not
+found.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

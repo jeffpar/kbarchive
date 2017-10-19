@@ -1,0 +1,90 @@
+DOCUMENT:Q321405  29-APR-2002  [homegame]
+TITLE   :Dungeon Siege: "Encountered a Problem...Needs to Close" Err Msg
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dungeon Siege, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Dungeon Siege, the opening movie appears, but the Startup
+menu does not appear. Instead, you receive an error message similar to the
+following:
+
+   Dungeon Siege has encountered a problem and needs to close. We are sorry for
+   the inconvenience.
+
+When you click click here, you receive error message details similar to the
+following:
+
+   Error Signature
+   AppName: dungeonsiege.exe AppVer: 0.2.3.801 ModName: d3dim700.dll
+   ModVer: 4.8.1.881 Offset: 0001c5cf
+
+CAUSE
+=====
+
+This behavior may occur if your video adapter driver is corrupted or
+incompatible with Dungeon Siege.
+
+This issue is known to occur with some NVidia video drivers.
+
+RESOLUTION
+==========
+
+To resolve this issue, download the latest driver for your video adapter.
+Contact your video adapter manufacturer for information about updated drivers.
+
+MORE INFORMATION
+================
+
+For information about how to contact your video adapter manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

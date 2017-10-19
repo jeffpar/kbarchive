@@ -1,0 +1,156 @@
+DOCUMENT:Q161990  11-JUN-2002  [winnt]
+TITLE   :How to Enable Strong Password Functionality in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+Microsoft Windows NT 4.0 Service Pack 2 introduces a new DLL file (Passfilt.dll)
+that lets you enforce stronger password requirements for users. Passfilt.dll
+provides enhanced security against "password guessing" or "dictionary attacks"
+by outside intruders.
+
+NOTE: While Windows 95 does not support case-sensitivity in its passwords, the
+password change request is sent to the Primary Domain Controller (PDC)in such a
+way that it can enforce the password filtering rules. For example, if you change
+your domain password on a computer running Windows 95 to PassWord1, you can use
+password1, PASSWORD1, PassWord1, and so on to log on to the domain from a
+computer running Windows 95. However, you must use PassWord1 to log on to a
+computer running Windows NT.
+
+NOTE: Passwords changed in Windows 3.x or Windows for Workgroups 3.x cannot be
+enforced in this password policy.
+
+
+MORE INFORMATION
+================
+
+The Passfilt.dll file implements the following password policy:
+
+1. Passwords must be at least six (6) characters long.
+
+2. Passwords must contain characters from at least three (3) of the following
+   four (4) classes:
+
+      Description                             Examples
+      -------------------------------------------------------------------
+
+      English upper case letters              A, B, C, ... Z
+      English lower case letters              a, b, c, ... z
+      Westernized Arabic numerals             0, 1, 2, ... 9
+      Non-alphanumeric ("special characters") such as punctuation symbols
+
+3. Passwords may not contain your user name or any part of your full name.
+
+These requirements are hard-coded in the Passfilt.dll file and cannot be changed
+through the user interface or registry. If you wish to raise or lower these
+requirements, you must write your own .dll and implement it in the same fashion
+as the Microsoft version that is available with Windows NT 4.0 Service Pack 2.
+
+How to Install Strong Password Filtering
+----------------------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To ensure Strong Password functionality occurs throughout your domain structure,
+make the following changes on all primary domain controllers (or stand-alone
+servers, where needed).
+
+Passfilt.dll is not necessary on backup domain controllers since the PDC is the
+only machine where changes to the domain accounts database are made. However, it
+should be installed on all BDCs because they can be promoted to PDC. If a BDC
+without Passfilt.dll is promoted to PDC, then strong password enforcement will
+be lost but there will be no other adverse effects.
+
+1. Install the latest Windows NT 4.0 service pack.
+
+2. Copy Passfilt.dll to the %SYSTEMROOT%\SYSTEM32 folder.
+
+3. Start Registry Editor (Regedt32.exe).
+
+4. Locate and click the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa
+
+5. If there is not a value called Notification Packages, then on the Edit menu
+   click Add Value, and then add the following Value:
+
+   Notification Packages
+
+   This value should be a data type of REG_MULTI_SZ.
+
+   NOTE: If the Notification Packages value already exists, proceed to the next
+   step.
+
+6. Double-lick the Notification Packages value.
+
+7. In the Data section there should be a value of FPNWCLNT. Create a new line,
+   and then type "PASSFILT" (without the quotation marks).
+
+8. Quit Registry Editor.
+
+9. Restart the computer.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q151082 Password Change Filtering & Notification in Windows NT
+
+   Q174075 Strong Passwords With Passfilt.dll Are Not Enforced
+
+   Q174076 Invalid Password Message When Strong Passwords Are Required
+
+Microsoft Windows 2000
+----------------------
+
+Strong Password Functionality Included with Microsoft Windows 2000:
+
+The functionality described above for the Passfilt.dll file for Windows NT 4.0
+has been included in the operating system security components for Windows 2000.
+You can enable strong password enforcement in Windows 2000 by starting the Local
+Computer Policy snap-in and enabling the "Passwords must meet complexity
+requirements" setting in Computer Configuration\Windows Settings\Security
+Settings\AccountPolicies\Password Policy.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

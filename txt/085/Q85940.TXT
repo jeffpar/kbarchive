@@ -1,0 +1,55 @@
+DOCUMENT:Q85940  17-DEC-2000  [win3x]
+TITLE   :SYSADMIN.WRI Not Included with Windows & MS-DOS 5 for IBM PS/2
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 98 of the "Getting Started" guide for Windows & MS-DOS 5 for IBM PS/2
+explains how to place the Windows files on a network server. At the end of the
+page, there is a note describing how to view the SYSADMIN.WRI file to obtain
+further information about installing Windows on a network server. However, there
+is no such file included with Windows & MS-DOS 5 for IBM PS/2.
+
+MORE INFORMATION
+================
+
+The information contained in the SYSADMIN.WRI file was incorporated into the
+"Windows Resource Kit" manual for version 3.1. For more detailed information
+about using Windows 3.1 in a network environment and for information about
+obtaining the Windows Resource Kit, contact the Microsoft Sales Information
+Center (MSIC) at (800) 426-9400.
+
+Additional query words: 3.10 setup/a setup/n setup /n /a doc err documentation error system administrator
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

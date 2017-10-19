@@ -1,0 +1,62 @@
+DOCUMENT:Q119424  15-NOV-1999  [pcmail]
+TITLE   :FAX: FAXLOGO3.PCX Opens in ZOOM IN Mode Within PaintBrush
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open FAXLOGO3.PCX (the Microsoft Mail Gateway to FAX default logo file)
+within PaintBrush, any modifications you make while editing it are compressed on
+the cover sheet of the outgoing fax.
+
+CAUSE
+=====
+
+Because of how the file has been saved to the original install disks, the
+drawing area is displayed in the Zoom In mode when you open the file.
+
+RESOLUTION
+==========
+
+To preserve any modifications you make in PaintBrush, select Zoom Out mode after
+you open the file and before you make any changes to it. This shrinks the
+drawing to fit the drawing area.
+
+You can use other graphics programs to create or modify the PCX formatted logo as
+long as they save in "black and white" PCX format. See the "Microsoft Mail
+Gateway to FAX Administrator's Guide" for more details on the "black and white"
+PCX format.
+
+
+Additional query words: 3.00 3.00a 2.10 2.1
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300 kbMailGateFax300a
+Version           : MS-DOS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

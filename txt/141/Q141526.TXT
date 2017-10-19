@@ -1,0 +1,62 @@
+DOCUMENT:Q141526  10-FEB-2000  [foxpro]
+TITLE   :Text1 Object in Grid Column by Default Gives You More Control
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Text1 object is listed in a grid's column by default so that the user will
+have more control at the cell level in FoxPro's event model.
+
+MORE INFORMATION
+================
+
+If the Text1 (text box) object control is removed from the grid's column, many
+of the properties and methods that were formerly available are no longer there.
+To see this, follow these steps:
+
+1. Create a form, and add a table to the data environment. Then add a grid to
+   the form.
+
+2. Change the ColumnCount property of the grid to 2 or 3 so that individual
+   columns are visible.
+
+3. Select the Column1 object on the properties sheet. Then click the data tab,
+   and delete the Text1 control from the CurrentControl property.
+
+4. With Column1 as the selected object in the properties sheet, click the
+   Methods tab and note the difference in the number of methods available versus
+   the number of methods available with the Text1 object.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,60 @@
+DOCUMENT:Q132850  17-DEC-2000  [win95x]
+TITLE   :SoundSentry Does Not Work for MS-DOS Graphics Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenable kbui win95 kbEnableHear kbEnableLearn
+
+======================================================================
+95
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an MS-DOS graphics program is running and the computer makes a sound, the
+system does not generate a screen flash (a visual cue that a sound has
+occurred), even though the SoundSentry option in the Accessibility Properties
+dialog box is checked.
+
+CAUSE
+=====
+
+The Windows 95 SoundSentry feature does not support screen flashes when the
+display is in an MS-DOS graphics program.
+
+RESOLUTION
+==========
+
+If you require the SoundSentry features for MS-DOS graphics programs, install
+Access Pack for MS-DOS, and run the full-screen graphics program in MS-DOS mode.
+
+Additional query words: access pack
+
+======================================================================
+Keywords          : kbenable kbui win95 kbEnableHear kbEnableLearn 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

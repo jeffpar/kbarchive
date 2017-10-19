@@ -1,0 +1,59 @@
+DOCUMENT:Q169996  02-MAY-1999  [iis]
+TITLE   :To Run an ISAPI DLL with #exec, Use the CGI Statement
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an ISAPI DLL as an #exec server-side include, the ISAPI DLL does
+not run.
+
+CAUSE
+=====
+
+The following line in the HTML document has been written with an ISA statement:
+
+      <!--#exec isa ="/scripts/w3test.dll?SimulatePendingIO"-->
+
+The above is the stated method in the documentation. However, this is incorrect.
+
+WORKAROUND
+==========
+
+Write the #exec line with a CGI statement as stated in the sample below:
+
+      <!--#exec cgi ="/scripts/w3test.dll?SimulatePendingIO"-->
+
+Additional query words: iis
+======================================================================
+Keywords          : kbother 
+Technology        : kbiisSearch kbiis300
+Version           : winnt:3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

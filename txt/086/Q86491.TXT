@@ -1,0 +1,65 @@
+DOCUMENT:Q86491  01-NOV-1999  [win95x]
+TITLE   :Rotated Clock with Multimedia Windows Alarm Clock
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running Windows version 3.1 and you use the Alarm Clock application
+that was designed to work under Windows 3.0 with Multimedia Extensions, the
+digital portion of the clock rotates diagonally.
+
+RESOLUTION
+==========
+
+Alarm Clock (ALARMCLK.EXE) requires DIGITAL.FON to be copied to the same
+subdirectory in which ALARMCLK.EXE resides. This can be accomplished by doing
+the following:
+
+ - Copy DIGITAL.FON from the Windows 3.0 Multimedia CD into the directory with
+   ALARMCLK.EXE.
+
+   -or-
+
+ - Expand DIGITAL.FO_ from the Windows 3.0 disks (5.25-inch 1.2 MB Disk 2,
+   3.5-inch 720K Disk 3, or 5.25-inch 360K Disk 5) by typing the following from
+   the Windows subdirectory MS-DOS command prompt:
+
+         EXPAND [source drive]:\DIGITAL.FO_
+         [destination drive]:\WINDOWS\DIGITAL.FON
+
+   NOTE: The command above should be typed as one line with a space between _ and
+   [destination drive]. This line is word wrapped here for readability.
+
+Additional query words: 3.00 3.00a 3.10 3.11 clock.exe alarmclock alarm vertical diagonal
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

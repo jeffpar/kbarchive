@@ -1,0 +1,63 @@
+DOCUMENT:Q126422  08-AUG-2001  [winnt]
+TITLE   :DEC ALPHA AXP Firmware Revisions Needed for Windows NT 3.5
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When running Windows NT on a DEC ALPHA AXP 150 (also known as a Jenson) computer
+or a DEC ALPHA APX 2000 or APX 2100 (also known as Sable) computers you should
+verify the version of the firmware to guarantee proper performance. These ALPHA
+models require different version numbers as follows:
+
+   Model      Recommended Firmware Version
+   --------   ----------------------------------
+   AXP 150    3.5-4 or later
+   AXP 2000   3.6-26 or later (3.7 is preferred)
+   AXP 2100   3.6-26 or later (3.7 is preferred)
+
+NOTE: The firmware upgrade will require an EISA configuration utility (ECU)
+diskette in addition to the firmware upgrade.
+
+For more information on recommended firmware revisions, installing firmware
+updates or to obtain updated firmware, contact DEC technical support.
+
+
+The ALPHA AXP series of computers are manufactured by Digital Equipment
+Corporation, a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding this product's performance or reliability.
+
+Additional query words: prodnt 3.10
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

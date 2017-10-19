@@ -1,0 +1,88 @@
+DOCUMENT:Q237262  25-JUL-2001  [homemm]
+TITLE   :Encarta 2000: Introductory Audio Is Broken Up or Choppy
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhw kbsound kbui kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Encarta Encyclopedia 2000, the introductory audio that
+is played when the home screen is displayed may be broken up or choppy.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - A CD-ROM changer is installed in your computer.
+
+ - Both Encarta Encyclopedia 2000 compact discs are inserted in the CD-ROM
+   changer at the same time.
+
+RESOLUTION
+==========
+
+To work around this issue, use either of the following methods:
+
+Insert Only One Encarta Encyclopedia Compact Disc
+-------------------------------------------------
+
+Insert only one of the Encarta Encyclopedia compact discs in the CD-ROM changer
+at any one time. When you are prompted to insert the other Encarta Encyclopedia
+CD-ROM into the CD-ROM drive, remove the Encarta CD-ROM that is currently in the
+CD-ROM changer before you insert the other disc.
+
+Disable the Display of the Home Screen
+--------------------------------------
+
+Disable the display of the home screen when you start Encarta Encyclopedia 2000.
+To do this:
+
+1. Start Encarta Encyclopedia 2000.
+
+2. Click Options, and then click Settings.
+
+3. Click to clear the "Display home screen when I start Encarta Encyclopedia"
+   check box.
+
+4. Quit and then restart Encarta Encyclopedia 2000.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+Additional query words: multi multi-media media mm ee2k intro sound skips
+
+======================================================================
+Keywords          : kbhw kbsound kbui kbimu kbHardware 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

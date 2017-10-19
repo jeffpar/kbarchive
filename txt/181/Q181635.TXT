@@ -1,0 +1,73 @@
+DOCUMENT:Q181635  22-JUN-2001  [exchange]
+TITLE   :XWEB: End Date of Appointment or Meeting Changes Incorrectly
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you modify the Start Date or End Date fields of an appointment or meeting
+request in the Outlook Web Access (OWA) client, the month field of the End Date
+may incorrectly change to the next month.
+
+CAUSE
+=====
+
+This behavior only occurs when both of the following conditions are met:
+
+The current month has more days than the month in which the appointment or
+meeting request is being made. This will usually occur when the current month is
+one of the following: January, March, May, July, August, October, or December.
+All of these months have 31 days.
+
+-and-
+
+The current day of the month is greater than the last day of the month in which
+the appointment or meeting request is being created. For example, you might see
+this behavior if the current date is January 31 and you select a day in February
+to create a meeting request or appointment. If you then change any fields for
+the start or end dates, the month of the End Date changes to the following month
+(March, in this case).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Outlook Web Access
+version 5.5. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec modify
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

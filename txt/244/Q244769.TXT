@@ -1,0 +1,85 @@
+DOCUMENT:Q244769  20-DEC-2000  [mspress]
+TITLE   :After the Gold Rush: Creating a True Profession... Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS After the Gold Rush: Creating a True Profession of Software Engineering ISBN 0-7356-0877-6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book After the Gold Rush: Creating a True
+Profession of Software Engineering, ISBN 0-7356-0877-6.
+
+The following topics are covered:
+
+ - Page 6: Text Missing
+
+ - Page 12: Caption Incorrect
+
+ - Page 72: Period Missing
+
+MORE INFORMATION
+================
+
+Page 6: Text Missing
+--------------------
+
+On page 6 at the end of the text, after "Therein lies the comfort." The text
+should continue:
+
+"Problems that once seemed intractable have begun to seem less difficult, and, as
+I intend to show throughout the rest of this book, we are now on the brink of
+fixing them."
+
+
+Page 12: Caption Incorrect
+--------------------------
+
+The caption for figure 2-4 on page 12 lists the "Software Project Survival Guide"
+as being published in 1988 instead of 1998.
+
+
+Page 72: Period Missing
+-----------------------
+
+The period is missing from the end of the second sentence in the second paragraph
+of the section entitled "The Myth of Soulless Software Development."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: DEVBOOK 0-7356-0877-6
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

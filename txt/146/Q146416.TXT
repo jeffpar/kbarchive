@@ -1,0 +1,85 @@
+DOCUMENT:Q146416  30-JUL-2001  [visualc]
+TITLE   :PRB: Page Fault When Using Bounds Checker STD or PRO
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbide kbVC kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+NOTE: Some products mentioned in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+SYMPTOMS
+========
+
+After you install Bounds Checker Standard or Professional version 3.0, Visual
+C++ version 4.0 gives a page fault upon start up,
+
+Windows 95 reports:
+
+   
+
+   Msdev
+
+   This program has performed an illegal operation
+   and will be shut down.
+
+Clicking the Details button reports:
+
+   
+
+   MSDEV caused an invalid page fault in
+   module MSVCSHL.DLL at 0137:5001d791.
+
+Windows NT reports:
+
+   
+
+  msdev.exe - Application Error
+
+  The instruction at "0x77F8879F" referenced memory at "0x0000001c".
+  The memory could not be 'written'.
+
+CAUSE
+=====
+
+The Bcprovc.pkg file that ships with Bounds Checker Professional or Bcstdvc.pkg
+that ships with the standard version 3.0 is incompatible with Visual C++ 4.0.
+
+RESOLUTION
+==========
+
+NuMega Technologies Inc. is working on new versions of the above mentioned
+files. Please contact NuMega Technologies product support at (603) 889-2386 for
+availability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbide kbVC kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : 4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

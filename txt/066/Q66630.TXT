@@ -1,0 +1,53 @@
+DOCUMENT:Q66630  30-JUL-2001  [homegame]
+TITLE   :ASD: Flight Timing Gate Scoring
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The timing gate feature of the Aircraft & Scenery Designer functions best
+when gates are placed a fair distance apart. Closely spaced gates (for example,
+1/2 mile) may give confusing statistics.
+
+Example
+-------
+
+Time        Speed        Score
+----        -----        -----
+001.2       246          150
+001.8       289          149
+
+In this example, the second time is slower even though the speed is faster; this
+is due to the way that time and distance are measured by Flight Simulator.
+
+MORE INFORMATION
+================
+
+Flight Simulator measures time in 1/18-second intervals. Distance is measured
+each time the screen is updated. The degree of accuracy depends on the speed of
+the computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

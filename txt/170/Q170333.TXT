@@ -1,0 +1,55 @@
+DOCUMENT:Q170333  21-FEB-1999  [winnt]
+TITLE   :The Last Logged-On User Is Not Displayed
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to a Windows NT-based computer configured with the Zero
+Administration Kit (ZAK), the last logged on user may not be shown.
+
+CAUSE
+=====
+
+The Ntconfig.pol file included with ZAK has the "Do not display last logged on
+user" option enabled by default.
+
+RESOLUTION
+==========
+
+To configure Windows NT to display the last logged-on user, run Poledit.exe.
+Edit the Ntconfig.pol file in the Netlogon folder on the primary domain
+controller and disable the "Do not display last logged on user" option.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

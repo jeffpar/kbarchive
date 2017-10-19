@@ -1,0 +1,194 @@
+DOCUMENT:Q161961  17-MAY-2002  [homegame]
+TITLE   :Display Problems, Errors, or Computer Locks When Starting Game
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0,3.0
+OPER/SYS:
+KEYWORDS:kbdisplay fs98 fs6 kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+ - Microsoft Age of Empires II Expansion: The Conquerors 
+ - Microsoft Allegiance, version 1.0 
+ - Microsoft Baseball 2001 
+ - Microsoft Bicycle Card Games Version 1.0 
+ - Microsoft Casino 
+ - Microsoft Classic Board Games 
+ - Microsoft Close Combat: A Bridge Too Far, version 2.0 
+ - Microsoft Close Combat III: The Russian Front 
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Crimson Skies 
+ - Microsoft Deadly Tide for Windows 1.0 
+ - Microsoft Flight Simulator 98 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 2002 Professional Edition 
+ - Microsoft Flight Simulator 2002 
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+ - Microsoft GEX, version 1.0 
+ - Microsoft Golf for Windows, version 3.0 
+ - Microsoft Golf 2001 Edition 
+ - Microsoft Links LS 2000 
+ - Microsoft Links 2001 
+ - Microsoft MechWarrior 4: Vengeance 
+ - Microsoft Metal Gear Solid 
+ - Microsoft Midtown Madness, version 1.0 
+ - Microsoft Midtown Madness 2, version 2.0 
+ - Microsoft Monster Truck Madness, version 1.0 
+ - Microsoft Motocross Madness 2, version 2.0 
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+ - Microsoft NFL Fever 2000, version 1.0 
+ - Microsoft Pandora's Box, version 1.0 
+ - Microsoft Pinball Arcade, version 1.0 
+ - Microsoft Plus! Game Pack: Cards and Puzzles 
+ - Microsoft Return of Arcade for Windows, version 1.0 
+ - Microsoft Soccer, version 1.0 
+ - Microsoft StarLancer, version 1.0 
+ - Microsoft Train Simulator, version 1.0 
+ - Microsoft Urban Assault, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the programs listed at the beginning of this article, you
+may experience one or more of the following symptoms:
+
+ - Your computer may stop responding (hang).
+
+ - You may receive an "Invalid Page Fault in module <unknown>" error
+   message.
+
+ - Graphics in the game may be distorted or fuzzy.
+
+ - The screen may turn black.
+
+ - Horizontal lines may appear across the screen.
+
+ - The game may quit immediately after you start it.
+
+ - Your computer may spontaneously reboot.
+
+CAUSE
+=====
+
+This behavior can occur if one or more of the following conditions is true:
+
+ - You need to install an updated version of the video driver for your video
+   adapter.
+
+ - Microsoft DirectX is not installed properly on your computer.
+
+ - You do not have the latest version of Microsoft DirectX.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact your hardware manufacturer to inquire about how
+to obtain and install the latest version of the video driver for your video
+adapter.
+
+For information about how to contact your hardware manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+To identify the manufacturer and model of your video adapter:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. If you are using a Microsoft Windows 95-based, Microsoft Windows 98-based
+   computer, or Microsoft Windows Millennium Edition (Me)-based computer, click
+   the Device Manager tab.
+
+   If you are using a Microsoft Windows 2000-based computer or Microsoft Windows
+   XP-based computer, click the Hardware tab, and then click Device Manager.
+
+4. Click the plus sign (+) next to "Display adapters" to expand the branch.
+
+5. Under the "Display adapters" branch, note the manufacturer and model of your
+   video adapter, and then click OK.
+
+6. Close all open windows on the desktop.
+
+If the issue continues to occur, or if the latest version of the video driver for
+your video adapter is already installed in your computer, download and install
+the latest version of DirectX from the following Microsoft Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to install the latest version of DirectX,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q179113 How to Download and Install DirectX
+
+MORE INFORMATION
+================
+
+For additional information about how to resolve an "Invalid page fault" error
+message in one of the programs listed at the beginning of this article, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q244889 Invalid Page Fault When You Run Flight Simulator
+
+To temporarily work around this issue, reduce the Hardware Acceleration setting
+on your computer.
+
+NOTE: If you reduce the Hardware Acceleration setting, you may reduce system
+performance. In addition, you may not be able to start some programs that
+require DirectX if you reduce the Hardware Acceleration setting to Basic.
+
+To reduce the Hardware Acceleration setting on your computer:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Performance tab.
+
+4. Click Graphics.
+
+5. Move the Hardware Acceleration slider until it is one notch to the right of
+   None (the Basic acceleration setting).
+
+6. Click OK, then click Close.
+
+7. When you are prompted to restart the computer, click Yes.
+
+Additional query words: 1.00 3.00 6.00 games fs95 fs6 fs2k fcp golf freeze line display mtm closes exits ipf blank flightsim soccer
+
+======================================================================
+Keywords          : kbdisplay fs98 fs6 kbimu msgame kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbLinkGolfSearch kbAOE kbGamesSearch kbFlightSimSearch kbArcadeRet kbZNotKeyword kbGolf2001 kbGolfSearch kbNFLFever2000 kbNFLSearch kbPinballArc kbArcadeSearch kbMSNSearch _IK kbAllegianceSearch kbMetalGearSearch kbPandoraSearch kbPlusSearch kbMotocrossSearch kbStarlancerSearch kbCrimsonSkiesSearch kbAsheronSearch kbCloseCombatSearch kbBaseballSearch kbMidtownMadSearch kbMonsterTMSearch kbAOESearch kbGEX kbMidtownMadness kbMonsterTM kbZNotKeyword3 kbAllegiance kbAsheron100 kbStarlancer kbUrbanAssault kbAOEExpRome kbAOE2ExpConquerors kbAOE2Kings kbBaseBall2001 kbCloseCombat2 kbCloseCombat3 kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbFlightSim95 kbSoccer kbClassicBoardGames kbMetalGearSolid kbMidtownMadness2 kbPandorasBox kbMotocrossM2 kbCasino kbCrimsonSkies kbDeadlyTide kbLinks2001 kbLinksLS2000 kbNBAFullCourtPress kbNBAInsideDrive2000 kbGolf300 kbPlusGamePk kbTrainSim kbBicycleCard100 kbBicycleSearch kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+Version           : :1.0,2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,70 @@
+DOCUMENT:Q135184  17-DEC-2000  [win95x]
+TITLE   :ARCsolo Network Drive Listing Is Different in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running ARCsolo version 3.01 or 3.02 by Cheyenne Software in
+Windows 95, the listing of network drives mapped to Microsoft servers (Windows
+for Workgroups, LAN Manager, Windows NT, or Windows 95 servers) does not appear
+as it does in Windows 3.1.
+
+CAUSE
+=====
+
+ARCsolo relies on entries in the System.ini file that are not present in Windows
+95.
+
+RESOLUTION
+==========
+
+Place the following entry in the [boot] section of the System.ini file, and then
+restart Windows 95:
+
+   " network.drv=commctrl.dll " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+ARCsolo reads the "network.drv=" entry to determine which DLL to load. If the
+entry is not present, the attempt fails and the network drive listing is not
+correct. Any DLL will work for this entry; Commctrl.dll is simply a usable
+example.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,96 @@
+DOCUMENT:Q148998  10-FEB-2000  [foxpro]
+TITLE   :DOCERR: ListIndex (OutLine) Returns -1 If No Item Is Selected
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro Help says that the return value for the ListIndex (OutLine
+Control) Property is 0 if no item is selected. This is incorrect. The value
+returned if no item is selected is -1. It also says that the first index number
+that the ListIndex property can return is 1, which is also incorrect. The first
+index number that can be returned is 0.
+
+MORE INFORMATION
+================
+
+The OutLine control is contained in the Msoutl32.ocx file located in the
+Windows\System subdirectory. Because .ocx files are written in the C language,
+the arrays they use start at zero. Therefore, the array that holds the values in
+the OutLine control that the ListIndex property references starts at zero. This
+referencing is different from the ListIndex property for a combo or list box
+where 0 is returned if no item is selected. This occurs because arrays in FoxPro
+start at 1.
+
+Steps to Illustrate Behavior
+----------------------------
+
+1. Create a new form, and add a OLE Container control by moving it from the Form
+   Controls toolbar to the form.
+
+2. When the Insert Object dialog box appears, click Insert Control, and select
+   the OutLine Control from the Control Type list box.
+
+3. Add the following code to the Init event of the OutLine Control:
+
+      THIS.ADDITEM("Colors",0) && This places the word Colors in the
+      THIS.ADDITEM("Red",1)    && first element of the array followed
+      THIS.ADDITEM("Blue",2)   && by Red, Blue, and Green to give
+      THIS.ADDITEM("Green",3)  && a total of four elements in the array
+                               && to be displayed in the OutLine control.
+
+      THIS.INDENT(0) = 1       && This gives the word Colors an
+      THIS.INDENT(1) = 2       && indention level of 1. These lines
+      THIS.INDENT(2) = 2       && indent the words Red, Blue, and
+      THIS.INDENT(3) = 2       && Green under the word Colors
+                               && with an indention level of 2.
+
+4. Place a text box on the form. In the ControlSource property, type:
+
+   " THISFORM.OLECONTROL1.LISTINDEX " (without the quotation marks)
+
+5. In the Click event of the OutLine control, place the following code:
+
+      THISFORM.TEXT1.VALUE = THISFORM.OLECONTROL1.LISTINDEX
+
+6. Run the form. Note that the text box displays -1. After you click the word
+   Colors, the value of the text box changes to 0. Click the plus sign to the
+   left of the word Colors, and then click any item under it. The text box
+   displays the ListIndex value of whatever item is selected. Remember that the
+   text box will show a number that is one less than the position of the item
+   selected in the OutLine control. That is because the first item's array
+   element number has a value of 0, the second item is 1, the third item is 2,
+   and so on.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

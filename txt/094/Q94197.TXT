@@ -1,0 +1,74 @@
+DOCUMENT:Q94197  06-NOV-1999  [win95x]
+TITLE   :Quarterdeck's QEMM May Require WINSTLTH.VXD File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use QEMM's Stealth option with Windows, you may receive the following
+error message when starting Windows in 386 enhanced mode:
+
+   Cannot find a device file that may be needed to run Windows in 386 enhanced
+   mode. You need to run Setup again.
+
+   C:\WINSTLTH.VXD
+
+   Press any key to continue.
+
+CAUSE
+=====
+
+Windows requires this file to transfer memory control when Windows loads. This
+is not a Windows file, so running Setup will have no affect.
+
+RESOLUTION
+==========
+
+The WINSTLTH.VXD file should be copied into the QEMM directory when QEMM386 is
+installed. The above error can occur when QEMM386.SYS is moved to another
+directory without the WINSTLTH.VXD file, when the MS-DOS path has been changed,
+or when Windows has been installed on a network that remaps the path.
+
+To correct the problem, the WINSTLTH.VXD file can be moved to either the same
+directory as QEMM386.SYS, or to the Windows \SYSTEM subdirectory. If it is a
+network installation, the file may also be in the user's Windows directory. If
+this fails, copy the file into another directory that is in the MS-DOS path.
+
+For more detailed information on configuring QEMM, contact Quarterdeck technical
+support.
+
+QEMM is manufactured by a vendor independent of Microsoft; we make no warranty,
+implied or otherwise, regarding this product's performance or reliability.
+
+Additional query words: 3.10 winhiram.VXD
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

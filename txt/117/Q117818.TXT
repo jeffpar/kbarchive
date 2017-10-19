@@ -1,0 +1,60 @@
+DOCUMENT:Q117818  09-DEC-1999  [homemm]
+TITLE   :Mac Cinemania 94: Crash When Using PopChar
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for the Macintosh 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the PopChar control panel while Cinemania is running, your machine
+may stop responding (hang). This is a problem with versions 2.3 through 2.6.2 of
+PopChar, and occurs if you select any of the characters in the "More" feature of
+PopChar while Cinemania is running.
+
+This problem is corrected in version 2.7 of PopChar.
+
+RESOLUTION
+==========
+
+To avoid this problem, do one of the following:
+
+ - Use version 2.7 of PopChar.
+
+ - Disable PopChar before running Cinemania.
+
+ - Avoid the "More" feature of PopChar while running Cinemania.
+
+NOTE: PopChar 2.7.1 was released in September of 1995; most users who have this
+control panel should have this version or newer.
+
+Additional query words: mac 1994 multi media multimedia multi-media gunther blaschek utility lock conflict crash hang freeze lockup up
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994Mac
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

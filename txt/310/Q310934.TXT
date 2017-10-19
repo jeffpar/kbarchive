@@ -1,0 +1,125 @@
+DOCUMENT:Q310934  11-JUN-2002  [sna]
+TITLE   :Event 51 Logged During Failed Host-Initiated Password Change
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport kbhis2000 kbhis2000bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+Host-initiated password changes are not replicated to the Windows NT or Windows
+2000 accounts database when you are using the password synchronization feature
+that is included with Host Integration Server (HIS) 2000.
+
+An event 51 will be logged in the Application Event Log on the Windows NT or
+Windows 2000 primary domain controller (PDC) where the SNA WinNT Account
+Synchronization (SnaPMP) service is running when this problem occurs:
+
+   Event ID: 51
+   Source: SNA Host Security
+   Description: The Windows NT Account Synchronization service could not validate
+   an RPC request.
+
+This problem only occurs when the following registry entry is set to 1, which is
+the default value:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaPMP\Parameters\ValidateHostRequest
+
+CAUSE
+=====
+
+The SNA Host Account Cache service fails to return the user's previous host
+password to the SNA WinNT Account Synchronization service so that it can be
+validated prior to changing the user's Windows NT or Windows 2000 password. The
+password change request cannot be completed if the previous host password is not
+available for validation when ValidateHostRequest=1. This results in the event
+51 and the failure to change the user's Windows NT/Windows 2000 password.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+If there is no requirement to have a user's previous host password validated by
+the HIS 2000 host security components before the user's Windows NT/Windows 2000
+password is changed, this functionality can be disabled. The validation of a
+user's previous host password can be disabled by modifying the registry as
+follows:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the ValidateHostRequest value under the following key in the registry:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaPMP\Parameters\ValidateHostRequest
+
+3. From the Edit menu, click DWORD, type "0" (without the quotation marks), and
+   then click OK.
+
+4. Quit Registry Editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+
+MORE INFORMATION
+================
+
+The ValidateHostRequest parameter was added in SNA Server 3.0 SP1. For
+additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q164652 Verify Old Passwords Before Updating SNA Host Account Database
+
+The SnaPMP service can be installed on any Windows NT or Windows 2000 domain
+controller (DC), but it only actually runs on the PDC. If the SnaPMP service is
+installed on other DCs as well, the ValidateHostRequest parameter should be
+configured with the same value in case one of the other DCs is ever promoted or
+assumes the PDC role.
+
+The following Knowledge Base article describes another host-initiated password
+change problem that occurs with HIS 2000:
+
+   Q310517 Event 1301 Logged During Host-Initiated Password Change
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbhis2000 kbhis2000bug 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,56 @@
+DOCUMENT:Q299495  04-JUN-2001  [msdn]
+TITLE   :Explanation of Passport Certificate Dialog Boxes from Browser
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The first time a Passport user connects to a Passport express purchase Secure
+Sockets Layer (SSL) page, the browser may display an acceptance dialog box for
+the security certificate.
+
+MORE INFORMATION
+================
+
+This is required for SSL-served pages. Users must accept this certificate to
+continue. During the sign-in process at the Passport Login server, there is
+another SSL connection that writes the "ticket-granting" cookie. It also
+requires the acceptance of a certificate. Your own SSL-served pages may require
+yet another certificate-acceptance step. After certificates have been accepted
+by a client browser user, the dialog box does not appear again unless the
+certificates expire or are specifically revoked by the certificate-issuing
+agency.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

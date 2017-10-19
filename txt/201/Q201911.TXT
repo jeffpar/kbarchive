@@ -1,0 +1,73 @@
+DOCUMENT:Q201911  12-JUL-2001  [utilities]
+TITLE   :BUG: DCOMCNFG Writes Ports Named Value in Incorrect Format
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbCOMt kbOSWinNT400 kbOSWin98 kbGrpDSCom kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM, included with:
+    - Microsoft Windows NT Server version 4.0 
+    - Microsoft Windows NT Workstation version 4.0 
+    - Microsoft Windows 98 
+    - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DCOMCNFG utility writes the port range specified for a protocol in a
+incorrect format.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+When a port range is specified for a protocol, such as 4000-4010, the value that
+is written to the registry key HKLM\SOFTWARE\Microsoft\RPC\Internet\Ports (named
+REG_MULTI_SZ) is "4000 - 4010." A space is added preceding and succeeding the
+"-". Remote Procedure Call (RPC) is extremly sensitive about the string format
+and fails the RpcServerUsePortSeq call with RPC_S_OUT_OF_RESOURCES. As a result,
+no client can talk to the server, and services such as Internet Information
+Server (IIS) do not start.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the DCOMCNFG and click the Default Protocol tab.
+
+2. Select the protocol, and add a port range to it.
+
+3. Check the registry entry. You will see an incorrect port range format.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbOSWinNT400 kbOSWin98 kbGrpDSCom kbDSupport 
+Technology        : kbAudDeveloper kbCOM kbCOMPlusSearch
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

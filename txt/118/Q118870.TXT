@@ -1,0 +1,75 @@
+DOCUMENT:Q118870  17-DEC-2000  [win95x]
+TITLE   :Enhanced Functions of Sejin J Mouse Keyboard Do Not Work
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenable kbEnableSight kbEnableMove
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Sejin J-Mouse Keyboard drivers and restart the system,
+your mouse no longer functions. The keyboard functions normally; however, the
+enhanced features of the J-Mouse are not active.
+
+CAUSE
+=====
+
+The version 4.0 drivers for the J-Mouse features of the Sejin J.M. Keyboard are
+not compatible with Windows 95.
+
+STATUS
+======
+
+At this time, no resolution for this problem is available. Sejin is aware of the
+problem and is currently working on drivers that will be compatible with Windows
+95.
+
+Windows 95 includes a MouseKeys feature that allows users to perform mouse
+actions using the numeric keypad. You can enable these features by pressing the
+keyboard combination ALT+SHIFT+NUM LOCK. For more information about MouseKeys,
+refer to Help.
+
+MORE INFORMATION
+================
+
+The J-Mouse Keyboard has mouse capabilities built into the "J" key to enable
+mouse movement from the keyboard. There are several other keys with mouse
+functions assigned to them. These keys are designed to shorten the transition
+time between the mouse and the keyboard. They also assist individuals with
+movement disabilities, much the same as the accessibility features of Windows
+95.
+
+The products included here are manufactured by Sejin America, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 3rdparty j mouse
+
+======================================================================
+Keywords          : kbenable kbEnableSight kbEnableMove 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

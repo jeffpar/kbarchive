@@ -1,0 +1,72 @@
+DOCUMENT:Q111897  17-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Files Installed During Schedule+ 1.0a Setup
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0a 
+-------------------------------------------------------------------------------
+
+This article lists the files installed during setup of version 1.0a of
+Schedule+ for Windows.
+
+Files added to the Schedule+ 1.0a directory:
+
+   CBTLIB3.DLL    Computer-based training
+   DEMOFX.DEX     Demo file
+   MSREMIND.EXE   Reminder
+   MSREMIND.WAV   Reminder sound
+   MSSCHED.DLL    Back end, handles reading and writing to files
+   PLAY.EXE       Runs the demo
+   README.TXT     Read me
+   SCHDPLUS.EXE   Schedule+ program file
+   SCHDPLUS.HLP   Schedule+ help file
+   SCHDPLUS.LES   Computer-based training lessions
+   WAVES.DLL      Sounds
+   WIZARD.DLL     Sharp Wizard import/export
+
+Files added to the Windows SYSTEM directory:
+
+   COMMDLG.DLL    Common dialog boxes
+   DEMILAYR.DLL   Memory
+   FRAMEWRK.DLL   User interface
+   MAILMGR.DLL    Authorization
+   MAILSPL.EXE    Spooler
+   MSSFS.DLL      PC Mail transport
+   NVCONN.DLL     For Novell attachments
+   PABNSP.DLL     Personal address book name service provider
+   SHELL.DLL      Schedule+ for Windows shell
+   STORE.DLL      Message store
+   TRNSCHED.DLL   Transport how to find a .CAL file for a user
+
+Files added to the Windows directory (usually WINDOWS):
+
+   SCHDPLUS.INI   Schedule+ initalization file
+
+Additional query words: schedule plus 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100a
+Version           : WINDOWS:1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

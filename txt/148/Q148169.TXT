@@ -1,0 +1,71 @@
+DOCUMENT:Q148169  17-DEC-2000  [win95x]
+TITLE   :HP LaserJet 5Si Printer Property Changes Affect All Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you make changes to the properties for the Hewlett-Packard (HP) LaserJet
+5Si or 5Si MX printer driver, including any changes on the Paper, Graphics,
+Fonts, or Device Options tabs, the changes affect all Windows- based programs in
+Windows 95.
+
+CAUSE
+=====
+
+The HP LaserJet 5Si and 5Si MX printer drivers version 2.40 use the global
+printer properties user interface in Windows 95 to make changes to the printer
+properties.
+
+RESOLUTION
+==========
+
+To work around this behavior, use the HP LaserJet 4Si MX printer driver with HP
+LaserJet 5Si printers. This printer driver provides most, but not all, of the
+functionality in the 5Si and 5Si MX printer drivers.
+
+STATUS
+======
+
+Hewlett-Packard is aware of this issue. The printer drivers for the HP LaserJet
+5Si printers are available only from Hewlett-Packard's online services.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

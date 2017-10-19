@@ -1,0 +1,72 @@
+DOCUMENT:Q187166  11-DEC-2001  [winnt]
+TITLE   :Users Cannot Connect Without Logon Local Permissions
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ 
+
+MORE INFORMATION
+================
+
+The only time the Log on Locally right is not granted by default to everyone, is
+when Terminal Server is installed as a BDC.
+
+If the Terminal Server is installed as a PDC or Member Server in a domain, or if
+it is installed as a standalone server in a workgroup, the Everyone group gets
+Log on Locally rights by default.
+
+SYMPTOMS
+========
+
+If a Terminal Server is installed in the domain as a backup domain controller
+(BDC), it will inherit the domain user rights from an existing Windows NT
+primary domain controller (PDC). Because of this, domain users will not have the
+right to log on locally. The affect is to deny everyone, except administrators,
+the right to connect through the Terminal Server Client.
+
+If users do not have the right to log on locally to the Terminal Server, they
+receive the following message:
+
+   The local policy of this system does not permit you to log on interactively.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

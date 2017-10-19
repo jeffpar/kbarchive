@@ -1,0 +1,54 @@
+DOCUMENT:Q108924  12-MAY-2001  [win16sdk]
+TITLE   :DOC: DEVMODE dmPaperSize Member Documentation Error
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1,95; winnt:3.5,3.51
+OPER/SYS:
+KEYWORDS:kbdocfix kbOSWinNT350 kbOSWinNT351 kbSDKWin32 kbOSWin95 _IK
+
+======================================================================
+3.00 3.10 4.00 | 3.50 3.51
+WINDOWS        | WINDOWS NT
+kbprint kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+ - Microsoft Win32 Application Programming Interface (API) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The dmPaperSize member of the DEVMODE structure is documented incorrectly. The
+documentation states that the dmPaperSize member may be set to zero if the
+length and width of the paper are specified by the dmPaperLength and
+dmPaperWidth members, respectively. However, the correct value to use for
+user-defined paper sizes is DMPAPER_USER.
+
+DMPAPER_USER is correctly listed in the Microsoft Windows 3.1 SDK documentation
+as meaning a user-defined paper size, but is completely omitted from the
+Microsoft Windows 3.0 SDK documentation.
+
+Additional query words: 3.00 3.10 4.00
+
+======================================================================
+Keywords          : kbdocfix kbOSWinNT350 kbOSWinNT351 kbSDKWin32 kbOSWin95 _IK 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

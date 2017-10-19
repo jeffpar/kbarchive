@@ -1,0 +1,65 @@
+DOCUMENT:Q87041  05-NOV-1999  [pcmail]
+TITLE   :SMTP: How to Start Up the SMTP Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To start the Microsoft Mail Gateway to SMTP, ensure that the gateway machine is
+logged onto the network you are using (for example, Microsoft LAN Manager or
+Novell NetWare), and ensure that a drive is mapped to the mail database
+directory for the "Gateway Postoffice" and a search mapping or path is available
+to the mail executable's directory.
+
+To start up the gateway (assuming the M drive is mapped to the mail database
+directory), use the following command:
+
+   " SMTPGATE " (without the quotation marks)
+
+If the mail database directory is mapped to any drive other than M, you must
+specify the drive to be used as follows:
+
+   " SMTPGATE -DP " (without the quotation marks)
+
+In this example, the drive letter assigned to the mail database directory is P.
+The -D indicates that the letter following it is the assigned drive letter for
+the mail database.
+
+REFERENCES
+==========
+
+Microsoft Mail Gateway to SMTP Administrator's Guide
+
+
+Additional query words: pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

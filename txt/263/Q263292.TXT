@@ -1,0 +1,65 @@
+DOCUMENT:Q263292  14-NOV-2000  [word97]
+TITLE   :WD97: Known Issues w/Word After Applying Outlook Security Update
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of Microsoft Knowledge Base articles about the known
+issues in Microsoft Word 97 for Windows after you install the Microsoft Outlook
+E-mail Security Update.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q264888 WD97: "A Program Is Trying to Access ..." Warning When You Send Mail
+   Merge to E-mail After You Apply Outlook Security Update
+
+   Q264886 WD97: "A Program Is Trying to Access..." Warning Appears When You
+   Click Outlook Folders in Direct Mail Manager
+
+MORE INFORMATION
+================
+
+For more information about how other Microsoft Office products may be affected
+by the Outlook E-mail Security Update, please see one of the following articles
+in the Microsoft Knowledge Base, depending on which version of Outlook you
+have:
+
+   Q262634 OL2000: Known Issues with the Outlook E-mail Security Update
+
+   Q262618 OL98: Known Issues with the Outlook E-mail Security Update
+
+Additional query words: patch outlooksecurityupdate
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

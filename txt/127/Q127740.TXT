@@ -1,0 +1,70 @@
+DOCUMENT:Q127740  13-JUN-2001  [sna]
+TITLE   :Eicon WAN Services V3R2 Problems with SNA Server
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following problems have been observed using SNA Server 2.0 and 2.1 with an
+X.25 connection supported by Eicon WAN Services V3R2 (over an Eicon adapter):
+
+ - When SNA Server is configured to autostart, it stop responding (hangs) at
+   Windows NT start up. SNA Admin may hang indefinitely with an hourglass or
+   clients may receive an XCLOCK status in their 3270 emulator when opening a
+   session.
+
+ - Problems activating PUs, or random 3270 LUs configured off an X.25 connection
+   supported by the Eicon adapter may stop responding (hang) or fail to work
+   when opened by an SNA Server 3270 client.
+
+ - Problems with SNA Server error recovery when an X.25 call fails.
+
+CAUSE
+=====
+
+These problems occur with Eicon WAN Services V3R2 and V3R2a.
+
+
+RESOLUTION
+==========
+
+To correct these problems, update to Eicon WAN Services V3R2a, and obtain other
+updates to the X.25 link service (ECX25.DLL) and X.25 and HDLC protocols
+(HDLC.ELM, HDLCBIOS.ELM, X25.ELM, X25BIOS.ELM) from Eicon Corporation.
+
+
+Additional query words: prodsna 2.10 HSI 3.2 3.2a lu's
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

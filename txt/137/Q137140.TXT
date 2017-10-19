@@ -1,0 +1,83 @@
+DOCUMENT:Q137140  17-DEC-2000  [win95x]
+TITLE   :ErrMsg: Unable to Read from <Path>, It Is Open by Someone Else
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click a Write (.wri) file in Windows Explorer or My Computer,
+you may receive the following error message
+
+   Unable to read from <path>, it is open by someone else
+
+where <path> is your Windows folder.
+
+CAUSE
+=====
+
+This error message may be caused by an incorrect association for .wri files.
+
+RESOLUTION
+==========
+
+To restore the default association for .wri files, follow these steps:
+
+1. Double-click My Computer.
+
+2. On the View menu, click Options.
+
+3. On the File Types tab, click Write Document in the Registered File Types box,
+   and then click Edit.
+
+4. In the Actions box, click Open, and then click Edit.
+
+5. In the Application Used To Perform Action box, replace the existing text with
+   the following text:
+
+      c:\progra~1\access~1\wordpad.exe "%1"
+
+6. Click OK until you return to My Computer.
+
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+You may see similar error messages for other programs that are associated
+incorrectly.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

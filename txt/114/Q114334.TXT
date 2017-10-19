@@ -1,0 +1,81 @@
+DOCUMENT:Q114334  29-NOV-2001  [visualc]
+TITLE   :PRB: Cannot Open Compiler Intermediate File
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0, 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The following error occurs when compiling a file with the Visual C++ compiler:
+
+   fatal error C1083: Cannot open compiler intermediate file:
+   '<tmp directory>;\<tmpfile>': Invalid argument
+
+   -or-
+
+   fatal error C1083: Cannot open compiler intermediate file:
+   '<tmp directory>;\<tmpfile>': No such file or directory
+
+CAUSE
+=====
+
+The error is caused by a semicolon at the end of the TMP environment variable.
+For example:
+
+   TMP=C:\TMP;
+
+RESOLUTION
+==========
+
+The correct way to set up the TMP environment variable from the command line is
+as follows:
+
+   C:\>SET TMP=C:\TMP
+
+MORE INFORMATION
+================
+
+It is important that the environment string does not end with a semicolon (;)
+because the compiler appends the intermediate filename to the TMP path. By
+removing the semicolon from the path, the compiler can create the file
+correctly.
+
+In addition, the TMP variable should be a fully qualified path and not a relative
+path. For example C:TMP may cause the compiler to issue similar errors, but
+C:\TMP will always work correctly. The TMP environment variable should also be
+set to a drive that has sufficient space for the compiler's temporary files.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC220 kbVC410 kbVC420 kbVC500 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC152 kbVC500Search
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

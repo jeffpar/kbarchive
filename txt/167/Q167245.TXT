@@ -1,0 +1,75 @@
+DOCUMENT:Q167245  09-AUG-2001  [winnt]
+TITLE   :List of Documentation Errors in FPNW Administrator's Guide
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft File and Print Services for NetWare version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists known documentation errors in the Microsoft File and Print
+Services for NetWare Administrator's Guide.
+
+The following known documentation errors are described in this article:
+
+ - Page 28, Chapter 2: Logon Scripts
+
+ - Page 100, Appendix A: Parameters Available but Not Installed
+
+MORE INFORMATION
+================
+
+Page 28, Chapter 2: Logon Scripts
+---------------------------------
+
+The last sentence of the third paragraph states:
+
+   You can edit the server's system login script by editing the SYSNET$.DAT
+   file, located in the SYSVOL\PUBLIC directory.
+
+This sentence should read:
+
+   You can edit the server's system login script by editing the NET$LOG.DAT
+   file, located in the SYSVOL\PUBLIC directory.
+
+Page 100, Appendix A: Parameters Available but Not Installed
+------------------------------------------------------------
+
+This section includes a description for the NTQueueDirectory parameter. If you
+enable this parameter, you receive the following error message:
+
+   Event ID: 2506
+   Value named "NTQueueDirectory" is not valid or does not exist
+
+This parameter should read QueueDirectory.
+
+Additional query words: fpnw docerr doc err doc error print queue
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351
+Version           : WinNT:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q326001  05-AUG-2002  [homegame]
+TITLE   :Bicycle Casino: Dealer Misreads Hand, and Losing Hand Wins
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bicycle Casino Version 1.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While playing Bicycle Casino, the dealer misreads your hand, and a losing hand
+unexpectedly wins.
+
+The known variations of this issue are:
+
+ - A full house is misread as two pairs.
+
+ - A flush in a player's hand is not seen.
+
+ - Three of a kind loses to a pair.
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Bicycle Casino,
+version 1.5.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbBicycleSearch kbBicycleCasino150
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

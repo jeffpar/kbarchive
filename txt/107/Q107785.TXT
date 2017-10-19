@@ -1,0 +1,87 @@
+DOCUMENT:Q107785  07-SEP-2001  [word97]
+TITLE   :WD97: Word Hangs or Returns Error Printing to Fax
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbprint kbualink97 word97 kbPrintingkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print to a fax machine, you may receive a GP fault or an Invalid Page
+Fault (IPF), Word may hang (stop responding), or you may receive an error
+message such as the following:
+
+   File Not Found
+
+
+CAUSE
+=====
+
+This problem occurs when you are using a fax driver and you have background
+printing turned on. When background printing is turned on, the fax driver cannot
+display informational dialog boxes correctly; therefore, Word is unable to print
+your document.
+
+RESOLUTION
+==========
+
+To resolve this problem, turn off background printing. To turn off background
+printing, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the Print Tab.
+
+3. Clear the Background Printing check box.
+
+MORE INFORMATION
+================
+
+The following fax drivers will not work when the Background Printing check box
+is selected:
+
+   Cheyenne Fax
+   Compaq Fax v1.0
+   Complete Communicator Fax
+   Delrina WinFax LITE 3.0
+   QuickLink Message Center
+   RapidFax
+   WinFax 3.0
+
+The fax driver products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+
+Additional query words: hang hung crash crashed locks locked winword frozen freezes crashing quit quits stopped print err bitware cheyenne FAXWORKS Global Village ole32.dll
+
+======================================================================
+Keywords          : kbprint kbualink97 word97 kbPrinting kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

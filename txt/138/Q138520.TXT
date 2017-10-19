@@ -1,0 +1,76 @@
+DOCUMENT:Q138520  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Use an Ampersand (&) to Suppress Sign Extension
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbVBp400 kbVBp500 kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Adding an ampersand (&) character to the end of a Hexadecimal number will
+ensure that it is not sign extended. This can be useful when an unsigned
+constant must be passed to a routine and the magnitude of the constant is
+greater than or equal to 32,768 (&H8000 in Hexadecimal). If the ampersand is
+not placed on the end of the constants, Visual Basic assumes that the numbers
+are sign extended.
+
+MORE INFORMATION
+================
+
+The following example illustrates the effect of an ampersand on a Hexadecimal
+constant:
+
+1. Start a new project in Visual Basic. In the default form (Form1), place the
+   following code in the Click event for the form:
+
+         Private Sub Form_Click()
+            Dim j As Long
+            j = &H8000
+            Debug.Print j
+            j = &H8000&
+            Debug.Print j
+         End Sub
+
+2. Run the code by pressing the F5 key. The Debug window shows the output as
+   -32,768 followed by 32,768 indicating that the ampersand does suppress the
+   sign.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbVBp400 kbVBp500 kbhowto 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

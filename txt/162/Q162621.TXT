@@ -1,0 +1,88 @@
+DOCUMENT:Q162621  11-JAN-2001  [vbwin]
+TITLE   :BUG: GetSetting Causes GP Fault in Vba2.dll
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the GetSetting Function in Visual Basic 4.0, 16-bit, you may
+receive a General Protection Fault in Module Vba2.dll at 0011:360C. This error
+is likely to occur if you use an uninitialized, variable-length string as the
+argument for the default value of GetSetting.
+
+RESOLUTION
+==========
+
+To resolve the problem, use a fixed-length string or assign a value to the
+string. For example, modify the Load event code of Form1 in step 2 of the Steps
+to Reproduce Problem section of this article to the following:
+
+      Dim DefaultValue As String
+      DefaultValue = ""
+      Call GetSetting ("MyINI", "SectionName", "KeyValue", DefaultValue)
+
+-or-
+
+      Dim DefaultValue As String * 40
+      Call (GetSetting "MyINI", "SectionName", "KeyValue", DefaultValue)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Visual Basic 4.0, 16-bit Edition. Form1 is created by default.
+
+2. In the Load event for Form1, place the following lines of code:
+
+      Dim DefaultValue As String
+      Call GetSetting ("MyINI", "SectionName", "KeyValue", DefaultValue)
+
+3. Press the F5 key to run the project.
+
+4. A General Protection fault occurs in Module Vba2.dll at 0011:360C.
+
+Additional query words: kbVBp400bug kbdss kbDSupport kbVBp kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

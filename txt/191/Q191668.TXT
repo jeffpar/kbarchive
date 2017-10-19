@@ -1,0 +1,58 @@
+DOCUMENT:Q191668  21-JUL-2001  [visualc]
+TITLE   :DOC: CE Debug Shell Tool Does Not Support Serial Interface
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbOAK kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows CE Debug Shell Tool does not currently support the serial interface.
+This limitation of the CE Shell utility is by design.
+
+MORE INFORMATION
+================
+
+The CE Shell utility is available over parallel or ethernet interfaces.
+
+REFERENCES
+==========
+
+The documentation for the products listed above describe support for the serial
+interface using the Windows CE Debug Shell Tool (CESH).
+
+   Title: Serial Port Connection Method
+   Error: States that CESH can be used to transfer an image over a serial
+          port.
+
+Additional query words: kbDSupport kbWinCE210
+
+======================================================================
+Keywords          : kbOAK kbVC500 
+Technology        : kbAudDeveloper kbWinCESearch kbWinCEEnh210ETKVC500
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

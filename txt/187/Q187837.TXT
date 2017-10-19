@@ -1,0 +1,79 @@
+DOCUMENT:Q187837  22-JUN-2001  [exchange]
+TITLE   :XWEB: Appointments Display As Busy or Tentative Only
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you use Outlook Web Access with the "Use Schedule+ as my primary calendar"
+option, an appointment is created with "show time as Out of Office" or "Free."
+When you view the appointment details from Outlook Web Access, the appointment
+is displayed as Busy or Tentative regardless of the setting you chose.
+
+CAUSE
+=====
+
+When you use the Outlook Web Access client with the "Use Schedule+ as my primary
+calendar" option, the Outlook Web Access client is only capable of displaying
+times as Busy or Tentative. When Outlook Web Access is used in this mode, only
+the options that are supported by the Schedule+ client are available. The Free
+and Out of Office settings are allowed when the "Use Schedule+ as my primary
+calendar" option is not being used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In Outlook Web Access, the choices for an appointment's "show time as" are Free,
+Tentative, Busy, and Out of Office. In Schedule+ the choices for an appointment
+are Private, Tentative, and Busy.
+
+Creating an appointment using the Schedule+ client and a setting of Private will
+always be displayed as Busy in Outlook Web Access client. Creating an
+appointment in Outlook Web Access with a setting of Free or Tentative will
+display as Tentative, and a setting of Busy or Out of Office will display as
+Tentative.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

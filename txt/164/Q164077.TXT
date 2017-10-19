@@ -1,0 +1,144 @@
+DOCUMENT:Q164077  20-FEB-2002  [sna]
+TITLE   :How to Obtain SNA Version 2.11 U.S. Service Pack
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.11,2.11 SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+To find out which bugs are fixed by this update, see the Readme.txt file that
+accompanies the Service Pack or query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+AVAILABLE FORMATS FOR SNA Server 2.11 SERVICE PACK 2
+----------------------------------------------------
+
+Service Pack 2 is available as a single self-extracting archive file for Intel
+(x86) and ALPHA computers from Microsoft's Internet WWW and FTP sites.
+
+NOTE: Microsoft is phasing out future development and engineering efforts for the
+Power-PC and MIPS platform. The contents of the compact disc are not available
+for MIPS and Power-PC platforms.
+
+INSTRUCTIONS FOR DOWNLOADING
+----------------------------
+
+You can download the correct version for your computer platform from one of the
+following locations:
+
+ - Microsoft's FTP Site:
+   ftp.microsoft.com/bussys/winnt/sna-public/fixes/sna211/ussp2/
+
+ - Microsoft's Internet WWW Site: http://www.microsoft.com/SNASu pport/
+
+
+FILES AVAILABLE FROM ONLINE SERVICES
+------------------------------------
+
+The following files comprise the updated SNA Server and client files for SNA 2.11
+SP2:
+
+Item ID   Filename       Description                          File Size
+   -----------------------------------------------------------------------
+   S20489    211sp2is.exe   Server Update (Intel)                  9.45 MB
+   S20484    211sp2as.exe   Server Update (Alpha)                 11.40 MB
+   S20488    211sp2ic.exe   Windows NT Client Update (Intel)       4.18 MB
+   S20483    211sp2ac.exe   Windows NT Client Update (Alpha)       6.56 MB
+   S20485    211sp2cl.exe   Win 3.x, MS-DOS, OS/2 Client Update    3.97 MB
+   S20482    211sp295.exe   Windows 95 Client Update               3.66 MB
+   S15783    Snawin95.exe   Windows 95 Client - full client        4.37 MB
+   S20490    211sp2tn.exe   TN3270 Server Update (Intel & Alpha)   2.53 MB
+   S20487    211sp2ie.exe   Eicon WAN Services Drivers (Intel)     5.04 MB
+   S20486    211sp2ea.exe   Eicon WAN Services Drivers (Alpha)     5.76 MB
+
+If you are unable to access these files, contact Microsoft Product Support
+Services.
+
+INSTRUCTIONS FOR DECOMPRESSING FILES
+------------------------------------
+
+All of the above files are compressed in self-extracting archive format,
+containing SNA Server 2.11 SP2. To extract each file, copy the file to a
+separate empty directory on your hard drive and run the file using the "-d"
+option. For example:
+
+211sp2is.exe -d <PATH>
+
+where <PATH> is the destination directory for the service pack. If you wish
+to extract the service pack to the current directory, leave <PATH> blank.
+
+After the service pack file has been decompressed, run the Update.exe program to
+install the updated SNA Server 2.11 server or client files, as appropriate.
+
+NOTE: The Update program will automatically stop any SNA Server services that may
+be running.
+
+INSTALLING SNA 2.11 SERVICE PACK 2
+----------------------------------
+
+** TO BE APPLIED TO SNA SERVER 2.11 or 2.11 SP1 ONLY!! **
+
+Both the SNA Server and SNA client files have been updated in 2.11 SP2. Updates
+may be applied in any order---to the server and/or to the clients. It is
+recommended that all systems running SNA Server 2.11 (that is, SNA Servers and
+client computers) are updated to SP2. It may not be necessary to update the
+client computers to SP2 unless you are experiencing a client problem that has
+been fixed in SP2.
+
+ORDERING INFORMATION AND AVAILABILITY
+-------------------------------------
+
+Microsoft SNA Server 2.11 U.S. Service Pack 2 (SP2) compact disc is available by
+ordering from Microsoft at (800) 936-3500, using the following part number:
+
+Disk Set #: 211-075-100
+
+SNA 2.11 SP2 includes SNA Server 2.11 Service Pack 1 (SP1) as well as bug fixes
+implemented since 2.11 SP1. In addition, the 2.11 SP2 compact disc includes
+updated documentation, collateral, and software development kit (SDK) files. SNA
+2.11 SP2 includes updated SNA Server and client software for I386 (Intel) and
+DEC Alpha platforms.
+
+NOTE: Support for MIPS and Power PC platforms has been discontinued and is not
+included in SNA 2.11 SP2. If you are running SNA Server on a MIPS or Power-PC
+system and are experiencing a problem that has been fixed in 2.11 SP2, please
+contact Microsoft Support for an update.
+
+Additional query words: prodnt servpack SP2 SP1 bug fix
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP2
+Version           : :2.11,2.11 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,67 @@
+DOCUMENT:Q173510  07-JAN-2000  [exchange]
+TITLE   :XCON: NDR Sent to Originator Instead of DL Owner
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a message to a distribution list (DL) that is larger than the
+established message size limit for that DL, a non-delivery report (NDR) is
+generated and sent back to you, the message originator, regardless of the
+options set on the Advanced tab of the DL's Properties dialog box. For example,
+you send a 50-KB message to a DL called Test that has a maximum message size
+restriction of 25 KB. Also, on the Advanced tab, Distribution List options, the
+Report to message originator option is disabled (unavailable), and the Report to
+distribution list owner option is enabled. Instead of the DL owner receiving an
+NDR as expected, you, the originator,
+receive the NDR.
+
+CAUSE
+=====
+
+The Report-to-Owner and Report-to-Sender fields that direct this action do not
+apply to DLs but only to users. When an oversized message is sent to a DL, the
+message transfer agent (MTA) checks the message size and sends the NDR back
+before the DL expansion process takes place. In this case, only the default
+Report-to- Sender function is called, and the NDR goes to the originator.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: dl expand content
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

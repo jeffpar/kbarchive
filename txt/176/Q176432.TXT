@@ -1,0 +1,158 @@
+DOCUMENT:Q176432  13-JUN-2001  [sna]
+TITLE   :HOWTO: How to Determine if APPC LU Partnerships are Required
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using SNA Server 3.0, which supports dynamic partnership of local and
+remote APPC LU's to an APPC mode (in other words, LU/LU/mode partnership), it's
+not necessary to preconfigure LU/LU/mode partnership in the SNA Server
+configuration file in order to use these LU's. Under SNA Server 2.x, all APPC LU
+partnerships had to be defined ahead of time using SNA Admin before the LU's
+could be used.
+
+NOTE: The SNA Server 3.0 and 3.0 SP1 Manager tool does not support the ability to
+configure LU/LU/mode partnerships, though this feature has been reimplemented in
+3.0 Service Pack 2 within the APPC mode definition. The Snacfg.exe command line
+tool has always supported the ability to define LU/LU/mode partnerships.
+
+In most cases, explicit LU/LU/mode partnerships do not have to be defined. If
+APPC LU/LU/mode partnerships are not defined in the SNA Server 3.0 configuration
+file, LU6.2 session activation is deferred. This can cause the following
+problems or side effects:
+
+1. APPC or CPIC applications which attempt to allocate an LU6.2 conversation
+   without waiting for an LU6.2 session to be activated may fail to allocate a
+   conversation. An example of such an application is the Sybase/MDI DB2
+   Database Gateway.
+
+   See below for more information about this failure.
+
+2. APPC applications which rely on LU6.2 session information to be returned by
+   the APPC DISPLAY verb may fail to work. An example of such an application is
+   IBM CICS for Windows NT and Windows 95. For more information about this
+   problem, see the following article in the Microsoft Knowledge Base:
+
+   Q171994 IBM CICS For Windows NT Stops Working On SNA Server 3.0
+
+3. If an APPC mode is configured with any autoactivated sessions, LU6.2 sessions
+   do not activate until the first APPC/CPIC application requests a conversation
+   over an APPC LU/LU pair and requests this APPC mode. This simply defers LU6.2
+   session autoactivation, which is typically configured to force session
+   activation when SNA Server starts. By autoactivating an LU6.2 session, this
+   can improve performance for the first APPC or CPIC application which attempts
+   to allocate a conversation over this LU/LU/mode partnership.
+
+MORE INFORMATION
+================
+
+The local and remote LU's defined in SNA server work in pairs. The local APPC LU
+is assigned to a server and the remote APPC LU is assigned to the connection.
+SNA Server uses dynamic partnering to create any possible LU partnerships on
+demand when local and remote LU's and modes recognize each other.
+
+With dynamic APPC partnering, an administrator configures remote LU's, but
+normally does not need to partner them with local LUs. SNA Server will
+automatically partner the LUs when needed.
+
+APPC applications, such as Sybase/MDI DB2 Gateway, rely on availability of auto-
+started APPC conversations on LU to LU pairs. Such applications typically use
+the Allocate qualifier AP_IMMEDIATE (which is described in the APPC Programmer's
+reference) to open a conversation only if one of the auto-activated
+conversations is available for use; these applications will not cause an
+additional conversation to be allocated. To support applications which specify
+the AP_IMMEDIATE qualifier, the LU pairs should be partnered manually.
+
+If an APPC application which specifies the AP_IMMEDIATE qualifier does not have
+the Local and Remote LU's explicitly partnered with a mode , it will fail to
+build a conversation to the remote TP and post the following error message in
+the NT Event log from where the application is running.
+
+APPC local conversation start failed:
+
+   Primary_rc   = 0014 (AP_UNSUCCESSFUL)
+   Secondary_rc = 00000000
+   TP_ID        = 0000000080097F00
+   Dest TP name = D9C5C3E5E3D7
+   LU alias     = SENDLU
+   PLU alias    = RECVLU
+   Mode name    = 7BC9D5E3C5D94040
+
+EXPLANATION
+An attempt to start an APPC conversation locally using the verb [MC_]ALLOCATE
+failed.
+
+The SNA trace utility is a tool that can be used to track the activities of the
+API's being issued by the application and therefore can be used to determine
+which qualifier is specified in the Allocate or Send_Conversation verb posted by
+the invokeable TP. Please see the SNA Server Administration guide for details on
+how to perform an APPC application trace.
+
+The return control qualifier which is specified by the TP can be located at
+offset 28 from the beginning of the request. See Figure 1 below. In this case, a
+0x01 is specified, which represents the AP_IMMEDIATE constant. Figure 2 depicts
+other qualifier which can be used here as well. The example here is using the
+mapped conversation type.
+
+   FIGURE 1.
+   ---------
+   MC_SEND_CONVERSATION request
+
+   Type:Sync                                  VerbID:00001400
+
+   ---- Verb Parameter Block at address 0041D840 ----
+   18000100 00000000 00000000 00000000     <................>
+   F0177F00 70197F00 00000000 01000000     <0.[ASCII 166].p.>
+   00000000 00000000 52454356 4C552020     <........RECVLU  >
+   7BC9D5E3 C5D94040 D9C5C3E5 E3D74040     <{INTER@@RECVTP@@>
+   40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+   40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+   40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+   40404040 40404040 00000000 00000000     <@@@@@@@@........>
+   00000000 00000000 00000000 00000000     <................>
+   00000000 00000000 00000000 00000000     <................>
+   00000000 00000000 00000000 00000000     <................>
+   00000000 00000000 00000200 E00D0C01     <................>
+
+   Figure 2.
+   ---------
+   AP_WHEN_SESSION_ALLOCATED         0x00
+   AP_IMMEDIATE                      0x01
+   AP_WHEN_SESSION_FREE              0x02
+   AP_WHEN_CONWINNER_ALLOCATED       0x03                         
+   AP_WHEN_CONV_GROUP_ALLOCATED      0x04
+
+Additional query words: appc modes partners snafaq
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

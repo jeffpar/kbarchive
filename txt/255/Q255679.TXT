@@ -1,0 +1,62 @@
+DOCUMENT:Q255679  27-MAY-2001  [winnt]
+TITLE   :TPU: Outlook Bar Displayed After User Is Removed from Workspace
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5; :
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After an administrator removes a user (either as a member or an owner) from a
+Team Workspace, the workspace Outlook bar may still be displayed in Microsoft
+Outlook for that user. If the user logs off Outlook, the Outlook bar appears
+again after the user logs on to Outlook again. If the user attempts to gain
+access to the workspace by clicking the Outlook bar, the user is prompted for
+logon credentials, and the following error message appears after the credentials
+are entered:
+
+   Error: Access is Denied
+
+CAUSE
+=====
+
+The change in user rights is not effective until that user logs off and back on
+to the workstation.
+
+RESOLUTION
+==========
+
+To work around this behavior, the user should log off and then back on to the
+workstation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5; :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

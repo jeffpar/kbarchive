@@ -1,0 +1,66 @@
+DOCUMENT:Q249235  07-MAY-2001  [visualc]
+TITLE   :DOC: AfxLoadLibrary() Documentation is not Clear on Usage
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbDLL kbMFC kbVC500bug kbVC600bug kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC) 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MSDN documentation for AfxLoadLibrary indicates that you need to use
+AfxLoadLibrary if your MFC application uses multiple threads; this is not
+totally correct.
+
+MORE INFORMATION
+================
+
+The only time you need to use AfxLoadLibrary is if you application is
+multithreaded and you are dynamically loading an MFC extension DLL. To load and
+unload regular DLLs you can use the Win32 functions LoadLibrary and FreeLibrary.
+Only when you are loading and unloading MFC extension DLLs in a multithreaded
+application do you need to use AfxLoadLibrary and AfxFreeLibrary.
+
+If you use AfxLoadLibrary in your application and link statically to MFC then you
+will get a complier error:
+
+   error C2065: 'AfxLoadLibrary' : undeclared identifier
+
+This is because the header file for AfxLoadLibrary, Afxdll_.h, is only included
+if MFC is linked to the application as a DLL. This is by design because you have
+to link to the DLL version of MFC to use or create extension DLLs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbDLL kbMFC kbVC500bug kbVC600bug kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbMFC kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q156257  31-JUL-2001  [visualc]
+TITLE   :FIX: SQL Server May Crash When sp_who2 Is Debugged
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:4.2
+OPER/SYS:
+KEYWORDS:kbDebug kbEEdition kbSQL kbVC kbVC500fix kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SQL Server may crash when the stored procedure sp_who2 in master database is
+debugged.
+
+CAUSE
+=====
+
+The sp_who2 stored procedure contains an EXECUTE string larger than 1024
+characters. When it is debugged, SQL Server corrupts memory. This causes the
+server to crash anywhere from instantly to a few minutes.
+
+RESOLUTION
+==========
+
+Do not pass parameters to EXECute that are longer than 1024 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+sp_who2 is a supplied stored procedure in the default master database. The
+problem occurs with any stored procedure or ODBC call that performs an EXECute
+with a parameter longer than 1024 characters. When the problem occurs, it can
+also cause the IDE to lock up, sometimes permanently.
+
+A message can be written to the event log under MSDEVSDI that says, "Large batch
+command being debugged." The ID of the message is 13.
+
+Additional query words: kbVC420bug
+
+======================================================================
+Keywords          : kbDebug kbEEdition kbSQL kbVC kbVC500fix kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : WINDOWS:4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

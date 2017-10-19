@@ -1,0 +1,55 @@
+DOCUMENT:Q135148  17-DEC-2000  [win95x]
+TITLE   :Phone Dialer Prompts to Pick Up Handset Before Dialing Is Done
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Phone Dialer or the Microsoft Exchange Address Book's dialing
+feature, you may be prompted to pick up the handset before the dialing is
+finished. When you do so, the dialing is interrupted.
+
+CAUSE
+=====
+
+Some modems do not break the circuit between the phone handset and the phone
+line while dialing. On pulse-dial phone systems, this prevents the modem from
+being able to completely dial the phone number if the handset is taken off the
+hook before the dialing is finished.
+
+RESOLUTION
+==========
+
+Wait until the pulse dialing is finished before picking up the handset.
+
+Additional query words: drop carrier
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

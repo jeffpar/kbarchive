@@ -1,0 +1,71 @@
+DOCUMENT:Q176365  12-JUN-2001  [homegame]
+TITLE   :Close Combat: Changing Settings Before Starting the Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbusage kbtlckbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat: A Bridge Too Far, version 2.0 
+ - Microsoft Close Combat III: The Russian Front 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are experiencing problems when you play the opening videos or audio
+portion of Close Combat, you can turn the videos and sound off before you start
+the game by opening the Close Combat Options dialog box and changing the
+settings.
+
+MORE INFORMATION
+================
+
+To open the Close Combat Options dialog box before you start the game, press and
+hold down the CTRL key on your keyboard while you double-click the Close Combat
+shortcut on the desktop.
+
+To turn off sound or videos, click the appropriate check box to clear it.
+
+The following settings are available in the Close Combat Options dialog box.
+
+Performace Settings:
+
+   Game Speed: Slow, Medium, or Fast
+   Screen Resolution: 800x600@16bpp, or 1024x768@16bpp
+
+Game Options:
+
+   Enable Sound
+   Enable Music
+   Enable Videos
+   Expand Game Area
+   Remove Trees
+   Remove KIA Soldiers
+
+Additional query words: 1.00 2.00 close combat abtf russia hang lock disable video options
+
+======================================================================
+Keywords          : kbusage kbtlc kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat2 kbCloseCombat3
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

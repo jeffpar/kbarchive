@@ -1,0 +1,53 @@
+DOCUMENT:Q68330  30-JUL-2001  [lanman]
+TITLE   :Decreasing Time to Log Onto Network with DOS/OS2 LM
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Here is how to reduce the time it takes to log onto a network:
+
+With an MS-DOS LAN Manager Workstation
+--------------------------------------
+
+ - Have a domain controller running NETLOGON to validate the logon. This avoids
+   the (default) 45-second timeout.
+
+With an OS/2 LAN Manager Workstation
+------------------------------------
+
+There are two options:
+
+ - Have a domain controller running NETLOGON to validate the logon. This avoids
+   the (default) 15-second timeout.
+
+ - Change the wrkheuristics 33 bit in the LANMAN.INI file as described in
+   Appendix B of the Microsoft Operating System/2 LAN Manager "Administrator's
+   Reference." This causes the OS/2 workstation to log onto the network
+   STANDALONE after the timeout value specified has been exceeded (if you
+   haven't used option 1).
+
+Additional query words: 2.00 2.0
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

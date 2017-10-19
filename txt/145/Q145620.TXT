@@ -1,0 +1,74 @@
+DOCUMENT:Q145620  01-MAY-2001  [vbwin]
+TITLE   :PRB: Appearance of ComboBox Control Is Always Three-Dimensional
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbComboBox kbCtrl kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbControl
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 6.0, 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 6.0, 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0, 5.0 
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ComboBox control can only be displayed with a three-dimensional (3-D)
+appearance, regardless of the value of the Appearance property.
+
+This problem does not occur in Visual Basic, 16-bit, version 4.0.
+
+RESOLUTION
+==========
+
+There is no known workaround.
+
+STATUS
+======
+
+This is a Windows 32-bit limitation.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. Add a ComboBox control, Combo1, of any style, to Form1.
+
+3. Set the Appearance property of Combo1 to "0 - Flat". In design and run mode,
+   the appearance of the control remains 3-D.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbComboBox kbCtrl kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbControl 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : :4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

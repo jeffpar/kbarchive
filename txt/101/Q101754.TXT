@@ -1,0 +1,75 @@
+DOCUMENT:Q101754  05-NOV-1999  [pcmail]
+TITLE   :PC Win: MOVEUSER.EXE May Lose Password If Imported from .MMU
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Move User utility (MOVEUSER.EXE) to move users in the following
+three ways:
+
+ - Drag the users to specified postoffices (POs).
+
+-or-
+
+ - Export a user to an .MMU file, and then import that user into the
+   destination.
+
+-or-
+
+ - Highlight the user to be moved, and then choose Move from the File menu.
+
+If you use one of the latter two ways to move a user, there is a 50 percent
+chance that the user will lose his or her password.
+
+MORE INFORMATION
+================
+
+The environment where users lose their passwords is predictable and is dependent
+on enhanced security (EN). There are four scenarios that administrators
+preparing to use MOVEUSER.EXE should be aware of:
+
+   Source PO          Destination PO          Password Moved
+   ---------------------------------------------------------
+   EN = on               EN = on                   Yes
+   EN = on               EN = off                  Yes
+   EN = off              EN = off                  No
+   EN = off              EN = on                   No
+
+The Move User utility is dependent on enhanced security because MOVEUSER.EXE
+re-encrypts or doesn't encrypt the user's password, depending on how the
+MASTER.GLB recorded enhanced security.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

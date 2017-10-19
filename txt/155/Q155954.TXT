@@ -1,0 +1,76 @@
+DOCUMENT:Q155954  16-APR-2000  [powerpt]
+TITLE   :Lines with Arrowheads Distorted When Pasted into Word
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft Word for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you copy a line with an arrowhead from Microsoft PowerPoint for Windows 95
+and paste it into Microsoft Word for Windows 95, the line comes in distorted.
+The arrowhead may appear as a block, or it may not appear at all.
+
+CAUSE
+=====
+
+Line objects in PowerPoint are actually longer than they appear. They include a
+clipping rectangle to square off the ends. When you paste one of these objects
+into Word, Word interprets the clipping rectangle as the picture boundary and
+puts it in the wrong place. This will crop some or all of an arrowhead.
+
+RESOLUTION
+==========
+
+You can manually reset the picture boundary by doing the following:
+
+1. Paste the arrow into Word.
+
+2. Double-click the arrow to start the Word drawing layer.
+
+3. Click the arrow to see the resize handles.
+
+4. Drag the resize handles until the arrow is the proper size and proportion.
+
+5. On the Picture toolbar, click the Reset Picture Boundary button.
+
+6. Click the Close Picture button to return to your document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. This problem has been corrected in Microsoft Office
+97.
+
+Additional query words: 7.00 powerpt ppt95 word95 winword word7 chopped cropped cut off blocky missing arrowed
+
+======================================================================
+Keywords          : kbgraphic kbinterop 
+Technology        : kbWordSearch kbPowerPtSearch kbWord700Search kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbWord700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

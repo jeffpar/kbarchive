@@ -1,0 +1,59 @@
+DOCUMENT:Q162727  31-JUL-2001  [sms]
+TITLE   :SMS: Setup Switch "/noautoupgrade" Fails
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbSCMan smssetup smssiteconfigmankbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When upgrading a Systems Management Server 1.1 site to version 1.2, the Systems
+Management Server administrator may not want to have any secondary sites beneath
+that primary site upgraded immediately. There is a documented command-line
+switch, "/noautoupgrade", that should serve that need; however, it does not work
+correctly. After the primary site is successfully upgraded to Systems Management
+Server 1.2, the Systems Management Server Hierarchy Manager begins to upgrade
+any secondary sites reporting to it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem was corrected in the latest Microsoft Systems
+Management Server version 1.2 U.S. Service Pack. For information on obtaining
+the service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: config hman service install setup SMS_Hierarchy_manager
+
+======================================================================
+Keywords          : kbsetup kbSCMan smssetup smssiteconfigman kbfixlist
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

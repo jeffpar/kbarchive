@@ -1,0 +1,115 @@
+DOCUMENT:Q243777  06-AUG-2002  [crossnet]
+TITLE   :Nothing Happens When You Click Save in "Save File As" Box
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:2000,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Save in the Save File As common dialog box, nothing may happen,
+or the contents of the Look In box may change.
+
+CAUSE
+=====
+
+This behavior can occur if the the File Name box contains an asterisk (*) or
+question mark (?). These characters are reserved for use as wildcards and cannot
+be used in a file name.
+
+RESOLUTION
+==========
+
+Specify a file name that does not contain an asterisk or question mark.
+
+STATUS
+======
+
+This behavior is by design and is shared by all Windows-based programs that use
+the common Save File As dialog box.
+
+MORE INFORMATION
+================
+
+You can use wildcards to reference more than one file name by using special
+characters. A wildcard is a character (either an asterisk or a question mark)
+that is used to express that any combination of characters is allowed in a
+certain section of a string. For example, if you want to list all files that
+begin with the string "user" but can contain any other characters and any
+extension, use the following wildcard:
+
+   user*.*
+
+If you want to list all files that start with any character, then contain the
+string "user" and have any extension, use the following wildcard:
+
+   ?user*.*
+
+File names that contain other illegal characters, such as a colon (:), generate
+the following error message:
+
+   <Filename> This filename is not valid.
+
+The characters that are valid for a file or folder name include any combination
+of letters (A-Z) and/or numbers (0-9), plus the following special characters:
+
+   $   Dollar sign
+   %   Percent 
+   '   Apostrophe
+   `   Opening single quotation mark
+   -   Hyphen
+   @   At sign
+   {   Left brace
+   }   Right brace
+   ~   Tilde
+   !   Exclamation point
+   #   Number sign
+   (   Opening parenthesis
+   )   Closing parenthesis
+   &   Ampersand 
+   _   Underscore
+   ^   Caret
+       space
+   +   Plus sign
+   ,   Comma
+   .   Period
+   =   Equal sign
+   [   Opening bracket
+   ]   Closing bracket
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin95search kbWin98search kbWin98SEsearch kbWinAdvServSearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : WINDOWS:2000,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

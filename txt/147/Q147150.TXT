@@ -1,0 +1,91 @@
+DOCUMENT:Q147150  12-SEP-1999  [schedplus]
+TITLE   :Command Line Parameters for Schedule+ 7.0
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+7.00
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+The following are the valid command line parameters for Microsoft Schedule+
+version 7.0:
+
+The /U Parameter
+----------------
+
+Syntax: /U "user name"
+
+Explanation: Starts Schedule+ using a specific profile (if mail is enabled)
+or as a specific user (in standalone mode). Quotes are only necessary if
+the login name has a space. If you attempt to start Schedule+ as a user
+named TEST, add the following to the command line:
+
+   /u test.
+
+If you attempt to start as a user named TEST USER add the following to
+the command line:
+
+   /u "TEST USER".
+
+NOTE: The user name is not case-sensitive.
+
+The /P Parameter
+----------------
+
+Syntax: /p <password>
+
+Explanation: Starts Schedule+ with a specified password, where <password>
+is the password to the /U "user name" Schedule+ file (SCD).
+
+The /A Parameter
+----------------
+
+Syntax: /a
+
+Explanation: Starts Schedule+ and displays the New Appointment dialog box.
+
+The /T Parameter
+----------------
+
+Syntax: /t
+
+Explanation: Starts Schedule+ and displays the new Task dialog box.
+
+The /C Parameter
+----------------
+
+Syntax: /c
+
+Explanation: Starts Schedule+ and displays the new Contact dialog box.
+
+Additional query words: 7.00 startup switches switch
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

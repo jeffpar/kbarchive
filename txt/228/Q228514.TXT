@@ -1,0 +1,81 @@
+DOCUMENT:Q228514  10-AUG-2000  [homegame]
+TITLE   :Baseball 2000: Game Quits and You Are Returned to the Desktop
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbui kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play Microsoft Baseball 2000, the game may not start and you
+may be returned to the Windows desktop.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - A Matrox Millennium or Matrox Mystique 220 video adapter is installed in your
+   computer.
+
+ - The 3D Hardware graphics option is enabled in Baseball 2000.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable the 3D Hardware graphics option in Baseball 2000.
+To do this, follow these steps:
+
+1. Start Baseball 2000.
+
+2. On the Home Plate screen, click Options.
+
+3. Click the Graphics tab.
+
+4. Under Video Card, click Software.
+
+5. Click OK.
+
+NOTE: If a Matrox Millennium video adapter is installed in your computer, you
+must select the Software graphics option because Baseball 2000 detects the
+Matrox Millennium as a 3D video adapter and enables the 3D Hardware graphics
+option by default.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame bball2000 bball2k display card close quits
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbui kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

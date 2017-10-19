@@ -1,0 +1,90 @@
+DOCUMENT:Q170689  25-JUL-2000  [mspress]
+TITLE   :Help Author Kit Incompatible With Microsoft Word 97
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows 95 Help Authoring Kit ISBN 1-55615-892-0 
+-------------------------------------------------------------------------------
+
+SYMPTOM
+=======
+
+Microsoft Windows 95 Help Authoring Kit, ISBN 1-55615-892-0, contains a
+procedure which produces the following error when the steps on pages 18 through
+29 are completed:
+
+   Processing TOPICS\myhelp.rtf
+         HC4002: Warning:
+      The RTF file TOPICS\myhelp.rtf is corrupted at offset 286.
+         HC4005: Warning:
+      The .\myhelp.hlp help file has not been created.
+
+MORE INFORMATION
+================
+
+Microsoft Word 97 produces a rich text file that is incompatible with Microsoft
+Help Compiler 4.0. For more information on this problem, please see the
+following article(s) in the Microsoft Knowledge Base:
+
+   Q164012 Error Compiling Word 97 RTF in Help Compiler, Help WorkShop.
+
+Microsoft is aware of this problem and has produced a new version of the
+Microsoft Help Compiler that will work correctly with Microsoft Word 97 files.
+Version 4.03 of the Help Compiler is now available for free download from
+Microsoft. Future reprints and editions of the Microsoft Windows 95 Help
+Authoring Kit will include the corrected compiler.
+
+RESOLUTION
+==========
+
+The self-extracting archive file, Hcwsetup.exe, contains the Microsoft Help
+Workshop version 4.03 and instructions for installing this program.
+
+The following file is available for download from the Microsoft Download Center:
+
+   HCWSETUP.EXE
+   (http://download.microsoft.com/download/win95/MSPRESS/1.0/W9X/EN-US/hcwsetup.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Microsoft Press is committed to providing informative and accurate products. This
+file is ready for inclusion in future printings of this book. If you have a
+later printing of this book, the practice disc might already contain version
+4.03 of the Microsoft Help Workshop.
+
+Additional query words: mspress ms_press press bookbug kb3rdparty
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

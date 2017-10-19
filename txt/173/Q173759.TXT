@@ -1,0 +1,45 @@
+DOCUMENT:Q173759  29-MAR-2001  [foxpro]
+TITLE   :FAQ: How Do I Get Visual FoxPro 5.0a with 5.0a No VFP Problems
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0a
+OPER/SYS:
+KEYWORDS:kbvfpkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0a 
+-------------------------------------------------------------------------------
+
+Q: What if I am not experiencing a problem with Visual FoxPro 5.0, but I
+just want a copy of Visual FoxPro 5.0a?
+
+A. Any registered North American Visual FoxPro 5.0 customer can order
+Visual FoxPro 5.0a by calling (800) 360-7561. The charge will be $15 plus
+shipping and handling and applicable sales tax. The part number is 340-
+00504 for CD-ROM.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbfaq
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500a
+Version           : WINDOWS:5.0a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

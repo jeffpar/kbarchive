@@ -1,0 +1,92 @@
+DOCUMENT:Q153705  02-APR-1999  [exchange]
+TITLE   :XCLN: Messages with Large Attachments Sit in Outbox
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Microsoft Exchange is installed in a Token Ring environment and Microsoft
+Exchange Windows 3.x clients are configured so that the connection to the
+Microsoft Exchange Server is made via IPX/SPX, the clients might be unable to
+send messages with attachments larger than approximately 10K. The messages will
+sit in your Outbox and will never be sent to the Microsoft Exchange Server. At
+this point, any subsequent messages will also fail to leave the Outbox.
+
+MORE INFORMATION
+================
+
+This behavior can occur as a result of mismatched network packet frame sizes
+between the Microsoft Exchange client workstation and the Microsoft Exchange
+Server.
+
+
+Token-Ring adapters can have network packet frame sizes of more than 16K as
+opposed to Ethernet, which generally uses 1500 byte frames. Usually the software
+drivers for Token-Ring cards use a frame size of approximately 4K, but different
+manufacturers may use different values. In a NetWare environment, if the frame
+sizes on the computer that is running the Microsoft Exchange Client and the
+computer running Microsoft Exchange Server do not match, the client will report
+network errors when sending large e-mail messages or when moving or copying
+items from the user's Inbox to a public folder. The error text notes the
+operation that failed and attributes it to "network problems." For example, if
+the operation being attempted was copying a message from the Inbox to a public
+folder, the error text would be "An item could not be copied. Network problems
+are preventing a connection to the Microsoft Exchange Server computer."
+
+To solve this problem, adjust the frame sizes on the server and client to match.
+When the client Token-Ring driver loads, take note of the maximum packet size
+that it reports. You will need to set the server's maximum packet size to match
+this value. For the Token.com driver that ships with NetWare 3.12 and 4.x, the
+default size that it will report is 4210.
+
+To change the maximum packet size on the server, start the Network application in
+Control Panel, highlight the Token-Ring adapter card entry, click the configure
+button, and then change the setting and save it. If you are using the Windows NT
+driver for IBM Token- Ring, use the registry to configure the Maximum Packet
+Size. This is a DWORD registry entry with a path of
+KEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IBMTokx\Parameters (where x
+is the optional adapter number) and the parameter is MaximumPacketSize. Use the
+decimal value from the client's driver specification. Restart the server for the
+new setting to take effect.
+
+For more information on configuring other Token Ring adapters, refer to the
+manufacturer documentation included with the adapter.
+
+For Windows 95 Clients, to force even length Packets, go to Start, Settings,
+Control Panels, Network, highlight the "IPX/SPX" transport, click properties,
+click on the Advanced tab, and set "Force Even Length Packets" value to "yes".
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

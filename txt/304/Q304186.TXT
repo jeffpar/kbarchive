@@ -1,0 +1,62 @@
+DOCUMENT:Q304186  31-OCT-2001  [iis]
+TITLE   :BETA-INFO: FTP Security Accounts Add/Remove Buttons Unavailable
+PRODUCT :Internet Information Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.1 
+ - Microsoft Windows XP Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure the properties of a File Transfer Protocol (FTP) virtual
+server, the buttons on the Security Accounts tab to add and remove operators are
+unavailable. As a result, administrators are unable to add or remove users or
+groups as site operators.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The versions of Internet Information Services (IIS) that can be installed on the
+Professional SKUs of the Microsoft Windows operating system are intended as
+development platforms and are not designed for use as production servers. These
+versions of IIS have certain features that are provided in a limited capacity or
+sometimes completely disabled. Some features are available, but are not
+supported by Microsoft Product Support Services (PSS).
+
+
+Additional query words: betapublic
+
+======================================================================
+Keywords          :  
+Technology        : kbWinXPPro kbiisSearch kbWinXPProSearch kbWinXPSearch kbiis510
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

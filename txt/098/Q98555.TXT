@@ -1,0 +1,70 @@
+DOCUMENT:Q98555  19-FEB-2002  [lanman]
+TITLE   :NET MOVE, NET COPY, and File Permissions
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+NET COPY does not copy permissions along with a file; NET MOVE does. If you want
+to keep file permissions intact on a file, use NET MOVE. If you want the file to
+have the permissions of the destination directory, use NET COPY.
+
+DEFAULT PERMISSIONS
+-------------------
+
+A file with default permissions has no explicit Access Control Lists; for
+security it uses the permissions of the directory to which it belongs. NET COPY
+copies the file to a directory, where the file is given the permissions of the
+new directory. NET MOVE moves the file and its original default permissions to a
+new directory, where the permissions are made explicit.
+
+EXPLICIT PERMISSIONS
+--------------------
+
+If files have explicit ACLs, NET COPY does not copy them when it copies the file;
+the file inherits the permissions of the destination directory. NET MOVE moves
+the permissions for the file.
+
+EXAMPLE
+-------
+
+For example, the directory C:\TEST1 has permissions USERS : RCWDAP. Two files
+exist in C:\TEST1, FILE1 and FILE2. They are using the default permissions for
+the directory. Directory C:\TEST2 has no permissions.
+
+If you use the commands
+
+   net copy c:\test1\file1 c:\test2
+   net move c:\test1\file2 c:\test2
+
+the result is that C:\TEST2\FILE1 has no permissions, and the file C:\TEST2\FILE2
+has explicit permissions of USERS : RCWDAP.
+
+If the files had explicit permissions, the end result would be the same. FILE1
+would have no permissions because it used the NET COPY command, and FILE2 would
+have the explicit permissions that it had under the old directory.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

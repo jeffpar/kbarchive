@@ -1,0 +1,66 @@
+DOCUMENT:Q126382  08-AUG-2001  [winnt]
+TITLE   :Bypassing Service Provider Banner In SWITCH.INF
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following statement can be used in your Remote Access Service (RAS) SLIP/PPP
+logon script (SWITCH.INF file) to bypass the banner text of your service
+provider:
+
+   LOOP=<ignore>
+
+MORE INFORMATION
+================
+
+Many service providers send a long welcome and instruction text banner each time
+you logon. You can use the LOOP=<ignore><cr> statement in your
+automated logon script, to bypass an unknown number of text banner lines.
+
+For example:
+
+   COMMAND=
+   OK=<match>"Enter User Name:"
+   ERROR_NO_CARRIER=<match>"NO CARRIER"
+   LOOP=<ignore>
+
+This set of commands causes the blank COMMAND= to be issued until Enter User
+Name: is matched. Therefore, any lines of text sent by the service provider
+before Enter User Name: are ignored by your automated logon script.
+
+For more information on using the SWITCH.INF to automate a logon, refer to
+Knowledge Base article Q125975.
+
+Additional query words: point-to-point prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS350search
+Version           : 3.5 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

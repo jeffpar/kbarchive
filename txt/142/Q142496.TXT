@@ -1,0 +1,59 @@
+DOCUMENT:Q142496  17-DEC-2000  [win95x]
+TITLE   :Send Command from 32-Bit Program Starts Only MS Exchange
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Send command in a 32-bit program such as WordPad, one of the
+following behaviors may occur:
+
+ - If Microsoft Exchange is installed and configured, Microsoft Exchange starts
+   instead of any installed 16-bit mail program.
+
+ - If Microsoft Exchange is not installed, the 16-bit mail program stops
+   responding (hangs).
+
+ - If Microsoft Exchange is installed but not configured, the Microsoft Exchange
+   Setup Wizard starts.
+
+MORE INFORMATION
+================
+
+The Send command is a function of Simple MAPI. All 32-bit programs call
+Mapi32.dll to use Simple MAPI. Mapi32.dll is a Windows 95 system file that is
+installed even if Microsoft Exchange is not installed. Because Mapi32.dll calls
+only a 32-bit mail program, Microsoft Exchange is started. It is not currently
+possible for a 32-bit program to perform a Send function to a 16-bit mail
+program.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

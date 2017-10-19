@@ -1,0 +1,78 @@
+DOCUMENT:Q74924  04-MAY-2001  [masm]
+TITLE   :A Structure Template Can Be Referenced in a MASM Program
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:5.10,5.10a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.10, 5.10a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With the Microsoft Macro Assembler (MASM), if a structure type is declared but
+no instance of the structure is ever defined, the assembler will still permit
+access to the structure.
+
+This is expected behavior for the assembler. A reference to a structure field in
+this manner is equivalent to taking the offset of the field from the beginning
+of the structure.
+
+MORE INFORMATION
+================
+
+The sample code below illustrates this situation. The example declares an
+"animal" structure type, but does not define an instance of the structure. A
+reference to this structure type is then made in the following line:
+
+      mov ax, animal.dog
+
+As described above, the reference to animal.dog just generates the offset of the
+field, dog, from the beginning of the structure; therefore, this line is
+effectively the same as the statement "mov ax, 2".
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+           .MODEL SMALL
+
+           animal   struc
+           cat     dw  11
+           dog     dw  12
+           animal   ends
+
+           .CODE
+   start:  mov ax, @data
+           mov ds, ax
+           mov ax, animal.dog
+           END start
+
+Additional query words: kbinf 5.10 5.10a 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : MS-DOS:5.10,5.10a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,83 @@
+DOCUMENT:Q164828  15-NOV-2000  [powerpt]
+TITLE   :PPT7: Hang, Error Using PowerPoint Write-Up Command w/ Word 97
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0,7.0a,97
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft Word 97 for Windows 
+ - Microsoft Word for Windows 95, versions 7.0, 7.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Write-up feature in PowerPoint for Windows 95, version 7.0, on
+a computer that contains both Microsoft Word for Windows 95, version 7.0 or 7.0a
+and Microsoft Word 97 for Windows, Write-up starts Word 97 and then stops
+responding (hangs). When you switch back to PowerPoint, you receive the
+following error message:
+
+   Word Error.
+   This command is unavailable while there is an active Word section in the
+   Binder.
+
+To start the Write-up feature in PowerPoint 7.0, click Write-up on the Tools
+menu.
+
+CAUSE
+=====
+
+This problem occurs if you have both Microsoft Word for Windows 95, version 7.0
+or 7.0a and Microsoft Word 97 for Windows on your computer and you are using the
+Write-up command from PowerPoint 7.0. This problem does not occur if you are
+using PowerPoint 97.
+
+RESOLUTION
+==========
+
+To work around this problem, start Word 7.0 or 7.0a before you use the Write-up
+command in PowerPoint 7.0.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The Write-up feature automatically exports miniature images of your slides to
+Word in a page layout that you can use for notes or handouts.
+
+Additional query words: 7.00 97 ppt95 7.0 writeup binder freeze hang respond responding lock up frozen
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbdta 
+Technology        : kbWordSearch kbPowerPtSearch kbWord97 kbWord97Search kbWord700Search kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbWord700 kbWord700a
+Version           : WINDOWS:7.0,7.0a,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

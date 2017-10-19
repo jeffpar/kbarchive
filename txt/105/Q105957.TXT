@@ -1,0 +1,66 @@
+DOCUMENT:Q105957  16-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Entering Addresses Directly on the TO: Line
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With version 3.2 of Microsoft Mail Remote for Windows, if you want to enter
+addresses directly on the To: line, without first adding them to your Personal
+Address Book (PAB), you should enclose the address in square brackets.
+
+For example, to send mail to a Microsoft Mail user, type the following:
+
+   "[MS:<network>/<postoffice>/<user>]" (without the quotation
+   marks)
+
+To send mail to an AT&T user, type
+
+   "[AT&T:!<user>]" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+Addressing mail to an AT&T Mail user is a unique case, because you must add
+the exclamation point character (!) in the address.
+
+For more information, query on the following words here in the Microsoft
+Knowledge Base:
+
+   "MailPCWin" (without the quotation marks) and "mailing" (without the
+   quotation marks) and "address" (without the quotation marks) and "list"
+   (without the quotation marks)
+
+
+Additional query words: 3.20 gateway foreign
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

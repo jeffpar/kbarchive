@@ -1,0 +1,77 @@
+DOCUMENT:Q171298  30-JUL-2001  [sms]
+TITLE   :SMS: Win95 Clients May Get a GPF Logging on to a NetWare Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2 SP2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbPGC smspgc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using shared packages after applying Systems Management Server 1.2
+Service Pack 2, the Windows 95 clients may get a general protection fault (GPF)
+in Appctl95 when logging on to a Novell NetWare network. No error will occur
+with clients logging on to a Windows NT network. Also, if there are no shared
+packages at the client workstation, no error will occur.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps to use the original
+Systems Management Server 1.2 version of Nadapi95.dll:
+
+1. Retrieve Nadapi95.dl_ from the Systems Management Server 1.2 CD and rename
+   the file to Nadapi95.dll (it is not compressed).
+
+2. Copy Nadapi95.dll to the Sms\Site.srv\Maincfg.box\Client.src\X86.bin\
+   directory on the computer running Systems Management Server. Nadapi95.dll
+   will be replicated to your logon servers from this directory.
+
+3. After Nadapi95.dll is on the logon servers, then the System.map file in a
+   text editor such as Notepad and then save it. Be sure to make no changes to
+   the System.map file. Simply opening the file and saving it will update the
+   time stamp, which causes the clients to go into verify mode. The client will
+   then get the correct Nadapi95.dll copied to its Windows directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2 Service Pack 2. This problem was corrected in the latest Microsoft
+Systems Management Server 1.2 U.S. Service Pack. For information on obtaining
+the service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodsms sp sp2 pgc program group control
+
+======================================================================
+Keywords          : kb3rdparty kbPGC smspgc 
+Technology        : kbSMSSearch kbSMS120SP2
+Version           : :1.2 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

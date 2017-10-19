@@ -1,0 +1,66 @@
+DOCUMENT:Q255627  28-MAY-2000  [exchange]
+TITLE   :XFOR: No Import/Export Vers. 8.x Option in Connector for cc:Mail
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure the Microsoft Exchange Connector for Lotus cc:Mail and select
+"Import/Export version" on the General tab, Import/Export version 8.0 or later
+is not displayed.
+
+RESOLUTION
+==========
+
+To resolve this issue, click Import 6.0/Export 6.0.
+
+NOTE: Make sure that the Lotus cc:Mail database is database version 8 (DB8) or
+later.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The Import/Export version list on the General tab of the Connector for cc:Mail
+is used to select the Lotus cc:Mail database version, and not the actual version
+number of the Import and Export programs. Database version 8 uses Import
+6.0/Export 6.0. Database version 6 (DB6) used Import 5.15/Export 5.14.
+
+
+Additional query words: import.exe export.exe 8.5 ccmail ccdata
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

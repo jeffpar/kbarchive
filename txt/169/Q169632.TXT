@@ -1,0 +1,139 @@
+DOCUMENT:Q169632  10-AUG-2001  [winnt]
+TITLE   :Unattended Err Msg: Setup Was Unable to Create the Following...
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When performing an unattended installation in which Sysdiff is used to install
+additional applications, you may receive the following error message during the
+initial phase of the installation:
+
+   Setup was unable to create the following directory on the target drive:
+
+   <drive letter>:\$\$$\<directory path>
+
+   Check the target drive and make sure no files exist with the names that
+   coincide with the target directory. Also check cabling to the drive.
+
+   Setup cannot continue. Press ENTER to exit.
+
+CAUSE
+=====
+
+If you have verified that your drive cabling is functioning properly and there
+are no duplicate directory or file names, this error may be caused by the length
+of your directory path. The maximum number of characters allowed in the
+directory path is 55; this does not include the drive letter, colon, or any
+backslashes.
+
+WORKAROUND
+==========
+
+Two options are provided to work around this problem. Option B requires more
+advanced knowledge of Sysdiff and the unattended installation process.
+
+Option A
+--------
+
+1. Note the directory path shown on the screen when you receive this error.
+
+2. On the computer that you are using to create the Sysdiff or diff file, either
+   shorten the directory names, or move the directories in order to shorten the
+   length of the path. If the directory that is causing the problem contains a
+   software program, you may have to remove and re- install the program to a
+   new, shortened directory path.
+
+   Keep in mind that the Sysdiff program will truncate each directory name to
+   eight characters. (Refer to the directory path from step 1.) Therefore, if
+   you shorten the directory names, you must shorten them to fewer than eight
+   characters.
+
+   If the original directory is a subdirectory of the %Systemroot% directory
+   (that is, C:\Winnt\<path>), the maximum number of characters cannot
+   exceed 52. If the original directory is a subdirectory of the root partition
+   (that is, D:\<path>), the maximum number of characters cannot exceed
+   53.
+
+3. After you have shortened the directory path to contain less than the maximum
+   number of characters, you must re-create the Sysdiff or diff file and the
+   Sysdiff or inf image.
+
+Option B
+--------
+
+1. Note the directory path shown on the screen when you receive this error.
+
+2. Locate this directory path in your $Oem$ subdirectory of the I386 share, and
+   modify the length of the path by shortening the directory names to fewer than
+   eight characters each.
+
+   You need to shorten only as many directory names as required to reduce the
+   length of the entire path to the maximum allowed characters. If the problem
+   is with a subdirectory of the $Oem$\$$ directory, the maximum is 52. If it is
+   a subdirectory of $Oem$\C or $Oem$\D, then the maximum is 53 characters, as
+   counted from the first character following the $$ or the drive letter, not
+   counting the backslashes.
+
+3. Modify the $$Rename.txt file from the appropriate location (that is,
+   $Oem$\$$\$$Rename.txt or $Oem$\c\$$Rename.txt) to reflect the modifications
+   you made to the actual directory path in step 2 above.
+
+   The $$Rename.txt file is used to rename the truncated directory and file names
+   to their original names before the Sysdiff program truncated them to the
+   MS-DOS 8.3 format.
+
+   Be sure to make a copy of the $$Rename.txt file and review the existing format
+   carefully before making any changes. A section header, which is the parent
+   directory enclosed in brackets, must precede each directory that needs to be
+   renamed. For example:
+
+The directory path $Oem$\$$\Profiles\Alluse~1\Startm~1\Programs\Myprog~1 needs to
+be renamed C:\Winnt\Profiles\All Users\Start Menu\Programs\My Programs.
+
+The $$Rename.txt file should appear as follows:
+
+    [Profiles]
+    ALLUSE~1="All Users"
+
+    [Profiles\ALLUSE~1]
+    STARTM~1="Start Menu"
+
+    [Profiles\ALLUSE~1\STARTM~1\Programs]
+    Myprog~1="My Programs"
+
+Additional query words: unattend sysdiff
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro
+Version           : :2000,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

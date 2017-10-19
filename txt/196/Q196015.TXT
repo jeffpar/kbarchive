@@ -1,0 +1,79 @@
+DOCUMENT:Q196015  07-FEB-2001  [word97]
+TITLE   :WD97: Dates in Table Sort Incorrectly as Date Type
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta word97 kbtable
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Dates earlier than January 1, 1901, or later than December 31, 2035, are sorted
+incorrectly when you sort a list in a table as a Date type. (To locate this
+option, click Sort Text on the Table menu.)
+
+For example, when you sort this list:
+
+   May 1, 1504
+   Jan 1, 1901
+   April 2, 1400
+   May 5, 1503
+   Sept 6, 1966
+
+The result appears like this:
+
+   May 1, 1504
+   April 2, 1400
+   May 5, 1503
+   Jan 1, 1901
+   Sept 6, 1966
+
+CAUSE
+=====
+
+Word does not recognize dates earlier than January 1, 1901, or later than
+December 31, 2035, as valid dates.
+
+WORKAROUND
+==========
+
+Sort the dates as text.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

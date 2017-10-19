@@ -1,0 +1,50 @@
+DOCUMENT:Q155152  12-JUN-2001  [homekids]
+TITLE   :Writer 2: Zoom Button Not Dimmed When at Extreme Position
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you zoom in and out using the View Changer in Creative Writer, there is no
+scale that indicates the relative setting of the magnification.
+
+MORE INFORMATION
+================
+
+Creative Writer 2.0 behaves differently than Creative Writer 1.0, which had a
+scale that indicated the current zoom setting. You will know you are at the most
+extreme zoom setting when you click either Zoom In or Zoom Out, and the tool tip
+pops up more quickly and the writing space is not redrawn.
+
+Additional query words: kids mskids max writer CW CW2 magnify big bigger small smaller
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbCreativeWriter200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

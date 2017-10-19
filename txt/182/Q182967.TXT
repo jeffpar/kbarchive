@@ -1,0 +1,72 @@
+DOCUMENT:Q182967  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Year 2000 Problems with DATE and DIR Commands
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::95
+OPER/SYS:
+KEYWORDS:kbfile kbYear2000 osr1 osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience either of the following symptoms:
+
+ - The DIR command displays file dates using only two digits to represent the
+   year, instead of four digits.
+
+ - When you use the DATE command to set the current date and you type the year
+   as only two digits from 00 through 79, the DATE command displays the error
+   message "Incorrect date format."
+
+RESOLUTION
+==========
+
+To work around this problem, type the year using four digits when you set the
+date to 1/1/2000 or later using the DATE command.
+
+To resolve this issue, obtain and install the Windows 95 Year 2000 Update.
+Microsoft also recommends that you obtain and install the Windows 95 Year 2000
+Corporate Update. For additional information about these updates, please see the
+"References" section in this article. You can obtain these updates from the
+following Microsoft Web site:
+
+   http://www.microsoft.com/windows95/downloads
+
+MORE INFORMATION
+================
+
+For additional information about the Windows 95 Year 2000 Update, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q225050 Availability of the Windows 95 Year 2000 Update
+
+
+Additional query words: y2k
+
+======================================================================
+Keywords          : kbfile kbYear2000 osr1 osr2 win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

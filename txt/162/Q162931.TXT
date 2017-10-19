@@ -1,0 +1,77 @@
+DOCUMENT:Q162931  15-NOV-2000  [ssafe]
+TITLE   :PRB: SourceSafe Commands not Available for RunCommand Method
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+You can use the new RunCommand method to execute menu commands in Microsoft
+Access 97, and, in general, most of the application's functionality is available
+using this method.
+
+However, the RunCommand method does not expose the menu commands to control
+Visual SourceSafe Integration from either Visual Basic for Applications code or
+macros.
+
+This article assumes that you are familiar with using the client-side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or Help topics available
+from the Visual SourceSafe menu.
+
+CAUSE
+=====
+
+Microsoft Access 97 does not expose a programmatic interface to Visual
+SourceSafe integration.
+
+RESOLUTION
+==========
+
+You can control Microsoft Visual SourceSafe version 5.0 using OLE Automation
+from Visual Basic for Applications code. You can obtain information concerning
+this functionality by searching for Visual SourceSafe on the Microsoft home page
+on the World Wide Web at:
+
+   http://www.msdn.microsoft.com/.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbAccessSearch kbAccess97 kbAccess97Search
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

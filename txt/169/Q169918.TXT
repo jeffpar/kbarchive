@@ -1,0 +1,81 @@
+DOCUMENT:Q169918  17-APR-1999  [exchange]
+TITLE   :XCON:Event 2152 May Occur During MTA Startup
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When starting the Microsoft Exchange Server Message Transfer Agent (MTA), the
+following error message may be displayed:
+
+   Could not start the Microsoft Exchange Message Transfer
+   Agent service on \\servername. Error 2140: An internal
+   Windows NT error occurred.
+
+Also, the following event may be logged in the Application Event Log:
+
+   Event ID: 2152
+   Source: MSExchangeMTA
+   Category: Field Engineering
+   A fatal database error occurred, the database recovery
+   operation was not successful and manual correction will
+   be required. Details can be found in the file:
+   D:\EXCHSRVR\mtadata\.\MTACHECK.OUT\MTACHECK.LOG. Please
+   contact Microsoft Product Support Services.
+   [DB Server MAIN BASE 1 0] (16)
+
+CAUSE
+=====
+
+The MTA is attempting to perform an online MTACHECK during startup, and an
+existing Mtacheck.log file located in the \Exchsrvr\Mtadata\Mtacheck.out
+directory may be corrupt. Additionally, the MTA may fail to start if the
+Mtacheck.log file is marked as read-only. This flag should never be set by the
+MTA itself.
+
+RESOLUTION
+==========
+
+Either move or delete the Mtacheck.log file from the specified directory or
+remove the read-only attribute of the file.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with Microsoft Exchange Server
+version 5.5. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

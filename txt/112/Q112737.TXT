@@ -1,0 +1,64 @@
+DOCUMENT:Q112737  18-NOV-1999  [accother]
+TITLE   :NET START SERVER Err Msg: Cannot Share (Error 2119)
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:MS-DOS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you type "net start server" (without the quotation marks) at the MS-DOS
+command prompt, you may receive the following messages if you have created four
+or more shares:
+
+ - Cannot Share (ERROR 2119)
+
+ - Insufficient Memory to perform this operation
+
+CAUSE
+=====
+
+The maximum number of shares the MS-DOS peer server can support by default is
+three.
+
+WORKAROUND
+==========
+
+To work around this problem, add the MaxShares= entry to the [network] section
+of the SYSTEM.INI file to increase the maximum number of supported shares.
+
+For example:
+
+      [network]
+      MaxShares=10
+
+Additional query words: wgao 3.11 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : MS-DOS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

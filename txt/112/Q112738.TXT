@@ -1,0 +1,53 @@
+DOCUMENT:Q112738  24-OCT-1999  [win3x]
+TITLE   :After Logging Off Shared Installation of WFWG, GP Faults Occur
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running a shared network installation of Windows for Workgroups from
+a Windows NT or Windows for Workgroups server and you log off from the network
+(either through Control Panel or by running LOGONOFF.EXE), you receive a series
+of general protection (GP) faults. As a result, Windows for Workgroups stops
+responding (hangs). This problem does not occur if you are running a shared
+network installation of Windows for Workgroups from a Novell server.
+
+CAUSE
+=====
+
+Windows for Workgroups encounters these problems because logging off closes the
+redirector; as a result, you no longer have access to the network and the files
+required to run Windows for Workgroups.
+
+Additional query words: 3.11 logoff loggingoff setup /n wfwnet.drv
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,51 @@
+DOCUMENT:Q77988  04-DEC-1999  [homemm]
+TITLE   :Setup Disables OK Button If Directory Name Has Extension
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1991 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Setup program for Bookshelf for Windows will disable the OK button four
+characters after the backslash following a directory name containing an
+extension. The following install path will cause this problem:
+
+   c:\mswork.dir\subdir
+
+Once four more characters are typed after ".dir\" (without the quotation marks)
+in this example, the OK button will be unavailable (dimmed). The only solution
+to this problem is to enter a path, which does not exceed four characters, after
+a directory name with an extension, or to enter a path that does not contain
+directory names with extensions.
+
+Additional query words: Viewer 1.0 grayed greyed Usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991
+Version           : :1991 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

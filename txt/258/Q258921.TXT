@@ -1,0 +1,58 @@
+DOCUMENT:Q258921  16-APR-2000  [exchange]
+TITLE   :XADM: ILS Servername and ILS Username Attributes in Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use the Exchange Server Administrator program to open the properties of
+an Exchange Server mailbox, the ILS server name and ILS user name attributes are
+displayed on Advanced tab of the individual mailboxes. These additional
+properties are similar to the City or Phone attributes that are displayed on the
+General tab of the mailbox. The ILS server name and ILS user name attributes are
+only informational; you cannot use them to log on to an Internet List Service
+(ILS) directory, such as those in Microsoft Site Server or Microsoft NetMeeting.
+
+MORE INFORMATION
+================
+
+To query these additional attributes, either use Lightweight Directory Access
+Protocol (LDAP) calls in code or use a utility such as Ldp.exe, which is
+included on the Microsoft Windows 2000 Resource Kit CD-ROM.
+
+ILS directories, such as those in NetMeeting, cannot be dynamically populated by
+specifying these additional fields.
+
+Additional query words: User
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,77 @@
+DOCUMENT:Q180906  25-MAR-2002  [win95x]
+TITLE   :Dial-Up Networking Cannot Dial Local Area Code
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbtool osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install TAPI (Telephony Application Programming Interface) 2.1 and
+configure a Dial-Up Networking connection to use the local area code when you
+dial a phone number, the 10-digit phone number to be dialed may be changed to
+contain random or unintelligible characters.
+
+CAUSE
+=====
+
+This behavior occurs because the Tapi32.dll file that is installed with the TAPI
+2.1 software cannot correctly handle the 10-digit local area code and phone
+number.
+
+RESOLUTION
+==========
+
+
+To work around this issue, follow these steps:
+
+1. Double-click the Dial-Up Networking connection you want to use, and then
+   click Dial Properties.
+
+2. Type "000" (without the quotation marks) in the Area Code box, and then click
+   OK.
+
+When you type "000" (without the quotation marks) in the Area Code box, the
+correct local area code is dialed, but the number to be dialed does not contain
+any invalid characters.
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+
+Additional query words: string corrupt
+
+======================================================================
+Keywords          : kbtool osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

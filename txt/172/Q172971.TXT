@@ -1,0 +1,64 @@
+DOCUMENT:Q172971  09-JAN-2000  [exchange]
+TITLE   :XCLN: Changing the Binding Order Of the Macintosh Client
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can change the binding order of the Microsoft Exchange client for Macintosh
+by editing the Exchange Preference file.
+
+MORE INFORMATION
+================
+
+The Exchange Preference file is located in System Folder/Extensions. Copy the
+file for safekeeping by using the Command-D keystroke combination.
+
+WARNING: Using ResEdit incorrectly can cause serious problems that may require
+you to reinstall Microsoft Exchange Client for the Macintosh. Microsoft cannot
+guarantee that problems resulting from the incorrect use of ResEdit can be
+solved. Use ResEdit at your own risk. Make a backup of your file before
+attempting to make changes.
+
+Run ResEdit against the file, and open the STR# (Strings) resource. Open String
+ID 130 "Exchange provider." String 2 is the RPC binding order. Cut and paste to
+put NCACN_IP_TCP (TCP/IP) first in the binding order.
+
+This change can often speed connection to the Exchange Server computer in strict
+TCP/IP environments. Also, by removing NCACN_AT_DSP (AppleTalk) you may prevent
+the Macintosh client from ever using AppleTalk for connecting to the Exchange
+Server computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac kbExchange400Mac
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,68 @@
+DOCUMENT:Q166147  18-DEC-1999  [exchange]
+TITLE   :XFOR: Error Adding Connection to Microsoft Mail Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a direct connection to a Microsoft Mail postoffice using the
+Microsoft Exchange Server Microsoft Mail Connector, the following error message
+may be displayed:
+
+   A postoffice with the name already exists on the network. Enter a
+   different name.
+
+CAUSE
+=====
+
+There may be an erroneous postoffice definition in the Microsoft Exchange shadow
+postoffice.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. Map a drive to the Exchange Server shadow postoffice. The shadow postoffice
+   is shared on Exchange Server with the hidden sharename MAILDAT$.
+
+2. Run the Microsoft Mail Administrator program, Admin.exe, against the shadow
+   postoffice and look at the External postoffice definitions. If there is an
+   entry for the postoffice you are attempting to connect to, remove this entry.
+
+You should now be able to add a connection for that postoffice in the Microsoft
+Mail connector.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

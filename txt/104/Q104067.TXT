@@ -1,0 +1,121 @@
+DOCUMENT:Q104067  07-NOV-1999  [pcmail]
+TITLE   :X400: Setting Up the Gateway as an EiconCard Redirector
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.2 of Microsoft Mail Gateway to X.400 allows you to use the TP0/X.25
+transport, the TP4/CLNP transport, or both transports. This article describes
+how to set the TP0/X.25 transport in the EiconCard Redirector mode.
+
+With this configuration, the EiconCard and OSI LAN Gateway software are both
+installed on an EiconCard server computer. The OSI LAN Gateway DOS Workstation
+software is installed on a separate computer that is used to run the X.400
+gateway.
+
+MORE INFORMATION
+================
+
+To use this configuration:
+
+1. On the EiconCard server, install the EiconCard and the OSI LAN Gateway DOS
+   Gateway software.
+
+2. On the Gateway computer, install the EiconCard and the OSI LAN Gateway DOS
+   Workstation software.
+
+3. On the EiconCard server, modify the AUTOEXEC.BAT file to set up the computer
+   as an EiconCard server.
+
+4. On the Gateway computer, modify the AUTOEXEC.BAT file to set up the computer
+   as an EiconCard redirector.
+
+Example 1
+---------
+
+The following example shows parts of the AUTOEXEC.BAT files when the gateway
+computer is an EiconCard redirector. X25serv is the server name, mypassword is
+the server password, x25redir is the redirector name, and four workstation
+sessions are being supported on the redirector computer by the Eicon software.
+
+On the server (the computer with the EiconCard):
+
+   REM Starting LAN Manager
+   NET START ...
+
+   REM Starting X.25
+   NABIOS SRV x25serv mypassword /12
+   ECLOAD
+
+On the redirector (the gateway computer):
+
+   REM Starting LAN Manager
+   NET START ...
+
+   REM Starting X.25
+   NABIOS RDR x25redir /4
+   ECUSE x25serv mypassword
+
+Example 2
+---------
+
+This example shows the AUTOEXEC.BAT files needed for the gateway on a Novell
+NetWare network. Again, four workstation sessions are being supported on the
+redirector computer by the Eicon software. Microsoft MS-DOS version 5.0 is
+installed.
+
+On the server (the computer with the EiconCard):
+
+   REM Starting Novell with NetBIOS emulation
+   IPX
+   NET5
+   NETBIOS
+
+   REM Starting X.25
+   NABIOS SRV x25serv mypassword /12
+   ECLOAD
+
+On the redirector (the X.400 gateway computer):
+
+   REM Starting Novell with NetBIOS emulation
+   IPX
+   NET5
+   NETBIOS
+
+   REM Starting X.25
+   NABIOS RDR x25redir /4
+   ECUSE x25serv mypassword
+
+Additional query words: 3.20 PC
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

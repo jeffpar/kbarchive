@@ -1,0 +1,63 @@
+DOCUMENT:Q168085  04-JAN-2000  [odbc]
+TITLE   :BUG: Single-Line Comments May Give "Wrong Number of Parameters"
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.65
+OPER/SYS:
+KEYWORDS:kbinterop kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for SQL Server, version 2.65 
+-------------------------------------------------------------------------------
+
+BUG #: 16859 (sqlbug_65)
+
+SYMPTOMS
+========
+
+When SQL statements containing single-line ("-" styled) comments embedded with
+question marks are passed to the Microsoft ODBC SQL Server driver, the error
+message
+
+   [Microsoft][ODBC SQL Server Driver]Wrong number of parameters
+
+may be returned.
+
+WORKAROUND
+==========
+
+Use the multiple-line comment style (/* */) in place of the single-line comment
+style (--), or remove the question marks from the comments.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft ODBC SQL Server
+Driver version 2.65. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: hyphen dash
+
+======================================================================
+Keywords          : kbinterop kbprogramming 
+Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbODBCSQLServ265
+Version           : WINDOWS:2.65
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,58 @@
+DOCUMENT:Q164174  15-DEC-2000  [crossnet]
+TITLE   :NET0133 Error When Loading TINYRFC
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:2.2, 3.0,WFWG:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LAN Manager, version 2.2c 
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you load TINYRFC (which is part of the TCP/IP 1.0 stack for MS-DOS
+clients), you may get the following error:
+
+   NET0133: Badly Formed IP Address
+
+CAUSE
+=====
+
+This error is caused by a corrupt LMHOSTS file.
+
+RESOLUTION
+==========
+
+To resolve this problem, create a new LMHOSTS file or strip the corrupt entries
+out of the original LMHOSTS file. Quite often, the corruption can be stripped
+from the LMHOSTS file by simply deleting the End Of File (EOF) marker.
+
+Additional query words: networking
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbLanManSearch kbWFWSearch kbNetworkClientSearch kbWFW311 kbLanMan220c kbNetworkClient300DOS
+Version           : 2.2, 3.0,WFWG:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

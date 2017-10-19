@@ -1,0 +1,71 @@
+DOCUMENT:Q258998  11-APR-2000  [foxpro]
+TITLE   :PRB: DateTime Subtraction May Not Produce an Exact Integer
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp500 kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When subtracting two DateTimes, the result is a floating point number. As such,
+the displayed value may not be the exact value. This may lead to further
+inaccuracies.
+
+CAUSE
+=====
+
+Floating point math is frequently inaccurate in any language.
+
+RESOLUTION
+==========
+
+When subtracting DateTimes, use ROUND(nDifference, 0) to ensure that you are
+working with the value you think you are.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To observe the problem, run the following code in the Command window:
+
+   lnDiff = {^2000-03-20 11:31:00} - {^2000-03-20 10:25:00}
+   ? lnDiff                      && 3960
+   DISPLAY MEMORY LIKE lnDiff    && 3959.99996513
+   ? INT(lnDiff)                 && 3960
+   ? INT(lnDiff / 60)            && 65
+   ? INT(ROUND(lnDiff, 0) / 60)  && 66
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp500 kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

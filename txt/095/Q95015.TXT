@@ -1,0 +1,60 @@
+DOCUMENT:Q95015  10-NOV-1999  [pcmail]
+TITLE   :PROFS: Err Msg: Error Downloading the File...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::2.1b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 2.1b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While transferring messages between the LAN and VM host environments, the system
+displays the following error message:
+
+   Error in downloading the file xxx Lines downloaded instead of yyy
+
+This error message signals that the VMGATE program's check of the downloaded file
+size was inconsistent with the file size it had when it was located on the VM
+host.
+
+CAUSE
+=====
+
+This is caused by a set of bad file transfer executables (SEND.EXE and
+RECEIVE.EXE) from the emulator manufacturer.
+
+RESOLUTION
+==========
+
+For assistance in acquiring corrected versions of the transfer executables,
+check with the manufacturer of the emulator.
+
+Additional query words: 2.10b Emulator DCA Send Receive Downloading ErrMsg
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS210b
+Version           : :2.1b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

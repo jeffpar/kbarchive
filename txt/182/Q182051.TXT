@@ -1,0 +1,104 @@
+DOCUMENT:Q182051  03-APR-1999  [exchange]
+TITLE   :XADM: Cannot Move E-form Message From Public Folder to Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you try to move or copy a message created with a custom E-form from a public
+folder to a folder in your mailbox or a PST file, you may encounter the
+following error message in the Exchange Client:
+
+   An item could not be copied. There is not enough memory available to
+   perform the operation.
+
+
+If you perform the same operation in the Outlook Client, you will receive the
+following error message:
+
+   Can't copy the items. Could not make another copy of the item. The
+   original was either moved or deleted, or access was denied.
+
+As a result of this error, the E-form message that you are trying to move or copy
+is not copied or moved to the destination.
+
+CAUSE
+=====
+
+The E-form message contains fields that can be multi-propertied. One or more of
+these properties is null, which causes the error when you try to move or copy it
+to another location.
+
+WORKAROUND
+==========
+
+To work around this issue, use version 1461.3 of Store.exe and the following
+associated supporting files for Exchange Server 5.0:
+
+   Store.exe 1461.3 (or use 5.0 SP3)
+   MDBMSG 1461.3 (or use 5.0 SP3)
+   Gapi32.dll 1460.8 (or use 5.0 SP3)
+
+or use version 2138.0 for Exchange Server 5.5.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+This fix has been posted to the following Internet location:
+
+   ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.0/Post-SP2-STORE/
+
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+Additional query words: MSExchangeISPub Personal Folders PUBToPST
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

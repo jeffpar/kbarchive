@@ -1,0 +1,86 @@
+DOCUMENT:Q156755  21-FEB-2002  [iis]
+TITLE   :Unable to Use Standard Program I/O in PERL Script
+PRODUCT :Internet Information Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to use standard programming I/O methods to pass arguments and/or
+data to and from external command or separate PERL Scripts that are spawned from
+a parent script.
+
+CAUSE
+=====
+
+When you spawn a script or external command from a CGI application, it is
+created in a separate process. By default Microsoft Internet Information Server
+(IIS) 2.0 does not create a console and does not support standard I/O
+redirection between processes.
+
+RESOLUTION
+==========
+
+To resolve the problem, edit the registry as described below.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (Regedt32.exe) and locate the following registry subkey
+   in the HKEY_LOCAL_MACHINE subtree:
+
+      \SYSTEM\CurrentControlSet\Services\W3SVC\Parameters
+
+2. Click Add Value on the Edit menu.
+
+3. Type the following:
+
+      Value Name: CreateProcessWithNewConsole
+      Data Type: REG_DWORD
+      DateValue = 1
+
+   NOTE: Creating a new console for each CGI script has serious performance
+   implications and should not be done unless slower performance is acceptable.
+
+
+MORE INFORMATION
+================
+
+For additional information about supported registry parameters, please see the
+Online documentation for IIS 2.0. Go to the product documentation link and
+choose Chapter 10 from the contents page then Service Specific Registry Entries
+with Common Names. Search on CreateProcessWithNewConsole.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbiisSearch kbiis200
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

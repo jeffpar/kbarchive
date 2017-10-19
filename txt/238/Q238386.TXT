@@ -1,0 +1,62 @@
+DOCUMENT:Q238386  26-FEB-2000  [exchange]
+TITLE   :XADM: High Network Use When Generating Address Book View
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you create an Address Book view, you may generate a large amount network
+traffic.
+
+MORE INFORMATION
+================
+
+To generate the Address Book view, Exchange Server sorts the attributes of all
+of the items on the global address list and then replicates these changes
+throughout the organization.
+
+Depending on the amount of items on the global address list, network traffic may
+become exponentially busier. Microsoft recommends that you generate the Address
+Book view at a time when network bandwidth is available, preferably after
+hours.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q229883 HOWTO: Create Address Book View Using ADSI
+
+Additional query words: abv netmon monitor tcp ip msrpc
+
+======================================================================
+Keywords          : exc55 
+Component         : Admin
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

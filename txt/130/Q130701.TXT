@@ -1,0 +1,69 @@
+DOCUMENT:Q130701  07-NOV-1999  [pcmail]
+TITLE   :PC Win: Sending Mail Without Delay with ForceScanInterval=1
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail for Windows mail spooler performs a latency check before
+processing a message. A latency check is done by checking to see if there are
+any other active processes. This latency check is intended to prevent the mail
+spooler background processing from interfering unduly with applications running
+in the foreground.
+
+This feature allow users to send mail and then immediately begin working on other
+tasks.
+
+MORE INFORMATION
+================
+
+For those users who do not require the mail spooler to wait until idle time is
+detected and wish mail messages to be sent immediately, the ForceScanInterval
+entry may be added to the MSMAIL.INI file located in the [Microsoft Mail]
+section.
+
+For the immediate sending of mail, the following entry should be added:
+
+   ForceScanInterval=1
+
+With ForceScanInterval set to the value 1, the mail spooler will demand
+processing time after 1 second has passed. This is contrary to waiting longer
+periods to detect idle time.
+
+The default value for ForceScanInterval is 5 minutes.
+
+NOTE: All users with this option set will experience moments of computer non
+responsiveness as the mail spooler immediately processes every message sent.
+
+Additional query words: 3.00 3.20 Q86100 ForceScanInterval send mail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

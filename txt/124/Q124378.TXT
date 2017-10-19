@@ -1,0 +1,85 @@
+DOCUMENT:Q124378  08-AUG-2001  [winnt]
+TITLE   :Setup Err Msg: Setup Error 4: Could Not Load <Filename>
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message appears during the character-based portion of
+Windows NT Setup:
+
+   Setup Error 4: Could not load <filename>
+
+CAUSE
+=====
+
+This error message appears when:
+
+ - One or more files on the source media (compact disc or floppy disk) are
+   corrupt.
+
+   -or-
+
+ - One or more files in the temporary directory created by Setup are corrupt
+   (usually due to a copy error).
+
+RESOLUTION
+==========
+
+FAT Partition
+-------------
+
+If the temporary Setup directory is on a file allocation table (FAT) formatted
+partition, exit Setup and re-copy the file specified in the error message from
+the source media to the temporary Setup directory.
+
+NOTE: Even if the file on the source media is compressed, copy it to the Setup
+directory in compressed form; do not expand it.
+
+NTFS Partition
+--------------
+
+If the temporary Setup directory is on an Windows NT file system (NTFS)
+partition, you may have to run Setup process again. If you have a previous
+version of Windows NT on your system that is bootable, start it and re-copy the
+file from the source media to the Setup directory, or run WINNT32 again to
+re-copy all the files.
+
+If your previous version of Windows NT does not start, run Setup from the Windows
+NT 3.5 CD or from the Setup floppy disks.
+
+If the error persists after you replace the corrupt files in the temporary
+directory, the source media is probably corrupt, and needs to be replaced.
+
+Additional query words: prodnt krnlmp.exe winnt winnt32
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

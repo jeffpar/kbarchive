@@ -1,0 +1,65 @@
+DOCUMENT:Q153493  04-MAY-2001  [ssafe]
+TITLE   :HOWTO: Perform a RollBack Without Losing History
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+ - Microsoft SourceSafe for Windows, version 3.1 
+ - Microsoft SourceSafe for Macintosh, version 3.1 
+ - Microsoft SourceSafe for MS-DOS, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to return files to a particular version without
+losing the individual file history. If you use the Rollback feature of
+SourceSafe or Visual SourceSafe, you lose the history of the file.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedures
+-----------------------
+
+1. Perform a Get on the version you want to roll back to in the working
+   directory of the project.
+
+2. Highlight the latest version of the file in the Visual SourceSafe Explorer,
+   and hold the SHIFT key down while clicking CheckOut. Select the "Do not get
+   local copy" option. This checks out the files but does not Get them to the
+   working directory.
+
+3. Check in the files that are checked out, and SourceSafe will bring in the
+   older version. The history of the files will remain intact.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310 
+Technology        : kbHWMAC kbOSMAC kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe310 kbSSafe310DOS kbSSafe310Mac kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

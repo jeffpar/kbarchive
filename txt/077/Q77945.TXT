@@ -1,0 +1,79 @@
+DOCUMENT:Q77945  04-MAY-2001  [masm]
+TITLE   :FIX: Alignment in Nested Structures Incorrect in MASM 6
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Macro Assembler (MASM) version 6.0 does not pad aligned nested
+structures correctly. The list file shown below illustrates this problem.
+
+RESOLUTION
+==========
+
+Manually padding the structure definition to force the nested structure to have
+the correct alignment will work around this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+was corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+The following code can be used to demonstrate the problem.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: /c /Fl
+
+   .MODEL small, C
+
+   .DATA
+   struct1 STRUCT 2          ; Alignment value is 2
+       field1 WORD ?           ; Offset is 0
+       field2 BYTE ?           ; Offset is 2
+   struct1 ENDS
+
+   struct2 STRUCT 2          ; Alignment value is 2
+       field3 BYTE ?           ; Offset is 0
+       nested struct1 <?, ?>   ; Offset is 1, should
+   struct2 ENDS              ;   be padded to 2
+
+   END
+
+Additional query words: 6.00 buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

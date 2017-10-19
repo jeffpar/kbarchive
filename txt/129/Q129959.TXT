@@ -1,0 +1,63 @@
+DOCUMENT:Q129959  11-DEC-1999  [homemm]
+TITLE   :Baseball '95: Biography Search Returns to Default Biography
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:win31kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball Guide for Windows, 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to select a biography for a player that doesn't have one, you
+receive the following message:
+
+   A biography for the selected player is not available.
+
+   Complete Baseball contains biographies for major players and personalities in
+   Baseball. To view these biographies, click OK. To return to the selected
+   player's statistics, click Cancel.
+
+If you click OK you return to the default Hank Aaron screen, and the Choose
+Player and Show Players With default biographies selection.
+
+Cancel returns you to the Tommie Aaron statistics screen, rather than the
+selected player's statistics.
+
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem with the Microsoft Complete
+Baseball Guide for Windows, 1995 edition. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: 1.00 1995 mmtitles search engine stats bio
+
+======================================================================
+Keywords          : win31 kbbuglist
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1995
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

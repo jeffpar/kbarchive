@@ -1,0 +1,73 @@
+DOCUMENT:Q282289  06-AUG-2002  [sms]
+TITLE   :SMS: Error Message "Cannot Create Account"  During Site Install
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbsetup kbConfig kbSecurity kbServer kbsms200 kbsms200bug kbUpgrade
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install a Systems Management Server (SMS) version 2.0-based site, you
+may receive an error message that indicates the Setup program had been unable to
+create an SMS account. When you examine the SMSSetup.log file in the root of the
+drive where SMS is being installed, you may observe the following log entry:
+
+   Setup cannot create account SMSServer_ABC in domain <Mydomain>. Contact
+   your network administrator.
+
+CAUSE
+=====
+
+This problem can occur when the password that SMS attempts to create does not
+pass the password complexity requirements that are in use in the domain.
+
+By default, SMS creates accounts with random passwords that are at least 14
+characters long that use a combination of upper and lowercase letters, numbers,
+and special characters.
+
+
+WORKAROUND
+==========
+
+To work around this problem, temporarily disable the password restrictions that
+are configured in the domain, or any third-party password security programs that
+are running in the domain.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbsetup kbConfig kbSecurity kbServer kbsms200 kbsms200bug kbUpgrade 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

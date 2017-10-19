@@ -1,0 +1,64 @@
+DOCUMENT:Q187252  13-MAY-2001  [frontpg]
+TITLE   :FrontPage Editor Removes Spaces From Tables
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdtakbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a table and specify non-breaking spaces using the &nbsp;
+character entity in some of the table cells, FrontPage Editor may remove the
+&nbsp; character entities from your HyperText Markup Language (HTML)
+document.
+
+CAUSE
+=====
+
+FrontPage Editor will not retain the &nbsp; character entities if a table
+cell has an explicit height setting because the &nbsp; would force a minimum
+height for the cell. When parsing the HTML, FrontPage Editor removes any
+&nbsp; character entities it deems extraneous.
+
+RESOLUTION
+==========
+
+Install the FrontPage 98b patch. You can obtain this update from the following
+Microsoft World Wide Web site:
+
+   http://office.microsoft.com/downloads/9798/fp98bupd.aspx
+
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta kbbuglist
+Technology        : kbFrontPageSearch _IKkbZNotKeyword4 kbFrontPage98Search kbZNotKeyword3
+Version           : :
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

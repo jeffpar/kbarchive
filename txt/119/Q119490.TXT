@@ -1,0 +1,102 @@
+DOCUMENT:Q119490  08-AUG-2001  [winnt]
+TITLE   :Checking Crashdump File for Corruption
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT version 3.5 Software Development Kit (SDK) includes a utility
+that you can use with the memory.dmp file to validate the integrity of the file:
+Dumpchk.exe.
+
+MORE INFORMATION
+================
+
+DUMPCHK
+-------
+
+DUMPCHK [options] <CrashDumpFile>
+
+This utility checks the validity of a crash dump file.
+
+   Options
+   -------
+   -?     Displays a Help message.
+   -v     Verbose mode.
+   -p     Print header only, do not validate file.
+   -q     Perform a quick test.
+
+<CrashDumpFile> - The name of the crashdump file.
+
+DUMPEXAM
+--------
+
+DUMPEXAM [options] <CrashDumpFile>
+
+   Options
+   -------
+   -?            Display this message
+   -v            Verbose mode
+   -p            Print header only
+   -f File name] Specify output file name
+   -y Path]      Set the symbol search path
+
+If the crashdump filename is empty the name specified in the registry is used.
+
+If the symbol search path is empty the compact disc is used for symbols.
+
+<CrashDumpFile> - The name of the crashdump file.
+
+DUMPFLOP
+--------
+
+DUMPFLOP [opts]                            - Store default dump thru
+
+                                             Drive A:
+
+DUMPFLOP [opts] <CrashDumpFile> [<Drive>:] - Store crash dump onto
+floppies
+DUMPFLOP [opts] <Drive>: [<CrashDumpFile>] - Assemble crash dump from
+floppies
+
+   Options ([opts])
+   ----------------
+   -? display this message
+   -p only prints crash dump header on assemble operation
+   -v show compression statistics
+   -q formats floppy when necessary during store operation
+      overwrites existing crash dump file during assemble operation
+
+<CrashDumpFile> - The name of the crashdump file.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

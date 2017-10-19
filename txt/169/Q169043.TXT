@@ -1,0 +1,70 @@
+DOCUMENT:Q169043  08-NOV-2001  [mastering]
+TITLE   :Mastering Web Site Development: Large Notes Cause Notebook Hang
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbusage kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Web Site Development, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Mastering Web Site Development, when you paste notes larger than 32k into the
+Notebook, the Notebook may stop functioning.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the program listed at the top of
+this article. Microsoft is researching this problem and will post new
+information here as it becomes available.
+
+WORKAROUND
+==========
+
+If the Notebook stops functioning, use the following steps create a new
+Notebook.
+
+NOTE: This procedure will delete all saved Notebook entries.
+
+1. Close Mastering Web Site Development.
+
+2. Use Windows Explorer to delete the file:
+
+   <name>notebook.lst
+
+   where <name> is your user logon name, or blank if you are not logged
+   into Windows 95.
+
+For more information about deleting files in Windows, see your Windows printed
+documentation or online Help.
+
+Additional query words: multi multi-media mm media 1.00 1.0 corrupt foundation classes hosed invalid notepad frozen hang hangs hanged
+
+======================================================================
+Keywords          : kbusage kbprb 
+Technology        : _IKkbbogus kbMMSearch kbWebSiteDev
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

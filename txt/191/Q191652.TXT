@@ -1,0 +1,60 @@
+DOCUMENT:Q191652  21-MAR-1999  [homegame]
+TITLE   :MCM: Text Missing from Default Button and Random Button
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a single-player event in Microsoft Motocross Madness and select
+the Baja track, the text describing the function of the Default and Random
+buttons on the Event Options screen is missing.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Motocross Madness,
+version 1.0.
+
+MORE INFORMATION
+================
+
+The Default and Random buttons determine the layout and number of checkpoint
+gates on the Baja track.
+
+NOTE: You can select the number of checkpoint gates only if you click the Random
+button.
+
+Additional query words: 1.00 msgame mcm motorcross motorcycle kbfaq
+
+======================================================================
+Keywords          : kbui kbimu msgame kbfaq
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

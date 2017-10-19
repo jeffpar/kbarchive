@@ -1,0 +1,79 @@
+DOCUMENT:Q156510  14-DEC-1999  [foxpro]
+TITLE   :PRB: ComboBox ReadOnly Property Applies Only to Dropdown Combo
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 5.0, the ComboBox control now has a ReadOnly property. The
+ReadOnly property can only be set to .T. if the ComboBox Style property is set
+to 0 - Dropdown Combo--not if the ComboBox Style property is set to 2 - Dropdown
+List. This is documented in the Visual FoxPro 5.0 Help.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The ReadOnly property has been added to the ComboBox control for Visual FoxPro
+5.0. As with other controls (such as TextBox or EditBox), it applies only to the
+region of the control that accepts text input. The ComboBox has such a region
+only if the Style property is set to 0 - Dropdown Combo, so the ReadOnly
+property can be set only to .T. for ComboBoxes of this Style.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type the following in the Command window to create a new form and open it in
+   the Form Designer:
+
+         CREATE FORM combotst
+
+2. In the Form Designer, add a ComboBox to the form.
+
+3. In the Property window, set the Style property for the ComboBox control to "2
+   - Dropdown list."
+
+4. When you try to change the ComboBox ReadOnly property, notice it cannot be
+   changed from .F.
+
+
+NOTE: If the Style property of a combo box with its ReadOnly property set to .T.
+is changed from 0 - Dropdown Combo to 2 - Dropdown List, the ReadOnly property
+changes to .F. This occurs at both design-time and run- time.
+
+Additional query words: kbdse Vfoxwin combo box
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q78718  23-NOV-1999  [msdos]
+TITLE   :Tempus Link Version 3.2 Required with EMM386 and MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Micro Tempus recommends using Tempus Link version 3.2 or later (dated August
+1991 or later) with MS-DOS 5.0 and EMM386.EXE. Using earlier versions with
+EMM386.EXE may cause system hangs, or one of the following error messages:
+
+   Out Of Memory
+
+   -or-
+
+   Divide Overflow
+
+Tempus recommends TLDD.SYS dated 11-11-91 or later for use with the MS-DOS 5.0
+Shell.
+
+Tempus Link software is used to create a virtual disk.
+
+CAUSE
+=====
+
+Tempus Link creates virtual disk space on PS/2 machines in conjunction with a
+3270 mainframe system. The current device driver is TLDD.SYS. MTIN.EXE provides
+the interface with the communications board (for example, IRMA or Attachmate
+applications).
+
+Without the current version of the software, memory conflicts with EMM386.EXE may
+occur.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+REFERENCES
+==========
+
+Micro Tempus: (800) 361-4983
+(514) 397-9512
+
+Additional query words: 3rdparty err msg 5.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

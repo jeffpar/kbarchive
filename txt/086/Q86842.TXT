@@ -1,0 +1,63 @@
+DOCUMENT:Q86842  13-JUN-2001  [schedplus]
+TITLE   :PC WSPlus: Error Printing with Printers Using GENLIB.DLL
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0, used with:
+    - the operating system: Microsoft Windows 3.0 
+ - Microsoft Mail for Windows, version 3.0, used with:
+    - the operating system: Microsoft Windows 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 1.0 of Microsoft Schedule+ for Windows and version 3.0 of Microsoft Mail
+for Windows do not support GENLIB.DLL printers running with Windows version 3.0.
+
+CAUSE
+=====
+
+This problem is caused by the Common Dialog APIs that were added to Windows
+version 3.1 (which Mail and Schedule+ both use). Neither Mail nor Schedule+
+support printer drivers built with the GENLIB.DLL. These are a few of the
+printers that use the GENLIB.DLL:
+
+   Canon BJ -10e
+   Canon Bubble Jet
+   Star Micronics 9 pin
+   Brother 9 and 24 pin
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Windows version 3.1.
+
+Additional query words: 1.00 3.00 3.10 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch
+Version           : WINDOWS:1.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q262093  27-JUL-2001  [exchange]
+TITLE   :XCLN: Messages Forwarded from Inbox Do Not Appear in Sent Items
+PRODUCT :Microsoft Exchange
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup kbConfig ol20setcfght
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 97 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you forward a message from your Inbox to another user, the message may be
+missing from your Sent Items folder.
+
+MORE INFORMATION
+================
+
+If you want e-mail messages to be saved in your Sent Items folder, click to
+select the Save Forwarded Messages check box.
+
+Outlook 2000 and Outlook 98
+---------------------------
+
+1. On the Tools menu, click Options, and then click E-mail Options.
+
+2. Click Advanced E-mail Options, and then click to select the Save Forwarded
+   Messages check box.
+
+Outlook 97
+----------
+
+1. On the Tools menu, click Options, and then click the Send tab.
+
+2. Click to select the Save Forwarded Messages check box.
+
+NOTE: There are no rules or views that can hide the message from your Sent Items
+folder.
+
+Additional query words: Lost store.exe
+
+======================================================================
+Keywords          : kbsetup kbConfig ol20setcfght 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : :; WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

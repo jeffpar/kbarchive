@@ -1,0 +1,79 @@
+DOCUMENT:Q253337  12-NOV-2001  [homegame]
+TITLE   :Allegiance: How to Update the Microsoft Allegiance Software
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbsetup igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Allegiance, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to update the Microsoft Allegiance software.
+
+MORE INFORMATION
+================
+
+Update the Allegiance Software
+------------------------------
+
+When you start Allegiance and connect to Zone.com, Allegiance downloads and
+installs any new software updates automatically.
+
+To update the Allegiance software:
+
+1. Start Allegiance.
+
+2. Click Free Games.
+
+3. Click Games List.
+
+After the installation is finished, Allegiance quits and then automatically
+restarts.
+
+Update the Microsoft Allegiance Server Software
+-----------------------------------------------
+
+To update the Allegiance Server software:
+
+1. Start Allegiance Server.
+
+2. Click Public Game on the Zone Free Games list.
+
+3. Click Create Game.
+
+   If updated files are available, Allegiance Server downloads and installs them
+   automatically.
+
+After the installation is finished, Allegiance Server quits and then
+automatically restarts.
+
+Additional query words: 1.00 msgame msngz igz premier
+
+======================================================================
+Keywords          : kbsetup igz kbimu msgame kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbAllegianceSearch kbAllegiance
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

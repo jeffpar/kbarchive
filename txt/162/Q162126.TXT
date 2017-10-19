@@ -1,0 +1,87 @@
+DOCUMENT:Q162126  08-NOV-2001  [homegame]
+TITLE   :Error: The Picture File Hud004g.shg or Hud004f.shg Is Missing
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+WINDOWS
+kbdisplay kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Deadly Tide for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When clicking the Bioscan or the Ozygen Gauge in the HUD 101: The Aquatic Combat
+Suit's HUD section of the Help file, you will receive one of the following
+errors:
+
+   The picture file "HUD004G.shg" is missing!
+
+   -or-
+
+   The picture file "HUD004F.shg" is missing!
+
+RESOLUTION
+==========
+
+There is no resolution to this problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Deadly Tide for Windows, version
+1.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Deadly Tide.
+
+2. Click the Help button at the Startup screen.
+
+3. Click HUD 101.
+
+4. Click The Aquatic Combat Suit's HUD.
+
+5. Click the graphic above the words Click To Enlarge.
+
+6. Click on the Bioscan or the Oxygen Gauge. The Oxygen is along the lower-left
+   side of the screen. The Bioscan is directly above the Oxygen Gauge.
+
+You will receive one of the errors listed at the top of this article.
+
+Additional query words: 1.00 Deadly Tide err bioscan oxygen gauge graphic gone
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbDeadlyTide
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

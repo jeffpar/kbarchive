@@ -1,0 +1,70 @@
+DOCUMENT:Q135335  25-AUG-1999  [automap]
+TITLE   :Streets 4.0: Road Names Do Not Appear on Map
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Map View is Zoomed In to reveal individual street locations, Road Names
+cannot be viewed. This is because the text lettering is white and the background
+is white.
+
+CAUSE
+=====
+
+On the Map tab, when you select Black as the Colored background, Road Names turn
+white. When you remove the Colored background, the white Road Names cannot be
+viewed because the background color is also white.
+
+
+RESOLUTION
+==========
+
+On the Map tab, located on the Map Display Options menu, change the Colored
+background option from black to white.
+
+Road names now display in black on a white background.
+
+MORE INFORMATION
+================
+
+Other colors affect the Road Name functionality. The loss of Road Names depend
+upon the color selected. If the Road Name disappears, use the resolution
+provided.
+
+Microsoft has confirmed this to be a problem in Automap Streets version 4.0 for
+Windows. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: backgrounds auto auto-map automap reference
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,51 @@
+DOCUMENT:Q74682  17-DEC-2000  [msdos]
+TITLE   :MS-DOS Shell Will Not Save Temporary Files to Floppy Disk
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When task swapping within MS-DOS version 5.0 and later Shell, dynamically
+created temporary files cannot be stored on a floppy drive. Even if the
+temporary environment variable is pointing to a floppy drive, Shell overrides
+the variable and creates any temporary files on the hard drive.
+
+If executing commands from the command prompt, such as the TYPE and PIPE
+commands, MS-DOS will store temporary files on the floppy disk.
+
+MS-DOS Shell recognizes a RAM drive for storing temporary files during task
+swapping.
+
+
+Additional query words: 5.00 5.00a 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

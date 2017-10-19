@@ -1,0 +1,111 @@
+DOCUMENT:Q280341  08-MAY-2002  [iis]
+TITLE   :Non-Parsed Headers Stipped From CGI Apps with nph- Prefix
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbDSupport kbWinNT400PreSP7Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a CGI application that is designed to return non-parsed headers has an "nph-"
+prefix in the application name, the headers are stripped and not sent to client.
+This problem occurs after you apply Microsoft Windows NT Service Pack 6 (SP6),
+or later, hot fixes for Internet Information Server (IIS).
+
+CAUSE
+=====
+
+This is a regression to another fix that was created to handle headers when you
+use CGI output in an .stm or .shtml page. By using the #EXEC CGI directive in an
+.stm page, you can execute a CGI application and have the contents merged with
+the rest of the .stm page. To facilitate this correctly, a fix was created that
+strips the headers from CGI applications. This corrected the SSINC scenario, but
+caused stand-alone "nph-" CGI applications not to send any headers to the
+client.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        Time          Version     Size        File name     Platform
+   ------------------------------------------------------------------------
+
+   1/10/2001   1:20:53 P.M.  4.2.755.1   214,544 KB  Adsiis.dll     x86
+   1/10/2001   1:21:13 P.M.  4.2.755.1   330,672 KB  Asp.dll        x86
+   1/10/2001   1:20:18 P.M.  4.2.755.1   55,904 KB   Httpodbc.dll   x86
+   1/10/2001   1:20:54 P.M.  4.2.755.1   98,912 KB   Iischema.dll   x86
+   1/10/2001   1:19:30 P.M.  4.2.755.1   185,792 KB  Infocomm.dll   x86
+   1/10/2001   1:20:25 P.M.  4.2.755.1   38,256 KB   Ssinc.dll      x86
+   1/10/2001   1:20:33 P.M.  4.2.755.1   25,360 KB   Sspifilt.dll   x86
+   1/10/2001   1:20:12 P.M.  4.2.755.1   229,008 KB  W3svc.dll      x86
+
+   1/10/2001   1:23:23 P.M.  4.2.755.1   307,984 KB  Adsiis.dll     alpha
+   1/10/2001   1:23:45 P.M.  4.2.755.1   553,232 KB  Asp.dll        alpha
+   1/10/2001   1:22:51 P.M.  4.2.755.1   89,872 KB   Httpodbc.dll   alpha
+   1/10/2001   1:23:27 P.M.  4.2.755.1   107,280 KB  Iischema.dll   alpha
+   1/10/2001   1:12:03 P.M.  4.2.755.1   305,424 KB  Infocomm.dll   alpha
+   1/10/2001   1:22:57 P.M.  4.2.755.1   60,688 KB   Ssinc.dll      alpha
+   1/10/2001   1:23:04 P.M.  4.2.755.1   39,696 KB   Sspifilt.dll   alpha
+   1/10/2001   1:22:45 P.M.  4.2.755.1   384,272 KB  W3svc.dll      alpha
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+4.0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbWinNT400PreSP7Fix 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

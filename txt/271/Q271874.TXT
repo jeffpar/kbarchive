@@ -1,0 +1,93 @@
+DOCUMENT:Q271874  03-MAY-2001  [visualc]
+TITLE   :Global Optimizations Generate Incorrect Code When Using unions
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCodeGen kbCompiler kbVC600 kbVC600bug kbDSupport kbGrpDSVCCompiler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a union value is modified by one member variable in a loop, but read by
+another variable in the same loop, global optimizer incorrectly moves the
+modification operation to outside the loop, which results in incorrect code
+generation.
+
+Please refer to the sample code in the "More Information" section for details.
+
+RESOLUTION
+==========
+
+To work around the bug, turn off global optimization by using #pragma optimize.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the bug:
+
+   // Test.cpp
+   // Compiler option needed: /Og
+
+   #include <windows.h>
+   #include <stdio.h>
+   //#pragma optimize("g",off) //Uncomment this line to work around the problem.
+   int  main()
+   {
+   	LARGE_INTEGER data; // union
+   	data.HighPart = 0;
+   	data.LowPart = 0;
+   	int count = 4;
+
+   	for (int k = 0; k < count; k++, data.LowPart++)
+   		printf("%I64d\t", data.QuadPart);
+   	return 0;
+   }
+
+Output:
+0 0 0 0
+Correct Output:
+0 1 2 3
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCodeGen kbCompiler kbVC600 kbVC600bug kbDSupport kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,58 @@
+DOCUMENT:Q63951  31-OCT-1999  [utilities]
+TITLE   :DOCERR: PWB Option /DP Is Documented But Not Implemented
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0; OS/2:1.0
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, version 1.0 
+ - Microsoft Programmer's Workbench for OS/2, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The /DP switch for the Programmer's WorkBench (PWB), documented on Page 49 of
+the Microsoft C version 6.0 "Microsoft C Reference," is not implemented in
+version 1.0 of PWB. This switch is designed to ignore the most recent program
+list upon starting PWB.
+
+The /DP switch is mentioned only in the "Microsoft C Reference" and not in the
+online help.
+
+MORE INFORMATION
+================
+
+Upon invocation, the Programmer's WorkBench version 1.0 does not automatically
+set the program list to the last program list used. Therefore, the /DP
+command-line switch was not implemented because it would have no purpose.
+
+With the PWB version 1.0, there is no way to have the last program list set
+automatically at startup. This functionality was added with PWB version 1.1.
+
+Additional query words: 1.00 docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB100OS2
+Version           : MS-DOS:1.0; OS/2:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

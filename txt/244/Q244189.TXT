@@ -1,0 +1,99 @@
+DOCUMENT:Q244189  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 2000: List of New Features
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui fsim kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the new features included in Microsoft Flight Simulator 2000
+and Microsoft Flight Simulator 2000 Professional Edition.
+
+NOTE: The Professional version of Flight Simulator 2000 is geared toward Flight
+Simulator enthusiasts, real pilots, those who want more features and more
+content, and those who are interested in using Flight Simulator 2000 as a
+PC-based flight training and proficiency aid.
+
+MORE INFORMATION
+================
+
+New Features in Flight Simulator 2000
+-------------------------------------
+
+ - New 16-bit color 3D scenery graphics system with improved textures and
+   seasonal effects.
+
+ - New Aircrafts include Mach 2 Concorde and the Boeing 777-300.
+
+ - More than 20,000 airports worldwide.
+
+ - New cities and 3D objects. Includes six new and improved cities in high
+   detail.
+
+ - Updated and improved weather including real-world weather that can be
+   downloaded from the Internet.
+
+ - New Global Positioning System Navigation.
+
+ - More lessons and Adventures.
+
+New Features in Flight Simulator 2000 Professional
+--------------------------------------------------
+
+Flight Simulator 2000 Professional Edition includes all the features of Flight
+Simulator 2000, as well as the additional features listed below.
+
+ - Two additional aircraft: the Mooney Bravo and the Raytheon (Beechcraft) King
+   Air 350.
+
+ - Six additional detailed cities: Boston, Washington, DC, Seattle, Berlin,
+   Tokyo, and Rome.
+
+ - Two high-resolution, extra-large IFR (Instrument Flight Rules)
+   training/proficiency instrument panels.
+
+ - Flight Dynamics Editor.
+
+ - Instrument Panel Editor.
+
+ - Expanded printed manual.
+
+ - Samples of and a discount on a CD-ROM training package from Cessna.
+
+ - Discount on FlightSafety International add-on products.
+
+ - Discount on flight training videos from King Schools.
+
+Additional query words: fsim2k fsim2000 flightsim improvements additions
+
+======================================================================
+Keywords          : kbui fsim kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

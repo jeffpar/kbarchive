@@ -1,0 +1,71 @@
+DOCUMENT:Q164297  09-AUG-2001  [winnt]
+TITLE   :Event 26 Installing IntelliPoint 2.0 in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Microsoft IntelliPoint version 2.0 software in Windows NT
+4.0, the event log may show the following error message
+
+   <msfile> Event ID 26 - "The description for Event ID (26) in Source
+   (<msfile>) could not be found. It contains the following insertions
+   string(s):"
+
+where <msfile> is Msbusmou, Mssermou, or Msinport.
+
+CAUSE
+=====
+
+The IntelliPoint software installs these devices and sets them to System
+startup. When Windows NT does not find these devices, it logs an event 26 and
+unload the drivers from memory.
+
+RESOLUTION
+==========
+
+To disable these devices, follow these steps:
+
+1. In Control Panel, double-click Devices.
+
+2. Click the device mentioned in the event log.
+
+3. Click Startup.
+
+4. Set the Startup Type to Disabled, and then click OK.
+
+5. Close Control Panel and then restart the computer.
+
+Additional query words: prodnt mouse
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

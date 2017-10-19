@@ -1,0 +1,156 @@
+DOCUMENT:Q296185  15-AUG-2002  [iis]
+TITLE   :Patch Available for New Variant of "Malformed Hit-Highlighting"
+PRODUCT :Internet Information Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVulnerabili
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+ - Indexing Service 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A new variant of the Malformed Hit-Highlighting vulnerability
+(http://www.microsoft.com/technet/security/bulletin/MS00-006.asp) has been
+discovered that affects both Index Server 2.0 and Indexing Service in Microsoft
+Windows 2000. The new variant has exactly the same scope as the original
+vulnerability. If an attacker provides an invalid search request, he or she can
+read files that reside on the Web server. The new patch eliminates all known
+variants of the vulnerability.
+
+Mitigating Factors:
+
+ - The vulnerability would only allow files to be read. File cannot be added,
+   changed, or deleted through this vulnerability.
+
+ - Server-side files should not contain sensitive data. If you follow this
+   recommendation, there would be no sensitive data to compromise through this
+   vulnerability.
+
+ - The vulnerability would only allow files that reside on the Web server (and
+   in the same logical drive as the server's root directory) to be read. It
+   would not allow files elsewhere on the server, or files that reside on a
+   remote server, to be read.
+
+RESOLUTION
+==========
+
+Indexing Service
+----------------
+
+This problem was first corrected in Windows 2000 Service Pack 3. The English
+version of this fix should have the following file attributes or later:
+
+   Date        Time    Version        Size    File name
+   ------------------------------------------------------
+   04/12/2001  03:40p  5.0.2195.3498  42,768  Webhits.dll
+
+
+Index Server 2.0
+----------------
+
+Windows NT 4.0:
+
+To resolve this problem, obtain the individual package referenced below or obtain
+the Windows NT 4.0 Security Rollup Package. For additional information on the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Q296185i.exe now
+   (http://www.microsoft.com/ntserver/nts/downloads/critical/q296185/default.asp)
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        Time    Version     Size    File name
+   ---------------------------------------------------
+   04/12/2001  03:51p  5.0.1781.3  42,256  Webhits.dll
+
+NOTE: Due to file dependencies, this hotfix requires Microsoft Windows NT 4.0
+Service Pack 3 or later.
+
+
+
+Windows NT Server version 4.0, Terminal Server Edition:
+
+To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP). For additional information about the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+   Package
+
+STATUS
+======
+
+Microsoft has confirmed that this problem may cause a degree of security
+vulnerability in Indexing Service in Windows 2000 and Index Server 2.0. This
+problem was first corrected in Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+For additional information about how to obtain a hotfix for Windows 2000
+Datacenter Server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q265173 The Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information about how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+For more information about this vulnerability, see the following Microsoft Web
+site:
+
+   http://www.microsoft.com/technet/security/bulletin/MS01-025.asp
+
+Additional query words: security_patch kbWin2000srp1
+
+======================================================================
+Keywords          : kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVulnerability KbSECHack kbWin2000sp3fix 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ200
+Version           : :2.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

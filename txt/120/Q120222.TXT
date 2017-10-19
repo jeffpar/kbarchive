@@ -1,0 +1,70 @@
+DOCUMENT:Q120222  08-AUG-2001  [win95x]
+TITLE   :Plus Sign Appears in Windows Explorer but Not in File Manager
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95 4.00
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ - When you run Windows Explorer, you see a plus sign (+) before each folder or
+   tree.
+
+ - When you run File Manager, you do not see the plus or minus signs (+ or -)
+   before each folder or directory.
+
+CAUSE
+=====
+
+ - In Windows Explorer, the plus sign appears before network directories and
+   floppy disk drives for performance reasons. Ghosted connections are used for
+   network directories; therefore, the plus sign appears until the directory is
+   accessed. Floppy drives display a plus sign because it is time consuming to
+   poll floppy drives until you want to access them.
+
+ - In Windows 3.x and Windows for Workgroups 3.x, the plus and minus signs are
+   enabled by default for File Manager. In Windows 95, they are disabled by
+   default.
+
+RESOLUTION
+==========
+
+ - If you click the plus sign, it disappears if there are no subdirectories. If
+   there are subdirectories, clicking the plus sign makes the subdirectories
+   visible.
+
+ - On the Tree menu in File Manager, click Indicate Expandable Branches to view
+   the plus and minus signs in File Manager.
+
+Additional query words: expand
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 95 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

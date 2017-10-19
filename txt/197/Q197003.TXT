@@ -1,0 +1,87 @@
+DOCUMENT:Q197003  03-SEP-1999  [iis]
+TITLE   :ASP Cached Data for One Site Used in Multiple Sites
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When ASP data is being cached from one Web site, the cached data is erroneously
+used in another Web site that has the same virtual directory and physical
+directory.
+
+CAUSE
+=====
+
+ASP does not cache files based on Web site instance.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+The latest service pack is also available at the following Internet location:
+
+   http://www.microsoft.com/windows/servicepacks/
+
+WORKAROUND
+==========
+
+To work around this problem, run the shared virtual directory out of process for
+all the Web Sites.
+
+This can be done using the following steps for each Web Site:
+
+1. Right-click on the virtual directory and select Properties.
+
+2. Select the Home Directory Property Page.
+
+3. Check Run in Separate Memory Space (isolated process).
+
+4. Stop and the restart the Web Sites.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+version 4.0. This problem was first corrected in Windows NT 4.0 Service Pack 5.
+
+
+Additional query words: IIS hotfix hot fix qfe quick engineering patch
+
+======================================================================
+Keywords          : kbWinNT400sp5fix 
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

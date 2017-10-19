@@ -1,0 +1,76 @@
+DOCUMENT:Q133209  29-NOV-1999  [homekids]
+TITLE   :Writer/Artist: Cannot Access Control Room on Macintosh
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press and hold down the COMMAND key and the SHIFT key while you press
+the A key (COMMAND+SHIFT+A) to access the Creative Writer or Fine Artist Control
+Room, either nothing happens, or Spike barks and asks if you want to quit the
+program.
+
+This behavior occurs when you have set your Keyboard Layout to Flemish, French,
+French (numerical) or Italian.
+
+CAUSE
+=====
+
+COMMAND+SHIFT+A only works with the U.S. keyboard layout.
+
+RESOLUTION
+==========
+
+Use the U.S. keyboard layout. To change your keyboard layout, do the following:
+
+1. Save the document you are working on and exit the program.
+
+2. Access the Control Panels on the Apple Menu.
+
+3. Double-click the Keyboard Control Panel.
+
+4. In the Keyboard Layout section, click U.S.
+
+5. Restart Creative Writer or Fine Artist.
+
+MORE INFORMATION
+================
+
+If you are using the Flemish, French or French (numerical) Keyboard Layout, you
+can use another method to access the Control Panel. Make sure the Caps Lock is
+on, then press and hold down the COMMAND and SHIFT keys while you press the Q
+key (COMMAND+SHIFT+Q).
+
+Additional query words: mac kids mskids artist maggie max writer adult splot machine sound printer command shift mczee mode option exit menu bar toggle task switch change 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+Version           : MACINTOSH:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

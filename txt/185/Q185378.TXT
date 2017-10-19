@@ -1,0 +1,62 @@
+DOCUMENT:Q185378  14-JUL-2000  [iis]
+TITLE   :IIS 4.0: FTP "Bounce" Attack and CERT Advisory CA-97.27
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The CERT (http://www.Cert.org) Advisory CA-97.27 warns of an FTP security attack
+called the "Bounce" attack. This involves misuse of the Port command to
+maliciously open a connection to a port on the File Transfer Protocol (FTP)
+server.
+
+The FTP Server service in Microsoft Internet Information Server version 4.0 (IIS)
+is not susceptible to this attack.
+
+MORE INFORMATION
+================
+
+The FTP server in IIS 4.0 disallows third-party data transfers. This is done via
+a modification to the implementation of the Port command. When the FTP server
+receives a Port command, the specified IP address must match the client's source
+IP address for the control channel.
+
+The FTP server in IIS 4.0 also has another level of protection: disallowing the
+Port command from specifying reserved ports (those less than 1024) except Port
+20 (the default data port). By default, any client attempt to issue a Port
+command with (port < 1024 and port != 20) causes the Port command to fail.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

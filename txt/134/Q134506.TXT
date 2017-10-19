@@ -1,0 +1,55 @@
+DOCUMENT:Q134506  17-DEC-2000  [win95x]
+TITLE   :System Hangs Formatting an Unformatted Floppy Disk
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade from an earlier version of Windows to Windows 95, your
+computer may stop responding (hang) when you try to format an unformatted floppy
+disk. If you make any attempt to recover before you restart your computer, the
+operating system may be damaged.
+
+CAUSE
+=====
+
+This problem can occur if you are loading Intel's DMI service layer driver
+(Sl.exe) in the Autoexec.bat file. This driver causes the system to use the
+real-mode mapper and interferes with the drives.
+
+RESOLUTION
+==========
+
+Remove Sl.exe from the Autoexec.bat file and add it to the [SafeList] section of
+the Ios.ini file in the Windows folder, and then restart your computer.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

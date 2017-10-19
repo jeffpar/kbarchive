@@ -1,0 +1,60 @@
+DOCUMENT:Q68755  08-DEC-1999  [win95x]
+TITLE   :Cannot Print from a DOS Application in Enhanced Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If you cannot print from a DOS application in the enhanced mode of Microsoft
+Windows version 3.0, you may have a device contention problem. You can resolve
+this problem by doing the following:
+
+1. From the Main group of Program Manager, choose the Control Panel icon.
+
+2. From Control Panel, choose the 386 enhanced icon.
+
+3. In the Idle section of the Device Contention box, set the seconds down to 2.
+
+MORE INFORMATION
+================
+
+If you are running more than one application in enhanced mode of Windows and one
+of the applications is a DOS application, both applications may need to use the
+same printer or communications device. The Idle section of the 386 enhanced icon
+in Control Panel controls how many seconds should pass before another
+application can use the device.
+
+
+Additional query words: 3.00 win30 windrvr 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

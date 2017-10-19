@@ -1,0 +1,61 @@
+DOCUMENT:Q152749  08-NOV-2001  [homemm]
+TITLE   :Complete Gardening: No Garden Bed Planner Available
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbtool kbui kbdocerr kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Gardening for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Complete Gardening does not include the "Garden Bed Planner" feature
+mentioned in the "Smart Gardening by CD-ROM" article in Microsoft Magazine.
+
+This feature was a preliminary idea for Complete Gardening, but was not developed
+and is not included in the program.
+
+MORE INFORMATION
+================
+
+The June/July 1996 issue of Microsoft Magazine contains an article describing a
+"Garden Bed Planner" feature in Complete Gardening. The following is an excerpt
+from the article:
+
+   By using the Garden Bed Planner, you can be more efficient and make sure
+   you're going to end up with the garden you want by planning the garden
+   onscreen and seeing plants change as they grow and mature from season to
+   season - even before you have planted a single seed.
+
+The article also contains a screen shot of Microsoft Complete Gardening showing
+an option to "Add to Garden Bed Planner".
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm msmag mm
+
+======================================================================
+Keywords          : kbtool kbui kbdocerr kbimu 
+Technology        : kbHomeProdSearch kbZNotKeyword kbCompleteGardening
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

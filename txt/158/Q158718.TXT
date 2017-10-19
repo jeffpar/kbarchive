@@ -1,0 +1,59 @@
+DOCUMENT:Q158718  17-DEC-2000  [win95x]
+TITLE   :Generic Icon Displayed for New Host Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you use DriveSpace to compress a drive other then the drive containing
+Windows 95, a generic document icon may be displayed for the new host drive in
+Windows Explorer, My Computer, and DriveSpace.
+
+CAUSE
+=====
+
+This behavior can occur if you click No when you are prompted to restart the
+computer after compressing the drive.
+
+RESOLUTION
+==========
+
+To resolve this issue, restart the computer.
+
+MORE INFORMATION
+================
+
+Restarting the computer refreshes the registry. Refreshing the registry updates
+the icon for the new host drive. You can also refresh the registry by clicking
+the Start button, clicking Shut Down, and then clicking No.
+
+======================================================================
+Keywords          : kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

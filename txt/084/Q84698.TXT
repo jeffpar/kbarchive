@@ -1,0 +1,77 @@
+DOCUMENT:Q84698  30-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Directory <dir> Does Not Exist...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Trying to rename a file on a floppy disk in Microsoft Windows File Manager may
+result in the following error message:
+
+   
+
+   Directory <dir> does not exist
+    Do you want to create it?
+          YES       NO
+
+CAUSE
+=====
+
+This error message occurs when the disk is write-protected.
+
+RESOLUTION
+==========
+
+To correct this problem, remove the disk from the floppy drive, remove the
+write-protect feature, and reinsert the disk into the drive. The rename
+operation can then be performed successfully.
+
+MORE INFORMATION
+================
+
+The other commands from the File Manager's File menu, such as Copy, Delete,
+Move, and Create Directory, correctly alert you to the possible presence of
+write-protection on the disk.
+
+This problem does not exist in the Microsoft Windows version 3.0 File Manager.
+The following error message results in the Windows 3.0 File Manager if you try
+to rename a file on a write-protected floppy disk:
+
+   
+
+                System Error
+        Write protected disk in drive <x>
+              Cancel     Retry
+
+Additional query words: 3.10 3.11 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

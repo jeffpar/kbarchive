@@ -1,0 +1,137 @@
+DOCUMENT:Q142803  15-MAR-2002  [win95x]
+TITLE   :Locking Error or Computer Hangs Accessing Network Database Files
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg msnets win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A program that accesses a database on a Windows 95 or Microsoft Windows NT
+server (or other SMB server) may exhibit the following behavior:
+
+ - The program appears to stop responding (hang).
+
+ - The program returns an error message stating that it was unable to lock a
+   data file.
+
+CAUSE
+=====
+
+These problems can occur if two programs are running on the same computer and
+they both attempt to access the same database. The problems occur because the
+network redirector routine used for unlocking the file and holding a new pending
+lock does not work correctly in a multithreaded environment.
+
+RESOLUTION
+==========
+
+This issue is resolved by the following updated file for Windows 95:
+
+   Vredir.vxd version 4.00.954 (10/10/95) and later.
+
+To install this update, follow these steps:
+
+1. Download the Vrdrupd.exe file from the online service listed below to an
+   empty folder.
+
+2. In My Computer or Windows Explorer, double-click the Vrdrupd.exe file you
+   downloaded in step 1.
+
+3. Follow the instructions on the screen.
+
+The following file(s) are available for download from the Microsoft Software
+Library:
+
+   ftp://ftp.microsoft.com/softlib/mslfiles/vrdrupd.exe
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+The following files are installed by Vrdrupd.exe:
+
+   File name     Version    Date/Time        Size     Destination folder
+   ---------------------------------------------------------------------
+   Vredir.vxd    4.00.1116  6/2/97  11:16a   156,773  Windows\System
+   Vnetsup.vxd   4.00.1112  5/30/97 11:12a    17,595  Windows\System
+
+
+STATUS
+======
+
+This issue is resolved in Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+For additional information about issues resolved by updates to this component,
+please see the following articles in the Microsoft Knowledge Base:
+
+   Q172594 Cannot Connect to Server with 15 Characters and Period in Name
+
+   Q165402 Windows 95 Update to Encrypt Passwords in Memory
+
+   Q161100 File May Be Truncated When Copied to a Full Network Drive
+
+   Q157114 "Access Denied" Attempting to Run File on LM/X Server
+
+   Q152186 Possible Network Data Corruption If Locking Not Used
+
+   Q148367 Possible Network File Corruption with Redirector Caching
+
+   Q140558 Deleting Files on Samba Servers May Delete Local Files Instead
+
+   Q138249 Updated Vredir.vxd Corrects Errors Running Files on LMX
+
+   Q160807 Cannot Connect to Windows NT Server with Many Shares
+
+   Q150215 Disabling Automatic Network Shortcut Resolution
+
+   Q138014 File May Be Truncated to Zero Bytes When Copied Onto Itself
+
+   Q136834 Error Copying Read-Only Files to Core SMB Server
+
+The following programs are known to exhibit the behavior described in this
+article:
+
+ - Microsoft Access Replication Manager
+
+ - Microsoft Visual Basic for Applications and Microsoft Access front-end
+   programs running simultaneously
+
+ - Microsoft Access and Transporter processes running simultaneously on a
+   Windows 95-based client computer
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg msnets win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,60 @@
+DOCUMENT:Q256914  24-MAR-2000  [exchange]
+TITLE   :XIMS: Error Message: Your Configuration May Not Be Complete
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you close the Internet Mail Service properties, the following error
+message may be displayed:
+
+   Your configuration may not be complete. You will not receive Internet
+   messages unless you configure other SMTP hosts to deliver to this Internet
+   Mail Service.
+
+   You can use Domain Name System (DNS) or Host tables to deliver mail to this
+   Internet Mail Service. For more information, see Microsoft Exchange Server
+   Operations Guide or Getting Started Guide.
+
+CAUSE
+=====
+
+This informational "error message" is only displayed once. It is displayed when
+the Internet Mail Service properties are opened and closed for the first time.
+This error message informs new administrators of general Internet Mail Service
+procedures and resources.
+
+
+Additional query words: ims error
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

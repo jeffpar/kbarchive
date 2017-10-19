@@ -1,0 +1,69 @@
+DOCUMENT:Q101885  19-NOV-1999  [msdos]
+TITLE   :Backup Err Msg: Cannot Read Volume Information from Diskette
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Backup for MS-DOS (MSBACKUP.EXE) fails to restore files to a different
+machine than the one you originally used for backup. Attempting to restore using
+MSBACKUP.EXE may result in one of the following error messages:
+
+ - Cannot read volume information from diskette.
+
+-or-
+
+ - Cannot determine diskette type.
+
+NOTE: These errors can also occur if you run Microsoft Backup from a third- party
+menu program. To work around this problem, exit Microsoft Backup and the menu
+program and then run Microsoft Backup from an MS-DOS command prompt.
+
+WORKAROUND
+==========
+
+To work around this problem, rebuild the catalog file before you proceed with
+the restore operation. The steps to rebuild a catalog file from floppy disks are
+as follows:
+
+1. Run MSBACKUP.EXE and choose the Restore button.
+
+2. From the Catalog menu, choose Rebuild.
+
+3. Select the correct drive letter from which to rebuild and then choose OK.
+
+4. After rebuilding, choose the Load button to load the new file, then continue
+   with Restore.
+
+Additional query words: 6.00 hang hangs errmsg 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

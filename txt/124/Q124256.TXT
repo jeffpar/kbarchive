@@ -1,0 +1,68 @@
+DOCUMENT:Q124256  07-MAY-2002  [homegame]
+TITLE   :README.DOC for Paris Scenery Add-On
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+5.00
+MS-DOS
+kbref
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the README.DOC file contained on disk 1 of the Paris Scenery
+add-on for Flight Simulator 5.0:
+
+               ***************************************
+               MICROSOFT FLIGHT SIMULATOR  Version 5.0
+                         PARIS SCENERY ADD-ON
+                      R E L E A S E    N O T E S
+               ***************************************
+
+Included with this scenery are 5 additional situations that demonstrate
+the Paris scenery - "PARIS - Art Flight", "PARIS - Fly down the Seine",
+"PARIS - La Defense", "PARIS - Night Flight"' and "PARIS - Sacre
+Coeur". To access these situations select them from the Situations
+dialog box by selecting the Options menu and then Situations.
+
+A utility is also shipped with this product- FSSYSTEM.EXE.
+The more expanded memory you have available, the better the Paris
+Scenery will perform.  FSSYSTEM.EXE will create a boot disk with the
+optimum memory configuration for your machine.  See the inside back
+cover of your Microsoft Flight Simulator Pilot's Handbook for more
+information on how to use FSSYSTEM.EXE.
+
+----------------------------------------------------------------------
+
+Additional query words: 1.00 flightsim fltsim dos d_fltsim
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

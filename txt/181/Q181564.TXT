@@ -1,0 +1,57 @@
+DOCUMENT:Q181564  27-AUG-1999  [automap]
+TITLE   :Encarta Virtual Globe Requires Internet Explorer 3.02 or Later
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbmm kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe, 1998 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To run properly, Encarta Virtual Globe requires you to install Microsoft
+Internet Explorer 3.02 or later.
+
+MORE INFORMATION
+================
+
+If Internet Explorer 3.02 or later is not installed on your computer, the
+Encarta Virtual Globe Setup program prompts you to install Internet Explorer
+3.02 from the Encarta Virtual Globe CD-ROM.
+
+Certain features of Encarta Virtual Globe (for example, Web Links) require you to
+connect to the Internet, while other features require technology included in
+Internet Explorer 3.02 or later.
+
+To install Internet Explorer 3.02, remove and then reinstall Encarta Virtual
+Globe. When you are prompted to install Internet Explorer 3.02, do so.
+
+Additional query words: mm media multi multi-media
+
+======================================================================
+Keywords          : kbmm kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe98
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

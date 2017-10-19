@@ -1,0 +1,73 @@
+DOCUMENT:Q122584  08-AUG-2001  [winnt]
+TITLE   :Intel TokenExpress Driver Settings
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.50
+
+WINDOWS
+
+kbnetwork kb3rdparty
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the driver for the Intel TokenExpress 16/4 token ring adapter,
+using the default values results in an error in the Event Viewer stating that
+the necessary resources could not be allocated. Event Viewer shows Event ID
+5001, and the description states:
+
+   OcTk16: Could not allocate the resources necessary for operation.
+
+There is no network connectivity because the card is not being initialized.
+
+CAUSE
+=====
+
+According to Intel, the default settings in the Windows NT driver do not work
+with this network interface card (NIC).
+
+RESOLUTION
+==========
+
+The settings recommended by Intel for this card are:
+
+   RECEIVE BUFFERS :  18
+   TRANSMIT BUFFERS:  12
+   FRAME SIZE :  4K
+
+
+TokenExpress is manufactured by Intel Corporation, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

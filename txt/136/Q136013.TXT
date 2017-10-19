@@ -1,0 +1,76 @@
+DOCUMENT:Q136013  17-DEC-2000  [win95x]
+TITLE   :Minitel Emulation in HyperTerminal
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information about Minitel emulation in Hyper- Terminal.
+
+MORE INFORMATION
+================
+
+Minitel is a service created by France Telecom, the state-owned tele-
+communication company. Minitel is a replacement for telephone books and provides
+Telematique services. Minitel service started in the 1970s and is currently
+available in over 6 million homes in France.
+
+Popular services include connecting to France Telecom, the main phone directory
+of France (also called "Annuaire electronique") by dialing 11, and dialing 3615
+for additional services such as chatting over a "messagerie" (message base),
+participating in a television show, buying theater or concert tickets, on-line
+banking, or buying something "par minitel" (home shopping).
+
+Within France there is a basic service charge, a charge based on the amount of
+information downloaded, and additional rates for special services.
+
+Technical Information
+---------------------
+
+HyperTerminal requires the Arialals.ttf and Arialalt.ttf TrueType font files to
+emulate Minitel. The Arial Alternative font is the only font that contains the
+required graphic characters.
+
+Minitel operates at 1200 bps.
+
+Minitel is a French Videotex terminal that uses RTC to connect to servers.
+XON/XOFF protocol should not be used during Minitel emulation. X.3 PAD
+compatibility is not required for access using the normal Minitel network.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q134401 Windows 95 Resource Kit Readme.txt File
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

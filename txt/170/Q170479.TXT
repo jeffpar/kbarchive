@@ -1,0 +1,66 @@
+DOCUMENT:Q170479  24-JUN-1999  [exchange]
+TITLE   :XCON: GMT Offset Not Calculated By Some Messaging Systems
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When sending a message with a Read Receipt (RR) request from a third-party
+messaging system to Exchange Server, the RR reply may contain the Greenwich Mean
+Time (GMT) and not the correct GMT-offset time.
+
+MORE INFORMATION
+================
+
+When Exchange Server processes a Read Receipt request, it sends the RR reply
+back with the time stamp in the YYMMDDHHMMSSZ format.
+
+The 'Z' at the end signifies GMT. It is then up to the receiving client or MTA to
+add the adjusted offset time to the GMT to allow proper conversion to the local
+time-zone.
+
+If they do not adjust the GMT offset, they will simply display the GMT time
+stamp.
+
+This may also occur with Message Expiration requests or any other type of request
+embedded in the P2 of a message.
+
+Delivery receipt requests usually will not display this behavior because the
+Exchange Server MTA encodes the GMT offset into the P1 when sending the report
+back.
+
+
+This behavior is by product design.
+
+Additional query words: retix ua mta mts time zulu
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

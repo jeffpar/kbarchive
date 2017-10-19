@@ -1,0 +1,56 @@
+DOCUMENT:Q192556  11-DEC-2001  [winnt]
+TITLE   :Side Effect of StickyKeys on Client Hotkeys
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using StickyKeys, you expect to be able to press ALT, then press another
+key and have it act as if you pressed the ALT-key. When using a Terminal Server
+Client, this works fine for keys that are processed by the server. However,
+Hotkeys that are processed by the client (such as ALT-HOME, ALT-PGUP) do not
+work in this way.
+
+For example, you might expect to be able to press ALT, then Home, and have the
+Start Menu appear. However, with StickyKeys on, you may use the normal
+shortcuts, such as CTRL-ESC. In other words, if connected to a Server and it has
+StickyKeys enabled, press CTRL, then ESC to bring up the Start Menu.
+
+MORE INFORMATION
+================
+
+Resolved by design.
+
+Additional query words: stickykeys hotkeys
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

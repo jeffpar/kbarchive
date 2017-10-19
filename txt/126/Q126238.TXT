@@ -1,0 +1,73 @@
+DOCUMENT:Q126238  08-NOV-2001  [homegame]
+TITLE   :Haunted House Icon Changes to Windows Default Icon
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbother kberrmsg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Haunted House for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The icon for Haunted House may change to a default Windows icon.
+
+CAUSE
+=====
+
+This occurs because the working directory and the program file are located on
+your CD-ROM drive.
+
+RESOLUTION
+==========
+
+Change the properties of the Haunted House icon. Choose an icon using the
+Haunted House icon file, located in the directory where you installed the
+program (usually C:\MSKIDS\HHOUSE).
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+While making the change, you may receive the message:
+
+   The working directory is invalid.
+
+Click OK. This message occurs when the Haunted House CD is not in the drive.
+
+You also may receive this message:
+
+   The specified path points to a file that may not be available during later
+   Windows sessions. Do you want to continue?
+
+Click Yes to continue.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword kbKidsSearch kbHauntedHouse
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

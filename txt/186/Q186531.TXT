@@ -1,0 +1,79 @@
+DOCUMENT:Q186531  05-MAR-2002  [winnt]
+TITLE   :Error Message: "Cannot find *.ini. Please Re-run Setup"
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an application on a Terminal Server computer, you receive the
+following error message:
+
+   Cannot find *.ini. Please Re-run Setup.
+
+CAUSE
+=====
+
+Typically, this means that the user does not have a home directory or that the
+application was not installed using the Terminal Server's application
+installation mode.
+
+When an application is installed using the Terminal Server's installation mode,
+the system captures creation of .INI files and registry settings and stores
+them. When a user runs the application for the first time, the .INI file(s) will
+be copied to the user's home directory, and registry settings will be written to
+the user area of the registry.
+
+RESOLUTION
+==========
+
+To install using installation mode, install the application using one of the
+following methods:
+
+ - Add/Remove Programs tool in Control Panel
+
+   -or-
+
+ - Type a "Change User /Install" command at an MS-DOS command prompt.
+
+MORE INFORMATION
+================
+
+If this is not the problem, make sure the user has a home directory.
+
+Home directories are specified in User Manager. Open an existing user's account
+and click the Profile button. The path to the user's home directory can be
+specified in this location, along with paths to profiles and logon scripts.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,81 @@
+DOCUMENT:Q215474  13-APR-2000  [exchange]
+TITLE   :XFOR: Missing SP2 README.RTF from Exchsrvr\Connect\Exchconn
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The readme.rtf file is not found in the expected loacation,
+Exchsrvr\Connect\Exchconn directory after you install the Microsoft connectors
+for SNADS, OfficeVision, or PROFS.
+
+This article explains the cause of this problem and offers a workaround.
+
+CAUSE
+=====
+
+This is the result of a problem in the Setup program introduced after the
+shipping of Web 2.
+
+RESOLUTION
+==========
+
+
+The Readme.rtf file will be available in the next Exchange Service Pack (SP3).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5.
+
+
+MORE INFORMATION
+================
+
+Connector Feature Enhancements
+------------------------------
+
+For information on feature enhancements made to the Microsoft Exchange Connector
+for Lotus Notes, the Microsoft Exchange Connector for SNADS, and Microsoft
+Exchange Connector for IBM OfficeVision/VM (PROFS), see the Readme.rtf file that
+is located in the Exchsrvr\Connect\Exchconn directory after you install the
+connectors.
+
+However, this file is not copied anywhere when you install any of the noted
+connectors.
+
+Additional query words: readme.rtf, missing
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

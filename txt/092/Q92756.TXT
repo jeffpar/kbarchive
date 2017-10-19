@@ -1,0 +1,75 @@
+DOCUMENT:Q92756  11-SEP-1999  [winmisc]
+TITLE   :Media Player: Basic AVI Playback Troubleshooting
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When playing an AVI file from Microsoft Video for Window's Media Player, the
+file may not run smoothly due to the "dropping" of frames during file playback.
+The dropping of frames occurs when the time required for a frame's data to
+stream through the processor exceeds the "real" time the frame represents during
+playback. Media Player attempts to compensate for this time difference by
+dropping frames to "catch-up" to the appropriate "real time" position.
+
+MORE INFORMATION
+================
+
+The following procedures may enhance the performance when playing AVI files from
+Media Player:
+
+ - If the AVI file is located on a CD, be sure the CD-ROM drive is MPC compliant
+   and can sustain a minimum data transfer rate of 150 K/Sec. The CD-ROM that is
+   provided with Video for Windows contains many AVI files that should play back
+   without problems without being copied to the hard drive for playback. If
+   playback from the CD-ROM drops frames, while the same file played back from a
+   hard-drive does not drop frames, chances are that CD-ROM or something in the
+   hardware or software configuration of the computer that is preventing the
+   system from delivering data at the minimum required data transfer rate.
+
+ - If the AVI file is located on a hard drive, be sure the AVI file is stored in
+   a continuous region by running any of several hard disk optimization
+   utilities available. This enhances playback by reducing the seek time
+   required to access the file.
+
+ - Select the Don't Buffer Offscreen option from the Configure Command on the
+   Device Menu in Media Player. This option provides a slightly higher playback
+   rate by omitting updates to an off-screen buffer, thus decreasing the
+   likelihood of dropping frames during playback.
+
+ - Clear the Skip Video Frames If Behind option from the Configure Command on
+   the Device Menu in Media Player. Turning this option off prioritizes the
+   video track of an AVI file over the audio, allowing Media Player to display
+   all frames in an AVI file and pause the audio track as needed.
+
+Additional query words: tshoot 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q105229  08-NOV-2001  [homemm]
+TITLE   :Can't Start Some Multimedia Applications Minimized
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition,1997 edition; WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:kbmm kbui kbimukbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows versions 1994 edition, 1997 edition 
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+ - Microsoft Music Central for Windows 1997 edition 
+ - Microsoft Multimedia Beethoven for Windows, version 1.0 
+ - Microsoft Multimedia Mozart for Windows, versions 1.0, 1.0a 
+ - Microsoft Multimedia Stravinsky for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot start any of the Microsoft programs listed above in a minimized
+window.
+
+MORE INFORMATION
+================
+
+When you attempt to start one of the programs listed at the top of this article
+in a minimized window, the program starts in a normal window. Cinemania 1994 is
+an exception. When you attempt to start Cinemania 1994 in a minimized window,
+the Remote Control window opens, the Cinemania icon appears in the middle of the
+screen, and the colors on the screen may change.
+
+Additional query words: multi media multimedia multi-media restore dinos odd weird strange changed change different new old Usage sound background
+
+======================================================================
+Keywords          : kbmm kbui kbimu kbbuglist
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword kbEncartaEncycSearch kbCineManiaSearch kbMMStravinsky kbMMMozart100 kbMMMozart100a kbMMBeethoven100 kbCinemania1994 kbCinemania1997 kbMusicCentral kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbMusicCentral1997
+Version           : :1994 edition,1997 edition; WINDOWS:1.0,1.0a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

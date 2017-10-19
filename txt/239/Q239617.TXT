@@ -1,0 +1,94 @@
+DOCUMENT:Q239617  25-JUL-2001  [homemm]
+TITLE   :Encarta World Atlas 2000: Installation Is Very Slow
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbhw kbsetup kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Encarta World Atlas 2000, Setup may take a very long
+time to finish.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+ - A real mode (16-bit) CD-ROM driver is installed on your computer.
+
+ - Your CD-ROM drive is operating in MS-DOS Compatibility mode.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact your hardware manufacturer to inquire about how
+to obtain and install a protected mode (32-bit) CD-ROM driver for your CD-ROM
+drive.
+
+For information about how to contact your hardware manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta World Atlas
+2000.
+
+MORE INFORMATION
+================
+
+To determine if your CD-ROM drive is using a protected mode driver:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Performance tab, and then verify that the File System entry is
+   32-bit.
+
+   If the File System entry is "Some drives are using MS-DOS compatibility," your
+   CD-ROM drive may be using a real mode CD-ROM driver. If this is the case, you
+   may not be able to read certain files on the CD-ROM.
+
+4. Click OK, and then close Control Panel.
+
+Additional query words: multi multi-media media mm ewa2k installs slowly
+
+======================================================================
+Keywords          : kbhw kbsetup kbimu kbHardware 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

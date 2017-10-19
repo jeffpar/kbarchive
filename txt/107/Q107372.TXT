@@ -1,0 +1,69 @@
+DOCUMENT:Q107372  15-OCT-1999  [win3x]
+TITLE   :Windows for Workgroups: 32-Bit File Access Is Slow with MSIPX
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running Windows for Workgroups 3.11 with MSIPX, you may experience a
+five-second delay when you start applications from the Windows graphical user
+interface (GUI). This delay occurs only if you have 32-bit file access enabled
+on a hard disk drive controlled by the real mode mapper (RMM.D32). In this
+situation, Windows may also load more slowly. This delay does not occur when you
+start MS-DOS applications from an MS-DOS virtual machine (VM).
+
+Real mode mapper controlled drives include drives that are incompatible with
+32-bit disk access and drives that have been compressed with a disk- compression
+program, such as MS-DOS 6.2 DoubleSpace or STAC Electronics' Stacker. (MS-DOS
+6.0 DoubleSpace is incompatible with 32-bit file access).
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+ - Upgrade MSIPX to Novell ODI drivers. This is recommended for Windows for
+   Workgroups 3.11/Novell NetWare users. ODI should provide faster access to
+   NetWare servers and improve Windows for Workgroups performance.
+
+   -or-
+
+ - Disable 32-bit file access.
+
+For more information, please query on the following words in the Microsoft
+Knowledge Base:
+
+   32-bit file access and ne2000 and odi
+
+Additional query words: dblspace 3.11 hangs locks hesitates double- click start launch 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

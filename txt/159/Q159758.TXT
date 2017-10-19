@@ -1,0 +1,90 @@
+DOCUMENT:Q159758  14-NOV-2000  [word97]
+TITLE   :WD97: Caption Text Shifted Right or Missing from Caption Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Caption box is empty or the label text is shifted to the right. (To locate
+this option, click Caption on the Insert menu.)
+
+
+CAUSE
+=====
+
+Either the normal style or the caption style is formatted with center or right
+alignment.
+
+WORKAROUND
+==========
+
+To work around this problem, format the normal style or caption style with left
+paragraph alignment and manually format the caption text with right or center
+alignment. To change the style formatting, use these steps:
+
+1. On the Format menu, click Style.
+
+2. In the List box, click All Styles.
+
+3. In the Styles list, select Normal (or Caption).
+
+4. Click Modify.
+
+5. In the Modify Style dialog box, click Format.
+
+   NOTE: To add the style change to your template, click to select the Add To
+   Template check box, and then click the Format button.
+
+6. Click Paragraph.
+
+7. In the Paragraph dialog box, click the Indents and Spacing tab.
+
+8. In the Alignment drop-down box, select Left.
+
+9. Click OK two times.
+
+10. Click Close.
+
+11. Apply direct formatting to the caption text. To do this, select the caption
+   and then click the Centered or Right Align button on the Formatting toolbar.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 8.0 word8 word97 gone invisible deleted empty blank
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

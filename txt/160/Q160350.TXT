@@ -1,0 +1,91 @@
+DOCUMENT:Q160350  25-FEB-2002  [iis]
+TITLE   :Index Server Returns HTTP 500 Error
+PRODUCT :Internet Information Server
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Index Server processes one query, and then the following error message
+appears:
+
+   HTTP/1.0 500 Server Error (The security descriptor structure is invalid.)
+
+CAUSE
+=====
+
+Setup incorrectly registers the idq ISAPI extension with a partial path.
+Internet Information Server requires all extensions be registered with a full
+path. When another service or ISAPI extension changes directory, it may cause
+Index Server to return error 500.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Index Server 2.0 or Windows 2000 Indexing
+Service.
+
+WORKAROUND
+==========
+
+To work around this problem, you need to edit the registry:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Under the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+
+      System/CurrentControlSet/Services/W3SVC/Parameters/Script Map
+
+3. Change the value for .ida from "idq.dll" to the following
+
+      <Systemroot>\system32\idq.dll
+
+   where Systemroot is the system directory for Windows NT (the value of the
+   %Systemroot% environment variable).
+
+4. Change the value for .idq to be the same as for .ida.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with Microsoft Index Server version
+1.0. This problem has been corrected in Index Server 2.0 and Windows 2000
+Indexing Service.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

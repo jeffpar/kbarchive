@@ -1,0 +1,50 @@
+DOCUMENT:Q102155  27-JUL-2001  [visualc]
+TITLE   :DOC: BN_DISABLE and BN_DOUBLECLICKED Documented Incorrectly
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,4.0,4.1
+OPER/SYS:
+KEYWORDS:kbdocerr kbGenInfo kbVC kbArtTypeINF
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 1.5 
+ - Microsoft Visual C++, versions 2.0, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to the online help, an application should not process either the
+BN_DISABLE or BN_DOUBLECLICKED notification. The documentation recommends that
+new applications should use the BS_OWNERDRAW button style and information in the
+DRAWITEMSTRUCT structure.
+
+These statements are incorrect and should be ignored. Even though an application
+can create the same behavior using an owner-draw button, it is not necessary to
+do so.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbGenInfo kbVC kbArtTypeINF 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC410 kbVC200
+Version           : :1.0,1.5,2.0,4.0,4.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

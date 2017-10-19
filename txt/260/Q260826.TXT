@@ -1,0 +1,68 @@
+DOCUMENT:Q260826  28-MAY-2000  [sms]
+TITLE   :SMS: Multiple Advertisements May Not Work If One Is Unscheduled
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you schedule multiple advertisements and then unschedule one of the multiple
+advertisements in the Administrator console, the client receives an "Unable to
+connect to the server... You can't schedule any programs to run at this time"
+error message, and no advertisements run on the client workstation.
+
+CAUSE
+=====
+
+This behavior occurs if multiple programs are advertised to run on a client and
+the administrator unschedules one of the advertisements in the Administrator
+console while the client is running the Advertised Programs Wizard and is
+viewing the list of available programs. If the client schedules all the
+advertisements to run, the error message is displayed and no programs are run.
+
+WORKAROUND
+==========
+
+Cancel the selection of the unscheduled advertisement in the Advertised Programs
+Wizard, or quit and restart the Advertised Programs Wizard to refresh the
+advertisement list.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

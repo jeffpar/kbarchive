@@ -1,0 +1,81 @@
+DOCUMENT:Q191463  11-JAN-2001  [vbwin]
+TITLE   :PRB: Cannot Create Control Array in VB6 DHTML Application
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbVBp600 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In other Visual Basic projects, you can create a control array by setting the
+index of the control. However, DHTML does not support control arrays, so this
+property is not exposed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Visual Basic will prompt you to create a control array when adding a control of
+the same name to a form. This does not occur in a DHTML Application project.
+Instead, Visual Basic creates the new control with the same ID and appends a
+number to the end.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a DHTML Application project in Visual Basic. DHTMLPage1 is created by
+   default.
+
+2. Add a Button to DHTMLPage1.
+
+3. Copy and Paste the control back into DHTMLPage1. Note that you have two
+   controls on the page. Note that the ID property for the second control is
+   Button11. You can optionally add a third Button by pasting again. Note that
+   the third Button is Button12.
+
+REFERENCES
+==========
+
+For more information about DHTML Application project in Visual Basic 6.0, refer
+to your Visual Basic documentation.
+
+For more information about the DHTML specification, visit the MSDN Online at:
+
+   http://www.msdn.microsoft.com/workshop/default.asp
+
+Additional query words: kbDHTML kbVBp600 kbdse kbInternet kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

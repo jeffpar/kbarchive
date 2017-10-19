@@ -1,0 +1,95 @@
+DOCUMENT:Q138611  13-JUN-2001  [sna]
+TITLE   :Stopping SNA Server Causes Application Exception in SNALINK.EXE
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An application exception (trap) occurs in the SNA Server 802.2 Link Service when
+you stop SNA Server version 2.11. If DRWTSN32.EXE is configured as the default
+debugger, the DRWTSN32.LOG includes an exception similar to the following:
+
+   Application exception occurred:
+   App: snalink.DBG (pid=169)
+   When: 08/2/1995 @ 1:54:25.364
+   Exception number: c0000005 (access violation)
+
+In addition, SNA Server logs Event 624 in the Windows NT Event Viewer Application
+Log when this trap occurs. The following is a detailed description of the Event
+624 that is logged when the exception occurs:
+
+Creating dump file C:\SNA\TRACES\SNADUMP.LOG for SNALINK.EXE
+
+EXPLANATION:
+
+A process (SNALINK.EXE) ended abnormally due to a protection violation or similar
+condition and a dump file SNADUMP.LOG has been created that contains information
+about the state of the process at the time of the exception. Register
+information is contained in your Windows NT root directory in the file
+DRWTSN32.LOG.
+
+CAUSE
+=====
+
+The application exception is caused when the 802.2 Link Service tries to access
+a pointer to a LCB after it has previously been freed.
+
+
+RESOLUTION
+==========
+
+Microsoft has updated the follwing files to correct this problem:
+
+   <snaroot>\SYSTEM\SNADLC.DLL
+   <snaroot>\SYSTEM\HWSETUP\SNACLASP.INF
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+KBCategory: kbnetwork kbbug2.11
+KBSubcategory: ntnetserv
+
+Additional query words: prodsna 2.11 trap admin net stop snaservr.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

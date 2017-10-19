@@ -1,0 +1,159 @@
+DOCUMENT:Q272219  22-OCT-2000  [foxpro]
+TITLE   :PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop
+PRODUCT :Microsoft FoxPro
+PROD/VER::1.0,1.1,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAppSetup kbMiscTools kbvfp600fix kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Studio Installer, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user starts an executable file that was developed with Visual FoxPro
+(VFP) from a desktop shortcut that was created by a Visual Studio Installer
+(VSI) package, the user may see two new files on the desktop. The names of these
+files may vary, but they are usually Foxuser.dbf and Foxuser.fpt.
+
+CAUSE
+=====
+
+The Foxuser.dbf and Foxuser.fpt pair make up a resource file for the VFP
+application, storing useful information such as window positions, Browse window
+configurations, and label definitions. By default, a VFP application
+automatically creates these two files on startup, unless configured otherwise
+(see the "Resolution" section for more information). These files are usually
+created in the same folder as the application, or in the START IN folder if the
+application is started by means of a shortcut.
+
+Installation packages that are created with Visual Studio Installer can create
+shortcuts to applications that they install. However, it is not possible to
+change the START IN property of these shortcuts from the VSI interface. As a
+result, the START IN property is set by default to the folder that contains the
+shortcut. The VFP application creates its Foxuser files in the START IN folder
+of the shortcut, which in this case is the user's desktop.
+
+RESOLUTION
+==========
+
+There are two ways to prevent this behavior:
+
+ - Configure the VFP application that you are are distributing with VSI to not
+   create a resource file. To do this, include a Config.fpw file with the
+   application and adding the following line of code to it:
+
+   RESOURCE = OFF
+
+-or-
+
+ - Use the Orca table editing tool, which is available in the Windows Installer
+   Software Development Kit (SDK), to set the START IN property of the shortcuts
+   that are contained in the .msi file. For information on installing Orca,
+   click the article number below to view the article in the Microsoft Knowledge
+   Base:
+
+   Q255905 HOWTO: Use the Orca Database Editor to Edit Windows Installer Files
+
+   After you have installed Orca, follow the steps below to change the START IN
+   property of the shortcuts that your VSI package creates.
+
+   NOTE: These steps assume that you have already built your VFP application
+   installation package with VSI.
+
+   1. Start Orca and from the main menu, select File and then select Open.
+
+   2. Locate and select the .msi package that you created with VSI.
+
+   3. With the .msi table open, scroll through the list on the left-hand side of
+      the Orca window, locate the entry for "Shortcut", and click it.
+
+   4. When you click the "Shortcut" entry, records appear in the right-hand pane
+      of the Orca window, one for each shortcut that you created. In the
+      right-hand pane, select each entry and replace the empty WkDir field with
+      "TARGETDIR" (without the quotation marks).
+
+   5. Save and close the .msi file, and then install your application. The
+      Foxuser.* files should be created in the same folder as the EXE when it is
+      started from the desktop shortcut.
+
+IMPORTANT: You will need to do this each time that you rebuild your installation
+package with VSI, because each rebuild sets the WkDir field to its default
+state.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual FoxPro, create a simple "Hello World" EXE. To force the creation of
+   a resource file, include a Config.fpw file with the EXE that contains the
+   following line:
+
+   RESOURCE=ON
+
+2. Use VSI to create an installation package (including the proper merge
+   modules) and create a desktop shortcut using the File System window. For
+   additional information on using VSI with VFP applications, see the
+   "References" section below.
+
+3. Install your VFP application using the VSI package that you created.
+
+4. After the installation is complete, double-click the desktop shortcut to your
+   application. You should see two new files, Foxuser.dbf and Foxuser.fpt, on
+   the desktop.
+
+REFERENCES
+==========
+
+For information on shortcuts and the Visual Studio Installer, see the following
+article in the Microsoft Knowledge Base:
+
+   Q242586 INFO: Can't Change the 'Start in:' Property of a Shortcut in VSI
+
+The Visual Studio Installer is available to registered users of Microsoft Visual
+Studio or its component parts at the following Microsoft Developer Workshop
+(MSDN) Web site:
+
+   http://msdn.Microsoft.com/vstudio/downloads/vsi/default.asp
+
+For more information on using Visual FoxPro with Visual Studio Installer, see the
+Visual Studio Installer help file, as well as "Using Visual Studio Installer for
+Distributing Visual FoxPro 6.0 Applications" at the following MSDN Web site:
+
+   http://msdn.Microsoft.com/library/techart/usingvsi.htm
+   (http://msdn.Microsoft.com/library/techart/usingvsi.htm)
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Trevor
+Hancock, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAppSetup kbMiscTools kbvfp600fix kbGrpDSFox kbDSupport 
+Technology        : kbVSsearch kbVFPsearch kbAudDeveloper kbVSI kbVSI100 kbVSI110 kbVFP500 kbVFP600
+Version           : :1.0,1.1,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

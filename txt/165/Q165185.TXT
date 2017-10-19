@@ -1,0 +1,69 @@
+DOCUMENT:Q165185  15-MAY-1999  [exchange]
+TITLE   :XCLN: Address Book Stops with Modeless Address Book Applications
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a modeless address book is opened by other MAPI applications, and the
+Microsoft Exchange Client tries to open and close the address book, it stops
+responding. Because the DBCS version of Microsoft Exchange Server uses a
+modeless address book, DBCS Microsoft Exchange Client stops responding with
+modeless address book MAPI applications.
+
+CAUSE
+=====
+
+This problem happens when RichEdit controls are used instead of normal edit
+controls for the edit control in the modeless Address Book. This used to be the
+case in the Far East version only. The failure happens because WMSUI is released
+before the address book dialog box is closed. When the RichEdit control on the
+dialog box is going to be removed, it fails because the control no longer
+exists.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange clients,
+version 4.0, listed at the beginning of this article. This problem was corrected
+in Microsoft Exchange Server 4.0 U.S. Service Pack 4. For information on
+obtaining the service pack, query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : 4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

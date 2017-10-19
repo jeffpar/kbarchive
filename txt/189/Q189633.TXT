@@ -1,0 +1,279 @@
+DOCUMENT:Q189633  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Query a Service for Status and Configuration
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbOSWinNT kbOSWin2000 kbRegistry kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides sample code that demonstrates how to query a Windows 2000
+or Windows NT Service's Status and Configuration from Visual Basic.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Start a New Standard EXE Project in Visual Basic. Form1 is created by
+   default.
+
+2. Add a Text Box, Command Button, and a List Box to Form1.
+
+3. Remove "Text1" from the Text property of Text1.
+
+4. Paste the following code into the declarations section of Form1:
+
+      Option Explicit
+
+      Private Declare Function CloseServiceHandle Lib "advapi32.dll" _
+         (ByVal hSCObject As Long) As Long
+
+      Private Declare Function QueryServiceStatus Lib "advapi32.dll" _
+         (ByVal hService As Long, _
+         lpServiceStatus As SERVICE_STATUS) As Long
+
+      Private Declare Function OpenService Lib "advapi32.dll" _
+         Alias "OpenServiceA" _
+         (ByVal hSCManager As Long, _
+         ByVal lpServiceName As String, _
+         ByVal dwDesiredAccess As Long) As Long
+
+      Private Declare Function OpenSCManager Lib "advapi32.dll" _
+         Alias "OpenSCManagerA" _
+         (ByVal lpMachineName As String, _
+         ByVal lpDatabaseName As String, _
+         ByVal dwDesiredAccess As Long) As Long
+
+      Private Declare Function QueryServiceConfig Lib "advapi32.dll" _
+         Alias "QueryServiceConfigA" _
+         (ByVal hService As Long, _
+         lpServiceConfig As Byte, _
+         ByVal cbBufSize As Long, _
+         pcbBytesNeeded As Long) As Long
+
+      Private Declare Sub CopyMemory Lib "KERNEL32" Alias "RtlMoveMemory" _
+         (hpvDest As Any, _
+         hpvSource As Any, _
+         ByVal cbCopy As Long)
+
+      Private Declare Function lstrcpy Lib "KERNEL32" Alias "lstrcpyA" _
+         (ByVal lpString1 As String, _
+         ByVal lpString2 As Long) As Long
+
+      Private Type SERVICE_STATUS
+         dwServiceType As Long
+         dwCurrentState As Long
+         dwControlsAccepted As Long
+         dwWin32ExitCode As Long
+         dwServiceSpecificExitCode As Long
+         dwCheckPoint As Long
+         dwWaitHint As Long
+      End Type
+
+      Private Type QUERY_SERVICE_CONFIG
+         dwServiceType As Long
+         dwStartType As Long
+         dwErrorControl As Long
+         lpBinaryPathName As Long 'String
+         lpLoadOrderGroup As Long ' String
+         dwTagId As Long
+         lpDependencies As Long 'String
+         lpServiceStartName As Long 'String
+         lpDisplayName As Long  'String
+      End Type
+
+      Private Const SERVICE_STOPPED = &H1
+      Private Const SERVICE_START_PENDING = &H2
+      Private Const SERVICE_STOP_PENDING = &H3
+      Private Const SERVICE_RUNNING = &H4
+      Private Const SERVICE_CONTINUE_PENDING = &H5
+      Private Const SERVICE_PAUSE_PENDING = &H6
+      Private Const SERVICE_PAUSED = &H7
+      Private Const SERVICE_ACCEPT_STOP = &H1
+      Private Const SERVICE_ACCEPT_PAUSE_CONTINUE = &H2
+      Private Const SERVICE_ACCEPT_SHUTDOWN = &H4
+      Private Const SC_MANAGER_CONNECT = &H1
+      Private Const SERVICE_INTERROGATE = &H80
+      Private Const GENERIC_READ = &H80000000
+      Private Const ERROR_INSUFFICIENT_BUFFER = 122
+
+      Private Sub Command1_Click()
+         Dim hSCM  As Long
+         Dim hSVC As Long
+         Dim pSTATUS As SERVICE_STATUS
+         Dim udtConfig As QUERY_SERVICE_CONFIG
+         Dim lRet As Long
+         Dim lBytesNeeded As Long
+         Dim sTemp As String
+         Dim pFileName As Long
+
+      List1.Clear
+
+         ' Open The Service Control Manager
+         '
+         hSCM = OpenSCManager(vbNullString, vbNullString, SC_MANAGER_CONNECT)
+         If hSCM = 0 Then
+            MsgBox "Error - " & Err.LastDllError
+         End If
+
+         ' Open the specific Service to obtain a handle
+         '
+         hSVC = OpenService(hSCM, Trim(Text1.Text), GENERIC_READ)
+            If hSVC = 0 Then
+               MsgBox "Error - " & Err.LastDllError
+               GoTo CloseHandles
+            End If
+
+         ' Fill the Service Status Structure
+         '
+         lRet = QueryServiceStatus(hSVC, pSTATUS)
+         If lRet = 0 Then
+            MsgBox "Error - " & Err.LastDllError
+            GoTo CloseHandles
+         End If
+
+         ' Report the Current State
+         '
+         Select Case pSTATUS.dwCurrentState
+         Case SERVICE_STOPPED
+            sTemp = "The Service is Stopped"
+         Case SERVICE_START_PENDING
+            sTemp = "The Service Being Started"
+         Case SERVICE_STOP_PENDING
+            sTemp = "The Service is in the process of being stopped"
+         Case SERVICE_RUNNING
+            sTemp = "The Service is Running"
+         Case SERVICE_CONTINUE_PENDING
+            sTemp = "The Service is in the process of being Continued"
+         Case SERVICE_PAUSE_PENDING
+            sTemp = "The Service is in the process of being Paused"
+         Case SERVICE_PAUSED
+            sTemp = "The Service is Paused"
+         Case SERVICE_ACCEPT_STOP
+            sTemp = "The Service is Stopped"
+         Case SERVICE_ACCEPT_PAUSE_CONTINUE
+            sTemp = "The Service is "
+         Case SERVICE_ACCEPT_SHUTDOWN
+            sTemp = "The Service is being Shutdown"
+         End Select
+
+         List1.AddItem "Service Status : " & sTemp
+
+         ' Call QueryServiceConfig with 1 byte buffer to generate an error
+         ' that returns the size of a buffer we need.
+         '
+         ReDim abConfig(0) As Byte
+         lRet = QueryServiceConfig(hSVC, abConfig(0), 0&, lBytesNeeded)
+         If lRet = 0 And Err.LastDllError <> ERROR_INSUFFICIENT_BUFFER Then
+            MsgBox "Error - " & Err.LastDllError
+         End If
+
+         ' Redim our byte array to the size necessary and call
+         ' QueryServiceConfig again
+         '
+         ReDim abConfig(lBytesNeeded) As Byte
+         lRet = QueryServiceConfig(hSVC, abConfig(0), lBytesNeeded, _
+            lBytesNeeded)
+         If lRet = 0 Then
+            MsgBox "Error - " & Err.LastDllError
+            GoTo CloseHandles
+         End If
+
+         ' Fill our Service Config User Defined Type.
+         '
+         CopyMemory udtConfig, abConfig(0), Len(udtConfig)
+
+         List1.AddItem "Service Type: " & udtConfig.dwServiceType
+         List1.AddItem "Service Start Type: " & udtConfig.dwStartType
+         List1.AddItem "Service Error Control: " & udtConfig.dwErrorControl
+
+         sTemp = Space(255)
+
+         ' Now use the pointer obtained to copy the path into the temporary
+         ' String Variable
+         '
+         lRet = lstrcpy(sTemp, udtConfig.lpBinaryPathName)
+         List1.AddItem "Service Binary Path: " & sTemp
+
+         lRet = lstrcpy(sTemp, udtConfig.lpDependencies)
+         List1.AddItem "Service Dependencies: " & sTemp
+
+         lRet = lstrcpy(sTemp, udtConfig.lpDisplayName)
+         List1.AddItem "Service DisplayName: " & sTemp
+
+         lRet = lstrcpy(sTemp, udtConfig.lpLoadOrderGroup)
+         List1.AddItem "Service LoadOrderGroup: " & sTemp
+
+         lRet = lstrcpy(sTemp, udtConfig.lpServiceStartName)
+         List1.AddItem "Service Start Name: " & sTemp
+
+      CloseHandles:
+      ' Close the Handle to the Service
+      '
+         CloseServiceHandle (hSVC)
+
+      ' Close the Handle to the Service Control Manager
+      '
+         CloseServiceHandle (hSCM)
+
+      End Sub
+
+5. Run the sample and type the Service Name in the Text box. For this example
+   type in "Eventlog" without the quotes.
+
+   NOTE: This is not necessarily the same as the "Display Name" that shows in the
+   Services applet of the Control Panel. The Service names registered on the
+   system can be located under the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+
+6. Click the CommandButton.
+
+   The results displayed in the list box should be similar to the following:
+
+      Service Status : The Service is Running
+      Service Type: 32
+      Service Start Type: 2
+      Service Error Control: 1
+      Service Binary Path: C:\WINNT\system32\services.exe
+      Service Dependencies:
+
+      Service DisplayName: EventLog
+      Service LoadOrderGroup: Event log
+      Service Start Name: LocalSystem
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWinNT kbOSWin2000 kbRegistry kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

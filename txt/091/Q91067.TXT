@@ -1,0 +1,69 @@
+DOCUMENT:Q91067  22-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: The Version of the SETUP.INF File on Your...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you install Windows for
+Workgroups in the same directory as a Workgroup Connections installation:
+
+   The version of the SETUP.INF file on your system is not valid for use with
+   this version of SETUP.EXE. If you continue, Windows may not run properly. It
+   is recommended that you quit Setup and then copy SETUP.INF from Windows disk
+   #1 to your Windows SYSTEM directory.
+
+CAUSE
+=====
+
+Normally, you install Workgroup Connections in the DOS directory along with the
+MS-DOS files. You receive this error if you install Workgroup Connections in
+another directory, such as WINDOWS, and then try to install Windows for
+Workgroups in the same directory.
+
+WORKAROUND
+==========
+
+To avoid any problems with Windows for Workgroups Setup and to ensure a
+complete, successful installation, install Windows for Workgroups in a different
+directory or rename the following files in the target directory:
+
+ - SETUP.INF
+
+ - SYSTEM.INI
+
+ - PROTOCOL.INI
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

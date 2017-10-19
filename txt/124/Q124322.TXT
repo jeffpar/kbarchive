@@ -1,0 +1,99 @@
+DOCUMENT:Q124322  27-JUL-2001  [odbc]
+TITLE   :BUG: SQLNumResultCols on a Prepared SELECT with ORDER in Name
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJET: 1813 (2.00.2317)
+
+SYMPTOMS
+========
+
+When a SQLNumResultCols call is executed on a statement handle, on which you
+perform a SELECT query on a table and the word ORDER or GROUP appears anywhere
+in the table's name, SQLNumResultCols returns one of the following errors:
+
+   SQLState=37000,
+   szErrorMsg=[Microsoft][ODBC Microsoft Access 2.0 Driver] Syntax error in FROM
+   clause
+
+-or-
+
+   SQLState=S0002,
+   szErrorMsg=[Microsoft][ODBC Microsoft Access 2.0 Driver] Couldn't find input
+   table or query <xx>
+
+For example, assume two tables exist in the database called ordering and
+reordering, respectively. Then the following sequence of calls will exhibit this
+behavior:
+
+Case A
+------
+
+      SQLPrepare(hstmt,"select * from ordering",SQL_NTS)
+      SQLNumResultCols(hstmt,pccol)
+         Returns SQL_ERROR.
+
+      SQLError(henv,hdbc,hstmt1,szSQLState,pfNativeError,SZErrorMsg)
+         Returns
+
+      SQLState=37000
+      szErrorMsg=[Microsoft][ODBC Microsoft Access 2.0 Driver] Syntax error
+      in From clause
+
+Case B
+------
+
+      SQLPrepare(hstmt,"select * from reordering",SQL_NTS)
+      SQLNumResultCols(hstmt,pccol)
+         Returns SQL_ERROR.
+
+      SQLError(henv,hdbc,hstmt1,szSQLState,pfNativeError,SZErrorMsg)
+         Returns
+
+      SQLState=S0002
+      szErrorMsg=[Microsoft][ODBC Microsoft Access 2.0 Driver] Couldn't
+      find input table or query 're'
+
+Also, these errors are returned for table names that contain the word GROUP, like
+regroup, regrouping. Other examples of the table names that have the problem are
+border, camcorder, or grouped.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in ODBC Access ODBC Driver version
+2.00.2317. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2317 ODBC MFC Visual C++ MSVC Windows NT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

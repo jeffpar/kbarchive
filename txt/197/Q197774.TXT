@@ -1,0 +1,106 @@
+DOCUMENT:Q197774  07-MAY-2002  [homemm]
+TITLE   :Err Msg: This Program Is Set to Run in MS-DOS Mode...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+ - Microsoft Baseball 2001 
+ - Microsoft Bookshelf 99 
+ - Microsoft Bookshelf 2000 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Encarta 98 Research Organizer, version 1.0 
+ - Microsoft Encarta Encyclopedia 99 
+ - Microsoft Encarta Reference Suite 99 
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft MechWarrior 4: Vengeance 
+ - Microsoft Midtown Madness, version 1.0 
+ - Microsoft Midtown Madness 2, version 2.0 
+ - Microsoft Money 99 
+ - Microsoft Motocross Madness, version 1.0 
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+ - Microsoft Golf 2001 Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install or remove any of the programs listed at the beginning of this
+article, you may receive the following error message:
+
+   This program is set to run in MS-DOS mode and cannot run while other programs
+   are running. All other programs will close if you choose to continue. Do you
+   want to continue?
+
+CAUSE
+=====
+
+This behavior can occur if the installation program uses an MS-DOS batch file to
+remove temporary files created during the installation or removal of the
+program.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Click Start, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "*.pif" (without the quotation marks), and then click
+   Find Now.
+
+3. Follow these steps for each file listed in the list of found files, except
+   for the Exit To Dos file.
+
+   a. Right-click the file, and then click Properties.
+
+   b. On the Program tab, click Advanced.
+
+   c. Click to clear the MS-DOS Mode check box, click OK, and then click OK
+      again.
+
+   You MUST repeat these steps for EACH and EVERY file except for the Exit To Dos
+   file.
+
+4. Close the Find: Files Named *.pif window.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: 1.00 multi multi-media media mm msgame w_money toy flightsim fltsim
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbGamesSearch kbFlightSimSearch kbZNotKeyword kbGolf2001 kbGolfSearch kbMoneySearch kbBookshelfSearch kbMotocrossSearch kbBaseballSearch kbMidtownMadSearch kbAOESearch kbEncartaEncycSearch kbMidtownMadness kbMoney99 kbAOEExpRome kbAOE2Kings kbBaseBall2001 kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim95 kbMotocrossM kbMidtownMadness2 kbNBAInsideDrive2000 kbBookShelf2000 kbBookShelf1999 kbEncartaEnCyc1999 kbEncartaResearchOrg98 kbEncartaReference99 kbEncartaVirtGlobe99 kbSimSearch
+Version           : :1.0,2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

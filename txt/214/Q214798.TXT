@@ -1,0 +1,96 @@
+DOCUMENT:Q214798  07-SEP-2001  [winnt]
+TITLE   :Cannot Print After Installing HP JetAdmin Print Monitor
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Hewlett-Packard (HP) JetAdmin port monitor on a computer
+running Microsoft Windows NT 4.0, the Spooler service may randomly stop and
+require a manual restart. Print jobs may not be printed without stopping and
+restarting the Spooler service.
+
+CAUSE
+=====
+
+This behavior can be caused by a conflict between the Spooler service and the HP
+JetAdmin port monitor software.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, configure your computer's printers to use
+Microsoft Windows NT LPR Port Monitor:
+
+1. Install the Microsoft TCP/IP Printing service: Click Start, point to
+   Settings, click Control Panel, and then double-click Network.
+
+2. Click the Services tab, click Add, click Microsoft TCP/IP Printing in the
+   Network Service box, and then click OK.
+
+3. When you are prompted, type the full path to the installation files folder
+   (for example, D:\I386), click Continue, click Close, and then restart the
+   computer when you are prompted.
+
+4. Create an LPR port for each printer currently using an HP port. For
+   information about adding and configuring LPR ports, please see the following
+   article in the Microsoft Knowledge Base:
+
+   Q195643How to Configure Windows NT for LPR Printing
+
+5. Remove the HP JetAdmin software. To do this, click Start, point to Settings,
+   click Control Panel, and then double-click Add/Remove Programs.
+
+6. In the list of installed programs click JetAdmin, click Add/Remove, click
+   Yes, click OK, and then click OK.
+
+
+MORE INFORMATION
+================
+
+You may want to contact Hewlett-Packard Technical Support at (888) 321-4272 for
+further information regarding their printer driver software, or visit the
+following Hewlett-Packard Web site:
+
+http://www.hp.com/ghp/services.html
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

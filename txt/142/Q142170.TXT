@@ -1,0 +1,86 @@
+DOCUMENT:Q142170  27-MAR-2002  [visualc]
+TITLE   :PRPFONT - How to Set CPropertySheet Fonts
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbProgramming kbSample kbFont kbGDI kbMFC kbPropSheet KbUIDesign kbVC400 kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+PRPFONT shows how to set the desired font for your CPropertyPages in the
+Resource Editor, and at run-time, set the sheet's font to be the same and size
+everything correctly. All of this is done in a class called CMySheet. A function
+called ChangeDialogFont() does the work of setting the font and resizing
+windows. CPropertySheet::BuildPropPageArray() was overridden so that the fonts
+in the pages are not reset.
+
+MORE INFORMATION
+================
+
+In versions of Visual C++ earlier than 4.0, MFC had its own implementation of
+CPropertySheet. You could set the font for your CPropertySheet by setting the
+font of your first CPropertyPage dialog box resource in the Resource Editor. At
+run time, the sheet would use the font that you set and size everything
+according to the font. Starting with Visual C++ 4.0, MFC uses the Windows 95
+PropertySheet control. This control will always use the system font for the
+sheet. This is by design. MFC will also force the pages to use the same font as
+the sheet. This is done in a function called BuildPropPageArray(). Because this
+is an undocumented function, it may change or be deleted in future versions of
+MFC.
+
+CMySheet will use the font of the first active CPropertyPage to set the font and
+size of the CPropertySheet and its child windows. The CPropertyPages will appear
+with the font specified in the resource editor.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Prpfont.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words: 4.10 4.20 prpfont propfont runtime run-time
+
+======================================================================
+Keywords          : kbfile kbProgramming kbSample kbFont kbGDI kbMFC kbPropSheet KbUIDesign kbVC400 kbVC500 kbVC600 kbFAQ kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

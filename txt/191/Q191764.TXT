@@ -1,0 +1,78 @@
+DOCUMENT:Q191764  11-DEC-1999  [foxpro]
+TITLE   :PRB: Closing a Project Does Not Make Other Open Project Active
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 6.0, using the Project Object's Close method to close the
+current Project does not make the other open project the active project.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Place the following code in a program file and run the program:
+
+      LOCAL lnI
+
+      MODIFY PROJECT test1 NOWAIT NOSHOW
+      MODIFY PROJECT test2 NOWAIT NOSHOW
+      ? "Active Project " + Application.ActiveProject.Name
+
+      FOR lnI = 1 TO Application.Projects.Count
+         ? "Project " + ALLTRIM(STR(lnI)) + " " + ;
+             Application.Projects.Item(lnI).Name
+      ENDFOR
+
+      WAIT WINDOW "Note that project 1 is the active project!" TIME 1
+      WAIT WINDOW "Now we are going to close project 1" TIME 1
+      Application.Projects.Item(1).Close()
+      WAIT WINDOW "Now lets check Application.ActiveProject." TIME 1
+      ? Application.ActiveProject.Name
+
+When the program executes the last line, the following error message appears:
+
+   OLE IDispatch exception code 0 from Visual FoxPro for Windows: 1923:
+   Object ACTIVEPROJECT is not found...
+
+Additional query words: kbVFp600 kbProjManager
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q103982  07-MAY-2001  [visualc]
+TITLE   :PRB: OnInitialUpdate() May Be Called More Than Once
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbDocView kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbVC410 kbGrpDSMFCATL kbArchitecture
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows 
+    - Microsoft Visual C++ 32-bit Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The OnInitialUpdate() function of a CView object in a single document interface
+(SDI) application may be called more than once. Any initialization that needs to
+be done only when the view's window is created should be done in the OnCreate()
+message handler instead of in the OnInitialUpdate() function.
+
+MORE INFORMATION
+================
+
+In an SDI application, a single CView object is created to display a view of the
+document. When the user changes the document, the data in the CDocument is
+cleared using CDocument::DeleteContents(), and data for the new document is read
+into the CDocument object. Then the view is updated by sending a
+WM_INITIALUPDATE message to the view's window, which calls the OnInitialUpdate()
+function. Therefore, every time the user changes documents, the
+OnInitialUpdate() function for the view is called.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDocView kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbVC410 kbGrpDSMFCATL kbArchitecture 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

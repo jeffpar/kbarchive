@@ -1,0 +1,72 @@
+DOCUMENT:Q157617  27-JUL-2001  [odbc]
+TITLE   :BUG: SQLStatistics Does Not Return Unique Index Information
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.5,2.65; winnt:6.5
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SQL Server version 6.5 
+ - Microsoft ODBC Driver for SQL Server, version 2.65 
+ - Microsoft Open Database Connectivity, version 2.5 
+-------------------------------------------------------------------------------
+
+BUG #: 16050 (sql server: 6.5)
+
+SYMPTOMS
+========
+
+When an ODBC application uses a SQLStatistics function call to retrieve the
+index information associated with the views, the SQLStatistics function does not
+return any index information for the views.
+
+When Microsoft Access database users create link tables to SQL Server tables
+using SQL Server data sources, the SQL Server ODBC Driver uses SQLStatistics to
+automatically retrieve the index information and set up the link tables, without
+prompting the users to select a unique index for the tables.
+
+Microsoft Access database users may be prompted to select the unique index record
+identifier when they create link tables to SQL Server views, because
+SQLStatistics does not return any information associated with the views.
+
+CAUSE
+=====
+
+SQLStatistic uses the Microsoft SQL Server stored procedure sp_statistics to
+retrieve the unique index information, and sp_statistics does not return unique
+index information for views.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SQL Server version
+6.5, Open Database Connectivity 2.5, and ODBC Driver version 2.65. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 2.50 2.65
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbSQLServSearch kbAudDeveloper kbSQLServ650 kbODBCSearch kbODBCSQLServ265 kbODBC250
+Version           : WINDOWS:2.5,2.65; winnt:6.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,124 @@
+DOCUMENT:Q156415  04-APR-1999  [exchange]
+TITLE   :XADM: Information Store Fails to Start with Jet Error -327
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to start the Information Store service it may fail with an error
+-327 recorded in the application log. The entry in the application log may look
+similar to the following:
+
+
+   Event ID: 1005
+   Source: MSExchangeIS
+   Description:
+   Unable to start the Microsoft Exchange Information Store. Error -327
+
+This error will be preceded by another application log event by EDB (JET). The
+entry in the application log may look similar to the following:
+
+   Event ID: 40
+   Source: EDB
+   Description:
+   MSExchangeIS ((301) ) The database engine found a bad page
+
+CAUSE
+=====
+
+The Microsoft Jet database engine may perform maintenance on pages of the
+database without verifying that these page links are indeed valid. This can
+cause pages of the database to become corrupt.
+
+WORKAROUND
+==========
+
+Repair the corruption and then obtain the hotfix mentioned below.
+
+RESOLUTION
+==========
+
+If a current, valid backup of the database is available before the corruption
+occurred, use the following steps to repair the corruption:
+
+1. Apply the fix described below. This fix will prevent the corruption from
+   happening with the restored good database.
+
+2. Restore the database from backup.
+
+3. Restart the Information Store service.
+
+If a backup is not available, use the following steps (in the order given) to
+repair the corruption in the database:
+
+NOTE: This process may result in loss of data.
+
+1. Perform an offline backup of the server making sure to include the Mdbdata
+   directory/directories.
+
+2. In the \Mdbdata folder that contains the damaged store, run the following
+   utility to remove the damaged page(s) from the database:
+
+   EDBUTIL /d /r <db name>
+
+where <db name> is the database name (for example, priv.edb).
+
+3. Run the following utility to repair any Information Store or database
+   inconsistencies that may have occurred from removing the bad page:
+
+   ISINTEG -fix -dbname
+
+Where -dbname is the database name (for example, -priv).
+
+4. Restart the Information Store service.
+
+After repairing the database corruption, apply the fix described below to prevent
+this type of corruption from occurring again. The fix allows the Microsoft Jet
+database engine to test the validity of the page links before performing
+maintenance on them.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+This problem was corrected in the latest Microsoft Exchange 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

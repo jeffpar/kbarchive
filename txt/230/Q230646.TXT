@@ -1,0 +1,77 @@
+DOCUMENT:Q230646  23-OCT-2000  [exchange]
+TITLE   :XFOR: Attachments Corrupted by Incorrect Mapping in Cmsxmap.tbl
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On an IBM OV/VM computer, if you use the Sendfile command to send a PC Binary
+type attachment in the Netdata format to Microsoft Exchange Server, the
+attachment may become corrupted.
+
+CAUSE
+=====
+
+This behavior can occur because Microsoft Exchange Connector for IBM OV/VM
+(PROFS) cannot convert an attachment if loose definition occurs in the mapping
+table file Cmsxmap.tbl.
+
+
+WORKAROUND
+==========
+
+To work around this behavior, modify the mapping table file Cmsxmap.tbl in the
+Exchsrvr\Connect\Exchconn\Tables folder, so that it identifies the binary files
+from the host. The following is an updated Cmsxmap.tbl file:
+
+   LISTING EBCDIC
+   EXEC EBCDIC
+   SCRIPT EBCDIC
+   $SCRIPT EBCDIC
+   OFSMCNTL EBCDIC
+   DIRECTRY EBCDIC
+   BIN BINARY
+   COM BINARY
+   DOC BINARY
+   EXE BINARY
+   PPT BINARY
+   XLS BINARY
+   XLW BINARY
+   ZIP BINARY
+   VSD BINARY
+   MDB BINARY
+   * EBCDIC
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

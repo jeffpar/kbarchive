@@ -1,0 +1,273 @@
+DOCUMENT:Q166016  23-JAN-2002  [word97]
+TITLE   :WD97: Description of Compatibility Tab in Options Dialog Box
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbinterop kbconversion word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft Word 2002 version of this article, see Q288792.
+
+For a Microsoft Word 2000 version of this article, see Q193266.
+
+For a Microsoft Word 7.0 version of this article, see Q192634.
+
+For a Microsoft Word 98 version of this article, see Q192635.
+
+SUMMARY
+=======
+
+This article describes the Compatibility options that are available in in the
+Options dialog box Microsoft Word 97 for Windows.
+
+NOTE: To change the Compatibility Options, on the Tools menu, click Options, and
+then click the Compatibility tab.
+
+MORE INFORMATION
+================
+
+Font Substitution
+-----------------
+
+Displays fonts used in the active document that are not available on your system
+by using fonts that are available on your system.
+
+Recommended Options For
+-----------------------
+
+Selects the word-processing program you want to set options for. Selected options
+affect only the display of the document while you work with it in Word. The
+document is not changed permanently.
+
+Options
+-------
+
+Selects the options you want to appear in the active document. Selected options
+affect only the display of the document while you work with it in Word. The
+document is not changed permanently.
+
+   Option                             Option Description
+------------------------------------------------------------------------
+
+   Combine table borders              If a table contains two contiguous
+   like Word 5.x for                  cells whose border is formatted
+   the Macintosh                      differently, the left-most cell is
+                                      displayed with the border width of
+                                      the right-most cell.
+
+   Do full justification              To achieve full justification,
+   like WordPerfect 6.x               WordPerfect compresses the spaces
+   for Windows                        between words while Word expands
+                                      them. This often results in different
+                                      line breaks and leads to different
+                                      page breaks. To implement the
+                                      WordPerfect justification method,
+                                      select "Do full justification like
+                                      WordPerfect 6.x for Windows" in the
+                                      Options list.
+
+   Don't add automatic tab            Ignores the automatic tab stop that
+   stop for hanging indent            Word 6.0 uses when creating a hanging
+                                      indent.
+
+   Don't add extra space              Prevents Word from inserting
+   for raised/lowered                 additional space between lines to
+   characters                         accommodate raised or lowered
+                                      characters.
+
+   Don't add leading                  Displays text without leading between
+   (extra space) between              the lines. This is the same
+   rows of text                       functionality that exists in Word
+                                      versions 5.x for the Macintosh.
+
+   Don't add space for                Word doesn't add extra space for
+   underlines                         underlines.
+
+   Don't balance columns              Prevents Word from balancing
+   for continuous section             columns at the end of a section or
+   starts                             document.
+
+   Don't balance SBCS                 Not used in U.S. English Word.
+   characters and DBCS
+   characters
+
+   Don't blank the area               Prevents Word from obscuring any text
+   behind metafile                    or graphics surrounding an inserted
+   pictures                           metafile. Selecting this option
+                                      decreases editing speed.
+
+   Don't center "exact                Changes the vertical position of text
+   line height" lines                 between the top of the line space and
+                                      the bottom of the line space.
+                                      With the option off, any extra space
+                                      is split between the ascender and
+                                      descender. With the option on, all
+                                      the extra space goes to the
+                                      descender.
+
+   Don't convert                      Not used in U.S. English Word.
+   backslash characters
+   into yen signs
+
+   Don't draw underline               Not used in U.S. English Word.
+   on trailing spaces
+
+   Expand character                   Justifies the line ending with
+   spaces on the line                 SHIFT+ENTER when the paragraph
+   ending SHIFT+RETURN                is formatted as justified.
+
+   Expand/condense by                 Rounds the measurement of the
+   whole number of points             spacing for characters with
+                                      condensed or expanded spacing to
+                                      the nearest whole number.
+
+   Lines wrap like                    Not used in U.S. English Word.
+   Word 6.0
+
+   Print body text before             Prints the main text layer before the
+   header/footer                      Header/Footer layer, which allows for
+                                      the process of PostScript codes in
+                                      the text layer the same way Word 5.x
+                                      for the Macintosh does. (This
+                                      functionality is the reverse of the
+                                      default order.)
+
+   Print colors as black              Prints all colors as black, instead
+   on noncolor printers               of using grayscale (different shades
+                                      of gray) when you use a printer that
+                                      does not print color.
+
+   Set the width of a                 WordPerfect calculates the width of a
+   space like WordPerfect 5.x         space in a proportional font
+                                      differently than Word does. In the
+                                      WordPerfect interface, this default
+                                      word spacing is named WordPerfect
+                                      Optimal. The Word 97 text converters
+                                      can use the WordPerfect formula for
+                                      spacing.
+
+   Show hard page or                  If a frame contains a manual, or hard
+   column breaks in frames            page break or column break, Word
+                                      displays it.
+
+   Substitute fonts based             Option used by the WordPerfect 6.x
+   on font size                       converter to make a font request
+                                      based on font size first, and if a
+                                      match is not found, to actually map
+                                      the font.
+
+   Suppress extra line                WordPerfect suppresses any extra line
+   spacing at bottom                  spacing from the last line on a page.
+   of page                            For example, if line spacing is set
+                                      to double, the final line on the page
+                                      does not show White space below it.
+                                      To implement the line-spacing
+                                      feature, select "Suppress extra line
+                                      spacing at bottom of page" in the
+                                      Options list.
+
+   Suppress extra line                Prevents Word from adding extra line
+   spacing at top of page             spacing at the top of a page. If the
+                                      line spacing for the line at the top
+                                      of a page is set for more than single
+                                      spacing, Word ignores the extra
+                                      spacing so that the top margin will
+                                      not increase.
+
+   Suppress extra line                Prevents Word from adding extra line
+   spacing at the top of              spacing at the top of a page. If the
+   page like Word 5.x                 line spacing for the line at the top
+   for the Macintosh                  of a page is set for more than single
+                                      line spacing, Word ignores the extra
+                                      spacing so that the top margin will
+                                      not increase.
+
+   Suppress extra line                This ensures that the layout of
+   spacing like WordPerfect 5.x       converted WordPerfect documents
+                                      formatted with Automatic line height
+                                      closely matches that of the original
+                                      document.
+
+   Suppress space before              Word suppresses the space in a
+   after a hard page or               paragraph formatted with the Space
+   column break                       Before option that follows a hard
+                                      page break or column break.
+
+   Swap left and right                If a paragraph has a left border
+   borders on odd facing              (not a box) and the "Different
+   pages                              Odd/Even Headers" or "Mirror Margins"
+                                      check box is selected, Word prints
+                                      the border on the right on odd
+                                      numbered pages.
+
+   Treat \" as " " in                 In a data source, converts a
+   mail merge data sources            delimiter composed of a backslash and
+                                      quotation mark (\") to two quotation
+                                      marks (" "), so that Word can
+                                      recognize quotation marks.
+
+   Truncate font height               Word rounds the font size up or down
+                                      as in WordPerfect 6.x for Windows.
+
+   Use larger small caps              Applies small caps formatting in Word
+   like Word 5.x for the              version 6.0 for the Macintosh the
+   Macintosh                          same way as Word version 5.x for the
+                                      Macintosh, which produces slightly
+                                      larger smaller capital letters.
+
+   Use printer metrics                If this option is enabled, Word will
+   to lay out document                use the information from the printer
+                                      driver that is installed as in some
+                                      earlier versions of Word.
+
+                                      If this option is disabled (default),
+                                      Word will use build-in metrics to lay
+                                      out the document. This means your
+                                      document will look the same no matter
+                                      what printer driver is installed.
+
+   Use Word 6.x/95 Border             Word suppresses paragraph borders
+   Rules                              when paragraph is intersected by
+                                      frames or wrapped drawing objects.
+
+   Wrap Trailing Spaces               Automatically moves any spaces that
+   To Next Line                       trail into the margin after a word at
+                                      the end of a line to the beginning of
+                                      the next line.
+
+Default
+-------
+
+Saves the compatibility options you selected as the new default in the active
+template. Word will display every new document based on the active template with
+the new compatibility options you select.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbconversion word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,79 @@
+DOCUMENT:Q130303  10-FEB-2000  [foxpro]
+TITLE   :PRB: Default Values Not Checked for Integrity by Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you provide a default value property for a field in a Visual FoxPro table,
+Visual FoxPro does not check to see if the default value passes the field
+validation rule.
+
+RESOLUTION
+==========
+
+The developer should be sure that the default value property for a field does
+not violate the field validation rules.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Ensuring that field default values do not violate field validation rules is the
+responsibility of the programmer.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new database and table.
+
+2. Add a new field (named nfld1, type numeric, width 4).
+
+3. As a Validation rule, type:
+
+   " IIF(nfld1 > 100, .T., .F.) " (without the quotation marks)
+
+4. As a Default Value, type:
+
+   " 99 " (without the quotation marks)
+
+5. Save the table structure, and append a new record to the table. An error
+   occurs because the default value 99 violates the validation rule that nfld1
+   must be greater than 100.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

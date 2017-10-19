@@ -1,0 +1,69 @@
+DOCUMENT:Q156139  31-JUL-2001  [visualc]
+TITLE   :HOWTO: Use the SQL Server DateTime Parameter
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbProgramming kbDatabase kbEEdition kbMFC kbSQL kbVC420 kbVC500 kbVC600 kbDSup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you run a SQL Server stored procedure that has a datetime type parameter, you
+need to provide the value in a specific format or you get the following error:
+
+   22008[Microsoft][ODBC SQL Server Driver]Invalid date
+
+Visual C++, Enterprise Edition, version 5.0 can also give "Invalid timestamp"
+error for some combination of date and time formats.
+
+
+MORE INFORMATION
+================
+
+1. Create the following stored procedure in a SQL Server datasource:
+
+      CREATE PROCEDURE GetDateTime @dt datetime AS
+      RETURN
+
+2. Execute the Stored Procedure.
+
+   The "Execute Stored Procedure" window asks for parameters. The following
+   are the only acceptable formats:
+
+      yyyy-mm-dd
+      yyyy-mm-dd hh:mm:ss
+
+   All other formats generate the above error message.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbProgramming kbDatabase kbEEdition kbMFC kbSQL kbVC420 kbVC500 kbVC600 kbDSupport kbGrpDSODBC kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

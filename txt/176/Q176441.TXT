@@ -1,0 +1,81 @@
+DOCUMENT:Q176441  07-OCT-1999  [msnetwork]
+TITLE   :Cannot Send or Receive E-mail After Automatic Mail Configuration
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6,5.0
+OPER/SYS:
+KEYWORDS:kbenv kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a third-party Internet service provider (ISP) to send and receive
+e-mail in Microsoft Outlook Express, when you run automatic mail configuration
+on MSN, The Microsoft Network, the MSN Mail e-mail account in Outlook Express is
+restored to its default configuration and you may no longer be able to send and
+receive e-mail using your third-party ISP.
+
+CAUSE
+=====
+
+This behavior is by design. Automatic mail configuration is designed to
+configure the MSN Mail e-mail account to send and receive e-mail using the MSN
+e-mail servers.
+
+RESOLUTION
+==========
+
+To resolve this issue, create another e-mail account in Outlook Express with a
+name other than "MSN Mail" to use with your third-party ISP e-mail account.
+
+For information about creating e-mail accounts in Outlook Express, click Content
+And Index on the Help menu, click the Index tab, type adding mail accounts, and
+then click Display.
+
+MORE INFORMATION
+================
+
+To send and receive e-mail using your third-party ISP in Outlook Express, use
+the following steps:
+
+1. Double-click the Outlook Express icon on the desktop.
+
+2. Click Send And Receive.
+
+3. Click the third-party ISP e-mail account.
+
+For more information about how to configure Outlook Express to send and receive
+Internet e-mail please see the following article in the Microsoft Knowledge
+Base:
+
+   Q171163  How to Configure Outlook Express for Internet Mail
+
+Additional query words: msnet msnetwork microsoft-net m.s.n. outexw95
+
+======================================================================
+Keywords          : kbenv kbmsn 
+Technology        : kbMSNSearch kbMSN500 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

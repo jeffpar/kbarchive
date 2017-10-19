@@ -1,0 +1,81 @@
+DOCUMENT:Q197891  16-JUL-1999  [iis]
+TITLE   :Enumerating the Names of IIS Web Sites Using WSH
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Windows NT Option Pack (NTOP) and Internet Information Server
+(IIS) version 4.0, Web sites are added to the server using the Microsoft
+Management Console (MMC). Each new Web site is given a number in the metabase,
+and this number is used by IIS when logging and FrontPage when installing
+extensions. It is sometimes desirable to know which number corresponds to a
+given Web site.
+
+MORE INFORMATION
+================
+
+The following code was written using Windows Script Host (WSH) and lists all Web
+sites by their short metabase path and name.
+
+To use this script, follow these steps:
+
+1. Copy the following code into Notepad, and then save it to your computer as a
+   file called W3sites.vbs:
+
+         Dim objW3SVC, objSITE, strOUT
+         Set objW3SVC = GetObject("IIS://LOCALHOST/W3SVC")
+
+         If (Err <> 0) Then
+         strOUT = "Error " & Hex(Err.Number) & "("
+         strOUT = strOUT & Err.Description & ") occurred."
+         Else
+         For Each objSITE In objW3SVC
+         If objSITE.class = "IIsWebServer" Then
+         strOUT = strOUT & "LM/W3SVC/" & objSITE.Name & Chr(9)
+         strOUT = strOUT & Chr(34) & objSITE.ServerComment
+         strOUT = strOUT & Chr(34) & Chr(13) & Chr(10)
+         End If
+         Next
+         End If
+
+         WScript.Echo strOUT
+
+2. To run the code, open a command prompt, and then type the following command:
+
+      CSCRIPT.EXE W3SITES.VBS
+ 
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

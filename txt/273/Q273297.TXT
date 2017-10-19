@@ -1,0 +1,66 @@
+DOCUMENT:Q273297  28-JAN-2001  [exchange]
+TITLE   :XWEB: No Warning  When Creating an Incorrect Appointment
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Outlook Web Access (OWA) with Internet Explorer 5.x or an earlier
+version of a browser such as Internet Explorer 4.x or Netscape Navigator 4.x,
+and you create an appointment that occurs in the past, a warning message that
+alerts the user of the error is not displayed. However, when you use an Outlook
+client to create an appointment that occurs in the past, a warning message is
+displayed.
+
+This issue may enable users to create appointments for past dates and times by
+accident.
+
+WORKAROUND
+==========
+
+To avoid creating appointments that occur in the past, verify that you have
+entered the correct date and time on the New Appointment form before you save
+the appointment.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange 2000 Server.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Component         : WebClient
+Technology        : kbExchangeSearch kbExchange2000Search kbExchange2000Serv
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

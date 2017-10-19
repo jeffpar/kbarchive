@@ -1,0 +1,61 @@
+DOCUMENT:Q304187  22-OCT-2001  [iis]
+TITLE   :Cannot Select Mapped Drives on the Home Directory Tab
+PRODUCT :Internet Information Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services, version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On the Home Directory tab in the Browse For Folder dialog box, mapped drives
+appear even though they cannot be selected.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce This Behavior:
+
+1. Create a network drive.
+2. Open the Internet Service Manager.
+3. Click Web Sites, click Default Web Site Properties, and then click the Home
+   Directory tab.
+4. Click A directory located on this computer.
+5. Click Browse... to open the Browse For Folder dialog box.
+
+Additional query words: iis 5.1 mapped drive network 5
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis510
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q173537  09-AUG-2001  [winnt]
+TITLE   :Compex PNP NE2000 Compatible NIC May Cause Event ID 7000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbhw kbnetwork kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Windows NT on a computer using the Compex NE2000-compatible
+network interface card (NIC), the network may not start and the system event log
+may contain the following error message:
+
+   Event ID: 7000
+   Source : Service Control Manager
+   Description: A device attached to the system is not functioning.
+
+CAUSE
+=====
+
+The default configuration for the Compex NE2000-compatible adapter is for Plug
+and Play functionality. For proper operation with Windows NT, the Compex NE2000
+must use explicit configuration settings.
+
+WORKAROUND
+==========
+
+To work around this problem, use the MS-DOS setup utilities that come with the
+adapter to disable the Plug and Play setting. Set the card to an available IRQ
+and base I/O address, then remove and reinstall the Windows NT network adapter
+driver.
+
+MORE INFORMATION
+================
+
+The third-party product discussed here is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding the product's
+performance or reliability.
+
+Additional query words: PNP
+======================================================================
+Keywords          : kberrmsg kbhw kbnetwork kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

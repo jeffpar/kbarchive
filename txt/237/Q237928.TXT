@@ -1,0 +1,68 @@
+DOCUMENT:Q237928  22-JUN-2001  [exchange]
+TITLE   :XCLN: ErrMsg. w/Microsoft Mail Service: File Is Current in Use
+PRODUCT :Microsoft Exchange
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set up a Microsoft Mail Service for use with Outlook, you may receive
+the following error message when you attempt to send or receive mail from a
+Microsoft Mail postoffice or a Workgroup postoffice (WGPO):
+
+   File is currently in use.
+
+CAUSE
+=====
+
+Rights on the postoffice folder (such as Wgpo0000 for a Workgroup postoffice)
+are set to Read Only and the folder cannot be written to.
+
+RESOLUTION
+==========
+
+Change the rights on the postoffice folder to Full Access for everyone.
+
+MORE INFORMATION
+================
+
+Like a Microsoft Mail postoffice, a Workgroup postoffice is a "Store and
+Forward" flat file database. As a message is passed through the postoffice,
+files are constantly being created, modified, and deleted within the subfolders
+of the postoffice.
+
+Additional query words: 8.0 8.01 8.02 8.03 8.04 8.5 9.0
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : :; WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q150289  16-DEC-1999  [homemm]
+TITLE   :Bookshelf 96 Setup: Internet Explorer Status Incorrect
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Microsoft Internet Explorer 2.0 without using the Bookshelf
+Setup, the Setup Add/Remove option does not accurately report the Internet
+Explorer 2.0 installation status.
+
+For example, if you do a "Typical" Bookshelf installation, Internet Explorer is
+not installed. Later, when you click on an Internet reference in Bookshelf, you
+are asked if you want to install Internet Explorer. If you install it and later
+run Bookshelf Setup, Setup searches for "installed components" and then
+indicates Internet Explorer 2.0 is not installed.
+
+STATUS
+======
+
+This behavior does not indicate a problem with Bookshelf or Internet Explorer,
+and will not cause a problem if you install Internet Explorer again from
+Bookshelf Setup.
+
+MORE INFORMATION
+================
+
+Internet Explorer has its own Setup program. Unless Bookshelf Setup is used to
+start Internet Explorer Setup, the program does not show as an Bookshelf
+Setup-installed component.
+
+Additional query words: 1995 '96 96 multi media multimedia multi-media mmtitles kbmm kbsetup
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1996 kbBookShelf1997
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

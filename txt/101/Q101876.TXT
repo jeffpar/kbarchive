@@ -1,0 +1,252 @@
+DOCUMENT:Q101876  08-DEC-1999  [homemm]
+TITLE   :Dinosaurs: Manual Installation Instructions
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides instructions to manually install Microsoft Dinosaurs
+version 1.0.
+
+MORE INFORMATION
+================
+
+These instructions assume:
+
+ - Your hard disk is drive C
+
+ - Your destination folder is C:\Msdinos
+
+ - Your Windows folder is C:\Windows
+
+ - Your CD-Rom drive is drive D
+
+If your hard disk drive, destination folder, Windows folder, or CD-ROM drive
+letters are different, replace the drive letters and folder names throughout
+this article with the drive letters and folder names on your computer.
+
+NOTE: The following instructions discuss copying, editing, and modifying folders
+and files. For more information about accomplishing these tasks in Windows, see
+your Windows printed documentation or online Help.
+
+Steps for Windows or Windows for Workgroups, Versions 3.x
+---------------------------------------------------------
+
+If you are running Microsoft Windows 3.x, follow these steps. When copying files,
+exit Windows and copy from the MS-DOS command prompt. Allow MS-DOS to overwrite
+any files it finds already on your hard drive.
+
+1. Create a folder on your hard drive named C:\Msdinos.
+
+   For example, type the following at the MS-DOS command prompt and press ENTER
+   at the end of the line:
+
+   "md c:\msdinos" (without the quotation marks)
+
+2. Copy the following files from the D:\Xfiles folder to the C:\Msdinos folder:
+    - Msdinos.exe
+
+    - Msdinos.the
+
+      For example, to copy Msdinos.exe, type the following at the MS-DOS command
+      prompt and press ENTER at the end of the line:
+
+   "copy d:\xfiles\msdinos.exe c:\msdinos" (without the quotation marks)
+
+3. Copy the following file in D:\Xfiles folder to the C:\Windows\System folder:
+    - Vbrun200.dll
+
+4. Copy all the files from the D:\Xfiles\Drivers folder to the C:\Windows\System
+   folder. The files are:
+    - Msacm.drv
+
+    - Mmp.dll
+
+    - Mciavi.drv
+
+    - Dispdib.dll
+
+    - Msadpcm.acm
+
+    - Msvidc.drv
+
+    - Msvideo.dll
+
+    - Mcimmp.drv
+
+    - Indeo.drv
+
+    - Iccvid.drv
+
+5. Use a text editor, such as Microsoft Notepad, to make the following changes
+   to the Msdinos.ini file, which is located in the Windows folder. If the
+   Msdinos.ini file does not already exist, create one in the Windows folder
+   with these entries:
+
+      [DINOS]
+      CD=D:
+      COMMAND=C:\MSDINOS\MSDINOS.THE
+      DIRECTORY=C:\MSDINOS\ 
+      UNCPATH=
+      VIDEOINWINDOW=0
+      FIRSTVIDEOINWINDOW=0
+      WINDOW=80,60
+
+6. Use a text editor to make the following changes to the Windows information
+   files, which are located in the Windows folder:
+
+   Changes to the Win.ini File
+   ---------------------------
+
+      [MCI EXTENSIONS]
+      avi=avivideo
+
+   Changes to the System.ini File
+   ------------------------------
+
+      [Drivers]
+      wavemapper=msacm.drv
+      vidc.msvc=msvidc.drv
+      vidc.cvid=iccvid.drv
+
+      [MSACM]
+      install=msadpcm.acm
+
+      [MCI]
+      avivideo=mciavi.drv
+
+7. Add the Dinosaurs icons to Program Manager by following the instructions at
+   the end of this article.
+
+8. Exit Windows and restart the computer. The installation is now complete.
+
+Steps for Windows 95 or Windows NT
+----------------------------------
+
+Follow these steps if you are using Microsoft Windows 95 or Microsoft Windows NT.
+When copying files, DO NOT overwrite ANY existing files.
+
+CAUTION: Allowing the system files to be overwritten in Windows 95 or Windows NT
+may cause improper system performance.
+
+1. Create a folder named C:\Msdinos on your hard drive.
+
+2. Copy the following files from the D:\Xfiles folder to the C:\Msdinos folder:
+    - Msdinos.exe
+
+    - Msdinos.the
+
+3. Copy the following file in located in the D:\Xfiles folder to the
+   C:\Windows\System (System32 in NT) folder:
+    - Vbrun200.dll
+
+4. Copy the following files from the D:\Xfiles\Drivers folder to the
+   C:\Windows\System (System32 in NT) folder:
+    - Mmp.dll
+
+    - Mcimmp.drv
+
+5. Use a text editor, such as Microsoft Notepad, to make the following changes
+   to the Msdinos.ini file, which is located in the Windows folder. If the
+   Msdinos.ini file does not already exist, create one in the Windows folder
+   with these entries:
+
+      [DINOS]
+      CD=D:
+      COMMAND=C:\MSDINOS\MSDINOS.THE
+      DIRECTORY=C:\MSDINOS\ 
+      UNCPATH=
+      VIDEOINWINDOW=0
+      FIRSTVIDEOINWINDOW=0
+      WINDOW=80,60
+
+6. Add the program icons or shortcuts using the appropriate section below as a
+   guide.
+
+Create the Start Menu Shortcuts
+-------------------------------
+
+If you are using Windows 95, add Dinosaurs to the Start Menu by following these
+instructions:
+
+1. Click the Start button, point to Settings, and then click the Taskbar.
+
+2. Click the Start Menu Programs tab.
+
+3. Click Add.
+
+4. Type the following in the Command Line box, and then click Next:
+
+   "c:\msdinos\msdinos.exe" (without the quotation marks)
+
+5. In the Select Program Folder dialog box, click on the Microsoft Multimedia
+   folder to select it, and then click Next.
+
+   NOTE: If Microsoft Multimedia is not listed, create it as follows:
+   a. Click New Folder
+
+   b. Type in the following, and then click Next:
+
+   "Microsoft Multimedia" (without the quotation marks)
+
+6. In the Select A Title For The Program dialog box, type the following, and
+   then click Finish:
+
+   "Microsoft Dinosaurs" (without the quotation marks)
+
+Create Program Manager Icons
+----------------------------
+
+If you use the Windows Program Manager, create the Dinosaurs icons as follows:
+
+1. Open the Microsoft Multimedia group. If this group does not already exist,
+   create it as follows:
+   a. On the File menu, click New.
+
+   b. Click Program Group, and then click OK.
+
+   c. In the Description box, type the following, and then click OK:
+
+   "Microsoft Multimedia" (without the quotation marks)
+
+2. On the File menu, click New.
+
+3. Click Program Item, and then click OK.
+
+4. Type in the Description and Command Line as listed below, and then click OK:
+
+   Description:       Microsoft Dinosaurs
+   Command Line:      c:\msdinos\msdinos.exe
+
+Additional query words: 1.0multi media multimedia multi-media mmtitles kbmm install create
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,79 @@
+DOCUMENT:Q175427  08-NOV-2001  [homegame]
+TITLE   :Full Court Press: DirectX: Conflict With ThinkPad Video Driver
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run NBA Full Court Press in the standard "window" mode, the NBA Full
+Court Press window is black during gameplay. Only the title bar and scoreboard
+are visible.
+
+RESOLUTION
+==========
+
+Install an updated video driver, or use the compatible display driver "Trident
+Super VGA".
+
+Press the F4 key on your keyboard to run the program "full-screen" mode.
+
+NOTE: On a laptop screen, the program will appear centered on the display. This
+is because the LCD screen has a fixed 800 x 600 pixels resolution. This is
+normal behavior. The game's "full-screen" mode uses 640 x 480 pixels.
+
+MORE INFORMATION
+================
+
+If the game appears to stop responding (hang) when you attempt to close it, try
+the following steps:
+
+1. Press the F4 key on your keyboard to run the program in a window.
+
+2. Use the ALT+F4 key combination to quit the program.
+
+   or -
+
+   Press the ESC key to open the Options menu.
+
+3. Click Quit Game.
+
+This problem was observed with the video drivers for the IBM ThinkPad (Cyber9320)
+and ThinkPad (Cyber9385/82) VL drivers version 4.0 DirectX certified version
+4.00.00.0490. The drivers used the following files:
+
+ - Xgivdd95.vxd v. 1.00
+ - Xgiw95a.drv v. 1.00
+
+Additional query words: fcp black screen window mode
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay 
+Technology        : kbGamesSearch kbZNotKeyword kbNBAFullCourtPress
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

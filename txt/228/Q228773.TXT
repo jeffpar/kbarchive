@@ -1,0 +1,66 @@
+DOCUMENT:Q228773  16-JUL-1999  [homegame]
+TITLE   :Baseball 2000: Cannot See Player Photos in General Manager
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Baseball 2000 General Manager utility, you may be
+unable to see player photos.
+
+CAUSE
+=====
+
+This behavior can occur if you select the Typical or Minimum option when you
+install Baseball 2000.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove and reinstall Baseball 2000. When you are prompted
+to select an installation option, click Complete.
+
+MORE INFORMATION
+================
+
+The Complete installation option requires approximately 519 megabytes (MB) of
+available hard disk space.
+
+NOTE: In addition to the 519 MB of disk space used by Baseball 2000, Microsoft
+recommends that you maintain at least 50 MB of available space on the hard disk
+on which Windows is installed. Windows uses this disk space to provide virtual
+memory for Windows and Windows-based programs.
+
+Additional query words: 1.00 msgame bball2000 bball2k gm mgr pictures pics
+
+======================================================================
+Keywords          : kbsetup kbtool kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

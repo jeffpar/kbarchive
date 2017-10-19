@@ -1,0 +1,74 @@
+DOCUMENT:Q310615  09-MAY-2002  [sms]
+TITLE   :SMS: Datalodr Cannot Process Inventory from Japanese Windows XP
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP3
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Hardware inventory information from Systems Management Server (SMS) clients that
+run the Japanese version of Microsoft Windows XP may not be inserted in the
+database. If you review the SMS\Logs\Datalodr.log file, you may see entries that
+are similar to:
+
+   ~SQL Msg #105> Unclosed quotation mark before the character string
+
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+Windows XP support was added to SMS 2.0 in SMS 2.0 Service Pack 3 (SP3). This
+problem is known to occur only with Japanese-language versions of Windows XP.
+The problem does not occur with Japanese language versions of Microsoft Windows
+2000 or with English-language versions of Windows XP.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200SP3
+Version           : :2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

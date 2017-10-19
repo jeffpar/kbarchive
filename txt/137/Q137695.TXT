@@ -1,0 +1,73 @@
+DOCUMENT:Q137695  08-AUG-2001  [winnt]
+TITLE   :Proteon 1390 Fails to Initialize During Installation
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Windows NT Setup on your computer with a Proteon 1390 Token Ring
+adapter installed, errors appear during the initialization of the Proteon 1390
+Token Ring adapter and the adapter initialization fails.
+
+RESOLUTION
+==========
+
+To work around this problem, do one of the following:
+
+ - If you do not plan to set up Windows NT Server as a backup domain controller
+   (BDC):
+
+   Ignore the errors during Setup and continue with the installation.
+   The driver functions properly after you reboot your computer in spite of the
+   errors during Setup.
+
+   -or-
+
+ - If you plan to set up Windows NT as a BDC:
+
+   It is necessary that your adapter initializes during Setup so it can contact
+   the primary domain controller (PDC) for security purposes. For this reason,
+   temporarily install another supported Token Ring adapter before you run
+   Windows NT Setup. After Windows NT is installed, replace the existing adapter
+   and driver with the Proteon 1390 adapter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.5 and
+3.51. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,188 @@
+DOCUMENT:Q141874  14-NOV-2000  [word97]
+TITLE   :WD97: Some Contact List Fields Not Available to Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop kbualink97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the "Use Address Book" feature in a mail merge document, only some
+fields from the contacts list are available to Word.
+
+CAUSE
+=====
+
+Some fields in the contacts list do not contain messaging application program
+interface (MAPI) properties; therefore, the converter (Wwpab.cnv) that Word uses
+to interpret the information from the Personal Address Book does not recognize
+these fields.
+
+
+MORE INFORMATION
+================
+
+For additional information on using contact lists with Word, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q164401 OL97: Fields Missing Inserting a Contact into Word
+
+
+   Q167770 OL97: Field Differences Between Outlook and Word Mail Merge
+
+
+The following table lists the properties supported by the converter, including
+which address books they can be used with. A maximum of 12 properties can be
+used at one time.
+
+For additional information on how to use these properties, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q134901 How to Modify the Layout of an Address Book Entry
+
+
+If a field you require is listed in this list but does not appear when you use
+insert address, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q164401 Fields Missing Inserting a Contact Into Word
+
+
+                                                          Which address
+                                                          book these
+                                                          properties are
+Property                     Explanation                  used with
+--------------------------------------------------------------------------
+
+PR_ADDRTYPE                  Addressee's electronic mail  PAB, Schedule+,
+                             address type                 Outlook
+
+PR_BEEPER_TELEPHONE_NUMBER   Addressee's beeper           PAB, Schedule+,
+                             telephone number             Outlook
+
+PR_BUSINESS_FAX_NUMBER       Addressee's business fax     Schedule+,
+                             number                       Outlook
+
+PR_CAR_TELEPHONE_NUMBER      Addressee's car telephone    Outlook
+                             number
+
+PR_CELLULAR_TELEPHONE_NUMBER Addressee's cellular         PAB, Schedule+,
+                             telephone number             Outlook
+
+PR_COMMENT                   Text included on the Notes   PAB, Schedule+
+                             tab for the address entry
+
+PR_COMPANY_NAME              Name of the addressee's      PAB, Schedule+,
+                             company                      Outlook
+
+PR_COUNTRY                   Addressee's country          PAB, Schedule+,
+                                                          Outlook
+
+PR_DEPARTMENT_NAME           Name of addressee's          PAB, Schedule+,
+                             department within the        Outlook
+                             company
+
+PR_DISPLAY_NAME              The name displayed in the    PAB, Schedule+,
+                             Address Book dialog box      Outlook
+
+PR_EMAIL_ADDRESS             Addressee's electronic mail  PAB , Schedule+,
+                             Address                      Outlook
+
+PR_GIVEN_NAME                Addressee's given name, or   PAB, Schedule+,
+                             first name                   Outlook
+
+PR_HOME_FAX_NUMBER           Addressee's home fax number  Outlook
+
+PR_HOME_TELEPHONE_NUMBER     Addressee's home telephone   PAB, Schedule+,
+                             number                       Outlook
+
+PR_INITIALS                  Addressee's initials         Not Available
+
+PR_LOCALITY                  Addressee's city or          PAB, Schedule+,
+                             locality                     Outlook
+
+PR_LOCATION                  Addressee's location         Schedule+
+                             Example: "16/3000" ,room
+                             3000 in building 16
+
+PR_OFFICE_LOCATION           Addressee's office location  PAB, Schedule+,
+                                                          Outlook
+
+PR_OFFICE_TELEPHONE_NUMBER   Addressee's office           PAB, Schedule+,
+                             telephone number             Outlook
+
+PR_OFFICE2_TELEPHONE_NUMBER  Addressee's second office    PAB, Schedule+,
+                             telephone number             Outlook
+
+PR_OTHER_TELEPHONE_NUMBER    Addressee's  alternate       Outlook
+                             telephone number (other
+                             than home or office)
+
+PR_POSTAL_CODE               Addressee's postal code      PAB, Schedule+,
+                                                          Outlook
+
+PR_PRIMARY_FAX_NUMBER        Addressee's primary fax      PAB and Outlook
+                             number
+
+PR_PRIMARY_TELEPHONE_NUMBER  Addressee's primary          PAB , Schedule+
+                             telephone number
+
+PR_RADIO_TELEPHONE_NUMBER    Addressee's radio telephone  Outlook
+                             number
+
+PR_STATE_OR_PROVINCE         Addressee's state or         PAB, Schedule+,
+                             province                     Outlook
+
+PR_STREET_ADDRESS            Addressee's street address   PAB, Schedule+,
+                                                          Outlook
+
+PR_SURNAME                   Addressee's surname, or      PAB, Schedule+,
+                             last name                    Outlook
+
+PR_TITLE                     Addressee's job title        PAB, Schedule+,
+                                                          Outlook
+
+The following table lists the fields that are unavailable for use in Microsoft
+Word.
+
+                                                         Address book
+                                                         these fields
+Property                     Explanation                 are in
+-----------------------------------------------------------------------
+
+<PR_DISPLAY_NAME_PREFIX>     prefix  Mr., Dr., etc.      Outlook
+
+
+Additional query words: word97 word8 8.0 winword Spouse Birthday Anniversary mailmerge mail merge
+
+======================================================================
+Keywords          : kbinterop kbualink97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

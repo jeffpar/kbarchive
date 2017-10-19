@@ -1,0 +1,91 @@
+DOCUMENT:Q306749  12-NOV-2001  [homemm]
+TITLE   :ENC2002: ShockWave Script Error When You Double-Click Back
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia Deluxe 2002, version 1.0 
+ - Microsoft Encarta Encyclopedia Standard 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002 - DVD Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you visit the following Interactivities
+
+   - City Climate
+   - Population chart
+
+and then double-click the Back button, you may receive the following message:
+
+   Shockwave
+   Script error. Continue?
+   Yes No
+
+If you do not click either Yes or No, you receive the following error message:
+
+   One or more core application components are not functioning properly. Some
+   features of Encarta Encyclopedia will not work. Click OK to continue without
+   fixing the problem. Click Cancel to exit the encyclopedia.
+
+If you click Cancel, you receive the following Watson error message:
+
+   Encarta 2002 has encountered a problem and needs to close. We are sorry for
+   the inconvenience.
+
+   AppName: enc2002.exe
+   AppVer: 11.0.1013.809
+   ModName: unknown
+   ModVer: 0.0.0.0
+   Offset: 6906ee8f
+
+CAUSE
+=====
+
+This behavior occurs when you click the Back button twice.
+
+RESOLUTION
+==========
+
+To resolve this issue when you use the Back button, click the button only once.
+Wait for a response before you click Back a second time.
+
+To work around this issue, click Yes or OK when you receive the initial script
+error message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: ERL ERS
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbEncartaSearch kbMMSearch kbEncartaRef2002 kbEncartaEncyc2002 kbEncartaEnCyc2002Del kbEncartaRef2002DVD
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

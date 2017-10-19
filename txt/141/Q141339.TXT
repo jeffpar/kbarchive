@@ -1,0 +1,62 @@
+DOCUMENT:Q141339  19-FEB-2002  [exchange]
+TITLE   :XCLN: Err Msg: Form You Selected Could Not be Displayed
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may get the following error message when you try to compose or read a
+Microsoft Exchange Electronic Forms Designer form:
+
+   The form you selected could not be displayed. There is not enough disk space
+   to copy the form to your computer. Close some forms to increase the maximum
+   space for forms using the option command on the tools menu. [80040119]
+
+CAUSE
+=====
+
+The problem can be caused by insufficient temporary storage space allocated for
+the form. The default size permitted is 1024 kilobytes (KB). Therefore,
+electronic forms larger than approximately 1 megabyte (MB), the temporary
+storage size, will have to be increased.
+
+RESOLUTION
+==========
+
+To increase the temporary storage space for forms in the Microsoft Exchange
+client, select Tools, Options, Exchange Server page, and increase the Temporary
+storage for forms field.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

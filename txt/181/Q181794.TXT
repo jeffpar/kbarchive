@@ -1,0 +1,71 @@
+DOCUMENT:Q181794  09-AUG-2001  [winnt]
+TITLE   :Stop 0x00000050 Caused by Remotely Possible Software
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A computer running Windows NT 4.0 may display the following blue screen STOP
+error message:
+
+   STOP 0x00000050 (f205f000 00000000 00000000 00000000)
+   PAGE_FAULT_IN_NONPAGED_AREA
+
+NOTE: The first parameter may change depending on the system configuration. The
+last three parameters are always zeros.
+
+CAUSE
+=====
+
+Remotely Possible software replaces Vga.dll and Msgina.dll with Rp32ntvx.dll
+(where x is a number between 1 to 6 depending, on the system configurations) and
+Logonrem.dll respectively.
+
+RESOLUTION
+==========
+
+
+To resolve this problem, copy Vga.dll and Msgina.dll over Rp32ntvx.dll and
+Logonrem.dll respectively.
+
+MORE INFORMATION
+================
+
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

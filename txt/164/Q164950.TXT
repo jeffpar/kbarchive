@@ -1,0 +1,65 @@
+DOCUMENT:Q164950  04-AUG-2001  [visualc]
+TITLE   :INFO: LIBMOTO for PowerPC May Improve Application Performance
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbCRT kbVC kbHWPowerPC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Motorola has made available a static library, LIBMOTO, which may improve
+performance of some PowerPC applications built using Microsoft Visual C++.
+Linking with LIBMOTO replaces the following C Runtime Functions:
+
+   * cos                    * pow
+   * exp                    * sin
+   * log                    * sqrt
+   * log10                  * strcmp
+   * memcpy                 * strlen
+   * memmove                * strncmp
+
+The memory and string functions have been hand-tuned in PowerPC assembly language
+for high performance. The math functions contain some tables and algorithms that
+are proprietary to Motorola. Applications that make heavy use of the above CRT
+functions may see an improvement in performance.
+
+MORE INFORMATION
+================
+
+LIBMOTO was originally released as part of the Motorola C/C++ SDK. Motorola is
+making LIBMOTO available as a stand-alone product free of charge to encourage
+PowerPC development. LIBMOTO may be downloaded from Motorola's Website at:
+
+   http://www.mot.com/SPS/PowerPC/library/fact_sheet/libmoto.html
+
+Additional query words: PowerPC CRT
+
+======================================================================
+Keywords          : kb3rdparty kbCRT kbVC kbHWPowerPC 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

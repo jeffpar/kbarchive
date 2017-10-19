@@ -1,0 +1,68 @@
+DOCUMENT:Q186945  22-JUN-2001  [exchange]
+TITLE   :XCLN: How To Calculate a Future Date Using Outlook
+PRODUCT :Microsoft Exchange
+PROD/VER::8.0,8.01,8.02,8.03; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Outlook it is possible to do some basic date calculations using natural
+language arguments with the date picker. The same procedure can be used to
+calculate meeting requests and tasks dates as well.
+
+MORE INFORMATION
+================
+
+When you set up an appointment or task, it is sometimes necessary to calculate a
+date in the future for an appointment or for a task. For example, to create an
+appointment 15 days from today's date, perform the following steps:
+
+1. Click on the New Appointment button to open an appointment window.
+
+2. In the Start Time dialog box, type "15 days" (without the quotation marks) in
+   the date field and hit Enter.
+
+3. The start date will now show the date 15 days from today's date.
+
+This will also work for days other than today's date if you choose that date from
+the date picker first, and then create a new appointment typing in a valid date
+argument. Outlook will calculate the appropriate date.
+
+Valid arguments that can be used are days, months, and years.
+
+The same procedure can be used with the Meeting Request form and the Task form.
+
+Additional query words: 8.5
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97 kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : :8.0,8.01,8.02,8.03; WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

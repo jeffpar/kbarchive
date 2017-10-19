@@ -1,0 +1,61 @@
+DOCUMENT:Q81047  11-JUN-1999  [win16sdk]
+TITLE   :INFO: Microsoft Drag-Drop Server Strategy
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly _IK kbSDKPlatform kbShellGrp
+
+======================================================================
+3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows version 3.1 supports a drag-drop protocol that enables an application to
+be the client of File Manager. When an application implements the drag-drop
+feature, a user can select one or more files in File Manager, drag them to a
+client application, and drop them. At this point, the client application
+receives a message and it can determine which files were dropped and the exact
+location at which the files were dropped.
+
+At present, version 3.1 of the File Manager is the only server application that
+supports the drag-drop protocol. Although no Windows function is available to
+enable an application to become a drag-drop server, Microsoft intends to provide
+this functionality in a future release of Windows.
+
+The drag-drop interface mechanism will change to provide additional functionality
+that can be used by a future server application to support application
+cooperation and shell integration. The new mechanism will continue to support
+the Windows 3.1 drag-drop client protocol.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly _IK kbSDKPlatform kbShellGrp 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

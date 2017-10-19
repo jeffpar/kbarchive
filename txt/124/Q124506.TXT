@@ -1,0 +1,48 @@
+DOCUMENT:Q124506  07-SEP-2001  [homekids]
+TITLE   :Explorapedia: Banded Output Using Hewlett Packard DeskJet
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrintingkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+ - Microsoft Explorapedia series: World of People for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to a Hewlett-Packard DeskJet series printer, you may receive some
+banding of colors on the printout.
+
+RESOLUTION
+==========
+
+Update to version 5.0 or later of the Hewlett Packard DeskJet printer driver.
+
+Additional query words: 1.00 hewlett packard desk jet dj hpdj hpdeskjet 3.0 3.1 4.0 xplor kids mskids 550c 560c 500c 540c people tad 550 560 500 540 tadpole hp
+
+======================================================================
+Keywords          : kbprint kbPrinting kbfaq
+Technology        : kbHomeMMsearch kbZNotKeyword2 kbExplorapediaNature100 kbExplorapediaPeople100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

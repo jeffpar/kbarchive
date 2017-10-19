@@ -1,0 +1,201 @@
+DOCUMENT:Q112806  26-OCT-1999  [win95x]
+TITLE   :TrueType Font Pack 2 for Windows v1.0a (3.5" 1.44 MB)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the disk directory listing for the TrueType Font Pack 2
+for Windows, version 1.0a 3.5-inch 1.44-megabyte disk set.
+
+MORE INFORMATION
+================
+
+Disk 1 - Disk Assy 209-651-011
+
+   Volume in drive A is FP2-10A-01
+   Volume Serial Number is 273F-09CA
+   Directory of A:\
+
+ANNOUNCE WR_           833 05-15-93   2:00a
+ANTQUA   FI_           420 05-15-93   2:00a
+ARIAL    FI_           426 05-15-93   2:00a
+ARIALN   FI_           357 05-15-93   2:00a
+AUGSBURG FI_           593 05-15-93   2:00a
+BASKVILL FI_           609 05-15-93   2:00a
+BELL     FI_           548 05-15-93   2:00a
+BELL     TT_        64,872 05-15-93   2:00a
+BELLI    TT_        60,566 05-15-93   2:00a
+BIZLETTR WR_         1,427 05-15-93   2:00a
+BOOKOS   FI_           580 05-15-93   2:00a
+BRAGGA   FI_           442 05-15-93   2:00a
+BRIEMSCR FI_           622 05-15-93   2:00a
+BRITANIC FI_           559 05-15-93   2:00a
+CASTELAR FI_           502 05-15-93   2:00a
+CENTAUR  FI_           704 05-15-93   2:00a
+CENTAUR  TT_        64,712 05-15-93   2:00a
+CERTIF   WR_           971 05-15-93   2:00a
+CONBRSH  FI_           691 05-15-93   2:00a
+COUR     FI_           638 05-15-93   2:00a
+DESDEMON FI_           490 05-15-93   2:00a
+ECKMANN  FI_           451 05-15-93   2:00a
+EDDA     FI_           366 05-15-93   2:00a
+EDDA     TT_        77,193 05-15-93   2:00a
+ELEPHNT  FI_           775 05-15-93   2:00a
+EUROSTI  FI_           571 05-15-93   2:00a
+FAST     BA_         5,030 05-15-93   2:00a
+FAST     EX_        95,036 05-15-93   2:00a
+FAST     HL_        57,030 05-15-93   2:00a
+FAST     IN_         5,030 05-15-93   2:00a
+FONT002  IN_         3,709 05-15-93   2:00a
+FONT002  MS_         9,639 05-15-93   2:00a
+FONTNAME DL_         3,058 05-15-93   2:00a
+FORMINV  WR_           871 05-15-93   2:00a
+FUTURA   FI_           742 05-15-93   2:00a
+GILSANUB FI_           731 05-15-93   2:00a
+GOTHIC   FI_           535 05-15-93   2:00a
+GRADL    FI_           467 05-15-93   2:00a
+HARNGTON FI_           492 05-15-93   2:00a
+HELPEXIT DL_        18,845 05-15-93   2:00a
+IMPACT   FI_           495 05-15-93   2:00a
+INFINV   WR_           801 05-15-93   2:00a
+LATINWD  FI_           342 05-15-93   2:00a
+LBLACK   FI_           530 05-15-93   2:00a
+LBRITE   FI_           550 05-15-93   2:00a
+LCALLIG  FI_           531 05-15-93   2:00a
+LFAX     FI_           673 05-15-93   2:00a
+LHANDW   FI_           534 05-15-93   2:00a
+LMATH1   FI_           729 05-15-93   2:00a
+LMATH2   FI_           729 05-15-93   2:00a
+LMATH3   FI_           729 05-15-93   2:00a
+LOCALIZE INC         1,738 05-15-93   2:00a
+LSANS    FI_           600 05-15-93   2:00a
+LTYPE    FI_           674 05-15-93   2:00a
+MISTRAL  FI_           673 05-15-93   2:00a
+MISTRAL  TT_        77,630 05-15-93   2:00a
+MSCOMSTF DL_        43,693 05-15-93   2:00a
+MSCPYDIS DL_         7,835 05-15-93   2:00a
+MSCPYDIS IN_         2,101 05-15-93   2:00a
+MSCUISTF DL_        46,497 05-15-93   2:00a
+MSDETECT IN_         4,726 05-15-93   2:00a
+MSDETSTF DL_        15,564 05-15-93   2:00a
+MSINSSTF DL_        42,160 05-15-93   2:00a
+MSSHLSTF DL_         8,832 05-15-93   2:00a
+MSTTFONT IN_           718 05-15-93   2:00a
+MSUILSTF DL_         4,214 05-15-93   2:00a
+MTCORSVA FI_           590 05-15-93   2:00a
+MTSORTS  FI_           517 05-15-93   2:00a
+NEWCAL   FI_           726 05-15-93   2:00a
+OLDENGL  FI_           495 05-15-93   2:00a
+OLDENGL  TT_        72,019 05-15-93   2:00a
+ONYX     FI_           372 05-15-93   2:00a
+OVERHEAD WR_           800 05-15-93   2:00a
+PARADE   FI_           323 05-15-93   2:00a
+PEIGNOT  FI_           315 05-15-93   2:00a
+PLAYBILL FI_           455 05-15-93   2:00a
+PROPOSAL WR_         2,026 05-15-93   2:00a
+PSCRIPT  DR_       138,519 05-15-93   2:00a
+RANSOM   FI_           540 05-15-93   2:00a
+RANSOM   TT_        60,515 05-15-93   2:00a
+README   TXT         9,369 05-15-93   2:00a
+RESUME   WR_         2,078 05-15-93   2:00a
+SCHLBK   FI_           667 05-15-93   2:00a
+SETUP    EXE        24,624 05-15-93   2:00a
+SETUP    INI           149 05-15-93   2:00a
+SETUP    LST           900 05-15-93   2:00a
+SETUPAPI IN_        13,713 05-15-93   2:00a
+SSFLYFNT HL_         6,811 05-15-93   2:00a
+SSFLYFNT SC_        20,915 05-15-93   2:00a
+STENCIL  FI_           406 05-15-93   2:00a
+STOP     FI_           395 05-15-93   2:00a
+SYMBOL   FI_           418 05-15-93   2:00a
+TIMES    FI_           584 05-15-93   2:00a
+VER      DL_         6,307 05-15-93   2:00a
+VGABMP   DL_        72,563 05-15-93   2:00a
+WINGDING FI_           345 05-15-93   2:00a
+WINGDING TT_        52,494 05-15-93   2:00a
+WRITE    IC_           285 05-15-93   2:00a
+_MSSETUP EX_         7,543 05-15-93   2:00a
+_MSTEST  EX_        55,370 05-15-93   2:00a
+
+      100 file(s)      1,300,579 bytes
+
+Disk 2 - Disk Assy 209-651-012
+
+   Volume in drive A is FP2-10A-02
+   Volume Serial Number is 272F-09CA
+   Directory of A:\
+
+AUGSBURG TT_        52,600 05-15-93   2:00a
+BASKVILL TT_        38,731 05-15-93   2:00a
+BELLB    TT_        60,585 05-15-93   2:00a
+BRAGGA   TT_        27,330 05-15-93   2:00a
+BRIEMSCR TT_        32,037 05-15-93   2:00a
+BRITANIC TT_        24,954 05-15-93   2:00a
+CASTELAR TT_        35,206 05-15-93   2:00a
+CONBRSH  TT_        39,056 05-15-93   2:00a
+CONBRSHB TT_        39,402 05-15-93   2:00a
+DESDEMON TT_        42,008 05-15-93   2:00a
+ECKMANN  TT_        39,967 05-15-93   2:00a
+ELEPHNT  TT_        35,136 05-15-93   2:00a
+ELEPHNTI TT_        38,502 05-15-93   2:00a
+EUROSTI  TT_        26,359 05-15-93   2:00a
+EUROSTIB TT_        25,926 05-15-93   2:00a
+FUTURA   TT_        30,006 05-15-93   2:00a
+FUTURAB  TT_        27,460 05-15-93   2:00a
+FUTURAO  TT_        30,758 05-15-93   2:00a
+GILSANUB TT_        26,629 05-15-93   2:00a
+GRADL    TT_        34,335 05-15-93   2:00a
+HARNGTON TT_        52,112 05-15-93   2:00a
+IMPACT   TT_        43,066 05-15-93   2:00a
+LATINWD  TT_        28,135 05-15-93   2:00a
+NEWCAL   TT_        51,165 05-15-93   2:00a
+NEWCALB  TT_        51,589 05-15-93   2:00a
+NEWCALI  TT_        50,425 05-15-93   2:00a
+ONYX     TT_        59,198 05-15-93   2:00a
+PARADE   TT_        46,445 05-15-93   2:00a
+PEIGNOT  TT_        23,283 05-15-93   2:00a
+PLAYBILL TT_        28,202 05-15-93   2:00a
+RANSOMB  TT_        51,814 05-15-93   2:00a
+RANSOMBI TT_        51,863 05-15-93   2:00a
+RANSOMI  TT_        50,859 05-15-93   2:00a
+STENCIL  TT_        33,406 05-15-93   2:00a
+STOP     TT_        20,356 05-15-93   2:00a
+WINGDNG2 TT_        39,582 05-15-93   2:00a
+WINGDNG3 TT_        17,818 05-15-93   2:00a
+
+       37 file(s)      1,406,305 bytes
+                          41,472 bytes free
+
+Additional query words: 3.10 1.00a contents list true type fontdir
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

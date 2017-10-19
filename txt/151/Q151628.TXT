@@ -1,0 +1,76 @@
+DOCUMENT:Q151628  13-JUN-2001  [sna]
+TITLE   :TN3270E May Get Unexpected Application Exception Violations
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The SNA Server 2.11 Service Pack 1 Tn3270E Server may experience access
+violations when more than two thousand clients are connected to the TN3270
+Server.
+
+If this occurs, the SNA Server TN3270E service will log the following event into
+the Microsoft Windows NT application event log:
+
+   Event Id:5
+
+   The TN3270E Service has abnormally terminated.
+
+   EXPLANATION
+   An exception (0xC0000005) has occurred that has caused the TN3270E
+   Service to terminate.
+
+   ACTION
+   Record message and contact technical support.
+
+CAUSE
+=====
+
+The TN3270E Server will start to write beyond the bounds of one of its arrays
+when more than 2000 users are connected to the server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server for Windows
+NT versions 2.11 and 2.11.sp1. A fix to this problem is in development, but has
+not been regression-tested and may be destabilizing in production environments.
+Microsoft does not recommend implementing this fix at this time. Contact
+Microsoft Product Support Services for more information on the availability of
+this fix.
+
+Additional query words: 2.11 tn3270
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

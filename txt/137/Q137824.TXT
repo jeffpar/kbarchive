@@ -1,0 +1,86 @@
+DOCUMENT:Q137824  17-DEC-2000  [win95x]
+TITLE   :"Invalid Vxd" Error Message Starting Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95, you may receive the following error message:
+
+   Error: Invalid VxD
+
+Your computer may then stop responding (hang) with a cursor in the upper left
+corner of a black screen.
+
+When this occurs, you can start Windows 95 in Safe mode, but there is no mouse
+support.
+
+CAUSE
+=====
+
+This problem can occur if you are using an Acecad Mouse Pad tablet. When you
+install the Acecad Mouse Pad tablet, the installation program makes a change to
+the System.ini file that is not compatible with Windows 95.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. Restart your computer in Safe mode. To do so, restart your computer, press
+   the F8 key when you see the "Starting Windows 95" message, and then choose
+   Safe Mode Command Prompt Only from the Startup menu.
+
+2. Type the following line to change to the Windows folder, and then press
+   ENTER
+
+   " cd <windows> " (without the quotation marks)
+
+   where <windows> is the path to the Windows folder.
+
+3. Type the following line and then press ENTER:
+
+   " edit system.ini " (without the quotation marks)
+
+4. Disable the following line in the [386Enh] section of the file by placing a
+   semicolon (;) at the beginning of the line:
+
+   " mouse=vsermd.386 " (without the quotation marks)
+
+5. Save and then close the System.ini file.
+
+6. Restart your computer. Windows 95 will start normally without a mouse.
+
+To resolve this problem, contact Acecad to inquire about obtaining updated
+drivers for Windows 95.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

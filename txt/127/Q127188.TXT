@@ -1,0 +1,57 @@
+DOCUMENT:Q127188  07-DEC-2001  [ssafe]
+TITLE   :DOC: SourceSafe Undocumented Command Line Switches
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbsetup kbdocerr kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310 kbSSafe304
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following command line switches were not documented in the SourceSafe
+version 3.0 Command Line Reference or the SourceSafe 3.1 Reference Manuals:
+
+ - When you use the -O@<filename> switch, the at character (@) with the -O
+   switch sends standard errors to the file as well as SourceSafe output
+
+ - When you use the -o&<filename> switch, the ampersand character
+   (&) with the -O switch suppresses the 'SourceSafe Output' window in the
+   Windows and Windows NT Command Line executables.
+
+ - When you use the -exitcode switch, SourceSafe outputs an exitcode.
+
+Combining these switches allows for automated macros that do not require
+intervention from the user. For example:
+
+   SS GET $/build -r -o@&bldreslt.txt -exitcode
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbdocerr kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310 kbSSafe304 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

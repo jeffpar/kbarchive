@@ -1,0 +1,82 @@
+DOCUMENT:Q138254  09-SEP-1999  [sms]
+TITLE   :Memory Leak in SQL Server 6.0 Affects SMS
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Windows NT running Systems Management Server may experience the following:
+
+ - Gradually run out of virtual memory causing slowed performance.
+
+ - Stopped processing of alerts, jobs, and other critical functions of Systems
+   Management Server.
+
+CAUSE
+=====
+
+The problems can occur on systems running any one of the following
+combinations:
+
+ - Windows NT 3.5x with Systems Management Server 1.1 and SQL 4.21a
+
+ - Windows NT 3.5x with Systems Management Server 1.1 and SQL 6.0
+
+In short, any combination which is using the NTWDBLIB.DLL with a 6.0.x version.
+
+The account being used to connect to SQL Server has an out-of-date password. When
+Systems Management Server processes attempt to connect to SQL Server using an
+out-of-date password, the SQL 6.0 NTWDBLIB.DLL's dbopen() function leaks 32K.
+Because Systems Management Server processes attempt to connect quite often to
+perform processing, memory can be consumed at a rapid rate until the system runs
+out of virtual memory. The "Unable to allocate virtual memory" error message
+appears.
+
+
+RESOLUTION
+==========
+
+To avoid the memory leak, ensure that the password set in SQL matches the
+password being used by the Systems Management Server processes. Logon failures
+caused by a password problem can render the site inoperable.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SQL Server version
+6.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: sql prodnt prodsms sms
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

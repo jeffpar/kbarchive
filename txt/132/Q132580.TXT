@@ -1,0 +1,73 @@
+DOCUMENT:Q132580  17-DEC-2000  [win95x]
+TITLE   :Cannot Start Windows 95 After Installing Close-Up
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Close-Up, you receive the following error message when you
+start Windows 95:
+
+   Cannot find a device file that may be needed to run Windows. Make sure that
+   the path...
+
+The file that cannot be found is Vddvga.vxd.
+
+CAUSE
+=====
+
+Close-Up must change the video driver in order to support desktop display on a
+remote computer. However, Close-Up does not modify the Windows system files
+directly. Instead, it installs a terminate-and-stay-resident (TSR) program that
+watches for an application trying to read the System.ini file (as Windows 95
+does at startup). When Windows 95 reaches the display driver line in the
+System.ini file, the TSR steps in and patches the read operation on the fly.
+However, the file that the patch references (Vddvga.vxd) is not part of Windows
+95.
+
+RESOLUTION
+==========
+
+Since no changes were made to the system files there is no workaround. Windows
+95 is not a supported platform for the Host side of Close-Up, but does work as a
+Guest workstation. Norton-Lambert plans to release a version of Close-Up that is
+compatible with Windows 95.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: CloseUp Close Up Norton
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,73 @@
+DOCUMENT:Q259349  22-DEC-2000  [iis]
+TITLE   :IIS Binds To All Available IP Addresses When It Starts
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbDSupport kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Internet Information Services (IIS) 5.0, IIS appears to bind to
+all Internet Protocol (IP) addresses on a server, not just the IP addresses that
+are assigned to Web sites. In addition, when you run another service that uses
+port 80 on an unused IP address, IIS may return an error.
+
+CAUSE
+=====
+
+To enhance performance, IIS 5.0 uses "socket pooling", in which IIS binds to all
+IP addresses when it starts.
+
+WORKAROUND
+==========
+
+To work around this behavior, disable socket pooling in IIS as follows:
+
+1. At a command prompt, switch to the "C:\InetPub\AdminScripts" folder.
+
+2. Type the following command:
+
+   " CSCRIPT ADSUTIL.VBS SET W3SVC/DisableSocketPooling TRUE " (without the
+   quotation marks)
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q238131 How to Disable Socket Pooling
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

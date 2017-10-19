@@ -1,0 +1,70 @@
+DOCUMENT:Q86094  12-NOV-1999  [pcmail]
+TITLE   :PC Win: MSMAIL.INI Entries in [Address Book]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists and explains all the entries in the Microsoft Mail for
+Windows private profile, MSMAIL.INI, that are contained in the [Address Book]
+section.
+
+[Address Book]
+
+Default ID Data=<byte count>
+----------------------------
+
+This entry holds the length of the default directory Name Service Identifier
+(NSID) entry. It is written automatically by the address book whenever the user
+changes preference as to default directory. You should not change it under any
+circumstances.
+
+Directory ID=<string of hex bytes>
+----------------------------------
+
+This is the value of name service identifier for the directory the user chooses
+as the default, that is, the directory that's displayed when the address book
+dialog is opened. It is written automatically by the address book whenever the
+user changes preference as to default directory. You should not change it under
+any circumstances.
+
+Directory Name=<default directory name>
+---------------------------------------
+
+This is the name of the directory the user chooses as the default, that is, the
+one that's displayed when the address book dialog is opened. It is written
+automatically by the address book whenever the user changes preference as to
+default directory. You should not change it.
+
+Additional query words: 3.00 3.00b 3.20 Address Book
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

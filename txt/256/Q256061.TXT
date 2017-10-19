@@ -1,0 +1,67 @@
+DOCUMENT:Q256061  06-AUG-2002  [winnt]
+TITLE   :Cannot Log On Using SMTP Name After Running the Exchange MA
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to log on to Microsoft Metadirectory Services (MMS) from the
+Compass client by using your Simple Mail Transfer Protocol (SMTP) name. When you
+attempt to log on with your SMTP name, the following error message may be
+displayed:
+
+   Invalid name
+
+CAUSE
+=====
+
+Running the Exchange management agent (or any other management agent that has
+the ability to update user SMTP names) can cause your SMTP name to change. The
+server no longer recognizes your previous logon name.
+
+RESOLUTION
+==========
+
+Log on with Compass to MMS by using the new SMTP name (for example,
+<MyNewUsername>@<MyDomain>.com) or your distinguished name (for
+example, cn=<MyUsername>,ou=<MyOU>,dc=<MyDomain>,dc=com).
+
+For additional information about troubleshooting 'Invalid Name' error messages,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q251245 'Invalid Name' Error Message When Logging On to MMS with Compass
+
+Additional query words: MMS Zoomit VIA Metadirectory
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

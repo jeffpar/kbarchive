@@ -1,0 +1,68 @@
+DOCUMENT:Q83993  06-NOV-1999  [win16sdk]
+TITLE   :PRB: No Files Copied Installing Windows SDK 3.1
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the process of installing the Windows 3.1 Software Development Kit (SDK),
+no files are copied to the destination hard disk.
+
+CAUSE
+=====
+
+The hard disk does not have enough free space. Although the amount of hard disk
+space required varies depending on the components installed, from 9.6 to 24.3
+(MB) megabytes are required. The installation program requires 4 additional MB
+for scratch space.
+
+RESOLUTION
+==========
+
+Delete files to create free hard-disk space.
+
+MORE INFORMATION
+================
+
+The disk space requirements may preclude installing version 3.1 of the Windows
+SDK over a previous version of the Windows SDK. If so, delete the previous
+version of the Windows SDK, then install the Windows SDK version 3.1.
+
+For more information on installing the Windows SDK version 3.1, including an
+article that provides the recommended installation procedure, query on the
+following words in the Microsoft Knowledge Base:
+
+   " windows and sdk and setupinst " (without the quotation marks)
+
+Additional query words: 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

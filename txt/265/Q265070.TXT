@@ -1,0 +1,71 @@
+DOCUMENT:Q265070  22-JUN-2001  [exchange]
+TITLE   :XCLN: Error Message Occurs When You Reply to Or Forward E-mail
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 97 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Outlook 97 and Outlook 98, when you attempt to reply to or forward an e-mail
+message, you may receive the following error message:
+
+   Cannot load the template for the item. Please reinstall Microsoft Outlook.
+
+CAUSE
+=====
+
+This behavior can occur if the folders or files in the C:\Program
+Files\Microsoft Office\Office\Headers folder have been moved or deleted.
+
+RESOLUTION
+==========
+
+To resolve this issue, copy the C:\Program Files\Microsoft Office\Office\Headers
+folder from a working machine to the affected machine.
+
+You can also remove and reinstall Outlook to regenerate the Headers folder and
+its contents, but this is not required if you have access to a functioning
+Headers folder from another machine.
+
+MORE INFORMATION
+================
+
+This issue can occur when you install an Outlook 97 or Outlook 98 program that
+has a damaged or missing Headers folder. The issue occurs regardless of the mail
+message format you use for editing. When this issue occurs, new e-mail messages
+can still be created. This error message does not occur in Outlook 2000.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:; :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

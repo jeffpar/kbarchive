@@ -1,0 +1,56 @@
+DOCUMENT:Q200401  04-MAR-1999  [sms]
+TITLE   :SMS: Remote Control Uses TCP Instead of UDP
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server 1.2 uses User Datagram Protocol (UDP) for socket-based
+Remote Control sessions. UDP is a datagram-based protocol. It is an unreliable,
+or best-effort protocol that does not verify that packets are not received out
+of order, lost, or corrupted. Consequently, UDP-based Remote Control was prone
+to connectivity problems.
+
+With Systems Management Server 2.0, socket-based Remote Control now uses
+Transmission Control Protocol (TCP). TCP is a stream-oriented protocol. TCP
+breaks the transmission into smaller sizes, retransmits lost packets, reorders
+out of order packets, and filters any extra packets that might occur if the
+transmission is faulty. Consequently, TCP is more reliable than UDP.
+
+Remote Control performance across a wide area network (WAN) is improved in
+Systems Management Server 2.0 over 1.x when using sockets-based Remote Control
+because routers tend to give TCP packets a higher priority for transmission.
+
+Additional query words: prodsms ulitizes rc32
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

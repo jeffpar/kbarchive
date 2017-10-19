@@ -1,0 +1,60 @@
+DOCUMENT:Q111284  08-AUG-2001  [winnt]
+TITLE   :Service Pack 2 Backup Program Doesn't Back Up Registry Hives
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Backup program included in U.S. Service Pack 2 does not back up registry
+hives.
+
+WORKAROUND
+==========
+
+To temporarily work around this problem, install an earlier version of the
+Backup program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in U.S. Service Pack 2 for Windows
+NT and Windows NT Advanced Server version 3.1. This problem was corrected in the
+latest U.S. Service Pack. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt failure broke
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search kbWinNTW310Search
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

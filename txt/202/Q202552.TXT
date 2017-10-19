@@ -1,0 +1,65 @@
+DOCUMENT:Q202552  12-MAY-2000  [sms]
+TITLE   :SMS: Time Synchronizing an SMS Site Server with SQL Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbtool kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the system time on the Systems Management Server (SMS) Site Server and the
+Microsoft SQL Server become different, SMS may begin to experience operational
+problems such as difficulties distributing software.
+
+CAUSE
+=====
+
+This issue can occur because SMS does not provide any checks that confirm that
+accuracy of the time on the SMS site server in relation to a time server or a
+SQL server.
+
+WORKAROUND
+==========
+
+To work around this issue, the Microsoft Windows NT Resource Kit includes a tool
+that can install a "time service" to synchronize the time on the server, even if
+no one is logged in, or ever logs in. Please view the Windows NT Resource Kit
+documentation for installation and configuration instructions for the
+Timeserv.exe tool. Administrators could use the Timeserv.exe tool to synchronize
+the servers automatically. For additional information about how to set up a
+Windows NT Server as a Time server, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q131715 How to Set Up And Synchronize with Domain Time Source Servers
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbsms200 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

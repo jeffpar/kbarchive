@@ -1,0 +1,59 @@
+DOCUMENT:Q85638  12-NOV-1999  [win95x]
+TITLE   :WRK Flowchart Incorrectly States SMARTDrive Cache
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 17, chart 1.8, of the "Microsoft Windows Resource Kit" (WRK) guide for
+Windows 3.1 states the following in the fifth flowchart step:
+
+   Note: The SMARTDrive command line can be edited to allow caching of "stacked"
+   volumes by adding a +<drive> (where <drive> is a "stacked"
+   volume). If caching...
+
+The +<drive> parameter is incorrect. The correct command line syntax to
+turn on the SMARTDrive disk cache is as follows:
+
+   C:\WINDOWS\SMARTDRV.EXE <drive>+
+
+MORE INFORMATION
+================
+
+SMARTDrive will automatically detect the existence of Stacker and cache the
+underlying Stacker drive. SMARTDrive should not be used to cache a Stacker
+volume. Typing SMARTDRV /? at the MS-DOS prompt lists the command line
+parameters for SMARTDrive with their meaning.
+
+Additional query words: 3.10 wrk docerr smartdrv smartdrive
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

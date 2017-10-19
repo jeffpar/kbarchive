@@ -1,0 +1,74 @@
+DOCUMENT:Q283282  19-JAN-2001  [sms]
+TITLE   :SMS: Hardware Inventory Reports Wrong Disk Size in Windows 95/98
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Systems Management Server (SMS) 2.0 Hardware Inventory to obtain
+hard disk parameters on clients that are running Microsoft Windows 95 or
+Microsoft Windows 98 and have a hard disk that is larger than 8 gigabytes (GB),
+the size is reported as 8 GB regardless of the actual disk size.
+
+CAUSE
+=====
+
+SMS 2.0 clients are installed with Windows Management Instrumentation (WMI)
+version 698 by default. This version of WMI uses standard INT13 calls to query
+the disk size. INT13 calls have a known limitation of 7.8 GB.
+
+WORKAROUND
+==========
+
+To work around this issue, install WMI version 1.5 (build 1085) on the clients
+that are running Windows 95 or Windows 98. WMI 1.5 uses INT13 Extensions to
+query the disk parameters and reports the disk size correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information about WMI 1.5, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q262317 SMS: Windows Management Instrumentation 1.5 Support in Systems
+   Management Server 2.0 SP2
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

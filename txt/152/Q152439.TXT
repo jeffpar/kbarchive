@@ -1,0 +1,52 @@
+DOCUMENT:Q152439  26-SEP-2001  [exchange]
+TITLE   :XADM: How to Tell if Exchange a Has Service Pack Installed
+PRODUCT :Microsoft Exchange
+PROD/VER::2000,4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+ - Microsoft Exchange 2000 Server 
+ - Microsoft Small Business Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To determine is a Microsoft Exchange Server has installed Service Pack 1 (SP1),
+check the properties of the server.
+
+MORE INFORMATION
+================
+
+To view the properties of a server, click to select the server in the left-hand
+pane of the Admin program. Then click Properties on the File menu. You will see
+the version, build number, and any service packs that are installed.
+
+Additional query words: running SP1 install
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbExchange2000Search kbSBServSearch kbZNotKeyword3 kbExchange2000Serv kbSBServ2000
+Version           : :2000,4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,118 @@
+DOCUMENT:Q78433  17-DEC-2000  [msdos]
+TITLE   :Detailed Explanation of EMM386.EXE Switches
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the following EMM386.EXE switches for MS-DOS 5.0 or
+later:
+
+   W=on/off
+   Mx
+   FRAME=
+   /Pmmmm
+   Pn=address
+   X=
+   I=
+
+This article explains these switches in-depth, and describes some of the
+differences and limitations associated with the switches. There is also a
+separate note regarding the use of X= and I= to maximize available UMB space.
+
+W=on/off
+--------
+
+This switch enables or disables support for the Weitek 3167 math coprocessor. If
+W=on, MS-DOS 5.0 must be loaded low because the HMA will be used by the
+coprocessor.
+
+The Weitek coprocessor and the Intel coprocessor use different methods of passing
+instructions and results back and forth to the 80386/80486 chip controlling the
+system. The Intel chips do not reside in the memory space of the CPU. The Weitek
+chip is memory-mapped; it appears to take up a certain amount of space in
+extended memory, but the area of memory it uses is the HMA. Because the HMA is
+also the location used to load the MS-DOS 5.0 kernel high, the Weitek processor
+cannot be used while MS-DOS 5.0 is loaded high. Therefore, if the W=on switch is
+used, the DOS=HIGH command will be unusable and MS-DOS must be loaded low.
+
+Mx/FRAME=/Paddress versus Pn=address
+------------------------------------
+
+The Mx, FRAME=address, and /Pmmmm parameters are all essentially equivalent. They
+create a 64K LIM 3.2 compatible page frame at the address specified. The syntax
+for specifying the address for each of these is on page 606 of the version 5.0
+"Microsoft MS-DOS User's Guide and Reference."
+
+The Pn=address parameter allows you to create LIM 4.0 compatible 16K pages. This
+allows you to create 16K pages at any available address in the allowable memory
+ranges (8000-9C00, which is in conventional memory space, or C000-EC00 which is
+part of the upper memory area). Note that multiple uses of this parameter with a
+different value for n will create additional 16K pages (up to a maximum of
+four). These additional pages do not necessarily need to reside in contiguous
+areas of memory with respect to the other pages.
+
+To use LIM expanded memory emulation, a page frame must be created somewhere in
+memory to provide a location for the visible pages of expanded memory to appear
+as they get bank-switched in and out by the applications using EMS.
+
+LIM versions 3.2 and earlier require a 64K contiguous block for use as the page
+frame. LIM 4.0 allows for disjoint page frames of 16K each, and it is not
+necessary to create four frames for a total of 64K. An application written for
+LIM 4.0 can function with a single page of 16K. However, because most expanded
+memory boards in use conform to LIM 3.2 or earlier, very few applications can
+take advantage of the reduced "footprint" capability of LIM 4.0. For these
+applications, it is still necessary to create a 64K LIM 3.2 compatible page
+frame.
+
+X=address and I=address
+-----------------------
+
+These switches force EMM386 to include (I=) or exclude (X=) specific areas of
+memory between A000-FFFF when EMM386 is determining where to place upper memory
+blocks (UMBs) or finding a location for the EMS page frame.
+
+Using I=address can often increase available UMB space by including areas that
+EMM386 was not able to automatically detect. Be careful when using this switch
+to not include memory areas in use by system adapters or ROMs. If these areas
+are included, it may cause the system to hang when booting, or to display other
+unpredictable behavior. You can determine which memory areas are free by using
+memory scanning utilities from several third party vendors, or MSD from
+Microsoft.
+
+The X=address statement is sometimes required to prevent EMM386 from using areas
+that it might otherwise attempt to use, such as RAM on certain network adapters,
+which is otherwise undetectable.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

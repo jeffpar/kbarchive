@@ -1,0 +1,65 @@
+DOCUMENT:Q140391  08-AUG-2001  [winnt]
+TITLE   :NT3.51 SP2 Driver Conflict w/ Diamond Viper PCI and Video Spigot
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51 SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 SP2 
+ - Microsoft Windows NT Server version 3.51 SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An application error "VidCap caused an exception in the Win 16 subsystem" occurs
+when using the Diamond Viper SE PCI video card with Creative Lab's Video Spigot.
+
+CAUSE
+=====
+
+A conflict exists between the Viper video driver and the Spigot capture driver.
+
+WORKAROUND
+==========
+
+Use VGA mode or remove Service Pack 2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 Service
+Pack 2. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: prodnt 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTSsearch kbWinNTS351sp2 kbWinNTW351SP2
+Version           : :3.51 SP2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

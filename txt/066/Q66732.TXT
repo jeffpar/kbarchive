@@ -1,0 +1,77 @@
+DOCUMENT:Q66732  09-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Error Building WIN.COM
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The message "!! Error Building WIN.COM !!" occurs if you run Microsoft Windows
+version 3.0 network setup (SETUP /N) from the Windows Setup Disk (disk 1) or
+from a shared directory if WIN.CNF and/or the appropriate logo file (*.LGO) for
+the display being set up are damaged or missing.
+
+This error message may also be displayed if the Windows Setup program's automatic
+hardware detection feature is having difficulty with hardware recognition. You
+can nclude the /I switch to disable Setup's hardware detection feature. For
+example:
+
+        Setup /I /N
+
+MORE INFORMATION
+================
+
+The size and disk location of the WIN.CNF and logo files are listed below. If
+all 282 files appear to be in the shared directory and you suspect that these
+files are not missing but simply corrupted, you can expand them invidually off
+of the original disks. Otherwise, carefully follow the directions on page
+553-554 of the "Microsoft Windows User's Guide."
+
+NOTE: All the logo files are on the same disk of a given format.
+
+WIN.CNF Size and Disk Location
+------------------------------
+
+Size of
+File            Expanded File   Disk #          Format
+-------         ------------    ------          ------
+
+WIN.CNF         3456            1               1.2 MB, 720K
+                                2               360K
+CGALOGO.LGO      880            2               1.2 MB, 720K
+EGALOGO.LGO     1072            4               360K
+EGAMONO.LGO     1024
+HERLOGO.LGO      976
+VGALOGO.LGO     1120
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

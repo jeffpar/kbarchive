@@ -1,0 +1,62 @@
+DOCUMENT:Q131834  11-DEC-1999  [homemm]
+TITLE   :Baseball Daily 1995 Downloads Have Ended
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Baseball Guide for Windows, 1995 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Baseball Daily 1995 download program ended with the end of the 1995 Baseball
+season. Downloads are not possible after 10/31/95.
+
+From 11/1/95 to 11/15/95, any attempt to download editions can result in a an
+error message similar to the following:
+
+   There was a problem downloading the Baseball Daily file to your HD.
+   Check available disk space.
+
+From 11/16/95 on, if you try to download Baseball Daily, you receive the
+following error message:
+
+   Baseball Daily is not available in the off-season.
+   As a result, we cannot complete your call.
+
+MORE INFORMATION
+================
+
+Baseball Daily uses your computer's system date to determine if the Baseball
+Daily program has ended for the season. After 11/16/95, a pre- programmed
+message occurs. Before this system date, Baseball Daily attempt to dial out, and
+may give an unexpected error message.
+
+Additional query words: kbhowto 1995 mmtitles on-line online errors can't dial access base ball
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1995
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

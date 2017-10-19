@@ -1,0 +1,87 @@
+DOCUMENT:Q230742  26-JUL-2002  [visualc]
+TITLE   :PRB: Text Missing when ActiveX Control Is Based on Rich Edit 2.0
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbCOMt kbCtrlCreate kbMFC kbRichEdit kbVC600 kbVS600 kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Text does not appear when an ActiveX control is based on Rich Edit 2.0.
+
+CAUSE
+=====
+
+The RichEdit20 window proc does not do anything in WM_ERASEBKGND except return
+the value "1", indicating it has erased the background. The WM_PAINT message
+handler is supposed to take care of erasing the background. However, the
+WM_PAINT message handler does not do anything because the update rect is
+(0,0,0,0).
+
+RESOLUTION
+==========
+
+The solution is to invalidate the Rich Edit control's window, and then pass the
+WM_PAINT message to the windows procedure of the Rich Edit 2.0 control. For
+example:
+
+   void CMyRichEditOCX::OnDraw(CDC* pdc, const CRect& rcBounds, const CRect& rcInvalid)
+   {
+   	Invalidate(FALSE);
+   	// DC passed by WM_PAINT is ignored
+   	::CallWindowProc(*m_pfnSuper, m_hWnd, WM_PAINT, (WPARAM)0, (LPARAM)0);
+   }
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The MFC CRichEditCtrl class was designed to support the Rich Edit 1.0 control
+and does not support the Rich Edit 2.0 control.
+
+In order to use Rich Edit 2.0 in an MFC application, call LoadLibrary to load the
+Riched20.dll and access its functionality through the Win32 API.
+
+REFERENCES
+==========
+
+"ActiveX Controls: Subclassing a Windows Control" in the Visual C++ Programmer's
+Guide.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbCtrlCreate kbMFC kbRichEdit kbVC600 kbVS600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :6.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

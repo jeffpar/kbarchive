@@ -1,0 +1,78 @@
+DOCUMENT:Q136107  17-DEC-2000  [win95x]
+TITLE   :TC4045 Token Ring Adapter Detected But Does Not Work
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install a Thomas Conrad TC4045 Token Ring network adapter, the adapter
+is detected properly but may not function because it is assigned the wrong
+resources.
+
+CAUSE
+=====
+
+Windows 95 assigns the factory default IRQ and DMA channel resources for this
+network adapter, which may conflict with other device settings. Windows 95
+assigns a correct base I/O address for the adapter.
+
+RESOLUTION
+==========
+
+To assign the correct IRQ and DMA channel resources for the TC4045 network
+adapter, follow these steps:
+
+1. In Control Panel, double-click the System icon.
+
+2. On the Device Manager tab, click Computer, and then click the Properties
+   button.
+
+3. Click the Interrupt Request (IRQ) option button, and note an available IRQ
+   setting.
+
+4. Click the Direct Memory Access (DMA) option button, and note an available DMA
+   setting.
+
+5. Click Cancel.
+
+6. Double-click the Network Adapters branch to open it, click the TC4045
+   adapter, and then click Properties.
+
+7. On the Resources tab, click the Use Automatic Settings check box to clear it.
+
+8. In the Resource Settings box, click Interrupt Request. Click Change Setting,
+   and then enter the IRQ setting you noted in step 3. Click OK.
+
+9. Repeat step 8 for the DMA channel setting. Click OK until you return to
+   Control Panel.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

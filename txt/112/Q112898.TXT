@@ -1,0 +1,67 @@
+DOCUMENT:Q112898  16-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Notice 31 Error Loading Template
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1x,3.0,3.0a,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1x, 3.0, 3.0a, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a new user to a postoffice address list, the following error may
+occur:
+
+   Notice 31
+   Error Loading Template
+
+CAUSE
+=====
+
+This error can be caused by a corrupted or incorrectly created or modified
+ADMIN.TPL file.
+
+RESOLUTION
+==========
+
+To test for a corrupted or incorrectly edited file:
+
+1. Rename ADMIN.TPL.
+
+   NOTE: This will prevent the system from using it.
+
+2. Create a new test user. If no error messages are generated, the problem
+   probably lies with the file syntax.
+
+3. Restore a valid copy of the ADMIN.TPL file from a backup copy or edit the
+   existing file to ensure that the syntax is correct.
+
+
+Additional query words: 2.10x 3.00 3.0a 3.20 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a kbMailPCN21xSearch
+Version           : WINDOWS:2.1x,3.0,3.0a,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

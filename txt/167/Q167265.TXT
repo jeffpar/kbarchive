@@ -1,0 +1,68 @@
+DOCUMENT:Q167265  23-DEC-1999  [exchange]
+TITLE   :XADM: Missing File New Custom Recipient Option
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are unable to set up a new Custom Recipient. This command is not available
+on the File menu in the Microsoft Exchange Server Administrator program.
+
+CAUSE
+=====
+
+You are using the standard edition of Exchange Server and you have not installed
+any Microsoft Exchange Connectors on this computer running Exchange Server.
+
+RESOLUTION
+==========
+
+To resolve this problem, do one of the following:
+
+ - Install the Microsoft Exchange Server Enterprise Edition, which includes
+   three connectors: Microsoft Exchange Internet Mail Connector, Microsoft
+   Exchange Connector, Microsoft Exchange X.400 Connector.
+
+-OR-
+
+ - Install any of the connectors from the Microsoft Exchange Connector Series
+   (Microsoft Exchange Internet Mail Connector, Microsoft Exchange Connector, or
+   Microsoft Exchange X.400 Connector).
+
+ - If there is no need for this Exchange Server computer to use any type of
+   connector, users can use a shared .pab file that will reside on a server.
+   This will allow users or the administrator to add foreign mail addresses to
+   be used globally.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

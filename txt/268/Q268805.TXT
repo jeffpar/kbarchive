@@ -1,0 +1,64 @@
+DOCUMENT:Q268805  12-NOV-2001  [homegame]
+TITLE   :AoE II Expansion: Computer Hangs During Multiplayer Game
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbenv aoe kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II Expansion: The Conquerors, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a multiplayer game of Microsoft Age of Empires II Expansion: The
+Conquerors on Zone.com or a local area network (LAN), one or more computers may
+temporarily stop responding (hang) and then resume normal game play.
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft Systems Management Server (SMS) is running
+on any one of the computers that are connected to the game.
+
+RESOLUTION
+==========
+
+To resolve the issue, shut down SMS services before you start a multiplayer game
+of Microsoft Age of Empires II Expansion: The Conquerors.
+
+MORE INFORMATION
+================
+
+For additional information about Microsoft Systems Management Server (SMS),
+visit the following Microsoft Web site:
+
+   http://www.microsoft.com/smsmgmt/default.asp
+
+Additional query words: 1.00 aoe2 aok aoeii msgame crash freeze quit lock
+
+======================================================================
+Keywords          : kbenv aoe kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbAOESearch kbAOE2ExpConquerors
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

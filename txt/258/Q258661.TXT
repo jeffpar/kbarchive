@@ -1,0 +1,66 @@
+DOCUMENT:Q258661  31-MAR-2000  [homegame]
+TITLE   :Baseball 2001: Game Graphics Are Distorted or Turn Black
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Baseball 2001, you may experience either of the
+following symptoms:
+
+ - Graphics in the game may be distorted or turn black.
+
+ - The screen may turn black.
+
+CAUSE
+=====
+
+This behavior can occur if a 3Dfx Voodoo-based 3D accelerator card or a 3Dfx
+Voodoo3-based video adapter is installed in your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest version of the video
+driver for your 3D accelerator card or video adapter from the following 3Dfx Web
+site:
+
+   http://www.3dfx.com/
+
+NOTE: If a 3Dfx Voodoo-based 3D accelerator card is installed in your computer,
+you may also need to download and install the latest version of the 3Dfx Voodoo
+Reference driver.
+
+Additional query words: 1.00 msgame bball bb2001 blank scrambled display
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

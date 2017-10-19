@@ -1,0 +1,57 @@
+DOCUMENT:Q118549  02-NOV-1999  [fortran]
+TITLE   :PRB: PowerStation MS-DOS Apps Do Not Start Under Win32s
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Applications created using FORTRAN PowerStation for MS-DOS fail to start from
+File Manager or Program Manager if Win32s is installed. The hourglass appears
+and then goes away, but the application does not start.
+
+CAUSE
+=====
+
+The application is identified as having the Parity Enable (PE) format, so it is
+loaded by the Win32s loader. However, output to the console is not supported, so
+the application does not appear to be running.
+
+RESOLUTION
+==========
+
+Create a program information file (PIF) to start the application. When the PIF
+is run from File Manager or Program Manager, the application is started by
+Windows and runs correctly.
+
+Additional query words: 1.00 nofpsnt 1.00a filemanager launch double-click doubleclick click
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

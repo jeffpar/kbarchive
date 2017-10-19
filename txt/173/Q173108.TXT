@@ -1,0 +1,68 @@
+DOCUMENT:Q173108  07-JAN-2000  [exchange]
+TITLE   :XADM: Mbclean.exe Deletes Outlook Calendar, Contacts, and Tasks
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+If you run the Mbclean.exe utility from the Microsoft BackOffice Resource Kit
+(BORK) to delete all messages over a certain age, Mbclean.exe also deletes
+users' Outlook Calendar, Contacts, and Tasks items.
+
+CAUSE
+=====
+
+The Exchange Resource Kit utility Mbclean.exe, from the Microsoft BackOffice
+Resource Kit, is a tool that deletes all messages older than a certain date.
+Therefore, Mbclean.exe also deletes Calendar, Contact, and Task items you have
+created in Outlook, if those items are older than the number of days specified.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Mbclean.exe in the Microsoft
+BackOffice Resource Kit. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If you have users who store Calendar, Contact, or Task items on the server, you
+should not use the current Mbclean.exe utility from the BackOffice Resource Kit
+to delete all messages over a certain age.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

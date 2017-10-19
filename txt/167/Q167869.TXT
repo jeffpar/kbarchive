@@ -1,0 +1,91 @@
+DOCUMENT:Q167869  10-AUG-2001  [winnt]
+TITLE   :List of Doc Errors in Services for NetWare Administrator's Guide
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Services for NetWare 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists known documentation errors in the Microsoft Services for
+NetWare Administrator's Guide.
+
+The following known documentation errors are described in this article:
+
+ - Page 20, Chapter 1: Version 3.51
+
+ - Page 141, Appendix A: Parameters Available but Not Installed
+
+ - Page 144, Appendix A: Parameters Available but Not Installed
+
+MORE INFORMATION
+================
+
+Page 20, Chapter 1: Version 3.51
+--------------------------------
+
+Step 5 incorrectly states the folder for the administrative tools for File and
+Print Services for NetWare 3.51:
+
+   5. Type the appropriate path, and click OK.
+
+      The path is <drive>:\FPNW\NT40\<processor>, where <drive> is the
+      drive letter of the CD-ROM and <processor> is the server's processor
+      type.
+
+Step 5 should read:
+
+   5. Type the appropriate path, and click OK.
+
+      The path is <drive>:\FPNW\NT351\<processor>, where <drive> is the
+      drive letter of the CD-ROM and <processor> is the server's processor
+      type.
+
+Page 141, Appendix A: Parameters Available but Not Installed
+------------------------------------------------------------
+
+This section includes a description for the EmulateNtfsShareable parameter.
+
+This parameter should read EnableNtfsShareable.
+
+Page 144, Appendix A: Parameters Available but Not Installed
+------------------------------------------------------------
+
+This section includes a description for the NTQueueDirectory parameter. If you
+enable this parameter, you receive the following error message:
+
+   Event ID: 2506
+   Value named "NTQueueDirectory" is not valid or does not exist
+
+This parameter should read QueueDirectory.
+
+Additional query words: fpnw docerr doc err doc error print queue
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbServicesNetwareSearch
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

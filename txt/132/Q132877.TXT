@@ -1,0 +1,52 @@
+DOCUMENT:Q132877  15-NOV-1999  [pcmail]
+TITLE   :PC NTMMTA: RebootOnCE Does Not Work with NT MMTA
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The RebootOnCE EXTERNAL.INI entry can not be used with the Microsoft Mail
+Multitasking MTA for Windows NT (NT MMTA) or the OS/2 MMTA running under
+Microsoft Windows NT.
+
+MORE INFORMATION
+================
+
+This switch is not valid under Windows NT because the redirector will never get
+into a critical error state. If a server is not available, External will get
+into a state where it marks that connection as disconnected and will retry each
+interval regular.
+
+
+Additional query words: 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

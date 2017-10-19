@@ -1,0 +1,65 @@
+DOCUMENT:Q132726  15-FEB-2000  [foxpro]
+TITLE   :How to Enumerate and Open All Tables in a Database Container
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to use the ADBOBJECTS function in a program to
+determine the names of all tables contained within a database container (.DBC
+file), and then use the resulting array to open all tables.
+
+MORE INFORMATION
+================
+
+The following program creates an array (laTableNames) containing the names of
+all the tables in the Tastrade.dbc sample database container. The FOR loop then
+opens each table in its own work area. The name of each table is displayed in
+the upper-right corner of the screen as it is opened.
+
+Code Sample
+-----------
+
+   ** Begin Code Example
+   CLOSE ALL
+   OPEN DATABASE c:\vfp\samples\mainsamp\data\tastrade
+   lnNumOfTables = ADBOBJECTS(laTableNames, "Table")
+   FOR i = 1 to lnNumOfTables
+      WAIT WINDOW "Opening Table " + laTableNames(i) TIMEOUT 2
+      USE laTableNames(i) IN 0
+   ENDFOR
+   SET VIEW ON
+   ** End Code Example
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,74 @@
+DOCUMENT:Q230065  05-AUG-2000  [iis]
+TITLE   :How to Use Virtual Directories for Newsgroups
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To create a virtual directory for a newsgroup, perform the following steps:
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+   Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click Default NNTP Site, click New, and then click Virtual Directory.
+
+3. In the New Virtual Directory Wizard dialog box, type the Newsgroup name, and
+   then click Next.
+
+   NOTE: This is NOT case sensitive.
+
+4. Provide the physical path for the directory, and then click Finish.
+
+From now on, the .nws files for articles in the newsgroup will be stored in the
+specified virtual directory, rather than the default location of
+C:\InetPub\nntpfile\root\<NewsgroupName>.
+
+MORE INFORMATION
+================
+
+If no articles were created for the newsgroup before the virtual directory was
+created, then the .xix subject files will also be stored in the virtual
+directory.
+
+However, if articles did exist before the virtual directory was created, the .nws
+files for those articles, along with the existing .xix subject files, will
+continue to reside in the C:\InetPub\nntpfile\root\<NewsgroupName>
+location.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: folder vdir nntp server akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

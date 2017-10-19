@@ -1,0 +1,60 @@
+DOCUMENT:Q32448  22-JUL-2001  [visualc]
+TITLE   :INFO: Specifying .DEF Files on the CL Command Line
+PRODUCT :Microsoft C Compiler
+PROD/VER:MS-DOS:6.0,6.00a,6.00ax,7.0; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5.
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+    - Microsoft C for OS/2, versions 6.0, 6.0a 
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft C and C/C++ compiler command lines can include files with the
+.DEF, .LIB, and .OBJ filename extensions.
+
+If you specify one or more of these files on the command line, the CL driver
+passes them appropriately as arguments to LINK.EXE. If the name of a file does
+not have an extension, CL treats it as a .OBJ file and appropriately passes it
+to the linker.
+
+The following command line builds an application called MYAPP.EXE by compiling
+MYAPP.C into MYAPP.OBJ, then linking MYAPP.OBJ and MYSUB.OBJ with the MYLIB.LIB
+library and the MYDEF.DEF module definition file:
+
+   cl myapp.c mysub mylib.lib mydef.def
+
+Additional query words: 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbCompiler kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : MS-DOS:6.0,6.00a,6.00ax,7.0; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

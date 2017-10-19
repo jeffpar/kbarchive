@@ -1,0 +1,68 @@
+DOCUMENT:Q93110  07-DEC-1999  [win95x]
+TITLE   :HP DJ500 Draft Mode Required to Print TrueType Fonts in Draft
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If the print quality mode on a Hewlett-Packard (HP) DeskJet 500 printer is set
+for non-draft or letter quality printing, you cannot print TrueType fonts by
+selecting Draft Mode in the Printer Setup dialog box if you are using the
+following printer driver:
+
+ - The HP DeskJet driver version 1.1 that ships with Windows 3.1.
+
+MORE INFORMATION
+================
+
+The HP DeskJet 500 Printer Owner's Manual states that selections made through
+your software always override hardware settings. However, if the printer is
+configured for letter quality output, this setting will override any software
+settings made in Windows 3.1.
+
+If the printer is configured for draft mode, software settings will override the
+hardware settings. Therefore, if the printer is set for draft mode, TrueType
+fonts can be printed in both draft and letter quality.
+
+Printer fonts are not affected and can be overridden by software selections in
+either mode on the HP DeskJet 500.
+
+REFERENCES
+==========
+
+DeskJet 500 Printer Owner's Manual, pages 1-12
+
+
+Additional query words: 3rdparty 3.10 True Type font DJ win31
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

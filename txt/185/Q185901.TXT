@@ -1,0 +1,64 @@
+DOCUMENT:Q185901  31-JUL-2001  [sms]
+TITLE   :SMS: Jobs Will Not Go Active, Invalid JobIDs generated.
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase kbScheduler smsdatabase smsscheduler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a large number of jobs have been processed at a Systems Manager Server site,
+new jobs may fail to go active. The following symptoms may be occur:
+
+ - Software distribution and normal site maintenance tasks cease.
+
+ - All pending jobs in the Systems Management Server Administrator Jobs window
+   remain with a status of Pending. They never go Active.
+
+ - The following error may appear in the Systems Management Server Scheduler log
+   file (<drive>:\Sms\Logs\Sched.log, where <drive> is the logical
+   disk that Systems Management Server is installed on):
+
+   Could not transfer job from secondary to primary source
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 1.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbScheduler smsdatabase smsscheduler 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

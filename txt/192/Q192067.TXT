@@ -1,0 +1,94 @@
+DOCUMENT:Q192067  20-MAY-2002  [win95x]
+TITLE   :PC Card in Dock Not Enumerated When Hot Docking
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2.0,2.1,2.5
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardwarekbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2.0, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a portable computer is ejected from and inserted into its docking station in
+either a "warm-docking" or "hot-docking" operation, 16-bit PC Card devices in
+the docking station may not be enumerated correctly.
+
+CAUSE
+=====
+
+This problem has been reported to occur with the following portable computers
+and docking stations:
+
+ - Hewlett-Packard OmniBook 7100 and OmniBook Full Docking Station
+
+ - IBM ThinkPad 560D and ThinkPad Port Replicator w/Advanced EtherJet feature
+
+ - IBM ThinkPad 380Z and ThinkPad Port Replicator w/Advanced EtherJet feature
+
+The docking stations with which this problem occurs share the characteristic of
+having a separate internal PCI bus that is connected to the laptop computer's
+internal PCI bus through a PCI-to-PCI bridge.
+
+
+RESOLUTION
+==========
+
+
+It is possible to work around this problem by ejecting and reinserting the PC
+Card after docking the computer, following these steps:
+
+1. Double-click the PC Card (PCMCIA) Status icon on the taskbar to display the
+   PC Card (PCMCIA) properties.
+
+2. In the list of sockets, locate the socket that is neither labeled as
+   "(Empty)" nor as containing a PC Card device. Click that socket in the list,
+   and then click Stop.
+
+3. Remove the PC Card from the docking station. You should hear the PC Card
+   removal sound, if such sounds are enabled on your computer.
+
+4. Wait a few seconds, and then reinsert the PC Card. You should hear the PC
+   Card insertion sound, if such sounds are enabled on your computer. The
+   inserted PC Card should appear on the list in PC Card (PCMCIA) properties,
+   and the device should be functional.
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware kbfixlist
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : :2.0,2.1,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

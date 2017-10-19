@@ -1,0 +1,84 @@
+DOCUMENT:Q193258  22-DEC-1999  [exchange]
+TITLE   :XADM: DBCS Text in Bulleted List Not Displayed Properly
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5,5.5 SP1
+OPER/SYS:
+KEYWORDS:exc55sp2fix exc55 exc55sp1
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you send a message that contains a bulleted list of double-byte character set
+(DBCS) text to a computer that is running the U.S. version of Microsoft Exchange
+Server, and then the message is replied to, some of the DBCS text may not be
+displayed correctly when you view the reply in an e- mail client. Note that this
+problem only occurs when the reply is received using Post Office Protocol
+version 3 (POP3).
+
+CAUSE
+=====
+
+This problem occurs when the DBCS text is not converted properly when the
+information store converts the message from Rich Text Format (RTF) to Hypertext
+Markup Language (HTML).
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Component: Information Store
+
+   File Name    Version
+   -----------------------
+   Mdbmsg.dll   5.5.2397.0
+   Store.exe    5.5.2397.0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 2.
+
+
+Additional query words: rtf/html
+
+======================================================================
+Keywords          : exc55sp2fix exc55 exc55sp1 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1
+Version           : winnt:5.5,5.5 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

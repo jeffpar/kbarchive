@@ -1,0 +1,67 @@
+DOCUMENT:Q163544  22-DEC-1999  [exchange]
+TITLE   :XCLN: Mac Client Toggles Focus Between Inbox and Message Window
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+If you paste a large OLE object into a message in the Microsoft Exchange
+Macintosh client, click on the Inbox window, and then immediately back on the
+message window before the paste has completed, the open message window and the
+Inbox window may toggle the focus back and forth.
+
+WORKAROUND
+==========
+
+There are two workarounds for this problem:
+
+1. Wait until the paste operation is completed before clicking back and forth on
+   the Inbox and message windows.
+
+2. Update the Apple System software to version 7.5.5 and add more memory on the
+   system.
+
+Both of these will increase the speed of the paste operation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 4.0, of Microsoft
+Exchange. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac kbExchange400Mac
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,72 @@
+DOCUMENT:Q138984  07-MAY-2001  [visualc]
+TITLE   :Updated Dmn0.dll for Visual C++ 2.0 for Windows 95
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbfile kbpatch kbtool kbDebug kbide
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An updated file named Dmn0.dll is available for users of Visual C++ 2.0 who are
+running Windows 95. This file corrects problems that may occur when running the
+Visual C++ 2.0 debugger in Windows 95. This file also corrects problems that may
+occur when running the Visual C++ 2.0 remote debug monitor in Windows 95 when
+remote debugging is being used. These problems do not occur in versions of
+Visual C++ later than 2.0.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Dmn0.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+MORE INFORMATION
+================
+
+Once you have downloaded and extracted Dmn0.dll, replace the existing file on
+the computer that is running Windows 95. The existing file will be located in
+the Msvc20\Bin directory or the same directory as the other remote debug files
+Msvcmon.exe and Tln0com.dll, depending on the installation.
+
+For more information about remote debugging with Visual C++, please see Chapter
+14, "Using the Debugger," in the Visual C++ User's Guide.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbpatch kbtool kbDebug kbide 
+Technology        : kbVCsearch kbAudDeveloper kbVC200
+Version           : winnt:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

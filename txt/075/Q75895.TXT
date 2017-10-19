@@ -1,0 +1,77 @@
+DOCUMENT:Q75895  26-NOV-1999  [msdos]
+TITLE   :EMM386.EXE Exclude Ranges for IBM Token Ring Card
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using EMM386.EXE on a workstation that is connected to the network by an
+IBM Token Ring card, the card may have trouble initializing if the areas that it
+uses are not excluded in the EMM386.EXE line in the CONFIG.SYS file. One of the
+following exclude statements should be tried:
+
+1. EMM386.EXE X=CC00-CFFF X=D800-DBFF (or X=CC00-DBFF)
+
+2. EMM386.EXE X=D400-D7FF X=DC00-DFFF (or X=D400-DFFF)
+
+MORE INFORMATION
+================
+
+The IBM Token Ring card uses two separate address areas in the upper memory area
+(UMA); one is used to address ROM and the other is used to address RAM. There
+are two possible configurations of these address spaces under the default set
+up:
+
+Primary
+-------
+
+   ROM CC00 (16K)
+   RAM D800 (16K)
+
+Alternate
+---------
+
+   ROM DC00 (16K)
+   RAM D400 (16K)
+
+The ROM address area can be set with the network reference disk or through
+switches on the card. The RAM address area can be set with the LAN support
+program as outlined in the README file that comes with the LAN support program.
+
+The product included here is manufactured by vendors independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+
+Additional query words: 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

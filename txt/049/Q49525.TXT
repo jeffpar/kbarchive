@@ -1,0 +1,57 @@
+DOCUMENT:Q49525  30-JUL-2001  [lanman]
+TITLE   :Ways to Stop LAN Manager 2.x Server or Workstation
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If you cannot stop the server or workstation services for the server local
+console ("access denied" messages), this is because of the strengthening of
+security in OS/2 LAN Manager versions 2.x over earlier releases.
+
+If you are in user-mode security (security = user in LANMAN.INI), you should do
+the following to stop the server or workstation:
+
+1. Log off and immediately log on again, but this time use a user name that is
+   defined as an account with ADMIN privileges for the machine on which you want
+   to stop the server or workstation.
+
+2. If you need information on how to define a new user name as an account name
+   that has ADMIN privileges for the machine on which you want to stop the
+   server or workstation.
+
+If you are in share-mode security (security = share in LANMAN.INI), you should do
+the following to stop the server or workstation:
+
+1. Reboot the machine, and before the workstation or server is started, rename
+   C:\LANMAN\ACCOUNTS\NET.ACC to C:\LANMAN\ACCOUNTS\NETACC.SAV.
+
+2. If necessary, before rebooting the machine, edit STARTUP.CMD or other .CMD
+   files that automatically start the workstation or server. You can press
+   CTRL+C to halt execution of STARTUP.CMD if that is appropriate in your
+   situation.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

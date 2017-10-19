@@ -1,0 +1,86 @@
+DOCUMENT:Q229833  06-AUG-2001  [iis]
+TITLE   :DOC: Syntax Changes with Ad Rotator Component
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0
+OPER/SYS:
+KEYWORDS:kbASP kbGrpDSASP kbDSupport kbIIS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Active Server Pages 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes syntax differences between the Ad Rotator component
+(MSWC.AdRotator) installed with Internet Information Server (IIS) 3.0 and the Ad
+Rotator component installed with Internet Information Server 4.0.
+
+The Ad Rotator component displays advertisements and "rotates" different
+advertisements every time an Active Server Page is displayed.
+
+MORE INFORMATION
+================
+
+The Ad Rotator component installed with IIS 4.0 changes the way properties are
+specified, as well as what values are valid for the TargetFrame property.
+
+The syntax changes from IIS 3.0 to IIS 4.0 are as follows:
+
+ - Changing property setting syntax from Property(value) syntax to Property =
+   value syntax
+
+ - Changing TargetFrame values from the frame name (_top) to a name/value pair
+   (target=_top)
+
+The following is valid VBScript syntax for the IIS 3.0 version of the Ad Rotator
+component:
+
+   <%  
+   Set ad = Server.CreateObject("MSWC.AdRotator") 
+   ad.Clickable(False)
+   ad.Border(0)
+   ad.TargetFrame("_top")
+
+   Response.Write ad.GetAdvertisement("/ads/adrot.txt")
+   %> 
+
+The following is valid VBScript syntax for the IIS 4.0 version of the Ad Rotator
+component:
+
+   <%  
+   Set ad = Server.CreateObject("MSWC.AdRotator") 
+   ad.Clickable = False
+   ad.Border = 0
+   ad.TargetFrame = "target=_top"
+
+   Response.Write ad.GetAdvertisement("/ads/adrot.txt")
+   %> 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbASP kbGrpDSASP kbDSupport kbIIS 
+Technology        : kbiisSearch kbAudDeveloper kbASPsearch kbiis400 kbiis300
+Version           : :3.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

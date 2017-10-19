@@ -1,0 +1,184 @@
+DOCUMENT:Q214593  11-DEC-2001  [winnt]
+TITLE   :Terminal Server w/ Metaframe ICA Client Can't Autocreate Printer
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you connect a locally attached printer and load the printer drivers to the
+local workstation that has a Citrix Metaframe ICA client, you log on to the
+Terminal Server computer. The printer is supposed to be autocreated and
+available to you in the Printers folder of your Terminal Server session. The
+printer does not appear in the Printers folder.
+
+CAUSE
+=====
+
+If the printer driver name on the local workstation does not match the printer
+driver name on the Windows NT Terminal Server computer exactly, the printer will
+not autocreate. This occurs with Windows 95, Windows 98 and any other operating
+system or platform where the printer driver name on the client station does not
+match the printer driver name on the Terminal Server computer. If you are adding
+a new printer that is not native to Terminal Server, and the client and server
+print driver names are different, this problem will also occur.
+
+RESOLUTION
+==========
+
+There is a file on the Terminal Server computer that can be modified to make the
+disparate printer driver names appear to be the same and the autocreate function
+will work.
+
+To make this modification, follow these steps:
+
+1. On the client workstation in local mode, not a Terminal Server session, click
+   Start, click settings, and then click printers. Select the printer that did
+   not autocreate and right-click it. Click Properties and then click the
+   Details tab.
+
+2. Write down the name that appears in the "Print Using the Following Driver"
+   box. This box contains the print driver name. For example, HP DeskJet 1600C
+   ColorSmart.
+
+3. On the Terminal Server computer, click Start, click Settings, and then click
+   Printers.
+
+4. Double-click Add Printer, click to select the My Computer radio button, and
+   then click Next. In the Available Ports box, click to select the LPT1 check
+   box, and then click Next.
+
+5. In the left pane, select the manufacturer of the printer you have installed
+   on your workstation. In the right hand pane, scroll to the model of the
+   printer you have installed on the workstation. For example, HP DeskJet 1600C.
+   This is the server printer driver name for that printer. Write this name
+   down.
+
+   As you can probably see, the workstation printer driver name and the printer
+   driver name on the Terminal Server computer are different. The server driver
+   does not have "ColorSmart" added to it.
+
+6. In the %systemroot%\system32 folder, open the Wtsuprn.txt file. The file is
+   as follows:
+
+ ==========================================================================
+ ; WTSUPRN.TXT 
+ ;
+ ; this is a template for wtsuprn.inf -- rename this file to wtsuprn.inf
+ ;
+ ; this file provides a mapping for client printers which have a name
+ ; different from the server printer.  this file is necessary since many
+ ; printers for Win95 are different from their WinNT equivalent.
+ ;
+ ; Note: the driver for the server printer must be installed.  See the
+ ; WinFrame Concepts and Planning Guide.
+ ;
+ [Identification]
+         OptionType = PRINTER
+ [ClientPrinters]
+ ;
+ ;     Client Name                                  Server Name
+ ;          |                                            |
+ ;          |                                            |
+ ;         \|/                                          \|/ 
+ ;"HP LaserJet 4/4M"                          = "HP LaserJet 4"
+ ;"HP LaserJet 4P/4MP"                        = "HP LaserJet 4P"
+ ;"HP LaserJet 4 Plus/4M Plus"                = "HP LaserJet 4 Plus"
+ ;"HP LaserJet 4Si/4Si MX"                    = "HP LaserJet 4Si"
+ ;"HP LaserJet 4V/4MV"                        = "HP LaserJet 4V"
+ ;"HP LaserJet 5/5M - Enhanced"               = "HP LaserJet 5"
+ ;"HP LaserJet 5/5M - Standard"               = "HP LaserJet 5"
+ ;"HP LaserJet 5/5M PostScript"               = "HP LaserJet 5"
+ ;"HP LaserJet 5L (PCL)"                      = "HP LaserJet 5L"
+ ;"HP LaserJet 5P/5MP (HP)"                   = "HP LaserJet 5P"
+ ==========================================================================
+
+7. Using this exact format, enter the previous information that you gathered
+   from the workstation and the server.
+
+   NOTE: Leave out the semicolon; this is used to remark the line out.
+
+   Make sure you type the right driver under the proper colum. Client name would
+   be the workstation; server name is the Terminal Server computer.
+
+   For example:
+
+ "HP DeskJet 1600C ColorSmart"                = "HP DeskJet 1600C"
+
+8. After making the change, save this file with a .inf extension and then close
+   the Wtsuprn.txt file.
+
+   NOTE: From now on, if you have to add any other printers, add them to the
+   Wtsuprn.inf file.
+
+9. Log off of the Terminal Server computer and log back on. Log your client
+   workstation on to a Terminal Server session and you should now see your
+   printer autocreated in the Terminal Server session printers folder, and you
+   will be able to print to your local printer.
+
+MORE INFORMATION
+================
+
+Installing a New, Non-Native Print Driver
+-----------------------------------------
+
+When you need to install a new print driver to your workstation, you will also
+have to install a print driver to the Terminal Server computer. Install the
+printer on the server as a local printer. Upon completion of the printer
+installation, delete the printer icon from the printer folder. The printer
+driver will be installed on the server and, when you connect the workstation to
+the Terminal Server computer, the new printer will be autocreated. If the print
+driver names are different between the workstation (client) and the server,
+follow the same procedure as above to make them the same.
+
+For information on how to modify these settings for Microsoft Windows 2000
+automatically created printers when using the RDP client, see the following
+article in the Microsoft Knowledge Base:
+
+   Q239088 How to Add Support for Auto-Creation of Windows 98 Client Printers
+   with New Drivers
+
+REFERENCES
+==========
+
+For additional information about Citrix Autocreate features, please visit their
+Solutions Knowledge Base web site at:
+
+Steps Required to Ensure that Client Printers Autocreate Within ICA Sessions;
+Document ID -- CTX681954
+
+http://knowledgebase.citrix.com/cgi-bin/webcgi.exe?New,KB=CitrixKB,Case=Ext(CTX681954)
+1506160,U=1,ST=209,N=0018,K=16031,SXI=3,Case=obj(2599)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

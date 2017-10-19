@@ -1,0 +1,88 @@
+DOCUMENT:Q131536  26-MAY-2001  [homemm]
+TITLE   :Mac Encarta 95: Encarta Fails to Start and Stopwatch Appears
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Encarta, a stopwatch appears and Encarta fails to start.
+
+CAUSE
+=====
+
+You may experience problems starting Encarta if the QuickDraw GX extension is
+installed.
+
+RESOLUTION
+==========
+
+Turn off or remove QuickDraw to resolve your problem.
+
+Turning off the QuickDraw GX Extension
+--------------------------------------
+
+1. From the Apple menu, choose Control Panels.
+
+2. Click Extensions Manager.
+
+3. From the list of extensions, locate QuickDraw GX. Make sure the check box to
+   the left if QuickDraw GX is cleared.
+
+4. Close Extensions Manager.
+
+5. From the Special menu, choose Restart.
+
+Removing QuickDraw GX
+---------------------
+
+1. Open the System Folder.
+
+2. Open the Extensions folder.
+
+3. Locate QuickDraw GX. Drag the extension to the desktop or the Trash.
+
+4. From the Special menu, choose Restart.
+
+MORE INFORMATION
+================
+
+The Encarta ReadMe file, Section 9: Known Problems of Encarta 1995, discusses
+problems with the QuickDraw extension. Please refer to the ReadMe file for more
+information.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: mac 1995 multi media multimedia multi-media mmtitles quick draw clock stop watch hang hung lock locks start-up
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

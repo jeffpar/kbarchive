@@ -1,0 +1,70 @@
+DOCUMENT:Q239539  11-JUN-2002  [iis]
+TITLE   :Change the Certificate Validity Period From Default of One Year
+PRODUCT :Internet Information Server
+PROD/VER::1.0,2.0,4.0
+OPER/SYS:
+KEYWORDS:kbDSupport kbIIS kbiis400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Certificate Server versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Microsoft Certificate Server 1.0
+
+By default, certificates issued by Microsoft Certificate Server 1.0 are valid for
+one year. You can modify the registry values under the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CertSvc\Configuration\<YourCAName>
+
+Default values:
+
+1. ValidityPeriod REG_SZ "Years" (Must be plural!)
+2. ValidityPeriodUnits REG_DWORD 0x1
+3. Set ValidityPeriodUnits to an integer value, from 1-5. Stop, and then
+   restart, the Certificate Server service.
+4. The validity period of a root Microsoft Certificate Server CA certificate is
+   five years for Certificate Server 1.0.
+5. The validity period of a non-root Microsoft Certificate Server CA certificate
+   is controlled by the issuing Certificate Authority.
+6. Certificates issued by your Certificate Server will expire no later than the
+   same time when your CA Certificate expires.
+
+   For example, if there are only two years left on your CA Certificate, issued
+   certificates will be valid for no more than two years, even if you set the
+   registry to issue five year certificates.
+
+Additional query words: Expiry Validity Period
+
+======================================================================
+Keywords          : kbDSupport kbIIS kbiis400 
+Technology        : kbiisSearch kbiis400 kbCertServSearch kbZNotKeyword3 kbCertServ100 kbCertServ200
+Version           : :1.0,2.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

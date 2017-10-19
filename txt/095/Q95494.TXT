@@ -1,0 +1,66 @@
+DOCUMENT:Q95494  22-NOV-1999  [msdos]
+TITLE   :DoubleSpace Err Msg: 'Not Enough Conventional Memory...'
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you start your computer using the interactive startup option in order to free
+enough memory to run the DoubleSpace Stacker conversion option, you may receive
+the following error message after DoubleSpace restarts your computer:
+
+   Not enough conventional memory
+
+MORE INFORMATION
+================
+
+When you start your computer and press the F8, F5, or SHIFT key to free enough
+conventional memory to run the DoubleSpace Stacker converter, you must also use
+the interactive startup option when DoubleSpace restarts your computer. If you
+do not use this option, you will not have enough memory to complete the
+conversion.
+
+If you use the F5 key to bypass the CONFIG.SYS and AUTOEXEC.BAT files, the only
+directory in the PATH environment variable is C:\DOS; therefore, DoubleSpace
+cannot start Stacker.
+
+WORKAROUND
+==========
+
+To work around this situation, either use the F8 key to bypass some of your
+device drives before and during the Stacker conversion process, or remark out
+(REM) some of the device drivers and terminate-and-stay-resident (TSR) programs
+in your CONFIG.SYS file.
+
+Additional query words: 6.00 6.20 reboot boot dblspace
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

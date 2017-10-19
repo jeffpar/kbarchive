@@ -1,0 +1,58 @@
+DOCUMENT:Q251269  22-JUN-2001  [exchange]
+TITLE   :XCLN: Cannot Bcc Recipients Using Rules Wizard
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:2000,97,98
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When creating a rule using the Rules Wizard, there is no option to Bcc
+recipients when a condition is met.
+
+NOTE: The Rules Wizard is available as an add-in for Outlook 97, but is built in
+for Outlook 98 and 2000.
+
+MORE INFORMATION
+================
+
+In the Rules Wizard, you are given the option to list recipients on the To line
+of a message.
+
+In Outlook 2000, for rules that are activated when an item is sent, you can
+specify the Cc line.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:2000,97,98
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,83 @@
+DOCUMENT:Q188331  25-OCT-2001  [vbwin]
+TITLE   :PRB: Opening Property Page Results in "Class Not Registered"
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open the property page for a control, the following error message
+appears:
+
+   Class Not Registered.
+   Looking For Object With CLSID {7EBDAAE1-8120-11CF-899F-00AA00688B10}
+
+NOTE: The actual CLSID might be different.
+
+CAUSE
+=====
+
+One or more of the stock property page objects have not been properly registered
+on the development system.
+
+RESOLUTION
+==========
+
+You need to manually register the Msstkprp.dll file.
+
+Step-by-Step Procedure
+----------------------
+
+1. Copy the Msstkprp.dll file from \OS\System folder on your Visual Basic CD to
+   your Windows\System folder (or the System32 folder if you are using Microsoft
+   Windows NT).
+
+2. Use the RegSvr32 utility to manually register the Msstkprp.dll. On the
+   Windows Start menu, click Run, and then type the following command:
+
+   "Regsvr32 C:\Windows\System\Msstkprp.dll" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+Manually registering the Msstkprp.dll file resolves problems with objects that
+have the following CLSID's:
+
+ - 7EBDAAE1-8120-11CF-899F-00AA00688B10: Stock Color Property Page Object
+ - 7EBDAAE0-8120-11CF-899F-00AA00688B10: Stock Font Property Page Object
+ - 7EBDAAE2-8120-11CF-899F-00AA00688B10: Stock Picture Property Page Object
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

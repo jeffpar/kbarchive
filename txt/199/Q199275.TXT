@@ -1,0 +1,125 @@
+DOCUMENT:Q199275  30-NOV-2000  [mspress]
+TITLE   :Inside SQL Server 6.5: Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Inside Microsoft SQL Server 6.5 ISBN 1-57231-331-5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Inside Microsoft SQL Server 6.5, ISBN
+1-57231-331-5.
+
+The following topics are covered:
+
+ - Page 84, Figure 3-3: Nonclustered Index Should Be Indid > 1
+
+ - Page 85, Figure 3-4: Clustered Index Should Be Indid = 1
+
+ - Page 228: cust_id should be set to NOT NULL
+
+ - Page 303: Last line in query not necessary
+
+MORE INFORMATION
+================
+
+Page 84, Figure 3-3: Nonclustered Index Should Be Indid > 1
+-----------------------------------------------------------
+
+Page 84, figure 3-3:
+A representation of a non-clustered index in sysindexes should be indid >1.
+
+Change: indid = 0
+
+To: indid > 1
+
+
+Page 85, Figure 3-4: Clustered Index Should Be Indid = 1
+--------------------------------------------------------
+
+Page 85, figure 3-4: A representation of the clustered index in sysindexes should
+be indid=1.
+
+Change: indid = 0
+
+To: indid = 1
+
+
+Page 228: cust_id should be set to NOT NULL
+-------------------------------------------
+
+On page 228, cust_id field is specified as IDENTITY, and should not be set to
+NULL. It should be NOT NULL.
+
+Change:
+
+   CREATE TABLE customer 
+   ( 
+   cust_id smallint IDENTITY(100, 20) NULL, 
+   cust_name varchar(50) NOT NULL, 
+   ) 
+
+To:
+
+   CREATE TABLE customer 
+   ( 
+   cust_id smallint IDENTITY(100, 20) NOT NULL, 
+   cust_name varchar(50) NOT NULL, 
+   ) 
+
+
+Page 303: Last line in query not necessary
+------------------------------------------
+
+On page 303, under "Correlated Subqueries", the last line in the example query is
+not necessary, and deleting the last line will not change the results of the
+query.
+
+This example can also be written:
+
+   SELECT T.title_id, title
+   FROM titles T
+   WHERE PRICE <= 19.99
+   and T.title_id IN (
+   SELECT S.title_id FROM sales S, stores ST
+   WHERE S.stor_id=ST.stor_id
+   AND ST.state='CA' AND S.qty*T.price > 250
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ms_press 1-57231-331-5
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

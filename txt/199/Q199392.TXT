@@ -1,0 +1,57 @@
+DOCUMENT:Q199392  22-JUN-2001  [exchange]
+TITLE   :XCLN: Schedule+ View (Username.vue) Settings Overwritten after U
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:7.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade Schedule+ from version 7.0 to version 7.5, some view settings
+are not retained.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Schedule+ version
+7.5.
+
+MORE INFORMATION
+================
+
+View Second Time Zone settings are retained; however, Number of Days will
+default to 1 and Tab Settings defined in Tab Gallery will revert back to the
+default tabs.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule750
+Version           : WINDOWS:7.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

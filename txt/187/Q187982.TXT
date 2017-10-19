@@ -1,0 +1,74 @@
+DOCUMENT:Q187982  24-AUG-1999  [foxpro]
+TITLE   :HOWTO: Change Default Properties for Genhtml
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you do not like the default color and font that the Genhtml program uses when
+you save a form or report to HTML, you can change the color and font in the
+Genhtml.dbf file.
+
+MORE INFORMATION
+================
+
+By default, if you do not call Genhtml programmatically with the style parameter
+to create a Web page, Genhtml creates the page(s) with a silver background and a
+standard font. To change the default color and font try using the following
+sample code:
+
+      USE HOME()+"GENHTML.DBF"
+      LOCATE FOR ID = 'VFPDefault'
+      REPLACE Style WITH 'table{color:red; font-size:18pt;
+      font-family:Arial}', prescript WITH '_oHTML.body.bgColor="blue"'
+      USE
+
+This code changes the default color and text to an 18 point Arial font with red
+text and a blue background. The next time you save an item as HTML, the program
+uses the new color and font.
+
+NOTE: If you cannot find your Genhtml.dbf file, you must run the Genhtml.prg
+program once. The easiest way to do this is to browse a table and from the File
+menu, select "Save As HTML".
+
+REFERENCES
+==========
+
+Visual FoxPro 6.0 Help; search on: "Samples"; topic: "Utilities"
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by David Botzenhart, Microsoft Corporation
+
+
+Additional query words: kbVFp600 kbInternet
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

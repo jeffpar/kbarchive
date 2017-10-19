@@ -1,0 +1,78 @@
+DOCUMENT:Q134246  15-FEB-2000  [foxpro]
+TITLE   :How to Hide the Application Control Box
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To hide the Application Control menu in Visual FoxPro, issue the following
+command in a program or in the Command window:
+
+      _SCREEN.CONTROLBOX=.F.
+
+To get the Application Control menu back, issue this command:
+
+      _SCREEN.CONTROLBOX=.T.
+
+MORE INFORMATION
+================
+
+This works with Visual FoxPro running under Windows 3.x, Windows NT, or Windows
+95.
+
+The Application Control menu in Windows 3.x and Windows NT is the large minus
+sign that appears in the top left of an application's window. It is at the end
+of the title bar for the application. It has commands for:
+
+   Restore
+   Move
+   Size
+   Minimize
+   Maximize
+   Close
+   Switch To
+
+The Application Control menu in Windows 3.x and Windows NT can be accessed by
+clicking the mouse or plressing ALT+Spacebar.
+
+In Windows 95, the Application Control menu is an icon, which for Visual FoxPro
+is a picture of the FoxPro fox. It has the same commands found in Windows 3.x
+except for Switch To. Disabling the Application Control menu in Visual FoxPro
+running under Windows 95 also disables the close box in the top right corner of
+the application's windows (the "x" box).
+
+NOTE: Be sure to allow a way to quit FoxPro or bring back the Application Control
+menu.
+
+Additional query words: 3.00 VFoxWin closebox
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

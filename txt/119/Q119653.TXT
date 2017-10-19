@@ -1,0 +1,62 @@
+DOCUMENT:Q119653  24-JUL-2001  [sna]
+TITLE   :VTAM 3.4.2 PTF UY97878 Solves LU6.2 Problem
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:kbhw kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 kbHar
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you activate and use independent LU6.2 sessions through an IBM 3172
+interconnect controller (configured as an external adapter) attached to VTAM
+version 3.4.2, the LU6.2 session may hang or APPC allocation errors may occur.
+
+SNA Server does not encounter these problems when communicating through an IBM
+37x5 front end processor, to VTAM 3.4.2.
+
+RESOLUTION
+==========
+
+This problem is solved when you apply IBM PTF #UY97878, which includes an update
+to VTAM 3.4.2, when VTAM is implementing a boundary function.
+
+Contact IBM to request this update.
+
+The IBM product discussed here is manufactured by International Business Machines
+Corp. (IBM), a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding this product's performance or reliability.
+
+MORE INFORMATION
+================
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbhw kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 kbHardware 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

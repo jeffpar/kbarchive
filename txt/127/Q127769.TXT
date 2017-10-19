@@ -1,0 +1,76 @@
+DOCUMENT:Q127769  08-NOV-1999  [pcmail]
+TITLE   :PC Win: MoveUser Does Not Change Access Privileges
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use version 3.2 of Microsoft Mail for Windows, you may only have the
+following two address lists available in the Open Directory dialog box:
+
+   Personal Address Book (PAB)
+   Post Office List (POL)
+
+The Global Address List (GAL), as well as Other Post Offices and Gateways, if
+installed, may not available.
+
+RESOLUTION
+==========
+
+The postoffice administrator should modify the user's access privileges to
+include external with the Administration program (ADMIN.EXE), under Local-
+Admin, Modify.
+
+MORE INFORMATION
+================
+
+On page 335 of the Microsoft Mail 3.2 "Administrator's Guide":
+
+   "You can use Move User to move users from Microsoft Windows for Workgroups
+   postoffices, and from Microsoft Mail 2.1 and 3.0 postoffices."
+
+A Windows for Workgroups (WFW) postoffice is not designed to exchange mail with
+other postoffices. Therefore, the users on the WFW postoffice do not have
+external privileges.
+
+If the MoveUser utility, available with version 3.2 of Microsoft Mail for PC
+Networks, is used to move a user from a WFW to a Microsoft Mail for PC Networks
+postoffice, that user will not have external access privileges. The user will
+not be able to view any address lists except for the POL and the PAB.
+
+The mail system administrator must use ADMIN.EXE to modify the user's access
+privileges to include external. Once modified, all normal external address lists
+will be available to the user.
+
+Additional query words: 3.20 missing
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

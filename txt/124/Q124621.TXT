@@ -1,0 +1,69 @@
+DOCUMENT:Q124621  08-AUG-2001  [winnt]
+TITLE   :Scheduled Jobs Cannot Access User Environment Variables
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the Schedule Service runs a job that was previously submitted by running
+the AT utility, the environment space provided to the scheduled job includes
+only the System Environment Variables.
+
+The scheduled job's environment space does not include any User Environment
+Variables.
+
+MORE INFORMATION
+================
+
+To see which environment variables are available to scheduled jobs on your
+machine, first run the following command specifying a <time> that is in
+the near future:
+
+   AT <time> /INTERACTIVE CMD
+
+This will cause a new command window to open as a scheduled job at the specified
+time. Type "SET" (without the quotes) in this command window to obtain a list of
+Environment Variables available to scheduled jobs.
+
+User and System Environment Variables can be defined by running the System applet
+from within Control Panel.
+
+To make environment variables available to scheduled jobs, make sure that they
+are defined as System Environment Variables.
+
+After modifying System Environment Variables it is necessary to shutdown and
+restart your computer to make them available to applications.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q283472  17-FEB-2001  [sms]
+TITLE   :SMS: Event ID 7031 Occurs When Installing Secondary Site Server
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbtool kbServer kbsms200 kbsms200bug kbsms200fix kbUpgrade
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install a secondary site server on a Windows 2000-based server that is
+also running Terminal Services in Remote Administrator mode, an event ID 7031
+message may be reported in the application event log on the computer immediately
+after you install the server. The following event description is reported:
+
+   The SMS_BOOTSTRAP service terminated unexpectedly. It has done this 1
+   time(s). The following corrective action will be taken in 0 milliseconds. No
+   action.
+
+A second, similar event message is reported when you remove the secondary site.
+These events are reported by the Service Control Manager.
+
+WORKAROUND
+==========
+
+This event message can be safely ignored. This message does not represent an
+error condition and does not impair secondary site server operation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbtool kbServer kbsms200 kbsms200bug kbsms200fix kbUpgrade 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

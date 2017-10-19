@@ -1,0 +1,66 @@
+DOCUMENT:Q119504  19-FEB-2002  [visualc]
+TITLE   :PRB: Result Differs Between 16-bit and 32-bit _gcvt()
+PRODUCT :Microsoft C Compiler
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbCRT kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition 
+    - Microsoft Visual C++, 32-bit Professional Edition 
+    - Microsoft Visual C++, 32-bit Learning Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the following test case, 32-bit _gcvt() returns a different value than
+16-bit _gcvt():
+
+      double r1 = 1.797693134862315E+308;
+      char buf[40];
+
+      _gcvt(r1, 15, buf);
+
+The 16-bit _gcvt() rounds the value to 1.79769313486232E+308, but the 32-bit
+_gcvt() truncates the value to 1.79769313486231E+308.
+
+CAUSE
+=====
+
+The low-level floating-point-to-string conversion routines were completely
+rewritten for Win32. The 32-bit output routines use an internal 12-byte
+floating-point format for the intermediate values and a new conversion
+algorithm. The specific value used in the test case mentioned in the "SYMPTOMS"
+section is at the limit of type "double," and the new conversion routine
+exhibits this problem when converting the value to a 12-byte value. The
+conversion routine yields a mantissa string of 79769313486231490 instead of
+797693134862315, which causes the rounding problems in this particular case.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

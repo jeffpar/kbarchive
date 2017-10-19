@@ -1,0 +1,59 @@
+DOCUMENT:Q168948  09-AUG-2001  [winnt]
+TITLE   :Information About the Cluster Group
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install the Microsoft Cluster Service (MSCS), the default cluster group
+that is created contains an IP address and Network Name (Cluster Name) for
+cluster administration. In Windows 2000 and beyond it will also put the physical
+disk resource that is used as the Quorum disk in the cluster group as well.
+Additional resources should not be added to this group.
+
+MORE INFORMATION
+================
+
+The Cluster Group contains resources related to cluster administration only. If
+you add additional resources to the group, the ability to administer the cluster
+may be hindered. Failure of any additional resources within the Cluster Group
+may trigger failover or inability to successfully administer the cluster.
+
+For best results and higher availability of the cluster, do not add resources to
+the cluster group. Instead, create groups for the additional resources, or place
+the resources in other groups within the cluster.
+
+Additional query words: MSCS W2000MSCS
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

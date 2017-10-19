@@ -1,0 +1,61 @@
+DOCUMENT:Q179811  05-MAY-1999  [homemm]
+TITLE   :Bookshelf 98: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbmm kbSysSettingskbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements to run Microsoft Bookshelf 98
+for Windows.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Bookshelf 98 are:
+
+ - A multimedia computer with a 486SX/33-MHz or higher processor.
+ - Microsoft Windows 95 operating system or Microsoft Windows NT Workstation
+   operating system version 4.0 or later.
+ - 8 megabytes (MB) of memory (RAM) for Windows 95; 12 MB for Windows NT
+   Workstation.
+ - 10 MB of available hard disk space.
+ - A double-speed or faster CD-ROM drive.
+ - A Super VGA, 256-color monitor supporting 640 x 480 or higher resolution.
+ - A local-bus video adapter with 1 MB or more of video memory.
+ - A Microsoft Mouse or compatible pointing device.
+ - An audio adapter with speakers or headphones.
+ - A modem (required for Web links).
+
+Additional query words: 98 multimedia mmtitles required
+
+======================================================================
+Keywords          : kbmm kbSysSettings kbfaq
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

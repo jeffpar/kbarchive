@@ -1,0 +1,63 @@
+DOCUMENT:Q163761  16-JUL-2001  [iis]
+TITLE   :ASP Page Not Update Even if File Included in it Has Been Changed
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0; :1.0
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+ - Microsoft Active Server Pages, version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Active Server Page (ASP) page will not update even if the file
+included in it has been changed. No problem exists if the file included in the
+ASP file is in the same virtual root as the ASP file.
+
+WORKAROUND
+==========
+
+Put the included files in the same virtual root as the ASP file. Included files
+and the ASP file can be in different subdirectories as long as they share the
+same virtual root.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 3.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbiisSearch kbAudDeveloper kbASPsearch kbiis300 kbASP100
+Version           : winnt:3.0; :1.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q74248  29-OCT-1999  [win95x]
+TITLE   :Frozen Ballpoint Mouse Pointer in Enhanced mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a Ballpoint mouse, connected to a PS/2 port, works correctly in real and
+standard modes but its pointer freezes in 386 enhanced mode, do the following:
+
+1. Check the disks that accompanied the Ballpoint mouse for the BPVKD.386 file.
+
+2. Copy the file into the \WINDOWS\SYSTEM subdirectory.
+
+3. Modify the [386Enh] section of the SYSTEM.INI file as follows:
+
+      Change                              To
+      ------                              --
+
+      [386enh]                            [386enh]
+      keyboard=vkd.386                    keyboard=bpvkd.386
+
+4. Save the file.
+
+5. Exit Windows and restart.
+
+MORE INFORMATION
+================
+
+BPVKD.386 replaces the default virtual keyboard driver (VKD.386) for a ballpoint
+mouse plugged into a PS/2 port. It is used to put the mouse driver into
+ballpoint mode. Without it, the ballpoint input is treated as a normal mouse
+(non-ballpoint) signal.
+
+Additional query words: 3.00 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

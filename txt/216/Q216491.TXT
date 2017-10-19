@@ -1,0 +1,94 @@
+DOCUMENT:Q216491  10-SEP-1999  [winnt]
+TITLE   :ERROR: Event ID 43: Crash Dump Is Disabled
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply Service Pack 4 for Windows NT 4.0, you may notice the following
+in the system event log.
+
+   Event ID 43
+
+   Description: Crash dump is disabled! NT failed to initialize the boot
+   partition paging file for crash dump. This may be because the system has more
+   than 3.8 gigabytes of physical memory.
+
+CAUSE
+=====
+
+This event is recorded when the page file on the system partition is set to a
+size smaller than the physical RAM in the computer.
+
+RESOLUTION
+==========
+
+To keep the error message from appearing in the event log, ensure that the page
+file on the system partition is larger than the amount of physical RAM on the
+machine.
+
+To change the size of the page file, follow these steps:
+
+1. In Control Panel, double-click System.
+
+2. On the Performance tab, click Change, and then change the minimum size of the
+   page file on the system partition to a value at least the size of physical
+   RAM plus 1 MB.
+
+3. Restart the computer.
+
+MORE INFORMATION
+================
+
+When Windows NT ecounters an unhandled exception, and is configured in the
+Startup/Shutdown tab of the System Control Panel to write a memory dump, Windows
+NT will write a memory dump to disk when a STOP error is encountered. Windows NT
+will write the dump to the pagefile on the system partition when the STOP error
+is encountered, and copy the dump to a file when the system is restarted. For
+Windows NT to write the memory dump, the pagefile on the system partition must
+be at least as large as the physical memory in the computer.
+
+This event was added in Service Pack 4. Service Pack 4 does not cause this
+condition, but merely reports this condition. Prior to Service Pack 4, this
+condition was not reported in the System Event Log.
+
+For additional information about setting up Windows NT 4.0 to write a memory dump
+when a STOP error is encountered, please see the following article(s) in the
+Microsoft Knowledge Base:
+
+   Q130536 Windows NT Does Not Save Memory Dump File After a Crash
+
+Additional query words: blue screen memory.dmp crash
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

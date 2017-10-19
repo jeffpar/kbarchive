@@ -1,0 +1,119 @@
+DOCUMENT:Q167542  17-JUL-2001  [visualc]
+TITLE   :PRB: Conflict with EOF and GetUserName Using #import on RDO
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbMFC kbRDO kbVC500 kbVC600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With #import, you can generate classes that encapsulate the typelib of database
+API's, such as Remote Data Objects (RDO) within a windows application. For
+example:
+
+      // Excerpt from STDAFX.H
+      #include <afxwin.h>         // MFC core and standard components
+      ...
+      #import "C:\winnt\system32\msrdo20.dll" no_namespace
+
+When you use #import for RDO, you may receive these errors. The first is for a
+conflict with the ResultSet.EOF property, and the second is for the
+Environment.GetUserName method.
+
+   error C2629: unexpected 'short ('
+
+   error C2238: unexpected token(s) preceding ';'
+
+   error C2535: 'class _bstr_t
+   _rdoEnvironment::GetUserNameA(void)':
+   member function already defined or declared
+
+   error C2084: function 'class bstr_t _rdoEnvironment::GetUserNameA(void)'
+   already has a body
+
+CAUSE
+=====
+
+In this case, two separate problems are creating the four compiler errors.
+
+"EOF" Property and #import
+--------------------------
+
+Within an application that uses STDIO.H, IOS.H or STREAMB.H (including AFXWIN.H
+), EOF has already been defined as a constant (-1). #import defines the EOF
+property for RDO's Resultset object. At compile time, this generates the
+C2629/C2238 errors on this line of generated code in the MSRDO20.TLH file:
+
+      VARIANT_BOOL EOF;
+
+This line is attempting to define a variable, but EOF has already been defined as
+-1. So the above line of code parses to:
+
+      short -1;
+
+which will not compile because -1 is not a valid variable name.
+
+
+GetUserName and #import
+-----------------------
+
+The compiler errors C2535 and C2084 are an indication that Msrdo20.dll's typelib
+is using a name that is mapped by #define to another name that's also used. In
+this case, the _rdoEnvironment interface has properties UserName and UserNameA.
+#import creates property get methods for GetUserName and GetUserNameA. However,
+there's a GetUserName Win32 API that the system headers #define to GetUserNameA
+(or GetUserNameW for Unicode). That means, after preprocessing, the compiler
+sees two definitions for _rdoEnvironment::GetUserNameA.
+
+RESOLUTION
+==========
+
+To correct both problems, the rename clause will be used as follows:
+
+      #import "C:\winnt\system32\msrdo20.dll" \ 
+               no_namespace \ 
+               rename( "EOF", "_EOF" ) \ 
+               rename("UserNameA", "_UserNameA")
+
+This time, it will compile without error. If you look at _rdoEnvironment in
+Msrdo20.tlh, you'll now see properties UserName and _UserNameA, with propget
+methods GetUserName and Get_UserNameA.
+
+NOTE: The rename attribute renames UserNameA, not GetUserNameA. That's because
+rename must be applied to an actual name from the typelib, and only UserNameA,
+not GetUserNameA, appears there. Instead, GetUserNameA is a name synthesized by
+the #import mechanism.
+
+Additional query words: MfcDatabase RDOALL RDOVC
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbRDO kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

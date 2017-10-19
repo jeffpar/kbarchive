@@ -1,0 +1,62 @@
+DOCUMENT:Q114820  02-NOV-2001  [homemm]
+TITLE   :Sound: GP Fault When Opening Control Panel or Browser
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,1.0a,2.0,2.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SoundBits, Hanna-Barbera 
+ - Microsoft SoundBits, MGM Movies 
+ - Microsoft SoundBits, Musical Instruments 
+ - Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have added many SoundBits custom events, you may find that a general
+protection (GP) fault (usually in USER.EXE or KRNL386.EXE) occurs when you run
+either the Sound option in the Windows Control Panel or the Set Sounds option in
+Media Browser. Windows may also return you to the MS-DOS prompt.
+
+This problem occurs if you have more than 107 custom event entries in the
+[Sounds] section of the WIN.INI file. A custom event is any event in Windows
+(such as Windows Start, Windows Exit, Word Minimize, and so on) that has a sound
+attached to it.
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To avoid this problem, make sure you do not have more than 107 custom event
+entries in the [Sounds] section of your WIN.INI file.
+
+
+Additional query words: multi media multimedia multi-media gpf gp fault exits closes kicks out quits drops section snd.cpl advanced sound control panel kbmm limit limits maximum maximize
+
+======================================================================
+Keywords          :  
+Technology        : kbSoundBitsSearch kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200 kbWinSoundSys200a
+Version           : :1.0,1.0a,2.0,2.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

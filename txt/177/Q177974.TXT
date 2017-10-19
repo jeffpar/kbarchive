@@ -1,0 +1,56 @@
+DOCUMENT:Q177974  05-APR-2000  [sna]
+TITLE   :Location of CedarBank Recording File Is Misleading
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The instructions for locating a recording file to run the CedarBank sample in
+playback mode are misleading. They state that the recording file is in the
+directory where the CedarBank sample code is installed. Actually, there are two
+recording files shipped with Microsoft COM Transaction Integrator (COMTI). One
+file is in the ~\sna\Comti\Tutorials\CedarBank\CICSLink subdirectory for CICS
+LINK playback testing and the other is in the
+~\sna\Comti\Tutorials\CedarBank\Ims subdirectory for IMS playback testing.
+
+MORE INFORMATION
+================
+
+If you create your own recording files using the turnaround feature of
+diagnostic capture, the location of the files is irrelevant because you do not
+need them.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch kbCOMTI100
+Version           : WINDOWS:1.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

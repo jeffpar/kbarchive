@@ -1,0 +1,60 @@
+DOCUMENT:Q170004  14-MAY-1999  [exchange]
+TITLE   :XCON: Message from PMDF MTA May Be Rejected
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT: 4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) may reject a message
+forwarded from a PMDF MTA. The non-delivery report (NDR) received by the PMDF's
+client may say:
+
+   Maximum time for delivering the message has expired.
+
+CAUSE
+=====
+
+Some third-party MTAs assume the date from an embedded message. Some versions of
+the PMDF MTA are known to exhibit this behavior. This can create a problem when
+sending to messaging systems, such as Microsoft Exchange Server, that do not
+allow messages older than seven days. This is not user configurable. The correct
+behavior for an MTA when sending embedded messages is to use the creation date
+of the host message. This behavior is by product design.
+
+WORKAROUND
+==========
+
+To workaround this problem, create a new message rather than forwarding an
+existing one.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT: 4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

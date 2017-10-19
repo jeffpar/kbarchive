@@ -1,0 +1,59 @@
+DOCUMENT:Q116375  09-NOV-1999  [pcmail]
+TITLE   :FAX: WIN.INI File Entries Added During Installation
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0,3.0a; WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+ - Microsoft Mail Gateway to Fax, versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 7 of the "Microsoft Mail Fax User's Guide," says that "Microsoft Fax adds
+the printer driver to the WIN.INI file in the following format":
+
+   [Microsoft Fax, Port]
+
+Under normal circumstances, the Microsoft Fax adds the printer driver to the
+[PrinterPorts] and [Devices] sections in the WIN.INI file.
+
+Here is an example of the default entries added to the WIN.INI file:
+
+   [Microsoft Fax]
+   TempDrive=
+
+   [PrinterPorts]
+   Microsoft Fax=MSFAX,LPT1:,15,45
+
+   [Devices]
+   Microsoft Fax=MSFAX,LPT1:
+
+Additional query words: port docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b kbMailGateFax300 kbMailGateFax300a
+Version           : MS-DOS:3.0,3.0a; WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

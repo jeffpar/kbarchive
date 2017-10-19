@@ -1,0 +1,296 @@
+DOCUMENT:Q136337  29-MAY-2002  [win95x]
+TITLE   :Troubleshooting Windows 95 Startup Problems and Error Messages
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhw kbtshoot win95 kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists troubleshooting tips you can use if your computer stops
+responding (hangs) or returns an error message (such as a fatal exception error
+or an invalid VxD error).
+
+This article is meant to provide you with a general strategy for isolating the
+problem. The following topics are included in this article:
+
+ - Safe Mode
+ - Windows 95 Does Not Start in Safe Mode
+ - Windows 95 Starts in Safe Mode
+ - Troubleshooting Protected-Mode Driver Problems
+
+MORE INFORMATION
+================
+
+Safe Mode
+---------
+
+If Windows 95 does not start, try to start it in Safe mode. To start Windows 95
+in Safe mode, press the F8 key when you see the "Starting Windows 95" message,
+and then choose Safe Mode from the Startup menu.
+
+If Windows 95 does not start in Safe mode, see the "Windows 95 Does Not Start in
+Safe Mode" section below. If Windows 95 starts in Safe mode, see the "Windows 95
+Starts in Safe Mode" section below.
+
+Windows 95 Does Not Start in Safe Mode
+--------------------------------------
+
+Any of the following conditions can cause Windows 95 not to start in Safe mode:
+
+ - Your computer is infected with a virus. For additional information about
+   computer viruses, please see the following article in the Microsoft Knowledge
+   Base:
+
+   Q129972 Description of Computer Viruses
+
+
+ - Your computer's CMOS settings are not correct. Check your computer's CMOS
+   settings to make sure they are correct. (You may need to contact the computer
+   manufacturer to verify these settings.)
+
+
+ - There is a hardware conflict. These conflicts can include, but are not
+   limited to, PCI BIOS settings, IRQ conflicts, redundant COM ports (for
+   example, two COM1 ports, or an internal modem set to the same COM port as an
+   existing serial port), and defective RAM chips.
+
+ - A setting in the Msdos.sys file needs to be changed (for example, the Logo
+   setting should be set to zero). For additional information on the Msdos.sys
+   file, please see the following article(s) in the Microsoft Knowledge Base:
+
+   Q118579 Contents of the Windows Msdos.sys File
+
+ - You need to use the Vga.drv or Vga.vxd video drivers from the Windows 95
+   CD-ROM. These files are located in the Drivers\Display\Vga folder. For
+   example, these drivers may be helpful if you have an Intel Triton PCI
+   controller or a Cirrus Logic 5401 or 5402 VGA video adapter. For more
+   information about these files, please see the Readme.txt file in the same
+   folder.
+
+ - You are using Windows 95 OEM Service Release 2 (OSR2) and your computer stops
+   responding (hangs) after booting to a previous operating system. For
+   information about this issue, see the following article in the Microsoft
+   Knowledge Base:
+
+   Q155364 OSR2 Hangs After Booting Previous Operating System
+
+If you still cannot start your computer in Safe mode after checking these items,
+reinstall Windows 95 in a new, empty folder. This step helps to establish
+whether the problem is related to a remnant of the previous operating system
+(such as a configuration setting) or a hardware problem.
+
+Windows 95 Starts in Safe Mode
+------------------------------
+
+If Windows 95 starts in Safe mode, step through the startup process to see if any
+devices fail to load. To do so, restart your computer, press F8 when you see the
+"Starting Windows 95" message, and then choose Step-By-Step Confirmation from
+the Startup menu.
+
+The following table lists several startup options. The options are labeled Boot
+A, Boot B, Boot C, and Boot D. Try each option and note your results. To use a
+boot option, press Y or N as outlined in the option in the table below each time
+you are prompted whether you want to load a particular device.
+
+                                       Boot A   Boot B   Boot C   Boot D
+   ---------------------------------------------------------------------
+   Load DriveSpace Driver?             (Y)es    (Y)es    (Y)es    (Y)es
+   Process the system registry?        (Y)es    (Y)es    (Y)es    (N)o
+   Create a startup log file
+      (Bootlog.txt)?                   (Y)es    (Y)es    (Y)es    (Y)es
+   Process your startup device drivers
+      (Config.sys)?                    (N)o     (N)o     (Y)es    (Y)es
+   Device=<path>\Himem.sys?            (Y)es    (Y)es    (Y)es    (Y)es
+   Device=<path>\Ifshlp.sys?           (Y)es    (Y)es    (Y)es    (Y)es
+   Device=<path>\Dblbuff.sys?          (Y)es    (Y)es    (Y)es    (Y)es
+   Device=<path>\Setver.exe?           (Y)es    (Y)es    (Y)es    (Y)es
+   Process your startup command file
+      (Autoexec.bat)?                  (N)o     (N)o     (Y)es    (Y)es
+   Load the Windows graphical user
+      interface?                       (Y)es    (Y)es    (Y)es    (Y)es
+   Load all Windows Drivers?           (N)o     (Y)es    (N)o     (Y)es
+
+Boot A:
+
+If Windows 95 does not start under these conditions, try the Boot D option. If
+Windows 95 starts, there is a problem with a driver or
+terminate-and-stay-resident program (TSR) loading in the Config.sys or
+Autoexec.bat file, or there is a problem with a Windows 95 protected-mode
+driver.
+
+Boot B:
+
+If Windows 95 does not start under these conditions, try the Boot C option. If
+Windows 95 starts, there is a problem with a driver or TSR loading in the
+Config.sys, or Autoexec.bat file. You can pinpoint the problem by stepping
+through these files.
+
+There may also be a problem with a TSR loading in the Winstart.bat file if one is
+present on your computer. Rename the Winstart.bat file and try the Boot B option
+again. The Winstart.bat file is usually located in the Windows folder, and is
+used to load TSRs that are required for Windows- based programs, but are not
+needed in MS-DOS sessions.
+
+For information about how to rename a file, click Start, click Help, click the
+Index tab, type "renaming" (without quotation marks), and then double-click the
+"Renaming files" topic.
+
+Boot C:
+
+If Windows 95 does not start under these conditions, try the Boot D option. If
+Windows 95 starts, there is a problem with a Windows 95 protected-mode driver.
+For more information about these problems, see the "Troubleshooting
+Protected-Mode Driver Problems" section of this article.
+
+Boot D:
+
+If Windows 95 does not start under these conditions, try the steps in the
+"System.ini" section below. If Windows 95 starts, there is a problem with the
+system registry. For information about restoring the registry, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q131431 How to Troubleshoot Registry Errors in Windows 95
+
+System.ini:
+
+To determine whether the System.ini or Win.ini file is causing a problem, try the
+following steps:
+
+1. Rename the System.ini file in the Windows folder to System.sav.
+
+2. Copy (do not rename) the System.cb file in the Windows folder to System.ini.
+
+3. Add the following line to the [boot] section of the System.ini file and then
+   save the file:
+
+      drivers=mmsystem.dll
+
+4. Rename the Win.ini file in the Windows folder to Win.sav.
+
+5. Restart your computer.
+
+If this works, there is a problem with an entry in the System.ini or Win.ini
+file. Examine these files more closely to determine the exact cause of the
+problem.
+
+If Windows 95 does not start when you step through the boot process, start your
+computer in Safe mode, and then change the video driver to the standard VGA
+driver.
+
+NOTE: When you copy the System.cb file to System.ini, your mouse may stop
+working. If this occurs, add the following lines to the appropriate sections of
+the new System.ini file:
+
+   [boot]
+   mouse.drv=mouse.drv
+
+   -and-
+
+   [386Enh]
+   mouse=*vmouse, msmouse.vxd
+
+For additional information about troubleshooting startup problems using Safe
+mode, please see the following article in the Microsoft Knowledge Base:
+
+   Q156126 Troubleshooting Windows 95 Using Safe Mode
+
+Troubleshooting Protected-Mode Driver Problems
+----------------------------------------------
+
+If Windows 95 starts only when you press N at the Load All Windows Drivers?
+prompt, try the following steps:
+
+1. Start Windows 95 in Safe mode.
+
+2. Use the right mouse button to click My Computer, and then click Properties on
+   the menu that appears.
+
+3. On the Device Manager tab, disable any devices in the following categories:
+
+      Display adapters        Floppy disk controllers
+      Hard disk controllers   Keyboard
+      Mouse                   Network adapters
+      PCMCIA socket           Ports
+      SCSI controllers        Sound, video, and game controllers
+
+   To disable a device, follow these steps:
+
+   a. In Device Manager, double-click the category name, and then double- click
+      the device.
+
+   b. On the General tab, click the Original Configuration (Current) check box
+      to clear it, and then click OK.
+
+   c. Restart your computer.
+
+   NOTE: If Windows 95 does not start, go to the "System.ini" section of this
+   article.
+
+4. Once Windows 95 restarts, enable the devices you disabled in step 3. Enable
+   the devices in the following order:
+
+    - Com ports
+
+    - Hard disk controllers
+
+    - Floppy disk controllers
+
+    - Other devices
+
+   To enable a device, follow these steps:
+
+   a. In Device Manager, double-click the category name, and then double- click
+      the device.
+
+   b. On the General tab, click the Original Configuration (Current) check box
+      to select it, and then click OK.
+
+   c. While the properties for each device are open, click the Resources tab and
+      make sure there are no conflicts listed in the Conflicting Devices list.
+
+5. Restart your computer.
+
+Additional Notes
+----------------
+
+For information about known hardware issues, please see the Hardware.txt file in
+the Windows folder on your hard disk.
+
+For additional troubleshooting assistance, check the Bootlog.txt file in the root
+directory on your hard disk. This file lists the loading status of all real-mode
+and protected-mode drivers. If Windows 95 does not start, the Bootlog.txt file
+lists the last driver that loaded successfully, and lists a "LoadFail" entry for
+each driver that failed to load before the problem occurred.
+
+Additional query words: first boot fail setup noboot no-boot start up start-up w95susdfaq
+
+======================================================================
+Keywords          : kbhw kbtshoot win95 kbHardware kbfaq
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

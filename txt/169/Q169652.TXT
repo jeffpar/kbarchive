@@ -1,0 +1,66 @@
+DOCUMENT:Q169652  25-JUL-2001  [win95x]
+TITLE   :Windows 95 Stops Responding with CardBus Card Installed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On certain laptop computers with CardBus support, the computer may stop
+responding (hang) when you attempt to start Microsoft Windows 95 OEM Service
+Release version 2 (OSR2).
+
+CAUSE
+=====
+
+This behavior can occur if you insert a CardBus card and a PC Card into the
+slots before you start OSR2.
+
+RESOLUTION
+==========
+
+To work around this behavior, insert the PC Card into the slot after you have
+started OSR2.
+
+MORE INFORMATION
+================
+
+This behavior has been observed on the following computers:
+
+ - Dell Latitude XPi CD 150 MHz
+
+ - Dell Latitude XPi CD 166 MHz
+
+
+
+Additional query words: 95 hangs bus
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

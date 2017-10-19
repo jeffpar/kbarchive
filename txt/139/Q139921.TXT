@@ -1,0 +1,154 @@
+DOCUMENT:Q139921  07-MAY-1999  [homemm]
+TITLE   :Encarta 96 Encyclopedia Annual Subscription Readme Information
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1996
+WINDOWS
+kbmm kbreadme kbref kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the complete text of the subscription information that is
+included in Encarta 96 Encyclopedia.
+
+MORE INFORMATION
+================
+
+Encarta Subscription Information
+
+Even as you read this sentence, our staff is already hard at work
+compiling material for next year's Encarta(r) Encyclopedia. Now there's a
+convenient, no-risk way to keep current and get the latest, up-to-date
+information delivered to your home every year. Automatically. Just sign
+up for an Encarta Encyclopedia annual subscription.
+
+HOW TO SUBSCRIBE
+
+Click the Print button and fill out the subscription form. Send it to us
+via mail or fax indicating that you want the Encarta Encyclopedia annual
+subscription for just US $29.95/CDN $39.95 per year.* If you would
+prefer, you can send us an e-mail message and we'll send you back a form
+to complete. Just follow the instructions below.
+
+We'll automatically send you each annual version of Encarta Encyclopedia
+as soon as it's available. You'll have 30 days to look it over and
+decide whether you want to keep it. There will be no more order forms,
+and no more gaps in your encyclopedia's information - you'll always have
+the latest facts at your fingertips.
+
+TO RESPOND BY ELECTRONIC MAIL
+
+Address your message to enc_sub@microsoft.com (you may have to use a
+   special prefix to send this message over the Internet; check with
+   your e-mail provider).
+
+In the "Subject" area, type: subscribe.
+
+In the "Message" area, type: subscribe.
+
+We will send you an electronic mail message reply with a form for you
+   to fill out.
+
+Simply return the form by electronic mail to the return address
+   you'll find in the reply.
+
+TO RESPOND BY PHONE
+
+If you would prefer to order your subscription by phone, please call
+800-531-6758.
+
+TO RESPOND BY MAIL OR FAX
+
+Print this form using Encarta Encyclopedia's "Print" function.
+
+Complete the Subscription form (don't forget to indicate whether
+   you'd like the Windows or Macintosh version).
+
+Mail to:   Encarta Encyclopedia  Subscription Offer
+              P.O. Box 660
+              Buffalo, NY 14207-0660
+
+       - or
+
+   Fax to: 716-873-0906  (please do NOT mail your order form after
+                          faxing it)
+
+SUBSCRIPTION FORM
+
+_____ Yes, I want to keep Encarta Encyclopedia coming each year. Please
+sign me up for the Encarta Encyclopedia Subscription at US $29.95/CDN
+$39.95 per year (plus shipping and handling and applicable sales tax).
+
+SHIP TO:
+
+First Name ______________________ Middle Initial ____________
+
+Last Name ______________________________________________
+
+Company Name _________________________________________
+
+Address  ________________________________________________
+
+         ________________________________________________
+
+City ____________________________State/Prov. _____________
+
+ZIP/Postal Code _________________________________________
+
+Daytime Phone(______)___________________________________
+
+IMPORTANT!
+
+Check one:  version for Windows ___ version for Macintosh ___
+
+Is this a: home _________school __________  library __________
+
+Offer expires June 30, 1996 and is valid only in the U.S. and Canada.
+Subscription begins with Encarta 97 Encyclopedia.
+
+* Do not include any payment now. We will send you the new Encarta
+Encyclopedia with an invoice each year as soon as it's released. U.S.
+price does not include $5.00 shipping and handling and applicable sales
+tax. Canadian subscription price does not include $7.50 shipping and
+handling and applicable tax. Microsoft Corporation reserves the right to
+modify prices, terms, and conditions of the subscription service at any
+time upon notice to subscription holders.
+
+Microsoft Corporation. All rights reserved. Microsoft, Encarta, and
+Windows are registered trademarks of Microsoft Corporation. Macintosh is
+a registered trademark of Apple Computer, Inc.
+
+Additional query words: kbhowto 1996multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

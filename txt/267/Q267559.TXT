@@ -1,0 +1,257 @@
+DOCUMENT:Q267559  08-MAY-2002  [iis]
+TITLE   :GET on HTR File Causes "Denial of Service" or Directory Browsing
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP2Fix kbWin2000SP2Fix kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+NOTE: The issues described in this article are most likely to occur only on
+computers that have been upgraded from IIS 3.0 (that included .htr-based
+administrative tools) to IIS 4.0 or 5.0.
+
+One of the following symptoms may occur when a GET is performed on a .htr file.
+
+Symptom 1 - Denial of Service:
+
+Performing a GET with a missing parameter on an existing .htr file can cause the
+execution of an endless loop, resulting in 100 percent CPU usage, and in turn, a
+denial of service to clients of the IIS server.
+
+Symptom 2 - Ability to Browse Directories:
+
+Performing a GET with a missing parameter for a .htr file that exists can give a
+Web site visitor the ability to browse the Web site's directories.
+
+NOTE: Only read-only browsing occurs in this situation. No files can be modified
+by the Web site visitor.
+
+CAUSE
+=====
+
+Cause of Symptom 1: Denial of Service:
+
+The .htr file that received the GET does not correctly handle the case where an
+expected parameter is missing. The absence of the parameter causes the script to
+go into an endless loop, at which point the script consumes all CPU resources on
+the server.
+
+NOTE: An administrative script, implemented as a .htr file and installed as part
+of IIS 3.0 and preserved on upgrade to IIS 4.0 or IIS 5.0 has this behavior of
+does not correctly handle a missing parameter
+
+Cause of Symptom 2: Ability to Browse Directories:
+
+In addition, the permissions on the administrative script (and several related
+ones), as well as potential .htr scripts created by the IIS user that were
+appropriate under IIS 3.0 are inappropriate under IIS 4.0 and 5.0. This may
+allow Web site visitors to use these tools, which provide the ability to view
+the directory structure on the server.
+
+Why do the tools have incorrect permissions? :
+
+In IIS 3.0, HTR scripts can only be executed locally (that is, from the server
+itself). Because only an administrator should be able to log onto a Web server
+locally, it wasn't necessary for the scripts to authenticate the user, and it
+wasn't necessary to restrict who could execute them.
+
+However, IIS 4.0 introduced the capability for HTR scripts to be called remotely.
+The combination of these two factors (loose permissions inherited from IIS 3.0,
+coupled with the ability under IIS 4.0 to remotely execute HTR scripts) results
+in the incorrect permissions.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+Resolution for Both Symptoms:
+
+If you do not have business-critical .htr scripts, perform the following to
+disable .htr functionality:
+
+1. Open the Internet Services Manager.
+
+2. Right-click the Web server, click Properties, click Master Properties, and
+   then click WWW Service.
+
+3. Click Edit, click Home Directory, and then click Configuration.
+
+4. Remove the .htr entry
+
+Resolution for  Symptom 2: Ability to Browse Directories:
+
+Delete the /Scripts/Iisadmin directory, which contains the administrative scripts
+used by IIS 3.0.
+
+Alternatively, if you need to preserve this directory for some reason, make sure
+to explicitly limit the access permissions to the proper user accounts.
+
+Resolution for Symptom 1: Denial of Service:
+
+For customers with business-critical HTR scripts who need to retain .htr
+functionality and therefore can't disable .htr functionality, the following
+patch is available that corrects the Denial of Service issue described in
+Symptom 1.
+
+For Windows 2000
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Q267559_w2k_sp2_x86_en.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=22708)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        Time    Version         Size    File name
+   -----------------------------------------------------
+   07/07/2000  03:17p  5.00.2195.2100  46,352  Ism.dll
+
+
+For Windows NT 4.0
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   x86: DownloadDownload Htrdos4i.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=22709)
+
+   x86 Symbols: DownloadDownload Htrdos4is.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=22709)
+
+   Alpha: DownloadDownload Htrdos4a.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=22709)
+
+   Alpha Symbols: DownloadDownload Htrdos4as.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=22709)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date        Time    Version    Size    File name  Platform
+   ----------------------------------------------------------
+   06/28/2000  09:34p  4.2.748.1  54,544  Ism.dll    x86
+   06/28/2000  09:30p  4.02.0748  84,752  Ism.dll    Alpha
+
+
+
+For Windows NT Server version 4.0, Terminal Server Edition
+
+To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP). For additional information about the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+   Package
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+5.0 and Internet Information Server 4.0. This problem was first corrected in
+Windows 2000 Service Pack 2.
+
+MORE INFORMATION
+================
+
+For additional information about what this package fixes, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q267560 Changing the URL in a Specific Manner May Expose Contents of a File
+
+   Q260838 IIS Stops Servicing HTR Requests
+
+   Q260069 Malformed HTR Request Returns Source Code for ASP Scripting Files
+
+Related Security Bulletin:
+
+For more information, please see the Microsoft Security Bulletin at
+http://www.microsoft.com/technet/security/bulletin/ms00-044.asp.
+
+How can an affected server be put back into service? :
+
+Stop and restart the IIS service. It's not necessary to restart the server.
+
+What is HTR?:
+
+HTR is a first-generation advanced scripting technology that is included in IIS
+3.0. However, HTR was never widely adopted, and was superceded by Active Server
+Pages (ASP) technology introduced in IIS 4.0.
+
+
+Additional query words: nt winnt Windows 2000 win2k DoS attack vulnerability security hack hacker folder argument risk akz security_patch
+
+======================================================================
+Keywords          : kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP2Fix kbWin2000SP2Fix kbgraphxlinkcritical 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

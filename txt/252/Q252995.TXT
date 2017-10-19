@@ -1,0 +1,90 @@
+DOCUMENT:Q252995  17-FEB-2000  [winnt]
+TITLE   :Performance Recommendations for Microsoft Metadirectory Services
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Metadirectory Services (MMS) is a server application that is capable
+of running on computers that are running Microsoft Windows NT 4.0 Service Pack 5
+and later and Microsoft Windows 2000. This article describes performance
+recommendations for MMS.
+
+MORE INFORMATION
+================
+
+For best performance Microsoft recommends that you run MMS on a member server
+not a domain controller. Microsoft also recommends that you do not run MMS on a
+server that contains other programs that require most of the system resources.
+
+Additionally, Microsoft recommends you configure the following server
+optimization on Windows platforms:
+
+ - In Windows NT 4.0, Maximum throughput for network applications.
+
+ - In Windows 2000, Maximum data throughput for network applications.
+
+To change your current settings to the recommended settings, use the appropriate
+steps:
+
+MMS Running on a Windows NT 4.0-based Computer
+----------------------------------------------
+
+1. Log on as an Administrator.
+
+2. Right-click Network Neighborhood, and then click Properties.
+
+3. On the Services tab, click Server, and then click Properties.
+
+4. Click "Maximize throughput for Network Applications", and then restart the
+   computer.
+
+MMS Running on a Windows 2000-based Computer
+--------------------------------------------
+
+1. Log on as an Administrator.
+
+2. Right-click My Network Places, and then click Properties.
+
+3. In the Network and Dial-Up Connection window, right-click Local Area
+   Connection, and then click Properties.
+
+4. On the General tab, click "File and Print Services for Microsoft Networks".
+
+5. Click Properties.
+
+6. Click "Maximize data throughput for network applications".
+
+Additional query words: Microsoft Metadirectory Services via zoomit MMS
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

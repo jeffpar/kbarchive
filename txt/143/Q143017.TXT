@@ -1,0 +1,58 @@
+DOCUMENT:Q143017  11-JUL-2001  [powerpt]
+TITLE   :PPT7: New Window Opened When Inserted Object Activated
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbinterop kbole kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Graph, Organization Chart, Equation Editor, or WordArt to insert an
+object into a PowerPoint presentation, and you set the object's animation
+settings to Build and Edit, you cannot activate the object for in-place editing
+while running a slide show. Instead, PowerPoint opens the object in a separate
+window.
+
+CAUSE
+=====
+
+In PowerPoint, when you activate an OLE object to edit it, the toolbars and
+menus change to those of the program that provided the OLE object. Therefore, if
+you edit an embedded Word table, the PowerPoint menus and toolbars are
+temporarily replaced by the Word menus and toolbars.
+
+When you run a slide show, PowerPoint suppresses its menus and toolbars; they are
+therefore not available to be replaced. The program responsible for editing the
+OLE object opens its own window that can display menus and toolbars.
+
+Additional query words: in-situ in-place editing mode powerpt w_powerpt ppt7 ppt95
+
+======================================================================
+Keywords          : kbinterop kbole kbui 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

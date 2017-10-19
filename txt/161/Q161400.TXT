@@ -1,0 +1,76 @@
+DOCUMENT:Q161400  05-MAY-1999  [iis]
+TITLE   :Authenticated Users Cannot Query Secured Documents
+PRODUCT :Internet Information Server
+PROD/VER:WINNT: 1.1,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Microsoft Internet Information Server (IIS) is configured to allow
+Anonymous access and either Basic authentication or Microsoft Windows NT
+Challenge Response authentication, and it contains both a secured virtual
+directory and an authentication virtual directory, one of the following may
+occur:
+
+ - You can authenticate against a secure HTML query page and perform the query,
+   but only the documents in the unsecured directory are returned as a result of
+   the query.
+
+   -Or-
+
+ - You can authenticate against a secure HTML query page and retrieve the
+   documents from a secured directory, but for a certain period of time, you can
+   only retrieve unsecured documents.
+
+CAUSE
+=====
+
+If the Anonymous user has access to the .IDQ file, then the browser does not
+pass the authentication header along with the GET or POST. This causes the .IDQ
+file to be run in the context of the anonymous user account. Running the .IDQ
+file in the Anonymous user's context only allows the unsecured documents to be
+retrieved.
+
+NOTE: If you are using ASP files to query in Index Server 2.0, the ASP files also
+need to be secured.
+
+WORKAROUND
+==========
+
+Create a separate .IDQ file for the authenticated users and remove the Anonymous
+user account from the Windows NT NTFS file permissions of that file. This will
+cause the browser to send the authentication header with the GET or the POST,
+ensuring that the Index Server can identify who is logged on. Once the Index
+Server knows who is logged on, then you can retrieve secured documents reliably.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ110 kbIdxServ200
+Version           : WINNT: 1.1,2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

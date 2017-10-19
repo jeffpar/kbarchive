@@ -1,0 +1,81 @@
+DOCUMENT:Q126953  21-AUG-1999  [foxpro]
+TITLE   :How FoxPro Passes Parameters to a Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to pass parameters to a form built with the Form
+Designer. Parameters are passed to either the Init or the Load method of a form
+or form set.
+
+MORE INFORMATION
+================
+
+To pass a parameter to a form built with the Form Designer, add a WITH statement
+to the DO FORM command. For example:
+
+      DO FORM frmtest WITH cLastname
+
+The value of the WindowType property determines if a parameter is received by
+either the Load or the Init method of a Form.
+
+WindowType = 1 or WindowType= 0
+-------------------------------
+
+Parameters are passed to the Init of the form or the form set. The parameter is
+visible to the Init and all of the methods that the Init calls. Once the method
+associated with the Init event is completed, the variable is released. The
+parameter is private.
+
+To scope a parameter to a form, add a property at the form level and assign the
+value of the parameter to the member variable.
+
+For more information on how to add a property to a form, refer to the creating
+New Properties and Methods paragraph in the Creating Forms chapter of the
+Developer's Guide. For additional information about the syntax associated with
+passing parameter, refer to the Managing Forms paragraph in the Creating Forms
+chapter of the Developer's Guide.
+
+
+WindowType = 2 or WindowType= 3
+-------------------------------
+
+These settings are available to form sets only. A page frame is necessary to
+access the WindowType values of 2-READ or 3-READ MODAL. This functionality
+emulates a READ, and has been implemented for backwards compatibility. When the
+WindowType = 2 or WindowType = 3, the parameters are received by the LOAD method
+of the form set. They are scoped to the form set.
+
+Additional query words: VFoxWin screen
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

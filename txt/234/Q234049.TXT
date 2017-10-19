@@ -1,0 +1,70 @@
+DOCUMENT:Q234049  05-JUN-1999  [winnt]
+TITLE   :Logon Script Does Not Work Due to Net.bat File in Netlogon Share
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The logon script for a Windows NT client may not work or may go into a
+continuous loop, which may cause the Windows NT-based computer to stop
+responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if there is a file named Net.bat in the Netlogon share
+and the logon script contains a NET USE command. When you use the NET USE
+command in the logon script, the Net.bat file in the Netlogon share is run.
+
+If a logon script contains the NET USE command, the current folder is checked for
+an executable file named "Net." If the current folder contains a file named
+Net.bat, the Net.bat file is run instead of the Net.exe file in the
+%SystemRoot%\System32 folder, even though this folder is on the path. Note that
+this behavior occurs with any NET command in a logon script (for example, the
+NET TIME or NET USE commands).
+
+RESOLUTION
+==========
+
+To resolve this problem, rename the Net.bat file or remove it from the Netlogon
+share.
+
+MORE INFORMATION
+================
+
+This problem does not occur with Microsoft Windows 95 clients.
+
+Additional query words: terminated stops locks
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351xsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351xsearch
+Version           : winnt:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

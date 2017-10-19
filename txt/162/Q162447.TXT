@@ -1,0 +1,75 @@
+DOCUMENT:Q162447  25-SEP-2001  [winnt]
+TITLE   :Multiple Print Jobs When Printing Single Document
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document from a Windows 95 workstation to a printer shared on a
+Windows NT-based computer, multiple print jobs may appear in the printer's queue
+for the document. When this occurs, one print job displays a valid file size and
+all others display a size of zero bytes. If separator pages are specified for
+the printer, each print job has a separator page. Each separator page has a job
+number and description of "Remote Downlevel Document."
+
+CAUSE
+=====
+
+This behavior can occur if anti-virus software is running on your Windows 95
+workstation.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, one of the following methods:
+
+ - Configure the anti-virus software not to scan your document files by
+   specifying not to scan file types with extensions such as .doc and .txt.
+
+ - Disable or remove the anti-virus software on the Windows 95 workstation.
+
+ - Contact the anti-virus software manufacturer for updates to the program.
+
+MORE INFORMATION
+================
+
+For information about how to configure your anti-virus software, consult the
+program's documentation or manufacturer.
+
+Additional query words: duplicate win95 Event 10 ID remote downlevel document banner five
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

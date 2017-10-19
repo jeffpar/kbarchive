@@ -1,0 +1,65 @@
+DOCUMENT:Q164258  09-AUG-2001  [winnt]
+TITLE   :DPT SCSI Controller can Loose Requests When Reset
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under heavy stress or when restarting during Setup, there can be disk corruption
+with a DPT caching SCSI host adapter.
+
+This only happens when the write cache of the DPT adapter is enabled and hardware
+level RAID 5 is used.
+
+CAUSE
+=====
+
+When there is a reset on the SCSI bus because of a timeout or a system Reset,
+the Windows NT driver does not properly handle the uncompleted commands in the
+command queue of the DPT adapter.
+
+RESOLUTION
+==========
+
+To resolve this problem, contact DPT for an updated version of Dptscsi.sys or
+for information on updated firmware. You can contact DPT at:
+
+   http://www.dpt.com/drivers.html
+
+NOTE: Because Web sites are constantly updated, the site address may change
+without notice. If this occurs, please contact the manufacturer directly.
+
+Additional query words: DPT smartcache smartraid
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

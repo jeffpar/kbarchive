@@ -1,0 +1,64 @@
+DOCUMENT:Q230068  28-MAY-2001  [exchange]
+TITLE   :XFOR: Exchange Migration Does Not Work on Large Notes Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55 exc55sp1 exc55sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 Service Packs 1, 2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When migrating large Notes mailboxes, using the Microsoft Exchange migration
+utility for Lotus Notes, the migration process may not complete. The migration
+utility, however, reports that it finished successfully, and the statistics of
+migrated data will not be equal to the initial data. For example, a user with
+7,000 messages may find statistics that reports success with only 3,500 messages
+migrated. This problem may occur with either one-step or two-step migration.
+
+WORKAROUND
+==========
+
+To work around this, use the Microsoft Importer for Lotus Notes Mail. It has a
+higher success rate with large notes mailboxes. This tool is available for
+download from:
+
+   http://www.microsoft.com/exchange/downloads/2000/NotesImporter.asp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5 for
+Service Packs 1 and 2.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 
+Technology        : kbZNotKeyword8 kbExchangeSearch kbZNotKeyword2 kbExchange550SP1
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

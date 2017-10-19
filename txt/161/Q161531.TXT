@@ -1,0 +1,63 @@
+DOCUMENT:Q161531  17-DEC-1999  [homemm]
+TITLE   :Wine Guide 2.0: Blank Box on Printout When Printing Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Wine Guide for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print the Wine Guide Contents screen using a HP Laser Jet 4+ printer, a
+blank box prints in the lower left corner of the page.
+
+CAUSE
+=====
+
+This occurs if you are using one of the following printer drivers:
+
+ - HP LaserJet 4 Plus/4M Plus Printing System, version: 31.V1.30
+
+ - HPPCL5E Printer Driver For Windows 3.1, version: 31.V1.30
+
+ - HP Status Window, version: 2.10
+
+
+RESOLUTION
+==========
+
+Obtain an updated printer driver from the hardware manufacturer.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm wine guide hp laserjet printing print
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbWine200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

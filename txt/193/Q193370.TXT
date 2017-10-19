@@ -1,0 +1,71 @@
+DOCUMENT:Q193370  07-SEP-2001  [homemm]
+TITLE   :Encarta Virtual Globe 99: Program Hangs When You Print Article
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbinterop kbprint kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to print an article from Encarta Virtual Globe 99, the program
+may stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if Encarta Virtual Globe 99 is configured to print all
+linked documents.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Open an article you want to print from Encarta Virtual Globe 99.
+
+2. On the Options menu, click Print.
+
+3. Click to clear the Print All Linked Documents check box, and then click OK.
+
+MORE INFORMATION
+================
+
+Encarta Virtual Globe 99 uses Microsoft Internet Explorer technology to display
+and print textual content. One feature of this technology allows you to print
+all documents linked to a single article.
+
+If this feature is enabled, up to 180 documents may be printed when you attempt
+to print a single article. Encarta Virtual Globe does not respond until all of
+the linked documents are printed.
+
+Additional query words: multi multi-media media mm world atlas evg
+
+======================================================================
+Keywords          : kbinterop kbprint kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

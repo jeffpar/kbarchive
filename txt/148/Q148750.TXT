@@ -1,0 +1,77 @@
+DOCUMENT:Q148750  05-MAY-1999  [iis]
+TITLE   :CGI Scripts Compiled w/16-bit C Compilers Fail to Run on IIS
+PRODUCT :Internet Information Server
+PROD/VER:1.0 3.51
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you try to run a CGI script on (Internet Information Server) IIS from a Web
+Browser using http://<ServerName>/Directory
+path>/<FileName.exe>?,, you may get the following error:
+
+   HTTP/1.0 500 Server Error (The handle is invalid.)
+
+CAUSE
+=====
+
+CGI scripts compiled with 16-bit C compilers may fail to execute on IIS.
+
+For example, if you compile and build an executable file out of the following C
+language source code using a 16-bit C compiler, and run the .exe file from a
+MS-DOS window of a Microsoft Windows NT Workstation version 3.51, the correct
+HTML output will send to the standard out. However if you place the same
+executable file in the Script directory of the IIS server and try to execute the
+same executable file from a web browser using
+http://<ServerName>/Directory path>/<FileName.exe>?, it will fail
+to generate to web page.
+
+   #include <stdio.h>
+
+   void main()
+   {
+      printf( "Content-type: text/html\n\n" );
+      printf( "<BODY BGCOLOR=\"#FFFFF0\" TEXT=\"#0000FF\">" );
+      printf( "<TITLE>This is a Test page</TITLE>" );
+      printf( "<h2>Hello World.</h2><br>" );
+      printf( "<h1><center>End of the test page.</center></h1>" );
+      printf( "</BODY>\n" );
+   }
+
+RESOLUTION
+==========
+
+To correct this problem compile and build the C Language Source code using a
+32-bit C compiler, such as Microsoft C++ 4.0 or C++ 2.0.
+
+Additional query words: prodiis
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

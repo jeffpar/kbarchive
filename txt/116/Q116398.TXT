@@ -1,0 +1,116 @@
+DOCUMENT:Q116398  16-OCT-1999  [win95x]
+TITLE   :Removing LaserTools PrintCache from Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains steps to remove the PrintCache utility from your Windows
+configuration and suggestions for troubleshooting specific problems related to
+using PrintCache in Windows. If you need additional assistance with PrintCache,
+contact LaserTools Technical Support.
+
+MORE INFORMATION
+================
+
+LaserTools PrintCache versions 3.0 and 3.1 modify all installed printer drivers
+to send their information to PrintCache's GDX.EXE instead of Windows' GDI.EXE.
+It is sometimes necessary to disable PrintCache for troubleshooting purposes.
+
+NOTE: To use 32-bit file access (VFAT) in Windows for Workgroups 3.11, you must
+disable PrintCache. If you install PrintCache and then start Windows for
+Workgroups, you receive the following error message:
+
+   32-Bit File Access was unable to run.
+   This may be because you started the network before starting Windows, because
+   Windows could not find the IFSHLP.SYS driver, or your hard disk(s) may be
+   incompatible with 32-bit File Access.
+
+Removing PrintCache
+-------------------
+
+To remove PrintCache from Windows:
+
+1. Run INSTALL.EXE from the PCACHE directory and then press ENTER to continue.
+
+2. Select the Windows Pcache option.
+
+3. Choose Remove.
+
+4. If you are using PrintCache version 3.1, also remove the Voice Warning
+   option.
+
+5. To complete the removal of PrintCache, exit and then restart Windows.
+
+In some instances, this procedure may not completely remove the modifications
+made to the printer drivers. In addition to running the uninstall program, you
+may need to change to the PCACHE directory and type the following command:
+
+   nogdx \windows\system\*.drv
+
+This removes modifications made to the printer driver files in the Windows SYSTEM
+subdirectory.
+
+If this fails to repair the driver files, completely remove the printers from the
+Printers dialog box in Control Panel, rename the printer driver(s) in question,
+and then reinstall them from your original Windows disks.
+
+Using PrintCache with Windows
+-----------------------------
+
+When you use a PrintCache version earlier than 3.0 with Windows, you must either
+clear the "Fast Printing Direct To Port" check box in the Connect dialog box, or
+print to LPTx.xxx (any extension can be used). To access the Connect dialog box,
+choose the Printers icon in Control Panel, and choose Connect.
+
+With PrintCache version 3.0, you do not need to disable "Fast Printing Direct To
+Port" because PrintCache 3.0 has a Windows installation utility and dynamic-link
+library (DLL) that handle routing data to the printer while taking advantage of
+MS-DOS interrupts. In both cases, because PrintCache is handling the MS-DOS
+interrupts, no performance degradation results from clearing the Fast Print
+Direct To Port option. Also, when you are using PrintCache with Windows version
+3.0, you must choose the 386 Enhanced icon in Control Panel and select the Never
+Warn option under Device Contention. If Device Contention is not set to Never
+Warn, you receive a "Device Conflict" error when you print.
+
+In PrintCache versions earlier than 3.0, if LPTx.xxx is not selected, Windows 3.0
+bypasses the PrintCache buffer and prints directly to the parallel port.
+
+PrintCache is manufactured by LaserTools, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+
+Additional query words: 3rdparty 3.00 3.00a 3.10 WIN30 WIN31 pcache laser tools print cache
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

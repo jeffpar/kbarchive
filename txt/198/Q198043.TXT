@@ -1,0 +1,91 @@
+DOCUMENT:Q198043  14-NOV-2000  [word97]
+TITLE   :WD97: Extra Paragraph Mark Above Include Field at Top of Doc
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfield winword word97 kblayout kbtable
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select the Link to File check box and insert a file that starts with a
+table at the beginning of a document, Word adds a paragraph mark to the
+beginning of the document. You cannot delete this additional paragraph mark.
+
+NOTE: The additional paragraph mark is not displayed when the Field Codes option
+is selected.
+
+If you insert a file that begins with a table at the start of a document and do
+not select the Link to File check box, Word does not add the paragraph mark to
+the beginning of the document.
+
+WORKAROUND
+==========
+
+If the extra paragraph mark disrupts the page layout of your document, you can
+change the paragraph line spacing setting to 0.01 inch by following these
+steps:
+
+1. On the Format menu, click Paragraph. Select Exactly in the Line Spacing box,
+   and type "0.01"" (without the quotation marks). Note the inches mark.
+
+2. Click OK.
+
+MORE INFORMATION
+================
+
+To insert a file into a Word document, use either of the following methods.
+
+Method 1: Use the Menus to Link to the File
+-------------------------------------------
+
+1. On the Insert menu, click File.
+
+2. Select the file in the File Name box.
+
+3. Select the Link to File check box as appropriate.
+
+4. Click OK.
+
+Method 2: Type the IncludeText Field
+------------------------------------
+
+1. Press CTRL+F9 to insert field braces into your document.
+
+2. Type "INCLUDETEXT filename" (without the quotation marks) inside the braces.
+
+   where filename is the path and file name of your document.
+
+3. Turn the field codes off by pressing ALT+F9.
+
+Additional query words: linked extra 8.0 8.00
+
+======================================================================
+Keywords          : kbfield winword word97 kblayout kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,72 @@
+DOCUMENT:Q141744  08-NOV-2001  [homemm]
+TITLE   :Mac Dangerous Creatures: Files Installed During Installation
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the files and folders installed by the Dangerous Creatures
+installer.
+
+MORE INFORMATION
+================
+
+The following files and folders are installed to the hard disk using the
+installer, or by manually copying the files from the compact disc to the correct
+locations on the hard disk.
+
+Files and Folders Installed on the Hard Disk
+--------------------------------------------
+
+Dangerous Creatures folder
+
+ - Microsoft Dangerous Creatures
+ - Dangerous Creatures-ReadMe
+ - TeachText
+
+System Folder
+
+   Extensions folder
+
+ - 32-Bit QuickDraw (version 1.2)
+ - QuickTime (version 2.0)
+ - QuickTime Musical Instruments (version 2.0)
+ - QuickTime Power Plug (version 2.0)
+ - Sound Manager (version 3.0)
+
+   Control Panels folder
+
+ - Sound (version B1-8.0.1)
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm dcreatures setup install cd-rom compact disk
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbDangerousCreaturesMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

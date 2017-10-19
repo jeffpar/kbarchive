@@ -1,0 +1,64 @@
+DOCUMENT:Q131261  06-NOV-1999  [win3x]
+TITLE   :Message Finder Does Not Search Shared or Deleted Folders
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Message Finder command from the File menu in Windows for
+Workgroups Mail, shared folders and the Deleted Mail folder are not searched
+when you choose to search all folders.
+
+CAUSE
+=====
+
+Message Finder is designed to search only the mail message (.MMF) file
+structure. Shared folders are stored on the post office in the FOLDERS\PUB
+directory, and are not searched.
+
+RESOLUTION
+==========
+
+To search a shared folder, follow these steps:
+
+1. Create a new private folder.
+
+2. Copy all the messages from the shared folder to the new private folder.
+
+3. Search the new private folder or all folders.
+
+To search the Deleted Mail folder, specifically select the Deleted Mail folder in
+Message Finder.
+
+Additional query words: 3.11 msmail
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,87 @@
+DOCUMENT:Q240883  09-AUG-2001  [ssafe]
+TITLE   :Shadow Folders Are Not Updated When You Use Mapped Drives
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a shadow folder in Visual SourceSafe (VSS), the following error
+message occurs when you check in a file:
+
+   Invalid dos path to the mapped directory.
+
+The shadow folder is not updated.
+
+CAUSE
+=====
+
+Visual SourceSafe attempts to update the shadow folder by referencing it from
+the SourceSafe client computer. Therefore, all clients must have mapped drives
+to the shadow folder that are identical.
+
+NOTE: Visual SourceSafe does not issue a warning that all clients must also
+create a mapped drive in order for this feature to work.
+
+RESOLUTION
+==========
+
+To resolve this problem, shadow directly by using the Universal Naming
+Convention (for example, \\machinename\share). Alternatively, a mapped drive
+must be created for all individual clients that point to the shadow directory
+path.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce This Behavior
+--------------------------------
+
+1. Map a drive to the location where you intend to create a shadow folder.
+
+2. Open the Visual SourceSafe Administrator, click Tools, click Options, click
+   the Shadow Folder tab, and then create a shadow folder to the mapped drive.
+
+3. Open SourceSafe Explorer on a client computer that does not have a mapped
+   drive.
+
+4. The error occurs when you attempt to check in a file to the project that
+   shadows to the mapped drive.
+
+Additional query words: shadowing UNC
+
+======================================================================
+Keywords          : kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500 kbSSafe32bitSearch
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

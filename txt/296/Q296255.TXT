@@ -1,0 +1,74 @@
+DOCUMENT:Q296255  26-MAY-2001  [exchange]
+TITLE   :Setting the MaxFailedObjects Key in Microsoft Directory Synchron
+PRODUCT :Microsoft Exchange
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Services for NetWare version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If MSDSS does not migrate a specific object in an otherwise successful directory
+synchronization, The service writes 150 objects, and then it records the
+following event message in the local System log:
+
+   MSDSS Event ID: 46
+   The maximum number of failed objects (150) have been added to the failed
+   object list The session has teminated. to allow more entries to be added,
+   please increase the value of the 'MaxFailedObjects' key in the Dirsync
+   registry parameters setting.
+
+CAUSE
+=====
+
+This behavior occurs because MSDSS defaults to writing 150 records if a specific
+object is not successfully added during a directory synchronization.
+
+RESOLUTION
+==========
+
+To resolve this behavior, you can overwrite the default setting by modifying the
+MaxFailedObjects registry setting. The key that you need to add is in the MSDSS
+registry key, and not the Dirsync key (as indicated in the event message). The
+correct registry entry is:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSDSS\Parameters\
+   Value: MaxFailedObjects
+   Type: DWORD
+
+You need to add this entry by using Regedt32.exe because it does not exist by
+default.
+
+If the MaxFailedObject key is set to 0, MSDSS continues to write all records if a
+single object does not migrate.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbServicesNetware500 kbServicesNetwareSearch
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

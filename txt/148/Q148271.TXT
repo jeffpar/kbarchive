@@ -1,0 +1,148 @@
+DOCUMENT:Q148271  09-AUG-2001  [exchange]
+TITLE   :XCLN: .Pst and .Pab Files Not Interchangeable
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,8.0,8.1,8.2
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, versions 8.0, 8.1, 8.2 
+ - Microsoft Outlook 2001 for Mac 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The .pst and .pab files are not interchangeable between the Microsoft Exchange
+Macintosh and Microsoft Exchange or Outlook Windows clients.
+
+This also applies the Schedule+ file types .sch and .sc2, as well as Offline
+Folder .ost files and Advanced Security .epf files.
+
+NOTE: The information in this article applies to older versions of the Macintosh
+clients as listed above. Personal Folder (.pst) files used in Windows versions
+of Outlook and Outlook 2001 for Mac are compatible and interchangeable. The
+Personal Address Book (.pab) is not cross platform compatible. The workaround
+for .pab files in the article continue to apply.
+
+WORKAROUND
+==========
+
+For .PST Files
+--------------
+
+If you need to access Microsoft Exchange messages from both Macintosh and
+Windows, save everything in your mailbox to the Microsoft Exchange server.
+
+For example:
+
+1. Log on to a Microsoft Exchange account from a Windows client.
+
+2. Create a folder on the computer running Microsoft Exchange Server.
+
+3. Copy all locally saved message (the Windows .pst) to the folder on the
+   server.
+
+4. Log on to the same Microsoft Exchange account from a Macintosh computer.
+
+5. Copy all locally saved messages from the server to a personal folder (the
+   Macintosh .pst)
+
+For .PAB Files
+--------------
+
+If you want to add users from a Macintosh PAB to a Windows PAB, perform the
+following steps:
+
+1. Log into the Macintosh Exchange Client, compose a message, and place users
+   from the PAB on the TO: line.
+
+2. Save the message by selecting Save from the File menu.
+
+3. The composed message will remain in your Inbox.
+
+4. Log into a Windows Exchange Client and open the saved message.
+
+5. Right click on a user on the To: line and select Add to Personal Address
+   Book.
+
+For .SCH Files
+--------------
+
+If you need to access Microsoft Schedule+ information from both Macintosh and
+Windows, keep all Schedule+ information in your server (shared) schedule to the
+Microsoft Exchange server. Do not use a local Schedule+ .sch file.
+
+For example:
+
+1. Log on to a Microsoft Exchange account from a Windows client.
+
+2. Start Schedule+ and click "I do not want a schedule file on this machine."
+
+3. If the profile already existed and Schedule+ is already configured with a
+   local file:
+
+    - On the Tools menu, click Options.
+
+    - On the Synchronize tab, clear the "Work Primarily From Local File" check
+      box. Click OK.
+
+4. Log on to the same Microsoft Exchange account from a Macintosh computer.
+
+5. Start Schedule+ and either select to not have a schedule file on this
+   computer
+
+   -OR-
+
+   Disable the local schedule file as done in step 3.
+
+For .OST Files
+--------------
+
+Offline Folder files are simply a mirror image of what is in your server mailbox.
+Re-createOffline folder files on the platform for which they are intended to be
+used.
+
+For .EPF Files
+--------------
+
+Issue Advanced Security files and save them locally for each platform for which
+they are intended to be used.
+
+For additional information about Personal Folders in Outlook 2001, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q301563 OL2001: Release Notes for Outlook 2001 for Macintosh
+
+   Q294647 OL2001: PST File Does Not Append .PST Extension to File Name
+
+Additional query words: ol97 Outlook Migrate Migration import
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook2001Search kbZNotKeyword3 kbOutlookMacSearch kbExchange500Mac kbExchange400Mac kbExchange400NT kbExchange500NT kbOutlook800Mac kbOutlook810Mac kbOutlook820Mac kbExchange400Win95 kbExchange500Win95
+Version           : :4.0,5.0,8.0,8.1,8.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

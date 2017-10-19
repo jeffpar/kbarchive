@@ -1,0 +1,63 @@
+DOCUMENT:Q104734  18-NOV-1999  [msdos]
+TITLE   :Setup Does Not Recognize Compaq XMS Device Driver
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MS-DOS Upgrade Setup does not recognize the Compaq extended memory services
+(XMS) device driver (EXMEM.EXE). As a result, Setup adds a device command for
+HIMEM.SYS to the end of your CONFIG.SYS file. When the second XMS driver loads,
+you receive the following error message:
+
+   ERROR: An Extended Memory Manager is already installed.
+
+CAUSE
+=====
+
+Setup does not recognize EXMEM.SYS because EXMEM.SYS makes itself look like the
+MS-DOS HIMEM.SYS driver.
+
+
+Since Setup finds what it thinks is HIMEM.SYS in memory, it determines that it
+has to update an existing HIMEM.SYS line in the CONFIG.SYS file. When it doesn't
+find any reference to HIMEM.SYS, it adds a command for it.
+
+RESOLUTION
+==========
+
+To work around this problem, edit your CONFIG.SYS file with MS-DOS Editor and
+remove the device command for one of the XMS managers.
+
+Additional query words: 6.22 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

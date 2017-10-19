@@ -1,0 +1,75 @@
+DOCUMENT:Q287888  07-JUN-2002  [exchange]
+TITLE   :XADM: Corrupted Message-ID Text
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you check the Internet headers on a message that originates from an
+Exchange Server computer, you may notice that the originating server name in the
+Message-ID section is corrupted. For example, the following text is displayed in
+the Message-ID section:
+
+   
+
+   Message-ID: <C1F8B064AA7BD111A78E006097AC94A13649AB@GUISRV02>
+
+However, you expect the following text to be displayed:
+
+   
+
+   Message-ID: <C1F8B064AA7BD111A78E006097AC94A13649AB@GUISRV02>
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall the TCP/IP stack on the originating Exchange
+Server computer, and then reapply the current Microsoft Windows NT service pack.
+
+MORE INFORMATION
+================
+
+This issue has been reported to cause blank e-mail messages when they are
+received on an Exchange 2000 Server computer. In this case, even though the
+messages are blank, the From address is still displayed. The specific cause of
+this issue is not known at this time. This issue may be caused by the Exchange
+2000 SMTP gateway or by virus scanning software that strips the message body
+from message, and causes the corrupted text to be displayed in the Message-ID
+section.
+
+This issue has not been reported in Hotmail messages.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

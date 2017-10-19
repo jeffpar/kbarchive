@@ -1,0 +1,109 @@
+DOCUMENT:Q168374  10-FEB-2002  [visualc]
+TITLE   :FIX: C1001 file 'msc1.cpp', line 1188, Using Recursive Namespace
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kberrmsg kbtool kbVC500bug kbVC600bug kbNoUpdatekbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using namespace names recursively causes the compiler to generate the following
+error message:
+
+   fatal error C1001: INTERNAL COMPILER ERROR (compiler file 'msc1.cpp', line
+   1188)
+
+RESOLUTION
+==========
+
+Use the "using" directive instead of the "using namespace" directive. Please see
+the sample in the MORE INFORMATION section of this article for a workaround.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem and a workaround:
+
+Sample Code
+-----------
+
+      /*
+      Compile Options: /GX
+      */ 
+      #include <iostream>
+
+      namespace A
+      {
+      }
+
+      namespace B
+      {
+
+         using namespace A;
+
+      }
+
+      namespace A
+      {
+
+         int Ai ;
+         using namespace B;
+      }
+
+      int f(void)
+      {
+         using namespace A ; //C1001 here
+         //Workaround: Comment the above line
+         //Uncomment the line below
+         //using A::Ai ;
+         Ai = 100 ;
+         return Ai ;
+      }
+
+      void main()
+      {
+         std::cout << "A::Ai = " << f() << std::endl ;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kberrmsg kbtool kbVC500bug kbVC600bug kbNoUpdate kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

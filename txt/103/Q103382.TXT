@@ -1,0 +1,69 @@
+DOCUMENT:Q103382  30-OCT-1999  [pcmail]
+TITLE   :PC Win: Err Msg: Notice 73: You Don't Have Sufficient Rights..
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to delete a folder, the following error message may appear:
+
+   Notice 73
+   You don't have sufficient rights to access this folder
+
+RESOLUTION
+==========
+
+To resolve this problem, do one of the following:
+
+ - Only the person who created the folder (the owner) can delete the folder,
+   unless he or she granted delete privileges when the folder was created. The
+   administrator can use the Administrator program (ADMIN.EXE) to find out who
+   created the folder and then ask the user to delete the folder. The
+   administrator can also remove the user's rights to create shared folders.
+
+ - Verify the rights and ownership of all files, especially in the following
+   directories:
+
+   GLB
+   ATT\SUBS
+   FOLDERS\SUBS
+   MBG
+   KEY
+   MAI\SUBS
+   P1
+
+ - Check for shared folders on the server, and limit the file sharing through
+   the network operating system.
+
+Additional query words: 3.00 3.0b 3.20 errmsg notice73 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

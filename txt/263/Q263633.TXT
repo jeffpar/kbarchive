@@ -1,0 +1,86 @@
+DOCUMENT:Q263633  03-MAY-2001  [visualc]
+TITLE   :BUG: Error C2946 on Explicit Instantiation of Imported Templates
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbtemplate kbCompiler kbCPPonly kbVC600bug kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to perform explicit instantiation of a template class or function
+imported from another namespace by means of a using declaration or using
+directive, you may receive the following error message:
+
+   Test.cpp(8) : error C2946: explicit instantiation; 'class ?$A@H' is not a
+   template-class specialization
+
+RESOLUTION
+==========
+
+To work around this problem, qualify the template name with the name of the
+namespace in which the template is defined.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the bug:
+
+   // Test.cpp
+   // Compiler option needed: none
+   namespace N {
+
+   template <class T>
+   struct A { };
+   }
+
+   using namespace N;             // This does not work.
+   using N::A;                    // This also does not work.
+   template class A<int>;
+
+   // template class N::A<int>;   // This works.
+
+Additional query words: "Compiler Error"
+
+======================================================================
+Keywords          : kbtemplate kbCompiler kbCPPonly kbVC600bug kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

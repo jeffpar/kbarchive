@@ -1,0 +1,1134 @@
+DOCUMENT:Q289474  24-JUN-2002  [mspress]
+TITLE   :Academic Learning Series Windows 2000 Server Comments and Correc
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Academic Learning Series Microsoft Windows 2000 Server ISBN 0-7356-0988-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book ALS Microsoft Windows 2000 Server, ISBN
+0-7356-0988-8.
+
+The following topics are covered:
+
+ - Lab Manual, Page 31: Incorrect Sub-heading
+
+ - Lab Manual, Page 45: Correction To Student Account Membership
+
+ - Path For Chapter Files Is Incorrect
+
+ - Pages xliii & 43: Minimum Memory Requirement Is 128 MB
+
+ - Page 7: Windows 2000 Does Not Support RISC-Based Computers
+
+ - Page 17: Incorrect Wording
+
+ - Page 31: Incorrect Snap-in Name
+
+ - Page 42: Incorrect Minimum Requirement For Free Space
+
+ - Page 42: Incorrect Number Of Floppy Disks
+
+ - Pages 45 & 910: Incorrect Minimum Boot Partition Size
+
+ - Page 45: Remove Reference To 7.8GB Partition Limit
+
+ - Page 48: "Boot Partition" Should Be "System Partition"
+
+ - Page 48: Incorrect Reference To FAT File System
+
+ - Page 49: Windows NT Does Not Recognize FAT32
+
+ - Page 77: Error In "Important" Section
+
+ - Page 116: Incorrect Syntax For ProductID
+
+ - Page 117: Incorrect Step 2
+
+ - Page 117: Change "Unattend.txt" To "Unattend.bat"
+
+ - Page 117: Unable To Connect To Server01
+
+ - Page 122: Incorrect Information About RIS
+
+ - Page 122: Incorrect Information About Clean Installation With SMS
+
+ - Page 124: Win32.exe Should Be Winnt32.exe
+
+ - Page 129: Sysprep.exe And Sysprep.inf Misspelled
+
+ - Page 130: Error Regarding Non-null Password In [GUIUnattended] Section
+
+ - Page 154: Incorrect Information About Dynamic Disk Limitations
+
+ - Page 164: Delete "Server Operators Group"
+
+ - Page 169: DiskSpace Should Be DriveSpace
+
+ - Page 182: Incorrect Information About CDFS
+
+ - Page 184: Format.exe Should Be Format.com
+
+ - Page 190: Inaccurate Information About NTFS 5.0 Accessibility
+
+ - Page 203: Incorrect Permissions Listed
+
+ - Page 204: "Allow Inheritable Permissions From Parent To Propagate To This
+   Object" Is Selected By Default
+
+ - Page 206: Incorrect Description About Inheritance
+
+ - Page 208: Add Is Not A Windows 2000 NTFS Permission
+
+ - Page 210: Incorrect Information About Default Inheritance
+
+ - Page 215: Can Should Be Cannot
+
+ - Page 217: Incorrect Information About Stand-Alone Dfs Replica
+
+ - Page 244: Distinguished Name Format Is Incorrect
+
+ - Page 245: Users OU cannot have sub-OUs
+
+ - Page 261: Typographical Error
+
+ - Page 278: Step 26 Is Incorrect
+
+ - Page 282: Steps 4 And 5 Are Incorrect
+
+ - Page 284: Domain Control Should Be Domain Controller
+
+ - Pages 302 & 919: Ntdis.dit Should Be Ntds.dit
+
+ - Page 326: Incorrect New User Creation Requirement
+
+ - Page 344: Incorrect Information About Resetting Passwords
+
+ - Page 356: Error In Group Membership Table
+
+ - Page 356: Incorrect Information About Universal Group Availability In
+   Mixed-Mode
+
+ - Page 358: Incorrect Information About Universal Group In Mixed Mode
+
+ - Page 366: Incorrect Information About Enterprise Admins Membership
+
+ - Page 367: Change "Global Group" To "Domain Local Group"
+
+ - Page 369: Incorrect Reference To Windows 2000 Workstation
+
+ - Page 386: MMC Console Should Be Saved As .msc File
+
+ - Page 395: Applications Can Be Published Only To Users
+
+ - Page 438: Incorrect Steps For Enabling Printer Pool
+
+ - Page 461: Grammar Error In NWLink Section
+
+ - Page 499: Incorrect DHCP Backup Folder Path
+
+ - Page 568: "ASDL" Should Be "ADSL"
+
+ - Page 576: Incorrect Information About Callback Number Length
+
+ - Page 671: LSA Stands For "Local Security Authority"
+
+ - Page 682: Then Should Be When
+
+ - Pages 708 & 956: Slipstreaming Switch For Update.exe Is Incorrect
+
+ - Page 718: Incorrect Location For Accessing Send Console Message Dialog Box
+
+ - Page 718: Incremental Should Be Differential
+
+ - Page 743: Incorrect Description About Entering Startup Menu
+
+ - Page 819: Incorrect Question
+
+ - Page 893: Incorrect Information About MetaFrame Upgrade
+
+ - Page 903: Disk Should Be Data
+
+ - Page 912: Incorrect Folder Name
+
+ - Page 1010: Dfs Should Stand For Distributed File System
+
+MORE INFORMATION
+================
+
+Lab Manual, Page 31: Incorrect Sub-heading
+------------------------------------------
+
+On page 31 of the Lab Manual, in the bulleted sub-heading,
+
+Change:
+"Configuring a simple disk and converting it to a dynamic disk"
+
+To:
+"Configuring the hard disk"
+
+
+Lab Manual, Page 45: Correction To Student Account Membership
+-------------------------------------------------------------
+
+On page 45,
+
+Change:
+"3. In the console tree, select the Builtin node.
+A list of built-in user groups appears in the right pane.
+
+4. Double-click Administrators.
+The Administrators Properties dialog box appears."
+
+To:
+"3. In the console tree, select the Users node.
+A list of built-in user groups appears in the right pane.
+
+4. Double-click Enterprise Admins.
+The Enterprise Admins Properties dialog box appears."
+
+
+Path For Chapter Files Is Incorrect
+-----------------------------------
+
+Directions in this ALS textbook do not reflect the correct directory path
+structure to the chapter and course files on the companion CD (Student CD). The
+files for this ALS CD are located in the /textbook directory located at the CD
+root. For example, <drive letter>:/textbook/chapter01.
+
+Directions in the ALS text do not reflect the additional /textbook directory in
+the path structure. Instead the text indicates that the files are located
+directly at the CD root, i.e. <drive letter>:/chapter01.
+
+
+Pages xliii & 43: Minimum Memory Requirement Is 128 MB
+------------------------------------------------------
+
+The minimum memory requirement for Windows 2000 Server is 128 MB.
+
+On page xliii, under Hardware Requirements, change:
+"64 MB of RAM"
+
+To:
+"128 MB of RAM"
+
+In the table on page 43, change:
+"64 MB for networking with one to five client computers; 128 MB minimum is
+recommended for most network environments."
+
+To:
+"128 MB of RAM"
+
+
+Page 7: Windows 2000 Does Not Support RISC-Based Computers
+----------------------------------------------------------
+
+On page 7, the first sentence under Windows 2000 Architectural Overview,
+indicates that Windows 2000 will run on RISC based computers. However, it will
+not.
+
+Change:
+"Windows 2000 is a portable operating system designed to run on Complex
+Instruction Set Computing (CISC)-based and Reduced Instruction Set Computing
+(RISC)-based computers."
+
+To:
+"Windows 2000 is a portable operating system designed to run on Complex
+Instruction Set Computing (CISC)-based computers."
+
+
+Page 17: Incorrect Wording
+--------------------------
+
+On page 17, in the first line,
+
+Change:
+"Miniport drivers are already implemented in Windows 2000..."
+
+To:
+"Miniport drivers are already implemented in Windows NT..."
+
+
+Page 31: Incorrect Snap-in Name
+-------------------------------
+
+On page 31, in the Note section,
+
+Change:
+"...in the Site Manager snap-in"
+
+To:
+"...in the Active Directory Sites And Services snap-in"
+
+
+Page 42: Incorrect Minimum Requirement For Free Space
+-----------------------------------------------------
+
+In the table on page 42, the minimum free hard disk space should be 1 GB.
+
+Change:
+"...on a partition with at least 671 MB of free space (2 GB is recommended)."
+
+To:
+"...on a partition with at least 1 GB of hard disk free space (2 GB is
+recommended)."
+
+
+Page 42: Incorrect Number Of Floppy Disks
+-----------------------------------------
+
+On page 42, in the last bulleted item, change:
+
+"Format three 3.5-inch 1.44 MB floppy disks"
+
+To:
+"Format four 3.5-inch 1.44 MB floppy disks"
+
+
+Page 45: Remove Reference To 7.8 GB Partition Limit
+---------------------------------------------------
+
+The Note section on page 45 refers to a 7.8 GB maximum partition size. The 7.8 GB
+limit only applies to Windows NT. Windows 2000 does not have this limit. Please
+see the following articles for more information:
+
+   Q224526 Windows NT 4.0 Supports Maximum of 7.8-GB System Partition
+
+   Q240672 Setup Does Not Check for INT-13 Extensions Before Creating System
+   Partition
+
+
+Pages 45 & 910: Incorrect Minimum Boot Partition Size
+-----------------------------------------------------
+
+Lines 2 and 30 on page 45, and question 5 on page 910, list 671 MB as the minimum
+boot partition size for installing Windows 2000 server. This is incorrect. The
+minimum boot partition size is 1 GB.
+
+
+Page 48: "Boot Partition" Should Be "System Partition"
+------------------------------------------------------
+
+On page 48, there are three places where "boot partition" should be referred to
+as "system partition".
+
+In the first paragraph under File System Considerations, change:
+"Use the following guidelines and the table below to help you decide which file
+system format to use for your boot partition."
+
+To:
+"Use the following guidelines and the table below to help you decide which file
+system format to use for your system partition."
+
+In the fourth bulleted item, change:
+"You should choose the FAT option if your boot partition is smaller than 2
+GB..."
+
+To:
+"You should choose the FAT option if your system partition is smaller than 2
+GB..."
+
+In the fifth bulleted item, change:
+"...you have a boot partition larger than 2 GB."
+
+To:
+"...you have a system partition larger than 2 GB."
+
+
+Page 48: Incorrect Reference To FAT File System
+-----------------------------------------------
+
+On page 48, in the fifth bulleted item, change:
+"You should choose the FAT option if you are dual-booting with the OSR2 release
+of Windows 95, Windows 98, or Windows NT and..."
+
+To:
+"You should choose the FAT32 option if you are dual-booting with the OSR2 release
+of Windows 95, Windows 98, and..."
+
+
+Page 49: Windows NT Does Not Recognize FAT32
+--------------------------------------------
+
+In the table on page 49, Windows NT is incorrectly listed as compatible with the
+FAT32 file system. Change:
+
++-------------------------------------------------------------------------------------------------------------------+
+| Operating system      | FAT16      | FAT32                                                           | NTFS       | 
++-------------------------------------------------------------------------------------------------------------------+
+| Overall compatibility | No changes | Recognized only by Windows 95 OSR2,Windows 98, and Windows 2000 | No changes | 
++-------------------------------------------------------------------------------------------------------------------+
+
+
+Page 77: Error In "Important" Section
+-------------------------------------
+
+On page 77, in the "Important" section, change:
+"and if you disable this feature in the BIOS,"
+
+To:
+"and if you enable this feature in the BIOS,"
+
+
+Page 116:  Incorrect Syntax For ProductID
+-----------------------------------------
+
+On page 116, in step 12,
+
+Change:
+
+   "ProductID+<your_product_key>"
+
+To:
+
+   "ProductID = "your product ID"
+
+
+Page 117: Change "Unattend.txt" To "Unattend.bat"
+-------------------------------------------------
+
+On page 117, in the "Caution" section in Step 2,
+
+Change:
+"Unattend.txt"
+
+To
+"Unattend.bat"
+
+
+Page 117: Incorrect Step 2
+--------------------------
+
+On page 117, in step 2,
+
+Change:
+"Open a command prompt and type cdh:"
+
+To:
+"Open a command prompt, type h: and press Enter."
+
+
+Page 117: Unable To Connect To Server01
+---------------------------------------
+
+Step 1 on page 117 asks you to connect to Server01 from the second computer. You
+may not be able to connect to Server01 if there is not a DHCP server available
+on the network.
+
+Solution:
+
+If the second computer is running Windows 98, configure it to acquire an IP
+address from a DHCP server.
+
+Note: The two computers can communicate with each other this way. This is made
+possible by a feature called Automatic Private IP Addressing (APIPA) employed by
+Windows 98 and Windows 2000. With this feature, a Windows 98/2000 computer can
+assign itself an IP address in the event that a DHCP server is not available or
+does not exist on the network. APIPA-enabled computers can only communicate
+within the assigned subnet. The APIPA-assigned IP address is a class B address
+in the range of 169.254.x.x.
+
+If the second computer is running an operating system other than Windows 98,
+please complete the following steps:
+
+1. On Server01, run "ipconfig" at the command prompt to determine what the
+   APIPA-assigned IP address is for Server01.
+
+2. On the second computer, manually specify an IP address in the range of
+   169.254.x.x other than the one assigned to Server01. Addresses 169.254.0.0
+   and 169.254.255.255 are also invalid. Set the subnet mask to 255.255.0.0
+
+
+Page 122: Incorrect Information About RIS
+-----------------------------------------
+
+On page 122, the fifth bulleted item lists "Remote Installation Service (RIS)" as
+an automated installation method for Windows 2000 Server. This is incorrect.
+Remote Installation Service is an automated installation method for Windows 2000
+Professional only.
+
+
+Page 122: Incorrect Information About Clean Installation With SMS
+-----------------------------------------------------------------
+
+The table on page 122 indicates that a clean installation of Windows 2000 can be
+performed by SMS. This is incorrect. SMS can be used only for installations to
+computers that contain a previously installed operating system and are running
+the SMS client agent.
+
+In the "Clean Installation" column for SMS,
+
+Change:
+"Yes"
+
+To:
+"No"
+
+
+Page 124: Win32.exe Should Be Winnt32.exe
+-----------------------------------------
+
+On page 124, in the first paragraph under Figure 3.3, it incorrectly lists the
+setup program name as "Win32.exe".
+
+Change:
+"...when running the Win32.exe Setup program"
+
+To:
+"...when running the Winnt32.exe Setup program"
+
+
+Page 129: Sysprep.exe And Sysprep.inf Misspelled
+------------------------------------------------
+
+On page 129, in paragraphs two and three, file names "Sysprep.exe" and
+"Sysprep.inf" are misspelled.
+
+Change:
+"Sysrep.exe" and "Sysrep.inf"
+
+To:
+"Sysprep.exe" and "Sysprep.inf"
+
+
+Page 130: Error Regarding Non-null Password In [GUIUnattended] Section
+----------------------------------------------------------------------
+
+The [GuiUnattended] section on page 130 contains an error concerning non-null
+passwords. Change:
+"Any password supplied here will take effect only if the original source for the
+image (master computer) specified a non-null password."
+
+To:
+"Any password supplied here will take effect only if the original source for the
+image (master computer) specified a null password."
+
+
+Page 154: Incorrect Information About Dynamic Disk Limitations
+--------------------------------------------------------------
+
+On page 154, remove the following statement under the "Dynamic Disk and Dynamic
+Volume Limitations" section:
+
+"Dynamic disks that are less fault tolerant than the simple volume, extended
+simple volume, spanned volume, or striped volume cannot contain the boot or
+system partition. This feature is built into Windows 2000 to provide a baseline
+of fault tolerance for partitions containing operating system files."
+
+You can upgrade a basic disk containing the system or boot partition to a dynamic
+disk. For further information on converting a basic disk to a dynamic disk,
+please refer to the Disk Management Help in Windows 2000.
+
+
+Page 164: Delete "Server Operators Group"
+-----------------------------------------
+
+On page 164, in the first sentence under "Managing Disks on a Remote Computer",
+delete Server Operators group.
+
+Change:
+"As a member of the Administrators or Server Operators group, you can manage
+disks..."
+
+To:
+"As a member of the Administrators group, you can manage disks..."
+
+
+Page 169: DiskSpace Should Be DriveSpace
+----------------------------------------
+
+On page 169, in the last paragraph,
+
+Change:
+"MS-DOS 6.22 DiskSpace"
+
+To:
+"MS-DOS 6.22 DriveSpace"
+
+
+Page 182: Incorrect Information About CDFS
+------------------------------------------
+
+On page 182, under "CD-ROM File System", it states that in Windows 2000, CDFS
+does not support lowercase filenames. This is incorrect. This limitation applies
+to Windows NT 3.51 only.
+
+
+Page 184: Format.exe Should Be Format.com
+-----------------------------------------
+
+On page 184, in the last paragraph,
+
+Change:
+"If the Format.exe program is used to ..."
+
+To:
+"If the Format.com program is used to ..."
+
+
+Page 190: Inaccurate Information About NTFS 5.0 Accessibility
+-------------------------------------------------------------
+
+On page 190, the first paragraph needs clarification to include Service Pack
+specifications.
+
+Change:
+"Windows NT 4.0 systems are not able to mount NTFS 5.0 volumes."
+
+To:
+"Windows NT 4.0 systems (pre-SP4) are not able to mount NTFS 5.0 volumes."
+
+
+Page 203: Incorrect Permissions Listed
+--------------------------------------
+
+On page 203, in the sixth bulleted item, change:
+"When assigning permission to public data folders, assign Modify and Read and
+Execute to the Users group, and Full Control to Creator Owner."
+
+To:
+"When assigning permission to public data folders, assign Read and Write to the
+Users group, and Full Control to Creator Owner."
+
+
+Page 204: "Allow Inheritable Permissions From Parent To Propagate To This Object" Is Selected By Default
+--------------------------------------------------------------------------------------------------------
+
+On page 204, in the Description field for "Allow Inheritable Permissions From
+Parent To Propagate To This Object", change: "By default, this option is not
+selected for folders, which means subfolders do not inherit permissions assigned
+to their parent folder."
+
+To:
+"By default, this option is selected for folders, which means subfolders inherit
+permissions assigned to their parent folder."
+
+
+Page 206: Incorrect Description About Inheritance
+-------------------------------------------------
+
+On page 206, in the chart's Description field for "Apply These Permissions To
+Objects And/Or Containers Within This Container Only",
+
+Change:
+"Click to clear this check box to prevent permissions inheritance.
+
+Select this check box to propagate the modified individual NTFS permissions down
+the folder hierarchy."
+
+To:
+"Select this check box to prevent permissions inheritance.
+
+Click to clear this check box to propagate the modified individual NTFS
+permissions down the folder hierarchy."
+
+
+Page 208: Add Is Not A Windows 2000 NTFS Permission
+---------------------------------------------------
+
+On page 208 in the "Copying Files and Folders" section, change:
+"To copy files and folders within or between NTFS volumes, a user must have been
+granted Add permission for the destination folder."
+
+To:
+"To copy files and folders within or between NTFS volumes, a user must have been
+granted Create Files/Write Data and Create Folders/Append Data permissions for
+the destination folder."
+
+Also, under the "Moving Files and Folders" section, change:
+"To move files and folders between NTFS partitions requires the Add permission
+for the destination..."
+
+To:
+"To move files and folders between NTFS partitions requires the Create
+Files/Write Data and Create Folders/Append Data permission for the
+destination..."
+
+
+Page 210: Incorrect Information About Default Inheritance
+---------------------------------------------------------
+
+On page 210, in line 10, change:
+
+"By default, permissions assigned to the partition and parent folder are not
+inherited and do not propagate to..."
+
+To:
+"By default, permissions assigned to the partition and parent folder are
+inherited and propagate to..."
+
+
+Page 215: Can Should Be Cannot
+------------------------------
+
+On page 215, in the table, in the "Memory overhead" row,
+
+Change:
+"Without this service installed, Windows 9x clients can access..."
+
+To:
+"Without this service installed, Windows 9x clients cannot access..."
+
+
+Page 217: Incorrect Information About Stand-Alone Dfs Replica
+-------------------------------------------------------------
+
+On page 217, in the last bulleted item,
+
+Change:
+"You can create a replica from a stand-alone Dfs root;"
+
+To:
+"You can create a replica from a stand-alone Dfs link;"
+
+
+Page 244: Distinguished Name Format Is Incorrect
+------------------------------------------------
+
+On page 244, the distinguished name example given is in an incorrect format.
+
+Change:
+"DC=COM/DC=Microsoft/CN=Users/CN=James Smith"
+
+To:
+"CN=James, Smith,CN=Users,DC=Microsoft,DC=Com"
+
+
+Page 245: Users OU cannot have sub-OUs
+--------------------------------------
+
+On page 245, in paragraph two under "Relative Distinguished Name", change:
+"For example, if the Users OU contains a James Smith user account, you could not
+add another James Smith user to it. However, if the Users OU contains two
+smaller OUs.."
+
+To:
+"For example, if an OU contains a James Smith user account, you could not add
+another James Smith user to it. However, if the OU contains two smaller OUs..."
+
+
+Page 261: Typographical Error
+-----------------------------
+
+On page 261 under "First-Layer Domains", change:
+
+"Additionally, this will help minimize direct service replication,"
+
+To:
+"Additionally, this will help minimize directory service replication,"
+
+
+Page 278: Step 26 Is Incorrect
+------------------------------
+
+On page 278, change step 26 from:
+"Open Control Panel on Server02"
+
+To:
+"Select Network Identification from the Advanced menu of the Network And Dial-Up
+Connections window."
+
+
+Page 282: Steps 4 And 5 Are Incorrect
+-------------------------------------
+
+On page 282, replace steps 4, 5, 6, and 7 with the following:
+
+   4. Select the Create A New Share radio button.
+   5. In the Path To Share text box, type c:\publicrepl.
+   6. In the Share Name text box, type pubrepl.
+   7. Click Finish.
+   The distributed file system message box appears stating that
+   \\Server02\c$\publicrepl does not exist.
+   8. Click Yes to create the folder.
+
+
+Page 284: Domain Control Should Be Domain Controller
+----------------------------------------------------
+
+On page 284, under Lesson Summary, in the third line,
+
+Change:
+"...to add a domain control..."
+
+To:
+"...to add a domain controller..."
+
+
+Pages 302 And 919: Ntdis.dit Should Be Ntds.dit
+-----------------------------------------------
+
+On pages 302 and 919, in question 1, the file name Ntds.dit is misspelled as
+Ntdis.dit.
+
+Change:
+"Ntdis.dit"
+
+To:
+"Ntds.dit"
+
+
+Page 326: Incorrect New User Creation Requirement
+-------------------------------------------------
+
+In the table on page 326, in the Description field for First Name and Last Name,
+
+Change:
+"This or Last Name is required.
+This or First Name is required."
+
+To:
+"This, Initials, or Last Name is required.
+This, Initials, or First Name is required."
+
+
+Page 344: Incorrect Information About Resetting Passwords
+---------------------------------------------------------
+
+On page 344, under "Resetting Passwords",
+
+Change:
+"If a user's password expires before she or he can change it, or if a user
+forgets her or his password, you need to reset the password."
+
+To:
+"If a user forgets her or his password, you need to reset the password."
+
+
+Page 356: Error In Group Membership Table
+-----------------------------------------
+
+There is an error in the "Native-mode scope" column of the Group Membership
+table. It's missing the words, "as well as other domain". Change to:
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Group scope  | In Mixed-mode scope can contain | In Native-mode scope can contain                                                                                                                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Domain local | No changes                      | User accounts, computer accounts, global groups, and universal groups from any domain, as well as other domain local groups from the same domain | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Page 356: Incorrect Information About Universal Group Availability In Mixed-Mode
+--------------------------------------------------------------------------------
+
+On page 356, in the table under "Group Membership", in the "In Mixed-mode scope
+can contain" - "Universal" cell,
+
+Change:
+"Not available in Mixed Mode"
+
+To:
+"Not available in Mixed Mode, unless the Group Type is Distribution"
+
+
+Page 358: Incorrect Information About Universal Group In Mixed Mode
+-------------------------------------------------------------------
+
+On page 358, in the first bulleted item, change:
+"Universal groups do not exist in Mixed mode."
+
+To:
+"Universal security groups do not exist in Mixed mode."
+
+
+Page 366: Incorrect Information About Enterprise Admins Membership
+------------------------------------------------------------------
+
+In the table on page 366, in the "Description" field of "Enterprise Admins",
+
+Change:
+"By default, the Administrators built-in local group for each domain is a member
+of the Enterprise Admins global group."
+
+To:
+"By default, the Enterprise Admins global group is a member of the Administrators
+built-in local group."
+
+
+Page 367, Change "Global Group" To "Domain Local Group"
+-------------------------------------------------------
+
+On page 367, in the table, change the first column's heading from "Global group"
+to "Domain local group"
+
+
+Page 369: Incorrect Reference To Windows 2000 Workstation
+---------------------------------------------------------
+
+On page 369, line 7, there is a reference to "Windows 2000 Workstation". This
+should read "Windows 2000 Professional".
+
+
+Page 386: MMC Console Should Be Saved As .msc File
+--------------------------------------------------
+
+On page 386, line 13, change:
+"save the MMC console as an .mmc file."
+
+To:
+"save the MMC console as an .msc file."
+
+
+Page 395: Applications Can Be Published Only To Users
+-----------------------------------------------------
+
+The table on page 395 erroneously states that applications can be published to
+computers. The last row of the table should be removed:
+
+"Computer Configuration - The Add/Remove Programs wizard for all computers in the
+site, domain, or OU"
+
+
+Page 438: Incorrect Steps For Enabling Printer Pool
+---------------------------------------------------
+
+On page 438, in the second paragraph,
+
+Change:
+"Once there, select or create the ports containing print devices that will be
+part of the pool and then check the Enable Printer Pooling check box at the
+bottom of the page."
+
+To:
+"Once there, check the Enable Printer Pooling check box at the bottom of the page
+, then select or create the ports containing print devices that will be part of
+the pool."
+
+
+Page 461: Grammar Error In NWLink Section
+-----------------------------------------
+
+On page 461, the last sentence currently suggests that CSNW and GSNW are NetWare
+servers. This isn't the case. The sentence should read:
+
+"To access files or printers on a NetWare server, services such as the Client
+Service for NetWare (CSNW) in Windows 2000 Professional or the Gateway Service
+for NetWare (GSNW) in Windows 2000 Server must be used."
+
+
+Page 499: Incorrect DHCP Backup Folder Path
+-------------------------------------------
+
+On page 499, in the last paragraph, change:
+"You can restore the DHCP database file manually by copying the contents of the
+%systemroot%\System32\DHCP\Backup\Jet folder to the..."
+
+To:
+"You can restore the DHCP database file manually by copying the contents of the
+%systemroot%\System32\DHCP\Backup\Jet\new folder to the..."
+
+
+Page 568: "ASDL" Should Be "ADSL"
+---------------------------------
+
+In Figure 10.8 on page 568, there is an incorrect reference to ASDL. Change:
+"ASDL"
+
+To:
+"ADSL"
+
+
+Page 576: Incorrect Information About Callback Number Length
+------------------------------------------------------------
+
+On page 576, the second paragraph contains incorrect information about the
+allowed length of the callback number in different server modes.
+
+Change:
+"If a user account is in a Windows 2000 native-mode domain, the callback number
+can be up to 128 characters. If a user account is on a RAS server running
+Windows 2000 as a stand-alone server, in a Windows NT 4.0 domain, or in a
+Windows 2000 mixed-mode domain, the callback number is from 24 through 48
+characters, due to the compressed format for storing callback numbers."
+
+To:
+"If the Windows 2000 Routing and Remote Access service server is a stand-alone
+server or a member of a Windows 2000 native domain, the callback number can be
+of unlimited size. If a Windows 2000 Routing and Remote Access service server is
+a member of a Windows NT 4.0 domain or a Windows 2000 mixed domain, the callback
+number can only be 128 characters long."
+
+
+Page 671: LSA Stands For "Local Security Authority"
+---------------------------------------------------
+
+On page 671, in the third line,
+
+Change:
+"it forwards the request to the Local Service Authority (LSA)."
+
+To:
+"it forwards the request to the Local Security Authority (LSA)."
+
+
+Page 682: Then Should Be When
+-----------------------------
+
+On page 682, in the third bulleted item under "Overview of Windows 2000
+Auditing", change:
+
+"The success or failure of the event and then the event occurred"
+
+To:
+"The success or failure of the event and when the event occurred"
+
+
+Pages 708 & 956: Slipstreaming Switch For Update.exe Is Incorrect
+-----------------------------------------------------------------
+
+On pages 708 & 956 under "Service Pack Slipstreaming" the switch to apply a
+new service pack to distribution files is incorrect.
+
+Change:
+"run Update.exe with the /slip switch."
+
+To:
+"run Update.exe with the ?s:distribution_folder switch, where distribution_folder
+is the name of the folder that contains the Windows 2000 installation files."
+
+
+Page 718: Incorrect Location For Accessing Send Console Message Dialog Box
+--------------------------------------------------------------------------
+
+On page 718, in the last paragraph,
+
+Change:
+"You can use e-mail or the Send Console Message dialog box in the File Service
+Management snap-in to send administrative messages to users. You can access the
+File Service Management snap-in through the Computer Management snap-in."
+
+To:
+"You can use e-mail or the Send Console Message dialog box in the Compute
+Management snap-in to send administrative messages to users. You can access the
+Send Console Message dialog box by right-clicking Computer Management in the
+Computer Management snap-in and select All Tasks."
+
+
+Page 718: Incremental Should Be Differential
+--------------------------------------------
+
+On page 718, in the third bullet,
+
+Change:
+"These backups use the same strategy as the normal and incremental backups"
+
+To:
+"These backups use the same strategy as the normal and differential backups"
+
+
+Page 743: Incorrect Description About Entering Startup Menu
+-----------------------------------------------------------
+
+On page 743, in the fifth paragraph, the description on how to enter the Windows
+2000 Startup Menu applies only to a computer with multiple operating systems.
+
+Change:
+"Press F8 when you see the message Please Select The Operating System To Start."
+
+To:
+"Press F8 when you see the message "Starting Windows 2000..."."
+
+
+Page 819: Incorrect Question
+----------------------------
+
+On page 819, in question 2,
+
+Change:
+"How can you increase disk access time for the server?"
+
+To:
+"How can you decrease disk access time for the server?"
+
+
+Page 893: Incorrect Information About MetaFrame Upgrade
+-------------------------------------------------------
+
+On page 893, under "Terminal Server 4.0 with MetaFrame", there is an error in
+reference to upgrading Terminal Server. Change:
+
+"Upgrading from Terminal Services 4.0 with MetaFrame is similar to upgrading from
+Terminal Server 4.0, but first you need to upgrade to the MetaFrame version for
+Windows 2000. After MetaFrame is upgraded, you can follow the same procedure for
+upgrading from Terminal Server 4.0 without MetaFrame."
+
+To:
+"With MetaFrame for Terminal Server 4.0 installed, you must first install Windows
+2000 with Terminal Services, then install the latest version of MetaFrame for
+Windows 2000."
+
+
+Page 903:  Disk Should Be Data
+------------------------------
+
+On page 903, in step 24,
+
+Change:
+"Enable Disk Compression"
+
+To:
+"Enable Data Compression"
+
+
+Page 912: Incorrect Folder Name
+-------------------------------
+
+On page 912, in the fourth line from the bottom,
+
+Change:
+"$OEM\$1\Sysprep"
+
+To:
+"$OEM$\$1\Sysprep"
+
+
+Page 1010: Dfs Should Stand For Distributed File System
+-------------------------------------------------------
+
+On page 1010,
+
+Change:
+"Dfs (domain file system)"
+
+To:
+"Dfs (distributed file system)"
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ALS Win2000
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

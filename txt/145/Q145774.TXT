@@ -1,0 +1,81 @@
+DOCUMENT:Q145774  23-SEP-1999  [iis]
+TITLE   :HTML File Fails to Open from File Manager
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you double-click an HTML file in File Manager, (for example: c:\MyPage.htm)
+Internet Explorer displays the following error message:
+
+   This program does not support the protocol for accessing
+   'Files:///c:\MyPage.htm'
+
+CAUSE
+=====
+
+When you install Internet Explorer, it adds a new association for HTML files.
+However, the association contains a syntax error.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Open File Manager.
+
+2. Select Associate from the File menu.
+
+3. From the Files with Extension menu, select HTM. You see htm(c:\<correct
+   Path>\iexplore.exe) in the "Associate With:" dialog box.
+   htm(c:\<correct Path>\iexplore.exe) is highlighted.
+
+4. Click the Change type... button.
+
+5. Change the text in the Command: text box from:
+
+   c:\<correct Path>\iexplore.exe files:///%1"
+
+   to
+
+   c:\<correct Path>\iexplore.exe file:///%1"
+
+   NOTE: Change the word "files" to "file".
+
+6. Click the OK button.
+
+7. Click the OK button.
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,61 @@
+DOCUMENT:Q67175  30-JUL-2001  [lanman]
+TITLE   :OS/2 LAN Manager: Last Logon Information Sometimes Incorrect
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If you log onto a domain controller from the NET shell, you should receive the
+time of the last logon. However, "NEVER" is always displayed. Also, if you view
+the user account information, Last Logon always shows "NEVER."
+
+Microsoft has confirmed this to be a problem in OS/2 LAN Manager version 2.00. We
+are researching this problem and will post new information here as it becomes
+available.
+
+This problem can be avoided by specifying a particular server for a user to log
+onto. The server can be specified when creating or viewing a user account in the
+full screen "net admin" interface. Choosing the "<Paths>" option displays
+a dialog box that allows the following choices:
+
+   Logon server .  .  .     (.) Domain Controller
+                            ( ) Any Server
+                            ( ) Servername [.................]
+
+Choosing the "Domain Controller" or "Servername" option will enable this
+particular server to keep track of the last time the user logged onto the
+network (in the user's domain).
+
+If "Any Server" (which is the default) is specified, the system cannot track this
+logon information.
+
+MORE INFORMATION
+================
+
+For more information, please refer to pages 91 and 98 of the "Microsoft
+Operating System/2 LAN Manager Administrator's Guide."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

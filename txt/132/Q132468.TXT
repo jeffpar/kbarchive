@@ -1,0 +1,74 @@
+DOCUMENT:Q132468  26-MAY-2001  [homemm]
+TITLE   :Encarta '95 ErrMsg: MMP.DLL Needed for Media Player
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Encarta, you may receive the following error message:
+
+   Cannot load the [MCI] Microsoft MCI driver for MMP driver. The driver may be
+   missing. Try reinstalling the driver again or contact your system
+   administrator.
+
+When attempting to run Media Player, you may receive the error:
+
+   Undetectable problem in loading the specified device driver.
+
+Additionally, the Microsoft MultiMedia Movie Player option may be missing or
+unavailable on the Media Player Device menu.
+
+STATUS
+======
+
+You may receive the messages if the file Mmp.dll is missing from the
+\Windows\System folder.
+
+Microsoft Encarta 1995 does not install the Mmp.dll file. The file is not located
+on the Encarta CD-ROM. By design, animation files (.mmm) play correctly from
+Encarta without the presence of Mmp.dll.
+
+RESOLUTION
+==========
+
+Ignore the error message. The animation files should play normally.
+
+MORE INFORMATION
+================
+
+Products that contain the file Mmp.dll include, but are not limited to,
+Microsoft Bookshelf 1994 edition for Windows, Microsoft Encarta 1994 edition for
+Windows, Microsoft Dangerous Creatures for Windows, Microsoft Dinosaurs for
+Windows and Microsoft Ancient Lands for Windows.
+
+Additional query words: 1995 errors stopped grey gray gred grayed gray- out greyed-out dimmed dim unavailable out mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaEncycSearch kbEncarta1995
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

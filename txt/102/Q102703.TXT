@@ -1,0 +1,55 @@
+DOCUMENT:Q102703  12-FEB-2000  [foxpro]
+TITLE   :PRB: "Error Creating OLE Object" with Paintbrush & Windows 3.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,2.5a
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Appending Paintbrush objects in Microsoft Windows version 3.0 to a FoxPro for
+Windows general field will cause the following error message:
+
+   Error creating OLE object
+
+For example, APPEND GENERAL <FLDNAME> FROM \<path>\<file>.bmp
+will cause this error to occur.
+
+CAUSE
+=====
+
+This error occurs because Paintbrush is not an OLE server in Windows 3.0. An
+appropriate OLE server is required to embed or link files of a specific type in
+general fields.
+
+
+Additional query words: FoxWin 2.50 APPEND GENERAL OLE PAINTBRUSH WIN30 object linking and embedding
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a
+Version           : WINDOWS:2.5,2.5a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

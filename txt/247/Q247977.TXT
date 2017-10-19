@@ -1,0 +1,63 @@
+DOCUMENT:Q247977  27-SEP-2001  [foxpro]
+TITLE   :INFO: Updated FOXISAPI Available on the Web
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbCOMt kbISAPI kbvfp500aBUG kbvfp600bug kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An update to FOXISAPI has been posted to the Product Updates page on the
+Microsoft Visual FoxPro Web site.
+
+To access this file (named "FOXISAPI.EXE") directly, navigate to the following
+URL in your Web browser:
+
+   http://msdn.Microsoft.com/vfoxpro/downloads/foxisapi.exe
+
+MORE INFORMATION
+================
+
+This update includes version 6.0.8451.0 of the FOXISAPI.DLL and the C++ source
+code used to build it. The update contains the features added to the Visual
+Studio Service Pack 3 version, as well as a fix for a binary data transfer
+issue.
+
+NOTE: Visual FoxPro 7.0 ships with version 4.0.993.0 of FOXISAPI.DLL. Despite the
+version number, this is a later version than the one posted on the Web. (The
+creation date is June 14, 2001.) (c) Microsoft Corporation 1999, All Rights
+Reserved. Contributions by Trevor Hancock, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbISAPI kbvfp500aBUG kbvfp600bug kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

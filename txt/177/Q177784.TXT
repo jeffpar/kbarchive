@@ -1,0 +1,64 @@
+DOCUMENT:Q177784  29-MAR-2002  [win95x]
+TITLE   :General Protection Fault Running Add New Hardware Wizard
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Add New Hardware wizard to add hardware to your configuration,
+you may receive the following error message:
+
+   Setupx.dll caused a general protection fault in module krnl386.exe
+
+When this occurs, the installation of the new hardware stops.
+
+CAUSE
+=====
+
+The Setupx.dll file, among other things, builds and maintains the Drvidx.bin
+file. The local memory heap may be damaged when this file is generated. This
+damage causes the general protection (GP) fault in Krnl386.exe.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95. This problem no
+longer occurs in Windows 98. To resolve this problem, install the current
+version of Windows. For information about the current version of Windows, visit
+the following Microsoft Web site:
+
+   http://www.microsoft.com/windows
+
+Additional query words: gpf
+
+======================================================================
+Keywords          : kbenv kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

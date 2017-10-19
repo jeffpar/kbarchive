@@ -1,0 +1,68 @@
+DOCUMENT:Q273459  23-OCT-2000  [exchange]
+TITLE   :XADM: Cannot Give "Send on Behalf Of" Permissions to a DL
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Exchange Server Administrator program to give "Send on Behalf
+Of" permissions and you click Modify, the global address list appears, however,
+no distribution lists appear.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+WORKAROUND
+==========
+
+To grant "Send on Behalf Of" permissions to all users on a distribution list:
+
+1. In Outlook, log on to the mailbox to which you want to give access.
+
+2. On the Tools menu, click Options.
+
+3. On the Delegates tab, click Add.
+
+4. Click the distribution list to which you want to grant "Send on Behalf Of"
+   permissions, click Add, and then click OK.
+
+5. Choose the delegate permissions that you want, and then set Inbox to Author
+   or Editor for "Send On Behalf Of" permissions.
+
+6. Click OK, and then click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

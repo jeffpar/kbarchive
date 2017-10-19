@@ -1,0 +1,57 @@
+DOCUMENT:Q131015  17-DEC-2000  [win95x]
+TITLE   :MS Exchange Users Cannot Create Own Post Office Accounts
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Individual users cannot create their own post office accounts in Microsoft
+Exchange in Windows 95.
+
+MORE INFORMATION
+================
+
+When you create a Microsoft Exchange profile that includes Microsoft Mail, you
+are prompted for a path to the post office. A list of user accounts for that
+post office is then displayed. If your account is not displayed, you must
+contact the post office administrator to have an account created.
+
+Note that this behavior is different from that of the Microsoft Mail client
+included with Windows for Workgroups. In Microsoft Mail in Windows for
+Workgroups, you can set up your own post office account.
+
+Windows 95 post offices are created and managed using the Microsoft Workgroup
+Postoffice Admin tool included with Windows 95. To use this tool, double-click
+the Microsoft Mail Postoffice icon in Control Panel.
+
+Additional query words: mailbox admin
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

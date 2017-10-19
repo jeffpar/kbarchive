@@ -1,0 +1,81 @@
+DOCUMENT:Q123474  08-MAY-2001  [ssafe]
+TITLE   :HOWTO: Logon With a Name Other than the System Logon
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft SourceSafe for MS-DOS, versions 2.0x, 3.0x 
+ - Microsoft SourceSafe for Windows, versions 2.0x, 3.0x 
+ - Microsoft SourceSafe for Macintosh, versions 2.0x, 3.0x 
+ - Microsoft SourceSafe for Windows NT, versions 2.0x, 3.0x 
+ - Microsoft SourceSafe for UNIX, versions 2.0x, 3.0x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SourceSafe can automatically use the user name if the following network
+operating system and SourceSafe combinations are used:
+
+   Network Operating System      SourceSafe Version(s)
+   ----------------------------------------------------------
+
+   Windows NT 3.1 or greater     SourceSafe 2.X or greater,
+                                 Windows NT or 32-bit
+                                 version.
+
+   Novell Netware                SourceSafe 2.02 to 3.02
+
+   Macintosh                     SourceSafe 2.X for Macintosh
+
+However, occasionally, you may need to override this setting.
+
+MORE INFORMATION
+================
+
+1. Use the environment variables SSUSER and SSPWD to set the desired User Name
+   and Password.
+
+2. Use the -y parameter on the command line, as in this example:
+
+         SS GET <$/FileName> -yJANET,MYPWD
+
+3. Set the SourceSafe variable Use_Network to No to force SourceSafe to prompt
+   for the username and password.
+
+In Visual SourceSafe, you can force prompting for the User Name by going to the
+Visual SourceSafe Admin program and deselecting the "Use network name for
+automatic user logon" check box in the Options dialog box under the Tools menu.
+If you want this to occur for only one user, set the ini variable in the users
+SS.INI file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbsetup kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe300 
+Technology        : kbHWMAC kbOSMAC kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe2xDOSSearch kbSSafe2xSearch kbSSafe20xMacSearch kbSSafe20xUNIXSearch kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch kbSSafe20xNTSearch
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

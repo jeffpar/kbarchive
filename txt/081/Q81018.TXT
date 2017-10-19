@@ -1,0 +1,66 @@
+DOCUMENT:Q81018  08-NOV-1999  [win95x]
+TITLE   :Program Filename Box Documented Incorrectly in PIF Editor Help
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows 3.0 PIF Editor on-screen Help program incorrectly documents the
+Program Filename box.
+
+MORE INFORMATION
+================
+
+Pressing F1 while the cursor is in the Program Filename box brings up the Help
+file for that topic. The last paragraph gives instructions on running other
+commands or terminate-and-stay-resident (TSR) programs before loading an
+application.
+
+Help displays:
+
+   * Create MP.BAT (with a text editor) and make the last command
+     MP.PIF
+
+However, when this batch file is run, MS-DOS gives the error message
+
+   Bad command or file name.
+
+MS-DOS does not recognize the PIF extension as a valid executable filename.
+
+Solution
+--------
+
+To correct this problem, remove FILENAME.PIF from the batch file.
+
+Additional query words: pif winhelp win30 3.0 3.0a environment
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

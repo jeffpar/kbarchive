@@ -1,0 +1,106 @@
+DOCUMENT:Q223070  11-JAN-2001  [vbwin]
+TITLE   :FIX: DataGrid Column 1 Visible = False Does Not Work With ADC
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbCtrl kbVBp600bug kbVS600sp3fix kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With the version of the DataGrid that initially shipped with Visual Basic 6.0
+(MSDatGrd.OCX version 6.00.8169), a column whose visible property is set to
+False may appear in the grid if the user clicks on the horizontal scrollbar's
+thumb.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio 6.0 Service Packs, please see the
+following articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+If you're using the original shipping version of the DataGrid (version
+6.00.8169), this behavior occurs when the DataGrid is bound to a recordset in
+any number of ways, such as binding to an ADO Data Control, a DataEnvironment
+command, or directly to an ADO recordset in code.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Visual Basic project. Form1 is created by default.
+
+2. Add a DataEnvironment to the project.
+
+3. Set the DataEnvironment's connection to connect to your database. For
+   example, you could use the Access database NWind.MDB with the Jet 3.51 OLE DB
+   provider.
+
+4. Create a command on the connection to query a table in your database and add
+   a select statement in the SQL window.
+
+5. Right-drag the command onto your form and select DataGrid to create a
+   DataGrid bound to that DataEnvironment's command.
+
+6. Right-click on the DataGrid and select "Retrieve Fields." In order to cause
+   this problem, you must create your query and grid in such a way that the
+   DataGrid displays a horizontal scrollbar. You may need to decrease the width
+   of your DataGrid or use a query that returns more fields.
+
+7. Right-click on the DataGrid and select "Properties..."
+
+8. On the Layout tab of the properties page, deselect the Visible checkbox to
+   hide the first column in the grid.
+
+9. Run the project, and note that the first column in the grid will be hidden..
+
+10. Click on the thumb for the horizontal scrollbar while the thumb is as far to
+   the left as possible.
+
+If you are using the DataGrid that initially shipped with Visual Basic 6.0
+(version 6.00.8169), you will now see that first column in the grid.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbCtrl kbVBp600bug kbVS600sp3fix kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

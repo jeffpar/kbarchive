@@ -1,0 +1,97 @@
+DOCUMENT:Q163472  05-FEB-2000  [foxpro]
+TITLE   :BUG: Path Greater than 95 Characters Causes VFP Mac to Hang
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfp kbvfp300bBUGkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The computer hangs or returns an error message after you attempt to start
+Microsoft Visual FoxPro for Macintosh. Typically, the splash screen appears, but
+then the machine locks up or an error occurs and Visual FoxPro for Macintosh is
+unable to start.
+
+CAUSE
+=====
+
+The error is caused by typing a string greater than 95 characters into the
+Search Path box on the File Locations tab of the Options dialog box (which is
+found on the Tools menu). The length of the path that causes the error may vary.
+
+RESOLUTION
+==========
+
+The Visual FoxPro Settings file contains this information. This file is located
+in the System folder within the Preferences folder. Remove the Visual FoxPro
+Settings file from this folder and place it on the desktop. Restart Visual
+FoxPro to create a new settings file. After you restart Visual FoxPro for
+Macintosh, delete the old Visual FoxPro Settings file by dragging it to the
+Trash icon.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+WARNING: The following steps will probably lock up the computer. Therefore,
+close all running applications and save your data before following this
+procedure.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. On the Tools menu, click Options.
+
+2. Click the File Locations tab.
+
+3. Click the button at the end of the Search Path box.
+
+4. In the Select a Folder dialog box, select the following folders:
+
+      Microsoft Visual FoxPro\Samples\Controls
+      Microsoft Visual FoxPro\Samples\Data
+      Microsoft Visual FoxPro\Samples\Mainsamp
+
+   Each path is concantenated into a string with each individual path separated
+   by a semicolon (;).
+
+5. Quit Visual FoxPro for Macintosh.
+
+6. Restart Visual FoxPro for Macintosh. The computer produces an error or it
+   hangs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp300bBUG kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

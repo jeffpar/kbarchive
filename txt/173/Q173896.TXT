@@ -1,0 +1,61 @@
+DOCUMENT:Q173896  22-JUN-2001  [exchange]
+TITLE   :XWEB: Err Msg: Netscape is Unable to Connect to the Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you are using Netscape Communicator to access a Microsoft Exchange Server
+using Outlook Web Access (OWA), and rapidly click the Seen button, the following
+message may be displayed:
+
+   Netscape is unable to connect to the server at the location you have
+   specified. The server may be down or busy. Try connecting again later.
+
+This message may give you the impression that there is a problem with the
+Exchange Server, which is not the case.
+
+CAUSE
+=====
+
+Netscape Communicator establishes a connection to the Exchange Server each time
+the Seen button is clicked in order to perform a store command. The number of
+concurrent IMAP connections it can keep open are limited. As soon as this limit
+is reached, all connections are closed by Netscape and the above error message
+is reported.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WINDOWS:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

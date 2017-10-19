@@ -1,0 +1,74 @@
+DOCUMENT:Q162838  10-AUG-2001  [winnt]
+TITLE   :Stop 0xA IRQL_NOT_LESS_OR_EQUAL Digifep5.sys During Shutdown
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to shut down your Windows NT 4.0 computer after receiving the message
+"It is now safe to turn off your computer," you get a STOP 0x0000000A
+IRQL_NOT_LESS_OR_EQUAL Digifep5.sys error.
+
+Some systems may exhibit the same problem with the "Restart the computer" option.
+
+CAUSE
+=====
+
+Windows NT unsuccessfully attempts to stop the DIGI service before it is shut
+down.
+
+RESOLUTION
+==========
+
+To work around this problem, try either of the following:
+
+ - Before attempting to shut down the computer, stop the DIGI Board service or
+   the Remote Access Service (RAS).
+
+   -or-
+
+ - Download the latest driver, 4000821S.exe, from DIGI Web page, and update the
+   current driver. You can download the driver from:
+
+   ftp://ftp.dgii.com/support/drivers/winnt/released/async
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt DIGI services 0000000A
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

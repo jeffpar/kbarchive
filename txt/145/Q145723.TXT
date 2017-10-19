@@ -1,0 +1,78 @@
+DOCUMENT:Q145723  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Modify SWDEPEND.INI for Your OLE Custom Control
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbVBp400 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article gives you the information you will need to modify the SWDEPEND.INI
+file so that Visual Basic's Setup Wizard generates a Setup program that
+correctly installs your control.
+
+MORE INFORMATION
+================
+
+Create a section in the SWDEPEND.INI file. The section's name should be the
+filename of your control, including the OCX extension. For example, for OLE
+controls created using Microsoft Foundation Classes version 3.0, the new section
+would look like this:
+
+      [MYCTRL.OCX]
+      Register=$(DLLSelfRegister)
+      Dest=$(WinSysPath)
+      Uses1=MFC30.DLL
+      Uses2=OC30.DLL
+      ...
+
+The complete list of files that you need to list as dependencies will depend on
+the options you used to build the control. Second example: For OLE Controls
+created using Microsoft Foundation Classes version 4.0, the new section would
+look like this:
+
+      [MYCTRL.OCX]
+      Register=$(DLLSelfRegister)
+      Dest=$(WinSysPath)
+      Uses1=OCX Runtime Support
+
+REFERENCES
+==========
+
+Complete information on the syntax of the SWDEPEND.INI file can be found in the
+Visual Basic online help file. From the Contents tab of the help file, Click
+"Read Me," then "Setup Toolkit and SetupWizard," then "SetupWizard Dependency
+File Notes for Microsoft Visual Basic."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

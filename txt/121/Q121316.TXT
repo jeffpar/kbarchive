@@ -1,0 +1,65 @@
+DOCUMENT:Q121316  12-NOV-1999  [pcmail]
+TITLE   :PC Forms: Err Msg: "Invalid Message" When Reading an E-Form
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you try to read an e-form
+message created with Microsoft Mail Electronic Forms Designer:
+
+   Invalid Message
+
+CAUSE
+=====
+
+This error can occur if the e-form message class declaration is incorrectly
+defined in the [Custom Messages] section of the MSMAIL.INI file.
+
+RESOLUTION
+==========
+
+For e-form messages to perform correctly, there must be a space between the
+<COMMAND> and <MESSAGEID> commands in the message class declaration.
+If the space is missing, the above error will occur when the e-form is read. The
+following is a correct example:
+
+      IPM.Microsoft.MEFPhone=3.0;;Telephone
+      Note;;C:\WINDOWS\SYSTEM\MEFLIB.DLL;<MC:IPM.Microsoft.MEFPhone>C:\VB\EF
+      MS\PROJECTS\PHONE\MEFPHONE.EXE -MSG <COMMAND> <MESSAGEID>;
+      1111111000000000;Microsoft Sample Telephone Note;;;
+
+
+Additional query words: 1.00 eforms
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,63 @@
+DOCUMENT:Q140954  19-FEB-2002  [exchange]
+TITLE   :XCLN: Win16 Silent Mode Setup Fails to Create Profile
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you modify the Setup.stf and Default.prf files of the Microsoft Exchange
+client for Windows 3.x network installation share point using the Microsoft
+Exchange Setup Editor, subsequent attempts to perform workstation installs in
+silent mode, setup /q, fail to create a default profile but complete without any
+errors.
+
+CAUSE
+=====
+
+The silent mode setup, setup /q, fails to copy Default.prf into the
+<drive>:\<windir> subdirectory during the file copy phase. The
+absence of this file prevents Newprof.exe from creating a default profile.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange Windows
+3.x client version 4.0. This problem was corrected in Microsoft Exchange Server
+4.0 U.S. Service Pack 2. For information on obtaining the service pack, query on
+the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

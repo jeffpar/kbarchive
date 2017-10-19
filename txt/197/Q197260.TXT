@@ -1,0 +1,54 @@
+DOCUMENT:Q197260  19-DEC-1999  [homemm]
+TITLE   :Encarta 99: Natural Language Search Disk Space Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 99 
+ - Microsoft Encarta Reference Suite 99 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you install the Microsoft Natural Language Search feature of Microsoft
+Encarta Encyclopedia on a compressed drive, the feature occupies more hard disk
+space than is reported by the installation program.
+
+MORE INFORMATION
+================
+
+Because the Encarta.nlq file is already compressed on the Encarta CD-ROM, the
+compression algorithm used by DriveSpace cannot compress the file much further.
+The Encarta.nlq file occupies approximately 37 megabytes (MB) of space on the
+physical hard disk which translates into approximately 60 MB of space on the
+compressed drive.
+
+Additional query words: multi multi-media media mm enc99 query
+
+======================================================================
+Keywords          : kbtool kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaReference99
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

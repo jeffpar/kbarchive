@@ -1,0 +1,67 @@
+DOCUMENT:Q302976  27-JUN-2001  [msnetwork]
+TITLE   :MSN Explorer 6.0 May Shut Down When Stock Tickers Of Nine Charac
+PRODUCT :The Microsoft Network
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You sign in to MSN Explorer 6.0, and then click My Stocks. You click the Go to
+My Stocks link. You add a stock ticker that is nine characters or longer, and is
+preceded with a colon (this is necessary for many international stocks). MSN
+Explorer may shut down.
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+Upgrade to the latest version of MSN Explorer. You can get the latest version
+from http://explorer.msn.com, or by forcing an update. To force an update
+
+1. Sign in to MSN Explorer.
+
+2. In the upper-right corner, click the More Choices link.
+
+3. Click About MSN Explorer, and then, in the window that appears, click the
+   More Info... button.
+
+4. Scroll to the top of the page that appears, and then click the Update MSN
+   Explorer now link (located just before Update history).
+   The latest update to MSN Explorer will download and install on your computer.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

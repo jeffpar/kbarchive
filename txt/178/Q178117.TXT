@@ -1,0 +1,169 @@
+DOCUMENT:Q178117  10-MAR-2001  [foxpro]
+TITLE   :PRB: Application Loses Focus or Opens Minimized on Startup
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfp kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you launch a Visual FoxPro application, it appears to open minimized or
+loses focus.
+
+CAUSE
+=====
+
+This behavior occurs when you include the following code in the Init event of a
+Top-Level form:
+
+   Application.Visible = .F.
+
+RESOLUTION
+==========
+
+Move the following line:
+
+   Application.Visible = .F.
+
+to the Activate event of the Top-Level form.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The "Application.Visible = .F." line hides the main Visual FoxPro window. The
+reason the application loses focus and appears to open minimized is related to
+the sequence of events. Because the form's Init event sets the application's
+Visible property to false, the application is hidden and focus returns to the
+last active object or application. Even though the application no longer has
+focus, the code continues executing as a background process.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program called Runhide.prg, and paste the following code:
+
+   oLost = CREATEOBJECT('NOFOCUS')
+   oLost.Show()
+   READ EVENTS
+   RETURN
+
+   DEFINE CLASS noFocus AS FORM
+       AutoCenter = .T.
+       Height  = 450
+       Width   = 640
+       Caption = "Lost Focus Form"
+       Visible = .T.
+       ShowWindow = 2
+       WindowType = 0
+
+       ADD OBJECT frmcaption AS frmcap WITH Top=225, Left=220
+
+       PROCEDURE Init
+           Application.Visible = .F.
+       ENDPROC
+
+       PROCEDURE Click()
+           ThisForm.Release
+           CLEAR EVENTS
+           Application.Visible = .T.
+       ENDPROC
+   ENDDEFINE
+
+   DEFINE CLASS frmcap AS LABEL
+       FontName = "Arial"
+       FontSize = 10
+       FontBold = .T.
+       Caption = "Click anywhere on the form to close"
+       Visible = .T.
+       AutoSize = .T.
+   ENDDEFINE
+
+2. At a command prompt, type the following command:
+
+   "DO RUNHIDE" (without the quotation marks)
+
+3. To hide the main Visual FoxPro window while the application retains focus,
+   create a program called Nohide.prg, and paste the following code:
+
+   oNotLost = CREATEOBJECT('NOFOCUS')
+   oNotLost.Show()
+   READ EVENTS
+   RETURN
+
+   DEFINE CLASS hasFocus AS FORM
+       AutoCenter = .T.
+       Height  = 450
+       Width   = 640
+       Caption = "Has Focus Form"
+       Visible = .T.
+       ShowWindow = 2
+       WindowType = 0
+
+       ADD OBJECT frmcaption AS frmcap WITH Top=225, Left=220
+
+       PROCEDURE Activate
+           Application.Visible = .F.
+       ENDPROC
+
+       PROCEDURE Click()
+           ThisForm.Release
+           CLEAR EVENTS
+           Application.Visible = .T.
+       ENDPROC
+   ENDDEFINE
+
+   DEFINE CLASS frmcap AS LABEL
+       FontName = "Arial"
+       FontSize = 10
+       FontBold = .T.
+       Caption = "Click anywhere on the form to close"
+       Visible = .T.
+       AutoSize = .T.
+   ENDDEFINE
+
+4. At a command prompt, type the following command:
+
+   "DO NOHIDE" (without the quotation marks)
+
+REFERENCES
+==========
+
+Visual FoxPro Help, version 5.00; search on: "Application"
+Visual FoxPro Help, version 5.00; search on: "Visible"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

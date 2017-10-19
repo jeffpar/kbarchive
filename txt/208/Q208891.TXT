@@ -1,0 +1,59 @@
+DOCUMENT:Q208891  16-JUN-2001  [msnetwork]
+TITLE   :MSN Connection Manager Disconnects Modem.
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6,95,98,98 Second Edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the connection manager to connect to MSN, the connection manager
+hangs up the modem not giving it a chance to connect to the Internet. This does
+not apply if connecting using Dial Up Networking or the hyperterminal.
+
+CAUSE
+=====
+
+This behavior occurs if an improper modem driver or an outdated modem driver is
+being used to establish your connection.
+
+RESOLUTION
+==========
+
+To resolve this issue, you need to use the proper modem driver or you need to
+update your existing modem driver.
+
+Additional query words: kbimu msn 2.50 2.60
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin98 kbOSWin95 kbOSWin98SE kbOSWinSearch kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6,95,98,98 Second Edition
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

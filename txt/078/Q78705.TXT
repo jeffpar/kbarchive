@@ -1,0 +1,51 @@
+DOCUMENT:Q78705  11-NOV-1999  [pcmail]
+TITLE   :PC Adm: Time Interval Based on One 24-Hour Day
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail for PC Networks Administration program (ADMIN.EXE) will not
+allow a postoffice to call a Call/Request Remote Client user during a time
+window that extends beyond a 24-hour day from 1:00 AM to 12:00 PM.
+
+Example
+-------
+
+Suppose you would like to set the time interval to call a Remote client from
+11:00 PM to 2:00 AM. This is not possible. The ADMIN.EXE Remote, Modify command
+will not let the Interval field values fall outside the 1:00 AM to 12:00 PM
+24-hour-day time frame.
+
+Additional query words: 2.10 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300 kbMailPCN210
+Version           : WINDOWS:2.1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

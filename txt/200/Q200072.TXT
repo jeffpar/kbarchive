@@ -1,0 +1,79 @@
+DOCUMENT:Q200072  06-FEB-2000  [visualc]
+TITLE   :HOWTO: Initializing lpstrFilter for All Files on the Macintosh
+PRODUCT :Microsoft C Compiler
+PROD/VER:MACINTOSH:4.0,4.0b
+OPER/SYS:
+KEYWORDS:kbHWMAC kbVC kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, Macintosh Cross-Development Addon, versions 4.0, 4.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On the Macintosh, to list all files, you must use "****" as the filter string
+(lpstrFilter) for the open file dialog box (GetOpenFileName).
+
+MORE INFORMATION
+================
+
+GetOpenFileName uses the lpstrFilter field of the OPENFILENAME structure to
+specify file filters. It points to a list of string pairs, separated by null
+characters. Each pair contains the display string and the filter pattern. On the
+Intel platform, a filter string of "*.*" specifies all files. The Windows
+Portability Library (WPL) uses "****", instead. Below is an MFC-based example:
+
+           CString strFilter;
+           CFileDialog dlgFile(TRUE);
+           CString allFilter = "All Files (*.*)";
+           strFilter += allFilter;
+           strFilter += (TCHAR)'\0';   // Next string please.
+
+   #ifndef _MAC
+
+           strFilter += _T("*.*");
+
+   #else
+
+           strFilter += _T("****");
+
+   #endif
+
+           strFilter += (TCHAR)'\0';   // Last string.
+           dlgFile.m_ofn.lpstrFilter = strFilter;
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Adam Kim,
+Microsoft Corporation.
+
+
+Additional query words: OPENFILENAME lpstrFilter GetOpenFileName
+
+======================================================================
+Keywords          : kbHWMAC kbVC kbDSupport 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400Mac kbVCXDev400bMac
+Version           : MACINTOSH:4.0,4.0b
+Hardware          : MAC
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

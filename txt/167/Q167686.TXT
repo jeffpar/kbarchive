@@ -1,0 +1,117 @@
+DOCUMENT:Q167686  06-AUG-2002  [winnt]
+TITLE   :New DHCP Parameter for Switched Networks
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The Dynamic Host Configuration Protocol (DHCP) server service in Windows NT 4.0
+Service Pack 2 has a new parameter that will allow the client's default gateway
+to be set to its own IP address.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+If you configure the SwitchedNetworkFlag parameter with Registry Editor, a DHCP
+client obtains a default gateway address equal to the IP address that the client
+receives. This causes the client to use the Address Resolution Protocol (ARP)
+for all IP addresses on the local subnet, and is useful for routerless switched
+networks.
+
+NOTE: If routers exist on your network and you set the SwitchedNetworkFlag
+parameter, your clients may not connect to hosts on other networks. Only a proxy
+ARP device allows this type of connectivity configuration. Make sure that all
+routers within the network can proxy ARP and that you do not want any outside
+connectivity.
+
+To turn on this feature for all clients in a scope, add the following value to
+the registry on the DHCP Server:
+
+1. Start Registry Editor (Regedt32.exe) and locate the following subkey:
+
+   For Windows NT 4.0:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DHCPServer\Configuration\Subnets\<a.b.c.d>\
+
+   For Windows 2000:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\DhcpServer\Configuration\Subnets\<a.b.c.d>
+
+   Where <a.b.c.d> is the IP address of the DHCP subnet.
+
+2. From the Edit menu, click Add Value and use the following entry:
+
+   Value Name: SwitchedNetworkFlag
+   Data Type: REG_DWORD
+   Value: 1 or 0 (default=0)
+
+   1 enables the DHCP server to send the client's IP address as the default
+   gateway.
+
+NOTE: The Readme.txt file that ships with Windows NT Service Packs 2 and 3
+incorrectly states the registry path as the following:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DHCPServer\Subnets\<a.b.c.d>\SwitchedNetworkFlag=1
+   (REG_DWORD)
+
+This path is incorrect and will not work.
+
+NOTE: After you add the SwitchedNetworkFlag parameter and set it to the value 1,
+restart the DHCP service for this change to take effect.
+
+To restart the DHCP service, run the following commands (press ENTER after each
+command):
+
+   "NET STOP dhcpserver" (without the quotation marks)
+
+   "NET START dhcpserver" (without the quotation marks)
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

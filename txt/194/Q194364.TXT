@@ -1,0 +1,63 @@
+DOCUMENT:Q194364  18-DEC-2000  [winnt]
+TITLE   :Timezone.exe Application Not Included with Resource Kit
+PRODUCT :Microsoft Windows NT
+PROD/VER:Windows:95;WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT Resource Kit application Timezone.exe was left out of the
+resource kit even though the documentation for it was included.
+
+MORE INFORMATION
+================
+
+Timezone.exe is a command-line utility that updates the daylight savings
+information for a time zone in the registry. The start and end of daylight
+savings time in some countries is not static -- it changes from year to year.
+
+This tool works on computers running Windows NT 3.51, Windows NT 4.0, and Windows
+95. (The Msvcrt.dll file must be installed in the Winnt35\system32 directory
+under Windows NT 3.51 for the utility to function in that operating system.)
+
+The TIMEZONE application may be found at:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/reskit/nt40/i386/
+
+Download the Timezon1.exe file to your resource kit directory and run it either
+by either double-clicking it or from the command line. The executable is
+self-extracting and contains two files: timezone.exe and readme.txt.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351xsearch kbWinNT400xsearch kbWinNTW351xsearch kbWinNTW351 kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400 kbWinNTS351 kbWinNTS351xsearch kbWin95search kbZNotKeyword3
+Version           : Windows:95;WinNT:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

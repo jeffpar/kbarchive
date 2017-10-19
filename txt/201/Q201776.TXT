@@ -1,0 +1,64 @@
+DOCUMENT:Q201776  14-MAR-2001  [sms]
+TITLE   :SMS: Double-Byte Character Set Name Sorting Limitation
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbConfig kbDatabase kbMMC kbServer kbsms200 kbCollections kbQuery kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are querying the "All users" collection in the Systems Management
+Server Administrator Console, user names in the double-byte character set (DBCS)
+are not sorted correctly.
+
+MORE INFORMATION
+================
+
+The sort order shown in the Systems Management Server Administrator Console is
+returned by Microsoft SQL Server. SQL Server does not allow more than one sort
+order in a mixed code page environment.
+
+NOTE: Most European fonts, including all ISO8859 code sets, are single-byte
+fonts. Most Asian font sets, including the JIS (Japanese Kanji) fonts, are
+double-byte fonts.
+
+If a site hierarchy includes computers using different code pages, you must name
+all network resources by using the standard ASCII characters (codes 0 through
+127). This includes all computer names, share names, user names, user group
+names, domain names, and site codes. If computers in your SMS site hierarchy all
+use a common code page, there are no language-specific restrictions on network
+resource names.
+
+
+Additional query words: prodsms sms20 query smssql
+
+======================================================================
+Keywords          : kbinterop kbConfig kbDatabase kbMMC kbServer kbsms200 kbCollections kbQuery kbsmsAdmin kbsmsProvider 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,56 @@
+DOCUMENT:Q114364  20-NOV-1999  [msdos]
+TITLE   :Novell Compressed Drives Inaccessible Under MS-DOS 6.21
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.21
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.21 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you upgrade a Novell DOS 7 system that has compressed drives other than C to
+MS-DOS 6.21, the drives are inaccessible after the upgrade because Stacker is no
+longer loaded.
+
+
+CAUSE
+=====
+
+MS-DOS 6.21 Setup was not tested with Novell DOS 7 and is not designed to be
+installed over Novell DOS 7.
+
+WORKAROUND
+==========
+
+You may be able to work around this problem by renaming the STACKER.BIN file to
+DBLSPACE.BIN.
+
+Additional query words: 7.0 7.00 novell
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621
+Version           : MS-DOS:6.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

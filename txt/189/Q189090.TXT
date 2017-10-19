@@ -1,0 +1,78 @@
+DOCUMENT:Q189090  19-JAN-2000  [homegame]
+TITLE   :Age of Empires: Wall Is Built in the Wrong Direction
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui aoe kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you drag your pointer to build a wall in Age of Empires, your villagers may
+build the wall in the opposite direction from the direction in which you dragged
+the pointer. In addition, the wall may extend to the far side of the map.
+
+CAUSE
+=====
+
+This behavior can occur when you attempt to build a wall if you drag the pointer
+into the black border that surrounds the game screen.
+
+RESOLUTION
+==========
+
+This issue is resolved by the Microsoft Age of Empires 1.0c update file.
+
+For additional information about how to obtain this update file, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q250837 AOE: Age of Empires Update Is Available
+
+To work around this problem, when you build a wall, do not drag the pointer into
+the black border that surrounds the game screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Age of Empires
+versions 1.0, 1.0a, and 1.0b.
+
+MORE INFORMATION
+================
+
+Before your workers finish building a section of wall, you can delete it. To
+delete a section of wall before your villager finish building it, click the
+section of wall, and then press DELETE. The building site disappears, and the
+game returns half of the materials used to build the wall to your stockpile.
+
+Additional query words: 1.00a 1.00b rise of rome expansion pack msgame aoe patch
+
+======================================================================
+Keywords          : kbui aoe kbimu msgame 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

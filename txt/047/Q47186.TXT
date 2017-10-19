@@ -1,0 +1,53 @@
+DOCUMENT:Q47186  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Cannot Change Default Settings in Address Window
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Mail, when you open the Address Mail window from any Send screen
+(Note, Phone, Image, Inquire, or custom form), "All" is the default user
+directory. The All directory displays all account names and group names from all
+Mail servers on the network. The Local user directory displays only those users
+created on your specific server, but not groups created on your server.
+
+You cannot change the default user directory from "All" to "Local." Please note
+that in Mail version 3.0, the user directory defaults to the user directory last
+used in the Address Mail window.
+
+The Add As button "To" is the default recipient mode in the Address Mail window.
+"Cc" (carbon copy) and "Bcc" (blind carbon copy) cannot be set as the default
+recipient mode. Please note that this feature was NOT added in Mail version 3.0.
+
+Additional query words: 2.00 2.00a 2.00b 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

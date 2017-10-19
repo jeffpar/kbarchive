@@ -1,0 +1,77 @@
+DOCUMENT:Q234146  28-JUL-2001  [visualc]
+TITLE   :BUG: ATL Consumer Wizard truncates SQL Server Field to TCHAR
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbATL210bug kbDatabase kbSQL kbATL300bug kbGrpDSVCDB kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ATL consumer wizard maps DBTYPE_STR fields, such as SQL Server's text
+fields, to TCHAR arrays of 1024 bytes instead of an ISequentialStream pointer.
+The data for the columns is truncated to 1024 bytes.
+
+CAUSE
+=====
+
+This behavior is by design.
+
+RESOLUTION
+==========
+
+If data larger than 1024 is expected, you can increase the size of the array in
+your accessor class. For example, by default your code may look like the
+following:
+
+   TCHAR m_TextColumn[1024];
+   ...
+   COLUMN_ENTRY(3, m_TextColumn);
+
+Change the 1024 to the desired maximum length of the data.
+
+Another alternative is to use ISequentialStream to retrieve and set the data.
+ISequentialStream allows an application to read and write pieces at a time and a
+predefined maximum buffer size is not required. You would change the code above
+to:
+
+   ISequentialStream * m_TextColumn;
+   ...
+   BLOB_ENTRY(3, IID_ISequentialStream, STGM_READ,m_TextColumn);
+
+REFERENCES
+==========
+
+See Q190958 AOTBLOB for example of how to read and update using an
+ISequentialStream pointer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbATL210bug kbDatabase kbSQL kbATL300bug kbGrpDSVCDB kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

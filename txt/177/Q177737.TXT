@@ -1,0 +1,85 @@
+DOCUMENT:Q177737  10-JUL-2002  [winnt]
+TITLE   :Error Message: Bad IP Address /?.
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you type the "help ping" command at a command prompt, you receive the
+following error message:
+
+   This command is not supported by the help utility. Try "ping /?".
+
+When you type the "ping /?" command at a command prompt, you receive the
+following error message:
+
+   Bad IP address /?.
+
+RESOLUTION
+==========
+
+To work around this issue and for additional information about the Packet
+InterNet Groper (PING) utility included with Windows NT (Ping.exe), click Start,
+click Help, click the Index tab, type "ping" (without the quotation marks) in
+the text box, and then double-click the Ping Utility topic.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Ping is a Transport Control Protocol/Internet Protocol (TCP/IP) utility designed
+to test network connectivity by sending an Internet Control Message Protocol
+(ICMP) echo request to the computer to which you are trying to connect.
+
+For additional information about the Ping utility, type "ping" (without the
+quotation marks) or "ping - ?" (without the quotation marks) at a command
+prompt.
+
+For information about troubleshooting TCP/IP using the Ping utility, please see
+the following articles in the Microsoft Knowledge Base:
+
+ARTICLE-ID : Q102908
+TITLE : How to Troubleshoot TCP/IP Connectivity with Windows NT
+
+ARTICLE-ID : Q169790
+TITLE : How to Troubleshoot Basic TCP/IP Problems in Windows NT 4.0
+
+Additional query words: tool
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

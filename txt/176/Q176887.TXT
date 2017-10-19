@@ -1,0 +1,106 @@
+DOCUMENT:Q176887  09-MAR-2000  [foxpro]
+TITLE   :FIX: Running VFP Exe as Post-Setup Executable Hangs the Process
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an .exe file written in Visual FoxPro (VFP) 5.x as a Post- Setup
+Executable in the Setup Wizard, the wizard does not successfully exit the setup
+process. The setup process hangs when the Post-Setup Executable is completed and
+you must use the CRTL-ALT-DEL keys to terminate the setup through the Task
+Manager.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+This behavior is seen in Windows NT 4.0 Server or Workstation regardless of the
+version of the Service Pack installed.
+
+To re-create the problem the executable must be a Visual FoxPro executable and
+Windows NT 4.0 must be the operating system. Other executables, like
+Notepad.exe, do not cause the problem, nor does the problem occur if the setup
+program is running on Windows 95.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a simple project, named MyProj.
+
+2. Create a new program named Main.prg and add it to the project.
+
+3. In Main.prg, type the following code:
+
+         WAIT WINDOW "inside " + Program() TIMEOUT 1 QUIT
+
+4. Build the project into an .exe file name Myproj.exe.
+
+5. Create a second project to run as the Post-Setup Executable and name it Post.
+
+6. Create a new program named Postmain.prg and add it to the project.
+
+7. In Postmain.prg, type the following code:
+
+         WAIT WINDOW "POST: inside " + Program() TIMEOUT 1
+         QUIT
+
+8. Build this project into .exe file named Post.exe.
+
+9. Create a distribution files folder and place Post.exe and Myproj.exe in the
+   folder.
+
+10. Run the Setup Wizard.
+
+11. In Step 3 of the Setup Wizard, select and create Netsetup Disk Images.
+
+12. In Step 4 of the Setup Wizard, click the "..." button next to the Post-Setup
+   Executable text box and select Post.exe.
+
+13. Finish running the Setup Wizard.
+
+14. Quit Visual FoxPro and run the Netsetup Setup.exe on an NT 4.0 computer.
+
+   NOTE: The Setup program runs the Post-Setup Executable (Post.exe) and you
+   will see "POST: inside Postmain" display in the upper-right corner. However,
+   the setup hangs once the Post-Setup Executable is completed.
+
+Additional query words: Setup Wizard Post-setup kbvfp600fix
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

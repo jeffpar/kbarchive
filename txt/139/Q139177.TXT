@@ -1,0 +1,288 @@
+DOCUMENT:Q139177  15-AUG-2001  [winnt]
+TITLE   :Windows NT Automatic Setup: Language Version
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51
+OPER/SYS:
+KEYWORDS:kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT unattended installation sets English as the default language and
+US as the default keyboard layout and country. It is possible to accomplish the
+unattended installation of the local language by modifying the TXTSETUP.SIF,
+DOSNET.INF, and HARDWARE.INF files, included in the \I386 directory on the
+Windows NT compact disc.
+
+MORE INFORMATION
+================
+
+WARNING: Modification of INF files can cause serious, system-wide problems
+before and after Setup and may require you to reinstall Windows NT to correct
+them. Microsoft cannot guarantee that any problems resulting from the
+modification of INF files can be solved. Make INF modifications at your own
+risk.
+
+To perform an unattended setup, you use the WINNT /U:<answer_file> command,
+where <answer_file> is the name of the unattended answer file (used to
+answer questions that Setup asks). Localized language and keyboard layouts are
+not specified in the answer file. The following steps describe how to accomplish
+the unattended installation of the local language. The language codes are listed
+in the Language Code Reference section below.
+
+Step 1 - Copy Files
+-------------------
+
+Copy the \I386 directory from the Windows NT compact disc to a local share
+directory. For example, if the CD-ROM drive is drive D: and the local share
+directory is C:\SHARE, then type the following:
+" XCOPY D:\I386 C:\SHARE " (without the quotation marks)
+
+STEP 2 - Modify TXTSETUP.SIF
+----------------------------
+
+The local keyboard driver is specified in the [FILES] section and the local
+keyboard layout is specified in the [NLS] section of TXTSETUP.SIF, located in
+the share directory. For example, to specify the Swedish keyboard, add the
+following line to the [FILES] section;
+
+   [FILES]
+   KBDSW.DLL = DX,DL, ,2,0,0
+
+To select the Swedish keyboard, replace the US keyboard code in the [NLS] section
+with Swedish keyboard code, as follows:
+
+   [NLS]
+   DEFAULT LAYOUT = 0000041D
+
+STEP 3 - Modify DOSNET.INF
+--------------------------
+
+The Local keyboard driver is specified in the [FloppyFiles.1] section of
+DOSNET.INF located in the share directory. Use the following format to specify
+the keyboard driver, using the Swedish keyboard as an example:
+
+   [FloppyFiles.1]
+   d1, kbdsw.dll
+
+STEP 4 - Modify HARDWARE.INF
+----------------------------
+
+The local language and country code should be specified as the default in the
+[LanguageVars] section of HARDWARE.INF, located in the share directory:
+
+For Swedish:
+
+  [LanguageVars]
+
+       :
+     LanguageSystemSet           = "0000041d"
+     LanguageDefault             = "0000041d"
+
+For unattended setup to use the above variables, make the following
+change to [ConfigureHardwareOptions] section of HARDWARE.INF:
+
+   [ConfigureHardwareOptions]
+
+           :
+           :
+    EndForListDo
+    ;;;;;;;;;;;;;;;;;; Add a next line ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    set  !STF_LANGUAGE_HACK = YES
+    ifstr(i) $(!STF_LANGUAGE_HACK) == "YES"
+        read-syms LanguageVars
+          ;
+
+STEP 5: Run WINNT/U
+-------------------
+
+The files are now ready for you to run the unattended setup. At the command
+prompt, type:
+" winnt /u:<answer_file> " (without the quotation marks)
+where <answer_file> is the name of the file containing the responses for
+the unattended setup process.
+
+For more information on unattended setup, refer to Volume 1, Chapter 3,
+"Customizing Windows NT Setup" of the Windows NT Resource Guide.
+
+Use the following table to select the proper Language Code:
+
+Language Code Reference
+-----------------------
+
+     00000402  =  "Bulgarian"
+     0000041a  =  "Croatian"
+     00000405  =  "Czech"
+     00000406  =  "Danish"
+     00000413  =  "Dutch (Standard)"
+     00000813  =  "Dutch (Belgian)"
+     00000409  =  "English (United States)"
+     00000809  =  "English (United Kingdom)"
+     00001009  =  "English (Canadian)"
+     00001409  =  "English (New Zealand)"
+     00000c09  =  "English (Australian)"
+     0000040b  =  "Finnish"
+     0000040c  =  "French (Standard)"
+     0000080c  =  "French (Belgian)"
+     0000100c  =  "French (Swiss)"
+     00000c0c  =  "French (Canadian)"
+     00000407  =  "German (Standard)"
+     00000807  =  "German (Swiss)"
+     00000c07  =  "German (Austrian)"
+     00000408  =  "Greek"
+     0000040e  =  "Hungarian"
+     0000040f  =  "Icelandic"
+     00001809  =  "English (Irish)"
+     00000410  =  "Italian (Standard)"
+     00000810  =  "Italian (Swiss)"
+     00000414  =  "Norwegian (Bokmal)"
+     00000814  =  "Norwegian (Nynorsk)"
+     00000415  =  "Polish"
+     00000816  =  "Portuguese (Portugal)"
+     00000416  =  "Portuguese (Brazil)"
+     00000418  =  "Romanian"
+     00000419  =  "Russian"
+     0000041b  =  "Slovak"
+     00000424  =  "Slovenian"
+     0000080a  =  "Spanish (Mexican)"
+     0000040a  =  "Spanish (Traditional Sort)"
+     00000c0a  =  "Spanish (Modern Sort)"
+     0000041d  =  "Swedish"
+     0000041f  =  "Turkish"
+
+Keyboard Driver Reference
+-------------------------
+
+(Description)
+
+    00000813 = "Belgian Dutch"
+    0000080C = "Belgian French"
+    00000416 = "Brazilian (ABNT)"
+    00000402 = "Bulgarian"
+    00001009 = "Canadian English (Multilingual)"
+    00000C0C = "Canadian French"
+    00010C0C = "Canadian French (Multilingual)"
+    0000041A = "Croatian"
+    00000405 = "Czech"
+    00000406 = "Danish"
+    00000413 = "Dutch"
+    0000040B = "Finnish"
+    0000040C = "French"
+    00000407 = "German"
+    00000408 = "Greek"
+    00010408 = "Greek (220)"
+    00020408 = "Greek (319)"
+    00030408 = "Greek (220) Latin"
+    00040408 = "Greek (319) Latin"
+    0000040E = "Hungarian"
+    0001040E = "Hungarian 101-key"
+    0000040F = "Icelandic"
+    00000410 = "Italian"
+    00010410 = "Italian (142)"
+    0000080A = "Latin American"
+    00000414 = "Norwegian"
+    00010415 = "Polish (214)"
+    00000415 = "Polish (Programmers)"
+    00000816 = "Portuguese"
+    00000418 = "Romanian"
+    00000419 = "Russian"
+    0000041B = "Slovak"
+    00000424 = "Slovenian"
+    0000040A = "Spanish"
+    0001040A = "Spanish variation"
+    0000041D = "Swedish"
+    0000100C = "Swiss French"
+    00000807 = "Swiss German"
+    0001041F = "Turkish F"
+    0000041F = "Turkish Q"
+    00000809 = "United Kingdom"
+    00000409 = "US"
+    00010409 = "US-Dvorak"
+    00030409 = "US-Dvorak for left hand"
+    00040409 = "US-Dvorak for right hand"
+    00020409 = "US-International"
+
+(Driver Name)
+
+    00000813 = kbdbe.dll
+    0000080C = kbdbe.dll
+    00000416 = kbdbr.dll
+    00000402 = kbdbu.dll
+    00001009 = kbdca.dll
+    00000C0C = kbdfc.dll
+    00010C0C = kbdca.dll
+    0000041A = kbdcr.dll
+    00000405 = kbdcz.dll
+    00000406 = kbdda.dll
+    00000413 = kbdne.dll
+    0000040B = kbdfi.dll
+    0000040C = kbdfr.dll
+    00000407 = kbdgr.dll
+    00000408 = kbdhe.dll
+    00010408 = kbdhe220.dll
+    00020408 = kbdhe319.dll
+    00030408 = kbdhela2.dll
+    00040408 = kbdhela3.dll
+    0000040E = kbdhu.dll
+    0001040E = kbdhu1.dll
+    0000040F = kbdic.dll
+    00000410 = kbdit.dll
+    00010410 = kbdit142.dll
+    0000080A = kbdla.dll
+    00000414 = kbdno.dll
+    00010415 = kbdpl.dll
+    00000415 = kbdpl1.dll
+    00000816 = kbdpo.dll
+    00000418 = kbdro.dll
+    00000419 = kbdru.dll
+    0000041B = kbdsl.dll
+    00000424 = kbdcr.dll
+    0000040A = kbdsp.dll
+    0001040A = kbdes.dll
+    0000041D = kbdsw.dll
+    0000100C = kbdsf.dll
+    00000807 = kbdsg.dll
+    0001041F = kbdtuf.dll
+    0000041F = kbdtuq.dll
+    00000809 = kbduk.dll
+    00000409 = kbdus.dll
+    00010409 = kbddv.dll
+    00030409 = kbdusl.dll
+    00040409 = kbdusr.dll
+    00020409 = kbdusx.dll
+
+For more information and assistance on customizing Windows NT Setup INF files,
+refer to the Programmer's Guide included in the Windows NT DDK or contact
+Microsoft Consulting Services (MCS) or a Solution Provider.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhowto 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbMSPressSearch kbWinNTS351search kbWinNTS350search kbZNotKeyword6 kbZNotKeyword2
+Version           : :3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

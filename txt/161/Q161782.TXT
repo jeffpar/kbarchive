@@ -1,0 +1,75 @@
+DOCUMENT:Q161782  31-JUL-2001  [sms]
+TITLE   :SMS: Stop 0xC000021a Error with SMS Remote Agent Installed
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2,3.5,3.5 SP1,3.5 SP2,3.5 SP3,3.51,3.51 SP1,3.51 SP2,3.51 SP3,3.51 SP4,3.51 SP5
+OPER/SYS:
+KEYWORDS:kbdisplay kbnetwork kbtshoot smsremtshoot smsgeneral kbArtTypeINF kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Systems Management Server Remote Agent, a blue screen with
+a stop error code of 0xC000021a (or E11E1968, C0000005, 77FA4395, or 0021F10C)
+occurs on a computer running Windows NT Server 3.5x or Windows NT Workstation
+3.5x at startup. The service does not need to be started for the error to
+occur.
+
+
+CAUSE
+=====
+
+This error may occur if there is a conflict with the video card or chipset and
+the Systems Management Server Accelerated Screen Transfer (Idisnt.dll). When
+remotely controlling client computers running Windows NT Server or Windows NT
+Workstation version 3.51, you can increase the performance of the display in the
+Quick Windows Viewer by setting this client option in the Site Properties dialog
+box. When this option is enabled, data sent from the client to the viewer
+contains only those lines of pixels that have changed (rather than all pixels),
+and the data is compressed.
+
+WORKAROUND
+==========
+
+Remove the affected video card driver from the "Accelerate with These Video
+Drivers" list in the Remote Troubleshooting Options (found in Clients under Site
+Properties).
+
+MORE INFORMATION
+================
+
+To determine the display driver the client is using, open the Display Control
+Panel, click Change Display Type, and look at the driver listed under Driver
+Information.
+
+For more information on how the Systems Management Server Accelerated Screen
+Transfer works, please refer to the Systems Management Server 1.2 documentation.
+
+Additional query words: prodsms C21a blue screen NT351
+
+======================================================================
+Keywords          : kbdisplay kbnetwork kbtshoot smsremtshoot smsgeneral kbArtTypeINF kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2,3.5,3.5 SP1,3.5 SP2,3.5 SP3,3.51,3.51 SP1,3.51 SP2,3.51 SP3,3.51 SP4,3.51 SP5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

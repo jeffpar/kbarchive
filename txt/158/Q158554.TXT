@@ -1,0 +1,54 @@
+DOCUMENT:Q158554  19-DEC-1999  [homemm]
+TITLE   :Music Central 97: Discography Screen is Missing Credits
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Music Central for Windows 1997 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to view the credits on the Discography screen in Music Central, the
+artist/performer credits seem to be missing.
+
+In the Discography screen, credits listed below the title of a work will display
+the artist/performers contributions to that work.
+
+MORE INFORMATION
+================
+
+This is by design, but may appear misleading.
+
+NOTE: To view an individual artist/performer's credits, type the name of the
+artist/performer in the Find box, double-click on the artist/performer, and
+click the Credits button.
+
+Additional query words: 97 gone not there vanished see can't hidden invisible
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbMusicCentral kbMusicCentral1997
+Version           : :1997 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

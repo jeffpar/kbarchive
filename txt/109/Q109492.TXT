@@ -1,0 +1,68 @@
+DOCUMENT:Q109492  30-SEP-1999  [win3x]
+TITLE   :Installing MSDLC on Windows for Workgroups Version 3.11
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install MSDLC on Windows for Workgroups version 3.11, the following
+error message may occur during startup:
+
+   Protocol Manager could not be opened. DLC Load failure.
+
+WORKAROUND
+==========
+
+In the AUTOEXEC.BAT file, make sure that Net Initialize or Net Init command
+loads before MSDLC.EXE. Net Init command basically loads the protocol manager in
+the memory without binding it to the MAC (Media Access Control) driver. The
+following is a sample AUTOEXEC.BAT illustrating the correct load order:
+
+      C:\WFW311\net init
+      C:\WFW311\msdlc
+      C:\WFW311\net start
+
+MORE INFORMATION
+================
+
+MSDLC is an NDIS2-compliant protocol which requires Protocol Manager to be
+loaded in memory before it can bind to an NDIS MAC driver. If MSDLC doesn't find
+the Protocol Manager in the memory, the above error message occurs.
+
+REFERENCES
+==========
+
+Windows for Workgroups Resource Kit
+
+Additional query words: 3.11 NDIS3
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

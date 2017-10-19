@@ -1,0 +1,70 @@
+DOCUMENT:Q266531  26-MAY-2001  [homemm]
+TITLE   :Encarta 2001: Video Unexpectedly Restarts in Full-Screen Mode
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a video clip that is included with Microsoft Encarta Reference
+Suite 2001 DVD-ROM version, the video clip may unexpectedly restart in
+full-screen mode.
+
+RESOLUTION
+==========
+
+To work around this issue, reduce the desktop size and the color palette setting
+in Microsoft Windows:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. Move the "Screen area" slider to "800 by 600 pixels" or lower.
+
+5. In the Color Palette or Colors box, click High Color (16 bit) or lower.
+
+6. Click OK, and then close Control Panel.
+
+7. If you are prompted to restart the computer, do so.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Reference
+Suite 2001 DVD-ROM version.
+
+Additional query words: multi multi-media media mm ers small window movie
+
+======================================================================
+Keywords          : kbdisplay kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

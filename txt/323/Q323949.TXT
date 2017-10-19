@@ -1,0 +1,53 @@
+DOCUMENT:Q323949  13-JUN-2002  [homegame]
+TITLE   :Dungeon Siege: You Cannot Save a Multiplayer Game
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dungeon Siege, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you exit a multiplayer game in Microsoft Dungeon Siege, version 1.0, you do
+not have a choice to save the state of the world. After you exit the game, you
+cannot resume the game. However, your character and the items in your
+character's inventory are saved.
+
+CAUSE
+=====
+
+In a multiplayer game, you can save only your character and your character's
+inventory because those are the only things that are completely in your control.
+It is not possible to save the game itself. There is nothing wrong with your
+installation of Dungeon Siege, and you are doing nothing wrong.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

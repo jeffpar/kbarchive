@@ -1,0 +1,73 @@
+DOCUMENT:Q138213  08-NOV-2001  [homemm]
+TITLE   :Uninstall Incorrectly Removes Dynamic Link Library Files
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft World of Flight for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to uninstall one of the programs listed at top of this article, the
+uninstall process removes (deletes) a Dynamic Link Library file required by
+other programs.
+
+Microsoft Dogs Removes:
+
+ - Ir32_32.dll
+ - Msrle32.dll
+ - Wing32.dll
+
+Microsoft Oceans Removes:
+
+ - Otoon32.dll
+ - Wing32.dll
+
+World of Flight removes:
+
+ - Otoon32.dll
+ - Wing32.dll
+
+RESOLUTION
+==========
+
+Reinstall the program that is experiencing problems.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media mm kbimu media
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbDogs100 kbWorldofFlight kbOceans
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

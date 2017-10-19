@@ -1,0 +1,93 @@
+DOCUMENT:Q188888  11-DEC-1999  [foxpro]
+TITLE   :BUG: "String is too long to fit" Error Passing Variables to COM
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error message "String is too long to fit." is received when a character
+variable is passed by reference to a Visual FoxPro COM server, either a DLL or
+EXE.
+
+CAUSE
+=====
+
+This error is received if the character variable exceeds 255 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Place the following code into a new program file and save it as Test.prg:
+
+         DEFINE CLASS test AS custom OLEPUBLIC
+            Name = "test"
+            PROCEDURE vartest
+               Parameters xx
+               xx=xx+"ddd"
+               RETURN "Hello"
+            ENDPROC
+         ENDDEFINE
+
+2. Create a new project and add the program from step 1 above to the project.
+   Name the project Test.pjx.
+
+3. From the Project Manager, build either an Executable or an OLE DLL. Name it
+   Test.exe or Test.dll.
+
+4. Place the following code into a new program file and run it:
+
+         CLEAR
+         x=CREATEOBJECT("test.test")
+         IF TYPE("x")!="O"
+            RETURN
+         ENDIF
+         z=REPLICATE("z",256)
+         ? x.vartest(@z)
+         ? z
+         RETURN
+
+Additional query words: kbDSupport kbDSE kbVFp500abug kbVFp500bug
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

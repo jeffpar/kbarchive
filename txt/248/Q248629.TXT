@@ -1,0 +1,71 @@
+DOCUMENT:Q248629  10-AUG-2001  [winnt]
+TITLE   :No WINS Reverse Lookup Using RFC2317 Classless In-Addr.arpa
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:2000; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use RFC2317 classless in-addr.arpa delegation, WINS reverse lookup does
+not work for the delegated zone if the delegated zone resides on a different DNS
+server.
+
+CAUSE
+=====
+
+This issue can occur if you configure your DNS servers as described in the
+following Microsoft Knowledge Base article:
+
+   Q174419 How to Configure a Subnetted Reverse Lookup Zone on Windows NT
+
+MORE INFORMATION
+================
+
+Classless in-addr.arpa delegation is a scheme to configure reverse IP address
+lookup.
+
+Normally, a reverse IP address lookup for the address 192.168.10.42 results in a
+DNS query for 42.10.168.192.in-addr.arpa. With classless in-addr.arpa delegation
+using a subnet mask of 255.255.255.192, this query may be substituted by a query
+for 42.0-26.10.168.192.in-addr.arpa.
+
+When you configure WINS reverse lookup for the delegated subzone, the DNS server
+needs to determine the IP address from the query. With a query like
+42.0-26.10.168.192.in-addr.arpa., the server is unable to determine the
+corresponding IP address.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : WINDOWS:2000; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

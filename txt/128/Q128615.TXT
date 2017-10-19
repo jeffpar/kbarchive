@@ -1,0 +1,83 @@
+DOCUMENT:Q128615  28-JUL-2001  [win95x]
+TITLE   :Detection Process Stops at 80 Percent Complete During Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Windows 95 Setup on a Dell computer with a PCI bus, the
+detection process may stop at 80 percent complete. When this occurs, you see the
+error message "Divide By Zero."
+
+If you restart the computer and use Safe Recovery to finish Setup, more than one
+logical drive letter may be assigned to a single SCSI drive in the computer. For
+example, when you try to access drive E you see the contents of drive C instead.
+
+CAUSE
+=====
+
+This problem can occur on a Dell computer with a PCI bus and the following
+configuration:
+
+ - The computer has a built-in NCR 810 SCSI controller without an external SCSI
+   connection.
+
+ - The computer has a second SCSI controller connected to the same SCSI bus
+   cable as the first SCSI controller. The connection path for the SCSI
+   controllers and devices is as follows:
+
+      Built-in SCSI controller
+         |
+      Internal devices attached to the built-in SCSI controller (such as
+      logical drive C)
+         |
+      Second SCSI controller
+         |
+      External devices attached to the second SCSI controller
+
+This connection path causes both controllers to drive the same SCSI bus,
+resulting in the symptoms described above.
+
+
+RESOLUTION
+==========
+
+Use either of the following methods to work around this problem:
+
+ - Disable the built-in SCSI controller and use the new controller for all the
+   SCSI devices.
+
+ - Use the second SCSI controller only for external devices. Use the built-in
+   SCSI controller only for internal devices. Do not connect the two SCSI
+   controllers to the same SCSI bus.
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

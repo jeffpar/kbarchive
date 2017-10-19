@@ -1,0 +1,69 @@
+DOCUMENT:Q113026  15-APR-2000  [powerpt]
+TITLE   :PPT: Text Format Lost When Promoting, Demoting Paragraph
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, versions 3.0, 4.0 
+ - Microsoft PowerPoint for Macintosh, versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the indent level of a paragraph, it takes on the formatting
+defined on the Slide Master for that indent level. For example, if you demote or
+promote a paragraph to a third-level indent, the text in the paragraph will
+adopt the formatting defined on the Slide Master for all third-level indented
+paragraphs. Any custom text formatting you previously applied to the paragraph
+will be lost.
+
+CAUSE
+=====
+
+This behavior is by design. It is intended to assist in the creation of
+professional-looking presentations.
+
+MORE INFORMATION
+================
+
+The formatting of the text in the Object Area for AutoLayout (Master Body in
+PowerPoint 3.0) determines what text formatting will be used by default at each
+level of indentation in the object placeholders (body in PowerPoint 3.0) on the
+slide.
+
+The same behavior also appears when you demote or promote text in the body of the
+Notes pages. In this case, the formatting is controlled by the formatting on the
+Notes Master.
+
+Additional query words: 4.00a 3.00b winppt ppt powerpt powerpnt macppt 7.0
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt700Search kbPowerPt400 kbPowerPt300Mac kbPowerPt400Mac kbPowerPt300
+Version           : MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,7.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

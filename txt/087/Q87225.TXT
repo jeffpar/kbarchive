@@ -1,0 +1,107 @@
+DOCUMENT:Q87225  06-NOV-1999  [vbwin]
+TITLE   :SYSTEM.INI Settings Required for Windows Pen Extensions
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The text below provides a quick reference for the most important SYSTEM.INI
+configuration file settings used by version 1.0 of Microsoft Windows for Pen
+Computing (Pen Windows). This information should be useful to someone manually
+installing Pen Windows or troubleshooting a Pen Windows installation.
+
+MORE INFORMATION
+================
+
+The [boot] section
+------------------
+
+mouse.drv=    Set this field to either YESMOUSE.DRV or MOUSE.DRV. If a
+              machine has both mouse and tablet hardware installed,
+              use MOUSE.DRV. If a machine has only tablet hardware
+              installed, use YESMOUSE.DRV. YESMOUSE.DRV is a stub
+              mouse driver that merely instructs Windows to display a
+              mouse cursor. It has no other functionality.
+
+display.drv=  Set this field to the filename of a pen-enhanced
+              display driver. The names of display drivers that have
+              been modified by the Pen Windows development team end in
+              the letter "P." For example, the pen-enhanced VGA.DRV
+              file is named VGAP.DRV. Only the pen-enhanced display
+              drivers support inking.
+
+drivers=      This line lists the drivers Windows loads into memory at
+              boot time. By default, the Windows Setup program lists
+              the MMSYSTEM.DLL driver on this line. Pen Windows
+              requires two additional drivers on this line: pen and
+              penwindows (must be in lowercase letters). Each driver
+              listed on this line must also be found in the [drivers]
+              section of the SYSTEM.INI file.
+
+The [drivers] section
+---------------------
+
+pen=          Specify the name of the tablet driver in this field. If
+              the system uses the Microsoft mouse as its input device,
+              the tablet driver is MSMOUSE.DRV. Alternatively, this
+              line may list an OEM-specific driver such as NCR.DRV or
+              WACOM.DRV.
+
+penwindows=   Set this field to PENWINDOWS.DLL, which contains the
+              Pen Windows-based application programming interface (API).
+
+The [Pen Driver] section
+------------------------
+
+Com2=         Specify 0 if the tablet is connected to the COM1 port;
+              specify 1 if the tablet is connected to COM2 port. The
+              tablet works only on the COM1 or COM2 port.
+
+The [386Enh] section
+--------------------
+
+device=       If the system uses an OEM-specific tablet driver,
+              specify the name of the virtual tablet driver on this
+              line.
+
+For each of the settings listed above, if the driver is not installed in the
+Windows system directory (by default, C:\WINDOWS\SYSTEM), the fully qualified
+path to the file must be listed.
+
+For more information about the SYSTEM.INI file settings that affect Windows for
+Pen Computing, see Appendix A of the "Microsoft Windows for Pen Computing:
+Programmer's Reference" manual. Note that while the manual shows all SYSTEM.INI
+file entries, the path to the devices may not be correct.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

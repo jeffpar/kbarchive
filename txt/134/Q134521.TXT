@@ -1,0 +1,64 @@
+DOCUMENT:Q134521  17-DEC-2000  [win95x]
+TITLE   :Run Command on Start Menu Does Not Accept Redirection or Pipes
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you type a command that contains the pipe symbol (|) or the redirection
+symbols (< or > or >>) in the Open box of the Run command, the
+command is not carried out. For example, if you type the following line
+
+   " MEM | MORE " (without the quotation marks)
+
+you receive the following error message:
+
+   Parse error 4
+
+CAUSE
+=====
+
+Pipes and redirections are handled by Command.com and not by the Run command on
+the Start menu. If you type a pipe or redirection symbol in the Open box of the
+Run command, the symbol is given to the program as a command-line parameter.
+
+In the example above, the MEM program is given a command line of "| more" and
+encounters the parse error because "| more" is not a valid switch.
+
+WORKAROUND
+==========
+
+To pass pipes and redirections to a program, invoke Command.com explicitly by
+typing a line such as the following:
+
+   " COMMAND.COM /c MEM | MORE " (without the quotation marks)
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,80 @@
+DOCUMENT:Q118340  03-NOV-1999  [fortran]
+TITLE   :QuickWin Apps Allowed 50 User-Added Menu Items
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, versions 1.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FORTRAN QuickWin applications can have only 50 user-added menu items.
+
+MORE INFORMATION
+================
+
+Attempting to create more than 50 new menu items using AppendMenuQQ or
+InsertMenuQQ fails (functions return FALSE). The additional menu items beyond 50
+are not created.
+
+To demonstrate the restriction, compile and run the sample code below. When
+asked, request 51 menu items. You'll notice a "T" by menu items up to item 50
+indicating success, but "F" for item 51, indicating failure. Therefore, only the
+items "Menutest1" through "Menutest50" are added to the application menus.
+
+Sample Code
+-----------
+
+   C compile options needed: /MW
+
+         include 'flib.fi'
+         include 'flib.fd'
+
+         character*11 name
+         external menutest
+
+         write(*,"(' How many menus to create?',\)")
+         read *,n
+
+         do m = 1,n
+           write(name,"('Menutest',i2.2,a)")m,char(0)
+           print *,appendmenuqq(m/10+1,$MENUENABLED,name,menutest),m
+         end do
+
+         read *
+         END
+
+         subroutine menutest(L)
+         logical L
+         print *, 'Checked=',L
+         end
+
+Additional query words: kbinf 1.00 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT kbFORTRANPower32400NT
+Version           : :1.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q134541  17-DEC-2000  [win95x]
+TITLE   :PageMaker Does Not Print Large TrueType Fonts to TrueLaser
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print large (Type I) TrueType fonts to a MicroTek TrueLaser
+printer from PageMaker version 5.0 or 5.0a, the fonts are not printed. The
+printer displays a "Processing" message and then goes back online without
+printing anything.
+
+CAUSE
+=====
+
+The PostScript interpreter in the MicroTek TrueLaser printer does not conform to
+standard PostScript as defined by Adobe.
+
+RESOLUTION
+==========
+
+Set the PostScript driver to download fonts to the printer as native TrueType
+fonts. To do so, follow these steps:
+
+1. In Control Panel, double-click the Printers folder.
+
+2. Use the right mouse button to click the MicroTek TrueLaser printer icon, and
+   then click Properties on the menu that appears.
+
+3. On the Fonts tab, click the Send Fonts As button.
+
+4. In the Send TrueType Fonts As box, click In Native Format.
+
+5. Click OK.
+
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

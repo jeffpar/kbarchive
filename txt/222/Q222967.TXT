@@ -1,0 +1,65 @@
+DOCUMENT:Q222967  16-NOV-2000  [winnt]
+TITLE   :ZAK Client Setup Does Not Create TEMP Folders Correctly
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Zero Administration Kit (ZAK) for Windows NT 4.0 Workstation does
+not create the TEMP folders correctly when you are installing clients. This can
+lead to problems with setting up programs, printing, and other issues related to
+the location of the TEMP folder.
+
+CAUSE
+=====
+
+The Newtemp.reg file creates registry values that are REG_SZ data types instead
+of REG_EXPAND_SZ data types.
+
+RESOLUTION
+==========
+
+To work around this issue, modify the Newtemp.reg file in the I386\Scripts
+folder on your distribution share as follows:
+
+   REGEDIT4
+
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session
+   Manager\Environment]
+   "temp"=hex(2): 25,53,79,73,74,65,6d,52,6f,6f,74,25,5c,54,45,4d,50
+   "tmp"=hex(2): 25,53,79,73,74,65,6d,52,6f,6f,74,25,5c,54,45,4d,50
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

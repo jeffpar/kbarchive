@@ -1,0 +1,72 @@
+DOCUMENT:Q115352  11-NOV-1999  [pcmail]
+TITLE   :X400: Invalid Routing Entry Syntax Causes PANIC Error, Exit
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you make an entry with invalid syntax in the Routing screen, and exit by
+using the OK button, you cannot re-enter the screen to change or modify any
+entries, and an assertion message with heading PANIC and the message "Token is
+1" is displayed in a box. Pressing OK on this box or using the pull down menu
+(Close) exits the program.
+
+Since you should use the Config utility to enter all data (that is, you should
+not edit ROUTE.CFG files manually) this prevents you from modifying or adding to
+the routing.
+
+CAUSE
+=====
+
+Error detection capabilities needed to be extended to deal with this
+circumstance.
+
+RESOLUTION
+==========
+
+Instead of being dropped out to an MS-DOS box after acknowledging the error
+message, you are allowed to continue with other configuration functions. These
+routing entries are accepted when there should be destination MTAs for the last
+two expressions:
+
+   a=telecom.canada
+
+   p=prmd <MTA1>
+   x121=123
+   ua-id=xxx
+
+Detected errors are not corrected.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

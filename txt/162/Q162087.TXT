@@ -1,0 +1,78 @@
+DOCUMENT:Q162087  21-MAY-2001  [schedplus]
+TITLE   :XCLN: Schedule + Meeting Wizard Won't Auto Pick Locations
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select multiple meeting locations when you create an appointment using
+the Schedule+ Meeting Wizard (click Make Meeting on the Tools menu), the Meeting
+Wizard examines the schedule for the first location but does not examine the
+schedules of the additional locations you selected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Schedule+, version
+7.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To work around this problem, use the following steps to select the meeting
+location and to submit your meeting request:
+
+1. Start Schedule+.
+
+2. Click the Planner tab.
+
+3. Click the Invite button.
+
+4. In the Select Attendees dialog box, select the individuals you want to attend
+   from the address list box, and then click the Required (or Optional) button.
+
+5. In the Select Attendees dialog box, select the meeting locations from the
+   address list box, and click the Resource button.
+
+6. Click OK.
+
+7. On the Planner tab, select the location and time you want to schedule.
+
+8. Click Request Meeting.
+
+9. In the Available Resources dialog box, click the resource you want to use,
+   and then click Invite Selected.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

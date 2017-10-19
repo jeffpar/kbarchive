@@ -1,0 +1,120 @@
+DOCUMENT:Q140609  13-JUN-2001  [sna]
+TITLE   :TPSTART Enhanced to Support 16-bit Windows Applications
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to invoke a 16-bit Windows application with TPSTART.EXE, the
+invokable transaction program (TP) application program starter for SNA Server
+Windows NT clients, the following errors occur:
+
+ - On Windows NT 3.5:
+
+   16-bit Windows subsystem
+   NTVDM encountered a system error. Access is denied
+
+   Choose close to terminate the app, or ignore to continue
+
+   After pressing Ignore, this popup occurs 10-12 times. After choosing Ignore
+   each time, the application finally starts. However, subsequent attempts to
+   autostart the application fail.
+
+ - On Windows NT 3.51:
+
+   TPSTART.EXE calls CreateProcess properly, but it receives an Error 5
+   (ACCESS_DENIED).
+
+CAUSE
+=====
+
+TPSTART.EXE does not support the startup of 16-bit Windows applications.
+
+The TPSTART.EXE program is setting the DETACHED_PROCESS flag when calling
+CreateProcess, which causes the startup of 16-bit Windows applications to fail
+with ACCESS_DENIED. This problem does not occur when starting 32-bit Windows
+applications, even though the 32-bit application is not a detached process.
+
+Also, if the TP is configured as queued (with SNAServiceType=5), SNA Server does
+not detect that the application has ended since the default Windows NT virtual
+DOS machine (VDM) is still running. This causes a second invocation of the TP to
+fail.
+
+RESOLUTION
+==========
+
+Microsoft has updated the file <snaroot>\SYSTEM\TPSTART.EXE to correct
+this problem.
+
+To support autostarting of 16-bit Windows applications, the following new
+TP-specific registry settings are now supported under the subtree
+HKEY_LOCAL_MACHINE under the subkey:
+
+   /SYSTEM/CurrentControlSet/Services/SnaBase/Parameters/TPs/<tpname>/ 
+   Parameters/ 
+
+Add following information:
+
+   "Value Name: Win16App
+   Data Type: REG_SZ
+   Data: YES" (without the quotation marks)
+
+The following entry under the same subkey is also required to autostart 16- bit
+Windows applications:
+
+   "Value Name: SeparateWowVDM
+   Data Type: REG_SZ
+   Data: YES" (without the quotation marks)
+
+This causes TPSTART.EXE to start the 16-bit application in its own Windows NT
+VDM. This entry is required if TP is queued (where SNAServiceType=5). If the TP
+is configured as queued, and SeparateWowVDM is not set to YES, then the TP is
+only invoked once. Subsequent attempts to start the TP fail, because according
+to SNA Server the TP is still running, because SNA Server finds that the Windows
+NT VDM (NTVDM) process ID is still running. Starting a separate NTVDM corrects
+this problem because the NTVDM process ends when the 16-bit Windows application
+ends.
+
+STATUS
+======
+
+This feature is included in the latest U.S. Service Pack for SNA Server for
+Windows NT, version 2.11. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna appc cpic
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

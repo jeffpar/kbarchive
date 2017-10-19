@@ -1,0 +1,75 @@
+DOCUMENT:Q164413  02-FEB-2001  [win95x]
+TITLE   :Problems Changing Appearance Scheme
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::1,2,2.1
+OPER/SYS:
+KEYWORDS:kbenable osr1 osr2 win95 kbEnableSight kbEnableLearn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the color scheme in the Display tool in Control Panel, the color
+scheme may change but revert back to the original scheme after you restart the
+computer.
+
+CAUSE
+=====
+
+The High Contrast Accessibility feature is enabled.
+
+RESOLUTION
+==========
+
+If you do not want to use the High Contrast feature, follow these steps to
+disable it:
+
+1. In Control Panel, double-click Accessibility.
+
+2. On the Display tab, click the Use High Contrast check box to clear it.
+
+If you want to use the High Contrast feature, follow these steps to change the
+color scheme:
+
+1. In Control Panel, double-click Accessibility.
+
+2. On the Display tab, click Settings.
+
+3. Click Custom to select the scheme you want.
+
+MORE INFORMATION
+================
+
+The High Contrast feature is intended for visually impaired persons. It features
+large fonts and colors that contrast with each other, making the display easier
+to read.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenable osr1 osr2 win95 kbEnableSight kbEnableLearn 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR1 kbWin95OPKOSR210
+Version           : :1,2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

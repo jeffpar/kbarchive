@@ -1,0 +1,72 @@
+DOCUMENT:Q215407  26-FEB-2002  [vbwin]
+TITLE   :DOC: Index Property Incorrectly Defined
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,3.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+ - Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Index property is incorrectly defined in the Windows CE Toolkit for Visual
+Basic 6.0 documentation.
+
+MORE INFORMATION
+================
+
+The syntax for the Index property is documented as follows:
+
+   Index
+
+This property returns or sets the number that uniquely identifies an object in a collection.
+
+Syntax
+object.Index
+
+The documentation should actually read as follows:
+
+   Index
+
+This property returns or sets the number that uniquely identifies an object in a collection.
+
+Syntax
+object.Index = [number]
+
+REFERENCES
+==========
+
+Windows CE Toolkit for Visual Basic 6.0 Online Help
+
+eMbedded Visual Basic 3.0 Online Help
+
+Additional query words: wince vbce6 kbdse vbce kbGrpVB eVB
+
+======================================================================
+Keywords          : kbdocfix kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600 kbVBeMb300
+Version           : :1.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

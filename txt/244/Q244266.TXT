@@ -1,0 +1,67 @@
+DOCUMENT:Q244266  21-NOV-2000  [word97]
+TITLE   :WD97: Word Template Hyperlink Opens Instead of New Document
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a hyperlink to a Word 97 template in a Web browser, the template
+opens in the browser, instead of Word creating a new document that is based on
+the template.
+
+WORKAROUND
+==========
+
+To work around this behavior of Microsoft Word, create a hyperlink to a shortcut
+rather than to the template. To do this, follow these steps:
+
+1. To create a shortcut to your template, right-click the template file in
+   Windows Explorer. Then click Create Shortcut on the menu that appears
+   (shortcut menu).
+
+2. Create a hyperlink to the shortcut LNK file, not the template file.
+
+   IMPORTANT NOTE: If you create the hyperlink to the shortcut by clicking
+   Hyperlink on the Insert menu, and then you click Browse to find the shortcut
+   file, the problem still occurs, because the shortcut resolves to that actual
+   template. In order for this workaround to work correctly, you must manually
+   type the path to the shortcut in the Hyperlink dialog box.
+
+After you click the shortcut to the Word template, click Open to open a new
+document based on the template. After the new document is opened in your Web
+browser, you can save it to your system.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,83 @@
+DOCUMENT:Q158499  19-APR-2001  [word97]
+TITLE   :WD97: Cannot Use ScanProt with Word 97
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbusage word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In Word 97, when you attempt to run the ScanProt macro virus protection tool,
+you get one of the following error messages:
+
+   Run-time error '548'
+   Unable to create or edit macros using the WordBasic object.
+
+   -or-
+
+   Run-time error '438'
+   Object doesn't support this property or method.
+
+CAUSE
+=====
+
+When you open the ScanProt template, Word 97 automatically converts the ScanProt
+macros to Microsoft Visual Basic code. After conversion, these macros no longer
+work. They contain WordBasic macro commands that do not function in Visual Basic
+for Applications.
+
+
+RESOLUTION
+==========
+
+Word 97 has a built-in detection scheme that warns you when you are opening
+documents or templates that contain macros. This process gives you the
+opportunity to open the document or template with or without the macros. If you
+suspect that a document or template contains macros that you do not want, you
+can open the document or template without the macros.
+
+When you convert document templates to Word 97 formatted files, Word
+automatically converts all macros to Visual Basic code. During the conversion
+process, Word 97 looks for specific ScanProt code in your Normal.dot file, and
+if found, does not convert these macros.
+
+
+Microsoft recommends that you install anti-virus software that is specifically
+designed to detect Word macro viruses. Such software is available from several
+third-party companies. For additional information virus protection software
+which detect Word macro viruses, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q49500 List of Antivirus Software Vendors
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

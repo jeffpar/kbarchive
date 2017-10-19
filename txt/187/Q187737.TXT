@@ -1,0 +1,53 @@
+DOCUMENT:Q187737  09-MAR-2001  [iis]
+TITLE   :PRB: Meta Tag Properties Not Retrieved from a Query
+PRODUCT :Internet Information Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+ - Indexing Service 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using meta tags as custom properties, you may not be able to retrieve the
+value even though you have cached the property and added it to the columns to be
+retrieved. You can search for the properties and return results, but the value
+of the property is not returned for display.
+
+CAUSE
+=====
+
+This may be the result of caching meta properties as a non-string data type.
+Index Server 2.0 and and Windows 2000 Indexing Service only support meta tags as
+string data.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q248433  25-JUL-2001  [homegame]
+TITLE   :Fighter Ace II Err Msg: Expected Voodoo Graphics, None Detected
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbhw kbimu msgame kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fighter Ace II 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Fighter Ace II, you may receive the following error
+message when you click Fly Now in the game:
+
+   _glidenitnvironment: Glide2x.dll expected Voodoo graphics, none detected.
+
+CAUSE
+=====
+
+This behavior can occur if you removed a video adapter based on the 3Dfx chip
+set from your computer and replaced it with a video adapter based on a different
+chip set.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure Fighter Ace II to use the Direct 3D display
+setting or software rendering:
+
+1. Start Fighter Ace II.
+
+2. On the startup screen, click the Settings tab.
+
+3. Under Display, click Direct 3D or Software.
+
+If the issue continues to occur, delete the Glide2x.dll file:
+
+1. Click Start, point to Find, and then click "Files or Folders."
+
+2. In the Named box, type "glide2x.dll" (without the quotation marks).
+
+3. In the "Look in" box, click My Computer, and then click Find Now.
+
+4. On the Edit menu, click Select All.
+
+5. On the File menu, click Delete. When you are prompted to confirm the file
+   deletion, click Yes.
+
+6. Close the Find: Files Named Glide2x.dll window.
+
+Additional query words: 2.00 msgame fa msngz igz banshee chipset
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbhw kbimu msgame kbHardware 
+Technology        : kbGamesSearch kbMSNSearch kbFighterAceSearch
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

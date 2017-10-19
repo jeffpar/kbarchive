@@ -1,0 +1,97 @@
+DOCUMENT:Q224801  30-MAR-2000  [iis]
+TITLE   :Deciphering IISSYNC Status Codes
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The IISSYNC utility is used to synchronize Internet Information Server (IIS)
+metabase and Transaction Server packages on one Node with IIS on a Microsoft
+Cluster Server on the other Node.
+
+The IISSYNC utility returns a status code upon completion. This status code is
+always a numeric message whether the synchronization was successful or whether
+an error occurred.
+
+This article contains a list of status codes that are most often encountered and
+what the possible or probable cause of the status code is.
+
+MORE INFORMATION
+================
+
+IISSYNC Status Codes
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Status Code | Meaning & Probable Cause                                                                                                                                                                                                                                  | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 0           | Successful Synchronization                                                                                                                                                                                                                                | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 3           | metabase is inaccessible on Target Server. (The metabase may be corrupt or in use.)                                                                                                                                                                       | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1060        | Communications problem between Nodes. (This occurs when the Dcom default protocols do not match on both Nodes.)                                                                                                                                           | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1722        | The RPC server is unavailable. Invalid Target Server Name or Communications Problem between Nodes                                                                                                                                                         | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1726        | The remote procedure call failed                                                                                                                                                                                                                          | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2147500037  | MTS Replication is not configured. (See the Knowledge Base article Q191138)                                                                                                                                                                               | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148007941  | Administrator account not logged in on Target Server. (If MTS is configured for Local Administration instead of Remote Administration, it is necessary to have a Local Administrator Equivalent account logged on the Target Server when IISSYNC is run.) | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598792  | Communications problem between Nodes. (Possible IP Conflict. Make sure all IP addresses on both Nodes and in the IIS Resource group are all in the same subnet and valid.)                                                                                | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598794  | Invalid share in MTS replication settings. (Set the MTS replication share to the administration share on which MTS is installed on the Target Server.)                                                                                                    | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148599041  | User logged on to Target Server has insufficient rights for MTS replication. (Log on to Target Server as Local Administrator.)                                                                                                                            | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598801  | The component's CLSID is missing or corrupt. See the Knowledge Base article 
+Q243342 for a resolution.                                                                                                                                                    | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598808  | Application file CLSIDs or IIDs do not match corresponding DLLs                                                                                                                                                                                           | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598800  | One or more users in the application file are not valid                                                                                                                                                                                                   | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598785  | Errors occurred accessing one or more objects                                                                                                                                                                                                             | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598797  | An error occurred copying the file                                                                                                                                                                                                                        | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2148598828  | The server catalog version is not supported                                                                                                                                                                                                               | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+As further status codes are encountered and a cause has been determined, the
+information will be added to this Knowledge Base article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

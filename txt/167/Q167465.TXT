@@ -1,0 +1,68 @@
+DOCUMENT:Q167465  14-NOV-2000  [word97]
+TITLE   :WD97: Inserting a Graphic Over Hyperlink Retains Hyperlink Style
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97; winnt:3.51
+OPER/SYS:
+KEYWORDS:kbother kbusage winword word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows, used with:
+    - the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Word 97 for Windows to create a Web page, if you select a hyperlink
+and then insert a graphic image over the hyperlink, the graphic image will
+retain the hyperlink style and a blue underline will be displayed below it.
+
+CAUSE
+=====
+
+This problem occurs only when you run Word 97 for Windows on Microsoft Windows
+NT 3.51. This problem does not occur when you use Microsoft Windows NT 4.0 or
+Windows 95.
+
+WORKAROUND
+==========
+
+To add the hyperlink to a graphic, use the following steps:
+
+1. In your HTML document, select the hyperlink, and click Cut on the Edit menu.
+
+2. On the Insert menu, point to Picture, and then click From File.
+
+3. In the Insert Picture dialog box, click the desired picture. Click to clear
+   the Float Over Text check box, and then click Insert.
+
+4. Right-click the graphic, and then click Hyperlink.
+
+5. Type the hyperlink, and then click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother kbusage winword word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97; winnt:3.51
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

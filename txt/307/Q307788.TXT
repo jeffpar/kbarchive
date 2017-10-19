@@ -1,0 +1,64 @@
+DOCUMENT:Q307788  04-APR-2002  [iis]
+TITLE   :PRB: FTP Logs Show 550 Error Message w/Connection over UNC Share
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a Internet Information Services (IIS) 5.0 server that has a virtual
+directory and that connects remotely over a Universal Naming Convention (UNC)
+share, you may receive a 550 error message in the File Transfer Protocol (FTP)
+log, and the event log may show event ID 2009 with a source of Srv. This
+behavior occurs most often when antivirus software is running on the server.
+
+CAUSE
+=====
+
+The network server process provides remote procedure call (RPC) support and
+file, print, and named pipe sharing. When IIS connects to a remote server, it
+uses the server message block (SMB) protocol and connects to the server service
+that is running on that computer. Another process that is running on the
+computer may also have open file handles for the files that are being
+transferred to the remote server. When the total number of open file handles
+reaches 2048, the server process returns an error to the connecting IIS FTP
+service.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

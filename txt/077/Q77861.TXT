@@ -1,0 +1,78 @@
+DOCUMENT:Q77861  29-OCT-1999  [winmisc]
+TITLE   :Control Panel's Sound Won't Play Certain Wave Files
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you play certain .WAV files within the Control Panel's Sound option in
+Windows version 3.0 with Windows Multimedia Extensions 1.0, the following error
+message may be displayed:
+
+   Unable to Play Sound
+
+or the message may not appear and no sound is played.
+
+In Windows version 3.1, the error message "Cannot Play the Selected Sound" is
+displayed.
+
+CAUSE
+=====
+
+The Sound option under Control Panel plays only 22.05 kHz .WAV files. It cannot
+play 11.025 kHz .WAV files. However, Sound Recorder plays both 11.025 kHz and
+22.05 kHz .WAV files, and saves in only 22.05 kHz format.
+
+WORKAROUND
+==========
+
+To troubleshoot and resolve this error, do the following:
+
+1. Ensure that the sound functions are working by playing a sound from the
+   MMDATA subdirectory. If this does not work, then there are driver/hardware
+   problems.
+
+2. Load the .WAV file that won't work under Control Panel into the Sound
+   Recorder. Then use Sound Recorder to save the .WAV file in 22.05 kHz so that
+   Control Panel's Sound option can work with the .WAV file.
+
+3. Try adjusting the sound a little in Sound Recorder. Increase or decrease the
+   volume once and save the file. Now try playing the file in Control Panel's
+   Sound option.
+
+
+KBCategory: kbmm kbsound
+KBSubcategory: win30
+
+Additional query words: 1.00 1.0 wave MMWIN
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

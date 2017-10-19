@@ -1,0 +1,92 @@
+DOCUMENT:Q241335  04-FEB-2000  [iis]
+TITLE   :FtpBrowseShowLongDate Only Operates at Master Property Level
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The FtpDirBrowseShowLongDate property indicates whether or not to display two or
+four-digit years when you browse directories.
+
+The Internet Information Services (IIS) 5.0 documentation states the following:
+
+   This property [FtpDirBrowseShowLongDate] is accessible at the following
+   locations:
+
+   Metabase Path:
+
+   /LM/MSFTPSVC
+   /LM/MSFTPSVC/n
+   /LM/MSFTPSVC/n/ROOT
+   /LM/MSFTPSVC/n/ROOT/FtpVirtualDir
+
+However, the documentation is incorrect. It is only possible to set the property
+at the following locations:
+
+   Metabase Path:
+
+   /LM/MSFTPSVC
+   /LM/MSFTPSVC/n/ROOT/FtpVirtualDir
+
+Although, you can set the FtpDirBrowseShowLongDate property on an FTP virtual
+directory (/LM/MSFTPSVC/n/ROOT/FtpVirtualDir), it is ignored when the metabase
+is read. The FtpDirBrowseShowLongDate property can only be implemented for the
+entire FTP service (/LM/MSFTPSVC).
+
+RESOLUTION
+==========
+
+The FtpDirBrowseShowLongDate is only read and implemented from the /LM/MSFTPSVC
+level in the metabase.
+
+WARNING: Modifying the metabase incorrectly can cause serious problems that may
+require you to reinstall IIS 5.0. Microsoft cannot guarantee that problems
+resulting from incorrectly modifying the metabase can be resolved. Modify the
+metabase at your own risk.
+
+Run the Adsutil.vbs utility from <%SYSTEMDRIVE%>\Inetpub\AdminScripts. When
+you set the FtpDirBrowseShowLongDate property Adsutil.vbs set
+/Msftpsvc/FtpDirBrowseShowLongDate <Value>, <Value> can be set to
+TRUE or FALSE. A true value displays four-digit years and a false value display
+two-digit years.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Services version 5.0.
+
+Additional query words: metabase iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

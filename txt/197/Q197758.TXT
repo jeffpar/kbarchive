@@ -1,0 +1,94 @@
+DOCUMENT:Q197758  14-NOV-2000  [word97]
+TITLE   :WD97: Cross-Reference Text Format Lost in Form Field Bookmark
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfield word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you update a cross-reference to the bookmark of a text form field contained
+in a protected section, the resulting cross-reference text may not be correctly
+formatted. This problem occurs when the following conditions are true:
+
+ - Manual formatting has been applied to the cross-reference field.
+
+   -and-
+
+ - You have typed multiple words into the text form field.
+
+NOTE: Only the first word of the cross-reference text will contain the correct
+formatting.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Modify the Cross-Reference Field Code
+-----------------------------------------------
+
+After you have applied formatting to the cross-reference field, turn on the field
+codes. The field code should resemble the following:
+
+   {ref Text1 \* MERGEFORMAT}
+
+Change MERGEFORMAT to CHARFORMAT so that your cross-reference field now looks
+like the following:
+
+   {ref Text1 \* CHARFORMAT}
+
+To turn your field codes on or off, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. On the View tab, select the Field Codes check box.
+
+3. Click OK.
+
+NOTE: A check mark in the check box indicates that the option is turned on.
+
+Method 2: Apply a Style
+-----------------------
+
+Instead of manually formatting the cross-reference field, apply a style to the
+field.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,69 @@
+DOCUMENT:Q196846  24-JUN-2000  [exchange]
+TITLE   :XFOR: Migration Wizard Fails when Migrating from GroupWise 4.1a
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the migration of a Novell GroupWise 4.1a client, the Migration Wizard
+fails while copying the users' mail. No errors or warnings are logged in the
+event viewer. The timer on the Migration Wizard keeps counting. Migration can be
+canceled but not resumed.
+
+CAUSE
+=====
+
+The Windows NT Server computer performing the migration must have the Novell
+GroupWise client installed, and the Novell GroupWise client must be available in
+the path. The GroupWise client uses a viewer to display the contents of an
+e-mail attachment without retrieving it into an application.
+
+The viewer can display text, graphics, codes, and faxes. The viewer requires a
+"patch" or an update to the viewer file in order to view some attachments. For
+example, to view Office 97 documents, the latest patch for the GroupWise client
+must be installed.
+
+Because the Migration Wizard uses the GroupWise client to migrate user messages
+and attachments, the Migration Wizard may fail when it attempts to copy an
+attachment which the GroupWise client cannot view.
+
+WORKAROUND
+==========
+
+To avoid this problem, apply the latest GroupWise client viewer patch on the
+Windows NT Server computer that is running the migration. The patch may be found
+at http://support.novell.com.
+
+Additional query words: gwise
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

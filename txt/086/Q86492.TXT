@@ -1,0 +1,98 @@
+DOCUMENT:Q86492  01-NOV-1999  [win95x]
+TITLE   :Terminal Translates Letters into Numbers When Auto Dialing
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Terminal will automatically substitute letters with numbers when you choose the
+Dial command from the Phone menu. This feature may be desirable when you dial a
+phone number that includes letters, but does not allow "AT" commands to be sent
+when auto dialing.
+
+MORE INFORMATION
+================
+
+If letters are included in the Phone Number setting in Terminal (TERMINAL.EXE),
+they will be replaced by the corresponding numbers found on a traditional
+touch-tone phone dialing pad.
+
+Terminal is a modem communications program included with Windows 3.0, 3.0a, and
+3.1. In some cases, it may be desirable to insert "AT" modem commands into the
+dialing string to activate certain features of a Hayes or Hayes compatible modem
+when dialing. With Terminal, these letters are transformed into numbers.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. From the Settings menu in Terminal, choose Phone Number.
+
+2. Enter "ATV1,555-1212" (without the quotation marks) in the Dial text box.
+   ATV1 instructs the modem to give result codes in English instead of numbers.
+   The "," instructs the modem to pause two seconds before proceeding.
+
+3. Press ENTER to return to Terminal.
+
+4. From the Phone menu bar, choose Dial.
+
+A Terminal dialog box will appear, displaying:
+
+   Dialing:ATV1,555-1212
+
+However, Terminal will actually dial "2881,555-1212" instead because "2"
+corresponds to "A" and "8" corresponds to the letters "T" and "V".
+
+For letters that do not have a corresponding letter on the phone pad (Q and Z),
+Terminal substitutes a dash for the letter when it sends the dialing string to
+the modem. Dashes are ignored by the modem.
+
+To send AT commands to the modem while dialing:
+
+1. From the Settings menu, choose Modem Commands.
+
+2. Type "AT" (without the quotation marks) in the Prefix box.
+
+The following letters correspond to the number on a traditional touch tone phone
+pad:
+
+   ABC=2
+   DEF=3
+   GHI=4
+   JKL=5
+   MNO=6
+   PRS=7
+   TUV=8
+   WXY=9
+
+Additional query words: 3.00 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

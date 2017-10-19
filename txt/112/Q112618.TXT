@@ -1,0 +1,74 @@
+DOCUMENT:Q112618  24-OCT-1999  [win3x]
+TITLE   :How to Prevent Calling Card Numbers from Appearing on Faxes
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a calling card number is entered on the To: line of a message to be faxed,
+the recipient of the fax is able to view the sender's calling card number.
+
+RESOLUTION
+==========
+
+To prevent the calling card number from being displayed on the fax, an alias
+must be created for the recipient in the sender's Personal Address Book.
+
+NOTE: This workaround works only when the Send Cover Page option is disabled. If
+it is enabled, the calling card number is displayed on the cover page. By
+disabling the cover page, the recipient receives only the name of the alias that
+was created and specified on the TO: line and the message; the calling card
+number does not appear. If a cover page is required, then it must be included as
+the first page of the fax message.
+
+To create the alias:
+
+1. Start Mail.
+
+2. From the Mail menu, choose Address Book.
+
+3. Choose the icon for creating new entries.
+
+4. Choose Microsoft At Work PC Fax from the list of options.
+
+5. Enter an alias name.
+
+6. Enter the calling card number and the full phone number for the recipient.
+
+7. Choose the Personal Address Book icon to save the changes.
+
+8. When composing a fax, use the alias name on the To: line. Please note that a
+   separate alias must be created for each individual recipient.
+
+Additional query words: 3.11 efax phone call at work pcfax
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

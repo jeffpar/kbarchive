@@ -1,0 +1,181 @@
+DOCUMENT:Q193728  16-MAR-1999  [foxpro]
+TITLE   :PRB: SET COLLATE TO Command Causes Inconsistent Comparisons
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Comparing the equality of alphabetic characters using the UPPER() and LOWER()
+functions with the collation sequence set to Czech or Hungarian, produces
+incorrect results with some or all of the comparisons.
+
+RESOLUTION
+==========
+
+One workaround is to use the double equal operator (==) when making string
+comparisons.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Codepage 1250 or 852 works for a collation sequence of either Hungarian or
+Czech.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Config.fpw file, set the codepage to 1250 as follows and restart
+   Visual FoxPro:
+
+   Codepage=1250
+
+2. Create a program containing the following code and run the program. This code
+   compares the lower case letters of the alphabet:
+
+      MODIFY WINDOW SCREEN FONT "Courier New",10
+      CLEAR
+      *SET COLLATE TO "MACHINE"
+      SET COLLATE TO "CZECH" && or "Hungary" with codepage of 1250
+     
+      ? space(2)+"Lower to Upper"+space(14)+"Upper to Lower"+space(13) ;
+        +"ASC() Values"
+
+      ? space(2)+REPLICATE("-",14)+space(14)+REPLICATE("-",14)+space(13);
+        +REPLICATE("-",12)
+      FOR i = 1 TO 26
+         DO test WITH CHR(96 + i)
+      ENDFOR
+
+      PROCEDURE test (s)
+
+      ? s, "Lower("+s+") to Upper("+s+"):", LOWER(s) = UPPER(s), ;
+        "  Upper("+s+") to Lower("+s+"):", UPPER(s) = LOWER(s),;
+        ASC(s), "=", ASC(UPPER(s)), "?"
+
+   Comparisons using lower case letters always produce incorrect results when
+   comparing values returned from the LOWER() to the UPPER() functions (?
+   LOWER(s)=UPPER(s)). All of the UPPER() to LOWER() comparisons with lower case
+   letters (? UPPER(s)=LOWER(s)) are incorrect except for the following
+   letters:
+
+    Letter   Decimal
+    ----------------
+
+    b        98
+    f        102
+    g        103
+    h        104
+    j        106
+    k        107
+    m        109
+    p        112
+    q        113
+    v        118
+    w        119
+    x        120
+
+   NOTE: The lower case "g" evaluates incorrectly when comparing UPPER() to
+   LOWER() under the Hungary collation sequence.
+
+3. Create another program and add the following code to compare the upper case
+   letters of the alphabet:
+
+      MODIFY WINDOW SCREEN FONT "Courier New",10
+      CLEAR
+      *SET COLLATE TO "MACHINE"
+      SET COLLATE TO "CZECH" && or "Hungary" with codepage of 1250
+      
+      ? space(2)+"Lower to Upper"+space(14)+"Upper to ;
+        Lower"+space(13)+"ASC() Values"
+
+      ? space(2)+REPLICATE("-",14)+space(14)+REPLICATE("-",14)+space(13);
+        +REPLICATE("-",12)
+      FOR i = 1 TO 26
+         DO test WITH CHR(64 + i)
+      ENDFOR
+
+      PROCEDURE test (s)
+
+      ? s, "Lower("+s+") to Upper("+s+"):", LOWER(s) = UPPER(s), ;
+        "  Upper("+s+") to Lower("+s+"):", UPPER(s) = LOWER(s),;
+        ASC(s), "=", ASC(UPPER(s)), "?"
+
+   Comparisons using upper case letters always produce incorrect results when
+   comparing values returned from the LOWER() to the UPPER() functions (?
+   LOWER(S)=UPPER(S)). All of the UPPER() to LOWER() comparisons with upper case
+   letters (? UPPER(S)=LOWER(S)) are incorrect except for the following
+   letters:
+
+    Letter   Decimal
+    ----------------
+
+    B        66
+    F        70
+    G        71
+    H        72
+    J        74
+    K        75
+    M        77
+    P        80
+    Q        81
+    V        86
+    W        87
+    X        88
+
+   NOTE: The upper case "G" evaluates incorrectly when comparing UPPER() to
+   LOWER() under the Hungary collation sequence.
+
+4. Remove the CodePage= command from the Config.sys and change the SET COLLATE
+   TO command to MACHINE. Now all the comparisons between UPPER() and LOWER()
+   and LOWER() and UPPER() values are correct.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q176884 PRB: Problems with SET COLLATE and Queries with Integer Fields
+
+   Q181085 SET COLLATE & Queries - Additional Problem Scenarios
+
+Additional query words: kbVFp500a kbVFp500 kbVFp600 kbXBase KbDBFDBC kbDatabase kbdse kbcode
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

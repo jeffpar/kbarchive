@@ -1,0 +1,73 @@
+DOCUMENT:Q128816  06-JUL-2000  [foxpro]
+TITLE   :PRB: Cannot Access MAPI Under Win32s
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MAPI custom controls do not do anything with Visual FoxPro running under Win32s.
+In addition, no error messages occur when you use the MAPI custom controls.
+
+CAUSE
+=====
+
+Due to a missing thunking layer between 32-bit applications and the 16-bit MAPI
+DLLs, FoxPro, which is a 32-bit application, cannot communicate with the MAPI
+OLE custom controls under Win32s.
+
+RESOLUTION
+==========
+
+If you would like to use the MAPI custom controls, you must upgrade to Microsoft
+Windows NT or Microsoft Windows 95.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+As an alternative to using MAPI Controls, you can use Foxtools.fll and MAPI
+calls to accomplish your mail sending needs. For more information about how to
+do this, please see the following article in the Microsoft Knowledge Base:
+
+   Q102467 Using MAPI.DLL to Invoke MS Mail from FoxPro for Windows
+
+Also, the Send option on the File menu should work for sending mail messages
+through MS Mail under WIN32s.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

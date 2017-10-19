@@ -1,0 +1,624 @@
+DOCUMENT:Q245524  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part II)
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.1,2.5,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbMDAC kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbMDAC210SP2 kbMDAC250 kbMDACNoSweep
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Data Access Components versions 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is a continuation of the following Microsoft Knowledge Base
+article, which includes how to troubleshoot the Access Method and Microsoft Jet
+by changing the registry:
+
+   Q240377 HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I)
+
+MORE INFORMATION
+================
+
+Resource Data
+-------------
+
+This section contains information referenced in Part I of the article (some of
+which is included at the end of this article) to improve readability.
+
+Microsoft DAO Registry Settings:
+
+To apply these registry settings manually, copy the registry settings to a text
+file and save with the .reg file extension. You can then use RegEdit to import
+the settings into the Windows Registry.
+NOTE: You may need to alter the file locations to point to valid files on your
+computer.
+
+[HKEY_CLASSES_ROOT\DAO.DBEngine.35]
+@="Microsoft DAO 3.51 Object Library DBEngine"
+
+[HKEY_CLASSES_ROOT\DAO.DBEngine.35\CLSID]
+@="{00000010-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.Field.35]
+@="Microsoft DAO 3.51 Object Library Field"
+
+[HKEY_CLASSES_ROOT\DAO.Field.35\CLSID]
+@="{00000014-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.Group.35]
+@="Microsoft DAO 3.51 Object Library Group"
+
+[HKEY_CLASSES_ROOT\DAO.Group.35\CLSID]
+@="{00000016-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.Index.35]
+@="Microsoft DAO 3.51 Object Library Index"
+
+[HKEY_CLASSES_ROOT\DAO.Index.35\CLSID]
+@="{00000015-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.PrivateDBEngine.35]
+@="Microsoft DAO 3.51 Object Library PrivateDBEngine"
+
+[HKEY_CLASSES_ROOT\DAO.PrivateDBEngine.35\CLSID]
+@="{00000011-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.QueryDef.35]
+@="Microsoft DAO 3.51 Object Library QueryDef"
+
+[HKEY_CLASSES_ROOT\DAO.QueryDef.35\CLSID]
+@="{00000018-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.Relation.35]
+@="Microsoft DAO 3.51 Object Library Relation"
+
+[HKEY_CLASSES_ROOT\DAO.Relation.35\CLSID]
+@="{00000019-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.TableDef.35]
+@="Microsoft DAO 3.51 Object Library TableDef"
+
+[HKEY_CLASSES_ROOT\DAO.TableDef.35\CLSID]
+@="{00000013-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\DAO.User.35]
+@="Microsoft DAO 3.51 Object Library User"
+
+[HKEY_CLASSES_ROOT\DAO.User.35\CLSID]
+@="{00000017-0000-0010-8000-00AA006D2EA4}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000010-0000-0010-8000-00AA006D2EA4}]
+@="DAO.DBEngine.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000010-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000010-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.DBEngine.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000011-0000-0010-8000-00AA006D2EA4}]
+@="DAO.PrivateDBEngine.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000011-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000011-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.PrivateDBEngine.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000013-0000-0010-8000-00AA006D2EA4}]
+@="DAO.TableDef.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000013-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000013-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.TableDef.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000014-0000-0010-8000-00AA006D2EA4}]
+@="DAO.Field.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000014-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000014-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.Field.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000015-0000-0010-8000-00AA006D2EA4}]
+@="DAO.Index.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000015-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000015-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.Index.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000016-0000-0010-8000-00AA006D2EA4}]
+@="DAO.Group.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000016-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000016-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.Group.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000017-0000-0010-8000-00AA006D2EA4}]
+@="DAO.User.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000017-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000017-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.User.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000018-0000-0010-8000-00AA006D2EA4}]
+@="DAO.QueryDef.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000018-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000018-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.QueryDef.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000019-0000-0010-8000-00AA006D2EA4}]
+@="DAO.Relation.35"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000019-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+@="C:\\Program Files\\Common Files\\Microsoft Shared\\DAO\\DAO350.DLL"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000019-0000-0010-8000-00AA006D2EA4}\ProgID]
+@="DAO.Relation.35"
+
+Microsoft Jet Registry Settings:
+
+To apply these registry settings manually, copy them to a text file and save with
+the .reg file extension. You can then use RegEdit to import the settings into
+the Windows Registry.
+NOTE: You may need to alter the file locations to point to valid files on your
+computer.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines]
+"SystemDB"="system.mdb"
+"CompactByPKey"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Excel]
+"win32"="C:\\WINNT\\System32\\msexcl35.dll"
+"ImportMixedTypes"="Text"
+"FirstRowHasNames"=hex:01
+"AppendBlankRows"=dword:00000001
+"TypeGuessRows"=dword:00000008
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Exchange]
+"win32"="C:\\WINNT\\System32\\msexch35.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Jet 2.x]
+"win32"="C:\\WINNT\\system32\\msrd2x35.dll"
+"ReadAheadPages"=dword:00000008
+"MaxBufferSize"=dword:00000200
+"LockRetry"=dword:00000014
+"CommitLockRetry"=dword:00000014
+"PageTimeout"=dword:00000005
+"LockedPageTimeout"=dword:00000005
+"CursorTimeout"=dword:00000005
+"IdleFrequency"=dword:0000000a
+"ForceOSFlush"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Jet 3.5]
+"PageTimeout"=dword:00001388
+"LockRetry"=dword:00000014
+"MaxBufferSize"=dword:00000000
+"Threads"=dword:00000003
+"ExclusiveAsyncDelay"=dword:000007d0
+"SharedAsyncDelay"=dword:00000032
+"FlushTransactionTimeout"=dword:000001f4
+"MaxLocksPerFile"=dword:0000251c
+"LockDelay"=dword:00000064
+"RecycleLVs"=dword:00000000
+"UserCommitSync"="yes"
+"ImplicitCommitSync"="no"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Lotus]
+"win32"="C:\\WINNT\\System32\\msltus35.dll"
+"ImportMixedTypes"="Text"
+"FirstRowHasNames"=hex:01
+"AppendBlankRows"=dword:00000001
+"TypeGuessRows"=dword:00000008
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\ODBC]
+"TraceODBCAPI"=dword:00000000
+"DisableAsync"=dword:00000001
+"TraceSQLMode"=dword:00000000
+"QueryTimeout"=dword:0000003c
+"LoginTimeout"=dword:00000014
+"ConnectionTimeout"=dword:00000258
+"TryJetAuth"=dword:00000001
+"FatBlastRows"=dword:ffffffff
+"FatBlastTimeout"=dword:00000003
+"AsyncRetryInterval"=dword:000001f4
+"AttachCaseSensitive"=dword:00000000
+"FastRequery"=dword:00000000
+"ODBCISAMAttach"=dword:00000000
+"PreparedInsert"=dword:00000000
+"PreparedUpdate"=dword:00000000
+"SnapshotOnly"=dword:00000000
+"AttachableObjects"="'TABLE','VIEW','SYSTEM TABLE','ALIAS','SYNONYM'"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Paradox]
+"win32"="C:\\WINNT\\System32\\mspdox35.dll"
+"PageTimeout"=dword:00000258
+"DataCodePage"="OEM"
+"CollatingSequence"="Ascii"
+"ParadoxNetStyle"="4.x"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Text]
+"win32"="C:\\WINNT\\System32\\mstext35.dll"
+"CharacterSet"="OEM"
+"Format"="CSVDelimited"
+"Extensions"="txt,csv,tab,asc"
+"FirstRowHasNames"=hex:01
+"MaxScanRows"=dword:00000019
+"ExportCurrencySymbols"=hex:01
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Xbase]
+"win32"="C:\\WINNT\\System32\\msxbse35.dll"
+"DbcsStr"=hex:00
+"PageTimeout"=dword:00000258
+"DataCodePage"="OEM"
+"Mark"=dword:00000000
+"Date"="MDY"
+"Exact"=hex:00
+"Deleted"=hex:01
+"Century"=hex:00
+"CollatingSequence"="Ascii"
+"NetworkAccess"=hex:01
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\dBase 5.0]
+"Engine"="Xbase"
+"ExportFilter"="dBASE 5 (*.dbf)"
+"ImportFilter"="dBASE 5 (*.dbf)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:01
+"IndexFilter"="dBASE Index (*.ndx;*.mdx)"
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database changes data in the external file."
+"ResultTextExport"="Export data from the current database into a dBase 5 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\dBase III]
+"Engine"="Xbase"
+"ExportFilter"="dBASE III (*.dbf)"
+"ImportFilter"="dBASE III (*.dbf)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:01
+"IndexFilter"="dBASE Index (*.ndx)"
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database changes data in the external file."
+"ResultTextExport"="Export data from the current database into a dBase III file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\dBase IV]
+"Engine"="Xbase"
+"ExportFilter"="dBASE IV (*.dbf)"
+"ImportFilter"="dBASE IV (*.dbf)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:01
+"IndexFilter"="dBASE Index (*.ndx;*.mdx)"
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database changes data in the external file."
+"ResultTextExport"="Export data from the current database into a dBase IV file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Excel 3.0]
+"Engine"="Excel"
+"ExportFilter"="Microsoft Excel 3 (*.xls)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000001
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:01
+"ResultTextExport"="Export data from the current database into an Excel 3 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:01
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Excel 4.0]
+"Engine"="Excel"
+"ExportFilter"="Microsoft Excel 4 (*.xls)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000001
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:01
+"ResultTextExport"="Export data from the current database into an Excel 4 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:01
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Excel 5.0]
+"Engine"="Excel"
+"ExportFilter"="Microsoft Excel 5-7 (*.xls)"
+"ImportFilter"="Microsoft Excel (*.xls)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000001
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:01
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database will change data in the external file. Only one user at a time can change data in the file."
+"ResultTextExport"="Export data from the current database into an Excel 5 file."
+"SupportsLongNames"=hex:01
+"OutputFormat"="Microsoft Excel (*.xls)"
+"ReportFormat"="Microsoft Excel"
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Excel 8.0]
+"Engine"="Excel"
+"ExportFilter"="Microsoft Excel 97 (*.xls)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000001
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:01
+"ResultTextExport"="Export data from the current database into an Excel 97 file."
+"SupportsLongNames"=hex:01
+"OutputFormat"="Microsoft Excel (*.xls)"
+"ReportFormat"="Microsoft Excel"
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Exchange 4.0]
+"Engine"="Exchange"
+"ImportFilter"="Exchange (*.*)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000003
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"SupportsLongNames"=hex:01
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\FoxPro 2.0]
+"Engine"="Xbase"
+"ExportFilter"="Microsoft FoxPro 2.0 (*.dbf)"
+"ImportFilter"="Microsoft FoxPro (*.dbf)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:01
+"IndexFilter"="FoxPro Index (*.idx;*.cdx)"
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database changes data in the external file."
+"ResultTextExport"="Export data from the current database into a Microsoft FoxPro 2.0 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\FoxPro 2.5]
+"Engine"="Xbase"
+"ExportFilter"="Microsoft FoxPro 2.5 (*.dbf)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:01
+"IndexFilter"="FoxPro Index (*.idx;*.cdx)"
+"CreateDBOnExport"=hex:00
+"ResultTextExport"="Export data from the current database into a Microsoft FoxPro 2.5 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\FoxPro 2.6]
+"Engine"="Xbase"
+"ExportFilter"="Microsoft FoxPro 2.6 (*.dbf)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:01
+"IndexFilter"="FoxPro Index (*.idx;*.cdx)"
+"CreateDBOnExport"=hex:00
+"ResultTextExport"="Export data from the current database into a Microsoft FoxPro 2.6 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\FoxPro 3.0]
+"Engine"="Xbase"
+"ExportFilter"="Microsoft FoxPro 3.0 (*.dbf)"
+"CanLink"=hex:00
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextExport"="Export data from the current database into a Microsoft FoxPro 3.0 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\FoxPro DBC]
+"Engine"="Xbase"
+"ImportFilter"="Microsoft FoxPro 3.0 (*.dbc)"
+"CanLink"=hex:00
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000000
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\HTML Export]
+"Engine"="Text"
+"ExportFilter"="HTML Documents (*.html;*.htm)"
+"CanLink"=hex:00
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000002
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextExport"="Export data from the current database into a text file.  This process overwrites data if exported to an existing file."
+"SupportsLongNames"=hex:01
+"OutputFormat"="HTML (*.html)"
+"ReportFormat"="HTML"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\HTML Import]
+"Engine"="Text"
+"ImportFilter"="HTML Documents (*.html;*.htm)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000002
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database changes data in the external file."
+"SupportsLongNames"=hex:01
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Jet 2.x]
+"Engine"="Jet 2.x"
+"OneTablePerFile"=hex:00
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"IsamType"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Lotus WK1]
+"Engine"="Lotus"
+"ExportFilter"="Lotus 1-2-3 WK1 (*.wk1)"
+"ImportFilter"="Lotus 1-2-3 (*.wk*)"
+"CanLink"=hex:00
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000001
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:01
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextExport"="Export data from the current database into a Lotus 1-2-3 version 2 file. This process overwrites data if exported to an existing file."
+"SupportsLongNames"=hex:01
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Lotus WK3]
+"Engine"="Lotus"
+"ExportFilter"="Lotus 1-2-3 WK3 (*.wk3)"
+"CanLink"=hex:00
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000001
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:01
+"ResultTextExport"="Export data from the current database into a Lotus 1-2-3 version 3 file."
+"SupportsLongNames"=hex:01
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Lotus WK4]
+"Engine"="Lotus"
+"CanLink"=hex:00
+"OneTablePerFile"=hex:00
+"IsamType"=dword:00000001
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:01
+"SupportsLongNames"=hex:01
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Paradox 3.X]
+"Engine"="Paradox"
+"ExportFilter"="Paradox 3 (*.db)"
+"ImportFilter"="Paradox (*.db)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database changes data in the external file."
+"ResultTextExport"="Export data from the current database into a Paradox 3 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Paradox 4.X]
+"Engine"="Paradox"
+"ExportFilter"="Paradox 4 (*.db)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextExport"="Export data from the current database into a Paradox 4 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Paradox 5.X]
+"Engine"="Paradox"
+"ExportFilter"="Paradox 5 (*.db)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000000
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextExport"="Export data from the current database into a Paradox 5 file. This process overwrites the data if exported to an existing file."
+"SupportsLongNames"=hex:00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\ISAM Formats\Text]
+"Engine"="Text"
+"ExportFilter"="Text Files (*.txt;*.csv;*.tab;*.asc)"
+"ImportFilter"="Text Files (*.txt;*.csv;*.tab;*.asc)"
+"CanLink"=hex:01
+"OneTablePerFile"=hex:01
+"IsamType"=dword:00000002
+"IndexDialog"=hex:00
+"CreateDBOnExport"=hex:00
+"ResultTextImport"="Import data from the external file into the current database. Changing data in the current database will not change data in the external file."
+"ResultTextLink"="Create a table in the current database that is linked to the external file. Changing data in the current database changes data in the external file."
+"ResultTextExport"="Export data from the current database into a text file.  This process overwrites data if exported to an existing file."
+"SupportsLongNames"=hex:01
+"FormatFunction"="txt,SOA_RptToAscii,1,MS-DOS Text (*.txt)"
+"OutputFormat"="MS-DOS Text (*.txt)"
+"ReportFormat"="MS-DOS Text"
+"ExportWizardFunction"="mx_entry"
+"ImportWizardFunction"="mx_entry"
+"WizardProject"="wzlib80.mde"
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Malcolm Stewart, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMDAC kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbMDAC210SP2 kbMDAC250 kbMDACNoSweep 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbMDACSearch kbMDAC210 kbMDAC250
+Version           : :2.1,2.5,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

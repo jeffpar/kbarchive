@@ -1,0 +1,79 @@
+DOCUMENT:Q152958  07-MAR-2002  [exchange]
+TITLE   :XADM: Organizational Forms Unavailable to Other Servers in Site
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange clients might not see any Organizational forms available from
+the Compose-New Form... option or when using the Manage... command button on the
+Forms tab when viewing the properties of a folder.
+
+CAUSE
+=====
+
+If the Organization Forms folder for the Microsoft Exchange Site has been
+deleted and then recreated, clients on other Microsoft Exchange Servers in the
+Site will not be able to see the Organizational Forms until all Servers have
+been rebooted.
+
+WORKAROUND
+==========
+
+Reboot all Microsoft Exchange Servers in the Microsoft Exchange Site and any
+Server that might contain a replica of the Organizational Forms folder.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The Organizational Forms folder has a unique folder Entry ID (EID). When this
+folder is created initially, this EID is cached by all Microsoft Exchange
+Servers in the same Microsoft Exchange Site as well as all Servers that contain
+a replica of the Organizational Forms folder. This cached EID can be updated by
+stopping and restarting the Exchange services. In some cases it may require the
+Server to be rebooted. Therefore, if the Organization Forms folder is deleted
+from the Server where it was originally created and then a new Organizational
+Forms folder is created, a new EID will be assigned to this folder. All Servers
+in the Site and all Servers containing a replica of this folder will need to
+restart the Exchange services or be rebooted to cache this new EID.
+
+
+Additional query words: library
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

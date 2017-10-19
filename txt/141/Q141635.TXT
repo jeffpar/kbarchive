@@ -1,0 +1,84 @@
+DOCUMENT:Q141635  24-MAR-2000  [foxpro]
+TITLE   :FIX: ToolTipText Message Blank If Longer Than 50 Characters
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Symptoms for version 3.0 are different from those for version 3.0b. In
+Visual FoxPro 3.0, the ToolTipText message does not display at all if it
+contains more than 50 characters. In Visual FoxPro 3.0b, however, the
+ToolTipText message displays the first 50 characters of the ToolTipText.
+
+CAUSE
+=====
+
+The ToolTipText message is limited to 50 characters in length.
+
+WORKAROUND
+==========
+
+In both Visual FoxPro 3.0 and 3.0b, limit the length of the ToolTipText to fewer
+than 50 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new form, and set the ShowTips property of the form to true.
+
+2. Place a text box on the form.
+
+3. In the ToolTipText property of the text box, type "fifty-one (51) letter As"
+   (without the quotation marks).
+
+4. Run the form, and move the mouse pointer over the text box. In version 3.0,
+   no ToolTipText message appears. In version 3.0b, the message is truncated
+   after the 50th character.
+
+5. In version 3.0, modify the form, and remove one of the letters in the
+   ToolTipText property. Run the form, and the ToolTipText message appears.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

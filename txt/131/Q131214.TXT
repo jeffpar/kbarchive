@@ -1,0 +1,68 @@
+DOCUMENT:Q131214  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Hangs at Boot with 386Max and More Than 16 MB RAM
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 may stop responding (hang) when you start it on a computer with more
+than 16 megabytes (MB) of memory.
+
+CAUSE
+=====
+
+This problem can occur if 386Max, a memory manager published by Qualitas, Inc.,
+is installed on the computer. The way this memory manager handles more than 16
+MB of memory is incompatible with Windows 95.
+
+RESOLUTION
+==========
+
+To work around this problem, remove 386Max and use the Microsoft XMS memory
+manager (HIMEM.SYS) instead. To do so, use any text editor to edit the
+CONFIG.SYS file. Remove or remark out any reference to 386MAX and then add the
+following line as the first line in the file:
+
+   device=c:\windows\himem.sys
+
+Save and then close the CONFIG.SYS file, and then restart your computer.
+
+For additional information about removing 386Max, please refer to that program's
+documentation or manufacturer.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

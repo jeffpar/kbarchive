@@ -1,0 +1,50 @@
+DOCUMENT:Q87339  26-DEC-1999  [miscsdk]
+TITLE   :Specify Correct Display Installing Chinese Windows 3.0
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.00
+WINDOWS
+kbsetup
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Far East Software Development Kit (FESDK) for Windows version 3.0 
+-------------------------------------------------------------------------------
+
+During the process of installing the Chinese version of Microsoft Windows
+3.0 from the Far East Software Development Kit (FESDK) CD-ROM (compact-disk
+read-only memory), one of the first screens in the Setup program prompts
+the user to confirm the hardware and software components.
+
+Verify that the listed components match the computer, especially the
+display. The default setting is "VGA with Chinese Eten System Support." To
+install Chinese Windows on a VGA monitor without an Eten system, be sure to
+specify the "VGA" option.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSDKSearch kbSDKFESearch kbWinSDKSearch kbSDKFE300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

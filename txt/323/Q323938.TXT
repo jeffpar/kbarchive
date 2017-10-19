@@ -1,0 +1,56 @@
+DOCUMENT:Q323938  27-JUN-2002  [homegame]
+TITLE   :Train Simulator: Windshield Wipers Not Visible from Inside Cab
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While using Train Simulator, you may not be able to see the windshield wipers
+from inside the cab.
+
+CAUSE
+=====
+
+The windshield wipers are a feature on the GP38 and KIHA 31 locomotives only,
+and the windshield wipers are only visible from outside the locomotives. The
+windshield wipers are not visible from inside the cab on any locomotives.
+
+MORE INFORMATION
+================
+
+To activate the windshield wipers on the GP38 and KIHA 31 locomotives only,
+press V.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch _IK kbTrainSim kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

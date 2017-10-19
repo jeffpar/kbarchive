@@ -1,0 +1,81 @@
+DOCUMENT:Q278381  08-AUG-2001  [winnt]
+TITLE   :Default Permissions For the MachineKeys Folders
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,2000 SP1,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Windows NT Server versions 4.0 SP4, 4.0 SP5, 4.0 SP6, Terminal Server Edition 
+ - Microsoft Windows versions 2000, 2000 SP1 Advanced Server 
+ - Microsoft Windows versions 2000, 2000 SP1 Server 
+ - Microsoft Windows versions 2000, 2000 SP1 Professional 
+ - Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MachineKeys folder stores certificate pair keys for both the computer and
+users. Both Certificate services and Internet Explorer use this folder. The
+default permissions on the folder may be misleading when you attempt to
+determine the minimum permissions that are necessary for proper installation and
+the accessing of certificates.
+
+MORE INFORMATION
+================
+
+The MachineKeys folder is located under the All Users Profile\Application
+Data\Microsoft\Crypto\RSA. If the administrator did not set the folder to the
+minimum level, a user may receive the error message "An Internal error occurred"
+when the user generates a server certificate by using Microsoft Internet
+Information Server (IIS). The following settings are the default permissions for
+the MachineKeys folder:
+
+   Administrator   (Full Control)   This folder only
+   Everyone        (Special)        This folder only
+
+To view the special permissions for the Everyone group: Right-click the
+MachineKeys folder, click Advanced on the Security tab, and then click
+View/Edit. The permissions consist of the following permissions:
+
+ - List Folder/Read Data
+ - Read Attributes
+ - Read Extended Attributes
+ - Create Files/Write Data
+ - Create Folders/Append Data
+ - Write Attributes
+ - Write Extended Attributes
+ - Read Permissions
+
+The administrator does not have full control on child objects to protect a user's
+private part of the key pair. However, the administrator can still delete
+certificates for a user.
+
+Additional query words: CA, cert, FEK, encryption, IIS
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400search kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServ400sp6 kbNTTermServSearch kbWinAdvServSearch kbWinDataServSearch kbWin2000AdvServSP1 kbWin2000ProSP1 kbwin2000ServSP1
+Version           : :2000,2000 SP1,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

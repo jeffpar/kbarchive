@@ -1,0 +1,69 @@
+DOCUMENT:Q136543  17-DEC-2000  [win95x]
+TITLE   :Madge PCI Ringnode Network Adapter Hangs Using NDIS 3 Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install the NDIS 3.1 driver for the Madge Smart 16/4 PCI Ringnode token
+ring network adapter, your computer may stop responding (hang) at startup.
+
+You may also experience problems using the NDIS 3.1 driver for the Madge Smart
+16/4 Ringnode MCA network adapter.
+
+CAUSE
+=====
+
+There is a hardware compatibility problem between the Madge Smart 16/4 PCI
+Ringnode token ring network adapter and some computers.
+
+RESOLUTION
+==========
+
+Use the NDIS 2 drivers for the network adapter. The NDIS 2 drivers should be
+included with the network adapter or should be available from Madge.
+
+MORE INFORMATION
+================
+
+The following computers may not be able to use the NDIS 3.1 driver:
+
+ - NEC Ready P60M, AMI BIOS revision 1.0.01
+
+ - Digital Starion Minitower PC
+
+ - Gateway 2000 4DX2-66P, Phoenix BIOS revision 1.03
+
+ - Dell Latatude XPI90
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

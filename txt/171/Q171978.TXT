@@ -1,0 +1,90 @@
+DOCUMENT:Q171978  11-JAN-2001  [vbwin]
+TITLE   :INFO: Non-Modal Form Support in Visual Basic DLLs
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic 4.0 ActiveX DLLs (in-process ActiveX Servers) could display forms
+modally only. Visual Basic versions 5.0 and later allow you to display forms
+modally or in modeless form. When designing a ActiveX DLL, you have to take into
+consideration whether the client application supports displaying modeless forms.
+
+MORE INFORMATION
+================
+
+Modeless forms displayed by in-process components cannot function correctly
+unless they can communicate with the client's message loop. Therefore, in-
+process components created with Visual Basic can display modeless forms only in
+client processes that support such communication.
+
+The following applications support the display of modeless forms by in- process
+components:
+
+ - Applications created with Visual Basic 5.0 or later.
+
+ - Microsoft Office 97 or later.
+
+ - Applications that have the Visual Basic Technology logo.(Those that license
+   Visual Basic for Applications version 5.0 or later.)
+
+Applications that do not support the display of modeless forms by in- process
+components include:
+
+ - Applications created with earlier versions of Visual Basic.
+
+ - Earlier versions of Microsoft Office.
+
+ - Version 3.0 of Microsoft Internet Explorer.
+
+To allow in-process components to detect at run time whether a client application
+supports the display of modeless forms, Visual Basic provides the Boolean
+NonModalAllowed property of the App object.
+
+An in-process component should test this property before showing a modeless form.
+If the value is True, the form can be shown vbModeless. If the value is False,
+showing a modeless form will cause run-time error 369. The component should
+degrade gracefully by showing the form vbModal instead.
+
+
+For example:
+
+      If App.NonModalAllowed Then
+         Form1.Show vbModeless
+      Else
+         Form1.Show vbModal
+      EndIf
+
+Additional query words: kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,218 @@
+DOCUMENT:Q128208  06-MAY-2001  [visualc]
+TITLE   :HOWTO: Perform Transactions with the MFC Database Classes
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0,2.1,4.0,4.1,5.0
+OPER/SYS:
+KEYWORDS:kbcode kbprogramming kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses topics related to MFC database transactions. Some
+material here is a clarification and expansion of existing documentation. Other
+material describes the specific transaction behavior of the Microsoft Access
+version 2.0 ODBC driver.
+
+Beginning with Microsoft Visual C++ version 4.2, please refer to the following
+two Visual C++ Technical Notes for information on performing transactions using
+the MFC Database classes: TN047 (Relaxing Database Transaction Requirements) and
+TN068 (Performing Transactions with the Microsoft Access 7 ODBC Driver).
+
+MORE INFORMATION
+================
+
+
+MFC Database Transactions
+-------------------------
+
+MFC exposes database transactions through three member functions of the CDatabase
+class, BeginTrans(), CommitTrans(), and Rollback(). There is a member variable,
+m_bTransactions, that indicates whether the driver provides the capabilities
+that MFC's model of transactions require. These capabilities are checked in the
+CDatabase::Open() member function. CDatabase::CanTransact() can be called to
+retrieve the state of that member variable.
+
+One major requirement of the MFC transaction model is that the driver support
+cursor preservation across transaction commits and rollbacks. This requirement
+prohibits transaction support when using most ODBC drivers. None of the drivers
+shipped by Microsoft to date meet this requirement.
+
+There is a way, however, to use transactions with some ODBC drivers that provide
+a lesser degree of transaction support than what is required by the MFC model.
+The steps involved in getting this support are:
+
+1. Query the driver for capabilities.
+
+2. Manually set the m_bTransactions member variable.
+
+3. Close or Delete the cursor after finishing the transaction.
+
+The following sections discuss these three steps in detail.
+
+Step 1 - Query the Driver for Capabilities
+------------------------------------------
+
+An application must check two items to determine if it is able to use
+transactions as described in this article. They are transaction support and
+cursor behavior. There are ODBC API calls that must be used to do this checking.
+To check for transaction support, an application must call SQLGetInfo() with the
+SQL_TXN_CAPABLE flag. If SQLGetInfo() returns SQL_TC_NONE, transactions are not
+supported in any way by the driver and the application will not be able to use
+transactions with that driver. For more information about this, please see the
+documentation for SQLGetInfo() in the ODBC version 2.0 Programmer's Reference.
+
+After determining that the driver will support transactions, the application must
+determine the cursor behavior on commit and rollback. These capabilities can be
+determined by calling the SQLGetInfo() function and specifying
+SQL_CURSOR_COMMIT_BEHAVIOR and SQL_CURSOR_ROLLBACK_BEHAVIOR, respectively. These
+functions are called by MFC itself when checking driver functionality in the
+CDatabase::Open() function. In MFC version 3.0 and later, the results of these
+function calls are stored in the CDatabase member variables
+m_nCursorCommitBehavior and m_nCursorRollbackBehavior. In earlier versions of
+MFC, these variables do not exist, but the application can make the SQLGetInfo()
+calls itself to determine the cursor behavior.
+
+The cursor commit and cursor rollback behavior will determine how to treat your
+CRecordset after the transaction completes. The following shows the possible
+return values and what they mean:
+
+Return Value      Meaning
+--------------------------------------------------------
+SQL_ERROR         Transactions not supported.
+
+SQL_CB_DELETE     CRecordset::Close() must be called
+                  following commit or rollback.
+
+SQL_CB_CLOSE      CRecordset::Requery() must be called
+                  following commit or rollback.
+
+SQL_CB_PRESERVE   No special actions need to be taken.
+                  (m_bTransactions will be TRUE for a
+                  driver that returns this value.)
+
+The cursor behavior will determine what you need to do in step 3.
+
+Step 2 - Manually Set the m_bTransactions Member Variable
+---------------------------------------------------------
+
+The m_bTransactions member variable of CDatabase is protected. Because of this,
+you must derive a class from CDatabase to be able to change its value. This is
+one way to do it:
+
+      class CMyDatabase : public CDatabase {
+
+      public:
+         void SetTransactions() { m_bTransactions = TRUE; }
+      };
+
+Now, just call SetTransactions() on your CMyDatabase object to change the
+m_bTransactions member to TRUE and enable transactions on your database after
+making sure that transactions are supported.
+
+Step 3 - Close or Delete the Cursor After Finishing the Transaction
+-------------------------------------------------------------------
+
+Based on the cursor behavior determined in step 1, you must either Close() the
+recordset if the cursor behavior is SQL_CB_DELETE, or Requery() the recordset if
+the cursor behavior is SQL_CB_CLOSE -- after the transaction is done.
+
+An Additional Consideration When using the Microsoft Access 2.0 ODBC Driver
+---------------------------------------------------------------------------
+
+When using the Microsoft Access version 2.0 or 3.0 ODBC driver, which uses the
+Microsoft Access Jet database engine, you must also account for the Jet database
+engine's requirement that you cannot begin a transaction on any database that
+has an open cursor. In the MFC CRecordset class, an open cursor means a pending
+result set.
+
+Here are a couple of ways to handle this situation:
+
+ - Be sure that the recordset is closed when starting a transaction, open the
+   recordset after calling the database's BeginTrans() member function, and
+   close the recordset immediately after ending the transaction. If you are
+   doing multiple transactions, the multiple opening and closing of the
+   recordset can negatively affect the application's performance.
+
+   -or-
+
+ - Use the ODBC API function SQLFreeStmt() to explicitly close the cursor after
+   ending a transaction and then call Requery() after starting the next
+   transaction. When calling SQLFreeStmt(), specify the recordset's HSTMT as the
+   first parameter and SQL_CLOSE as the second parameter. This second technique
+   is faster than closing and opening the recordset at the start of every
+   transaction. The following code fragment demonstrates this technique when
+   doing two transactions:
+
+      CMyDatabase   db;
+      db.Open("MY_DATASOURCE");
+      CMyRecordset  rs(&db);
+
+      db.BeginTrans();                       // start transaction 1
+      rs.Open();                             // open the recordset
+
+      // manipulate data
+
+      db.CommitTrans();                      // or Rollback()
+
+      ::SQLFreeStmt(rs.m_hstmt,SQL_CLOSE);   // close the cursor
+      db.BeginTrans();                       // start transaction 2
+      rs.Requery();                          // now get the result set
+
+      // manipulate data
+
+      db.CommitTrans();                      // end transaction 2
+
+      rs.Close();
+      db.Close();
+
+REFERENCES
+==========
+
+MFC Technote #47 - "Relaxing Database Transaction Requirements."
+
+The following MFC Encyclopedia Articles:
+
+ - "Transaction"
+
+ - "Transaction: Performing a Transaction in a Recordset"
+
+ - "Transaction: How Transactions Affect Updates"
+
+CDatabase and CRecordset sections of the MFC Class Library Reference.
+
+ODBC 2.0 Programmer's Reference.
+
+Additional query words: 1.52a 2.50 2.5 2.51 2.52 2.52a 3.00 3.10 4.10
+
+======================================================================
+Keywords          : kbcode kbprogramming kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,4.0,4.1,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,75 @@
+DOCUMENT:Q251413  14-FEB-2000  [exchange]
+TITLE   :XADM: How to Export the Directory Schema
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may need to export the schema from an Exchange Server computer. The default
+schema is in the Schema.csv file on the Exchange Server distribution CD-ROM, but
+in some cases you may want to export the current schema for your site. For
+example, you may want to compare an old schema export to a new schema export to
+see the effects of a service pack update on the schema.
+
+MORE INFORMATION
+================
+
+To export the schema, perform the following steps:
+
+WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk.
+
+1. Start the Microsoft Exchange Server Administrator program in raw mode by
+   typing the following at a command prompt:
+
+   "c:\exchsrvr\bin\admin /r" (without the quotation marks)
+
+2. On the View menu, click Raw Directory.
+
+3. In the left pane, click the Schema object. Wait for the schema to appear in
+   right pane.
+
+4. Click any item in the right pane.
+
+5. On the File menu, click Save Window Contents. Type a name for the file, and
+   then click OK.
+
+This exports the schema to a .csv file that contains two columns, the Display
+Name column and the Modified column.
+
+Additional query words: directory export
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

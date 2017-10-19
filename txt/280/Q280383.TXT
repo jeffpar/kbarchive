@@ -1,0 +1,103 @@
+DOCUMENT:Q280383  16-JUL-2001  [iis]
+TITLE   :IIS Security Recommendations When You Use a UNC Share
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are instances when you can use Internet Information Server (IIS) as a
+portal to another device on the network that contains available storage. You can
+do this in the IIS Microsoft Management Console (MMC) snap-in by choosing the A
+share located on another computer option on the Web Site or Virtual Directory
+tab.
+
+IIS can detect when the path is local or remote even when network mappings make
+the drive appear local. Therefore, for access to be granted, IIS must obtain
+credentials with permissions to the remote share. These credentials (the user ID
+and password) are encrypted and stored in the IIS metabase, but are available
+through an Application Programming Interface (API). If normal security practices
+are not followed, this can potentially pose a risk to secure operation of the
+server.
+
+Server administrators should never allow untrusted code to run on the server. The
+potential damage that can result from allowing an untrusted user to run code on
+the server goes far beyond this specific incident.
+
+MORE INFORMATION
+================
+
+Microsoft recommends that customers consult the following Knowledge Base
+articles for information on how to set the appropriate permissions for Web
+users:
+
+   Q155253 Improper NTFS Permissions May Result in IIS Failure
+
+   Q187506 List of NTFS Permissions Required for IIS Site to Work
+
+   Q216705 How to Set Permissions on a FrontPage Web on IIS
+
+Even when proper permissions are set, Microsoft recommends that, in keeping with
+normal security recommendations, the user account that is used to access the
+share should have the fewest privileges possible. Specifically, Microsoft
+recommends that the account have the same permissions as the IUSR_Machinename
+account (Read and Execute). By following this recommendation, you ensure that
+even if a malicious user is able to run code on the server and gain the
+credentials used to access UNC shares, they cannot gain additional privileges by
+doing so.
+
+For any Web site or virtual directory with a share, Microsoft recommends that you
+carefully plan permissions and do not use any accounts with administrative-level
+permissions.
+
+If good security guidelines are followed, then this should not pose a security
+risk. However, there is a possibility that this information can be extracted
+from the metabase if the wrong security permissions are placed on the IIS
+server.
+
+The information in this article was tested with Active Server Pages (ASP) and the
+GetObject method of the IIS provider. A vulnerability was discovered with the
+correct code method; however, the root cause of the problem is incorrect
+security permissions.
+
+REFERENCES
+----------
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q269009 Red Stop Sign Appears in MMC on UNC-Mapped Content Directory
+
+Additional query words: iis5 iis4 vulnarability asp code provider
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

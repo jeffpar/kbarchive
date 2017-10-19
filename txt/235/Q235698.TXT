@@ -1,0 +1,60 @@
+DOCUMENT:Q235698  21-OCT-2000  [iis]
+TITLE   :IISSYNC Deletes the IIS In-Process Package on the Target Server
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Internet Information Server (IIS) 4.0 on a computer running
+Microsoft Cluster Server, if you run the Iissync utility from the source server
+to the target server, only the IIS utilities, the utilities, and the System
+Packages are left; all other packages are deleted. At this point, the only way
+to recover the system is to completely uninstall IIS 4.0 on both servers in the
+cluster, and then reinstall IIS 4.0 on both servers. The status returned by the
+IISSYNC utility is :2147500037.
+
+WORKAROUND
+==========
+
+To work around this problem, configure the Microsoft Transaction Server
+Replication information.
+
+STATUS
+======
+
+This problem was corrected in Microsoft Internet Information Services version
+5.0 for Window 2000.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,65 @@
+DOCUMENT:Q160876  12-JUN-2001  [sna]
+TITLE   :INFO: SNA Server Does Not Support Full Duplex APPC
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+APPC is a peer-oriented program-to-program API where either Transaction Program
+(TP) can initiate a conversation. However, APPC/LU6.2 traditionally is
+half-duplex, where after the conversation is established, only one TP has
+direction to send on a conversation at a time. The state of the conversation, as
+viewed by a particular TP, governs which APPC verbs can be issued by the TP at a
+particular time. If the local TP views the conversation as being in a "send"
+state, then the partner TP would also be in a send state.
+
+IBM now supports "full duplex" APPC where either program can issue both send and
+receive verbs at the same time, though this is a fairly new implementation of
+APPC.
+
+The following is the option to set for full duplex functionality:
+
+   112 -- Full-duplex conversations and expedited data
+
+SNA Server does not support option set 112; it only supports half-duplex,
+although either end can initiate the conversation.
+
+MORE INFORMATION
+================
+
+See the "Conversation States" section of Chapter 2 of the SNA Server
+Programmer's Reference for a thorough explanation of conversation state changes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

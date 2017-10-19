@@ -1,0 +1,56 @@
+DOCUMENT:Q129177  21-OCT-2000  [homemm]
+TITLE   :500 Nations: Wallpaper Images Washed-out or Discolored
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:win31kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 500 Nations, version 1.0, on platform(s):
+    - the operating system: Microsoft Windows NT, on platform(s):
+       - the operating system: Microsoft Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft 500 Nations Picture Gallery allows you to select images for use as
+Windows wallpaper. At times, this wallpaper may looked washed out or discolored.
+However, clicking the wallpaper or desktop redraws the image and normalizes the
+colors.
+
+MORE INFORMATION
+================
+
+You may find applications can require their own set of 256 colors when you use a
+256 color video driver. However, with such a driver, Windows can only supply one
+set of colors on the screen at a time. Therefore, when two on- screen images,
+such as wallpaper and 500 Nations, make separate color requests, you may see
+washed-out colors because Windows applies the same set of 256 colors to each
+application.
+
+Additional query words: kbhowto 1.00 fade fading mmtitles kbmm wash cd cd-rom compact disc disk fuzzy blurry dull tile photos photo pictures PictureGallery
+
+======================================================================
+Keywords          : win31 kbfaq
+Technology        : kbHomeProdSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

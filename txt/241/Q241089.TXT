@@ -1,0 +1,57 @@
+DOCUMENT:Q241089  13-SEP-2001  [msnetwork]
+TITLE   :How to Save Internet Sites to Your Favorites Folder
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.01
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+ - Microsoft Internet Explorer versions 4.01, 4.01 Service Pack 1, 4.01 Service Pack 2, 5 for Windows 95 
+ - Microsoft Internet Explorer versions 4.0, 4.01 Service Pack 2, 5, 5.01 for Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to add Internet sites to your Favorites folder on
+MSN, The Microsoft Network.
+
+MORE INFORMATION
+================
+
+To add your favorite Web sites to your Favorites folder using MSN, The Microsoft
+Network, you click Favorites on the Internet Explorer menu bar, and then click
+Add to Favorites. This is also known as creating a bookmark.
+
+REFERENCES
+==========
+
+   Q170930 How to Save Internet Shortcuts on MSN
+
+Additional query words: 2.50 2.60 5.00 bookmarking
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbIEsearch kbMSNSearch kbIE95Search kbIE500Search kbZNotKeyword3 kbIE98Search kbIE401Win95 kbIE401Win95SP1 kbIE401Win95SP2 kbIE500Win95 kbIE400Win98 kbIE401Win98SP2 kbIE500Win98 kbIE501Win98 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.01
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

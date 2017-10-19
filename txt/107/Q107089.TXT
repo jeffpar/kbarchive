@@ -1,0 +1,63 @@
+DOCUMENT:Q107089  30-OCT-1999  [pcmail]
+TITLE   :SMTP: Err Msg
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:2.1,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Mail Gateway to SMTP sometimes displays this message in the
+SMTPGATE.LOG file and/or the Gateway PC screen:
+
+   ERROR <mailbox name> is an invalid Courier Mailbox
+   [tx] 550 Addressee unknown
+
+CAUSE
+=====
+
+The <mailbox name> in the first error line may be invalid because it is
+longer than 10 characters or includes characters not allowed under MS Mail.
+These lines appear only if you have started the Gateway with these options:
+
+ - cd -lacsy -gacsy
+
+or,
+
+ - ci -lacsy -gacsy
+
+RESOLUTION
+==========
+
+Inform sender of the correct mailbox name.
+
+Additional query words: 2.10 2.1 3.00 3.0 errmsg
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300 kbMailGateSMTP210
+Version           : MS-DOS:2.1,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

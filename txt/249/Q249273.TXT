@@ -1,0 +1,60 @@
+DOCUMENT:Q249273  14-JAN-2000  [exchange]
+TITLE   :XIMS: Users in Bcc Box Appear in ImCr EwLs Section of Archive
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a user in an Exchange Server organization sends mail that has recipients in
+the Bcc box to a recipient across the Internet Mail Service, the users in the
+Bcc box appear in the ImCr EwLs section of the Archive file. This happens if the
+Message Archival category is set to Medium or higher on the Diagnostics Logging
+tab of the Internet Mail Service.
+
+MORE INFORMATION
+================
+
+For example, if a user whose e-mail name is someone@microsoft.com sends a
+message to a user whose e-mail name is touser@adventureworks.expedia.com and
+that message has bccuser@adventureworks.expedia.com in the Bcc box, the header
+information of the generated Archive file contains the address
+bccuser@adventureworks.expedia.com between the ImCr and EwLs sections of the
+header.
+
+The example companies, organizations, products, people, and events depicted
+herein are fictitious. No association with any real company, organization,
+product, person, or event is intended or should be inferred.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

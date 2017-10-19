@@ -1,0 +1,464 @@
+DOCUMENT:Q319733  15-AUG-2002  [iis]
+TITLE   :MS02-018: April 2002 Cumulative Patch for IIS
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbWinXPpreSP1fix kbWin2000sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.1 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft has released a cumulative patch for Internet Information Server (IIS)
+4.0, Internet Information Services (IIS) 5.0, and IIS 5.1 that includes updates
+for the issues that are described in the following Microsoft Knowledge Base
+articles:
+
+   Q297860 MS01-044: IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 Patch
+   Rollup
+
+   Q307934 Locking Down WebDAV Through ACL Still Allows PUT and DELETE Requests
+
+   Q313489 You Can Place Content Headers in the Body of a Response If an ISAPI
+   Filter Is Installed
+
+   Q314339 MS02-018: Patch Available for Access Violation in URL Error Handling
+   Vulnerability
+
+   Q316864 Problems with Adobe Acrobat 5.0 After You Install URLScan
+
+   Q317035 MS02-018: Patch Available for Cross-Site Scripting in Redirect
+   Response Message Vulnerability
+
+   Q317196 MS02-018: Patch Available for Denial of Service Through FTP Status
+   Request Vulnerability
+
+   Q317895 MS02-018: Patch Available for Cross-Site Scripting in IIS Help File
+   Search Facility Vulnerability
+
+   Q318091 MS02-018: Patch Available for Buffer Overrun in HTR ISAPI Extension
+   Vulnerability
+
+   Q319688 MS02-018: Patch Available for Chunked Encoding Transfer Mechanism
+   Vulnerability
+
+   Q320374 MS02-018: Patch Available for Cross-site Scripting in Custom 404
+   Error Page Vulnerability
+
+   Q321123 MS02-018: Patch Available for Buffer Overrun in ASP Server-Side
+   Include Function Vulnerability
+
+   Q321130 MS02-018: Patch Available for Buffer Overrun in HTTP Header Handling
+   Vulnerability
+
+
+NOTE: These patches do not include fixes for vulnerabilities involving non-IIS
+products, such as the Front Page Server Extensions and Index Server, even though
+these products are closely associated with IIS and are typically installed on
+IIS servers. There is, however, one exception. The fix for the vulnerability
+that affects Index Server, which is discussed in Microsoft Security Bulletin
+MS01-033 (http://www.microsoft.com/technet/security/bulletin/MS01-033.asp), is
+included in this patch because of the seriousness of the issue for IIS servers.
+At the time that this article was written, the Microsoft Security Bulletins that
+discuss these vulnerabilities are as follows:
+
+   Microsoft Security Bulletin MS01-043
+   (http://www.microsoft.com/technet/security/bulletin/MS01-043.asp)
+
+   Microsoft Security Bulletin MS01-025
+   (http://www.microsoft.com/technet/security/bulletin/ms01-025.asp)
+
+   Microsoft Security Bulletin MS00-084
+   (http://www.microsoft.com/technet/security/bulletin/ms00-084.asp)
+
+   Microsoft Security Bulletin MS00-018
+   (http://www.microsoft.com/technet/security/bulletin/ms00-018.asp) (which
+   discusses the same issue as Microsoft Security Bulletin MS02-018)
+   (http://www.microsoft.com/technet/treeview/default.asp?url=/technet/security/bulletin/ms02-018.asp)
+
+   Microsoft Security Bulletin MS00-006
+   (http://www.microsoft.com/technet/security/bulletin/ms00-006.asp)
+
+All of the previously listed fixes and cumulative patches are included in Windows
+2000 Service Pack 3. For additional information about the latest service pack
+for Windows 2000, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+NOTE: The fixes for the following vulnerabilities that affect IIS 4.0 are not
+included in the patch because they require administrative action instead of a
+software change. Administrators should make sure that in addition to applying
+this patch, they also take the administrative action that is described in the
+following bulletins:
+
+   Microsoft Security Bulletin MS00-028
+   (http://www.microsoft.com/technet/security/bulletin/ms00-028.asp)
+
+   Microsoft Security Bulletin MS00-025
+   (http://www.microsoft.com/technet/security/bulletin/ms00-025.asp)
+
+   Microsoft Security Bulletin MS99-025
+   (http://www.microsoft.com/technet/security/bulletin/ms99-025.asp) (which
+   discusses the same issue as Microsoft Security Bulletin MS98-004)
+   (http://www.microsoft.com/technet/security/bulletin/ms98-004.asp)
+
+   Microsoft Security Bulletin MS99-013
+   (http://www.microsoft.com/technet/security/bulletin/ms99-013.asp)
+
+MORE INFORMATION
+================
+
+For more information about this patch, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/technet/security/bulletin/MS02-018.asp
+
+ - Internet Information Services 5.1
+ - Internet Information Services 5.0
+ - Internet Information Server 4.0
+ - Windows NT Server 4.0, Terminal Edition
+
+Internet Information Services 5.1
+---------------------------------
+
+Before you apply this update, backup your metabase.
+
+The following file is available for download from the Microsoft Download Center:
+
+   English: DownloadDownload Q319733_WXP_SP1_x86_enu.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37857)
+
+   Arabic: DownloadDownload Q319733_WXP_SP1_x86_ara.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37859)
+
+   Chinese (Simplified): DownloadDownload Q319733_WXP_SP1_x86_chs.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37861)
+
+   Chinese (Traditional): DownloadDownload Q319733_WXP_SP1_x86_cht.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37864)
+
+   Czech: DownloadDownload Q319733_WXP_SP1_x86_csy.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37866)
+
+   Danish: DownloadDownload Q319733_WXP_SP1_x86_dan.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37867)
+
+   Dutch: DownloadDownload Q319733_WXP_SP1_x86_nld.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37874)
+
+   Finnish: DownloadDownload Q319733_WXP_SP1_x86_fin.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37870)
+
+   French: DownloadDownload Q319733_WXP_SP1_x86_fra.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37871)
+
+   German: DownloadDownload Q319733_WXP_SP1_x86_deu.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37858)
+
+   Greek: DownloadDownload Q319733_WXP_SP1_x86_ell.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37868)
+
+   Hebrew: DownloadDownload Q319733_WXP_SP1_x86_heb.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37860)
+
+   Hungarian: DownloadDownload Q319733_WXP_SP1_x86_hun.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37872)
+
+   Italian: DownloadDownload Q319733_WXP_SP1_x86_ita.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37873)
+
+   Japanese: DownloadDownload Q319733_WXP_SP1_x86_jpn.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37862)
+
+   Korean: DownloadDownload Q319733_WXP_SP1_x86_kor.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37863)
+
+   Norwegian: DownloadDownload Q319733_WXP_SP1_x86_nor.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37875)
+
+   Polish: DownloadDownload Q319733_WXP_SP1_x86_plk.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37876)
+
+   Portuguese: DownloadDownload Q319733_WXP_SP1_x86_ptb.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37877)
+
+   Portuguese (Brazil): DownloadDownload Q319733_WXP_SP1_x86_ptg.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37865)
+
+   Russian: DownloadDownload Q319733_WXP_SP1_x86_rus.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37878)
+
+   Spanish: DownloadDownload Q319733_WXP_SP1_x86_esp.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37869)
+
+   Swedish: DownloadDownload Q319733_WXP_SP1_x86_sve.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37879)
+
+   Turkish: DownloadDownload Q319733_WXP_SP1_x86_trk.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=37880)
+
+Release Date: April 10, 2002
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+You do not have to restart your computer after you apply this update. The
+installer stops and restarts the IIS service automatically. If you are prompted
+to restart your computer, ignore the prompt.
+
+The Q319733 package supports the following switches:
+
+   -x   Extract the files for later installation
+   -u   Unattended mode
+   -f   Force other programs to close when the computer shuts down   
+   -n   Do not back up files for uninstall
+   -o   Overwrite OEM files without prompting
+   -z   Do not restart when installation is complete
+   -q   Quiet mode (no user interaction)
+   -l   List installed hotfixes
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
+   Date         Time   Version      Size     File name
+   -------------------------------------------------------
+   27-Mar-2002  18:53  5.1.2600.41  338,944  Asp51.dll        
+   20-Mar-2002  14:59                 2,411  Default.asp
+   27-Mar-2002  18:53  5.1.2600.41  117,248  Ftpsv251.dll     
+   27-Mar-2002  18:54  6.0.2600.41  240,640  Httpext.dll      
+   20-Mar-2002  14:59                19,224  Query.asp
+   20-Mar-2002  14:59                 6,527  Search.asp
+   20-Mar-2002  20:12  5.1.2600.40    9,216  Spiisupd.exe     
+   21-Mar-2002  17:43  5.2.1.0        3,584  Spmsg.dll        
+   21-Mar-2002  17:46  5.2.1.0       41,472  Spuninst.exe     
+   27-Mar-2002  18:53  5.1.2600.41  339,456  W3svc.dll        
+
+NOTE: Due to file dependencies, this update may contain additional files.
+
+Internet Information Services 5.0
+---------------------------------
+
+Before you apply this update, backup your metabase. For additional information,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q300672 HOW TO: Create a Metabase Backup in IIS 5
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload the Q319733 Package now
+   (http://www.microsoft.com/windows2000/downloads/security/q319733/default.asp)
+
+Release Date: April 10, 2002
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+After you apply this update, space characters such as white space, tabs, carriage
+returns, and line feeds in the IIS log file are replaced with plus signs (+). If
+you have a log analyzer that parses the IIS log file, you may have to update it
+to accommodate this change. To work around this problem while you update your
+log analyzer, extract the patch with the "-x" switch and do not install the
+Iislog.dll file.
+
+You do not have to restart your computer after you apply this update, because the
+installer stops and restarts the IIS service automatically.
+
+The Q319733 package supports the following switches:
+
+   -x Extract the files for later installation
+   -y Perform uninstall (only with /m or /q)
+   -f Force apps closed at shutdown
+   -n Do not create uninstall directory
+   -z Do not reboot when update completes
+   -q Quiet Mode -- no user interface
+   -m Unattended mode
+   -l List installed hotfixes
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
+   Date         Time   Version        Size     File name
+   ----------------------------------------------------------
+   03-Apr-2002  22:17  5.0.2195.5255  245,520  Adsiis.dll       
+   03-Apr-2002  22:17  5.0.2195.5255  333,072  Asp.dll          
+   22-Mar-2002  20:15                   2,413  Default.asp
+   08-Oct-2001  20:38  4.0.2.4701     593,976  Fp4autl.dll      
+   03-Apr-2002  22:17  5.0.2195.3649  299,792  Fscfg.dll        
+   03-Apr-2002  22:17  5.0.2195.5255    8,464  Ftpctrs2.dll     
+   03-Apr-2002  22:17  5.0.2195.5255    6,416  Ftpmib.dll       
+   03-Apr-2002  22:17  5.0.2195.5255  117,008  Ftpsvc2.dll      
+   04-Apr-2002  03:37  5.0.2195.5255  246,032  Httpext.dll      
+   03-Apr-2002  22:17  5.0.2195.5255    9,488  Httpmib.dll      
+   03-Apr-2002  22:17  5.0.2195.5255   56,592  Httpodbc.dll     
+   03-Apr-2002  22:17  5.0.2195.4966  121,104  Idq.dll          
+   03-Apr-2002  22:17  5.0.2195.5283   78,608  Iislog.dll       
+   03-Apr-2002  22:17  5.0.2195.5255  122,640  Iisrtl.dll       
+   03-Apr-2002  22:17  5.0.2195.5255   13,584  Infoadmn.dll     
+   03-Apr-2002  22:17  5.0.2195.5255  246,032  Infocomm.dll     
+   03-Apr-2002  22:17  5.0.2195.5255   62,736  Isatq.dll        
+   03-Apr-2002  22:17  5.0.2195.5247   46,352  Ism.dll          
+   03-Apr-2002  22:17  5.0.2195.5255   26,896  Mdsync.dll       
+   03-Apr-2002  22:17  5.0.2195.4661   76,560  Msw3prt.dll      
+   23-Mar-2002  00:36  5.0.2195.5247    6,416  Perfvd.exe       
+   22-Mar-2002  20:15                  19,178  Query.asp
+   22-Mar-2002  20:15                   5,571  Search.asp
+   21-Mar-2002  20:06  5.0.2195.5217    9,488  Spiisupd.exe     
+   03-Apr-2002  22:17  5.0.2195.5255   41,232  Ssinc.dll        
+   03-Apr-2002  22:17  5.0.2195.5255    7,440  W3ctrs.dll       
+   03-Apr-2002  22:17  5.0.2195.5269  348,944  W3svc.dll        
+
+NOTE: Due to file dependencies, this update may contain additional files. This
+update requires Windows 2000 Service Pack 2 (SP2) or SP1.
+
+Internet Information Server 4.0
+-------------------------------
+
+Before you apply this update, backup your metabase. For additional information,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q300675 HOW TO: Create a Metabase Backup by Using Internet Information Server
+   4.0 in Windows NT
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload the Q319733 Package now
+   (http://www.microsoft.com/ntserver/nts/downloads/security/q319733/default.asp)
+
+Release Date: April 10, 2002
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+Perform the following steps to avoid the need to restart your computer:
+
+NOTE: Although you can avoid the need to restart your computer after applying
+this patch, the computer will NOT be considered patched and protected until
+after a restart. Unlike in Windows 2000 (IIS 5), in Windows NT 4.0 (IIS 4) the
+older .dll files are not automatically updated. The steps to avoid a restart
+should only be taken if you want to apply more than one patch before you restart
+the computer, and should always be followed by a restart.
+
+1. Stop all IIS services.
+
+2. Install the patch with the hotfix with "/z" switch.
+
+3. Restart the IIS services.
+
+The Q319733 package supports the following switches:
+
+   -x Extract the files for later installation
+   -y Perform uninstall (only with /m or /q)
+   -f Force apps closed at shutdown
+   -n Do not create uninstall directory
+   -z Do not reboot when update completes
+   -q Quiet Mode -- no user interface
+   -m Unattended mode
+   -l List installed hotfixes
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
+   Date         Time   Version     Size     File name
+   ----------------------------------------------------
+   26-Mar-2002  21:53  4.2.775.1   214,544  Adsiis.dll       
+   26-Mar-2002  21:53  4.2.775.1   330,672  Asp.dll          
+   02-Apr-2001  19:55  4.0.2.4701  593,976  Fp4autl.dll      
+   26-Mar-2002  21:52  4.2.775.1    81,888  Ftpsvc2.dll      
+   26-Mar-2002  21:52  4.2.775.1    55,392  Httpodbc.dll     
+   13-Jul-2001  19:14  5.0.1782.4  193,296  Idq.dll          
+   26-Mar-2002  21:53  4.2.775.1    98,912  Iischema.dll     
+   26-Mar-2002  21:51  4.2.775.1    63,472  Iislog.dll       
+   26-Mar-2002  21:51  4.2.775.1   185,792  Infocomm.dll     
+   26-Mar-2002  21:51  4.2.775.1    29,520  Iscomlog.dll     
+   26-Mar-2002  21:55  4.2.775.1    54,560  Ism.dll          
+   26-Mar-2002  21:53  4.2.775.1    31,872  Mdsync.dll       
+   26-Mar-2002  21:56  4.2.775.1     9,680  Schmupd.exe      
+   26-Mar-2002  21:52  4.2.775.1    38,256  Ssinc.dll        
+   26-Mar-2002  21:52  4.2.775.1    25,360  Sspifilt.dll     
+   26-Mar-2002  21:52  4.2.775.1   230,592  W3svc.dll        
+   26-Mar-2002  21:52  4.2.775.1    88,032  Wam.dll                  
+
+NOTE: Due to file dependencies, this update may contain additional files. This
+update requires Windows NT 4.0 Service Pack 6a (SP6a).
+
+Windows NT Server 4.0, Terminal Edition
+---------------------------------------
+
+Internet Information Server 4.0 is part of the Windows NT 4.0 Option Pack which
+is not supported on Windows NT Server 4.0, Terminal Server Edition. Patches for
+IIS 4.0 have been provided as part of the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP) only for customers who have installed the
+Option Pack to protect their computers during the migration to a supported
+operating system. For additional information about the SRP, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+   Package
+
+Additional query words: security_patch kbtsesrp
+
+======================================================================
+Keywords          : kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbWinXPpreSP1fix kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis510
+Version           : :4.0,5.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

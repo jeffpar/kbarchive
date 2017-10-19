@@ -1,0 +1,83 @@
+DOCUMENT:Q142551  24-MAR-2000  [foxpro]
+TITLE   :FIX: No Carriage Return Between RI Code and Appended Code
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using "APPEND PROCEDURES FROM <Program File>" will append code to the
+stored procedures section of a database. Unfortunately, a carriage return is not
+placed between the last line of the Referential Integrity (RI) generated code
+and the first line of the appended code.
+
+WORKAROUND
+==========
+
+Use either of the following two workarounds:
+
+ - Place a carriage return on the first line of <Program File> code.
+
+-or-
+
+ - After appending code to the stored procedure, open the stored procedure of
+   the database, and enter the needed carriage return manually.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft Visual
+FoxPro version 3.0b for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open a database.
+
+2. Bring up the RI builder, and do something so that it generates some code in
+   the stored procedures.
+
+3. Type the following command in the Command window:
+
+   " APPEND PROCEDURES FROM <Program File> " (without the quotation marks)
+
+4. Examine the stored procedures. A carriage return is not placed between the RI
+   generated code and the appended code.
+
+Additional query words: VFoxWin buglist3.00 fixlist3.00b
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

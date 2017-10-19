@@ -1,0 +1,83 @@
+DOCUMENT:Q85741  11-OCT-1999  [win95x]
+TITLE   :Set Default Directory Starting Applications from Command Line
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Microsoft Windows version 3.1 and a Windows-based application
+simultaneously from the MS-DOS command prompt, the application default directory
+will vary depending on whether or not you specify a path for the application.
+This behavior differs from that of Windows 3.0.
+
+MORE INFORMATION
+================
+
+The following examples demonstrate the behavioral differences between Windows
+3.0 and 3.1 when you start Windows and a Windows-based application
+simultaneously from the MS-DOS command prompt.
+
+Example 1
+---------
+
+This example assumes you are at the MS-DOS command prompt and the current
+directory is C:\DOCS. The following command line starts Windows and Write. The
+default directory for Write will be C:\DOCS, the same as the current directory
+at MS-DOS before you start Windows. This behavior is true for both Windows 3.0
+and 3.1. Type the following at the MS-DOS command prompt:
+
+   win write.exe
+
+Example 2
+---------
+
+This example assumes you are at the MS-DOS command prompt and the current
+directory is C:\DOCS. The following command line starts Windows and Write
+(WRITE.EXE). The default directory will be different depending on the version of
+Windows being used (see below).
+
+   win c:\windows\write.exe
+
+For Windows 3.0, the default directory for Write will be C:\DOCS, the same as the
+current directory at MS-DOS before starting Windows.
+
+For Windows 3.1, the default directory for Write will be C:\WINDOWS, the same as
+the directory specified for the WRITE.EXE file.
+
+The default directory information applies to all applications started
+simultaneously with Windows from the command line; however, some applications
+such as Word version 2.0 for Windows have an .INI file setting that will
+override the default directory provided by Windows.
+
+Additional query words: 3.10 3.1 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

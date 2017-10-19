@@ -1,0 +1,70 @@
+DOCUMENT:Q149683  30-JUL-2001  [sms]
+TITLE   :PCM Appears Blank on Startup When "Offer After" Not Expired
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The Windows Package Command Manager (PCM) may display itself with a blank list of
+package items when initialized. Everything appears to operate normally, but the
+user may not understand why PCM displayed itself when there are no packages
+available to install.
+
+CAUSE
+=====
+
+If a package is distributed to a client, regardless of the value of the "offer
+after" time/date, PCM will consider the package to be in a pending state.
+
+The behavior listed above will occur when there are no other packages pending
+that have expired "offer after" time/dates. PCM will read the client's
+instruction (*.ins) file during initialization and during its scheduled polling
+intervals. If it detects that there are packages pending, it will display its
+window.
+
+PCM will then enumerate the packages listed in the client's INS file, and if the
+"offer after" date has expired, it will display the packages in the window. If
+no packages have expired "offer after" time/dates, the PCM window will appear
+blank.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. This problem was corrected in Systems Management Server
+version 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

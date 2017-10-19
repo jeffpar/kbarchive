@@ -1,0 +1,92 @@
+DOCUMENT:Q171702  16-OCT-1999  [msnetwork]
+TITLE   :MSN Prompts for SMTP and POP3 Mail Servers
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3,2.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to read an e-mail message in MSN, The Microsoft Network, or
+send an e-mail message from MSN, Microsoft Internet Mail may open and you may be
+prompted to enter the names of your SMTP and POP3 mail servers.
+
+You may also receive the following error message:
+
+   The mail server name cannot be found. Please check your Internet Mail
+   configuration, network connection and TCP/IP configuration and retry. If this
+   persists, contact your LAN administrator or Internet provider.
+
+CAUSE
+=====
+
+Microsoft Internet Explorer may be configured to use Internet Mail to send and
+receive e-mail messages. Internet Mail and Outlook Express are not compatible
+with MSN 2.0 or earlier.
+
+RESOLUTION
+==========
+
+Configure Internet Explorer to use Windows Messaging or Microsoft Outlook to
+send and receive e-mail messages. To do so, use the following steps:
+
+1. Right-click the Internet icon on the desktop, and then click Properties.
+
+2. Click the Programs tab.
+
+3. In the Mail box, click Windows Messaging or Microsoft Outlook.
+
+4. Click OK.
+
+MORE INFORMATION
+================
+
+Internet Mail and News requires an SMTP/POP3 mail server. MSN 2.0 does not
+currently offer SMTP/POP3 mail services.
+
+If you want to use Internet News and Mail or Outlook Express with MSN, you need
+to upgrade to MSN version 2.5. For more information about this issue and about
+installing the latest version of MSN, please see the following articles in the
+Microsoft Knowledge Base:
+
+   Q174810 Can I Use Outlook Express Without Upgrading to MSN 2.5?
+
+   Q173439 How to Configure Internet Mail for The Microsoft Network 2.5
+
+   Q174200 How to Install The Microsoft Network Version 2.5
+
+   Q159037 MSN Installation and Setup Questions & Answers
+
+   Q159870 Questions and Answers About Setting Up the New MSN
+
+
+Additional query words: outexw95
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN120
+Version           : WINDOWS:1.2,1.3,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

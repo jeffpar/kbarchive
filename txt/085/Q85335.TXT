@@ -1,0 +1,59 @@
+DOCUMENT:Q85335  31-OCT-1999  [pcmail]
+TITLE   :FAX: Description of Fax Gateway Component
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, version 3.0 
+-------------------------------------------------------------------------------
+
+The gateway component of Microsoft Mail Gateway to Fax allows the
+administrator of the gateway postoffice to administer the Fax Gateway,
+enter fax addresses, and set up audit information.
+
+The gateway component must be installed on the gateway postoffice
+before the access component is installed.
+
+The gateway component also contains the gateway executable program,
+FAXGTW.EXE, which is run on the dedicated gateway PC.
+
+REFERENCES
+==========
+
+The "A Brief Introduction" chapter of the "Microsoft Mail Gateway to Fax
+Administrator's Guide"
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+   "gateway" (without the quotation marks) and "component" (without the
+   quotation marks) and "pcmail" (without the quotation marks)
+
+
+Additional query words: 3.00 2.1a pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

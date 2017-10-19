@@ -1,0 +1,57 @@
+DOCUMENT:Q117841  22-DEC-1999  [powerpt]
+TITLE   :Avoiding Background Palette Flash When Viewing AVI Files
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:1.0,1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Video for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a video clip or any graphic image is the active window, the palette for
+that image is applied to the entire screen. This changes the appearance of other
+items currently displayed on the screen.
+
+CAUSE
+=====
+
+If two or more graphic files with different palettes are displayed at the same
+time, the screen flashes as the active palette is applied to the graphic in the
+inactive window. If the two palettes are very different from one another, the
+inactive window looks distorted.
+
+WORKAROUND
+==========
+
+The only way to prevent this problem is to use the same palette in all images
+that are viewed simultaneously on the screen.
+
+Additional query words: 1.00 1.10 palette flash vfw avi
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo100 kbVideo110
+Version           : WINDOWS:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

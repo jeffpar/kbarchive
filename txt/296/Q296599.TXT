@@ -1,0 +1,64 @@
+DOCUMENT:Q296599  21-APR-2001  [mspress]
+TITLE   :Daylight Saving Time Bug in Resource Kit Utilities NOW.EXE and S
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows 2000 Server Resource Kit ISBN 1-57231-805-8 
+ - MSPRESS Microsoft Windows NT Server 4.0 Resource Kit, Supplement Four ISBN 0-7356-0837-7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are using NOW.EXE or SOON.EXE from one of the Resource Kits listed above,
+the wrong time may be reported after the Daylight Saving time change has
+occured. This problem only occurs when the Daylight Savings Time change falls on
+April first.
+
+MORE INFORMATION
+================
+
+Microsoft has created new versions of NOW.EXE and SOON.EXE that will correct the
+problem. The updated versions of these utilities are available for download from
+the following Microsoft FTP site:
+
+   ftp://ftp.microsoft.com/reskit/win2000/
+
+Microsoft has confirmed this to be a problem with the utilities in the Resource
+Kits that are listed at the beginning of this article. For further information
+on using these utilities, please refer to the Resource Kit documentation.
+
+Additional information on the source of this problem can be found in the
+following Knowledge Base article.
+
+   Q214661 FIX: Daylight Savings Time Bug in C Run-Time Library
+
+Additional query words: win2000 w2k reskit server tools RKBook 1-57231-805-8 0-7356-0837-7
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

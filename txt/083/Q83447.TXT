@@ -1,0 +1,76 @@
+DOCUMENT:Q83447  05-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Cannot Read Drive I or Drive I Does Not Exist
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Use of the MS-DOS versions 4.x GRAPHICS.COM file in your AUTOEXEC.BAT file may
+cause one of the following error messages to appear in Windows 3.1 File
+Manager:
+
+   Cannot read drive I
+
+   -or-
+
+   Error reading drive I
+
+   -or-
+
+   Drive I does not exist
+
+CAUSE
+=====
+
+Some applications, such as Harvard Graphics, install GRAPHICS.COM. If you are
+using MS-DOS 4.x, this error may occur after you install Windows 3.1.
+
+If you choose the OK button when the error appears, File Manager displays all of
+the legitimate drive icons, but the files within the subdirectories are
+inaccessible.
+
+This error does not occur with later versions of MS-DOS.
+
+
+WORKAROUND
+==========
+
+To correct the problem, remove the reference to the MS-DOS 4.x GRAPHICS.COM file
+from the AUTOEXEC.BAT file.
+
+KBCategory: kbtool kberrmsg
+KBSubcategory: win31 wfw wfwg
+
+Additional query words: doesn't access 3.10 error reading directory drive 1 does not exist I
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

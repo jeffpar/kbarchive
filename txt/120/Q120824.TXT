@@ -1,0 +1,56 @@
+DOCUMENT:Q120824  17-DEC-2000  [win95x]
+TITLE   :Word 2.x for Windows Doesn't Load Files from UNC Path w/Novell
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Microsoft Word 2.x for Windows, you cannot load files using
+a universal naming convention (UNC) path specification.
+
+CAUSE
+=====
+
+This problem occurs when you are using the Microsoft Client for NetWare Networks
+as one of the network clients in Windows 95. Word 2.x for Windows recognizes
+that NetWare is present and translates the UNC names to the Novell NetWare
+naming convention, which is incompatible with the Windows 95 method of network
+communications, the server message block (SMB) data structure.
+
+RESOLUTION
+==========
+
+To correct this problem, either update Word for Windows to version 6.0, or
+remove the Microsoft Client for NetWare Networks component.
+
+Additional query words: 3rdparty 6.00 6.00a 6.0a uninstall transforms changes
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

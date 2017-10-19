@@ -1,0 +1,70 @@
+DOCUMENT:Q143423  11-JAN-2001  [vbwin]
+TITLE   :DOCERR: Columns Collection Does Not Have a Font Property
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to set or read the Font property of a column in a DBGrid control
+results in error 438 - "Object doesn't support this property or method."
+
+RESOLUTION
+==========
+
+The individual columns of the DBGrid control cannot be set to a specific font.
+The column objects of the DBGrid control do not support this property. Page 138
+of the "Microsoft Visual Basic Language Reference," as well as the online help
+incorrectly document "Font" as being a property of the individual columns of the
+Columns collection.
+
+Use the Object Browser to determine what properties are supported by an object.
+To launch the Object Browser, when Visual Basic is running, click the F2 key, or
+click the Object Browser on the View menu.
+
+To determine what properties are supported by the DBGrid control, select the
+MSDBGrid - Apex Data Bound Grid Library from the Libraries / Project drop-down
+combo box. In the Classes / Module list, select Column. The methods and
+properties supported by this object are listed on the right.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

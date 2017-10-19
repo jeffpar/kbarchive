@@ -1,0 +1,70 @@
+DOCUMENT:Q157612  14-NOV-2000  [word97]
+TITLE   :WD97: No Warning When You Edit EPS Image (Image Converted)
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click an EPS picture in a Word document, you do not get a
+warning message indicating the picture contains embedded PostScript information.
+If you convert the picture to a Drawing Object, you lose the PostScript
+information in the file and the picture will not print to a PostScript printer.
+
+This problem occurs when you attempt to edit an EPS image stored in a document
+converted from Word 6.x or 7.x. This problem does not occur when you insert the
+image into a Word 97 document and then attempt to edit the image.
+
+
+CAUSE
+=====
+
+The Word 97 EPS graphics filter is not analyzing the embedded image to determine
+whether it contains embedded PostScript information.
+
+WORKAROUND
+==========
+
+To work around this problem, insert or reinsert the PostScript image in the
+document after you convert it to Word 97.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+This problem has been corrected in Word 2000.
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

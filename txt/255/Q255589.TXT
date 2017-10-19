@@ -1,0 +1,75 @@
+DOCUMENT:Q255589  23-OCT-2000  [winnt]
+TITLE   :Common Name Connector Space Is Not Synchronized with the Connect
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:metadirectory Zoomit MMS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The connector space common name is not synchronized with the connected directory
+and metaverse common names.
+
+For example, when you use the Account Joiner to join an unconnected connector
+space object to a metaverse object, if you search the metaverse (by common
+name), you may not receive the hits you expect because the common name attribute
+has not been populated in the connector space.
+
+CAUSE
+=====
+
+This issue occurs because the attribute assignment rules for the common name
+have not been implemented in the connector space construction template. The
+common name attribute is not assigned to the connector space record in the
+connector space construction template (zcDsiAliasThingConstruction) by default.
+
+RESOLUTION
+==========
+
+To resolve this issue, upgrade to MMS 2.2.
+
+To work around this issue, ensure that the following assignments are made in the
+connector space construction template (zcDsiAliasThingConstruction):
+
+   $cs.cn = $cd.cn
+
+This workaround sets the common name attribute of the connector space object to
+the connected directory's common name attribute.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Metadirectory Services
+2.1.
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : metadirectory Zoomit MMS 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

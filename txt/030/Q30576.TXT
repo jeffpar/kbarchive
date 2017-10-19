@@ -1,0 +1,90 @@
+DOCUMENT:Q30576  04-MAY-2001  [masm]
+TITLE   :Fix-Up Overflow Caused By Extrn Statements and .Fardata
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following assembler modules produce a fix-up overflow error message during
+linking.
+
+When linking these two modules together, the .fardata-simplified segment
+directive will cause a link-error fix-up overflow.
+
+Every module with a .fardata segment is defining a different .fardata segment.
+The linker will keep the segments separate. Therefore, declaring the fvar
+variable external in module 2 generates the problem. The extrn far data item,
+fvar, should be declared outside the .fardata segment.
+
+MORE INFORMATION
+================
+
+Module 1
+
+   .model large
+   .stack
+   .data
+   public gvar
+   .fardata
+   public fvar
+   fvar  db  55h
+
+   .code
+   extrn t2:proc
+   start: mov ax,@DATA
+          mov ds,ax
+          mov ax,@FARDATA
+          mov es,ax
+
+          call dword ptr t2
+   end start
+
+Module 2
+
+   .model large
+   .data
+   extrn gvar:byte
+   .fardata
+   extrn fvar:byte
+
+   .code
+       public t2
+   t2  proc   far
+       mov bl, es:fvar
+       ret FAR
+   t2  endp
+       end
+
+Additional query words: 5.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510
+Version           : :5.1
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q246471  16-NOV-2001  [exchange]
+TITLE   :XFOR: GWise Proxy Macro on Exchange Server CD Doesn't Work w/ 5x
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample macro for granting proxy access on individual Novell GroupWise
+mailboxes, Proxy.wcm, was written for use with the Novell GroupWise 4.x client
+and will not run on a Novell GroupWise 5.x client.
+
+This macro is included on the Microsoft Exchange Server version 5.5 CD-ROM and
+can be found in the following directory from the root of the CD-ROM:
+
+   \SERVER\MIGRATE\TOOLS\GWISE
+
+To manually set the proxy mailbox for migration purposes from each GroupWise 5.x
+client, follow these steps:
+
+1. On the File menu, click Proxy.
+
+2. Click the Address Book button next to Name.
+
+3. Select the user to which you want to give the proxy rights, and then click OK
+   twice to apply the changes.
+
+MORE INFORMATION
+================
+
+The Groupwise 4.x macro does not work with Groupwise 5.x clients because
+Groupwise 5.x clients do not support macros. For information about using a
+Novell GroupWise macro to grant proxy access rights, refer to Chapter 10,
+"Migrating from Novell GroupWise" in the Microsoft Exchange Server Migration
+Guide.
+
+If you encounter issues using a macro to set proxy access, refer to your Novell
+GroupWise documentation or contact Novell GroupWise technical support.
+
+Additional query words: migrate
+
+======================================================================
+Keywords          : exc55 
+Component         : GroupWise
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

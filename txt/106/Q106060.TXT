@@ -1,0 +1,81 @@
+DOCUMENT:Q106060  26-JUL-2001  [visualc]
+TITLE   :FIX: No "Save Changes" Prompt After Editing a String Table
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbResourceEd kbVC kbVC100bug kbVC150fixkbbuglist kbfixlist
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The App Studio, used with:
+    - Microsoft Visual C++, version 1.0 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In some situations, App Studio does not detect that a string table resource or
+cursor hotspot has been modified, and therefore fails to display a "Save
+Changes" prompt. The problem occurs when the user exits App Studio from either
+the File or the System menu. If the user has not explicitly saved the string
+table or cursor, any changes made to it are lost.
+
+RESOLUTION
+==========
+
+To ensure that changes are saved, explicitly save them by choosing Save from the
+File menu or by closing the string table editor or cursor editor after making
+changes. When you close the string table editor or cursor editor before exiting,
+App Studio will display the Save Changes prompt as expected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This bug was corrected in App Studio version 1.5, included with
+Microsoft Visual C++ for Windows version 1.5.
+
+MORE INFORMATION
+================
+
+Perform the following four steps to demonstrate the problem:
+
+1. Open a project with a string table or cursor resource.
+
+2. Invoke App Studio and modify one of the string table entries or change the
+   cursor hotspot.
+
+3. Choose Exit from the File menu or Close from the System menu without closing
+   the string table editor or cursor editor. Note that no "Save Changes" prompt
+   is displayed.
+
+4. Reopen App Studio and observe that the string table or hotspot change was
+   lost.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbResourceEd kbVC kbVC100bug kbVC150fix kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

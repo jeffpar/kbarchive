@@ -1,0 +1,67 @@
+DOCUMENT:Q241003  07-DEC-2000  [mspress]
+TITLE   :Microsoft Works Suite 2000 Step by Step Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Works Suite 2000 Step by Step ISBN 0-7356-0836-9 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Works Suite 2000 Step by Step,
+ISBN 0-7356-0836-9.
+
+The following topics are covered:
+
+ - CD-ROM: Audio Problems with Money Setup.AVI
+
+MORE INFORMATION
+================
+
+CD-ROM: Audio Problems with Money Setup.AVI
+-------------------------------------------
+
+There are two audio problems with the Money Setup.avi file that is included on
+the CD-ROM:
+
+1. When you first play this file, the first word, "Welcome", is cut off.
+2. The Money Setup.avi uses several different narrator voices. The last portion
+   of the .avi switches to a male voice that can barely be heard, but not
+   understood - even when the speaker volume is turned to its maximum.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: EUBOOK EUSBS
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

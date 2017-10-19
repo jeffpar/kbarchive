@@ -1,0 +1,56 @@
+DOCUMENT:Q306001  21-AUG-2001  [msdn]
+TITLE   :BUG 14373: Inline Sign-In Page Does Not Render w/ Netscape
+PRODUCT :Microsoft Developer Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Users of Netscape Navigator 4.7 may not be able to see the inline sign-in
+feature of Passport 2.0.
+
+CAUSE
+=====
+
+The settings on the partner site that is displaying the page cause this problem.
+If the partner site uses buffering, the inline sign-in page does not render with
+Netscape Navigator 4.7.
+
+RESOLUTION
+==========
+
+Add "Response.Buffer=false" (without the quotation marks) to the top of the
+partner inline sign-in page.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport200 kbPassportSearch
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

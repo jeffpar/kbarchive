@@ -1,0 +1,73 @@
+DOCUMENT:Q199171  24-OCT-2000  [exchange]
+TITLE   :XFOR: Notes Custom Recipients Not Synchronized w/out Domain Name
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5, on platform(s):
+    - the hardware: DEC Alpha 
+    - the hardware: Intel x86 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Lotus Notes Person documents are not included in directory synchronization
+(dirsync) if the Domain field is not populated.
+
+CAUSE
+=====
+
+Dirsync does not pick up anything without a domain field.
+
+WORKAROUND
+==========
+
+Populate the Domain field on all custom recipients created on the Notes side.
+
+MORE INFORMATION
+================
+
+Release notes state
+-------------------
+
+Known Limitations
+Microsoft Exchange Connector for Lotus Notes
+When adding non-Lotus Notes users to a Lotus Notes Name and Address Book (for
+example, users with Internet, X.400, or cc:Mail addresses), you must specify a
+user name and a domain name. While Lotus Notes does not require this
+information, the connector uses it when propagating directory information to
+Microsoft Exchange Server. Specify the domain to which the connector is
+attached.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : winnt:5.5
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

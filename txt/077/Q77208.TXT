@@ -1,0 +1,88 @@
+DOCUMENT:Q77208  02-NOV-1999  [win95x]
+TITLE   :Windows 3.0 Err Msg: Unable to Run Setup for xxxxx Driver...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may receive the following error message when you try to set up your printer
+using Control Panel
+
+   Unable to run setup for xxxxxxxx driver, file is invalid.
+   Please reinstall printer.
+
+were xxxxxxxx represents eight-character printer driver filename.
+
+MORE INFORMATION
+================
+
+This error message can occur if one or more of the following conditions exist:
+
+ - The printer driver *.DRV is damaged or was designed to work with an earlier
+   version of Windows (2.x).
+
+ - The location of the driver *.DRV is in the Windows directory. The printer
+   driver should be in the Windows SYSTEM directory.
+
+ - The printer driver is compressed.
+
+NOTE: Several Windows 2.x applications install incorrect printer drivers in the
+Windows directory when trying to add or replace their own drivers.
+
+WORKAROUND
+==========
+
+Delete the printer driver (.DRV) file in the Windows directory:
+
+1. Verify that the correct printer driver (.DRV) is located in the Windows
+   SYSTEM directory.
+
+2. Delete the incorrect driver located in the WINDOWS directory.
+
+3. Run Control Panel.
+
+4. Choose the Printer icon.
+
+5. Select the printer driver and choose the Configure button.
+
+6. Choose the Remove button.
+
+7. Reinstall the printer driver.
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," for version 3.0 pages 158-163
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

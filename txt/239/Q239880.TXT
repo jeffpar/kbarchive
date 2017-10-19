@@ -1,0 +1,59 @@
+DOCUMENT:Q239880  30-JUL-2001  [homegame]
+TITLE   :NFL Fever 2000: Slow Video Frame Rate During First Plays of Game
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu msgame
+
+======================================================================
+SYMPTOMS
+========
+
+When you start Microsoft NFL Fever 2000, the video frame rate may be slow during
+the initial plays of the game, as in the following examples:
+
+ - Before and during the first kickoff in the game
+
+ - During the first play from scrimmage in the game
+
+CAUSE
+=====
+
+This behavior can occur if an STB Velocity 128 video adapter is installed in
+your computer.
+
+RESOLUTION
+==========
+
+To work around this issue, continue to play the game. After you complete the
+initial plays of the game, the video frame rate should increase until movements
+in the game appear smooth.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame nflfever nfl2k football framerate fps choppy
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu msgame 
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

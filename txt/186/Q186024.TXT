@@ -1,0 +1,94 @@
+DOCUMENT:Q186024  12-JUN-2001  [homegame]
+TITLE   :MTM2: Trucks Are Black and Black Boxes Surround Scenery Objects
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu msgame mtm2kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Monster Truck Madness 2, the trucks may be black and scenery
+objects may be surrounded by black boxes.
+
+CAUSE
+=====
+
+This behavior can occur if 3D hardware acceleration is enabled and the video
+driver installed in the computer is out of date or cannot correctly map the
+game's shadow and texture display features.
+
+This issue has been reported with the following display adapters:
+
+ - Matrox Millennium II
+ - STB Nitro 3D
+ - Diamond Stealth 2000
+
+
+RESOLUTION
+==========
+
+To resolve this issue, contact your hardware manufacturer to inquire if an
+updated video driver is available.
+
+For information about how to contact your hardware manufacturer, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+To determine the manufacturer and model of the display adapter installed in the
+computer, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Device Manager tab, click View Devices By Type.
+
+4. Double-click Display Adapters to expand the branch.
+
+5. Note the manufacturer and model of the display adapter listed in the Display
+   Adapters branch.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: msgame mtm2 blackscreen card dark square hole
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu msgame mtm2 kbfaq
+Technology        : kbGamesSearch kbMonsterTMSearch kbMonsterTM2
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

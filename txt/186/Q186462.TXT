@@ -1,0 +1,65 @@
+DOCUMENT:Q186462  10-AUG-2001  [winnt]
+TITLE   :DHCPLOC Should Not Be Run from DHCP Servers
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Dhcploc.exe utility in the Windows NT Resource Kit is designed to assist in
+determining what Dynamic Host Configuration Protocol (DHCP) servers are
+available to clients on a particular network segment. If you run Dhcploc.exe on
+a computer that is acting as a DHCP server, you may notice that the DHCP server
+no longer responds to all requests for IP addresses from DHCP clients.
+
+CAUSE
+=====
+
+The Dhcploc.exe utility listens for DHCP servers by taking DHCP packets off the
+IP stack. However, the utility has no means to reintroduce DHCP packets to the
+stack. Therefore, running this utility on a DHCP server will prevent DHCP
+packets from reaching the DHCP server service, and the DHCP server will appear
+not to respond.
+
+RESOLUTION
+==========
+
+Run Dhcploc.exe only from computers not acting as DHCP servers.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words: dhcploc rogue
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

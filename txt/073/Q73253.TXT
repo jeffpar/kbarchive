@@ -1,0 +1,100 @@
+DOCUMENT:Q73253  21-NOV-1999  [msdos]
+TITLE   :Removing Ontrack Disk Manager Partitions
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:3.3,4.0,4.01,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 3.3, 4.0, 4.01, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following procedure outlines the steps to remove Ontrack Disk Manager
+versions 3.3 through 4.21 partitions from a hard drive to allow replacement with
+MS-DOS FDISK partitions. The following script assumes that the first partition
+on the hard disk is marked as bootable. Please note that if another partition is
+marked as bootable, this procedure results in an unbootable system.
+
+MORE INFORMATION
+================
+
+1. Locate the Ontrack Disk Manager program DM.EXE, and start it by typing the
+   following command:
+
+   " dm /m " (without the quotation marks)
+
+2. Press P to enter the partitioning menu.
+
+3. Press D to choose delete partition.
+
+4. Disk Manager will prompt you with the message
+
+   Enter partition number (n):
+
+   where n equals the last partition number. Type in the number of the last
+   partition (for example, if there are three partitions, enter "3" (without the
+   quotation marks)).
+
+5. Press ENTER to accept the default. This removes the last partition on the
+   hard drive. You will see this partition removed from the list of partitions
+   at the top of the screen.
+
+6. Repeat steps 3-5 until only one partition remains on the list at the top of
+   the screen.
+
+   WARNING: Be careful not to delete all the partitions, which would leave you
+   without a boot drive. If this occurs, press R to return to main menu, and
+   respond NO to the following prompt
+
+   Write the above partition data to the disk?
+
+   by pressing N and then pressing the ENTER key.
+
+7. After all partitions except the boot partition have been deleted, press R to
+   return to the main menu.
+
+8. At the following prompt, press Y, then press ENTER.
+
+   Write the above partition data to the disk?
+
+9. Press ESC to exit Disk Manager.
+
+10. Press Y, then press ENTER key to verify that you want to exit Disk Manager.
+
+11. Press ENTER to reboot the machine.
+
+The hard drive is now ready to be partitioned using MS-DOS FDISK. This can be
+done with the current version of MS-DOS, or after updating to MS-DOS 5.0.
+
+The product included here, Disk Manager, is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: 3.30 4.00 4.01 5.00 dmdrvr.bin third-party 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS500 kbMSDOS330 kbMSDOS401
+Version           : MS-DOS:3.3,4.0,4.01,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

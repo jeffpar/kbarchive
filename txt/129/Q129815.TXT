@@ -1,0 +1,54 @@
+DOCUMENT:Q129815  30-JAN-2002  [winnt]
+TITLE   :LSA Secret Limitation Increased to 4096 in WinNT 4.0 and Win2000
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,3.1,3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 3.1, 3.5, and 3.51 have a limit of 256 local security authority (LSA)
+secrets. This limit has been increased to 4096 in Windows NT version 4.0 and in
+Microsoft Windows 2000.
+
+The client side of a trust relationship consumes one LSA secret. LSA secrets are
+used for other purposes (most notably, trust relationships and for saving
+service passwords), so you should not use all of them for trusts. It is best not
+to consume more than half of the LSA secrets for domain trust.
+
+Additional query words: 3.10 status_too_many_secrets ntlsa.h
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServSearch kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search kbWinAdvServSearch
+Version           : :2000,3.1,3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,64 @@
+DOCUMENT:Q94126  30-JUL-2001  [lanman]
+TITLE   :Using Etherlink II TP Network Card with Synoptics Hubs
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+When using Synoptics Hubs with 10-Base-T network cards such as the Etherlink II
+TP, the switch settings on the card need to be modified from their factory
+default settings to enable the card to work properly.
+
+MORE INFORMATION
+================
+
+Synoptics Hubs such as LattisNet models 3030 and 3305, the 2500 family of
+Workgroup Concentrators (models 2500, 2510, and 2530) date back to the pre-
+10-Base-T standard days. However, they are found in many Ethernet installations
+and thus need to be integrated into a 10-Base-T LAN.
+
+If you are using one of these hubs with an Etherlink II TP card, modify the
+following jumpers from their factory defaults to the setting indicated:
+
+                   Jumper    Factory      Synoptics
+Jumper            area      setting      setting
+---------------------------------------------------
+
+DC SIG           J4         OFF          ON
+
+LINK BEAT        J1         ON           OFF
+
+RX TH            J2         NORM         LOW
+
+XMIT             J3         NORM         LOW
+
+This will enable the TP card to transmit successfully using the Synoptics Hubs.
+
+Reference(s):
+
+"3COM Etherlink II TP Adapter Guide"
+
+Additional query words: 2.10 Synoptics Hubs link Guide
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

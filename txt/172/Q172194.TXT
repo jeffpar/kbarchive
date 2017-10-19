@@ -1,0 +1,56 @@
+DOCUMENT:Q172194  09-AUG-2001  [winnt]
+TITLE   :How to Determine If a Program Is 16-Bit or 32-Bit
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS NT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to determine whether a program is a 16-bit or 32-bit
+program.
+
+MORE INFORMATION
+================
+
+1. Press CTRL+ALT+DELETE to open the Windows NT Security dialog box.
+
+2. Click Task Manager.
+
+3. Click the Processes tab.
+
+4. On the Options menu, make sure that there is a check mark next to Show 16-Bit
+   Tasks. If there is no check mark, click Show 16-Bit Tasks.
+
+5. All 16-bit tasks are indented under Ntvdm.exe (along with Wowexec.exe). All
+   other tasks or processes are 32-bit.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : WINDOWS NT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

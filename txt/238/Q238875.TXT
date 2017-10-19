@@ -1,0 +1,90 @@
+DOCUMENT:Q238875  11-JUN-2002  [visualc]
+TITLE   :PRB: C2471 or LNK1140 Error with PDB File Limits
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbDebug kbLinker kbVC kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following errors are normally related to running into the module and size
+limits when a program database (PDB) file is created (a PDB file contains
+information used by the debugger; the file has a .pdb extension):
+
+Compiler Error:
+
+   C2471: cannot update program database
+
+Linker Error:
+
+   LNK1140 "too many modules for program database; relink with /PDB:NONE"
+
+CAUSE
+=====
+
+There is a limit of 4096 modules (.obj files) in a PDB file. The file also has a
+total size limit of approximately 64 MB.
+
+RESOLUTION
+==========
+
+There are several ways to reduce the size of PDB files:
+
+ - Build some of the source files with the /Zd switch (line numbers only).
+
+ - Build some of the source files as separate dynamic-link libraries (DLLs)
+   instead of static libraries.
+
+ - Build some of the source files without debug information.
+
+ - Try the compiler switch /Fd"myproject.pdb" (including the quotation marks).
+
+MORE INFORMATION
+================
+
+Note that the linker option /PDBTYPE:SEPT may have little affect in reducing the
+project's PDB file size. In Visual C++ 5.0, if you choose to use the /Fd switch,
+avoid using the linker option /PDBTYPE:SEPT if the PDB file name you choose is
+the same under compiler and linker options.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q121366 INFO: PDB and DBG Files - What They Are and How They Work
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbDebug kbLinker kbVC kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,76 @@
+DOCUMENT:Q195816  20-OCT-2000  [sna]
+TITLE   :RandomSponsor Setting Does Not Work on SNA Server Client for NT
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT SNA Server clients continue to select Sponsor servers randomly even
+after clearing the "Select Sponsor in Random order" option in the Ntconfig.exe
+client configuration tool.
+
+This problem only affects the Windows NT version of the SNA Server client.
+
+CAUSE
+=====
+
+The Ntconfig.exe utility of the SNA server Windows NT client incorrectly created
+a registry variable "RandomSponsors". The client's method of choosing a sponsor
+is actually controlled by a registry variable "RandomSponsor" with no "s" at the
+end.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0 and 4.0
+SP1. This problem was corrected in the latest SNA Server version 4.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+WORKAROUND
+==========
+
+To work around this problem, manually create and adjust the "RandomSponsor"
+value in the client's registry. For information on this value and how to use it,
+please see the following Microsoft Knowledge Base article:
+
+   Q160849 How the SNA Server Client Chooses a "Sponsor" SNA Server
+
+Additional query words: sponsor random ntconfig
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+Version           : WINDOWS:4.0,4.0 SP1
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,88 @@
+DOCUMENT:Q165233  14-NOV-2000  [word97]
+TITLE   :WD97: Word Loses Center Align When Saving to HTML
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbusage kbdta word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a document to HTML, Word will left-align text if both of the
+following are true:
+
+ - You applied a style called Address to the text.
+
+   -and-
+
+ - You applied center alignment to the text.
+
+CAUSE
+=====
+
+Word does not retain the center formatting of text that has the Address style
+applied.
+
+NOTE: Word imports the center formatting correctly when importing text surrounded
+by the <Address>...</Address> tags, but drops the center formatting
+when you save as (export to) HTML.
+
+WORKAROUND
+==========
+
+To work around this problem, use italic formatting and center the text instead
+of using the Address style. When you save the document using the HTML converter,
+Word will apply the italic <I>...</I>) tags and the center attribute
+to the paragraph tag surrounding the address text.
+
+1. Save your document as HTML.
+
+2. Select the text you want to format.
+
+3. On the Format menu, click Style.
+
+4. In the Styles list, click Normal, and then click Apply.
+
+5. With the text still selected, click Font on the Format menu.
+
+6. Under Effects, click to select the Italic check box. Click OK.
+
+7. To center the text, click the Center Align button on the Formatting Toolbar.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: 8.0 kbformat iaword
+
+======================================================================
+Keywords          : kbusage kbdta word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

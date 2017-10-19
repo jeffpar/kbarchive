@@ -1,0 +1,80 @@
+DOCUMENT:Q166686  09-AUG-2001  [winnt]
+TITLE   :English Text in Error Message on Non-English Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the RASDIAL utility is used to dial a non-existent entry on a non- English
+version of Windows NT 4.0, the following is displayed:
+
+   C:> rasdial bogus
+   Error from RasGetEntryProperties = 623        <-------- Problem
+
+   RAS-Fehler 623 - Telefoneintrag konnte nicht gefunden werden.
+
+   Weitere Hilfe zu diesem Fehler erhalten Sie folgendermaszen:
+           Geben Sie ein: 'winhlp32 rasphone.hlp'
+           Wahlen Sie die Index-Seite in der Windows-Hilfe aus, und geben
+           Sie dann
+   ein: 'Fehler 623'
+
+NOTE: The spelling of the following two words is changed from the original
+spelling because the Knowledge Base cannot display some of the characters:
+
+   folgendermaszen - the "sz" is used to represent the German
+   alphabetic character "ess zeht."
+
+   Wahlen - the letter "a" is used to represent the German alphabetic
+   Character "a umlaut."
+
+CAUSE
+=====
+
+This occurs because the text "Error from:" is hard-coded and not localized.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt nttcp
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbbuglist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

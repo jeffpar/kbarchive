@@ -1,0 +1,111 @@
+DOCUMENT:Q240871  03-MAY-2001  [visualc]
+TITLE   :BUG: Explicitly Specified Template Functions Not Overloaded
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbtemplate kbCompiler kbCPPonly kbLangCPP kbSTL kbVC kbVC500 kbVC500bug kbVC600 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If all the template parameters are not used in function arguments or return type
+of a template function, the template functions are not overloaded correctly.
+
+Please refer to the sample in the "More Information" Section for details.
+
+CAUSE
+=====
+
+The bug is the result of the way the compiler decorates template function names.
+Name Decoration uses the arguments and return type and doesn't use the
+explicitly specified template argument type. Therefore, all three template
+function instantiations receive the same decorated name, as seen in the sample
+code the "More Information" section.
+
+RESOLUTION
+==========
+
+Use dummy arguments to the function.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Please refer to the C++ Standard, section 14.8.1, for information on explicit
+template argument specification.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the problem:
+
+   #include<iostream>
+   //#define WORKAROUND
+   #ifdef WORKAROUND
+   template <class T>
+   void f(T dummy = 0)
+        {
+        std::cout <<typeid(T).name() <<std::endl;
+        }
+   #else
+   template <class T>
+   void f(void)
+        {
+        std::cout <<typeid(T).name() <<std::endl;
+        }
+   #endif
+
+   int main(void)
+        {
+        f<bool>();
+        f<char>();
+        f<int>();
+        return 0;
+        }
+
+   Output :
+   int
+   int
+   int
+
+Additional query words: STL
+
+======================================================================
+Keywords          : kbtemplate kbCompiler kbCPPonly kbLangCPP kbSTL kbVC kbVC500 kbVC500bug kbVC600 kbVC600bug kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q96529  18-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Help in Separate Files
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are multiple Help files for version 3.2 of Microsoft Mail Remote for
+Windows. Because they are not combined into a single Help file, searching for
+information can show different results in each file.
+
+MORE INFORMATION
+================
+
+Mail Remote for Windows ships in the United States with three separate Help
+files:
+
+ - MSMAIL.HLP: The standard Help file for Windows Mail.
+
+ - MSRMT.HLP: The online Help file for remote mailing issues.
+
+ - RMTPSS.HLP: A Help file created with information from calls to Microsoft
+   Product Support Services to aid with specific issues about using the product,
+   including information needed when you cannot get the product to start. This
+   has its own icon when installing Mail Remote for Windows.
+
+NOTE: There is additional technical help in the file named README.TXT which is
+useful for mail administrators. This file is also installed with an icon during
+Setup for easy viewing.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

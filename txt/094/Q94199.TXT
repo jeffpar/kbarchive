@@ -1,0 +1,64 @@
+DOCUMENT:Q94199  12-NOV-1999  [win95x]
+TITLE   :TaxCut for Windows Requires Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running Andrew Tobias' TaxCut for Windows (tax year 1992) under Windows
+versions earlier than version 3.1, you may receive the following error:
+
+   Cannot find COMMDLG.DLL.
+   Verify that the path is correct or insert in drive A:
+
+Andrew Tobias' TaxCut is a trademark of Meca Ventures, Inc. The package is
+updated each tax year. The currently released version is for tax year 1992 and
+is called Headstart TaxCut for Windows. This version, as all other tax-year
+versions, will have a final update shipped to the user before April 14th of the
+following year (1993).
+
+Trying to launch the program from within Windows 3.0 displays the following error
+message:
+
+   Cannot find COMMDLG.DLL.
+   Verify that the path is correct or insert in drive A:
+
+Neither solution works because this file is a Windows 3.1 file and does not exist
+in earlier versions of Windows. The program will not display a message
+indicating that it requires Windows 3.1 or later to run.
+
+The only solution to this problem is to upgrade to Windows 3.1 or change to
+TaxCut for MS-DOS.
+
+Additional query words: tax cut 3.00 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,81 @@
+DOCUMENT:Q265746  23-MAR-2001  [vbwin]
+TITLE   :PRB: eVB: Scrollbars Appear Incorrectly in Run Mode
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB kbDSupport kbVBM300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you place a small horizontal or vertical scrollbar on a form, the scrollbar
+appears blank or without arrows, depending on the size of the control.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This behavior occurs because of the way that Windows CE handles the painting of
+the control.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new HPC Pro or Pocket PC project in eMbedded Visual Basic. Form1 is
+   created by default.
+
+2. Add a vertical scrollbar to Form1.
+
+3. Add the following code to Form1:
+
+   Private Sub Form_Load()
+            VScroll1.Height = 450
+   End Sub
+
+4. Press the F5 key to run the project in emulation. Notice that no arrows
+   appear in the scrollbar.
+
+5. Change the code provided in Step 3 to read:
+
+   Private Sub Form_Load()
+            VScroll1.Height = 250
+   End Sub
+
+6. Press the F5 key to run the project. Notice that in the HPC Pro project you
+   get a white rectangle, while in the Pocket PC project no scrollbar appears on
+   the form.
+
+Additional query words: wce evb scroll bar scroll-bar
+
+======================================================================
+Keywords          : kbGrpDSVB kbDSupport kbVBM300 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

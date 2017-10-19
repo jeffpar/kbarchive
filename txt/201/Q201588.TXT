@@ -1,0 +1,81 @@
+DOCUMENT:Q201588  27-JUL-2001  [vbwin]
+TITLE   :BUG: Custom Mouse Pointer Changes Back to Default
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbVBp600bug kbGrpDSVB kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a custom mouse pointer is placed over a control's borders on a Visual Basic
+form, the pointer may change back to the default.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The following example uses a TextBox control, but this problem occurs with other
+controls as well. This example also uses a cursor file from the default install
+location for the Graphics option. These can be found in the
+\Common\Graphics\Cursors folder on the Visual Basic 6.0 CD. Make sure that the
+path is correct for a cursor file that is available to your system.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual Basic 6.0, create a new Standard EXE project. Form1 is created by
+   default.
+
+2. Place a TextBox control on Form1.
+
+3. Double-click the form to open the code window for Form1.
+
+4. Place the following code in the Form_Load event of Form1.
+
+   Me.MousePointer = vbCustom
+   Set Me.MouseIcon = LoadPicture("C:\Program Files\Microsoft Visual Studio\Common\Graphics\Cursors\NS_04.CUR")
+
+5. Run the program.
+
+6. Move the mouse to hover over the border of the TextBox. The custom cursor
+   changes back to the default.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp600bug kbGrpDSVB kbDSupport kbCodeSnippet 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

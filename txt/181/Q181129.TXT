@@ -1,0 +1,236 @@
+DOCUMENT:Q181129  10-SEP-2001  [msnetwork]
+TITLE   :Err Msg: The Host Pop3.email.msn.com Could Not Be Found...
+PRODUCT :The Microsoft Network
+PROD/VER::2.51,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0,5.1,5.2
+OPER/SYS:
+KEYWORDS:kberrmsg kbtlc kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.51, 2.6, 5.0, 5.1, 5.2 
+ - Microsoft Outlook Express versions 4.0, 4.01, 4.01 Service Pack 1, 4.01 Service Pack 2, 5 for Windows 95 
+ - Microsoft Outlook Express versions 4.01 Service Pack 2, 5 for Windows 98 
+ - the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send and receive e-mail messages using Microsoft Outlook Express and
+you use an MSN, The Microsoft Network, e-mail account, you may receive the
+following error message:
+
+   The host 'pop3.email.msn.com' could not be found. Please verify that you have
+   entered the server name correctly. Account 'MSN Mail', Server:
+   'pop3.email.msn.com', Protocol: POP3, Port: 110, Secure(SSL): No, Socket
+   Error: 11001, Error Number: 0x800CCC0D
+
+NOTE: You may receive this error message even if you are using a different
+Internet Service Provider (ISP).
+
+CAUSE
+=====
+
+This behavior could be the result of
+
+ - No Internet Connection
+
+ - Corrupted Outlook Express e-mail settings
+
+ - Transmission Control Protocol/Internet Protocol (TCP/IP) files are damaged or
+   missing
+
+Note: Users who install Internet Explorer 5.5 over third party software by
+Zonelabs (www.zonelabs.com)--for example TrueVector and Zone Alarm--can also get
+a similar error message.
+
+RESOLUTION
+==========
+
+To resolve this issue, try these solutions in order.
+
+1. Make certain that you have an Internet connection
+----------------------------------------------------
+
+Can you connect to MSN.com? Click the Internet icon (it looks like two
+computer)in the Windows systray (by the clock) to see if you are connected.
+
+--------------------
+
+2. To restore corrupted Outlook Express e-mail settings
+-------------------------------------------------------
+
+1. In Outlook Express, click Tools, and then click Accounts.
+
+2. Under the Mail tab select the MSN email settings, click Remove, and then
+   click Yes.
+
+3. Click Add, and then click Mail.
+
+4. In the Display Name box, type your name and then click Next.
+
+5. In the E-mail Address box, type your MSN e-mail address, and then click Next.
+
+6. In the Incoming Mail (POP3 or IMAP) server box, type pop3.email.msn.com.
+
+7. In the Outgoing mail (SMTP) server box, type smtp.email.msn.com and click
+   Next.
+
+   --OR--
+
+   If you gain access to MSN through a third-party ISP or LAN (includeing DSL,
+   Cable modems or Satellite connections), type secure.smtp.email.msn.com and
+   then click Next.
+
+8. In the Internet Mail Account Name box, type MSN; in the Password box, type
+   your MSN Pasword, and then and select Remember Password, if you wish.
+
+9. Select Log on using Secure Password Authentication (SPA), click Next, and
+   then click Finish.
+
+10. Double-click the new MSN account to access its Properties.
+
+11. Click the Servers tab.
+
+12. Select the My server requires authentication box.
+
+13. Click the Settings button.
+
+14. Select Use same settings as my incoming mail server.
+
+15. Click the OK button.
+
+16. Click the Connections tab.
+
+17. If you connect to the Internet using only a Dial-up Connection, select the
+   Always connect to this account using box, select MSN Connection, and then
+   click OK.
+
+   --OR--
+
+   If you connect to the Internet using only a Local Area Network (LAN), select
+   the Always connect to this account using box, select Local Area Network, and
+   then click OK.
+
+   --OR--
+
+   If you connect to the Internet using both a LAN and a Dial-up Connection,
+   clear the Always connect to this account using box, and then click OK.
+   Note: In Microsoft Outlook Express 4.0 select Connect using and Internet
+   Explorer or a 3rd party dialer, and then click OK.
+
+18. Click the OK button, and then click the Close button.
+
+--------------------
+
+3. Remove and restore Dial-up Neworking, Dial-up Adapters, and TCP/IP components.
+---------------------------------------------------------------------------------
+
+To remove and restore Dial-up Neworking
+
+1. Double-click My Computer and click Dial-Up Networking.
+
+2. Right-click an MSN connection, and then click Delete. Repeat this step until
+   all MSN connections are deleted.
+
+3. Close the Dial-Up Networking window.
+
+4. Click Start, point to Find, and then click "Files or Folders".
+
+5. In the Named box, type pppmac.vxd, and then click Find Now.
+
+6. In the list of found files, right-click the Pppmac.vxd file, click Rename,
+   delete .vxd, and then type .old in its place.
+
+7. Repeat steps 5-6 to rename the following files:
+
+   - Splitter.vxd
+   - Vdhcp.386 
+   - Vtcp.386
+   - Vip.386
+   - Vnbt.386
+   - Winsock.dll
+   - Wsock.vxd
+
+8. Close the Find: Files Named window.
+
+9. Click Start, point to Settings, click Control Panel and then double-click
+   Add/Remove Programs.
+
+10. On the Windows Setup tab, click Communications, and then click Details.
+
+11. Clear Dial-Up Networking and click OK until you return to Control Panel.
+
+12. If LANtastic or Banyan VINES networking components are installed on your
+   computer, refer to your network administrator for instructions about how to
+   remove these components.
+
+13. Close Control Panel, and then restart the computer.
+
+To remove and restore Dial-up Adapters and TCP/IP components
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Network.
+
+2. If TCP/IP is installed (If TCP/IP is not installed, proceed to step 4.), for
+   each installed TCP/IP component, click TCP/IP, click Properties and write
+   down the properties of each TCP/IP setting, and then click OK.
+
+3. Click TCP/IP again, and then click Remove, repeating this step until all
+   TCP/IP components are removed.
+
+4. Click each Dial-Up Adapter component, click Remove, and then click OK.
+   If you are prompted to restart the computer, click No.
+
+5. Click Start, point to Settings, click Control Panel, and then double-click
+   Network.
+
+6. Click the Configuration tab and click Add.
+
+7. In the Select Network Component Type dialog box, click Adapter, and then
+   click Add.
+
+8. In the Manufacturers box, click Microsoft.
+
+9. In the Network Adapters box, click Dial-Up Adapter, and then click OK.
+
+10. In the Select Network Component Type dialog box, click Protocol, and then
+   click Add.
+
+11. In the Manufacturers box, click Microsoft.
+
+12. In the Network Adapters box, click TCP/IP, and then click OK.
+
+13. When you are prompted to restart your computer, click Yes.
+
+NOTE: If you are using Banyan VINES, make sure you are using the most recent
+drivers. Older drivers for Banyan VINES are not compatible with other network
+protocols. If necessary, refer to your network administrator for instructions
+about how to add the LANtastic or Banyan VINES networking components to your
+computer.
+
+Additional query words: 4.0 msnet msnetwork microsoft-net m.s.n. outexw95 ol98 olexpress kbimu
+
+======================================================================
+Keywords          : kberrmsg kbtlc kbmsn 
+Technology        : kbOSWinME kbOSWinSearch kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress98Search kbOutlookExpress95Search kbOutlookExpress401Win98SP2 kbOutlookExpress500Win98 kbOutlookExpress401Win95 kbOutlookExpress401Win95SP1 kbOutlookExpress401Win95Sp2 kbOutlookExpress500Win95 kbOutlookExpress400Win95 kbMSN520 kbMSN510 kbMSN500 kbMSN251 kbMSN260
+Version           : :2.51,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0,5.1,5.2
+Issue type        : kbprb kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

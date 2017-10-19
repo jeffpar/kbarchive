@@ -1,0 +1,85 @@
+DOCUMENT:Q156832  10-AUG-2001  [winnt]
+TITLE   :STOP Message when IBM Warp Client Connects to Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When IBM OS/2 Warp network clients connect to Windows NT 4.0, the Server service
+may fail with the following Blue Screen Trap data:
+
+   STOP: 0x0000000A (0x00002EE8, 0x00000002, 0x00000000, 0x8013A804)
+
+CAUSE
+=====
+
+The OS/2 network redirector still uses the server message block (SMB) Write
+Block Multiplexed (SMB MPX) to send larger amounts of data. Windows NT 4.0 does
+not correctly respond to this SMB and causes the server to fail.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Windows NT 4.0 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+SMB MPX comes into play when OS/2 is trying to send data from two processes over
+the same network connection at the same time (multiplexing).
+
+Windows NT does not support this SMB on connection-based traffic. Instead, when
+the server receives a request with SMB MPX, it responds with a message telling
+the client to switch back to standard SMB Writes. The client will switch modes
+and keep on working with no problems.
+
+Network performance studies have shown that SMB Raw Mode Reads and Writes provide
+better performance than MPX. This is why it is not supported under Windows NT.
+
+There is one exception to this, however. Windows NT does support SMB MPX when
+using IPX Direct Hosting. Direct hosting is only available with Microsoft
+clients, so it does not come affect OS/2 interoperability. However, the Windows
+NT 4.0 failure occurs when the client is told to switch to standard SMB Write.
+The functions to send the response back to the client do not fully account for
+IPX and non-IPX clients.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

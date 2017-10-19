@@ -1,0 +1,71 @@
+DOCUMENT:Q219178  10-AUG-2001  [winnt]
+TITLE   :SFM Macintosh Clients Print %%[Error: undefined...]%%
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Macintosh clients try printing to a print queue defined on an Windows NT
+Server 4.0 computer running Services for Macintosh, you may find that their
+print job appears in the print queue as it is being spooled, and then clears the
+queue as if it has actually finished printing.
+
+No errors will appear on the Windows NT Server computer or on the Macintosh
+client, which looks as if the document printed successfully. But, when viewing
+the printed output, the only thing printed on the page is:
+
+   %%[Error: undefined; OffendingCommand: Volume ]%%
+   %%[Flushing; rest of job (to end-of-file) will be ignored ]%%
+
+CAUSE
+=====
+
+This error may occur when Macintosh clients send print jobs to an SFM printer
+that is using drivers that are not made specifically for the model of printer
+being used; for example, using the HP LaserJet 4M driver for the HP LaserJet 4
+printer.
+
+RESOLUTION
+==========
+
+To work around this problem, make sure you have the correct drivers installed.
+
+MORE INFORMATION
+================
+
+Also make sure the Macintosh client has the latest Apple Laser Writer 8 driver
+installed.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

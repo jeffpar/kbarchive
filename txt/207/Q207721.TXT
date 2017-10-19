@@ -1,0 +1,64 @@
+DOCUMENT:Q207721  01-FEB-1999  [homegame]
+TITLE   :UA: No Start Button When You Attempt to Join Multiplayer Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Urban Assault, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to join a multiplayer game of Microsoft Urban Assault, the
+Start button may not be displayed on the Start Game screen after you click I Am
+Ready.
+
+CAUSE
+=====
+
+This behavior can occur if the host of the multiplayer game exits from the game
+before a client has joined the game, and then attempts to rejoin the multiplayer
+game as a client.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, the host of the multiplayer game must not
+exit from the game until a client has joined the game.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Urban Assault, version
+1.0.
+
+Additional query words: 1.00 msgame ua multiple
+
+======================================================================
+Keywords          : kbnetwork kbui kbimu msgame 
+Technology        : kbGamesSearch kbUrbanAssault
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

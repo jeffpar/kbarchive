@@ -1,0 +1,72 @@
+DOCUMENT:Q276350  12-NOV-2001  [homegame]
+TITLE   :Microsoft Casino: Common Sound Issues
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbsound kbimu msgame kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Casino, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes some common sound issues that you may experience when you
+play Microsoft Casino.
+
+MORE INFORMATION
+================
+
+Cannot Hear Game Sounds
+-----------------------
+
+If you cannot hear game sounds after you move the Game Sound Volume slider all
+the way to the right on the Game Options screen, quit and restart Casino.
+
+Cannot Hear Audio in the Casino Challenge Video Clip
+----------------------------------------------------
+
+When you turn down the music volume on the Game Options screen, you may not be
+able to hear the audio in the Casino Challenge video clip.
+
+To resolve this issue, move the Music Volume slider to the right, and then click
+OK ([GRAPHIC:the star and circle with the green check mark]).
+
+Cannot Hear Dealer Voices
+-------------------------
+
+When you move the Game Sound Volume slider all the way to the left (the zero
+setting) on the Game Options screen, you may not be able to hear dealer voices
+even though the Dealer Voice Volume slider is not set to zero.
+
+To resolve this issue, move the Game Sound Volume slider to a setting above zero,
+click OK ([GRAPHIC:the star and circle with the green check mark]), and then
+quit and restart Casino.
+
+Additional query words: 1.00 msgame mscasino quiet silent
+
+======================================================================
+Keywords          : kbsound kbimu msgame kbgraphxlinkcritical 
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbCasino
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

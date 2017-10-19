@@ -1,0 +1,48 @@
+DOCUMENT:Q66353  30-JUL-2001  [homegame]
+TITLE   :Description of TicTactics in the Windows Entertainment Pack
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Windows Entertainment Pack volume 1 game TicTactics is a variation of the
+traditional game Tic-Tac-Toe. There are three different boards from which to
+choose: 3 x 3, 3 x 3 x 3, and 4 x 4 x 4.
+
+The 3 x 3 is the standard line up, with three pieces in a row either
+horizontally, vertically, or diagonally. The 3 x 3 x 3 game is a bit more
+complicated. The object is the same; however, instead of two-dimensional
+horizontal, vertical, and diagonal rows, the game is three-dimensional. The 4 x
+4 x 4 game is even more difficult, allowing 16 squares and 70 possible winning
+rows.
+
+TicTactics allows three different levels of play, Beginner, Intermediate, and
+Expert. There is also the option of either a random player starting (you or the
+computer), blue always starting (you), or red always starting (the computer).
+The only way to occupy a square is by pointing to that square and clicking the
+mouse button. You can retrace your steps by clicking the opposite mouse button.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

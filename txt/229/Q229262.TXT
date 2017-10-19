@@ -1,0 +1,67 @@
+DOCUMENT:Q229262  16-JUL-1999  [homegame]
+TITLE   :Baseball 2000: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbref kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the minimum system requirements needed to play
+Microsoft Baseball 2000.
+
+MORE INFORMATION
+================
+
+To play Baseball 2000, you need:
+
+ - A Multimedia PC with a Pentium 133 MHz or faster processor with a 2 megabyte
+   (MB) video adapter (Pentium 200 MHz or faster processor with a Microsoft
+   DirectX 6.1-compatible 4 MB 3-D video adapter recommended).
+
+ - Microsoft Windows 95 or Windows 98 operating system.
+
+ - 32 MB of RAM.
+
+ - 100 MB of available hard disk space for a minimum installation (with an
+   additional 50 MB of available hard disk space for the swap file).
+
+ - Quad-speed or faster CD-ROM drive.
+
+ - Microsoft Mouse or compatible pointing device.
+
+ - DirectX 6.0-compatible sound card.
+
+ - Speakers or headphones required for audio.
+
+Additional query words: 1.00 msgame bball2000 bball2k sysreqs requires
+
+======================================================================
+Keywords          : kbref kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall2000
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

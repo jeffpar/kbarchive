@@ -1,0 +1,78 @@
+DOCUMENT:Q138912  17-DEC-2000  [win95x]
+TITLE   :Cannot Run Windows 95 Setup on Invisible Net Network
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Windows 95 Setup from a mapped network drive on an Invisible Net
+network, you receive the following error message:
+
+   You cannot check or repair drive <X>:
+
+If you run Setup with the /IS switch to prevent ScanDisk from being run, you
+receive the following error message:
+
+   Setup could not create files on your startup drive and cannot set up Windows
+
+CAUSE
+=====
+
+You cannot run Windows 95 Setup on an Invisible Net network because Invisible
+Net maps local drives as network drives and Setup cannot be directed to a
+network drive.
+
+RESOLUTION
+==========
+
+To set up Windows 95 in an Invisible Net environment, follow these steps:
+
+1. Copy all the Windows 95 Setup files to a local hard disk.
+
+2. Disconnect the workstation from the network.
+
+3. Run Setup without the /IS switch on the local drive.
+
+MORE INFORMATION
+================
+
+You can use Windows 95 with Invisible Net (version 3.54) once Windows 95 has
+been set up. However, you must use real-mode network drivers, and Invisible LAN
+is the only network client available in Windows 95.
+
+For additional information about Invisible Net or updated Invisible Net drivers,
+please contact Invisible Software.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

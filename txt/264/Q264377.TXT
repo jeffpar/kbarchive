@@ -1,0 +1,60 @@
+DOCUMENT:Q264377  08-FEB-2002  [winnt]
+TITLE   :Windows Services for UNIX Solaris SSOD for Sparc Only
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows Services for UNIX (SFU) versions 2.0 and 3.0 support two-way password
+synchronization with Solaris version 7.0. SFU supports only Windows to UNIX
+password synchronization in Solaris version 2.6. However, the included daemons
+only run on the Sparc platform.
+
+MORE INFORMATION
+================
+
+Windows SFU 2.0 and 3.0 include a Single Sign On daemon (SSOD) and a Password
+Authentication module (PAM) for several versions of UNIX. These daemons allow
+password synchronization for Windows and UNIX user accounts. The files for
+Solaris are:
+
+   ssod.so7 - Windows to UNIX component.
+   Pam_sso.so7 - UNIX to Windows component
+
+These daemons have been compiled to run on the Sparc platform only. Therefore,
+password synchronization with a Solaris 7 system on an Intel-based computer does
+not work.
+
+Additional query words: solar coaster solarcoaster
+
+======================================================================
+Keywords          :  
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch kbWinServiceUNIX300
+Version           : :2.0,3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

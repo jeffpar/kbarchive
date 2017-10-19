@@ -1,0 +1,72 @@
+DOCUMENT:Q274398  12-NOV-2001  [msnetwork]
+TITLE   :MSN Companion Entries Missing in Address Book
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Symptoms include the following:
+
+ - When the user goes to the Address Book, addresses that were previously
+   inputted are missing.
+
+ - When the user tries to re-type some of the missing addresses, an error
+   message appears stating that the address already exists.
+
+CAUSE
+=====
+
+This issue is caused by the MSN Companion address caching system.
+
+RESOLUTION
+==========
+
+1. Have the user unplug the device, and then plug it back in.
+
+2. After the device starts up again, the problem should be resolved.
+
+Note: You can also have the user wait until the next day and try again, but
+unplugging and restarting is preferred.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MSN Companion Version#1.0.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbprb kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

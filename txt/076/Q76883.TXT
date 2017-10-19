@@ -1,0 +1,65 @@
+DOCUMENT:Q76883  04-DEC-1999  [homemm]
+TITLE   :Performing a Search While Playing Atlas MIDI Anthems
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1991 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a search is performed while an anthem is playing in the Hammond Atlas, the
+current note being played will continue playing. This is especially noticeable
+if the search is very large. Microsoft is researching this problem and will post
+new information here as it becomes available.
+
+MORE INFORMATION
+================
+
+To reproduce the problem, use one of the following methods:
+
+1. Load the Atlas and play anthem.
+
+2. Perform a long search.
+
+   Result: The current note being played will linger until the Topics Found box
+   displays.
+
+   -or-
+
+3. Load the Atlas and play an anthem.
+
+4. Perform a search for a nonexistent word.
+
+   Result: When the "No Topic Found" message displays, the current note will
+   continue to play until you press OK.
+
+Additional query words: MIDI hang note 1.00 Viewer Usage err msg wbk 1991
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991
+Version           : :1991 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

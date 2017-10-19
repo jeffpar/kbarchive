@@ -1,0 +1,508 @@
+DOCUMENT:Q146239  17-DEC-2000  [win95x]
+TITLE   :Microsoft Windows 95 Service Pack 1 Admin.doc File (2 of 3)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the information in the Admin.doc file included
+with Microsoft Windows 95 Service Pack 1 (part 2 of 3).
+
+Note that this article reflects the text of a static document. Therefore, some of
+the information in this article may be outdated. For example, as of May 20,
+1996, Microsoft no longer maintains support forums on CompuServe.
+
+MORE INFORMATION
+================
+
+The following section is for system administrators who want to install the
+updates on:
+
+Multiple computers running Windows 95 A Windows 95 network installation site from
+which users can install Windows 95 A network site from which users are running
+Windows 95
+
+Notes to Administrators Instruct your users not to click Cancel during Setup, as
+doing so can cause Setup to be incomplete. This may be true even though a
+message is displayed stating that their system was updated successfully.
+
+If your users do cancel Setup by mistake, they can run Setup again. Your users
+might be prompted "Do you want to overwrite the file:" choosing "Yes To All"
+will resolve the problem. During Update the Service Pack version of Net.exe is
+also copied to Netpwl.exe. This file can be used if Net.exe is overwritten.
+Net.exe may be overwritten by network setup while adding or removing network
+components.
+
+The Update installation program changes the version of Windows 95 to 4.00.950a.
+
+Removing the update from a computer
+
+All updates except the Password List Update will be removed. The newer Password
+List Update must be preserved because the original Password List decryption
+program cannot read the new password list. If you would like to uninstall the
+Service Pack completely, you should reinstall Windows 95 from
+
+your original upgrade disk over the existing Windows 95 installation.
+
+Users should not attempt to cancel during the uninstall process. Otherwise they
+might get a message stating uninstall has completed successfully when actually
+uninstall has not completed. If your version of Windows 95 was installed by your
+PC Manufacturer (OEM version) and the version shown in the System properties in
+Control Panel is
+
+version 4.0.950a, then your PC already has all the core Service Pack 1 files
+installed by default. If you install the Service Pack 1 Updates over an OEM
+version 4.0.950a, and then uninstall it, the uninstallation routine will remove
+all the registry update entries (UPDxxxx) from the updates section. This does
+not affect operation of the operating system, and the uninstall will just
+replace the files with identical versions. These update
+
+registry keys are not used by the operating system, just by the Update
+Information Tool installed as part of the Service Pack and other updated files.
+The system version will remain 4.00.950a.
+
+To remove the update from a computer
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click the Install/Uninstall tab, select Windows 95 Service Pack 1, and then
+   click Add/Remove.
+
+4. Follow the instructions on your screen.
+
+Updating Multiple Computers Running Windows 95 If your users are running Windows
+95 from their hard disks (rather than from a network server), they can update
+their computers by double-clicking the Update file. This section explains
+several ways to make this file available to your users for easy installation.
+
+There are two versions of the Update file, to provide you with the flexibility to
+choose the amount of user interaction required to install the Update:
+
+Setup.exe is located in the \Admin\Componts\Updates\Prompted folder. The user is
+required to respond whether they would like to install the update. They also
+will be reminded to restart the system after the update has been installed.
+
+Sp1upd.exe is located in the \Admin\Componts\Updates\Silent folder. The user will
+see the File Copy interface, but will not be prompted to restart the system. The
+updates will take effect after restart.
+
+Note If you are using a server-based setup, or if you are running a shared
+installation of Windows 95 on a central server (for example, a remote IPL),
+
+see "Updating Computers that Are Running Windows 95 from a Network Server" later
+in this document.
+
+To make it easy for your users to install the Service Pack updates You can use
+one of the following methods:
+
+Embed the Update file in an e-mail message that you send to your users. In the
+message, instruct them to double-click it.
+
+Copy the Update file from the Service Pack 1 CD to a publicly available folder on
+your network server. Then, either you can: Embed a shortcut to the Update file
+(on the server) in an e-mail message to
+
+your users, and instruct them to double-click update file, or you can Instruct
+your users to connect the folder where you copied the Update file and
+double-click the file.
+
+Instruct your users to connect directly to the network server and double- click
+the Update file.
+
+Use Microsoft Systems Management Server or another automation tool to distribute
+and run the Update file. There is an SMS folder under \Admin\Tools to assist
+with the process.
+
+Incorporate the Update file into a network login script, so that when your users
+log in to your network, their systems are automatically updated.
+
+Use Apps.ini file and add/remove components. See the Microsoft Windows 95
+Resource Kit, Chapter 22, for more information about installing applications.
+There is also a sample Apps.ini file in the \Admin\Tools\Infgen\Addon\Extras
+folder on the Service Pack CD.
+
+Create a "Run Once" System Policy (Config.pol) on the login server that points to
+the Update file you want to run. See the Microsoft Windows 95 Resource Kit,
+Chapter 15, for more information about system policies. You should note that the
+update will attempt to run once each time a user logs in to the network until
+the policy is changed.
+
+Note If your site uses Microsoft Exchange and Microsoft Mail shared folders, each
+user must reconfigure Microsoft Exchange to use shared folders. For more
+information, see the second procedure in "Updating a Single Computer" earlier in
+this document.
+
+For more information about the Microsoft Systems Management Server and other
+automation tools, see the "Installation" chapter of the Microsoft Windows 95
+Resource Kit.
+
+Updating a Windows 95 Network Installation Site
+
+This section explains how to update a Windows 95 network distribution point-a
+network server from which users can install Windows 95. After you have updated
+the distribution point, future installations of Windows 95 using that network
+distribution point will include all the Windows95 Service Pack updates. (If your
+site uses shared folders with Microsoft Exchange and Microsoft Mail, any future
+installations of Windows 95 with Microsoft Exchange and Microsoft Mail will be
+properly configured to use shared folders.)
+
+To update a Windows 95 network installation site
+
+1. Open the \Admin\Tools\Infinst folder.
+
+2. Double-click the Infinst.exe file.
+
+3. In the Server Path dialog box, type the path to your Windows 95 network
+   installation site. Precede the path with two backslashes (\\). For example,
+   if your Windows 95 installation site is on a server named Products in a
+   shared subdirectory of the Windows directory, you would type:
+
+   " \\Products\Public\Windows " (without the quotation marks)
+
+4. In the Open dialog box, open the \Admin\Componts\Updates\Netsetup folder, and
+   then double-click the Updates1.inf file. (Do not double-click the Mapisvc.inf
+   file; doing so will cause Infinst.exe to fail.)
+
+Note When machines are installed from the installation site, the users will not
+be given the option to uninstall the Service Pack updates.
+
+Updating Computers that Are Running Windows 95 from a Network Server
+
+If your users are running Windows 95 from a network server rather than from
+
+their hard disks, you must use the procedures in this section to update their
+systems. (To use the procedures in this section, you must have run Netsetup to
+create a Windows 95 distribution directory on the network.)
+
+Note You should follow these instructions only if your users are running Windows
+
+95 from a network server. If your users are running Windows 95 from their hard
+disks, see "Updating Multiple Computers Running Windows 95" earlier in
+
+this document.
+
+You should not allow your users to install the Windows Service Pack 1 Updates
+using Setup.exe or Sp1upd.exe. This may cause Net.exe to be renamed to
+Netpwl.exe, which will prevent users from starting Windows 95.
+
+The following procedure copies all of the Service Pack update files onto your
+network server, and then updates your MSbatch.inf file to include the necessary
+updates to the Windows 95 registry.
+
+To update a Windows 95 sharepoint (from which users run Windows 95)
+
+1. Have your users shut down their computers. If a user is running Windows 95
+   from your network server during the update process, some files might not get
+   updated.
+
+2. Open the \Admin\Tools\Infinst folder.
+
+3. Double-click the Infinst.exe file.
+
+4. In the Server Path dialog box, type the path to the directory that contains
+   your network installation of Windows 95. Precede the path with two
+   backslashes (\\). For example, if your Windows 95 installation is on a server
+   named Products in a shared subdirectory of the Windows directory, you would
+   type:
+
+   \\Products\Public\Windows
+
+5. In the Open dialog box, open the \Admin\Componts\Updates\Netsetup folder, and
+   then double-click the Updates1.inf file. (Do not double-click the Mapisvc.inf
+   file; doing so will cause Infinst.exe to fail.)
+
+After updating your Windows 95 network sharepoint, you need to update each user's
+computer as well. To do this, have each user run the Sclntupd.exe file.
+Sclntupd.exe updates the user's Windows 95 registry and copies Net.exe to their
+startup drive. (Net.exe is required for network access when starting Windows 95
+from the network.)
+
+Note If your site uses Microsoft Exchange and Microsoft Mail shared folders, each
+user must reconfigure Microsoft Exchange to use shared folders. For more
+information, see "Updating a Single Computer" earlier in this document.
+
+For more information about the Microsoft Systems Management Server and other
+automation tools, see the "Installation" chapter of the Microsoft Windows 95
+Resource Kit.
+
+Tools for Windows 95
+
+Windows 95 Service Pack 1 provides several tools for use by system administrators
+and product support technicians:
+
+Windows 95 Support Assistant Batch Setup Version 2.0 INF Generator Tool Windows
+NT Server Management Tools for Windows 95 INF Installer Tool Update Information
+Tool
+
+Windows 95 Support Assistant The Windows 95 Support Assistant is a Help file
+developed by Microsoft Product Support Services (PSS) and Microsoft User
+Education. It contains the following information:
+
+Answers to the most frequently asked questions about Windows 95
+
+Sections of the Microsoft Windows 95 Resource Kit that explain how to use Windows
+95 with Novell NetWare and other networks
+
+Over 100 Microsoft Knowledge Base articles, written by PSS engineers, that
+provide procedures, tips and tricks, and specific product issues ranging from
+Setup to networking
+
+Easy-to-follow troubleshooting procedures for Setup, networking, and hardware
+problems
+
+A glossary of commonly used Windows 95 terms
+
+A reference guide to products and services you can use to take advantage of
+
+the special features in Windows 95
+
+The Windows 95 Application Compatibility List Help file (Win95app.hlp)
+
+The Windows 95 Hardware Compatibility List Help file (Hcl95.hlp)
+
+To install the Windows 95 Support Assistant
+
+Open the \Admin\Tools\Assistnt folder, double-click Setup.exe, and then follow
+the instructions on your screen.
+
+The Support Assistant will be updated periodically. If you have a modem connected
+to your computer, you can download the current version of the Support Assistant
+as a compressed, self-extracting file named Assist.exe. This file is about 1 MB
+in size and will take 10-15 minutes to download with a 14.4 KBS modem.
+
+You can download the Support Assistant from the following locations:
+
+- CompuServe
+GO MSL
+Search for Assist.exe.
+Display results and download.
+
+- FTP
+ftp://ftp.microsoft.com
+
+- GEnie
+Go to Microsoft Roundtable.
+
+- Gopher
+gopher://gopher.microsoft.com
+
+- Internet (anonymous FTP)
+ftp: ftp.microsoft.com
+Change to the Softlib/MSlfiles directory.
+Get Assist.exe.
+
+- The Microsoft Network
+Go to Categories\Computers and
+Software\Software\Microsoft\Windows 95
+
+- Worldwide Web
+http://www.microsoft.com - or - http://www.microsoft.com/windows/
+
+Batch Setup Version 2.0
+
+This section explains how to install Batch Setup version 2.0 and describes some
+of the features in this version of Batch Setup. For more information about
+creating scripts for Windows 95 Setup, see Chapter 5 of the Microsoft
+
+Windows 95 Resource Kit.
+
+To install Batch Setup version 2.0
+
+1. On the Windows 95 Service Pack 1 CD, open the \Admin\Tools\Batch folder.
+
+2. Double click Setup.exe, and then follow the instructions on your screen.
+
+Batch Setup version 2.0 includes the following new features:
+
+You can have Batch Setup scan your Windows 95 registry and create an .inf file
+based on your current settings. For more information about which registry
+settings Batch Setup can retrieve, search Batch Setup Help.
+
+You can now specify which protocol to make the default from within the Batch
+Setup program.
+
+More settings are available to configure File and Print Services for Microsoft
+Networks or File and Print Services for NetWare networks.
+
+Administrators can now choose whether to disable the Netcard Resource Conflict
+Resolution Wizard during setup. (This option is disabled by default.)
+
+With one click, you can enable or disable all optional components in a single
+area.
+
+Batch Setup finds user-level security settings.
+
+Locates client TCP/IP settings (for example, DNS servers).
+
+INF Generator Tool
+
+This section describes how to install the INF Generator Tool. The INF Generator
+utility can be used to assist in preparing for automatic installation of Windows
+95 in the corporate networking environment. Using this utility, you can specify
+separate settings for the company, the department, and the individual user when
+installing Windows95. This is especially useful when static TCP/IP configuration
+settings are used rather
+
+than automatic Dynamic Host Configuration Protocol (DHCP) configuration. For more
+information, see Infgndoc.doc in the \Admin\Tools\Infgen folder.
+
+To install the INF Generator Tool
+
+1. Create a new folder on your hard disk (for example, named Infgen.)
+
+2. Copy the following items from the \Admin\Tools\Infgen folder to the newly
+   created folder:
+
+      Infgen.exe
+
+      Infgen2.exe
+
+      Options.dat
+
+      User.inf
+
+      Addon folder and all its contents and subfolders
+
+Windows NT Server Management Tools for Windows 95
+
+Windows 95 Service Pack 1 provides a set of tools that system administrators can
+use to manage Windows NT(tm) servers from a Windows 95 desktop. The set includes
+the basic Windows NT Server tools (Server Manager, User Manager, and Event
+Viewer). These tools run only with Windows
+
+95 and can be used only in conjunction with Windows NT servers.
+
+To install the NT Server Management Tools on a computer running Windows 95
+
+1. Make sure drive C has at least 2.5 MB of free space.
+
+2. In Control Panel, double-click Add/Remove Programs, and then click the
+   Windows Setup tab.
+
+3. Click Have Disk, and then specify the \Admin\Tools\Servmgmt folder.
+
+4. Select the Windows NT Server Tools box.
+
+5. Click Install. The Windows NT Server Tools will be copied to the C:\Srvtools
+   directory.
+
+6. If you anticipate running the Windows NT Server Tools from the Run dialog
+   box, or from the MS-DOS(tm) command prompt, edit the Path= command in the
+   Autoexec.bat file so that it includes the C:\Srvtools directory, and then
+   restart your computer so that the new Path setting can take effect.
+
+For information about using Windows NT Server Tools, see the Srvtools.txt
+document, which is located in the \Admin\Tools\ServMgmt folder.
+
+INF Installer Tool
+
+The INF Installer tool, Infinst.exe, can be used to integrate .inf files and
+related files from the various tools directories in the Admin directory
+
+on the Windows 95 CD. This is an updated version from the one that shipped with
+the Windows 95 CD or the Windows 95 Resource Kit and should be used instead of
+the older version.
+
+To install the INF Installer
+
+Copy the Infinst.exe file to your hard disk from the \Admin\Tools\Infinst
+folder.
+
+Using the INF Installer
+
+Infinst.exe is a tool that is used to add various external components, such
+
+as MSNDS or MSDLC32, into a network installation of Windows 95 and (optionally )
+force the installation of the components using a batch script. INFINST
+accomplishes this by integrating the .inf files of the external components into
+the network installation tree of Windows 95 and by
+
+updating the MSbatch.inf file located in the root of the Server-based Setup
+
+directory.
+
+In addition to MSbatch.inf, INFINST also modifies the Layout.inf and Custom.inf
+files in the Server-based Setup directory. This prevents the user from having to
+make manual modifications in most instances and insures
+
+that the installation of an external component is successful.
+
+If the component being integrated is an application, an entry is added to the
+[Optional Components] section of MSbatch.inf. If the component is a network
+service, then the Services entry in the [Network] section of MSbatch.inf is
+updated with the newly added service.
+
+Consult Appendix D of the Microsoft Windows 95 Resource Kit for information
+
+about the entries in the batch INF setup scripts.
+
+More Information The following example is a step-by-step procedure for using
+Infinst.exe to
+
+add an external component to a Server-based Setup of Windows 95:
+
+1. Create a network installation of Windows 95, which is more commonly referred
+   to as a Server-based setup. This can be accomplished by using the NETSETUP
+   utility located on the Windows 95 CD in the Admin\Nettools\Netsetup
+   directory. NETSETUP must be run before INFINST can be used. For more
+   information about Server-based Setup, see the main Server-based Setup topic
+   in the Windows 95 Resource Kit Help file (Win95rk.hlp).
+
+2. Run Infinst.exe, located in the \Admin\Tools\Infinst subdirectory on the
+   Windows 95 Service Pack CD.
+
+3. Click the Set Path button and type the path to the location of the
+   Server-based Setup directory created in step 1. This will tell INFINST where
+   to copy the external component files, as well as the location of the
+   MSbatch.inf file that needs to be modified.
+
+4. Click the Install INF button and change to the location of the external
+   component directory. For example, if you were installing MSDLC32, you would
+   change to the location of the MSDLC32 files located on the Service Pack CD in
+   the Admin\Componts\MSDLC32 subdirectory.
+
+5. Select the appropriate INF file for the component being installed, and then
+   click OK. Again using MSDLC32 as an example, the file to highlight would be
+   Netdlc32.inf (Rename Netdlc32.sbs to Netdlc32.inf first). Clicking OK will
+   copy and modify the necessary files to integrate MSDLC32 into a Server- based
+   installation of Windows 95.
+
+Note
+Although MSDLC32 was used in the above example, you should still refer to the
+documentation included with the MSDLC32 component for Server-based setup
+information. The above information is only an example of using Infinst.exe and
+might not contain all the necessary information for a successful automated
+install.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

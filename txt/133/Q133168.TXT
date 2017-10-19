@@ -1,0 +1,70 @@
+DOCUMENT:Q133168  08-NOV-2001  [homemm]
+TITLE   :Mac Ancient Lands: Folder not Removed By Installer
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Ancient Lands for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Remove option in the Ancient Lands Installer to remove the
+program from your computer, an empty Ancient Lands folder remains on your hard
+drive.
+
+RESOLUTION
+==========
+
+Drag the Ancient Lands folder to the Trash. Empty the Trash.
+
+MORE INFORMATION
+================
+
+To remove Ancient Lands using the Installer Remove function, do the following:
+
+1. Insert the Ancient Lands CD-ROM into your CD-ROM drive.
+
+2. Double-click the Installer.
+
+3. Click Customize.
+
+4. Highlight the items want to remove. To select multiple items, press and hold
+   down the SHIFT key while you click items.
+
+5. Press and hold down the OPTION key. The Install button changes to a Remove
+   button.
+
+6. Click Remove.
+
+7. Remove the empty Ancients Lands folder using the steps given in the
+   Resolution section of this article.
+
+Additional query words: mac 1.00 multi media multimedia multi-media mmtitles kbmm remaining failed
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbAncientLandsMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

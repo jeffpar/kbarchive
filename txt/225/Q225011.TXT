@@ -1,0 +1,70 @@
+DOCUMENT:Q225011  21-AUG-1999  [exchange]
+TITLE   :XADM: Error c1037996 Installing  Exchange Server 5.5 on Cluster
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the Microsoft Exchange Server 5.5 Setup program on a Microsoft
+Cluster Server for the first node, you may receive the following error message:
+
+   Setup has detected that you are not running a set of Windows NT related fixes
+   required for clustering to work with Microsoft Exchange Server.
+
+   Microsoft Exchange Server Setup ID no: c1037996
+
+CAUSE
+=====
+
+You need additional Microsoft Windows NT files to support Exchange Server on a
+Microsoft Cluster Server.
+
+WORKAROUND
+==========
+
+To workaround this issue perform one of the following:
+
+ - Apply the set of Windows NT post-Service Pack 3 (English) fixes for Microsoft
+   Cluster Server from the following FTP location:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/roll-up/cluster/
+
+   -or-
+
+ - Apply Windows NT Service Pack 4 from the following FTP location:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/ussp4
+
+Additional query words: MSCS, clustering
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,78 @@
+DOCUMENT:Q89878  11-SEP-1999  [winmisc]
+TITLE   :Windows Sound System: How SoundScapes Works
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SoundScapes, a component of the Windows Sound System, works by setting a timer
+to play a sound. Note the following:
+
+ - If a sound is playing when the timer event occurs, SoundScapes does not play
+   an additional sound.
+
+ - If a sound is not playing, SoundScapes generates a random number from 0 to 99
+   and compares it to the "chance" of a sound being played (chance is an entry
+   in the CONTROL.INI file). If the random value is less than the chance, then
+   SoundScapes randomly selects one of the sounds from the sound list and plays
+   it at a random volume level unless position=0, in which case SoundScapes
+   always plays at the same volume.
+
+MORE INFORMATION
+================
+
+SoundScapes gets its information from the CONTROL.INI file in the Windows
+directory. The important fields are:
+
+   [SoundScapes]
+   current=<soundscape name of current scape>
+   Environment00=<first soundscape>
+   Environment01=<second soundscape>
+   Environment<??>=<last soundscape>
+   Volume=<volume level from 0 to 255, 255 being loudest>
+   PWProtected=<0 if there's no password protection; 1 if there is>
+   Path=<directory for the soundscape sounds>
+
+Each SoundScapes sound has an entry similar to the following:
+
+   [SndScape.<soundscape name>]
+   Numsounds=<number of sounds in the soundscape>
+   Chance=<chance out of 100 of playing a sound every "Time" seconds>
+   Time=<Number of seconds between timer clicks>
+   Position=<1 if a random volume level is chosen; 0 to use maximum
+   volume all the time>
+   sound00=<first wave file>
+   sound01=<second wave file>
+   sound<# sounds - 1>=<last wave file>
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

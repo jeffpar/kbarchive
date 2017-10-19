@@ -1,0 +1,94 @@
+DOCUMENT:Q123734  06-FEB-2002  [powerpt]
+TITLE   :Writer/Artist: CD-ROM System Requirements
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER::1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Macintosh CD-ROM, versions 1.1, 1.1a 
+ - Microsoft Creative Writer for Windows CD-ROM, versions 1.1, 1.1a 
+ - Microsoft Fine Artist for Macintosh CD-ROM, versions 1.1, 1.1a 
+ - Microsoft Fine Artist for Windows CD-ROM, versions 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the minimum system requirements to successfully run Creative
+Writer CD-ROM and Fine Artist CD-ROM:
+
+WINDOWS
+-------
+
+Computer:     Intel 386SX or higher or other 100-percent compatible PC
+              systems Minimum 16 MHz CPU.
+
+Memory (RAM): Minimum of 4 megabytes (MB) RAM
+
+Hard Disk Space: 9 MB free disk space
+
+CD-ROM Drive: CD-ROM drive: The CD-ROM drive should transfer data from
+              the CD-ROM at 150K per second while using less than 40
+              percent of the CPU bandwidth and have an average seek time
+              of less than 1 second.
+
+              MS-DOS CD-ROM Extension (MSCDEX) version 2.2 or
+              later. Check the documentation for your CD-ROM drive.
+
+Video:        SVGA 640 x 480 X 16 colors (256 color SVGA recommended)
+
+Operating System Requirements: MS-DOS 3.2 or later
+                               Microsoft Windows 3.1 or later
+
+Sound Requirements: Any MPC compatible sound card capable of
+                    playing .WAV files, such as:
+
+                     - Microsoft Windows Sound System
+                     - Creative Labs Sound Blaster or compatible sound
+                       card
+                     - Media Vision Pro Audio or compatible sound card
+
+Other Requirements: Stereo sound amplification (speakers) or headphones
+                    Mouse
+
+MACINTOSH
+---------
+
+Computer:        Macintosh LCII or higher (68030 processor 16MHz).
+
+Memory (RAM):    Minimum of 4 megabytes (MB) RAM
+
+Hard Disk Space: 8 MB free disk space
+
+CD-ROM Drive:    Any Macintosh compatible CD-ROM drive.
+
+Video:           Color capable monitor.
+
+
+Additional query words: kbhowto 1.00 1.10 kids win mac mskids minimum mczee wm_writer wm_artist require video display screen max maggie 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword8 kbZNotKeyword2 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110Mac kbCreativeWriter110aMac kbFineArtist110 kbFineArtist110a
+Version           : :1.1,1.1a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

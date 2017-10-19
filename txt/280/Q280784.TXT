@@ -1,0 +1,421 @@
+DOCUMENT:Q280784  30-JUL-2002  [mspress]
+TITLE   :MCSE Readiness Review Exam 70-216 Windows 2000 Network Infrastru
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS MCSE Readiness Review Exam 70-216 Microsoft Windows 2000 Network Infrastructure ISBN 0-7356-0950-0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book MCSE Readiness Review Exam 70-216 Microsoft
+Windows 2000 Network Infrastructure, ISBN 0-7356-0950-0.
+
+The following topics are covered:
+
+ - Page 9: Correction To Question 70-216.01.01.004's Answers
+
+ - Pages 12 And 14: Active Directory-integrated Primary Should Be Active
+   Directory-integrated
+
+ - Page 48: Incorrect Registry Path
+
+ - Page 72: Incorrect Answer To Question 70-216.04.01.001
+
+ - Page 72: Incorrect Answer To Question 70-216.04.01.002
+
+ - Page 74: Correction To Question 70-216.04.01.006's Answers
+
+ - Page 87: Correction To Question 70-216.04.03.002
+
+ - Page 89: Corrections To Question 70-216.04.03.005
+
+ - Page 90: Correction To Question 70-216.04.03.002's Answer
+
+ - Page 92: Incorrect Answer For 70-216.04.03.005
+
+ - Page 93: Incorrect Information Regarding Windows 2000's Network Monitor
+
+ - Page 96: Correction To Question 70-216.04.04.003's Answer
+
+ - Page 112: Incorrect Description Of WINS Proxy Behavior
+
+ - Page 115: Correction To Question 70-216.05.01.003's Answers
+
+ - Page 161: 192.168.254.254 Should Be 192.168.0.254
+
+ - Page 167: NAT Does Not Support WINS Proxy
+
+ - Page 180: Incorrect Answer For 70-216.07.03.002
+
+ - Page 182: Correction To Question 70-216.07.03.006's Answer
+
+MORE INFORMATION
+================
+
+Page 9:  Correction To Question 70-216.01.01.004's Answers
+----------------------------------------------------------
+
+On page 9, in question 70-216.01.01.004, the correct answer should be A, D, and
+E, not A, C, D, and E.
+
+Change:
+"Correct Answers: A, C, D, and E
+
+...
+
+C. Correct: When you successfully create a new zone, an associate zone database
+file is generated."
+
+To:
+"Correct Answers: A, D, and E
+
+...
+
+C. Incorrect: When you successfully create a Active Directory-Integrated zone,
+the zone database is stored in Active Directory, no seperate zone database file
+is generarted."
+
+
+Pages 12 And 14: Active Directory-integrated Primary Should Be Active Directory-integrated
+------------------------------------------------------------------------------------------
+
+On page 12, in asnwer D under question 70-216.01.02.001, and on page 14, in the
+fourth bulleted item and in answer D,
+
+Change:
+"Active Directory-integrated primary"
+
+To:
+"Active Directory-integrated"
+
+
+Page 48: Incorrect Registry Path
+--------------------------------
+
+On page 48, in question 70-216.03.02.003,
+
+Change:
+"HKEY_LOCAL_MACHINE\System\CirremtControlSet\Services\Tracing"
+
+To:
+"HKEY_LOCAL_MACHINE\Software\Microsoft\Tracing\RASCHAP"
+
+
+Page 72: Incorrect Answer To Question 70-216.04.01.001
+------------------------------------------------------
+
+On page 72, the answer for question 70-216.04.01.001 is incorrectly listed as E.
+
+The correct answer should be A:
+"On Tom's computer, change the default gateway to 10.96.0.1"
+
+
+Page 72: Incorrect Answer To Question 70-216.04.01.002
+------------------------------------------------------
+
+On page 72, under question 70-216.04.01.002, the correct answers should be A and
+B, not A.
+
+Change:
+"Correct Answers: A
+...
+B. Incorrect: The correct option to set is Obtain An IP Address Automatically.
+When selected, this causes a DNS server to be assigned along with the other
+required TCP/IP values."
+
+To:
+"Correct Answers: A and B
+...
+B. Correct: When you select the Obtain DNS Server Address Automatically option,
+the Windows client computers use DNS configuration information provided by the
+DHCP server."
+
+
+Page 74: Correction To Question 70-216.04.01.006's Answers
+----------------------------------------------------------
+
+On page 74, in question 70-216.04.01.006, the correct answer should be B, not E.
+
+Change the answers to be:
+
+"Correct Answers: B
+
+A. Incorrect: See explanation for B.
+
+B. Correct: Auto Detect is the default frame type for NWLink.
+
+C. Incorrect: See explanation for B.
+
+D. Incorrect: See explanation for B.
+
+
+Page 87: Correction To Question 70-216.04.03.002
+------------------------------------------------
+
+On page 87, in question 70-216.04.03.002,
+
+Change:
+"D. cipher /E /S:SHARE"
+
+To:
+"D. cipher /E /A /S:SHARE"
+
+
+Page 89: Corrections To Question 70-216.04.03.005
+-------------------------------------------------
+
+On page 89, in the figure, change drive D of FileSrvr3 from NTFS to FAT. And,
+
+Change:
+"A. The PROCEDURES.DOC file exists on \\FilesSrvr2\ACCT in decrypted form, on
+\\FileSrvr3\ADM in decrypted form, and on the tape drive in encrypted form."
+
+To:
+"A. The PROCEDURES.DOC file exits on \\FileSrvr1\HR, \\FileSrvr2\ACCT, and
+\\FileSrvr3\ADM in decrypted form, and on the tape drive in encrypted form."
+
+
+Page 90: Correction To Question 70-216.04.03.002's Answer
+---------------------------------------------------------
+
+On page 90, in question 70-216.04.03.002,
+
+Change:
+"D. Correct: Using the /E switch causes cipher to encrypt the contents of the
+directory, and all subdirectories, specified."
+
+To:
+"D. Correct: Using the /E switch causes cipher to encrypt the specified folders.
+Folders will be marked so that files added to the folder later will be
+encrypted. Using the /A switch causes cipher to encrypt existing files as well
+as directories."
+
+
+Page 92: Incorrect Answer For 70-216.04.03.005
+----------------------------------------------
+
+On page 92, the correct answer for 70-216.04.03.005 should be C and F, not C and
+E. Change the answers to:
+
+"Correct Answers: C and F
+
+A. Incorrect: Although the file will be left decrypted on both FileSrvr2 and
+FileSrvr3, the file remains encrypted on \\FileSrvr1\HR as well as the tape
+drive on FileSrvr1.
+
+C. Correct: The PROCEDURES.DOC file loses its encrypted status when copied to a
+nonencrypted file system, as are found on FileSrvr2 and FileSrvr3. The file
+maintains its encrypted status when backed up to the tape drive on FileSrvr1
+because this server is using an EFS.
+
+E. Incorrect: When you copy or move a file to an EFS-enabled folder, the file is
+encrypted automatically.
+
+F. Correct: When you copy or move a file to an EFS-enabled fodler, the file is
+encrypted automatically.
+
+G. Incorrect: Because you moved the file from \\FileSrvr2\ACCT, it no longer
+resides on this share. Further, the file is saved in encrypted format on
+\\FileSrvr1\HR.
+
+H. Incorrect: Because you moved the file from \\FileSrvr2\ACCT, it no longer
+resides on this share."
+
+
+Page 93: Incorrect Information Regarding Windows 2000's Network Monitor
+-----------------------------------------------------------------------
+
+On page 93, in the second paragraph, remove:
+
+"as well as other computers on the network"
+
+
+Page 96: Correction To Question 70-216.04.04.003's Answer
+---------------------------------------------------------
+
+On page 96, in question 70-216.04.04.003, the correct answer should be D, not E.
+
+Change:
+"Correct Answers: E
+
+B. Incorrect: Although not all packets can be monitored, you are able to monitor
+packets addressed to and sent from the IAS server running NetMon as well as all
+broadcast and multicast frames on the same network segement.
+
+C. Incorrect: On a switdched network, you are able to monitor packets dstined for
+the sent from the IAS server running NetMon as well as all broadcast and
+multicast frames on the same network segment.
+
+D. Incorrect: In a switched network environment, using NetMon, you can monitor
+packets addressed to and sent from the IAS server running NetMon as well as all
+broadcast and multicast frames on the same network segment.
+
+E. Correct: You can monitor packets addressed to and sent from the IAS server in
+a switched network environment as well as all broadcast and multicast frames on
+the same network segment."
+
+To:
+"Correct Answer: D
+
+B. Incorrect: see explanation for D.
+
+C. Incorrect: see explanation for D.
+
+D. Correct: If you use NetMon in a switched network environment, you see only the
+traffic addressed to the computer that is running NetMon.
+
+E. Incorrect: see explanation for D."
+
+
+Page 112: Incorrect Description Of WINS Proxy Behavior
+------------------------------------------------------
+
+On page 112, in the third paragraph of question 70-216.05.01.002, change:
+"You want all computers to be able to register their NetBIOS names with WINS."
+
+To:
+"You want all computers to be able to resolve NetBIOS name inquiries with WINS."
+
+
+Page 115: Correction To Question 70-216.05.01.003's Answers
+-----------------------------------------------------------
+
+On page 115, under question 70-216.05.01.003, the correct answer should be none,
+not A and B.
+
+Change:
+"Correct Answers: A and B
+
+A. Correct: Manually add the name and IP addresses of non-WINS computers to the
+WINS database of static maps.
+
+B. Correct: As an alternative to manually entering each non-WINS client, you can
+import the static map values from an LMHOSTS file. Ultimately, because the
+non-WINS client cannot register their information in the WINS database, you need
+to add this information as a static map."
+
+To:
+"Correct Answers: None
+
+A. Incorrect: Adding static mappings in WINS database enables WINS clients to
+resolve NetBIOS names of the non-WINS clients, but it does not resovle the issue
+of the non-WINS clients not able to communicating with the WINS server.
+
+B. Incorrect: Adding static mappings in the LMHOST file enables WINS clients to
+resolve NetBIOS names of the non-WINS clients, but it does not resolve the issue
+of the non-WINS clients not able to communicating with the WINS server."
+
+
+Page 161: 192.168.254.254 Should Be 192.168.0.254
+-------------------------------------------------
+
+On page 161,
+
+Change:
+"192.168.254.254"
+
+To:
+"192.168.0.254"
+
+
+Page 167: NAT Does Not Support WINS Proxy
+-----------------------------------------
+
+On page 167, in the fourth bulleted paragraph,
+
+Change:
+"DNS and WINS Proxy. You can establish name resolution by using either DNS or
+WINS."
+
+To:
+"DNS Proxy. You can establish name resolution by using DNS."
+
+
+Page 180: Incorrect Answer For 70-216.07.03.002
+-----------------------------------------------
+
+On page 180, the correct answer for 70-216.07.03.002 should be C, not B.
+
+Change:
+Correct Answers: B
+
+A. Incorrect: The default subnet mask used by the DHCP allocator is 255.255.0.0.
+
+B. Correct: The DHCP allocator uses 255.255.0.0 as the default value for its
+subnet mask.
+
+C. Incorrect: The Correct default subnet mask value is 255.255.0.0
+
+D. Incorrect: When you are using the DHCP allocator with NAT, the default subnet
+mask is 255.255.0.0.
+
+E. Incorrect: The DHCP allocator has a preset default subnet mask of 255.255.0.0
+
+To:
+Correct Answers: C
+
+A. Incorrect: The default subnet mask used by the DHCP allocator is
+255.255.255.0.
+
+B. Incorrect: The DHCP allocator uses 255.255.255.0 as the default value for its
+subnet mask.
+
+C. Correct: The Correct default subnet mask value is 255.255.255.0
+
+D. Incorrect: When you are using the DHCP allocator with NAT, the default subnet
+mask is 255.255.255.0.
+
+E. Incorrect: The DHCP allocator has a preset default subnet mask of
+255.255.255.0
+
+
+Page 182: Correction To Question 70-216.07.03.006's Answer
+----------------------------------------------------------
+
+On page 182, in answer C,
+
+Change:
+"Although NAT supports WINS via the WINS Proxy, for Internet name resolution, use
+the DNS Proxy."
+
+To:
+"NAT does not support WINS proxy."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: TKBOOK RRBOOK WIN2K 0-7356-0950-0 Perkovich 0-7356-1388-5
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,76 @@
+DOCUMENT:Q134498  17-DEC-2000  [win95x]
+TITLE   :101-Rom Error Message in Compaq Concerto Docking System
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Windows 95 on a Compaq Concerto computer while it is docked, you
+may receive the following error message when the computer restarts in the
+docking station:
+
+   101-ROM Error
+
+After you receive the error message, the computer does not start Windows 95.
+
+CAUSE
+=====
+
+During Windows 95 setup, the Concerto BIOS makes incorrect settings to the
+built-in Ethernet adapter, preventing the computer from starting Windows 95
+while it is inserted in the docking station.
+
+RESOLUTION
+==========
+
+Contact Compaq for instructions about how to correct the docking station
+settings. Compaq can also provide you with an updated BIOS that corrects the
+problem.
+
+MORE INFORMATION
+================
+
+Early versions of the Compaq Concerto BIOS allowed the built-in Ethernet
+Controller EPROMs to be reprogrammed by the BIOS to incorrect values. This
+problem appears to be common when setting up Windows 95 on a Compaq Concerto
+with an early BIOS.
+
+We do not know the exact BIOS version that corrects the problem, but versions
+released after 7/1/95 are known to work correctly.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

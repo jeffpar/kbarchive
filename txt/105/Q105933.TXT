@@ -1,0 +1,297 @@
+DOCUMENT:Q105933  02-NOV-1999  [fortran]
+TITLE   :FORTRAN PowerStation ADDENDA.TXT
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The corrections to the manuals shipped with Microsoft FORTRAN PowerStation for
+MS-DOS are described below. This is an extract of the ADDENDA.TXT file located
+in the \F32\README directory.
+
+MORE INFORMATION
+================
+
+Part 1: Corrections to Getting Started
+--------------------------------------
+
+There are no corrections to Getting Started.
+
+Part 2: Corrections to Language Guide
+-------------------------------------
+
+Page 52
+Add the following note to the second bullet describing an iolist: "If I/O is to
+or from a formatted device, an iolist may not contain structure variables, but
+it may contain structure elements. If I/O is to a binary or unformatted device,
+it can contain either a structure element or a structure variable."
+
+Page 85
+Add the following comment to the discussion of backslash editing: "The dollar
+sign ($) can be used as an alias for the backslash edit descriptor."
+
+Page 129, 131
+Delete the table entries for GETCONFIGQQ.
+
+Page 199
+Input to intrinsic function ABS can also be any real or integer type.
+
+Page 203
+The purpose of intrinsic function AMAX0 should read: "Returns the maximum of a
+list of integer values."
+
+Page 203
+The purpose of intrinsic function AMAX1 should read: "Returns the maximum of a
+list of integer values and performs type conversion."
+
+Page 204
+The purpose of intrinsic function AMIN1 should read: "Returns the minimum of a
+list of integer values and performs type conversion."
+
+Page 214
+The order of the parameters for BEEPQQ is reversed; frequency is the first
+parameter. The frequency parameter in should be Hz, not KHz. The duration should
+be in milliseconds.
+
+Page 256
+One of the examples for the DINT intrinsic function is documented incorrectly.
+The examples show:
+
+   DINT(2.6D0)       2.0000 ....
+   DINT(2.6D0)      -2.0000 ....
+
+The second line should read: (note the minus sign in the argument)
+
+   DINT(-2.6D0)     -2.0000 ....
+
+Page 314
+Change error parameters ENOENT and EINVAL to ERR$NOENT and ERR$INVAL.
+
+Page 319
+The first five fontinfo structure variables in graphic function GETFONTINFO
+(type, ascent, pixwidth, pixheight and avgwidth) are shown as Integer*2; they
+should be Integer*4.
+
+Pages 322-323
+The naming convention for run-time error parameters was documented incorrectly.
+The following table shows the actual names of these parameters in the FLIB.FD
+include file:
+
+   Change        to
+   ========      =========
+   E2BIG         ERR$2BIG
+   EACCES        ERR$ACCES
+   EBADF         ERR$BADF
+   EINVAL        ERR$INVAL
+   EIVAL         ERR$IVAL
+   EMFILE        ERR$MFILE
+   ENOENT        ERR$NOENT
+   ENOEXEC       ERR$NOEXEC
+   ENOMEM        ERR$NOMEM
+   ERANGE        ERR$RANGE
+
+Page 338
+The Remarks section states that error constants are in FGRAPH.FI. Actually they
+are in FGRAPH.FD.
+
+Several error constants were omitted from the table:
+
+   $GRTEXTNOTSUPPORTED     (  4)
+
+   The VESA TSR or BIOS sets a flag that may indicate that text output is not
+   supported. (Note: this flag is used inconsistently by different hardware
+   vendors and may not be significant.)
+
+   $GRNOBITMAPFILE         (-10)
+   $GRFILEREADERROR        (-11)
+   $GRIMPROPERBITMAPFORMAT (-12)
+   $GRBITMAPTOOLARGE       (-13)
+   $GRBITMAPDISPLAYERROR   (-14)
+   $GRIMAGEREADERROR       (-15)
+   $GRFILEOPENERROR        (-16)
+   $GRFILEWRITEERROR       (-17)
+
+The declaration of $GRTEXTNOTSUPPORTED has been omitted from FGRAPH.FD,
+therefore, you will get the following error when you use this constant and
+compile with /4Yd:
+
+   warning F4313: $GRTEXTNOTSUPPORTED: not previously declared
+
+To work around this problem, open FGRAPH.FD, go to line 54, and add:
+
+   + $GRTEXTNOTSUPPORTED
+
+Page 376-377
+Run-time subroutines SCWRQQ and SSWRQQ were incorrectly used as functions in the
+sample program TCOPO.FOR.
+
+Page 381-382
+Graphic Functions LOADIMAGE and LOADIMAGE_W are INTEGER*2 functions. The
+coordinate parameters wxcoord and wycoord are DOUBLE PRECISION, not REAL*4.
+
+Page 386
+The error parameters for MAKEDIRQQ were documented incorrectly.
+
+   Change      to
+   ------      ---------
+   EACCES      ERR$ACCES
+   ENOENT      ERR$NOENT
+
+Page 439
+The error parameters for RENAMEFILEQQ were documented incorrectly.
+
+   Change      to
+   ------      ---------
+   EACCES      ERR$ACCES
+   ENOENT      ERR$NOENT
+   EXDEV       ERR$XDEV
+
+Page 444-445
+The coordinate parameters (ulwxcoord, ulwycoord, lrwxcoord and lrwycoord) are
+Double Precision, not Real*4.
+
+Page 457-458
+Run-time subroutines GETCONTROLFPQQ and GETSTATUSFPQQ were incorrectly used as
+functions in the sample program TCOP.FOR. The source for TCOP.FOR in the samples
+directory and in Help is correct.
+
+Page 462
+The error parameters for SETFILETIMEQQ were documented incorrectly.
+
+   Change      to
+   ------      ---------
+   EACCESS     ERR$ACCES
+   EINVAL      ERR$INVAL
+   EMFILE      ERR$MFILE
+   ENOENT      ERR$NOENT
+
+Page 478
+The remarks for Graphics subroutine SETTEXTWINDOW should read:
+
+"Use SETTEXTWINDOW to specify a window in row and column coordinates where text
+output written to the screen using the OUTTEXT() subroutine is displayed. (You
+must set up the location with SETTEXTPOSITION.) The arguments (r1, c1) specify
+the upper-left corner of the text window, and the arguments (r2, c2) specify the
+lower-right corner of the text window.
+
+Text is output from the top of the text window down. When the text window is
+full, successive lines overwrite the last line."
+
+Page 496
+The duration parameter of run-time subroutine SLEEPQQ should be in milliseconds,
+not microseconds.
+
+Page 507
+The error parameters for SYSTEMQQ were documented incorrectly.
+
+   Change      to
+   ------      ---------
+   E2BIG       ERR$2BIG
+   ENOINT      ERR$NOINT
+   ENOEXEC     ERR$NOEXEC
+   ENOMEM      ERR$NOMEM
+
+Page 522
+Appendix A erroneously states that the following VAX extensions are supported by
+FORTRAN PowerStation:
+
+ - Inline variable length formatting (e.g.: FORMAT('I<var>'), where var =
+   5)
+
+ - Call intrinsics (%val, %descr, %ref, %loc)
+
+Part 3: Corrections to User's Guide
+-----------------------------------
+
+Page 15, 22
+You can also use CTRL+K to find matching braces.
+
+Pages 67-68
+The Create Assembly Listing checkbox is documented incorrectly. The compiler
+option associated with this option is /FAs, not /Fl. This option produces an
+assembly listing with code bytes, not an assembly listing with source.
+
+Page 109
+Add the following to the discussion of syntax coloring. "FORTRAN Visual Workbench
+displays metacommands in the same color as comments if syntax coloring is
+activated."
+
+Pages 144-145
+A new set of options has been added for producing assembly listings. The syntax
+is /FA[sc]. Use /FAs to add FORTRAN source lines to the assembly listing, and
+/FAc to add code bytes to the assembly listing. /FAsc will produce an assembly
+listing with both FORTRAN source lines and code bytes.
+
+Page 170
+Add this to the end of Section 11.2.3 Using Command Files:
+
+The following example demonstrates the use of command files (also known as
+response files) to provide input to LINK32. Example:
+
+   LINK32 -LIB @MYRESP.RSP
+
+A typical response file might contain:
+
+   -OUT:MYLIB.LIB
+   OBJECT1.OBJ
+   OBJECT2.OBJ
+   (and so forth)
+
+Page 258
+Page 294
+Page 297
+The default floating-point exception behavior is slightly different from that
+described in the text. By default, run-time errors occur for the INVALID,
+ZERODIVIDE, and OVERFLOW exceptions. By default, run-time errors occur for the
+math exceptions except for when you use the compiler option /Ox. See the
+README.TXT file for a summary of the complete floating-point exception behavior
+and details on how to customize that behavior to be strictly the IEEE behavior
+as described in the text.
+
+Page 284
+Replace the text:
+
+"Some older 80386 systems have 287 coprocessors instead of 387s; the 287 math
+coprocessor does not perform floating-point operations on these systems."
+
+with the text:
+
+"Some older 80386 systems have 287 coprocessors instead of 387s; some
+floating-point operations will not work correctly in these cases. To fix this,
+you must force use of the floating-point emulator by setting the TNT environment
+variable as follows. At the MS-DOS (or Windows MS-DOS session) command line,
+enter "SET TNT=-FPEM" before running your compiled program. To cancel the forced
+emulation you can enter "SET TNT=-NOFPEM"."
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

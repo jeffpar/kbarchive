@@ -1,0 +1,70 @@
+DOCUMENT:Q241151  14-APR-2001  [iis]
+TITLE   :MMC: All Sites Are Stopped and Opening a Web Site Causes Error
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Internet Service Manager (ISM) in the Microsoft Management Console
+(MMC) is opened, all sites under the computer are shown in the Stopped state,
+even though they may actually be running.
+
+Also, attempting to open a Web site causes the following error message to be
+displayed:
+
+   Unable to enumerate files and directories because the following error
+   occurred:
+   The system cannot find the path specified.
+
+CAUSE
+=====
+
+The Windows user account that you are logged onto the computer with does not
+have the Administrator privilege.
+
+RESOLUTION
+==========
+
+Log onto the computer with a user account that has the Administrator privilege.
+
+If this fails to resolve the issue, delete the following key:
+HKCU\Software\Microsoft\Cryptography\Userkeys\MS_IIS_DCOM_CLIENT
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: user name username errmsg kberrmsg permission akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

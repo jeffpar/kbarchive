@@ -1,0 +1,54 @@
+DOCUMENT:Q129986  29-OCT-1999  [crossnet]
+TITLE   :Error Using Microsoft Network Client SOCKETS.EXE
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+If the Microsoft Network Client is configured to use the TCP/IP protocol,
+and you try to start the SOCKETS.EXE program, the following error message
+may appear:
+
+   SOCKETS0101: The value for keyword HOSTNAME not found in TCPUTILS.INI file by
+   SOCKETS. (not loaded)
+
+This message appears because SOCKETS is looking for a host name in the
+TCPUTILS.INI file. To run SOCKETS, manually enter a host name.
+
+In the TCPUTILS.INI file, add the following line to the [tcpglobal]
+section:
+
+   " hostname=<hostname> " (without the quotation marks)
+
+where <hostname> is a valid host name (but any value will allow SOCKETS.EXE
+to start).
+
+Additional query words: workgroup
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

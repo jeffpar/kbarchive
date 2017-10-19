@@ -1,0 +1,51 @@
+DOCUMENT:Q167367  23-DEC-1999  [exchange]
+TITLE   :XFOR: Routing Exchange DXA Updates Over SNADS Backbone
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:3.2; winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+ - LinkAge Message Exchange, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Routing Exchange Server DXA updates over a SNADS backbone requires custom
+configuration of LinkAge Message Exchange.
+
+A new section, [Q-DXAMEX.IN] has been added to the LinkAge Configuration file
+(Linkage.ini) which allows the Exchange Server DXA to use the SNADS address type
+for routing in order to accommodate SNADS Backbone Routing. This is required if
+the LDE configuration includes any DXA that uses LinkAge Level 1 Message
+Exchange Format (MIF). LDE configurations that include only Level 3 MIF agents
+do not require the use of the SNADS address type for routing.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+Version           : WINDOWS:3.2; winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

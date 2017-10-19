@@ -1,0 +1,90 @@
+DOCUMENT:Q137598  21-NOV-1999  [powerpt]
+TITLE   :PPT7: PowerPoint Presentation Conferencing Unavailable
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbdtakbbuglist
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Tools menu in PowerPoint, the Presentation Conferencing
+command may be unavailable (dimmed).
+
+CAUSE
+=====
+
+This problem may occur if the following conditions are true:
+
+ - TCP/IP is not installed on your computer.
+
+   -or-
+
+ - You are running a shared version of Windows 95.
+
+   -or-
+
+ - TCP/IP is installed or configured incorrectly on your computer.
+
+
+RESOLUTION
+==========
+
+To correct this problem, use any of the following methods:
+
+ - Install TCP/IP if it is not installed.
+
+ - Install a local copy of Windows 95.
+
+ - Reconfigure your TCP/IP configuration.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q135325 PPT: Presentation Conference Troubleshooting Guide
+
+   Q137055 PPT: Presentation Conference Fails With Errors
+
+
+Additional query words: ppt7 pp7 powerpnt unavailable novell items lists nt 3.51 grayed protocol select
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbdta kbbuglist
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

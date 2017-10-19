@@ -1,0 +1,50 @@
+DOCUMENT:Q126097  08-AUG-2001  [winnt]
+TITLE   :Shareware Driver Available for Wangtek 6130 and 6200
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+The Wangtek 6130 and 6200 SCSI tape drives are not on the Windows NT
+Hardware Compatibility List (HCL). A shareware Windows NT 3.5 driver for
+the Wangtek 6130 and 6200 SCSI tape drives is available on CompuServe in
+the Microsoft Win32 SDK (MSWIN32) forum. The file name is 4MMWNG.ZIP and it
+is located in the Tools-Third Party section (# 16) of the MSWIN32 forum.
+
+This driver is a recompiled version of the Windows NT 3.5 4MMDAT.SYS device
+driver. See the README.TXT file that accompanies the device driver for more
+information and installation instructions.
+
+The third-party products discussed here are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+Additional query words: wangdat prodnt share ware 4 mil Four Millimeter DAT
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

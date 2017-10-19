@@ -1,0 +1,86 @@
+DOCUMENT:Q201958  11-JAN-2001  [vbwin]
+TITLE   :DOC: DataGrid Object Code Example Does Not Work
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbCtrl kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The DataGrid Object code example contains several errors that prevent the sample
+from working correctly. This article contains the correct code example for the
+DataGrid Object.
+
+MORE INFORMATION
+================
+
+The DataGrid Object is part of the Microsoft Chart Control, MSChart.ocx. You can
+search Online Help for "DataGrid Object" and click on the Example hypertext to
+see the faulty code sample that should demonstrate creating a three-dimensional
+bar chart.
+
+The following is the correct DataGrid Object code example:
+
+       Private Sub Command1_Click()
+          Dim rowLabelCount As Integer
+          Dim columnLabelCount As Integer
+          Dim rowCount As Integer
+          Dim columnCount As Integer
+          Dim labelIndex As Integer
+
+          MSChart1.chartType = VtChChartType3dBar
+          With MSChart1.DataGrid
+             ' Set Chart parameters using methods.
+             rowLabelCount = 2
+             columnLabelCount = 2
+             rowCount = 6
+             columnCount = 6
+             .SetSize rowLabelCount, columnLabelCount, _
+             rowCount, columnCount
+
+             ' Randomly fill in the data.
+             .RandomDataFill
+             ' Then assign labels to second Level.
+             labelIndex = 2
+             columnCount = 1
+             .ColumnLabel(columnCount, labelIndex) = "Product 1"
+             columnCount = 4
+             .ColumnLabel(columnCount, labelIndex) = "Product 2"
+             rowCount = 1
+             .RowLabel(rowCount, labelIndex) = "1994"
+             rowCount = 4
+             .RowLabel(rowCount, labelIndex) = "1995"
+          End With
+       End Sub
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbCtrl kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : WINDOWS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

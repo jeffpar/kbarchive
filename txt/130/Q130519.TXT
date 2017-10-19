@@ -1,0 +1,91 @@
+DOCUMENT:Q130519  17-DEC-2000  [win95x]
+TITLE   :Cannot Access WFWG 3.11 Computer with Monolithic IPX
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+Windows 95 cannot communicate with a Windows for Workgroups (WFWG) 3.11- based
+computer configured to use Microsoft Windows Network (version 3.11), Novell
+NetWare (Workstation Shell 3.x), and IPX Support Driver (Monolithic) with
+NetBIOS support.
+
+CAUSE
+=====
+
+By default, Windows 95 does not enable NetBIOS support for the IPX/SPX protocol.
+Therefore, Windows 95 uses direct hosting for the IPX/SPX protocol, preventing
+communication with a WFWG 3.11-based computer configured for monolithic IPX
+(which cannot use direct hosting).
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+To disable direct hosting in Windows 95, add a new string value named DirectHost
+to the following registry key:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Vxd\VNETSUP
+
+Set the value for the DirectHost string value to 0.
+
+To enable NetBIOS support for the IPX/SPX protocol on a Windows 95-based computer
+so that it can communicate with WFWG 3.11-based computers using monolithic IPX,
+follow these steps:
+
+1. In Control Panel, double-click Network.
+
+2. On the Configuration tab, click IPX/SPX-Compatible Protocol, and then click
+   Properties.
+
+3. On the NetBIOS tab, click the "I want to enable NetBIOS over IPX/SPX" check
+   box to select it.
+
+4. Click OK, and then click OK.
+
+5. When you are prompted to restart the computer, do so.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

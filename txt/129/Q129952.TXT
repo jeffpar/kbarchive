@@ -1,0 +1,65 @@
+DOCUMENT:Q129952  09-NOV-1999  [pcmail]
+TITLE   :PC NTMMTA: No Limitations on Memory Management
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mail Multitasking MTA (MMTA) for OS/2, running OS/2 version 1.3, is limited
+to 16 megabytes of memory. However, the MMTA running under Microsoft Windows NT
+can use all available memory on the Windows NT machine.
+
+MORE INFORMATION
+================
+
+Some of the memory management limitations of OS/2 1.x are removed. The most
+important of these is the limit of 16 MB of physical RAM. The OS/2 subsystem
+uses the large memory capability of Windows NT. As a result, you get an increase
+in performance, and the applications can use the additional memory.
+
+Protection Model
+----------------
+
+The OS/2 subsystem implements protection between OS/2 applications. It constructs
+their address spaces (both the flat address space and LDTs) and implements the
+same protection as in OS/2.
+
+Segment Swapping
+----------------
+
+The OS/2 subsystem uses the Windows NT paging mechanism; no segment swapping is
+performed. Paging works better than segment swapping, and it exists in OS/2 only
+to support the 80286 processor, which is not supported in Windows NT.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

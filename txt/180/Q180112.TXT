@@ -1,0 +1,65 @@
+DOCUMENT:Q180112  28-MAR-1999  [exchange]
+TITLE   :XADM: How To Export the Creation Date
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use the Import/Export feature in the Microsoft
+Exchange Administrator program to export the creation date of directory objects
+such as mailboxes, custom recipients, and distribution lists.
+
+MORE INFORMATION
+================
+
+To export the creation date, follow theses steps:
+
+1. Create an export file (for example, Test.csv) with the following header:
+
+         Obj-Class, Directory Name, When-Created
+
+2. From the Administrator program, go to Tools and select Directory Export.
+
+3. For the export filename, select the file created in Step 1 (Test.csv).
+
+4. Select the desired container and export objects, and then click Export.
+
+The program should now export the creation date for each object in the selected
+container.
+
+Note: The date/time exported is in universal time and is not formatted; for
+example, 980120211543Z corresponds to 1/20/98 3:15PM CST.
+
+To export the date when an object was last changed, add "When- Changed" to the
+header of the export, and then export.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

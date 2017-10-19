@@ -1,0 +1,67 @@
+DOCUMENT:Q230577  10-AUG-2001  [winnt]
+TITLE   :Error Message "The Drive Is Not Ready for Use" at Startup
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer, you may receive the following error message:
+
+   The drive is not ready for use Device/Harddisk0/partition0. Its door may be
+   open. Please check drive and make sure that a disk is inserted and that the
+   drive door is closed.
+
+CAUSE
+=====
+
+This behavior can occur if you have a Zip drive and Norton Utilities installed.
+Norton Utilities queries the Zip drive and generates the error message if there
+is no disk in the drive. You receive no error message if there is a disk in the
+drive. This apparently occurs only if the Zip drive is installed after Norton
+Utilities is installed.
+
+RESOLUTION
+==========
+
+Uninstall and reinstall Norton Utilities. Disabling Norton Utilities does not
+resolve the problem. For information about how to uninstall or reinstall Norton
+Utilities, please consult the program's documentation or manufacturer.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

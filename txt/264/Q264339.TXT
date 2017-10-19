@@ -1,0 +1,101 @@
+DOCUMENT:Q264339  06-AUG-2002  [exchange]
+TITLE   :XADM: Event ID 2037 Creating Mailbox After Applying Q254805 Fix
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply the Exchange Server Administrator program Exchange Server 5.5
+post-Service Pack 3 fix that is described in the following Knowledge Base
+article
+
+   Q254805 XADM: Exchange Server 5.5 Post-SP3 Administrator Program Fixes
+   Available
+
+Exchange Server may generate the following event message:
+
+   ID: 2037
+
+   Type: Error
+
+   Source: MSExchangeSA
+
+   Description: The file version of
+   \address\<proxy_address_type>\<processor>\<proxy>.dll
+   installed on the local server is not current. Unable to locate a correct
+   version on any server in the site.
+
+The following informational event 2036 message may also be logged:
+
+   The file version of
+   c:\exchsrvr\address\address\<proxy_address_type>\<processor>\<proxy>.dll
+   looking at servers in site for a current version.
+
+The following error message may also be displayed:
+
+   An error occurred while processing an e-mail address.
+
+The error message also references the following ID:
+
+   ID no: C1030b35
+
+CAUSE
+=====
+
+This issue can occur because the fix updates the .dll files, but does not update
+the directory information, specifically the File-Version attribute on the
+address generators.
+
+RESOLUTION
+==========
+
+To resolve this issue, modify the File-Version attribute of the address
+generators. For additional information about how to modify the File-Version
+attribute, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q158336 XADM: Modifying Version Values for Proxy Address Generator
+
+MORE INFORMATION
+================
+
+Some examples of proxy generator .dll files are Inproxy.dll and Pcproxy.dll. For
+example, the event ID 2037 message description may state the following:
+
+   The file version of \address\smtp\i386\inproxy.dll installed on the local
+   server is not current. Unable to locate a correct version on any server in
+   the site.
+
+Additional query words: hotfix postsp3 admin proxy generator smtp x400
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

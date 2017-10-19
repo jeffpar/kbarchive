@@ -1,0 +1,76 @@
+DOCUMENT:Q142485  25-AUG-1999  [automap]
+TITLE   :Streets 4.0: Highways Do Not Print Using HP Color Deskjet
+PRODUCT :Microsoft Automap
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a map to a Hewlett-Packard (HP) Deskjet 500C, 540, or 550C color
+printer, the Highway and Interstate lines do not print.
+
+STATUS
+======
+
+This problem occurs when you use Microsoft Automap Streets version 4.0 and a
+Hewlett-Packard (HP) Deskjet 500C, 540, or 550C color printer. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To resolve this problem, set the Road Drawing Style either to Regular or to
+Enhanced. To change this setting, use the following steps:
+
+1. Start Automap Streets.
+
+2. Click Display Automap Streets.
+
+3. On the Map menu, click Options.
+
+4. Click the Drawing tab and set the Road Drawing Style either to Regular or to
+   Enhanced. Click OK.
+
+To successfully print the Highways and Interstate lines as a non-color image,
+install the HP Deskjet 500 printer driver.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q125653 Automap: Printing Problems with Canon BJC Series Printers
+
+Additional query words: auto auto-map automap reference kbmm multimedia multi-media mult media map
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+Version           : 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

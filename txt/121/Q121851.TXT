@@ -1,0 +1,66 @@
+DOCUMENT:Q121851  08-AUG-2001  [winnt]
+TITLE   :Windows NT 3.5 Drivers for Compaq Devices
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to install Windows NT 3.5 on a Compaq Deskpro XL566 computer with a
+built-in PCI SCSI-II controller, a built-in Netflex network adapter, and a
+QVision 2000 video adapter, drivers for these devices are required. These
+drivers are available on the Windows NT 3.5 Installation compact disc at the
+following locations:
+
+   DRVLIB\STORAGE\AMD\X86   (for PCI SCSI-II controller)
+   DRVLIB\NETCARD\X86\PCNET (for the Netflex network adapter)
+   DRVLIB\VIDEO\CPQ2000\X86 (for the QVision 2000 video adapter)
+
+They must be copied from these libraries onto separate floppies, and then used
+during Windows NT Setup.
+
+MORE INFORMATION
+================
+
+If you do not have a CD-ROM drive or the Windows NT 3.5 Installation compact
+disc, you can obtain the drivers from Compaq. Compaq has just released the
+official support disk for Windows NT 3.5 for Compaq products called the Compaq
+Support Software Diskette (SSD) for Windows NT 3.5 version 1.12a. This will also
+be available on the Compaq forum on CompuServe as Softpaq #925. Refer to the
+README file for a list of drivers.
+
+The Compaq products discussed here are manufactured by Compaq Computer Corp., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding the products' performance or reliability.
+
+Additional query words: prodnt v112 ssd 3rdparty
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

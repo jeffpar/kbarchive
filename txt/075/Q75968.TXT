@@ -1,0 +1,65 @@
+DOCUMENT:Q75968  06-MAY-2001  [masm]
+TITLE   :DOCERR: Errors in MASM 6.0 "Installing and Using..." Manual
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft has confirmed that the following documentation errors occur on pages
+26 and 56 of the "Microsoft Macro Assembler Installing and Using the
+Professional Development System" manual for MASM version 6.0. We will post new
+information here when the documentation has been corrected.
+
+Page 26
+-------
+
+At the top of page 26, in Table 3.1, the file type indicator for MASM source code
+is shown as being "ASM". This is incorrect; the file type indicator for MASM
+source code is "MACRO".
+
+Page 56
+-------
+
+The statements on page 56 of the "Microsoft Macro Assembler Installing and Using
+the Professional Development System" for MASM 6.0 read:
+
+      mov  ax, 0FFh
+      int  21h
+
+They should read as follows:
+
+      mov  ah, 0FFh
+      int  21h
+
+Additional query words: 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : MS-DOS:6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q162963  09-DEC-2000  [accother]
+TITLE   :ADT/ODE: Custom Run-Time Setup Does Not Install Msaexp30.dll
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+ - Microsoft Access Developer's Toolkit, version 7.0 
+-------------------------------------------------------------------------------
+
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+When you create a setup image for a custom run-time application, the Setup
+Wizard automatically includes the file Msaexp30.dll; however, when you run your
+custom Setup program, that file is not copied to the hard drive.
+
+CAUSE
+=====
+
+The Msaexp30.dll file is not used by the run-time version of Microsoft Access
+7.0 or 97.
+
+RESOLUTION
+==========
+
+Because the file is not used by the run-time version of Microsoft Access, and
+the file is not copied to your hard drive during Setup, no action is necessary.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 97 Developer
+Edition Tools and Microsoft Access Developer's Toolkit, version 7.0.
+
+MORE INFORMATION
+================
+
+Msaexp30.dll is the Microsoft Access Expression Builder DLL. Note that in
+Microsoft Office 97 Developer Edition Tools, this file is not included in the
+list of files you are licensed to redistribute.
+
+REFERENCES
+==========
+
+For a list of files you can redistribute with your run-time application, search
+the Help Index for "files, distributing with run-time applications."
+
+Additional query words: ODE ADT Msaexp30 dll
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbOffice97 kbZNotKeyword3 kbAccessDevTK700 kbOffice97DevSearch
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

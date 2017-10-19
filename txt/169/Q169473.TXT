@@ -1,0 +1,75 @@
+DOCUMENT:Q169473  11-DEC-1999  [foxpro]
+TITLE   :BUG: Cannot Load FTSRCH.DLL When Using "Find" Tab of Help Dialog
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error appears when selecting the Find tab of the Help dialog box
+under Traditional Chinese Windows 95, after Visual FoxPro 5.0 or 5.0a is
+installed:
+
+   Can not load Ftsrch.dll, Please copy the file to your system directory or
+   searchable path
+
+The Find option disappears if help is launched again.
+
+RESOLUTION
+==========
+
+Ensure that the Ftsrch.dll file is in the Windows directory.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+1. Install VFP version 5.0/5.0a in Traditional Chinese Windows 95.
+
+2. From the Help menu, select Microsoft Visual FoxPro Help Topics.
+
+3. Click the Find tab of the Help dialog box.
+
+The error "Can not load Ftsrch.dll" appears.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

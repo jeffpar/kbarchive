@@ -1,0 +1,89 @@
+DOCUMENT:Q110610  05-FEB-2000  [foxpro]
+TITLE   :BUG: MS-DOS Report Printed on LocalTalk Causes Type 1 Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+ - Microsoft FoxPro for Macintosh, version 2.5b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message occurs when a REPORT FORM command is issued in
+FoxPro for Macintosh:
+
+   The application "unknown" has unexpectedly quit, because an error of type 1
+   occurred.
+
+CAUSE
+=====
+
+This error is produced when an untransported FoxPro for MS-DOS report is sent to
+a communication port connected to a LocalTalk network.
+
+RESOLUTION
+==========
+
+To avoid this problem, transport FoxPro for MS-DOS reports before printing them
+over LocalTalk networks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FoxPro 2.5b for Macintosh. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+NOTE: There does not have to be a printer connected to the communication port for
+this test.
+
+1. From the Apple menu, choose Control Panels, and then open the Network control
+   panel.
+
+2. Double-click LocalTalk Built-In.
+
+3. Launch FoxPro for Macintosh.
+
+4. In the Command window, issue the following command:
+
+         SET PRINTER TO COM2
+
+5. Print an untransported FoxPro for MS-DOS report.
+
+The error will be generated.
+
+Additional query words: vFoxMac FoxMac buglist2.50b
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

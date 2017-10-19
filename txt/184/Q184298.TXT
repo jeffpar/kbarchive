@@ -1,0 +1,97 @@
+DOCUMENT:Q184298  27-AUG-1999  [odbc]
+TITLE   :PRB: Project Containing UserConnection & WithEvents Crashes VB
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Creating a project that uses the WITHEVENTS clause and a UserConnection object
+causes Visual Basic IDE to crash if the Object box in the Code window is
+accessed.
+
+RESOLUTION
+==========
+
+There is no known workaround.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic and create a new project.
+
+2. From the Project menu choose References and select "Microsoft Remote Data
+   Objects 2.0" from the References dialog box.
+
+3. From the Project menu choose Components. In the Components dialog box click
+   the Designers tab and select "Microsoft UserConnection".
+
+4. From the Project menu choose "Add ActiveX Designer" and then select
+   "Microsoft UserConnection".
+
+5. Leave everything as default EXCEPT the Datasouce and Security information.
+   Provide whatever is needed to access your SQL Server.
+
+6. Click the Insert Query button on the UserConnection Designer and save it as
+   is. It is not necessary to change anything.
+
+7. Save the Userconnection, project, and the form.
+
+8. In the Code window in the General Declarations type the following line of
+   code:
+
+   DIM WITHEVENTS rs AS rdo.RDOconnection
+
+9. Save the Project and restart Visual Basic.
+
+10. Reopen the project.
+
+11. From the View menu, select Project Explorer.
+
+12. Select the form in the Project Explorer, and open the Code window for the
+   form.
+
+13. Now try to select an Object from the Object combo box in the upper left
+   corner of the code window.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

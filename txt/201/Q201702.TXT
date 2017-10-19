@@ -1,0 +1,66 @@
+DOCUMENT:Q201702  04-MAR-1999  [sms]
+TITLE   :SMS: Win16 Bindery Client Receives Error During Logon Script
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbsetup kbClient kbsms200 kbsms200bug kbBindery kbCAP kbDiscovery kbOSNovell
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When 16-bit clients run the logon script over Bindery services, the following
+error may appear within the client's logon script window:
+
+   ERROR: \\<servername>\SYS\SMLOGON\X86.bin\SMSNW1.EXE returned 34819!
+   Cannot run the SMS bootstrap!
+
+The boot process will continue and the client is successfully discovered and
+installed. This error occurs when running the NetWare VLM client from Microsoft
+Windows 3.1 or Microsoft Windows for Workgroups 3.11, and not when the user logs
+on from MS-DOS.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: prodsms cli16nw login execute
+
+======================================================================
+Keywords          : kbinterop kbsetup kbClient kbsms200 kbsms200bug kbBindery kbCAP kbDiscovery kbOSNovell 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

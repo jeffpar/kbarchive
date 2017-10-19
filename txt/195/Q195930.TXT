@@ -1,0 +1,70 @@
+DOCUMENT:Q195930  25-FEB-1999  [winnt]
+TITLE   :Memory Usage by MS-DOS Application Steadily Increases
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Memory usage by any MS-DOS application that repeatedly calls the functions
+_dos_findfirst or _dos_findnext may continue to grow until the application
+quits. When you view the working set or private bytes using a diagnostic tool
+such as Performance Monitor, the size may steadily increase over time.
+
+CAUSE
+=====
+
+MS-DOS applications run on Windows NT under the Windows NT Virtual DOS Machine
+(NTVDM) subsystem. Each time an MS-DOS application calls the _dos_findfirst API,
+memory is allocated by the NTVDM and is used to keep the necessary search
+context information needed to handle subsequent calls to _dos_findnext. This
+memory is not deallocated until the directory search is complete or the process
+ends. The amount of memory allocated for each _dos_findfirst request varies
+based on the version of Windows NT, but is in the range of 1 KB to 2 KB for each
+request.
+
+RESOLUTION
+==========
+
+The only way the NTVDM can be sure a directory search has completed is when
+either _dos_findfirst or _dos_findnext returns non-zero, which indicates no
+matching entry. Applications should be written to finish each search, or the
+application can be rewritten as a 32-bit application. Under Win32, the functions
+FindFirstFile and FindNextFile replace the functions _dos_findfirst and
+_dos_findnext respectively. The Win32 function FindClose is provided to
+deallocate all related memory when the search handle is no longer required.
+
+Additional query words: ntee ee console memory
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351xsearch kbWinNT400xsearch kbWinNTW351xsearch kbWinNTW351 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400 kbWinNTS351 kbWinNTS351xsearch
+Version           : WinNT:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

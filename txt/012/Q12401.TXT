@@ -1,0 +1,68 @@
+DOCUMENT:Q12401  26-JUN-2001  [utilities]
+TITLE   :PRB: Single Stepping IN to 8259A Controller Gives Wrong Result
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS, versions 2.2, 3.0, 3.11, 3.14, 4.0, 4.01, 4.05, 4.1 
+ - Microsoft CodeView for Windows, versions 3.0, 3.05, 3.06, 3.07, 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+CodeView disables all interrupts at the interrupt controller when
+single-stepping an instruction. If you single-step an IN instruction that
+accesses an 8259A interrupt controller, the value returned will be 0xFF and not
+the true value you would expect.
+
+CAUSE
+=====
+
+This is a restriction imposed by the 8086 chip, which forces CodeView to disable
+interrupts when single-stepping.
+
+RESOLUTION
+==========
+
+The following are two of the simplest ways to work around this restriction:
+
+1. Issue G IP+1 or G IP+2, depending on whether the instruction is a one- or
+   two-byte IN instruction. This does not single-step the instruction; it sets a
+   temporary breakpoint at the next instruction and executes up to the
+   breakpoint, thus appearing as if you just single-stepped.
+
+-or-
+
+2. If you accidentally single-step the IN instruction, you can get the real
+   value of the interrupt controller by issuing I 0x21. This returns the value
+   of the port directly, so you can change the value in the AX register by
+   issuing RAX=value and continue single- stepping.
+
+Additional query words: 2.20 3.00 4.00 4.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView220DOS kbCodeView300DOS kbCodeView311DOS kbCodeView314DOS kbCodeView400DOS kbCodeView401DOS kbCodeView405DOS kbCodeView410DOS kbCodeView300 kbCodeView305 kbCodeView306 kbCodeView307 kbCodeView400 kbCodeView401 kbCodeView410
+Version           : :2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

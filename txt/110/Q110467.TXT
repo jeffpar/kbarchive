@@ -1,0 +1,172 @@
+DOCUMENT:Q110467  12-FEB-2000  [pcmail]
+TITLE   :PC Win: Description of 3.2 Setup Process
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the client installation process for version 3.2 of
+Microsoft Mail for Windows. It tells you which files are transferred, modified,
+or replaced when you install Mail for Windows on a Microsoft Windows version 3.1
+client workstation.
+
+The primary purpose of this article is to give Mail administrators a rough idea
+of what happens during the setup process. Use this document as a guide when
+doing a manual installation.
+
+MORE INFORMATION
+================
+
+Definitions
+-----------
+
+     Term              Description
+   ---------------------------------------------------------------------
+
+   \WINDIR\          Represents the previously installed Windows
+                     directory
+
+   \MSMAIL\          Represents the newly installed Microsoft Mail for
+                     Windows 3.0b directory created during setup
+
+   C:                Represents the drive letter
+
+Files and Directories Added by the Setup Process
+------------------------------------------------
+
+C:\WINDIR\ 
+   MSMAIL.INI        Mail for Windows initialization file
+   SCHDPLUS.INI      Schedule+ for Windows initialization file
+
+C:\WINDIR\MSAPPS\PROOF\ 
+   MSSP_AM.LEX       Dictionary
+   MSSPELL.DLL       Spell checker
+
+C:\WINDIR\MSMAIL\MSMAIL\ 
+   FILES.INI         Mail driver information
+   SCHDPLUS.INI      Schedule+ for Windows initialization file
+
+C:\MSMAIL\ 
+   MSMAIL.EXE        Mail For Windows program file
+   CONVERT.EXE       Converts folders from Mail 2.1
+   FAXVIEW.EXE       FAX viewer
+   FAXVIEW.HLP       FAX viewer help file
+   IMPEXP.DLL        Import/Export of folders
+   SCHEDMSG.DLL      Schedule+ invite form
+   MSMAIL.HLP        Mail for Windows help file
+   WINHELP.HLP       Windows 3.1 help file for Help
+   CBTLIB3.DLL       Computer-based training
+   CLKLIB.DEX        Demo files
+   MSMAIL.LES        Computer-based training lessons
+   PLAY.EXE          Runs the demo
+
+C:\WINDIR\SYSTEM\ 
+   VFORMS.DLL        Standard forms
+   AB.DLL            Address book
+   DEMILAYR.DLL      Memory
+   FRAMEWRK.DLL      User interface
+   MAILMGR.DLL       Authorization
+   MAILSPL.EXE       Spooler
+   MAPI.DLL          Mail application interface
+   MSMAIL3.FON       Default proportional font
+   PABNSP.DLL        Personal address book name service provider
+   STORE.DLL         Message store
+   SENDFILE.DLL      Send File option for File Manager
+   MSSFS.DLL         Microsoft Shared File System (PC Mail) transport
+   TRNSCHED.DLL      Schedule+ transactions
+   MAIL.DAT          Advanced Security (if activated)
+
+Modifications to WIN.INI
+------------------------
+
+Adds three key lines to the existing [Extensions] section:
+
+      [Extensions]
+      dcx=C:\MSMAIL\FAXVIEW.EXE ^.dcx
+      scr=C:\MSMAIL\FAXVIEW.EXE ^.scr
+      mmf=C:\MSMAIL\MSMAIL.EXE /F ^.mmf
+
+Creates a new [Mail] section and adds a single key line:
+
+      [Mail]
+      MAPI=1
+
+Creates a new [MS Proofing Tools] section or modifies the [MS Proofing Tools]
+section if it already exists and adds two key lines for Spelling and Customer
+Dict:
+
+         [MS Proofing Tools]
+      Spelling 1033,0=C:\WINDIR\MSAPPS\PROOF\MSSPELL.DLL,
+        C:\WINDIR\MSAPPS\PROOF\MSSP_AM.LEX
+      Custom Dict 1=C:\MSMAIL\CUSTOM.
+
+Adds one key line to the existing [Sounds] section:
+
+      [Sounds]
+      MailBeep=
+
+Files and Directories Changed by the Setup Process
+--------------------------------------------------
+
+C:\WINDIR\ 
+   PROGMAN.INI       Program Manager initialization file
+   REG.DAT           Registration database for Microsoft Mail
+   WIN.INI           Windows initialization file
+   WINFILE.INI       File Manager initialization file
+
+Changes to PROGMAN.INI
+----------------------
+
+Creates new group file (Microsof.grp) if one does not exist and adds the
+Microsoft Mail icon as a group item with these properties:
+
+   Description:        Microsoft Mail
+   Command Line:       \MSMAIL\msmail.exe
+   Working Directory:  \MSMAIL
+
+Changes to REG.DAT
+------------------
+
+Places a line in the registration database (REG.DAT) for Microsoft Mail using
+\MSMAIL\MSMAIL.EXE as the command line.
+
+Changes to WINFILE.INI
+----------------------
+
+Creates new [AddOns] section or modifies existing [AddOns] section:
+
+      [AddOns]
+      Mail File Manager Extension=\WINDIR\SYSTEM\SENDFILE.DLL
+
+Additional query words: 3.20 install list
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

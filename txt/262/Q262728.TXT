@@ -1,0 +1,68 @@
+DOCUMENT:Q262728  20-OCT-2000  [exchange]
+TITLE   :XFOR: Inbody Addressing Doesn't Work aft. Moving SNADS Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After moving a working SNADS connector to a different server in a different
+site, the Inbody addressing feature may not work correctly.
+
+CAUSE
+=====
+
+This problem may be a result of the SNADS addressing using the previous Exchange
+Server Routing Group Name when the default SNADS address used for Inbody
+addressing was changed to the new default site name.
+
+The default SNADS address uses the first eight characters of the Exchange Server
+site name.
+
+Example: SNADS SITENAME(&m)
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+ - Change the Routing Group Name in SNA Directory services, to match the
+   existing SNADS site addressing on Exchange Server.
+
+   or
+
+ - Change Site Addressing on the new Exchange Server site to match the SNADS
+   address that is configured on the host in SNA Directory services.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

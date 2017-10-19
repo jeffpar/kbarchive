@@ -1,0 +1,60 @@
+DOCUMENT:Q159051  21-FEB-2002  [winnt]
+TITLE   :AlphaServer Hangs on Installation of Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the installation process of Windows NT Server or Windows NT Workstation
+version 4.0 on a DEC AlphaServer, the setup process may cause the computer to
+stop responding. The computer may stop responding to user input as well.
+
+CAUSE
+=====
+
+On an installation of Windows NT Server or Windows NT Workstation version 4.0,
+the installation stops responding when it attempts to update the NVRAM variables
+on computers that have 120 N/S EPROM parts. This problem affects Sable, Gamma,
+Lynx, and Rawhide.
+
+RESOLUTION
+==========
+
+Microsoft has included the fix for this problem in the release of Service Pack 2
+for Windows NT Server and Windows NT Workstation version 4.0.
+
+
+Additional query words: Setup Alpha DEC Crash Hang
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

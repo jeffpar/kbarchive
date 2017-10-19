@@ -1,0 +1,63 @@
+DOCUMENT:Q183545  16-DEC-1999  [exchange]
+TITLE   :XWEB: NTLM Authentication Fails Between Two Computers with OWA
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Microsoft Internet Explorer client connects to a Microsoft Internet
+Information Server (IIS) using NTLM authentication, the browser caches the
+security token. All subsequent connections to the server by this client that
+request an NTLM response are responded to with the information that is currently
+cached.
+
+Connections using Basic authentication are similar; however, only the username
+and password are cached. There is no checking of Windows NT credentials. When
+you attempt to connect to a remote mailbox during this session, authentication
+must be passed again; however, authentication is passed from the cache and is
+valid because it is only a username and password, thus allowing access.
+
+With NTLM, the client connects to the IIS computer and gains access to the
+Logon.asp page by generating a hashed password and obtaining a security token.
+This security token is only valid for that connection to that IIS computer. When
+you attempt to open a remote mailbox and you are prompted for logon credentials,
+the browser sends the security token that was cached, which being only valid for
+the connection to the IIS computer itself, results in denied access.
+
+This is called a double-hop impersonation. NTLM does not support double hop,
+because security tokens and hashes are only valid for the computer on which they
+are generated.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

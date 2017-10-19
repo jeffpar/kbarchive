@@ -1,0 +1,108 @@
+DOCUMENT:Q74739  06-NOV-1999  [win16sdk]
+TITLE   :Implicit Casting by C Compiler Can Cause Problems
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a function call is made in ANSI C, the compiler implicitly casts the
+arguments passed to the function to the types specified in the function's
+prototype. Implicit casting to promote signed integers or characters (int, char)
+to longer unsigned types (DWORD, WORD) can cause unexpected behavior. The
+difficulties occur because the signed shorter value is promoted by extending its
+sign bit to the high-order bits of the unsigned longer type.
+
+An application can avert the problems caused by sign extension by explicitly
+casting function arguments to unsigned short types.
+
+MORE INFORMATION
+================
+
+In accordance with the ANSI standard, if the shorter value has the sign bit set,
+the compiler first converts the value to a signed longer value by extending the
+sign. The compiler extends the sign by filling the high-order bits with 1s. It
+then converts the signed longer value to unsigned by adding to it the number
+that is one larger than the largest unsigned value of that type. This does not
+change the bit pattern in a 2s complement implementation. For more information,
+see Section 3.2.1.2 of the ANSI C Standard.
+
+To see how this can cause unexpected behavior, consider an application in the
+Microsoft Windows graphical environment that calls the GlobalAlloc function. The
+second parameter of the function, dwBytes, is an unsigned long quantity.
+However, in this application, this parameter contains an signed integer
+expression that evaluates to a number greater than the largest positive signed
+integer value (32,767):
+
+       HANDLE FAR PASCAL GlobalAlloc(WORD, DWORD);  // function prototype
+
+      int a, b; // int = short (16-bit) signed integer
+
+      a = 9500;
+      b = 4;
+
+      GlobalAlloc(GMEM_MOVEABLE, a*b);
+
+The result of a*b is 38,000 (1001010001110000), and the sign bit of the int is
+set. To implement the implicit cast to an unsigned long value (DWORD), the value
+is first converted to a signed long value:
+
+      11111111111111111001010001110000
+
+The value that is one greater than the largest unsigned long value is then added,
+as follows:
+
+         11111111111111111001010001110000
+      + 100000000000000000000000000000000
+      -----------------------------------
+         11111111111111111100101000111000 (4,294,939,760 decimal)
+
+GlobalAlloc attempts to allocate 4,294,939,760 bytes of memory rather than
+38,000, and it fails. The GlobalAlloc call in the application should be as
+follows:
+
+      GlobalAlloc(GMEM_MOVEABLE, (WORD)a*(WORD)b);
+
+Problems caused by implicit casting and sign extension are also encountered
+frequently when an application passes characters to the AnsiUpper and AnsiLower
+functions. The prototypes for these functions are as follows:
+
+      LPSTR FAR PASCAL AnsiUpper(LPSTR);
+      LPSTR FAR PASCAL AnsiLower(LPSTR);
+
+To pass a signed character to AnsiUpper,
+
+      AnsiUpper((DWORD)(BYTE)c) is correct,
+      AnsiUpper((DWORD)c) is incorrect.
+
+Additional query words: 3.00 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,214 @@
+DOCUMENT:Q194922  06-MAY-2002  [vbwin]
+TITLE   :INFO: Receiving Data Using the MSComm Control's OnComm Event
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbIO kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbCodeSam
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates a basic template for using an event driven data
+receiving routine with the OnComm event. This is the recommended method of
+receiving all types of data using the MSComm control. For information on
+converting binary data, please see the REFERENCES section at the end of this
+article.
+
+MORE INFORMATION
+================
+
+When using the MSCOMM control to send and receive serial data, it is best to use
+event driven communications. This method is more efficient than polling, as it
+uses less CPU time and will only initiate an action when input is received.
+Below is a simple template to use which will allow for very efficient receiving
+of characters with minimal data loss.
+
+The idea is to use the OnComm event to receive the data, then write the raw data
+to a string and pass it to another routine to do the processing of the raw data.
+Passing the data to another routine allows the OnComm event to receive every
+event without being "suppressed," while the actual parsing of the string takes
+place elsewhere.
+
+The following example will assume that you have a null modem cable attached
+between COM1 and COM2. This is only necessary for testing. App1 is the COM1
+application, App2 is the COM2 application.
+
+Steps to Create App1
+--------------------
+
+1. Create a new Standard EXE project. Form1 is created by default.
+
+2. Choose Components from the Project menu, check the "Microsoft Comm Control,"
+   and click OK.
+
+3. Add an MSCOMM control to the form.
+
+4. Add a TextBox and a CommandButton to the form. Change the MultiLine property
+   of the TextBox to True.
+
+5. Add the following code to Form1's code window:
+
+         Private Sub Form_Load()
+            Form1.Caption = "App1"
+            With MSCOMM1
+               .Handshaking = 2 - comRTS
+               .RThreshold = 1
+               .RTSEnable = True
+               .Settings = "9600,n,8,1"
+               .SThreshold = 1
+               .PortOpen = True
+               ' Leave all other settings as default values.
+            End With
+            Command1.Caption = "&Send"
+            Text1.Text = "Test string from App1 "
+         End Sub
+
+         Private Sub Command1_Click()
+            MSComm1.Output = Text1.Text
+         End Sub
+
+         Private Sub Form_Unload(Cancel As Integer)
+            MSComm1.PortOpen = False
+         End Sub
+
+Steps to Create App2
+--------------------
+
+1. Start a new instance of Visual Basic.
+
+2. Create a new Standard EXE project. Form1 is created by default.
+
+3. Choose Components from the Project menu, check the "Microsoft Comm Control,"
+   and click OK.
+
+4. Add an MSCOMM control to the form.
+
+5. Add a TextBox to the form. Change the MultiLine property of the TextBox to
+   True. Enlarge the TextBox so it will cover most of the form, as you will be
+   displaying all the received data in it.
+
+6. Add the following code to Form1's code window:
+
+         Private Sub Form_Load()
+            Form1.Caption = "App2"
+            With MSComm1
+               .CommPort = 2
+               .Handshaking = 2 - comRTS
+               .RThreshold = 1
+               .RTSEnable = True
+               .Settings = "9600,n,8,1"
+               .SThreshold = 1
+               .PortOpen = True
+               ' Leave all other settings as default values.
+            End With
+            Text1.Text = ""
+         End Sub
+
+         Private Sub Form_Unload(Cancel As Integer)
+            MSComm1.PortOpen = False
+         End Sub
+
+         Private Sub MSComm1_OnComm()
+            Dim InBuff As String
+
+            Select Case MSComm1.CommEvent
+            ' Handle each event or error by placing
+            ' code below each case statement.
+
+            ' This template is found in the Example
+            ' section of the OnComm event Help topic
+            ' in VB Help.
+
+            ' Errors
+               Case comEventBreak   ' A Break was received.
+               Case comEventCDTO    ' CD (RLSD) Timeout.
+               Case comEventCTSTO   ' CTS Timeout.
+               Case comEventDSRTO   ' DSR Timeout.
+               Case comEventFrame   ' Framing Error.
+               Case comEventOverrun ' Data Lost.
+               Case comEventRxOver  ' Receive buffer overflow.
+               Case comEventRxParity   ' Parity Error.
+               Case comEventTxFull  ' Transmit buffer full.
+               Case comEventDCB     ' Unexpected error retrieving DCB]
+
+            ' Events
+               Case comEvCD   ' Change in the CD line.
+               Case comEvCTS  ' Change in the CTS line.
+               Case comEvDSR  ' Change in the DSR line.
+               Case comEvRing ' Change in the Ring Indicator.
+               Case comEvReceive ' Received RThreshold # of chars.
+                  InBuff = MSComm1.Input
+                  Call HandleInput(InBuff)
+               Case comEvSend ' There are SThreshold number of
+                              ' characters in the transmit buffer.
+               Case comEvEOF  ' An EOF character was found in the
+                              ' input stream.
+            End Select
+
+         End Sub
+
+         Sub HandleInput(InBuff As String)
+            ' This is where you will process your input. This
+            ' includes trapping characters, parsing strings,
+            ' separating data fields, etc. For this case, you
+            ' are simply going to display the data in the TextBox.
+            Text1.SelStart = Len(Text1.Text)
+            Text1.SelText = InBuff
+         End Sub
+
+Steps to Run Applications
+-------------------------
+
+1. Press the F5 key or click the run button on each project. You will need to
+   move the apps around so you can see them both running at the same time.
+
+2. Make sure you have a standard null modem cable between COM1 and COM2, or
+   change the MSComm1.Port properties to match the comm ports you are using.
+
+3. Click the CommandButton on App1; you should see the string "Test string from
+   App1" appear in App2's TextBox for each button click.
+
+REFERENCES
+==========
+
+For information on converting binary data, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q158008 : HOWTO: Use MSCOMM32.OCX to Transfer Data on DBCS Windows
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q194923 : HOWTO: Trap Control Characters Using the MSComm Control
+
+Additional query words: mscomm
+
+======================================================================
+Keywords          : kbcode kbIO kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbCodeSam 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

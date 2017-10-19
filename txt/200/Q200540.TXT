@@ -1,0 +1,58 @@
+DOCUMENT:Q200540  27-JUL-2001  [sms]
+TITLE   :Quick Viewer Displays Black Screen When You Try Remote Control
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbtool kbRemote kbsms kbHelpDesk kbRemoteProgkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SMS Remote Control Agent service running on Microsoft Windows NT Systems
+Management Server-based client computer requires access to the desktop. This is
+enabled by default and should not be changed to ensure proper functionality. If
+you change the SMS Remote Control Agent service properties so that it can not
+interact with the desktop, the Quick Viewer Window displays a black screen and
+not the client computer's actual desktop.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Start the Services tool in Control Panel, and then view the Startup section
+   of the SMS Remote Control Agent.
+
+2. Enable the "Allow Service To Interact With The Desktop" feature, stop and
+   then restart the service.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbRemote kbsms kbHelpDesk kbRemoteProg kbfaq
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,81 @@
+DOCUMENT:Q137988  27-JUL-2001  [sms]
+TITLE   :"Final SQL Operations Failure" Error when Upgrading to SMS 1.1
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to upgrade Systems Management Server from version 1.0 to
+version 1.1, the following error message appears:
+
+   Final SQL Operations failure
+
+CAUSE
+=====
+
+
+You may find the cause of this error in the bottom section of the C:\SMSSETUP.LOG
+file. Frequently, the file contains the cause of the failed SQL operations, or
+the cause may be in the SQL registry key: SMSVersion.
+
+
+RESOLUTION
+==========
+
+To correct this problem, modify the registry:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Run Registry Editor (REGEDT32.EXE).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+   \SOFTWARE\Microsoft\SMS\Setup
+
+3. Select Version.
+
+4. From the Edit menu, choose String.
+
+5. If the value is 692, change the value to 600.
+
+6. Choose OK and quit the Registry Editor.
+
+7. Shut down and restart Windows NT.
+
+8. Run the upgrade program again to upgrade to Systems Management Server 1.1.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

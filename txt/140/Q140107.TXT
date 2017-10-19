@@ -1,0 +1,73 @@
+DOCUMENT:Q140107  09-NOV-1999  [pcmail]
+TITLE   :PC Win: Message Templates Not Supported in Shared Folder
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.2a,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can create a Mail message template that can be used for sending the same
+type of message to the same recipients. The instructions for creating the
+template are outlined in the Microsoft Mail on-line help file, MSMAIL.HLP.
+
+After you create a template, you can move the template to a special folder for
+later use. However, a message template cannot be placed in a shared folder.
+
+MORE INFORMATION
+================
+
+Once a message template is in the shared folder, it appears as a sent message.
+This is by design.
+
+When you store the template in a private folder, it is stored in your mail
+message file (MMF). However, when the template is moved or copied to a shared
+folder, it is converted from an internal MMF storage structure to a structure
+that is used by shared folders. The shared folders are stored in the \FOLDERS
+subdirectory on the postoffice server.
+
+NOTE: The Microsoft Mail for PC Networks, MS-DOS workstation stores its shared
+folders in the same manner and does not have the feature for this same reason.
+
+When a message is stored in the MMF file, its fields are accessible. When the
+message is moved to a shared folder the Federal Information Processing Systems
+(FIPS) information is sealed; therefore, it becomes unavailable. As long as the
+message is kept in a MMF file structure, the functionality will remain
+available.
+
+NOTE: FIPS message format is described in FIPS PUB 98. This format is a subset of
+the CCITT X.400 standard for interpersonal messaging. FIPS refers to the format
+used to store the raw data files. Vendor-defined (such as Microsoft) field
+refers to an individual element of the message. For example, To:, From:, and
+Attachment: are all vendor-defined fields.
+
+Additional query words: 3.00 3.20 3.20a 3.50 msmail templates shared
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail350 kbMail320 kbMail320a
+Version           : WINDOWS:3.0,3.2,3.2a,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

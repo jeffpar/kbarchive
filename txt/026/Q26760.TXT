@@ -1,0 +1,58 @@
+DOCUMENT:Q26760  15-APR-2000  [powerpt]
+TITLE   :PPT: Creating a Labeled Drawing Object
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:4.0; WINDOWS:4.0,7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+ - Microsoft PowerPoint for Macintosh, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to label a drawing object in the versions of
+Microsoft PowerPoint listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+After you create an object, such as a rectangle, a rounded rectangle, or an
+oval, you can add a text label. To do this, select the drawing object and then
+start typing the text you want. The text appears in the drawing object.
+
+NOTE: You can wrap text in the drawing object and display the ruler for labels.
+To do this, click AutoShape on the Format menu, click the Text Box tab, and then
+click to select the "Word wrap text in AutoShape" check box.
+
+Additional query words: 4.0 7.0 8.0 95 ppt powerpt macppt mppt
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt700Search kbPowerPt400 kbPowerPt400Mac
+Version           : MACINTOSH:4.0; WINDOWS:4.0,7.0
+Hardware          : MAC
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

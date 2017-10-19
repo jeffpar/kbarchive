@@ -1,0 +1,61 @@
+DOCUMENT:Q271802  23-OCT-2000  [winnt]
+TITLE   :Passwords in Metadirectory Services Cannot Be Reset to Null
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1,2.2
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is possible to change the password on a metaverse object from the default
+value, null, to an actual value using the Entry Administration button on the
+Operational tab. When you attempt to set the password value back to null on the
+same metaverse object, you may receive the following error message:
+
+   An Authentication error occurred. The password was not changed.
+
+CAUSE
+=====
+
+This behavior can occur because a password cannot be reset to null after it has
+been changed from null to an actual value.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

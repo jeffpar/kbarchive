@@ -1,0 +1,186 @@
+DOCUMENT:Q150122  03-AUG-2001  [visualc]
+TITLE   :PRB: CDaoRecordView Toolbar Buttons Malfunction
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.00 4.10 4.20 4.20b 5.00
+OPER/SYS:
+KEYWORDS:kbcode kbusage kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC60
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+CDaoRecordView depends on an instance of CDaoRecordset to display data. The
+CDaoRecordView class also needs to stay in synchronization with the current
+record displayed by the CDaoRecordset instance. Calling the Seek, MoveFirst,
+MoveNext, or other methods directly on the CDaoRecordset being used by a
+CDaoRecordView causes the CDaoRecordView to behave incorrectly.
+
+CAUSE
+=====
+
+CDaoRecordView uses four member variables to keep track of bookkeeping
+information. The first three variables listed below store bookmarks for the
+first, last, and current record. The fourth variable is used to enable or
+disable the toolbar buttons corresponding to MoveFirst, MovePrev, MoveNext, and
+MoveLast.
+
+   m_varBookmarkCurrent
+   m_varBookmarkFirst
+   m_varBookmarkLast
+   m_nStatus
+
+These variables are only maintained when the CDaoRecordView::OnMove method is
+invoked. This method invokes the CDaoRecordset MoveFirst, MoveNext,
+MovePrevious, or MoveLast methods, and updates the variables. Only OnMove keeps
+these variables in synchronization.
+
+The following list contains the more common CDaoRecordset methods that change the
+current record:
+
+   - Find            - Move            - Requery
+   - FindFirst       - MoveFirst       - Seek
+   - FindLast        - MoveLast        - SetAbsolutePosition
+   - FindNext        - MoveNext        - SetBookmark
+   - FindPrev        - MovePrev        - SetPercentPosition
+
+When the AddNew method is called, a new record is added to the recordset but the
+current record bookmark does not change. To change the newly added record to the
+current record, use the following method:
+
+      // set the current bookmark to the newly added record
+      m_pSet->SetBookmark(GetLastModifiedBookmark());
+
+NOTE: GetLastModifiedBookmark() needs to be called right after the call to
+Update() to return the newly added record. Calling it after one of the
+recordview MoveXXXX functions returns a bookmark to the record that was current
+prior to the move operation.
+
+RESOLUTION
+==========
+
+After performing a CDaoRecordset method for an instance utilized by
+CDaoRecordView, reset the CDaoRecordView's bookkeeping variables as shown in the
+following code:
+
+      if (!m_pSet->Seek(...))
+      {
+        if( !m_pSet->IsEOF() )
+        {
+            m_varBookmarkCurrent = 1L;   // <<- re-initialize
+            m_varBookmarkFirst =         // <<- the bookmark
+               m_varBookmarkLast = 0L;   // <<- member variables!
+           // Enable toolbar buttons
+           m_nStatus |= AFX_DAOVIEW_SCROLL_BACKWARD;// First & Prev buttons
+           m_nStatus |= AFX_DAOVIEW_SCROLL_NEXT;    // next toolbar button
+           m_nStatus |= AFX_DAOVIEW_SCROLL_LAST;    // last toolbar button
+        }
+        else
+        {
+           // Move to some valid record
+        }
+     }
+     else
+     {
+        // Seek failed - move to a valid record
+     }
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Generate a default AppWizard application named SeekTest, and give it the
+   following attributes:
+
+    - Database View without File Support.
+
+    - Select a data source, using DAO and a Table recordset type.
+
+    - Open the Student Registration database (STDREG32.MDB) on the SECTION
+      table.
+
+2. Using the Resource View, add several text boxes to the IDD_SEEKTEST_FORM
+   dialog resource that appears. Use the CTRL-DBLCLK short-cut to bind columns
+   in SECTION to the dialog resource.
+
+3. Add a button to the IDD_SEEKTEST_FORM resource. Using ClassWizard, add the
+   following code:
+
+         m_pSet->SetCurrentIndex( _T("PrimaryKey") );
+
+         COleVariant varCourse ( _T("MATH201"), VT_BSTRT );
+         COleVariant varSection( _T( "1"     ), VT_BSTRT );
+
+         if(! m_pSet->Seek( _T( "=" ), &varCourse, &varSection ) )
+         {
+             // Seek failed - need to move to a valid record
+             m_pSet->MoveFirst();
+         }
+         UpdateData( FALSE );
+
+4. Compile, build, and run the program.
+
+5. Click the MoveNext (>) button and then the MovePrevious (<) button to
+   disable the MoveFirst (|<) and MovePrevious (<) toolbar buttons.
+
+6. Click the Seek button. Note that the MoveFirst and MovePrevious buttons are
+   still incorrectly disabled.
+
+Adding the code to clear the bookmarks, and resetting the m_nStatus variable
+corrects the toolbar and prevents other problems.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q145686 CDaoRecordView Bookmark Members Invalid After Requery()
+
+   Q145719 DAOENROL - Can't See Added Records in Windows 95
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbusage kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbAudDeveloper kbMFC
+Version           : 4.00 4.10 4.20 4.20b 5.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

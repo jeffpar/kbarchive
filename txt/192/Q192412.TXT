@@ -1,0 +1,93 @@
+DOCUMENT:Q192412  24-DEC-1999  [sna]
+TITLE   :Changing Service Account for HSI Service Loses Cryptographic Key
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, and 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changing the service account for which the HSI (Host Security Integration)
+services run under, causes Host Security to function incorrectly.
+
+CAUSE
+=====
+
+When Host Security is initially installed, the service user account is given a
+cryptographic key based on the user ID that was chosen during the installation
+setup process. This information is then taken and put into the registry and is
+referenced when the HSI services start.
+
+If the user account has changed, it will not match the original cryptographic key
+information, causing the Host Account Cache (HAC) to become corrupted and HAC
+lookups to fail. Reviewing the application log in the Event Viewer will show the
+following errors coming from source SNA Host Security:
+
+   Event ID 1244
+   Unable to import cryptographic key into container Supplied code
+   0x8009000d
+
+   Event ID 594
+   Host Process - was unable to create connection handle to connect to PMP
+
+   Event ID 629
+   Host Process - was unable to create connection handle to connect to UDB
+
+WORKAROUND
+==========
+
+Use the original Service Account and password that the Host Security Services
+were initially installed under.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0SP1,
+3.0SP2, 3.0SP3, 3.0SP4, 4.0, 4.0SP1, 4.0SP2, and 4.0SP3.
+
+MORE INFORMATION
+================
+
+HSI is comprised of three services: SNAPMP, SNADATABASE and SNAHOSTPROCESS. All
+three services must run under the same service account due to the way that HSI
+was implemented.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q235472 All Host Security Services Must Run in Same Windows NT Account
+
+   Q248354 Changing Password on HS Service Account May Cause SSO to Fail
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

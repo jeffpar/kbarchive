@@ -1,0 +1,61 @@
+DOCUMENT:Q264506  30-JUL-2000  [winnt]
+TITLE   :Documentation Error in Install.doc File in Services for UNIX 2.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes a documentation error in the Install.doc file included
+with Services for UNIX 2.0.
+
+MORE INFORMATION
+================
+
+The following incorrect statement is displayed in the Install.doc file:
+
+   Password Synchronization must be installed on a Windows domain controller.
+
+This text is incorrect and should read as follows:
+
+   For domain passwords, password synchronization must be installed on Windows
+   domain controllers. Otherwise, it will synchronize passwords of local users.
+
+You can use Password Synchronization to synchronize either domain or local
+passwords. If you want to synchronize passwords for domain accounts, install
+Password Synchronization on all domain controllers. However, if you want to
+synchronize only a single local database, you only need to install Password
+Synchronization on the single authorizing Windows NT-based server.
+
+Additional query words: sfu solar coaster solarcoaster
+
+======================================================================
+Keywords          :  
+Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

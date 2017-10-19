@@ -1,0 +1,70 @@
+DOCUMENT:Q304591  14-MAR-2002  [sms]
+TITLE   :SMS: Mouse and Keyboard May Not Work in Remote Control Session
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP3 
+ - Microsoft Windows XP Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are in a Systems Management Server (SMS) Remote Control session to a
+Windows XP-based client, your mouse and keyboard may not function in the remote
+control session, but you may be able to see screen refreshes.
+
+CAUSE
+=====
+
+This problem can be caused by the start of a Windows XP Remote Desktop session
+to the client computer. When the Remote Desktop session connects, it switches
+the current user context on the client computer. SMS is unable to handle this
+context switch, and loses mouse and keyboard functionality.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Wait for the Remote Desktop session to end, and then reconnect with the SMS
+   Remote Control feature.
+
+ - Use Windows XP Remote Desktop and Remote Assistance as the remote solution
+   for Windows XP-based computers.
+
+STATUS
+
+Microsoft has confirmed this to be a problem in Systems Management Server version
+2.0.
+
+
+Additional query words: prodsms rc rd
+
+======================================================================
+Keywords          : kbenv kbtool kbsms200 kbsms200bug 
+Technology        : kbWinXPPro kbSMSSearch kbSMS200 kbSMS200SP3 kbWinXPProSearch kbWinXPSearch
+Version           : :2.0,2.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

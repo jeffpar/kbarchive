@@ -1,0 +1,60 @@
+DOCUMENT:Q106113  08-AUG-2001  [winnt]
+TITLE   :Doc Err: Mandatory Profiles Assigned to Local Groups
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+Step 4 on page 428 of the Windows NT Advanced Server System Guide
+implies that mandatory user profiles can be assigned to local groups.
+This is a documentation error. If you assign a mandatory profile to a
+local group when you, as a user from that local group, attempt to log
+onto a Windows NT computer other than the primary domain server in
+that domain, you the following error message appears:
+
+   The mandatory profile cannot be loaded.
+
+You are then unable to logon.
+
+This occurs because local groups can be accessed only by the domain
+servers and not by the workstations. Also, the permissions on the
+profiles assigned to local groups can be read only by the primary
+domain controller of the domain.
+
+You should assign mandatory user profiles to Global groups instead of
+Local groups.
+
+Microsoft has confirmed this to be a problem in the Windows NT
+Advanced Server System Guide for Version 3.1. We are researching this
+problem and will post new information here in the Microsoft Knowledge
+Base as it becomes available.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

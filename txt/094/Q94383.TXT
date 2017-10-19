@@ -1,0 +1,68 @@
+DOCUMENT:Q94383  23-NOV-1999  [msdos]
+TITLE   :Error Copying Files with Interlnk on Stacker Volume
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+Using Interlnk's INTERSVR command on a volume that has been compressed using
+Stacker version 2.0 may fail if INTERSVR incorrectly calculates the amount of
+free disk space. If this is the case and you attempt to copy a file to the
+compressed volume, you will receive the following error message:
+
+   Error writing drive <drive>:
+
+MORE INFORMATION
+================
+
+When you run INTERSVR on a compressed Stacker volume, Interlnk may incorrectly
+calculate the amount of free disk space on the server machine. Although the DIR
+command (when issued locally) may report little or no free disk space, the DIR
+command issued through Interlnk may report several megabytes of free disk
+space.
+
+This may potentially cause data corruption, but a reproducible case hasn't been
+found.
+
+This problem occurs with Stacker; this problem does not occur with Microsoft
+DoubleSpace.
+
+Stacker is manufactured by STAC Electronics, a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 6.0 3rdparty dblspace 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

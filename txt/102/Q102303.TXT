@@ -1,0 +1,48 @@
+DOCUMENT:Q102303  30-JUL-2001  [lanman]
+TITLE   :Lost Apple Printer Connection Due to Outdated Mac Services
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+A customer reported losing connection with Apple printers such as the
+Laserwriter II NT printer. The network was connected to Ethernet through an
+ETHERLINK box (which converts LOCALTALK to ETHERTALK) and used servers loaded
+with LM QUEUES.
+
+CAUSE
+=====
+
+This can be due to Mac Services being out of date or missing.
+
+RESOLUTION
+==========
+
+Make sure you are running Mac Services 1.0a--check the dates on files in
+C:\LANMAN\MACINTOSH 1/14/93. If you are not running the most current version,
+load it and try capturing the Apple printer again.
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

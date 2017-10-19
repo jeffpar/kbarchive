@@ -1,0 +1,60 @@
+DOCUMENT:Q168407  17-JUL-2001  [visualc]
+TITLE   :DOC: $(InputDir) and $(ProjDir) Produce Relative Paths
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS NT: 5.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article:
+
+   TITLE: Macros for Custom Build Commands URL : mk:@ivt:dsug/D7/S111AB.HTM
+
+states that $(InputDir) and $(ProjDir) evaluate to the fully-qualified path to
+the project directory. This is in error.
+
+MORE INFORMATION
+================
+
+$(InputDir) evaluates to the path of the directory containing the input file.
+This path is relative to the project directory if the input file is in the
+directory tree rooted at the directory containing the project file. Otherwise,
+it is absolute.
+
+$(ProjDir) evaluates to the path of the directory specified for the project,
+relative to the project directory (i.e., always evaluates to).
+
+Additional query words: kbOLDocs kbVC500 kbdss kbDSupport
+
+======================================================================
+Keywords          : kbdocerr kbVC500 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : WINDOWS NT: 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

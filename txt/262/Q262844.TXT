@@ -1,0 +1,73 @@
+DOCUMENT:Q262844  09-APR-2001  [iis]
+TITLE   :PRB: Error -2147024893 When You Try to Start IIS Admin Service
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbDSupport kbiis400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the IIS Admin service, you may receive the following error
+message:
+
+   Unable to connect to active server object -2147024893
+
+CAUSE
+=====
+
+This problem occurs when the Iischema.dll file has become corrupt or
+unregistered.
+
+RESOLUTION
+==========
+
+To resolve this problem, re-register Iischema.dll. To do this, type the
+following command at a command prompt:
+
+   "regsvr32 iischema.dll" (without the quotation marks)
+
+Note Iischema.dll is usually located in the Winnt/System32/Inetsrv folder.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+At a command prompt, type the following command to unregister Iischema.dll:
+
+   "regsvr32 iischema.dll /u" (without the quotation marks)
+
+
+Additional query words: -2147024893
+
+======================================================================
+Keywords          : kbDSupport kbiis400 
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

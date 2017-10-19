@@ -1,0 +1,73 @@
+DOCUMENT:Q215023  05-MAY-2000  [sms]
+TITLE   :Datdupck.exe Finds Duplicates That Datdupcl.exe Does Not Clean
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Datdupck.exe tool in conjunction with the Datdupcl.exe tool,
+Datdupck.exe may list tables that Datdupcl.exe does not attempt to clean.
+
+For example, this is a sample excerpt from the Datdupck.log file:
+
+   3 Duplicate datakeys found in Table: groupxyz_COMM
+
+However, this table is absent from the Datdupcl.log file.
+
+CAUSE
+=====
+
+The missing tables are not for groups that belong to the personal computer
+architecture. The query used by Datdupck.exe does not consider the architecture
+of a group and may list tables for those groups with duplicates that are not in
+the personal computer architecture. Datdupcl.exe cleans only the tables for
+groups that belong to the personal computer architecture.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2.
+
+MORE INFORMATION
+================
+
+For more information about the Datdupck.exe and Datdupcl.exe tools from the
+Microsoft BackOffice Resource Kit, see the following article in the Microsoft
+Knowledge Base:
+
+   Q192859 SMS 1.2 SP4 Includes SMSIDDUP, DATDUPC, and DATDUPCL
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

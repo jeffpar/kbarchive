@@ -1,0 +1,65 @@
+DOCUMENT:Q142083  09-MAR-2000  [mastering]
+TITLE   :PRB: Mastering Visual FoxPro: Full-Text Search Internal Error
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual FoxPro 3.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to execute a full-text search from the Find tab on the Navigator
+results in the following error:
+
+   An internal error has occurred. If the problem persists, please restart the
+   application and try again.
+
+CAUSE
+=====
+
+The problem may be related to an invalid directory listed in the TEMP
+environment variable or listing a directory that is not on the C: drive (such as
+SET TEMP d:\temp).
+
+RESOLUTION
+==========
+
+Users have reported that removing the SET TEMP command from the Autoexec.bat
+file corrects this problem.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will report more information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00 1995multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm 
+Technology        : kbMSPressSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

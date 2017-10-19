@@ -1,0 +1,101 @@
+DOCUMENT:Q275301  13-JAN-2001  [vbwin]
+TITLE   :BUG: Kodak Image Edit Controls Causes Error in VB IDE on Win Me
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbVBp kbVBp600 kbIDEProject kbDSupport kbOSWinME kbOSWinMEbug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0, used with:
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, used with:
+    - the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to add the Kodak Image Edit Controls from the Components dialog
+box in the Visual Basic integrated development environment (IDE) on Windows
+Millennium Edition (Me), you may receive the following error message:
+
+   " could not be loaded
+
+CAUSE
+=====
+
+The registry contains an invalid TypeLib version key.
+
+The Windows Me TypeLib version registry key for the Imgedit.ocx file is for
+TypeLib version 2.2, but the Imgedit.ocx file contains TypeLib version 2.1. When
+Visual Basic attempts to load the control, it finds that the TypeLib versions do
+not match.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Click Start, click Run, and type "regsvr32 /u imgedit.ocx" (without the
+   quotation marks). This unregisters the control.
+
+2. Click Start, click Run, and type "regsvr32 imgedit.ocx" (without the
+   quotation marks). This re-registers the control.
+
+3. In Visual Basic, create a new Standard EXE project.
+
+4. On the Project menu, click Components.
+
+5. Click to select the Kodak Image Edit Control check box.
+
+6. Click Apply.
+
+You can now use the control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual Basic, create a new Standard EXE project.
+
+2. On the Project menu, click Components.
+
+3. Click to select the Kodak Image Edit Control check box.
+
+4. Click Apply.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbVBp kbVBp600 kbIDEProject kbDSupport kbOSWinME kbOSWinMEbug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

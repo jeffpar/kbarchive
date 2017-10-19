@@ -1,0 +1,106 @@
+DOCUMENT:Q74925  04-MAY-2001  [masm]
+TITLE   :FIX: A1010 from Unclosed Segment in MASM @ShowStr Macro
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Macro Assembler (MASM) version 6.0 includes a predefined macro in
+DOS.INC called @ShowStr that displays a $-terminated string. When the argument
+to @ShowStr is a string literal and there are no segment directives or ends
+directives following the occurrence of @ShowStr, the assembler will generate the
+following error:
+
+   fatal error A1010: unmatched block nesting: _DATA
+
+RESOLUTION
+==========
+
+To work around this problem, make sure that a simplified segment directive or
+ends directive follows the @ShowStr macro.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+was corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+When @ShowStr is passed a string literal, the macro generates the following
+code:
+
+      sseg    TEXTEQU @CurSeg        ; save current segment
+      .DATA                          ; change segment
+      msg     BYTE    ofset, "$"     ; terminate string with a '$'
+      sseg    SEGMENT                ; restore segment
+      mov     dx,     OFFSET msg
+      mov     ah,     9
+      int     21h                    ; display '$' terminated string
+
+The line "sseg SEGMENT" restores the segment but the macro never closes the
+segment; it relies on the user subsequently closing the segment with the
+appropriate ends directive or by opening another segment with a simplified
+segment directive. If the segment is left open, an A1010 error is generated.
+
+In the sample code below, @ShowStr is in a segment started with .CODE. In the
+macro expansion, that segment is ended and the next segment begun with .DATA.
+The code segment is restored with the statement _TEXT SEGMENT. This segment is
+not closed in the macro or in the subsequent code, so the A1010 error is
+produced. The error can be eliminated by uncommenting either of the commented
+lines.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   .MODEL small
+
+   INCLUDE dos.inc
+
+   .STACK 4096
+   .CODE
+       .startup
+       @ShowStr "Hello"
+       .exit 0
+   ; uncomment one of the following lines to work around the problem
+   ; _TEXT ENDS
+   ; .DATA
+
+   END
+
+Additional query words: 6.00 buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : MS-DOS:6.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

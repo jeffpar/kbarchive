@@ -1,0 +1,82 @@
+DOCUMENT:Q157776  14-NOV-2000  [word97]
+TITLE   :WD97: Horizontal Lines Are Displayed with Different Widths
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kblayout
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some horizontal lines expand the width of the display window and appear to be
+left-aligned, and other horizontal lines appear to be centered and have a fixed
+width of 6.5 inches. This problem occurs when formatting Web pages.
+
+CAUSE
+=====
+
+The horizontal line inserted by using the Horizontal Line button or the first
+line style in the Horizontal Line dialog box is centered in the document but
+expands the width of the document window, giving it the appearance of being
+left-aligned.
+
+The graphical line styles, beginning with the second line style in the Horizontal
+Line dialog box, are GIF images that have a fixed length.
+
+By default, all horizontal lines are formatted with the Align=center attribute.
+
+WORKAROUND
+==========
+
+To work around the problem, choose one of the following methods:
+
+Method 1. Use the same style for all horizontal lines on your Web page.
+
+Method 2. Modify the HTML source and change the HR tag attributes so that they
+resemble the attributes of the IMG SRC tag used by the graphical lines.
+
+For example, if the tag for the graphical line looks like this:
+
+   <IMG SRC Align="Center" Width=575 Height=10>
+
+change the HR tag so that it looks like this:
+
+   <HR Align="Center" Width=575 Height=10>
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+
+Additional query words: 97 8.0 word8 word97
+
+======================================================================
+Keywords          : kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

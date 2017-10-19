@@ -1,0 +1,70 @@
+DOCUMENT:Q158393  08-NOV-2001  [homegame]
+TITLE   :Soccer: Game Hangs When Red-Carded Player Takes Corner Kick
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Soccer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you or your computer opponent selects a red-carded player to take a free or
+corner kick, the player does not approach the ball, and the game stops
+responding (hangs).
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, substitute a new player for the red-carded
+player as soon as possible. To do this, follow these steps:
+
+1. Press the ESC key, and then click Coaching.
+
+2. To substitute a player on the home team, click and drag the number for a new
+   player and drop it on the number for the red-carded player.
+
+3. To substitute a player on the away team, click See Away, and then click and
+   drag the number for a new player and drop it on the number for the red-carded
+   player.
+
+4. Click Play Game.
+
+NOTE: Soccer substitutes the new player for the red-carded player the next time
+the ball is out of play (goal kicks, corner kicks, and throw-ins) and in your
+possession.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Soccer, version 1.0.
+
+Additional query words: 1.0 football erratic movement stuck hang red card soccer eject freeze up crash stop plays kicks off msgame
+
+======================================================================
+Keywords          : kbimu msgame kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbSoccer
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

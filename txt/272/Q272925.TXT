@@ -1,0 +1,72 @@
+DOCUMENT:Q272925  23-OCT-2000  [exchange]
+TITLE   :XFOR: Notes Connector Quits with Messages in the Browser Log
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5,5.5 SP1,5.5 SP2,5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55 exc55sp1 exc55sp2 exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Connector for Lotus Notes quits and the following
+messages are reported in the browser log:
+
+   2000/08/15 02:11:07- LME-NOTES-MEXIN(0044) 3 31500:Sender: user name, Size:
+   4356, Message ID: C=US;a= ;p=PRMD;l=A2F3C19E0772D411AA0900D0B774DAC1
+   2000/08/15 02:11:06 Microsoft Exchange >> mexe(3677)
+   2000/08/15 02:13:21- LME-NOTES-NTSMEX(017a) 2 54006:Error {Security
+   violation}: Notes to Exchange Attachment XFM failed >> nts2mex(2382)
+   2000/08/15 02:13:21- LME-NOTES-NTSMEX(017a) 2 00500:An ABNORMAL SHUTDOWN
+   request has been received >> stdmain(920)
+   2000/08/15 02:13:21- LME-NOTES-NTSMEX(017a) 3 00505:LME-NOTES-NTSMEX is
+   ending, last return code was {A shutdown request was made} >>
+   stdmain(958)
+
+CAUSE
+=====
+
+This issue occurs when a message that contains an attachment that is encrypted
+is sent from Lotus Notes to Exchange Server.
+
+WORKAROUND
+==========
+
+To work around this issue, remove the message that matches the last one logged
+in Exchange.box; this message causes Exchange Notes Connector to quit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

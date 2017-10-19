@@ -1,0 +1,136 @@
+DOCUMENT:Q183518  11-JAN-2001  [vbwin]
+TITLE   :PRB: Cannot Set TabStops in ListBox Using SendMessage API
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the SendMessage API and the LB_SETTABSTOPS message to define custom
+TabStops within a ListBox control to give the appearance of multiple columns,
+there is no effect on a ListBox control whose Style property is set to "1 -
+Checkbox."
+
+CAUSE
+=====
+
+To set the columns in the ListBox, send the ListBox control a LB_SETTABSTOPS
+message along with information to define the TabStops. A list box must be
+created with the LBS_USETABSTOPS style to respond to this message. The Visual
+Basic ListBox with a style set to "1 - Checkbox" is not created with the
+LBS_USETABSTOPS style. Therefore, the LB_SETTABSTOPS message has no effect on
+the ListBox control.
+
+RESOLUTION
+==========
+
+To set custom TabStops within the standard Visual Basic ListBox control, you
+must set the style setting to "0 [ASCII 150] Standard." Alternatives include
+using controls provided by third-party vendors, or using the Microsoft Grid or
+ListView controls to obtain the look and functionality you desire.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project.
+
+2. Add a command button to Form1.
+
+3. Add a ListBox control to Form1.
+
+4. Paste the following code into Form1's code window:
+
+         Option Explicit
+
+         Private Declare Function SendMessage Lib "User32" _
+                                  Alias "SendMessageA" _
+                                  (ByVal hWnd As Long, _
+                                  ByVal wMsg As Long, _
+                                  ByVal wParam As Long, _
+                                  lParam As Any) As Long
+         Private Const LB_SETTABSTOPS = &H192
+
+         Private Sub Command1_Click()
+             Dim ListBoxTabs(2) As Long
+             Dim result As Long
+
+             'Set the tab stop points.
+             ListBoxTabs(1) = 75
+             ListBoxTabs(2) = 200
+
+             'Send LB_SETTABSTOPS message to ListBox.
+             result = SendMessage(List1.hWnd, LB_SETTABSTOPS, _
+                                  UBound(ListBoxTabs) + 1, _
+                                  ListBoxTabs(1))
+
+             'Refresh the ListBox control.
+             List1.Refresh
+         End Sub
+
+         Private Sub Form_Load()
+             'Add a few items to the ListBox.
+             List1.AddItem "January Sales" & vbTab & _
+                           "February Sales" & vbTab & _
+                           "March Sales"
+             List1.AddItem "50" & vbTab & _
+                           "500" & vbTab & _
+                           "5000"
+         End Sub
+
+5. Save and run the project.
+
+6. Click Command1.
+
+   RESULT: Two TabStops are set in the ListBox control. The first is 75 twips and
+   the second is 200 twips.
+
+7. Stop the application.
+
+8. Set the Style property of the ListBox control to "1 [ASCII 150] Checkbox."
+
+9. Repeat steps 5 and 6.
+
+   RESULT: The TabStops do not affect the ListBox control.
+
+Additional query words: list box check box kbVBp500 kbVBp600 kbControl kbWin32SDK kbAPI 
+kbVBp kbdsd kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

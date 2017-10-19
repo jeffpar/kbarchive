@@ -1,0 +1,82 @@
+DOCUMENT:Q270057  24-NOV-2000  [iis]
+TITLE   :Upgrade to Windows 2000 Indexing Service Deletes Custom Catalogs
+PRODUCT :Internet Information Server
+PROD/VER::2000
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Indexing Service 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade to Windows 2000 Server Indexing Service, custom catalogs that
+were created by using Index Server version 2.0 and earlier are lost. There are
+only two catalogs (the "Web" and the "System" catalog) that are installed with
+the product by default.
+
+CAUSE
+=====
+
+The method used to build catalogs in Windows 2000 Indexing Service is different
+from the method used in Index Server version 2.0 and earlier. For this reason,
+all custom catalogs are removed during the upgrade.
+
+RESOLUTION
+==========
+
+In Windows 2000 Indexing Service, you must manually re-create each additional
+custom catalog (beyond the default catalogs). You can reuse the previous catalog
+build names, and the content will be re-indexed by using the new Indexing
+Service methods when they are created. You can add additional catalogs to the
+Indexing Service by using the Indexing Service snap-in.
+
+To create a new catalog, open Computer Management under Administrative Tools,
+click the Services and Applications tab, and follow these steps:
+
+1. Right-click Indexing Service, click New, and then click Catalog.
+
+2. Specify the name of the catalog in the Name field, and then enter the
+   location for the catalog file (for example, c:\catalogs).
+
+3. Stop, and then restart Indexing Service by right-clicking Indexing Service,
+   selecting Stop, and then clicking Start.
+
+MORE INFORMATION
+================
+
+The new product name for Index Server 2.0 is Indexing Service. Indexing Service
+is now part of the core operating system, as it is now being used to catalog
+physical directories, as well as Web content information.
+
+
+Additional query words: Index Server 3.0 Lost Disappeared Old W2K
+
+======================================================================
+Keywords          :  
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbIdxServSearch kbAudDeveloper kbIdxServ100
+Version           : :2000
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

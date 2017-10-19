@@ -1,0 +1,96 @@
+DOCUMENT:Q131110  02-FEB-2002  [homekids]
+TITLE   :Writer/Artist: How to Change User Names
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.00 1.10 1.10a | 1.00 1.10 1.10a
+WINDOWS         | MACINTOSH
+kbusage kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+ - Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to change your user name in Creative Writer or Fine Artist.
+
+To change your user name, follow the instructions appropriate for your Windows or
+Macintosh operating system.
+
+WINDOWS
+-------
+
+These instructions involve copying and deleting files and folders. For more
+information about how to accomplish these tasks in Windows, see your Windows
+printed documentation or online help.
+
+1. Start Creative Writer or Fine Artist.
+
+2. Click I'm New. Type the information you want for your new user name.
+
+3. Exit the program.
+
+4. In the Mskids\Users folder, open the directory with the old user name.
+
+5. Copy all files, except ~user.inf, ~maguser.inf, and ~maxuser.inf to the new
+   user's directory.
+
+6. Delete the folder with the old user name.
+
+When you restart Creative Writer or Fine Artist, the old user name is removed and
+you should follow the instructions for updating the new user.
+
+MACINTOSH
+---------
+
+1. Start Creative Writer or Fine Artist.
+
+2. Click I'm New. Type the information you want for your new user name.
+
+3. Exit the program.
+
+4. From your hard disk drive, open the MSKids folder, then open the USERS
+   folder.
+
+5. Open the folder with the old user name. Drag all files EXCEPT ~User Profile,
+   ~Fine Artist Preferences, and ~Creative Writer Preferences into the new user
+   name folder.
+
+6. Drag the old user name folder to the Trash.
+
+When you restart Creative Writer or Fine Artist, the old user name is removed and
+you should follow the instructions for updating the new user.
+
+Additional query words: 1.00 1.10 1.10a kbhowto mac kids mskids artist maggie max writer username change modify new old list screen
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword8 kbZNotKeyword2 kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist100 kbFineArtist110 kbFineArtist110a kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+Version           : MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

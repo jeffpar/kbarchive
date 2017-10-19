@@ -1,0 +1,75 @@
+DOCUMENT:Q248777  07-SEP-2001  [automap]
+TITLE   :Streets and Trips 2000: Error When Selecting a Different Printer
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbprint kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to print from Microsoft Expedia Streets and Trips 2000, you may
+receive the following error message:
+
+   Runtime Error: Abnormal Program Termination
+
+If you click Details, you receive the following error message:
+
+   Autmap71.exe caused an invalid page fault in module Mfc42.dll.
+
+CAUSE
+=====
+
+This behavior can occur if you select a printer other than the default printer
+in the Print dialog box.
+
+RESOLUTION
+==========
+
+To work around this issue, set the printer that you want to use as the default
+printer before you attempt to print from Expedia Streets and Trips 2000:
+
+1. Click Start, point to Settings, and then click Printers.
+
+2. In the Printers window, right-click the printer that you want to use, and
+   then click Default.
+
+3. Close the Printers window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Expedia Streets and
+Trips 2000.
+
+Additional query words: multi multi-media media auto-map amap
+
+======================================================================
+Keywords          : kberrmsg kbprint kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,95 @@
+DOCUMENT:Q87975  26-JUN-1999  [win16sdk]
+TITLE   :DOC: EnumFontFamProc Documentation Incorrect
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbtoolkbtoolg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 266 of the Microsoft Windows Software Development Kit (SDK)
+"Programmer's Reference, Volume 2: Functions" manual, the documentation for the
+EnumFontFamProc callback function incorrectly defines the NEWLOGFONT data
+structure, which is not listed in the WINDOWS.H header file. An application
+should use the ENUMLOGFONT data structure, which is listed in the WINDOWS.H
+header file, with the EnumFontFamProc function.
+
+MORE INFORMATION
+================
+
+The EnumFontFamProc function is an application-defined callback function
+specified when the application calls the EnumFontFamilies function. The function
+prototype for EnumFontFamProc is as follows:
+
+      int CALLBACK EnumFontFamProc(
+          LOGFONT FAR* lpnlf,    // structure contains logical-font data
+          TEXTMETRIC FAR* lpntm, // structure contains physical-font data
+          int FontType,          // type of font
+          LPARAM lParam);        // address of application-defined data
+
+The EnumFontFamProc documentation defines a NEWLOGFONT data structure that
+contains information that is specific to TrueType fonts. As stated earlier, the
+NEWLOGFONT data structure does not appear in the WINDOWS.H header file.
+
+Windows calls the EnumFontFamProc function with a pointer to the ENUMLOGFONT data
+structure, which is defined in the WINDOWS.H header file as follows:
+
+      #define LF_FULLFACESIZE (LF_FACESIZE * 2)
+
+      typedef struct tagENUMLOGFONT
+      {
+
+         LOGFONT elfLogFont;
+         char    elfFullName[LF_FULLFACESIZE];
+         char    elfStyle[LF_FACESIZE];
+
+      } ENUMLOGFONT, FAR* LPENUMLOGFONT;
+
+An application can ease its access to the elfFullName and elfStyle members in an
+EnumFontFamily enumeration by defining its EnumFontFamProc callback function as
+follows:
+
+      int CALLBACK EnumFontFamProc(
+          LPENUMLOGFONT lpelf,   // structure contains logical-font data
+          TEXTMETRIC FAR* lpntm, // structure contains physical-font data
+          int FontType,          // type of font
+          LPARAM lParam);        // address of application-defined data
+
+In the EnumFontFamProc function, if the TRUETYPE_FONTTYPE bit in the FontType
+parameter is true, the function can access these members using
+lpelf->elfFullName and lpelf->elfStyle.
+
+Additional query words: 3.10 docerr
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

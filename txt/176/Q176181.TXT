@@ -1,0 +1,71 @@
+DOCUMENT:Q176181  14-MAR-1999  [exchange]
+TITLE   :XCON: NDRs Dropped on Message to Recipient w/ Multiple DDAs
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you submit a message to a recipient address that contains multiple DDA
+pairs, any non-delivery report (NDR) that may occur for the message will be
+discarded by the Store. An example of an address which meets this criteria is as
+follows:
+
+   C=<country code>;A=<admd>;P=<prmd>;O=<organization>;
+   DDA:RFC822=User@domain.com;DDA:MSXCX500=C=<country code>;A=<admd>;
+   P=<prmd>;O=<organization>;OU=<organizational unit>;CN=User
+
+CAUSE
+=====
+
+As in the above example, the DDA pairs are defined in the following order:
+
+   DDA1 type, DDA1 value, DDA2 type, DDA2 value
+
+However, when parsing the address, the order was assumed as DDA1 type, DDA2 type,
+DDA1 value, DDA2 value. As such, a failure occurs upon parsing of the address
+when more than 1 DDA is present.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

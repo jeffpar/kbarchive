@@ -1,0 +1,56 @@
+DOCUMENT:Q99155  30-JUL-2001  [lanman]
+TITLE   :Upper Memory Conflict Hangs LM During Protocol Loading
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When a workstation is cold booted (when you turn it on or reset the hardware),
+LAN Manager hangs while trying to load protocols such as NetBEUI. If this does
+not repeat during a warm boot (when you press CTRL+ALT+DEL), the problem may be
+a conflict in upper memory.
+
+CAUSE
+=====
+
+Cold and warm boots cause different behavior because certain network adapters,
+when initialized, store memory buffers at software configurable addresses in
+upper memory (640-1024 KB).
+
+During a cold boot these buffers have not yet been configured, so EMM386 can
+select their address areas for itself, causing a memory conflict when the
+adapter tries to assign buffer addresses. During a warm boot, adapter memory
+buffers are already configured in upper memory; EMM386 detects them and avoids
+their memory areas.
+
+RESOLUTION
+==========
+
+To verify that this is the problem, remark out EMM386: if the problem
+disappears, use the x-parameter to tell EMM386 to avoid areas of upper memory
+claimed by other software.
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

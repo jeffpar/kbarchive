@@ -1,0 +1,83 @@
+DOCUMENT:Q320196  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 2002: No Landing Lights or Virtual Cockpit
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2002 
+ - Microsoft Flight Simulator 2002 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you fly any of the following planes in Microsoft Flight Simulator 2002,
+the landing lights are not visible from the cockpit, and the virtual cockpit is
+not available:
+
+ - Mooney Bravo
+
+ - Learjet 45
+
+ - Schweizer 2-32 Sailplane
+
+ - Sopwith Camel
+
+ - Cessna 182RG
+
+While you fly the Extra 300S stunt plane, no landing lights are available. (The
+virtual cockpit is available.)
+
+CAUSE
+=====
+
+Not all the planes in Microsoft Flight Simulator 2002 have virtual cockpits or
+the ability to let you see the landing lights from the cockpit. These are new
+features in Flight Simulator 2002. The planes in the list in the "Symptoms"
+section of this article have not been updated to include these new features.
+
+NOTE: The Extra 300S stunt plane has no landing lights because the actual (or
+"real-world") plane has no landing lights.
+
+RESOLUTION
+==========
+
+To fly with landing lights, do either of the following:
+
+ - Switch to a spot plane view, from which you can see the landing lights.
+
+ - Select a different plane. Planes that are not mentioned in the "Symptoms"
+   section of this article have landing lights that are visible from the
+   cockpit.
+
+To fly with a virtual cockpit, select a plane that is not on the list in the
+"Symptoms" section of this article.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

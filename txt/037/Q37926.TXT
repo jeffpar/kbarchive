@@ -1,0 +1,66 @@
+DOCUMENT:Q37926  09-NOV-1999  [macmail]
+TITLE   :Mac DOS: Using the MS-DOS PRINT Command with Mail
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, MS-DOS workstation, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To use the MS-DOS print spooler (the PRINT command) with Microsoft Mail (MS- DOS
+client), you must load the resident portion of the PRINT program before you run
+the Notifier.
+
+MORE INFORMATION
+================
+
+The PRINT command is a terminate-and-stay-resident (TSR) program that may affect
+the proper operation of the Notifier if it is loaded on top of the Notifier in
+memory. To load the resident portion of the PRINT command, type "print" (without
+the quotation marks) at the MS- DOS prompt. MS-DOS will display the following
+prompt:
+
+   Name of list device [PRN]:
+
+If you receive the message "Bad command or file name," change to the directory
+that contains the MS-DOS utilities, then retype "print" (without the quotation
+marks). Type in the communications port to which your printing device is
+attached (for example, LPT1:, LPT2:, COM1:) and press ENTER. MS-DOS will display
+the following prompt:
+
+   Resident part of PRINT installed
+   Print queue is empty
+
+You should now able to load the Notifier, run Mail, and, when necessary, use the
+PRINT command from the MS-DOS prompt.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailATN300DOS kbMailATN310DOS
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

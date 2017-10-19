@@ -1,0 +1,71 @@
+DOCUMENT:Q239065  08-OCT-1999  [exchange]
+TITLE   :XADM: Error Message: LDAP Authentication Method Is Not Supported
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you configure Microsoft Exchange Mailbox Manager on a server running
+Exchange Server 5.0 Service Pack 2, and click the Server Selection tab, no
+servers are listed, and you may receive the following error message:
+
+   LDAP Authentication method is not supported
+
+WORKAROUND
+==========
+
+If you have a computer running Exchange Server version 5.5 in the site, you can
+configure Mailbox Manager from that server.
+
+If you do not have any Exchange Server 5.5 computers in the site, you can still
+run Microsoft Exchange Mailbox Manager on the 5.0 computer. Cleanup is performed
+on mailboxes on that server, although you cannot see the server on the Server
+Selection tab.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 3.
+
+MORE INFORMATION
+================
+
+This behavior also affects the retrieval of hidden mailboxes.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

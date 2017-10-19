@@ -1,0 +1,237 @@
+DOCUMENT:Q319462  06-AUG-2002  [sms]
+TITLE   :SMS: Travel Mode Discovery Property May Not Be Reported in DDRs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP3,2.0 SP4
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbui kbsms200 kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0 SP3, 2.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TravelMode discovery property may not be reported in client discovery
+properties in the SMS Administrator tool or its associated DDR after you apply
+the hotfix that is described in the following Microsoft Knowledge Base article:
+
+   Q281107 Travel-Mode Clients May Lose Inventory or Not Run Advertisements
+
+This affects existing Microsoft Windows NT clients on which the SMS Client was
+installed with the Windows NT Remote Client Installation. This includes SMS
+component servers on which the SMS Client was installed by using the SMS Windows
+NT Service Discovery Agent/Windows NT Remote Client Installation combination.
+However, new clients that are installed after the hotfix from Q281107 has been
+installed report the new property in their discovery data.
+
+CAUSE
+=====
+
+The clients Ccmdata.tcf file that is located in the
+%systemroot%\MS\SMS\Core\Data folder only exists for clients that are installed
+by using the Windows NT Remote Client Installation method. The discovery
+properties to be collected during the discovery process are contained in the
+[DISCOVERY PROPERTIES] section of this file. This file is not updated when the
+hotfix from Q281107 is applied.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Only apply it to systems
+that are experiencing this specific problem. This fix may receive additional
+testing. Therefore, if you are not severely affected by this problem, Microsoft
+recommends that you wait for the next Systems Management Server service pack
+that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English post-Systems Management Server (SMS) Service Pack 3 version of this
+fix should have the following file attributes or later:
+
+  Date       Time   Version        Size       File name            Platform
+  -------------------------------------------------------------------------
+  02-Mar-01  00:30  2.0.92.9         394,290  Apasetup.exe         Intel
+  01-Mar-01  13:00  2.0.1493.3125    259,936  Bindclin.dll         Intel
+  02-Mar-01  00:15  2.0.1493.3251    182,096  Ccim32.dll           Intel
+  02-Mar-01  00:15  2.0.92.9       1,324,082  Ccmcore.exe          Intel
+  02-Mar-01  00:15  2.0.1493.3251  3,402,213  Clicore.exe          Intel
+  02-Mar-01  00:10  2.0.1493.3238     88,432  Clisvcl.exe          Intel
+  02-Mar-01  00:15  2.0.1493.3251      8,512  Cliver.exe           Intel
+  02-Mar-01  01:15                        67  Compverbase.ini      Intel
+  02-Mar-01  01:15                        67  Compversmsapm32.ini  Intel
+  02-Mar-01  01:15                        67  Compverswdist.ini    Intel
+  01-Mar-01  22:20  2.0.1493.3216     39,264  Cqmgr32.dll          Intel
+  01-Mar-01  13:00  2.0.1493.3125    338,272  Mslmclin.dll         Intel
+  01-Mar-01  13:00  2.0.1493.3125    269,664  Ndsclin.dll          Intel
+  02-Mar-01  00:00  2.0.1493.3236     54,128  Odpsys32.exe         Intel
+  02-Mar-01  00:00  2.0.1493.3236     60,272  Odpusr32.exe         Intel
+  25-Sep-01  23:14  2.0.1250.7       762,688  Preinst.exe          Intel
+  02-Mar-01  00:30  2.0.1493.3242    289,136  Smsapm32.exe         Intel
+  02-Mar-01  00:00  2.0.92.9         639,507  Swdist32.exe         Intel
+  02-Mar-01  00:30  2.0.92.9         654,799  Apasetup.exe         Alpha  
+  02-Mar-01  00:15  2.0.1493.3251    293,648  Ccim32.dll           Alpha
+  02-Mar-01  00:15  2.0.92.9       1,925,241  Ccmcore.exe          Alpha
+  02-Mar-01  00:15  2.0.1493.3251  4,442,606  Clicore.exe          Alpha
+  02-Mar-01  00:10  2.0.1493.3238    125,712  Clisvcl.exe          Alpha
+  02-Mar-01  00:15  2.0.1493.3251     13,584  Cliver.exe           Alpha
+  02-Mar-01  01:15                        67  Compverbase.ini      Alpha
+  02-Mar-01  01:15                        67  Compversmsapm32.ini  Alpha
+  02-Mar-01  01:15                        67  Compverswdist.ini    Alpha
+  01-Mar-01  22:20  2.0.1493.3216     66,832  Cqmgr32.dll          Alpha
+  01-Mar-01  13:00  2.0.1493.3125    578,832  Mslmclin.dll         Alpha
+  02-Mar-01  00:00  2.0.1493.3236     75,024  Odpsys32.exe         Alpha
+  02-Mar-01  00:00  2.0.1493.3236     83,728  Odpusr32.exe         Alpha
+  02-Mar-01  00:30  2.0.1493.3242    384,272  Smsapm32.exe         Alpha
+  02-Mar-01  00:00  2.0.92.9         693,008  Swdist32.exe         Alpha
+
+NOTE: Because of file dependencies, the most recent hotfix or feature that
+contains the preceding files may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+
+For additional information about the SMS 2.0 SP4 HRP, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+
+MORE INFORMATION
+================
+
+How to Install the Hotfix
+-------------------------
+
+Apply this fix on all of the sites in the SMS hierarchy. To install the fix, use
+one of the following methods.
+
+How to Use the Hotfix Installer:
+
+NOTE: You can use this method only on Intel-based computers.
+
+1. Copy the hotfix folder structure to a local folder on your site server or to
+   a share on your network. The I386 and Alpha subfolders are required; you must
+   also download them from the Microsoft FTP site. It is important to keep the
+   folder structure intact. The Q319462.exe file is a Microsoft Windows
+   Installer file that updates specific files on your site server.
+
+2. Log on to your site server by using an account with administrator rights.
+
+3. On the site server, quit the SMS Administrator console.
+
+4. Run the Q319462.exe file and follow the instructions in the wizard. The SMS
+   services are stopped and restarted as part of the installation process.
+
+How to Manually Install the Hotfix:
+
+1. Copy the update program file (Q319462.exe) and platform folders to a new
+   folder. The folder structure must be such that the program file is located
+   one folder "above" the platform folders.
+
+2. Quit the SMS Administrator console and stop all SMS services in Control
+   Panel. If the SMS_SITE_BACKUP service is running, stop it also.
+
+3. Replace the Clicore.exe file in the
+   SMS\Inboxes\Clicomp.src\Base\<platform> folder with the version that is
+   located in the hotfix <platform> folder.
+
+4. Replace the Compver.ini file in the SMS\Inboxes\Clicomp.src\Base folder with
+   the Compverbase.ini file that is located in the hotfix <platform>
+   folder. The file should maintain its original name of Compver.ini.
+
+5. Replace the Ccmcore.exe file in the
+   SMS\Inboxes\Clicomp.src\Base\<platform> folder with the version that is
+   located in the hotfix <platform> folder.
+
+6. Replace the Apasetup.exe file in the
+   SMS\Inboxes\Clicomp.src\Base\<platform> folder with the version that is
+   located in the hotfix <platform> folder.
+
+7. Replace the Compver.ini file in the SMS\Inboxes\Clicomp.src\Smsapm32 folder
+   with the Compversmsapm32.ini file that is located in the hotfix
+   <platform> folder. The file should maintain its original name of
+   Compver.ini.
+
+8. Replace the Swdist32.exe file in the
+   SMS\Inboxes\Clicomp.src\SWDist\<platform> folder with the version that
+   is located in the hotfix <platform> folder.
+
+9. Replace the Compver.ini file in the SMS\Inboxes\Clicomp.src\SWDist folder
+   with the Compverswdist.ini file that is located in the hotfix
+   <platform> folder. The file should maintain its original name of
+   Compver.ini.
+
+10. Replace the Bindclin.dll file in the SMS\Bin\<platform> folder with
+   the version that is located in the hotfix <platform> folder.
+
+11. Replace the CCIM32.DLL file in the SMS\Bin\<platform> folder with the
+   version that is located in the hotfix <platform> folder.
+
+12. Replace the Clisvcl.exe file in the SMS\Bin\<platform> folder with the
+   version that is located in the hotfix <platform> folder.
+
+13. Replace the Cqmgr32.dll file in the SMS\Bin\<platform> folder with the
+   version that is located in the hotfix <platform> folder.
+
+14. Replace the Mslmclin.dll file in the SMS\Bin\<platform> folder with
+   the version that is located in the hotfix <platform> folder.
+
+15. Replace the Ndsclin.dll file in the SMS\Bin\<platform> folder with the
+   version that is located in the hotfix <platform> folder.
+
+16. Replace the Odpsys32.exe file in the SMS\Bin\<platform> folder with
+   the version that is located in the hotfix <platform> folder.
+
+17. Replace the Odpusr32.exe file in the SMS\Bin\<platform> folder with
+   the version that is located in the hotfix <platform> folder.
+
+18. Replace the Smsapm32.exe file in the SMS\Bin\<platform> folder with
+   the version that is located in the hotfix <platform> folder.
+
+19. Restart the SMS site services.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool kbui kbsms200 kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200SP3 kbSMS200SP4
+Version           : :2.0 SP3,2.0 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

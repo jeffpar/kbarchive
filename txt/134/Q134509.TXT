@@ -1,0 +1,78 @@
+DOCUMENT:Q134509  28-JUL-2001  [win95x]
+TITLE   :Incorrect Colors in MS-DOS-Based Graphics Programs in a Window
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an MS-DOS-based graphics program in a Windows 95 window, its colors
+may not be displayed correctly.
+
+CAUSE
+=====
+
+MS-DOS-based graphics programs that change their color tables are known to
+exhibit this behavior in Windows 95.
+
+
+RESOLUTION
+==========
+
+To work around this problem, press ALT+ENTER to run the MS-DOS-based graphics
+program full-screen instead of in a window. If it is necessary to place the
+program in a window (for example, in order to select an image for placement on
+the Windows Clipboard), minimize the window, and then restore it. This may cause
+the colors to be redrawn correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+MORE INFORMATION
+================
+
+The following are examples of programs that exhibit this behavior:
+
+ - B-Wing by LucasArts
+
+ - Dragon Lore by MindScape
+
+ - Sierra Online Game Pak by Sierra
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

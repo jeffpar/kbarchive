@@ -1,0 +1,170 @@
+DOCUMENT:Q78928  04-DEC-1999  [homemm]
+TITLE   :Beethoven: Manual Installation Instructions
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Beethoven for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides instructions to manually install Microsoft Beethoven for
+Windows.
+
+The steps below assume:
+
+ - Your hard disk drive is C.
+
+ - Your CD-ROM drive is drive D.
+
+MORE INFORMATION
+================
+
+Copy Files
+----------
+
+1. Create a directory on the hard disk called C:\LUDWIG by typing the following
+   at the MS-DOS command prompt:
+
+   "md c:\ludwig" (without the quotation marks)
+
+2. Make it the current directory. For example, at the MS-DOS command prompt,
+   type the following and press ENTER:
+
+   "cd c:\ludwig" (without the quotation marks)
+
+3. Copy and rename the following files from the CD-ROM by typing the following
+   at the command prompt
+
+   "copy d:\<old filename> c:<new filename>" (without the quotation
+   marks)
+
+   where the following applies:
+
+      <old filename>    <new filename>
+      --------------    --------------
+
+      TBKBASE.DL_       TBKBASE.DLL
+      TBKCOMP.DL_       TBKCOMP.DLL
+      TBKUTIL.DL_       TBKUTIL.DLL
+      TBKWIN.DL_        TBKWIN.DLL
+      NINTHMSG.DL_      NINTHMSG.DLL
+      TBOOK.EX_         TBOOK.EXE
+      NINTHGLY.TB_      NINTHGLY.TBK
+      LUDWIG.IC_        LUDWIG.ICO
+      README.WRI        README.WRI
+      THENINTH.TB_      THENINTH.TBK
+
+4. Create a directory called C:\LUDWIG\MIDI. For example, type the following at
+   the MS-DOS command prompt and press ENTER:
+
+   "md c:\ludwig\midi" (without the quotation marks)
+
+5. Copy all files from the MIDI directory of the CD-ROM to the C:\LUDWIG\MIDI
+   directory. For example, type the following at the MS-DOS command prompt and
+   press ENTER:
+
+   "copy d:\midi\*.* c:\ludwig\midi" (without the quotation marks)
+
+6. The files in the C:\LUDWIG\MIDI directory have an ".MI_" extension. They need
+   to be renamed with a ".MID" extension. To change the names, type the
+   following at the MS-DOS command prompt and press ENTER:
+
+   "ren *.mi_ *.mid" (without the quotation marks)
+
+Program Manager - Create Icons
+------------------------------
+
+If you use Windows Program Manager, create a new program group for Multimedia
+Beethoven and add the Beethoven program as a new program item to this group. The
+following command line should be used:
+
+   c:\ludwig\tbook.exe c:\ludwig\theninth.tbk
+
+To have the Beethoven icon appear in the Program Manager instead of the Toolbook
+icon, choose Change Icon from the New Program Item dialog box and type the
+following filename as the file in which to look for the icon:
+
+   c:\ludwig\ludwig.ico
+
+For more information about creating new program groups, adding new program items
+to existing groups, and changing program icons in Windows, see your printed
+Windows documentation or online Help.
+
+Windows 95 - Creating Start Menu Shortcuts
+------------------------------------------
+
+If you are using Windows 95, do the following to add Beethoven to the Start
+menu:
+
+1. With your right mouse button, click the taskbar. Click Properties.
+
+2. Click the Start Menu Programs tab
+
+3. Click Advanced.
+
+4. Double-click the Programs Folder.
+
+5. Create a Beethoven Folder.
+   a. On the File menu, point to New, and then click Folder.
+
+   b. Type the following and press ENTER:
+
+   "Microsoft Beethoven" (without the quotation marks)
+
+6. Open the Microsoft Beethoven folder.
+
+7. On the File menu, point to New, and then click Shortcut.
+
+8. Type the following into the Target box:
+
+   "c:\ludwig\tbook.exe c:\ludwig\theninth.tbk" (without the quotation marks)
+
+9. Click Next
+
+10. Type the following name for the shortcut, and then click Finish:
+
+   "Microsoft Beethoven" (without the quotation marks)
+
+11. To have the Beethoven icon appear in the Start Menu instead of the toolbook
+   icon, do the following:
+   a. With your right mouse button, click the Beethoven shortcut. Then, click
+      Properties.
+
+   b. Click the Shortcut tab, and then click Change Icon.
+
+   c. Type the following in the File Name box, and then click OK:
+
+   "c:\ludwig\ludwig.ico" (without the quotation marks)
+
+   d. Click OK to finish.
+
+Additional query words: 1.00 1.0 Tbook Usage installing manual installer
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMBeethoven100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q298433  26-MAY-2001  [sms]
+TITLE   :SMS: Clients in Shared Subnet Don't Inst. in Multiple SMS Sites
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbClient kbConfig kbServer kbsms200 kbDiscovery kbUpgrade
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Clients that are in a subnet that is listed in the site boundaries of multiple
+Systems Management Server (SMS) 2.0 sites may not be listed as "installed into
+all sites" if the following conditions are met:
+
+ - Remote installation is enabled.
+
+ - Logon installation is disabled.
+
+CAUSE
+=====
+
+When remote installation creates a client configuration request (CCR) to
+remotely install a client, remote installation first checks the client for the
+existence of the SMS client service. This issue can occur if this service is
+found; the remote client installation stops, even though remote installation may
+be installing from a different site.
+
+WORKAROUND
+==========
+
+To work around this issue, enable logon installation in all of the domains from
+which clients log on. A client that is using logon installation checks all known
+sites for membership by evaluating the site boundary lists that logon points
+contain, and installs into all eligible sites.
+
+Additional query words: smallbiz prodsms
+
+======================================================================
+Keywords          : kbsetup kbClient kbConfig kbServer kbsms200 kbDiscovery kbUpgrade 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

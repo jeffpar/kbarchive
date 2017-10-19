@@ -1,0 +1,78 @@
+DOCUMENT:Q252887  01-MAY-2001  [ssafe]
+TITLE   :BUG: Truncated File Listing with Visual SourceSafe
+PRODUCT :Microsoft SourceSafe
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:_IK kbSSafe500bug kbSSafe600bug kbSSExplorer _IK kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Generating a report on file differences truncates the lines of the files.
+
+CAUSE
+=====
+
+The display limits the entire line to 80 characters, which truncates lines at 36
+characters per file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+There are two ways to work around this problem:
+
+Command line:
+
+Execute the difference from the command line by using the -D switch and
+specifying how many characters wide to make the output.
+
+External program:
+
+Gather the files from SourceSafe on which you want to perform the difference and
+use another file difference utility to compare the two files.
+
+REFERENCES
+==========
+
+Additional information can be found in the Visual SourceSafe product
+documentation by searching for:
+
+- Difference (File) (Command Line)
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbSSafe500bug kbSSafe600bug kbSSExplorer _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

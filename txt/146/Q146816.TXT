@@ -1,0 +1,92 @@
+DOCUMENT:Q146816  14-FEB-2002  [iis]
+TITLE   :IIS Troubleshooting With ODBC SQL Integration
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can test Microsoft Internet Information Server (IIS) ODBC SQL Server
+connectivity with several Microsoft SQL Server utilities. This article discusses
+the following:
+
+ - Testing Network Named Pipes
+
+ - Testing ODBC Connectivity to SQL Server
+
+ - Graphical SQL Query Tool
+
+MORE INFORMATION
+================
+
+When an IIS application has problems connecting to a SQL Server, there may be a
+problem with the network or the SQL Server. The following utilities can help
+isolate network problems.
+
+Testing Network Named Pipes
+---------------------------
+
+There are two utilities included with SQL Server designed to help test network
+named pipes. The MAKEPIPE.EXE utility is installed during the setup of SQL
+Server. The READPIPE.EXE utility is installed during setup of both DOS and OS/2
+workstations.
+
+Both utilities test the integrity of the network named pipe services. To use
+these service, please see the SQL Server Help files or the following articles in
+the Microsoft Knowledge Base:
+
+   Q68941 : INF: Procedure for Testing Named Pipes
+
+   Q110905 : INF: Readpipe Return Codes
+
+Testing ODBC Connectivity To SQL Server
+---------------------------------------
+
+The SQL Server \SQL60\BINN directory contains a 32-bit utility called
+ODBCPING.EXE. You can use this utility to troubleshoot connectivity to SQL
+Server through Microsoft ODBC SQL Server drivers. For more information on
+ODBCPING and other ODBC diagnostic tips, please see the "Connecting to a Data
+Source" section in the ODBC SQL Server 6.0 Driver Help file or the following
+articles in the Microsoft Knowledge Base:
+
+   Q138541 : INF: ODBCPING.EXE to Verify ODBC Connectivity to SQL Server
+
+   Q140895 : INF: Diagnostic Tips for the Microsoft SQL Server ODBC Driver
+
+Graphical SQL Query Tool
+------------------------
+
+You can test the SQL server with the graphical utility called ISQLW.EXE, which is
+included with Microsoft SQL Server version 6.0. Please run SQLW.HLP in the \BINN
+sub-directory of SQL Server for more information.
+
+Additional query words: prodiis
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,77 @@
+DOCUMENT:Q198135  07-MAY-2002  [homegame]
+TITLE   :Combat FS: Overlapping View Windows Appear When Switching to HUD
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you switch to the Heads Up Display (HUD) in Microsoft Combat Flight
+Simulator, two overlapping view windows may appear on the screen instead of the
+Heads Up Display forward view.
+
+CAUSE
+=====
+
+This behavior can occur if all of the following conditions are true:
+
+ - You are running Combat Flight Simulator in a window.
+ - A secondary view window is already open.
+ - An AccelGraphics AccelSTAR II 3D display adapter is installed in your
+   computer.
+ - You are using version 4.10.01.4700 or earlier of the Permedia video driver
+   for the AccelGraphics AccelSTAR II 3D display adapter.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest Permedia video driver for
+the AccelGraphics AccelSTAR II 3D display adapter from the following
+AccelGraphics Web site:
+
+   http://www.accelgraphics.com/drivers.htm
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: 1.00 msgame combatfs cfs card screens multiple
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,83 @@
+DOCUMENT:Q240805  22-OCT-2000  [iis]
+TITLE   :Err Msg: The Dependency Service Does Not Exist or Is Marked...
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Internet Information Server (IIS) 4.0 and the Windows NT Option
+Pack (NTOP), the following error message may occur:
+
+   The dependency service does not exist or is marked for deletion
+
+This error message persists when you try to manually start the services, or after
+you remove and reinstall of the NTOP.
+
+CAUSE
+=====
+
+This error message is related to missing services. For a list of the necessary
+Windows NT services required for IIS, please click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q164885 Default Services Required for Internet Information Server Services
+
+In particular, the error message is related to the following two services (as
+listed in the Control Panel Services application):
+
+    - NT LM Security Support Provider
+
+ - Remote Procedure Call (RPC) Service
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall the RPC Configuration Service from Network
+Properties. To do this, perform the following steps:
+
+1. In Control Panel, double-click the Network icon, and select the Services tab.
+
+2. If the RPC Configuration Service is listed, click to highlight it, choose
+   Remove, restart the computer and proceed to step 3. If the service is missing
+   from Network Properties, proceed to step 3
+
+3. Choose Add and select the RPC Configuration Service. This requires your
+   original Windows NT installation media and restarting your computer.
+
+4. After you add the service and restart your computer, re-apply the appropriate
+   Windows NT Service Pack.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

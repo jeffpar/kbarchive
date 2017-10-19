@@ -1,0 +1,102 @@
+DOCUMENT:Q93251  04-DEC-1999  [win16sdk]
+TITLE   :SAMPLE: WinLua.exe LUA API for 16-bit and 32-bit Windows
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI kbSDKPlatform kbOSWin310 kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WinLUA Overview
+---------------
+
+WinLUA defines a standard and consistent API for the 16 and 32-bit versions of
+the Microsoft Windows graphical environment. It encompasses a set of
+Windows-specific asyncronous notification methods designed to allow the
+programmer to take advantage of the message-driven nature of the Windows
+graphical environment.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   WinLua.exe
+   (http://download.microsoft.com/download/platformsdk/file98/3.1/W31/EN-US/WinLua.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+This API has been designed and specified to provide a standard to which
+application developers can program and network software vendors can conform.
+These API details constitute documentation for application software developers
+and a specification for network software vendors.
+
+Network software that conforms to either the WinLUA RUI or WinLUA SLI
+specification will be considered "WinLUA compliant." To be WinLUA compliant, a
+vendor must implement 100 percent of the WinLUA RUI or WinLUA SLI specification.
+Suppliers of such interfaces shall be referred to as "WinLUA suppliers."
+
+Applications that are capable of exploiting any WinLUA implementation will be
+considered as having a "WinLUA interface" and will be referred to as "WinLUA
+applications."
+
+While WinLUA is one of the WinSNA APIs to be standardized for the Windows
+environment; it is beyond the scope of this document to deal with other SNA
+(Systems Network Architecture) APIs.
+
+Microsoft Windows Graphical Environment and Windows-Specific Extensions
+-----------------------------------------------------------------------
+
+This API has been designed for ALL implementations and versions of the Windows
+environment from and including version 3.0. It thus provides for WinLUA
+implementations and WinLUA applications in both 16 and 32-bit operating
+environments.
+
+WinLUA makes provisions for multithreaded Windows-based processes. A process
+contains one or more threads of execution. In the Win16 non- multithreaded
+world, a task corresponds to a process with a single thread. All references to
+threads in this document refer to actual "threads" in multithreaded Windows
+environments. In non-multithreaded environments (such as version 3.0), use of
+the term thread refers to a Windows process.
+
+The extensions to the Windows environment included in WinLUA are provided for
+maximum programming compatibility and optimum application performance.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbSDKPlatform kbOSWin310 kbGrpDSNet 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

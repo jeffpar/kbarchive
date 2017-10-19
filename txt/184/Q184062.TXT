@@ -1,0 +1,61 @@
+DOCUMENT:Q184062  22-JUN-2001  [exchange]
+TITLE   :XCLN: Outlook Leaks Memory Using Visual Basic to Post to Folder
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use a Visual Basic application to post a form to a public folder,
+Microsoft Outlook leaks memory. The memory leak can exhaust all resources on the
+computer on which Outlook is running. Outlook.exe also remains in memory after
+the application is finished. The only way to free the memory is to end the
+OUTLOOK task from the task manager.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Microsoft Outlook 98.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Outlook clients
+listed above.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbOutlook97Search kbZNotKeyword3
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

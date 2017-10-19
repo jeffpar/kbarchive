@@ -1,0 +1,47 @@
+DOCUMENT:Q107579  30-JUL-2001  [win3x]
+TITLE   :Novell: Direct Hosting Works on ODI Drivers Only
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If you have Windows for Workgroups 3.11 running on a Novell network, Windows for
+Workgroups will support direct hosting only on machines running Novell's ODI
+drivers.
+
+MORE INFORMATION
+================
+
+Direct hosting is a new feature in Windows for Workgroups 3.11 that allows the
+virtual redirector to interface with the IPX/SPX Compatible protocol, bypassing
+NetBIOS. This new technology allows the redirector to transfer data faster
+across the network.
+
+For direct hosting to work correctly, the IPX/SPX Compatible protocol must be
+installed. This protocol cannot be installed on machines running IPX.COM or
+ArcNet; therefore, direct hosting does not work on these machines.
+
+Additional query words: 3.11 3rdparty
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

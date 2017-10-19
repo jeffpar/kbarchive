@@ -1,0 +1,97 @@
+DOCUMENT:Q226328  30-SEP-1999  [exchange]
+TITLE   :XWEB: OWA Crash in CDOHTML!CTableView::IsSameAs
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply Service Pack 2 for Microsoft Exchange Server 5.5, Outlook Web
+Access (OWA) may stop and produce the following Drwtsn32.log:
+
+Application exception occurred:
+           App: Inetinfo.DBG (pid=333)
+           When: 4/8/1997 @ 15:27:56.295
+           Exception number: c0000005 (access violation)
+
+CAUSE
+=====
+
+OWA stops responding (crashes) trying to render a custom view.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: OWA
+
++--------------------------+
+| File name   | Version    | 
++--------------------------+
+| Cdohtml.dll | 5.5.2585.0 | 
++--------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 2. This problem was first corrected in Exchange Server
+5.5 Service Pack 3.
+
+MORE INFORMATION
+================
+
+The stack trace created will appear as:
+
+FramePtr  RetAddr   Param1   Param2   Param3   Function Name<BR/>
+06b9f9b4  0532f9b8  00000000 766f6094 057c92d0 CDOHTML!CTableView::IsSameAs+0x97({...})<BR/>
+06b9f9e8  7676562f  057c92d0 0000004c 00000004 CDOHTML!??1type_info@@UAE@XZ+0x14c4<BR/>
+06b9fa78  052de282  00167724 057c92d0 0000013d 0x7676562f<BR/>
+06b9faa4  05300ab7  057c92d0 0000013d 6b641458 CDOHTML!CComTypeInfoHolder::Invoke+0x52({...})<BR/>
+06b9facc  6b60d1e1  057c92d0 0000013d 6b641458 CDOHTML!Invoke+0x37({...})<BR/>
+06b9fb54  6b60d42f  04b05c60 057c92d0 0000013d VBSCRIPT!InvokeDispatch+0x145<BR/>
+06b9fb78  6b603d8e  04b05c60 057c92d0 0000013d VBSCRIPT!InvokeByName+0x41<BR/>
+0697e994  00610053  0065006d 00730041 00000000 VBSCRIPT!CScriptRuntime::Run+0x17bc<BR/>
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

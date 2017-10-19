@@ -1,0 +1,65 @@
+DOCUMENT:Q264742  22-JUN-2000  [sna]
+TITLE   :Inactive LUs May Cause SnaPrint Service Utilization to Increase
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the LU that is being used by an SNA Server print session is inactive, the
+SnaPrint service keeps trying to activate the session. The status of the print
+session remains pending.
+
+When many LUs are inactive and many print sessions are pending, the CPU
+utilization may reach 90 percent or higher. Task Manager shows that the SnaPrint
+service is using most of the processor time.
+
+CAUSE
+=====
+
+The SnaPrint session waits for the LU to become available, and then the SnaPrint
+service activates the print session.
+
+WORKAROUND
+==========
+
+If you stop some of the pending print sessions, the amount of CPU utilization
+should decrease.
+
+STATUS
+======
+
+This behavior is by design for cases where the SNA Server is restarted, but the
+SnaPrint Server is not restarted.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

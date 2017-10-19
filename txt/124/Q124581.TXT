@@ -1,0 +1,68 @@
+DOCUMENT:Q124581  29-NOV-1999  [homekids]
+TITLE   :Explorapedia: Minimum System Requirements
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+ - Microsoft Explorapedia series: World of People for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements for the Microsoft
+Explorapedia series.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Explorapedia are:
+
+ - 486SX or higher microprocessor.
+
+ - 4 MB of RAM (8 MB recommended).
+
+ - 8 MB of available hard disk space.
+
+ - Double-speed (or higher) CD-ROM drive.
+
+ - Super VGA video adapter with a 256-color monitor.
+
+ - Audio card.
+
+ - Microsoft Windows version 3.1 or later.
+
+ - MS-DOS operating system version 3.1 or later.
+
+ - Microsoft Mouse or other compatible pointing device.
+
+ - Speakers or headphones.
+
+Additional query words: kbhowto 1.00 xplor mskids kids requires tad tadpole require world of nature people
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeMMsearch kbZNotKeyword2 kbExplorapediaNature100 kbExplorapediaPeople100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

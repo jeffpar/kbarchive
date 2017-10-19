@@ -1,0 +1,64 @@
+DOCUMENT:Q192431  01-DEC-2000  [frontpg]
+TITLE   :No Prompt to Save File After Deleting Empty Table Cells
+PRODUCT :Word Front Page
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove an empty cell (or cells) from a table and close FrontPage
+Editor, you are not prompted to save the changes you made. When you reopen the
+file, the empty cell is still in the table.
+
+CAUSE
+=====
+
+FrontPage does not detect any changes if you delete empty cells. Therefore, it
+does not prompt you to save the page when you close FrontPage Editor.
+
+RESOLUTION
+==========
+
+Save the page by clicking Save on the File menu before you close FrontPage
+Editor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch _IKkbZNotKeyword4 kbFrontPage98Search kbZNotKeyword3
+Version           : WINDOWS:
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

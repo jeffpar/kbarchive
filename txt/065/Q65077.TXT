@@ -1,0 +1,66 @@
+DOCUMENT:Q65077  07-NOV-1999  [win95x]
+TITLE   :Using the Micro Display Systems Monitor with Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Micro Display Systems Genius 420 Monitor is a full-page monochrome monitor
+and adapter. This monitor requires a special video driver, supplied by Ran-Ger
+Technologies, Inc., to operate properly with Microsoft Windows version 3.0.
+
+To obtain this driver, contact Ran-Ger Technologies. The file is available as a
+self-extracting executable called GIWIN3.EXE.
+
+MORE INFORMATION
+================
+
+The Genius Monitor may be used with Windows 3.0 without the Micro Display
+Systems driver if you do the following:
+
+1. Put the Genius Monitor in CGA mode. In the Genius directory on the hard disk,
+   there is a file named VHR.COM. Run this program by typing "VHR CGA" (without
+   the quotation marks) to put the Genius Monitor in CGA mode.
+
+2. Add the command "VHR CGA" (without the quotation marks) to your AUTOEXEC.BAT
+   file or run this program before you run Windows.
+
+3. Install Windows and choose CGA graphics adapter as your display.
+
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.00 3.00a 3.10 3.11 genius video drivers microdisplay ranger ran ger
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

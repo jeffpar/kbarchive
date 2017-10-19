@@ -1,0 +1,85 @@
+DOCUMENT:Q126160  28-JUL-2001  [win95x]
+TITLE   :MS-DOS-Based Game Setup Does Not Detect WSS as Sound Blaster
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install an MS-DOS-based game in a full-screen MS-DOS window on a
+computer with the Microsoft Windows Sound System installed, the game fails to
+detect the Windows Sound System sound card.
+
+CAUSE
+=====
+
+This problem can occur when the game requires that an IRQ from 0 to 7 be used
+for the sound card but the sound card is set to an IRQ higher than 7. The
+Windows Sound System (WSS) can use IRQ 7, 9, 10, or 11. If there is a known
+working configuration using IRQ 7, Windows 95 will use the existing
+configuration. If there is no existing configuration using IRQ 7, Windows 95
+will assign IRQ 7 to a device only as a last resort in order to not conflict
+with the Enhanced Capabilities port (ECP).
+
+The following games are known to fail to detect the WSS sound card:
+
+ - 7th Guest
+
+ - Kings Quest V
+
+RESOLUTION
+==========
+
+To correct this problem, change WSS to use IRQ 7. To do so, follow these steps:
+
+1. Use the right mouse button to click My Computer, and then click Properties on
+   the menu that appears.
+
+2. Click the Device Manager tab.
+
+3. Double-click the Sound Video And Game Controllers entry.
+
+4. Click the MS Windows Sound System entry and then click the Properties button.
+
+5. Click the Resources tab.
+
+6. Change the Interrupt Request setting to 07.
+
+7. Click OK to accept the settings.
+
+After you make this change, the MS-DOS-based game should detect the WSS sound
+card as a Sound Blaster sound card.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

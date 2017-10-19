@@ -1,0 +1,65 @@
+DOCUMENT:Q169310  26-MAY-2001  [homegame]
+TITLE   :Close Combat Trial Version Is Available
+PRODUCT :Microsoft Home Games
+PROD/VER::Trial Version
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for Windows 
+ - Microsoft Close Combat for the Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The trial version of Microsoft Close Combat, version 1.0 for Windows 95/98 and
+the Macintosh is now available for free download. The file for the Windows 95/88
+version is approximately 7 MB in size. The file for the Macintosh version is
+approximately 6.5 MB in size.
+
+TO OBTAIN THESE FILES
+
+You can find Cctrial.exe (Windows) or Mcctrial.hqx (Macintosh), both
+self-extracting files, on the following services:
+
+ - Microsoft's World Wide Web site on the Internet
+
+   http://www.microsoft.com/games/kickbutt
+
+   Click the Download Playable Demo icon. Click the Game Demo link to download
+   the file.
+
+ - Internet (anonymous FTP)
+
+   FTP://FTP.microsoft.com
+   Change to the Deskapps/Games/Public/Kickbutt directory
+   Get CCTRIAL.EXE - Windows 95
+   Get MCCTRIAL.HQX - Macintosh
+
+Additional query words: 1.00 closecombat war wargame grunt
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbCloseCombatSearch
+Version           : :Trial Version
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

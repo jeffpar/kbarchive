@@ -1,0 +1,82 @@
+DOCUMENT:Q77646  13-JUN-2001  [pcmail]
+TITLE   :PC DB: NetWare 286/386 Rights for Mail Database
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.0,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a description of the Novell NetWare 286/386 rights necessary
+for the Microsoft Mail for PC Networks database structure. Please note that each
+of these rights is necessary for the MAILDATA directory as well as all
+subdirectories below it.
+
+NetWare 286
+-----------
+
+   R - Read
+   W - Write
+   O - Open
+   C - Create
+   D - Delete
+   M - Modify
+
+Do Not Give the User the Following Rights
+-----------------------------------------
+
+   S - Search (Allows a user to list a directory)
+   P - Parental (Allows a user to to change his/her rights OR anyone
+   else's rights in a directory)
+
+NetWare 386
+-----------
+
+   R - Read
+   W - Write
+   C - Create
+   E - Erase
+   M - Modify
+
+NOTE: Microsoft Schedule+ users will also need FileScan rights to the
+MAILDATA\CAL subdirectory.
+
+Do Not Give the User the Following Rights
+-----------------------------------------
+
+   F - File Scan (Allows a user to list a directory)
+   A - Access Control (Allows a user to to change his/her rights OR anyone else's
+   rights in a directory)
+   S - Supervisory (Grants all Supervisor functions, but only on part of the
+   volume)
+
+Additional query words: Privileges nov 2.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN210 kbMailPCN200
+Version           : WINDOWS:2.0,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

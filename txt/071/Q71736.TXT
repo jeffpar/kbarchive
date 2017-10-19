@@ -1,0 +1,61 @@
+DOCUMENT:Q71736  12-DEC-1999  [win95x]
+TITLE   :PARTY.BMP and RIBBONS.BMP Omitted from Windows Version 3.00a
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The background bitmap files PARTY.BMP and RIBBONS.BMP are not included on the
+Microsoft Windows version 3.0a disks. This is due to space constraints, and the
+nonessential nature of the files.
+
+MORE INFORMATION
+================
+
+Some third-party drivers require the replacement of the SETUP.INF file to
+install correctly. Third-party SETUP.INF files, developed for Windows version
+3.0, may not reflect this change, and may therefore ask for these two bitmap
+files.
+
+Workaround
+----------
+
+Create a new disk and copy two of the existing files to the blank disk with the
+names PARTY.BMP and RIBBONS.BMP. For example, you would copy WEAVE.BMP from disk
+3 (5.25 inch) or disk 5 (3.5 inch) to PARTY.BMP on the blank disk. You also
+would copy the file to the name RIBBONS.BMP on the blank disk.
+
+This procedure will fool Setup, and allow you to continue installation.
+
+Additional query words: 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300a
+Version           : WINDOWS:3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

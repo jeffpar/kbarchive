@@ -1,0 +1,55 @@
+DOCUMENT:Q136853  21-AUG-1999  [foxpro]
+TITLE   :Where to Find Info on SQL pass-through Versus Remote Views
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For a comparison of the Remote View and SQL Pass-Through technologies, see the
+Visual FoxPro "Professional Features Guide," pages 46 and 47. These pages
+describe the differences between the two technologies, as well as explain the
+advantages and disadvantages of using SQL pass-through queries.
+
+MORE INFORMATION
+================
+
+You can find additional information that explains how to improve update and
+delete performance by optimizing view and connection properties on page 80 of
+the "Professional Features Guide."
+
+The Help file contains information about Optimizing Data Fetching. Click Contents
+on the Help menu. Click Using Visual FoxPro, and then click "Changes to Printed
+Documentation." Then click Professional Features Guide. Scroll down to "Chapter
+4: Optimizing Client/Server Performance."
+
+Additional query words: VFoxWin passthrough
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

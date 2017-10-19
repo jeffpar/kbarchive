@@ -1,0 +1,64 @@
+DOCUMENT:Q128414  08-AUG-2001  [winnt]
+TITLE   :Failure during Setup of Localized Version of NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Upgrading an installation of the U.S. version of Windows NT to a version
+localized for another country may render the Windows NT installation unusable,
+and is not supported.
+
+MORE INFORMATION
+================
+
+If Setup finds Windows NT is already installed on your computer, when you
+install a localized version of Windows NT, Setup prompts you to either upgrade
+the existing version or to perform a separate installation. If you choose to
+upgrade the existing U.S. version, you may render the Windows NT installation
+unusable.
+
+In one case, trying to "upgrade" from US version to the Japanese version resulted
+in the following trap error:
+
+   C000007B ( STATUS_INVALID_IMAGE_FORMAT), The application or DLL
+   DosDevices\D:\WinNT35\userfont.fon is not a valid Windows NT image. Please
+   check this against your installation diskette.
+
+To correct this problem, reinstall Windows NT to a new directory.
+
+Localized versions of NT ship with the Microsoft Developer Network CD-ROM (MSDN)
+disk.
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS350search
+Version           : WinNT:3.5,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

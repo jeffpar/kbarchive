@@ -1,0 +1,57 @@
+DOCUMENT:Q163889  05-MAY-1999  [exchange]
+TITLE   :XADM: Trust Levels not Used in Exchange Directory Replication
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you set up replication connectors between Microsoft Exchange Sites, all
+recipients and public folder hierarchy information will be replicated between
+the Sites, regardless of the trust level set on them.
+
+MORE INFORMATION
+================
+
+Trust levels for recipients and public folders are intended for use with
+Directory Synchronization with Microsoft Mail postoffices only. Trust levels do
+not pertain to Microsoft Exchange Directory Replication.
+
+The Trust level for a recipient is found in the Advanced tab of the property page
+for each recipient in the Microsoft Exchange Administrator program.
+
+The Trust level for a public folder is found in the Advanced tab of the property
+page for each public folder in the Microsoft Exchange Administrator program.
+
+For more information, please consult the Microsoft Exchange Books Online or the
+Microsoft Exchange Administrator's Guide.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

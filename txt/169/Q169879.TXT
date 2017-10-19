@@ -1,0 +1,82 @@
+DOCUMENT:Q169879  14-NOV-2000  [word97]
+TITLE   :WD97: MS Excel Text Formatting May Not Convert Properly to Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Word 97 to open a Microsoft Excel 97 worksheet with
+multiple character formats within a cell (for example some text is bolded and
+other text is italic), all text in that cell uses the format of the first
+character. All other formatting is lost.
+
+NOTE: This problem also occurs when you use the File command on the Insert menu
+in Word to insert a Microsoft Excel 97 worksheet.
+
+WORKAROUND
+==========
+
+To work around this problem, copy the worksheet in Microsoft Excel 97, and then
+paste it into Word. This method preserves all character formatting.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+Earlier versions of Microsoft Word and Microsoft Excel convert rich text formats
+accurately. The problem is due to changes in the Microsoft Excel binary
+interchange file format (BIFF) definitions.
+
+For additional information about the Microsoft Excel converter for Microsoft
+Word, please see the following article in the Microsoft Knowledge Base:
+
+   Q157084 WD97: Text Converters Installed in a Typical Setup
+
+For more information about how to open a Microsoft Excel worksheet in Word, click
+the Office Assistant, type "Excel converter" (without the quotation marks),
+click Search, and then click to view the "How to Import or convert files from
+another Office program" topic.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

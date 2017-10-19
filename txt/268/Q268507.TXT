@@ -1,0 +1,64 @@
+DOCUMENT:Q268507  22-OCT-2000  [homegame]
+TITLE   :Plus! Game Pack: Error Message When You Start Pandora's Box
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! Game Pack: Cards and Puzzles 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the trial version of Microsoft Pandora's Box that is included in
+the Microsoft Plus! Game Pack: Cards & Puzzles, you may receive the
+following error message:
+
+   ComCtl32.dll:InitComControlsEx
+
+CAUSE
+=====
+
+This behavior occurs if you install the trial version of Pandora's Box on a
+computer that is running the retail version of Microsoft Windows 95.
+
+RESOLUTION
+==========
+
+To resolve this issue, install Microsoft Windows 98 on the computer or the
+latest version of Microsoft Internet Explorer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: 1.00 msgame bicycle panbox puzzles
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu msgame 
+Technology        : kbGamesSearch kbPlusSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

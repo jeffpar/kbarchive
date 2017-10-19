@@ -1,0 +1,69 @@
+DOCUMENT:Q261273  30-JUL-2001  [homegame]
+TITLE   :Allegiance: Logitech Cyberman 2 Does Not Function Correctly
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbmsn
+
+======================================================================
+SYMPTOMS
+========
+
+When you play Microsoft Allegiance, you may experience both of the following
+symptoms:
+
+ - When you attempt to yaw to the left, the throttle increases.
+
+ - When you attempt to yaw to the right, the throttle decreases.
+
+CAUSE
+=====
+
+This behavior can occur if you are using a Logitech Cyberman 2 3-D game
+controller.
+
+RESOLUTION
+==========
+
+To work around this issue, use a pointing device to maneuver in Allegiance.
+
+MORE INFORMATION
+================
+
+The CyberMan 2 is a 6-axis gamepad with a built-in joystick. The joystick
+controls the following movements:
+
+ - Move the joystick forward or backward to control the pitch.
+
+ - Move the joystick to the left or right to control the yaw.
+
+ - Rotate the joystick to control the roll.
+
+ - Angle the joystick to the left or right to control the throttle. (This motion
+   is very similar to the yaw control).
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame igz msngz cyber man gaming device
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbmsn 
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

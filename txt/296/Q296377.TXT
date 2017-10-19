@@ -1,0 +1,80 @@
+DOCUMENT:Q296377  06-MAY-2001  [sms]
+TITLE   :SMS: Access Violation Errors During SQL Server Upgrade
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbsetup kbDatabase kbServer kbsms200 kbUpgrade
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you perform a service pack upgrade to a Microsoft SQL Server that is a
+Systems Management Server (SMS) Site Database server, the SMS Executive service
+may generate an "Access Violation" error and log the following entries
+repetitively:
+
+Compsumm.log:
+
+   Error: Could not get a SQL connection from the connection cache. Will try
+   again in 60 seconds. : The handle is invalid.~~
+
+Sitestat.log:
+
+   Error: Could not get a SQL connection from the connection cache. Will try
+   again in 60 seconds. : The handle is invalid.~~
+   ---->: This is a Primary Site, the datastore is SQL
+
+CAUSE
+=====
+
+This issue occurs because during a SQL Server service pack upgrade, the
+MSSQLSERVER service restarts in single-user mode, which disconnects any
+processes that are currently connected to the SQL Server databases and which
+does not allow them access to any database objects until the upgrade is
+complete.
+
+WORKAROUND
+==========
+
+To work around this issue, on the SMS Site server, manually stop the
+SMS_SITE_COMPONENT_MANAGER service, the SMS_EXECUTIVE service, and the
+SMS_SQL_MONITOR service prior to performing the SQL Server service pack upgrade.
+
+MORE INFORMATION
+================
+
+Sites may stop and cease to function until you manually restart the services if
+you do not stop them prior to any SQL upgrades. Microsoft recommends that you
+always shut down the SMS_SITE_COMPONENT_MANAGER service, the SMS_EXECUTIVE, and
+the SMS_SQL_MONITOR service before you perform a SQL Server upgrade.
+
+Additional query words: prodsms sql database AV
+
+======================================================================
+Keywords          : kbinterop kbsetup kbDatabase kbServer kbsms200 kbUpgrade 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

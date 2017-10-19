@@ -1,0 +1,133 @@
+DOCUMENT:Q129531  08-AUG-2001  [winnt]
+TITLE   :Windows NT Print Manager and Custom Form Limitations
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Print Manager does not allow you to choose a custom form, even though
+the form's physical dimensions are less than or equal to the dimensions of the
+largest predefined form that the device can use. For example, a print device may
+support predefined letter-sized forms (8.5" by 11") but will not accept a
+smaller custom form (such as 8.5" by 7"). This problem usually occurs when a
+printer driver that defines the maximum custom page width or length at a value
+smaller than the length or width of the largest predefined page size.
+
+MORE INFORMATION
+================
+
+Background
+----------
+
+There are three components to each printer driver: the base driver, the user
+interface (UI) driver, and the characterization data file. The characterization
+data file is a PPD file for PostScript devices, a PCD file for plotting devices,
+or a minidriver for raster devices. It describes the physical characteristics of
+one or more print devices (including the name, dimensions, and margins of each
+predefined form that the print device supports), and the maximum and minimum
+length and width of custom-defined forms. The forms database on a Windows NT
+computer initially contains a wide variety of forms. When you install printer
+drivers, the spooler checks the characterization data file and adds the driver's
+forms to the Windows NT forms database.
+
+In Windows NT, each form associates a name with a set of length and width
+measurements, and margin measurements. For example, the Letter default form is
+8.5" wide by 11" long, and has 0" margins. Only the form name must be unique.
+Different print devices often recognize different names for the same physical
+form dimensions, so the forms database often has several forms that have the
+same dimensions, the same margins, or both.
+
+When you run Print Manager and define a printer's form-to-tray mapping, or its
+default form, Print Manager queries the driver for the physical sizes of the
+forms the print device supports. Print Manager then displays a list including
+every form in its database that has the same physical size as any of the forms
+predefined in the driver. Consequently, these lists often show multiple forms
+with identical sizes, such as Letter and Letter Small. Additionally, you can't
+choose large page sizes such as Tabloid (11" by 17") on print devices that
+cannot support such sizes.
+
+Problem
+-------
+
+In some cases, the maximum length or width of a custom form is smaller than the
+length or width of the print device's largest predefined form. For example, the
+published specifications for the Epson LQ-870 ESC/P2 print device state that the
+maximum physical page width is 10.1", and that the imagable width is only 8.0".
+When using the Letter form, this print device enforces .5" of combined left and
+right margins, so that applications will not attempt to print on more than 8.0"
+of the page.
+
+
+The Windows NT printer drivers for such print devices reflect these
+specifications. For example, you could define a custom form 8.5" wide and 7.0"
+tall with 0" combined right and left margins, but this would have an imagable
+width of 8.5". Because this would conflict with the device's specification,
+Print Manager will not let you use this form on this device. As a result, all
+custom-sized forms that you want to use with this device under Windows NT must
+have a physical width less than or equal to 8.0" even though the device supports
+physical pages up to 10.1" wide.
+
+NOTE: The Epson LQ-870 ESC/P2 described in this example is not necessarily the
+only print device with which you can encounter this problem.
+
+To identify these restrictions:
+
+1. Run Windows NT Write.
+
+2. Select a printer.
+
+3. Select a predefined page size (such as Letter).
+
+4. Select the Page Layout option from the Document menu, and enter 0" for all
+   margins.
+
+5. Select OK.
+
+If the print device does not allow 0" margins, Write returns an error message
+showing the minimum required margins for this form and print device. For
+example, if you select an Epson LQ-870 ESC/P2 printer, choose the Letter form,
+and request 0" left and right margins, the error message reports that the
+minimum left and right margins are each .25".
+
+The maximum printable width is:
+
+   (physical width of Letter form) - (minimum left margin) - (minimum
+   right margin)
+
+Using the Epson LQ-870 ESC/P2 as an example, the formula is 8.5 - .25 - .25,
+which equals 8.0.
+
+
+Additional query words: prodnt inch inches
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

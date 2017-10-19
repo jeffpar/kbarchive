@@ -1,0 +1,114 @@
+DOCUMENT:Q249163  06-FEB-2000  [exchange]
+TITLE   :XADM: LDAP Commands Seen in a Network Trace
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Lightweight Directory Access Protocol (LDAP) consists of 16 commands, 8
+requests and 8 responses. An LDAP client makes a request to which the server
+responds. The following is a list of the LDAP commands:
+
+ - BindRequest
+
+   This request initiates a session with the server. A session must be opened
+   before any directory functions can occur.
+
+ - BindResponse
+
+   This response either allows or denies the bind request.
+
+ - UnbindRequest
+
+   This request terminates a session with the server. No response is required.
+
+ - SearchRequest
+
+   This request initiates a search for a specific entry in the directory.
+
+ - SearchResponse
+
+   This response sends the search result to the client.
+
+ - ModifyRequest
+
+   This is a request to modify a directory entry.
+
+ - ModifyResponse
+
+   This response sends the result of a requested modification.
+
+ - AddRequest
+
+   This is a request to add a directory entry.
+
+ - AddResponse
+
+   This response sends the result of a request to add a directory entry.
+
+ - DelRequest
+
+   This is a request made by the client to delete a directory entry.
+
+ - DelResponse
+
+   This response sends the result of a delete request.
+
+ - ModifyRDNRequest
+
+   This is a request made by the client to modify the Relative Distinguished
+   Name (RDN) of a directory object.
+
+ - ModifyRDNResponse
+
+   This is a response sent by the server to the client with the result of a
+   requested RDN modification.
+
+ - CompareDNRequest
+
+   This is a request made by the client to compare a string with the
+   Distinguished Name (DN) of a directory object.
+
+ - CompareDNResponse
+
+   This is a response sent by the server to the client with the result of a DN
+   comparison.
+
+ - AbandonRequest
+
+   This is a request made by the client to instruct the server to abandon a
+   request that is outstanding. No response is required from the server.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

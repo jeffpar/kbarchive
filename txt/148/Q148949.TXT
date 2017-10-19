@@ -1,0 +1,70 @@
+DOCUMENT:Q148949  25-JUL-2001  [sms]
+TITLE   :Inventory of a File with a Path Defined Will Fail
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If an inventory package is created and a directory path is defined with the
+file, the file will never be located and/or collected from the client.
+
+MORE INFORMATION
+================
+
+To create an inventory package:
+
+1. Open the Packages window and choose "New."
+
+2. From the Package Properties window, choose "Inventory." This presents the
+   Setup Package For Inventory window.
+
+3. Check the Inventory This Package box and choose "Add AND..." to present the
+   File Properties window.
+
+4. Define the file name of the file you want to inventory on the client. For
+   example, Autoexec.bat.)
+
+5. Check "Collect This File" if you want SMS to retrieve a copy of the file to
+   the server.
+
+6. Click "OK" until you return to the Packages window.
+
+NOTE: There is no job required to distribute inventory packages to clients; this
+is done automatically.
+
+In step 4, if a directory path is included with the file name (for example,
+"C:\Autoexec.bat"), the file would not be found or collected by the SMS Client
+when inventory was collected.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,113 @@
+DOCUMENT:Q166109  04-MAY-2001  [visualc]
+TITLE   :FIX: Template Friend Function Causes Compiler Error C2248
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbtool kbVC500bug kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler generates a compiler error C2248 as follows:
+
+   Error C2248: 'member' : cannot access member declared in class 'class'
+
+under the following circumstances:
+
+ - If a class declares a template function as a friend function, and
+
+ - If the template function definition appears after the class definition.
+
+RESOLUTION
+==========
+
+Do not declare a template function as a friend of a class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This problem was corrected in Microsoft
+Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+The following sample demonstrates the problem and the workaround.
+
+Sample Code
+-----------
+
+      /*
+      Compile option: None
+      */ 
+
+      class X;
+
+      template <class T> void AFunction(X &x, T &t);
+
+      class X
+      {
+      private:
+
+         int m_n;
+
+      public:
+
+         template <class T> friend void AFunction(X &x, T &t) ;
+
+      };
+
+      template <class T> void AFunction(X &x, T &t)
+      {
+
+         x.m_n = t; // C2248 here.
+
+      }
+
+      int main()
+      {
+         X x;
+         int n;
+         AFunction(x, n);
+
+              return 0 ;
+      }
+
+NOTE: Defining the template function before the class definition eliminates the
+compiler error C2248. But the compiler does not generate any code when you call
+the template function.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbVC500bug kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

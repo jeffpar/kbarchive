@@ -1,0 +1,55 @@
+DOCUMENT:Q222627  19-SEP-1999  [msnetwork]
+TITLE   :How to Disable Auto Dial
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Auto Dial is a feature associated with MSN 2.5 and 2.6 that, when enabled,
+allows you to connect to the Internet automatically whenever you open an
+application requiring an Internet connection.
+
+Auto Dial is not enabled in your MSN default settings. Enabling Auto Dial can be
+useful if you would like to access the Internet on a regular basis without
+having to use the MSN Connection Manager every time.
+
+MORE INFORMATION
+================
+
+To disable AutoDial, double-click the MSN icon. When the Connection Manager
+screen appears, click Cancel, and then click the Dial Automatically box to
+remove the check.
+
+Additional query words: auto dial msn 2.50 2.60 kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

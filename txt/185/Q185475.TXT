@@ -1,0 +1,72 @@
+DOCUMENT:Q185475  14-FEB-2001  [exchange]
+TITLE   :XADM: LDAP Search Returns No Entries For Hidden/Deleted Objects
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Using LDAP with Simple Authentication and appending cn=Admin to the username
+does not return hidden or deleted objects.
+
+The use of cn=Admin is discussed briefly in the Microsoft Development Network
+(MSDN) documentation in the following white paper:
+
+"Active Directory Service Interfaces in the Microsoft Exchange 5.5 Environment"
+
+CAUSE
+=====
+
+During an attempt by the Microsoft Exchange Server directory Service to
+determine whether the user who is logged on has View Only Admin rights (or
+greater), a Windows NT system call fails, which causes the user to be denied the
+right to view hidden and deleted objects.
+
+The system service attempts to access a thread token, and the Discretionary
+Access Control List (DACL) on the impersonated thread may vary based on the type
+of impersonation. (For instance, whether ImpersonateLoggedOnUser() or
+ImpersonateNamedPipeClient() was called.)
+
+For basic authentication (required in order to pass the cn=Admin argument), the
+thread token was inaccessible to the impersonated client.
+
+
+WORKAROUND
+==========
+
+To work around this problem, make the Exchange Server Service account a member
+of the Local Administrators group.
+
+Additional query words: Empty query queries LDAP response results ADSI
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

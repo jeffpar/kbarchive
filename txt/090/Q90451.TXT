@@ -1,0 +1,75 @@
+DOCUMENT:Q90451  16-DEC-2000  [win3x]
+TITLE   :NetWare NCOPY to Local Drive Gives Sharing Violation
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Microsoft Windows for Workgroups in 386 enhanced mode or
+standard mode with the MS-DOS SHARE utility loaded, or you are running Windows
+95, and you use the Novell NetWare version 3.11 NCOPY command to copy files to a
+local disk drive, you may receive the following error message
+
+   Sharing violation reading drive <x>:
+
+where <x> is the local target drive issued to the NCOPY command.
+
+CAUSE
+=====
+
+According to the Microsoft Windows 3.1 NETWORKS.WRI file:
+
+   Current versions of the NetWare shell are not fully compatible with SHARE.
+
+Because Windows for Workgroups loads VSHARE.386 (the virtual SHARE device driver)
+when in 386 enhanced mode, the NCOPY anomaly may manifest itself anytime Windows
+for Workgroups is running in 386 enhanced mode, or is running in standard mode
+with the MS-DOS SHARE utility loaded.
+
+RESOLUTION
+==========
+
+Use the Windows for Workgroups File Manager or the MS-DOS COPY or XCOPY command
+instead of the NCOPY command. In Windows 95, use Windows Explorer, My Computer,
+or the MS-DOS COPY or XCOPY command.
+
+The Novell product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+KBCategory: kbnetwork kb3rdparty kberrmsg
+KBSubcategory: wfwg win95
+
+Additional query words: 3.10 95 copy
+
+======================================================================
+Keywords          : win95 
+Technology        : kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW310
+Version           : WINDOWS:3.1,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

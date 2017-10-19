@@ -1,0 +1,87 @@
+DOCUMENT:Q179250  16-MAY-2001  [vbwin]
+TITLE   :BUG: Line and Shape Controls Not Visible on UserControl
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbCtrlCreate kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport kbControl kbO
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Line or Shape controls are placed on a UserControl whose Backstyle property
+is set to Transparent, the controls do not appear. This problem occurs only on
+machines running Windows 95, Windows 98, or Windows Me.
+
+RESOLUTION
+==========
+
+Setting the BorderWidth property to a value greater than the default setting of
+1 allows the Line control to be drawn properly. This workaround applies only to
+the Line control. There is no workaround for the Shape Control at this time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX Control project on a computer running Windows 95 or
+   Windows 98.
+
+2. Add a line control to UserControl1.
+
+3. Add a shape control (rectangle) to UserControl1.
+
+4. Set the Backstyle property of UserControl1 to "Transparent."
+
+5. Set the Backstyle property of the Shape Control to "Transparent."
+
+6. Close UserControl1's window.
+
+7. Add a Standard EXE project (select "Add Project" from the "File" menu).
+
+8. Place the UserControl on Form1 and note that Neither the Line nor the Shape
+   Control are visible.
+
+9. Run the project and note that the line and Shape Control are still not
+   visible.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbgraphic kbCtrlCreate kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport kbControl kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

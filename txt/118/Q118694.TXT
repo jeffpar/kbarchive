@@ -1,0 +1,74 @@
+DOCUMENT:Q118694  08-AUG-2001  [winnt]
+TITLE   :Alternating DOS Client RPC Calls Fail
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+The information in this article applies to
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A DOS DCE (data communication equipment) RPC (remote procedure calls) client
+binds to a DCE RPC server and places a successful RPC call. The client will not
+place any additional RPC calls for a period of time. During this window of time,
+some RPC servers may close the connection. The next RPC call from the client to
+the server will fail. If the exact same call is placed again, after the failing
+call, it will work. The above pattern repeats indefinitely.
+
+CAUSE
+=====
+
+The RPC runtime is not being notified of the closed connection. Once the RPC
+runtime discovers the connection is closed by a failing call, it will establish
+a new session on the next RPC call to the server.
+
+RESOLUTION
+==========
+
+RPC runtime will now retry three times if a call fails. During the retry, the
+connection will be reestablished.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. This problem was corrected in the latest US Service
+Pack for Windows NT and Windows NT Advanced Server. For information on obtaining
+this update, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

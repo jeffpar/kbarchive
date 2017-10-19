@@ -1,0 +1,95 @@
+DOCUMENT:Q167768  16-JUL-2002  [accother]
+TITLE   :ODE97: Can't Open RunTime Wrkgadm.exe After Uninstalling Off 97
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+SYMPTOMS
+========
+
+When you try to start a run-time copy of the Wrkgadm.exe file from a custom
+shortcut on a computer that previously had Microsoft Office 97 Professional
+Edition installed, you receive the following error message:
+
+   Can't open registry database
+
+CAUSE
+=====
+
+The registry entry for the shortcut that opened the Wrkgadm.exe file was removed
+when the copy of Microsoft Office 97 Professional Edition was uninstalled from
+the computer.
+
+RESOLUTION
+==========
+
+Rerun Setup for the custom Setup program that created the shortcut to reregister
+the entry.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a custom application that includes a copy of the Wrkgadm.exe file that
+   comes with Microsoft Access and a custom .mdw file that you have created.
+
+   NOTE: Do not try to use the same copy of the Wrkgadm.exe file that is being
+   used by Microsoft Access or the Setup Wizard will fail when it tries to use
+   the file.
+
+2. Create a shortcut that will open the Wrkgadm.exe file.
+
+3. Run Setup to install your newly created run-time application on a computer
+   that does not have Microsoft Office 97 Professional Edition installed.
+
+4. Start the Wrkgadm.exe file from the newly created shortcut.
+
+5. Run Setup for Microsoft Office 97 Professional Edition to install it.
+
+6. After Setup is finished, run Setup again to completely remove Microsoft
+   Office 97 Professional Edition.
+
+7. Try to reopen the Wrkgadm.exe file from the shortcut. Note that you receive
+   the error message mentioned in the "Symptoms" section.
+
+REFERENCES
+==========
+
+For more information about using a work group file in your custom application,
+search the Help Index for "Workgroup Administrator, installing in Setup Wizard."
+
+Additional query words: remove removing can t open registry database Wrkgadm exe
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

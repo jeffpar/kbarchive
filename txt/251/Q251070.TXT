@@ -1,0 +1,221 @@
+DOCUMENT:Q251070  06-AUG-2002  [sms]
+TITLE   :SMS: Copylog.tcf Does Not Show Site that Updated Logon Point
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbDiscovery kbsms200sp2fix kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+In a domain controlled by multiple sites, the Copylog.tcf file in the
+Smslogon\Config folder on a logon point lists logon point files and the site
+that last checked to see if that file should be updated. The Copylog.tcf file
+should actually list the site that last updated each logon point file, not the
+site that merely checked the logon point file.
+
+Because of the cyclic redundancy check (CRC) that is performed on some client
+files, the Systems Management Server (SMS) Service Pack 2 (SP2) client depends
+on the Copylog.tcf file working the way in which it was originally designed. The
+client code looks at the Copylog.tcf file to determine the site from which it
+should obtain the CRC values. In a shared domain where sites are not being
+upgraded simultaneously, client components may not be installed or upgraded
+because of the CRC mismatches, if an older site most recently performed a logon
+point update but a newer site is incorrectly listed in the Copylog.tcf file.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft. This
+fix is one of two fixes that are required for SMS 2.0 sites without Service Pack
+1 (build 1239) before any site can be upgraded to SMS 2.0 SP2. This fix is
+included in the Smsqfe folder on the SP2 CD-ROM. Detailed instructions for
+hotfix installation are also included in the Release Notes that accompany the
+service pack.
+
+For additional information about the accompanying fix that you must apply to SMS
+2.0 sites without Service Pack 1 (build 1239), click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q252718 SMS: CCM Avoids Installation Attempts on SP2 Clients
+
+For additional information about these fixes and similar fixes that you must
+apply to SMS 2.0 sites with Service Pack 1 (build 1380), click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q261931 SMS: Required Hotfixes Before Installing SMS 2.0 SP2
+
+To avoid the condition described in the "Symptoms" section of this article, you
+must apply the fix described in this article to all SMS 2.0 sites without
+Service Pack 1 (build 1239) before any site is upgraded to SMS 2.0 SP2. Click
+the following file name to download the file from the Microsoft Download
+Center:
+
+   DownloadDownload Q251070.exe now
+
+WARNING: This hotfix may not install on some secondary sites even though the
+hotfix installation may appear to run successfully. These hotfixes check for the
+existence of the Full Version value in the following registry key:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Setup
+
+If you have secondary sites that were either installed or upgraded directly from
+the primary site, this key may not be created or properly updated. Before
+applying this hotfix, please verify the existence of this key on all secondary
+sites. The Qxxxxxx.log file that is generated when you install the hotfix will
+state that the version is 000. To correct this, manually create or update the
+registry value. To create or update this value on secondary sites, use the
+following steps.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Using Regedit or Regedt32, locate the following registry key:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Setup
+
+2. If the Full Version key exists, manually update it using these corresponding
+   values:
+
+   Release version (build 1239): 2.00.1239.0000
+   SP1 version (build 1380): 2.00.1380.1000
+
+3. If the registry value does not exist, create the value and supply the
+   appropriate value from step 2.
+
+Using Regedit:
+
+   a. Right-click the Setup key, and then click New, String Value.
+
+   b. Name this value Full Version.
+
+   c. Double-click the Full Version value and supply the correct version listed
+      in step 2.
+
+Using Regedt32:
+
+   a. Click to highlight the Setup key.
+
+   b. On the Edit menu, click Add Value.
+
+   c. For the Value Name, type "Full Version" (without the quotation marks).
+
+      NOTE: The Data Type should be REG_SZ.
+
+   d. Click OK.
+
+   e. You are prompted for the string value. Type the appropriate version from
+      step 2, and then click OK.
+
+You should now see the Full Version value listed under the Setup key, which
+reflects the version you typed. After you finish this process, continue to apply
+the hotfix.
+
+The English-language version of the fix should have the following file attributes
+or later:
+
+   Date     Time      Version       Size      File name      Platform
+   ------------------------------------------------------------------
+   1/4/00   1:36pm    2.0.1239.62   168,816   Nt_logon.dll   I386
+   1/4/00   1:37pm    2.0.1239.62   296,208   Nt_logon.dll   Alpha   
+
+NOTE: Because of file dependencies, the most recent hotfix or feature that
+contains the above files may also contain additional files.
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+This hotfix is required for interoperability between SMS 2.0 sites without
+Service Pack 1 (build 1239) and SMS 2.0 SP2 sites.
+
+NOTE: You must install this hotfix on all SMS sites that share a domain with
+other SMS sites.
+
+To install the hotfix update, use the appropriate method.
+
+Method 1: Using the Update Installer
+------------------------------------
+
+NOTE: This method is only for I386-based computers.
+
+1. Copy the update folder structure to a share on your network. Q251070.exe is a
+   Microsoft Windows Installer file that updates specific files on your site
+   server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, close the SMS Administrator console.
+
+4. Run Q251070.exe and follow the directions in the wizard. You can run the file
+   in Quiet mode using the /s switch.
+
+Method 2: Manual Installation
+-----------------------------
+
+1. Close the SMS Administrator console and stop the SMS Site Component Manager
+   and SMS Executive services.
+
+2. Replace the Nt_logon.dll file in the
+   <sms_root_directory>\Bin\<platform> folder with the version
+   obtained from the update.
+
+3. Restart the SMS Site Component Manager and SMS Executive services.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbDiscovery kbsms200sp2fix kbgraphxlinkcritical 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

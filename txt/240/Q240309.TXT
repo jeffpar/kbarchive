@@ -1,0 +1,86 @@
+DOCUMENT:Q240309  29-JAN-2002  [winnt]
+TITLE   :How to Fully Disable Antivirus Software from Filtering Files
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you disable antivirus software programs from scanning or filtering files on
+your computer, you must also disable the filter drivers. Many issues with file
+transfering and printing can be resolved by disabling the active filters for
+antivirus programs. However, simply stopping the services associated with the
+software is not enough. You must also manually stop the device drivers for those
+filters. To do this for Windows NT:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Devices.
+
+2. Select the drivers in the Device list, and then click Stop.
+
+NOTE: The actual Symantec filter driver is called "symevent.sys".
+
+To do this for Windows 2000:
+
+1. Right click My Computer and click Properties.
+
+2. Click the Hardware tab and click the Device Manager button.
+
+3. Click the View menu and click "Show Hidden Devices".
+
+4. Expand "Non-Plug and Play Drivers" to find the Antivirus drivers.
+
+5. Right click on the correct driver and click Disable.
+
+MORE INFORMATION
+================
+
+Here are the names of some of the common antivirus program device names by
+product:
+
+ - Inoculan V.4.00 - INO_FLPY and INO_Fltr
+
+ - Norton V.5.0 - NAVAP, NAVENG, and NAVEX15 (for Microsoft Exchange Server)
+
+ - McAfee V.4.03a - NaiFiltr and NaiFsRec
+
+For more information about a specific antivirus program, please contact the
+vendor of that software.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400 kbNTTermServSearch kbWinAdvServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,66 @@
+DOCUMENT:Q311113  27-DEC-2001  [iis]
+TITLE   :IIS Lockdown Wizard Undo Doesn't Restore Uninstalled Services
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Internet Information Services (IIS) Lockdown Wizard, administrators can
+choose the option to uninstall unused services. This configuration option cannot
+be undone by using the undo operation in the IIS Lockdown Wizard.
+
+CAUSE
+=====
+
+When you run the IIS Lockdown Wizard, it creates a log file named Oblt-log.log
+that records the security configuration changes that are made. There is an
+option available in the wizard that you can select to uninstall the services
+that are not in use. The Oblt-log.log file, which is used when you use the
+wizard to undo a previous configuration, does not record that the services have
+been uninstalled. As a result, the undo feature does not restore any previously
+uninstalled services.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q310725 HOWTO: Run the IIS Lockdown Wizard Unattended
+
+
+Additional query words: iis lockdown oblt-log.log uninstall services
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

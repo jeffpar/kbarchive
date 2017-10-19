@@ -1,0 +1,55 @@
+DOCUMENT:Q119088  19-OCT-2000  [pcmail]
+TITLE   :PC DOS: 4096 Is Maximum Number of Inbox Entries
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+The maximum number of Inbox entries in the MS-DOS client and the Macintosh client
+of Microsoft Mail for PC Networks is 4096.
+
+This limitation is due to the size of the delete bit map in the .KEY file. The
+.MBG file contains deleted and active mail headers. The delete flag is not
+maintained in the .MBG file but in the matching .KEY file. Each .KEY file
+contains a 512-byte bitmap of deleted headers in the corresponding .MBG file.
+Thus, the maximum number of messages that can be stored in the Inbox is:
+
+   512*8=4096
+
+The Windows client and the Presentation Manager client have a limit of 5400
+messages in the Inbox folder.
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

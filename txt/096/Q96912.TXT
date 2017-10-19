@@ -1,0 +1,287 @@
+DOCUMENT:Q96912  26-SEP-1999  [win95x]
+TITLE   :LAYOUTS.WRI from Windows Resource Kit Version 3.1 L-Q
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is from the Microsoft Windows Resource Kit version 3.1
+LAYOUTS.WRI file. This article contains filenames L-Q.
+
+MORE INFORMATION
+================
+
+Filename     1.44MB 1.2MB 720K 360K Expanded File Description
+                                      Size
+--------------------------------------------------------------
+
+L200230&.WPD  6     7     B     8     1863     Windows PostScript de-
+                                               scription file for
+                                               Linotronic 200/230
+L330_52&.WPD  6     7     B     8     2335     Windows PostScript de-
+                                               scription file for
+                                               Linotronic 330
+L530_52&.WPD  6     7     B     8     2335     Windows PostScript de-
+                                               scription file for
+                                               Linotronic 530
+L630_52&.WPD  6     7     C     8     2335     Windows PostScript de-
+                                               scription file for
+                                               Linotronic 630
+LANGDUT.DLL   2     2     4     3     3072     Dutch language driver
+LANGENG.DLL   2     2     4     3     3072     General International
+                                               language driver
+LANGFRN.DLL   2     3     4     3     3072     French language driver
+LANGGER.DLL   2     2     4     3     3072     German language driver
+LANGSCA.DLL   2     2     4     3     3072     Finnish, Icelandic,
+                                               Norwegian, and Swedish
+                                               language driver
+LANGSPA.DLL   2     2     4     3     3072     Spanish language driver
+LANMAN.DRV    2     2     4     3     63488    Microsoft LAN Manager
+
+                                               2.0 network driver
+LANMAN.HLP    2     3     4     3     31724    Microsoft LAN Manager
+
+                                               2.0 network driver Help
+LANMAN10.386  2     2     4     3     8786     Microsoft LAN Manager
+
+                                               1.x virtual device
+LBPII.DRV     6     7     B     A     65968    Canon LBP-8 II
+LBPIII.DRV    6     7     B     A     89504    Canon LBPIII printer
+                                               driver
+LEAVES.BMP    4     6     6     6     15118    Leaves Wallpaper
+LMOUSE.COM    2     2     3     3     34658    MS-DOS Level Logitech
+                                               mouse driver
+LMOUSE.DRV    2     2     4     3     12928    Logitech mouse driver
+LSL.COM       2     2     4     3     7662     Novell NetWare work-
+                                               station link support
+                                               layer (ODI model)
+LVMD.386      2     2     4     3     9688     Logitech virtual mouse
+                                               device LVMD
+LZEXPAND.DLL  2     1     1     2     9936     Windows file expansion
+                                               library
+MAIN.CPL      4     5     A     6     148560   Main Control Panel
+                                               extension
+MARBLE.BMP    4     4     6     6     27646    Marble wallpaper
+MCICDA.DRV    4     5     A     6     13824    MCI driver for CD_ROM
+MCISEQ.DRV    4     5     7     6     25264    MCI driver for MIDI
+                                               driver
+MCIWAVE.DRV   4     6     7     6     28160    MCI driver for waveform
+                                               audio
+MIDIMAP.CFG   4     6     A     6     34522    MIDI Mapper Control
+                                               Panel extension
+                                               information file
+MIDIMAP.DRV   4     4     6     6     52784    MIDI Mapper Control
+                                               Panel extension
+MMSOUND.DRV   1     2     2     2     3440     MultiMedia Sound driver
+MMSYSTEM.DLL  4     5     A     6     61648    MultiMedia System
+                                               library
+MMTASK.TSK    5     6     8     6     1104     MulitMedia background
+                                               task application file
+MODERN.FON    5     6     A     7     8704     Modern font (all
+                                               resolutions)
+MONOUMB2.386  4     4     4     4     46161
+MORICONS.DLL  3     4     5     1     118864   Icons for NonWindows
+                                               Applications
+MOUSE.COM     4     4     A     4     56408    Microsoft Mouse driver
+                                               for MS-DOS
+MOUSE.DRV     2     2     3     2     10672    Microsoft Mouse driver
+MOUSE.SYS     4     5     A     7     55160    Microsoft Mouse driver
+                                               for MS-DOS
+MOUSEHP.COM   4     4     A     7     34061    HP HIL mouse driver
+                                               for Microsoft MS-DOS
+MOUSEHP.SYS   4     5     7     7     33909    HP HIL mouse driver for
+                                               Microsoft MS-DOS
+MPLAYER.EXE   3     5     7     5     33312    Media Player ap-
+                                               plication file
+MPLAYER.HLP   3     3     5     5     12825    Media Player Help
+MPU401.DRV    4     4     5     5     7056     MIDI driver for MPU401
+                                               compatibles
+MSADLIB.DRV   3     3     5     5     22064    MIDI driver for Adlib
+                                               compatibles
+MSC3BC2.DRV   2     3     4     3     4832     Mouse Systems COM2/3
+                                               button mouse driver
+MSCMOUSE.DRV  2     2     4     3     4960     Mouse Systems Ser-
+                                               ial/Bus mouse driver
+MSCVMD.386    1     2     3     3     9327     Mouse Systems virtual
+                                               mouse device MSCVMD
+MSD.EXE       4     5     8     4     155543   Microsoft Diagnostics
+                                               utility
+MSD.INI       5     6     5     4     620      MSD.EXE initialization
+                                               file
+MSNET.DRV     1     2     2     2     7072     Generic network driver
+MT_TI101.WPD  6     7     B     8     4383     Windows PostScript de-
+                                               scription file for
+                                               Microtek TrueLaser
+N2090522.WPD  6     7     B     8     4444     Windows PostScript de-
+                                               scription file for NEC
+                                               Silentwriter2 90
+N2290520.WPD  6     7     B     8     4328     Windows PostScript de-
+                                               scription file for NEC
+                                               Silentwriter2 290
+N2990523.WPD  6     7     B     8     4544     Windows PostScript de-
+                                               scription file for NEC
+                                               Silentwriter2 990
+N890X505.WPD  6     7     B     8     4462     Windows PostScript de-
+                                               scription file for NEC
+                                               Silentwriter LC890XL
+N890_470.WPD  6     7     B     8     4462     Windows PostScript de-
+                                               scription file for NEC
+                                               Silentwriter LC890
+NCM40519.WPD  6     7     B     8     2069     Windows PostScript de-
+                                               scription file for NEC
+                                               Colormate PS/40
+NCM80519.WPD  6     7     B     8     4103     Windows PostScript de-
+                                               scription file for NEC
+                                               Colormate PS/80
+NEC24PIN.DRV  6     6     B     9     29552    NEC 24-pin printer
+                                               driver
+NETAPI20.DLL  2     2     4     3     113520   Microsoft LAN Manager
+                                               API library
+NETWARE.DRV   2     2     4     3     125712   Novell NetWare network
+                                               driver for Windows
+NETWARE.HLP   2     3     5     3     34348    Novell NetWare network
+                                               driver Help
+NETWORKS.WRI  3     3     6     6     62336    Windows Readme file for
+                                               networks
+NETX.COM      2     3     4     3     52459    Novell NetWare work-
+                                               station shell
+NOMOUSE.DRV   2     2     3     2     416      No Mouse driver
+NOTEPAD.EXE   3     3     6     5     32736    Windows Notepad
+                                               application file
+NOTEPAD.HLP   4     4     5     5     13894    Windows Notepad Help
+NWPOPUP.EXE   2     3     5     3     2992     Novell NetWare message
+                                               popup utility for
+                                               Windows
+O5241503.WPD  6     7     B     8     4521     Windows PostScript de-
+                                               scription file for
+                                               OceColor G5241 PS
+O5242503.WPD  6     7     B     8     4447     Windows PostScript de-
+                                               scription file for
+                                               OceColor G5242 PS
+OKI24.DRV     6     7     C     9     20784    Okidata 24-pin printer
+                                               driver
+OKI9.DRV      6     7     C     9     11072    Okidata 9-pin printer
+                                               driver
+OKI9IBM.DRV   6     7     C     9     10736    Okidata 9-Pin IBM Model
+                                               printer driver
+OL840518.WPD  6     7     B     8     4759     Windows PostScript de-
+                                               scription file for Oki
+                                               OL840/PS
+OLECLI.DLL    5     4     A     3     83456    OLE client library
+OLESVR.DLL    4     5     8     4     24064    OLE server library
+OLIBW.DRV     2     2     4     3     47744    Olivetti/AT&T PVC
+                                               display driver
+OLIGRAB.2GR   1     2     3     3     3714     Olivetti/AT&T PVC std.
+                                               mode display component
+OLIVETI1.WPD  6     7     C     8     1937     Windows PostScript de-
+                                               scription file for
+                                               Olivetti PG306 PS (13
+                                               Fonts)
+OLIVETI2.WPD  6     7     B     8     4411     Windows PostScript de-
+                                               scription file for
+                                               Olivetti PG306 PS (35
+                                               Fonts)
+P4455514.WPD  6     7     B     8     5134     Windows PostScript de-
+                                               scription file for
+                                               Panasonic KX-P4455
+PACKAGER.EXE  3     4     7     5     76480    Windows Packager ap-
+                                               plication file
+PACKAGER.HLP  3     3     5     5     21156    Windows Packager Help
+PAINTJET.DRV  6     7     C     9     5520     HP PaintJet printer
+                                               driver
+PANSON24.DRV  6     7     C     9     14592    Panasonic 24-pin
+                                               printer driver
+PANSON9.DRV   6     7     C     9     16352    Panasonic 9-pin printer
+                                               driver
+PBRUSH.DLL    3     4     6     5     6766     Windows Paintbrush
+                                               library
+PBRUSH.EXE    3     5     7     5     183168   Windows Paintbrush ap-
+                                               plication file
+PBRUSH.HLP    3     4     5     5     40269    Windows Paintbrush Help
+PCSA.DRV      2     2     4     3     9168     DEC Pathworks network
+                                               driver
+PG306.DRV     6     7     C     A     43392    PG 306 printer driver
+PHIIPX.WPD    6     7     B     8     3984     Windows PostScript de-
+                                               scription file for
+                                               Phaser II PX
+PIFEDIT.EXE   5     5     6     4     55168    Windows Program In-
+                                               formation File Editor
+                                               application file
+PIFEDIT.HLP   3     5     5     5     33270    Windows Program In-
+                                               formation File Editor
+                                               Help
+PLASMA.3GR    2     2     3     3     9728     Compaq Portable plasma
+
+                                               386 enhanced mode
+                                               display component
+PLASMA.DRV    2     2     4     3     47216    Compaq Portable plasma
+                                               display driver
+PMSPL20.DLL   1     2     4     8     43328    Microsoft LAN Manager
+                                               Printer API library
+POWER.DRV     2     3     4     3     14736    Advanced Power Man-
+                                               agement device driver
+POWER.HLP     2     2     5     3     13100    Advanced Power Man-
+                                               agement Power device
+                                               driver help
+PRINTERS.WRI  3     3     6     6     41984    Windows Readme file for
+                                               printers
+PRINTMAN.EXE  4     4     8     6     43248    Windows Print Manager
+                                               application file
+PRINTMAN.HLP  3     4     A     4     40879    Windows Print Manager
+                                               Help
+PROGMAN.EXE   4     4     8     4     115312   Windows Program Manager
+                                               application file
+PROGMAN.HLP   5     5     6     4     30911    Windows Program Manager
+                                               Help
+PROPRINT.DRV  6     7     C     9     8288     IBM Proprinter series
+                                               printer driver
+PROPRN24.DRV  6     7     C     9     8032     IBM Proprinter 24 pin
+                                               series printer driver
+PRTUPD.INF    6     6     B     8     15855    Information file for
+                                               printer driver updates
+PS1.DRV       6     7     C     9     11872    IBM PS/1 printer driver
+PSCRIPT.DRV   6     7     B     8     311760   Postscript printer
+                                               driver
+PSCRIPT.HLP   6     7     B     8     43793    Postscript printer
+                                               driver Help
+Q2200510.WPD  6     7     B     8     5182     Windows PostScript de-
+                                               scription file for QMS-
+                                               PS 2200
+Q820_517.WPD  6     7     B     8     4942     Windows PostScript de-
+                                               scription file for QMS-
+                                               PS 820
+QWIII.DRV     6     7     C     8     14832    IBM QuietWriter III
+                                               printer driver
+
+Additional query words: 3.10 files list disks diskettes
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

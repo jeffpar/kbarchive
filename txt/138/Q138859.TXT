@@ -1,0 +1,102 @@
+DOCUMENT:Q138859  12-JUN-2001  [sna]
+TITLE   :SNA Server Reference Documents Registry Settings Incorrectly
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Appendix C of the SNA Server "Reference Guide" describes SNA Server registry
+parameters that can be used to alter the default behavior of SNA Server. These
+parameters are configured in the following registry key:
+
+   HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/SnaServr/Parameters
+
+The Reference Guide describes these parameters as supporting "YES" and "NO"
+values. However, when most of these parameters are added to this registry key,
+the feature becomes enabled even though the registry value may be set to "NO".
+
+CAUSE
+=====
+
+The SNA Server service checks for the presence of these settings within the
+registry to determine whether to enable them or not, even if the entry is set to
+"NO". So, the Reference Guide incorrectly defines the method used to enable and
+disable these settings.
+
+RESOLUTION
+==========
+
+If the following entries are present in the SnaServr/Parameters key, they are
+enabled, even if set to "NO":
+
+   NOTERMSELF
+   NORETRY
+   ALLOWBBRQE
+   NO4004
+   NO400D
+   NO2001
+   CLEANUP
+   ALLOCINACT
+   NOINITCNOS
+   NOPWDSUB
+
+SNA Server 2.11 only:
+
+   FNA_SUPPORT
+   HNA_SUPPORT
+
+To disable the above settings, the registry value should be removed and the SNA
+Server service must be restarted.
+
+If the following entries are set to "NO" (all caps), the entry is disabled. If
+they are set to any other value, or are not present in the SnaServr/Parameters
+registry key, they are enabled:
+
+   RETRYCNOS
+   RENEGLIMITS
+
+If the following entry is set to "YES" (all caps), the entry is enabled. If it is
+set to any other value or is not present in the registry key, it is disabled:
+
+   NONOTIFYRSP
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11, 3.0, and 4.0.
+
+Additional query words: prodsna 2.00 2.10 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q101559  19-NOV-1999  [msdos]
+TITLE   :Microsoft Backup Err Msg: Alert! Unknown Compression of File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to restore backups with Microsoft Backup for MS-DOS or Microsoft
+Backup for Windows, you receive the following error message:
+
+   Alert! Unknown compression of file
+
+CAUSE
+=====
+
+This error occurs when:
+
+ - The backups were made with a beta version of Microsoft Backup.
+
+-or-
+
+ - You used MS-DOS 6.22 to create a compressed backup and then attempted to
+   restore it using Microsoft Backup for MS-DOS 6.0.
+
+WORKAROUND
+==========
+
+If you made backups with a beta version of Microsoft Backup, there is no
+workaround for this situation. You must create new backups with the final
+release version of MS-DOS 6.0 or later.
+
+If you made backups under MS-DOS 6.22 Backup with compression turned on, either
+restore the data with MS-DOS 6.22 version of Backup, or back up the data with
+compression turned off.
+
+Additional query words: 6.00 back up msbackup mwbackup
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS600
+Version           : MS-DOS:6.0,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

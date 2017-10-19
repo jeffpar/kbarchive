@@ -1,0 +1,52 @@
+DOCUMENT:Q107255  21-NOV-1999  [msdos]
+TITLE   :Stacker Conversion Help: ...Type HELP DBLSPACE /CONVSTAC...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+The DoubleSpace Stacker Conversion routine online help contains the
+following statement:
+
+   You can also convert a Stacker volume file from the MS-DOS prompt using the
+   dblspace /convstac command. For more information, type " HELP DBLSPACE
+   /CONVSTAC" (without the quotation marks) at the command prompt.
+
+This is incorrect; there is no help about DBLSPACE /CONVSTAC in MS-DOS
+Help.
+
+NOTE: You cannot use the DBLSPACE /CONVSTAC command until you have
+converted your Stacker-compressed drives to DoubleSpace-compressed
+drives. You can then use DBLSPACE /CONVSTAC to convert your Stacker
+compressed removable media disks to DoubleSpace-compressed removable
+media disks.
+
+Additional query words: 6.20 docerr doc documentation error
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

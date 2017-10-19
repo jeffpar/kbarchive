@@ -1,0 +1,62 @@
+DOCUMENT:Q208595  15-NOV-2001  [vbwin]
+TITLE   :VBCE: Resetting Toolbars in the IDE Can Cause Application Error
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With a Windows CE Toolkit for Visual Basic (VBCE) project open in the Visual
+Basic design environment, resetting the toolbars causes an Application Error
+when exiting Visual Basic. The following error message is received:
+
+   VB6.EXE - Application Error
+   The instruction at "0x10009bac" referenced memory at "0x03466020".
+   The memory could not be "read".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Do not reset the toolbars while editing a Visual Basic CE project. This clears
+the menus as customized by the Visual Basic CE Add-In, causing an Application
+Error when you shut down Visual Basic.
+
+Additional query words: vbce vbce6 wce
+
+======================================================================
+Keywords          : kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

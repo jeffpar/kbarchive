@@ -1,0 +1,74 @@
+DOCUMENT:Q189455  23-OCT-1999  [mastering]
+TITLE   :PRB: "Cannot Find Title Data" Error in Mastering Series Programs
+PRODUCT :Microsoft Mastering Series
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Products, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running a Mastering Series product, the following error occurs:
+
+   Warning : Cannot find the title data file, Please check the Titles CD ROM is
+   in place or its network location available. If the location has changed,
+   please type the new location below, This path should contain the file
+   <File Name>
+
+CAUSE
+=====
+
+When you install the Mastering Series product, not all of the multimedia files
+are copied to your local computer because of the size constraint. When the
+software looks at the CD-ROM drive to play the multimedia files, the CD is not
+present in the drive and the error occurs.
+
+RESOLUTION
+==========
+
+Keep the Mastering Series CD in the CD-ROM Drive while running the program.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Install any Mastering Series product from the CD, not from a network location.
+Remove the CD from the CD-ROM Drive and try to run the program.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,86 @@
+DOCUMENT:Q117652  16-DEC-1999  [pcmail]
+TITLE   :PC Forms: Sender Does Not Appear in Read Reply Form
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 1.0 of Microsoft Electronic Forms Designer, if you follow the
+instructions for creating a Reply Form in the Developer's Guide (pages 112-115)
+the Sender's name does not appear on the Read Reply Form (frmReadReply).
+
+CAUSE
+=====
+
+There is no code in the ReadMessage procedure defined in EFORM.BAS to handle
+adding the Sender name to the Read Reply form (frmReadReply).
+
+RESOLUTION
+==========
+
+To include the Sender's name in the Read Reply Form, follow this procedure to
+add code to the ReadMessage procedure defined in EFORM.BAS:
+
+1. Open the E-form project in Visual Basic.
+
+2. From the Project window, select EFORM.BAS.
+
+3. Click the View Code button.
+
+4. From the Procedure list box, select ReadMessage.
+
+5. Add the following code to process frmReadReply:
+
+      If frm Is frmReadReply Then
+         frm!txtOriginator = gOriginator.Name
+         ' Check and see if the form has been saved since it was received
+         modified = MEFReadLong(gPackage, "modified", 0)
+         If modified <> 0 Then
+           frm!lblFrom = "*&From:"
+         End If
+         frm!txtDateReceived = MEFFormatMAPIDate(gMessage.DateReceived)
+      End If
+
+6. Save the project.
+
+7. From the File menu, choose "Make EXE file" to build the new E-form
+   executable.
+
+REFERENCES
+==========
+
+"Microsoft Electronic Forms Designer Developer's Guide," pp. 112-115
+
+Additional query words: 1.00 Originator txtOriginator Recipient
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

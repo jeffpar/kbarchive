@@ -1,0 +1,55 @@
+DOCUMENT:Q159013  09-AUG-2001  [winnt]
+TITLE   :Saving File to Windows NT 3.51 Server Loses Long File Name
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork msnets appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+ - Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you open a file in Microsoft Excel version 5.0c or Microsoft Word version 6.0
+using the short file name on a Windows NT 3.51 server, if the file has a long
+file name the long file name is lost when you save the file.
+
+MORE INFORMATION
+================
+
+This behavior occurs only when you save a file to a Windows NT 3.51 server.
+
+Microsoft Excel and Word save the file in a temporary file, delete the original
+file, and rename the temporary file to the original name. Because Microsoft
+Excel 5.0c and Word 6.0 are not aware of the long file names, they use short
+names in this process. Therefore, the original long file name is lost after the
+delete and rename sequence.
+
+Additional query words: lfn lfns sfn xls prodnt
+
+======================================================================
+Keywords          : kbinterop kbnetwork msnets appscomp kbAppCompatibility 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

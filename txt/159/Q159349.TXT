@@ -1,0 +1,80 @@
+DOCUMENT:Q159349  25-MAR-2002  [win95x]
+TITLE   :Resume On Ring Not Implemented for PC Card Modems
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardwarekbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a communications program has been configured to automatically answer incoming
+calls and the computer is placed into a Suspended power- management state, the
+computer does not resume when an incoming call arrives.
+
+CAUSE
+=====
+
+This functionality, known as "Resume On Ring," is designed to allow the modem to
+awaken the computer from a suspended state when an incoming call arrives if the
+modem has been configured to automatically answer incoming calls.
+
+The Advanced Power Management features of Windows 95 OEM Service Release 2 (OSR2)
+do not support this functionality.
+
+RESOLUTION
+==========
+
+To work around this issue, do not suspend the computer when the modem is
+configured to automatically answer incoming calls.
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+The Resume On Ring feature is supported by the PC Card Event WakeUp mechanism
+defined in the ExCA specification. This is an optional mechanism, and it is not
+supported by all PC Card modems.
+
+When a modem port is opened by a program, the modem is powered up in a persistent
+state. When the computer is suspended, the modem is set up for Resume On Ring,
+if it can be, because it is in a persistent-on power state.
+
+
+Additional query words: 95 wake
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware kbfixlist
+Technology        : kbWin95search kbOPKSearch
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

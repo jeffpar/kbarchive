@@ -1,0 +1,47 @@
+DOCUMENT:Q149647  08-NOV-2001  [pcmail]
+TITLE   :Voice Features Limited By a Program's Abilities
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:msphone1
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Phone, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are using the Microsoft Phone software, the Voice features of a program
+are limited by the program's ability to handle voice commands.
+
+For example, you may want to use Voice to perform a read selection on a set of
+non-adjacent worksheet cells in Microsoft Excel. To do this, Voice must copy the
+selected cells to the Clipboard. Because Microsoft Excel does not allow copying
+non-adjacent cells to the Clipboard, the Voice action does not work.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : msphone1 
+Technology        : _IKkbbogus kbMSHardwareSearch kbPhone
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

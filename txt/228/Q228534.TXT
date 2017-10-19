@@ -1,0 +1,84 @@
+DOCUMENT:Q228534  01-OCT-1999  [exchange]
+TITLE   :XFOR: DBCS Attachment Name Disappears When Sending a Mail by Mea
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP2
+OPER/SYS:
+KEYWORDS:exc55sp2 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a message with double-byte character set (DBCS) attachment name to
+a Lotus cc:Mail post office (PO) using the Microsoft Exchange Connector for
+Lotus cc:Mail (CCMC), the DBCS attachment name disappears. If you use
+single-byte character set (SBCS) attachment name instead of DBCS, the attachment
+name is kept correctly.
+
+CAUSE
+=====
+
+Exchange Server 5.5 Service Pack 1 CCMC kept DBCS attachment names correctly.
+However Exchange Server 5.5 Service Pack 2 CCMC breaks the behavior.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Connector for Lotus cc:Mail
+
++------------------------+
+| File name | Version    | 
++------------------------+
+| Ccmc.exe  | 5.5.2598.0 | 
++------------------------+
+| Ccmsg.dll | 5.5.2598.0 | 
++------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 2. This problem was first corrected in Exchange Server
+5.5 Service Pack 3.
+
+Additional query words: QFE Lost
+
+======================================================================
+Keywords          : exc55sp2 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP2
+Version           : winnt:5.5 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

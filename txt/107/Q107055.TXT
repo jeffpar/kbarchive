@@ -1,0 +1,73 @@
+DOCUMENT:Q107055  12-DEC-1999  [homemm]
+TITLE   :CD Sampler: No Support for XGA
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::Fall 1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Home CD Sampler Fall 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft CD Sampler does not support displays configured for XGA.
+
+MORE INFORMATION
+================
+
+The IBM Extended Graphics Array (XGA) adapter is a memory-mapped graphics
+coprocessor for machines equipped with a Micro Channel Architecture (MCA) bus.
+The XGA adapter offers built-in VGA backward compatibility. The XGA adapter is
+shipped with 512K display memory (with an optional expansion to a total of 1
+MB). The IBM XGA is shipped as the standard display adapter for PS/2 models 90
+and 95.
+
+The system requirements for the Microsoft CD Sampler are:
+
+ - A personal computer with a 386SX or higher microprocessor
+
+ - 2 MB of available hard disk space
+
+ - 4 MB RAM
+
+ - MS-DOS 3.1 or later
+
+ - Microsoft Windows 3.1 or later
+
+ - Microsoft Mouse or compatible pointing device
+
+ - 256-color VGA
+
+ - MPC compatible CD-ROM
+
+ - Audio board
+
+NOTE: Headphones or speakers are recommended.
+
+Additional query words: kbhowto Fall 1993 CD Sampler multi media multimedia multi-media
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword5 kbCDSamplerF1993
+Version           : :Fall 1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

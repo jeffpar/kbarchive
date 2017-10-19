@@ -1,0 +1,76 @@
+DOCUMENT:Q104292  28-JUL-2001  [crossnet]
+TITLE   :How to Identify 128-Bit Windows 95 Dial-Up Networking Client
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:; Win2000:95
+OPER/SYS:
+KEYWORDS:kbnetwork dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Dial-Up Networking 1.3 Upgrade includes the ability for Dial-Up
+Networking (DUN) clients to connect to a Microsoft Windows NT Remote Access
+Service (RAS) server using 128-bit data encryption. This article describes how
+to determine whether your Windows 95-based DUN client supports this level of
+encryption.
+
+MORE INFORMATION
+================
+
+To determine if your DUN client supports 128-bit encryption, use the following
+steps:
+
+1. Click Start, point to Find, and then click Files Or Folders. In the Named
+   box, type "pppmac.vxd" (without the quotation marks), and then click Find
+   Now.
+
+2. In the list of found files, right-click the Pppmac.vxd file in the
+   Windows\System folder, and then click Properties.
+
+3. Click the Version tab.
+
+4. In the Item Name box, click Internal Name. If your computer is capable of
+   using 128-bit encryption, the text in the Value box displays:
+
+   PPPMAC (US/Canada Only, Not for Export)
+
+For additional information about 128-bit encryption, see the following articles
+in the Microsoft Knowledge Base:
+
+   Q169895 Enabling 128-bit Encryption for Routing and Remote Access
+
+
+   Q172215 How to Force 128-bit Data Encryption for RAS
+
+Additional query words: encrypt encrypted secure
+
+======================================================================
+Keywords          : kbnetwork dun win95 kbDialUp 
+Technology        : kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : WINDOWS:; Win2000:95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

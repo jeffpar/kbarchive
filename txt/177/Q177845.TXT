@@ -1,0 +1,92 @@
+DOCUMENT:Q177845  08-NOV-2001  [homekids]
+TITLE   :Protect It!: Error Message When You Start Windows
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbtool
+
+======================================================================
+*********************************************************************
+**                           - WARNING -                           **
+**     THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN       **
+**     CONFIRMED, EDITED, OR TESTED BY MICROSOFT. USE ONLY         **
+**     WITH DISCRETION.                                            **
+*********************************************************************
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer, you may receive one of the following error
+messages:
+
+ - Nav Autoprotect: Cannot load autoprotect Windows agent.
+
+ - Norton AntiVirus cannot start.
+
+ - Fatal 0E at 0028:xxxxxxxx in vxd vdd(0b).
+
+CAUSE
+=====
+
+You may receive the error message if Norton AntiVirus is installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, add Norton AntiVirus to the Allowed Programs list in
+Protect It!. To do this, follow these steps:
+
+1. Log in to Microsoft Windows 95 as a family member without restrictions.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Protect It!, type your Protect It! key, and then click OK.
+
+4. In the Family Members box, click .Default, and then click Set/Change.
+
+5. Click Next, and then click More under the Allowed Programs box.
+
+6. Open the Norton AntiVirus folder (the default location of this folder is
+   Program Files\Norton AntiVirus), click the Navapw32.exe file, and then click
+   Open.
+
+7. Click Next, and then click Finish.
+
+8. Click Close, and then click OK.
+
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: boot on logon login
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbtool 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,83 @@
+DOCUMENT:Q266742  11-NOV-2000  [exchange]
+TITLE   :XCON: MTA Logs 9405 Exception Error When Starting on Cluster
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55 kbExchange550preSP4fix kbExchange550sp4Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the message transfer agent (MTA) service starts during cluster setup, the
+MTA may log the following incorrect 9405 error message:
+
+   An unexpected error has occurred which may cause the MTA to terminate.
+   Error: Allocate more buffer space 260. [BASE MAIN BASE 1] (16)
+
+This error message is not harmful; the MTA service starts successfully and
+continues to run without any errors.
+
+CAUSE
+=====
+
+This issue can occur if more buffer space needs to be allocated for the returned
+node name. In the MTA service records this as fatal error, however, the MTA
+correctly allocates more buffer space.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+
+WORKAROUND
+==========
+
+To work around this issue, ignore the error message in the "Symptoms" section of
+this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 4.
+
+
+Additional query words: cluster mta 9405 buffer
+
+======================================================================
+Keywords          : exc55 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

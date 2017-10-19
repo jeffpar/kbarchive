@@ -1,0 +1,92 @@
+DOCUMENT:Q176401  01-DEC-2000  [mspress]
+TITLE   :Microsoft Personal Web Server Not Included on CD-ROM
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Active Visual Basic 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On page 336 of "Active Visual Basic 5.0," in the note at the top of the page,
+the seventh sentence states: "Active Server Pages and Microsoft Personal Web
+Server are included on the accompanying CD-ROM."
+
+Active Server Pages is included on the companion disc, but Microsoft Personal Web
+Server is not.
+
+RESOLUTION
+==========
+
+Download Microsoft Personal Web Server from the Microsoft Web site. Microsoft
+Personal Web Server is available for free download at the following Web
+addresses:
+
+   http://www.microsoft.com/ie/download/
+
+   http://www.microsoft.com/msdownload/ntoptionpack/askwiz.asp
+
+NOTE: Because these Microsoft Web sites are constantly updated, the site
+addresses may change without notice. If this occurs, link to the Microsoft home
+page at the following address:
+
+   http://www.microsoft.com/
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in "Active Visual Basic 5.0."
+
+MORE INFORMATION
+================
+
+Microsoft Personal Web Server is only necessary if you are using Windows 95. On
+Windows NT Workstation, you will use Peer Web Services. On Windows NT Server,
+you will use Microsoft Internet Information Server. In both cases, the software
+you need is included with the operating system.
+
+Correction:
+Page 336, sentence 6:
+Change:
+Active Server Pages and Microsoft Personal Web Server are included on the
+accompanying CD-ROM.
+
+To:
+Active Server Pages software is included on the accompanying CD-ROM. Microsoft
+Personal Web Server is available for free download at the following Web
+address:
+
+   http://www.microsoft.com/ie/download/
+
+
+Additional query words: press ms_press vb5 1-57231-512-1
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

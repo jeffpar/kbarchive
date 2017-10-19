@@ -1,0 +1,52 @@
+DOCUMENT:Q97780  05-DEC-1999  [homemm]
+TITLE   :Incorrect Error Message in Beethoven on Magnavox 461
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Beethoven: The Ninth Symphony, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to start Beethoven version 1.0 on a computer with a Magnavox 461
+CD-ROM drive, the following error message appears:
+
+   The wrong disk is in the CD-ROM drive. Please insert the Multimedia Beethoven
+   CD. Click retry...
+
+This problem occurs because the Magnavox 461 CD-ROM drive is not Multimedia PC
+(MPC) compliant, and because Beethoven checks for the length of the CD, which
+the Magnavox driver incorrectly reports.
+
+Beethoven 1.1 checks for tracks and audio length. This error should not occur in
+Beethoven 1.1.
+
+Additional query words: 1.00 multimedia multi media multi-media mpc stringent relaxed
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMBeethoven9th100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

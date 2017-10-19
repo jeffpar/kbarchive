@@ -1,0 +1,73 @@
+DOCUMENT:Q235174  06-AUG-2002  [sms]
+TITLE   :SMS: Remote Control Connection Issues w/ Win2K and IP Security
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbClient kbConfig _IK964 kbSecurity kbServer kbsms200 kbsms200bug k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Internet Protocol (IP) security in Microsoft Windows 2000 can cause some
+connection issues when you try to establish a remote control session. If IP
+security is enabled on a server, client, or both, you may experience an initial
+timeout when you try to connect to a client through remote control. It may
+appear as though the remote control session is unable to establish a connection.
+Multiple attempts are made, resulting in a connection failure, with the user
+prompted to retry or cancel. This issue is somewhat random, and its frequency
+can vary depending on how IP security is configured on the server or client.
+
+WORKAROUND
+==========
+
+To work around this issue and establish a remote control session, follow these
+steps:
+
+1. Ping server-to-client or client-to-server with the command prompt ping
+   utility to allow IP security to establish a connection.
+
+2. When the remote control session fails to establish a connection, retry
+   several times to allow IP security to establish a connection.
+
+3. Use the "nbtstat -a <client name>" command to view information about
+   the computer.
+
+   This command fails until an IP security connection is established, after
+   which, information about the computer is displayed.
+
+NOTE: After a connection is successfully established between a server and client,
+it should not be necessary to repeat these steps every time a remote control
+session is attempted between the two computers, because the IP Sec information
+is cached until shortly after the connection is dropped.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbClient kbConfig _IK964 kbSecurity kbServer kbsms200 kbsms200bug kbHelpDesk kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

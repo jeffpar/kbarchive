@@ -1,0 +1,111 @@
+DOCUMENT:Q179068  07-MAY-2002  [homegame]
+TITLE   :FS95: Scenery Areas Not Listed in Airports Directory
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Flight Simulator for Windows 95 using the Compact
+installation option, some scenery areas are not listed in the airports
+directory.
+
+CAUSE
+=====
+
+The missing scenery areas are part of the City Pack. The City Pack is not
+installed when you use the Compact installation option.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove Flight Simulator and then reinstall Flight
+Simulator using the Typical or Custom installation options. To do so, use the
+following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click Microsoft Flight Simulator for Windows 95 and then click Add/Remove.
+
+4. Click Remove All.
+
+5. When you are prompted to confirm the removal of Flight Simulator 95, click
+   Yes.
+
+6. When you are prompted to restart Windows, do so.
+
+7. Close Control Panel.
+
+8. Delete the folder in which Flight Simulator is installed. By default, Flight
+   Simulator is installed in the following folder:
+
+   C:\Program Files\Microsoft Games\Flight Simulator
+
+   For information about how to delete folders, click Start, and then click Help.
+   On the Index tab, type "deleting" (without the quotation marks), and then
+   double-click the "Deleting files or folders" topic.
+
+9. Insert the Flight Simulator CD-ROM into the CD-ROM drive. If Auto Insert
+   Notification is enabled, Setup begins automatically. Follow the instructions
+   on the screen.
+
+   NOTE: If Setup does not begin automatically, click Start, click Run, type the
+   following line in the Open box, and then click OK
+
+   <drive>:\setup.exe
+
+   where <drive> is the letter of the CD-ROM drive.
+
+10. When you are prompted to select the installation option you prefer, click
+   Typical or Custom. If you click Custom, make sure the City Pack check box is
+   selected, and then click Continue.
+
+All of the scenery areas should now be listed in the airports directory.
+
+MORE INFORMATION
+================
+
+The City Pack includes both airports and scenery for Bejiing, Cairo, Jerusalem,
+Mexico City, Moscow, Panama, Rio De Janeiro, Rome, Sydney, Washington D.C., and
+other cities.
+
+The Typical installation option requires approximately 75 MB of hard disk space,
+and includes the City Pack.
+
+The Custom installation option can require up to 140 MB of hard disk space if
+every option (icluding the City Pack) is selected.
+
+Additional query words: 1.00 fs95 fs6 flightsim fltsim flt sim citypack
+
+======================================================================
+Keywords          : kbsetup kbui 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

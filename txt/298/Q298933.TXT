@@ -1,0 +1,76 @@
+DOCUMENT:Q298933  06-AUG-2002  [exchange]
+TITLE   :XADM: Exchange Services Won't Start After SP3 Canceled
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to load Service Pack 3 (SP3), and you then stop the
+installation after you receive numerous ".dll in use" error messages, Exchange
+Server services may not start. When you try to start Microsoft Exchange
+Directory service, you may receive the following error message:
+
+   Dsamain.exe -Entry Point Not Found
+   The procedure entry point ?HrRegisterProtocol@@YGJPAVPROTO@@FJJJKHPAXK@Z could
+   not be located in the dynamic link library Netif.dll.
+
+CAUSE
+=====
+
+The issue can occur because the Netif.dll file was not updated due to the
+cancellation of the SP3 installation.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Stop all nonessential services.
+
+2. Repeat the SP3 installation. Each time that you receive the following error
+   message during the installation, write down the .dll file names that appear:
+
+   Could not open the file named <drive
+   letter>:\Winnt\System32\<filename>.dll. It is in use by another
+   application.
+
+3. When you complete the SP3 installation, rename all of the .dll files whose
+   names you wrote down.
+
+4. Search for the renamed files and replace each of them with the appropriate
+   .dll file that is on the SP3 compact disc.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

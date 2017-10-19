@@ -1,0 +1,99 @@
+DOCUMENT:Q149108  10-FEB-2000  [foxpro]
+TITLE   :BUG: Command Group Class Button Movements Not Inherited
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changes to command button positions made in a class based on CommandGroup are
+not inherited properly in forms containing that class.
+
+WORKAROUND
+==========
+
+Delete the instance of the class from the forms where it is contained.
+Reinstantiate the class on the form. The changes in command button positions
+will be displayed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new project in Visual FoxPro called "Test" (without the quotation
+   marks).
+
+2. With the Test project maximized, click the Classes tab. Click the New button
+   in the Project Manager to create a new class.
+
+3. Enter Cmdtst as the class name. Base the class on CommandGroup, and save it
+   in C:\Vfp\Repro.vcx. (This path assumes C: is the current drive and Vfp is
+   the Visual FoxPro root directory. This may need to be modified to suit
+   individual configurations.)
+
+4. When the Class Designer window appears, drag the border surrounding the
+   command group out enough to provide room to reposition command buttons. Save
+   the class. The Repro class library should now appear in the Classes tab of
+   the Test project.
+
+5. Click the Documents tab in the Test project. With Forms highlighted, click
+   the New button in the project manager to create a new form.
+
+6. When the Form Designer window appears, make sure the Form Controls toolbar is
+   visible. Click the View Classes button in the Form Controls toolbar, and
+   select Add from the menu. Add C:\Vfp\Repro.vcx. The Form Controls toolbar
+   should now change so that it contains the Cmdtst class. Click the Cmdtst
+   class, and add it to the form.
+
+7. Save the form as REPROTST.
+
+8. Click the Classes tab on the Test project, and modify the Cmdtst class. When
+   the Class Designer window appears, select and move one of the command buttons
+   in the group to another position inside the border. Move the command button
+   enough to be noticeably out of place. Save the class.
+
+9. Click the Documents tab from the Test project, and modify the Reprotst form.
+   The change in position made in the class is not inherited by the instance of
+   the class on the form.
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

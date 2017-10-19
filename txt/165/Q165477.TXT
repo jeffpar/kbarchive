@@ -1,0 +1,64 @@
+DOCUMENT:Q165477  17-DEC-2000  [win95x]
+TITLE   :How to Add Modem Tracking to System Monitor
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to add modem tracking to System Monitor in Windows
+95.
+
+MORE INFORMATION
+================
+
+To add modem tracking to System Monitor, follow these steps:
+
+1. In Control Panel, double-click Modems. Click Properties, and then click the
+   Connection tab. Click Advanced, and then click the Record A Log File check
+   box to select it. Click OK or Close until you return to Control Panel.
+
+2. Connect to a remote service or server with HyperTerminal or Dial-Up
+   Networking.
+
+3. While you are connected, run System Monitor. To start System Monitor, click
+   the Start button, point to Programs, point to Accessories, point to System
+   Tools, and then click System Monitor.
+
+4. On the Edit menu in System Monitor, click Add Item. If the modem is
+   connected, the modem driver appears in the list. Click Bytes Received and
+   Bytes Sent and click OK.
+
+NOTE: System Monitor monitors modem usage only when you are using a 32-bit
+communications program.
+
+======================================================================
+Keywords          : kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

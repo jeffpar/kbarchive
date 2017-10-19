@@ -1,0 +1,93 @@
+DOCUMENT:Q172961  14-NOV-2000  [word97]
+TITLE   :WD97: Items Missing from Recently Used File List
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The recently used file list (sometimes referred to as the most recently used
+list or "MRU") for Microsoft Word may not be accurate if you use Microsoft Word
+as your e-mail editor. In some circumstances, one or more of the files last used
+may not appear in the list.
+
+The recently used file list is the list of files at the bottom of the File menu.
+
+WORKAROUND
+==========
+
+In Microsoft Outlook 97, follow these steps to disable Microsoft Word as your
+e-mail editor:
+
+1. On the Tools menu, click Options.
+
+2. On the E-mail tab, click to clear the "Use Microsoft Word as the e-mail
+   editor" check box and then click OK.
+
+In Microsoft Outlook 98, follow these steps to disable Microsoft Word as your
+e-mail editor:
+
+1. On the Tools menu, click Options.
+
+2. On the Mail Format tab, in the "Send in this message format", click something
+   other than Microsoft Word, and then click OK.
+
+For additional information about how to turn Word as your e-mail editor on or
+off, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q159476 WD97: How to Enable, Disable Microsoft Word as the E-Mail Editor
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+MORE INFORMATION
+================
+
+For additional information about MRU lists, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q161631 WD97: How to Reset Word 97 Most Recently Used (MRU) Lists
+
+   Q197849 WD97: How to Open the Last Document Edited When You Start Word
+
+   Q82107 WD: Removing File Names from the Recently Used List (File Menu)
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,135 @@
+DOCUMENT:Q163729  14-NOV-2000  [word97]
+TITLE   :WD97: OLE Automation Fails When Using "Word.Basic" Object
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfile kbdta kbdtacode word8 kbwordvba word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use a programming language that calls a Visual Basic for Applications
+or WordBasic instruction using OLE Automation, and your calling application (for
+example, Microsoft Visual Basic 3.0) cannot use named arguments, the OLE
+automation fails.
+
+CAUSE
+=====
+
+When you use a programming language that cannot call a Visual Basic for
+Applications or WordBasic instruction using named arguments, you must identify
+these arguments by position using commas as placeholders.
+
+RESOLUTION
+==========
+
+To ensure the correct WordBasic command argument positioning when using OLE
+Automation to interact with Visual Basic for Applications, use the Position.hlp
+file for Word versions 6.x and 7.x.
+
+The following file is available for download from the Microsoft Download Center:
+
+   Position.exe
+   (http://download.microsoft.com/download/word60win/utility3/1/WIN98/EN-US/position.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+Visual Basic for Applications includes a WordBasic Automation object
+(Word.Basic) that includes methods for all the WordBasic statements and
+functions available in Word versions 6.x, 7.x.
+
+WordBasic statements or functions in Microsoft Word can take named arguments. If
+your application does not support named arguments, and you send WordBasic
+commands through OLE Automation, your application must specify all the
+parameters to a WordBasic function in the proper order. The same call in
+WordBasic may only require some of the parameters using named arguments, and
+those parameters could be provided in any order.
+
+For most WordBasic statements, the positioning of the arguments is documented in
+the WordBasic Help topics or printed reference entries for those statements.
+However, the arguments for some statements are not listed in proper order, or
+the arguments are irrelevant or have no effect. These arguments are not
+documented in WordBasic Help or in the printed reference.
+
+For example, the InsertIndex statement corresponds to the Index tab in the Index
+and Tables dialog box. The InsertIndex statement takes a number of arguments
+that have to do with other tabs in the dialog box, such as the Table Of Contents
+tab. Because these arguments are irrelevant to inserting an index, they are
+ignored, and are therefore not documented in WordBasic Help or in the printed
+reference. But, as an OLE Automation programmer, you need to be aware of these
+arguments so you can correctly specify arguments by position.
+
+NOTE: If your program was written to call WordBasic commands and you are
+anticipating interacting with the Microsoft Word Visual Basic for Applications
+language for all future development, it is recommended that you convert your
+code from WordBasic to Visual Basic for Applications commands for Microsoft
+Word.
+
+For a listing of these statements and the correct order of the arguments, look to
+the Position.txt text file. This file is included on the disk included with the
+Word Developer's Kit (located in the Wrdbasic directory).
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q161547 WD: How to Use OLE Automation with Word 6.0/7.0
+
+   Q105534 WD: OLE: Visual Basic 3.0 Does Not Support Named Arguments
+
+   Q112733 FILE: Help File for VB OLE Automation w/ Word for Windows
+
+   Q163618 WD97: Writing Macro Code for VBA and WordBasic Branching
+
+
+For information about WordBasic statements and functions, see the "Microsoft Word
+Developer's Kit" or WordBasic Help in Word versions 6.x, 7.x.
+
+REFERENCES
+==========
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: wordcon vb vba vbe fileprint
+
+======================================================================
+Keywords          : kbfile kbdta kbdtacode word8 kbwordvba word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

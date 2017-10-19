@@ -1,0 +1,107 @@
+DOCUMENT:Q249341  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Create Layered Window in Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAPI kbOSWin2000 kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbForms kbGrpDSVB kbDSupp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows 2000 has the ability to create translucent windows. These
+windows are called layered windows. This article describes how to create a
+layered window by using Visual Basic.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+   default.
+
+2. Add the following code to the General Declarations section of Form1:
+
+   Private Declare Function GetWindowLong Lib "user32" Alias _
+     "GetWindowLongA" (ByVal hwnd As Long, ByVal nIndex As Long) As Long
+   Private Declare Function SetWindowLong Lib "user32" Alias _
+     "SetWindowLongA" (ByVal hwnd As Long, ByVal nIndex As Long, _
+     ByVal dwNewLong As Long) As Long
+   Private Declare Function SetLayeredWindowAttributes Lib "user32" _
+     (ByVal hwnd As Long, ByVal crey As Byte, ByVal bAlpha As Byte, _
+     ByVal dwFlags As Long) As Long
+
+   Private Const GWL_EXSTYLE = (-20)
+   Private Const WS_EX_LAYERED = &H80000
+   Private Const WS_EX_TRANSPARENT = &H20&
+   Private Const LWA_ALPHA = &H2&
+
+   Option Explicit
+
+   Private Sub Form_Load()
+       Dim lOldStyle As Long
+       Dim bTrans As Byte ' The level of transparency (0 - 255)
+
+       bTrans = 128
+       lOldStyle = GetWindowLong(Me.hWnd, GWL_EXSTYLE)
+       SetWindowLong Me.hWnd, GWL_EXSTYLE, lOldStyle Or WS_EX_LAYERED
+       SetLayeredWindowAttributes Me.hWnd, 0, bTrans, LWA_ALPHA
+   End Sub
+
+3. Run the example program by pressing the F5 key. The form should look like a
+   normal Visual Basic window. However, windows that are lower in the Z order
+   should be partially visible through the window.
+
+It is also possible to make mouse events go through to the lower windows by
+changing the preceding code line
+
+   SetWindowLong Me.hwnd, GWL_EXSTYLE, lOldStyle Or WS_EX_LAYERED
+
+to:
+
+   SetWindowLong Me.hwnd, GWL_EXSTYLE, lOldStyle Or WS_EX_LAYERED Or WS_EX_TRANSPARENT
+
+However, the form does not remain topmost if another form is activated. See the
+"Reference" section for information on how to create a form that remains on
+top.
+
+REFERENCES
+==========
+
+For additional information how to create a topmost window, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q184297 HOWTO: Create a Form That Always Stays on Top
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbOSWin2000 kbSDKWin32 kbVBp kbVBp400 kbVBp500 kbVBp600 kbForms kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

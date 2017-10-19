@@ -1,0 +1,58 @@
+DOCUMENT:Q186822  04-OCT-2001  [frontpg]
+TITLE   :FP: Bookmark Hyperlink on Same Page Appears in Visited Color
+PRODUCT :Word Front Page
+PROD/VER:MACINTOSH:1.0; WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194329.
+
+SYMPTOMS
+========
+
+When you view a page containing a hyperlink that references a bookmark on the
+current page in a Web browser, the hyperlink appears in the color that you
+specified for the visited hyperlink even though you are viewing the page for the
+first time.
+
+CAUSE
+=====
+
+The browser logs its history on a per-page basis only. Individual bookmarks on
+the current page are not logged. Because the hyperlink points to a bookmark on
+the current page and the page is logged as having been visited, the hyperlink
+appears in the color that you specified for the visited hyperlink.
+
+
+Additional query words: hyperlink bookmark
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : MACINTOSH:1.0; WINDOWS:97
+Hardware          : ALPHA MAC MIPS x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

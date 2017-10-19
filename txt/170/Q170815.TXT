@@ -1,0 +1,78 @@
+DOCUMENT:Q170815  14-NOV-2000  [word97]
+TITLE   :WD97: AutoCorrect Entry Formatted with Capital Letter
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbproof word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Microsoft Word may capitalize the first letter of inserted AutoCorrect text if
+the inserted text starts a sentence.
+
+CAUSE
+=====
+
+The "Capitalize first letter of sentences" option is turned on by default in
+Microsoft Word.
+
+WORKAROUND
+==========
+
+To avoid this behavior, use either of the following methods.
+
+Method 1: Press CTRL+Z to Undo the AutoCorrect Formatting
+---------------------------------------------------------
+
+Immediately after Word capitalizes the AutoCorrect entry, press CTRL+Z.
+
+Word will undo the capitalization.
+
+Method 2: Clear the "Capitalize first letter of sentences" Check Box
+--------------------------------------------------------------------
+
+On the Tools menu, click AutoCorrect, and then click to clear the "Capitalize
+first letter of sentences" check box.
+
+NOTE: This permanently disables the "Capitalize first letter of sentences"
+function until it is turned on again.
+
+MORE INFORMATION
+================
+
+When you have created an AutoCorrect entry that begins with a lowercase letter,
+Microsoft Word may capitalize the first character when the AutoCorrect text
+begins a new sentence.
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbproof word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,76 @@
+DOCUMENT:Q169469  12-MAY-2001  [odbc]
+TITLE   :BUG: SQLState S1000 with SQL_AUTOCOMMIT_OFF/SQLTransact
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.5,3.0,7.0,97
+OPER/SYS:
+KEYWORDS:kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, versions 2.5, 3.0 
+ - Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+BUG #: 4841 (Brazos)
+
+SYMPTOMS
+========
+
+If an application does the following in the Microsoft Access 7.0 or 97 version
+of the ODBC drivers more than seven times
+
+   SQLSetConnectOption(hdbc, SQL_AUTOCOMMIT, SQL_AUTOCOMMIT_OFF);
+   SQLTransact(henv, hdbc, SQL_COMMIT);
+
+The error generated is:
+
+   *szSqlState = "S1000", *pfNativeError = -1103,
+   *szErrorMsg = "[Microsoft][ODBC Microsoft Access 97 Driver] "
+
+If the application calls SQLExecDirect with any SQL statement, the error
+generated is:
+
+   szSqlState = "S1000", *pfNativeError = -1103, *pcbErrorMsg = 110
+   szErrorMsg="[Microsoft][ODBC Microsoft Access 97 Driver] Couldn't start
+   transaction; too many transactions already nested."
+
+WORKAROUND
+==========
+
+To work around this problem, do not set the SQL_AUTOCOMMIT option repeatedly
+within a connection. The SQL_AUTOCOMMIT option is a per-connection option. Once
+this option is set, it stays valid until the connection is dropped; an ODBC
+application does not have to set the option repeatedly within a connection.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Access ODBC driver
+version 3.50.3602. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: SQLEndTran SQLSetConnectAttr
+
+======================================================================
+Keywords          : kbprogramming 
+Technology        : kbAudDeveloper kbAccessSearch kbAccess97 kbODBCSearch kbAccess97Search kbODBC300 kbODBC250
+Version           : WINDOWS:2.5,3.0,7.0,97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

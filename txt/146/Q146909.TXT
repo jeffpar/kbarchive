@@ -1,0 +1,110 @@
+DOCUMENT:Q146909  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Use VB Control Property or Variable in SQL Statement
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can have a Visual Basic application build a SQL query based on choices made
+by a person using the application. The application can then use the SQL query
+when creating a view into a database.
+
+This article describes methods developers can use to create SQL queries that are
+based on control properties or names of variables. The information in this
+article applies to the following methods: FindFirst, FindLast, FindNext,
+FindPrevious, CreateDynaset, CreateSnapshot, Execute, and ExecuteSQL.
+
+MORE INFORMATION
+================
+
+When building a SQL query, do not include the variable or control name inside
+the SQL string; instead, you should reference its value. Using the variable or
+control name inside the SQL string is a mistake. For example, the following code
+is incorrect:
+
+      Dim ds As Recordset
+      Set ds = MyDB.OpenRecordset("Employees", dbOpenDynaset)
+         ds.FindFirst "NameField = Text1.Text"   ' This code is incorrect.
+
+This code is trying to create a dynaset that finds the first occurrence of the
+contents of Text1 in a field called NameField. Although the code does not
+produce an error, it does not find the desired value. It searches for the first
+occurrence of the string "Text1.Text" not the value of the Text1.Text control
+property.
+
+The criteria being sought is a string, so the programmer must use string
+concatenation rules to build the criteria string. The following gives the
+correct version of the code example:
+
+      Dim ds As Recordset
+      Set ds = MyDB.OpenRecordset("Employees", dbOpenDynaset)
+         ds.FindFirst "NameField = '" & Text1.Text & "'"
+
+The ampersand (&) operator concatenates the strings together correctly. Also,
+in SQL syntax, you need to enclose string data in single quotation marks to
+differentiate strings from variables.
+
+If you think the corrected version looks confusing with all the single and double
+quotation marks, you can assign the criteria to a string. Then use Debug.Print
+to view the contents of the string. The following is the same example enhanced
+to take advantage of the debug window:
+
+      Dim ds As Recordset
+      Dim SQL$ as String
+      Set ds = MyDB.OpenRecordset("Employees", dbOpenDynaset)
+         SQL$ = "NameField = '" & Text1.Text & "'"
+         Debug.Print SQL$
+         ds.FindFirst SQL$
+
+If Text1 contains the string "Wilson," the Debug windows displays:
+
+   NameField = 'Wilson'
+
+If the data type of a field is a number instead of a string, do not enclose the
+value being sought in single quotation marks. For example, use the following
+code to create a dynaset that finds the first occurrence of a zip code in a
+field called ZipCodeField where the ZipCodeField data type is not a string:
+
+      Dim ds As Recordset
+      Dim SQL$ as String
+      Dim ZipCodeVar as Double
+      Set ds = MyDB.OpenRecordset("Employees", dbOpenDynaset)
+         ZipCodeVar = 98052
+         SQL$ = "ZipCodeField = " & ZipCodeVar  ' This line builds the string.
+         Debug.Print SQL$
+         ds.FindFirst SQL$
+
+Additional query words: pitfall RecordSource kbVBp400
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

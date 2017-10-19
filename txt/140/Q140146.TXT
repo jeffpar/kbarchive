@@ -1,0 +1,59 @@
+DOCUMENT:Q140146  31-JUL-2001  [sms]
+TITLE   :Changing "(SMS)" Text in Shared Group Name
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork smsappman kbSMSAppMan
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a shared application group is created in Systems Management Server, "(SMS)"
+is placed at the end of the title. This can be changed to any text you choose.
+
+MORE INFORMATION
+================
+
+To change the group title text use the following steps:
+
+1. Open the Program Groups window in SMS Administrator.
+
+2. Create a new program group.
+
+3. Give it a title with the following format:
+
+   <title> (<text>)
+
+The text you place in the parentheses replaces the "(SMS)" that is placed at the
+end of the group title by default.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork smsappman kbSMSAppMan 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

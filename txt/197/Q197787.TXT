@@ -1,0 +1,69 @@
+DOCUMENT:Q197787  11-DEC-2001  [winnt]
+TITLE   :Err Msg: You Do Not Have Permission to Access Your Central...
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A user connecting to a Terminal Server that has Metaframe installed may receive
+the following error message:
+
+   You do not have permission to access your central profile located at
+   \\server\share. The operating system is attempting to log you on with your
+   local profile. Please contact your Network Administrator.
+
+CAUSE
+=====
+
+This problem will occur if a user's User Profile path or Terminal Server Profile
+path is specified in User Manager as \\server\share, rather than
+\\server\share\folder.
+
+RESOLUTION
+==========
+
+To workaround this situation, copy the profile to a folder under the profile
+share point. Change the User Profile path or Terminal Server Profile path in
+User Manager to \\server\share\folder.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows NT Server 4.0,
+Terminal Server Edition.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

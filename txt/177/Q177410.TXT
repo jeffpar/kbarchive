@@ -1,0 +1,81 @@
+DOCUMENT:Q177410  10-AUG-2001  [winnt]
+TITLE   :No IGMP Packets Received When Using Starlight Software
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are using Starlight Networks Software to provide multimedia and video
+solutions to your intranets. While your Windows 95 clients receive Internet
+Group Management Protocol (IGMP) datagrams successfully, your Windows NT clients
+do not.
+
+For more information regarding IGMP, see the following article in the Microsoft
+Knowledge base:
+
+ARTICLE-ID: Q135679
+TITLE : IGMP Group members Do Not Respond to IGMP Group Query Frames
+
+RESOLUTION
+==========
+
+To resolve this problem, please contact Starlight Network Technical Support.
+
+For more information, see the following Web site:
+
+www.starlight.com
+
+NOTE: Because web sites are constantly updated, the site address may change
+without notice. If this occurs, please contact the manufacturer directly.
+
+For information about how to contact Starlight Networks, query in the Knowledge
+Base for one of the following articles:
+
+ARTICLE-ID: Q65416
+TITLE : Hardware and Software Third-Party Vendor Contact List, A-K
+
+ARTICLE-ID: Q60781
+TITLE : Hardware and Software Third-Party Vendor Contact List, L-P
+
+ARTICLE-ID: Q60782
+TITLE : Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+Starlight Networks Software is manufactured by Starlight Networks, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+
+Additional query words: multicast
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

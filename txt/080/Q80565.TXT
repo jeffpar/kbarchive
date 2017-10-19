@@ -1,0 +1,61 @@
+DOCUMENT:Q80565  30-SEP-1999  [win3x]
+TITLE   :Sound Blaster's Mixer May Need an Upgrade
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Sound Blaster Pro includes a mixer-control program for Windows with Multimedia
+Extensions version 1.0. The mixer-control application (SBMIXER.EXE) may cause
+your machine to experience erratic behavior or lock up (hang) when running
+Windows.
+
+WORKAROUND
+==========
+
+Creative Labs, the creator of Sound Blaster Pro, is aware of this problem and
+has provided an updated version of the mixer to solve this problem. The updated
+version puts the mixer into the Windows Control Panel.
+
+If the file size of SBMIXER.EXE is 25792 and/or the SNDBLST.DLL file size is
+23776, then an upgrade is necessary.
+
+To obtain this upgrade, contact Creative Labs Technical Support or connect to the
+Creative Labs bulletin board service (BBS).
+
+The Creative Labs product included here is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: 3.00 Lockup Sound Blaster MMWIN mixer 3rdparty control
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

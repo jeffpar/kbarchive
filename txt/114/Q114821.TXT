@@ -1,0 +1,50 @@
+DOCUMENT:Q114821  08-NOV-2001  [homemm]
+TITLE   :CD Sampler: Can't Run in 16, 32K, 64K, or 1.6 Million Colors
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CD Sampler, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+To run the Microsoft CD Sampler successfully, Windows must be running in
+256-color mode. If you try to install or run the CD Sampler while Windows is
+running in either 16-color mode, 32K-color mode, 64K-color mode, or 1.6 million
+color mode, it may run very slowly, not function correctly, or generate error
+messages.
+
+In some cases, you may receive an erroneous error message indicating that you
+need to run in either 16-color or 256-color mode. This is incorrect. You must be
+running in 256-color mode for the CD Sampler to install and function correctly.
+It is also recommended that you use a video resolution of 640 x 480.
+
+Additional query words: multi media multimedia multi-media 8 bit 16 24 pixel pixels 32 64 millions setup demo pause slow down err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbCDSampler
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

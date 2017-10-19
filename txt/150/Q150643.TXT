@@ -1,0 +1,101 @@
+DOCUMENT:Q150643  19-FEB-2002  [ssafe]
+TITLE   :PRB: Setting Wrong System Date Causes Lost Project History
+PRODUCT :Microsoft SourceSafe
+PROD/VER::4.0,6.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbSSafe400 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 6.0 
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Resetting the system time and date to something earlier than a project's
+creation time and date can cause that project's labeling information to be lost.
+
+CAUSE
+=====
+
+SourceSafe uses the system date and time to determine if a file is within a
+valid range for a label. Manually altering the system clock to facilitate a
+desired date preceding the creation date of the project causes serious damage to
+the labeling structure of the project.
+
+RESOLUTION
+==========
+
+Make sure the system clock is set to the right time before checking in files. If
+you need to alter the computer's system date and time, you must be careful to
+reset to the correct date and time before checking files in to SourceSafe.
+
+On a network server, all workstations should be synchronized to the server's time
+to ensure correct date/time stamping by those workstations using SourceSafe.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The NET TIME command is used to synchronize the time in Windows NT. The syntax
+is as follows:
+
+      NET TIME [\\computername | /DOMAIN:domainname] /SET
+
+where \\computername is the computer to which you want to synchronize your
+computer's clock. If you have a domain controller, use the domain to synchronize
+with the domain controller.
+
+The SYSTIME utility is used to synchronize time using a Novell Netware File
+server. The syntax for this command can be found in Novell's Help system.
+
+STEPS TO REPRODUCE
+------------------
+
+1. Create a new project and add some files.
+
+2. Set the system clock back to an earlier date.
+
+3. Add a Label to the project.
+
+4. Check the files out from the project.
+
+5. Set the system clock back to the current time and date.
+
+6. Check the files in.
+
+7. View the History of the project.
+
+RESULT: The label does not appear in the project's history.
+
+Additional query words: stamp date time
+
+======================================================================
+Keywords          : kb3rdparty kbSSafe400 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe16bitSearch
+Version           : :4.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,64 @@
+DOCUMENT:Q75842  06-NOV-1999  [vbwin]
+TITLE   :RCRESULT rectBoundInk Field Is in Client Coordinates
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an application receives the WM_RCRESULT message, the rectBoundInk field of
+the RCRESULT structure reports the bounds on the input ink in client
+coordinates, not in tablet coordinates.
+
+When the Microsoft Recognizer receives the RCRESULT structure returned from the
+RecognizeInternal function, the Recognizer builds the rectBoundInk rectangle, as
+well as performing other tasks. The rectBoundInk rectangle is built if the
+following four conditions are met:
+
+ - The RCO_COLDRECOG flag is not set
+
+ - The ink width is greater than 0 (zero)
+
+ - hpendata is valid (the GetPenDataInfo function returns success)
+
+ - The bounding rectangle in the PENDATAHEADER structure is not empty
+
+If any one of these four conditions is not met, the rectBoundInk field will be
+set to zero.
+
+Also note that the rectBoundInk variable may contain area outside the area
+specified in the rectBound variable in the RC structure. In other words, while
+the ink drawn is constrained by rc.rectBound, rcresult.rectBoundInk is based on
+the data collected from the pen.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

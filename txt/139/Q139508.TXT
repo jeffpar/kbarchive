@@ -1,0 +1,286 @@
+DOCUMENT:Q139508  24-MAR-2002  [sna]
+TITLE   :Internet Firewall Support in SNA Server
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+This article discusses how SNA Server supports Internet Firewalls, including
+instructions on the following:
+
+ - How to allow SNA Server clients and SNA Servers to interoperate with
+   screening routers, where the client does know the address of the SNA
+   Server(s).
+
+ - How to allow SNA Server clients and SNA Servers to interoperate with
+   full-blown Internet firewalls, where the end user is not allowed to know the
+   IP address of the SNA Server(s).
+
+OVERVIEW
+--------
+
+SNA Server can be configured to use specific software port numbers. Specific port
+numbers are commonly defined in software components to allow administrators of
+Internet firewalls to filter packets based on port number, thereby
+denying/accepting their propagation to the private network. By assigning
+specific destination port numbers to SNA Server components, SNA Server can
+interoperate with screening routers and full-blown firewalls to meet the
+requirement that users of the public network should not know the IP address of
+the SNA Server.
+
+I. SNA Server Clients and SNA Servers Interoperation with
+Screening Routers (Client knows the address of the SNA Server)
+------------------------------------------------------------------------------------------------------------------------
+
+The following are the instructions on how to allow SNA Server clients and SNA
+Servers to interoperate with screening routers, where the client does know the
+address of the SNA Server(s).
+
+Destination port numbers are configurable in SNA Server on the following
+platforms:
+
+ - Windows NT
+
+ - Windows 95
+
+ - Windows 3.x
+
+The following transport protocols can be used:
+
+ - TCP/IP
+
+ - IPX/SPX
+
+ - Vines IP
+
+Each transport has the following three components that can have administrator
+defined destination ports assigned to them:
+
+ - DatagramPort.
+
+   This port is used for datagram (mostly broadcast or multicast) traffic. Use
+   the Server Broadcasts dialog in SNA Server Admin to control which transport
+   is used for Server to Server communication.
+
+ - SnaBasePort.
+
+   This is the port where the server SnaBase listens for new client sponsor
+   connections. Sponsor connections are used by the SNA Server client to learn
+   about the SNA Server subdomain in which it participates.
+
+ - SnaServerPort.
+
+   This is the port where the SNASERVR.EXE waits for new application session
+   requests.
+
+NOTE: These parameters are configured on the SNA Server side to control what port
+numbers the SnaBase and SNAServr processes use.
+
+The default values for destination port numbers are:
+
+   Port            TCP/IP   IPX/SPX     Vines
+   --------------------------------------------
+   DatagramPort    1478     0x84C8      381
+   SnaBasePort     1478     0x84C8      381
+   SnaServerPort   1477     0x84C9      dynamic
+
+There is no need to change any of these ports except when it is necessary to run
+each SNA Server service and SNABase service with a unique port number. It is the
+administrator[ASCII 146]s responsibility to make sure that the ports are not
+used by other applications on the network.
+
+NOTE: The DatagramPort must be the same in every server in a subdomain.
+
+On Windows NT, the ports are configured in the registry under the subtree
+HKEY_LOCAL_MACHINE under the subkey:
+
+   System\CurrentControlSet\Services\SnaBase\Parameters\<transport>\ 
+
+where <transport> is SnaTcp, SnaSpx, or SnaVines.
+
+Add the following value name under the <transport> subkey:
+
+   " Value Name: <port>
+   Data Type: REG_DWORD" (without the quotation marks)
+
+where <port> is DatagramPort or SnaBasePort.
+
+On Windows 95, the ports are configured in the registry under the subtree
+HKEY_LOCAL_MACHINE under the subkey:
+
+   Software\Microsoft\SnaBase\Parameters\<transport>\ 
+
+where <transport> is SnaTcp, SnaSpx, or SnaVines.
+
+Add the following value name under the <transport> subkey:
+
+   "Value Name: <port>
+   Data Type: REG_DWORD" (without the quotation marks)
+
+where <port> is DatagramPort or SnaBasePort.
+
+On Windows 3.x, the ports are configured in the WIN.INI file under the [WNAP]
+section:
+
+   [WNAP]
+   <port>=<value>
+
+where <port> is DatagramPort or SnaBasePort and value is the port number
+either in decimal or hexadecimal notation.
+
+Remote TCP/IP Clients:
+
+For TCP/IP it is not enough just to add one SnaBasePort number to the WIN.INI
+file or registry in Windows NT or Windows 95. Because every SNA Server in the
+subdomain is potentially using a different destination port number, every
+sponsor server requires its own entry. To make this possible, the port names can
+be prefixed with a server name. For example, if the SnaBase service on the
+server Server_A is using destination port 1234 and the server Server_B is using
+destination port number 5678, you need to add the following entries into the
+WIN.INI file or registry:
+
+Windows NT or Windows 95 registry:
+
+   Server_ASnaBasePort:REG_DWORD:1234
+   Server_BSnaBasePort:REG_DWORD:5678
+
+Windows 3.x WIN.INI file:
+
+   Server_ASnaBasePort=1234
+   Server_BSnaBasePort=5678
+
+The clients get the SnaServer ports through the sponsor connection. On IPX/SPX
+and Vines IP, the clients get the SnaBase ports from the NetWare bindery and
+Vines StreetTalk respectively. There is no need to configure any port numbers on
+these two client types.
+
+OtherServers:
+
+When you use the OtherServers parameter, use the following convention in the
+WIN.INI file under the [WNAP] section:
+
+   [WNAP]
+   <server_nameX>SnaServerPort=3333
+   <server_nameY>SnaServerPort=4444
+
+You still need to include the following entry in this section:
+
+   Otherservers=<server_nameX> <servernameY>
+
+II. SNA Server Clients and SNA Servers Interoperation with Full-Blown
+Internet firewalls (Client Cannot Know the IP address of the SNA Server(s))
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+The following are the instructions on how to allow SNA Server clients and SNA
+Servers to interoperate with full-blown Internet firewalls, where the client is
+not allowed to know the IP address of the SNA Server(s).
+
+First, follow directions in section I. above. Then, add the following entry to
+the respective platform:
+
+Windows NT:
+
+1. In the registry, go to the subtree HKEY_LOCAL_MACHINE under the following
+   subkey:
+
+System\CurrentControlSet\Services\SnaBase\Parameters\SnaTcp\ 
+
+2. Add the following information:
+
+"
+
+   Value Name: FireWall
+   Data Type:  REG_MULTI_SZ
+   Data:       <list of firewall IP addresses>
+
+" (without the quotation marks)
+Windows 95:
+
+1. In the registry, go to the subtree HKEY_LOCAL_MACHINE under the following
+   subkey:
+
+Software\Microsoft\SnaBase\Parameters\SnaTcp\ 
+
+2. Add the following information: "
+
+   Value Name: FireWall
+   Data Type:  REG_SZ
+   Data:       <list of firewall IP addresses>
+
+   " (without the quotation marks) where Reg_SZ equates to STRING.
+
+   NOTE: The list can be separated by spaces, commas, or semicolons.
+
+Windows 3.x:
+
+1. Add the following information in the WIN.INI file under the [WNAP] section:
+
+"
+
+      [WNAP]
+      FireWall =<list of firewall IP addresses>
+
+" (without the quotation marks)
+The SNA Server IP transport replaces the real destination IP address with a
+firewall address when it opens a connection to an SNA Server for both
+application sessions or sponsor connection.
+
+Microsoft has updated the following files:
+
+   LIBS\WIN32\SNAIP.DLL
+   LIBS\WIN32\SNANW.DLL
+   LIBS\WIN32\SNABV.DLL
+   LIBS\WIN95\SNACIP.DLL
+   LIBS\WIN95\SNACNW.DLL
+   LIBS\WIN95\SNACBV.DLL
+   EXE\WIN16\IPCLI.DLL
+   EXE\WIN16\NWCLI.DLL
+   EXE\WIN16\BVCLI.DLL
+   EXE\TWIN16\IPCLI.DLL
+   EXE\TWIN16\NWCLI.DLL
+   EXE\TWIN16\BVCLI.DLL
+
+STATUS
+======
+
+This feature is included in the latest U.S. Service Pack for SNA Server for
+Windows NT, version 2.11. For information on obtaining the Service Pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna 2.11 snafaq
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211
+Version           : :2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

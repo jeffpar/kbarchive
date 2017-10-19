@@ -1,0 +1,51 @@
+DOCUMENT:Q66355  30-JUL-2001  [homegame]
+TITLE   :Description of IdleWild in the Windows Entertainment Pack
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+IdleWild is a screen-saver utility for the Windows environment found in the
+Windows Entertainment Pack. After a predetermined period of time, IdleWild will
+blank your screen and replace it with an animated graphic of your choice. When
+IdleWild blanks your screen, it does not affect the application that you have
+been running. Instead, it places a patterned image on top of it.
+
+To return to the original screen, do the following:
+
+1. Simply move the mouse.
+
+2. Click either of the mouse buttons.
+
+3. Press any key.
+
+The delay time can be anywhere from 1 minute to 654 minutes. IdleWild has seven
+background options as well as a random blanker. There is also an AutoLoad
+option. There are two special places on the screen: the upper right-hand corner,
+which blanks the screen instantly; and the lower left-hand corner, which
+temporarily makes the screen saver inactive.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

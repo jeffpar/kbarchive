@@ -1,0 +1,118 @@
+DOCUMENT:Q236930  11-JUN-2002  [win95x]
+TITLE   :Cannot Open Files if Restrictions in a Policy Are Used
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2.0, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using system policies and you enable restrictions in a policy for a
+Windows 95-based computer, you may receive the following error message when you
+try to open a document that is associated with a program that you specified in
+the policy as a program that should be permitted to run:
+
+   This operation has been cancelled due to restrictions in effect on this
+   computer. Please contact your system administrator.
+
+For example, this problem may occur if you double-click a Microsoft Project file,
+when Microsoft Project (Winproj.exe) is on the list of permitted programs.
+
+CAUSE
+=====
+
+This problem can occur if the registry information associating the file type
+with the permitted program is incorrect. For example, this problem can occur if
+the path to the permitted program contains spaces, and the path is not enclosed
+with quotation mark characters when stored in the registry. If the path in the
+registry contains spaces and is not surrounded by quotation marks, Windows 95
+does not resolve the path to the program correctly when determining if the
+program is on the list of permitted programs.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Microsoft Windows 98.
+
+To work around this problem, edit the path to the program associated with the
+file type you want to open:
+
+1. Click Start, point to Programs, and then click Windows Explorer. Use Windows
+   Explorer to view the folder containing the file you want to work with,
+   right-click this file, click Properties, and then note the file type. For
+   example, a Microsoft Project for Windows 95 file would have a "Microsoft
+   Project 4.1 Project" file type.
+
+2. In Windows Explorer, click Options on the View menu, and then click the File
+   Type tab.
+
+3. In the list of registered file types, locate the entry for the file type you
+   noted in step 1, click this entry, and then click Edit.
+
+4. Under Actions, click Open, and then click Edit.
+
+5. In the "Application used to perform action" box, add quotation mark
+   characters around the path to the program file. For example, if the
+   "Application used to perform action" box contains the following text
+
+   C:\Program Files\Microsoft Office\WINPROJ\winproj.exe "%1"
+
+   you would change this text to:
+
+   "C:\Program Files\Microsoft Office\WINPROJ\winproj.exe" "%1"
+
+6. Click OK, click OK, click OK, and then quit Windows Explorer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95.
+
+This problem was corrected in Windows 98. This problem is also corrected in
+Windows 95 with Internet Explorer 4.01 Service Pack 1 or later installed, and
+with Active Desktop enabled..
+
+MORE INFORMATION
+================
+
+This problem is known to occur with the following Microsoft programs:
+
+ - Microsoft Access 97, Spanish language version
+
+ - Microsoft Project 95, Spanish language version
+
+When these programs are installed, the path to the installed program is not
+enclosed in quotation mark characters when the path is entered into the
+registry.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbui win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

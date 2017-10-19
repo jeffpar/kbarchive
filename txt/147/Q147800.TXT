@@ -1,0 +1,72 @@
+DOCUMENT:Q147800  08-AUG-2001  [winnt]
+TITLE   :Lotus Notes Logs "Unexpected TCP/IP error 10058 or 10053"
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Occasionally Lotus Notes machines receive following error message:
+
+   "Unexpected TCP/IP error 10058/10053 on function code <#>".
+
+This error appears on Notes client machines and on Notes server Consoles as a
+pop-up message, and as an entry in Notes server Error Logs.
+
+CAUSE
+=====
+
+A Lotus Notes Windows Sockets call to recv()/send() returns 10058 (WSAESHUTDOWN)
+or 10053 (WSAECONNABORTED).
+
+
+The underlying cause has yet to be determined and remains under investigation.
+
+RESOLUTION
+==========
+
+As a popup on Notes client machines this error is benign as Notes will establish
+a new connection and retry the send()/recv() call. On Notes server machines this
+error has been known to cause Notes replication to fail but later replications
+usually succeed.
+
+STATUS
+======
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

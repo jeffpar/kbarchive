@@ -1,0 +1,169 @@
+DOCUMENT:Q131038  24-DEC-1999  [miscsdk]
+TITLE   :How to Change Hot-Spot Color at Run Time in MediaView Titles
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MediaView Software and Title Development Kit, version 1.3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to change hot-spot colors and other attributes at run
+time in MediaView titles.
+
+You can obtain the Microsoft MediaView Software and Title Development Kit from
+any one of the following three CDs:
+
+ - The Multimedia Jumpstart CD that contains Microsoft's collection of over 500
+   megabytes of multimedia software. For information on how to obtain it, please
+   see the following article in the Microsoft Knowledge Base:
+
+   Q124824 How to Obtain the Multimedia Jumpstart CD
+
+ - Microsoft Developer Network (MSDN) Development Platform CD.
+
+ - Microsoft Developer Network (MSDN) Development Library CD.
+
+MORE INFORMATION
+================
+
+A MediaView title can have several style sheets. Style sheets are like
+attributes (font style, color, paragraph style, tabs, borders, and so on) to a
+body of text. To redefine these attributes at run time, you need to define a
+style sheet for them.
+
+MediaView titles are compiled from .RTF (rich-text format) files. The style of a
+hot spot in the .RTF file sequence usually looks like this:
+
+   {\uldb Hotspot }{\v hypertextlink}
+
+This is what you'd type to hard code the .RTF file.
+
+If you edit the .RTF file using Microsoft Word for Windows, you'd select the hot
+spot text. Then using the Format menu, give the highlighted text a property of
+double underline and a hidden property for "hypertextlink."
+
+Step-by-Step Procedure
+----------------------
+
+You can also define a style sheet for a hot spot by following these steps:
+
+1. Choose Style from the Format menu to create a new style for the hot spot.
+
+2. Click New. In the Name field, type a name for your style such as Hot spot .
+
+3. In the Style Type combo box, select character instead of paragraph.
+
+4. Define the properties of a user-defined style. Click the Format button. Then
+   choose Font.
+
+5. Select the initial color, size, and of course double or single underline for
+   your hot spot.
+
+6. Apply the style to your title:
+
+   a. Select the text.
+
+   b. Choose Style from the Format menu.
+
+   c. Select your style from the alphabetized list of styles.
+
+   d. Click the Apply button.
+
+7. Give the context jump the regular hidden property.
+
+All that you've done is give your hot spot text a name that MediaView can later
+use to redefine.
+
+Once your title is compiled and converted to an .M13 file. You can use the
+fMVGetCharStyle() API to retrieve information on a character style sheet and you
+can change the attributes of the style sheet by using fMVSetCharStyle(). Example
+and documentation and other API calls for MediaView can be found on MVDOC.M13.
+
+Example .RTF File
+-----------------
+
+   {\rtf1\ansi \deff2\deflang1033
+
+   {\fonttbl
+   {\f1\fswiss\fcharset0\fprq2 Helv;}
+   {\f2\fswiss\fcharset0\fprq2 Arial;}
+   }
+
+   **** standard color definition *****
+
+   {\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue 55;
+   \red0\green255\blue0;
+   \red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;
+   \re 255\green
+   255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0
+   green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\gre
+   n128\blue0;\red128\green128\blue128;
+   \red192\green192\blue192;
+   }
+
+   ******* Notice the rtf code for "style sheet" ******
+
+   {\stylesheet
+   {\f2\fs20 \snext0 Normal;}
+   {\*\cs10 \additive Default Paragraph Font;}
+   {\*\cs17 \additive\f1\fs20\cf11\ul \sbasedon10 PopupText;}
+   {\*\cs18 \additive\f1\fs20 \sbasedon10 ProperNames;}
+   }
+   \pard\plain \li108 \f2\fs20
+
+   #{\footnote table}
+   ${\footnote Table of Contents}
+
+   {
+   \par
+   \par
+   \fs24\b  TABLE OF CONTENTS
+   }
+
+   #{\footnote heroes}
+   ${\footnote Heroes and Heroines}
+   +{\footnote Heroes}
+   K{\footnote 0:quest}
+   K{\footnote h:mythology}
+   {\b\fs28  HEROES AND HEROINES\par}
+   \par \pard \li108\sb60\sa60 The heroes of mythology journey on our
+   behalf. They dare to enter the dark
+         .
+         .
+         .
+   called to adventure by visions of {\cs18 Holy Grails}, **** here's
+   the style sheet being used****
+
+   \par Although he was born of human parentage, {\cs18 Sir Lancelot}
+   was reared by the same {\cs18 Lady of the Lake} who gave ...
+
+Additional query words: 1.30
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSDKSearch kbSDKMediaView130
+Version           : :1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

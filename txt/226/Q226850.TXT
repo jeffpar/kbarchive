@@ -1,0 +1,93 @@
+DOCUMENT:Q226850  16-NOV-2000  [sms]
+TITLE   :SMS: Software Metering Server Installation Generates Error 997
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After enabling a site system as a software metering server under the following
+hierarchy
+
+   Systems Management Server
+     Site Database (site code - site name)
+        Site Hierarchy
+           site code - site name
+              Site Settings 
+                 Site Systems 
+
+the Software Metering Server installation stops responding and generates the
+following status messages:
+
+   Message ID: 9399
+   Component:SMS_LICENSE_SERVER_MANAGER
+   Description:
+   The software metering server manager failed to install the service
+   "INSTALL_ODBC" on "SERVER1".
+
+   Message ID: 9405
+   Component:SMS_LICENSE_SERVER_MANAGER
+   Description:
+   The software metering server manager could not start the ODBC installation
+   service on "SERVER1".
+
+Further investigation of the licsvcfg.log reveals the following:
+
+   Attempting to install the service INSTALL_ODBC. 
+   (Binary=c:\swmtr\odbc\i386\InOdbcSv.Exe,    DisplayName=(null),Account=SWMAccount) 
+   Starting the service INSTALL_ODBC on SHINER-BOCK  
+   Error while starting the service INSTALL_ODBC. 
+   NT Service Exception: 997 The service INSTALL_ODBC could not be started. 
+   System message: OverlappedI/O operation is in progress. 
+
+CAUSE
+=====
+
+This behavior occurs because of an incorrect password set on the Service account
+when you create the Software Metering server.
+
+WORKAROUND
+==========
+
+To work around this issue, ensure that the correct Service account password is
+used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

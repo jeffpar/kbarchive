@@ -1,0 +1,61 @@
+DOCUMENT:Q121246  19-NOV-1999  [msdos]
+TITLE   :Detailed Description of INTERLNK Parallel Cable Pinouts
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following signal descriptions are for the parallel cable pins required to
+use Interlnk.
+
+Pin 2:                Data Bit 0          Active when High
+Pin 3:                Data Bit 1          Active when High
+Pin 4:                Data Bit 2          Active when High
+Pin 5:                Data Bit 3          Active when High
+Pin 6:                Data Bit 4          Active when High
+Pin 10:               Acknowledge         Active when Low
+Pin 11:               Busy                Active when High
+Pin 12:               Out Of Paper        Active when High
+Pin 13:               Select              Active when High
+Pin 15:               Error               Active when Low
+Pin 25:               Ground
+
+MORE INFORMATION
+================
+
+Descriptions of parallel and serial cables required to run Interlnk can be found
+in MS-DOS Help. For more information, type "help interlnk-- notes" (without the
+quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+Additional query words: 6.00 6.20 inter link interlink
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

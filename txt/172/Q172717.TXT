@@ -1,0 +1,63 @@
+DOCUMENT:Q172717  17-DEC-2000  [win95x]
+TITLE   :Error Message: Error FFh Attaching to NetWare Server
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience either of the following symptoms:
+
+ - When you start Windows 95, you receive the following error message:
+
+   MSPSRV - <Printer Name>
+   Error FFh Attaching to NetWare Server <Server Name>
+
+ - When you click OK on the Print Server tab in the properties for a printer
+   using the Microsoft Print Agent for NetWare Networks (MSPSRV), the computer
+   stops responding (hangs). When you restart the computer, you may receive the
+   error message listed above.
+
+CAUSE
+=====
+
+The Microsoft Print Agent for NetWare Networks is attempting to connect to a
+NetWare version 4.0 or earlier server. The connection is denied because the
+NetWare user license limit has been reached.
+
+MORE INFORMATION
+================
+
+MSPSRV uses a connection to the NetWare server. This connection is in addition
+to any other connections that may already exist between the Windows 95 client
+and the NetWare server (whether user or other MSPSRV connections).
+
+======================================================================
+Keywords          : kberrmsg kbnetwork win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

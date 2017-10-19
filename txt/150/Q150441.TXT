@@ -1,0 +1,542 @@
+DOCUMENT:Q150441  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Service Pack 1 CD-ROM Directory Listing (3 of 5)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the directory contents of the Microsoft Windows 95 Service
+Pack 1 CD-ROM.
+
+MORE INFORMATION
+================
+
+Contents of the \Drivers\Display Folder
+---------------------------------------
+
+8514           <DIR>        12-31-95  9:50a 8514
+ARK            <DIR>        12-31-95  9:50a ark
+ATIMCT         <DIR>        12-31-95  9:50a atimct
+AVANCE         <DIR>        12-31-95  9:50a avance
+CGTERM64       <DIR>        12-31-95  9:50a cgterm64
+CGTERM68       <DIR>        12-31-95  9:50a cgterm68
+CHIPSN         <DIR>        12-31-95  9:50a chipsn
+DAEWOO         <DIR>        12-31-95  9:50a daewoo
+DMSICSS        <DIR>        12-31-95  9:50a dmsicss
+HITACHI        <DIR>        12-31-95  9:50a hitachi
+HYUNDAI        <DIR>        12-31-95  9:50a hyundai
+I128           <DIR>        12-31-95  9:50a i128
+MACXW4         <DIR>        12-31-95  9:50a macxw4
+MGA95X64       <DIR>        12-31-95  9:50a mga95x64
+MIRO           <DIR>        12-31-95  9:50a miro
+NOKIA          <DIR>        12-31-95  9:50a nokia
+OB600SS        <DIR>        12-31-95  9:50a ob600ss
+PROMTN         <DIR>        12-31-95  9:50a promtn
+S3_2           <DIR>        12-31-95  9:50a s3_2
+SAMSUNG        <DIR>        12-31-95  9:50a samsung
+SISDISP        <DIR>        12-31-95  9:50a sisdisp
+SPF            <DIR>        12-31-95  9:50a spf
+STBPG64V       <DIR>        12-31-95  9:50a stbpg64v
+STEALTH        <DIR>        12-31-95  9:50a stealth
+TRID94XX       <DIR>        12-31-95  9:50a trid94xx
+TRID96XX       <DIR>        12-31-95  9:50a trid96xx
+VGA            <DIR>        12-31-95  9:50a vga
+VIPER          <DIR>        12-31-95  9:50a viper
+VLGX300A       <DIR>        12-31-95  9:50a vlgx300a
+VLGX700A       <DIR>        12-31-95  9:50a vlgx700a
+VLSI           <DIR>        12-31-95  9:50a vlsi
+VS950728       <DIR>        12-31-95  9:50a vs950728
+         0 file(s)              0 bytes
+
+Contents of the \Drivers\Display\8514 Folder
+--------------------------------------------
+
+8514     DRV        92,320  12-31-95  9:50a 8514.drv
+8514     INF         1,434  12-31-95  9:50a 8514.inf
+README   TXT           289  12-31-95  9:50a readme.txt
+VDD8514  386        46,161  12-31-95  9:50a vdd8514.386
+         4 file(s)        140,204 bytes
+
+Contents of the \Drivers\Display\Ark Folder
+-------------------------------------------
+
+ARK      DRV        19,744  12-31-95  9:50a ark.drv
+ARK      INF         2,809  12-31-95  9:50a ark.inf
+ARK      VXD         9,758  12-31-95  9:50a ark.vxd
+INSTALL  TXT         1,551  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+         5 file(s)         37,877 bytes
+
+Contents of the \Drivers\Display\Atimct Folder
+----------------------------------------------
+
+ATICT    VXD        14,569  12-31-95  9:50a atict.vxd
+ATIHALCT DLL        22,880  12-31-95  9:50a atihalct.dll
+ATIMCT   DRV        78,160  12-31-95  9:50a atimct.drv
+ATIMCT   INF         2,061  12-31-95  9:50a atimct.inf
+INSTALL  TXT         1,842  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+README   TXT           742  12-31-95  9:50a readme.txt
+         7 file(s)        124,269 bytes
+
+Contents of the \Drivers\Display\Avance Folder
+----------------------------------------------
+
+ASCAN    EXE        95,571  12-31-95  9:50a ascan.exe
+AVANCE   DRV        17,920  12-31-95  9:50a avance.drv
+AVANCE   INF         1,144  12-31-95  9:50a avance.inf
+AVANCE   VXD         8,255  12-31-95  9:50a avance.vxd
+README   TXT           696  12-31-95  9:50a readme.txt
+         5 file(s)        123,586 bytes
+
+Contents of the \Drivers\Display\Cgterm64 Folder
+------------------------------------------------
+
+CGTERM64 DRV        66,960  12-31-95  9:50a cgterm64.drv
+CGTERM64 INF        21,321  12-31-95  9:50a cgterm64.inf
+CGTERM64 VXD        30,822  12-31-95  9:50a cgterm64.vxd
+CGTERMCP DLL        38,912  12-31-95  9:50a cgtermcp.dll
+INSTALL  TXT         1,562  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+VDDVLPP  VXD        14,270  12-31-95  9:50a vddvlpp.vxd
+         7 file(s)        177,862 bytes
+
+Contents of the \Drivers\Display\Cgterm68 Folder
+------------------------------------------------
+
+CGTERM68 DRV        67,248  12-31-95  9:50a cgterm68.drv
+CGTERM68 INF        40,909  12-31-95  9:50a cgterm68.inf
+CGTERM68 VXD        30,290  12-31-95  9:50a cgterm68.vxd
+CGTERMCP DLL        38,912  12-31-95  9:50a cgtermcp.dll
+INSTALL  TXT         1,562  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+VDDVLPP  VXD        14,270  12-31-95  9:50a vddvlpp.vxd
+         7 file(s)        197,206 bytes
+
+Contents of the \Drivers\Display\Chipsn Folder
+----------------------------------------------
+
+CHIPSN   DRV        25,552  12-31-95  9:50a chipsn.drv
+CHIPSN   INF         2,209  12-31-95  9:50a chipsn.inf
+CHIPSN   VXD        20,961  12-31-95  9:50a chipsn.vxd
+INSTALL  TXT         1,540  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+         5 file(s)         54,277 bytes
+
+Contents of the \Drivers\Display\Daewoo Folder
+----------------------------------------------
+
+DAEWOO   INF         2,422  12-31-95  9:50a daewoo.inf
+INSTALL  TXT         1,604  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+         3 file(s)          8,041 bytes
+
+Contents of the \Drivers\Display\Dmsicss Folder
+-----------------------------------------------
+
+DMSICSS  VXD        24,576  12-31-95  9:50a dmsicss.vxd
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+README   TXT         3,725  12-31-95  9:50a readme.txt
+SPEEDSTR INF         2,515  12-31-95  9:50a speedstr.inf
+         4 file(s)         34,831 bytes
+
+Contents of the \Drivers\Display\Hitachi Folder
+-----------------------------------------------
+
+HITACHI  INF         1,921  12-31-95  9:50a hitachi.inf
+INSTALL  TXT         1,605  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+         3 file(s)          7,541 bytes
+
+Contents of the \Drivers\Display\Hyundai Folder
+-----------------------------------------------
+
+HYUNDAI  INF         1,649  12-31-95  9:50a hyundai.inf
+INSTALL  TXT         1,605  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+         3 file(s)          7,269 bytes
+
+Contents of the \Drivers\Display\i128 Folder
+--------------------------------------------
+
+DACSNOOP EXE         7,785  12-31-95  9:50a dacsnoop.exe
+I128     DRV       118,984  12-31-95  9:50a i128.drv
+I128     INF         2,393  12-31-95  9:50a i128.inf
+I128     VXD         5,783  12-31-95  9:50a i128.vxd
+INSTALL  TXT         1,364  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+         6 file(s)        140,324 bytes
+
+Contents of the \Drivers\Display\Macxw4 Folder
+----------------------------------------------
+
+ATIHAL64 DLL        27,552  12-31-95  9:50a atihal64.dll
+INSTALL  TXT         1,552  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+MACXW4   DRV       124,576  12-31-95  9:50a macxw4.drv
+MACXW4   INF         2,402  12-31-95  9:50a macxw4.inf
+MACXW4   VXD        14,571  12-31-95  9:50a macxw4.vxd
+         6 file(s)        174,668 bytes
+
+Contents of the \Drivers\Display\Mga95x64 Folder
+------------------------------------------------
+
+INSTALL  TXT         1,551  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+MGA95X64 DLL        62,688  12-31-95  9:50a mga95x64.dll
+MGA95X64 DRV        78,640  12-31-95  9:50a mga95x64.drv
+MGA95X64 INF         1,763  12-31-95  9:50a mga95x64.inf
+MGA95X64 VXD        22,329  12-31-95  9:50a mga95x64.vxd
+         6 file(s)        170,986 bytes
+
+Contents of the \Drivers\Display\Miro Folder
+--------------------------------------------
+
+CARD0015 INI        12,386  12-31-95  9:50a card0015.ini
+CARD0016 INI        35,932  12-31-95  9:50a card0016.ini
+CARD0214 INI        12,056  12-31-95  9:50a card0214.ini
+INSTALL  TXT         1,542  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+MIRO     DRV        66,944  12-31-95  9:50a miro.drv
+MIRO     INF         5,265  12-31-95  9:50a miro.inf
+MIROHW   INI         6,090  12-31-95  9:50a mirohw.ini
+MIROINIT DLL        64,624  12-31-95  9:50a miroinit.dll
+MIROMINI VXD         9,735  12-31-95  9:50a miromini.vxd
+MONITOR  INI        68,491  12-31-95  9:50a monitor.ini
+TIMING   INI        79,620  12-31-95  9:50a timing.ini
+        12 file(s)        366,700 bytes
+
+Contents of the \Drivers\Display\Nokia Folder
+---------------------------------------------
+
+INSTALL  TXT         1,603  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+NOKIA    INF         6,211  12-31-95  9:50a nokia.inf
+         3 file(s)         11,829 bytes
+
+Contents of the \Drivers\Display\Ob600ss Folder
+-----------------------------------------------
+
+OB600SS  INF         5,242  12-31-95  9:50a ob600ss.inf
+OB600SS  VXD         5,178  12-31-95  9:50a ob600ss.vxd
+PCCARD   VXD        77,661  12-31-95  9:50a pccard.vxd
+README   TXT         3,502  12-31-95  9:50a readme.txt
+         4 file(s)         91,583 bytes
+
+Contents of the \Drivers\Display\Promtn Folder
+----------------------------------------------
+
+INSTALL  TXT         1,548  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+PM_FONT  COM         4,227  12-31-95  9:50a pm_font.com
+PROMTN   DRV        76,800  12-31-95  9:50a promtn.drv
+PROMTN   INF         1,427  12-31-95  9:50a promtn.inf
+PROMTN   VXD         7,035  12-31-95  9:50a promtn.vxd
+         6 file(s)         95,052 bytes
+
+Contents of the \Drivers\Display\S3_2 Folder
+--------------------------------------------
+
+INSTALL  TXT         1,542  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+S3       INF         2,054  12-31-95  9:50a s3.inf
+S3VDD    VXD        18,243  12-31-95  9:50a s3vdd.vxd
+S3_2     DRV        62,304  12-31-95  9:50a s3_2.drv
+         5 file(s)         88,158 bytes
+
+Contents of the \Drivers\Display\Samsung Folder
+-----------------------------------------------
+
+INSTALL  TXT         1,618  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+SAMSUNG  INF         4,845  12-31-95  9:50a samsung.inf
+         3 file(s)         10,478 bytes
+
+Contents of the \Drivers\Display\Sisdisp Folder
+-----------------------------------------------
+
+INSTALL  TXT         1,547  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+SIS202   DRV        69,840  12-31-95  9:50a sis202.drv
+SIS205   DRV        75,280  12-31-95  9:50a sis205.drv
+SISDISP  INF         2,344  12-31-95  9:50a sisdisp.inf
+SISMINI  VXD        15,255  12-31-95  9:50a sismini.vxd
+SISTOOL  EXE        96,768  12-31-95  9:50a sistool.exe
+         7 file(s)        265,049 bytes
+
+Contents of the \Drivers\Display\Spf Folder
+-------------------------------------------
+
+CTL3DV2  DLL        21,648  12-31-95  9:50a ctl3dv2.dll
+INSTALL  TXT         1,542  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+OAK      INF         2,369  12-31-95  9:50a oak.inf
+SPF      DRV        46,208  12-31-95  9:50a spf.drv
+SPF      VXD         5,706  12-31-95  9:50a spf.vxd
+SPFSETUP CPL       138,960  12-31-95  9:50a spfsetup.cpl
+SPFSS    SCR        41,992  12-31-95  9:50a spfss.scr
+SPFUTIL  HLP        13,005  12-31-95  9:50a spfutil.hlp
+         9 file(s)        275,445 bytes
+
+Contents of the \Drivers\Display\Stbpg64v Folder
+------------------------------------------------
+
+INSTALL  TXT         1,547  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+STBDDQRY DL_         8,953  12-31-95  9:50a stbddqry.dl_
+STBDISP  INF         3,011  12-31-95  9:50a stbdisp.inf
+STBHLP   $EN        43,871  12-31-95  9:50a stbhlp.$en
+STBPG64V $EN         4,409  12-31-95  9:50a stbpg64v.$en
+STBPG64V DR_        45,075  12-31-95  9:50a stbpg64v.dr_
+STBPG64V MO_         3,852  12-31-95  9:50a stbpg64v.mo_
+STBPG64V VX_         6,071  12-31-95  9:50a stbpg64v.vx_
+STBVISN  DR_        45,636  12-31-95  9:50a stbvisn.dr_
+STBVISN  EX_       137,990  12-31-95  9:50a stbvisn.ex_
+        11 file(s)        304,430 bytes
+
+Contents of the \Drivers\Display\Stealth Folder
+-----------------------------------------------
+
+DMSICS64 VXD        17,159  12-31-95  9:50a dmsics64.vxd
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+README   TXT         3,847  12-31-95  9:50a readme.txt
+STEALTH  INF         5,757  12-31-95  9:50a stealth.inf
+         4 file(s)         30,778 bytes
+
+Contents of the \Drivers\Display\Trid94xx Folder
+------------------------------------------------
+
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+README   TXT         1,366  12-31-95  9:50a readme.txt
+REFRESH  TXT           877  12-31-95  9:50a refresh.txt
+SMONITOR EXE         7,980  12-31-95  9:50a smonitor.exe
+TRID94XX INF         1,457  12-31-95  9:50a trid94xx.inf
+TRIDENT  VXD        20,578  12-31-95  9:50a trident.vxd
+TRIDENTL DRV        17,664  12-31-95  9:50a tridentl.drv
+         7 file(s)         53,937 bytes
+
+Contents of the \Drivers\Display\Trid96xx Folder
+------------------------------------------------
+
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+README   TXT         1,366  12-31-95  9:50a readme.txt
+TGIUL95  DRV        29,200  12-31-95  9:50a tgiul95.drv
+TRID96XX INF         1,770  12-31-95  9:50a trid96xx.inf
+TRIDENT  VXD        20,578  12-31-95  9:50a trident.vxd
+         5 file(s)         56,929 bytes
+
+Contents of the \Drivers\Display\Vga Folder
+-------------------------------------------
+
+README   TXT         1,406  12-31-95  9:50a readme.txt
+VGA      DRV        52,096  12-31-95  9:50a vga.drv
+VGA      VXD        14,422  12-31-95  9:50a vga.vxd
+         3 file(s)         67,924 bytes
+
+Contents of the \Drivers\Display\Viper Folder
+---------------------------------------------
+
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+README   TXT         1,149  12-31-95  9:50a readme.txt
+VIPER    DRV       154,496  12-31-95  9:50a viper.drv
+VIPER    INF         1,763  12-31-95  9:50a viper.inf
+VIPER    TXT         5,219  12-31-95  9:50a viper.txt
+VIPER    VXD         3,421  12-31-95  9:50a viper.vxd
+VIPERH   DRV       150,624  12-31-95  9:50a viperh.drv
+VIPERT   DRV       153,632  12-31-95  9:50a vipert.drv
+         8 file(s)        474,319 bytes
+
+Contents of the \Drivers\Display\Vlgx300a Folder
+------------------------------------------------
+
+INSTALL  TXT         1,548  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+VDDVLPP  VXD        14,110  12-31-95  9:50a vddvlpp.vxd
+VLGX300A DRV        66,928  12-31-95  9:50a vlgx300a.drv
+VLGX300A INF        21,274  12-31-95  9:50a vlgx300a.inf
+VLGX300A VXD        32,521  12-31-95  9:50a vlgx300a.vxd
+VLGXCPL  DLL        39,936  12-31-95  9:50a vlgxcpl.dll
+         7 file(s)        180,332 bytes
+
+Contents of the \Drivers\Display\Vlgx700a Folder
+------------------------------------------------
+
+INSTALL  TXT         1,548  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+VDDVLPP  VXD        14,110  12-31-95  9:50a vddvlpp.vxd
+VLGX700A DRV        67,184  12-31-95  9:50a vlgx700a.drv
+VLGX700A INF        40,786  12-31-95  9:50a vlgx700a.inf
+VLGX700A VXD        31,989  12-31-95  9:50a vlgx700a.vxd
+VLGXCPL  DLL        39,936  12-31-95  9:50a vlgxcpl.dll
+         7 file(s)        199,568 bytes
+
+Contents of the \Drivers\Display\Vlsi Folder
+--------------------------------------------
+
+INSTALL  TXT         1,545  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+MINI     DLL        46,832  12-31-95  9:50a mini.dll
+VLSI     INF         1,774  12-31-95  9:50a vlsi.inf
+VLSIMINI VXD        25,772  12-31-95  9:50a vlsimini.vxd
+         5 file(s)         79,938 bytes
+
+Contents of the \Drivers\Display\Vs950728 Folder
+------------------------------------------------
+
+INSTALL  TXT         1,607  12-31-95  9:50a install.txt
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+VS950728 INF         5,229  12-31-95  9:50a vs950728.inf
+         3 file(s)         10,851 bytes
+
+Contents of the \Drivers\Misc Folder
+------------------------------------
+
+MOUSESYS       <DIR>        12-31-95  9:50a mousesys
+PPORTDRV       <DIR>        12-31-95  9:50a pportdrv
+PWRCHUT        <DIR>        12-31-95  9:50a pwrchut
+SIDEWNDR       <DIR>        12-31-95  9:50a sidewndr
+TRIPPLTE       <DIR>        12-31-95  9:50a tripplte
+         0 file(s)              0 bytes
+
+Contents of the \Drivers\Misc\Mousesys Folder
+---------------------------------------------
+
+MOUSESYS INF         1,532  12-31-95  9:50a mousesys.inf
+MSC3BC2  DRV         4,832  12-31-95  9:50a msc3bc2.drv
+MSCMOUSE DRV         4,960  12-31-95  9:50a mscmouse.drv
+MSCVMD   386         9,327  12-31-95  9:50a mscvmd.386
+         4 file(s)         20,651 bytes
+
+Contents of the \Drivers\Misc\Pportdrv Folder
+---------------------------------------------
+
+ALLIANCE 1         265,665  12-31-95  9:50a alliance.1
+ALLIANCE 2         120,817  12-31-95  9:50a alliance.2
+DESKTOP  Z         220,585  12-31-95  9:50a desktop.z
+DISK     1              46  12-31-95  9:50a disk.1
+DISK     2              46  12-31-95  9:50a disk.2
+DISK     3              46  12-31-95  9:50a disk.3
+DISK     4              46  12-31-95  9:50a disk.4
+FILESIZE INI           375  12-31-95  9:50a filesize.ini
+FOLDERS  Z           1,904  12-31-95  9:50a folders.z
+INHOUSE  Z         402,852  12-31-95  9:50a inhouse.z
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+LINKS    Z         183,299  12-31-95  9:50a links.z
+OCR      1         425,851  12-31-95  9:50a ocr.1
+OCR      2       1,416,253  12-31-95  9:50a ocr.2
+OCRSUPP  Z          42,758  12-31-95  9:50a ocrsupp.z
+OLE2     Z         556,009  12-31-95  9:50a ole2.z
+OLE2PROX Z          21,264  12-31-95  9:50a ole2prox.z
+PAPRPORT Z         107,441  12-31-95  9:50a paprport.z
+PPEXE    Z         337,713  12-31-95  9:50a ppexe.z
+PPOVER   Z          29,328  12-31-95  9:50a ppover.z
+PPSYS    Z         405,979  12-31-95  9:50a ppsys.z
+PPVER    DLL         1,024  12-31-95  9:50a ppver.dll
+README   WRI        11,392  12-31-95  9:50a readme.wri
+SETUP    BMP        53,494  12-31-95  9:50a setup.bmp
+SETUP    EXE       273,920  12-31-95  9:50a setup.exe
+SETUP    INS        83,989  12-31-95  9:50a setup.ins
+SETUP    PKG         2,701  12-31-95  9:50a setup.pkg
+WIN      Z          73,439  12-31-95  9:50a win.z
+WINSYS   1         493,875  12-31-95  9:50a winsys.1
+WINSYS   2         172,289  12-31-95  9:50a winsys.2
+~INS0762 LIB        25,758  12-31-95  9:50a ~ins0762.lib
+        31 file(s)      5,734,173 bytes
+
+Contents of the \Drivers\Misc\Pwrchut Folder
+--------------------------------------------
+
+KEYMACRO DLL        16,876  12-31-95  9:50a keymacro.dll
+MODINI   EXE        33,792  12-31-95  9:50a modini.exe
+OEMSETUP INF         1,038  12-31-95  9:50a oemsetup.inf
+PCHUTE   BMP        20,798  12-31-95  9:50a pchute.bmp
+PWRCHUTE EXE       305,664  12-31-95  9:50a pwrchute.exe
+PWRCHUTE HLP        23,611  12-31-95  9:50a pwrchute.hlp
+PWRCHUTE INI         4,070  12-31-95  9:50a pwrchute.ini
+WINCHUTE EXE       293,376  12-31-95  9:50a winchute.exe
+XWI320   DLL       208,837  12-31-95  9:50a xwi320.dll
+XWI320TE DLL        58,891  12-31-95  9:50a xwi320te.dll
+        10 file(s)        966,953 bytes
+
+Contents of the \Drivers\Misc\Sidewndr Folder
+---------------------------------------------
+
+CNTYCODE DOS           915  12-31-95  9:50a cntycode.dos
+COMMON   IN_         5,290  12-31-95  9:50a common.in_
+DSETUP   EN_         3,133  12-31-95  9:50a dsetup.en_
+DSETUP   EX_        98,444  12-31-95  9:50a dsetup.ex_
+DSETUP   INF           172  12-31-95  9:50a dsetup.inf
+DSETUP   LAN            93  12-31-95  9:50a dsetup.lan
+EXPAND   EXE        16,378  12-31-95  9:50a expand.exe
+LICENSE  TXT         4,015  12-31-95  9:50a license.txt
+MIDAS    MS_         2,174  12-31-95  9:50a midas.ms_
+MSCOMSTF DL_        38,540  12-31-95  9:50a mscomstf.dl_
+MSCUISTF DL_        21,975  12-31-95  9:50a mscuistf.dl_
+MSDETECT IN_         3,559  12-31-95  9:50a msdetect.in_
+MSDETSTF DL_        15,708  12-31-95  9:50a msdetstf.dl_
+MSINSSTF DL_        40,440  12-31-95  9:50a msinsstf.dl_
+MSSHLSTF DL_         9,919  12-31-95  9:50a msshlstf.dl_
+MSUILSTF DL_         5,579  12-31-95  9:50a msuilstf.dl_
+NTFILE   EX_        15,911  12-31-95  9:50a ntfile.ex_
+PSS      EN_        53,310  12-31-95  9:50a pss.en_
+PSSTOC   EN_        11,410  12-31-95  9:50a psstoc.en_
+README   TXT         7,952  12-31-95  9:50a readme.txt
+SETUP    ENG           843  12-31-95  9:50a setup.eng
+SETUP    EXE        56,832  12-31-95  9:50a setup.exe
+SETUP    INI           149  12-31-95  9:50a setup.ini
+SETUP    IN_         1,004  12-31-95  9:50a setup.in_
+SETUPAPI IN_         9,344  12-31-95  9:50a setupapi.in_
+SIDEWNDR EN_       129,466  12-31-95  9:50a sidewndr.en_
+SIDEWNDR VXD        10,360  12-31-95  9:50a sidewndr.vxd
+SIDEWNDR VX_         5,255  12-31-95  9:50a sidewndr.vx_
+STRING   EN_        10,954  12-31-95  9:50a string.en_
+UNINSTAL EX_        19,240  12-31-95  9:50a uninstal.ex_
+_MSTEST  EX_        55,370  12-31-95  9:50a _mstest.ex_
+        31 file(s)        653,734 bytes
+
+Contents of the \Drivers\Misc\Tripplte Folder
+---------------------------------------------
+
+DATA     Z         361,109  12-31-95  9:50a data.z
+DISK1    ID              3  12-31-95  9:50a disk1.id
+OEMSETUP INF           441  12-31-95  9:50a oemsetup.inf
+SETUP    EXE       391,168  12-31-95  9:50a setup.exe
+SETUP    INS         4,981  12-31-95  9:50a setup.ins
+SETUP    PKG           141  12-31-95  9:50a setup.pkg
+UNINST   EXE       152,576  12-31-95  9:50a uninst.exe
+_SETUP   DLL         6,656  12-31-95  9:50a _setup.dll
+_SETUP   LIB        29,697  12-31-95  9:50a _setup.lib
+         9 file(s)        946,772 bytes
+
+Additional query words: dirwin dirwin95
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

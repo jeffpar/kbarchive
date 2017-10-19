@@ -1,0 +1,93 @@
+DOCUMENT:Q186625  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Commands: REGISTER
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many applications expect only one user to use the application at a time. In a
+multiuser environment like Terminal Server, Dynamic Link Libraries (.dll files)
+may fail to open if more than one user attempts to use them. The REGISTER
+utility allows you to tell the system that a particular .dll file should be made
+available globally to the system and to all users.
+
+Note that registration data for a program is recognized only when the program is
+loaded. Therefore, if you issue a REGISTER command for a program that is already
+loaded, the changes will not take effect until the next time the program is
+loaded.
+
+Syntax
+------
+
+register filename [/system | /user] [/guitext | /noguitext] [/v] [/?]
+
+Parameters
+----------
+
+filename
+
+   Identifies the name of the file you want to register.
+
+/system
+
+   Registers filename as a system global resource.
+
+/user
+
+   Registers filename as a user global resource.
+
+/guitext
+
+   Registers filename as executable on text-only sessions.
+
+/noguitext
+
+   Registers filename as not executable on text-only sessions.
+
+/v (verbose)
+
+   Displays additional information.
+
+/? (help)
+
+   Displays the syntax for the command and information about the command's
+   options.
+
+Security Restrictions
+---------------------
+
+Only administrators can run register.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

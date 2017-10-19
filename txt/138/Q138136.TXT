@@ -1,0 +1,90 @@
+DOCUMENT:Q138136  31-JUL-2001  [visualc]
+TITLE   :HOWTO: Assign the F8 Key to DebugStepInto in Visual C++
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbusage kbide kbVC kbVC400 kbVC500 kbVC600 kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 4.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Developer Studio's debugger uses the F11 key as the shortcut key to
+step into a function. All past editions of Visual C++ and Codeview used the F8
+key as the shortcut key for step into. This article describes how to modify the
+keyboard settings so the F8 key can be used to step into functions when
+debugging.
+
+MORE INFORMATION
+================
+
+There are two possible ways to change the default key for stepping into a
+function. You can change your keyboard compatibility settings to Visual C++ 2.0,
+or you can define a custom key assignment for DebugStepInto.
+
+Change Keyboard Compatibility Settings to Visual C++ 2.0
+--------------------------------------------------------
+
+1. On the Tools menu, click Options.
+
+2. Click the Compatibility tab, and select the Recommended Options for Visual
+   C++ 2.0.
+
+NOTE: If you defined any custom key assignments, you will have to redefine them
+because this method resets all key assignments.
+
+Define a Custom Key Assignment for DebugStepInto
+------------------------------------------------
+
+1. On the Tools menu, click Customize.
+
+2. On the Keyboard tab, click Text editor, the Edit category, and the SelectChar
+   command. Note that this will have the F8 key assigned to it.
+
+3. Select F8, and click the Remove button. Note that if you want to use the
+   SelectChar function, you need to assign another key sequence to it.
+   CTRL+SHIFT+A was used in Visual C++ 2.0 and is unassigned in Visual C++ 4.0.
+
+4. Select the Main editor, the Debug category, and the DebugStepInto command.
+
+5. Select the Current Key, which is set to F11, and click the Remove button.
+
+6. Click the "Press new shortcut key" edit control. Then press the F8 key, and
+   click the Assign button.
+
+Additional query words: kbinf
+
+======================================================================
+Keywords          : kbusage kbide kbVC kbVC400 kbVC500 kbVC600 kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : winnt:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

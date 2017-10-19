@@ -1,0 +1,67 @@
+DOCUMENT:Q166018  14-NOV-2000  [word97]
+TITLE   :WD97: Newsletter Wizard Creates Extra Blank Page
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbusage kbtemplate winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run the Newsletter Wizard, it always creates an extra blank page at the
+end of your newsletter.
+
+MORE INFORMATION
+================
+
+There is a next page section break at the end of the newsletter on page four.
+This section break preserves the formatting of the existing sections, especially
+the headers and footers, and should not be deleted.
+
+To Keep the Extra Blank Page from Being Printed
+-----------------------------------------------
+
+1. On the File menu, click Print.
+
+2. In the Page range area of the Print dialog box, click Pages, and then type
+   the page numbers you want to print (for example, 1-4).
+
+3. Click OK.
+
+STATUS
+======
+
+This behavior is by design. The extra blank page is created to provide you with
+space to add additional text to your newsletter.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbtemplate winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

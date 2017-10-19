@@ -1,0 +1,89 @@
+DOCUMENT:Q197322  17-JUL-2001  [visualc]
+TITLE   :PRB: "Invalid File Format" from ImgEdit Reading Sony Mavica JPG
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:5.0sp3,6.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbEEdition kbVC600 kbVC500SP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0sp3, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Internet Explorer and other image programs, you can successfully
+view .jpg files that are created using a Sony Digital Camera. However, when you
+use the viewing functionality from within the Wang/Kodak Imaging Controls
+(ImgEdit.ocx) that ship with Microsoft Windows 95 and Microsoft Windows 98, you
+see one of the following error messages:
+
+   Invalid File Format; Unable to display image when using ImgEdit OCX
+   provided within the Wang Imaging Controls suite with Windows 95 or
+   Windows NT 4.0
+
+   - or -
+
+   Path/File Access Error; Unable to read or write the specified file;
+   Unable to display image within the Kodak Imaging Controls suite with
+   Windows 98.
+
+CAUSE
+=====
+
+According to the Eastman Software Web page (please see REFERENCES section):
+
+   The Sony Mavica camera generates .JPG files without the required "JFIF"
+   string in the header. The JPEG standard states that an APP0 marker and
+   "JFIF" string (together with the leading SOI marker), make up the header
+   that identifies them as "standard" JPEG/JFIF files. Some applications
+   just recognize the leading "FFD8" SOI marker and don't look for the
+   "JFIF" stamp, thus allowing them to open a wider variety of JPEG files.
+
+The Wang/Kodak Imaging Controls follow the JPEG specification, so if the JFIF
+string is missing, the current versions of Imaging raise an invalid file format
+error. Both Imaging Professional and Imaging for Windows by Eastman Software
+generate this error. However, Imaging Professional 2.0 by Eastman Software
+performs the FFD8 check, so it can read the Sony Mavica files.
+
+NOTE: Eastman Software now provides the Wang/Kodak Imaging Controls.
+
+RESOLUTION
+==========
+
+Currently, the only workaround is to purchase Imaging Professional 2.0 by
+Eastman Software.
+
+REFERENCES
+==========
+
+You can find more (http://support.microsoft.com/download/support/mslfiles/more)
+information regarding this as well as other Image File Format issues at the
+Eastman Software Web site:
+
+   http://www.eastmansoftware.com/products/ImagingPro/Reading_Room/format.htm
+
+======================================================================
+Keywords          : kberrmsg kbEEdition kbVC600 kbVC500SP3 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch kbVCEE500SP3 kbVCEE600
+Version           : WINDOWS:5.0sp3,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

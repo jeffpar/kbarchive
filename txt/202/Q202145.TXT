@@ -1,0 +1,105 @@
+DOCUMENT:Q202145  02-MAY-2001  [vbwin]
+TITLE   :PRB: Source Control Tool Shows Font Property Deleted on Check-in
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,4.0a,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbide kbSSafe400 kbSSafe500 kbSSafe600 kbVBp500 kbIDEProject kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a source code control tool such as Visual SourceSafe on a Visual
+Basic project, .frm files appear to lose font information for controls.
+
+CAUSE
+=====
+
+If a control's font matches the font of the parent form exactly, the font blocks
+are optimized out of the property definitions. When Visual Basic loads a control
+that does not contain a font block, the font property of the control is set to
+the font that is used by the control's parent form.
+
+RESOLUTION
+==========
+
+You can safely ignore a difference report that shows a missing font.
+
+To avoid the problem, do one of the following:
+
+ - Set the Font property of the Form to a font or font size that is not used by
+   the controls on the form.
+ - Set the Font property of each control at run time.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to reproduce behavior
+---------------------------
+
+1. In Visual Basic, create a new Standard EXE project. Form1 is created by
+   default.
+
+2. Add a CommandButton to Form1.
+
+3. Change the font of the CommandButton in the Properties window.
+
+4. Save the project and add the project to Visual SourceSafe.
+
+5. Check out Form1.
+
+6. Change the Font property of CommandButton1 to be the same as Form1.
+
+7. Save Form1 and close Visual Basic.
+
+8. Start Visual Basic and reload your project.
+
+9. Add a line of code to the project and delete it. This causes Visual Basic to
+   mark the form as "dirty," which prompts cleanup when it is saved.
+
+10. Save Form1.frm.
+
+11. From the Tools menu, point to SourceSafe and click Show Differences to open
+   the Difference Options dialog box. Click OK to display the difference
+   report.
+
+RESULT: The difference report shows that the reference to the Font property of
+Command1 was deleted.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbSSafe400 kbSSafe500 kbSSafe600 kbVBp500 kbIDEProject kbGrpDSVB 
+Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

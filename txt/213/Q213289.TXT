@@ -1,0 +1,57 @@
+DOCUMENT:Q213289  27-OCT-2000  [sms]
+TITLE   :Err Msg: "Directory File Needed for Initialization Could Not..."
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you send packages to a Systems Management Server client, the following
+error message appears on the desktop of the client:
+
+   %systemdrive%\WINNT\MS\SMS\Clicomp\Apa\Bin\Pea32.exe
+   %systemdrive%\temp\. A temporary file needed for initialization could not be
+   created or could not be written to. Make sure that the directory path exists,
+   and disk space is available. Choose 'Close' to terminate the application.
+
+MORE INFORMATION
+================
+
+This message usually appears when the client has run out of disk space, which
+causes the 16-bit subsystem to fail.
+
+To prevent this error, ensure that the client has enough disk space before you
+send the package.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

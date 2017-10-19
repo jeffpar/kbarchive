@@ -1,0 +1,52 @@
+DOCUMENT:Q137068  11-MAR-1999  [exchange]
+TITLE   :XADM: Err Msg: The Path Specified Is Invalid...
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the SETUP.EXE program from the Microsoft Exchange Server
+Distribution CD, the following error message is received:
+
+   The Path Specified is Invalid, or Incomplete or Non-Local. Please Specify a
+   Valid Path Name.
+
+CAUSE
+=====
+
+By default, the SETUP.EXE program installs Microsoft Exchange into the EXCHSRVR
+directory on drive C. If you try to change the installation directory to the
+root directory of a drive, the above error message is displayed because
+Microsoft Exchange cannot be installed in the root directory. The installation
+directory specified must be a subdirectory.
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

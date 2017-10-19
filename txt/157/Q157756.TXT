@@ -1,0 +1,73 @@
+DOCUMENT:Q157756  31-JUL-2001  [sms]
+TITLE   :Remote Control Problem with Matrox MGA Millennium PowerDesk
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you remotely control a Windows 95 workstation that has the Matrox MGA
+Millennium PowerDesk drivers (version 4.03.00.3110) installed, and you run
+either File Manager (Winfile) or Windows Explorer, the video display does not
+update properly.
+
+CAUSE
+=====
+
+When you run File Manager (or another application), the screen is not correctly
+repainted, although the colors and/or fonts are correctly displayed. Some areas
+of File Manager are mixed with some other part of the background screen.
+
+If you use the Matrox MGA Millennium drivers dated 08/24/95 (version 1.00.006),
+everything appears normally.
+
+
+WORKAROUND
+==========
+
+Disable "Bitmap Caching" and "Power GDI Options" for the MATROX drivers by going
+to Display Properties, click on MGA Setting, click on Advanced and disable
+"Bitmap Caching".
+
+-or-
+
+Use the Matrox MGA Millennium drivers, version 1.00.006, dated 08/24/95. The
+following list shows the file names and sizes of these drivers:
+
+Mga95x64.vxd      22329    08/24/95
+Mga95x64.dll      62688    08/24/95
+Mga95x64.drv      78640    08/24/95
+
+Refer to Bug#2521 in the SMSBug1 database for more information.
+
+Additional query words: sms SP1 Quick Viewer
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q311468  06-AUG-2002  [exchange]
+TITLE   :Exchange 2000 Does Not Support IMAP4 NAMESPACE Command
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange 2000 Server 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Exchange 2000, Internet Message Access Protocol 4 (IMAP4) protocol does not
+support the other user's name space. This functionality is available only in
+Exchange Server 5.5. When you open an IMAP4 connection on port 143 (default port
+number) to an Exchange server, log on with a user name and password, and then
+run the namespace command, Exchange Server 5.5 returns the list of name spaces
+including the other users' name spaces (delegated users). Exchange 2000 only
+returns the name space for the current user.
+
+MORE INFORMATION
+================
+
+Note the output you receive when you run the following commands:
+
+   telnet <exchange server name> 143
+   a001 login <user name><password>
+   a002 namespace
+
+In Exchange 2000, you receive the following output:
+
+   * NAMESPACE (("" "/")) NIL (("Public Folders/" "/"))
+
+In Exchange Server 5.5, you receive the following output:
+
+   * NAMESPACE (("" "/")) (("Other users/" "/")) (("Public Folders/" "/"))
+
+Additional query words: IMAP4
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

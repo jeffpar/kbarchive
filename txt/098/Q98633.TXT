@@ -1,0 +1,48 @@
+DOCUMENT:Q98633  30-JUL-2001  [lanman]
+TITLE   :Ping Utility Does Not Work with Windows for Workgroups
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+SYMPTOMS
+========
+
+If you install TCP/IP protocol under Windows for Workgroups by using the WfW
+connectivity disk, then try to use the Ping utility, you get this error
+message:
+
+   Network modules not loaded, Program aborted.
+
+CAUSE
+=====
+
+This installation procedure copies NMTSR.EXE into the Windows directory but
+doesn't put NMTSR.EXE in the AUTOEXEC.BAT file.
+
+WORKAROUND
+==========
+
+Append NMTSR.EXE to the end of the AUTOEXEC.BAT file.
+
+Additional query words: wfw wfwg 2.20 2.2 tcp ip windows tcpip
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

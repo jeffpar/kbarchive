@@ -1,0 +1,61 @@
+DOCUMENT:Q97828  08-NOV-2001  [homegame]
+TITLE   :WEP 2: Level Passwords for Pipe Dream
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Best of Windows Entertainment Pack, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a list of the passwords for the Pipe Dream game in
+Microsoft Entertainment Pack Volume 2.
+
+MORE INFORMATION
+================
+
+The following table shows the password you need to type to start a game in Pipe
+Dream at the corresponding level:
+
+   Level           Password
+   ------------------------
+
+   Level 5         PLAM
+   Level 9         ZAMI
+   Level 13        POOM
+   Level 17        DINK
+   Level 21        SPOO
+   Level 25        BORK
+   Level 29        TARR
+   Level 33        FOOZ
+
+Additional query words: 2.00 Pipedream windows fun games wep w_wep msgame
+
+======================================================================
+Keywords          : kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbZNotKeyword kbWinEntPkSearch kbWinEntPkBest
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

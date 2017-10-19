@@ -1,0 +1,91 @@
+DOCUMENT:Q188861  09-JAN-2000  [vbwin]
+TITLE   :HOWTO: Use the Remote Data Control to Pass Bookmarks
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If two RemoteData controls (RDCs) have the same result set, they can use the
+same bookmark.
+
+MORE INFORMATION
+================
+
+The following sample uses two forms, each with its own RDC, to demonstrate that
+one RDC can use the bookmark set on the result set of another RDC. If you set a
+bookmark to the result set of the RDC on Form1, you can use the same bookmark
+for the result set of the RDC on Form2. The RDC on Form2 opens the result set
+and points to the same record that was saved to the bookmark.
+
+NOTE: Each RDC must have the same SQL property or the bookmark does not work.
+Also, each RDC must be bound to the same source in the DataSourceName property.
+
+Steps to Create Sample
+----------------------
+
+1. Open a Standard EXE project in Visual Basic.
+
+2. Add a form so that you have Form1 and Form2 in your project.
+
+3. Add a RemoteData control to Form1 and another one to Form2.
+
+4. Add a TextBox control to Form1 and another one to Form2
+
+5. Create a Microsoft Access DataSourceName for the Northwind database in the
+   ODBC Administrator. Set the DataSourceName property for each of the RDCs to
+   your Northwind DataSource. Set the SQL property for each of the RDCs to the
+   following:
+
+         Select * From Customers
+
+6. Set the DataSource property for each TextBox control to MSRDC1.
+
+7. Create a Command button on form1. Paste in the following code:
+
+         Private Sub Command1_Click()
+           Dim varBookmark As Variant
+
+           varBookmark = Form1.MSRDC1.Resultset.Bookmark
+           Form2.MSRDC1.Resultset.Bookmark = varBookmark
+           Form2.Show
+         End Sub
+
+REFERENCES
+==========
+
+"Jet Database Engine Programmer's Guide," Dan Haught and Jim Ferguson, 756
+pages, Microsoft Press, 1997
+
+Additional query words: kbCtl kbDAO kbVBp400 kbVBp500 kbEEdition
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

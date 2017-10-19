@@ -1,0 +1,81 @@
+DOCUMENT:Q112457  08-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: A Disk Error Occurred While Performing...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a user selects Mail, Address Book and tries to switch to the Postoffice
+Address List or the Global Address List, the following error message may be
+displayed:
+
+   A disk error occurred while performing the operation
+
+CAUSE
+=====
+
+This error is caused by a locked open address list file (ADMIN.NME or GAL.NME).
+
+RESOLUTION
+==========
+
+If the file is locked open, close the file.
+
+On a Novell Server
+------------------
+
+1. You can determine the status of locked files by starting the RCONSOLE
+   program.
+
+2. Choose the FileOpen/Lock activity.
+
+3. Choose <volume>/<dir>/<subdir>/MASTER.GLB. This will yield
+   a connection number.
+
+4. From Connection Activity, you can determine who has the file open.
+
+On a LAN Manager Server
+-----------------------
+
+1. Check for locked files by running the NET ADMIN command.
+
+2. Select Status, Opened Files.
+
+For Other File Servers
+----------------------
+
+Consult the administrator's guide for that server to determine if a file is
+locked open and by whom.
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

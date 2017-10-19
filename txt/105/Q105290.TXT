@@ -1,0 +1,84 @@
+DOCUMENT:Q105290  31-OCT-1999  [pcmail]
+TITLE   :SMTP: Err Msg: Insufficient Memory
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Mail Gateway to SMTP displays the error message:
+
+   Insufficient memory
+
+CAUSE
+=====
+
+This error usually is seen when a message has more than 300 recipients and the
+SMTP gateway has low memory available in the conventional 640k RAM.
+
+System requirements place a strain on the available conventional memory. The SMTP
+Gateway code requires different amounts of memory depending on which TCP/IP
+stack is used, and the TCP/IP stack must also be loaded, although it can be
+loaded high if memory is available. Finally, the Gateway's configuration files
+and the postoffice routing files are also loaded:
+
+   LOCAL.CFG
+   ADDR_MAP.CFG
+   NETWORK.GLB
+   *.XTN (All files in the XTN directory)
+   GROUP.GLB
+   ACCESS2.GLB
+
+If the Gateway postoffice has many mailboxes and the Gateway serves many
+downstream postoffices, the amount of memory left for processing mail messages
+can become unacceptably low.
+
+This error will also be returned if there is a corrupt *.P1 file in the P1
+directory.
+
+RESOLUTION
+==========
+
+Unfortunately, there are so many variables involved that it is very difficult to
+provide enough memory to process messages under all conditions.
+
+But there are two ways to provide the Gateway with more working memory to handle
+large messages and user lists: you can load MS-DOS, the network operating
+system, and the TCP/IP software above the 640k conventional memory, and you can
+reduce the size of the ACCESS2.GLB and GROUP.GLB files by moving users off the
+Gateway postoffice and deleting unused groups.
+
+If there is a corrupt .P1 file, clearing the *.P1 files from the P1 directory
+will usually resolve the problem.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

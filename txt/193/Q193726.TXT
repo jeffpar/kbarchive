@@ -1,0 +1,84 @@
+DOCUMENT:Q193726  20-AUG-1999  [foxpro]
+TITLE   :PRB: Problems Using the Graph Wizard in Visual FoxPro 6.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running the Graph Wizard in Visual FoxPro 6.0 may cause the following error
+message to occur:
+
+   Microsoft Graph does not appear to be installed properly. The latest version
+   of Graph is available from Microsoft Office.
+
+CAUSE
+=====
+
+Microsoft Graph is not included with Visual FoxPro 6.0.
+
+RESOLUTION
+==========
+
+Microsoft Graph ships with previous versions of Visual FoxPro and with Microsoft
+Office. You must install Microsoft Graph from one of these products in order for
+the Graph Wizard to work properly.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Applications that use Microsoft Graph can still be distributed with the Graph
+8.0 run-time to customers that do not own Microsoft Office 97 or any other Graph
+version. The Graph 8.0 run-time is included with Visual FoxPro 6.0 and there is
+a check box in Step 2 of the Setup Wizard for selecting to include the Graph 8.0
+run-time on the distribution diskettes.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Visual FoxPro 6.0 on a computer that does not have a version of
+   Microsoft Graph installed.
+
+2. Launch Visual FoxPro 6.0.
+
+3. Start the Graph Wizard.
+
+The above message will be displayed.
+
+Additional query words: kbVFp600 kbWizard kbMiscTools
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,94 @@
+DOCUMENT:Q94607  04-JUL-1999  [win16sdk]
+TITLE   :PRB: MULTIPAD Sample from Win 3.1 SDK Gives Printing Error
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly _IK kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MULTIPAD sample that ships with the Microsoft Windows version 3.1 SDK allows
+only one print job to be sent to the printer. Any further attempts to print
+result in the following error:
+
+   Cannot print <document name>!
+
+The document is not printed, and you must re-start MULTIPAD to do any printing.
+
+CAUSE
+=====
+
+The PRINTDLG data structure used for printing is a global variable, and two
+members of this structure are invalid after the first print job is sent. These
+members are not properly initialized for subsequent print jobs.
+
+RESOLUTION
+==========
+
+In the MPPRINT.C file, in the GetPrinterDC() routine, the following lines:
+
+      if (pd.hDevNames)
+
+      GlobalFree(pd.hDevNames);
+
+      if (pd.hDevMode)
+
+      GlobalFree(pd.hDevMode);
+
+should be changed to:
+
+      if (pd.hDevNames)
+      {
+
+       GlobalFree(pd.hDevNames);
+       pd.hDevNames=NULL;
+
+      }
+      if (pd.hDevMode)
+      {
+
+       GlobalFree(pd.hDevMode);
+       pd.hDevMode=NULL;
+
+      }
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly _IK kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

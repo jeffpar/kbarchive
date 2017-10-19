@@ -1,0 +1,73 @@
+DOCUMENT:Q235157  22-OCT-2000  [sms]
+TITLE   :SMS: When New DP Added, Despooler Puts Package on Old & New DP
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a new distribution server to the site hierarchy, the Despooler
+service refreshes both the current and new distribution points. When the server
+distributes software, this behavior causes packages to be placed, or refreshed,
+on both servers.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The software distribution feature allows an administrator to distribute
+applications, or single files as packages to distribution servers in a Systems
+Management Server hierarchy. After a package is distributed, the administrator
+can send a job to install the application, or to run a command on the client
+computer by using files in the package.
+
+When a package is received at a site, the Despooler places the package on
+distribution servers. The administrator can configure the distribute phase to
+overwrite the package on current distribution servers or to place it on a new
+group of distribution servers. A list displays the server groups defined by the
+administrator, and a group called Default Servers.
+
+The Despooler service keeps a list of the master (stored) packages on the site
+server, and a list of distribution servers on which a package is stored. These
+lists are stored in Transfer Packages for distribution servers, or in Microsoft
+Windows NT in the following registry key:
+
+   SMS\Components\SMS_Despooler\Master Packages
+
+
+Additional query words: prodsms despooler
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

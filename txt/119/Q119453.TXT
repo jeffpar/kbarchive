@@ -1,0 +1,80 @@
+DOCUMENT:Q119453  26-JUN-1999  [win16sdk]
+TITLE   :PRB: GDI Heap Fills Up While Playing a Metafile
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbSDKWin16
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the playback of a metafile or printing, the GDI heap fills up and it is
+not possible to create additional GDI objects.
+
+CAUSE
+=====
+
+This filling of the GDI heap can be caused by a metafile that does not contain
+any DELETEOBJECT metafile records. The GDI objects created during the metafile
+playback never get deleted, which fills up the GDI heap. An application that
+prints without using banding in Windows version 3.1 causes a metafile to be
+created on behalf of the application. The problem listed above then occurs.
+
+The DELETEOBJECT metafile record is a new feature developed for Windows version
+3.1. This record is used to record DeleteObject() calls into the metafile, so
+that the specified GDI object is deleted during playback of the metafile. If you
+call DeleteObject() on an object that is currently selected into a metafile
+Device Context (DC), a DELETEOBJECT record will not be recorded into the
+metafile. The documentation for DeleteObject() states that the object must not
+be selected into a DC.
+
+RESOLUTION
+==========
+
+Make sure to deselect the object in your metafile DC before calling
+DeleteObject() to delete the object.
+
+For additional information about calling DeleteObject() for a metafile object,
+please see the following article(s) in the Microsoft Knowledge Base:
+
+   Q68296 Windows 3.x Metafiles Support DeleteObject()
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

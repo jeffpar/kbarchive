@@ -1,0 +1,67 @@
+DOCUMENT:Q163016  13-JUN-2001  [sna]
+TITLE   :Access Violation in GetHonestyLicense Using TN3270 Server
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The TN3270 Server service generates a Dr. Watson error. The Drwtsn32.log shows
+that an access violation occurred in the TN3270 GetHonestyLicense() function.
+
+CAUSE
+=====
+
+The access violation occurs because a session control block was being accessed
+by the TN3270 licensing code outside the critical section used to protect
+session control blocks.
+
+RESOLUTION
+==========
+
+The TN3270 Server service has been updated to correct this problem. The updated
+file is Tn3servr.exe.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11. This
+problem was corrected in the latest SNA Server version 2.11 U.S. Service Pack.
+For information on obtaining this Service Pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211SP1
+Version           : WINDOWS:2.11 SP1
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

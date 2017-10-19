@@ -1,0 +1,75 @@
+DOCUMENT:Q150973  21-AUG-1999  [foxpro]
+TITLE   :PRB: OLE Error 0x80040113 Invalid Class String with MSGraph
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 3.00b
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing a command that uses OLE automation to MSGraph causes the error message:
+
+   OLE error code 0x80040113 Invalid class string. Example: Append General
+   myGeneralFieldName Class "MSGraph
+
+CAUSE
+=====
+
+MSGraph has not been installed or registered to the operating system.
+
+RESOLUTION
+==========
+
+If the user has not installed a Workstation version of Visual FoxPro, but is
+running Visual FoxPro from an Administrative installation on a file server, then
+choose one of the following options:
+
+ - Run setup, and select a "Workstation" installation
+
+   -or-
+
+ - Run setup, and select "Custom" installation and only install the Microsoft
+   Tools option.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+MSGraph is installed to the <drive>:\<Windows95 dir>\MSGraph5
+directory. HKEY_CLASSES_ROOT contains registry information about MSGraph,
+MSGraph.Application, MSGraph.Application.5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : 3.00 3.00b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

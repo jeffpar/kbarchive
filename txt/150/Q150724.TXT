@@ -1,0 +1,93 @@
+DOCUMENT:Q150724  15-DEC-1999  [foxpro]
+TITLE   :Configuration Settings for Visual FoxPro for Macintosh
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists some configuration settings for Microsoft Visual FoxPro for
+Macintosh version 3.0b.
+
+MORE INFORMATION
+================
+
+Macscreen
+---------
+
+This setting controls whether the Visual FoxPro desktop is visible at startup. To
+prevent the desktop screen from appearing at startup, use the following setting
+in the Config.fpm file:
+
+      MACSCREEN=OFF
+
+Macdesktop
+----------
+
+Controls whether windows reside at the same level as the main FoxPro for
+Macintosh window. When Macdesktop is set to OFF, windows reside on the main
+FoxPro for Macintosh window. They cannot be moved outside the main FoxPro for
+Macintosh window, and behave in the same manner as windows in Visual FoxPro for
+Windows. This setting is useful when developing cross platform applications.
+
+Keycomp
+-------
+
+This setting controls the Visual FoxPro keystroke navigation. In FoxPro for
+Macintosh, you can specify the DOS, WINDOWS, or MAC (default) option. For more
+information about the keystrokes that the Keycomp setting controls, search for
+SET KEYCOMP in the online Help.
+
+Title
+-----
+
+This setting changes the title of the main Visual FoxPro window. You can use it
+in a executable (.EXE) file to control the name of the main window.
+
+A sample configuration file is as follows:
+
+      ******Sample Config.Fpm
+
+         MACSCREEN=OFF
+         TITLE=My Exe File
+         MACDESKTOP=OFF
+         DEFAULT="Macintosh HD:My Exe File"
+         KEYCOMP= Mac
+
+REFERENCES
+==========
+
+For more information about these settings, search for SET <setting> in the
+online Help.
+
+Additional query words: vfoxmac
+
+======================================================================
+Keywords          : kb3rdparty kbenv 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

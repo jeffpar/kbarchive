@@ -1,0 +1,57 @@
+DOCUMENT:Q88385  05-DEC-1999  [homemm]
+TITLE   :Word Cannot Use the Tools-Path Specified in WIN.INI
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1992 edition,1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows versions 1992 edition, 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Word for Windows generates the following error message when you start
+Word if the Word and Bookshelf CD is not in the CD-ROM drive:
+
+   Word cannot use the Tools-Path specified in the WIN.INI file because it is
+   invalid.
+
+MORE INFORMATION
+================
+
+To prevent the error message from reoccurring, make sure that the proper CD is
+in the CD-ROM drive prior to starting Word for Windows. The Tools-Path= section
+sets alternative locations for proofing tools, file converters, graphic filters,
+autosave files, and user dictionaries.
+
+This error will also occur if the CD-ROM drive cannot detect a new CD-ROM disk in
+the drive (for example, the Bookshelf 1993 Upgrade Setup). To correct this
+problem, Run File Manager and access the CD-ROM drive before starting Word.
+
+Additional query words: integration word book shelf kbmm viewer 2.00 usage compact disc disk
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1992 kbBookShelf1993
+Version           : :1992 edition,1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

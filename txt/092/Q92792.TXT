@@ -1,0 +1,67 @@
+DOCUMENT:Q92792  14-OCT-1999  [win3x]
+TITLE   :WFWG: Segment Load Failure with NCR MCA 486
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using an NCR MCA 486 system and you choose the Custom option when you
+run the Windows for Workgroups Setup program, the Setup program fails after you
+choose which components you want to install. Each time a file is copied, you
+receive the following error message:
+
+   Application error. Winsetup caused a Segment Load Failure in module setup.exe
+   at 0005:128B.
+
+CAUSE
+=====
+
+This problem is caused by the default settings in the .ADF configuration files.
+If the NCR MCA setup is configured for "Automatic Config," the small computer
+systems interface (SCSI) adapter is resent to DOS 4.01 and sets the logical SCSI
+device number to 7.
+
+WORKAROUND
+==========
+
+To work around this problem, change the DOS version to MS-DOS 5 and the device
+number to zero.
+
+MORE INFORMATION
+================
+
+This affects NCR MCA systems that have been upgraded to MS-DOS 5.0 when you
+select "Automatic Config" during MCA Setup.
+
+Additional query words: 3.10 bus WFWFEST
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

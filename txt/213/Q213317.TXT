@@ -1,0 +1,55 @@
+DOCUMENT:Q213317  21-MAR-1999  [sms]
+TITLE   :SMS: Batch programs w/ UNC Working Directory Not Executing
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbPackage kbSoftwareDist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Batch programs, in Systems Management Server (SMS), may not execute properly
+when the following are true:
+
+ - The 'Start in' directory of the program is a universal naming convention
+   (UNC) path.
+
+ - The drive mode is set to 'Run with UNC name'.
+
+This occurs more often with 16-bit operating systems because they cannot use a
+UNC path as their current working directory. 32-bit operating systems default to
+%windir% as the current working directory.
+
+To ensure proper execution of a batch program whose 'Start in' directory is a UNC
+path, set the Drive mode to require a drive letter or a specific drive letter.
+
+Additional query words: prodsms batch UNC
+
+======================================================================
+Keywords          : kbsms200 kbPackage kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

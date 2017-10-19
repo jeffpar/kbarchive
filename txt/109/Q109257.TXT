@@ -1,0 +1,53 @@
+DOCUMENT:Q109257  10-NOV-1999  [pcmail]
+TITLE   :CONN: Traffic Is Suspended During Address Import/Export
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.2 of the Microsoft Mail Connection for PC and AppleTalk Networks
+temporarily suspends gateway message delivery while the Connection Name Utility
+(CNU) performs directory import or export tasks. Normal message delivery resumes
+after the CNU completes its directory exchange tasks.
+
+The CNU scans the Network Manager[ASCII 146]s mailbox for directory exchange
+messages and processes them. It does this upon initial startup of the CNU, and
+at the directory synchronization (Dir-Sync) T3 time defined in the CNU
+configuration screen.
+
+Large directory import or export requests may take the CNU several hours to
+process. These directory exchange tasks should be performed at off-peak hours to
+minimize the delayed delivery of gateway messages.
+
+Additional query words: 3.20 CNU DirSync DirSynch Directory Import Export
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

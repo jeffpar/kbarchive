@@ -1,0 +1,73 @@
+DOCUMENT:Q270824  28-MAR-2001  [homemm]
+TITLE   :ELL: Black Background, Unable to Read Text in Text Boxes
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Language Learning French 
+ - Microsoft Encarta Language Learning French Deluxe 
+ - Microsoft Encarta Language Learning Spanish 
+ - Microsoft Encarta Language Learning Spanish Deluxe 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Encarta Language Learning, you may see a black background in text boxes and
+be unable to read any text that you type in that box.
+
+CAUSE
+=====
+
+This problem occurs if you are using a High Contrast Black Windows color scheme.
+
+RESOLUTION
+==========
+
+To resolve this issue, select a Windows color scheme other than High Contrast
+Black. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click the Display icon.
+
+3. Click the Appearance tab.
+
+4. Under Scheme, select a color scheme other than High Contrast Black and click
+   OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbHLangSpanish kbHLangFrench
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

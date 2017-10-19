@@ -1,0 +1,62 @@
+DOCUMENT:Q112204  18-NOV-1999  [pcmail]
+TITLE   :PC Adm: Doc Err: After Completing Task Import
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 283 of the version 3.0 Microsoft Mail for PC Networks
+"Administrator[ASCII 146]s Guide" and on page 322 of the version 3.2
+"Administrator's Guide," it states that after the Import utility completes a
+task it will display MS-DOS errorlevel codes. This is misleading; the codes are
+not visible to the user.
+
+MORE INFORMATION
+================
+
+The documentation does not explicitly state that the Import utility does not
+generate external errorlevel codes, but rather internal errorlevel codes. The
+Import utility will generate various MS-DOS internal errorlevel codes when it
+participates in directory synchronization (Dir-Sync).
+
+These codes are typically received and processed by DISPATCH.EXE, which is
+responsible for calling and governing the automatic Dir-Sync process.
+
+The IMPORT utility itself incorporates its own error codes to be received and
+processed by DISPATCH.EXE during the automated Dir-Sync process. Mail
+administrators attempting to employ any fault tolerance schemes dependent on
+these implied external errorlevel codes will unlikely be able to do so.
+
+
+Additional query words: 3.00 3.20 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

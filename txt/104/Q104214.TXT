@@ -1,0 +1,66 @@
+DOCUMENT:Q104214  20-NOV-1999  [msdos]
+TITLE   :MS-DOS Keywords Cannot Be Used in Multi-Config Menus
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS keywords can't be used in MS-DOS multiple-configuration menus. For
+example, MENUITEM=DOS produces the following error message:
+
+   Error in CONFIG.SYS line n
+
+In addition to the error message, your system may behave erratically. For
+example, your CONFIG.SYS file may not be processed.
+
+MORE INFORMATION
+================
+
+The following keywords cannot be used for menu items:
+
+   CON     Keyboard and display
+   PRN     System list device, usually a parallel port
+   AUX     Auxiliary device, usually a serial port
+   CLOCK$  System real-time clock
+   NUL     Bit-bucket device
+   A:-Z:   Drive letters
+   COM1    First serial communications port
+   COM2    Second serial communications port
+   COM3    Third serial communications port
+   COM4    Fourth serial communications port
+   LPT1    First parallel printer port
+   LPT2    Second parallel printer port
+   LPT3    Third parallel printer port
+
+Additional query words: 6.22 6.20 multiconfig multi-config
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

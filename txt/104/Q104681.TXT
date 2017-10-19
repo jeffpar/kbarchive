@@ -1,0 +1,72 @@
+DOCUMENT:Q104681  26-JUL-2001  [visualc]
+TITLE   :FIX: StreBlt Sample Causes Windows NT to Hang
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbCompilerkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+Running the StreBlt GDI StretchBlt Win32 application programming interface (API)
+sample can cause Windows NT to hang.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with Windows NT 3.1. This problem
+is illustrated by the StreBlt sample supplied with Visual C++ 32- bit Edition.
+The problem was fixed in Windows NT 3.5.
+
+NOTE: This sample was not included with Visual C++, 32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+To reproduce the problem, follow these steps:
+
+1. Build the StreBlt sample using the supplied makefile.
+
+2. The sample displays a dialog box for the main window. There are three
+   drop-down list controls titled StretchBltMode, Pattern, and Standard ROPs.
+   Select the following in these drop-down lists:
+
+      StretchBltMode    BLACKONWHITE
+      Pattern           NULL_BRUSH
+      Standard ROPs     PATPAINT
+
+At this point Windows NT will hang.
+
+Additional query words: 8.00 9.00 1.00 2.00
+
+======================================================================
+Keywords          : kbCompiler kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

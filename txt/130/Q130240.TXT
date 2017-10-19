@@ -1,0 +1,77 @@
+DOCUMENT:Q130240  10-FEB-2000  [foxpro]
+TITLE   :How to Use the Caption Field Property
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can specify a caption property for a field when creating or altering a table
+using the Visual FoxPro database container, or a program can do it by using the
+CREATE TABLE and ALTER TABLE commands. This article describes how and where the
+caption property is used within Visual FoxPro.
+
+MORE INFORMATION
+================
+
+A caption property is used to customize the display of a field on Browse
+windows, Forms, and Reports within a Visual FoxPro application. The caption is
+typically a text string that describes the field. For example, if a field name
+in a table is SSN, you might want to give the field a caption of "Social
+Security Number."
+
+The caption property for a field can be used in these scenarios:
+
+ - In a Browse window as the column header.
+
+ - By the Form Wizard to describe a field.
+
+ - By the Report Wizard to describe a field or as a column header.
+
+ - By the Label Wizard to describe a field.
+
+NOTE: The caption property is not used by the Visual FoxPro builders and is not
+used by the Query Wizard.
+
+Using the above example, if you browse the table containing the SSN field, the
+column header for SSN will read Social Security Number. If you used the same
+table to create a form by using the Form Wizard, the SSN field would be preceded
+with the description of Social Security Number.
+
+To reference a field's caption in a program, use the DBGETPROP() function. For
+example, if the SSN field is stored in a table named Customer, you could use the
+following code to assign the caption to the variable cGetCap:
+
+      cGetCap = DBGETPROP('customer.ssn', 'FIELD', 'CAPTION')
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

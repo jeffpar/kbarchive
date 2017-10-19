@@ -1,0 +1,83 @@
+DOCUMENT:Q216590  12-MAY-1999  [sna]
+TITLE   :Using Attachmate Advanced Function Adapter On Multidrop Line
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11SP1, 2.11SP2, 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Attachmate Advanced Function Synchronous Data Link Control (SDLC)
+adapter is used to connect the SNA Server computer to a multidrop leased line,
+Request to Send (RTS) may be held high, causing other devices connected to the
+line to drop.
+
+If one of the other devices on the multidrop line happens to be another SNA
+Server computer and it loses its connection, an Event 23, Outage code 0084, may
+be logged in the Windows NT Application Event log. The outage code indicates
+that the SNA Server computer is not receiving Receiver Ready (RR) poll responses
+from the remote system, causing the connection to timeout.
+
+CAUSE
+=====
+
+When RTS is held high, a point-to-point connection is created, and other devices
+on the multidrop line cannot send data on the line.
+
+For more information about configuring an SDLC connection with an SNA Server
+computer using a multidrop line, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q123832 Using SNA Server with SDLC Multidrop Leased Lines
+
+RESOLUTION
+==========
+
+Contact Attachmate to obtain the latest Advanced Function adapter drivers that
+include the fix for this problem.
+
+
+MORE INFORMATION
+================
+
+To verify that RTS is being held high, check the RTS light on the modem or
+CSU/DSU when the connection is started on the SNA Server computer. If the RTS
+light is solid (as opposed to flashing), then RTS is being held high. The Modem
+Monitor utility that ships with SNA Server can also be used to check RTS. This
+utility can be run from the Tools menu in SNA Manager.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400
+Version           : WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

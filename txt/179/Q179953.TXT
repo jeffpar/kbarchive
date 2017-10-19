@@ -1,0 +1,72 @@
+DOCUMENT:Q179953  27-MAR-1999  [exchange]
+TITLE   :Shiva Client De-installation Leaves File References
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run Remove All to de-install the Win16 Exchange client, and then
+restart the computer, Windows may produce the following error:
+
+   Cannot find a device file that may be needed to run Windows in 386
+   Enhanced Mode
+
+CAUSE
+=====
+
+This error occurs when Shiva Remote is installed on the computer. The Remove All
+process does not remove all entries related to Shiva Remote files, various .ini
+files, and the program group.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps:
+
+1. Edit the System.ini file and remove the following entry in the [386Enh]
+   section:
+
+         Device={ShivaPath}\dial.386
+
+2. Restart Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Exchange 4.0
+Client for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,50 @@
+DOCUMENT:Q112254  04-NOV-1999  [pcmail]
+TITLE   :PC MAPI: MAPIReadMail Doesn't Send Return-Receipt Message
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+The Simple Messaging Application Programming Interface (MAPI) MAPIReadMail function won't respond with a return-receipt message when it is reading return-receipt requested mail messages. It is the responsibility of the
+Mail client application, such as Microsoft Mail for Windows, to return a
+receipt to the sender.
+
+You can use Simple MAPI to find out if a return-receipt request has been
+sent. To do so, use the MAPIReadMail function to check the flags parameter
+of MAPIMessage. If the flags value is equal to or greater than 2, but not
+5, the MAPI_RECEIPT_REQUESTED flag was set. After you determine that a
+return-receipt request message was sent, you can send a custom receipt
+message back to the sender.
+
+Microsoft Mail for Windows will recognize a MAPI return-receipt request and
+send back a return-receipt message to the sender.
+
+Additional query words: 3.00 3.20 return receipt
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

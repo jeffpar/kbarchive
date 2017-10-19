@@ -1,0 +1,83 @@
+DOCUMENT:Q125189  02-DEC-1999  [msdos]
+TITLE   :Cannot Browse WGAO 3.11 Computer from WFWG 3.1
+PRODUCT :Microsoft Disk Operating System
+PROD/VER::3.11; WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups Add-On for MS-DOS, version 3.11 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to force a browse of a Windows for Workgroups Add-On (WGAO) version
+3.11 for MS-DOS computer from a Windows for Workgroups version 3.1 computer, you
+may receive one of the following error message:
+
+ - This request is not supported by the network.
+
+-or-
+
+ - This server does not support listing of shared resources.
+
+-or-
+
+ - Error 50: This request is not supported by the network.
+
+RESOLUTION
+==========
+
+You can manually connect to the WGAO 3.11 computer by typing the full path to
+the WGAO 3.11 computer in the Network Path dialog box.
+
+Note that this problem occurs only if you are using Windows for Workgroups 3.1 to
+browse a WGAO 3.11 computer. The problem does not occur if you use Windows for
+Workgroups 3.11 instead of version 3.1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.1. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+You may also receive an error message when you try to connect to a shared WGAO
+3.11 printer. Once you connect to the shared printer, Print Manager reports the
+status of the shared printer as "!ERROR." The following message is displayed in
+the Print Manager status bar:
+
+   This request is not supported by the network.
+
+This error message is misleading; you can print to the shared printer.
+
+Additional query words: 3.10 3.11 WGAO WFWG WFW Addon net view
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbZNotKeyword3 kbWFW311 kbWFW311DOS
+Version           : :3.11; WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

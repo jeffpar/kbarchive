@@ -1,0 +1,78 @@
+DOCUMENT:Q230745  30-JUN-1999  [exchange]
+TITLE   :XADM: Event 1333 Anonymous LDAP and MAPI Search Requests Denied
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message during startup of the Microsoft
+Exchange Directory service:
+
+   Event ID: 1333
+   Source: MSExchangeDS
+   Type: Error
+   Category: Security
+   Description: The Microsoft Exchange Directory service could not log on to the
+   Anonymous account. All anonymous LDAP and MAPI search requests will be
+   denied. Verify that the anonymous account password is valid in the DS Site
+   Configuration properties page.
+
+CAUSE
+=====
+
+The Windows NT account that is specified as the directory Anonymous account may
+have the "User Must Change Password at Next Logon" option enabled in User
+Manager.
+
+RESOLUTION
+==========
+
+To identify the Windows NT account being used as the directory Anonymous
+account:
+
+1. Use the Exchange Server Administrator Program to connect to the Exchange
+   Server computer receiving the event 1333.
+
+2. Select the Configuration container for the site that this server belongs to.
+
+3. Select DS Site Configuration and on the File menu, click Properties.
+
+4. The account used for the directory Anonymous account is located under the
+   Anonymous Access section on the General Property page.
+
+   Locate this account in User Manager for Domains. Clear the "User Must Change
+   Password at Next Logon" check box.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

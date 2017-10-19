@@ -1,0 +1,72 @@
+DOCUMENT:Q138369  18-DEC-2000  [win95x]
+TITLE   :Start Menu Shortcut Removed When DriveSpace 3 Is Removed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you remove the DriveSpace 3 component of Microsoft Plus!, the DriveSpace
+shortcut may no longer appear on the Start menu. If you installed the Windows 95
+DriveSpace components before you installed Microsoft Plus!, the Windows 95
+DriveSpace components remain on the hard disk, but the shortcut may no longer
+appear.
+
+If you did not install the Windows 95 DriveSpace components before you installed
+DriveSpace 3, the DriveSpace check box no longer appears on the Windows Setup
+tab in the Add/Remove Programs tool after you remove DriveSpace 3, preventing
+you from installing the DriveSpace components.
+
+RESOLUTION
+==========
+
+Create a new Start menu shortcut for DriveSpace. To do so, follow these steps:
+
+1. Use the right mouse button to click an empty spot on the taskbar, and then
+   click Properties on the menu that appears.
+
+2. On the Start Menu Programs tab, click Add.
+
+3. In the Command Line box, type "c:\windows\drvspace.exe" (without the
+   quotation marks) , and then click Next.
+
+4. In the "Select folder to place shortcut in" box, click the System Tools
+   folder, and then click Next.
+
+5. In the "Select a name for the shortcut" box, type "DriveSpace" (without the
+   quotation marks) , and then click Finish.
+
+NOTE: If you did not install the Windows 95 DriveSpace components before you
+installed DriveSpace 3 and you cannot install DriveSpace because the DriveSpace
+check box is missing, you must reinstall Windows 95 to install DriveSpace.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

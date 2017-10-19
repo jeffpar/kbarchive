@@ -1,0 +1,60 @@
+DOCUMENT:Q202761  08-APR-1999  [homemm]
+TITLE   :Bookshelf 99: List of Fonts Installed by Bookshelf 99
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 99 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article includes a list of the fonts installed and used by Microsoft
+Bookshelf 99.
+
+MORE INFORMATION
+================
+
+Bookshelf installs and uses the following TrueType fonts:
+
+ - Georgia Ref
+ - Ref Specialty
+ - Tahoma
+ - Verdana Ref
+
+If any of these fonts are missing, unexpected characters may be displayed in
+place of the appropriate text.
+
+If you experience this symptom, run the Bookshelf 99 installation program and
+click Remove All. When you have removed Bookshelf 99 from your computer, run the
+Bookshelf 99 installation program again to reinstall Bookshelf.
+
+Additional query words: multi multi-media media mm bs99
+
+======================================================================
+Keywords          : kbref kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1999
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,75 @@
+DOCUMENT:Q87441  08-OCT-1999  [win95x]
+TITLE   :Windows is Currently Using a Temporary Swap File Located on...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When switching from a temporary swap file to a permanent swap file, the
+following message may be displayed:
+
+   Windows is currently using a temporary swap file located on drive C. This may
+   prevent an accurate permanent swap-file analysis.
+
+This message indicates Windows cannot correctly recommend a permanent swap file
+setting because of the disk space that is being used by the temporary swap file.
+
+MORE INFORMATION
+================
+
+In determining the recommended size for a permanent swap file, Windows examines
+the following:
+
+1. Largest available block of free contiguous disk space.
+
+2. Total amount of free hard disk space.
+
+If there is a temporary swap file already using disk space, Windows cannot
+precisely determine the amount of free contiguous hard disk space available.
+Windows does not calculate how much, if any, of the temporary swap file is
+contiguous. Switching from a permanent to a temporary swap file does not give
+this message because the temporary swap file does not need contiguous disk
+space.
+
+After choosing the permanent swap file, restarting Windows, and going back to the
+virtual memory settings, there will be a more precise recommended permanent swap
+file size. This is because Windows knows the exact amount of space being taken
+by the file and its location on the hard drive.
+
+For further information on how Windows determines the swap file size, query on
+the following words in the Microsoft Knowledge Base:
+
+   recommended and maximum and swap and file and size
+
+Additional query words: 3.00 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

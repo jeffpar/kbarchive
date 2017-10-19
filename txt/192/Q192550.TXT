@@ -1,0 +1,67 @@
+DOCUMENT:Q192550  16-NOV-2001  [vbwin]
+TITLE   :BUG: VBCE: Control Manager Does Not Properly Uninstall Control
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbRegistry kbToolkit kbVBp500 kbVBp600 kbOSWinCE100bug kbOSWinCE200bug kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft eMbedded Visual Basic, version 3.0 
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Control Manager might not properly uninstall a control and remove its
+registry entries.
+
+RESOLUTION
+==========
+
+To work around this problem, use the Registry Editor shipped with both the
+Microsoft Windows CE Toolkit for Visual Basic (VBCE) and eMbedded Visual Basic
+(eVB) to manually remove the registry keys for the control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+Windows CE Toolkit Help for Visual Basic 6.0
+
+For specific steps to remove control registry entries, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q185223 HOWTO: Manually Uninstall Visual Basic CE Applications
+
+Additional query words: wce vbce6 evb
+
+======================================================================
+Keywords          : kbRegistry kbToolkit kbVBp500 kbVBp600 kbOSWinCE100bug kbOSWinCE200bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

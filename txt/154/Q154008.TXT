@@ -1,0 +1,67 @@
+DOCUMENT:Q154008  01-MAY-2001  [ssafe]
+TITLE   :What Microsoft Products Does VSS Integrate with?
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbinterop kbAccess kbFrontPage kbSSafe500 kbSSafe600 kbVBp kbVC kbvfp kbVisIDkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article answers the question on what Microsoft products Visual SourceSafe
+intergrates with.
+
+MORE INFORMATION
+================
+
+Question: What Microsoft products does Visual SourceSafe integrate with?
+
+Answer: Currently, Visual SourceSafe supports integration with the following
+Microsoft products:
+
+ - Visual Basic
+
+ - Visual C++
+
+ - Visual FoxPro
+
+ - Visual InterDev
+
+ - FrontPage
+
+ - Access
+
+ - Visual Modeler
+
+ - Office 2000 Suite
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAccess kbFrontPage kbSSafe500 kbSSafe600 kbVBp kbVC kbvfp kbVisID kbfaq
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

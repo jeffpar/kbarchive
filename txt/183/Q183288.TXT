@@ -1,0 +1,77 @@
+DOCUMENT:Q183288  25-JUL-2001  [homemm]
+TITLE   :Encarta DVD Reference Suite: Problems with Creative Labs DVD Kit
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbhw kbimu kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 DVD-ROM Reference Suite for Windows 
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+ - Microsoft Encarta Virtual Globe 1998 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Encarta 98 DVD-ROM Reference Suite on a computer with the Creative
+Labs Encore DVD/MPEG2 kit installed, you may experience the following symptoms:
+
+ - When you attempt to start Encarta Virtual Globe 98, you may receive the
+   following error message:
+
+   Please Insert the Virtual Globe CD into the drive and click OK.
+
+ - When you use Encarta 98 Encyclopedia to view Virtual Tours, the hot spots in
+   the Virtual Tours window are visible and functional, but the 360-degree views
+   may be completely black.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Click Start, click Shut Down, click Restart In MS-DOS Mode, and then click
+   OK.
+
+2. At the command prompt, type the following line, and then press ENTER:
+
+   cd <drive>:\<windows>\system\iosubsys
+
+   where <drive> is the hard disk on which Windows is installed, and
+   <windows> is the folder in which Windows is installed.
+
+3. At the command prompt, type the following line, and then press ENTER:
+
+   ren dxr2udf.vxd dxr2udf.imu
+
+4. At the command prompt, type "exit" (without the quotation marks), and then
+   press ENTER.
+
+
+Additional query words: multi media multi-media mm dxr2 panorama evg
+
+======================================================================
+Keywords          : kberrmsg kbhw kbimu kbHardware kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword4 kbEncartaEncycSearch kbEncartaEnCyc1998 kbEncartaReference98 kbEncartaVirtGlobe98
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q70767  09-NOV-1999  [win95x]
+TITLE   :Zeos Machines Hang on Windows 3.0 Disk 2
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Zeos technical support, when you install Microsoft Windows 3.0 on
+most Zeos machines, you must configure the mouse for COM1 or Microsoft Windows
+Setup will hang when reading Windows Disk 2.
+
+WORKAROUND
+==========
+
+During Windows Setup, install for "No Mouse or other pointing device" and change
+it later, or install the mouse on COM1 before installing Windows 3.0.
+
+MORE INFORMATION
+================
+
+Also according to Zeos technical support, most Zeos machines have the ability to
+enable shadow RAM, but they are normally shipped with shadow RAM disabled. To
+determine the status of shadow RAM, run the CMOS Setup Utility by pressing
+CTRL+ALT+ESC immediately after bootup. The shadow RAM status will either be on
+the first screen (if it's AMI or Phoenix BIOS) or second screen (if it's Award
+BIOS [only on some newer SX models]).
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.0 3.00 3.00a KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

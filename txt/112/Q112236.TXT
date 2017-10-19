@@ -1,0 +1,53 @@
+DOCUMENT:Q112236  12-NOV-1999  [pcmail]
+TITLE   :FaxDrv: WinWord Graphics Elongated by FAX Printer Driver
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail FAX Printer Driver, version 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail Gateway to FAX, FAX Printer Driver (FPD) may elongate
+graphics created with Microsoft Word for Windows (WinWord). The degree of
+elongation depends on the format of the graphic image embedded in the document
+and Windows screen driver being used.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Mail Gateway to
+FAX, FAX Printer Driver, version 3.0a. We are researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailFPD300a
+Version           : :3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

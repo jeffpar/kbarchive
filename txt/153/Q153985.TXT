@@ -1,0 +1,62 @@
+DOCUMENT:Q153985  13-JUN-2001  [homemm]
+TITLE   :QuickShelf: Shut Down Windows Dialog Box Disappears
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf '95 for Windows 95 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to shut down or restart your computer, the Shut Down Windows
+dialog box disappears after you select a Shut Down option.
+
+CAUSE
+=====
+
+This problem may occur if the 32-bit QuickShelf toolbar is running and the
+Always On Top option is selected.
+
+RESOLUTION
+==========
+
+Turn off the QuickShelf Always On Top option. To change the option, do the
+following:
+
+1. With your right mouse button, click anywhere on the QuickShelf toolbar, and
+   then click Customize.
+
+2. In the Customize dialog box, click View Tab.
+
+3. Make sure Always On Top is not selected, and then click OK.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch kbHomeMMsearch kbBookshelfSearch kbBookShelf1995
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,61 @@
+DOCUMENT:Q84875  30-JUL-2001  [lanman]
+TITLE   :Remote-Boot PROM Information
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+
+This article provides information on what remote-boot PROMs (programmable
+read-only memory) are available and where to purchase them.
+
+Lanworks Corporation of Ontario, Canada, manufactures remote-boot PROMs for the
+following cards:
+
+   3Com ELNKII (3C503)
+   3Com ELNK16 (3C507)
+   3Com ELNKMC (3C523)
+   IBM -- Many cards available
+   Novell NE1000
+   Novell NE2000
+   Racal Interlan NI5210
+   Racal Interlan NI6510 (16-bit)
+   Racal Interlan NI9210 (MC)
+   Western Digital -- Most cards available
+
+Customers can phone Lanworks directly for additional information or to purchase a
+remote-boot PROM:
+
+   Lanworks Phone: (416) 238-5528
+   Lanworks Fax: (416) 238-9407
+
+As of approximately March, 1994 the (416) area code will change to (905). At that
+time use the following for contacting Lanworks:
+
+   Lanworks Phone: (905) 238-5528 Lanworks Fax: (905) 238-9407 LANWORKS 2425
+   Skymark Ave Mississagua, ON L4W 4Y6 CANADA
+
+Additional query words: 2.00 2.00c 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

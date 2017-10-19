@@ -1,0 +1,61 @@
+DOCUMENT:Q77586  26-JUL-2001  [visualc]
+TITLE   :PRB: Custom Command-Line Options Disappear
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbide kbVC kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Visual Workbench Integrated Debugger, used with:
+    - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiler, linker, and resource compiler command line options may disappear from
+the custom options fields. If you specify custom options, close the dialog box,
+and open it again, the specified options may not appear in the list of
+additional options.
+
+CAUSE
+=====
+
+Specified options that disappear from the custom option fields were reset by
+entries in other option fields. For example, if you specify "/W1" (without
+quotation marks) in the custom option field, close the dialog box, and reopen
+it, the "/W1" option does not appear in the custom options field. However, the
+Warning Level combo box displays Level 1, as specified.
+
+MORE INFORMATION
+================
+
+This is not a problem in Visual C++ 2.0 and later, because of changes to the
+development environment.
+
+Additional query words: 1.00 1.10 1.50 arguments
+
+======================================================================
+Keywords          : kbide kbVC kbprb 
+Technology        : kbVCsearch kbAudDeveloper
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

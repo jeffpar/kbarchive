@@ -1,0 +1,66 @@
+DOCUMENT:Q305238  27-AUG-2001  [foxpro]
+TITLE   :FIX: FOR...EACH Fails with Character Array Element > 255
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbOOP kbvfp kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSni
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a FOR...NEXT command with a character array element that contains
+more than 255 characters, the following error may be received:
+
+   String is too long to fit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem was corrected in Microsoft Visual FoxPro version 7.0 for Windows.
+
+MORE INFORMATION
+================
+
+To reproduce the problem, create a program and run the following code in Visual
+FoxPro 5.0 or 6.0:
+
+   DIMENSION  laX(1)
+   laX(1) = SPACE( 256 )
+   FOR EACH lcX IN laX
+   	? lcX
+   NEXT
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbvfp kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet kbvfp500xSearch kbvfp700fix kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

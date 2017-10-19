@@ -1,0 +1,78 @@
+DOCUMENT:Q184540  04-AUG-2000  [iis]
+TITLE   :"File Not Found" Error Displayed in Product Documentation
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the product documentation, under the Microsoft Internet Information Server
+topic, the Advanced Web Application Development, Programmer's Reference, and
+Developer Samples subtopics display the following error message:
+
+   File Not Found
+
+   The file you have requested may not have been installed during setup. To
+   install this file, please run Setup again and choose the appropriate
+   documentation option. This documentation may not be available on some
+   operating systems.
+
+CAUSE
+=====
+
+During installation, the Internet Information Server (IIS) Software Developer's
+Kit (SDK) documentation subcomponent was not selected.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps:
+
+1. Run the Windows NT 4.0 Option Pack Setup program, and then click the
+   Add/Remove button.
+
+2. Select the Internet Information Server (IIS) component, and then click Show
+   Subcomponents.
+
+3. Select Documentation, and then Show Subcomponents.
+
+4. Select SDK, and then finish running the Setup program.
+
+MORE INFORMATION
+================
+
+The Typical Setup option in Windows NT 4.0 Option Pack Setup does not install
+the SDK documentation.
+
+Additional query words: online on-line help files akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

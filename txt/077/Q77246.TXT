@@ -1,0 +1,91 @@
+DOCUMENT:Q77246  03-DEC-1999  [msdos]
+TITLE   :System Clock Speeds Up When Using Task Swapper
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your system's time and date increment at an unusually fast rate when Task
+Swapper is used. Your real-time clock is not affected, and rebooting the system
+sets the time and date back to their correct values.
+
+CAUSE
+=====
+
+The Task Swapper in MS-DOS Shell can cause the system clock to speed up on
+systems where the speaker port (61H) is not properly initialized to an "off"
+state.
+
+WORKAROUND
+==========
+
+Task Swapper has code to manage programs that reprogram the timer. This code is
+dependent upon the value returned by the speaker port (61H). In particular, the
+lower two bits of this port (bits 0 and 1) control the speaker. When the
+computer is first turned on, both of these bits should be cleared (zeroed) to
+indicate the speaker is off. If your computer's hardware does not properly
+initialize the speaker port, you can use the MS-DOS Debug utility to create a
+program that will. Follow the instructions below to create SPKROFF.COM.
+
+1. At the command prompt, start Debug by typing the following command and
+   pressing ENTER:
+
+   " debug " (without the quotation marks)
+
+2. Enter the Debug commands as outlined below:
+
+   Debug          Command
+   Prompts        to Enter        Comments
+   -------        --------        --------
+
+   -              a 100            Assemble beginning at CS:0100
+   nnnn:0100      in ax,61         Read port 61H into AX register
+   nnnn:0102      and al,fc        Clear bits 0 and 1 - leave rest alone
+   nnnn:0104      out 61,al        Write new value to port 61H
+   nnnn:0106      int 20           Call DOS int 20H - terminate program
+   nnnn:0108      <ENTER>          Press ENTER to end assemble process
+   -              n spkroff.com    Name file SPKROFF.COM
+   -              rcx              Replace CX register
+   CX 0000
+   :              0008             Place 0008 into CX register
+   -              w                Write file
+   Writing 00008 bytes
+   -              q                Quit DEBUG
+
+Each time you reboot your computer you should execute SPKROFF.COM before starting
+Shell. It may work best to execute SPKROFF.COM from your AUTOEXEC.BAT file. If
+you load Shell from AUTOEXEC.BAT, be sure to place the line that executes
+SPKROFF.COM before the line that executes Shell.
+
+Additional query words: 5.00 5.00a 6.00 dosshell task switcher DOSHELL
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

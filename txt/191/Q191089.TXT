@@ -1,0 +1,113 @@
+DOCUMENT:Q191089  11-JAN-2001  [vbwin]
+TITLE   :PRB: Multimedia API Calls May Fail with Long File Names
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Multimedia API calls such as "mciSendString" may fail when you pass a file path
+or file name that uses long file names.
+
+RESOLUTION
+==========
+
+Make sure you use a standard 8.3 path and file name. Or, wrap the path and file
+name in quotes.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When using multimedia API calls to play multimedia files, the API call may fail
+if the path or file name in the command string has embedded spaces. The
+following example uses the mciSendString API to demonstrate this.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project. Form1 is created by default.
+
+2. Using the Projects menu click Components to bring up the Components dialog
+   box. On the Controls tab select "Microsoft Common Dialog Control" and click
+   OK.
+
+3. Place a CommonDialog control and two CommandButtons onto Form1.
+
+4. Add the following code to Form1's module:
+
+         Private Declare Function mciSendString Lib "winmm.dll" Alias _
+          "mciSendStringA" (ByVal lpstrCommand As String, ByVal _
+          lpstrReturnString As Any, ByVal uReturnLength As Long, ByVal _
+          hwndCallback As Long) As Long
+
+         Private Sub Command1_Click()
+           CommonDialog1.ShowOpen
+           Debug.Print CommonDialog1.filename
+           Debug.Print mciSendString( _
+             "open " & CommonDialog1.filename & " alias testfile", 0&, 0, 0)
+           ' To work around the long file name limitation use the next line
+           ' instead of the previous line, which adds quotes around the path
+           ' and file name.
+           'Debug.Print mciSendString( _
+             "open " & """" & CommonDialog1.filename & """" _
+            & " alias testfile", 0&, 0, 0)
+
+           Debug.Print mciSendString("play testfile wait", 0&, 0, 0)
+         End Sub
+
+         Private Sub Command2_Click()
+           Debug.Print mciSendString("close testfile", 0&, 0, 0)
+         End Sub
+
+         Private Sub Form_Load()
+           Command1.Caption = "Open and Run"
+           Command2.Caption = "Close MDI file"
+         End Sub
+
+5. Save and run the project.
+
+6. Click on the Open button and select an .avi file that has a long file or path
+   name. The mciSendString call will return an error. You will see this because
+   the return value will be a non-zero.
+
+7. Follow the comments in Command1_Click, then repeat step 6. The function
+   should now succeed and return a zero.
+
+Additional query words: kbVBp kbdsd kbDSupport kbVBp400 kbVBp500 kbVBp600 kbAPI kbmm kbds
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

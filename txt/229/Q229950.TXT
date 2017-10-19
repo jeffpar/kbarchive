@@ -1,0 +1,70 @@
+DOCUMENT:Q229950  08-MAY-2002  [sms]
+TITLE   :SMS: Provider Deletes When Computer Name Starts w/Number
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Systems Management Server Provider will not delete any Collections that
+contain the computer name that has a numeric value as the first character, for
+example, 1SKYMAN. This name will fail in the deletions of any collections.
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server 2.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q236325 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server 2.0.
+This problem was first corrected in Systems Management Server 2.0 Service Pack
+Service Pack 1.
+
+MORE INFORMATION
+================
+
+Rename the existing file in the SMS\Bin\I386 directory path and copy the hotfix
+to the SMS\Bin\I386 directory.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

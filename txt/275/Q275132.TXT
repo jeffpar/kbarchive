@@ -1,0 +1,84 @@
+DOCUMENT:Q275132  09-MAY-2002  [sms]
+TITLE   :SMS: Large Hierarchy Causes High Processor Usage on Central Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbCollections kbSoftwareDist kbsms200preSP3fix kbsms200SP3fix kbsm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Systems Management Server (SMS) 2.0 hierarchy contains several thousand
+sites, the SMS Executive service can consume up to 100 percent of the available
+processor usage on a central site. Specifically, the threads that follow
+components of the SMS Executive service can consume a large amount of processor
+usage:
+
+ - SMS Collection Evaluator
+ - SMS Discovery Data Manager
+ - SMS Distribution Manager
+ - SMS Hierarchy Manager
+ - SMS Offer Manager
+ - SMS Scheduler
+
+CAUSE
+=====
+
+Several components of the SMS Executive service build an ordered array of the
+site hierarchy in memory to accomplish some of their operations. The more sites
+that exist in the hierarchy, the longer it takes to build the site array, and
+more processor usage is consumed. If the number of sites exceeds several
+thousand, the overall performance of the system begins to degrade because the
+SMS Executive service consumes most of the available processor usage.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+   Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbCollections kbSoftwareDist kbsms200preSP3fix kbsms200SP3fix kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

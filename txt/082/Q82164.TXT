@@ -1,0 +1,71 @@
+DOCUMENT:Q82164  26-NOV-1999  [msdos]
+TITLE   :How to Distinguish MS-DOS 5.0a from MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft MS-DOS version 5.0a is a "maintenance" update to MS-DOS version 5.0.
+MS-DOS 5.0a corrects minor problems that exist in MS-DOS 5.0, and synchronizes
+disk-based MS-DOS with the ROM version of MS-DOS 5.0. MS-DOS 5.0a provides no
+new features or enhancements beyond those provided in MS-DOS 5.0.
+
+If you are encountering problems with MS-DOS 5.0, contact MS-DOS technical
+support to see if MS-DOS 5.0a will correct the problems.
+
+MORE INFORMATION
+================
+
+The following table will help you to quickly identify MS-DOS 5.0a from MS-DOS
+5.0.
+
+Please note that if you have an original equipment manufacturer's (OEM) release
+of MS-DOS 5.0, the following may not apply. Consult with your OEM for more
+information. The table is accurate for the Microsoft MS-DOS 5 Upgrade.
+
+                                   MS-DOS Version
+                               5.0               5.0a
+                               ---               ----
+
+File date:                     4/9/91            11/11/91
+
+Number of 5.25-inch disks:     6 (360K)          2 (1.2 MB)
+
+Setup switches:                /B,/F,/U,/M       /B,/F,/U,/M,/I
+
+"Getting Started"              55 pages          156 pages
+                               (not indexed)     (indexed)
+
+
+Additional query words: 5.00 5.00a noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

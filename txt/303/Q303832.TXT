@@ -1,0 +1,66 @@
+DOCUMENT:Q303832  13-AUG-2001  [foxpro]
+TITLE   :BUG: cPath Parameter Not Passed to DBC_Before/AfterDropOffline
+PRODUCT :Microsoft FoxPro
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbOOP kbvfp KbDBFDBC kbGrpDSFox kbDSupport kbvfp700
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Only one parameter (cViewName) is sent to the DBC_BeforeDropOffline and
+DBC_AfterDropOffline events although the Help topics for these events describe
+the second parameter (cpath).
+
+CAUSE
+=====
+
+The documentation for the DBC_BeforeDropOffline and DBC_AfterDropOffline events
+incorrectly states that two parameters are passed to these two events. Actually,
+only the first parameter is passed to the event. Also, note that the prototype
+for these functions created by the Database Designer Properties dialog box is
+incorrect. The prototype created by the Database Designer has a LPARAMETERS
+statement that includes the second cPath parameter.
+
+RESOLUTION
+==========
+
+Do not use the second (cpath) parameter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbOOP kbvfp KbDBFDBC kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

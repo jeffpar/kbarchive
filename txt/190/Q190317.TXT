@@ -1,0 +1,66 @@
+DOCUMENT:Q190317  17-JUL-2001  [visualc]
+TITLE   :INFO: Administrative Privileges Required for Visual C++
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0
+OPER/SYS:
+KEYWORDS:kbsetup kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Administrative privileges on the local machine are required both to install and
+develop applications with Microsoft Visual C++.
+
+MORE INFORMATION
+================
+
+Microsoft Visual C++ was developed to use features of Windows and to allow for
+development of programs that require administrative privileges on the local
+machine where Visual C++ is installed. So to install or to use Visual C++, a
+developer is assumed to have administrative privileges on the local machine.
+
+On Windows 95 and Windows 98, some privileges may be restricted using the Policy
+Editor. A developer using Visual C++ must use an account that is unrestricted.
+
+On Windows NT, a developer using Visual C++ must use an account that is a member
+of the Administrators group.
+
+Administrative privileges on a domain are not required for general Visual C++
+installation and development activities.
+
+Using an account that does not have administrative privileges on the local
+machine might result in diminished capabilities or undefined behavior when using
+Visual C++.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbVC500 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINNT:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

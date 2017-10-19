@@ -1,0 +1,69 @@
+DOCUMENT:Q272526  22-JUN-2001  [exchange]
+TITLE   :XCLN: Administration and Forms Tabs Missing from PST Properties
+PRODUCT :Microsoft Exchange
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you check the properties for a folder located in Personal Folders, the
+Administration and Forms tabs are missing.
+
+CAUSE
+=====
+
+This issue may occur if you have either manually changed your settings or run a
+custom Setup program. This action may have turned off the Exchange Extensions
+properties page.
+
+RESOLUTION
+==========
+
+To verify that the Exchange Extensions properties page is turned on, follow
+these steps:
+
+1. On the Tools menu, click Options.
+
+2. On the Other tab, click the Advanced Options button, and then click the
+   Add-In Manager button.
+
+3. In the Add-In Manager dialog box, confirm that the "Exchange Extensions
+   properties page" has been selected
+
+If the option for the Exchange Extensions properties page is turned off, click to
+select the "Exchange Extensions properties page" check box to turn the default
+setting on.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbZNotKeyword3
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

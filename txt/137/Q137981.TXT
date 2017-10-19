@@ -1,0 +1,68 @@
+DOCUMENT:Q137981  17-DEC-2000  [win95x]
+TITLE   :Cannot Print from Lotus Agenda in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to print a document from Lotus Agenda, the document may not be
+printed. If you print to a printer, no output is received. If you print to a
+file, a 0-byte file is generated.
+
+CAUSE
+=====
+
+Lotus Agenda is not completely compatible with Windows 95.
+
+RESOLUTION
+==========
+
+You may be able to resolve this problem by running Lotus Agenda in MS-DOS mode.
+For information about configuring programs to run in MS-DOS mode, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q134400 General Tips for Using MS-DOS Mode
+
+If running Lotus Agenda in MS-DOS mode does not correct the problem, you should
+contact the program's manufacturer for additional information. An updated
+version of Lotus Agenda that is completely compatible with Windows 95 is not
+available.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

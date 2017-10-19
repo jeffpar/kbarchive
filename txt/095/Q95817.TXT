@@ -1,0 +1,71 @@
+DOCUMENT:Q95817  15-APR-2000  [powerpt]
+TITLE   :PPT: Scaling Lines and Arrowheads
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:4.0; WINDOWS:4.0,7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Macintosh, version 4.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you draw a line with an arrowhead and then scale the line down, the line is
+reduced in length but the arrowhead stays the same size.
+
+RESOLUTION
+==========
+
+To change the size of the arrowhead, change the width of the line. When you
+choose a lighter or heavier line style, the arrowhead size adjusts accordingly.
+
+However, if you want to change the proportions of the arrowhead, or if you want
+to reduce or enlarge the arrow, use the following workaround:
+
+1. Select the arrow you want to reduce.
+
+2. On the Edit menu, click Cut.
+
+3. On the Edit menu, click Paste Special.
+
+4. The Paste dialog box appears. Click Picture and then click Paste.
+
+The arrow appears in a box as a picture. You can now scale it up or down by
+dragging inward or outward on the corners of the box.
+
+This workaround converts the arrowhead from an object to a picture. You will no
+longer be able to rotate the line, change the line style, or remove or add
+arrowheads.
+
+Additional query words: 3.00 resize shrink workaround arrow head macppt
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt700Search kbPowerPt400 kbPowerPt400Mac
+Version           : MACINTOSH:4.0; WINDOWS:4.0,7.0
+Hardware          : MAC
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

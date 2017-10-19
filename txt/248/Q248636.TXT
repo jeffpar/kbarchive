@@ -1,0 +1,68 @@
+DOCUMENT:Q248636  10-AUG-2001  [winnt]
+TITLE   :Error When Executing a Query from ODBC Client in Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are executing a query from an Open Database Connectivity (ODBC) client
+running on Microsoft Windows NT 4.0 Workstation, the following error message may
+appear:
+
+   The ODBC resource DLL (c:\windows\system32\odbcint.dll) is a different
+   version than the ODBC driver manager (c:\windows\system\odbc32.dll)
+
+CAUSE
+=====
+
+This behavior can occur when there are two different versions of the Odbcint.dll
+file.
+
+RESOLUTION
+==========
+
+To resolve this behavior, check for duplicates of the file Odbcint.dll. If there
+are two versions, keep the correct file (the one that is the same version as the
+Odbc32.dll file) in the Winnt\System32 folder, and then rename the other file.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q170769 PRB: "ODBC Resource DLL Is a Different Version Than ..." Error
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

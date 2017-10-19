@@ -1,0 +1,65 @@
+DOCUMENT:Q90709  07-NOV-1999  [win95x]
+TITLE   :Using WinLogin with 3Com 3+Share
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11; :1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft WinLogin, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When running WinLogin 1.0 with 3Com 3+Share, you may encounter problems when
+multiple users attempt to access WinLogin's database. To resolve this problem,
+increase the number of concurrent file range locks supported by the server.
+
+MORE INFORMATION
+================
+
+When multiple users attempt to access WinLogin's database, the following error
+messages may occur:
+
+   Error opening the database
+
+   Error initializing the database
+
+   Error accessing <one of the tables; user, group, wksta>
+
+Increasing the number of concurrent file range locks supported by the server
+solves this problem. Increasing the range locks is done through the 3Com
+Optimization program called "3OPT". This program is located in the 3Com server
+directory structure. Once you are in this program, one of the screens will be
+the "Byte Range Locks" for the different services. This is where the actual
+change needs to be done. A system administrator needs to know how this should be
+done as well as what to increase it to because there are different scenarios
+that will be dealt with, such as memory, services available, and so on.
+
+Additional query words: 3Com 3 com network 1.00 WinLogin
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbWinLoginSearch kbZNotKeyword3 kbWin310 kbWin311 kbWinLogin100
+Version           : WINDOWS:3.1,3.11; :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

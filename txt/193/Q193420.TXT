@@ -1,0 +1,66 @@
+DOCUMENT:Q193420  01-MAY-1999  [exchange]
+TITLE   :XFOR: Exchange Notes Connector Hangs If Trace Message Enabled
+PRODUCT :Microsoft Exchange
+PROD/VER:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a message is sent from Lotus Notes with trace setting on, the message
+causes the Notes conversion process on the Exchange Notes Connector to stop with
+errors. This impedes all further messages from moving to Exchange Server.
+
+CAUSE
+=====
+
+The Notes Router generates trace reports back to the Notes Sender. Because the
+Name and Address Book indicates that the user is no longer on Notes, the Trace
+Report gets forwarded to Exchange Server, regardless of the fact that it was
+sent from Lotus Notes in the first place. The Exchange Notes Connector then
+stops responding (hangs) on the actual trace report.
+
+WORKAROUND
+==========
+
+To work around this problem, do not enable the Trace Entire Path feature from
+the Notes client.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : 5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q97145  15-NOV-1999  [pcmail]
+TITLE   :PC WRmt: System Selector Does Not Validate Its Results
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail System Selector provided with Microsoft Mail Remote version
+3.2 for Windows does not delete extended command entries if you interrupt and
+restart the application.
+
+CAUSE
+=====
+
+The Selector can report an incorrect driver as the current driver. When Mail
+starts, various error messages appear that depend on the previous driver and on
+the new driver.
+
+RESOLUTION
+==========
+
+If you have difficulty starting Mail Remote for Windows immediately after you
+change Mail drivers, run the Selector program. Select the last driver you chose
+more than once. This procedure resolves the problem for some drivers.
+
+Running the Selector program a second time and choosing the driver multiple times
+appears to correct the problem, even though remote extended commands remain in
+the MSMAIL.INI file.
+
+Because Mail supports various drivers, no single method is available to resolve
+this problem. However, for certain drivers, using the Selector utility to choose
+the new driver repeatedly (without choosing an alternate driver between choices)
+can resolve some problems.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

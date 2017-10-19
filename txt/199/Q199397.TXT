@@ -1,0 +1,65 @@
+DOCUMENT:Q199397  06-AUG-2002  [exchange]
+TITLE   :XFOR: POP3 Reply Address Contains Numerous Invalid Addresses
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you reply to a message sent from a POP3 client, the To field in the reply
+message may contain numerous recipient addresses. These address may be invalid
+but contain the proper SMTP format such as
+<user_name>@<domain_name>.com. However, the reply address does not
+contain the original POP3 sender address.
+
+CAUSE
+=====
+
+The POP3 sender has placed incorrect information, such as the user's residential
+address, in the Reply-to-address option in the POP3 client configuration.
+
+RESOLUTION
+==========
+
+Verify that the POP3 user has placed the proper e-mail address in the
+Reply-to-address option in the POP3 client configuration. To verify this
+information, on the Tools menu, click Accounts, click the Mail tab, select the
+account, and then click Properties. On the General tab there is a place to enter
+a reply address. This is the address that is creating a problem. If the POP3
+user has any question about what this value should be, he or she should contact
+his or her Internet service provider (ISP), or administrator. Removing the
+address should not create delivery problems.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

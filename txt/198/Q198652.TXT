@@ -1,0 +1,85 @@
+DOCUMENT:Q198652  17-APR-1999  [sms]
+TITLE   :SMS: Administrator Console Fails to Load and Reports WBEM Error
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbWBEM kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to start the SMS Administrator Console, an error may be encountered
+containing the following information:
+
+   MMCAdminUI WBEM Error: (Error executing query (T_WbemSyncQueryToContainer))
+
+   Error : WBEM_E_FAILED Operation: ExecQuery ParameterInfo: select SiteCode,
+   SiteName from SMS_Site where ReportingSiteCode="" Error Description: SQL
+   Err>> #10025 Sev 9: Possible network error: Write to SQL Server Failed.
+   ConnectionWrite (GetOverLappedResult()). NEXT: SQL Err>> #10005 Sev 1:
+   DBPROCESS is dead or not enabled. (null)
+
+   <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+CAUSE
+=====
+
+This error message can be caused by the SQL Server being out of available user
+connections.
+
+WORKAROUND
+==========
+
+To resolve this problem, increase the number of SQL Server user connections. To
+do this, perform the following steps:
+
+1. Start SQL Server Enterprise Manager.
+
+2. Right-click the SQL Server server name and click Configure on the shortcut
+   menu.
+
+3. In the Server Configuration/Options dialog box, scroll to the User
+   Connections entry and increase the number of connections in the Current
+   column.
+
+After making this change, you must stop and start the SQL Server service for the
+change to take effect. You can stop and start the service through the SQL Server
+Service Manager, Control Panel Services, or the command line with the "net stop
+mssqlserver" and "net start mssqlserver" commands.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbWBEM kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

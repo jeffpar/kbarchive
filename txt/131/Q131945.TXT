@@ -1,0 +1,73 @@
+DOCUMENT:Q131945  06-MAY-2001  [visualc]
+TITLE   :FIX: OnFileNameOK Returns 0 if Valid or 1 if Not Valid
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr kbFileIO kbMFC kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC210bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows 
+    - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0, 2.1, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following incorrect text appears in the online documentation for the
+function CFileDialog::OnFileNameOK() and in Books Online:
+
+   Return Value
+   Nonzero if the filename is a valid filename, otherwise 0.
+
+It should be:
+
+   Return Value
+   1 if the filename is NOT a valid filename, otherwise 0.
+
+STATUS
+======
+
+ 
+
+MORE INFORMATION
+================
+
+CFileDialog::OnFilenameOK() is a virtual function that can be overridden to
+handle the private message FILEOKSTRING. When handling this message, the MFC
+common dialog hook function calls OnFileNameOK() and returns to the common
+dialog procedure whatever the virtual function returns. The dialog procedure in
+COMDLG32.DLL (or COMMDLG.DLL in 16-bit programs) dismisses the dialog if the
+return from the hook function is 0 (zero) and keeps the dialog displayed if the
+return value is 1 (one). Other nonzero return values are currently reserved and
+should not be used.
+
+This documentation error was corrected in Visual C++ 32-bit Edition version 4.2.
+
+Additional query words: kbVC400bug 2.50 2.51 3.00 3.10 4.20
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbFileIO kbMFC kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC210bug kbVC400bug kbVC410bug kbVC420fix 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

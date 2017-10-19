@@ -1,0 +1,71 @@
+DOCUMENT:Q177135  24-AUG-2001  [visualc]
+TITLE   :PRB: Do not Call ODBC Within DLL_PROCESS_DETACH Case
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.5,2.6,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbMFC kbODBC kbVC kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Data Access Components versions 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the MFC Database classes or calling ODBC functions within the
+DLL_PROCESS_DETACH case of the DllMain() function, an access violation can occur
+especially if the DLL links to the MFC DLL (which does a LoadLibrary call to
+call ODBC). For example, calling CDatabase::Close() from the destructor of a
+global static object in the DLL causes an access violation error in ODBC32.DLL.
+
+CAUSE
+=====
+
+Because there are no guarantees of the order by which DLLs receive the
+DLL_PROCESS_DETACH case, it is possible that the ODBC handle memory can be freed
+before your DLL's DllMain() function gets called with DLL_PROCESS_DETACH.
+Therefore, any calls to ODBC using those handles can cause a crash.
+
+RESOLUTION
+==========
+
+Do not call ODBC functions or use the MFC ODBC classes in destructors of global
+objects within DLLs or in the DllMain() DLL_PROCESS_DETACH case.
+
+Instead use a termination function in the DLL which the application can call
+before exiting.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: crash hang hung halts GPF AV inproc kbmfc kbVC500 kbVC600
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 
+Technology        : kbVCsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbMDAC260 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :2.5,2.6,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

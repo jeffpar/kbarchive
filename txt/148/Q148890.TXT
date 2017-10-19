@@ -1,0 +1,54 @@
+DOCUMENT:Q148890  09-AUG-2001  [mastering]
+TITLE   :Mastering Series Titles: Title Cut Off in Setup Dialogs
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0; winnt:3.51
+OPER/SYS:
+KEYWORDS:kbmm kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual Basic 4.0 ISBN 1-55615-913-7, version 1.0 
+ - the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Setup for Mastering Access Programming on a computer running
+Windows NT version 3.51, some of the Setup program dialog boxes do not fit in
+the title bar.
+
+A visible example of this behavior occurs when Setup concludes. The "Successfully
+Completed" dialog box title is too big to display in the title bar.
+
+STATUS
+======
+
+The behavior is by design and not a programming problem with Mastering Visual
+Basic. This behavior will not affect operation of the program, and does not
+indicate a problem with your system.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm kbsetup 
+Technology        : kbMSPressSearch kbOSWinSearch kbOSWinNT351 kbZNotKeyword2 kbOSWinNTSearch
+Version           : :1.0; winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

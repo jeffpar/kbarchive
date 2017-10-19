@@ -1,0 +1,50 @@
+DOCUMENT:Q67705  14-DEC-1999  [win95x]
+TITLE   :User's Guide Incorrect on Configuring an 8086 or 8088 System
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+The "Microsoft Windows User's Guide" for version 3.0 contains incorrect
+information in the "Configuring an 8086 or 8088 Computer" near the bottom
+of page 502. The statement reads:
+
+   If your system has an EGA monitor and you run non-Windows applications with
+   Windows in real mode or standard mode, your CONFIG.SYS file should contain a
+   command line like the following:
+
+   device=c:\windows\ega.sys "
+
+An 8086 or 8088 computer cannot run Windows in standard mode. Standard
+mode requires a 80286, 80386, or 80486 microprocessor and extended
+memory.
+
+Additional query words: 3.00 3.00a documentation error win30 docerr KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

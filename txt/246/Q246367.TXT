@@ -1,0 +1,52 @@
+DOCUMENT:Q246367  24-OCT-2000  [winnt]
+TITLE   :Interix Does Not Support the Crypt Command
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Interix does not provide encryption technology because current law in the United
+States prohibits the delivery of encryption technology outside of the United
+States, or to foreign nationals residing within the United States. The crypt
+command is included in this prohibition.
+
+MORE INFORMATION
+================
+
+Various source code CD-ROM distributions of systems such as Linux and FreeBSD
+include the crypt command. With Interix and the Interix SDK, you can recompile
+the c type source from such a CD-ROM for Interix.
+
+Additional query words: 2.2.10 2.2.20 2.2.30 2.2.40
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

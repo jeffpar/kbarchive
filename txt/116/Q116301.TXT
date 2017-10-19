@@ -1,0 +1,68 @@
+DOCUMENT:Q116301  14-FEB-2002  [visualc]
+TITLE   :PRB: Visual WB Matches Enclosure Symbols in Comments
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,2.1,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbide kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Workbench for Windows, version 1.0, used with:
+    - Microsoft Visual C++, versions 1.0, 1.5, 2.0, 2.1, 4.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Visual Workbench or Developer Studio Editor, CTRL+] or the Find
+Matching Brace command under the Edit menu, finds a matching brace when the
+caret is located to the left of an enclosure symbol: either a parenthesis "(",
+brace "{", or bracket "[".
+
+The editor is unable to distinguish whether these enclosure symbols are located
+within valid code or within a comment. As a result, using CTRL+] may find a
+matching enclosure symbol within a comment, as shown in the source code in the
+"MORE INFORMATION" section, below.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      /* Compile options needed: none
+      */ 
+
+         void main(void)
+         {
+          /* { */ 
+         }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVC 
+Technology        : kbVSsearch kbAudDeveloper kbVWB
+Version           : :1.0,1.5,2.0,2.1,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

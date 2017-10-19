@@ -1,0 +1,121 @@
+DOCUMENT:Q142510  11-FEB-2000  [foxpro]
+TITLE   :DOCERR: Errors in Visual FoxPro "Step By Step" Book on Page 26
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,Step by Step ISBN 1-55615-846-7
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, Step by Step ISBN 1-55615-846-7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The steps on pages 26 and 27 of "Microsoft Visual FoxPro 3.0 for Windows Step by
+Step" published by Microsoft Press do not match the book. Furthermore, clicking
+the Save Order button as instructed on page 27 will cause the following error
+when you try to exit from Visual FoxPro:
+
+   Table buffer for alias "orders" contains uncommitted changes.
+
+MORE INFORMATION
+================
+
+Microsoft Press is developing a corrected set of practice files for Lesson 3 and
+a small portion of Lesson 9, and will post new information in this article when
+the files become available.
+
+
+Comments
+--------
+
+Once the Save Order button is clicked, you can properly exit Visual FoxPro by
+following these steps:
+
+1. Return to the Order Form if you are not already there. Follow the steps on
+   pages 24 - 26 if necessary.
+
+2. Press CTRL+F2 to open the Command window. Then type:
+
+   " =TABLEREVERT (.T.) " (without the quotation marks)
+
+If Step 2 produces an error, cancel and then reopen the Order Form and repeat
+step 2. You should now be able to close Microsoft Visual FoxPro. If the
+following error appears, return to the Command window and type ROLLBACK:
+
+   " Data session #1 cannot be released with open transaction(s). " (without the
+   quotation marks)
+
+Additional error messages might be encountered. Ignore these messages and close
+Visual FoxPro. These error messages include:
+
+   Variable ORDERNUM not found.
+   Function requires row or table buffering mode.
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Corrected Disk Label
+--------------------
+
+The following correction label has been applied to the disk envelope on the
+inside back cover of this book:
+
+
+-----Begin Correction Label-----
+
+IMPORTANT!
+Do not perform the steps in Lesson 3. Corrected files for Lesson 3 are available
+at http://www.microsoft.com/support/ (on the World Wide Web) in the Free
+Software section.
+
+The Lesson 3 practice files provided with this book contain errors that can cause
+Microsoft Visual FoxPro 3 not to close properly. Please read Lesson 3, but do
+not open the Proj_03 project.
+
+Lesson 3 is a preview of what you will learn in Part 2, so these practice files
+are not essential for working through the other lessons.
+
+Closing Visual FoxPro 3 after using Proj_03 files: Information about closing
+Visual FoxPro after using the Proj_3 files is located in the Microsoft Knowledge
+Base. To access this information, connect to the FoxPro section of the Microsoft
+Knowledge Base via
+
+* the Internet at http://www.microsoft.com/support/ in the Knowledge Base
+section.
+
+* The Microsoft Network.
+
+Enter the query "foxpro and bookbug" (without the quotation marks). We apologize
+for any inconvenience this issue might cause.
+
+-----End Correction Label-----
+
+Additional query words: .00 VFoxWin foxpro bookbug sbs mspress ms_press
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0,Step by Step ISBN 1-55615-846-7
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

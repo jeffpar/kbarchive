@@ -1,0 +1,64 @@
+DOCUMENT:Q98536  17-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Network Connection Broken in Mail
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Choosing to work offline in version 1.0 or 1.0a of Microsoft Schedule+ for
+Windows also forces versions 3.0 and 3.2 of Microsoft Mail for PC Networks to
+work offline.
+
+When you send mail messages to other users, the mail message remains in the
+Outbox and is not sent. Mail also displays a broken network connection icon in
+the lower-right corner of the mail screen.
+
+CAUSE
+=====
+
+This problem occurs if you select Work Offline from the File menu in Schedule+
+and if your Mail message file (MMF) is stored locally.
+
+RESOLUTION
+==========
+
+ - Move the .MMF file to the server. Schedule+ detects whether or not a user's
+   .MMF file is on the server or stored locally. If the file is stored on the
+   server, Mail will not be allowed to work offline.
+
+ - Work offline only when necessary. From the File menu, choose Work Online.
+   This forces any changes made in the local calendar file to be uploaded to the
+   server, thus forcing Mail to work online.
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

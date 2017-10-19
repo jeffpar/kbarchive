@@ -1,0 +1,70 @@
+DOCUMENT:Q126460  28-JUL-2001  [win95x]
+TITLE   :Cannot Connect to NRN Server with Dial-Up Networking
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun msnets kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot connect to a NetWare Remote Network (NRN) server with Dial-Up
+Networking. The modem usually drops the connection while you are entering your
+user name and password.
+
+CAUSE
+=====
+
+This problem is caused by the NRN server's inability to recognize compression or
+error correction by the modem.
+
+RESOLUTION
+==========
+
+To work around this problem, you must use a modem that can turn off these
+features. To turn these features off, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the Modems icon.
+
+3. Click your modem and then click the Properties button.
+
+4. Click the Connection tab.
+
+5. Click the Advanced button.
+
+6. Click the Use Error Control check box to clear it. (NOTE: If this check box
+   is unavailable, your modem does not support these features.)
+
+7. Click the OK button.
+
+Additional query words: access disconnect wwt
+
+======================================================================
+Keywords          : dun msnets kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

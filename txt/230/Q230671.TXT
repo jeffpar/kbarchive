@@ -1,0 +1,76 @@
+DOCUMENT:Q230671  11-JUN-2002  [visualc]
+TITLE   :PRB: AV When Saving Workspace with more than 4096 Source/Header
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbide kbVC600bug kbprb kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a project is opened or created with more than 4096 files, attempting to
+save the workspace may result in the following message:
+
+   The instruction at "0x519eccb6" referenced memory at "0x00000000". The memory
+   could not be "read".
+
+Viewing a stack trace of this exception shows that the fault occurs in
+DevNcb.pkg. The error can occur when you exit the IDE by clicking Exit from the
+File menu, or when you close the workspace by clicking Close Workspace from the
+File menu.
+
+RESOLUTION
+==========
+
+Following are some possible workarounds:
+
+ - If the workspace contains multiple projects, you may be able to work around
+   the problem by breaking projects into separate workspaces.
+
+   -or-
+
+ - If the workspace contains a project with many files, you may be able to work
+   around the problem by combining some of your source files into fewer larger
+   files, or separate static libraries.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVC600bug kbprb kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

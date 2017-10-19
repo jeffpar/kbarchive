@@ -1,0 +1,68 @@
+DOCUMENT:Q197377  17-NOV-2000  [iis]
+TITLE   :Memory Leak if Large File Upload Is Cancelled Prematurely
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Request for Comment (RFC) 1867 to upload a large file to an Active
+Server Page (ASP) and the transfer procedure is terminated prematurely by the
+client, a memory leak the size of the file occurs. For example, if you are
+uploading a 10 megabyte (MB) file and then disconnect before the file is
+completely uploaded, the memory leak is 10MB. Note that the ASP page calls
+Request.BinaryRead.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+NOTE: You must install SP4 before installing this fix.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 4.0. This problem was first corrected in Windows NT 4.0 Service
+Pack 5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp5fix 
+Technology        : kbiisSearch kbiis400 kbiis300
+Version           : :3.0,4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.
